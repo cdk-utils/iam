@@ -13,168 +13,248 @@ export class CodestarConnectionsActions {
 	static readonly SERVICE_PREFIX = "codestar-connections";
 
 	/** [Write] codestar-connections:CreateConnection */
-	static readonly CREATE_CONNECTION = "codestar-connections:CreateConnection";
+	static readonly CreateConnection = "codestar-connections:CreateConnection";
 	/** [Write] codestar-connections:CreateHost */
-	static readonly CREATE_HOST = "codestar-connections:CreateHost";
+	static readonly CreateHost = "codestar-connections:CreateHost";
 	/** [Write] codestar-connections:CreateRepositoryLink */
-	static readonly CREATE_REPOSITORY_LINK =
+	static readonly CreateRepositoryLink =
 		"codestar-connections:CreateRepositoryLink";
 	/** [Write] codestar-connections:CreateSyncConfiguration */
-	static readonly CREATE_SYNC_CONFIGURATION =
+	static readonly CreateSyncConfiguration =
 		"codestar-connections:CreateSyncConfiguration";
 	/** [Write] codestar-connections:DeleteConnection */
-	static readonly DELETE_CONNECTION = "codestar-connections:DeleteConnection";
+	static readonly DeleteConnection = "codestar-connections:DeleteConnection";
 	/** [Write] codestar-connections:DeleteHost */
-	static readonly DELETE_HOST = "codestar-connections:DeleteHost";
+	static readonly DeleteHost = "codestar-connections:DeleteHost";
 	/** [Write] codestar-connections:DeleteRepositoryLink */
-	static readonly DELETE_REPOSITORY_LINK =
+	static readonly DeleteRepositoryLink =
 		"codestar-connections:DeleteRepositoryLink";
 	/** [Write] codestar-connections:DeleteSyncConfiguration */
-	static readonly DELETE_SYNC_CONFIGURATION =
+	static readonly DeleteSyncConfiguration =
 		"codestar-connections:DeleteSyncConfiguration";
 	/** [Read] codestar-connections:GetConnection */
-	static readonly GET_CONNECTION = "codestar-connections:GetConnection";
+	static readonly actionGetConnection = "codestar-connections:GetConnection";
 	/** [Read] codestar-connections:GetConnectionToken */
-	static readonly GET_CONNECTION_TOKEN =
+	static readonly actionGetConnectionToken =
 		"codestar-connections:GetConnectionToken";
 	/** [Read] codestar-connections:GetHost */
-	static readonly GET_HOST = "codestar-connections:GetHost";
+	static readonly actionGetHost = "codestar-connections:GetHost";
 	/** [Read] codestar-connections:GetIndividualAccessToken */
-	static readonly GET_INDIVIDUAL_ACCESS_TOKEN =
+	static readonly actionGetIndividualAccessToken =
 		"codestar-connections:GetIndividualAccessToken";
 	/** [Read] codestar-connections:GetInstallationUrl */
-	static readonly GET_INSTALLATION_URL =
+	static readonly actionGetInstallationUrl =
 		"codestar-connections:GetInstallationUrl";
 	/** [Read] codestar-connections:GetRepositoryLink */
-	static readonly GET_REPOSITORY_LINK =
+	static readonly actionGetRepositoryLink =
 		"codestar-connections:GetRepositoryLink";
 	/** [Read] codestar-connections:GetRepositorySyncStatus */
-	static readonly GET_REPOSITORY_SYNC_STATUS =
+	static readonly actionGetRepositorySyncStatus =
 		"codestar-connections:GetRepositorySyncStatus";
 	/** [Read] codestar-connections:GetResourceSyncStatus */
-	static readonly GET_RESOURCE_SYNC_STATUS =
+	static readonly actionGetResourceSyncStatus =
 		"codestar-connections:GetResourceSyncStatus";
 	/** [Read] codestar-connections:GetSyncBlockerSummary */
-	static readonly GET_SYNC_BLOCKER_SUMMARY =
+	static readonly actionGetSyncBlockerSummary =
 		"codestar-connections:GetSyncBlockerSummary";
 	/** [Read] codestar-connections:GetSyncConfiguration */
-	static readonly GET_SYNC_CONFIGURATION =
+	static readonly actionGetSyncConfiguration =
 		"codestar-connections:GetSyncConfiguration";
 	/** [List] codestar-connections:ListConnections */
-	static readonly LIST_CONNECTIONS = "codestar-connections:ListConnections";
+	static readonly ListConnections = "codestar-connections:ListConnections";
 	/** [List] codestar-connections:ListHosts */
-	static readonly LIST_HOSTS = "codestar-connections:ListHosts";
+	static readonly ListHosts = "codestar-connections:ListHosts";
 	/** [List] codestar-connections:ListInstallationTargets */
-	static readonly LIST_INSTALLATION_TARGETS =
+	static readonly ListInstallationTargets =
 		"codestar-connections:ListInstallationTargets";
 	/** [List] codestar-connections:ListRepositoryLinks */
-	static readonly LIST_REPOSITORY_LINKS =
+	static readonly ListRepositoryLinks =
 		"codestar-connections:ListRepositoryLinks";
 	/** [List] codestar-connections:ListRepositorySyncDefinitions */
-	static readonly LIST_REPOSITORY_SYNC_DEFINITIONS =
+	static readonly ListRepositorySyncDefinitions =
 		"codestar-connections:ListRepositorySyncDefinitions";
 	/** [List] codestar-connections:ListSyncConfigurations */
-	static readonly LIST_SYNC_CONFIGURATIONS =
+	static readonly ListSyncConfigurations =
 		"codestar-connections:ListSyncConfigurations";
 	/** [List] codestar-connections:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"codestar-connections:ListTagsForResource";
 	/** [Read] codestar-connections:PassConnection */
-	static readonly PASS_CONNECTION = "codestar-connections:PassConnection";
+	static readonly PassConnection = "codestar-connections:PassConnection";
 	/** [Read] codestar-connections:PassRepository */
-	static readonly PASS_REPOSITORY = "codestar-connections:PassRepository";
+	static readonly PassRepository = "codestar-connections:PassRepository";
 	/** [Read] codestar-connections:RegisterAppCode */
-	static readonly REGISTER_APP_CODE = "codestar-connections:RegisterAppCode";
+	static readonly RegisterAppCode = "codestar-connections:RegisterAppCode";
 	/** [Read] codestar-connections:StartAppRegistrationHandshake */
-	static readonly START_APP_REGISTRATION_HANDSHAKE =
+	static readonly StartAppRegistrationHandshake =
 		"codestar-connections:StartAppRegistrationHandshake";
 	/** [Read] codestar-connections:StartOAuthHandshake */
-	static readonly START_O_AUTH_HANDSHAKE =
+	static readonly StartOAuthHandshake =
 		"codestar-connections:StartOAuthHandshake";
 	/** [Tagging] codestar-connections:TagResource */
-	static readonly TAG_RESOURCE = "codestar-connections:TagResource";
+	static readonly TagResource = "codestar-connections:TagResource";
 	/** [Tagging] codestar-connections:UntagResource */
-	static readonly UNTAG_RESOURCE = "codestar-connections:UntagResource";
+	static readonly UntagResource = "codestar-connections:UntagResource";
 	/** [Write] codestar-connections:UpdateConnectionInstallation */
-	static readonly UPDATE_CONNECTION_INSTALLATION =
+	static readonly UpdateConnectionInstallation =
 		"codestar-connections:UpdateConnectionInstallation";
 	/** [Write] codestar-connections:UpdateHost */
-	static readonly UPDATE_HOST = "codestar-connections:UpdateHost";
+	static readonly UpdateHost = "codestar-connections:UpdateHost";
 	/** [Write] codestar-connections:UpdateRepositoryLink */
-	static readonly UPDATE_REPOSITORY_LINK =
+	static readonly UpdateRepositoryLink =
 		"codestar-connections:UpdateRepositoryLink";
 	/** [Write] codestar-connections:UpdateSyncBlocker */
-	static readonly UPDATE_SYNC_BLOCKER =
-		"codestar-connections:UpdateSyncBlocker";
+	static readonly UpdateSyncBlocker = "codestar-connections:UpdateSyncBlocker";
 	/** [Write] codestar-connections:UpdateSyncConfiguration */
-	static readonly UPDATE_SYNC_CONFIGURATION =
+	static readonly UpdateSyncConfiguration =
 		"codestar-connections:UpdateSyncConfiguration";
 	/** [Read] codestar-connections:UseConnection */
-	static readonly USE_CONNECTION = "codestar-connections:UseConnection";
+	static readonly UseConnection = "codestar-connections:UseConnection";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodestarConnectionsActions.GET_CONNECTION,
-		CodestarConnectionsActions.GET_CONNECTION_TOKEN,
-		CodestarConnectionsActions.GET_HOST,
-		CodestarConnectionsActions.GET_INDIVIDUAL_ACCESS_TOKEN,
-		CodestarConnectionsActions.GET_INSTALLATION_URL,
-		CodestarConnectionsActions.GET_REPOSITORY_LINK,
-		CodestarConnectionsActions.GET_REPOSITORY_SYNC_STATUS,
-		CodestarConnectionsActions.GET_RESOURCE_SYNC_STATUS,
-		CodestarConnectionsActions.GET_SYNC_BLOCKER_SUMMARY,
-		CodestarConnectionsActions.GET_SYNC_CONFIGURATION,
-		CodestarConnectionsActions.PASS_CONNECTION,
-		CodestarConnectionsActions.PASS_REPOSITORY,
-		CodestarConnectionsActions.REGISTER_APP_CODE,
-		CodestarConnectionsActions.START_APP_REGISTRATION_HANDSHAKE,
-		CodestarConnectionsActions.START_O_AUTH_HANDSHAKE,
-		CodestarConnectionsActions.USE_CONNECTION,
+	static readonly AllReadActions: string[] = [
+		CodestarConnectionsActions.actionGetConnection,
+		CodestarConnectionsActions.actionGetConnectionToken,
+		CodestarConnectionsActions.actionGetHost,
+		CodestarConnectionsActions.actionGetIndividualAccessToken,
+		CodestarConnectionsActions.actionGetInstallationUrl,
+		CodestarConnectionsActions.actionGetRepositoryLink,
+		CodestarConnectionsActions.actionGetRepositorySyncStatus,
+		CodestarConnectionsActions.actionGetResourceSyncStatus,
+		CodestarConnectionsActions.actionGetSyncBlockerSummary,
+		CodestarConnectionsActions.actionGetSyncConfiguration,
+		CodestarConnectionsActions.PassConnection,
+		CodestarConnectionsActions.PassRepository,
+		CodestarConnectionsActions.RegisterAppCode,
+		CodestarConnectionsActions.StartAppRegistrationHandshake,
+		CodestarConnectionsActions.StartOAuthHandshake,
+		CodestarConnectionsActions.UseConnection,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodestarConnectionsActions.CREATE_CONNECTION,
-		CodestarConnectionsActions.CREATE_HOST,
-		CodestarConnectionsActions.CREATE_REPOSITORY_LINK,
-		CodestarConnectionsActions.CREATE_SYNC_CONFIGURATION,
-		CodestarConnectionsActions.DELETE_CONNECTION,
-		CodestarConnectionsActions.DELETE_HOST,
-		CodestarConnectionsActions.DELETE_REPOSITORY_LINK,
-		CodestarConnectionsActions.DELETE_SYNC_CONFIGURATION,
-		CodestarConnectionsActions.UPDATE_CONNECTION_INSTALLATION,
-		CodestarConnectionsActions.UPDATE_HOST,
-		CodestarConnectionsActions.UPDATE_REPOSITORY_LINK,
-		CodestarConnectionsActions.UPDATE_SYNC_BLOCKER,
-		CodestarConnectionsActions.UPDATE_SYNC_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		CodestarConnectionsActions.CreateConnection,
+		CodestarConnectionsActions.CreateHost,
+		CodestarConnectionsActions.CreateRepositoryLink,
+		CodestarConnectionsActions.CreateSyncConfiguration,
+		CodestarConnectionsActions.DeleteConnection,
+		CodestarConnectionsActions.DeleteHost,
+		CodestarConnectionsActions.DeleteRepositoryLink,
+		CodestarConnectionsActions.DeleteSyncConfiguration,
+		CodestarConnectionsActions.UpdateConnectionInstallation,
+		CodestarConnectionsActions.UpdateHost,
+		CodestarConnectionsActions.UpdateRepositoryLink,
+		CodestarConnectionsActions.UpdateSyncBlocker,
+		CodestarConnectionsActions.UpdateSyncConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodestarConnectionsActions.LIST_CONNECTIONS,
-		CodestarConnectionsActions.LIST_HOSTS,
-		CodestarConnectionsActions.LIST_INSTALLATION_TARGETS,
-		CodestarConnectionsActions.LIST_REPOSITORY_LINKS,
-		CodestarConnectionsActions.LIST_REPOSITORY_SYNC_DEFINITIONS,
-		CodestarConnectionsActions.LIST_SYNC_CONFIGURATIONS,
-		CodestarConnectionsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CodestarConnectionsActions.ListConnections,
+		CodestarConnectionsActions.ListHosts,
+		CodestarConnectionsActions.ListInstallationTargets,
+		CodestarConnectionsActions.ListRepositoryLinks,
+		CodestarConnectionsActions.ListRepositorySyncDefinitions,
+		CodestarConnectionsActions.ListSyncConfigurations,
+		CodestarConnectionsActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodestarConnectionsActions.TAG_RESOURCE,
-		CodestarConnectionsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodestarConnectionsActions.TagResource,
+		CodestarConnectionsActions.UntagResource,
 	];
 }
 
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):connection/(?<connectionId>[^:/?]+)$",
-);
-const HostArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):host/(?<hostId>[^:/?]+)$",
-);
-const RepositoryLinkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):repository-link/(?<repositoryLinkId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Connection ARN.
+ */
+export interface CodestarConnectionsConnectionArnProps {
+	/** The ConnectionId component of the ARN. */
+	readonly connectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Connection ARN.
+ */
+export interface CodestarConnectionsConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionId component. */
+	readonly connectionId: string;
+}
+
+/**
+ * Properties for building a Host ARN.
+ */
+export interface CodestarConnectionsHostArnProps {
+	/** The HostId component of the ARN. */
+	readonly hostId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Host ARN.
+ */
+export interface CodestarConnectionsHostArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HostId component. */
+	readonly hostId: string;
+}
+
+/**
+ * Properties for building a RepositoryLink ARN.
+ */
+export interface CodestarConnectionsRepositoryLinkArnProps {
+	/** The RepositoryLinkId component of the ARN. */
+	readonly repositoryLinkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RepositoryLink ARN.
+ */
+export interface CodestarConnectionsRepositoryLinkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RepositoryLinkId component. */
+	readonly repositoryLinkId: string;
+}
+
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):connection\/(?<connectionId>[^:/?]+)$/;
+const HostArnRegex =
+	/^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):host\/(?<hostId>[^:/?]+)$/;
+const RepositoryLinkArnRegex =
+	/^arn:(?<partition>[^:]+):codestar-connections:(?<region>[^:]*):(?<account>[^:]*):repository-link\/(?<repositoryLinkId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codestar-connections resources.
@@ -183,16 +263,7 @@ export class CodestarConnectionsResources {
 	/**
 	 * Builds an ARN for the Connection resource.
 	 */
-	static connection(props: {
-		/** The ConnectionId component of the ARN. */
-		readonly connectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: CodestarConnectionsConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codestar-connections:${props.region ?? "*"}:${props.account ?? "*"}:connection/${props.connectionId}`;
 	}
 
@@ -207,12 +278,9 @@ export class CodestarConnectionsResources {
 	 * Parses a Connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionId: string;
-	} {
+	static parseConnectionArn(
+		arn: string,
+	): CodestarConnectionsConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Connection ARN: ${arn}`);
@@ -228,16 +296,7 @@ export class CodestarConnectionsResources {
 	/**
 	 * Builds an ARN for the Host resource.
 	 */
-	static host(props: {
-		/** The HostId component of the ARN. */
-		readonly hostId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static host(props: CodestarConnectionsHostArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codestar-connections:${props.region ?? "*"}:${props.account ?? "*"}:host/${props.hostId}`;
 	}
 
@@ -252,12 +311,7 @@ export class CodestarConnectionsResources {
 	 * Parses a Host ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHostArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hostId: string;
-	} {
+	static parseHostArn(arn: string): CodestarConnectionsHostArnComponents {
 		const match = HostArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Host ARN: ${arn}`);
@@ -273,16 +327,9 @@ export class CodestarConnectionsResources {
 	/**
 	 * Builds an ARN for the RepositoryLink resource.
 	 */
-	static repositoryLink(props: {
-		/** The RepositoryLinkId component of the ARN. */
-		readonly repositoryLinkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static repositoryLink(
+		props: CodestarConnectionsRepositoryLinkArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:codestar-connections:${props.region ?? "*"}:${props.account ?? "*"}:repository-link/${props.repositoryLinkId}`;
 	}
 
@@ -297,12 +344,9 @@ export class CodestarConnectionsResources {
 	 * Parses a RepositoryLink ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRepositoryLinkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		repositoryLinkId: string;
-	} {
+	static parseRepositoryLinkArn(
+		arn: string,
+	): CodestarConnectionsRepositoryLinkArnComponents {
 		const match = RepositoryLinkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RepositoryLink ARN: ${arn}`);
@@ -321,21 +365,21 @@ export class CodestarConnectionsResources {
  */
 export class CodestarConnectionsOperations {
 	/** IAM actions required for the CreateConnection API call. */
-	static readonly CREATE_CONNECTION: string[] = [
+	static readonly CreateConnection: string[] = [
 		"codeconnections:CreateConnection",
 		"codestar-connections:CreateConnection",
 		"codeconnections:TagResource",
 		"codestar-connections:TagResource",
 	];
 	/** IAM actions required for the CreateHost API call. */
-	static readonly CREATE_HOST: string[] = [
+	static readonly CreateHost: string[] = [
 		"codeconnections:CreateHost",
 		"codestar-connections:CreateHost",
 		"codeconnections:TagResource",
 		"codestar-connections:TagResource",
 	];
 	/** IAM actions required for the CreateRepositoryLink API call. */
-	static readonly CREATE_REPOSITORY_LINK: string[] = [
+	static readonly CreateRepositoryLink: string[] = [
 		"codeconnections:CreateRepositoryLink",
 		"codestar-connections:CreateRepositoryLink",
 		"codeconnections:PassConnection",
@@ -346,7 +390,7 @@ export class CodestarConnectionsOperations {
 		"codestar-connections:UseConnection",
 	];
 	/** IAM actions required for the CreateSyncConfiguration API call. */
-	static readonly CREATE_SYNC_CONFIGURATION: string[] = [
+	static readonly CreateSyncConfiguration: string[] = [
 		"codeconnections:CreateSyncConfiguration",
 		"codestar-connections:CreateSyncConfiguration",
 		"codeconnections:PassRepository",
@@ -354,107 +398,107 @@ export class CodestarConnectionsOperations {
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = [
+	static readonly DeleteConnection: string[] = [
 		"codeconnections:DeleteConnection",
 		"codestar-connections:DeleteConnection",
 	];
 	/** IAM actions required for the DeleteHost API call. */
-	static readonly DELETE_HOST: string[] = [
+	static readonly DeleteHost: string[] = [
 		"codeconnections:DeleteHost",
 		"codestar-connections:DeleteHost",
 	];
 	/** IAM actions required for the DeleteRepositoryLink API call. */
-	static readonly DELETE_REPOSITORY_LINK: string[] = [
+	static readonly DeleteRepositoryLink: string[] = [
 		"codeconnections:DeleteRepositoryLink",
 		"codestar-connections:DeleteRepositoryLink",
 	];
 	/** IAM actions required for the DeleteSyncConfiguration API call. */
-	static readonly DELETE_SYNC_CONFIGURATION: string[] = [
+	static readonly DeleteSyncConfiguration: string[] = [
 		"codeconnections:DeleteSyncConfiguration",
 		"codestar-connections:DeleteSyncConfiguration",
 	];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = [
+	static readonly opGetConnection: string[] = [
 		"codeconnections:GetConnection",
 		"codestar-connections:GetConnection",
 	];
 	/** IAM actions required for the GetHost API call. */
-	static readonly GET_HOST: string[] = [
+	static readonly opGetHost: string[] = [
 		"codeconnections:GetHost",
 		"codestar-connections:GetHost",
 	];
 	/** IAM actions required for the GetRepositoryLink API call. */
-	static readonly GET_REPOSITORY_LINK: string[] = [
+	static readonly opGetRepositoryLink: string[] = [
 		"codeconnections:GetRepositoryLink",
 		"codestar-connections:GetRepositoryLink",
 	];
 	/** IAM actions required for the GetRepositorySyncStatus API call. */
-	static readonly GET_REPOSITORY_SYNC_STATUS: string[] = [
+	static readonly opGetRepositorySyncStatus: string[] = [
 		"codeconnections:GetRepositorySyncStatus",
 		"codestar-connections:GetRepositorySyncStatus",
 	];
 	/** IAM actions required for the GetResourceSyncStatus API call. */
-	static readonly GET_RESOURCE_SYNC_STATUS: string[] = [
+	static readonly opGetResourceSyncStatus: string[] = [
 		"codeconnections:GetResourceSyncStatus",
 		"codestar-connections:GetResourceSyncStatus",
 	];
 	/** IAM actions required for the GetSyncBlockerSummary API call. */
-	static readonly GET_SYNC_BLOCKER_SUMMARY: string[] = [
+	static readonly opGetSyncBlockerSummary: string[] = [
 		"codeconnections:GetSyncBlockerSummary",
 		"codestar-connections:GetSyncBlockerSummary",
 	];
 	/** IAM actions required for the GetSyncConfiguration API call. */
-	static readonly GET_SYNC_CONFIGURATION: string[] = [
+	static readonly opGetSyncConfiguration: string[] = [
 		"codeconnections:GetSyncConfiguration",
 		"codestar-connections:GetSyncConfiguration",
 	];
 	/** IAM actions required for the ListConnections API call. */
-	static readonly LIST_CONNECTIONS: string[] = [
+	static readonly ListConnections: string[] = [
 		"codeconnections:ListConnections",
 		"codestar-connections:ListConnections",
 	];
 	/** IAM actions required for the ListHosts API call. */
-	static readonly LIST_HOSTS: string[] = [
+	static readonly ListHosts: string[] = [
 		"codeconnections:ListHosts",
 		"codestar-connections:ListHosts",
 	];
 	/** IAM actions required for the ListRepositoryLinks API call. */
-	static readonly LIST_REPOSITORY_LINKS: string[] = [
+	static readonly ListRepositoryLinks: string[] = [
 		"codeconnections:ListRepositoryLinks",
 		"codestar-connections:ListRepositoryLinks",
 	];
 	/** IAM actions required for the ListRepositorySyncDefinitions API call. */
-	static readonly LIST_REPOSITORY_SYNC_DEFINITIONS: string[] = [
+	static readonly ListRepositorySyncDefinitions: string[] = [
 		"codeconnections:ListRepositorySyncDefinitions",
 		"codestar-connections:ListRepositorySyncDefinitions",
 	];
 	/** IAM actions required for the ListSyncConfigurations API call. */
-	static readonly LIST_SYNC_CONFIGURATIONS: string[] = [
+	static readonly ListSyncConfigurations: string[] = [
 		"codeconnections:ListSyncConfigurations",
 		"codestar-connections:ListSyncConfigurations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"codeconnections:ListTagsForResource",
 		"codestar-connections:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"codeconnections:TagResource",
 		"codestar-connections:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"codeconnections:UntagResource",
 		"codestar-connections:UntagResource",
 	];
 	/** IAM actions required for the UpdateHost API call. */
-	static readonly UPDATE_HOST: string[] = [
+	static readonly UpdateHost: string[] = [
 		"codeconnections:UpdateHost",
 		"codestar-connections:UpdateHost",
 	];
 	/** IAM actions required for the UpdateRepositoryLink API call. */
-	static readonly UPDATE_REPOSITORY_LINK: string[] = [
+	static readonly UpdateRepositoryLink: string[] = [
 		"codeconnections:PassConnection",
 		"codestar-connections:PassConnection",
 		"codeconnections:UpdateRepositoryLink",
@@ -463,12 +507,12 @@ export class CodestarConnectionsOperations {
 		"codestar-connections:UseConnection",
 	];
 	/** IAM actions required for the UpdateSyncBlocker API call. */
-	static readonly UPDATE_SYNC_BLOCKER: string[] = [
+	static readonly UpdateSyncBlocker: string[] = [
 		"codeconnections:UpdateSyncBlocker",
 		"codestar-connections:UpdateSyncBlocker",
 	];
 	/** IAM actions required for the UpdateSyncConfiguration API call. */
-	static readonly UPDATE_SYNC_CONFIGURATION: string[] = [
+	static readonly UpdateSyncConfiguration: string[] = [
 		"codeconnections:PassRepository",
 		"codestar-connections:PassRepository",
 		"iam:PassRole",
@@ -482,88 +526,88 @@ export class CodestarConnectionsOperations {
  */
 export class CodestarConnectionsConditions {
 	/** Condition keys applicable to the CreateConnection action. */
-	static readonly CREATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codestar-connections:ProviderType",
 	];
 	/** Condition keys applicable to the CreateHost action. */
-	static readonly CREATE_HOST_CONDITION_KEYS: string[] = [
+	static readonly CreateHostConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codestar-connections:ProviderType",
 		"codestar-connections:VpcId",
 	];
 	/** Condition keys applicable to the CreateRepositoryLink action. */
-	static readonly CREATE_REPOSITORY_LINK_CONDITION_KEYS: string[] = [
+	static readonly CreateRepositoryLinkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSyncConfiguration action. */
-	static readonly CREATE_SYNC_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateSyncConfigurationConditionKeys: string[] = [
 		"codestar-connections:Branch",
 	];
 	/** Condition keys applicable to the GetIndividualAccessToken action. */
-	static readonly GET_INDIVIDUAL_ACCESS_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly actionGetIndividualAccessTokenConditionKeys: string[] = [
 		"codestar-connections:ProviderType",
 	];
 	/** Condition keys applicable to the GetInstallationUrl action. */
-	static readonly GET_INSTALLATION_URL_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstallationUrlConditionKeys: string[] = [
 		"codestar-connections:ProviderType",
 	];
 	/** Condition keys applicable to the GetRepositorySyncStatus action. */
-	static readonly GET_REPOSITORY_SYNC_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetRepositorySyncStatusConditionKeys: string[] = [
 		"codestar-connections:Branch",
 	];
 	/** Condition keys applicable to the ListConnections action. */
-	static readonly LIST_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListConnectionsConditionKeys: string[] = [
 		"codestar-connections:ProviderTypeFilter",
 	];
 	/** Condition keys applicable to the ListHosts action. */
-	static readonly LIST_HOSTS_CONDITION_KEYS: string[] = [
+	static readonly ListHostsConditionKeys: string[] = [
 		"codestar-connections:ProviderTypeFilter",
 	];
 	/** Condition keys applicable to the PassConnection action. */
-	static readonly PASS_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly PassConnectionConditionKeys: string[] = [
 		"codestar-connections:PassedToService",
 	];
 	/** Condition keys applicable to the PassRepository action. */
-	static readonly PASS_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly PassRepositoryConditionKeys: string[] = [
 		"codestar-connections:PassedToService",
 	];
 	/** Condition keys applicable to the RegisterAppCode action. */
-	static readonly REGISTER_APP_CODE_CONDITION_KEYS: string[] = [
+	static readonly RegisterAppCodeConditionKeys: string[] = [
 		"codestar-connections:HostArn",
 	];
 	/** Condition keys applicable to the StartAppRegistrationHandshake action. */
-	static readonly START_APP_REGISTRATION_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly StartAppRegistrationHandshakeConditionKeys: string[] = [
 		"codestar-connections:HostArn",
 	];
 	/** Condition keys applicable to the StartOAuthHandshake action. */
-	static readonly START_O_AUTH_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly StartOAuthHandshakeConditionKeys: string[] = [
 		"codestar-connections:ProviderType",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateConnectionInstallation action. */
-	static readonly UPDATE_CONNECTION_INSTALLATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateConnectionInstallationConditionKeys: string[] = [
 		"codestar-connections:InstallationId",
 	];
 	/** Condition keys applicable to the UpdateHost action. */
-	static readonly UPDATE_HOST_CONDITION_KEYS: string[] = [
+	static readonly UpdateHostConditionKeys: string[] = [
 		"codestar-connections:VpcId",
 	];
 	/** Condition keys applicable to the UpdateSyncConfiguration action. */
-	static readonly UPDATE_SYNC_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateSyncConfigurationConditionKeys: string[] = [
 		"codestar-connections:Branch",
 	];
 	/** Condition keys applicable to the UseConnection action. */
-	static readonly USE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly UseConnectionConditionKeys: string[] = [
 		"codestar-connections:BranchName",
 		"codestar-connections:FullRepositoryId",
 		"codestar-connections:OwnerId",
@@ -573,11 +617,11 @@ export class CodestarConnectionsConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: codestar-connections:Branch (String) */
 	static readonly BRANCH = "codestar-connections:Branch";
 	/** Condition key: codestar-connections:BranchName (String) */

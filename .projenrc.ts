@@ -15,13 +15,15 @@ project.npmignore?.addPatterns("/scripts/", "/data/");
 
 // Add a projen task to sync AWS Service Reference data
 project.addTask("sync-service-reference", {
-	description: "Fetch and store the latest AWS Service Authorization Reference data",
+	description:
+		"Fetch and store the latest AWS Service Authorization Reference data",
 	exec: "tsx scripts/run-sync.ts",
 });
 
 // Unified update: sync data + regenerate constants for changed services
 project.addTask("update-service-reference", {
-	description: "Sync AWS service reference data and regenerate constants for updated services",
+	description:
+		"Sync AWS service reference data and regenerate constants for updated services",
 	exec: "tsx scripts/run-update.ts",
 });
 
@@ -32,7 +34,8 @@ project.addTask("generate-constants", {
 });
 
 project.addTask("generate-service", {
-	description: "Generate constants for a single service (pass file path as arg)",
+	description:
+		"Generate constants for a single service (pass file path as arg)",
 	exec: "tsx scripts/generate-service.ts",
 });
 

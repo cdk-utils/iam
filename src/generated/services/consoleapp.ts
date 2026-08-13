@@ -13,29 +13,56 @@ export class ConsoleappActions {
 	static readonly SERVICE_PREFIX = "consoleapp";
 
 	/** [Read] consoleapp:GetDeviceIdentity */
-	static readonly GET_DEVICE_IDENTITY = "consoleapp:GetDeviceIdentity";
+	static readonly actionGetDeviceIdentity = "consoleapp:GetDeviceIdentity";
 	/** [List] consoleapp:ListDeviceIdentities */
-	static readonly LIST_DEVICE_IDENTITIES = "consoleapp:ListDeviceIdentities";
+	static readonly ListDeviceIdentities = "consoleapp:ListDeviceIdentities";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ConsoleappActions.GET_DEVICE_IDENTITY,
+	static readonly AllReadActions: string[] = [
+		ConsoleappActions.actionGetDeviceIdentity,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ConsoleappActions.LIST_DEVICE_IDENTITIES,
+	static readonly AllListActions: string[] = [
+		ConsoleappActions.ListDeviceIdentities,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const DeviceIdentityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):consoleapp::(?<account>[^:]*):device/(?<deviceId>[^:/?]+)/identity/(?<identityId>[^:/?]+)$",
-);
+/**
+ * Properties for building a DeviceIdentity ARN.
+ */
+export interface ConsoleappDeviceIdentityArnProps {
+	/** The DeviceId component of the ARN. */
+	readonly deviceId: string;
+	/** The IdentityId component of the ARN. */
+	readonly identityId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DeviceIdentity ARN.
+ */
+export interface ConsoleappDeviceIdentityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceId component. */
+	readonly deviceId: string;
+	/** The IdentityId component. */
+	readonly identityId: string;
+}
+
+const DeviceIdentityArnRegex =
+	/^arn:(?<partition>[^:]+):consoleapp::(?<account>[^:]*):device\/(?<deviceId>[^:/?]+)\/identity\/(?<identityId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for consoleapp resources.
@@ -44,16 +71,7 @@ export class ConsoleappResources {
 	/**
 	 * Builds an ARN for the DeviceIdentity resource.
 	 */
-	static deviceIdentity(props: {
-		/** The DeviceId component of the ARN. */
-		readonly deviceId: string;
-		/** The IdentityId component of the ARN. */
-		readonly identityId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deviceIdentity(props: ConsoleappDeviceIdentityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:consoleapp::${props.account ?? "*"}:device/${props.deviceId}/identity/${props.identityId}`;
 	}
 
@@ -68,12 +86,9 @@ export class ConsoleappResources {
 	 * Parses a DeviceIdentity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceIdentityArn(arn: string): {
-		partition: string;
-		account: string;
-		deviceId: string;
-		identityId: string;
-	} {
+	static parseDeviceIdentityArn(
+		arn: string,
+	): ConsoleappDeviceIdentityArnComponents {
 		const match = DeviceIdentityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DeviceIdentity ARN: ${arn}`);

@@ -13,29 +13,29 @@ export class A2cActions {
 	static readonly SERVICE_PREFIX = "a2c";
 
 	/** [Read] a2c:GetContainerizationJobDetails */
-	static readonly GET_CONTAINERIZATION_JOB_DETAILS =
+	static readonly actionGetContainerizationJobDetails =
 		"a2c:GetContainerizationJobDetails";
 	/** [Read] a2c:GetDeploymentJobDetails */
-	static readonly GET_DEPLOYMENT_JOB_DETAILS = "a2c:GetDeploymentJobDetails";
+	static readonly actionGetDeploymentJobDetails = "a2c:GetDeploymentJobDetails";
 	/** [Write] a2c:StartContainerizationJob */
-	static readonly START_CONTAINERIZATION_JOB = "a2c:StartContainerizationJob";
+	static readonly StartContainerizationJob = "a2c:StartContainerizationJob";
 	/** [Write] a2c:StartDeploymentJob */
-	static readonly START_DEPLOYMENT_JOB = "a2c:StartDeploymentJob";
+	static readonly StartDeploymentJob = "a2c:StartDeploymentJob";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		A2cActions.GET_CONTAINERIZATION_JOB_DETAILS,
-		A2cActions.GET_DEPLOYMENT_JOB_DETAILS,
+	static readonly AllReadActions: string[] = [
+		A2cActions.actionGetContainerizationJobDetails,
+		A2cActions.actionGetDeploymentJobDetails,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		A2cActions.START_CONTAINERIZATION_JOB,
-		A2cActions.START_DEPLOYMENT_JOB,
+	static readonly AllWriteActions: string[] = [
+		A2cActions.StartContainerizationJob,
+		A2cActions.StartDeploymentJob,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

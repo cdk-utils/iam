@@ -13,125 +13,176 @@ export class S3expressActions {
 	static readonly SERVICE_PREFIX = "s3express";
 
 	/** [Write] s3express:CreateAccessPoint */
-	static readonly CREATE_ACCESS_POINT = "s3express:CreateAccessPoint";
+	static readonly CreateAccessPoint = "s3express:CreateAccessPoint";
 	/** [Write] s3express:CreateBucket */
-	static readonly CREATE_BUCKET = "s3express:CreateBucket";
+	static readonly CreateBucket = "s3express:CreateBucket";
 	/** [Write] s3express:CreateSession */
-	static readonly CREATE_SESSION = "s3express:CreateSession";
+	static readonly CreateSession = "s3express:CreateSession";
 	/** [Write] s3express:DeleteAccessPoint */
-	static readonly DELETE_ACCESS_POINT = "s3express:DeleteAccessPoint";
+	static readonly DeleteAccessPoint = "s3express:DeleteAccessPoint";
 	/** [PermissionManagement] s3express:DeleteAccessPointPolicy */
-	static readonly DELETE_ACCESS_POINT_POLICY =
-		"s3express:DeleteAccessPointPolicy";
+	static readonly DeleteAccessPointPolicy = "s3express:DeleteAccessPointPolicy";
 	/** [PermissionManagement] s3express:DeleteAccessPointScope */
-	static readonly DELETE_ACCESS_POINT_SCOPE =
-		"s3express:DeleteAccessPointScope";
+	static readonly DeleteAccessPointScope = "s3express:DeleteAccessPointScope";
 	/** [Write] s3express:DeleteBucket */
-	static readonly DELETE_BUCKET = "s3express:DeleteBucket";
+	static readonly DeleteBucket = "s3express:DeleteBucket";
 	/** [PermissionManagement] s3express:DeleteBucketPolicy */
-	static readonly DELETE_BUCKET_POLICY = "s3express:DeleteBucketPolicy";
+	static readonly DeleteBucketPolicy = "s3express:DeleteBucketPolicy";
 	/** [Read] s3express:GetAccessPoint */
-	static readonly GET_ACCESS_POINT = "s3express:GetAccessPoint";
+	static readonly actionGetAccessPoint = "s3express:GetAccessPoint";
 	/** [Read] s3express:GetAccessPointPolicy */
-	static readonly GET_ACCESS_POINT_POLICY = "s3express:GetAccessPointPolicy";
+	static readonly actionGetAccessPointPolicy = "s3express:GetAccessPointPolicy";
 	/** [Read] s3express:GetAccessPointScope */
-	static readonly GET_ACCESS_POINT_SCOPE = "s3express:GetAccessPointScope";
+	static readonly actionGetAccessPointScope = "s3express:GetAccessPointScope";
 	/** [Read] s3express:GetBucketPolicy */
-	static readonly GET_BUCKET_POLICY = "s3express:GetBucketPolicy";
+	static readonly actionGetBucketPolicy = "s3express:GetBucketPolicy";
 	/** [Read] s3express:GetEncryptionConfiguration */
-	static readonly GET_ENCRYPTION_CONFIGURATION =
+	static readonly actionGetEncryptionConfiguration =
 		"s3express:GetEncryptionConfiguration";
 	/** [Read] s3express:GetInventoryConfiguration */
-	static readonly GET_INVENTORY_CONFIGURATION =
+	static readonly actionGetInventoryConfiguration =
 		"s3express:GetInventoryConfiguration";
 	/** [Read] s3express:GetLifecycleConfiguration */
-	static readonly GET_LIFECYCLE_CONFIGURATION =
+	static readonly actionGetLifecycleConfiguration =
 		"s3express:GetLifecycleConfiguration";
 	/** [Read] s3express:GetMetricsConfiguration */
-	static readonly GET_METRICS_CONFIGURATION =
+	static readonly actionGetMetricsConfiguration =
 		"s3express:GetMetricsConfiguration";
 	/** [List] s3express:ListAccessPointsForDirectoryBuckets */
-	static readonly LIST_ACCESS_POINTS_FOR_DIRECTORY_BUCKETS =
+	static readonly ListAccessPointsForDirectoryBuckets =
 		"s3express:ListAccessPointsForDirectoryBuckets";
 	/** [List] s3express:ListAllMyDirectoryBuckets */
-	static readonly LIST_ALL_MY_DIRECTORY_BUCKETS =
+	static readonly ListAllMyDirectoryBuckets =
 		"s3express:ListAllMyDirectoryBuckets";
 	/** [List] s3express:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "s3express:ListTagsForResource";
+	static readonly ListTagsForResource = "s3express:ListTagsForResource";
 	/** [PermissionManagement] s3express:PutAccessPointPolicy */
-	static readonly PUT_ACCESS_POINT_POLICY = "s3express:PutAccessPointPolicy";
+	static readonly PutAccessPointPolicy = "s3express:PutAccessPointPolicy";
 	/** [PermissionManagement] s3express:PutAccessPointScope */
-	static readonly PUT_ACCESS_POINT_SCOPE = "s3express:PutAccessPointScope";
+	static readonly PutAccessPointScope = "s3express:PutAccessPointScope";
 	/** [PermissionManagement] s3express:PutBucketPolicy */
-	static readonly PUT_BUCKET_POLICY = "s3express:PutBucketPolicy";
+	static readonly PutBucketPolicy = "s3express:PutBucketPolicy";
 	/** [Write] s3express:PutEncryptionConfiguration */
-	static readonly PUT_ENCRYPTION_CONFIGURATION =
+	static readonly PutEncryptionConfiguration =
 		"s3express:PutEncryptionConfiguration";
 	/** [Write] s3express:PutInventoryConfiguration */
-	static readonly PUT_INVENTORY_CONFIGURATION =
+	static readonly PutInventoryConfiguration =
 		"s3express:PutInventoryConfiguration";
 	/** [Write] s3express:PutLifecycleConfiguration */
-	static readonly PUT_LIFECYCLE_CONFIGURATION =
+	static readonly PutLifecycleConfiguration =
 		"s3express:PutLifecycleConfiguration";
 	/** [Write] s3express:PutMetricsConfiguration */
-	static readonly PUT_METRICS_CONFIGURATION =
-		"s3express:PutMetricsConfiguration";
+	static readonly PutMetricsConfiguration = "s3express:PutMetricsConfiguration";
 	/** [Tagging] s3express:TagResource */
-	static readonly TAG_RESOURCE = "s3express:TagResource";
+	static readonly TagResource = "s3express:TagResource";
 	/** [Tagging] s3express:UntagResource */
-	static readonly UNTAG_RESOURCE = "s3express:UntagResource";
+	static readonly UntagResource = "s3express:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		S3expressActions.GET_ACCESS_POINT,
-		S3expressActions.GET_ACCESS_POINT_POLICY,
-		S3expressActions.GET_ACCESS_POINT_SCOPE,
-		S3expressActions.GET_BUCKET_POLICY,
-		S3expressActions.GET_ENCRYPTION_CONFIGURATION,
-		S3expressActions.GET_INVENTORY_CONFIGURATION,
-		S3expressActions.GET_LIFECYCLE_CONFIGURATION,
-		S3expressActions.GET_METRICS_CONFIGURATION,
+	static readonly AllReadActions: string[] = [
+		S3expressActions.actionGetAccessPoint,
+		S3expressActions.actionGetAccessPointPolicy,
+		S3expressActions.actionGetAccessPointScope,
+		S3expressActions.actionGetBucketPolicy,
+		S3expressActions.actionGetEncryptionConfiguration,
+		S3expressActions.actionGetInventoryConfiguration,
+		S3expressActions.actionGetLifecycleConfiguration,
+		S3expressActions.actionGetMetricsConfiguration,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		S3expressActions.CREATE_ACCESS_POINT,
-		S3expressActions.CREATE_BUCKET,
-		S3expressActions.CREATE_SESSION,
-		S3expressActions.DELETE_ACCESS_POINT,
-		S3expressActions.DELETE_BUCKET,
-		S3expressActions.PUT_ENCRYPTION_CONFIGURATION,
-		S3expressActions.PUT_INVENTORY_CONFIGURATION,
-		S3expressActions.PUT_LIFECYCLE_CONFIGURATION,
-		S3expressActions.PUT_METRICS_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		S3expressActions.CreateAccessPoint,
+		S3expressActions.CreateBucket,
+		S3expressActions.CreateSession,
+		S3expressActions.DeleteAccessPoint,
+		S3expressActions.DeleteBucket,
+		S3expressActions.PutEncryptionConfiguration,
+		S3expressActions.PutInventoryConfiguration,
+		S3expressActions.PutLifecycleConfiguration,
+		S3expressActions.PutMetricsConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		S3expressActions.LIST_ACCESS_POINTS_FOR_DIRECTORY_BUCKETS,
-		S3expressActions.LIST_ALL_MY_DIRECTORY_BUCKETS,
-		S3expressActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		S3expressActions.ListAccessPointsForDirectoryBuckets,
+		S3expressActions.ListAllMyDirectoryBuckets,
+		S3expressActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		S3expressActions.DELETE_ACCESS_POINT_POLICY,
-		S3expressActions.DELETE_ACCESS_POINT_SCOPE,
-		S3expressActions.DELETE_BUCKET_POLICY,
-		S3expressActions.PUT_ACCESS_POINT_POLICY,
-		S3expressActions.PUT_ACCESS_POINT_SCOPE,
-		S3expressActions.PUT_BUCKET_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		S3expressActions.DeleteAccessPointPolicy,
+		S3expressActions.DeleteAccessPointScope,
+		S3expressActions.DeleteBucketPolicy,
+		S3expressActions.PutAccessPointPolicy,
+		S3expressActions.PutAccessPointScope,
+		S3expressActions.PutBucketPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		S3expressActions.TAG_RESOURCE,
-		S3expressActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		S3expressActions.TagResource,
+		S3expressActions.UntagResource,
 	];
 }
 
-const AccesspointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3express:(?<region>[^:]*):(?<account>[^:]*):accesspoint/(?<accessPointName>[^:/?]+)$",
-);
-const BucketArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3express:(?<region>[^:]*):(?<account>[^:]*):bucket/(?<bucketName>[^:/?]+)$",
-);
+/**
+ * Properties for building a accesspoint ARN.
+ */
+export interface S3expressAccesspointArnProps {
+	/** The AccessPointName component of the ARN. */
+	readonly accessPointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accesspoint ARN.
+ */
+export interface S3expressAccesspointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessPointName component. */
+	readonly accessPointName: string;
+}
+
+/**
+ * Properties for building a bucket ARN.
+ */
+export interface S3expressBucketArnProps {
+	/** The BucketName component of the ARN. */
+	readonly bucketName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bucket ARN.
+ */
+export interface S3expressBucketArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BucketName component. */
+	readonly bucketName: string;
+}
+
+const AccesspointArnRegex =
+	/^arn:(?<partition>[^:]+):s3express:(?<region>[^:]*):(?<account>[^:]*):accesspoint\/(?<accessPointName>[^:/?]+)$/;
+const BucketArnRegex =
+	/^arn:(?<partition>[^:]+):s3express:(?<region>[^:]*):(?<account>[^:]*):bucket\/(?<bucketName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for s3express resources.
@@ -140,16 +191,7 @@ export class S3expressResources {
 	/**
 	 * Builds an ARN for the accesspoint resource.
 	 */
-	static accesspoint(props: {
-		/** The AccessPointName component of the ARN. */
-		readonly accessPointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accesspoint(props: S3expressAccesspointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3express:${props.region ?? "*"}:${props.account ?? "*"}:accesspoint/${props.accessPointName}`;
 	}
 
@@ -164,12 +206,7 @@ export class S3expressResources {
 	 * Parses a accesspoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccesspointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessPointName: string;
-	} {
+	static parseAccesspointArn(arn: string): S3expressAccesspointArnComponents {
 		const match = AccesspointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid accesspoint ARN: ${arn}`);
@@ -185,16 +222,7 @@ export class S3expressResources {
 	/**
 	 * Builds an ARN for the bucket resource.
 	 */
-	static bucket(props: {
-		/** The BucketName component of the ARN. */
-		readonly bucketName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static bucket(props: S3expressBucketArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3express:${props.region ?? "*"}:${props.account ?? "*"}:bucket/${props.bucketName}`;
 	}
 
@@ -209,12 +237,7 @@ export class S3expressResources {
 	 * Parses a bucket ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBucketArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		bucketName: string;
-	} {
+	static parseBucketArn(arn: string): S3expressBucketArnComponents {
 		const match = BucketArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bucket ARN: ${arn}`);
@@ -233,7 +256,7 @@ export class S3expressResources {
  */
 export class S3expressConditions {
 	/** Condition keys applicable to the CreateAccessPoint action. */
-	static readonly CREATE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"s3express:AccessPointNetworkOrigin",
@@ -247,7 +270,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the CreateBucket action. */
-	static readonly CREATE_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly CreateBucketConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"s3express:LocationName",
@@ -258,7 +281,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the CreateSession action. */
-	static readonly CREATE_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateSessionConditionKeys: string[] = [
 		"s3express:AllAccessRestrictedToLocalZoneGroup",
 		"s3express:Permissions",
 		"s3express:ResourceAccount",
@@ -272,7 +295,7 @@ export class S3expressConditions {
 		"s3express:x-amz-server-side-encryption-aws-kms-key-id",
 	];
 	/** Condition keys applicable to the DeleteAccessPoint action. */
-	static readonly DELETE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPointConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -283,7 +306,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteAccessPointPolicy action. */
-	static readonly DELETE_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPointPolicyConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -294,7 +317,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteAccessPointScope action. */
-	static readonly DELETE_ACCESS_POINT_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPointScopeConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -305,7 +328,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteBucket action. */
-	static readonly DELETE_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly DeleteBucketConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -313,7 +336,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteBucketPolicy action. */
-	static readonly DELETE_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteBucketPolicyConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -321,7 +344,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetAccessPoint action. */
-	static readonly GET_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPointConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -332,7 +355,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetAccessPointPolicy action. */
-	static readonly GET_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPointPolicyConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -343,7 +366,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetAccessPointScope action. */
-	static readonly GET_ACCESS_POINT_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPointScopeConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -354,7 +377,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetBucketPolicy action. */
-	static readonly GET_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetBucketPolicyConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -362,7 +385,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetEncryptionConfiguration action. */
-	static readonly GET_ENCRYPTION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetEncryptionConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -370,7 +393,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetInventoryConfiguration action. */
-	static readonly GET_INVENTORY_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetInventoryConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -378,7 +401,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetLifecycleConfiguration action. */
-	static readonly GET_LIFECYCLE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetLifecycleConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -386,7 +409,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetMetricsConfiguration action. */
-	static readonly GET_METRICS_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetMetricsConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -394,16 +417,15 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListAccessPointsForDirectoryBuckets action. */
-	static readonly LIST_ACCESS_POINTS_FOR_DIRECTORY_BUCKETS_CONDITION_KEYS: string[] =
-		[
-			"s3express:ResourceAccount",
-			"s3express:TlsVersion",
-			"s3express:authType",
-			"s3express:signatureversion",
-			"s3express:x-amz-content-sha256",
-		];
+	static readonly ListAccessPointsForDirectoryBucketsConditionKeys: string[] = [
+		"s3express:ResourceAccount",
+		"s3express:TlsVersion",
+		"s3express:authType",
+		"s3express:signatureversion",
+		"s3express:x-amz-content-sha256",
+	];
 	/** Condition keys applicable to the ListAllMyDirectoryBuckets action. */
-	static readonly LIST_ALL_MY_DIRECTORY_BUCKETS_CONDITION_KEYS: string[] = [
+	static readonly ListAllMyDirectoryBucketsConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -411,7 +433,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -419,7 +441,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutAccessPointPolicy action. */
-	static readonly PUT_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutAccessPointPolicyConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -430,7 +452,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutAccessPointScope action. */
-	static readonly PUT_ACCESS_POINT_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly PutAccessPointScopeConditionKeys: string[] = [
 		"s3express:AccessPointNetworkOrigin",
 		"s3express:DataAccessPointAccount",
 		"s3express:DataAccessPointArn",
@@ -441,7 +463,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutBucketPolicy action. */
-	static readonly PUT_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutBucketPolicyConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -449,7 +471,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutEncryptionConfiguration action. */
-	static readonly PUT_ENCRYPTION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutEncryptionConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -457,7 +479,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutInventoryConfiguration action. */
-	static readonly PUT_INVENTORY_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutInventoryConfigurationConditionKeys: string[] = [
 		"s3express:InventoryAccessibleOptionalFields",
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
@@ -466,7 +488,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutLifecycleConfiguration action. */
-	static readonly PUT_LIFECYCLE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutLifecycleConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -474,7 +496,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutMetricsConfiguration action. */
-	static readonly PUT_METRICS_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutMetricsConfigurationConditionKeys: string[] = [
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
 		"s3express:authType",
@@ -482,7 +504,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"s3express:ResourceAccount",
@@ -492,7 +514,7 @@ export class S3expressConditions {
 		"s3express:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"s3express:ResourceAccount",
 		"s3express:TlsVersion",
@@ -502,11 +524,11 @@ export class S3expressConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: s3express:AccessPointNetworkOrigin (String) */
 	static readonly ACCESS_POINT_NETWORK_ORIGIN =
 		"s3express:AccessPointNetworkOrigin";

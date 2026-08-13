@@ -13,102 +13,102 @@ export class SnowballActions {
 	static readonly SERVICE_PREFIX = "snowball";
 
 	/** [Write] snowball:CancelCluster */
-	static readonly CANCEL_CLUSTER = "snowball:CancelCluster";
+	static readonly CancelCluster = "snowball:CancelCluster";
 	/** [Write] snowball:CancelJob */
-	static readonly CANCEL_JOB = "snowball:CancelJob";
+	static readonly CancelJob = "snowball:CancelJob";
 	/** [Write] snowball:CreateAddress */
-	static readonly CREATE_ADDRESS = "snowball:CreateAddress";
+	static readonly CreateAddress = "snowball:CreateAddress";
 	/** [Write] snowball:CreateCluster */
-	static readonly CREATE_CLUSTER = "snowball:CreateCluster";
+	static readonly CreateCluster = "snowball:CreateCluster";
 	/** [Write] snowball:CreateJob */
-	static readonly CREATE_JOB = "snowball:CreateJob";
+	static readonly CreateJob = "snowball:CreateJob";
 	/** [Write] snowball:CreateLongTermPricing */
-	static readonly CREATE_LONG_TERM_PRICING = "snowball:CreateLongTermPricing";
+	static readonly CreateLongTermPricing = "snowball:CreateLongTermPricing";
 	/** [Write] snowball:CreateReturnShippingLabel */
-	static readonly CREATE_RETURN_SHIPPING_LABEL =
+	static readonly CreateReturnShippingLabel =
 		"snowball:CreateReturnShippingLabel";
 	/** [Read] snowball:DescribeAddress */
-	static readonly DESCRIBE_ADDRESS = "snowball:DescribeAddress";
+	static readonly DescribeAddress = "snowball:DescribeAddress";
 	/** [List] snowball:DescribeAddresses */
-	static readonly DESCRIBE_ADDRESSES = "snowball:DescribeAddresses";
+	static readonly DescribeAddresses = "snowball:DescribeAddresses";
 	/** [Read] snowball:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "snowball:DescribeCluster";
+	static readonly DescribeCluster = "snowball:DescribeCluster";
 	/** [Read] snowball:DescribeJob */
-	static readonly DESCRIBE_JOB = "snowball:DescribeJob";
+	static readonly DescribeJob = "snowball:DescribeJob";
 	/** [Read] snowball:DescribeReturnShippingLabel */
-	static readonly DESCRIBE_RETURN_SHIPPING_LABEL =
+	static readonly DescribeReturnShippingLabel =
 		"snowball:DescribeReturnShippingLabel";
 	/** [Read] snowball:GetJobManifest */
-	static readonly GET_JOB_MANIFEST = "snowball:GetJobManifest";
+	static readonly actionGetJobManifest = "snowball:GetJobManifest";
 	/** [Read] snowball:GetJobUnlockCode */
-	static readonly GET_JOB_UNLOCK_CODE = "snowball:GetJobUnlockCode";
+	static readonly actionGetJobUnlockCode = "snowball:GetJobUnlockCode";
 	/** [Read] snowball:GetSnowballUsage */
-	static readonly GET_SNOWBALL_USAGE = "snowball:GetSnowballUsage";
+	static readonly actionGetSnowballUsage = "snowball:GetSnowballUsage";
 	/** [Read] snowball:GetSoftwareUpdates */
-	static readonly GET_SOFTWARE_UPDATES = "snowball:GetSoftwareUpdates";
+	static readonly actionGetSoftwareUpdates = "snowball:GetSoftwareUpdates";
 	/** [List] snowball:ListClusterJobs */
-	static readonly LIST_CLUSTER_JOBS = "snowball:ListClusterJobs";
+	static readonly ListClusterJobs = "snowball:ListClusterJobs";
 	/** [List] snowball:ListClusters */
-	static readonly LIST_CLUSTERS = "snowball:ListClusters";
+	static readonly ListClusters = "snowball:ListClusters";
 	/** [List] snowball:ListCompatibleImages */
-	static readonly LIST_COMPATIBLE_IMAGES = "snowball:ListCompatibleImages";
+	static readonly ListCompatibleImages = "snowball:ListCompatibleImages";
 	/** [List] snowball:ListJobs */
-	static readonly LIST_JOBS = "snowball:ListJobs";
+	static readonly ListJobs = "snowball:ListJobs";
 	/** [Read] snowball:ListLongTermPricing */
-	static readonly LIST_LONG_TERM_PRICING = "snowball:ListLongTermPricing";
+	static readonly ListLongTermPricing = "snowball:ListLongTermPricing";
 	/** [List] snowball:ListPickupLocations */
-	static readonly LIST_PICKUP_LOCATIONS = "snowball:ListPickupLocations";
+	static readonly ListPickupLocations = "snowball:ListPickupLocations";
 	/** [List] snowball:ListServiceVersions */
-	static readonly LIST_SERVICE_VERSIONS = "snowball:ListServiceVersions";
+	static readonly ListServiceVersions = "snowball:ListServiceVersions";
 	/** [Write] snowball:UpdateCluster */
-	static readonly UPDATE_CLUSTER = "snowball:UpdateCluster";
+	static readonly UpdateCluster = "snowball:UpdateCluster";
 	/** [Write] snowball:UpdateJob */
-	static readonly UPDATE_JOB = "snowball:UpdateJob";
+	static readonly UpdateJob = "snowball:UpdateJob";
 	/** [Write] snowball:UpdateJobShipmentState */
-	static readonly UPDATE_JOB_SHIPMENT_STATE = "snowball:UpdateJobShipmentState";
+	static readonly UpdateJobShipmentState = "snowball:UpdateJobShipmentState";
 	/** [Write] snowball:UpdateLongTermPricing */
-	static readonly UPDATE_LONG_TERM_PRICING = "snowball:UpdateLongTermPricing";
+	static readonly UpdateLongTermPricing = "snowball:UpdateLongTermPricing";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SnowballActions.DESCRIBE_ADDRESS,
-		SnowballActions.DESCRIBE_CLUSTER,
-		SnowballActions.DESCRIBE_JOB,
-		SnowballActions.DESCRIBE_RETURN_SHIPPING_LABEL,
-		SnowballActions.GET_JOB_MANIFEST,
-		SnowballActions.GET_JOB_UNLOCK_CODE,
-		SnowballActions.GET_SNOWBALL_USAGE,
-		SnowballActions.GET_SOFTWARE_UPDATES,
-		SnowballActions.LIST_LONG_TERM_PRICING,
+	static readonly AllReadActions: string[] = [
+		SnowballActions.DescribeAddress,
+		SnowballActions.DescribeCluster,
+		SnowballActions.DescribeJob,
+		SnowballActions.DescribeReturnShippingLabel,
+		SnowballActions.actionGetJobManifest,
+		SnowballActions.actionGetJobUnlockCode,
+		SnowballActions.actionGetSnowballUsage,
+		SnowballActions.actionGetSoftwareUpdates,
+		SnowballActions.ListLongTermPricing,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SnowballActions.CANCEL_CLUSTER,
-		SnowballActions.CANCEL_JOB,
-		SnowballActions.CREATE_ADDRESS,
-		SnowballActions.CREATE_CLUSTER,
-		SnowballActions.CREATE_JOB,
-		SnowballActions.CREATE_LONG_TERM_PRICING,
-		SnowballActions.CREATE_RETURN_SHIPPING_LABEL,
-		SnowballActions.UPDATE_CLUSTER,
-		SnowballActions.UPDATE_JOB,
-		SnowballActions.UPDATE_JOB_SHIPMENT_STATE,
-		SnowballActions.UPDATE_LONG_TERM_PRICING,
+	static readonly AllWriteActions: string[] = [
+		SnowballActions.CancelCluster,
+		SnowballActions.CancelJob,
+		SnowballActions.CreateAddress,
+		SnowballActions.CreateCluster,
+		SnowballActions.CreateJob,
+		SnowballActions.CreateLongTermPricing,
+		SnowballActions.CreateReturnShippingLabel,
+		SnowballActions.UpdateCluster,
+		SnowballActions.UpdateJob,
+		SnowballActions.UpdateJobShipmentState,
+		SnowballActions.UpdateLongTermPricing,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SnowballActions.DESCRIBE_ADDRESSES,
-		SnowballActions.LIST_CLUSTER_JOBS,
-		SnowballActions.LIST_CLUSTERS,
-		SnowballActions.LIST_COMPATIBLE_IMAGES,
-		SnowballActions.LIST_JOBS,
-		SnowballActions.LIST_PICKUP_LOCATIONS,
-		SnowballActions.LIST_SERVICE_VERSIONS,
+	static readonly AllListActions: string[] = [
+		SnowballActions.DescribeAddresses,
+		SnowballActions.ListClusterJobs,
+		SnowballActions.ListClusters,
+		SnowballActions.ListCompatibleImages,
+		SnowballActions.ListJobs,
+		SnowballActions.ListPickupLocations,
+		SnowballActions.ListServiceVersions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -116,83 +116,83 @@ export class SnowballActions {
  */
 export class SnowballOperations {
 	/** IAM actions required for the CancelCluster API call. */
-	static readonly CANCEL_CLUSTER: string[] = ["snowball:CancelCluster"];
+	static readonly CancelCluster: string[] = ["snowball:CancelCluster"];
 	/** IAM actions required for the CancelJob API call. */
-	static readonly CANCEL_JOB: string[] = ["snowball:CancelJob"];
+	static readonly CancelJob: string[] = ["snowball:CancelJob"];
 	/** IAM actions required for the CreateAddress API call. */
-	static readonly CREATE_ADDRESS: string[] = ["snowball:CreateAddress"];
+	static readonly CreateAddress: string[] = ["snowball:CreateAddress"];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"snowball:CreateCluster",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = ["snowball:CreateJob", "iam:PassRole"];
+	static readonly CreateJob: string[] = ["snowball:CreateJob", "iam:PassRole"];
 	/** IAM actions required for the CreateLongTermPricing API call. */
-	static readonly CREATE_LONG_TERM_PRICING: string[] = [
+	static readonly CreateLongTermPricing: string[] = [
 		"snowball:CreateLongTermPricing",
 	];
 	/** IAM actions required for the CreateReturnShippingLabel API call. */
-	static readonly CREATE_RETURN_SHIPPING_LABEL: string[] = [
+	static readonly CreateReturnShippingLabel: string[] = [
 		"snowball:CreateReturnShippingLabel",
 	];
 	/** IAM actions required for the DescribeAddress API call. */
-	static readonly DESCRIBE_ADDRESS: string[] = ["snowball:DescribeAddress"];
+	static readonly DescribeAddress: string[] = ["snowball:DescribeAddress"];
 	/** IAM actions required for the DescribeAddresses API call. */
-	static readonly DESCRIBE_ADDRESSES: string[] = ["snowball:DescribeAddresses"];
+	static readonly DescribeAddresses: string[] = ["snowball:DescribeAddresses"];
 	/** IAM actions required for the DescribeCluster API call. */
-	static readonly DESCRIBE_CLUSTER: string[] = ["snowball:DescribeCluster"];
+	static readonly DescribeCluster: string[] = ["snowball:DescribeCluster"];
 	/** IAM actions required for the DescribeJob API call. */
-	static readonly DESCRIBE_JOB: string[] = ["snowball:DescribeJob"];
+	static readonly DescribeJob: string[] = ["snowball:DescribeJob"];
 	/** IAM actions required for the DescribeReturnShippingLabel API call. */
-	static readonly DESCRIBE_RETURN_SHIPPING_LABEL: string[] = [
+	static readonly DescribeReturnShippingLabel: string[] = [
 		"snowball:DescribeReturnShippingLabel",
 	];
 	/** IAM actions required for the GetJobManifest API call. */
-	static readonly GET_JOB_MANIFEST: string[] = ["snowball:GetJobManifest"];
+	static readonly opGetJobManifest: string[] = ["snowball:GetJobManifest"];
 	/** IAM actions required for the GetJobUnlockCode API call. */
-	static readonly GET_JOB_UNLOCK_CODE: string[] = ["snowball:GetJobUnlockCode"];
+	static readonly opGetJobUnlockCode: string[] = ["snowball:GetJobUnlockCode"];
 	/** IAM actions required for the GetSnowballUsage API call. */
-	static readonly GET_SNOWBALL_USAGE: string[] = ["snowball:GetSnowballUsage"];
+	static readonly opGetSnowballUsage: string[] = ["snowball:GetSnowballUsage"];
 	/** IAM actions required for the GetSoftwareUpdates API call. */
-	static readonly GET_SOFTWARE_UPDATES: string[] = [
+	static readonly opGetSoftwareUpdates: string[] = [
 		"snowball:GetSoftwareUpdates",
 	];
 	/** IAM actions required for the ListClusterJobs API call. */
-	static readonly LIST_CLUSTER_JOBS: string[] = ["snowball:ListClusterJobs"];
+	static readonly ListClusterJobs: string[] = ["snowball:ListClusterJobs"];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["snowball:ListClusters"];
+	static readonly ListClusters: string[] = ["snowball:ListClusters"];
 	/** IAM actions required for the ListCompatibleImages API call. */
-	static readonly LIST_COMPATIBLE_IMAGES: string[] = [
+	static readonly ListCompatibleImages: string[] = [
 		"snowball:ListCompatibleImages",
 	];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["snowball:ListJobs"];
+	static readonly ListJobs: string[] = ["snowball:ListJobs"];
 	/** IAM actions required for the ListLongTermPricing API call. */
-	static readonly LIST_LONG_TERM_PRICING: string[] = [
+	static readonly ListLongTermPricing: string[] = [
 		"snowball:ListLongTermPricing",
 	];
 	/** IAM actions required for the ListPickupLocations API call. */
-	static readonly LIST_PICKUP_LOCATIONS: string[] = [
+	static readonly ListPickupLocations: string[] = [
 		"snowball:ListPickupLocations",
 	];
 	/** IAM actions required for the ListServiceVersions API call. */
-	static readonly LIST_SERVICE_VERSIONS: string[] = [
+	static readonly ListServiceVersions: string[] = [
 		"snowball:ListServiceVersions",
 	];
 	/** IAM actions required for the UpdateCluster API call. */
-	static readonly UPDATE_CLUSTER: string[] = [
+	static readonly UpdateCluster: string[] = [
 		"iam:PassRole",
 		"snowball:UpdateCluster",
 	];
 	/** IAM actions required for the UpdateJob API call. */
-	static readonly UPDATE_JOB: string[] = ["iam:PassRole", "snowball:UpdateJob"];
+	static readonly UpdateJob: string[] = ["iam:PassRole", "snowball:UpdateJob"];
 	/** IAM actions required for the UpdateJobShipmentState API call. */
-	static readonly UPDATE_JOB_SHIPMENT_STATE: string[] = [
+	static readonly UpdateJobShipmentState: string[] = [
 		"snowball:UpdateJobShipmentState",
 	];
 	/** IAM actions required for the UpdateLongTermPricing API call. */
-	static readonly UPDATE_LONG_TERM_PRICING: string[] = [
+	static readonly UpdateLongTermPricing: string[] = [
 		"snowball:UpdateLongTermPricing",
 	];
 }

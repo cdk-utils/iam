@@ -13,201 +13,435 @@ export class MemoryDBActions {
 	static readonly SERVICE_PREFIX = "memorydb";
 
 	/** [Write] memorydb:BatchUpdateCluster */
-	static readonly BATCH_UPDATE_CLUSTER = "memorydb:BatchUpdateCluster";
+	static readonly BatchUpdateCluster = "memorydb:BatchUpdateCluster";
 	/** [Write] memorydb:Connect */
-	static readonly CONNECT = "memorydb:Connect";
+	static readonly Connect = "memorydb:Connect";
 	/** [Write] memorydb:CopySnapshot */
-	static readonly COPY_SNAPSHOT = "memorydb:CopySnapshot";
+	static readonly CopySnapshot = "memorydb:CopySnapshot";
 	/** [Write] memorydb:CreateAcl */
-	static readonly CREATE_ACL = "memorydb:CreateAcl";
+	static readonly CreateAcl = "memorydb:CreateAcl";
 	/** [Write] memorydb:CreateCluster */
-	static readonly CREATE_CLUSTER = "memorydb:CreateCluster";
+	static readonly CreateCluster = "memorydb:CreateCluster";
 	/** [Write] memorydb:CreateMultiRegionCluster */
-	static readonly CREATE_MULTI_REGION_CLUSTER =
+	static readonly CreateMultiRegionCluster =
 		"memorydb:CreateMultiRegionCluster";
 	/** [Write] memorydb:CreateParameterGroup */
-	static readonly CREATE_PARAMETER_GROUP = "memorydb:CreateParameterGroup";
+	static readonly CreateParameterGroup = "memorydb:CreateParameterGroup";
 	/** [Write] memorydb:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "memorydb:CreateSnapshot";
+	static readonly CreateSnapshot = "memorydb:CreateSnapshot";
 	/** [Write] memorydb:CreateSubnetGroup */
-	static readonly CREATE_SUBNET_GROUP = "memorydb:CreateSubnetGroup";
+	static readonly CreateSubnetGroup = "memorydb:CreateSubnetGroup";
 	/** [Write] memorydb:CreateUser */
-	static readonly CREATE_USER = "memorydb:CreateUser";
+	static readonly CreateUser = "memorydb:CreateUser";
 	/** [Write] memorydb:DeleteAcl */
-	static readonly DELETE_ACL = "memorydb:DeleteAcl";
+	static readonly DeleteAcl = "memorydb:DeleteAcl";
 	/** [Write] memorydb:DeleteCluster */
-	static readonly DELETE_CLUSTER = "memorydb:DeleteCluster";
+	static readonly DeleteCluster = "memorydb:DeleteCluster";
 	/** [Write] memorydb:DeleteMultiRegionCluster */
-	static readonly DELETE_MULTI_REGION_CLUSTER =
+	static readonly DeleteMultiRegionCluster =
 		"memorydb:DeleteMultiRegionCluster";
 	/** [Write] memorydb:DeleteParameterGroup */
-	static readonly DELETE_PARAMETER_GROUP = "memorydb:DeleteParameterGroup";
+	static readonly DeleteParameterGroup = "memorydb:DeleteParameterGroup";
 	/** [Write] memorydb:DeleteSnapshot */
-	static readonly DELETE_SNAPSHOT = "memorydb:DeleteSnapshot";
+	static readonly DeleteSnapshot = "memorydb:DeleteSnapshot";
 	/** [Write] memorydb:DeleteSubnetGroup */
-	static readonly DELETE_SUBNET_GROUP = "memorydb:DeleteSubnetGroup";
+	static readonly DeleteSubnetGroup = "memorydb:DeleteSubnetGroup";
 	/** [Write] memorydb:DeleteUser */
-	static readonly DELETE_USER = "memorydb:DeleteUser";
+	static readonly DeleteUser = "memorydb:DeleteUser";
 	/** [Read] memorydb:DescribeAcls */
-	static readonly DESCRIBE_ACLS = "memorydb:DescribeAcls";
+	static readonly DescribeAcls = "memorydb:DescribeAcls";
 	/** [Read] memorydb:DescribeClusters */
-	static readonly DESCRIBE_CLUSTERS = "memorydb:DescribeClusters";
+	static readonly DescribeClusters = "memorydb:DescribeClusters";
 	/** [Read] memorydb:DescribeEngineVersions */
-	static readonly DESCRIBE_ENGINE_VERSIONS = "memorydb:DescribeEngineVersions";
+	static readonly DescribeEngineVersions = "memorydb:DescribeEngineVersions";
 	/** [Read] memorydb:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "memorydb:DescribeEvents";
+	static readonly DescribeEvents = "memorydb:DescribeEvents";
 	/** [Read] memorydb:DescribeMultiRegionClusters */
-	static readonly DESCRIBE_MULTI_REGION_CLUSTERS =
+	static readonly DescribeMultiRegionClusters =
 		"memorydb:DescribeMultiRegionClusters";
 	/** [Read] memorydb:DescribeMultiRegionParameterGroups */
-	static readonly DESCRIBE_MULTI_REGION_PARAMETER_GROUPS =
+	static readonly DescribeMultiRegionParameterGroups =
 		"memorydb:DescribeMultiRegionParameterGroups";
 	/** [Read] memorydb:DescribeMultiRegionParameters */
-	static readonly DESCRIBE_MULTI_REGION_PARAMETERS =
+	static readonly DescribeMultiRegionParameters =
 		"memorydb:DescribeMultiRegionParameters";
 	/** [Read] memorydb:DescribeParameterGroups */
-	static readonly DESCRIBE_PARAMETER_GROUPS =
-		"memorydb:DescribeParameterGroups";
+	static readonly DescribeParameterGroups = "memorydb:DescribeParameterGroups";
 	/** [Read] memorydb:DescribeParameters */
-	static readonly DESCRIBE_PARAMETERS = "memorydb:DescribeParameters";
+	static readonly DescribeParameters = "memorydb:DescribeParameters";
 	/** [Read] memorydb:DescribeReservedNodes */
-	static readonly DESCRIBE_RESERVED_NODES = "memorydb:DescribeReservedNodes";
+	static readonly DescribeReservedNodes = "memorydb:DescribeReservedNodes";
 	/** [Read] memorydb:DescribeReservedNodesOfferings */
-	static readonly DESCRIBE_RESERVED_NODES_OFFERINGS =
+	static readonly DescribeReservedNodesOfferings =
 		"memorydb:DescribeReservedNodesOfferings";
 	/** [Read] memorydb:DescribeServiceUpdates */
-	static readonly DESCRIBE_SERVICE_UPDATES = "memorydb:DescribeServiceUpdates";
+	static readonly DescribeServiceUpdates = "memorydb:DescribeServiceUpdates";
 	/** [Read] memorydb:DescribeSnapshots */
-	static readonly DESCRIBE_SNAPSHOTS = "memorydb:DescribeSnapshots";
+	static readonly DescribeSnapshots = "memorydb:DescribeSnapshots";
 	/** [Read] memorydb:DescribeSubnetGroups */
-	static readonly DESCRIBE_SUBNET_GROUPS = "memorydb:DescribeSubnetGroups";
+	static readonly DescribeSubnetGroups = "memorydb:DescribeSubnetGroups";
 	/** [Read] memorydb:DescribeUsers */
-	static readonly DESCRIBE_USERS = "memorydb:DescribeUsers";
+	static readonly DescribeUsers = "memorydb:DescribeUsers";
 	/** [Write] memorydb:FailoverShard */
-	static readonly FAILOVER_SHARD = "memorydb:FailoverShard";
+	static readonly FailoverShard = "memorydb:FailoverShard";
 	/** [Read] memorydb:ListAllowedMultiRegionClusterUpdates */
-	static readonly LIST_ALLOWED_MULTI_REGION_CLUSTER_UPDATES =
+	static readonly ListAllowedMultiRegionClusterUpdates =
 		"memorydb:ListAllowedMultiRegionClusterUpdates";
 	/** [Read] memorydb:ListAllowedNodeTypeUpdates */
-	static readonly LIST_ALLOWED_NODE_TYPE_UPDATES =
+	static readonly ListAllowedNodeTypeUpdates =
 		"memorydb:ListAllowedNodeTypeUpdates";
 	/** [Read] memorydb:ListTags */
-	static readonly LIST_TAGS = "memorydb:ListTags";
+	static readonly ListTags = "memorydb:ListTags";
 	/** [Write] memorydb:PauseMultiRegionClusterReplication */
-	static readonly PAUSE_MULTI_REGION_CLUSTER_REPLICATION =
+	static readonly PauseMultiRegionClusterReplication =
 		"memorydb:PauseMultiRegionClusterReplication";
 	/** [Write] memorydb:PurchaseReservedNodesOffering */
-	static readonly PURCHASE_RESERVED_NODES_OFFERING =
+	static readonly PurchaseReservedNodesOffering =
 		"memorydb:PurchaseReservedNodesOffering";
 	/** [Write] memorydb:ResetParameterGroup */
-	static readonly RESET_PARAMETER_GROUP = "memorydb:ResetParameterGroup";
+	static readonly ResetParameterGroup = "memorydb:ResetParameterGroup";
 	/** [Tagging] memorydb:TagResource */
-	static readonly TAG_RESOURCE = "memorydb:TagResource";
+	static readonly TagResource = "memorydb:TagResource";
 	/** [Tagging] memorydb:UntagResource */
-	static readonly UNTAG_RESOURCE = "memorydb:UntagResource";
+	static readonly UntagResource = "memorydb:UntagResource";
 	/** [Write] memorydb:UpdateAcl */
-	static readonly UPDATE_ACL = "memorydb:UpdateAcl";
+	static readonly UpdateAcl = "memorydb:UpdateAcl";
 	/** [Write] memorydb:UpdateCluster */
-	static readonly UPDATE_CLUSTER = "memorydb:UpdateCluster";
+	static readonly UpdateCluster = "memorydb:UpdateCluster";
 	/** [Write] memorydb:UpdateMultiRegionCluster */
-	static readonly UPDATE_MULTI_REGION_CLUSTER =
+	static readonly UpdateMultiRegionCluster =
 		"memorydb:UpdateMultiRegionCluster";
 	/** [Write] memorydb:UpdateParameterGroup */
-	static readonly UPDATE_PARAMETER_GROUP = "memorydb:UpdateParameterGroup";
+	static readonly UpdateParameterGroup = "memorydb:UpdateParameterGroup";
 	/** [Write] memorydb:UpdateSubnetGroup */
-	static readonly UPDATE_SUBNET_GROUP = "memorydb:UpdateSubnetGroup";
+	static readonly UpdateSubnetGroup = "memorydb:UpdateSubnetGroup";
 	/** [Write] memorydb:UpdateUser */
-	static readonly UPDATE_USER = "memorydb:UpdateUser";
+	static readonly UpdateUser = "memorydb:UpdateUser";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MemoryDBActions.DESCRIBE_ACLS,
-		MemoryDBActions.DESCRIBE_CLUSTERS,
-		MemoryDBActions.DESCRIBE_ENGINE_VERSIONS,
-		MemoryDBActions.DESCRIBE_EVENTS,
-		MemoryDBActions.DESCRIBE_MULTI_REGION_CLUSTERS,
-		MemoryDBActions.DESCRIBE_MULTI_REGION_PARAMETER_GROUPS,
-		MemoryDBActions.DESCRIBE_MULTI_REGION_PARAMETERS,
-		MemoryDBActions.DESCRIBE_PARAMETER_GROUPS,
-		MemoryDBActions.DESCRIBE_PARAMETERS,
-		MemoryDBActions.DESCRIBE_RESERVED_NODES,
-		MemoryDBActions.DESCRIBE_RESERVED_NODES_OFFERINGS,
-		MemoryDBActions.DESCRIBE_SERVICE_UPDATES,
-		MemoryDBActions.DESCRIBE_SNAPSHOTS,
-		MemoryDBActions.DESCRIBE_SUBNET_GROUPS,
-		MemoryDBActions.DESCRIBE_USERS,
-		MemoryDBActions.LIST_ALLOWED_MULTI_REGION_CLUSTER_UPDATES,
-		MemoryDBActions.LIST_ALLOWED_NODE_TYPE_UPDATES,
-		MemoryDBActions.LIST_TAGS,
+	static readonly AllReadActions: string[] = [
+		MemoryDBActions.DescribeAcls,
+		MemoryDBActions.DescribeClusters,
+		MemoryDBActions.DescribeEngineVersions,
+		MemoryDBActions.DescribeEvents,
+		MemoryDBActions.DescribeMultiRegionClusters,
+		MemoryDBActions.DescribeMultiRegionParameterGroups,
+		MemoryDBActions.DescribeMultiRegionParameters,
+		MemoryDBActions.DescribeParameterGroups,
+		MemoryDBActions.DescribeParameters,
+		MemoryDBActions.DescribeReservedNodes,
+		MemoryDBActions.DescribeReservedNodesOfferings,
+		MemoryDBActions.DescribeServiceUpdates,
+		MemoryDBActions.DescribeSnapshots,
+		MemoryDBActions.DescribeSubnetGroups,
+		MemoryDBActions.DescribeUsers,
+		MemoryDBActions.ListAllowedMultiRegionClusterUpdates,
+		MemoryDBActions.ListAllowedNodeTypeUpdates,
+		MemoryDBActions.ListTags,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MemoryDBActions.BATCH_UPDATE_CLUSTER,
-		MemoryDBActions.CONNECT,
-		MemoryDBActions.COPY_SNAPSHOT,
-		MemoryDBActions.CREATE_ACL,
-		MemoryDBActions.CREATE_CLUSTER,
-		MemoryDBActions.CREATE_MULTI_REGION_CLUSTER,
-		MemoryDBActions.CREATE_PARAMETER_GROUP,
-		MemoryDBActions.CREATE_SNAPSHOT,
-		MemoryDBActions.CREATE_SUBNET_GROUP,
-		MemoryDBActions.CREATE_USER,
-		MemoryDBActions.DELETE_ACL,
-		MemoryDBActions.DELETE_CLUSTER,
-		MemoryDBActions.DELETE_MULTI_REGION_CLUSTER,
-		MemoryDBActions.DELETE_PARAMETER_GROUP,
-		MemoryDBActions.DELETE_SNAPSHOT,
-		MemoryDBActions.DELETE_SUBNET_GROUP,
-		MemoryDBActions.DELETE_USER,
-		MemoryDBActions.FAILOVER_SHARD,
-		MemoryDBActions.PAUSE_MULTI_REGION_CLUSTER_REPLICATION,
-		MemoryDBActions.PURCHASE_RESERVED_NODES_OFFERING,
-		MemoryDBActions.RESET_PARAMETER_GROUP,
-		MemoryDBActions.UPDATE_ACL,
-		MemoryDBActions.UPDATE_CLUSTER,
-		MemoryDBActions.UPDATE_MULTI_REGION_CLUSTER,
-		MemoryDBActions.UPDATE_PARAMETER_GROUP,
-		MemoryDBActions.UPDATE_SUBNET_GROUP,
-		MemoryDBActions.UPDATE_USER,
+	static readonly AllWriteActions: string[] = [
+		MemoryDBActions.BatchUpdateCluster,
+		MemoryDBActions.Connect,
+		MemoryDBActions.CopySnapshot,
+		MemoryDBActions.CreateAcl,
+		MemoryDBActions.CreateCluster,
+		MemoryDBActions.CreateMultiRegionCluster,
+		MemoryDBActions.CreateParameterGroup,
+		MemoryDBActions.CreateSnapshot,
+		MemoryDBActions.CreateSubnetGroup,
+		MemoryDBActions.CreateUser,
+		MemoryDBActions.DeleteAcl,
+		MemoryDBActions.DeleteCluster,
+		MemoryDBActions.DeleteMultiRegionCluster,
+		MemoryDBActions.DeleteParameterGroup,
+		MemoryDBActions.DeleteSnapshot,
+		MemoryDBActions.DeleteSubnetGroup,
+		MemoryDBActions.DeleteUser,
+		MemoryDBActions.FailoverShard,
+		MemoryDBActions.PauseMultiRegionClusterReplication,
+		MemoryDBActions.PurchaseReservedNodesOffering,
+		MemoryDBActions.ResetParameterGroup,
+		MemoryDBActions.UpdateAcl,
+		MemoryDBActions.UpdateCluster,
+		MemoryDBActions.UpdateMultiRegionCluster,
+		MemoryDBActions.UpdateParameterGroup,
+		MemoryDBActions.UpdateSubnetGroup,
+		MemoryDBActions.UpdateUser,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		MemoryDBActions.TAG_RESOURCE,
-		MemoryDBActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		MemoryDBActions.TagResource,
+		MemoryDBActions.UntagResource,
 	];
 }
 
-const AclArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):acl/(?<aclName>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterName>[^:/?]+)$",
-);
-const MultiregionclusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb::(?<account>[^:]*):multiregioncluster/(?<clusterName>[^:/?]+)$",
-);
-const MultiregionparametergroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb::(?<account>[^:]*):multiregionparametergroup/(?<multiRegionParameterGroupName>[^:/?]+)$",
-);
-const ParametergroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):parametergroup/(?<parameterGroupName>[^:/?]+)$",
-);
-const ReservednodeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):reservednode/(?<reservationId>[^:/?]+)$",
-);
-const SnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):snapshot/(?<snapshotName>[^:/?]+)$",
-);
-const SubnetgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):subnetgroup/(?<subnetGroupName>[^:/?]+)$",
-);
-const UserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):user/(?<userName>[^:/?]+)$",
-);
+/**
+ * Properties for building a acl ARN.
+ */
+export interface MemoryDBAclArnProps {
+	/** The AclName component of the ARN. */
+	readonly aclName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a acl ARN.
+ */
+export interface MemoryDBAclArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AclName component. */
+	readonly aclName: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface MemoryDBClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface MemoryDBClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+/**
+ * Properties for building a multiregioncluster ARN.
+ */
+export interface MemoryDBMultiregionclusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a multiregioncluster ARN.
+ */
+export interface MemoryDBMultiregionclusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+/**
+ * Properties for building a multiregionparametergroup ARN.
+ */
+export interface MemoryDBMultiregionparametergroupArnProps {
+	/** The MultiRegionParameterGroupName component of the ARN. */
+	readonly multiRegionParameterGroupName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a multiregionparametergroup ARN.
+ */
+export interface MemoryDBMultiregionparametergroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MultiRegionParameterGroupName component. */
+	readonly multiRegionParameterGroupName: string;
+}
+
+/**
+ * Properties for building a parametergroup ARN.
+ */
+export interface MemoryDBParametergroupArnProps {
+	/** The ParameterGroupName component of the ARN. */
+	readonly parameterGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a parametergroup ARN.
+ */
+export interface MemoryDBParametergroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ParameterGroupName component. */
+	readonly parameterGroupName: string;
+}
+
+/**
+ * Properties for building a reservednode ARN.
+ */
+export interface MemoryDBReservednodeArnProps {
+	/** The ReservationID component of the ARN. */
+	readonly reservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reservednode ARN.
+ */
+export interface MemoryDBReservednodeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReservationID component. */
+	readonly reservationId: string;
+}
+
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface MemoryDBSnapshotArnProps {
+	/** The SnapshotName component of the ARN. */
+	readonly snapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface MemoryDBSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotName component. */
+	readonly snapshotName: string;
+}
+
+/**
+ * Properties for building a subnetgroup ARN.
+ */
+export interface MemoryDBSubnetgroupArnProps {
+	/** The SubnetGroupName component of the ARN. */
+	readonly subnetGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subnetgroup ARN.
+ */
+export interface MemoryDBSubnetgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubnetGroupName component. */
+	readonly subnetGroupName: string;
+}
+
+/**
+ * Properties for building a user ARN.
+ */
+export interface MemoryDBUserArnProps {
+	/** The UserName component of the ARN. */
+	readonly userName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user ARN.
+ */
+export interface MemoryDBUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserName component. */
+	readonly userName: string;
+}
+
+const AclArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):acl\/(?<aclName>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterName>[^:/?]+)$/;
+const MultiregionclusterArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb::(?<account>[^:]*):multiregioncluster\/(?<clusterName>[^:/?]+)$/;
+const MultiregionparametergroupArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb::(?<account>[^:]*):multiregionparametergroup\/(?<multiRegionParameterGroupName>[^:/?]+)$/;
+const ParametergroupArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):parametergroup\/(?<parameterGroupName>[^:/?]+)$/;
+const ReservednodeArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):reservednode\/(?<reservationId>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):snapshot\/(?<snapshotName>[^:/?]+)$/;
+const SubnetgroupArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):subnetgroup\/(?<subnetGroupName>[^:/?]+)$/;
+const UserArnRegex =
+	/^arn:(?<partition>[^:]+):memorydb:(?<region>[^:]*):(?<account>[^:]*):user\/(?<userName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for memorydb resources.
@@ -216,16 +450,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the acl resource.
 	 */
-	static acl(props: {
-		/** The AclName component of the ARN. */
-		readonly aclName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static acl(props: MemoryDBAclArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:acl/${props.aclName}`;
 	}
 
@@ -240,12 +465,7 @@ export class MemoryDBResources {
 	 * Parses a acl ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAclArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		aclName: string;
-	} {
+	static parseAclArn(arn: string): MemoryDBAclArnComponents {
 		const match = AclArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid acl ARN: ${arn}`);
@@ -261,16 +481,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: MemoryDBClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterName}`;
 	}
 
@@ -285,12 +496,7 @@ export class MemoryDBResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseClusterArn(arn: string): MemoryDBClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -306,14 +512,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the multiregioncluster resource.
 	 */
-	static multiregioncluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static multiregioncluster(props: MemoryDBMultiregionclusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb::${props.account ?? "*"}:multiregioncluster/${props.clusterName}`;
 	}
 
@@ -328,11 +527,9 @@ export class MemoryDBResources {
 	 * Parses a multiregioncluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMultiregionclusterArn(arn: string): {
-		partition: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseMultiregionclusterArn(
+		arn: string,
+	): MemoryDBMultiregionclusterArnComponents {
 		const match = MultiregionclusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid multiregioncluster ARN: ${arn}`);
@@ -347,14 +544,9 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the multiregionparametergroup resource.
 	 */
-	static multiregionparametergroup(props: {
-		/** The MultiRegionParameterGroupName component of the ARN. */
-		readonly multiRegionParameterGroupName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static multiregionparametergroup(
+		props: MemoryDBMultiregionparametergroupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:memorydb::${props.account ?? "*"}:multiregionparametergroup/${props.multiRegionParameterGroupName}`;
 	}
 
@@ -369,11 +561,9 @@ export class MemoryDBResources {
 	 * Parses a multiregionparametergroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMultiregionparametergroupArn(arn: string): {
-		partition: string;
-		account: string;
-		multiRegionParameterGroupName: string;
-	} {
+	static parseMultiregionparametergroupArn(
+		arn: string,
+	): MemoryDBMultiregionparametergroupArnComponents {
 		const match = MultiregionparametergroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid multiregionparametergroup ARN: ${arn}`);
@@ -389,16 +579,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the parametergroup resource.
 	 */
-	static parametergroup(props: {
-		/** The ParameterGroupName component of the ARN. */
-		readonly parameterGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static parametergroup(props: MemoryDBParametergroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:parametergroup/${props.parameterGroupName}`;
 	}
 
@@ -413,12 +594,9 @@ export class MemoryDBResources {
 	 * Parses a parametergroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseParametergroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		parameterGroupName: string;
-	} {
+	static parseParametergroupArn(
+		arn: string,
+	): MemoryDBParametergroupArnComponents {
 		const match = ParametergroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid parametergroup ARN: ${arn}`);
@@ -434,16 +612,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the reservednode resource.
 	 */
-	static reservednode(props: {
-		/** The ReservationID component of the ARN. */
-		readonly reservationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reservednode(props: MemoryDBReservednodeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:reservednode/${props.reservationId}`;
 	}
 
@@ -458,12 +627,7 @@ export class MemoryDBResources {
 	 * Parses a reservednode ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReservednodeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reservationId: string;
-	} {
+	static parseReservednodeArn(arn: string): MemoryDBReservednodeArnComponents {
 		const match = ReservednodeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reservednode ARN: ${arn}`);
@@ -479,16 +643,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
-	static snapshot(props: {
-		/** The SnapshotName component of the ARN. */
-		readonly snapshotName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshot(props: MemoryDBSnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:snapshot/${props.snapshotName}`;
 	}
 
@@ -503,12 +658,7 @@ export class MemoryDBResources {
 	 * Parses a snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		snapshotName: string;
-	} {
+	static parseSnapshotArn(arn: string): MemoryDBSnapshotArnComponents {
 		const match = SnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot ARN: ${arn}`);
@@ -524,16 +674,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the subnetgroup resource.
 	 */
-	static subnetgroup(props: {
-		/** The SubnetGroupName component of the ARN. */
-		readonly subnetGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subnetgroup(props: MemoryDBSubnetgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:subnetgroup/${props.subnetGroupName}`;
 	}
 
@@ -548,12 +689,7 @@ export class MemoryDBResources {
 	 * Parses a subnetgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubnetgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subnetGroupName: string;
-	} {
+	static parseSubnetgroupArn(arn: string): MemoryDBSubnetgroupArnComponents {
 		const match = SubnetgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subnetgroup ARN: ${arn}`);
@@ -569,16 +705,7 @@ export class MemoryDBResources {
 	/**
 	 * Builds an ARN for the user resource.
 	 */
-	static user(props: {
-		/** The UserName component of the ARN. */
-		readonly userName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static user(props: MemoryDBUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:memorydb:${props.region ?? "*"}:${props.account ?? "*"}:user/${props.userName}`;
 	}
 
@@ -593,12 +720,7 @@ export class MemoryDBResources {
 	 * Parses a user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userName: string;
-	} {
+	static parseUserArn(arn: string): MemoryDBUserArnComponents {
 		const match = UserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user ARN: ${arn}`);
@@ -617,165 +739,161 @@ export class MemoryDBResources {
  */
 export class MemoryDBOperations {
 	/** IAM actions required for the BatchUpdateCluster API call. */
-	static readonly BATCH_UPDATE_CLUSTER: string[] = [
+	static readonly BatchUpdateCluster: string[] = [
 		"memorydb:BatchUpdateCluster",
 	];
 	/** IAM actions required for the CopySnapshot API call. */
-	static readonly COPY_SNAPSHOT: string[] = [
+	static readonly CopySnapshot: string[] = [
 		"memorydb:CopySnapshot",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateACL API call. */
-	static readonly CREATE_ACL: string[] = [
+	static readonly CreateACL: string[] = [
 		"memorydb:CreateAcl",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"memorydb:CreateCluster",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateMultiRegionCluster API call. */
-	static readonly CREATE_MULTI_REGION_CLUSTER: string[] = [
+	static readonly CreateMultiRegionCluster: string[] = [
 		"memorydb:CreateMultiRegionCluster",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateParameterGroup API call. */
-	static readonly CREATE_PARAMETER_GROUP: string[] = [
+	static readonly CreateParameterGroup: string[] = [
 		"memorydb:CreateParameterGroup",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateSnapshot API call. */
-	static readonly CREATE_SNAPSHOT: string[] = [
+	static readonly CreateSnapshot: string[] = [
 		"memorydb:CreateSnapshot",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateSubnetGroup API call. */
-	static readonly CREATE_SUBNET_GROUP: string[] = [
+	static readonly CreateSubnetGroup: string[] = [
 		"memorydb:CreateSubnetGroup",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CREATE_USER: string[] = [
+	static readonly CreateUser: string[] = [
 		"memorydb:CreateUser",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the DeleteACL API call. */
-	static readonly DELETE_ACL: string[] = ["memorydb:DeleteAcl"];
+	static readonly DeleteACL: string[] = ["memorydb:DeleteAcl"];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = [
+	static readonly DeleteCluster: string[] = [
 		"memorydb:CreateSnapshot",
 		"memorydb:DeleteCluster",
 	];
 	/** IAM actions required for the DeleteMultiRegionCluster API call. */
-	static readonly DELETE_MULTI_REGION_CLUSTER: string[] = [
+	static readonly DeleteMultiRegionCluster: string[] = [
 		"memorydb:DeleteMultiRegionCluster",
 	];
 	/** IAM actions required for the DeleteParameterGroup API call. */
-	static readonly DELETE_PARAMETER_GROUP: string[] = [
+	static readonly DeleteParameterGroup: string[] = [
 		"memorydb:DeleteParameterGroup",
 	];
 	/** IAM actions required for the DeleteSnapshot API call. */
-	static readonly DELETE_SNAPSHOT: string[] = ["memorydb:DeleteSnapshot"];
+	static readonly DeleteSnapshot: string[] = ["memorydb:DeleteSnapshot"];
 	/** IAM actions required for the DeleteSubnetGroup API call. */
-	static readonly DELETE_SUBNET_GROUP: string[] = [
-		"memorydb:DeleteSubnetGroup",
-	];
+	static readonly DeleteSubnetGroup: string[] = ["memorydb:DeleteSubnetGroup"];
 	/** IAM actions required for the DeleteUser API call. */
-	static readonly DELETE_USER: string[] = ["memorydb:DeleteUser"];
+	static readonly DeleteUser: string[] = ["memorydb:DeleteUser"];
 	/** IAM actions required for the DescribeACLs API call. */
-	static readonly DESCRIBE_AC_LS: string[] = ["memorydb:DescribeAcls"];
+	static readonly DescribeACLs: string[] = ["memorydb:DescribeAcls"];
 	/** IAM actions required for the DescribeClusters API call. */
-	static readonly DESCRIBE_CLUSTERS: string[] = ["memorydb:DescribeClusters"];
+	static readonly DescribeClusters: string[] = ["memorydb:DescribeClusters"];
 	/** IAM actions required for the DescribeEngineVersions API call. */
-	static readonly DESCRIBE_ENGINE_VERSIONS: string[] = [
+	static readonly DescribeEngineVersions: string[] = [
 		"memorydb:DescribeEngineVersions",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["memorydb:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["memorydb:DescribeEvents"];
 	/** IAM actions required for the DescribeMultiRegionClusters API call. */
-	static readonly DESCRIBE_MULTI_REGION_CLUSTERS: string[] = [
+	static readonly DescribeMultiRegionClusters: string[] = [
 		"memorydb:DescribeMultiRegionClusters",
 	];
 	/** IAM actions required for the DescribeMultiRegionParameterGroups API call. */
-	static readonly DESCRIBE_MULTI_REGION_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeMultiRegionParameterGroups: string[] = [
 		"memorydb:DescribeMultiRegionParameterGroups",
 	];
 	/** IAM actions required for the DescribeMultiRegionParameters API call. */
-	static readonly DESCRIBE_MULTI_REGION_PARAMETERS: string[] = [
+	static readonly DescribeMultiRegionParameters: string[] = [
 		"memorydb:DescribeMultiRegionParameters",
 	];
 	/** IAM actions required for the DescribeParameterGroups API call. */
-	static readonly DESCRIBE_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeParameterGroups: string[] = [
 		"memorydb:DescribeParameterGroups",
 	];
 	/** IAM actions required for the DescribeParameters API call. */
-	static readonly DESCRIBE_PARAMETERS: string[] = [
+	static readonly DescribeParameters: string[] = [
 		"memorydb:DescribeParameters",
 	];
 	/** IAM actions required for the DescribeReservedNodes API call. */
-	static readonly DESCRIBE_RESERVED_NODES: string[] = [
+	static readonly DescribeReservedNodes: string[] = [
 		"memorydb:DescribeReservedNodes",
 	];
 	/** IAM actions required for the DescribeReservedNodesOfferings API call. */
-	static readonly DESCRIBE_RESERVED_NODES_OFFERINGS: string[] = [
+	static readonly DescribeReservedNodesOfferings: string[] = [
 		"memorydb:DescribeReservedNodesOfferings",
 	];
 	/** IAM actions required for the DescribeServiceUpdates API call. */
-	static readonly DESCRIBE_SERVICE_UPDATES: string[] = [
+	static readonly DescribeServiceUpdates: string[] = [
 		"memorydb:DescribeServiceUpdates",
 	];
 	/** IAM actions required for the DescribeSnapshots API call. */
-	static readonly DESCRIBE_SNAPSHOTS: string[] = ["memorydb:DescribeSnapshots"];
+	static readonly DescribeSnapshots: string[] = ["memorydb:DescribeSnapshots"];
 	/** IAM actions required for the DescribeSubnetGroups API call. */
-	static readonly DESCRIBE_SUBNET_GROUPS: string[] = [
+	static readonly DescribeSubnetGroups: string[] = [
 		"memorydb:DescribeSubnetGroups",
 	];
 	/** IAM actions required for the DescribeUsers API call. */
-	static readonly DESCRIBE_USERS: string[] = ["memorydb:DescribeUsers"];
+	static readonly DescribeUsers: string[] = ["memorydb:DescribeUsers"];
 	/** IAM actions required for the FailoverShard API call. */
-	static readonly FAILOVER_SHARD: string[] = ["memorydb:FailoverShard"];
+	static readonly FailoverShard: string[] = ["memorydb:FailoverShard"];
 	/** IAM actions required for the ListAllowedMultiRegionClusterUpdates API call. */
-	static readonly LIST_ALLOWED_MULTI_REGION_CLUSTER_UPDATES: string[] = [
+	static readonly ListAllowedMultiRegionClusterUpdates: string[] = [
 		"memorydb:ListAllowedMultiRegionClusterUpdates",
 	];
 	/** IAM actions required for the ListAllowedNodeTypeUpdates API call. */
-	static readonly LIST_ALLOWED_NODE_TYPE_UPDATES: string[] = [
+	static readonly ListAllowedNodeTypeUpdates: string[] = [
 		"memorydb:ListAllowedNodeTypeUpdates",
 	];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["memorydb:ListTags"];
+	static readonly ListTags: string[] = ["memorydb:ListTags"];
 	/** IAM actions required for the PurchaseReservedNodesOffering API call. */
-	static readonly PURCHASE_RESERVED_NODES_OFFERING: string[] = [
+	static readonly PurchaseReservedNodesOffering: string[] = [
 		"memorydb:PurchaseReservedNodesOffering",
 		"memorydb:TagResource",
 	];
 	/** IAM actions required for the ResetParameterGroup API call. */
-	static readonly RESET_PARAMETER_GROUP: string[] = [
+	static readonly ResetParameterGroup: string[] = [
 		"memorydb:ResetParameterGroup",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["memorydb:TagResource"];
+	static readonly TagResource: string[] = ["memorydb:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["memorydb:UntagResource"];
+	static readonly UntagResource: string[] = ["memorydb:UntagResource"];
 	/** IAM actions required for the UpdateACL API call. */
-	static readonly UPDATE_ACL: string[] = ["memorydb:UpdateAcl"];
+	static readonly UpdateACL: string[] = ["memorydb:UpdateAcl"];
 	/** IAM actions required for the UpdateCluster API call. */
-	static readonly UPDATE_CLUSTER: string[] = ["memorydb:UpdateCluster"];
+	static readonly UpdateCluster: string[] = ["memorydb:UpdateCluster"];
 	/** IAM actions required for the UpdateMultiRegionCluster API call. */
-	static readonly UPDATE_MULTI_REGION_CLUSTER: string[] = [
+	static readonly UpdateMultiRegionCluster: string[] = [
 		"memorydb:UpdateMultiRegionCluster",
 	];
 	/** IAM actions required for the UpdateParameterGroup API call. */
-	static readonly UPDATE_PARAMETER_GROUP: string[] = [
+	static readonly UpdateParameterGroup: string[] = [
 		"memorydb:UpdateParameterGroup",
 	];
 	/** IAM actions required for the UpdateSubnetGroup API call. */
-	static readonly UPDATE_SUBNET_GROUP: string[] = [
-		"memorydb:UpdateSubnetGroup",
-	];
+	static readonly UpdateSubnetGroup: string[] = ["memorydb:UpdateSubnetGroup"];
 	/** IAM actions required for the UpdateUser API call. */
-	static readonly UPDATE_USER: string[] = ["memorydb:UpdateUser"];
+	static readonly UpdateUser: string[] = ["memorydb:UpdateUser"];
 }
 
 /**
@@ -783,196 +901,197 @@ export class MemoryDBOperations {
  */
 export class MemoryDBConditions {
 	/** Condition keys applicable to the BatchUpdateCluster action. */
-	static readonly BATCH_UPDATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly BatchUpdateClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the Connect action. */
-	static readonly CONNECT_CONDITION_KEYS: string[] = [
+	static readonly ConnectConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopySnapshot action. */
-	static readonly COPY_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CopySnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAcl action. */
-	static readonly CREATE_ACL_CONDITION_KEYS: string[] = [
+	static readonly CreateAclConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"memorydb:TLSEnabled",
 	];
 	/** Condition keys applicable to the CreateMultiRegionCluster action. */
-	static readonly CREATE_MULTI_REGION_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateMultiRegionClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"memorydb:TLSEnabled",
 	];
 	/** Condition keys applicable to the CreateParameterGroup action. */
-	static readonly CREATE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshot action. */
-	static readonly CREATE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSubnetGroup action. */
-	static readonly CREATE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateSubnetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUser action. */
-	static readonly CREATE_USER_CONDITION_KEYS: string[] = [
+	static readonly CreateUserConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"memorydb:UserAuthenticationMode",
 	];
 	/** Condition keys applicable to the DeleteAcl action. */
-	static readonly DELETE_ACL_CONDITION_KEYS: string[] = [
+	static readonly DeleteAclConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteCluster action. */
-	static readonly DELETE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly DeleteClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteMultiRegionCluster action. */
-	static readonly DELETE_MULTI_REGION_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly DeleteMultiRegionClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteParameterGroup action. */
-	static readonly DELETE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSnapshot action. */
-	static readonly DELETE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly DeleteSnapshotConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSubnetGroup action. */
-	static readonly DELETE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteSubnetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteUser action. */
-	static readonly DELETE_USER_CONDITION_KEYS: string[] = [
+	static readonly DeleteUserConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeAcls action. */
-	static readonly DESCRIBE_ACLS_CONDITION_KEYS: string[] = [
+	static readonly DescribeAclsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeClusters action. */
-	static readonly DESCRIBE_CLUSTERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeClustersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeMultiRegionClusters action. */
-	static readonly DESCRIBE_MULTI_REGION_CLUSTERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeMultiRegionClustersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeParameterGroups action. */
-	static readonly DESCRIBE_PARAMETER_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeParameterGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeParameters action. */
-	static readonly DESCRIBE_PARAMETERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeParametersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeReservedNodes action. */
-	static readonly DESCRIBE_RESERVED_NODES_CONDITION_KEYS: string[] = [
+	static readonly DescribeReservedNodesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeSnapshots action. */
-	static readonly DESCRIBE_SNAPSHOTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSnapshotsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeSubnetGroups action. */
-	static readonly DESCRIBE_SUBNET_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSubnetGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeUsers action. */
-	static readonly DESCRIBE_USERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeUsersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the FailoverShard action. */
-	static readonly FAILOVER_SHARD_CONDITION_KEYS: string[] = [
+	static readonly FailoverShardConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAllowedMultiRegionClusterUpdates action. */
-	static readonly LIST_ALLOWED_MULTI_REGION_CLUSTER_UPDATES_CONDITION_KEYS: string[] =
+	static readonly ListAllowedMultiRegionClusterUpdatesConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the ListAllowedNodeTypeUpdates action. */
-	static readonly LIST_ALLOWED_NODE_TYPE_UPDATES_CONDITION_KEYS: string[] = [
+	static readonly ListAllowedNodeTypeUpdatesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTags action. */
-	static readonly LIST_TAGS_CONDITION_KEYS: string[] = [
+	static readonly ListTagsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PauseMultiRegionClusterReplication action. */
-	static readonly PAUSE_MULTI_REGION_CLUSTER_REPLICATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly PauseMultiRegionClusterReplicationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the PurchaseReservedNodesOffering action. */
-	static readonly PURCHASE_RESERVED_NODES_OFFERING_CONDITION_KEYS: string[] = [
+	static readonly PurchaseReservedNodesOfferingConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ResetParameterGroup action. */
-	static readonly RESET_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ResetParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateAcl action. */
-	static readonly UPDATE_ACL_CONDITION_KEYS: string[] = [
+	static readonly UpdateAclConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateCluster action. */
-	static readonly UPDATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly UpdateClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateMultiRegionCluster action. */
-	static readonly UPDATE_MULTI_REGION_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly UpdateMultiRegionClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateParameterGroup action. */
-	static readonly UPDATE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly UpdateParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSubnetGroup action. */
-	static readonly UPDATE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly UpdateSubnetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateUser action. */
-	static readonly UPDATE_USER_CONDITION_KEYS: string[] = [
+	static readonly UpdateUserConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"memorydb:UserAuthenticationMode",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: memorydb:TLSEnabled (Bool) */
 	static readonly TLS_ENABLED = "memorydb:TLSEnabled";
 	/** Condition key: memorydb:UserAuthenticationMode (String) */

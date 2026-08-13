@@ -13,19 +13,19 @@ export class ActionRecommendationsActions {
 	static readonly SERVICE_PREFIX = "action-recommendations";
 
 	/** [List] action-recommendations:ListRecommendedActions */
-	static readonly LIST_RECOMMENDED_ACTIONS =
+	static readonly ListRecommendedActions =
 		"action-recommendations:ListRecommendedActions";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ActionRecommendationsActions.LIST_RECOMMENDED_ACTIONS,
+	static readonly AllListActions: string[] = [
+		ActionRecommendationsActions.ListRecommendedActions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

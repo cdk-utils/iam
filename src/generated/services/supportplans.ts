@@ -13,67 +13,67 @@ export class SupportplansActions {
 	static readonly SERVICE_PREFIX = "supportplans";
 
 	/** [Write] supportplans:AcceptSupportAgreement */
-	static readonly ACCEPT_SUPPORT_AGREEMENT =
+	static readonly AcceptSupportAgreement =
 		"supportplans:AcceptSupportAgreement";
 	/** [Write] supportplans:CancelSupportAgreement */
-	static readonly CANCEL_SUPPORT_AGREEMENT =
+	static readonly CancelSupportAgreement =
 		"supportplans:CancelSupportAgreement";
 	/** [Write] supportplans:CreateSupportAgreement */
-	static readonly CREATE_SUPPORT_AGREEMENT =
+	static readonly CreateSupportAgreement =
 		"supportplans:CreateSupportAgreement";
 	/** [Write] supportplans:CreateSupportPlanSchedule */
-	static readonly CREATE_SUPPORT_PLAN_SCHEDULE =
+	static readonly CreateSupportPlanSchedule =
 		"supportplans:CreateSupportPlanSchedule";
 	/** [Read] supportplans:GetSupportAgreement */
-	static readonly GET_SUPPORT_AGREEMENT = "supportplans:GetSupportAgreement";
+	static readonly actionGetSupportAgreement =
+		"supportplans:GetSupportAgreement";
 	/** [Read] supportplans:GetSupportPlan */
-	static readonly GET_SUPPORT_PLAN = "supportplans:GetSupportPlan";
+	static readonly actionGetSupportPlan = "supportplans:GetSupportPlan";
 	/** [Read] supportplans:GetSupportPlanUpdateStatus */
-	static readonly GET_SUPPORT_PLAN_UPDATE_STATUS =
+	static readonly actionGetSupportPlanUpdateStatus =
 		"supportplans:GetSupportPlanUpdateStatus";
 	/** [List] supportplans:ListSupportAgreementRevisions */
-	static readonly LIST_SUPPORT_AGREEMENT_REVISIONS =
+	static readonly ListSupportAgreementRevisions =
 		"supportplans:ListSupportAgreementRevisions";
 	/** [List] supportplans:ListSupportAgreements */
-	static readonly LIST_SUPPORT_AGREEMENTS =
-		"supportplans:ListSupportAgreements";
+	static readonly ListSupportAgreements = "supportplans:ListSupportAgreements";
 	/** [List] supportplans:ListSupportPlanModifiers */
-	static readonly LIST_SUPPORT_PLAN_MODIFIERS =
+	static readonly ListSupportPlanModifiers =
 		"supportplans:ListSupportPlanModifiers";
 	/** [Write] supportplans:RejectSupportAgreement */
-	static readonly REJECT_SUPPORT_AGREEMENT =
+	static readonly RejectSupportAgreement =
 		"supportplans:RejectSupportAgreement";
 	/** [Write] supportplans:StartSupportPlanUpdate */
-	static readonly START_SUPPORT_PLAN_UPDATE =
+	static readonly StartSupportPlanUpdate =
 		"supportplans:StartSupportPlanUpdate";
 	/** [Write] supportplans:UpdateSupportAgreement */
-	static readonly UPDATE_SUPPORT_AGREEMENT =
+	static readonly UpdateSupportAgreement =
 		"supportplans:UpdateSupportAgreement";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SupportplansActions.GET_SUPPORT_AGREEMENT,
-		SupportplansActions.GET_SUPPORT_PLAN,
-		SupportplansActions.GET_SUPPORT_PLAN_UPDATE_STATUS,
+	static readonly AllReadActions: string[] = [
+		SupportplansActions.actionGetSupportAgreement,
+		SupportplansActions.actionGetSupportPlan,
+		SupportplansActions.actionGetSupportPlanUpdateStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SupportplansActions.ACCEPT_SUPPORT_AGREEMENT,
-		SupportplansActions.CANCEL_SUPPORT_AGREEMENT,
-		SupportplansActions.CREATE_SUPPORT_AGREEMENT,
-		SupportplansActions.CREATE_SUPPORT_PLAN_SCHEDULE,
-		SupportplansActions.REJECT_SUPPORT_AGREEMENT,
-		SupportplansActions.START_SUPPORT_PLAN_UPDATE,
-		SupportplansActions.UPDATE_SUPPORT_AGREEMENT,
+	static readonly AllWriteActions: string[] = [
+		SupportplansActions.AcceptSupportAgreement,
+		SupportplansActions.CancelSupportAgreement,
+		SupportplansActions.CreateSupportAgreement,
+		SupportplansActions.CreateSupportPlanSchedule,
+		SupportplansActions.RejectSupportAgreement,
+		SupportplansActions.StartSupportPlanUpdate,
+		SupportplansActions.UpdateSupportAgreement,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SupportplansActions.LIST_SUPPORT_AGREEMENT_REVISIONS,
-		SupportplansActions.LIST_SUPPORT_AGREEMENTS,
-		SupportplansActions.LIST_SUPPORT_PLAN_MODIFIERS,
+	static readonly AllListActions: string[] = [
+		SupportplansActions.ListSupportAgreementRevisions,
+		SupportplansActions.ListSupportAgreements,
+		SupportplansActions.ListSupportPlanModifiers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

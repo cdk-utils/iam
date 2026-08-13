@@ -13,191 +13,365 @@ export class NotificationsActions {
 	static readonly SERVICE_PREFIX = "notifications";
 
 	/** [Write] notifications:AssociateChannel */
-	static readonly ASSOCIATE_CHANNEL = "notifications:AssociateChannel";
+	static readonly AssociateChannel = "notifications:AssociateChannel";
 	/** [Write] notifications:AssociateManagedNotificationAccountContact */
-	static readonly ASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT =
+	static readonly AssociateManagedNotificationAccountContact =
 		"notifications:AssociateManagedNotificationAccountContact";
 	/** [Write] notifications:AssociateManagedNotificationAdditionalChannel */
-	static readonly ASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL =
+	static readonly AssociateManagedNotificationAdditionalChannel =
 		"notifications:AssociateManagedNotificationAdditionalChannel";
 	/** [Write] notifications:AssociateOrganizationalUnit */
-	static readonly ASSOCIATE_ORGANIZATIONAL_UNIT =
+	static readonly AssociateOrganizationalUnit =
 		"notifications:AssociateOrganizationalUnit";
 	/** [Write] notifications:CreateEventRule */
-	static readonly CREATE_EVENT_RULE = "notifications:CreateEventRule";
+	static readonly CreateEventRule = "notifications:CreateEventRule";
 	/** [Write] notifications:CreateNotificationConfiguration */
-	static readonly CREATE_NOTIFICATION_CONFIGURATION =
+	static readonly CreateNotificationConfiguration =
 		"notifications:CreateNotificationConfiguration";
 	/** [Write] notifications:DeleteEventRule */
-	static readonly DELETE_EVENT_RULE = "notifications:DeleteEventRule";
+	static readonly DeleteEventRule = "notifications:DeleteEventRule";
 	/** [Write] notifications:DeleteNotificationConfiguration */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION =
+	static readonly DeleteNotificationConfiguration =
 		"notifications:DeleteNotificationConfiguration";
 	/** [Write] notifications:DeregisterNotificationHub */
-	static readonly DEREGISTER_NOTIFICATION_HUB =
+	static readonly DeregisterNotificationHub =
 		"notifications:DeregisterNotificationHub";
 	/** [PermissionManagement] notifications:DisableNotificationsAccessForOrganization */
-	static readonly DISABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION =
+	static readonly DisableNotificationsAccessForOrganization =
 		"notifications:DisableNotificationsAccessForOrganization";
 	/** [Write] notifications:DisassociateChannel */
-	static readonly DISASSOCIATE_CHANNEL = "notifications:DisassociateChannel";
+	static readonly DisassociateChannel = "notifications:DisassociateChannel";
 	/** [Write] notifications:DisassociateManagedNotificationAccountContact */
-	static readonly DISASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT =
+	static readonly DisassociateManagedNotificationAccountContact =
 		"notifications:DisassociateManagedNotificationAccountContact";
 	/** [Write] notifications:DisassociateManagedNotificationAdditionalChannel */
-	static readonly DISASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL =
+	static readonly DisassociateManagedNotificationAdditionalChannel =
 		"notifications:DisassociateManagedNotificationAdditionalChannel";
 	/** [Write] notifications:DisassociateOrganizationalUnit */
-	static readonly DISASSOCIATE_ORGANIZATIONAL_UNIT =
+	static readonly DisassociateOrganizationalUnit =
 		"notifications:DisassociateOrganizationalUnit";
 	/** [PermissionManagement] notifications:EnableNotificationsAccessForOrganization */
-	static readonly ENABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION =
+	static readonly EnableNotificationsAccessForOrganization =
 		"notifications:EnableNotificationsAccessForOrganization";
 	/** [Read] notifications:GetEventRule */
-	static readonly GET_EVENT_RULE = "notifications:GetEventRule";
+	static readonly actionGetEventRule = "notifications:GetEventRule";
 	/** [Read] notifications:GetFeatureOptInStatus */
-	static readonly GET_FEATURE_OPT_IN_STATUS =
+	static readonly actionGetFeatureOptInStatus =
 		"notifications:GetFeatureOptInStatus";
 	/** [Read] notifications:GetManagedNotificationChildEvent */
-	static readonly GET_MANAGED_NOTIFICATION_CHILD_EVENT =
+	static readonly actionGetManagedNotificationChildEvent =
 		"notifications:GetManagedNotificationChildEvent";
 	/** [Read] notifications:GetManagedNotificationConfiguration */
-	static readonly GET_MANAGED_NOTIFICATION_CONFIGURATION =
+	static readonly actionGetManagedNotificationConfiguration =
 		"notifications:GetManagedNotificationConfiguration";
 	/** [Read] notifications:GetManagedNotificationEvent */
-	static readonly GET_MANAGED_NOTIFICATION_EVENT =
+	static readonly actionGetManagedNotificationEvent =
 		"notifications:GetManagedNotificationEvent";
 	/** [Read] notifications:GetNotificationConfiguration */
-	static readonly GET_NOTIFICATION_CONFIGURATION =
+	static readonly actionGetNotificationConfiguration =
 		"notifications:GetNotificationConfiguration";
 	/** [Read] notifications:GetNotificationEvent */
-	static readonly GET_NOTIFICATION_EVENT = "notifications:GetNotificationEvent";
+	static readonly actionGetNotificationEvent =
+		"notifications:GetNotificationEvent";
 	/** [Read] notifications:GetNotificationsAccessForOrganization */
-	static readonly GET_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION =
+	static readonly actionGetNotificationsAccessForOrganization =
 		"notifications:GetNotificationsAccessForOrganization";
 	/** [List] notifications:ListChannels */
-	static readonly LIST_CHANNELS = "notifications:ListChannels";
+	static readonly ListChannels = "notifications:ListChannels";
 	/** [List] notifications:ListEventRules */
-	static readonly LIST_EVENT_RULES = "notifications:ListEventRules";
+	static readonly ListEventRules = "notifications:ListEventRules";
 	/** [List] notifications:ListManagedNotificationChannelAssociations */
-	static readonly LIST_MANAGED_NOTIFICATION_CHANNEL_ASSOCIATIONS =
+	static readonly ListManagedNotificationChannelAssociations =
 		"notifications:ListManagedNotificationChannelAssociations";
 	/** [List] notifications:ListManagedNotificationChildEvents */
-	static readonly LIST_MANAGED_NOTIFICATION_CHILD_EVENTS =
+	static readonly ListManagedNotificationChildEvents =
 		"notifications:ListManagedNotificationChildEvents";
 	/** [List] notifications:ListManagedNotificationConfigurations */
-	static readonly LIST_MANAGED_NOTIFICATION_CONFIGURATIONS =
+	static readonly ListManagedNotificationConfigurations =
 		"notifications:ListManagedNotificationConfigurations";
 	/** [List] notifications:ListManagedNotificationEvents */
-	static readonly LIST_MANAGED_NOTIFICATION_EVENTS =
+	static readonly ListManagedNotificationEvents =
 		"notifications:ListManagedNotificationEvents";
 	/** [List] notifications:ListMemberAccounts */
-	static readonly LIST_MEMBER_ACCOUNTS = "notifications:ListMemberAccounts";
+	static readonly ListMemberAccounts = "notifications:ListMemberAccounts";
 	/** [List] notifications:ListNotificationConfigurations */
-	static readonly LIST_NOTIFICATION_CONFIGURATIONS =
+	static readonly ListNotificationConfigurations =
 		"notifications:ListNotificationConfigurations";
 	/** [List] notifications:ListNotificationEvents */
-	static readonly LIST_NOTIFICATION_EVENTS =
+	static readonly ListNotificationEvents =
 		"notifications:ListNotificationEvents";
 	/** [List] notifications:ListNotificationHubs */
-	static readonly LIST_NOTIFICATION_HUBS = "notifications:ListNotificationHubs";
+	static readonly ListNotificationHubs = "notifications:ListNotificationHubs";
 	/** [List] notifications:ListOrganizationalUnits */
-	static readonly LIST_ORGANIZATIONAL_UNITS =
+	static readonly ListOrganizationalUnits =
 		"notifications:ListOrganizationalUnits";
 	/** [List] notifications:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "notifications:ListTagsForResource";
+	static readonly ListTagsForResource = "notifications:ListTagsForResource";
 	/** [Write] notifications:PutFeatureOptInStatus */
-	static readonly PUT_FEATURE_OPT_IN_STATUS =
-		"notifications:PutFeatureOptInStatus";
+	static readonly PutFeatureOptInStatus = "notifications:PutFeatureOptInStatus";
 	/** [Write] notifications:RegisterNotificationHub */
-	static readonly REGISTER_NOTIFICATION_HUB =
+	static readonly RegisterNotificationHub =
 		"notifications:RegisterNotificationHub";
 	/** [Tagging] notifications:TagResource */
-	static readonly TAG_RESOURCE = "notifications:TagResource";
+	static readonly TagResource = "notifications:TagResource";
 	/** [Tagging] notifications:UntagResource */
-	static readonly UNTAG_RESOURCE = "notifications:UntagResource";
+	static readonly UntagResource = "notifications:UntagResource";
 	/** [Write] notifications:UpdateEventRule */
-	static readonly UPDATE_EVENT_RULE = "notifications:UpdateEventRule";
+	static readonly UpdateEventRule = "notifications:UpdateEventRule";
 	/** [Write] notifications:UpdateNotificationConfiguration */
-	static readonly UPDATE_NOTIFICATION_CONFIGURATION =
+	static readonly UpdateNotificationConfiguration =
 		"notifications:UpdateNotificationConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NotificationsActions.GET_EVENT_RULE,
-		NotificationsActions.GET_FEATURE_OPT_IN_STATUS,
-		NotificationsActions.GET_MANAGED_NOTIFICATION_CHILD_EVENT,
-		NotificationsActions.GET_MANAGED_NOTIFICATION_CONFIGURATION,
-		NotificationsActions.GET_MANAGED_NOTIFICATION_EVENT,
-		NotificationsActions.GET_NOTIFICATION_CONFIGURATION,
-		NotificationsActions.GET_NOTIFICATION_EVENT,
-		NotificationsActions.GET_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION,
+	static readonly AllReadActions: string[] = [
+		NotificationsActions.actionGetEventRule,
+		NotificationsActions.actionGetFeatureOptInStatus,
+		NotificationsActions.actionGetManagedNotificationChildEvent,
+		NotificationsActions.actionGetManagedNotificationConfiguration,
+		NotificationsActions.actionGetManagedNotificationEvent,
+		NotificationsActions.actionGetNotificationConfiguration,
+		NotificationsActions.actionGetNotificationEvent,
+		NotificationsActions.actionGetNotificationsAccessForOrganization,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NotificationsActions.ASSOCIATE_CHANNEL,
-		NotificationsActions.ASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT,
-		NotificationsActions.ASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL,
-		NotificationsActions.ASSOCIATE_ORGANIZATIONAL_UNIT,
-		NotificationsActions.CREATE_EVENT_RULE,
-		NotificationsActions.CREATE_NOTIFICATION_CONFIGURATION,
-		NotificationsActions.DELETE_EVENT_RULE,
-		NotificationsActions.DELETE_NOTIFICATION_CONFIGURATION,
-		NotificationsActions.DEREGISTER_NOTIFICATION_HUB,
-		NotificationsActions.DISASSOCIATE_CHANNEL,
-		NotificationsActions.DISASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT,
-		NotificationsActions.DISASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL,
-		NotificationsActions.DISASSOCIATE_ORGANIZATIONAL_UNIT,
-		NotificationsActions.PUT_FEATURE_OPT_IN_STATUS,
-		NotificationsActions.REGISTER_NOTIFICATION_HUB,
-		NotificationsActions.UPDATE_EVENT_RULE,
-		NotificationsActions.UPDATE_NOTIFICATION_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		NotificationsActions.AssociateChannel,
+		NotificationsActions.AssociateManagedNotificationAccountContact,
+		NotificationsActions.AssociateManagedNotificationAdditionalChannel,
+		NotificationsActions.AssociateOrganizationalUnit,
+		NotificationsActions.CreateEventRule,
+		NotificationsActions.CreateNotificationConfiguration,
+		NotificationsActions.DeleteEventRule,
+		NotificationsActions.DeleteNotificationConfiguration,
+		NotificationsActions.DeregisterNotificationHub,
+		NotificationsActions.DisassociateChannel,
+		NotificationsActions.DisassociateManagedNotificationAccountContact,
+		NotificationsActions.DisassociateManagedNotificationAdditionalChannel,
+		NotificationsActions.DisassociateOrganizationalUnit,
+		NotificationsActions.PutFeatureOptInStatus,
+		NotificationsActions.RegisterNotificationHub,
+		NotificationsActions.UpdateEventRule,
+		NotificationsActions.UpdateNotificationConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NotificationsActions.LIST_CHANNELS,
-		NotificationsActions.LIST_EVENT_RULES,
-		NotificationsActions.LIST_MANAGED_NOTIFICATION_CHANNEL_ASSOCIATIONS,
-		NotificationsActions.LIST_MANAGED_NOTIFICATION_CHILD_EVENTS,
-		NotificationsActions.LIST_MANAGED_NOTIFICATION_CONFIGURATIONS,
-		NotificationsActions.LIST_MANAGED_NOTIFICATION_EVENTS,
-		NotificationsActions.LIST_MEMBER_ACCOUNTS,
-		NotificationsActions.LIST_NOTIFICATION_CONFIGURATIONS,
-		NotificationsActions.LIST_NOTIFICATION_EVENTS,
-		NotificationsActions.LIST_NOTIFICATION_HUBS,
-		NotificationsActions.LIST_ORGANIZATIONAL_UNITS,
-		NotificationsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		NotificationsActions.ListChannels,
+		NotificationsActions.ListEventRules,
+		NotificationsActions.ListManagedNotificationChannelAssociations,
+		NotificationsActions.ListManagedNotificationChildEvents,
+		NotificationsActions.ListManagedNotificationConfigurations,
+		NotificationsActions.ListManagedNotificationEvents,
+		NotificationsActions.ListMemberAccounts,
+		NotificationsActions.ListNotificationConfigurations,
+		NotificationsActions.ListNotificationEvents,
+		NotificationsActions.ListNotificationHubs,
+		NotificationsActions.ListOrganizationalUnits,
+		NotificationsActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		NotificationsActions.DISABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION,
-		NotificationsActions.ENABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION,
+	static readonly AllPermissionManagementActions: string[] = [
+		NotificationsActions.DisableNotificationsAccessForOrganization,
+		NotificationsActions.EnableNotificationsAccessForOrganization,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		NotificationsActions.TAG_RESOURCE,
-		NotificationsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		NotificationsActions.TagResource,
+		NotificationsActions.UntagResource,
 	];
 }
 
-const EventRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):configuration/(?<notificationConfigurationId>[^:/?]+)/rule/(?<eventRuleId>[^:/?]+)$",
-);
-const ManagedNotificationChildEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration/category/(?<category>[^:/?]+)/sub-category/(?<subcategory>[^:/?]+)/event/(?<notificationEventId>[^:/?]+)/child-event/(?<notificationChildEventId>[^:/?]+)$",
-);
-const ManagedNotificationConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration/category/(?<category>[^:/?]+)/sub-category/(?<subcategory>[^:/?]+)$",
-);
-const ManagedNotificationEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration/category/(?<category>[^:/?]+)/sub-category/(?<subcategory>[^:/?]+)/event/(?<notificationEventId>[^:/?]+)$",
-);
-const NotificationConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):configuration/(?<notificationConfigurationId>[^:/?]+)$",
-);
-const NotificationEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications:(?<region>[^:]*):(?<account>[^:]*):configuration/(?<notificationConfigurationId>[^:/?]+)/event/(?<notificationEventId>[^:/?]+)$",
-);
+/**
+ * Properties for building a EventRule ARN.
+ */
+export interface NotificationsEventRuleArnProps {
+	/** The NotificationConfigurationId component of the ARN. */
+	readonly notificationConfigurationId: string;
+	/** The EventRuleId component of the ARN. */
+	readonly eventRuleId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a EventRule ARN.
+ */
+export interface NotificationsEventRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotificationConfigurationId component. */
+	readonly notificationConfigurationId: string;
+	/** The EventRuleId component. */
+	readonly eventRuleId: string;
+}
+
+/**
+ * Properties for building a ManagedNotificationChildEvent ARN.
+ */
+export interface NotificationsManagedNotificationChildEventArnProps {
+	/** The Category component of the ARN. */
+	readonly category: string;
+	/** The Subcategory component of the ARN. */
+	readonly subcategory: string;
+	/** The NotificationEventId component of the ARN. */
+	readonly notificationEventId: string;
+	/** The NotificationChildEventId component of the ARN. */
+	readonly notificationChildEventId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ManagedNotificationChildEvent ARN.
+ */
+export interface NotificationsManagedNotificationChildEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Category component. */
+	readonly category: string;
+	/** The Subcategory component. */
+	readonly subcategory: string;
+	/** The NotificationEventId component. */
+	readonly notificationEventId: string;
+	/** The NotificationChildEventId component. */
+	readonly notificationChildEventId: string;
+}
+
+/**
+ * Properties for building a ManagedNotificationConfiguration ARN.
+ */
+export interface NotificationsManagedNotificationConfigurationArnProps {
+	/** The Category component of the ARN. */
+	readonly category: string;
+	/** The Subcategory component of the ARN. */
+	readonly subcategory: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ManagedNotificationConfiguration ARN.
+ */
+export interface NotificationsManagedNotificationConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Category component. */
+	readonly category: string;
+	/** The Subcategory component. */
+	readonly subcategory: string;
+}
+
+/**
+ * Properties for building a ManagedNotificationEvent ARN.
+ */
+export interface NotificationsManagedNotificationEventArnProps {
+	/** The Category component of the ARN. */
+	readonly category: string;
+	/** The Subcategory component of the ARN. */
+	readonly subcategory: string;
+	/** The NotificationEventId component of the ARN. */
+	readonly notificationEventId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ManagedNotificationEvent ARN.
+ */
+export interface NotificationsManagedNotificationEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Category component. */
+	readonly category: string;
+	/** The Subcategory component. */
+	readonly subcategory: string;
+	/** The NotificationEventId component. */
+	readonly notificationEventId: string;
+}
+
+/**
+ * Properties for building a NotificationConfiguration ARN.
+ */
+export interface NotificationsNotificationConfigurationArnProps {
+	/** The NotificationConfigurationId component of the ARN. */
+	readonly notificationConfigurationId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a NotificationConfiguration ARN.
+ */
+export interface NotificationsNotificationConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotificationConfigurationId component. */
+	readonly notificationConfigurationId: string;
+}
+
+/**
+ * Properties for building a NotificationEvent ARN.
+ */
+export interface NotificationsNotificationEventArnProps {
+	/** The NotificationConfigurationId component of the ARN. */
+	readonly notificationConfigurationId: string;
+	/** The NotificationEventId component of the ARN. */
+	readonly notificationEventId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a NotificationEvent ARN.
+ */
+export interface NotificationsNotificationEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotificationConfigurationId component. */
+	readonly notificationConfigurationId: string;
+	/** The NotificationEventId component. */
+	readonly notificationEventId: string;
+}
+
+const EventRuleArnRegex =
+	/^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):configuration\/(?<notificationConfigurationId>[^:/?]+)\/rule\/(?<eventRuleId>[^:/?]+)$/;
+const ManagedNotificationChildEventArnRegex =
+	/^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration\/category\/(?<category>[^:/?]+)\/sub-category\/(?<subcategory>[^:/?]+)\/event\/(?<notificationEventId>[^:/?]+)\/child-event\/(?<notificationChildEventId>[^:/?]+)$/;
+const ManagedNotificationConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration\/category\/(?<category>[^:/?]+)\/sub-category\/(?<subcategory>[^:/?]+)$/;
+const ManagedNotificationEventArnRegex =
+	/^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):managed-notification-configuration\/category\/(?<category>[^:/?]+)\/sub-category\/(?<subcategory>[^:/?]+)\/event\/(?<notificationEventId>[^:/?]+)$/;
+const NotificationConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):notifications::(?<account>[^:]*):configuration\/(?<notificationConfigurationId>[^:/?]+)$/;
+const NotificationEventArnRegex =
+	/^arn:(?<partition>[^:]+):notifications:(?<region>[^:]*):(?<account>[^:]*):configuration\/(?<notificationConfigurationId>[^:/?]+)\/event\/(?<notificationEventId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for notifications resources.
@@ -206,16 +380,7 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the EventRule resource.
 	 */
-	static eventRule(props: {
-		/** The NotificationConfigurationId component of the ARN. */
-		readonly notificationConfigurationId: string;
-		/** The EventRuleId component of the ARN. */
-		readonly eventRuleId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventRule(props: NotificationsEventRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:notifications::${props.account ?? "*"}:configuration/${props.notificationConfigurationId}/rule/${props.eventRuleId}`;
 	}
 
@@ -230,12 +395,7 @@ export class NotificationsResources {
 	 * Parses a EventRule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventRuleArn(arn: string): {
-		partition: string;
-		account: string;
-		notificationConfigurationId: string;
-		eventRuleId: string;
-	} {
+	static parseEventRuleArn(arn: string): NotificationsEventRuleArnComponents {
 		const match = EventRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid EventRule ARN: ${arn}`);
@@ -251,20 +411,9 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the ManagedNotificationChildEvent resource.
 	 */
-	static managedNotificationChildEvent(props: {
-		/** The Category component of the ARN. */
-		readonly category: string;
-		/** The Subcategory component of the ARN. */
-		readonly subcategory: string;
-		/** The NotificationEventId component of the ARN. */
-		readonly notificationEventId: string;
-		/** The NotificationChildEventId component of the ARN. */
-		readonly notificationChildEventId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedNotificationChildEvent(
+		props: NotificationsManagedNotificationChildEventArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications::${props.account ?? "*"}:managed-notification-configuration/category/${props.category}/sub-category/${props.subcategory}/event/${props.notificationEventId}/child-event/${props.notificationChildEventId}`;
 	}
 
@@ -279,14 +428,9 @@ export class NotificationsResources {
 	 * Parses a ManagedNotificationChildEvent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedNotificationChildEventArn(arn: string): {
-		partition: string;
-		account: string;
-		category: string;
-		subcategory: string;
-		notificationEventId: string;
-		notificationChildEventId: string;
-	} {
+	static parseManagedNotificationChildEventArn(
+		arn: string,
+	): NotificationsManagedNotificationChildEventArnComponents {
 		const match = ManagedNotificationChildEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ManagedNotificationChildEvent ARN: ${arn}`);
@@ -304,16 +448,9 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the ManagedNotificationConfiguration resource.
 	 */
-	static managedNotificationConfiguration(props: {
-		/** The Category component of the ARN. */
-		readonly category: string;
-		/** The Subcategory component of the ARN. */
-		readonly subcategory: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedNotificationConfiguration(
+		props: NotificationsManagedNotificationConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications::${props.account ?? "*"}:managed-notification-configuration/category/${props.category}/sub-category/${props.subcategory}`;
 	}
 
@@ -328,12 +465,9 @@ export class NotificationsResources {
 	 * Parses a ManagedNotificationConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedNotificationConfigurationArn(arn: string): {
-		partition: string;
-		account: string;
-		category: string;
-		subcategory: string;
-	} {
+	static parseManagedNotificationConfigurationArn(
+		arn: string,
+	): NotificationsManagedNotificationConfigurationArnComponents {
 		const match = ManagedNotificationConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ManagedNotificationConfiguration ARN: ${arn}`);
@@ -349,18 +483,9 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the ManagedNotificationEvent resource.
 	 */
-	static managedNotificationEvent(props: {
-		/** The Category component of the ARN. */
-		readonly category: string;
-		/** The Subcategory component of the ARN. */
-		readonly subcategory: string;
-		/** The NotificationEventId component of the ARN. */
-		readonly notificationEventId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedNotificationEvent(
+		props: NotificationsManagedNotificationEventArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications::${props.account ?? "*"}:managed-notification-configuration/category/${props.category}/sub-category/${props.subcategory}/event/${props.notificationEventId}`;
 	}
 
@@ -375,13 +500,9 @@ export class NotificationsResources {
 	 * Parses a ManagedNotificationEvent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedNotificationEventArn(arn: string): {
-		partition: string;
-		account: string;
-		category: string;
-		subcategory: string;
-		notificationEventId: string;
-	} {
+	static parseManagedNotificationEventArn(
+		arn: string,
+	): NotificationsManagedNotificationEventArnComponents {
 		const match = ManagedNotificationEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ManagedNotificationEvent ARN: ${arn}`);
@@ -398,14 +519,9 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the NotificationConfiguration resource.
 	 */
-	static notificationConfiguration(props: {
-		/** The NotificationConfigurationId component of the ARN. */
-		readonly notificationConfigurationId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notificationConfiguration(
+		props: NotificationsNotificationConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications::${props.account ?? "*"}:configuration/${props.notificationConfigurationId}`;
 	}
 
@@ -420,11 +536,9 @@ export class NotificationsResources {
 	 * Parses a NotificationConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotificationConfigurationArn(arn: string): {
-		partition: string;
-		account: string;
-		notificationConfigurationId: string;
-	} {
+	static parseNotificationConfigurationArn(
+		arn: string,
+	): NotificationsNotificationConfigurationArnComponents {
 		const match = NotificationConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid NotificationConfiguration ARN: ${arn}`);
@@ -439,18 +553,9 @@ export class NotificationsResources {
 	/**
 	 * Builds an ARN for the NotificationEvent resource.
 	 */
-	static notificationEvent(props: {
-		/** The NotificationConfigurationId component of the ARN. */
-		readonly notificationConfigurationId: string;
-		/** The NotificationEventId component of the ARN. */
-		readonly notificationEventId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notificationEvent(
+		props: NotificationsNotificationEventArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications:${props.region ?? "*"}:${props.account ?? "*"}:configuration/${props.notificationConfigurationId}/event/${props.notificationEventId}`;
 	}
 
@@ -465,13 +570,9 @@ export class NotificationsResources {
 	 * Parses a NotificationEvent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotificationEventArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		notificationConfigurationId: string;
-		notificationEventId: string;
-	} {
+	static parseNotificationEventArn(
+		arn: string,
+	): NotificationsNotificationEventArnComponents {
 		const match = NotificationEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid NotificationEvent ARN: ${arn}`);
@@ -491,147 +592,144 @@ export class NotificationsResources {
  */
 export class NotificationsOperations {
 	/** IAM actions required for the AssociateChannel API call. */
-	static readonly ASSOCIATE_CHANNEL: string[] = [
+	static readonly AssociateChannel: string[] = [
 		"notifications:AssociateChannel",
 	];
 	/** IAM actions required for the AssociateManagedNotificationAccountContact API call. */
-	static readonly ASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT: string[] = [
+	static readonly AssociateManagedNotificationAccountContact: string[] = [
 		"notifications:AssociateManagedNotificationAccountContact",
 	];
 	/** IAM actions required for the AssociateManagedNotificationAdditionalChannel API call. */
-	static readonly ASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL: string[] =
-		["notifications:AssociateManagedNotificationAdditionalChannel"];
+	static readonly AssociateManagedNotificationAdditionalChannel: string[] = [
+		"notifications:AssociateManagedNotificationAdditionalChannel",
+	];
 	/** IAM actions required for the AssociateOrganizationalUnit API call. */
-	static readonly ASSOCIATE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly AssociateOrganizationalUnit: string[] = [
 		"notifications:AssociateOrganizationalUnit",
 	];
 	/** IAM actions required for the CreateEventRule API call. */
-	static readonly CREATE_EVENT_RULE: string[] = [
-		"notifications:CreateEventRule",
-	];
+	static readonly CreateEventRule: string[] = ["notifications:CreateEventRule"];
 	/** IAM actions required for the CreateNotificationConfiguration API call. */
-	static readonly CREATE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly CreateNotificationConfiguration: string[] = [
 		"notifications:CreateNotificationConfiguration",
 		"notifications:TagResource",
 	];
 	/** IAM actions required for the DeleteEventRule API call. */
-	static readonly DELETE_EVENT_RULE: string[] = [
-		"notifications:DeleteEventRule",
-	];
+	static readonly DeleteEventRule: string[] = ["notifications:DeleteEventRule"];
 	/** IAM actions required for the DeleteNotificationConfiguration API call. */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly DeleteNotificationConfiguration: string[] = [
 		"notifications:DeleteNotificationConfiguration",
 	];
 	/** IAM actions required for the DeregisterNotificationHub API call. */
-	static readonly DEREGISTER_NOTIFICATION_HUB: string[] = [
+	static readonly DeregisterNotificationHub: string[] = [
 		"notifications:DeregisterNotificationHub",
 	];
 	/** IAM actions required for the DisableNotificationsAccessForOrganization API call. */
-	static readonly DISABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly DisableNotificationsAccessForOrganization: string[] = [
 		"notifications:DisableNotificationsAccessForOrganization",
 	];
 	/** IAM actions required for the DisassociateChannel API call. */
-	static readonly DISASSOCIATE_CHANNEL: string[] = [
+	static readonly DisassociateChannel: string[] = [
 		"notifications:DisassociateChannel",
 	];
 	/** IAM actions required for the DisassociateManagedNotificationAccountContact API call. */
-	static readonly DISASSOCIATE_MANAGED_NOTIFICATION_ACCOUNT_CONTACT: string[] =
-		["notifications:DisassociateManagedNotificationAccountContact"];
+	static readonly DisassociateManagedNotificationAccountContact: string[] = [
+		"notifications:DisassociateManagedNotificationAccountContact",
+	];
 	/** IAM actions required for the DisassociateManagedNotificationAdditionalChannel API call. */
-	static readonly DISASSOCIATE_MANAGED_NOTIFICATION_ADDITIONAL_CHANNEL: string[] =
-		["notifications:DisassociateManagedNotificationAdditionalChannel"];
+	static readonly DisassociateManagedNotificationAdditionalChannel: string[] = [
+		"notifications:DisassociateManagedNotificationAdditionalChannel",
+	];
 	/** IAM actions required for the DisassociateOrganizationalUnit API call. */
-	static readonly DISASSOCIATE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly DisassociateOrganizationalUnit: string[] = [
 		"notifications:DisassociateOrganizationalUnit",
 	];
 	/** IAM actions required for the EnableNotificationsAccessForOrganization API call. */
-	static readonly ENABLE_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly EnableNotificationsAccessForOrganization: string[] = [
 		"notifications:EnableNotificationsAccessForOrganization",
 	];
 	/** IAM actions required for the GetEventRule API call. */
-	static readonly GET_EVENT_RULE: string[] = ["notifications:GetEventRule"];
+	static readonly opGetEventRule: string[] = ["notifications:GetEventRule"];
 	/** IAM actions required for the GetManagedNotificationChildEvent API call. */
-	static readonly GET_MANAGED_NOTIFICATION_CHILD_EVENT: string[] = [
+	static readonly opGetManagedNotificationChildEvent: string[] = [
 		"notifications:GetManagedNotificationChildEvent",
 	];
 	/** IAM actions required for the GetManagedNotificationConfiguration API call. */
-	static readonly GET_MANAGED_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly opGetManagedNotificationConfiguration: string[] = [
 		"notifications:GetManagedNotificationConfiguration",
 	];
 	/** IAM actions required for the GetManagedNotificationEvent API call. */
-	static readonly GET_MANAGED_NOTIFICATION_EVENT: string[] = [
+	static readonly opGetManagedNotificationEvent: string[] = [
 		"notifications:GetManagedNotificationEvent",
 	];
 	/** IAM actions required for the GetNotificationConfiguration API call. */
-	static readonly GET_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly opGetNotificationConfiguration: string[] = [
 		"notifications:GetNotificationConfiguration",
 	];
 	/** IAM actions required for the GetNotificationEvent API call. */
-	static readonly GET_NOTIFICATION_EVENT: string[] = [
+	static readonly opGetNotificationEvent: string[] = [
 		"notifications:GetNotificationEvent",
 	];
 	/** IAM actions required for the GetNotificationsAccessForOrganization API call. */
-	static readonly GET_NOTIFICATIONS_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly opGetNotificationsAccessForOrganization: string[] = [
 		"notifications:GetNotificationsAccessForOrganization",
 	];
 	/** IAM actions required for the ListChannels API call. */
-	static readonly LIST_CHANNELS: string[] = ["notifications:ListChannels"];
+	static readonly ListChannels: string[] = ["notifications:ListChannels"];
 	/** IAM actions required for the ListEventRules API call. */
-	static readonly LIST_EVENT_RULES: string[] = ["notifications:ListEventRules"];
+	static readonly ListEventRules: string[] = ["notifications:ListEventRules"];
 	/** IAM actions required for the ListManagedNotificationChannelAssociations API call. */
-	static readonly LIST_MANAGED_NOTIFICATION_CHANNEL_ASSOCIATIONS: string[] = [
+	static readonly ListManagedNotificationChannelAssociations: string[] = [
 		"notifications:ListManagedNotificationChannelAssociations",
 	];
 	/** IAM actions required for the ListManagedNotificationChildEvents API call. */
-	static readonly LIST_MANAGED_NOTIFICATION_CHILD_EVENTS: string[] = [
+	static readonly ListManagedNotificationChildEvents: string[] = [
 		"notifications:ListManagedNotificationChildEvents",
 	];
 	/** IAM actions required for the ListManagedNotificationConfigurations API call. */
-	static readonly LIST_MANAGED_NOTIFICATION_CONFIGURATIONS: string[] = [
+	static readonly ListManagedNotificationConfigurations: string[] = [
 		"notifications:ListManagedNotificationConfigurations",
 	];
 	/** IAM actions required for the ListManagedNotificationEvents API call. */
-	static readonly LIST_MANAGED_NOTIFICATION_EVENTS: string[] = [
+	static readonly ListManagedNotificationEvents: string[] = [
 		"notifications:ListManagedNotificationEvents",
 	];
 	/** IAM actions required for the ListMemberAccounts API call. */
-	static readonly LIST_MEMBER_ACCOUNTS: string[] = [
+	static readonly ListMemberAccounts: string[] = [
 		"notifications:ListMemberAccounts",
 	];
 	/** IAM actions required for the ListNotificationConfigurations API call. */
-	static readonly LIST_NOTIFICATION_CONFIGURATIONS: string[] = [
+	static readonly ListNotificationConfigurations: string[] = [
 		"notifications:ListNotificationConfigurations",
 	];
 	/** IAM actions required for the ListNotificationEvents API call. */
-	static readonly LIST_NOTIFICATION_EVENTS: string[] = [
+	static readonly ListNotificationEvents: string[] = [
 		"notifications:ListNotificationEvents",
 	];
 	/** IAM actions required for the ListNotificationHubs API call. */
-	static readonly LIST_NOTIFICATION_HUBS: string[] = [
+	static readonly ListNotificationHubs: string[] = [
 		"notifications:ListNotificationHubs",
 	];
 	/** IAM actions required for the ListOrganizationalUnits API call. */
-	static readonly LIST_ORGANIZATIONAL_UNITS: string[] = [
+	static readonly ListOrganizationalUnits: string[] = [
 		"notifications:ListOrganizationalUnits",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"notifications:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterNotificationHub API call. */
-	static readonly REGISTER_NOTIFICATION_HUB: string[] = [
+	static readonly RegisterNotificationHub: string[] = [
 		"notifications:RegisterNotificationHub",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["notifications:TagResource"];
+	static readonly TagResource: string[] = ["notifications:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["notifications:UntagResource"];
+	static readonly UntagResource: string[] = ["notifications:UntagResource"];
 	/** IAM actions required for the UpdateEventRule API call. */
-	static readonly UPDATE_EVENT_RULE: string[] = [
-		"notifications:UpdateEventRule",
-	];
+	static readonly UpdateEventRule: string[] = ["notifications:UpdateEventRule"];
 	/** IAM actions required for the UpdateNotificationConfiguration API call. */
-	static readonly UPDATE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly UpdateNotificationConfiguration: string[] = [
 		"notifications:UpdateNotificationConfiguration",
 	];
 }
@@ -641,24 +739,24 @@ export class NotificationsOperations {
  */
 export class NotificationsConditions {
 	/** Condition keys applicable to the CreateNotificationConfiguration action. */
-	static readonly CREATE_NOTIFICATION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateNotificationConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

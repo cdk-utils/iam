@@ -13,163 +13,221 @@ export class XrayActions {
 	static readonly SERVICE_PREFIX = "xray";
 
 	/** [Read] xray:BatchGetTraceSummaryById */
-	static readonly BATCH_GET_TRACE_SUMMARY_BY_ID =
-		"xray:BatchGetTraceSummaryById";
+	static readonly BatchGetTraceSummaryById = "xray:BatchGetTraceSummaryById";
 	/** [List] xray:BatchGetTraces */
-	static readonly BATCH_GET_TRACES = "xray:BatchGetTraces";
+	static readonly BatchGetTraces = "xray:BatchGetTraces";
 	/** [Read] xray:CancelTraceRetrieval */
-	static readonly CANCEL_TRACE_RETRIEVAL = "xray:CancelTraceRetrieval";
+	static readonly CancelTraceRetrieval = "xray:CancelTraceRetrieval";
 	/** [Write] xray:CreateGroup */
-	static readonly CREATE_GROUP = "xray:CreateGroup";
+	static readonly CreateGroup = "xray:CreateGroup";
 	/** [Write] xray:CreateSamplingRule */
-	static readonly CREATE_SAMPLING_RULE = "xray:CreateSamplingRule";
+	static readonly CreateSamplingRule = "xray:CreateSamplingRule";
 	/** [Write] xray:DeleteGroup */
-	static readonly DELETE_GROUP = "xray:DeleteGroup";
+	static readonly DeleteGroup = "xray:DeleteGroup";
 	/** [Write] xray:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "xray:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "xray:DeleteResourcePolicy";
 	/** [Write] xray:DeleteSamplingRule */
-	static readonly DELETE_SAMPLING_RULE = "xray:DeleteSamplingRule";
+	static readonly DeleteSamplingRule = "xray:DeleteSamplingRule";
 	/** [Read] xray:GetDistinctTraceGraphs */
-	static readonly GET_DISTINCT_TRACE_GRAPHS = "xray:GetDistinctTraceGraphs";
+	static readonly actionGetDistinctTraceGraphs = "xray:GetDistinctTraceGraphs";
 	/** [Read] xray:GetEncryptionConfig */
-	static readonly GET_ENCRYPTION_CONFIG = "xray:GetEncryptionConfig";
+	static readonly actionGetEncryptionConfig = "xray:GetEncryptionConfig";
 	/** [Read] xray:GetGroup */
-	static readonly GET_GROUP = "xray:GetGroup";
+	static readonly actionGetGroup = "xray:GetGroup";
 	/** [Read] xray:GetGroups */
-	static readonly GET_GROUPS = "xray:GetGroups";
+	static readonly actionGetGroups = "xray:GetGroups";
 	/** [Read] xray:GetIndexingRules */
-	static readonly GET_INDEXING_RULES = "xray:GetIndexingRules";
+	static readonly actionGetIndexingRules = "xray:GetIndexingRules";
 	/** [Read] xray:GetInsight */
-	static readonly GET_INSIGHT = "xray:GetInsight";
+	static readonly actionGetInsight = "xray:GetInsight";
 	/** [Read] xray:GetInsightEvents */
-	static readonly GET_INSIGHT_EVENTS = "xray:GetInsightEvents";
+	static readonly actionGetInsightEvents = "xray:GetInsightEvents";
 	/** [Read] xray:GetInsightImpactGraph */
-	static readonly GET_INSIGHT_IMPACT_GRAPH = "xray:GetInsightImpactGraph";
+	static readonly actionGetInsightImpactGraph = "xray:GetInsightImpactGraph";
 	/** [Read] xray:GetInsightSummaries */
-	static readonly GET_INSIGHT_SUMMARIES = "xray:GetInsightSummaries";
+	static readonly actionGetInsightSummaries = "xray:GetInsightSummaries";
 	/** [Read] xray:GetRetrievedTracesGraph */
-	static readonly GET_RETRIEVED_TRACES_GRAPH = "xray:GetRetrievedTracesGraph";
+	static readonly actionGetRetrievedTracesGraph =
+		"xray:GetRetrievedTracesGraph";
 	/** [Read] xray:GetSamplingRules */
-	static readonly GET_SAMPLING_RULES = "xray:GetSamplingRules";
+	static readonly actionGetSamplingRules = "xray:GetSamplingRules";
 	/** [Read] xray:GetSamplingStatisticSummaries */
-	static readonly GET_SAMPLING_STATISTIC_SUMMARIES =
+	static readonly actionGetSamplingStatisticSummaries =
 		"xray:GetSamplingStatisticSummaries";
 	/** [Read] xray:GetSamplingTargets */
-	static readonly GET_SAMPLING_TARGETS = "xray:GetSamplingTargets";
+	static readonly actionGetSamplingTargets = "xray:GetSamplingTargets";
 	/** [Read] xray:GetServiceGraph */
-	static readonly GET_SERVICE_GRAPH = "xray:GetServiceGraph";
+	static readonly actionGetServiceGraph = "xray:GetServiceGraph";
 	/** [Read] xray:GetTimeSeriesServiceStatistics */
-	static readonly GET_TIME_SERIES_SERVICE_STATISTICS =
+	static readonly actionGetTimeSeriesServiceStatistics =
 		"xray:GetTimeSeriesServiceStatistics";
 	/** [Read] xray:GetTraceGraph */
-	static readonly GET_TRACE_GRAPH = "xray:GetTraceGraph";
+	static readonly actionGetTraceGraph = "xray:GetTraceGraph";
 	/** [Read] xray:GetTraceSegmentDestination */
-	static readonly GET_TRACE_SEGMENT_DESTINATION =
+	static readonly actionGetTraceSegmentDestination =
 		"xray:GetTraceSegmentDestination";
 	/** [Read] xray:GetTraceSummaries */
-	static readonly GET_TRACE_SUMMARIES = "xray:GetTraceSummaries";
+	static readonly actionGetTraceSummaries = "xray:GetTraceSummaries";
 	/** [Write] xray:Link */
-	static readonly LINK = "xray:Link";
+	static readonly Link = "xray:Link";
 	/** [List] xray:ListResourcePolicies */
-	static readonly LIST_RESOURCE_POLICIES = "xray:ListResourcePolicies";
+	static readonly ListResourcePolicies = "xray:ListResourcePolicies";
 	/** [List] xray:ListRetrievedTraces */
-	static readonly LIST_RETRIEVED_TRACES = "xray:ListRetrievedTraces";
+	static readonly ListRetrievedTraces = "xray:ListRetrievedTraces";
 	/** [List] xray:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "xray:ListTagsForResource";
+	static readonly ListTagsForResource = "xray:ListTagsForResource";
 	/** [PermissionManagement] xray:PutEncryptionConfig */
-	static readonly PUT_ENCRYPTION_CONFIG = "xray:PutEncryptionConfig";
+	static readonly PutEncryptionConfig = "xray:PutEncryptionConfig";
 	/** [Write] xray:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "xray:PutResourcePolicy";
+	static readonly PutResourcePolicy = "xray:PutResourcePolicy";
 	/** [Write] xray:PutSpans */
-	static readonly PUT_SPANS = "xray:PutSpans";
+	static readonly PutSpans = "xray:PutSpans";
 	/** [Write] xray:PutSpansForIndexing */
-	static readonly PUT_SPANS_FOR_INDEXING = "xray:PutSpansForIndexing";
+	static readonly PutSpansForIndexing = "xray:PutSpansForIndexing";
 	/** [Write] xray:PutTelemetryRecords */
-	static readonly PUT_TELEMETRY_RECORDS = "xray:PutTelemetryRecords";
+	static readonly PutTelemetryRecords = "xray:PutTelemetryRecords";
 	/** [Write] xray:PutTraceSegments */
-	static readonly PUT_TRACE_SEGMENTS = "xray:PutTraceSegments";
+	static readonly PutTraceSegments = "xray:PutTraceSegments";
 	/** [Read] xray:StartTraceRetrieval */
-	static readonly START_TRACE_RETRIEVAL = "xray:StartTraceRetrieval";
+	static readonly StartTraceRetrieval = "xray:StartTraceRetrieval";
 	/** [Tagging] xray:TagResource */
-	static readonly TAG_RESOURCE = "xray:TagResource";
+	static readonly TagResource = "xray:TagResource";
 	/** [Tagging] xray:UntagResource */
-	static readonly UNTAG_RESOURCE = "xray:UntagResource";
+	static readonly UntagResource = "xray:UntagResource";
 	/** [Write] xray:UpdateGroup */
-	static readonly UPDATE_GROUP = "xray:UpdateGroup";
+	static readonly UpdateGroup = "xray:UpdateGroup";
 	/** [Write] xray:UpdateIndexingRule */
-	static readonly UPDATE_INDEXING_RULE = "xray:UpdateIndexingRule";
+	static readonly UpdateIndexingRule = "xray:UpdateIndexingRule";
 	/** [Write] xray:UpdateSamplingRule */
-	static readonly UPDATE_SAMPLING_RULE = "xray:UpdateSamplingRule";
+	static readonly UpdateSamplingRule = "xray:UpdateSamplingRule";
 	/** [Write] xray:UpdateTraceSegmentDestination */
-	static readonly UPDATE_TRACE_SEGMENT_DESTINATION =
+	static readonly UpdateTraceSegmentDestination =
 		"xray:UpdateTraceSegmentDestination";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		XrayActions.BATCH_GET_TRACE_SUMMARY_BY_ID,
-		XrayActions.CANCEL_TRACE_RETRIEVAL,
-		XrayActions.GET_DISTINCT_TRACE_GRAPHS,
-		XrayActions.GET_ENCRYPTION_CONFIG,
-		XrayActions.GET_GROUP,
-		XrayActions.GET_GROUPS,
-		XrayActions.GET_INDEXING_RULES,
-		XrayActions.GET_INSIGHT,
-		XrayActions.GET_INSIGHT_EVENTS,
-		XrayActions.GET_INSIGHT_IMPACT_GRAPH,
-		XrayActions.GET_INSIGHT_SUMMARIES,
-		XrayActions.GET_RETRIEVED_TRACES_GRAPH,
-		XrayActions.GET_SAMPLING_RULES,
-		XrayActions.GET_SAMPLING_STATISTIC_SUMMARIES,
-		XrayActions.GET_SAMPLING_TARGETS,
-		XrayActions.GET_SERVICE_GRAPH,
-		XrayActions.GET_TIME_SERIES_SERVICE_STATISTICS,
-		XrayActions.GET_TRACE_GRAPH,
-		XrayActions.GET_TRACE_SEGMENT_DESTINATION,
-		XrayActions.GET_TRACE_SUMMARIES,
-		XrayActions.START_TRACE_RETRIEVAL,
+	static readonly AllReadActions: string[] = [
+		XrayActions.BatchGetTraceSummaryById,
+		XrayActions.CancelTraceRetrieval,
+		XrayActions.actionGetDistinctTraceGraphs,
+		XrayActions.actionGetEncryptionConfig,
+		XrayActions.actionGetGroup,
+		XrayActions.actionGetGroups,
+		XrayActions.actionGetIndexingRules,
+		XrayActions.actionGetInsight,
+		XrayActions.actionGetInsightEvents,
+		XrayActions.actionGetInsightImpactGraph,
+		XrayActions.actionGetInsightSummaries,
+		XrayActions.actionGetRetrievedTracesGraph,
+		XrayActions.actionGetSamplingRules,
+		XrayActions.actionGetSamplingStatisticSummaries,
+		XrayActions.actionGetSamplingTargets,
+		XrayActions.actionGetServiceGraph,
+		XrayActions.actionGetTimeSeriesServiceStatistics,
+		XrayActions.actionGetTraceGraph,
+		XrayActions.actionGetTraceSegmentDestination,
+		XrayActions.actionGetTraceSummaries,
+		XrayActions.StartTraceRetrieval,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		XrayActions.CREATE_GROUP,
-		XrayActions.CREATE_SAMPLING_RULE,
-		XrayActions.DELETE_GROUP,
-		XrayActions.DELETE_RESOURCE_POLICY,
-		XrayActions.DELETE_SAMPLING_RULE,
-		XrayActions.LINK,
-		XrayActions.PUT_RESOURCE_POLICY,
-		XrayActions.PUT_SPANS,
-		XrayActions.PUT_SPANS_FOR_INDEXING,
-		XrayActions.PUT_TELEMETRY_RECORDS,
-		XrayActions.PUT_TRACE_SEGMENTS,
-		XrayActions.UPDATE_GROUP,
-		XrayActions.UPDATE_INDEXING_RULE,
-		XrayActions.UPDATE_SAMPLING_RULE,
-		XrayActions.UPDATE_TRACE_SEGMENT_DESTINATION,
+	static readonly AllWriteActions: string[] = [
+		XrayActions.CreateGroup,
+		XrayActions.CreateSamplingRule,
+		XrayActions.DeleteGroup,
+		XrayActions.DeleteResourcePolicy,
+		XrayActions.DeleteSamplingRule,
+		XrayActions.Link,
+		XrayActions.PutResourcePolicy,
+		XrayActions.PutSpans,
+		XrayActions.PutSpansForIndexing,
+		XrayActions.PutTelemetryRecords,
+		XrayActions.PutTraceSegments,
+		XrayActions.UpdateGroup,
+		XrayActions.UpdateIndexingRule,
+		XrayActions.UpdateSamplingRule,
+		XrayActions.UpdateTraceSegmentDestination,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		XrayActions.BATCH_GET_TRACES,
-		XrayActions.LIST_RESOURCE_POLICIES,
-		XrayActions.LIST_RETRIEVED_TRACES,
-		XrayActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		XrayActions.BatchGetTraces,
+		XrayActions.ListResourcePolicies,
+		XrayActions.ListRetrievedTraces,
+		XrayActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		XrayActions.PUT_ENCRYPTION_CONFIG,
+	static readonly AllPermissionManagementActions: string[] = [
+		XrayActions.PutEncryptionConfig,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		XrayActions.TAG_RESOURCE,
-		XrayActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		XrayActions.TagResource,
+		XrayActions.UntagResource,
 	];
 }
 
-const GroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):xray:(?<region>[^:]*):(?<account>[^:]*):group/(?<groupName>[^:/?]+)/(?<id>[^:/?]+)$",
-);
-const SamplingRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):xray:(?<region>[^:]*):(?<account>[^:]*):sampling-rule/(?<samplingRuleName>[^:/?]+)$",
-);
+/**
+ * Properties for building a group ARN.
+ */
+export interface XrayGroupArnProps {
+	/** The GroupName component of the ARN. */
+	readonly groupName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a group ARN.
+ */
+export interface XrayGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GroupName component. */
+	readonly groupName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a sampling-rule ARN.
+ */
+export interface XraySamplingRuleArnProps {
+	/** The SamplingRuleName component of the ARN. */
+	readonly samplingRuleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sampling-rule ARN.
+ */
+export interface XraySamplingRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SamplingRuleName component. */
+	readonly samplingRuleName: string;
+}
+
+const GroupArnRegex =
+	/^arn:(?<partition>[^:]+):xray:(?<region>[^:]*):(?<account>[^:]*):group\/(?<groupName>[^:/?]+)\/(?<id>[^:/?]+)$/;
+const SamplingRuleArnRegex =
+	/^arn:(?<partition>[^:]+):xray:(?<region>[^:]*):(?<account>[^:]*):sampling-rule\/(?<samplingRuleName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for xray resources.
@@ -178,18 +236,7 @@ export class XrayResources {
 	/**
 	 * Builds an ARN for the group resource.
 	 */
-	static group(props: {
-		/** The GroupName component of the ARN. */
-		readonly groupName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static group(props: XrayGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:xray:${props.region ?? "*"}:${props.account ?? "*"}:group/${props.groupName}/${props.id}`;
 	}
 
@@ -204,13 +251,7 @@ export class XrayResources {
 	 * Parses a group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		groupName: string;
-		id: string;
-	} {
+	static parseGroupArn(arn: string): XrayGroupArnComponents {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
@@ -227,16 +268,7 @@ export class XrayResources {
 	/**
 	 * Builds an ARN for the sampling-rule resource.
 	 */
-	static samplingRule(props: {
-		/** The SamplingRuleName component of the ARN. */
-		readonly samplingRuleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static samplingRule(props: XraySamplingRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:xray:${props.region ?? "*"}:${props.account ?? "*"}:sampling-rule/${props.samplingRuleName}`;
 	}
 
@@ -251,12 +283,7 @@ export class XrayResources {
 	 * Parses a sampling-rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSamplingRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		samplingRuleName: string;
-	} {
+	static parseSamplingRuleArn(arn: string): XraySamplingRuleArnComponents {
 		const match = SamplingRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sampling-rule ARN: ${arn}`);
@@ -275,117 +302,107 @@ export class XrayResources {
  */
 export class XrayOperations {
 	/** IAM actions required for the BatchGetTraces API call. */
-	static readonly BATCH_GET_TRACES: string[] = ["xray:BatchGetTraces"];
+	static readonly BatchGetTraces: string[] = ["xray:BatchGetTraces"];
 	/** IAM actions required for the CancelTraceRetrieval API call. */
-	static readonly CANCEL_TRACE_RETRIEVAL: string[] = [
+	static readonly CancelTraceRetrieval: string[] = [
 		"xray:CancelTraceRetrieval",
 	];
 	/** IAM actions required for the CreateGroup API call. */
-	static readonly CREATE_GROUP: string[] = [
+	static readonly CreateGroup: string[] = [
 		"xray:CreateGroup",
 		"xray:TagResource",
 	];
 	/** IAM actions required for the CreateSamplingRule API call. */
-	static readonly CREATE_SAMPLING_RULE: string[] = [
+	static readonly CreateSamplingRule: string[] = [
 		"xray:CreateSamplingRule",
 		"xray:TagResource",
 	];
 	/** IAM actions required for the DeleteGroup API call. */
-	static readonly DELETE_GROUP: string[] = ["xray:DeleteGroup"];
+	static readonly DeleteGroup: string[] = ["xray:DeleteGroup"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"xray:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSamplingRule API call. */
-	static readonly DELETE_SAMPLING_RULE: string[] = ["xray:DeleteSamplingRule"];
+	static readonly DeleteSamplingRule: string[] = ["xray:DeleteSamplingRule"];
 	/** IAM actions required for the GetEncryptionConfig API call. */
-	static readonly GET_ENCRYPTION_CONFIG: string[] = [
+	static readonly opGetEncryptionConfig: string[] = [
 		"xray:GetEncryptionConfig",
 	];
 	/** IAM actions required for the GetGroup API call. */
-	static readonly GET_GROUP: string[] = ["xray:GetGroup"];
+	static readonly opGetGroup: string[] = ["xray:GetGroup"];
 	/** IAM actions required for the GetGroups API call. */
-	static readonly GET_GROUPS: string[] = ["xray:GetGroups"];
+	static readonly opGetGroups: string[] = ["xray:GetGroups"];
 	/** IAM actions required for the GetIndexingRules API call. */
-	static readonly GET_INDEXING_RULES: string[] = ["xray:GetIndexingRules"];
+	static readonly opGetIndexingRules: string[] = ["xray:GetIndexingRules"];
 	/** IAM actions required for the GetInsight API call. */
-	static readonly GET_INSIGHT: string[] = ["xray:GetInsight"];
+	static readonly opGetInsight: string[] = ["xray:GetInsight"];
 	/** IAM actions required for the GetInsightEvents API call. */
-	static readonly GET_INSIGHT_EVENTS: string[] = ["xray:GetInsightEvents"];
+	static readonly opGetInsightEvents: string[] = ["xray:GetInsightEvents"];
 	/** IAM actions required for the GetInsightImpactGraph API call. */
-	static readonly GET_INSIGHT_IMPACT_GRAPH: string[] = [
+	static readonly opGetInsightImpactGraph: string[] = [
 		"xray:GetInsightImpactGraph",
 	];
 	/** IAM actions required for the GetInsightSummaries API call. */
-	static readonly GET_INSIGHT_SUMMARIES: string[] = [
+	static readonly opGetInsightSummaries: string[] = [
 		"xray:GetInsightSummaries",
 	];
 	/** IAM actions required for the GetRetrievedTracesGraph API call. */
-	static readonly GET_RETRIEVED_TRACES_GRAPH: string[] = [
+	static readonly opGetRetrievedTracesGraph: string[] = [
 		"xray:GetRetrievedTracesGraph",
 	];
 	/** IAM actions required for the GetSamplingRules API call. */
-	static readonly GET_SAMPLING_RULES: string[] = ["xray:GetSamplingRules"];
+	static readonly opGetSamplingRules: string[] = ["xray:GetSamplingRules"];
 	/** IAM actions required for the GetSamplingStatisticSummaries API call. */
-	static readonly GET_SAMPLING_STATISTIC_SUMMARIES: string[] = [
+	static readonly opGetSamplingStatisticSummaries: string[] = [
 		"xray:GetSamplingStatisticSummaries",
 	];
 	/** IAM actions required for the GetSamplingTargets API call. */
-	static readonly GET_SAMPLING_TARGETS: string[] = ["xray:GetSamplingTargets"];
+	static readonly opGetSamplingTargets: string[] = ["xray:GetSamplingTargets"];
 	/** IAM actions required for the GetServiceGraph API call. */
-	static readonly GET_SERVICE_GRAPH: string[] = ["xray:GetServiceGraph"];
+	static readonly opGetServiceGraph: string[] = ["xray:GetServiceGraph"];
 	/** IAM actions required for the GetTimeSeriesServiceStatistics API call. */
-	static readonly GET_TIME_SERIES_SERVICE_STATISTICS: string[] = [
+	static readonly opGetTimeSeriesServiceStatistics: string[] = [
 		"xray:GetTimeSeriesServiceStatistics",
 	];
 	/** IAM actions required for the GetTraceGraph API call. */
-	static readonly GET_TRACE_GRAPH: string[] = ["xray:GetTraceGraph"];
+	static readonly opGetTraceGraph: string[] = ["xray:GetTraceGraph"];
 	/** IAM actions required for the GetTraceSegmentDestination API call. */
-	static readonly GET_TRACE_SEGMENT_DESTINATION: string[] = [
+	static readonly opGetTraceSegmentDestination: string[] = [
 		"xray:GetTraceSegmentDestination",
 	];
 	/** IAM actions required for the GetTraceSummaries API call. */
-	static readonly GET_TRACE_SUMMARIES: string[] = ["xray:GetTraceSummaries"];
+	static readonly opGetTraceSummaries: string[] = ["xray:GetTraceSummaries"];
 	/** IAM actions required for the ListResourcePolicies API call. */
-	static readonly LIST_RESOURCE_POLICIES: string[] = [
+	static readonly ListResourcePolicies: string[] = [
 		"xray:ListResourcePolicies",
 	];
 	/** IAM actions required for the ListRetrievedTraces API call. */
-	static readonly LIST_RETRIEVED_TRACES: string[] = [
-		"xray:ListRetrievedTraces",
-	];
+	static readonly ListRetrievedTraces: string[] = ["xray:ListRetrievedTraces"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"xray:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["xray:ListTagsForResource"];
 	/** IAM actions required for the PutEncryptionConfig API call. */
-	static readonly PUT_ENCRYPTION_CONFIG: string[] = [
-		"xray:PutEncryptionConfig",
-	];
+	static readonly PutEncryptionConfig: string[] = ["xray:PutEncryptionConfig"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["xray:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["xray:PutResourcePolicy"];
 	/** IAM actions required for the PutTelemetryRecords API call. */
-	static readonly PUT_TELEMETRY_RECORDS: string[] = [
-		"xray:PutTelemetryRecords",
-	];
+	static readonly PutTelemetryRecords: string[] = ["xray:PutTelemetryRecords"];
 	/** IAM actions required for the PutTraceSegments API call. */
-	static readonly PUT_TRACE_SEGMENTS: string[] = ["xray:PutTraceSegments"];
+	static readonly PutTraceSegments: string[] = ["xray:PutTraceSegments"];
 	/** IAM actions required for the StartTraceRetrieval API call. */
-	static readonly START_TRACE_RETRIEVAL: string[] = [
-		"xray:StartTraceRetrieval",
-	];
+	static readonly StartTraceRetrieval: string[] = ["xray:StartTraceRetrieval"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["xray:TagResource"];
+	static readonly TagResource: string[] = ["xray:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["xray:UntagResource"];
+	static readonly UntagResource: string[] = ["xray:UntagResource"];
 	/** IAM actions required for the UpdateGroup API call. */
-	static readonly UPDATE_GROUP: string[] = ["xray:UpdateGroup"];
+	static readonly UpdateGroup: string[] = ["xray:UpdateGroup"];
 	/** IAM actions required for the UpdateIndexingRule API call. */
-	static readonly UPDATE_INDEXING_RULE: string[] = ["xray:UpdateIndexingRule"];
+	static readonly UpdateIndexingRule: string[] = ["xray:UpdateIndexingRule"];
 	/** IAM actions required for the UpdateSamplingRule API call. */
-	static readonly UPDATE_SAMPLING_RULE: string[] = ["xray:UpdateSamplingRule"];
+	static readonly UpdateSamplingRule: string[] = ["xray:UpdateSamplingRule"];
 	/** IAM actions required for the UpdateTraceSegmentDestination API call. */
-	static readonly UPDATE_TRACE_SEGMENT_DESTINATION: string[] = [
+	static readonly UpdateTraceSegmentDestination: string[] = [
 		"xray:UpdateTraceSegmentDestination",
 	];
 }
@@ -395,69 +412,69 @@ export class XrayOperations {
  */
 export class XrayConditions {
 	/** Condition keys applicable to the CreateGroup action. */
-	static readonly CREATE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSamplingRule action. */
-	static readonly CREATE_SAMPLING_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateSamplingRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteGroup action. */
-	static readonly DELETE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
-	static readonly DELETE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"xray:ResourcePolicyName",
 	];
 	/** Condition keys applicable to the DeleteSamplingRule action. */
-	static readonly DELETE_SAMPLING_RULE_CONDITION_KEYS: string[] = [
+	static readonly DeleteSamplingRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetGroup action. */
-	static readonly GET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly actionGetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"xray:ResourcePolicyName",
 	];
 	/** Condition keys applicable to the PutSpans action. */
-	static readonly PUT_SPANS_CONDITION_KEYS: string[] = [
+	static readonly PutSpansConditionKeys: string[] = [
 		"logs:LogGeneratingResourceArns",
 	];
 	/** Condition keys applicable to the PutTraceSegments action. */
-	static readonly PUT_TRACE_SEGMENTS_CONDITION_KEYS: string[] = [
+	static readonly PutTraceSegmentsConditionKeys: string[] = [
 		"logs:LogGeneratingResourceArns",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateGroup action. */
-	static readonly UPDATE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly UpdateGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSamplingRule action. */
-	static readonly UPDATE_SAMPLING_RULE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSamplingRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateTraceSegmentDestination action. */
-	static readonly UPDATE_TRACE_SEGMENT_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateTraceSegmentDestinationConditionKeys: string[] = [
 		"xray:TraceSegmentDestination",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: logs:LogGeneratingResourceArns (ArrayOfARN) */
 	static readonly LOG_GENERATING_RESOURCE_ARNS =
 		"logs:LogGeneratingResourceArns";

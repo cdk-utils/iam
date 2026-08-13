@@ -2,7 +2,10 @@ import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
 
-import { generateServiceFile, generateForService } from "../../scripts/generate-service";
+import {
+	generateForService,
+	generateServiceFile,
+} from "../../scripts/generate-service";
 import type { ServiceDetail } from "../../scripts/types";
 
 // =============================================================================
@@ -15,24 +18,47 @@ const minimalService: ServiceDetail = {
 	Actions: [
 		{
 			Name: "GetItem",
-			Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+			Annotations: {
+				Properties: {
+					IsList: false,
+					IsPermissionManagement: false,
+					IsTaggingOnly: false,
+					IsWrite: false,
+				},
+			},
 			Resources: [{ Name: "item" }],
 		},
 		{
 			Name: "PutItem",
 			ActionConditionKeys: ["testservice:Attribute"],
-			Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } },
+			Annotations: {
+				Properties: {
+					IsList: false,
+					IsPermissionManagement: false,
+					IsTaggingOnly: false,
+					IsWrite: true,
+				},
+			},
 			Resources: [{ Name: "item" }],
 		},
 		{
 			Name: "ListItems",
-			Annotations: { Properties: { IsList: true, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+			Annotations: {
+				Properties: {
+					IsList: true,
+					IsPermissionManagement: false,
+					IsTaggingOnly: false,
+					IsWrite: false,
+				},
+			},
 		},
 	],
 	Resources: [
 		{
 			Name: "item",
-			ARNFormats: ["arn:${Partition}:testservice:${Region}:${Account}:item/${ItemId}"],
+			ARNFormats: [
+				"arn:${Partition}:testservice:${Region}:${Account}:item/${ItemId}",
+			],
 			ConditionKeys: ["aws:ResourceTag/${TagKey}"],
 		},
 	],
@@ -63,7 +89,14 @@ const serviceWithoutResources: ServiceDetail = {
 	Actions: [
 		{
 			Name: "DoThing",
-			Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } },
+			Annotations: {
+				Properties: {
+					IsList: false,
+					IsPermissionManagement: false,
+					IsTaggingOnly: false,
+					IsWrite: true,
+				},
+			},
 		},
 	],
 };
@@ -84,22 +117,28 @@ describe("generateServiceFile", () => {
 		const output = generateServiceFile(minimalService);
 		expect(output).toContain("export class TestserviceActions");
 		expect(output).toContain('static readonly SERVICE_PREFIX = "testservice"');
-		expect(output).toContain('static readonly GET_ITEM = "testservice:GetItem"');
-		expect(output).toContain('static readonly PUT_ITEM = "testservice:PutItem"');
-		expect(output).toContain('static readonly LIST_ITEMS = "testservice:ListItems"');
+		expect(output).toContain(
+			'static readonly actionGetItem = "testservice:GetItem"',
+		);
+		expect(output).toContain('static readonly PutItem = "testservice:PutItem"');
+		expect(output).toContain(
+			'static readonly ListItems = "testservice:ListItems"',
+		);
 	});
 
 	it("groups actions by access level", () => {
 		const output = generateServiceFile(minimalService);
-		expect(output).toContain("READ_ACTIONS");
-		expect(output).toContain("WRITE_ACTIONS");
-		expect(output).toContain("LIST_ACTIONS");
-		// GetItem should be in READ_ACTIONS
-		expect(output).toMatch(/READ_ACTIONS.*TestserviceActions\.GET_ITEM/s);
-		// PutItem should be in WRITE_ACTIONS
-		expect(output).toMatch(/WRITE_ACTIONS.*TestserviceActions\.PUT_ITEM/s);
-		// ListItems should be in LIST_ACTIONS
-		expect(output).toMatch(/LIST_ACTIONS.*TestserviceActions\.LIST_ITEMS/s);
+		expect(output).toContain("AllReadActions");
+		expect(output).toContain("AllWriteActions");
+		expect(output).toContain("AllListActions");
+		// GetItem should be in AllReadActions (prefixed with action)
+		expect(output).toMatch(
+			/AllReadActions.*TestserviceActions\.actionGetItem/s,
+		);
+		// PutItem should be in AllWriteActions
+		expect(output).toMatch(/AllWriteActions.*TestserviceActions\.PutItem/s);
+		// ListItems should be in AllListActions
+		expect(output).toMatch(/AllListActions.*TestserviceActions\.ListItems/s);
 	});
 
 	it("generates the Resources class with builder, validator, parser", () => {
@@ -117,7 +156,7 @@ describe("generateServiceFile", () => {
 	it("generates the Operations class with required actions", () => {
 		const output = generateServiceFile(minimalService);
 		expect(output).toContain("export class TestserviceOperations");
-		expect(output).toContain('static readonly GET_ITEM: string[] = ["testservice:GetItem"]');
+		expect(output).toContain('"testservice:GetItem"');
 		expect(output).toContain('"testservice:PutItem"');
 		expect(output).toContain('"testservice:ValidateItem"');
 	});
@@ -126,11 +165,15 @@ describe("generateServiceFile", () => {
 		const output = generateServiceFile(minimalService);
 		expect(output).toContain("export class TestserviceConditions");
 		// Action condition key mapping
-		expect(output).toContain("PUT_ITEM_CONDITION_KEYS");
+		expect(output).toContain("PutItemConditionKeys");
 		expect(output).toContain('"testservice:Attribute"');
-		// Condition key constants
-		expect(output).toContain('static readonly ATTRIBUTE = "testservice:Attribute"');
-		expect(output).toContain('static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}"');
+		// Condition key constants (aws: prefixed with AWS_)
+		expect(output).toContain(
+			'static readonly ATTRIBUTE = "testservice:Attribute"',
+		);
+		expect(output).toContain(
+			'static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}"',
+		);
 		// Builder method
 		expect(output).toContain("static attribute(value: string)");
 		expect(output).toContain("static tagKeys(values: string[])");
@@ -166,7 +209,14 @@ describe("generateServiceFile", () => {
 			Actions: [
 				{
 					Name: "GetThing",
-					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: false,
+							IsTaggingOnly: false,
+							IsWrite: false,
+						},
+					},
 				},
 			],
 			Resources: [
@@ -203,7 +253,14 @@ describe("generateServiceFile", () => {
 			Actions: [
 				{
 					Name: "Do",
-					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } },
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: false,
+							IsTaggingOnly: false,
+							IsWrite: true,
+						},
+					},
 				},
 			],
 			Resources: [
@@ -223,21 +280,37 @@ describe("generateServiceFile", () => {
 			Version: "v1.0",
 			Actions: [
 				{
-					Name: "SetPolicy",
-					Annotations: { Properties: { IsList: false, IsPermissionManagement: true, IsTaggingOnly: false, IsWrite: false } },
+					Name: "PutPolicy",
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: true,
+							IsTaggingOnly: false,
+							IsWrite: false,
+						},
+					},
 				},
 				{
 					Name: "TagResource",
-					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: true, IsWrite: false } },
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: false,
+							IsTaggingOnly: true,
+							IsWrite: false,
+						},
+					},
 				},
 			],
 		};
 
 		const output = generateServiceFile(permService);
-		expect(output).toContain("[PermissionManagement] permtest:SetPolicy");
+		expect(output).toContain("[PermissionManagement] permtest:PutPolicy");
 		expect(output).toContain("[Tagging] permtest:TagResource");
-		expect(output).toMatch(/PERMISSION_MANAGEMENT_ACTIONS.*PermtestActions\.SET_POLICY/s);
-		expect(output).toMatch(/TAGGING_ACTIONS.*PermtestActions\.TAG_RESOURCE/s);
+		expect(output).toMatch(
+			/AllPermissionManagementActions.*PermtestActions\.PutPolicy/s,
+		);
+		expect(output).toMatch(/AllTaggingActions.*PermtestActions\.TagResource/s);
 	});
 });
 
@@ -263,7 +336,14 @@ describe("generateForService (file I/O)", () => {
 			Actions: [
 				{
 					Name: "Read",
-					Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: false } },
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: false,
+							IsTaggingOnly: false,
+							IsWrite: false,
+						},
+					},
 				},
 			],
 		};
@@ -279,7 +359,7 @@ describe("generateForService (file I/O)", () => {
 		const content = fs.readFileSync(outputPath, "utf-8");
 		expect(content).toContain("AUTO-GENERATED FILE");
 		expect(content).toContain("FiletestActions");
-		expect(content).toContain('static readonly READ = "filetest:Read"');
+		expect(content).toContain('static readonly Read = "filetest:Read"');
 	});
 
 	it("creates the output directory if it does not exist", async () => {
@@ -290,12 +370,31 @@ describe("generateForService (file I/O)", () => {
 		const serviceData: ServiceDetail = {
 			Name: "nested",
 			Version: "v1.0",
-			Actions: [{ Name: "Act", Annotations: { Properties: { IsList: false, IsPermissionManagement: false, IsTaggingOnly: false, IsWrite: true } } }],
+			Actions: [
+				{
+					Name: "Act",
+					Annotations: {
+						Properties: {
+							IsList: false,
+							IsPermissionManagement: false,
+							IsTaggingOnly: false,
+							IsWrite: true,
+						},
+					},
+				},
+			],
 		};
 
-		fs.writeFileSync(path.join(dataDir, "nested.json"), JSON.stringify(serviceData), "utf-8");
+		fs.writeFileSync(
+			path.join(dataDir, "nested.json"),
+			JSON.stringify(serviceData),
+			"utf-8",
+		);
 
-		const outputPath = await generateForService(path.join(dataDir, "nested.json"), outputDir);
+		const outputPath = await generateForService(
+			path.join(dataDir, "nested.json"),
+			outputDir,
+		);
 		expect(fs.existsSync(outputPath)).toBe(true);
 	});
 });

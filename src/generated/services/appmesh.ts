@@ -13,170 +13,391 @@ export class AppmeshActions {
 	static readonly SERVICE_PREFIX = "appmesh";
 
 	/** [Write] appmesh:CreateGatewayRoute */
-	static readonly CREATE_GATEWAY_ROUTE = "appmesh:CreateGatewayRoute";
+	static readonly CreateGatewayRoute = "appmesh:CreateGatewayRoute";
 	/** [Write] appmesh:CreateMesh */
-	static readonly CREATE_MESH = "appmesh:CreateMesh";
+	static readonly CreateMesh = "appmesh:CreateMesh";
 	/** [Write] appmesh:CreateRoute */
-	static readonly CREATE_ROUTE = "appmesh:CreateRoute";
+	static readonly CreateRoute = "appmesh:CreateRoute";
 	/** [Write] appmesh:CreateVirtualGateway */
-	static readonly CREATE_VIRTUAL_GATEWAY = "appmesh:CreateVirtualGateway";
+	static readonly CreateVirtualGateway = "appmesh:CreateVirtualGateway";
 	/** [Write] appmesh:CreateVirtualNode */
-	static readonly CREATE_VIRTUAL_NODE = "appmesh:CreateVirtualNode";
+	static readonly CreateVirtualNode = "appmesh:CreateVirtualNode";
 	/** [Write] appmesh:CreateVirtualRouter */
-	static readonly CREATE_VIRTUAL_ROUTER = "appmesh:CreateVirtualRouter";
+	static readonly CreateVirtualRouter = "appmesh:CreateVirtualRouter";
 	/** [Write] appmesh:CreateVirtualService */
-	static readonly CREATE_VIRTUAL_SERVICE = "appmesh:CreateVirtualService";
+	static readonly CreateVirtualService = "appmesh:CreateVirtualService";
 	/** [Write] appmesh:DeleteGatewayRoute */
-	static readonly DELETE_GATEWAY_ROUTE = "appmesh:DeleteGatewayRoute";
+	static readonly DeleteGatewayRoute = "appmesh:DeleteGatewayRoute";
 	/** [Write] appmesh:DeleteMesh */
-	static readonly DELETE_MESH = "appmesh:DeleteMesh";
+	static readonly DeleteMesh = "appmesh:DeleteMesh";
 	/** [Write] appmesh:DeleteMeshPolicy */
-	static readonly DELETE_MESH_POLICY = "appmesh:DeleteMeshPolicy";
+	static readonly DeleteMeshPolicy = "appmesh:DeleteMeshPolicy";
 	/** [Write] appmesh:DeleteRoute */
-	static readonly DELETE_ROUTE = "appmesh:DeleteRoute";
+	static readonly DeleteRoute = "appmesh:DeleteRoute";
 	/** [Write] appmesh:DeleteVirtualGateway */
-	static readonly DELETE_VIRTUAL_GATEWAY = "appmesh:DeleteVirtualGateway";
+	static readonly DeleteVirtualGateway = "appmesh:DeleteVirtualGateway";
 	/** [Write] appmesh:DeleteVirtualNode */
-	static readonly DELETE_VIRTUAL_NODE = "appmesh:DeleteVirtualNode";
+	static readonly DeleteVirtualNode = "appmesh:DeleteVirtualNode";
 	/** [Write] appmesh:DeleteVirtualRouter */
-	static readonly DELETE_VIRTUAL_ROUTER = "appmesh:DeleteVirtualRouter";
+	static readonly DeleteVirtualRouter = "appmesh:DeleteVirtualRouter";
 	/** [Write] appmesh:DeleteVirtualService */
-	static readonly DELETE_VIRTUAL_SERVICE = "appmesh:DeleteVirtualService";
+	static readonly DeleteVirtualService = "appmesh:DeleteVirtualService";
 	/** [Read] appmesh:DescribeGatewayRoute */
-	static readonly DESCRIBE_GATEWAY_ROUTE = "appmesh:DescribeGatewayRoute";
+	static readonly DescribeGatewayRoute = "appmesh:DescribeGatewayRoute";
 	/** [Read] appmesh:DescribeMesh */
-	static readonly DESCRIBE_MESH = "appmesh:DescribeMesh";
+	static readonly DescribeMesh = "appmesh:DescribeMesh";
 	/** [Read] appmesh:DescribeRoute */
-	static readonly DESCRIBE_ROUTE = "appmesh:DescribeRoute";
+	static readonly DescribeRoute = "appmesh:DescribeRoute";
 	/** [Read] appmesh:DescribeVirtualGateway */
-	static readonly DESCRIBE_VIRTUAL_GATEWAY = "appmesh:DescribeVirtualGateway";
+	static readonly DescribeVirtualGateway = "appmesh:DescribeVirtualGateway";
 	/** [Read] appmesh:DescribeVirtualNode */
-	static readonly DESCRIBE_VIRTUAL_NODE = "appmesh:DescribeVirtualNode";
+	static readonly DescribeVirtualNode = "appmesh:DescribeVirtualNode";
 	/** [Read] appmesh:DescribeVirtualRouter */
-	static readonly DESCRIBE_VIRTUAL_ROUTER = "appmesh:DescribeVirtualRouter";
+	static readonly DescribeVirtualRouter = "appmesh:DescribeVirtualRouter";
 	/** [Read] appmesh:DescribeVirtualService */
-	static readonly DESCRIBE_VIRTUAL_SERVICE = "appmesh:DescribeVirtualService";
+	static readonly DescribeVirtualService = "appmesh:DescribeVirtualService";
 	/** [Read] appmesh:GetMeshPolicy */
-	static readonly GET_MESH_POLICY = "appmesh:GetMeshPolicy";
+	static readonly actionGetMeshPolicy = "appmesh:GetMeshPolicy";
 	/** [List] appmesh:ListGatewayRoutes */
-	static readonly LIST_GATEWAY_ROUTES = "appmesh:ListGatewayRoutes";
+	static readonly ListGatewayRoutes = "appmesh:ListGatewayRoutes";
 	/** [List] appmesh:ListMeshes */
-	static readonly LIST_MESHES = "appmesh:ListMeshes";
+	static readonly ListMeshes = "appmesh:ListMeshes";
 	/** [List] appmesh:ListRoutes */
-	static readonly LIST_ROUTES = "appmesh:ListRoutes";
+	static readonly ListRoutes = "appmesh:ListRoutes";
 	/** [List] appmesh:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "appmesh:ListTagsForResource";
+	static readonly ListTagsForResource = "appmesh:ListTagsForResource";
 	/** [List] appmesh:ListVirtualGateways */
-	static readonly LIST_VIRTUAL_GATEWAYS = "appmesh:ListVirtualGateways";
+	static readonly ListVirtualGateways = "appmesh:ListVirtualGateways";
 	/** [List] appmesh:ListVirtualNodes */
-	static readonly LIST_VIRTUAL_NODES = "appmesh:ListVirtualNodes";
+	static readonly ListVirtualNodes = "appmesh:ListVirtualNodes";
 	/** [List] appmesh:ListVirtualRouters */
-	static readonly LIST_VIRTUAL_ROUTERS = "appmesh:ListVirtualRouters";
+	static readonly ListVirtualRouters = "appmesh:ListVirtualRouters";
 	/** [List] appmesh:ListVirtualServices */
-	static readonly LIST_VIRTUAL_SERVICES = "appmesh:ListVirtualServices";
+	static readonly ListVirtualServices = "appmesh:ListVirtualServices";
 	/** [Write] appmesh:PutMeshPolicy */
-	static readonly PUT_MESH_POLICY = "appmesh:PutMeshPolicy";
+	static readonly PutMeshPolicy = "appmesh:PutMeshPolicy";
 	/** [Read] appmesh:StreamAggregatedResources */
-	static readonly STREAM_AGGREGATED_RESOURCES =
+	static readonly StreamAggregatedResources =
 		"appmesh:StreamAggregatedResources";
 	/** [Tagging] appmesh:TagResource */
-	static readonly TAG_RESOURCE = "appmesh:TagResource";
+	static readonly TagResource = "appmesh:TagResource";
 	/** [Tagging] appmesh:UntagResource */
-	static readonly UNTAG_RESOURCE = "appmesh:UntagResource";
+	static readonly UntagResource = "appmesh:UntagResource";
 	/** [Write] appmesh:UpdateGatewayRoute */
-	static readonly UPDATE_GATEWAY_ROUTE = "appmesh:UpdateGatewayRoute";
+	static readonly UpdateGatewayRoute = "appmesh:UpdateGatewayRoute";
 	/** [Write] appmesh:UpdateMesh */
-	static readonly UPDATE_MESH = "appmesh:UpdateMesh";
+	static readonly UpdateMesh = "appmesh:UpdateMesh";
 	/** [Write] appmesh:UpdateRoute */
-	static readonly UPDATE_ROUTE = "appmesh:UpdateRoute";
+	static readonly UpdateRoute = "appmesh:UpdateRoute";
 	/** [Write] appmesh:UpdateVirtualGateway */
-	static readonly UPDATE_VIRTUAL_GATEWAY = "appmesh:UpdateVirtualGateway";
+	static readonly UpdateVirtualGateway = "appmesh:UpdateVirtualGateway";
 	/** [Write] appmesh:UpdateVirtualNode */
-	static readonly UPDATE_VIRTUAL_NODE = "appmesh:UpdateVirtualNode";
+	static readonly UpdateVirtualNode = "appmesh:UpdateVirtualNode";
 	/** [Write] appmesh:UpdateVirtualRouter */
-	static readonly UPDATE_VIRTUAL_ROUTER = "appmesh:UpdateVirtualRouter";
+	static readonly UpdateVirtualRouter = "appmesh:UpdateVirtualRouter";
 	/** [Write] appmesh:UpdateVirtualService */
-	static readonly UPDATE_VIRTUAL_SERVICE = "appmesh:UpdateVirtualService";
+	static readonly UpdateVirtualService = "appmesh:UpdateVirtualService";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppmeshActions.DESCRIBE_GATEWAY_ROUTE,
-		AppmeshActions.DESCRIBE_MESH,
-		AppmeshActions.DESCRIBE_ROUTE,
-		AppmeshActions.DESCRIBE_VIRTUAL_GATEWAY,
-		AppmeshActions.DESCRIBE_VIRTUAL_NODE,
-		AppmeshActions.DESCRIBE_VIRTUAL_ROUTER,
-		AppmeshActions.DESCRIBE_VIRTUAL_SERVICE,
-		AppmeshActions.GET_MESH_POLICY,
-		AppmeshActions.STREAM_AGGREGATED_RESOURCES,
+	static readonly AllReadActions: string[] = [
+		AppmeshActions.DescribeGatewayRoute,
+		AppmeshActions.DescribeMesh,
+		AppmeshActions.DescribeRoute,
+		AppmeshActions.DescribeVirtualGateway,
+		AppmeshActions.DescribeVirtualNode,
+		AppmeshActions.DescribeVirtualRouter,
+		AppmeshActions.DescribeVirtualService,
+		AppmeshActions.actionGetMeshPolicy,
+		AppmeshActions.StreamAggregatedResources,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppmeshActions.CREATE_GATEWAY_ROUTE,
-		AppmeshActions.CREATE_MESH,
-		AppmeshActions.CREATE_ROUTE,
-		AppmeshActions.CREATE_VIRTUAL_GATEWAY,
-		AppmeshActions.CREATE_VIRTUAL_NODE,
-		AppmeshActions.CREATE_VIRTUAL_ROUTER,
-		AppmeshActions.CREATE_VIRTUAL_SERVICE,
-		AppmeshActions.DELETE_GATEWAY_ROUTE,
-		AppmeshActions.DELETE_MESH,
-		AppmeshActions.DELETE_MESH_POLICY,
-		AppmeshActions.DELETE_ROUTE,
-		AppmeshActions.DELETE_VIRTUAL_GATEWAY,
-		AppmeshActions.DELETE_VIRTUAL_NODE,
-		AppmeshActions.DELETE_VIRTUAL_ROUTER,
-		AppmeshActions.DELETE_VIRTUAL_SERVICE,
-		AppmeshActions.PUT_MESH_POLICY,
-		AppmeshActions.UPDATE_GATEWAY_ROUTE,
-		AppmeshActions.UPDATE_MESH,
-		AppmeshActions.UPDATE_ROUTE,
-		AppmeshActions.UPDATE_VIRTUAL_GATEWAY,
-		AppmeshActions.UPDATE_VIRTUAL_NODE,
-		AppmeshActions.UPDATE_VIRTUAL_ROUTER,
-		AppmeshActions.UPDATE_VIRTUAL_SERVICE,
+	static readonly AllWriteActions: string[] = [
+		AppmeshActions.CreateGatewayRoute,
+		AppmeshActions.CreateMesh,
+		AppmeshActions.CreateRoute,
+		AppmeshActions.CreateVirtualGateway,
+		AppmeshActions.CreateVirtualNode,
+		AppmeshActions.CreateVirtualRouter,
+		AppmeshActions.CreateVirtualService,
+		AppmeshActions.DeleteGatewayRoute,
+		AppmeshActions.DeleteMesh,
+		AppmeshActions.DeleteMeshPolicy,
+		AppmeshActions.DeleteRoute,
+		AppmeshActions.DeleteVirtualGateway,
+		AppmeshActions.DeleteVirtualNode,
+		AppmeshActions.DeleteVirtualRouter,
+		AppmeshActions.DeleteVirtualService,
+		AppmeshActions.PutMeshPolicy,
+		AppmeshActions.UpdateGatewayRoute,
+		AppmeshActions.UpdateMesh,
+		AppmeshActions.UpdateRoute,
+		AppmeshActions.UpdateVirtualGateway,
+		AppmeshActions.UpdateVirtualNode,
+		AppmeshActions.UpdateVirtualRouter,
+		AppmeshActions.UpdateVirtualService,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppmeshActions.LIST_GATEWAY_ROUTES,
-		AppmeshActions.LIST_MESHES,
-		AppmeshActions.LIST_ROUTES,
-		AppmeshActions.LIST_TAGS_FOR_RESOURCE,
-		AppmeshActions.LIST_VIRTUAL_GATEWAYS,
-		AppmeshActions.LIST_VIRTUAL_NODES,
-		AppmeshActions.LIST_VIRTUAL_ROUTERS,
-		AppmeshActions.LIST_VIRTUAL_SERVICES,
+	static readonly AllListActions: string[] = [
+		AppmeshActions.ListGatewayRoutes,
+		AppmeshActions.ListMeshes,
+		AppmeshActions.ListRoutes,
+		AppmeshActions.ListTagsForResource,
+		AppmeshActions.ListVirtualGateways,
+		AppmeshActions.ListVirtualNodes,
+		AppmeshActions.ListVirtualRouters,
+		AppmeshActions.ListVirtualServices,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppmeshActions.TAG_RESOURCE,
-		AppmeshActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppmeshActions.TagResource,
+		AppmeshActions.UntagResource,
 	];
 }
 
-const GatewayRouteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualGateway/(?<virtualGatewayName>[^:/?]+)/gatewayRoute/(?<gatewayRouteName>[^:/?]+)$",
-);
-const MeshArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)$",
-);
-const RouteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualRouter/(?<virtualRouterName>[^:/?]+)/route/(?<routeName>[^:/?]+)$",
-);
-const VirtualGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualGateway/(?<virtualGatewayName>[^:/?]+)$",
-);
-const VirtualNodeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualNode/(?<virtualNodeName>[^:/?]+)$",
-);
-const VirtualRouterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualRouter/(?<virtualRouterName>[^:/?]+)$",
-);
-const VirtualServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh/(?<meshName>[^:/?]+)/virtualService/(?<virtualServiceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a gatewayRoute ARN.
+ */
+export interface AppmeshGatewayRouteArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualGatewayName component of the ARN. */
+	readonly virtualGatewayName: string;
+	/** The GatewayRouteName component of the ARN. */
+	readonly gatewayRouteName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gatewayRoute ARN.
+ */
+export interface AppmeshGatewayRouteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualGatewayName component. */
+	readonly virtualGatewayName: string;
+	/** The GatewayRouteName component. */
+	readonly gatewayRouteName: string;
+}
+
+/**
+ * Properties for building a mesh ARN.
+ */
+export interface AppmeshMeshArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mesh ARN.
+ */
+export interface AppmeshMeshArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+}
+
+/**
+ * Properties for building a route ARN.
+ */
+export interface AppmeshRouteArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualRouterName component of the ARN. */
+	readonly virtualRouterName: string;
+	/** The RouteName component of the ARN. */
+	readonly routeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a route ARN.
+ */
+export interface AppmeshRouteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualRouterName component. */
+	readonly virtualRouterName: string;
+	/** The RouteName component. */
+	readonly routeName: string;
+}
+
+/**
+ * Properties for building a virtualGateway ARN.
+ */
+export interface AppmeshVirtualGatewayArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualGatewayName component of the ARN. */
+	readonly virtualGatewayName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a virtualGateway ARN.
+ */
+export interface AppmeshVirtualGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualGatewayName component. */
+	readonly virtualGatewayName: string;
+}
+
+/**
+ * Properties for building a virtualNode ARN.
+ */
+export interface AppmeshVirtualNodeArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualNodeName component of the ARN. */
+	readonly virtualNodeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a virtualNode ARN.
+ */
+export interface AppmeshVirtualNodeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualNodeName component. */
+	readonly virtualNodeName: string;
+}
+
+/**
+ * Properties for building a virtualRouter ARN.
+ */
+export interface AppmeshVirtualRouterArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualRouterName component of the ARN. */
+	readonly virtualRouterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a virtualRouter ARN.
+ */
+export interface AppmeshVirtualRouterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualRouterName component. */
+	readonly virtualRouterName: string;
+}
+
+/**
+ * Properties for building a virtualService ARN.
+ */
+export interface AppmeshVirtualServiceArnProps {
+	/** The MeshName component of the ARN. */
+	readonly meshName: string;
+	/** The VirtualServiceName component of the ARN. */
+	readonly virtualServiceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a virtualService ARN.
+ */
+export interface AppmeshVirtualServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MeshName component. */
+	readonly meshName: string;
+	/** The VirtualServiceName component. */
+	readonly virtualServiceName: string;
+}
+
+const GatewayRouteArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualGateway\/(?<virtualGatewayName>[^:/?]+)\/gatewayRoute\/(?<gatewayRouteName>[^:/?]+)$/;
+const MeshArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)$/;
+const RouteArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualRouter\/(?<virtualRouterName>[^:/?]+)\/route\/(?<routeName>[^:/?]+)$/;
+const VirtualGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualGateway\/(?<virtualGatewayName>[^:/?]+)$/;
+const VirtualNodeArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualNode\/(?<virtualNodeName>[^:/?]+)$/;
+const VirtualRouterArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualRouter\/(?<virtualRouterName>[^:/?]+)$/;
+const VirtualServiceArnRegex =
+	/^arn:(?<partition>[^:]+):appmesh:(?<region>[^:]*):(?<account>[^:]*):mesh\/(?<meshName>[^:/?]+)\/virtualService\/(?<virtualServiceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appmesh resources.
@@ -185,20 +406,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the gatewayRoute resource.
 	 */
-	static gatewayRoute(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualGatewayName component of the ARN. */
-		readonly virtualGatewayName: string;
-		/** The GatewayRouteName component of the ARN. */
-		readonly gatewayRouteName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gatewayRoute(props: AppmeshGatewayRouteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualGateway/${props.virtualGatewayName}/gatewayRoute/${props.gatewayRouteName}`;
 	}
 
@@ -213,14 +421,7 @@ export class AppmeshResources {
 	 * Parses a gatewayRoute ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayRouteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualGatewayName: string;
-		gatewayRouteName: string;
-	} {
+	static parseGatewayRouteArn(arn: string): AppmeshGatewayRouteArnComponents {
 		const match = GatewayRouteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid gatewayRoute ARN: ${arn}`);
@@ -238,16 +439,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the mesh resource.
 	 */
-	static mesh(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mesh(props: AppmeshMeshArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}`;
 	}
 
@@ -262,12 +454,7 @@ export class AppmeshResources {
 	 * Parses a mesh ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMeshArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-	} {
+	static parseMeshArn(arn: string): AppmeshMeshArnComponents {
 		const match = MeshArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mesh ARN: ${arn}`);
@@ -283,20 +470,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the route resource.
 	 */
-	static route(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualRouterName component of the ARN. */
-		readonly virtualRouterName: string;
-		/** The RouteName component of the ARN. */
-		readonly routeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static route(props: AppmeshRouteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualRouter/${props.virtualRouterName}/route/${props.routeName}`;
 	}
 
@@ -311,14 +485,7 @@ export class AppmeshResources {
 	 * Parses a route ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualRouterName: string;
-		routeName: string;
-	} {
+	static parseRouteArn(arn: string): AppmeshRouteArnComponents {
 		const match = RouteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid route ARN: ${arn}`);
@@ -336,18 +503,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the virtualGateway resource.
 	 */
-	static virtualGateway(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualGatewayName component of the ARN. */
-		readonly virtualGatewayName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static virtualGateway(props: AppmeshVirtualGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualGateway/${props.virtualGatewayName}`;
 	}
 
@@ -362,13 +518,9 @@ export class AppmeshResources {
 	 * Parses a virtualGateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVirtualGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualGatewayName: string;
-	} {
+	static parseVirtualGatewayArn(
+		arn: string,
+	): AppmeshVirtualGatewayArnComponents {
 		const match = VirtualGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid virtualGateway ARN: ${arn}`);
@@ -385,18 +537,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the virtualNode resource.
 	 */
-	static virtualNode(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualNodeName component of the ARN. */
-		readonly virtualNodeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static virtualNode(props: AppmeshVirtualNodeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualNode/${props.virtualNodeName}`;
 	}
 
@@ -411,13 +552,7 @@ export class AppmeshResources {
 	 * Parses a virtualNode ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVirtualNodeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualNodeName: string;
-	} {
+	static parseVirtualNodeArn(arn: string): AppmeshVirtualNodeArnComponents {
 		const match = VirtualNodeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid virtualNode ARN: ${arn}`);
@@ -434,18 +569,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the virtualRouter resource.
 	 */
-	static virtualRouter(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualRouterName component of the ARN. */
-		readonly virtualRouterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static virtualRouter(props: AppmeshVirtualRouterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualRouter/${props.virtualRouterName}`;
 	}
 
@@ -460,13 +584,7 @@ export class AppmeshResources {
 	 * Parses a virtualRouter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVirtualRouterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualRouterName: string;
-	} {
+	static parseVirtualRouterArn(arn: string): AppmeshVirtualRouterArnComponents {
 		const match = VirtualRouterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid virtualRouter ARN: ${arn}`);
@@ -483,18 +601,7 @@ export class AppmeshResources {
 	/**
 	 * Builds an ARN for the virtualService resource.
 	 */
-	static virtualService(props: {
-		/** The MeshName component of the ARN. */
-		readonly meshName: string;
-		/** The VirtualServiceName component of the ARN. */
-		readonly virtualServiceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static virtualService(props: AppmeshVirtualServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appmesh:${props.region ?? "*"}:${props.account ?? "*"}:mesh/${props.meshName}/virtualService/${props.virtualServiceName}`;
 	}
 
@@ -509,13 +616,9 @@ export class AppmeshResources {
 	 * Parses a virtualService ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVirtualServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		meshName: string;
-		virtualServiceName: string;
-	} {
+	static parseVirtualServiceArn(
+		arn: string,
+	): AppmeshVirtualServiceArnComponents {
 		const match = VirtualServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid virtualService ARN: ${arn}`);
@@ -535,135 +638,129 @@ export class AppmeshResources {
  */
 export class AppmeshOperations {
 	/** IAM actions required for the CreateGatewayRoute API call. */
-	static readonly CREATE_GATEWAY_ROUTE: string[] = [
+	static readonly CreateGatewayRoute: string[] = [
 		"appmesh:CreateGatewayRoute",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateMesh API call. */
-	static readonly CREATE_MESH: string[] = [
+	static readonly CreateMesh: string[] = [
 		"appmesh:CreateMesh",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateRoute API call. */
-	static readonly CREATE_ROUTE: string[] = [
+	static readonly CreateRoute: string[] = [
 		"appmesh:CreateRoute",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateVirtualGateway API call. */
-	static readonly CREATE_VIRTUAL_GATEWAY: string[] = [
+	static readonly CreateVirtualGateway: string[] = [
 		"appmesh:CreateVirtualGateway",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateVirtualNode API call. */
-	static readonly CREATE_VIRTUAL_NODE: string[] = [
+	static readonly CreateVirtualNode: string[] = [
 		"appmesh:CreateVirtualNode",
 		"iam:PassRole",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateVirtualRouter API call. */
-	static readonly CREATE_VIRTUAL_ROUTER: string[] = [
+	static readonly CreateVirtualRouter: string[] = [
 		"appmesh:CreateVirtualRouter",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the CreateVirtualService API call. */
-	static readonly CREATE_VIRTUAL_SERVICE: string[] = [
+	static readonly CreateVirtualService: string[] = [
 		"appmesh:CreateVirtualService",
 		"appmesh:TagResource",
 	];
 	/** IAM actions required for the DeleteGatewayRoute API call. */
-	static readonly DELETE_GATEWAY_ROUTE: string[] = [
-		"appmesh:DeleteGatewayRoute",
-	];
+	static readonly DeleteGatewayRoute: string[] = ["appmesh:DeleteGatewayRoute"];
 	/** IAM actions required for the DeleteMesh API call. */
-	static readonly DELETE_MESH: string[] = ["appmesh:DeleteMesh"];
+	static readonly DeleteMesh: string[] = ["appmesh:DeleteMesh"];
 	/** IAM actions required for the DeleteRoute API call. */
-	static readonly DELETE_ROUTE: string[] = ["appmesh:DeleteRoute"];
+	static readonly DeleteRoute: string[] = ["appmesh:DeleteRoute"];
 	/** IAM actions required for the DeleteVirtualGateway API call. */
-	static readonly DELETE_VIRTUAL_GATEWAY: string[] = [
+	static readonly DeleteVirtualGateway: string[] = [
 		"appmesh:DeleteVirtualGateway",
 	];
 	/** IAM actions required for the DeleteVirtualNode API call. */
-	static readonly DELETE_VIRTUAL_NODE: string[] = ["appmesh:DeleteVirtualNode"];
+	static readonly DeleteVirtualNode: string[] = ["appmesh:DeleteVirtualNode"];
 	/** IAM actions required for the DeleteVirtualRouter API call. */
-	static readonly DELETE_VIRTUAL_ROUTER: string[] = [
+	static readonly DeleteVirtualRouter: string[] = [
 		"appmesh:DeleteVirtualRouter",
 	];
 	/** IAM actions required for the DeleteVirtualService API call. */
-	static readonly DELETE_VIRTUAL_SERVICE: string[] = [
+	static readonly DeleteVirtualService: string[] = [
 		"appmesh:DeleteVirtualService",
 	];
 	/** IAM actions required for the DescribeGatewayRoute API call. */
-	static readonly DESCRIBE_GATEWAY_ROUTE: string[] = [
+	static readonly DescribeGatewayRoute: string[] = [
 		"appmesh:DescribeGatewayRoute",
 	];
 	/** IAM actions required for the DescribeMesh API call. */
-	static readonly DESCRIBE_MESH: string[] = ["appmesh:DescribeMesh"];
+	static readonly DescribeMesh: string[] = ["appmesh:DescribeMesh"];
 	/** IAM actions required for the DescribeRoute API call. */
-	static readonly DESCRIBE_ROUTE: string[] = ["appmesh:DescribeRoute"];
+	static readonly DescribeRoute: string[] = ["appmesh:DescribeRoute"];
 	/** IAM actions required for the DescribeVirtualGateway API call. */
-	static readonly DESCRIBE_VIRTUAL_GATEWAY: string[] = [
+	static readonly DescribeVirtualGateway: string[] = [
 		"appmesh:DescribeVirtualGateway",
 	];
 	/** IAM actions required for the DescribeVirtualNode API call. */
-	static readonly DESCRIBE_VIRTUAL_NODE: string[] = [
+	static readonly DescribeVirtualNode: string[] = [
 		"appmesh:DescribeVirtualNode",
 	];
 	/** IAM actions required for the DescribeVirtualRouter API call. */
-	static readonly DESCRIBE_VIRTUAL_ROUTER: string[] = [
+	static readonly DescribeVirtualRouter: string[] = [
 		"appmesh:DescribeVirtualRouter",
 	];
 	/** IAM actions required for the DescribeVirtualService API call. */
-	static readonly DESCRIBE_VIRTUAL_SERVICE: string[] = [
+	static readonly DescribeVirtualService: string[] = [
 		"appmesh:DescribeVirtualService",
 	];
 	/** IAM actions required for the ListGatewayRoutes API call. */
-	static readonly LIST_GATEWAY_ROUTES: string[] = ["appmesh:ListGatewayRoutes"];
+	static readonly ListGatewayRoutes: string[] = ["appmesh:ListGatewayRoutes"];
 	/** IAM actions required for the ListMeshes API call. */
-	static readonly LIST_MESHES: string[] = ["appmesh:ListMeshes"];
+	static readonly ListMeshes: string[] = ["appmesh:ListMeshes"];
 	/** IAM actions required for the ListRoutes API call. */
-	static readonly LIST_ROUTES: string[] = ["appmesh:ListRoutes"];
+	static readonly ListRoutes: string[] = ["appmesh:ListRoutes"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"appmesh:ListTagsForResource",
 	];
 	/** IAM actions required for the ListVirtualGateways API call. */
-	static readonly LIST_VIRTUAL_GATEWAYS: string[] = [
+	static readonly ListVirtualGateways: string[] = [
 		"appmesh:ListVirtualGateways",
 	];
 	/** IAM actions required for the ListVirtualNodes API call. */
-	static readonly LIST_VIRTUAL_NODES: string[] = ["appmesh:ListVirtualNodes"];
+	static readonly ListVirtualNodes: string[] = ["appmesh:ListVirtualNodes"];
 	/** IAM actions required for the ListVirtualRouters API call. */
-	static readonly LIST_VIRTUAL_ROUTERS: string[] = [
-		"appmesh:ListVirtualRouters",
-	];
+	static readonly ListVirtualRouters: string[] = ["appmesh:ListVirtualRouters"];
 	/** IAM actions required for the ListVirtualServices API call. */
-	static readonly LIST_VIRTUAL_SERVICES: string[] = [
+	static readonly ListVirtualServices: string[] = [
 		"appmesh:ListVirtualServices",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["appmesh:TagResource"];
+	static readonly TagResource: string[] = ["appmesh:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["appmesh:UntagResource"];
+	static readonly UntagResource: string[] = ["appmesh:UntagResource"];
 	/** IAM actions required for the UpdateGatewayRoute API call. */
-	static readonly UPDATE_GATEWAY_ROUTE: string[] = [
-		"appmesh:UpdateGatewayRoute",
-	];
+	static readonly UpdateGatewayRoute: string[] = ["appmesh:UpdateGatewayRoute"];
 	/** IAM actions required for the UpdateMesh API call. */
-	static readonly UPDATE_MESH: string[] = ["appmesh:UpdateMesh"];
+	static readonly UpdateMesh: string[] = ["appmesh:UpdateMesh"];
 	/** IAM actions required for the UpdateRoute API call. */
-	static readonly UPDATE_ROUTE: string[] = ["appmesh:UpdateRoute"];
+	static readonly UpdateRoute: string[] = ["appmesh:UpdateRoute"];
 	/** IAM actions required for the UpdateVirtualGateway API call. */
-	static readonly UPDATE_VIRTUAL_GATEWAY: string[] = [
+	static readonly UpdateVirtualGateway: string[] = [
 		"appmesh:UpdateVirtualGateway",
 	];
 	/** IAM actions required for the UpdateVirtualNode API call. */
-	static readonly UPDATE_VIRTUAL_NODE: string[] = ["appmesh:UpdateVirtualNode"];
+	static readonly UpdateVirtualNode: string[] = ["appmesh:UpdateVirtualNode"];
 	/** IAM actions required for the UpdateVirtualRouter API call. */
-	static readonly UPDATE_VIRTUAL_ROUTER: string[] = [
+	static readonly UpdateVirtualRouter: string[] = [
 		"appmesh:UpdateVirtualRouter",
 	];
 	/** IAM actions required for the UpdateVirtualService API call. */
-	static readonly UPDATE_VIRTUAL_SERVICE: string[] = [
+	static readonly UpdateVirtualService: string[] = [
 		"appmesh:UpdateVirtualService",
 	];
 }
@@ -673,34 +770,34 @@ export class AppmeshOperations {
  */
 export class AppmeshConditions {
 	/** Condition keys applicable to the CreateMesh action. */
-	static readonly CREATE_MESH_CONDITION_KEYS: string[] = [
+	static readonly CreateMeshConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVirtualGateway action. */
-	static readonly CREATE_VIRTUAL_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly CreateVirtualGatewayConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVirtualRouter action. */
-	static readonly CREATE_VIRTUAL_ROUTER_CONDITION_KEYS: string[] = [
+	static readonly CreateVirtualRouterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

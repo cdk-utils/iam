@@ -13,75 +13,78 @@ export class UserSubscriptionsActions {
 	static readonly SERVICE_PREFIX = "user-subscriptions";
 
 	/** [Write] user-subscriptions:CreateClaim */
-	static readonly CREATE_CLAIM = "user-subscriptions:CreateClaim";
+	static readonly CreateClaim = "user-subscriptions:CreateClaim";
 	/** [Write] user-subscriptions:CreateClaimAddOn */
-	static readonly CREATE_CLAIM_ADD_ON = "user-subscriptions:CreateClaimAddOn";
+	static readonly CreateClaimAddOn = "user-subscriptions:CreateClaimAddOn";
 	/** [Write] user-subscriptions:DeleteAutoTopUpRule */
-	static readonly DELETE_AUTO_TOP_UP_RULE =
+	static readonly DeleteAutoTopUpRule =
 		"user-subscriptions:DeleteAutoTopUpRule";
 	/** [Write] user-subscriptions:DeleteClaim */
-	static readonly DELETE_CLAIM = "user-subscriptions:DeleteClaim";
+	static readonly DeleteClaim = "user-subscriptions:DeleteClaim";
 	/** [Read] user-subscriptions:GetAutoTopUpRule */
-	static readonly GET_AUTO_TOP_UP_RULE = "user-subscriptions:GetAutoTopUpRule";
+	static readonly actionGetAutoTopUpRule =
+		"user-subscriptions:GetAutoTopUpRule";
 	/** [Read] user-subscriptions:GetEffectiveUsageLimit */
-	static readonly GET_EFFECTIVE_USAGE_LIMIT =
+	static readonly actionGetEffectiveUsageLimit =
 		"user-subscriptions:GetEffectiveUsageLimit";
 	/** [Read] user-subscriptions:GetUsageLimitHistory */
-	static readonly GET_USAGE_LIMIT_HISTORY =
+	static readonly actionGetUsageLimitHistory =
 		"user-subscriptions:GetUsageLimitHistory";
 	/** [List] user-subscriptions:ListApplicationClaims */
-	static readonly LIST_APPLICATION_CLAIMS =
+	static readonly ListApplicationClaims =
 		"user-subscriptions:ListApplicationClaims";
 	/** [List] user-subscriptions:ListClaimAddOns */
-	static readonly LIST_CLAIM_ADD_ONS = "user-subscriptions:ListClaimAddOns";
+	static readonly ListClaimAddOns = "user-subscriptions:ListClaimAddOns";
 	/** [List] user-subscriptions:ListClaims */
-	static readonly LIST_CLAIMS = "user-subscriptions:ListClaims";
+	static readonly ListClaims = "user-subscriptions:ListClaims";
 	/** [List] user-subscriptions:ListEntitlements */
-	static readonly LIST_ENTITLEMENTS = "user-subscriptions:ListEntitlements";
+	static readonly ListEntitlements = "user-subscriptions:ListEntitlements";
 	/** [List] user-subscriptions:ListUsageLimits */
-	static readonly LIST_USAGE_LIMITS = "user-subscriptions:ListUsageLimits";
+	static readonly ListUsageLimits = "user-subscriptions:ListUsageLimits";
 	/** [List] user-subscriptions:ListUserSubscriptions */
-	static readonly LIST_USER_SUBSCRIPTIONS =
+	static readonly ListUserSubscriptions =
 		"user-subscriptions:ListUserSubscriptions";
 	/** [Write] user-subscriptions:SetAutoTopUpRule */
-	static readonly SET_AUTO_TOP_UP_RULE = "user-subscriptions:SetAutoTopUpRule";
+	static readonly actionSetAutoTopUpRule =
+		"user-subscriptions:SetAutoTopUpRule";
 	/** [Write] user-subscriptions:SetOverageConfig */
-	static readonly SET_OVERAGE_CONFIG = "user-subscriptions:SetOverageConfig";
+	static readonly actionSetOverageConfig =
+		"user-subscriptions:SetOverageConfig";
 	/** [Write] user-subscriptions:SetUsageLimit */
-	static readonly SET_USAGE_LIMIT = "user-subscriptions:SetUsageLimit";
+	static readonly actionSetUsageLimit = "user-subscriptions:SetUsageLimit";
 	/** [Write] user-subscriptions:UpdateClaim */
-	static readonly UPDATE_CLAIM = "user-subscriptions:UpdateClaim";
+	static readonly UpdateClaim = "user-subscriptions:UpdateClaim";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		UserSubscriptionsActions.GET_AUTO_TOP_UP_RULE,
-		UserSubscriptionsActions.GET_EFFECTIVE_USAGE_LIMIT,
-		UserSubscriptionsActions.GET_USAGE_LIMIT_HISTORY,
+	static readonly AllReadActions: string[] = [
+		UserSubscriptionsActions.actionGetAutoTopUpRule,
+		UserSubscriptionsActions.actionGetEffectiveUsageLimit,
+		UserSubscriptionsActions.actionGetUsageLimitHistory,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		UserSubscriptionsActions.CREATE_CLAIM,
-		UserSubscriptionsActions.CREATE_CLAIM_ADD_ON,
-		UserSubscriptionsActions.DELETE_AUTO_TOP_UP_RULE,
-		UserSubscriptionsActions.DELETE_CLAIM,
-		UserSubscriptionsActions.SET_AUTO_TOP_UP_RULE,
-		UserSubscriptionsActions.SET_OVERAGE_CONFIG,
-		UserSubscriptionsActions.SET_USAGE_LIMIT,
-		UserSubscriptionsActions.UPDATE_CLAIM,
+	static readonly AllWriteActions: string[] = [
+		UserSubscriptionsActions.CreateClaim,
+		UserSubscriptionsActions.CreateClaimAddOn,
+		UserSubscriptionsActions.DeleteAutoTopUpRule,
+		UserSubscriptionsActions.DeleteClaim,
+		UserSubscriptionsActions.actionSetAutoTopUpRule,
+		UserSubscriptionsActions.actionSetOverageConfig,
+		UserSubscriptionsActions.actionSetUsageLimit,
+		UserSubscriptionsActions.UpdateClaim,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		UserSubscriptionsActions.LIST_APPLICATION_CLAIMS,
-		UserSubscriptionsActions.LIST_CLAIM_ADD_ONS,
-		UserSubscriptionsActions.LIST_CLAIMS,
-		UserSubscriptionsActions.LIST_ENTITLEMENTS,
-		UserSubscriptionsActions.LIST_USAGE_LIMITS,
-		UserSubscriptionsActions.LIST_USER_SUBSCRIPTIONS,
+	static readonly AllListActions: string[] = [
+		UserSubscriptionsActions.ListApplicationClaims,
+		UserSubscriptionsActions.ListClaimAddOns,
+		UserSubscriptionsActions.ListClaims,
+		UserSubscriptionsActions.ListEntitlements,
+		UserSubscriptionsActions.ListUsageLimits,
+		UserSubscriptionsActions.ListUserSubscriptions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -89,7 +92,7 @@ export class UserSubscriptionsActions {
  */
 export class UserSubscriptionsConditions {
 	/** Condition keys applicable to the CreateClaim action. */
-	static readonly CREATE_CLAIM_CONDITION_KEYS: string[] = [
+	static readonly CreateClaimConditionKeys: string[] = [
 		"user-subscriptions:CreateForSelf",
 	];
 

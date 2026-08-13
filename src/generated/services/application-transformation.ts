@@ -13,69 +13,70 @@ export class ApplicationTransformationActions {
 	static readonly SERVICE_PREFIX = "application-transformation";
 
 	/** [Read] application-transformation:GetContainerization */
-	static readonly GET_CONTAINERIZATION =
+	static readonly actionGetContainerization =
 		"application-transformation:GetContainerization";
 	/** [Read] application-transformation:GetDeployment */
-	static readonly GET_DEPLOYMENT = "application-transformation:GetDeployment";
+	static readonly actionGetDeployment =
+		"application-transformation:GetDeployment";
 	/** [Read] application-transformation:GetGroupingAssessment */
-	static readonly GET_GROUPING_ASSESSMENT =
+	static readonly actionGetGroupingAssessment =
 		"application-transformation:GetGroupingAssessment";
 	/** [Read] application-transformation:GetPortingCompatibilityAssessment */
-	static readonly GET_PORTING_COMPATIBILITY_ASSESSMENT =
+	static readonly actionGetPortingCompatibilityAssessment =
 		"application-transformation:GetPortingCompatibilityAssessment";
 	/** [Read] application-transformation:GetPortingRecommendationAssessment */
-	static readonly GET_PORTING_RECOMMENDATION_ASSESSMENT =
+	static readonly actionGetPortingRecommendationAssessment =
 		"application-transformation:GetPortingRecommendationAssessment";
 	/** [Read] application-transformation:GetRuntimeAssessment */
-	static readonly GET_RUNTIME_ASSESSMENT =
+	static readonly actionGetRuntimeAssessment =
 		"application-transformation:GetRuntimeAssessment";
 	/** [Write] application-transformation:PutLogData */
-	static readonly PUT_LOG_DATA = "application-transformation:PutLogData";
+	static readonly PutLogData = "application-transformation:PutLogData";
 	/** [Write] application-transformation:PutMetricData */
-	static readonly PUT_METRIC_DATA = "application-transformation:PutMetricData";
+	static readonly PutMetricData = "application-transformation:PutMetricData";
 	/** [Write] application-transformation:StartContainerization */
-	static readonly START_CONTAINERIZATION =
+	static readonly StartContainerization =
 		"application-transformation:StartContainerization";
 	/** [Write] application-transformation:StartDeployment */
-	static readonly START_DEPLOYMENT =
+	static readonly StartDeployment =
 		"application-transformation:StartDeployment";
 	/** [Write] application-transformation:StartGroupingAssessment */
-	static readonly START_GROUPING_ASSESSMENT =
+	static readonly StartGroupingAssessment =
 		"application-transformation:StartGroupingAssessment";
 	/** [Write] application-transformation:StartPortingCompatibilityAssessment */
-	static readonly START_PORTING_COMPATIBILITY_ASSESSMENT =
+	static readonly StartPortingCompatibilityAssessment =
 		"application-transformation:StartPortingCompatibilityAssessment";
 	/** [Write] application-transformation:StartPortingRecommendationAssessment */
-	static readonly START_PORTING_RECOMMENDATION_ASSESSMENT =
+	static readonly StartPortingRecommendationAssessment =
 		"application-transformation:StartPortingRecommendationAssessment";
 	/** [Write] application-transformation:StartRuntimeAssessment */
-	static readonly START_RUNTIME_ASSESSMENT =
+	static readonly StartRuntimeAssessment =
 		"application-transformation:StartRuntimeAssessment";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApplicationTransformationActions.GET_CONTAINERIZATION,
-		ApplicationTransformationActions.GET_DEPLOYMENT,
-		ApplicationTransformationActions.GET_GROUPING_ASSESSMENT,
-		ApplicationTransformationActions.GET_PORTING_COMPATIBILITY_ASSESSMENT,
-		ApplicationTransformationActions.GET_PORTING_RECOMMENDATION_ASSESSMENT,
-		ApplicationTransformationActions.GET_RUNTIME_ASSESSMENT,
+	static readonly AllReadActions: string[] = [
+		ApplicationTransformationActions.actionGetContainerization,
+		ApplicationTransformationActions.actionGetDeployment,
+		ApplicationTransformationActions.actionGetGroupingAssessment,
+		ApplicationTransformationActions.actionGetPortingCompatibilityAssessment,
+		ApplicationTransformationActions.actionGetPortingRecommendationAssessment,
+		ApplicationTransformationActions.actionGetRuntimeAssessment,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApplicationTransformationActions.PUT_LOG_DATA,
-		ApplicationTransformationActions.PUT_METRIC_DATA,
-		ApplicationTransformationActions.START_CONTAINERIZATION,
-		ApplicationTransformationActions.START_DEPLOYMENT,
-		ApplicationTransformationActions.START_GROUPING_ASSESSMENT,
-		ApplicationTransformationActions.START_PORTING_COMPATIBILITY_ASSESSMENT,
-		ApplicationTransformationActions.START_PORTING_RECOMMENDATION_ASSESSMENT,
-		ApplicationTransformationActions.START_RUNTIME_ASSESSMENT,
+	static readonly AllWriteActions: string[] = [
+		ApplicationTransformationActions.PutLogData,
+		ApplicationTransformationActions.PutMetricData,
+		ApplicationTransformationActions.StartContainerization,
+		ApplicationTransformationActions.StartDeployment,
+		ApplicationTransformationActions.StartGroupingAssessment,
+		ApplicationTransformationActions.StartPortingCompatibilityAssessment,
+		ApplicationTransformationActions.StartPortingRecommendationAssessment,
+		ApplicationTransformationActions.StartRuntimeAssessment,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

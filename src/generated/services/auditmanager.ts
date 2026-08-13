@@ -13,257 +13,368 @@ export class AuditmanagerActions {
 	static readonly SERVICE_PREFIX = "auditmanager";
 
 	/** [Write] auditmanager:AssociateAssessmentReportEvidenceFolder */
-	static readonly ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER =
+	static readonly AssociateAssessmentReportEvidenceFolder =
 		"auditmanager:AssociateAssessmentReportEvidenceFolder";
 	/** [Write] auditmanager:BatchAssociateAssessmentReportEvidence */
-	static readonly BATCH_ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE =
+	static readonly BatchAssociateAssessmentReportEvidence =
 		"auditmanager:BatchAssociateAssessmentReportEvidence";
 	/** [Write] auditmanager:BatchCreateDelegationByAssessment */
-	static readonly BATCH_CREATE_DELEGATION_BY_ASSESSMENT =
+	static readonly BatchCreateDelegationByAssessment =
 		"auditmanager:BatchCreateDelegationByAssessment";
 	/** [Write] auditmanager:BatchDeleteDelegationByAssessment */
-	static readonly BATCH_DELETE_DELEGATION_BY_ASSESSMENT =
+	static readonly BatchDeleteDelegationByAssessment =
 		"auditmanager:BatchDeleteDelegationByAssessment";
 	/** [Write] auditmanager:BatchDisassociateAssessmentReportEvidence */
-	static readonly BATCH_DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE =
+	static readonly BatchDisassociateAssessmentReportEvidence =
 		"auditmanager:BatchDisassociateAssessmentReportEvidence";
 	/** [Write] auditmanager:BatchImportEvidenceToAssessmentControl */
-	static readonly BATCH_IMPORT_EVIDENCE_TO_ASSESSMENT_CONTROL =
+	static readonly BatchImportEvidenceToAssessmentControl =
 		"auditmanager:BatchImportEvidenceToAssessmentControl";
 	/** [Write] auditmanager:CreateAssessment */
-	static readonly CREATE_ASSESSMENT = "auditmanager:CreateAssessment";
+	static readonly CreateAssessment = "auditmanager:CreateAssessment";
 	/** [Write] auditmanager:CreateAssessmentFramework */
-	static readonly CREATE_ASSESSMENT_FRAMEWORK =
+	static readonly CreateAssessmentFramework =
 		"auditmanager:CreateAssessmentFramework";
 	/** [Write] auditmanager:CreateAssessmentReport */
-	static readonly CREATE_ASSESSMENT_REPORT =
+	static readonly CreateAssessmentReport =
 		"auditmanager:CreateAssessmentReport";
 	/** [Write] auditmanager:CreateControl */
-	static readonly CREATE_CONTROL = "auditmanager:CreateControl";
+	static readonly CreateControl = "auditmanager:CreateControl";
 	/** [Write] auditmanager:DeleteAssessment */
-	static readonly DELETE_ASSESSMENT = "auditmanager:DeleteAssessment";
+	static readonly DeleteAssessment = "auditmanager:DeleteAssessment";
 	/** [Write] auditmanager:DeleteAssessmentFramework */
-	static readonly DELETE_ASSESSMENT_FRAMEWORK =
+	static readonly DeleteAssessmentFramework =
 		"auditmanager:DeleteAssessmentFramework";
 	/** [Write] auditmanager:DeleteAssessmentFrameworkShare */
-	static readonly DELETE_ASSESSMENT_FRAMEWORK_SHARE =
+	static readonly DeleteAssessmentFrameworkShare =
 		"auditmanager:DeleteAssessmentFrameworkShare";
 	/** [Write] auditmanager:DeleteAssessmentReport */
-	static readonly DELETE_ASSESSMENT_REPORT =
+	static readonly DeleteAssessmentReport =
 		"auditmanager:DeleteAssessmentReport";
 	/** [Write] auditmanager:DeleteControl */
-	static readonly DELETE_CONTROL = "auditmanager:DeleteControl";
+	static readonly DeleteControl = "auditmanager:DeleteControl";
 	/** [Write] auditmanager:DeregisterAccount */
-	static readonly DEREGISTER_ACCOUNT = "auditmanager:DeregisterAccount";
+	static readonly DeregisterAccount = "auditmanager:DeregisterAccount";
 	/** [Write] auditmanager:DeregisterOrganizationAdminAccount */
-	static readonly DEREGISTER_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly DeregisterOrganizationAdminAccount =
 		"auditmanager:DeregisterOrganizationAdminAccount";
 	/** [Write] auditmanager:DisassociateAssessmentReportEvidenceFolder */
-	static readonly DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER =
+	static readonly DisassociateAssessmentReportEvidenceFolder =
 		"auditmanager:DisassociateAssessmentReportEvidenceFolder";
 	/** [Read] auditmanager:GetAccountStatus */
-	static readonly GET_ACCOUNT_STATUS = "auditmanager:GetAccountStatus";
+	static readonly actionGetAccountStatus = "auditmanager:GetAccountStatus";
 	/** [Read] auditmanager:GetAssessment */
-	static readonly GET_ASSESSMENT = "auditmanager:GetAssessment";
+	static readonly actionGetAssessment = "auditmanager:GetAssessment";
 	/** [Read] auditmanager:GetAssessmentFramework */
-	static readonly GET_ASSESSMENT_FRAMEWORK =
+	static readonly actionGetAssessmentFramework =
 		"auditmanager:GetAssessmentFramework";
 	/** [Read] auditmanager:GetAssessmentReportUrl */
-	static readonly GET_ASSESSMENT_REPORT_URL =
+	static readonly actionGetAssessmentReportUrl =
 		"auditmanager:GetAssessmentReportUrl";
 	/** [Read] auditmanager:GetChangeLogs */
-	static readonly GET_CHANGE_LOGS = "auditmanager:GetChangeLogs";
+	static readonly actionGetChangeLogs = "auditmanager:GetChangeLogs";
 	/** [Read] auditmanager:GetControl */
-	static readonly GET_CONTROL = "auditmanager:GetControl";
+	static readonly actionGetControl = "auditmanager:GetControl";
 	/** [List] auditmanager:GetDelegations */
-	static readonly GET_DELEGATIONS = "auditmanager:GetDelegations";
+	static readonly actionGetDelegations = "auditmanager:GetDelegations";
 	/** [Read] auditmanager:GetEvidence */
-	static readonly GET_EVIDENCE = "auditmanager:GetEvidence";
+	static readonly actionGetEvidence = "auditmanager:GetEvidence";
 	/** [Read] auditmanager:GetEvidenceByEvidenceFolder */
-	static readonly GET_EVIDENCE_BY_EVIDENCE_FOLDER =
+	static readonly actionGetEvidenceByEvidenceFolder =
 		"auditmanager:GetEvidenceByEvidenceFolder";
 	/** [Read] auditmanager:GetEvidenceFileUploadUrl */
-	static readonly GET_EVIDENCE_FILE_UPLOAD_URL =
+	static readonly actionGetEvidenceFileUploadUrl =
 		"auditmanager:GetEvidenceFileUploadUrl";
 	/** [Read] auditmanager:GetEvidenceFolder */
-	static readonly GET_EVIDENCE_FOLDER = "auditmanager:GetEvidenceFolder";
+	static readonly actionGetEvidenceFolder = "auditmanager:GetEvidenceFolder";
 	/** [Read] auditmanager:GetEvidenceFoldersByAssessment */
-	static readonly GET_EVIDENCE_FOLDERS_BY_ASSESSMENT =
+	static readonly actionGetEvidenceFoldersByAssessment =
 		"auditmanager:GetEvidenceFoldersByAssessment";
 	/** [Read] auditmanager:GetEvidenceFoldersByAssessmentControl */
-	static readonly GET_EVIDENCE_FOLDERS_BY_ASSESSMENT_CONTROL =
+	static readonly actionGetEvidenceFoldersByAssessmentControl =
 		"auditmanager:GetEvidenceFoldersByAssessmentControl";
 	/** [Read] auditmanager:GetInsights */
-	static readonly GET_INSIGHTS = "auditmanager:GetInsights";
+	static readonly actionGetInsights = "auditmanager:GetInsights";
 	/** [Read] auditmanager:GetInsightsByAssessment */
-	static readonly GET_INSIGHTS_BY_ASSESSMENT =
+	static readonly actionGetInsightsByAssessment =
 		"auditmanager:GetInsightsByAssessment";
 	/** [Read] auditmanager:GetOrganizationAdminAccount */
-	static readonly GET_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly actionGetOrganizationAdminAccount =
 		"auditmanager:GetOrganizationAdminAccount";
 	/** [Read] auditmanager:GetServicesInScope */
-	static readonly GET_SERVICES_IN_SCOPE = "auditmanager:GetServicesInScope";
+	static readonly actionGetServicesInScope = "auditmanager:GetServicesInScope";
 	/** [Read] auditmanager:GetSettings */
-	static readonly GET_SETTINGS = "auditmanager:GetSettings";
+	static readonly actionGetSettings = "auditmanager:GetSettings";
 	/** [List] auditmanager:ListAssessmentControlInsightsByControlDomain */
-	static readonly LIST_ASSESSMENT_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN =
+	static readonly ListAssessmentControlInsightsByControlDomain =
 		"auditmanager:ListAssessmentControlInsightsByControlDomain";
 	/** [List] auditmanager:ListAssessmentFrameworkShareRequests */
-	static readonly LIST_ASSESSMENT_FRAMEWORK_SHARE_REQUESTS =
+	static readonly ListAssessmentFrameworkShareRequests =
 		"auditmanager:ListAssessmentFrameworkShareRequests";
 	/** [List] auditmanager:ListAssessmentFrameworks */
-	static readonly LIST_ASSESSMENT_FRAMEWORKS =
+	static readonly ListAssessmentFrameworks =
 		"auditmanager:ListAssessmentFrameworks";
 	/** [List] auditmanager:ListAssessmentReports */
-	static readonly LIST_ASSESSMENT_REPORTS =
-		"auditmanager:ListAssessmentReports";
+	static readonly ListAssessmentReports = "auditmanager:ListAssessmentReports";
 	/** [List] auditmanager:ListAssessments */
-	static readonly LIST_ASSESSMENTS = "auditmanager:ListAssessments";
+	static readonly ListAssessments = "auditmanager:ListAssessments";
 	/** [List] auditmanager:ListControlDomainInsights */
-	static readonly LIST_CONTROL_DOMAIN_INSIGHTS =
+	static readonly ListControlDomainInsights =
 		"auditmanager:ListControlDomainInsights";
 	/** [List] auditmanager:ListControlDomainInsightsByAssessment */
-	static readonly LIST_CONTROL_DOMAIN_INSIGHTS_BY_ASSESSMENT =
+	static readonly ListControlDomainInsightsByAssessment =
 		"auditmanager:ListControlDomainInsightsByAssessment";
 	/** [List] auditmanager:ListControlInsightsByControlDomain */
-	static readonly LIST_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN =
+	static readonly ListControlInsightsByControlDomain =
 		"auditmanager:ListControlInsightsByControlDomain";
 	/** [List] auditmanager:ListControls */
-	static readonly LIST_CONTROLS = "auditmanager:ListControls";
+	static readonly ListControls = "auditmanager:ListControls";
 	/** [List] auditmanager:ListKeywordsForDataSource */
-	static readonly LIST_KEYWORDS_FOR_DATA_SOURCE =
+	static readonly ListKeywordsForDataSource =
 		"auditmanager:ListKeywordsForDataSource";
 	/** [List] auditmanager:ListNotifications */
-	static readonly LIST_NOTIFICATIONS = "auditmanager:ListNotifications";
+	static readonly ListNotifications = "auditmanager:ListNotifications";
 	/** [Read] auditmanager:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "auditmanager:ListTagsForResource";
+	static readonly ListTagsForResource = "auditmanager:ListTagsForResource";
 	/** [Write] auditmanager:RegisterAccount */
-	static readonly REGISTER_ACCOUNT = "auditmanager:RegisterAccount";
+	static readonly RegisterAccount = "auditmanager:RegisterAccount";
 	/** [Write] auditmanager:RegisterOrganizationAdminAccount */
-	static readonly REGISTER_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly RegisterOrganizationAdminAccount =
 		"auditmanager:RegisterOrganizationAdminAccount";
 	/** [Write] auditmanager:StartAssessmentFrameworkShare */
-	static readonly START_ASSESSMENT_FRAMEWORK_SHARE =
+	static readonly StartAssessmentFrameworkShare =
 		"auditmanager:StartAssessmentFrameworkShare";
 	/** [Tagging] auditmanager:TagResource */
-	static readonly TAG_RESOURCE = "auditmanager:TagResource";
+	static readonly TagResource = "auditmanager:TagResource";
 	/** [Tagging] auditmanager:UntagResource */
-	static readonly UNTAG_RESOURCE = "auditmanager:UntagResource";
+	static readonly UntagResource = "auditmanager:UntagResource";
 	/** [Write] auditmanager:UpdateAssessment */
-	static readonly UPDATE_ASSESSMENT = "auditmanager:UpdateAssessment";
+	static readonly UpdateAssessment = "auditmanager:UpdateAssessment";
 	/** [Write] auditmanager:UpdateAssessmentControl */
-	static readonly UPDATE_ASSESSMENT_CONTROL =
+	static readonly UpdateAssessmentControl =
 		"auditmanager:UpdateAssessmentControl";
 	/** [Write] auditmanager:UpdateAssessmentControlSetStatus */
-	static readonly UPDATE_ASSESSMENT_CONTROL_SET_STATUS =
+	static readonly UpdateAssessmentControlSetStatus =
 		"auditmanager:UpdateAssessmentControlSetStatus";
 	/** [Write] auditmanager:UpdateAssessmentFramework */
-	static readonly UPDATE_ASSESSMENT_FRAMEWORK =
+	static readonly UpdateAssessmentFramework =
 		"auditmanager:UpdateAssessmentFramework";
 	/** [Write] auditmanager:UpdateAssessmentFrameworkShare */
-	static readonly UPDATE_ASSESSMENT_FRAMEWORK_SHARE =
+	static readonly UpdateAssessmentFrameworkShare =
 		"auditmanager:UpdateAssessmentFrameworkShare";
 	/** [Write] auditmanager:UpdateAssessmentStatus */
-	static readonly UPDATE_ASSESSMENT_STATUS =
+	static readonly UpdateAssessmentStatus =
 		"auditmanager:UpdateAssessmentStatus";
 	/** [Write] auditmanager:UpdateControl */
-	static readonly UPDATE_CONTROL = "auditmanager:UpdateControl";
+	static readonly UpdateControl = "auditmanager:UpdateControl";
 	/** [Write] auditmanager:UpdateSettings */
-	static readonly UPDATE_SETTINGS = "auditmanager:UpdateSettings";
+	static readonly UpdateSettings = "auditmanager:UpdateSettings";
 	/** [Read] auditmanager:ValidateAssessmentReportIntegrity */
-	static readonly VALIDATE_ASSESSMENT_REPORT_INTEGRITY =
+	static readonly ValidateAssessmentReportIntegrity =
 		"auditmanager:ValidateAssessmentReportIntegrity";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AuditmanagerActions.GET_ACCOUNT_STATUS,
-		AuditmanagerActions.GET_ASSESSMENT,
-		AuditmanagerActions.GET_ASSESSMENT_FRAMEWORK,
-		AuditmanagerActions.GET_ASSESSMENT_REPORT_URL,
-		AuditmanagerActions.GET_CHANGE_LOGS,
-		AuditmanagerActions.GET_CONTROL,
-		AuditmanagerActions.GET_EVIDENCE,
-		AuditmanagerActions.GET_EVIDENCE_BY_EVIDENCE_FOLDER,
-		AuditmanagerActions.GET_EVIDENCE_FILE_UPLOAD_URL,
-		AuditmanagerActions.GET_EVIDENCE_FOLDER,
-		AuditmanagerActions.GET_EVIDENCE_FOLDERS_BY_ASSESSMENT,
-		AuditmanagerActions.GET_EVIDENCE_FOLDERS_BY_ASSESSMENT_CONTROL,
-		AuditmanagerActions.GET_INSIGHTS,
-		AuditmanagerActions.GET_INSIGHTS_BY_ASSESSMENT,
-		AuditmanagerActions.GET_ORGANIZATION_ADMIN_ACCOUNT,
-		AuditmanagerActions.GET_SERVICES_IN_SCOPE,
-		AuditmanagerActions.GET_SETTINGS,
-		AuditmanagerActions.LIST_TAGS_FOR_RESOURCE,
-		AuditmanagerActions.VALIDATE_ASSESSMENT_REPORT_INTEGRITY,
+	static readonly AllReadActions: string[] = [
+		AuditmanagerActions.actionGetAccountStatus,
+		AuditmanagerActions.actionGetAssessment,
+		AuditmanagerActions.actionGetAssessmentFramework,
+		AuditmanagerActions.actionGetAssessmentReportUrl,
+		AuditmanagerActions.actionGetChangeLogs,
+		AuditmanagerActions.actionGetControl,
+		AuditmanagerActions.actionGetEvidence,
+		AuditmanagerActions.actionGetEvidenceByEvidenceFolder,
+		AuditmanagerActions.actionGetEvidenceFileUploadUrl,
+		AuditmanagerActions.actionGetEvidenceFolder,
+		AuditmanagerActions.actionGetEvidenceFoldersByAssessment,
+		AuditmanagerActions.actionGetEvidenceFoldersByAssessmentControl,
+		AuditmanagerActions.actionGetInsights,
+		AuditmanagerActions.actionGetInsightsByAssessment,
+		AuditmanagerActions.actionGetOrganizationAdminAccount,
+		AuditmanagerActions.actionGetServicesInScope,
+		AuditmanagerActions.actionGetSettings,
+		AuditmanagerActions.ListTagsForResource,
+		AuditmanagerActions.ValidateAssessmentReportIntegrity,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AuditmanagerActions.ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER,
-		AuditmanagerActions.BATCH_ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE,
-		AuditmanagerActions.BATCH_CREATE_DELEGATION_BY_ASSESSMENT,
-		AuditmanagerActions.BATCH_DELETE_DELEGATION_BY_ASSESSMENT,
-		AuditmanagerActions.BATCH_DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE,
-		AuditmanagerActions.BATCH_IMPORT_EVIDENCE_TO_ASSESSMENT_CONTROL,
-		AuditmanagerActions.CREATE_ASSESSMENT,
-		AuditmanagerActions.CREATE_ASSESSMENT_FRAMEWORK,
-		AuditmanagerActions.CREATE_ASSESSMENT_REPORT,
-		AuditmanagerActions.CREATE_CONTROL,
-		AuditmanagerActions.DELETE_ASSESSMENT,
-		AuditmanagerActions.DELETE_ASSESSMENT_FRAMEWORK,
-		AuditmanagerActions.DELETE_ASSESSMENT_FRAMEWORK_SHARE,
-		AuditmanagerActions.DELETE_ASSESSMENT_REPORT,
-		AuditmanagerActions.DELETE_CONTROL,
-		AuditmanagerActions.DEREGISTER_ACCOUNT,
-		AuditmanagerActions.DEREGISTER_ORGANIZATION_ADMIN_ACCOUNT,
-		AuditmanagerActions.DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER,
-		AuditmanagerActions.REGISTER_ACCOUNT,
-		AuditmanagerActions.REGISTER_ORGANIZATION_ADMIN_ACCOUNT,
-		AuditmanagerActions.START_ASSESSMENT_FRAMEWORK_SHARE,
-		AuditmanagerActions.UPDATE_ASSESSMENT,
-		AuditmanagerActions.UPDATE_ASSESSMENT_CONTROL,
-		AuditmanagerActions.UPDATE_ASSESSMENT_CONTROL_SET_STATUS,
-		AuditmanagerActions.UPDATE_ASSESSMENT_FRAMEWORK,
-		AuditmanagerActions.UPDATE_ASSESSMENT_FRAMEWORK_SHARE,
-		AuditmanagerActions.UPDATE_ASSESSMENT_STATUS,
-		AuditmanagerActions.UPDATE_CONTROL,
-		AuditmanagerActions.UPDATE_SETTINGS,
+	static readonly AllWriteActions: string[] = [
+		AuditmanagerActions.AssociateAssessmentReportEvidenceFolder,
+		AuditmanagerActions.BatchAssociateAssessmentReportEvidence,
+		AuditmanagerActions.BatchCreateDelegationByAssessment,
+		AuditmanagerActions.BatchDeleteDelegationByAssessment,
+		AuditmanagerActions.BatchDisassociateAssessmentReportEvidence,
+		AuditmanagerActions.BatchImportEvidenceToAssessmentControl,
+		AuditmanagerActions.CreateAssessment,
+		AuditmanagerActions.CreateAssessmentFramework,
+		AuditmanagerActions.CreateAssessmentReport,
+		AuditmanagerActions.CreateControl,
+		AuditmanagerActions.DeleteAssessment,
+		AuditmanagerActions.DeleteAssessmentFramework,
+		AuditmanagerActions.DeleteAssessmentFrameworkShare,
+		AuditmanagerActions.DeleteAssessmentReport,
+		AuditmanagerActions.DeleteControl,
+		AuditmanagerActions.DeregisterAccount,
+		AuditmanagerActions.DeregisterOrganizationAdminAccount,
+		AuditmanagerActions.DisassociateAssessmentReportEvidenceFolder,
+		AuditmanagerActions.RegisterAccount,
+		AuditmanagerActions.RegisterOrganizationAdminAccount,
+		AuditmanagerActions.StartAssessmentFrameworkShare,
+		AuditmanagerActions.UpdateAssessment,
+		AuditmanagerActions.UpdateAssessmentControl,
+		AuditmanagerActions.UpdateAssessmentControlSetStatus,
+		AuditmanagerActions.UpdateAssessmentFramework,
+		AuditmanagerActions.UpdateAssessmentFrameworkShare,
+		AuditmanagerActions.UpdateAssessmentStatus,
+		AuditmanagerActions.UpdateControl,
+		AuditmanagerActions.UpdateSettings,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AuditmanagerActions.GET_DELEGATIONS,
-		AuditmanagerActions.LIST_ASSESSMENT_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN,
-		AuditmanagerActions.LIST_ASSESSMENT_FRAMEWORK_SHARE_REQUESTS,
-		AuditmanagerActions.LIST_ASSESSMENT_FRAMEWORKS,
-		AuditmanagerActions.LIST_ASSESSMENT_REPORTS,
-		AuditmanagerActions.LIST_ASSESSMENTS,
-		AuditmanagerActions.LIST_CONTROL_DOMAIN_INSIGHTS,
-		AuditmanagerActions.LIST_CONTROL_DOMAIN_INSIGHTS_BY_ASSESSMENT,
-		AuditmanagerActions.LIST_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN,
-		AuditmanagerActions.LIST_CONTROLS,
-		AuditmanagerActions.LIST_KEYWORDS_FOR_DATA_SOURCE,
-		AuditmanagerActions.LIST_NOTIFICATIONS,
+	static readonly AllListActions: string[] = [
+		AuditmanagerActions.actionGetDelegations,
+		AuditmanagerActions.ListAssessmentControlInsightsByControlDomain,
+		AuditmanagerActions.ListAssessmentFrameworkShareRequests,
+		AuditmanagerActions.ListAssessmentFrameworks,
+		AuditmanagerActions.ListAssessmentReports,
+		AuditmanagerActions.ListAssessments,
+		AuditmanagerActions.ListControlDomainInsights,
+		AuditmanagerActions.ListControlDomainInsightsByAssessment,
+		AuditmanagerActions.ListControlInsightsByControlDomain,
+		AuditmanagerActions.ListControls,
+		AuditmanagerActions.ListKeywordsForDataSource,
+		AuditmanagerActions.ListNotifications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AuditmanagerActions.TAG_RESOURCE,
-		AuditmanagerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AuditmanagerActions.TagResource,
+		AuditmanagerActions.UntagResource,
 	];
 }
 
-const AssessmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessment/(?<assessmentId>[^:/?]+)$",
-);
-const AssessmentControlSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessment/(?<assessmentId>[^:/?]+)/controlSet/(?<controlSetId>[^:/?]+)$",
-);
-const AssessmentFrameworkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessmentFramework/(?<assessmentFrameworkId>[^:/?]+)$",
-);
-const ControlArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):control/(?<controlId>[^:/?]+)$",
-);
+/**
+ * Properties for building a assessment ARN.
+ */
+export interface AuditmanagerAssessmentArnProps {
+	/** The AssessmentId component of the ARN. */
+	readonly assessmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a assessment ARN.
+ */
+export interface AuditmanagerAssessmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssessmentId component. */
+	readonly assessmentId: string;
+}
+
+/**
+ * Properties for building a assessmentControlSet ARN.
+ */
+export interface AuditmanagerAssessmentControlSetArnProps {
+	/** The AssessmentId component of the ARN. */
+	readonly assessmentId: string;
+	/** The ControlSetId component of the ARN. */
+	readonly controlSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a assessmentControlSet ARN.
+ */
+export interface AuditmanagerAssessmentControlSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssessmentId component. */
+	readonly assessmentId: string;
+	/** The ControlSetId component. */
+	readonly controlSetId: string;
+}
+
+/**
+ * Properties for building a assessmentFramework ARN.
+ */
+export interface AuditmanagerAssessmentFrameworkArnProps {
+	/** The AssessmentFrameworkId component of the ARN. */
+	readonly assessmentFrameworkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a assessmentFramework ARN.
+ */
+export interface AuditmanagerAssessmentFrameworkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssessmentFrameworkId component. */
+	readonly assessmentFrameworkId: string;
+}
+
+/**
+ * Properties for building a control ARN.
+ */
+export interface AuditmanagerControlArnProps {
+	/** The ControlId component of the ARN. */
+	readonly controlId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a control ARN.
+ */
+export interface AuditmanagerControlArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ControlId component. */
+	readonly controlId: string;
+}
+
+const AssessmentArnRegex =
+	/^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessment\/(?<assessmentId>[^:/?]+)$/;
+const AssessmentControlSetArnRegex =
+	/^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessment\/(?<assessmentId>[^:/?]+)\/controlSet\/(?<controlSetId>[^:/?]+)$/;
+const AssessmentFrameworkArnRegex =
+	/^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):assessmentFramework\/(?<assessmentFrameworkId>[^:/?]+)$/;
+const ControlArnRegex =
+	/^arn:(?<partition>[^:]+):auditmanager:(?<region>[^:]*):(?<account>[^:]*):control\/(?<controlId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for auditmanager resources.
@@ -272,16 +383,7 @@ export class AuditmanagerResources {
 	/**
 	 * Builds an ARN for the assessment resource.
 	 */
-	static assessment(props: {
-		/** The AssessmentId component of the ARN. */
-		readonly assessmentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assessment(props: AuditmanagerAssessmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:auditmanager:${props.region ?? "*"}:${props.account ?? "*"}:assessment/${props.assessmentId}`;
 	}
 
@@ -296,12 +398,7 @@ export class AuditmanagerResources {
 	 * Parses a assessment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssessmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assessmentId: string;
-	} {
+	static parseAssessmentArn(arn: string): AuditmanagerAssessmentArnComponents {
 		const match = AssessmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid assessment ARN: ${arn}`);
@@ -317,18 +414,9 @@ export class AuditmanagerResources {
 	/**
 	 * Builds an ARN for the assessmentControlSet resource.
 	 */
-	static assessmentControlSet(props: {
-		/** The AssessmentId component of the ARN. */
-		readonly assessmentId: string;
-		/** The ControlSetId component of the ARN. */
-		readonly controlSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assessmentControlSet(
+		props: AuditmanagerAssessmentControlSetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:auditmanager:${props.region ?? "*"}:${props.account ?? "*"}:assessment/${props.assessmentId}/controlSet/${props.controlSetId}`;
 	}
 
@@ -343,13 +431,9 @@ export class AuditmanagerResources {
 	 * Parses a assessmentControlSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssessmentControlSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assessmentId: string;
-		controlSetId: string;
-	} {
+	static parseAssessmentControlSetArn(
+		arn: string,
+	): AuditmanagerAssessmentControlSetArnComponents {
 		const match = AssessmentControlSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid assessmentControlSet ARN: ${arn}`);
@@ -366,16 +450,9 @@ export class AuditmanagerResources {
 	/**
 	 * Builds an ARN for the assessmentFramework resource.
 	 */
-	static assessmentFramework(props: {
-		/** The AssessmentFrameworkId component of the ARN. */
-		readonly assessmentFrameworkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assessmentFramework(
+		props: AuditmanagerAssessmentFrameworkArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:auditmanager:${props.region ?? "*"}:${props.account ?? "*"}:assessmentFramework/${props.assessmentFrameworkId}`;
 	}
 
@@ -390,12 +467,9 @@ export class AuditmanagerResources {
 	 * Parses a assessmentFramework ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssessmentFrameworkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assessmentFrameworkId: string;
-	} {
+	static parseAssessmentFrameworkArn(
+		arn: string,
+	): AuditmanagerAssessmentFrameworkArnComponents {
 		const match = AssessmentFrameworkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid assessmentFramework ARN: ${arn}`);
@@ -411,16 +485,7 @@ export class AuditmanagerResources {
 	/**
 	 * Builds an ARN for the control resource.
 	 */
-	static control(props: {
-		/** The ControlId component of the ARN. */
-		readonly controlId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static control(props: AuditmanagerControlArnProps): string {
 		return `arn:${props.partition ?? "aws"}:auditmanager:${props.region ?? "*"}:${props.account ?? "*"}:control/${props.controlId}`;
 	}
 
@@ -435,12 +500,7 @@ export class AuditmanagerResources {
 	 * Parses a control ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseControlArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		controlId: string;
-	} {
+	static parseControlArn(arn: string): AuditmanagerControlArnComponents {
 		const match = ControlArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid control ARN: ${arn}`);
@@ -459,223 +519,224 @@ export class AuditmanagerResources {
  */
 export class AuditmanagerOperations {
 	/** IAM actions required for the AssociateAssessmentReportEvidenceFolder API call. */
-	static readonly ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER: string[] = [
+	static readonly AssociateAssessmentReportEvidenceFolder: string[] = [
 		"auditmanager:AssociateAssessmentReportEvidenceFolder",
 	];
 	/** IAM actions required for the BatchAssociateAssessmentReportEvidence API call. */
-	static readonly BATCH_ASSOCIATE_ASSESSMENT_REPORT_EVIDENCE: string[] = [
+	static readonly BatchAssociateAssessmentReportEvidence: string[] = [
 		"auditmanager:BatchAssociateAssessmentReportEvidence",
 	];
 	/** IAM actions required for the BatchCreateDelegationByAssessment API call. */
-	static readonly BATCH_CREATE_DELEGATION_BY_ASSESSMENT: string[] = [
+	static readonly BatchCreateDelegationByAssessment: string[] = [
 		"auditmanager:BatchCreateDelegationByAssessment",
 	];
 	/** IAM actions required for the BatchDeleteDelegationByAssessment API call. */
-	static readonly BATCH_DELETE_DELEGATION_BY_ASSESSMENT: string[] = [
+	static readonly BatchDeleteDelegationByAssessment: string[] = [
 		"auditmanager:BatchDeleteDelegationByAssessment",
 	];
 	/** IAM actions required for the BatchDisassociateAssessmentReportEvidence API call. */
-	static readonly BATCH_DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE: string[] = [
+	static readonly BatchDisassociateAssessmentReportEvidence: string[] = [
 		"auditmanager:BatchDisassociateAssessmentReportEvidence",
 	];
 	/** IAM actions required for the BatchImportEvidenceToAssessmentControl API call. */
-	static readonly BATCH_IMPORT_EVIDENCE_TO_ASSESSMENT_CONTROL: string[] = [
+	static readonly BatchImportEvidenceToAssessmentControl: string[] = [
 		"auditmanager:BatchImportEvidenceToAssessmentControl",
 	];
 	/** IAM actions required for the CreateAssessment API call. */
-	static readonly CREATE_ASSESSMENT: string[] = [
+	static readonly CreateAssessment: string[] = [
 		"auditmanager:CreateAssessment",
 		"auditmanager:TagResource",
 	];
 	/** IAM actions required for the CreateAssessmentFramework API call. */
-	static readonly CREATE_ASSESSMENT_FRAMEWORK: string[] = [
+	static readonly CreateAssessmentFramework: string[] = [
 		"auditmanager:CreateAssessmentFramework",
 		"auditmanager:TagResource",
 	];
 	/** IAM actions required for the CreateAssessmentReport API call. */
-	static readonly CREATE_ASSESSMENT_REPORT: string[] = [
+	static readonly CreateAssessmentReport: string[] = [
 		"auditmanager:CreateAssessmentReport",
 	];
 	/** IAM actions required for the CreateControl API call. */
-	static readonly CREATE_CONTROL: string[] = [
+	static readonly CreateControl: string[] = [
 		"auditmanager:CreateControl",
 		"auditmanager:TagResource",
 	];
 	/** IAM actions required for the DeleteAssessment API call. */
-	static readonly DELETE_ASSESSMENT: string[] = [
+	static readonly DeleteAssessment: string[] = [
 		"auditmanager:DeleteAssessment",
 	];
 	/** IAM actions required for the DeleteAssessmentFramework API call. */
-	static readonly DELETE_ASSESSMENT_FRAMEWORK: string[] = [
+	static readonly DeleteAssessmentFramework: string[] = [
 		"auditmanager:DeleteAssessmentFramework",
 	];
 	/** IAM actions required for the DeleteAssessmentFrameworkShare API call. */
-	static readonly DELETE_ASSESSMENT_FRAMEWORK_SHARE: string[] = [
+	static readonly DeleteAssessmentFrameworkShare: string[] = [
 		"auditmanager:DeleteAssessmentFrameworkShare",
 	];
 	/** IAM actions required for the DeleteAssessmentReport API call. */
-	static readonly DELETE_ASSESSMENT_REPORT: string[] = [
+	static readonly DeleteAssessmentReport: string[] = [
 		"auditmanager:DeleteAssessmentReport",
 	];
 	/** IAM actions required for the DeleteControl API call. */
-	static readonly DELETE_CONTROL: string[] = ["auditmanager:DeleteControl"];
+	static readonly DeleteControl: string[] = ["auditmanager:DeleteControl"];
 	/** IAM actions required for the DeregisterAccount API call. */
-	static readonly DEREGISTER_ACCOUNT: string[] = [
+	static readonly DeregisterAccount: string[] = [
 		"auditmanager:DeregisterAccount",
 	];
 	/** IAM actions required for the DeregisterOrganizationAdminAccount API call. */
-	static readonly DEREGISTER_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly DeregisterOrganizationAdminAccount: string[] = [
 		"auditmanager:DeregisterOrganizationAdminAccount",
 	];
 	/** IAM actions required for the DisassociateAssessmentReportEvidenceFolder API call. */
-	static readonly DISASSOCIATE_ASSESSMENT_REPORT_EVIDENCE_FOLDER: string[] = [
+	static readonly DisassociateAssessmentReportEvidenceFolder: string[] = [
 		"auditmanager:DisassociateAssessmentReportEvidenceFolder",
 	];
 	/** IAM actions required for the GetAccountStatus API call. */
-	static readonly GET_ACCOUNT_STATUS: string[] = [
+	static readonly opGetAccountStatus: string[] = [
 		"auditmanager:GetAccountStatus",
 	];
 	/** IAM actions required for the GetAssessment API call. */
-	static readonly GET_ASSESSMENT: string[] = ["auditmanager:GetAssessment"];
+	static readonly opGetAssessment: string[] = ["auditmanager:GetAssessment"];
 	/** IAM actions required for the GetAssessmentFramework API call. */
-	static readonly GET_ASSESSMENT_FRAMEWORK: string[] = [
+	static readonly opGetAssessmentFramework: string[] = [
 		"auditmanager:GetAssessmentFramework",
 	];
 	/** IAM actions required for the GetAssessmentReportUrl API call. */
-	static readonly GET_ASSESSMENT_REPORT_URL: string[] = [
+	static readonly opGetAssessmentReportUrl: string[] = [
 		"auditmanager:GetAssessmentReportUrl",
 	];
 	/** IAM actions required for the GetChangeLogs API call. */
-	static readonly GET_CHANGE_LOGS: string[] = ["auditmanager:GetChangeLogs"];
+	static readonly opGetChangeLogs: string[] = ["auditmanager:GetChangeLogs"];
 	/** IAM actions required for the GetControl API call. */
-	static readonly GET_CONTROL: string[] = ["auditmanager:GetControl"];
+	static readonly opGetControl: string[] = ["auditmanager:GetControl"];
 	/** IAM actions required for the GetDelegations API call. */
-	static readonly GET_DELEGATIONS: string[] = ["auditmanager:GetDelegations"];
+	static readonly opGetDelegations: string[] = ["auditmanager:GetDelegations"];
 	/** IAM actions required for the GetEvidence API call. */
-	static readonly GET_EVIDENCE: string[] = ["auditmanager:GetEvidence"];
+	static readonly opGetEvidence: string[] = ["auditmanager:GetEvidence"];
 	/** IAM actions required for the GetEvidenceByEvidenceFolder API call. */
-	static readonly GET_EVIDENCE_BY_EVIDENCE_FOLDER: string[] = [
+	static readonly opGetEvidenceByEvidenceFolder: string[] = [
 		"auditmanager:GetEvidenceByEvidenceFolder",
 	];
 	/** IAM actions required for the GetEvidenceFileUploadUrl API call. */
-	static readonly GET_EVIDENCE_FILE_UPLOAD_URL: string[] = [
+	static readonly opGetEvidenceFileUploadUrl: string[] = [
 		"auditmanager:GetEvidenceFileUploadUrl",
 	];
 	/** IAM actions required for the GetEvidenceFolder API call. */
-	static readonly GET_EVIDENCE_FOLDER: string[] = [
+	static readonly opGetEvidenceFolder: string[] = [
 		"auditmanager:GetEvidenceFolder",
 	];
 	/** IAM actions required for the GetEvidenceFoldersByAssessment API call. */
-	static readonly GET_EVIDENCE_FOLDERS_BY_ASSESSMENT: string[] = [
+	static readonly opGetEvidenceFoldersByAssessment: string[] = [
 		"auditmanager:GetEvidenceFoldersByAssessment",
 	];
 	/** IAM actions required for the GetEvidenceFoldersByAssessmentControl API call. */
-	static readonly GET_EVIDENCE_FOLDERS_BY_ASSESSMENT_CONTROL: string[] = [
+	static readonly opGetEvidenceFoldersByAssessmentControl: string[] = [
 		"auditmanager:GetEvidenceFoldersByAssessmentControl",
 	];
 	/** IAM actions required for the GetInsights API call. */
-	static readonly GET_INSIGHTS: string[] = ["auditmanager:GetInsights"];
+	static readonly opGetInsights: string[] = ["auditmanager:GetInsights"];
 	/** IAM actions required for the GetInsightsByAssessment API call. */
-	static readonly GET_INSIGHTS_BY_ASSESSMENT: string[] = [
+	static readonly opGetInsightsByAssessment: string[] = [
 		"auditmanager:GetInsightsByAssessment",
 	];
 	/** IAM actions required for the GetOrganizationAdminAccount API call. */
-	static readonly GET_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly opGetOrganizationAdminAccount: string[] = [
 		"auditmanager:GetOrganizationAdminAccount",
 	];
 	/** IAM actions required for the GetServicesInScope API call. */
-	static readonly GET_SERVICES_IN_SCOPE: string[] = [
+	static readonly opGetServicesInScope: string[] = [
 		"auditmanager:GetServicesInScope",
 	];
 	/** IAM actions required for the GetSettings API call. */
-	static readonly GET_SETTINGS: string[] = ["auditmanager:GetSettings"];
+	static readonly opGetSettings: string[] = ["auditmanager:GetSettings"];
 	/** IAM actions required for the ListAssessmentControlInsightsByControlDomain API call. */
-	static readonly LIST_ASSESSMENT_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN: string[] =
-		["auditmanager:ListAssessmentControlInsightsByControlDomain"];
+	static readonly ListAssessmentControlInsightsByControlDomain: string[] = [
+		"auditmanager:ListAssessmentControlInsightsByControlDomain",
+	];
 	/** IAM actions required for the ListAssessmentFrameworkShareRequests API call. */
-	static readonly LIST_ASSESSMENT_FRAMEWORK_SHARE_REQUESTS: string[] = [
+	static readonly ListAssessmentFrameworkShareRequests: string[] = [
 		"auditmanager:ListAssessmentFrameworkShareRequests",
 	];
 	/** IAM actions required for the ListAssessmentFrameworks API call. */
-	static readonly LIST_ASSESSMENT_FRAMEWORKS: string[] = [
+	static readonly ListAssessmentFrameworks: string[] = [
 		"auditmanager:ListAssessmentFrameworks",
 	];
 	/** IAM actions required for the ListAssessmentReports API call. */
-	static readonly LIST_ASSESSMENT_REPORTS: string[] = [
+	static readonly ListAssessmentReports: string[] = [
 		"auditmanager:ListAssessmentReports",
 	];
 	/** IAM actions required for the ListAssessments API call. */
-	static readonly LIST_ASSESSMENTS: string[] = ["auditmanager:ListAssessments"];
+	static readonly ListAssessments: string[] = ["auditmanager:ListAssessments"];
 	/** IAM actions required for the ListControlDomainInsights API call. */
-	static readonly LIST_CONTROL_DOMAIN_INSIGHTS: string[] = [
+	static readonly ListControlDomainInsights: string[] = [
 		"auditmanager:ListControlDomainInsights",
 	];
 	/** IAM actions required for the ListControlDomainInsightsByAssessment API call. */
-	static readonly LIST_CONTROL_DOMAIN_INSIGHTS_BY_ASSESSMENT: string[] = [
+	static readonly ListControlDomainInsightsByAssessment: string[] = [
 		"auditmanager:ListControlDomainInsightsByAssessment",
 	];
 	/** IAM actions required for the ListControlInsightsByControlDomain API call. */
-	static readonly LIST_CONTROL_INSIGHTS_BY_CONTROL_DOMAIN: string[] = [
+	static readonly ListControlInsightsByControlDomain: string[] = [
 		"auditmanager:ListControlInsightsByControlDomain",
 	];
 	/** IAM actions required for the ListControls API call. */
-	static readonly LIST_CONTROLS: string[] = ["auditmanager:ListControls"];
+	static readonly ListControls: string[] = ["auditmanager:ListControls"];
 	/** IAM actions required for the ListKeywordsForDataSource API call. */
-	static readonly LIST_KEYWORDS_FOR_DATA_SOURCE: string[] = [
+	static readonly ListKeywordsForDataSource: string[] = [
 		"auditmanager:ListKeywordsForDataSource",
 	];
 	/** IAM actions required for the ListNotifications API call. */
-	static readonly LIST_NOTIFICATIONS: string[] = [
+	static readonly ListNotifications: string[] = [
 		"auditmanager:ListNotifications",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"auditmanager:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterAccount API call. */
-	static readonly REGISTER_ACCOUNT: string[] = ["auditmanager:RegisterAccount"];
+	static readonly RegisterAccount: string[] = ["auditmanager:RegisterAccount"];
 	/** IAM actions required for the RegisterOrganizationAdminAccount API call. */
-	static readonly REGISTER_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly RegisterOrganizationAdminAccount: string[] = [
 		"auditmanager:RegisterOrganizationAdminAccount",
 	];
 	/** IAM actions required for the StartAssessmentFrameworkShare API call. */
-	static readonly START_ASSESSMENT_FRAMEWORK_SHARE: string[] = [
+	static readonly StartAssessmentFrameworkShare: string[] = [
 		"auditmanager:StartAssessmentFrameworkShare",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["auditmanager:TagResource"];
+	static readonly TagResource: string[] = ["auditmanager:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["auditmanager:UntagResource"];
+	static readonly UntagResource: string[] = ["auditmanager:UntagResource"];
 	/** IAM actions required for the UpdateAssessment API call. */
-	static readonly UPDATE_ASSESSMENT: string[] = [
+	static readonly UpdateAssessment: string[] = [
 		"auditmanager:UpdateAssessment",
 	];
 	/** IAM actions required for the UpdateAssessmentControl API call. */
-	static readonly UPDATE_ASSESSMENT_CONTROL: string[] = [
+	static readonly UpdateAssessmentControl: string[] = [
 		"auditmanager:UpdateAssessmentControl",
 	];
 	/** IAM actions required for the UpdateAssessmentControlSetStatus API call. */
-	static readonly UPDATE_ASSESSMENT_CONTROL_SET_STATUS: string[] = [
+	static readonly UpdateAssessmentControlSetStatus: string[] = [
 		"auditmanager:UpdateAssessmentControlSetStatus",
 	];
 	/** IAM actions required for the UpdateAssessmentFramework API call. */
-	static readonly UPDATE_ASSESSMENT_FRAMEWORK: string[] = [
+	static readonly UpdateAssessmentFramework: string[] = [
 		"auditmanager:UpdateAssessmentFramework",
 	];
 	/** IAM actions required for the UpdateAssessmentFrameworkShare API call. */
-	static readonly UPDATE_ASSESSMENT_FRAMEWORK_SHARE: string[] = [
+	static readonly UpdateAssessmentFrameworkShare: string[] = [
 		"auditmanager:UpdateAssessmentFrameworkShare",
 	];
 	/** IAM actions required for the UpdateAssessmentStatus API call. */
-	static readonly UPDATE_ASSESSMENT_STATUS: string[] = [
+	static readonly UpdateAssessmentStatus: string[] = [
 		"auditmanager:UpdateAssessmentStatus",
 	];
 	/** IAM actions required for the UpdateControl API call. */
-	static readonly UPDATE_CONTROL: string[] = ["auditmanager:UpdateControl"];
+	static readonly UpdateControl: string[] = ["auditmanager:UpdateControl"];
 	/** IAM actions required for the UpdateSettings API call. */
-	static readonly UPDATE_SETTINGS: string[] = ["auditmanager:UpdateSettings"];
+	static readonly UpdateSettings: string[] = ["auditmanager:UpdateSettings"];
 	/** IAM actions required for the ValidateAssessmentReportIntegrity API call. */
-	static readonly VALIDATE_ASSESSMENT_REPORT_INTEGRITY: string[] = [
+	static readonly ValidateAssessmentReportIntegrity: string[] = [
 		"auditmanager:ValidateAssessmentReportIntegrity",
 	];
 }
@@ -685,52 +746,52 @@ export class AuditmanagerOperations {
  */
 export class AuditmanagerConditions {
 	/** Condition keys applicable to the CreateAssessment action. */
-	static readonly CREATE_ASSESSMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateAssessmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAssessmentFramework action. */
-	static readonly CREATE_ASSESSMENT_FRAMEWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateAssessmentFrameworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateControl action. */
-	static readonly CREATE_CONTROL_CONDITION_KEYS: string[] = [
+	static readonly CreateControlConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAssessment action. */
-	static readonly DELETE_ASSESSMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAssessmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAssessmentFramework action. */
-	static readonly DELETE_ASSESSMENT_FRAMEWORK_CONDITION_KEYS: string[] = [
+	static readonly DeleteAssessmentFrameworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteControl action. */
-	static readonly DELETE_CONTROL_CONDITION_KEYS: string[] = [
+	static readonly DeleteControlConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

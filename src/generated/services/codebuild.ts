@@ -13,255 +13,447 @@ export class CodeBuildActions {
 	static readonly SERVICE_PREFIX = "codebuild";
 
 	/** [Write] codebuild:BatchDeleteBuilds */
-	static readonly BATCH_DELETE_BUILDS = "codebuild:BatchDeleteBuilds";
+	static readonly BatchDeleteBuilds = "codebuild:BatchDeleteBuilds";
 	/** [Read] codebuild:BatchGetBuildBatches */
-	static readonly BATCH_GET_BUILD_BATCHES = "codebuild:BatchGetBuildBatches";
+	static readonly BatchGetBuildBatches = "codebuild:BatchGetBuildBatches";
 	/** [Read] codebuild:BatchGetBuilds */
-	static readonly BATCH_GET_BUILDS = "codebuild:BatchGetBuilds";
+	static readonly BatchGetBuilds = "codebuild:BatchGetBuilds";
 	/** [Read] codebuild:BatchGetCommandExecutions */
-	static readonly BATCH_GET_COMMAND_EXECUTIONS =
+	static readonly BatchGetCommandExecutions =
 		"codebuild:BatchGetCommandExecutions";
 	/** [Read] codebuild:BatchGetFleets */
-	static readonly BATCH_GET_FLEETS = "codebuild:BatchGetFleets";
+	static readonly BatchGetFleets = "codebuild:BatchGetFleets";
 	/** [Read] codebuild:BatchGetProjects */
-	static readonly BATCH_GET_PROJECTS = "codebuild:BatchGetProjects";
+	static readonly BatchGetProjects = "codebuild:BatchGetProjects";
 	/** [Read] codebuild:BatchGetReportGroups */
-	static readonly BATCH_GET_REPORT_GROUPS = "codebuild:BatchGetReportGroups";
+	static readonly BatchGetReportGroups = "codebuild:BatchGetReportGroups";
 	/** [Read] codebuild:BatchGetReports */
-	static readonly BATCH_GET_REPORTS = "codebuild:BatchGetReports";
+	static readonly BatchGetReports = "codebuild:BatchGetReports";
 	/** [Read] codebuild:BatchGetSandboxes */
-	static readonly BATCH_GET_SANDBOXES = "codebuild:BatchGetSandboxes";
+	static readonly BatchGetSandboxes = "codebuild:BatchGetSandboxes";
 	/** [Write] codebuild:BatchPutCodeCoverages */
-	static readonly BATCH_PUT_CODE_COVERAGES = "codebuild:BatchPutCodeCoverages";
+	static readonly BatchPutCodeCoverages = "codebuild:BatchPutCodeCoverages";
 	/** [Write] codebuild:BatchPutTestCases */
-	static readonly BATCH_PUT_TEST_CASES = "codebuild:BatchPutTestCases";
+	static readonly BatchPutTestCases = "codebuild:BatchPutTestCases";
 	/** [Write] codebuild:CreateFleet */
-	static readonly CREATE_FLEET = "codebuild:CreateFleet";
+	static readonly CreateFleet = "codebuild:CreateFleet";
 	/** [Write] codebuild:CreateProject */
-	static readonly CREATE_PROJECT = "codebuild:CreateProject";
+	static readonly CreateProject = "codebuild:CreateProject";
 	/** [Write] codebuild:CreateReport */
-	static readonly CREATE_REPORT = "codebuild:CreateReport";
+	static readonly CreateReport = "codebuild:CreateReport";
 	/** [Write] codebuild:CreateReportGroup */
-	static readonly CREATE_REPORT_GROUP = "codebuild:CreateReportGroup";
+	static readonly CreateReportGroup = "codebuild:CreateReportGroup";
 	/** [Write] codebuild:CreateWebhook */
-	static readonly CREATE_WEBHOOK = "codebuild:CreateWebhook";
+	static readonly CreateWebhook = "codebuild:CreateWebhook";
 	/** [Write] codebuild:DeleteBuildBatch */
-	static readonly DELETE_BUILD_BATCH = "codebuild:DeleteBuildBatch";
+	static readonly DeleteBuildBatch = "codebuild:DeleteBuildBatch";
 	/** [Write] codebuild:DeleteFleet */
-	static readonly DELETE_FLEET = "codebuild:DeleteFleet";
+	static readonly DeleteFleet = "codebuild:DeleteFleet";
 	/** [Write] codebuild:DeleteOAuthToken */
-	static readonly DELETE_O_AUTH_TOKEN = "codebuild:DeleteOAuthToken";
+	static readonly DeleteOAuthToken = "codebuild:DeleteOAuthToken";
 	/** [Write] codebuild:DeleteProject */
-	static readonly DELETE_PROJECT = "codebuild:DeleteProject";
+	static readonly DeleteProject = "codebuild:DeleteProject";
 	/** [Write] codebuild:DeleteReport */
-	static readonly DELETE_REPORT = "codebuild:DeleteReport";
+	static readonly DeleteReport = "codebuild:DeleteReport";
 	/** [Write] codebuild:DeleteReportGroup */
-	static readonly DELETE_REPORT_GROUP = "codebuild:DeleteReportGroup";
+	static readonly DeleteReportGroup = "codebuild:DeleteReportGroup";
 	/** [PermissionManagement] codebuild:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "codebuild:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "codebuild:DeleteResourcePolicy";
 	/** [Write] codebuild:DeleteSourceCredentials */
-	static readonly DELETE_SOURCE_CREDENTIALS =
-		"codebuild:DeleteSourceCredentials";
+	static readonly DeleteSourceCredentials = "codebuild:DeleteSourceCredentials";
 	/** [Write] codebuild:DeleteWebhook */
-	static readonly DELETE_WEBHOOK = "codebuild:DeleteWebhook";
+	static readonly DeleteWebhook = "codebuild:DeleteWebhook";
 	/** [Read] codebuild:DescribeCodeCoverages */
-	static readonly DESCRIBE_CODE_COVERAGES = "codebuild:DescribeCodeCoverages";
+	static readonly DescribeCodeCoverages = "codebuild:DescribeCodeCoverages";
 	/** [Read] codebuild:DescribeTestCases */
-	static readonly DESCRIBE_TEST_CASES = "codebuild:DescribeTestCases";
+	static readonly DescribeTestCases = "codebuild:DescribeTestCases";
 	/** [Read] codebuild:GetReportGroupTrend */
-	static readonly GET_REPORT_GROUP_TREND = "codebuild:GetReportGroupTrend";
+	static readonly actionGetReportGroupTrend = "codebuild:GetReportGroupTrend";
 	/** [Read] codebuild:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "codebuild:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "codebuild:GetResourcePolicy";
 	/** [Write] codebuild:ImportSourceCredentials */
-	static readonly IMPORT_SOURCE_CREDENTIALS =
-		"codebuild:ImportSourceCredentials";
+	static readonly ImportSourceCredentials = "codebuild:ImportSourceCredentials";
 	/** [Write] codebuild:InvalidateProjectCache */
-	static readonly INVALIDATE_PROJECT_CACHE = "codebuild:InvalidateProjectCache";
+	static readonly InvalidateProjectCache = "codebuild:InvalidateProjectCache";
 	/** [List] codebuild:ListBuildBatches */
-	static readonly LIST_BUILD_BATCHES = "codebuild:ListBuildBatches";
+	static readonly ListBuildBatches = "codebuild:ListBuildBatches";
 	/** [List] codebuild:ListBuildBatchesForProject */
-	static readonly LIST_BUILD_BATCHES_FOR_PROJECT =
+	static readonly ListBuildBatchesForProject =
 		"codebuild:ListBuildBatchesForProject";
 	/** [List] codebuild:ListBuilds */
-	static readonly LIST_BUILDS = "codebuild:ListBuilds";
+	static readonly ListBuilds = "codebuild:ListBuilds";
 	/** [List] codebuild:ListBuildsForProject */
-	static readonly LIST_BUILDS_FOR_PROJECT = "codebuild:ListBuildsForProject";
+	static readonly ListBuildsForProject = "codebuild:ListBuildsForProject";
 	/** [List] codebuild:ListCommandExecutionsForSandbox */
-	static readonly LIST_COMMAND_EXECUTIONS_FOR_SANDBOX =
+	static readonly ListCommandExecutionsForSandbox =
 		"codebuild:ListCommandExecutionsForSandbox";
 	/** [List] codebuild:ListConnectedOAuthAccounts */
-	static readonly LIST_CONNECTED_O_AUTH_ACCOUNTS =
+	static readonly ListConnectedOAuthAccounts =
 		"codebuild:ListConnectedOAuthAccounts";
 	/** [List] codebuild:ListCuratedEnvironmentImages */
-	static readonly LIST_CURATED_ENVIRONMENT_IMAGES =
+	static readonly ListCuratedEnvironmentImages =
 		"codebuild:ListCuratedEnvironmentImages";
 	/** [List] codebuild:ListFleets */
-	static readonly LIST_FLEETS = "codebuild:ListFleets";
+	static readonly ListFleets = "codebuild:ListFleets";
 	/** [List] codebuild:ListProjects */
-	static readonly LIST_PROJECTS = "codebuild:ListProjects";
+	static readonly ListProjects = "codebuild:ListProjects";
 	/** [List] codebuild:ListReportGroups */
-	static readonly LIST_REPORT_GROUPS = "codebuild:ListReportGroups";
+	static readonly ListReportGroups = "codebuild:ListReportGroups";
 	/** [List] codebuild:ListReports */
-	static readonly LIST_REPORTS = "codebuild:ListReports";
+	static readonly ListReports = "codebuild:ListReports";
 	/** [List] codebuild:ListReportsForReportGroup */
-	static readonly LIST_REPORTS_FOR_REPORT_GROUP =
+	static readonly ListReportsForReportGroup =
 		"codebuild:ListReportsForReportGroup";
 	/** [List] codebuild:ListRepositories */
-	static readonly LIST_REPOSITORIES = "codebuild:ListRepositories";
+	static readonly ListRepositories = "codebuild:ListRepositories";
 	/** [List] codebuild:ListSandboxes */
-	static readonly LIST_SANDBOXES = "codebuild:ListSandboxes";
+	static readonly ListSandboxes = "codebuild:ListSandboxes";
 	/** [List] codebuild:ListSandboxesForProject */
-	static readonly LIST_SANDBOXES_FOR_PROJECT =
-		"codebuild:ListSandboxesForProject";
+	static readonly ListSandboxesForProject = "codebuild:ListSandboxesForProject";
 	/** [List] codebuild:ListSharedProjects */
-	static readonly LIST_SHARED_PROJECTS = "codebuild:ListSharedProjects";
+	static readonly ListSharedProjects = "codebuild:ListSharedProjects";
 	/** [List] codebuild:ListSharedReportGroups */
-	static readonly LIST_SHARED_REPORT_GROUPS =
-		"codebuild:ListSharedReportGroups";
+	static readonly ListSharedReportGroups = "codebuild:ListSharedReportGroups";
 	/** [List] codebuild:ListSourceCredentials */
-	static readonly LIST_SOURCE_CREDENTIALS = "codebuild:ListSourceCredentials";
+	static readonly ListSourceCredentials = "codebuild:ListSourceCredentials";
 	/** [Write] codebuild:PersistOAuthToken */
-	static readonly PERSIST_O_AUTH_TOKEN = "codebuild:PersistOAuthToken";
+	static readonly PersistOAuthToken = "codebuild:PersistOAuthToken";
 	/** [PermissionManagement] codebuild:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "codebuild:PutResourcePolicy";
+	static readonly PutResourcePolicy = "codebuild:PutResourcePolicy";
 	/** [Write] codebuild:RetryBuild */
-	static readonly RETRY_BUILD = "codebuild:RetryBuild";
+	static readonly RetryBuild = "codebuild:RetryBuild";
 	/** [Write] codebuild:RetryBuildBatch */
-	static readonly RETRY_BUILD_BATCH = "codebuild:RetryBuildBatch";
+	static readonly RetryBuildBatch = "codebuild:RetryBuildBatch";
 	/** [Write] codebuild:StartBuild */
-	static readonly START_BUILD = "codebuild:StartBuild";
+	static readonly StartBuild = "codebuild:StartBuild";
 	/** [Write] codebuild:StartBuildBatch */
-	static readonly START_BUILD_BATCH = "codebuild:StartBuildBatch";
+	static readonly StartBuildBatch = "codebuild:StartBuildBatch";
 	/** [Write] codebuild:StartCommandExecution */
-	static readonly START_COMMAND_EXECUTION = "codebuild:StartCommandExecution";
+	static readonly StartCommandExecution = "codebuild:StartCommandExecution";
 	/** [Write] codebuild:StartSandbox */
-	static readonly START_SANDBOX = "codebuild:StartSandbox";
+	static readonly StartSandbox = "codebuild:StartSandbox";
 	/** [Write] codebuild:StartSandboxConnection */
-	static readonly START_SANDBOX_CONNECTION = "codebuild:StartSandboxConnection";
+	static readonly StartSandboxConnection = "codebuild:StartSandboxConnection";
 	/** [Write] codebuild:StopBuild */
-	static readonly STOP_BUILD = "codebuild:StopBuild";
+	static readonly StopBuild = "codebuild:StopBuild";
 	/** [Write] codebuild:StopBuildBatch */
-	static readonly STOP_BUILD_BATCH = "codebuild:StopBuildBatch";
+	static readonly StopBuildBatch = "codebuild:StopBuildBatch";
 	/** [Write] codebuild:StopSandbox */
-	static readonly STOP_SANDBOX = "codebuild:StopSandbox";
+	static readonly StopSandbox = "codebuild:StopSandbox";
 	/** [Write] codebuild:UpdateFleet */
-	static readonly UPDATE_FLEET = "codebuild:UpdateFleet";
+	static readonly UpdateFleet = "codebuild:UpdateFleet";
 	/** [Write] codebuild:UpdateProject */
-	static readonly UPDATE_PROJECT = "codebuild:UpdateProject";
+	static readonly UpdateProject = "codebuild:UpdateProject";
 	/** [Write] codebuild:UpdateProjectVisibility */
-	static readonly UPDATE_PROJECT_VISIBILITY =
-		"codebuild:UpdateProjectVisibility";
+	static readonly UpdateProjectVisibility = "codebuild:UpdateProjectVisibility";
 	/** [Write] codebuild:UpdateReport */
-	static readonly UPDATE_REPORT = "codebuild:UpdateReport";
+	static readonly UpdateReport = "codebuild:UpdateReport";
 	/** [Write] codebuild:UpdateReportGroup */
-	static readonly UPDATE_REPORT_GROUP = "codebuild:UpdateReportGroup";
+	static readonly UpdateReportGroup = "codebuild:UpdateReportGroup";
 	/** [Write] codebuild:UpdateWebhook */
-	static readonly UPDATE_WEBHOOK = "codebuild:UpdateWebhook";
+	static readonly UpdateWebhook = "codebuild:UpdateWebhook";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeBuildActions.BATCH_GET_BUILD_BATCHES,
-		CodeBuildActions.BATCH_GET_BUILDS,
-		CodeBuildActions.BATCH_GET_COMMAND_EXECUTIONS,
-		CodeBuildActions.BATCH_GET_FLEETS,
-		CodeBuildActions.BATCH_GET_PROJECTS,
-		CodeBuildActions.BATCH_GET_REPORT_GROUPS,
-		CodeBuildActions.BATCH_GET_REPORTS,
-		CodeBuildActions.BATCH_GET_SANDBOXES,
-		CodeBuildActions.DESCRIBE_CODE_COVERAGES,
-		CodeBuildActions.DESCRIBE_TEST_CASES,
-		CodeBuildActions.GET_REPORT_GROUP_TREND,
-		CodeBuildActions.GET_RESOURCE_POLICY,
+	static readonly AllReadActions: string[] = [
+		CodeBuildActions.BatchGetBuildBatches,
+		CodeBuildActions.BatchGetBuilds,
+		CodeBuildActions.BatchGetCommandExecutions,
+		CodeBuildActions.BatchGetFleets,
+		CodeBuildActions.BatchGetProjects,
+		CodeBuildActions.BatchGetReportGroups,
+		CodeBuildActions.BatchGetReports,
+		CodeBuildActions.BatchGetSandboxes,
+		CodeBuildActions.DescribeCodeCoverages,
+		CodeBuildActions.DescribeTestCases,
+		CodeBuildActions.actionGetReportGroupTrend,
+		CodeBuildActions.actionGetResourcePolicy,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeBuildActions.BATCH_DELETE_BUILDS,
-		CodeBuildActions.BATCH_PUT_CODE_COVERAGES,
-		CodeBuildActions.BATCH_PUT_TEST_CASES,
-		CodeBuildActions.CREATE_FLEET,
-		CodeBuildActions.CREATE_PROJECT,
-		CodeBuildActions.CREATE_REPORT,
-		CodeBuildActions.CREATE_REPORT_GROUP,
-		CodeBuildActions.CREATE_WEBHOOK,
-		CodeBuildActions.DELETE_BUILD_BATCH,
-		CodeBuildActions.DELETE_FLEET,
-		CodeBuildActions.DELETE_O_AUTH_TOKEN,
-		CodeBuildActions.DELETE_PROJECT,
-		CodeBuildActions.DELETE_REPORT,
-		CodeBuildActions.DELETE_REPORT_GROUP,
-		CodeBuildActions.DELETE_SOURCE_CREDENTIALS,
-		CodeBuildActions.DELETE_WEBHOOK,
-		CodeBuildActions.IMPORT_SOURCE_CREDENTIALS,
-		CodeBuildActions.INVALIDATE_PROJECT_CACHE,
-		CodeBuildActions.PERSIST_O_AUTH_TOKEN,
-		CodeBuildActions.RETRY_BUILD,
-		CodeBuildActions.RETRY_BUILD_BATCH,
-		CodeBuildActions.START_BUILD,
-		CodeBuildActions.START_BUILD_BATCH,
-		CodeBuildActions.START_COMMAND_EXECUTION,
-		CodeBuildActions.START_SANDBOX,
-		CodeBuildActions.START_SANDBOX_CONNECTION,
-		CodeBuildActions.STOP_BUILD,
-		CodeBuildActions.STOP_BUILD_BATCH,
-		CodeBuildActions.STOP_SANDBOX,
-		CodeBuildActions.UPDATE_FLEET,
-		CodeBuildActions.UPDATE_PROJECT,
-		CodeBuildActions.UPDATE_PROJECT_VISIBILITY,
-		CodeBuildActions.UPDATE_REPORT,
-		CodeBuildActions.UPDATE_REPORT_GROUP,
-		CodeBuildActions.UPDATE_WEBHOOK,
+	static readonly AllWriteActions: string[] = [
+		CodeBuildActions.BatchDeleteBuilds,
+		CodeBuildActions.BatchPutCodeCoverages,
+		CodeBuildActions.BatchPutTestCases,
+		CodeBuildActions.CreateFleet,
+		CodeBuildActions.CreateProject,
+		CodeBuildActions.CreateReport,
+		CodeBuildActions.CreateReportGroup,
+		CodeBuildActions.CreateWebhook,
+		CodeBuildActions.DeleteBuildBatch,
+		CodeBuildActions.DeleteFleet,
+		CodeBuildActions.DeleteOAuthToken,
+		CodeBuildActions.DeleteProject,
+		CodeBuildActions.DeleteReport,
+		CodeBuildActions.DeleteReportGroup,
+		CodeBuildActions.DeleteSourceCredentials,
+		CodeBuildActions.DeleteWebhook,
+		CodeBuildActions.ImportSourceCredentials,
+		CodeBuildActions.InvalidateProjectCache,
+		CodeBuildActions.PersistOAuthToken,
+		CodeBuildActions.RetryBuild,
+		CodeBuildActions.RetryBuildBatch,
+		CodeBuildActions.StartBuild,
+		CodeBuildActions.StartBuildBatch,
+		CodeBuildActions.StartCommandExecution,
+		CodeBuildActions.StartSandbox,
+		CodeBuildActions.StartSandboxConnection,
+		CodeBuildActions.StopBuild,
+		CodeBuildActions.StopBuildBatch,
+		CodeBuildActions.StopSandbox,
+		CodeBuildActions.UpdateFleet,
+		CodeBuildActions.UpdateProject,
+		CodeBuildActions.UpdateProjectVisibility,
+		CodeBuildActions.UpdateReport,
+		CodeBuildActions.UpdateReportGroup,
+		CodeBuildActions.UpdateWebhook,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeBuildActions.LIST_BUILD_BATCHES,
-		CodeBuildActions.LIST_BUILD_BATCHES_FOR_PROJECT,
-		CodeBuildActions.LIST_BUILDS,
-		CodeBuildActions.LIST_BUILDS_FOR_PROJECT,
-		CodeBuildActions.LIST_COMMAND_EXECUTIONS_FOR_SANDBOX,
-		CodeBuildActions.LIST_CONNECTED_O_AUTH_ACCOUNTS,
-		CodeBuildActions.LIST_CURATED_ENVIRONMENT_IMAGES,
-		CodeBuildActions.LIST_FLEETS,
-		CodeBuildActions.LIST_PROJECTS,
-		CodeBuildActions.LIST_REPORT_GROUPS,
-		CodeBuildActions.LIST_REPORTS,
-		CodeBuildActions.LIST_REPORTS_FOR_REPORT_GROUP,
-		CodeBuildActions.LIST_REPOSITORIES,
-		CodeBuildActions.LIST_SANDBOXES,
-		CodeBuildActions.LIST_SANDBOXES_FOR_PROJECT,
-		CodeBuildActions.LIST_SHARED_PROJECTS,
-		CodeBuildActions.LIST_SHARED_REPORT_GROUPS,
-		CodeBuildActions.LIST_SOURCE_CREDENTIALS,
+	static readonly AllListActions: string[] = [
+		CodeBuildActions.ListBuildBatches,
+		CodeBuildActions.ListBuildBatchesForProject,
+		CodeBuildActions.ListBuilds,
+		CodeBuildActions.ListBuildsForProject,
+		CodeBuildActions.ListCommandExecutionsForSandbox,
+		CodeBuildActions.ListConnectedOAuthAccounts,
+		CodeBuildActions.ListCuratedEnvironmentImages,
+		CodeBuildActions.ListFleets,
+		CodeBuildActions.ListProjects,
+		CodeBuildActions.ListReportGroups,
+		CodeBuildActions.ListReports,
+		CodeBuildActions.ListReportsForReportGroup,
+		CodeBuildActions.ListRepositories,
+		CodeBuildActions.ListSandboxes,
+		CodeBuildActions.ListSandboxesForProject,
+		CodeBuildActions.ListSharedProjects,
+		CodeBuildActions.ListSharedReportGroups,
+		CodeBuildActions.ListSourceCredentials,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CodeBuildActions.DELETE_RESOURCE_POLICY,
-		CodeBuildActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		CodeBuildActions.DeleteResourcePolicy,
+		CodeBuildActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const BuildArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):build/(?<buildId>[^:/?]+)$",
-);
-const BuildBatchArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):build-batch/(?<buildBatchId>[^:/?]+)$",
-);
-const FleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):fleet/(?<fleetName>[^:/?]+):(?<fleetId>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectName>[^:/?]+)$",
-);
-const ReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):report/(?<reportGroupName>[^:/?]+):(?<reportId>[^:/?]+)$",
-);
-const ReportGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):report-group/(?<reportGroupName>[^:/?]+)$",
-);
-const SandboxArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):sandbox/(?<sandboxId>[^:/?]+)$",
-);
+/**
+ * Properties for building a build ARN.
+ */
+export interface CodeBuildBuildArnProps {
+	/** The BuildId component of the ARN. */
+	readonly buildId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a build ARN.
+ */
+export interface CodeBuildBuildArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BuildId component. */
+	readonly buildId: string;
+}
+
+/**
+ * Properties for building a build-batch ARN.
+ */
+export interface CodeBuildBuildBatchArnProps {
+	/** The BuildBatchId component of the ARN. */
+	readonly buildBatchId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a build-batch ARN.
+ */
+export interface CodeBuildBuildBatchArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BuildBatchId component. */
+	readonly buildBatchId: string;
+}
+
+/**
+ * Properties for building a fleet ARN.
+ */
+export interface CodeBuildFleetArnProps {
+	/** The FleetName component of the ARN. */
+	readonly fleetName: string;
+	/** The FleetId component of the ARN. */
+	readonly fleetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fleet ARN.
+ */
+export interface CodeBuildFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FleetName component. */
+	readonly fleetName: string;
+	/** The FleetId component. */
+	readonly fleetId: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface CodeBuildProjectArnProps {
+	/** The ProjectName component of the ARN. */
+	readonly projectName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface CodeBuildProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectName component. */
+	readonly projectName: string;
+}
+
+/**
+ * Properties for building a report ARN.
+ */
+export interface CodeBuildReportArnProps {
+	/** The ReportGroupName component of the ARN. */
+	readonly reportGroupName: string;
+	/** The ReportId component of the ARN. */
+	readonly reportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a report ARN.
+ */
+export interface CodeBuildReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportGroupName component. */
+	readonly reportGroupName: string;
+	/** The ReportId component. */
+	readonly reportId: string;
+}
+
+/**
+ * Properties for building a report-group ARN.
+ */
+export interface CodeBuildReportGroupArnProps {
+	/** The ReportGroupName component of the ARN. */
+	readonly reportGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a report-group ARN.
+ */
+export interface CodeBuildReportGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportGroupName component. */
+	readonly reportGroupName: string;
+}
+
+/**
+ * Properties for building a sandbox ARN.
+ */
+export interface CodeBuildSandboxArnProps {
+	/** The SandboxId component of the ARN. */
+	readonly sandboxId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sandbox ARN.
+ */
+export interface CodeBuildSandboxArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SandboxId component. */
+	readonly sandboxId: string;
+}
+
+const BuildArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):build\/(?<buildId>[^:/?]+)$/;
+const BuildBatchArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):build-batch\/(?<buildBatchId>[^:/?]+)$/;
+const FleetArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):fleet\/(?<fleetName>[^:/?]+):(?<fleetId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectName>[^:/?]+)$/;
+const ReportArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):report\/(?<reportGroupName>[^:/?]+):(?<reportId>[^:/?]+)$/;
+const ReportGroupArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):report-group\/(?<reportGroupName>[^:/?]+)$/;
+const SandboxArnRegex =
+	/^arn:(?<partition>[^:]+):codebuild:(?<region>[^:]*):(?<account>[^:]*):sandbox\/(?<sandboxId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codebuild resources.
@@ -270,16 +462,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the build resource.
 	 */
-	static build(props: {
-		/** The BuildId component of the ARN. */
-		readonly buildId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static buildResource(props: CodeBuildBuildArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:build/${props.buildId}`;
 	}
 
@@ -294,12 +477,7 @@ export class CodeBuildResources {
 	 * Parses a build ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBuildArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		buildId: string;
-	} {
+	static parseBuildArn(arn: string): CodeBuildBuildArnComponents {
 		const match = BuildArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid build ARN: ${arn}`);
@@ -315,16 +493,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the build-batch resource.
 	 */
-	static buildBatch(props: {
-		/** The BuildBatchId component of the ARN. */
-		readonly buildBatchId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static buildBatch(props: CodeBuildBuildBatchArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:build-batch/${props.buildBatchId}`;
 	}
 
@@ -339,12 +508,7 @@ export class CodeBuildResources {
 	 * Parses a build-batch ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBuildBatchArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		buildBatchId: string;
-	} {
+	static parseBuildBatchArn(arn: string): CodeBuildBuildBatchArnComponents {
 		const match = BuildBatchArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid build-batch ARN: ${arn}`);
@@ -360,18 +524,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the fleet resource.
 	 */
-	static fleet(props: {
-		/** The FleetName component of the ARN. */
-		readonly fleetName: string;
-		/** The FleetId component of the ARN. */
-		readonly fleetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fleet(props: CodeBuildFleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:fleet/${props.fleetName}:${props.fleetId}`;
 	}
 
@@ -386,13 +539,7 @@ export class CodeBuildResources {
 	 * Parses a fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fleetName: string;
-		fleetId: string;
-	} {
+	static parseFleetArn(arn: string): CodeBuildFleetArnComponents {
 		const match = FleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fleet ARN: ${arn}`);
@@ -409,16 +556,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ProjectName component of the ARN. */
-		readonly projectName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: CodeBuildProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectName}`;
 	}
 
@@ -433,12 +571,7 @@ export class CodeBuildResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectName: string;
-	} {
+	static parseProjectArn(arn: string): CodeBuildProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -454,18 +587,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the report resource.
 	 */
-	static report(props: {
-		/** The ReportGroupName component of the ARN. */
-		readonly reportGroupName: string;
-		/** The ReportId component of the ARN. */
-		readonly reportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static report(props: CodeBuildReportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:report/${props.reportGroupName}:${props.reportId}`;
 	}
 
@@ -480,13 +602,7 @@ export class CodeBuildResources {
 	 * Parses a report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportGroupName: string;
-		reportId: string;
-	} {
+	static parseReportArn(arn: string): CodeBuildReportArnComponents {
 		const match = ReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid report ARN: ${arn}`);
@@ -503,16 +619,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the report-group resource.
 	 */
-	static reportGroup(props: {
-		/** The ReportGroupName component of the ARN. */
-		readonly reportGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reportGroup(props: CodeBuildReportGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:report-group/${props.reportGroupName}`;
 	}
 
@@ -527,12 +634,7 @@ export class CodeBuildResources {
 	 * Parses a report-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReportGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportGroupName: string;
-	} {
+	static parseReportGroupArn(arn: string): CodeBuildReportGroupArnComponents {
 		const match = ReportGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid report-group ARN: ${arn}`);
@@ -548,16 +650,7 @@ export class CodeBuildResources {
 	/**
 	 * Builds an ARN for the sandbox resource.
 	 */
-	static sandbox(props: {
-		/** The SandboxId component of the ARN. */
-		readonly sandboxId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sandbox(props: CodeBuildSandboxArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codebuild:${props.region ?? "*"}:${props.account ?? "*"}:sandbox/${props.sandboxId}`;
 	}
 
@@ -572,12 +665,7 @@ export class CodeBuildResources {
 	 * Parses a sandbox ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSandboxArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sandboxId: string;
-	} {
+	static parseSandboxArn(arn: string): CodeBuildSandboxArnComponents {
 		const match = SandboxArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sandbox ARN: ${arn}`);
@@ -596,200 +684,186 @@ export class CodeBuildResources {
  */
 export class CodeBuildOperations {
 	/** IAM actions required for the BatchDeleteBuilds API call. */
-	static readonly BATCH_DELETE_BUILDS: string[] = [
-		"codebuild:BatchDeleteBuilds",
-	];
+	static readonly BatchDeleteBuilds: string[] = ["codebuild:BatchDeleteBuilds"];
 	/** IAM actions required for the BatchGetBuildBatches API call. */
-	static readonly BATCH_GET_BUILD_BATCHES: string[] = [
+	static readonly BatchGetBuildBatches: string[] = [
 		"codebuild:BatchGetBuildBatches",
 	];
 	/** IAM actions required for the BatchGetBuilds API call. */
-	static readonly BATCH_GET_BUILDS: string[] = ["codebuild:BatchGetBuilds"];
+	static readonly BatchGetBuilds: string[] = ["codebuild:BatchGetBuilds"];
 	/** IAM actions required for the BatchGetCommandExecutions API call. */
-	static readonly BATCH_GET_COMMAND_EXECUTIONS: string[] = [
+	static readonly BatchGetCommandExecutions: string[] = [
 		"codebuild:BatchGetCommandExecutions",
 	];
 	/** IAM actions required for the BatchGetFleets API call. */
-	static readonly BATCH_GET_FLEETS: string[] = ["codebuild:BatchGetFleets"];
+	static readonly BatchGetFleets: string[] = ["codebuild:BatchGetFleets"];
 	/** IAM actions required for the BatchGetProjects API call. */
-	static readonly BATCH_GET_PROJECTS: string[] = ["codebuild:BatchGetProjects"];
+	static readonly BatchGetProjects: string[] = ["codebuild:BatchGetProjects"];
 	/** IAM actions required for the BatchGetReportGroups API call. */
-	static readonly BATCH_GET_REPORT_GROUPS: string[] = [
+	static readonly BatchGetReportGroups: string[] = [
 		"codebuild:BatchGetReportGroups",
 	];
 	/** IAM actions required for the BatchGetReports API call. */
-	static readonly BATCH_GET_REPORTS: string[] = ["codebuild:BatchGetReports"];
+	static readonly BatchGetReports: string[] = ["codebuild:BatchGetReports"];
 	/** IAM actions required for the BatchGetSandboxes API call. */
-	static readonly BATCH_GET_SANDBOXES: string[] = [
-		"codebuild:BatchGetSandboxes",
-	];
+	static readonly BatchGetSandboxes: string[] = ["codebuild:BatchGetSandboxes"];
 	/** IAM actions required for the CreateFleet API call. */
-	static readonly CREATE_FLEET: string[] = [
+	static readonly CreateFleet: string[] = [
 		"codebuild:CreateFleet",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [
+	static readonly CreateProject: string[] = [
 		"codebuild:CreateProject",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateReportGroup API call. */
-	static readonly CREATE_REPORT_GROUP: string[] = [
-		"codebuild:CreateReportGroup",
-	];
+	static readonly CreateReportGroup: string[] = ["codebuild:CreateReportGroup"];
 	/** IAM actions required for the CreateWebhook API call. */
-	static readonly CREATE_WEBHOOK: string[] = ["codebuild:CreateWebhook"];
+	static readonly CreateWebhook: string[] = ["codebuild:CreateWebhook"];
 	/** IAM actions required for the DeleteBuildBatch API call. */
-	static readonly DELETE_BUILD_BATCH: string[] = ["codebuild:DeleteBuildBatch"];
+	static readonly DeleteBuildBatch: string[] = ["codebuild:DeleteBuildBatch"];
 	/** IAM actions required for the DeleteFleet API call. */
-	static readonly DELETE_FLEET: string[] = ["codebuild:DeleteFleet"];
+	static readonly DeleteFleet: string[] = ["codebuild:DeleteFleet"];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = ["codebuild:DeleteProject"];
+	static readonly DeleteProject: string[] = ["codebuild:DeleteProject"];
 	/** IAM actions required for the DeleteReport API call. */
-	static readonly DELETE_REPORT: string[] = ["codebuild:DeleteReport"];
+	static readonly DeleteReport: string[] = ["codebuild:DeleteReport"];
 	/** IAM actions required for the DeleteReportGroup API call. */
-	static readonly DELETE_REPORT_GROUP: string[] = [
-		"codebuild:DeleteReportGroup",
-	];
+	static readonly DeleteReportGroup: string[] = ["codebuild:DeleteReportGroup"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"codebuild:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSourceCredentials API call. */
-	static readonly DELETE_SOURCE_CREDENTIALS: string[] = [
+	static readonly DeleteSourceCredentials: string[] = [
 		"codebuild:DeleteSourceCredentials",
 	];
 	/** IAM actions required for the DeleteWebhook API call. */
-	static readonly DELETE_WEBHOOK: string[] = ["codebuild:DeleteWebhook"];
+	static readonly DeleteWebhook: string[] = ["codebuild:DeleteWebhook"];
 	/** IAM actions required for the DescribeCodeCoverages API call. */
-	static readonly DESCRIBE_CODE_COVERAGES: string[] = [
+	static readonly DescribeCodeCoverages: string[] = [
 		"codebuild:DescribeCodeCoverages",
 	];
 	/** IAM actions required for the DescribeTestCases API call. */
-	static readonly DESCRIBE_TEST_CASES: string[] = [
-		"codebuild:DescribeTestCases",
-	];
+	static readonly DescribeTestCases: string[] = ["codebuild:DescribeTestCases"];
 	/** IAM actions required for the GetReportGroupTrend API call. */
-	static readonly GET_REPORT_GROUP_TREND: string[] = [
+	static readonly opGetReportGroupTrend: string[] = [
 		"codebuild:GetReportGroupTrend",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"codebuild:GetResourcePolicy",
 	];
 	/** IAM actions required for the ImportSourceCredentials API call. */
-	static readonly IMPORT_SOURCE_CREDENTIALS: string[] = [
+	static readonly ImportSourceCredentials: string[] = [
 		"codebuild:ImportSourceCredentials",
 	];
 	/** IAM actions required for the InvalidateProjectCache API call. */
-	static readonly INVALIDATE_PROJECT_CACHE: string[] = [
+	static readonly InvalidateProjectCache: string[] = [
 		"codebuild:InvalidateProjectCache",
 	];
 	/** IAM actions required for the ListBuildBatches API call. */
-	static readonly LIST_BUILD_BATCHES: string[] = ["codebuild:ListBuildBatches"];
+	static readonly ListBuildBatches: string[] = ["codebuild:ListBuildBatches"];
 	/** IAM actions required for the ListBuildBatchesForProject API call. */
-	static readonly LIST_BUILD_BATCHES_FOR_PROJECT: string[] = [
+	static readonly ListBuildBatchesForProject: string[] = [
 		"codebuild:ListBuildBatchesForProject",
 	];
 	/** IAM actions required for the ListBuilds API call. */
-	static readonly LIST_BUILDS: string[] = ["codebuild:ListBuilds"];
+	static readonly ListBuilds: string[] = ["codebuild:ListBuilds"];
 	/** IAM actions required for the ListBuildsForProject API call. */
-	static readonly LIST_BUILDS_FOR_PROJECT: string[] = [
+	static readonly ListBuildsForProject: string[] = [
 		"codebuild:ListBuildsForProject",
 	];
 	/** IAM actions required for the ListCommandExecutionsForSandbox API call. */
-	static readonly LIST_COMMAND_EXECUTIONS_FOR_SANDBOX: string[] = [
+	static readonly ListCommandExecutionsForSandbox: string[] = [
 		"codebuild:ListCommandExecutionsForSandbox",
 	];
 	/** IAM actions required for the ListCuratedEnvironmentImages API call. */
-	static readonly LIST_CURATED_ENVIRONMENT_IMAGES: string[] = [
+	static readonly ListCuratedEnvironmentImages: string[] = [
 		"codebuild:ListCuratedEnvironmentImages",
 	];
 	/** IAM actions required for the ListFleets API call. */
-	static readonly LIST_FLEETS: string[] = ["codebuild:ListFleets"];
+	static readonly ListFleets: string[] = ["codebuild:ListFleets"];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly LIST_PROJECTS: string[] = ["codebuild:ListProjects"];
+	static readonly ListProjects: string[] = ["codebuild:ListProjects"];
 	/** IAM actions required for the ListReportGroups API call. */
-	static readonly LIST_REPORT_GROUPS: string[] = ["codebuild:ListReportGroups"];
+	static readonly ListReportGroups: string[] = ["codebuild:ListReportGroups"];
 	/** IAM actions required for the ListReports API call. */
-	static readonly LIST_REPORTS: string[] = ["codebuild:ListReports"];
+	static readonly ListReports: string[] = ["codebuild:ListReports"];
 	/** IAM actions required for the ListReportsForReportGroup API call. */
-	static readonly LIST_REPORTS_FOR_REPORT_GROUP: string[] = [
+	static readonly ListReportsForReportGroup: string[] = [
 		"codebuild:ListReportsForReportGroup",
 	];
 	/** IAM actions required for the ListSandboxes API call. */
-	static readonly LIST_SANDBOXES: string[] = ["codebuild:ListSandboxes"];
+	static readonly ListSandboxes: string[] = ["codebuild:ListSandboxes"];
 	/** IAM actions required for the ListSandboxesForProject API call. */
-	static readonly LIST_SANDBOXES_FOR_PROJECT: string[] = [
+	static readonly ListSandboxesForProject: string[] = [
 		"codebuild:ListSandboxesForProject",
 	];
 	/** IAM actions required for the ListSharedProjects API call. */
-	static readonly LIST_SHARED_PROJECTS: string[] = [
+	static readonly ListSharedProjects: string[] = [
 		"codebuild:ListSharedProjects",
 	];
 	/** IAM actions required for the ListSharedReportGroups API call. */
-	static readonly LIST_SHARED_REPORT_GROUPS: string[] = [
+	static readonly ListSharedReportGroups: string[] = [
 		"codebuild:ListSharedReportGroups",
 	];
 	/** IAM actions required for the ListSourceCredentials API call. */
-	static readonly LIST_SOURCE_CREDENTIALS: string[] = [
+	static readonly ListSourceCredentials: string[] = [
 		"codebuild:ListSourceCredentials",
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
-		"codebuild:PutResourcePolicy",
-	];
+	static readonly PutResourcePolicy: string[] = ["codebuild:PutResourcePolicy"];
 	/** IAM actions required for the RetryBuild API call. */
-	static readonly RETRY_BUILD: string[] = ["codebuild:RetryBuild"];
+	static readonly RetryBuild: string[] = ["codebuild:RetryBuild"];
 	/** IAM actions required for the RetryBuildBatch API call. */
-	static readonly RETRY_BUILD_BATCH: string[] = ["codebuild:RetryBuildBatch"];
+	static readonly RetryBuildBatch: string[] = ["codebuild:RetryBuildBatch"];
 	/** IAM actions required for the StartBuild API call. */
-	static readonly START_BUILD: string[] = [
+	static readonly StartBuild: string[] = [
 		"iam:PassRole",
 		"codebuild:StartBuild",
 	];
 	/** IAM actions required for the StartBuildBatch API call. */
-	static readonly START_BUILD_BATCH: string[] = [
+	static readonly StartBuildBatch: string[] = [
 		"iam:PassRole",
 		"codebuild:StartBuildBatch",
 	];
 	/** IAM actions required for the StartCommandExecution API call. */
-	static readonly START_COMMAND_EXECUTION: string[] = [
+	static readonly StartCommandExecution: string[] = [
 		"codebuild:StartCommandExecution",
 	];
 	/** IAM actions required for the StartSandbox API call. */
-	static readonly START_SANDBOX: string[] = ["codebuild:StartSandbox"];
+	static readonly StartSandbox: string[] = ["codebuild:StartSandbox"];
 	/** IAM actions required for the StartSandboxConnection API call. */
-	static readonly START_SANDBOX_CONNECTION: string[] = [
+	static readonly StartSandboxConnection: string[] = [
 		"codebuild:StartSandboxConnection",
 	];
 	/** IAM actions required for the StopBuild API call. */
-	static readonly STOP_BUILD: string[] = ["codebuild:StopBuild"];
+	static readonly StopBuild: string[] = ["codebuild:StopBuild"];
 	/** IAM actions required for the StopBuildBatch API call. */
-	static readonly STOP_BUILD_BATCH: string[] = ["codebuild:StopBuildBatch"];
+	static readonly StopBuildBatch: string[] = ["codebuild:StopBuildBatch"];
 	/** IAM actions required for the StopSandbox API call. */
-	static readonly STOP_SANDBOX: string[] = ["codebuild:StopSandbox"];
+	static readonly StopSandbox: string[] = ["codebuild:StopSandbox"];
 	/** IAM actions required for the UpdateFleet API call. */
-	static readonly UPDATE_FLEET: string[] = [
+	static readonly UpdateFleet: string[] = [
 		"iam:PassRole",
 		"codebuild:UpdateFleet",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UPDATE_PROJECT: string[] = [
+	static readonly UpdateProject: string[] = [
 		"iam:PassRole",
 		"codebuild:UpdateProject",
 	];
 	/** IAM actions required for the UpdateProjectVisibility API call. */
-	static readonly UPDATE_PROJECT_VISIBILITY: string[] = [
+	static readonly UpdateProjectVisibility: string[] = [
 		"iam:PassRole",
 		"codebuild:UpdateProjectVisibility",
 	];
 	/** IAM actions required for the UpdateReportGroup API call. */
-	static readonly UPDATE_REPORT_GROUP: string[] = [
-		"codebuild:UpdateReportGroup",
-	];
+	static readonly UpdateReportGroup: string[] = ["codebuild:UpdateReportGroup"];
 	/** IAM actions required for the UpdateWebhook API call. */
-	static readonly UPDATE_WEBHOOK: string[] = ["codebuild:UpdateWebhook"];
+	static readonly UpdateWebhook: string[] = ["codebuild:UpdateWebhook"];
 }
 
 /**
@@ -797,7 +871,7 @@ export class CodeBuildOperations {
  */
 export class CodeBuildConditions {
 	/** Condition keys applicable to the CreateFleet action. */
-	static readonly CREATE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:computeConfiguration",
@@ -816,7 +890,7 @@ export class CodeBuildConditions {
 		"codebuild:vpcConfig.vpcId",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:artifacts",
@@ -905,7 +979,7 @@ export class CodeBuildConditions {
 		"codebuild:vpcConfig.vpcId",
 	];
 	/** Condition keys applicable to the CreateReportGroup action. */
-	static readonly CREATE_REPORT_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateReportGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:exportConfig.s3Destination.bucket",
@@ -915,7 +989,7 @@ export class CodeBuildConditions {
 		"codebuild:exportConfig.s3Destination.path",
 	];
 	/** Condition keys applicable to the CreateWebhook action. */
-	static readonly CREATE_WEBHOOK_CONDITION_KEYS: string[] = [
+	static readonly CreateWebhookConditionKeys: string[] = [
 		"codebuild:buildType",
 		"codebuild:manualCreation",
 		"codebuild:scopeConfiguration.domain",
@@ -923,7 +997,7 @@ export class CodeBuildConditions {
 		"codebuild:scopeConfiguration.scope",
 	];
 	/** Condition keys applicable to the ImportSourceCredentials action. */
-	static readonly IMPORT_SOURCE_CREDENTIALS_CONDITION_KEYS: string[] = [
+	static readonly ImportSourceCredentialsConditionKeys: string[] = [
 		"codebuild:authType",
 		"codebuild:serverType",
 		"codebuild:shouldOverwrite",
@@ -931,7 +1005,7 @@ export class CodeBuildConditions {
 		"codebuild:username",
 	];
 	/** Condition keys applicable to the StartBuild action. */
-	static readonly START_BUILD_CONDITION_KEYS: string[] = [
+	static readonly StartBuildConditionKeys: string[] = [
 		"codebuild:artifacts",
 		"codebuild:artifacts.bucketOwnerAccess",
 		"codebuild:artifacts.encryptionDisabled",
@@ -998,7 +1072,7 @@ export class CodeBuildConditions {
 		"codebuild:source.location",
 	];
 	/** Condition keys applicable to the StartBuildBatch action. */
-	static readonly START_BUILD_BATCH_CONDITION_KEYS: string[] = [
+	static readonly StartBuildBatchConditionKeys: string[] = [
 		"codebuild:artifacts",
 		"codebuild:artifacts.bucketOwnerAccess",
 		"codebuild:artifacts.encryptionDisabled",
@@ -1065,7 +1139,7 @@ export class CodeBuildConditions {
 		"codebuild:source.location",
 	];
 	/** Condition keys applicable to the UpdateFleet action. */
-	static readonly UPDATE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly UpdateFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:computeConfiguration",
@@ -1084,7 +1158,7 @@ export class CodeBuildConditions {
 		"codebuild:vpcConfig.vpcId",
 	];
 	/** Condition keys applicable to the UpdateProject action. */
-	static readonly UPDATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly UpdateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:artifacts",
@@ -1173,13 +1247,13 @@ export class CodeBuildConditions {
 		"codebuild:vpcConfig.vpcId",
 	];
 	/** Condition keys applicable to the UpdateProjectVisibility action. */
-	static readonly UPDATE_PROJECT_VISIBILITY_CONDITION_KEYS: string[] = [
+	static readonly UpdateProjectVisibilityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:projectVisibility",
 	];
 	/** Condition keys applicable to the UpdateReportGroup action. */
-	static readonly UPDATE_REPORT_GROUP_CONDITION_KEYS: string[] = [
+	static readonly UpdateReportGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"codebuild:exportConfig.s3Destination.bucket",
@@ -1189,7 +1263,7 @@ export class CodeBuildConditions {
 		"codebuild:exportConfig.s3Destination.path",
 	];
 	/** Condition keys applicable to the UpdateWebhook action. */
-	static readonly UPDATE_WEBHOOK_CONDITION_KEYS: string[] = [
+	static readonly UpdateWebhookConditionKeys: string[] = [
 		"codebuild:buildType",
 		"codebuild:manualCreation",
 		"codebuild:scopeConfiguration.domain",
@@ -1198,11 +1272,11 @@ export class CodeBuildConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: codebuild:artifacts (Bool) */
 	static readonly ARTIFACTS = "codebuild:artifacts";
 	/** Condition key: codebuild:artifacts.bucketOwnerAccess (String) */
@@ -1297,9 +1371,6 @@ export class CodeBuildConditions {
 	/** Condition key: codebuild:environment.environmentVariables.value (ArrayOfString) */
 	static readonly ENVIRONMENT_ENVIRONMENT_VARIABLES_VALUE =
 		"codebuild:environment.environmentVariables.value";
-	/** Condition key: codebuild:environment.environmentVariables/${name}.value (String) */
-	static readonly ENVIRONMENT_ENVIRONMENT_VARIABLES_VALUE =
-		"codebuild:environment.environmentVariables/${name}.value";
 	/** Condition key: codebuild:environment.fleet.fleetArn (ARN) */
 	static readonly ENVIRONMENT_FLEET_FLEET_ARN =
 		"codebuild:environment.fleet.fleetArn";
@@ -1322,8 +1393,6 @@ export class CodeBuildConditions {
 		"codebuild:environment.registryCredential.credentialProvider";
 	/** Condition key: codebuild:environment.type (String) */
 	static readonly ENVIRONMENT_TYPE = "codebuild:environment.type";
-	/** Condition key: codebuild:environmentType (String) */
-	static readonly ENVIRONMENT_TYPE = "codebuild:environmentType";
 	/** Condition key: codebuild:exportConfig.s3Destination.bucket (String) */
 	static readonly EXPORT_CONFIG_S3_DESTINATION_BUCKET =
 		"codebuild:exportConfig.s3Destination.bucket";
@@ -1348,12 +1417,6 @@ export class CodeBuildConditions {
 	/** Condition key: codebuild:fileSystemLocations.type (ArrayOfString) */
 	static readonly FILE_SYSTEM_LOCATIONS_TYPE =
 		"codebuild:fileSystemLocations.type";
-	/** Condition key: codebuild:fileSystemLocations/${identifier}.location (String) */
-	static readonly FILE_SYSTEM_LOCATIONS_LOCATION =
-		"codebuild:fileSystemLocations/${identifier}.location";
-	/** Condition key: codebuild:fileSystemLocations/${identifier}.type (String) */
-	static readonly FILE_SYSTEM_LOCATIONS_TYPE =
-		"codebuild:fileSystemLocations/${identifier}.type";
 	/** Condition key: codebuild:fleetServiceRole (String) */
 	static readonly FLEET_SERVICE_ROLE = "codebuild:fleetServiceRole";
 	/** Condition key: codebuild:imageId (String) */
@@ -1403,15 +1466,6 @@ export class CodeBuildConditions {
 	/** Condition key: codebuild:secondaryArtifacts.location (ArrayOfString) */
 	static readonly SECONDARY_ARTIFACTS_LOCATION =
 		"codebuild:secondaryArtifacts.location";
-	/** Condition key: codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess (String) */
-	static readonly SECONDARY_ARTIFACTS_BUCKET_OWNER_ACCESS =
-		"codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess";
-	/** Condition key: codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled (Bool) */
-	static readonly SECONDARY_ARTIFACTS_ENCRYPTION_DISABLED =
-		"codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled";
-	/** Condition key: codebuild:secondaryArtifacts/${artifactIdentifier}.location (String) */
-	static readonly SECONDARY_ARTIFACTS_LOCATION =
-		"codebuild:secondaryArtifacts/${artifactIdentifier}.location";
 	/** Condition key: codebuild:secondarySources (Bool) */
 	static readonly SECONDARY_SOURCES = "codebuild:secondarySources";
 	/** Condition key: codebuild:secondarySources.auth.resource (ArrayOfString) */
@@ -1438,27 +1492,6 @@ export class CodeBuildConditions {
 	/** Condition key: codebuild:secondarySources.sourceIdentifier (ArrayOfString) */
 	static readonly SECONDARY_SOURCES_SOURCE_IDENTIFIER =
 		"codebuild:secondarySources.sourceIdentifier";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.auth.resource (String) */
-	static readonly SECONDARY_SOURCES_AUTH_RESOURCE =
-		"codebuild:secondarySources/${sourceIdentifier}.auth.resource";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.auth.type (String) */
-	static readonly SECONDARY_SOURCES_AUTH_TYPE =
-		"codebuild:secondarySources/${sourceIdentifier}.auth.type";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context (String) */
-	static readonly SECONDARY_SOURCES_BUILD_STATUS_CONFIG_CONTEXT =
-		"codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl (String) */
-	static readonly SECONDARY_SOURCES_BUILD_STATUS_CONFIG_TARGET_URL =
-		"codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.buildspec (Bool) */
-	static readonly SECONDARY_SOURCES_BUILDSPEC =
-		"codebuild:secondarySources/${sourceIdentifier}.buildspec";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.insecureSsl (Bool) */
-	static readonly SECONDARY_SOURCES_INSECURE_SSL =
-		"codebuild:secondarySources/${sourceIdentifier}.insecureSsl";
-	/** Condition key: codebuild:secondarySources/${sourceIdentifier}.location (String) */
-	static readonly SECONDARY_SOURCES_LOCATION =
-		"codebuild:secondarySources/${sourceIdentifier}.location";
 	/** Condition key: codebuild:serverType (String) */
 	static readonly SERVER_TYPE = "codebuild:serverType";
 	/** Condition key: codebuild:serviceRole (String) */
@@ -1874,19 +1907,6 @@ export class CodeBuildConditions {
 	}
 
 	/**
-	 * Generates a condition block for `codebuild:environment.environmentVariables/${name}.value`.
-	 */
-	static environmentEnvironmentVariablesValue(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:environment.environmentVariables/${name}.value": value,
-			},
-		};
-	}
-
-	/**
 	 * Generates a condition block for `codebuild:environment.fleet.fleetArn`.
 	 */
 	static environmentFleetFleetARN(
@@ -1966,15 +1986,6 @@ export class CodeBuildConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "codebuild:environment.type": value } };
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:environmentType`.
-	 */
-	static environmentType(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return { StringEquals: { "codebuild:environmentType": value } };
 	}
 
 	/**
@@ -2073,32 +2084,6 @@ export class CodeBuildConditions {
 		return {
 			"ForAllValues:StringEquals": {
 				"codebuild:fileSystemLocations.type": values,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:fileSystemLocations/${identifier}.location`.
-	 */
-	static fileSystemLocationsLocation(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:fileSystemLocations/${identifier}.location": value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:fileSystemLocations/${identifier}.type`.
-	 */
-	static fileSystemLocationsType(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:fileSystemLocations/${identifier}.type": value,
 			},
 		};
 	}
@@ -2289,47 +2274,6 @@ export class CodeBuildConditions {
 	}
 
 	/**
-	 * Generates a condition block for `codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess`.
-	 */
-	static secondaryArtifactsBucketOwnerAccess(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondaryArtifacts/${artifactIdentifier}.bucketOwnerAccess":
-					value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled`.
-	 */
-	static secondaryArtifactsEncryptionDisabled(
-		value: boolean,
-	): Record<string, Record<string, boolean>> {
-		return {
-			Bool: {
-				"codebuild:secondaryArtifacts/${artifactIdentifier}.encryptionDisabled":
-					value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondaryArtifacts/${artifactIdentifier}.location`.
-	 */
-	static secondaryArtifactsLocation(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondaryArtifacts/${artifactIdentifier}.location": value,
-			},
-		};
-	}
-
-	/**
 	 * Generates a condition block for `codebuild:secondarySources`.
 	 */
 	static secondarySources(
@@ -2434,99 +2378,6 @@ export class CodeBuildConditions {
 		return {
 			"ForAllValues:StringEquals": {
 				"codebuild:secondarySources.sourceIdentifier": values,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.auth.resource`.
-	 */
-	static secondarySourcesAuthResource(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondarySources/${sourceIdentifier}.auth.resource": value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.auth.type`.
-	 */
-	static secondarySourcesAuthType(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondarySources/${sourceIdentifier}.auth.type": value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context`.
-	 */
-	static secondarySourcesBuildStatusConfigContext(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.context":
-					value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl`.
-	 */
-	static secondarySourcesBuildStatusConfigTargetURL(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondarySources/${sourceIdentifier}.buildStatusConfig.targetUrl":
-					value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.buildspec`.
-	 */
-	static secondarySourcesBuildspec(
-		value: boolean,
-	): Record<string, Record<string, boolean>> {
-		return {
-			Bool: {
-				"codebuild:secondarySources/${sourceIdentifier}.buildspec": value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.insecureSsl`.
-	 */
-	static secondarySourcesInsecureSSL(
-		value: boolean,
-	): Record<string, Record<string, boolean>> {
-		return {
-			Bool: {
-				"codebuild:secondarySources/${sourceIdentifier}.insecureSsl": value,
-			},
-		};
-	}
-
-	/**
-	 * Generates a condition block for `codebuild:secondarySources/${sourceIdentifier}.location`.
-	 */
-	static secondarySourcesLocation(
-		value: string,
-	): Record<string, Record<string, string>> {
-		return {
-			StringEquals: {
-				"codebuild:secondarySources/${sourceIdentifier}.location": value,
 			},
 		};
 	}

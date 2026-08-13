@@ -13,147 +13,281 @@ export class TnbActions {
 	static readonly SERVICE_PREFIX = "tnb";
 
 	/** [Write] tnb:CancelSolNetworkOperation */
-	static readonly CANCEL_SOL_NETWORK_OPERATION =
-		"tnb:CancelSolNetworkOperation";
+	static readonly CancelSolNetworkOperation = "tnb:CancelSolNetworkOperation";
 	/** [Write] tnb:CreateSolFunctionPackage */
-	static readonly CREATE_SOL_FUNCTION_PACKAGE = "tnb:CreateSolFunctionPackage";
+	static readonly CreateSolFunctionPackage = "tnb:CreateSolFunctionPackage";
 	/** [Write] tnb:CreateSolNetworkInstance */
-	static readonly CREATE_SOL_NETWORK_INSTANCE = "tnb:CreateSolNetworkInstance";
+	static readonly CreateSolNetworkInstance = "tnb:CreateSolNetworkInstance";
 	/** [Write] tnb:CreateSolNetworkPackage */
-	static readonly CREATE_SOL_NETWORK_PACKAGE = "tnb:CreateSolNetworkPackage";
+	static readonly CreateSolNetworkPackage = "tnb:CreateSolNetworkPackage";
 	/** [Write] tnb:DeleteSolFunctionPackage */
-	static readonly DELETE_SOL_FUNCTION_PACKAGE = "tnb:DeleteSolFunctionPackage";
+	static readonly DeleteSolFunctionPackage = "tnb:DeleteSolFunctionPackage";
 	/** [Write] tnb:DeleteSolNetworkInstance */
-	static readonly DELETE_SOL_NETWORK_INSTANCE = "tnb:DeleteSolNetworkInstance";
+	static readonly DeleteSolNetworkInstance = "tnb:DeleteSolNetworkInstance";
 	/** [Write] tnb:DeleteSolNetworkPackage */
-	static readonly DELETE_SOL_NETWORK_PACKAGE = "tnb:DeleteSolNetworkPackage";
+	static readonly DeleteSolNetworkPackage = "tnb:DeleteSolNetworkPackage";
 	/** [Read] tnb:GetSolFunctionInstance */
-	static readonly GET_SOL_FUNCTION_INSTANCE = "tnb:GetSolFunctionInstance";
+	static readonly actionGetSolFunctionInstance = "tnb:GetSolFunctionInstance";
 	/** [Read] tnb:GetSolFunctionPackage */
-	static readonly GET_SOL_FUNCTION_PACKAGE = "tnb:GetSolFunctionPackage";
+	static readonly actionGetSolFunctionPackage = "tnb:GetSolFunctionPackage";
 	/** [Read] tnb:GetSolFunctionPackageContent */
-	static readonly GET_SOL_FUNCTION_PACKAGE_CONTENT =
+	static readonly actionGetSolFunctionPackageContent =
 		"tnb:GetSolFunctionPackageContent";
 	/** [Read] tnb:GetSolFunctionPackageDescriptor */
-	static readonly GET_SOL_FUNCTION_PACKAGE_DESCRIPTOR =
+	static readonly actionGetSolFunctionPackageDescriptor =
 		"tnb:GetSolFunctionPackageDescriptor";
 	/** [Read] tnb:GetSolNetworkInstance */
-	static readonly GET_SOL_NETWORK_INSTANCE = "tnb:GetSolNetworkInstance";
+	static readonly actionGetSolNetworkInstance = "tnb:GetSolNetworkInstance";
 	/** [Read] tnb:GetSolNetworkOperation */
-	static readonly GET_SOL_NETWORK_OPERATION = "tnb:GetSolNetworkOperation";
+	static readonly actionGetSolNetworkOperation = "tnb:GetSolNetworkOperation";
 	/** [Read] tnb:GetSolNetworkPackage */
-	static readonly GET_SOL_NETWORK_PACKAGE = "tnb:GetSolNetworkPackage";
+	static readonly actionGetSolNetworkPackage = "tnb:GetSolNetworkPackage";
 	/** [Read] tnb:GetSolNetworkPackageContent */
-	static readonly GET_SOL_NETWORK_PACKAGE_CONTENT =
+	static readonly actionGetSolNetworkPackageContent =
 		"tnb:GetSolNetworkPackageContent";
 	/** [Read] tnb:GetSolNetworkPackageDescriptor */
-	static readonly GET_SOL_NETWORK_PACKAGE_DESCRIPTOR =
+	static readonly actionGetSolNetworkPackageDescriptor =
 		"tnb:GetSolNetworkPackageDescriptor";
 	/** [Write] tnb:InstantiateSolNetworkInstance */
-	static readonly INSTANTIATE_SOL_NETWORK_INSTANCE =
+	static readonly InstantiateSolNetworkInstance =
 		"tnb:InstantiateSolNetworkInstance";
 	/** [List] tnb:ListSolFunctionInstances */
-	static readonly LIST_SOL_FUNCTION_INSTANCES = "tnb:ListSolFunctionInstances";
+	static readonly ListSolFunctionInstances = "tnb:ListSolFunctionInstances";
 	/** [List] tnb:ListSolFunctionPackages */
-	static readonly LIST_SOL_FUNCTION_PACKAGES = "tnb:ListSolFunctionPackages";
+	static readonly ListSolFunctionPackages = "tnb:ListSolFunctionPackages";
 	/** [List] tnb:ListSolNetworkInstances */
-	static readonly LIST_SOL_NETWORK_INSTANCES = "tnb:ListSolNetworkInstances";
+	static readonly ListSolNetworkInstances = "tnb:ListSolNetworkInstances";
 	/** [List] tnb:ListSolNetworkOperations */
-	static readonly LIST_SOL_NETWORK_OPERATIONS = "tnb:ListSolNetworkOperations";
+	static readonly ListSolNetworkOperations = "tnb:ListSolNetworkOperations";
 	/** [List] tnb:ListSolNetworkPackages */
-	static readonly LIST_SOL_NETWORK_PACKAGES = "tnb:ListSolNetworkPackages";
+	static readonly ListSolNetworkPackages = "tnb:ListSolNetworkPackages";
 	/** [List] tnb:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "tnb:ListTagsForResource";
+	static readonly ListTagsForResource = "tnb:ListTagsForResource";
 	/** [Write] tnb:PutSolFunctionPackageContent */
-	static readonly PUT_SOL_FUNCTION_PACKAGE_CONTENT =
+	static readonly PutSolFunctionPackageContent =
 		"tnb:PutSolFunctionPackageContent";
 	/** [Write] tnb:PutSolNetworkPackageContent */
-	static readonly PUT_SOL_NETWORK_PACKAGE_CONTENT =
+	static readonly PutSolNetworkPackageContent =
 		"tnb:PutSolNetworkPackageContent";
 	/** [Tagging] tnb:TagResource */
-	static readonly TAG_RESOURCE = "tnb:TagResource";
+	static readonly TagResource = "tnb:TagResource";
 	/** [Write] tnb:TerminateSolNetworkInstance */
-	static readonly TERMINATE_SOL_NETWORK_INSTANCE =
+	static readonly TerminateSolNetworkInstance =
 		"tnb:TerminateSolNetworkInstance";
 	/** [Tagging] tnb:UntagResource */
-	static readonly UNTAG_RESOURCE = "tnb:UntagResource";
+	static readonly UntagResource = "tnb:UntagResource";
 	/** [Write] tnb:UpdateSolFunctionPackage */
-	static readonly UPDATE_SOL_FUNCTION_PACKAGE = "tnb:UpdateSolFunctionPackage";
+	static readonly UpdateSolFunctionPackage = "tnb:UpdateSolFunctionPackage";
 	/** [Write] tnb:UpdateSolNetworkInstance */
-	static readonly UPDATE_SOL_NETWORK_INSTANCE = "tnb:UpdateSolNetworkInstance";
+	static readonly UpdateSolNetworkInstance = "tnb:UpdateSolNetworkInstance";
 	/** [Write] tnb:UpdateSolNetworkPackage */
-	static readonly UPDATE_SOL_NETWORK_PACKAGE = "tnb:UpdateSolNetworkPackage";
+	static readonly UpdateSolNetworkPackage = "tnb:UpdateSolNetworkPackage";
 	/** [Write] tnb:ValidateSolFunctionPackageContent */
-	static readonly VALIDATE_SOL_FUNCTION_PACKAGE_CONTENT =
+	static readonly ValidateSolFunctionPackageContent =
 		"tnb:ValidateSolFunctionPackageContent";
 	/** [Write] tnb:ValidateSolNetworkPackageContent */
-	static readonly VALIDATE_SOL_NETWORK_PACKAGE_CONTENT =
+	static readonly ValidateSolNetworkPackageContent =
 		"tnb:ValidateSolNetworkPackageContent";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TnbActions.GET_SOL_FUNCTION_INSTANCE,
-		TnbActions.GET_SOL_FUNCTION_PACKAGE,
-		TnbActions.GET_SOL_FUNCTION_PACKAGE_CONTENT,
-		TnbActions.GET_SOL_FUNCTION_PACKAGE_DESCRIPTOR,
-		TnbActions.GET_SOL_NETWORK_INSTANCE,
-		TnbActions.GET_SOL_NETWORK_OPERATION,
-		TnbActions.GET_SOL_NETWORK_PACKAGE,
-		TnbActions.GET_SOL_NETWORK_PACKAGE_CONTENT,
-		TnbActions.GET_SOL_NETWORK_PACKAGE_DESCRIPTOR,
+	static readonly AllReadActions: string[] = [
+		TnbActions.actionGetSolFunctionInstance,
+		TnbActions.actionGetSolFunctionPackage,
+		TnbActions.actionGetSolFunctionPackageContent,
+		TnbActions.actionGetSolFunctionPackageDescriptor,
+		TnbActions.actionGetSolNetworkInstance,
+		TnbActions.actionGetSolNetworkOperation,
+		TnbActions.actionGetSolNetworkPackage,
+		TnbActions.actionGetSolNetworkPackageContent,
+		TnbActions.actionGetSolNetworkPackageDescriptor,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		TnbActions.CANCEL_SOL_NETWORK_OPERATION,
-		TnbActions.CREATE_SOL_FUNCTION_PACKAGE,
-		TnbActions.CREATE_SOL_NETWORK_INSTANCE,
-		TnbActions.CREATE_SOL_NETWORK_PACKAGE,
-		TnbActions.DELETE_SOL_FUNCTION_PACKAGE,
-		TnbActions.DELETE_SOL_NETWORK_INSTANCE,
-		TnbActions.DELETE_SOL_NETWORK_PACKAGE,
-		TnbActions.INSTANTIATE_SOL_NETWORK_INSTANCE,
-		TnbActions.PUT_SOL_FUNCTION_PACKAGE_CONTENT,
-		TnbActions.PUT_SOL_NETWORK_PACKAGE_CONTENT,
-		TnbActions.TERMINATE_SOL_NETWORK_INSTANCE,
-		TnbActions.UPDATE_SOL_FUNCTION_PACKAGE,
-		TnbActions.UPDATE_SOL_NETWORK_INSTANCE,
-		TnbActions.UPDATE_SOL_NETWORK_PACKAGE,
-		TnbActions.VALIDATE_SOL_FUNCTION_PACKAGE_CONTENT,
-		TnbActions.VALIDATE_SOL_NETWORK_PACKAGE_CONTENT,
+	static readonly AllWriteActions: string[] = [
+		TnbActions.CancelSolNetworkOperation,
+		TnbActions.CreateSolFunctionPackage,
+		TnbActions.CreateSolNetworkInstance,
+		TnbActions.CreateSolNetworkPackage,
+		TnbActions.DeleteSolFunctionPackage,
+		TnbActions.DeleteSolNetworkInstance,
+		TnbActions.DeleteSolNetworkPackage,
+		TnbActions.InstantiateSolNetworkInstance,
+		TnbActions.PutSolFunctionPackageContent,
+		TnbActions.PutSolNetworkPackageContent,
+		TnbActions.TerminateSolNetworkInstance,
+		TnbActions.UpdateSolFunctionPackage,
+		TnbActions.UpdateSolNetworkInstance,
+		TnbActions.UpdateSolNetworkPackage,
+		TnbActions.ValidateSolFunctionPackageContent,
+		TnbActions.ValidateSolNetworkPackageContent,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		TnbActions.LIST_SOL_FUNCTION_INSTANCES,
-		TnbActions.LIST_SOL_FUNCTION_PACKAGES,
-		TnbActions.LIST_SOL_NETWORK_INSTANCES,
-		TnbActions.LIST_SOL_NETWORK_OPERATIONS,
-		TnbActions.LIST_SOL_NETWORK_PACKAGES,
-		TnbActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		TnbActions.ListSolFunctionInstances,
+		TnbActions.ListSolFunctionPackages,
+		TnbActions.ListSolNetworkInstances,
+		TnbActions.ListSolNetworkOperations,
+		TnbActions.ListSolNetworkPackages,
+		TnbActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		TnbActions.TAG_RESOURCE,
-		TnbActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		TnbActions.TagResource,
+		TnbActions.UntagResource,
 	];
 }
 
-const FunctionInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):function-instance/(?<functionInstanceId>[^:/?]+)$",
-);
-const FunctionPackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):function-package/(?<functionPackageId>[^:/?]+)$",
-);
-const NetworkInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-instance/(?<networkInstanceId>[^:/?]+)$",
-);
-const NetworkOperationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-operation/(?<networkOperationId>[^:/?]+)$",
-);
-const NetworkPackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-package/(?<networkPackageId>[^:/?]+)$",
-);
+/**
+ * Properties for building a function-instance ARN.
+ */
+export interface TnbFunctionInstanceArnProps {
+	/** The FunctionInstanceId component of the ARN. */
+	readonly functionInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function-instance ARN.
+ */
+export interface TnbFunctionInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionInstanceId component. */
+	readonly functionInstanceId: string;
+}
+
+/**
+ * Properties for building a function-package ARN.
+ */
+export interface TnbFunctionPackageArnProps {
+	/** The FunctionPackageId component of the ARN. */
+	readonly functionPackageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function-package ARN.
+ */
+export interface TnbFunctionPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionPackageId component. */
+	readonly functionPackageId: string;
+}
+
+/**
+ * Properties for building a network-instance ARN.
+ */
+export interface TnbNetworkInstanceArnProps {
+	/** The NetworkInstanceId component of the ARN. */
+	readonly networkInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-instance ARN.
+ */
+export interface TnbNetworkInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInstanceId component. */
+	readonly networkInstanceId: string;
+}
+
+/**
+ * Properties for building a network-operation ARN.
+ */
+export interface TnbNetworkOperationArnProps {
+	/** The NetworkOperationId component of the ARN. */
+	readonly networkOperationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-operation ARN.
+ */
+export interface TnbNetworkOperationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkOperationId component. */
+	readonly networkOperationId: string;
+}
+
+/**
+ * Properties for building a network-package ARN.
+ */
+export interface TnbNetworkPackageArnProps {
+	/** The NetworkPackageId component of the ARN. */
+	readonly networkPackageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-package ARN.
+ */
+export interface TnbNetworkPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkPackageId component. */
+	readonly networkPackageId: string;
+}
+
+const FunctionInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):function-instance\/(?<functionInstanceId>[^:/?]+)$/;
+const FunctionPackageArnRegex =
+	/^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):function-package\/(?<functionPackageId>[^:/?]+)$/;
+const NetworkInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-instance\/(?<networkInstanceId>[^:/?]+)$/;
+const NetworkOperationArnRegex =
+	/^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-operation\/(?<networkOperationId>[^:/?]+)$/;
+const NetworkPackageArnRegex =
+	/^arn:(?<partition>[^:]+):tnb:(?<region>[^:]*):(?<account>[^:]*):network-package\/(?<networkPackageId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for tnb resources.
@@ -162,16 +296,7 @@ export class TnbResources {
 	/**
 	 * Builds an ARN for the function-instance resource.
 	 */
-	static functionInstance(props: {
-		/** The FunctionInstanceId component of the ARN. */
-		readonly functionInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static functionInstance(props: TnbFunctionInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:tnb:${props.region ?? "*"}:${props.account ?? "*"}:function-instance/${props.functionInstanceId}`;
 	}
 
@@ -186,12 +311,9 @@ export class TnbResources {
 	 * Parses a function-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionInstanceId: string;
-	} {
+	static parseFunctionInstanceArn(
+		arn: string,
+	): TnbFunctionInstanceArnComponents {
 		const match = FunctionInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function-instance ARN: ${arn}`);
@@ -207,16 +329,7 @@ export class TnbResources {
 	/**
 	 * Builds an ARN for the function-package resource.
 	 */
-	static functionPackage(props: {
-		/** The FunctionPackageId component of the ARN. */
-		readonly functionPackageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static functionPackage(props: TnbFunctionPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:tnb:${props.region ?? "*"}:${props.account ?? "*"}:function-package/${props.functionPackageId}`;
 	}
 
@@ -231,12 +344,7 @@ export class TnbResources {
 	 * Parses a function-package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionPackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionPackageId: string;
-	} {
+	static parseFunctionPackageArn(arn: string): TnbFunctionPackageArnComponents {
 		const match = FunctionPackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function-package ARN: ${arn}`);
@@ -252,16 +360,7 @@ export class TnbResources {
 	/**
 	 * Builds an ARN for the network-instance resource.
 	 */
-	static networkInstance(props: {
-		/** The NetworkInstanceId component of the ARN. */
-		readonly networkInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInstance(props: TnbNetworkInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:tnb:${props.region ?? "*"}:${props.account ?? "*"}:network-instance/${props.networkInstanceId}`;
 	}
 
@@ -276,12 +375,7 @@ export class TnbResources {
 	 * Parses a network-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInstanceId: string;
-	} {
+	static parseNetworkInstanceArn(arn: string): TnbNetworkInstanceArnComponents {
 		const match = NetworkInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-instance ARN: ${arn}`);
@@ -297,16 +391,7 @@ export class TnbResources {
 	/**
 	 * Builds an ARN for the network-operation resource.
 	 */
-	static networkOperation(props: {
-		/** The NetworkOperationId component of the ARN. */
-		readonly networkOperationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkOperation(props: TnbNetworkOperationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:tnb:${props.region ?? "*"}:${props.account ?? "*"}:network-operation/${props.networkOperationId}`;
 	}
 
@@ -321,12 +406,9 @@ export class TnbResources {
 	 * Parses a network-operation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkOperationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkOperationId: string;
-	} {
+	static parseNetworkOperationArn(
+		arn: string,
+	): TnbNetworkOperationArnComponents {
 		const match = NetworkOperationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-operation ARN: ${arn}`);
@@ -342,16 +424,7 @@ export class TnbResources {
 	/**
 	 * Builds an ARN for the network-package resource.
 	 */
-	static networkPackage(props: {
-		/** The NetworkPackageId component of the ARN. */
-		readonly networkPackageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkPackage(props: TnbNetworkPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:tnb:${props.region ?? "*"}:${props.account ?? "*"}:network-package/${props.networkPackageId}`;
 	}
 
@@ -366,12 +439,7 @@ export class TnbResources {
 	 * Parses a network-package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkPackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkPackageId: string;
-	} {
+	static parseNetworkPackageArn(arn: string): TnbNetworkPackageArnComponents {
 		const match = NetworkPackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-package ARN: ${arn}`);
@@ -390,137 +458,135 @@ export class TnbResources {
  */
 export class TnbOperations {
 	/** IAM actions required for the CancelSolNetworkOperation API call. */
-	static readonly CANCEL_SOL_NETWORK_OPERATION: string[] = [
+	static readonly CancelSolNetworkOperation: string[] = [
 		"tnb:CancelSolNetworkOperation",
 	];
 	/** IAM actions required for the CreateSolFunctionPackage API call. */
-	static readonly CREATE_SOL_FUNCTION_PACKAGE: string[] = [
+	static readonly CreateSolFunctionPackage: string[] = [
 		"tnb:CreateSolFunctionPackage",
 		"tnb:TagResource",
 	];
 	/** IAM actions required for the CreateSolNetworkInstance API call. */
-	static readonly CREATE_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly CreateSolNetworkInstance: string[] = [
 		"tnb:CreateSolNetworkInstance",
 		"tnb:TagResource",
 	];
 	/** IAM actions required for the CreateSolNetworkPackage API call. */
-	static readonly CREATE_SOL_NETWORK_PACKAGE: string[] = [
+	static readonly CreateSolNetworkPackage: string[] = [
 		"tnb:CreateSolNetworkPackage",
 		"tnb:TagResource",
 	];
 	/** IAM actions required for the DeleteSolFunctionPackage API call. */
-	static readonly DELETE_SOL_FUNCTION_PACKAGE: string[] = [
+	static readonly DeleteSolFunctionPackage: string[] = [
 		"tnb:DeleteSolFunctionPackage",
 	];
 	/** IAM actions required for the DeleteSolNetworkInstance API call. */
-	static readonly DELETE_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly DeleteSolNetworkInstance: string[] = [
 		"tnb:DeleteSolNetworkInstance",
 	];
 	/** IAM actions required for the DeleteSolNetworkPackage API call. */
-	static readonly DELETE_SOL_NETWORK_PACKAGE: string[] = [
+	static readonly DeleteSolNetworkPackage: string[] = [
 		"tnb:DeleteSolNetworkPackage",
 	];
 	/** IAM actions required for the GetSolFunctionInstance API call. */
-	static readonly GET_SOL_FUNCTION_INSTANCE: string[] = [
+	static readonly opGetSolFunctionInstance: string[] = [
 		"tnb:GetSolFunctionInstance",
 	];
 	/** IAM actions required for the GetSolFunctionPackage API call. */
-	static readonly GET_SOL_FUNCTION_PACKAGE: string[] = [
+	static readonly opGetSolFunctionPackage: string[] = [
 		"tnb:GetSolFunctionPackage",
 	];
 	/** IAM actions required for the GetSolFunctionPackageContent API call. */
-	static readonly GET_SOL_FUNCTION_PACKAGE_CONTENT: string[] = [
+	static readonly opGetSolFunctionPackageContent: string[] = [
 		"tnb:GetSolFunctionPackageContent",
 	];
 	/** IAM actions required for the GetSolFunctionPackageDescriptor API call. */
-	static readonly GET_SOL_FUNCTION_PACKAGE_DESCRIPTOR: string[] = [
+	static readonly opGetSolFunctionPackageDescriptor: string[] = [
 		"tnb:GetSolFunctionPackageDescriptor",
 	];
 	/** IAM actions required for the GetSolNetworkInstance API call. */
-	static readonly GET_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly opGetSolNetworkInstance: string[] = [
 		"tnb:GetSolNetworkInstance",
 	];
 	/** IAM actions required for the GetSolNetworkOperation API call. */
-	static readonly GET_SOL_NETWORK_OPERATION: string[] = [
+	static readonly opGetSolNetworkOperation: string[] = [
 		"tnb:GetSolNetworkOperation",
 	];
 	/** IAM actions required for the GetSolNetworkPackage API call. */
-	static readonly GET_SOL_NETWORK_PACKAGE: string[] = [
+	static readonly opGetSolNetworkPackage: string[] = [
 		"tnb:GetSolNetworkPackage",
 	];
 	/** IAM actions required for the GetSolNetworkPackageContent API call. */
-	static readonly GET_SOL_NETWORK_PACKAGE_CONTENT: string[] = [
+	static readonly opGetSolNetworkPackageContent: string[] = [
 		"tnb:GetSolNetworkPackageContent",
 	];
 	/** IAM actions required for the GetSolNetworkPackageDescriptor API call. */
-	static readonly GET_SOL_NETWORK_PACKAGE_DESCRIPTOR: string[] = [
+	static readonly opGetSolNetworkPackageDescriptor: string[] = [
 		"tnb:GetSolNetworkPackageDescriptor",
 	];
 	/** IAM actions required for the InstantiateSolNetworkInstance API call. */
-	static readonly INSTANTIATE_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly InstantiateSolNetworkInstance: string[] = [
 		"tnb:InstantiateSolNetworkInstance",
 		"tnb:TagResource",
 	];
 	/** IAM actions required for the ListSolFunctionInstances API call. */
-	static readonly LIST_SOL_FUNCTION_INSTANCES: string[] = [
+	static readonly ListSolFunctionInstances: string[] = [
 		"tnb:ListSolFunctionInstances",
 	];
 	/** IAM actions required for the ListSolFunctionPackages API call. */
-	static readonly LIST_SOL_FUNCTION_PACKAGES: string[] = [
+	static readonly ListSolFunctionPackages: string[] = [
 		"tnb:ListSolFunctionPackages",
 	];
 	/** IAM actions required for the ListSolNetworkInstances API call. */
-	static readonly LIST_SOL_NETWORK_INSTANCES: string[] = [
+	static readonly ListSolNetworkInstances: string[] = [
 		"tnb:ListSolNetworkInstances",
 	];
 	/** IAM actions required for the ListSolNetworkOperations API call. */
-	static readonly LIST_SOL_NETWORK_OPERATIONS: string[] = [
+	static readonly ListSolNetworkOperations: string[] = [
 		"tnb:ListSolNetworkOperations",
 	];
 	/** IAM actions required for the ListSolNetworkPackages API call. */
-	static readonly LIST_SOL_NETWORK_PACKAGES: string[] = [
+	static readonly ListSolNetworkPackages: string[] = [
 		"tnb:ListSolNetworkPackages",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"tnb:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["tnb:ListTagsForResource"];
 	/** IAM actions required for the PutSolFunctionPackageContent API call. */
-	static readonly PUT_SOL_FUNCTION_PACKAGE_CONTENT: string[] = [
+	static readonly PutSolFunctionPackageContent: string[] = [
 		"tnb:PutSolFunctionPackageContent",
 	];
 	/** IAM actions required for the PutSolNetworkPackageContent API call. */
-	static readonly PUT_SOL_NETWORK_PACKAGE_CONTENT: string[] = [
+	static readonly PutSolNetworkPackageContent: string[] = [
 		"tnb:PutSolNetworkPackageContent",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["tnb:TagResource"];
+	static readonly TagResource: string[] = ["tnb:TagResource"];
 	/** IAM actions required for the TerminateSolNetworkInstance API call. */
-	static readonly TERMINATE_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly TerminateSolNetworkInstance: string[] = [
 		"tnb:TagResource",
 		"tnb:TerminateSolNetworkInstance",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["tnb:UntagResource"];
+	static readonly UntagResource: string[] = ["tnb:UntagResource"];
 	/** IAM actions required for the UpdateSolFunctionPackage API call. */
-	static readonly UPDATE_SOL_FUNCTION_PACKAGE: string[] = [
+	static readonly UpdateSolFunctionPackage: string[] = [
 		"tnb:UpdateSolFunctionPackage",
 	];
 	/** IAM actions required for the UpdateSolNetworkInstance API call. */
-	static readonly UPDATE_SOL_NETWORK_INSTANCE: string[] = [
+	static readonly UpdateSolNetworkInstance: string[] = [
 		"tnb:TagResource",
 		"tnb:UpdateSolNetworkInstance",
 	];
 	/** IAM actions required for the UpdateSolNetworkPackage API call. */
-	static readonly UPDATE_SOL_NETWORK_PACKAGE: string[] = [
+	static readonly UpdateSolNetworkPackage: string[] = [
 		"tnb:UpdateSolNetworkPackage",
 	];
 	/** IAM actions required for the ValidateSolFunctionPackageContent API call. */
-	static readonly VALIDATE_SOL_FUNCTION_PACKAGE_CONTENT: string[] = [
+	static readonly ValidateSolFunctionPackageContent: string[] = [
 		"tnb:ValidateSolFunctionPackageContent",
 	];
 	/** IAM actions required for the ValidateSolNetworkPackageContent API call. */
-	static readonly VALIDATE_SOL_NETWORK_PACKAGE_CONTENT: string[] = [
+	static readonly ValidateSolNetworkPackageContent: string[] = [
 		"tnb:ValidateSolNetworkPackageContent",
 	];
 }
@@ -530,103 +596,103 @@ export class TnbOperations {
  */
 export class TnbConditions {
 	/** Condition keys applicable to the CreateSolFunctionPackage action. */
-	static readonly CREATE_SOL_FUNCTION_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateSolFunctionPackageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSolNetworkInstance action. */
-	static readonly CREATE_SOL_NETWORK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateSolNetworkInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSolNetworkPackage action. */
-	static readonly CREATE_SOL_NETWORK_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateSolNetworkPackageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetSolFunctionInstance action. */
-	static readonly GET_SOL_FUNCTION_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolFunctionInstanceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolFunctionPackage action. */
-	static readonly GET_SOL_FUNCTION_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolFunctionPackageConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolFunctionPackageContent action. */
-	static readonly GET_SOL_FUNCTION_PACKAGE_CONTENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolFunctionPackageContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolFunctionPackageDescriptor action. */
-	static readonly GET_SOL_FUNCTION_PACKAGE_DESCRIPTOR_CONDITION_KEYS: string[] =
+	static readonly actionGetSolFunctionPackageDescriptorConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetSolNetworkInstance action. */
-	static readonly GET_SOL_NETWORK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolNetworkInstanceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolNetworkOperation action. */
-	static readonly GET_SOL_NETWORK_OPERATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolNetworkOperationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolNetworkPackage action. */
-	static readonly GET_SOL_NETWORK_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolNetworkPackageConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolNetworkPackageContent action. */
-	static readonly GET_SOL_NETWORK_PACKAGE_CONTENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetSolNetworkPackageContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSolNetworkPackageDescriptor action. */
-	static readonly GET_SOL_NETWORK_PACKAGE_DESCRIPTOR_CONDITION_KEYS: string[] =
+	static readonly actionGetSolNetworkPackageDescriptorConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the InstantiateSolNetworkInstance action. */
-	static readonly INSTANTIATE_SOL_NETWORK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly InstantiateSolNetworkInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListSolFunctionInstances action. */
-	static readonly LIST_SOL_FUNCTION_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly ListSolFunctionInstancesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSolFunctionPackages action. */
-	static readonly LIST_SOL_FUNCTION_PACKAGES_CONDITION_KEYS: string[] = [
+	static readonly ListSolFunctionPackagesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSolNetworkInstances action. */
-	static readonly LIST_SOL_NETWORK_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly ListSolNetworkInstancesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSolNetworkOperations action. */
-	static readonly LIST_SOL_NETWORK_OPERATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListSolNetworkOperationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSolNetworkPackages action. */
-	static readonly LIST_SOL_NETWORK_PACKAGES_CONDITION_KEYS: string[] = [
+	static readonly ListSolNetworkPackagesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TerminateSolNetworkInstance action. */
-	static readonly TERMINATE_SOL_NETWORK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly TerminateSolNetworkInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateSolNetworkInstance action. */
-	static readonly UPDATE_SOL_NETWORK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSolNetworkInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

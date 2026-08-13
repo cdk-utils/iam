@@ -13,418 +13,966 @@ export class AWSMarketplaceActions {
 	static readonly SERVICE_PREFIX = "aws-marketplace";
 
 	/** [Write] aws-marketplace:AcceptAgreementApprovalRequest */
-	static readonly ACCEPT_AGREEMENT_APPROVAL_REQUEST =
+	static readonly AcceptAgreementApprovalRequest =
 		"aws-marketplace:AcceptAgreementApprovalRequest";
 	/** [Write] aws-marketplace:AcceptAgreementCancellationRequest */
-	static readonly ACCEPT_AGREEMENT_CANCELLATION_REQUEST =
+	static readonly AcceptAgreementCancellationRequest =
 		"aws-marketplace:AcceptAgreementCancellationRequest";
 	/** [Write] aws-marketplace:AcceptAgreementPaymentRequest */
-	static readonly ACCEPT_AGREEMENT_PAYMENT_REQUEST =
+	static readonly AcceptAgreementPaymentRequest =
 		"aws-marketplace:AcceptAgreementPaymentRequest";
 	/** [Write] aws-marketplace:AcceptAgreementRequest */
-	static readonly ACCEPT_AGREEMENT_REQUEST =
+	static readonly AcceptAgreementRequest =
 		"aws-marketplace:AcceptAgreementRequest";
 	/** [Write] aws-marketplace:AssociateProductsWithPrivateMarketplace */
-	static readonly ASSOCIATE_PRODUCTS_WITH_PRIVATE_MARKETPLACE =
+	static readonly AssociateProductsWithPrivateMarketplace =
 		"aws-marketplace:AssociateProductsWithPrivateMarketplace";
 	/** [Write] aws-marketplace:BatchCreateBillingAdjustmentRequest */
-	static readonly BATCH_CREATE_BILLING_ADJUSTMENT_REQUEST =
+	static readonly BatchCreateBillingAdjustmentRequest =
 		"aws-marketplace:BatchCreateBillingAdjustmentRequest";
 	/** [Write] aws-marketplace:BatchMeterUsage */
-	static readonly BATCH_METER_USAGE = "aws-marketplace:BatchMeterUsage";
+	static readonly BatchMeterUsage = "aws-marketplace:BatchMeterUsage";
 	/** [Write] aws-marketplace:CancelAgreement */
-	static readonly CANCEL_AGREEMENT = "aws-marketplace:CancelAgreement";
+	static readonly CancelAgreement = "aws-marketplace:CancelAgreement";
 	/** [Write] aws-marketplace:CancelAgreementCancellationRequest */
-	static readonly CANCEL_AGREEMENT_CANCELLATION_REQUEST =
+	static readonly CancelAgreementCancellationRequest =
 		"aws-marketplace:CancelAgreementCancellationRequest";
 	/** [Write] aws-marketplace:CancelAgreementPaymentRequest */
-	static readonly CANCEL_AGREEMENT_PAYMENT_REQUEST =
+	static readonly CancelAgreementPaymentRequest =
 		"aws-marketplace:CancelAgreementPaymentRequest";
 	/** [Write] aws-marketplace:CancelAgreementRequest */
-	static readonly CANCEL_AGREEMENT_REQUEST =
+	static readonly CancelAgreementRequest =
 		"aws-marketplace:CancelAgreementRequest";
 	/** [Write] aws-marketplace:CancelChangeSet */
-	static readonly CANCEL_CHANGE_SET = "aws-marketplace:CancelChangeSet";
+	static readonly CancelChangeSet = "aws-marketplace:CancelChangeSet";
 	/** [Write] aws-marketplace:CreateAgreementRequest */
-	static readonly CREATE_AGREEMENT_REQUEST =
+	static readonly CreateAgreementRequest =
 		"aws-marketplace:CreateAgreementRequest";
 	/** [Write] aws-marketplace:CreatePrivateMarketplaceRequests */
-	static readonly CREATE_PRIVATE_MARKETPLACE_REQUESTS =
+	static readonly CreatePrivateMarketplaceRequests =
 		"aws-marketplace:CreatePrivateMarketplaceRequests";
 	/** [Write] aws-marketplace:CreateVerificationEvidence */
-	static readonly CREATE_VERIFICATION_EVIDENCE =
+	static readonly CreateVerificationEvidence =
 		"aws-marketplace:CreateVerificationEvidence";
 	/** [PermissionManagement] aws-marketplace:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY =
-		"aws-marketplace:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "aws-marketplace:DeleteResourcePolicy";
 	/** [Read] aws-marketplace:DescribeAgreement */
-	static readonly DESCRIBE_AGREEMENT = "aws-marketplace:DescribeAgreement";
+	static readonly DescribeAgreement = "aws-marketplace:DescribeAgreement";
 	/** [Read] aws-marketplace:DescribeAssessment */
-	static readonly DESCRIBE_ASSESSMENT = "aws-marketplace:DescribeAssessment";
+	static readonly DescribeAssessment = "aws-marketplace:DescribeAssessment";
 	/** [Read] aws-marketplace:DescribeBuilds */
-	static readonly DESCRIBE_BUILDS = "aws-marketplace:DescribeBuilds";
+	static readonly DescribeBuilds = "aws-marketplace:DescribeBuilds";
 	/** [Read] aws-marketplace:DescribeChangeSet */
-	static readonly DESCRIBE_CHANGE_SET = "aws-marketplace:DescribeChangeSet";
+	static readonly DescribeChangeSet = "aws-marketplace:DescribeChangeSet";
 	/** [Read] aws-marketplace:DescribeEntity */
-	static readonly DESCRIBE_ENTITY = "aws-marketplace:DescribeEntity";
+	static readonly DescribeEntity = "aws-marketplace:DescribeEntity";
 	/** [List] aws-marketplace:DescribePrivateMarketplaceRequests */
-	static readonly DESCRIBE_PRIVATE_MARKETPLACE_REQUESTS =
+	static readonly DescribePrivateMarketplaceRequests =
 		"aws-marketplace:DescribePrivateMarketplaceRequests";
 	/** [Read] aws-marketplace:DescribeProcurementSystemConfiguration */
-	static readonly DESCRIBE_PROCUREMENT_SYSTEM_CONFIGURATION =
+	static readonly DescribeProcurementSystemConfiguration =
 		"aws-marketplace:DescribeProcurementSystemConfiguration";
 	/** [Write] aws-marketplace:DisassociateProductsFromPrivateMarketplace */
-	static readonly DISASSOCIATE_PRODUCTS_FROM_PRIVATE_MARKETPLACE =
+	static readonly DisassociateProductsFromPrivateMarketplace =
 		"aws-marketplace:DisassociateProductsFromPrivateMarketplace";
 	/** [Read] aws-marketplace:GetAgreementApprovalRequest */
-	static readonly GET_AGREEMENT_APPROVAL_REQUEST =
+	static readonly actionGetAgreementApprovalRequest =
 		"aws-marketplace:GetAgreementApprovalRequest";
 	/** [Read] aws-marketplace:GetAgreementCancellationRequest */
-	static readonly GET_AGREEMENT_CANCELLATION_REQUEST =
+	static readonly actionGetAgreementCancellationRequest =
 		"aws-marketplace:GetAgreementCancellationRequest";
 	/** [Read] aws-marketplace:GetAgreementEntitlements */
-	static readonly GET_AGREEMENT_ENTITLEMENTS =
+	static readonly actionGetAgreementEntitlements =
 		"aws-marketplace:GetAgreementEntitlements";
 	/** [Read] aws-marketplace:GetAgreementPaymentRequest */
-	static readonly GET_AGREEMENT_PAYMENT_REQUEST =
+	static readonly actionGetAgreementPaymentRequest =
 		"aws-marketplace:GetAgreementPaymentRequest";
 	/** [Read] aws-marketplace:GetAgreementRequest */
-	static readonly GET_AGREEMENT_REQUEST = "aws-marketplace:GetAgreementRequest";
+	static readonly actionGetAgreementRequest =
+		"aws-marketplace:GetAgreementRequest";
 	/** [List] aws-marketplace:GetAgreementTerms */
-	static readonly GET_AGREEMENT_TERMS = "aws-marketplace:GetAgreementTerms";
+	static readonly actionGetAgreementTerms = "aws-marketplace:GetAgreementTerms";
 	/** [Read] aws-marketplace:GetBillingAdjustmentRequest */
-	static readonly GET_BILLING_ADJUSTMENT_REQUEST =
+	static readonly actionGetBillingAdjustmentRequest =
 		"aws-marketplace:GetBillingAdjustmentRequest";
 	/** [Read] aws-marketplace:GetBuyerDashboard */
-	static readonly GET_BUYER_DASHBOARD = "aws-marketplace:GetBuyerDashboard";
+	static readonly actionGetBuyerDashboard = "aws-marketplace:GetBuyerDashboard";
 	/** [Read] aws-marketplace:GetEntitlements */
-	static readonly GET_ENTITLEMENTS = "aws-marketplace:GetEntitlements";
+	static readonly actionGetEntitlements = "aws-marketplace:GetEntitlements";
 	/** [Read] aws-marketplace:GetInvoiceSubmissionTask */
-	static readonly GET_INVOICE_SUBMISSION_TASK =
+	static readonly actionGetInvoiceSubmissionTask =
 		"aws-marketplace:GetInvoiceSubmissionTask";
 	/** [Read] aws-marketplace:GetIssuedTaxInvoice */
-	static readonly GET_ISSUED_TAX_INVOICE =
+	static readonly actionGetIssuedTaxInvoice =
 		"aws-marketplace:GetIssuedTaxInvoice";
 	/** [Read] aws-marketplace:GetListing */
-	static readonly GET_LISTING = "aws-marketplace:GetListing";
+	static readonly actionGetListing = "aws-marketplace:GetListing";
 	/** [Read] aws-marketplace:GetOffer */
-	static readonly GET_OFFER = "aws-marketplace:GetOffer";
+	static readonly actionGetOffer = "aws-marketplace:GetOffer";
 	/** [Read] aws-marketplace:GetOfferSet */
-	static readonly GET_OFFER_SET = "aws-marketplace:GetOfferSet";
+	static readonly actionGetOfferSet = "aws-marketplace:GetOfferSet";
 	/** [Read] aws-marketplace:GetOfferTerms */
-	static readonly GET_OFFER_TERMS = "aws-marketplace:GetOfferTerms";
+	static readonly actionGetOfferTerms = "aws-marketplace:GetOfferTerms";
 	/** [Read] aws-marketplace:GetProduct */
-	static readonly GET_PRODUCT = "aws-marketplace:GetProduct";
+	static readonly actionGetProduct = "aws-marketplace:GetProduct";
 	/** [Read] aws-marketplace:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "aws-marketplace:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "aws-marketplace:GetResourcePolicy";
 	/** [Read] aws-marketplace:GetSellerDashboard */
-	static readonly GET_SELLER_DASHBOARD = "aws-marketplace:GetSellerDashboard";
+	static readonly actionGetSellerDashboard =
+		"aws-marketplace:GetSellerDashboard";
 	/** [Read] aws-marketplace:GetTaxComplianceProfile */
-	static readonly GET_TAX_COMPLIANCE_PROFILE =
+	static readonly actionGetTaxComplianceProfile =
 		"aws-marketplace:GetTaxComplianceProfile";
 	/** [Read] aws-marketplace:GetVerification */
-	static readonly GET_VERIFICATION = "aws-marketplace:GetVerification";
+	static readonly actionGetVerification = "aws-marketplace:GetVerification";
 	/** [Read] aws-marketplace:GetVerificationEvidence */
-	static readonly GET_VERIFICATION_EVIDENCE =
+	static readonly actionGetVerificationEvidence =
 		"aws-marketplace:GetVerificationEvidence";
 	/** [List] aws-marketplace:ListAgreementApprovalRequests */
-	static readonly LIST_AGREEMENT_APPROVAL_REQUESTS =
+	static readonly ListAgreementApprovalRequests =
 		"aws-marketplace:ListAgreementApprovalRequests";
 	/** [List] aws-marketplace:ListAgreementCancellationRequests */
-	static readonly LIST_AGREEMENT_CANCELLATION_REQUESTS =
+	static readonly ListAgreementCancellationRequests =
 		"aws-marketplace:ListAgreementCancellationRequests";
 	/** [List] aws-marketplace:ListAgreementCharges */
-	static readonly LIST_AGREEMENT_CHARGES =
-		"aws-marketplace:ListAgreementCharges";
+	static readonly ListAgreementCharges = "aws-marketplace:ListAgreementCharges";
 	/** [List] aws-marketplace:ListAgreementInvoiceLineItems */
-	static readonly LIST_AGREEMENT_INVOICE_LINE_ITEMS =
+	static readonly ListAgreementInvoiceLineItems =
 		"aws-marketplace:ListAgreementInvoiceLineItems";
 	/** [List] aws-marketplace:ListAgreementPaymentRequests */
-	static readonly LIST_AGREEMENT_PAYMENT_REQUESTS =
+	static readonly ListAgreementPaymentRequests =
 		"aws-marketplace:ListAgreementPaymentRequests";
 	/** [List] aws-marketplace:ListAgreementRequests */
-	static readonly LIST_AGREEMENT_REQUESTS =
+	static readonly ListAgreementRequests =
 		"aws-marketplace:ListAgreementRequests";
 	/** [List] aws-marketplace:ListAssessments */
-	static readonly LIST_ASSESSMENTS = "aws-marketplace:ListAssessments";
+	static readonly ListAssessments = "aws-marketplace:ListAssessments";
 	/** [List] aws-marketplace:ListBillingAdjustmentRequests */
-	static readonly LIST_BILLING_ADJUSTMENT_REQUESTS =
+	static readonly ListBillingAdjustmentRequests =
 		"aws-marketplace:ListBillingAdjustmentRequests";
 	/** [Read] aws-marketplace:ListBuilds */
-	static readonly LIST_BUILDS = "aws-marketplace:ListBuilds";
+	static readonly ListBuilds = "aws-marketplace:ListBuilds";
 	/** [List] aws-marketplace:ListChangeSets */
-	static readonly LIST_CHANGE_SETS = "aws-marketplace:ListChangeSets";
+	static readonly ListChangeSets = "aws-marketplace:ListChangeSets";
 	/** [List] aws-marketplace:ListEntities */
-	static readonly LIST_ENTITIES = "aws-marketplace:ListEntities";
+	static readonly ListEntities = "aws-marketplace:ListEntities";
 	/** [Read] aws-marketplace:ListEntitlementDetails */
-	static readonly LIST_ENTITLEMENT_DETAILS =
+	static readonly ListEntitlementDetails =
 		"aws-marketplace:ListEntitlementDetails";
 	/** [List] aws-marketplace:ListFulfillmentOptions */
-	static readonly LIST_FULFILLMENT_OPTIONS =
+	static readonly ListFulfillmentOptions =
 		"aws-marketplace:ListFulfillmentOptions";
 	/** [List] aws-marketplace:ListInvoiceSubmissionTasks */
-	static readonly LIST_INVOICE_SUBMISSION_TASKS =
+	static readonly ListInvoiceSubmissionTasks =
 		"aws-marketplace:ListInvoiceSubmissionTasks";
 	/** [List] aws-marketplace:ListIssuedTaxInvoices */
-	static readonly LIST_ISSUED_TAX_INVOICES =
+	static readonly ListIssuedTaxInvoices =
 		"aws-marketplace:ListIssuedTaxInvoices";
 	/** [List] aws-marketplace:ListPayables */
-	static readonly LIST_PAYABLES = "aws-marketplace:ListPayables";
+	static readonly ListPayables = "aws-marketplace:ListPayables";
 	/** [List] aws-marketplace:ListPrivateListings */
-	static readonly LIST_PRIVATE_LISTINGS = "aws-marketplace:ListPrivateListings";
+	static readonly ListPrivateListings = "aws-marketplace:ListPrivateListings";
 	/** [List] aws-marketplace:ListPrivateMarketplaceRequests */
-	static readonly LIST_PRIVATE_MARKETPLACE_REQUESTS =
+	static readonly ListPrivateMarketplaceRequests =
 		"aws-marketplace:ListPrivateMarketplaceRequests";
 	/** [List] aws-marketplace:ListPurchaseOptions */
-	static readonly LIST_PURCHASE_OPTIONS = "aws-marketplace:ListPurchaseOptions";
+	static readonly ListPurchaseOptions = "aws-marketplace:ListPurchaseOptions";
 	/** [Read] aws-marketplace:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"aws-marketplace:ListTagsForResource";
+	static readonly ListTagsForResource = "aws-marketplace:ListTagsForResource";
 	/** [List] aws-marketplace:ListTaxComplianceProfileChangeTasks */
-	static readonly LIST_TAX_COMPLIANCE_PROFILE_CHANGE_TASKS =
+	static readonly ListTaxComplianceProfileChangeTasks =
 		"aws-marketplace:ListTaxComplianceProfileChangeTasks";
 	/** [List] aws-marketplace:ListTaxComplianceProfiles */
-	static readonly LIST_TAX_COMPLIANCE_PROFILES =
+	static readonly ListTaxComplianceProfiles =
 		"aws-marketplace:ListTaxComplianceProfiles";
 	/** [List] aws-marketplace:ListVerificationEvidence */
-	static readonly LIST_VERIFICATION_EVIDENCE =
+	static readonly ListVerificationEvidence =
 		"aws-marketplace:ListVerificationEvidence";
 	/** [List] aws-marketplace:ListVerifications */
-	static readonly LIST_VERIFICATIONS = "aws-marketplace:ListVerifications";
+	static readonly ListVerifications = "aws-marketplace:ListVerifications";
 	/** [Write] aws-marketplace:MeterUsage */
-	static readonly METER_USAGE = "aws-marketplace:MeterUsage";
+	static readonly MeterUsage = "aws-marketplace:MeterUsage";
 	/** [Write] aws-marketplace:PutDeploymentParameter */
-	static readonly PUT_DEPLOYMENT_PARAMETER =
+	static readonly PutDeploymentParameter =
 		"aws-marketplace:PutDeploymentParameter";
 	/** [Write] aws-marketplace:PutProcurementSystemConfiguration */
-	static readonly PUT_PROCUREMENT_SYSTEM_CONFIGURATION =
+	static readonly PutProcurementSystemConfiguration =
 		"aws-marketplace:PutProcurementSystemConfiguration";
 	/** [PermissionManagement] aws-marketplace:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "aws-marketplace:PutResourcePolicy";
+	static readonly PutResourcePolicy = "aws-marketplace:PutResourcePolicy";
 	/** [Write] aws-marketplace:RegisterUsage */
-	static readonly REGISTER_USAGE = "aws-marketplace:RegisterUsage";
+	static readonly RegisterUsage = "aws-marketplace:RegisterUsage";
 	/** [Write] aws-marketplace:RejectAgreementApprovalRequest */
-	static readonly REJECT_AGREEMENT_APPROVAL_REQUEST =
+	static readonly RejectAgreementApprovalRequest =
 		"aws-marketplace:RejectAgreementApprovalRequest";
 	/** [Write] aws-marketplace:RejectAgreementCancellationRequest */
-	static readonly REJECT_AGREEMENT_CANCELLATION_REQUEST =
+	static readonly RejectAgreementCancellationRequest =
 		"aws-marketplace:RejectAgreementCancellationRequest";
 	/** [Write] aws-marketplace:RejectAgreementPaymentRequest */
-	static readonly REJECT_AGREEMENT_PAYMENT_REQUEST =
+	static readonly RejectAgreementPaymentRequest =
 		"aws-marketplace:RejectAgreementPaymentRequest";
 	/** [Write] aws-marketplace:ResolveCustomer */
-	static readonly RESOLVE_CUSTOMER = "aws-marketplace:ResolveCustomer";
+	static readonly ResolveCustomer = "aws-marketplace:ResolveCustomer";
 	/** [List] aws-marketplace:SearchAgreements */
-	static readonly SEARCH_AGREEMENTS = "aws-marketplace:SearchAgreements";
+	static readonly SearchAgreements = "aws-marketplace:SearchAgreements";
 	/** [List] aws-marketplace:SearchFacets */
-	static readonly SEARCH_FACETS = "aws-marketplace:SearchFacets";
+	static readonly SearchFacets = "aws-marketplace:SearchFacets";
 	/** [List] aws-marketplace:SearchListings */
-	static readonly SEARCH_LISTINGS = "aws-marketplace:SearchListings";
+	static readonly SearchListings = "aws-marketplace:SearchListings";
 	/** [Write] aws-marketplace:SendAgreementCancellationRequest */
-	static readonly SEND_AGREEMENT_CANCELLATION_REQUEST =
+	static readonly SendAgreementCancellationRequest =
 		"aws-marketplace:SendAgreementCancellationRequest";
 	/** [Write] aws-marketplace:SendAgreementPaymentRequest */
-	static readonly SEND_AGREEMENT_PAYMENT_REQUEST =
+	static readonly SendAgreementPaymentRequest =
 		"aws-marketplace:SendAgreementPaymentRequest";
 	/** [Write] aws-marketplace:StartBuild */
-	static readonly START_BUILD = "aws-marketplace:StartBuild";
+	static readonly StartBuild = "aws-marketplace:StartBuild";
 	/** [Write] aws-marketplace:StartChangeSet */
-	static readonly START_CHANGE_SET = "aws-marketplace:StartChangeSet";
+	static readonly StartChangeSet = "aws-marketplace:StartChangeSet";
 	/** [Write] aws-marketplace:StartInvoiceSubmissionTask */
-	static readonly START_INVOICE_SUBMISSION_TASK =
+	static readonly StartInvoiceSubmissionTask =
 		"aws-marketplace:StartInvoiceSubmissionTask";
 	/** [Write] aws-marketplace:StartTaxComplianceProfileChangeTask */
-	static readonly START_TAX_COMPLIANCE_PROFILE_CHANGE_TASK =
+	static readonly StartTaxComplianceProfileChangeTask =
 		"aws-marketplace:StartTaxComplianceProfileChangeTask";
 	/** [Write] aws-marketplace:StartVerification */
-	static readonly START_VERIFICATION = "aws-marketplace:StartVerification";
+	static readonly StartVerification = "aws-marketplace:StartVerification";
 	/** [Write] aws-marketplace:Subscribe */
-	static readonly SUBSCRIBE = "aws-marketplace:Subscribe";
+	static readonly Subscribe = "aws-marketplace:Subscribe";
 	/** [Tagging] aws-marketplace:TagResource */
-	static readonly TAG_RESOURCE = "aws-marketplace:TagResource";
+	static readonly TagResource = "aws-marketplace:TagResource";
 	/** [Write] aws-marketplace:Unsubscribe */
-	static readonly UNSUBSCRIBE = "aws-marketplace:Unsubscribe";
+	static readonly Unsubscribe = "aws-marketplace:Unsubscribe";
 	/** [Tagging] aws-marketplace:UntagResource */
-	static readonly UNTAG_RESOURCE = "aws-marketplace:UntagResource";
+	static readonly UntagResource = "aws-marketplace:UntagResource";
 	/** [Write] aws-marketplace:UpdateAgreementApprovalRequest */
-	static readonly UPDATE_AGREEMENT_APPROVAL_REQUEST =
+	static readonly UpdateAgreementApprovalRequest =
 		"aws-marketplace:UpdateAgreementApprovalRequest";
 	/** [Write] aws-marketplace:UpdatePurchaseOrders */
-	static readonly UPDATE_PURCHASE_ORDERS =
-		"aws-marketplace:UpdatePurchaseOrders";
+	static readonly UpdatePurchaseOrders = "aws-marketplace:UpdatePurchaseOrders";
 	/** [Write] aws-marketplace:UpdateVerificationEvidence */
-	static readonly UPDATE_VERIFICATION_EVIDENCE =
+	static readonly UpdateVerificationEvidence =
 		"aws-marketplace:UpdateVerificationEvidence";
 	/** [List] aws-marketplace:ViewSubscriptions */
-	static readonly VIEW_SUBSCRIPTIONS = "aws-marketplace:ViewSubscriptions";
+	static readonly ViewSubscriptions = "aws-marketplace:ViewSubscriptions";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AWSMarketplaceActions.DESCRIBE_AGREEMENT,
-		AWSMarketplaceActions.DESCRIBE_ASSESSMENT,
-		AWSMarketplaceActions.DESCRIBE_BUILDS,
-		AWSMarketplaceActions.DESCRIBE_CHANGE_SET,
-		AWSMarketplaceActions.DESCRIBE_ENTITY,
-		AWSMarketplaceActions.DESCRIBE_PROCUREMENT_SYSTEM_CONFIGURATION,
-		AWSMarketplaceActions.GET_AGREEMENT_APPROVAL_REQUEST,
-		AWSMarketplaceActions.GET_AGREEMENT_CANCELLATION_REQUEST,
-		AWSMarketplaceActions.GET_AGREEMENT_ENTITLEMENTS,
-		AWSMarketplaceActions.GET_AGREEMENT_PAYMENT_REQUEST,
-		AWSMarketplaceActions.GET_AGREEMENT_REQUEST,
-		AWSMarketplaceActions.GET_BILLING_ADJUSTMENT_REQUEST,
-		AWSMarketplaceActions.GET_BUYER_DASHBOARD,
-		AWSMarketplaceActions.GET_ENTITLEMENTS,
-		AWSMarketplaceActions.GET_INVOICE_SUBMISSION_TASK,
-		AWSMarketplaceActions.GET_ISSUED_TAX_INVOICE,
-		AWSMarketplaceActions.GET_LISTING,
-		AWSMarketplaceActions.GET_OFFER,
-		AWSMarketplaceActions.GET_OFFER_SET,
-		AWSMarketplaceActions.GET_OFFER_TERMS,
-		AWSMarketplaceActions.GET_PRODUCT,
-		AWSMarketplaceActions.GET_RESOURCE_POLICY,
-		AWSMarketplaceActions.GET_SELLER_DASHBOARD,
-		AWSMarketplaceActions.GET_TAX_COMPLIANCE_PROFILE,
-		AWSMarketplaceActions.GET_VERIFICATION,
-		AWSMarketplaceActions.GET_VERIFICATION_EVIDENCE,
-		AWSMarketplaceActions.LIST_BUILDS,
-		AWSMarketplaceActions.LIST_ENTITLEMENT_DETAILS,
-		AWSMarketplaceActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AWSMarketplaceActions.DescribeAgreement,
+		AWSMarketplaceActions.DescribeAssessment,
+		AWSMarketplaceActions.DescribeBuilds,
+		AWSMarketplaceActions.DescribeChangeSet,
+		AWSMarketplaceActions.DescribeEntity,
+		AWSMarketplaceActions.DescribeProcurementSystemConfiguration,
+		AWSMarketplaceActions.actionGetAgreementApprovalRequest,
+		AWSMarketplaceActions.actionGetAgreementCancellationRequest,
+		AWSMarketplaceActions.actionGetAgreementEntitlements,
+		AWSMarketplaceActions.actionGetAgreementPaymentRequest,
+		AWSMarketplaceActions.actionGetAgreementRequest,
+		AWSMarketplaceActions.actionGetBillingAdjustmentRequest,
+		AWSMarketplaceActions.actionGetBuyerDashboard,
+		AWSMarketplaceActions.actionGetEntitlements,
+		AWSMarketplaceActions.actionGetInvoiceSubmissionTask,
+		AWSMarketplaceActions.actionGetIssuedTaxInvoice,
+		AWSMarketplaceActions.actionGetListing,
+		AWSMarketplaceActions.actionGetOffer,
+		AWSMarketplaceActions.actionGetOfferSet,
+		AWSMarketplaceActions.actionGetOfferTerms,
+		AWSMarketplaceActions.actionGetProduct,
+		AWSMarketplaceActions.actionGetResourcePolicy,
+		AWSMarketplaceActions.actionGetSellerDashboard,
+		AWSMarketplaceActions.actionGetTaxComplianceProfile,
+		AWSMarketplaceActions.actionGetVerification,
+		AWSMarketplaceActions.actionGetVerificationEvidence,
+		AWSMarketplaceActions.ListBuilds,
+		AWSMarketplaceActions.ListEntitlementDetails,
+		AWSMarketplaceActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AWSMarketplaceActions.ACCEPT_AGREEMENT_APPROVAL_REQUEST,
-		AWSMarketplaceActions.ACCEPT_AGREEMENT_CANCELLATION_REQUEST,
-		AWSMarketplaceActions.ACCEPT_AGREEMENT_PAYMENT_REQUEST,
-		AWSMarketplaceActions.ACCEPT_AGREEMENT_REQUEST,
-		AWSMarketplaceActions.ASSOCIATE_PRODUCTS_WITH_PRIVATE_MARKETPLACE,
-		AWSMarketplaceActions.BATCH_CREATE_BILLING_ADJUSTMENT_REQUEST,
-		AWSMarketplaceActions.BATCH_METER_USAGE,
-		AWSMarketplaceActions.CANCEL_AGREEMENT,
-		AWSMarketplaceActions.CANCEL_AGREEMENT_CANCELLATION_REQUEST,
-		AWSMarketplaceActions.CANCEL_AGREEMENT_PAYMENT_REQUEST,
-		AWSMarketplaceActions.CANCEL_AGREEMENT_REQUEST,
-		AWSMarketplaceActions.CANCEL_CHANGE_SET,
-		AWSMarketplaceActions.CREATE_AGREEMENT_REQUEST,
-		AWSMarketplaceActions.CREATE_PRIVATE_MARKETPLACE_REQUESTS,
-		AWSMarketplaceActions.CREATE_VERIFICATION_EVIDENCE,
-		AWSMarketplaceActions.DISASSOCIATE_PRODUCTS_FROM_PRIVATE_MARKETPLACE,
-		AWSMarketplaceActions.METER_USAGE,
-		AWSMarketplaceActions.PUT_DEPLOYMENT_PARAMETER,
-		AWSMarketplaceActions.PUT_PROCUREMENT_SYSTEM_CONFIGURATION,
-		AWSMarketplaceActions.REGISTER_USAGE,
-		AWSMarketplaceActions.REJECT_AGREEMENT_APPROVAL_REQUEST,
-		AWSMarketplaceActions.REJECT_AGREEMENT_CANCELLATION_REQUEST,
-		AWSMarketplaceActions.REJECT_AGREEMENT_PAYMENT_REQUEST,
-		AWSMarketplaceActions.RESOLVE_CUSTOMER,
-		AWSMarketplaceActions.SEND_AGREEMENT_CANCELLATION_REQUEST,
-		AWSMarketplaceActions.SEND_AGREEMENT_PAYMENT_REQUEST,
-		AWSMarketplaceActions.START_BUILD,
-		AWSMarketplaceActions.START_CHANGE_SET,
-		AWSMarketplaceActions.START_INVOICE_SUBMISSION_TASK,
-		AWSMarketplaceActions.START_TAX_COMPLIANCE_PROFILE_CHANGE_TASK,
-		AWSMarketplaceActions.START_VERIFICATION,
-		AWSMarketplaceActions.SUBSCRIBE,
-		AWSMarketplaceActions.UNSUBSCRIBE,
-		AWSMarketplaceActions.UPDATE_AGREEMENT_APPROVAL_REQUEST,
-		AWSMarketplaceActions.UPDATE_PURCHASE_ORDERS,
-		AWSMarketplaceActions.UPDATE_VERIFICATION_EVIDENCE,
+	static readonly AllWriteActions: string[] = [
+		AWSMarketplaceActions.AcceptAgreementApprovalRequest,
+		AWSMarketplaceActions.AcceptAgreementCancellationRequest,
+		AWSMarketplaceActions.AcceptAgreementPaymentRequest,
+		AWSMarketplaceActions.AcceptAgreementRequest,
+		AWSMarketplaceActions.AssociateProductsWithPrivateMarketplace,
+		AWSMarketplaceActions.BatchCreateBillingAdjustmentRequest,
+		AWSMarketplaceActions.BatchMeterUsage,
+		AWSMarketplaceActions.CancelAgreement,
+		AWSMarketplaceActions.CancelAgreementCancellationRequest,
+		AWSMarketplaceActions.CancelAgreementPaymentRequest,
+		AWSMarketplaceActions.CancelAgreementRequest,
+		AWSMarketplaceActions.CancelChangeSet,
+		AWSMarketplaceActions.CreateAgreementRequest,
+		AWSMarketplaceActions.CreatePrivateMarketplaceRequests,
+		AWSMarketplaceActions.CreateVerificationEvidence,
+		AWSMarketplaceActions.DisassociateProductsFromPrivateMarketplace,
+		AWSMarketplaceActions.MeterUsage,
+		AWSMarketplaceActions.PutDeploymentParameter,
+		AWSMarketplaceActions.PutProcurementSystemConfiguration,
+		AWSMarketplaceActions.RegisterUsage,
+		AWSMarketplaceActions.RejectAgreementApprovalRequest,
+		AWSMarketplaceActions.RejectAgreementCancellationRequest,
+		AWSMarketplaceActions.RejectAgreementPaymentRequest,
+		AWSMarketplaceActions.ResolveCustomer,
+		AWSMarketplaceActions.SendAgreementCancellationRequest,
+		AWSMarketplaceActions.SendAgreementPaymentRequest,
+		AWSMarketplaceActions.StartBuild,
+		AWSMarketplaceActions.StartChangeSet,
+		AWSMarketplaceActions.StartInvoiceSubmissionTask,
+		AWSMarketplaceActions.StartTaxComplianceProfileChangeTask,
+		AWSMarketplaceActions.StartVerification,
+		AWSMarketplaceActions.Subscribe,
+		AWSMarketplaceActions.Unsubscribe,
+		AWSMarketplaceActions.UpdateAgreementApprovalRequest,
+		AWSMarketplaceActions.UpdatePurchaseOrders,
+		AWSMarketplaceActions.UpdateVerificationEvidence,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AWSMarketplaceActions.DESCRIBE_PRIVATE_MARKETPLACE_REQUESTS,
-		AWSMarketplaceActions.GET_AGREEMENT_TERMS,
-		AWSMarketplaceActions.LIST_AGREEMENT_APPROVAL_REQUESTS,
-		AWSMarketplaceActions.LIST_AGREEMENT_CANCELLATION_REQUESTS,
-		AWSMarketplaceActions.LIST_AGREEMENT_CHARGES,
-		AWSMarketplaceActions.LIST_AGREEMENT_INVOICE_LINE_ITEMS,
-		AWSMarketplaceActions.LIST_AGREEMENT_PAYMENT_REQUESTS,
-		AWSMarketplaceActions.LIST_AGREEMENT_REQUESTS,
-		AWSMarketplaceActions.LIST_ASSESSMENTS,
-		AWSMarketplaceActions.LIST_BILLING_ADJUSTMENT_REQUESTS,
-		AWSMarketplaceActions.LIST_CHANGE_SETS,
-		AWSMarketplaceActions.LIST_ENTITIES,
-		AWSMarketplaceActions.LIST_FULFILLMENT_OPTIONS,
-		AWSMarketplaceActions.LIST_INVOICE_SUBMISSION_TASKS,
-		AWSMarketplaceActions.LIST_ISSUED_TAX_INVOICES,
-		AWSMarketplaceActions.LIST_PAYABLES,
-		AWSMarketplaceActions.LIST_PRIVATE_LISTINGS,
-		AWSMarketplaceActions.LIST_PRIVATE_MARKETPLACE_REQUESTS,
-		AWSMarketplaceActions.LIST_PURCHASE_OPTIONS,
-		AWSMarketplaceActions.LIST_TAX_COMPLIANCE_PROFILE_CHANGE_TASKS,
-		AWSMarketplaceActions.LIST_TAX_COMPLIANCE_PROFILES,
-		AWSMarketplaceActions.LIST_VERIFICATION_EVIDENCE,
-		AWSMarketplaceActions.LIST_VERIFICATIONS,
-		AWSMarketplaceActions.SEARCH_AGREEMENTS,
-		AWSMarketplaceActions.SEARCH_FACETS,
-		AWSMarketplaceActions.SEARCH_LISTINGS,
-		AWSMarketplaceActions.VIEW_SUBSCRIPTIONS,
+	static readonly AllListActions: string[] = [
+		AWSMarketplaceActions.DescribePrivateMarketplaceRequests,
+		AWSMarketplaceActions.actionGetAgreementTerms,
+		AWSMarketplaceActions.ListAgreementApprovalRequests,
+		AWSMarketplaceActions.ListAgreementCancellationRequests,
+		AWSMarketplaceActions.ListAgreementCharges,
+		AWSMarketplaceActions.ListAgreementInvoiceLineItems,
+		AWSMarketplaceActions.ListAgreementPaymentRequests,
+		AWSMarketplaceActions.ListAgreementRequests,
+		AWSMarketplaceActions.ListAssessments,
+		AWSMarketplaceActions.ListBillingAdjustmentRequests,
+		AWSMarketplaceActions.ListChangeSets,
+		AWSMarketplaceActions.ListEntities,
+		AWSMarketplaceActions.ListFulfillmentOptions,
+		AWSMarketplaceActions.ListInvoiceSubmissionTasks,
+		AWSMarketplaceActions.ListIssuedTaxInvoices,
+		AWSMarketplaceActions.ListPayables,
+		AWSMarketplaceActions.ListPrivateListings,
+		AWSMarketplaceActions.ListPrivateMarketplaceRequests,
+		AWSMarketplaceActions.ListPurchaseOptions,
+		AWSMarketplaceActions.ListTaxComplianceProfileChangeTasks,
+		AWSMarketplaceActions.ListTaxComplianceProfiles,
+		AWSMarketplaceActions.ListVerificationEvidence,
+		AWSMarketplaceActions.ListVerifications,
+		AWSMarketplaceActions.SearchAgreements,
+		AWSMarketplaceActions.SearchFacets,
+		AWSMarketplaceActions.SearchListings,
+		AWSMarketplaceActions.ViewSubscriptions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		AWSMarketplaceActions.DELETE_RESOURCE_POLICY,
-		AWSMarketplaceActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		AWSMarketplaceActions.DeleteResourcePolicy,
+		AWSMarketplaceActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AWSMarketplaceActions.TAG_RESOURCE,
-		AWSMarketplaceActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AWSMarketplaceActions.TagResource,
+		AWSMarketplaceActions.UntagResource,
 	];
 }
 
-const AllListingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/listing/.*$",
-);
-const AllPurchaseOptionsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/purchaseOption/.*$",
-);
-const AssessmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*)::(?<catalog>[^:/?]+)/Assessment/(?<resourceId>[^:/?]+)$",
-);
-const ChangeSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):(?<catalog>[^:/?]+)/ChangeSet/(?<resourceId>[^:/?]+)$",
-);
-const DashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)/ReportingData/(?<factTable>[^:/?]+)/Dashboard/(?<dashboardName>[^:/?]+)$",
-);
-const DeploymentParameterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):DeploymentParameter:catalogs/(?<catalogName>[^:/?]+)/products/(?<productId>[^:/?]+)/(?<resourceId>[^:/?]+)$",
-);
-const EntityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):(?<catalog>[^:/?]+)/(?<entityType>[^:/?]+)/(?<resourceId>[^:/?]+)$",
-);
-const InvoiceSubmissionTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/invoice-submission-task/(?<resourceId>[^:/?]+)$",
-);
-const IssuedTaxInvoiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/issued-tax-invoice/(?<resourceId>[^:/?]+)$",
-);
-const ListingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/listing/(?<listingId>[^:/?]+)$",
-);
-const OfferArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/offer/(?<offerId>[^:/?]+)$",
-);
-const OfferSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/offerSet/(?<offerSetId>[^:/?]+)$",
-);
-const ProductArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/product/(?<productId>[^:/?]+)$",
-);
-const PurchaseOptionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:::catalog/(?<catalogName>[^:/?]+)/purchaseOption/(?<purchaseOptionId>[^:/?]+)$",
-);
-const SellerDashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)/ReportingData/(?<factTable>[^:/?]+)/Dashboard/(?<dashboardName>[^:/?]+)$",
-);
-const TaxComplianceProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile/(?<resourceId>[^:/?]+)$",
-);
-const TaxComplianceProfileChangeTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile-change-task/(?<resourceId>[^:/?]+)$",
-);
-const VerificationEvidenceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):verification-type/(?<verificationType>[^:/?]+)/verification-evidence/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a AllListings ARN.
+ */
+export interface AWSMarketplaceAllListingsArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AllListings ARN.
+ */
+export interface AWSMarketplaceAllListingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+}
+
+/**
+ * Properties for building a AllPurchaseOptions ARN.
+ */
+export interface AWSMarketplaceAllPurchaseOptionsArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AllPurchaseOptions ARN.
+ */
+export interface AWSMarketplaceAllPurchaseOptionsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+}
+
+/**
+ * Properties for building a Assessment ARN.
+ */
+export interface AWSMarketplaceAssessmentArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Assessment ARN.
+ */
+export interface AWSMarketplaceAssessmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a ChangeSet ARN.
+ */
+export interface AWSMarketplaceChangeSetArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ChangeSet ARN.
+ */
+export interface AWSMarketplaceChangeSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Dashboard ARN.
+ */
+export interface AWSMarketplaceDashboardArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The FactTable component of the ARN. */
+	readonly factTable: string;
+	/** The DashboardName component of the ARN. */
+	readonly dashboardName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dashboard ARN.
+ */
+export interface AWSMarketplaceDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The FactTable component. */
+	readonly factTable: string;
+	/** The DashboardName component. */
+	readonly dashboardName: string;
+}
+
+/**
+ * Properties for building a DeploymentParameter ARN.
+ */
+export interface AWSMarketplaceDeploymentParameterArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The ProductId component of the ARN. */
+	readonly productId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DeploymentParameter ARN.
+ */
+export interface AWSMarketplaceDeploymentParameterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The ProductId component. */
+	readonly productId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Entity ARN.
+ */
+export interface AWSMarketplaceEntityArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The EntityType component of the ARN. */
+	readonly entityType: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Entity ARN.
+ */
+export interface AWSMarketplaceEntityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The EntityType component. */
+	readonly entityType: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a InvoiceSubmissionTask ARN.
+ */
+export interface AWSMarketplaceInvoiceSubmissionTaskArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a InvoiceSubmissionTask ARN.
+ */
+export interface AWSMarketplaceInvoiceSubmissionTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a IssuedTaxInvoice ARN.
+ */
+export interface AWSMarketplaceIssuedTaxInvoiceArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IssuedTaxInvoice ARN.
+ */
+export interface AWSMarketplaceIssuedTaxInvoiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Listing ARN.
+ */
+export interface AWSMarketplaceListingArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The ListingId component of the ARN. */
+	readonly listingId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Listing ARN.
+ */
+export interface AWSMarketplaceListingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The ListingId component. */
+	readonly listingId: string;
+}
+
+/**
+ * Properties for building a Offer ARN.
+ */
+export interface AWSMarketplaceOfferArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The OfferId component of the ARN. */
+	readonly offerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Offer ARN.
+ */
+export interface AWSMarketplaceOfferArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The OfferId component. */
+	readonly offerId: string;
+}
+
+/**
+ * Properties for building a OfferSet ARN.
+ */
+export interface AWSMarketplaceOfferSetArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The OfferSetId component of the ARN. */
+	readonly offerSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a OfferSet ARN.
+ */
+export interface AWSMarketplaceOfferSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The OfferSetId component. */
+	readonly offerSetId: string;
+}
+
+/**
+ * Properties for building a Product ARN.
+ */
+export interface AWSMarketplaceProductArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The ProductId component of the ARN. */
+	readonly productId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Product ARN.
+ */
+export interface AWSMarketplaceProductArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The ProductId component. */
+	readonly productId: string;
+}
+
+/**
+ * Properties for building a PurchaseOption ARN.
+ */
+export interface AWSMarketplacePurchaseOptionArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** The PurchaseOptionId component of the ARN. */
+	readonly purchaseOptionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PurchaseOption ARN.
+ */
+export interface AWSMarketplacePurchaseOptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+	/** The PurchaseOptionId component. */
+	readonly purchaseOptionId: string;
+}
+
+/**
+ * Properties for building a SellerDashboard ARN.
+ */
+export interface AWSMarketplaceSellerDashboardArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The FactTable component of the ARN. */
+	readonly factTable: string;
+	/** The DashboardName component of the ARN. */
+	readonly dashboardName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SellerDashboard ARN.
+ */
+export interface AWSMarketplaceSellerDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The FactTable component. */
+	readonly factTable: string;
+	/** The DashboardName component. */
+	readonly dashboardName: string;
+}
+
+/**
+ * Properties for building a TaxComplianceProfile ARN.
+ */
+export interface AWSMarketplaceTaxComplianceProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TaxComplianceProfile ARN.
+ */
+export interface AWSMarketplaceTaxComplianceProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a TaxComplianceProfileChangeTask ARN.
+ */
+export interface AWSMarketplaceTaxComplianceProfileChangeTaskArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TaxComplianceProfileChangeTask ARN.
+ */
+export interface AWSMarketplaceTaxComplianceProfileChangeTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a VerificationEvidence ARN.
+ */
+export interface AWSMarketplaceVerificationEvidenceArnProps {
+	/** The VerificationType component of the ARN. */
+	readonly verificationType: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VerificationEvidence ARN.
+ */
+export interface AWSMarketplaceVerificationEvidenceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerificationType component. */
+	readonly verificationType: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AllListingsArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/listing\/.*$/;
+const AllPurchaseOptionsArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/purchaseOption\/.*$/;
+const AssessmentArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*)::(?<catalog>[^:/?]+)\/Assessment\/(?<resourceId>[^:/?]+)$/;
+const ChangeSetArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):(?<catalog>[^:/?]+)\/ChangeSet\/(?<resourceId>[^:/?]+)$/;
+const DashboardArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dashboard\/(?<dashboardName>[^:/?]+)$/;
+const DeploymentParameterArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):DeploymentParameter:catalogs\/(?<catalogName>[^:/?]+)\/products\/(?<productId>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const EntityArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):(?<catalog>[^:/?]+)\/(?<entityType>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const InvoiceSubmissionTaskArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/invoice-submission-task\/(?<resourceId>[^:/?]+)$/;
+const IssuedTaxInvoiceArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/issued-tax-invoice\/(?<resourceId>[^:/?]+)$/;
+const ListingArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/listing\/(?<listingId>[^:/?]+)$/;
+const OfferArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/offer\/(?<offerId>[^:/?]+)$/;
+const OfferSetArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/offerSet\/(?<offerSetId>[^:/?]+)$/;
+const ProductArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/product\/(?<productId>[^:/?]+)$/;
+const PurchaseOptionArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:::catalog\/(?<catalogName>[^:/?]+)\/purchaseOption\/(?<purchaseOptionId>[^:/?]+)$/;
+const SellerDashboardArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace::(?<account>[^:]*):(?<catalog>[^:/?]+)\/ReportingData\/(?<factTable>[^:/?]+)\/Dashboard\/(?<dashboardName>[^:/?]+)$/;
+const TaxComplianceProfileArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile\/(?<resourceId>[^:/?]+)$/;
+const TaxComplianceProfileChangeTaskArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):tax-compliance-profile-change-task\/(?<resourceId>[^:/?]+)$/;
+const VerificationEvidenceArnRegex =
+	/^arn:(?<partition>[^:]+):aws-marketplace:(?<region>[^:]*):(?<account>[^:]*):verification-type\/(?<verificationType>[^:/?]+)\/verification-evidence\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for aws-marketplace resources.
@@ -433,16 +981,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the AllListings resource.
 	 */
-	static allListings(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static allListings(props: AWSMarketplaceAllListingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/listing/*`;
 	}
 
@@ -457,12 +996,9 @@ export class AWSMarketplaceResources {
 	 * Parses a AllListings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAllListingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-	} {
+	static parseAllListingsArn(
+		arn: string,
+	): AWSMarketplaceAllListingsArnComponents {
 		const match = AllListingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AllListings ARN: ${arn}`);
@@ -478,16 +1014,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the AllPurchaseOptions resource.
 	 */
-	static allPurchaseOptions(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static allPurchaseOptions(
+		props: AWSMarketplaceAllPurchaseOptionsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/purchaseOption/*`;
 	}
 
@@ -502,12 +1031,9 @@ export class AWSMarketplaceResources {
 	 * Parses a AllPurchaseOptions ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAllPurchaseOptionsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-	} {
+	static parseAllPurchaseOptionsArn(
+		arn: string,
+	): AWSMarketplaceAllPurchaseOptionsArnComponents {
 		const match = AllPurchaseOptionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AllPurchaseOptions ARN: ${arn}`);
@@ -523,18 +1049,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Assessment resource.
 	 */
-	static assessment(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assessment(props: AWSMarketplaceAssessmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}::${props.catalog}/Assessment/${props.resourceId}`;
 	}
 
@@ -549,13 +1064,9 @@ export class AWSMarketplaceResources {
 	 * Parses a Assessment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssessmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		resourceId: string;
-	} {
+	static parseAssessmentArn(
+		arn: string,
+	): AWSMarketplaceAssessmentArnComponents {
 		const match = AssessmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Assessment ARN: ${arn}`);
@@ -572,18 +1083,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the ChangeSet resource.
 	 */
-	static changeSet(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static changeSet(props: AWSMarketplaceChangeSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:${props.catalog}/ChangeSet/${props.resourceId}`;
 	}
 
@@ -598,13 +1098,7 @@ export class AWSMarketplaceResources {
 	 * Parses a ChangeSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChangeSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		resourceId: string;
-	} {
+	static parseChangeSetArn(arn: string): AWSMarketplaceChangeSetArnComponents {
 		const match = ChangeSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ChangeSet ARN: ${arn}`);
@@ -621,18 +1115,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Dashboard resource.
 	 */
-	static dashboard(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The FactTable component of the ARN. */
-		readonly factTable: string;
-		/** The DashboardName component of the ARN. */
-		readonly dashboardName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboard(props: AWSMarketplaceDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace::${props.account ?? "*"}:${props.catalog}/ReportingData/${props.factTable}/Dashboard/${props.dashboardName}`;
 	}
 
@@ -647,13 +1130,7 @@ export class AWSMarketplaceResources {
 	 * Parses a Dashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardArn(arn: string): {
-		partition: string;
-		account: string;
-		catalog: string;
-		factTable: string;
-		dashboardName: string;
-	} {
+	static parseDashboardArn(arn: string): AWSMarketplaceDashboardArnComponents {
 		const match = DashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Dashboard ARN: ${arn}`);
@@ -670,20 +1147,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the DeploymentParameter resource.
 	 */
-	static deploymentParameter(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The ProductId component of the ARN. */
-		readonly productId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentParameter(
+		props: AWSMarketplaceDeploymentParameterArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:DeploymentParameter:catalogs/${props.catalogName}/products/${props.productId}/${props.resourceId}`;
 	}
 
@@ -698,14 +1164,9 @@ export class AWSMarketplaceResources {
 	 * Parses a DeploymentParameter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentParameterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		productId: string;
-		resourceId: string;
-	} {
+	static parseDeploymentParameterArn(
+		arn: string,
+	): AWSMarketplaceDeploymentParameterArnComponents {
 		const match = DeploymentParameterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DeploymentParameter ARN: ${arn}`);
@@ -723,20 +1184,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Entity resource.
 	 */
-	static entity(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The EntityType component of the ARN. */
-		readonly entityType: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static entity(props: AWSMarketplaceEntityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:${props.catalog}/${props.entityType}/${props.resourceId}`;
 	}
 
@@ -751,14 +1199,7 @@ export class AWSMarketplaceResources {
 	 * Parses a Entity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEntityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		entityType: string;
-		resourceId: string;
-	} {
+	static parseEntityArn(arn: string): AWSMarketplaceEntityArnComponents {
 		const match = EntityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Entity ARN: ${arn}`);
@@ -776,18 +1217,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the InvoiceSubmissionTask resource.
 	 */
-	static invoiceSubmissionTask(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static invoiceSubmissionTask(
+		props: AWSMarketplaceInvoiceSubmissionTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/invoice-submission-task/${props.resourceId}`;
 	}
 
@@ -802,13 +1234,9 @@ export class AWSMarketplaceResources {
 	 * Parses a InvoiceSubmissionTask ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInvoiceSubmissionTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		resourceId: string;
-	} {
+	static parseInvoiceSubmissionTaskArn(
+		arn: string,
+	): AWSMarketplaceInvoiceSubmissionTaskArnComponents {
 		const match = InvoiceSubmissionTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid InvoiceSubmissionTask ARN: ${arn}`);
@@ -825,18 +1253,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the IssuedTaxInvoice resource.
 	 */
-	static issuedTaxInvoice(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static issuedTaxInvoice(
+		props: AWSMarketplaceIssuedTaxInvoiceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/issued-tax-invoice/${props.resourceId}`;
 	}
 
@@ -851,13 +1270,9 @@ export class AWSMarketplaceResources {
 	 * Parses a IssuedTaxInvoice ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIssuedTaxInvoiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		resourceId: string;
-	} {
+	static parseIssuedTaxInvoiceArn(
+		arn: string,
+	): AWSMarketplaceIssuedTaxInvoiceArnComponents {
 		const match = IssuedTaxInvoiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid IssuedTaxInvoice ARN: ${arn}`);
@@ -874,18 +1289,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Listing resource.
 	 */
-	static listing(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The ListingId component of the ARN. */
-		readonly listingId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static listing(props: AWSMarketplaceListingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/listing/${props.listingId}`;
 	}
 
@@ -900,13 +1304,7 @@ export class AWSMarketplaceResources {
 	 * Parses a Listing ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseListingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		listingId: string;
-	} {
+	static parseListingArn(arn: string): AWSMarketplaceListingArnComponents {
 		const match = ListingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Listing ARN: ${arn}`);
@@ -923,18 +1321,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Offer resource.
 	 */
-	static offer(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The OfferId component of the ARN. */
-		readonly offerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static offer(props: AWSMarketplaceOfferArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/offer/${props.offerId}`;
 	}
 
@@ -949,13 +1336,7 @@ export class AWSMarketplaceResources {
 	 * Parses a Offer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOfferArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		offerId: string;
-	} {
+	static parseOfferArn(arn: string): AWSMarketplaceOfferArnComponents {
 		const match = OfferArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Offer ARN: ${arn}`);
@@ -972,18 +1353,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the OfferSet resource.
 	 */
-	static offerSet(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The OfferSetId component of the ARN. */
-		readonly offerSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static offerSet(props: AWSMarketplaceOfferSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/offerSet/${props.offerSetId}`;
 	}
 
@@ -998,13 +1368,7 @@ export class AWSMarketplaceResources {
 	 * Parses a OfferSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOfferSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		offerSetId: string;
-	} {
+	static parseOfferSetArn(arn: string): AWSMarketplaceOfferSetArnComponents {
 		const match = OfferSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid OfferSet ARN: ${arn}`);
@@ -1021,18 +1385,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the Product resource.
 	 */
-	static product(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The ProductId component of the ARN. */
-		readonly productId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static product(props: AWSMarketplaceProductArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/product/${props.productId}`;
 	}
 
@@ -1047,13 +1400,7 @@ export class AWSMarketplaceResources {
 	 * Parses a Product ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProductArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		productId: string;
-	} {
+	static parseProductArn(arn: string): AWSMarketplaceProductArnComponents {
 		const match = ProductArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Product ARN: ${arn}`);
@@ -1070,18 +1417,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the PurchaseOption resource.
 	 */
-	static purchaseOption(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** The PurchaseOptionId component of the ARN. */
-		readonly purchaseOptionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static purchaseOption(props: AWSMarketplacePurchaseOptionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:::catalog/${props.catalogName}/purchaseOption/${props.purchaseOptionId}`;
 	}
 
@@ -1096,13 +1432,9 @@ export class AWSMarketplaceResources {
 	 * Parses a PurchaseOption ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePurchaseOptionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-		purchaseOptionId: string;
-	} {
+	static parsePurchaseOptionArn(
+		arn: string,
+	): AWSMarketplacePurchaseOptionArnComponents {
 		const match = PurchaseOptionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PurchaseOption ARN: ${arn}`);
@@ -1119,18 +1451,7 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the SellerDashboard resource.
 	 */
-	static sellerDashboard(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The FactTable component of the ARN. */
-		readonly factTable: string;
-		/** The DashboardName component of the ARN. */
-		readonly dashboardName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sellerDashboard(props: AWSMarketplaceSellerDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace::${props.account ?? "*"}:${props.catalog}/ReportingData/${props.factTable}/Dashboard/${props.dashboardName}`;
 	}
 
@@ -1145,13 +1466,9 @@ export class AWSMarketplaceResources {
 	 * Parses a SellerDashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSellerDashboardArn(arn: string): {
-		partition: string;
-		account: string;
-		catalog: string;
-		factTable: string;
-		dashboardName: string;
-	} {
+	static parseSellerDashboardArn(
+		arn: string,
+	): AWSMarketplaceSellerDashboardArnComponents {
 		const match = SellerDashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SellerDashboard ARN: ${arn}`);
@@ -1168,16 +1485,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the TaxComplianceProfile resource.
 	 */
-	static taxComplianceProfile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static taxComplianceProfile(
+		props: AWSMarketplaceTaxComplianceProfileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:tax-compliance-profile/${props.resourceId}`;
 	}
 
@@ -1192,12 +1502,9 @@ export class AWSMarketplaceResources {
 	 * Parses a TaxComplianceProfile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaxComplianceProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseTaxComplianceProfileArn(
+		arn: string,
+	): AWSMarketplaceTaxComplianceProfileArnComponents {
 		const match = TaxComplianceProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TaxComplianceProfile ARN: ${arn}`);
@@ -1213,16 +1520,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the TaxComplianceProfileChangeTask resource.
 	 */
-	static taxComplianceProfileChangeTask(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static taxComplianceProfileChangeTask(
+		props: AWSMarketplaceTaxComplianceProfileChangeTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:tax-compliance-profile-change-task/${props.resourceId}`;
 	}
 
@@ -1237,12 +1537,9 @@ export class AWSMarketplaceResources {
 	 * Parses a TaxComplianceProfileChangeTask ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaxComplianceProfileChangeTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseTaxComplianceProfileChangeTaskArn(
+		arn: string,
+	): AWSMarketplaceTaxComplianceProfileChangeTaskArnComponents {
 		const match = TaxComplianceProfileChangeTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TaxComplianceProfileChangeTask ARN: ${arn}`);
@@ -1258,18 +1555,9 @@ export class AWSMarketplaceResources {
 	/**
 	 * Builds an ARN for the VerificationEvidence resource.
 	 */
-	static verificationEvidence(props: {
-		/** The VerificationType component of the ARN. */
-		readonly verificationType: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verificationEvidence(
+		props: AWSMarketplaceVerificationEvidenceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:aws-marketplace:${props.region ?? "*"}:${props.account ?? "*"}:verification-type/${props.verificationType}/verification-evidence/${props.resourceId}`;
 	}
 
@@ -1284,13 +1572,9 @@ export class AWSMarketplaceResources {
 	 * Parses a VerificationEvidence ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerificationEvidenceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verificationType: string;
-		resourceId: string;
-	} {
+	static parseVerificationEvidenceArn(
+		arn: string,
+	): AWSMarketplaceVerificationEvidenceArnComponents {
 		const match = VerificationEvidenceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VerificationEvidence ARN: ${arn}`);
@@ -1310,204 +1594,198 @@ export class AWSMarketplaceResources {
  */
 export class AWSMarketplaceOperations {
 	/** IAM actions required for the AcceptAgreementCancellationRequest API call. */
-	static readonly ACCEPT_AGREEMENT_CANCELLATION_REQUEST: string[] = [
+	static readonly AcceptAgreementCancellationRequest: string[] = [
 		"aws-marketplace:AcceptAgreementCancellationRequest",
 		"aws-marketplace:CancelAgreement",
 	];
 	/** IAM actions required for the AcceptAgreementPaymentRequest API call. */
-	static readonly ACCEPT_AGREEMENT_PAYMENT_REQUEST: string[] = [
+	static readonly AcceptAgreementPaymentRequest: string[] = [
 		"aws-marketplace:AcceptAgreementPaymentRequest",
 		"aws-marketplace:UpdatePurchaseOrders",
 	];
 	/** IAM actions required for the AcceptAgreementRequest API call. */
-	static readonly ACCEPT_AGREEMENT_REQUEST: string[] = [
+	static readonly AcceptAgreementRequest: string[] = [
 		"aws-marketplace:AcceptAgreementRequest",
 		"aws-marketplace:Subscribe",
 		"aws-marketplace:UpdatePurchaseOrders",
 	];
 	/** IAM actions required for the BatchCreateBillingAdjustmentRequest API call. */
-	static readonly BATCH_CREATE_BILLING_ADJUSTMENT_REQUEST: string[] = [
+	static readonly BatchCreateBillingAdjustmentRequest: string[] = [
 		"aws-marketplace:BatchCreateBillingAdjustmentRequest",
 	];
 	/** IAM actions required for the BatchDescribeEntities API call. */
-	static readonly BATCH_DESCRIBE_ENTITIES: string[] = [
+	static readonly BatchDescribeEntities: string[] = [
 		"aws-marketplace:DescribeEntity",
 	];
 	/** IAM actions required for the BatchMeterUsage API call. */
-	static readonly BATCH_METER_USAGE: string[] = [
+	static readonly BatchMeterUsage: string[] = [
 		"aws-marketplace:BatchMeterUsage",
 	];
 	/** IAM actions required for the CancelAgreement API call. */
-	static readonly CANCEL_AGREEMENT: string[] = [
+	static readonly CancelAgreement: string[] = [
 		"aws-marketplace:CancelAgreement",
 		"aws-marketplace:Unsubscribe",
 	];
 	/** IAM actions required for the CancelAgreementCancellationRequest API call. */
-	static readonly CANCEL_AGREEMENT_CANCELLATION_REQUEST: string[] = [
+	static readonly CancelAgreementCancellationRequest: string[] = [
 		"aws-marketplace:CancelAgreementCancellationRequest",
 	];
 	/** IAM actions required for the CancelAgreementPaymentRequest API call. */
-	static readonly CANCEL_AGREEMENT_PAYMENT_REQUEST: string[] = [
+	static readonly CancelAgreementPaymentRequest: string[] = [
 		"aws-marketplace:CancelAgreementPaymentRequest",
 	];
 	/** IAM actions required for the CancelChangeSet API call. */
-	static readonly CANCEL_CHANGE_SET: string[] = [
+	static readonly CancelChangeSet: string[] = [
 		"aws-marketplace:CancelChangeSet",
 	];
 	/** IAM actions required for the CreateAgreementRequest API call. */
-	static readonly CREATE_AGREEMENT_REQUEST: string[] = [
+	static readonly CreateAgreementRequest: string[] = [
 		"aws-marketplace:CreateAgreementRequest",
 		"aws-marketplace:Subscribe",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"aws-marketplace:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DescribeAgreement API call. */
-	static readonly DESCRIBE_AGREEMENT: string[] = [
+	static readonly DescribeAgreement: string[] = [
 		"aws-marketplace:DescribeAgreement",
 		"aws-marketplace:ViewSubscriptions",
 	];
 	/** IAM actions required for the DescribeChangeSet API call. */
-	static readonly DESCRIBE_CHANGE_SET: string[] = [
+	static readonly DescribeChangeSet: string[] = [
 		"aws-marketplace:DescribeChangeSet",
 	];
 	/** IAM actions required for the DescribeEntity API call. */
-	static readonly DESCRIBE_ENTITY: string[] = [
-		"aws-marketplace:DescribeEntity",
-	];
+	static readonly DescribeEntity: string[] = ["aws-marketplace:DescribeEntity"];
 	/** IAM actions required for the GetAgreementCancellationRequest API call. */
-	static readonly GET_AGREEMENT_CANCELLATION_REQUEST: string[] = [
+	static readonly opGetAgreementCancellationRequest: string[] = [
 		"aws-marketplace:GetAgreementCancellationRequest",
 	];
 	/** IAM actions required for the GetAgreementEntitlements API call. */
-	static readonly GET_AGREEMENT_ENTITLEMENTS: string[] = [
+	static readonly opGetAgreementEntitlements: string[] = [
 		"aws-marketplace:GetAgreementEntitlements",
 		"aws-marketplace:ViewSubscriptions",
 	];
 	/** IAM actions required for the GetAgreementPaymentRequest API call. */
-	static readonly GET_AGREEMENT_PAYMENT_REQUEST: string[] = [
+	static readonly opGetAgreementPaymentRequest: string[] = [
 		"aws-marketplace:GetAgreementPaymentRequest",
 	];
 	/** IAM actions required for the GetAgreementTerms API call. */
-	static readonly GET_AGREEMENT_TERMS: string[] = [
+	static readonly opGetAgreementTerms: string[] = [
 		"aws-marketplace:GetAgreementTerms",
 		"aws-marketplace:ViewSubscriptions",
 	];
 	/** IAM actions required for the GetBillingAdjustmentRequest API call. */
-	static readonly GET_BILLING_ADJUSTMENT_REQUEST: string[] = [
+	static readonly opGetBillingAdjustmentRequest: string[] = [
 		"aws-marketplace:GetBillingAdjustmentRequest",
 	];
 	/** IAM actions required for the GetBuyerDashboard API call. */
-	static readonly GET_BUYER_DASHBOARD: string[] = [
+	static readonly opGetBuyerDashboard: string[] = [
 		"aws-marketplace:GetBuyerDashboard",
 	];
 	/** IAM actions required for the GetEntitlements API call. */
-	static readonly GET_ENTITLEMENTS: string[] = [
+	static readonly opGetEntitlements: string[] = [
 		"aws-marketplace:GetEntitlements",
 	];
 	/** IAM actions required for the GetListing API call. */
-	static readonly GET_LISTING: string[] = ["aws-marketplace:GetListing"];
+	static readonly opGetListing: string[] = ["aws-marketplace:GetListing"];
 	/** IAM actions required for the GetOffer API call. */
-	static readonly GET_OFFER: string[] = ["aws-marketplace:GetOffer"];
+	static readonly opGetOffer: string[] = ["aws-marketplace:GetOffer"];
 	/** IAM actions required for the GetOfferSet API call. */
-	static readonly GET_OFFER_SET: string[] = ["aws-marketplace:GetOfferSet"];
+	static readonly opGetOfferSet: string[] = ["aws-marketplace:GetOfferSet"];
 	/** IAM actions required for the GetOfferTerms API call. */
-	static readonly GET_OFFER_TERMS: string[] = ["aws-marketplace:GetOfferTerms"];
+	static readonly opGetOfferTerms: string[] = ["aws-marketplace:GetOfferTerms"];
 	/** IAM actions required for the GetProduct API call. */
-	static readonly GET_PRODUCT: string[] = ["aws-marketplace:GetProduct"];
+	static readonly opGetProduct: string[] = ["aws-marketplace:GetProduct"];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"aws-marketplace:GetResourcePolicy",
 	];
 	/** IAM actions required for the ListAgreementCancellationRequests API call. */
-	static readonly LIST_AGREEMENT_CANCELLATION_REQUESTS: string[] = [
+	static readonly ListAgreementCancellationRequests: string[] = [
 		"aws-marketplace:ListAgreementCancellationRequests",
 	];
 	/** IAM actions required for the ListAgreementCharges API call. */
-	static readonly LIST_AGREEMENT_CHARGES: string[] = [
+	static readonly ListAgreementCharges: string[] = [
 		"aws-marketplace:ListAgreementCharges",
 	];
 	/** IAM actions required for the ListAgreementInvoiceLineItems API call. */
-	static readonly LIST_AGREEMENT_INVOICE_LINE_ITEMS: string[] = [
+	static readonly ListAgreementInvoiceLineItems: string[] = [
 		"aws-marketplace:ListAgreementInvoiceLineItems",
 	];
 	/** IAM actions required for the ListAgreementPaymentRequests API call. */
-	static readonly LIST_AGREEMENT_PAYMENT_REQUESTS: string[] = [
+	static readonly ListAgreementPaymentRequests: string[] = [
 		"aws-marketplace:ListAgreementPaymentRequests",
 	];
 	/** IAM actions required for the ListBillingAdjustmentRequests API call. */
-	static readonly LIST_BILLING_ADJUSTMENT_REQUESTS: string[] = [
+	static readonly ListBillingAdjustmentRequests: string[] = [
 		"aws-marketplace:ListBillingAdjustmentRequests",
 	];
 	/** IAM actions required for the ListChangeSets API call. */
-	static readonly LIST_CHANGE_SETS: string[] = [
-		"aws-marketplace:ListChangeSets",
-	];
+	static readonly ListChangeSets: string[] = ["aws-marketplace:ListChangeSets"];
 	/** IAM actions required for the ListEntities API call. */
-	static readonly LIST_ENTITIES: string[] = [
+	static readonly ListEntities: string[] = [
 		"aws-marketplace:DescribeEntity",
 		"aws-marketplace:ListEntities",
 	];
 	/** IAM actions required for the ListFulfillmentOptions API call. */
-	static readonly LIST_FULFILLMENT_OPTIONS: string[] = [
+	static readonly ListFulfillmentOptions: string[] = [
 		"aws-marketplace:ListFulfillmentOptions",
 	];
 	/** IAM actions required for the ListPurchaseOptions API call. */
-	static readonly LIST_PURCHASE_OPTIONS: string[] = [
+	static readonly ListPurchaseOptions: string[] = [
 		"aws-marketplace:ListPrivateListings",
 		"aws-marketplace:ListPurchaseOptions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"aws-marketplace:ListTagsForResource",
 	];
 	/** IAM actions required for the MeterUsage API call. */
-	static readonly METER_USAGE: string[] = ["aws-marketplace:MeterUsage"];
+	static readonly MeterUsage: string[] = ["aws-marketplace:MeterUsage"];
 	/** IAM actions required for the PutDeploymentParameter API call. */
-	static readonly PUT_DEPLOYMENT_PARAMETER: string[] = [
+	static readonly PutDeploymentParameter: string[] = [
 		"aws-marketplace:PutDeploymentParameter",
 		"aws-marketplace:TagResource",
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
+	static readonly PutResourcePolicy: string[] = [
 		"aws-marketplace:PutResourcePolicy",
 	];
 	/** IAM actions required for the RegisterUsage API call. */
-	static readonly REGISTER_USAGE: string[] = ["aws-marketplace:RegisterUsage"];
+	static readonly RegisterUsage: string[] = ["aws-marketplace:RegisterUsage"];
 	/** IAM actions required for the RejectAgreementCancellationRequest API call. */
-	static readonly REJECT_AGREEMENT_CANCELLATION_REQUEST: string[] = [
+	static readonly RejectAgreementCancellationRequest: string[] = [
 		"aws-marketplace:RejectAgreementCancellationRequest",
 	];
 	/** IAM actions required for the RejectAgreementPaymentRequest API call. */
-	static readonly REJECT_AGREEMENT_PAYMENT_REQUEST: string[] = [
+	static readonly RejectAgreementPaymentRequest: string[] = [
 		"aws-marketplace:RejectAgreementPaymentRequest",
 	];
 	/** IAM actions required for the ResolveCustomer API call. */
-	static readonly RESOLVE_CUSTOMER: string[] = [
+	static readonly ResolveCustomer: string[] = [
 		"aws-marketplace:ResolveCustomer",
 	];
 	/** IAM actions required for the SearchAgreements API call. */
-	static readonly SEARCH_AGREEMENTS: string[] = [
+	static readonly SearchAgreements: string[] = [
 		"aws-marketplace:SearchAgreements",
 		"aws-marketplace:ViewSubscriptions",
 	];
 	/** IAM actions required for the SearchFacets API call. */
-	static readonly SEARCH_FACETS: string[] = ["aws-marketplace:SearchFacets"];
+	static readonly SearchFacets: string[] = ["aws-marketplace:SearchFacets"];
 	/** IAM actions required for the SearchListings API call. */
-	static readonly SEARCH_LISTINGS: string[] = [
-		"aws-marketplace:SearchListings",
-	];
+	static readonly SearchListings: string[] = ["aws-marketplace:SearchListings"];
 	/** IAM actions required for the SendAgreementCancellationRequest API call. */
-	static readonly SEND_AGREEMENT_CANCELLATION_REQUEST: string[] = [
+	static readonly SendAgreementCancellationRequest: string[] = [
 		"aws-marketplace:SendAgreementCancellationRequest",
 	];
 	/** IAM actions required for the SendAgreementPaymentRequest API call. */
-	static readonly SEND_AGREEMENT_PAYMENT_REQUEST: string[] = [
+	static readonly SendAgreementPaymentRequest: string[] = [
 		"aws-marketplace:SendAgreementPaymentRequest",
 	];
 	/** IAM actions required for the StartChangeSet API call. */
-	static readonly START_CHANGE_SET: string[] = [
+	static readonly StartChangeSet: string[] = [
 		"aws-marketplace:DescribeAgreement",
 		"aws-marketplace:DescribeChangeSet",
 		"aws-marketplace:DescribeEntity",
@@ -1518,11 +1796,11 @@ export class AWSMarketplaceOperations {
 		"aws-marketplace:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["aws-marketplace:TagResource"];
+	static readonly TagResource: string[] = ["aws-marketplace:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["aws-marketplace:UntagResource"];
+	static readonly UntagResource: string[] = ["aws-marketplace:UntagResource"];
 	/** IAM actions required for the UpdatePurchaseOrders API call. */
-	static readonly UPDATE_PURCHASE_ORDERS: string[] = [
+	static readonly UpdatePurchaseOrders: string[] = [
 		"aws-marketplace:UpdatePurchaseOrders",
 	];
 }
@@ -1532,163 +1810,177 @@ export class AWSMarketplaceOperations {
  */
 export class AWSMarketplaceConditions {
 	/** Condition keys applicable to the AcceptAgreementCancellationRequest action. */
-	static readonly ACCEPT_AGREEMENT_CANCELLATION_REQUEST_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly AcceptAgreementCancellationRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the AcceptAgreementPaymentRequest action. */
-	static readonly ACCEPT_AGREEMENT_PAYMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly AcceptAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the AcceptAgreementRequest action. */
-	static readonly ACCEPT_AGREEMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly AcceptAgreementRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:ProductId",
 	];
 	/** Condition keys applicable to the BatchCreateBillingAdjustmentRequest action. */
-	static readonly BATCH_CREATE_BILLING_ADJUSTMENT_REQUEST_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly BatchCreateBillingAdjustmentRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the CancelAgreement action. */
-	static readonly CANCEL_AGREEMENT_CONDITION_KEYS: string[] = [
+	static readonly CancelAgreementConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 	];
 	/** Condition keys applicable to the CancelAgreementCancellationRequest action. */
-	static readonly CANCEL_AGREEMENT_CANCELLATION_REQUEST_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly CancelAgreementCancellationRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the CancelAgreementPaymentRequest action. */
-	static readonly CANCEL_AGREEMENT_PAYMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly CancelAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the CreateAgreementRequest action. */
-	static readonly CREATE_AGREEMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly CreateAgreementRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:ProductId",
 	];
 	/** Condition keys applicable to the CreateVerificationEvidence action. */
-	static readonly CREATE_VERIFICATION_EVIDENCE_CONDITION_KEYS: string[] = [
+	static readonly CreateVerificationEvidenceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeAgreement action. */
-	static readonly DESCRIBE_AGREEMENT_CONDITION_KEYS: string[] = [
+	static readonly DescribeAgreementConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the GetAgreementCancellationRequest action. */
-	static readonly GET_AGREEMENT_CANCELLATION_REQUEST_CONDITION_KEYS: string[] =
+	static readonly actionGetAgreementCancellationRequestConditionKeys: string[] =
 		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
 	/** Condition keys applicable to the GetAgreementEntitlements action. */
-	static readonly GET_AGREEMENT_ENTITLEMENTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgreementEntitlementsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 	];
 	/** Condition keys applicable to the GetAgreementPaymentRequest action. */
-	static readonly GET_AGREEMENT_PAYMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the GetAgreementTerms action. */
-	static readonly GET_AGREEMENT_TERMS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgreementTermsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the GetBillingAdjustmentRequest action. */
-	static readonly GET_BILLING_ADJUSTMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly actionGetBillingAdjustmentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the GetVerification action. */
-	static readonly GET_VERIFICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetVerificationConditionKeys: string[] = [
 		"aws-marketplace:VerificationType",
 	];
 	/** Condition keys applicable to the ListAgreementCancellationRequests action. */
-	static readonly LIST_AGREEMENT_CANCELLATION_REQUESTS_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly ListAgreementCancellationRequestsConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the ListAgreementCharges action. */
-	static readonly LIST_AGREEMENT_CHARGES_CONDITION_KEYS: string[] = [
+	static readonly ListAgreementChargesConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 	];
 	/** Condition keys applicable to the ListAgreementInvoiceLineItems action. */
-	static readonly LIST_AGREEMENT_INVOICE_LINE_ITEMS_CONDITION_KEYS: string[] = [
+	static readonly ListAgreementInvoiceLineItemsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the ListAgreementPaymentRequests action. */
-	static readonly LIST_AGREEMENT_PAYMENT_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly ListAgreementPaymentRequestsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the ListBillingAdjustmentRequests action. */
-	static readonly LIST_BILLING_ADJUSTMENT_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly ListBillingAdjustmentRequestsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListVerifications action. */
-	static readonly LIST_VERIFICATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListVerificationsConditionKeys: string[] = [
 		"aws-marketplace:VerificationType",
 	];
 	/** Condition keys applicable to the PutDeploymentParameter action. */
-	static readonly PUT_DEPLOYMENT_PARAMETER_CONDITION_KEYS: string[] = [
+	static readonly PutDeploymentParameterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RejectAgreementCancellationRequest action. */
-	static readonly REJECT_AGREEMENT_CANCELLATION_REQUEST_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly RejectAgreementCancellationRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the RejectAgreementPaymentRequest action. */
-	static readonly REJECT_AGREEMENT_PAYMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly RejectAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the SearchAgreements action. */
-	static readonly SEARCH_AGREEMENTS_CONDITION_KEYS: string[] = [
+	static readonly SearchAgreementsConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the SendAgreementCancellationRequest action. */
-	static readonly SEND_AGREEMENT_CANCELLATION_REQUEST_CONDITION_KEYS: string[] =
-		["aws-marketplace:AgreementType", "aws-marketplace:PartyType"];
+	static readonly SendAgreementCancellationRequestConditionKeys: string[] = [
+		"aws-marketplace:AgreementType",
+		"aws-marketplace:PartyType",
+	];
 	/** Condition keys applicable to the SendAgreementPaymentRequest action. */
-	static readonly SEND_AGREEMENT_PAYMENT_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly SendAgreementPaymentRequestConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 		"aws-marketplace:PartyType",
 	];
 	/** Condition keys applicable to the StartChangeSet action. */
-	static readonly START_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly StartChangeSetConditionKeys: string[] = [
 		"aws-marketplace:Intent",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"catalog:ChangeType",
 	];
 	/** Condition keys applicable to the StartInvoiceSubmissionTask action. */
-	static readonly START_INVOICE_SUBMISSION_TASK_CONDITION_KEYS: string[] = [
+	static readonly StartInvoiceSubmissionTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartTaxComplianceProfileChangeTask action. */
-	static readonly START_TAX_COMPLIANCE_PROFILE_CHANGE_TASK_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly StartTaxComplianceProfileChangeTaskConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the StartVerification action. */
-	static readonly START_VERIFICATION_CONDITION_KEYS: string[] = [
+	static readonly StartVerificationConditionKeys: string[] = [
 		"aws-marketplace:VerificationType",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePurchaseOrders action. */
-	static readonly UPDATE_PURCHASE_ORDERS_CONDITION_KEYS: string[] = [
+	static readonly UpdatePurchaseOrdersConditionKeys: string[] = [
 		"aws-marketplace:AgreementType",
 	];
 
@@ -1703,11 +1995,11 @@ export class AWSMarketplaceConditions {
 	/** Condition key: aws-marketplace:VerificationType (String) */
 	static readonly VERIFICATION_TYPE = "aws-marketplace:VerificationType";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: catalog:ChangeType (String) */
 	static readonly CHANGE_TYPE = "catalog:ChangeType";
 

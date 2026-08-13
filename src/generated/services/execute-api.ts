@@ -13,34 +13,104 @@ export class ExecuteAPIActions {
 	static readonly SERVICE_PREFIX = "execute-api";
 
 	/** [Write] execute-api:InvalidateCache */
-	static readonly INVALIDATE_CACHE = "execute-api:InvalidateCache";
+	static readonly InvalidateCache = "execute-api:InvalidateCache";
 	/** [Write] execute-api:Invoke */
-	static readonly INVOKE = "execute-api:Invoke";
+	static readonly Invoke = "execute-api:Invoke";
 	/** [Write] execute-api:ManageConnections */
-	static readonly MANAGE_CONNECTIONS = "execute-api:ManageConnections";
+	static readonly ManageConnections = "execute-api:ManageConnections";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ExecuteAPIActions.INVALIDATE_CACHE,
-		ExecuteAPIActions.INVOKE,
-		ExecuteAPIActions.MANAGE_CONNECTIONS,
+	static readonly AllWriteActions: string[] = [
+		ExecuteAPIActions.InvalidateCache,
+		ExecuteAPIActions.Invoke,
+		ExecuteAPIActions.ManageConnections,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ExecuteAPIDomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):execute-api:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)$",
-);
-const ExecuteAPIGeneralArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):execute-api:(?<region>[^:]*):(?<account>[^:]*):(?<apiId>[^:/?]+)/(?<stage>[^:/?]+)/(?<method>[^:/?]+)/(?<apiSpecificResourcePath>[^:/?]+)$",
-);
+/**
+ * Properties for building a execute-api-domain ARN.
+ */
+export interface ExecuteAPIExecuteAPIDomainArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The DomainIdentifier component of the ARN. */
+	readonly domainIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a execute-api-domain ARN.
+ */
+export interface ExecuteAPIExecuteAPIDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The DomainIdentifier component. */
+	readonly domainIdentifier: string;
+}
+
+/**
+ * Properties for building a execute-api-general ARN.
+ */
+export interface ExecuteAPIExecuteAPIGeneralArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The Stage component of the ARN. */
+	readonly stage: string;
+	/** The Method component of the ARN. */
+	readonly method: string;
+	/** The ApiSpecificResourcePath component of the ARN. */
+	readonly apiSpecificResourcePath: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a execute-api-general ARN.
+ */
+export interface ExecuteAPIExecuteAPIGeneralArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The Stage component. */
+	readonly stage: string;
+	/** The Method component. */
+	readonly method: string;
+	/** The ApiSpecificResourcePath component. */
+	readonly apiSpecificResourcePath: string;
+}
+
+const ExecuteAPIDomainArnRegex =
+	/^arn:(?<partition>[^:]+):execute-api:(?<region>[^:]*):(?<account>[^:]*):\/domainnames\/(?<domainName>[^:/?]+)\+(?<domainIdentifier>[^:/?]+)$/;
+const ExecuteAPIGeneralArnRegex =
+	/^arn:(?<partition>[^:]+):execute-api:(?<region>[^:]*):(?<account>[^:]*):(?<apiId>[^:/?]+)\/(?<stage>[^:/?]+)\/(?<method>[^:/?]+)\/(?<apiSpecificResourcePath>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for execute-api resources.
@@ -49,18 +119,7 @@ export class ExecuteAPIResources {
 	/**
 	 * Builds an ARN for the execute-api-domain resource.
 	 */
-	static executeAPIDomain(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The DomainIdentifier component of the ARN. */
-		readonly domainIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static executeAPIDomain(props: ExecuteAPIExecuteAPIDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:execute-api:${props.region ?? "*"}:${props.account ?? "*"}:/domainnames/${props.domainName}+${props.domainIdentifier}`;
 	}
 
@@ -75,13 +134,9 @@ export class ExecuteAPIResources {
 	 * Parses a execute-api-domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExecuteAPIDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		domainIdentifier: string;
-	} {
+	static parseExecuteAPIDomainArn(
+		arn: string,
+	): ExecuteAPIExecuteAPIDomainArnComponents {
 		const match = ExecuteAPIDomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid execute-api-domain ARN: ${arn}`);
@@ -98,22 +153,7 @@ export class ExecuteAPIResources {
 	/**
 	 * Builds an ARN for the execute-api-general resource.
 	 */
-	static executeAPIGeneral(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The Stage component of the ARN. */
-		readonly stage: string;
-		/** The Method component of the ARN. */
-		readonly method: string;
-		/** The ApiSpecificResourcePath component of the ARN. */
-		readonly apiSpecificResourcePath: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static executeAPIGeneral(props: ExecuteAPIExecuteAPIGeneralArnProps): string {
 		return `arn:${props.partition ?? "aws"}:execute-api:${props.region ?? "*"}:${props.account ?? "*"}:${props.apiId}/${props.stage}/${props.method}/${props.apiSpecificResourcePath}`;
 	}
 
@@ -128,15 +168,9 @@ export class ExecuteAPIResources {
 	 * Parses a execute-api-general ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExecuteAPIGeneralArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		stage: string;
-		method: string;
-		apiSpecificResourcePath: string;
-	} {
+	static parseExecuteAPIGeneralArn(
+		arn: string,
+	): ExecuteAPIExecuteAPIGeneralArnComponents {
 		const match = ExecuteAPIGeneralArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid execute-api-general ARN: ${arn}`);
@@ -158,11 +192,11 @@ export class ExecuteAPIResources {
  */
 export class ExecuteAPIOperations {
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = [];
+	static readonly DeleteConnection: string[] = [];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = [];
+	static readonly opGetConnection: string[] = [];
 	/** IAM actions required for the PostToConnection API call. */
-	static readonly POST_TO_CONNECTION: string[] = [];
+	static readonly PostToConnection: string[] = [];
 }
 
 /**

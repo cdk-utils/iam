@@ -13,292 +13,404 @@ export class AthenaActions {
 	static readonly SERVICE_PREFIX = "athena";
 
 	/** [Read] athena:BatchGetNamedQuery */
-	static readonly BATCH_GET_NAMED_QUERY = "athena:BatchGetNamedQuery";
+	static readonly BatchGetNamedQuery = "athena:BatchGetNamedQuery";
 	/** [Read] athena:BatchGetPreparedStatement */
-	static readonly BATCH_GET_PREPARED_STATEMENT =
+	static readonly BatchGetPreparedStatement =
 		"athena:BatchGetPreparedStatement";
 	/** [Read] athena:BatchGetQueryExecution */
-	static readonly BATCH_GET_QUERY_EXECUTION = "athena:BatchGetQueryExecution";
+	static readonly BatchGetQueryExecution = "athena:BatchGetQueryExecution";
 	/** [Write] athena:CancelCapacityReservation */
-	static readonly CANCEL_CAPACITY_RESERVATION =
+	static readonly CancelCapacityReservation =
 		"athena:CancelCapacityReservation";
 	/** [Write] athena:CancelQueryExecution */
-	static readonly CANCEL_QUERY_EXECUTION = "athena:CancelQueryExecution";
+	static readonly CancelQueryExecution = "athena:CancelQueryExecution";
 	/** [Write] athena:CreateCapacityReservation */
-	static readonly CREATE_CAPACITY_RESERVATION =
+	static readonly CreateCapacityReservation =
 		"athena:CreateCapacityReservation";
 	/** [Write] athena:CreateDataCatalog */
-	static readonly CREATE_DATA_CATALOG = "athena:CreateDataCatalog";
+	static readonly CreateDataCatalog = "athena:CreateDataCatalog";
 	/** [Write] athena:CreateNamedQuery */
-	static readonly CREATE_NAMED_QUERY = "athena:CreateNamedQuery";
+	static readonly CreateNamedQuery = "athena:CreateNamedQuery";
 	/** [Write] athena:CreateNotebook */
-	static readonly CREATE_NOTEBOOK = "athena:CreateNotebook";
+	static readonly CreateNotebook = "athena:CreateNotebook";
 	/** [Write] athena:CreatePreparedStatement */
-	static readonly CREATE_PREPARED_STATEMENT = "athena:CreatePreparedStatement";
+	static readonly CreatePreparedStatement = "athena:CreatePreparedStatement";
 	/** [Write] athena:CreatePresignedNotebookUrl */
-	static readonly CREATE_PRESIGNED_NOTEBOOK_URL =
+	static readonly CreatePresignedNotebookUrl =
 		"athena:CreatePresignedNotebookUrl";
 	/** [Write] athena:CreateWorkGroup */
-	static readonly CREATE_WORK_GROUP = "athena:CreateWorkGroup";
+	static readonly CreateWorkGroup = "athena:CreateWorkGroup";
 	/** [Write] athena:DeleteCapacityReservation */
-	static readonly DELETE_CAPACITY_RESERVATION =
+	static readonly DeleteCapacityReservation =
 		"athena:DeleteCapacityReservation";
 	/** [Write] athena:DeleteDataCatalog */
-	static readonly DELETE_DATA_CATALOG = "athena:DeleteDataCatalog";
+	static readonly DeleteDataCatalog = "athena:DeleteDataCatalog";
 	/** [Write] athena:DeleteNamedQuery */
-	static readonly DELETE_NAMED_QUERY = "athena:DeleteNamedQuery";
+	static readonly DeleteNamedQuery = "athena:DeleteNamedQuery";
 	/** [Write] athena:DeleteNotebook */
-	static readonly DELETE_NOTEBOOK = "athena:DeleteNotebook";
+	static readonly DeleteNotebook = "athena:DeleteNotebook";
 	/** [Write] athena:DeletePreparedStatement */
-	static readonly DELETE_PREPARED_STATEMENT = "athena:DeletePreparedStatement";
+	static readonly DeletePreparedStatement = "athena:DeletePreparedStatement";
 	/** [Write] athena:DeleteWorkGroup */
-	static readonly DELETE_WORK_GROUP = "athena:DeleteWorkGroup";
+	static readonly DeleteWorkGroup = "athena:DeleteWorkGroup";
 	/** [Write] athena:ExportNotebook */
-	static readonly EXPORT_NOTEBOOK = "athena:ExportNotebook";
+	static readonly ExportNotebook = "athena:ExportNotebook";
 	/** [Read] athena:GetCalculationExecution */
-	static readonly GET_CALCULATION_EXECUTION = "athena:GetCalculationExecution";
+	static readonly actionGetCalculationExecution =
+		"athena:GetCalculationExecution";
 	/** [Read] athena:GetCalculationExecutionCode */
-	static readonly GET_CALCULATION_EXECUTION_CODE =
+	static readonly actionGetCalculationExecutionCode =
 		"athena:GetCalculationExecutionCode";
 	/** [Read] athena:GetCalculationExecutionStatus */
-	static readonly GET_CALCULATION_EXECUTION_STATUS =
+	static readonly actionGetCalculationExecutionStatus =
 		"athena:GetCalculationExecutionStatus";
 	/** [Read] athena:GetCapacityAssignmentConfiguration */
-	static readonly GET_CAPACITY_ASSIGNMENT_CONFIGURATION =
+	static readonly actionGetCapacityAssignmentConfiguration =
 		"athena:GetCapacityAssignmentConfiguration";
 	/** [Read] athena:GetCapacityReservation */
-	static readonly GET_CAPACITY_RESERVATION = "athena:GetCapacityReservation";
+	static readonly actionGetCapacityReservation =
+		"athena:GetCapacityReservation";
 	/** [Read] athena:GetCatalogs */
-	static readonly GET_CATALOGS = "athena:GetCatalogs";
+	static readonly actionGetCatalogs = "athena:GetCatalogs";
 	/** [Read] athena:GetDataCatalog */
-	static readonly GET_DATA_CATALOG = "athena:GetDataCatalog";
+	static readonly actionGetDataCatalog = "athena:GetDataCatalog";
 	/** [Read] athena:GetDatabase */
-	static readonly GET_DATABASE = "athena:GetDatabase";
+	static readonly actionGetDatabase = "athena:GetDatabase";
 	/** [Read] athena:GetExecutionEngine */
-	static readonly GET_EXECUTION_ENGINE = "athena:GetExecutionEngine";
+	static readonly actionGetExecutionEngine = "athena:GetExecutionEngine";
 	/** [Read] athena:GetExecutionEngines */
-	static readonly GET_EXECUTION_ENGINES = "athena:GetExecutionEngines";
+	static readonly actionGetExecutionEngines = "athena:GetExecutionEngines";
 	/** [Read] athena:GetNamedQuery */
-	static readonly GET_NAMED_QUERY = "athena:GetNamedQuery";
+	static readonly actionGetNamedQuery = "athena:GetNamedQuery";
 	/** [Read] athena:GetNamespace */
-	static readonly GET_NAMESPACE = "athena:GetNamespace";
+	static readonly actionGetNamespace = "athena:GetNamespace";
 	/** [Read] athena:GetNamespaces */
-	static readonly GET_NAMESPACES = "athena:GetNamespaces";
+	static readonly actionGetNamespaces = "athena:GetNamespaces";
 	/** [Read] athena:GetNotebookMetadata */
-	static readonly GET_NOTEBOOK_METADATA = "athena:GetNotebookMetadata";
+	static readonly actionGetNotebookMetadata = "athena:GetNotebookMetadata";
 	/** [Read] athena:GetPreparedStatement */
-	static readonly GET_PREPARED_STATEMENT = "athena:GetPreparedStatement";
+	static readonly actionGetPreparedStatement = "athena:GetPreparedStatement";
 	/** [Read] athena:GetQueryExecution */
-	static readonly GET_QUERY_EXECUTION = "athena:GetQueryExecution";
+	static readonly actionGetQueryExecution = "athena:GetQueryExecution";
 	/** [Read] athena:GetQueryExecutions */
-	static readonly GET_QUERY_EXECUTIONS = "athena:GetQueryExecutions";
+	static readonly actionGetQueryExecutions = "athena:GetQueryExecutions";
 	/** [Read] athena:GetQueryResults */
-	static readonly GET_QUERY_RESULTS = "athena:GetQueryResults";
+	static readonly actionGetQueryResults = "athena:GetQueryResults";
 	/** [Read] athena:GetQueryResultsStream */
-	static readonly GET_QUERY_RESULTS_STREAM = "athena:GetQueryResultsStream";
+	static readonly actionGetQueryResultsStream = "athena:GetQueryResultsStream";
 	/** [Read] athena:GetQueryRuntimeStatistics */
-	static readonly GET_QUERY_RUNTIME_STATISTICS =
+	static readonly actionGetQueryRuntimeStatistics =
 		"athena:GetQueryRuntimeStatistics";
 	/** [Read] athena:GetResourceDashboard */
-	static readonly GET_RESOURCE_DASHBOARD = "athena:GetResourceDashboard";
+	static readonly actionGetResourceDashboard = "athena:GetResourceDashboard";
 	/** [Read] athena:GetSession */
-	static readonly GET_SESSION = "athena:GetSession";
+	static readonly actionGetSession = "athena:GetSession";
 	/** [Write] athena:GetSessionEndpoint */
-	static readonly GET_SESSION_ENDPOINT = "athena:GetSessionEndpoint";
+	static readonly actionGetSessionEndpoint = "athena:GetSessionEndpoint";
 	/** [Read] athena:GetSessionStatus */
-	static readonly GET_SESSION_STATUS = "athena:GetSessionStatus";
+	static readonly actionGetSessionStatus = "athena:GetSessionStatus";
 	/** [Read] athena:GetTable */
-	static readonly GET_TABLE = "athena:GetTable";
+	static readonly actionGetTable = "athena:GetTable";
 	/** [Read] athena:GetTableMetadata */
-	static readonly GET_TABLE_METADATA = "athena:GetTableMetadata";
+	static readonly actionGetTableMetadata = "athena:GetTableMetadata";
 	/** [Read] athena:GetTables */
-	static readonly GET_TABLES = "athena:GetTables";
+	static readonly actionGetTables = "athena:GetTables";
 	/** [Read] athena:GetWorkGroup */
-	static readonly GET_WORK_GROUP = "athena:GetWorkGroup";
+	static readonly actionGetWorkGroup = "athena:GetWorkGroup";
 	/** [Write] athena:ImportNotebook */
-	static readonly IMPORT_NOTEBOOK = "athena:ImportNotebook";
+	static readonly ImportNotebook = "athena:ImportNotebook";
 	/** [List] athena:ListApplicationDPUSizes */
-	static readonly LIST_APPLICATION_DPU_SIZES = "athena:ListApplicationDPUSizes";
+	static readonly ListApplicationDPUSizes = "athena:ListApplicationDPUSizes";
 	/** [List] athena:ListCalculationExecutions */
-	static readonly LIST_CALCULATION_EXECUTIONS =
+	static readonly ListCalculationExecutions =
 		"athena:ListCalculationExecutions";
 	/** [List] athena:ListCapacityReservations */
-	static readonly LIST_CAPACITY_RESERVATIONS =
-		"athena:ListCapacityReservations";
+	static readonly ListCapacityReservations = "athena:ListCapacityReservations";
 	/** [List] athena:ListDataCatalogs */
-	static readonly LIST_DATA_CATALOGS = "athena:ListDataCatalogs";
+	static readonly ListDataCatalogs = "athena:ListDataCatalogs";
 	/** [List] athena:ListDatabases */
-	static readonly LIST_DATABASES = "athena:ListDatabases";
+	static readonly ListDatabases = "athena:ListDatabases";
 	/** [Read] athena:ListEngineVersions */
-	static readonly LIST_ENGINE_VERSIONS = "athena:ListEngineVersions";
+	static readonly ListEngineVersions = "athena:ListEngineVersions";
 	/** [List] athena:ListExecutors */
-	static readonly LIST_EXECUTORS = "athena:ListExecutors";
+	static readonly ListExecutors = "athena:ListExecutors";
 	/** [List] athena:ListNamedQueries */
-	static readonly LIST_NAMED_QUERIES = "athena:ListNamedQueries";
+	static readonly ListNamedQueries = "athena:ListNamedQueries";
 	/** [List] athena:ListNotebookMetadata */
-	static readonly LIST_NOTEBOOK_METADATA = "athena:ListNotebookMetadata";
+	static readonly ListNotebookMetadata = "athena:ListNotebookMetadata";
 	/** [List] athena:ListNotebookSessions */
-	static readonly LIST_NOTEBOOK_SESSIONS = "athena:ListNotebookSessions";
+	static readonly ListNotebookSessions = "athena:ListNotebookSessions";
 	/** [List] athena:ListPreparedStatements */
-	static readonly LIST_PREPARED_STATEMENTS = "athena:ListPreparedStatements";
+	static readonly ListPreparedStatements = "athena:ListPreparedStatements";
 	/** [Read] athena:ListQueryExecutions */
-	static readonly LIST_QUERY_EXECUTIONS = "athena:ListQueryExecutions";
+	static readonly ListQueryExecutions = "athena:ListQueryExecutions";
 	/** [List] athena:ListSessions */
-	static readonly LIST_SESSIONS = "athena:ListSessions";
+	static readonly ListSessions = "athena:ListSessions";
 	/** [Read] athena:ListTableMetadata */
-	static readonly LIST_TABLE_METADATA = "athena:ListTableMetadata";
+	static readonly ListTableMetadata = "athena:ListTableMetadata";
 	/** [Read] athena:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "athena:ListTagsForResource";
+	static readonly ListTagsForResource = "athena:ListTagsForResource";
 	/** [List] athena:ListWorkGroups */
-	static readonly LIST_WORK_GROUPS = "athena:ListWorkGroups";
+	static readonly ListWorkGroups = "athena:ListWorkGroups";
 	/** [Write] athena:PutCapacityAssignmentConfiguration */
-	static readonly PUT_CAPACITY_ASSIGNMENT_CONFIGURATION =
+	static readonly PutCapacityAssignmentConfiguration =
 		"athena:PutCapacityAssignmentConfiguration";
 	/** [Write] athena:RunQuery */
-	static readonly RUN_QUERY = "athena:RunQuery";
+	static readonly RunQuery = "athena:RunQuery";
 	/** [Write] athena:StartCalculationExecution */
-	static readonly START_CALCULATION_EXECUTION =
+	static readonly StartCalculationExecution =
 		"athena:StartCalculationExecution";
 	/** [Write] athena:StartQueryExecution */
-	static readonly START_QUERY_EXECUTION = "athena:StartQueryExecution";
+	static readonly StartQueryExecution = "athena:StartQueryExecution";
 	/** [Write] athena:StartSession */
-	static readonly START_SESSION = "athena:StartSession";
+	static readonly StartSession = "athena:StartSession";
 	/** [Write] athena:StopCalculationExecution */
-	static readonly STOP_CALCULATION_EXECUTION =
-		"athena:StopCalculationExecution";
+	static readonly StopCalculationExecution = "athena:StopCalculationExecution";
 	/** [Write] athena:StopQueryExecution */
-	static readonly STOP_QUERY_EXECUTION = "athena:StopQueryExecution";
+	static readonly StopQueryExecution = "athena:StopQueryExecution";
 	/** [Tagging] athena:TagResource */
-	static readonly TAG_RESOURCE = "athena:TagResource";
+	static readonly TagResource = "athena:TagResource";
 	/** [Write] athena:TerminateSession */
-	static readonly TERMINATE_SESSION = "athena:TerminateSession";
+	static readonly TerminateSession = "athena:TerminateSession";
 	/** [Tagging] athena:UntagResource */
-	static readonly UNTAG_RESOURCE = "athena:UntagResource";
+	static readonly UntagResource = "athena:UntagResource";
 	/** [Write] athena:UpdateCapacityReservation */
-	static readonly UPDATE_CAPACITY_RESERVATION =
+	static readonly UpdateCapacityReservation =
 		"athena:UpdateCapacityReservation";
 	/** [Write] athena:UpdateDataCatalog */
-	static readonly UPDATE_DATA_CATALOG = "athena:UpdateDataCatalog";
+	static readonly UpdateDataCatalog = "athena:UpdateDataCatalog";
 	/** [Write] athena:UpdateNamedQuery */
-	static readonly UPDATE_NAMED_QUERY = "athena:UpdateNamedQuery";
+	static readonly UpdateNamedQuery = "athena:UpdateNamedQuery";
 	/** [Write] athena:UpdateNotebook */
-	static readonly UPDATE_NOTEBOOK = "athena:UpdateNotebook";
+	static readonly UpdateNotebook = "athena:UpdateNotebook";
 	/** [Write] athena:UpdateNotebookMetadata */
-	static readonly UPDATE_NOTEBOOK_METADATA = "athena:UpdateNotebookMetadata";
+	static readonly UpdateNotebookMetadata = "athena:UpdateNotebookMetadata";
 	/** [Write] athena:UpdatePreparedStatement */
-	static readonly UPDATE_PREPARED_STATEMENT = "athena:UpdatePreparedStatement";
+	static readonly UpdatePreparedStatement = "athena:UpdatePreparedStatement";
 	/** [Write] athena:UpdateWorkGroup */
-	static readonly UPDATE_WORK_GROUP = "athena:UpdateWorkGroup";
+	static readonly UpdateWorkGroup = "athena:UpdateWorkGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AthenaActions.BATCH_GET_NAMED_QUERY,
-		AthenaActions.BATCH_GET_PREPARED_STATEMENT,
-		AthenaActions.BATCH_GET_QUERY_EXECUTION,
-		AthenaActions.GET_CALCULATION_EXECUTION,
-		AthenaActions.GET_CALCULATION_EXECUTION_CODE,
-		AthenaActions.GET_CALCULATION_EXECUTION_STATUS,
-		AthenaActions.GET_CAPACITY_ASSIGNMENT_CONFIGURATION,
-		AthenaActions.GET_CAPACITY_RESERVATION,
-		AthenaActions.GET_CATALOGS,
-		AthenaActions.GET_DATA_CATALOG,
-		AthenaActions.GET_DATABASE,
-		AthenaActions.GET_EXECUTION_ENGINE,
-		AthenaActions.GET_EXECUTION_ENGINES,
-		AthenaActions.GET_NAMED_QUERY,
-		AthenaActions.GET_NAMESPACE,
-		AthenaActions.GET_NAMESPACES,
-		AthenaActions.GET_NOTEBOOK_METADATA,
-		AthenaActions.GET_PREPARED_STATEMENT,
-		AthenaActions.GET_QUERY_EXECUTION,
-		AthenaActions.GET_QUERY_EXECUTIONS,
-		AthenaActions.GET_QUERY_RESULTS,
-		AthenaActions.GET_QUERY_RESULTS_STREAM,
-		AthenaActions.GET_QUERY_RUNTIME_STATISTICS,
-		AthenaActions.GET_RESOURCE_DASHBOARD,
-		AthenaActions.GET_SESSION,
-		AthenaActions.GET_SESSION_STATUS,
-		AthenaActions.GET_TABLE,
-		AthenaActions.GET_TABLE_METADATA,
-		AthenaActions.GET_TABLES,
-		AthenaActions.GET_WORK_GROUP,
-		AthenaActions.LIST_ENGINE_VERSIONS,
-		AthenaActions.LIST_QUERY_EXECUTIONS,
-		AthenaActions.LIST_TABLE_METADATA,
-		AthenaActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AthenaActions.BatchGetNamedQuery,
+		AthenaActions.BatchGetPreparedStatement,
+		AthenaActions.BatchGetQueryExecution,
+		AthenaActions.actionGetCalculationExecution,
+		AthenaActions.actionGetCalculationExecutionCode,
+		AthenaActions.actionGetCalculationExecutionStatus,
+		AthenaActions.actionGetCapacityAssignmentConfiguration,
+		AthenaActions.actionGetCapacityReservation,
+		AthenaActions.actionGetCatalogs,
+		AthenaActions.actionGetDataCatalog,
+		AthenaActions.actionGetDatabase,
+		AthenaActions.actionGetExecutionEngine,
+		AthenaActions.actionGetExecutionEngines,
+		AthenaActions.actionGetNamedQuery,
+		AthenaActions.actionGetNamespace,
+		AthenaActions.actionGetNamespaces,
+		AthenaActions.actionGetNotebookMetadata,
+		AthenaActions.actionGetPreparedStatement,
+		AthenaActions.actionGetQueryExecution,
+		AthenaActions.actionGetQueryExecutions,
+		AthenaActions.actionGetQueryResults,
+		AthenaActions.actionGetQueryResultsStream,
+		AthenaActions.actionGetQueryRuntimeStatistics,
+		AthenaActions.actionGetResourceDashboard,
+		AthenaActions.actionGetSession,
+		AthenaActions.actionGetSessionStatus,
+		AthenaActions.actionGetTable,
+		AthenaActions.actionGetTableMetadata,
+		AthenaActions.actionGetTables,
+		AthenaActions.actionGetWorkGroup,
+		AthenaActions.ListEngineVersions,
+		AthenaActions.ListQueryExecutions,
+		AthenaActions.ListTableMetadata,
+		AthenaActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AthenaActions.CANCEL_CAPACITY_RESERVATION,
-		AthenaActions.CANCEL_QUERY_EXECUTION,
-		AthenaActions.CREATE_CAPACITY_RESERVATION,
-		AthenaActions.CREATE_DATA_CATALOG,
-		AthenaActions.CREATE_NAMED_QUERY,
-		AthenaActions.CREATE_NOTEBOOK,
-		AthenaActions.CREATE_PREPARED_STATEMENT,
-		AthenaActions.CREATE_PRESIGNED_NOTEBOOK_URL,
-		AthenaActions.CREATE_WORK_GROUP,
-		AthenaActions.DELETE_CAPACITY_RESERVATION,
-		AthenaActions.DELETE_DATA_CATALOG,
-		AthenaActions.DELETE_NAMED_QUERY,
-		AthenaActions.DELETE_NOTEBOOK,
-		AthenaActions.DELETE_PREPARED_STATEMENT,
-		AthenaActions.DELETE_WORK_GROUP,
-		AthenaActions.EXPORT_NOTEBOOK,
-		AthenaActions.GET_SESSION_ENDPOINT,
-		AthenaActions.IMPORT_NOTEBOOK,
-		AthenaActions.PUT_CAPACITY_ASSIGNMENT_CONFIGURATION,
-		AthenaActions.RUN_QUERY,
-		AthenaActions.START_CALCULATION_EXECUTION,
-		AthenaActions.START_QUERY_EXECUTION,
-		AthenaActions.START_SESSION,
-		AthenaActions.STOP_CALCULATION_EXECUTION,
-		AthenaActions.STOP_QUERY_EXECUTION,
-		AthenaActions.TERMINATE_SESSION,
-		AthenaActions.UPDATE_CAPACITY_RESERVATION,
-		AthenaActions.UPDATE_DATA_CATALOG,
-		AthenaActions.UPDATE_NAMED_QUERY,
-		AthenaActions.UPDATE_NOTEBOOK,
-		AthenaActions.UPDATE_NOTEBOOK_METADATA,
-		AthenaActions.UPDATE_PREPARED_STATEMENT,
-		AthenaActions.UPDATE_WORK_GROUP,
+	static readonly AllWriteActions: string[] = [
+		AthenaActions.CancelCapacityReservation,
+		AthenaActions.CancelQueryExecution,
+		AthenaActions.CreateCapacityReservation,
+		AthenaActions.CreateDataCatalog,
+		AthenaActions.CreateNamedQuery,
+		AthenaActions.CreateNotebook,
+		AthenaActions.CreatePreparedStatement,
+		AthenaActions.CreatePresignedNotebookUrl,
+		AthenaActions.CreateWorkGroup,
+		AthenaActions.DeleteCapacityReservation,
+		AthenaActions.DeleteDataCatalog,
+		AthenaActions.DeleteNamedQuery,
+		AthenaActions.DeleteNotebook,
+		AthenaActions.DeletePreparedStatement,
+		AthenaActions.DeleteWorkGroup,
+		AthenaActions.ExportNotebook,
+		AthenaActions.actionGetSessionEndpoint,
+		AthenaActions.ImportNotebook,
+		AthenaActions.PutCapacityAssignmentConfiguration,
+		AthenaActions.RunQuery,
+		AthenaActions.StartCalculationExecution,
+		AthenaActions.StartQueryExecution,
+		AthenaActions.StartSession,
+		AthenaActions.StopCalculationExecution,
+		AthenaActions.StopQueryExecution,
+		AthenaActions.TerminateSession,
+		AthenaActions.UpdateCapacityReservation,
+		AthenaActions.UpdateDataCatalog,
+		AthenaActions.UpdateNamedQuery,
+		AthenaActions.UpdateNotebook,
+		AthenaActions.UpdateNotebookMetadata,
+		AthenaActions.UpdatePreparedStatement,
+		AthenaActions.UpdateWorkGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AthenaActions.LIST_APPLICATION_DPU_SIZES,
-		AthenaActions.LIST_CALCULATION_EXECUTIONS,
-		AthenaActions.LIST_CAPACITY_RESERVATIONS,
-		AthenaActions.LIST_DATA_CATALOGS,
-		AthenaActions.LIST_DATABASES,
-		AthenaActions.LIST_EXECUTORS,
-		AthenaActions.LIST_NAMED_QUERIES,
-		AthenaActions.LIST_NOTEBOOK_METADATA,
-		AthenaActions.LIST_NOTEBOOK_SESSIONS,
-		AthenaActions.LIST_PREPARED_STATEMENTS,
-		AthenaActions.LIST_SESSIONS,
-		AthenaActions.LIST_WORK_GROUPS,
+	static readonly AllListActions: string[] = [
+		AthenaActions.ListApplicationDPUSizes,
+		AthenaActions.ListCalculationExecutions,
+		AthenaActions.ListCapacityReservations,
+		AthenaActions.ListDataCatalogs,
+		AthenaActions.ListDatabases,
+		AthenaActions.ListExecutors,
+		AthenaActions.ListNamedQueries,
+		AthenaActions.ListNotebookMetadata,
+		AthenaActions.ListNotebookSessions,
+		AthenaActions.ListPreparedStatements,
+		AthenaActions.ListSessions,
+		AthenaActions.ListWorkGroups,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AthenaActions.TAG_RESOURCE,
-		AthenaActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AthenaActions.TagResource,
+		AthenaActions.UntagResource,
 	];
 }
 
-const CapacityReservationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation/(?<capacityReservationName>[^:/?]+)$",
-);
-const DatacatalogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):datacatalog/(?<dataCatalogName>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup/(?<workGroupName>[^:/?]+)/session/(?<sessionId>[^:/?]+)$",
-);
-const WorkgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup/(?<workGroupName>[^:/?]+)$",
-);
+/**
+ * Properties for building a capacity-reservation ARN.
+ */
+export interface AthenaCapacityReservationArnProps {
+	/** The CapacityReservationName component of the ARN. */
+	readonly capacityReservationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-reservation ARN.
+ */
+export interface AthenaCapacityReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationName component. */
+	readonly capacityReservationName: string;
+}
+
+/**
+ * Properties for building a datacatalog ARN.
+ */
+export interface AthenaDatacatalogArnProps {
+	/** The DataCatalogName component of the ARN. */
+	readonly dataCatalogName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a datacatalog ARN.
+ */
+export interface AthenaDatacatalogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataCatalogName component. */
+	readonly dataCatalogName: string;
+}
+
+/**
+ * Properties for building a session ARN.
+ */
+export interface AthenaSessionArnProps {
+	/** The WorkGroupName component of the ARN. */
+	readonly workGroupName: string;
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a session ARN.
+ */
+export interface AthenaSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkGroupName component. */
+	readonly workGroupName: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+/**
+ * Properties for building a workgroup ARN.
+ */
+export interface AthenaWorkgroupArnProps {
+	/** The WorkGroupName component of the ARN. */
+	readonly workGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workgroup ARN.
+ */
+export interface AthenaWorkgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkGroupName component. */
+	readonly workGroupName: string;
+}
+
+const CapacityReservationArnRegex =
+	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation\/(?<capacityReservationName>[^:/?]+)$/;
+const DatacatalogArnRegex =
+	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):datacatalog\/(?<dataCatalogName>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup\/(?<workGroupName>[^:/?]+)\/session\/(?<sessionId>[^:/?]+)$/;
+const WorkgroupArnRegex =
+	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup\/(?<workGroupName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for athena resources.
@@ -307,16 +419,7 @@ export class AthenaResources {
 	/**
 	 * Builds an ARN for the capacity-reservation resource.
 	 */
-	static capacityReservation(props: {
-		/** The CapacityReservationName component of the ARN. */
-		readonly capacityReservationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityReservation(props: AthenaCapacityReservationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:athena:${props.region ?? "*"}:${props.account ?? "*"}:capacity-reservation/${props.capacityReservationName}`;
 	}
 
@@ -331,12 +434,9 @@ export class AthenaResources {
 	 * Parses a capacity-reservation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityReservationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityReservationName: string;
-	} {
+	static parseCapacityReservationArn(
+		arn: string,
+	): AthenaCapacityReservationArnComponents {
 		const match = CapacityReservationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacity-reservation ARN: ${arn}`);
@@ -352,16 +452,7 @@ export class AthenaResources {
 	/**
 	 * Builds an ARN for the datacatalog resource.
 	 */
-	static datacatalog(props: {
-		/** The DataCatalogName component of the ARN. */
-		readonly dataCatalogName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static datacatalog(props: AthenaDatacatalogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:athena:${props.region ?? "*"}:${props.account ?? "*"}:datacatalog/${props.dataCatalogName}`;
 	}
 
@@ -376,12 +467,7 @@ export class AthenaResources {
 	 * Parses a datacatalog ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatacatalogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataCatalogName: string;
-	} {
+	static parseDatacatalogArn(arn: string): AthenaDatacatalogArnComponents {
 		const match = DatacatalogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid datacatalog ARN: ${arn}`);
@@ -397,18 +483,7 @@ export class AthenaResources {
 	/**
 	 * Builds an ARN for the session resource.
 	 */
-	static session(props: {
-		/** The WorkGroupName component of the ARN. */
-		readonly workGroupName: string;
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: AthenaSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:athena:${props.region ?? "*"}:${props.account ?? "*"}:workgroup/${props.workGroupName}/session/${props.sessionId}`;
 	}
 
@@ -423,13 +498,7 @@ export class AthenaResources {
 	 * Parses a session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workGroupName: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): AthenaSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid session ARN: ${arn}`);
@@ -446,16 +515,7 @@ export class AthenaResources {
 	/**
 	 * Builds an ARN for the workgroup resource.
 	 */
-	static workgroup(props: {
-		/** The WorkGroupName component of the ARN. */
-		readonly workGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workgroup(props: AthenaWorkgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:athena:${props.region ?? "*"}:${props.account ?? "*"}:workgroup/${props.workGroupName}`;
 	}
 
@@ -470,12 +530,7 @@ export class AthenaResources {
 	 * Parses a workgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workGroupName: string;
-	} {
+	static parseWorkgroupArn(arn: string): AthenaWorkgroupArnComponents {
 		const match = WorkgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workgroup ARN: ${arn}`);
@@ -494,230 +549,224 @@ export class AthenaResources {
  */
 export class AthenaOperations {
 	/** IAM actions required for the BatchGetNamedQuery API call. */
-	static readonly BATCH_GET_NAMED_QUERY: string[] = [
-		"athena:BatchGetNamedQuery",
-	];
+	static readonly BatchGetNamedQuery: string[] = ["athena:BatchGetNamedQuery"];
 	/** IAM actions required for the BatchGetPreparedStatement API call. */
-	static readonly BATCH_GET_PREPARED_STATEMENT: string[] = [
+	static readonly BatchGetPreparedStatement: string[] = [
 		"athena:BatchGetPreparedStatement",
 	];
 	/** IAM actions required for the BatchGetQueryExecution API call. */
-	static readonly BATCH_GET_QUERY_EXECUTION: string[] = [
+	static readonly BatchGetQueryExecution: string[] = [
 		"athena:BatchGetQueryExecution",
 	];
 	/** IAM actions required for the CancelCapacityReservation API call. */
-	static readonly CANCEL_CAPACITY_RESERVATION: string[] = [
+	static readonly CancelCapacityReservation: string[] = [
 		"athena:CancelCapacityReservation",
 	];
 	/** IAM actions required for the CreateCapacityReservation API call. */
-	static readonly CREATE_CAPACITY_RESERVATION: string[] = [
+	static readonly CreateCapacityReservation: string[] = [
 		"athena:CreateCapacityReservation",
 		"athena:TagResource",
 	];
 	/** IAM actions required for the CreateDataCatalog API call. */
-	static readonly CREATE_DATA_CATALOG: string[] = [
+	static readonly CreateDataCatalog: string[] = [
 		"athena:CreateDataCatalog",
 		"athena:TagResource",
 	];
 	/** IAM actions required for the CreateNamedQuery API call. */
-	static readonly CREATE_NAMED_QUERY: string[] = ["athena:CreateNamedQuery"];
+	static readonly CreateNamedQuery: string[] = ["athena:CreateNamedQuery"];
 	/** IAM actions required for the CreateNotebook API call. */
-	static readonly CREATE_NOTEBOOK: string[] = ["athena:CreateNotebook"];
+	static readonly CreateNotebook: string[] = ["athena:CreateNotebook"];
 	/** IAM actions required for the CreatePreparedStatement API call. */
-	static readonly CREATE_PREPARED_STATEMENT: string[] = [
+	static readonly CreatePreparedStatement: string[] = [
 		"athena:CreatePreparedStatement",
 	];
 	/** IAM actions required for the CreatePresignedNotebookUrl API call. */
-	static readonly CREATE_PRESIGNED_NOTEBOOK_URL: string[] = [
+	static readonly CreatePresignedNotebookUrl: string[] = [
 		"athena:CreatePresignedNotebookUrl",
 	];
 	/** IAM actions required for the CreateWorkGroup API call. */
-	static readonly CREATE_WORK_GROUP: string[] = [
+	static readonly CreateWorkGroup: string[] = [
 		"athena:CreateWorkGroup",
 		"iam:PassRole",
 		"athena:TagResource",
 	];
 	/** IAM actions required for the DeleteCapacityReservation API call. */
-	static readonly DELETE_CAPACITY_RESERVATION: string[] = [
+	static readonly DeleteCapacityReservation: string[] = [
 		"athena:DeleteCapacityReservation",
 	];
 	/** IAM actions required for the DeleteDataCatalog API call. */
-	static readonly DELETE_DATA_CATALOG: string[] = ["athena:DeleteDataCatalog"];
+	static readonly DeleteDataCatalog: string[] = ["athena:DeleteDataCatalog"];
 	/** IAM actions required for the DeleteNamedQuery API call. */
-	static readonly DELETE_NAMED_QUERY: string[] = ["athena:DeleteNamedQuery"];
+	static readonly DeleteNamedQuery: string[] = ["athena:DeleteNamedQuery"];
 	/** IAM actions required for the DeleteNotebook API call. */
-	static readonly DELETE_NOTEBOOK: string[] = ["athena:DeleteNotebook"];
+	static readonly DeleteNotebook: string[] = ["athena:DeleteNotebook"];
 	/** IAM actions required for the DeletePreparedStatement API call. */
-	static readonly DELETE_PREPARED_STATEMENT: string[] = [
+	static readonly DeletePreparedStatement: string[] = [
 		"athena:DeletePreparedStatement",
 	];
 	/** IAM actions required for the DeleteWorkGroup API call. */
-	static readonly DELETE_WORK_GROUP: string[] = ["athena:DeleteWorkGroup"];
+	static readonly DeleteWorkGroup: string[] = ["athena:DeleteWorkGroup"];
 	/** IAM actions required for the ExportNotebook API call. */
-	static readonly EXPORT_NOTEBOOK: string[] = ["athena:ExportNotebook"];
+	static readonly ExportNotebook: string[] = ["athena:ExportNotebook"];
 	/** IAM actions required for the GetCalculationExecution API call. */
-	static readonly GET_CALCULATION_EXECUTION: string[] = [
+	static readonly opGetCalculationExecution: string[] = [
 		"athena:GetCalculationExecution",
 	];
 	/** IAM actions required for the GetCalculationExecutionCode API call. */
-	static readonly GET_CALCULATION_EXECUTION_CODE: string[] = [
+	static readonly opGetCalculationExecutionCode: string[] = [
 		"athena:GetCalculationExecutionCode",
 	];
 	/** IAM actions required for the GetCalculationExecutionStatus API call. */
-	static readonly GET_CALCULATION_EXECUTION_STATUS: string[] = [
+	static readonly opGetCalculationExecutionStatus: string[] = [
 		"athena:GetCalculationExecutionStatus",
 	];
 	/** IAM actions required for the GetCapacityAssignmentConfiguration API call. */
-	static readonly GET_CAPACITY_ASSIGNMENT_CONFIGURATION: string[] = [
+	static readonly opGetCapacityAssignmentConfiguration: string[] = [
 		"athena:GetCapacityAssignmentConfiguration",
 	];
 	/** IAM actions required for the GetCapacityReservation API call. */
-	static readonly GET_CAPACITY_RESERVATION: string[] = [
+	static readonly opGetCapacityReservation: string[] = [
 		"athena:GetCapacityReservation",
 	];
 	/** IAM actions required for the GetDataCatalog API call. */
-	static readonly GET_DATA_CATALOG: string[] = ["athena:GetDataCatalog"];
+	static readonly opGetDataCatalog: string[] = ["athena:GetDataCatalog"];
 	/** IAM actions required for the GetDatabase API call. */
-	static readonly GET_DATABASE: string[] = ["athena:GetDatabase"];
+	static readonly opGetDatabase: string[] = ["athena:GetDatabase"];
 	/** IAM actions required for the GetNamedQuery API call. */
-	static readonly GET_NAMED_QUERY: string[] = ["athena:GetNamedQuery"];
+	static readonly opGetNamedQuery: string[] = ["athena:GetNamedQuery"];
 	/** IAM actions required for the GetNotebookMetadata API call. */
-	static readonly GET_NOTEBOOK_METADATA: string[] = [
+	static readonly opGetNotebookMetadata: string[] = [
 		"athena:GetNotebookMetadata",
 	];
 	/** IAM actions required for the GetPreparedStatement API call. */
-	static readonly GET_PREPARED_STATEMENT: string[] = [
+	static readonly opGetPreparedStatement: string[] = [
 		"athena:GetPreparedStatement",
 	];
 	/** IAM actions required for the GetQueryExecution API call. */
-	static readonly GET_QUERY_EXECUTION: string[] = ["athena:GetQueryExecution"];
+	static readonly opGetQueryExecution: string[] = ["athena:GetQueryExecution"];
 	/** IAM actions required for the GetQueryResults API call. */
-	static readonly GET_QUERY_RESULTS: string[] = ["athena:GetQueryResults"];
+	static readonly opGetQueryResults: string[] = ["athena:GetQueryResults"];
 	/** IAM actions required for the GetQueryRuntimeStatistics API call. */
-	static readonly GET_QUERY_RUNTIME_STATISTICS: string[] = [
+	static readonly opGetQueryRuntimeStatistics: string[] = [
 		"athena:GetQueryRuntimeStatistics",
 	];
 	/** IAM actions required for the GetResourceDashboard API call. */
-	static readonly GET_RESOURCE_DASHBOARD: string[] = [
+	static readonly opGetResourceDashboard: string[] = [
 		"athena:GetResourceDashboard",
 	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["athena:GetSession"];
+	static readonly opGetSession: string[] = ["athena:GetSession"];
 	/** IAM actions required for the GetSessionEndpoint API call. */
-	static readonly GET_SESSION_ENDPOINT: string[] = [
+	static readonly opGetSessionEndpoint: string[] = [
 		"athena:GetSessionEndpoint",
 	];
 	/** IAM actions required for the GetSessionStatus API call. */
-	static readonly GET_SESSION_STATUS: string[] = ["athena:GetSessionStatus"];
+	static readonly opGetSessionStatus: string[] = ["athena:GetSessionStatus"];
 	/** IAM actions required for the GetTableMetadata API call. */
-	static readonly GET_TABLE_METADATA: string[] = ["athena:GetTableMetadata"];
+	static readonly opGetTableMetadata: string[] = ["athena:GetTableMetadata"];
 	/** IAM actions required for the GetWorkGroup API call. */
-	static readonly GET_WORK_GROUP: string[] = ["athena:GetWorkGroup"];
+	static readonly opGetWorkGroup: string[] = ["athena:GetWorkGroup"];
 	/** IAM actions required for the ImportNotebook API call. */
-	static readonly IMPORT_NOTEBOOK: string[] = ["athena:ImportNotebook"];
+	static readonly ImportNotebook: string[] = ["athena:ImportNotebook"];
 	/** IAM actions required for the ListApplicationDPUSizes API call. */
-	static readonly LIST_APPLICATION_DPU_SIZES: string[] = [
+	static readonly ListApplicationDPUSizes: string[] = [
 		"athena:ListApplicationDPUSizes",
 	];
 	/** IAM actions required for the ListCalculationExecutions API call. */
-	static readonly LIST_CALCULATION_EXECUTIONS: string[] = [
+	static readonly ListCalculationExecutions: string[] = [
 		"athena:ListCalculationExecutions",
 	];
 	/** IAM actions required for the ListCapacityReservations API call. */
-	static readonly LIST_CAPACITY_RESERVATIONS: string[] = [
+	static readonly ListCapacityReservations: string[] = [
 		"athena:ListCapacityReservations",
 	];
 	/** IAM actions required for the ListDataCatalogs API call. */
-	static readonly LIST_DATA_CATALOGS: string[] = ["athena:ListDataCatalogs"];
+	static readonly ListDataCatalogs: string[] = ["athena:ListDataCatalogs"];
 	/** IAM actions required for the ListDatabases API call. */
-	static readonly LIST_DATABASES: string[] = ["athena:ListDatabases"];
+	static readonly ListDatabases: string[] = ["athena:ListDatabases"];
 	/** IAM actions required for the ListEngineVersions API call. */
-	static readonly LIST_ENGINE_VERSIONS: string[] = [
-		"athena:ListEngineVersions",
-	];
+	static readonly ListEngineVersions: string[] = ["athena:ListEngineVersions"];
 	/** IAM actions required for the ListExecutors API call. */
-	static readonly LIST_EXECUTORS: string[] = ["athena:ListExecutors"];
+	static readonly ListExecutors: string[] = ["athena:ListExecutors"];
 	/** IAM actions required for the ListNamedQueries API call. */
-	static readonly LIST_NAMED_QUERIES: string[] = ["athena:ListNamedQueries"];
+	static readonly ListNamedQueries: string[] = ["athena:ListNamedQueries"];
 	/** IAM actions required for the ListNotebookMetadata API call. */
-	static readonly LIST_NOTEBOOK_METADATA: string[] = [
+	static readonly ListNotebookMetadata: string[] = [
 		"athena:ListNotebookMetadata",
 	];
 	/** IAM actions required for the ListNotebookSessions API call. */
-	static readonly LIST_NOTEBOOK_SESSIONS: string[] = [
+	static readonly ListNotebookSessions: string[] = [
 		"athena:ListNotebookSessions",
 	];
 	/** IAM actions required for the ListPreparedStatements API call. */
-	static readonly LIST_PREPARED_STATEMENTS: string[] = [
+	static readonly ListPreparedStatements: string[] = [
 		"athena:ListPreparedStatements",
 	];
 	/** IAM actions required for the ListQueryExecutions API call. */
-	static readonly LIST_QUERY_EXECUTIONS: string[] = [
+	static readonly ListQueryExecutions: string[] = [
 		"athena:ListQueryExecutions",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["athena:ListSessions"];
+	static readonly ListSessions: string[] = ["athena:ListSessions"];
 	/** IAM actions required for the ListTableMetadata API call. */
-	static readonly LIST_TABLE_METADATA: string[] = ["athena:ListTableMetadata"];
+	static readonly ListTableMetadata: string[] = ["athena:ListTableMetadata"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"athena:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWorkGroups API call. */
-	static readonly LIST_WORK_GROUPS: string[] = ["athena:ListWorkGroups"];
+	static readonly ListWorkGroups: string[] = ["athena:ListWorkGroups"];
 	/** IAM actions required for the PutCapacityAssignmentConfiguration API call. */
-	static readonly PUT_CAPACITY_ASSIGNMENT_CONFIGURATION: string[] = [
+	static readonly PutCapacityAssignmentConfiguration: string[] = [
 		"athena:PutCapacityAssignmentConfiguration",
 	];
 	/** IAM actions required for the StartCalculationExecution API call. */
-	static readonly START_CALCULATION_EXECUTION: string[] = [
+	static readonly StartCalculationExecution: string[] = [
 		"athena:StartCalculationExecution",
 	];
 	/** IAM actions required for the StartQueryExecution API call. */
-	static readonly START_QUERY_EXECUTION: string[] = [
+	static readonly StartQueryExecution: string[] = [
 		"athena:StartQueryExecution",
 	];
 	/** IAM actions required for the StartSession API call. */
-	static readonly START_SESSION: string[] = [
+	static readonly StartSession: string[] = [
 		"athena:ListTagsForResource",
 		"iam:PassRole",
 		"athena:StartSession",
 		"athena:TagResource",
 	];
 	/** IAM actions required for the StopCalculationExecution API call. */
-	static readonly STOP_CALCULATION_EXECUTION: string[] = [
+	static readonly StopCalculationExecution: string[] = [
 		"athena:StopCalculationExecution",
 	];
 	/** IAM actions required for the StopQueryExecution API call. */
-	static readonly STOP_QUERY_EXECUTION: string[] = [
-		"athena:StopQueryExecution",
-	];
+	static readonly StopQueryExecution: string[] = ["athena:StopQueryExecution"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["athena:TagResource"];
+	static readonly TagResource: string[] = ["athena:TagResource"];
 	/** IAM actions required for the TerminateSession API call. */
-	static readonly TERMINATE_SESSION: string[] = ["athena:TerminateSession"];
+	static readonly TerminateSession: string[] = ["athena:TerminateSession"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["athena:UntagResource"];
+	static readonly UntagResource: string[] = ["athena:UntagResource"];
 	/** IAM actions required for the UpdateCapacityReservation API call. */
-	static readonly UPDATE_CAPACITY_RESERVATION: string[] = [
+	static readonly UpdateCapacityReservation: string[] = [
 		"athena:UpdateCapacityReservation",
 	];
 	/** IAM actions required for the UpdateDataCatalog API call. */
-	static readonly UPDATE_DATA_CATALOG: string[] = ["athena:UpdateDataCatalog"];
+	static readonly UpdateDataCatalog: string[] = ["athena:UpdateDataCatalog"];
 	/** IAM actions required for the UpdateNamedQuery API call. */
-	static readonly UPDATE_NAMED_QUERY: string[] = ["athena:UpdateNamedQuery"];
+	static readonly UpdateNamedQuery: string[] = ["athena:UpdateNamedQuery"];
 	/** IAM actions required for the UpdateNotebook API call. */
-	static readonly UPDATE_NOTEBOOK: string[] = ["athena:UpdateNotebook"];
+	static readonly UpdateNotebook: string[] = ["athena:UpdateNotebook"];
 	/** IAM actions required for the UpdateNotebookMetadata API call. */
-	static readonly UPDATE_NOTEBOOK_METADATA: string[] = [
+	static readonly UpdateNotebookMetadata: string[] = [
 		"athena:UpdateNotebookMetadata",
 	];
 	/** IAM actions required for the UpdatePreparedStatement API call. */
-	static readonly UPDATE_PREPARED_STATEMENT: string[] = [
+	static readonly UpdatePreparedStatement: string[] = [
 		"athena:UpdatePreparedStatement",
 	];
 	/** IAM actions required for the UpdateWorkGroup API call. */
-	static readonly UPDATE_WORK_GROUP: string[] = [
+	static readonly UpdateWorkGroup: string[] = [
 		"iam:PassRole",
 		"athena:UpdateWorkGroup",
 	];
@@ -728,39 +777,39 @@ export class AthenaOperations {
  */
 export class AthenaConditions {
 	/** Condition keys applicable to the CreateCapacityReservation action. */
-	static readonly CREATE_CAPACITY_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly CreateCapacityReservationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataCatalog action. */
-	static readonly CREATE_DATA_CATALOG_CONDITION_KEYS: string[] = [
+	static readonly CreateDataCatalogConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkGroup action. */
-	static readonly CREATE_WORK_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartSession action. */
-	static readonly START_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

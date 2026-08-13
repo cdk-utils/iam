@@ -13,37 +13,37 @@ export class SustainabilityActions {
 	static readonly SERVICE_PREFIX = "sustainability";
 
 	/** [Read] sustainability:GetCarbonFootprintSummary */
-	static readonly GET_CARBON_FOOTPRINT_SUMMARY =
+	static readonly actionGetCarbonFootprintSummary =
 		"sustainability:GetCarbonFootprintSummary";
 	/** [Read] sustainability:GetEstimatedCarbonEmissions */
-	static readonly GET_ESTIMATED_CARBON_EMISSIONS =
+	static readonly actionGetEstimatedCarbonEmissions =
 		"sustainability:GetEstimatedCarbonEmissions";
 	/** [Read] sustainability:GetEstimatedCarbonEmissionsDimensionValues */
-	static readonly GET_ESTIMATED_CARBON_EMISSIONS_DIMENSION_VALUES =
+	static readonly actionGetEstimatedCarbonEmissionsDimensionValues =
 		"sustainability:GetEstimatedCarbonEmissionsDimensionValues";
 	/** [Read] sustainability:GetEstimatedWaterAllocation */
-	static readonly GET_ESTIMATED_WATER_ALLOCATION =
+	static readonly actionGetEstimatedWaterAllocation =
 		"sustainability:GetEstimatedWaterAllocation";
 	/** [Read] sustainability:GetEstimatedWaterAllocationDimensionValues */
-	static readonly GET_ESTIMATED_WATER_ALLOCATION_DIMENSION_VALUES =
+	static readonly actionGetEstimatedWaterAllocationDimensionValues =
 		"sustainability:GetEstimatedWaterAllocationDimensionValues";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SustainabilityActions.GET_CARBON_FOOTPRINT_SUMMARY,
-		SustainabilityActions.GET_ESTIMATED_CARBON_EMISSIONS,
-		SustainabilityActions.GET_ESTIMATED_CARBON_EMISSIONS_DIMENSION_VALUES,
-		SustainabilityActions.GET_ESTIMATED_WATER_ALLOCATION,
-		SustainabilityActions.GET_ESTIMATED_WATER_ALLOCATION_DIMENSION_VALUES,
+	static readonly AllReadActions: string[] = [
+		SustainabilityActions.actionGetCarbonFootprintSummary,
+		SustainabilityActions.actionGetEstimatedCarbonEmissions,
+		SustainabilityActions.actionGetEstimatedCarbonEmissionsDimensionValues,
+		SustainabilityActions.actionGetEstimatedWaterAllocation,
+		SustainabilityActions.actionGetEstimatedWaterAllocationDimensionValues,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -51,19 +51,19 @@ export class SustainabilityActions {
  */
 export class SustainabilityOperations {
 	/** IAM actions required for the GetEstimatedCarbonEmissions API call. */
-	static readonly GET_ESTIMATED_CARBON_EMISSIONS: string[] = [
+	static readonly opGetEstimatedCarbonEmissions: string[] = [
 		"sustainability:GetEstimatedCarbonEmissions",
 	];
 	/** IAM actions required for the GetEstimatedCarbonEmissionsDimensionValues API call. */
-	static readonly GET_ESTIMATED_CARBON_EMISSIONS_DIMENSION_VALUES: string[] = [
+	static readonly opGetEstimatedCarbonEmissionsDimensionValues: string[] = [
 		"sustainability:GetEstimatedCarbonEmissionsDimensionValues",
 	];
 	/** IAM actions required for the GetEstimatedWaterAllocation API call. */
-	static readonly GET_ESTIMATED_WATER_ALLOCATION: string[] = [
+	static readonly opGetEstimatedWaterAllocation: string[] = [
 		"sustainability:GetEstimatedWaterAllocation",
 	];
 	/** IAM actions required for the GetEstimatedWaterAllocationDimensionValues API call. */
-	static readonly GET_ESTIMATED_WATER_ALLOCATION_DIMENSION_VALUES: string[] = [
+	static readonly opGetEstimatedWaterAllocationDimensionValues: string[] = [
 		"sustainability:GetEstimatedWaterAllocationDimensionValues",
 	];
 }

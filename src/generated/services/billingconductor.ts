@@ -13,147 +13,237 @@ export class BillingconductorActions {
 	static readonly SERVICE_PREFIX = "billingconductor";
 
 	/** [Write] billingconductor:AssociateAccounts */
-	static readonly ASSOCIATE_ACCOUNTS = "billingconductor:AssociateAccounts";
+	static readonly AssociateAccounts = "billingconductor:AssociateAccounts";
 	/** [Write] billingconductor:AssociatePricingRules */
-	static readonly ASSOCIATE_PRICING_RULES =
+	static readonly AssociatePricingRules =
 		"billingconductor:AssociatePricingRules";
 	/** [Write] billingconductor:BatchAssociateResourcesToCustomLineItem */
-	static readonly BATCH_ASSOCIATE_RESOURCES_TO_CUSTOM_LINE_ITEM =
+	static readonly BatchAssociateResourcesToCustomLineItem =
 		"billingconductor:BatchAssociateResourcesToCustomLineItem";
 	/** [Write] billingconductor:BatchDisassociateResourcesFromCustomLineItem */
-	static readonly BATCH_DISASSOCIATE_RESOURCES_FROM_CUSTOM_LINE_ITEM =
+	static readonly BatchDisassociateResourcesFromCustomLineItem =
 		"billingconductor:BatchDisassociateResourcesFromCustomLineItem";
 	/** [Write] billingconductor:CreateBillingGroup */
-	static readonly CREATE_BILLING_GROUP = "billingconductor:CreateBillingGroup";
+	static readonly CreateBillingGroup = "billingconductor:CreateBillingGroup";
 	/** [Write] billingconductor:CreateCustomLineItem */
-	static readonly CREATE_CUSTOM_LINE_ITEM =
+	static readonly CreateCustomLineItem =
 		"billingconductor:CreateCustomLineItem";
 	/** [Write] billingconductor:CreatePricingPlan */
-	static readonly CREATE_PRICING_PLAN = "billingconductor:CreatePricingPlan";
+	static readonly CreatePricingPlan = "billingconductor:CreatePricingPlan";
 	/** [Write] billingconductor:CreatePricingRule */
-	static readonly CREATE_PRICING_RULE = "billingconductor:CreatePricingRule";
+	static readonly CreatePricingRule = "billingconductor:CreatePricingRule";
 	/** [Write] billingconductor:DeleteBillingGroup */
-	static readonly DELETE_BILLING_GROUP = "billingconductor:DeleteBillingGroup";
+	static readonly DeleteBillingGroup = "billingconductor:DeleteBillingGroup";
 	/** [Write] billingconductor:DeleteCustomLineItem */
-	static readonly DELETE_CUSTOM_LINE_ITEM =
+	static readonly DeleteCustomLineItem =
 		"billingconductor:DeleteCustomLineItem";
 	/** [Write] billingconductor:DeletePricingPlan */
-	static readonly DELETE_PRICING_PLAN = "billingconductor:DeletePricingPlan";
+	static readonly DeletePricingPlan = "billingconductor:DeletePricingPlan";
 	/** [Write] billingconductor:DeletePricingRule */
-	static readonly DELETE_PRICING_RULE = "billingconductor:DeletePricingRule";
+	static readonly DeletePricingRule = "billingconductor:DeletePricingRule";
 	/** [Write] billingconductor:DisassociateAccounts */
-	static readonly DISASSOCIATE_ACCOUNTS =
+	static readonly DisassociateAccounts =
 		"billingconductor:DisassociateAccounts";
 	/** [Write] billingconductor:DisassociatePricingRules */
-	static readonly DISASSOCIATE_PRICING_RULES =
+	static readonly DisassociatePricingRules =
 		"billingconductor:DisassociatePricingRules";
 	/** [Read] billingconductor:GetBillingGroupCostReport */
-	static readonly GET_BILLING_GROUP_COST_REPORT =
+	static readonly actionGetBillingGroupCostReport =
 		"billingconductor:GetBillingGroupCostReport";
 	/** [List] billingconductor:ListAccountAssociations */
-	static readonly LIST_ACCOUNT_ASSOCIATIONS =
+	static readonly ListAccountAssociations =
 		"billingconductor:ListAccountAssociations";
 	/** [Read] billingconductor:ListBillingGroupCostReports */
-	static readonly LIST_BILLING_GROUP_COST_REPORTS =
+	static readonly ListBillingGroupCostReports =
 		"billingconductor:ListBillingGroupCostReports";
 	/** [Read] billingconductor:ListBillingGroups */
-	static readonly LIST_BILLING_GROUPS = "billingconductor:ListBillingGroups";
+	static readonly ListBillingGroups = "billingconductor:ListBillingGroups";
 	/** [Read] billingconductor:ListCustomLineItemVersions */
-	static readonly LIST_CUSTOM_LINE_ITEM_VERSIONS =
+	static readonly ListCustomLineItemVersions =
 		"billingconductor:ListCustomLineItemVersions";
 	/** [Read] billingconductor:ListCustomLineItems */
-	static readonly LIST_CUSTOM_LINE_ITEMS =
-		"billingconductor:ListCustomLineItems";
+	static readonly ListCustomLineItems = "billingconductor:ListCustomLineItems";
 	/** [Read] billingconductor:ListPricingPlans */
-	static readonly LIST_PRICING_PLANS = "billingconductor:ListPricingPlans";
+	static readonly ListPricingPlans = "billingconductor:ListPricingPlans";
 	/** [List] billingconductor:ListPricingPlansAssociatedWithPricingRule */
-	static readonly LIST_PRICING_PLANS_ASSOCIATED_WITH_PRICING_RULE =
+	static readonly ListPricingPlansAssociatedWithPricingRule =
 		"billingconductor:ListPricingPlansAssociatedWithPricingRule";
 	/** [Read] billingconductor:ListPricingRules */
-	static readonly LIST_PRICING_RULES = "billingconductor:ListPricingRules";
+	static readonly ListPricingRules = "billingconductor:ListPricingRules";
 	/** [List] billingconductor:ListPricingRulesAssociatedToPricingPlan */
-	static readonly LIST_PRICING_RULES_ASSOCIATED_TO_PRICING_PLAN =
+	static readonly ListPricingRulesAssociatedToPricingPlan =
 		"billingconductor:ListPricingRulesAssociatedToPricingPlan";
 	/** [List] billingconductor:ListResourcesAssociatedToCustomLineItem */
-	static readonly LIST_RESOURCES_ASSOCIATED_TO_CUSTOM_LINE_ITEM =
+	static readonly ListResourcesAssociatedToCustomLineItem =
 		"billingconductor:ListResourcesAssociatedToCustomLineItem";
 	/** [Read] billingconductor:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"billingconductor:ListTagsForResource";
+	static readonly ListTagsForResource = "billingconductor:ListTagsForResource";
 	/** [Tagging] billingconductor:TagResource */
-	static readonly TAG_RESOURCE = "billingconductor:TagResource";
+	static readonly TagResource = "billingconductor:TagResource";
 	/** [Tagging] billingconductor:UntagResource */
-	static readonly UNTAG_RESOURCE = "billingconductor:UntagResource";
+	static readonly UntagResource = "billingconductor:UntagResource";
 	/** [Write] billingconductor:UpdateBillingGroup */
-	static readonly UPDATE_BILLING_GROUP = "billingconductor:UpdateBillingGroup";
+	static readonly UpdateBillingGroup = "billingconductor:UpdateBillingGroup";
 	/** [Write] billingconductor:UpdateCustomLineItem */
-	static readonly UPDATE_CUSTOM_LINE_ITEM =
+	static readonly UpdateCustomLineItem =
 		"billingconductor:UpdateCustomLineItem";
 	/** [Write] billingconductor:UpdatePricingPlan */
-	static readonly UPDATE_PRICING_PLAN = "billingconductor:UpdatePricingPlan";
+	static readonly UpdatePricingPlan = "billingconductor:UpdatePricingPlan";
 	/** [Write] billingconductor:UpdatePricingRule */
-	static readonly UPDATE_PRICING_RULE = "billingconductor:UpdatePricingRule";
+	static readonly UpdatePricingRule = "billingconductor:UpdatePricingRule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BillingconductorActions.GET_BILLING_GROUP_COST_REPORT,
-		BillingconductorActions.LIST_BILLING_GROUP_COST_REPORTS,
-		BillingconductorActions.LIST_BILLING_GROUPS,
-		BillingconductorActions.LIST_CUSTOM_LINE_ITEM_VERSIONS,
-		BillingconductorActions.LIST_CUSTOM_LINE_ITEMS,
-		BillingconductorActions.LIST_PRICING_PLANS,
-		BillingconductorActions.LIST_PRICING_RULES,
-		BillingconductorActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		BillingconductorActions.actionGetBillingGroupCostReport,
+		BillingconductorActions.ListBillingGroupCostReports,
+		BillingconductorActions.ListBillingGroups,
+		BillingconductorActions.ListCustomLineItemVersions,
+		BillingconductorActions.ListCustomLineItems,
+		BillingconductorActions.ListPricingPlans,
+		BillingconductorActions.ListPricingRules,
+		BillingconductorActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BillingconductorActions.ASSOCIATE_ACCOUNTS,
-		BillingconductorActions.ASSOCIATE_PRICING_RULES,
-		BillingconductorActions.BATCH_ASSOCIATE_RESOURCES_TO_CUSTOM_LINE_ITEM,
-		BillingconductorActions.BATCH_DISASSOCIATE_RESOURCES_FROM_CUSTOM_LINE_ITEM,
-		BillingconductorActions.CREATE_BILLING_GROUP,
-		BillingconductorActions.CREATE_CUSTOM_LINE_ITEM,
-		BillingconductorActions.CREATE_PRICING_PLAN,
-		BillingconductorActions.CREATE_PRICING_RULE,
-		BillingconductorActions.DELETE_BILLING_GROUP,
-		BillingconductorActions.DELETE_CUSTOM_LINE_ITEM,
-		BillingconductorActions.DELETE_PRICING_PLAN,
-		BillingconductorActions.DELETE_PRICING_RULE,
-		BillingconductorActions.DISASSOCIATE_ACCOUNTS,
-		BillingconductorActions.DISASSOCIATE_PRICING_RULES,
-		BillingconductorActions.UPDATE_BILLING_GROUP,
-		BillingconductorActions.UPDATE_CUSTOM_LINE_ITEM,
-		BillingconductorActions.UPDATE_PRICING_PLAN,
-		BillingconductorActions.UPDATE_PRICING_RULE,
+	static readonly AllWriteActions: string[] = [
+		BillingconductorActions.AssociateAccounts,
+		BillingconductorActions.AssociatePricingRules,
+		BillingconductorActions.BatchAssociateResourcesToCustomLineItem,
+		BillingconductorActions.BatchDisassociateResourcesFromCustomLineItem,
+		BillingconductorActions.CreateBillingGroup,
+		BillingconductorActions.CreateCustomLineItem,
+		BillingconductorActions.CreatePricingPlan,
+		BillingconductorActions.CreatePricingRule,
+		BillingconductorActions.DeleteBillingGroup,
+		BillingconductorActions.DeleteCustomLineItem,
+		BillingconductorActions.DeletePricingPlan,
+		BillingconductorActions.DeletePricingRule,
+		BillingconductorActions.DisassociateAccounts,
+		BillingconductorActions.DisassociatePricingRules,
+		BillingconductorActions.UpdateBillingGroup,
+		BillingconductorActions.UpdateCustomLineItem,
+		BillingconductorActions.UpdatePricingPlan,
+		BillingconductorActions.UpdatePricingRule,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BillingconductorActions.LIST_ACCOUNT_ASSOCIATIONS,
-		BillingconductorActions.LIST_PRICING_PLANS_ASSOCIATED_WITH_PRICING_RULE,
-		BillingconductorActions.LIST_PRICING_RULES_ASSOCIATED_TO_PRICING_PLAN,
-		BillingconductorActions.LIST_RESOURCES_ASSOCIATED_TO_CUSTOM_LINE_ITEM,
+	static readonly AllListActions: string[] = [
+		BillingconductorActions.ListAccountAssociations,
+		BillingconductorActions.ListPricingPlansAssociatedWithPricingRule,
+		BillingconductorActions.ListPricingRulesAssociatedToPricingPlan,
+		BillingconductorActions.ListResourcesAssociatedToCustomLineItem,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BillingconductorActions.TAG_RESOURCE,
-		BillingconductorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BillingconductorActions.TagResource,
+		BillingconductorActions.UntagResource,
 	];
 }
 
-const BillinggroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):billinggroup/(?<billingGroupId>[^:/?]+)$",
-);
-const CustomlineitemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):customlineitem/(?<customLineItemId>[^:/?]+)$",
-);
-const PricingplanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):pricingplan/(?<pricingPlanId>[^:/?]+)$",
-);
-const PricingruleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):pricingrule/(?<pricingRuleId>[^:/?]+)$",
-);
+/**
+ * Properties for building a billinggroup ARN.
+ */
+export interface BillingconductorBillinggroupArnProps {
+	/** The BillingGroupId component of the ARN. */
+	readonly billingGroupId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a billinggroup ARN.
+ */
+export interface BillingconductorBillinggroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BillingGroupId component. */
+	readonly billingGroupId: string;
+}
+
+/**
+ * Properties for building a customlineitem ARN.
+ */
+export interface BillingconductorCustomlineitemArnProps {
+	/** The CustomLineItemId component of the ARN. */
+	readonly customLineItemId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customlineitem ARN.
+ */
+export interface BillingconductorCustomlineitemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CustomLineItemId component. */
+	readonly customLineItemId: string;
+}
+
+/**
+ * Properties for building a pricingplan ARN.
+ */
+export interface BillingconductorPricingplanArnProps {
+	/** The PricingPlanId component of the ARN. */
+	readonly pricingPlanId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pricingplan ARN.
+ */
+export interface BillingconductorPricingplanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PricingPlanId component. */
+	readonly pricingPlanId: string;
+}
+
+/**
+ * Properties for building a pricingrule ARN.
+ */
+export interface BillingconductorPricingruleArnProps {
+	/** The PricingRuleId component of the ARN. */
+	readonly pricingRuleId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pricingrule ARN.
+ */
+export interface BillingconductorPricingruleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PricingRuleId component. */
+	readonly pricingRuleId: string;
+}
+
+const BillinggroupArnRegex =
+	/^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):billinggroup\/(?<billingGroupId>[^:/?]+)$/;
+const CustomlineitemArnRegex =
+	/^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):customlineitem\/(?<customLineItemId>[^:/?]+)$/;
+const PricingplanArnRegex =
+	/^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):pricingplan\/(?<pricingPlanId>[^:/?]+)$/;
+const PricingruleArnRegex =
+	/^arn:(?<partition>[^:]+):billingconductor::(?<account>[^:]*):pricingrule\/(?<pricingRuleId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for billingconductor resources.
@@ -162,14 +252,7 @@ export class BillingconductorResources {
 	/**
 	 * Builds an ARN for the billinggroup resource.
 	 */
-	static billinggroup(props: {
-		/** The BillingGroupId component of the ARN. */
-		readonly billingGroupId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billinggroup(props: BillingconductorBillinggroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billingconductor::${props.account ?? "*"}:billinggroup/${props.billingGroupId}`;
 	}
 
@@ -184,11 +267,9 @@ export class BillingconductorResources {
 	 * Parses a billinggroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillinggroupArn(arn: string): {
-		partition: string;
-		account: string;
-		billingGroupId: string;
-	} {
+	static parseBillinggroupArn(
+		arn: string,
+	): BillingconductorBillinggroupArnComponents {
 		const match = BillinggroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid billinggroup ARN: ${arn}`);
@@ -203,14 +284,7 @@ export class BillingconductorResources {
 	/**
 	 * Builds an ARN for the customlineitem resource.
 	 */
-	static customlineitem(props: {
-		/** The CustomLineItemId component of the ARN. */
-		readonly customLineItemId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customlineitem(props: BillingconductorCustomlineitemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billingconductor::${props.account ?? "*"}:customlineitem/${props.customLineItemId}`;
 	}
 
@@ -225,11 +299,9 @@ export class BillingconductorResources {
 	 * Parses a customlineitem ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomlineitemArn(arn: string): {
-		partition: string;
-		account: string;
-		customLineItemId: string;
-	} {
+	static parseCustomlineitemArn(
+		arn: string,
+	): BillingconductorCustomlineitemArnComponents {
 		const match = CustomlineitemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid customlineitem ARN: ${arn}`);
@@ -244,14 +316,7 @@ export class BillingconductorResources {
 	/**
 	 * Builds an ARN for the pricingplan resource.
 	 */
-	static pricingplan(props: {
-		/** The PricingPlanId component of the ARN. */
-		readonly pricingPlanId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pricingplan(props: BillingconductorPricingplanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billingconductor::${props.account ?? "*"}:pricingplan/${props.pricingPlanId}`;
 	}
 
@@ -266,11 +331,9 @@ export class BillingconductorResources {
 	 * Parses a pricingplan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePricingplanArn(arn: string): {
-		partition: string;
-		account: string;
-		pricingPlanId: string;
-	} {
+	static parsePricingplanArn(
+		arn: string,
+	): BillingconductorPricingplanArnComponents {
 		const match = PricingplanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pricingplan ARN: ${arn}`);
@@ -285,14 +348,7 @@ export class BillingconductorResources {
 	/**
 	 * Builds an ARN for the pricingrule resource.
 	 */
-	static pricingrule(props: {
-		/** The PricingRuleId component of the ARN. */
-		readonly pricingRuleId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pricingrule(props: BillingconductorPricingruleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billingconductor::${props.account ?? "*"}:pricingrule/${props.pricingRuleId}`;
 	}
 
@@ -307,11 +363,9 @@ export class BillingconductorResources {
 	 * Parses a pricingrule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePricingruleArn(arn: string): {
-		partition: string;
-		account: string;
-		pricingRuleId: string;
-	} {
+	static parsePricingruleArn(
+		arn: string,
+	): BillingconductorPricingruleArnComponents {
 		const match = PricingruleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pricingrule ARN: ${arn}`);
@@ -329,131 +383,132 @@ export class BillingconductorResources {
  */
 export class BillingconductorOperations {
 	/** IAM actions required for the AssociateAccounts API call. */
-	static readonly ASSOCIATE_ACCOUNTS: string[] = [
+	static readonly AssociateAccounts: string[] = [
 		"billingconductor:AssociateAccounts",
 	];
 	/** IAM actions required for the AssociatePricingRules API call. */
-	static readonly ASSOCIATE_PRICING_RULES: string[] = [
+	static readonly AssociatePricingRules: string[] = [
 		"billingconductor:AssociatePricingRules",
 	];
 	/** IAM actions required for the BatchAssociateResourcesToCustomLineItem API call. */
-	static readonly BATCH_ASSOCIATE_RESOURCES_TO_CUSTOM_LINE_ITEM: string[] = [
+	static readonly BatchAssociateResourcesToCustomLineItem: string[] = [
 		"billingconductor:BatchAssociateResourcesToCustomLineItem",
 	];
 	/** IAM actions required for the BatchDisassociateResourcesFromCustomLineItem API call. */
-	static readonly BATCH_DISASSOCIATE_RESOURCES_FROM_CUSTOM_LINE_ITEM: string[] =
-		["billingconductor:BatchDisassociateResourcesFromCustomLineItem"];
+	static readonly BatchDisassociateResourcesFromCustomLineItem: string[] = [
+		"billingconductor:BatchDisassociateResourcesFromCustomLineItem",
+	];
 	/** IAM actions required for the CreateBillingGroup API call. */
-	static readonly CREATE_BILLING_GROUP: string[] = [
+	static readonly CreateBillingGroup: string[] = [
 		"billingconductor:CreateBillingGroup",
 		"billingconductor:TagResource",
 	];
 	/** IAM actions required for the CreateCustomLineItem API call. */
-	static readonly CREATE_CUSTOM_LINE_ITEM: string[] = [
+	static readonly CreateCustomLineItem: string[] = [
 		"billingconductor:CreateCustomLineItem",
 		"billingconductor:TagResource",
 	];
 	/** IAM actions required for the CreatePricingPlan API call. */
-	static readonly CREATE_PRICING_PLAN: string[] = [
+	static readonly CreatePricingPlan: string[] = [
 		"billingconductor:CreatePricingPlan",
 		"billingconductor:TagResource",
 	];
 	/** IAM actions required for the CreatePricingRule API call. */
-	static readonly CREATE_PRICING_RULE: string[] = [
+	static readonly CreatePricingRule: string[] = [
 		"billingconductor:CreatePricingRule",
 		"billingconductor:TagResource",
 	];
 	/** IAM actions required for the DeleteBillingGroup API call. */
-	static readonly DELETE_BILLING_GROUP: string[] = [
+	static readonly DeleteBillingGroup: string[] = [
 		"billingconductor:DeleteBillingGroup",
 	];
 	/** IAM actions required for the DeleteCustomLineItem API call. */
-	static readonly DELETE_CUSTOM_LINE_ITEM: string[] = [
+	static readonly DeleteCustomLineItem: string[] = [
 		"billingconductor:DeleteCustomLineItem",
 	];
 	/** IAM actions required for the DeletePricingPlan API call. */
-	static readonly DELETE_PRICING_PLAN: string[] = [
+	static readonly DeletePricingPlan: string[] = [
 		"billingconductor:DeletePricingPlan",
 	];
 	/** IAM actions required for the DeletePricingRule API call. */
-	static readonly DELETE_PRICING_RULE: string[] = [
+	static readonly DeletePricingRule: string[] = [
 		"billingconductor:DeletePricingRule",
 	];
 	/** IAM actions required for the DisassociateAccounts API call. */
-	static readonly DISASSOCIATE_ACCOUNTS: string[] = [
+	static readonly DisassociateAccounts: string[] = [
 		"billingconductor:DisassociateAccounts",
 	];
 	/** IAM actions required for the DisassociatePricingRules API call. */
-	static readonly DISASSOCIATE_PRICING_RULES: string[] = [
+	static readonly DisassociatePricingRules: string[] = [
 		"billingconductor:DisassociatePricingRules",
 	];
 	/** IAM actions required for the GetBillingGroupCostReport API call. */
-	static readonly GET_BILLING_GROUP_COST_REPORT: string[] = [
+	static readonly opGetBillingGroupCostReport: string[] = [
 		"billingconductor:GetBillingGroupCostReport",
 	];
 	/** IAM actions required for the ListAccountAssociations API call. */
-	static readonly LIST_ACCOUNT_ASSOCIATIONS: string[] = [
+	static readonly ListAccountAssociations: string[] = [
 		"billingconductor:ListAccountAssociations",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the ListBillingGroupCostReports API call. */
-	static readonly LIST_BILLING_GROUP_COST_REPORTS: string[] = [
+	static readonly ListBillingGroupCostReports: string[] = [
 		"billingconductor:ListBillingGroupCostReports",
 	];
 	/** IAM actions required for the ListBillingGroups API call. */
-	static readonly LIST_BILLING_GROUPS: string[] = [
+	static readonly ListBillingGroups: string[] = [
 		"billingconductor:ListBillingGroups",
 	];
 	/** IAM actions required for the ListCustomLineItemVersions API call. */
-	static readonly LIST_CUSTOM_LINE_ITEM_VERSIONS: string[] = [
+	static readonly ListCustomLineItemVersions: string[] = [
 		"billingconductor:ListCustomLineItemVersions",
 	];
 	/** IAM actions required for the ListCustomLineItems API call. */
-	static readonly LIST_CUSTOM_LINE_ITEMS: string[] = [
+	static readonly ListCustomLineItems: string[] = [
 		"billingconductor:ListCustomLineItems",
 	];
 	/** IAM actions required for the ListPricingPlans API call. */
-	static readonly LIST_PRICING_PLANS: string[] = [
+	static readonly ListPricingPlans: string[] = [
 		"billingconductor:ListPricingPlans",
 	];
 	/** IAM actions required for the ListPricingPlansAssociatedWithPricingRule API call. */
-	static readonly LIST_PRICING_PLANS_ASSOCIATED_WITH_PRICING_RULE: string[] = [
+	static readonly ListPricingPlansAssociatedWithPricingRule: string[] = [
 		"billingconductor:ListPricingPlansAssociatedWithPricingRule",
 	];
 	/** IAM actions required for the ListPricingRules API call. */
-	static readonly LIST_PRICING_RULES: string[] = [
+	static readonly ListPricingRules: string[] = [
 		"billingconductor:ListPricingRules",
 	];
 	/** IAM actions required for the ListPricingRulesAssociatedToPricingPlan API call. */
-	static readonly LIST_PRICING_RULES_ASSOCIATED_TO_PRICING_PLAN: string[] = [
+	static readonly ListPricingRulesAssociatedToPricingPlan: string[] = [
 		"billingconductor:ListPricingRulesAssociatedToPricingPlan",
 	];
 	/** IAM actions required for the ListResourcesAssociatedToCustomLineItem API call. */
-	static readonly LIST_RESOURCES_ASSOCIATED_TO_CUSTOM_LINE_ITEM: string[] = [
+	static readonly ListResourcesAssociatedToCustomLineItem: string[] = [
 		"billingconductor:ListResourcesAssociatedToCustomLineItem",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"billingconductor:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["billingconductor:TagResource"];
+	static readonly TagResource: string[] = ["billingconductor:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["billingconductor:UntagResource"];
+	static readonly UntagResource: string[] = ["billingconductor:UntagResource"];
 	/** IAM actions required for the UpdateBillingGroup API call. */
-	static readonly UPDATE_BILLING_GROUP: string[] = [
+	static readonly UpdateBillingGroup: string[] = [
 		"billingconductor:UpdateBillingGroup",
 	];
 	/** IAM actions required for the UpdateCustomLineItem API call. */
-	static readonly UPDATE_CUSTOM_LINE_ITEM: string[] = [
+	static readonly UpdateCustomLineItem: string[] = [
 		"billingconductor:UpdateCustomLineItem",
 	];
 	/** IAM actions required for the UpdatePricingPlan API call. */
-	static readonly UPDATE_PRICING_PLAN: string[] = [
+	static readonly UpdatePricingPlan: string[] = [
 		"billingconductor:UpdatePricingPlan",
 	];
 	/** IAM actions required for the UpdatePricingRule API call. */
-	static readonly UPDATE_PRICING_RULE: string[] = [
+	static readonly UpdatePricingRule: string[] = [
 		"billingconductor:UpdatePricingRule",
 	];
 }
@@ -463,44 +518,44 @@ export class BillingconductorOperations {
  */
 export class BillingconductorConditions {
 	/** Condition keys applicable to the CreateBillingGroup action. */
-	static readonly CREATE_BILLING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateBillingGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomLineItem action. */
-	static readonly CREATE_CUSTOM_LINE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomLineItemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePricingPlan action. */
-	static readonly CREATE_PRICING_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreatePricingPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePricingRule action. */
-	static readonly CREATE_PRICING_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreatePricingRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

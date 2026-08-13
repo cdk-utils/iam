@@ -13,161 +13,212 @@ export class ElasticfilesystemActions {
 	static readonly SERVICE_PREFIX = "elasticfilesystem";
 
 	/** [Write] elasticfilesystem:Backup */
-	static readonly BACKUP = "elasticfilesystem:Backup";
+	static readonly Backup = "elasticfilesystem:Backup";
 	/** [Read] elasticfilesystem:ClientMount */
-	static readonly CLIENT_MOUNT = "elasticfilesystem:ClientMount";
+	static readonly ClientMount = "elasticfilesystem:ClientMount";
 	/** [Write] elasticfilesystem:ClientRootAccess */
-	static readonly CLIENT_ROOT_ACCESS = "elasticfilesystem:ClientRootAccess";
+	static readonly ClientRootAccess = "elasticfilesystem:ClientRootAccess";
 	/** [Write] elasticfilesystem:ClientWrite */
-	static readonly CLIENT_WRITE = "elasticfilesystem:ClientWrite";
+	static readonly ClientWrite = "elasticfilesystem:ClientWrite";
 	/** [Write] elasticfilesystem:CreateAccessPoint */
-	static readonly CREATE_ACCESS_POINT = "elasticfilesystem:CreateAccessPoint";
+	static readonly CreateAccessPoint = "elasticfilesystem:CreateAccessPoint";
 	/** [Write] elasticfilesystem:CreateFileSystem */
-	static readonly CREATE_FILE_SYSTEM = "elasticfilesystem:CreateFileSystem";
+	static readonly CreateFileSystem = "elasticfilesystem:CreateFileSystem";
 	/** [Write] elasticfilesystem:CreateMountTarget */
-	static readonly CREATE_MOUNT_TARGET = "elasticfilesystem:CreateMountTarget";
+	static readonly CreateMountTarget = "elasticfilesystem:CreateMountTarget";
 	/** [Write] elasticfilesystem:CreateReplicationConfiguration */
-	static readonly CREATE_REPLICATION_CONFIGURATION =
+	static readonly CreateReplicationConfiguration =
 		"elasticfilesystem:CreateReplicationConfiguration";
 	/** [Tagging] elasticfilesystem:CreateTags */
-	static readonly CREATE_TAGS = "elasticfilesystem:CreateTags";
+	static readonly CreateTags = "elasticfilesystem:CreateTags";
 	/** [Write] elasticfilesystem:DeleteAccessPoint */
-	static readonly DELETE_ACCESS_POINT = "elasticfilesystem:DeleteAccessPoint";
+	static readonly DeleteAccessPoint = "elasticfilesystem:DeleteAccessPoint";
 	/** [Write] elasticfilesystem:DeleteFileSystem */
-	static readonly DELETE_FILE_SYSTEM = "elasticfilesystem:DeleteFileSystem";
+	static readonly DeleteFileSystem = "elasticfilesystem:DeleteFileSystem";
 	/** [PermissionManagement] elasticfilesystem:DeleteFileSystemPolicy */
-	static readonly DELETE_FILE_SYSTEM_POLICY =
+	static readonly DeleteFileSystemPolicy =
 		"elasticfilesystem:DeleteFileSystemPolicy";
 	/** [Write] elasticfilesystem:DeleteMountTarget */
-	static readonly DELETE_MOUNT_TARGET = "elasticfilesystem:DeleteMountTarget";
+	static readonly DeleteMountTarget = "elasticfilesystem:DeleteMountTarget";
 	/** [Write] elasticfilesystem:DeleteReplicationConfiguration */
-	static readonly DELETE_REPLICATION_CONFIGURATION =
+	static readonly DeleteReplicationConfiguration =
 		"elasticfilesystem:DeleteReplicationConfiguration";
 	/** [Tagging] elasticfilesystem:DeleteTags */
-	static readonly DELETE_TAGS = "elasticfilesystem:DeleteTags";
+	static readonly DeleteTags = "elasticfilesystem:DeleteTags";
 	/** [List] elasticfilesystem:DescribeAccessPoints */
-	static readonly DESCRIBE_ACCESS_POINTS =
+	static readonly DescribeAccessPoints =
 		"elasticfilesystem:DescribeAccessPoints";
 	/** [List] elasticfilesystem:DescribeAccountPreferences */
-	static readonly DESCRIBE_ACCOUNT_PREFERENCES =
+	static readonly DescribeAccountPreferences =
 		"elasticfilesystem:DescribeAccountPreferences";
 	/** [Read] elasticfilesystem:DescribeBackupPolicy */
-	static readonly DESCRIBE_BACKUP_POLICY =
+	static readonly DescribeBackupPolicy =
 		"elasticfilesystem:DescribeBackupPolicy";
 	/** [Read] elasticfilesystem:DescribeFileSystemPolicy */
-	static readonly DESCRIBE_FILE_SYSTEM_POLICY =
+	static readonly DescribeFileSystemPolicy =
 		"elasticfilesystem:DescribeFileSystemPolicy";
 	/** [List] elasticfilesystem:DescribeFileSystems */
-	static readonly DESCRIBE_FILE_SYSTEMS =
-		"elasticfilesystem:DescribeFileSystems";
+	static readonly DescribeFileSystems = "elasticfilesystem:DescribeFileSystems";
 	/** [Read] elasticfilesystem:DescribeLifecycleConfiguration */
-	static readonly DESCRIBE_LIFECYCLE_CONFIGURATION =
+	static readonly DescribeLifecycleConfiguration =
 		"elasticfilesystem:DescribeLifecycleConfiguration";
 	/** [Read] elasticfilesystem:DescribeMountTargetSecurityGroups */
-	static readonly DESCRIBE_MOUNT_TARGET_SECURITY_GROUPS =
+	static readonly DescribeMountTargetSecurityGroups =
 		"elasticfilesystem:DescribeMountTargetSecurityGroups";
 	/** [Read] elasticfilesystem:DescribeMountTargets */
-	static readonly DESCRIBE_MOUNT_TARGETS =
+	static readonly DescribeMountTargets =
 		"elasticfilesystem:DescribeMountTargets";
 	/** [List] elasticfilesystem:DescribeReplicationConfigurations */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATIONS =
+	static readonly DescribeReplicationConfigurations =
 		"elasticfilesystem:DescribeReplicationConfigurations";
 	/** [Read] elasticfilesystem:DescribeTags */
-	static readonly DESCRIBE_TAGS = "elasticfilesystem:DescribeTags";
+	static readonly DescribeTags = "elasticfilesystem:DescribeTags";
 	/** [Read] elasticfilesystem:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"elasticfilesystem:ListTagsForResource";
+	static readonly ListTagsForResource = "elasticfilesystem:ListTagsForResource";
 	/** [Write] elasticfilesystem:ModifyMountTargetSecurityGroups */
-	static readonly MODIFY_MOUNT_TARGET_SECURITY_GROUPS =
+	static readonly ModifyMountTargetSecurityGroups =
 		"elasticfilesystem:ModifyMountTargetSecurityGroups";
 	/** [Write] elasticfilesystem:PutAccountPreferences */
-	static readonly PUT_ACCOUNT_PREFERENCES =
+	static readonly PutAccountPreferences =
 		"elasticfilesystem:PutAccountPreferences";
 	/** [Write] elasticfilesystem:PutBackupPolicy */
-	static readonly PUT_BACKUP_POLICY = "elasticfilesystem:PutBackupPolicy";
+	static readonly PutBackupPolicy = "elasticfilesystem:PutBackupPolicy";
 	/** [PermissionManagement] elasticfilesystem:PutFileSystemPolicy */
-	static readonly PUT_FILE_SYSTEM_POLICY =
-		"elasticfilesystem:PutFileSystemPolicy";
+	static readonly PutFileSystemPolicy = "elasticfilesystem:PutFileSystemPolicy";
 	/** [Write] elasticfilesystem:PutLifecycleConfiguration */
-	static readonly PUT_LIFECYCLE_CONFIGURATION =
+	static readonly PutLifecycleConfiguration =
 		"elasticfilesystem:PutLifecycleConfiguration";
 	/** [Read] elasticfilesystem:ReplicationRead */
-	static readonly REPLICATION_READ = "elasticfilesystem:ReplicationRead";
+	static readonly ReplicationRead = "elasticfilesystem:ReplicationRead";
 	/** [Write] elasticfilesystem:ReplicationWrite */
-	static readonly REPLICATION_WRITE = "elasticfilesystem:ReplicationWrite";
+	static readonly ReplicationWrite = "elasticfilesystem:ReplicationWrite";
 	/** [Write] elasticfilesystem:Restore */
-	static readonly RESTORE = "elasticfilesystem:Restore";
+	static readonly Restore = "elasticfilesystem:Restore";
 	/** [Tagging] elasticfilesystem:TagResource */
-	static readonly TAG_RESOURCE = "elasticfilesystem:TagResource";
+	static readonly TagResource = "elasticfilesystem:TagResource";
 	/** [Tagging] elasticfilesystem:UntagResource */
-	static readonly UNTAG_RESOURCE = "elasticfilesystem:UntagResource";
+	static readonly UntagResource = "elasticfilesystem:UntagResource";
 	/** [Write] elasticfilesystem:UpdateFileSystem */
-	static readonly UPDATE_FILE_SYSTEM = "elasticfilesystem:UpdateFileSystem";
+	static readonly UpdateFileSystem = "elasticfilesystem:UpdateFileSystem";
 	/** [Write] elasticfilesystem:UpdateFileSystemProtection */
-	static readonly UPDATE_FILE_SYSTEM_PROTECTION =
+	static readonly UpdateFileSystemProtection =
 		"elasticfilesystem:UpdateFileSystemProtection";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElasticfilesystemActions.CLIENT_MOUNT,
-		ElasticfilesystemActions.DESCRIBE_BACKUP_POLICY,
-		ElasticfilesystemActions.DESCRIBE_FILE_SYSTEM_POLICY,
-		ElasticfilesystemActions.DESCRIBE_LIFECYCLE_CONFIGURATION,
-		ElasticfilesystemActions.DESCRIBE_MOUNT_TARGET_SECURITY_GROUPS,
-		ElasticfilesystemActions.DESCRIBE_MOUNT_TARGETS,
-		ElasticfilesystemActions.DESCRIBE_TAGS,
-		ElasticfilesystemActions.LIST_TAGS_FOR_RESOURCE,
-		ElasticfilesystemActions.REPLICATION_READ,
+	static readonly AllReadActions: string[] = [
+		ElasticfilesystemActions.ClientMount,
+		ElasticfilesystemActions.DescribeBackupPolicy,
+		ElasticfilesystemActions.DescribeFileSystemPolicy,
+		ElasticfilesystemActions.DescribeLifecycleConfiguration,
+		ElasticfilesystemActions.DescribeMountTargetSecurityGroups,
+		ElasticfilesystemActions.DescribeMountTargets,
+		ElasticfilesystemActions.DescribeTags,
+		ElasticfilesystemActions.ListTagsForResource,
+		ElasticfilesystemActions.ReplicationRead,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElasticfilesystemActions.BACKUP,
-		ElasticfilesystemActions.CLIENT_ROOT_ACCESS,
-		ElasticfilesystemActions.CLIENT_WRITE,
-		ElasticfilesystemActions.CREATE_ACCESS_POINT,
-		ElasticfilesystemActions.CREATE_FILE_SYSTEM,
-		ElasticfilesystemActions.CREATE_MOUNT_TARGET,
-		ElasticfilesystemActions.CREATE_REPLICATION_CONFIGURATION,
-		ElasticfilesystemActions.DELETE_ACCESS_POINT,
-		ElasticfilesystemActions.DELETE_FILE_SYSTEM,
-		ElasticfilesystemActions.DELETE_MOUNT_TARGET,
-		ElasticfilesystemActions.DELETE_REPLICATION_CONFIGURATION,
-		ElasticfilesystemActions.MODIFY_MOUNT_TARGET_SECURITY_GROUPS,
-		ElasticfilesystemActions.PUT_ACCOUNT_PREFERENCES,
-		ElasticfilesystemActions.PUT_BACKUP_POLICY,
-		ElasticfilesystemActions.PUT_LIFECYCLE_CONFIGURATION,
-		ElasticfilesystemActions.REPLICATION_WRITE,
-		ElasticfilesystemActions.RESTORE,
-		ElasticfilesystemActions.UPDATE_FILE_SYSTEM,
-		ElasticfilesystemActions.UPDATE_FILE_SYSTEM_PROTECTION,
+	static readonly AllWriteActions: string[] = [
+		ElasticfilesystemActions.Backup,
+		ElasticfilesystemActions.ClientRootAccess,
+		ElasticfilesystemActions.ClientWrite,
+		ElasticfilesystemActions.CreateAccessPoint,
+		ElasticfilesystemActions.CreateFileSystem,
+		ElasticfilesystemActions.CreateMountTarget,
+		ElasticfilesystemActions.CreateReplicationConfiguration,
+		ElasticfilesystemActions.DeleteAccessPoint,
+		ElasticfilesystemActions.DeleteFileSystem,
+		ElasticfilesystemActions.DeleteMountTarget,
+		ElasticfilesystemActions.DeleteReplicationConfiguration,
+		ElasticfilesystemActions.ModifyMountTargetSecurityGroups,
+		ElasticfilesystemActions.PutAccountPreferences,
+		ElasticfilesystemActions.PutBackupPolicy,
+		ElasticfilesystemActions.PutLifecycleConfiguration,
+		ElasticfilesystemActions.ReplicationWrite,
+		ElasticfilesystemActions.Restore,
+		ElasticfilesystemActions.UpdateFileSystem,
+		ElasticfilesystemActions.UpdateFileSystemProtection,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElasticfilesystemActions.DESCRIBE_ACCESS_POINTS,
-		ElasticfilesystemActions.DESCRIBE_ACCOUNT_PREFERENCES,
-		ElasticfilesystemActions.DESCRIBE_FILE_SYSTEMS,
-		ElasticfilesystemActions.DESCRIBE_REPLICATION_CONFIGURATIONS,
+	static readonly AllListActions: string[] = [
+		ElasticfilesystemActions.DescribeAccessPoints,
+		ElasticfilesystemActions.DescribeAccountPreferences,
+		ElasticfilesystemActions.DescribeFileSystems,
+		ElasticfilesystemActions.DescribeReplicationConfigurations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		ElasticfilesystemActions.DELETE_FILE_SYSTEM_POLICY,
-		ElasticfilesystemActions.PUT_FILE_SYSTEM_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		ElasticfilesystemActions.DeleteFileSystemPolicy,
+		ElasticfilesystemActions.PutFileSystemPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ElasticfilesystemActions.CREATE_TAGS,
-		ElasticfilesystemActions.DELETE_TAGS,
-		ElasticfilesystemActions.TAG_RESOURCE,
-		ElasticfilesystemActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ElasticfilesystemActions.CreateTags,
+		ElasticfilesystemActions.DeleteTags,
+		ElasticfilesystemActions.TagResource,
+		ElasticfilesystemActions.UntagResource,
 	];
 }
 
-const AccessPointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticfilesystem:(?<region>[^:]*):(?<account>[^:]*):access-point/(?<accessPointId>[^:/?]+)$",
-);
-const FileSystemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticfilesystem:(?<region>[^:]*):(?<account>[^:]*):file-system/(?<fileSystemId>[^:/?]+)$",
-);
+/**
+ * Properties for building a access-point ARN.
+ */
+export interface ElasticfilesystemAccessPointArnProps {
+	/** The AccessPointId component of the ARN. */
+	readonly accessPointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-point ARN.
+ */
+export interface ElasticfilesystemAccessPointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessPointId component. */
+	readonly accessPointId: string;
+}
+
+/**
+ * Properties for building a file-system ARN.
+ */
+export interface ElasticfilesystemFileSystemArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a file-system ARN.
+ */
+export interface ElasticfilesystemFileSystemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+}
+
+const AccessPointArnRegex =
+	/^arn:(?<partition>[^:]+):elasticfilesystem:(?<region>[^:]*):(?<account>[^:]*):access-point\/(?<accessPointId>[^:/?]+)$/;
+const FileSystemArnRegex =
+	/^arn:(?<partition>[^:]+):elasticfilesystem:(?<region>[^:]*):(?<account>[^:]*):file-system\/(?<fileSystemId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elasticfilesystem resources.
@@ -176,16 +227,7 @@ export class ElasticfilesystemResources {
 	/**
 	 * Builds an ARN for the access-point resource.
 	 */
-	static accessPoint(props: {
-		/** The AccessPointId component of the ARN. */
-		readonly accessPointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessPoint(props: ElasticfilesystemAccessPointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticfilesystem:${props.region ?? "*"}:${props.account ?? "*"}:access-point/${props.accessPointId}`;
 	}
 
@@ -200,12 +242,9 @@ export class ElasticfilesystemResources {
 	 * Parses a access-point ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessPointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessPointId: string;
-	} {
+	static parseAccessPointArn(
+		arn: string,
+	): ElasticfilesystemAccessPointArnComponents {
 		const match = AccessPointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-point ARN: ${arn}`);
@@ -221,16 +260,7 @@ export class ElasticfilesystemResources {
 	/**
 	 * Builds an ARN for the file-system resource.
 	 */
-	static fileSystem(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fileSystem(props: ElasticfilesystemFileSystemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticfilesystem:${props.region ?? "*"}:${props.account ?? "*"}:file-system/${props.fileSystemId}`;
 	}
 
@@ -245,12 +275,9 @@ export class ElasticfilesystemResources {
 	 * Parses a file-system ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFileSystemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-	} {
+	static parseFileSystemArn(
+		arn: string,
+	): ElasticfilesystemFileSystemArnComponents {
 		const match = FileSystemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid file-system ARN: ${arn}`);
@@ -269,122 +296,120 @@ export class ElasticfilesystemResources {
  */
 export class ElasticfilesystemOperations {
 	/** IAM actions required for the CreateAccessPoint API call. */
-	static readonly CREATE_ACCESS_POINT: string[] = [
+	static readonly CreateAccessPoint: string[] = [
 		"elasticfilesystem:CreateAccessPoint",
 		"elasticfilesystem:TagResource",
 	];
 	/** IAM actions required for the CreateFileSystem API call. */
-	static readonly CREATE_FILE_SYSTEM: string[] = [
+	static readonly CreateFileSystem: string[] = [
 		"elasticfilesystem:CreateFileSystem",
 		"elasticfilesystem:TagResource",
 	];
 	/** IAM actions required for the CreateMountTarget API call. */
-	static readonly CREATE_MOUNT_TARGET: string[] = [
+	static readonly CreateMountTarget: string[] = [
 		"elasticfilesystem:CreateMountTarget",
 	];
 	/** IAM actions required for the CreateReplicationConfiguration API call. */
-	static readonly CREATE_REPLICATION_CONFIGURATION: string[] = [
+	static readonly CreateReplicationConfiguration: string[] = [
 		"elasticfilesystem:CreateReplicationConfiguration",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateTags API call. */
-	static readonly CREATE_TAGS: string[] = ["elasticfilesystem:CreateTags"];
+	static readonly CreateTags: string[] = ["elasticfilesystem:CreateTags"];
 	/** IAM actions required for the DeleteAccessPoint API call. */
-	static readonly DELETE_ACCESS_POINT: string[] = [
+	static readonly DeleteAccessPoint: string[] = [
 		"elasticfilesystem:DeleteAccessPoint",
 	];
 	/** IAM actions required for the DeleteFileSystem API call. */
-	static readonly DELETE_FILE_SYSTEM: string[] = [
+	static readonly DeleteFileSystem: string[] = [
 		"elasticfilesystem:DeleteFileSystem",
 	];
 	/** IAM actions required for the DeleteFileSystemPolicy API call. */
-	static readonly DELETE_FILE_SYSTEM_POLICY: string[] = [
+	static readonly DeleteFileSystemPolicy: string[] = [
 		"elasticfilesystem:DeleteFileSystemPolicy",
 	];
 	/** IAM actions required for the DeleteMountTarget API call. */
-	static readonly DELETE_MOUNT_TARGET: string[] = [
+	static readonly DeleteMountTarget: string[] = [
 		"elasticfilesystem:DeleteMountTarget",
 	];
 	/** IAM actions required for the DeleteReplicationConfiguration API call. */
-	static readonly DELETE_REPLICATION_CONFIGURATION: string[] = [
+	static readonly DeleteReplicationConfiguration: string[] = [
 		"elasticfilesystem:DeleteReplicationConfiguration",
 	];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["elasticfilesystem:DeleteTags"];
+	static readonly DeleteTags: string[] = ["elasticfilesystem:DeleteTags"];
 	/** IAM actions required for the DescribeAccessPoints API call. */
-	static readonly DESCRIBE_ACCESS_POINTS: string[] = [
+	static readonly DescribeAccessPoints: string[] = [
 		"elasticfilesystem:DescribeAccessPoints",
 	];
 	/** IAM actions required for the DescribeAccountPreferences API call. */
-	static readonly DESCRIBE_ACCOUNT_PREFERENCES: string[] = [
+	static readonly DescribeAccountPreferences: string[] = [
 		"elasticfilesystem:DescribeAccountPreferences",
 	];
 	/** IAM actions required for the DescribeBackupPolicy API call. */
-	static readonly DESCRIBE_BACKUP_POLICY: string[] = [
+	static readonly DescribeBackupPolicy: string[] = [
 		"elasticfilesystem:DescribeBackupPolicy",
 	];
 	/** IAM actions required for the DescribeFileSystemPolicy API call. */
-	static readonly DESCRIBE_FILE_SYSTEM_POLICY: string[] = [
+	static readonly DescribeFileSystemPolicy: string[] = [
 		"elasticfilesystem:DescribeFileSystemPolicy",
 	];
 	/** IAM actions required for the DescribeFileSystems API call. */
-	static readonly DESCRIBE_FILE_SYSTEMS: string[] = [
+	static readonly DescribeFileSystems: string[] = [
 		"elasticfilesystem:DescribeFileSystems",
 	];
 	/** IAM actions required for the DescribeLifecycleConfiguration API call. */
-	static readonly DESCRIBE_LIFECYCLE_CONFIGURATION: string[] = [
+	static readonly DescribeLifecycleConfiguration: string[] = [
 		"elasticfilesystem:DescribeLifecycleConfiguration",
 	];
 	/** IAM actions required for the DescribeMountTargetSecurityGroups API call. */
-	static readonly DESCRIBE_MOUNT_TARGET_SECURITY_GROUPS: string[] = [
+	static readonly DescribeMountTargetSecurityGroups: string[] = [
 		"elasticfilesystem:DescribeMountTargetSecurityGroups",
 	];
 	/** IAM actions required for the DescribeMountTargets API call. */
-	static readonly DESCRIBE_MOUNT_TARGETS: string[] = [
+	static readonly DescribeMountTargets: string[] = [
 		"elasticfilesystem:DescribeMountTargets",
 	];
 	/** IAM actions required for the DescribeReplicationConfigurations API call. */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATIONS: string[] = [
+	static readonly DescribeReplicationConfigurations: string[] = [
 		"elasticfilesystem:DescribeReplicationConfigurations",
 	];
 	/** IAM actions required for the DescribeTags API call. */
-	static readonly DESCRIBE_TAGS: string[] = ["elasticfilesystem:DescribeTags"];
+	static readonly DescribeTags: string[] = ["elasticfilesystem:DescribeTags"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"elasticfilesystem:ListTagsForResource",
 	];
 	/** IAM actions required for the ModifyMountTargetSecurityGroups API call. */
-	static readonly MODIFY_MOUNT_TARGET_SECURITY_GROUPS: string[] = [
+	static readonly ModifyMountTargetSecurityGroups: string[] = [
 		"elasticfilesystem:ModifyMountTargetSecurityGroups",
 	];
 	/** IAM actions required for the PutAccountPreferences API call. */
-	static readonly PUT_ACCOUNT_PREFERENCES: string[] = [
+	static readonly PutAccountPreferences: string[] = [
 		"elasticfilesystem:PutAccountPreferences",
 	];
 	/** IAM actions required for the PutBackupPolicy API call. */
-	static readonly PUT_BACKUP_POLICY: string[] = [
+	static readonly PutBackupPolicy: string[] = [
 		"elasticfilesystem:PutBackupPolicy",
 	];
 	/** IAM actions required for the PutFileSystemPolicy API call. */
-	static readonly PUT_FILE_SYSTEM_POLICY: string[] = [
+	static readonly PutFileSystemPolicy: string[] = [
 		"elasticfilesystem:PutFileSystemPolicy",
 	];
 	/** IAM actions required for the PutLifecycleConfiguration API call. */
-	static readonly PUT_LIFECYCLE_CONFIGURATION: string[] = [
+	static readonly PutLifecycleConfiguration: string[] = [
 		"elasticfilesystem:PutLifecycleConfiguration",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["elasticfilesystem:TagResource"];
+	static readonly TagResource: string[] = ["elasticfilesystem:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
-		"elasticfilesystem:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["elasticfilesystem:UntagResource"];
 	/** IAM actions required for the UpdateFileSystem API call. */
-	static readonly UPDATE_FILE_SYSTEM: string[] = [
+	static readonly UpdateFileSystem: string[] = [
 		"elasticfilesystem:UpdateFileSystem",
 	];
 	/** IAM actions required for the UpdateFileSystemProtection API call. */
-	static readonly UPDATE_FILE_SYSTEM_PROTECTION: string[] = [
+	static readonly UpdateFileSystemProtection: string[] = [
 		"elasticfilesystem:UpdateFileSystemProtection",
 	];
 }
@@ -394,53 +419,53 @@ export class ElasticfilesystemOperations {
  */
 export class ElasticfilesystemConditions {
 	/** Condition keys applicable to the ClientMount action. */
-	static readonly CLIENT_MOUNT_CONDITION_KEYS: string[] = [
+	static readonly ClientMountConditionKeys: string[] = [
 		"elasticfilesystem:AccessPointArn",
 		"elasticfilesystem:AccessedViaMountTarget",
 	];
 	/** Condition keys applicable to the ClientRootAccess action. */
-	static readonly CLIENT_ROOT_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly ClientRootAccessConditionKeys: string[] = [
 		"elasticfilesystem:AccessPointArn",
 		"elasticfilesystem:AccessedViaMountTarget",
 	];
 	/** Condition keys applicable to the ClientWrite action. */
-	static readonly CLIENT_WRITE_CONDITION_KEYS: string[] = [
+	static readonly ClientWriteConditionKeys: string[] = [
 		"elasticfilesystem:AccessPointArn",
 		"elasticfilesystem:AccessedViaMountTarget",
 	];
 	/** Condition keys applicable to the CreateAccessPoint action. */
-	static readonly CREATE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFileSystem action. */
-	static readonly CREATE_FILE_SYSTEM_CONDITION_KEYS: string[] = [
+	static readonly CreateFileSystemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticfilesystem:Encrypted",
 	];
 	/** Condition keys applicable to the CreateTags action. */
-	static readonly CREATE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly CreateTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly DeleteTagsConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticfilesystem:CreateAction",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: elasticfilesystem:AccessPointArn (ARN) */
 	static readonly ACCESS_POINT_ARN = "elasticfilesystem:AccessPointArn";
 	/** Condition key: elasticfilesystem:AccessedViaMountTarget (Bool) */

@@ -13,58 +13,58 @@ export class SupportConsoleActions {
 	static readonly SERVICE_PREFIX = "support-console";
 
 	/** [Read] support-console:CheckSubscription */
-	static readonly CHECK_SUBSCRIPTION = "support-console:CheckSubscription";
+	static readonly CheckSubscription = "support-console:CheckSubscription";
 	/** [Write] support-console:CreateCaseDraft */
-	static readonly CREATE_CASE_DRAFT = "support-console:CreateCaseDraft";
+	static readonly CreateCaseDraft = "support-console:CreateCaseDraft";
 	/** [Write] support-console:CreateContact */
-	static readonly CREATE_CONTACT = "support-console:CreateContact";
+	static readonly CreateContact = "support-console:CreateContact";
 	/** [Write] support-console:DeleteCaseDraft */
-	static readonly DELETE_CASE_DRAFT = "support-console:DeleteCaseDraft";
+	static readonly DeleteCaseDraft = "support-console:DeleteCaseDraft";
 	/** [Read] support-console:DescribeDynamicHelp */
-	static readonly DESCRIBE_DYNAMIC_HELP = "support-console:DescribeDynamicHelp";
+	static readonly DescribeDynamicHelp = "support-console:DescribeDynamicHelp";
 	/** [Read] support-console:GetAccountGovCloudEnabled */
-	static readonly GET_ACCOUNT_GOV_CLOUD_ENABLED =
+	static readonly actionGetAccountGovCloudEnabled =
 		"support-console:GetAccountGovCloudEnabled";
 	/** [Read] support-console:GetAccountState */
-	static readonly GET_ACCOUNT_STATE = "support-console:GetAccountState";
+	static readonly actionGetAccountState = "support-console:GetAccountState";
 	/** [Read] support-console:GetBanner */
-	static readonly GET_BANNER = "support-console:GetBanner";
+	static readonly actionGetBanner = "support-console:GetBanner";
 	/** [Read] support-console:GetCaseDraft */
-	static readonly GET_CASE_DRAFT = "support-console:GetCaseDraft";
+	static readonly actionGetCaseDraft = "support-console:GetCaseDraft";
 	/** [Read] support-console:GetIssueClassificationPredictions */
-	static readonly GET_ISSUE_CLASSIFICATION_PREDICTIONS =
+	static readonly actionGetIssueClassificationPredictions =
 		"support-console:GetIssueClassificationPredictions";
 	/** [Read] support-console:GetIssueTextSummary */
-	static readonly GET_ISSUE_TEXT_SUMMARY =
+	static readonly actionGetIssueTextSummary =
 		"support-console:GetIssueTextSummary";
 	/** [Read] support-console:GetQuestionnaire */
-	static readonly GET_QUESTIONNAIRE = "support-console:GetQuestionnaire";
+	static readonly actionGetQuestionnaire = "support-console:GetQuestionnaire";
 	/** [Write] support-console:SaveFeedback */
-	static readonly SAVE_FEEDBACK = "support-console:SaveFeedback";
+	static readonly SaveFeedback = "support-console:SaveFeedback";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SupportConsoleActions.CHECK_SUBSCRIPTION,
-		SupportConsoleActions.DESCRIBE_DYNAMIC_HELP,
-		SupportConsoleActions.GET_ACCOUNT_GOV_CLOUD_ENABLED,
-		SupportConsoleActions.GET_ACCOUNT_STATE,
-		SupportConsoleActions.GET_BANNER,
-		SupportConsoleActions.GET_CASE_DRAFT,
-		SupportConsoleActions.GET_ISSUE_CLASSIFICATION_PREDICTIONS,
-		SupportConsoleActions.GET_ISSUE_TEXT_SUMMARY,
-		SupportConsoleActions.GET_QUESTIONNAIRE,
+	static readonly AllReadActions: string[] = [
+		SupportConsoleActions.CheckSubscription,
+		SupportConsoleActions.DescribeDynamicHelp,
+		SupportConsoleActions.actionGetAccountGovCloudEnabled,
+		SupportConsoleActions.actionGetAccountState,
+		SupportConsoleActions.actionGetBanner,
+		SupportConsoleActions.actionGetCaseDraft,
+		SupportConsoleActions.actionGetIssueClassificationPredictions,
+		SupportConsoleActions.actionGetIssueTextSummary,
+		SupportConsoleActions.actionGetQuestionnaire,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SupportConsoleActions.CREATE_CASE_DRAFT,
-		SupportConsoleActions.CREATE_CONTACT,
-		SupportConsoleActions.DELETE_CASE_DRAFT,
-		SupportConsoleActions.SAVE_FEEDBACK,
+	static readonly AllWriteActions: string[] = [
+		SupportConsoleActions.CreateCaseDraft,
+		SupportConsoleActions.CreateContact,
+		SupportConsoleActions.DeleteCaseDraft,
+		SupportConsoleActions.SaveFeedback,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

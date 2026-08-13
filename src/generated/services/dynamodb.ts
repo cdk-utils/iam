@@ -13,304 +13,506 @@ export class DynamoDBActions {
 	static readonly SERVICE_PREFIX = "dynamodb";
 
 	/** [Write] dynamodb:AssociateTableReplica */
-	static readonly ASSOCIATE_TABLE_REPLICA = "dynamodb:AssociateTableReplica";
+	static readonly AssociateTableReplica = "dynamodb:AssociateTableReplica";
 	/** [Read] dynamodb:BatchGetItem */
-	static readonly BATCH_GET_ITEM = "dynamodb:BatchGetItem";
+	static readonly BatchGetItem = "dynamodb:BatchGetItem";
 	/** [Write] dynamodb:BatchWriteItem */
-	static readonly BATCH_WRITE_ITEM = "dynamodb:BatchWriteItem";
+	static readonly BatchWriteItem = "dynamodb:BatchWriteItem";
 	/** [Read] dynamodb:ConditionCheckItem */
-	static readonly CONDITION_CHECK_ITEM = "dynamodb:ConditionCheckItem";
+	static readonly ConditionCheckItem = "dynamodb:ConditionCheckItem";
 	/** [Write] dynamodb:CreateBackup */
-	static readonly CREATE_BACKUP = "dynamodb:CreateBackup";
+	static readonly CreateBackup = "dynamodb:CreateBackup";
 	/** [Write] dynamodb:CreateGlobalTable */
-	static readonly CREATE_GLOBAL_TABLE = "dynamodb:CreateGlobalTable";
+	static readonly CreateGlobalTable = "dynamodb:CreateGlobalTable";
 	/** [Write] dynamodb:CreateGlobalTableWitness */
-	static readonly CREATE_GLOBAL_TABLE_WITNESS =
+	static readonly CreateGlobalTableWitness =
 		"dynamodb:CreateGlobalTableWitness";
 	/** [Write] dynamodb:CreateTable */
-	static readonly CREATE_TABLE = "dynamodb:CreateTable";
+	static readonly CreateTable = "dynamodb:CreateTable";
 	/** [Write] dynamodb:CreateTableReplica */
-	static readonly CREATE_TABLE_REPLICA = "dynamodb:CreateTableReplica";
+	static readonly CreateTableReplica = "dynamodb:CreateTableReplica";
 	/** [Write] dynamodb:DeleteBackup */
-	static readonly DELETE_BACKUP = "dynamodb:DeleteBackup";
+	static readonly DeleteBackup = "dynamodb:DeleteBackup";
 	/** [Write] dynamodb:DeleteGlobalTableWitness */
-	static readonly DELETE_GLOBAL_TABLE_WITNESS =
+	static readonly DeleteGlobalTableWitness =
 		"dynamodb:DeleteGlobalTableWitness";
 	/** [Write] dynamodb:DeleteItem */
-	static readonly DELETE_ITEM = "dynamodb:DeleteItem";
+	static readonly DeleteItem = "dynamodb:DeleteItem";
 	/** [PermissionManagement] dynamodb:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "dynamodb:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "dynamodb:DeleteResourcePolicy";
 	/** [Write] dynamodb:DeleteTable */
-	static readonly DELETE_TABLE = "dynamodb:DeleteTable";
+	static readonly DeleteTable = "dynamodb:DeleteTable";
 	/** [Write] dynamodb:DeleteTableReplica */
-	static readonly DELETE_TABLE_REPLICA = "dynamodb:DeleteTableReplica";
+	static readonly DeleteTableReplica = "dynamodb:DeleteTableReplica";
 	/** [Read] dynamodb:DescribeBackup */
-	static readonly DESCRIBE_BACKUP = "dynamodb:DescribeBackup";
+	static readonly DescribeBackup = "dynamodb:DescribeBackup";
 	/** [Read] dynamodb:DescribeContinuousBackups */
-	static readonly DESCRIBE_CONTINUOUS_BACKUPS =
+	static readonly DescribeContinuousBackups =
 		"dynamodb:DescribeContinuousBackups";
 	/** [Read] dynamodb:DescribeContributorInsights */
-	static readonly DESCRIBE_CONTRIBUTOR_INSIGHTS =
+	static readonly DescribeContributorInsights =
 		"dynamodb:DescribeContributorInsights";
 	/** [Read] dynamodb:DescribeEndpoints */
-	static readonly DESCRIBE_ENDPOINTS = "dynamodb:DescribeEndpoints";
+	static readonly DescribeEndpoints = "dynamodb:DescribeEndpoints";
 	/** [Read] dynamodb:DescribeExport */
-	static readonly DESCRIBE_EXPORT = "dynamodb:DescribeExport";
+	static readonly DescribeExport = "dynamodb:DescribeExport";
 	/** [Read] dynamodb:DescribeGlobalTable */
-	static readonly DESCRIBE_GLOBAL_TABLE = "dynamodb:DescribeGlobalTable";
+	static readonly DescribeGlobalTable = "dynamodb:DescribeGlobalTable";
 	/** [Read] dynamodb:DescribeGlobalTableSettings */
-	static readonly DESCRIBE_GLOBAL_TABLE_SETTINGS =
+	static readonly DescribeGlobalTableSettings =
 		"dynamodb:DescribeGlobalTableSettings";
 	/** [Read] dynamodb:DescribeImport */
-	static readonly DESCRIBE_IMPORT = "dynamodb:DescribeImport";
+	static readonly DescribeImport = "dynamodb:DescribeImport";
 	/** [Read] dynamodb:DescribeKinesisStreamingDestination */
-	static readonly DESCRIBE_KINESIS_STREAMING_DESTINATION =
+	static readonly DescribeKinesisStreamingDestination =
 		"dynamodb:DescribeKinesisStreamingDestination";
 	/** [Read] dynamodb:DescribeLimits */
-	static readonly DESCRIBE_LIMITS = "dynamodb:DescribeLimits";
+	static readonly DescribeLimits = "dynamodb:DescribeLimits";
 	/** [Read] dynamodb:DescribeReservedCapacity */
-	static readonly DESCRIBE_RESERVED_CAPACITY =
+	static readonly DescribeReservedCapacity =
 		"dynamodb:DescribeReservedCapacity";
 	/** [Read] dynamodb:DescribeReservedCapacityOfferings */
-	static readonly DESCRIBE_RESERVED_CAPACITY_OFFERINGS =
+	static readonly DescribeReservedCapacityOfferings =
 		"dynamodb:DescribeReservedCapacityOfferings";
 	/** [Read] dynamodb:DescribeStream */
-	static readonly DESCRIBE_STREAM = "dynamodb:DescribeStream";
+	static readonly DescribeStream = "dynamodb:DescribeStream";
 	/** [Read] dynamodb:DescribeTable */
-	static readonly DESCRIBE_TABLE = "dynamodb:DescribeTable";
+	static readonly DescribeTable = "dynamodb:DescribeTable";
 	/** [Read] dynamodb:DescribeTableReplicaAutoScaling */
-	static readonly DESCRIBE_TABLE_REPLICA_AUTO_SCALING =
+	static readonly DescribeTableReplicaAutoScaling =
 		"dynamodb:DescribeTableReplicaAutoScaling";
 	/** [Read] dynamodb:DescribeTimeToLive */
-	static readonly DESCRIBE_TIME_TO_LIVE = "dynamodb:DescribeTimeToLive";
+	static readonly DescribeTimeToLive = "dynamodb:DescribeTimeToLive";
 	/** [Write] dynamodb:DisableKinesisStreamingDestination */
-	static readonly DISABLE_KINESIS_STREAMING_DESTINATION =
+	static readonly DisableKinesisStreamingDestination =
 		"dynamodb:DisableKinesisStreamingDestination";
 	/** [Write] dynamodb:EnableKinesisStreamingDestination */
-	static readonly ENABLE_KINESIS_STREAMING_DESTINATION =
+	static readonly EnableKinesisStreamingDestination =
 		"dynamodb:EnableKinesisStreamingDestination";
 	/** [Write] dynamodb:ExportTableToPointInTime */
-	static readonly EXPORT_TABLE_TO_POINT_IN_TIME =
+	static readonly ExportTableToPointInTime =
 		"dynamodb:ExportTableToPointInTime";
 	/** [Read] dynamodb:GetAbacStatus */
-	static readonly GET_ABAC_STATUS = "dynamodb:GetAbacStatus";
+	static readonly actionGetAbacStatus = "dynamodb:GetAbacStatus";
 	/** [Read] dynamodb:GetItem */
-	static readonly GET_ITEM = "dynamodb:GetItem";
+	static readonly actionGetItem = "dynamodb:GetItem";
 	/** [Read] dynamodb:GetRecords */
-	static readonly GET_RECORDS = "dynamodb:GetRecords";
+	static readonly actionGetRecords = "dynamodb:GetRecords";
 	/** [Read] dynamodb:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "dynamodb:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "dynamodb:GetResourcePolicy";
 	/** [Read] dynamodb:GetShardIterator */
-	static readonly GET_SHARD_ITERATOR = "dynamodb:GetShardIterator";
+	static readonly actionGetShardIterator = "dynamodb:GetShardIterator";
 	/** [Write] dynamodb:ImportTable */
-	static readonly IMPORT_TABLE = "dynamodb:ImportTable";
+	static readonly ImportTable = "dynamodb:ImportTable";
 	/** [Write] dynamodb:InjectError */
-	static readonly INJECT_ERROR = "dynamodb:InjectError";
+	static readonly InjectError = "dynamodb:InjectError";
 	/** [List] dynamodb:ListBackups */
-	static readonly LIST_BACKUPS = "dynamodb:ListBackups";
+	static readonly ListBackups = "dynamodb:ListBackups";
 	/** [List] dynamodb:ListContributorInsights */
-	static readonly LIST_CONTRIBUTOR_INSIGHTS =
-		"dynamodb:ListContributorInsights";
+	static readonly ListContributorInsights = "dynamodb:ListContributorInsights";
 	/** [List] dynamodb:ListExports */
-	static readonly LIST_EXPORTS = "dynamodb:ListExports";
+	static readonly ListExports = "dynamodb:ListExports";
 	/** [List] dynamodb:ListGlobalTables */
-	static readonly LIST_GLOBAL_TABLES = "dynamodb:ListGlobalTables";
+	static readonly ListGlobalTables = "dynamodb:ListGlobalTables";
 	/** [List] dynamodb:ListImports */
-	static readonly LIST_IMPORTS = "dynamodb:ListImports";
+	static readonly ListImports = "dynamodb:ListImports";
 	/** [Read] dynamodb:ListStreams */
-	static readonly LIST_STREAMS = "dynamodb:ListStreams";
+	static readonly ListStreams = "dynamodb:ListStreams";
 	/** [List] dynamodb:ListTables */
-	static readonly LIST_TABLES = "dynamodb:ListTables";
+	static readonly ListTables = "dynamodb:ListTables";
 	/** [Read] dynamodb:ListTagsOfResource */
-	static readonly LIST_TAGS_OF_RESOURCE = "dynamodb:ListTagsOfResource";
+	static readonly ListTagsOfResource = "dynamodb:ListTagsOfResource";
 	/** [Write] dynamodb:PartiQLDelete */
-	static readonly PARTI_QL_DELETE = "dynamodb:PartiQLDelete";
+	static readonly PartiQLDelete = "dynamodb:PartiQLDelete";
 	/** [Write] dynamodb:PartiQLInsert */
-	static readonly PARTI_QL_INSERT = "dynamodb:PartiQLInsert";
+	static readonly PartiQLInsert = "dynamodb:PartiQLInsert";
 	/** [Read] dynamodb:PartiQLSelect */
-	static readonly PARTI_QL_SELECT = "dynamodb:PartiQLSelect";
+	static readonly PartiQLSelect = "dynamodb:PartiQLSelect";
 	/** [Write] dynamodb:PartiQLUpdate */
-	static readonly PARTI_QL_UPDATE = "dynamodb:PartiQLUpdate";
+	static readonly PartiQLUpdate = "dynamodb:PartiQLUpdate";
 	/** [Write] dynamodb:PurchaseReservedCapacityOfferings */
-	static readonly PURCHASE_RESERVED_CAPACITY_OFFERINGS =
+	static readonly PurchaseReservedCapacityOfferings =
 		"dynamodb:PurchaseReservedCapacityOfferings";
 	/** [Write] dynamodb:PutItem */
-	static readonly PUT_ITEM = "dynamodb:PutItem";
+	static readonly PutItem = "dynamodb:PutItem";
 	/** [PermissionManagement] dynamodb:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "dynamodb:PutResourcePolicy";
+	static readonly PutResourcePolicy = "dynamodb:PutResourcePolicy";
 	/** [Read] dynamodb:Query */
-	static readonly QUERY = "dynamodb:Query";
+	static readonly Query = "dynamodb:Query";
 	/** [Read] dynamodb:ReadDataForReplication */
-	static readonly READ_DATA_FOR_REPLICATION = "dynamodb:ReadDataForReplication";
+	static readonly ReadDataForReplication = "dynamodb:ReadDataForReplication";
 	/** [Write] dynamodb:ReplicateSettings */
-	static readonly REPLICATE_SETTINGS = "dynamodb:ReplicateSettings";
+	static readonly ReplicateSettings = "dynamodb:ReplicateSettings";
 	/** [Write] dynamodb:RestoreTableFromAwsBackup */
-	static readonly RESTORE_TABLE_FROM_AWS_BACKUP =
+	static readonly RestoreTableFromAwsBackup =
 		"dynamodb:RestoreTableFromAwsBackup";
 	/** [Write] dynamodb:RestoreTableFromBackup */
-	static readonly RESTORE_TABLE_FROM_BACKUP = "dynamodb:RestoreTableFromBackup";
+	static readonly RestoreTableFromBackup = "dynamodb:RestoreTableFromBackup";
 	/** [Write] dynamodb:RestoreTableToPointInTime */
-	static readonly RESTORE_TABLE_TO_POINT_IN_TIME =
+	static readonly RestoreTableToPointInTime =
 		"dynamodb:RestoreTableToPointInTime";
 	/** [Read] dynamodb:Scan */
-	static readonly SCAN = "dynamodb:Scan";
+	static readonly Scan = "dynamodb:Scan";
 	/** [Read] dynamodb:SearchVectors */
-	static readonly SEARCH_VECTORS = "dynamodb:SearchVectors";
+	static readonly SearchVectors = "dynamodb:SearchVectors";
 	/** [Write] dynamodb:StartAwsBackupJob */
-	static readonly START_AWS_BACKUP_JOB = "dynamodb:StartAwsBackupJob";
+	static readonly StartAwsBackupJob = "dynamodb:StartAwsBackupJob";
 	/** [Tagging] dynamodb:TagResource */
-	static readonly TAG_RESOURCE = "dynamodb:TagResource";
+	static readonly TagResource = "dynamodb:TagResource";
 	/** [Tagging] dynamodb:UntagResource */
-	static readonly UNTAG_RESOURCE = "dynamodb:UntagResource";
+	static readonly UntagResource = "dynamodb:UntagResource";
 	/** [PermissionManagement] dynamodb:UpdateAbacStatus */
-	static readonly UPDATE_ABAC_STATUS = "dynamodb:UpdateAbacStatus";
+	static readonly UpdateAbacStatus = "dynamodb:UpdateAbacStatus";
 	/** [Write] dynamodb:UpdateContinuousBackups */
-	static readonly UPDATE_CONTINUOUS_BACKUPS =
-		"dynamodb:UpdateContinuousBackups";
+	static readonly UpdateContinuousBackups = "dynamodb:UpdateContinuousBackups";
 	/** [Write] dynamodb:UpdateContributorInsights */
-	static readonly UPDATE_CONTRIBUTOR_INSIGHTS =
+	static readonly UpdateContributorInsights =
 		"dynamodb:UpdateContributorInsights";
 	/** [Write] dynamodb:UpdateGlobalTable */
-	static readonly UPDATE_GLOBAL_TABLE = "dynamodb:UpdateGlobalTable";
+	static readonly UpdateGlobalTable = "dynamodb:UpdateGlobalTable";
 	/** [Write] dynamodb:UpdateGlobalTableSettings */
-	static readonly UPDATE_GLOBAL_TABLE_SETTINGS =
+	static readonly UpdateGlobalTableSettings =
 		"dynamodb:UpdateGlobalTableSettings";
 	/** [Write] dynamodb:UpdateGlobalTableVersion */
-	static readonly UPDATE_GLOBAL_TABLE_VERSION =
+	static readonly UpdateGlobalTableVersion =
 		"dynamodb:UpdateGlobalTableVersion";
 	/** [Write] dynamodb:UpdateItem */
-	static readonly UPDATE_ITEM = "dynamodb:UpdateItem";
+	static readonly UpdateItem = "dynamodb:UpdateItem";
 	/** [Write] dynamodb:UpdateKinesisStreamingDestination */
-	static readonly UPDATE_KINESIS_STREAMING_DESTINATION =
+	static readonly UpdateKinesisStreamingDestination =
 		"dynamodb:UpdateKinesisStreamingDestination";
 	/** [Write] dynamodb:UpdateTable */
-	static readonly UPDATE_TABLE = "dynamodb:UpdateTable";
+	static readonly UpdateTable = "dynamodb:UpdateTable";
 	/** [Write] dynamodb:UpdateTableReplicaAutoScaling */
-	static readonly UPDATE_TABLE_REPLICA_AUTO_SCALING =
+	static readonly UpdateTableReplicaAutoScaling =
 		"dynamodb:UpdateTableReplicaAutoScaling";
 	/** [Write] dynamodb:UpdateTimeToLive */
-	static readonly UPDATE_TIME_TO_LIVE = "dynamodb:UpdateTimeToLive";
+	static readonly UpdateTimeToLive = "dynamodb:UpdateTimeToLive";
 	/** [Write] dynamodb:WriteDataForReplication */
-	static readonly WRITE_DATA_FOR_REPLICATION =
-		"dynamodb:WriteDataForReplication";
+	static readonly WriteDataForReplication = "dynamodb:WriteDataForReplication";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DynamoDBActions.BATCH_GET_ITEM,
-		DynamoDBActions.CONDITION_CHECK_ITEM,
-		DynamoDBActions.DESCRIBE_BACKUP,
-		DynamoDBActions.DESCRIBE_CONTINUOUS_BACKUPS,
-		DynamoDBActions.DESCRIBE_CONTRIBUTOR_INSIGHTS,
-		DynamoDBActions.DESCRIBE_ENDPOINTS,
-		DynamoDBActions.DESCRIBE_EXPORT,
-		DynamoDBActions.DESCRIBE_GLOBAL_TABLE,
-		DynamoDBActions.DESCRIBE_GLOBAL_TABLE_SETTINGS,
-		DynamoDBActions.DESCRIBE_IMPORT,
-		DynamoDBActions.DESCRIBE_KINESIS_STREAMING_DESTINATION,
-		DynamoDBActions.DESCRIBE_LIMITS,
-		DynamoDBActions.DESCRIBE_RESERVED_CAPACITY,
-		DynamoDBActions.DESCRIBE_RESERVED_CAPACITY_OFFERINGS,
-		DynamoDBActions.DESCRIBE_STREAM,
-		DynamoDBActions.DESCRIBE_TABLE,
-		DynamoDBActions.DESCRIBE_TABLE_REPLICA_AUTO_SCALING,
-		DynamoDBActions.DESCRIBE_TIME_TO_LIVE,
-		DynamoDBActions.GET_ABAC_STATUS,
-		DynamoDBActions.GET_ITEM,
-		DynamoDBActions.GET_RECORDS,
-		DynamoDBActions.GET_RESOURCE_POLICY,
-		DynamoDBActions.GET_SHARD_ITERATOR,
-		DynamoDBActions.LIST_STREAMS,
-		DynamoDBActions.LIST_TAGS_OF_RESOURCE,
-		DynamoDBActions.PARTI_QL_SELECT,
-		DynamoDBActions.QUERY,
-		DynamoDBActions.READ_DATA_FOR_REPLICATION,
-		DynamoDBActions.SCAN,
-		DynamoDBActions.SEARCH_VECTORS,
+	static readonly AllReadActions: string[] = [
+		DynamoDBActions.BatchGetItem,
+		DynamoDBActions.ConditionCheckItem,
+		DynamoDBActions.DescribeBackup,
+		DynamoDBActions.DescribeContinuousBackups,
+		DynamoDBActions.DescribeContributorInsights,
+		DynamoDBActions.DescribeEndpoints,
+		DynamoDBActions.DescribeExport,
+		DynamoDBActions.DescribeGlobalTable,
+		DynamoDBActions.DescribeGlobalTableSettings,
+		DynamoDBActions.DescribeImport,
+		DynamoDBActions.DescribeKinesisStreamingDestination,
+		DynamoDBActions.DescribeLimits,
+		DynamoDBActions.DescribeReservedCapacity,
+		DynamoDBActions.DescribeReservedCapacityOfferings,
+		DynamoDBActions.DescribeStream,
+		DynamoDBActions.DescribeTable,
+		DynamoDBActions.DescribeTableReplicaAutoScaling,
+		DynamoDBActions.DescribeTimeToLive,
+		DynamoDBActions.actionGetAbacStatus,
+		DynamoDBActions.actionGetItem,
+		DynamoDBActions.actionGetRecords,
+		DynamoDBActions.actionGetResourcePolicy,
+		DynamoDBActions.actionGetShardIterator,
+		DynamoDBActions.ListStreams,
+		DynamoDBActions.ListTagsOfResource,
+		DynamoDBActions.PartiQLSelect,
+		DynamoDBActions.Query,
+		DynamoDBActions.ReadDataForReplication,
+		DynamoDBActions.Scan,
+		DynamoDBActions.SearchVectors,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DynamoDBActions.ASSOCIATE_TABLE_REPLICA,
-		DynamoDBActions.BATCH_WRITE_ITEM,
-		DynamoDBActions.CREATE_BACKUP,
-		DynamoDBActions.CREATE_GLOBAL_TABLE,
-		DynamoDBActions.CREATE_GLOBAL_TABLE_WITNESS,
-		DynamoDBActions.CREATE_TABLE,
-		DynamoDBActions.CREATE_TABLE_REPLICA,
-		DynamoDBActions.DELETE_BACKUP,
-		DynamoDBActions.DELETE_GLOBAL_TABLE_WITNESS,
-		DynamoDBActions.DELETE_ITEM,
-		DynamoDBActions.DELETE_TABLE,
-		DynamoDBActions.DELETE_TABLE_REPLICA,
-		DynamoDBActions.DISABLE_KINESIS_STREAMING_DESTINATION,
-		DynamoDBActions.ENABLE_KINESIS_STREAMING_DESTINATION,
-		DynamoDBActions.EXPORT_TABLE_TO_POINT_IN_TIME,
-		DynamoDBActions.IMPORT_TABLE,
-		DynamoDBActions.INJECT_ERROR,
-		DynamoDBActions.PARTI_QL_DELETE,
-		DynamoDBActions.PARTI_QL_INSERT,
-		DynamoDBActions.PARTI_QL_UPDATE,
-		DynamoDBActions.PURCHASE_RESERVED_CAPACITY_OFFERINGS,
-		DynamoDBActions.PUT_ITEM,
-		DynamoDBActions.REPLICATE_SETTINGS,
-		DynamoDBActions.RESTORE_TABLE_FROM_AWS_BACKUP,
-		DynamoDBActions.RESTORE_TABLE_FROM_BACKUP,
-		DynamoDBActions.RESTORE_TABLE_TO_POINT_IN_TIME,
-		DynamoDBActions.START_AWS_BACKUP_JOB,
-		DynamoDBActions.UPDATE_CONTINUOUS_BACKUPS,
-		DynamoDBActions.UPDATE_CONTRIBUTOR_INSIGHTS,
-		DynamoDBActions.UPDATE_GLOBAL_TABLE,
-		DynamoDBActions.UPDATE_GLOBAL_TABLE_SETTINGS,
-		DynamoDBActions.UPDATE_GLOBAL_TABLE_VERSION,
-		DynamoDBActions.UPDATE_ITEM,
-		DynamoDBActions.UPDATE_KINESIS_STREAMING_DESTINATION,
-		DynamoDBActions.UPDATE_TABLE,
-		DynamoDBActions.UPDATE_TABLE_REPLICA_AUTO_SCALING,
-		DynamoDBActions.UPDATE_TIME_TO_LIVE,
-		DynamoDBActions.WRITE_DATA_FOR_REPLICATION,
+	static readonly AllWriteActions: string[] = [
+		DynamoDBActions.AssociateTableReplica,
+		DynamoDBActions.BatchWriteItem,
+		DynamoDBActions.CreateBackup,
+		DynamoDBActions.CreateGlobalTable,
+		DynamoDBActions.CreateGlobalTableWitness,
+		DynamoDBActions.CreateTable,
+		DynamoDBActions.CreateTableReplica,
+		DynamoDBActions.DeleteBackup,
+		DynamoDBActions.DeleteGlobalTableWitness,
+		DynamoDBActions.DeleteItem,
+		DynamoDBActions.DeleteTable,
+		DynamoDBActions.DeleteTableReplica,
+		DynamoDBActions.DisableKinesisStreamingDestination,
+		DynamoDBActions.EnableKinesisStreamingDestination,
+		DynamoDBActions.ExportTableToPointInTime,
+		DynamoDBActions.ImportTable,
+		DynamoDBActions.InjectError,
+		DynamoDBActions.PartiQLDelete,
+		DynamoDBActions.PartiQLInsert,
+		DynamoDBActions.PartiQLUpdate,
+		DynamoDBActions.PurchaseReservedCapacityOfferings,
+		DynamoDBActions.PutItem,
+		DynamoDBActions.ReplicateSettings,
+		DynamoDBActions.RestoreTableFromAwsBackup,
+		DynamoDBActions.RestoreTableFromBackup,
+		DynamoDBActions.RestoreTableToPointInTime,
+		DynamoDBActions.StartAwsBackupJob,
+		DynamoDBActions.UpdateContinuousBackups,
+		DynamoDBActions.UpdateContributorInsights,
+		DynamoDBActions.UpdateGlobalTable,
+		DynamoDBActions.UpdateGlobalTableSettings,
+		DynamoDBActions.UpdateGlobalTableVersion,
+		DynamoDBActions.UpdateItem,
+		DynamoDBActions.UpdateKinesisStreamingDestination,
+		DynamoDBActions.UpdateTable,
+		DynamoDBActions.UpdateTableReplicaAutoScaling,
+		DynamoDBActions.UpdateTimeToLive,
+		DynamoDBActions.WriteDataForReplication,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DynamoDBActions.LIST_BACKUPS,
-		DynamoDBActions.LIST_CONTRIBUTOR_INSIGHTS,
-		DynamoDBActions.LIST_EXPORTS,
-		DynamoDBActions.LIST_GLOBAL_TABLES,
-		DynamoDBActions.LIST_IMPORTS,
-		DynamoDBActions.LIST_TABLES,
+	static readonly AllListActions: string[] = [
+		DynamoDBActions.ListBackups,
+		DynamoDBActions.ListContributorInsights,
+		DynamoDBActions.ListExports,
+		DynamoDBActions.ListGlobalTables,
+		DynamoDBActions.ListImports,
+		DynamoDBActions.ListTables,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		DynamoDBActions.DELETE_RESOURCE_POLICY,
-		DynamoDBActions.PUT_RESOURCE_POLICY,
-		DynamoDBActions.UPDATE_ABAC_STATUS,
+	static readonly AllPermissionManagementActions: string[] = [
+		DynamoDBActions.DeleteResourcePolicy,
+		DynamoDBActions.PutResourcePolicy,
+		DynamoDBActions.UpdateAbacStatus,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DynamoDBActions.TAG_RESOURCE,
-		DynamoDBActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DynamoDBActions.TagResource,
+		DynamoDBActions.UntagResource,
 	];
 }
 
-const BackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)/backup/(?<backupName>[^:/?]+)$",
-);
-const ExportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)/export/(?<exportName>[^:/?]+)$",
-);
-const GlobalTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb::(?<account>[^:]*):global-table/(?<globalTableName>[^:/?]+)$",
-);
-const ImportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)/import/(?<importName>[^:/?]+)$",
-);
-const IndexArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)/index/(?<indexName>[^:/?]+)$",
-);
-const StreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)/stream/(?<streamLabel>[^:/?]+)$",
-);
-const TableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table/(?<tableName>[^:/?]+)$",
-);
+/**
+ * Properties for building a backup ARN.
+ */
+export interface DynamoDBBackupArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The BackupName component of the ARN. */
+	readonly backupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a backup ARN.
+ */
+export interface DynamoDBBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The BackupName component. */
+	readonly backupName: string;
+}
+
+/**
+ * Properties for building a export ARN.
+ */
+export interface DynamoDBExportArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The ExportName component of the ARN. */
+	readonly exportName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export ARN.
+ */
+export interface DynamoDBExportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The ExportName component. */
+	readonly exportName: string;
+}
+
+/**
+ * Properties for building a global-table ARN.
+ */
+export interface DynamoDBGlobalTableArnProps {
+	/** The GlobalTableName component of the ARN. */
+	readonly globalTableName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a global-table ARN.
+ */
+export interface DynamoDBGlobalTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GlobalTableName component. */
+	readonly globalTableName: string;
+}
+
+/**
+ * Properties for building a import ARN.
+ */
+export interface DynamoDBImportArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The ImportName component of the ARN. */
+	readonly importName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a import ARN.
+ */
+export interface DynamoDBImportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The ImportName component. */
+	readonly importName: string;
+}
+
+/**
+ * Properties for building a index ARN.
+ */
+export interface DynamoDBIndexArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The IndexName component of the ARN. */
+	readonly indexName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a index ARN.
+ */
+export interface DynamoDBIndexArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The IndexName component. */
+	readonly indexName: string;
+}
+
+/**
+ * Properties for building a stream ARN.
+ */
+export interface DynamoDBStreamArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The StreamLabel component of the ARN. */
+	readonly streamLabel: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stream ARN.
+ */
+export interface DynamoDBStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The StreamLabel component. */
+	readonly streamLabel: string;
+}
+
+/**
+ * Properties for building a table ARN.
+ */
+export interface DynamoDBTableArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a table ARN.
+ */
+export interface DynamoDBTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+}
+
+const BackupArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/backup\/(?<backupName>[^:/?]+)$/;
+const ExportArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/export\/(?<exportName>[^:/?]+)$/;
+const GlobalTableArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb::(?<account>[^:]*):global-table\/(?<globalTableName>[^:/?]+)$/;
+const ImportArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/import\/(?<importName>[^:/?]+)$/;
+const IndexArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/index\/(?<indexName>[^:/?]+)$/;
+const StreamArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)\/stream\/(?<streamLabel>[^:/?]+)$/;
+const TableArnRegex =
+	/^arn:(?<partition>[^:]+):dynamodb:(?<region>[^:]*):(?<account>[^:]*):table\/(?<tableName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for dynamodb resources.
@@ -319,18 +521,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the backup resource.
 	 */
-	static backup(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The BackupName component of the ARN. */
-		readonly backupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static backup(props: DynamoDBBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}/backup/${props.backupName}`;
 	}
 
@@ -345,13 +536,7 @@ export class DynamoDBResources {
 	 * Parses a backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-		backupName: string;
-	} {
+	static parseBackupArn(arn: string): DynamoDBBackupArnComponents {
 		const match = BackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid backup ARN: ${arn}`);
@@ -368,18 +553,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the export resource.
 	 */
-	static export(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The ExportName component of the ARN. */
-		readonly exportName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static export(props: DynamoDBExportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}/export/${props.exportName}`;
 	}
 
@@ -394,13 +568,7 @@ export class DynamoDBResources {
 	 * Parses a export ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-		exportName: string;
-	} {
+	static parseExportArn(arn: string): DynamoDBExportArnComponents {
 		const match = ExportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export ARN: ${arn}`);
@@ -417,14 +585,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the global-table resource.
 	 */
-	static globalTable(props: {
-		/** The GlobalTableName component of the ARN. */
-		readonly globalTableName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static globalTable(props: DynamoDBGlobalTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb::${props.account ?? "*"}:global-table/${props.globalTableName}`;
 	}
 
@@ -439,11 +600,7 @@ export class DynamoDBResources {
 	 * Parses a global-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGlobalTableArn(arn: string): {
-		partition: string;
-		account: string;
-		globalTableName: string;
-	} {
+	static parseGlobalTableArn(arn: string): DynamoDBGlobalTableArnComponents {
 		const match = GlobalTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid global-table ARN: ${arn}`);
@@ -458,18 +615,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the import resource.
 	 */
-	static import(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The ImportName component of the ARN. */
-		readonly importName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static import(props: DynamoDBImportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}/import/${props.importName}`;
 	}
 
@@ -484,13 +630,7 @@ export class DynamoDBResources {
 	 * Parses a import ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-		importName: string;
-	} {
+	static parseImportArn(arn: string): DynamoDBImportArnComponents {
 		const match = ImportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid import ARN: ${arn}`);
@@ -507,18 +647,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the index resource.
 	 */
-	static index(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The IndexName component of the ARN. */
-		readonly indexName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static index(props: DynamoDBIndexArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}/index/${props.indexName}`;
 	}
 
@@ -533,13 +662,7 @@ export class DynamoDBResources {
 	 * Parses a index ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIndexArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-		indexName: string;
-	} {
+	static parseIndexArn(arn: string): DynamoDBIndexArnComponents {
 		const match = IndexArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid index ARN: ${arn}`);
@@ -556,18 +679,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the stream resource.
 	 */
-	static stream(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The StreamLabel component of the ARN. */
-		readonly streamLabel: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stream(props: DynamoDBStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}/stream/${props.streamLabel}`;
 	}
 
@@ -582,13 +694,7 @@ export class DynamoDBResources {
 	 * Parses a stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-		streamLabel: string;
-	} {
+	static parseStreamArn(arn: string): DynamoDBStreamArnComponents {
 		const match = StreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stream ARN: ${arn}`);
@@ -605,16 +711,7 @@ export class DynamoDBResources {
 	/**
 	 * Builds an ARN for the table resource.
 	 */
-	static table(props: {
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static table(props: DynamoDBTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dynamodb:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.tableName}`;
 	}
 
@@ -629,12 +726,7 @@ export class DynamoDBResources {
 	 * Parses a table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tableName: string;
-	} {
+	static parseTableArn(arn: string): DynamoDBTableArnComponents {
 		const match = TableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid table ARN: ${arn}`);
@@ -653,24 +745,22 @@ export class DynamoDBResources {
  */
 export class DynamoDBOperations {
 	/** IAM actions required for the BatchExecuteStatement API call. */
-	static readonly BATCH_EXECUTE_STATEMENT: string[] = [
+	static readonly BatchExecuteStatement: string[] = [
 		"dynamodb:PartiQLDelete",
 		"dynamodb:PartiQLInsert",
 		"dynamodb:PartiQLSelect",
 		"dynamodb:PartiQLUpdate",
 	];
 	/** IAM actions required for the BatchGetItem API call. */
-	static readonly BATCH_GET_ITEM: string[] = ["dynamodb:BatchGetItem"];
+	static readonly BatchGetItem: string[] = ["dynamodb:BatchGetItem"];
 	/** IAM actions required for the BatchWriteItem API call. */
-	static readonly BATCH_WRITE_ITEM: string[] = ["dynamodb:BatchWriteItem"];
+	static readonly BatchWriteItem: string[] = ["dynamodb:BatchWriteItem"];
 	/** IAM actions required for the CreateBackup API call. */
-	static readonly CREATE_BACKUP: string[] = ["dynamodb:CreateBackup"];
+	static readonly CreateBackup: string[] = ["dynamodb:CreateBackup"];
 	/** IAM actions required for the CreateGlobalTable API call. */
-	static readonly CREATE_GLOBAL_TABLE: string[] = [
-		"dynamodb:CreateGlobalTable",
-	];
+	static readonly CreateGlobalTable: string[] = ["dynamodb:CreateGlobalTable"];
 	/** IAM actions required for the CreateTable API call. */
-	static readonly CREATE_TABLE: string[] = [
+	static readonly CreateTable: string[] = [
 		"dynamodb:AssociateTableReplica",
 		"dynamodb:BatchWriteItem",
 		"dynamodb:CreateTable",
@@ -685,148 +775,146 @@ export class DynamoDBOperations {
 		"dynamodb:UpdateItem",
 	];
 	/** IAM actions required for the DeleteBackup API call. */
-	static readonly DELETE_BACKUP: string[] = ["dynamodb:DeleteBackup"];
+	static readonly DeleteBackup: string[] = ["dynamodb:DeleteBackup"];
 	/** IAM actions required for the DeleteItem API call. */
-	static readonly DELETE_ITEM: string[] = [
+	static readonly DeleteItem: string[] = [
 		"dynamodb:DeleteItem",
 		"dynamodb:WriteDataForReplication",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"dynamodb:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteTable API call. */
-	static readonly DELETE_TABLE: string[] = ["dynamodb:DeleteTable"];
+	static readonly DeleteTable: string[] = ["dynamodb:DeleteTable"];
 	/** IAM actions required for the DescribeBackup API call. */
-	static readonly DESCRIBE_BACKUP: string[] = ["dynamodb:DescribeBackup"];
+	static readonly DescribeBackup: string[] = ["dynamodb:DescribeBackup"];
 	/** IAM actions required for the DescribeContinuousBackups API call. */
-	static readonly DESCRIBE_CONTINUOUS_BACKUPS: string[] = [
+	static readonly DescribeContinuousBackups: string[] = [
 		"dynamodb:DescribeContinuousBackups",
 	];
 	/** IAM actions required for the DescribeContributorInsights API call. */
-	static readonly DESCRIBE_CONTRIBUTOR_INSIGHTS: string[] = [
+	static readonly DescribeContributorInsights: string[] = [
 		"dynamodb:DescribeContributorInsights",
 	];
 	/** IAM actions required for the DescribeEndpoints API call. */
-	static readonly DESCRIBE_ENDPOINTS: string[] = ["dynamodb:DescribeEndpoints"];
+	static readonly DescribeEndpoints: string[] = ["dynamodb:DescribeEndpoints"];
 	/** IAM actions required for the DescribeExport API call. */
-	static readonly DESCRIBE_EXPORT: string[] = ["dynamodb:DescribeExport"];
+	static readonly DescribeExport: string[] = ["dynamodb:DescribeExport"];
 	/** IAM actions required for the DescribeGlobalTable API call. */
-	static readonly DESCRIBE_GLOBAL_TABLE: string[] = [
+	static readonly DescribeGlobalTable: string[] = [
 		"dynamodb:DescribeGlobalTable",
 	];
 	/** IAM actions required for the DescribeGlobalTableSettings API call. */
-	static readonly DESCRIBE_GLOBAL_TABLE_SETTINGS: string[] = [
+	static readonly DescribeGlobalTableSettings: string[] = [
 		"dynamodb:DescribeGlobalTableSettings",
 	];
 	/** IAM actions required for the DescribeImport API call. */
-	static readonly DESCRIBE_IMPORT: string[] = ["dynamodb:DescribeImport"];
+	static readonly DescribeImport: string[] = ["dynamodb:DescribeImport"];
 	/** IAM actions required for the DescribeKinesisStreamingDestination API call. */
-	static readonly DESCRIBE_KINESIS_STREAMING_DESTINATION: string[] = [
+	static readonly DescribeKinesisStreamingDestination: string[] = [
 		"dynamodb:DescribeKinesisStreamingDestination",
 	];
 	/** IAM actions required for the DescribeLimits API call. */
-	static readonly DESCRIBE_LIMITS: string[] = ["dynamodb:DescribeLimits"];
+	static readonly DescribeLimits: string[] = ["dynamodb:DescribeLimits"];
 	/** IAM actions required for the DescribeStream API call. */
-	static readonly DESCRIBE_STREAM: string[] = [
+	static readonly DescribeStream: string[] = [
 		"dynamodb:DescribeStream",
 		"dynamodb:ReadDataForReplication",
 	];
 	/** IAM actions required for the DescribeTable API call. */
-	static readonly DESCRIBE_TABLE: string[] = [
+	static readonly DescribeTable: string[] = [
 		"dynamodb:DescribeTable",
 		"dynamodb:ReadDataForReplication",
 		"dynamodb:ReplicateSettings",
 	];
 	/** IAM actions required for the DescribeTableReplicaAutoScaling API call. */
-	static readonly DESCRIBE_TABLE_REPLICA_AUTO_SCALING: string[] = [
+	static readonly DescribeTableReplicaAutoScaling: string[] = [
 		"dynamodb:DescribeTableReplicaAutoScaling",
 	];
 	/** IAM actions required for the DescribeTimeToLive API call. */
-	static readonly DESCRIBE_TIME_TO_LIVE: string[] = [
+	static readonly DescribeTimeToLive: string[] = [
 		"dynamodb:DescribeTimeToLive",
 		"dynamodb:ReadDataForReplication",
 	];
 	/** IAM actions required for the DisableKinesisStreamingDestination API call. */
-	static readonly DISABLE_KINESIS_STREAMING_DESTINATION: string[] = [
+	static readonly DisableKinesisStreamingDestination: string[] = [
 		"dynamodb:DisableKinesisStreamingDestination",
 	];
 	/** IAM actions required for the EnableKinesisStreamingDestination API call. */
-	static readonly ENABLE_KINESIS_STREAMING_DESTINATION: string[] = [
+	static readonly EnableKinesisStreamingDestination: string[] = [
 		"dynamodb:EnableKinesisStreamingDestination",
 	];
 	/** IAM actions required for the ExecuteStatement API call. */
-	static readonly EXECUTE_STATEMENT: string[] = [
+	static readonly ExecuteStatement: string[] = [
 		"dynamodb:PartiQLDelete",
 		"dynamodb:PartiQLInsert",
 		"dynamodb:PartiQLSelect",
 		"dynamodb:PartiQLUpdate",
 	];
 	/** IAM actions required for the ExecuteTransaction API call. */
-	static readonly EXECUTE_TRANSACTION: string[] = [
+	static readonly ExecuteTransaction: string[] = [
 		"dynamodb:PartiQLDelete",
 		"dynamodb:PartiQLInsert",
 		"dynamodb:PartiQLSelect",
 		"dynamodb:PartiQLUpdate",
 	];
 	/** IAM actions required for the ExportTableToPointInTime API call. */
-	static readonly EXPORT_TABLE_TO_POINT_IN_TIME: string[] = [
+	static readonly ExportTableToPointInTime: string[] = [
 		"dynamodb:ExportTableToPointInTime",
 	];
 	/** IAM actions required for the GetItem API call. */
-	static readonly GET_ITEM: string[] = [
+	static readonly opGetItem: string[] = [
 		"dynamodb:GetItem",
 		"dynamodb:ReadDataForReplication",
 	];
 	/** IAM actions required for the GetRecords API call. */
-	static readonly GET_RECORDS: string[] = [
+	static readonly opGetRecords: string[] = [
 		"dynamodb:GetRecords",
 		"dynamodb:ReadDataForReplication",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"dynamodb:GetResourcePolicy",
 	];
 	/** IAM actions required for the GetShardIterator API call. */
-	static readonly GET_SHARD_ITERATOR: string[] = [
+	static readonly opGetShardIterator: string[] = [
 		"dynamodb:GetShardIterator",
 		"dynamodb:ReadDataForReplication",
 	];
 	/** IAM actions required for the ImportTable API call. */
-	static readonly IMPORT_TABLE: string[] = ["dynamodb:ImportTable"];
+	static readonly ImportTable: string[] = ["dynamodb:ImportTable"];
 	/** IAM actions required for the ListBackups API call. */
-	static readonly LIST_BACKUPS: string[] = ["dynamodb:ListBackups"];
+	static readonly ListBackups: string[] = ["dynamodb:ListBackups"];
 	/** IAM actions required for the ListContributorInsights API call. */
-	static readonly LIST_CONTRIBUTOR_INSIGHTS: string[] = [
+	static readonly ListContributorInsights: string[] = [
 		"dynamodb:ListContributorInsights",
 	];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["dynamodb:ListExports"];
+	static readonly ListExports: string[] = ["dynamodb:ListExports"];
 	/** IAM actions required for the ListGlobalTables API call. */
-	static readonly LIST_GLOBAL_TABLES: string[] = ["dynamodb:ListGlobalTables"];
+	static readonly ListGlobalTables: string[] = ["dynamodb:ListGlobalTables"];
 	/** IAM actions required for the ListImports API call. */
-	static readonly LIST_IMPORTS: string[] = ["dynamodb:ListImports"];
+	static readonly ListImports: string[] = ["dynamodb:ListImports"];
 	/** IAM actions required for the ListStreams API call. */
-	static readonly LIST_STREAMS: string[] = ["dynamodb:ListStreams"];
+	static readonly ListStreams: string[] = ["dynamodb:ListStreams"];
 	/** IAM actions required for the ListTables API call. */
-	static readonly LIST_TABLES: string[] = ["dynamodb:ListTables"];
+	static readonly ListTables: string[] = ["dynamodb:ListTables"];
 	/** IAM actions required for the ListTagsOfResource API call. */
-	static readonly LIST_TAGS_OF_RESOURCE: string[] = [
+	static readonly ListTagsOfResource: string[] = [
 		"dynamodb:ListTagsOfResource",
 	];
 	/** IAM actions required for the PutItem API call. */
-	static readonly PUT_ITEM: string[] = [
+	static readonly PutItem: string[] = [
 		"dynamodb:PutItem",
 		"dynamodb:WriteDataForReplication",
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
-		"dynamodb:PutResourcePolicy",
-	];
+	static readonly PutResourcePolicy: string[] = ["dynamodb:PutResourcePolicy"];
 	/** IAM actions required for the Query API call. */
-	static readonly QUERY: string[] = ["dynamodb:Query"];
+	static readonly Query: string[] = ["dynamodb:Query"];
 	/** IAM actions required for the RestoreTableFromBackup API call. */
-	static readonly RESTORE_TABLE_FROM_BACKUP: string[] = [
+	static readonly RestoreTableFromBackup: string[] = [
 		"dynamodb:BatchWriteItem",
 		"dynamodb:DeleteItem",
 		"dynamodb:GetItem",
@@ -837,7 +925,7 @@ export class DynamoDBOperations {
 		"dynamodb:UpdateItem",
 	];
 	/** IAM actions required for the RestoreTableToPointInTime API call. */
-	static readonly RESTORE_TABLE_TO_POINT_IN_TIME: string[] = [
+	static readonly RestoreTableToPointInTime: string[] = [
 		"dynamodb:AssociateTableReplica",
 		"dynamodb:BatchWriteItem",
 		"dynamodb:CreateTableReplica",
@@ -849,46 +937,44 @@ export class DynamoDBOperations {
 		"dynamodb:UpdateItem",
 	];
 	/** IAM actions required for the Scan API call. */
-	static readonly SCAN: string[] = ["dynamodb:Scan"];
+	static readonly Scan: string[] = ["dynamodb:Scan"];
 	/** IAM actions required for the SearchVectors API call. */
-	static readonly SEARCH_VECTORS: string[] = [];
+	static readonly SearchVectors: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["dynamodb:TagResource"];
+	static readonly TagResource: string[] = ["dynamodb:TagResource"];
 	/** IAM actions required for the TransactGetItems API call. */
-	static readonly TRANSACT_GET_ITEMS: string[] = ["dynamodb:GetItem"];
+	static readonly TransactGetItems: string[] = ["dynamodb:GetItem"];
 	/** IAM actions required for the TransactWriteItems API call. */
-	static readonly TRANSACT_WRITE_ITEMS: string[] = [
+	static readonly TransactWriteItems: string[] = [
 		"dynamodb:ConditionCheckItem",
 		"dynamodb:DeleteItem",
 		"dynamodb:PutItem",
 		"dynamodb:UpdateItem",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["dynamodb:UntagResource"];
+	static readonly UntagResource: string[] = ["dynamodb:UntagResource"];
 	/** IAM actions required for the UpdateContinuousBackups API call. */
-	static readonly UPDATE_CONTINUOUS_BACKUPS: string[] = [
+	static readonly UpdateContinuousBackups: string[] = [
 		"dynamodb:UpdateContinuousBackups",
 	];
 	/** IAM actions required for the UpdateContributorInsights API call. */
-	static readonly UPDATE_CONTRIBUTOR_INSIGHTS: string[] = [
+	static readonly UpdateContributorInsights: string[] = [
 		"dynamodb:UpdateContributorInsights",
 	];
 	/** IAM actions required for the UpdateGlobalTable API call. */
-	static readonly UPDATE_GLOBAL_TABLE: string[] = [
-		"dynamodb:UpdateGlobalTable",
-	];
+	static readonly UpdateGlobalTable: string[] = ["dynamodb:UpdateGlobalTable"];
 	/** IAM actions required for the UpdateGlobalTableSettings API call. */
-	static readonly UPDATE_GLOBAL_TABLE_SETTINGS: string[] = [
+	static readonly UpdateGlobalTableSettings: string[] = [
 		"dynamodb:UpdateGlobalTableSettings",
 	];
 	/** IAM actions required for the UpdateItem API call. */
-	static readonly UPDATE_ITEM: string[] = ["dynamodb:UpdateItem"];
+	static readonly UpdateItem: string[] = ["dynamodb:UpdateItem"];
 	/** IAM actions required for the UpdateKinesisStreamingDestination API call. */
-	static readonly UPDATE_KINESIS_STREAMING_DESTINATION: string[] = [
+	static readonly UpdateKinesisStreamingDestination: string[] = [
 		"dynamodb:UpdateKinesisStreamingDestination",
 	];
 	/** IAM actions required for the UpdateTable API call. */
-	static readonly UPDATE_TABLE: string[] = [
+	static readonly UpdateTable: string[] = [
 		"dynamodb:BatchWriteItem",
 		"dynamodb:CreateGlobalTableWitness",
 		"dynamodb:CreateTable",
@@ -906,11 +992,11 @@ export class DynamoDBOperations {
 		"dynamodb:WriteDataForReplication",
 	];
 	/** IAM actions required for the UpdateTableReplicaAutoScaling API call. */
-	static readonly UPDATE_TABLE_REPLICA_AUTO_SCALING: string[] = [
+	static readonly UpdateTableReplicaAutoScaling: string[] = [
 		"dynamodb:UpdateTableReplicaAutoScaling",
 	];
 	/** IAM actions required for the UpdateTimeToLive API call. */
-	static readonly UPDATE_TIME_TO_LIVE: string[] = [
+	static readonly UpdateTimeToLive: string[] = [
 		"dynamodb:ReplicateSettings",
 		"dynamodb:UpdateTimeToLive",
 		"dynamodb:WriteDataForReplication",
@@ -922,32 +1008,32 @@ export class DynamoDBOperations {
  */
 export class DynamoDBConditions {
 	/** Condition keys applicable to the BatchGetItem action. */
-	static readonly BATCH_GET_ITEM_CONDITION_KEYS: string[] = [
+	static readonly BatchGetItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnConsumedCapacity",
 		"dynamodb:Select",
 	];
 	/** Condition keys applicable to the BatchWriteItem action. */
-	static readonly BATCH_WRITE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly BatchWriteItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnConsumedCapacity",
 	];
 	/** Condition keys applicable to the ConditionCheckItem action. */
-	static readonly CONDITION_CHECK_ITEM_CONDITION_KEYS: string[] = [
+	static readonly ConditionCheckItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnConsumedCapacity",
 		"dynamodb:ReturnValues",
 	];
 	/** Condition keys applicable to the CreateTable action. */
-	static readonly CREATE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly CreateTableConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteItem action. */
-	static readonly DELETE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly DeleteItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
@@ -955,7 +1041,7 @@ export class DynamoDBConditions {
 		"dynamodb:ReturnValues",
 	];
 	/** Condition keys applicable to the GetItem action. */
-	static readonly GET_ITEM_CONDITION_KEYS: string[] = [
+	static readonly actionGetItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
@@ -963,25 +1049,25 @@ export class DynamoDBConditions {
 		"dynamodb:Select",
 	];
 	/** Condition keys applicable to the InjectError action. */
-	static readonly INJECT_ERROR_CONDITION_KEYS: string[] = [
+	static readonly InjectErrorConditionKeys: string[] = [
 		"dynamodb:FisActionId",
 		"dynamodb:FisTargetArns",
 	];
 	/** Condition keys applicable to the PartiQLDelete action. */
-	static readonly PARTI_QL_DELETE_CONDITION_KEYS: string[] = [
+	static readonly PartiQLDeleteConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnValues",
 	];
 	/** Condition keys applicable to the PartiQLInsert action. */
-	static readonly PARTI_QL_INSERT_CONDITION_KEYS: string[] = [
+	static readonly PartiQLInsertConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
 	];
 	/** Condition keys applicable to the PartiQLSelect action. */
-	static readonly PARTI_QL_SELECT_CONDITION_KEYS: string[] = [
+	static readonly PartiQLSelectConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:FullTableScan",
@@ -989,14 +1075,14 @@ export class DynamoDBConditions {
 		"dynamodb:Select",
 	];
 	/** Condition keys applicable to the PartiQLUpdate action. */
-	static readonly PARTI_QL_UPDATE_CONDITION_KEYS: string[] = [
+	static readonly PartiQLUpdateConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnValues",
 	];
 	/** Condition keys applicable to the PutItem action. */
-	static readonly PUT_ITEM_CONDITION_KEYS: string[] = [
+	static readonly PutItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
@@ -1004,7 +1090,7 @@ export class DynamoDBConditions {
 		"dynamodb:ReturnValues",
 	];
 	/** Condition keys applicable to the Query action. */
-	static readonly QUERY_CONDITION_KEYS: string[] = [
+	static readonly QueryConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:LeadingKeys",
 		"dynamodb:ReturnConsumedCapacity",
@@ -1012,21 +1098,21 @@ export class DynamoDBConditions {
 		"dynamodb:Select",
 	];
 	/** Condition keys applicable to the Scan action. */
-	static readonly SCAN_CONDITION_KEYS: string[] = [
+	static readonly ScanConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:ReturnConsumedCapacity",
 		"dynamodb:ReturnValues",
 		"dynamodb:Select",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateItem action. */
-	static readonly UPDATE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly UpdateItemConditionKeys: string[] = [
 		"dynamodb:Attributes",
 		"dynamodb:EnclosingOperation",
 		"dynamodb:LeadingKeys",
@@ -1035,11 +1121,11 @@ export class DynamoDBConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: dynamodb:Attributes (ArrayOfString) */
 	static readonly ATTRIBUTES = "dynamodb:Attributes";
 	/** Condition key: dynamodb:EnclosingOperation (String) */

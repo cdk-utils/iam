@@ -13,194 +13,248 @@ export class QActions {
 	static readonly SERVICE_PREFIX = "q";
 
 	/** [Write] q:AssociateConnectorResource */
-	static readonly ASSOCIATE_CONNECTOR_RESOURCE = "q:AssociateConnectorResource";
+	static readonly AssociateConnectorResource = "q:AssociateConnectorResource";
 	/** [Write] q:AssociateLoginDomain */
-	static readonly ASSOCIATE_LOGIN_DOMAIN = "q:AssociateLoginDomain";
+	static readonly AssociateLoginDomain = "q:AssociateLoginDomain";
 	/** [Read] q:BatchDescribeGroups */
-	static readonly BATCH_DESCRIBE_GROUPS = "q:BatchDescribeGroups";
+	static readonly BatchDescribeGroups = "q:BatchDescribeGroups";
 	/** [Read] q:BatchDescribeUsers */
-	static readonly BATCH_DESCRIBE_USERS = "q:BatchDescribeUsers";
+	static readonly BatchDescribeUsers = "q:BatchDescribeUsers";
 	/** [Read] q:BatchGetGroups */
-	static readonly BATCH_GET_GROUPS = "q:BatchGetGroups";
+	static readonly BatchGetGroups = "q:BatchGetGroups";
 	/** [Read] q:BatchGetUsers */
-	static readonly BATCH_GET_USERS = "q:BatchGetUsers";
+	static readonly BatchGetUsers = "q:BatchGetUsers";
 	/** [Write] q:CreateArtifact */
-	static readonly CREATE_ARTIFACT = "q:CreateArtifact";
+	static readonly CreateArtifact = "q:CreateArtifact";
 	/** [Write] q:CreateAssignment */
-	static readonly CREATE_ASSIGNMENT = "q:CreateAssignment";
+	static readonly CreateAssignment = "q:CreateAssignment";
 	/** [Write] q:CreateAuthGrant */
-	static readonly CREATE_AUTH_GRANT = "q:CreateAuthGrant";
+	static readonly CreateAuthGrant = "q:CreateAuthGrant";
 	/** [Write] q:CreateOAuthAppConnection */
-	static readonly CREATE_O_AUTH_APP_CONNECTION = "q:CreateOAuthAppConnection";
+	static readonly CreateOAuthAppConnection = "q:CreateOAuthAppConnection";
 	/** [Write] q:CreatePlugin */
-	static readonly CREATE_PLUGIN = "q:CreatePlugin";
+	static readonly CreatePlugin = "q:CreatePlugin";
 	/** [Write] q:CreateScimAccessToken */
-	static readonly CREATE_SCIM_ACCESS_TOKEN = "q:CreateScimAccessToken";
+	static readonly CreateScimAccessToken = "q:CreateScimAccessToken";
 	/** [Write] q:DeleteAssignment */
-	static readonly DELETE_ASSIGNMENT = "q:DeleteAssignment";
+	static readonly DeleteAssignment = "q:DeleteAssignment";
 	/** [Write] q:DeleteConversation */
-	static readonly DELETE_CONVERSATION = "q:DeleteConversation";
+	static readonly DeleteConversation = "q:DeleteConversation";
 	/** [Write] q:DeleteOAuthAppConnection */
-	static readonly DELETE_O_AUTH_APP_CONNECTION = "q:DeleteOAuthAppConnection";
+	static readonly DeleteOAuthAppConnection = "q:DeleteOAuthAppConnection";
 	/** [Write] q:DeletePlugin */
-	static readonly DELETE_PLUGIN = "q:DeletePlugin";
+	static readonly DeletePlugin = "q:DeletePlugin";
 	/** [Write] q:DeleteScimAccessToken */
-	static readonly DELETE_SCIM_ACCESS_TOKEN = "q:DeleteScimAccessToken";
+	static readonly DeleteScimAccessToken = "q:DeleteScimAccessToken";
 	/** [Write] q:DisassociateLoginDomain */
-	static readonly DISASSOCIATE_LOGIN_DOMAIN = "q:DisassociateLoginDomain";
+	static readonly DisassociateLoginDomain = "q:DisassociateLoginDomain";
 	/** [Read] q:GenerateCodeFromCommands */
-	static readonly GENERATE_CODE_FROM_COMMANDS = "q:GenerateCodeFromCommands";
+	static readonly GenerateCodeFromCommands = "q:GenerateCodeFromCommands";
 	/** [Read] q:GenerateCodeRecommendations */
-	static readonly GENERATE_CODE_RECOMMENDATIONS =
-		"q:GenerateCodeRecommendations";
+	static readonly GenerateCodeRecommendations = "q:GenerateCodeRecommendations";
 	/** [Read] q:GetArtifact */
-	static readonly GET_ARTIFACT = "q:GetArtifact";
+	static readonly actionGetArtifact = "q:GetArtifact";
 	/** [Read] q:GetArtifactActionResult */
-	static readonly GET_ARTIFACT_ACTION_RESULT = "q:GetArtifactActionResult";
+	static readonly actionGetArtifactActionResult = "q:GetArtifactActionResult";
 	/** [Read] q:GetConnector */
-	static readonly GET_CONNECTOR = "q:GetConnector";
+	static readonly actionGetConnector = "q:GetConnector";
 	/** [Read] q:GetConversation */
-	static readonly GET_CONVERSATION = "q:GetConversation";
+	static readonly actionGetConversation = "q:GetConversation";
 	/** [Read] q:GetIdentityMetadata */
-	static readonly GET_IDENTITY_METADATA = "q:GetIdentityMetadata";
+	static readonly actionGetIdentityMetadata = "q:GetIdentityMetadata";
 	/** [Read] q:GetPlugin */
-	static readonly GET_PLUGIN = "q:GetPlugin";
+	static readonly actionGetPlugin = "q:GetPlugin";
 	/** [Read] q:GetTroubleshootingResults */
-	static readonly GET_TROUBLESHOOTING_RESULTS = "q:GetTroubleshootingResults";
+	static readonly actionGetTroubleshootingResults =
+		"q:GetTroubleshootingResults";
 	/** [Read] q:ListConversations */
-	static readonly LIST_CONVERSATIONS = "q:ListConversations";
+	static readonly ListConversations = "q:ListConversations";
 	/** [List] q:ListDashboardMetrics */
-	static readonly LIST_DASHBOARD_METRICS = "q:ListDashboardMetrics";
+	static readonly ListDashboardMetrics = "q:ListDashboardMetrics";
 	/** [List] q:ListGroups */
-	static readonly LIST_GROUPS = "q:ListGroups";
+	static readonly ListGroups = "q:ListGroups";
 	/** [List] q:ListLoginDomains */
-	static readonly LIST_LOGIN_DOMAINS = "q:ListLoginDomains";
+	static readonly ListLoginDomains = "q:ListLoginDomains";
 	/** [List] q:ListPluginProviders */
-	static readonly LIST_PLUGIN_PROVIDERS = "q:ListPluginProviders";
+	static readonly ListPluginProviders = "q:ListPluginProviders";
 	/** [List] q:ListPlugins */
-	static readonly LIST_PLUGINS = "q:ListPlugins";
+	static readonly ListPlugins = "q:ListPlugins";
 	/** [List] q:ListScimAccessTokens */
-	static readonly LIST_SCIM_ACCESS_TOKENS = "q:ListScimAccessTokens";
+	static readonly ListScimAccessTokens = "q:ListScimAccessTokens";
 	/** [List] q:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "q:ListTagsForResource";
+	static readonly ListTagsForResource = "q:ListTagsForResource";
 	/** [List] q:ListUsers */
-	static readonly LIST_USERS = "q:ListUsers";
+	static readonly ListUsers = "q:ListUsers";
 	/** [Write] q:PassRequest */
-	static readonly PASS_REQUEST = "q:PassRequest";
+	static readonly PassRequest = "q:PassRequest";
 	/** [Write] q:PerformArtifactAction */
-	static readonly PERFORM_ARTIFACT_ACTION = "q:PerformArtifactAction";
+	static readonly PerformArtifactAction = "q:PerformArtifactAction";
 	/** [Write] q:RejectConnector */
-	static readonly REJECT_CONNECTOR = "q:RejectConnector";
+	static readonly RejectConnector = "q:RejectConnector";
 	/** [Write] q:SendEvent */
-	static readonly SEND_EVENT = "q:SendEvent";
+	static readonly SendEvent = "q:SendEvent";
 	/** [Write] q:SendMessage */
-	static readonly SEND_MESSAGE = "q:SendMessage";
+	static readonly SendMessage = "q:SendMessage";
 	/** [Write] q:StartConversation */
-	static readonly START_CONVERSATION = "q:StartConversation";
+	static readonly StartConversation = "q:StartConversation";
 	/** [Write] q:StartTroubleshootingAnalysis */
-	static readonly START_TROUBLESHOOTING_ANALYSIS =
+	static readonly StartTroubleshootingAnalysis =
 		"q:StartTroubleshootingAnalysis";
 	/** [Write] q:StartTroubleshootingResolutionExplanation */
-	static readonly START_TROUBLESHOOTING_RESOLUTION_EXPLANATION =
+	static readonly StartTroubleshootingResolutionExplanation =
 		"q:StartTroubleshootingResolutionExplanation";
 	/** [Tagging] q:TagResource */
-	static readonly TAG_RESOURCE = "q:TagResource";
+	static readonly TagResource = "q:TagResource";
 	/** [Tagging] q:UntagResource */
-	static readonly UNTAG_RESOURCE = "q:UntagResource";
+	static readonly UntagResource = "q:UntagResource";
 	/** [Write] q:UpdateAssignment */
-	static readonly UPDATE_ASSIGNMENT = "q:UpdateAssignment";
+	static readonly UpdateAssignment = "q:UpdateAssignment";
 	/** [Write] q:UpdateAuthGrant */
-	static readonly UPDATE_AUTH_GRANT = "q:UpdateAuthGrant";
+	static readonly UpdateAuthGrant = "q:UpdateAuthGrant";
 	/** [Write] q:UpdateConversation */
-	static readonly UPDATE_CONVERSATION = "q:UpdateConversation";
+	static readonly UpdateConversation = "q:UpdateConversation";
 	/** [Write] q:UpdateOAuthAppConnection */
-	static readonly UPDATE_O_AUTH_APP_CONNECTION = "q:UpdateOAuthAppConnection";
+	static readonly UpdateOAuthAppConnection = "q:UpdateOAuthAppConnection";
 	/** [Write] q:UpdatePlugin */
-	static readonly UPDATE_PLUGIN = "q:UpdatePlugin";
+	static readonly UpdatePlugin = "q:UpdatePlugin";
 	/** [Write] q:UpdateTroubleshootingCommandResult */
-	static readonly UPDATE_TROUBLESHOOTING_COMMAND_RESULT =
+	static readonly UpdateTroubleshootingCommandResult =
 		"q:UpdateTroubleshootingCommandResult";
 	/** [Write] q:UsePlugin */
-	static readonly USE_PLUGIN = "q:UsePlugin";
+	static readonly UsePlugin = "q:UsePlugin";
 	/** [Write] q:VerifyOAuthAppConnection */
-	static readonly VERIFY_O_AUTH_APP_CONNECTION = "q:VerifyOAuthAppConnection";
+	static readonly VerifyOAuthAppConnection = "q:VerifyOAuthAppConnection";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		QActions.BATCH_DESCRIBE_GROUPS,
-		QActions.BATCH_DESCRIBE_USERS,
-		QActions.BATCH_GET_GROUPS,
-		QActions.BATCH_GET_USERS,
-		QActions.GENERATE_CODE_FROM_COMMANDS,
-		QActions.GENERATE_CODE_RECOMMENDATIONS,
-		QActions.GET_ARTIFACT,
-		QActions.GET_ARTIFACT_ACTION_RESULT,
-		QActions.GET_CONNECTOR,
-		QActions.GET_CONVERSATION,
-		QActions.GET_IDENTITY_METADATA,
-		QActions.GET_PLUGIN,
-		QActions.GET_TROUBLESHOOTING_RESULTS,
-		QActions.LIST_CONVERSATIONS,
+	static readonly AllReadActions: string[] = [
+		QActions.BatchDescribeGroups,
+		QActions.BatchDescribeUsers,
+		QActions.BatchGetGroups,
+		QActions.BatchGetUsers,
+		QActions.GenerateCodeFromCommands,
+		QActions.GenerateCodeRecommendations,
+		QActions.actionGetArtifact,
+		QActions.actionGetArtifactActionResult,
+		QActions.actionGetConnector,
+		QActions.actionGetConversation,
+		QActions.actionGetIdentityMetadata,
+		QActions.actionGetPlugin,
+		QActions.actionGetTroubleshootingResults,
+		QActions.ListConversations,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		QActions.ASSOCIATE_CONNECTOR_RESOURCE,
-		QActions.ASSOCIATE_LOGIN_DOMAIN,
-		QActions.CREATE_ARTIFACT,
-		QActions.CREATE_ASSIGNMENT,
-		QActions.CREATE_AUTH_GRANT,
-		QActions.CREATE_O_AUTH_APP_CONNECTION,
-		QActions.CREATE_PLUGIN,
-		QActions.CREATE_SCIM_ACCESS_TOKEN,
-		QActions.DELETE_ASSIGNMENT,
-		QActions.DELETE_CONVERSATION,
-		QActions.DELETE_O_AUTH_APP_CONNECTION,
-		QActions.DELETE_PLUGIN,
-		QActions.DELETE_SCIM_ACCESS_TOKEN,
-		QActions.DISASSOCIATE_LOGIN_DOMAIN,
-		QActions.PASS_REQUEST,
-		QActions.PERFORM_ARTIFACT_ACTION,
-		QActions.REJECT_CONNECTOR,
-		QActions.SEND_EVENT,
-		QActions.SEND_MESSAGE,
-		QActions.START_CONVERSATION,
-		QActions.START_TROUBLESHOOTING_ANALYSIS,
-		QActions.START_TROUBLESHOOTING_RESOLUTION_EXPLANATION,
-		QActions.UPDATE_ASSIGNMENT,
-		QActions.UPDATE_AUTH_GRANT,
-		QActions.UPDATE_CONVERSATION,
-		QActions.UPDATE_O_AUTH_APP_CONNECTION,
-		QActions.UPDATE_PLUGIN,
-		QActions.UPDATE_TROUBLESHOOTING_COMMAND_RESULT,
-		QActions.USE_PLUGIN,
-		QActions.VERIFY_O_AUTH_APP_CONNECTION,
+	static readonly AllWriteActions: string[] = [
+		QActions.AssociateConnectorResource,
+		QActions.AssociateLoginDomain,
+		QActions.CreateArtifact,
+		QActions.CreateAssignment,
+		QActions.CreateAuthGrant,
+		QActions.CreateOAuthAppConnection,
+		QActions.CreatePlugin,
+		QActions.CreateScimAccessToken,
+		QActions.DeleteAssignment,
+		QActions.DeleteConversation,
+		QActions.DeleteOAuthAppConnection,
+		QActions.DeletePlugin,
+		QActions.DeleteScimAccessToken,
+		QActions.DisassociateLoginDomain,
+		QActions.PassRequest,
+		QActions.PerformArtifactAction,
+		QActions.RejectConnector,
+		QActions.SendEvent,
+		QActions.SendMessage,
+		QActions.StartConversation,
+		QActions.StartTroubleshootingAnalysis,
+		QActions.StartTroubleshootingResolutionExplanation,
+		QActions.UpdateAssignment,
+		QActions.UpdateAuthGrant,
+		QActions.UpdateConversation,
+		QActions.UpdateOAuthAppConnection,
+		QActions.UpdatePlugin,
+		QActions.UpdateTroubleshootingCommandResult,
+		QActions.UsePlugin,
+		QActions.VerifyOAuthAppConnection,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		QActions.LIST_DASHBOARD_METRICS,
-		QActions.LIST_GROUPS,
-		QActions.LIST_LOGIN_DOMAINS,
-		QActions.LIST_PLUGIN_PROVIDERS,
-		QActions.LIST_PLUGINS,
-		QActions.LIST_SCIM_ACCESS_TOKENS,
-		QActions.LIST_TAGS_FOR_RESOURCE,
-		QActions.LIST_USERS,
+	static readonly AllListActions: string[] = [
+		QActions.ListDashboardMetrics,
+		QActions.ListGroups,
+		QActions.ListLoginDomains,
+		QActions.ListPluginProviders,
+		QActions.ListPlugins,
+		QActions.ListScimAccessTokens,
+		QActions.ListTagsForResource,
+		QActions.ListUsers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		QActions.TAG_RESOURCE,
-		QActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		QActions.TagResource,
+		QActions.UntagResource,
 	];
 }
 
-const PluginArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qdeveloper:(?<region>[^:]*):(?<account>[^:]*):plugin/(?<identifier>[^:/?]+)$",
-);
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codewhisperer:(?<region>[^:]*):(?<account>[^:]*):profile/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a plugin ARN.
+ */
+export interface QPluginArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a plugin ARN.
+ */
+export interface QPluginArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a profile ARN.
+ */
+export interface QProfileArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface QProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const PluginArnRegex =
+	/^arn:(?<partition>[^:]+):qdeveloper:(?<region>[^:]*):(?<account>[^:]*):plugin\/(?<identifier>[^:/?]+)$/;
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):codewhisperer:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for q resources.
@@ -209,16 +263,7 @@ export class QResources {
 	/**
 	 * Builds an ARN for the plugin resource.
 	 */
-	static plugin(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static plugin(props: QPluginArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qdeveloper:${props.region ?? "*"}:${props.account ?? "*"}:plugin/${props.identifier}`;
 	}
 
@@ -233,12 +278,7 @@ export class QResources {
 	 * Parses a plugin ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePluginArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parsePluginArn(arn: string): QPluginArnComponents {
 		const match = PluginArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid plugin ARN: ${arn}`);
@@ -254,16 +294,7 @@ export class QResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: QProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codewhisperer:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.identifier}`;
 	}
 
@@ -278,12 +309,7 @@ export class QResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseProfileArn(arn: string): QProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -302,60 +328,60 @@ export class QResources {
  */
 export class QConditions {
 	/** Condition keys applicable to the CreateAssignment action. */
-	static readonly CREATE_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateAssignmentConditionKeys: string[] = [
 		"identitystore:GroupId",
 		"identitystore:UserId",
 	];
 	/** Condition keys applicable to the CreatePlugin action. */
-	static readonly CREATE_PLUGIN_CONDITION_KEYS: string[] = [
+	static readonly CreatePluginConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAssignment action. */
-	static readonly DELETE_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAssignmentConditionKeys: string[] = [
 		"identitystore:GroupId",
 		"identitystore:UserId",
 	];
 	/** Condition keys applicable to the DeletePlugin action. */
-	static readonly DELETE_PLUGIN_CONDITION_KEYS: string[] = [
+	static readonly DeletePluginConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetPlugin action. */
-	static readonly GET_PLUGIN_CONDITION_KEYS: string[] = [
+	static readonly actionGetPluginConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateAssignment action. */
-	static readonly UPDATE_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateAssignmentConditionKeys: string[] = [
 		"identitystore:GroupId",
 		"identitystore:UserId",
 	];
 	/** Condition keys applicable to the UpdatePlugin action. */
-	static readonly UPDATE_PLUGIN_CONDITION_KEYS: string[] = [
+	static readonly UpdatePluginConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: identitystore:GroupId (ArrayOfString) */
 	static readonly GROUP_ID = "identitystore:GroupId";
 	/** Condition key: identitystore:UserId (ArrayOfString) */

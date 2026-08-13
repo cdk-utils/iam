@@ -13,588 +13,1318 @@ export class PartnercentralActions {
 	static readonly SERVICE_PREFIX = "partnercentral";
 
 	/** [Write] partnercentral:AcceptChannelHandshake */
-	static readonly ACCEPT_CHANNEL_HANDSHAKE =
+	static readonly AcceptChannelHandshake =
 		"partnercentral:AcceptChannelHandshake";
 	/** [Write] partnercentral:AcceptConnectionInvitation */
-	static readonly ACCEPT_CONNECTION_INVITATION =
+	static readonly AcceptConnectionInvitation =
 		"partnercentral:AcceptConnectionInvitation";
 	/** [Write] partnercentral:AcceptEngagementInvitation */
-	static readonly ACCEPT_ENGAGEMENT_INVITATION =
+	static readonly AcceptEngagementInvitation =
 		"partnercentral:AcceptEngagementInvitation";
 	/** [Write] partnercentral:AmendBenefitApplication */
-	static readonly AMEND_BENEFIT_APPLICATION =
+	static readonly AmendBenefitApplication =
 		"partnercentral:AmendBenefitApplication";
 	/** [Write] partnercentral:AssignOpportunity */
-	static readonly ASSIGN_OPPORTUNITY = "partnercentral:AssignOpportunity";
+	static readonly AssignOpportunity = "partnercentral:AssignOpportunity";
 	/** [Write] partnercentral:AssociateAwsTrainingCertificationEmailDomain */
-	static readonly ASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN =
+	static readonly AssociateAwsTrainingCertificationEmailDomain =
 		"partnercentral:AssociateAwsTrainingCertificationEmailDomain";
 	/** [Write] partnercentral:AssociateBenefitApplicationResource */
-	static readonly ASSOCIATE_BENEFIT_APPLICATION_RESOURCE =
+	static readonly AssociateBenefitApplicationResource =
 		"partnercentral:AssociateBenefitApplicationResource";
 	/** [Write] partnercentral:AssociateOpportunity */
-	static readonly ASSOCIATE_OPPORTUNITY = "partnercentral:AssociateOpportunity";
+	static readonly AssociateOpportunity = "partnercentral:AssociateOpportunity";
 	/** [Write] partnercentral:CancelBenefitApplication */
-	static readonly CANCEL_BENEFIT_APPLICATION =
+	static readonly CancelBenefitApplication =
 		"partnercentral:CancelBenefitApplication";
 	/** [Write] partnercentral:CancelChannelHandshake */
-	static readonly CANCEL_CHANNEL_HANDSHAKE =
+	static readonly CancelChannelHandshake =
 		"partnercentral:CancelChannelHandshake";
 	/** [Write] partnercentral:CancelConnection */
-	static readonly CANCEL_CONNECTION = "partnercentral:CancelConnection";
+	static readonly CancelConnection = "partnercentral:CancelConnection";
 	/** [Write] partnercentral:CancelConnectionInvitation */
-	static readonly CANCEL_CONNECTION_INVITATION =
+	static readonly CancelConnectionInvitation =
 		"partnercentral:CancelConnectionInvitation";
 	/** [Write] partnercentral:CancelProfileUpdateTask */
-	static readonly CANCEL_PROFILE_UPDATE_TASK =
+	static readonly CancelProfileUpdateTask =
 		"partnercentral:CancelProfileUpdateTask";
 	/** [Write] partnercentral:CreateBenefitApplication */
-	static readonly CREATE_BENEFIT_APPLICATION =
+	static readonly CreateBenefitApplication =
 		"partnercentral:CreateBenefitApplication";
 	/** [Write] partnercentral:CreateBusinessPlan */
-	static readonly CREATE_BUSINESS_PLAN = "partnercentral:CreateBusinessPlan";
+	static readonly CreateBusinessPlan = "partnercentral:CreateBusinessPlan";
 	/** [Write] partnercentral:CreateChannelHandshake */
-	static readonly CREATE_CHANNEL_HANDSHAKE =
+	static readonly CreateChannelHandshake =
 		"partnercentral:CreateChannelHandshake";
 	/** [Write] partnercentral:CreateCollaborationChannelMembers */
-	static readonly CREATE_COLLABORATION_CHANNEL_MEMBERS =
+	static readonly CreateCollaborationChannelMembers =
 		"partnercentral:CreateCollaborationChannelMembers";
 	/** [Write] partnercentral:CreateCollaborationChannelRequest */
-	static readonly CREATE_COLLABORATION_CHANNEL_REQUEST =
+	static readonly CreateCollaborationChannelRequest =
 		"partnercentral:CreateCollaborationChannelRequest";
 	/** [Write] partnercentral:CreateConnectionInvitation */
-	static readonly CREATE_CONNECTION_INVITATION =
+	static readonly CreateConnectionInvitation =
 		"partnercentral:CreateConnectionInvitation";
 	/** [Write] partnercentral:CreateEngagement */
-	static readonly CREATE_ENGAGEMENT = "partnercentral:CreateEngagement";
+	static readonly CreateEngagement = "partnercentral:CreateEngagement";
 	/** [Write] partnercentral:CreateEngagementContext */
-	static readonly CREATE_ENGAGEMENT_CONTEXT =
+	static readonly CreateEngagementContext =
 		"partnercentral:CreateEngagementContext";
 	/** [Write] partnercentral:CreateEngagementInvitation */
-	static readonly CREATE_ENGAGEMENT_INVITATION =
+	static readonly CreateEngagementInvitation =
 		"partnercentral:CreateEngagementInvitation";
 	/** [Write] partnercentral:CreateMarketplaceRevenueShare */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE =
+	static readonly CreateMarketplaceRevenueShare =
 		"partnercentral:CreateMarketplaceRevenueShare";
 	/** [Write] partnercentral:CreateMarketplaceRevenueShareAllocation */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION =
+	static readonly CreateMarketplaceRevenueShareAllocation =
 		"partnercentral:CreateMarketplaceRevenueShareAllocation";
 	/** [Write] partnercentral:CreateOpportunity */
-	static readonly CREATE_OPPORTUNITY = "partnercentral:CreateOpportunity";
+	static readonly CreateOpportunity = "partnercentral:CreateOpportunity";
 	/** [Write] partnercentral:CreatePartner */
-	static readonly CREATE_PARTNER = "partnercentral:CreatePartner";
+	static readonly CreatePartner = "partnercentral:CreatePartner";
 	/** [Write] partnercentral:CreateProgramManagementAccount */
-	static readonly CREATE_PROGRAM_MANAGEMENT_ACCOUNT =
+	static readonly CreateProgramManagementAccount =
 		"partnercentral:CreateProgramManagementAccount";
 	/** [Write] partnercentral:CreateRelationship */
-	static readonly CREATE_RELATIONSHIP = "partnercentral:CreateRelationship";
+	static readonly CreateRelationship = "partnercentral:CreateRelationship";
 	/** [Write] partnercentral:CreateResourceSnapshot */
-	static readonly CREATE_RESOURCE_SNAPSHOT =
+	static readonly CreateResourceSnapshot =
 		"partnercentral:CreateResourceSnapshot";
 	/** [Write] partnercentral:CreateResourceSnapshotJob */
-	static readonly CREATE_RESOURCE_SNAPSHOT_JOB =
+	static readonly CreateResourceSnapshotJob =
 		"partnercentral:CreateResourceSnapshotJob";
 	/** [Write] partnercentral:CreateRevenueAttribution */
-	static readonly CREATE_REVENUE_ATTRIBUTION =
+	static readonly CreateRevenueAttribution =
 		"partnercentral:CreateRevenueAttribution";
 	/** [Write] partnercentral:DeleteProgramManagementAccount */
-	static readonly DELETE_PROGRAM_MANAGEMENT_ACCOUNT =
+	static readonly DeleteProgramManagementAccount =
 		"partnercentral:DeleteProgramManagementAccount";
 	/** [Write] partnercentral:DeleteRelationship */
-	static readonly DELETE_RELATIONSHIP = "partnercentral:DeleteRelationship";
+	static readonly DeleteRelationship = "partnercentral:DeleteRelationship";
 	/** [Write] partnercentral:DeleteResourceSnapshotJob */
-	static readonly DELETE_RESOURCE_SNAPSHOT_JOB =
+	static readonly DeleteResourceSnapshotJob =
 		"partnercentral:DeleteResourceSnapshotJob";
 	/** [Write] partnercentral:DisassociateAwsTrainingCertificationEmailDomain */
-	static readonly DISASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN =
+	static readonly DisassociateAwsTrainingCertificationEmailDomain =
 		"partnercentral:DisassociateAwsTrainingCertificationEmailDomain";
 	/** [Write] partnercentral:DisassociateBenefitApplicationResource */
-	static readonly DISASSOCIATE_BENEFIT_APPLICATION_RESOURCE =
+	static readonly DisassociateBenefitApplicationResource =
 		"partnercentral:DisassociateBenefitApplicationResource";
 	/** [Write] partnercentral:DisassociateOpportunity */
-	static readonly DISASSOCIATE_OPPORTUNITY =
+	static readonly DisassociateOpportunity =
 		"partnercentral:DisassociateOpportunity";
 	/** [Write] partnercentral:EnrollInPartnerPath */
-	static readonly ENROLL_IN_PARTNER_PATH = "partnercentral:EnrollInPartnerPath";
+	static readonly EnrollInPartnerPath = "partnercentral:EnrollInPartnerPath";
 	/** [Read] partnercentral:GetAllianceLeadContact */
-	static readonly GET_ALLIANCE_LEAD_CONTACT =
+	static readonly actionGetAllianceLeadContact =
 		"partnercentral:GetAllianceLeadContact";
 	/** [Read] partnercentral:GetAwsOpportunitySummary */
-	static readonly GET_AWS_OPPORTUNITY_SUMMARY =
+	static readonly actionGetAwsOpportunitySummary =
 		"partnercentral:GetAwsOpportunitySummary";
 	/** [Read] partnercentral:GetBenefit */
-	static readonly GET_BENEFIT = "partnercentral:GetBenefit";
+	static readonly actionGetBenefit = "partnercentral:GetBenefit";
 	/** [Read] partnercentral:GetBenefitAllocation */
-	static readonly GET_BENEFIT_ALLOCATION =
+	static readonly actionGetBenefitAllocation =
 		"partnercentral:GetBenefitAllocation";
 	/** [Read] partnercentral:GetBenefitApplication */
-	static readonly GET_BENEFIT_APPLICATION =
+	static readonly actionGetBenefitApplication =
 		"partnercentral:GetBenefitApplication";
 	/** [Read] partnercentral:GetBusinessPlan */
-	static readonly GET_BUSINESS_PLAN = "partnercentral:GetBusinessPlan";
+	static readonly actionGetBusinessPlan = "partnercentral:GetBusinessPlan";
 	/** [Read] partnercentral:GetCollaborationChannel */
-	static readonly GET_COLLABORATION_CHANNEL =
+	static readonly actionGetCollaborationChannel =
 		"partnercentral:GetCollaborationChannel";
 	/** [Read] partnercentral:GetConnection */
-	static readonly GET_CONNECTION = "partnercentral:GetConnection";
+	static readonly actionGetConnection = "partnercentral:GetConnection";
 	/** [Read] partnercentral:GetConnectionInvitation */
-	static readonly GET_CONNECTION_INVITATION =
+	static readonly actionGetConnectionInvitation =
 		"partnercentral:GetConnectionInvitation";
 	/** [Read] partnercentral:GetConnectionPreferences */
-	static readonly GET_CONNECTION_PREFERENCES =
+	static readonly actionGetConnectionPreferences =
 		"partnercentral:GetConnectionPreferences";
 	/** [Read] partnercentral:GetEngagement */
-	static readonly GET_ENGAGEMENT = "partnercentral:GetEngagement";
+	static readonly actionGetEngagement = "partnercentral:GetEngagement";
 	/** [Read] partnercentral:GetEngagementInvitation */
-	static readonly GET_ENGAGEMENT_INVITATION =
+	static readonly actionGetEngagementInvitation =
 		"partnercentral:GetEngagementInvitation";
 	/** [Read] partnercentral:GetMarketplaceRevenueShare */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE =
+	static readonly actionGetMarketplaceRevenueShare =
 		"partnercentral:GetMarketplaceRevenueShare";
 	/** [Read] partnercentral:GetMarketplaceRevenueShareAllocation */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE_ALLOCATION =
+	static readonly actionGetMarketplaceRevenueShareAllocation =
 		"partnercentral:GetMarketplaceRevenueShareAllocation";
 	/** [Read] partnercentral:GetOpportunity */
-	static readonly GET_OPPORTUNITY = "partnercentral:GetOpportunity";
+	static readonly actionGetOpportunity = "partnercentral:GetOpportunity";
 	/** [Read] partnercentral:GetPartner */
-	static readonly GET_PARTNER = "partnercentral:GetPartner";
+	static readonly actionGetPartner = "partnercentral:GetPartner";
 	/** [Read] partnercentral:GetPartnerDashboard */
-	static readonly GET_PARTNER_DASHBOARD = "partnercentral:GetPartnerDashboard";
+	static readonly actionGetPartnerDashboard =
+		"partnercentral:GetPartnerDashboard";
 	/** [Read] partnercentral:GetPartnerProfile */
-	static readonly GET_PARTNER_PROFILE = "partnercentral:GetPartnerProfile";
+	static readonly actionGetPartnerProfile = "partnercentral:GetPartnerProfile";
 	/** [Read] partnercentral:GetProfileUpdateTask */
-	static readonly GET_PROFILE_UPDATE_TASK =
+	static readonly actionGetProfileUpdateTask =
 		"partnercentral:GetProfileUpdateTask";
 	/** [Read] partnercentral:GetProfileVisibility */
-	static readonly GET_PROFILE_VISIBILITY =
+	static readonly actionGetProfileVisibility =
 		"partnercentral:GetProfileVisibility";
 	/** [Read] partnercentral:GetProgramManagementAccount */
-	static readonly GET_PROGRAM_MANAGEMENT_ACCOUNT =
+	static readonly actionGetProgramManagementAccount =
 		"partnercentral:GetProgramManagementAccount";
 	/** [Read] partnercentral:GetProspectingFromEngagementTask */
-	static readonly GET_PROSPECTING_FROM_ENGAGEMENT_TASK =
+	static readonly actionGetProspectingFromEngagementTask =
 		"partnercentral:GetProspectingFromEngagementTask";
 	/** [Read] partnercentral:GetQualificationsAssociationDetails */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_DETAILS =
+	static readonly actionGetQualificationsAssociationDetails =
 		"partnercentral:GetQualificationsAssociationDetails";
 	/** [Read] partnercentral:GetQualificationsAssociationTask */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_TASK =
+	static readonly actionGetQualificationsAssociationTask =
 		"partnercentral:GetQualificationsAssociationTask";
 	/** [Read] partnercentral:GetQualificationsDisassociationTask */
-	static readonly GET_QUALIFICATIONS_DISASSOCIATION_TASK =
+	static readonly actionGetQualificationsDisassociationTask =
 		"partnercentral:GetQualificationsDisassociationTask";
 	/** [Read] partnercentral:GetRelationship */
-	static readonly GET_RELATIONSHIP = "partnercentral:GetRelationship";
+	static readonly actionGetRelationship = "partnercentral:GetRelationship";
 	/** [Read] partnercentral:GetResourceSnapshot */
-	static readonly GET_RESOURCE_SNAPSHOT = "partnercentral:GetResourceSnapshot";
+	static readonly actionGetResourceSnapshot =
+		"partnercentral:GetResourceSnapshot";
 	/** [Read] partnercentral:GetResourceSnapshotJob */
-	static readonly GET_RESOURCE_SNAPSHOT_JOB =
+	static readonly actionGetResourceSnapshotJob =
 		"partnercentral:GetResourceSnapshotJob";
 	/** [Read] partnercentral:GetRevenueAttribution */
-	static readonly GET_REVENUE_ATTRIBUTION =
+	static readonly actionGetRevenueAttribution =
 		"partnercentral:GetRevenueAttribution";
 	/** [Read] partnercentral:GetRevenueAttributionAllocation */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATION =
+	static readonly actionGetRevenueAttributionAllocation =
 		"partnercentral:GetRevenueAttributionAllocation";
 	/** [Read] partnercentral:GetRevenueAttributionAllocationsTask */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK =
+	static readonly actionGetRevenueAttributionAllocationsTask =
 		"partnercentral:GetRevenueAttributionAllocationsTask";
 	/** [Read] partnercentral:GetSellingSystemSettings */
-	static readonly GET_SELLING_SYSTEM_SETTINGS =
+	static readonly actionGetSellingSystemSettings =
 		"partnercentral:GetSellingSystemSettings";
 	/** [Read] partnercentral:GetVerification */
-	static readonly GET_VERIFICATION = "partnercentral:GetVerification";
+	static readonly actionGetVerification = "partnercentral:GetVerification";
 	/** [List] partnercentral:ListBenefitAllocations */
-	static readonly LIST_BENEFIT_ALLOCATIONS =
+	static readonly ListBenefitAllocations =
 		"partnercentral:ListBenefitAllocations";
 	/** [List] partnercentral:ListBenefitApplications */
-	static readonly LIST_BENEFIT_APPLICATIONS =
+	static readonly ListBenefitApplications =
 		"partnercentral:ListBenefitApplications";
 	/** [List] partnercentral:ListBenefits */
-	static readonly LIST_BENEFITS = "partnercentral:ListBenefits";
+	static readonly ListBenefits = "partnercentral:ListBenefits";
 	/** [List] partnercentral:ListBusinessPlans */
-	static readonly LIST_BUSINESS_PLANS = "partnercentral:ListBusinessPlans";
+	static readonly ListBusinessPlans = "partnercentral:ListBusinessPlans";
 	/** [List] partnercentral:ListChannelHandshakes */
-	static readonly LIST_CHANNEL_HANDSHAKES =
+	static readonly ListChannelHandshakes =
 		"partnercentral:ListChannelHandshakes";
 	/** [List] partnercentral:ListCollaborationChannels */
-	static readonly LIST_COLLABORATION_CHANNELS =
+	static readonly ListCollaborationChannels =
 		"partnercentral:ListCollaborationChannels";
 	/** [List] partnercentral:ListConnectionInvitations */
-	static readonly LIST_CONNECTION_INVITATIONS =
+	static readonly ListConnectionInvitations =
 		"partnercentral:ListConnectionInvitations";
 	/** [List] partnercentral:ListConnections */
-	static readonly LIST_CONNECTIONS = "partnercentral:ListConnections";
+	static readonly ListConnections = "partnercentral:ListConnections";
 	/** [List] partnercentral:ListEngagementByAcceptingInvitationTasks */
-	static readonly LIST_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASKS =
+	static readonly ListEngagementByAcceptingInvitationTasks =
 		"partnercentral:ListEngagementByAcceptingInvitationTasks";
 	/** [List] partnercentral:ListEngagementFromOpportunityTasks */
-	static readonly LIST_ENGAGEMENT_FROM_OPPORTUNITY_TASKS =
+	static readonly ListEngagementFromOpportunityTasks =
 		"partnercentral:ListEngagementFromOpportunityTasks";
 	/** [List] partnercentral:ListEngagementInvitations */
-	static readonly LIST_ENGAGEMENT_INVITATIONS =
+	static readonly ListEngagementInvitations =
 		"partnercentral:ListEngagementInvitations";
 	/** [Read] partnercentral:ListEngagementMembers */
-	static readonly LIST_ENGAGEMENT_MEMBERS =
+	static readonly ListEngagementMembers =
 		"partnercentral:ListEngagementMembers";
 	/** [Read] partnercentral:ListEngagementResourceAssociations */
-	static readonly LIST_ENGAGEMENT_RESOURCE_ASSOCIATIONS =
+	static readonly ListEngagementResourceAssociations =
 		"partnercentral:ListEngagementResourceAssociations";
 	/** [List] partnercentral:ListEngagements */
-	static readonly LIST_ENGAGEMENTS = "partnercentral:ListEngagements";
+	static readonly ListEngagements = "partnercentral:ListEngagements";
 	/** [List] partnercentral:ListMarketplaceRevenueShareAllocations */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARE_ALLOCATIONS =
+	static readonly ListMarketplaceRevenueShareAllocations =
 		"partnercentral:ListMarketplaceRevenueShareAllocations";
 	/** [List] partnercentral:ListMarketplaceRevenueShares */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARES =
+	static readonly ListMarketplaceRevenueShares =
 		"partnercentral:ListMarketplaceRevenueShares";
 	/** [List] partnercentral:ListOpportunities */
-	static readonly LIST_OPPORTUNITIES = "partnercentral:ListOpportunities";
+	static readonly ListOpportunities = "partnercentral:ListOpportunities";
 	/** [List] partnercentral:ListOpportunityFromEngagementTasks */
-	static readonly LIST_OPPORTUNITY_FROM_ENGAGEMENT_TASKS =
+	static readonly ListOpportunityFromEngagementTasks =
 		"partnercentral:ListOpportunityFromEngagementTasks";
 	/** [List] partnercentral:ListPartnerPaths */
-	static readonly LIST_PARTNER_PATHS = "partnercentral:ListPartnerPaths";
+	static readonly ListPartnerPaths = "partnercentral:ListPartnerPaths";
 	/** [List] partnercentral:ListPartners */
-	static readonly LIST_PARTNERS = "partnercentral:ListPartners";
+	static readonly ListPartners = "partnercentral:ListPartners";
 	/** [List] partnercentral:ListProgramManagementAccounts */
-	static readonly LIST_PROGRAM_MANAGEMENT_ACCOUNTS =
+	static readonly ListProgramManagementAccounts =
 		"partnercentral:ListProgramManagementAccounts";
 	/** [List] partnercentral:ListProspectingFromEngagementTasks */
-	static readonly LIST_PROSPECTING_FROM_ENGAGEMENT_TASKS =
+	static readonly ListProspectingFromEngagementTasks =
 		"partnercentral:ListProspectingFromEngagementTasks";
 	/** [List] partnercentral:ListRelationships */
-	static readonly LIST_RELATIONSHIPS = "partnercentral:ListRelationships";
+	static readonly ListRelationships = "partnercentral:ListRelationships";
 	/** [List] partnercentral:ListResourceSnapshotJobs */
-	static readonly LIST_RESOURCE_SNAPSHOT_JOBS =
+	static readonly ListResourceSnapshotJobs =
 		"partnercentral:ListResourceSnapshotJobs";
 	/** [List] partnercentral:ListResourceSnapshots */
-	static readonly LIST_RESOURCE_SNAPSHOTS =
+	static readonly ListResourceSnapshots =
 		"partnercentral:ListResourceSnapshots";
 	/** [List] partnercentral:ListRevenueAttributionAllocations */
-	static readonly LIST_REVENUE_ATTRIBUTION_ALLOCATIONS =
+	static readonly ListRevenueAttributionAllocations =
 		"partnercentral:ListRevenueAttributionAllocations";
 	/** [List] partnercentral:ListRevenueAttributions */
-	static readonly LIST_REVENUE_ATTRIBUTIONS =
+	static readonly ListRevenueAttributions =
 		"partnercentral:ListRevenueAttributions";
 	/** [List] partnercentral:ListSolutions */
-	static readonly LIST_SOLUTIONS = "partnercentral:ListSolutions";
+	static readonly ListSolutions = "partnercentral:ListSolutions";
 	/** [Read] partnercentral:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "partnercentral:ListTagsForResource";
+	static readonly ListTagsForResource = "partnercentral:ListTagsForResource";
 	/** [Write] partnercentral:PutAllianceLeadContact */
-	static readonly PUT_ALLIANCE_LEAD_CONTACT =
+	static readonly PutAllianceLeadContact =
 		"partnercentral:PutAllianceLeadContact";
 	/** [Write] partnercentral:PutBusinessPlan */
-	static readonly PUT_BUSINESS_PLAN = "partnercentral:PutBusinessPlan";
+	static readonly PutBusinessPlan = "partnercentral:PutBusinessPlan";
 	/** [Write] partnercentral:PutProfileVisibility */
-	static readonly PUT_PROFILE_VISIBILITY =
-		"partnercentral:PutProfileVisibility";
+	static readonly PutProfileVisibility = "partnercentral:PutProfileVisibility";
 	/** [Write] partnercentral:PutSellingSystemSettings */
-	static readonly PUT_SELLING_SYSTEM_SETTINGS =
+	static readonly PutSellingSystemSettings =
 		"partnercentral:PutSellingSystemSettings";
 	/** [Write] partnercentral:RecallBenefitApplication */
-	static readonly RECALL_BENEFIT_APPLICATION =
+	static readonly RecallBenefitApplication =
 		"partnercentral:RecallBenefitApplication";
 	/** [Write] partnercentral:RejectChannelHandshake */
-	static readonly REJECT_CHANNEL_HANDSHAKE =
+	static readonly RejectChannelHandshake =
 		"partnercentral:RejectChannelHandshake";
 	/** [Write] partnercentral:RejectConnectionInvitation */
-	static readonly REJECT_CONNECTION_INVITATION =
+	static readonly RejectConnectionInvitation =
 		"partnercentral:RejectConnectionInvitation";
 	/** [Write] partnercentral:RejectEngagementInvitation */
-	static readonly REJECT_ENGAGEMENT_INVITATION =
+	static readonly RejectEngagementInvitation =
 		"partnercentral:RejectEngagementInvitation";
 	/** [List] partnercentral:SearchPartnerProfiles */
-	static readonly SEARCH_PARTNER_PROFILES =
+	static readonly SearchPartnerProfiles =
 		"partnercentral:SearchPartnerProfiles";
 	/** [Write] partnercentral:SendEmailVerificationCode */
-	static readonly SEND_EMAIL_VERIFICATION_CODE =
+	static readonly SendEmailVerificationCode =
 		"partnercentral:SendEmailVerificationCode";
 	/** [Write] partnercentral:StartEngagementByAcceptingInvitationTask */
-	static readonly START_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASK =
+	static readonly StartEngagementByAcceptingInvitationTask =
 		"partnercentral:StartEngagementByAcceptingInvitationTask";
 	/** [Write] partnercentral:StartEngagementFromOpportunityTask */
-	static readonly START_ENGAGEMENT_FROM_OPPORTUNITY_TASK =
+	static readonly StartEngagementFromOpportunityTask =
 		"partnercentral:StartEngagementFromOpportunityTask";
 	/** [Write] partnercentral:StartOpportunityFromEngagementTask */
-	static readonly START_OPPORTUNITY_FROM_ENGAGEMENT_TASK =
+	static readonly StartOpportunityFromEngagementTask =
 		"partnercentral:StartOpportunityFromEngagementTask";
 	/** [Write] partnercentral:StartProfileUpdateTask */
-	static readonly START_PROFILE_UPDATE_TASK =
+	static readonly StartProfileUpdateTask =
 		"partnercentral:StartProfileUpdateTask";
 	/** [Write] partnercentral:StartProspectingFromEngagementTask */
-	static readonly START_PROSPECTING_FROM_ENGAGEMENT_TASK =
+	static readonly StartProspectingFromEngagementTask =
 		"partnercentral:StartProspectingFromEngagementTask";
 	/** [Write] partnercentral:StartQualificationsAssociationTask */
-	static readonly START_QUALIFICATIONS_ASSOCIATION_TASK =
+	static readonly StartQualificationsAssociationTask =
 		"partnercentral:StartQualificationsAssociationTask";
 	/** [Write] partnercentral:StartQualificationsDisassociationTask */
-	static readonly START_QUALIFICATIONS_DISASSOCIATION_TASK =
+	static readonly StartQualificationsDisassociationTask =
 		"partnercentral:StartQualificationsDisassociationTask";
 	/** [Write] partnercentral:StartResourceSnapshotJob */
-	static readonly START_RESOURCE_SNAPSHOT_JOB =
+	static readonly StartResourceSnapshotJob =
 		"partnercentral:StartResourceSnapshotJob";
 	/** [Write] partnercentral:StartRevenueAttributionAllocationsTask */
-	static readonly START_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK =
+	static readonly StartRevenueAttributionAllocationsTask =
 		"partnercentral:StartRevenueAttributionAllocationsTask";
 	/** [Write] partnercentral:StartVerification */
-	static readonly START_VERIFICATION = "partnercentral:StartVerification";
+	static readonly StartVerification = "partnercentral:StartVerification";
 	/** [Write] partnercentral:StopResourceSnapshotJob */
-	static readonly STOP_RESOURCE_SNAPSHOT_JOB =
+	static readonly StopResourceSnapshotJob =
 		"partnercentral:StopResourceSnapshotJob";
 	/** [Write] partnercentral:SubmitBenefitApplication */
-	static readonly SUBMIT_BENEFIT_APPLICATION =
+	static readonly SubmitBenefitApplication =
 		"partnercentral:SubmitBenefitApplication";
 	/** [Write] partnercentral:SubmitOpportunity */
-	static readonly SUBMIT_OPPORTUNITY = "partnercentral:SubmitOpportunity";
+	static readonly SubmitOpportunity = "partnercentral:SubmitOpportunity";
 	/** [Tagging] partnercentral:TagResource */
-	static readonly TAG_RESOURCE = "partnercentral:TagResource";
+	static readonly TagResource = "partnercentral:TagResource";
 	/** [Tagging] partnercentral:UntagResource */
-	static readonly UNTAG_RESOURCE = "partnercentral:UntagResource";
+	static readonly UntagResource = "partnercentral:UntagResource";
 	/** [Write] partnercentral:UpdateBenefitApplication */
-	static readonly UPDATE_BENEFIT_APPLICATION =
+	static readonly UpdateBenefitApplication =
 		"partnercentral:UpdateBenefitApplication";
 	/** [Write] partnercentral:UpdateConnectionPreferences */
-	static readonly UPDATE_CONNECTION_PREFERENCES =
+	static readonly UpdateConnectionPreferences =
 		"partnercentral:UpdateConnectionPreferences";
 	/** [Write] partnercentral:UpdateEngagementContext */
-	static readonly UPDATE_ENGAGEMENT_CONTEXT =
+	static readonly UpdateEngagementContext =
 		"partnercentral:UpdateEngagementContext";
 	/** [Write] partnercentral:UpdateMarketplaceRevenueShareAllocation */
-	static readonly UPDATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION =
+	static readonly UpdateMarketplaceRevenueShareAllocation =
 		"partnercentral:UpdateMarketplaceRevenueShareAllocation";
 	/** [Write] partnercentral:UpdateOpportunity */
-	static readonly UPDATE_OPPORTUNITY = "partnercentral:UpdateOpportunity";
+	static readonly UpdateOpportunity = "partnercentral:UpdateOpportunity";
 	/** [Write] partnercentral:UpdateProgramManagementAccount */
-	static readonly UPDATE_PROGRAM_MANAGEMENT_ACCOUNT =
+	static readonly UpdateProgramManagementAccount =
 		"partnercentral:UpdateProgramManagementAccount";
 	/** [Write] partnercentral:UpdateRelationship */
-	static readonly UPDATE_RELATIONSHIP = "partnercentral:UpdateRelationship";
+	static readonly UpdateRelationship = "partnercentral:UpdateRelationship";
 	/** [Write] partnercentral:UpdateRevenueAttribution */
-	static readonly UPDATE_REVENUE_ATTRIBUTION =
+	static readonly UpdateRevenueAttribution =
 		"partnercentral:UpdateRevenueAttribution";
 	/** [Write] partnercentral:UseSession */
-	static readonly USE_SESSION = "partnercentral:UseSession";
+	static readonly UseSession = "partnercentral:UseSession";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PartnercentralActions.GET_ALLIANCE_LEAD_CONTACT,
-		PartnercentralActions.GET_AWS_OPPORTUNITY_SUMMARY,
-		PartnercentralActions.GET_BENEFIT,
-		PartnercentralActions.GET_BENEFIT_ALLOCATION,
-		PartnercentralActions.GET_BENEFIT_APPLICATION,
-		PartnercentralActions.GET_BUSINESS_PLAN,
-		PartnercentralActions.GET_COLLABORATION_CHANNEL,
-		PartnercentralActions.GET_CONNECTION,
-		PartnercentralActions.GET_CONNECTION_INVITATION,
-		PartnercentralActions.GET_CONNECTION_PREFERENCES,
-		PartnercentralActions.GET_ENGAGEMENT,
-		PartnercentralActions.GET_ENGAGEMENT_INVITATION,
-		PartnercentralActions.GET_MARKETPLACE_REVENUE_SHARE,
-		PartnercentralActions.GET_MARKETPLACE_REVENUE_SHARE_ALLOCATION,
-		PartnercentralActions.GET_OPPORTUNITY,
-		PartnercentralActions.GET_PARTNER,
-		PartnercentralActions.GET_PARTNER_DASHBOARD,
-		PartnercentralActions.GET_PARTNER_PROFILE,
-		PartnercentralActions.GET_PROFILE_UPDATE_TASK,
-		PartnercentralActions.GET_PROFILE_VISIBILITY,
-		PartnercentralActions.GET_PROGRAM_MANAGEMENT_ACCOUNT,
-		PartnercentralActions.GET_PROSPECTING_FROM_ENGAGEMENT_TASK,
-		PartnercentralActions.GET_QUALIFICATIONS_ASSOCIATION_DETAILS,
-		PartnercentralActions.GET_QUALIFICATIONS_ASSOCIATION_TASK,
-		PartnercentralActions.GET_QUALIFICATIONS_DISASSOCIATION_TASK,
-		PartnercentralActions.GET_RELATIONSHIP,
-		PartnercentralActions.GET_RESOURCE_SNAPSHOT,
-		PartnercentralActions.GET_RESOURCE_SNAPSHOT_JOB,
-		PartnercentralActions.GET_REVENUE_ATTRIBUTION,
-		PartnercentralActions.GET_REVENUE_ATTRIBUTION_ALLOCATION,
-		PartnercentralActions.GET_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK,
-		PartnercentralActions.GET_SELLING_SYSTEM_SETTINGS,
-		PartnercentralActions.GET_VERIFICATION,
-		PartnercentralActions.LIST_ENGAGEMENT_MEMBERS,
-		PartnercentralActions.LIST_ENGAGEMENT_RESOURCE_ASSOCIATIONS,
-		PartnercentralActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		PartnercentralActions.actionGetAllianceLeadContact,
+		PartnercentralActions.actionGetAwsOpportunitySummary,
+		PartnercentralActions.actionGetBenefit,
+		PartnercentralActions.actionGetBenefitAllocation,
+		PartnercentralActions.actionGetBenefitApplication,
+		PartnercentralActions.actionGetBusinessPlan,
+		PartnercentralActions.actionGetCollaborationChannel,
+		PartnercentralActions.actionGetConnection,
+		PartnercentralActions.actionGetConnectionInvitation,
+		PartnercentralActions.actionGetConnectionPreferences,
+		PartnercentralActions.actionGetEngagement,
+		PartnercentralActions.actionGetEngagementInvitation,
+		PartnercentralActions.actionGetMarketplaceRevenueShare,
+		PartnercentralActions.actionGetMarketplaceRevenueShareAllocation,
+		PartnercentralActions.actionGetOpportunity,
+		PartnercentralActions.actionGetPartner,
+		PartnercentralActions.actionGetPartnerDashboard,
+		PartnercentralActions.actionGetPartnerProfile,
+		PartnercentralActions.actionGetProfileUpdateTask,
+		PartnercentralActions.actionGetProfileVisibility,
+		PartnercentralActions.actionGetProgramManagementAccount,
+		PartnercentralActions.actionGetProspectingFromEngagementTask,
+		PartnercentralActions.actionGetQualificationsAssociationDetails,
+		PartnercentralActions.actionGetQualificationsAssociationTask,
+		PartnercentralActions.actionGetQualificationsDisassociationTask,
+		PartnercentralActions.actionGetRelationship,
+		PartnercentralActions.actionGetResourceSnapshot,
+		PartnercentralActions.actionGetResourceSnapshotJob,
+		PartnercentralActions.actionGetRevenueAttribution,
+		PartnercentralActions.actionGetRevenueAttributionAllocation,
+		PartnercentralActions.actionGetRevenueAttributionAllocationsTask,
+		PartnercentralActions.actionGetSellingSystemSettings,
+		PartnercentralActions.actionGetVerification,
+		PartnercentralActions.ListEngagementMembers,
+		PartnercentralActions.ListEngagementResourceAssociations,
+		PartnercentralActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PartnercentralActions.ACCEPT_CHANNEL_HANDSHAKE,
-		PartnercentralActions.ACCEPT_CONNECTION_INVITATION,
-		PartnercentralActions.ACCEPT_ENGAGEMENT_INVITATION,
-		PartnercentralActions.AMEND_BENEFIT_APPLICATION,
-		PartnercentralActions.ASSIGN_OPPORTUNITY,
-		PartnercentralActions.ASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN,
-		PartnercentralActions.ASSOCIATE_BENEFIT_APPLICATION_RESOURCE,
-		PartnercentralActions.ASSOCIATE_OPPORTUNITY,
-		PartnercentralActions.CANCEL_BENEFIT_APPLICATION,
-		PartnercentralActions.CANCEL_CHANNEL_HANDSHAKE,
-		PartnercentralActions.CANCEL_CONNECTION,
-		PartnercentralActions.CANCEL_CONNECTION_INVITATION,
-		PartnercentralActions.CANCEL_PROFILE_UPDATE_TASK,
-		PartnercentralActions.CREATE_BENEFIT_APPLICATION,
-		PartnercentralActions.CREATE_BUSINESS_PLAN,
-		PartnercentralActions.CREATE_CHANNEL_HANDSHAKE,
-		PartnercentralActions.CREATE_COLLABORATION_CHANNEL_MEMBERS,
-		PartnercentralActions.CREATE_COLLABORATION_CHANNEL_REQUEST,
-		PartnercentralActions.CREATE_CONNECTION_INVITATION,
-		PartnercentralActions.CREATE_ENGAGEMENT,
-		PartnercentralActions.CREATE_ENGAGEMENT_CONTEXT,
-		PartnercentralActions.CREATE_ENGAGEMENT_INVITATION,
-		PartnercentralActions.CREATE_MARKETPLACE_REVENUE_SHARE,
-		PartnercentralActions.CREATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION,
-		PartnercentralActions.CREATE_OPPORTUNITY,
-		PartnercentralActions.CREATE_PARTNER,
-		PartnercentralActions.CREATE_PROGRAM_MANAGEMENT_ACCOUNT,
-		PartnercentralActions.CREATE_RELATIONSHIP,
-		PartnercentralActions.CREATE_RESOURCE_SNAPSHOT,
-		PartnercentralActions.CREATE_RESOURCE_SNAPSHOT_JOB,
-		PartnercentralActions.CREATE_REVENUE_ATTRIBUTION,
-		PartnercentralActions.DELETE_PROGRAM_MANAGEMENT_ACCOUNT,
-		PartnercentralActions.DELETE_RELATIONSHIP,
-		PartnercentralActions.DELETE_RESOURCE_SNAPSHOT_JOB,
-		PartnercentralActions.DISASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN,
-		PartnercentralActions.DISASSOCIATE_BENEFIT_APPLICATION_RESOURCE,
-		PartnercentralActions.DISASSOCIATE_OPPORTUNITY,
-		PartnercentralActions.ENROLL_IN_PARTNER_PATH,
-		PartnercentralActions.PUT_ALLIANCE_LEAD_CONTACT,
-		PartnercentralActions.PUT_BUSINESS_PLAN,
-		PartnercentralActions.PUT_PROFILE_VISIBILITY,
-		PartnercentralActions.PUT_SELLING_SYSTEM_SETTINGS,
-		PartnercentralActions.RECALL_BENEFIT_APPLICATION,
-		PartnercentralActions.REJECT_CHANNEL_HANDSHAKE,
-		PartnercentralActions.REJECT_CONNECTION_INVITATION,
-		PartnercentralActions.REJECT_ENGAGEMENT_INVITATION,
-		PartnercentralActions.SEND_EMAIL_VERIFICATION_CODE,
-		PartnercentralActions.START_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASK,
-		PartnercentralActions.START_ENGAGEMENT_FROM_OPPORTUNITY_TASK,
-		PartnercentralActions.START_OPPORTUNITY_FROM_ENGAGEMENT_TASK,
-		PartnercentralActions.START_PROFILE_UPDATE_TASK,
-		PartnercentralActions.START_PROSPECTING_FROM_ENGAGEMENT_TASK,
-		PartnercentralActions.START_QUALIFICATIONS_ASSOCIATION_TASK,
-		PartnercentralActions.START_QUALIFICATIONS_DISASSOCIATION_TASK,
-		PartnercentralActions.START_RESOURCE_SNAPSHOT_JOB,
-		PartnercentralActions.START_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK,
-		PartnercentralActions.START_VERIFICATION,
-		PartnercentralActions.STOP_RESOURCE_SNAPSHOT_JOB,
-		PartnercentralActions.SUBMIT_BENEFIT_APPLICATION,
-		PartnercentralActions.SUBMIT_OPPORTUNITY,
-		PartnercentralActions.UPDATE_BENEFIT_APPLICATION,
-		PartnercentralActions.UPDATE_CONNECTION_PREFERENCES,
-		PartnercentralActions.UPDATE_ENGAGEMENT_CONTEXT,
-		PartnercentralActions.UPDATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION,
-		PartnercentralActions.UPDATE_OPPORTUNITY,
-		PartnercentralActions.UPDATE_PROGRAM_MANAGEMENT_ACCOUNT,
-		PartnercentralActions.UPDATE_RELATIONSHIP,
-		PartnercentralActions.UPDATE_REVENUE_ATTRIBUTION,
-		PartnercentralActions.USE_SESSION,
+	static readonly AllWriteActions: string[] = [
+		PartnercentralActions.AcceptChannelHandshake,
+		PartnercentralActions.AcceptConnectionInvitation,
+		PartnercentralActions.AcceptEngagementInvitation,
+		PartnercentralActions.AmendBenefitApplication,
+		PartnercentralActions.AssignOpportunity,
+		PartnercentralActions.AssociateAwsTrainingCertificationEmailDomain,
+		PartnercentralActions.AssociateBenefitApplicationResource,
+		PartnercentralActions.AssociateOpportunity,
+		PartnercentralActions.CancelBenefitApplication,
+		PartnercentralActions.CancelChannelHandshake,
+		PartnercentralActions.CancelConnection,
+		PartnercentralActions.CancelConnectionInvitation,
+		PartnercentralActions.CancelProfileUpdateTask,
+		PartnercentralActions.CreateBenefitApplication,
+		PartnercentralActions.CreateBusinessPlan,
+		PartnercentralActions.CreateChannelHandshake,
+		PartnercentralActions.CreateCollaborationChannelMembers,
+		PartnercentralActions.CreateCollaborationChannelRequest,
+		PartnercentralActions.CreateConnectionInvitation,
+		PartnercentralActions.CreateEngagement,
+		PartnercentralActions.CreateEngagementContext,
+		PartnercentralActions.CreateEngagementInvitation,
+		PartnercentralActions.CreateMarketplaceRevenueShare,
+		PartnercentralActions.CreateMarketplaceRevenueShareAllocation,
+		PartnercentralActions.CreateOpportunity,
+		PartnercentralActions.CreatePartner,
+		PartnercentralActions.CreateProgramManagementAccount,
+		PartnercentralActions.CreateRelationship,
+		PartnercentralActions.CreateResourceSnapshot,
+		PartnercentralActions.CreateResourceSnapshotJob,
+		PartnercentralActions.CreateRevenueAttribution,
+		PartnercentralActions.DeleteProgramManagementAccount,
+		PartnercentralActions.DeleteRelationship,
+		PartnercentralActions.DeleteResourceSnapshotJob,
+		PartnercentralActions.DisassociateAwsTrainingCertificationEmailDomain,
+		PartnercentralActions.DisassociateBenefitApplicationResource,
+		PartnercentralActions.DisassociateOpportunity,
+		PartnercentralActions.EnrollInPartnerPath,
+		PartnercentralActions.PutAllianceLeadContact,
+		PartnercentralActions.PutBusinessPlan,
+		PartnercentralActions.PutProfileVisibility,
+		PartnercentralActions.PutSellingSystemSettings,
+		PartnercentralActions.RecallBenefitApplication,
+		PartnercentralActions.RejectChannelHandshake,
+		PartnercentralActions.RejectConnectionInvitation,
+		PartnercentralActions.RejectEngagementInvitation,
+		PartnercentralActions.SendEmailVerificationCode,
+		PartnercentralActions.StartEngagementByAcceptingInvitationTask,
+		PartnercentralActions.StartEngagementFromOpportunityTask,
+		PartnercentralActions.StartOpportunityFromEngagementTask,
+		PartnercentralActions.StartProfileUpdateTask,
+		PartnercentralActions.StartProspectingFromEngagementTask,
+		PartnercentralActions.StartQualificationsAssociationTask,
+		PartnercentralActions.StartQualificationsDisassociationTask,
+		PartnercentralActions.StartResourceSnapshotJob,
+		PartnercentralActions.StartRevenueAttributionAllocationsTask,
+		PartnercentralActions.StartVerification,
+		PartnercentralActions.StopResourceSnapshotJob,
+		PartnercentralActions.SubmitBenefitApplication,
+		PartnercentralActions.SubmitOpportunity,
+		PartnercentralActions.UpdateBenefitApplication,
+		PartnercentralActions.UpdateConnectionPreferences,
+		PartnercentralActions.UpdateEngagementContext,
+		PartnercentralActions.UpdateMarketplaceRevenueShareAllocation,
+		PartnercentralActions.UpdateOpportunity,
+		PartnercentralActions.UpdateProgramManagementAccount,
+		PartnercentralActions.UpdateRelationship,
+		PartnercentralActions.UpdateRevenueAttribution,
+		PartnercentralActions.UseSession,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PartnercentralActions.LIST_BENEFIT_ALLOCATIONS,
-		PartnercentralActions.LIST_BENEFIT_APPLICATIONS,
-		PartnercentralActions.LIST_BENEFITS,
-		PartnercentralActions.LIST_BUSINESS_PLANS,
-		PartnercentralActions.LIST_CHANNEL_HANDSHAKES,
-		PartnercentralActions.LIST_COLLABORATION_CHANNELS,
-		PartnercentralActions.LIST_CONNECTION_INVITATIONS,
-		PartnercentralActions.LIST_CONNECTIONS,
-		PartnercentralActions.LIST_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASKS,
-		PartnercentralActions.LIST_ENGAGEMENT_FROM_OPPORTUNITY_TASKS,
-		PartnercentralActions.LIST_ENGAGEMENT_INVITATIONS,
-		PartnercentralActions.LIST_ENGAGEMENTS,
-		PartnercentralActions.LIST_MARKETPLACE_REVENUE_SHARE_ALLOCATIONS,
-		PartnercentralActions.LIST_MARKETPLACE_REVENUE_SHARES,
-		PartnercentralActions.LIST_OPPORTUNITIES,
-		PartnercentralActions.LIST_OPPORTUNITY_FROM_ENGAGEMENT_TASKS,
-		PartnercentralActions.LIST_PARTNER_PATHS,
-		PartnercentralActions.LIST_PARTNERS,
-		PartnercentralActions.LIST_PROGRAM_MANAGEMENT_ACCOUNTS,
-		PartnercentralActions.LIST_PROSPECTING_FROM_ENGAGEMENT_TASKS,
-		PartnercentralActions.LIST_RELATIONSHIPS,
-		PartnercentralActions.LIST_RESOURCE_SNAPSHOT_JOBS,
-		PartnercentralActions.LIST_RESOURCE_SNAPSHOTS,
-		PartnercentralActions.LIST_REVENUE_ATTRIBUTION_ALLOCATIONS,
-		PartnercentralActions.LIST_REVENUE_ATTRIBUTIONS,
-		PartnercentralActions.LIST_SOLUTIONS,
-		PartnercentralActions.SEARCH_PARTNER_PROFILES,
+	static readonly AllListActions: string[] = [
+		PartnercentralActions.ListBenefitAllocations,
+		PartnercentralActions.ListBenefitApplications,
+		PartnercentralActions.ListBenefits,
+		PartnercentralActions.ListBusinessPlans,
+		PartnercentralActions.ListChannelHandshakes,
+		PartnercentralActions.ListCollaborationChannels,
+		PartnercentralActions.ListConnectionInvitations,
+		PartnercentralActions.ListConnections,
+		PartnercentralActions.ListEngagementByAcceptingInvitationTasks,
+		PartnercentralActions.ListEngagementFromOpportunityTasks,
+		PartnercentralActions.ListEngagementInvitations,
+		PartnercentralActions.ListEngagements,
+		PartnercentralActions.ListMarketplaceRevenueShareAllocations,
+		PartnercentralActions.ListMarketplaceRevenueShares,
+		PartnercentralActions.ListOpportunities,
+		PartnercentralActions.ListOpportunityFromEngagementTasks,
+		PartnercentralActions.ListPartnerPaths,
+		PartnercentralActions.ListPartners,
+		PartnercentralActions.ListProgramManagementAccounts,
+		PartnercentralActions.ListProspectingFromEngagementTasks,
+		PartnercentralActions.ListRelationships,
+		PartnercentralActions.ListResourceSnapshotJobs,
+		PartnercentralActions.ListResourceSnapshots,
+		PartnercentralActions.ListRevenueAttributionAllocations,
+		PartnercentralActions.ListRevenueAttributions,
+		PartnercentralActions.ListSolutions,
+		PartnercentralActions.SearchPartnerProfiles,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PartnercentralActions.TAG_RESOURCE,
-		PartnercentralActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PartnercentralActions.TagResource,
+		PartnercentralActions.UntagResource,
 	];
 }
 
-const BenefitArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/benefit/(?<identifier>[^:/?]+)$",
-);
-const BenefitAllocationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/benefit-allocation/(?<identifier>[^:/?]+)$",
-);
-const BenefitApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/benefit-application/(?<identifier>[^:/?]+)$",
-);
-const ChannelHandshakeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/channel-handshake/(?<identifier>[^:/?]+)$",
-);
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/connection/(?<identifier>[^:/?]+)$",
-);
-const ConnectionInvitationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/connection-invitation/(?<identifier>[^:/?]+)$",
-);
-const ConnectionPreferencesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/connection-preferences$",
-);
-const DashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/ReportingData/(?<tableId>[^:/?]+)/Dashboard/(?<dashboardId>[^:/?]+)$",
-);
-const EngagementArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/engagement/(?<identifier>[^:/?]+)$",
-);
-const MarketplaceRevenueShareArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/marketplace-revenue-share/(?<marketplaceProductId>[^:/?]+)$",
-);
-const OpportunityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/opportunity/(?<identifier>[^:/?]+)$",
-);
-const OpportunityFromEngagementTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/opportunity-from-engagement-task/(?<taskId>[^:/?]+)$",
-);
-const PartnerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/partner/(?<identifier>[^:/?]+)$",
-);
-const ProgramManagementAccountArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/program-management-account/(?<identifier>[^:/?]+)$",
-);
-const ProspectingFromEngagementTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/prospecting-from-engagement-task/(?<taskIdentifier>[^:/?]+)$",
-);
-const RelationshipArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/program-management-account/(?<programManagementAccountId>[^:/?]+)/relationship/(?<relationshipId>[^:/?]+)$",
-);
-const ResourceSnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/engagement/(?<engagementIdentifier>[^:/?]+)/resource/(?<resourceType>[^:/?]+)/(?<resourceIdentifier>[^:/?]+)/template/(?<templateIdentifier>[^:/?]+)/resource-snapshot/(?<snapshotRevision>[^:/?]+)$",
-);
-const RevenueAttributionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/revenue-attribution/(?<revenueAttributionId>[^:/?]+)$",
-);
-const SolutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/solution/(?<identifier>[^:/?]+)$",
-);
-const EngagementByAcceptingInvitationTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/engagement-by-accepting-invitation-task/(?<taskId>[^:/?]+)$",
-);
-const EngagementFromOpportunityTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/engagement-from-opportunity-task/(?<taskId>[^:/?]+)$",
-);
-const EngagementInvitationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog/(?<catalog>[^:/?]+)/engagement-invitation/(?<identifier>[^:/?]+)$",
-);
-const ResourceSnapshotJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalog>[^:/?]+)/resource-snapshot-job/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a Benefit ARN.
+ */
+export interface PartnercentralBenefitArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Benefit ARN.
+ */
+export interface PartnercentralBenefitArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a BenefitAllocation ARN.
+ */
+export interface PartnercentralBenefitAllocationArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BenefitAllocation ARN.
+ */
+export interface PartnercentralBenefitAllocationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a BenefitApplication ARN.
+ */
+export interface PartnercentralBenefitApplicationArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BenefitApplication ARN.
+ */
+export interface PartnercentralBenefitApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ChannelHandshake ARN.
+ */
+export interface PartnercentralChannelHandshakeArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ChannelHandshake ARN.
+ */
+export interface PartnercentralChannelHandshakeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a Connection ARN.
+ */
+export interface PartnercentralConnectionArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Connection ARN.
+ */
+export interface PartnercentralConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ConnectionInvitation ARN.
+ */
+export interface PartnercentralConnectionInvitationArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ConnectionInvitation ARN.
+ */
+export interface PartnercentralConnectionInvitationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ConnectionPreferences ARN.
+ */
+export interface PartnercentralConnectionPreferencesArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ConnectionPreferences ARN.
+ */
+export interface PartnercentralConnectionPreferencesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+}
+
+/**
+ * Properties for building a Dashboard ARN.
+ */
+export interface PartnercentralDashboardArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The TableId component of the ARN. */
+	readonly tableId: string;
+	/** The DashboardId component of the ARN. */
+	readonly dashboardId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dashboard ARN.
+ */
+export interface PartnercentralDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The TableId component. */
+	readonly tableId: string;
+	/** The DashboardId component. */
+	readonly dashboardId: string;
+}
+
+/**
+ * Properties for building a Engagement ARN.
+ */
+export interface PartnercentralEngagementArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Engagement ARN.
+ */
+export interface PartnercentralEngagementArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a MarketplaceRevenueShare ARN.
+ */
+export interface PartnercentralMarketplaceRevenueShareArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The MarketplaceProductId component of the ARN. */
+	readonly marketplaceProductId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MarketplaceRevenueShare ARN.
+ */
+export interface PartnercentralMarketplaceRevenueShareArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The MarketplaceProductId component. */
+	readonly marketplaceProductId: string;
+}
+
+/**
+ * Properties for building a Opportunity ARN.
+ */
+export interface PartnercentralOpportunityArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Opportunity ARN.
+ */
+export interface PartnercentralOpportunityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a OpportunityFromEngagementTask ARN.
+ */
+export interface PartnercentralOpportunityFromEngagementTaskArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a OpportunityFromEngagementTask ARN.
+ */
+export interface PartnercentralOpportunityFromEngagementTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+}
+
+/**
+ * Properties for building a Partner ARN.
+ */
+export interface PartnercentralPartnerArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Partner ARN.
+ */
+export interface PartnercentralPartnerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ProgramManagementAccount ARN.
+ */
+export interface PartnercentralProgramManagementAccountArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ProgramManagementAccount ARN.
+ */
+export interface PartnercentralProgramManagementAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ProspectingFromEngagementTask ARN.
+ */
+export interface PartnercentralProspectingFromEngagementTaskArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The TaskIdentifier component of the ARN. */
+	readonly taskIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ProspectingFromEngagementTask ARN.
+ */
+export interface PartnercentralProspectingFromEngagementTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The TaskIdentifier component. */
+	readonly taskIdentifier: string;
+}
+
+/**
+ * Properties for building a Relationship ARN.
+ */
+export interface PartnercentralRelationshipArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The ProgramManagementAccountId component of the ARN. */
+	readonly programManagementAccountId: string;
+	/** The RelationshipId component of the ARN. */
+	readonly relationshipId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Relationship ARN.
+ */
+export interface PartnercentralRelationshipArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The ProgramManagementAccountId component. */
+	readonly programManagementAccountId: string;
+	/** The RelationshipId component. */
+	readonly relationshipId: string;
+}
+
+/**
+ * Properties for building a ResourceSnapshot ARN.
+ */
+export interface PartnercentralResourceSnapshotArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The EngagementIdentifier component of the ARN. */
+	readonly engagementIdentifier: string;
+	/** The ResourceType component of the ARN. */
+	readonly resourceType: string;
+	/** The ResourceIdentifier component of the ARN. */
+	readonly resourceIdentifier: string;
+	/** The TemplateIdentifier component of the ARN. */
+	readonly templateIdentifier: string;
+	/** The SnapshotRevision component of the ARN. */
+	readonly snapshotRevision: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ResourceSnapshot ARN.
+ */
+export interface PartnercentralResourceSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The EngagementIdentifier component. */
+	readonly engagementIdentifier: string;
+	/** The ResourceType component. */
+	readonly resourceType: string;
+	/** The ResourceIdentifier component. */
+	readonly resourceIdentifier: string;
+	/** The TemplateIdentifier component. */
+	readonly templateIdentifier: string;
+	/** The SnapshotRevision component. */
+	readonly snapshotRevision: string;
+}
+
+/**
+ * Properties for building a RevenueAttribution ARN.
+ */
+export interface PartnercentralRevenueAttributionArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The RevenueAttributionId component of the ARN. */
+	readonly revenueAttributionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RevenueAttribution ARN.
+ */
+export interface PartnercentralRevenueAttributionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The RevenueAttributionId component. */
+	readonly revenueAttributionId: string;
+}
+
+/**
+ * Properties for building a Solution ARN.
+ */
+export interface PartnercentralSolutionArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Solution ARN.
+ */
+export interface PartnercentralSolutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a engagement-by-accepting-invitation-task ARN.
+ */
+export interface PartnercentralEngagementByAcceptingInvitationTaskArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a engagement-by-accepting-invitation-task ARN.
+ */
+export interface PartnercentralEngagementByAcceptingInvitationTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+}
+
+/**
+ * Properties for building a engagement-from-opportunity-task ARN.
+ */
+export interface PartnercentralEngagementFromOpportunityTaskArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a engagement-from-opportunity-task ARN.
+ */
+export interface PartnercentralEngagementFromOpportunityTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+}
+
+/**
+ * Properties for building a engagement-invitation ARN.
+ */
+export interface PartnercentralEngagementInvitationArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a engagement-invitation ARN.
+ */
+export interface PartnercentralEngagementInvitationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a resource-snapshot-job ARN.
+ */
+export interface PartnercentralResourceSnapshotJobArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a resource-snapshot-job ARN.
+ */
+export interface PartnercentralResourceSnapshotJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const BenefitArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/benefit\/(?<identifier>[^:/?]+)$/;
+const BenefitAllocationArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-allocation\/(?<identifier>[^:/?]+)$/;
+const BenefitApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-application\/(?<identifier>[^:/?]+)$/;
+const ChannelHandshakeArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/channel-handshake\/(?<identifier>[^:/?]+)$/;
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/connection\/(?<identifier>[^:/?]+)$/;
+const ConnectionInvitationArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/connection-invitation\/(?<identifier>[^:/?]+)$/;
+const ConnectionPreferencesArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/connection-preferences$/;
+const DashboardArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<tableId>[^:/?]+)\/Dashboard\/(?<dashboardId>[^:/?]+)$/;
+const EngagementArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement\/(?<identifier>[^:/?]+)$/;
+const MarketplaceRevenueShareArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/marketplace-revenue-share\/(?<marketplaceProductId>[^:/?]+)$/;
+const OpportunityArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/opportunity\/(?<identifier>[^:/?]+)$/;
+const OpportunityFromEngagementTaskArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/opportunity-from-engagement-task\/(?<taskId>[^:/?]+)$/;
+const PartnerArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/partner\/(?<identifier>[^:/?]+)$/;
+const ProgramManagementAccountArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/program-management-account\/(?<identifier>[^:/?]+)$/;
+const ProspectingFromEngagementTaskArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/prospecting-from-engagement-task\/(?<taskIdentifier>[^:/?]+)$/;
+const RelationshipArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/program-management-account\/(?<programManagementAccountId>[^:/?]+)\/relationship\/(?<relationshipId>[^:/?]+)$/;
+const ResourceSnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/engagement\/(?<engagementIdentifier>[^:/?]+)\/resource\/(?<resourceType>[^:/?]+)\/(?<resourceIdentifier>[^:/?]+)\/template\/(?<templateIdentifier>[^:/?]+)\/resource-snapshot\/(?<snapshotRevision>[^:/?]+)$/;
+const RevenueAttributionArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/revenue-attribution\/(?<revenueAttributionId>[^:/?]+)$/;
+const SolutionArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/solution\/(?<identifier>[^:/?]+)$/;
+const EngagementByAcceptingInvitationTaskArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement-by-accepting-invitation-task\/(?<taskId>[^:/?]+)$/;
+const EngagementFromOpportunityTaskArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement-from-opportunity-task\/(?<taskId>[^:/?]+)$/;
+const EngagementInvitationArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement-invitation\/(?<identifier>[^:/?]+)$/;
+const ResourceSnapshotJobArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/resource-snapshot-job\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for partnercentral resources.
@@ -603,18 +1333,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Benefit resource.
 	 */
-	static benefit(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static benefit(props: PartnercentralBenefitArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/benefit/${props.identifier}`;
 	}
 
@@ -629,13 +1348,7 @@ export class PartnercentralResources {
 	 * Parses a Benefit ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBenefitArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseBenefitArn(arn: string): PartnercentralBenefitArnComponents {
 		const match = BenefitArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Benefit ARN: ${arn}`);
@@ -652,18 +1365,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the BenefitAllocation resource.
 	 */
-	static benefitAllocation(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static benefitAllocation(
+		props: PartnercentralBenefitAllocationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/benefit-allocation/${props.identifier}`;
 	}
 
@@ -678,13 +1382,9 @@ export class PartnercentralResources {
 	 * Parses a BenefitAllocation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBenefitAllocationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseBenefitAllocationArn(
+		arn: string,
+	): PartnercentralBenefitAllocationArnComponents {
 		const match = BenefitAllocationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BenefitAllocation ARN: ${arn}`);
@@ -701,18 +1401,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the BenefitApplication resource.
 	 */
-	static benefitApplication(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static benefitApplication(
+		props: PartnercentralBenefitApplicationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/benefit-application/${props.identifier}`;
 	}
 
@@ -727,13 +1418,9 @@ export class PartnercentralResources {
 	 * Parses a BenefitApplication ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBenefitApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseBenefitApplicationArn(
+		arn: string,
+	): PartnercentralBenefitApplicationArnComponents {
 		const match = BenefitApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BenefitApplication ARN: ${arn}`);
@@ -750,18 +1437,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ChannelHandshake resource.
 	 */
-	static channelHandshake(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channelHandshake(
+		props: PartnercentralChannelHandshakeArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/channel-handshake/${props.identifier}`;
 	}
 
@@ -776,13 +1454,9 @@ export class PartnercentralResources {
 	 * Parses a ChannelHandshake ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelHandshakeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseChannelHandshakeArn(
+		arn: string,
+	): PartnercentralChannelHandshakeArnComponents {
 		const match = ChannelHandshakeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ChannelHandshake ARN: ${arn}`);
@@ -799,18 +1473,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Connection resource.
 	 */
-	static connection(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: PartnercentralConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/connection/${props.identifier}`;
 	}
 
@@ -825,13 +1488,9 @@ export class PartnercentralResources {
 	 * Parses a Connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseConnectionArn(
+		arn: string,
+	): PartnercentralConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Connection ARN: ${arn}`);
@@ -848,18 +1507,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ConnectionInvitation resource.
 	 */
-	static connectionInvitation(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectionInvitation(
+		props: PartnercentralConnectionInvitationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/connection-invitation/${props.identifier}`;
 	}
 
@@ -874,13 +1524,9 @@ export class PartnercentralResources {
 	 * Parses a ConnectionInvitation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionInvitationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseConnectionInvitationArn(
+		arn: string,
+	): PartnercentralConnectionInvitationArnComponents {
 		const match = ConnectionInvitationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ConnectionInvitation ARN: ${arn}`);
@@ -897,16 +1543,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ConnectionPreferences resource.
 	 */
-	static connectionPreferences(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectionPreferences(
+		props: PartnercentralConnectionPreferencesArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/connection-preferences`;
 	}
 
@@ -921,12 +1560,9 @@ export class PartnercentralResources {
 	 * Parses a ConnectionPreferences ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionPreferencesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-	} {
+	static parseConnectionPreferencesArn(
+		arn: string,
+	): PartnercentralConnectionPreferencesArnComponents {
 		const match = ConnectionPreferencesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ConnectionPreferences ARN: ${arn}`);
@@ -942,18 +1578,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Dashboard resource.
 	 */
-	static dashboard(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The TableId component of the ARN. */
-		readonly tableId: string;
-		/** The DashboardId component of the ARN. */
-		readonly dashboardId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboard(props: PartnercentralDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral::${props.account ?? "*"}:catalog/${props.catalog}/ReportingData/${props.tableId}/Dashboard/${props.dashboardId}`;
 	}
 
@@ -968,13 +1593,7 @@ export class PartnercentralResources {
 	 * Parses a Dashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardArn(arn: string): {
-		partition: string;
-		account: string;
-		catalog: string;
-		tableId: string;
-		dashboardId: string;
-	} {
+	static parseDashboardArn(arn: string): PartnercentralDashboardArnComponents {
 		const match = DashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Dashboard ARN: ${arn}`);
@@ -991,18 +1610,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Engagement resource.
 	 */
-	static engagement(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static engagement(props: PartnercentralEngagementArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/engagement/${props.identifier}`;
 	}
 
@@ -1017,13 +1625,9 @@ export class PartnercentralResources {
 	 * Parses a Engagement ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEngagementArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseEngagementArn(
+		arn: string,
+	): PartnercentralEngagementArnComponents {
 		const match = EngagementArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Engagement ARN: ${arn}`);
@@ -1040,18 +1644,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the MarketplaceRevenueShare resource.
 	 */
-	static marketplaceRevenueShare(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The MarketplaceProductId component of the ARN. */
-		readonly marketplaceProductId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static marketplaceRevenueShare(
+		props: PartnercentralMarketplaceRevenueShareArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/marketplace-revenue-share/${props.marketplaceProductId}`;
 	}
 
@@ -1066,13 +1661,9 @@ export class PartnercentralResources {
 	 * Parses a MarketplaceRevenueShare ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMarketplaceRevenueShareArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		marketplaceProductId: string;
-	} {
+	static parseMarketplaceRevenueShareArn(
+		arn: string,
+	): PartnercentralMarketplaceRevenueShareArnComponents {
 		const match = MarketplaceRevenueShareArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MarketplaceRevenueShare ARN: ${arn}`);
@@ -1089,18 +1680,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Opportunity resource.
 	 */
-	static opportunity(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static opportunity(props: PartnercentralOpportunityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/opportunity/${props.identifier}`;
 	}
 
@@ -1115,13 +1695,9 @@ export class PartnercentralResources {
 	 * Parses a Opportunity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOpportunityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseOpportunityArn(
+		arn: string,
+	): PartnercentralOpportunityArnComponents {
 		const match = OpportunityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Opportunity ARN: ${arn}`);
@@ -1138,18 +1714,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the OpportunityFromEngagementTask resource.
 	 */
-	static opportunityFromEngagementTask(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static opportunityFromEngagementTask(
+		props: PartnercentralOpportunityFromEngagementTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/opportunity-from-engagement-task/${props.taskId}`;
 	}
 
@@ -1164,13 +1731,9 @@ export class PartnercentralResources {
 	 * Parses a OpportunityFromEngagementTask ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOpportunityFromEngagementTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		taskId: string;
-	} {
+	static parseOpportunityFromEngagementTaskArn(
+		arn: string,
+	): PartnercentralOpportunityFromEngagementTaskArnComponents {
 		const match = OpportunityFromEngagementTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid OpportunityFromEngagementTask ARN: ${arn}`);
@@ -1187,18 +1750,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Partner resource.
 	 */
-	static partner(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static partner(props: PartnercentralPartnerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/partner/${props.identifier}`;
 	}
 
@@ -1213,13 +1765,7 @@ export class PartnercentralResources {
 	 * Parses a Partner ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePartnerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parsePartnerArn(arn: string): PartnercentralPartnerArnComponents {
 		const match = PartnerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Partner ARN: ${arn}`);
@@ -1236,18 +1782,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ProgramManagementAccount resource.
 	 */
-	static programManagementAccount(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static programManagementAccount(
+		props: PartnercentralProgramManagementAccountArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/program-management-account/${props.identifier}`;
 	}
 
@@ -1262,13 +1799,9 @@ export class PartnercentralResources {
 	 * Parses a ProgramManagementAccount ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProgramManagementAccountArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseProgramManagementAccountArn(
+		arn: string,
+	): PartnercentralProgramManagementAccountArnComponents {
 		const match = ProgramManagementAccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProgramManagementAccount ARN: ${arn}`);
@@ -1285,18 +1818,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ProspectingFromEngagementTask resource.
 	 */
-	static prospectingFromEngagementTask(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The TaskIdentifier component of the ARN. */
-		readonly taskIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static prospectingFromEngagementTask(
+		props: PartnercentralProspectingFromEngagementTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/prospecting-from-engagement-task/${props.taskIdentifier}`;
 	}
 
@@ -1311,13 +1835,9 @@ export class PartnercentralResources {
 	 * Parses a ProspectingFromEngagementTask ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProspectingFromEngagementTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		taskIdentifier: string;
-	} {
+	static parseProspectingFromEngagementTaskArn(
+		arn: string,
+	): PartnercentralProspectingFromEngagementTaskArnComponents {
 		const match = ProspectingFromEngagementTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProspectingFromEngagementTask ARN: ${arn}`);
@@ -1334,20 +1854,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Relationship resource.
 	 */
-	static relationship(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The ProgramManagementAccountId component of the ARN. */
-		readonly programManagementAccountId: string;
-		/** The RelationshipId component of the ARN. */
-		readonly relationshipId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static relationship(props: PartnercentralRelationshipArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/program-management-account/${props.programManagementAccountId}/relationship/${props.relationshipId}`;
 	}
 
@@ -1362,14 +1869,9 @@ export class PartnercentralResources {
 	 * Parses a Relationship ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRelationshipArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		programManagementAccountId: string;
-		relationshipId: string;
-	} {
+	static parseRelationshipArn(
+		arn: string,
+	): PartnercentralRelationshipArnComponents {
 		const match = RelationshipArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Relationship ARN: ${arn}`);
@@ -1387,26 +1889,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the ResourceSnapshot resource.
 	 */
-	static resourceSnapshot(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The EngagementIdentifier component of the ARN. */
-		readonly engagementIdentifier: string;
-		/** The ResourceType component of the ARN. */
-		readonly resourceType: string;
-		/** The ResourceIdentifier component of the ARN. */
-		readonly resourceIdentifier: string;
-		/** The TemplateIdentifier component of the ARN. */
-		readonly templateIdentifier: string;
-		/** The SnapshotRevision component of the ARN. */
-		readonly snapshotRevision: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resourceSnapshot(
+		props: PartnercentralResourceSnapshotArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/engagement/${props.engagementIdentifier}/resource/${props.resourceType}/${props.resourceIdentifier}/template/${props.templateIdentifier}/resource-snapshot/${props.snapshotRevision}`;
 	}
 
@@ -1421,17 +1906,9 @@ export class PartnercentralResources {
 	 * Parses a ResourceSnapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourceSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		engagementIdentifier: string;
-		resourceType: string;
-		resourceIdentifier: string;
-		templateIdentifier: string;
-		snapshotRevision: string;
-	} {
+	static parseResourceSnapshotArn(
+		arn: string,
+	): PartnercentralResourceSnapshotArnComponents {
 		const match = ResourceSnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ResourceSnapshot ARN: ${arn}`);
@@ -1452,18 +1929,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the RevenueAttribution resource.
 	 */
-	static revenueAttribution(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The RevenueAttributionId component of the ARN. */
-		readonly revenueAttributionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static revenueAttribution(
+		props: PartnercentralRevenueAttributionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/revenue-attribution/${props.revenueAttributionId}`;
 	}
 
@@ -1478,13 +1946,9 @@ export class PartnercentralResources {
 	 * Parses a RevenueAttribution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRevenueAttributionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		revenueAttributionId: string;
-	} {
+	static parseRevenueAttributionArn(
+		arn: string,
+	): PartnercentralRevenueAttributionArnComponents {
 		const match = RevenueAttributionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RevenueAttribution ARN: ${arn}`);
@@ -1501,18 +1965,7 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the Solution resource.
 	 */
-	static solution(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static solution(props: PartnercentralSolutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/solution/${props.identifier}`;
 	}
 
@@ -1527,13 +1980,7 @@ export class PartnercentralResources {
 	 * Parses a Solution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSolutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseSolutionArn(arn: string): PartnercentralSolutionArnComponents {
 		const match = SolutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Solution ARN: ${arn}`);
@@ -1550,18 +1997,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the engagement-by-accepting-invitation-task resource.
 	 */
-	static engagementByAcceptingInvitationTask(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static engagementByAcceptingInvitationTask(
+		props: PartnercentralEngagementByAcceptingInvitationTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/engagement-by-accepting-invitation-task/${props.taskId}`;
 	}
 
@@ -1576,13 +2014,9 @@ export class PartnercentralResources {
 	 * Parses a engagement-by-accepting-invitation-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEngagementByAcceptingInvitationTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		taskId: string;
-	} {
+	static parseEngagementByAcceptingInvitationTaskArn(
+		arn: string,
+	): PartnercentralEngagementByAcceptingInvitationTaskArnComponents {
 		const match = EngagementByAcceptingInvitationTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -1601,18 +2035,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the engagement-from-opportunity-task resource.
 	 */
-	static engagementFromOpportunityTask(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static engagementFromOpportunityTask(
+		props: PartnercentralEngagementFromOpportunityTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/engagement-from-opportunity-task/${props.taskId}`;
 	}
 
@@ -1627,13 +2052,9 @@ export class PartnercentralResources {
 	 * Parses a engagement-from-opportunity-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEngagementFromOpportunityTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		taskId: string;
-	} {
+	static parseEngagementFromOpportunityTaskArn(
+		arn: string,
+	): PartnercentralEngagementFromOpportunityTaskArnComponents {
 		const match = EngagementFromOpportunityTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid engagement-from-opportunity-task ARN: ${arn}`);
@@ -1650,18 +2071,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the engagement-invitation resource.
 	 */
-	static engagementInvitation(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static engagementInvitation(
+		props: PartnercentralEngagementInvitationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/engagement-invitation/${props.identifier}`;
 	}
 
@@ -1676,13 +2088,9 @@ export class PartnercentralResources {
 	 * Parses a engagement-invitation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEngagementInvitationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseEngagementInvitationArn(
+		arn: string,
+	): PartnercentralEngagementInvitationArnComponents {
 		const match = EngagementInvitationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid engagement-invitation ARN: ${arn}`);
@@ -1699,18 +2107,9 @@ export class PartnercentralResources {
 	/**
 	 * Builds an ARN for the resource-snapshot-job resource.
 	 */
-	static resourceSnapshotJob(props: {
-		/** The Catalog component of the ARN. */
-		readonly catalog: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resourceSnapshotJob(
+		props: PartnercentralResourceSnapshotJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/resource-snapshot-job/${props.identifier}`;
 	}
 
@@ -1725,13 +2124,9 @@ export class PartnercentralResources {
 	 * Parses a resource-snapshot-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourceSnapshotJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalog: string;
-		identifier: string;
-	} {
+	static parseResourceSnapshotJobArn(
+		arn: string,
+	): PartnercentralResourceSnapshotJobArnComponents {
 		const match = ResourceSnapshotJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid resource-snapshot-job ARN: ${arn}`);
@@ -1751,394 +2146,398 @@ export class PartnercentralResources {
  */
 export class PartnercentralOperations {
 	/** IAM actions required for the AcceptChannelHandshake API call. */
-	static readonly ACCEPT_CHANNEL_HANDSHAKE: string[] = [
+	static readonly AcceptChannelHandshake: string[] = [
 		"partnercentral:AcceptChannelHandshake",
 	];
 	/** IAM actions required for the AcceptConnectionInvitation API call. */
-	static readonly ACCEPT_CONNECTION_INVITATION: string[] = [
+	static readonly AcceptConnectionInvitation: string[] = [
 		"partnercentral:AcceptConnectionInvitation",
 	];
 	/** IAM actions required for the AcceptEngagementInvitation API call. */
-	static readonly ACCEPT_ENGAGEMENT_INVITATION: string[] = [
+	static readonly AcceptEngagementInvitation: string[] = [
 		"partnercentral:AcceptEngagementInvitation",
 	];
 	/** IAM actions required for the AmendBenefitApplication API call. */
-	static readonly AMEND_BENEFIT_APPLICATION: string[] = [
+	static readonly AmendBenefitApplication: string[] = [
 		"partnercentral:AmendBenefitApplication",
 	];
 	/** IAM actions required for the AssignOpportunity API call. */
-	static readonly ASSIGN_OPPORTUNITY: string[] = [
+	static readonly AssignOpportunity: string[] = [
 		"partnercentral:AssignOpportunity",
 	];
 	/** IAM actions required for the AssociateAwsTrainingCertificationEmailDomain API call. */
-	static readonly ASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN: string[] =
-		["partnercentral:AssociateAwsTrainingCertificationEmailDomain"];
+	static readonly AssociateAwsTrainingCertificationEmailDomain: string[] = [
+		"partnercentral:AssociateAwsTrainingCertificationEmailDomain",
+	];
 	/** IAM actions required for the AssociateBenefitApplicationResource API call. */
-	static readonly ASSOCIATE_BENEFIT_APPLICATION_RESOURCE: string[] = [
+	static readonly AssociateBenefitApplicationResource: string[] = [
 		"partnercentral:AssociateBenefitApplicationResource",
 	];
 	/** IAM actions required for the AssociateOpportunity API call. */
-	static readonly ASSOCIATE_OPPORTUNITY: string[] = [
+	static readonly AssociateOpportunity: string[] = [
 		"partnercentral:AssociateOpportunity",
 	];
 	/** IAM actions required for the CancelBenefitApplication API call. */
-	static readonly CANCEL_BENEFIT_APPLICATION: string[] = [
+	static readonly CancelBenefitApplication: string[] = [
 		"partnercentral:CancelBenefitApplication",
 	];
 	/** IAM actions required for the CancelChannelHandshake API call. */
-	static readonly CANCEL_CHANNEL_HANDSHAKE: string[] = [
+	static readonly CancelChannelHandshake: string[] = [
 		"partnercentral:CancelChannelHandshake",
 	];
 	/** IAM actions required for the CancelConnection API call. */
-	static readonly CANCEL_CONNECTION: string[] = [
+	static readonly CancelConnection: string[] = [
 		"partnercentral:CancelConnection",
 	];
 	/** IAM actions required for the CancelConnectionInvitation API call. */
-	static readonly CANCEL_CONNECTION_INVITATION: string[] = [
+	static readonly CancelConnectionInvitation: string[] = [
 		"partnercentral:CancelConnectionInvitation",
 	];
 	/** IAM actions required for the CancelProfileUpdateTask API call. */
-	static readonly CANCEL_PROFILE_UPDATE_TASK: string[] = [
+	static readonly CancelProfileUpdateTask: string[] = [
 		"partnercentral:CancelProfileUpdateTask",
 	];
 	/** IAM actions required for the CreateBenefitApplication API call. */
-	static readonly CREATE_BENEFIT_APPLICATION: string[] = [
+	static readonly CreateBenefitApplication: string[] = [
 		"partnercentral:CreateBenefitApplication",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateChannelHandshake API call. */
-	static readonly CREATE_CHANNEL_HANDSHAKE: string[] = [
+	static readonly CreateChannelHandshake: string[] = [
 		"partnercentral:CreateChannelHandshake",
 		"partnercentral:GetProgramManagementAccount",
 		"partnercentral:GetRelationship",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateConnectionInvitation API call. */
-	static readonly CREATE_CONNECTION_INVITATION: string[] = [
+	static readonly CreateConnectionInvitation: string[] = [
 		"partnercentral:CreateConnectionInvitation",
 	];
 	/** IAM actions required for the CreateEngagement API call. */
-	static readonly CREATE_ENGAGEMENT: string[] = [
+	static readonly CreateEngagement: string[] = [
 		"partnercentral:CreateEngagement",
 	];
 	/** IAM actions required for the CreateEngagementContext API call. */
-	static readonly CREATE_ENGAGEMENT_CONTEXT: string[] = [
+	static readonly CreateEngagementContext: string[] = [
 		"partnercentral:CreateEngagementContext",
 		"partnercentral:GetEngagement",
 	];
 	/** IAM actions required for the CreateEngagementInvitation API call. */
-	static readonly CREATE_ENGAGEMENT_INVITATION: string[] = [
+	static readonly CreateEngagementInvitation: string[] = [
 		"partnercentral:CreateEngagementInvitation",
 		"partnercentral:GetEngagement",
 	];
 	/** IAM actions required for the CreateMarketplaceRevenueShare API call. */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE: string[] = [
+	static readonly CreateMarketplaceRevenueShare: string[] = [
 		"partnercentral:CreateMarketplaceRevenueShare",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateMarketplaceRevenueShareAllocation API call. */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION: string[] = [
+	static readonly CreateMarketplaceRevenueShareAllocation: string[] = [
 		"partnercentral:CreateMarketplaceRevenueShareAllocation",
 	];
 	/** IAM actions required for the CreateOpportunity API call. */
-	static readonly CREATE_OPPORTUNITY: string[] = [
+	static readonly CreateOpportunity: string[] = [
 		"partnercentral:CreateOpportunity",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreatePartner API call. */
-	static readonly CREATE_PARTNER: string[] = [
+	static readonly CreatePartner: string[] = [
 		"partnercentral:CreatePartner",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateProgramManagementAccount API call. */
-	static readonly CREATE_PROGRAM_MANAGEMENT_ACCOUNT: string[] = [
+	static readonly CreateProgramManagementAccount: string[] = [
 		"partnercentral:CreateProgramManagementAccount",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateRelationship API call. */
-	static readonly CREATE_RELATIONSHIP: string[] = [
+	static readonly CreateRelationship: string[] = [
 		"partnercentral:CreateRelationship",
 		"partnercentral:GetProgramManagementAccount",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateResourceSnapshot API call. */
-	static readonly CREATE_RESOURCE_SNAPSHOT: string[] = [
+	static readonly CreateResourceSnapshot: string[] = [
 		"partnercentral:CreateResourceSnapshot",
 		"partnercentral:GetAwsOpportunitySummary",
 		"partnercentral:GetOpportunity",
 	];
 	/** IAM actions required for the CreateResourceSnapshotJob API call. */
-	static readonly CREATE_RESOURCE_SNAPSHOT_JOB: string[] = [
+	static readonly CreateResourceSnapshotJob: string[] = [
 		"partnercentral:CreateResourceSnapshot",
 		"partnercentral:CreateResourceSnapshotJob",
 		"partnercentral:GetOpportunity",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateRevenueAttribution API call. */
-	static readonly CREATE_REVENUE_ATTRIBUTION: string[] = [
+	static readonly CreateRevenueAttribution: string[] = [
 		"partnercentral:CreateRevenueAttribution",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the DeleteProgramManagementAccount API call. */
-	static readonly DELETE_PROGRAM_MANAGEMENT_ACCOUNT: string[] = [
+	static readonly DeleteProgramManagementAccount: string[] = [
 		"partnercentral:DeleteProgramManagementAccount",
 	];
 	/** IAM actions required for the DeleteRelationship API call. */
-	static readonly DELETE_RELATIONSHIP: string[] = [
+	static readonly DeleteRelationship: string[] = [
 		"partnercentral:DeleteRelationship",
 	];
 	/** IAM actions required for the DeleteResourceSnapshotJob API call. */
-	static readonly DELETE_RESOURCE_SNAPSHOT_JOB: string[] = [
+	static readonly DeleteResourceSnapshotJob: string[] = [
 		"partnercentral:DeleteResourceSnapshotJob",
 	];
 	/** IAM actions required for the DisassociateAwsTrainingCertificationEmailDomain API call. */
-	static readonly DISASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN: string[] =
-		["partnercentral:DisassociateAwsTrainingCertificationEmailDomain"];
+	static readonly DisassociateAwsTrainingCertificationEmailDomain: string[] = [
+		"partnercentral:DisassociateAwsTrainingCertificationEmailDomain",
+	];
 	/** IAM actions required for the DisassociateBenefitApplicationResource API call. */
-	static readonly DISASSOCIATE_BENEFIT_APPLICATION_RESOURCE: string[] = [
+	static readonly DisassociateBenefitApplicationResource: string[] = [
 		"partnercentral:DisassociateBenefitApplicationResource",
 	];
 	/** IAM actions required for the DisassociateOpportunity API call. */
-	static readonly DISASSOCIATE_OPPORTUNITY: string[] = [
+	static readonly DisassociateOpportunity: string[] = [
 		"partnercentral:DisassociateOpportunity",
 	];
 	/** IAM actions required for the GetAllianceLeadContact API call. */
-	static readonly GET_ALLIANCE_LEAD_CONTACT: string[] = [
+	static readonly opGetAllianceLeadContact: string[] = [
 		"partnercentral:GetAllianceLeadContact",
 	];
 	/** IAM actions required for the GetAwsOpportunitySummary API call. */
-	static readonly GET_AWS_OPPORTUNITY_SUMMARY: string[] = [
+	static readonly opGetAwsOpportunitySummary: string[] = [
 		"partnercentral:GetAwsOpportunitySummary",
 	];
 	/** IAM actions required for the GetBenefit API call. */
-	static readonly GET_BENEFIT: string[] = ["partnercentral:GetBenefit"];
+	static readonly opGetBenefit: string[] = ["partnercentral:GetBenefit"];
 	/** IAM actions required for the GetBenefitAllocation API call. */
-	static readonly GET_BENEFIT_ALLOCATION: string[] = [
+	static readonly opGetBenefitAllocation: string[] = [
 		"partnercentral:GetBenefitAllocation",
 	];
 	/** IAM actions required for the GetBenefitApplication API call. */
-	static readonly GET_BENEFIT_APPLICATION: string[] = [
+	static readonly opGetBenefitApplication: string[] = [
 		"partnercentral:GetBenefitApplication",
 		"partnercentral:ListTagsForResource",
 	];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = ["partnercentral:GetConnection"];
+	static readonly opGetConnection: string[] = ["partnercentral:GetConnection"];
 	/** IAM actions required for the GetConnectionInvitation API call. */
-	static readonly GET_CONNECTION_INVITATION: string[] = [
+	static readonly opGetConnectionInvitation: string[] = [
 		"partnercentral:GetConnectionInvitation",
 	];
 	/** IAM actions required for the GetConnectionPreferences API call. */
-	static readonly GET_CONNECTION_PREFERENCES: string[] = [
+	static readonly opGetConnectionPreferences: string[] = [
 		"partnercentral:GetConnectionPreferences",
 	];
 	/** IAM actions required for the GetEngagement API call. */
-	static readonly GET_ENGAGEMENT: string[] = ["partnercentral:GetEngagement"];
+	static readonly opGetEngagement: string[] = ["partnercentral:GetEngagement"];
 	/** IAM actions required for the GetEngagementInvitation API call. */
-	static readonly GET_ENGAGEMENT_INVITATION: string[] = [
+	static readonly opGetEngagementInvitation: string[] = [
 		"partnercentral:GetEngagementInvitation",
 	];
 	/** IAM actions required for the GetMarketplaceRevenueShare API call. */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE: string[] = [
+	static readonly opGetMarketplaceRevenueShare: string[] = [
 		"partnercentral:GetMarketplaceRevenueShare",
 	];
 	/** IAM actions required for the GetMarketplaceRevenueShareAllocation API call. */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE_ALLOCATION: string[] = [
+	static readonly opGetMarketplaceRevenueShareAllocation: string[] = [
 		"partnercentral:GetMarketplaceRevenueShareAllocation",
 	];
 	/** IAM actions required for the GetOpportunity API call. */
-	static readonly GET_OPPORTUNITY: string[] = ["partnercentral:GetOpportunity"];
+	static readonly opGetOpportunity: string[] = [
+		"partnercentral:GetOpportunity",
+	];
 	/** IAM actions required for the GetPartner API call. */
-	static readonly GET_PARTNER: string[] = ["partnercentral:GetPartner"];
+	static readonly opGetPartner: string[] = ["partnercentral:GetPartner"];
 	/** IAM actions required for the GetProfileUpdateTask API call. */
-	static readonly GET_PROFILE_UPDATE_TASK: string[] = [
+	static readonly opGetProfileUpdateTask: string[] = [
 		"partnercentral:GetProfileUpdateTask",
 	];
 	/** IAM actions required for the GetProfileVisibility API call. */
-	static readonly GET_PROFILE_VISIBILITY: string[] = [
+	static readonly opGetProfileVisibility: string[] = [
 		"partnercentral:GetProfileVisibility",
 	];
 	/** IAM actions required for the GetProspectingFromEngagementTask API call. */
-	static readonly GET_PROSPECTING_FROM_ENGAGEMENT_TASK: string[] = [
+	static readonly opGetProspectingFromEngagementTask: string[] = [
 		"partnercentral:GetProspectingFromEngagementTask",
 	];
 	/** IAM actions required for the GetQualificationsAssociationDetails API call. */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_DETAILS: string[] = [
+	static readonly opGetQualificationsAssociationDetails: string[] = [
 		"partnercentral:GetQualificationsAssociationDetails",
 	];
 	/** IAM actions required for the GetQualificationsAssociationTask API call. */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_TASK: string[] = [
+	static readonly opGetQualificationsAssociationTask: string[] = [
 		"partnercentral:GetQualificationsAssociationTask",
 	];
 	/** IAM actions required for the GetQualificationsDisassociationTask API call. */
-	static readonly GET_QUALIFICATIONS_DISASSOCIATION_TASK: string[] = [
+	static readonly opGetQualificationsDisassociationTask: string[] = [
 		"partnercentral:GetQualificationsDisassociationTask",
 	];
 	/** IAM actions required for the GetRelationship API call. */
-	static readonly GET_RELATIONSHIP: string[] = [
+	static readonly opGetRelationship: string[] = [
 		"partnercentral:GetRelationship",
 	];
 	/** IAM actions required for the GetResourceSnapshot API call. */
-	static readonly GET_RESOURCE_SNAPSHOT: string[] = [
+	static readonly opGetResourceSnapshot: string[] = [
 		"partnercentral:GetResourceSnapshot",
 	];
 	/** IAM actions required for the GetResourceSnapshotJob API call. */
-	static readonly GET_RESOURCE_SNAPSHOT_JOB: string[] = [
+	static readonly opGetResourceSnapshotJob: string[] = [
 		"partnercentral:GetResourceSnapshotJob",
 	];
 	/** IAM actions required for the GetRevenueAttribution API call. */
-	static readonly GET_REVENUE_ATTRIBUTION: string[] = [
+	static readonly opGetRevenueAttribution: string[] = [
 		"partnercentral:GetRevenueAttribution",
 	];
 	/** IAM actions required for the GetRevenueAttributionAllocation API call. */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATION: string[] = [
+	static readonly opGetRevenueAttributionAllocation: string[] = [
 		"partnercentral:GetRevenueAttributionAllocation",
 	];
 	/** IAM actions required for the GetRevenueAttributionAllocationsTask API call. */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK: string[] = [
+	static readonly opGetRevenueAttributionAllocationsTask: string[] = [
 		"partnercentral:GetRevenueAttributionAllocationsTask",
 	];
 	/** IAM actions required for the GetSellingSystemSettings API call. */
-	static readonly GET_SELLING_SYSTEM_SETTINGS: string[] = [
+	static readonly opGetSellingSystemSettings: string[] = [
 		"partnercentral:GetSellingSystemSettings",
 	];
 	/** IAM actions required for the GetVerification API call. */
-	static readonly GET_VERIFICATION: string[] = [
+	static readonly opGetVerification: string[] = [
 		"partnercentral:GetVerification",
 	];
 	/** IAM actions required for the ListBenefitAllocations API call. */
-	static readonly LIST_BENEFIT_ALLOCATIONS: string[] = [
+	static readonly ListBenefitAllocations: string[] = [
 		"partnercentral:ListBenefitAllocations",
 	];
 	/** IAM actions required for the ListBenefitApplications API call. */
-	static readonly LIST_BENEFIT_APPLICATIONS: string[] = [
+	static readonly ListBenefitApplications: string[] = [
 		"partnercentral:ListBenefitApplications",
 	];
 	/** IAM actions required for the ListBenefits API call. */
-	static readonly LIST_BENEFITS: string[] = ["partnercentral:ListBenefits"];
+	static readonly ListBenefits: string[] = ["partnercentral:ListBenefits"];
 	/** IAM actions required for the ListChannelHandshakes API call. */
-	static readonly LIST_CHANNEL_HANDSHAKES: string[] = [
+	static readonly ListChannelHandshakes: string[] = [
 		"partnercentral:ListChannelHandshakes",
 	];
 	/** IAM actions required for the ListConnectionInvitations API call. */
-	static readonly LIST_CONNECTION_INVITATIONS: string[] = [
+	static readonly ListConnectionInvitations: string[] = [
 		"partnercentral:ListConnectionInvitations",
 	];
 	/** IAM actions required for the ListConnections API call. */
-	static readonly LIST_CONNECTIONS: string[] = [
+	static readonly ListConnections: string[] = [
 		"partnercentral:ListConnections",
 	];
 	/** IAM actions required for the ListEngagementByAcceptingInvitationTasks API call. */
-	static readonly LIST_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASKS: string[] = [
+	static readonly ListEngagementByAcceptingInvitationTasks: string[] = [
 		"partnercentral:ListEngagementByAcceptingInvitationTasks",
 	];
 	/** IAM actions required for the ListEngagementFromOpportunityTasks API call. */
-	static readonly LIST_ENGAGEMENT_FROM_OPPORTUNITY_TASKS: string[] = [
+	static readonly ListEngagementFromOpportunityTasks: string[] = [
 		"partnercentral:ListEngagementFromOpportunityTasks",
 	];
 	/** IAM actions required for the ListEngagementInvitations API call. */
-	static readonly LIST_ENGAGEMENT_INVITATIONS: string[] = [
+	static readonly ListEngagementInvitations: string[] = [
 		"partnercentral:ListEngagementInvitations",
 	];
 	/** IAM actions required for the ListEngagementMembers API call. */
-	static readonly LIST_ENGAGEMENT_MEMBERS: string[] = [
+	static readonly ListEngagementMembers: string[] = [
 		"partnercentral:ListEngagementMembers",
 	];
 	/** IAM actions required for the ListEngagementResourceAssociations API call. */
-	static readonly LIST_ENGAGEMENT_RESOURCE_ASSOCIATIONS: string[] = [
+	static readonly ListEngagementResourceAssociations: string[] = [
 		"partnercentral:ListEngagementResourceAssociations",
 	];
 	/** IAM actions required for the ListEngagements API call. */
-	static readonly LIST_ENGAGEMENTS: string[] = [
+	static readonly ListEngagements: string[] = [
 		"partnercentral:ListEngagements",
 	];
 	/** IAM actions required for the ListMarketplaceRevenueShareAllocations API call. */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARE_ALLOCATIONS: string[] = [
+	static readonly ListMarketplaceRevenueShareAllocations: string[] = [
 		"partnercentral:ListMarketplaceRevenueShareAllocations",
 	];
 	/** IAM actions required for the ListMarketplaceRevenueShares API call. */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARES: string[] = [
+	static readonly ListMarketplaceRevenueShares: string[] = [
 		"partnercentral:ListMarketplaceRevenueShares",
 	];
 	/** IAM actions required for the ListOpportunities API call. */
-	static readonly LIST_OPPORTUNITIES: string[] = [
+	static readonly ListOpportunities: string[] = [
 		"partnercentral:ListOpportunities",
 	];
 	/** IAM actions required for the ListOpportunityFromEngagementTasks API call. */
-	static readonly LIST_OPPORTUNITY_FROM_ENGAGEMENT_TASKS: string[] = [
+	static readonly ListOpportunityFromEngagementTasks: string[] = [
 		"partnercentral:ListEngagementFromOpportunityTasks",
 		"partnercentral:ListOpportunityFromEngagementTasks",
 	];
 	/** IAM actions required for the ListPartners API call. */
-	static readonly LIST_PARTNERS: string[] = ["partnercentral:ListPartners"];
+	static readonly ListPartners: string[] = ["partnercentral:ListPartners"];
 	/** IAM actions required for the ListProgramManagementAccounts API call. */
-	static readonly LIST_PROGRAM_MANAGEMENT_ACCOUNTS: string[] = [
+	static readonly ListProgramManagementAccounts: string[] = [
 		"partnercentral:ListProgramManagementAccounts",
 	];
 	/** IAM actions required for the ListProspectingFromEngagementTasks API call. */
-	static readonly LIST_PROSPECTING_FROM_ENGAGEMENT_TASKS: string[] = [
+	static readonly ListProspectingFromEngagementTasks: string[] = [
 		"partnercentral:ListProspectingFromEngagementTasks",
 	];
 	/** IAM actions required for the ListRelationships API call. */
-	static readonly LIST_RELATIONSHIPS: string[] = [
+	static readonly ListRelationships: string[] = [
 		"partnercentral:ListRelationships",
 	];
 	/** IAM actions required for the ListResourceSnapshotJobs API call. */
-	static readonly LIST_RESOURCE_SNAPSHOT_JOBS: string[] = [
+	static readonly ListResourceSnapshotJobs: string[] = [
 		"partnercentral:ListResourceSnapshotJobs",
 	];
 	/** IAM actions required for the ListResourceSnapshots API call. */
-	static readonly LIST_RESOURCE_SNAPSHOTS: string[] = [
+	static readonly ListResourceSnapshots: string[] = [
 		"partnercentral:ListResourceSnapshots",
 	];
 	/** IAM actions required for the ListRevenueAttributionAllocations API call. */
-	static readonly LIST_REVENUE_ATTRIBUTION_ALLOCATIONS: string[] = [
+	static readonly ListRevenueAttributionAllocations: string[] = [
 		"partnercentral:ListRevenueAttributionAllocations",
 	];
 	/** IAM actions required for the ListRevenueAttributions API call. */
-	static readonly LIST_REVENUE_ATTRIBUTIONS: string[] = [
+	static readonly ListRevenueAttributions: string[] = [
 		"partnercentral:ListRevenueAttributions",
 	];
 	/** IAM actions required for the ListSolutions API call. */
-	static readonly LIST_SOLUTIONS: string[] = ["partnercentral:ListSolutions"];
+	static readonly ListSolutions: string[] = ["partnercentral:ListSolutions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"partnercentral:ListTagsForResource",
 	];
 	/** IAM actions required for the PutAllianceLeadContact API call. */
-	static readonly PUT_ALLIANCE_LEAD_CONTACT: string[] = [
+	static readonly PutAllianceLeadContact: string[] = [
 		"partnercentral:PutAllianceLeadContact",
 	];
 	/** IAM actions required for the PutProfileVisibility API call. */
-	static readonly PUT_PROFILE_VISIBILITY: string[] = [
+	static readonly PutProfileVisibility: string[] = [
 		"partnercentral:PutProfileVisibility",
 	];
 	/** IAM actions required for the PutSellingSystemSettings API call. */
-	static readonly PUT_SELLING_SYSTEM_SETTINGS: string[] = [
+	static readonly PutSellingSystemSettings: string[] = [
 		"iam:PassRole",
 		"partnercentral:PutSellingSystemSettings",
 	];
 	/** IAM actions required for the RecallBenefitApplication API call. */
-	static readonly RECALL_BENEFIT_APPLICATION: string[] = [
+	static readonly RecallBenefitApplication: string[] = [
 		"partnercentral:RecallBenefitApplication",
 	];
 	/** IAM actions required for the RejectChannelHandshake API call. */
-	static readonly REJECT_CHANNEL_HANDSHAKE: string[] = [
+	static readonly RejectChannelHandshake: string[] = [
 		"partnercentral:RejectChannelHandshake",
 	];
 	/** IAM actions required for the RejectConnectionInvitation API call. */
-	static readonly REJECT_CONNECTION_INVITATION: string[] = [
+	static readonly RejectConnectionInvitation: string[] = [
 		"partnercentral:RejectConnectionInvitation",
 	];
 	/** IAM actions required for the RejectEngagementInvitation API call. */
-	static readonly REJECT_ENGAGEMENT_INVITATION: string[] = [
+	static readonly RejectEngagementInvitation: string[] = [
 		"partnercentral:RejectEngagementInvitation",
 	];
 	/** IAM actions required for the SendEmailVerificationCode API call. */
-	static readonly SEND_EMAIL_VERIFICATION_CODE: string[] = [
+	static readonly SendEmailVerificationCode: string[] = [
 		"partnercentral:SendEmailVerificationCode",
 	];
 	/** IAM actions required for the StartEngagementByAcceptingInvitationTask API call. */
-	static readonly START_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASK: string[] = [
+	static readonly StartEngagementByAcceptingInvitationTask: string[] = [
 		"partnercentral:AcceptEngagementInvitation",
 		"partnercentral:CreateOpportunity",
 		"partnercentral:CreateResourceSnapshot",
@@ -2151,7 +2550,7 @@ export class PartnercentralOperations {
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the StartEngagementFromOpportunityTask API call. */
-	static readonly START_ENGAGEMENT_FROM_OPPORTUNITY_TASK: string[] = [
+	static readonly StartEngagementFromOpportunityTask: string[] = [
 		"partnercentral:CreateEngagement",
 		"partnercentral:CreateResourceSnapshot",
 		"partnercentral:CreateResourceSnapshotJob",
@@ -2162,7 +2561,7 @@ export class PartnercentralOperations {
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the StartOpportunityFromEngagementTask API call. */
-	static readonly START_OPPORTUNITY_FROM_ENGAGEMENT_TASK: string[] = [
+	static readonly StartOpportunityFromEngagementTask: string[] = [
 		"partnercentral:CreateOpportunity",
 		"partnercentral:CreateResourceSnapshot",
 		"partnercentral:CreateResourceSnapshotJob",
@@ -2173,80 +2572,80 @@ export class PartnercentralOperations {
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the StartProfileUpdateTask API call. */
-	static readonly START_PROFILE_UPDATE_TASK: string[] = [
+	static readonly StartProfileUpdateTask: string[] = [
 		"partnercentral:StartProfileUpdateTask",
 	];
 	/** IAM actions required for the StartProspectingFromEngagementTask API call. */
-	static readonly START_PROSPECTING_FROM_ENGAGEMENT_TASK: string[] = [
+	static readonly StartProspectingFromEngagementTask: string[] = [
 		"partnercentral:StartProspectingFromEngagementTask",
 	];
 	/** IAM actions required for the StartQualificationsAssociationTask API call. */
-	static readonly START_QUALIFICATIONS_ASSOCIATION_TASK: string[] = [
+	static readonly StartQualificationsAssociationTask: string[] = [
 		"partnercentral:StartQualificationsAssociationTask",
 	];
 	/** IAM actions required for the StartQualificationsDisassociationTask API call. */
-	static readonly START_QUALIFICATIONS_DISASSOCIATION_TASK: string[] = [
+	static readonly StartQualificationsDisassociationTask: string[] = [
 		"partnercentral:StartQualificationsDisassociationTask",
 	];
 	/** IAM actions required for the StartResourceSnapshotJob API call. */
-	static readonly START_RESOURCE_SNAPSHOT_JOB: string[] = [
+	static readonly StartResourceSnapshotJob: string[] = [
 		"partnercentral:StartResourceSnapshotJob",
 	];
 	/** IAM actions required for the StartRevenueAttributionAllocationsTask API call. */
-	static readonly START_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK: string[] = [
+	static readonly StartRevenueAttributionAllocationsTask: string[] = [
 		"partnercentral:StartRevenueAttributionAllocationsTask",
 	];
 	/** IAM actions required for the StartVerification API call. */
-	static readonly START_VERIFICATION: string[] = [
+	static readonly StartVerification: string[] = [
 		"partnercentral:StartVerification",
 	];
 	/** IAM actions required for the StopResourceSnapshotJob API call. */
-	static readonly STOP_RESOURCE_SNAPSHOT_JOB: string[] = [
+	static readonly StopResourceSnapshotJob: string[] = [
 		"partnercentral:StopResourceSnapshotJob",
 	];
 	/** IAM actions required for the SubmitBenefitApplication API call. */
-	static readonly SUBMIT_BENEFIT_APPLICATION: string[] = [
+	static readonly SubmitBenefitApplication: string[] = [
 		"partnercentral:SubmitBenefitApplication",
 	];
 	/** IAM actions required for the SubmitOpportunity API call. */
-	static readonly SUBMIT_OPPORTUNITY: string[] = [
+	static readonly SubmitOpportunity: string[] = [
 		"partnercentral:SubmitOpportunity",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["partnercentral:TagResource"];
+	static readonly TagResource: string[] = ["partnercentral:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["partnercentral:UntagResource"];
+	static readonly UntagResource: string[] = ["partnercentral:UntagResource"];
 	/** IAM actions required for the UpdateBenefitApplication API call. */
-	static readonly UPDATE_BENEFIT_APPLICATION: string[] = [
+	static readonly UpdateBenefitApplication: string[] = [
 		"partnercentral:UpdateBenefitApplication",
 	];
 	/** IAM actions required for the UpdateConnectionPreferences API call. */
-	static readonly UPDATE_CONNECTION_PREFERENCES: string[] = [
+	static readonly UpdateConnectionPreferences: string[] = [
 		"partnercentral:UpdateConnectionPreferences",
 	];
 	/** IAM actions required for the UpdateEngagementContext API call. */
-	static readonly UPDATE_ENGAGEMENT_CONTEXT: string[] = [
+	static readonly UpdateEngagementContext: string[] = [
 		"partnercentral:GetEngagement",
 		"partnercentral:UpdateEngagementContext",
 	];
 	/** IAM actions required for the UpdateMarketplaceRevenueShareAllocation API call. */
-	static readonly UPDATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION: string[] = [
+	static readonly UpdateMarketplaceRevenueShareAllocation: string[] = [
 		"partnercentral:UpdateMarketplaceRevenueShareAllocation",
 	];
 	/** IAM actions required for the UpdateOpportunity API call. */
-	static readonly UPDATE_OPPORTUNITY: string[] = [
+	static readonly UpdateOpportunity: string[] = [
 		"partnercentral:UpdateOpportunity",
 	];
 	/** IAM actions required for the UpdateProgramManagementAccount API call. */
-	static readonly UPDATE_PROGRAM_MANAGEMENT_ACCOUNT: string[] = [
+	static readonly UpdateProgramManagementAccount: string[] = [
 		"partnercentral:UpdateProgramManagementAccount",
 	];
 	/** IAM actions required for the UpdateRelationship API call. */
-	static readonly UPDATE_RELATIONSHIP: string[] = [
+	static readonly UpdateRelationship: string[] = [
 		"partnercentral:UpdateRelationship",
 	];
 	/** IAM actions required for the UpdateRevenueAttribution API call. */
-	static readonly UPDATE_REVENUE_ATTRIBUTION: string[] = [
+	static readonly UpdateRevenueAttribution: string[] = [
 		"partnercentral:UpdateRevenueAttribution",
 	];
 }
@@ -2256,73 +2655,72 @@ export class PartnercentralOperations {
  */
 export class PartnercentralConditions {
 	/** Condition keys applicable to the AcceptChannelHandshake action. */
-	static readonly ACCEPT_CHANNEL_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly AcceptChannelHandshakeConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:ChannelHandshakeType",
 	];
 	/** Condition keys applicable to the AcceptConnectionInvitation action. */
-	static readonly ACCEPT_CONNECTION_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly AcceptConnectionInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the AcceptEngagementInvitation action. */
-	static readonly ACCEPT_ENGAGEMENT_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly AcceptEngagementInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the AmendBenefitApplication action. */
-	static readonly AMEND_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly AmendBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the AssignOpportunity action. */
-	static readonly ASSIGN_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly AssignOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the AssociateAwsTrainingCertificationEmailDomain action. */
-	static readonly ASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN_CONDITION_KEYS: string[] =
+	static readonly AssociateAwsTrainingCertificationEmailDomainConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the AssociateBenefitApplicationResource action. */
-	static readonly ASSOCIATE_BENEFIT_APPLICATION_RESOURCE_CONDITION_KEYS: string[] =
-		[
-			"aws:ResourceTag/${TagKey}",
-			"partnercentral:Catalog",
-			"partnercentral:FulfillmentTypes",
-			"partnercentral:Programs",
-		];
+	static readonly AssociateBenefitApplicationResourceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+		"partnercentral:FulfillmentTypes",
+		"partnercentral:Programs",
+	];
 	/** Condition keys applicable to the AssociateOpportunity action. */
-	static readonly ASSOCIATE_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly AssociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:RelatedEntityType",
 	];
 	/** Condition keys applicable to the CancelBenefitApplication action. */
-	static readonly CANCEL_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CancelBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the CancelChannelHandshake action. */
-	static readonly CANCEL_CHANNEL_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly CancelChannelHandshakeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:ChannelHandshakeType",
 	];
 	/** Condition keys applicable to the CancelConnection action. */
-	static readonly CANCEL_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CancelConnectionConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CancelConnectionInvitation action. */
-	static readonly CANCEL_CONNECTION_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly CancelConnectionInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CancelProfileUpdateTask action. */
-	static readonly CANCEL_PROFILE_UPDATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly CancelProfileUpdateTaskConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateBenefitApplication action. */
-	static readonly CREATE_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateBenefitApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -2331,7 +2729,7 @@ export class PartnercentralConditions {
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the CreateChannelHandshake action. */
-	static readonly CREATE_CHANNEL_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly CreateChannelHandshakeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -2339,92 +2737,92 @@ export class PartnercentralConditions {
 		"partnercentral:ChannelHandshakeType",
 	];
 	/** Condition keys applicable to the CreateConnectionInvitation action. */
-	static readonly CREATE_CONNECTION_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateEngagement action. */
-	static readonly CREATE_ENGAGEMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEngagementConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateEngagementContext action. */
-	static readonly CREATE_ENGAGEMENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly CreateEngagementContextConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateEngagementInvitation action. */
-	static readonly CREATE_ENGAGEMENT_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly CreateEngagementInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateMarketplaceRevenueShare action. */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateMarketplaceRevenueShareConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateMarketplaceRevenueShareAllocation action. */
-	static readonly CREATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly CreateMarketplaceRevenueShareAllocationConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the CreateOpportunity action. */
-	static readonly CREATE_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly CreateOpportunityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreatePartner action. */
-	static readonly CREATE_PARTNER_CONDITION_KEYS: string[] = [
+	static readonly CreatePartnerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateProgramManagementAccount action. */
-	static readonly CREATE_PROGRAM_MANAGEMENT_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly CreateProgramManagementAccountConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateRelationship action. */
-	static readonly CREATE_RELATIONSHIP_CONDITION_KEYS: string[] = [
+	static readonly CreateRelationshipConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateResourceSnapshot action. */
-	static readonly CREATE_RESOURCE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateResourceSnapshotConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateResourceSnapshotJob action. */
-	static readonly CREATE_RESOURCE_SNAPSHOT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateResourceSnapshotJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateRevenueAttribution action. */
-	static readonly CREATE_REVENUE_ATTRIBUTION_CONDITION_KEYS: string[] = [
+	static readonly CreateRevenueAttributionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the DeleteProgramManagementAccount action. */
-	static readonly DELETE_PROGRAM_MANAGEMENT_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly DeleteProgramManagementAccountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the DeleteRelationship action. */
-	static readonly DELETE_RELATIONSHIP_CONDITION_KEYS: string[] = [
+	static readonly DeleteRelationshipConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the DeleteResourceSnapshotJob action. */
-	static readonly DELETE_RESOURCE_SNAPSHOT_JOB_CONDITION_KEYS: string[] = [
+	static readonly DeleteResourceSnapshotJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the DisassociateAwsTrainingCertificationEmailDomain action. */
-	static readonly DISASSOCIATE_AWS_TRAINING_CERTIFICATION_EMAIL_DOMAIN_CONDITION_KEYS: string[] =
+	static readonly DisassociateAwsTrainingCertificationEmailDomainConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the DisassociateBenefitApplicationResource action. */
-	static readonly DISASSOCIATE_BENEFIT_APPLICATION_RESOURCE_CONDITION_KEYS: string[] =
+	static readonly DisassociateBenefitApplicationResourceConditionKeys: string[] =
 		[
 			"aws:ResourceTag/${TagKey}",
 			"partnercentral:Catalog",
@@ -2432,238 +2830,243 @@ export class PartnercentralConditions {
 			"partnercentral:Programs",
 		];
 	/** Condition keys applicable to the DisassociateOpportunity action. */
-	static readonly DISASSOCIATE_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly DisassociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:RelatedEntityType",
 	];
 	/** Condition keys applicable to the GetAllianceLeadContact action. */
-	static readonly GET_ALLIANCE_LEAD_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly actionGetAllianceLeadContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetAwsOpportunitySummary action. */
-	static readonly GET_AWS_OPPORTUNITY_SUMMARY_CONDITION_KEYS: string[] = [
+	static readonly actionGetAwsOpportunitySummaryConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetBenefit action. */
-	static readonly GET_BENEFIT_CONDITION_KEYS: string[] = [
+	static readonly actionGetBenefitConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the GetBenefitAllocation action. */
-	static readonly GET_BENEFIT_ALLOCATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetBenefitAllocationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 	];
 	/** Condition keys applicable to the GetBenefitApplication action. */
-	static readonly GET_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the GetConnection action. */
-	static readonly GET_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetConnectionInvitation action. */
-	static readonly GET_CONNECTION_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetConnectionPreferences action. */
-	static readonly GET_CONNECTION_PREFERENCES_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionPreferencesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetEngagement action. */
-	static readonly GET_ENGAGEMENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetEngagementConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetEngagementInvitation action. */
-	static readonly GET_ENGAGEMENT_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetEngagementInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetMarketplaceRevenueShare action. */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly actionGetMarketplaceRevenueShareConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetMarketplaceRevenueShareAllocation action. */
-	static readonly GET_MARKETPLACE_REVENUE_SHARE_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly actionGetMarketplaceRevenueShareAllocationConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetOpportunity action. */
-	static readonly GET_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetPartner action. */
-	static readonly GET_PARTNER_CONDITION_KEYS: string[] = [
+	static readonly actionGetPartnerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetPartnerDashboard action. */
-	static readonly GET_PARTNER_DASHBOARD_CONDITION_KEYS: string[] = [
+	static readonly actionGetPartnerDashboardConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProfileUpdateTask action. */
-	static readonly GET_PROFILE_UPDATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly actionGetProfileUpdateTaskConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProfileVisibility action. */
-	static readonly GET_PROFILE_VISIBILITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetProfileVisibilityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProgramManagementAccount action. */
-	static readonly GET_PROGRAM_MANAGEMENT_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly actionGetProgramManagementAccountConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProspectingFromEngagementTask action. */
-	static readonly GET_PROSPECTING_FROM_ENGAGEMENT_TASK_CONDITION_KEYS: string[] =
+	static readonly actionGetProspectingFromEngagementTaskConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetQualificationsAssociationDetails action. */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_DETAILS_CONDITION_KEYS: string[] =
+	static readonly actionGetQualificationsAssociationDetailsConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the GetQualificationsAssociationTask action. */
-	static readonly GET_QUALIFICATIONS_ASSOCIATION_TASK_CONDITION_KEYS: string[] =
+	static readonly actionGetQualificationsAssociationTaskConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the GetQualificationsDisassociationTask action. */
-	static readonly GET_QUALIFICATIONS_DISASSOCIATION_TASK_CONDITION_KEYS: string[] =
+	static readonly actionGetQualificationsDisassociationTaskConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the GetRelationship action. */
-	static readonly GET_RELATIONSHIP_CONDITION_KEYS: string[] = [
+	static readonly actionGetRelationshipConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetResourceSnapshot action. */
-	static readonly GET_RESOURCE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly actionGetResourceSnapshotConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetResourceSnapshotJob action. */
-	static readonly GET_RESOURCE_SNAPSHOT_JOB_CONDITION_KEYS: string[] = [
+	static readonly actionGetResourceSnapshotJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetRevenueAttribution action. */
-	static readonly GET_REVENUE_ATTRIBUTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetRevenueAttributionConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetRevenueAttributionAllocation action. */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly actionGetRevenueAttributionAllocationConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetRevenueAttributionAllocationsTask action. */
-	static readonly GET_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK_CONDITION_KEYS: string[] =
+	static readonly actionGetRevenueAttributionAllocationsTaskConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetSellingSystemSettings action. */
-	static readonly GET_SELLING_SYSTEM_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly actionGetSellingSystemSettingsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetVerification action. */
-	static readonly GET_VERIFICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetVerificationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:VerificationType",
 	];
 	/** Condition keys applicable to the ListBenefitAllocations action. */
-	static readonly LIST_BENEFIT_ALLOCATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListBenefitAllocationsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 	];
 	/** Condition keys applicable to the ListBenefitApplications action. */
-	static readonly LIST_BENEFIT_APPLICATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListBenefitApplicationsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the ListBenefits action. */
-	static readonly LIST_BENEFITS_CONDITION_KEYS: string[] = [
+	static readonly ListBenefitsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the ListChannelHandshakes action. */
-	static readonly LIST_CHANNEL_HANDSHAKES_CONDITION_KEYS: string[] = [
+	static readonly ListChannelHandshakesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:ChannelHandshakeType",
 	];
 	/** Condition keys applicable to the ListConnectionInvitations action. */
-	static readonly LIST_CONNECTION_INVITATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListConnectionInvitationsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListConnections action. */
-	static readonly LIST_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListConnectionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListEngagementByAcceptingInvitationTasks action. */
-	static readonly LIST_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASKS_CONDITION_KEYS: string[] =
+	static readonly ListEngagementByAcceptingInvitationTasksConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the ListEngagementFromOpportunityTasks action. */
-	static readonly LIST_ENGAGEMENT_FROM_OPPORTUNITY_TASKS_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly ListEngagementFromOpportunityTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListEngagementInvitations action. */
-	static readonly LIST_ENGAGEMENT_INVITATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListEngagementInvitationsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListEngagementMembers action. */
-	static readonly LIST_ENGAGEMENT_MEMBERS_CONDITION_KEYS: string[] = [
+	static readonly ListEngagementMembersConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListEngagementResourceAssociations action. */
-	static readonly LIST_ENGAGEMENT_RESOURCE_ASSOCIATIONS_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly ListEngagementResourceAssociationsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListEngagements action. */
-	static readonly LIST_ENGAGEMENTS_CONDITION_KEYS: string[] = [
+	static readonly ListEngagementsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListMarketplaceRevenueShareAllocations action. */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARE_ALLOCATIONS_CONDITION_KEYS: string[] =
+	static readonly ListMarketplaceRevenueShareAllocationsConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the ListMarketplaceRevenueShares action. */
-	static readonly LIST_MARKETPLACE_REVENUE_SHARES_CONDITION_KEYS: string[] = [
+	static readonly ListMarketplaceRevenueSharesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListOpportunities action. */
-	static readonly LIST_OPPORTUNITIES_CONDITION_KEYS: string[] = [
+	static readonly ListOpportunitiesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListOpportunityFromEngagementTasks action. */
-	static readonly LIST_OPPORTUNITY_FROM_ENGAGEMENT_TASKS_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly ListOpportunityFromEngagementTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListPartners action. */
-	static readonly LIST_PARTNERS_CONDITION_KEYS: string[] = [
+	static readonly ListPartnersConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListProgramManagementAccounts action. */
-	static readonly LIST_PROGRAM_MANAGEMENT_ACCOUNTS_CONDITION_KEYS: string[] = [
+	static readonly ListProgramManagementAccountsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListProspectingFromEngagementTasks action. */
-	static readonly LIST_PROSPECTING_FROM_ENGAGEMENT_TASKS_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly ListProspectingFromEngagementTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListRelationships action. */
-	static readonly LIST_RELATIONSHIPS_CONDITION_KEYS: string[] = [
+	static readonly ListRelationshipsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListResourceSnapshotJobs action. */
-	static readonly LIST_RESOURCE_SNAPSHOT_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListResourceSnapshotJobsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListResourceSnapshots action. */
-	static readonly LIST_RESOURCE_SNAPSHOTS_CONDITION_KEYS: string[] = [
+	static readonly ListResourceSnapshotsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListRevenueAttributionAllocations action. */
-	static readonly LIST_REVENUE_ATTRIBUTION_ALLOCATIONS_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly ListRevenueAttributionAllocationsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListRevenueAttributions action. */
-	static readonly LIST_REVENUE_ATTRIBUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListRevenueAttributionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListSolutions action. */
-	static readonly LIST_SOLUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListSolutionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
@@ -2671,45 +3074,45 @@ export class PartnercentralConditions {
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the PutAllianceLeadContact action. */
-	static readonly PUT_ALLIANCE_LEAD_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly PutAllianceLeadContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the PutProfileVisibility action. */
-	static readonly PUT_PROFILE_VISIBILITY_CONDITION_KEYS: string[] = [
+	static readonly PutProfileVisibilityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the PutSellingSystemSettings action. */
-	static readonly PUT_SELLING_SYSTEM_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly PutSellingSystemSettingsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the RecallBenefitApplication action. */
-	static readonly RECALL_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly RecallBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the RejectChannelHandshake action. */
-	static readonly REJECT_CHANNEL_HANDSHAKE_CONDITION_KEYS: string[] = [
+	static readonly RejectChannelHandshakeConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:ChannelHandshakeType",
 	];
 	/** Condition keys applicable to the RejectConnectionInvitation action. */
-	static readonly REJECT_CONNECTION_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly RejectConnectionInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the RejectEngagementInvitation action. */
-	static readonly REJECT_ENGAGEMENT_INVITATION_CONDITION_KEYS: string[] = [
+	static readonly RejectEngagementInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the SendEmailVerificationCode action. */
-	static readonly SEND_EMAIL_VERIFICATION_CODE_CONDITION_KEYS: string[] = [
+	static readonly SendEmailVerificationCodeConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. */
-	static readonly START_ENGAGEMENT_BY_ACCEPTING_INVITATION_TASK_CONDITION_KEYS: string[] =
+	static readonly StartEngagementByAcceptingInvitationTaskConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:ResourceTag/${TagKey}",
@@ -2717,64 +3120,65 @@ export class PartnercentralConditions {
 			"partnercentral:Catalog",
 		];
 	/** Condition keys applicable to the StartEngagementFromOpportunityTask action. */
-	static readonly START_ENGAGEMENT_FROM_OPPORTUNITY_TASK_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:ResourceTag/${TagKey}",
-			"aws:TagKeys",
-			"partnercentral:Catalog",
-		];
+	static readonly StartEngagementFromOpportunityTaskConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the StartOpportunityFromEngagementTask action. */
-	static readonly START_OPPORTUNITY_FROM_ENGAGEMENT_TASK_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:ResourceTag/${TagKey}",
-			"aws:TagKeys",
-			"partnercentral:Catalog",
-		];
+	static readonly StartOpportunityFromEngagementTaskConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the StartProfileUpdateTask action. */
-	static readonly START_PROFILE_UPDATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly StartProfileUpdateTaskConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartProspectingFromEngagementTask action. */
-	static readonly START_PROSPECTING_FROM_ENGAGEMENT_TASK_CONDITION_KEYS: string[] =
-		["partnercentral:Catalog"];
+	static readonly StartProspectingFromEngagementTaskConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the StartQualificationsAssociationTask action. */
-	static readonly START_QUALIFICATIONS_ASSOCIATION_TASK_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
+	static readonly StartQualificationsAssociationTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the StartQualificationsDisassociationTask action. */
-	static readonly START_QUALIFICATIONS_DISASSOCIATION_TASK_CONDITION_KEYS: string[] =
+	static readonly StartQualificationsDisassociationTaskConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
 	/** Condition keys applicable to the StartResourceSnapshotJob action. */
-	static readonly START_RESOURCE_SNAPSHOT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartResourceSnapshotJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartRevenueAttributionAllocationsTask action. */
-	static readonly START_REVENUE_ATTRIBUTION_ALLOCATIONS_TASK_CONDITION_KEYS: string[] =
+	static readonly StartRevenueAttributionAllocationsTaskConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the StartVerification action. */
-	static readonly START_VERIFICATION_CONDITION_KEYS: string[] = [
+	static readonly StartVerificationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:VerificationType",
 	];
 	/** Condition keys applicable to the StopResourceSnapshotJob action. */
-	static readonly STOP_RESOURCE_SNAPSHOT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StopResourceSnapshotJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the SubmitBenefitApplication action. */
-	static readonly SUBMIT_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly SubmitBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the SubmitOpportunity action. */
-	static readonly SUBMIT_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly SubmitOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -2783,7 +3187,7 @@ export class PartnercentralConditions {
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
@@ -2791,52 +3195,52 @@ export class PartnercentralConditions {
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the UpdateBenefitApplication action. */
-	static readonly UPDATE_BENEFIT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateBenefitApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
 	/** Condition keys applicable to the UpdateConnectionPreferences action. */
-	static readonly UPDATE_CONNECTION_PREFERENCES_CONDITION_KEYS: string[] = [
+	static readonly UpdateConnectionPreferencesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateEngagementContext action. */
-	static readonly UPDATE_ENGAGEMENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly UpdateEngagementContextConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateMarketplaceRevenueShareAllocation action. */
-	static readonly UPDATE_MARKETPLACE_REVENUE_SHARE_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly UpdateMarketplaceRevenueShareAllocationConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the UpdateOpportunity action. */
-	static readonly UPDATE_OPPORTUNITY_CONDITION_KEYS: string[] = [
+	static readonly UpdateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateProgramManagementAccount action. */
-	static readonly UPDATE_PROGRAM_MANAGEMENT_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly UpdateProgramManagementAccountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateRelationship action. */
-	static readonly UPDATE_RELATIONSHIP_CONDITION_KEYS: string[] = [
+	static readonly UpdateRelationshipConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateRevenueAttribution action. */
-	static readonly UPDATE_REVENUE_ATTRIBUTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateRevenueAttributionConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UseSession action. */
-	static readonly USE_SESSION_CONDITION_KEYS: string[] = [
+	static readonly UseSessionConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: partnercentral:Catalog (String) */
 	static readonly CATALOG = "partnercentral:Catalog";
 	/** Condition key: partnercentral:ChannelHandshakeType (String) */

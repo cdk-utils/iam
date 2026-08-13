@@ -13,694 +13,1132 @@ export class CloudFrontActions {
 	static readonly SERVICE_PREFIX = "cloudfront";
 
 	/** [PermissionManagement] cloudfront:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"cloudfront:AllowVendedLogDeliveryForResource";
 	/** [Write] cloudfront:AssociateAlias */
-	static readonly ASSOCIATE_ALIAS = "cloudfront:AssociateAlias";
+	static readonly AssociateAlias = "cloudfront:AssociateAlias";
 	/** [Write] cloudfront:AssociateDistributionTenantWebACL */
-	static readonly ASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL =
+	static readonly AssociateDistributionTenantWebACL =
 		"cloudfront:AssociateDistributionTenantWebACL";
 	/** [Write] cloudfront:AssociateDistributionWebACL */
-	static readonly ASSOCIATE_DISTRIBUTION_WEB_ACL =
+	static readonly AssociateDistributionWebACL =
 		"cloudfront:AssociateDistributionWebACL";
 	/** [Write] cloudfront:CopyDistribution */
-	static readonly COPY_DISTRIBUTION = "cloudfront:CopyDistribution";
+	static readonly CopyDistribution = "cloudfront:CopyDistribution";
 	/** [Write] cloudfront:CreateAnycastIpList */
-	static readonly CREATE_ANYCAST_IP_LIST = "cloudfront:CreateAnycastIpList";
+	static readonly CreateAnycastIpList = "cloudfront:CreateAnycastIpList";
 	/** [Write] cloudfront:CreateCachePolicy */
-	static readonly CREATE_CACHE_POLICY = "cloudfront:CreateCachePolicy";
+	static readonly CreateCachePolicy = "cloudfront:CreateCachePolicy";
 	/** [Write] cloudfront:CreateCloudFrontOriginAccessIdentity */
-	static readonly CREATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY =
+	static readonly CreateCloudFrontOriginAccessIdentity =
 		"cloudfront:CreateCloudFrontOriginAccessIdentity";
 	/** [Write] cloudfront:CreateConnectionFunction */
-	static readonly CREATE_CONNECTION_FUNCTION =
+	static readonly CreateConnectionFunction =
 		"cloudfront:CreateConnectionFunction";
 	/** [Write] cloudfront:CreateConnectionGroup */
-	static readonly CREATE_CONNECTION_GROUP = "cloudfront:CreateConnectionGroup";
+	static readonly CreateConnectionGroup = "cloudfront:CreateConnectionGroup";
 	/** [Write] cloudfront:CreateContinuousDeploymentPolicy */
-	static readonly CREATE_CONTINUOUS_DEPLOYMENT_POLICY =
+	static readonly CreateContinuousDeploymentPolicy =
 		"cloudfront:CreateContinuousDeploymentPolicy";
 	/** [Write] cloudfront:CreateDistribution */
-	static readonly CREATE_DISTRIBUTION = "cloudfront:CreateDistribution";
+	static readonly CreateDistribution = "cloudfront:CreateDistribution";
 	/** [Write] cloudfront:CreateDistributionTenant */
-	static readonly CREATE_DISTRIBUTION_TENANT =
+	static readonly CreateDistributionTenant =
 		"cloudfront:CreateDistributionTenant";
 	/** [Write] cloudfront:CreateFieldLevelEncryptionConfig */
-	static readonly CREATE_FIELD_LEVEL_ENCRYPTION_CONFIG =
+	static readonly CreateFieldLevelEncryptionConfig =
 		"cloudfront:CreateFieldLevelEncryptionConfig";
 	/** [Write] cloudfront:CreateFieldLevelEncryptionProfile */
-	static readonly CREATE_FIELD_LEVEL_ENCRYPTION_PROFILE =
+	static readonly CreateFieldLevelEncryptionProfile =
 		"cloudfront:CreateFieldLevelEncryptionProfile";
 	/** [Write] cloudfront:CreateFunction */
-	static readonly CREATE_FUNCTION = "cloudfront:CreateFunction";
+	static readonly CreateFunction = "cloudfront:CreateFunction";
 	/** [Write] cloudfront:CreateInvalidation */
-	static readonly CREATE_INVALIDATION = "cloudfront:CreateInvalidation";
+	static readonly CreateInvalidation = "cloudfront:CreateInvalidation";
 	/** [Write] cloudfront:CreateInvalidationForDistributionTenant */
-	static readonly CREATE_INVALIDATION_FOR_DISTRIBUTION_TENANT =
+	static readonly CreateInvalidationForDistributionTenant =
 		"cloudfront:CreateInvalidationForDistributionTenant";
 	/** [Write] cloudfront:CreateKeyGroup */
-	static readonly CREATE_KEY_GROUP = "cloudfront:CreateKeyGroup";
+	static readonly CreateKeyGroup = "cloudfront:CreateKeyGroup";
 	/** [Write] cloudfront:CreateKeyValueStore */
-	static readonly CREATE_KEY_VALUE_STORE = "cloudfront:CreateKeyValueStore";
+	static readonly CreateKeyValueStore = "cloudfront:CreateKeyValueStore";
 	/** [Write] cloudfront:CreateMonitoringSubscription */
-	static readonly CREATE_MONITORING_SUBSCRIPTION =
+	static readonly CreateMonitoringSubscription =
 		"cloudfront:CreateMonitoringSubscription";
 	/** [Write] cloudfront:CreateOriginAccessControl */
-	static readonly CREATE_ORIGIN_ACCESS_CONTROL =
+	static readonly CreateOriginAccessControl =
 		"cloudfront:CreateOriginAccessControl";
 	/** [Write] cloudfront:CreateOriginRequestPolicy */
-	static readonly CREATE_ORIGIN_REQUEST_POLICY =
+	static readonly CreateOriginRequestPolicy =
 		"cloudfront:CreateOriginRequestPolicy";
 	/** [Write] cloudfront:CreatePublicKey */
-	static readonly CREATE_PUBLIC_KEY = "cloudfront:CreatePublicKey";
+	static readonly CreatePublicKey = "cloudfront:CreatePublicKey";
 	/** [Write] cloudfront:CreateRealtimeLogConfig */
-	static readonly CREATE_REALTIME_LOG_CONFIG =
+	static readonly CreateRealtimeLogConfig =
 		"cloudfront:CreateRealtimeLogConfig";
 	/** [Write] cloudfront:CreateResponseHeadersPolicy */
-	static readonly CREATE_RESPONSE_HEADERS_POLICY =
+	static readonly CreateResponseHeadersPolicy =
 		"cloudfront:CreateResponseHeadersPolicy";
 	/** [Write] cloudfront:CreateSavingsPlan */
-	static readonly CREATE_SAVINGS_PLAN = "cloudfront:CreateSavingsPlan";
+	static readonly CreateSavingsPlan = "cloudfront:CreateSavingsPlan";
 	/** [Write] cloudfront:CreateStreamingDistribution */
-	static readonly CREATE_STREAMING_DISTRIBUTION =
+	static readonly CreateStreamingDistribution =
 		"cloudfront:CreateStreamingDistribution";
 	/** [Write] cloudfront:CreateStreamingDistributionWithTags */
-	static readonly CREATE_STREAMING_DISTRIBUTION_WITH_TAGS =
+	static readonly CreateStreamingDistributionWithTags =
 		"cloudfront:CreateStreamingDistributionWithTags";
 	/** [Write] cloudfront:CreateTrustStore */
-	static readonly CREATE_TRUST_STORE = "cloudfront:CreateTrustStore";
+	static readonly CreateTrustStore = "cloudfront:CreateTrustStore";
 	/** [Write] cloudfront:CreateVpcOrigin */
-	static readonly CREATE_VPC_ORIGIN = "cloudfront:CreateVpcOrigin";
+	static readonly CreateVpcOrigin = "cloudfront:CreateVpcOrigin";
 	/** [Write] cloudfront:DeleteAnycastIpList */
-	static readonly DELETE_ANYCAST_IP_LIST = "cloudfront:DeleteAnycastIpList";
+	static readonly DeleteAnycastIpList = "cloudfront:DeleteAnycastIpList";
 	/** [Write] cloudfront:DeleteCachePolicy */
-	static readonly DELETE_CACHE_POLICY = "cloudfront:DeleteCachePolicy";
+	static readonly DeleteCachePolicy = "cloudfront:DeleteCachePolicy";
 	/** [Write] cloudfront:DeleteCloudFrontOriginAccessIdentity */
-	static readonly DELETE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY =
+	static readonly DeleteCloudFrontOriginAccessIdentity =
 		"cloudfront:DeleteCloudFrontOriginAccessIdentity";
 	/** [Write] cloudfront:DeleteConnectionFunction */
-	static readonly DELETE_CONNECTION_FUNCTION =
+	static readonly DeleteConnectionFunction =
 		"cloudfront:DeleteConnectionFunction";
 	/** [Write] cloudfront:DeleteConnectionGroup */
-	static readonly DELETE_CONNECTION_GROUP = "cloudfront:DeleteConnectionGroup";
+	static readonly DeleteConnectionGroup = "cloudfront:DeleteConnectionGroup";
 	/** [Write] cloudfront:DeleteContinuousDeploymentPolicy */
-	static readonly DELETE_CONTINUOUS_DEPLOYMENT_POLICY =
+	static readonly DeleteContinuousDeploymentPolicy =
 		"cloudfront:DeleteContinuousDeploymentPolicy";
 	/** [Write] cloudfront:DeleteDistribution */
-	static readonly DELETE_DISTRIBUTION = "cloudfront:DeleteDistribution";
+	static readonly DeleteDistribution = "cloudfront:DeleteDistribution";
 	/** [Write] cloudfront:DeleteDistributionTenant */
-	static readonly DELETE_DISTRIBUTION_TENANT =
+	static readonly DeleteDistributionTenant =
 		"cloudfront:DeleteDistributionTenant";
 	/** [Write] cloudfront:DeleteFieldLevelEncryptionConfig */
-	static readonly DELETE_FIELD_LEVEL_ENCRYPTION_CONFIG =
+	static readonly DeleteFieldLevelEncryptionConfig =
 		"cloudfront:DeleteFieldLevelEncryptionConfig";
 	/** [Write] cloudfront:DeleteFieldLevelEncryptionProfile */
-	static readonly DELETE_FIELD_LEVEL_ENCRYPTION_PROFILE =
+	static readonly DeleteFieldLevelEncryptionProfile =
 		"cloudfront:DeleteFieldLevelEncryptionProfile";
 	/** [Write] cloudfront:DeleteFunction */
-	static readonly DELETE_FUNCTION = "cloudfront:DeleteFunction";
+	static readonly DeleteFunction = "cloudfront:DeleteFunction";
 	/** [Write] cloudfront:DeleteKeyGroup */
-	static readonly DELETE_KEY_GROUP = "cloudfront:DeleteKeyGroup";
+	static readonly DeleteKeyGroup = "cloudfront:DeleteKeyGroup";
 	/** [Write] cloudfront:DeleteKeyValueStore */
-	static readonly DELETE_KEY_VALUE_STORE = "cloudfront:DeleteKeyValueStore";
+	static readonly DeleteKeyValueStore = "cloudfront:DeleteKeyValueStore";
 	/** [Write] cloudfront:DeleteMonitoringSubscription */
-	static readonly DELETE_MONITORING_SUBSCRIPTION =
+	static readonly DeleteMonitoringSubscription =
 		"cloudfront:DeleteMonitoringSubscription";
 	/** [Write] cloudfront:DeleteOriginAccessControl */
-	static readonly DELETE_ORIGIN_ACCESS_CONTROL =
+	static readonly DeleteOriginAccessControl =
 		"cloudfront:DeleteOriginAccessControl";
 	/** [Write] cloudfront:DeleteOriginRequestPolicy */
-	static readonly DELETE_ORIGIN_REQUEST_POLICY =
+	static readonly DeleteOriginRequestPolicy =
 		"cloudfront:DeleteOriginRequestPolicy";
 	/** [Write] cloudfront:DeletePublicKey */
-	static readonly DELETE_PUBLIC_KEY = "cloudfront:DeletePublicKey";
+	static readonly DeletePublicKey = "cloudfront:DeletePublicKey";
 	/** [Write] cloudfront:DeleteRealtimeLogConfig */
-	static readonly DELETE_REALTIME_LOG_CONFIG =
+	static readonly DeleteRealtimeLogConfig =
 		"cloudfront:DeleteRealtimeLogConfig";
 	/** [Write] cloudfront:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "cloudfront:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "cloudfront:DeleteResourcePolicy";
 	/** [Write] cloudfront:DeleteResponseHeadersPolicy */
-	static readonly DELETE_RESPONSE_HEADERS_POLICY =
+	static readonly DeleteResponseHeadersPolicy =
 		"cloudfront:DeleteResponseHeadersPolicy";
 	/** [Write] cloudfront:DeleteStreamingDistribution */
-	static readonly DELETE_STREAMING_DISTRIBUTION =
+	static readonly DeleteStreamingDistribution =
 		"cloudfront:DeleteStreamingDistribution";
 	/** [Write] cloudfront:DeleteTrustStore */
-	static readonly DELETE_TRUST_STORE = "cloudfront:DeleteTrustStore";
+	static readonly DeleteTrustStore = "cloudfront:DeleteTrustStore";
 	/** [Write] cloudfront:DeleteVpcOrigin */
-	static readonly DELETE_VPC_ORIGIN = "cloudfront:DeleteVpcOrigin";
+	static readonly DeleteVpcOrigin = "cloudfront:DeleteVpcOrigin";
 	/** [Read] cloudfront:DescribeConnectionFunction */
-	static readonly DESCRIBE_CONNECTION_FUNCTION =
+	static readonly DescribeConnectionFunction =
 		"cloudfront:DescribeConnectionFunction";
 	/** [Read] cloudfront:DescribeFunction */
-	static readonly DESCRIBE_FUNCTION = "cloudfront:DescribeFunction";
+	static readonly DescribeFunction = "cloudfront:DescribeFunction";
 	/** [Read] cloudfront:DescribeKeyValueStore */
-	static readonly DESCRIBE_KEY_VALUE_STORE = "cloudfront:DescribeKeyValueStore";
+	static readonly DescribeKeyValueStore = "cloudfront:DescribeKeyValueStore";
 	/** [Write] cloudfront:DisassociateDistributionTenantWebACL */
-	static readonly DISASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL =
+	static readonly DisassociateDistributionTenantWebACL =
 		"cloudfront:DisassociateDistributionTenantWebACL";
 	/** [Write] cloudfront:DisassociateDistributionWebACL */
-	static readonly DISASSOCIATE_DISTRIBUTION_WEB_ACL =
+	static readonly DisassociateDistributionWebACL =
 		"cloudfront:DisassociateDistributionWebACL";
 	/** [Read] cloudfront:GetAnycastIpList */
-	static readonly GET_ANYCAST_IP_LIST = "cloudfront:GetAnycastIpList";
+	static readonly actionGetAnycastIpList = "cloudfront:GetAnycastIpList";
 	/** [Read] cloudfront:GetCachePolicy */
-	static readonly GET_CACHE_POLICY = "cloudfront:GetCachePolicy";
+	static readonly actionGetCachePolicy = "cloudfront:GetCachePolicy";
 	/** [Read] cloudfront:GetCachePolicyConfig */
-	static readonly GET_CACHE_POLICY_CONFIG = "cloudfront:GetCachePolicyConfig";
+	static readonly actionGetCachePolicyConfig =
+		"cloudfront:GetCachePolicyConfig";
 	/** [Read] cloudfront:GetCloudFrontOriginAccessIdentity */
-	static readonly GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY =
+	static readonly actionGetCloudFrontOriginAccessIdentity =
 		"cloudfront:GetCloudFrontOriginAccessIdentity";
 	/** [Read] cloudfront:GetCloudFrontOriginAccessIdentityConfig */
-	static readonly GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY_CONFIG =
+	static readonly actionGetCloudFrontOriginAccessIdentityConfig =
 		"cloudfront:GetCloudFrontOriginAccessIdentityConfig";
 	/** [Read] cloudfront:GetConnectionFunction */
-	static readonly GET_CONNECTION_FUNCTION = "cloudfront:GetConnectionFunction";
+	static readonly actionGetConnectionFunction =
+		"cloudfront:GetConnectionFunction";
 	/** [Read] cloudfront:GetConnectionGroup */
-	static readonly GET_CONNECTION_GROUP = "cloudfront:GetConnectionGroup";
+	static readonly actionGetConnectionGroup = "cloudfront:GetConnectionGroup";
 	/** [Read] cloudfront:GetConnectionGroupByRoutingEndpoint */
-	static readonly GET_CONNECTION_GROUP_BY_ROUTING_ENDPOINT =
+	static readonly actionGetConnectionGroupByRoutingEndpoint =
 		"cloudfront:GetConnectionGroupByRoutingEndpoint";
 	/** [Read] cloudfront:GetContinuousDeploymentPolicy */
-	static readonly GET_CONTINUOUS_DEPLOYMENT_POLICY =
+	static readonly actionGetContinuousDeploymentPolicy =
 		"cloudfront:GetContinuousDeploymentPolicy";
 	/** [Read] cloudfront:GetContinuousDeploymentPolicyConfig */
-	static readonly GET_CONTINUOUS_DEPLOYMENT_POLICY_CONFIG =
+	static readonly actionGetContinuousDeploymentPolicyConfig =
 		"cloudfront:GetContinuousDeploymentPolicyConfig";
 	/** [Read] cloudfront:GetDistribution */
-	static readonly GET_DISTRIBUTION = "cloudfront:GetDistribution";
+	static readonly actionGetDistribution = "cloudfront:GetDistribution";
 	/** [Read] cloudfront:GetDistributionConfig */
-	static readonly GET_DISTRIBUTION_CONFIG = "cloudfront:GetDistributionConfig";
+	static readonly actionGetDistributionConfig =
+		"cloudfront:GetDistributionConfig";
 	/** [Read] cloudfront:GetDistributionTenant */
-	static readonly GET_DISTRIBUTION_TENANT = "cloudfront:GetDistributionTenant";
+	static readonly actionGetDistributionTenant =
+		"cloudfront:GetDistributionTenant";
 	/** [Read] cloudfront:GetDistributionTenantByDomain */
-	static readonly GET_DISTRIBUTION_TENANT_BY_DOMAIN =
+	static readonly actionGetDistributionTenantByDomain =
 		"cloudfront:GetDistributionTenantByDomain";
 	/** [Read] cloudfront:GetFieldLevelEncryption */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION =
+	static readonly actionGetFieldLevelEncryption =
 		"cloudfront:GetFieldLevelEncryption";
 	/** [Read] cloudfront:GetFieldLevelEncryptionConfig */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_CONFIG =
+	static readonly actionGetFieldLevelEncryptionConfig =
 		"cloudfront:GetFieldLevelEncryptionConfig";
 	/** [Read] cloudfront:GetFieldLevelEncryptionProfile */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_PROFILE =
+	static readonly actionGetFieldLevelEncryptionProfile =
 		"cloudfront:GetFieldLevelEncryptionProfile";
 	/** [Read] cloudfront:GetFieldLevelEncryptionProfileConfig */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_PROFILE_CONFIG =
+	static readonly actionGetFieldLevelEncryptionProfileConfig =
 		"cloudfront:GetFieldLevelEncryptionProfileConfig";
 	/** [Read] cloudfront:GetFunction */
-	static readonly GET_FUNCTION = "cloudfront:GetFunction";
+	static readonly actionGetFunction = "cloudfront:GetFunction";
 	/** [Read] cloudfront:GetInvalidation */
-	static readonly GET_INVALIDATION = "cloudfront:GetInvalidation";
+	static readonly actionGetInvalidation = "cloudfront:GetInvalidation";
 	/** [Read] cloudfront:GetInvalidationForDistributionTenant */
-	static readonly GET_INVALIDATION_FOR_DISTRIBUTION_TENANT =
+	static readonly actionGetInvalidationForDistributionTenant =
 		"cloudfront:GetInvalidationForDistributionTenant";
 	/** [Read] cloudfront:GetKeyGroup */
-	static readonly GET_KEY_GROUP = "cloudfront:GetKeyGroup";
+	static readonly actionGetKeyGroup = "cloudfront:GetKeyGroup";
 	/** [Read] cloudfront:GetKeyGroupConfig */
-	static readonly GET_KEY_GROUP_CONFIG = "cloudfront:GetKeyGroupConfig";
+	static readonly actionGetKeyGroupConfig = "cloudfront:GetKeyGroupConfig";
 	/** [Read] cloudfront:GetManagedCertificateDetails */
-	static readonly GET_MANAGED_CERTIFICATE_DETAILS =
+	static readonly actionGetManagedCertificateDetails =
 		"cloudfront:GetManagedCertificateDetails";
 	/** [Read] cloudfront:GetMonitoringSubscription */
-	static readonly GET_MONITORING_SUBSCRIPTION =
+	static readonly actionGetMonitoringSubscription =
 		"cloudfront:GetMonitoringSubscription";
 	/** [Read] cloudfront:GetOriginAccessControl */
-	static readonly GET_ORIGIN_ACCESS_CONTROL =
+	static readonly actionGetOriginAccessControl =
 		"cloudfront:GetOriginAccessControl";
 	/** [Read] cloudfront:GetOriginAccessControlConfig */
-	static readonly GET_ORIGIN_ACCESS_CONTROL_CONFIG =
+	static readonly actionGetOriginAccessControlConfig =
 		"cloudfront:GetOriginAccessControlConfig";
 	/** [Read] cloudfront:GetOriginRequestPolicy */
-	static readonly GET_ORIGIN_REQUEST_POLICY =
+	static readonly actionGetOriginRequestPolicy =
 		"cloudfront:GetOriginRequestPolicy";
 	/** [Read] cloudfront:GetOriginRequestPolicyConfig */
-	static readonly GET_ORIGIN_REQUEST_POLICY_CONFIG =
+	static readonly actionGetOriginRequestPolicyConfig =
 		"cloudfront:GetOriginRequestPolicyConfig";
 	/** [Read] cloudfront:GetPublicKey */
-	static readonly GET_PUBLIC_KEY = "cloudfront:GetPublicKey";
+	static readonly actionGetPublicKey = "cloudfront:GetPublicKey";
 	/** [Read] cloudfront:GetPublicKeyConfig */
-	static readonly GET_PUBLIC_KEY_CONFIG = "cloudfront:GetPublicKeyConfig";
+	static readonly actionGetPublicKeyConfig = "cloudfront:GetPublicKeyConfig";
 	/** [Read] cloudfront:GetRealtimeLogConfig */
-	static readonly GET_REALTIME_LOG_CONFIG = "cloudfront:GetRealtimeLogConfig";
+	static readonly actionGetRealtimeLogConfig =
+		"cloudfront:GetRealtimeLogConfig";
 	/** [Read] cloudfront:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "cloudfront:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "cloudfront:GetResourcePolicy";
 	/** [Read] cloudfront:GetResponseHeadersPolicy */
-	static readonly GET_RESPONSE_HEADERS_POLICY =
+	static readonly actionGetResponseHeadersPolicy =
 		"cloudfront:GetResponseHeadersPolicy";
 	/** [Read] cloudfront:GetResponseHeadersPolicyConfig */
-	static readonly GET_RESPONSE_HEADERS_POLICY_CONFIG =
+	static readonly actionGetResponseHeadersPolicyConfig =
 		"cloudfront:GetResponseHeadersPolicyConfig";
 	/** [Read] cloudfront:GetSavingsPlan */
-	static readonly GET_SAVINGS_PLAN = "cloudfront:GetSavingsPlan";
+	static readonly actionGetSavingsPlan = "cloudfront:GetSavingsPlan";
 	/** [Read] cloudfront:GetStreamingDistribution */
-	static readonly GET_STREAMING_DISTRIBUTION =
+	static readonly actionGetStreamingDistribution =
 		"cloudfront:GetStreamingDistribution";
 	/** [Read] cloudfront:GetStreamingDistributionConfig */
-	static readonly GET_STREAMING_DISTRIBUTION_CONFIG =
+	static readonly actionGetStreamingDistributionConfig =
 		"cloudfront:GetStreamingDistributionConfig";
 	/** [Read] cloudfront:GetTrustStore */
-	static readonly GET_TRUST_STORE = "cloudfront:GetTrustStore";
+	static readonly actionGetTrustStore = "cloudfront:GetTrustStore";
 	/** [Read] cloudfront:GetVpcOrigin */
-	static readonly GET_VPC_ORIGIN = "cloudfront:GetVpcOrigin";
+	static readonly actionGetVpcOrigin = "cloudfront:GetVpcOrigin";
 	/** [List] cloudfront:ListAnycastIpLists */
-	static readonly LIST_ANYCAST_IP_LISTS = "cloudfront:ListAnycastIpLists";
+	static readonly ListAnycastIpLists = "cloudfront:ListAnycastIpLists";
 	/** [List] cloudfront:ListCachePolicies */
-	static readonly LIST_CACHE_POLICIES = "cloudfront:ListCachePolicies";
+	static readonly ListCachePolicies = "cloudfront:ListCachePolicies";
 	/** [List] cloudfront:ListCloudFrontOriginAccessIdentities */
-	static readonly LIST_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITIES =
+	static readonly ListCloudFrontOriginAccessIdentities =
 		"cloudfront:ListCloudFrontOriginAccessIdentities";
 	/** [List] cloudfront:ListConflictingAliases */
-	static readonly LIST_CONFLICTING_ALIASES =
-		"cloudfront:ListConflictingAliases";
+	static readonly ListConflictingAliases = "cloudfront:ListConflictingAliases";
 	/** [List] cloudfront:ListConnectionFunctions */
-	static readonly LIST_CONNECTION_FUNCTIONS =
+	static readonly ListConnectionFunctions =
 		"cloudfront:ListConnectionFunctions";
 	/** [List] cloudfront:ListConnectionGroups */
-	static readonly LIST_CONNECTION_GROUPS = "cloudfront:ListConnectionGroups";
+	static readonly ListConnectionGroups = "cloudfront:ListConnectionGroups";
 	/** [List] cloudfront:ListContinuousDeploymentPolicies */
-	static readonly LIST_CONTINUOUS_DEPLOYMENT_POLICIES =
+	static readonly ListContinuousDeploymentPolicies =
 		"cloudfront:ListContinuousDeploymentPolicies";
 	/** [List] cloudfront:ListDistributionTenants */
-	static readonly LIST_DISTRIBUTION_TENANTS =
+	static readonly ListDistributionTenants =
 		"cloudfront:ListDistributionTenants";
 	/** [List] cloudfront:ListDistributionTenantsByCustomization */
-	static readonly LIST_DISTRIBUTION_TENANTS_BY_CUSTOMIZATION =
+	static readonly ListDistributionTenantsByCustomization =
 		"cloudfront:ListDistributionTenantsByCustomization";
 	/** [List] cloudfront:ListDistributions */
-	static readonly LIST_DISTRIBUTIONS = "cloudfront:ListDistributions";
+	static readonly ListDistributions = "cloudfront:ListDistributions";
 	/** [List] cloudfront:ListDistributionsByAnycastIpListId */
-	static readonly LIST_DISTRIBUTIONS_BY_ANYCAST_IP_LIST_ID =
+	static readonly ListDistributionsByAnycastIpListId =
 		"cloudfront:ListDistributionsByAnycastIpListId";
 	/** [List] cloudfront:ListDistributionsByCachePolicyId */
-	static readonly LIST_DISTRIBUTIONS_BY_CACHE_POLICY_ID =
+	static readonly ListDistributionsByCachePolicyId =
 		"cloudfront:ListDistributionsByCachePolicyId";
 	/** [List] cloudfront:ListDistributionsByConnectionFunction */
-	static readonly LIST_DISTRIBUTIONS_BY_CONNECTION_FUNCTION =
+	static readonly ListDistributionsByConnectionFunction =
 		"cloudfront:ListDistributionsByConnectionFunction";
 	/** [List] cloudfront:ListDistributionsByConnectionMode */
-	static readonly LIST_DISTRIBUTIONS_BY_CONNECTION_MODE =
+	static readonly ListDistributionsByConnectionMode =
 		"cloudfront:ListDistributionsByConnectionMode";
 	/** [List] cloudfront:ListDistributionsByKeyGroup */
-	static readonly LIST_DISTRIBUTIONS_BY_KEY_GROUP =
+	static readonly ListDistributionsByKeyGroup =
 		"cloudfront:ListDistributionsByKeyGroup";
 	/** [List] cloudfront:ListDistributionsByLambdaFunction */
-	static readonly LIST_DISTRIBUTIONS_BY_LAMBDA_FUNCTION =
+	static readonly ListDistributionsByLambdaFunction =
 		"cloudfront:ListDistributionsByLambdaFunction";
 	/** [List] cloudfront:ListDistributionsByOriginRequestPolicyId */
-	static readonly LIST_DISTRIBUTIONS_BY_ORIGIN_REQUEST_POLICY_ID =
+	static readonly ListDistributionsByOriginRequestPolicyId =
 		"cloudfront:ListDistributionsByOriginRequestPolicyId";
 	/** [List] cloudfront:ListDistributionsByRealtimeLogConfig */
-	static readonly LIST_DISTRIBUTIONS_BY_REALTIME_LOG_CONFIG =
+	static readonly ListDistributionsByRealtimeLogConfig =
 		"cloudfront:ListDistributionsByRealtimeLogConfig";
 	/** [List] cloudfront:ListDistributionsByResponseHeadersPolicyId */
-	static readonly LIST_DISTRIBUTIONS_BY_RESPONSE_HEADERS_POLICY_ID =
+	static readonly ListDistributionsByResponseHeadersPolicyId =
 		"cloudfront:ListDistributionsByResponseHeadersPolicyId";
 	/** [List] cloudfront:ListDistributionsByTrustStore */
-	static readonly LIST_DISTRIBUTIONS_BY_TRUST_STORE =
+	static readonly ListDistributionsByTrustStore =
 		"cloudfront:ListDistributionsByTrustStore";
 	/** [List] cloudfront:ListDistributionsByVpcOriginId */
-	static readonly LIST_DISTRIBUTIONS_BY_VPC_ORIGIN_ID =
+	static readonly ListDistributionsByVpcOriginId =
 		"cloudfront:ListDistributionsByVpcOriginId";
 	/** [List] cloudfront:ListDistributionsByWebACLId */
-	static readonly LIST_DISTRIBUTIONS_BY_WEB_ACL_ID =
+	static readonly ListDistributionsByWebACLId =
 		"cloudfront:ListDistributionsByWebACLId";
 	/** [List] cloudfront:ListDomainConflicts */
-	static readonly LIST_DOMAIN_CONFLICTS = "cloudfront:ListDomainConflicts";
+	static readonly ListDomainConflicts = "cloudfront:ListDomainConflicts";
 	/** [List] cloudfront:ListFieldLevelEncryptionConfigs */
-	static readonly LIST_FIELD_LEVEL_ENCRYPTION_CONFIGS =
+	static readonly ListFieldLevelEncryptionConfigs =
 		"cloudfront:ListFieldLevelEncryptionConfigs";
 	/** [List] cloudfront:ListFieldLevelEncryptionProfiles */
-	static readonly LIST_FIELD_LEVEL_ENCRYPTION_PROFILES =
+	static readonly ListFieldLevelEncryptionProfiles =
 		"cloudfront:ListFieldLevelEncryptionProfiles";
 	/** [List] cloudfront:ListFunctions */
-	static readonly LIST_FUNCTIONS = "cloudfront:ListFunctions";
+	static readonly ListFunctions = "cloudfront:ListFunctions";
 	/** [List] cloudfront:ListInvalidations */
-	static readonly LIST_INVALIDATIONS = "cloudfront:ListInvalidations";
+	static readonly ListInvalidations = "cloudfront:ListInvalidations";
 	/** [List] cloudfront:ListInvalidationsForDistributionTenant */
-	static readonly LIST_INVALIDATIONS_FOR_DISTRIBUTION_TENANT =
+	static readonly ListInvalidationsForDistributionTenant =
 		"cloudfront:ListInvalidationsForDistributionTenant";
 	/** [List] cloudfront:ListKeyGroups */
-	static readonly LIST_KEY_GROUPS = "cloudfront:ListKeyGroups";
+	static readonly ListKeyGroups = "cloudfront:ListKeyGroups";
 	/** [List] cloudfront:ListKeyValueStores */
-	static readonly LIST_KEY_VALUE_STORES = "cloudfront:ListKeyValueStores";
+	static readonly ListKeyValueStores = "cloudfront:ListKeyValueStores";
 	/** [List] cloudfront:ListOriginAccessControls */
-	static readonly LIST_ORIGIN_ACCESS_CONTROLS =
+	static readonly ListOriginAccessControls =
 		"cloudfront:ListOriginAccessControls";
 	/** [List] cloudfront:ListOriginRequestPolicies */
-	static readonly LIST_ORIGIN_REQUEST_POLICIES =
+	static readonly ListOriginRequestPolicies =
 		"cloudfront:ListOriginRequestPolicies";
 	/** [List] cloudfront:ListPublicKeys */
-	static readonly LIST_PUBLIC_KEYS = "cloudfront:ListPublicKeys";
+	static readonly ListPublicKeys = "cloudfront:ListPublicKeys";
 	/** [List] cloudfront:ListRateCards */
-	static readonly LIST_RATE_CARDS = "cloudfront:ListRateCards";
+	static readonly ListRateCards = "cloudfront:ListRateCards";
 	/** [List] cloudfront:ListRealtimeLogConfigs */
-	static readonly LIST_REALTIME_LOG_CONFIGS =
-		"cloudfront:ListRealtimeLogConfigs";
+	static readonly ListRealtimeLogConfigs = "cloudfront:ListRealtimeLogConfigs";
 	/** [List] cloudfront:ListResponseHeadersPolicies */
-	static readonly LIST_RESPONSE_HEADERS_POLICIES =
+	static readonly ListResponseHeadersPolicies =
 		"cloudfront:ListResponseHeadersPolicies";
 	/** [List] cloudfront:ListSavingsPlans */
-	static readonly LIST_SAVINGS_PLANS = "cloudfront:ListSavingsPlans";
+	static readonly ListSavingsPlans = "cloudfront:ListSavingsPlans";
 	/** [List] cloudfront:ListStreamingDistributions */
-	static readonly LIST_STREAMING_DISTRIBUTIONS =
+	static readonly ListStreamingDistributions =
 		"cloudfront:ListStreamingDistributions";
 	/** [Read] cloudfront:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cloudfront:ListTagsForResource";
+	static readonly ListTagsForResource = "cloudfront:ListTagsForResource";
 	/** [List] cloudfront:ListTrustStores */
-	static readonly LIST_TRUST_STORES = "cloudfront:ListTrustStores";
+	static readonly ListTrustStores = "cloudfront:ListTrustStores";
 	/** [List] cloudfront:ListUsages */
-	static readonly LIST_USAGES = "cloudfront:ListUsages";
+	static readonly ListUsages = "cloudfront:ListUsages";
 	/** [List] cloudfront:ListVpcOrigins */
-	static readonly LIST_VPC_ORIGINS = "cloudfront:ListVpcOrigins";
+	static readonly ListVpcOrigins = "cloudfront:ListVpcOrigins";
 	/** [Write] cloudfront:PublishConnectionFunction */
-	static readonly PUBLISH_CONNECTION_FUNCTION =
+	static readonly PublishConnectionFunction =
 		"cloudfront:PublishConnectionFunction";
 	/** [Write] cloudfront:PublishFunction */
-	static readonly PUBLISH_FUNCTION = "cloudfront:PublishFunction";
+	static readonly PublishFunction = "cloudfront:PublishFunction";
 	/** [Write] cloudfront:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "cloudfront:PutResourcePolicy";
+	static readonly PutResourcePolicy = "cloudfront:PutResourcePolicy";
 	/** [Tagging] cloudfront:TagResource */
-	static readonly TAG_RESOURCE = "cloudfront:TagResource";
+	static readonly TagResource = "cloudfront:TagResource";
 	/** [Write] cloudfront:TestConnectionFunction */
-	static readonly TEST_CONNECTION_FUNCTION =
-		"cloudfront:TestConnectionFunction";
+	static readonly TestConnectionFunction = "cloudfront:TestConnectionFunction";
 	/** [Write] cloudfront:TestFunction */
-	static readonly TEST_FUNCTION = "cloudfront:TestFunction";
+	static readonly TestFunction = "cloudfront:TestFunction";
 	/** [Tagging] cloudfront:UntagResource */
-	static readonly UNTAG_RESOURCE = "cloudfront:UntagResource";
+	static readonly UntagResource = "cloudfront:UntagResource";
 	/** [Write] cloudfront:UpdateAnycastIpList */
-	static readonly UPDATE_ANYCAST_IP_LIST = "cloudfront:UpdateAnycastIpList";
+	static readonly UpdateAnycastIpList = "cloudfront:UpdateAnycastIpList";
 	/** [Write] cloudfront:UpdateCachePolicy */
-	static readonly UPDATE_CACHE_POLICY = "cloudfront:UpdateCachePolicy";
+	static readonly UpdateCachePolicy = "cloudfront:UpdateCachePolicy";
 	/** [Write] cloudfront:UpdateCloudFrontOriginAccessIdentity */
-	static readonly UPDATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY =
+	static readonly UpdateCloudFrontOriginAccessIdentity =
 		"cloudfront:UpdateCloudFrontOriginAccessIdentity";
 	/** [Write] cloudfront:UpdateConnectionFunction */
-	static readonly UPDATE_CONNECTION_FUNCTION =
+	static readonly UpdateConnectionFunction =
 		"cloudfront:UpdateConnectionFunction";
 	/** [Write] cloudfront:UpdateConnectionGroup */
-	static readonly UPDATE_CONNECTION_GROUP = "cloudfront:UpdateConnectionGroup";
+	static readonly UpdateConnectionGroup = "cloudfront:UpdateConnectionGroup";
 	/** [Write] cloudfront:UpdateContinuousDeploymentPolicy */
-	static readonly UPDATE_CONTINUOUS_DEPLOYMENT_POLICY =
+	static readonly UpdateContinuousDeploymentPolicy =
 		"cloudfront:UpdateContinuousDeploymentPolicy";
 	/** [Write] cloudfront:UpdateDistribution */
-	static readonly UPDATE_DISTRIBUTION = "cloudfront:UpdateDistribution";
+	static readonly UpdateDistribution = "cloudfront:UpdateDistribution";
 	/** [Write] cloudfront:UpdateDistributionTenant */
-	static readonly UPDATE_DISTRIBUTION_TENANT =
+	static readonly UpdateDistributionTenant =
 		"cloudfront:UpdateDistributionTenant";
 	/** [Write] cloudfront:UpdateDistributionWithStagingConfig */
-	static readonly UPDATE_DISTRIBUTION_WITH_STAGING_CONFIG =
+	static readonly UpdateDistributionWithStagingConfig =
 		"cloudfront:UpdateDistributionWithStagingConfig";
 	/** [Write] cloudfront:UpdateDomainAssociation */
-	static readonly UPDATE_DOMAIN_ASSOCIATION =
+	static readonly UpdateDomainAssociation =
 		"cloudfront:UpdateDomainAssociation";
 	/** [Write] cloudfront:UpdateFieldLevelEncryptionConfig */
-	static readonly UPDATE_FIELD_LEVEL_ENCRYPTION_CONFIG =
+	static readonly UpdateFieldLevelEncryptionConfig =
 		"cloudfront:UpdateFieldLevelEncryptionConfig";
 	/** [Write] cloudfront:UpdateFieldLevelEncryptionProfile */
-	static readonly UPDATE_FIELD_LEVEL_ENCRYPTION_PROFILE =
+	static readonly UpdateFieldLevelEncryptionProfile =
 		"cloudfront:UpdateFieldLevelEncryptionProfile";
 	/** [Write] cloudfront:UpdateFunction */
-	static readonly UPDATE_FUNCTION = "cloudfront:UpdateFunction";
+	static readonly UpdateFunction = "cloudfront:UpdateFunction";
 	/** [Write] cloudfront:UpdateKeyGroup */
-	static readonly UPDATE_KEY_GROUP = "cloudfront:UpdateKeyGroup";
+	static readonly UpdateKeyGroup = "cloudfront:UpdateKeyGroup";
 	/** [Write] cloudfront:UpdateKeyValueStore */
-	static readonly UPDATE_KEY_VALUE_STORE = "cloudfront:UpdateKeyValueStore";
+	static readonly UpdateKeyValueStore = "cloudfront:UpdateKeyValueStore";
 	/** [Write] cloudfront:UpdateOriginAccessControl */
-	static readonly UPDATE_ORIGIN_ACCESS_CONTROL =
+	static readonly UpdateOriginAccessControl =
 		"cloudfront:UpdateOriginAccessControl";
 	/** [Write] cloudfront:UpdateOriginRequestPolicy */
-	static readonly UPDATE_ORIGIN_REQUEST_POLICY =
+	static readonly UpdateOriginRequestPolicy =
 		"cloudfront:UpdateOriginRequestPolicy";
 	/** [Write] cloudfront:UpdatePublicKey */
-	static readonly UPDATE_PUBLIC_KEY = "cloudfront:UpdatePublicKey";
+	static readonly UpdatePublicKey = "cloudfront:UpdatePublicKey";
 	/** [Write] cloudfront:UpdateRealtimeLogConfig */
-	static readonly UPDATE_REALTIME_LOG_CONFIG =
+	static readonly UpdateRealtimeLogConfig =
 		"cloudfront:UpdateRealtimeLogConfig";
 	/** [Write] cloudfront:UpdateResponseHeadersPolicy */
-	static readonly UPDATE_RESPONSE_HEADERS_POLICY =
+	static readonly UpdateResponseHeadersPolicy =
 		"cloudfront:UpdateResponseHeadersPolicy";
 	/** [Write] cloudfront:UpdateSavingsPlan */
-	static readonly UPDATE_SAVINGS_PLAN = "cloudfront:UpdateSavingsPlan";
+	static readonly UpdateSavingsPlan = "cloudfront:UpdateSavingsPlan";
 	/** [Write] cloudfront:UpdateStreamingDistribution */
-	static readonly UPDATE_STREAMING_DISTRIBUTION =
+	static readonly UpdateStreamingDistribution =
 		"cloudfront:UpdateStreamingDistribution";
 	/** [Write] cloudfront:UpdateTrustStore */
-	static readonly UPDATE_TRUST_STORE = "cloudfront:UpdateTrustStore";
+	static readonly UpdateTrustStore = "cloudfront:UpdateTrustStore";
 	/** [Write] cloudfront:UpdateVpcOrigin */
-	static readonly UPDATE_VPC_ORIGIN = "cloudfront:UpdateVpcOrigin";
+	static readonly UpdateVpcOrigin = "cloudfront:UpdateVpcOrigin";
 	/** [Read] cloudfront:VerifyDnsConfiguration */
-	static readonly VERIFY_DNS_CONFIGURATION =
-		"cloudfront:VerifyDnsConfiguration";
+	static readonly VerifyDnsConfiguration = "cloudfront:VerifyDnsConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudFrontActions.DESCRIBE_CONNECTION_FUNCTION,
-		CloudFrontActions.DESCRIBE_FUNCTION,
-		CloudFrontActions.DESCRIBE_KEY_VALUE_STORE,
-		CloudFrontActions.GET_ANYCAST_IP_LIST,
-		CloudFrontActions.GET_CACHE_POLICY,
-		CloudFrontActions.GET_CACHE_POLICY_CONFIG,
-		CloudFrontActions.GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY,
-		CloudFrontActions.GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY_CONFIG,
-		CloudFrontActions.GET_CONNECTION_FUNCTION,
-		CloudFrontActions.GET_CONNECTION_GROUP,
-		CloudFrontActions.GET_CONNECTION_GROUP_BY_ROUTING_ENDPOINT,
-		CloudFrontActions.GET_CONTINUOUS_DEPLOYMENT_POLICY,
-		CloudFrontActions.GET_CONTINUOUS_DEPLOYMENT_POLICY_CONFIG,
-		CloudFrontActions.GET_DISTRIBUTION,
-		CloudFrontActions.GET_DISTRIBUTION_CONFIG,
-		CloudFrontActions.GET_DISTRIBUTION_TENANT,
-		CloudFrontActions.GET_DISTRIBUTION_TENANT_BY_DOMAIN,
-		CloudFrontActions.GET_FIELD_LEVEL_ENCRYPTION,
-		CloudFrontActions.GET_FIELD_LEVEL_ENCRYPTION_CONFIG,
-		CloudFrontActions.GET_FIELD_LEVEL_ENCRYPTION_PROFILE,
-		CloudFrontActions.GET_FIELD_LEVEL_ENCRYPTION_PROFILE_CONFIG,
-		CloudFrontActions.GET_FUNCTION,
-		CloudFrontActions.GET_INVALIDATION,
-		CloudFrontActions.GET_INVALIDATION_FOR_DISTRIBUTION_TENANT,
-		CloudFrontActions.GET_KEY_GROUP,
-		CloudFrontActions.GET_KEY_GROUP_CONFIG,
-		CloudFrontActions.GET_MANAGED_CERTIFICATE_DETAILS,
-		CloudFrontActions.GET_MONITORING_SUBSCRIPTION,
-		CloudFrontActions.GET_ORIGIN_ACCESS_CONTROL,
-		CloudFrontActions.GET_ORIGIN_ACCESS_CONTROL_CONFIG,
-		CloudFrontActions.GET_ORIGIN_REQUEST_POLICY,
-		CloudFrontActions.GET_ORIGIN_REQUEST_POLICY_CONFIG,
-		CloudFrontActions.GET_PUBLIC_KEY,
-		CloudFrontActions.GET_PUBLIC_KEY_CONFIG,
-		CloudFrontActions.GET_REALTIME_LOG_CONFIG,
-		CloudFrontActions.GET_RESOURCE_POLICY,
-		CloudFrontActions.GET_RESPONSE_HEADERS_POLICY,
-		CloudFrontActions.GET_RESPONSE_HEADERS_POLICY_CONFIG,
-		CloudFrontActions.GET_SAVINGS_PLAN,
-		CloudFrontActions.GET_STREAMING_DISTRIBUTION,
-		CloudFrontActions.GET_STREAMING_DISTRIBUTION_CONFIG,
-		CloudFrontActions.GET_TRUST_STORE,
-		CloudFrontActions.GET_VPC_ORIGIN,
-		CloudFrontActions.LIST_TAGS_FOR_RESOURCE,
-		CloudFrontActions.VERIFY_DNS_CONFIGURATION,
+	static readonly AllReadActions: string[] = [
+		CloudFrontActions.DescribeConnectionFunction,
+		CloudFrontActions.DescribeFunction,
+		CloudFrontActions.DescribeKeyValueStore,
+		CloudFrontActions.actionGetAnycastIpList,
+		CloudFrontActions.actionGetCachePolicy,
+		CloudFrontActions.actionGetCachePolicyConfig,
+		CloudFrontActions.actionGetCloudFrontOriginAccessIdentity,
+		CloudFrontActions.actionGetCloudFrontOriginAccessIdentityConfig,
+		CloudFrontActions.actionGetConnectionFunction,
+		CloudFrontActions.actionGetConnectionGroup,
+		CloudFrontActions.actionGetConnectionGroupByRoutingEndpoint,
+		CloudFrontActions.actionGetContinuousDeploymentPolicy,
+		CloudFrontActions.actionGetContinuousDeploymentPolicyConfig,
+		CloudFrontActions.actionGetDistribution,
+		CloudFrontActions.actionGetDistributionConfig,
+		CloudFrontActions.actionGetDistributionTenant,
+		CloudFrontActions.actionGetDistributionTenantByDomain,
+		CloudFrontActions.actionGetFieldLevelEncryption,
+		CloudFrontActions.actionGetFieldLevelEncryptionConfig,
+		CloudFrontActions.actionGetFieldLevelEncryptionProfile,
+		CloudFrontActions.actionGetFieldLevelEncryptionProfileConfig,
+		CloudFrontActions.actionGetFunction,
+		CloudFrontActions.actionGetInvalidation,
+		CloudFrontActions.actionGetInvalidationForDistributionTenant,
+		CloudFrontActions.actionGetKeyGroup,
+		CloudFrontActions.actionGetKeyGroupConfig,
+		CloudFrontActions.actionGetManagedCertificateDetails,
+		CloudFrontActions.actionGetMonitoringSubscription,
+		CloudFrontActions.actionGetOriginAccessControl,
+		CloudFrontActions.actionGetOriginAccessControlConfig,
+		CloudFrontActions.actionGetOriginRequestPolicy,
+		CloudFrontActions.actionGetOriginRequestPolicyConfig,
+		CloudFrontActions.actionGetPublicKey,
+		CloudFrontActions.actionGetPublicKeyConfig,
+		CloudFrontActions.actionGetRealtimeLogConfig,
+		CloudFrontActions.actionGetResourcePolicy,
+		CloudFrontActions.actionGetResponseHeadersPolicy,
+		CloudFrontActions.actionGetResponseHeadersPolicyConfig,
+		CloudFrontActions.actionGetSavingsPlan,
+		CloudFrontActions.actionGetStreamingDistribution,
+		CloudFrontActions.actionGetStreamingDistributionConfig,
+		CloudFrontActions.actionGetTrustStore,
+		CloudFrontActions.actionGetVpcOrigin,
+		CloudFrontActions.ListTagsForResource,
+		CloudFrontActions.VerifyDnsConfiguration,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudFrontActions.ASSOCIATE_ALIAS,
-		CloudFrontActions.ASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL,
-		CloudFrontActions.ASSOCIATE_DISTRIBUTION_WEB_ACL,
-		CloudFrontActions.COPY_DISTRIBUTION,
-		CloudFrontActions.CREATE_ANYCAST_IP_LIST,
-		CloudFrontActions.CREATE_CACHE_POLICY,
-		CloudFrontActions.CREATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY,
-		CloudFrontActions.CREATE_CONNECTION_FUNCTION,
-		CloudFrontActions.CREATE_CONNECTION_GROUP,
-		CloudFrontActions.CREATE_CONTINUOUS_DEPLOYMENT_POLICY,
-		CloudFrontActions.CREATE_DISTRIBUTION,
-		CloudFrontActions.CREATE_DISTRIBUTION_TENANT,
-		CloudFrontActions.CREATE_FIELD_LEVEL_ENCRYPTION_CONFIG,
-		CloudFrontActions.CREATE_FIELD_LEVEL_ENCRYPTION_PROFILE,
-		CloudFrontActions.CREATE_FUNCTION,
-		CloudFrontActions.CREATE_INVALIDATION,
-		CloudFrontActions.CREATE_INVALIDATION_FOR_DISTRIBUTION_TENANT,
-		CloudFrontActions.CREATE_KEY_GROUP,
-		CloudFrontActions.CREATE_KEY_VALUE_STORE,
-		CloudFrontActions.CREATE_MONITORING_SUBSCRIPTION,
-		CloudFrontActions.CREATE_ORIGIN_ACCESS_CONTROL,
-		CloudFrontActions.CREATE_ORIGIN_REQUEST_POLICY,
-		CloudFrontActions.CREATE_PUBLIC_KEY,
-		CloudFrontActions.CREATE_REALTIME_LOG_CONFIG,
-		CloudFrontActions.CREATE_RESPONSE_HEADERS_POLICY,
-		CloudFrontActions.CREATE_SAVINGS_PLAN,
-		CloudFrontActions.CREATE_STREAMING_DISTRIBUTION,
-		CloudFrontActions.CREATE_STREAMING_DISTRIBUTION_WITH_TAGS,
-		CloudFrontActions.CREATE_TRUST_STORE,
-		CloudFrontActions.CREATE_VPC_ORIGIN,
-		CloudFrontActions.DELETE_ANYCAST_IP_LIST,
-		CloudFrontActions.DELETE_CACHE_POLICY,
-		CloudFrontActions.DELETE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY,
-		CloudFrontActions.DELETE_CONNECTION_FUNCTION,
-		CloudFrontActions.DELETE_CONNECTION_GROUP,
-		CloudFrontActions.DELETE_CONTINUOUS_DEPLOYMENT_POLICY,
-		CloudFrontActions.DELETE_DISTRIBUTION,
-		CloudFrontActions.DELETE_DISTRIBUTION_TENANT,
-		CloudFrontActions.DELETE_FIELD_LEVEL_ENCRYPTION_CONFIG,
-		CloudFrontActions.DELETE_FIELD_LEVEL_ENCRYPTION_PROFILE,
-		CloudFrontActions.DELETE_FUNCTION,
-		CloudFrontActions.DELETE_KEY_GROUP,
-		CloudFrontActions.DELETE_KEY_VALUE_STORE,
-		CloudFrontActions.DELETE_MONITORING_SUBSCRIPTION,
-		CloudFrontActions.DELETE_ORIGIN_ACCESS_CONTROL,
-		CloudFrontActions.DELETE_ORIGIN_REQUEST_POLICY,
-		CloudFrontActions.DELETE_PUBLIC_KEY,
-		CloudFrontActions.DELETE_REALTIME_LOG_CONFIG,
-		CloudFrontActions.DELETE_RESOURCE_POLICY,
-		CloudFrontActions.DELETE_RESPONSE_HEADERS_POLICY,
-		CloudFrontActions.DELETE_STREAMING_DISTRIBUTION,
-		CloudFrontActions.DELETE_TRUST_STORE,
-		CloudFrontActions.DELETE_VPC_ORIGIN,
-		CloudFrontActions.DISASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL,
-		CloudFrontActions.DISASSOCIATE_DISTRIBUTION_WEB_ACL,
-		CloudFrontActions.PUBLISH_CONNECTION_FUNCTION,
-		CloudFrontActions.PUBLISH_FUNCTION,
-		CloudFrontActions.PUT_RESOURCE_POLICY,
-		CloudFrontActions.TEST_CONNECTION_FUNCTION,
-		CloudFrontActions.TEST_FUNCTION,
-		CloudFrontActions.UPDATE_ANYCAST_IP_LIST,
-		CloudFrontActions.UPDATE_CACHE_POLICY,
-		CloudFrontActions.UPDATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY,
-		CloudFrontActions.UPDATE_CONNECTION_FUNCTION,
-		CloudFrontActions.UPDATE_CONNECTION_GROUP,
-		CloudFrontActions.UPDATE_CONTINUOUS_DEPLOYMENT_POLICY,
-		CloudFrontActions.UPDATE_DISTRIBUTION,
-		CloudFrontActions.UPDATE_DISTRIBUTION_TENANT,
-		CloudFrontActions.UPDATE_DISTRIBUTION_WITH_STAGING_CONFIG,
-		CloudFrontActions.UPDATE_DOMAIN_ASSOCIATION,
-		CloudFrontActions.UPDATE_FIELD_LEVEL_ENCRYPTION_CONFIG,
-		CloudFrontActions.UPDATE_FIELD_LEVEL_ENCRYPTION_PROFILE,
-		CloudFrontActions.UPDATE_FUNCTION,
-		CloudFrontActions.UPDATE_KEY_GROUP,
-		CloudFrontActions.UPDATE_KEY_VALUE_STORE,
-		CloudFrontActions.UPDATE_ORIGIN_ACCESS_CONTROL,
-		CloudFrontActions.UPDATE_ORIGIN_REQUEST_POLICY,
-		CloudFrontActions.UPDATE_PUBLIC_KEY,
-		CloudFrontActions.UPDATE_REALTIME_LOG_CONFIG,
-		CloudFrontActions.UPDATE_RESPONSE_HEADERS_POLICY,
-		CloudFrontActions.UPDATE_SAVINGS_PLAN,
-		CloudFrontActions.UPDATE_STREAMING_DISTRIBUTION,
-		CloudFrontActions.UPDATE_TRUST_STORE,
-		CloudFrontActions.UPDATE_VPC_ORIGIN,
+	static readonly AllWriteActions: string[] = [
+		CloudFrontActions.AssociateAlias,
+		CloudFrontActions.AssociateDistributionTenantWebACL,
+		CloudFrontActions.AssociateDistributionWebACL,
+		CloudFrontActions.CopyDistribution,
+		CloudFrontActions.CreateAnycastIpList,
+		CloudFrontActions.CreateCachePolicy,
+		CloudFrontActions.CreateCloudFrontOriginAccessIdentity,
+		CloudFrontActions.CreateConnectionFunction,
+		CloudFrontActions.CreateConnectionGroup,
+		CloudFrontActions.CreateContinuousDeploymentPolicy,
+		CloudFrontActions.CreateDistribution,
+		CloudFrontActions.CreateDistributionTenant,
+		CloudFrontActions.CreateFieldLevelEncryptionConfig,
+		CloudFrontActions.CreateFieldLevelEncryptionProfile,
+		CloudFrontActions.CreateFunction,
+		CloudFrontActions.CreateInvalidation,
+		CloudFrontActions.CreateInvalidationForDistributionTenant,
+		CloudFrontActions.CreateKeyGroup,
+		CloudFrontActions.CreateKeyValueStore,
+		CloudFrontActions.CreateMonitoringSubscription,
+		CloudFrontActions.CreateOriginAccessControl,
+		CloudFrontActions.CreateOriginRequestPolicy,
+		CloudFrontActions.CreatePublicKey,
+		CloudFrontActions.CreateRealtimeLogConfig,
+		CloudFrontActions.CreateResponseHeadersPolicy,
+		CloudFrontActions.CreateSavingsPlan,
+		CloudFrontActions.CreateStreamingDistribution,
+		CloudFrontActions.CreateStreamingDistributionWithTags,
+		CloudFrontActions.CreateTrustStore,
+		CloudFrontActions.CreateVpcOrigin,
+		CloudFrontActions.DeleteAnycastIpList,
+		CloudFrontActions.DeleteCachePolicy,
+		CloudFrontActions.DeleteCloudFrontOriginAccessIdentity,
+		CloudFrontActions.DeleteConnectionFunction,
+		CloudFrontActions.DeleteConnectionGroup,
+		CloudFrontActions.DeleteContinuousDeploymentPolicy,
+		CloudFrontActions.DeleteDistribution,
+		CloudFrontActions.DeleteDistributionTenant,
+		CloudFrontActions.DeleteFieldLevelEncryptionConfig,
+		CloudFrontActions.DeleteFieldLevelEncryptionProfile,
+		CloudFrontActions.DeleteFunction,
+		CloudFrontActions.DeleteKeyGroup,
+		CloudFrontActions.DeleteKeyValueStore,
+		CloudFrontActions.DeleteMonitoringSubscription,
+		CloudFrontActions.DeleteOriginAccessControl,
+		CloudFrontActions.DeleteOriginRequestPolicy,
+		CloudFrontActions.DeletePublicKey,
+		CloudFrontActions.DeleteRealtimeLogConfig,
+		CloudFrontActions.DeleteResourcePolicy,
+		CloudFrontActions.DeleteResponseHeadersPolicy,
+		CloudFrontActions.DeleteStreamingDistribution,
+		CloudFrontActions.DeleteTrustStore,
+		CloudFrontActions.DeleteVpcOrigin,
+		CloudFrontActions.DisassociateDistributionTenantWebACL,
+		CloudFrontActions.DisassociateDistributionWebACL,
+		CloudFrontActions.PublishConnectionFunction,
+		CloudFrontActions.PublishFunction,
+		CloudFrontActions.PutResourcePolicy,
+		CloudFrontActions.TestConnectionFunction,
+		CloudFrontActions.TestFunction,
+		CloudFrontActions.UpdateAnycastIpList,
+		CloudFrontActions.UpdateCachePolicy,
+		CloudFrontActions.UpdateCloudFrontOriginAccessIdentity,
+		CloudFrontActions.UpdateConnectionFunction,
+		CloudFrontActions.UpdateConnectionGroup,
+		CloudFrontActions.UpdateContinuousDeploymentPolicy,
+		CloudFrontActions.UpdateDistribution,
+		CloudFrontActions.UpdateDistributionTenant,
+		CloudFrontActions.UpdateDistributionWithStagingConfig,
+		CloudFrontActions.UpdateDomainAssociation,
+		CloudFrontActions.UpdateFieldLevelEncryptionConfig,
+		CloudFrontActions.UpdateFieldLevelEncryptionProfile,
+		CloudFrontActions.UpdateFunction,
+		CloudFrontActions.UpdateKeyGroup,
+		CloudFrontActions.UpdateKeyValueStore,
+		CloudFrontActions.UpdateOriginAccessControl,
+		CloudFrontActions.UpdateOriginRequestPolicy,
+		CloudFrontActions.UpdatePublicKey,
+		CloudFrontActions.UpdateRealtimeLogConfig,
+		CloudFrontActions.UpdateResponseHeadersPolicy,
+		CloudFrontActions.UpdateSavingsPlan,
+		CloudFrontActions.UpdateStreamingDistribution,
+		CloudFrontActions.UpdateTrustStore,
+		CloudFrontActions.UpdateVpcOrigin,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CloudFrontActions.LIST_ANYCAST_IP_LISTS,
-		CloudFrontActions.LIST_CACHE_POLICIES,
-		CloudFrontActions.LIST_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITIES,
-		CloudFrontActions.LIST_CONFLICTING_ALIASES,
-		CloudFrontActions.LIST_CONNECTION_FUNCTIONS,
-		CloudFrontActions.LIST_CONNECTION_GROUPS,
-		CloudFrontActions.LIST_CONTINUOUS_DEPLOYMENT_POLICIES,
-		CloudFrontActions.LIST_DISTRIBUTION_TENANTS,
-		CloudFrontActions.LIST_DISTRIBUTION_TENANTS_BY_CUSTOMIZATION,
-		CloudFrontActions.LIST_DISTRIBUTIONS,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_ANYCAST_IP_LIST_ID,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_CACHE_POLICY_ID,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_CONNECTION_FUNCTION,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_CONNECTION_MODE,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_KEY_GROUP,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_LAMBDA_FUNCTION,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_ORIGIN_REQUEST_POLICY_ID,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_REALTIME_LOG_CONFIG,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_RESPONSE_HEADERS_POLICY_ID,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_TRUST_STORE,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_VPC_ORIGIN_ID,
-		CloudFrontActions.LIST_DISTRIBUTIONS_BY_WEB_ACL_ID,
-		CloudFrontActions.LIST_DOMAIN_CONFLICTS,
-		CloudFrontActions.LIST_FIELD_LEVEL_ENCRYPTION_CONFIGS,
-		CloudFrontActions.LIST_FIELD_LEVEL_ENCRYPTION_PROFILES,
-		CloudFrontActions.LIST_FUNCTIONS,
-		CloudFrontActions.LIST_INVALIDATIONS,
-		CloudFrontActions.LIST_INVALIDATIONS_FOR_DISTRIBUTION_TENANT,
-		CloudFrontActions.LIST_KEY_GROUPS,
-		CloudFrontActions.LIST_KEY_VALUE_STORES,
-		CloudFrontActions.LIST_ORIGIN_ACCESS_CONTROLS,
-		CloudFrontActions.LIST_ORIGIN_REQUEST_POLICIES,
-		CloudFrontActions.LIST_PUBLIC_KEYS,
-		CloudFrontActions.LIST_RATE_CARDS,
-		CloudFrontActions.LIST_REALTIME_LOG_CONFIGS,
-		CloudFrontActions.LIST_RESPONSE_HEADERS_POLICIES,
-		CloudFrontActions.LIST_SAVINGS_PLANS,
-		CloudFrontActions.LIST_STREAMING_DISTRIBUTIONS,
-		CloudFrontActions.LIST_TRUST_STORES,
-		CloudFrontActions.LIST_USAGES,
-		CloudFrontActions.LIST_VPC_ORIGINS,
+	static readonly AllListActions: string[] = [
+		CloudFrontActions.ListAnycastIpLists,
+		CloudFrontActions.ListCachePolicies,
+		CloudFrontActions.ListCloudFrontOriginAccessIdentities,
+		CloudFrontActions.ListConflictingAliases,
+		CloudFrontActions.ListConnectionFunctions,
+		CloudFrontActions.ListConnectionGroups,
+		CloudFrontActions.ListContinuousDeploymentPolicies,
+		CloudFrontActions.ListDistributionTenants,
+		CloudFrontActions.ListDistributionTenantsByCustomization,
+		CloudFrontActions.ListDistributions,
+		CloudFrontActions.ListDistributionsByAnycastIpListId,
+		CloudFrontActions.ListDistributionsByCachePolicyId,
+		CloudFrontActions.ListDistributionsByConnectionFunction,
+		CloudFrontActions.ListDistributionsByConnectionMode,
+		CloudFrontActions.ListDistributionsByKeyGroup,
+		CloudFrontActions.ListDistributionsByLambdaFunction,
+		CloudFrontActions.ListDistributionsByOriginRequestPolicyId,
+		CloudFrontActions.ListDistributionsByRealtimeLogConfig,
+		CloudFrontActions.ListDistributionsByResponseHeadersPolicyId,
+		CloudFrontActions.ListDistributionsByTrustStore,
+		CloudFrontActions.ListDistributionsByVpcOriginId,
+		CloudFrontActions.ListDistributionsByWebACLId,
+		CloudFrontActions.ListDomainConflicts,
+		CloudFrontActions.ListFieldLevelEncryptionConfigs,
+		CloudFrontActions.ListFieldLevelEncryptionProfiles,
+		CloudFrontActions.ListFunctions,
+		CloudFrontActions.ListInvalidations,
+		CloudFrontActions.ListInvalidationsForDistributionTenant,
+		CloudFrontActions.ListKeyGroups,
+		CloudFrontActions.ListKeyValueStores,
+		CloudFrontActions.ListOriginAccessControls,
+		CloudFrontActions.ListOriginRequestPolicies,
+		CloudFrontActions.ListPublicKeys,
+		CloudFrontActions.ListRateCards,
+		CloudFrontActions.ListRealtimeLogConfigs,
+		CloudFrontActions.ListResponseHeadersPolicies,
+		CloudFrontActions.ListSavingsPlans,
+		CloudFrontActions.ListStreamingDistributions,
+		CloudFrontActions.ListTrustStores,
+		CloudFrontActions.ListUsages,
+		CloudFrontActions.ListVpcOrigins,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CloudFrontActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
+	static readonly AllPermissionManagementActions: string[] = [
+		CloudFrontActions.AllowVendedLogDeliveryForResource,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CloudFrontActions.TAG_RESOURCE,
-		CloudFrontActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CloudFrontActions.TagResource,
+		CloudFrontActions.UntagResource,
 	];
 }
 
-const AnycastIPListArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):anycast-ip-list/(?<id>[^:/?]+)$",
-);
-const CachePolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):cache-policy/(?<id>[^:/?]+)$",
-);
-const ConnectionFunctionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):connection-function/(?<id>[^:/?]+)$",
-);
-const ConnectionGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):connection-group/(?<id>[^:/?]+)$",
-);
-const ContinuousDeploymentPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):continuous-deployment-policy/(?<id>[^:/?]+)$",
-);
-const DistributionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):distribution/(?<distributionId>[^:/?]+)$",
-);
-const DistributionTenantArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):distribution-tenant/(?<id>[^:/?]+)$",
-);
-const FieldLevelEncryptionConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):field-level-encryption-config/(?<id>[^:/?]+)$",
-);
-const FieldLevelEncryptionProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):field-level-encryption-profile/(?<id>[^:/?]+)$",
-);
-const FunctionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):function/(?<name>[^:/?]+)$",
-);
-const KeyValueStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):key-value-store/(?<name>[^:/?]+)$",
-);
-const OriginAccessControlArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-access-control/(?<id>[^:/?]+)$",
-);
-const OriginAccessIdentityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-access-identity/(?<id>[^:/?]+)$",
-);
-const OriginRequestPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-request-policy/(?<id>[^:/?]+)$",
-);
-const RealtimeLogConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):realtime-log-config/(?<name>[^:/?]+)$",
-);
-const ResponseHeadersPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):response-headers-policy/(?<id>[^:/?]+)$",
-);
-const StreamingDistributionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):streaming-distribution/(?<distributionId>[^:/?]+)$",
-);
-const TrustStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):trust-store/(?<id>[^:/?]+)$",
-);
-const VpcoriginArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):vpcorigin/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a anycast-ip-list ARN.
+ */
+export interface CloudFrontAnycastIPListArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a anycast-ip-list ARN.
+ */
+export interface CloudFrontAnycastIPListArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a cache-policy ARN.
+ */
+export interface CloudFrontCachePolicyArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cache-policy ARN.
+ */
+export interface CloudFrontCachePolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a connection-function ARN.
+ */
+export interface CloudFrontConnectionFunctionArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection-function ARN.
+ */
+export interface CloudFrontConnectionFunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a connection-group ARN.
+ */
+export interface CloudFrontConnectionGroupArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection-group ARN.
+ */
+export interface CloudFrontConnectionGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a continuous-deployment-policy ARN.
+ */
+export interface CloudFrontContinuousDeploymentPolicyArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a continuous-deployment-policy ARN.
+ */
+export interface CloudFrontContinuousDeploymentPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a distribution ARN.
+ */
+export interface CloudFrontDistributionArnProps {
+	/** The DistributionId component of the ARN. */
+	readonly distributionId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a distribution ARN.
+ */
+export interface CloudFrontDistributionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DistributionId component. */
+	readonly distributionId: string;
+}
+
+/**
+ * Properties for building a distribution-tenant ARN.
+ */
+export interface CloudFrontDistributionTenantArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a distribution-tenant ARN.
+ */
+export interface CloudFrontDistributionTenantArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a field-level-encryption-config ARN.
+ */
+export interface CloudFrontFieldLevelEncryptionConfigArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a field-level-encryption-config ARN.
+ */
+export interface CloudFrontFieldLevelEncryptionConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a field-level-encryption-profile ARN.
+ */
+export interface CloudFrontFieldLevelEncryptionProfileArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a field-level-encryption-profile ARN.
+ */
+export interface CloudFrontFieldLevelEncryptionProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a function ARN.
+ */
+export interface CloudFrontFunctionArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function ARN.
+ */
+export interface CloudFrontFunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a key-value-store ARN.
+ */
+export interface CloudFrontKeyValueStoreArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a key-value-store ARN.
+ */
+export interface CloudFrontKeyValueStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a origin-access-control ARN.
+ */
+export interface CloudFrontOriginAccessControlArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a origin-access-control ARN.
+ */
+export interface CloudFrontOriginAccessControlArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a origin-access-identity ARN.
+ */
+export interface CloudFrontOriginAccessIdentityArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a origin-access-identity ARN.
+ */
+export interface CloudFrontOriginAccessIdentityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a origin-request-policy ARN.
+ */
+export interface CloudFrontOriginRequestPolicyArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a origin-request-policy ARN.
+ */
+export interface CloudFrontOriginRequestPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a realtime-log-config ARN.
+ */
+export interface CloudFrontRealtimeLogConfigArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a realtime-log-config ARN.
+ */
+export interface CloudFrontRealtimeLogConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a response-headers-policy ARN.
+ */
+export interface CloudFrontResponseHeadersPolicyArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a response-headers-policy ARN.
+ */
+export interface CloudFrontResponseHeadersPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a streaming-distribution ARN.
+ */
+export interface CloudFrontStreamingDistributionArnProps {
+	/** The DistributionId component of the ARN. */
+	readonly distributionId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a streaming-distribution ARN.
+ */
+export interface CloudFrontStreamingDistributionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DistributionId component. */
+	readonly distributionId: string;
+}
+
+/**
+ * Properties for building a trust-store ARN.
+ */
+export interface CloudFrontTrustStoreArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trust-store ARN.
+ */
+export interface CloudFrontTrustStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a vpcorigin ARN.
+ */
+export interface CloudFrontVpcoriginArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpcorigin ARN.
+ */
+export interface CloudFrontVpcoriginArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const AnycastIPListArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):anycast-ip-list\/(?<id>[^:/?]+)$/;
+const CachePolicyArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):cache-policy\/(?<id>[^:/?]+)$/;
+const ConnectionFunctionArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):connection-function\/(?<id>[^:/?]+)$/;
+const ConnectionGroupArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):connection-group\/(?<id>[^:/?]+)$/;
+const ContinuousDeploymentPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):continuous-deployment-policy\/(?<id>[^:/?]+)$/;
+const DistributionArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):distribution\/(?<distributionId>[^:/?]+)$/;
+const DistributionTenantArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):distribution-tenant\/(?<id>[^:/?]+)$/;
+const FieldLevelEncryptionConfigArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):field-level-encryption-config\/(?<id>[^:/?]+)$/;
+const FieldLevelEncryptionProfileArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):field-level-encryption-profile\/(?<id>[^:/?]+)$/;
+const FunctionArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):function\/(?<name>[^:/?]+)$/;
+const KeyValueStoreArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):key-value-store\/(?<name>[^:/?]+)$/;
+const OriginAccessControlArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-access-control\/(?<id>[^:/?]+)$/;
+const OriginAccessIdentityArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-access-identity\/(?<id>[^:/?]+)$/;
+const OriginRequestPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):origin-request-policy\/(?<id>[^:/?]+)$/;
+const RealtimeLogConfigArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):realtime-log-config\/(?<name>[^:/?]+)$/;
+const ResponseHeadersPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):response-headers-policy\/(?<id>[^:/?]+)$/;
+const StreamingDistributionArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):streaming-distribution\/(?<distributionId>[^:/?]+)$/;
+const TrustStoreArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):trust-store\/(?<id>[^:/?]+)$/;
+const VpcoriginArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):vpcorigin\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudfront resources.
@@ -709,14 +1147,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the anycast-ip-list resource.
 	 */
-	static anycastIPList(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anycastIPList(props: CloudFrontAnycastIPListArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:anycast-ip-list/${props.id}`;
 	}
 
@@ -731,11 +1162,9 @@ export class CloudFrontResources {
 	 * Parses a anycast-ip-list ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnycastIPListArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseAnycastIPListArn(
+		arn: string,
+	): CloudFrontAnycastIPListArnComponents {
 		const match = AnycastIPListArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid anycast-ip-list ARN: ${arn}`);
@@ -750,14 +1179,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the cache-policy resource.
 	 */
-	static cachePolicy(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cachePolicy(props: CloudFrontCachePolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:cache-policy/${props.id}`;
 	}
 
@@ -772,11 +1194,7 @@ export class CloudFrontResources {
 	 * Parses a cache-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCachePolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseCachePolicyArn(arn: string): CloudFrontCachePolicyArnComponents {
 		const match = CachePolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cache-policy ARN: ${arn}`);
@@ -791,14 +1209,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the connection-function resource.
 	 */
-	static connectionFunction(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectionFunction(
+		props: CloudFrontConnectionFunctionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:connection-function/${props.id}`;
 	}
 
@@ -813,11 +1226,9 @@ export class CloudFrontResources {
 	 * Parses a connection-function ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionFunctionArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseConnectionFunctionArn(
+		arn: string,
+	): CloudFrontConnectionFunctionArnComponents {
 		const match = ConnectionFunctionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection-function ARN: ${arn}`);
@@ -832,14 +1243,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the connection-group resource.
 	 */
-	static connectionGroup(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectionGroup(props: CloudFrontConnectionGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:connection-group/${props.id}`;
 	}
 
@@ -854,11 +1258,9 @@ export class CloudFrontResources {
 	 * Parses a connection-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionGroupArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseConnectionGroupArn(
+		arn: string,
+	): CloudFrontConnectionGroupArnComponents {
 		const match = ConnectionGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection-group ARN: ${arn}`);
@@ -873,14 +1275,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the continuous-deployment-policy resource.
 	 */
-	static continuousDeploymentPolicy(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static continuousDeploymentPolicy(
+		props: CloudFrontContinuousDeploymentPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:continuous-deployment-policy/${props.id}`;
 	}
 
@@ -895,11 +1292,9 @@ export class CloudFrontResources {
 	 * Parses a continuous-deployment-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContinuousDeploymentPolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseContinuousDeploymentPolicyArn(
+		arn: string,
+	): CloudFrontContinuousDeploymentPolicyArnComponents {
 		const match = ContinuousDeploymentPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid continuous-deployment-policy ARN: ${arn}`);
@@ -914,14 +1309,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the distribution resource.
 	 */
-	static distribution(props: {
-		/** The DistributionId component of the ARN. */
-		readonly distributionId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static distribution(props: CloudFrontDistributionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:distribution/${props.distributionId}`;
 	}
 
@@ -936,11 +1324,9 @@ export class CloudFrontResources {
 	 * Parses a distribution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDistributionArn(arn: string): {
-		partition: string;
-		account: string;
-		distributionId: string;
-	} {
+	static parseDistributionArn(
+		arn: string,
+	): CloudFrontDistributionArnComponents {
 		const match = DistributionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid distribution ARN: ${arn}`);
@@ -955,14 +1341,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the distribution-tenant resource.
 	 */
-	static distributionTenant(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static distributionTenant(
+		props: CloudFrontDistributionTenantArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:distribution-tenant/${props.id}`;
 	}
 
@@ -977,11 +1358,9 @@ export class CloudFrontResources {
 	 * Parses a distribution-tenant ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDistributionTenantArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseDistributionTenantArn(
+		arn: string,
+	): CloudFrontDistributionTenantArnComponents {
 		const match = DistributionTenantArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid distribution-tenant ARN: ${arn}`);
@@ -996,14 +1375,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the field-level-encryption-config resource.
 	 */
-	static fieldLevelEncryptionConfig(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fieldLevelEncryptionConfig(
+		props: CloudFrontFieldLevelEncryptionConfigArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:field-level-encryption-config/${props.id}`;
 	}
 
@@ -1018,11 +1392,9 @@ export class CloudFrontResources {
 	 * Parses a field-level-encryption-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFieldLevelEncryptionConfigArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseFieldLevelEncryptionConfigArn(
+		arn: string,
+	): CloudFrontFieldLevelEncryptionConfigArnComponents {
 		const match = FieldLevelEncryptionConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid field-level-encryption-config ARN: ${arn}`);
@@ -1037,14 +1409,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the field-level-encryption-profile resource.
 	 */
-	static fieldLevelEncryptionProfile(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fieldLevelEncryptionProfile(
+		props: CloudFrontFieldLevelEncryptionProfileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:field-level-encryption-profile/${props.id}`;
 	}
 
@@ -1059,11 +1426,9 @@ export class CloudFrontResources {
 	 * Parses a field-level-encryption-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFieldLevelEncryptionProfileArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseFieldLevelEncryptionProfileArn(
+		arn: string,
+	): CloudFrontFieldLevelEncryptionProfileArnComponents {
 		const match = FieldLevelEncryptionProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid field-level-encryption-profile ARN: ${arn}`);
@@ -1078,14 +1443,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the function resource.
 	 */
-	static function(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static function(props: CloudFrontFunctionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:function/${props.name}`;
 	}
 
@@ -1100,11 +1458,7 @@ export class CloudFrontResources {
 	 * Parses a function ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionArn(arn: string): {
-		partition: string;
-		account: string;
-		name: string;
-	} {
+	static parseFunctionArn(arn: string): CloudFrontFunctionArnComponents {
 		const match = FunctionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function ARN: ${arn}`);
@@ -1119,14 +1473,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the key-value-store resource.
 	 */
-	static keyValueStore(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static keyValueStore(props: CloudFrontKeyValueStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:key-value-store/${props.name}`;
 	}
 
@@ -1141,11 +1488,9 @@ export class CloudFrontResources {
 	 * Parses a key-value-store ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKeyValueStoreArn(arn: string): {
-		partition: string;
-		account: string;
-		name: string;
-	} {
+	static parseKeyValueStoreArn(
+		arn: string,
+	): CloudFrontKeyValueStoreArnComponents {
 		const match = KeyValueStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid key-value-store ARN: ${arn}`);
@@ -1160,14 +1505,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the origin-access-control resource.
 	 */
-	static originAccessControl(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static originAccessControl(
+		props: CloudFrontOriginAccessControlArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:origin-access-control/${props.id}`;
 	}
 
@@ -1182,11 +1522,9 @@ export class CloudFrontResources {
 	 * Parses a origin-access-control ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOriginAccessControlArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseOriginAccessControlArn(
+		arn: string,
+	): CloudFrontOriginAccessControlArnComponents {
 		const match = OriginAccessControlArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid origin-access-control ARN: ${arn}`);
@@ -1201,14 +1539,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the origin-access-identity resource.
 	 */
-	static originAccessIdentity(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static originAccessIdentity(
+		props: CloudFrontOriginAccessIdentityArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:origin-access-identity/${props.id}`;
 	}
 
@@ -1223,11 +1556,9 @@ export class CloudFrontResources {
 	 * Parses a origin-access-identity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOriginAccessIdentityArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseOriginAccessIdentityArn(
+		arn: string,
+	): CloudFrontOriginAccessIdentityArnComponents {
 		const match = OriginAccessIdentityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid origin-access-identity ARN: ${arn}`);
@@ -1242,14 +1573,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the origin-request-policy resource.
 	 */
-	static originRequestPolicy(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static originRequestPolicy(
+		props: CloudFrontOriginRequestPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:origin-request-policy/${props.id}`;
 	}
 
@@ -1264,11 +1590,9 @@ export class CloudFrontResources {
 	 * Parses a origin-request-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOriginRequestPolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseOriginRequestPolicyArn(
+		arn: string,
+	): CloudFrontOriginRequestPolicyArnComponents {
 		const match = OriginRequestPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid origin-request-policy ARN: ${arn}`);
@@ -1283,14 +1607,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the realtime-log-config resource.
 	 */
-	static realtimeLogConfig(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static realtimeLogConfig(props: CloudFrontRealtimeLogConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:realtime-log-config/${props.name}`;
 	}
 
@@ -1305,11 +1622,9 @@ export class CloudFrontResources {
 	 * Parses a realtime-log-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRealtimeLogConfigArn(arn: string): {
-		partition: string;
-		account: string;
-		name: string;
-	} {
+	static parseRealtimeLogConfigArn(
+		arn: string,
+	): CloudFrontRealtimeLogConfigArnComponents {
 		const match = RealtimeLogConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid realtime-log-config ARN: ${arn}`);
@@ -1324,14 +1639,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the response-headers-policy resource.
 	 */
-	static responseHeadersPolicy(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static responseHeadersPolicy(
+		props: CloudFrontResponseHeadersPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:response-headers-policy/${props.id}`;
 	}
 
@@ -1346,11 +1656,9 @@ export class CloudFrontResources {
 	 * Parses a response-headers-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResponseHeadersPolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseResponseHeadersPolicyArn(
+		arn: string,
+	): CloudFrontResponseHeadersPolicyArnComponents {
 		const match = ResponseHeadersPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid response-headers-policy ARN: ${arn}`);
@@ -1365,14 +1673,9 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the streaming-distribution resource.
 	 */
-	static streamingDistribution(props: {
-		/** The DistributionId component of the ARN. */
-		readonly distributionId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamingDistribution(
+		props: CloudFrontStreamingDistributionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:streaming-distribution/${props.distributionId}`;
 	}
 
@@ -1387,11 +1690,9 @@ export class CloudFrontResources {
 	 * Parses a streaming-distribution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamingDistributionArn(arn: string): {
-		partition: string;
-		account: string;
-		distributionId: string;
-	} {
+	static parseStreamingDistributionArn(
+		arn: string,
+	): CloudFrontStreamingDistributionArnComponents {
 		const match = StreamingDistributionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid streaming-distribution ARN: ${arn}`);
@@ -1406,14 +1707,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the trust-store resource.
 	 */
-	static trustStore(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trustStore(props: CloudFrontTrustStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:trust-store/${props.id}`;
 	}
 
@@ -1428,11 +1722,7 @@ export class CloudFrontResources {
 	 * Parses a trust-store ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrustStoreArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseTrustStoreArn(arn: string): CloudFrontTrustStoreArnComponents {
 		const match = TrustStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trust-store ARN: ${arn}`);
@@ -1447,14 +1737,7 @@ export class CloudFrontResources {
 	/**
 	 * Builds an ARN for the vpcorigin resource.
 	 */
-	static vpcorigin(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcorigin(props: CloudFrontVpcoriginArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:vpcorigin/${props.id}`;
 	}
 
@@ -1469,11 +1752,7 @@ export class CloudFrontResources {
 	 * Parses a vpcorigin ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVpcoriginArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseVpcoriginArn(arn: string): CloudFrontVpcoriginArnComponents {
 		const match = VpcoriginArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpcorigin ARN: ${arn}`);
@@ -1491,639 +1770,635 @@ export class CloudFrontResources {
  */
 export class CloudFrontOperations {
 	/** IAM actions required for the AssociateAlias API call. */
-	static readonly ASSOCIATE_ALIAS: string[] = [
+	static readonly AssociateAlias: string[] = [
 		"cloudfront:AssociateAlias",
 		"cloudfront:UpdateDistribution",
 	];
 	/** IAM actions required for the AssociateDistributionTenantWebACL API call. */
-	static readonly ASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL: string[] = [
+	static readonly AssociateDistributionTenantWebACL: string[] = [
 		"cloudfront:AssociateDistributionTenantWebACL",
 	];
 	/** IAM actions required for the AssociateDistributionWebACL API call. */
-	static readonly ASSOCIATE_DISTRIBUTION_WEB_ACL: string[] = [
+	static readonly AssociateDistributionWebACL: string[] = [
 		"cloudfront:AssociateDistributionWebACL",
 		"cloudfront:GetVpcOrigin",
 	];
 	/** IAM actions required for the CopyDistribution API call. */
-	static readonly COPY_DISTRIBUTION: string[] = [
+	static readonly CopyDistribution: string[] = [
 		"cloudfront:CopyDistribution",
 		"cloudfront:CreateDistribution",
 		"cloudfront:GetDistribution",
 		"cloudfront:GetVpcOrigin",
 	];
 	/** IAM actions required for the CreateAnycastIpList API call. */
-	static readonly CREATE_ANYCAST_IP_LIST: string[] = [
+	static readonly CreateAnycastIpList: string[] = [
 		"cloudfront:CreateAnycastIpList",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateCachePolicy API call. */
-	static readonly CREATE_CACHE_POLICY: string[] = [
+	static readonly CreateCachePolicy: string[] = [
 		"cloudfront:CreateCachePolicy",
 	];
 	/** IAM actions required for the CreateCloudFrontOriginAccessIdentity API call. */
-	static readonly CREATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY: string[] = [
+	static readonly CreateCloudFrontOriginAccessIdentity: string[] = [
 		"cloudfront:CreateCloudFrontOriginAccessIdentity",
 	];
 	/** IAM actions required for the CreateConnectionFunction API call. */
-	static readonly CREATE_CONNECTION_FUNCTION: string[] = [
+	static readonly CreateConnectionFunction: string[] = [
 		"cloudfront:CreateConnectionFunction",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateConnectionGroup API call. */
-	static readonly CREATE_CONNECTION_GROUP: string[] = [
+	static readonly CreateConnectionGroup: string[] = [
 		"cloudfront:CreateConnectionGroup",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateContinuousDeploymentPolicy API call. */
-	static readonly CREATE_CONTINUOUS_DEPLOYMENT_POLICY: string[] = [
+	static readonly CreateContinuousDeploymentPolicy: string[] = [
 		"cloudfront:CreateContinuousDeploymentPolicy",
 	];
 	/** IAM actions required for the CreateDistribution API call. */
-	static readonly CREATE_DISTRIBUTION: string[] = [
+	static readonly CreateDistribution: string[] = [
 		"cloudfront:CreateConnectionGroup",
 		"cloudfront:CreateDistribution",
 		"cloudfront:GetVpcOrigin",
 	];
 	/** IAM actions required for the CreateDistributionTenant API call. */
-	static readonly CREATE_DISTRIBUTION_TENANT: string[] = [
+	static readonly CreateDistributionTenant: string[] = [
 		"cloudfront:CreateDistributionTenant",
 		"cloudfront:GetVpcOrigin",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateDistributionWithTags API call. */
-	static readonly CREATE_DISTRIBUTION_WITH_TAGS: string[] = [
+	static readonly CreateDistributionWithTags: string[] = [
 		"cloudfront:CreateConnectionGroup",
 		"cloudfront:CreateDistribution",
 		"cloudfront:GetVpcOrigin",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateFieldLevelEncryptionConfig API call. */
-	static readonly CREATE_FIELD_LEVEL_ENCRYPTION_CONFIG: string[] = [
+	static readonly CreateFieldLevelEncryptionConfig: string[] = [
 		"cloudfront:CreateFieldLevelEncryptionConfig",
 	];
 	/** IAM actions required for the CreateFieldLevelEncryptionProfile API call. */
-	static readonly CREATE_FIELD_LEVEL_ENCRYPTION_PROFILE: string[] = [
+	static readonly CreateFieldLevelEncryptionProfile: string[] = [
 		"cloudfront:CreateFieldLevelEncryptionProfile",
 	];
 	/** IAM actions required for the CreateFunction API call. */
-	static readonly CREATE_FUNCTION: string[] = [
+	static readonly CreateFunction: string[] = [
 		"cloudfront:CreateFunction",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateInvalidation API call. */
-	static readonly CREATE_INVALIDATION: string[] = [
+	static readonly CreateInvalidation: string[] = [
 		"cloudfront:CreateInvalidation",
 	];
 	/** IAM actions required for the CreateInvalidationForDistributionTenant API call. */
-	static readonly CREATE_INVALIDATION_FOR_DISTRIBUTION_TENANT: string[] = [
+	static readonly CreateInvalidationForDistributionTenant: string[] = [
 		"cloudfront:CreateInvalidationForDistributionTenant",
 	];
 	/** IAM actions required for the CreateKeyGroup API call. */
-	static readonly CREATE_KEY_GROUP: string[] = ["cloudfront:CreateKeyGroup"];
+	static readonly CreateKeyGroup: string[] = ["cloudfront:CreateKeyGroup"];
 	/** IAM actions required for the CreateKeyValueStore API call. */
-	static readonly CREATE_KEY_VALUE_STORE: string[] = [
+	static readonly CreateKeyValueStore: string[] = [
 		"cloudfront:CreateKeyValueStore",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateMonitoringSubscription API call. */
-	static readonly CREATE_MONITORING_SUBSCRIPTION: string[] = [
+	static readonly CreateMonitoringSubscription: string[] = [
 		"cloudfront:CreateMonitoringSubscription",
 	];
 	/** IAM actions required for the CreateOriginAccessControl API call. */
-	static readonly CREATE_ORIGIN_ACCESS_CONTROL: string[] = [
+	static readonly CreateOriginAccessControl: string[] = [
 		"cloudfront:CreateOriginAccessControl",
 	];
 	/** IAM actions required for the CreateOriginRequestPolicy API call. */
-	static readonly CREATE_ORIGIN_REQUEST_POLICY: string[] = [
+	static readonly CreateOriginRequestPolicy: string[] = [
 		"cloudfront:CreateOriginRequestPolicy",
 	];
 	/** IAM actions required for the CreatePublicKey API call. */
-	static readonly CREATE_PUBLIC_KEY: string[] = ["cloudfront:CreatePublicKey"];
+	static readonly CreatePublicKey: string[] = ["cloudfront:CreatePublicKey"];
 	/** IAM actions required for the CreateRealtimeLogConfig API call. */
-	static readonly CREATE_REALTIME_LOG_CONFIG: string[] = [
+	static readonly CreateRealtimeLogConfig: string[] = [
 		"cloudfront:CreateRealtimeLogConfig",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateResponseHeadersPolicy API call. */
-	static readonly CREATE_RESPONSE_HEADERS_POLICY: string[] = [
+	static readonly CreateResponseHeadersPolicy: string[] = [
 		"cloudfront:CreateResponseHeadersPolicy",
 	];
 	/** IAM actions required for the CreateStreamingDistribution API call. */
-	static readonly CREATE_STREAMING_DISTRIBUTION: string[] = [];
+	static readonly CreateStreamingDistribution: string[] = [];
 	/** IAM actions required for the CreateStreamingDistributionWithTags API call. */
-	static readonly CREATE_STREAMING_DISTRIBUTION_WITH_TAGS: string[] = [];
+	static readonly CreateStreamingDistributionWithTags: string[] = [];
 	/** IAM actions required for the CreateTrustStore API call. */
-	static readonly CREATE_TRUST_STORE: string[] = [
+	static readonly CreateTrustStore: string[] = [
 		"cloudfront:CreateTrustStore",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the CreateVpcOrigin API call. */
-	static readonly CREATE_VPC_ORIGIN: string[] = [
+	static readonly CreateVpcOrigin: string[] = [
 		"cloudfront:CreateVpcOrigin",
 		"cloudfront:TagResource",
 	];
 	/** IAM actions required for the DeleteAnycastIpList API call. */
-	static readonly DELETE_ANYCAST_IP_LIST: string[] = [
+	static readonly DeleteAnycastIpList: string[] = [
 		"cloudfront:DeleteAnycastIpList",
 	];
 	/** IAM actions required for the DeleteCachePolicy API call. */
-	static readonly DELETE_CACHE_POLICY: string[] = [
+	static readonly DeleteCachePolicy: string[] = [
 		"cloudfront:DeleteCachePolicy",
 	];
 	/** IAM actions required for the DeleteCloudFrontOriginAccessIdentity API call. */
-	static readonly DELETE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY: string[] = [
+	static readonly DeleteCloudFrontOriginAccessIdentity: string[] = [
 		"cloudfront:DeleteCloudFrontOriginAccessIdentity",
 	];
 	/** IAM actions required for the DeleteConnectionFunction API call. */
-	static readonly DELETE_CONNECTION_FUNCTION: string[] = [
+	static readonly DeleteConnectionFunction: string[] = [
 		"cloudfront:DeleteConnectionFunction",
 	];
 	/** IAM actions required for the DeleteConnectionGroup API call. */
-	static readonly DELETE_CONNECTION_GROUP: string[] = [
+	static readonly DeleteConnectionGroup: string[] = [
 		"cloudfront:DeleteConnectionGroup",
 	];
 	/** IAM actions required for the DeleteContinuousDeploymentPolicy API call. */
-	static readonly DELETE_CONTINUOUS_DEPLOYMENT_POLICY: string[] = [
+	static readonly DeleteContinuousDeploymentPolicy: string[] = [
 		"cloudfront:DeleteContinuousDeploymentPolicy",
 	];
 	/** IAM actions required for the DeleteDistribution API call. */
-	static readonly DELETE_DISTRIBUTION: string[] = [
+	static readonly DeleteDistribution: string[] = [
 		"cloudfront:DeleteDistribution",
 	];
 	/** IAM actions required for the DeleteDistributionTenant API call. */
-	static readonly DELETE_DISTRIBUTION_TENANT: string[] = [
+	static readonly DeleteDistributionTenant: string[] = [
 		"cloudfront:DeleteDistributionTenant",
 	];
 	/** IAM actions required for the DeleteFieldLevelEncryptionConfig API call. */
-	static readonly DELETE_FIELD_LEVEL_ENCRYPTION_CONFIG: string[] = [
+	static readonly DeleteFieldLevelEncryptionConfig: string[] = [
 		"cloudfront:DeleteFieldLevelEncryptionConfig",
 	];
 	/** IAM actions required for the DeleteFieldLevelEncryptionProfile API call. */
-	static readonly DELETE_FIELD_LEVEL_ENCRYPTION_PROFILE: string[] = [
+	static readonly DeleteFieldLevelEncryptionProfile: string[] = [
 		"cloudfront:DeleteFieldLevelEncryptionProfile",
 	];
 	/** IAM actions required for the DeleteFunction API call. */
-	static readonly DELETE_FUNCTION: string[] = ["cloudfront:DeleteFunction"];
+	static readonly DeleteFunction: string[] = ["cloudfront:DeleteFunction"];
 	/** IAM actions required for the DeleteKeyGroup API call. */
-	static readonly DELETE_KEY_GROUP: string[] = ["cloudfront:DeleteKeyGroup"];
+	static readonly DeleteKeyGroup: string[] = ["cloudfront:DeleteKeyGroup"];
 	/** IAM actions required for the DeleteKeyValueStore API call. */
-	static readonly DELETE_KEY_VALUE_STORE: string[] = [
+	static readonly DeleteKeyValueStore: string[] = [
 		"cloudfront:DeleteKeyValueStore",
 	];
 	/** IAM actions required for the DeleteMonitoringSubscription API call. */
-	static readonly DELETE_MONITORING_SUBSCRIPTION: string[] = [
+	static readonly DeleteMonitoringSubscription: string[] = [
 		"cloudfront:DeleteMonitoringSubscription",
 	];
 	/** IAM actions required for the DeleteOriginAccessControl API call. */
-	static readonly DELETE_ORIGIN_ACCESS_CONTROL: string[] = [
+	static readonly DeleteOriginAccessControl: string[] = [
 		"cloudfront:DeleteOriginAccessControl",
 	];
 	/** IAM actions required for the DeleteOriginRequestPolicy API call. */
-	static readonly DELETE_ORIGIN_REQUEST_POLICY: string[] = [
+	static readonly DeleteOriginRequestPolicy: string[] = [
 		"cloudfront:DeleteOriginRequestPolicy",
 	];
 	/** IAM actions required for the DeletePublicKey API call. */
-	static readonly DELETE_PUBLIC_KEY: string[] = ["cloudfront:DeletePublicKey"];
+	static readonly DeletePublicKey: string[] = ["cloudfront:DeletePublicKey"];
 	/** IAM actions required for the DeleteRealtimeLogConfig API call. */
-	static readonly DELETE_REALTIME_LOG_CONFIG: string[] = [
+	static readonly DeleteRealtimeLogConfig: string[] = [
 		"cloudfront:DeleteRealtimeLogConfig",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"cloudfront:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteResponseHeadersPolicy API call. */
-	static readonly DELETE_RESPONSE_HEADERS_POLICY: string[] = [
+	static readonly DeleteResponseHeadersPolicy: string[] = [
 		"cloudfront:DeleteResponseHeadersPolicy",
 	];
 	/** IAM actions required for the DeleteServiceLinkedRole API call. */
-	static readonly DELETE_SERVICE_LINKED_ROLE: string[] = [];
+	static readonly DeleteServiceLinkedRole: string[] = [];
 	/** IAM actions required for the DeleteStreamingDistribution API call. */
-	static readonly DELETE_STREAMING_DISTRIBUTION: string[] = [
+	static readonly DeleteStreamingDistribution: string[] = [
 		"cloudfront:DeleteStreamingDistribution",
 	];
 	/** IAM actions required for the DeleteTrustStore API call. */
-	static readonly DELETE_TRUST_STORE: string[] = [
-		"cloudfront:DeleteTrustStore",
-	];
+	static readonly DeleteTrustStore: string[] = ["cloudfront:DeleteTrustStore"];
 	/** IAM actions required for the DeleteVpcOrigin API call. */
-	static readonly DELETE_VPC_ORIGIN: string[] = ["cloudfront:DeleteVpcOrigin"];
+	static readonly DeleteVpcOrigin: string[] = ["cloudfront:DeleteVpcOrigin"];
 	/** IAM actions required for the DescribeConnectionFunction API call. */
-	static readonly DESCRIBE_CONNECTION_FUNCTION: string[] = [
+	static readonly DescribeConnectionFunction: string[] = [
 		"cloudfront:DescribeConnectionFunction",
 	];
 	/** IAM actions required for the DescribeFunction API call. */
-	static readonly DESCRIBE_FUNCTION: string[] = ["cloudfront:DescribeFunction"];
+	static readonly DescribeFunction: string[] = ["cloudfront:DescribeFunction"];
 	/** IAM actions required for the DescribeKeyValueStore API call. */
-	static readonly DESCRIBE_KEY_VALUE_STORE: string[] = [
+	static readonly DescribeKeyValueStore: string[] = [
 		"cloudfront:DescribeKeyValueStore",
 	];
 	/** IAM actions required for the DisassociateDistributionTenantWebACL API call. */
-	static readonly DISASSOCIATE_DISTRIBUTION_TENANT_WEB_ACL: string[] = [
+	static readonly DisassociateDistributionTenantWebACL: string[] = [
 		"cloudfront:DisassociateDistributionTenantWebACL",
 	];
 	/** IAM actions required for the DisassociateDistributionWebACL API call. */
-	static readonly DISASSOCIATE_DISTRIBUTION_WEB_ACL: string[] = [
+	static readonly DisassociateDistributionWebACL: string[] = [
 		"cloudfront:DisassociateDistributionWebACL",
 	];
 	/** IAM actions required for the GetAnycastIpList API call. */
-	static readonly GET_ANYCAST_IP_LIST: string[] = [
+	static readonly opGetAnycastIpList: string[] = [
 		"cloudfront:GetAnycastIpList",
 	];
 	/** IAM actions required for the GetCachePolicy API call. */
-	static readonly GET_CACHE_POLICY: string[] = ["cloudfront:GetCachePolicy"];
+	static readonly opGetCachePolicy: string[] = ["cloudfront:GetCachePolicy"];
 	/** IAM actions required for the GetCachePolicyConfig API call. */
-	static readonly GET_CACHE_POLICY_CONFIG: string[] = [
+	static readonly opGetCachePolicyConfig: string[] = [
 		"cloudfront:GetCachePolicyConfig",
 	];
 	/** IAM actions required for the GetCloudFrontOriginAccessIdentity API call. */
-	static readonly GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY: string[] = [
+	static readonly opGetCloudFrontOriginAccessIdentity: string[] = [
 		"cloudfront:GetCloudFrontOriginAccessIdentity",
 	];
 	/** IAM actions required for the GetCloudFrontOriginAccessIdentityConfig API call. */
-	static readonly GET_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY_CONFIG: string[] = [
+	static readonly opGetCloudFrontOriginAccessIdentityConfig: string[] = [
 		"cloudfront:GetCloudFrontOriginAccessIdentityConfig",
 	];
 	/** IAM actions required for the GetConnectionFunction API call. */
-	static readonly GET_CONNECTION_FUNCTION: string[] = [
+	static readonly opGetConnectionFunction: string[] = [
 		"cloudfront:GetConnectionFunction",
 	];
 	/** IAM actions required for the GetConnectionGroup API call. */
-	static readonly GET_CONNECTION_GROUP: string[] = [
+	static readonly opGetConnectionGroup: string[] = [
 		"cloudfront:GetConnectionGroup",
 	];
 	/** IAM actions required for the GetConnectionGroupByRoutingEndpoint API call. */
-	static readonly GET_CONNECTION_GROUP_BY_ROUTING_ENDPOINT: string[] = [
+	static readonly opGetConnectionGroupByRoutingEndpoint: string[] = [
 		"cloudfront:GetConnectionGroupByRoutingEndpoint",
 	];
 	/** IAM actions required for the GetContinuousDeploymentPolicy API call. */
-	static readonly GET_CONTINUOUS_DEPLOYMENT_POLICY: string[] = [
+	static readonly opGetContinuousDeploymentPolicy: string[] = [
 		"cloudfront:GetContinuousDeploymentPolicy",
 	];
 	/** IAM actions required for the GetContinuousDeploymentPolicyConfig API call. */
-	static readonly GET_CONTINUOUS_DEPLOYMENT_POLICY_CONFIG: string[] = [
+	static readonly opGetContinuousDeploymentPolicyConfig: string[] = [
 		"cloudfront:GetContinuousDeploymentPolicyConfig",
 	];
 	/** IAM actions required for the GetDistribution API call. */
-	static readonly GET_DISTRIBUTION: string[] = ["cloudfront:GetDistribution"];
+	static readonly opGetDistribution: string[] = ["cloudfront:GetDistribution"];
 	/** IAM actions required for the GetDistributionConfig API call. */
-	static readonly GET_DISTRIBUTION_CONFIG: string[] = [
+	static readonly opGetDistributionConfig: string[] = [
 		"cloudfront:GetDistributionConfig",
 	];
 	/** IAM actions required for the GetDistributionTenant API call. */
-	static readonly GET_DISTRIBUTION_TENANT: string[] = [
+	static readonly opGetDistributionTenant: string[] = [
 		"cloudfront:GetDistributionTenant",
 	];
 	/** IAM actions required for the GetDistributionTenantByDomain API call. */
-	static readonly GET_DISTRIBUTION_TENANT_BY_DOMAIN: string[] = [
+	static readonly opGetDistributionTenantByDomain: string[] = [
 		"cloudfront:GetDistributionTenantByDomain",
 	];
 	/** IAM actions required for the GetFieldLevelEncryption API call. */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION: string[] = [
+	static readonly opGetFieldLevelEncryption: string[] = [
 		"cloudfront:GetFieldLevelEncryption",
 	];
 	/** IAM actions required for the GetFieldLevelEncryptionConfig API call. */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_CONFIG: string[] = [
+	static readonly opGetFieldLevelEncryptionConfig: string[] = [
 		"cloudfront:GetFieldLevelEncryptionConfig",
 	];
 	/** IAM actions required for the GetFieldLevelEncryptionProfile API call. */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_PROFILE: string[] = [
+	static readonly opGetFieldLevelEncryptionProfile: string[] = [
 		"cloudfront:GetFieldLevelEncryptionProfile",
 	];
 	/** IAM actions required for the GetFieldLevelEncryptionProfileConfig API call. */
-	static readonly GET_FIELD_LEVEL_ENCRYPTION_PROFILE_CONFIG: string[] = [
+	static readonly opGetFieldLevelEncryptionProfileConfig: string[] = [
 		"cloudfront:GetFieldLevelEncryptionProfileConfig",
 	];
 	/** IAM actions required for the GetFunction API call. */
-	static readonly GET_FUNCTION: string[] = ["cloudfront:GetFunction"];
+	static readonly opGetFunction: string[] = ["cloudfront:GetFunction"];
 	/** IAM actions required for the GetInvalidation API call. */
-	static readonly GET_INVALIDATION: string[] = ["cloudfront:GetInvalidation"];
+	static readonly opGetInvalidation: string[] = ["cloudfront:GetInvalidation"];
 	/** IAM actions required for the GetInvalidationForDistributionTenant API call. */
-	static readonly GET_INVALIDATION_FOR_DISTRIBUTION_TENANT: string[] = [
+	static readonly opGetInvalidationForDistributionTenant: string[] = [
 		"cloudfront:GetInvalidationForDistributionTenant",
 	];
 	/** IAM actions required for the GetKeyGroup API call. */
-	static readonly GET_KEY_GROUP: string[] = ["cloudfront:GetKeyGroup"];
+	static readonly opGetKeyGroup: string[] = ["cloudfront:GetKeyGroup"];
 	/** IAM actions required for the GetKeyGroupConfig API call. */
-	static readonly GET_KEY_GROUP_CONFIG: string[] = [
+	static readonly opGetKeyGroupConfig: string[] = [
 		"cloudfront:GetKeyGroupConfig",
 	];
 	/** IAM actions required for the GetManagedCertificateDetails API call. */
-	static readonly GET_MANAGED_CERTIFICATE_DETAILS: string[] = [
+	static readonly opGetManagedCertificateDetails: string[] = [
 		"cloudfront:GetManagedCertificateDetails",
 	];
 	/** IAM actions required for the GetMonitoringSubscription API call. */
-	static readonly GET_MONITORING_SUBSCRIPTION: string[] = [
+	static readonly opGetMonitoringSubscription: string[] = [
 		"cloudfront:GetMonitoringSubscription",
 	];
 	/** IAM actions required for the GetOriginAccessControl API call. */
-	static readonly GET_ORIGIN_ACCESS_CONTROL: string[] = [
+	static readonly opGetOriginAccessControl: string[] = [
 		"cloudfront:GetOriginAccessControl",
 	];
 	/** IAM actions required for the GetOriginAccessControlConfig API call. */
-	static readonly GET_ORIGIN_ACCESS_CONTROL_CONFIG: string[] = [
+	static readonly opGetOriginAccessControlConfig: string[] = [
 		"cloudfront:GetOriginAccessControlConfig",
 	];
 	/** IAM actions required for the GetOriginRequestPolicy API call. */
-	static readonly GET_ORIGIN_REQUEST_POLICY: string[] = [
+	static readonly opGetOriginRequestPolicy: string[] = [
 		"cloudfront:GetOriginRequestPolicy",
 	];
 	/** IAM actions required for the GetOriginRequestPolicyConfig API call. */
-	static readonly GET_ORIGIN_REQUEST_POLICY_CONFIG: string[] = [
+	static readonly opGetOriginRequestPolicyConfig: string[] = [
 		"cloudfront:GetOriginRequestPolicyConfig",
 	];
 	/** IAM actions required for the GetPublicKey API call. */
-	static readonly GET_PUBLIC_KEY: string[] = ["cloudfront:GetPublicKey"];
+	static readonly opGetPublicKey: string[] = ["cloudfront:GetPublicKey"];
 	/** IAM actions required for the GetPublicKeyConfig API call. */
-	static readonly GET_PUBLIC_KEY_CONFIG: string[] = [
+	static readonly opGetPublicKeyConfig: string[] = [
 		"cloudfront:GetPublicKeyConfig",
 	];
 	/** IAM actions required for the GetRealtimeLogConfig API call. */
-	static readonly GET_REALTIME_LOG_CONFIG: string[] = [
+	static readonly opGetRealtimeLogConfig: string[] = [
 		"cloudfront:GetRealtimeLogConfig",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"cloudfront:GetResourcePolicy",
 	];
 	/** IAM actions required for the GetResponseHeadersPolicy API call. */
-	static readonly GET_RESPONSE_HEADERS_POLICY: string[] = [
+	static readonly opGetResponseHeadersPolicy: string[] = [
 		"cloudfront:GetResponseHeadersPolicy",
 	];
 	/** IAM actions required for the GetResponseHeadersPolicyConfig API call. */
-	static readonly GET_RESPONSE_HEADERS_POLICY_CONFIG: string[] = [
+	static readonly opGetResponseHeadersPolicyConfig: string[] = [
 		"cloudfront:GetResponseHeadersPolicyConfig",
 	];
 	/** IAM actions required for the GetStreamingDistribution API call. */
-	static readonly GET_STREAMING_DISTRIBUTION: string[] = [
+	static readonly opGetStreamingDistribution: string[] = [
 		"cloudfront:GetStreamingDistribution",
 	];
 	/** IAM actions required for the GetStreamingDistributionConfig API call. */
-	static readonly GET_STREAMING_DISTRIBUTION_CONFIG: string[] = [
+	static readonly opGetStreamingDistributionConfig: string[] = [
 		"cloudfront:GetStreamingDistributionConfig",
 	];
 	/** IAM actions required for the GetTrustStore API call. */
-	static readonly GET_TRUST_STORE: string[] = ["cloudfront:GetTrustStore"];
+	static readonly opGetTrustStore: string[] = ["cloudfront:GetTrustStore"];
 	/** IAM actions required for the GetVpcOrigin API call. */
-	static readonly GET_VPC_ORIGIN: string[] = ["cloudfront:GetVpcOrigin"];
+	static readonly opGetVpcOrigin: string[] = ["cloudfront:GetVpcOrigin"];
 	/** IAM actions required for the ListAnycastIpLists API call. */
-	static readonly LIST_ANYCAST_IP_LISTS: string[] = [
+	static readonly ListAnycastIpLists: string[] = [
 		"cloudfront:ListAnycastIpLists",
 	];
 	/** IAM actions required for the ListCachePolicies API call. */
-	static readonly LIST_CACHE_POLICIES: string[] = [
+	static readonly ListCachePolicies: string[] = [
 		"cloudfront:ListCachePolicies",
 	];
 	/** IAM actions required for the ListCloudFrontOriginAccessIdentities API call. */
-	static readonly LIST_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITIES: string[] = [
+	static readonly ListCloudFrontOriginAccessIdentities: string[] = [
 		"cloudfront:ListCloudFrontOriginAccessIdentities",
 	];
 	/** IAM actions required for the ListConflictingAliases API call. */
-	static readonly LIST_CONFLICTING_ALIASES: string[] = [
+	static readonly ListConflictingAliases: string[] = [
 		"cloudfront:GetDistribution",
 		"cloudfront:ListConflictingAliases",
 	];
 	/** IAM actions required for the ListConnectionFunctions API call. */
-	static readonly LIST_CONNECTION_FUNCTIONS: string[] = [
+	static readonly ListConnectionFunctions: string[] = [
 		"cloudfront:ListConnectionFunctions",
 	];
 	/** IAM actions required for the ListConnectionGroups API call. */
-	static readonly LIST_CONNECTION_GROUPS: string[] = [
+	static readonly ListConnectionGroups: string[] = [
 		"cloudfront:ListConnectionGroups",
 	];
 	/** IAM actions required for the ListContinuousDeploymentPolicies API call. */
-	static readonly LIST_CONTINUOUS_DEPLOYMENT_POLICIES: string[] = [
+	static readonly ListContinuousDeploymentPolicies: string[] = [
 		"cloudfront:ListContinuousDeploymentPolicies",
 	];
 	/** IAM actions required for the ListDistributionTenants API call. */
-	static readonly LIST_DISTRIBUTION_TENANTS: string[] = [
+	static readonly ListDistributionTenants: string[] = [
 		"cloudfront:ListDistributionTenants",
 	];
 	/** IAM actions required for the ListDistributionTenantsByCustomization API call. */
-	static readonly LIST_DISTRIBUTION_TENANTS_BY_CUSTOMIZATION: string[] = [
+	static readonly ListDistributionTenantsByCustomization: string[] = [
 		"cloudfront:ListDistributionTenantsByCustomization",
 	];
 	/** IAM actions required for the ListDistributions API call. */
-	static readonly LIST_DISTRIBUTIONS: string[] = [
+	static readonly ListDistributions: string[] = [
 		"cloudfront:ListDistributions",
 	];
 	/** IAM actions required for the ListDistributionsByAnycastIpListId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_ANYCAST_IP_LIST_ID: string[] = [
+	static readonly ListDistributionsByAnycastIpListId: string[] = [
 		"cloudfront:ListDistributionsByAnycastIpListId",
 	];
 	/** IAM actions required for the ListDistributionsByCachePolicyId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_CACHE_POLICY_ID: string[] = [
+	static readonly ListDistributionsByCachePolicyId: string[] = [
 		"cloudfront:ListDistributionsByCachePolicyId",
 	];
 	/** IAM actions required for the ListDistributionsByConnectionFunction API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_CONNECTION_FUNCTION: string[] = [
+	static readonly ListDistributionsByConnectionFunction: string[] = [
 		"cloudfront:ListDistributionsByConnectionFunction",
 	];
 	/** IAM actions required for the ListDistributionsByConnectionMode API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_CONNECTION_MODE: string[] = [
+	static readonly ListDistributionsByConnectionMode: string[] = [
 		"cloudfront:ListDistributionsByConnectionMode",
 	];
 	/** IAM actions required for the ListDistributionsByKeyGroup API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_KEY_GROUP: string[] = [
+	static readonly ListDistributionsByKeyGroup: string[] = [
 		"cloudfront:ListDistributionsByKeyGroup",
 	];
 	/** IAM actions required for the ListDistributionsByOriginRequestPolicyId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_ORIGIN_REQUEST_POLICY_ID: string[] = [
+	static readonly ListDistributionsByOriginRequestPolicyId: string[] = [
 		"cloudfront:ListDistributionsByOriginRequestPolicyId",
 	];
 	/** IAM actions required for the ListDistributionsByOwnedResource API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_OWNED_RESOURCE: string[] = [];
+	static readonly ListDistributionsByOwnedResource: string[] = [];
 	/** IAM actions required for the ListDistributionsByRealtimeLogConfig API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_REALTIME_LOG_CONFIG: string[] = [
+	static readonly ListDistributionsByRealtimeLogConfig: string[] = [
 		"cloudfront:ListDistributionsByRealtimeLogConfig",
 	];
 	/** IAM actions required for the ListDistributionsByResponseHeadersPolicyId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_RESPONSE_HEADERS_POLICY_ID: string[] = [
+	static readonly ListDistributionsByResponseHeadersPolicyId: string[] = [
 		"cloudfront:ListDistributionsByResponseHeadersPolicyId",
 	];
 	/** IAM actions required for the ListDistributionsByTrustStore API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_TRUST_STORE: string[] = [
+	static readonly ListDistributionsByTrustStore: string[] = [
 		"cloudfront:ListDistributionsByTrustStore",
 	];
 	/** IAM actions required for the ListDistributionsByVpcOriginId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_VPC_ORIGIN_ID: string[] = [
+	static readonly ListDistributionsByVpcOriginId: string[] = [
 		"cloudfront:ListDistributionsByVpcOriginId",
 	];
 	/** IAM actions required for the ListDistributionsByWebACLId API call. */
-	static readonly LIST_DISTRIBUTIONS_BY_WEB_ACL_ID: string[] = [
+	static readonly ListDistributionsByWebACLId: string[] = [
 		"cloudfront:ListDistributionsByWebACLId",
 	];
 	/** IAM actions required for the ListDomainConflicts API call. */
-	static readonly LIST_DOMAIN_CONFLICTS: string[] = [
+	static readonly ListDomainConflicts: string[] = [
 		"cloudfront:GetDistribution",
 		"cloudfront:GetDistributionTenant",
 		"cloudfront:ListDomainConflicts",
 	];
 	/** IAM actions required for the ListFieldLevelEncryptionConfigs API call. */
-	static readonly LIST_FIELD_LEVEL_ENCRYPTION_CONFIGS: string[] = [
+	static readonly ListFieldLevelEncryptionConfigs: string[] = [
 		"cloudfront:ListFieldLevelEncryptionConfigs",
 	];
 	/** IAM actions required for the ListFieldLevelEncryptionProfiles API call. */
-	static readonly LIST_FIELD_LEVEL_ENCRYPTION_PROFILES: string[] = [
+	static readonly ListFieldLevelEncryptionProfiles: string[] = [
 		"cloudfront:ListFieldLevelEncryptionProfiles",
 	];
 	/** IAM actions required for the ListFunctions API call. */
-	static readonly LIST_FUNCTIONS: string[] = ["cloudfront:ListFunctions"];
+	static readonly ListFunctions: string[] = ["cloudfront:ListFunctions"];
 	/** IAM actions required for the ListInvalidations API call. */
-	static readonly LIST_INVALIDATIONS: string[] = [
+	static readonly ListInvalidations: string[] = [
 		"cloudfront:ListInvalidations",
 	];
 	/** IAM actions required for the ListInvalidationsForDistributionTenant API call. */
-	static readonly LIST_INVALIDATIONS_FOR_DISTRIBUTION_TENANT: string[] = [
+	static readonly ListInvalidationsForDistributionTenant: string[] = [
 		"cloudfront:ListInvalidationsForDistributionTenant",
 	];
 	/** IAM actions required for the ListKeyGroups API call. */
-	static readonly LIST_KEY_GROUPS: string[] = ["cloudfront:ListKeyGroups"];
+	static readonly ListKeyGroups: string[] = ["cloudfront:ListKeyGroups"];
 	/** IAM actions required for the ListKeyValueStores API call. */
-	static readonly LIST_KEY_VALUE_STORES: string[] = [
+	static readonly ListKeyValueStores: string[] = [
 		"cloudfront:ListKeyValueStores",
 	];
 	/** IAM actions required for the ListOriginAccessControls API call. */
-	static readonly LIST_ORIGIN_ACCESS_CONTROLS: string[] = [
+	static readonly ListOriginAccessControls: string[] = [
 		"cloudfront:ListOriginAccessControls",
 	];
 	/** IAM actions required for the ListOriginRequestPolicies API call. */
-	static readonly LIST_ORIGIN_REQUEST_POLICIES: string[] = [
+	static readonly ListOriginRequestPolicies: string[] = [
 		"cloudfront:ListOriginRequestPolicies",
 	];
 	/** IAM actions required for the ListPublicKeys API call. */
-	static readonly LIST_PUBLIC_KEYS: string[] = ["cloudfront:ListPublicKeys"];
+	static readonly ListPublicKeys: string[] = ["cloudfront:ListPublicKeys"];
 	/** IAM actions required for the ListRealtimeLogConfigs API call. */
-	static readonly LIST_REALTIME_LOG_CONFIGS: string[] = [
+	static readonly ListRealtimeLogConfigs: string[] = [
 		"cloudfront:ListRealtimeLogConfigs",
 	];
 	/** IAM actions required for the ListResponseHeadersPolicies API call. */
-	static readonly LIST_RESPONSE_HEADERS_POLICIES: string[] = [
+	static readonly ListResponseHeadersPolicies: string[] = [
 		"cloudfront:ListResponseHeadersPolicies",
 	];
 	/** IAM actions required for the ListStreamingDistributions API call. */
-	static readonly LIST_STREAMING_DISTRIBUTIONS: string[] = [
+	static readonly ListStreamingDistributions: string[] = [
 		"cloudfront:ListStreamingDistributions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"cloudfront:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTrustStores API call. */
-	static readonly LIST_TRUST_STORES: string[] = ["cloudfront:ListTrustStores"];
+	static readonly ListTrustStores: string[] = ["cloudfront:ListTrustStores"];
 	/** IAM actions required for the ListVpcOrigins API call. */
-	static readonly LIST_VPC_ORIGINS: string[] = ["cloudfront:ListVpcOrigins"];
+	static readonly ListVpcOrigins: string[] = ["cloudfront:ListVpcOrigins"];
 	/** IAM actions required for the PublishConnectionFunction API call. */
-	static readonly PUBLISH_CONNECTION_FUNCTION: string[] = [
+	static readonly PublishConnectionFunction: string[] = [
 		"cloudfront:PublishConnectionFunction",
 	];
 	/** IAM actions required for the PublishFunction API call. */
-	static readonly PUBLISH_FUNCTION: string[] = ["cloudfront:PublishFunction"];
+	static readonly PublishFunction: string[] = ["cloudfront:PublishFunction"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
+	static readonly PutResourcePolicy: string[] = [
 		"cloudfront:PutResourcePolicy",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cloudfront:TagResource"];
+	static readonly TagResource: string[] = ["cloudfront:TagResource"];
 	/** IAM actions required for the TestConnectionFunction API call. */
-	static readonly TEST_CONNECTION_FUNCTION: string[] = [
+	static readonly TestConnectionFunction: string[] = [
 		"cloudfront:TestConnectionFunction",
 	];
 	/** IAM actions required for the TestFunction API call. */
-	static readonly TEST_FUNCTION: string[] = ["cloudfront:TestFunction"];
+	static readonly TestFunction: string[] = ["cloudfront:TestFunction"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cloudfront:UntagResource"];
+	static readonly UntagResource: string[] = ["cloudfront:UntagResource"];
 	/** IAM actions required for the UpdateAnycastIpList API call. */
-	static readonly UPDATE_ANYCAST_IP_LIST: string[] = [
+	static readonly UpdateAnycastIpList: string[] = [
 		"cloudfront:UpdateAnycastIpList",
 	];
 	/** IAM actions required for the UpdateCachePolicy API call. */
-	static readonly UPDATE_CACHE_POLICY: string[] = [
+	static readonly UpdateCachePolicy: string[] = [
 		"cloudfront:UpdateCachePolicy",
 	];
 	/** IAM actions required for the UpdateCloudFrontOriginAccessIdentity API call. */
-	static readonly UPDATE_CLOUD_FRONT_ORIGIN_ACCESS_IDENTITY: string[] = [
+	static readonly UpdateCloudFrontOriginAccessIdentity: string[] = [
 		"cloudfront:UpdateCloudFrontOriginAccessIdentity",
 	];
 	/** IAM actions required for the UpdateConnectionFunction API call. */
-	static readonly UPDATE_CONNECTION_FUNCTION: string[] = [
+	static readonly UpdateConnectionFunction: string[] = [
 		"cloudfront:UpdateConnectionFunction",
 	];
 	/** IAM actions required for the UpdateConnectionGroup API call. */
-	static readonly UPDATE_CONNECTION_GROUP: string[] = [
+	static readonly UpdateConnectionGroup: string[] = [
 		"cloudfront:UpdateConnectionGroup",
 	];
 	/** IAM actions required for the UpdateContinuousDeploymentPolicy API call. */
-	static readonly UPDATE_CONTINUOUS_DEPLOYMENT_POLICY: string[] = [
+	static readonly UpdateContinuousDeploymentPolicy: string[] = [
 		"cloudfront:UpdateContinuousDeploymentPolicy",
 	];
 	/** IAM actions required for the UpdateDistribution API call. */
-	static readonly UPDATE_DISTRIBUTION: string[] = [
+	static readonly UpdateDistribution: string[] = [
 		"cloudfront:GetVpcOrigin",
 		"cloudfront:UpdateDistribution",
 	];
 	/** IAM actions required for the UpdateDistributionTenant API call. */
-	static readonly UPDATE_DISTRIBUTION_TENANT: string[] = [
+	static readonly UpdateDistributionTenant: string[] = [
 		"cloudfront:GetVpcOrigin",
 		"cloudfront:UpdateDistributionTenant",
 	];
 	/** IAM actions required for the UpdateDistributionWithStagingConfig API call. */
-	static readonly UPDATE_DISTRIBUTION_WITH_STAGING_CONFIG: string[] = [
+	static readonly UpdateDistributionWithStagingConfig: string[] = [
 		"cloudfront:GetDistribution",
 		"cloudfront:GetVpcOrigin",
 		"cloudfront:UpdateDistribution",
 	];
 	/** IAM actions required for the UpdateDomainAssociation API call. */
-	static readonly UPDATE_DOMAIN_ASSOCIATION: string[] = [
+	static readonly UpdateDomainAssociation: string[] = [
 		"cloudfront:UpdateDistribution",
 		"cloudfront:UpdateDistributionTenant",
 		"cloudfront:UpdateDomainAssociation",
 	];
 	/** IAM actions required for the UpdateFieldLevelEncryptionConfig API call. */
-	static readonly UPDATE_FIELD_LEVEL_ENCRYPTION_CONFIG: string[] = [
+	static readonly UpdateFieldLevelEncryptionConfig: string[] = [
 		"cloudfront:UpdateFieldLevelEncryptionConfig",
 	];
 	/** IAM actions required for the UpdateFieldLevelEncryptionProfile API call. */
-	static readonly UPDATE_FIELD_LEVEL_ENCRYPTION_PROFILE: string[] = [
+	static readonly UpdateFieldLevelEncryptionProfile: string[] = [
 		"cloudfront:UpdateFieldLevelEncryptionProfile",
 	];
 	/** IAM actions required for the UpdateFunction API call. */
-	static readonly UPDATE_FUNCTION: string[] = ["cloudfront:UpdateFunction"];
+	static readonly UpdateFunction: string[] = ["cloudfront:UpdateFunction"];
 	/** IAM actions required for the UpdateKeyGroup API call. */
-	static readonly UPDATE_KEY_GROUP: string[] = ["cloudfront:UpdateKeyGroup"];
+	static readonly UpdateKeyGroup: string[] = ["cloudfront:UpdateKeyGroup"];
 	/** IAM actions required for the UpdateKeyValueStore API call. */
-	static readonly UPDATE_KEY_VALUE_STORE: string[] = [
+	static readonly UpdateKeyValueStore: string[] = [
 		"cloudfront:UpdateKeyValueStore",
 	];
 	/** IAM actions required for the UpdateOriginAccessControl API call. */
-	static readonly UPDATE_ORIGIN_ACCESS_CONTROL: string[] = [
+	static readonly UpdateOriginAccessControl: string[] = [
 		"cloudfront:UpdateOriginAccessControl",
 	];
 	/** IAM actions required for the UpdateOriginRequestPolicy API call. */
-	static readonly UPDATE_ORIGIN_REQUEST_POLICY: string[] = [
+	static readonly UpdateOriginRequestPolicy: string[] = [
 		"cloudfront:UpdateOriginRequestPolicy",
 	];
 	/** IAM actions required for the UpdatePublicKey API call. */
-	static readonly UPDATE_PUBLIC_KEY: string[] = ["cloudfront:UpdatePublicKey"];
+	static readonly UpdatePublicKey: string[] = ["cloudfront:UpdatePublicKey"];
 	/** IAM actions required for the UpdateRealtimeLogConfig API call. */
-	static readonly UPDATE_REALTIME_LOG_CONFIG: string[] = [
+	static readonly UpdateRealtimeLogConfig: string[] = [
 		"iam:PassRole",
 		"cloudfront:UpdateRealtimeLogConfig",
 	];
 	/** IAM actions required for the UpdateResponseHeadersPolicy API call. */
-	static readonly UPDATE_RESPONSE_HEADERS_POLICY: string[] = [
+	static readonly UpdateResponseHeadersPolicy: string[] = [
 		"cloudfront:UpdateResponseHeadersPolicy",
 	];
 	/** IAM actions required for the UpdateStreamingDistribution API call. */
-	static readonly UPDATE_STREAMING_DISTRIBUTION: string[] = [];
+	static readonly UpdateStreamingDistribution: string[] = [];
 	/** IAM actions required for the UpdateTrustStore API call. */
-	static readonly UPDATE_TRUST_STORE: string[] = [
-		"cloudfront:UpdateTrustStore",
-	];
+	static readonly UpdateTrustStore: string[] = ["cloudfront:UpdateTrustStore"];
 	/** IAM actions required for the UpdateVpcOrigin API call. */
-	static readonly UPDATE_VPC_ORIGIN: string[] = ["cloudfront:UpdateVpcOrigin"];
+	static readonly UpdateVpcOrigin: string[] = ["cloudfront:UpdateVpcOrigin"];
 	/** IAM actions required for the VerifyDnsConfiguration API call. */
-	static readonly VERIFY_DNS_CONFIGURATION: string[] = [
+	static readonly VerifyDnsConfiguration: string[] = [
 		"cloudfront:VerifyDnsConfiguration",
 	];
 }
@@ -2133,67 +2408,69 @@ export class CloudFrontOperations {
  */
 export class CloudFrontConditions {
 	/** Condition keys applicable to the CreateAnycastIpList action. */
-	static readonly CREATE_ANYCAST_IP_LIST_CONDITION_KEYS: string[] = [
+	static readonly CreateAnycastIpListConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnectionFunction action. */
-	static readonly CREATE_CONNECTION_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionFunctionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnectionGroup action. */
-	static readonly CREATE_CONNECTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDistribution action. */
-	static readonly CREATE_DISTRIBUTION_CONDITION_KEYS: string[] = [
+	static readonly CreateDistributionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDistributionTenant action. */
-	static readonly CREATE_DISTRIBUTION_TENANT_CONDITION_KEYS: string[] = [
+	static readonly CreateDistributionTenantConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFunction action. */
-	static readonly CREATE_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly CreateFunctionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateKeyValueStore action. */
-	static readonly CREATE_KEY_VALUE_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateKeyValueStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamingDistributionWithTags action. */
-	static readonly CREATE_STREAMING_DISTRIBUTION_WITH_TAGS_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateStreamingDistributionWithTagsConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateTrustStore action. */
-	static readonly CREATE_TRUST_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateTrustStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVpcOrigin action. */
-	static readonly CREATE_VPC_ORIGIN_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcOriginConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

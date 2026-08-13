@@ -13,68 +13,126 @@ export class IdentitySyncActions {
 	static readonly SERVICE_PREFIX = "identity-sync";
 
 	/** [PermissionManagement] identity-sync:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"identity-sync:AllowVendedLogDeliveryForResource";
 	/** [Write] identity-sync:CreateSyncFilter */
-	static readonly CREATE_SYNC_FILTER = "identity-sync:CreateSyncFilter";
+	static readonly CreateSyncFilter = "identity-sync:CreateSyncFilter";
 	/** [Write] identity-sync:CreateSyncProfile */
-	static readonly CREATE_SYNC_PROFILE = "identity-sync:CreateSyncProfile";
+	static readonly CreateSyncProfile = "identity-sync:CreateSyncProfile";
 	/** [Write] identity-sync:CreateSyncTarget */
-	static readonly CREATE_SYNC_TARGET = "identity-sync:CreateSyncTarget";
+	static readonly CreateSyncTarget = "identity-sync:CreateSyncTarget";
 	/** [Write] identity-sync:DeleteSyncFilter */
-	static readonly DELETE_SYNC_FILTER = "identity-sync:DeleteSyncFilter";
+	static readonly DeleteSyncFilter = "identity-sync:DeleteSyncFilter";
 	/** [Write] identity-sync:DeleteSyncProfile */
-	static readonly DELETE_SYNC_PROFILE = "identity-sync:DeleteSyncProfile";
+	static readonly DeleteSyncProfile = "identity-sync:DeleteSyncProfile";
 	/** [Write] identity-sync:DeleteSyncTarget */
-	static readonly DELETE_SYNC_TARGET = "identity-sync:DeleteSyncTarget";
+	static readonly DeleteSyncTarget = "identity-sync:DeleteSyncTarget";
 	/** [Read] identity-sync:GetSyncProfile */
-	static readonly GET_SYNC_PROFILE = "identity-sync:GetSyncProfile";
+	static readonly actionGetSyncProfile = "identity-sync:GetSyncProfile";
 	/** [Read] identity-sync:GetSyncTarget */
-	static readonly GET_SYNC_TARGET = "identity-sync:GetSyncTarget";
+	static readonly actionGetSyncTarget = "identity-sync:GetSyncTarget";
 	/** [List] identity-sync:ListSyncFilters */
-	static readonly LIST_SYNC_FILTERS = "identity-sync:ListSyncFilters";
+	static readonly ListSyncFilters = "identity-sync:ListSyncFilters";
 	/** [Write] identity-sync:StartSync */
-	static readonly START_SYNC = "identity-sync:StartSync";
+	static readonly StartSync = "identity-sync:StartSync";
 	/** [Write] identity-sync:StopSync */
-	static readonly STOP_SYNC = "identity-sync:StopSync";
+	static readonly StopSync = "identity-sync:StopSync";
 	/** [Write] identity-sync:UpdateSyncTarget */
-	static readonly UPDATE_SYNC_TARGET = "identity-sync:UpdateSyncTarget";
+	static readonly UpdateSyncTarget = "identity-sync:UpdateSyncTarget";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IdentitySyncActions.GET_SYNC_PROFILE,
-		IdentitySyncActions.GET_SYNC_TARGET,
+	static readonly AllReadActions: string[] = [
+		IdentitySyncActions.actionGetSyncProfile,
+		IdentitySyncActions.actionGetSyncTarget,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IdentitySyncActions.CREATE_SYNC_FILTER,
-		IdentitySyncActions.CREATE_SYNC_PROFILE,
-		IdentitySyncActions.CREATE_SYNC_TARGET,
-		IdentitySyncActions.DELETE_SYNC_FILTER,
-		IdentitySyncActions.DELETE_SYNC_PROFILE,
-		IdentitySyncActions.DELETE_SYNC_TARGET,
-		IdentitySyncActions.START_SYNC,
-		IdentitySyncActions.STOP_SYNC,
-		IdentitySyncActions.UPDATE_SYNC_TARGET,
+	static readonly AllWriteActions: string[] = [
+		IdentitySyncActions.CreateSyncFilter,
+		IdentitySyncActions.CreateSyncProfile,
+		IdentitySyncActions.CreateSyncTarget,
+		IdentitySyncActions.DeleteSyncFilter,
+		IdentitySyncActions.DeleteSyncProfile,
+		IdentitySyncActions.DeleteSyncTarget,
+		IdentitySyncActions.StartSync,
+		IdentitySyncActions.StopSync,
+		IdentitySyncActions.UpdateSyncTarget,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IdentitySyncActions.LIST_SYNC_FILTERS,
+	static readonly AllListActions: string[] = [
+		IdentitySyncActions.ListSyncFilters,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		IdentitySyncActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
+	static readonly AllPermissionManagementActions: string[] = [
+		IdentitySyncActions.AllowVendedLogDeliveryForResource,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const SyncProfileResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):identity-sync:(?<region>[^:]*):(?<account>[^:]*):profile/(?<syncProfileName>[^:/?]+)$",
-);
-const SyncTargetResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):identity-sync:(?<region>[^:]*):(?<account>[^:]*):target/(?<syncProfileName>[^:/?]+)/(?<syncTargetName>[^:/?]+)$",
-);
+/**
+ * Properties for building a SyncProfileResource ARN.
+ */
+export interface IdentitySyncSyncProfileResourceArnProps {
+	/** The SyncProfileName component of the ARN. */
+	readonly syncProfileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SyncProfileResource ARN.
+ */
+export interface IdentitySyncSyncProfileResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SyncProfileName component. */
+	readonly syncProfileName: string;
+}
+
+/**
+ * Properties for building a SyncTargetResource ARN.
+ */
+export interface IdentitySyncSyncTargetResourceArnProps {
+	/** The SyncProfileName component of the ARN. */
+	readonly syncProfileName: string;
+	/** The SyncTargetName component of the ARN. */
+	readonly syncTargetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SyncTargetResource ARN.
+ */
+export interface IdentitySyncSyncTargetResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SyncProfileName component. */
+	readonly syncProfileName: string;
+	/** The SyncTargetName component. */
+	readonly syncTargetName: string;
+}
+
+const SyncProfileResourceArnRegex =
+	/^arn:(?<partition>[^:]+):identity-sync:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<syncProfileName>[^:/?]+)$/;
+const SyncTargetResourceArnRegex =
+	/^arn:(?<partition>[^:]+):identity-sync:(?<region>[^:]*):(?<account>[^:]*):target\/(?<syncProfileName>[^:/?]+)\/(?<syncTargetName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for identity-sync resources.
@@ -83,16 +141,9 @@ export class IdentitySyncResources {
 	/**
 	 * Builds an ARN for the SyncProfileResource resource.
 	 */
-	static syncProfileResource(props: {
-		/** The SyncProfileName component of the ARN. */
-		readonly syncProfileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static syncProfileResource(
+		props: IdentitySyncSyncProfileResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:identity-sync:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.syncProfileName}`;
 	}
 
@@ -107,12 +158,9 @@ export class IdentitySyncResources {
 	 * Parses a SyncProfileResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSyncProfileResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		syncProfileName: string;
-	} {
+	static parseSyncProfileResourceArn(
+		arn: string,
+	): IdentitySyncSyncProfileResourceArnComponents {
 		const match = SyncProfileResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SyncProfileResource ARN: ${arn}`);
@@ -128,18 +176,9 @@ export class IdentitySyncResources {
 	/**
 	 * Builds an ARN for the SyncTargetResource resource.
 	 */
-	static syncTargetResource(props: {
-		/** The SyncProfileName component of the ARN. */
-		readonly syncProfileName: string;
-		/** The SyncTargetName component of the ARN. */
-		readonly syncTargetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static syncTargetResource(
+		props: IdentitySyncSyncTargetResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:identity-sync:${props.region ?? "*"}:${props.account ?? "*"}:target/${props.syncProfileName}/${props.syncTargetName}`;
 	}
 
@@ -154,13 +193,9 @@ export class IdentitySyncResources {
 	 * Parses a SyncTargetResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSyncTargetResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		syncProfileName: string;
-		syncTargetName: string;
-	} {
+	static parseSyncTargetResourceArn(
+		arn: string,
+	): IdentitySyncSyncTargetResourceArnComponents {
 		const match = SyncTargetResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SyncTargetResource ARN: ${arn}`);

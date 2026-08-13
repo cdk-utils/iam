@@ -13,141 +13,193 @@ export class ServiceDiscoveryActions {
 	static readonly SERVICE_PREFIX = "servicediscovery";
 
 	/** [Write] servicediscovery:CreateHttpNamespace */
-	static readonly CREATE_HTTP_NAMESPACE =
-		"servicediscovery:CreateHttpNamespace";
+	static readonly CreateHttpNamespace = "servicediscovery:CreateHttpNamespace";
 	/** [Write] servicediscovery:CreatePrivateDnsNamespace */
-	static readonly CREATE_PRIVATE_DNS_NAMESPACE =
+	static readonly CreatePrivateDnsNamespace =
 		"servicediscovery:CreatePrivateDnsNamespace";
 	/** [Write] servicediscovery:CreatePublicDnsNamespace */
-	static readonly CREATE_PUBLIC_DNS_NAMESPACE =
+	static readonly CreatePublicDnsNamespace =
 		"servicediscovery:CreatePublicDnsNamespace";
 	/** [Write] servicediscovery:CreateService */
-	static readonly CREATE_SERVICE = "servicediscovery:CreateService";
+	static readonly CreateService = "servicediscovery:CreateService";
 	/** [Write] servicediscovery:DeleteNamespace */
-	static readonly DELETE_NAMESPACE = "servicediscovery:DeleteNamespace";
+	static readonly DeleteNamespace = "servicediscovery:DeleteNamespace";
 	/** [Write] servicediscovery:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY =
+	static readonly DeleteResourcePolicy =
 		"servicediscovery:DeleteResourcePolicy";
 	/** [Write] servicediscovery:DeleteService */
-	static readonly DELETE_SERVICE = "servicediscovery:DeleteService";
+	static readonly DeleteService = "servicediscovery:DeleteService";
 	/** [Write] servicediscovery:DeleteServiceAttributes */
-	static readonly DELETE_SERVICE_ATTRIBUTES =
+	static readonly DeleteServiceAttributes =
 		"servicediscovery:DeleteServiceAttributes";
 	/** [Write] servicediscovery:DeregisterInstance */
-	static readonly DEREGISTER_INSTANCE = "servicediscovery:DeregisterInstance";
+	static readonly DeregisterInstance = "servicediscovery:DeregisterInstance";
 	/** [Read] servicediscovery:DiscoverInstances */
-	static readonly DISCOVER_INSTANCES = "servicediscovery:DiscoverInstances";
+	static readonly DiscoverInstances = "servicediscovery:DiscoverInstances";
 	/** [Read] servicediscovery:DiscoverInstancesRevision */
-	static readonly DISCOVER_INSTANCES_REVISION =
+	static readonly DiscoverInstancesRevision =
 		"servicediscovery:DiscoverInstancesRevision";
 	/** [Read] servicediscovery:GetInstance */
-	static readonly GET_INSTANCE = "servicediscovery:GetInstance";
+	static readonly actionGetInstance = "servicediscovery:GetInstance";
 	/** [Read] servicediscovery:GetInstancesHealthStatus */
-	static readonly GET_INSTANCES_HEALTH_STATUS =
+	static readonly actionGetInstancesHealthStatus =
 		"servicediscovery:GetInstancesHealthStatus";
 	/** [Read] servicediscovery:GetNamespace */
-	static readonly GET_NAMESPACE = "servicediscovery:GetNamespace";
+	static readonly actionGetNamespace = "servicediscovery:GetNamespace";
 	/** [Read] servicediscovery:GetOperation */
-	static readonly GET_OPERATION = "servicediscovery:GetOperation";
+	static readonly actionGetOperation = "servicediscovery:GetOperation";
 	/** [Read] servicediscovery:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "servicediscovery:GetResourcePolicy";
+	static readonly actionGetResourcePolicy =
+		"servicediscovery:GetResourcePolicy";
 	/** [Read] servicediscovery:GetService */
-	static readonly GET_SERVICE = "servicediscovery:GetService";
+	static readonly actionGetService = "servicediscovery:GetService";
 	/** [Read] servicediscovery:GetServiceAttributes */
-	static readonly GET_SERVICE_ATTRIBUTES =
+	static readonly actionGetServiceAttributes =
 		"servicediscovery:GetServiceAttributes";
 	/** [Read] servicediscovery:ListInstances */
-	static readonly LIST_INSTANCES = "servicediscovery:ListInstances";
+	static readonly ListInstances = "servicediscovery:ListInstances";
 	/** [Read] servicediscovery:ListNamespaces */
-	static readonly LIST_NAMESPACES = "servicediscovery:ListNamespaces";
+	static readonly ListNamespaces = "servicediscovery:ListNamespaces";
 	/** [List] servicediscovery:ListOperations */
-	static readonly LIST_OPERATIONS = "servicediscovery:ListOperations";
+	static readonly ListOperations = "servicediscovery:ListOperations";
 	/** [Read] servicediscovery:ListServices */
-	static readonly LIST_SERVICES = "servicediscovery:ListServices";
+	static readonly ListServices = "servicediscovery:ListServices";
 	/** [Read] servicediscovery:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"servicediscovery:ListTagsForResource";
+	static readonly ListTagsForResource = "servicediscovery:ListTagsForResource";
 	/** [Write] servicediscovery:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "servicediscovery:PutResourcePolicy";
+	static readonly PutResourcePolicy = "servicediscovery:PutResourcePolicy";
 	/** [Write] servicediscovery:RegisterInstance */
-	static readonly REGISTER_INSTANCE = "servicediscovery:RegisterInstance";
+	static readonly RegisterInstance = "servicediscovery:RegisterInstance";
 	/** [Tagging] servicediscovery:TagResource */
-	static readonly TAG_RESOURCE = "servicediscovery:TagResource";
+	static readonly TagResource = "servicediscovery:TagResource";
 	/** [Tagging] servicediscovery:UntagResource */
-	static readonly UNTAG_RESOURCE = "servicediscovery:UntagResource";
+	static readonly UntagResource = "servicediscovery:UntagResource";
 	/** [Write] servicediscovery:UpdateHttpNamespace */
-	static readonly UPDATE_HTTP_NAMESPACE =
-		"servicediscovery:UpdateHttpNamespace";
+	static readonly UpdateHttpNamespace = "servicediscovery:UpdateHttpNamespace";
 	/** [Write] servicediscovery:UpdateInstanceCustomHealthStatus */
-	static readonly UPDATE_INSTANCE_CUSTOM_HEALTH_STATUS =
+	static readonly UpdateInstanceCustomHealthStatus =
 		"servicediscovery:UpdateInstanceCustomHealthStatus";
 	/** [Write] servicediscovery:UpdatePrivateDnsNamespace */
-	static readonly UPDATE_PRIVATE_DNS_NAMESPACE =
+	static readonly UpdatePrivateDnsNamespace =
 		"servicediscovery:UpdatePrivateDnsNamespace";
 	/** [Write] servicediscovery:UpdatePublicDnsNamespace */
-	static readonly UPDATE_PUBLIC_DNS_NAMESPACE =
+	static readonly UpdatePublicDnsNamespace =
 		"servicediscovery:UpdatePublicDnsNamespace";
 	/** [Write] servicediscovery:UpdateService */
-	static readonly UPDATE_SERVICE = "servicediscovery:UpdateService";
+	static readonly UpdateService = "servicediscovery:UpdateService";
 	/** [Write] servicediscovery:UpdateServiceAttributes */
-	static readonly UPDATE_SERVICE_ATTRIBUTES =
+	static readonly UpdateServiceAttributes =
 		"servicediscovery:UpdateServiceAttributes";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ServiceDiscoveryActions.DISCOVER_INSTANCES,
-		ServiceDiscoveryActions.DISCOVER_INSTANCES_REVISION,
-		ServiceDiscoveryActions.GET_INSTANCE,
-		ServiceDiscoveryActions.GET_INSTANCES_HEALTH_STATUS,
-		ServiceDiscoveryActions.GET_NAMESPACE,
-		ServiceDiscoveryActions.GET_OPERATION,
-		ServiceDiscoveryActions.GET_RESOURCE_POLICY,
-		ServiceDiscoveryActions.GET_SERVICE,
-		ServiceDiscoveryActions.GET_SERVICE_ATTRIBUTES,
-		ServiceDiscoveryActions.LIST_INSTANCES,
-		ServiceDiscoveryActions.LIST_NAMESPACES,
-		ServiceDiscoveryActions.LIST_SERVICES,
-		ServiceDiscoveryActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ServiceDiscoveryActions.DiscoverInstances,
+		ServiceDiscoveryActions.DiscoverInstancesRevision,
+		ServiceDiscoveryActions.actionGetInstance,
+		ServiceDiscoveryActions.actionGetInstancesHealthStatus,
+		ServiceDiscoveryActions.actionGetNamespace,
+		ServiceDiscoveryActions.actionGetOperation,
+		ServiceDiscoveryActions.actionGetResourcePolicy,
+		ServiceDiscoveryActions.actionGetService,
+		ServiceDiscoveryActions.actionGetServiceAttributes,
+		ServiceDiscoveryActions.ListInstances,
+		ServiceDiscoveryActions.ListNamespaces,
+		ServiceDiscoveryActions.ListServices,
+		ServiceDiscoveryActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ServiceDiscoveryActions.CREATE_HTTP_NAMESPACE,
-		ServiceDiscoveryActions.CREATE_PRIVATE_DNS_NAMESPACE,
-		ServiceDiscoveryActions.CREATE_PUBLIC_DNS_NAMESPACE,
-		ServiceDiscoveryActions.CREATE_SERVICE,
-		ServiceDiscoveryActions.DELETE_NAMESPACE,
-		ServiceDiscoveryActions.DELETE_RESOURCE_POLICY,
-		ServiceDiscoveryActions.DELETE_SERVICE,
-		ServiceDiscoveryActions.DELETE_SERVICE_ATTRIBUTES,
-		ServiceDiscoveryActions.DEREGISTER_INSTANCE,
-		ServiceDiscoveryActions.PUT_RESOURCE_POLICY,
-		ServiceDiscoveryActions.REGISTER_INSTANCE,
-		ServiceDiscoveryActions.UPDATE_HTTP_NAMESPACE,
-		ServiceDiscoveryActions.UPDATE_INSTANCE_CUSTOM_HEALTH_STATUS,
-		ServiceDiscoveryActions.UPDATE_PRIVATE_DNS_NAMESPACE,
-		ServiceDiscoveryActions.UPDATE_PUBLIC_DNS_NAMESPACE,
-		ServiceDiscoveryActions.UPDATE_SERVICE,
-		ServiceDiscoveryActions.UPDATE_SERVICE_ATTRIBUTES,
+	static readonly AllWriteActions: string[] = [
+		ServiceDiscoveryActions.CreateHttpNamespace,
+		ServiceDiscoveryActions.CreatePrivateDnsNamespace,
+		ServiceDiscoveryActions.CreatePublicDnsNamespace,
+		ServiceDiscoveryActions.CreateService,
+		ServiceDiscoveryActions.DeleteNamespace,
+		ServiceDiscoveryActions.DeleteResourcePolicy,
+		ServiceDiscoveryActions.DeleteService,
+		ServiceDiscoveryActions.DeleteServiceAttributes,
+		ServiceDiscoveryActions.DeregisterInstance,
+		ServiceDiscoveryActions.PutResourcePolicy,
+		ServiceDiscoveryActions.RegisterInstance,
+		ServiceDiscoveryActions.UpdateHttpNamespace,
+		ServiceDiscoveryActions.UpdateInstanceCustomHealthStatus,
+		ServiceDiscoveryActions.UpdatePrivateDnsNamespace,
+		ServiceDiscoveryActions.UpdatePublicDnsNamespace,
+		ServiceDiscoveryActions.UpdateService,
+		ServiceDiscoveryActions.UpdateServiceAttributes,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ServiceDiscoveryActions.LIST_OPERATIONS,
+	static readonly AllListActions: string[] = [
+		ServiceDiscoveryActions.ListOperations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ServiceDiscoveryActions.TAG_RESOURCE,
-		ServiceDiscoveryActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ServiceDiscoveryActions.TagResource,
+		ServiceDiscoveryActions.UntagResource,
 	];
 }
 
-const NamespaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):servicediscovery:(?<region>[^:]*):(?<account>[^:]*):namespace/(?<namespaceId>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):servicediscovery:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a namespace ARN.
+ */
+export interface ServiceDiscoveryNamespaceArnProps {
+	/** The NamespaceId component of the ARN. */
+	readonly namespaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a namespace ARN.
+ */
+export interface ServiceDiscoveryNamespaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NamespaceId component. */
+	readonly namespaceId: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface ServiceDiscoveryServiceArnProps {
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface ServiceDiscoveryServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+}
+
+const NamespaceArnRegex =
+	/^arn:(?<partition>[^:]+):servicediscovery:(?<region>[^:]*):(?<account>[^:]*):namespace\/(?<namespaceId>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):servicediscovery:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for servicediscovery resources.
@@ -156,16 +208,7 @@ export class ServiceDiscoveryResources {
 	/**
 	 * Builds an ARN for the namespace resource.
 	 */
-	static namespace(props: {
-		/** The NamespaceId component of the ARN. */
-		readonly namespaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static namespace(props: ServiceDiscoveryNamespaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:servicediscovery:${props.region ?? "*"}:${props.account ?? "*"}:namespace/${props.namespaceId}`;
 	}
 
@@ -180,12 +223,9 @@ export class ServiceDiscoveryResources {
 	 * Parses a namespace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNamespaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		namespaceId: string;
-	} {
+	static parseNamespaceArn(
+		arn: string,
+	): ServiceDiscoveryNamespaceArnComponents {
 		const match = NamespaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid namespace ARN: ${arn}`);
@@ -201,16 +241,7 @@ export class ServiceDiscoveryResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: ServiceDiscoveryServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:servicediscovery:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceId}`;
 	}
 
@@ -225,12 +256,7 @@ export class ServiceDiscoveryResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceId: string;
-	} {
+	static parseServiceArn(arn: string): ServiceDiscoveryServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -249,107 +275,107 @@ export class ServiceDiscoveryResources {
  */
 export class ServiceDiscoveryOperations {
 	/** IAM actions required for the CreateHttpNamespace API call. */
-	static readonly CREATE_HTTP_NAMESPACE: string[] = [
+	static readonly CreateHttpNamespace: string[] = [
 		"servicediscovery:CreateHttpNamespace",
 		"servicediscovery:TagResource",
 	];
 	/** IAM actions required for the CreatePrivateDnsNamespace API call. */
-	static readonly CREATE_PRIVATE_DNS_NAMESPACE: string[] = [
+	static readonly CreatePrivateDnsNamespace: string[] = [
 		"servicediscovery:CreatePrivateDnsNamespace",
 		"servicediscovery:TagResource",
 	];
 	/** IAM actions required for the CreatePublicDnsNamespace API call. */
-	static readonly CREATE_PUBLIC_DNS_NAMESPACE: string[] = [
+	static readonly CreatePublicDnsNamespace: string[] = [
 		"servicediscovery:CreatePublicDnsNamespace",
 		"servicediscovery:TagResource",
 	];
 	/** IAM actions required for the CreateService API call. */
-	static readonly CREATE_SERVICE: string[] = [
+	static readonly CreateService: string[] = [
 		"servicediscovery:CreateService",
 		"servicediscovery:TagResource",
 	];
 	/** IAM actions required for the DeleteNamespace API call. */
-	static readonly DELETE_NAMESPACE: string[] = [
+	static readonly DeleteNamespace: string[] = [
 		"servicediscovery:DeleteNamespace",
 	];
 	/** IAM actions required for the DeleteService API call. */
-	static readonly DELETE_SERVICE: string[] = ["servicediscovery:DeleteService"];
+	static readonly DeleteService: string[] = ["servicediscovery:DeleteService"];
 	/** IAM actions required for the DeleteServiceAttributes API call. */
-	static readonly DELETE_SERVICE_ATTRIBUTES: string[] = [
+	static readonly DeleteServiceAttributes: string[] = [
 		"servicediscovery:DeleteServiceAttributes",
 	];
 	/** IAM actions required for the DeregisterInstance API call. */
-	static readonly DEREGISTER_INSTANCE: string[] = [
+	static readonly DeregisterInstance: string[] = [
 		"servicediscovery:DeregisterInstance",
 	];
 	/** IAM actions required for the DiscoverInstances API call. */
-	static readonly DISCOVER_INSTANCES: string[] = [
+	static readonly DiscoverInstances: string[] = [
 		"servicediscovery:DiscoverInstances",
 	];
 	/** IAM actions required for the DiscoverInstancesRevision API call. */
-	static readonly DISCOVER_INSTANCES_REVISION: string[] = [
+	static readonly DiscoverInstancesRevision: string[] = [
 		"servicediscovery:DiscoverInstancesRevision",
 	];
 	/** IAM actions required for the GetInstance API call. */
-	static readonly GET_INSTANCE: string[] = ["servicediscovery:GetInstance"];
+	static readonly opGetInstance: string[] = ["servicediscovery:GetInstance"];
 	/** IAM actions required for the GetInstancesHealthStatus API call. */
-	static readonly GET_INSTANCES_HEALTH_STATUS: string[] = [
+	static readonly opGetInstancesHealthStatus: string[] = [
 		"servicediscovery:GetInstancesHealthStatus",
 	];
 	/** IAM actions required for the GetNamespace API call. */
-	static readonly GET_NAMESPACE: string[] = ["servicediscovery:GetNamespace"];
+	static readonly opGetNamespace: string[] = ["servicediscovery:GetNamespace"];
 	/** IAM actions required for the GetOperation API call. */
-	static readonly GET_OPERATION: string[] = ["servicediscovery:GetOperation"];
+	static readonly opGetOperation: string[] = ["servicediscovery:GetOperation"];
 	/** IAM actions required for the GetService API call. */
-	static readonly GET_SERVICE: string[] = ["servicediscovery:GetService"];
+	static readonly opGetService: string[] = ["servicediscovery:GetService"];
 	/** IAM actions required for the GetServiceAttributes API call. */
-	static readonly GET_SERVICE_ATTRIBUTES: string[] = [
+	static readonly opGetServiceAttributes: string[] = [
 		"servicediscovery:GetServiceAttributes",
 	];
 	/** IAM actions required for the ListInstances API call. */
-	static readonly LIST_INSTANCES: string[] = ["servicediscovery:ListInstances"];
+	static readonly ListInstances: string[] = ["servicediscovery:ListInstances"];
 	/** IAM actions required for the ListNamespaces API call. */
-	static readonly LIST_NAMESPACES: string[] = [
+	static readonly ListNamespaces: string[] = [
 		"servicediscovery:ListNamespaces",
 	];
 	/** IAM actions required for the ListOperations API call. */
-	static readonly LIST_OPERATIONS: string[] = [
+	static readonly ListOperations: string[] = [
 		"servicediscovery:ListOperations",
 	];
 	/** IAM actions required for the ListServices API call. */
-	static readonly LIST_SERVICES: string[] = ["servicediscovery:ListServices"];
+	static readonly ListServices: string[] = ["servicediscovery:ListServices"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"servicediscovery:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterInstance API call. */
-	static readonly REGISTER_INSTANCE: string[] = [
+	static readonly RegisterInstance: string[] = [
 		"servicediscovery:RegisterInstance",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["servicediscovery:TagResource"];
+	static readonly TagResource: string[] = ["servicediscovery:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["servicediscovery:UntagResource"];
+	static readonly UntagResource: string[] = ["servicediscovery:UntagResource"];
 	/** IAM actions required for the UpdateHttpNamespace API call. */
-	static readonly UPDATE_HTTP_NAMESPACE: string[] = [
+	static readonly UpdateHttpNamespace: string[] = [
 		"servicediscovery:UpdateHttpNamespace",
 	];
 	/** IAM actions required for the UpdateInstanceCustomHealthStatus API call. */
-	static readonly UPDATE_INSTANCE_CUSTOM_HEALTH_STATUS: string[] = [
+	static readonly UpdateInstanceCustomHealthStatus: string[] = [
 		"servicediscovery:UpdateInstanceCustomHealthStatus",
 	];
 	/** IAM actions required for the UpdatePrivateDnsNamespace API call. */
-	static readonly UPDATE_PRIVATE_DNS_NAMESPACE: string[] = [
+	static readonly UpdatePrivateDnsNamespace: string[] = [
 		"servicediscovery:UpdatePrivateDnsNamespace",
 	];
 	/** IAM actions required for the UpdatePublicDnsNamespace API call. */
-	static readonly UPDATE_PUBLIC_DNS_NAMESPACE: string[] = [
+	static readonly UpdatePublicDnsNamespace: string[] = [
 		"servicediscovery:UpdatePublicDnsNamespace",
 	];
 	/** IAM actions required for the UpdateService API call. */
-	static readonly UPDATE_SERVICE: string[] = ["servicediscovery:UpdateService"];
+	static readonly UpdateService: string[] = ["servicediscovery:UpdateService"];
 	/** IAM actions required for the UpdateServiceAttributes API call. */
-	static readonly UPDATE_SERVICE_ATTRIBUTES: string[] = [
+	static readonly UpdateServiceAttributes: string[] = [
 		"servicediscovery:UpdateServiceAttributes",
 	];
 }
@@ -359,91 +385,93 @@ export class ServiceDiscoveryOperations {
  */
 export class ServiceDiscoveryConditions {
 	/** Condition keys applicable to the CreateHttpNamespace action. */
-	static readonly CREATE_HTTP_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateHttpNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePrivateDnsNamespace action. */
-	static readonly CREATE_PRIVATE_DNS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly CreatePrivateDnsNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePublicDnsNamespace action. */
-	static readonly CREATE_PUBLIC_DNS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly CreatePublicDnsNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateService action. */
-	static readonly CREATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"servicediscovery:NamespaceArn",
 	];
 	/** Condition keys applicable to the DeleteService action. */
-	static readonly DELETE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly DeleteServiceConditionKeys: string[] = [
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 	/** Condition keys applicable to the DeleteServiceAttributes action. */
-	static readonly DELETE_SERVICE_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly DeleteServiceAttributesConditionKeys: string[] = [
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 	/** Condition keys applicable to the DeregisterInstance action. */
-	static readonly DEREGISTER_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly DeregisterInstanceConditionKeys: string[] = [
 		"servicediscovery:ServiceArn",
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 	/** Condition keys applicable to the DiscoverInstances action. */
-	static readonly DISCOVER_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DiscoverInstancesConditionKeys: string[] = [
 		"servicediscovery:NamespaceName",
 		"servicediscovery:ServiceName",
 	];
 	/** Condition keys applicable to the DiscoverInstancesRevision action. */
-	static readonly DISCOVER_INSTANCES_REVISION_CONDITION_KEYS: string[] = [
+	static readonly DiscoverInstancesRevisionConditionKeys: string[] = [
 		"servicediscovery:NamespaceName",
 		"servicediscovery:ServiceName",
 	];
 	/** Condition keys applicable to the GetInstance action. */
-	static readonly GET_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstanceConditionKeys: string[] = [
 		"servicediscovery:ServiceArn",
 	];
 	/** Condition keys applicable to the GetInstancesHealthStatus action. */
-	static readonly GET_INSTANCES_HEALTH_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstancesHealthStatusConditionKeys: string[] = [
 		"servicediscovery:ServiceArn",
 	];
 	/** Condition keys applicable to the ListInstances action. */
-	static readonly LIST_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly ListInstancesConditionKeys: string[] = [
 		"servicediscovery:ServiceArn",
 	];
 	/** Condition keys applicable to the RegisterInstance action. */
-	static readonly REGISTER_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly RegisterInstanceConditionKeys: string[] = [
 		"servicediscovery:ServiceArn",
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateInstanceCustomHealthStatus action. */
-	static readonly UPDATE_INSTANCE_CUSTOM_HEALTH_STATUS_CONDITION_KEYS: string[] =
-		["servicediscovery:ServiceArn", "servicediscovery:ServiceCreatedByAccount"];
+	static readonly UpdateInstanceCustomHealthStatusConditionKeys: string[] = [
+		"servicediscovery:ServiceArn",
+		"servicediscovery:ServiceCreatedByAccount",
+	];
 	/** Condition keys applicable to the UpdateService action. */
-	static readonly UPDATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly UpdateServiceConditionKeys: string[] = [
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 	/** Condition keys applicable to the UpdateServiceAttributes action. */
-	static readonly UPDATE_SERVICE_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly UpdateServiceAttributesConditionKeys: string[] = [
 		"servicediscovery:ServiceCreatedByAccount",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: servicediscovery:NamespaceArn (ARN) */
 	static readonly NAMESPACE_ARN = "servicediscovery:NamespaceArn";
 	/** Condition key: servicediscovery:NamespaceName (String) */

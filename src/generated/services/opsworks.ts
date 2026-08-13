@@ -13,258 +13,285 @@ export class OpsworksActions {
 	static readonly SERVICE_PREFIX = "opsworks";
 
 	/** [Write] opsworks:AssignInstance */
-	static readonly ASSIGN_INSTANCE = "opsworks:AssignInstance";
+	static readonly AssignInstance = "opsworks:AssignInstance";
 	/** [Write] opsworks:AssignVolume */
-	static readonly ASSIGN_VOLUME = "opsworks:AssignVolume";
+	static readonly AssignVolume = "opsworks:AssignVolume";
 	/** [Write] opsworks:AssociateElasticIp */
-	static readonly ASSOCIATE_ELASTIC_IP = "opsworks:AssociateElasticIp";
+	static readonly AssociateElasticIp = "opsworks:AssociateElasticIp";
 	/** [Write] opsworks:AttachElasticLoadBalancer */
-	static readonly ATTACH_ELASTIC_LOAD_BALANCER =
+	static readonly AttachElasticLoadBalancer =
 		"opsworks:AttachElasticLoadBalancer";
 	/** [Write] opsworks:CloneStack */
-	static readonly CLONE_STACK = "opsworks:CloneStack";
+	static readonly CloneStack = "opsworks:CloneStack";
 	/** [Write] opsworks:CreateApp */
-	static readonly CREATE_APP = "opsworks:CreateApp";
+	static readonly CreateApp = "opsworks:CreateApp";
 	/** [Write] opsworks:CreateDeployment */
-	static readonly CREATE_DEPLOYMENT = "opsworks:CreateDeployment";
+	static readonly CreateDeployment = "opsworks:CreateDeployment";
 	/** [Write] opsworks:CreateInstance */
-	static readonly CREATE_INSTANCE = "opsworks:CreateInstance";
+	static readonly CreateInstance = "opsworks:CreateInstance";
 	/** [Write] opsworks:CreateLayer */
-	static readonly CREATE_LAYER = "opsworks:CreateLayer";
+	static readonly CreateLayer = "opsworks:CreateLayer";
 	/** [Write] opsworks:CreateStack */
-	static readonly CREATE_STACK = "opsworks:CreateStack";
+	static readonly CreateStack = "opsworks:CreateStack";
 	/** [Write] opsworks:CreateUserProfile */
-	static readonly CREATE_USER_PROFILE = "opsworks:CreateUserProfile";
+	static readonly CreateUserProfile = "opsworks:CreateUserProfile";
 	/** [Write] opsworks:DeleteApp */
-	static readonly DELETE_APP = "opsworks:DeleteApp";
+	static readonly DeleteApp = "opsworks:DeleteApp";
 	/** [Write] opsworks:DeleteInstance */
-	static readonly DELETE_INSTANCE = "opsworks:DeleteInstance";
+	static readonly DeleteInstance = "opsworks:DeleteInstance";
 	/** [Write] opsworks:DeleteLayer */
-	static readonly DELETE_LAYER = "opsworks:DeleteLayer";
+	static readonly DeleteLayer = "opsworks:DeleteLayer";
 	/** [Write] opsworks:DeleteStack */
-	static readonly DELETE_STACK = "opsworks:DeleteStack";
+	static readonly DeleteStack = "opsworks:DeleteStack";
 	/** [Write] opsworks:DeleteUserProfile */
-	static readonly DELETE_USER_PROFILE = "opsworks:DeleteUserProfile";
+	static readonly DeleteUserProfile = "opsworks:DeleteUserProfile";
 	/** [Write] opsworks:DeregisterEcsCluster */
-	static readonly DEREGISTER_ECS_CLUSTER = "opsworks:DeregisterEcsCluster";
+	static readonly DeregisterEcsCluster = "opsworks:DeregisterEcsCluster";
 	/** [Write] opsworks:DeregisterElasticIp */
-	static readonly DEREGISTER_ELASTIC_IP = "opsworks:DeregisterElasticIp";
+	static readonly DeregisterElasticIp = "opsworks:DeregisterElasticIp";
 	/** [Write] opsworks:DeregisterInstance */
-	static readonly DEREGISTER_INSTANCE = "opsworks:DeregisterInstance";
+	static readonly DeregisterInstance = "opsworks:DeregisterInstance";
 	/** [Write] opsworks:DeregisterRdsDbInstance */
-	static readonly DEREGISTER_RDS_DB_INSTANCE =
-		"opsworks:DeregisterRdsDbInstance";
+	static readonly DeregisterRdsDbInstance = "opsworks:DeregisterRdsDbInstance";
 	/** [Write] opsworks:DeregisterVolume */
-	static readonly DEREGISTER_VOLUME = "opsworks:DeregisterVolume";
+	static readonly DeregisterVolume = "opsworks:DeregisterVolume";
 	/** [List] opsworks:DescribeAgentVersions */
-	static readonly DESCRIBE_AGENT_VERSIONS = "opsworks:DescribeAgentVersions";
+	static readonly DescribeAgentVersions = "opsworks:DescribeAgentVersions";
 	/** [List] opsworks:DescribeApps */
-	static readonly DESCRIBE_APPS = "opsworks:DescribeApps";
+	static readonly DescribeApps = "opsworks:DescribeApps";
 	/** [List] opsworks:DescribeCommands */
-	static readonly DESCRIBE_COMMANDS = "opsworks:DescribeCommands";
+	static readonly DescribeCommands = "opsworks:DescribeCommands";
 	/** [List] opsworks:DescribeDeployments */
-	static readonly DESCRIBE_DEPLOYMENTS = "opsworks:DescribeDeployments";
+	static readonly DescribeDeployments = "opsworks:DescribeDeployments";
 	/** [List] opsworks:DescribeEcsClusters */
-	static readonly DESCRIBE_ECS_CLUSTERS = "opsworks:DescribeEcsClusters";
+	static readonly DescribeEcsClusters = "opsworks:DescribeEcsClusters";
 	/** [List] opsworks:DescribeElasticIps */
-	static readonly DESCRIBE_ELASTIC_IPS = "opsworks:DescribeElasticIps";
+	static readonly DescribeElasticIps = "opsworks:DescribeElasticIps";
 	/** [List] opsworks:DescribeElasticLoadBalancers */
-	static readonly DESCRIBE_ELASTIC_LOAD_BALANCERS =
+	static readonly DescribeElasticLoadBalancers =
 		"opsworks:DescribeElasticLoadBalancers";
 	/** [List] opsworks:DescribeInstances */
-	static readonly DESCRIBE_INSTANCES = "opsworks:DescribeInstances";
+	static readonly DescribeInstances = "opsworks:DescribeInstances";
 	/** [List] opsworks:DescribeLayers */
-	static readonly DESCRIBE_LAYERS = "opsworks:DescribeLayers";
+	static readonly DescribeLayers = "opsworks:DescribeLayers";
 	/** [List] opsworks:DescribeLoadBasedAutoScaling */
-	static readonly DESCRIBE_LOAD_BASED_AUTO_SCALING =
+	static readonly DescribeLoadBasedAutoScaling =
 		"opsworks:DescribeLoadBasedAutoScaling";
 	/** [List] opsworks:DescribeMyUserProfile */
-	static readonly DESCRIBE_MY_USER_PROFILE = "opsworks:DescribeMyUserProfile";
+	static readonly DescribeMyUserProfile = "opsworks:DescribeMyUserProfile";
 	/** [List] opsworks:DescribeOperatingSystems */
-	static readonly DESCRIBE_OPERATING_SYSTEMS =
+	static readonly DescribeOperatingSystems =
 		"opsworks:DescribeOperatingSystems";
 	/** [List] opsworks:DescribePermissions */
-	static readonly DESCRIBE_PERMISSIONS = "opsworks:DescribePermissions";
+	static readonly DescribePermissions = "opsworks:DescribePermissions";
 	/** [List] opsworks:DescribeRaidArrays */
-	static readonly DESCRIBE_RAID_ARRAYS = "opsworks:DescribeRaidArrays";
+	static readonly DescribeRaidArrays = "opsworks:DescribeRaidArrays";
 	/** [List] opsworks:DescribeRdsDbInstances */
-	static readonly DESCRIBE_RDS_DB_INSTANCES = "opsworks:DescribeRdsDbInstances";
+	static readonly DescribeRdsDbInstances = "opsworks:DescribeRdsDbInstances";
 	/** [List] opsworks:DescribeServiceErrors */
-	static readonly DESCRIBE_SERVICE_ERRORS = "opsworks:DescribeServiceErrors";
+	static readonly DescribeServiceErrors = "opsworks:DescribeServiceErrors";
 	/** [List] opsworks:DescribeStackProvisioningParameters */
-	static readonly DESCRIBE_STACK_PROVISIONING_PARAMETERS =
+	static readonly DescribeStackProvisioningParameters =
 		"opsworks:DescribeStackProvisioningParameters";
 	/** [List] opsworks:DescribeStackSummary */
-	static readonly DESCRIBE_STACK_SUMMARY = "opsworks:DescribeStackSummary";
+	static readonly DescribeStackSummary = "opsworks:DescribeStackSummary";
 	/** [List] opsworks:DescribeStacks */
-	static readonly DESCRIBE_STACKS = "opsworks:DescribeStacks";
+	static readonly DescribeStacks = "opsworks:DescribeStacks";
 	/** [List] opsworks:DescribeTimeBasedAutoScaling */
-	static readonly DESCRIBE_TIME_BASED_AUTO_SCALING =
+	static readonly DescribeTimeBasedAutoScaling =
 		"opsworks:DescribeTimeBasedAutoScaling";
 	/** [List] opsworks:DescribeUserProfiles */
-	static readonly DESCRIBE_USER_PROFILES = "opsworks:DescribeUserProfiles";
+	static readonly DescribeUserProfiles = "opsworks:DescribeUserProfiles";
 	/** [List] opsworks:DescribeVolumes */
-	static readonly DESCRIBE_VOLUMES = "opsworks:DescribeVolumes";
+	static readonly DescribeVolumes = "opsworks:DescribeVolumes";
 	/** [Write] opsworks:DetachElasticLoadBalancer */
-	static readonly DETACH_ELASTIC_LOAD_BALANCER =
+	static readonly DetachElasticLoadBalancer =
 		"opsworks:DetachElasticLoadBalancer";
 	/** [Write] opsworks:DisassociateElasticIp */
-	static readonly DISASSOCIATE_ELASTIC_IP = "opsworks:DisassociateElasticIp";
+	static readonly DisassociateElasticIp = "opsworks:DisassociateElasticIp";
 	/** [Read] opsworks:GetHostnameSuggestion */
-	static readonly GET_HOSTNAME_SUGGESTION = "opsworks:GetHostnameSuggestion";
+	static readonly actionGetHostnameSuggestion =
+		"opsworks:GetHostnameSuggestion";
 	/** [Write] opsworks:GrantAccess */
-	static readonly GRANT_ACCESS = "opsworks:GrantAccess";
+	static readonly GrantAccess = "opsworks:GrantAccess";
 	/** [List] opsworks:ListTags */
-	static readonly LIST_TAGS = "opsworks:ListTags";
+	static readonly ListTags = "opsworks:ListTags";
 	/** [Write] opsworks:RebootInstance */
-	static readonly REBOOT_INSTANCE = "opsworks:RebootInstance";
+	static readonly RebootInstance = "opsworks:RebootInstance";
 	/** [Write] opsworks:RegisterEcsCluster */
-	static readonly REGISTER_ECS_CLUSTER = "opsworks:RegisterEcsCluster";
+	static readonly RegisterEcsCluster = "opsworks:RegisterEcsCluster";
 	/** [Write] opsworks:RegisterElasticIp */
-	static readonly REGISTER_ELASTIC_IP = "opsworks:RegisterElasticIp";
+	static readonly RegisterElasticIp = "opsworks:RegisterElasticIp";
 	/** [Write] opsworks:RegisterInstance */
-	static readonly REGISTER_INSTANCE = "opsworks:RegisterInstance";
+	static readonly RegisterInstance = "opsworks:RegisterInstance";
 	/** [Write] opsworks:RegisterRdsDbInstance */
-	static readonly REGISTER_RDS_DB_INSTANCE = "opsworks:RegisterRdsDbInstance";
+	static readonly RegisterRdsDbInstance = "opsworks:RegisterRdsDbInstance";
 	/** [Write] opsworks:RegisterVolume */
-	static readonly REGISTER_VOLUME = "opsworks:RegisterVolume";
+	static readonly RegisterVolume = "opsworks:RegisterVolume";
 	/** [Write] opsworks:SetLoadBasedAutoScaling */
-	static readonly SET_LOAD_BASED_AUTO_SCALING =
+	static readonly actionSetLoadBasedAutoScaling =
 		"opsworks:SetLoadBasedAutoScaling";
 	/** [PermissionManagement] opsworks:SetPermission */
-	static readonly SET_PERMISSION = "opsworks:SetPermission";
+	static readonly actionSetPermission = "opsworks:SetPermission";
 	/** [Write] opsworks:SetTimeBasedAutoScaling */
-	static readonly SET_TIME_BASED_AUTO_SCALING =
+	static readonly actionSetTimeBasedAutoScaling =
 		"opsworks:SetTimeBasedAutoScaling";
 	/** [Write] opsworks:StartInstance */
-	static readonly START_INSTANCE = "opsworks:StartInstance";
+	static readonly StartInstance = "opsworks:StartInstance";
 	/** [Write] opsworks:StartStack */
-	static readonly START_STACK = "opsworks:StartStack";
+	static readonly StartStack = "opsworks:StartStack";
 	/** [Write] opsworks:StopInstance */
-	static readonly STOP_INSTANCE = "opsworks:StopInstance";
+	static readonly StopInstance = "opsworks:StopInstance";
 	/** [Write] opsworks:StopStack */
-	static readonly STOP_STACK = "opsworks:StopStack";
+	static readonly StopStack = "opsworks:StopStack";
 	/** [Tagging] opsworks:TagResource */
-	static readonly TAG_RESOURCE = "opsworks:TagResource";
+	static readonly TagResource = "opsworks:TagResource";
 	/** [Write] opsworks:UnassignInstance */
-	static readonly UNASSIGN_INSTANCE = "opsworks:UnassignInstance";
+	static readonly UnassignInstance = "opsworks:UnassignInstance";
 	/** [Write] opsworks:UnassignVolume */
-	static readonly UNASSIGN_VOLUME = "opsworks:UnassignVolume";
+	static readonly UnassignVolume = "opsworks:UnassignVolume";
 	/** [Tagging] opsworks:UntagResource */
-	static readonly UNTAG_RESOURCE = "opsworks:UntagResource";
+	static readonly UntagResource = "opsworks:UntagResource";
 	/** [Write] opsworks:UpdateApp */
-	static readonly UPDATE_APP = "opsworks:UpdateApp";
+	static readonly UpdateApp = "opsworks:UpdateApp";
 	/** [Write] opsworks:UpdateElasticIp */
-	static readonly UPDATE_ELASTIC_IP = "opsworks:UpdateElasticIp";
+	static readonly UpdateElasticIp = "opsworks:UpdateElasticIp";
 	/** [Write] opsworks:UpdateInstance */
-	static readonly UPDATE_INSTANCE = "opsworks:UpdateInstance";
+	static readonly UpdateInstance = "opsworks:UpdateInstance";
 	/** [Write] opsworks:UpdateLayer */
-	static readonly UPDATE_LAYER = "opsworks:UpdateLayer";
+	static readonly UpdateLayer = "opsworks:UpdateLayer";
 	/** [Write] opsworks:UpdateMyUserProfile */
-	static readonly UPDATE_MY_USER_PROFILE = "opsworks:UpdateMyUserProfile";
+	static readonly UpdateMyUserProfile = "opsworks:UpdateMyUserProfile";
 	/** [Write] opsworks:UpdateRdsDbInstance */
-	static readonly UPDATE_RDS_DB_INSTANCE = "opsworks:UpdateRdsDbInstance";
+	static readonly UpdateRdsDbInstance = "opsworks:UpdateRdsDbInstance";
 	/** [Write] opsworks:UpdateStack */
-	static readonly UPDATE_STACK = "opsworks:UpdateStack";
+	static readonly UpdateStack = "opsworks:UpdateStack";
 	/** [PermissionManagement] opsworks:UpdateUserProfile */
-	static readonly UPDATE_USER_PROFILE = "opsworks:UpdateUserProfile";
+	static readonly UpdateUserProfile = "opsworks:UpdateUserProfile";
 	/** [Write] opsworks:UpdateVolume */
-	static readonly UPDATE_VOLUME = "opsworks:UpdateVolume";
+	static readonly UpdateVolume = "opsworks:UpdateVolume";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OpsworksActions.GET_HOSTNAME_SUGGESTION,
+	static readonly AllReadActions: string[] = [
+		OpsworksActions.actionGetHostnameSuggestion,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OpsworksActions.ASSIGN_INSTANCE,
-		OpsworksActions.ASSIGN_VOLUME,
-		OpsworksActions.ASSOCIATE_ELASTIC_IP,
-		OpsworksActions.ATTACH_ELASTIC_LOAD_BALANCER,
-		OpsworksActions.CLONE_STACK,
-		OpsworksActions.CREATE_APP,
-		OpsworksActions.CREATE_DEPLOYMENT,
-		OpsworksActions.CREATE_INSTANCE,
-		OpsworksActions.CREATE_LAYER,
-		OpsworksActions.CREATE_STACK,
-		OpsworksActions.CREATE_USER_PROFILE,
-		OpsworksActions.DELETE_APP,
-		OpsworksActions.DELETE_INSTANCE,
-		OpsworksActions.DELETE_LAYER,
-		OpsworksActions.DELETE_STACK,
-		OpsworksActions.DELETE_USER_PROFILE,
-		OpsworksActions.DEREGISTER_ECS_CLUSTER,
-		OpsworksActions.DEREGISTER_ELASTIC_IP,
-		OpsworksActions.DEREGISTER_INSTANCE,
-		OpsworksActions.DEREGISTER_RDS_DB_INSTANCE,
-		OpsworksActions.DEREGISTER_VOLUME,
-		OpsworksActions.DETACH_ELASTIC_LOAD_BALANCER,
-		OpsworksActions.DISASSOCIATE_ELASTIC_IP,
-		OpsworksActions.GRANT_ACCESS,
-		OpsworksActions.REBOOT_INSTANCE,
-		OpsworksActions.REGISTER_ECS_CLUSTER,
-		OpsworksActions.REGISTER_ELASTIC_IP,
-		OpsworksActions.REGISTER_INSTANCE,
-		OpsworksActions.REGISTER_RDS_DB_INSTANCE,
-		OpsworksActions.REGISTER_VOLUME,
-		OpsworksActions.SET_LOAD_BASED_AUTO_SCALING,
-		OpsworksActions.SET_TIME_BASED_AUTO_SCALING,
-		OpsworksActions.START_INSTANCE,
-		OpsworksActions.START_STACK,
-		OpsworksActions.STOP_INSTANCE,
-		OpsworksActions.STOP_STACK,
-		OpsworksActions.UNASSIGN_INSTANCE,
-		OpsworksActions.UNASSIGN_VOLUME,
-		OpsworksActions.UPDATE_APP,
-		OpsworksActions.UPDATE_ELASTIC_IP,
-		OpsworksActions.UPDATE_INSTANCE,
-		OpsworksActions.UPDATE_LAYER,
-		OpsworksActions.UPDATE_MY_USER_PROFILE,
-		OpsworksActions.UPDATE_RDS_DB_INSTANCE,
-		OpsworksActions.UPDATE_STACK,
-		OpsworksActions.UPDATE_VOLUME,
+	static readonly AllWriteActions: string[] = [
+		OpsworksActions.AssignInstance,
+		OpsworksActions.AssignVolume,
+		OpsworksActions.AssociateElasticIp,
+		OpsworksActions.AttachElasticLoadBalancer,
+		OpsworksActions.CloneStack,
+		OpsworksActions.CreateApp,
+		OpsworksActions.CreateDeployment,
+		OpsworksActions.CreateInstance,
+		OpsworksActions.CreateLayer,
+		OpsworksActions.CreateStack,
+		OpsworksActions.CreateUserProfile,
+		OpsworksActions.DeleteApp,
+		OpsworksActions.DeleteInstance,
+		OpsworksActions.DeleteLayer,
+		OpsworksActions.DeleteStack,
+		OpsworksActions.DeleteUserProfile,
+		OpsworksActions.DeregisterEcsCluster,
+		OpsworksActions.DeregisterElasticIp,
+		OpsworksActions.DeregisterInstance,
+		OpsworksActions.DeregisterRdsDbInstance,
+		OpsworksActions.DeregisterVolume,
+		OpsworksActions.DetachElasticLoadBalancer,
+		OpsworksActions.DisassociateElasticIp,
+		OpsworksActions.GrantAccess,
+		OpsworksActions.RebootInstance,
+		OpsworksActions.RegisterEcsCluster,
+		OpsworksActions.RegisterElasticIp,
+		OpsworksActions.RegisterInstance,
+		OpsworksActions.RegisterRdsDbInstance,
+		OpsworksActions.RegisterVolume,
+		OpsworksActions.actionSetLoadBasedAutoScaling,
+		OpsworksActions.actionSetTimeBasedAutoScaling,
+		OpsworksActions.StartInstance,
+		OpsworksActions.StartStack,
+		OpsworksActions.StopInstance,
+		OpsworksActions.StopStack,
+		OpsworksActions.UnassignInstance,
+		OpsworksActions.UnassignVolume,
+		OpsworksActions.UpdateApp,
+		OpsworksActions.UpdateElasticIp,
+		OpsworksActions.UpdateInstance,
+		OpsworksActions.UpdateLayer,
+		OpsworksActions.UpdateMyUserProfile,
+		OpsworksActions.UpdateRdsDbInstance,
+		OpsworksActions.UpdateStack,
+		OpsworksActions.UpdateVolume,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OpsworksActions.DESCRIBE_AGENT_VERSIONS,
-		OpsworksActions.DESCRIBE_APPS,
-		OpsworksActions.DESCRIBE_COMMANDS,
-		OpsworksActions.DESCRIBE_DEPLOYMENTS,
-		OpsworksActions.DESCRIBE_ECS_CLUSTERS,
-		OpsworksActions.DESCRIBE_ELASTIC_IPS,
-		OpsworksActions.DESCRIBE_ELASTIC_LOAD_BALANCERS,
-		OpsworksActions.DESCRIBE_INSTANCES,
-		OpsworksActions.DESCRIBE_LAYERS,
-		OpsworksActions.DESCRIBE_LOAD_BASED_AUTO_SCALING,
-		OpsworksActions.DESCRIBE_MY_USER_PROFILE,
-		OpsworksActions.DESCRIBE_OPERATING_SYSTEMS,
-		OpsworksActions.DESCRIBE_PERMISSIONS,
-		OpsworksActions.DESCRIBE_RAID_ARRAYS,
-		OpsworksActions.DESCRIBE_RDS_DB_INSTANCES,
-		OpsworksActions.DESCRIBE_SERVICE_ERRORS,
-		OpsworksActions.DESCRIBE_STACK_PROVISIONING_PARAMETERS,
-		OpsworksActions.DESCRIBE_STACK_SUMMARY,
-		OpsworksActions.DESCRIBE_STACKS,
-		OpsworksActions.DESCRIBE_TIME_BASED_AUTO_SCALING,
-		OpsworksActions.DESCRIBE_USER_PROFILES,
-		OpsworksActions.DESCRIBE_VOLUMES,
-		OpsworksActions.LIST_TAGS,
+	static readonly AllListActions: string[] = [
+		OpsworksActions.DescribeAgentVersions,
+		OpsworksActions.DescribeApps,
+		OpsworksActions.DescribeCommands,
+		OpsworksActions.DescribeDeployments,
+		OpsworksActions.DescribeEcsClusters,
+		OpsworksActions.DescribeElasticIps,
+		OpsworksActions.DescribeElasticLoadBalancers,
+		OpsworksActions.DescribeInstances,
+		OpsworksActions.DescribeLayers,
+		OpsworksActions.DescribeLoadBasedAutoScaling,
+		OpsworksActions.DescribeMyUserProfile,
+		OpsworksActions.DescribeOperatingSystems,
+		OpsworksActions.DescribePermissions,
+		OpsworksActions.DescribeRaidArrays,
+		OpsworksActions.DescribeRdsDbInstances,
+		OpsworksActions.DescribeServiceErrors,
+		OpsworksActions.DescribeStackProvisioningParameters,
+		OpsworksActions.DescribeStackSummary,
+		OpsworksActions.DescribeStacks,
+		OpsworksActions.DescribeTimeBasedAutoScaling,
+		OpsworksActions.DescribeUserProfiles,
+		OpsworksActions.DescribeVolumes,
+		OpsworksActions.ListTags,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		OpsworksActions.SET_PERMISSION,
-		OpsworksActions.UPDATE_USER_PROFILE,
+	static readonly AllPermissionManagementActions: string[] = [
+		OpsworksActions.actionSetPermission,
+		OpsworksActions.UpdateUserProfile,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OpsworksActions.TAG_RESOURCE,
-		OpsworksActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OpsworksActions.TagResource,
+		OpsworksActions.UntagResource,
 	];
 }
 
-const StackArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):opsworks:(?<region>[^:]*):(?<account>[^:]*):stack/(?<stackId>[^:/?]+)/$",
-);
+/**
+ * Properties for building a stack ARN.
+ */
+export interface OpsworksStackArnProps {
+	/** The StackId component of the ARN. */
+	readonly stackId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stack ARN.
+ */
+export interface OpsworksStackArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StackId component. */
+	readonly stackId: string;
+}
+
+const StackArnRegex =
+	/^arn:(?<partition>[^:]+):opsworks:(?<region>[^:]*):(?<account>[^:]*):stack\/(?<stackId>[^:/?]+)\/$/;
 
 /**
  * ARN builders, validators, and parsers for opsworks resources.
@@ -273,16 +300,7 @@ export class OpsworksResources {
 	/**
 	 * Builds an ARN for the stack resource.
 	 */
-	static stack(props: {
-		/** The StackId component of the ARN. */
-		readonly stackId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stack(props: OpsworksStackArnProps): string {
 		return `arn:${props.partition ?? "aws"}:opsworks:${props.region ?? "*"}:${props.account ?? "*"}:stack/${props.stackId}/`;
 	}
 
@@ -297,12 +315,7 @@ export class OpsworksResources {
 	 * Parses a stack ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStackArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		stackId: string;
-	} {
+	static parseStackArn(arn: string): OpsworksStackArnComponents {
 		const match = StackArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stack ARN: ${arn}`);

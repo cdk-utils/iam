@@ -13,172 +13,346 @@ export class AppIntegrationsActions {
 	static readonly SERVICE_PREFIX = "app-integrations";
 
 	/** [Write] app-integrations:CreateApplication */
-	static readonly CREATE_APPLICATION = "app-integrations:CreateApplication";
+	static readonly CreateApplication = "app-integrations:CreateApplication";
 	/** [Write] app-integrations:CreateApplicationAssociation */
-	static readonly CREATE_APPLICATION_ASSOCIATION =
+	static readonly CreateApplicationAssociation =
 		"app-integrations:CreateApplicationAssociation";
 	/** [Write] app-integrations:CreateDataIntegration */
-	static readonly CREATE_DATA_INTEGRATION =
+	static readonly CreateDataIntegration =
 		"app-integrations:CreateDataIntegration";
 	/** [Write] app-integrations:CreateDataIntegrationAssociation */
-	static readonly CREATE_DATA_INTEGRATION_ASSOCIATION =
+	static readonly CreateDataIntegrationAssociation =
 		"app-integrations:CreateDataIntegrationAssociation";
 	/** [Write] app-integrations:CreateDataIntegrationSchedule */
-	static readonly CREATE_DATA_INTEGRATION_SCHEDULE =
+	static readonly CreateDataIntegrationSchedule =
 		"app-integrations:CreateDataIntegrationSchedule";
 	/** [Write] app-integrations:CreateEventIntegration */
-	static readonly CREATE_EVENT_INTEGRATION =
+	static readonly CreateEventIntegration =
 		"app-integrations:CreateEventIntegration";
 	/** [Write] app-integrations:CreateEventIntegrationAssociation */
-	static readonly CREATE_EVENT_INTEGRATION_ASSOCIATION =
+	static readonly CreateEventIntegrationAssociation =
 		"app-integrations:CreateEventIntegrationAssociation";
 	/** [Write] app-integrations:DeleteApplication */
-	static readonly DELETE_APPLICATION = "app-integrations:DeleteApplication";
+	static readonly DeleteApplication = "app-integrations:DeleteApplication";
 	/** [Write] app-integrations:DeleteApplicationAssociation */
-	static readonly DELETE_APPLICATION_ASSOCIATION =
+	static readonly DeleteApplicationAssociation =
 		"app-integrations:DeleteApplicationAssociation";
 	/** [Write] app-integrations:DeleteDataIntegration */
-	static readonly DELETE_DATA_INTEGRATION =
+	static readonly DeleteDataIntegration =
 		"app-integrations:DeleteDataIntegration";
 	/** [Write] app-integrations:DeleteDataIntegrationAssociation */
-	static readonly DELETE_DATA_INTEGRATION_ASSOCIATION =
+	static readonly DeleteDataIntegrationAssociation =
 		"app-integrations:DeleteDataIntegrationAssociation";
 	/** [Write] app-integrations:DeleteEventIntegration */
-	static readonly DELETE_EVENT_INTEGRATION =
+	static readonly DeleteEventIntegration =
 		"app-integrations:DeleteEventIntegration";
 	/** [Write] app-integrations:DeleteEventIntegrationAssociation */
-	static readonly DELETE_EVENT_INTEGRATION_ASSOCIATION =
+	static readonly DeleteEventIntegrationAssociation =
 		"app-integrations:DeleteEventIntegrationAssociation";
 	/** [Read] app-integrations:GetApplication */
-	static readonly GET_APPLICATION = "app-integrations:GetApplication";
+	static readonly actionGetApplication = "app-integrations:GetApplication";
 	/** [Read] app-integrations:GetDataIntegration */
-	static readonly GET_DATA_INTEGRATION = "app-integrations:GetDataIntegration";
+	static readonly actionGetDataIntegration =
+		"app-integrations:GetDataIntegration";
 	/** [Read] app-integrations:GetDataIntegrationExecution */
-	static readonly GET_DATA_INTEGRATION_EXECUTION =
+	static readonly actionGetDataIntegrationExecution =
 		"app-integrations:GetDataIntegrationExecution";
 	/** [Read] app-integrations:GetDataIntegrationSchedule */
-	static readonly GET_DATA_INTEGRATION_SCHEDULE =
+	static readonly actionGetDataIntegrationSchedule =
 		"app-integrations:GetDataIntegrationSchedule";
 	/** [Read] app-integrations:GetEventIntegration */
-	static readonly GET_EVENT_INTEGRATION =
+	static readonly actionGetEventIntegration =
 		"app-integrations:GetEventIntegration";
 	/** [List] app-integrations:ListApplicationAssociations */
-	static readonly LIST_APPLICATION_ASSOCIATIONS =
+	static readonly ListApplicationAssociations =
 		"app-integrations:ListApplicationAssociations";
 	/** [List] app-integrations:ListApplications */
-	static readonly LIST_APPLICATIONS = "app-integrations:ListApplications";
+	static readonly ListApplications = "app-integrations:ListApplications";
 	/** [List] app-integrations:ListDataIntegrationAssociations */
-	static readonly LIST_DATA_INTEGRATION_ASSOCIATIONS =
+	static readonly ListDataIntegrationAssociations =
 		"app-integrations:ListDataIntegrationAssociations";
 	/** [List] app-integrations:ListDataIntegrationExecutions */
-	static readonly LIST_DATA_INTEGRATION_EXECUTIONS =
+	static readonly ListDataIntegrationExecutions =
 		"app-integrations:ListDataIntegrationExecutions";
 	/** [List] app-integrations:ListDataIntegrationSchedules */
-	static readonly LIST_DATA_INTEGRATION_SCHEDULES =
+	static readonly ListDataIntegrationSchedules =
 		"app-integrations:ListDataIntegrationSchedules";
 	/** [List] app-integrations:ListDataIntegrations */
-	static readonly LIST_DATA_INTEGRATIONS =
+	static readonly ListDataIntegrations =
 		"app-integrations:ListDataIntegrations";
 	/** [Read] app-integrations:ListEventIntegrationAssociations */
-	static readonly LIST_EVENT_INTEGRATION_ASSOCIATIONS =
+	static readonly ListEventIntegrationAssociations =
 		"app-integrations:ListEventIntegrationAssociations";
 	/** [List] app-integrations:ListEventIntegrations */
-	static readonly LIST_EVENT_INTEGRATIONS =
+	static readonly ListEventIntegrations =
 		"app-integrations:ListEventIntegrations";
 	/** [Read] app-integrations:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"app-integrations:ListTagsForResource";
+	static readonly ListTagsForResource = "app-integrations:ListTagsForResource";
 	/** [Write] app-integrations:StartDataIntegrationExecution */
-	static readonly START_DATA_INTEGRATION_EXECUTION =
+	static readonly StartDataIntegrationExecution =
 		"app-integrations:StartDataIntegrationExecution";
 	/** [Tagging] app-integrations:TagResource */
-	static readonly TAG_RESOURCE = "app-integrations:TagResource";
+	static readonly TagResource = "app-integrations:TagResource";
 	/** [Tagging] app-integrations:UntagResource */
-	static readonly UNTAG_RESOURCE = "app-integrations:UntagResource";
+	static readonly UntagResource = "app-integrations:UntagResource";
 	/** [Write] app-integrations:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "app-integrations:UpdateApplication";
+	static readonly UpdateApplication = "app-integrations:UpdateApplication";
 	/** [Write] app-integrations:UpdateDataIntegration */
-	static readonly UPDATE_DATA_INTEGRATION =
+	static readonly UpdateDataIntegration =
 		"app-integrations:UpdateDataIntegration";
 	/** [Write] app-integrations:UpdateDataIntegrationAssociation */
-	static readonly UPDATE_DATA_INTEGRATION_ASSOCIATION =
+	static readonly UpdateDataIntegrationAssociation =
 		"app-integrations:UpdateDataIntegrationAssociation";
 	/** [Write] app-integrations:UpdateDataIntegrationSchedule */
-	static readonly UPDATE_DATA_INTEGRATION_SCHEDULE =
+	static readonly UpdateDataIntegrationSchedule =
 		"app-integrations:UpdateDataIntegrationSchedule";
 	/** [Write] app-integrations:UpdateEventIntegration */
-	static readonly UPDATE_EVENT_INTEGRATION =
+	static readonly UpdateEventIntegration =
 		"app-integrations:UpdateEventIntegration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppIntegrationsActions.GET_APPLICATION,
-		AppIntegrationsActions.GET_DATA_INTEGRATION,
-		AppIntegrationsActions.GET_DATA_INTEGRATION_EXECUTION,
-		AppIntegrationsActions.GET_DATA_INTEGRATION_SCHEDULE,
-		AppIntegrationsActions.GET_EVENT_INTEGRATION,
-		AppIntegrationsActions.LIST_EVENT_INTEGRATION_ASSOCIATIONS,
-		AppIntegrationsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AppIntegrationsActions.actionGetApplication,
+		AppIntegrationsActions.actionGetDataIntegration,
+		AppIntegrationsActions.actionGetDataIntegrationExecution,
+		AppIntegrationsActions.actionGetDataIntegrationSchedule,
+		AppIntegrationsActions.actionGetEventIntegration,
+		AppIntegrationsActions.ListEventIntegrationAssociations,
+		AppIntegrationsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppIntegrationsActions.CREATE_APPLICATION,
-		AppIntegrationsActions.CREATE_APPLICATION_ASSOCIATION,
-		AppIntegrationsActions.CREATE_DATA_INTEGRATION,
-		AppIntegrationsActions.CREATE_DATA_INTEGRATION_ASSOCIATION,
-		AppIntegrationsActions.CREATE_DATA_INTEGRATION_SCHEDULE,
-		AppIntegrationsActions.CREATE_EVENT_INTEGRATION,
-		AppIntegrationsActions.CREATE_EVENT_INTEGRATION_ASSOCIATION,
-		AppIntegrationsActions.DELETE_APPLICATION,
-		AppIntegrationsActions.DELETE_APPLICATION_ASSOCIATION,
-		AppIntegrationsActions.DELETE_DATA_INTEGRATION,
-		AppIntegrationsActions.DELETE_DATA_INTEGRATION_ASSOCIATION,
-		AppIntegrationsActions.DELETE_EVENT_INTEGRATION,
-		AppIntegrationsActions.DELETE_EVENT_INTEGRATION_ASSOCIATION,
-		AppIntegrationsActions.START_DATA_INTEGRATION_EXECUTION,
-		AppIntegrationsActions.UPDATE_APPLICATION,
-		AppIntegrationsActions.UPDATE_DATA_INTEGRATION,
-		AppIntegrationsActions.UPDATE_DATA_INTEGRATION_ASSOCIATION,
-		AppIntegrationsActions.UPDATE_DATA_INTEGRATION_SCHEDULE,
-		AppIntegrationsActions.UPDATE_EVENT_INTEGRATION,
+	static readonly AllWriteActions: string[] = [
+		AppIntegrationsActions.CreateApplication,
+		AppIntegrationsActions.CreateApplicationAssociation,
+		AppIntegrationsActions.CreateDataIntegration,
+		AppIntegrationsActions.CreateDataIntegrationAssociation,
+		AppIntegrationsActions.CreateDataIntegrationSchedule,
+		AppIntegrationsActions.CreateEventIntegration,
+		AppIntegrationsActions.CreateEventIntegrationAssociation,
+		AppIntegrationsActions.DeleteApplication,
+		AppIntegrationsActions.DeleteApplicationAssociation,
+		AppIntegrationsActions.DeleteDataIntegration,
+		AppIntegrationsActions.DeleteDataIntegrationAssociation,
+		AppIntegrationsActions.DeleteEventIntegration,
+		AppIntegrationsActions.DeleteEventIntegrationAssociation,
+		AppIntegrationsActions.StartDataIntegrationExecution,
+		AppIntegrationsActions.UpdateApplication,
+		AppIntegrationsActions.UpdateDataIntegration,
+		AppIntegrationsActions.UpdateDataIntegrationAssociation,
+		AppIntegrationsActions.UpdateDataIntegrationSchedule,
+		AppIntegrationsActions.UpdateEventIntegration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppIntegrationsActions.LIST_APPLICATION_ASSOCIATIONS,
-		AppIntegrationsActions.LIST_APPLICATIONS,
-		AppIntegrationsActions.LIST_DATA_INTEGRATION_ASSOCIATIONS,
-		AppIntegrationsActions.LIST_DATA_INTEGRATION_EXECUTIONS,
-		AppIntegrationsActions.LIST_DATA_INTEGRATION_SCHEDULES,
-		AppIntegrationsActions.LIST_DATA_INTEGRATIONS,
-		AppIntegrationsActions.LIST_EVENT_INTEGRATIONS,
+	static readonly AllListActions: string[] = [
+		AppIntegrationsActions.ListApplicationAssociations,
+		AppIntegrationsActions.ListApplications,
+		AppIntegrationsActions.ListDataIntegrationAssociations,
+		AppIntegrationsActions.ListDataIntegrationExecutions,
+		AppIntegrationsActions.ListDataIntegrationSchedules,
+		AppIntegrationsActions.ListDataIntegrations,
+		AppIntegrationsActions.ListEventIntegrations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppIntegrationsActions.TAG_RESOURCE,
-		AppIntegrationsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppIntegrationsActions.TagResource,
+		AppIntegrationsActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const ApplicationAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):application-association/(?<applicationId>[^:/?]+)/(?<applicationAssociationId>[^:/?]+)$",
-);
-const DataIntegrationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):data-integration/(?<dataIntegrationId>[^:/?]+)$",
-);
-const DataIntegrationAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):data-integration-association/(?<dataIntegrationId>[^:/?]+)/(?<resourceId>[^:/?]+)$",
-);
-const EventIntegrationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):event-integration/(?<eventIntegrationName>[^:/?]+)$",
-);
-const EventIntegrationAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):event-integration-association/(?<eventIntegrationName>[^:/?]+)/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface AppIntegrationsApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface AppIntegrationsApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a application-association ARN.
+ */
+export interface AppIntegrationsApplicationAssociationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The ApplicationAssociationId component of the ARN. */
+	readonly applicationAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application-association ARN.
+ */
+export interface AppIntegrationsApplicationAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The ApplicationAssociationId component. */
+	readonly applicationAssociationId: string;
+}
+
+/**
+ * Properties for building a data-integration ARN.
+ */
+export interface AppIntegrationsDataIntegrationArnProps {
+	/** The DataIntegrationId component of the ARN. */
+	readonly dataIntegrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-integration ARN.
+ */
+export interface AppIntegrationsDataIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataIntegrationId component. */
+	readonly dataIntegrationId: string;
+}
+
+/**
+ * Properties for building a data-integration-association ARN.
+ */
+export interface AppIntegrationsDataIntegrationAssociationArnProps {
+	/** The DataIntegrationId component of the ARN. */
+	readonly dataIntegrationId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-integration-association ARN.
+ */
+export interface AppIntegrationsDataIntegrationAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataIntegrationId component. */
+	readonly dataIntegrationId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a event-integration ARN.
+ */
+export interface AppIntegrationsEventIntegrationArnProps {
+	/** The EventIntegrationName component of the ARN. */
+	readonly eventIntegrationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-integration ARN.
+ */
+export interface AppIntegrationsEventIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EventIntegrationName component. */
+	readonly eventIntegrationName: string;
+}
+
+/**
+ * Properties for building a event-integration-association ARN.
+ */
+export interface AppIntegrationsEventIntegrationAssociationArnProps {
+	/** The EventIntegrationName component of the ARN. */
+	readonly eventIntegrationName: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-integration-association ARN.
+ */
+export interface AppIntegrationsEventIntegrationAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EventIntegrationName component. */
+	readonly eventIntegrationName: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const ApplicationAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):application-association\/(?<applicationId>[^:/?]+)\/(?<applicationAssociationId>[^:/?]+)$/;
+const DataIntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):data-integration\/(?<dataIntegrationId>[^:/?]+)$/;
+const DataIntegrationAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):data-integration-association\/(?<dataIntegrationId>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const EventIntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):event-integration\/(?<eventIntegrationName>[^:/?]+)$/;
+const EventIntegrationAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):app-integrations:(?<region>[^:]*):(?<account>[^:]*):event-integration-association\/(?<eventIntegrationName>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for app-integrations resources.
@@ -187,16 +361,7 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: AppIntegrationsApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -211,12 +376,9 @@ export class AppIntegrationsResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): AppIntegrationsApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -232,18 +394,9 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the application-association resource.
 	 */
-	static applicationAssociation(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The ApplicationAssociationId component of the ARN. */
-		readonly applicationAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationAssociation(
+		props: AppIntegrationsApplicationAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:application-association/${props.applicationId}/${props.applicationAssociationId}`;
 	}
 
@@ -258,13 +411,9 @@ export class AppIntegrationsResources {
 	 * Parses a application-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		applicationAssociationId: string;
-	} {
+	static parseApplicationAssociationArn(
+		arn: string,
+	): AppIntegrationsApplicationAssociationArnComponents {
 		const match = ApplicationAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application-association ARN: ${arn}`);
@@ -281,16 +430,9 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the data-integration resource.
 	 */
-	static dataIntegration(props: {
-		/** The DataIntegrationId component of the ARN. */
-		readonly dataIntegrationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataIntegration(
+		props: AppIntegrationsDataIntegrationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:data-integration/${props.dataIntegrationId}`;
 	}
 
@@ -305,12 +447,9 @@ export class AppIntegrationsResources {
 	 * Parses a data-integration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataIntegrationId: string;
-	} {
+	static parseDataIntegrationArn(
+		arn: string,
+	): AppIntegrationsDataIntegrationArnComponents {
 		const match = DataIntegrationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-integration ARN: ${arn}`);
@@ -326,18 +465,9 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the data-integration-association resource.
 	 */
-	static dataIntegrationAssociation(props: {
-		/** The DataIntegrationId component of the ARN. */
-		readonly dataIntegrationId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataIntegrationAssociation(
+		props: AppIntegrationsDataIntegrationAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:data-integration-association/${props.dataIntegrationId}/${props.resourceId}`;
 	}
 
@@ -352,13 +482,9 @@ export class AppIntegrationsResources {
 	 * Parses a data-integration-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataIntegrationAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataIntegrationId: string;
-		resourceId: string;
-	} {
+	static parseDataIntegrationAssociationArn(
+		arn: string,
+	): AppIntegrationsDataIntegrationAssociationArnComponents {
 		const match = DataIntegrationAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-integration-association ARN: ${arn}`);
@@ -375,16 +501,9 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the event-integration resource.
 	 */
-	static eventIntegration(props: {
-		/** The EventIntegrationName component of the ARN. */
-		readonly eventIntegrationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventIntegration(
+		props: AppIntegrationsEventIntegrationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:event-integration/${props.eventIntegrationName}`;
 	}
 
@@ -399,12 +518,9 @@ export class AppIntegrationsResources {
 	 * Parses a event-integration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		eventIntegrationName: string;
-	} {
+	static parseEventIntegrationArn(
+		arn: string,
+	): AppIntegrationsEventIntegrationArnComponents {
 		const match = EventIntegrationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid event-integration ARN: ${arn}`);
@@ -420,18 +536,9 @@ export class AppIntegrationsResources {
 	/**
 	 * Builds an ARN for the event-integration-association resource.
 	 */
-	static eventIntegrationAssociation(props: {
-		/** The EventIntegrationName component of the ARN. */
-		readonly eventIntegrationName: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventIntegrationAssociation(
+		props: AppIntegrationsEventIntegrationAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:app-integrations:${props.region ?? "*"}:${props.account ?? "*"}:event-integration-association/${props.eventIntegrationName}/${props.resourceId}`;
 	}
 
@@ -446,13 +553,9 @@ export class AppIntegrationsResources {
 	 * Parses a event-integration-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventIntegrationAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		eventIntegrationName: string;
-		resourceId: string;
-	} {
+	static parseEventIntegrationAssociationArn(
+		arn: string,
+	): AppIntegrationsEventIntegrationAssociationArnComponents {
 		const match = EventIntegrationAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid event-integration-association ARN: ${arn}`);
@@ -472,94 +575,94 @@ export class AppIntegrationsResources {
  */
 export class AppIntegrationsOperations {
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"app-integrations:CreateApplication",
 		"app-integrations:TagResource",
 	];
 	/** IAM actions required for the CreateDataIntegration API call. */
-	static readonly CREATE_DATA_INTEGRATION: string[] = [
+	static readonly CreateDataIntegration: string[] = [
 		"app-integrations:CreateDataIntegration",
 		"app-integrations:TagResource",
 	];
 	/** IAM actions required for the CreateDataIntegrationAssociation API call. */
-	static readonly CREATE_DATA_INTEGRATION_ASSOCIATION: string[] = [
+	static readonly CreateDataIntegrationAssociation: string[] = [
 		"app-integrations:CreateDataIntegrationAssociation",
 	];
 	/** IAM actions required for the CreateEventIntegration API call. */
-	static readonly CREATE_EVENT_INTEGRATION: string[] = [
+	static readonly CreateEventIntegration: string[] = [
 		"app-integrations:CreateEventIntegration",
 		"app-integrations:TagResource",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"app-integrations:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteDataIntegration API call. */
-	static readonly DELETE_DATA_INTEGRATION: string[] = [
+	static readonly DeleteDataIntegration: string[] = [
 		"app-integrations:DeleteDataIntegration",
 	];
 	/** IAM actions required for the DeleteEventIntegration API call. */
-	static readonly DELETE_EVENT_INTEGRATION: string[] = [
+	static readonly DeleteEventIntegration: string[] = [
 		"app-integrations:DeleteEventIntegration",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = [
+	static readonly opGetApplication: string[] = [
 		"app-integrations:GetApplication",
 	];
 	/** IAM actions required for the GetDataIntegration API call. */
-	static readonly GET_DATA_INTEGRATION: string[] = [
+	static readonly opGetDataIntegration: string[] = [
 		"app-integrations:GetDataIntegration",
 	];
 	/** IAM actions required for the GetEventIntegration API call. */
-	static readonly GET_EVENT_INTEGRATION: string[] = [
+	static readonly opGetEventIntegration: string[] = [
 		"app-integrations:GetEventIntegration",
 	];
 	/** IAM actions required for the ListApplicationAssociations API call. */
-	static readonly LIST_APPLICATION_ASSOCIATIONS: string[] = [
+	static readonly ListApplicationAssociations: string[] = [
 		"app-integrations:ListApplicationAssociations",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"app-integrations:ListApplications",
 	];
 	/** IAM actions required for the ListDataIntegrationAssociations API call. */
-	static readonly LIST_DATA_INTEGRATION_ASSOCIATIONS: string[] = [
+	static readonly ListDataIntegrationAssociations: string[] = [
 		"app-integrations:ListDataIntegrationAssociations",
 	];
 	/** IAM actions required for the ListDataIntegrations API call. */
-	static readonly LIST_DATA_INTEGRATIONS: string[] = [
+	static readonly ListDataIntegrations: string[] = [
 		"app-integrations:ListDataIntegrations",
 	];
 	/** IAM actions required for the ListEventIntegrationAssociations API call. */
-	static readonly LIST_EVENT_INTEGRATION_ASSOCIATIONS: string[] = [
+	static readonly ListEventIntegrationAssociations: string[] = [
 		"app-integrations:ListEventIntegrationAssociations",
 	];
 	/** IAM actions required for the ListEventIntegrations API call. */
-	static readonly LIST_EVENT_INTEGRATIONS: string[] = [
+	static readonly ListEventIntegrations: string[] = [
 		"app-integrations:ListEventIntegrations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"app-integrations:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["app-integrations:TagResource"];
+	static readonly TagResource: string[] = ["app-integrations:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["app-integrations:UntagResource"];
+	static readonly UntagResource: string[] = ["app-integrations:UntagResource"];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"app-integrations:UpdateApplication",
 	];
 	/** IAM actions required for the UpdateDataIntegration API call. */
-	static readonly UPDATE_DATA_INTEGRATION: string[] = [
+	static readonly UpdateDataIntegration: string[] = [
 		"app-integrations:UpdateDataIntegration",
 	];
 	/** IAM actions required for the UpdateDataIntegrationAssociation API call. */
-	static readonly UPDATE_DATA_INTEGRATION_ASSOCIATION: string[] = [
+	static readonly UpdateDataIntegrationAssociation: string[] = [
 		"app-integrations:UpdateDataIntegrationAssociation",
 	];
 	/** IAM actions required for the UpdateEventIntegration API call. */
-	static readonly UPDATE_EVENT_INTEGRATION: string[] = [
+	static readonly UpdateEventIntegration: string[] = [
 		"app-integrations:UpdateEventIntegration",
 	];
 }
@@ -569,92 +672,97 @@ export class AppIntegrationsOperations {
  */
 export class AppIntegrationsConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApplicationAssociation action. */
-	static readonly CREATE_APPLICATION_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataIntegration action. */
-	static readonly CREATE_DATA_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly CreateDataIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataIntegrationAssociation action. */
-	static readonly CREATE_DATA_INTEGRATION_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateDataIntegrationAssociationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateEventIntegration action. */
-	static readonly CREATE_EVENT_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly CreateEventIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEventIntegrationAssociation action. */
-	static readonly CREATE_EVENT_INTEGRATION_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateEventIntegrationAssociationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DeleteApplication action. */
-	static readonly DELETE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteDataIntegration action. */
-	static readonly DELETE_DATA_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteDataIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteEventIntegration action. */
-	static readonly DELETE_EVENT_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteEventIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetApplication action. */
-	static readonly GET_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDataIntegration action. */
-	static readonly GET_DATA_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetDataIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetEventIntegration action. */
-	static readonly GET_EVENT_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetEventIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateApplication action. */
-	static readonly UPDATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateDataIntegration action. */
-	static readonly UPDATE_DATA_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateDataIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateDataIntegrationAssociation action. */
-	static readonly UPDATE_DATA_INTEGRATION_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateDataIntegrationAssociationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateEventIntegration action. */
-	static readonly UPDATE_EVENT_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateEventIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

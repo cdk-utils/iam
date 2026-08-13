@@ -13,27 +13,26 @@ export class IdentitystoreAuthActions {
 	static readonly SERVICE_PREFIX = "identitystore-auth";
 
 	/** [Write] identitystore-auth:BatchDeleteSession */
-	static readonly BATCH_DELETE_SESSION =
-		"identitystore-auth:BatchDeleteSession";
+	static readonly BatchDeleteSession = "identitystore-auth:BatchDeleteSession";
 	/** [Read] identitystore-auth:BatchGetSession */
-	static readonly BATCH_GET_SESSION = "identitystore-auth:BatchGetSession";
+	static readonly BatchGetSession = "identitystore-auth:BatchGetSession";
 	/** [List] identitystore-auth:ListSessions */
-	static readonly LIST_SESSIONS = "identitystore-auth:ListSessions";
+	static readonly ListSessions = "identitystore-auth:ListSessions";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IdentitystoreAuthActions.BATCH_GET_SESSION,
+	static readonly AllReadActions: string[] = [
+		IdentitystoreAuthActions.BatchGetSession,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IdentitystoreAuthActions.BATCH_DELETE_SESSION,
+	static readonly AllWriteActions: string[] = [
+		IdentitystoreAuthActions.BatchDeleteSession,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IdentitystoreAuthActions.LIST_SESSIONS,
+	static readonly AllListActions: string[] = [
+		IdentitystoreAuthActions.ListSessions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

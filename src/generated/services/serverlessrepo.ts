@@ -13,77 +13,103 @@ export class ServerlessrepoActions {
 	static readonly SERVICE_PREFIX = "serverlessrepo";
 
 	/** [Write] serverlessrepo:CreateApplication */
-	static readonly CREATE_APPLICATION = "serverlessrepo:CreateApplication";
+	static readonly CreateApplication = "serverlessrepo:CreateApplication";
 	/** [Write] serverlessrepo:CreateApplicationVersion */
-	static readonly CREATE_APPLICATION_VERSION =
+	static readonly CreateApplicationVersion =
 		"serverlessrepo:CreateApplicationVersion";
 	/** [Write] serverlessrepo:CreateCloudFormationChangeSet */
-	static readonly CREATE_CLOUD_FORMATION_CHANGE_SET =
+	static readonly CreateCloudFormationChangeSet =
 		"serverlessrepo:CreateCloudFormationChangeSet";
 	/** [Write] serverlessrepo:CreateCloudFormationTemplate */
-	static readonly CREATE_CLOUD_FORMATION_TEMPLATE =
+	static readonly CreateCloudFormationTemplate =
 		"serverlessrepo:CreateCloudFormationTemplate";
 	/** [Write] serverlessrepo:DeleteApplication */
-	static readonly DELETE_APPLICATION = "serverlessrepo:DeleteApplication";
+	static readonly DeleteApplication = "serverlessrepo:DeleteApplication";
 	/** [Read] serverlessrepo:GetApplication */
-	static readonly GET_APPLICATION = "serverlessrepo:GetApplication";
+	static readonly actionGetApplication = "serverlessrepo:GetApplication";
 	/** [Read] serverlessrepo:GetApplicationPolicy */
-	static readonly GET_APPLICATION_POLICY =
+	static readonly actionGetApplicationPolicy =
 		"serverlessrepo:GetApplicationPolicy";
 	/** [Read] serverlessrepo:GetCloudFormationTemplate */
-	static readonly GET_CLOUD_FORMATION_TEMPLATE =
+	static readonly actionGetCloudFormationTemplate =
 		"serverlessrepo:GetCloudFormationTemplate";
 	/** [List] serverlessrepo:ListApplicationDependencies */
-	static readonly LIST_APPLICATION_DEPENDENCIES =
+	static readonly ListApplicationDependencies =
 		"serverlessrepo:ListApplicationDependencies";
 	/** [List] serverlessrepo:ListApplicationVersions */
-	static readonly LIST_APPLICATION_VERSIONS =
+	static readonly ListApplicationVersions =
 		"serverlessrepo:ListApplicationVersions";
 	/** [List] serverlessrepo:ListApplications */
-	static readonly LIST_APPLICATIONS = "serverlessrepo:ListApplications";
+	static readonly ListApplications = "serverlessrepo:ListApplications";
 	/** [Write] serverlessrepo:PutApplicationPolicy */
-	static readonly PUT_APPLICATION_POLICY =
-		"serverlessrepo:PutApplicationPolicy";
+	static readonly PutApplicationPolicy = "serverlessrepo:PutApplicationPolicy";
 	/** [Read] serverlessrepo:SearchApplications */
-	static readonly SEARCH_APPLICATIONS = "serverlessrepo:SearchApplications";
+	static readonly SearchApplications = "serverlessrepo:SearchApplications";
 	/** [Write] serverlessrepo:UnshareApplication */
-	static readonly UNSHARE_APPLICATION = "serverlessrepo:UnshareApplication";
+	static readonly UnshareApplication = "serverlessrepo:UnshareApplication";
 	/** [Write] serverlessrepo:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "serverlessrepo:UpdateApplication";
+	static readonly UpdateApplication = "serverlessrepo:UpdateApplication";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ServerlessrepoActions.GET_APPLICATION,
-		ServerlessrepoActions.GET_APPLICATION_POLICY,
-		ServerlessrepoActions.GET_CLOUD_FORMATION_TEMPLATE,
-		ServerlessrepoActions.SEARCH_APPLICATIONS,
+	static readonly AllReadActions: string[] = [
+		ServerlessrepoActions.actionGetApplication,
+		ServerlessrepoActions.actionGetApplicationPolicy,
+		ServerlessrepoActions.actionGetCloudFormationTemplate,
+		ServerlessrepoActions.SearchApplications,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ServerlessrepoActions.CREATE_APPLICATION,
-		ServerlessrepoActions.CREATE_APPLICATION_VERSION,
-		ServerlessrepoActions.CREATE_CLOUD_FORMATION_CHANGE_SET,
-		ServerlessrepoActions.CREATE_CLOUD_FORMATION_TEMPLATE,
-		ServerlessrepoActions.DELETE_APPLICATION,
-		ServerlessrepoActions.PUT_APPLICATION_POLICY,
-		ServerlessrepoActions.UNSHARE_APPLICATION,
-		ServerlessrepoActions.UPDATE_APPLICATION,
+	static readonly AllWriteActions: string[] = [
+		ServerlessrepoActions.CreateApplication,
+		ServerlessrepoActions.CreateApplicationVersion,
+		ServerlessrepoActions.CreateCloudFormationChangeSet,
+		ServerlessrepoActions.CreateCloudFormationTemplate,
+		ServerlessrepoActions.DeleteApplication,
+		ServerlessrepoActions.PutApplicationPolicy,
+		ServerlessrepoActions.UnshareApplication,
+		ServerlessrepoActions.UpdateApplication,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ServerlessrepoActions.LIST_APPLICATION_DEPENDENCIES,
-		ServerlessrepoActions.LIST_APPLICATION_VERSIONS,
-		ServerlessrepoActions.LIST_APPLICATIONS,
+	static readonly AllListActions: string[] = [
+		ServerlessrepoActions.ListApplicationDependencies,
+		ServerlessrepoActions.ListApplicationVersions,
+		ServerlessrepoActions.ListApplications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ApplicationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):serverlessrepo:(?<region>[^:]*):(?<account>[^:]*):applications/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a applications ARN.
+ */
+export interface ServerlessrepoApplicationsArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a applications ARN.
+ */
+export interface ServerlessrepoApplicationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ApplicationsArnRegex =
+	/^arn:(?<partition>[^:]+):serverlessrepo:(?<region>[^:]*):(?<account>[^:]*):applications\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for serverlessrepo resources.
@@ -92,16 +118,7 @@ export class ServerlessrepoResources {
 	/**
 	 * Builds an ARN for the applications resource.
 	 */
-	static applications(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applications(props: ServerlessrepoApplicationsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:serverlessrepo:${props.region ?? "*"}:${props.account ?? "*"}:applications/${props.resourceId}`;
 	}
 
@@ -116,12 +133,9 @@ export class ServerlessrepoResources {
 	 * Parses a applications ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseApplicationsArn(
+		arn: string,
+	): ServerlessrepoApplicationsArnComponents {
 		const match = ApplicationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid applications ARN: ${arn}`);
@@ -140,57 +154,59 @@ export class ServerlessrepoResources {
  */
 export class ServerlessrepoOperations {
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"serverlessrepo:CreateApplication",
 	];
 	/** IAM actions required for the CreateApplicationVersion API call. */
-	static readonly CREATE_APPLICATION_VERSION: string[] = [
+	static readonly CreateApplicationVersion: string[] = [
 		"serverlessrepo:CreateApplicationVersion",
 	];
 	/** IAM actions required for the CreateCloudFormationChangeSet API call. */
-	static readonly CREATE_CLOUD_FORMATION_CHANGE_SET: string[] = [
+	static readonly CreateCloudFormationChangeSet: string[] = [
 		"serverlessrepo:CreateCloudFormationChangeSet",
 	];
 	/** IAM actions required for the CreateCloudFormationTemplate API call. */
-	static readonly CREATE_CLOUD_FORMATION_TEMPLATE: string[] = [
+	static readonly CreateCloudFormationTemplate: string[] = [
 		"serverlessrepo:CreateCloudFormationTemplate",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"serverlessrepo:DeleteApplication",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = ["serverlessrepo:GetApplication"];
+	static readonly opGetApplication: string[] = [
+		"serverlessrepo:GetApplication",
+	];
 	/** IAM actions required for the GetApplicationPolicy API call. */
-	static readonly GET_APPLICATION_POLICY: string[] = [
+	static readonly opGetApplicationPolicy: string[] = [
 		"serverlessrepo:GetApplicationPolicy",
 	];
 	/** IAM actions required for the GetCloudFormationTemplate API call. */
-	static readonly GET_CLOUD_FORMATION_TEMPLATE: string[] = [
+	static readonly opGetCloudFormationTemplate: string[] = [
 		"serverlessrepo:GetCloudFormationTemplate",
 	];
 	/** IAM actions required for the ListApplicationDependencies API call. */
-	static readonly LIST_APPLICATION_DEPENDENCIES: string[] = [
+	static readonly ListApplicationDependencies: string[] = [
 		"serverlessrepo:ListApplicationDependencies",
 	];
 	/** IAM actions required for the ListApplicationVersions API call. */
-	static readonly LIST_APPLICATION_VERSIONS: string[] = [
+	static readonly ListApplicationVersions: string[] = [
 		"serverlessrepo:ListApplicationVersions",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"serverlessrepo:ListApplications",
 	];
 	/** IAM actions required for the PutApplicationPolicy API call. */
-	static readonly PUT_APPLICATION_POLICY: string[] = [
+	static readonly PutApplicationPolicy: string[] = [
 		"serverlessrepo:PutApplicationPolicy",
 	];
 	/** IAM actions required for the UnshareApplication API call. */
-	static readonly UNSHARE_APPLICATION: string[] = [
+	static readonly UnshareApplication: string[] = [
 		"serverlessrepo:UnshareApplication",
 	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"serverlessrepo:UpdateApplication",
 	];
 }
@@ -200,27 +216,27 @@ export class ServerlessrepoOperations {
  */
 export class ServerlessrepoConditions {
 	/** Condition keys applicable to the CreateCloudFormationChangeSet action. */
-	static readonly CREATE_CLOUD_FORMATION_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateCloudFormationChangeSetConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 	/** Condition keys applicable to the CreateCloudFormationTemplate action. */
-	static readonly CREATE_CLOUD_FORMATION_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateCloudFormationTemplateConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 	/** Condition keys applicable to the GetApplication action. */
-	static readonly GET_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetApplicationConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 	/** Condition keys applicable to the ListApplicationDependencies action. */
-	static readonly LIST_APPLICATION_DEPENDENCIES_CONDITION_KEYS: string[] = [
+	static readonly ListApplicationDependenciesConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 	/** Condition keys applicable to the ListApplicationVersions action. */
-	static readonly LIST_APPLICATION_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListApplicationVersionsConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 	/** Condition keys applicable to the SearchApplications action. */
-	static readonly SEARCH_APPLICATIONS_CONDITION_KEYS: string[] = [
+	static readonly SearchApplicationsConditionKeys: string[] = [
 		"serverlessrepo:applicationType",
 	];
 

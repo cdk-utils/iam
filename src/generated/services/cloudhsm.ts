@@ -13,82 +13,136 @@ export class CloudHSMActions {
 	static readonly SERVICE_PREFIX = "cloudhsm";
 
 	/** [Write] cloudhsm:CopyBackupToRegion */
-	static readonly COPY_BACKUP_TO_REGION = "cloudhsm:CopyBackupToRegion";
+	static readonly CopyBackupToRegion = "cloudhsm:CopyBackupToRegion";
 	/** [Write] cloudhsm:CreateCluster */
-	static readonly CREATE_CLUSTER = "cloudhsm:CreateCluster";
+	static readonly CreateCluster = "cloudhsm:CreateCluster";
 	/** [Write] cloudhsm:CreateHsm */
-	static readonly CREATE_HSM = "cloudhsm:CreateHsm";
+	static readonly CreateHsm = "cloudhsm:CreateHsm";
 	/** [Write] cloudhsm:DeleteBackup */
-	static readonly DELETE_BACKUP = "cloudhsm:DeleteBackup";
+	static readonly DeleteBackup = "cloudhsm:DeleteBackup";
 	/** [Write] cloudhsm:DeleteCluster */
-	static readonly DELETE_CLUSTER = "cloudhsm:DeleteCluster";
+	static readonly DeleteCluster = "cloudhsm:DeleteCluster";
 	/** [Write] cloudhsm:DeleteHsm */
-	static readonly DELETE_HSM = "cloudhsm:DeleteHsm";
+	static readonly DeleteHsm = "cloudhsm:DeleteHsm";
 	/** [PermissionManagement] cloudhsm:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "cloudhsm:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "cloudhsm:DeleteResourcePolicy";
 	/** [Read] cloudhsm:DescribeBackups */
-	static readonly DESCRIBE_BACKUPS = "cloudhsm:DescribeBackups";
+	static readonly DescribeBackups = "cloudhsm:DescribeBackups";
 	/** [Read] cloudhsm:DescribeClusters */
-	static readonly DESCRIBE_CLUSTERS = "cloudhsm:DescribeClusters";
+	static readonly DescribeClusters = "cloudhsm:DescribeClusters";
 	/** [Read] cloudhsm:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "cloudhsm:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "cloudhsm:GetResourcePolicy";
 	/** [Write] cloudhsm:InitializeCluster */
-	static readonly INITIALIZE_CLUSTER = "cloudhsm:InitializeCluster";
+	static readonly InitializeCluster = "cloudhsm:InitializeCluster";
 	/** [Read] cloudhsm:ListTags */
-	static readonly LIST_TAGS = "cloudhsm:ListTags";
+	static readonly ListTags = "cloudhsm:ListTags";
 	/** [Write] cloudhsm:ModifyBackupAttributes */
-	static readonly MODIFY_BACKUP_ATTRIBUTES = "cloudhsm:ModifyBackupAttributes";
+	static readonly ModifyBackupAttributes = "cloudhsm:ModifyBackupAttributes";
 	/** [Write] cloudhsm:ModifyCluster */
-	static readonly MODIFY_CLUSTER = "cloudhsm:ModifyCluster";
+	static readonly ModifyCluster = "cloudhsm:ModifyCluster";
 	/** [PermissionManagement] cloudhsm:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "cloudhsm:PutResourcePolicy";
+	static readonly PutResourcePolicy = "cloudhsm:PutResourcePolicy";
 	/** [Write] cloudhsm:RestoreBackup */
-	static readonly RESTORE_BACKUP = "cloudhsm:RestoreBackup";
+	static readonly RestoreBackup = "cloudhsm:RestoreBackup";
 	/** [Tagging] cloudhsm:TagResource */
-	static readonly TAG_RESOURCE = "cloudhsm:TagResource";
+	static readonly TagResource = "cloudhsm:TagResource";
 	/** [Tagging] cloudhsm:UntagResource */
-	static readonly UNTAG_RESOURCE = "cloudhsm:UntagResource";
+	static readonly UntagResource = "cloudhsm:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudHSMActions.DESCRIBE_BACKUPS,
-		CloudHSMActions.DESCRIBE_CLUSTERS,
-		CloudHSMActions.GET_RESOURCE_POLICY,
-		CloudHSMActions.LIST_TAGS,
+	static readonly AllReadActions: string[] = [
+		CloudHSMActions.DescribeBackups,
+		CloudHSMActions.DescribeClusters,
+		CloudHSMActions.actionGetResourcePolicy,
+		CloudHSMActions.ListTags,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudHSMActions.COPY_BACKUP_TO_REGION,
-		CloudHSMActions.CREATE_CLUSTER,
-		CloudHSMActions.CREATE_HSM,
-		CloudHSMActions.DELETE_BACKUP,
-		CloudHSMActions.DELETE_CLUSTER,
-		CloudHSMActions.DELETE_HSM,
-		CloudHSMActions.INITIALIZE_CLUSTER,
-		CloudHSMActions.MODIFY_BACKUP_ATTRIBUTES,
-		CloudHSMActions.MODIFY_CLUSTER,
-		CloudHSMActions.RESTORE_BACKUP,
+	static readonly AllWriteActions: string[] = [
+		CloudHSMActions.CopyBackupToRegion,
+		CloudHSMActions.CreateCluster,
+		CloudHSMActions.CreateHsm,
+		CloudHSMActions.DeleteBackup,
+		CloudHSMActions.DeleteCluster,
+		CloudHSMActions.DeleteHsm,
+		CloudHSMActions.InitializeCluster,
+		CloudHSMActions.ModifyBackupAttributes,
+		CloudHSMActions.ModifyCluster,
+		CloudHSMActions.RestoreBackup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CloudHSMActions.DELETE_RESOURCE_POLICY,
-		CloudHSMActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		CloudHSMActions.DeleteResourcePolicy,
+		CloudHSMActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CloudHSMActions.TAG_RESOURCE,
-		CloudHSMActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CloudHSMActions.TagResource,
+		CloudHSMActions.UntagResource,
 	];
 }
 
-const BackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudhsm:(?<region>[^:]*):(?<account>[^:]*):backup/(?<cloudHsmBackupInstanceName>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudhsm:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<cloudHsmClusterInstanceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a backup ARN.
+ */
+export interface CloudHSMBackupArnProps {
+	/** The CloudHsmBackupInstanceName component of the ARN. */
+	readonly cloudHsmBackupInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a backup ARN.
+ */
+export interface CloudHSMBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CloudHsmBackupInstanceName component. */
+	readonly cloudHsmBackupInstanceName: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface CloudHSMClusterArnProps {
+	/** The CloudHsmClusterInstanceName component of the ARN. */
+	readonly cloudHsmClusterInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface CloudHSMClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CloudHsmClusterInstanceName component. */
+	readonly cloudHsmClusterInstanceName: string;
+}
+
+const BackupArnRegex =
+	/^arn:(?<partition>[^:]+):cloudhsm:(?<region>[^:]*):(?<account>[^:]*):backup\/(?<cloudHsmBackupInstanceName>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):cloudhsm:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<cloudHsmClusterInstanceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudhsm resources.
@@ -97,16 +151,7 @@ export class CloudHSMResources {
 	/**
 	 * Builds an ARN for the backup resource.
 	 */
-	static backup(props: {
-		/** The CloudHsmBackupInstanceName component of the ARN. */
-		readonly cloudHsmBackupInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static backup(props: CloudHSMBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudhsm:${props.region ?? "*"}:${props.account ?? "*"}:backup/${props.cloudHsmBackupInstanceName}`;
 	}
 
@@ -121,12 +166,7 @@ export class CloudHSMResources {
 	 * Parses a backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cloudHsmBackupInstanceName: string;
-	} {
+	static parseBackupArn(arn: string): CloudHSMBackupArnComponents {
 		const match = BackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid backup ARN: ${arn}`);
@@ -142,16 +182,7 @@ export class CloudHSMResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The CloudHsmClusterInstanceName component of the ARN. */
-		readonly cloudHsmClusterInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: CloudHSMClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudhsm:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.cloudHsmClusterInstanceName}`;
 	}
 
@@ -166,12 +197,7 @@ export class CloudHSMResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cloudHsmClusterInstanceName: string;
-	} {
+	static parseClusterArn(arn: string): CloudHSMClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -190,15 +216,15 @@ export class CloudHSMResources {
  */
 export class CloudHSMOperations {
 	/** IAM actions required for the AddTagsToResource API call. */
-	static readonly ADD_TAGS_TO_RESOURCE: string[] = [];
+	static readonly AddTagsToResource: string[] = [];
 	/** IAM actions required for the CopyBackupToRegion API call. */
-	static readonly COPY_BACKUP_TO_REGION: string[] = [
+	static readonly CopyBackupToRegion: string[] = [
 		"cloudhsm:CopyBackupToRegion",
 		"cloudhsm:TagResource",
 		"cloudhsm:UntagResource",
 	];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"ec2:AuthorizeSecurityGroupEgress",
 		"ec2:AuthorizeSecurityGroupIngress",
 		"cloudhsm:CreateCluster",
@@ -209,9 +235,9 @@ export class CloudHSMOperations {
 		"cloudhsm:TagResource",
 	];
 	/** IAM actions required for the CreateHapg API call. */
-	static readonly CREATE_HAPG: string[] = [];
+	static readonly CreateHapg: string[] = [];
 	/** IAM actions required for the CreateHsm API call. */
-	static readonly CREATE_HSM: string[] = [
+	static readonly CreateHsm: string[] = [
 		"ec2:AuthorizeSecurityGroupEgress",
 		"ec2:AuthorizeSecurityGroupIngress",
 		"cloudhsm:CreateHsm",
@@ -224,78 +250,76 @@ export class CloudHSMOperations {
 		"ec2:RevokeSecurityGroupEgress",
 	];
 	/** IAM actions required for the CreateLunaClient API call. */
-	static readonly CREATE_LUNA_CLIENT: string[] = [];
+	static readonly CreateLunaClient: string[] = [];
 	/** IAM actions required for the DeleteBackup API call. */
-	static readonly DELETE_BACKUP: string[] = ["cloudhsm:DeleteBackup"];
+	static readonly DeleteBackup: string[] = ["cloudhsm:DeleteBackup"];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["cloudhsm:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["cloudhsm:DeleteCluster"];
 	/** IAM actions required for the DeleteHapg API call. */
-	static readonly DELETE_HAPG: string[] = [];
+	static readonly DeleteHapg: string[] = [];
 	/** IAM actions required for the DeleteHsm API call. */
-	static readonly DELETE_HSM: string[] = [
+	static readonly DeleteHsm: string[] = [
 		"cloudhsm:DeleteHsm",
 		"ec2:DeleteNetworkInterface",
 	];
 	/** IAM actions required for the DeleteLunaClient API call. */
-	static readonly DELETE_LUNA_CLIENT: string[] = [];
+	static readonly DeleteLunaClient: string[] = [];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"cloudhsm:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DescribeBackups API call. */
-	static readonly DESCRIBE_BACKUPS: string[] = ["cloudhsm:DescribeBackups"];
+	static readonly DescribeBackups: string[] = ["cloudhsm:DescribeBackups"];
 	/** IAM actions required for the DescribeClusters API call. */
-	static readonly DESCRIBE_CLUSTERS: string[] = ["cloudhsm:DescribeClusters"];
+	static readonly DescribeClusters: string[] = ["cloudhsm:DescribeClusters"];
 	/** IAM actions required for the DescribeHapg API call. */
-	static readonly DESCRIBE_HAPG: string[] = [];
+	static readonly DescribeHapg: string[] = [];
 	/** IAM actions required for the DescribeHsm API call. */
-	static readonly DESCRIBE_HSM: string[] = [];
+	static readonly DescribeHsm: string[] = [];
 	/** IAM actions required for the DescribeLunaClient API call. */
-	static readonly DESCRIBE_LUNA_CLIENT: string[] = [];
+	static readonly DescribeLunaClient: string[] = [];
 	/** IAM actions required for the GetConfig API call. */
-	static readonly GET_CONFIG: string[] = [];
+	static readonly opGetConfig: string[] = [];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"cloudhsm:GetResourcePolicy",
 	];
 	/** IAM actions required for the InitializeCluster API call. */
-	static readonly INITIALIZE_CLUSTER: string[] = ["cloudhsm:InitializeCluster"];
+	static readonly InitializeCluster: string[] = ["cloudhsm:InitializeCluster"];
 	/** IAM actions required for the ListAvailableZones API call. */
-	static readonly LIST_AVAILABLE_ZONES: string[] = [];
+	static readonly ListAvailableZones: string[] = [];
 	/** IAM actions required for the ListHapgs API call. */
-	static readonly LIST_HAPGS: string[] = [];
+	static readonly ListHapgs: string[] = [];
 	/** IAM actions required for the ListHsms API call. */
-	static readonly LIST_HSMS: string[] = [];
+	static readonly ListHsms: string[] = [];
 	/** IAM actions required for the ListLunaClients API call. */
-	static readonly LIST_LUNA_CLIENTS: string[] = [];
+	static readonly ListLunaClients: string[] = [];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["cloudhsm:ListTags"];
+	static readonly ListTags: string[] = ["cloudhsm:ListTags"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the ModifyBackupAttributes API call. */
-	static readonly MODIFY_BACKUP_ATTRIBUTES: string[] = [
+	static readonly ModifyBackupAttributes: string[] = [
 		"cloudhsm:ModifyBackupAttributes",
 	];
 	/** IAM actions required for the ModifyCluster API call. */
-	static readonly MODIFY_CLUSTER: string[] = ["cloudhsm:ModifyCluster"];
+	static readonly ModifyCluster: string[] = ["cloudhsm:ModifyCluster"];
 	/** IAM actions required for the ModifyHapg API call. */
-	static readonly MODIFY_HAPG: string[] = [];
+	static readonly ModifyHapg: string[] = [];
 	/** IAM actions required for the ModifyHsm API call. */
-	static readonly MODIFY_HSM: string[] = [];
+	static readonly ModifyHsm: string[] = [];
 	/** IAM actions required for the ModifyLunaClient API call. */
-	static readonly MODIFY_LUNA_CLIENT: string[] = [];
+	static readonly ModifyLunaClient: string[] = [];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
-		"cloudhsm:PutResourcePolicy",
-	];
+	static readonly PutResourcePolicy: string[] = ["cloudhsm:PutResourcePolicy"];
 	/** IAM actions required for the RemoveTagsFromResource API call. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE: string[] = [];
+	static readonly RemoveTagsFromResource: string[] = [];
 	/** IAM actions required for the RestoreBackup API call. */
-	static readonly RESTORE_BACKUP: string[] = ["cloudhsm:RestoreBackup"];
+	static readonly RestoreBackup: string[] = ["cloudhsm:RestoreBackup"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cloudhsm:TagResource"];
+	static readonly TagResource: string[] = ["cloudhsm:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cloudhsm:UntagResource"];
+	static readonly UntagResource: string[] = ["cloudhsm:UntagResource"];
 }
 
 /**
@@ -303,29 +327,29 @@ export class CloudHSMOperations {
  */
 export class CloudHSMConditions {
 	/** Condition keys applicable to the CopyBackupToRegion action. */
-	static readonly COPY_BACKUP_TO_REGION_CONDITION_KEYS: string[] = [
+	static readonly CopyBackupToRegionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

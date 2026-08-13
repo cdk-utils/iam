@@ -13,95 +13,145 @@ export class CodeStarActions {
 	static readonly SERVICE_PREFIX = "codestar";
 
 	/** [PermissionManagement] codestar:AssociateTeamMember */
-	static readonly ASSOCIATE_TEAM_MEMBER = "codestar:AssociateTeamMember";
+	static readonly AssociateTeamMember = "codestar:AssociateTeamMember";
 	/** [PermissionManagement] codestar:CreateProject */
-	static readonly CREATE_PROJECT = "codestar:CreateProject";
+	static readonly CreateProject = "codestar:CreateProject";
 	/** [Write] codestar:CreateUserProfile */
-	static readonly CREATE_USER_PROFILE = "codestar:CreateUserProfile";
+	static readonly CreateUserProfile = "codestar:CreateUserProfile";
 	/** [Write] codestar:DeleteExtendedAccess */
-	static readonly DELETE_EXTENDED_ACCESS = "codestar:DeleteExtendedAccess";
+	static readonly DeleteExtendedAccess = "codestar:DeleteExtendedAccess";
 	/** [PermissionManagement] codestar:DeleteProject */
-	static readonly DELETE_PROJECT = "codestar:DeleteProject";
+	static readonly DeleteProject = "codestar:DeleteProject";
 	/** [Write] codestar:DeleteUserProfile */
-	static readonly DELETE_USER_PROFILE = "codestar:DeleteUserProfile";
+	static readonly DeleteUserProfile = "codestar:DeleteUserProfile";
 	/** [Read] codestar:DescribeProject */
-	static readonly DESCRIBE_PROJECT = "codestar:DescribeProject";
+	static readonly DescribeProject = "codestar:DescribeProject";
 	/** [Read] codestar:DescribeUserProfile */
-	static readonly DESCRIBE_USER_PROFILE = "codestar:DescribeUserProfile";
+	static readonly DescribeUserProfile = "codestar:DescribeUserProfile";
 	/** [PermissionManagement] codestar:DisassociateTeamMember */
-	static readonly DISASSOCIATE_TEAM_MEMBER = "codestar:DisassociateTeamMember";
+	static readonly DisassociateTeamMember = "codestar:DisassociateTeamMember";
 	/** [Read] codestar:GetExtendedAccess */
-	static readonly GET_EXTENDED_ACCESS = "codestar:GetExtendedAccess";
+	static readonly actionGetExtendedAccess = "codestar:GetExtendedAccess";
 	/** [List] codestar:ListProjects */
-	static readonly LIST_PROJECTS = "codestar:ListProjects";
+	static readonly ListProjects = "codestar:ListProjects";
 	/** [List] codestar:ListResources */
-	static readonly LIST_RESOURCES = "codestar:ListResources";
+	static readonly ListResources = "codestar:ListResources";
 	/** [List] codestar:ListTagsForProject */
-	static readonly LIST_TAGS_FOR_PROJECT = "codestar:ListTagsForProject";
+	static readonly ListTagsForProject = "codestar:ListTagsForProject";
 	/** [List] codestar:ListTeamMembers */
-	static readonly LIST_TEAM_MEMBERS = "codestar:ListTeamMembers";
+	static readonly ListTeamMembers = "codestar:ListTeamMembers";
 	/** [List] codestar:ListUserProfiles */
-	static readonly LIST_USER_PROFILES = "codestar:ListUserProfiles";
+	static readonly ListUserProfiles = "codestar:ListUserProfiles";
 	/** [Write] codestar:PutExtendedAccess */
-	static readonly PUT_EXTENDED_ACCESS = "codestar:PutExtendedAccess";
+	static readonly PutExtendedAccess = "codestar:PutExtendedAccess";
 	/** [Tagging] codestar:TagProject */
-	static readonly TAG_PROJECT = "codestar:TagProject";
+	static readonly TagProject = "codestar:TagProject";
 	/** [Tagging] codestar:UntagProject */
-	static readonly UNTAG_PROJECT = "codestar:UntagProject";
+	static readonly UntagProject = "codestar:UntagProject";
 	/** [Write] codestar:UpdateProject */
-	static readonly UPDATE_PROJECT = "codestar:UpdateProject";
+	static readonly UpdateProject = "codestar:UpdateProject";
 	/** [PermissionManagement] codestar:UpdateTeamMember */
-	static readonly UPDATE_TEAM_MEMBER = "codestar:UpdateTeamMember";
+	static readonly UpdateTeamMember = "codestar:UpdateTeamMember";
 	/** [Write] codestar:UpdateUserProfile */
-	static readonly UPDATE_USER_PROFILE = "codestar:UpdateUserProfile";
+	static readonly UpdateUserProfile = "codestar:UpdateUserProfile";
 	/** [List] codestar:VerifyServiceRole */
-	static readonly VERIFY_SERVICE_ROLE = "codestar:VerifyServiceRole";
+	static readonly VerifyServiceRole = "codestar:VerifyServiceRole";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeStarActions.DESCRIBE_PROJECT,
-		CodeStarActions.DESCRIBE_USER_PROFILE,
-		CodeStarActions.GET_EXTENDED_ACCESS,
+	static readonly AllReadActions: string[] = [
+		CodeStarActions.DescribeProject,
+		CodeStarActions.DescribeUserProfile,
+		CodeStarActions.actionGetExtendedAccess,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeStarActions.CREATE_USER_PROFILE,
-		CodeStarActions.DELETE_EXTENDED_ACCESS,
-		CodeStarActions.DELETE_USER_PROFILE,
-		CodeStarActions.PUT_EXTENDED_ACCESS,
-		CodeStarActions.UPDATE_PROJECT,
-		CodeStarActions.UPDATE_USER_PROFILE,
+	static readonly AllWriteActions: string[] = [
+		CodeStarActions.CreateUserProfile,
+		CodeStarActions.DeleteExtendedAccess,
+		CodeStarActions.DeleteUserProfile,
+		CodeStarActions.PutExtendedAccess,
+		CodeStarActions.UpdateProject,
+		CodeStarActions.UpdateUserProfile,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeStarActions.LIST_PROJECTS,
-		CodeStarActions.LIST_RESOURCES,
-		CodeStarActions.LIST_TAGS_FOR_PROJECT,
-		CodeStarActions.LIST_TEAM_MEMBERS,
-		CodeStarActions.LIST_USER_PROFILES,
-		CodeStarActions.VERIFY_SERVICE_ROLE,
+	static readonly AllListActions: string[] = [
+		CodeStarActions.ListProjects,
+		CodeStarActions.ListResources,
+		CodeStarActions.ListTagsForProject,
+		CodeStarActions.ListTeamMembers,
+		CodeStarActions.ListUserProfiles,
+		CodeStarActions.VerifyServiceRole,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CodeStarActions.ASSOCIATE_TEAM_MEMBER,
-		CodeStarActions.CREATE_PROJECT,
-		CodeStarActions.DELETE_PROJECT,
-		CodeStarActions.DISASSOCIATE_TEAM_MEMBER,
-		CodeStarActions.UPDATE_TEAM_MEMBER,
+	static readonly AllPermissionManagementActions: string[] = [
+		CodeStarActions.AssociateTeamMember,
+		CodeStarActions.CreateProject,
+		CodeStarActions.DeleteProject,
+		CodeStarActions.DisassociateTeamMember,
+		CodeStarActions.UpdateTeamMember,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodeStarActions.TAG_PROJECT,
-		CodeStarActions.UNTAG_PROJECT,
+	static readonly AllTaggingActions: string[] = [
+		CodeStarActions.TagProject,
+		CodeStarActions.UntagProject,
 	];
 }
 
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codestar:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectId>[^:/?]+)$",
-);
-const UserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):user/(?<awsUserName>[^:/?]+)$",
-);
+/**
+ * Properties for building a project ARN.
+ */
+export interface CodeStarProjectArnProps {
+	/** The ProjectId component of the ARN. */
+	readonly projectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface CodeStarProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectId component. */
+	readonly projectId: string;
+}
+
+/**
+ * Properties for building a user ARN.
+ */
+export interface CodeStarUserArnProps {
+	/** The AwsUserName component of the ARN. */
+	readonly awsUserName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user ARN.
+ */
+export interface CodeStarUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AwsUserName component. */
+	readonly awsUserName: string;
+}
+
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):codestar:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectId>[^:/?]+)$/;
+const UserArnRegex =
+	/^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):user\/(?<awsUserName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codestar resources.
@@ -110,16 +160,7 @@ export class CodeStarResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ProjectId component of the ARN. */
-		readonly projectId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: CodeStarProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codestar:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectId}`;
 	}
 
@@ -134,12 +175,7 @@ export class CodeStarResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectId: string;
-	} {
+	static parseProjectArn(arn: string): CodeStarProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -155,14 +191,7 @@ export class CodeStarResources {
 	/**
 	 * Builds an ARN for the user resource.
 	 */
-	static user(props: {
-		/** The AwsUserName component of the ARN. */
-		readonly awsUserName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static user(props: CodeStarUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iam::${props.account ?? "*"}:user/${props.awsUserName}`;
 	}
 
@@ -177,11 +206,7 @@ export class CodeStarResources {
 	 * Parses a user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserArn(arn: string): {
-		partition: string;
-		account: string;
-		awsUserName: string;
-	} {
+	static parseUserArn(arn: string): CodeStarUserArnComponents {
 		const match = UserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user ARN: ${arn}`);
@@ -199,24 +224,24 @@ export class CodeStarResources {
  */
 export class CodeStarConditions {
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagProject action. */
-	static readonly TAG_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly TagProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagProject action. */
-	static readonly UNTAG_PROJECT_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagProjectConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iam:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "iam:ResourceTag/${TagKey}";
 

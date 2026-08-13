@@ -13,69 +13,123 @@ export class InterconnectActions {
 	static readonly SERVICE_PREFIX = "interconnect";
 
 	/** [Write] interconnect:AcceptConnectionProposal */
-	static readonly ACCEPT_CONNECTION_PROPOSAL =
+	static readonly AcceptConnectionProposal =
 		"interconnect:AcceptConnectionProposal";
 	/** [Write] interconnect:CreateConnection */
-	static readonly CREATE_CONNECTION = "interconnect:CreateConnection";
+	static readonly CreateConnection = "interconnect:CreateConnection";
 	/** [Write] interconnect:DeleteConnection */
-	static readonly DELETE_CONNECTION = "interconnect:DeleteConnection";
+	static readonly DeleteConnection = "interconnect:DeleteConnection";
 	/** [Read] interconnect:DescribeConnectionProposal */
-	static readonly DESCRIBE_CONNECTION_PROPOSAL =
+	static readonly DescribeConnectionProposal =
 		"interconnect:DescribeConnectionProposal";
 	/** [Read] interconnect:GetConnection */
-	static readonly GET_CONNECTION = "interconnect:GetConnection";
+	static readonly actionGetConnection = "interconnect:GetConnection";
 	/** [Read] interconnect:GetEnvironment */
-	static readonly GET_ENVIRONMENT = "interconnect:GetEnvironment";
+	static readonly actionGetEnvironment = "interconnect:GetEnvironment";
 	/** [Read] interconnect:ListAttachPoints */
-	static readonly LIST_ATTACH_POINTS = "interconnect:ListAttachPoints";
+	static readonly ListAttachPoints = "interconnect:ListAttachPoints";
 	/** [List] interconnect:ListConnections */
-	static readonly LIST_CONNECTIONS = "interconnect:ListConnections";
+	static readonly ListConnections = "interconnect:ListConnections";
 	/** [List] interconnect:ListEnvironments */
-	static readonly LIST_ENVIRONMENTS = "interconnect:ListEnvironments";
+	static readonly ListEnvironments = "interconnect:ListEnvironments";
 	/** [Read] interconnect:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "interconnect:ListTagsForResource";
+	static readonly ListTagsForResource = "interconnect:ListTagsForResource";
 	/** [Tagging] interconnect:TagResource */
-	static readonly TAG_RESOURCE = "interconnect:TagResource";
+	static readonly TagResource = "interconnect:TagResource";
 	/** [Tagging] interconnect:UntagResource */
-	static readonly UNTAG_RESOURCE = "interconnect:UntagResource";
+	static readonly UntagResource = "interconnect:UntagResource";
 	/** [Write] interconnect:UpdateConnection */
-	static readonly UPDATE_CONNECTION = "interconnect:UpdateConnection";
+	static readonly UpdateConnection = "interconnect:UpdateConnection";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		InterconnectActions.DESCRIBE_CONNECTION_PROPOSAL,
-		InterconnectActions.GET_CONNECTION,
-		InterconnectActions.GET_ENVIRONMENT,
-		InterconnectActions.LIST_ATTACH_POINTS,
-		InterconnectActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		InterconnectActions.DescribeConnectionProposal,
+		InterconnectActions.actionGetConnection,
+		InterconnectActions.actionGetEnvironment,
+		InterconnectActions.ListAttachPoints,
+		InterconnectActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		InterconnectActions.ACCEPT_CONNECTION_PROPOSAL,
-		InterconnectActions.CREATE_CONNECTION,
-		InterconnectActions.DELETE_CONNECTION,
-		InterconnectActions.UPDATE_CONNECTION,
+	static readonly AllWriteActions: string[] = [
+		InterconnectActions.AcceptConnectionProposal,
+		InterconnectActions.CreateConnection,
+		InterconnectActions.DeleteConnection,
+		InterconnectActions.UpdateConnection,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		InterconnectActions.LIST_CONNECTIONS,
-		InterconnectActions.LIST_ENVIRONMENTS,
+	static readonly AllListActions: string[] = [
+		InterconnectActions.ListConnections,
+		InterconnectActions.ListEnvironments,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		InterconnectActions.TAG_RESOURCE,
-		InterconnectActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		InterconnectActions.TagResource,
+		InterconnectActions.UntagResource,
 	];
 }
 
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):interconnect:(?<region>[^:]*):(?<account>[^:]*):connection/(?<id>[^:/?]+)$",
-);
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):interconnect:(?<region>[^:]*):(?<account>[^:]*):environment/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a connection ARN.
+ */
+export interface InterconnectConnectionArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection ARN.
+ */
+export interface InterconnectConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a environment ARN.
+ */
+export interface InterconnectEnvironmentArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface InterconnectEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):interconnect:(?<region>[^:]*):(?<account>[^:]*):connection\/(?<id>[^:/?]+)$/;
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):interconnect:(?<region>[^:]*):(?<account>[^:]*):environment\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for interconnect resources.
@@ -84,16 +138,7 @@ export class InterconnectResources {
 	/**
 	 * Builds an ARN for the connection resource.
 	 */
-	static connection(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: InterconnectConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:interconnect:${props.region ?? "*"}:${props.account ?? "*"}:connection/${props.id}`;
 	}
 
@@ -108,12 +153,7 @@ export class InterconnectResources {
 	 * Parses a connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseConnectionArn(arn: string): InterconnectConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection ARN: ${arn}`);
@@ -129,16 +169,7 @@ export class InterconnectResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: InterconnectEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:interconnect:${props.region ?? "*"}:${props.account ?? "*"}:environment/${props.id}`;
 	}
 
@@ -153,12 +184,9 @@ export class InterconnectResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseEnvironmentArn(
+		arn: string,
+	): InterconnectEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -177,47 +205,47 @@ export class InterconnectResources {
  */
 export class InterconnectOperations {
 	/** IAM actions required for the AcceptConnectionProposal API call. */
-	static readonly ACCEPT_CONNECTION_PROPOSAL: string[] = [
+	static readonly AcceptConnectionProposal: string[] = [
 		"interconnect:AcceptConnectionProposal",
 		"interconnect:TagResource",
 	];
 	/** IAM actions required for the CreateConnection API call. */
-	static readonly CREATE_CONNECTION: string[] = [
+	static readonly CreateConnection: string[] = [
 		"interconnect:CreateConnection",
 		"interconnect:TagResource",
 	];
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = [
+	static readonly DeleteConnection: string[] = [
 		"interconnect:DeleteConnection",
 	];
 	/** IAM actions required for the DescribeConnectionProposal API call. */
-	static readonly DESCRIBE_CONNECTION_PROPOSAL: string[] = [
+	static readonly DescribeConnectionProposal: string[] = [
 		"interconnect:DescribeConnectionProposal",
 	];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = ["interconnect:GetConnection"];
+	static readonly opGetConnection: string[] = ["interconnect:GetConnection"];
 	/** IAM actions required for the GetEnvironment API call. */
-	static readonly GET_ENVIRONMENT: string[] = ["interconnect:GetEnvironment"];
+	static readonly opGetEnvironment: string[] = ["interconnect:GetEnvironment"];
 	/** IAM actions required for the ListAttachPoints API call. */
-	static readonly LIST_ATTACH_POINTS: string[] = [
+	static readonly ListAttachPoints: string[] = [
 		"interconnect:ListAttachPoints",
 	];
 	/** IAM actions required for the ListConnections API call. */
-	static readonly LIST_CONNECTIONS: string[] = ["interconnect:ListConnections"];
+	static readonly ListConnections: string[] = ["interconnect:ListConnections"];
 	/** IAM actions required for the ListEnvironments API call. */
-	static readonly LIST_ENVIRONMENTS: string[] = [
+	static readonly ListEnvironments: string[] = [
 		"interconnect:ListEnvironments",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"interconnect:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["interconnect:TagResource"];
+	static readonly TagResource: string[] = ["interconnect:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["interconnect:UntagResource"];
+	static readonly UntagResource: string[] = ["interconnect:UntagResource"];
 	/** IAM actions required for the UpdateConnection API call. */
-	static readonly UPDATE_CONNECTION: string[] = [
+	static readonly UpdateConnection: string[] = [
 		"interconnect:UpdateConnection",
 	];
 }
@@ -227,29 +255,29 @@ export class InterconnectOperations {
  */
 export class InterconnectConditions {
 	/** Condition keys applicable to the AcceptConnectionProposal action. */
-	static readonly ACCEPT_CONNECTION_PROPOSAL_CONDITION_KEYS: string[] = [
+	static readonly AcceptConnectionProposalConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnection action. */
-	static readonly CREATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

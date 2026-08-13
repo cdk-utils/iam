@@ -13,172 +13,198 @@ export class WickrActions {
 	static readonly SERVICE_PREFIX = "wickr";
 
 	/** [Write] wickr:BatchCreateUser */
-	static readonly BATCH_CREATE_USER = "wickr:BatchCreateUser";
+	static readonly BatchCreateUser = "wickr:BatchCreateUser";
 	/** [Write] wickr:BatchDeleteUser */
-	static readonly BATCH_DELETE_USER = "wickr:BatchDeleteUser";
+	static readonly BatchDeleteUser = "wickr:BatchDeleteUser";
 	/** [Read] wickr:BatchLookupUserUname */
-	static readonly BATCH_LOOKUP_USER_UNAME = "wickr:BatchLookupUserUname";
+	static readonly BatchLookupUserUname = "wickr:BatchLookupUserUname";
 	/** [Write] wickr:BatchReinviteUser */
-	static readonly BATCH_REINVITE_USER = "wickr:BatchReinviteUser";
+	static readonly BatchReinviteUser = "wickr:BatchReinviteUser";
 	/** [Write] wickr:BatchResetDevicesForUser */
-	static readonly BATCH_RESET_DEVICES_FOR_USER =
-		"wickr:BatchResetDevicesForUser";
+	static readonly BatchResetDevicesForUser = "wickr:BatchResetDevicesForUser";
 	/** [Write] wickr:BatchToggleUserSuspendStatus */
-	static readonly BATCH_TOGGLE_USER_SUSPEND_STATUS =
+	static readonly BatchToggleUserSuspendStatus =
 		"wickr:BatchToggleUserSuspendStatus";
 	/** [Write] wickr:CreateAdminSession */
-	static readonly CREATE_ADMIN_SESSION = "wickr:CreateAdminSession";
+	static readonly CreateAdminSession = "wickr:CreateAdminSession";
 	/** [Write] wickr:CreateBot */
-	static readonly CREATE_BOT = "wickr:CreateBot";
+	static readonly CreateBot = "wickr:CreateBot";
 	/** [Write] wickr:CreateDataRetentionBot */
-	static readonly CREATE_DATA_RETENTION_BOT = "wickr:CreateDataRetentionBot";
+	static readonly CreateDataRetentionBot = "wickr:CreateDataRetentionBot";
 	/** [Write] wickr:CreateDataRetentionBotChallenge */
-	static readonly CREATE_DATA_RETENTION_BOT_CHALLENGE =
+	static readonly CreateDataRetentionBotChallenge =
 		"wickr:CreateDataRetentionBotChallenge";
 	/** [Write] wickr:CreateNetwork */
-	static readonly CREATE_NETWORK = "wickr:CreateNetwork";
+	static readonly CreateNetwork = "wickr:CreateNetwork";
 	/** [Write] wickr:CreateSecurityGroup */
-	static readonly CREATE_SECURITY_GROUP = "wickr:CreateSecurityGroup";
+	static readonly CreateSecurityGroup = "wickr:CreateSecurityGroup";
 	/** [Write] wickr:DeleteBot */
-	static readonly DELETE_BOT = "wickr:DeleteBot";
+	static readonly DeleteBot = "wickr:DeleteBot";
 	/** [Write] wickr:DeleteDataRetentionBot */
-	static readonly DELETE_DATA_RETENTION_BOT = "wickr:DeleteDataRetentionBot";
+	static readonly DeleteDataRetentionBot = "wickr:DeleteDataRetentionBot";
 	/** [Write] wickr:DeleteNetwork */
-	static readonly DELETE_NETWORK = "wickr:DeleteNetwork";
+	static readonly DeleteNetwork = "wickr:DeleteNetwork";
 	/** [Write] wickr:DeleteSecurityGroup */
-	static readonly DELETE_SECURITY_GROUP = "wickr:DeleteSecurityGroup";
+	static readonly DeleteSecurityGroup = "wickr:DeleteSecurityGroup";
 	/** [Read] wickr:GetBot */
-	static readonly GET_BOT = "wickr:GetBot";
+	static readonly actionGetBot = "wickr:GetBot";
 	/** [Read] wickr:GetBotsCount */
-	static readonly GET_BOTS_COUNT = "wickr:GetBotsCount";
+	static readonly actionGetBotsCount = "wickr:GetBotsCount";
 	/** [Read] wickr:GetDataRetentionBot */
-	static readonly GET_DATA_RETENTION_BOT = "wickr:GetDataRetentionBot";
+	static readonly actionGetDataRetentionBot = "wickr:GetDataRetentionBot";
 	/** [Read] wickr:GetGuestUserHistoryCount */
-	static readonly GET_GUEST_USER_HISTORY_COUNT =
+	static readonly actionGetGuestUserHistoryCount =
 		"wickr:GetGuestUserHistoryCount";
 	/** [Read] wickr:GetNetwork */
-	static readonly GET_NETWORK = "wickr:GetNetwork";
+	static readonly actionGetNetwork = "wickr:GetNetwork";
 	/** [Read] wickr:GetNetworkSettings */
-	static readonly GET_NETWORK_SETTINGS = "wickr:GetNetworkSettings";
+	static readonly actionGetNetworkSettings = "wickr:GetNetworkSettings";
 	/** [Read] wickr:GetOidcInfo */
-	static readonly GET_OIDC_INFO = "wickr:GetOidcInfo";
+	static readonly actionGetOidcInfo = "wickr:GetOidcInfo";
 	/** [Read] wickr:GetOpentdfConfig */
-	static readonly GET_OPENTDF_CONFIG = "wickr:GetOpentdfConfig";
+	static readonly actionGetOpentdfConfig = "wickr:GetOpentdfConfig";
 	/** [Read] wickr:GetSecurityGroup */
-	static readonly GET_SECURITY_GROUP = "wickr:GetSecurityGroup";
+	static readonly actionGetSecurityGroup = "wickr:GetSecurityGroup";
 	/** [Read] wickr:GetUser */
-	static readonly GET_USER = "wickr:GetUser";
+	static readonly actionGetUser = "wickr:GetUser";
 	/** [Read] wickr:GetUsersCount */
-	static readonly GET_USERS_COUNT = "wickr:GetUsersCount";
+	static readonly actionGetUsersCount = "wickr:GetUsersCount";
 	/** [Read] wickr:ListBlockedGuestUsers */
-	static readonly LIST_BLOCKED_GUEST_USERS = "wickr:ListBlockedGuestUsers";
+	static readonly ListBlockedGuestUsers = "wickr:ListBlockedGuestUsers";
 	/** [Read] wickr:ListBots */
-	static readonly LIST_BOTS = "wickr:ListBots";
+	static readonly ListBots = "wickr:ListBots";
 	/** [Read] wickr:ListDevicesForUser */
-	static readonly LIST_DEVICES_FOR_USER = "wickr:ListDevicesForUser";
+	static readonly ListDevicesForUser = "wickr:ListDevicesForUser";
 	/** [Read] wickr:ListGuestUsers */
-	static readonly LIST_GUEST_USERS = "wickr:ListGuestUsers";
+	static readonly ListGuestUsers = "wickr:ListGuestUsers";
 	/** [Read] wickr:ListNetworks */
-	static readonly LIST_NETWORKS = "wickr:ListNetworks";
+	static readonly ListNetworks = "wickr:ListNetworks";
 	/** [Read] wickr:ListSecurityGroupUsers */
-	static readonly LIST_SECURITY_GROUP_USERS = "wickr:ListSecurityGroupUsers";
+	static readonly ListSecurityGroupUsers = "wickr:ListSecurityGroupUsers";
 	/** [Read] wickr:ListSecurityGroups */
-	static readonly LIST_SECURITY_GROUPS = "wickr:ListSecurityGroups";
+	static readonly ListSecurityGroups = "wickr:ListSecurityGroups";
 	/** [Read] wickr:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "wickr:ListTagsForResource";
+	static readonly ListTagsForResource = "wickr:ListTagsForResource";
 	/** [Read] wickr:ListUsers */
-	static readonly LIST_USERS = "wickr:ListUsers";
+	static readonly ListUsers = "wickr:ListUsers";
 	/** [Write] wickr:RegisterOidcConfig */
-	static readonly REGISTER_OIDC_CONFIG = "wickr:RegisterOidcConfig";
+	static readonly RegisterOidcConfig = "wickr:RegisterOidcConfig";
 	/** [Write] wickr:RegisterOidcConfigTest */
-	static readonly REGISTER_OIDC_CONFIG_TEST = "wickr:RegisterOidcConfigTest";
+	static readonly RegisterOidcConfigTest = "wickr:RegisterOidcConfigTest";
 	/** [Write] wickr:RegisterOpentdfConfig */
-	static readonly REGISTER_OPENTDF_CONFIG = "wickr:RegisterOpentdfConfig";
+	static readonly RegisterOpentdfConfig = "wickr:RegisterOpentdfConfig";
 	/** [Tagging] wickr:TagResource */
-	static readonly TAG_RESOURCE = "wickr:TagResource";
+	static readonly TagResource = "wickr:TagResource";
 	/** [Tagging] wickr:UntagResource */
-	static readonly UNTAG_RESOURCE = "wickr:UntagResource";
+	static readonly UntagResource = "wickr:UntagResource";
 	/** [Write] wickr:UpdateBot */
-	static readonly UPDATE_BOT = "wickr:UpdateBot";
+	static readonly UpdateBot = "wickr:UpdateBot";
 	/** [Write] wickr:UpdateDataRetention */
-	static readonly UPDATE_DATA_RETENTION = "wickr:UpdateDataRetention";
+	static readonly UpdateDataRetention = "wickr:UpdateDataRetention";
 	/** [Write] wickr:UpdateGuestUser */
-	static readonly UPDATE_GUEST_USER = "wickr:UpdateGuestUser";
+	static readonly UpdateGuestUser = "wickr:UpdateGuestUser";
 	/** [Write] wickr:UpdateNetworkDetails */
-	static readonly UPDATE_NETWORK_DETAILS = "wickr:UpdateNetworkDetails";
+	static readonly UpdateNetworkDetails = "wickr:UpdateNetworkDetails";
 	/** [Write] wickr:UpdateNetworkSettings */
-	static readonly UPDATE_NETWORK_SETTINGS = "wickr:UpdateNetworkSettings";
+	static readonly UpdateNetworkSettings = "wickr:UpdateNetworkSettings";
 	/** [Write] wickr:UpdateSecurityGroup */
-	static readonly UPDATE_SECURITY_GROUP = "wickr:UpdateSecurityGroup";
+	static readonly UpdateSecurityGroup = "wickr:UpdateSecurityGroup";
 	/** [Write] wickr:UpdateUser */
-	static readonly UPDATE_USER = "wickr:UpdateUser";
+	static readonly UpdateUser = "wickr:UpdateUser";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WickrActions.BATCH_LOOKUP_USER_UNAME,
-		WickrActions.GET_BOT,
-		WickrActions.GET_BOTS_COUNT,
-		WickrActions.GET_DATA_RETENTION_BOT,
-		WickrActions.GET_GUEST_USER_HISTORY_COUNT,
-		WickrActions.GET_NETWORK,
-		WickrActions.GET_NETWORK_SETTINGS,
-		WickrActions.GET_OIDC_INFO,
-		WickrActions.GET_OPENTDF_CONFIG,
-		WickrActions.GET_SECURITY_GROUP,
-		WickrActions.GET_USER,
-		WickrActions.GET_USERS_COUNT,
-		WickrActions.LIST_BLOCKED_GUEST_USERS,
-		WickrActions.LIST_BOTS,
-		WickrActions.LIST_DEVICES_FOR_USER,
-		WickrActions.LIST_GUEST_USERS,
-		WickrActions.LIST_NETWORKS,
-		WickrActions.LIST_SECURITY_GROUP_USERS,
-		WickrActions.LIST_SECURITY_GROUPS,
-		WickrActions.LIST_TAGS_FOR_RESOURCE,
-		WickrActions.LIST_USERS,
+	static readonly AllReadActions: string[] = [
+		WickrActions.BatchLookupUserUname,
+		WickrActions.actionGetBot,
+		WickrActions.actionGetBotsCount,
+		WickrActions.actionGetDataRetentionBot,
+		WickrActions.actionGetGuestUserHistoryCount,
+		WickrActions.actionGetNetwork,
+		WickrActions.actionGetNetworkSettings,
+		WickrActions.actionGetOidcInfo,
+		WickrActions.actionGetOpentdfConfig,
+		WickrActions.actionGetSecurityGroup,
+		WickrActions.actionGetUser,
+		WickrActions.actionGetUsersCount,
+		WickrActions.ListBlockedGuestUsers,
+		WickrActions.ListBots,
+		WickrActions.ListDevicesForUser,
+		WickrActions.ListGuestUsers,
+		WickrActions.ListNetworks,
+		WickrActions.ListSecurityGroupUsers,
+		WickrActions.ListSecurityGroups,
+		WickrActions.ListTagsForResource,
+		WickrActions.ListUsers,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WickrActions.BATCH_CREATE_USER,
-		WickrActions.BATCH_DELETE_USER,
-		WickrActions.BATCH_REINVITE_USER,
-		WickrActions.BATCH_RESET_DEVICES_FOR_USER,
-		WickrActions.BATCH_TOGGLE_USER_SUSPEND_STATUS,
-		WickrActions.CREATE_ADMIN_SESSION,
-		WickrActions.CREATE_BOT,
-		WickrActions.CREATE_DATA_RETENTION_BOT,
-		WickrActions.CREATE_DATA_RETENTION_BOT_CHALLENGE,
-		WickrActions.CREATE_NETWORK,
-		WickrActions.CREATE_SECURITY_GROUP,
-		WickrActions.DELETE_BOT,
-		WickrActions.DELETE_DATA_RETENTION_BOT,
-		WickrActions.DELETE_NETWORK,
-		WickrActions.DELETE_SECURITY_GROUP,
-		WickrActions.REGISTER_OIDC_CONFIG,
-		WickrActions.REGISTER_OIDC_CONFIG_TEST,
-		WickrActions.REGISTER_OPENTDF_CONFIG,
-		WickrActions.UPDATE_BOT,
-		WickrActions.UPDATE_DATA_RETENTION,
-		WickrActions.UPDATE_GUEST_USER,
-		WickrActions.UPDATE_NETWORK_DETAILS,
-		WickrActions.UPDATE_NETWORK_SETTINGS,
-		WickrActions.UPDATE_SECURITY_GROUP,
-		WickrActions.UPDATE_USER,
+	static readonly AllWriteActions: string[] = [
+		WickrActions.BatchCreateUser,
+		WickrActions.BatchDeleteUser,
+		WickrActions.BatchReinviteUser,
+		WickrActions.BatchResetDevicesForUser,
+		WickrActions.BatchToggleUserSuspendStatus,
+		WickrActions.CreateAdminSession,
+		WickrActions.CreateBot,
+		WickrActions.CreateDataRetentionBot,
+		WickrActions.CreateDataRetentionBotChallenge,
+		WickrActions.CreateNetwork,
+		WickrActions.CreateSecurityGroup,
+		WickrActions.DeleteBot,
+		WickrActions.DeleteDataRetentionBot,
+		WickrActions.DeleteNetwork,
+		WickrActions.DeleteSecurityGroup,
+		WickrActions.RegisterOidcConfig,
+		WickrActions.RegisterOidcConfigTest,
+		WickrActions.RegisterOpentdfConfig,
+		WickrActions.UpdateBot,
+		WickrActions.UpdateDataRetention,
+		WickrActions.UpdateGuestUser,
+		WickrActions.UpdateNetworkDetails,
+		WickrActions.UpdateNetworkSettings,
+		WickrActions.UpdateSecurityGroup,
+		WickrActions.UpdateUser,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WickrActions.TAG_RESOURCE,
-		WickrActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WickrActions.TagResource,
+		WickrActions.UntagResource,
 	];
 }
 
-const NetworkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wickr:(?<region>[^:]*):(?<account>[^:]*):network/(?<networkId>[^:/?]+)$",
-);
+/**
+ * Properties for building a network ARN.
+ */
+export interface WickrNetworkArnProps {
+	/** The NetworkId component of the ARN. */
+	readonly networkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network ARN.
+ */
+export interface WickrNetworkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkId component. */
+	readonly networkId: string;
+}
+
+const NetworkArnRegex =
+	/^arn:(?<partition>[^:]+):wickr:(?<region>[^:]*):(?<account>[^:]*):network\/(?<networkId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for wickr resources.
@@ -187,16 +213,7 @@ export class WickrResources {
 	/**
 	 * Builds an ARN for the network resource.
 	 */
-	static network(props: {
-		/** The NetworkId component of the ARN. */
-		readonly networkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static network(props: WickrNetworkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wickr:${props.region ?? "*"}:${props.account ?? "*"}:network/${props.networkId}`;
 	}
 
@@ -211,12 +228,7 @@ export class WickrResources {
 	 * Parses a network ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkId: string;
-	} {
+	static parseNetworkArn(arn: string): WickrNetworkArnComponents {
 		const match = NetworkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network ARN: ${arn}`);
@@ -235,132 +247,122 @@ export class WickrResources {
  */
 export class WickrOperations {
 	/** IAM actions required for the BatchCreateUser API call. */
-	static readonly BATCH_CREATE_USER: string[] = ["wickr:BatchCreateUser"];
+	static readonly BatchCreateUser: string[] = ["wickr:BatchCreateUser"];
 	/** IAM actions required for the BatchDeleteUser API call. */
-	static readonly BATCH_DELETE_USER: string[] = ["wickr:BatchDeleteUser"];
+	static readonly BatchDeleteUser: string[] = ["wickr:BatchDeleteUser"];
 	/** IAM actions required for the BatchLookupUserUname API call. */
-	static readonly BATCH_LOOKUP_USER_UNAME: string[] = [
+	static readonly BatchLookupUserUname: string[] = [
 		"wickr:BatchLookupUserUname",
 	];
 	/** IAM actions required for the BatchReinviteUser API call. */
-	static readonly BATCH_REINVITE_USER: string[] = ["wickr:BatchReinviteUser"];
+	static readonly BatchReinviteUser: string[] = ["wickr:BatchReinviteUser"];
 	/** IAM actions required for the BatchResetDevicesForUser API call. */
-	static readonly BATCH_RESET_DEVICES_FOR_USER: string[] = [
+	static readonly BatchResetDevicesForUser: string[] = [
 		"wickr:BatchResetDevicesForUser",
 	];
 	/** IAM actions required for the BatchToggleUserSuspendStatus API call. */
-	static readonly BATCH_TOGGLE_USER_SUSPEND_STATUS: string[] = [
+	static readonly BatchToggleUserSuspendStatus: string[] = [
 		"wickr:BatchToggleUserSuspendStatus",
 	];
 	/** IAM actions required for the CreateBot API call. */
-	static readonly CREATE_BOT: string[] = ["wickr:CreateBot"];
+	static readonly CreateBot: string[] = ["wickr:CreateBot"];
 	/** IAM actions required for the CreateDataRetentionBot API call. */
-	static readonly CREATE_DATA_RETENTION_BOT: string[] = [
+	static readonly CreateDataRetentionBot: string[] = [
 		"wickr:CreateDataRetentionBot",
 	];
 	/** IAM actions required for the CreateDataRetentionBotChallenge API call. */
-	static readonly CREATE_DATA_RETENTION_BOT_CHALLENGE: string[] = [
+	static readonly CreateDataRetentionBotChallenge: string[] = [
 		"wickr:CreateDataRetentionBotChallenge",
 	];
 	/** IAM actions required for the CreateNetwork API call. */
-	static readonly CREATE_NETWORK: string[] = [
+	static readonly CreateNetwork: string[] = [
 		"wickr:CreateNetwork",
 		"wickr:TagResource",
 	];
 	/** IAM actions required for the CreateSecurityGroup API call. */
-	static readonly CREATE_SECURITY_GROUP: string[] = [
-		"wickr:CreateSecurityGroup",
-	];
+	static readonly CreateSecurityGroup: string[] = ["wickr:CreateSecurityGroup"];
 	/** IAM actions required for the DeleteBot API call. */
-	static readonly DELETE_BOT: string[] = ["wickr:DeleteBot"];
+	static readonly DeleteBot: string[] = ["wickr:DeleteBot"];
 	/** IAM actions required for the DeleteDataRetentionBot API call. */
-	static readonly DELETE_DATA_RETENTION_BOT: string[] = [
+	static readonly DeleteDataRetentionBot: string[] = [
 		"wickr:DeleteDataRetentionBot",
 	];
 	/** IAM actions required for the DeleteNetwork API call. */
-	static readonly DELETE_NETWORK: string[] = ["wickr:DeleteNetwork"];
+	static readonly DeleteNetwork: string[] = ["wickr:DeleteNetwork"];
 	/** IAM actions required for the DeleteSecurityGroup API call. */
-	static readonly DELETE_SECURITY_GROUP: string[] = [
-		"wickr:DeleteSecurityGroup",
-	];
+	static readonly DeleteSecurityGroup: string[] = ["wickr:DeleteSecurityGroup"];
 	/** IAM actions required for the GetBot API call. */
-	static readonly GET_BOT: string[] = ["wickr:GetBot"];
+	static readonly opGetBot: string[] = ["wickr:GetBot"];
 	/** IAM actions required for the GetBotsCount API call. */
-	static readonly GET_BOTS_COUNT: string[] = ["wickr:GetBotsCount"];
+	static readonly opGetBotsCount: string[] = ["wickr:GetBotsCount"];
 	/** IAM actions required for the GetDataRetentionBot API call. */
-	static readonly GET_DATA_RETENTION_BOT: string[] = [
+	static readonly opGetDataRetentionBot: string[] = [
 		"wickr:GetDataRetentionBot",
 	];
 	/** IAM actions required for the GetGuestUserHistoryCount API call. */
-	static readonly GET_GUEST_USER_HISTORY_COUNT: string[] = [
+	static readonly opGetGuestUserHistoryCount: string[] = [
 		"wickr:GetGuestUserHistoryCount",
 	];
 	/** IAM actions required for the GetNetwork API call. */
-	static readonly GET_NETWORK: string[] = ["wickr:GetNetwork"];
+	static readonly opGetNetwork: string[] = ["wickr:GetNetwork"];
 	/** IAM actions required for the GetNetworkSettings API call. */
-	static readonly GET_NETWORK_SETTINGS: string[] = ["wickr:GetNetworkSettings"];
+	static readonly opGetNetworkSettings: string[] = ["wickr:GetNetworkSettings"];
 	/** IAM actions required for the GetOidcInfo API call. */
-	static readonly GET_OIDC_INFO: string[] = ["wickr:GetOidcInfo"];
+	static readonly opGetOidcInfo: string[] = ["wickr:GetOidcInfo"];
 	/** IAM actions required for the GetOpentdfConfig API call. */
-	static readonly GET_OPENTDF_CONFIG: string[] = ["wickr:GetOpentdfConfig"];
+	static readonly opGetOpentdfConfig: string[] = ["wickr:GetOpentdfConfig"];
 	/** IAM actions required for the GetSecurityGroup API call. */
-	static readonly GET_SECURITY_GROUP: string[] = ["wickr:GetSecurityGroup"];
+	static readonly opGetSecurityGroup: string[] = ["wickr:GetSecurityGroup"];
 	/** IAM actions required for the GetUser API call. */
-	static readonly GET_USER: string[] = ["wickr:GetUser"];
+	static readonly opGetUser: string[] = ["wickr:GetUser"];
 	/** IAM actions required for the GetUsersCount API call. */
-	static readonly GET_USERS_COUNT: string[] = ["wickr:GetUsersCount"];
+	static readonly opGetUsersCount: string[] = ["wickr:GetUsersCount"];
 	/** IAM actions required for the ListBlockedGuestUsers API call. */
-	static readonly LIST_BLOCKED_GUEST_USERS: string[] = [
+	static readonly ListBlockedGuestUsers: string[] = [
 		"wickr:ListBlockedGuestUsers",
 	];
 	/** IAM actions required for the ListBots API call. */
-	static readonly LIST_BOTS: string[] = ["wickr:ListBots"];
+	static readonly ListBots: string[] = ["wickr:ListBots"];
 	/** IAM actions required for the ListDevicesForUser API call. */
-	static readonly LIST_DEVICES_FOR_USER: string[] = [
-		"wickr:ListDevicesForUser",
-	];
+	static readonly ListDevicesForUser: string[] = ["wickr:ListDevicesForUser"];
 	/** IAM actions required for the ListGuestUsers API call. */
-	static readonly LIST_GUEST_USERS: string[] = ["wickr:ListGuestUsers"];
+	static readonly ListGuestUsers: string[] = ["wickr:ListGuestUsers"];
 	/** IAM actions required for the ListNetworks API call. */
-	static readonly LIST_NETWORKS: string[] = ["wickr:ListNetworks"];
+	static readonly ListNetworks: string[] = ["wickr:ListNetworks"];
 	/** IAM actions required for the ListSecurityGroupUsers API call. */
-	static readonly LIST_SECURITY_GROUP_USERS: string[] = [
+	static readonly ListSecurityGroupUsers: string[] = [
 		"wickr:ListSecurityGroupUsers",
 	];
 	/** IAM actions required for the ListSecurityGroups API call. */
-	static readonly LIST_SECURITY_GROUPS: string[] = ["wickr:ListSecurityGroups"];
+	static readonly ListSecurityGroups: string[] = ["wickr:ListSecurityGroups"];
 	/** IAM actions required for the ListUsers API call. */
-	static readonly LIST_USERS: string[] = ["wickr:ListUsers"];
+	static readonly ListUsers: string[] = ["wickr:ListUsers"];
 	/** IAM actions required for the RegisterOidcConfig API call. */
-	static readonly REGISTER_OIDC_CONFIG: string[] = ["wickr:RegisterOidcConfig"];
+	static readonly RegisterOidcConfig: string[] = ["wickr:RegisterOidcConfig"];
 	/** IAM actions required for the RegisterOidcConfigTest API call. */
-	static readonly REGISTER_OIDC_CONFIG_TEST: string[] = [
+	static readonly RegisterOidcConfigTest: string[] = [
 		"wickr:RegisterOidcConfigTest",
 	];
 	/** IAM actions required for the RegisterOpentdfConfig API call. */
-	static readonly REGISTER_OPENTDF_CONFIG: string[] = [
+	static readonly RegisterOpentdfConfig: string[] = [
 		"wickr:RegisterOpentdfConfig",
 	];
 	/** IAM actions required for the UpdateBot API call. */
-	static readonly UPDATE_BOT: string[] = ["wickr:UpdateBot"];
+	static readonly UpdateBot: string[] = ["wickr:UpdateBot"];
 	/** IAM actions required for the UpdateDataRetention API call. */
-	static readonly UPDATE_DATA_RETENTION: string[] = [
-		"wickr:UpdateDataRetention",
-	];
+	static readonly UpdateDataRetention: string[] = ["wickr:UpdateDataRetention"];
 	/** IAM actions required for the UpdateGuestUser API call. */
-	static readonly UPDATE_GUEST_USER: string[] = ["wickr:UpdateGuestUser"];
+	static readonly UpdateGuestUser: string[] = ["wickr:UpdateGuestUser"];
 	/** IAM actions required for the UpdateNetwork API call. */
-	static readonly UPDATE_NETWORK: string[] = [];
+	static readonly UpdateNetwork: string[] = [];
 	/** IAM actions required for the UpdateNetworkSettings API call. */
-	static readonly UPDATE_NETWORK_SETTINGS: string[] = [
+	static readonly UpdateNetworkSettings: string[] = [
 		"wickr:UpdateNetworkSettings",
 	];
 	/** IAM actions required for the UpdateSecurityGroup API call. */
-	static readonly UPDATE_SECURITY_GROUP: string[] = [
-		"wickr:UpdateSecurityGroup",
-	];
+	static readonly UpdateSecurityGroup: string[] = ["wickr:UpdateSecurityGroup"];
 	/** IAM actions required for the UpdateUser API call. */
-	static readonly UPDATE_USER: string[] = ["wickr:UpdateUser"];
+	static readonly UpdateUser: string[] = ["wickr:UpdateUser"];
 }
 
 /**
@@ -368,25 +370,25 @@ export class WickrOperations {
  */
 export class WickrConditions {
 	/** Condition keys applicable to the CreateNetwork action. */
-	static readonly CREATE_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

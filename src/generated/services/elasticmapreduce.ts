@@ -13,344 +13,482 @@ export class ElasticmapreduceActions {
 	static readonly SERVICE_PREFIX = "elasticmapreduce";
 
 	/** [Write] elasticmapreduce:AccessAllEventLogs */
-	static readonly ACCESS_ALL_EVENT_LOGS = "elasticmapreduce:AccessAllEventLogs";
+	static readonly AccessAllEventLogs = "elasticmapreduce:AccessAllEventLogs";
 	/** [Write] elasticmapreduce:AddInstanceFleet */
-	static readonly ADD_INSTANCE_FLEET = "elasticmapreduce:AddInstanceFleet";
+	static readonly AddInstanceFleet = "elasticmapreduce:AddInstanceFleet";
 	/** [Write] elasticmapreduce:AddInstanceGroups */
-	static readonly ADD_INSTANCE_GROUPS = "elasticmapreduce:AddInstanceGroups";
+	static readonly AddInstanceGroups = "elasticmapreduce:AddInstanceGroups";
 	/** [Write] elasticmapreduce:AddJobFlowSteps */
-	static readonly ADD_JOB_FLOW_STEPS = "elasticmapreduce:AddJobFlowSteps";
+	static readonly AddJobFlowSteps = "elasticmapreduce:AddJobFlowSteps";
 	/** [Tagging] elasticmapreduce:AddTags */
-	static readonly ADD_TAGS = "elasticmapreduce:AddTags";
+	static readonly AddTags = "elasticmapreduce:AddTags";
 	/** [Write] elasticmapreduce:AttachEditor */
-	static readonly ATTACH_EDITOR = "elasticmapreduce:AttachEditor";
+	static readonly AttachEditor = "elasticmapreduce:AttachEditor";
 	/** [Write] elasticmapreduce:CancelSteps */
-	static readonly CANCEL_STEPS = "elasticmapreduce:CancelSteps";
+	static readonly CancelSteps = "elasticmapreduce:CancelSteps";
 	/** [Write] elasticmapreduce:CreateEditor */
-	static readonly CREATE_EDITOR = "elasticmapreduce:CreateEditor";
+	static readonly CreateEditor = "elasticmapreduce:CreateEditor";
 	/** [Write] elasticmapreduce:CreatePersistentAppUI */
-	static readonly CREATE_PERSISTENT_APP_UI =
+	static readonly CreatePersistentAppUI =
 		"elasticmapreduce:CreatePersistentAppUI";
 	/** [Write] elasticmapreduce:CreateRepository */
-	static readonly CREATE_REPOSITORY = "elasticmapreduce:CreateRepository";
+	static readonly CreateRepository = "elasticmapreduce:CreateRepository";
 	/** [Write] elasticmapreduce:CreateSecurityConfiguration */
-	static readonly CREATE_SECURITY_CONFIGURATION =
+	static readonly CreateSecurityConfiguration =
 		"elasticmapreduce:CreateSecurityConfiguration";
 	/** [Write] elasticmapreduce:CreateStudio */
-	static readonly CREATE_STUDIO = "elasticmapreduce:CreateStudio";
+	static readonly CreateStudio = "elasticmapreduce:CreateStudio";
 	/** [Write] elasticmapreduce:CreateStudioPresignedUrl */
-	static readonly CREATE_STUDIO_PRESIGNED_URL =
+	static readonly CreateStudioPresignedUrl =
 		"elasticmapreduce:CreateStudioPresignedUrl";
 	/** [Write] elasticmapreduce:CreateStudioSessionMapping */
-	static readonly CREATE_STUDIO_SESSION_MAPPING =
+	static readonly CreateStudioSessionMapping =
 		"elasticmapreduce:CreateStudioSessionMapping";
 	/** [Write] elasticmapreduce:DeleteEditor */
-	static readonly DELETE_EDITOR = "elasticmapreduce:DeleteEditor";
+	static readonly DeleteEditor = "elasticmapreduce:DeleteEditor";
 	/** [Write] elasticmapreduce:DeleteRepository */
-	static readonly DELETE_REPOSITORY = "elasticmapreduce:DeleteRepository";
+	static readonly DeleteRepository = "elasticmapreduce:DeleteRepository";
 	/** [Write] elasticmapreduce:DeleteSecurityConfiguration */
-	static readonly DELETE_SECURITY_CONFIGURATION =
+	static readonly DeleteSecurityConfiguration =
 		"elasticmapreduce:DeleteSecurityConfiguration";
 	/** [Write] elasticmapreduce:DeleteStudio */
-	static readonly DELETE_STUDIO = "elasticmapreduce:DeleteStudio";
+	static readonly DeleteStudio = "elasticmapreduce:DeleteStudio";
 	/** [Write] elasticmapreduce:DeleteStudioSessionMapping */
-	static readonly DELETE_STUDIO_SESSION_MAPPING =
+	static readonly DeleteStudioSessionMapping =
 		"elasticmapreduce:DeleteStudioSessionMapping";
 	/** [PermissionManagement] elasticmapreduce:DeleteWorkspaceAccess */
-	static readonly DELETE_WORKSPACE_ACCESS =
+	static readonly DeleteWorkspaceAccess =
 		"elasticmapreduce:DeleteWorkspaceAccess";
 	/** [Read] elasticmapreduce:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "elasticmapreduce:DescribeCluster";
+	static readonly DescribeCluster = "elasticmapreduce:DescribeCluster";
 	/** [Read] elasticmapreduce:DescribeEditor */
-	static readonly DESCRIBE_EDITOR = "elasticmapreduce:DescribeEditor";
+	static readonly DescribeEditor = "elasticmapreduce:DescribeEditor";
 	/** [Read] elasticmapreduce:DescribeJobFlows */
-	static readonly DESCRIBE_JOB_FLOWS = "elasticmapreduce:DescribeJobFlows";
+	static readonly DescribeJobFlows = "elasticmapreduce:DescribeJobFlows";
 	/** [Read] elasticmapreduce:DescribeNotebookExecution */
-	static readonly DESCRIBE_NOTEBOOK_EXECUTION =
+	static readonly DescribeNotebookExecution =
 		"elasticmapreduce:DescribeNotebookExecution";
 	/** [Read] elasticmapreduce:DescribePersistentAppUI */
-	static readonly DESCRIBE_PERSISTENT_APP_UI =
+	static readonly DescribePersistentAppUI =
 		"elasticmapreduce:DescribePersistentAppUI";
 	/** [Read] elasticmapreduce:DescribeReleaseLabel */
-	static readonly DESCRIBE_RELEASE_LABEL =
+	static readonly DescribeReleaseLabel =
 		"elasticmapreduce:DescribeReleaseLabel";
 	/** [Read] elasticmapreduce:DescribeRepository */
-	static readonly DESCRIBE_REPOSITORY = "elasticmapreduce:DescribeRepository";
+	static readonly DescribeRepository = "elasticmapreduce:DescribeRepository";
 	/** [Read] elasticmapreduce:DescribeSecurityConfiguration */
-	static readonly DESCRIBE_SECURITY_CONFIGURATION =
+	static readonly DescribeSecurityConfiguration =
 		"elasticmapreduce:DescribeSecurityConfiguration";
 	/** [Read] elasticmapreduce:DescribeStep */
-	static readonly DESCRIBE_STEP = "elasticmapreduce:DescribeStep";
+	static readonly DescribeStep = "elasticmapreduce:DescribeStep";
 	/** [Read] elasticmapreduce:DescribeStudio */
-	static readonly DESCRIBE_STUDIO = "elasticmapreduce:DescribeStudio";
+	static readonly DescribeStudio = "elasticmapreduce:DescribeStudio";
 	/** [Write] elasticmapreduce:DetachEditor */
-	static readonly DETACH_EDITOR = "elasticmapreduce:DetachEditor";
+	static readonly DetachEditor = "elasticmapreduce:DetachEditor";
 	/** [Read] elasticmapreduce:GetAutoTerminationPolicy */
-	static readonly GET_AUTO_TERMINATION_POLICY =
+	static readonly actionGetAutoTerminationPolicy =
 		"elasticmapreduce:GetAutoTerminationPolicy";
 	/** [Read] elasticmapreduce:GetBlockPublicAccessConfiguration */
-	static readonly GET_BLOCK_PUBLIC_ACCESS_CONFIGURATION =
+	static readonly actionGetBlockPublicAccessConfiguration =
 		"elasticmapreduce:GetBlockPublicAccessConfiguration";
 	/** [Write] elasticmapreduce:GetClusterSessionCredentials */
-	static readonly GET_CLUSTER_SESSION_CREDENTIALS =
+	static readonly actionGetClusterSessionCredentials =
 		"elasticmapreduce:GetClusterSessionCredentials";
 	/** [Read] elasticmapreduce:GetManagedScalingPolicy */
-	static readonly GET_MANAGED_SCALING_POLICY =
+	static readonly actionGetManagedScalingPolicy =
 		"elasticmapreduce:GetManagedScalingPolicy";
 	/** [Write] elasticmapreduce:GetOnClusterAppUIPresignedURL */
-	static readonly GET_ON_CLUSTER_APP_UI_PRESIGNED_URL =
+	static readonly actionGetOnClusterAppUIPresignedURL =
 		"elasticmapreduce:GetOnClusterAppUIPresignedURL";
 	/** [Write] elasticmapreduce:GetPersistentAppUIPresignedURL */
-	static readonly GET_PERSISTENT_APP_UI_PRESIGNED_URL =
+	static readonly actionGetPersistentAppUIPresignedURL =
 		"elasticmapreduce:GetPersistentAppUIPresignedURL";
 	/** [Read] elasticmapreduce:GetSession */
-	static readonly GET_SESSION = "elasticmapreduce:GetSession";
+	static readonly actionGetSession = "elasticmapreduce:GetSession";
 	/** [Write] elasticmapreduce:GetSessionEndpoint */
-	static readonly GET_SESSION_ENDPOINT = "elasticmapreduce:GetSessionEndpoint";
+	static readonly actionGetSessionEndpoint =
+		"elasticmapreduce:GetSessionEndpoint";
 	/** [Read] elasticmapreduce:GetStudioSessionMapping */
-	static readonly GET_STUDIO_SESSION_MAPPING =
+	static readonly actionGetStudioSessionMapping =
 		"elasticmapreduce:GetStudioSessionMapping";
 	/** [Write] elasticmapreduce:LinkRepository */
-	static readonly LINK_REPOSITORY = "elasticmapreduce:LinkRepository";
+	static readonly LinkRepository = "elasticmapreduce:LinkRepository";
 	/** [Read] elasticmapreduce:ListBootstrapActions */
-	static readonly LIST_BOOTSTRAP_ACTIONS =
+	static readonly ListBootstrapActions =
 		"elasticmapreduce:ListBootstrapActions";
 	/** [List] elasticmapreduce:ListClusters */
-	static readonly LIST_CLUSTERS = "elasticmapreduce:ListClusters";
+	static readonly ListClusters = "elasticmapreduce:ListClusters";
 	/** [List] elasticmapreduce:ListEditors */
-	static readonly LIST_EDITORS = "elasticmapreduce:ListEditors";
+	static readonly ListEditors = "elasticmapreduce:ListEditors";
 	/** [Read] elasticmapreduce:ListInstanceFleets */
-	static readonly LIST_INSTANCE_FLEETS = "elasticmapreduce:ListInstanceFleets";
+	static readonly ListInstanceFleets = "elasticmapreduce:ListInstanceFleets";
 	/** [Read] elasticmapreduce:ListInstanceGroups */
-	static readonly LIST_INSTANCE_GROUPS = "elasticmapreduce:ListInstanceGroups";
+	static readonly ListInstanceGroups = "elasticmapreduce:ListInstanceGroups";
 	/** [Read] elasticmapreduce:ListInstances */
-	static readonly LIST_INSTANCES = "elasticmapreduce:ListInstances";
+	static readonly ListInstances = "elasticmapreduce:ListInstances";
 	/** [List] elasticmapreduce:ListNotebookExecutions */
-	static readonly LIST_NOTEBOOK_EXECUTIONS =
+	static readonly ListNotebookExecutions =
 		"elasticmapreduce:ListNotebookExecutions";
 	/** [List] elasticmapreduce:ListReleaseLabels */
-	static readonly LIST_RELEASE_LABELS = "elasticmapreduce:ListReleaseLabels";
+	static readonly ListReleaseLabels = "elasticmapreduce:ListReleaseLabels";
 	/** [List] elasticmapreduce:ListRepositories */
-	static readonly LIST_REPOSITORIES = "elasticmapreduce:ListRepositories";
+	static readonly ListRepositories = "elasticmapreduce:ListRepositories";
 	/** [List] elasticmapreduce:ListSecurityConfigurations */
-	static readonly LIST_SECURITY_CONFIGURATIONS =
+	static readonly ListSecurityConfigurations =
 		"elasticmapreduce:ListSecurityConfigurations";
 	/** [List] elasticmapreduce:ListSessions */
-	static readonly LIST_SESSIONS = "elasticmapreduce:ListSessions";
+	static readonly ListSessions = "elasticmapreduce:ListSessions";
 	/** [Read] elasticmapreduce:ListSteps */
-	static readonly LIST_STEPS = "elasticmapreduce:ListSteps";
+	static readonly ListSteps = "elasticmapreduce:ListSteps";
 	/** [List] elasticmapreduce:ListStudioSessionMappings */
-	static readonly LIST_STUDIO_SESSION_MAPPINGS =
+	static readonly ListStudioSessionMappings =
 		"elasticmapreduce:ListStudioSessionMappings";
 	/** [List] elasticmapreduce:ListStudios */
-	static readonly LIST_STUDIOS = "elasticmapreduce:ListStudios";
+	static readonly ListStudios = "elasticmapreduce:ListStudios";
 	/** [List] elasticmapreduce:ListSupportedInstanceTypes */
-	static readonly LIST_SUPPORTED_INSTANCE_TYPES =
+	static readonly ListSupportedInstanceTypes =
 		"elasticmapreduce:ListSupportedInstanceTypes";
 	/** [List] elasticmapreduce:ListWorkspaceAccessIdentities */
-	static readonly LIST_WORKSPACE_ACCESS_IDENTITIES =
+	static readonly ListWorkspaceAccessIdentities =
 		"elasticmapreduce:ListWorkspaceAccessIdentities";
 	/** [Write] elasticmapreduce:ModifyCluster */
-	static readonly MODIFY_CLUSTER = "elasticmapreduce:ModifyCluster";
+	static readonly ModifyCluster = "elasticmapreduce:ModifyCluster";
 	/** [Write] elasticmapreduce:ModifyInstanceFleet */
-	static readonly MODIFY_INSTANCE_FLEET =
-		"elasticmapreduce:ModifyInstanceFleet";
+	static readonly ModifyInstanceFleet = "elasticmapreduce:ModifyInstanceFleet";
 	/** [Write] elasticmapreduce:ModifyInstanceGroups */
-	static readonly MODIFY_INSTANCE_GROUPS =
+	static readonly ModifyInstanceGroups =
 		"elasticmapreduce:ModifyInstanceGroups";
 	/** [Write] elasticmapreduce:OpenEditorInConsole */
-	static readonly OPEN_EDITOR_IN_CONSOLE =
-		"elasticmapreduce:OpenEditorInConsole";
+	static readonly OpenEditorInConsole = "elasticmapreduce:OpenEditorInConsole";
 	/** [Write] elasticmapreduce:PutAutoScalingPolicy */
-	static readonly PUT_AUTO_SCALING_POLICY =
+	static readonly PutAutoScalingPolicy =
 		"elasticmapreduce:PutAutoScalingPolicy";
 	/** [Write] elasticmapreduce:PutAutoTerminationPolicy */
-	static readonly PUT_AUTO_TERMINATION_POLICY =
+	static readonly PutAutoTerminationPolicy =
 		"elasticmapreduce:PutAutoTerminationPolicy";
 	/** [PermissionManagement] elasticmapreduce:PutBlockPublicAccessConfiguration */
-	static readonly PUT_BLOCK_PUBLIC_ACCESS_CONFIGURATION =
+	static readonly PutBlockPublicAccessConfiguration =
 		"elasticmapreduce:PutBlockPublicAccessConfiguration";
 	/** [Write] elasticmapreduce:PutManagedScalingPolicy */
-	static readonly PUT_MANAGED_SCALING_POLICY =
+	static readonly PutManagedScalingPolicy =
 		"elasticmapreduce:PutManagedScalingPolicy";
 	/** [PermissionManagement] elasticmapreduce:PutWorkspaceAccess */
-	static readonly PUT_WORKSPACE_ACCESS = "elasticmapreduce:PutWorkspaceAccess";
+	static readonly PutWorkspaceAccess = "elasticmapreduce:PutWorkspaceAccess";
 	/** [Write] elasticmapreduce:RemoveAutoScalingPolicy */
-	static readonly REMOVE_AUTO_SCALING_POLICY =
+	static readonly RemoveAutoScalingPolicy =
 		"elasticmapreduce:RemoveAutoScalingPolicy";
 	/** [Write] elasticmapreduce:RemoveAutoTerminationPolicy */
-	static readonly REMOVE_AUTO_TERMINATION_POLICY =
+	static readonly RemoveAutoTerminationPolicy =
 		"elasticmapreduce:RemoveAutoTerminationPolicy";
 	/** [Write] elasticmapreduce:RemoveManagedScalingPolicy */
-	static readonly REMOVE_MANAGED_SCALING_POLICY =
+	static readonly RemoveManagedScalingPolicy =
 		"elasticmapreduce:RemoveManagedScalingPolicy";
 	/** [Tagging] elasticmapreduce:RemoveTags */
-	static readonly REMOVE_TAGS = "elasticmapreduce:RemoveTags";
+	static readonly RemoveTags = "elasticmapreduce:RemoveTags";
 	/** [Write] elasticmapreduce:RunJobFlow */
-	static readonly RUN_JOB_FLOW = "elasticmapreduce:RunJobFlow";
+	static readonly RunJobFlow = "elasticmapreduce:RunJobFlow";
 	/** [Write] elasticmapreduce:SetKeepJobFlowAliveWhenNoSteps */
-	static readonly SET_KEEP_JOB_FLOW_ALIVE_WHEN_NO_STEPS =
+	static readonly actionSetKeepJobFlowAliveWhenNoSteps =
 		"elasticmapreduce:SetKeepJobFlowAliveWhenNoSteps";
 	/** [Write] elasticmapreduce:SetTerminationProtection */
-	static readonly SET_TERMINATION_PROTECTION =
+	static readonly actionSetTerminationProtection =
 		"elasticmapreduce:SetTerminationProtection";
 	/** [Write] elasticmapreduce:SetUnhealthyNodeReplacement */
-	static readonly SET_UNHEALTHY_NODE_REPLACEMENT =
+	static readonly actionSetUnhealthyNodeReplacement =
 		"elasticmapreduce:SetUnhealthyNodeReplacement";
 	/** [Write] elasticmapreduce:SetVisibleToAllUsers */
-	static readonly SET_VISIBLE_TO_ALL_USERS =
+	static readonly actionSetVisibleToAllUsers =
 		"elasticmapreduce:SetVisibleToAllUsers";
 	/** [Write] elasticmapreduce:StartEditor */
-	static readonly START_EDITOR = "elasticmapreduce:StartEditor";
+	static readonly StartEditor = "elasticmapreduce:StartEditor";
 	/** [Write] elasticmapreduce:StartNotebookExecution */
-	static readonly START_NOTEBOOK_EXECUTION =
+	static readonly StartNotebookExecution =
 		"elasticmapreduce:StartNotebookExecution";
 	/** [Write] elasticmapreduce:StartSession */
-	static readonly START_SESSION = "elasticmapreduce:StartSession";
+	static readonly StartSession = "elasticmapreduce:StartSession";
 	/** [Write] elasticmapreduce:StopEditor */
-	static readonly STOP_EDITOR = "elasticmapreduce:StopEditor";
+	static readonly StopEditor = "elasticmapreduce:StopEditor";
 	/** [Write] elasticmapreduce:StopNotebookExecution */
-	static readonly STOP_NOTEBOOK_EXECUTION =
+	static readonly StopNotebookExecution =
 		"elasticmapreduce:StopNotebookExecution";
 	/** [Write] elasticmapreduce:TerminateJobFlows */
-	static readonly TERMINATE_JOB_FLOWS = "elasticmapreduce:TerminateJobFlows";
+	static readonly TerminateJobFlows = "elasticmapreduce:TerminateJobFlows";
 	/** [Write] elasticmapreduce:TerminateSession */
-	static readonly TERMINATE_SESSION = "elasticmapreduce:TerminateSession";
+	static readonly TerminateSession = "elasticmapreduce:TerminateSession";
 	/** [Write] elasticmapreduce:UnlinkRepository */
-	static readonly UNLINK_REPOSITORY = "elasticmapreduce:UnlinkRepository";
+	static readonly UnlinkRepository = "elasticmapreduce:UnlinkRepository";
 	/** [Write] elasticmapreduce:UpdateEditor */
-	static readonly UPDATE_EDITOR = "elasticmapreduce:UpdateEditor";
+	static readonly UpdateEditor = "elasticmapreduce:UpdateEditor";
 	/** [Write] elasticmapreduce:UpdateRepository */
-	static readonly UPDATE_REPOSITORY = "elasticmapreduce:UpdateRepository";
+	static readonly UpdateRepository = "elasticmapreduce:UpdateRepository";
 	/** [Write] elasticmapreduce:UpdateStudio */
-	static readonly UPDATE_STUDIO = "elasticmapreduce:UpdateStudio";
+	static readonly UpdateStudio = "elasticmapreduce:UpdateStudio";
 	/** [Write] elasticmapreduce:UpdateStudioSessionMapping */
-	static readonly UPDATE_STUDIO_SESSION_MAPPING =
+	static readonly UpdateStudioSessionMapping =
 		"elasticmapreduce:UpdateStudioSessionMapping";
 	/** [List] elasticmapreduce:ViewEventsFromAllClustersInConsole */
-	static readonly VIEW_EVENTS_FROM_ALL_CLUSTERS_IN_CONSOLE =
+	static readonly ViewEventsFromAllClustersInConsole =
 		"elasticmapreduce:ViewEventsFromAllClustersInConsole";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElasticmapreduceActions.DESCRIBE_CLUSTER,
-		ElasticmapreduceActions.DESCRIBE_EDITOR,
-		ElasticmapreduceActions.DESCRIBE_JOB_FLOWS,
-		ElasticmapreduceActions.DESCRIBE_NOTEBOOK_EXECUTION,
-		ElasticmapreduceActions.DESCRIBE_PERSISTENT_APP_UI,
-		ElasticmapreduceActions.DESCRIBE_RELEASE_LABEL,
-		ElasticmapreduceActions.DESCRIBE_REPOSITORY,
-		ElasticmapreduceActions.DESCRIBE_SECURITY_CONFIGURATION,
-		ElasticmapreduceActions.DESCRIBE_STEP,
-		ElasticmapreduceActions.DESCRIBE_STUDIO,
-		ElasticmapreduceActions.GET_AUTO_TERMINATION_POLICY,
-		ElasticmapreduceActions.GET_BLOCK_PUBLIC_ACCESS_CONFIGURATION,
-		ElasticmapreduceActions.GET_MANAGED_SCALING_POLICY,
-		ElasticmapreduceActions.GET_SESSION,
-		ElasticmapreduceActions.GET_STUDIO_SESSION_MAPPING,
-		ElasticmapreduceActions.LIST_BOOTSTRAP_ACTIONS,
-		ElasticmapreduceActions.LIST_INSTANCE_FLEETS,
-		ElasticmapreduceActions.LIST_INSTANCE_GROUPS,
-		ElasticmapreduceActions.LIST_INSTANCES,
-		ElasticmapreduceActions.LIST_STEPS,
+	static readonly AllReadActions: string[] = [
+		ElasticmapreduceActions.DescribeCluster,
+		ElasticmapreduceActions.DescribeEditor,
+		ElasticmapreduceActions.DescribeJobFlows,
+		ElasticmapreduceActions.DescribeNotebookExecution,
+		ElasticmapreduceActions.DescribePersistentAppUI,
+		ElasticmapreduceActions.DescribeReleaseLabel,
+		ElasticmapreduceActions.DescribeRepository,
+		ElasticmapreduceActions.DescribeSecurityConfiguration,
+		ElasticmapreduceActions.DescribeStep,
+		ElasticmapreduceActions.DescribeStudio,
+		ElasticmapreduceActions.actionGetAutoTerminationPolicy,
+		ElasticmapreduceActions.actionGetBlockPublicAccessConfiguration,
+		ElasticmapreduceActions.actionGetManagedScalingPolicy,
+		ElasticmapreduceActions.actionGetSession,
+		ElasticmapreduceActions.actionGetStudioSessionMapping,
+		ElasticmapreduceActions.ListBootstrapActions,
+		ElasticmapreduceActions.ListInstanceFleets,
+		ElasticmapreduceActions.ListInstanceGroups,
+		ElasticmapreduceActions.ListInstances,
+		ElasticmapreduceActions.ListSteps,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElasticmapreduceActions.ACCESS_ALL_EVENT_LOGS,
-		ElasticmapreduceActions.ADD_INSTANCE_FLEET,
-		ElasticmapreduceActions.ADD_INSTANCE_GROUPS,
-		ElasticmapreduceActions.ADD_JOB_FLOW_STEPS,
-		ElasticmapreduceActions.ATTACH_EDITOR,
-		ElasticmapreduceActions.CANCEL_STEPS,
-		ElasticmapreduceActions.CREATE_EDITOR,
-		ElasticmapreduceActions.CREATE_PERSISTENT_APP_UI,
-		ElasticmapreduceActions.CREATE_REPOSITORY,
-		ElasticmapreduceActions.CREATE_SECURITY_CONFIGURATION,
-		ElasticmapreduceActions.CREATE_STUDIO,
-		ElasticmapreduceActions.CREATE_STUDIO_PRESIGNED_URL,
-		ElasticmapreduceActions.CREATE_STUDIO_SESSION_MAPPING,
-		ElasticmapreduceActions.DELETE_EDITOR,
-		ElasticmapreduceActions.DELETE_REPOSITORY,
-		ElasticmapreduceActions.DELETE_SECURITY_CONFIGURATION,
-		ElasticmapreduceActions.DELETE_STUDIO,
-		ElasticmapreduceActions.DELETE_STUDIO_SESSION_MAPPING,
-		ElasticmapreduceActions.DETACH_EDITOR,
-		ElasticmapreduceActions.GET_CLUSTER_SESSION_CREDENTIALS,
-		ElasticmapreduceActions.GET_ON_CLUSTER_APP_UI_PRESIGNED_URL,
-		ElasticmapreduceActions.GET_PERSISTENT_APP_UI_PRESIGNED_URL,
-		ElasticmapreduceActions.GET_SESSION_ENDPOINT,
-		ElasticmapreduceActions.LINK_REPOSITORY,
-		ElasticmapreduceActions.MODIFY_CLUSTER,
-		ElasticmapreduceActions.MODIFY_INSTANCE_FLEET,
-		ElasticmapreduceActions.MODIFY_INSTANCE_GROUPS,
-		ElasticmapreduceActions.OPEN_EDITOR_IN_CONSOLE,
-		ElasticmapreduceActions.PUT_AUTO_SCALING_POLICY,
-		ElasticmapreduceActions.PUT_AUTO_TERMINATION_POLICY,
-		ElasticmapreduceActions.PUT_MANAGED_SCALING_POLICY,
-		ElasticmapreduceActions.REMOVE_AUTO_SCALING_POLICY,
-		ElasticmapreduceActions.REMOVE_AUTO_TERMINATION_POLICY,
-		ElasticmapreduceActions.REMOVE_MANAGED_SCALING_POLICY,
-		ElasticmapreduceActions.RUN_JOB_FLOW,
-		ElasticmapreduceActions.SET_KEEP_JOB_FLOW_ALIVE_WHEN_NO_STEPS,
-		ElasticmapreduceActions.SET_TERMINATION_PROTECTION,
-		ElasticmapreduceActions.SET_UNHEALTHY_NODE_REPLACEMENT,
-		ElasticmapreduceActions.SET_VISIBLE_TO_ALL_USERS,
-		ElasticmapreduceActions.START_EDITOR,
-		ElasticmapreduceActions.START_NOTEBOOK_EXECUTION,
-		ElasticmapreduceActions.START_SESSION,
-		ElasticmapreduceActions.STOP_EDITOR,
-		ElasticmapreduceActions.STOP_NOTEBOOK_EXECUTION,
-		ElasticmapreduceActions.TERMINATE_JOB_FLOWS,
-		ElasticmapreduceActions.TERMINATE_SESSION,
-		ElasticmapreduceActions.UNLINK_REPOSITORY,
-		ElasticmapreduceActions.UPDATE_EDITOR,
-		ElasticmapreduceActions.UPDATE_REPOSITORY,
-		ElasticmapreduceActions.UPDATE_STUDIO,
-		ElasticmapreduceActions.UPDATE_STUDIO_SESSION_MAPPING,
+	static readonly AllWriteActions: string[] = [
+		ElasticmapreduceActions.AccessAllEventLogs,
+		ElasticmapreduceActions.AddInstanceFleet,
+		ElasticmapreduceActions.AddInstanceGroups,
+		ElasticmapreduceActions.AddJobFlowSteps,
+		ElasticmapreduceActions.AttachEditor,
+		ElasticmapreduceActions.CancelSteps,
+		ElasticmapreduceActions.CreateEditor,
+		ElasticmapreduceActions.CreatePersistentAppUI,
+		ElasticmapreduceActions.CreateRepository,
+		ElasticmapreduceActions.CreateSecurityConfiguration,
+		ElasticmapreduceActions.CreateStudio,
+		ElasticmapreduceActions.CreateStudioPresignedUrl,
+		ElasticmapreduceActions.CreateStudioSessionMapping,
+		ElasticmapreduceActions.DeleteEditor,
+		ElasticmapreduceActions.DeleteRepository,
+		ElasticmapreduceActions.DeleteSecurityConfiguration,
+		ElasticmapreduceActions.DeleteStudio,
+		ElasticmapreduceActions.DeleteStudioSessionMapping,
+		ElasticmapreduceActions.DetachEditor,
+		ElasticmapreduceActions.actionGetClusterSessionCredentials,
+		ElasticmapreduceActions.actionGetOnClusterAppUIPresignedURL,
+		ElasticmapreduceActions.actionGetPersistentAppUIPresignedURL,
+		ElasticmapreduceActions.actionGetSessionEndpoint,
+		ElasticmapreduceActions.LinkRepository,
+		ElasticmapreduceActions.ModifyCluster,
+		ElasticmapreduceActions.ModifyInstanceFleet,
+		ElasticmapreduceActions.ModifyInstanceGroups,
+		ElasticmapreduceActions.OpenEditorInConsole,
+		ElasticmapreduceActions.PutAutoScalingPolicy,
+		ElasticmapreduceActions.PutAutoTerminationPolicy,
+		ElasticmapreduceActions.PutManagedScalingPolicy,
+		ElasticmapreduceActions.RemoveAutoScalingPolicy,
+		ElasticmapreduceActions.RemoveAutoTerminationPolicy,
+		ElasticmapreduceActions.RemoveManagedScalingPolicy,
+		ElasticmapreduceActions.RunJobFlow,
+		ElasticmapreduceActions.actionSetKeepJobFlowAliveWhenNoSteps,
+		ElasticmapreduceActions.actionSetTerminationProtection,
+		ElasticmapreduceActions.actionSetUnhealthyNodeReplacement,
+		ElasticmapreduceActions.actionSetVisibleToAllUsers,
+		ElasticmapreduceActions.StartEditor,
+		ElasticmapreduceActions.StartNotebookExecution,
+		ElasticmapreduceActions.StartSession,
+		ElasticmapreduceActions.StopEditor,
+		ElasticmapreduceActions.StopNotebookExecution,
+		ElasticmapreduceActions.TerminateJobFlows,
+		ElasticmapreduceActions.TerminateSession,
+		ElasticmapreduceActions.UnlinkRepository,
+		ElasticmapreduceActions.UpdateEditor,
+		ElasticmapreduceActions.UpdateRepository,
+		ElasticmapreduceActions.UpdateStudio,
+		ElasticmapreduceActions.UpdateStudioSessionMapping,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElasticmapreduceActions.LIST_CLUSTERS,
-		ElasticmapreduceActions.LIST_EDITORS,
-		ElasticmapreduceActions.LIST_NOTEBOOK_EXECUTIONS,
-		ElasticmapreduceActions.LIST_RELEASE_LABELS,
-		ElasticmapreduceActions.LIST_REPOSITORIES,
-		ElasticmapreduceActions.LIST_SECURITY_CONFIGURATIONS,
-		ElasticmapreduceActions.LIST_SESSIONS,
-		ElasticmapreduceActions.LIST_STUDIO_SESSION_MAPPINGS,
-		ElasticmapreduceActions.LIST_STUDIOS,
-		ElasticmapreduceActions.LIST_SUPPORTED_INSTANCE_TYPES,
-		ElasticmapreduceActions.LIST_WORKSPACE_ACCESS_IDENTITIES,
-		ElasticmapreduceActions.VIEW_EVENTS_FROM_ALL_CLUSTERS_IN_CONSOLE,
+	static readonly AllListActions: string[] = [
+		ElasticmapreduceActions.ListClusters,
+		ElasticmapreduceActions.ListEditors,
+		ElasticmapreduceActions.ListNotebookExecutions,
+		ElasticmapreduceActions.ListReleaseLabels,
+		ElasticmapreduceActions.ListRepositories,
+		ElasticmapreduceActions.ListSecurityConfigurations,
+		ElasticmapreduceActions.ListSessions,
+		ElasticmapreduceActions.ListStudioSessionMappings,
+		ElasticmapreduceActions.ListStudios,
+		ElasticmapreduceActions.ListSupportedInstanceTypes,
+		ElasticmapreduceActions.ListWorkspaceAccessIdentities,
+		ElasticmapreduceActions.ViewEventsFromAllClustersInConsole,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		ElasticmapreduceActions.DELETE_WORKSPACE_ACCESS,
-		ElasticmapreduceActions.PUT_BLOCK_PUBLIC_ACCESS_CONFIGURATION,
-		ElasticmapreduceActions.PUT_WORKSPACE_ACCESS,
+	static readonly AllPermissionManagementActions: string[] = [
+		ElasticmapreduceActions.DeleteWorkspaceAccess,
+		ElasticmapreduceActions.PutBlockPublicAccessConfiguration,
+		ElasticmapreduceActions.PutWorkspaceAccess,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ElasticmapreduceActions.ADD_TAGS,
-		ElasticmapreduceActions.REMOVE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		ElasticmapreduceActions.AddTags,
+		ElasticmapreduceActions.RemoveTags,
 	];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterId>[^:/?]+)$",
-);
-const EditorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):editor/(?<editorId>[^:/?]+)$",
-);
-const NotebookExecutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):notebook-execution/(?<notebookExecutionId>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterId>[^:/?]+)/session/(?<sessionId>[^:/?]+)$",
-);
-const StudioArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):studio/(?<studioId>[^:/?]+)$",
-);
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface ElasticmapreduceClusterArnProps {
+	/** The ClusterId component of the ARN. */
+	readonly clusterId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface ElasticmapreduceClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterId component. */
+	readonly clusterId: string;
+}
+
+/**
+ * Properties for building a editor ARN.
+ */
+export interface ElasticmapreduceEditorArnProps {
+	/** The EditorId component of the ARN. */
+	readonly editorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a editor ARN.
+ */
+export interface ElasticmapreduceEditorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EditorId component. */
+	readonly editorId: string;
+}
+
+/**
+ * Properties for building a notebook-execution ARN.
+ */
+export interface ElasticmapreduceNotebookExecutionArnProps {
+	/** The NotebookExecutionId component of the ARN. */
+	readonly notebookExecutionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a notebook-execution ARN.
+ */
+export interface ElasticmapreduceNotebookExecutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotebookExecutionId component. */
+	readonly notebookExecutionId: string;
+}
+
+/**
+ * Properties for building a session ARN.
+ */
+export interface ElasticmapreduceSessionArnProps {
+	/** The ClusterId component of the ARN. */
+	readonly clusterId: string;
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a session ARN.
+ */
+export interface ElasticmapreduceSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterId component. */
+	readonly clusterId: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+/**
+ * Properties for building a studio ARN.
+ */
+export interface ElasticmapreduceStudioArnProps {
+	/** The StudioId component of the ARN. */
+	readonly studioId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a studio ARN.
+ */
+export interface ElasticmapreduceStudioArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StudioId component. */
+	readonly studioId: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterId>[^:/?]+)$/;
+const EditorArnRegex =
+	/^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):editor\/(?<editorId>[^:/?]+)$/;
+const NotebookExecutionArnRegex =
+	/^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):notebook-execution\/(?<notebookExecutionId>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterId>[^:/?]+)\/session\/(?<sessionId>[^:/?]+)$/;
+const StudioArnRegex =
+	/^arn:(?<partition>[^:]+):elasticmapreduce:(?<region>[^:]*):(?<account>[^:]*):studio\/(?<studioId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elasticmapreduce resources.
@@ -359,16 +497,7 @@ export class ElasticmapreduceResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterId component of the ARN. */
-		readonly clusterId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: ElasticmapreduceClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticmapreduce:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterId}`;
 	}
 
@@ -383,12 +512,7 @@ export class ElasticmapreduceResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterId: string;
-	} {
+	static parseClusterArn(arn: string): ElasticmapreduceClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -404,16 +528,7 @@ export class ElasticmapreduceResources {
 	/**
 	 * Builds an ARN for the editor resource.
 	 */
-	static editor(props: {
-		/** The EditorId component of the ARN. */
-		readonly editorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static editor(props: ElasticmapreduceEditorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticmapreduce:${props.region ?? "*"}:${props.account ?? "*"}:editor/${props.editorId}`;
 	}
 
@@ -428,12 +543,7 @@ export class ElasticmapreduceResources {
 	 * Parses a editor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEditorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		editorId: string;
-	} {
+	static parseEditorArn(arn: string): ElasticmapreduceEditorArnComponents {
 		const match = EditorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid editor ARN: ${arn}`);
@@ -449,16 +559,9 @@ export class ElasticmapreduceResources {
 	/**
 	 * Builds an ARN for the notebook-execution resource.
 	 */
-	static notebookExecution(props: {
-		/** The NotebookExecutionId component of the ARN. */
-		readonly notebookExecutionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notebookExecution(
+		props: ElasticmapreduceNotebookExecutionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:elasticmapreduce:${props.region ?? "*"}:${props.account ?? "*"}:notebook-execution/${props.notebookExecutionId}`;
 	}
 
@@ -473,12 +576,9 @@ export class ElasticmapreduceResources {
 	 * Parses a notebook-execution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotebookExecutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		notebookExecutionId: string;
-	} {
+	static parseNotebookExecutionArn(
+		arn: string,
+	): ElasticmapreduceNotebookExecutionArnComponents {
 		const match = NotebookExecutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid notebook-execution ARN: ${arn}`);
@@ -494,18 +594,7 @@ export class ElasticmapreduceResources {
 	/**
 	 * Builds an ARN for the session resource.
 	 */
-	static session(props: {
-		/** The ClusterId component of the ARN. */
-		readonly clusterId: string;
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: ElasticmapreduceSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticmapreduce:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterId}/session/${props.sessionId}`;
 	}
 
@@ -520,13 +609,7 @@ export class ElasticmapreduceResources {
 	 * Parses a session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterId: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): ElasticmapreduceSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid session ARN: ${arn}`);
@@ -543,16 +626,7 @@ export class ElasticmapreduceResources {
 	/**
 	 * Builds an ARN for the studio resource.
 	 */
-	static studio(props: {
-		/** The StudioId component of the ARN. */
-		readonly studioId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static studio(props: ElasticmapreduceStudioArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticmapreduce:${props.region ?? "*"}:${props.account ?? "*"}:studio/${props.studioId}`;
 	}
 
@@ -567,12 +641,7 @@ export class ElasticmapreduceResources {
 	 * Parses a studio ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStudioArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		studioId: string;
-	} {
+	static parseStudioArn(arn: string): ElasticmapreduceStudioArnComponents {
 		const match = StudioArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid studio ARN: ${arn}`);
@@ -591,250 +660,250 @@ export class ElasticmapreduceResources {
  */
 export class ElasticmapreduceOperations {
 	/** IAM actions required for the AddInstanceFleet API call. */
-	static readonly ADD_INSTANCE_FLEET: string[] = [
+	static readonly AddInstanceFleet: string[] = [
 		"elasticmapreduce:AddInstanceFleet",
 	];
 	/** IAM actions required for the AddInstanceGroups API call. */
-	static readonly ADD_INSTANCE_GROUPS: string[] = [
+	static readonly AddInstanceGroups: string[] = [
 		"elasticmapreduce:AddInstanceGroups",
 	];
 	/** IAM actions required for the AddJobFlowSteps API call. */
-	static readonly ADD_JOB_FLOW_STEPS: string[] = [
+	static readonly AddJobFlowSteps: string[] = [
 		"elasticmapreduce:AddJobFlowSteps",
 	];
 	/** IAM actions required for the AddTags API call. */
-	static readonly ADD_TAGS: string[] = ["elasticmapreduce:AddTags"];
+	static readonly AddTags: string[] = ["elasticmapreduce:AddTags"];
 	/** IAM actions required for the CancelSteps API call. */
-	static readonly CANCEL_STEPS: string[] = ["elasticmapreduce:CancelSteps"];
+	static readonly CancelSteps: string[] = ["elasticmapreduce:CancelSteps"];
 	/** IAM actions required for the CreatePersistentAppUI API call. */
-	static readonly CREATE_PERSISTENT_APP_UI: string[] = [
+	static readonly CreatePersistentAppUI: string[] = [
 		"elasticmapreduce:AccessAllEventLogs",
 		"elasticmapreduce:AddTags",
 		"elasticmapreduce:CreatePersistentAppUI",
 	];
 	/** IAM actions required for the CreateSecurityConfiguration API call. */
-	static readonly CREATE_SECURITY_CONFIGURATION: string[] = [
+	static readonly CreateSecurityConfiguration: string[] = [
 		"elasticmapreduce:CreateSecurityConfiguration",
 	];
 	/** IAM actions required for the CreateStudio API call. */
-	static readonly CREATE_STUDIO: string[] = [
+	static readonly CreateStudio: string[] = [
 		"elasticmapreduce:AddTags",
 		"elasticmapreduce:CreateStudio",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateStudioSessionMapping API call. */
-	static readonly CREATE_STUDIO_SESSION_MAPPING: string[] = [
+	static readonly CreateStudioSessionMapping: string[] = [
 		"elasticmapreduce:CreateStudioSessionMapping",
 	];
 	/** IAM actions required for the DeleteSecurityConfiguration API call. */
-	static readonly DELETE_SECURITY_CONFIGURATION: string[] = [
+	static readonly DeleteSecurityConfiguration: string[] = [
 		"elasticmapreduce:DeleteSecurityConfiguration",
 	];
 	/** IAM actions required for the DeleteStudio API call. */
-	static readonly DELETE_STUDIO: string[] = ["elasticmapreduce:DeleteStudio"];
+	static readonly DeleteStudio: string[] = ["elasticmapreduce:DeleteStudio"];
 	/** IAM actions required for the DeleteStudioSessionMapping API call. */
-	static readonly DELETE_STUDIO_SESSION_MAPPING: string[] = [
+	static readonly DeleteStudioSessionMapping: string[] = [
 		"elasticmapreduce:DeleteStudioSessionMapping",
 	];
 	/** IAM actions required for the DescribeCluster API call. */
-	static readonly DESCRIBE_CLUSTER: string[] = [
+	static readonly DescribeCluster: string[] = [
 		"elasticmapreduce:DescribeCluster",
 	];
 	/** IAM actions required for the DescribeJobFlows API call. */
-	static readonly DESCRIBE_JOB_FLOWS: string[] = [
+	static readonly DescribeJobFlows: string[] = [
 		"elasticmapreduce:DescribeJobFlows",
 	];
 	/** IAM actions required for the DescribeNotebookExecution API call. */
-	static readonly DESCRIBE_NOTEBOOK_EXECUTION: string[] = [
+	static readonly DescribeNotebookExecution: string[] = [
 		"elasticmapreduce:DescribeNotebookExecution",
 	];
 	/** IAM actions required for the DescribePersistentAppUI API call. */
-	static readonly DESCRIBE_PERSISTENT_APP_UI: string[] = [
+	static readonly DescribePersistentAppUI: string[] = [
 		"elasticmapreduce:DescribePersistentAppUI",
 	];
 	/** IAM actions required for the DescribeReleaseLabel API call. */
-	static readonly DESCRIBE_RELEASE_LABEL: string[] = [
+	static readonly DescribeReleaseLabel: string[] = [
 		"elasticmapreduce:DescribeReleaseLabel",
 	];
 	/** IAM actions required for the DescribeSecurityConfiguration API call. */
-	static readonly DESCRIBE_SECURITY_CONFIGURATION: string[] = [
+	static readonly DescribeSecurityConfiguration: string[] = [
 		"elasticmapreduce:DescribeSecurityConfiguration",
 	];
 	/** IAM actions required for the DescribeStep API call. */
-	static readonly DESCRIBE_STEP: string[] = ["elasticmapreduce:DescribeStep"];
+	static readonly DescribeStep: string[] = ["elasticmapreduce:DescribeStep"];
 	/** IAM actions required for the DescribeStudio API call. */
-	static readonly DESCRIBE_STUDIO: string[] = [
+	static readonly DescribeStudio: string[] = [
 		"elasticmapreduce:DescribeStudio",
 	];
 	/** IAM actions required for the GetAutoTerminationPolicy API call. */
-	static readonly GET_AUTO_TERMINATION_POLICY: string[] = [
+	static readonly opGetAutoTerminationPolicy: string[] = [
 		"elasticmapreduce:GetAutoTerminationPolicy",
 	];
 	/** IAM actions required for the GetBlockPublicAccessConfiguration API call. */
-	static readonly GET_BLOCK_PUBLIC_ACCESS_CONFIGURATION: string[] = [
+	static readonly opGetBlockPublicAccessConfiguration: string[] = [
 		"elasticmapreduce:GetBlockPublicAccessConfiguration",
 	];
 	/** IAM actions required for the GetClusterSessionCredentials API call. */
-	static readonly GET_CLUSTER_SESSION_CREDENTIALS: string[] = [
+	static readonly opGetClusterSessionCredentials: string[] = [
 		"elasticmapreduce:GetClusterSessionCredentials",
 	];
 	/** IAM actions required for the GetManagedScalingPolicy API call. */
-	static readonly GET_MANAGED_SCALING_POLICY: string[] = [
+	static readonly opGetManagedScalingPolicy: string[] = [
 		"elasticmapreduce:GetManagedScalingPolicy",
 	];
 	/** IAM actions required for the GetOnClusterAppUIPresignedURL API call. */
-	static readonly GET_ON_CLUSTER_APP_UI_PRESIGNED_URL: string[] = [
+	static readonly opGetOnClusterAppUIPresignedURL: string[] = [
 		"elasticmapreduce:GetOnClusterAppUIPresignedURL",
 	];
 	/** IAM actions required for the GetPersistentAppUIPresignedURL API call. */
-	static readonly GET_PERSISTENT_APP_UI_PRESIGNED_URL: string[] = [
+	static readonly opGetPersistentAppUIPresignedURL: string[] = [
 		"elasticmapreduce:GetPersistentAppUIPresignedURL",
 	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["elasticmapreduce:GetSession"];
+	static readonly opGetSession: string[] = ["elasticmapreduce:GetSession"];
 	/** IAM actions required for the GetSessionEndpoint API call. */
-	static readonly GET_SESSION_ENDPOINT: string[] = [
+	static readonly opGetSessionEndpoint: string[] = [
 		"elasticmapreduce:GetSessionEndpoint",
 	];
 	/** IAM actions required for the GetStudioSessionMapping API call. */
-	static readonly GET_STUDIO_SESSION_MAPPING: string[] = [
+	static readonly opGetStudioSessionMapping: string[] = [
 		"elasticmapreduce:GetStudioSessionMapping",
 	];
 	/** IAM actions required for the ListBootstrapActions API call. */
-	static readonly LIST_BOOTSTRAP_ACTIONS: string[] = [
+	static readonly ListBootstrapActions: string[] = [
 		"elasticmapreduce:ListBootstrapActions",
 	];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["elasticmapreduce:ListClusters"];
+	static readonly ListClusters: string[] = ["elasticmapreduce:ListClusters"];
 	/** IAM actions required for the ListInstanceFleets API call. */
-	static readonly LIST_INSTANCE_FLEETS: string[] = [
+	static readonly ListInstanceFleets: string[] = [
 		"elasticmapreduce:ListInstanceFleets",
 	];
 	/** IAM actions required for the ListInstanceGroups API call. */
-	static readonly LIST_INSTANCE_GROUPS: string[] = [
+	static readonly ListInstanceGroups: string[] = [
 		"elasticmapreduce:ListInstanceGroups",
 	];
 	/** IAM actions required for the ListInstances API call. */
-	static readonly LIST_INSTANCES: string[] = ["elasticmapreduce:ListInstances"];
+	static readonly ListInstances: string[] = ["elasticmapreduce:ListInstances"];
 	/** IAM actions required for the ListNotebookExecutions API call. */
-	static readonly LIST_NOTEBOOK_EXECUTIONS: string[] = [
+	static readonly ListNotebookExecutions: string[] = [
 		"elasticmapreduce:ListNotebookExecutions",
 	];
 	/** IAM actions required for the ListReleaseLabels API call. */
-	static readonly LIST_RELEASE_LABELS: string[] = [
+	static readonly ListReleaseLabels: string[] = [
 		"elasticmapreduce:ListReleaseLabels",
 	];
 	/** IAM actions required for the ListSecurityConfigurations API call. */
-	static readonly LIST_SECURITY_CONFIGURATIONS: string[] = [
+	static readonly ListSecurityConfigurations: string[] = [
 		"elasticmapreduce:ListSecurityConfigurations",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["elasticmapreduce:ListSessions"];
+	static readonly ListSessions: string[] = ["elasticmapreduce:ListSessions"];
 	/** IAM actions required for the ListSteps API call. */
-	static readonly LIST_STEPS: string[] = ["elasticmapreduce:ListSteps"];
+	static readonly ListSteps: string[] = ["elasticmapreduce:ListSteps"];
 	/** IAM actions required for the ListStudioSessionMappings API call. */
-	static readonly LIST_STUDIO_SESSION_MAPPINGS: string[] = [
+	static readonly ListStudioSessionMappings: string[] = [
 		"elasticmapreduce:ListStudioSessionMappings",
 	];
 	/** IAM actions required for the ListStudios API call. */
-	static readonly LIST_STUDIOS: string[] = ["elasticmapreduce:ListStudios"];
+	static readonly ListStudios: string[] = ["elasticmapreduce:ListStudios"];
 	/** IAM actions required for the ListSupportedInstanceTypes API call. */
-	static readonly LIST_SUPPORTED_INSTANCE_TYPES: string[] = [
+	static readonly ListSupportedInstanceTypes: string[] = [
 		"elasticmapreduce:ListSupportedInstanceTypes",
 	];
 	/** IAM actions required for the ModifyCluster API call. */
-	static readonly MODIFY_CLUSTER: string[] = ["elasticmapreduce:ModifyCluster"];
+	static readonly ModifyCluster: string[] = ["elasticmapreduce:ModifyCluster"];
 	/** IAM actions required for the ModifyInstanceFleet API call. */
-	static readonly MODIFY_INSTANCE_FLEET: string[] = [
+	static readonly ModifyInstanceFleet: string[] = [
 		"elasticmapreduce:ModifyInstanceFleet",
 	];
 	/** IAM actions required for the ModifyInstanceGroups API call. */
-	static readonly MODIFY_INSTANCE_GROUPS: string[] = [
+	static readonly ModifyInstanceGroups: string[] = [
 		"elasticmapreduce:ModifyInstanceGroups",
 	];
 	/** IAM actions required for the PutAutoScalingPolicy API call. */
-	static readonly PUT_AUTO_SCALING_POLICY: string[] = [
+	static readonly PutAutoScalingPolicy: string[] = [
 		"elasticmapreduce:PutAutoScalingPolicy",
 	];
 	/** IAM actions required for the PutAutoTerminationPolicy API call. */
-	static readonly PUT_AUTO_TERMINATION_POLICY: string[] = [
+	static readonly PutAutoTerminationPolicy: string[] = [
 		"elasticmapreduce:PutAutoTerminationPolicy",
 	];
 	/** IAM actions required for the PutBlockPublicAccessConfiguration API call. */
-	static readonly PUT_BLOCK_PUBLIC_ACCESS_CONFIGURATION: string[] = [
+	static readonly PutBlockPublicAccessConfiguration: string[] = [
 		"elasticmapreduce:PutBlockPublicAccessConfiguration",
 	];
 	/** IAM actions required for the PutManagedScalingPolicy API call. */
-	static readonly PUT_MANAGED_SCALING_POLICY: string[] = [
+	static readonly PutManagedScalingPolicy: string[] = [
 		"elasticmapreduce:PutManagedScalingPolicy",
 	];
 	/** IAM actions required for the RemoveAutoScalingPolicy API call. */
-	static readonly REMOVE_AUTO_SCALING_POLICY: string[] = [
+	static readonly RemoveAutoScalingPolicy: string[] = [
 		"elasticmapreduce:RemoveAutoScalingPolicy",
 	];
 	/** IAM actions required for the RemoveAutoTerminationPolicy API call. */
-	static readonly REMOVE_AUTO_TERMINATION_POLICY: string[] = [
+	static readonly RemoveAutoTerminationPolicy: string[] = [
 		"elasticmapreduce:RemoveAutoTerminationPolicy",
 	];
 	/** IAM actions required for the RemoveManagedScalingPolicy API call. */
-	static readonly REMOVE_MANAGED_SCALING_POLICY: string[] = [
+	static readonly RemoveManagedScalingPolicy: string[] = [
 		"elasticmapreduce:RemoveManagedScalingPolicy",
 	];
 	/** IAM actions required for the RemoveTags API call. */
-	static readonly REMOVE_TAGS: string[] = ["elasticmapreduce:RemoveTags"];
+	static readonly RemoveTags: string[] = ["elasticmapreduce:RemoveTags"];
 	/** IAM actions required for the RunJobFlow API call. */
-	static readonly RUN_JOB_FLOW: string[] = [
+	static readonly RunJobFlow: string[] = [
 		"elasticmapreduce:AddTags",
 		"iam:PassRole",
 		"elasticmapreduce:RunJobFlow",
 	];
 	/** IAM actions required for the SetKeepJobFlowAliveWhenNoSteps API call. */
-	static readonly SET_KEEP_JOB_FLOW_ALIVE_WHEN_NO_STEPS: string[] = [
+	static readonly opSetKeepJobFlowAliveWhenNoSteps: string[] = [
 		"elasticmapreduce:SetKeepJobFlowAliveWhenNoSteps",
 	];
 	/** IAM actions required for the SetTerminationProtection API call. */
-	static readonly SET_TERMINATION_PROTECTION: string[] = [
+	static readonly opSetTerminationProtection: string[] = [
 		"elasticmapreduce:SetTerminationProtection",
 	];
 	/** IAM actions required for the SetUnhealthyNodeReplacement API call. */
-	static readonly SET_UNHEALTHY_NODE_REPLACEMENT: string[] = [
+	static readonly opSetUnhealthyNodeReplacement: string[] = [
 		"elasticmapreduce:SetUnhealthyNodeReplacement",
 	];
 	/** IAM actions required for the SetVisibleToAllUsers API call. */
-	static readonly SET_VISIBLE_TO_ALL_USERS: string[] = [
+	static readonly opSetVisibleToAllUsers: string[] = [
 		"elasticmapreduce:SetVisibleToAllUsers",
 	];
 	/** IAM actions required for the StartNotebookExecution API call. */
-	static readonly START_NOTEBOOK_EXECUTION: string[] = [
+	static readonly StartNotebookExecution: string[] = [
 		"elasticmapreduce:AddTags",
 		"iam:PassRole",
 		"elasticmapreduce:StartNotebookExecution",
 	];
 	/** IAM actions required for the StartSession API call. */
-	static readonly START_SESSION: string[] = [
+	static readonly StartSession: string[] = [
 		"elasticmapreduce:AddTags",
 		"iam:PassRole",
 		"elasticmapreduce:StartSession",
 	];
 	/** IAM actions required for the StopNotebookExecution API call. */
-	static readonly STOP_NOTEBOOK_EXECUTION: string[] = [
+	static readonly StopNotebookExecution: string[] = [
 		"elasticmapreduce:StopNotebookExecution",
 	];
 	/** IAM actions required for the TerminateJobFlows API call. */
-	static readonly TERMINATE_JOB_FLOWS: string[] = [
+	static readonly TerminateJobFlows: string[] = [
 		"elasticmapreduce:TerminateJobFlows",
 	];
 	/** IAM actions required for the TerminateSession API call. */
-	static readonly TERMINATE_SESSION: string[] = [
+	static readonly TerminateSession: string[] = [
 		"elasticmapreduce:TerminateSession",
 	];
 	/** IAM actions required for the UpdateStudio API call. */
-	static readonly UPDATE_STUDIO: string[] = [
+	static readonly UpdateStudio: string[] = [
 		"iam:PassRole",
 		"elasticmapreduce:UpdateStudio",
 	];
 	/** IAM actions required for the UpdateStudioSessionMapping API call. */
-	static readonly UPDATE_STUDIO_SESSION_MAPPING: string[] = [
+	static readonly UpdateStudioSessionMapping: string[] = [
 		"elasticmapreduce:UpdateStudioSessionMapping",
 	];
 }
@@ -844,50 +913,50 @@ export class ElasticmapreduceOperations {
  */
 export class ElasticmapreduceConditions {
 	/** Condition keys applicable to the AddJobFlowSteps action. */
-	static readonly ADD_JOB_FLOW_STEPS_CONDITION_KEYS: string[] = [
+	static readonly AddJobFlowStepsConditionKeys: string[] = [
 		"elasticmapreduce:ExecutionRoleArn",
 	];
 	/** Condition keys applicable to the AddTags action. */
-	static readonly ADD_TAGS_CONDITION_KEYS: string[] = [
+	static readonly AddTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateEditor action. */
-	static readonly CREATE_EDITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateEditorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateStudio action. */
-	static readonly CREATE_STUDIO_CONDITION_KEYS: string[] = [
+	static readonly CreateStudioConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetClusterSessionCredentials action. */
-	static readonly GET_CLUSTER_SESSION_CREDENTIALS_CONDITION_KEYS: string[] = [
+	static readonly actionGetClusterSessionCredentialsConditionKeys: string[] = [
 		"elasticmapreduce:ExecutionRoleArn",
 	];
 	/** Condition keys applicable to the GetPersistentAppUIPresignedURL action. */
-	static readonly GET_PERSISTENT_APP_UI_PRESIGNED_URL_CONDITION_KEYS: string[] =
+	static readonly actionGetPersistentAppUIPresignedURLConditionKeys: string[] =
 		["elasticmapreduce:ExecutionRoleArn"];
 	/** Condition keys applicable to the RemoveTags action. */
-	static readonly REMOVE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly RemoveTagsConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the RunJobFlow action. */
-	static readonly RUN_JOB_FLOW_CONDITION_KEYS: string[] = [
+	static readonly RunJobFlowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartNotebookExecution action. */
-	static readonly START_NOTEBOOK_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly StartNotebookExecutionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartSession action. */
-	static readonly START_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticmapreduce:ExecutionRoleArn",
@@ -895,11 +964,11 @@ export class ElasticmapreduceConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: elasticmapreduce:ExecutionRoleArn (ARN) */
 	static readonly EXECUTION_ROLE_ARN = "elasticmapreduce:ExecutionRoleArn";
 	/** Condition key: elasticmapreduce:RequestTag/${TagKey} (String) */
@@ -935,21 +1004,5 @@ export class ElasticmapreduceConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { ArnEquals: { "elasticmapreduce:ExecutionRoleArn": value } };
-	}
-
-	/**
-	 * Generates a condition block for `elasticmapreduce:RequestTag/${TagKey}`.
-	 */
-	static requestTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "elasticmapreduce:RequestTag/${TagKey}": value } };
-	}
-
-	/**
-	 * Generates a condition block for `elasticmapreduce:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return {
-			StringEquals: { "elasticmapreduce:ResourceTag/${TagKey}": value },
-		};
 	}
 }

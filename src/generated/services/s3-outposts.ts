@@ -13,190 +13,319 @@ export class S3OutpostsActions {
 	static readonly SERVICE_PREFIX = "s3-outposts";
 
 	/** [Write] s3-outposts:AbortMultipartUpload */
-	static readonly ABORT_MULTIPART_UPLOAD = "s3-outposts:AbortMultipartUpload";
+	static readonly AbortMultipartUpload = "s3-outposts:AbortMultipartUpload";
 	/** [Write] s3-outposts:CreateAccessPoint */
-	static readonly CREATE_ACCESS_POINT = "s3-outposts:CreateAccessPoint";
+	static readonly CreateAccessPoint = "s3-outposts:CreateAccessPoint";
 	/** [Write] s3-outposts:CreateBucket */
-	static readonly CREATE_BUCKET = "s3-outposts:CreateBucket";
+	static readonly CreateBucket = "s3-outposts:CreateBucket";
 	/** [Write] s3-outposts:CreateEndpoint */
-	static readonly CREATE_ENDPOINT = "s3-outposts:CreateEndpoint";
+	static readonly CreateEndpoint = "s3-outposts:CreateEndpoint";
 	/** [Write] s3-outposts:DeleteAccessPoint */
-	static readonly DELETE_ACCESS_POINT = "s3-outposts:DeleteAccessPoint";
+	static readonly DeleteAccessPoint = "s3-outposts:DeleteAccessPoint";
 	/** [PermissionManagement] s3-outposts:DeleteAccessPointPolicy */
-	static readonly DELETE_ACCESS_POINT_POLICY =
+	static readonly DeleteAccessPointPolicy =
 		"s3-outposts:DeleteAccessPointPolicy";
 	/** [Write] s3-outposts:DeleteBucket */
-	static readonly DELETE_BUCKET = "s3-outposts:DeleteBucket";
+	static readonly DeleteBucket = "s3-outposts:DeleteBucket";
 	/** [PermissionManagement] s3-outposts:DeleteBucketPolicy */
-	static readonly DELETE_BUCKET_POLICY = "s3-outposts:DeleteBucketPolicy";
+	static readonly DeleteBucketPolicy = "s3-outposts:DeleteBucketPolicy";
 	/** [Write] s3-outposts:DeleteEndpoint */
-	static readonly DELETE_ENDPOINT = "s3-outposts:DeleteEndpoint";
+	static readonly DeleteEndpoint = "s3-outposts:DeleteEndpoint";
 	/** [Write] s3-outposts:DeleteObject */
-	static readonly DELETE_OBJECT = "s3-outposts:DeleteObject";
+	static readonly DeleteObject = "s3-outposts:DeleteObject";
 	/** [Tagging] s3-outposts:DeleteObjectTagging */
-	static readonly DELETE_OBJECT_TAGGING = "s3-outposts:DeleteObjectTagging";
+	static readonly DeleteObjectTagging = "s3-outposts:DeleteObjectTagging";
 	/** [Write] s3-outposts:DeleteObjectVersion */
-	static readonly DELETE_OBJECT_VERSION = "s3-outposts:DeleteObjectVersion";
+	static readonly DeleteObjectVersion = "s3-outposts:DeleteObjectVersion";
 	/** [Tagging] s3-outposts:DeleteObjectVersionTagging */
-	static readonly DELETE_OBJECT_VERSION_TAGGING =
+	static readonly DeleteObjectVersionTagging =
 		"s3-outposts:DeleteObjectVersionTagging";
 	/** [Read] s3-outposts:GetAccessPoint */
-	static readonly GET_ACCESS_POINT = "s3-outposts:GetAccessPoint";
+	static readonly actionGetAccessPoint = "s3-outposts:GetAccessPoint";
 	/** [Read] s3-outposts:GetAccessPointPolicy */
-	static readonly GET_ACCESS_POINT_POLICY = "s3-outposts:GetAccessPointPolicy";
+	static readonly actionGetAccessPointPolicy =
+		"s3-outposts:GetAccessPointPolicy";
 	/** [Read] s3-outposts:GetBucket */
-	static readonly GET_BUCKET = "s3-outposts:GetBucket";
+	static readonly actionGetBucket = "s3-outposts:GetBucket";
 	/** [Read] s3-outposts:GetBucketPolicy */
-	static readonly GET_BUCKET_POLICY = "s3-outposts:GetBucketPolicy";
+	static readonly actionGetBucketPolicy = "s3-outposts:GetBucketPolicy";
 	/** [Read] s3-outposts:GetBucketTagging */
-	static readonly GET_BUCKET_TAGGING = "s3-outposts:GetBucketTagging";
+	static readonly actionGetBucketTagging = "s3-outposts:GetBucketTagging";
 	/** [Read] s3-outposts:GetBucketVersioning */
-	static readonly GET_BUCKET_VERSIONING = "s3-outposts:GetBucketVersioning";
+	static readonly actionGetBucketVersioning = "s3-outposts:GetBucketVersioning";
 	/** [Read] s3-outposts:GetLifecycleConfiguration */
-	static readonly GET_LIFECYCLE_CONFIGURATION =
+	static readonly actionGetLifecycleConfiguration =
 		"s3-outposts:GetLifecycleConfiguration";
 	/** [Read] s3-outposts:GetObject */
-	static readonly GET_OBJECT = "s3-outposts:GetObject";
+	static readonly actionGetObject = "s3-outposts:GetObject";
 	/** [Read] s3-outposts:GetObjectTagging */
-	static readonly GET_OBJECT_TAGGING = "s3-outposts:GetObjectTagging";
+	static readonly actionGetObjectTagging = "s3-outposts:GetObjectTagging";
 	/** [Read] s3-outposts:GetObjectVersion */
-	static readonly GET_OBJECT_VERSION = "s3-outposts:GetObjectVersion";
+	static readonly actionGetObjectVersion = "s3-outposts:GetObjectVersion";
 	/** [Read] s3-outposts:GetObjectVersionForReplication */
-	static readonly GET_OBJECT_VERSION_FOR_REPLICATION =
+	static readonly actionGetObjectVersionForReplication =
 		"s3-outposts:GetObjectVersionForReplication";
 	/** [Read] s3-outposts:GetObjectVersionTagging */
-	static readonly GET_OBJECT_VERSION_TAGGING =
+	static readonly actionGetObjectVersionTagging =
 		"s3-outposts:GetObjectVersionTagging";
 	/** [Read] s3-outposts:GetReplicationConfiguration */
-	static readonly GET_REPLICATION_CONFIGURATION =
+	static readonly actionGetReplicationConfiguration =
 		"s3-outposts:GetReplicationConfiguration";
 	/** [List] s3-outposts:ListAccessPoints */
-	static readonly LIST_ACCESS_POINTS = "s3-outposts:ListAccessPoints";
+	static readonly ListAccessPoints = "s3-outposts:ListAccessPoints";
 	/** [List] s3-outposts:ListBucket */
-	static readonly LIST_BUCKET = "s3-outposts:ListBucket";
+	static readonly ListBucket = "s3-outposts:ListBucket";
 	/** [List] s3-outposts:ListBucketMultipartUploads */
-	static readonly LIST_BUCKET_MULTIPART_UPLOADS =
+	static readonly ListBucketMultipartUploads =
 		"s3-outposts:ListBucketMultipartUploads";
 	/** [List] s3-outposts:ListBucketVersions */
-	static readonly LIST_BUCKET_VERSIONS = "s3-outposts:ListBucketVersions";
+	static readonly ListBucketVersions = "s3-outposts:ListBucketVersions";
 	/** [List] s3-outposts:ListEndpoints */
-	static readonly LIST_ENDPOINTS = "s3-outposts:ListEndpoints";
+	static readonly ListEndpoints = "s3-outposts:ListEndpoints";
 	/** [List] s3-outposts:ListMultipartUploadParts */
-	static readonly LIST_MULTIPART_UPLOAD_PARTS =
+	static readonly ListMultipartUploadParts =
 		"s3-outposts:ListMultipartUploadParts";
 	/** [List] s3-outposts:ListOutpostsWithS3 */
-	static readonly LIST_OUTPOSTS_WITH_S3 = "s3-outposts:ListOutpostsWithS3";
+	static readonly ListOutpostsWithS3 = "s3-outposts:ListOutpostsWithS3";
 	/** [List] s3-outposts:ListRegionalBuckets */
-	static readonly LIST_REGIONAL_BUCKETS = "s3-outposts:ListRegionalBuckets";
+	static readonly ListRegionalBuckets = "s3-outposts:ListRegionalBuckets";
 	/** [List] s3-outposts:ListSharedEndpoints */
-	static readonly LIST_SHARED_ENDPOINTS = "s3-outposts:ListSharedEndpoints";
+	static readonly ListSharedEndpoints = "s3-outposts:ListSharedEndpoints";
 	/** [PermissionManagement] s3-outposts:PutAccessPointPolicy */
-	static readonly PUT_ACCESS_POINT_POLICY = "s3-outposts:PutAccessPointPolicy";
+	static readonly PutAccessPointPolicy = "s3-outposts:PutAccessPointPolicy";
 	/** [PermissionManagement] s3-outposts:PutBucketPolicy */
-	static readonly PUT_BUCKET_POLICY = "s3-outposts:PutBucketPolicy";
+	static readonly PutBucketPolicy = "s3-outposts:PutBucketPolicy";
 	/** [Tagging] s3-outposts:PutBucketTagging */
-	static readonly PUT_BUCKET_TAGGING = "s3-outposts:PutBucketTagging";
+	static readonly PutBucketTagging = "s3-outposts:PutBucketTagging";
 	/** [Write] s3-outposts:PutBucketVersioning */
-	static readonly PUT_BUCKET_VERSIONING = "s3-outposts:PutBucketVersioning";
+	static readonly PutBucketVersioning = "s3-outposts:PutBucketVersioning";
 	/** [Write] s3-outposts:PutLifecycleConfiguration */
-	static readonly PUT_LIFECYCLE_CONFIGURATION =
+	static readonly PutLifecycleConfiguration =
 		"s3-outposts:PutLifecycleConfiguration";
 	/** [Write] s3-outposts:PutObject */
-	static readonly PUT_OBJECT = "s3-outposts:PutObject";
+	static readonly PutObject = "s3-outposts:PutObject";
 	/** [PermissionManagement] s3-outposts:PutObjectAcl */
-	static readonly PUT_OBJECT_ACL = "s3-outposts:PutObjectAcl";
+	static readonly PutObjectAcl = "s3-outposts:PutObjectAcl";
 	/** [Tagging] s3-outposts:PutObjectTagging */
-	static readonly PUT_OBJECT_TAGGING = "s3-outposts:PutObjectTagging";
+	static readonly PutObjectTagging = "s3-outposts:PutObjectTagging";
 	/** [Tagging] s3-outposts:PutObjectVersionTagging */
-	static readonly PUT_OBJECT_VERSION_TAGGING =
+	static readonly PutObjectVersionTagging =
 		"s3-outposts:PutObjectVersionTagging";
 	/** [Write] s3-outposts:PutReplicationConfiguration */
-	static readonly PUT_REPLICATION_CONFIGURATION =
+	static readonly PutReplicationConfiguration =
 		"s3-outposts:PutReplicationConfiguration";
 	/** [Write] s3-outposts:ReplicateDelete */
-	static readonly REPLICATE_DELETE = "s3-outposts:ReplicateDelete";
+	static readonly ReplicateDelete = "s3-outposts:ReplicateDelete";
 	/** [Write] s3-outposts:ReplicateObject */
-	static readonly REPLICATE_OBJECT = "s3-outposts:ReplicateObject";
+	static readonly ReplicateObject = "s3-outposts:ReplicateObject";
 	/** [Tagging] s3-outposts:ReplicateTags */
-	static readonly REPLICATE_TAGS = "s3-outposts:ReplicateTags";
+	static readonly ReplicateTags = "s3-outposts:ReplicateTags";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		S3OutpostsActions.GET_ACCESS_POINT,
-		S3OutpostsActions.GET_ACCESS_POINT_POLICY,
-		S3OutpostsActions.GET_BUCKET,
-		S3OutpostsActions.GET_BUCKET_POLICY,
-		S3OutpostsActions.GET_BUCKET_TAGGING,
-		S3OutpostsActions.GET_BUCKET_VERSIONING,
-		S3OutpostsActions.GET_LIFECYCLE_CONFIGURATION,
-		S3OutpostsActions.GET_OBJECT,
-		S3OutpostsActions.GET_OBJECT_TAGGING,
-		S3OutpostsActions.GET_OBJECT_VERSION,
-		S3OutpostsActions.GET_OBJECT_VERSION_FOR_REPLICATION,
-		S3OutpostsActions.GET_OBJECT_VERSION_TAGGING,
-		S3OutpostsActions.GET_REPLICATION_CONFIGURATION,
+	static readonly AllReadActions: string[] = [
+		S3OutpostsActions.actionGetAccessPoint,
+		S3OutpostsActions.actionGetAccessPointPolicy,
+		S3OutpostsActions.actionGetBucket,
+		S3OutpostsActions.actionGetBucketPolicy,
+		S3OutpostsActions.actionGetBucketTagging,
+		S3OutpostsActions.actionGetBucketVersioning,
+		S3OutpostsActions.actionGetLifecycleConfiguration,
+		S3OutpostsActions.actionGetObject,
+		S3OutpostsActions.actionGetObjectTagging,
+		S3OutpostsActions.actionGetObjectVersion,
+		S3OutpostsActions.actionGetObjectVersionForReplication,
+		S3OutpostsActions.actionGetObjectVersionTagging,
+		S3OutpostsActions.actionGetReplicationConfiguration,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		S3OutpostsActions.ABORT_MULTIPART_UPLOAD,
-		S3OutpostsActions.CREATE_ACCESS_POINT,
-		S3OutpostsActions.CREATE_BUCKET,
-		S3OutpostsActions.CREATE_ENDPOINT,
-		S3OutpostsActions.DELETE_ACCESS_POINT,
-		S3OutpostsActions.DELETE_BUCKET,
-		S3OutpostsActions.DELETE_ENDPOINT,
-		S3OutpostsActions.DELETE_OBJECT,
-		S3OutpostsActions.DELETE_OBJECT_VERSION,
-		S3OutpostsActions.PUT_BUCKET_VERSIONING,
-		S3OutpostsActions.PUT_LIFECYCLE_CONFIGURATION,
-		S3OutpostsActions.PUT_OBJECT,
-		S3OutpostsActions.PUT_REPLICATION_CONFIGURATION,
-		S3OutpostsActions.REPLICATE_DELETE,
-		S3OutpostsActions.REPLICATE_OBJECT,
+	static readonly AllWriteActions: string[] = [
+		S3OutpostsActions.AbortMultipartUpload,
+		S3OutpostsActions.CreateAccessPoint,
+		S3OutpostsActions.CreateBucket,
+		S3OutpostsActions.CreateEndpoint,
+		S3OutpostsActions.DeleteAccessPoint,
+		S3OutpostsActions.DeleteBucket,
+		S3OutpostsActions.DeleteEndpoint,
+		S3OutpostsActions.DeleteObject,
+		S3OutpostsActions.DeleteObjectVersion,
+		S3OutpostsActions.PutBucketVersioning,
+		S3OutpostsActions.PutLifecycleConfiguration,
+		S3OutpostsActions.PutObject,
+		S3OutpostsActions.PutReplicationConfiguration,
+		S3OutpostsActions.ReplicateDelete,
+		S3OutpostsActions.ReplicateObject,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		S3OutpostsActions.LIST_ACCESS_POINTS,
-		S3OutpostsActions.LIST_BUCKET,
-		S3OutpostsActions.LIST_BUCKET_MULTIPART_UPLOADS,
-		S3OutpostsActions.LIST_BUCKET_VERSIONS,
-		S3OutpostsActions.LIST_ENDPOINTS,
-		S3OutpostsActions.LIST_MULTIPART_UPLOAD_PARTS,
-		S3OutpostsActions.LIST_OUTPOSTS_WITH_S3,
-		S3OutpostsActions.LIST_REGIONAL_BUCKETS,
-		S3OutpostsActions.LIST_SHARED_ENDPOINTS,
+	static readonly AllListActions: string[] = [
+		S3OutpostsActions.ListAccessPoints,
+		S3OutpostsActions.ListBucket,
+		S3OutpostsActions.ListBucketMultipartUploads,
+		S3OutpostsActions.ListBucketVersions,
+		S3OutpostsActions.ListEndpoints,
+		S3OutpostsActions.ListMultipartUploadParts,
+		S3OutpostsActions.ListOutpostsWithS3,
+		S3OutpostsActions.ListRegionalBuckets,
+		S3OutpostsActions.ListSharedEndpoints,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		S3OutpostsActions.DELETE_ACCESS_POINT_POLICY,
-		S3OutpostsActions.DELETE_BUCKET_POLICY,
-		S3OutpostsActions.PUT_ACCESS_POINT_POLICY,
-		S3OutpostsActions.PUT_BUCKET_POLICY,
-		S3OutpostsActions.PUT_OBJECT_ACL,
+	static readonly AllPermissionManagementActions: string[] = [
+		S3OutpostsActions.DeleteAccessPointPolicy,
+		S3OutpostsActions.DeleteBucketPolicy,
+		S3OutpostsActions.PutAccessPointPolicy,
+		S3OutpostsActions.PutBucketPolicy,
+		S3OutpostsActions.PutObjectAcl,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		S3OutpostsActions.DELETE_OBJECT_TAGGING,
-		S3OutpostsActions.DELETE_OBJECT_VERSION_TAGGING,
-		S3OutpostsActions.PUT_BUCKET_TAGGING,
-		S3OutpostsActions.PUT_OBJECT_TAGGING,
-		S3OutpostsActions.PUT_OBJECT_VERSION_TAGGING,
-		S3OutpostsActions.REPLICATE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		S3OutpostsActions.DeleteObjectTagging,
+		S3OutpostsActions.DeleteObjectVersionTagging,
+		S3OutpostsActions.PutBucketTagging,
+		S3OutpostsActions.PutObjectTagging,
+		S3OutpostsActions.PutObjectVersionTagging,
+		S3OutpostsActions.ReplicateTags,
 	];
 }
 
-const AccesspointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost/(?<outpostId>[^:/?]+)/accesspoint/(?<accessPointName>[^:/?]+)$",
-);
-const BucketArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost/(?<outpostId>[^:/?]+)/bucket/(?<bucketName>[^:/?]+)$",
-);
-const EndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost/(?<outpostId>[^:/?]+)/endpoint/(?<endpointId>[^:/?]+)$",
-);
-const ObjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost/(?<outpostId>[^:/?]+)/bucket/(?<bucketName>[^:/?]+)/object/(?<objectName>[^:/?]+)$",
-);
+/**
+ * Properties for building a accesspoint ARN.
+ */
+export interface S3OutpostsAccesspointArnProps {
+	/** The OutpostId component of the ARN. */
+	readonly outpostId: string;
+	/** The AccessPointName component of the ARN. */
+	readonly accessPointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accesspoint ARN.
+ */
+export interface S3OutpostsAccesspointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostId component. */
+	readonly outpostId: string;
+	/** The AccessPointName component. */
+	readonly accessPointName: string;
+}
+
+/**
+ * Properties for building a bucket ARN.
+ */
+export interface S3OutpostsBucketArnProps {
+	/** The OutpostId component of the ARN. */
+	readonly outpostId: string;
+	/** The BucketName component of the ARN. */
+	readonly bucketName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bucket ARN.
+ */
+export interface S3OutpostsBucketArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostId component. */
+	readonly outpostId: string;
+	/** The BucketName component. */
+	readonly bucketName: string;
+}
+
+/**
+ * Properties for building a endpoint ARN.
+ */
+export interface S3OutpostsEndpointArnProps {
+	/** The OutpostId component of the ARN. */
+	readonly outpostId: string;
+	/** The EndpointId component of the ARN. */
+	readonly endpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a endpoint ARN.
+ */
+export interface S3OutpostsEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostId component. */
+	readonly outpostId: string;
+	/** The EndpointId component. */
+	readonly endpointId: string;
+}
+
+/**
+ * Properties for building a object ARN.
+ */
+export interface S3OutpostsObjectArnProps {
+	/** The OutpostId component of the ARN. */
+	readonly outpostId: string;
+	/** The BucketName component of the ARN. */
+	readonly bucketName: string;
+	/** The ObjectName component of the ARN. */
+	readonly objectName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a object ARN.
+ */
+export interface S3OutpostsObjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostId component. */
+	readonly outpostId: string;
+	/** The BucketName component. */
+	readonly bucketName: string;
+	/** The ObjectName component. */
+	readonly objectName: string;
+}
+
+const AccesspointArnRegex =
+	/^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost\/(?<outpostId>[^:/?]+)\/accesspoint\/(?<accessPointName>[^:/?]+)$/;
+const BucketArnRegex =
+	/^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost\/(?<outpostId>[^:/?]+)\/bucket\/(?<bucketName>[^:/?]+)$/;
+const EndpointArnRegex =
+	/^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost\/(?<outpostId>[^:/?]+)\/endpoint\/(?<endpointId>[^:/?]+)$/;
+const ObjectArnRegex =
+	/^arn:(?<partition>[^:]+):s3-outposts:(?<region>[^:]*):(?<account>[^:]*):outpost\/(?<outpostId>[^:/?]+)\/bucket\/(?<bucketName>[^:/?]+)\/object\/(?<objectName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for s3-outposts resources.
@@ -205,18 +334,7 @@ export class S3OutpostsResources {
 	/**
 	 * Builds an ARN for the accesspoint resource.
 	 */
-	static accesspoint(props: {
-		/** The OutpostId component of the ARN. */
-		readonly outpostId: string;
-		/** The AccessPointName component of the ARN. */
-		readonly accessPointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accesspoint(props: S3OutpostsAccesspointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3-outposts:${props.region ?? "*"}:${props.account ?? "*"}:outpost/${props.outpostId}/accesspoint/${props.accessPointName}`;
 	}
 
@@ -231,13 +349,7 @@ export class S3OutpostsResources {
 	 * Parses a accesspoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccesspointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostId: string;
-		accessPointName: string;
-	} {
+	static parseAccesspointArn(arn: string): S3OutpostsAccesspointArnComponents {
 		const match = AccesspointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid accesspoint ARN: ${arn}`);
@@ -254,18 +366,7 @@ export class S3OutpostsResources {
 	/**
 	 * Builds an ARN for the bucket resource.
 	 */
-	static bucket(props: {
-		/** The OutpostId component of the ARN. */
-		readonly outpostId: string;
-		/** The BucketName component of the ARN. */
-		readonly bucketName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static bucket(props: S3OutpostsBucketArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3-outposts:${props.region ?? "*"}:${props.account ?? "*"}:outpost/${props.outpostId}/bucket/${props.bucketName}`;
 	}
 
@@ -280,13 +381,7 @@ export class S3OutpostsResources {
 	 * Parses a bucket ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBucketArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostId: string;
-		bucketName: string;
-	} {
+	static parseBucketArn(arn: string): S3OutpostsBucketArnComponents {
 		const match = BucketArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bucket ARN: ${arn}`);
@@ -303,18 +398,7 @@ export class S3OutpostsResources {
 	/**
 	 * Builds an ARN for the endpoint resource.
 	 */
-	static endpoint(props: {
-		/** The OutpostId component of the ARN. */
-		readonly outpostId: string;
-		/** The EndpointId component of the ARN. */
-		readonly endpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static endpoint(props: S3OutpostsEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3-outposts:${props.region ?? "*"}:${props.account ?? "*"}:outpost/${props.outpostId}/endpoint/${props.endpointId}`;
 	}
 
@@ -329,13 +413,7 @@ export class S3OutpostsResources {
 	 * Parses a endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostId: string;
-		endpointId: string;
-	} {
+	static parseEndpointArn(arn: string): S3OutpostsEndpointArnComponents {
 		const match = EndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid endpoint ARN: ${arn}`);
@@ -352,20 +430,7 @@ export class S3OutpostsResources {
 	/**
 	 * Builds an ARN for the object resource.
 	 */
-	static object(props: {
-		/** The OutpostId component of the ARN. */
-		readonly outpostId: string;
-		/** The BucketName component of the ARN. */
-		readonly bucketName: string;
-		/** The ObjectName component of the ARN. */
-		readonly objectName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static object(props: S3OutpostsObjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3-outposts:${props.region ?? "*"}:${props.account ?? "*"}:outpost/${props.outpostId}/bucket/${props.bucketName}/object/${props.objectName}`;
 	}
 
@@ -380,14 +445,7 @@ export class S3OutpostsResources {
 	 * Parses a object ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseObjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostId: string;
-		bucketName: string;
-		objectName: string;
-	} {
+	static parseObjectArn(arn: string): S3OutpostsObjectArnComponents {
 		const match = ObjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid object ARN: ${arn}`);
@@ -408,17 +466,17 @@ export class S3OutpostsResources {
  */
 export class S3OutpostsOperations {
 	/** IAM actions required for the CreateEndpoint API call. */
-	static readonly CREATE_ENDPOINT: string[] = ["s3-outposts:CreateEndpoint"];
+	static readonly CreateEndpoint: string[] = ["s3-outposts:CreateEndpoint"];
 	/** IAM actions required for the DeleteEndpoint API call. */
-	static readonly DELETE_ENDPOINT: string[] = ["s3-outposts:DeleteEndpoint"];
+	static readonly DeleteEndpoint: string[] = ["s3-outposts:DeleteEndpoint"];
 	/** IAM actions required for the ListEndpoints API call. */
-	static readonly LIST_ENDPOINTS: string[] = ["s3-outposts:ListEndpoints"];
+	static readonly ListEndpoints: string[] = ["s3-outposts:ListEndpoints"];
 	/** IAM actions required for the ListOutpostsWithS3 API call. */
-	static readonly LIST_OUTPOSTS_WITH_S3: string[] = [
+	static readonly ListOutpostsWithS3: string[] = [
 		"s3-outposts:ListOutpostsWithS3",
 	];
 	/** IAM actions required for the ListSharedEndpoints API call. */
-	static readonly LIST_SHARED_ENDPOINTS: string[] = [
+	static readonly ListSharedEndpoints: string[] = [
 		"s3-outposts:ListSharedEndpoints",
 	];
 }
@@ -428,7 +486,7 @@ export class S3OutpostsOperations {
  */
 export class S3OutpostsConditions {
 	/** Condition keys applicable to the AbortMultipartUpload action. */
-	static readonly ABORT_MULTIPART_UPLOAD_CONDITION_KEYS: string[] = [
+	static readonly AbortMultipartUploadConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -438,7 +496,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the CreateAccessPoint action. */
-	static readonly CREATE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPointConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -448,14 +506,14 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the CreateBucket action. */
-	static readonly CREATE_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly CreateBucketConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteAccessPoint action. */
-	static readonly DELETE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPointConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -465,7 +523,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteAccessPointPolicy action. */
-	static readonly DELETE_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPointPolicyConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -475,21 +533,21 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteBucket action. */
-	static readonly DELETE_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly DeleteBucketConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteBucketPolicy action. */
-	static readonly DELETE_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteBucketPolicyConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteObject action. */
-	static readonly DELETE_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -499,7 +557,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteObjectTagging action. */
-	static readonly DELETE_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -510,7 +568,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteObjectVersion action. */
-	static readonly DELETE_OBJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectVersionConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -521,7 +579,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the DeleteObjectVersionTagging action. */
-	static readonly DELETE_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectVersionTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -533,7 +591,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetAccessPoint action. */
-	static readonly GET_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPointConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -543,7 +601,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetAccessPointPolicy action. */
-	static readonly GET_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPointPolicyConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -553,42 +611,42 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetBucket action. */
-	static readonly GET_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly actionGetBucketConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetBucketPolicy action. */
-	static readonly GET_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetBucketPolicyConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetBucketTagging action. */
-	static readonly GET_BUCKET_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly actionGetBucketTaggingConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetBucketVersioning action. */
-	static readonly GET_BUCKET_VERSIONING_CONDITION_KEYS: string[] = [
+	static readonly actionGetBucketVersioningConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetLifecycleConfiguration action. */
-	static readonly GET_LIFECYCLE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetLifecycleConfigurationConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetObject action. */
-	static readonly GET_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -599,7 +657,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetObjectTagging action. */
-	static readonly GET_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -610,7 +668,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetObjectVersion action. */
-	static readonly GET_OBJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectVersionConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -622,7 +680,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetObjectVersionForReplication action. */
-	static readonly GET_OBJECT_VERSION_FOR_REPLICATION_CONDITION_KEYS: string[] =
+	static readonly actionGetObjectVersionForReplicationConditionKeys: string[] =
 		[
 			"s3-outposts:authType",
 			"s3-outposts:signatureAge",
@@ -630,7 +688,7 @@ export class S3OutpostsConditions {
 			"s3-outposts:x-amz-content-sha256",
 		];
 	/** Condition keys applicable to the GetObjectVersionTagging action. */
-	static readonly GET_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectVersionTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -642,21 +700,21 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the GetReplicationConfiguration action. */
-	static readonly GET_REPLICATION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetReplicationConfigurationConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListAccessPoints action. */
-	static readonly LIST_ACCESS_POINTS_CONDITION_KEYS: string[] = [
+	static readonly ListAccessPointsConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListBucket action. */
-	static readonly LIST_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly ListBucketConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -669,7 +727,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListBucketMultipartUploads action. */
-	static readonly LIST_BUCKET_MULTIPART_UPLOADS_CONDITION_KEYS: string[] = [
+	static readonly ListBucketMultipartUploadsConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -679,7 +737,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListBucketVersions action. */
-	static readonly LIST_BUCKET_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListBucketVersionsConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -692,7 +750,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListMultipartUploadParts action. */
-	static readonly LIST_MULTIPART_UPLOAD_PARTS_CONDITION_KEYS: string[] = [
+	static readonly ListMultipartUploadPartsConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -702,14 +760,14 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ListRegionalBuckets action. */
-	static readonly LIST_REGIONAL_BUCKETS_CONDITION_KEYS: string[] = [
+	static readonly ListRegionalBucketsConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutAccessPointPolicy action. */
-	static readonly PUT_ACCESS_POINT_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutAccessPointPolicyConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -719,35 +777,35 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutBucketPolicy action. */
-	static readonly PUT_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutBucketPolicyConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutBucketTagging action. */
-	static readonly PUT_BUCKET_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly PutBucketTaggingConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutBucketVersioning action. */
-	static readonly PUT_BUCKET_VERSIONING_CONDITION_KEYS: string[] = [
+	static readonly PutBucketVersioningConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutLifecycleConfiguration action. */
-	static readonly PUT_LIFECYCLE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutLifecycleConfigurationConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutObject action. */
-	static readonly PUT_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly PutObjectConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -764,7 +822,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-storage-class",
 	];
 	/** Condition keys applicable to the PutObjectAcl action. */
-	static readonly PUT_OBJECT_ACL_CONDITION_KEYS: string[] = [
+	static readonly PutObjectAclConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -777,7 +835,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-storage-class",
 	];
 	/** Condition keys applicable to the PutObjectTagging action. */
-	static readonly PUT_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly PutObjectTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -790,7 +848,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutObjectVersionTagging action. */
-	static readonly PUT_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly PutObjectVersionTaggingConditionKeys: string[] = [
 		"s3-outposts:AccessPointNetworkOrigin",
 		"s3-outposts:DataAccessPointAccount",
 		"s3-outposts:DataAccessPointArn",
@@ -804,21 +862,21 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the PutReplicationConfiguration action. */
-	static readonly PUT_REPLICATION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutReplicationConfigurationConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ReplicateDelete action. */
-	static readonly REPLICATE_DELETE_CONDITION_KEYS: string[] = [
+	static readonly ReplicateDeleteConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
 		"s3-outposts:x-amz-content-sha256",
 	];
 	/** Condition keys applicable to the ReplicateObject action. */
-	static readonly REPLICATE_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly ReplicateObjectConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",
@@ -826,7 +884,7 @@ export class S3OutpostsConditions {
 		"s3-outposts:x-amz-server-side-encryption",
 	];
 	/** Condition keys applicable to the ReplicateTags action. */
-	static readonly REPLICATE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly ReplicateTagsConditionKeys: string[] = [
 		"s3-outposts:authType",
 		"s3-outposts:signatureAge",
 		"s3-outposts:signatureversion",

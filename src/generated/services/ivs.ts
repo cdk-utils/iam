@@ -13,305 +13,625 @@ export class IvsActions {
 	static readonly SERVICE_PREFIX = "ivs";
 
 	/** [Read] ivs:BatchGetChannel */
-	static readonly BATCH_GET_CHANNEL = "ivs:BatchGetChannel";
+	static readonly BatchGetChannel = "ivs:BatchGetChannel";
 	/** [Read] ivs:BatchGetStreamKey */
-	static readonly BATCH_GET_STREAM_KEY = "ivs:BatchGetStreamKey";
+	static readonly BatchGetStreamKey = "ivs:BatchGetStreamKey";
 	/** [Write] ivs:BatchStartViewerSessionRevocation */
-	static readonly BATCH_START_VIEWER_SESSION_REVOCATION =
+	static readonly BatchStartViewerSessionRevocation =
 		"ivs:BatchStartViewerSessionRevocation";
 	/** [Write] ivs:CreateAdConfiguration */
-	static readonly CREATE_AD_CONFIGURATION = "ivs:CreateAdConfiguration";
+	static readonly CreateAdConfiguration = "ivs:CreateAdConfiguration";
 	/** [Write] ivs:CreateChannel */
-	static readonly CREATE_CHANNEL = "ivs:CreateChannel";
+	static readonly CreateChannel = "ivs:CreateChannel";
 	/** [Write] ivs:CreateEncoderConfiguration */
-	static readonly CREATE_ENCODER_CONFIGURATION =
-		"ivs:CreateEncoderConfiguration";
+	static readonly CreateEncoderConfiguration = "ivs:CreateEncoderConfiguration";
 	/** [Write] ivs:CreateIngestConfiguration */
-	static readonly CREATE_INGEST_CONFIGURATION = "ivs:CreateIngestConfiguration";
+	static readonly CreateIngestConfiguration = "ivs:CreateIngestConfiguration";
 	/** [Write] ivs:CreateParticipantToken */
-	static readonly CREATE_PARTICIPANT_TOKEN = "ivs:CreateParticipantToken";
+	static readonly CreateParticipantToken = "ivs:CreateParticipantToken";
 	/** [Write] ivs:CreatePlaybackRestrictionPolicy */
-	static readonly CREATE_PLAYBACK_RESTRICTION_POLICY =
+	static readonly CreatePlaybackRestrictionPolicy =
 		"ivs:CreatePlaybackRestrictionPolicy";
 	/** [Write] ivs:CreateRecordingConfiguration */
-	static readonly CREATE_RECORDING_CONFIGURATION =
+	static readonly CreateRecordingConfiguration =
 		"ivs:CreateRecordingConfiguration";
 	/** [Write] ivs:CreateStage */
-	static readonly CREATE_STAGE = "ivs:CreateStage";
+	static readonly CreateStage = "ivs:CreateStage";
 	/** [Write] ivs:CreateStorageConfiguration */
-	static readonly CREATE_STORAGE_CONFIGURATION =
-		"ivs:CreateStorageConfiguration";
+	static readonly CreateStorageConfiguration = "ivs:CreateStorageConfiguration";
 	/** [Write] ivs:CreateStreamKey */
-	static readonly CREATE_STREAM_KEY = "ivs:CreateStreamKey";
+	static readonly CreateStreamKey = "ivs:CreateStreamKey";
 	/** [Write] ivs:DeleteAdConfiguration */
-	static readonly DELETE_AD_CONFIGURATION = "ivs:DeleteAdConfiguration";
+	static readonly DeleteAdConfiguration = "ivs:DeleteAdConfiguration";
 	/** [Write] ivs:DeleteChannel */
-	static readonly DELETE_CHANNEL = "ivs:DeleteChannel";
+	static readonly DeleteChannel = "ivs:DeleteChannel";
 	/** [Write] ivs:DeleteEncoderConfiguration */
-	static readonly DELETE_ENCODER_CONFIGURATION =
-		"ivs:DeleteEncoderConfiguration";
+	static readonly DeleteEncoderConfiguration = "ivs:DeleteEncoderConfiguration";
 	/** [Write] ivs:DeleteIngestConfiguration */
-	static readonly DELETE_INGEST_CONFIGURATION = "ivs:DeleteIngestConfiguration";
+	static readonly DeleteIngestConfiguration = "ivs:DeleteIngestConfiguration";
 	/** [Write] ivs:DeletePlaybackKeyPair */
-	static readonly DELETE_PLAYBACK_KEY_PAIR = "ivs:DeletePlaybackKeyPair";
+	static readonly DeletePlaybackKeyPair = "ivs:DeletePlaybackKeyPair";
 	/** [Write] ivs:DeletePlaybackRestrictionPolicy */
-	static readonly DELETE_PLAYBACK_RESTRICTION_POLICY =
+	static readonly DeletePlaybackRestrictionPolicy =
 		"ivs:DeletePlaybackRestrictionPolicy";
 	/** [Write] ivs:DeletePublicKey */
-	static readonly DELETE_PUBLIC_KEY = "ivs:DeletePublicKey";
+	static readonly DeletePublicKey = "ivs:DeletePublicKey";
 	/** [Write] ivs:DeleteRecordingConfiguration */
-	static readonly DELETE_RECORDING_CONFIGURATION =
+	static readonly DeleteRecordingConfiguration =
 		"ivs:DeleteRecordingConfiguration";
 	/** [Write] ivs:DeleteStage */
-	static readonly DELETE_STAGE = "ivs:DeleteStage";
+	static readonly DeleteStage = "ivs:DeleteStage";
 	/** [Write] ivs:DeleteStorageConfiguration */
-	static readonly DELETE_STORAGE_CONFIGURATION =
-		"ivs:DeleteStorageConfiguration";
+	static readonly DeleteStorageConfiguration = "ivs:DeleteStorageConfiguration";
 	/** [Write] ivs:DeleteStreamKey */
-	static readonly DELETE_STREAM_KEY = "ivs:DeleteStreamKey";
+	static readonly DeleteStreamKey = "ivs:DeleteStreamKey";
 	/** [Write] ivs:DisconnectParticipant */
-	static readonly DISCONNECT_PARTICIPANT = "ivs:DisconnectParticipant";
+	static readonly DisconnectParticipant = "ivs:DisconnectParticipant";
 	/** [Read] ivs:GetAdConfiguration */
-	static readonly GET_AD_CONFIGURATION = "ivs:GetAdConfiguration";
+	static readonly actionGetAdConfiguration = "ivs:GetAdConfiguration";
 	/** [Read] ivs:GetChannel */
-	static readonly GET_CHANNEL = "ivs:GetChannel";
+	static readonly actionGetChannel = "ivs:GetChannel";
 	/** [Read] ivs:GetComposition */
-	static readonly GET_COMPOSITION = "ivs:GetComposition";
+	static readonly actionGetComposition = "ivs:GetComposition";
 	/** [Read] ivs:GetEncoderConfiguration */
-	static readonly GET_ENCODER_CONFIGURATION = "ivs:GetEncoderConfiguration";
+	static readonly actionGetEncoderConfiguration = "ivs:GetEncoderConfiguration";
 	/** [Read] ivs:GetIngestConfiguration */
-	static readonly GET_INGEST_CONFIGURATION = "ivs:GetIngestConfiguration";
+	static readonly actionGetIngestConfiguration = "ivs:GetIngestConfiguration";
 	/** [Read] ivs:GetParticipant */
-	static readonly GET_PARTICIPANT = "ivs:GetParticipant";
+	static readonly actionGetParticipant = "ivs:GetParticipant";
 	/** [Read] ivs:GetPlaybackKeyPair */
-	static readonly GET_PLAYBACK_KEY_PAIR = "ivs:GetPlaybackKeyPair";
+	static readonly actionGetPlaybackKeyPair = "ivs:GetPlaybackKeyPair";
 	/** [Read] ivs:GetPlaybackRestrictionPolicy */
-	static readonly GET_PLAYBACK_RESTRICTION_POLICY =
+	static readonly actionGetPlaybackRestrictionPolicy =
 		"ivs:GetPlaybackRestrictionPolicy";
 	/** [Read] ivs:GetPublicKey */
-	static readonly GET_PUBLIC_KEY = "ivs:GetPublicKey";
+	static readonly actionGetPublicKey = "ivs:GetPublicKey";
 	/** [Read] ivs:GetRecordingConfiguration */
-	static readonly GET_RECORDING_CONFIGURATION = "ivs:GetRecordingConfiguration";
+	static readonly actionGetRecordingConfiguration =
+		"ivs:GetRecordingConfiguration";
 	/** [Read] ivs:GetStage */
-	static readonly GET_STAGE = "ivs:GetStage";
+	static readonly actionGetStage = "ivs:GetStage";
 	/** [Read] ivs:GetStageSession */
-	static readonly GET_STAGE_SESSION = "ivs:GetStageSession";
+	static readonly actionGetStageSession = "ivs:GetStageSession";
 	/** [Read] ivs:GetStorageConfiguration */
-	static readonly GET_STORAGE_CONFIGURATION = "ivs:GetStorageConfiguration";
+	static readonly actionGetStorageConfiguration = "ivs:GetStorageConfiguration";
 	/** [Read] ivs:GetStream */
-	static readonly GET_STREAM = "ivs:GetStream";
+	static readonly actionGetStream = "ivs:GetStream";
 	/** [Read] ivs:GetStreamKey */
-	static readonly GET_STREAM_KEY = "ivs:GetStreamKey";
+	static readonly actionGetStreamKey = "ivs:GetStreamKey";
 	/** [Read] ivs:GetStreamSession */
-	static readonly GET_STREAM_SESSION = "ivs:GetStreamSession";
+	static readonly actionGetStreamSession = "ivs:GetStreamSession";
 	/** [Write] ivs:ImportPlaybackKeyPair */
-	static readonly IMPORT_PLAYBACK_KEY_PAIR = "ivs:ImportPlaybackKeyPair";
+	static readonly ImportPlaybackKeyPair = "ivs:ImportPlaybackKeyPair";
 	/** [Write] ivs:ImportPublicKey */
-	static readonly IMPORT_PUBLIC_KEY = "ivs:ImportPublicKey";
+	static readonly ImportPublicKey = "ivs:ImportPublicKey";
 	/** [Write] ivs:InsertAdBreak */
-	static readonly INSERT_AD_BREAK = "ivs:InsertAdBreak";
+	static readonly InsertAdBreak = "ivs:InsertAdBreak";
 	/** [List] ivs:ListAdConfigurations */
-	static readonly LIST_AD_CONFIGURATIONS = "ivs:ListAdConfigurations";
+	static readonly ListAdConfigurations = "ivs:ListAdConfigurations";
 	/** [List] ivs:ListChannels */
-	static readonly LIST_CHANNELS = "ivs:ListChannels";
+	static readonly ListChannels = "ivs:ListChannels";
 	/** [List] ivs:ListCompositions */
-	static readonly LIST_COMPOSITIONS = "ivs:ListCompositions";
+	static readonly ListCompositions = "ivs:ListCompositions";
 	/** [List] ivs:ListEncoderConfigurations */
-	static readonly LIST_ENCODER_CONFIGURATIONS = "ivs:ListEncoderConfigurations";
+	static readonly ListEncoderConfigurations = "ivs:ListEncoderConfigurations";
 	/** [List] ivs:ListIngestConfigurations */
-	static readonly LIST_INGEST_CONFIGURATIONS = "ivs:ListIngestConfigurations";
+	static readonly ListIngestConfigurations = "ivs:ListIngestConfigurations";
 	/** [List] ivs:ListParticipantEvents */
-	static readonly LIST_PARTICIPANT_EVENTS = "ivs:ListParticipantEvents";
+	static readonly ListParticipantEvents = "ivs:ListParticipantEvents";
 	/** [List] ivs:ListParticipantReplicas */
-	static readonly LIST_PARTICIPANT_REPLICAS = "ivs:ListParticipantReplicas";
+	static readonly ListParticipantReplicas = "ivs:ListParticipantReplicas";
 	/** [List] ivs:ListParticipants */
-	static readonly LIST_PARTICIPANTS = "ivs:ListParticipants";
+	static readonly ListParticipants = "ivs:ListParticipants";
 	/** [List] ivs:ListPlaybackKeyPairs */
-	static readonly LIST_PLAYBACK_KEY_PAIRS = "ivs:ListPlaybackKeyPairs";
+	static readonly ListPlaybackKeyPairs = "ivs:ListPlaybackKeyPairs";
 	/** [List] ivs:ListPlaybackRestrictionPolicies */
-	static readonly LIST_PLAYBACK_RESTRICTION_POLICIES =
+	static readonly ListPlaybackRestrictionPolicies =
 		"ivs:ListPlaybackRestrictionPolicies";
 	/** [List] ivs:ListPublicKeys */
-	static readonly LIST_PUBLIC_KEYS = "ivs:ListPublicKeys";
+	static readonly ListPublicKeys = "ivs:ListPublicKeys";
 	/** [List] ivs:ListRecordingConfigurations */
-	static readonly LIST_RECORDING_CONFIGURATIONS =
+	static readonly ListRecordingConfigurations =
 		"ivs:ListRecordingConfigurations";
 	/** [List] ivs:ListStageSessions */
-	static readonly LIST_STAGE_SESSIONS = "ivs:ListStageSessions";
+	static readonly ListStageSessions = "ivs:ListStageSessions";
 	/** [List] ivs:ListStages */
-	static readonly LIST_STAGES = "ivs:ListStages";
+	static readonly ListStages = "ivs:ListStages";
 	/** [List] ivs:ListStorageConfigurations */
-	static readonly LIST_STORAGE_CONFIGURATIONS = "ivs:ListStorageConfigurations";
+	static readonly ListStorageConfigurations = "ivs:ListStorageConfigurations";
 	/** [List] ivs:ListStreamKeys */
-	static readonly LIST_STREAM_KEYS = "ivs:ListStreamKeys";
+	static readonly ListStreamKeys = "ivs:ListStreamKeys";
 	/** [List] ivs:ListStreamSessions */
-	static readonly LIST_STREAM_SESSIONS = "ivs:ListStreamSessions";
+	static readonly ListStreamSessions = "ivs:ListStreamSessions";
 	/** [List] ivs:ListStreams */
-	static readonly LIST_STREAMS = "ivs:ListStreams";
+	static readonly ListStreams = "ivs:ListStreams";
 	/** [Read] ivs:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "ivs:ListTagsForResource";
+	static readonly ListTagsForResource = "ivs:ListTagsForResource";
 	/** [Write] ivs:PutMetadata */
-	static readonly PUT_METADATA = "ivs:PutMetadata";
+	static readonly PutMetadata = "ivs:PutMetadata";
 	/** [Write] ivs:StartComposition */
-	static readonly START_COMPOSITION = "ivs:StartComposition";
+	static readonly StartComposition = "ivs:StartComposition";
 	/** [Write] ivs:StartParticipantReplication */
-	static readonly START_PARTICIPANT_REPLICATION =
+	static readonly StartParticipantReplication =
 		"ivs:StartParticipantReplication";
 	/** [Write] ivs:StartViewerSessionRevocation */
-	static readonly START_VIEWER_SESSION_REVOCATION =
+	static readonly StartViewerSessionRevocation =
 		"ivs:StartViewerSessionRevocation";
 	/** [Write] ivs:StopComposition */
-	static readonly STOP_COMPOSITION = "ivs:StopComposition";
+	static readonly StopComposition = "ivs:StopComposition";
 	/** [Write] ivs:StopParticipantReplication */
-	static readonly STOP_PARTICIPANT_REPLICATION =
-		"ivs:StopParticipantReplication";
+	static readonly StopParticipantReplication = "ivs:StopParticipantReplication";
 	/** [Write] ivs:StopStream */
-	static readonly STOP_STREAM = "ivs:StopStream";
+	static readonly StopStream = "ivs:StopStream";
 	/** [Tagging] ivs:TagResource */
-	static readonly TAG_RESOURCE = "ivs:TagResource";
+	static readonly TagResource = "ivs:TagResource";
 	/** [Tagging] ivs:UntagResource */
-	static readonly UNTAG_RESOURCE = "ivs:UntagResource";
+	static readonly UntagResource = "ivs:UntagResource";
 	/** [Write] ivs:UpdateAdConfiguration */
-	static readonly UPDATE_AD_CONFIGURATION = "ivs:UpdateAdConfiguration";
+	static readonly UpdateAdConfiguration = "ivs:UpdateAdConfiguration";
 	/** [Write] ivs:UpdateChannel */
-	static readonly UPDATE_CHANNEL = "ivs:UpdateChannel";
+	static readonly UpdateChannel = "ivs:UpdateChannel";
 	/** [Write] ivs:UpdateIngestConfiguration */
-	static readonly UPDATE_INGEST_CONFIGURATION = "ivs:UpdateIngestConfiguration";
+	static readonly UpdateIngestConfiguration = "ivs:UpdateIngestConfiguration";
 	/** [Write] ivs:UpdatePlaybackRestrictionPolicy */
-	static readonly UPDATE_PLAYBACK_RESTRICTION_POLICY =
+	static readonly UpdatePlaybackRestrictionPolicy =
 		"ivs:UpdatePlaybackRestrictionPolicy";
 	/** [Write] ivs:UpdateStage */
-	static readonly UPDATE_STAGE = "ivs:UpdateStage";
+	static readonly UpdateStage = "ivs:UpdateStage";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IvsActions.BATCH_GET_CHANNEL,
-		IvsActions.BATCH_GET_STREAM_KEY,
-		IvsActions.GET_AD_CONFIGURATION,
-		IvsActions.GET_CHANNEL,
-		IvsActions.GET_COMPOSITION,
-		IvsActions.GET_ENCODER_CONFIGURATION,
-		IvsActions.GET_INGEST_CONFIGURATION,
-		IvsActions.GET_PARTICIPANT,
-		IvsActions.GET_PLAYBACK_KEY_PAIR,
-		IvsActions.GET_PLAYBACK_RESTRICTION_POLICY,
-		IvsActions.GET_PUBLIC_KEY,
-		IvsActions.GET_RECORDING_CONFIGURATION,
-		IvsActions.GET_STAGE,
-		IvsActions.GET_STAGE_SESSION,
-		IvsActions.GET_STORAGE_CONFIGURATION,
-		IvsActions.GET_STREAM,
-		IvsActions.GET_STREAM_KEY,
-		IvsActions.GET_STREAM_SESSION,
-		IvsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		IvsActions.BatchGetChannel,
+		IvsActions.BatchGetStreamKey,
+		IvsActions.actionGetAdConfiguration,
+		IvsActions.actionGetChannel,
+		IvsActions.actionGetComposition,
+		IvsActions.actionGetEncoderConfiguration,
+		IvsActions.actionGetIngestConfiguration,
+		IvsActions.actionGetParticipant,
+		IvsActions.actionGetPlaybackKeyPair,
+		IvsActions.actionGetPlaybackRestrictionPolicy,
+		IvsActions.actionGetPublicKey,
+		IvsActions.actionGetRecordingConfiguration,
+		IvsActions.actionGetStage,
+		IvsActions.actionGetStageSession,
+		IvsActions.actionGetStorageConfiguration,
+		IvsActions.actionGetStream,
+		IvsActions.actionGetStreamKey,
+		IvsActions.actionGetStreamSession,
+		IvsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IvsActions.BATCH_START_VIEWER_SESSION_REVOCATION,
-		IvsActions.CREATE_AD_CONFIGURATION,
-		IvsActions.CREATE_CHANNEL,
-		IvsActions.CREATE_ENCODER_CONFIGURATION,
-		IvsActions.CREATE_INGEST_CONFIGURATION,
-		IvsActions.CREATE_PARTICIPANT_TOKEN,
-		IvsActions.CREATE_PLAYBACK_RESTRICTION_POLICY,
-		IvsActions.CREATE_RECORDING_CONFIGURATION,
-		IvsActions.CREATE_STAGE,
-		IvsActions.CREATE_STORAGE_CONFIGURATION,
-		IvsActions.CREATE_STREAM_KEY,
-		IvsActions.DELETE_AD_CONFIGURATION,
-		IvsActions.DELETE_CHANNEL,
-		IvsActions.DELETE_ENCODER_CONFIGURATION,
-		IvsActions.DELETE_INGEST_CONFIGURATION,
-		IvsActions.DELETE_PLAYBACK_KEY_PAIR,
-		IvsActions.DELETE_PLAYBACK_RESTRICTION_POLICY,
-		IvsActions.DELETE_PUBLIC_KEY,
-		IvsActions.DELETE_RECORDING_CONFIGURATION,
-		IvsActions.DELETE_STAGE,
-		IvsActions.DELETE_STORAGE_CONFIGURATION,
-		IvsActions.DELETE_STREAM_KEY,
-		IvsActions.DISCONNECT_PARTICIPANT,
-		IvsActions.IMPORT_PLAYBACK_KEY_PAIR,
-		IvsActions.IMPORT_PUBLIC_KEY,
-		IvsActions.INSERT_AD_BREAK,
-		IvsActions.PUT_METADATA,
-		IvsActions.START_COMPOSITION,
-		IvsActions.START_PARTICIPANT_REPLICATION,
-		IvsActions.START_VIEWER_SESSION_REVOCATION,
-		IvsActions.STOP_COMPOSITION,
-		IvsActions.STOP_PARTICIPANT_REPLICATION,
-		IvsActions.STOP_STREAM,
-		IvsActions.UPDATE_AD_CONFIGURATION,
-		IvsActions.UPDATE_CHANNEL,
-		IvsActions.UPDATE_INGEST_CONFIGURATION,
-		IvsActions.UPDATE_PLAYBACK_RESTRICTION_POLICY,
-		IvsActions.UPDATE_STAGE,
+	static readonly AllWriteActions: string[] = [
+		IvsActions.BatchStartViewerSessionRevocation,
+		IvsActions.CreateAdConfiguration,
+		IvsActions.CreateChannel,
+		IvsActions.CreateEncoderConfiguration,
+		IvsActions.CreateIngestConfiguration,
+		IvsActions.CreateParticipantToken,
+		IvsActions.CreatePlaybackRestrictionPolicy,
+		IvsActions.CreateRecordingConfiguration,
+		IvsActions.CreateStage,
+		IvsActions.CreateStorageConfiguration,
+		IvsActions.CreateStreamKey,
+		IvsActions.DeleteAdConfiguration,
+		IvsActions.DeleteChannel,
+		IvsActions.DeleteEncoderConfiguration,
+		IvsActions.DeleteIngestConfiguration,
+		IvsActions.DeletePlaybackKeyPair,
+		IvsActions.DeletePlaybackRestrictionPolicy,
+		IvsActions.DeletePublicKey,
+		IvsActions.DeleteRecordingConfiguration,
+		IvsActions.DeleteStage,
+		IvsActions.DeleteStorageConfiguration,
+		IvsActions.DeleteStreamKey,
+		IvsActions.DisconnectParticipant,
+		IvsActions.ImportPlaybackKeyPair,
+		IvsActions.ImportPublicKey,
+		IvsActions.InsertAdBreak,
+		IvsActions.PutMetadata,
+		IvsActions.StartComposition,
+		IvsActions.StartParticipantReplication,
+		IvsActions.StartViewerSessionRevocation,
+		IvsActions.StopComposition,
+		IvsActions.StopParticipantReplication,
+		IvsActions.StopStream,
+		IvsActions.UpdateAdConfiguration,
+		IvsActions.UpdateChannel,
+		IvsActions.UpdateIngestConfiguration,
+		IvsActions.UpdatePlaybackRestrictionPolicy,
+		IvsActions.UpdateStage,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IvsActions.LIST_AD_CONFIGURATIONS,
-		IvsActions.LIST_CHANNELS,
-		IvsActions.LIST_COMPOSITIONS,
-		IvsActions.LIST_ENCODER_CONFIGURATIONS,
-		IvsActions.LIST_INGEST_CONFIGURATIONS,
-		IvsActions.LIST_PARTICIPANT_EVENTS,
-		IvsActions.LIST_PARTICIPANT_REPLICAS,
-		IvsActions.LIST_PARTICIPANTS,
-		IvsActions.LIST_PLAYBACK_KEY_PAIRS,
-		IvsActions.LIST_PLAYBACK_RESTRICTION_POLICIES,
-		IvsActions.LIST_PUBLIC_KEYS,
-		IvsActions.LIST_RECORDING_CONFIGURATIONS,
-		IvsActions.LIST_STAGE_SESSIONS,
-		IvsActions.LIST_STAGES,
-		IvsActions.LIST_STORAGE_CONFIGURATIONS,
-		IvsActions.LIST_STREAM_KEYS,
-		IvsActions.LIST_STREAM_SESSIONS,
-		IvsActions.LIST_STREAMS,
+	static readonly AllListActions: string[] = [
+		IvsActions.ListAdConfigurations,
+		IvsActions.ListChannels,
+		IvsActions.ListCompositions,
+		IvsActions.ListEncoderConfigurations,
+		IvsActions.ListIngestConfigurations,
+		IvsActions.ListParticipantEvents,
+		IvsActions.ListParticipantReplicas,
+		IvsActions.ListParticipants,
+		IvsActions.ListPlaybackKeyPairs,
+		IvsActions.ListPlaybackRestrictionPolicies,
+		IvsActions.ListPublicKeys,
+		IvsActions.ListRecordingConfigurations,
+		IvsActions.ListStageSessions,
+		IvsActions.ListStages,
+		IvsActions.ListStorageConfigurations,
+		IvsActions.ListStreamKeys,
+		IvsActions.ListStreamSessions,
+		IvsActions.ListStreams,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IvsActions.TAG_RESOURCE,
-		IvsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IvsActions.TagResource,
+		IvsActions.UntagResource,
 	];
 }
 
-const AdConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):ad-configuration/(?<resourceId>[^:/?]+)$",
-);
-const ChannelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):channel/(?<resourceId>[^:/?]+)$",
-);
-const CompositionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):composition/(?<resourceId>[^:/?]+)$",
-);
-const EncoderConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):encoder-configuration/(?<resourceId>[^:/?]+)$",
-);
-const IngestConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):ingest-configuration/(?<resourceId>[^:/?]+)$",
-);
-const PlaybackKeyPairArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):playback-key/(?<resourceId>[^:/?]+)$",
-);
-const PlaybackRestrictionPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):playback-restriction-policy/(?<resourceId>[^:/?]+)$",
-);
-const PublicKeyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):public-key/(?<resourceId>[^:/?]+)$",
-);
-const RecordingConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):recording-configuration/(?<resourceId>[^:/?]+)$",
-);
-const StageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):stage/(?<resourceId>[^:/?]+)$",
-);
-const StorageConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):storage-configuration/(?<resourceId>[^:/?]+)$",
-);
-const StreamKeyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):stream-key/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Ad-Configuration ARN.
+ */
+export interface IvsAdConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Ad-Configuration ARN.
+ */
+export interface IvsAdConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Channel ARN.
+ */
+export interface IvsChannelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Channel ARN.
+ */
+export interface IvsChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Composition ARN.
+ */
+export interface IvsCompositionArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Composition ARN.
+ */
+export interface IvsCompositionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Encoder-Configuration ARN.
+ */
+export interface IvsEncoderConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Encoder-Configuration ARN.
+ */
+export interface IvsEncoderConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Ingest-Configuration ARN.
+ */
+export interface IvsIngestConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Ingest-Configuration ARN.
+ */
+export interface IvsIngestConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Playback-Key-Pair ARN.
+ */
+export interface IvsPlaybackKeyPairArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Playback-Key-Pair ARN.
+ */
+export interface IvsPlaybackKeyPairArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Playback-Restriction-Policy ARN.
+ */
+export interface IvsPlaybackRestrictionPolicyArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Playback-Restriction-Policy ARN.
+ */
+export interface IvsPlaybackRestrictionPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Public-Key ARN.
+ */
+export interface IvsPublicKeyArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Public-Key ARN.
+ */
+export interface IvsPublicKeyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Recording-Configuration ARN.
+ */
+export interface IvsRecordingConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Recording-Configuration ARN.
+ */
+export interface IvsRecordingConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Stage ARN.
+ */
+export interface IvsStageArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Stage ARN.
+ */
+export interface IvsStageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Storage-Configuration ARN.
+ */
+export interface IvsStorageConfigurationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Storage-Configuration ARN.
+ */
+export interface IvsStorageConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Stream-Key ARN.
+ */
+export interface IvsStreamKeyArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Stream-Key ARN.
+ */
+export interface IvsStreamKeyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AdConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):ad-configuration\/(?<resourceId>[^:/?]+)$/;
+const ChannelArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):channel\/(?<resourceId>[^:/?]+)$/;
+const CompositionArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):composition\/(?<resourceId>[^:/?]+)$/;
+const EncoderConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):encoder-configuration\/(?<resourceId>[^:/?]+)$/;
+const IngestConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):ingest-configuration\/(?<resourceId>[^:/?]+)$/;
+const PlaybackKeyPairArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):playback-key\/(?<resourceId>[^:/?]+)$/;
+const PlaybackRestrictionPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):playback-restriction-policy\/(?<resourceId>[^:/?]+)$/;
+const PublicKeyArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):public-key\/(?<resourceId>[^:/?]+)$/;
+const RecordingConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):recording-configuration\/(?<resourceId>[^:/?]+)$/;
+const StageArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):stage\/(?<resourceId>[^:/?]+)$/;
+const StorageConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):storage-configuration\/(?<resourceId>[^:/?]+)$/;
+const StreamKeyArnRegex =
+	/^arn:(?<partition>[^:]+):ivs:(?<region>[^:]*):(?<account>[^:]*):stream-key\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ivs resources.
@@ -320,16 +640,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Ad-Configuration resource.
 	 */
-	static adConfiguration(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static adConfiguration(props: IvsAdConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:ad-configuration/${props.resourceId}`;
 	}
 
@@ -344,12 +655,7 @@ export class IvsResources {
 	 * Parses a Ad-Configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAdConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAdConfigurationArn(arn: string): IvsAdConfigurationArnComponents {
 		const match = AdConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Ad-Configuration ARN: ${arn}`);
@@ -365,16 +671,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Channel resource.
 	 */
-	static channel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channel(props: IvsChannelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:channel/${props.resourceId}`;
 	}
 
@@ -389,12 +686,7 @@ export class IvsResources {
 	 * Parses a Channel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseChannelArn(arn: string): IvsChannelArnComponents {
 		const match = ChannelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Channel ARN: ${arn}`);
@@ -410,16 +702,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Composition resource.
 	 */
-	static composition(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static composition(props: IvsCompositionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:composition/${props.resourceId}`;
 	}
 
@@ -434,12 +717,7 @@ export class IvsResources {
 	 * Parses a Composition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCompositionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseCompositionArn(arn: string): IvsCompositionArnComponents {
 		const match = CompositionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Composition ARN: ${arn}`);
@@ -455,16 +733,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Encoder-Configuration resource.
 	 */
-	static encoderConfiguration(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static encoderConfiguration(props: IvsEncoderConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:encoder-configuration/${props.resourceId}`;
 	}
 
@@ -479,12 +748,9 @@ export class IvsResources {
 	 * Parses a Encoder-Configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEncoderConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseEncoderConfigurationArn(
+		arn: string,
+	): IvsEncoderConfigurationArnComponents {
 		const match = EncoderConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Encoder-Configuration ARN: ${arn}`);
@@ -500,16 +766,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Ingest-Configuration resource.
 	 */
-	static ingestConfiguration(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ingestConfiguration(props: IvsIngestConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:ingest-configuration/${props.resourceId}`;
 	}
 
@@ -524,12 +781,9 @@ export class IvsResources {
 	 * Parses a Ingest-Configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIngestConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseIngestConfigurationArn(
+		arn: string,
+	): IvsIngestConfigurationArnComponents {
 		const match = IngestConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Ingest-Configuration ARN: ${arn}`);
@@ -545,16 +799,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Playback-Key-Pair resource.
 	 */
-	static playbackKeyPair(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static playbackKeyPair(props: IvsPlaybackKeyPairArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:playback-key/${props.resourceId}`;
 	}
 
@@ -569,12 +814,7 @@ export class IvsResources {
 	 * Parses a Playback-Key-Pair ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePlaybackKeyPairArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePlaybackKeyPairArn(arn: string): IvsPlaybackKeyPairArnComponents {
 		const match = PlaybackKeyPairArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Playback-Key-Pair ARN: ${arn}`);
@@ -590,16 +830,9 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Playback-Restriction-Policy resource.
 	 */
-	static playbackRestrictionPolicy(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static playbackRestrictionPolicy(
+		props: IvsPlaybackRestrictionPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:playback-restriction-policy/${props.resourceId}`;
 	}
 
@@ -614,12 +847,9 @@ export class IvsResources {
 	 * Parses a Playback-Restriction-Policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePlaybackRestrictionPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePlaybackRestrictionPolicyArn(
+		arn: string,
+	): IvsPlaybackRestrictionPolicyArnComponents {
 		const match = PlaybackRestrictionPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Playback-Restriction-Policy ARN: ${arn}`);
@@ -635,16 +865,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Public-Key resource.
 	 */
-	static publicKey(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static publicKey(props: IvsPublicKeyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:public-key/${props.resourceId}`;
 	}
 
@@ -659,12 +880,7 @@ export class IvsResources {
 	 * Parses a Public-Key ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePublicKeyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePublicKeyArn(arn: string): IvsPublicKeyArnComponents {
 		const match = PublicKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Public-Key ARN: ${arn}`);
@@ -680,16 +896,9 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Recording-Configuration resource.
 	 */
-	static recordingConfiguration(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recordingConfiguration(
+		props: IvsRecordingConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:recording-configuration/${props.resourceId}`;
 	}
 
@@ -704,12 +913,9 @@ export class IvsResources {
 	 * Parses a Recording-Configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecordingConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRecordingConfigurationArn(
+		arn: string,
+	): IvsRecordingConfigurationArnComponents {
 		const match = RecordingConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Recording-Configuration ARN: ${arn}`);
@@ -725,16 +931,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Stage resource.
 	 */
-	static stage(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stage(props: IvsStageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:stage/${props.resourceId}`;
 	}
 
@@ -749,12 +946,7 @@ export class IvsResources {
 	 * Parses a Stage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseStageArn(arn: string): IvsStageArnComponents {
 		const match = StageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stage ARN: ${arn}`);
@@ -770,16 +962,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Storage-Configuration resource.
 	 */
-	static storageConfiguration(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static storageConfiguration(props: IvsStorageConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:storage-configuration/${props.resourceId}`;
 	}
 
@@ -794,12 +977,9 @@ export class IvsResources {
 	 * Parses a Storage-Configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStorageConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseStorageConfigurationArn(
+		arn: string,
+	): IvsStorageConfigurationArnComponents {
 		const match = StorageConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Storage-Configuration ARN: ${arn}`);
@@ -815,16 +995,7 @@ export class IvsResources {
 	/**
 	 * Builds an ARN for the Stream-Key resource.
 	 */
-	static streamKey(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamKey(props: IvsStreamKeyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ivs:${props.region ?? "*"}:${props.account ?? "*"}:stream-key/${props.resourceId}`;
 	}
 
@@ -839,12 +1010,7 @@ export class IvsResources {
 	 * Parses a Stream-Key ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamKeyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseStreamKeyArn(arn: string): IvsStreamKeyArnComponents {
 		const match = StreamKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stream-Key ARN: ${arn}`);
@@ -863,257 +1029,251 @@ export class IvsResources {
  */
 export class IvsOperations {
 	/** IAM actions required for the BatchGetChannel API call. */
-	static readonly BATCH_GET_CHANNEL: string[] = ["ivs:BatchGetChannel"];
+	static readonly BatchGetChannel: string[] = ["ivs:BatchGetChannel"];
 	/** IAM actions required for the BatchGetStreamKey API call. */
-	static readonly BATCH_GET_STREAM_KEY: string[] = ["ivs:BatchGetStreamKey"];
+	static readonly BatchGetStreamKey: string[] = ["ivs:BatchGetStreamKey"];
 	/** IAM actions required for the BatchStartViewerSessionRevocation API call. */
-	static readonly BATCH_START_VIEWER_SESSION_REVOCATION: string[] = [
+	static readonly BatchStartViewerSessionRevocation: string[] = [
 		"ivs:BatchStartViewerSessionRevocation",
 	];
 	/** IAM actions required for the CreateAdConfiguration API call. */
-	static readonly CREATE_AD_CONFIGURATION: string[] = [
+	static readonly CreateAdConfiguration: string[] = [
 		"ivs:CreateAdConfiguration",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateChannel API call. */
-	static readonly CREATE_CHANNEL: string[] = [
+	static readonly CreateChannel: string[] = [
 		"ivs:CreateChannel",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateEncoderConfiguration API call. */
-	static readonly CREATE_ENCODER_CONFIGURATION: string[] = [
+	static readonly CreateEncoderConfiguration: string[] = [
 		"ivs:CreateEncoderConfiguration",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateIngestConfiguration API call. */
-	static readonly CREATE_INGEST_CONFIGURATION: string[] = [
+	static readonly CreateIngestConfiguration: string[] = [
 		"ivs:CreateIngestConfiguration",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateParticipantToken API call. */
-	static readonly CREATE_PARTICIPANT_TOKEN: string[] = [
+	static readonly CreateParticipantToken: string[] = [
 		"ivs:CreateParticipantToken",
 	];
 	/** IAM actions required for the CreatePlaybackRestrictionPolicy API call. */
-	static readonly CREATE_PLAYBACK_RESTRICTION_POLICY: string[] = [
+	static readonly CreatePlaybackRestrictionPolicy: string[] = [
 		"ivs:CreatePlaybackRestrictionPolicy",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateRecordingConfiguration API call. */
-	static readonly CREATE_RECORDING_CONFIGURATION: string[] = [
+	static readonly CreateRecordingConfiguration: string[] = [
 		"ivs:CreateRecordingConfiguration",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateStage API call. */
-	static readonly CREATE_STAGE: string[] = [
+	static readonly CreateStage: string[] = [
 		"ivs:CreateStage",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateStorageConfiguration API call. */
-	static readonly CREATE_STORAGE_CONFIGURATION: string[] = [
+	static readonly CreateStorageConfiguration: string[] = [
 		"ivs:CreateStorageConfiguration",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the CreateStreamKey API call. */
-	static readonly CREATE_STREAM_KEY: string[] = [
+	static readonly CreateStreamKey: string[] = [
 		"ivs:CreateStreamKey",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the DeleteAdConfiguration API call. */
-	static readonly DELETE_AD_CONFIGURATION: string[] = [
+	static readonly DeleteAdConfiguration: string[] = [
 		"ivs:DeleteAdConfiguration",
 	];
 	/** IAM actions required for the DeleteChannel API call. */
-	static readonly DELETE_CHANNEL: string[] = ["ivs:DeleteChannel"];
+	static readonly DeleteChannel: string[] = ["ivs:DeleteChannel"];
 	/** IAM actions required for the DeleteEncoderConfiguration API call. */
-	static readonly DELETE_ENCODER_CONFIGURATION: string[] = [
+	static readonly DeleteEncoderConfiguration: string[] = [
 		"ivs:DeleteEncoderConfiguration",
 	];
 	/** IAM actions required for the DeleteIngestConfiguration API call. */
-	static readonly DELETE_INGEST_CONFIGURATION: string[] = [
+	static readonly DeleteIngestConfiguration: string[] = [
 		"ivs:DeleteIngestConfiguration",
 	];
 	/** IAM actions required for the DeletePlaybackKeyPair API call. */
-	static readonly DELETE_PLAYBACK_KEY_PAIR: string[] = [
+	static readonly DeletePlaybackKeyPair: string[] = [
 		"ivs:DeletePlaybackKeyPair",
 	];
 	/** IAM actions required for the DeletePlaybackRestrictionPolicy API call. */
-	static readonly DELETE_PLAYBACK_RESTRICTION_POLICY: string[] = [
+	static readonly DeletePlaybackRestrictionPolicy: string[] = [
 		"ivs:DeletePlaybackRestrictionPolicy",
 	];
 	/** IAM actions required for the DeletePublicKey API call. */
-	static readonly DELETE_PUBLIC_KEY: string[] = ["ivs:DeletePublicKey"];
+	static readonly DeletePublicKey: string[] = ["ivs:DeletePublicKey"];
 	/** IAM actions required for the DeleteRecordingConfiguration API call. */
-	static readonly DELETE_RECORDING_CONFIGURATION: string[] = [
+	static readonly DeleteRecordingConfiguration: string[] = [
 		"ivs:DeleteRecordingConfiguration",
 	];
 	/** IAM actions required for the DeleteStage API call. */
-	static readonly DELETE_STAGE: string[] = ["ivs:DeleteStage"];
+	static readonly DeleteStage: string[] = ["ivs:DeleteStage"];
 	/** IAM actions required for the DeleteStorageConfiguration API call. */
-	static readonly DELETE_STORAGE_CONFIGURATION: string[] = [
+	static readonly DeleteStorageConfiguration: string[] = [
 		"ivs:DeleteStorageConfiguration",
 	];
 	/** IAM actions required for the DeleteStreamKey API call. */
-	static readonly DELETE_STREAM_KEY: string[] = ["ivs:DeleteStreamKey"];
+	static readonly DeleteStreamKey: string[] = ["ivs:DeleteStreamKey"];
 	/** IAM actions required for the DisconnectParticipant API call. */
-	static readonly DISCONNECT_PARTICIPANT: string[] = [
+	static readonly DisconnectParticipant: string[] = [
 		"ivs:DisconnectParticipant",
 	];
 	/** IAM actions required for the GetAdConfiguration API call. */
-	static readonly GET_AD_CONFIGURATION: string[] = ["ivs:GetAdConfiguration"];
+	static readonly opGetAdConfiguration: string[] = ["ivs:GetAdConfiguration"];
 	/** IAM actions required for the GetChannel API call. */
-	static readonly GET_CHANNEL: string[] = ["ivs:GetChannel"];
+	static readonly opGetChannel: string[] = ["ivs:GetChannel"];
 	/** IAM actions required for the GetComposition API call. */
-	static readonly GET_COMPOSITION: string[] = ["ivs:GetComposition"];
+	static readonly opGetComposition: string[] = ["ivs:GetComposition"];
 	/** IAM actions required for the GetEncoderConfiguration API call. */
-	static readonly GET_ENCODER_CONFIGURATION: string[] = [
+	static readonly opGetEncoderConfiguration: string[] = [
 		"ivs:GetEncoderConfiguration",
 	];
 	/** IAM actions required for the GetIngestConfiguration API call. */
-	static readonly GET_INGEST_CONFIGURATION: string[] = [
+	static readonly opGetIngestConfiguration: string[] = [
 		"ivs:GetIngestConfiguration",
 	];
 	/** IAM actions required for the GetParticipant API call. */
-	static readonly GET_PARTICIPANT: string[] = ["ivs:GetParticipant"];
+	static readonly opGetParticipant: string[] = ["ivs:GetParticipant"];
 	/** IAM actions required for the GetPlaybackKeyPair API call. */
-	static readonly GET_PLAYBACK_KEY_PAIR: string[] = ["ivs:GetPlaybackKeyPair"];
+	static readonly opGetPlaybackKeyPair: string[] = ["ivs:GetPlaybackKeyPair"];
 	/** IAM actions required for the GetPlaybackRestrictionPolicy API call. */
-	static readonly GET_PLAYBACK_RESTRICTION_POLICY: string[] = [
+	static readonly opGetPlaybackRestrictionPolicy: string[] = [
 		"ivs:GetPlaybackRestrictionPolicy",
 	];
 	/** IAM actions required for the GetPublicKey API call. */
-	static readonly GET_PUBLIC_KEY: string[] = ["ivs:GetPublicKey"];
+	static readonly opGetPublicKey: string[] = ["ivs:GetPublicKey"];
 	/** IAM actions required for the GetRecordingConfiguration API call. */
-	static readonly GET_RECORDING_CONFIGURATION: string[] = [
+	static readonly opGetRecordingConfiguration: string[] = [
 		"ivs:GetRecordingConfiguration",
 	];
 	/** IAM actions required for the GetStage API call. */
-	static readonly GET_STAGE: string[] = ["ivs:GetStage"];
+	static readonly opGetStage: string[] = ["ivs:GetStage"];
 	/** IAM actions required for the GetStageSession API call. */
-	static readonly GET_STAGE_SESSION: string[] = ["ivs:GetStageSession"];
+	static readonly opGetStageSession: string[] = ["ivs:GetStageSession"];
 	/** IAM actions required for the GetStorageConfiguration API call. */
-	static readonly GET_STORAGE_CONFIGURATION: string[] = [
+	static readonly opGetStorageConfiguration: string[] = [
 		"ivs:GetStorageConfiguration",
 	];
 	/** IAM actions required for the GetStream API call. */
-	static readonly GET_STREAM: string[] = ["ivs:GetStream"];
+	static readonly opGetStream: string[] = ["ivs:GetStream"];
 	/** IAM actions required for the GetStreamKey API call. */
-	static readonly GET_STREAM_KEY: string[] = ["ivs:GetStreamKey"];
+	static readonly opGetStreamKey: string[] = ["ivs:GetStreamKey"];
 	/** IAM actions required for the GetStreamSession API call. */
-	static readonly GET_STREAM_SESSION: string[] = ["ivs:GetStreamSession"];
+	static readonly opGetStreamSession: string[] = ["ivs:GetStreamSession"];
 	/** IAM actions required for the ImportPlaybackKeyPair API call. */
-	static readonly IMPORT_PLAYBACK_KEY_PAIR: string[] = [
+	static readonly ImportPlaybackKeyPair: string[] = [
 		"ivs:ImportPlaybackKeyPair",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the ImportPublicKey API call. */
-	static readonly IMPORT_PUBLIC_KEY: string[] = [
+	static readonly ImportPublicKey: string[] = [
 		"ivs:ImportPublicKey",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the InsertAdBreak API call. */
-	static readonly INSERT_AD_BREAK: string[] = ["ivs:InsertAdBreak"];
+	static readonly InsertAdBreak: string[] = ["ivs:InsertAdBreak"];
 	/** IAM actions required for the ListAdConfigurations API call. */
-	static readonly LIST_AD_CONFIGURATIONS: string[] = [
-		"ivs:ListAdConfigurations",
-	];
+	static readonly ListAdConfigurations: string[] = ["ivs:ListAdConfigurations"];
 	/** IAM actions required for the ListChannels API call. */
-	static readonly LIST_CHANNELS: string[] = ["ivs:ListChannels"];
+	static readonly ListChannels: string[] = ["ivs:ListChannels"];
 	/** IAM actions required for the ListCompositions API call. */
-	static readonly LIST_COMPOSITIONS: string[] = ["ivs:ListCompositions"];
+	static readonly ListCompositions: string[] = ["ivs:ListCompositions"];
 	/** IAM actions required for the ListEncoderConfigurations API call. */
-	static readonly LIST_ENCODER_CONFIGURATIONS: string[] = [
+	static readonly ListEncoderConfigurations: string[] = [
 		"ivs:ListEncoderConfigurations",
 	];
 	/** IAM actions required for the ListIngestConfigurations API call. */
-	static readonly LIST_INGEST_CONFIGURATIONS: string[] = [
+	static readonly ListIngestConfigurations: string[] = [
 		"ivs:ListIngestConfigurations",
 	];
 	/** IAM actions required for the ListParticipantEvents API call. */
-	static readonly LIST_PARTICIPANT_EVENTS: string[] = [
+	static readonly ListParticipantEvents: string[] = [
 		"ivs:ListParticipantEvents",
 	];
 	/** IAM actions required for the ListParticipantReplicas API call. */
-	static readonly LIST_PARTICIPANT_REPLICAS: string[] = [
+	static readonly ListParticipantReplicas: string[] = [
 		"ivs:ListParticipantReplicas",
 	];
 	/** IAM actions required for the ListParticipants API call. */
-	static readonly LIST_PARTICIPANTS: string[] = ["ivs:ListParticipants"];
+	static readonly ListParticipants: string[] = ["ivs:ListParticipants"];
 	/** IAM actions required for the ListPlaybackKeyPairs API call. */
-	static readonly LIST_PLAYBACK_KEY_PAIRS: string[] = [
-		"ivs:ListPlaybackKeyPairs",
-	];
+	static readonly ListPlaybackKeyPairs: string[] = ["ivs:ListPlaybackKeyPairs"];
 	/** IAM actions required for the ListPlaybackRestrictionPolicies API call. */
-	static readonly LIST_PLAYBACK_RESTRICTION_POLICIES: string[] = [
+	static readonly ListPlaybackRestrictionPolicies: string[] = [
 		"ivs:ListPlaybackRestrictionPolicies",
 	];
 	/** IAM actions required for the ListPublicKeys API call. */
-	static readonly LIST_PUBLIC_KEYS: string[] = ["ivs:ListPublicKeys"];
+	static readonly ListPublicKeys: string[] = ["ivs:ListPublicKeys"];
 	/** IAM actions required for the ListRecordingConfigurations API call. */
-	static readonly LIST_RECORDING_CONFIGURATIONS: string[] = [
+	static readonly ListRecordingConfigurations: string[] = [
 		"ivs:ListRecordingConfigurations",
 	];
 	/** IAM actions required for the ListStageSessions API call. */
-	static readonly LIST_STAGE_SESSIONS: string[] = ["ivs:ListStageSessions"];
+	static readonly ListStageSessions: string[] = ["ivs:ListStageSessions"];
 	/** IAM actions required for the ListStages API call. */
-	static readonly LIST_STAGES: string[] = ["ivs:ListStages"];
+	static readonly ListStages: string[] = ["ivs:ListStages"];
 	/** IAM actions required for the ListStorageConfigurations API call. */
-	static readonly LIST_STORAGE_CONFIGURATIONS: string[] = [
+	static readonly ListStorageConfigurations: string[] = [
 		"ivs:ListStorageConfigurations",
 	];
 	/** IAM actions required for the ListStreamKeys API call. */
-	static readonly LIST_STREAM_KEYS: string[] = ["ivs:ListStreamKeys"];
+	static readonly ListStreamKeys: string[] = ["ivs:ListStreamKeys"];
 	/** IAM actions required for the ListStreamSessions API call. */
-	static readonly LIST_STREAM_SESSIONS: string[] = ["ivs:ListStreamSessions"];
+	static readonly ListStreamSessions: string[] = ["ivs:ListStreamSessions"];
 	/** IAM actions required for the ListStreams API call. */
-	static readonly LIST_STREAMS: string[] = ["ivs:ListStreams"];
+	static readonly ListStreams: string[] = ["ivs:ListStreams"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"ivs:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["ivs:ListTagsForResource"];
 	/** IAM actions required for the PutMetadata API call. */
-	static readonly PUT_METADATA: string[] = ["ivs:PutMetadata"];
+	static readonly PutMetadata: string[] = ["ivs:PutMetadata"];
 	/** IAM actions required for the StartComposition API call. */
-	static readonly START_COMPOSITION: string[] = [
+	static readonly StartComposition: string[] = [
 		"ivs:StartComposition",
 		"ivs:TagResource",
 	];
 	/** IAM actions required for the StartParticipantReplication API call. */
-	static readonly START_PARTICIPANT_REPLICATION: string[] = [
+	static readonly StartParticipantReplication: string[] = [
 		"ivs:StartParticipantReplication",
 	];
 	/** IAM actions required for the StartViewerSessionRevocation API call. */
-	static readonly START_VIEWER_SESSION_REVOCATION: string[] = [
+	static readonly StartViewerSessionRevocation: string[] = [
 		"ivs:StartViewerSessionRevocation",
 	];
 	/** IAM actions required for the StopComposition API call. */
-	static readonly STOP_COMPOSITION: string[] = ["ivs:StopComposition"];
+	static readonly StopComposition: string[] = ["ivs:StopComposition"];
 	/** IAM actions required for the StopParticipantReplication API call. */
-	static readonly STOP_PARTICIPANT_REPLICATION: string[] = [
+	static readonly StopParticipantReplication: string[] = [
 		"ivs:StopParticipantReplication",
 	];
 	/** IAM actions required for the StopStream API call. */
-	static readonly STOP_STREAM: string[] = ["ivs:StopStream"];
+	static readonly StopStream: string[] = ["ivs:StopStream"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["ivs:TagResource"];
+	static readonly TagResource: string[] = ["ivs:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["ivs:UntagResource"];
+	static readonly UntagResource: string[] = ["ivs:UntagResource"];
 	/** IAM actions required for the UpdateAdConfiguration API call. */
-	static readonly UPDATE_AD_CONFIGURATION: string[] = [
+	static readonly UpdateAdConfiguration: string[] = [
 		"ivs:UpdateAdConfiguration",
 	];
 	/** IAM actions required for the UpdateChannel API call. */
-	static readonly UPDATE_CHANNEL: string[] = ["ivs:UpdateChannel"];
+	static readonly UpdateChannel: string[] = ["ivs:UpdateChannel"];
 	/** IAM actions required for the UpdateIngestConfiguration API call. */
-	static readonly UPDATE_INGEST_CONFIGURATION: string[] = [
+	static readonly UpdateIngestConfiguration: string[] = [
 		"ivs:UpdateIngestConfiguration",
 	];
 	/** IAM actions required for the UpdatePlaybackRestrictionPolicy API call. */
-	static readonly UPDATE_PLAYBACK_RESTRICTION_POLICY: string[] = [
+	static readonly UpdatePlaybackRestrictionPolicy: string[] = [
 		"ivs:UpdatePlaybackRestrictionPolicy",
 	];
 	/** IAM actions required for the UpdateStage API call. */
-	static readonly UPDATE_STAGE: string[] = ["ivs:UpdateStage"];
+	static readonly UpdateStage: string[] = ["ivs:UpdateStage"];
 }
 
 /**
@@ -1121,92 +1281,94 @@ export class IvsOperations {
  */
 export class IvsConditions {
 	/** Condition keys applicable to the CreateAdConfiguration action. */
-	static readonly CREATE_AD_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAdConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateChannel action. */
-	static readonly CREATE_CHANNEL_CONDITION_KEYS: string[] = [
+	static readonly CreateChannelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEncoderConfiguration action. */
-	static readonly CREATE_ENCODER_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateEncoderConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIngestConfiguration action. */
-	static readonly CREATE_INGEST_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateIngestConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateParticipantToken action. */
-	static readonly CREATE_PARTICIPANT_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly CreateParticipantTokenConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePlaybackRestrictionPolicy action. */
-	static readonly CREATE_PLAYBACK_RESTRICTION_POLICY_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreatePlaybackRestrictionPolicyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateRecordingConfiguration action. */
-	static readonly CREATE_RECORDING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateRecordingConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStage action. */
-	static readonly CREATE_STAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateStageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStorageConfiguration action. */
-	static readonly CREATE_STORAGE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateStorageConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamKey action. */
-	static readonly CREATE_STREAM_KEY_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamKeyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportPlaybackKeyPair action. */
-	static readonly IMPORT_PLAYBACK_KEY_PAIR_CONDITION_KEYS: string[] = [
+	static readonly ImportPlaybackKeyPairConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportPublicKey action. */
-	static readonly IMPORT_PUBLIC_KEY_CONDITION_KEYS: string[] = [
+	static readonly ImportPublicKeyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartComposition action. */
-	static readonly START_COMPOSITION_CONDITION_KEYS: string[] = [
+	static readonly StartCompositionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartParticipantReplication action. */
-	static readonly START_PARTICIPANT_REPLICATION_CONDITION_KEYS: string[] = [
+	static readonly StartParticipantReplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

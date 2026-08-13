@@ -13,170 +13,242 @@ export class BcmPricingCalculatorActions {
 	static readonly SERVICE_PREFIX = "bcm-pricing-calculator";
 
 	/** [Write] bcm-pricing-calculator:CreateBillEstimate */
-	static readonly CREATE_BILL_ESTIMATE =
+	static readonly CreateBillEstimate =
 		"bcm-pricing-calculator:CreateBillEstimate";
 	/** [Write] bcm-pricing-calculator:CreateBillScenario */
-	static readonly CREATE_BILL_SCENARIO =
+	static readonly CreateBillScenario =
 		"bcm-pricing-calculator:CreateBillScenario";
 	/** [Write] bcm-pricing-calculator:CreateBillScenarioCommitmentModification */
-	static readonly CREATE_BILL_SCENARIO_COMMITMENT_MODIFICATION =
+	static readonly CreateBillScenarioCommitmentModification =
 		"bcm-pricing-calculator:CreateBillScenarioCommitmentModification";
 	/** [Write] bcm-pricing-calculator:CreateBillScenarioUsageModification */
-	static readonly CREATE_BILL_SCENARIO_USAGE_MODIFICATION =
+	static readonly CreateBillScenarioUsageModification =
 		"bcm-pricing-calculator:CreateBillScenarioUsageModification";
 	/** [Write] bcm-pricing-calculator:CreateWorkloadEstimate */
-	static readonly CREATE_WORKLOAD_ESTIMATE =
+	static readonly CreateWorkloadEstimate =
 		"bcm-pricing-calculator:CreateWorkloadEstimate";
 	/** [Write] bcm-pricing-calculator:CreateWorkloadEstimateUsage */
-	static readonly CREATE_WORKLOAD_ESTIMATE_USAGE =
+	static readonly CreateWorkloadEstimateUsage =
 		"bcm-pricing-calculator:CreateWorkloadEstimateUsage";
 	/** [Write] bcm-pricing-calculator:DeleteBillEstimate */
-	static readonly DELETE_BILL_ESTIMATE =
+	static readonly DeleteBillEstimate =
 		"bcm-pricing-calculator:DeleteBillEstimate";
 	/** [Write] bcm-pricing-calculator:DeleteBillScenario */
-	static readonly DELETE_BILL_SCENARIO =
+	static readonly DeleteBillScenario =
 		"bcm-pricing-calculator:DeleteBillScenario";
 	/** [Write] bcm-pricing-calculator:DeleteBillScenarioCommitmentModification */
-	static readonly DELETE_BILL_SCENARIO_COMMITMENT_MODIFICATION =
+	static readonly DeleteBillScenarioCommitmentModification =
 		"bcm-pricing-calculator:DeleteBillScenarioCommitmentModification";
 	/** [Write] bcm-pricing-calculator:DeleteBillScenarioUsageModification */
-	static readonly DELETE_BILL_SCENARIO_USAGE_MODIFICATION =
+	static readonly DeleteBillScenarioUsageModification =
 		"bcm-pricing-calculator:DeleteBillScenarioUsageModification";
 	/** [Write] bcm-pricing-calculator:DeleteWorkloadEstimate */
-	static readonly DELETE_WORKLOAD_ESTIMATE =
+	static readonly DeleteWorkloadEstimate =
 		"bcm-pricing-calculator:DeleteWorkloadEstimate";
 	/** [Write] bcm-pricing-calculator:DeleteWorkloadEstimateUsage */
-	static readonly DELETE_WORKLOAD_ESTIMATE_USAGE =
+	static readonly DeleteWorkloadEstimateUsage =
 		"bcm-pricing-calculator:DeleteWorkloadEstimateUsage";
 	/** [Read] bcm-pricing-calculator:GetBillEstimate */
-	static readonly GET_BILL_ESTIMATE = "bcm-pricing-calculator:GetBillEstimate";
+	static readonly actionGetBillEstimate =
+		"bcm-pricing-calculator:GetBillEstimate";
 	/** [Read] bcm-pricing-calculator:GetBillScenario */
-	static readonly GET_BILL_SCENARIO = "bcm-pricing-calculator:GetBillScenario";
+	static readonly actionGetBillScenario =
+		"bcm-pricing-calculator:GetBillScenario";
 	/** [Read] bcm-pricing-calculator:GetPreferences */
-	static readonly GET_PREFERENCES = "bcm-pricing-calculator:GetPreferences";
+	static readonly actionGetPreferences =
+		"bcm-pricing-calculator:GetPreferences";
 	/** [Read] bcm-pricing-calculator:GetWorkloadEstimate */
-	static readonly GET_WORKLOAD_ESTIMATE =
+	static readonly actionGetWorkloadEstimate =
 		"bcm-pricing-calculator:GetWorkloadEstimate";
 	/** [List] bcm-pricing-calculator:ListBillEstimateCommitments */
-	static readonly LIST_BILL_ESTIMATE_COMMITMENTS =
+	static readonly ListBillEstimateCommitments =
 		"bcm-pricing-calculator:ListBillEstimateCommitments";
 	/** [List] bcm-pricing-calculator:ListBillEstimateInputCommitmentModifications */
-	static readonly LIST_BILL_ESTIMATE_INPUT_COMMITMENT_MODIFICATIONS =
+	static readonly ListBillEstimateInputCommitmentModifications =
 		"bcm-pricing-calculator:ListBillEstimateInputCommitmentModifications";
 	/** [List] bcm-pricing-calculator:ListBillEstimateInputUsageModifications */
-	static readonly LIST_BILL_ESTIMATE_INPUT_USAGE_MODIFICATIONS =
+	static readonly ListBillEstimateInputUsageModifications =
 		"bcm-pricing-calculator:ListBillEstimateInputUsageModifications";
 	/** [List] bcm-pricing-calculator:ListBillEstimateLineItems */
-	static readonly LIST_BILL_ESTIMATE_LINE_ITEMS =
+	static readonly ListBillEstimateLineItems =
 		"bcm-pricing-calculator:ListBillEstimateLineItems";
 	/** [List] bcm-pricing-calculator:ListBillEstimates */
-	static readonly LIST_BILL_ESTIMATES =
+	static readonly ListBillEstimates =
 		"bcm-pricing-calculator:ListBillEstimates";
 	/** [List] bcm-pricing-calculator:ListBillScenarioCommitmentModifications */
-	static readonly LIST_BILL_SCENARIO_COMMITMENT_MODIFICATIONS =
+	static readonly ListBillScenarioCommitmentModifications =
 		"bcm-pricing-calculator:ListBillScenarioCommitmentModifications";
 	/** [List] bcm-pricing-calculator:ListBillScenarioUsageModifications */
-	static readonly LIST_BILL_SCENARIO_USAGE_MODIFICATIONS =
+	static readonly ListBillScenarioUsageModifications =
 		"bcm-pricing-calculator:ListBillScenarioUsageModifications";
 	/** [List] bcm-pricing-calculator:ListBillScenarios */
-	static readonly LIST_BILL_SCENARIOS =
+	static readonly ListBillScenarios =
 		"bcm-pricing-calculator:ListBillScenarios";
 	/** [Tagging] bcm-pricing-calculator:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"bcm-pricing-calculator:ListTagsForResource";
 	/** [List] bcm-pricing-calculator:ListWorkloadEstimateUsage */
-	static readonly LIST_WORKLOAD_ESTIMATE_USAGE =
+	static readonly ListWorkloadEstimateUsage =
 		"bcm-pricing-calculator:ListWorkloadEstimateUsage";
 	/** [List] bcm-pricing-calculator:ListWorkloadEstimates */
-	static readonly LIST_WORKLOAD_ESTIMATES =
+	static readonly ListWorkloadEstimates =
 		"bcm-pricing-calculator:ListWorkloadEstimates";
 	/** [Tagging] bcm-pricing-calculator:TagResource */
-	static readonly TAG_RESOURCE = "bcm-pricing-calculator:TagResource";
+	static readonly TagResource = "bcm-pricing-calculator:TagResource";
 	/** [Tagging] bcm-pricing-calculator:UntagResource */
-	static readonly UNTAG_RESOURCE = "bcm-pricing-calculator:UntagResource";
+	static readonly UntagResource = "bcm-pricing-calculator:UntagResource";
 	/** [Write] bcm-pricing-calculator:UpdateBillEstimate */
-	static readonly UPDATE_BILL_ESTIMATE =
+	static readonly UpdateBillEstimate =
 		"bcm-pricing-calculator:UpdateBillEstimate";
 	/** [Write] bcm-pricing-calculator:UpdateBillScenario */
-	static readonly UPDATE_BILL_SCENARIO =
+	static readonly UpdateBillScenario =
 		"bcm-pricing-calculator:UpdateBillScenario";
 	/** [Write] bcm-pricing-calculator:UpdateBillScenarioCommitmentModification */
-	static readonly UPDATE_BILL_SCENARIO_COMMITMENT_MODIFICATION =
+	static readonly UpdateBillScenarioCommitmentModification =
 		"bcm-pricing-calculator:UpdateBillScenarioCommitmentModification";
 	/** [Write] bcm-pricing-calculator:UpdateBillScenarioUsageModification */
-	static readonly UPDATE_BILL_SCENARIO_USAGE_MODIFICATION =
+	static readonly UpdateBillScenarioUsageModification =
 		"bcm-pricing-calculator:UpdateBillScenarioUsageModification";
 	/** [Write] bcm-pricing-calculator:UpdatePreferences */
-	static readonly UPDATE_PREFERENCES =
+	static readonly UpdatePreferences =
 		"bcm-pricing-calculator:UpdatePreferences";
 	/** [Write] bcm-pricing-calculator:UpdateWorkloadEstimate */
-	static readonly UPDATE_WORKLOAD_ESTIMATE =
+	static readonly UpdateWorkloadEstimate =
 		"bcm-pricing-calculator:UpdateWorkloadEstimate";
 	/** [Write] bcm-pricing-calculator:UpdateWorkloadEstimateUsage */
-	static readonly UPDATE_WORKLOAD_ESTIMATE_USAGE =
+	static readonly UpdateWorkloadEstimateUsage =
 		"bcm-pricing-calculator:UpdateWorkloadEstimateUsage";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BcmPricingCalculatorActions.GET_BILL_ESTIMATE,
-		BcmPricingCalculatorActions.GET_BILL_SCENARIO,
-		BcmPricingCalculatorActions.GET_PREFERENCES,
-		BcmPricingCalculatorActions.GET_WORKLOAD_ESTIMATE,
+	static readonly AllReadActions: string[] = [
+		BcmPricingCalculatorActions.actionGetBillEstimate,
+		BcmPricingCalculatorActions.actionGetBillScenario,
+		BcmPricingCalculatorActions.actionGetPreferences,
+		BcmPricingCalculatorActions.actionGetWorkloadEstimate,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BcmPricingCalculatorActions.CREATE_BILL_ESTIMATE,
-		BcmPricingCalculatorActions.CREATE_BILL_SCENARIO,
-		BcmPricingCalculatorActions.CREATE_BILL_SCENARIO_COMMITMENT_MODIFICATION,
-		BcmPricingCalculatorActions.CREATE_BILL_SCENARIO_USAGE_MODIFICATION,
-		BcmPricingCalculatorActions.CREATE_WORKLOAD_ESTIMATE,
-		BcmPricingCalculatorActions.CREATE_WORKLOAD_ESTIMATE_USAGE,
-		BcmPricingCalculatorActions.DELETE_BILL_ESTIMATE,
-		BcmPricingCalculatorActions.DELETE_BILL_SCENARIO,
-		BcmPricingCalculatorActions.DELETE_BILL_SCENARIO_COMMITMENT_MODIFICATION,
-		BcmPricingCalculatorActions.DELETE_BILL_SCENARIO_USAGE_MODIFICATION,
-		BcmPricingCalculatorActions.DELETE_WORKLOAD_ESTIMATE,
-		BcmPricingCalculatorActions.DELETE_WORKLOAD_ESTIMATE_USAGE,
-		BcmPricingCalculatorActions.UPDATE_BILL_ESTIMATE,
-		BcmPricingCalculatorActions.UPDATE_BILL_SCENARIO,
-		BcmPricingCalculatorActions.UPDATE_BILL_SCENARIO_COMMITMENT_MODIFICATION,
-		BcmPricingCalculatorActions.UPDATE_BILL_SCENARIO_USAGE_MODIFICATION,
-		BcmPricingCalculatorActions.UPDATE_PREFERENCES,
-		BcmPricingCalculatorActions.UPDATE_WORKLOAD_ESTIMATE,
-		BcmPricingCalculatorActions.UPDATE_WORKLOAD_ESTIMATE_USAGE,
+	static readonly AllWriteActions: string[] = [
+		BcmPricingCalculatorActions.CreateBillEstimate,
+		BcmPricingCalculatorActions.CreateBillScenario,
+		BcmPricingCalculatorActions.CreateBillScenarioCommitmentModification,
+		BcmPricingCalculatorActions.CreateBillScenarioUsageModification,
+		BcmPricingCalculatorActions.CreateWorkloadEstimate,
+		BcmPricingCalculatorActions.CreateWorkloadEstimateUsage,
+		BcmPricingCalculatorActions.DeleteBillEstimate,
+		BcmPricingCalculatorActions.DeleteBillScenario,
+		BcmPricingCalculatorActions.DeleteBillScenarioCommitmentModification,
+		BcmPricingCalculatorActions.DeleteBillScenarioUsageModification,
+		BcmPricingCalculatorActions.DeleteWorkloadEstimate,
+		BcmPricingCalculatorActions.DeleteWorkloadEstimateUsage,
+		BcmPricingCalculatorActions.UpdateBillEstimate,
+		BcmPricingCalculatorActions.UpdateBillScenario,
+		BcmPricingCalculatorActions.UpdateBillScenarioCommitmentModification,
+		BcmPricingCalculatorActions.UpdateBillScenarioUsageModification,
+		BcmPricingCalculatorActions.UpdatePreferences,
+		BcmPricingCalculatorActions.UpdateWorkloadEstimate,
+		BcmPricingCalculatorActions.UpdateWorkloadEstimateUsage,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BcmPricingCalculatorActions.LIST_BILL_ESTIMATE_COMMITMENTS,
-		BcmPricingCalculatorActions.LIST_BILL_ESTIMATE_INPUT_COMMITMENT_MODIFICATIONS,
-		BcmPricingCalculatorActions.LIST_BILL_ESTIMATE_INPUT_USAGE_MODIFICATIONS,
-		BcmPricingCalculatorActions.LIST_BILL_ESTIMATE_LINE_ITEMS,
-		BcmPricingCalculatorActions.LIST_BILL_ESTIMATES,
-		BcmPricingCalculatorActions.LIST_BILL_SCENARIO_COMMITMENT_MODIFICATIONS,
-		BcmPricingCalculatorActions.LIST_BILL_SCENARIO_USAGE_MODIFICATIONS,
-		BcmPricingCalculatorActions.LIST_BILL_SCENARIOS,
-		BcmPricingCalculatorActions.LIST_WORKLOAD_ESTIMATE_USAGE,
-		BcmPricingCalculatorActions.LIST_WORKLOAD_ESTIMATES,
+	static readonly AllListActions: string[] = [
+		BcmPricingCalculatorActions.ListBillEstimateCommitments,
+		BcmPricingCalculatorActions.ListBillEstimateInputCommitmentModifications,
+		BcmPricingCalculatorActions.ListBillEstimateInputUsageModifications,
+		BcmPricingCalculatorActions.ListBillEstimateLineItems,
+		BcmPricingCalculatorActions.ListBillEstimates,
+		BcmPricingCalculatorActions.ListBillScenarioCommitmentModifications,
+		BcmPricingCalculatorActions.ListBillScenarioUsageModifications,
+		BcmPricingCalculatorActions.ListBillScenarios,
+		BcmPricingCalculatorActions.ListWorkloadEstimateUsage,
+		BcmPricingCalculatorActions.ListWorkloadEstimates,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BcmPricingCalculatorActions.LIST_TAGS_FOR_RESOURCE,
-		BcmPricingCalculatorActions.TAG_RESOURCE,
-		BcmPricingCalculatorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BcmPricingCalculatorActions.ListTagsForResource,
+		BcmPricingCalculatorActions.TagResource,
+		BcmPricingCalculatorActions.UntagResource,
 	];
 }
 
-const BillEstimateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):bill-estimate/(?<billEstimateId>[^:/?]+)$",
-);
-const BillScenarioArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):bill-scenario/(?<billScenarioId>[^:/?]+)$",
-);
-const WorkloadEstimateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):workload-estimate/(?<workloadEstimateId>[^:/?]+)$",
-);
+/**
+ * Properties for building a bill-estimate ARN.
+ */
+export interface BcmPricingCalculatorBillEstimateArnProps {
+	/** The BillEstimateId component of the ARN. */
+	readonly billEstimateId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bill-estimate ARN.
+ */
+export interface BcmPricingCalculatorBillEstimateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BillEstimateId component. */
+	readonly billEstimateId: string;
+}
+
+/**
+ * Properties for building a bill-scenario ARN.
+ */
+export interface BcmPricingCalculatorBillScenarioArnProps {
+	/** The BillScenarioId component of the ARN. */
+	readonly billScenarioId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bill-scenario ARN.
+ */
+export interface BcmPricingCalculatorBillScenarioArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BillScenarioId component. */
+	readonly billScenarioId: string;
+}
+
+/**
+ * Properties for building a workload-estimate ARN.
+ */
+export interface BcmPricingCalculatorWorkloadEstimateArnProps {
+	/** The WorkloadEstimateId component of the ARN. */
+	readonly workloadEstimateId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workload-estimate ARN.
+ */
+export interface BcmPricingCalculatorWorkloadEstimateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkloadEstimateId component. */
+	readonly workloadEstimateId: string;
+}
+
+const BillEstimateArnRegex =
+	/^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):bill-estimate\/(?<billEstimateId>[^:/?]+)$/;
+const BillScenarioArnRegex =
+	/^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):bill-scenario\/(?<billScenarioId>[^:/?]+)$/;
+const WorkloadEstimateArnRegex =
+	/^arn:(?<partition>[^:]+):bcm-pricing-calculator::(?<account>[^:]*):workload-estimate\/(?<workloadEstimateId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bcm-pricing-calculator resources.
@@ -185,14 +257,7 @@ export class BcmPricingCalculatorResources {
 	/**
 	 * Builds an ARN for the bill-estimate resource.
 	 */
-	static billEstimate(props: {
-		/** The BillEstimateId component of the ARN. */
-		readonly billEstimateId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billEstimate(props: BcmPricingCalculatorBillEstimateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bcm-pricing-calculator::${props.account ?? "*"}:bill-estimate/${props.billEstimateId}`;
 	}
 
@@ -207,11 +272,9 @@ export class BcmPricingCalculatorResources {
 	 * Parses a bill-estimate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillEstimateArn(arn: string): {
-		partition: string;
-		account: string;
-		billEstimateId: string;
-	} {
+	static parseBillEstimateArn(
+		arn: string,
+	): BcmPricingCalculatorBillEstimateArnComponents {
 		const match = BillEstimateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bill-estimate ARN: ${arn}`);
@@ -226,14 +289,7 @@ export class BcmPricingCalculatorResources {
 	/**
 	 * Builds an ARN for the bill-scenario resource.
 	 */
-	static billScenario(props: {
-		/** The BillScenarioId component of the ARN. */
-		readonly billScenarioId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billScenario(props: BcmPricingCalculatorBillScenarioArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bcm-pricing-calculator::${props.account ?? "*"}:bill-scenario/${props.billScenarioId}`;
 	}
 
@@ -248,11 +304,9 @@ export class BcmPricingCalculatorResources {
 	 * Parses a bill-scenario ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillScenarioArn(arn: string): {
-		partition: string;
-		account: string;
-		billScenarioId: string;
-	} {
+	static parseBillScenarioArn(
+		arn: string,
+	): BcmPricingCalculatorBillScenarioArnComponents {
 		const match = BillScenarioArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bill-scenario ARN: ${arn}`);
@@ -267,14 +321,9 @@ export class BcmPricingCalculatorResources {
 	/**
 	 * Builds an ARN for the workload-estimate resource.
 	 */
-	static workloadEstimate(props: {
-		/** The WorkloadEstimateId component of the ARN. */
-		readonly workloadEstimateId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workloadEstimate(
+		props: BcmPricingCalculatorWorkloadEstimateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bcm-pricing-calculator::${props.account ?? "*"}:workload-estimate/${props.workloadEstimateId}`;
 	}
 
@@ -289,11 +338,9 @@ export class BcmPricingCalculatorResources {
 	 * Parses a workload-estimate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkloadEstimateArn(arn: string): {
-		partition: string;
-		account: string;
-		workloadEstimateId: string;
-	} {
+	static parseWorkloadEstimateArn(
+		arn: string,
+	): BcmPricingCalculatorWorkloadEstimateArnComponents {
 		const match = WorkloadEstimateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workload-estimate ARN: ${arn}`);
@@ -311,146 +358,150 @@ export class BcmPricingCalculatorResources {
  */
 export class BcmPricingCalculatorOperations {
 	/** IAM actions required for the BatchCreateBillScenarioCommitmentModification API call. */
-	static readonly BATCH_CREATE_BILL_SCENARIO_COMMITMENT_MODIFICATION: string[] =
-		["bcm-pricing-calculator:CreateBillScenarioCommitmentModification"];
+	static readonly BatchCreateBillScenarioCommitmentModification: string[] = [
+		"bcm-pricing-calculator:CreateBillScenarioCommitmentModification",
+	];
 	/** IAM actions required for the BatchCreateBillScenarioUsageModification API call. */
-	static readonly BATCH_CREATE_BILL_SCENARIO_USAGE_MODIFICATION: string[] = [
+	static readonly BatchCreateBillScenarioUsageModification: string[] = [
 		"bcm-pricing-calculator:CreateBillScenarioUsageModification",
 	];
 	/** IAM actions required for the BatchCreateWorkloadEstimateUsage API call. */
-	static readonly BATCH_CREATE_WORKLOAD_ESTIMATE_USAGE: string[] = [
+	static readonly BatchCreateWorkloadEstimateUsage: string[] = [
 		"bcm-pricing-calculator:CreateWorkloadEstimateUsage",
 	];
 	/** IAM actions required for the BatchDeleteBillScenarioCommitmentModification API call. */
-	static readonly BATCH_DELETE_BILL_SCENARIO_COMMITMENT_MODIFICATION: string[] =
-		["bcm-pricing-calculator:DeleteBillScenarioCommitmentModification"];
+	static readonly BatchDeleteBillScenarioCommitmentModification: string[] = [
+		"bcm-pricing-calculator:DeleteBillScenarioCommitmentModification",
+	];
 	/** IAM actions required for the BatchDeleteBillScenarioUsageModification API call. */
-	static readonly BATCH_DELETE_BILL_SCENARIO_USAGE_MODIFICATION: string[] = [
+	static readonly BatchDeleteBillScenarioUsageModification: string[] = [
 		"bcm-pricing-calculator:DeleteBillScenarioUsageModification",
 	];
 	/** IAM actions required for the BatchDeleteWorkloadEstimateUsage API call. */
-	static readonly BATCH_DELETE_WORKLOAD_ESTIMATE_USAGE: string[] = [
+	static readonly BatchDeleteWorkloadEstimateUsage: string[] = [
 		"bcm-pricing-calculator:DeleteWorkloadEstimateUsage",
 	];
 	/** IAM actions required for the BatchUpdateBillScenarioCommitmentModification API call. */
-	static readonly BATCH_UPDATE_BILL_SCENARIO_COMMITMENT_MODIFICATION: string[] =
-		["bcm-pricing-calculator:UpdateBillScenarioCommitmentModification"];
+	static readonly BatchUpdateBillScenarioCommitmentModification: string[] = [
+		"bcm-pricing-calculator:UpdateBillScenarioCommitmentModification",
+	];
 	/** IAM actions required for the BatchUpdateBillScenarioUsageModification API call. */
-	static readonly BATCH_UPDATE_BILL_SCENARIO_USAGE_MODIFICATION: string[] = [
+	static readonly BatchUpdateBillScenarioUsageModification: string[] = [
 		"bcm-pricing-calculator:UpdateBillScenarioUsageModification",
 	];
 	/** IAM actions required for the BatchUpdateWorkloadEstimateUsage API call. */
-	static readonly BATCH_UPDATE_WORKLOAD_ESTIMATE_USAGE: string[] = [
+	static readonly BatchUpdateWorkloadEstimateUsage: string[] = [
 		"bcm-pricing-calculator:UpdateWorkloadEstimateUsage",
 	];
 	/** IAM actions required for the CreateBillEstimate API call. */
-	static readonly CREATE_BILL_ESTIMATE: string[] = [
+	static readonly CreateBillEstimate: string[] = [
 		"bcm-pricing-calculator:CreateBillEstimate",
 		"bcm-pricing-calculator:TagResource",
 	];
 	/** IAM actions required for the CreateBillScenario API call. */
-	static readonly CREATE_BILL_SCENARIO: string[] = [
+	static readonly CreateBillScenario: string[] = [
 		"bcm-pricing-calculator:CreateBillScenario",
 		"bcm-pricing-calculator:TagResource",
 	];
 	/** IAM actions required for the CreateWorkloadEstimate API call. */
-	static readonly CREATE_WORKLOAD_ESTIMATE: string[] = [
+	static readonly CreateWorkloadEstimate: string[] = [
 		"bcm-pricing-calculator:CreateWorkloadEstimate",
 		"bcm-pricing-calculator:TagResource",
 	];
 	/** IAM actions required for the DeleteBillEstimate API call. */
-	static readonly DELETE_BILL_ESTIMATE: string[] = [
+	static readonly DeleteBillEstimate: string[] = [
 		"bcm-pricing-calculator:DeleteBillEstimate",
 	];
 	/** IAM actions required for the DeleteBillScenario API call. */
-	static readonly DELETE_BILL_SCENARIO: string[] = [
+	static readonly DeleteBillScenario: string[] = [
 		"bcm-pricing-calculator:DeleteBillScenario",
 	];
 	/** IAM actions required for the DeleteWorkloadEstimate API call. */
-	static readonly DELETE_WORKLOAD_ESTIMATE: string[] = [
+	static readonly DeleteWorkloadEstimate: string[] = [
 		"bcm-pricing-calculator:DeleteWorkloadEstimate",
 	];
 	/** IAM actions required for the GetBillEstimate API call. */
-	static readonly GET_BILL_ESTIMATE: string[] = [
+	static readonly opGetBillEstimate: string[] = [
 		"bcm-pricing-calculator:GetBillEstimate",
 	];
 	/** IAM actions required for the GetBillScenario API call. */
-	static readonly GET_BILL_SCENARIO: string[] = [
+	static readonly opGetBillScenario: string[] = [
 		"bcm-pricing-calculator:GetBillScenario",
 	];
 	/** IAM actions required for the GetPreferences API call. */
-	static readonly GET_PREFERENCES: string[] = [
+	static readonly opGetPreferences: string[] = [
 		"bcm-pricing-calculator:GetPreferences",
 	];
 	/** IAM actions required for the GetWorkloadEstimate API call. */
-	static readonly GET_WORKLOAD_ESTIMATE: string[] = [
+	static readonly opGetWorkloadEstimate: string[] = [
 		"bcm-pricing-calculator:GetWorkloadEstimate",
 	];
 	/** IAM actions required for the ListBillEstimateCommitments API call. */
-	static readonly LIST_BILL_ESTIMATE_COMMITMENTS: string[] = [
+	static readonly ListBillEstimateCommitments: string[] = [
 		"bcm-pricing-calculator:ListBillEstimateCommitments",
 	];
 	/** IAM actions required for the ListBillEstimateInputCommitmentModifications API call. */
-	static readonly LIST_BILL_ESTIMATE_INPUT_COMMITMENT_MODIFICATIONS: string[] =
-		["bcm-pricing-calculator:ListBillEstimateInputCommitmentModifications"];
+	static readonly ListBillEstimateInputCommitmentModifications: string[] = [
+		"bcm-pricing-calculator:ListBillEstimateInputCommitmentModifications",
+	];
 	/** IAM actions required for the ListBillEstimateInputUsageModifications API call. */
-	static readonly LIST_BILL_ESTIMATE_INPUT_USAGE_MODIFICATIONS: string[] = [
+	static readonly ListBillEstimateInputUsageModifications: string[] = [
 		"bcm-pricing-calculator:ListBillEstimateInputUsageModifications",
 	];
 	/** IAM actions required for the ListBillEstimateLineItems API call. */
-	static readonly LIST_BILL_ESTIMATE_LINE_ITEMS: string[] = [
+	static readonly ListBillEstimateLineItems: string[] = [
 		"bcm-pricing-calculator:ListBillEstimateLineItems",
 	];
 	/** IAM actions required for the ListBillEstimates API call. */
-	static readonly LIST_BILL_ESTIMATES: string[] = [
+	static readonly ListBillEstimates: string[] = [
 		"bcm-pricing-calculator:ListBillEstimates",
 	];
 	/** IAM actions required for the ListBillScenarioCommitmentModifications API call. */
-	static readonly LIST_BILL_SCENARIO_COMMITMENT_MODIFICATIONS: string[] = [
+	static readonly ListBillScenarioCommitmentModifications: string[] = [
 		"bcm-pricing-calculator:ListBillScenarioCommitmentModifications",
 	];
 	/** IAM actions required for the ListBillScenarioUsageModifications API call. */
-	static readonly LIST_BILL_SCENARIO_USAGE_MODIFICATIONS: string[] = [
+	static readonly ListBillScenarioUsageModifications: string[] = [
 		"bcm-pricing-calculator:ListBillScenarioUsageModifications",
 	];
 	/** IAM actions required for the ListBillScenarios API call. */
-	static readonly LIST_BILL_SCENARIOS: string[] = [
+	static readonly ListBillScenarios: string[] = [
 		"bcm-pricing-calculator:ListBillScenarios",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"bcm-pricing-calculator:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWorkloadEstimateUsage API call. */
-	static readonly LIST_WORKLOAD_ESTIMATE_USAGE: string[] = [
+	static readonly ListWorkloadEstimateUsage: string[] = [
 		"bcm-pricing-calculator:ListWorkloadEstimateUsage",
 	];
 	/** IAM actions required for the ListWorkloadEstimates API call. */
-	static readonly LIST_WORKLOAD_ESTIMATES: string[] = [
+	static readonly ListWorkloadEstimates: string[] = [
 		"bcm-pricing-calculator:ListWorkloadEstimates",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"bcm-pricing-calculator:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"bcm-pricing-calculator:UntagResource",
 	];
 	/** IAM actions required for the UpdateBillEstimate API call. */
-	static readonly UPDATE_BILL_ESTIMATE: string[] = [
+	static readonly UpdateBillEstimate: string[] = [
 		"bcm-pricing-calculator:UpdateBillEstimate",
 	];
 	/** IAM actions required for the UpdateBillScenario API call. */
-	static readonly UPDATE_BILL_SCENARIO: string[] = [
+	static readonly UpdateBillScenario: string[] = [
 		"bcm-pricing-calculator:UpdateBillScenario",
 	];
 	/** IAM actions required for the UpdatePreferences API call. */
-	static readonly UPDATE_PREFERENCES: string[] = [
+	static readonly UpdatePreferences: string[] = [
 		"bcm-pricing-calculator:UpdatePreferences",
 	];
 	/** IAM actions required for the UpdateWorkloadEstimate API call. */
-	static readonly UPDATE_WORKLOAD_ESTIMATE: string[] = [
+	static readonly UpdateWorkloadEstimate: string[] = [
 		"bcm-pricing-calculator:UpdateWorkloadEstimate",
 	];
 }
@@ -460,29 +511,29 @@ export class BcmPricingCalculatorOperations {
  */
 export class BcmPricingCalculatorConditions {
 	/** Condition keys applicable to the CreateBillScenario action. */
-	static readonly CREATE_BILL_SCENARIO_CONDITION_KEYS: string[] = [
+	static readonly CreateBillScenarioConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkloadEstimate action. */
-	static readonly CREATE_WORKLOAD_ESTIMATE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkloadEstimateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

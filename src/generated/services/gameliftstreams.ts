@@ -13,129 +13,182 @@ export class GameliftstreamsActions {
 	static readonly SERVICE_PREFIX = "gameliftstreams";
 
 	/** [Write] gameliftstreams:AddStreamGroupLocations */
-	static readonly ADD_STREAM_GROUP_LOCATIONS =
+	static readonly AddStreamGroupLocations =
 		"gameliftstreams:AddStreamGroupLocations";
 	/** [Write] gameliftstreams:AssociateApplications */
-	static readonly ASSOCIATE_APPLICATIONS =
+	static readonly AssociateApplications =
 		"gameliftstreams:AssociateApplications";
 	/** [Write] gameliftstreams:CreateApplication */
-	static readonly CREATE_APPLICATION = "gameliftstreams:CreateApplication";
+	static readonly CreateApplication = "gameliftstreams:CreateApplication";
 	/** [Write] gameliftstreams:CreateStreamGroup */
-	static readonly CREATE_STREAM_GROUP = "gameliftstreams:CreateStreamGroup";
+	static readonly CreateStreamGroup = "gameliftstreams:CreateStreamGroup";
 	/** [Write] gameliftstreams:CreateStreamSessionAdminShell */
-	static readonly CREATE_STREAM_SESSION_ADMIN_SHELL =
+	static readonly CreateStreamSessionAdminShell =
 		"gameliftstreams:CreateStreamSessionAdminShell";
 	/** [Write] gameliftstreams:CreateStreamSessionConnection */
-	static readonly CREATE_STREAM_SESSION_CONNECTION =
+	static readonly CreateStreamSessionConnection =
 		"gameliftstreams:CreateStreamSessionConnection";
 	/** [Write] gameliftstreams:CreateStreamUrl */
-	static readonly CREATE_STREAM_URL = "gameliftstreams:CreateStreamUrl";
+	static readonly CreateStreamUrl = "gameliftstreams:CreateStreamUrl";
 	/** [Write] gameliftstreams:DeleteApplication */
-	static readonly DELETE_APPLICATION = "gameliftstreams:DeleteApplication";
+	static readonly DeleteApplication = "gameliftstreams:DeleteApplication";
 	/** [Write] gameliftstreams:DeleteStreamGroup */
-	static readonly DELETE_STREAM_GROUP = "gameliftstreams:DeleteStreamGroup";
+	static readonly DeleteStreamGroup = "gameliftstreams:DeleteStreamGroup";
 	/** [Write] gameliftstreams:DisassociateApplications */
-	static readonly DISASSOCIATE_APPLICATIONS =
+	static readonly DisassociateApplications =
 		"gameliftstreams:DisassociateApplications";
 	/** [Write] gameliftstreams:ExportStreamSessionFiles */
-	static readonly EXPORT_STREAM_SESSION_FILES =
+	static readonly ExportStreamSessionFiles =
 		"gameliftstreams:ExportStreamSessionFiles";
 	/** [Read] gameliftstreams:GetApplication */
-	static readonly GET_APPLICATION = "gameliftstreams:GetApplication";
+	static readonly actionGetApplication = "gameliftstreams:GetApplication";
 	/** [Read] gameliftstreams:GetStreamGroup */
-	static readonly GET_STREAM_GROUP = "gameliftstreams:GetStreamGroup";
+	static readonly actionGetStreamGroup = "gameliftstreams:GetStreamGroup";
 	/** [Read] gameliftstreams:GetStreamSession */
-	static readonly GET_STREAM_SESSION = "gameliftstreams:GetStreamSession";
+	static readonly actionGetStreamSession = "gameliftstreams:GetStreamSession";
 	/** [Read] gameliftstreams:GetStreamUrl */
-	static readonly GET_STREAM_URL = "gameliftstreams:GetStreamUrl";
+	static readonly actionGetStreamUrl = "gameliftstreams:GetStreamUrl";
 	/** [List] gameliftstreams:ListApplicationShaderCaches */
-	static readonly LIST_APPLICATION_SHADER_CACHES =
+	static readonly ListApplicationShaderCaches =
 		"gameliftstreams:ListApplicationShaderCaches";
 	/** [List] gameliftstreams:ListApplications */
-	static readonly LIST_APPLICATIONS = "gameliftstreams:ListApplications";
+	static readonly ListApplications = "gameliftstreams:ListApplications";
 	/** [List] gameliftstreams:ListStreamGroups */
-	static readonly LIST_STREAM_GROUPS = "gameliftstreams:ListStreamGroups";
+	static readonly ListStreamGroups = "gameliftstreams:ListStreamGroups";
 	/** [Read] gameliftstreams:ListStreamSessions */
-	static readonly LIST_STREAM_SESSIONS = "gameliftstreams:ListStreamSessions";
+	static readonly ListStreamSessions = "gameliftstreams:ListStreamSessions";
 	/** [Read] gameliftstreams:ListStreamSessionsByAccount */
-	static readonly LIST_STREAM_SESSIONS_BY_ACCOUNT =
+	static readonly ListStreamSessionsByAccount =
 		"gameliftstreams:ListStreamSessionsByAccount";
 	/** [List] gameliftstreams:ListStreamUrls */
-	static readonly LIST_STREAM_URLS = "gameliftstreams:ListStreamUrls";
+	static readonly ListStreamUrls = "gameliftstreams:ListStreamUrls";
 	/** [Read] gameliftstreams:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"gameliftstreams:ListTagsForResource";
+	static readonly ListTagsForResource = "gameliftstreams:ListTagsForResource";
 	/** [Write] gameliftstreams:RemoveStreamGroupLocations */
-	static readonly REMOVE_STREAM_GROUP_LOCATIONS =
+	static readonly RemoveStreamGroupLocations =
 		"gameliftstreams:RemoveStreamGroupLocations";
 	/** [Write] gameliftstreams:RevokeStreamUrl */
-	static readonly REVOKE_STREAM_URL = "gameliftstreams:RevokeStreamUrl";
+	static readonly RevokeStreamUrl = "gameliftstreams:RevokeStreamUrl";
 	/** [Write] gameliftstreams:StartStreamSession */
-	static readonly START_STREAM_SESSION = "gameliftstreams:StartStreamSession";
+	static readonly StartStreamSession = "gameliftstreams:StartStreamSession";
 	/** [Tagging] gameliftstreams:TagResource */
-	static readonly TAG_RESOURCE = "gameliftstreams:TagResource";
+	static readonly TagResource = "gameliftstreams:TagResource";
 	/** [Write] gameliftstreams:TerminateStreamSession */
-	static readonly TERMINATE_STREAM_SESSION =
+	static readonly TerminateStreamSession =
 		"gameliftstreams:TerminateStreamSession";
 	/** [Tagging] gameliftstreams:UntagResource */
-	static readonly UNTAG_RESOURCE = "gameliftstreams:UntagResource";
+	static readonly UntagResource = "gameliftstreams:UntagResource";
 	/** [Write] gameliftstreams:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "gameliftstreams:UpdateApplication";
+	static readonly UpdateApplication = "gameliftstreams:UpdateApplication";
 	/** [Write] gameliftstreams:UpdateStreamGroup */
-	static readonly UPDATE_STREAM_GROUP = "gameliftstreams:UpdateStreamGroup";
+	static readonly UpdateStreamGroup = "gameliftstreams:UpdateStreamGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GameliftstreamsActions.GET_APPLICATION,
-		GameliftstreamsActions.GET_STREAM_GROUP,
-		GameliftstreamsActions.GET_STREAM_SESSION,
-		GameliftstreamsActions.GET_STREAM_URL,
-		GameliftstreamsActions.LIST_STREAM_SESSIONS,
-		GameliftstreamsActions.LIST_STREAM_SESSIONS_BY_ACCOUNT,
-		GameliftstreamsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		GameliftstreamsActions.actionGetApplication,
+		GameliftstreamsActions.actionGetStreamGroup,
+		GameliftstreamsActions.actionGetStreamSession,
+		GameliftstreamsActions.actionGetStreamUrl,
+		GameliftstreamsActions.ListStreamSessions,
+		GameliftstreamsActions.ListStreamSessionsByAccount,
+		GameliftstreamsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GameliftstreamsActions.ADD_STREAM_GROUP_LOCATIONS,
-		GameliftstreamsActions.ASSOCIATE_APPLICATIONS,
-		GameliftstreamsActions.CREATE_APPLICATION,
-		GameliftstreamsActions.CREATE_STREAM_GROUP,
-		GameliftstreamsActions.CREATE_STREAM_SESSION_ADMIN_SHELL,
-		GameliftstreamsActions.CREATE_STREAM_SESSION_CONNECTION,
-		GameliftstreamsActions.CREATE_STREAM_URL,
-		GameliftstreamsActions.DELETE_APPLICATION,
-		GameliftstreamsActions.DELETE_STREAM_GROUP,
-		GameliftstreamsActions.DISASSOCIATE_APPLICATIONS,
-		GameliftstreamsActions.EXPORT_STREAM_SESSION_FILES,
-		GameliftstreamsActions.REMOVE_STREAM_GROUP_LOCATIONS,
-		GameliftstreamsActions.REVOKE_STREAM_URL,
-		GameliftstreamsActions.START_STREAM_SESSION,
-		GameliftstreamsActions.TERMINATE_STREAM_SESSION,
-		GameliftstreamsActions.UPDATE_APPLICATION,
-		GameliftstreamsActions.UPDATE_STREAM_GROUP,
+	static readonly AllWriteActions: string[] = [
+		GameliftstreamsActions.AddStreamGroupLocations,
+		GameliftstreamsActions.AssociateApplications,
+		GameliftstreamsActions.CreateApplication,
+		GameliftstreamsActions.CreateStreamGroup,
+		GameliftstreamsActions.CreateStreamSessionAdminShell,
+		GameliftstreamsActions.CreateStreamSessionConnection,
+		GameliftstreamsActions.CreateStreamUrl,
+		GameliftstreamsActions.DeleteApplication,
+		GameliftstreamsActions.DeleteStreamGroup,
+		GameliftstreamsActions.DisassociateApplications,
+		GameliftstreamsActions.ExportStreamSessionFiles,
+		GameliftstreamsActions.RemoveStreamGroupLocations,
+		GameliftstreamsActions.RevokeStreamUrl,
+		GameliftstreamsActions.StartStreamSession,
+		GameliftstreamsActions.TerminateStreamSession,
+		GameliftstreamsActions.UpdateApplication,
+		GameliftstreamsActions.UpdateStreamGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GameliftstreamsActions.LIST_APPLICATION_SHADER_CACHES,
-		GameliftstreamsActions.LIST_APPLICATIONS,
-		GameliftstreamsActions.LIST_STREAM_GROUPS,
-		GameliftstreamsActions.LIST_STREAM_URLS,
+	static readonly AllListActions: string[] = [
+		GameliftstreamsActions.ListApplicationShaderCaches,
+		GameliftstreamsActions.ListApplications,
+		GameliftstreamsActions.ListStreamGroups,
+		GameliftstreamsActions.ListStreamUrls,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GameliftstreamsActions.TAG_RESOURCE,
-		GameliftstreamsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		GameliftstreamsActions.TagResource,
+		GameliftstreamsActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):gameliftstreams:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const StreamGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):gameliftstreams:(?<region>[^:]*):(?<account>[^:]*):streamgroup/(?<streamGroupId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface GameliftstreamsApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface GameliftstreamsApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a stream group ARN.
+ */
+export interface GameliftstreamsStreamGroupArnProps {
+	/** The StreamGroupId component of the ARN. */
+	readonly streamGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stream group ARN.
+ */
+export interface GameliftstreamsStreamGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamGroupId component. */
+	readonly streamGroupId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):gameliftstreams:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const StreamGroupArnRegex =
+	/^arn:(?<partition>[^:]+):gameliftstreams:(?<region>[^:]*):(?<account>[^:]*):streamgroup\/(?<streamGroupId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for gameliftstreams resources.
@@ -144,16 +197,7 @@ export class GameliftstreamsResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: GameliftstreamsApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:gameliftstreams:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -168,12 +212,9 @@ export class GameliftstreamsResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): GameliftstreamsApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -189,16 +230,7 @@ export class GameliftstreamsResources {
 	/**
 	 * Builds an ARN for the stream group resource.
 	 */
-	static streamGroup(props: {
-		/** The StreamGroupId component of the ARN. */
-		readonly streamGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamGroup(props: GameliftstreamsStreamGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:gameliftstreams:${props.region ?? "*"}:${props.account ?? "*"}:streamgroup/${props.streamGroupId}`;
 	}
 
@@ -213,12 +245,9 @@ export class GameliftstreamsResources {
 	 * Parses a stream group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamGroupId: string;
-	} {
+	static parseStreamGroupArn(
+		arn: string,
+	): GameliftstreamsStreamGroupArnComponents {
 		const match = StreamGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stream group ARN: ${arn}`);
@@ -237,119 +266,117 @@ export class GameliftstreamsResources {
  */
 export class GameliftstreamsOperations {
 	/** IAM actions required for the AddStreamGroupLocations API call. */
-	static readonly ADD_STREAM_GROUP_LOCATIONS: string[] = [
+	static readonly AddStreamGroupLocations: string[] = [
 		"gameliftstreams:AddStreamGroupLocations",
 	];
 	/** IAM actions required for the AssociateApplications API call. */
-	static readonly ASSOCIATE_APPLICATIONS: string[] = [
+	static readonly AssociateApplications: string[] = [
 		"gameliftstreams:AssociateApplications",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"gameliftstreams:CreateApplication",
 		"gameliftstreams:TagResource",
 	];
 	/** IAM actions required for the CreateStreamGroup API call. */
-	static readonly CREATE_STREAM_GROUP: string[] = [
+	static readonly CreateStreamGroup: string[] = [
 		"gameliftstreams:AssociateApplications",
 		"gameliftstreams:CreateStreamGroup",
 		"gameliftstreams:TagResource",
 	];
 	/** IAM actions required for the CreateStreamSessionAdminShell API call. */
-	static readonly CREATE_STREAM_SESSION_ADMIN_SHELL: string[] = [
+	static readonly CreateStreamSessionAdminShell: string[] = [
 		"gameliftstreams:CreateStreamSessionAdminShell",
 	];
 	/** IAM actions required for the CreateStreamSessionConnection API call. */
-	static readonly CREATE_STREAM_SESSION_CONNECTION: string[] = [
+	static readonly CreateStreamSessionConnection: string[] = [
 		"gameliftstreams:CreateStreamSessionConnection",
 	];
 	/** IAM actions required for the CreateStreamUrl API call. */
-	static readonly CREATE_STREAM_URL: string[] = [];
+	static readonly CreateStreamUrl: string[] = [];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"gameliftstreams:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteStreamGroup API call. */
-	static readonly DELETE_STREAM_GROUP: string[] = [
+	static readonly DeleteStreamGroup: string[] = [
 		"gameliftstreams:DeleteStreamGroup",
 	];
 	/** IAM actions required for the DisassociateApplications API call. */
-	static readonly DISASSOCIATE_APPLICATIONS: string[] = [
+	static readonly DisassociateApplications: string[] = [
 		"gameliftstreams:DisassociateApplications",
 	];
 	/** IAM actions required for the ExportStreamSessionFiles API call. */
-	static readonly EXPORT_STREAM_SESSION_FILES: string[] = [
+	static readonly ExportStreamSessionFiles: string[] = [
 		"gameliftstreams:ExportStreamSessionFiles",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = [
+	static readonly opGetApplication: string[] = [
 		"gameliftstreams:GetApplication",
 	];
 	/** IAM actions required for the GetStreamGroup API call. */
-	static readonly GET_STREAM_GROUP: string[] = [
+	static readonly opGetStreamGroup: string[] = [
 		"gameliftstreams:GetStreamGroup",
 	];
 	/** IAM actions required for the GetStreamSession API call. */
-	static readonly GET_STREAM_SESSION: string[] = [
+	static readonly opGetStreamSession: string[] = [
 		"gameliftstreams:GetStreamSession",
 	];
 	/** IAM actions required for the GetStreamUrl API call. */
-	static readonly GET_STREAM_URL: string[] = ["gameliftstreams:GetStreamUrl"];
+	static readonly opGetStreamUrl: string[] = ["gameliftstreams:GetStreamUrl"];
 	/** IAM actions required for the ListApplicationShaderCaches API call. */
-	static readonly LIST_APPLICATION_SHADER_CACHES: string[] = [
+	static readonly ListApplicationShaderCaches: string[] = [
 		"gameliftstreams:ListApplicationShaderCaches",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"gameliftstreams:ListApplications",
 	];
 	/** IAM actions required for the ListStreamGroups API call. */
-	static readonly LIST_STREAM_GROUPS: string[] = [
+	static readonly ListStreamGroups: string[] = [
 		"gameliftstreams:ListStreamGroups",
 	];
 	/** IAM actions required for the ListStreamSessions API call. */
-	static readonly LIST_STREAM_SESSIONS: string[] = [
+	static readonly ListStreamSessions: string[] = [
 		"gameliftstreams:ListStreamSessions",
 	];
 	/** IAM actions required for the ListStreamSessionsByAccount API call. */
-	static readonly LIST_STREAM_SESSIONS_BY_ACCOUNT: string[] = [
+	static readonly ListStreamSessionsByAccount: string[] = [
 		"gameliftstreams:ListStreamSessionsByAccount",
 	];
 	/** IAM actions required for the ListStreamUrls API call. */
-	static readonly LIST_STREAM_URLS: string[] = [
-		"gameliftstreams:ListStreamUrls",
-	];
+	static readonly ListStreamUrls: string[] = ["gameliftstreams:ListStreamUrls"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"gameliftstreams:ListTagsForResource",
 	];
 	/** IAM actions required for the RemoveStreamGroupLocations API call. */
-	static readonly REMOVE_STREAM_GROUP_LOCATIONS: string[] = [
+	static readonly RemoveStreamGroupLocations: string[] = [
 		"gameliftstreams:RemoveStreamGroupLocations",
 	];
 	/** IAM actions required for the RevokeStreamUrl API call. */
-	static readonly REVOKE_STREAM_URL: string[] = [
+	static readonly RevokeStreamUrl: string[] = [
 		"gameliftstreams:RevokeStreamUrl",
 	];
 	/** IAM actions required for the StartStreamSession API call. */
-	static readonly START_STREAM_SESSION: string[] = [
+	static readonly StartStreamSession: string[] = [
 		"iam:PassRole",
 		"gameliftstreams:StartStreamSession",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["gameliftstreams:TagResource"];
+	static readonly TagResource: string[] = ["gameliftstreams:TagResource"];
 	/** IAM actions required for the TerminateStreamSession API call. */
-	static readonly TERMINATE_STREAM_SESSION: string[] = [
+	static readonly TerminateStreamSession: string[] = [
 		"gameliftstreams:TerminateStreamSession",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["gameliftstreams:UntagResource"];
+	static readonly UntagResource: string[] = ["gameliftstreams:UntagResource"];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"gameliftstreams:UpdateApplication",
 	];
 	/** IAM actions required for the UpdateStreamGroup API call. */
-	static readonly UPDATE_STREAM_GROUP: string[] = [
+	static readonly UpdateStreamGroup: string[] = [
 		"gameliftstreams:UpdateStreamGroup",
 	];
 }
@@ -359,37 +386,37 @@ export class GameliftstreamsOperations {
  */
 export class GameliftstreamsConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamGroup action. */
-	static readonly CREATE_STREAM_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamUrl action. */
-	static readonly CREATE_STREAM_URL_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamUrlConditionKeys: string[] = [
 		"gameliftstreams:RoleArn",
 	];
 	/** Condition keys applicable to the StartStreamSession action. */
-	static readonly START_STREAM_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartStreamSessionConditionKeys: string[] = [
 		"gameliftstreams:RoleArn",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: gameliftstreams:RoleArn (ARN) */
 	static readonly ROLE_ARN = "gameliftstreams:RoleArn";
 

@@ -13,209 +13,486 @@ export class AppconfigActions {
 	static readonly SERVICE_PREFIX = "appconfig";
 
 	/** [Write] appconfig:CreateApplication */
-	static readonly CREATE_APPLICATION = "appconfig:CreateApplication";
+	static readonly CreateApplication = "appconfig:CreateApplication";
 	/** [Write] appconfig:CreateConfigurationProfile */
-	static readonly CREATE_CONFIGURATION_PROFILE =
+	static readonly CreateConfigurationProfile =
 		"appconfig:CreateConfigurationProfile";
 	/** [Write] appconfig:CreateDeploymentStrategy */
-	static readonly CREATE_DEPLOYMENT_STRATEGY =
+	static readonly CreateDeploymentStrategy =
 		"appconfig:CreateDeploymentStrategy";
 	/** [Write] appconfig:CreateEnvironment */
-	static readonly CREATE_ENVIRONMENT = "appconfig:CreateEnvironment";
+	static readonly CreateEnvironment = "appconfig:CreateEnvironment";
 	/** [Write] appconfig:CreateExtension */
-	static readonly CREATE_EXTENSION = "appconfig:CreateExtension";
+	static readonly CreateExtension = "appconfig:CreateExtension";
 	/** [Write] appconfig:CreateExtensionAssociation */
-	static readonly CREATE_EXTENSION_ASSOCIATION =
+	static readonly CreateExtensionAssociation =
 		"appconfig:CreateExtensionAssociation";
 	/** [Write] appconfig:CreateHostedConfigurationVersion */
-	static readonly CREATE_HOSTED_CONFIGURATION_VERSION =
+	static readonly CreateHostedConfigurationVersion =
 		"appconfig:CreateHostedConfigurationVersion";
 	/** [Write] appconfig:DeleteApplication */
-	static readonly DELETE_APPLICATION = "appconfig:DeleteApplication";
+	static readonly DeleteApplication = "appconfig:DeleteApplication";
 	/** [Write] appconfig:DeleteConfigurationProfile */
-	static readonly DELETE_CONFIGURATION_PROFILE =
+	static readonly DeleteConfigurationProfile =
 		"appconfig:DeleteConfigurationProfile";
 	/** [Write] appconfig:DeleteDeploymentStrategy */
-	static readonly DELETE_DEPLOYMENT_STRATEGY =
+	static readonly DeleteDeploymentStrategy =
 		"appconfig:DeleteDeploymentStrategy";
 	/** [Write] appconfig:DeleteEnvironment */
-	static readonly DELETE_ENVIRONMENT = "appconfig:DeleteEnvironment";
+	static readonly DeleteEnvironment = "appconfig:DeleteEnvironment";
 	/** [Write] appconfig:DeleteExtension */
-	static readonly DELETE_EXTENSION = "appconfig:DeleteExtension";
+	static readonly DeleteExtension = "appconfig:DeleteExtension";
 	/** [Write] appconfig:DeleteExtensionAssociation */
-	static readonly DELETE_EXTENSION_ASSOCIATION =
+	static readonly DeleteExtensionAssociation =
 		"appconfig:DeleteExtensionAssociation";
 	/** [Write] appconfig:DeleteHostedConfigurationVersion */
-	static readonly DELETE_HOSTED_CONFIGURATION_VERSION =
+	static readonly DeleteHostedConfigurationVersion =
 		"appconfig:DeleteHostedConfigurationVersion";
 	/** [Read] appconfig:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "appconfig:GetAccountSettings";
+	static readonly actionGetAccountSettings = "appconfig:GetAccountSettings";
 	/** [Read] appconfig:GetApplication */
-	static readonly GET_APPLICATION = "appconfig:GetApplication";
+	static readonly actionGetApplication = "appconfig:GetApplication";
 	/** [Read] appconfig:GetConfiguration */
-	static readonly GET_CONFIGURATION = "appconfig:GetConfiguration";
+	static readonly actionGetConfiguration = "appconfig:GetConfiguration";
 	/** [Read] appconfig:GetConfigurationProfile */
-	static readonly GET_CONFIGURATION_PROFILE =
+	static readonly actionGetConfigurationProfile =
 		"appconfig:GetConfigurationProfile";
 	/** [Read] appconfig:GetDeployment */
-	static readonly GET_DEPLOYMENT = "appconfig:GetDeployment";
+	static readonly actionGetDeployment = "appconfig:GetDeployment";
 	/** [Read] appconfig:GetDeploymentStrategy */
-	static readonly GET_DEPLOYMENT_STRATEGY = "appconfig:GetDeploymentStrategy";
+	static readonly actionGetDeploymentStrategy =
+		"appconfig:GetDeploymentStrategy";
 	/** [Read] appconfig:GetEnvironment */
-	static readonly GET_ENVIRONMENT = "appconfig:GetEnvironment";
+	static readonly actionGetEnvironment = "appconfig:GetEnvironment";
 	/** [Read] appconfig:GetExtension */
-	static readonly GET_EXTENSION = "appconfig:GetExtension";
+	static readonly actionGetExtension = "appconfig:GetExtension";
 	/** [Read] appconfig:GetExtensionAssociation */
-	static readonly GET_EXTENSION_ASSOCIATION =
+	static readonly actionGetExtensionAssociation =
 		"appconfig:GetExtensionAssociation";
 	/** [Read] appconfig:GetHostedConfigurationVersion */
-	static readonly GET_HOSTED_CONFIGURATION_VERSION =
+	static readonly actionGetHostedConfigurationVersion =
 		"appconfig:GetHostedConfigurationVersion";
 	/** [Read] appconfig:GetLatestConfiguration */
-	static readonly GET_LATEST_CONFIGURATION = "appconfig:GetLatestConfiguration";
+	static readonly actionGetLatestConfiguration =
+		"appconfig:GetLatestConfiguration";
 	/** [List] appconfig:ListApplications */
-	static readonly LIST_APPLICATIONS = "appconfig:ListApplications";
+	static readonly ListApplications = "appconfig:ListApplications";
 	/** [List] appconfig:ListConfigurationProfiles */
-	static readonly LIST_CONFIGURATION_PROFILES =
+	static readonly ListConfigurationProfiles =
 		"appconfig:ListConfigurationProfiles";
 	/** [List] appconfig:ListDeploymentStrategies */
-	static readonly LIST_DEPLOYMENT_STRATEGIES =
+	static readonly ListDeploymentStrategies =
 		"appconfig:ListDeploymentStrategies";
 	/** [List] appconfig:ListDeployments */
-	static readonly LIST_DEPLOYMENTS = "appconfig:ListDeployments";
+	static readonly ListDeployments = "appconfig:ListDeployments";
 	/** [List] appconfig:ListEnvironments */
-	static readonly LIST_ENVIRONMENTS = "appconfig:ListEnvironments";
+	static readonly ListEnvironments = "appconfig:ListEnvironments";
 	/** [List] appconfig:ListExtensionAssociations */
-	static readonly LIST_EXTENSION_ASSOCIATIONS =
+	static readonly ListExtensionAssociations =
 		"appconfig:ListExtensionAssociations";
 	/** [List] appconfig:ListExtensions */
-	static readonly LIST_EXTENSIONS = "appconfig:ListExtensions";
+	static readonly ListExtensions = "appconfig:ListExtensions";
 	/** [List] appconfig:ListHostedConfigurationVersions */
-	static readonly LIST_HOSTED_CONFIGURATION_VERSIONS =
+	static readonly ListHostedConfigurationVersions =
 		"appconfig:ListHostedConfigurationVersions";
 	/** [Read] appconfig:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "appconfig:ListTagsForResource";
+	static readonly ListTagsForResource = "appconfig:ListTagsForResource";
 	/** [Write] appconfig:StartConfigurationSession */
-	static readonly START_CONFIGURATION_SESSION =
+	static readonly StartConfigurationSession =
 		"appconfig:StartConfigurationSession";
 	/** [Write] appconfig:StartDeployment */
-	static readonly START_DEPLOYMENT = "appconfig:StartDeployment";
+	static readonly StartDeployment = "appconfig:StartDeployment";
 	/** [Write] appconfig:StopDeployment */
-	static readonly STOP_DEPLOYMENT = "appconfig:StopDeployment";
+	static readonly StopDeployment = "appconfig:StopDeployment";
 	/** [Tagging] appconfig:TagResource */
-	static readonly TAG_RESOURCE = "appconfig:TagResource";
+	static readonly TagResource = "appconfig:TagResource";
 	/** [Tagging] appconfig:UntagResource */
-	static readonly UNTAG_RESOURCE = "appconfig:UntagResource";
+	static readonly UntagResource = "appconfig:UntagResource";
 	/** [Write] appconfig:UpdateAccountSettings */
-	static readonly UPDATE_ACCOUNT_SETTINGS = "appconfig:UpdateAccountSettings";
+	static readonly UpdateAccountSettings = "appconfig:UpdateAccountSettings";
 	/** [Write] appconfig:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "appconfig:UpdateApplication";
+	static readonly UpdateApplication = "appconfig:UpdateApplication";
 	/** [Write] appconfig:UpdateConfigurationProfile */
-	static readonly UPDATE_CONFIGURATION_PROFILE =
+	static readonly UpdateConfigurationProfile =
 		"appconfig:UpdateConfigurationProfile";
 	/** [Write] appconfig:UpdateDeploymentStrategy */
-	static readonly UPDATE_DEPLOYMENT_STRATEGY =
+	static readonly UpdateDeploymentStrategy =
 		"appconfig:UpdateDeploymentStrategy";
 	/** [Write] appconfig:UpdateEnvironment */
-	static readonly UPDATE_ENVIRONMENT = "appconfig:UpdateEnvironment";
+	static readonly UpdateEnvironment = "appconfig:UpdateEnvironment";
 	/** [Write] appconfig:UpdateExtension */
-	static readonly UPDATE_EXTENSION = "appconfig:UpdateExtension";
+	static readonly UpdateExtension = "appconfig:UpdateExtension";
 	/** [Write] appconfig:UpdateExtensionAssociation */
-	static readonly UPDATE_EXTENSION_ASSOCIATION =
+	static readonly UpdateExtensionAssociation =
 		"appconfig:UpdateExtensionAssociation";
 	/** [Write] appconfig:ValidateConfiguration */
-	static readonly VALIDATE_CONFIGURATION = "appconfig:ValidateConfiguration";
+	static readonly ValidateConfiguration = "appconfig:ValidateConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppconfigActions.GET_ACCOUNT_SETTINGS,
-		AppconfigActions.GET_APPLICATION,
-		AppconfigActions.GET_CONFIGURATION,
-		AppconfigActions.GET_CONFIGURATION_PROFILE,
-		AppconfigActions.GET_DEPLOYMENT,
-		AppconfigActions.GET_DEPLOYMENT_STRATEGY,
-		AppconfigActions.GET_ENVIRONMENT,
-		AppconfigActions.GET_EXTENSION,
-		AppconfigActions.GET_EXTENSION_ASSOCIATION,
-		AppconfigActions.GET_HOSTED_CONFIGURATION_VERSION,
-		AppconfigActions.GET_LATEST_CONFIGURATION,
-		AppconfigActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AppconfigActions.actionGetAccountSettings,
+		AppconfigActions.actionGetApplication,
+		AppconfigActions.actionGetConfiguration,
+		AppconfigActions.actionGetConfigurationProfile,
+		AppconfigActions.actionGetDeployment,
+		AppconfigActions.actionGetDeploymentStrategy,
+		AppconfigActions.actionGetEnvironment,
+		AppconfigActions.actionGetExtension,
+		AppconfigActions.actionGetExtensionAssociation,
+		AppconfigActions.actionGetHostedConfigurationVersion,
+		AppconfigActions.actionGetLatestConfiguration,
+		AppconfigActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppconfigActions.CREATE_APPLICATION,
-		AppconfigActions.CREATE_CONFIGURATION_PROFILE,
-		AppconfigActions.CREATE_DEPLOYMENT_STRATEGY,
-		AppconfigActions.CREATE_ENVIRONMENT,
-		AppconfigActions.CREATE_EXTENSION,
-		AppconfigActions.CREATE_EXTENSION_ASSOCIATION,
-		AppconfigActions.CREATE_HOSTED_CONFIGURATION_VERSION,
-		AppconfigActions.DELETE_APPLICATION,
-		AppconfigActions.DELETE_CONFIGURATION_PROFILE,
-		AppconfigActions.DELETE_DEPLOYMENT_STRATEGY,
-		AppconfigActions.DELETE_ENVIRONMENT,
-		AppconfigActions.DELETE_EXTENSION,
-		AppconfigActions.DELETE_EXTENSION_ASSOCIATION,
-		AppconfigActions.DELETE_HOSTED_CONFIGURATION_VERSION,
-		AppconfigActions.START_CONFIGURATION_SESSION,
-		AppconfigActions.START_DEPLOYMENT,
-		AppconfigActions.STOP_DEPLOYMENT,
-		AppconfigActions.UPDATE_ACCOUNT_SETTINGS,
-		AppconfigActions.UPDATE_APPLICATION,
-		AppconfigActions.UPDATE_CONFIGURATION_PROFILE,
-		AppconfigActions.UPDATE_DEPLOYMENT_STRATEGY,
-		AppconfigActions.UPDATE_ENVIRONMENT,
-		AppconfigActions.UPDATE_EXTENSION,
-		AppconfigActions.UPDATE_EXTENSION_ASSOCIATION,
-		AppconfigActions.VALIDATE_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		AppconfigActions.CreateApplication,
+		AppconfigActions.CreateConfigurationProfile,
+		AppconfigActions.CreateDeploymentStrategy,
+		AppconfigActions.CreateEnvironment,
+		AppconfigActions.CreateExtension,
+		AppconfigActions.CreateExtensionAssociation,
+		AppconfigActions.CreateHostedConfigurationVersion,
+		AppconfigActions.DeleteApplication,
+		AppconfigActions.DeleteConfigurationProfile,
+		AppconfigActions.DeleteDeploymentStrategy,
+		AppconfigActions.DeleteEnvironment,
+		AppconfigActions.DeleteExtension,
+		AppconfigActions.DeleteExtensionAssociation,
+		AppconfigActions.DeleteHostedConfigurationVersion,
+		AppconfigActions.StartConfigurationSession,
+		AppconfigActions.StartDeployment,
+		AppconfigActions.StopDeployment,
+		AppconfigActions.UpdateAccountSettings,
+		AppconfigActions.UpdateApplication,
+		AppconfigActions.UpdateConfigurationProfile,
+		AppconfigActions.UpdateDeploymentStrategy,
+		AppconfigActions.UpdateEnvironment,
+		AppconfigActions.UpdateExtension,
+		AppconfigActions.UpdateExtensionAssociation,
+		AppconfigActions.ValidateConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppconfigActions.LIST_APPLICATIONS,
-		AppconfigActions.LIST_CONFIGURATION_PROFILES,
-		AppconfigActions.LIST_DEPLOYMENT_STRATEGIES,
-		AppconfigActions.LIST_DEPLOYMENTS,
-		AppconfigActions.LIST_ENVIRONMENTS,
-		AppconfigActions.LIST_EXTENSION_ASSOCIATIONS,
-		AppconfigActions.LIST_EXTENSIONS,
-		AppconfigActions.LIST_HOSTED_CONFIGURATION_VERSIONS,
+	static readonly AllListActions: string[] = [
+		AppconfigActions.ListApplications,
+		AppconfigActions.ListConfigurationProfiles,
+		AppconfigActions.ListDeploymentStrategies,
+		AppconfigActions.ListDeployments,
+		AppconfigActions.ListEnvironments,
+		AppconfigActions.ListExtensionAssociations,
+		AppconfigActions.ListExtensions,
+		AppconfigActions.ListHostedConfigurationVersions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppconfigActions.TAG_RESOURCE,
-		AppconfigActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppconfigActions.TagResource,
+		AppconfigActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const ConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/environment/(?<environmentId>[^:/?]+)/configuration/(?<configurationProfileId>[^:/?]+)$",
-);
-const ConfigurationprofileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/configurationprofile/(?<configurationProfileId>[^:/?]+)$",
-);
-const DeploymentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/environment/(?<environmentId>[^:/?]+)/deployment/(?<deploymentNumber>[^:/?]+)$",
-);
-const DeploymentstrategyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):deploymentstrategy/(?<deploymentStrategyId>[^:/?]+)$",
-);
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/environment/(?<environmentId>[^:/?]+)$",
-);
-const ExtensionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):extension/(?<extensionId>[^:/?]+)/(?<extensionVersionNumber>[^:/?]+)$",
-);
-const ExtensionassociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):extensionassociation/(?<extensionAssociationId>[^:/?]+)$",
-);
-const HostedconfigurationversionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/configurationprofile/(?<configurationProfileId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface AppconfigApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface AppconfigApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a configuration ARN.
+ */
+export interface AppconfigConfigurationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The EnvironmentId component of the ARN. */
+	readonly environmentId: string;
+	/** The ConfigurationProfileId component of the ARN. */
+	readonly configurationProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration ARN.
+ */
+export interface AppconfigConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The EnvironmentId component. */
+	readonly environmentId: string;
+	/** The ConfigurationProfileId component. */
+	readonly configurationProfileId: string;
+}
+
+/**
+ * Properties for building a configurationprofile ARN.
+ */
+export interface AppconfigConfigurationprofileArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The ConfigurationProfileId component of the ARN. */
+	readonly configurationProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configurationprofile ARN.
+ */
+export interface AppconfigConfigurationprofileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The ConfigurationProfileId component. */
+	readonly configurationProfileId: string;
+}
+
+/**
+ * Properties for building a deployment ARN.
+ */
+export interface AppconfigDeploymentArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The EnvironmentId component of the ARN. */
+	readonly environmentId: string;
+	/** The DeploymentNumber component of the ARN. */
+	readonly deploymentNumber: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deployment ARN.
+ */
+export interface AppconfigDeploymentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The EnvironmentId component. */
+	readonly environmentId: string;
+	/** The DeploymentNumber component. */
+	readonly deploymentNumber: string;
+}
+
+/**
+ * Properties for building a deploymentstrategy ARN.
+ */
+export interface AppconfigDeploymentstrategyArnProps {
+	/** The DeploymentStrategyId component of the ARN. */
+	readonly deploymentStrategyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deploymentstrategy ARN.
+ */
+export interface AppconfigDeploymentstrategyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeploymentStrategyId component. */
+	readonly deploymentStrategyId: string;
+}
+
+/**
+ * Properties for building a environment ARN.
+ */
+export interface AppconfigEnvironmentArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The EnvironmentId component of the ARN. */
+	readonly environmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface AppconfigEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The EnvironmentId component. */
+	readonly environmentId: string;
+}
+
+/**
+ * Properties for building a extension ARN.
+ */
+export interface AppconfigExtensionArnProps {
+	/** The ExtensionId component of the ARN. */
+	readonly extensionId: string;
+	/** The ExtensionVersionNumber component of the ARN. */
+	readonly extensionVersionNumber: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a extension ARN.
+ */
+export interface AppconfigExtensionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExtensionId component. */
+	readonly extensionId: string;
+	/** The ExtensionVersionNumber component. */
+	readonly extensionVersionNumber: string;
+}
+
+/**
+ * Properties for building a extensionassociation ARN.
+ */
+export interface AppconfigExtensionassociationArnProps {
+	/** The ExtensionAssociationId component of the ARN. */
+	readonly extensionAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a extensionassociation ARN.
+ */
+export interface AppconfigExtensionassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExtensionAssociationId component. */
+	readonly extensionAssociationId: string;
+}
+
+/**
+ * Properties for building a hostedconfigurationversion ARN.
+ */
+export interface AppconfigHostedconfigurationversionArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The ConfigurationProfileId component of the ARN. */
+	readonly configurationProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a hostedconfigurationversion ARN.
+ */
+export interface AppconfigHostedconfigurationversionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The ConfigurationProfileId component. */
+	readonly configurationProfileId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const ConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/environment\/(?<environmentId>[^:/?]+)\/configuration\/(?<configurationProfileId>[^:/?]+)$/;
+const ConfigurationprofileArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/configurationprofile\/(?<configurationProfileId>[^:/?]+)$/;
+const DeploymentArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/environment\/(?<environmentId>[^:/?]+)\/deployment\/(?<deploymentNumber>[^:/?]+)$/;
+const DeploymentstrategyArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):deploymentstrategy\/(?<deploymentStrategyId>[^:/?]+)$/;
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/environment\/(?<environmentId>[^:/?]+)$/;
+const ExtensionArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):extension\/(?<extensionId>[^:/?]+)\/(?<extensionVersionNumber>[^:/?]+)$/;
+const ExtensionassociationArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):extensionassociation\/(?<extensionAssociationId>[^:/?]+)$/;
+const HostedconfigurationversionArnRegex =
+	/^arn:(?<partition>[^:]+):appconfig:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/configurationprofile\/(?<configurationProfileId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appconfig resources.
@@ -224,16 +501,7 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: AppconfigApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -248,12 +516,7 @@ export class AppconfigResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): AppconfigApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -269,20 +532,7 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the configuration resource.
 	 */
-	static configuration(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The EnvironmentId component of the ARN. */
-		readonly environmentId: string;
-		/** The ConfigurationProfileId component of the ARN. */
-		readonly configurationProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuration(props: AppconfigConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/environment/${props.environmentId}/configuration/${props.configurationProfileId}`;
 	}
 
@@ -297,14 +547,9 @@ export class AppconfigResources {
 	 * Parses a configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		environmentId: string;
-		configurationProfileId: string;
-	} {
+	static parseConfigurationArn(
+		arn: string,
+	): AppconfigConfigurationArnComponents {
 		const match = ConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration ARN: ${arn}`);
@@ -322,18 +567,9 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the configurationprofile resource.
 	 */
-	static configurationprofile(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The ConfigurationProfileId component of the ARN. */
-		readonly configurationProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configurationprofile(
+		props: AppconfigConfigurationprofileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/configurationprofile/${props.configurationProfileId}`;
 	}
 
@@ -348,13 +584,9 @@ export class AppconfigResources {
 	 * Parses a configurationprofile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationprofileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		configurationProfileId: string;
-	} {
+	static parseConfigurationprofileArn(
+		arn: string,
+	): AppconfigConfigurationprofileArnComponents {
 		const match = ConfigurationprofileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configurationprofile ARN: ${arn}`);
@@ -371,20 +603,7 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the deployment resource.
 	 */
-	static deployment(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The EnvironmentId component of the ARN. */
-		readonly environmentId: string;
-		/** The DeploymentNumber component of the ARN. */
-		readonly deploymentNumber: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deployment(props: AppconfigDeploymentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/environment/${props.environmentId}/deployment/${props.deploymentNumber}`;
 	}
 
@@ -399,14 +618,7 @@ export class AppconfigResources {
 	 * Parses a deployment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		environmentId: string;
-		deploymentNumber: string;
-	} {
+	static parseDeploymentArn(arn: string): AppconfigDeploymentArnComponents {
 		const match = DeploymentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deployment ARN: ${arn}`);
@@ -424,16 +636,9 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the deploymentstrategy resource.
 	 */
-	static deploymentstrategy(props: {
-		/** The DeploymentStrategyId component of the ARN. */
-		readonly deploymentStrategyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentstrategy(
+		props: AppconfigDeploymentstrategyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:deploymentstrategy/${props.deploymentStrategyId}`;
 	}
 
@@ -448,12 +653,9 @@ export class AppconfigResources {
 	 * Parses a deploymentstrategy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentstrategyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deploymentStrategyId: string;
-	} {
+	static parseDeploymentstrategyArn(
+		arn: string,
+	): AppconfigDeploymentstrategyArnComponents {
 		const match = DeploymentstrategyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deploymentstrategy ARN: ${arn}`);
@@ -469,18 +671,7 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The EnvironmentId component of the ARN. */
-		readonly environmentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: AppconfigEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/environment/${props.environmentId}`;
 	}
 
@@ -495,13 +686,7 @@ export class AppconfigResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		environmentId: string;
-	} {
+	static parseEnvironmentArn(arn: string): AppconfigEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -518,18 +703,7 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the extension resource.
 	 */
-	static extension(props: {
-		/** The ExtensionId component of the ARN. */
-		readonly extensionId: string;
-		/** The ExtensionVersionNumber component of the ARN. */
-		readonly extensionVersionNumber: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static extension(props: AppconfigExtensionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:extension/${props.extensionId}/${props.extensionVersionNumber}`;
 	}
 
@@ -544,13 +718,7 @@ export class AppconfigResources {
 	 * Parses a extension ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExtensionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		extensionId: string;
-		extensionVersionNumber: string;
-	} {
+	static parseExtensionArn(arn: string): AppconfigExtensionArnComponents {
 		const match = ExtensionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid extension ARN: ${arn}`);
@@ -567,16 +735,9 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the extensionassociation resource.
 	 */
-	static extensionassociation(props: {
-		/** The ExtensionAssociationId component of the ARN. */
-		readonly extensionAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static extensionassociation(
+		props: AppconfigExtensionassociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:extensionassociation/${props.extensionAssociationId}`;
 	}
 
@@ -591,12 +752,9 @@ export class AppconfigResources {
 	 * Parses a extensionassociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExtensionassociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		extensionAssociationId: string;
-	} {
+	static parseExtensionassociationArn(
+		arn: string,
+	): AppconfigExtensionassociationArnComponents {
 		const match = ExtensionassociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid extensionassociation ARN: ${arn}`);
@@ -612,18 +770,9 @@ export class AppconfigResources {
 	/**
 	 * Builds an ARN for the hostedconfigurationversion resource.
 	 */
-	static hostedconfigurationversion(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The ConfigurationProfileId component of the ARN. */
-		readonly configurationProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static hostedconfigurationversion(
+		props: AppconfigHostedconfigurationversionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appconfig:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/configurationprofile/${props.configurationProfileId}`;
 	}
 
@@ -638,13 +787,9 @@ export class AppconfigResources {
 	 * Parses a hostedconfigurationversion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHostedconfigurationversionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		configurationProfileId: string;
-	} {
+	static parseHostedconfigurationversionArn(
+		arn: string,
+	): AppconfigHostedconfigurationversionArnComponents {
 		const match = HostedconfigurationversionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid hostedconfigurationversion ARN: ${arn}`);
@@ -664,202 +809,196 @@ export class AppconfigResources {
  */
 export class AppconfigOperations {
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"appconfig:CreateApplication",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateConfigurationProfile API call. */
-	static readonly CREATE_CONFIGURATION_PROFILE: string[] = [
+	static readonly CreateConfigurationProfile: string[] = [
 		"appconfig:CreateConfigurationProfile",
 		"iam:PassRole",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateDeploymentStrategy API call. */
-	static readonly CREATE_DEPLOYMENT_STRATEGY: string[] = [
+	static readonly CreateDeploymentStrategy: string[] = [
 		"appconfig:CreateDeploymentStrategy",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateEnvironment API call. */
-	static readonly CREATE_ENVIRONMENT: string[] = [
+	static readonly CreateEnvironment: string[] = [
 		"appconfig:CreateEnvironment",
 		"iam:PassRole",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateExperimentDefinition API call. */
-	static readonly CREATE_EXPERIMENT_DEFINITION: string[] = [
+	static readonly CreateExperimentDefinition: string[] = [
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateExtension API call. */
-	static readonly CREATE_EXTENSION: string[] = [
+	static readonly CreateExtension: string[] = [
 		"appconfig:CreateExtension",
 		"iam:PassRole",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateExtensionAssociation API call. */
-	static readonly CREATE_EXTENSION_ASSOCIATION: string[] = [
+	static readonly CreateExtensionAssociation: string[] = [
 		"appconfig:CreateExtensionAssociation",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the CreateHostedConfigurationVersion API call. */
-	static readonly CREATE_HOSTED_CONFIGURATION_VERSION: string[] = [
+	static readonly CreateHostedConfigurationVersion: string[] = [
 		"appconfig:CreateHostedConfigurationVersion",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
-		"appconfig:DeleteApplication",
-	];
+	static readonly DeleteApplication: string[] = ["appconfig:DeleteApplication"];
 	/** IAM actions required for the DeleteConfigurationProfile API call. */
-	static readonly DELETE_CONFIGURATION_PROFILE: string[] = [
+	static readonly DeleteConfigurationProfile: string[] = [
 		"appconfig:DeleteConfigurationProfile",
 	];
 	/** IAM actions required for the DeleteDeploymentStrategy API call. */
-	static readonly DELETE_DEPLOYMENT_STRATEGY: string[] = [
+	static readonly DeleteDeploymentStrategy: string[] = [
 		"appconfig:DeleteDeploymentStrategy",
 	];
 	/** IAM actions required for the DeleteEnvironment API call. */
-	static readonly DELETE_ENVIRONMENT: string[] = [
-		"appconfig:DeleteEnvironment",
-	];
+	static readonly DeleteEnvironment: string[] = ["appconfig:DeleteEnvironment"];
 	/** IAM actions required for the DeleteExperimentDefinition API call. */
-	static readonly DELETE_EXPERIMENT_DEFINITION: string[] = [];
+	static readonly DeleteExperimentDefinition: string[] = [];
 	/** IAM actions required for the DeleteExtension API call. */
-	static readonly DELETE_EXTENSION: string[] = ["appconfig:DeleteExtension"];
+	static readonly DeleteExtension: string[] = ["appconfig:DeleteExtension"];
 	/** IAM actions required for the DeleteExtensionAssociation API call. */
-	static readonly DELETE_EXTENSION_ASSOCIATION: string[] = [
+	static readonly DeleteExtensionAssociation: string[] = [
 		"appconfig:DeleteExtensionAssociation",
 	];
 	/** IAM actions required for the DeleteHostedConfigurationVersion API call. */
-	static readonly DELETE_HOSTED_CONFIGURATION_VERSION: string[] = [
+	static readonly DeleteHostedConfigurationVersion: string[] = [
 		"appconfig:DeleteHostedConfigurationVersion",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
-	static readonly GET_ACCOUNT_SETTINGS: string[] = [
+	static readonly opGetAccountSettings: string[] = [
 		"appconfig:GetAccountSettings",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = ["appconfig:GetApplication"];
+	static readonly opGetApplication: string[] = ["appconfig:GetApplication"];
 	/** IAM actions required for the GetConfiguration API call. */
-	static readonly GET_CONFIGURATION: string[] = ["appconfig:GetConfiguration"];
+	static readonly opGetConfiguration: string[] = ["appconfig:GetConfiguration"];
 	/** IAM actions required for the GetConfigurationProfile API call. */
-	static readonly GET_CONFIGURATION_PROFILE: string[] = [
+	static readonly opGetConfigurationProfile: string[] = [
 		"appconfig:GetConfigurationProfile",
 	];
 	/** IAM actions required for the GetDeployment API call. */
-	static readonly GET_DEPLOYMENT: string[] = ["appconfig:GetDeployment"];
+	static readonly opGetDeployment: string[] = ["appconfig:GetDeployment"];
 	/** IAM actions required for the GetDeploymentStrategy API call. */
-	static readonly GET_DEPLOYMENT_STRATEGY: string[] = [
+	static readonly opGetDeploymentStrategy: string[] = [
 		"appconfig:GetDeploymentStrategy",
 	];
 	/** IAM actions required for the GetEnvironment API call. */
-	static readonly GET_ENVIRONMENT: string[] = ["appconfig:GetEnvironment"];
+	static readonly opGetEnvironment: string[] = ["appconfig:GetEnvironment"];
 	/** IAM actions required for the GetExperimentDefinition API call. */
-	static readonly GET_EXPERIMENT_DEFINITION: string[] = [];
+	static readonly opGetExperimentDefinition: string[] = [];
 	/** IAM actions required for the GetExperimentRun API call. */
-	static readonly GET_EXPERIMENT_RUN: string[] = [];
+	static readonly opGetExperimentRun: string[] = [];
 	/** IAM actions required for the GetExtension API call. */
-	static readonly GET_EXTENSION: string[] = ["appconfig:GetExtension"];
+	static readonly opGetExtension: string[] = ["appconfig:GetExtension"];
 	/** IAM actions required for the GetExtensionAssociation API call. */
-	static readonly GET_EXTENSION_ASSOCIATION: string[] = [
+	static readonly opGetExtensionAssociation: string[] = [
 		"appconfig:GetExtensionAssociation",
 	];
 	/** IAM actions required for the GetHostedConfigurationVersion API call. */
-	static readonly GET_HOSTED_CONFIGURATION_VERSION: string[] = [
+	static readonly opGetHostedConfigurationVersion: string[] = [
 		"appconfig:GetHostedConfigurationVersion",
 	];
 	/** IAM actions required for the GetLatestConfiguration API call. */
-	static readonly GET_LATEST_CONFIGURATION: string[] = [
+	static readonly opGetLatestConfiguration: string[] = [
 		"appconfig:GetLatestConfiguration",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = ["appconfig:ListApplications"];
+	static readonly ListApplications: string[] = ["appconfig:ListApplications"];
 	/** IAM actions required for the ListConfigurationProfiles API call. */
-	static readonly LIST_CONFIGURATION_PROFILES: string[] = [
+	static readonly ListConfigurationProfiles: string[] = [
 		"appconfig:ListConfigurationProfiles",
 	];
 	/** IAM actions required for the ListDeploymentStrategies API call. */
-	static readonly LIST_DEPLOYMENT_STRATEGIES: string[] = [
+	static readonly ListDeploymentStrategies: string[] = [
 		"appconfig:ListDeploymentStrategies",
 	];
 	/** IAM actions required for the ListDeployments API call. */
-	static readonly LIST_DEPLOYMENTS: string[] = ["appconfig:ListDeployments"];
+	static readonly ListDeployments: string[] = ["appconfig:ListDeployments"];
 	/** IAM actions required for the ListEnvironments API call. */
-	static readonly LIST_ENVIRONMENTS: string[] = ["appconfig:ListEnvironments"];
+	static readonly ListEnvironments: string[] = ["appconfig:ListEnvironments"];
 	/** IAM actions required for the ListExperimentDefinitions API call. */
-	static readonly LIST_EXPERIMENT_DEFINITIONS: string[] = [];
+	static readonly ListExperimentDefinitions: string[] = [];
 	/** IAM actions required for the ListExperimentRunEvents API call. */
-	static readonly LIST_EXPERIMENT_RUN_EVENTS: string[] = [];
+	static readonly ListExperimentRunEvents: string[] = [];
 	/** IAM actions required for the ListExperimentRuns API call. */
-	static readonly LIST_EXPERIMENT_RUNS: string[] = [];
+	static readonly ListExperimentRuns: string[] = [];
 	/** IAM actions required for the ListExtensionAssociations API call. */
-	static readonly LIST_EXTENSION_ASSOCIATIONS: string[] = [
+	static readonly ListExtensionAssociations: string[] = [
 		"appconfig:ListExtensionAssociations",
 	];
 	/** IAM actions required for the ListExtensions API call. */
-	static readonly LIST_EXTENSIONS: string[] = ["appconfig:ListExtensions"];
+	static readonly ListExtensions: string[] = ["appconfig:ListExtensions"];
 	/** IAM actions required for the ListHostedConfigurationVersions API call. */
-	static readonly LIST_HOSTED_CONFIGURATION_VERSIONS: string[] = [
+	static readonly ListHostedConfigurationVersions: string[] = [
 		"appconfig:ListHostedConfigurationVersions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"appconfig:ListTagsForResource",
 	];
 	/** IAM actions required for the StartConfigurationSession API call. */
-	static readonly START_CONFIGURATION_SESSION: string[] = [
+	static readonly StartConfigurationSession: string[] = [
 		"appconfig:StartConfigurationSession",
 	];
 	/** IAM actions required for the StartDeployment API call. */
-	static readonly START_DEPLOYMENT: string[] = [
+	static readonly StartDeployment: string[] = [
 		"appconfig:StartDeployment",
 		"appconfig:TagResource",
 	];
 	/** IAM actions required for the StartExperimentRun API call. */
-	static readonly START_EXPERIMENT_RUN: string[] = ["appconfig:TagResource"];
+	static readonly StartExperimentRun: string[] = ["appconfig:TagResource"];
 	/** IAM actions required for the StopDeployment API call. */
-	static readonly STOP_DEPLOYMENT: string[] = ["appconfig:StopDeployment"];
+	static readonly StopDeployment: string[] = ["appconfig:StopDeployment"];
 	/** IAM actions required for the StopExperimentRun API call. */
-	static readonly STOP_EXPERIMENT_RUN: string[] = [];
+	static readonly StopExperimentRun: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["appconfig:TagResource"];
+	static readonly TagResource: string[] = ["appconfig:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["appconfig:UntagResource"];
+	static readonly UntagResource: string[] = ["appconfig:UntagResource"];
 	/** IAM actions required for the UpdateAccountSettings API call. */
-	static readonly UPDATE_ACCOUNT_SETTINGS: string[] = [
+	static readonly UpdateAccountSettings: string[] = [
 		"appconfig:UpdateAccountSettings",
 	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
-		"appconfig:UpdateApplication",
-	];
+	static readonly UpdateApplication: string[] = ["appconfig:UpdateApplication"];
 	/** IAM actions required for the UpdateConfigurationProfile API call. */
-	static readonly UPDATE_CONFIGURATION_PROFILE: string[] = [
+	static readonly UpdateConfigurationProfile: string[] = [
 		"iam:PassRole",
 		"appconfig:UpdateConfigurationProfile",
 	];
 	/** IAM actions required for the UpdateDeploymentStrategy API call. */
-	static readonly UPDATE_DEPLOYMENT_STRATEGY: string[] = [
+	static readonly UpdateDeploymentStrategy: string[] = [
 		"appconfig:UpdateDeploymentStrategy",
 	];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UPDATE_ENVIRONMENT: string[] = [
+	static readonly UpdateEnvironment: string[] = [
 		"iam:PassRole",
 		"appconfig:UpdateEnvironment",
 	];
 	/** IAM actions required for the UpdateExperimentDefinition API call. */
-	static readonly UPDATE_EXPERIMENT_DEFINITION: string[] = [];
+	static readonly UpdateExperimentDefinition: string[] = [];
 	/** IAM actions required for the UpdateExperimentRun API call. */
-	static readonly UPDATE_EXPERIMENT_RUN: string[] = [];
+	static readonly UpdateExperimentRun: string[] = [];
 	/** IAM actions required for the UpdateExtension API call. */
-	static readonly UPDATE_EXTENSION: string[] = [
+	static readonly UpdateExtension: string[] = [
 		"iam:PassRole",
 		"appconfig:UpdateExtension",
 	];
 	/** IAM actions required for the UpdateExtensionAssociation API call. */
-	static readonly UPDATE_EXTENSION_ASSOCIATION: string[] = [
+	static readonly UpdateExtensionAssociation: string[] = [
 		"appconfig:UpdateExtensionAssociation",
 	];
 	/** IAM actions required for the ValidateConfiguration API call. */
-	static readonly VALIDATE_CONFIGURATION: string[] = [
+	static readonly ValidateConfiguration: string[] = [
 		"appconfig:ValidateConfiguration",
 	];
 }
@@ -869,123 +1008,123 @@ export class AppconfigOperations {
  */
 export class AppconfigConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfigurationProfile action. */
-	static readonly CREATE_CONFIGURATION_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigurationProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDeploymentStrategy action. */
-	static readonly CREATE_DEPLOYMENT_STRATEGY_CONDITION_KEYS: string[] = [
+	static readonly CreateDeploymentStrategyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEnvironment action. */
-	static readonly CREATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateExtension action. */
-	static readonly CREATE_EXTENSION_CONDITION_KEYS: string[] = [
+	static readonly CreateExtensionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateExtensionAssociation action. */
-	static readonly CREATE_EXTENSION_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreateExtensionAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetApplication action. */
-	static readonly GET_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetConfiguration action. */
-	static readonly GET_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetConfigurationProfile action. */
-	static readonly GET_CONFIGURATION_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly actionGetConfigurationProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDeployment action. */
-	static readonly GET_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetDeploymentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDeploymentStrategy action. */
-	static readonly GET_DEPLOYMENT_STRATEGY_CONDITION_KEYS: string[] = [
+	static readonly actionGetDeploymentStrategyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetEnvironment action. */
-	static readonly GET_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetExtension action. */
-	static readonly GET_EXTENSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetExtensionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetExtensionAssociation action. */
-	static readonly GET_EXTENSION_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetExtensionAssociationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLatestConfiguration action. */
-	static readonly GET_LATEST_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetLatestConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartConfigurationSession action. */
-	static readonly START_CONFIGURATION_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartConfigurationSessionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartDeployment action. */
-	static readonly START_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly StartDeploymentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateApplication action. */
-	static readonly UPDATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateConfigurationProfile action. */
-	static readonly UPDATE_CONFIGURATION_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly UpdateConfigurationProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateDeploymentStrategy action. */
-	static readonly UPDATE_DEPLOYMENT_STRATEGY_CONDITION_KEYS: string[] = [
+	static readonly UpdateDeploymentStrategyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateEnvironment action. */
-	static readonly UPDATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateExtension action. */
-	static readonly UPDATE_EXTENSION_CONDITION_KEYS: string[] = [
+	static readonly UpdateExtensionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateExtensionAssociation action. */
-	static readonly UPDATE_EXTENSION_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateExtensionAssociationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

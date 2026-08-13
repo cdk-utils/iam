@@ -13,209 +13,366 @@ export class LookoutEquipmentActions {
 	static readonly SERVICE_PREFIX = "lookoutequipment";
 
 	/** [Write] lookoutequipment:CreateDataset */
-	static readonly CREATE_DATASET = "lookoutequipment:CreateDataset";
+	static readonly CreateDataset = "lookoutequipment:CreateDataset";
 	/** [Write] lookoutequipment:CreateInferenceScheduler */
-	static readonly CREATE_INFERENCE_SCHEDULER =
+	static readonly CreateInferenceScheduler =
 		"lookoutequipment:CreateInferenceScheduler";
 	/** [Write] lookoutequipment:CreateLabel */
-	static readonly CREATE_LABEL = "lookoutequipment:CreateLabel";
+	static readonly CreateLabel = "lookoutequipment:CreateLabel";
 	/** [Write] lookoutequipment:CreateLabelGroup */
-	static readonly CREATE_LABEL_GROUP = "lookoutequipment:CreateLabelGroup";
+	static readonly CreateLabelGroup = "lookoutequipment:CreateLabelGroup";
 	/** [Write] lookoutequipment:CreateModel */
-	static readonly CREATE_MODEL = "lookoutequipment:CreateModel";
+	static readonly CreateModel = "lookoutequipment:CreateModel";
 	/** [Write] lookoutequipment:CreateRetrainingScheduler */
-	static readonly CREATE_RETRAINING_SCHEDULER =
+	static readonly CreateRetrainingScheduler =
 		"lookoutequipment:CreateRetrainingScheduler";
 	/** [Write] lookoutequipment:DeleteDataset */
-	static readonly DELETE_DATASET = "lookoutequipment:DeleteDataset";
+	static readonly DeleteDataset = "lookoutequipment:DeleteDataset";
 	/** [Write] lookoutequipment:DeleteInferenceScheduler */
-	static readonly DELETE_INFERENCE_SCHEDULER =
+	static readonly DeleteInferenceScheduler =
 		"lookoutequipment:DeleteInferenceScheduler";
 	/** [Write] lookoutequipment:DeleteLabel */
-	static readonly DELETE_LABEL = "lookoutequipment:DeleteLabel";
+	static readonly DeleteLabel = "lookoutequipment:DeleteLabel";
 	/** [Write] lookoutequipment:DeleteLabelGroup */
-	static readonly DELETE_LABEL_GROUP = "lookoutequipment:DeleteLabelGroup";
+	static readonly DeleteLabelGroup = "lookoutequipment:DeleteLabelGroup";
 	/** [Write] lookoutequipment:DeleteModel */
-	static readonly DELETE_MODEL = "lookoutequipment:DeleteModel";
+	static readonly DeleteModel = "lookoutequipment:DeleteModel";
 	/** [Write] lookoutequipment:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY =
+	static readonly DeleteResourcePolicy =
 		"lookoutequipment:DeleteResourcePolicy";
 	/** [Write] lookoutequipment:DeleteRetrainingScheduler */
-	static readonly DELETE_RETRAINING_SCHEDULER =
+	static readonly DeleteRetrainingScheduler =
 		"lookoutequipment:DeleteRetrainingScheduler";
 	/** [Read] lookoutequipment:DescribeDataIngestionJob */
-	static readonly DESCRIBE_DATA_INGESTION_JOB =
+	static readonly DescribeDataIngestionJob =
 		"lookoutequipment:DescribeDataIngestionJob";
 	/** [Read] lookoutequipment:DescribeDataset */
-	static readonly DESCRIBE_DATASET = "lookoutequipment:DescribeDataset";
+	static readonly DescribeDataset = "lookoutequipment:DescribeDataset";
 	/** [Read] lookoutequipment:DescribeInferenceScheduler */
-	static readonly DESCRIBE_INFERENCE_SCHEDULER =
+	static readonly DescribeInferenceScheduler =
 		"lookoutequipment:DescribeInferenceScheduler";
 	/** [Read] lookoutequipment:DescribeLabelGroup */
-	static readonly DESCRIBE_LABEL_GROUP = "lookoutequipment:DescribeLabelGroup";
+	static readonly DescribeLabelGroup = "lookoutequipment:DescribeLabelGroup";
 	/** [Read] lookoutequipment:DescribeModel */
-	static readonly DESCRIBE_MODEL = "lookoutequipment:DescribeModel";
+	static readonly DescribeModel = "lookoutequipment:DescribeModel";
 	/** [Read] lookoutequipment:DescribeModelVersion */
-	static readonly DESCRIBE_MODEL_VERSION =
+	static readonly DescribeModelVersion =
 		"lookoutequipment:DescribeModelVersion";
 	/** [Read] lookoutequipment:DescribeResourcePolicy */
-	static readonly DESCRIBE_RESOURCE_POLICY =
+	static readonly DescribeResourcePolicy =
 		"lookoutequipment:DescribeResourcePolicy";
 	/** [Read] lookoutequipment:DescribeRetrainingScheduler */
-	static readonly DESCRIBE_RETRAINING_SCHEDULER =
+	static readonly DescribeRetrainingScheduler =
 		"lookoutequipment:DescribeRetrainingScheduler";
 	/** [Read] lookoutequipment:Describelabel */
-	static readonly DESCRIBELABEL = "lookoutequipment:Describelabel";
+	static readonly Describelabel = "lookoutequipment:Describelabel";
 	/** [Write] lookoutequipment:ImportDataset */
-	static readonly IMPORT_DATASET = "lookoutequipment:ImportDataset";
+	static readonly ImportDataset = "lookoutequipment:ImportDataset";
 	/** [Write] lookoutequipment:ImportModelVersion */
-	static readonly IMPORT_MODEL_VERSION = "lookoutequipment:ImportModelVersion";
+	static readonly ImportModelVersion = "lookoutequipment:ImportModelVersion";
 	/** [List] lookoutequipment:ListDataIngestionJobs */
-	static readonly LIST_DATA_INGESTION_JOBS =
+	static readonly ListDataIngestionJobs =
 		"lookoutequipment:ListDataIngestionJobs";
 	/** [List] lookoutequipment:ListDatasets */
-	static readonly LIST_DATASETS = "lookoutequipment:ListDatasets";
+	static readonly ListDatasets = "lookoutequipment:ListDatasets";
 	/** [Read] lookoutequipment:ListInferenceEvents */
-	static readonly LIST_INFERENCE_EVENTS =
-		"lookoutequipment:ListInferenceEvents";
+	static readonly ListInferenceEvents = "lookoutequipment:ListInferenceEvents";
 	/** [Read] lookoutequipment:ListInferenceExecutions */
-	static readonly LIST_INFERENCE_EXECUTIONS =
+	static readonly ListInferenceExecutions =
 		"lookoutequipment:ListInferenceExecutions";
 	/** [List] lookoutequipment:ListInferenceSchedulers */
-	static readonly LIST_INFERENCE_SCHEDULERS =
+	static readonly ListInferenceSchedulers =
 		"lookoutequipment:ListInferenceSchedulers";
 	/** [List] lookoutequipment:ListLabelGroups */
-	static readonly LIST_LABEL_GROUPS = "lookoutequipment:ListLabelGroups";
+	static readonly ListLabelGroups = "lookoutequipment:ListLabelGroups";
 	/** [List] lookoutequipment:ListLabels */
-	static readonly LIST_LABELS = "lookoutequipment:ListLabels";
+	static readonly ListLabels = "lookoutequipment:ListLabels";
 	/** [List] lookoutequipment:ListModelVersions */
-	static readonly LIST_MODEL_VERSIONS = "lookoutequipment:ListModelVersions";
+	static readonly ListModelVersions = "lookoutequipment:ListModelVersions";
 	/** [List] lookoutequipment:ListModels */
-	static readonly LIST_MODELS = "lookoutequipment:ListModels";
+	static readonly ListModels = "lookoutequipment:ListModels";
 	/** [List] lookoutequipment:ListRetrainingSchedulers */
-	static readonly LIST_RETRAINING_SCHEDULERS =
+	static readonly ListRetrainingSchedulers =
 		"lookoutequipment:ListRetrainingSchedulers";
 	/** [List] lookoutequipment:ListSensorStatistics */
-	static readonly LIST_SENSOR_STATISTICS =
+	static readonly ListSensorStatistics =
 		"lookoutequipment:ListSensorStatistics";
 	/** [Read] lookoutequipment:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"lookoutequipment:ListTagsForResource";
+	static readonly ListTagsForResource = "lookoutequipment:ListTagsForResource";
 	/** [Write] lookoutequipment:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "lookoutequipment:PutResourcePolicy";
+	static readonly PutResourcePolicy = "lookoutequipment:PutResourcePolicy";
 	/** [Write] lookoutequipment:StartDataIngestionJob */
-	static readonly START_DATA_INGESTION_JOB =
+	static readonly StartDataIngestionJob =
 		"lookoutequipment:StartDataIngestionJob";
 	/** [Write] lookoutequipment:StartInferenceScheduler */
-	static readonly START_INFERENCE_SCHEDULER =
+	static readonly StartInferenceScheduler =
 		"lookoutequipment:StartInferenceScheduler";
 	/** [Write] lookoutequipment:StartRetrainingScheduler */
-	static readonly START_RETRAINING_SCHEDULER =
+	static readonly StartRetrainingScheduler =
 		"lookoutequipment:StartRetrainingScheduler";
 	/** [Write] lookoutequipment:StopInferenceScheduler */
-	static readonly STOP_INFERENCE_SCHEDULER =
+	static readonly StopInferenceScheduler =
 		"lookoutequipment:StopInferenceScheduler";
 	/** [Write] lookoutequipment:StopRetrainingScheduler */
-	static readonly STOP_RETRAINING_SCHEDULER =
+	static readonly StopRetrainingScheduler =
 		"lookoutequipment:StopRetrainingScheduler";
 	/** [Tagging] lookoutequipment:TagResource */
-	static readonly TAG_RESOURCE = "lookoutequipment:TagResource";
+	static readonly TagResource = "lookoutequipment:TagResource";
 	/** [Tagging] lookoutequipment:UntagResource */
-	static readonly UNTAG_RESOURCE = "lookoutequipment:UntagResource";
+	static readonly UntagResource = "lookoutequipment:UntagResource";
 	/** [Write] lookoutequipment:UpdateActiveModelVersion */
-	static readonly UPDATE_ACTIVE_MODEL_VERSION =
+	static readonly UpdateActiveModelVersion =
 		"lookoutequipment:UpdateActiveModelVersion";
 	/** [Write] lookoutequipment:UpdateInferenceScheduler */
-	static readonly UPDATE_INFERENCE_SCHEDULER =
+	static readonly UpdateInferenceScheduler =
 		"lookoutequipment:UpdateInferenceScheduler";
 	/** [Write] lookoutequipment:UpdateLabelGroup */
-	static readonly UPDATE_LABEL_GROUP = "lookoutequipment:UpdateLabelGroup";
+	static readonly UpdateLabelGroup = "lookoutequipment:UpdateLabelGroup";
 	/** [Write] lookoutequipment:UpdateModel */
-	static readonly UPDATE_MODEL = "lookoutequipment:UpdateModel";
+	static readonly UpdateModel = "lookoutequipment:UpdateModel";
 	/** [Write] lookoutequipment:UpdateRetrainingScheduler */
-	static readonly UPDATE_RETRAINING_SCHEDULER =
+	static readonly UpdateRetrainingScheduler =
 		"lookoutequipment:UpdateRetrainingScheduler";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LookoutEquipmentActions.DESCRIBE_DATA_INGESTION_JOB,
-		LookoutEquipmentActions.DESCRIBE_DATASET,
-		LookoutEquipmentActions.DESCRIBE_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.DESCRIBE_LABEL_GROUP,
-		LookoutEquipmentActions.DESCRIBE_MODEL,
-		LookoutEquipmentActions.DESCRIBE_MODEL_VERSION,
-		LookoutEquipmentActions.DESCRIBE_RESOURCE_POLICY,
-		LookoutEquipmentActions.DESCRIBE_RETRAINING_SCHEDULER,
-		LookoutEquipmentActions.DESCRIBELABEL,
-		LookoutEquipmentActions.LIST_INFERENCE_EVENTS,
-		LookoutEquipmentActions.LIST_INFERENCE_EXECUTIONS,
-		LookoutEquipmentActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		LookoutEquipmentActions.DescribeDataIngestionJob,
+		LookoutEquipmentActions.DescribeDataset,
+		LookoutEquipmentActions.DescribeInferenceScheduler,
+		LookoutEquipmentActions.DescribeLabelGroup,
+		LookoutEquipmentActions.DescribeModel,
+		LookoutEquipmentActions.DescribeModelVersion,
+		LookoutEquipmentActions.DescribeResourcePolicy,
+		LookoutEquipmentActions.DescribeRetrainingScheduler,
+		LookoutEquipmentActions.Describelabel,
+		LookoutEquipmentActions.ListInferenceEvents,
+		LookoutEquipmentActions.ListInferenceExecutions,
+		LookoutEquipmentActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LookoutEquipmentActions.CREATE_DATASET,
-		LookoutEquipmentActions.CREATE_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.CREATE_LABEL,
-		LookoutEquipmentActions.CREATE_LABEL_GROUP,
-		LookoutEquipmentActions.CREATE_MODEL,
-		LookoutEquipmentActions.CREATE_RETRAINING_SCHEDULER,
-		LookoutEquipmentActions.DELETE_DATASET,
-		LookoutEquipmentActions.DELETE_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.DELETE_LABEL,
-		LookoutEquipmentActions.DELETE_LABEL_GROUP,
-		LookoutEquipmentActions.DELETE_MODEL,
-		LookoutEquipmentActions.DELETE_RESOURCE_POLICY,
-		LookoutEquipmentActions.DELETE_RETRAINING_SCHEDULER,
-		LookoutEquipmentActions.IMPORT_DATASET,
-		LookoutEquipmentActions.IMPORT_MODEL_VERSION,
-		LookoutEquipmentActions.PUT_RESOURCE_POLICY,
-		LookoutEquipmentActions.START_DATA_INGESTION_JOB,
-		LookoutEquipmentActions.START_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.START_RETRAINING_SCHEDULER,
-		LookoutEquipmentActions.STOP_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.STOP_RETRAINING_SCHEDULER,
-		LookoutEquipmentActions.UPDATE_ACTIVE_MODEL_VERSION,
-		LookoutEquipmentActions.UPDATE_INFERENCE_SCHEDULER,
-		LookoutEquipmentActions.UPDATE_LABEL_GROUP,
-		LookoutEquipmentActions.UPDATE_MODEL,
-		LookoutEquipmentActions.UPDATE_RETRAINING_SCHEDULER,
+	static readonly AllWriteActions: string[] = [
+		LookoutEquipmentActions.CreateDataset,
+		LookoutEquipmentActions.CreateInferenceScheduler,
+		LookoutEquipmentActions.CreateLabel,
+		LookoutEquipmentActions.CreateLabelGroup,
+		LookoutEquipmentActions.CreateModel,
+		LookoutEquipmentActions.CreateRetrainingScheduler,
+		LookoutEquipmentActions.DeleteDataset,
+		LookoutEquipmentActions.DeleteInferenceScheduler,
+		LookoutEquipmentActions.DeleteLabel,
+		LookoutEquipmentActions.DeleteLabelGroup,
+		LookoutEquipmentActions.DeleteModel,
+		LookoutEquipmentActions.DeleteResourcePolicy,
+		LookoutEquipmentActions.DeleteRetrainingScheduler,
+		LookoutEquipmentActions.ImportDataset,
+		LookoutEquipmentActions.ImportModelVersion,
+		LookoutEquipmentActions.PutResourcePolicy,
+		LookoutEquipmentActions.StartDataIngestionJob,
+		LookoutEquipmentActions.StartInferenceScheduler,
+		LookoutEquipmentActions.StartRetrainingScheduler,
+		LookoutEquipmentActions.StopInferenceScheduler,
+		LookoutEquipmentActions.StopRetrainingScheduler,
+		LookoutEquipmentActions.UpdateActiveModelVersion,
+		LookoutEquipmentActions.UpdateInferenceScheduler,
+		LookoutEquipmentActions.UpdateLabelGroup,
+		LookoutEquipmentActions.UpdateModel,
+		LookoutEquipmentActions.UpdateRetrainingScheduler,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LookoutEquipmentActions.LIST_DATA_INGESTION_JOBS,
-		LookoutEquipmentActions.LIST_DATASETS,
-		LookoutEquipmentActions.LIST_INFERENCE_SCHEDULERS,
-		LookoutEquipmentActions.LIST_LABEL_GROUPS,
-		LookoutEquipmentActions.LIST_LABELS,
-		LookoutEquipmentActions.LIST_MODEL_VERSIONS,
-		LookoutEquipmentActions.LIST_MODELS,
-		LookoutEquipmentActions.LIST_RETRAINING_SCHEDULERS,
-		LookoutEquipmentActions.LIST_SENSOR_STATISTICS,
+	static readonly AllListActions: string[] = [
+		LookoutEquipmentActions.ListDataIngestionJobs,
+		LookoutEquipmentActions.ListDatasets,
+		LookoutEquipmentActions.ListInferenceSchedulers,
+		LookoutEquipmentActions.ListLabelGroups,
+		LookoutEquipmentActions.ListLabels,
+		LookoutEquipmentActions.ListModelVersions,
+		LookoutEquipmentActions.ListModels,
+		LookoutEquipmentActions.ListRetrainingSchedulers,
+		LookoutEquipmentActions.ListSensorStatistics,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LookoutEquipmentActions.TAG_RESOURCE,
-		LookoutEquipmentActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LookoutEquipmentActions.TagResource,
+		LookoutEquipmentActions.UntagResource,
 	];
 }
 
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):dataset/(?<datasetName>[^:/?]+)/(?<datasetId>[^:/?]+)$",
-);
-const InferenceSchedulerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):inference-scheduler/(?<inferenceSchedulerName>[^:/?]+)/(?<inferenceSchedulerId>[^:/?]+)$",
-);
-const LabelGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):label-group/(?<labelGroupName>[^:/?]+)/(?<labelGroupId>[^:/?]+)$",
-);
-const ModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):model/(?<modelName>[^:/?]+)/(?<modelId>[^:/?]+)$",
-);
-const ModelVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):model/(?<modelName>[^:/?]+)/(?<modelId>[^:/?]+)/model-version/(?<modelVersionNumber>[^:/?]+)$",
-);
+/**
+ * Properties for building a dataset ARN.
+ */
+export interface LookoutEquipmentDatasetArnProps {
+	/** The DatasetName component of the ARN. */
+	readonly datasetName: string;
+	/** The DatasetId component of the ARN. */
+	readonly datasetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset ARN.
+ */
+export interface LookoutEquipmentDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatasetName component. */
+	readonly datasetName: string;
+	/** The DatasetId component. */
+	readonly datasetId: string;
+}
+
+/**
+ * Properties for building a inference-scheduler ARN.
+ */
+export interface LookoutEquipmentInferenceSchedulerArnProps {
+	/** The InferenceSchedulerName component of the ARN. */
+	readonly inferenceSchedulerName: string;
+	/** The InferenceSchedulerId component of the ARN. */
+	readonly inferenceSchedulerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-scheduler ARN.
+ */
+export interface LookoutEquipmentInferenceSchedulerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InferenceSchedulerName component. */
+	readonly inferenceSchedulerName: string;
+	/** The InferenceSchedulerId component. */
+	readonly inferenceSchedulerId: string;
+}
+
+/**
+ * Properties for building a label-group ARN.
+ */
+export interface LookoutEquipmentLabelGroupArnProps {
+	/** The LabelGroupName component of the ARN. */
+	readonly labelGroupName: string;
+	/** The LabelGroupId component of the ARN. */
+	readonly labelGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a label-group ARN.
+ */
+export interface LookoutEquipmentLabelGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LabelGroupName component. */
+	readonly labelGroupName: string;
+	/** The LabelGroupId component. */
+	readonly labelGroupId: string;
+}
+
+/**
+ * Properties for building a model ARN.
+ */
+export interface LookoutEquipmentModelArnProps {
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** The ModelId component of the ARN. */
+	readonly modelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model ARN.
+ */
+export interface LookoutEquipmentModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelName component. */
+	readonly modelName: string;
+	/** The ModelId component. */
+	readonly modelId: string;
+}
+
+/**
+ * Properties for building a model-version ARN.
+ */
+export interface LookoutEquipmentModelVersionArnProps {
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** The ModelId component of the ARN. */
+	readonly modelId: string;
+	/** The ModelVersionNumber component of the ARN. */
+	readonly modelVersionNumber: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-version ARN.
+ */
+export interface LookoutEquipmentModelVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelName component. */
+	readonly modelName: string;
+	/** The ModelId component. */
+	readonly modelId: string;
+	/** The ModelVersionNumber component. */
+	readonly modelVersionNumber: string;
+}
+
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetName>[^:/?]+)\/(?<datasetId>[^:/?]+)$/;
+const InferenceSchedulerArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):inference-scheduler\/(?<inferenceSchedulerName>[^:/?]+)\/(?<inferenceSchedulerId>[^:/?]+)$/;
+const LabelGroupArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):label-group\/(?<labelGroupName>[^:/?]+)\/(?<labelGroupId>[^:/?]+)$/;
+const ModelArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):model\/(?<modelName>[^:/?]+)\/(?<modelId>[^:/?]+)$/;
+const ModelVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutequipment:(?<region>[^:]*):(?<account>[^:]*):model\/(?<modelName>[^:/?]+)\/(?<modelId>[^:/?]+)\/model-version\/(?<modelVersionNumber>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for lookoutequipment resources.
@@ -224,18 +381,7 @@ export class LookoutEquipmentResources {
 	/**
 	 * Builds an ARN for the dataset resource.
 	 */
-	static dataset(props: {
-		/** The DatasetName component of the ARN. */
-		readonly datasetName: string;
-		/** The DatasetId component of the ARN. */
-		readonly datasetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: LookoutEquipmentDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutequipment:${props.region ?? "*"}:${props.account ?? "*"}:dataset/${props.datasetName}/${props.datasetId}`;
 	}
 
@@ -250,13 +396,7 @@ export class LookoutEquipmentResources {
 	 * Parses a dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		datasetName: string;
-		datasetId: string;
-	} {
+	static parseDatasetArn(arn: string): LookoutEquipmentDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataset ARN: ${arn}`);
@@ -273,18 +413,9 @@ export class LookoutEquipmentResources {
 	/**
 	 * Builds an ARN for the inference-scheduler resource.
 	 */
-	static inferenceScheduler(props: {
-		/** The InferenceSchedulerName component of the ARN. */
-		readonly inferenceSchedulerName: string;
-		/** The InferenceSchedulerId component of the ARN. */
-		readonly inferenceSchedulerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static inferenceScheduler(
+		props: LookoutEquipmentInferenceSchedulerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:lookoutequipment:${props.region ?? "*"}:${props.account ?? "*"}:inference-scheduler/${props.inferenceSchedulerName}/${props.inferenceSchedulerId}`;
 	}
 
@@ -299,13 +430,9 @@ export class LookoutEquipmentResources {
 	 * Parses a inference-scheduler ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInferenceSchedulerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		inferenceSchedulerName: string;
-		inferenceSchedulerId: string;
-	} {
+	static parseInferenceSchedulerArn(
+		arn: string,
+	): LookoutEquipmentInferenceSchedulerArnComponents {
 		const match = InferenceSchedulerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid inference-scheduler ARN: ${arn}`);
@@ -322,18 +449,7 @@ export class LookoutEquipmentResources {
 	/**
 	 * Builds an ARN for the label-group resource.
 	 */
-	static labelGroup(props: {
-		/** The LabelGroupName component of the ARN. */
-		readonly labelGroupName: string;
-		/** The LabelGroupId component of the ARN. */
-		readonly labelGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static labelGroup(props: LookoutEquipmentLabelGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutequipment:${props.region ?? "*"}:${props.account ?? "*"}:label-group/${props.labelGroupName}/${props.labelGroupId}`;
 	}
 
@@ -348,13 +464,9 @@ export class LookoutEquipmentResources {
 	 * Parses a label-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLabelGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		labelGroupName: string;
-		labelGroupId: string;
-	} {
+	static parseLabelGroupArn(
+		arn: string,
+	): LookoutEquipmentLabelGroupArnComponents {
 		const match = LabelGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid label-group ARN: ${arn}`);
@@ -371,18 +483,7 @@ export class LookoutEquipmentResources {
 	/**
 	 * Builds an ARN for the model resource.
 	 */
-	static model(props: {
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** The ModelId component of the ARN. */
-		readonly modelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static model(props: LookoutEquipmentModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutequipment:${props.region ?? "*"}:${props.account ?? "*"}:model/${props.modelName}/${props.modelId}`;
 	}
 
@@ -397,13 +498,7 @@ export class LookoutEquipmentResources {
 	 * Parses a model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelName: string;
-		modelId: string;
-	} {
+	static parseModelArn(arn: string): LookoutEquipmentModelArnComponents {
 		const match = ModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model ARN: ${arn}`);
@@ -420,20 +515,7 @@ export class LookoutEquipmentResources {
 	/**
 	 * Builds an ARN for the model-version resource.
 	 */
-	static modelVersion(props: {
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** The ModelId component of the ARN. */
-		readonly modelId: string;
-		/** The ModelVersionNumber component of the ARN. */
-		readonly modelVersionNumber: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelVersion(props: LookoutEquipmentModelVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutequipment:${props.region ?? "*"}:${props.account ?? "*"}:model/${props.modelName}/${props.modelId}/model-version/${props.modelVersionNumber}`;
 	}
 
@@ -448,14 +530,9 @@ export class LookoutEquipmentResources {
 	 * Parses a model-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelName: string;
-		modelId: string;
-		modelVersionNumber: string;
-	} {
+	static parseModelVersionArn(
+		arn: string,
+	): LookoutEquipmentModelVersionArnComponents {
 		const match = ModelVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-version ARN: ${arn}`);
@@ -476,189 +553,189 @@ export class LookoutEquipmentResources {
  */
 export class LookoutEquipmentOperations {
 	/** IAM actions required for the CreateDataset API call. */
-	static readonly CREATE_DATASET: string[] = [
+	static readonly CreateDataset: string[] = [
 		"lookoutequipment:CreateDataset",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the CreateInferenceScheduler API call. */
-	static readonly CREATE_INFERENCE_SCHEDULER: string[] = [
+	static readonly CreateInferenceScheduler: string[] = [
 		"lookoutequipment:CreateInferenceScheduler",
 		"iam:PassRole",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the CreateLabel API call. */
-	static readonly CREATE_LABEL: string[] = ["lookoutequipment:CreateLabel"];
+	static readonly CreateLabel: string[] = ["lookoutequipment:CreateLabel"];
 	/** IAM actions required for the CreateLabelGroup API call. */
-	static readonly CREATE_LABEL_GROUP: string[] = [
+	static readonly CreateLabelGroup: string[] = [
 		"lookoutequipment:CreateLabelGroup",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the CreateModel API call. */
-	static readonly CREATE_MODEL: string[] = [
+	static readonly CreateModel: string[] = [
 		"lookoutequipment:CreateModel",
 		"iam:PassRole",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the CreateRetrainingScheduler API call. */
-	static readonly CREATE_RETRAINING_SCHEDULER: string[] = [
+	static readonly CreateRetrainingScheduler: string[] = [
 		"lookoutequipment:CreateRetrainingScheduler",
 	];
 	/** IAM actions required for the DeleteDataset API call. */
-	static readonly DELETE_DATASET: string[] = ["lookoutequipment:DeleteDataset"];
+	static readonly DeleteDataset: string[] = ["lookoutequipment:DeleteDataset"];
 	/** IAM actions required for the DeleteInferenceScheduler API call. */
-	static readonly DELETE_INFERENCE_SCHEDULER: string[] = [
+	static readonly DeleteInferenceScheduler: string[] = [
 		"lookoutequipment:DeleteInferenceScheduler",
 	];
 	/** IAM actions required for the DeleteLabel API call. */
-	static readonly DELETE_LABEL: string[] = ["lookoutequipment:DeleteLabel"];
+	static readonly DeleteLabel: string[] = ["lookoutequipment:DeleteLabel"];
 	/** IAM actions required for the DeleteLabelGroup API call. */
-	static readonly DELETE_LABEL_GROUP: string[] = [
+	static readonly DeleteLabelGroup: string[] = [
 		"lookoutequipment:DeleteLabelGroup",
 	];
 	/** IAM actions required for the DeleteModel API call. */
-	static readonly DELETE_MODEL: string[] = ["lookoutequipment:DeleteModel"];
+	static readonly DeleteModel: string[] = ["lookoutequipment:DeleteModel"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"lookoutequipment:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteRetrainingScheduler API call. */
-	static readonly DELETE_RETRAINING_SCHEDULER: string[] = [
+	static readonly DeleteRetrainingScheduler: string[] = [
 		"lookoutequipment:DeleteRetrainingScheduler",
 	];
 	/** IAM actions required for the DescribeDataIngestionJob API call. */
-	static readonly DESCRIBE_DATA_INGESTION_JOB: string[] = [
+	static readonly DescribeDataIngestionJob: string[] = [
 		"lookoutequipment:DescribeDataIngestionJob",
 	];
 	/** IAM actions required for the DescribeDataset API call. */
-	static readonly DESCRIBE_DATASET: string[] = [
+	static readonly DescribeDataset: string[] = [
 		"lookoutequipment:DescribeDataset",
 	];
 	/** IAM actions required for the DescribeInferenceScheduler API call. */
-	static readonly DESCRIBE_INFERENCE_SCHEDULER: string[] = [
+	static readonly DescribeInferenceScheduler: string[] = [
 		"lookoutequipment:DescribeInferenceScheduler",
 	];
 	/** IAM actions required for the DescribeLabel API call. */
-	static readonly DESCRIBE_LABEL: string[] = ["lookoutequipment:Describelabel"];
+	static readonly DescribeLabel: string[] = ["lookoutequipment:Describelabel"];
 	/** IAM actions required for the DescribeLabelGroup API call. */
-	static readonly DESCRIBE_LABEL_GROUP: string[] = [
+	static readonly DescribeLabelGroup: string[] = [
 		"lookoutequipment:DescribeLabelGroup",
 	];
 	/** IAM actions required for the DescribeModel API call. */
-	static readonly DESCRIBE_MODEL: string[] = ["lookoutequipment:DescribeModel"];
+	static readonly DescribeModel: string[] = ["lookoutequipment:DescribeModel"];
 	/** IAM actions required for the DescribeModelVersion API call. */
-	static readonly DESCRIBE_MODEL_VERSION: string[] = [
+	static readonly DescribeModelVersion: string[] = [
 		"lookoutequipment:DescribeModelVersion",
 	];
 	/** IAM actions required for the DescribeResourcePolicy API call. */
-	static readonly DESCRIBE_RESOURCE_POLICY: string[] = [
+	static readonly DescribeResourcePolicy: string[] = [
 		"lookoutequipment:DescribeResourcePolicy",
 	];
 	/** IAM actions required for the DescribeRetrainingScheduler API call. */
-	static readonly DESCRIBE_RETRAINING_SCHEDULER: string[] = [
+	static readonly DescribeRetrainingScheduler: string[] = [
 		"lookoutequipment:DescribeRetrainingScheduler",
 	];
 	/** IAM actions required for the ImportDataset API call. */
-	static readonly IMPORT_DATASET: string[] = [
+	static readonly ImportDataset: string[] = [
 		"lookoutequipment:ImportDataset",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the ImportModelVersion API call. */
-	static readonly IMPORT_MODEL_VERSION: string[] = [
+	static readonly ImportModelVersion: string[] = [
 		"lookoutequipment:ImportModelVersion",
 		"iam:PassRole",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the ListDataIngestionJobs API call. */
-	static readonly LIST_DATA_INGESTION_JOBS: string[] = [
+	static readonly ListDataIngestionJobs: string[] = [
 		"lookoutequipment:ListDataIngestionJobs",
 	];
 	/** IAM actions required for the ListDatasets API call. */
-	static readonly LIST_DATASETS: string[] = ["lookoutequipment:ListDatasets"];
+	static readonly ListDatasets: string[] = ["lookoutequipment:ListDatasets"];
 	/** IAM actions required for the ListInferenceEvents API call. */
-	static readonly LIST_INFERENCE_EVENTS: string[] = [
+	static readonly ListInferenceEvents: string[] = [
 		"lookoutequipment:ListInferenceEvents",
 	];
 	/** IAM actions required for the ListInferenceExecutions API call. */
-	static readonly LIST_INFERENCE_EXECUTIONS: string[] = [
+	static readonly ListInferenceExecutions: string[] = [
 		"lookoutequipment:ListInferenceExecutions",
 	];
 	/** IAM actions required for the ListInferenceSchedulers API call. */
-	static readonly LIST_INFERENCE_SCHEDULERS: string[] = [
+	static readonly ListInferenceSchedulers: string[] = [
 		"lookoutequipment:ListInferenceSchedulers",
 	];
 	/** IAM actions required for the ListLabelGroups API call. */
-	static readonly LIST_LABEL_GROUPS: string[] = [
+	static readonly ListLabelGroups: string[] = [
 		"lookoutequipment:ListLabelGroups",
 	];
 	/** IAM actions required for the ListLabels API call. */
-	static readonly LIST_LABELS: string[] = ["lookoutequipment:ListLabels"];
+	static readonly ListLabels: string[] = ["lookoutequipment:ListLabels"];
 	/** IAM actions required for the ListModelVersions API call. */
-	static readonly LIST_MODEL_VERSIONS: string[] = [
+	static readonly ListModelVersions: string[] = [
 		"lookoutequipment:ListModelVersions",
 	];
 	/** IAM actions required for the ListModels API call. */
-	static readonly LIST_MODELS: string[] = ["lookoutequipment:ListModels"];
+	static readonly ListModels: string[] = ["lookoutequipment:ListModels"];
 	/** IAM actions required for the ListRetrainingSchedulers API call. */
-	static readonly LIST_RETRAINING_SCHEDULERS: string[] = [
+	static readonly ListRetrainingSchedulers: string[] = [
 		"lookoutequipment:ListRetrainingSchedulers",
 	];
 	/** IAM actions required for the ListSensorStatistics API call. */
-	static readonly LIST_SENSOR_STATISTICS: string[] = [
+	static readonly ListSensorStatistics: string[] = [
 		"lookoutequipment:ListSensorStatistics",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"lookoutequipment:ListTagsForResource",
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
+	static readonly PutResourcePolicy: string[] = [
 		"lookoutequipment:PutResourcePolicy",
 	];
 	/** IAM actions required for the StartDataIngestionJob API call. */
-	static readonly START_DATA_INGESTION_JOB: string[] = [
+	static readonly StartDataIngestionJob: string[] = [
 		"iam:PassRole",
 		"lookoutequipment:StartDataIngestionJob",
 	];
 	/** IAM actions required for the StartInferenceScheduler API call. */
-	static readonly START_INFERENCE_SCHEDULER: string[] = [
+	static readonly StartInferenceScheduler: string[] = [
 		"lookoutequipment:StartInferenceScheduler",
 	];
 	/** IAM actions required for the StartRetrainingScheduler API call. */
-	static readonly START_RETRAINING_SCHEDULER: string[] = [
+	static readonly StartRetrainingScheduler: string[] = [
 		"lookoutequipment:StartRetrainingScheduler",
 	];
 	/** IAM actions required for the StopInferenceScheduler API call. */
-	static readonly STOP_INFERENCE_SCHEDULER: string[] = [
+	static readonly StopInferenceScheduler: string[] = [
 		"lookoutequipment:StopInferenceScheduler",
 	];
 	/** IAM actions required for the StopRetrainingScheduler API call. */
-	static readonly STOP_RETRAINING_SCHEDULER: string[] = [
+	static readonly StopRetrainingScheduler: string[] = [
 		"lookoutequipment:StopRetrainingScheduler",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["lookoutequipment:TagResource"];
+	static readonly TagResource: string[] = ["lookoutequipment:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["lookoutequipment:UntagResource"];
+	static readonly UntagResource: string[] = ["lookoutequipment:UntagResource"];
 	/** IAM actions required for the UpdateActiveModelVersion API call. */
-	static readonly UPDATE_ACTIVE_MODEL_VERSION: string[] = [
+	static readonly UpdateActiveModelVersion: string[] = [
 		"lookoutequipment:UpdateActiveModelVersion",
 	];
 	/** IAM actions required for the UpdateInferenceScheduler API call. */
-	static readonly UPDATE_INFERENCE_SCHEDULER: string[] = [
+	static readonly UpdateInferenceScheduler: string[] = [
 		"iam:PassRole",
 		"lookoutequipment:UpdateInferenceScheduler",
 	];
 	/** IAM actions required for the UpdateLabelGroup API call. */
-	static readonly UPDATE_LABEL_GROUP: string[] = [
+	static readonly UpdateLabelGroup: string[] = [
 		"lookoutequipment:UpdateLabelGroup",
 	];
 	/** IAM actions required for the UpdateModel API call. */
-	static readonly UPDATE_MODEL: string[] = [
+	static readonly UpdateModel: string[] = [
 		"iam:PassRole",
 		"lookoutequipment:UpdateModel",
 	];
 	/** IAM actions required for the UpdateRetrainingScheduler API call. */
-	static readonly UPDATE_RETRAINING_SCHEDULER: string[] = [
+	static readonly UpdateRetrainingScheduler: string[] = [
 		"lookoutequipment:UpdateRetrainingScheduler",
 	];
 }
@@ -668,50 +745,50 @@ export class LookoutEquipmentOperations {
  */
 export class LookoutEquipmentConditions {
 	/** Condition keys applicable to the CreateDataset action. */
-	static readonly CREATE_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateInferenceScheduler action. */
-	static readonly CREATE_INFERENCE_SCHEDULER_CONDITION_KEYS: string[] = [
+	static readonly CreateInferenceSchedulerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLabelGroup action. */
-	static readonly CREATE_LABEL_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateLabelGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModel action. */
-	static readonly CREATE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportDataset action. */
-	static readonly IMPORT_DATASET_CONDITION_KEYS: string[] = [
+	static readonly ImportDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportModelVersion action. */
-	static readonly IMPORT_MODEL_VERSION_CONDITION_KEYS: string[] = [
+	static readonly ImportModelVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"lookoutequipment:IsImportingData",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: lookoutequipment:IsImportingData (Bool) */
 	static readonly IS_IMPORTING_DATA = "lookoutequipment:IsImportingData";
 

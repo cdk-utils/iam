@@ -13,157 +13,156 @@ export class MechanicalturkActions {
 	static readonly SERVICE_PREFIX = "mechanicalturk";
 
 	/** [Write] mechanicalturk:AcceptQualificationRequest */
-	static readonly ACCEPT_QUALIFICATION_REQUEST =
+	static readonly AcceptQualificationRequest =
 		"mechanicalturk:AcceptQualificationRequest";
 	/** [Write] mechanicalturk:ApproveAssignment */
-	static readonly APPROVE_ASSIGNMENT = "mechanicalturk:ApproveAssignment";
+	static readonly ApproveAssignment = "mechanicalturk:ApproveAssignment";
 	/** [Write] mechanicalturk:AssociateQualificationWithWorker */
-	static readonly ASSOCIATE_QUALIFICATION_WITH_WORKER =
+	static readonly AssociateQualificationWithWorker =
 		"mechanicalturk:AssociateQualificationWithWorker";
 	/** [Write] mechanicalturk:CreateAdditionalAssignmentsForHIT */
-	static readonly CREATE_ADDITIONAL_ASSIGNMENTS_FOR_HIT =
+	static readonly CreateAdditionalAssignmentsForHIT =
 		"mechanicalturk:CreateAdditionalAssignmentsForHIT";
 	/** [Write] mechanicalturk:CreateHIT */
-	static readonly CREATE_HIT = "mechanicalturk:CreateHIT";
+	static readonly CreateHIT = "mechanicalturk:CreateHIT";
 	/** [Write] mechanicalturk:CreateHITType */
-	static readonly CREATE_HIT_TYPE = "mechanicalturk:CreateHITType";
+	static readonly CreateHITType = "mechanicalturk:CreateHITType";
 	/** [Write] mechanicalturk:CreateHITWithHITType */
-	static readonly CREATE_HIT_WITH_HIT_TYPE =
-		"mechanicalturk:CreateHITWithHITType";
+	static readonly CreateHITWithHITType = "mechanicalturk:CreateHITWithHITType";
 	/** [Write] mechanicalturk:CreateQualificationType */
-	static readonly CREATE_QUALIFICATION_TYPE =
+	static readonly CreateQualificationType =
 		"mechanicalturk:CreateQualificationType";
 	/** [Write] mechanicalturk:CreateWorkerBlock */
-	static readonly CREATE_WORKER_BLOCK = "mechanicalturk:CreateWorkerBlock";
+	static readonly CreateWorkerBlock = "mechanicalturk:CreateWorkerBlock";
 	/** [Write] mechanicalturk:DeleteHIT */
-	static readonly DELETE_HIT = "mechanicalturk:DeleteHIT";
+	static readonly DeleteHIT = "mechanicalturk:DeleteHIT";
 	/** [Write] mechanicalturk:DeleteQualificationType */
-	static readonly DELETE_QUALIFICATION_TYPE =
+	static readonly DeleteQualificationType =
 		"mechanicalturk:DeleteQualificationType";
 	/** [Write] mechanicalturk:DeleteWorkerBlock */
-	static readonly DELETE_WORKER_BLOCK = "mechanicalturk:DeleteWorkerBlock";
+	static readonly DeleteWorkerBlock = "mechanicalturk:DeleteWorkerBlock";
 	/** [Write] mechanicalturk:DisassociateQualificationFromWorker */
-	static readonly DISASSOCIATE_QUALIFICATION_FROM_WORKER =
+	static readonly DisassociateQualificationFromWorker =
 		"mechanicalturk:DisassociateQualificationFromWorker";
 	/** [Read] mechanicalturk:GetAccountBalance */
-	static readonly GET_ACCOUNT_BALANCE = "mechanicalturk:GetAccountBalance";
+	static readonly actionGetAccountBalance = "mechanicalturk:GetAccountBalance";
 	/** [Read] mechanicalturk:GetAssignment */
-	static readonly GET_ASSIGNMENT = "mechanicalturk:GetAssignment";
+	static readonly actionGetAssignment = "mechanicalturk:GetAssignment";
 	/** [Read] mechanicalturk:GetFileUploadURL */
-	static readonly GET_FILE_UPLOAD_URL = "mechanicalturk:GetFileUploadURL";
+	static readonly actionGetFileUploadURL = "mechanicalturk:GetFileUploadURL";
 	/** [Read] mechanicalturk:GetHIT */
-	static readonly GET_HIT = "mechanicalturk:GetHIT";
+	static readonly actionGetHIT = "mechanicalturk:GetHIT";
 	/** [Read] mechanicalturk:GetQualificationScore */
-	static readonly GET_QUALIFICATION_SCORE =
+	static readonly actionGetQualificationScore =
 		"mechanicalturk:GetQualificationScore";
 	/** [Read] mechanicalturk:GetQualificationType */
-	static readonly GET_QUALIFICATION_TYPE =
+	static readonly actionGetQualificationType =
 		"mechanicalturk:GetQualificationType";
 	/** [List] mechanicalturk:ListAssignmentsForHIT */
-	static readonly LIST_ASSIGNMENTS_FOR_HIT =
+	static readonly ListAssignmentsForHIT =
 		"mechanicalturk:ListAssignmentsForHIT";
 	/** [List] mechanicalturk:ListBonusPayments */
-	static readonly LIST_BONUS_PAYMENTS = "mechanicalturk:ListBonusPayments";
+	static readonly ListBonusPayments = "mechanicalturk:ListBonusPayments";
 	/** [List] mechanicalturk:ListHITs */
-	static readonly LIST_HI_TS = "mechanicalturk:ListHITs";
+	static readonly ListHITs = "mechanicalturk:ListHITs";
 	/** [List] mechanicalturk:ListHITsForQualificationType */
-	static readonly LIST_HI_TS_FOR_QUALIFICATION_TYPE =
+	static readonly ListHITsForQualificationType =
 		"mechanicalturk:ListHITsForQualificationType";
 	/** [List] mechanicalturk:ListQualificationRequests */
-	static readonly LIST_QUALIFICATION_REQUESTS =
+	static readonly ListQualificationRequests =
 		"mechanicalturk:ListQualificationRequests";
 	/** [List] mechanicalturk:ListQualificationTypes */
-	static readonly LIST_QUALIFICATION_TYPES =
+	static readonly ListQualificationTypes =
 		"mechanicalturk:ListQualificationTypes";
 	/** [List] mechanicalturk:ListReviewPolicyResultsForHIT */
-	static readonly LIST_REVIEW_POLICY_RESULTS_FOR_HIT =
+	static readonly ListReviewPolicyResultsForHIT =
 		"mechanicalturk:ListReviewPolicyResultsForHIT";
 	/** [List] mechanicalturk:ListReviewableHITs */
-	static readonly LIST_REVIEWABLE_HI_TS = "mechanicalturk:ListReviewableHITs";
+	static readonly ListReviewableHITs = "mechanicalturk:ListReviewableHITs";
 	/** [List] mechanicalturk:ListWorkerBlocks */
-	static readonly LIST_WORKER_BLOCKS = "mechanicalturk:ListWorkerBlocks";
+	static readonly ListWorkerBlocks = "mechanicalturk:ListWorkerBlocks";
 	/** [List] mechanicalturk:ListWorkersWithQualificationType */
-	static readonly LIST_WORKERS_WITH_QUALIFICATION_TYPE =
+	static readonly ListWorkersWithQualificationType =
 		"mechanicalturk:ListWorkersWithQualificationType";
 	/** [Write] mechanicalturk:NotifyWorkers */
-	static readonly NOTIFY_WORKERS = "mechanicalturk:NotifyWorkers";
+	static readonly NotifyWorkers = "mechanicalturk:NotifyWorkers";
 	/** [Write] mechanicalturk:RejectAssignment */
-	static readonly REJECT_ASSIGNMENT = "mechanicalturk:RejectAssignment";
+	static readonly RejectAssignment = "mechanicalturk:RejectAssignment";
 	/** [Write] mechanicalturk:RejectQualificationRequest */
-	static readonly REJECT_QUALIFICATION_REQUEST =
+	static readonly RejectQualificationRequest =
 		"mechanicalturk:RejectQualificationRequest";
 	/** [Write] mechanicalturk:SendBonus */
-	static readonly SEND_BONUS = "mechanicalturk:SendBonus";
+	static readonly SendBonus = "mechanicalturk:SendBonus";
 	/** [Write] mechanicalturk:SendTestEventNotification */
-	static readonly SEND_TEST_EVENT_NOTIFICATION =
+	static readonly SendTestEventNotification =
 		"mechanicalturk:SendTestEventNotification";
 	/** [Write] mechanicalturk:UpdateExpirationForHIT */
-	static readonly UPDATE_EXPIRATION_FOR_HIT =
+	static readonly UpdateExpirationForHIT =
 		"mechanicalturk:UpdateExpirationForHIT";
 	/** [Write] mechanicalturk:UpdateHITReviewStatus */
-	static readonly UPDATE_HIT_REVIEW_STATUS =
+	static readonly UpdateHITReviewStatus =
 		"mechanicalturk:UpdateHITReviewStatus";
 	/** [Write] mechanicalturk:UpdateHITTypeOfHIT */
-	static readonly UPDATE_HIT_TYPE_OF_HIT = "mechanicalturk:UpdateHITTypeOfHIT";
+	static readonly UpdateHITTypeOfHIT = "mechanicalturk:UpdateHITTypeOfHIT";
 	/** [Write] mechanicalturk:UpdateNotificationSettings */
-	static readonly UPDATE_NOTIFICATION_SETTINGS =
+	static readonly UpdateNotificationSettings =
 		"mechanicalturk:UpdateNotificationSettings";
 	/** [Write] mechanicalturk:UpdateQualificationType */
-	static readonly UPDATE_QUALIFICATION_TYPE =
+	static readonly UpdateQualificationType =
 		"mechanicalturk:UpdateQualificationType";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MechanicalturkActions.GET_ACCOUNT_BALANCE,
-		MechanicalturkActions.GET_ASSIGNMENT,
-		MechanicalturkActions.GET_FILE_UPLOAD_URL,
-		MechanicalturkActions.GET_HIT,
-		MechanicalturkActions.GET_QUALIFICATION_SCORE,
-		MechanicalturkActions.GET_QUALIFICATION_TYPE,
+	static readonly AllReadActions: string[] = [
+		MechanicalturkActions.actionGetAccountBalance,
+		MechanicalturkActions.actionGetAssignment,
+		MechanicalturkActions.actionGetFileUploadURL,
+		MechanicalturkActions.actionGetHIT,
+		MechanicalturkActions.actionGetQualificationScore,
+		MechanicalturkActions.actionGetQualificationType,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MechanicalturkActions.ACCEPT_QUALIFICATION_REQUEST,
-		MechanicalturkActions.APPROVE_ASSIGNMENT,
-		MechanicalturkActions.ASSOCIATE_QUALIFICATION_WITH_WORKER,
-		MechanicalturkActions.CREATE_ADDITIONAL_ASSIGNMENTS_FOR_HIT,
-		MechanicalturkActions.CREATE_HIT,
-		MechanicalturkActions.CREATE_HIT_TYPE,
-		MechanicalturkActions.CREATE_HIT_WITH_HIT_TYPE,
-		MechanicalturkActions.CREATE_QUALIFICATION_TYPE,
-		MechanicalturkActions.CREATE_WORKER_BLOCK,
-		MechanicalturkActions.DELETE_HIT,
-		MechanicalturkActions.DELETE_QUALIFICATION_TYPE,
-		MechanicalturkActions.DELETE_WORKER_BLOCK,
-		MechanicalturkActions.DISASSOCIATE_QUALIFICATION_FROM_WORKER,
-		MechanicalturkActions.NOTIFY_WORKERS,
-		MechanicalturkActions.REJECT_ASSIGNMENT,
-		MechanicalturkActions.REJECT_QUALIFICATION_REQUEST,
-		MechanicalturkActions.SEND_BONUS,
-		MechanicalturkActions.SEND_TEST_EVENT_NOTIFICATION,
-		MechanicalturkActions.UPDATE_EXPIRATION_FOR_HIT,
-		MechanicalturkActions.UPDATE_HIT_REVIEW_STATUS,
-		MechanicalturkActions.UPDATE_HIT_TYPE_OF_HIT,
-		MechanicalturkActions.UPDATE_NOTIFICATION_SETTINGS,
-		MechanicalturkActions.UPDATE_QUALIFICATION_TYPE,
+	static readonly AllWriteActions: string[] = [
+		MechanicalturkActions.AcceptQualificationRequest,
+		MechanicalturkActions.ApproveAssignment,
+		MechanicalturkActions.AssociateQualificationWithWorker,
+		MechanicalturkActions.CreateAdditionalAssignmentsForHIT,
+		MechanicalturkActions.CreateHIT,
+		MechanicalturkActions.CreateHITType,
+		MechanicalturkActions.CreateHITWithHITType,
+		MechanicalturkActions.CreateQualificationType,
+		MechanicalturkActions.CreateWorkerBlock,
+		MechanicalturkActions.DeleteHIT,
+		MechanicalturkActions.DeleteQualificationType,
+		MechanicalturkActions.DeleteWorkerBlock,
+		MechanicalturkActions.DisassociateQualificationFromWorker,
+		MechanicalturkActions.NotifyWorkers,
+		MechanicalturkActions.RejectAssignment,
+		MechanicalturkActions.RejectQualificationRequest,
+		MechanicalturkActions.SendBonus,
+		MechanicalturkActions.SendTestEventNotification,
+		MechanicalturkActions.UpdateExpirationForHIT,
+		MechanicalturkActions.UpdateHITReviewStatus,
+		MechanicalturkActions.UpdateHITTypeOfHIT,
+		MechanicalturkActions.UpdateNotificationSettings,
+		MechanicalturkActions.UpdateQualificationType,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MechanicalturkActions.LIST_ASSIGNMENTS_FOR_HIT,
-		MechanicalturkActions.LIST_BONUS_PAYMENTS,
-		MechanicalturkActions.LIST_HI_TS,
-		MechanicalturkActions.LIST_HI_TS_FOR_QUALIFICATION_TYPE,
-		MechanicalturkActions.LIST_QUALIFICATION_REQUESTS,
-		MechanicalturkActions.LIST_QUALIFICATION_TYPES,
-		MechanicalturkActions.LIST_REVIEW_POLICY_RESULTS_FOR_HIT,
-		MechanicalturkActions.LIST_REVIEWABLE_HI_TS,
-		MechanicalturkActions.LIST_WORKER_BLOCKS,
-		MechanicalturkActions.LIST_WORKERS_WITH_QUALIFICATION_TYPE,
+	static readonly AllListActions: string[] = [
+		MechanicalturkActions.ListAssignmentsForHIT,
+		MechanicalturkActions.ListBonusPayments,
+		MechanicalturkActions.ListHITs,
+		MechanicalturkActions.ListHITsForQualificationType,
+		MechanicalturkActions.ListQualificationRequests,
+		MechanicalturkActions.ListQualificationTypes,
+		MechanicalturkActions.ListReviewPolicyResultsForHIT,
+		MechanicalturkActions.ListReviewableHITs,
+		MechanicalturkActions.ListWorkerBlocks,
+		MechanicalturkActions.ListWorkersWithQualificationType,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -171,143 +170,143 @@ export class MechanicalturkActions {
  */
 export class MechanicalturkOperations {
 	/** IAM actions required for the AcceptQualificationRequest API call. */
-	static readonly ACCEPT_QUALIFICATION_REQUEST: string[] = [
+	static readonly AcceptQualificationRequest: string[] = [
 		"mechanicalturk:AcceptQualificationRequest",
 	];
 	/** IAM actions required for the ApproveAssignment API call. */
-	static readonly APPROVE_ASSIGNMENT: string[] = [
+	static readonly ApproveAssignment: string[] = [
 		"mechanicalturk:ApproveAssignment",
 	];
 	/** IAM actions required for the AssociateQualificationWithWorker API call. */
-	static readonly ASSOCIATE_QUALIFICATION_WITH_WORKER: string[] = [
+	static readonly AssociateQualificationWithWorker: string[] = [
 		"mechanicalturk:AssociateQualificationWithWorker",
 	];
 	/** IAM actions required for the CreateAdditionalAssignmentsForHIT API call. */
-	static readonly CREATE_ADDITIONAL_ASSIGNMENTS_FOR_HIT: string[] = [
+	static readonly CreateAdditionalAssignmentsForHIT: string[] = [
 		"mechanicalturk:CreateAdditionalAssignmentsForHIT",
 	];
 	/** IAM actions required for the CreateHIT API call. */
-	static readonly CREATE_HIT: string[] = ["mechanicalturk:CreateHIT"];
+	static readonly CreateHIT: string[] = ["mechanicalturk:CreateHIT"];
 	/** IAM actions required for the CreateHITType API call. */
-	static readonly CREATE_HIT_TYPE: string[] = ["mechanicalturk:CreateHITType"];
+	static readonly CreateHITType: string[] = ["mechanicalturk:CreateHITType"];
 	/** IAM actions required for the CreateHITWithHITType API call. */
-	static readonly CREATE_HIT_WITH_HIT_TYPE: string[] = [
+	static readonly CreateHITWithHITType: string[] = [
 		"mechanicalturk:CreateHITWithHITType",
 	];
 	/** IAM actions required for the CreateQualificationType API call. */
-	static readonly CREATE_QUALIFICATION_TYPE: string[] = [
+	static readonly CreateQualificationType: string[] = [
 		"mechanicalturk:CreateQualificationType",
 	];
 	/** IAM actions required for the CreateWorkerBlock API call. */
-	static readonly CREATE_WORKER_BLOCK: string[] = [
+	static readonly CreateWorkerBlock: string[] = [
 		"mechanicalturk:CreateWorkerBlock",
 	];
 	/** IAM actions required for the DeleteHIT API call. */
-	static readonly DELETE_HIT: string[] = ["mechanicalturk:DeleteHIT"];
+	static readonly DeleteHIT: string[] = ["mechanicalturk:DeleteHIT"];
 	/** IAM actions required for the DeleteQualificationType API call. */
-	static readonly DELETE_QUALIFICATION_TYPE: string[] = [
+	static readonly DeleteQualificationType: string[] = [
 		"mechanicalturk:DeleteQualificationType",
 	];
 	/** IAM actions required for the DeleteWorkerBlock API call. */
-	static readonly DELETE_WORKER_BLOCK: string[] = [
+	static readonly DeleteWorkerBlock: string[] = [
 		"mechanicalturk:DeleteWorkerBlock",
 	];
 	/** IAM actions required for the DisassociateQualificationFromWorker API call. */
-	static readonly DISASSOCIATE_QUALIFICATION_FROM_WORKER: string[] = [
+	static readonly DisassociateQualificationFromWorker: string[] = [
 		"mechanicalturk:DisassociateQualificationFromWorker",
 	];
 	/** IAM actions required for the GetAccountBalance API call. */
-	static readonly GET_ACCOUNT_BALANCE: string[] = [
+	static readonly opGetAccountBalance: string[] = [
 		"mechanicalturk:GetAccountBalance",
 	];
 	/** IAM actions required for the GetAssignment API call. */
-	static readonly GET_ASSIGNMENT: string[] = ["mechanicalturk:GetAssignment"];
+	static readonly opGetAssignment: string[] = ["mechanicalturk:GetAssignment"];
 	/** IAM actions required for the GetFileUploadURL API call. */
-	static readonly GET_FILE_UPLOAD_URL: string[] = [
+	static readonly opGetFileUploadURL: string[] = [
 		"mechanicalturk:GetFileUploadURL",
 	];
 	/** IAM actions required for the GetHIT API call. */
-	static readonly GET_HIT: string[] = ["mechanicalturk:GetHIT"];
+	static readonly opGetHIT: string[] = ["mechanicalturk:GetHIT"];
 	/** IAM actions required for the GetQualificationScore API call. */
-	static readonly GET_QUALIFICATION_SCORE: string[] = [
+	static readonly opGetQualificationScore: string[] = [
 		"mechanicalturk:GetQualificationScore",
 	];
 	/** IAM actions required for the GetQualificationType API call. */
-	static readonly GET_QUALIFICATION_TYPE: string[] = [
+	static readonly opGetQualificationType: string[] = [
 		"mechanicalturk:GetQualificationType",
 	];
 	/** IAM actions required for the ListAssignmentsForHIT API call. */
-	static readonly LIST_ASSIGNMENTS_FOR_HIT: string[] = [
+	static readonly ListAssignmentsForHIT: string[] = [
 		"mechanicalturk:ListAssignmentsForHIT",
 	];
 	/** IAM actions required for the ListBonusPayments API call. */
-	static readonly LIST_BONUS_PAYMENTS: string[] = [
+	static readonly ListBonusPayments: string[] = [
 		"mechanicalturk:ListBonusPayments",
 	];
 	/** IAM actions required for the ListHITs API call. */
-	static readonly LIST_HI_TS: string[] = ["mechanicalturk:ListHITs"];
+	static readonly ListHITs: string[] = ["mechanicalturk:ListHITs"];
 	/** IAM actions required for the ListHITsForQualificationType API call. */
-	static readonly LIST_HI_TS_FOR_QUALIFICATION_TYPE: string[] = [
+	static readonly ListHITsForQualificationType: string[] = [
 		"mechanicalturk:ListHITsForQualificationType",
 	];
 	/** IAM actions required for the ListQualificationRequests API call. */
-	static readonly LIST_QUALIFICATION_REQUESTS: string[] = [
+	static readonly ListQualificationRequests: string[] = [
 		"mechanicalturk:ListQualificationRequests",
 	];
 	/** IAM actions required for the ListQualificationTypes API call. */
-	static readonly LIST_QUALIFICATION_TYPES: string[] = [
+	static readonly ListQualificationTypes: string[] = [
 		"mechanicalturk:ListQualificationTypes",
 	];
 	/** IAM actions required for the ListReviewPolicyResultsForHIT API call. */
-	static readonly LIST_REVIEW_POLICY_RESULTS_FOR_HIT: string[] = [
+	static readonly ListReviewPolicyResultsForHIT: string[] = [
 		"mechanicalturk:ListReviewPolicyResultsForHIT",
 	];
 	/** IAM actions required for the ListReviewableHITs API call. */
-	static readonly LIST_REVIEWABLE_HI_TS: string[] = [
+	static readonly ListReviewableHITs: string[] = [
 		"mechanicalturk:ListReviewableHITs",
 	];
 	/** IAM actions required for the ListWorkerBlocks API call. */
-	static readonly LIST_WORKER_BLOCKS: string[] = [
+	static readonly ListWorkerBlocks: string[] = [
 		"mechanicalturk:ListWorkerBlocks",
 	];
 	/** IAM actions required for the ListWorkersWithQualificationType API call. */
-	static readonly LIST_WORKERS_WITH_QUALIFICATION_TYPE: string[] = [
+	static readonly ListWorkersWithQualificationType: string[] = [
 		"mechanicalturk:ListWorkersWithQualificationType",
 	];
 	/** IAM actions required for the NotifyWorkers API call. */
-	static readonly NOTIFY_WORKERS: string[] = ["mechanicalturk:NotifyWorkers"];
+	static readonly NotifyWorkers: string[] = ["mechanicalturk:NotifyWorkers"];
 	/** IAM actions required for the RejectAssignment API call. */
-	static readonly REJECT_ASSIGNMENT: string[] = [
+	static readonly RejectAssignment: string[] = [
 		"mechanicalturk:RejectAssignment",
 	];
 	/** IAM actions required for the RejectQualificationRequest API call. */
-	static readonly REJECT_QUALIFICATION_REQUEST: string[] = [
+	static readonly RejectQualificationRequest: string[] = [
 		"mechanicalturk:RejectQualificationRequest",
 	];
 	/** IAM actions required for the SendBonus API call. */
-	static readonly SEND_BONUS: string[] = ["mechanicalturk:SendBonus"];
+	static readonly SendBonus: string[] = ["mechanicalturk:SendBonus"];
 	/** IAM actions required for the SendTestEventNotification API call. */
-	static readonly SEND_TEST_EVENT_NOTIFICATION: string[] = [
+	static readonly SendTestEventNotification: string[] = [
 		"mechanicalturk:SendTestEventNotification",
 	];
 	/** IAM actions required for the UpdateExpirationForHIT API call. */
-	static readonly UPDATE_EXPIRATION_FOR_HIT: string[] = [
+	static readonly UpdateExpirationForHIT: string[] = [
 		"mechanicalturk:UpdateExpirationForHIT",
 	];
 	/** IAM actions required for the UpdateHITReviewStatus API call. */
-	static readonly UPDATE_HIT_REVIEW_STATUS: string[] = [
+	static readonly UpdateHITReviewStatus: string[] = [
 		"mechanicalturk:UpdateHITReviewStatus",
 	];
 	/** IAM actions required for the UpdateHITTypeOfHIT API call. */
-	static readonly UPDATE_HIT_TYPE_OF_HIT: string[] = [
+	static readonly UpdateHITTypeOfHIT: string[] = [
 		"mechanicalturk:UpdateHITTypeOfHIT",
 	];
 	/** IAM actions required for the UpdateNotificationSettings API call. */
-	static readonly UPDATE_NOTIFICATION_SETTINGS: string[] = [
+	static readonly UpdateNotificationSettings: string[] = [
 		"mechanicalturk:UpdateNotificationSettings",
 	];
 	/** IAM actions required for the UpdateQualificationType API call. */
-	static readonly UPDATE_QUALIFICATION_TYPE: string[] = [
+	static readonly UpdateQualificationType: string[] = [
 		"mechanicalturk:UpdateQualificationType",
 	];
 }

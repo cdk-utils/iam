@@ -13,106 +13,214 @@ export class ApptestActions {
 	static readonly SERVICE_PREFIX = "apptest";
 
 	/** [Write] apptest:CreateTestCase */
-	static readonly CREATE_TEST_CASE = "apptest:CreateTestCase";
+	static readonly CreateTestCase = "apptest:CreateTestCase";
 	/** [Write] apptest:CreateTestConfiguration */
-	static readonly CREATE_TEST_CONFIGURATION = "apptest:CreateTestConfiguration";
+	static readonly CreateTestConfiguration = "apptest:CreateTestConfiguration";
 	/** [Write] apptest:CreateTestSuite */
-	static readonly CREATE_TEST_SUITE = "apptest:CreateTestSuite";
+	static readonly CreateTestSuite = "apptest:CreateTestSuite";
 	/** [Write] apptest:DeleteTestCase */
-	static readonly DELETE_TEST_CASE = "apptest:DeleteTestCase";
+	static readonly DeleteTestCase = "apptest:DeleteTestCase";
 	/** [Write] apptest:DeleteTestConfiguration */
-	static readonly DELETE_TEST_CONFIGURATION = "apptest:DeleteTestConfiguration";
+	static readonly DeleteTestConfiguration = "apptest:DeleteTestConfiguration";
 	/** [Write] apptest:DeleteTestRun */
-	static readonly DELETE_TEST_RUN = "apptest:DeleteTestRun";
+	static readonly DeleteTestRun = "apptest:DeleteTestRun";
 	/** [Write] apptest:DeleteTestSuite */
-	static readonly DELETE_TEST_SUITE = "apptest:DeleteTestSuite";
+	static readonly DeleteTestSuite = "apptest:DeleteTestSuite";
 	/** [Read] apptest:GetTestCase */
-	static readonly GET_TEST_CASE = "apptest:GetTestCase";
+	static readonly actionGetTestCase = "apptest:GetTestCase";
 	/** [Read] apptest:GetTestConfiguration */
-	static readonly GET_TEST_CONFIGURATION = "apptest:GetTestConfiguration";
+	static readonly actionGetTestConfiguration = "apptest:GetTestConfiguration";
 	/** [Read] apptest:GetTestRunStep */
-	static readonly GET_TEST_RUN_STEP = "apptest:GetTestRunStep";
+	static readonly actionGetTestRunStep = "apptest:GetTestRunStep";
 	/** [Read] apptest:GetTestSuite */
-	static readonly GET_TEST_SUITE = "apptest:GetTestSuite";
+	static readonly actionGetTestSuite = "apptest:GetTestSuite";
 	/** [Read] apptest:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "apptest:ListTagsForResource";
+	static readonly ListTagsForResource = "apptest:ListTagsForResource";
 	/** [List] apptest:ListTestCases */
-	static readonly LIST_TEST_CASES = "apptest:ListTestCases";
+	static readonly ListTestCases = "apptest:ListTestCases";
 	/** [List] apptest:ListTestConfigurations */
-	static readonly LIST_TEST_CONFIGURATIONS = "apptest:ListTestConfigurations";
+	static readonly ListTestConfigurations = "apptest:ListTestConfigurations";
 	/** [Read] apptest:ListTestRunSteps */
-	static readonly LIST_TEST_RUN_STEPS = "apptest:ListTestRunSteps";
+	static readonly ListTestRunSteps = "apptest:ListTestRunSteps";
 	/** [Read] apptest:ListTestRunTestCases */
-	static readonly LIST_TEST_RUN_TEST_CASES = "apptest:ListTestRunTestCases";
+	static readonly ListTestRunTestCases = "apptest:ListTestRunTestCases";
 	/** [List] apptest:ListTestRuns */
-	static readonly LIST_TEST_RUNS = "apptest:ListTestRuns";
+	static readonly ListTestRuns = "apptest:ListTestRuns";
 	/** [List] apptest:ListTestSuites */
-	static readonly LIST_TEST_SUITES = "apptest:ListTestSuites";
+	static readonly ListTestSuites = "apptest:ListTestSuites";
 	/** [Write] apptest:StartTestRun */
-	static readonly START_TEST_RUN = "apptest:StartTestRun";
+	static readonly StartTestRun = "apptest:StartTestRun";
 	/** [Tagging] apptest:TagResource */
-	static readonly TAG_RESOURCE = "apptest:TagResource";
+	static readonly TagResource = "apptest:TagResource";
 	/** [Tagging] apptest:UntagResource */
-	static readonly UNTAG_RESOURCE = "apptest:UntagResource";
+	static readonly UntagResource = "apptest:UntagResource";
 	/** [Write] apptest:UpdateTestCase */
-	static readonly UPDATE_TEST_CASE = "apptest:UpdateTestCase";
+	static readonly UpdateTestCase = "apptest:UpdateTestCase";
 	/** [Write] apptest:UpdateTestConfiguration */
-	static readonly UPDATE_TEST_CONFIGURATION = "apptest:UpdateTestConfiguration";
+	static readonly UpdateTestConfiguration = "apptest:UpdateTestConfiguration";
 	/** [Write] apptest:UpdateTestSuite */
-	static readonly UPDATE_TEST_SUITE = "apptest:UpdateTestSuite";
+	static readonly UpdateTestSuite = "apptest:UpdateTestSuite";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApptestActions.GET_TEST_CASE,
-		ApptestActions.GET_TEST_CONFIGURATION,
-		ApptestActions.GET_TEST_RUN_STEP,
-		ApptestActions.GET_TEST_SUITE,
-		ApptestActions.LIST_TAGS_FOR_RESOURCE,
-		ApptestActions.LIST_TEST_RUN_STEPS,
-		ApptestActions.LIST_TEST_RUN_TEST_CASES,
+	static readonly AllReadActions: string[] = [
+		ApptestActions.actionGetTestCase,
+		ApptestActions.actionGetTestConfiguration,
+		ApptestActions.actionGetTestRunStep,
+		ApptestActions.actionGetTestSuite,
+		ApptestActions.ListTagsForResource,
+		ApptestActions.ListTestRunSteps,
+		ApptestActions.ListTestRunTestCases,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApptestActions.CREATE_TEST_CASE,
-		ApptestActions.CREATE_TEST_CONFIGURATION,
-		ApptestActions.CREATE_TEST_SUITE,
-		ApptestActions.DELETE_TEST_CASE,
-		ApptestActions.DELETE_TEST_CONFIGURATION,
-		ApptestActions.DELETE_TEST_RUN,
-		ApptestActions.DELETE_TEST_SUITE,
-		ApptestActions.START_TEST_RUN,
-		ApptestActions.UPDATE_TEST_CASE,
-		ApptestActions.UPDATE_TEST_CONFIGURATION,
-		ApptestActions.UPDATE_TEST_SUITE,
+	static readonly AllWriteActions: string[] = [
+		ApptestActions.CreateTestCase,
+		ApptestActions.CreateTestConfiguration,
+		ApptestActions.CreateTestSuite,
+		ApptestActions.DeleteTestCase,
+		ApptestActions.DeleteTestConfiguration,
+		ApptestActions.DeleteTestRun,
+		ApptestActions.DeleteTestSuite,
+		ApptestActions.StartTestRun,
+		ApptestActions.UpdateTestCase,
+		ApptestActions.UpdateTestConfiguration,
+		ApptestActions.UpdateTestSuite,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ApptestActions.LIST_TEST_CASES,
-		ApptestActions.LIST_TEST_CONFIGURATIONS,
-		ApptestActions.LIST_TEST_RUNS,
-		ApptestActions.LIST_TEST_SUITES,
+	static readonly AllListActions: string[] = [
+		ApptestActions.ListTestCases,
+		ApptestActions.ListTestConfigurations,
+		ApptestActions.ListTestRuns,
+		ApptestActions.ListTestSuites,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ApptestActions.TAG_RESOURCE,
-		ApptestActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ApptestActions.TagResource,
+		ApptestActions.UntagResource,
 	];
 }
 
-const TestCaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testcase/(?<testCaseId>[^:/?]+)$",
-);
-const TestConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testconfiguration/(?<testConfigurationId>[^:/?]+)$",
-);
-const TestRunArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testrun/(?<testRunId>[^:/?]+)$",
-);
-const TestSuiteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testsuite/(?<testSuiteId>[^:/?]+)$",
-);
+/**
+ * Properties for building a TestCase ARN.
+ */
+export interface ApptestTestCaseArnProps {
+	/** The TestCaseId component of the ARN. */
+	readonly testCaseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TestCase ARN.
+ */
+export interface ApptestTestCaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestCaseId component. */
+	readonly testCaseId: string;
+}
+
+/**
+ * Properties for building a TestConfiguration ARN.
+ */
+export interface ApptestTestConfigurationArnProps {
+	/** The TestConfigurationId component of the ARN. */
+	readonly testConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TestConfiguration ARN.
+ */
+export interface ApptestTestConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestConfigurationId component. */
+	readonly testConfigurationId: string;
+}
+
+/**
+ * Properties for building a TestRun ARN.
+ */
+export interface ApptestTestRunArnProps {
+	/** The TestRunId component of the ARN. */
+	readonly testRunId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TestRun ARN.
+ */
+export interface ApptestTestRunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestRunId component. */
+	readonly testRunId: string;
+}
+
+/**
+ * Properties for building a TestSuite ARN.
+ */
+export interface ApptestTestSuiteArnProps {
+	/** The TestSuiteId component of the ARN. */
+	readonly testSuiteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TestSuite ARN.
+ */
+export interface ApptestTestSuiteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestSuiteId component. */
+	readonly testSuiteId: string;
+}
+
+const TestCaseArnRegex =
+	/^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testcase\/(?<testCaseId>[^:/?]+)$/;
+const TestConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testconfiguration\/(?<testConfigurationId>[^:/?]+)$/;
+const TestRunArnRegex =
+	/^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testrun\/(?<testRunId>[^:/?]+)$/;
+const TestSuiteArnRegex =
+	/^arn:(?<partition>[^:]+):apptest:(?<region>[^:]*):(?<account>[^:]*):testsuite\/(?<testSuiteId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for apptest resources.
@@ -121,16 +229,7 @@ export class ApptestResources {
 	/**
 	 * Builds an ARN for the TestCase resource.
 	 */
-	static testCase(props: {
-		/** The TestCaseId component of the ARN. */
-		readonly testCaseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testCase(props: ApptestTestCaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apptest:${props.region ?? "*"}:${props.account ?? "*"}:testcase/${props.testCaseId}`;
 	}
 
@@ -145,12 +244,7 @@ export class ApptestResources {
 	 * Parses a TestCase ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestCaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testCaseId: string;
-	} {
+	static parseTestCaseArn(arn: string): ApptestTestCaseArnComponents {
 		const match = TestCaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TestCase ARN: ${arn}`);
@@ -166,16 +260,7 @@ export class ApptestResources {
 	/**
 	 * Builds an ARN for the TestConfiguration resource.
 	 */
-	static testConfiguration(props: {
-		/** The TestConfigurationId component of the ARN. */
-		readonly testConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testConfiguration(props: ApptestTestConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apptest:${props.region ?? "*"}:${props.account ?? "*"}:testconfiguration/${props.testConfigurationId}`;
 	}
 
@@ -190,12 +275,9 @@ export class ApptestResources {
 	 * Parses a TestConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testConfigurationId: string;
-	} {
+	static parseTestConfigurationArn(
+		arn: string,
+	): ApptestTestConfigurationArnComponents {
 		const match = TestConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TestConfiguration ARN: ${arn}`);
@@ -211,16 +293,7 @@ export class ApptestResources {
 	/**
 	 * Builds an ARN for the TestRun resource.
 	 */
-	static testRun(props: {
-		/** The TestRunId component of the ARN. */
-		readonly testRunId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testRun(props: ApptestTestRunArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apptest:${props.region ?? "*"}:${props.account ?? "*"}:testrun/${props.testRunId}`;
 	}
 
@@ -235,12 +308,7 @@ export class ApptestResources {
 	 * Parses a TestRun ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestRunArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testRunId: string;
-	} {
+	static parseTestRunArn(arn: string): ApptestTestRunArnComponents {
 		const match = TestRunArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TestRun ARN: ${arn}`);
@@ -256,16 +324,7 @@ export class ApptestResources {
 	/**
 	 * Builds an ARN for the TestSuite resource.
 	 */
-	static testSuite(props: {
-		/** The TestSuiteId component of the ARN. */
-		readonly testSuiteId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testSuite(props: ApptestTestSuiteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apptest:${props.region ?? "*"}:${props.account ?? "*"}:testsuite/${props.testSuiteId}`;
 	}
 
@@ -280,12 +339,7 @@ export class ApptestResources {
 	 * Parses a TestSuite ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestSuiteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testSuiteId: string;
-	} {
+	static parseTestSuiteArn(arn: string): ApptestTestSuiteArnComponents {
 		const match = TestSuiteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TestSuite ARN: ${arn}`);
@@ -304,39 +358,39 @@ export class ApptestResources {
  */
 export class ApptestConditions {
 	/** Condition keys applicable to the CreateTestCase action. */
-	static readonly CREATE_TEST_CASE_CONDITION_KEYS: string[] = [
+	static readonly CreateTestCaseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTestConfiguration action. */
-	static readonly CREATE_TEST_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateTestConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTestSuite action. */
-	static readonly CREATE_TEST_SUITE_CONDITION_KEYS: string[] = [
+	static readonly CreateTestSuiteConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartTestRun action. */
-	static readonly START_TEST_RUN_CONDITION_KEYS: string[] = [
+	static readonly StartTestRunConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

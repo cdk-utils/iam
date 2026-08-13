@@ -13,18 +13,18 @@ export class VerifiedAccessActions {
 	static readonly SERVICE_PREFIX = "verified-access";
 
 	/** [Write] verified-access:AllowVerifiedAccess */
-	static readonly ALLOW_VERIFIED_ACCESS = "verified-access:AllowVerifiedAccess";
+	static readonly AllowVerifiedAccess = "verified-access:AllowVerifiedAccess";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		VerifiedAccessActions.ALLOW_VERIFIED_ACCESS,
+	static readonly AllWriteActions: string[] = [
+		VerifiedAccessActions.AllowVerifiedAccess,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

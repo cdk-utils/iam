@@ -13,104 +13,149 @@ export class ECRPublicActions {
 	static readonly SERVICE_PREFIX = "ecr-public";
 
 	/** [Read] ecr-public:BatchCheckLayerAvailability */
-	static readonly BATCH_CHECK_LAYER_AVAILABILITY =
+	static readonly BatchCheckLayerAvailability =
 		"ecr-public:BatchCheckLayerAvailability";
 	/** [Write] ecr-public:BatchDeleteImage */
-	static readonly BATCH_DELETE_IMAGE = "ecr-public:BatchDeleteImage";
+	static readonly BatchDeleteImage = "ecr-public:BatchDeleteImage";
 	/** [Write] ecr-public:CompleteLayerUpload */
-	static readonly COMPLETE_LAYER_UPLOAD = "ecr-public:CompleteLayerUpload";
+	static readonly CompleteLayerUpload = "ecr-public:CompleteLayerUpload";
 	/** [Write] ecr-public:CreateRepository */
-	static readonly CREATE_REPOSITORY = "ecr-public:CreateRepository";
+	static readonly CreateRepository = "ecr-public:CreateRepository";
 	/** [Write] ecr-public:DeleteRepository */
-	static readonly DELETE_REPOSITORY = "ecr-public:DeleteRepository";
+	static readonly DeleteRepository = "ecr-public:DeleteRepository";
 	/** [Write] ecr-public:DeleteRepositoryPolicy */
-	static readonly DELETE_REPOSITORY_POLICY =
-		"ecr-public:DeleteRepositoryPolicy";
+	static readonly DeleteRepositoryPolicy = "ecr-public:DeleteRepositoryPolicy";
 	/** [List] ecr-public:DescribeImageTags */
-	static readonly DESCRIBE_IMAGE_TAGS = "ecr-public:DescribeImageTags";
+	static readonly DescribeImageTags = "ecr-public:DescribeImageTags";
 	/** [Read] ecr-public:DescribeImages */
-	static readonly DESCRIBE_IMAGES = "ecr-public:DescribeImages";
+	static readonly DescribeImages = "ecr-public:DescribeImages";
 	/** [List] ecr-public:DescribeRegistries */
-	static readonly DESCRIBE_REGISTRIES = "ecr-public:DescribeRegistries";
+	static readonly DescribeRegistries = "ecr-public:DescribeRegistries";
 	/** [List] ecr-public:DescribeRepositories */
-	static readonly DESCRIBE_REPOSITORIES = "ecr-public:DescribeRepositories";
+	static readonly DescribeRepositories = "ecr-public:DescribeRepositories";
 	/** [Read] ecr-public:GetAuthorizationToken */
-	static readonly GET_AUTHORIZATION_TOKEN = "ecr-public:GetAuthorizationToken";
+	static readonly actionGetAuthorizationToken =
+		"ecr-public:GetAuthorizationToken";
 	/** [Read] ecr-public:GetRegistryCatalogData */
-	static readonly GET_REGISTRY_CATALOG_DATA =
+	static readonly actionGetRegistryCatalogData =
 		"ecr-public:GetRegistryCatalogData";
 	/** [Read] ecr-public:GetRepositoryCatalogData */
-	static readonly GET_REPOSITORY_CATALOG_DATA =
+	static readonly actionGetRepositoryCatalogData =
 		"ecr-public:GetRepositoryCatalogData";
 	/** [Read] ecr-public:GetRepositoryPolicy */
-	static readonly GET_REPOSITORY_POLICY = "ecr-public:GetRepositoryPolicy";
+	static readonly actionGetRepositoryPolicy = "ecr-public:GetRepositoryPolicy";
 	/** [Write] ecr-public:InitiateLayerUpload */
-	static readonly INITIATE_LAYER_UPLOAD = "ecr-public:InitiateLayerUpload";
+	static readonly InitiateLayerUpload = "ecr-public:InitiateLayerUpload";
 	/** [Read] ecr-public:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "ecr-public:ListTagsForResource";
+	static readonly ListTagsForResource = "ecr-public:ListTagsForResource";
 	/** [Write] ecr-public:PutImage */
-	static readonly PUT_IMAGE = "ecr-public:PutImage";
+	static readonly PutImage = "ecr-public:PutImage";
 	/** [Write] ecr-public:PutRegistryCatalogData */
-	static readonly PUT_REGISTRY_CATALOG_DATA =
-		"ecr-public:PutRegistryCatalogData";
+	static readonly PutRegistryCatalogData = "ecr-public:PutRegistryCatalogData";
 	/** [Write] ecr-public:PutRepositoryCatalogData */
-	static readonly PUT_REPOSITORY_CATALOG_DATA =
+	static readonly PutRepositoryCatalogData =
 		"ecr-public:PutRepositoryCatalogData";
 	/** [PermissionManagement] ecr-public:SetRepositoryPolicy */
-	static readonly SET_REPOSITORY_POLICY = "ecr-public:SetRepositoryPolicy";
+	static readonly actionSetRepositoryPolicy = "ecr-public:SetRepositoryPolicy";
 	/** [Tagging] ecr-public:TagResource */
-	static readonly TAG_RESOURCE = "ecr-public:TagResource";
+	static readonly TagResource = "ecr-public:TagResource";
 	/** [Tagging] ecr-public:UntagResource */
-	static readonly UNTAG_RESOURCE = "ecr-public:UntagResource";
+	static readonly UntagResource = "ecr-public:UntagResource";
 	/** [Write] ecr-public:UploadLayerPart */
-	static readonly UPLOAD_LAYER_PART = "ecr-public:UploadLayerPart";
+	static readonly UploadLayerPart = "ecr-public:UploadLayerPart";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ECRPublicActions.BATCH_CHECK_LAYER_AVAILABILITY,
-		ECRPublicActions.DESCRIBE_IMAGES,
-		ECRPublicActions.GET_AUTHORIZATION_TOKEN,
-		ECRPublicActions.GET_REGISTRY_CATALOG_DATA,
-		ECRPublicActions.GET_REPOSITORY_CATALOG_DATA,
-		ECRPublicActions.GET_REPOSITORY_POLICY,
-		ECRPublicActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ECRPublicActions.BatchCheckLayerAvailability,
+		ECRPublicActions.DescribeImages,
+		ECRPublicActions.actionGetAuthorizationToken,
+		ECRPublicActions.actionGetRegistryCatalogData,
+		ECRPublicActions.actionGetRepositoryCatalogData,
+		ECRPublicActions.actionGetRepositoryPolicy,
+		ECRPublicActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ECRPublicActions.BATCH_DELETE_IMAGE,
-		ECRPublicActions.COMPLETE_LAYER_UPLOAD,
-		ECRPublicActions.CREATE_REPOSITORY,
-		ECRPublicActions.DELETE_REPOSITORY,
-		ECRPublicActions.DELETE_REPOSITORY_POLICY,
-		ECRPublicActions.INITIATE_LAYER_UPLOAD,
-		ECRPublicActions.PUT_IMAGE,
-		ECRPublicActions.PUT_REGISTRY_CATALOG_DATA,
-		ECRPublicActions.PUT_REPOSITORY_CATALOG_DATA,
-		ECRPublicActions.UPLOAD_LAYER_PART,
+	static readonly AllWriteActions: string[] = [
+		ECRPublicActions.BatchDeleteImage,
+		ECRPublicActions.CompleteLayerUpload,
+		ECRPublicActions.CreateRepository,
+		ECRPublicActions.DeleteRepository,
+		ECRPublicActions.DeleteRepositoryPolicy,
+		ECRPublicActions.InitiateLayerUpload,
+		ECRPublicActions.PutImage,
+		ECRPublicActions.PutRegistryCatalogData,
+		ECRPublicActions.PutRepositoryCatalogData,
+		ECRPublicActions.UploadLayerPart,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ECRPublicActions.DESCRIBE_IMAGE_TAGS,
-		ECRPublicActions.DESCRIBE_REGISTRIES,
-		ECRPublicActions.DESCRIBE_REPOSITORIES,
+	static readonly AllListActions: string[] = [
+		ECRPublicActions.DescribeImageTags,
+		ECRPublicActions.DescribeRegistries,
+		ECRPublicActions.DescribeRepositories,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		ECRPublicActions.SET_REPOSITORY_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		ECRPublicActions.actionSetRepositoryPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ECRPublicActions.TAG_RESOURCE,
-		ECRPublicActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ECRPublicActions.TagResource,
+		ECRPublicActions.UntagResource,
 	];
 }
 
-const RegistryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ecr-public::(?<account>[^:]*):registry/(?<registryId>[^:/?]+)$",
-);
-const RepositoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ecr-public::(?<account>[^:]*):repository/(?<repositoryName>[^:/?]+)$",
-);
+/**
+ * Properties for building a registry ARN.
+ */
+export interface ECRPublicRegistryArnProps {
+	/** The RegistryId component of the ARN. */
+	readonly registryId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a registry ARN.
+ */
+export interface ECRPublicRegistryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RegistryId component. */
+	readonly registryId: string;
+}
+
+/**
+ * Properties for building a repository ARN.
+ */
+export interface ECRPublicRepositoryArnProps {
+	/** The RepositoryName component of the ARN. */
+	readonly repositoryName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a repository ARN.
+ */
+export interface ECRPublicRepositoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RepositoryName component. */
+	readonly repositoryName: string;
+}
+
+const RegistryArnRegex =
+	/^arn:(?<partition>[^:]+):ecr-public::(?<account>[^:]*):registry\/(?<registryId>[^:/?]+)$/;
+const RepositoryArnRegex =
+	/^arn:(?<partition>[^:]+):ecr-public::(?<account>[^:]*):repository\/(?<repositoryName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ecr-public resources.
@@ -119,14 +164,7 @@ export class ECRPublicResources {
 	/**
 	 * Builds an ARN for the registry resource.
 	 */
-	static registry(props: {
-		/** The RegistryId component of the ARN. */
-		readonly registryId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static registry(props: ECRPublicRegistryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ecr-public::${props.account ?? "*"}:registry/${props.registryId}`;
 	}
 
@@ -141,11 +179,7 @@ export class ECRPublicResources {
 	 * Parses a registry ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRegistryArn(arn: string): {
-		partition: string;
-		account: string;
-		registryId: string;
-	} {
+	static parseRegistryArn(arn: string): ECRPublicRegistryArnComponents {
 		const match = RegistryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid registry ARN: ${arn}`);
@@ -160,14 +194,7 @@ export class ECRPublicResources {
 	/**
 	 * Builds an ARN for the repository resource.
 	 */
-	static repository(props: {
-		/** The RepositoryName component of the ARN. */
-		readonly repositoryName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static repository(props: ECRPublicRepositoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ecr-public::${props.account ?? "*"}:repository/${props.repositoryName}`;
 	}
 
@@ -182,11 +209,7 @@ export class ECRPublicResources {
 	 * Parses a repository ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRepositoryArn(arn: string): {
-		partition: string;
-		account: string;
-		repositoryName: string;
-	} {
+	static parseRepositoryArn(arn: string): ECRPublicRepositoryArnComponents {
 		const match = RepositoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid repository ARN: ${arn}`);
@@ -204,87 +227,85 @@ export class ECRPublicResources {
  */
 export class ECRPublicOperations {
 	/** IAM actions required for the BatchCheckLayerAvailability API call. */
-	static readonly BATCH_CHECK_LAYER_AVAILABILITY: string[] = [
+	static readonly BatchCheckLayerAvailability: string[] = [
 		"ecr-public:BatchCheckLayerAvailability",
 	];
 	/** IAM actions required for the BatchDeleteImage API call. */
-	static readonly BATCH_DELETE_IMAGE: string[] = [
-		"ecr-public:BatchDeleteImage",
-	];
+	static readonly BatchDeleteImage: string[] = ["ecr-public:BatchDeleteImage"];
 	/** IAM actions required for the CompleteLayerUpload API call. */
-	static readonly COMPLETE_LAYER_UPLOAD: string[] = [
+	static readonly CompleteLayerUpload: string[] = [
 		"ecr-public:CompleteLayerUpload",
 	];
 	/** IAM actions required for the CreateRepository API call. */
-	static readonly CREATE_REPOSITORY: string[] = [
+	static readonly CreateRepository: string[] = [
 		"ecr-public:CreateRepository",
 		"ecr-public:TagResource",
 	];
 	/** IAM actions required for the DeleteRepository API call. */
-	static readonly DELETE_REPOSITORY: string[] = ["ecr-public:DeleteRepository"];
+	static readonly DeleteRepository: string[] = ["ecr-public:DeleteRepository"];
 	/** IAM actions required for the DeleteRepositoryPolicy API call. */
-	static readonly DELETE_REPOSITORY_POLICY: string[] = [
+	static readonly DeleteRepositoryPolicy: string[] = [
 		"ecr-public:DeleteRepositoryPolicy",
 	];
 	/** IAM actions required for the DescribeImageTags API call. */
-	static readonly DESCRIBE_IMAGE_TAGS: string[] = [
+	static readonly DescribeImageTags: string[] = [
 		"ecr-public:DescribeImageTags",
 	];
 	/** IAM actions required for the DescribeImages API call. */
-	static readonly DESCRIBE_IMAGES: string[] = ["ecr-public:DescribeImages"];
+	static readonly DescribeImages: string[] = ["ecr-public:DescribeImages"];
 	/** IAM actions required for the DescribeRegistries API call. */
-	static readonly DESCRIBE_REGISTRIES: string[] = [
+	static readonly DescribeRegistries: string[] = [
 		"ecr-public:DescribeRegistries",
 	];
 	/** IAM actions required for the DescribeRepositories API call. */
-	static readonly DESCRIBE_REPOSITORIES: string[] = [
+	static readonly DescribeRepositories: string[] = [
 		"ecr-public:DescribeRepositories",
 	];
 	/** IAM actions required for the GetAuthorizationToken API call. */
-	static readonly GET_AUTHORIZATION_TOKEN: string[] = [
+	static readonly opGetAuthorizationToken: string[] = [
 		"ecr-public:GetAuthorizationToken",
 		"sts:GetServiceBearerToken",
 	];
 	/** IAM actions required for the GetRegistryCatalogData API call. */
-	static readonly GET_REGISTRY_CATALOG_DATA: string[] = [
+	static readonly opGetRegistryCatalogData: string[] = [
 		"ecr-public:GetRegistryCatalogData",
 	];
 	/** IAM actions required for the GetRepositoryCatalogData API call. */
-	static readonly GET_REPOSITORY_CATALOG_DATA: string[] = [
+	static readonly opGetRepositoryCatalogData: string[] = [
 		"ecr-public:GetRepositoryCatalogData",
 	];
 	/** IAM actions required for the GetRepositoryPolicy API call. */
-	static readonly GET_REPOSITORY_POLICY: string[] = [
+	static readonly opGetRepositoryPolicy: string[] = [
 		"ecr-public:GetRepositoryPolicy",
 	];
 	/** IAM actions required for the InitiateLayerUpload API call. */
-	static readonly INITIATE_LAYER_UPLOAD: string[] = [
+	static readonly InitiateLayerUpload: string[] = [
 		"ecr-public:InitiateLayerUpload",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"ecr-public:ListTagsForResource",
 	];
 	/** IAM actions required for the PutImage API call. */
-	static readonly PUT_IMAGE: string[] = ["ecr-public:PutImage"];
+	static readonly PutImage: string[] = ["ecr-public:PutImage"];
 	/** IAM actions required for the PutRegistryCatalogData API call. */
-	static readonly PUT_REGISTRY_CATALOG_DATA: string[] = [
+	static readonly PutRegistryCatalogData: string[] = [
 		"ecr-public:PutRegistryCatalogData",
 	];
 	/** IAM actions required for the PutRepositoryCatalogData API call. */
-	static readonly PUT_REPOSITORY_CATALOG_DATA: string[] = [
+	static readonly PutRepositoryCatalogData: string[] = [
 		"ecr-public:PutRepositoryCatalogData",
 	];
 	/** IAM actions required for the SetRepositoryPolicy API call. */
-	static readonly SET_REPOSITORY_POLICY: string[] = [
+	static readonly opSetRepositoryPolicy: string[] = [
 		"ecr-public:SetRepositoryPolicy",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["ecr-public:TagResource"];
+	static readonly TagResource: string[] = ["ecr-public:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["ecr-public:UntagResource"];
+	static readonly UntagResource: string[] = ["ecr-public:UntagResource"];
 	/** IAM actions required for the UploadLayerPart API call. */
-	static readonly UPLOAD_LAYER_PART: string[] = ["ecr-public:UploadLayerPart"];
+	static readonly UploadLayerPart: string[] = ["ecr-public:UploadLayerPart"];
 }
 
 /**
@@ -292,24 +313,24 @@ export class ECRPublicOperations {
  */
 export class ECRPublicConditions {
 	/** Condition keys applicable to the CreateRepository action. */
-	static readonly CREATE_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly CreateRepositoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: ecr-public:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "ecr-public:ResourceTag/${TagKey}";
 
@@ -332,12 +353,5 @@ export class ECRPublicConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
-	}
-
-	/**
-	 * Generates a condition block for `ecr-public:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "ecr-public:ResourceTag/${TagKey}": value } };
 	}
 }

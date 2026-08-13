@@ -13,69 +13,121 @@ export class BackupSearchActions {
 	static readonly SERVICE_PREFIX = "backup-search";
 
 	/** [Read] backup-search:GetSearchJob */
-	static readonly GET_SEARCH_JOB = "backup-search:GetSearchJob";
+	static readonly actionGetSearchJob = "backup-search:GetSearchJob";
 	/** [Read] backup-search:GetSearchResultExportJob */
-	static readonly GET_SEARCH_RESULT_EXPORT_JOB =
+	static readonly actionGetSearchResultExportJob =
 		"backup-search:GetSearchResultExportJob";
 	/** [Read] backup-search:ListSearchJobBackups */
-	static readonly LIST_SEARCH_JOB_BACKUPS =
-		"backup-search:ListSearchJobBackups";
+	static readonly ListSearchJobBackups = "backup-search:ListSearchJobBackups";
 	/** [Read] backup-search:ListSearchJobResults */
-	static readonly LIST_SEARCH_JOB_RESULTS =
-		"backup-search:ListSearchJobResults";
+	static readonly ListSearchJobResults = "backup-search:ListSearchJobResults";
 	/** [List] backup-search:ListSearchJobs */
-	static readonly LIST_SEARCH_JOBS = "backup-search:ListSearchJobs";
+	static readonly ListSearchJobs = "backup-search:ListSearchJobs";
 	/** [List] backup-search:ListSearchResultExportJobs */
-	static readonly LIST_SEARCH_RESULT_EXPORT_JOBS =
+	static readonly ListSearchResultExportJobs =
 		"backup-search:ListSearchResultExportJobs";
 	/** [Read] backup-search:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "backup-search:ListTagsForResource";
+	static readonly ListTagsForResource = "backup-search:ListTagsForResource";
 	/** [Write] backup-search:StartSearchJob */
-	static readonly START_SEARCH_JOB = "backup-search:StartSearchJob";
+	static readonly StartSearchJob = "backup-search:StartSearchJob";
 	/** [Write] backup-search:StartSearchResultExportJob */
-	static readonly START_SEARCH_RESULT_EXPORT_JOB =
+	static readonly StartSearchResultExportJob =
 		"backup-search:StartSearchResultExportJob";
 	/** [Write] backup-search:StopSearchJob */
-	static readonly STOP_SEARCH_JOB = "backup-search:StopSearchJob";
+	static readonly StopSearchJob = "backup-search:StopSearchJob";
 	/** [Tagging] backup-search:TagResource */
-	static readonly TAG_RESOURCE = "backup-search:TagResource";
+	static readonly TagResource = "backup-search:TagResource";
 	/** [Tagging] backup-search:UntagResource */
-	static readonly UNTAG_RESOURCE = "backup-search:UntagResource";
+	static readonly UntagResource = "backup-search:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BackupSearchActions.GET_SEARCH_JOB,
-		BackupSearchActions.GET_SEARCH_RESULT_EXPORT_JOB,
-		BackupSearchActions.LIST_SEARCH_JOB_BACKUPS,
-		BackupSearchActions.LIST_SEARCH_JOB_RESULTS,
-		BackupSearchActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		BackupSearchActions.actionGetSearchJob,
+		BackupSearchActions.actionGetSearchResultExportJob,
+		BackupSearchActions.ListSearchJobBackups,
+		BackupSearchActions.ListSearchJobResults,
+		BackupSearchActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BackupSearchActions.START_SEARCH_JOB,
-		BackupSearchActions.START_SEARCH_RESULT_EXPORT_JOB,
-		BackupSearchActions.STOP_SEARCH_JOB,
+	static readonly AllWriteActions: string[] = [
+		BackupSearchActions.StartSearchJob,
+		BackupSearchActions.StartSearchResultExportJob,
+		BackupSearchActions.StopSearchJob,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BackupSearchActions.LIST_SEARCH_JOBS,
-		BackupSearchActions.LIST_SEARCH_RESULT_EXPORT_JOBS,
+	static readonly AllListActions: string[] = [
+		BackupSearchActions.ListSearchJobs,
+		BackupSearchActions.ListSearchResultExportJobs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BackupSearchActions.TAG_RESOURCE,
-		BackupSearchActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BackupSearchActions.TagResource,
+		BackupSearchActions.UntagResource,
 	];
 }
 
-const SearchExportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):backup-search:(?<region>[^:]*):(?<account>[^:]*):search-export-job/(?<resourceId>[^:/?]+)$",
-);
-const SearchJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):backup-search:(?<region>[^:]*):(?<account>[^:]*):search-job/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a searchExportJob ARN.
+ */
+export interface BackupSearchSearchExportJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a searchExportJob ARN.
+ */
+export interface BackupSearchSearchExportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a searchJob ARN.
+ */
+export interface BackupSearchSearchJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a searchJob ARN.
+ */
+export interface BackupSearchSearchJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const SearchExportJobArnRegex =
+	/^arn:(?<partition>[^:]+):backup-search:(?<region>[^:]*):(?<account>[^:]*):search-export-job\/(?<resourceId>[^:/?]+)$/;
+const SearchJobArnRegex =
+	/^arn:(?<partition>[^:]+):backup-search:(?<region>[^:]*):(?<account>[^:]*):search-job\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for backup-search resources.
@@ -84,16 +136,7 @@ export class BackupSearchResources {
 	/**
 	 * Builds an ARN for the searchExportJob resource.
 	 */
-	static searchExportJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static searchExportJob(props: BackupSearchSearchExportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:backup-search:${props.region ?? "*"}:${props.account ?? "*"}:search-export-job/${props.resourceId}`;
 	}
 
@@ -108,12 +151,9 @@ export class BackupSearchResources {
 	 * Parses a searchExportJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSearchExportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSearchExportJobArn(
+		arn: string,
+	): BackupSearchSearchExportJobArnComponents {
 		const match = SearchExportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid searchExportJob ARN: ${arn}`);
@@ -129,16 +169,7 @@ export class BackupSearchResources {
 	/**
 	 * Builds an ARN for the searchJob resource.
 	 */
-	static searchJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static searchJob(props: BackupSearchSearchJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:backup-search:${props.region ?? "*"}:${props.account ?? "*"}:search-job/${props.resourceId}`;
 	}
 
@@ -153,12 +184,7 @@ export class BackupSearchResources {
 	 * Parses a searchJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSearchJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSearchJobArn(arn: string): BackupSearchSearchJobArnComponents {
 		const match = SearchJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid searchJob ARN: ${arn}`);
@@ -177,42 +203,42 @@ export class BackupSearchResources {
  */
 export class BackupSearchOperations {
 	/** IAM actions required for the GetSearchJob API call. */
-	static readonly GET_SEARCH_JOB: string[] = ["backup-search:GetSearchJob"];
+	static readonly opGetSearchJob: string[] = ["backup-search:GetSearchJob"];
 	/** IAM actions required for the GetSearchResultExportJob API call. */
-	static readonly GET_SEARCH_RESULT_EXPORT_JOB: string[] = [
+	static readonly opGetSearchResultExportJob: string[] = [
 		"backup-search:GetSearchResultExportJob",
 	];
 	/** IAM actions required for the ListSearchJobBackups API call. */
-	static readonly LIST_SEARCH_JOB_BACKUPS: string[] = [
+	static readonly ListSearchJobBackups: string[] = [
 		"backup-search:ListSearchJobBackups",
 	];
 	/** IAM actions required for the ListSearchJobResults API call. */
-	static readonly LIST_SEARCH_JOB_RESULTS: string[] = [
+	static readonly ListSearchJobResults: string[] = [
 		"backup-search:ListSearchJobResults",
 	];
 	/** IAM actions required for the ListSearchJobs API call. */
-	static readonly LIST_SEARCH_JOBS: string[] = ["backup-search:ListSearchJobs"];
+	static readonly ListSearchJobs: string[] = ["backup-search:ListSearchJobs"];
 	/** IAM actions required for the ListSearchResultExportJobs API call. */
-	static readonly LIST_SEARCH_RESULT_EXPORT_JOBS: string[] = [
+	static readonly ListSearchResultExportJobs: string[] = [
 		"backup-search:ListSearchResultExportJobs",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"backup-search:ListTagsForResource",
 	];
 	/** IAM actions required for the StartSearchJob API call. */
-	static readonly START_SEARCH_JOB: string[] = [
+	static readonly StartSearchJob: string[] = [
 		"backup-search:StartSearchJob",
 		"backup-search:TagResource",
 	];
 	/** IAM actions required for the StartSearchResultExportJob API call. */
-	static readonly START_SEARCH_RESULT_EXPORT_JOB: string[] = [];
+	static readonly StartSearchResultExportJob: string[] = [];
 	/** IAM actions required for the StopSearchJob API call. */
-	static readonly STOP_SEARCH_JOB: string[] = ["backup-search:StopSearchJob"];
+	static readonly StopSearchJob: string[] = ["backup-search:StopSearchJob"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["backup-search:TagResource"];
+	static readonly TagResource: string[] = ["backup-search:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["backup-search:UntagResource"];
+	static readonly UntagResource: string[] = ["backup-search:UntagResource"];
 }
 
 /**
@@ -220,30 +246,30 @@ export class BackupSearchOperations {
  */
 export class BackupSearchConditions {
 	/** Condition keys applicable to the StartSearchJob action. */
-	static readonly START_SEARCH_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartSearchJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartSearchResultExportJob action. */
-	static readonly START_SEARCH_RESULT_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartSearchResultExportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

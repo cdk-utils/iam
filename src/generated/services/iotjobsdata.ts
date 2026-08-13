@@ -13,37 +13,64 @@ export class IotjobsdataActions {
 	static readonly SERVICE_PREFIX = "iotjobsdata";
 
 	/** [Read] iotjobsdata:DescribeJobExecution */
-	static readonly DESCRIBE_JOB_EXECUTION = "iotjobsdata:DescribeJobExecution";
+	static readonly DescribeJobExecution = "iotjobsdata:DescribeJobExecution";
 	/** [Read] iotjobsdata:GetPendingJobExecutions */
-	static readonly GET_PENDING_JOB_EXECUTIONS =
+	static readonly actionGetPendingJobExecutions =
 		"iotjobsdata:GetPendingJobExecutions";
 	/** [Write] iotjobsdata:StartNextPendingJobExecution */
-	static readonly START_NEXT_PENDING_JOB_EXECUTION =
+	static readonly StartNextPendingJobExecution =
 		"iotjobsdata:StartNextPendingJobExecution";
 	/** [Write] iotjobsdata:UpdateJobExecution */
-	static readonly UPDATE_JOB_EXECUTION = "iotjobsdata:UpdateJobExecution";
+	static readonly UpdateJobExecution = "iotjobsdata:UpdateJobExecution";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotjobsdataActions.DESCRIBE_JOB_EXECUTION,
-		IotjobsdataActions.GET_PENDING_JOB_EXECUTIONS,
+	static readonly AllReadActions: string[] = [
+		IotjobsdataActions.DescribeJobExecution,
+		IotjobsdataActions.actionGetPendingJobExecutions,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotjobsdataActions.START_NEXT_PENDING_JOB_EXECUTION,
-		IotjobsdataActions.UPDATE_JOB_EXECUTION,
+	static readonly AllWriteActions: string[] = [
+		IotjobsdataActions.StartNextPendingJobExecution,
+		IotjobsdataActions.UpdateJobExecution,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ThingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thing/(?<thingName>[^:/?]+)$",
-);
+/**
+ * Properties for building a thing ARN.
+ */
+export interface IotjobsdataThingArnProps {
+	/** The ThingName component of the ARN. */
+	readonly thingName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a thing ARN.
+ */
+export interface IotjobsdataThingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ThingName component. */
+	readonly thingName: string;
+}
+
+const ThingArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thing\/(?<thingName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iotjobsdata resources.
@@ -52,16 +79,7 @@ export class IotjobsdataResources {
 	/**
 	 * Builds an ARN for the thing resource.
 	 */
-	static thing(props: {
-		/** The ThingName component of the ARN. */
-		readonly thingName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static thing(props: IotjobsdataThingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:thing/${props.thingName}`;
 	}
 
@@ -76,12 +94,7 @@ export class IotjobsdataResources {
 	 * Parses a thing ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		thingName: string;
-	} {
+	static parseThingArn(arn: string): IotjobsdataThingArnComponents {
 		const match = ThingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid thing ARN: ${arn}`);
@@ -100,23 +113,23 @@ export class IotjobsdataResources {
  */
 export class IotjobsdataOperations {
 	/** IAM actions required for the DescribeJobExecution API call. */
-	static readonly DESCRIBE_JOB_EXECUTION: string[] = [
+	static readonly DescribeJobExecution: string[] = [
 		"iotjobsdata:DescribeJobExecution",
 	];
 	/** IAM actions required for the GetPendingJobExecutions API call. */
-	static readonly GET_PENDING_JOB_EXECUTIONS: string[] = [
+	static readonly opGetPendingJobExecutions: string[] = [
 		"iotjobsdata:GetPendingJobExecutions",
 	];
 	/** IAM actions required for the StartCommandExecution API call. */
-	static readonly START_COMMAND_EXECUTION: string[] = [
+	static readonly StartCommandExecution: string[] = [
 		"iot:StartCommandExecution",
 	];
 	/** IAM actions required for the StartNextPendingJobExecution API call. */
-	static readonly START_NEXT_PENDING_JOB_EXECUTION: string[] = [
+	static readonly StartNextPendingJobExecution: string[] = [
 		"iotjobsdata:StartNextPendingJobExecution",
 	];
 	/** IAM actions required for the UpdateJobExecution API call. */
-	static readonly UPDATE_JOB_EXECUTION: string[] = [
+	static readonly UpdateJobExecution: string[] = [
 		"iotjobsdata:UpdateJobExecution",
 	];
 }
@@ -126,11 +139,9 @@ export class IotjobsdataOperations {
  */
 export class IotjobsdataConditions {
 	/** Condition keys applicable to the DescribeJobExecution action. */
-	static readonly DESCRIBE_JOB_EXECUTION_CONDITION_KEYS: string[] = [
-		"iot:JobId",
-	];
+	static readonly DescribeJobExecutionConditionKeys: string[] = ["iot:JobId"];
 	/** Condition keys applicable to the UpdateJobExecution action. */
-	static readonly UPDATE_JOB_EXECUTION_CONDITION_KEYS: string[] = ["iot:JobId"];
+	static readonly UpdateJobExecutionConditionKeys: string[] = ["iot:JobId"];
 
 	/** Condition key: iot:JobId (String) */
 	static readonly JOB_ID = "iot:JobId";

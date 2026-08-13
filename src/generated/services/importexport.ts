@@ -13,35 +13,35 @@ export class ImportexportActions {
 	static readonly SERVICE_PREFIX = "importexport";
 
 	/** [Write] importexport:CancelJob */
-	static readonly CANCEL_JOB = "importexport:CancelJob";
+	static readonly CancelJob = "importexport:CancelJob";
 	/** [Write] importexport:CreateJob */
-	static readonly CREATE_JOB = "importexport:CreateJob";
+	static readonly CreateJob = "importexport:CreateJob";
 	/** [Read] importexport:GetShippingLabel */
-	static readonly GET_SHIPPING_LABEL = "importexport:GetShippingLabel";
+	static readonly actionGetShippingLabel = "importexport:GetShippingLabel";
 	/** [Read] importexport:GetStatus */
-	static readonly GET_STATUS = "importexport:GetStatus";
+	static readonly actionGetStatus = "importexport:GetStatus";
 	/** [List] importexport:ListJobs */
-	static readonly LIST_JOBS = "importexport:ListJobs";
+	static readonly ListJobs = "importexport:ListJobs";
 	/** [Write] importexport:UpdateJob */
-	static readonly UPDATE_JOB = "importexport:UpdateJob";
+	static readonly UpdateJob = "importexport:UpdateJob";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ImportexportActions.GET_SHIPPING_LABEL,
-		ImportexportActions.GET_STATUS,
+	static readonly AllReadActions: string[] = [
+		ImportexportActions.actionGetShippingLabel,
+		ImportexportActions.actionGetStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ImportexportActions.CANCEL_JOB,
-		ImportexportActions.CREATE_JOB,
-		ImportexportActions.UPDATE_JOB,
+	static readonly AllWriteActions: string[] = [
+		ImportexportActions.CancelJob,
+		ImportexportActions.CreateJob,
+		ImportexportActions.UpdateJob,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [ImportexportActions.LIST_JOBS];
+	static readonly AllListActions: string[] = [ImportexportActions.ListJobs];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -49,15 +49,15 @@ export class ImportexportActions {
  */
 export class ImportexportOperations {
 	/** IAM actions required for the CancelJob API call. */
-	static readonly CANCEL_JOB: string[] = [];
+	static readonly CancelJob: string[] = [];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [];
+	static readonly CreateJob: string[] = [];
 	/** IAM actions required for the GetShippingLabel API call. */
-	static readonly GET_SHIPPING_LABEL: string[] = [];
+	static readonly opGetShippingLabel: string[] = [];
 	/** IAM actions required for the GetStatus API call. */
-	static readonly GET_STATUS: string[] = [];
+	static readonly opGetStatus: string[] = [];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = [];
+	static readonly ListJobs: string[] = [];
 	/** IAM actions required for the UpdateJob API call. */
-	static readonly UPDATE_JOB: string[] = [];
+	static readonly UpdateJob: string[] = [];
 }

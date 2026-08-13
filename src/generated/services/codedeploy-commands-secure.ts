@@ -13,32 +13,32 @@ export class CodedeployCommandsSecureActions {
 	static readonly SERVICE_PREFIX = "codedeploy-commands-secure";
 
 	/** [Read] codedeploy-commands-secure:GetDeploymentSpecification */
-	static readonly GET_DEPLOYMENT_SPECIFICATION =
+	static readonly actionGetDeploymentSpecification =
 		"codedeploy-commands-secure:GetDeploymentSpecification";
 	/** [Read] codedeploy-commands-secure:PollHostCommand */
-	static readonly POLL_HOST_COMMAND =
+	static readonly PollHostCommand =
 		"codedeploy-commands-secure:PollHostCommand";
 	/** [Write] codedeploy-commands-secure:PutHostCommandAcknowledgement */
-	static readonly PUT_HOST_COMMAND_ACKNOWLEDGEMENT =
+	static readonly PutHostCommandAcknowledgement =
 		"codedeploy-commands-secure:PutHostCommandAcknowledgement";
 	/** [Write] codedeploy-commands-secure:PutHostCommandComplete */
-	static readonly PUT_HOST_COMMAND_COMPLETE =
+	static readonly PutHostCommandComplete =
 		"codedeploy-commands-secure:PutHostCommandComplete";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodedeployCommandsSecureActions.GET_DEPLOYMENT_SPECIFICATION,
-		CodedeployCommandsSecureActions.POLL_HOST_COMMAND,
+	static readonly AllReadActions: string[] = [
+		CodedeployCommandsSecureActions.actionGetDeploymentSpecification,
+		CodedeployCommandsSecureActions.PollHostCommand,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodedeployCommandsSecureActions.PUT_HOST_COMMAND_ACKNOWLEDGEMENT,
-		CodedeployCommandsSecureActions.PUT_HOST_COMMAND_COMPLETE,
+	static readonly AllWriteActions: string[] = [
+		CodedeployCommandsSecureActions.PutHostCommandAcknowledgement,
+		CodedeployCommandsSecureActions.PutHostCommandComplete,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

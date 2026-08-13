@@ -13,458 +13,482 @@ export class WorkMailActions {
 	static readonly SERVICE_PREFIX = "workmail";
 
 	/** [Write] workmail:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"workmail:AllowVendedLogDeliveryForResource";
 	/** [Write] workmail:AssociateDelegateToResource */
-	static readonly ASSOCIATE_DELEGATE_TO_RESOURCE =
+	static readonly AssociateDelegateToResource =
 		"workmail:AssociateDelegateToResource";
 	/** [Write] workmail:AssociateMemberToGroup */
-	static readonly ASSOCIATE_MEMBER_TO_GROUP = "workmail:AssociateMemberToGroup";
+	static readonly AssociateMemberToGroup = "workmail:AssociateMemberToGroup";
 	/** [Write] workmail:AssumeImpersonationRole */
-	static readonly ASSUME_IMPERSONATION_ROLE =
-		"workmail:AssumeImpersonationRole";
+	static readonly AssumeImpersonationRole = "workmail:AssumeImpersonationRole";
 	/** [Write] workmail:CancelMailboxExportJob */
-	static readonly CANCEL_MAILBOX_EXPORT_JOB = "workmail:CancelMailboxExportJob";
+	static readonly CancelMailboxExportJob = "workmail:CancelMailboxExportJob";
 	/** [Write] workmail:CreateAlias */
-	static readonly CREATE_ALIAS = "workmail:CreateAlias";
+	static readonly CreateAlias = "workmail:CreateAlias";
 	/** [Write] workmail:CreateAvailabilityConfiguration */
-	static readonly CREATE_AVAILABILITY_CONFIGURATION =
+	static readonly CreateAvailabilityConfiguration =
 		"workmail:CreateAvailabilityConfiguration";
 	/** [Write] workmail:CreateGroup */
-	static readonly CREATE_GROUP = "workmail:CreateGroup";
+	static readonly CreateGroup = "workmail:CreateGroup";
 	/** [Write] workmail:CreateIdentityCenterApplication */
-	static readonly CREATE_IDENTITY_CENTER_APPLICATION =
+	static readonly CreateIdentityCenterApplication =
 		"workmail:CreateIdentityCenterApplication";
 	/** [Write] workmail:CreateImpersonationRole */
-	static readonly CREATE_IMPERSONATION_ROLE =
-		"workmail:CreateImpersonationRole";
+	static readonly CreateImpersonationRole = "workmail:CreateImpersonationRole";
 	/** [Write] workmail:CreateInboundMailFlowRule */
-	static readonly CREATE_INBOUND_MAIL_FLOW_RULE =
+	static readonly CreateInboundMailFlowRule =
 		"workmail:CreateInboundMailFlowRule";
 	/** [Write] workmail:CreateMailDomain */
-	static readonly CREATE_MAIL_DOMAIN = "workmail:CreateMailDomain";
+	static readonly CreateMailDomain = "workmail:CreateMailDomain";
 	/** [Write] workmail:CreateMobileDeviceAccessRule */
-	static readonly CREATE_MOBILE_DEVICE_ACCESS_RULE =
+	static readonly CreateMobileDeviceAccessRule =
 		"workmail:CreateMobileDeviceAccessRule";
 	/** [Write] workmail:CreateOrganization */
-	static readonly CREATE_ORGANIZATION = "workmail:CreateOrganization";
+	static readonly CreateOrganization = "workmail:CreateOrganization";
 	/** [Write] workmail:CreateOutboundMailFlowRule */
-	static readonly CREATE_OUTBOUND_MAIL_FLOW_RULE =
+	static readonly CreateOutboundMailFlowRule =
 		"workmail:CreateOutboundMailFlowRule";
 	/** [Write] workmail:CreateResource */
-	static readonly CREATE_RESOURCE = "workmail:CreateResource";
+	static readonly CreateResource = "workmail:CreateResource";
 	/** [Write] workmail:CreateSmtpGateway */
-	static readonly CREATE_SMTP_GATEWAY = "workmail:CreateSmtpGateway";
+	static readonly CreateSmtpGateway = "workmail:CreateSmtpGateway";
 	/** [Write] workmail:CreateUser */
-	static readonly CREATE_USER = "workmail:CreateUser";
+	static readonly CreateUser = "workmail:CreateUser";
 	/** [Write] workmail:DeleteAccessControlRule */
-	static readonly DELETE_ACCESS_CONTROL_RULE =
-		"workmail:DeleteAccessControlRule";
+	static readonly DeleteAccessControlRule = "workmail:DeleteAccessControlRule";
 	/** [Write] workmail:DeleteAlias */
-	static readonly DELETE_ALIAS = "workmail:DeleteAlias";
+	static readonly DeleteAlias = "workmail:DeleteAlias";
 	/** [Write] workmail:DeleteAvailabilityConfiguration */
-	static readonly DELETE_AVAILABILITY_CONFIGURATION =
+	static readonly DeleteAvailabilityConfiguration =
 		"workmail:DeleteAvailabilityConfiguration";
 	/** [Write] workmail:DeleteEmailMonitoringConfiguration */
-	static readonly DELETE_EMAIL_MONITORING_CONFIGURATION =
+	static readonly DeleteEmailMonitoringConfiguration =
 		"workmail:DeleteEmailMonitoringConfiguration";
 	/** [Write] workmail:DeleteGroup */
-	static readonly DELETE_GROUP = "workmail:DeleteGroup";
+	static readonly DeleteGroup = "workmail:DeleteGroup";
 	/** [Write] workmail:DeleteIdentityCenterApplication */
-	static readonly DELETE_IDENTITY_CENTER_APPLICATION =
+	static readonly DeleteIdentityCenterApplication =
 		"workmail:DeleteIdentityCenterApplication";
 	/** [Write] workmail:DeleteIdentityProviderConfiguration */
-	static readonly DELETE_IDENTITY_PROVIDER_CONFIGURATION =
+	static readonly DeleteIdentityProviderConfiguration =
 		"workmail:DeleteIdentityProviderConfiguration";
 	/** [Write] workmail:DeleteImpersonationRole */
-	static readonly DELETE_IMPERSONATION_ROLE =
-		"workmail:DeleteImpersonationRole";
+	static readonly DeleteImpersonationRole = "workmail:DeleteImpersonationRole";
 	/** [Write] workmail:DeleteInboundMailFlowRule */
-	static readonly DELETE_INBOUND_MAIL_FLOW_RULE =
+	static readonly DeleteInboundMailFlowRule =
 		"workmail:DeleteInboundMailFlowRule";
 	/** [Write] workmail:DeleteMailDomain */
-	static readonly DELETE_MAIL_DOMAIN = "workmail:DeleteMailDomain";
+	static readonly DeleteMailDomain = "workmail:DeleteMailDomain";
 	/** [Write] workmail:DeleteMailboxPermissions */
-	static readonly DELETE_MAILBOX_PERMISSIONS =
+	static readonly DeleteMailboxPermissions =
 		"workmail:DeleteMailboxPermissions";
 	/** [Write] workmail:DeleteMobileDevice */
-	static readonly DELETE_MOBILE_DEVICE = "workmail:DeleteMobileDevice";
+	static readonly DeleteMobileDevice = "workmail:DeleteMobileDevice";
 	/** [Write] workmail:DeleteMobileDeviceAccessOverride */
-	static readonly DELETE_MOBILE_DEVICE_ACCESS_OVERRIDE =
+	static readonly DeleteMobileDeviceAccessOverride =
 		"workmail:DeleteMobileDeviceAccessOverride";
 	/** [Write] workmail:DeleteMobileDeviceAccessRule */
-	static readonly DELETE_MOBILE_DEVICE_ACCESS_RULE =
+	static readonly DeleteMobileDeviceAccessRule =
 		"workmail:DeleteMobileDeviceAccessRule";
 	/** [Write] workmail:DeleteOrganization */
-	static readonly DELETE_ORGANIZATION = "workmail:DeleteOrganization";
+	static readonly DeleteOrganization = "workmail:DeleteOrganization";
 	/** [Write] workmail:DeleteOutboundMailFlowRule */
-	static readonly DELETE_OUTBOUND_MAIL_FLOW_RULE =
+	static readonly DeleteOutboundMailFlowRule =
 		"workmail:DeleteOutboundMailFlowRule";
 	/** [Write] workmail:DeletePersonalAccessToken */
-	static readonly DELETE_PERSONAL_ACCESS_TOKEN =
+	static readonly DeletePersonalAccessToken =
 		"workmail:DeletePersonalAccessToken";
 	/** [Write] workmail:DeleteResource */
-	static readonly DELETE_RESOURCE = "workmail:DeleteResource";
+	static readonly DeleteResource = "workmail:DeleteResource";
 	/** [Write] workmail:DeleteRetentionPolicy */
-	static readonly DELETE_RETENTION_POLICY = "workmail:DeleteRetentionPolicy";
+	static readonly DeleteRetentionPolicy = "workmail:DeleteRetentionPolicy";
 	/** [Write] workmail:DeleteSmtpGateway */
-	static readonly DELETE_SMTP_GATEWAY = "workmail:DeleteSmtpGateway";
+	static readonly DeleteSmtpGateway = "workmail:DeleteSmtpGateway";
 	/** [Write] workmail:DeleteUser */
-	static readonly DELETE_USER = "workmail:DeleteUser";
+	static readonly DeleteUser = "workmail:DeleteUser";
 	/** [Write] workmail:DeliverToMailbox */
-	static readonly DELIVER_TO_MAILBOX = "workmail:DeliverToMailbox";
+	static readonly DeliverToMailbox = "workmail:DeliverToMailbox";
 	/** [Write] workmail:DeregisterFromWorkMail */
-	static readonly DEREGISTER_FROM_WORK_MAIL = "workmail:DeregisterFromWorkMail";
+	static readonly DeregisterFromWorkMail = "workmail:DeregisterFromWorkMail";
 	/** [Write] workmail:DeregisterMailDomain */
-	static readonly DEREGISTER_MAIL_DOMAIN = "workmail:DeregisterMailDomain";
+	static readonly DeregisterMailDomain = "workmail:DeregisterMailDomain";
 	/** [Read] workmail:DescribeEmailMonitoringConfiguration */
-	static readonly DESCRIBE_EMAIL_MONITORING_CONFIGURATION =
+	static readonly DescribeEmailMonitoringConfiguration =
 		"workmail:DescribeEmailMonitoringConfiguration";
 	/** [Read] workmail:DescribeEntity */
-	static readonly DESCRIBE_ENTITY = "workmail:DescribeEntity";
+	static readonly DescribeEntity = "workmail:DescribeEntity";
 	/** [List] workmail:DescribeGroup */
-	static readonly DESCRIBE_GROUP = "workmail:DescribeGroup";
+	static readonly DescribeGroup = "workmail:DescribeGroup";
 	/** [Read] workmail:DescribeIdentityProviderConfiguration */
-	static readonly DESCRIBE_IDENTITY_PROVIDER_CONFIGURATION =
+	static readonly DescribeIdentityProviderConfiguration =
 		"workmail:DescribeIdentityProviderConfiguration";
 	/** [Read] workmail:DescribeInboundDmarcSettings */
-	static readonly DESCRIBE_INBOUND_DMARC_SETTINGS =
+	static readonly DescribeInboundDmarcSettings =
 		"workmail:DescribeInboundDmarcSettings";
 	/** [Read] workmail:DescribeInboundMailFlowRule */
-	static readonly DESCRIBE_INBOUND_MAIL_FLOW_RULE =
+	static readonly DescribeInboundMailFlowRule =
 		"workmail:DescribeInboundMailFlowRule";
 	/** [List] workmail:DescribeMailDomains */
-	static readonly DESCRIBE_MAIL_DOMAINS = "workmail:DescribeMailDomains";
+	static readonly DescribeMailDomains = "workmail:DescribeMailDomains";
 	/** [Read] workmail:DescribeMailboxExportJob */
-	static readonly DESCRIBE_MAILBOX_EXPORT_JOB =
+	static readonly DescribeMailboxExportJob =
 		"workmail:DescribeMailboxExportJob";
 	/** [List] workmail:DescribeOrganization */
-	static readonly DESCRIBE_ORGANIZATION = "workmail:DescribeOrganization";
+	static readonly DescribeOrganization = "workmail:DescribeOrganization";
 	/** [Read] workmail:DescribeOutboundMailFlowRule */
-	static readonly DESCRIBE_OUTBOUND_MAIL_FLOW_RULE =
+	static readonly DescribeOutboundMailFlowRule =
 		"workmail:DescribeOutboundMailFlowRule";
 	/** [List] workmail:DescribeResource */
-	static readonly DESCRIBE_RESOURCE = "workmail:DescribeResource";
+	static readonly DescribeResource = "workmail:DescribeResource";
 	/** [Read] workmail:DescribeSmtpGateway */
-	static readonly DESCRIBE_SMTP_GATEWAY = "workmail:DescribeSmtpGateway";
+	static readonly DescribeSmtpGateway = "workmail:DescribeSmtpGateway";
 	/** [List] workmail:DescribeUser */
-	static readonly DESCRIBE_USER = "workmail:DescribeUser";
+	static readonly DescribeUser = "workmail:DescribeUser";
 	/** [Write] workmail:DisassociateDelegateFromResource */
-	static readonly DISASSOCIATE_DELEGATE_FROM_RESOURCE =
+	static readonly DisassociateDelegateFromResource =
 		"workmail:DisassociateDelegateFromResource";
 	/** [Write] workmail:DisassociateMemberFromGroup */
-	static readonly DISASSOCIATE_MEMBER_FROM_GROUP =
+	static readonly DisassociateMemberFromGroup =
 		"workmail:DisassociateMemberFromGroup";
 	/** [Write] workmail:EnableMailDomain */
-	static readonly ENABLE_MAIL_DOMAIN = "workmail:EnableMailDomain";
+	static readonly EnableMailDomain = "workmail:EnableMailDomain";
 	/** [Read] workmail:GetAccessControlEffect */
-	static readonly GET_ACCESS_CONTROL_EFFECT = "workmail:GetAccessControlEffect";
+	static readonly actionGetAccessControlEffect =
+		"workmail:GetAccessControlEffect";
 	/** [Read] workmail:GetDefaultRetentionPolicy */
-	static readonly GET_DEFAULT_RETENTION_POLICY =
+	static readonly actionGetDefaultRetentionPolicy =
 		"workmail:GetDefaultRetentionPolicy";
 	/** [Read] workmail:GetImpersonationRole */
-	static readonly GET_IMPERSONATION_ROLE = "workmail:GetImpersonationRole";
+	static readonly actionGetImpersonationRole = "workmail:GetImpersonationRole";
 	/** [Read] workmail:GetImpersonationRoleEffect */
-	static readonly GET_IMPERSONATION_ROLE_EFFECT =
+	static readonly actionGetImpersonationRoleEffect =
 		"workmail:GetImpersonationRoleEffect";
 	/** [Read] workmail:GetJournalingRules */
-	static readonly GET_JOURNALING_RULES = "workmail:GetJournalingRules";
+	static readonly actionGetJournalingRules = "workmail:GetJournalingRules";
 	/** [Read] workmail:GetMailDomain */
-	static readonly GET_MAIL_DOMAIN = "workmail:GetMailDomain";
+	static readonly actionGetMailDomain = "workmail:GetMailDomain";
 	/** [Read] workmail:GetMailDomainDetails */
-	static readonly GET_MAIL_DOMAIN_DETAILS = "workmail:GetMailDomainDetails";
+	static readonly actionGetMailDomainDetails = "workmail:GetMailDomainDetails";
 	/** [Read] workmail:GetMailboxDetails */
-	static readonly GET_MAILBOX_DETAILS = "workmail:GetMailboxDetails";
+	static readonly actionGetMailboxDetails = "workmail:GetMailboxDetails";
 	/** [Read] workmail:GetMobileDeviceAccessEffect */
-	static readonly GET_MOBILE_DEVICE_ACCESS_EFFECT =
+	static readonly actionGetMobileDeviceAccessEffect =
 		"workmail:GetMobileDeviceAccessEffect";
 	/** [Read] workmail:GetMobileDeviceAccessOverride */
-	static readonly GET_MOBILE_DEVICE_ACCESS_OVERRIDE =
+	static readonly actionGetMobileDeviceAccessOverride =
 		"workmail:GetMobileDeviceAccessOverride";
 	/** [Read] workmail:GetMobileDeviceDetails */
-	static readonly GET_MOBILE_DEVICE_DETAILS = "workmail:GetMobileDeviceDetails";
+	static readonly actionGetMobileDeviceDetails =
+		"workmail:GetMobileDeviceDetails";
 	/** [Read] workmail:GetMobileDevicesForUser */
-	static readonly GET_MOBILE_DEVICES_FOR_USER =
+	static readonly actionGetMobileDevicesForUser =
 		"workmail:GetMobileDevicesForUser";
 	/** [Read] workmail:GetMobilePolicyDetails */
-	static readonly GET_MOBILE_POLICY_DETAILS = "workmail:GetMobilePolicyDetails";
+	static readonly actionGetMobilePolicyDetails =
+		"workmail:GetMobilePolicyDetails";
 	/** [Read] workmail:GetPersonalAccessTokenMetadata */
-	static readonly GET_PERSONAL_ACCESS_TOKEN_METADATA =
+	static readonly actionGetPersonalAccessTokenMetadata =
 		"workmail:GetPersonalAccessTokenMetadata";
 	/** [Read] workmail:ListAccessControlRules */
-	static readonly LIST_ACCESS_CONTROL_RULES = "workmail:ListAccessControlRules";
+	static readonly ListAccessControlRules = "workmail:ListAccessControlRules";
 	/** [List] workmail:ListAliases */
-	static readonly LIST_ALIASES = "workmail:ListAliases";
+	static readonly ListAliases = "workmail:ListAliases";
 	/** [Read] workmail:ListAvailabilityConfigurations */
-	static readonly LIST_AVAILABILITY_CONFIGURATIONS =
+	static readonly ListAvailabilityConfigurations =
 		"workmail:ListAvailabilityConfigurations";
 	/** [List] workmail:ListGroupMembers */
-	static readonly LIST_GROUP_MEMBERS = "workmail:ListGroupMembers";
+	static readonly ListGroupMembers = "workmail:ListGroupMembers";
 	/** [List] workmail:ListGroups */
-	static readonly LIST_GROUPS = "workmail:ListGroups";
+	static readonly ListGroups = "workmail:ListGroups";
 	/** [List] workmail:ListGroupsForEntity */
-	static readonly LIST_GROUPS_FOR_ENTITY = "workmail:ListGroupsForEntity";
+	static readonly ListGroupsForEntity = "workmail:ListGroupsForEntity";
 	/** [List] workmail:ListImpersonationRoles */
-	static readonly LIST_IMPERSONATION_ROLES = "workmail:ListImpersonationRoles";
+	static readonly ListImpersonationRoles = "workmail:ListImpersonationRoles";
 	/** [List] workmail:ListInboundMailFlowRules */
-	static readonly LIST_INBOUND_MAIL_FLOW_RULES =
+	static readonly ListInboundMailFlowRules =
 		"workmail:ListInboundMailFlowRules";
 	/** [List] workmail:ListMailDomains */
-	static readonly LIST_MAIL_DOMAINS = "workmail:ListMailDomains";
+	static readonly ListMailDomains = "workmail:ListMailDomains";
 	/** [List] workmail:ListMailboxExportJobs */
-	static readonly LIST_MAILBOX_EXPORT_JOBS = "workmail:ListMailboxExportJobs";
+	static readonly ListMailboxExportJobs = "workmail:ListMailboxExportJobs";
 	/** [List] workmail:ListMailboxPermissions */
-	static readonly LIST_MAILBOX_PERMISSIONS = "workmail:ListMailboxPermissions";
+	static readonly ListMailboxPermissions = "workmail:ListMailboxPermissions";
 	/** [Read] workmail:ListMobileDeviceAccessOverrides */
-	static readonly LIST_MOBILE_DEVICE_ACCESS_OVERRIDES =
+	static readonly ListMobileDeviceAccessOverrides =
 		"workmail:ListMobileDeviceAccessOverrides";
 	/** [Read] workmail:ListMobileDeviceAccessRules */
-	static readonly LIST_MOBILE_DEVICE_ACCESS_RULES =
+	static readonly ListMobileDeviceAccessRules =
 		"workmail:ListMobileDeviceAccessRules";
 	/** [List] workmail:ListOrganizations */
-	static readonly LIST_ORGANIZATIONS = "workmail:ListOrganizations";
+	static readonly ListOrganizations = "workmail:ListOrganizations";
 	/** [List] workmail:ListOutboundMailFlowRules */
-	static readonly LIST_OUTBOUND_MAIL_FLOW_RULES =
+	static readonly ListOutboundMailFlowRules =
 		"workmail:ListOutboundMailFlowRules";
 	/** [List] workmail:ListPersonalAccessTokens */
-	static readonly LIST_PERSONAL_ACCESS_TOKENS =
+	static readonly ListPersonalAccessTokens =
 		"workmail:ListPersonalAccessTokens";
 	/** [List] workmail:ListResourceDelegates */
-	static readonly LIST_RESOURCE_DELEGATES = "workmail:ListResourceDelegates";
+	static readonly ListResourceDelegates = "workmail:ListResourceDelegates";
 	/** [List] workmail:ListResources */
-	static readonly LIST_RESOURCES = "workmail:ListResources";
+	static readonly ListResources = "workmail:ListResources";
 	/** [List] workmail:ListSmtpGateways */
-	static readonly LIST_SMTP_GATEWAYS = "workmail:ListSmtpGateways";
+	static readonly ListSmtpGateways = "workmail:ListSmtpGateways";
 	/** [List] workmail:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "workmail:ListTagsForResource";
+	static readonly ListTagsForResource = "workmail:ListTagsForResource";
 	/** [List] workmail:ListUsers */
-	static readonly LIST_USERS = "workmail:ListUsers";
+	static readonly ListUsers = "workmail:ListUsers";
 	/** [Write] workmail:PutAccessControlRule */
-	static readonly PUT_ACCESS_CONTROL_RULE = "workmail:PutAccessControlRule";
+	static readonly PutAccessControlRule = "workmail:PutAccessControlRule";
 	/** [Write] workmail:PutEmailMonitoringConfiguration */
-	static readonly PUT_EMAIL_MONITORING_CONFIGURATION =
+	static readonly PutEmailMonitoringConfiguration =
 		"workmail:PutEmailMonitoringConfiguration";
 	/** [Write] workmail:PutIdentityProviderConfiguration */
-	static readonly PUT_IDENTITY_PROVIDER_CONFIGURATION =
+	static readonly PutIdentityProviderConfiguration =
 		"workmail:PutIdentityProviderConfiguration";
 	/** [Write] workmail:PutInboundDmarcSettings */
-	static readonly PUT_INBOUND_DMARC_SETTINGS =
-		"workmail:PutInboundDmarcSettings";
+	static readonly PutInboundDmarcSettings = "workmail:PutInboundDmarcSettings";
 	/** [Write] workmail:PutMailboxPermissions */
-	static readonly PUT_MAILBOX_PERMISSIONS = "workmail:PutMailboxPermissions";
+	static readonly PutMailboxPermissions = "workmail:PutMailboxPermissions";
 	/** [Write] workmail:PutMobileDeviceAccessOverride */
-	static readonly PUT_MOBILE_DEVICE_ACCESS_OVERRIDE =
+	static readonly PutMobileDeviceAccessOverride =
 		"workmail:PutMobileDeviceAccessOverride";
 	/** [Write] workmail:PutRetentionPolicy */
-	static readonly PUT_RETENTION_POLICY = "workmail:PutRetentionPolicy";
+	static readonly PutRetentionPolicy = "workmail:PutRetentionPolicy";
 	/** [Write] workmail:RegisterMailDomain */
-	static readonly REGISTER_MAIL_DOMAIN = "workmail:RegisterMailDomain";
+	static readonly RegisterMailDomain = "workmail:RegisterMailDomain";
 	/** [Write] workmail:RegisterToWorkMail */
-	static readonly REGISTER_TO_WORK_MAIL = "workmail:RegisterToWorkMail";
+	static readonly RegisterToWorkMail = "workmail:RegisterToWorkMail";
 	/** [Write] workmail:ResetPassword */
-	static readonly RESET_PASSWORD = "workmail:ResetPassword";
+	static readonly ResetPassword = "workmail:ResetPassword";
 	/** [Read] workmail:SearchMembers */
-	static readonly SEARCH_MEMBERS = "workmail:SearchMembers";
+	static readonly SearchMembers = "workmail:SearchMembers";
 	/** [Write] workmail:SetDefaultMailDomain */
-	static readonly SET_DEFAULT_MAIL_DOMAIN = "workmail:SetDefaultMailDomain";
+	static readonly actionSetDefaultMailDomain = "workmail:SetDefaultMailDomain";
 	/** [Write] workmail:SetJournalingRules */
-	static readonly SET_JOURNALING_RULES = "workmail:SetJournalingRules";
+	static readonly actionSetJournalingRules = "workmail:SetJournalingRules";
 	/** [Write] workmail:SetMobilePolicyDetails */
-	static readonly SET_MOBILE_POLICY_DETAILS = "workmail:SetMobilePolicyDetails";
+	static readonly actionSetMobilePolicyDetails =
+		"workmail:SetMobilePolicyDetails";
 	/** [Write] workmail:StartMailboxExportJob */
-	static readonly START_MAILBOX_EXPORT_JOB = "workmail:StartMailboxExportJob";
+	static readonly StartMailboxExportJob = "workmail:StartMailboxExportJob";
 	/** [Tagging] workmail:TagResource */
-	static readonly TAG_RESOURCE = "workmail:TagResource";
+	static readonly TagResource = "workmail:TagResource";
 	/** [Read] workmail:TestAvailabilityConfiguration */
-	static readonly TEST_AVAILABILITY_CONFIGURATION =
+	static readonly TestAvailabilityConfiguration =
 		"workmail:TestAvailabilityConfiguration";
 	/** [Write] workmail:TestInboundMailFlowRules */
-	static readonly TEST_INBOUND_MAIL_FLOW_RULES =
+	static readonly TestInboundMailFlowRules =
 		"workmail:TestInboundMailFlowRules";
 	/** [Write] workmail:TestOutboundMailFlowRules */
-	static readonly TEST_OUTBOUND_MAIL_FLOW_RULES =
+	static readonly TestOutboundMailFlowRules =
 		"workmail:TestOutboundMailFlowRules";
 	/** [Tagging] workmail:UntagResource */
-	static readonly UNTAG_RESOURCE = "workmail:UntagResource";
+	static readonly UntagResource = "workmail:UntagResource";
 	/** [Write] workmail:UpdateAvailabilityConfiguration */
-	static readonly UPDATE_AVAILABILITY_CONFIGURATION =
+	static readonly UpdateAvailabilityConfiguration =
 		"workmail:UpdateAvailabilityConfiguration";
 	/** [Write] workmail:UpdateDefaultMailDomain */
-	static readonly UPDATE_DEFAULT_MAIL_DOMAIN =
-		"workmail:UpdateDefaultMailDomain";
+	static readonly UpdateDefaultMailDomain = "workmail:UpdateDefaultMailDomain";
 	/** [Write] workmail:UpdateGroup */
-	static readonly UPDATE_GROUP = "workmail:UpdateGroup";
+	static readonly UpdateGroup = "workmail:UpdateGroup";
 	/** [Write] workmail:UpdateImpersonationRole */
-	static readonly UPDATE_IMPERSONATION_ROLE =
-		"workmail:UpdateImpersonationRole";
+	static readonly UpdateImpersonationRole = "workmail:UpdateImpersonationRole";
 	/** [Write] workmail:UpdateInboundMailFlowRule */
-	static readonly UPDATE_INBOUND_MAIL_FLOW_RULE =
+	static readonly UpdateInboundMailFlowRule =
 		"workmail:UpdateInboundMailFlowRule";
 	/** [Write] workmail:UpdateMailboxQuota */
-	static readonly UPDATE_MAILBOX_QUOTA = "workmail:UpdateMailboxQuota";
+	static readonly UpdateMailboxQuota = "workmail:UpdateMailboxQuota";
 	/** [Write] workmail:UpdateMobileDeviceAccessRule */
-	static readonly UPDATE_MOBILE_DEVICE_ACCESS_RULE =
+	static readonly UpdateMobileDeviceAccessRule =
 		"workmail:UpdateMobileDeviceAccessRule";
 	/** [Write] workmail:UpdateOutboundMailFlowRule */
-	static readonly UPDATE_OUTBOUND_MAIL_FLOW_RULE =
+	static readonly UpdateOutboundMailFlowRule =
 		"workmail:UpdateOutboundMailFlowRule";
 	/** [Write] workmail:UpdatePrimaryEmailAddress */
-	static readonly UPDATE_PRIMARY_EMAIL_ADDRESS =
+	static readonly UpdatePrimaryEmailAddress =
 		"workmail:UpdatePrimaryEmailAddress";
 	/** [Write] workmail:UpdateResource */
-	static readonly UPDATE_RESOURCE = "workmail:UpdateResource";
+	static readonly UpdateResource = "workmail:UpdateResource";
 	/** [Write] workmail:UpdateSmtpGateway */
-	static readonly UPDATE_SMTP_GATEWAY = "workmail:UpdateSmtpGateway";
+	static readonly UpdateSmtpGateway = "workmail:UpdateSmtpGateway";
 	/** [Write] workmail:UpdateUser */
-	static readonly UPDATE_USER = "workmail:UpdateUser";
+	static readonly UpdateUser = "workmail:UpdateUser";
 	/** [Write] workmail:WipeMobileDevice */
-	static readonly WIPE_MOBILE_DEVICE = "workmail:WipeMobileDevice";
+	static readonly WipeMobileDevice = "workmail:WipeMobileDevice";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WorkMailActions.DESCRIBE_EMAIL_MONITORING_CONFIGURATION,
-		WorkMailActions.DESCRIBE_ENTITY,
-		WorkMailActions.DESCRIBE_IDENTITY_PROVIDER_CONFIGURATION,
-		WorkMailActions.DESCRIBE_INBOUND_DMARC_SETTINGS,
-		WorkMailActions.DESCRIBE_INBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.DESCRIBE_MAILBOX_EXPORT_JOB,
-		WorkMailActions.DESCRIBE_OUTBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.DESCRIBE_SMTP_GATEWAY,
-		WorkMailActions.GET_ACCESS_CONTROL_EFFECT,
-		WorkMailActions.GET_DEFAULT_RETENTION_POLICY,
-		WorkMailActions.GET_IMPERSONATION_ROLE,
-		WorkMailActions.GET_IMPERSONATION_ROLE_EFFECT,
-		WorkMailActions.GET_JOURNALING_RULES,
-		WorkMailActions.GET_MAIL_DOMAIN,
-		WorkMailActions.GET_MAIL_DOMAIN_DETAILS,
-		WorkMailActions.GET_MAILBOX_DETAILS,
-		WorkMailActions.GET_MOBILE_DEVICE_ACCESS_EFFECT,
-		WorkMailActions.GET_MOBILE_DEVICE_ACCESS_OVERRIDE,
-		WorkMailActions.GET_MOBILE_DEVICE_DETAILS,
-		WorkMailActions.GET_MOBILE_DEVICES_FOR_USER,
-		WorkMailActions.GET_MOBILE_POLICY_DETAILS,
-		WorkMailActions.GET_PERSONAL_ACCESS_TOKEN_METADATA,
-		WorkMailActions.LIST_ACCESS_CONTROL_RULES,
-		WorkMailActions.LIST_AVAILABILITY_CONFIGURATIONS,
-		WorkMailActions.LIST_MOBILE_DEVICE_ACCESS_OVERRIDES,
-		WorkMailActions.LIST_MOBILE_DEVICE_ACCESS_RULES,
-		WorkMailActions.SEARCH_MEMBERS,
-		WorkMailActions.TEST_AVAILABILITY_CONFIGURATION,
+	static readonly AllReadActions: string[] = [
+		WorkMailActions.DescribeEmailMonitoringConfiguration,
+		WorkMailActions.DescribeEntity,
+		WorkMailActions.DescribeIdentityProviderConfiguration,
+		WorkMailActions.DescribeInboundDmarcSettings,
+		WorkMailActions.DescribeInboundMailFlowRule,
+		WorkMailActions.DescribeMailboxExportJob,
+		WorkMailActions.DescribeOutboundMailFlowRule,
+		WorkMailActions.DescribeSmtpGateway,
+		WorkMailActions.actionGetAccessControlEffect,
+		WorkMailActions.actionGetDefaultRetentionPolicy,
+		WorkMailActions.actionGetImpersonationRole,
+		WorkMailActions.actionGetImpersonationRoleEffect,
+		WorkMailActions.actionGetJournalingRules,
+		WorkMailActions.actionGetMailDomain,
+		WorkMailActions.actionGetMailDomainDetails,
+		WorkMailActions.actionGetMailboxDetails,
+		WorkMailActions.actionGetMobileDeviceAccessEffect,
+		WorkMailActions.actionGetMobileDeviceAccessOverride,
+		WorkMailActions.actionGetMobileDeviceDetails,
+		WorkMailActions.actionGetMobileDevicesForUser,
+		WorkMailActions.actionGetMobilePolicyDetails,
+		WorkMailActions.actionGetPersonalAccessTokenMetadata,
+		WorkMailActions.ListAccessControlRules,
+		WorkMailActions.ListAvailabilityConfigurations,
+		WorkMailActions.ListMobileDeviceAccessOverrides,
+		WorkMailActions.ListMobileDeviceAccessRules,
+		WorkMailActions.SearchMembers,
+		WorkMailActions.TestAvailabilityConfiguration,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WorkMailActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
-		WorkMailActions.ASSOCIATE_DELEGATE_TO_RESOURCE,
-		WorkMailActions.ASSOCIATE_MEMBER_TO_GROUP,
-		WorkMailActions.ASSUME_IMPERSONATION_ROLE,
-		WorkMailActions.CANCEL_MAILBOX_EXPORT_JOB,
-		WorkMailActions.CREATE_ALIAS,
-		WorkMailActions.CREATE_AVAILABILITY_CONFIGURATION,
-		WorkMailActions.CREATE_GROUP,
-		WorkMailActions.CREATE_IDENTITY_CENTER_APPLICATION,
-		WorkMailActions.CREATE_IMPERSONATION_ROLE,
-		WorkMailActions.CREATE_INBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.CREATE_MAIL_DOMAIN,
-		WorkMailActions.CREATE_MOBILE_DEVICE_ACCESS_RULE,
-		WorkMailActions.CREATE_ORGANIZATION,
-		WorkMailActions.CREATE_OUTBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.CREATE_RESOURCE,
-		WorkMailActions.CREATE_SMTP_GATEWAY,
-		WorkMailActions.CREATE_USER,
-		WorkMailActions.DELETE_ACCESS_CONTROL_RULE,
-		WorkMailActions.DELETE_ALIAS,
-		WorkMailActions.DELETE_AVAILABILITY_CONFIGURATION,
-		WorkMailActions.DELETE_EMAIL_MONITORING_CONFIGURATION,
-		WorkMailActions.DELETE_GROUP,
-		WorkMailActions.DELETE_IDENTITY_CENTER_APPLICATION,
-		WorkMailActions.DELETE_IDENTITY_PROVIDER_CONFIGURATION,
-		WorkMailActions.DELETE_IMPERSONATION_ROLE,
-		WorkMailActions.DELETE_INBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.DELETE_MAIL_DOMAIN,
-		WorkMailActions.DELETE_MAILBOX_PERMISSIONS,
-		WorkMailActions.DELETE_MOBILE_DEVICE,
-		WorkMailActions.DELETE_MOBILE_DEVICE_ACCESS_OVERRIDE,
-		WorkMailActions.DELETE_MOBILE_DEVICE_ACCESS_RULE,
-		WorkMailActions.DELETE_ORGANIZATION,
-		WorkMailActions.DELETE_OUTBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.DELETE_PERSONAL_ACCESS_TOKEN,
-		WorkMailActions.DELETE_RESOURCE,
-		WorkMailActions.DELETE_RETENTION_POLICY,
-		WorkMailActions.DELETE_SMTP_GATEWAY,
-		WorkMailActions.DELETE_USER,
-		WorkMailActions.DELIVER_TO_MAILBOX,
-		WorkMailActions.DEREGISTER_FROM_WORK_MAIL,
-		WorkMailActions.DEREGISTER_MAIL_DOMAIN,
-		WorkMailActions.DISASSOCIATE_DELEGATE_FROM_RESOURCE,
-		WorkMailActions.DISASSOCIATE_MEMBER_FROM_GROUP,
-		WorkMailActions.ENABLE_MAIL_DOMAIN,
-		WorkMailActions.PUT_ACCESS_CONTROL_RULE,
-		WorkMailActions.PUT_EMAIL_MONITORING_CONFIGURATION,
-		WorkMailActions.PUT_IDENTITY_PROVIDER_CONFIGURATION,
-		WorkMailActions.PUT_INBOUND_DMARC_SETTINGS,
-		WorkMailActions.PUT_MAILBOX_PERMISSIONS,
-		WorkMailActions.PUT_MOBILE_DEVICE_ACCESS_OVERRIDE,
-		WorkMailActions.PUT_RETENTION_POLICY,
-		WorkMailActions.REGISTER_MAIL_DOMAIN,
-		WorkMailActions.REGISTER_TO_WORK_MAIL,
-		WorkMailActions.RESET_PASSWORD,
-		WorkMailActions.SET_DEFAULT_MAIL_DOMAIN,
-		WorkMailActions.SET_JOURNALING_RULES,
-		WorkMailActions.SET_MOBILE_POLICY_DETAILS,
-		WorkMailActions.START_MAILBOX_EXPORT_JOB,
-		WorkMailActions.TEST_INBOUND_MAIL_FLOW_RULES,
-		WorkMailActions.TEST_OUTBOUND_MAIL_FLOW_RULES,
-		WorkMailActions.UPDATE_AVAILABILITY_CONFIGURATION,
-		WorkMailActions.UPDATE_DEFAULT_MAIL_DOMAIN,
-		WorkMailActions.UPDATE_GROUP,
-		WorkMailActions.UPDATE_IMPERSONATION_ROLE,
-		WorkMailActions.UPDATE_INBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.UPDATE_MAILBOX_QUOTA,
-		WorkMailActions.UPDATE_MOBILE_DEVICE_ACCESS_RULE,
-		WorkMailActions.UPDATE_OUTBOUND_MAIL_FLOW_RULE,
-		WorkMailActions.UPDATE_PRIMARY_EMAIL_ADDRESS,
-		WorkMailActions.UPDATE_RESOURCE,
-		WorkMailActions.UPDATE_SMTP_GATEWAY,
-		WorkMailActions.UPDATE_USER,
-		WorkMailActions.WIPE_MOBILE_DEVICE,
+	static readonly AllWriteActions: string[] = [
+		WorkMailActions.AllowVendedLogDeliveryForResource,
+		WorkMailActions.AssociateDelegateToResource,
+		WorkMailActions.AssociateMemberToGroup,
+		WorkMailActions.AssumeImpersonationRole,
+		WorkMailActions.CancelMailboxExportJob,
+		WorkMailActions.CreateAlias,
+		WorkMailActions.CreateAvailabilityConfiguration,
+		WorkMailActions.CreateGroup,
+		WorkMailActions.CreateIdentityCenterApplication,
+		WorkMailActions.CreateImpersonationRole,
+		WorkMailActions.CreateInboundMailFlowRule,
+		WorkMailActions.CreateMailDomain,
+		WorkMailActions.CreateMobileDeviceAccessRule,
+		WorkMailActions.CreateOrganization,
+		WorkMailActions.CreateOutboundMailFlowRule,
+		WorkMailActions.CreateResource,
+		WorkMailActions.CreateSmtpGateway,
+		WorkMailActions.CreateUser,
+		WorkMailActions.DeleteAccessControlRule,
+		WorkMailActions.DeleteAlias,
+		WorkMailActions.DeleteAvailabilityConfiguration,
+		WorkMailActions.DeleteEmailMonitoringConfiguration,
+		WorkMailActions.DeleteGroup,
+		WorkMailActions.DeleteIdentityCenterApplication,
+		WorkMailActions.DeleteIdentityProviderConfiguration,
+		WorkMailActions.DeleteImpersonationRole,
+		WorkMailActions.DeleteInboundMailFlowRule,
+		WorkMailActions.DeleteMailDomain,
+		WorkMailActions.DeleteMailboxPermissions,
+		WorkMailActions.DeleteMobileDevice,
+		WorkMailActions.DeleteMobileDeviceAccessOverride,
+		WorkMailActions.DeleteMobileDeviceAccessRule,
+		WorkMailActions.DeleteOrganization,
+		WorkMailActions.DeleteOutboundMailFlowRule,
+		WorkMailActions.DeletePersonalAccessToken,
+		WorkMailActions.DeleteResource,
+		WorkMailActions.DeleteRetentionPolicy,
+		WorkMailActions.DeleteSmtpGateway,
+		WorkMailActions.DeleteUser,
+		WorkMailActions.DeliverToMailbox,
+		WorkMailActions.DeregisterFromWorkMail,
+		WorkMailActions.DeregisterMailDomain,
+		WorkMailActions.DisassociateDelegateFromResource,
+		WorkMailActions.DisassociateMemberFromGroup,
+		WorkMailActions.EnableMailDomain,
+		WorkMailActions.PutAccessControlRule,
+		WorkMailActions.PutEmailMonitoringConfiguration,
+		WorkMailActions.PutIdentityProviderConfiguration,
+		WorkMailActions.PutInboundDmarcSettings,
+		WorkMailActions.PutMailboxPermissions,
+		WorkMailActions.PutMobileDeviceAccessOverride,
+		WorkMailActions.PutRetentionPolicy,
+		WorkMailActions.RegisterMailDomain,
+		WorkMailActions.RegisterToWorkMail,
+		WorkMailActions.ResetPassword,
+		WorkMailActions.actionSetDefaultMailDomain,
+		WorkMailActions.actionSetJournalingRules,
+		WorkMailActions.actionSetMobilePolicyDetails,
+		WorkMailActions.StartMailboxExportJob,
+		WorkMailActions.TestInboundMailFlowRules,
+		WorkMailActions.TestOutboundMailFlowRules,
+		WorkMailActions.UpdateAvailabilityConfiguration,
+		WorkMailActions.UpdateDefaultMailDomain,
+		WorkMailActions.UpdateGroup,
+		WorkMailActions.UpdateImpersonationRole,
+		WorkMailActions.UpdateInboundMailFlowRule,
+		WorkMailActions.UpdateMailboxQuota,
+		WorkMailActions.UpdateMobileDeviceAccessRule,
+		WorkMailActions.UpdateOutboundMailFlowRule,
+		WorkMailActions.UpdatePrimaryEmailAddress,
+		WorkMailActions.UpdateResource,
+		WorkMailActions.UpdateSmtpGateway,
+		WorkMailActions.UpdateUser,
+		WorkMailActions.WipeMobileDevice,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WorkMailActions.DESCRIBE_GROUP,
-		WorkMailActions.DESCRIBE_MAIL_DOMAINS,
-		WorkMailActions.DESCRIBE_ORGANIZATION,
-		WorkMailActions.DESCRIBE_RESOURCE,
-		WorkMailActions.DESCRIBE_USER,
-		WorkMailActions.LIST_ALIASES,
-		WorkMailActions.LIST_GROUP_MEMBERS,
-		WorkMailActions.LIST_GROUPS,
-		WorkMailActions.LIST_GROUPS_FOR_ENTITY,
-		WorkMailActions.LIST_IMPERSONATION_ROLES,
-		WorkMailActions.LIST_INBOUND_MAIL_FLOW_RULES,
-		WorkMailActions.LIST_MAIL_DOMAINS,
-		WorkMailActions.LIST_MAILBOX_EXPORT_JOBS,
-		WorkMailActions.LIST_MAILBOX_PERMISSIONS,
-		WorkMailActions.LIST_ORGANIZATIONS,
-		WorkMailActions.LIST_OUTBOUND_MAIL_FLOW_RULES,
-		WorkMailActions.LIST_PERSONAL_ACCESS_TOKENS,
-		WorkMailActions.LIST_RESOURCE_DELEGATES,
-		WorkMailActions.LIST_RESOURCES,
-		WorkMailActions.LIST_SMTP_GATEWAYS,
-		WorkMailActions.LIST_TAGS_FOR_RESOURCE,
-		WorkMailActions.LIST_USERS,
+	static readonly AllListActions: string[] = [
+		WorkMailActions.DescribeGroup,
+		WorkMailActions.DescribeMailDomains,
+		WorkMailActions.DescribeOrganization,
+		WorkMailActions.DescribeResource,
+		WorkMailActions.DescribeUser,
+		WorkMailActions.ListAliases,
+		WorkMailActions.ListGroupMembers,
+		WorkMailActions.ListGroups,
+		WorkMailActions.ListGroupsForEntity,
+		WorkMailActions.ListImpersonationRoles,
+		WorkMailActions.ListInboundMailFlowRules,
+		WorkMailActions.ListMailDomains,
+		WorkMailActions.ListMailboxExportJobs,
+		WorkMailActions.ListMailboxPermissions,
+		WorkMailActions.ListOrganizations,
+		WorkMailActions.ListOutboundMailFlowRules,
+		WorkMailActions.ListPersonalAccessTokens,
+		WorkMailActions.ListResourceDelegates,
+		WorkMailActions.ListResources,
+		WorkMailActions.ListSmtpGateways,
+		WorkMailActions.ListTagsForResource,
+		WorkMailActions.ListUsers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WorkMailActions.TAG_RESOURCE,
-		WorkMailActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WorkMailActions.TagResource,
+		WorkMailActions.UntagResource,
 	];
 }
 
-const OrganizationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workmail:(?<region>[^:]*):(?<account>[^:]*):organization/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a organization ARN.
+ */
+export interface WorkMailOrganizationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a organization ARN.
+ */
+export interface WorkMailOrganizationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const OrganizationArnRegex =
+	/^arn:(?<partition>[^:]+):workmail:(?<region>[^:]*):(?<account>[^:]*):organization\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for workmail resources.
@@ -473,16 +497,7 @@ export class WorkMailResources {
 	/**
 	 * Builds an ARN for the organization resource.
 	 */
-	static organization(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static organization(props: WorkMailOrganizationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workmail:${props.region ?? "*"}:${props.account ?? "*"}:organization/${props.resourceId}`;
 	}
 
@@ -497,12 +512,7 @@ export class WorkMailResources {
 	 * Parses a organization ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOrganizationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseOrganizationArn(arn: string): WorkMailOrganizationArnComponents {
 		const match = OrganizationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid organization ARN: ${arn}`);
@@ -521,323 +531,323 @@ export class WorkMailResources {
  */
 export class WorkMailOperations {
 	/** IAM actions required for the AssociateDelegateToResource API call. */
-	static readonly ASSOCIATE_DELEGATE_TO_RESOURCE: string[] = [
+	static readonly AssociateDelegateToResource: string[] = [
 		"workmail:AssociateDelegateToResource",
 	];
 	/** IAM actions required for the AssociateMemberToGroup API call. */
-	static readonly ASSOCIATE_MEMBER_TO_GROUP: string[] = [
+	static readonly AssociateMemberToGroup: string[] = [
 		"workmail:AssociateMemberToGroup",
 	];
 	/** IAM actions required for the AssumeImpersonationRole API call. */
-	static readonly ASSUME_IMPERSONATION_ROLE: string[] = [
+	static readonly AssumeImpersonationRole: string[] = [
 		"workmail:AssumeImpersonationRole",
 	];
 	/** IAM actions required for the CancelMailboxExportJob API call. */
-	static readonly CANCEL_MAILBOX_EXPORT_JOB: string[] = [
+	static readonly CancelMailboxExportJob: string[] = [
 		"workmail:CancelMailboxExportJob",
 	];
 	/** IAM actions required for the CreateAlias API call. */
-	static readonly CREATE_ALIAS: string[] = ["workmail:CreateAlias"];
+	static readonly CreateAlias: string[] = ["workmail:CreateAlias"];
 	/** IAM actions required for the CreateAvailabilityConfiguration API call. */
-	static readonly CREATE_AVAILABILITY_CONFIGURATION: string[] = [
+	static readonly CreateAvailabilityConfiguration: string[] = [
 		"workmail:CreateAvailabilityConfiguration",
 	];
 	/** IAM actions required for the CreateGroup API call. */
-	static readonly CREATE_GROUP: string[] = ["workmail:CreateGroup"];
+	static readonly CreateGroup: string[] = ["workmail:CreateGroup"];
 	/** IAM actions required for the CreateIdentityCenterApplication API call. */
-	static readonly CREATE_IDENTITY_CENTER_APPLICATION: string[] = [
+	static readonly CreateIdentityCenterApplication: string[] = [
 		"workmail:CreateIdentityCenterApplication",
 	];
 	/** IAM actions required for the CreateImpersonationRole API call. */
-	static readonly CREATE_IMPERSONATION_ROLE: string[] = [
+	static readonly CreateImpersonationRole: string[] = [
 		"workmail:CreateImpersonationRole",
 	];
 	/** IAM actions required for the CreateMobileDeviceAccessRule API call. */
-	static readonly CREATE_MOBILE_DEVICE_ACCESS_RULE: string[] = [
+	static readonly CreateMobileDeviceAccessRule: string[] = [
 		"workmail:CreateMobileDeviceAccessRule",
 	];
 	/** IAM actions required for the CreateOrganization API call. */
-	static readonly CREATE_ORGANIZATION: string[] = [
+	static readonly CreateOrganization: string[] = [
 		"workmail:CreateOrganization",
 	];
 	/** IAM actions required for the CreateResource API call. */
-	static readonly CREATE_RESOURCE: string[] = ["workmail:CreateResource"];
+	static readonly CreateResource: string[] = ["workmail:CreateResource"];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CREATE_USER: string[] = ["workmail:CreateUser"];
+	static readonly CreateUser: string[] = ["workmail:CreateUser"];
 	/** IAM actions required for the DeleteAccessControlRule API call. */
-	static readonly DELETE_ACCESS_CONTROL_RULE: string[] = [
+	static readonly DeleteAccessControlRule: string[] = [
 		"workmail:DeleteAccessControlRule",
 	];
 	/** IAM actions required for the DeleteAlias API call. */
-	static readonly DELETE_ALIAS: string[] = ["workmail:DeleteAlias"];
+	static readonly DeleteAlias: string[] = ["workmail:DeleteAlias"];
 	/** IAM actions required for the DeleteAvailabilityConfiguration API call. */
-	static readonly DELETE_AVAILABILITY_CONFIGURATION: string[] = [
+	static readonly DeleteAvailabilityConfiguration: string[] = [
 		"workmail:DeleteAvailabilityConfiguration",
 	];
 	/** IAM actions required for the DeleteEmailMonitoringConfiguration API call. */
-	static readonly DELETE_EMAIL_MONITORING_CONFIGURATION: string[] = [
+	static readonly DeleteEmailMonitoringConfiguration: string[] = [
 		"workmail:DeleteEmailMonitoringConfiguration",
 	];
 	/** IAM actions required for the DeleteGroup API call. */
-	static readonly DELETE_GROUP: string[] = ["workmail:DeleteGroup"];
+	static readonly DeleteGroup: string[] = ["workmail:DeleteGroup"];
 	/** IAM actions required for the DeleteIdentityCenterApplication API call. */
-	static readonly DELETE_IDENTITY_CENTER_APPLICATION: string[] = [
+	static readonly DeleteIdentityCenterApplication: string[] = [
 		"workmail:DeleteIdentityCenterApplication",
 	];
 	/** IAM actions required for the DeleteIdentityProviderConfiguration API call. */
-	static readonly DELETE_IDENTITY_PROVIDER_CONFIGURATION: string[] = [
+	static readonly DeleteIdentityProviderConfiguration: string[] = [
 		"workmail:DeleteIdentityProviderConfiguration",
 	];
 	/** IAM actions required for the DeleteImpersonationRole API call. */
-	static readonly DELETE_IMPERSONATION_ROLE: string[] = [
+	static readonly DeleteImpersonationRole: string[] = [
 		"workmail:DeleteImpersonationRole",
 	];
 	/** IAM actions required for the DeleteMailboxPermissions API call. */
-	static readonly DELETE_MAILBOX_PERMISSIONS: string[] = [
+	static readonly DeleteMailboxPermissions: string[] = [
 		"workmail:DeleteMailboxPermissions",
 	];
 	/** IAM actions required for the DeleteMobileDeviceAccessOverride API call. */
-	static readonly DELETE_MOBILE_DEVICE_ACCESS_OVERRIDE: string[] = [
+	static readonly DeleteMobileDeviceAccessOverride: string[] = [
 		"workmail:DeleteMobileDeviceAccessOverride",
 	];
 	/** IAM actions required for the DeleteMobileDeviceAccessRule API call. */
-	static readonly DELETE_MOBILE_DEVICE_ACCESS_RULE: string[] = [
+	static readonly DeleteMobileDeviceAccessRule: string[] = [
 		"workmail:DeleteMobileDeviceAccessRule",
 	];
 	/** IAM actions required for the DeleteOrganization API call. */
-	static readonly DELETE_ORGANIZATION: string[] = [
+	static readonly DeleteOrganization: string[] = [
 		"workmail:DeleteOrganization",
 	];
 	/** IAM actions required for the DeletePersonalAccessToken API call. */
-	static readonly DELETE_PERSONAL_ACCESS_TOKEN: string[] = [
+	static readonly DeletePersonalAccessToken: string[] = [
 		"workmail:DeletePersonalAccessToken",
 	];
 	/** IAM actions required for the DeleteResource API call. */
-	static readonly DELETE_RESOURCE: string[] = ["workmail:DeleteResource"];
+	static readonly DeleteResource: string[] = ["workmail:DeleteResource"];
 	/** IAM actions required for the DeleteRetentionPolicy API call. */
-	static readonly DELETE_RETENTION_POLICY: string[] = [
+	static readonly DeleteRetentionPolicy: string[] = [
 		"workmail:DeleteRetentionPolicy",
 	];
 	/** IAM actions required for the DeleteUser API call. */
-	static readonly DELETE_USER: string[] = ["workmail:DeleteUser"];
+	static readonly DeleteUser: string[] = ["workmail:DeleteUser"];
 	/** IAM actions required for the DeregisterFromWorkMail API call. */
-	static readonly DEREGISTER_FROM_WORK_MAIL: string[] = [
+	static readonly DeregisterFromWorkMail: string[] = [
 		"workmail:DeregisterFromWorkMail",
 	];
 	/** IAM actions required for the DeregisterMailDomain API call. */
-	static readonly DEREGISTER_MAIL_DOMAIN: string[] = [
+	static readonly DeregisterMailDomain: string[] = [
 		"workmail:DeregisterMailDomain",
 	];
 	/** IAM actions required for the DescribeEmailMonitoringConfiguration API call. */
-	static readonly DESCRIBE_EMAIL_MONITORING_CONFIGURATION: string[] = [
+	static readonly DescribeEmailMonitoringConfiguration: string[] = [
 		"workmail:DescribeEmailMonitoringConfiguration",
 	];
 	/** IAM actions required for the DescribeEntity API call. */
-	static readonly DESCRIBE_ENTITY: string[] = ["workmail:DescribeEntity"];
+	static readonly DescribeEntity: string[] = ["workmail:DescribeEntity"];
 	/** IAM actions required for the DescribeGroup API call. */
-	static readonly DESCRIBE_GROUP: string[] = ["workmail:DescribeGroup"];
+	static readonly DescribeGroup: string[] = ["workmail:DescribeGroup"];
 	/** IAM actions required for the DescribeIdentityProviderConfiguration API call. */
-	static readonly DESCRIBE_IDENTITY_PROVIDER_CONFIGURATION: string[] = [
+	static readonly DescribeIdentityProviderConfiguration: string[] = [
 		"workmail:DescribeIdentityProviderConfiguration",
 	];
 	/** IAM actions required for the DescribeInboundDmarcSettings API call. */
-	static readonly DESCRIBE_INBOUND_DMARC_SETTINGS: string[] = [
+	static readonly DescribeInboundDmarcSettings: string[] = [
 		"workmail:DescribeInboundDmarcSettings",
 	];
 	/** IAM actions required for the DescribeMailboxExportJob API call. */
-	static readonly DESCRIBE_MAILBOX_EXPORT_JOB: string[] = [
+	static readonly DescribeMailboxExportJob: string[] = [
 		"workmail:DescribeMailboxExportJob",
 	];
 	/** IAM actions required for the DescribeOrganization API call. */
-	static readonly DESCRIBE_ORGANIZATION: string[] = [
+	static readonly DescribeOrganization: string[] = [
 		"workmail:DescribeOrganization",
 	];
 	/** IAM actions required for the DescribeResource API call. */
-	static readonly DESCRIBE_RESOURCE: string[] = ["workmail:DescribeResource"];
+	static readonly DescribeResource: string[] = ["workmail:DescribeResource"];
 	/** IAM actions required for the DescribeUser API call. */
-	static readonly DESCRIBE_USER: string[] = ["workmail:DescribeUser"];
+	static readonly DescribeUser: string[] = ["workmail:DescribeUser"];
 	/** IAM actions required for the DisassociateDelegateFromResource API call. */
-	static readonly DISASSOCIATE_DELEGATE_FROM_RESOURCE: string[] = [
+	static readonly DisassociateDelegateFromResource: string[] = [
 		"workmail:DisassociateDelegateFromResource",
 	];
 	/** IAM actions required for the DisassociateMemberFromGroup API call. */
-	static readonly DISASSOCIATE_MEMBER_FROM_GROUP: string[] = [
+	static readonly DisassociateMemberFromGroup: string[] = [
 		"workmail:DisassociateMemberFromGroup",
 	];
 	/** IAM actions required for the GetAccessControlEffect API call. */
-	static readonly GET_ACCESS_CONTROL_EFFECT: string[] = [
+	static readonly opGetAccessControlEffect: string[] = [
 		"workmail:GetAccessControlEffect",
 	];
 	/** IAM actions required for the GetDefaultRetentionPolicy API call. */
-	static readonly GET_DEFAULT_RETENTION_POLICY: string[] = [
+	static readonly opGetDefaultRetentionPolicy: string[] = [
 		"workmail:GetDefaultRetentionPolicy",
 	];
 	/** IAM actions required for the GetImpersonationRole API call. */
-	static readonly GET_IMPERSONATION_ROLE: string[] = [
+	static readonly opGetImpersonationRole: string[] = [
 		"workmail:GetImpersonationRole",
 	];
 	/** IAM actions required for the GetImpersonationRoleEffect API call. */
-	static readonly GET_IMPERSONATION_ROLE_EFFECT: string[] = [
+	static readonly opGetImpersonationRoleEffect: string[] = [
 		"workmail:GetImpersonationRoleEffect",
 	];
 	/** IAM actions required for the GetMailDomain API call. */
-	static readonly GET_MAIL_DOMAIN: string[] = ["workmail:GetMailDomain"];
+	static readonly opGetMailDomain: string[] = ["workmail:GetMailDomain"];
 	/** IAM actions required for the GetMailboxDetails API call. */
-	static readonly GET_MAILBOX_DETAILS: string[] = [
+	static readonly opGetMailboxDetails: string[] = [
 		"workmail:GetMailboxDetails",
 	];
 	/** IAM actions required for the GetMobileDeviceAccessEffect API call. */
-	static readonly GET_MOBILE_DEVICE_ACCESS_EFFECT: string[] = [
+	static readonly opGetMobileDeviceAccessEffect: string[] = [
 		"workmail:GetMobileDeviceAccessEffect",
 	];
 	/** IAM actions required for the GetMobileDeviceAccessOverride API call. */
-	static readonly GET_MOBILE_DEVICE_ACCESS_OVERRIDE: string[] = [
+	static readonly opGetMobileDeviceAccessOverride: string[] = [
 		"workmail:GetMobileDeviceAccessOverride",
 	];
 	/** IAM actions required for the GetPersonalAccessTokenMetadata API call. */
-	static readonly GET_PERSONAL_ACCESS_TOKEN_METADATA: string[] = [
+	static readonly opGetPersonalAccessTokenMetadata: string[] = [
 		"workmail:GetPersonalAccessTokenMetadata",
 	];
 	/** IAM actions required for the ListAccessControlRules API call. */
-	static readonly LIST_ACCESS_CONTROL_RULES: string[] = [
+	static readonly ListAccessControlRules: string[] = [
 		"workmail:ListAccessControlRules",
 	];
 	/** IAM actions required for the ListAliases API call. */
-	static readonly LIST_ALIASES: string[] = ["workmail:ListAliases"];
+	static readonly ListAliases: string[] = ["workmail:ListAliases"];
 	/** IAM actions required for the ListAvailabilityConfigurations API call. */
-	static readonly LIST_AVAILABILITY_CONFIGURATIONS: string[] = [
+	static readonly ListAvailabilityConfigurations: string[] = [
 		"workmail:ListAvailabilityConfigurations",
 	];
 	/** IAM actions required for the ListGroupMembers API call. */
-	static readonly LIST_GROUP_MEMBERS: string[] = ["workmail:ListGroupMembers"];
+	static readonly ListGroupMembers: string[] = ["workmail:ListGroupMembers"];
 	/** IAM actions required for the ListGroups API call. */
-	static readonly LIST_GROUPS: string[] = ["workmail:ListGroups"];
+	static readonly ListGroups: string[] = ["workmail:ListGroups"];
 	/** IAM actions required for the ListGroupsForEntity API call. */
-	static readonly LIST_GROUPS_FOR_ENTITY: string[] = [
+	static readonly ListGroupsForEntity: string[] = [
 		"workmail:ListGroupsForEntity",
 	];
 	/** IAM actions required for the ListImpersonationRoles API call. */
-	static readonly LIST_IMPERSONATION_ROLES: string[] = [
+	static readonly ListImpersonationRoles: string[] = [
 		"workmail:ListImpersonationRoles",
 	];
 	/** IAM actions required for the ListMailDomains API call. */
-	static readonly LIST_MAIL_DOMAINS: string[] = ["workmail:ListMailDomains"];
+	static readonly ListMailDomains: string[] = ["workmail:ListMailDomains"];
 	/** IAM actions required for the ListMailboxExportJobs API call. */
-	static readonly LIST_MAILBOX_EXPORT_JOBS: string[] = [
+	static readonly ListMailboxExportJobs: string[] = [
 		"workmail:ListMailboxExportJobs",
 	];
 	/** IAM actions required for the ListMailboxPermissions API call. */
-	static readonly LIST_MAILBOX_PERMISSIONS: string[] = [
+	static readonly ListMailboxPermissions: string[] = [
 		"workmail:ListMailboxPermissions",
 	];
 	/** IAM actions required for the ListMobileDeviceAccessOverrides API call. */
-	static readonly LIST_MOBILE_DEVICE_ACCESS_OVERRIDES: string[] = [
+	static readonly ListMobileDeviceAccessOverrides: string[] = [
 		"workmail:ListMobileDeviceAccessOverrides",
 	];
 	/** IAM actions required for the ListMobileDeviceAccessRules API call. */
-	static readonly LIST_MOBILE_DEVICE_ACCESS_RULES: string[] = [
+	static readonly ListMobileDeviceAccessRules: string[] = [
 		"workmail:ListMobileDeviceAccessRules",
 	];
 	/** IAM actions required for the ListOrganizations API call. */
-	static readonly LIST_ORGANIZATIONS: string[] = ["workmail:ListOrganizations"];
+	static readonly ListOrganizations: string[] = ["workmail:ListOrganizations"];
 	/** IAM actions required for the ListPersonalAccessTokens API call. */
-	static readonly LIST_PERSONAL_ACCESS_TOKENS: string[] = [
+	static readonly ListPersonalAccessTokens: string[] = [
 		"workmail:ListPersonalAccessTokens",
 	];
 	/** IAM actions required for the ListResourceDelegates API call. */
-	static readonly LIST_RESOURCE_DELEGATES: string[] = [
+	static readonly ListResourceDelegates: string[] = [
 		"workmail:ListResourceDelegates",
 	];
 	/** IAM actions required for the ListResources API call. */
-	static readonly LIST_RESOURCES: string[] = ["workmail:ListResources"];
+	static readonly ListResources: string[] = ["workmail:ListResources"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"workmail:ListTagsForResource",
 	];
 	/** IAM actions required for the ListUsers API call. */
-	static readonly LIST_USERS: string[] = ["workmail:ListUsers"];
+	static readonly ListUsers: string[] = ["workmail:ListUsers"];
 	/** IAM actions required for the PutAccessControlRule API call. */
-	static readonly PUT_ACCESS_CONTROL_RULE: string[] = [
+	static readonly PutAccessControlRule: string[] = [
 		"workmail:PutAccessControlRule",
 	];
 	/** IAM actions required for the PutEmailMonitoringConfiguration API call. */
-	static readonly PUT_EMAIL_MONITORING_CONFIGURATION: string[] = [
+	static readonly PutEmailMonitoringConfiguration: string[] = [
 		"iam:PassRole",
 		"workmail:PutEmailMonitoringConfiguration",
 	];
 	/** IAM actions required for the PutIdentityProviderConfiguration API call. */
-	static readonly PUT_IDENTITY_PROVIDER_CONFIGURATION: string[] = [
+	static readonly PutIdentityProviderConfiguration: string[] = [
 		"workmail:PutIdentityProviderConfiguration",
 	];
 	/** IAM actions required for the PutInboundDmarcSettings API call. */
-	static readonly PUT_INBOUND_DMARC_SETTINGS: string[] = [
+	static readonly PutInboundDmarcSettings: string[] = [
 		"workmail:PutInboundDmarcSettings",
 	];
 	/** IAM actions required for the PutMailboxPermissions API call. */
-	static readonly PUT_MAILBOX_PERMISSIONS: string[] = [
+	static readonly PutMailboxPermissions: string[] = [
 		"workmail:PutMailboxPermissions",
 	];
 	/** IAM actions required for the PutMobileDeviceAccessOverride API call. */
-	static readonly PUT_MOBILE_DEVICE_ACCESS_OVERRIDE: string[] = [
+	static readonly PutMobileDeviceAccessOverride: string[] = [
 		"workmail:PutMobileDeviceAccessOverride",
 	];
 	/** IAM actions required for the PutRetentionPolicy API call. */
-	static readonly PUT_RETENTION_POLICY: string[] = [
+	static readonly PutRetentionPolicy: string[] = [
 		"workmail:PutRetentionPolicy",
 	];
 	/** IAM actions required for the RegisterMailDomain API call. */
-	static readonly REGISTER_MAIL_DOMAIN: string[] = [
+	static readonly RegisterMailDomain: string[] = [
 		"workmail:RegisterMailDomain",
 	];
 	/** IAM actions required for the RegisterToWorkMail API call. */
-	static readonly REGISTER_TO_WORK_MAIL: string[] = [
+	static readonly RegisterToWorkMail: string[] = [
 		"workmail:RegisterToWorkMail",
 	];
 	/** IAM actions required for the ResetPassword API call. */
-	static readonly RESET_PASSWORD: string[] = ["workmail:ResetPassword"];
+	static readonly ResetPassword: string[] = ["workmail:ResetPassword"];
 	/** IAM actions required for the StartMailboxExportJob API call. */
-	static readonly START_MAILBOX_EXPORT_JOB: string[] = [
+	static readonly StartMailboxExportJob: string[] = [
 		"iam:PassRole",
 		"workmail:StartMailboxExportJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["workmail:TagResource"];
+	static readonly TagResource: string[] = ["workmail:TagResource"];
 	/** IAM actions required for the TestAvailabilityConfiguration API call. */
-	static readonly TEST_AVAILABILITY_CONFIGURATION: string[] = [
+	static readonly TestAvailabilityConfiguration: string[] = [
 		"workmail:TestAvailabilityConfiguration",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["workmail:UntagResource"];
+	static readonly UntagResource: string[] = ["workmail:UntagResource"];
 	/** IAM actions required for the UpdateAvailabilityConfiguration API call. */
-	static readonly UPDATE_AVAILABILITY_CONFIGURATION: string[] = [
+	static readonly UpdateAvailabilityConfiguration: string[] = [
 		"workmail:UpdateAvailabilityConfiguration",
 	];
 	/** IAM actions required for the UpdateDefaultMailDomain API call. */
-	static readonly UPDATE_DEFAULT_MAIL_DOMAIN: string[] = [
+	static readonly UpdateDefaultMailDomain: string[] = [
 		"workmail:UpdateDefaultMailDomain",
 	];
 	/** IAM actions required for the UpdateGroup API call. */
-	static readonly UPDATE_GROUP: string[] = ["workmail:UpdateGroup"];
+	static readonly UpdateGroup: string[] = ["workmail:UpdateGroup"];
 	/** IAM actions required for the UpdateImpersonationRole API call. */
-	static readonly UPDATE_IMPERSONATION_ROLE: string[] = [
+	static readonly UpdateImpersonationRole: string[] = [
 		"workmail:UpdateImpersonationRole",
 	];
 	/** IAM actions required for the UpdateMailboxQuota API call. */
-	static readonly UPDATE_MAILBOX_QUOTA: string[] = [
+	static readonly UpdateMailboxQuota: string[] = [
 		"workmail:UpdateMailboxQuota",
 	];
 	/** IAM actions required for the UpdateMobileDeviceAccessRule API call. */
-	static readonly UPDATE_MOBILE_DEVICE_ACCESS_RULE: string[] = [
+	static readonly UpdateMobileDeviceAccessRule: string[] = [
 		"workmail:UpdateMobileDeviceAccessRule",
 	];
 	/** IAM actions required for the UpdatePrimaryEmailAddress API call. */
-	static readonly UPDATE_PRIMARY_EMAIL_ADDRESS: string[] = [
+	static readonly UpdatePrimaryEmailAddress: string[] = [
 		"workmail:UpdatePrimaryEmailAddress",
 	];
 	/** IAM actions required for the UpdateResource API call. */
-	static readonly UPDATE_RESOURCE: string[] = ["workmail:UpdateResource"];
+	static readonly UpdateResource: string[] = ["workmail:UpdateResource"];
 	/** IAM actions required for the UpdateUser API call. */
-	static readonly UPDATE_USER: string[] = ["workmail:UpdateUser"];
+	static readonly UpdateUser: string[] = ["workmail:UpdateUser"];
 }
 
 /**
@@ -845,28 +855,28 @@ export class WorkMailOperations {
  */
 export class WorkMailConditions {
 	/** Condition keys applicable to the AssumeImpersonationRole action. */
-	static readonly ASSUME_IMPERSONATION_ROLE_CONDITION_KEYS: string[] = [
+	static readonly AssumeImpersonationRoleConditionKeys: string[] = [
 		"workmail:ImpersonationRoleId",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: workmail:ImpersonationRoleId (String) */
 	static readonly IMPERSONATION_ROLE_ID = "workmail:ImpersonationRoleId";
 

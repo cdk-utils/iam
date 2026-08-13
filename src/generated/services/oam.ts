@@ -13,72 +13,126 @@ export class OamActions {
 	static readonly SERVICE_PREFIX = "oam";
 
 	/** [Write] oam:CreateLink */
-	static readonly CREATE_LINK = "oam:CreateLink";
+	static readonly CreateLink = "oam:CreateLink";
 	/** [Write] oam:CreateSink */
-	static readonly CREATE_SINK = "oam:CreateSink";
+	static readonly CreateSink = "oam:CreateSink";
 	/** [Write] oam:DeleteLink */
-	static readonly DELETE_LINK = "oam:DeleteLink";
+	static readonly DeleteLink = "oam:DeleteLink";
 	/** [Write] oam:DeleteSink */
-	static readonly DELETE_SINK = "oam:DeleteSink";
+	static readonly DeleteSink = "oam:DeleteSink";
 	/** [Read] oam:GetLink */
-	static readonly GET_LINK = "oam:GetLink";
+	static readonly actionGetLink = "oam:GetLink";
 	/** [Read] oam:GetSink */
-	static readonly GET_SINK = "oam:GetSink";
+	static readonly actionGetSink = "oam:GetSink";
 	/** [Read] oam:GetSinkPolicy */
-	static readonly GET_SINK_POLICY = "oam:GetSinkPolicy";
+	static readonly actionGetSinkPolicy = "oam:GetSinkPolicy";
 	/** [Read] oam:ListAttachedLinks */
-	static readonly LIST_ATTACHED_LINKS = "oam:ListAttachedLinks";
+	static readonly ListAttachedLinks = "oam:ListAttachedLinks";
 	/** [Read] oam:ListLinks */
-	static readonly LIST_LINKS = "oam:ListLinks";
+	static readonly ListLinks = "oam:ListLinks";
 	/** [Read] oam:ListSinks */
-	static readonly LIST_SINKS = "oam:ListSinks";
+	static readonly ListSinks = "oam:ListSinks";
 	/** [Read] oam:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "oam:ListTagsForResource";
+	static readonly ListTagsForResource = "oam:ListTagsForResource";
 	/** [Write] oam:PutSinkPolicy */
-	static readonly PUT_SINK_POLICY = "oam:PutSinkPolicy";
+	static readonly PutSinkPolicy = "oam:PutSinkPolicy";
 	/** [Tagging] oam:TagResource */
-	static readonly TAG_RESOURCE = "oam:TagResource";
+	static readonly TagResource = "oam:TagResource";
 	/** [Tagging] oam:UntagResource */
-	static readonly UNTAG_RESOURCE = "oam:UntagResource";
+	static readonly UntagResource = "oam:UntagResource";
 	/** [Write] oam:UpdateLink */
-	static readonly UPDATE_LINK = "oam:UpdateLink";
+	static readonly UpdateLink = "oam:UpdateLink";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OamActions.GET_LINK,
-		OamActions.GET_SINK,
-		OamActions.GET_SINK_POLICY,
-		OamActions.LIST_ATTACHED_LINKS,
-		OamActions.LIST_LINKS,
-		OamActions.LIST_SINKS,
-		OamActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		OamActions.actionGetLink,
+		OamActions.actionGetSink,
+		OamActions.actionGetSinkPolicy,
+		OamActions.ListAttachedLinks,
+		OamActions.ListLinks,
+		OamActions.ListSinks,
+		OamActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OamActions.CREATE_LINK,
-		OamActions.CREATE_SINK,
-		OamActions.DELETE_LINK,
-		OamActions.DELETE_SINK,
-		OamActions.PUT_SINK_POLICY,
-		OamActions.UPDATE_LINK,
+	static readonly AllWriteActions: string[] = [
+		OamActions.CreateLink,
+		OamActions.CreateSink,
+		OamActions.DeleteLink,
+		OamActions.DeleteSink,
+		OamActions.PutSinkPolicy,
+		OamActions.UpdateLink,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OamActions.TAG_RESOURCE,
-		OamActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OamActions.TagResource,
+		OamActions.UntagResource,
 	];
 }
 
-const LinkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):oam:(?<region>[^:]*):(?<account>[^:]*):link/(?<resourceId>[^:/?]+)$",
-);
-const SinkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):oam:(?<region>[^:]*):(?<account>[^:]*):sink/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Link ARN.
+ */
+export interface OamLinkArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Link ARN.
+ */
+export interface OamLinkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Sink ARN.
+ */
+export interface OamSinkArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Sink ARN.
+ */
+export interface OamSinkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const LinkArnRegex =
+	/^arn:(?<partition>[^:]+):oam:(?<region>[^:]*):(?<account>[^:]*):link\/(?<resourceId>[^:/?]+)$/;
+const SinkArnRegex =
+	/^arn:(?<partition>[^:]+):oam:(?<region>[^:]*):(?<account>[^:]*):sink\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for oam resources.
@@ -87,16 +141,7 @@ export class OamResources {
 	/**
 	 * Builds an ARN for the Link resource.
 	 */
-	static link(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static link(props: OamLinkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:oam:${props.region ?? "*"}:${props.account ?? "*"}:link/${props.resourceId}`;
 	}
 
@@ -111,12 +156,7 @@ export class OamResources {
 	 * Parses a Link ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLinkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseLinkArn(arn: string): OamLinkArnComponents {
 		const match = LinkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Link ARN: ${arn}`);
@@ -132,16 +172,7 @@ export class OamResources {
 	/**
 	 * Builds an ARN for the Sink resource.
 	 */
-	static sink(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sink(props: OamSinkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:oam:${props.region ?? "*"}:${props.account ?? "*"}:sink/${props.resourceId}`;
 	}
 
@@ -156,12 +187,7 @@ export class OamResources {
 	 * Parses a Sink ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSinkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSinkArn(arn: string): OamSinkArnComponents {
 		const match = SinkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Sink ARN: ${arn}`);
@@ -180,35 +206,35 @@ export class OamResources {
  */
 export class OamOperations {
 	/** IAM actions required for the CreateLink API call. */
-	static readonly CREATE_LINK: string[] = [];
+	static readonly CreateLink: string[] = [];
 	/** IAM actions required for the CreateSink API call. */
-	static readonly CREATE_SINK: string[] = [];
+	static readonly CreateSink: string[] = [];
 	/** IAM actions required for the DeleteLink API call. */
-	static readonly DELETE_LINK: string[] = [];
+	static readonly DeleteLink: string[] = [];
 	/** IAM actions required for the DeleteSink API call. */
-	static readonly DELETE_SINK: string[] = [];
+	static readonly DeleteSink: string[] = [];
 	/** IAM actions required for the GetLink API call. */
-	static readonly GET_LINK: string[] = [];
+	static readonly opGetLink: string[] = [];
 	/** IAM actions required for the GetSink API call. */
-	static readonly GET_SINK: string[] = [];
+	static readonly opGetSink: string[] = [];
 	/** IAM actions required for the GetSinkPolicy API call. */
-	static readonly GET_SINK_POLICY: string[] = [];
+	static readonly opGetSinkPolicy: string[] = [];
 	/** IAM actions required for the ListAttachedLinks API call. */
-	static readonly LIST_ATTACHED_LINKS: string[] = [];
+	static readonly ListAttachedLinks: string[] = [];
 	/** IAM actions required for the ListLinks API call. */
-	static readonly LIST_LINKS: string[] = [];
+	static readonly ListLinks: string[] = [];
 	/** IAM actions required for the ListSinks API call. */
-	static readonly LIST_SINKS: string[] = [];
+	static readonly ListSinks: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the PutSinkPolicy API call. */
-	static readonly PUT_SINK_POLICY: string[] = [];
+	static readonly PutSinkPolicy: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [];
+	static readonly TagResource: string[] = [];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [];
+	static readonly UntagResource: string[] = [];
 	/** IAM actions required for the UpdateLink API call. */
-	static readonly UPDATE_LINK: string[] = [];
+	static readonly UpdateLink: string[] = [];
 }
 
 /**
@@ -216,63 +242,63 @@ export class OamOperations {
  */
 export class OamConditions {
 	/** Condition keys applicable to the CreateLink action. */
-	static readonly CREATE_LINK_CONDITION_KEYS: string[] = [
+	static readonly CreateLinkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"oam:ResourceTypes",
 	];
 	/** Condition keys applicable to the CreateSink action. */
-	static readonly CREATE_SINK_CONDITION_KEYS: string[] = [
+	static readonly CreateSinkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteLink action. */
-	static readonly DELETE_LINK_CONDITION_KEYS: string[] = [
+	static readonly DeleteLinkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSink action. */
-	static readonly DELETE_SINK_CONDITION_KEYS: string[] = [
+	static readonly DeleteSinkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLink action. */
-	static readonly GET_LINK_CONDITION_KEYS: string[] = [
+	static readonly actionGetLinkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSink action. */
-	static readonly GET_SINK_CONDITION_KEYS: string[] = [
+	static readonly actionGetSinkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSinkPolicy action. */
-	static readonly GET_SINK_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetSinkPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAttachedLinks action. */
-	static readonly LIST_ATTACHED_LINKS_CONDITION_KEYS: string[] = [
+	static readonly ListAttachedLinksConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutSinkPolicy action. */
-	static readonly PUT_SINK_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutSinkPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateLink action. */
-	static readonly UPDATE_LINK_CONDITION_KEYS: string[] = [
+	static readonly UpdateLinkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"oam:ResourceTypes",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: oam:ResourceTypes (ArrayOfString) */
 	static readonly RESOURCE_TYPES = "oam:ResourceTypes";
 

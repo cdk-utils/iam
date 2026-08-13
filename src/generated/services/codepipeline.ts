@@ -13,185 +13,342 @@ export class CodePipelineActions {
 	static readonly SERVICE_PREFIX = "codepipeline";
 
 	/** [Write] codepipeline:AcknowledgeJob */
-	static readonly ACKNOWLEDGE_JOB = "codepipeline:AcknowledgeJob";
+	static readonly AcknowledgeJob = "codepipeline:AcknowledgeJob";
 	/** [Write] codepipeline:AcknowledgeThirdPartyJob */
-	static readonly ACKNOWLEDGE_THIRD_PARTY_JOB =
+	static readonly AcknowledgeThirdPartyJob =
 		"codepipeline:AcknowledgeThirdPartyJob";
 	/** [Write] codepipeline:CreateCustomActionType */
-	static readonly CREATE_CUSTOM_ACTION_TYPE =
+	static readonly CreateCustomActionType =
 		"codepipeline:CreateCustomActionType";
 	/** [Write] codepipeline:CreatePipeline */
-	static readonly CREATE_PIPELINE = "codepipeline:CreatePipeline";
+	static readonly CreatePipeline = "codepipeline:CreatePipeline";
 	/** [Write] codepipeline:DeleteCustomActionType */
-	static readonly DELETE_CUSTOM_ACTION_TYPE =
+	static readonly DeleteCustomActionType =
 		"codepipeline:DeleteCustomActionType";
 	/** [Write] codepipeline:DeletePipeline */
-	static readonly DELETE_PIPELINE = "codepipeline:DeletePipeline";
+	static readonly DeletePipeline = "codepipeline:DeletePipeline";
 	/** [Write] codepipeline:DeleteWebhook */
-	static readonly DELETE_WEBHOOK = "codepipeline:DeleteWebhook";
+	static readonly DeleteWebhook = "codepipeline:DeleteWebhook";
 	/** [Write] codepipeline:DeregisterWebhookWithThirdParty */
-	static readonly DEREGISTER_WEBHOOK_WITH_THIRD_PARTY =
+	static readonly DeregisterWebhookWithThirdParty =
 		"codepipeline:DeregisterWebhookWithThirdParty";
 	/** [Write] codepipeline:DisableStageTransition */
-	static readonly DISABLE_STAGE_TRANSITION =
+	static readonly DisableStageTransition =
 		"codepipeline:DisableStageTransition";
 	/** [Write] codepipeline:EnableStageTransition */
-	static readonly ENABLE_STAGE_TRANSITION =
-		"codepipeline:EnableStageTransition";
+	static readonly EnableStageTransition = "codepipeline:EnableStageTransition";
 	/** [Read] codepipeline:GetActionType */
-	static readonly GET_ACTION_TYPE = "codepipeline:GetActionType";
+	static readonly actionGetActionType = "codepipeline:GetActionType";
 	/** [Read] codepipeline:GetJobDetails */
-	static readonly GET_JOB_DETAILS = "codepipeline:GetJobDetails";
+	static readonly actionGetJobDetails = "codepipeline:GetJobDetails";
 	/** [Read] codepipeline:GetPipeline */
-	static readonly GET_PIPELINE = "codepipeline:GetPipeline";
+	static readonly actionGetPipeline = "codepipeline:GetPipeline";
 	/** [Read] codepipeline:GetPipelineExecution */
-	static readonly GET_PIPELINE_EXECUTION = "codepipeline:GetPipelineExecution";
+	static readonly actionGetPipelineExecution =
+		"codepipeline:GetPipelineExecution";
 	/** [Read] codepipeline:GetPipelineState */
-	static readonly GET_PIPELINE_STATE = "codepipeline:GetPipelineState";
+	static readonly actionGetPipelineState = "codepipeline:GetPipelineState";
 	/** [Read] codepipeline:GetThirdPartyJobDetails */
-	static readonly GET_THIRD_PARTY_JOB_DETAILS =
+	static readonly actionGetThirdPartyJobDetails =
 		"codepipeline:GetThirdPartyJobDetails";
 	/** [Read] codepipeline:ListActionExecutions */
-	static readonly LIST_ACTION_EXECUTIONS = "codepipeline:ListActionExecutions";
+	static readonly ListActionExecutions = "codepipeline:ListActionExecutions";
 	/** [Read] codepipeline:ListActionTypes */
-	static readonly LIST_ACTION_TYPES = "codepipeline:ListActionTypes";
+	static readonly ListActionTypes = "codepipeline:ListActionTypes";
 	/** [Read] codepipeline:ListDeployActionExecutionTargets */
-	static readonly LIST_DEPLOY_ACTION_EXECUTION_TARGETS =
+	static readonly ListDeployActionExecutionTargets =
 		"codepipeline:ListDeployActionExecutionTargets";
 	/** [List] codepipeline:ListPipelineExecutions */
-	static readonly LIST_PIPELINE_EXECUTIONS =
+	static readonly ListPipelineExecutions =
 		"codepipeline:ListPipelineExecutions";
 	/** [List] codepipeline:ListPipelines */
-	static readonly LIST_PIPELINES = "codepipeline:ListPipelines";
+	static readonly ListPipelines = "codepipeline:ListPipelines";
 	/** [Read] codepipeline:ListRuleExecutions */
-	static readonly LIST_RULE_EXECUTIONS = "codepipeline:ListRuleExecutions";
+	static readonly ListRuleExecutions = "codepipeline:ListRuleExecutions";
 	/** [Read] codepipeline:ListRuleTypes */
-	static readonly LIST_RULE_TYPES = "codepipeline:ListRuleTypes";
+	static readonly ListRuleTypes = "codepipeline:ListRuleTypes";
 	/** [Read] codepipeline:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "codepipeline:ListTagsForResource";
+	static readonly ListTagsForResource = "codepipeline:ListTagsForResource";
 	/** [List] codepipeline:ListWebhooks */
-	static readonly LIST_WEBHOOKS = "codepipeline:ListWebhooks";
+	static readonly ListWebhooks = "codepipeline:ListWebhooks";
 	/** [Write] codepipeline:OverrideStageCondition */
-	static readonly OVERRIDE_STAGE_CONDITION =
+	static readonly OverrideStageCondition =
 		"codepipeline:OverrideStageCondition";
 	/** [Write] codepipeline:PollForJobs */
-	static readonly POLL_FOR_JOBS = "codepipeline:PollForJobs";
+	static readonly PollForJobs = "codepipeline:PollForJobs";
 	/** [Write] codepipeline:PollForThirdPartyJobs */
-	static readonly POLL_FOR_THIRD_PARTY_JOBS =
-		"codepipeline:PollForThirdPartyJobs";
+	static readonly PollForThirdPartyJobs = "codepipeline:PollForThirdPartyJobs";
 	/** [Write] codepipeline:PutActionRevision */
-	static readonly PUT_ACTION_REVISION = "codepipeline:PutActionRevision";
+	static readonly PutActionRevision = "codepipeline:PutActionRevision";
 	/** [Write] codepipeline:PutApprovalResult */
-	static readonly PUT_APPROVAL_RESULT = "codepipeline:PutApprovalResult";
+	static readonly PutApprovalResult = "codepipeline:PutApprovalResult";
 	/** [Write] codepipeline:PutJobFailureResult */
-	static readonly PUT_JOB_FAILURE_RESULT = "codepipeline:PutJobFailureResult";
+	static readonly PutJobFailureResult = "codepipeline:PutJobFailureResult";
 	/** [Write] codepipeline:PutJobSuccessResult */
-	static readonly PUT_JOB_SUCCESS_RESULT = "codepipeline:PutJobSuccessResult";
+	static readonly PutJobSuccessResult = "codepipeline:PutJobSuccessResult";
 	/** [Write] codepipeline:PutThirdPartyJobFailureResult */
-	static readonly PUT_THIRD_PARTY_JOB_FAILURE_RESULT =
+	static readonly PutThirdPartyJobFailureResult =
 		"codepipeline:PutThirdPartyJobFailureResult";
 	/** [Write] codepipeline:PutThirdPartyJobSuccessResult */
-	static readonly PUT_THIRD_PARTY_JOB_SUCCESS_RESULT =
+	static readonly PutThirdPartyJobSuccessResult =
 		"codepipeline:PutThirdPartyJobSuccessResult";
 	/** [Write] codepipeline:PutWebhook */
-	static readonly PUT_WEBHOOK = "codepipeline:PutWebhook";
+	static readonly PutWebhook = "codepipeline:PutWebhook";
 	/** [Write] codepipeline:RegisterWebhookWithThirdParty */
-	static readonly REGISTER_WEBHOOK_WITH_THIRD_PARTY =
+	static readonly RegisterWebhookWithThirdParty =
 		"codepipeline:RegisterWebhookWithThirdParty";
 	/** [Write] codepipeline:RetryStageExecution */
-	static readonly RETRY_STAGE_EXECUTION = "codepipeline:RetryStageExecution";
+	static readonly RetryStageExecution = "codepipeline:RetryStageExecution";
 	/** [Write] codepipeline:RollbackStage */
-	static readonly ROLLBACK_STAGE = "codepipeline:RollbackStage";
+	static readonly RollbackStage = "codepipeline:RollbackStage";
 	/** [Write] codepipeline:StartPipelineExecution */
-	static readonly START_PIPELINE_EXECUTION =
+	static readonly StartPipelineExecution =
 		"codepipeline:StartPipelineExecution";
 	/** [Write] codepipeline:StopPipelineExecution */
-	static readonly STOP_PIPELINE_EXECUTION =
-		"codepipeline:StopPipelineExecution";
+	static readonly StopPipelineExecution = "codepipeline:StopPipelineExecution";
 	/** [Tagging] codepipeline:TagResource */
-	static readonly TAG_RESOURCE = "codepipeline:TagResource";
+	static readonly TagResource = "codepipeline:TagResource";
 	/** [Tagging] codepipeline:UntagResource */
-	static readonly UNTAG_RESOURCE = "codepipeline:UntagResource";
+	static readonly UntagResource = "codepipeline:UntagResource";
 	/** [Write] codepipeline:UpdateActionType */
-	static readonly UPDATE_ACTION_TYPE = "codepipeline:UpdateActionType";
+	static readonly UpdateActionType = "codepipeline:UpdateActionType";
 	/** [Write] codepipeline:UpdatePipeline */
-	static readonly UPDATE_PIPELINE = "codepipeline:UpdatePipeline";
+	static readonly UpdatePipeline = "codepipeline:UpdatePipeline";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodePipelineActions.GET_ACTION_TYPE,
-		CodePipelineActions.GET_JOB_DETAILS,
-		CodePipelineActions.GET_PIPELINE,
-		CodePipelineActions.GET_PIPELINE_EXECUTION,
-		CodePipelineActions.GET_PIPELINE_STATE,
-		CodePipelineActions.GET_THIRD_PARTY_JOB_DETAILS,
-		CodePipelineActions.LIST_ACTION_EXECUTIONS,
-		CodePipelineActions.LIST_ACTION_TYPES,
-		CodePipelineActions.LIST_DEPLOY_ACTION_EXECUTION_TARGETS,
-		CodePipelineActions.LIST_RULE_EXECUTIONS,
-		CodePipelineActions.LIST_RULE_TYPES,
-		CodePipelineActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		CodePipelineActions.actionGetActionType,
+		CodePipelineActions.actionGetJobDetails,
+		CodePipelineActions.actionGetPipeline,
+		CodePipelineActions.actionGetPipelineExecution,
+		CodePipelineActions.actionGetPipelineState,
+		CodePipelineActions.actionGetThirdPartyJobDetails,
+		CodePipelineActions.ListActionExecutions,
+		CodePipelineActions.ListActionTypes,
+		CodePipelineActions.ListDeployActionExecutionTargets,
+		CodePipelineActions.ListRuleExecutions,
+		CodePipelineActions.ListRuleTypes,
+		CodePipelineActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodePipelineActions.ACKNOWLEDGE_JOB,
-		CodePipelineActions.ACKNOWLEDGE_THIRD_PARTY_JOB,
-		CodePipelineActions.CREATE_CUSTOM_ACTION_TYPE,
-		CodePipelineActions.CREATE_PIPELINE,
-		CodePipelineActions.DELETE_CUSTOM_ACTION_TYPE,
-		CodePipelineActions.DELETE_PIPELINE,
-		CodePipelineActions.DELETE_WEBHOOK,
-		CodePipelineActions.DEREGISTER_WEBHOOK_WITH_THIRD_PARTY,
-		CodePipelineActions.DISABLE_STAGE_TRANSITION,
-		CodePipelineActions.ENABLE_STAGE_TRANSITION,
-		CodePipelineActions.OVERRIDE_STAGE_CONDITION,
-		CodePipelineActions.POLL_FOR_JOBS,
-		CodePipelineActions.POLL_FOR_THIRD_PARTY_JOBS,
-		CodePipelineActions.PUT_ACTION_REVISION,
-		CodePipelineActions.PUT_APPROVAL_RESULT,
-		CodePipelineActions.PUT_JOB_FAILURE_RESULT,
-		CodePipelineActions.PUT_JOB_SUCCESS_RESULT,
-		CodePipelineActions.PUT_THIRD_PARTY_JOB_FAILURE_RESULT,
-		CodePipelineActions.PUT_THIRD_PARTY_JOB_SUCCESS_RESULT,
-		CodePipelineActions.PUT_WEBHOOK,
-		CodePipelineActions.REGISTER_WEBHOOK_WITH_THIRD_PARTY,
-		CodePipelineActions.RETRY_STAGE_EXECUTION,
-		CodePipelineActions.ROLLBACK_STAGE,
-		CodePipelineActions.START_PIPELINE_EXECUTION,
-		CodePipelineActions.STOP_PIPELINE_EXECUTION,
-		CodePipelineActions.UPDATE_ACTION_TYPE,
-		CodePipelineActions.UPDATE_PIPELINE,
+	static readonly AllWriteActions: string[] = [
+		CodePipelineActions.AcknowledgeJob,
+		CodePipelineActions.AcknowledgeThirdPartyJob,
+		CodePipelineActions.CreateCustomActionType,
+		CodePipelineActions.CreatePipeline,
+		CodePipelineActions.DeleteCustomActionType,
+		CodePipelineActions.DeletePipeline,
+		CodePipelineActions.DeleteWebhook,
+		CodePipelineActions.DeregisterWebhookWithThirdParty,
+		CodePipelineActions.DisableStageTransition,
+		CodePipelineActions.EnableStageTransition,
+		CodePipelineActions.OverrideStageCondition,
+		CodePipelineActions.PollForJobs,
+		CodePipelineActions.PollForThirdPartyJobs,
+		CodePipelineActions.PutActionRevision,
+		CodePipelineActions.PutApprovalResult,
+		CodePipelineActions.PutJobFailureResult,
+		CodePipelineActions.PutJobSuccessResult,
+		CodePipelineActions.PutThirdPartyJobFailureResult,
+		CodePipelineActions.PutThirdPartyJobSuccessResult,
+		CodePipelineActions.PutWebhook,
+		CodePipelineActions.RegisterWebhookWithThirdParty,
+		CodePipelineActions.RetryStageExecution,
+		CodePipelineActions.RollbackStage,
+		CodePipelineActions.StartPipelineExecution,
+		CodePipelineActions.StopPipelineExecution,
+		CodePipelineActions.UpdateActionType,
+		CodePipelineActions.UpdatePipeline,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodePipelineActions.LIST_PIPELINE_EXECUTIONS,
-		CodePipelineActions.LIST_PIPELINES,
-		CodePipelineActions.LIST_WEBHOOKS,
+	static readonly AllListActions: string[] = [
+		CodePipelineActions.ListPipelineExecutions,
+		CodePipelineActions.ListPipelines,
+		CodePipelineActions.ListWebhooks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodePipelineActions.TAG_RESOURCE,
-		CodePipelineActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodePipelineActions.TagResource,
+		CodePipelineActions.UntagResource,
 	];
 }
 
-const ActionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)/(?<stageName>[^:/?]+)/(?<actionName>[^:/?]+)$",
-);
-const ActiontypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):actiontype:(?<owner>[^:/?]+)/(?<category>[^:/?]+)/(?<provider>[^:/?]+)/(?<version>[^:/?]+)$",
-);
-const PipelineArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)$",
-);
-const StageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)/(?<stageName>[^:/?]+)$",
-);
-const WebhookArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):webhook:(?<webhookName>[^:/?]+)$",
-);
+/**
+ * Properties for building a action ARN.
+ */
+export interface CodePipelineActionArnProps {
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** The ActionName component of the ARN. */
+	readonly actionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a action ARN.
+ */
+export interface CodePipelineActionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+	/** The StageName component. */
+	readonly stageName: string;
+	/** The ActionName component. */
+	readonly actionName: string;
+}
+
+/**
+ * Properties for building a actiontype ARN.
+ */
+export interface CodePipelineActiontypeArnProps {
+	/** The Owner component of the ARN. */
+	readonly owner: string;
+	/** The Category component of the ARN. */
+	readonly category: string;
+	/** The Provider component of the ARN. */
+	readonly provider: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a actiontype ARN.
+ */
+export interface CodePipelineActiontypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Owner component. */
+	readonly owner: string;
+	/** The Category component. */
+	readonly category: string;
+	/** The Provider component. */
+	readonly provider: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+/**
+ * Properties for building a pipeline ARN.
+ */
+export interface CodePipelinePipelineArnProps {
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipeline ARN.
+ */
+export interface CodePipelinePipelineArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+}
+
+/**
+ * Properties for building a stage ARN.
+ */
+export interface CodePipelineStageArnProps {
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stage ARN.
+ */
+export interface CodePipelineStageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+	/** The StageName component. */
+	readonly stageName: string;
+}
+
+/**
+ * Properties for building a webhook ARN.
+ */
+export interface CodePipelineWebhookArnProps {
+	/** The WebhookName component of the ARN. */
+	readonly webhookName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webhook ARN.
+ */
+export interface CodePipelineWebhookArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WebhookName component. */
+	readonly webhookName: string;
+}
+
+const ActionArnRegex =
+	/^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)\/(?<stageName>[^:/?]+)\/(?<actionName>[^:/?]+)$/;
+const ActiontypeArnRegex =
+	/^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):actiontype:(?<owner>[^:/?]+)\/(?<category>[^:/?]+)\/(?<provider>[^:/?]+)\/(?<version>[^:/?]+)$/;
+const PipelineArnRegex =
+	/^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)$/;
+const StageArnRegex =
+	/^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):(?<pipelineName>[^:/?]+)\/(?<stageName>[^:/?]+)$/;
+const WebhookArnRegex =
+	/^arn:(?<partition>[^:]+):codepipeline:(?<region>[^:]*):(?<account>[^:]*):webhook:(?<webhookName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codepipeline resources.
@@ -200,20 +357,7 @@ export class CodePipelineResources {
 	/**
 	 * Builds an ARN for the action resource.
 	 */
-	static action(props: {
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** The ActionName component of the ARN. */
-		readonly actionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static action(props: CodePipelineActionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codepipeline:${props.region ?? "*"}:${props.account ?? "*"}:${props.pipelineName}/${props.stageName}/${props.actionName}`;
 	}
 
@@ -228,14 +372,7 @@ export class CodePipelineResources {
 	 * Parses a action ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseActionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineName: string;
-		stageName: string;
-		actionName: string;
-	} {
+	static parseActionArn(arn: string): CodePipelineActionArnComponents {
 		const match = ActionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid action ARN: ${arn}`);
@@ -253,22 +390,7 @@ export class CodePipelineResources {
 	/**
 	 * Builds an ARN for the actiontype resource.
 	 */
-	static actiontype(props: {
-		/** The Owner component of the ARN. */
-		readonly owner: string;
-		/** The Category component of the ARN. */
-		readonly category: string;
-		/** The Provider component of the ARN. */
-		readonly provider: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static actiontype(props: CodePipelineActiontypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codepipeline:${props.region ?? "*"}:${props.account ?? "*"}:actiontype:${props.owner}/${props.category}/${props.provider}/${props.version}`;
 	}
 
@@ -283,15 +405,7 @@ export class CodePipelineResources {
 	 * Parses a actiontype ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseActiontypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		owner: string;
-		category: string;
-		provider: string;
-		version: string;
-	} {
+	static parseActiontypeArn(arn: string): CodePipelineActiontypeArnComponents {
 		const match = ActiontypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid actiontype ARN: ${arn}`);
@@ -310,16 +424,7 @@ export class CodePipelineResources {
 	/**
 	 * Builds an ARN for the pipeline resource.
 	 */
-	static pipeline(props: {
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipeline(props: CodePipelinePipelineArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codepipeline:${props.region ?? "*"}:${props.account ?? "*"}:${props.pipelineName}`;
 	}
 
@@ -334,12 +439,7 @@ export class CodePipelineResources {
 	 * Parses a pipeline ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipelineArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineName: string;
-	} {
+	static parsePipelineArn(arn: string): CodePipelinePipelineArnComponents {
 		const match = PipelineArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipeline ARN: ${arn}`);
@@ -355,18 +455,7 @@ export class CodePipelineResources {
 	/**
 	 * Builds an ARN for the stage resource.
 	 */
-	static stage(props: {
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stage(props: CodePipelineStageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codepipeline:${props.region ?? "*"}:${props.account ?? "*"}:${props.pipelineName}/${props.stageName}`;
 	}
 
@@ -381,13 +470,7 @@ export class CodePipelineResources {
 	 * Parses a stage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineName: string;
-		stageName: string;
-	} {
+	static parseStageArn(arn: string): CodePipelineStageArnComponents {
 		const match = StageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stage ARN: ${arn}`);
@@ -404,16 +487,7 @@ export class CodePipelineResources {
 	/**
 	 * Builds an ARN for the webhook resource.
 	 */
-	static webhook(props: {
-		/** The WebhookName component of the ARN. */
-		readonly webhookName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static webhook(props: CodePipelineWebhookArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codepipeline:${props.region ?? "*"}:${props.account ?? "*"}:webhook:${props.webhookName}`;
 	}
 
@@ -428,12 +502,7 @@ export class CodePipelineResources {
 	 * Parses a webhook ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWebhookArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		webhookName: string;
-	} {
+	static parseWebhookArn(arn: string): CodePipelineWebhookArnComponents {
 		const match = WebhookArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid webhook ARN: ${arn}`);
@@ -452,159 +521,157 @@ export class CodePipelineResources {
  */
 export class CodePipelineOperations {
 	/** IAM actions required for the AcknowledgeJob API call. */
-	static readonly ACKNOWLEDGE_JOB: string[] = ["codepipeline:AcknowledgeJob"];
+	static readonly AcknowledgeJob: string[] = ["codepipeline:AcknowledgeJob"];
 	/** IAM actions required for the AcknowledgeThirdPartyJob API call. */
-	static readonly ACKNOWLEDGE_THIRD_PARTY_JOB: string[] = [
+	static readonly AcknowledgeThirdPartyJob: string[] = [
 		"codepipeline:AcknowledgeThirdPartyJob",
 	];
 	/** IAM actions required for the CreateCustomActionType API call. */
-	static readonly CREATE_CUSTOM_ACTION_TYPE: string[] = [
+	static readonly CreateCustomActionType: string[] = [
 		"codepipeline:CreateCustomActionType",
 		"codepipeline:TagResource",
 	];
 	/** IAM actions required for the CreatePipeline API call. */
-	static readonly CREATE_PIPELINE: string[] = [
+	static readonly CreatePipeline: string[] = [
 		"codepipeline:CreatePipeline",
 		"codestar-connections:PassConnection",
 		"iam:PassRole",
 		"codepipeline:TagResource",
 	];
 	/** IAM actions required for the DeleteCustomActionType API call. */
-	static readonly DELETE_CUSTOM_ACTION_TYPE: string[] = [
+	static readonly DeleteCustomActionType: string[] = [
 		"codepipeline:DeleteCustomActionType",
 	];
 	/** IAM actions required for the DeletePipeline API call. */
-	static readonly DELETE_PIPELINE: string[] = ["codepipeline:DeletePipeline"];
+	static readonly DeletePipeline: string[] = ["codepipeline:DeletePipeline"];
 	/** IAM actions required for the DeleteWebhook API call. */
-	static readonly DELETE_WEBHOOK: string[] = ["codepipeline:DeleteWebhook"];
+	static readonly DeleteWebhook: string[] = ["codepipeline:DeleteWebhook"];
 	/** IAM actions required for the DeregisterWebhookWithThirdParty API call. */
-	static readonly DEREGISTER_WEBHOOK_WITH_THIRD_PARTY: string[] = [
+	static readonly DeregisterWebhookWithThirdParty: string[] = [
 		"codepipeline:DeregisterWebhookWithThirdParty",
 	];
 	/** IAM actions required for the DisableStageTransition API call. */
-	static readonly DISABLE_STAGE_TRANSITION: string[] = [
+	static readonly DisableStageTransition: string[] = [
 		"codepipeline:DisableStageTransition",
 	];
 	/** IAM actions required for the EnableStageTransition API call. */
-	static readonly ENABLE_STAGE_TRANSITION: string[] = [
+	static readonly EnableStageTransition: string[] = [
 		"codepipeline:EnableStageTransition",
 	];
 	/** IAM actions required for the GetActionType API call. */
-	static readonly GET_ACTION_TYPE: string[] = ["codepipeline:GetActionType"];
+	static readonly opGetActionType: string[] = ["codepipeline:GetActionType"];
 	/** IAM actions required for the GetJobDetails API call. */
-	static readonly GET_JOB_DETAILS: string[] = ["codepipeline:GetJobDetails"];
+	static readonly opGetJobDetails: string[] = ["codepipeline:GetJobDetails"];
 	/** IAM actions required for the GetPipeline API call. */
-	static readonly GET_PIPELINE: string[] = ["codepipeline:GetPipeline"];
+	static readonly opGetPipeline: string[] = ["codepipeline:GetPipeline"];
 	/** IAM actions required for the GetPipelineExecution API call. */
-	static readonly GET_PIPELINE_EXECUTION: string[] = [
+	static readonly opGetPipelineExecution: string[] = [
 		"codepipeline:GetPipelineExecution",
 	];
 	/** IAM actions required for the GetPipelineState API call. */
-	static readonly GET_PIPELINE_STATE: string[] = [
+	static readonly opGetPipelineState: string[] = [
 		"codepipeline:GetPipelineState",
 	];
 	/** IAM actions required for the GetThirdPartyJobDetails API call. */
-	static readonly GET_THIRD_PARTY_JOB_DETAILS: string[] = [
+	static readonly opGetThirdPartyJobDetails: string[] = [
 		"codepipeline:GetThirdPartyJobDetails",
 	];
 	/** IAM actions required for the ListActionExecutions API call. */
-	static readonly LIST_ACTION_EXECUTIONS: string[] = [
+	static readonly ListActionExecutions: string[] = [
 		"codepipeline:ListActionExecutions",
 	];
 	/** IAM actions required for the ListActionTypes API call. */
-	static readonly LIST_ACTION_TYPES: string[] = [
-		"codepipeline:ListActionTypes",
-	];
+	static readonly ListActionTypes: string[] = ["codepipeline:ListActionTypes"];
 	/** IAM actions required for the ListDeployActionExecutionTargets API call. */
-	static readonly LIST_DEPLOY_ACTION_EXECUTION_TARGETS: string[] = [
+	static readonly ListDeployActionExecutionTargets: string[] = [
 		"codepipeline:ListDeployActionExecutionTargets",
 	];
 	/** IAM actions required for the ListPipelineExecutions API call. */
-	static readonly LIST_PIPELINE_EXECUTIONS: string[] = [
+	static readonly ListPipelineExecutions: string[] = [
 		"codepipeline:ListPipelineExecutions",
 	];
 	/** IAM actions required for the ListPipelines API call. */
-	static readonly LIST_PIPELINES: string[] = ["codepipeline:ListPipelines"];
+	static readonly ListPipelines: string[] = ["codepipeline:ListPipelines"];
 	/** IAM actions required for the ListRuleExecutions API call. */
-	static readonly LIST_RULE_EXECUTIONS: string[] = [
+	static readonly ListRuleExecutions: string[] = [
 		"codepipeline:ListRuleExecutions",
 	];
 	/** IAM actions required for the ListRuleTypes API call. */
-	static readonly LIST_RULE_TYPES: string[] = ["codepipeline:ListRuleTypes"];
+	static readonly ListRuleTypes: string[] = ["codepipeline:ListRuleTypes"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"codepipeline:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWebhooks API call. */
-	static readonly LIST_WEBHOOKS: string[] = ["codepipeline:ListWebhooks"];
+	static readonly ListWebhooks: string[] = ["codepipeline:ListWebhooks"];
 	/** IAM actions required for the OverrideStageCondition API call. */
-	static readonly OVERRIDE_STAGE_CONDITION: string[] = [
+	static readonly OverrideStageCondition: string[] = [
 		"codepipeline:OverrideStageCondition",
 	];
 	/** IAM actions required for the PollForJobs API call. */
-	static readonly POLL_FOR_JOBS: string[] = ["codepipeline:PollForJobs"];
+	static readonly PollForJobs: string[] = ["codepipeline:PollForJobs"];
 	/** IAM actions required for the PollForThirdPartyJobs API call. */
-	static readonly POLL_FOR_THIRD_PARTY_JOBS: string[] = [
+	static readonly PollForThirdPartyJobs: string[] = [
 		"codepipeline:PollForThirdPartyJobs",
 	];
 	/** IAM actions required for the PutActionRevision API call. */
-	static readonly PUT_ACTION_REVISION: string[] = [
+	static readonly PutActionRevision: string[] = [
 		"codepipeline:PutActionRevision",
 	];
 	/** IAM actions required for the PutApprovalResult API call. */
-	static readonly PUT_APPROVAL_RESULT: string[] = [
+	static readonly PutApprovalResult: string[] = [
 		"codepipeline:PutApprovalResult",
 	];
 	/** IAM actions required for the PutJobFailureResult API call. */
-	static readonly PUT_JOB_FAILURE_RESULT: string[] = [
+	static readonly PutJobFailureResult: string[] = [
 		"codepipeline:PutJobFailureResult",
 	];
 	/** IAM actions required for the PutJobSuccessResult API call. */
-	static readonly PUT_JOB_SUCCESS_RESULT: string[] = [
+	static readonly PutJobSuccessResult: string[] = [
 		"codepipeline:PutJobSuccessResult",
 	];
 	/** IAM actions required for the PutThirdPartyJobFailureResult API call. */
-	static readonly PUT_THIRD_PARTY_JOB_FAILURE_RESULT: string[] = [
+	static readonly PutThirdPartyJobFailureResult: string[] = [
 		"codepipeline:PutThirdPartyJobFailureResult",
 	];
 	/** IAM actions required for the PutThirdPartyJobSuccessResult API call. */
-	static readonly PUT_THIRD_PARTY_JOB_SUCCESS_RESULT: string[] = [
+	static readonly PutThirdPartyJobSuccessResult: string[] = [
 		"codepipeline:PutThirdPartyJobSuccessResult",
 	];
 	/** IAM actions required for the PutWebhook API call. */
-	static readonly PUT_WEBHOOK: string[] = [
+	static readonly PutWebhook: string[] = [
 		"codepipeline:PutWebhook",
 		"codepipeline:TagResource",
 		"codepipeline:UntagResource",
 	];
 	/** IAM actions required for the RegisterWebhookWithThirdParty API call. */
-	static readonly REGISTER_WEBHOOK_WITH_THIRD_PARTY: string[] = [
+	static readonly RegisterWebhookWithThirdParty: string[] = [
 		"codepipeline:RegisterWebhookWithThirdParty",
 	];
 	/** IAM actions required for the RetryStageExecution API call. */
-	static readonly RETRY_STAGE_EXECUTION: string[] = [
+	static readonly RetryStageExecution: string[] = [
 		"codepipeline:RetryStageExecution",
 	];
 	/** IAM actions required for the RollbackStage API call. */
-	static readonly ROLLBACK_STAGE: string[] = ["codepipeline:RollbackStage"];
+	static readonly RollbackStage: string[] = ["codepipeline:RollbackStage"];
 	/** IAM actions required for the StartPipelineExecution API call. */
-	static readonly START_PIPELINE_EXECUTION: string[] = [
+	static readonly StartPipelineExecution: string[] = [
 		"codepipeline:StartPipelineExecution",
 	];
 	/** IAM actions required for the StopPipelineExecution API call. */
-	static readonly STOP_PIPELINE_EXECUTION: string[] = [
+	static readonly StopPipelineExecution: string[] = [
 		"codepipeline:StopPipelineExecution",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["codepipeline:TagResource"];
+	static readonly TagResource: string[] = ["codepipeline:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["codepipeline:UntagResource"];
+	static readonly UntagResource: string[] = ["codepipeline:UntagResource"];
 	/** IAM actions required for the UpdateActionType API call. */
-	static readonly UPDATE_ACTION_TYPE: string[] = [
+	static readonly UpdateActionType: string[] = [
 		"codepipeline:UpdateActionType",
 	];
 	/** IAM actions required for the UpdatePipeline API call. */
-	static readonly UPDATE_PIPELINE: string[] = [
+	static readonly UpdatePipeline: string[] = [
 		"codestar-connections:PassConnection",
 		"iam:PassRole",
 		"codepipeline:UpdatePipeline",
@@ -616,34 +683,34 @@ export class CodePipelineOperations {
  */
 export class CodePipelineConditions {
 	/** Condition keys applicable to the CreateCustomActionType action. */
-	static readonly CREATE_CUSTOM_ACTION_TYPE_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomActionTypeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePipeline action. */
-	static readonly CREATE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly CreatePipelineConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutWebhook action. */
-	static readonly PUT_WEBHOOK_CONDITION_KEYS: string[] = [
+	static readonly PutWebhookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,152 +13,210 @@ export class AccessAnalyzerActions {
 	static readonly SERVICE_PREFIX = "access-analyzer";
 
 	/** [Write] access-analyzer:ApplyArchiveRule */
-	static readonly APPLY_ARCHIVE_RULE = "access-analyzer:ApplyArchiveRule";
+	static readonly ApplyArchiveRule = "access-analyzer:ApplyArchiveRule";
 	/** [Write] access-analyzer:CancelPolicyGeneration */
-	static readonly CANCEL_POLICY_GENERATION =
+	static readonly CancelPolicyGeneration =
 		"access-analyzer:CancelPolicyGeneration";
 	/** [Read] access-analyzer:CheckAccessNotGranted */
-	static readonly CHECK_ACCESS_NOT_GRANTED =
+	static readonly CheckAccessNotGranted =
 		"access-analyzer:CheckAccessNotGranted";
 	/** [Read] access-analyzer:CheckNoNewAccess */
-	static readonly CHECK_NO_NEW_ACCESS = "access-analyzer:CheckNoNewAccess";
+	static readonly CheckNoNewAccess = "access-analyzer:CheckNoNewAccess";
 	/** [Read] access-analyzer:CheckNoPublicAccess */
-	static readonly CHECK_NO_PUBLIC_ACCESS =
-		"access-analyzer:CheckNoPublicAccess";
+	static readonly CheckNoPublicAccess = "access-analyzer:CheckNoPublicAccess";
 	/** [Write] access-analyzer:CreateAccessPreview */
-	static readonly CREATE_ACCESS_PREVIEW = "access-analyzer:CreateAccessPreview";
+	static readonly CreateAccessPreview = "access-analyzer:CreateAccessPreview";
 	/** [Write] access-analyzer:CreateAnalyzer */
-	static readonly CREATE_ANALYZER = "access-analyzer:CreateAnalyzer";
+	static readonly CreateAnalyzer = "access-analyzer:CreateAnalyzer";
 	/** [Write] access-analyzer:CreateArchiveRule */
-	static readonly CREATE_ARCHIVE_RULE = "access-analyzer:CreateArchiveRule";
+	static readonly CreateArchiveRule = "access-analyzer:CreateArchiveRule";
 	/** [Write] access-analyzer:CreateServiceLinkedAnalyzer */
-	static readonly CREATE_SERVICE_LINKED_ANALYZER =
+	static readonly CreateServiceLinkedAnalyzer =
 		"access-analyzer:CreateServiceLinkedAnalyzer";
 	/** [Write] access-analyzer:DeleteAnalyzer */
-	static readonly DELETE_ANALYZER = "access-analyzer:DeleteAnalyzer";
+	static readonly DeleteAnalyzer = "access-analyzer:DeleteAnalyzer";
 	/** [Write] access-analyzer:DeleteArchiveRule */
-	static readonly DELETE_ARCHIVE_RULE = "access-analyzer:DeleteArchiveRule";
+	static readonly DeleteArchiveRule = "access-analyzer:DeleteArchiveRule";
 	/** [Write] access-analyzer:DeleteServiceLinkedAnalyzer */
-	static readonly DELETE_SERVICE_LINKED_ANALYZER =
+	static readonly DeleteServiceLinkedAnalyzer =
 		"access-analyzer:DeleteServiceLinkedAnalyzer";
 	/** [Write] access-analyzer:GenerateFindingRecommendation */
-	static readonly GENERATE_FINDING_RECOMMENDATION =
+	static readonly GenerateFindingRecommendation =
 		"access-analyzer:GenerateFindingRecommendation";
 	/** [Read] access-analyzer:GetAccessPreview */
-	static readonly GET_ACCESS_PREVIEW = "access-analyzer:GetAccessPreview";
+	static readonly actionGetAccessPreview = "access-analyzer:GetAccessPreview";
 	/** [Read] access-analyzer:GetAnalyzedResource */
-	static readonly GET_ANALYZED_RESOURCE = "access-analyzer:GetAnalyzedResource";
+	static readonly actionGetAnalyzedResource =
+		"access-analyzer:GetAnalyzedResource";
 	/** [Read] access-analyzer:GetAnalyzer */
-	static readonly GET_ANALYZER = "access-analyzer:GetAnalyzer";
+	static readonly actionGetAnalyzer = "access-analyzer:GetAnalyzer";
 	/** [Read] access-analyzer:GetArchiveRule */
-	static readonly GET_ARCHIVE_RULE = "access-analyzer:GetArchiveRule";
+	static readonly actionGetArchiveRule = "access-analyzer:GetArchiveRule";
 	/** [Read] access-analyzer:GetFinding */
-	static readonly GET_FINDING = "access-analyzer:GetFinding";
+	static readonly actionGetFinding = "access-analyzer:GetFinding";
 	/** [Read] access-analyzer:GetFindingRecommendation */
-	static readonly GET_FINDING_RECOMMENDATION =
+	static readonly actionGetFindingRecommendation =
 		"access-analyzer:GetFindingRecommendation";
 	/** [Read] access-analyzer:GetFindingsStatistics */
-	static readonly GET_FINDINGS_STATISTICS =
+	static readonly actionGetFindingsStatistics =
 		"access-analyzer:GetFindingsStatistics";
 	/** [Read] access-analyzer:GetGeneratedPolicy */
-	static readonly GET_GENERATED_POLICY = "access-analyzer:GetGeneratedPolicy";
+	static readonly actionGetGeneratedPolicy =
+		"access-analyzer:GetGeneratedPolicy";
 	/** [Read] access-analyzer:ListAccessPreviewFindings */
-	static readonly LIST_ACCESS_PREVIEW_FINDINGS =
+	static readonly ListAccessPreviewFindings =
 		"access-analyzer:ListAccessPreviewFindings";
 	/** [List] access-analyzer:ListAccessPreviews */
-	static readonly LIST_ACCESS_PREVIEWS = "access-analyzer:ListAccessPreviews";
+	static readonly ListAccessPreviews = "access-analyzer:ListAccessPreviews";
 	/** [Read] access-analyzer:ListAnalyzedResources */
-	static readonly LIST_ANALYZED_RESOURCES =
+	static readonly ListAnalyzedResources =
 		"access-analyzer:ListAnalyzedResources";
 	/** [List] access-analyzer:ListAnalyzers */
-	static readonly LIST_ANALYZERS = "access-analyzer:ListAnalyzers";
+	static readonly ListAnalyzers = "access-analyzer:ListAnalyzers";
 	/** [List] access-analyzer:ListArchiveRules */
-	static readonly LIST_ARCHIVE_RULES = "access-analyzer:ListArchiveRules";
+	static readonly ListArchiveRules = "access-analyzer:ListArchiveRules";
 	/** [Read] access-analyzer:ListFindings */
-	static readonly LIST_FINDINGS = "access-analyzer:ListFindings";
+	static readonly ListFindings = "access-analyzer:ListFindings";
 	/** [Read] access-analyzer:ListPolicyGenerations */
-	static readonly LIST_POLICY_GENERATIONS =
+	static readonly ListPolicyGenerations =
 		"access-analyzer:ListPolicyGenerations";
 	/** [Read] access-analyzer:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"access-analyzer:ListTagsForResource";
+	static readonly ListTagsForResource = "access-analyzer:ListTagsForResource";
 	/** [Write] access-analyzer:StartPolicyGeneration */
-	static readonly START_POLICY_GENERATION =
+	static readonly StartPolicyGeneration =
 		"access-analyzer:StartPolicyGeneration";
 	/** [Write] access-analyzer:StartResourceScan */
-	static readonly START_RESOURCE_SCAN = "access-analyzer:StartResourceScan";
+	static readonly StartResourceScan = "access-analyzer:StartResourceScan";
 	/** [Tagging] access-analyzer:TagResource */
-	static readonly TAG_RESOURCE = "access-analyzer:TagResource";
+	static readonly TagResource = "access-analyzer:TagResource";
 	/** [Tagging] access-analyzer:UntagResource */
-	static readonly UNTAG_RESOURCE = "access-analyzer:UntagResource";
+	static readonly UntagResource = "access-analyzer:UntagResource";
 	/** [Write] access-analyzer:UpdateAnalyzer */
-	static readonly UPDATE_ANALYZER = "access-analyzer:UpdateAnalyzer";
+	static readonly UpdateAnalyzer = "access-analyzer:UpdateAnalyzer";
 	/** [Write] access-analyzer:UpdateArchiveRule */
-	static readonly UPDATE_ARCHIVE_RULE = "access-analyzer:UpdateArchiveRule";
+	static readonly UpdateArchiveRule = "access-analyzer:UpdateArchiveRule";
 	/** [Write] access-analyzer:UpdateFindings */
-	static readonly UPDATE_FINDINGS = "access-analyzer:UpdateFindings";
+	static readonly UpdateFindings = "access-analyzer:UpdateFindings";
 	/** [Read] access-analyzer:ValidatePolicy */
-	static readonly VALIDATE_POLICY = "access-analyzer:ValidatePolicy";
+	static readonly ValidatePolicy = "access-analyzer:ValidatePolicy";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AccessAnalyzerActions.CHECK_ACCESS_NOT_GRANTED,
-		AccessAnalyzerActions.CHECK_NO_NEW_ACCESS,
-		AccessAnalyzerActions.CHECK_NO_PUBLIC_ACCESS,
-		AccessAnalyzerActions.GET_ACCESS_PREVIEW,
-		AccessAnalyzerActions.GET_ANALYZED_RESOURCE,
-		AccessAnalyzerActions.GET_ANALYZER,
-		AccessAnalyzerActions.GET_ARCHIVE_RULE,
-		AccessAnalyzerActions.GET_FINDING,
-		AccessAnalyzerActions.GET_FINDING_RECOMMENDATION,
-		AccessAnalyzerActions.GET_FINDINGS_STATISTICS,
-		AccessAnalyzerActions.GET_GENERATED_POLICY,
-		AccessAnalyzerActions.LIST_ACCESS_PREVIEW_FINDINGS,
-		AccessAnalyzerActions.LIST_ANALYZED_RESOURCES,
-		AccessAnalyzerActions.LIST_FINDINGS,
-		AccessAnalyzerActions.LIST_POLICY_GENERATIONS,
-		AccessAnalyzerActions.LIST_TAGS_FOR_RESOURCE,
-		AccessAnalyzerActions.VALIDATE_POLICY,
+	static readonly AllReadActions: string[] = [
+		AccessAnalyzerActions.CheckAccessNotGranted,
+		AccessAnalyzerActions.CheckNoNewAccess,
+		AccessAnalyzerActions.CheckNoPublicAccess,
+		AccessAnalyzerActions.actionGetAccessPreview,
+		AccessAnalyzerActions.actionGetAnalyzedResource,
+		AccessAnalyzerActions.actionGetAnalyzer,
+		AccessAnalyzerActions.actionGetArchiveRule,
+		AccessAnalyzerActions.actionGetFinding,
+		AccessAnalyzerActions.actionGetFindingRecommendation,
+		AccessAnalyzerActions.actionGetFindingsStatistics,
+		AccessAnalyzerActions.actionGetGeneratedPolicy,
+		AccessAnalyzerActions.ListAccessPreviewFindings,
+		AccessAnalyzerActions.ListAnalyzedResources,
+		AccessAnalyzerActions.ListFindings,
+		AccessAnalyzerActions.ListPolicyGenerations,
+		AccessAnalyzerActions.ListTagsForResource,
+		AccessAnalyzerActions.ValidatePolicy,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AccessAnalyzerActions.APPLY_ARCHIVE_RULE,
-		AccessAnalyzerActions.CANCEL_POLICY_GENERATION,
-		AccessAnalyzerActions.CREATE_ACCESS_PREVIEW,
-		AccessAnalyzerActions.CREATE_ANALYZER,
-		AccessAnalyzerActions.CREATE_ARCHIVE_RULE,
-		AccessAnalyzerActions.CREATE_SERVICE_LINKED_ANALYZER,
-		AccessAnalyzerActions.DELETE_ANALYZER,
-		AccessAnalyzerActions.DELETE_ARCHIVE_RULE,
-		AccessAnalyzerActions.DELETE_SERVICE_LINKED_ANALYZER,
-		AccessAnalyzerActions.GENERATE_FINDING_RECOMMENDATION,
-		AccessAnalyzerActions.START_POLICY_GENERATION,
-		AccessAnalyzerActions.START_RESOURCE_SCAN,
-		AccessAnalyzerActions.UPDATE_ANALYZER,
-		AccessAnalyzerActions.UPDATE_ARCHIVE_RULE,
-		AccessAnalyzerActions.UPDATE_FINDINGS,
+	static readonly AllWriteActions: string[] = [
+		AccessAnalyzerActions.ApplyArchiveRule,
+		AccessAnalyzerActions.CancelPolicyGeneration,
+		AccessAnalyzerActions.CreateAccessPreview,
+		AccessAnalyzerActions.CreateAnalyzer,
+		AccessAnalyzerActions.CreateArchiveRule,
+		AccessAnalyzerActions.CreateServiceLinkedAnalyzer,
+		AccessAnalyzerActions.DeleteAnalyzer,
+		AccessAnalyzerActions.DeleteArchiveRule,
+		AccessAnalyzerActions.DeleteServiceLinkedAnalyzer,
+		AccessAnalyzerActions.GenerateFindingRecommendation,
+		AccessAnalyzerActions.StartPolicyGeneration,
+		AccessAnalyzerActions.StartResourceScan,
+		AccessAnalyzerActions.UpdateAnalyzer,
+		AccessAnalyzerActions.UpdateArchiveRule,
+		AccessAnalyzerActions.UpdateFindings,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AccessAnalyzerActions.LIST_ACCESS_PREVIEWS,
-		AccessAnalyzerActions.LIST_ANALYZERS,
-		AccessAnalyzerActions.LIST_ARCHIVE_RULES,
+	static readonly AllListActions: string[] = [
+		AccessAnalyzerActions.ListAccessPreviews,
+		AccessAnalyzerActions.ListAnalyzers,
+		AccessAnalyzerActions.ListArchiveRules,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AccessAnalyzerActions.TAG_RESOURCE,
-		AccessAnalyzerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AccessAnalyzerActions.TagResource,
+		AccessAnalyzerActions.UntagResource,
 	];
 }
 
-const AnalyzerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):access-analyzer:(?<region>[^:]*):(?<account>[^:]*):analyzer/(?<analyzerName>[^:/?]+)$",
-);
-const ArchiveRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):access-analyzer:(?<region>[^:]*):(?<account>[^:]*):analyzer/(?<analyzerName>[^:/?]+)/archive-rule/(?<ruleName>[^:/?]+)$",
-);
+/**
+ * Properties for building a Analyzer ARN.
+ */
+export interface AccessAnalyzerAnalyzerArnProps {
+	/** The AnalyzerName component of the ARN. */
+	readonly analyzerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Analyzer ARN.
+ */
+export interface AccessAnalyzerAnalyzerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnalyzerName component. */
+	readonly analyzerName: string;
+}
+
+/**
+ * Properties for building a ArchiveRule ARN.
+ */
+export interface AccessAnalyzerArchiveRuleArnProps {
+	/** The AnalyzerName component of the ARN. */
+	readonly analyzerName: string;
+	/** The RuleName component of the ARN. */
+	readonly ruleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ArchiveRule ARN.
+ */
+export interface AccessAnalyzerArchiveRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnalyzerName component. */
+	readonly analyzerName: string;
+	/** The RuleName component. */
+	readonly ruleName: string;
+}
+
+const AnalyzerArnRegex =
+	/^arn:(?<partition>[^:]+):access-analyzer:(?<region>[^:]*):(?<account>[^:]*):analyzer\/(?<analyzerName>[^:/?]+)$/;
+const ArchiveRuleArnRegex =
+	/^arn:(?<partition>[^:]+):access-analyzer:(?<region>[^:]*):(?<account>[^:]*):analyzer\/(?<analyzerName>[^:/?]+)\/archive-rule\/(?<ruleName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for access-analyzer resources.
@@ -167,16 +225,7 @@ export class AccessAnalyzerResources {
 	/**
 	 * Builds an ARN for the Analyzer resource.
 	 */
-	static analyzer(props: {
-		/** The AnalyzerName component of the ARN. */
-		readonly analyzerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static analyzer(props: AccessAnalyzerAnalyzerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:access-analyzer:${props.region ?? "*"}:${props.account ?? "*"}:analyzer/${props.analyzerName}`;
 	}
 
@@ -191,12 +240,7 @@ export class AccessAnalyzerResources {
 	 * Parses a Analyzer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnalyzerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		analyzerName: string;
-	} {
+	static parseAnalyzerArn(arn: string): AccessAnalyzerAnalyzerArnComponents {
 		const match = AnalyzerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Analyzer ARN: ${arn}`);
@@ -212,18 +256,7 @@ export class AccessAnalyzerResources {
 	/**
 	 * Builds an ARN for the ArchiveRule resource.
 	 */
-	static archiveRule(props: {
-		/** The AnalyzerName component of the ARN. */
-		readonly analyzerName: string;
-		/** The RuleName component of the ARN. */
-		readonly ruleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static archiveRule(props: AccessAnalyzerArchiveRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:access-analyzer:${props.region ?? "*"}:${props.account ?? "*"}:analyzer/${props.analyzerName}/archive-rule/${props.ruleName}`;
 	}
 
@@ -238,13 +271,9 @@ export class AccessAnalyzerResources {
 	 * Parses a ArchiveRule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseArchiveRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		analyzerName: string;
-		ruleName: string;
-	} {
+	static parseArchiveRuleArn(
+		arn: string,
+	): AccessAnalyzerArchiveRuleArnComponents {
 		const match = ArchiveRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ArchiveRule ARN: ${arn}`);
@@ -264,147 +293,139 @@ export class AccessAnalyzerResources {
  */
 export class AccessAnalyzerOperations {
 	/** IAM actions required for the ApplyArchiveRule API call. */
-	static readonly APPLY_ARCHIVE_RULE: string[] = [
+	static readonly ApplyArchiveRule: string[] = [
 		"access-analyzer:ApplyArchiveRule",
 	];
 	/** IAM actions required for the CancelPolicyGeneration API call. */
-	static readonly CANCEL_POLICY_GENERATION: string[] = [
+	static readonly CancelPolicyGeneration: string[] = [
 		"access-analyzer:CancelPolicyGeneration",
 	];
 	/** IAM actions required for the CheckAccessNotGranted API call. */
-	static readonly CHECK_ACCESS_NOT_GRANTED: string[] = [
+	static readonly CheckAccessNotGranted: string[] = [
 		"access-analyzer:CheckAccessNotGranted",
 	];
 	/** IAM actions required for the CheckNoNewAccess API call. */
-	static readonly CHECK_NO_NEW_ACCESS: string[] = [
+	static readonly CheckNoNewAccess: string[] = [
 		"access-analyzer:CheckNoNewAccess",
 	];
 	/** IAM actions required for the CheckNoPublicAccess API call. */
-	static readonly CHECK_NO_PUBLIC_ACCESS: string[] = [
+	static readonly CheckNoPublicAccess: string[] = [
 		"access-analyzer:CheckNoPublicAccess",
 	];
 	/** IAM actions required for the CreateAccessPreview API call. */
-	static readonly CREATE_ACCESS_PREVIEW: string[] = [
+	static readonly CreateAccessPreview: string[] = [
 		"access-analyzer:CreateAccessPreview",
 	];
 	/** IAM actions required for the CreateAnalyzer API call. */
-	static readonly CREATE_ANALYZER: string[] = [
+	static readonly CreateAnalyzer: string[] = [
 		"access-analyzer:CreateAnalyzer",
 		"access-analyzer:TagResource",
 	];
 	/** IAM actions required for the CreateArchiveRule API call. */
-	static readonly CREATE_ARCHIVE_RULE: string[] = [
+	static readonly CreateArchiveRule: string[] = [
 		"access-analyzer:CreateArchiveRule",
 	];
 	/** IAM actions required for the CreateServiceLinkedAnalyzer API call. */
-	static readonly CREATE_SERVICE_LINKED_ANALYZER: string[] = [
+	static readonly CreateServiceLinkedAnalyzer: string[] = [
 		"access-analyzer:CreateServiceLinkedAnalyzer",
 	];
 	/** IAM actions required for the DeleteAnalyzer API call. */
-	static readonly DELETE_ANALYZER: string[] = [
-		"access-analyzer:DeleteAnalyzer",
-	];
+	static readonly DeleteAnalyzer: string[] = ["access-analyzer:DeleteAnalyzer"];
 	/** IAM actions required for the DeleteArchiveRule API call. */
-	static readonly DELETE_ARCHIVE_RULE: string[] = [
+	static readonly DeleteArchiveRule: string[] = [
 		"access-analyzer:DeleteArchiveRule",
 	];
 	/** IAM actions required for the DeleteServiceLinkedAnalyzer API call. */
-	static readonly DELETE_SERVICE_LINKED_ANALYZER: string[] = [
+	static readonly DeleteServiceLinkedAnalyzer: string[] = [
 		"access-analyzer:DeleteServiceLinkedAnalyzer",
 	];
 	/** IAM actions required for the GenerateFindingRecommendation API call. */
-	static readonly GENERATE_FINDING_RECOMMENDATION: string[] = [
+	static readonly GenerateFindingRecommendation: string[] = [
 		"access-analyzer:GenerateFindingRecommendation",
 	];
 	/** IAM actions required for the GetAccessPreview API call. */
-	static readonly GET_ACCESS_PREVIEW: string[] = [
+	static readonly opGetAccessPreview: string[] = [
 		"access-analyzer:GetAccessPreview",
 	];
 	/** IAM actions required for the GetAnalyzedResource API call. */
-	static readonly GET_ANALYZED_RESOURCE: string[] = [
+	static readonly opGetAnalyzedResource: string[] = [
 		"access-analyzer:GetAnalyzedResource",
 	];
 	/** IAM actions required for the GetAnalyzer API call. */
-	static readonly GET_ANALYZER: string[] = ["access-analyzer:GetAnalyzer"];
+	static readonly opGetAnalyzer: string[] = ["access-analyzer:GetAnalyzer"];
 	/** IAM actions required for the GetArchiveRule API call. */
-	static readonly GET_ARCHIVE_RULE: string[] = [
+	static readonly opGetArchiveRule: string[] = [
 		"access-analyzer:GetArchiveRule",
 	];
 	/** IAM actions required for the GetFinding API call. */
-	static readonly GET_FINDING: string[] = ["access-analyzer:GetFinding"];
+	static readonly opGetFinding: string[] = ["access-analyzer:GetFinding"];
 	/** IAM actions required for the GetFindingRecommendation API call. */
-	static readonly GET_FINDING_RECOMMENDATION: string[] = [
+	static readonly opGetFindingRecommendation: string[] = [
 		"access-analyzer:GetFindingRecommendation",
 	];
 	/** IAM actions required for the GetFindingV2 API call. */
-	static readonly GET_FINDING_V2: string[] = ["access-analyzer:GetFinding"];
+	static readonly opGetFindingV2: string[] = ["access-analyzer:GetFinding"];
 	/** IAM actions required for the GetFindingsStatistics API call. */
-	static readonly GET_FINDINGS_STATISTICS: string[] = [
+	static readonly opGetFindingsStatistics: string[] = [
 		"access-analyzer:GetFindingsStatistics",
 	];
 	/** IAM actions required for the GetGeneratedPolicy API call. */
-	static readonly GET_GENERATED_POLICY: string[] = [
+	static readonly opGetGeneratedPolicy: string[] = [
 		"access-analyzer:GetGeneratedPolicy",
 	];
 	/** IAM actions required for the ListAccessPreviewFindings API call. */
-	static readonly LIST_ACCESS_PREVIEW_FINDINGS: string[] = [
+	static readonly ListAccessPreviewFindings: string[] = [
 		"access-analyzer:ListAccessPreviewFindings",
 	];
 	/** IAM actions required for the ListAccessPreviews API call. */
-	static readonly LIST_ACCESS_PREVIEWS: string[] = [
+	static readonly ListAccessPreviews: string[] = [
 		"access-analyzer:ListAccessPreviews",
 	];
 	/** IAM actions required for the ListAnalyzedResources API call. */
-	static readonly LIST_ANALYZED_RESOURCES: string[] = [
+	static readonly ListAnalyzedResources: string[] = [
 		"access-analyzer:ListAnalyzedResources",
 	];
 	/** IAM actions required for the ListAnalyzers API call. */
-	static readonly LIST_ANALYZERS: string[] = ["access-analyzer:ListAnalyzers"];
+	static readonly ListAnalyzers: string[] = ["access-analyzer:ListAnalyzers"];
 	/** IAM actions required for the ListArchiveRules API call. */
-	static readonly LIST_ARCHIVE_RULES: string[] = [
+	static readonly ListArchiveRules: string[] = [
 		"access-analyzer:ListArchiveRules",
 	];
 	/** IAM actions required for the ListFindings API call. */
-	static readonly LIST_FINDINGS: string[] = ["access-analyzer:ListFindings"];
+	static readonly ListFindings: string[] = ["access-analyzer:ListFindings"];
 	/** IAM actions required for the ListFindingsV2 API call. */
-	static readonly LIST_FINDINGS_V2: string[] = ["access-analyzer:ListFindings"];
+	static readonly ListFindingsV2: string[] = ["access-analyzer:ListFindings"];
 	/** IAM actions required for the ListPolicyGenerations API call. */
-	static readonly LIST_POLICY_GENERATIONS: string[] = [
+	static readonly ListPolicyGenerations: string[] = [
 		"access-analyzer:ListPolicyGenerations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"access-analyzer:ListTagsForResource",
 	];
 	/** IAM actions required for the StartPolicyGeneration API call. */
-	static readonly START_POLICY_GENERATION: string[] = [
+	static readonly StartPolicyGeneration: string[] = [
 		"iam:PassRole",
 		"access-analyzer:StartPolicyGeneration",
 	];
 	/** IAM actions required for the StartResourceScan API call. */
-	static readonly START_RESOURCE_SCAN: string[] = [
+	static readonly StartResourceScan: string[] = [
 		"access-analyzer:StartResourceScan",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["access-analyzer:TagResource"];
+	static readonly TagResource: string[] = ["access-analyzer:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["access-analyzer:UntagResource"];
+	static readonly UntagResource: string[] = ["access-analyzer:UntagResource"];
 	/** IAM actions required for the UpdateAnalyzer API call. */
-	static readonly UPDATE_ANALYZER: string[] = [
-		"access-analyzer:UpdateAnalyzer",
-	];
+	static readonly UpdateAnalyzer: string[] = ["access-analyzer:UpdateAnalyzer"];
 	/** IAM actions required for the UpdateArchiveRule API call. */
-	static readonly UPDATE_ARCHIVE_RULE: string[] = [
+	static readonly UpdateArchiveRule: string[] = [
 		"access-analyzer:UpdateArchiveRule",
 	];
 	/** IAM actions required for the UpdateFindings API call. */
-	static readonly UPDATE_FINDINGS: string[] = [
-		"access-analyzer:UpdateFindings",
-	];
+	static readonly UpdateFindings: string[] = ["access-analyzer:UpdateFindings"];
 	/** IAM actions required for the ValidatePolicy API call. */
-	static readonly VALIDATE_POLICY: string[] = [
-		"access-analyzer:ValidatePolicy",
-	];
+	static readonly ValidatePolicy: string[] = ["access-analyzer:ValidatePolicy"];
 }
 
 /**
@@ -412,44 +433,44 @@ export class AccessAnalyzerOperations {
  */
 export class AccessAnalyzerConditions {
 	/** Condition keys applicable to the CreateAnalyzer action. */
-	static readonly CREATE_ANALYZER_CONDITION_KEYS: string[] = [
+	static readonly CreateAnalyzerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateServiceLinkedAnalyzer action. */
-	static readonly CREATE_SERVICE_LINKED_ANALYZER_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceLinkedAnalyzerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAnalyzer action. */
-	static readonly DELETE_ANALYZER_CONDITION_KEYS: string[] = [
+	static readonly DeleteAnalyzerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteServiceLinkedAnalyzer action. */
-	static readonly DELETE_SERVICE_LINKED_ANALYZER_CONDITION_KEYS: string[] = [
+	static readonly DeleteServiceLinkedAnalyzerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetAnalyzer action. */
-	static readonly GET_ANALYZER_CONDITION_KEYS: string[] = [
+	static readonly actionGetAnalyzerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

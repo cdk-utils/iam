@@ -13,571 +13,951 @@ export class IotsitewiseActions {
 	static readonly SERVICE_PREFIX = "iotsitewise";
 
 	/** [Write] iotsitewise:AssociateAssets */
-	static readonly ASSOCIATE_ASSETS = "iotsitewise:AssociateAssets";
+	static readonly AssociateAssets = "iotsitewise:AssociateAssets";
 	/** [Write] iotsitewise:AssociateTimeSeriesToAssetProperty */
-	static readonly ASSOCIATE_TIME_SERIES_TO_ASSET_PROPERTY =
+	static readonly AssociateTimeSeriesToAssetProperty =
 		"iotsitewise:AssociateTimeSeriesToAssetProperty";
 	/** [Write] iotsitewise:BatchAssociateDataSegmentsToDataset */
-	static readonly BATCH_ASSOCIATE_DATA_SEGMENTS_TO_DATASET =
+	static readonly BatchAssociateDataSegmentsToDataset =
 		"iotsitewise:BatchAssociateDataSegmentsToDataset";
 	/** [Write] iotsitewise:BatchAssociateProjectAssets */
-	static readonly BATCH_ASSOCIATE_PROJECT_ASSETS =
+	static readonly BatchAssociateProjectAssets =
 		"iotsitewise:BatchAssociateProjectAssets";
 	/** [Write] iotsitewise:BatchDeleteDatasetDataSegments */
-	static readonly BATCH_DELETE_DATASET_DATA_SEGMENTS =
+	static readonly BatchDeleteDatasetDataSegments =
 		"iotsitewise:BatchDeleteDatasetDataSegments";
 	/** [Write] iotsitewise:BatchDisassociateDataSegmentsFromDataset */
-	static readonly BATCH_DISASSOCIATE_DATA_SEGMENTS_FROM_DATASET =
+	static readonly BatchDisassociateDataSegmentsFromDataset =
 		"iotsitewise:BatchDisassociateDataSegmentsFromDataset";
 	/** [Write] iotsitewise:BatchDisassociateProjectAssets */
-	static readonly BATCH_DISASSOCIATE_PROJECT_ASSETS =
+	static readonly BatchDisassociateProjectAssets =
 		"iotsitewise:BatchDisassociateProjectAssets";
 	/** [Read] iotsitewise:BatchGetAssetPropertyAggregates */
-	static readonly BATCH_GET_ASSET_PROPERTY_AGGREGATES =
+	static readonly BatchGetAssetPropertyAggregates =
 		"iotsitewise:BatchGetAssetPropertyAggregates";
 	/** [Read] iotsitewise:BatchGetAssetPropertyValue */
-	static readonly BATCH_GET_ASSET_PROPERTY_VALUE =
+	static readonly BatchGetAssetPropertyValue =
 		"iotsitewise:BatchGetAssetPropertyValue";
 	/** [Read] iotsitewise:BatchGetAssetPropertyValueHistory */
-	static readonly BATCH_GET_ASSET_PROPERTY_VALUE_HISTORY =
+	static readonly BatchGetAssetPropertyValueHistory =
 		"iotsitewise:BatchGetAssetPropertyValueHistory";
 	/** [Write] iotsitewise:BatchPutAssetPropertyValue */
-	static readonly BATCH_PUT_ASSET_PROPERTY_VALUE =
+	static readonly BatchPutAssetPropertyValue =
 		"iotsitewise:BatchPutAssetPropertyValue";
 	/** [Write] iotsitewise:CancelEnrichmentJob */
-	static readonly CANCEL_ENRICHMENT_JOB = "iotsitewise:CancelEnrichmentJob";
+	static readonly CancelEnrichmentJob = "iotsitewise:CancelEnrichmentJob";
 	/** [Write] iotsitewise:CancelPipelineExecution */
-	static readonly CANCEL_PIPELINE_EXECUTION =
+	static readonly CancelPipelineExecution =
 		"iotsitewise:CancelPipelineExecution";
 	/** [Write] iotsitewise:CancelQuery */
-	static readonly CANCEL_QUERY = "iotsitewise:CancelQuery";
+	static readonly CancelQuery = "iotsitewise:CancelQuery";
 	/** [Write] iotsitewise:CreateAccessPolicy */
-	static readonly CREATE_ACCESS_POLICY = "iotsitewise:CreateAccessPolicy";
+	static readonly CreateAccessPolicy = "iotsitewise:CreateAccessPolicy";
 	/** [Write] iotsitewise:CreateApplication */
-	static readonly CREATE_APPLICATION = "iotsitewise:CreateApplication";
+	static readonly CreateApplication = "iotsitewise:CreateApplication";
 	/** [Write] iotsitewise:CreateAsset */
-	static readonly CREATE_ASSET = "iotsitewise:CreateAsset";
+	static readonly CreateAsset = "iotsitewise:CreateAsset";
 	/** [Write] iotsitewise:CreateAssetModel */
-	static readonly CREATE_ASSET_MODEL = "iotsitewise:CreateAssetModel";
+	static readonly CreateAssetModel = "iotsitewise:CreateAssetModel";
 	/** [Write] iotsitewise:CreateAssetModelCompositeModel */
-	static readonly CREATE_ASSET_MODEL_COMPOSITE_MODEL =
+	static readonly CreateAssetModelCompositeModel =
 		"iotsitewise:CreateAssetModelCompositeModel";
 	/** [Write] iotsitewise:CreateBulkImportJob */
-	static readonly CREATE_BULK_IMPORT_JOB = "iotsitewise:CreateBulkImportJob";
+	static readonly CreateBulkImportJob = "iotsitewise:CreateBulkImportJob";
 	/** [Write] iotsitewise:CreateComputationModel */
-	static readonly CREATE_COMPUTATION_MODEL =
-		"iotsitewise:CreateComputationModel";
+	static readonly CreateComputationModel = "iotsitewise:CreateComputationModel";
 	/** [Write] iotsitewise:CreateDashboard */
-	static readonly CREATE_DASHBOARD = "iotsitewise:CreateDashboard";
+	static readonly CreateDashboard = "iotsitewise:CreateDashboard";
 	/** [Write] iotsitewise:CreateDataset */
-	static readonly CREATE_DATASET = "iotsitewise:CreateDataset";
+	static readonly CreateDataset = "iotsitewise:CreateDataset";
 	/** [Write] iotsitewise:CreateDatasetExportJob */
-	static readonly CREATE_DATASET_EXPORT_JOB =
-		"iotsitewise:CreateDatasetExportJob";
+	static readonly CreateDatasetExportJob = "iotsitewise:CreateDatasetExportJob";
 	/** [Write] iotsitewise:CreateEnrichmentJob */
-	static readonly CREATE_ENRICHMENT_JOB = "iotsitewise:CreateEnrichmentJob";
+	static readonly CreateEnrichmentJob = "iotsitewise:CreateEnrichmentJob";
 	/** [Write] iotsitewise:CreateGateway */
-	static readonly CREATE_GATEWAY = "iotsitewise:CreateGateway";
+	static readonly CreateGateway = "iotsitewise:CreateGateway";
 	/** [Write] iotsitewise:CreatePipeline */
-	static readonly CREATE_PIPELINE = "iotsitewise:CreatePipeline";
+	static readonly CreatePipeline = "iotsitewise:CreatePipeline";
 	/** [Write] iotsitewise:CreatePortal */
-	static readonly CREATE_PORTAL = "iotsitewise:CreatePortal";
+	static readonly CreatePortal = "iotsitewise:CreatePortal";
 	/** [Write] iotsitewise:CreateProject */
-	static readonly CREATE_PROJECT = "iotsitewise:CreateProject";
+	static readonly CreateProject = "iotsitewise:CreateProject";
 	/** [Write] iotsitewise:CreateTask */
-	static readonly CREATE_TASK = "iotsitewise:CreateTask";
+	static readonly CreateTask = "iotsitewise:CreateTask";
 	/** [Write] iotsitewise:CreateWorkspace */
-	static readonly CREATE_WORKSPACE = "iotsitewise:CreateWorkspace";
+	static readonly CreateWorkspace = "iotsitewise:CreateWorkspace";
 	/** [Write] iotsitewise:DeleteAccessPolicy */
-	static readonly DELETE_ACCESS_POLICY = "iotsitewise:DeleteAccessPolicy";
+	static readonly DeleteAccessPolicy = "iotsitewise:DeleteAccessPolicy";
 	/** [Write] iotsitewise:DeleteApplication */
-	static readonly DELETE_APPLICATION = "iotsitewise:DeleteApplication";
+	static readonly DeleteApplication = "iotsitewise:DeleteApplication";
 	/** [Write] iotsitewise:DeleteAsset */
-	static readonly DELETE_ASSET = "iotsitewise:DeleteAsset";
+	static readonly DeleteAsset = "iotsitewise:DeleteAsset";
 	/** [Write] iotsitewise:DeleteAssetModel */
-	static readonly DELETE_ASSET_MODEL = "iotsitewise:DeleteAssetModel";
+	static readonly DeleteAssetModel = "iotsitewise:DeleteAssetModel";
 	/** [Write] iotsitewise:DeleteAssetModelCompositeModel */
-	static readonly DELETE_ASSET_MODEL_COMPOSITE_MODEL =
+	static readonly DeleteAssetModelCompositeModel =
 		"iotsitewise:DeleteAssetModelCompositeModel";
 	/** [Write] iotsitewise:DeleteAssetModelInterfaceRelationship */
-	static readonly DELETE_ASSET_MODEL_INTERFACE_RELATIONSHIP =
+	static readonly DeleteAssetModelInterfaceRelationship =
 		"iotsitewise:DeleteAssetModelInterfaceRelationship";
 	/** [Write] iotsitewise:DeleteComputationModel */
-	static readonly DELETE_COMPUTATION_MODEL =
-		"iotsitewise:DeleteComputationModel";
+	static readonly DeleteComputationModel = "iotsitewise:DeleteComputationModel";
 	/** [Write] iotsitewise:DeleteDashboard */
-	static readonly DELETE_DASHBOARD = "iotsitewise:DeleteDashboard";
+	static readonly DeleteDashboard = "iotsitewise:DeleteDashboard";
 	/** [Write] iotsitewise:DeleteDataset */
-	static readonly DELETE_DATASET = "iotsitewise:DeleteDataset";
+	static readonly DeleteDataset = "iotsitewise:DeleteDataset";
 	/** [Write] iotsitewise:DeleteGateway */
-	static readonly DELETE_GATEWAY = "iotsitewise:DeleteGateway";
+	static readonly DeleteGateway = "iotsitewise:DeleteGateway";
 	/** [Write] iotsitewise:DeletePipeline */
-	static readonly DELETE_PIPELINE = "iotsitewise:DeletePipeline";
+	static readonly DeletePipeline = "iotsitewise:DeletePipeline";
 	/** [Write] iotsitewise:DeletePortal */
-	static readonly DELETE_PORTAL = "iotsitewise:DeletePortal";
+	static readonly DeletePortal = "iotsitewise:DeletePortal";
 	/** [Write] iotsitewise:DeleteProject */
-	static readonly DELETE_PROJECT = "iotsitewise:DeleteProject";
+	static readonly DeleteProject = "iotsitewise:DeleteProject";
 	/** [Write] iotsitewise:DeleteTask */
-	static readonly DELETE_TASK = "iotsitewise:DeleteTask";
+	static readonly DeleteTask = "iotsitewise:DeleteTask";
 	/** [Write] iotsitewise:DeleteTimeSeries */
-	static readonly DELETE_TIME_SERIES = "iotsitewise:DeleteTimeSeries";
+	static readonly DeleteTimeSeries = "iotsitewise:DeleteTimeSeries";
 	/** [Write] iotsitewise:DeleteWorkspace */
-	static readonly DELETE_WORKSPACE = "iotsitewise:DeleteWorkspace";
+	static readonly DeleteWorkspace = "iotsitewise:DeleteWorkspace";
 	/** [Read] iotsitewise:DescribeAccessPolicy */
-	static readonly DESCRIBE_ACCESS_POLICY = "iotsitewise:DescribeAccessPolicy";
+	static readonly DescribeAccessPolicy = "iotsitewise:DescribeAccessPolicy";
 	/** [Read] iotsitewise:DescribeAction */
-	static readonly DESCRIBE_ACTION = "iotsitewise:DescribeAction";
+	static readonly DescribeAction = "iotsitewise:DescribeAction";
 	/** [Read] iotsitewise:DescribeApplication */
-	static readonly DESCRIBE_APPLICATION = "iotsitewise:DescribeApplication";
+	static readonly DescribeApplication = "iotsitewise:DescribeApplication";
 	/** [Read] iotsitewise:DescribeAsset */
-	static readonly DESCRIBE_ASSET = "iotsitewise:DescribeAsset";
+	static readonly DescribeAsset = "iotsitewise:DescribeAsset";
 	/** [Read] iotsitewise:DescribeAssetCompositeModel */
-	static readonly DESCRIBE_ASSET_COMPOSITE_MODEL =
+	static readonly DescribeAssetCompositeModel =
 		"iotsitewise:DescribeAssetCompositeModel";
 	/** [Read] iotsitewise:DescribeAssetModel */
-	static readonly DESCRIBE_ASSET_MODEL = "iotsitewise:DescribeAssetModel";
+	static readonly DescribeAssetModel = "iotsitewise:DescribeAssetModel";
 	/** [Read] iotsitewise:DescribeAssetModelCompositeModel */
-	static readonly DESCRIBE_ASSET_MODEL_COMPOSITE_MODEL =
+	static readonly DescribeAssetModelCompositeModel =
 		"iotsitewise:DescribeAssetModelCompositeModel";
 	/** [Read] iotsitewise:DescribeAssetModelInterfaceRelationship */
-	static readonly DESCRIBE_ASSET_MODEL_INTERFACE_RELATIONSHIP =
+	static readonly DescribeAssetModelInterfaceRelationship =
 		"iotsitewise:DescribeAssetModelInterfaceRelationship";
 	/** [Read] iotsitewise:DescribeAssetProperty */
-	static readonly DESCRIBE_ASSET_PROPERTY = "iotsitewise:DescribeAssetProperty";
+	static readonly DescribeAssetProperty = "iotsitewise:DescribeAssetProperty";
 	/** [Read] iotsitewise:DescribeBulkImportJob */
-	static readonly DESCRIBE_BULK_IMPORT_JOB =
-		"iotsitewise:DescribeBulkImportJob";
+	static readonly DescribeBulkImportJob = "iotsitewise:DescribeBulkImportJob";
 	/** [Read] iotsitewise:DescribeComputationModel */
-	static readonly DESCRIBE_COMPUTATION_MODEL =
+	static readonly DescribeComputationModel =
 		"iotsitewise:DescribeComputationModel";
 	/** [Read] iotsitewise:DescribeComputationModelExecutionSummary */
-	static readonly DESCRIBE_COMPUTATION_MODEL_EXECUTION_SUMMARY =
+	static readonly DescribeComputationModelExecutionSummary =
 		"iotsitewise:DescribeComputationModelExecutionSummary";
 	/** [Read] iotsitewise:DescribeDashboard */
-	static readonly DESCRIBE_DASHBOARD = "iotsitewise:DescribeDashboard";
+	static readonly DescribeDashboard = "iotsitewise:DescribeDashboard";
 	/** [Read] iotsitewise:DescribeDataset */
-	static readonly DESCRIBE_DATASET = "iotsitewise:DescribeDataset";
+	static readonly DescribeDataset = "iotsitewise:DescribeDataset";
 	/** [Read] iotsitewise:DescribeDatasetExportJob */
-	static readonly DESCRIBE_DATASET_EXPORT_JOB =
+	static readonly DescribeDatasetExportJob =
 		"iotsitewise:DescribeDatasetExportJob";
 	/** [Read] iotsitewise:DescribeDefaultEncryptionConfiguration */
-	static readonly DESCRIBE_DEFAULT_ENCRYPTION_CONFIGURATION =
+	static readonly DescribeDefaultEncryptionConfiguration =
 		"iotsitewise:DescribeDefaultEncryptionConfiguration";
 	/** [Read] iotsitewise:DescribeEnrichmentJob */
-	static readonly DESCRIBE_ENRICHMENT_JOB = "iotsitewise:DescribeEnrichmentJob";
+	static readonly DescribeEnrichmentJob = "iotsitewise:DescribeEnrichmentJob";
 	/** [Read] iotsitewise:DescribeExecution */
-	static readonly DESCRIBE_EXECUTION = "iotsitewise:DescribeExecution";
+	static readonly DescribeExecution = "iotsitewise:DescribeExecution";
 	/** [Read] iotsitewise:DescribeGateway */
-	static readonly DESCRIBE_GATEWAY = "iotsitewise:DescribeGateway";
+	static readonly DescribeGateway = "iotsitewise:DescribeGateway";
 	/** [Read] iotsitewise:DescribeGatewayCapabilityConfiguration */
-	static readonly DESCRIBE_GATEWAY_CAPABILITY_CONFIGURATION =
+	static readonly DescribeGatewayCapabilityConfiguration =
 		"iotsitewise:DescribeGatewayCapabilityConfiguration";
 	/** [Read] iotsitewise:DescribeLoggingOptions */
-	static readonly DESCRIBE_LOGGING_OPTIONS =
-		"iotsitewise:DescribeLoggingOptions";
+	static readonly DescribeLoggingOptions = "iotsitewise:DescribeLoggingOptions";
 	/** [Read] iotsitewise:DescribePipeline */
-	static readonly DESCRIBE_PIPELINE = "iotsitewise:DescribePipeline";
+	static readonly DescribePipeline = "iotsitewise:DescribePipeline";
 	/** [Read] iotsitewise:DescribePipelineExecution */
-	static readonly DESCRIBE_PIPELINE_EXECUTION =
+	static readonly DescribePipelineExecution =
 		"iotsitewise:DescribePipelineExecution";
 	/** [Read] iotsitewise:DescribePortal */
-	static readonly DESCRIBE_PORTAL = "iotsitewise:DescribePortal";
+	static readonly DescribePortal = "iotsitewise:DescribePortal";
 	/** [Read] iotsitewise:DescribeProject */
-	static readonly DESCRIBE_PROJECT = "iotsitewise:DescribeProject";
+	static readonly DescribeProject = "iotsitewise:DescribeProject";
 	/** [Read] iotsitewise:DescribeQuery */
-	static readonly DESCRIBE_QUERY = "iotsitewise:DescribeQuery";
+	static readonly DescribeQuery = "iotsitewise:DescribeQuery";
 	/** [Read] iotsitewise:DescribeSearch */
-	static readonly DESCRIBE_SEARCH = "iotsitewise:DescribeSearch";
+	static readonly DescribeSearch = "iotsitewise:DescribeSearch";
 	/** [Read] iotsitewise:DescribeStorageConfiguration */
-	static readonly DESCRIBE_STORAGE_CONFIGURATION =
+	static readonly DescribeStorageConfiguration =
 		"iotsitewise:DescribeStorageConfiguration";
 	/** [Read] iotsitewise:DescribeTask */
-	static readonly DESCRIBE_TASK = "iotsitewise:DescribeTask";
+	static readonly DescribeTask = "iotsitewise:DescribeTask";
 	/** [Read] iotsitewise:DescribeTimeSeries */
-	static readonly DESCRIBE_TIME_SERIES = "iotsitewise:DescribeTimeSeries";
+	static readonly DescribeTimeSeries = "iotsitewise:DescribeTimeSeries";
 	/** [Read] iotsitewise:DescribeWorkspace */
-	static readonly DESCRIBE_WORKSPACE = "iotsitewise:DescribeWorkspace";
+	static readonly DescribeWorkspace = "iotsitewise:DescribeWorkspace";
 	/** [Write] iotsitewise:DisassociateAssets */
-	static readonly DISASSOCIATE_ASSETS = "iotsitewise:DisassociateAssets";
+	static readonly DisassociateAssets = "iotsitewise:DisassociateAssets";
 	/** [Write] iotsitewise:DisassociateTimeSeriesFromAssetProperty */
-	static readonly DISASSOCIATE_TIME_SERIES_FROM_ASSET_PROPERTY =
+	static readonly DisassociateTimeSeriesFromAssetProperty =
 		"iotsitewise:DisassociateTimeSeriesFromAssetProperty";
 	/** [Write] iotsitewise:EnableSiteWiseIntegration */
-	static readonly ENABLE_SITE_WISE_INTEGRATION =
+	static readonly EnableSiteWiseIntegration =
 		"iotsitewise:EnableSiteWiseIntegration";
 	/** [Write] iotsitewise:ExecuteAction */
-	static readonly EXECUTE_ACTION = "iotsitewise:ExecuteAction";
+	static readonly ExecuteAction = "iotsitewise:ExecuteAction";
 	/** [Read] iotsitewise:ExecuteQuery */
-	static readonly EXECUTE_QUERY = "iotsitewise:ExecuteQuery";
+	static readonly ExecuteQuery = "iotsitewise:ExecuteQuery";
 	/** [Read] iotsitewise:GetAssetPropertyAggregates */
-	static readonly GET_ASSET_PROPERTY_AGGREGATES =
+	static readonly actionGetAssetPropertyAggregates =
 		"iotsitewise:GetAssetPropertyAggregates";
 	/** [Read] iotsitewise:GetAssetPropertyValue */
-	static readonly GET_ASSET_PROPERTY_VALUE =
+	static readonly actionGetAssetPropertyValue =
 		"iotsitewise:GetAssetPropertyValue";
 	/** [Read] iotsitewise:GetAssetPropertyValueHistory */
-	static readonly GET_ASSET_PROPERTY_VALUE_HISTORY =
+	static readonly actionGetAssetPropertyValueHistory =
 		"iotsitewise:GetAssetPropertyValueHistory";
 	/** [Read] iotsitewise:GetCaptureData */
-	static readonly GET_CAPTURE_DATA = "iotsitewise:GetCaptureData";
+	static readonly actionGetCaptureData = "iotsitewise:GetCaptureData";
 	/** [Read] iotsitewise:GetInterpolatedAssetPropertyValues */
-	static readonly GET_INTERPOLATED_ASSET_PROPERTY_VALUES =
+	static readonly actionGetInterpolatedAssetPropertyValues =
 		"iotsitewise:GetInterpolatedAssetPropertyValues";
 	/** [Read] iotsitewise:GetQueryResults */
-	static readonly GET_QUERY_RESULTS = "iotsitewise:GetQueryResults";
+	static readonly actionGetQueryResults = "iotsitewise:GetQueryResults";
 	/** [Read] iotsitewise:GetSearchResults */
-	static readonly GET_SEARCH_RESULTS = "iotsitewise:GetSearchResults";
+	static readonly actionGetSearchResults = "iotsitewise:GetSearchResults";
 	/** [Read] iotsitewise:InvokeAssistant */
-	static readonly INVOKE_ASSISTANT = "iotsitewise:InvokeAssistant";
+	static readonly InvokeAssistant = "iotsitewise:InvokeAssistant";
 	/** [List] iotsitewise:ListAccessPolicies */
-	static readonly LIST_ACCESS_POLICIES = "iotsitewise:ListAccessPolicies";
+	static readonly ListAccessPolicies = "iotsitewise:ListAccessPolicies";
 	/** [List] iotsitewise:ListActions */
-	static readonly LIST_ACTIONS = "iotsitewise:ListActions";
+	static readonly ListActions = "iotsitewise:ListActions";
 	/** [List] iotsitewise:ListApplications */
-	static readonly LIST_APPLICATIONS = "iotsitewise:ListApplications";
+	static readonly ListApplications = "iotsitewise:ListApplications";
 	/** [List] iotsitewise:ListAssetModelCompositeModels */
-	static readonly LIST_ASSET_MODEL_COMPOSITE_MODELS =
+	static readonly ListAssetModelCompositeModels =
 		"iotsitewise:ListAssetModelCompositeModels";
 	/** [List] iotsitewise:ListAssetModelProperties */
-	static readonly LIST_ASSET_MODEL_PROPERTIES =
+	static readonly ListAssetModelProperties =
 		"iotsitewise:ListAssetModelProperties";
 	/** [List] iotsitewise:ListAssetModels */
-	static readonly LIST_ASSET_MODELS = "iotsitewise:ListAssetModels";
+	static readonly ListAssetModels = "iotsitewise:ListAssetModels";
 	/** [List] iotsitewise:ListAssetProperties */
-	static readonly LIST_ASSET_PROPERTIES = "iotsitewise:ListAssetProperties";
+	static readonly ListAssetProperties = "iotsitewise:ListAssetProperties";
 	/** [List] iotsitewise:ListAssetRelationships */
-	static readonly LIST_ASSET_RELATIONSHIPS =
-		"iotsitewise:ListAssetRelationships";
+	static readonly ListAssetRelationships = "iotsitewise:ListAssetRelationships";
 	/** [List] iotsitewise:ListAssets */
-	static readonly LIST_ASSETS = "iotsitewise:ListAssets";
+	static readonly ListAssets = "iotsitewise:ListAssets";
 	/** [List] iotsitewise:ListAssociatedAssets */
-	static readonly LIST_ASSOCIATED_ASSETS = "iotsitewise:ListAssociatedAssets";
+	static readonly ListAssociatedAssets = "iotsitewise:ListAssociatedAssets";
 	/** [List] iotsitewise:ListBulkImportJobs */
-	static readonly LIST_BULK_IMPORT_JOBS = "iotsitewise:ListBulkImportJobs";
+	static readonly ListBulkImportJobs = "iotsitewise:ListBulkImportJobs";
 	/** [List] iotsitewise:ListCompositionRelationships */
-	static readonly LIST_COMPOSITION_RELATIONSHIPS =
+	static readonly ListCompositionRelationships =
 		"iotsitewise:ListCompositionRelationships";
 	/** [List] iotsitewise:ListComputationModelDataBindingUsages */
-	static readonly LIST_COMPUTATION_MODEL_DATA_BINDING_USAGES =
+	static readonly ListComputationModelDataBindingUsages =
 		"iotsitewise:ListComputationModelDataBindingUsages";
 	/** [List] iotsitewise:ListComputationModelResolveToResources */
-	static readonly LIST_COMPUTATION_MODEL_RESOLVE_TO_RESOURCES =
+	static readonly ListComputationModelResolveToResources =
 		"iotsitewise:ListComputationModelResolveToResources";
 	/** [List] iotsitewise:ListComputationModels */
-	static readonly LIST_COMPUTATION_MODELS = "iotsitewise:ListComputationModels";
+	static readonly ListComputationModels = "iotsitewise:ListComputationModels";
 	/** [List] iotsitewise:ListDashboards */
-	static readonly LIST_DASHBOARDS = "iotsitewise:ListDashboards";
+	static readonly ListDashboards = "iotsitewise:ListDashboards";
 	/** [List] iotsitewise:ListDatasetDataSegmentRelationships */
-	static readonly LIST_DATASET_DATA_SEGMENT_RELATIONSHIPS =
+	static readonly ListDatasetDataSegmentRelationships =
 		"iotsitewise:ListDatasetDataSegmentRelationships";
 	/** [List] iotsitewise:ListDatasetDataSegments */
-	static readonly LIST_DATASET_DATA_SEGMENTS =
+	static readonly ListDatasetDataSegments =
 		"iotsitewise:ListDatasetDataSegments";
 	/** [List] iotsitewise:ListDatasetExportJobs */
-	static readonly LIST_DATASET_EXPORT_JOBS =
-		"iotsitewise:ListDatasetExportJobs";
+	static readonly ListDatasetExportJobs = "iotsitewise:ListDatasetExportJobs";
 	/** [List] iotsitewise:ListDatasets */
-	static readonly LIST_DATASETS = "iotsitewise:ListDatasets";
+	static readonly ListDatasets = "iotsitewise:ListDatasets";
 	/** [List] iotsitewise:ListEnrichmentJobs */
-	static readonly LIST_ENRICHMENT_JOBS = "iotsitewise:ListEnrichmentJobs";
+	static readonly ListEnrichmentJobs = "iotsitewise:ListEnrichmentJobs";
 	/** [List] iotsitewise:ListExecutions */
-	static readonly LIST_EXECUTIONS = "iotsitewise:ListExecutions";
+	static readonly ListExecutions = "iotsitewise:ListExecutions";
 	/** [List] iotsitewise:ListGateways */
-	static readonly LIST_GATEWAYS = "iotsitewise:ListGateways";
+	static readonly ListGateways = "iotsitewise:ListGateways";
 	/** [List] iotsitewise:ListInterfaceRelationships */
-	static readonly LIST_INTERFACE_RELATIONSHIPS =
+	static readonly ListInterfaceRelationships =
 		"iotsitewise:ListInterfaceRelationships";
 	/** [List] iotsitewise:ListPipelineExecutions */
-	static readonly LIST_PIPELINE_EXECUTIONS =
-		"iotsitewise:ListPipelineExecutions";
+	static readonly ListPipelineExecutions = "iotsitewise:ListPipelineExecutions";
 	/** [List] iotsitewise:ListPipelines */
-	static readonly LIST_PIPELINES = "iotsitewise:ListPipelines";
+	static readonly ListPipelines = "iotsitewise:ListPipelines";
 	/** [List] iotsitewise:ListPortals */
-	static readonly LIST_PORTALS = "iotsitewise:ListPortals";
+	static readonly ListPortals = "iotsitewise:ListPortals";
 	/** [List] iotsitewise:ListProjectAssets */
-	static readonly LIST_PROJECT_ASSETS = "iotsitewise:ListProjectAssets";
+	static readonly ListProjectAssets = "iotsitewise:ListProjectAssets";
 	/** [List] iotsitewise:ListProjects */
-	static readonly LIST_PROJECTS = "iotsitewise:ListProjects";
+	static readonly ListProjects = "iotsitewise:ListProjects";
 	/** [List] iotsitewise:ListQueries */
-	static readonly LIST_QUERIES = "iotsitewise:ListQueries";
+	static readonly ListQueries = "iotsitewise:ListQueries";
 	/** [List] iotsitewise:ListSearches */
-	static readonly LIST_SEARCHES = "iotsitewise:ListSearches";
+	static readonly ListSearches = "iotsitewise:ListSearches";
 	/** [Read] iotsitewise:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "iotsitewise:ListTagsForResource";
+	static readonly ListTagsForResource = "iotsitewise:ListTagsForResource";
 	/** [List] iotsitewise:ListTasks */
-	static readonly LIST_TASKS = "iotsitewise:ListTasks";
+	static readonly ListTasks = "iotsitewise:ListTasks";
 	/** [List] iotsitewise:ListTimeSeries */
-	static readonly LIST_TIME_SERIES = "iotsitewise:ListTimeSeries";
+	static readonly ListTimeSeries = "iotsitewise:ListTimeSeries";
 	/** [List] iotsitewise:ListWorkspaces */
-	static readonly LIST_WORKSPACES = "iotsitewise:ListWorkspaces";
+	static readonly ListWorkspaces = "iotsitewise:ListWorkspaces";
 	/** [Write] iotsitewise:PutAssetModelInterfaceRelationship */
-	static readonly PUT_ASSET_MODEL_INTERFACE_RELATIONSHIP =
+	static readonly PutAssetModelInterfaceRelationship =
 		"iotsitewise:PutAssetModelInterfaceRelationship";
 	/** [Write] iotsitewise:PutDefaultEncryptionConfiguration */
-	static readonly PUT_DEFAULT_ENCRYPTION_CONFIGURATION =
+	static readonly PutDefaultEncryptionConfiguration =
 		"iotsitewise:PutDefaultEncryptionConfiguration";
 	/** [Write] iotsitewise:PutLoggingOptions */
-	static readonly PUT_LOGGING_OPTIONS = "iotsitewise:PutLoggingOptions";
+	static readonly PutLoggingOptions = "iotsitewise:PutLoggingOptions";
 	/** [Write] iotsitewise:PutStorageConfiguration */
-	static readonly PUT_STORAGE_CONFIGURATION =
+	static readonly PutStorageConfiguration =
 		"iotsitewise:PutStorageConfiguration";
 	/** [Write] iotsitewise:StartPipelineExecution */
-	static readonly START_PIPELINE_EXECUTION =
-		"iotsitewise:StartPipelineExecution";
+	static readonly StartPipelineExecution = "iotsitewise:StartPipelineExecution";
 	/** [Write] iotsitewise:StartQuery */
-	static readonly START_QUERY = "iotsitewise:StartQuery";
+	static readonly StartQuery = "iotsitewise:StartQuery";
 	/** [Write] iotsitewise:StartSearch */
-	static readonly START_SEARCH = "iotsitewise:StartSearch";
+	static readonly StartSearch = "iotsitewise:StartSearch";
 	/** [Tagging] iotsitewise:TagResource */
-	static readonly TAG_RESOURCE = "iotsitewise:TagResource";
+	static readonly TagResource = "iotsitewise:TagResource";
 	/** [Tagging] iotsitewise:UntagResource */
-	static readonly UNTAG_RESOURCE = "iotsitewise:UntagResource";
+	static readonly UntagResource = "iotsitewise:UntagResource";
 	/** [Write] iotsitewise:UpdateAccessPolicy */
-	static readonly UPDATE_ACCESS_POLICY = "iotsitewise:UpdateAccessPolicy";
+	static readonly UpdateAccessPolicy = "iotsitewise:UpdateAccessPolicy";
 	/** [Write] iotsitewise:UpdateAsset */
-	static readonly UPDATE_ASSET = "iotsitewise:UpdateAsset";
+	static readonly UpdateAsset = "iotsitewise:UpdateAsset";
 	/** [Write] iotsitewise:UpdateAssetModel */
-	static readonly UPDATE_ASSET_MODEL = "iotsitewise:UpdateAssetModel";
+	static readonly UpdateAssetModel = "iotsitewise:UpdateAssetModel";
 	/** [Write] iotsitewise:UpdateAssetModelCompositeModel */
-	static readonly UPDATE_ASSET_MODEL_COMPOSITE_MODEL =
+	static readonly UpdateAssetModelCompositeModel =
 		"iotsitewise:UpdateAssetModelCompositeModel";
 	/** [Write] iotsitewise:UpdateAssetModelPropertyRouting */
-	static readonly UPDATE_ASSET_MODEL_PROPERTY_ROUTING =
+	static readonly UpdateAssetModelPropertyRouting =
 		"iotsitewise:UpdateAssetModelPropertyRouting";
 	/** [Write] iotsitewise:UpdateAssetProperty */
-	static readonly UPDATE_ASSET_PROPERTY = "iotsitewise:UpdateAssetProperty";
+	static readonly UpdateAssetProperty = "iotsitewise:UpdateAssetProperty";
 	/** [Write] iotsitewise:UpdateComputationModel */
-	static readonly UPDATE_COMPUTATION_MODEL =
-		"iotsitewise:UpdateComputationModel";
+	static readonly UpdateComputationModel = "iotsitewise:UpdateComputationModel";
 	/** [Write] iotsitewise:UpdateDashboard */
-	static readonly UPDATE_DASHBOARD = "iotsitewise:UpdateDashboard";
+	static readonly UpdateDashboard = "iotsitewise:UpdateDashboard";
 	/** [Write] iotsitewise:UpdateDataset */
-	static readonly UPDATE_DATASET = "iotsitewise:UpdateDataset";
+	static readonly UpdateDataset = "iotsitewise:UpdateDataset";
 	/** [Write] iotsitewise:UpdateGateway */
-	static readonly UPDATE_GATEWAY = "iotsitewise:UpdateGateway";
+	static readonly UpdateGateway = "iotsitewise:UpdateGateway";
 	/** [Write] iotsitewise:UpdateGatewayCapabilityConfiguration */
-	static readonly UPDATE_GATEWAY_CAPABILITY_CONFIGURATION =
+	static readonly UpdateGatewayCapabilityConfiguration =
 		"iotsitewise:UpdateGatewayCapabilityConfiguration";
 	/** [Write] iotsitewise:UpdatePipeline */
-	static readonly UPDATE_PIPELINE = "iotsitewise:UpdatePipeline";
+	static readonly UpdatePipeline = "iotsitewise:UpdatePipeline";
 	/** [Write] iotsitewise:UpdatePortal */
-	static readonly UPDATE_PORTAL = "iotsitewise:UpdatePortal";
+	static readonly UpdatePortal = "iotsitewise:UpdatePortal";
 	/** [Write] iotsitewise:UpdateProject */
-	static readonly UPDATE_PROJECT = "iotsitewise:UpdateProject";
+	static readonly UpdateProject = "iotsitewise:UpdateProject";
 	/** [Write] iotsitewise:UpdateTask */
-	static readonly UPDATE_TASK = "iotsitewise:UpdateTask";
+	static readonly UpdateTask = "iotsitewise:UpdateTask";
 	/** [Write] iotsitewise:UpdateWorkspace */
-	static readonly UPDATE_WORKSPACE = "iotsitewise:UpdateWorkspace";
+	static readonly UpdateWorkspace = "iotsitewise:UpdateWorkspace";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotsitewiseActions.BATCH_GET_ASSET_PROPERTY_AGGREGATES,
-		IotsitewiseActions.BATCH_GET_ASSET_PROPERTY_VALUE,
-		IotsitewiseActions.BATCH_GET_ASSET_PROPERTY_VALUE_HISTORY,
-		IotsitewiseActions.DESCRIBE_ACCESS_POLICY,
-		IotsitewiseActions.DESCRIBE_ACTION,
-		IotsitewiseActions.DESCRIBE_APPLICATION,
-		IotsitewiseActions.DESCRIBE_ASSET,
-		IotsitewiseActions.DESCRIBE_ASSET_COMPOSITE_MODEL,
-		IotsitewiseActions.DESCRIBE_ASSET_MODEL,
-		IotsitewiseActions.DESCRIBE_ASSET_MODEL_COMPOSITE_MODEL,
-		IotsitewiseActions.DESCRIBE_ASSET_MODEL_INTERFACE_RELATIONSHIP,
-		IotsitewiseActions.DESCRIBE_ASSET_PROPERTY,
-		IotsitewiseActions.DESCRIBE_BULK_IMPORT_JOB,
-		IotsitewiseActions.DESCRIBE_COMPUTATION_MODEL,
-		IotsitewiseActions.DESCRIBE_COMPUTATION_MODEL_EXECUTION_SUMMARY,
-		IotsitewiseActions.DESCRIBE_DASHBOARD,
-		IotsitewiseActions.DESCRIBE_DATASET,
-		IotsitewiseActions.DESCRIBE_DATASET_EXPORT_JOB,
-		IotsitewiseActions.DESCRIBE_DEFAULT_ENCRYPTION_CONFIGURATION,
-		IotsitewiseActions.DESCRIBE_ENRICHMENT_JOB,
-		IotsitewiseActions.DESCRIBE_EXECUTION,
-		IotsitewiseActions.DESCRIBE_GATEWAY,
-		IotsitewiseActions.DESCRIBE_GATEWAY_CAPABILITY_CONFIGURATION,
-		IotsitewiseActions.DESCRIBE_LOGGING_OPTIONS,
-		IotsitewiseActions.DESCRIBE_PIPELINE,
-		IotsitewiseActions.DESCRIBE_PIPELINE_EXECUTION,
-		IotsitewiseActions.DESCRIBE_PORTAL,
-		IotsitewiseActions.DESCRIBE_PROJECT,
-		IotsitewiseActions.DESCRIBE_QUERY,
-		IotsitewiseActions.DESCRIBE_SEARCH,
-		IotsitewiseActions.DESCRIBE_STORAGE_CONFIGURATION,
-		IotsitewiseActions.DESCRIBE_TASK,
-		IotsitewiseActions.DESCRIBE_TIME_SERIES,
-		IotsitewiseActions.DESCRIBE_WORKSPACE,
-		IotsitewiseActions.EXECUTE_QUERY,
-		IotsitewiseActions.GET_ASSET_PROPERTY_AGGREGATES,
-		IotsitewiseActions.GET_ASSET_PROPERTY_VALUE,
-		IotsitewiseActions.GET_ASSET_PROPERTY_VALUE_HISTORY,
-		IotsitewiseActions.GET_CAPTURE_DATA,
-		IotsitewiseActions.GET_INTERPOLATED_ASSET_PROPERTY_VALUES,
-		IotsitewiseActions.GET_QUERY_RESULTS,
-		IotsitewiseActions.GET_SEARCH_RESULTS,
-		IotsitewiseActions.INVOKE_ASSISTANT,
-		IotsitewiseActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		IotsitewiseActions.BatchGetAssetPropertyAggregates,
+		IotsitewiseActions.BatchGetAssetPropertyValue,
+		IotsitewiseActions.BatchGetAssetPropertyValueHistory,
+		IotsitewiseActions.DescribeAccessPolicy,
+		IotsitewiseActions.DescribeAction,
+		IotsitewiseActions.DescribeApplication,
+		IotsitewiseActions.DescribeAsset,
+		IotsitewiseActions.DescribeAssetCompositeModel,
+		IotsitewiseActions.DescribeAssetModel,
+		IotsitewiseActions.DescribeAssetModelCompositeModel,
+		IotsitewiseActions.DescribeAssetModelInterfaceRelationship,
+		IotsitewiseActions.DescribeAssetProperty,
+		IotsitewiseActions.DescribeBulkImportJob,
+		IotsitewiseActions.DescribeComputationModel,
+		IotsitewiseActions.DescribeComputationModelExecutionSummary,
+		IotsitewiseActions.DescribeDashboard,
+		IotsitewiseActions.DescribeDataset,
+		IotsitewiseActions.DescribeDatasetExportJob,
+		IotsitewiseActions.DescribeDefaultEncryptionConfiguration,
+		IotsitewiseActions.DescribeEnrichmentJob,
+		IotsitewiseActions.DescribeExecution,
+		IotsitewiseActions.DescribeGateway,
+		IotsitewiseActions.DescribeGatewayCapabilityConfiguration,
+		IotsitewiseActions.DescribeLoggingOptions,
+		IotsitewiseActions.DescribePipeline,
+		IotsitewiseActions.DescribePipelineExecution,
+		IotsitewiseActions.DescribePortal,
+		IotsitewiseActions.DescribeProject,
+		IotsitewiseActions.DescribeQuery,
+		IotsitewiseActions.DescribeSearch,
+		IotsitewiseActions.DescribeStorageConfiguration,
+		IotsitewiseActions.DescribeTask,
+		IotsitewiseActions.DescribeTimeSeries,
+		IotsitewiseActions.DescribeWorkspace,
+		IotsitewiseActions.ExecuteQuery,
+		IotsitewiseActions.actionGetAssetPropertyAggregates,
+		IotsitewiseActions.actionGetAssetPropertyValue,
+		IotsitewiseActions.actionGetAssetPropertyValueHistory,
+		IotsitewiseActions.actionGetCaptureData,
+		IotsitewiseActions.actionGetInterpolatedAssetPropertyValues,
+		IotsitewiseActions.actionGetQueryResults,
+		IotsitewiseActions.actionGetSearchResults,
+		IotsitewiseActions.InvokeAssistant,
+		IotsitewiseActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotsitewiseActions.ASSOCIATE_ASSETS,
-		IotsitewiseActions.ASSOCIATE_TIME_SERIES_TO_ASSET_PROPERTY,
-		IotsitewiseActions.BATCH_ASSOCIATE_DATA_SEGMENTS_TO_DATASET,
-		IotsitewiseActions.BATCH_ASSOCIATE_PROJECT_ASSETS,
-		IotsitewiseActions.BATCH_DELETE_DATASET_DATA_SEGMENTS,
-		IotsitewiseActions.BATCH_DISASSOCIATE_DATA_SEGMENTS_FROM_DATASET,
-		IotsitewiseActions.BATCH_DISASSOCIATE_PROJECT_ASSETS,
-		IotsitewiseActions.BATCH_PUT_ASSET_PROPERTY_VALUE,
-		IotsitewiseActions.CANCEL_ENRICHMENT_JOB,
-		IotsitewiseActions.CANCEL_PIPELINE_EXECUTION,
-		IotsitewiseActions.CANCEL_QUERY,
-		IotsitewiseActions.CREATE_ACCESS_POLICY,
-		IotsitewiseActions.CREATE_APPLICATION,
-		IotsitewiseActions.CREATE_ASSET,
-		IotsitewiseActions.CREATE_ASSET_MODEL,
-		IotsitewiseActions.CREATE_ASSET_MODEL_COMPOSITE_MODEL,
-		IotsitewiseActions.CREATE_BULK_IMPORT_JOB,
-		IotsitewiseActions.CREATE_COMPUTATION_MODEL,
-		IotsitewiseActions.CREATE_DASHBOARD,
-		IotsitewiseActions.CREATE_DATASET,
-		IotsitewiseActions.CREATE_DATASET_EXPORT_JOB,
-		IotsitewiseActions.CREATE_ENRICHMENT_JOB,
-		IotsitewiseActions.CREATE_GATEWAY,
-		IotsitewiseActions.CREATE_PIPELINE,
-		IotsitewiseActions.CREATE_PORTAL,
-		IotsitewiseActions.CREATE_PROJECT,
-		IotsitewiseActions.CREATE_TASK,
-		IotsitewiseActions.CREATE_WORKSPACE,
-		IotsitewiseActions.DELETE_ACCESS_POLICY,
-		IotsitewiseActions.DELETE_APPLICATION,
-		IotsitewiseActions.DELETE_ASSET,
-		IotsitewiseActions.DELETE_ASSET_MODEL,
-		IotsitewiseActions.DELETE_ASSET_MODEL_COMPOSITE_MODEL,
-		IotsitewiseActions.DELETE_ASSET_MODEL_INTERFACE_RELATIONSHIP,
-		IotsitewiseActions.DELETE_COMPUTATION_MODEL,
-		IotsitewiseActions.DELETE_DASHBOARD,
-		IotsitewiseActions.DELETE_DATASET,
-		IotsitewiseActions.DELETE_GATEWAY,
-		IotsitewiseActions.DELETE_PIPELINE,
-		IotsitewiseActions.DELETE_PORTAL,
-		IotsitewiseActions.DELETE_PROJECT,
-		IotsitewiseActions.DELETE_TASK,
-		IotsitewiseActions.DELETE_TIME_SERIES,
-		IotsitewiseActions.DELETE_WORKSPACE,
-		IotsitewiseActions.DISASSOCIATE_ASSETS,
-		IotsitewiseActions.DISASSOCIATE_TIME_SERIES_FROM_ASSET_PROPERTY,
-		IotsitewiseActions.ENABLE_SITE_WISE_INTEGRATION,
-		IotsitewiseActions.EXECUTE_ACTION,
-		IotsitewiseActions.PUT_ASSET_MODEL_INTERFACE_RELATIONSHIP,
-		IotsitewiseActions.PUT_DEFAULT_ENCRYPTION_CONFIGURATION,
-		IotsitewiseActions.PUT_LOGGING_OPTIONS,
-		IotsitewiseActions.PUT_STORAGE_CONFIGURATION,
-		IotsitewiseActions.START_PIPELINE_EXECUTION,
-		IotsitewiseActions.START_QUERY,
-		IotsitewiseActions.START_SEARCH,
-		IotsitewiseActions.UPDATE_ACCESS_POLICY,
-		IotsitewiseActions.UPDATE_ASSET,
-		IotsitewiseActions.UPDATE_ASSET_MODEL,
-		IotsitewiseActions.UPDATE_ASSET_MODEL_COMPOSITE_MODEL,
-		IotsitewiseActions.UPDATE_ASSET_MODEL_PROPERTY_ROUTING,
-		IotsitewiseActions.UPDATE_ASSET_PROPERTY,
-		IotsitewiseActions.UPDATE_COMPUTATION_MODEL,
-		IotsitewiseActions.UPDATE_DASHBOARD,
-		IotsitewiseActions.UPDATE_DATASET,
-		IotsitewiseActions.UPDATE_GATEWAY,
-		IotsitewiseActions.UPDATE_GATEWAY_CAPABILITY_CONFIGURATION,
-		IotsitewiseActions.UPDATE_PIPELINE,
-		IotsitewiseActions.UPDATE_PORTAL,
-		IotsitewiseActions.UPDATE_PROJECT,
-		IotsitewiseActions.UPDATE_TASK,
-		IotsitewiseActions.UPDATE_WORKSPACE,
+	static readonly AllWriteActions: string[] = [
+		IotsitewiseActions.AssociateAssets,
+		IotsitewiseActions.AssociateTimeSeriesToAssetProperty,
+		IotsitewiseActions.BatchAssociateDataSegmentsToDataset,
+		IotsitewiseActions.BatchAssociateProjectAssets,
+		IotsitewiseActions.BatchDeleteDatasetDataSegments,
+		IotsitewiseActions.BatchDisassociateDataSegmentsFromDataset,
+		IotsitewiseActions.BatchDisassociateProjectAssets,
+		IotsitewiseActions.BatchPutAssetPropertyValue,
+		IotsitewiseActions.CancelEnrichmentJob,
+		IotsitewiseActions.CancelPipelineExecution,
+		IotsitewiseActions.CancelQuery,
+		IotsitewiseActions.CreateAccessPolicy,
+		IotsitewiseActions.CreateApplication,
+		IotsitewiseActions.CreateAsset,
+		IotsitewiseActions.CreateAssetModel,
+		IotsitewiseActions.CreateAssetModelCompositeModel,
+		IotsitewiseActions.CreateBulkImportJob,
+		IotsitewiseActions.CreateComputationModel,
+		IotsitewiseActions.CreateDashboard,
+		IotsitewiseActions.CreateDataset,
+		IotsitewiseActions.CreateDatasetExportJob,
+		IotsitewiseActions.CreateEnrichmentJob,
+		IotsitewiseActions.CreateGateway,
+		IotsitewiseActions.CreatePipeline,
+		IotsitewiseActions.CreatePortal,
+		IotsitewiseActions.CreateProject,
+		IotsitewiseActions.CreateTask,
+		IotsitewiseActions.CreateWorkspace,
+		IotsitewiseActions.DeleteAccessPolicy,
+		IotsitewiseActions.DeleteApplication,
+		IotsitewiseActions.DeleteAsset,
+		IotsitewiseActions.DeleteAssetModel,
+		IotsitewiseActions.DeleteAssetModelCompositeModel,
+		IotsitewiseActions.DeleteAssetModelInterfaceRelationship,
+		IotsitewiseActions.DeleteComputationModel,
+		IotsitewiseActions.DeleteDashboard,
+		IotsitewiseActions.DeleteDataset,
+		IotsitewiseActions.DeleteGateway,
+		IotsitewiseActions.DeletePipeline,
+		IotsitewiseActions.DeletePortal,
+		IotsitewiseActions.DeleteProject,
+		IotsitewiseActions.DeleteTask,
+		IotsitewiseActions.DeleteTimeSeries,
+		IotsitewiseActions.DeleteWorkspace,
+		IotsitewiseActions.DisassociateAssets,
+		IotsitewiseActions.DisassociateTimeSeriesFromAssetProperty,
+		IotsitewiseActions.EnableSiteWiseIntegration,
+		IotsitewiseActions.ExecuteAction,
+		IotsitewiseActions.PutAssetModelInterfaceRelationship,
+		IotsitewiseActions.PutDefaultEncryptionConfiguration,
+		IotsitewiseActions.PutLoggingOptions,
+		IotsitewiseActions.PutStorageConfiguration,
+		IotsitewiseActions.StartPipelineExecution,
+		IotsitewiseActions.StartQuery,
+		IotsitewiseActions.StartSearch,
+		IotsitewiseActions.UpdateAccessPolicy,
+		IotsitewiseActions.UpdateAsset,
+		IotsitewiseActions.UpdateAssetModel,
+		IotsitewiseActions.UpdateAssetModelCompositeModel,
+		IotsitewiseActions.UpdateAssetModelPropertyRouting,
+		IotsitewiseActions.UpdateAssetProperty,
+		IotsitewiseActions.UpdateComputationModel,
+		IotsitewiseActions.UpdateDashboard,
+		IotsitewiseActions.UpdateDataset,
+		IotsitewiseActions.UpdateGateway,
+		IotsitewiseActions.UpdateGatewayCapabilityConfiguration,
+		IotsitewiseActions.UpdatePipeline,
+		IotsitewiseActions.UpdatePortal,
+		IotsitewiseActions.UpdateProject,
+		IotsitewiseActions.UpdateTask,
+		IotsitewiseActions.UpdateWorkspace,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IotsitewiseActions.LIST_ACCESS_POLICIES,
-		IotsitewiseActions.LIST_ACTIONS,
-		IotsitewiseActions.LIST_APPLICATIONS,
-		IotsitewiseActions.LIST_ASSET_MODEL_COMPOSITE_MODELS,
-		IotsitewiseActions.LIST_ASSET_MODEL_PROPERTIES,
-		IotsitewiseActions.LIST_ASSET_MODELS,
-		IotsitewiseActions.LIST_ASSET_PROPERTIES,
-		IotsitewiseActions.LIST_ASSET_RELATIONSHIPS,
-		IotsitewiseActions.LIST_ASSETS,
-		IotsitewiseActions.LIST_ASSOCIATED_ASSETS,
-		IotsitewiseActions.LIST_BULK_IMPORT_JOBS,
-		IotsitewiseActions.LIST_COMPOSITION_RELATIONSHIPS,
-		IotsitewiseActions.LIST_COMPUTATION_MODEL_DATA_BINDING_USAGES,
-		IotsitewiseActions.LIST_COMPUTATION_MODEL_RESOLVE_TO_RESOURCES,
-		IotsitewiseActions.LIST_COMPUTATION_MODELS,
-		IotsitewiseActions.LIST_DASHBOARDS,
-		IotsitewiseActions.LIST_DATASET_DATA_SEGMENT_RELATIONSHIPS,
-		IotsitewiseActions.LIST_DATASET_DATA_SEGMENTS,
-		IotsitewiseActions.LIST_DATASET_EXPORT_JOBS,
-		IotsitewiseActions.LIST_DATASETS,
-		IotsitewiseActions.LIST_ENRICHMENT_JOBS,
-		IotsitewiseActions.LIST_EXECUTIONS,
-		IotsitewiseActions.LIST_GATEWAYS,
-		IotsitewiseActions.LIST_INTERFACE_RELATIONSHIPS,
-		IotsitewiseActions.LIST_PIPELINE_EXECUTIONS,
-		IotsitewiseActions.LIST_PIPELINES,
-		IotsitewiseActions.LIST_PORTALS,
-		IotsitewiseActions.LIST_PROJECT_ASSETS,
-		IotsitewiseActions.LIST_PROJECTS,
-		IotsitewiseActions.LIST_QUERIES,
-		IotsitewiseActions.LIST_SEARCHES,
-		IotsitewiseActions.LIST_TASKS,
-		IotsitewiseActions.LIST_TIME_SERIES,
-		IotsitewiseActions.LIST_WORKSPACES,
+	static readonly AllListActions: string[] = [
+		IotsitewiseActions.ListAccessPolicies,
+		IotsitewiseActions.ListActions,
+		IotsitewiseActions.ListApplications,
+		IotsitewiseActions.ListAssetModelCompositeModels,
+		IotsitewiseActions.ListAssetModelProperties,
+		IotsitewiseActions.ListAssetModels,
+		IotsitewiseActions.ListAssetProperties,
+		IotsitewiseActions.ListAssetRelationships,
+		IotsitewiseActions.ListAssets,
+		IotsitewiseActions.ListAssociatedAssets,
+		IotsitewiseActions.ListBulkImportJobs,
+		IotsitewiseActions.ListCompositionRelationships,
+		IotsitewiseActions.ListComputationModelDataBindingUsages,
+		IotsitewiseActions.ListComputationModelResolveToResources,
+		IotsitewiseActions.ListComputationModels,
+		IotsitewiseActions.ListDashboards,
+		IotsitewiseActions.ListDatasetDataSegmentRelationships,
+		IotsitewiseActions.ListDatasetDataSegments,
+		IotsitewiseActions.ListDatasetExportJobs,
+		IotsitewiseActions.ListDatasets,
+		IotsitewiseActions.ListEnrichmentJobs,
+		IotsitewiseActions.ListExecutions,
+		IotsitewiseActions.ListGateways,
+		IotsitewiseActions.ListInterfaceRelationships,
+		IotsitewiseActions.ListPipelineExecutions,
+		IotsitewiseActions.ListPipelines,
+		IotsitewiseActions.ListPortals,
+		IotsitewiseActions.ListProjectAssets,
+		IotsitewiseActions.ListProjects,
+		IotsitewiseActions.ListQueries,
+		IotsitewiseActions.ListSearches,
+		IotsitewiseActions.ListTasks,
+		IotsitewiseActions.ListTimeSeries,
+		IotsitewiseActions.ListWorkspaces,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IotsitewiseActions.TAG_RESOURCE,
-		IotsitewiseActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IotsitewiseActions.TagResource,
+		IotsitewiseActions.UntagResource,
 	];
 }
 
-const AccessPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):access-policy/(?<accessPolicyId>[^:/?]+)$",
-);
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceName>[^:/?]+)/application/(?<applicationId>[^:/?]+)$",
-);
-const AssetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):asset/(?<assetId>[^:/?]+)$",
-);
-const AssetModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):asset-model/(?<assetModelId>[^:/?]+)$",
-);
-const ComputationModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):computation-model/(?<computationModelId>[^:/?]+)$",
-);
-const DashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):dashboard/(?<dashboardId>[^:/?]+)$",
-);
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):dataset/(?<datasetId>[^:/?]+)$",
-);
-const GatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<gatewayId>[^:/?]+)$",
-);
-const PipelineArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceName>[^:/?]+)/pipeline/(?<pipelineName>[^:/?]+)$",
-);
-const PortalArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):portal/(?<portalId>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectId>[^:/?]+)$",
-);
-const TaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceName>[^:/?]+)/task/(?<taskName>[^:/?]+)$",
-);
-const TimeSeriesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):time-series/(?<timeSeriesId>[^:/?]+)$",
-);
-const WorkspaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a access-policy ARN.
+ */
+export interface IotsitewiseAccessPolicyArnProps {
+	/** The AccessPolicyId component of the ARN. */
+	readonly accessPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-policy ARN.
+ */
+export interface IotsitewiseAccessPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessPolicyId component. */
+	readonly accessPolicyId: string;
+}
+
+/**
+ * Properties for building a application ARN.
+ */
+export interface IotsitewiseApplicationArnProps {
+	/** The WorkspaceName component of the ARN. */
+	readonly workspaceName: string;
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface IotsitewiseApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceName component. */
+	readonly workspaceName: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a asset ARN.
+ */
+export interface IotsitewiseAssetArnProps {
+	/** The AssetId component of the ARN. */
+	readonly assetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a asset ARN.
+ */
+export interface IotsitewiseAssetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssetId component. */
+	readonly assetId: string;
+}
+
+/**
+ * Properties for building a asset-model ARN.
+ */
+export interface IotsitewiseAssetModelArnProps {
+	/** The AssetModelId component of the ARN. */
+	readonly assetModelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a asset-model ARN.
+ */
+export interface IotsitewiseAssetModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssetModelId component. */
+	readonly assetModelId: string;
+}
+
+/**
+ * Properties for building a computation-model ARN.
+ */
+export interface IotsitewiseComputationModelArnProps {
+	/** The ComputationModelId component of the ARN. */
+	readonly computationModelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a computation-model ARN.
+ */
+export interface IotsitewiseComputationModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ComputationModelId component. */
+	readonly computationModelId: string;
+}
+
+/**
+ * Properties for building a dashboard ARN.
+ */
+export interface IotsitewiseDashboardArnProps {
+	/** The DashboardId component of the ARN. */
+	readonly dashboardId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dashboard ARN.
+ */
+export interface IotsitewiseDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DashboardId component. */
+	readonly dashboardId: string;
+}
+
+/**
+ * Properties for building a dataset ARN.
+ */
+export interface IotsitewiseDatasetArnProps {
+	/** The DatasetId component of the ARN. */
+	readonly datasetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset ARN.
+ */
+export interface IotsitewiseDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatasetId component. */
+	readonly datasetId: string;
+}
+
+/**
+ * Properties for building a gateway ARN.
+ */
+export interface IotsitewiseGatewayArnProps {
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gateway ARN.
+ */
+export interface IotsitewiseGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+}
+
+/**
+ * Properties for building a pipeline ARN.
+ */
+export interface IotsitewisePipelineArnProps {
+	/** The WorkspaceName component of the ARN. */
+	readonly workspaceName: string;
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipeline ARN.
+ */
+export interface IotsitewisePipelineArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceName component. */
+	readonly workspaceName: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+}
+
+/**
+ * Properties for building a portal ARN.
+ */
+export interface IotsitewisePortalArnProps {
+	/** The PortalId component of the ARN. */
+	readonly portalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a portal ARN.
+ */
+export interface IotsitewisePortalArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalId component. */
+	readonly portalId: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface IotsitewiseProjectArnProps {
+	/** The ProjectId component of the ARN. */
+	readonly projectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface IotsitewiseProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectId component. */
+	readonly projectId: string;
+}
+
+/**
+ * Properties for building a task ARN.
+ */
+export interface IotsitewiseTaskArnProps {
+	/** The WorkspaceName component of the ARN. */
+	readonly workspaceName: string;
+	/** The TaskName component of the ARN. */
+	readonly taskName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a task ARN.
+ */
+export interface IotsitewiseTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceName component. */
+	readonly workspaceName: string;
+	/** The TaskName component. */
+	readonly taskName: string;
+}
+
+/**
+ * Properties for building a time-series ARN.
+ */
+export interface IotsitewiseTimeSeriesArnProps {
+	/** The TimeSeriesId component of the ARN. */
+	readonly timeSeriesId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a time-series ARN.
+ */
+export interface IotsitewiseTimeSeriesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TimeSeriesId component. */
+	readonly timeSeriesId: string;
+}
+
+/**
+ * Properties for building a workspace ARN.
+ */
+export interface IotsitewiseWorkspaceArnProps {
+	/** The WorkspaceName component of the ARN. */
+	readonly workspaceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workspace ARN.
+ */
+export interface IotsitewiseWorkspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceName component. */
+	readonly workspaceName: string;
+}
+
+const AccessPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):access-policy\/(?<accessPolicyId>[^:/?]+)$/;
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceName>[^:/?]+)\/application\/(?<applicationId>[^:/?]+)$/;
+const AssetArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):asset\/(?<assetId>[^:/?]+)$/;
+const AssetModelArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):asset-model\/(?<assetModelId>[^:/?]+)$/;
+const ComputationModelArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):computation-model\/(?<computationModelId>[^:/?]+)$/;
+const DashboardArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):dashboard\/(?<dashboardId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetId>[^:/?]+)$/;
+const GatewayArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)$/;
+const PipelineArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceName>[^:/?]+)\/pipeline\/(?<pipelineName>[^:/?]+)$/;
+const PortalArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):portal\/(?<portalId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectId>[^:/?]+)$/;
+const TaskArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceName>[^:/?]+)\/task\/(?<taskName>[^:/?]+)$/;
+const TimeSeriesArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):time-series\/(?<timeSeriesId>[^:/?]+)$/;
+const WorkspaceArnRegex =
+	/^arn:(?<partition>[^:]+):iotsitewise:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iotsitewise resources.
@@ -586,16 +966,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the access-policy resource.
 	 */
-	static accessPolicy(props: {
-		/** The AccessPolicyId component of the ARN. */
-		readonly accessPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessPolicy(props: IotsitewiseAccessPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:access-policy/${props.accessPolicyId}`;
 	}
 
@@ -610,12 +981,9 @@ export class IotsitewiseResources {
 	 * Parses a access-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessPolicyId: string;
-	} {
+	static parseAccessPolicyArn(
+		arn: string,
+	): IotsitewiseAccessPolicyArnComponents {
 		const match = AccessPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-policy ARN: ${arn}`);
@@ -631,18 +999,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The WorkspaceName component of the ARN. */
-		readonly workspaceName: string;
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: IotsitewiseApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceName}/application/${props.applicationId}`;
 	}
 
@@ -657,13 +1014,7 @@ export class IotsitewiseResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceName: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): IotsitewiseApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -680,16 +1031,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the asset resource.
 	 */
-	static asset(props: {
-		/** The AssetId component of the ARN. */
-		readonly assetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static asset(props: IotsitewiseAssetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:asset/${props.assetId}`;
 	}
 
@@ -704,12 +1046,7 @@ export class IotsitewiseResources {
 	 * Parses a asset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assetId: string;
-	} {
+	static parseAssetArn(arn: string): IotsitewiseAssetArnComponents {
 		const match = AssetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid asset ARN: ${arn}`);
@@ -725,16 +1062,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the asset-model resource.
 	 */
-	static assetModel(props: {
-		/** The AssetModelId component of the ARN. */
-		readonly assetModelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assetModel(props: IotsitewiseAssetModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:asset-model/${props.assetModelId}`;
 	}
 
@@ -749,12 +1077,7 @@ export class IotsitewiseResources {
 	 * Parses a asset-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssetModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assetModelId: string;
-	} {
+	static parseAssetModelArn(arn: string): IotsitewiseAssetModelArnComponents {
 		const match = AssetModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid asset-model ARN: ${arn}`);
@@ -770,16 +1093,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the computation-model resource.
 	 */
-	static computationModel(props: {
-		/** The ComputationModelId component of the ARN. */
-		readonly computationModelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static computationModel(props: IotsitewiseComputationModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:computation-model/${props.computationModelId}`;
 	}
 
@@ -794,12 +1108,9 @@ export class IotsitewiseResources {
 	 * Parses a computation-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComputationModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		computationModelId: string;
-	} {
+	static parseComputationModelArn(
+		arn: string,
+	): IotsitewiseComputationModelArnComponents {
 		const match = ComputationModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid computation-model ARN: ${arn}`);
@@ -815,16 +1126,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the dashboard resource.
 	 */
-	static dashboard(props: {
-		/** The DashboardId component of the ARN. */
-		readonly dashboardId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboard(props: IotsitewiseDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:dashboard/${props.dashboardId}`;
 	}
 
@@ -839,12 +1141,7 @@ export class IotsitewiseResources {
 	 * Parses a dashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dashboardId: string;
-	} {
+	static parseDashboardArn(arn: string): IotsitewiseDashboardArnComponents {
 		const match = DashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dashboard ARN: ${arn}`);
@@ -860,16 +1157,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the dataset resource.
 	 */
-	static dataset(props: {
-		/** The DatasetId component of the ARN. */
-		readonly datasetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: IotsitewiseDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:dataset/${props.datasetId}`;
 	}
 
@@ -884,12 +1172,7 @@ export class IotsitewiseResources {
 	 * Parses a dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		datasetId: string;
-	} {
+	static parseDatasetArn(arn: string): IotsitewiseDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataset ARN: ${arn}`);
@@ -905,16 +1188,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the gateway resource.
 	 */
-	static gateway(props: {
-		/** The GatewayId component of the ARN. */
-		readonly gatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gateway(props: IotsitewiseGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayId}`;
 	}
 
@@ -929,12 +1203,7 @@ export class IotsitewiseResources {
 	 * Parses a gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		gatewayId: string;
-	} {
+	static parseGatewayArn(arn: string): IotsitewiseGatewayArnComponents {
 		const match = GatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid gateway ARN: ${arn}`);
@@ -950,18 +1219,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the pipeline resource.
 	 */
-	static pipeline(props: {
-		/** The WorkspaceName component of the ARN. */
-		readonly workspaceName: string;
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipeline(props: IotsitewisePipelineArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceName}/pipeline/${props.pipelineName}`;
 	}
 
@@ -976,13 +1234,7 @@ export class IotsitewiseResources {
 	 * Parses a pipeline ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipelineArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceName: string;
-		pipelineName: string;
-	} {
+	static parsePipelineArn(arn: string): IotsitewisePipelineArnComponents {
 		const match = PipelineArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipeline ARN: ${arn}`);
@@ -999,16 +1251,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the portal resource.
 	 */
-	static portal(props: {
-		/** The PortalId component of the ARN. */
-		readonly portalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static portal(props: IotsitewisePortalArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:portal/${props.portalId}`;
 	}
 
@@ -1023,12 +1266,7 @@ export class IotsitewiseResources {
 	 * Parses a portal ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalId: string;
-	} {
+	static parsePortalArn(arn: string): IotsitewisePortalArnComponents {
 		const match = PortalArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid portal ARN: ${arn}`);
@@ -1044,16 +1282,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ProjectId component of the ARN. */
-		readonly projectId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: IotsitewiseProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectId}`;
 	}
 
@@ -1068,12 +1297,7 @@ export class IotsitewiseResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectId: string;
-	} {
+	static parseProjectArn(arn: string): IotsitewiseProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -1089,18 +1313,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the task resource.
 	 */
-	static task(props: {
-		/** The WorkspaceName component of the ARN. */
-		readonly workspaceName: string;
-		/** The TaskName component of the ARN. */
-		readonly taskName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static task(props: IotsitewiseTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceName}/task/${props.taskName}`;
 	}
 
@@ -1115,13 +1328,7 @@ export class IotsitewiseResources {
 	 * Parses a task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceName: string;
-		taskName: string;
-	} {
+	static parseTaskArn(arn: string): IotsitewiseTaskArnComponents {
 		const match = TaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid task ARN: ${arn}`);
@@ -1138,16 +1345,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the time-series resource.
 	 */
-	static timeSeries(props: {
-		/** The TimeSeriesId component of the ARN. */
-		readonly timeSeriesId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static timeSeries(props: IotsitewiseTimeSeriesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:time-series/${props.timeSeriesId}`;
 	}
 
@@ -1162,12 +1360,7 @@ export class IotsitewiseResources {
 	 * Parses a time-series ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTimeSeriesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		timeSeriesId: string;
-	} {
+	static parseTimeSeriesArn(arn: string): IotsitewiseTimeSeriesArnComponents {
 		const match = TimeSeriesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid time-series ARN: ${arn}`);
@@ -1183,16 +1376,7 @@ export class IotsitewiseResources {
 	/**
 	 * Builds an ARN for the workspace resource.
 	 */
-	static workspace(props: {
-		/** The WorkspaceName component of the ARN. */
-		readonly workspaceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workspace(props: IotsitewiseWorkspaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotsitewise:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceName}`;
 	}
 
@@ -1207,12 +1391,7 @@ export class IotsitewiseResources {
 	 * Parses a workspace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkspaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceName: string;
-	} {
+	static parseWorkspaceArn(arn: string): IotsitewiseWorkspaceArnComponents {
 		const match = WorkspaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workspace ARN: ${arn}`);
@@ -1231,524 +1410,514 @@ export class IotsitewiseResources {
  */
 export class IotsitewiseOperations {
 	/** IAM actions required for the AssociateAssets API call. */
-	static readonly ASSOCIATE_ASSETS: string[] = ["iotsitewise:AssociateAssets"];
+	static readonly AssociateAssets: string[] = ["iotsitewise:AssociateAssets"];
 	/** IAM actions required for the AssociateTimeSeriesToAssetProperty API call. */
-	static readonly ASSOCIATE_TIME_SERIES_TO_ASSET_PROPERTY: string[] = [
+	static readonly AssociateTimeSeriesToAssetProperty: string[] = [
 		"iotsitewise:AssociateTimeSeriesToAssetProperty",
 	];
 	/** IAM actions required for the BatchAssociateDataSegmentsToDataset API call. */
-	static readonly BATCH_ASSOCIATE_DATA_SEGMENTS_TO_DATASET: string[] = [
+	static readonly BatchAssociateDataSegmentsToDataset: string[] = [
 		"iotsitewise:BatchAssociateDataSegmentsToDataset",
 	];
 	/** IAM actions required for the BatchAssociateProjectAssets API call. */
-	static readonly BATCH_ASSOCIATE_PROJECT_ASSETS: string[] = [
+	static readonly BatchAssociateProjectAssets: string[] = [
 		"iotsitewise:BatchAssociateProjectAssets",
 	];
 	/** IAM actions required for the BatchDeleteDatasetDataSegments API call. */
-	static readonly BATCH_DELETE_DATASET_DATA_SEGMENTS: string[] = [
+	static readonly BatchDeleteDatasetDataSegments: string[] = [
 		"iotsitewise:BatchDeleteDatasetDataSegments",
 	];
 	/** IAM actions required for the BatchDisassociateDataSegmentsFromDataset API call. */
-	static readonly BATCH_DISASSOCIATE_DATA_SEGMENTS_FROM_DATASET: string[] = [
+	static readonly BatchDisassociateDataSegmentsFromDataset: string[] = [
 		"iotsitewise:BatchDisassociateDataSegmentsFromDataset",
 	];
 	/** IAM actions required for the BatchDisassociateProjectAssets API call. */
-	static readonly BATCH_DISASSOCIATE_PROJECT_ASSETS: string[] = [
+	static readonly BatchDisassociateProjectAssets: string[] = [
 		"iotsitewise:BatchDisassociateProjectAssets",
 	];
 	/** IAM actions required for the BatchGetAssetPropertyAggregates API call. */
-	static readonly BATCH_GET_ASSET_PROPERTY_AGGREGATES: string[] = [
+	static readonly BatchGetAssetPropertyAggregates: string[] = [
 		"iotsitewise:BatchGetAssetPropertyAggregates",
 	];
 	/** IAM actions required for the BatchGetAssetPropertyValue API call. */
-	static readonly BATCH_GET_ASSET_PROPERTY_VALUE: string[] = [
+	static readonly BatchGetAssetPropertyValue: string[] = [
 		"iotsitewise:BatchGetAssetPropertyValue",
 	];
 	/** IAM actions required for the BatchGetAssetPropertyValueHistory API call. */
-	static readonly BATCH_GET_ASSET_PROPERTY_VALUE_HISTORY: string[] = [
+	static readonly BatchGetAssetPropertyValueHistory: string[] = [
 		"iotsitewise:BatchGetAssetPropertyValueHistory",
 	];
 	/** IAM actions required for the BatchPutAssetPropertyValue API call. */
-	static readonly BATCH_PUT_ASSET_PROPERTY_VALUE: string[] = [
+	static readonly BatchPutAssetPropertyValue: string[] = [
 		"iotsitewise:BatchPutAssetPropertyValue",
 	];
 	/** IAM actions required for the CancelEnrichmentJob API call. */
-	static readonly CANCEL_ENRICHMENT_JOB: string[] = [
+	static readonly CancelEnrichmentJob: string[] = [
 		"iotsitewise:CancelEnrichmentJob",
 	];
 	/** IAM actions required for the CancelPipelineExecution API call. */
-	static readonly CANCEL_PIPELINE_EXECUTION: string[] = [
+	static readonly CancelPipelineExecution: string[] = [
 		"iotsitewise:CancelPipelineExecution",
 	];
 	/** IAM actions required for the CancelQuery API call. */
-	static readonly CANCEL_QUERY: string[] = ["iotsitewise:CancelQuery"];
+	static readonly CancelQuery: string[] = ["iotsitewise:CancelQuery"];
 	/** IAM actions required for the CreateAccessPolicy API call. */
-	static readonly CREATE_ACCESS_POLICY: string[] = [
+	static readonly CreateAccessPolicy: string[] = [
 		"iotsitewise:CreateAccessPolicy",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"iotsitewise:CreateApplication",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateAsset API call. */
-	static readonly CREATE_ASSET: string[] = [
+	static readonly CreateAsset: string[] = [
 		"iotsitewise:CreateAsset",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateAssetModel API call. */
-	static readonly CREATE_ASSET_MODEL: string[] = [
+	static readonly CreateAssetModel: string[] = [
 		"iotsitewise:CreateAssetModel",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateAssetModelCompositeModel API call. */
-	static readonly CREATE_ASSET_MODEL_COMPOSITE_MODEL: string[] = [
+	static readonly CreateAssetModelCompositeModel: string[] = [
 		"iotsitewise:CreateAssetModelCompositeModel",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateBulkImportJob API call. */
-	static readonly CREATE_BULK_IMPORT_JOB: string[] = [
+	static readonly CreateBulkImportJob: string[] = [
 		"iotsitewise:CreateBulkImportJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateComputationModel API call. */
-	static readonly CREATE_COMPUTATION_MODEL: string[] = [
+	static readonly CreateComputationModel: string[] = [
 		"iotsitewise:CreateComputationModel",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateDashboard API call. */
-	static readonly CREATE_DASHBOARD: string[] = [
+	static readonly CreateDashboard: string[] = [
 		"iotsitewise:CreateDashboard",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateDataset API call. */
-	static readonly CREATE_DATASET: string[] = [
+	static readonly CreateDataset: string[] = [
 		"iotsitewise:CreateDataset",
 		"iam:PassRole",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateDatasetExportJob API call. */
-	static readonly CREATE_DATASET_EXPORT_JOB: string[] = [
+	static readonly CreateDatasetExportJob: string[] = [
 		"iotsitewise:CreateDatasetExportJob",
 	];
 	/** IAM actions required for the CreateEnrichmentJob API call. */
-	static readonly CREATE_ENRICHMENT_JOB: string[] = [
+	static readonly CreateEnrichmentJob: string[] = [
 		"iotsitewise:CreateEnrichmentJob",
 	];
 	/** IAM actions required for the CreateGateway API call. */
-	static readonly CREATE_GATEWAY: string[] = [
+	static readonly CreateGateway: string[] = [
 		"iotsitewise:CreateGateway",
 		"iam:PassRole",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreatePipeline API call. */
-	static readonly CREATE_PIPELINE: string[] = [
+	static readonly CreatePipeline: string[] = [
 		"iotsitewise:CreatePipeline",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreatePortal API call. */
-	static readonly CREATE_PORTAL: string[] = [
+	static readonly CreatePortal: string[] = [
 		"iotsitewise:CreatePortal",
 		"iam:PassRole",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [
+	static readonly CreateProject: string[] = [
 		"iotsitewise:CreateProject",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateTask API call. */
-	static readonly CREATE_TASK: string[] = [
+	static readonly CreateTask: string[] = [
 		"iotsitewise:CreateTask",
 		"iam:PassRole",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the CreateWorkspace API call. */
-	static readonly CREATE_WORKSPACE: string[] = [
+	static readonly CreateWorkspace: string[] = [
 		"iotsitewise:CreateWorkspace",
 		"iotsitewise:TagResource",
 	];
 	/** IAM actions required for the DeleteAccessPolicy API call. */
-	static readonly DELETE_ACCESS_POLICY: string[] = [
+	static readonly DeleteAccessPolicy: string[] = [
 		"iotsitewise:DeleteAccessPolicy",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"iotsitewise:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteAsset API call. */
-	static readonly DELETE_ASSET: string[] = ["iotsitewise:DeleteAsset"];
+	static readonly DeleteAsset: string[] = ["iotsitewise:DeleteAsset"];
 	/** IAM actions required for the DeleteAssetModel API call. */
-	static readonly DELETE_ASSET_MODEL: string[] = [
-		"iotsitewise:DeleteAssetModel",
-	];
+	static readonly DeleteAssetModel: string[] = ["iotsitewise:DeleteAssetModel"];
 	/** IAM actions required for the DeleteAssetModelCompositeModel API call. */
-	static readonly DELETE_ASSET_MODEL_COMPOSITE_MODEL: string[] = [
+	static readonly DeleteAssetModelCompositeModel: string[] = [
 		"iotsitewise:DeleteAssetModelCompositeModel",
 	];
 	/** IAM actions required for the DeleteAssetModelInterfaceRelationship API call. */
-	static readonly DELETE_ASSET_MODEL_INTERFACE_RELATIONSHIP: string[] = [
+	static readonly DeleteAssetModelInterfaceRelationship: string[] = [
 		"iotsitewise:DeleteAssetModelInterfaceRelationship",
 	];
 	/** IAM actions required for the DeleteComputationModel API call. */
-	static readonly DELETE_COMPUTATION_MODEL: string[] = [
+	static readonly DeleteComputationModel: string[] = [
 		"iotsitewise:DeleteComputationModel",
 	];
 	/** IAM actions required for the DeleteDashboard API call. */
-	static readonly DELETE_DASHBOARD: string[] = ["iotsitewise:DeleteDashboard"];
+	static readonly DeleteDashboard: string[] = ["iotsitewise:DeleteDashboard"];
 	/** IAM actions required for the DeleteDataset API call. */
-	static readonly DELETE_DATASET: string[] = ["iotsitewise:DeleteDataset"];
+	static readonly DeleteDataset: string[] = ["iotsitewise:DeleteDataset"];
 	/** IAM actions required for the DeleteGateway API call. */
-	static readonly DELETE_GATEWAY: string[] = ["iotsitewise:DeleteGateway"];
+	static readonly DeleteGateway: string[] = ["iotsitewise:DeleteGateway"];
 	/** IAM actions required for the DeletePipeline API call. */
-	static readonly DELETE_PIPELINE: string[] = ["iotsitewise:DeletePipeline"];
+	static readonly DeletePipeline: string[] = ["iotsitewise:DeletePipeline"];
 	/** IAM actions required for the DeletePortal API call. */
-	static readonly DELETE_PORTAL: string[] = ["iotsitewise:DeletePortal"];
+	static readonly DeletePortal: string[] = ["iotsitewise:DeletePortal"];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = ["iotsitewise:DeleteProject"];
+	static readonly DeleteProject: string[] = ["iotsitewise:DeleteProject"];
 	/** IAM actions required for the DeleteTask API call. */
-	static readonly DELETE_TASK: string[] = ["iotsitewise:DeleteTask"];
+	static readonly DeleteTask: string[] = ["iotsitewise:DeleteTask"];
 	/** IAM actions required for the DeleteTimeSeries API call. */
-	static readonly DELETE_TIME_SERIES: string[] = [
-		"iotsitewise:DeleteTimeSeries",
-	];
+	static readonly DeleteTimeSeries: string[] = ["iotsitewise:DeleteTimeSeries"];
 	/** IAM actions required for the DeleteWorkspace API call. */
-	static readonly DELETE_WORKSPACE: string[] = ["iotsitewise:DeleteWorkspace"];
+	static readonly DeleteWorkspace: string[] = ["iotsitewise:DeleteWorkspace"];
 	/** IAM actions required for the DescribeAccessPolicy API call. */
-	static readonly DESCRIBE_ACCESS_POLICY: string[] = [
+	static readonly DescribeAccessPolicy: string[] = [
 		"iotsitewise:DescribeAccessPolicy",
 	];
 	/** IAM actions required for the DescribeAction API call. */
-	static readonly DESCRIBE_ACTION: string[] = ["iotsitewise:DescribeAction"];
+	static readonly DescribeAction: string[] = ["iotsitewise:DescribeAction"];
 	/** IAM actions required for the DescribeApplication API call. */
-	static readonly DESCRIBE_APPLICATION: string[] = [
+	static readonly DescribeApplication: string[] = [
 		"iotsitewise:DescribeApplication",
 	];
 	/** IAM actions required for the DescribeAsset API call. */
-	static readonly DESCRIBE_ASSET: string[] = ["iotsitewise:DescribeAsset"];
+	static readonly DescribeAsset: string[] = ["iotsitewise:DescribeAsset"];
 	/** IAM actions required for the DescribeAssetCompositeModel API call. */
-	static readonly DESCRIBE_ASSET_COMPOSITE_MODEL: string[] = [
+	static readonly DescribeAssetCompositeModel: string[] = [
 		"iotsitewise:DescribeAssetCompositeModel",
 	];
 	/** IAM actions required for the DescribeAssetModel API call. */
-	static readonly DESCRIBE_ASSET_MODEL: string[] = [
+	static readonly DescribeAssetModel: string[] = [
 		"iotsitewise:DescribeAssetModel",
 	];
 	/** IAM actions required for the DescribeAssetModelCompositeModel API call. */
-	static readonly DESCRIBE_ASSET_MODEL_COMPOSITE_MODEL: string[] = [
+	static readonly DescribeAssetModelCompositeModel: string[] = [
 		"iotsitewise:DescribeAssetModelCompositeModel",
 	];
 	/** IAM actions required for the DescribeAssetModelInterfaceRelationship API call. */
-	static readonly DESCRIBE_ASSET_MODEL_INTERFACE_RELATIONSHIP: string[] = [
+	static readonly DescribeAssetModelInterfaceRelationship: string[] = [
 		"iotsitewise:DescribeAssetModelInterfaceRelationship",
 	];
 	/** IAM actions required for the DescribeAssetProperty API call. */
-	static readonly DESCRIBE_ASSET_PROPERTY: string[] = [
+	static readonly DescribeAssetProperty: string[] = [
 		"iotsitewise:DescribeAssetProperty",
 	];
 	/** IAM actions required for the DescribeBulkImportJob API call. */
-	static readonly DESCRIBE_BULK_IMPORT_JOB: string[] = [
+	static readonly DescribeBulkImportJob: string[] = [
 		"iotsitewise:DescribeBulkImportJob",
 	];
 	/** IAM actions required for the DescribeComputationModel API call. */
-	static readonly DESCRIBE_COMPUTATION_MODEL: string[] = [
+	static readonly DescribeComputationModel: string[] = [
 		"iotsitewise:DescribeComputationModel",
 	];
 	/** IAM actions required for the DescribeComputationModelExecutionSummary API call. */
-	static readonly DESCRIBE_COMPUTATION_MODEL_EXECUTION_SUMMARY: string[] = [
+	static readonly DescribeComputationModelExecutionSummary: string[] = [
 		"iotsitewise:DescribeComputationModelExecutionSummary",
 	];
 	/** IAM actions required for the DescribeDashboard API call. */
-	static readonly DESCRIBE_DASHBOARD: string[] = [
+	static readonly DescribeDashboard: string[] = [
 		"iotsitewise:DescribeDashboard",
 	];
 	/** IAM actions required for the DescribeDataset API call. */
-	static readonly DESCRIBE_DATASET: string[] = ["iotsitewise:DescribeDataset"];
+	static readonly DescribeDataset: string[] = ["iotsitewise:DescribeDataset"];
 	/** IAM actions required for the DescribeDatasetExportJob API call. */
-	static readonly DESCRIBE_DATASET_EXPORT_JOB: string[] = [
+	static readonly DescribeDatasetExportJob: string[] = [
 		"iotsitewise:DescribeDatasetExportJob",
 	];
 	/** IAM actions required for the DescribeDefaultEncryptionConfiguration API call. */
-	static readonly DESCRIBE_DEFAULT_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly DescribeDefaultEncryptionConfiguration: string[] = [
 		"iotsitewise:DescribeDefaultEncryptionConfiguration",
 	];
 	/** IAM actions required for the DescribeEnrichmentJob API call. */
-	static readonly DESCRIBE_ENRICHMENT_JOB: string[] = [
+	static readonly DescribeEnrichmentJob: string[] = [
 		"iotsitewise:DescribeEnrichmentJob",
 	];
 	/** IAM actions required for the DescribeExecution API call. */
-	static readonly DESCRIBE_EXECUTION: string[] = [
+	static readonly DescribeExecution: string[] = [
 		"iotsitewise:DescribeExecution",
 	];
 	/** IAM actions required for the DescribeGateway API call. */
-	static readonly DESCRIBE_GATEWAY: string[] = ["iotsitewise:DescribeGateway"];
+	static readonly DescribeGateway: string[] = ["iotsitewise:DescribeGateway"];
 	/** IAM actions required for the DescribeGatewayCapabilityConfiguration API call. */
-	static readonly DESCRIBE_GATEWAY_CAPABILITY_CONFIGURATION: string[] = [
+	static readonly DescribeGatewayCapabilityConfiguration: string[] = [
 		"iotsitewise:DescribeGatewayCapabilityConfiguration",
 	];
 	/** IAM actions required for the DescribeLoggingOptions API call. */
-	static readonly DESCRIBE_LOGGING_OPTIONS: string[] = [
+	static readonly DescribeLoggingOptions: string[] = [
 		"iotsitewise:DescribeLoggingOptions",
 	];
 	/** IAM actions required for the DescribePipeline API call. */
-	static readonly DESCRIBE_PIPELINE: string[] = [
-		"iotsitewise:DescribePipeline",
-	];
+	static readonly DescribePipeline: string[] = ["iotsitewise:DescribePipeline"];
 	/** IAM actions required for the DescribePipelineExecution API call. */
-	static readonly DESCRIBE_PIPELINE_EXECUTION: string[] = [
+	static readonly DescribePipelineExecution: string[] = [
 		"iotsitewise:DescribePipelineExecution",
 	];
 	/** IAM actions required for the DescribePortal API call. */
-	static readonly DESCRIBE_PORTAL: string[] = ["iotsitewise:DescribePortal"];
+	static readonly DescribePortal: string[] = ["iotsitewise:DescribePortal"];
 	/** IAM actions required for the DescribeProject API call. */
-	static readonly DESCRIBE_PROJECT: string[] = ["iotsitewise:DescribeProject"];
+	static readonly DescribeProject: string[] = ["iotsitewise:DescribeProject"];
 	/** IAM actions required for the DescribeQuery API call. */
-	static readonly DESCRIBE_QUERY: string[] = ["iotsitewise:DescribeQuery"];
+	static readonly DescribeQuery: string[] = ["iotsitewise:DescribeQuery"];
 	/** IAM actions required for the DescribeSearch API call. */
-	static readonly DESCRIBE_SEARCH: string[] = ["iotsitewise:DescribeSearch"];
+	static readonly DescribeSearch: string[] = ["iotsitewise:DescribeSearch"];
 	/** IAM actions required for the DescribeStorageConfiguration API call. */
-	static readonly DESCRIBE_STORAGE_CONFIGURATION: string[] = [
+	static readonly DescribeStorageConfiguration: string[] = [
 		"iotsitewise:DescribeStorageConfiguration",
 	];
 	/** IAM actions required for the DescribeTask API call. */
-	static readonly DESCRIBE_TASK: string[] = ["iotsitewise:DescribeTask"];
+	static readonly DescribeTask: string[] = ["iotsitewise:DescribeTask"];
 	/** IAM actions required for the DescribeTimeSeries API call. */
-	static readonly DESCRIBE_TIME_SERIES: string[] = [
+	static readonly DescribeTimeSeries: string[] = [
 		"iotsitewise:DescribeTimeSeries",
 	];
 	/** IAM actions required for the DescribeWorkspace API call. */
-	static readonly DESCRIBE_WORKSPACE: string[] = [
+	static readonly DescribeWorkspace: string[] = [
 		"iotsitewise:DescribeWorkspace",
 	];
 	/** IAM actions required for the DisassociateAssets API call. */
-	static readonly DISASSOCIATE_ASSETS: string[] = [
+	static readonly DisassociateAssets: string[] = [
 		"iotsitewise:DisassociateAssets",
 	];
 	/** IAM actions required for the DisassociateTimeSeriesFromAssetProperty API call. */
-	static readonly DISASSOCIATE_TIME_SERIES_FROM_ASSET_PROPERTY: string[] = [
+	static readonly DisassociateTimeSeriesFromAssetProperty: string[] = [
 		"iotsitewise:DisassociateTimeSeriesFromAssetProperty",
 	];
 	/** IAM actions required for the ExecuteAction API call. */
-	static readonly EXECUTE_ACTION: string[] = ["iotsitewise:ExecuteAction"];
+	static readonly ExecuteAction: string[] = ["iotsitewise:ExecuteAction"];
 	/** IAM actions required for the ExecuteQuery API call. */
-	static readonly EXECUTE_QUERY: string[] = ["iotsitewise:ExecuteQuery"];
+	static readonly ExecuteQuery: string[] = ["iotsitewise:ExecuteQuery"];
 	/** IAM actions required for the GetAssetPropertyAggregates API call. */
-	static readonly GET_ASSET_PROPERTY_AGGREGATES: string[] = [
+	static readonly opGetAssetPropertyAggregates: string[] = [
 		"iotsitewise:GetAssetPropertyAggregates",
 	];
 	/** IAM actions required for the GetAssetPropertyValue API call. */
-	static readonly GET_ASSET_PROPERTY_VALUE: string[] = [
+	static readonly opGetAssetPropertyValue: string[] = [
 		"iotsitewise:GetAssetPropertyValue",
 	];
 	/** IAM actions required for the GetAssetPropertyValueHistory API call. */
-	static readonly GET_ASSET_PROPERTY_VALUE_HISTORY: string[] = [
+	static readonly opGetAssetPropertyValueHistory: string[] = [
 		"iotsitewise:GetAssetPropertyValueHistory",
 	];
 	/** IAM actions required for the GetCaptureData API call. */
-	static readonly GET_CAPTURE_DATA: string[] = ["iotsitewise:GetCaptureData"];
+	static readonly opGetCaptureData: string[] = ["iotsitewise:GetCaptureData"];
 	/** IAM actions required for the GetInterpolatedAssetPropertyValues API call. */
-	static readonly GET_INTERPOLATED_ASSET_PROPERTY_VALUES: string[] = [
+	static readonly opGetInterpolatedAssetPropertyValues: string[] = [
 		"iotsitewise:GetInterpolatedAssetPropertyValues",
 	];
 	/** IAM actions required for the GetQueryResults API call. */
-	static readonly GET_QUERY_RESULTS: string[] = ["iotsitewise:GetQueryResults"];
+	static readonly opGetQueryResults: string[] = ["iotsitewise:GetQueryResults"];
 	/** IAM actions required for the GetSearchResults API call. */
-	static readonly GET_SEARCH_RESULTS: string[] = [
+	static readonly opGetSearchResults: string[] = [
 		"iotsitewise:GetSearchResults",
 	];
 	/** IAM actions required for the InvokeAssistant API call. */
-	static readonly INVOKE_ASSISTANT: string[] = ["iotsitewise:InvokeAssistant"];
+	static readonly InvokeAssistant: string[] = ["iotsitewise:InvokeAssistant"];
 	/** IAM actions required for the ListAccessPolicies API call. */
-	static readonly LIST_ACCESS_POLICIES: string[] = [
+	static readonly ListAccessPolicies: string[] = [
 		"iotsitewise:ListAccessPolicies",
 	];
 	/** IAM actions required for the ListActions API call. */
-	static readonly LIST_ACTIONS: string[] = ["iotsitewise:ListActions"];
+	static readonly ListActions: string[] = ["iotsitewise:ListActions"];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
-		"iotsitewise:ListApplications",
-	];
+	static readonly ListApplications: string[] = ["iotsitewise:ListApplications"];
 	/** IAM actions required for the ListAssetModelCompositeModels API call. */
-	static readonly LIST_ASSET_MODEL_COMPOSITE_MODELS: string[] = [
+	static readonly ListAssetModelCompositeModels: string[] = [
 		"iotsitewise:ListAssetModelCompositeModels",
 	];
 	/** IAM actions required for the ListAssetModelProperties API call. */
-	static readonly LIST_ASSET_MODEL_PROPERTIES: string[] = [
+	static readonly ListAssetModelProperties: string[] = [
 		"iotsitewise:ListAssetModelProperties",
 	];
 	/** IAM actions required for the ListAssetModels API call. */
-	static readonly LIST_ASSET_MODELS: string[] = ["iotsitewise:ListAssetModels"];
+	static readonly ListAssetModels: string[] = ["iotsitewise:ListAssetModels"];
 	/** IAM actions required for the ListAssetProperties API call. */
-	static readonly LIST_ASSET_PROPERTIES: string[] = [
+	static readonly ListAssetProperties: string[] = [
 		"iotsitewise:ListAssetProperties",
 	];
 	/** IAM actions required for the ListAssetRelationships API call. */
-	static readonly LIST_ASSET_RELATIONSHIPS: string[] = [
+	static readonly ListAssetRelationships: string[] = [
 		"iotsitewise:ListAssetRelationships",
 	];
 	/** IAM actions required for the ListAssets API call. */
-	static readonly LIST_ASSETS: string[] = ["iotsitewise:ListAssets"];
+	static readonly ListAssets: string[] = ["iotsitewise:ListAssets"];
 	/** IAM actions required for the ListAssociatedAssets API call. */
-	static readonly LIST_ASSOCIATED_ASSETS: string[] = [
+	static readonly ListAssociatedAssets: string[] = [
 		"iotsitewise:ListAssociatedAssets",
 	];
 	/** IAM actions required for the ListBulkImportJobs API call. */
-	static readonly LIST_BULK_IMPORT_JOBS: string[] = [
+	static readonly ListBulkImportJobs: string[] = [
 		"iotsitewise:ListBulkImportJobs",
 	];
 	/** IAM actions required for the ListCompositionRelationships API call. */
-	static readonly LIST_COMPOSITION_RELATIONSHIPS: string[] = [
+	static readonly ListCompositionRelationships: string[] = [
 		"iotsitewise:ListCompositionRelationships",
 	];
 	/** IAM actions required for the ListComputationModelDataBindingUsages API call. */
-	static readonly LIST_COMPUTATION_MODEL_DATA_BINDING_USAGES: string[] = [
+	static readonly ListComputationModelDataBindingUsages: string[] = [
 		"iotsitewise:ListComputationModelDataBindingUsages",
 	];
 	/** IAM actions required for the ListComputationModelResolveToResources API call. */
-	static readonly LIST_COMPUTATION_MODEL_RESOLVE_TO_RESOURCES: string[] = [
+	static readonly ListComputationModelResolveToResources: string[] = [
 		"iotsitewise:ListComputationModelResolveToResources",
 	];
 	/** IAM actions required for the ListComputationModels API call. */
-	static readonly LIST_COMPUTATION_MODELS: string[] = [
+	static readonly ListComputationModels: string[] = [
 		"iotsitewise:ListComputationModels",
 	];
 	/** IAM actions required for the ListDashboards API call. */
-	static readonly LIST_DASHBOARDS: string[] = ["iotsitewise:ListDashboards"];
+	static readonly ListDashboards: string[] = ["iotsitewise:ListDashboards"];
 	/** IAM actions required for the ListDatasetDataSegmentRelationships API call. */
-	static readonly LIST_DATASET_DATA_SEGMENT_RELATIONSHIPS: string[] = [
+	static readonly ListDatasetDataSegmentRelationships: string[] = [
 		"iotsitewise:ListDatasetDataSegmentRelationships",
 	];
 	/** IAM actions required for the ListDatasetDataSegments API call. */
-	static readonly LIST_DATASET_DATA_SEGMENTS: string[] = [
+	static readonly ListDatasetDataSegments: string[] = [
 		"iotsitewise:ListDatasetDataSegments",
 	];
 	/** IAM actions required for the ListDatasetExportJobs API call. */
-	static readonly LIST_DATASET_EXPORT_JOBS: string[] = [
+	static readonly ListDatasetExportJobs: string[] = [
 		"iotsitewise:ListDatasetExportJobs",
 	];
 	/** IAM actions required for the ListDatasets API call. */
-	static readonly LIST_DATASETS: string[] = ["iotsitewise:ListDatasets"];
+	static readonly ListDatasets: string[] = ["iotsitewise:ListDatasets"];
 	/** IAM actions required for the ListEnrichmentJobs API call. */
-	static readonly LIST_ENRICHMENT_JOBS: string[] = [
+	static readonly ListEnrichmentJobs: string[] = [
 		"iotsitewise:ListEnrichmentJobs",
 	];
 	/** IAM actions required for the ListExecutions API call. */
-	static readonly LIST_EXECUTIONS: string[] = ["iotsitewise:ListExecutions"];
+	static readonly ListExecutions: string[] = ["iotsitewise:ListExecutions"];
 	/** IAM actions required for the ListGateways API call. */
-	static readonly LIST_GATEWAYS: string[] = ["iotsitewise:ListGateways"];
+	static readonly ListGateways: string[] = ["iotsitewise:ListGateways"];
 	/** IAM actions required for the ListInterfaceRelationships API call. */
-	static readonly LIST_INTERFACE_RELATIONSHIPS: string[] = [
+	static readonly ListInterfaceRelationships: string[] = [
 		"iotsitewise:ListInterfaceRelationships",
 	];
 	/** IAM actions required for the ListPipelineExecutions API call. */
-	static readonly LIST_PIPELINE_EXECUTIONS: string[] = [
+	static readonly ListPipelineExecutions: string[] = [
 		"iotsitewise:ListPipelineExecutions",
 	];
 	/** IAM actions required for the ListPipelines API call. */
-	static readonly LIST_PIPELINES: string[] = ["iotsitewise:ListPipelines"];
+	static readonly ListPipelines: string[] = ["iotsitewise:ListPipelines"];
 	/** IAM actions required for the ListPortals API call. */
-	static readonly LIST_PORTALS: string[] = ["iotsitewise:ListPortals"];
+	static readonly ListPortals: string[] = ["iotsitewise:ListPortals"];
 	/** IAM actions required for the ListProjectAssets API call. */
-	static readonly LIST_PROJECT_ASSETS: string[] = [
+	static readonly ListProjectAssets: string[] = [
 		"iotsitewise:ListProjectAssets",
 	];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly LIST_PROJECTS: string[] = ["iotsitewise:ListProjects"];
+	static readonly ListProjects: string[] = ["iotsitewise:ListProjects"];
 	/** IAM actions required for the ListQueries API call. */
-	static readonly LIST_QUERIES: string[] = ["iotsitewise:ListQueries"];
+	static readonly ListQueries: string[] = ["iotsitewise:ListQueries"];
 	/** IAM actions required for the ListSearches API call. */
-	static readonly LIST_SEARCHES: string[] = ["iotsitewise:ListSearches"];
+	static readonly ListSearches: string[] = ["iotsitewise:ListSearches"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"iotsitewise:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTasks API call. */
-	static readonly LIST_TASKS: string[] = ["iotsitewise:ListTasks"];
+	static readonly ListTasks: string[] = ["iotsitewise:ListTasks"];
 	/** IAM actions required for the ListTimeSeries API call. */
-	static readonly LIST_TIME_SERIES: string[] = ["iotsitewise:ListTimeSeries"];
+	static readonly ListTimeSeries: string[] = ["iotsitewise:ListTimeSeries"];
 	/** IAM actions required for the ListWorkspaces API call. */
-	static readonly LIST_WORKSPACES: string[] = ["iotsitewise:ListWorkspaces"];
+	static readonly ListWorkspaces: string[] = ["iotsitewise:ListWorkspaces"];
 	/** IAM actions required for the PutAssetModelInterfaceRelationship API call. */
-	static readonly PUT_ASSET_MODEL_INTERFACE_RELATIONSHIP: string[] = [
+	static readonly PutAssetModelInterfaceRelationship: string[] = [
 		"iotsitewise:PutAssetModelInterfaceRelationship",
 	];
 	/** IAM actions required for the PutDefaultEncryptionConfiguration API call. */
-	static readonly PUT_DEFAULT_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly PutDefaultEncryptionConfiguration: string[] = [
 		"iotsitewise:PutDefaultEncryptionConfiguration",
 	];
 	/** IAM actions required for the PutLoggingOptions API call. */
-	static readonly PUT_LOGGING_OPTIONS: string[] = [
+	static readonly PutLoggingOptions: string[] = [
 		"iotsitewise:PutLoggingOptions",
 	];
 	/** IAM actions required for the PutStorageConfiguration API call. */
-	static readonly PUT_STORAGE_CONFIGURATION: string[] = [
+	static readonly PutStorageConfiguration: string[] = [
 		"iam:PassRole",
 		"iotsitewise:PutStorageConfiguration",
 	];
 	/** IAM actions required for the StartPipelineExecution API call. */
-	static readonly START_PIPELINE_EXECUTION: string[] = [
+	static readonly StartPipelineExecution: string[] = [
 		"iotsitewise:StartPipelineExecution",
 	];
 	/** IAM actions required for the StartQuery API call. */
-	static readonly START_QUERY: string[] = ["iotsitewise:StartQuery"];
+	static readonly StartQuery: string[] = ["iotsitewise:StartQuery"];
 	/** IAM actions required for the StartSearch API call. */
-	static readonly START_SEARCH: string[] = ["iotsitewise:StartSearch"];
+	static readonly StartSearch: string[] = ["iotsitewise:StartSearch"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["iotsitewise:TagResource"];
+	static readonly TagResource: string[] = ["iotsitewise:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["iotsitewise:UntagResource"];
+	static readonly UntagResource: string[] = ["iotsitewise:UntagResource"];
 	/** IAM actions required for the UpdateAccessPolicy API call. */
-	static readonly UPDATE_ACCESS_POLICY: string[] = [
+	static readonly UpdateAccessPolicy: string[] = [
 		"iotsitewise:UpdateAccessPolicy",
 	];
 	/** IAM actions required for the UpdateAsset API call. */
-	static readonly UPDATE_ASSET: string[] = ["iotsitewise:UpdateAsset"];
+	static readonly UpdateAsset: string[] = ["iotsitewise:UpdateAsset"];
 	/** IAM actions required for the UpdateAssetModel API call. */
-	static readonly UPDATE_ASSET_MODEL: string[] = [
-		"iotsitewise:UpdateAssetModel",
-	];
+	static readonly UpdateAssetModel: string[] = ["iotsitewise:UpdateAssetModel"];
 	/** IAM actions required for the UpdateAssetModelCompositeModel API call. */
-	static readonly UPDATE_ASSET_MODEL_COMPOSITE_MODEL: string[] = [
+	static readonly UpdateAssetModelCompositeModel: string[] = [
 		"iam:PassRole",
 		"iotsitewise:UpdateAssetModelCompositeModel",
 	];
 	/** IAM actions required for the UpdateAssetProperty API call. */
-	static readonly UPDATE_ASSET_PROPERTY: string[] = [
+	static readonly UpdateAssetProperty: string[] = [
 		"iotsitewise:UpdateAssetProperty",
 	];
 	/** IAM actions required for the UpdateComputationModel API call. */
-	static readonly UPDATE_COMPUTATION_MODEL: string[] = [
+	static readonly UpdateComputationModel: string[] = [
 		"iotsitewise:UpdateComputationModel",
 	];
 	/** IAM actions required for the UpdateDashboard API call. */
-	static readonly UPDATE_DASHBOARD: string[] = ["iotsitewise:UpdateDashboard"];
+	static readonly UpdateDashboard: string[] = ["iotsitewise:UpdateDashboard"];
 	/** IAM actions required for the UpdateDataset API call. */
-	static readonly UPDATE_DATASET: string[] = [
+	static readonly UpdateDataset: string[] = [
 		"iam:PassRole",
 		"iotsitewise:UpdateDataset",
 	];
 	/** IAM actions required for the UpdateGateway API call. */
-	static readonly UPDATE_GATEWAY: string[] = ["iotsitewise:UpdateGateway"];
+	static readonly UpdateGateway: string[] = ["iotsitewise:UpdateGateway"];
 	/** IAM actions required for the UpdateGatewayCapabilityConfiguration API call. */
-	static readonly UPDATE_GATEWAY_CAPABILITY_CONFIGURATION: string[] = [
+	static readonly UpdateGatewayCapabilityConfiguration: string[] = [
 		"iotsitewise:UpdateGatewayCapabilityConfiguration",
 	];
 	/** IAM actions required for the UpdatePipeline API call. */
-	static readonly UPDATE_PIPELINE: string[] = ["iotsitewise:UpdatePipeline"];
+	static readonly UpdatePipeline: string[] = ["iotsitewise:UpdatePipeline"];
 	/** IAM actions required for the UpdatePortal API call. */
-	static readonly UPDATE_PORTAL: string[] = [
+	static readonly UpdatePortal: string[] = [
 		"iam:PassRole",
 		"iotsitewise:UpdatePortal",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UPDATE_PROJECT: string[] = ["iotsitewise:UpdateProject"];
+	static readonly UpdateProject: string[] = ["iotsitewise:UpdateProject"];
 	/** IAM actions required for the UpdateTask API call. */
-	static readonly UPDATE_TASK: string[] = [
+	static readonly UpdateTask: string[] = [
 		"iam:PassRole",
 		"iotsitewise:UpdateTask",
 	];
 	/** IAM actions required for the UpdateWorkspace API call. */
-	static readonly UPDATE_WORKSPACE: string[] = ["iotsitewise:UpdateWorkspace"];
+	static readonly UpdateWorkspace: string[] = ["iotsitewise:UpdateWorkspace"];
 }
 
 /**
@@ -1756,98 +1925,98 @@ export class IotsitewiseOperations {
  */
 export class IotsitewiseConditions {
 	/** Condition keys applicable to the CreateAccessPolicy action. */
-	static readonly CREATE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAsset action. */
-	static readonly CREATE_ASSET_CONDITION_KEYS: string[] = [
+	static readonly CreateAssetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAssetModel action. */
-	static readonly CREATE_ASSET_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateAssetModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateComputationModel action. */
-	static readonly CREATE_COMPUTATION_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateComputationModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDashboard action. */
-	static readonly CREATE_DASHBOARD_CONDITION_KEYS: string[] = [
+	static readonly CreateDashboardConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataset action. */
-	static readonly CREATE_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGateway action. */
-	static readonly CREATE_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly CreateGatewayConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePipeline action. */
-	static readonly CREATE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly CreatePipelineConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"iotsitewise:taskArns",
 	];
 	/** Condition keys applicable to the CreatePortal action. */
-	static readonly CREATE_PORTAL_CONDITION_KEYS: string[] = [
+	static readonly CreatePortalConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTask action. */
-	static readonly CREATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkspace action. */
-	static readonly CREATE_WORKSPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkspaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeTimeSeries action. */
-	static readonly DESCRIBE_TIME_SERIES_CONDITION_KEYS: string[] = [
+	static readonly DescribeTimeSeriesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdatePipeline action. */
-	static readonly UPDATE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly UpdatePipelineConditionKeys: string[] = [
 		"iotsitewise:taskArns",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iotsitewise:assetHierarchyPath (String) */
 	static readonly ASSET_HIERARCHY_PATH = "iotsitewise:assetHierarchyPath";
 	/** Condition key: iotsitewise:childAssetId (String) */

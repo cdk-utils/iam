@@ -13,28 +13,82 @@ export class EventsbilltoawsActions {
 	static readonly SERVICE_PREFIX = "eventsbilltoaws";
 
 	/** [Write] eventsbilltoaws:approve */
-	static readonly APPROVE = "eventsbilltoaws:approve";
+	static readonly approve = "eventsbilltoaws:approve";
 	/** [Read] eventsbilltoaws:info */
-	static readonly INFO = "eventsbilltoaws:info";
+	static readonly info = "eventsbilltoaws:info";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [EventsbilltoawsActions.INFO];
+	static readonly AllReadActions: string[] = [EventsbilltoawsActions.info];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [EventsbilltoawsActions.APPROVE];
+	static readonly AllWriteActions: string[] = [EventsbilltoawsActions.approve];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ApproveArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eventsbilltoaws:(?<region>[^:]*):(?<account>[^:]*):(?<relativeId>[^:/?]+)$",
-);
-const InfoArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eventsbilltoaws:(?<region>[^:]*):(?<account>[^:]*):(?<relativeId>[^:/?]+)$",
-);
+/**
+ * Properties for building a approve ARN.
+ */
+export interface EventsbilltoawsApproveArnProps {
+	/** The RelativeId component of the ARN. */
+	readonly relativeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a approve ARN.
+ */
+export interface EventsbilltoawsApproveArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RelativeId component. */
+	readonly relativeId: string;
+}
+
+/**
+ * Properties for building a info ARN.
+ */
+export interface EventsbilltoawsInfoArnProps {
+	/** The RelativeId component of the ARN. */
+	readonly relativeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a info ARN.
+ */
+export interface EventsbilltoawsInfoArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RelativeId component. */
+	readonly relativeId: string;
+}
+
+const ApproveArnRegex =
+	/^arn:(?<partition>[^:]+):eventsbilltoaws:(?<region>[^:]*):(?<account>[^:]*):(?<relativeId>[^:/?]+)$/;
+const InfoArnRegex =
+	/^arn:(?<partition>[^:]+):eventsbilltoaws:(?<region>[^:]*):(?<account>[^:]*):(?<relativeId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for eventsbilltoaws resources.
@@ -43,16 +97,7 @@ export class EventsbilltoawsResources {
 	/**
 	 * Builds an ARN for the approve resource.
 	 */
-	static approve(props: {
-		/** The RelativeId component of the ARN. */
-		readonly relativeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static approve(props: EventsbilltoawsApproveArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eventsbilltoaws:${props.region ?? "*"}:${props.account ?? "*"}:${props.relativeId}`;
 	}
 
@@ -67,12 +112,7 @@ export class EventsbilltoawsResources {
 	 * Parses a approve ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApproveArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		relativeId: string;
-	} {
+	static parseApproveArn(arn: string): EventsbilltoawsApproveArnComponents {
 		const match = ApproveArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid approve ARN: ${arn}`);
@@ -88,16 +128,7 @@ export class EventsbilltoawsResources {
 	/**
 	 * Builds an ARN for the info resource.
 	 */
-	static info(props: {
-		/** The RelativeId component of the ARN. */
-		readonly relativeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static info(props: EventsbilltoawsInfoArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eventsbilltoaws:${props.region ?? "*"}:${props.account ?? "*"}:${props.relativeId}`;
 	}
 
@@ -112,12 +143,7 @@ export class EventsbilltoawsResources {
 	 * Parses a info ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInfoArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		relativeId: string;
-	} {
+	static parseInfoArn(arn: string): EventsbilltoawsInfoArnComponents {
 		const match = InfoArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid info ARN: ${arn}`);
@@ -136,24 +162,24 @@ export class EventsbilltoawsResources {
  */
 export class EventsbilltoawsConditions {
 	/** Condition keys applicable to the approve action. */
-	static readonly APPROVE_CONDITION_KEYS: string[] = [
+	static readonly approveConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the info action. */
-	static readonly INFO_CONDITION_KEYS: string[] = [
+	static readonly infoConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

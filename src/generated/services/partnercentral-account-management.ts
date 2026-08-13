@@ -13,41 +13,41 @@ export class PartnercentralAccountManagementActions {
 	static readonly SERVICE_PREFIX = "partnercentral-account-management";
 
 	/** [Write] partnercentral-account-management:AccessLegacyPartnerCentral */
-	static readonly ACCESS_LEGACY_PARTNER_CENTRAL =
+	static readonly AccessLegacyPartnerCentral =
 		"partnercentral-account-management:AccessLegacyPartnerCentral";
 	/** [Write] partnercentral-account-management:AccessMarketingCentral */
-	static readonly ACCESS_MARKETING_CENTRAL =
+	static readonly AccessMarketingCentral =
 		"partnercentral-account-management:AccessMarketingCentral";
 	/** [Write] partnercentral-account-management:AccessProServeTools */
-	static readonly ACCESS_PRO_SERVE_TOOLS =
+	static readonly AccessProServeTools =
 		"partnercentral-account-management:AccessProServeTools";
 	/** [Write] partnercentral-account-management:AssociatePartnerAccount */
-	static readonly ASSOCIATE_PARTNER_ACCOUNT =
+	static readonly AssociatePartnerAccount =
 		"partnercentral-account-management:AssociatePartnerAccount";
 	/** [Write] partnercentral-account-management:AssociatePartnerUser */
-	static readonly ASSOCIATE_PARTNER_USER =
+	static readonly AssociatePartnerUser =
 		"partnercentral-account-management:AssociatePartnerUser";
 	/** [Write] partnercentral-account-management:DisassociatePartnerUser */
-	static readonly DISASSOCIATE_PARTNER_USER =
+	static readonly DisassociatePartnerUser =
 		"partnercentral-account-management:DisassociatePartnerUser";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PartnercentralAccountManagementActions.ACCESS_LEGACY_PARTNER_CENTRAL,
-		PartnercentralAccountManagementActions.ACCESS_MARKETING_CENTRAL,
-		PartnercentralAccountManagementActions.ACCESS_PRO_SERVE_TOOLS,
-		PartnercentralAccountManagementActions.ASSOCIATE_PARTNER_ACCOUNT,
-		PartnercentralAccountManagementActions.ASSOCIATE_PARTNER_USER,
-		PartnercentralAccountManagementActions.DISASSOCIATE_PARTNER_USER,
+	static readonly AllWriteActions: string[] = [
+		PartnercentralAccountManagementActions.AccessLegacyPartnerCentral,
+		PartnercentralAccountManagementActions.AccessMarketingCentral,
+		PartnercentralAccountManagementActions.AccessProServeTools,
+		PartnercentralAccountManagementActions.AssociatePartnerAccount,
+		PartnercentralAccountManagementActions.AssociatePartnerUser,
+		PartnercentralAccountManagementActions.DisassociatePartnerUser,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -55,15 +55,15 @@ export class PartnercentralAccountManagementActions {
  */
 export class PartnercentralAccountManagementConditions {
 	/** Condition keys applicable to the AccessLegacyPartnerCentral action. */
-	static readonly ACCESS_LEGACY_PARTNER_CENTRAL_CONDITION_KEYS: string[] = [
+	static readonly AccessLegacyPartnerCentralConditionKeys: string[] = [
 		"partnercentral-account-management:LegacyPartnerCentralRole",
 	];
 	/** Condition keys applicable to the AccessMarketingCentral action. */
-	static readonly ACCESS_MARKETING_CENTRAL_CONDITION_KEYS: string[] = [
+	static readonly AccessMarketingCentralConditionKeys: string[] = [
 		"partnercentral-account-management:MarketingCentralRole",
 	];
 	/** Condition keys applicable to the AccessProServeTools action. */
-	static readonly ACCESS_PRO_SERVE_TOOLS_CONDITION_KEYS: string[] = [
+	static readonly AccessProServeToolsConditionKeys: string[] = [
 		"partnercentral-account-management:ProServeRole",
 	];
 

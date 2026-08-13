@@ -13,463 +13,709 @@ export class LogsActions {
 	static readonly SERVICE_PREFIX = "logs";
 
 	/** [Write] logs:AssociateKmsKey */
-	static readonly ASSOCIATE_KMS_KEY = "logs:AssociateKmsKey";
+	static readonly AssociateKmsKey = "logs:AssociateKmsKey";
 	/** [Write] logs:AssociateSourceToS3TableIntegration */
-	static readonly ASSOCIATE_SOURCE_TO_S3_TABLE_INTEGRATION =
+	static readonly AssociateSourceToS3TableIntegration =
 		"logs:AssociateSourceToS3TableIntegration";
 	/** [Write] logs:CallWithBearerToken */
-	static readonly CALL_WITH_BEARER_TOKEN = "logs:CallWithBearerToken";
+	static readonly CallWithBearerToken = "logs:CallWithBearerToken";
 	/** [Write] logs:CancelExportTask */
-	static readonly CANCEL_EXPORT_TASK = "logs:CancelExportTask";
+	static readonly CancelExportTask = "logs:CancelExportTask";
 	/** [Write] logs:CancelImportTask */
-	static readonly CANCEL_IMPORT_TASK = "logs:CancelImportTask";
+	static readonly CancelImportTask = "logs:CancelImportTask";
 	/** [Write] logs:CreateDelivery */
-	static readonly CREATE_DELIVERY = "logs:CreateDelivery";
+	static readonly CreateDelivery = "logs:CreateDelivery";
 	/** [Write] logs:CreateExportTask */
-	static readonly CREATE_EXPORT_TASK = "logs:CreateExportTask";
+	static readonly CreateExportTask = "logs:CreateExportTask";
 	/** [Write] logs:CreateImportTask */
-	static readonly CREATE_IMPORT_TASK = "logs:CreateImportTask";
+	static readonly CreateImportTask = "logs:CreateImportTask";
 	/** [Write] logs:CreateLogAnomalyDetector */
-	static readonly CREATE_LOG_ANOMALY_DETECTOR = "logs:CreateLogAnomalyDetector";
+	static readonly CreateLogAnomalyDetector = "logs:CreateLogAnomalyDetector";
 	/** [Write] logs:CreateLogDelivery */
-	static readonly CREATE_LOG_DELIVERY = "logs:CreateLogDelivery";
+	static readonly CreateLogDelivery = "logs:CreateLogDelivery";
 	/** [Write] logs:CreateLogGroup */
-	static readonly CREATE_LOG_GROUP = "logs:CreateLogGroup";
+	static readonly CreateLogGroup = "logs:CreateLogGroup";
 	/** [Write] logs:CreateLogStream */
-	static readonly CREATE_LOG_STREAM = "logs:CreateLogStream";
+	static readonly CreateLogStream = "logs:CreateLogStream";
 	/** [Write] logs:CreateLookupTable */
-	static readonly CREATE_LOOKUP_TABLE = "logs:CreateLookupTable";
+	static readonly CreateLookupTable = "logs:CreateLookupTable";
 	/** [Write] logs:CreateScheduledQuery */
-	static readonly CREATE_SCHEDULED_QUERY = "logs:CreateScheduledQuery";
+	static readonly CreateScheduledQuery = "logs:CreateScheduledQuery";
 	/** [Write] logs:DeleteAccountPolicy */
-	static readonly DELETE_ACCOUNT_POLICY = "logs:DeleteAccountPolicy";
+	static readonly DeleteAccountPolicy = "logs:DeleteAccountPolicy";
 	/** [Write] logs:DeleteDataProtectionPolicy */
-	static readonly DELETE_DATA_PROTECTION_POLICY =
+	static readonly DeleteDataProtectionPolicy =
 		"logs:DeleteDataProtectionPolicy";
 	/** [Write] logs:DeleteDelivery */
-	static readonly DELETE_DELIVERY = "logs:DeleteDelivery";
+	static readonly DeleteDelivery = "logs:DeleteDelivery";
 	/** [Write] logs:DeleteDeliveryDestination */
-	static readonly DELETE_DELIVERY_DESTINATION =
-		"logs:DeleteDeliveryDestination";
+	static readonly DeleteDeliveryDestination = "logs:DeleteDeliveryDestination";
 	/** [Write] logs:DeleteDeliveryDestinationPolicy */
-	static readonly DELETE_DELIVERY_DESTINATION_POLICY =
+	static readonly DeleteDeliveryDestinationPolicy =
 		"logs:DeleteDeliveryDestinationPolicy";
 	/** [Write] logs:DeleteDeliverySource */
-	static readonly DELETE_DELIVERY_SOURCE = "logs:DeleteDeliverySource";
+	static readonly DeleteDeliverySource = "logs:DeleteDeliverySource";
 	/** [Write] logs:DeleteDestination */
-	static readonly DELETE_DESTINATION = "logs:DeleteDestination";
+	static readonly DeleteDestination = "logs:DeleteDestination";
 	/** [Write] logs:DeleteIndexPolicy */
-	static readonly DELETE_INDEX_POLICY = "logs:DeleteIndexPolicy";
+	static readonly DeleteIndexPolicy = "logs:DeleteIndexPolicy";
 	/** [Write] logs:DeleteIntegration */
-	static readonly DELETE_INTEGRATION = "logs:DeleteIntegration";
+	static readonly DeleteIntegration = "logs:DeleteIntegration";
 	/** [Write] logs:DeleteLogAnomalyDetector */
-	static readonly DELETE_LOG_ANOMALY_DETECTOR = "logs:DeleteLogAnomalyDetector";
+	static readonly DeleteLogAnomalyDetector = "logs:DeleteLogAnomalyDetector";
 	/** [Write] logs:DeleteLogDelivery */
-	static readonly DELETE_LOG_DELIVERY = "logs:DeleteLogDelivery";
+	static readonly DeleteLogDelivery = "logs:DeleteLogDelivery";
 	/** [Write] logs:DeleteLogGroup */
-	static readonly DELETE_LOG_GROUP = "logs:DeleteLogGroup";
+	static readonly DeleteLogGroup = "logs:DeleteLogGroup";
 	/** [Write] logs:DeleteLogStream */
-	static readonly DELETE_LOG_STREAM = "logs:DeleteLogStream";
+	static readonly DeleteLogStream = "logs:DeleteLogStream";
 	/** [Write] logs:DeleteLookupTable */
-	static readonly DELETE_LOOKUP_TABLE = "logs:DeleteLookupTable";
+	static readonly DeleteLookupTable = "logs:DeleteLookupTable";
 	/** [Write] logs:DeleteMetricFilter */
-	static readonly DELETE_METRIC_FILTER = "logs:DeleteMetricFilter";
+	static readonly DeleteMetricFilter = "logs:DeleteMetricFilter";
 	/** [Write] logs:DeletePipelineRule */
-	static readonly DELETE_PIPELINE_RULE = "logs:DeletePipelineRule";
+	static readonly DeletePipelineRule = "logs:DeletePipelineRule";
 	/** [Write] logs:DeleteQueryDefinition */
-	static readonly DELETE_QUERY_DEFINITION = "logs:DeleteQueryDefinition";
+	static readonly DeleteQueryDefinition = "logs:DeleteQueryDefinition";
 	/** [PermissionManagement] logs:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "logs:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "logs:DeleteResourcePolicy";
 	/** [Write] logs:DeleteRetentionPolicy */
-	static readonly DELETE_RETENTION_POLICY = "logs:DeleteRetentionPolicy";
+	static readonly DeleteRetentionPolicy = "logs:DeleteRetentionPolicy";
 	/** [Write] logs:DeleteScheduledQuery */
-	static readonly DELETE_SCHEDULED_QUERY = "logs:DeleteScheduledQuery";
+	static readonly DeleteScheduledQuery = "logs:DeleteScheduledQuery";
 	/** [Write] logs:DeleteSubscriptionFilter */
-	static readonly DELETE_SUBSCRIPTION_FILTER = "logs:DeleteSubscriptionFilter";
+	static readonly DeleteSubscriptionFilter = "logs:DeleteSubscriptionFilter";
 	/** [Write] logs:DeleteSyslogConfiguration */
-	static readonly DELETE_SYSLOG_CONFIGURATION =
-		"logs:DeleteSyslogConfiguration";
+	static readonly DeleteSyslogConfiguration = "logs:DeleteSyslogConfiguration";
 	/** [Write] logs:DeleteTransformer */
-	static readonly DELETE_TRANSFORMER = "logs:DeleteTransformer";
+	static readonly DeleteTransformer = "logs:DeleteTransformer";
 	/** [List] logs:DescribeAccountPolicies */
-	static readonly DESCRIBE_ACCOUNT_POLICIES = "logs:DescribeAccountPolicies";
+	static readonly DescribeAccountPolicies = "logs:DescribeAccountPolicies";
 	/** [List] logs:DescribeConfigurationTemplates */
-	static readonly DESCRIBE_CONFIGURATION_TEMPLATES =
+	static readonly DescribeConfigurationTemplates =
 		"logs:DescribeConfigurationTemplates";
 	/** [List] logs:DescribeDeliveries */
-	static readonly DESCRIBE_DELIVERIES = "logs:DescribeDeliveries";
+	static readonly DescribeDeliveries = "logs:DescribeDeliveries";
 	/** [List] logs:DescribeDeliveryDestinations */
-	static readonly DESCRIBE_DELIVERY_DESTINATIONS =
+	static readonly DescribeDeliveryDestinations =
 		"logs:DescribeDeliveryDestinations";
 	/** [List] logs:DescribeDeliverySources */
-	static readonly DESCRIBE_DELIVERY_SOURCES = "logs:DescribeDeliverySources";
+	static readonly DescribeDeliverySources = "logs:DescribeDeliverySources";
 	/** [List] logs:DescribeDestinations */
-	static readonly DESCRIBE_DESTINATIONS = "logs:DescribeDestinations";
+	static readonly DescribeDestinations = "logs:DescribeDestinations";
 	/** [List] logs:DescribeExportTasks */
-	static readonly DESCRIBE_EXPORT_TASKS = "logs:DescribeExportTasks";
+	static readonly DescribeExportTasks = "logs:DescribeExportTasks";
 	/** [List] logs:DescribeFieldIndexes */
-	static readonly DESCRIBE_FIELD_INDEXES = "logs:DescribeFieldIndexes";
+	static readonly DescribeFieldIndexes = "logs:DescribeFieldIndexes";
 	/** [List] logs:DescribeImportTaskBatches */
-	static readonly DESCRIBE_IMPORT_TASK_BATCHES =
-		"logs:DescribeImportTaskBatches";
+	static readonly DescribeImportTaskBatches = "logs:DescribeImportTaskBatches";
 	/** [List] logs:DescribeImportTasks */
-	static readonly DESCRIBE_IMPORT_TASKS = "logs:DescribeImportTasks";
+	static readonly DescribeImportTasks = "logs:DescribeImportTasks";
 	/** [List] logs:DescribeIndexPolicies */
-	static readonly DESCRIBE_INDEX_POLICIES = "logs:DescribeIndexPolicies";
+	static readonly DescribeIndexPolicies = "logs:DescribeIndexPolicies";
 	/** [List] logs:DescribeLogGroups */
-	static readonly DESCRIBE_LOG_GROUPS = "logs:DescribeLogGroups";
+	static readonly DescribeLogGroups = "logs:DescribeLogGroups";
 	/** [List] logs:DescribeLogStreams */
-	static readonly DESCRIBE_LOG_STREAMS = "logs:DescribeLogStreams";
+	static readonly DescribeLogStreams = "logs:DescribeLogStreams";
 	/** [List] logs:DescribeLookupTables */
-	static readonly DESCRIBE_LOOKUP_TABLES = "logs:DescribeLookupTables";
+	static readonly DescribeLookupTables = "logs:DescribeLookupTables";
 	/** [List] logs:DescribeMetricFilters */
-	static readonly DESCRIBE_METRIC_FILTERS = "logs:DescribeMetricFilters";
+	static readonly DescribeMetricFilters = "logs:DescribeMetricFilters";
 	/** [List] logs:DescribeQueries */
-	static readonly DESCRIBE_QUERIES = "logs:DescribeQueries";
+	static readonly DescribeQueries = "logs:DescribeQueries";
 	/** [List] logs:DescribeQueryDefinitions */
-	static readonly DESCRIBE_QUERY_DEFINITIONS = "logs:DescribeQueryDefinitions";
+	static readonly DescribeQueryDefinitions = "logs:DescribeQueryDefinitions";
 	/** [List] logs:DescribeResourcePolicies */
-	static readonly DESCRIBE_RESOURCE_POLICIES = "logs:DescribeResourcePolicies";
+	static readonly DescribeResourcePolicies = "logs:DescribeResourcePolicies";
 	/** [List] logs:DescribeSubscriptionFilters */
-	static readonly DESCRIBE_SUBSCRIPTION_FILTERS =
+	static readonly DescribeSubscriptionFilters =
 		"logs:DescribeSubscriptionFilters";
 	/** [Write] logs:DisassociateKmsKey */
-	static readonly DISASSOCIATE_KMS_KEY = "logs:DisassociateKmsKey";
+	static readonly DisassociateKmsKey = "logs:DisassociateKmsKey";
 	/** [Write] logs:DisassociateSourceFromS3TableIntegration */
-	static readonly DISASSOCIATE_SOURCE_FROM_S3_TABLE_INTEGRATION =
+	static readonly DisassociateSourceFromS3TableIntegration =
 		"logs:DisassociateSourceFromS3TableIntegration";
 	/** [Read] logs:FilterLogEvents */
-	static readonly FILTER_LOG_EVENTS = "logs:FilterLogEvents";
+	static readonly FilterLogEvents = "logs:FilterLogEvents";
 	/** [Read] logs:GetDataProtectionPolicy */
-	static readonly GET_DATA_PROTECTION_POLICY = "logs:GetDataProtectionPolicy";
+	static readonly actionGetDataProtectionPolicy =
+		"logs:GetDataProtectionPolicy";
 	/** [Read] logs:GetDelivery */
-	static readonly GET_DELIVERY = "logs:GetDelivery";
+	static readonly actionGetDelivery = "logs:GetDelivery";
 	/** [Read] logs:GetDeliveryDestination */
-	static readonly GET_DELIVERY_DESTINATION = "logs:GetDeliveryDestination";
+	static readonly actionGetDeliveryDestination = "logs:GetDeliveryDestination";
 	/** [Read] logs:GetDeliveryDestinationPolicy */
-	static readonly GET_DELIVERY_DESTINATION_POLICY =
+	static readonly actionGetDeliveryDestinationPolicy =
 		"logs:GetDeliveryDestinationPolicy";
 	/** [Read] logs:GetDeliverySource */
-	static readonly GET_DELIVERY_SOURCE = "logs:GetDeliverySource";
+	static readonly actionGetDeliverySource = "logs:GetDeliverySource";
 	/** [Read] logs:GetIntegration */
-	static readonly GET_INTEGRATION = "logs:GetIntegration";
+	static readonly actionGetIntegration = "logs:GetIntegration";
 	/** [Read] logs:GetLogAnomalyDetector */
-	static readonly GET_LOG_ANOMALY_DETECTOR = "logs:GetLogAnomalyDetector";
+	static readonly actionGetLogAnomalyDetector = "logs:GetLogAnomalyDetector";
 	/** [Read] logs:GetLogDelivery */
-	static readonly GET_LOG_DELIVERY = "logs:GetLogDelivery";
+	static readonly actionGetLogDelivery = "logs:GetLogDelivery";
 	/** [Read] logs:GetLogEvents */
-	static readonly GET_LOG_EVENTS = "logs:GetLogEvents";
+	static readonly actionGetLogEvents = "logs:GetLogEvents";
 	/** [Read] logs:GetLogFields */
-	static readonly GET_LOG_FIELDS = "logs:GetLogFields";
+	static readonly actionGetLogFields = "logs:GetLogFields";
 	/** [Read] logs:GetLogGroupFields */
-	static readonly GET_LOG_GROUP_FIELDS = "logs:GetLogGroupFields";
+	static readonly actionGetLogGroupFields = "logs:GetLogGroupFields";
 	/** [Read] logs:GetLogRecord */
-	static readonly GET_LOG_RECORD = "logs:GetLogRecord";
+	static readonly actionGetLogRecord = "logs:GetLogRecord";
 	/** [Read] logs:GetLookupTable */
-	static readonly GET_LOOKUP_TABLE = "logs:GetLookupTable";
+	static readonly actionGetLookupTable = "logs:GetLookupTable";
 	/** [Read] logs:GetQueryResults */
-	static readonly GET_QUERY_RESULTS = "logs:GetQueryResults";
+	static readonly actionGetQueryResults = "logs:GetQueryResults";
 	/** [Read] logs:GetScheduledQuery */
-	static readonly GET_SCHEDULED_QUERY = "logs:GetScheduledQuery";
+	static readonly actionGetScheduledQuery = "logs:GetScheduledQuery";
 	/** [Read] logs:GetScheduledQueryHistory */
-	static readonly GET_SCHEDULED_QUERY_HISTORY = "logs:GetScheduledQueryHistory";
+	static readonly actionGetScheduledQueryHistory =
+		"logs:GetScheduledQueryHistory";
 	/** [Read] logs:GetStorageTierPolicy */
-	static readonly GET_STORAGE_TIER_POLICY = "logs:GetStorageTierPolicy";
+	static readonly actionGetStorageTierPolicy = "logs:GetStorageTierPolicy";
 	/** [Read] logs:GetTransformer */
-	static readonly GET_TRANSFORMER = "logs:GetTransformer";
+	static readonly actionGetTransformer = "logs:GetTransformer";
 	/** [Write] logs:IntegrateWithS3Table */
-	static readonly INTEGRATE_WITH_S3_TABLE = "logs:IntegrateWithS3Table";
+	static readonly IntegrateWithS3Table = "logs:IntegrateWithS3Table";
 	/** [Write] logs:Link */
-	static readonly LINK = "logs:Link";
+	static readonly Link = "logs:Link";
 	/** [List] logs:ListAggregateLogGroupSummaries */
-	static readonly LIST_AGGREGATE_LOG_GROUP_SUMMARIES =
+	static readonly ListAggregateLogGroupSummaries =
 		"logs:ListAggregateLogGroupSummaries";
 	/** [List] logs:ListAnomalies */
-	static readonly LIST_ANOMALIES = "logs:ListAnomalies";
+	static readonly ListAnomalies = "logs:ListAnomalies";
 	/** [List] logs:ListEntitiesForLogGroup */
-	static readonly LIST_ENTITIES_FOR_LOG_GROUP = "logs:ListEntitiesForLogGroup";
+	static readonly ListEntitiesForLogGroup = "logs:ListEntitiesForLogGroup";
 	/** [List] logs:ListIntegrations */
-	static readonly LIST_INTEGRATIONS = "logs:ListIntegrations";
+	static readonly ListIntegrations = "logs:ListIntegrations";
 	/** [List] logs:ListLogAnomalyDetectors */
-	static readonly LIST_LOG_ANOMALY_DETECTORS = "logs:ListLogAnomalyDetectors";
+	static readonly ListLogAnomalyDetectors = "logs:ListLogAnomalyDetectors";
 	/** [List] logs:ListLogDeliveries */
-	static readonly LIST_LOG_DELIVERIES = "logs:ListLogDeliveries";
+	static readonly ListLogDeliveries = "logs:ListLogDeliveries";
 	/** [List] logs:ListLogGroups */
-	static readonly LIST_LOG_GROUPS = "logs:ListLogGroups";
+	static readonly ListLogGroups = "logs:ListLogGroups";
 	/** [List] logs:ListLogGroupsForEntity */
-	static readonly LIST_LOG_GROUPS_FOR_ENTITY = "logs:ListLogGroupsForEntity";
+	static readonly ListLogGroupsForEntity = "logs:ListLogGroupsForEntity";
 	/** [List] logs:ListLogGroupsForQuery */
-	static readonly LIST_LOG_GROUPS_FOR_QUERY = "logs:ListLogGroupsForQuery";
+	static readonly ListLogGroupsForQuery = "logs:ListLogGroupsForQuery";
 	/** [List] logs:ListScheduledQueries */
-	static readonly LIST_SCHEDULED_QUERIES = "logs:ListScheduledQueries";
+	static readonly ListScheduledQueries = "logs:ListScheduledQueries";
 	/** [List] logs:ListSourcesForS3TableIntegration */
-	static readonly LIST_SOURCES_FOR_S3_TABLE_INTEGRATION =
+	static readonly ListSourcesForS3TableIntegration =
 		"logs:ListSourcesForS3TableIntegration";
 	/** [List] logs:ListSyslogConfigurations */
-	static readonly LIST_SYSLOG_CONFIGURATIONS = "logs:ListSyslogConfigurations";
+	static readonly ListSyslogConfigurations = "logs:ListSyslogConfigurations";
 	/** [List] logs:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "logs:ListTagsForResource";
+	static readonly ListTagsForResource = "logs:ListTagsForResource";
 	/** [List] logs:ListTagsLogGroup */
-	static readonly LIST_TAGS_LOG_GROUP = "logs:ListTagsLogGroup";
+	static readonly ListTagsLogGroup = "logs:ListTagsLogGroup";
 	/** [Write] logs:ProcessWithPipeline */
-	static readonly PROCESS_WITH_PIPELINE = "logs:ProcessWithPipeline";
+	static readonly ProcessWithPipeline = "logs:ProcessWithPipeline";
 	/** [Write] logs:PutAccountPolicy */
-	static readonly PUT_ACCOUNT_POLICY = "logs:PutAccountPolicy";
+	static readonly PutAccountPolicy = "logs:PutAccountPolicy";
 	/** [Write] logs:PutBearerTokenAuthentication */
-	static readonly PUT_BEARER_TOKEN_AUTHENTICATION =
+	static readonly PutBearerTokenAuthentication =
 		"logs:PutBearerTokenAuthentication";
 	/** [Write] logs:PutDataProtectionPolicy */
-	static readonly PUT_DATA_PROTECTION_POLICY = "logs:PutDataProtectionPolicy";
+	static readonly PutDataProtectionPolicy = "logs:PutDataProtectionPolicy";
 	/** [Write] logs:PutDeliveryDestination */
-	static readonly PUT_DELIVERY_DESTINATION = "logs:PutDeliveryDestination";
+	static readonly PutDeliveryDestination = "logs:PutDeliveryDestination";
 	/** [Write] logs:PutDeliveryDestinationPolicy */
-	static readonly PUT_DELIVERY_DESTINATION_POLICY =
+	static readonly PutDeliveryDestinationPolicy =
 		"logs:PutDeliveryDestinationPolicy";
 	/** [Write] logs:PutDeliverySource */
-	static readonly PUT_DELIVERY_SOURCE = "logs:PutDeliverySource";
+	static readonly PutDeliverySource = "logs:PutDeliverySource";
 	/** [Write] logs:PutDestination */
-	static readonly PUT_DESTINATION = "logs:PutDestination";
+	static readonly PutDestination = "logs:PutDestination";
 	/** [Write] logs:PutDestinationPolicy */
-	static readonly PUT_DESTINATION_POLICY = "logs:PutDestinationPolicy";
+	static readonly PutDestinationPolicy = "logs:PutDestinationPolicy";
 	/** [Write] logs:PutIndexPolicy */
-	static readonly PUT_INDEX_POLICY = "logs:PutIndexPolicy";
+	static readonly PutIndexPolicy = "logs:PutIndexPolicy";
 	/** [Write] logs:PutIntegration */
-	static readonly PUT_INTEGRATION = "logs:PutIntegration";
+	static readonly PutIntegration = "logs:PutIntegration";
 	/** [Write] logs:PutLogEvents */
-	static readonly PUT_LOG_EVENTS = "logs:PutLogEvents";
+	static readonly PutLogEvents = "logs:PutLogEvents";
 	/** [Write] logs:PutLogGroupDeletionProtection */
-	static readonly PUT_LOG_GROUP_DELETION_PROTECTION =
+	static readonly PutLogGroupDeletionProtection =
 		"logs:PutLogGroupDeletionProtection";
 	/** [Write] logs:PutMetricFilter */
-	static readonly PUT_METRIC_FILTER = "logs:PutMetricFilter";
+	static readonly PutMetricFilter = "logs:PutMetricFilter";
 	/** [Write] logs:PutPipelineRule */
-	static readonly PUT_PIPELINE_RULE = "logs:PutPipelineRule";
+	static readonly PutPipelineRule = "logs:PutPipelineRule";
 	/** [Write] logs:PutQueryDefinition */
-	static readonly PUT_QUERY_DEFINITION = "logs:PutQueryDefinition";
+	static readonly PutQueryDefinition = "logs:PutQueryDefinition";
 	/** [PermissionManagement] logs:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "logs:PutResourcePolicy";
+	static readonly PutResourcePolicy = "logs:PutResourcePolicy";
 	/** [Write] logs:PutRetentionPolicy */
-	static readonly PUT_RETENTION_POLICY = "logs:PutRetentionPolicy";
+	static readonly PutRetentionPolicy = "logs:PutRetentionPolicy";
 	/** [Write] logs:PutStorageTierPolicy */
-	static readonly PUT_STORAGE_TIER_POLICY = "logs:PutStorageTierPolicy";
+	static readonly PutStorageTierPolicy = "logs:PutStorageTierPolicy";
 	/** [Write] logs:PutSubscriptionFilter */
-	static readonly PUT_SUBSCRIPTION_FILTER = "logs:PutSubscriptionFilter";
+	static readonly PutSubscriptionFilter = "logs:PutSubscriptionFilter";
 	/** [Write] logs:PutSyslogConfiguration */
-	static readonly PUT_SYSLOG_CONFIGURATION = "logs:PutSyslogConfiguration";
+	static readonly PutSyslogConfiguration = "logs:PutSyslogConfiguration";
 	/** [Write] logs:PutTransformer */
-	static readonly PUT_TRANSFORMER = "logs:PutTransformer";
+	static readonly PutTransformer = "logs:PutTransformer";
 	/** [Read] logs:StartLiveTail */
-	static readonly START_LIVE_TAIL = "logs:StartLiveTail";
+	static readonly StartLiveTail = "logs:StartLiveTail";
 	/** [Read] logs:StartQuery */
-	static readonly START_QUERY = "logs:StartQuery";
+	static readonly StartQuery = "logs:StartQuery";
 	/** [Read] logs:StopLiveTail */
-	static readonly STOP_LIVE_TAIL = "logs:StopLiveTail";
+	static readonly StopLiveTail = "logs:StopLiveTail";
 	/** [Read] logs:StopQuery */
-	static readonly STOP_QUERY = "logs:StopQuery";
+	static readonly StopQuery = "logs:StopQuery";
 	/** [Tagging] logs:TagLogGroup */
-	static readonly TAG_LOG_GROUP = "logs:TagLogGroup";
+	static readonly TagLogGroup = "logs:TagLogGroup";
 	/** [Tagging] logs:TagResource */
-	static readonly TAG_RESOURCE = "logs:TagResource";
+	static readonly TagResource = "logs:TagResource";
 	/** [Read] logs:TestMetricFilter */
-	static readonly TEST_METRIC_FILTER = "logs:TestMetricFilter";
+	static readonly TestMetricFilter = "logs:TestMetricFilter";
 	/** [Read] logs:TestTransformer */
-	static readonly TEST_TRANSFORMER = "logs:TestTransformer";
+	static readonly TestTransformer = "logs:TestTransformer";
 	/** [Read] logs:Unmask */
-	static readonly UNMASK = "logs:Unmask";
+	static readonly Unmask = "logs:Unmask";
 	/** [Tagging] logs:UntagLogGroup */
-	static readonly UNTAG_LOG_GROUP = "logs:UntagLogGroup";
+	static readonly UntagLogGroup = "logs:UntagLogGroup";
 	/** [Tagging] logs:UntagResource */
-	static readonly UNTAG_RESOURCE = "logs:UntagResource";
+	static readonly UntagResource = "logs:UntagResource";
 	/** [Write] logs:UpdateAnomaly */
-	static readonly UPDATE_ANOMALY = "logs:UpdateAnomaly";
+	static readonly UpdateAnomaly = "logs:UpdateAnomaly";
 	/** [Write] logs:UpdateDeliveryConfiguration */
-	static readonly UPDATE_DELIVERY_CONFIGURATION =
+	static readonly UpdateDeliveryConfiguration =
 		"logs:UpdateDeliveryConfiguration";
 	/** [Write] logs:UpdateLogAnomalyDetector */
-	static readonly UPDATE_LOG_ANOMALY_DETECTOR = "logs:UpdateLogAnomalyDetector";
+	static readonly UpdateLogAnomalyDetector = "logs:UpdateLogAnomalyDetector";
 	/** [Write] logs:UpdateLogDelivery */
-	static readonly UPDATE_LOG_DELIVERY = "logs:UpdateLogDelivery";
+	static readonly UpdateLogDelivery = "logs:UpdateLogDelivery";
 	/** [Write] logs:UpdateLookupTable */
-	static readonly UPDATE_LOOKUP_TABLE = "logs:UpdateLookupTable";
+	static readonly UpdateLookupTable = "logs:UpdateLookupTable";
 	/** [Write] logs:UpdateScheduledQuery */
-	static readonly UPDATE_SCHEDULED_QUERY = "logs:UpdateScheduledQuery";
+	static readonly UpdateScheduledQuery = "logs:UpdateScheduledQuery";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LogsActions.FILTER_LOG_EVENTS,
-		LogsActions.GET_DATA_PROTECTION_POLICY,
-		LogsActions.GET_DELIVERY,
-		LogsActions.GET_DELIVERY_DESTINATION,
-		LogsActions.GET_DELIVERY_DESTINATION_POLICY,
-		LogsActions.GET_DELIVERY_SOURCE,
-		LogsActions.GET_INTEGRATION,
-		LogsActions.GET_LOG_ANOMALY_DETECTOR,
-		LogsActions.GET_LOG_DELIVERY,
-		LogsActions.GET_LOG_EVENTS,
-		LogsActions.GET_LOG_FIELDS,
-		LogsActions.GET_LOG_GROUP_FIELDS,
-		LogsActions.GET_LOG_RECORD,
-		LogsActions.GET_LOOKUP_TABLE,
-		LogsActions.GET_QUERY_RESULTS,
-		LogsActions.GET_SCHEDULED_QUERY,
-		LogsActions.GET_SCHEDULED_QUERY_HISTORY,
-		LogsActions.GET_STORAGE_TIER_POLICY,
-		LogsActions.GET_TRANSFORMER,
-		LogsActions.START_LIVE_TAIL,
-		LogsActions.START_QUERY,
-		LogsActions.STOP_LIVE_TAIL,
-		LogsActions.STOP_QUERY,
-		LogsActions.TEST_METRIC_FILTER,
-		LogsActions.TEST_TRANSFORMER,
-		LogsActions.UNMASK,
+	static readonly AllReadActions: string[] = [
+		LogsActions.FilterLogEvents,
+		LogsActions.actionGetDataProtectionPolicy,
+		LogsActions.actionGetDelivery,
+		LogsActions.actionGetDeliveryDestination,
+		LogsActions.actionGetDeliveryDestinationPolicy,
+		LogsActions.actionGetDeliverySource,
+		LogsActions.actionGetIntegration,
+		LogsActions.actionGetLogAnomalyDetector,
+		LogsActions.actionGetLogDelivery,
+		LogsActions.actionGetLogEvents,
+		LogsActions.actionGetLogFields,
+		LogsActions.actionGetLogGroupFields,
+		LogsActions.actionGetLogRecord,
+		LogsActions.actionGetLookupTable,
+		LogsActions.actionGetQueryResults,
+		LogsActions.actionGetScheduledQuery,
+		LogsActions.actionGetScheduledQueryHistory,
+		LogsActions.actionGetStorageTierPolicy,
+		LogsActions.actionGetTransformer,
+		LogsActions.StartLiveTail,
+		LogsActions.StartQuery,
+		LogsActions.StopLiveTail,
+		LogsActions.StopQuery,
+		LogsActions.TestMetricFilter,
+		LogsActions.TestTransformer,
+		LogsActions.Unmask,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LogsActions.ASSOCIATE_KMS_KEY,
-		LogsActions.ASSOCIATE_SOURCE_TO_S3_TABLE_INTEGRATION,
-		LogsActions.CALL_WITH_BEARER_TOKEN,
-		LogsActions.CANCEL_EXPORT_TASK,
-		LogsActions.CANCEL_IMPORT_TASK,
-		LogsActions.CREATE_DELIVERY,
-		LogsActions.CREATE_EXPORT_TASK,
-		LogsActions.CREATE_IMPORT_TASK,
-		LogsActions.CREATE_LOG_ANOMALY_DETECTOR,
-		LogsActions.CREATE_LOG_DELIVERY,
-		LogsActions.CREATE_LOG_GROUP,
-		LogsActions.CREATE_LOG_STREAM,
-		LogsActions.CREATE_LOOKUP_TABLE,
-		LogsActions.CREATE_SCHEDULED_QUERY,
-		LogsActions.DELETE_ACCOUNT_POLICY,
-		LogsActions.DELETE_DATA_PROTECTION_POLICY,
-		LogsActions.DELETE_DELIVERY,
-		LogsActions.DELETE_DELIVERY_DESTINATION,
-		LogsActions.DELETE_DELIVERY_DESTINATION_POLICY,
-		LogsActions.DELETE_DELIVERY_SOURCE,
-		LogsActions.DELETE_DESTINATION,
-		LogsActions.DELETE_INDEX_POLICY,
-		LogsActions.DELETE_INTEGRATION,
-		LogsActions.DELETE_LOG_ANOMALY_DETECTOR,
-		LogsActions.DELETE_LOG_DELIVERY,
-		LogsActions.DELETE_LOG_GROUP,
-		LogsActions.DELETE_LOG_STREAM,
-		LogsActions.DELETE_LOOKUP_TABLE,
-		LogsActions.DELETE_METRIC_FILTER,
-		LogsActions.DELETE_PIPELINE_RULE,
-		LogsActions.DELETE_QUERY_DEFINITION,
-		LogsActions.DELETE_RETENTION_POLICY,
-		LogsActions.DELETE_SCHEDULED_QUERY,
-		LogsActions.DELETE_SUBSCRIPTION_FILTER,
-		LogsActions.DELETE_SYSLOG_CONFIGURATION,
-		LogsActions.DELETE_TRANSFORMER,
-		LogsActions.DISASSOCIATE_KMS_KEY,
-		LogsActions.DISASSOCIATE_SOURCE_FROM_S3_TABLE_INTEGRATION,
-		LogsActions.INTEGRATE_WITH_S3_TABLE,
-		LogsActions.LINK,
-		LogsActions.PROCESS_WITH_PIPELINE,
-		LogsActions.PUT_ACCOUNT_POLICY,
-		LogsActions.PUT_BEARER_TOKEN_AUTHENTICATION,
-		LogsActions.PUT_DATA_PROTECTION_POLICY,
-		LogsActions.PUT_DELIVERY_DESTINATION,
-		LogsActions.PUT_DELIVERY_DESTINATION_POLICY,
-		LogsActions.PUT_DELIVERY_SOURCE,
-		LogsActions.PUT_DESTINATION,
-		LogsActions.PUT_DESTINATION_POLICY,
-		LogsActions.PUT_INDEX_POLICY,
-		LogsActions.PUT_INTEGRATION,
-		LogsActions.PUT_LOG_EVENTS,
-		LogsActions.PUT_LOG_GROUP_DELETION_PROTECTION,
-		LogsActions.PUT_METRIC_FILTER,
-		LogsActions.PUT_PIPELINE_RULE,
-		LogsActions.PUT_QUERY_DEFINITION,
-		LogsActions.PUT_RETENTION_POLICY,
-		LogsActions.PUT_STORAGE_TIER_POLICY,
-		LogsActions.PUT_SUBSCRIPTION_FILTER,
-		LogsActions.PUT_SYSLOG_CONFIGURATION,
-		LogsActions.PUT_TRANSFORMER,
-		LogsActions.UPDATE_ANOMALY,
-		LogsActions.UPDATE_DELIVERY_CONFIGURATION,
-		LogsActions.UPDATE_LOG_ANOMALY_DETECTOR,
-		LogsActions.UPDATE_LOG_DELIVERY,
-		LogsActions.UPDATE_LOOKUP_TABLE,
-		LogsActions.UPDATE_SCHEDULED_QUERY,
+	static readonly AllWriteActions: string[] = [
+		LogsActions.AssociateKmsKey,
+		LogsActions.AssociateSourceToS3TableIntegration,
+		LogsActions.CallWithBearerToken,
+		LogsActions.CancelExportTask,
+		LogsActions.CancelImportTask,
+		LogsActions.CreateDelivery,
+		LogsActions.CreateExportTask,
+		LogsActions.CreateImportTask,
+		LogsActions.CreateLogAnomalyDetector,
+		LogsActions.CreateLogDelivery,
+		LogsActions.CreateLogGroup,
+		LogsActions.CreateLogStream,
+		LogsActions.CreateLookupTable,
+		LogsActions.CreateScheduledQuery,
+		LogsActions.DeleteAccountPolicy,
+		LogsActions.DeleteDataProtectionPolicy,
+		LogsActions.DeleteDelivery,
+		LogsActions.DeleteDeliveryDestination,
+		LogsActions.DeleteDeliveryDestinationPolicy,
+		LogsActions.DeleteDeliverySource,
+		LogsActions.DeleteDestination,
+		LogsActions.DeleteIndexPolicy,
+		LogsActions.DeleteIntegration,
+		LogsActions.DeleteLogAnomalyDetector,
+		LogsActions.DeleteLogDelivery,
+		LogsActions.DeleteLogGroup,
+		LogsActions.DeleteLogStream,
+		LogsActions.DeleteLookupTable,
+		LogsActions.DeleteMetricFilter,
+		LogsActions.DeletePipelineRule,
+		LogsActions.DeleteQueryDefinition,
+		LogsActions.DeleteRetentionPolicy,
+		LogsActions.DeleteScheduledQuery,
+		LogsActions.DeleteSubscriptionFilter,
+		LogsActions.DeleteSyslogConfiguration,
+		LogsActions.DeleteTransformer,
+		LogsActions.DisassociateKmsKey,
+		LogsActions.DisassociateSourceFromS3TableIntegration,
+		LogsActions.IntegrateWithS3Table,
+		LogsActions.Link,
+		LogsActions.ProcessWithPipeline,
+		LogsActions.PutAccountPolicy,
+		LogsActions.PutBearerTokenAuthentication,
+		LogsActions.PutDataProtectionPolicy,
+		LogsActions.PutDeliveryDestination,
+		LogsActions.PutDeliveryDestinationPolicy,
+		LogsActions.PutDeliverySource,
+		LogsActions.PutDestination,
+		LogsActions.PutDestinationPolicy,
+		LogsActions.PutIndexPolicy,
+		LogsActions.PutIntegration,
+		LogsActions.PutLogEvents,
+		LogsActions.PutLogGroupDeletionProtection,
+		LogsActions.PutMetricFilter,
+		LogsActions.PutPipelineRule,
+		LogsActions.PutQueryDefinition,
+		LogsActions.PutRetentionPolicy,
+		LogsActions.PutStorageTierPolicy,
+		LogsActions.PutSubscriptionFilter,
+		LogsActions.PutSyslogConfiguration,
+		LogsActions.PutTransformer,
+		LogsActions.UpdateAnomaly,
+		LogsActions.UpdateDeliveryConfiguration,
+		LogsActions.UpdateLogAnomalyDetector,
+		LogsActions.UpdateLogDelivery,
+		LogsActions.UpdateLookupTable,
+		LogsActions.UpdateScheduledQuery,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LogsActions.DESCRIBE_ACCOUNT_POLICIES,
-		LogsActions.DESCRIBE_CONFIGURATION_TEMPLATES,
-		LogsActions.DESCRIBE_DELIVERIES,
-		LogsActions.DESCRIBE_DELIVERY_DESTINATIONS,
-		LogsActions.DESCRIBE_DELIVERY_SOURCES,
-		LogsActions.DESCRIBE_DESTINATIONS,
-		LogsActions.DESCRIBE_EXPORT_TASKS,
-		LogsActions.DESCRIBE_FIELD_INDEXES,
-		LogsActions.DESCRIBE_IMPORT_TASK_BATCHES,
-		LogsActions.DESCRIBE_IMPORT_TASKS,
-		LogsActions.DESCRIBE_INDEX_POLICIES,
-		LogsActions.DESCRIBE_LOG_GROUPS,
-		LogsActions.DESCRIBE_LOG_STREAMS,
-		LogsActions.DESCRIBE_LOOKUP_TABLES,
-		LogsActions.DESCRIBE_METRIC_FILTERS,
-		LogsActions.DESCRIBE_QUERIES,
-		LogsActions.DESCRIBE_QUERY_DEFINITIONS,
-		LogsActions.DESCRIBE_RESOURCE_POLICIES,
-		LogsActions.DESCRIBE_SUBSCRIPTION_FILTERS,
-		LogsActions.LIST_AGGREGATE_LOG_GROUP_SUMMARIES,
-		LogsActions.LIST_ANOMALIES,
-		LogsActions.LIST_ENTITIES_FOR_LOG_GROUP,
-		LogsActions.LIST_INTEGRATIONS,
-		LogsActions.LIST_LOG_ANOMALY_DETECTORS,
-		LogsActions.LIST_LOG_DELIVERIES,
-		LogsActions.LIST_LOG_GROUPS,
-		LogsActions.LIST_LOG_GROUPS_FOR_ENTITY,
-		LogsActions.LIST_LOG_GROUPS_FOR_QUERY,
-		LogsActions.LIST_SCHEDULED_QUERIES,
-		LogsActions.LIST_SOURCES_FOR_S3_TABLE_INTEGRATION,
-		LogsActions.LIST_SYSLOG_CONFIGURATIONS,
-		LogsActions.LIST_TAGS_FOR_RESOURCE,
-		LogsActions.LIST_TAGS_LOG_GROUP,
+	static readonly AllListActions: string[] = [
+		LogsActions.DescribeAccountPolicies,
+		LogsActions.DescribeConfigurationTemplates,
+		LogsActions.DescribeDeliveries,
+		LogsActions.DescribeDeliveryDestinations,
+		LogsActions.DescribeDeliverySources,
+		LogsActions.DescribeDestinations,
+		LogsActions.DescribeExportTasks,
+		LogsActions.DescribeFieldIndexes,
+		LogsActions.DescribeImportTaskBatches,
+		LogsActions.DescribeImportTasks,
+		LogsActions.DescribeIndexPolicies,
+		LogsActions.DescribeLogGroups,
+		LogsActions.DescribeLogStreams,
+		LogsActions.DescribeLookupTables,
+		LogsActions.DescribeMetricFilters,
+		LogsActions.DescribeQueries,
+		LogsActions.DescribeQueryDefinitions,
+		LogsActions.DescribeResourcePolicies,
+		LogsActions.DescribeSubscriptionFilters,
+		LogsActions.ListAggregateLogGroupSummaries,
+		LogsActions.ListAnomalies,
+		LogsActions.ListEntitiesForLogGroup,
+		LogsActions.ListIntegrations,
+		LogsActions.ListLogAnomalyDetectors,
+		LogsActions.ListLogDeliveries,
+		LogsActions.ListLogGroups,
+		LogsActions.ListLogGroupsForEntity,
+		LogsActions.ListLogGroupsForQuery,
+		LogsActions.ListScheduledQueries,
+		LogsActions.ListSourcesForS3TableIntegration,
+		LogsActions.ListSyslogConfigurations,
+		LogsActions.ListTagsForResource,
+		LogsActions.ListTagsLogGroup,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		LogsActions.DELETE_RESOURCE_POLICY,
-		LogsActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		LogsActions.DeleteResourcePolicy,
+		LogsActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LogsActions.TAG_LOG_GROUP,
-		LogsActions.TAG_RESOURCE,
-		LogsActions.UNTAG_LOG_GROUP,
-		LogsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LogsActions.TagLogGroup,
+		LogsActions.TagResource,
+		LogsActions.UntagLogGroup,
+		LogsActions.UntagResource,
 	];
 }
 
-const AnomalyDetectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):anomaly-detector:(?<detectorId>[^:/?]+)$",
-);
-const DeliveryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery:(?<deliveryName>[^:/?]+)$",
-);
-const DeliveryDestinationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery-destination:(?<deliveryDestinationName>[^:/?]+)$",
-);
-const DeliverySourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery-source:(?<deliverySourceName>[^:/?]+)$",
-);
-const DestinationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):destination:(?<destinationName>[^:/?]+)$",
-);
-const LogGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):log-group:(?<logGroupName>[^:/?]+)$",
-);
-const LogStreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):log-group:(?<logGroupName>[^:/?]+):log-stream:(?<logStreamName>[^:/?]+)$",
-);
-const LookupTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):lookup-table:(?<lookupTableName>[^:/?]+)$",
-);
-const ScheduledQueryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):scheduled-query:(?<scheduledQueryId>[^:/?]+)$",
-);
+/**
+ * Properties for building a anomaly-detector ARN.
+ */
+export interface LogsAnomalyDetectorArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a anomaly-detector ARN.
+ */
+export interface LogsAnomalyDetectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+}
+
+/**
+ * Properties for building a delivery ARN.
+ */
+export interface LogsDeliveryArnProps {
+	/** The DeliveryName component of the ARN. */
+	readonly deliveryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a delivery ARN.
+ */
+export interface LogsDeliveryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeliveryName component. */
+	readonly deliveryName: string;
+}
+
+/**
+ * Properties for building a delivery-destination ARN.
+ */
+export interface LogsDeliveryDestinationArnProps {
+	/** The DeliveryDestinationName component of the ARN. */
+	readonly deliveryDestinationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a delivery-destination ARN.
+ */
+export interface LogsDeliveryDestinationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeliveryDestinationName component. */
+	readonly deliveryDestinationName: string;
+}
+
+/**
+ * Properties for building a delivery-source ARN.
+ */
+export interface LogsDeliverySourceArnProps {
+	/** The DeliverySourceName component of the ARN. */
+	readonly deliverySourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a delivery-source ARN.
+ */
+export interface LogsDeliverySourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeliverySourceName component. */
+	readonly deliverySourceName: string;
+}
+
+/**
+ * Properties for building a destination ARN.
+ */
+export interface LogsDestinationArnProps {
+	/** The DestinationName component of the ARN. */
+	readonly destinationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a destination ARN.
+ */
+export interface LogsDestinationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DestinationName component. */
+	readonly destinationName: string;
+}
+
+/**
+ * Properties for building a log-group ARN.
+ */
+export interface LogsLogGroupArnProps {
+	/** The LogGroupName component of the ARN. */
+	readonly logGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a log-group ARN.
+ */
+export interface LogsLogGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LogGroupName component. */
+	readonly logGroupName: string;
+}
+
+/**
+ * Properties for building a log-stream ARN.
+ */
+export interface LogsLogStreamArnProps {
+	/** The LogGroupName component of the ARN. */
+	readonly logGroupName: string;
+	/** The LogStreamName component of the ARN. */
+	readonly logStreamName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a log-stream ARN.
+ */
+export interface LogsLogStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LogGroupName component. */
+	readonly logGroupName: string;
+	/** The LogStreamName component. */
+	readonly logStreamName: string;
+}
+
+/**
+ * Properties for building a lookup-table ARN.
+ */
+export interface LogsLookupTableArnProps {
+	/** The LookupTableName component of the ARN. */
+	readonly lookupTableName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a lookup-table ARN.
+ */
+export interface LogsLookupTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LookupTableName component. */
+	readonly lookupTableName: string;
+}
+
+/**
+ * Properties for building a scheduled-query ARN.
+ */
+export interface LogsScheduledQueryArnProps {
+	/** The ScheduledQueryId component of the ARN. */
+	readonly scheduledQueryId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a scheduled-query ARN.
+ */
+export interface LogsScheduledQueryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ScheduledQueryId component. */
+	readonly scheduledQueryId: string;
+}
+
+const AnomalyDetectorArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):anomaly-detector:(?<detectorId>[^:/?]+)$/;
+const DeliveryArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery:(?<deliveryName>[^:/?]+)$/;
+const DeliveryDestinationArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery-destination:(?<deliveryDestinationName>[^:/?]+)$/;
+const DeliverySourceArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):delivery-source:(?<deliverySourceName>[^:/?]+)$/;
+const DestinationArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):destination:(?<destinationName>[^:/?]+)$/;
+const LogGroupArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):log-group:(?<logGroupName>[^:/?]+)$/;
+const LogStreamArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):log-group:(?<logGroupName>[^:/?]+):log-stream:(?<logStreamName>[^:/?]+)$/;
+const LookupTableArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):lookup-table:(?<lookupTableName>[^:/?]+)$/;
+const ScheduledQueryArnRegex =
+	/^arn:(?<partition>[^:]+):logs:(?<region>[^:]*):(?<account>[^:]*):scheduled-query:(?<scheduledQueryId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for logs resources.
@@ -478,16 +724,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the anomaly-detector resource.
 	 */
-	static anomalyDetector(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anomalyDetector(props: LogsAnomalyDetectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:anomaly-detector:${props.detectorId}`;
 	}
 
@@ -502,12 +739,9 @@ export class LogsResources {
 	 * Parses a anomaly-detector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnomalyDetectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-	} {
+	static parseAnomalyDetectorArn(
+		arn: string,
+	): LogsAnomalyDetectorArnComponents {
 		const match = AnomalyDetectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid anomaly-detector ARN: ${arn}`);
@@ -523,16 +757,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the delivery resource.
 	 */
-	static delivery(props: {
-		/** The DeliveryName component of the ARN. */
-		readonly deliveryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static delivery(props: LogsDeliveryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:delivery:${props.deliveryName}`;
 	}
 
@@ -547,12 +772,7 @@ export class LogsResources {
 	 * Parses a delivery ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeliveryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deliveryName: string;
-	} {
+	static parseDeliveryArn(arn: string): LogsDeliveryArnComponents {
 		const match = DeliveryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid delivery ARN: ${arn}`);
@@ -568,16 +788,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the delivery-destination resource.
 	 */
-	static deliveryDestination(props: {
-		/** The DeliveryDestinationName component of the ARN. */
-		readonly deliveryDestinationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deliveryDestination(props: LogsDeliveryDestinationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:delivery-destination:${props.deliveryDestinationName}`;
 	}
 
@@ -592,12 +803,9 @@ export class LogsResources {
 	 * Parses a delivery-destination ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeliveryDestinationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deliveryDestinationName: string;
-	} {
+	static parseDeliveryDestinationArn(
+		arn: string,
+	): LogsDeliveryDestinationArnComponents {
 		const match = DeliveryDestinationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid delivery-destination ARN: ${arn}`);
@@ -613,16 +821,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the delivery-source resource.
 	 */
-	static deliverySource(props: {
-		/** The DeliverySourceName component of the ARN. */
-		readonly deliverySourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deliverySource(props: LogsDeliverySourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:delivery-source:${props.deliverySourceName}`;
 	}
 
@@ -637,12 +836,7 @@ export class LogsResources {
 	 * Parses a delivery-source ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeliverySourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deliverySourceName: string;
-	} {
+	static parseDeliverySourceArn(arn: string): LogsDeliverySourceArnComponents {
 		const match = DeliverySourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid delivery-source ARN: ${arn}`);
@@ -658,16 +852,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the destination resource.
 	 */
-	static destination(props: {
-		/** The DestinationName component of the ARN. */
-		readonly destinationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static destination(props: LogsDestinationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:destination:${props.destinationName}`;
 	}
 
@@ -682,12 +867,7 @@ export class LogsResources {
 	 * Parses a destination ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDestinationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		destinationName: string;
-	} {
+	static parseDestinationArn(arn: string): LogsDestinationArnComponents {
 		const match = DestinationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid destination ARN: ${arn}`);
@@ -703,16 +883,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the log-group resource.
 	 */
-	static logGroup(props: {
-		/** The LogGroupName component of the ARN. */
-		readonly logGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static logGroup(props: LogsLogGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:log-group:${props.logGroupName}`;
 	}
 
@@ -727,12 +898,7 @@ export class LogsResources {
 	 * Parses a log-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLogGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		logGroupName: string;
-	} {
+	static parseLogGroupArn(arn: string): LogsLogGroupArnComponents {
 		const match = LogGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid log-group ARN: ${arn}`);
@@ -748,18 +914,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the log-stream resource.
 	 */
-	static logStream(props: {
-		/** The LogGroupName component of the ARN. */
-		readonly logGroupName: string;
-		/** The LogStreamName component of the ARN. */
-		readonly logStreamName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static logStream(props: LogsLogStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:log-group:${props.logGroupName}:log-stream:${props.logStreamName}`;
 	}
 
@@ -774,13 +929,7 @@ export class LogsResources {
 	 * Parses a log-stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLogStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		logGroupName: string;
-		logStreamName: string;
-	} {
+	static parseLogStreamArn(arn: string): LogsLogStreamArnComponents {
 		const match = LogStreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid log-stream ARN: ${arn}`);
@@ -797,16 +946,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the lookup-table resource.
 	 */
-	static lookupTable(props: {
-		/** The LookupTableName component of the ARN. */
-		readonly lookupTableName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static lookupTable(props: LogsLookupTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:lookup-table:${props.lookupTableName}`;
 	}
 
@@ -821,12 +961,7 @@ export class LogsResources {
 	 * Parses a lookup-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLookupTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		lookupTableName: string;
-	} {
+	static parseLookupTableArn(arn: string): LogsLookupTableArnComponents {
 		const match = LookupTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid lookup-table ARN: ${arn}`);
@@ -842,16 +977,7 @@ export class LogsResources {
 	/**
 	 * Builds an ARN for the scheduled-query resource.
 	 */
-	static scheduledQuery(props: {
-		/** The ScheduledQueryId component of the ARN. */
-		readonly scheduledQueryId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static scheduledQuery(props: LogsScheduledQueryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:logs:${props.region ?? "*"}:${props.account ?? "*"}:scheduled-query:${props.scheduledQueryId}`;
 	}
 
@@ -866,12 +992,7 @@ export class LogsResources {
 	 * Parses a scheduled-query ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScheduledQueryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		scheduledQueryId: string;
-	} {
+	static parseScheduledQueryArn(arn: string): LogsScheduledQueryArnComponents {
 		const match = ScheduledQueryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid scheduled-query ARN: ${arn}`);
@@ -890,54 +1011,54 @@ export class LogsResources {
  */
 export class LogsOperations {
 	/** IAM actions required for the AssociateKmsKey API call. */
-	static readonly ASSOCIATE_KMS_KEY: string[] = ["logs:AssociateKmsKey"];
+	static readonly AssociateKmsKey: string[] = ["logs:AssociateKmsKey"];
 	/** IAM actions required for the AssociateSourceToS3TableIntegration API call. */
-	static readonly ASSOCIATE_SOURCE_TO_S3_TABLE_INTEGRATION: string[] = [
+	static readonly AssociateSourceToS3TableIntegration: string[] = [
 		"logs:AssociateSourceToS3TableIntegration",
 	];
 	/** IAM actions required for the CancelExportTask API call. */
-	static readonly CANCEL_EXPORT_TASK: string[] = ["logs:CancelExportTask"];
+	static readonly CancelExportTask: string[] = ["logs:CancelExportTask"];
 	/** IAM actions required for the CancelImportTask API call. */
-	static readonly CANCEL_IMPORT_TASK: string[] = ["logs:CancelImportTask"];
+	static readonly CancelImportTask: string[] = ["logs:CancelImportTask"];
 	/** IAM actions required for the CreateDelivery API call. */
-	static readonly CREATE_DELIVERY: string[] = [
+	static readonly CreateDelivery: string[] = [
 		"logs:CreateDelivery",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the CreateExportTask API call. */
-	static readonly CREATE_EXPORT_TASK: string[] = ["logs:CreateExportTask"];
+	static readonly CreateExportTask: string[] = ["logs:CreateExportTask"];
 	/** IAM actions required for the CreateImportTask API call. */
-	static readonly CREATE_IMPORT_TASK: string[] = [
+	static readonly CreateImportTask: string[] = [
 		"logs:CreateImportTask",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateLogAnomalyDetector API call. */
-	static readonly CREATE_LOG_ANOMALY_DETECTOR: string[] = [
+	static readonly CreateLogAnomalyDetector: string[] = [
 		"logs:CreateLogAnomalyDetector",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the CreateLogGroup API call. */
-	static readonly CREATE_LOG_GROUP: string[] = [
+	static readonly CreateLogGroup: string[] = [
 		"logs:CreateLogGroup",
 		"logs:TagLogGroup",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the CreateLogStream API call. */
-	static readonly CREATE_LOG_STREAM: string[] = ["logs:CreateLogStream"];
+	static readonly CreateLogStream: string[] = ["logs:CreateLogStream"];
 	/** IAM actions required for the CreateLookupTable API call. */
-	static readonly CREATE_LOOKUP_TABLE: string[] = [
+	static readonly CreateLookupTable: string[] = [
 		"logs:CreateLookupTable",
 		"logs:GetQueryResults",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the CreateScheduledQuery API call. */
-	static readonly CREATE_SCHEDULED_QUERY: string[] = [
+	static readonly CreateScheduledQuery: string[] = [
 		"logs:CreateScheduledQuery",
 		"iam:PassRole",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the DeleteAccountPolicy API call. */
-	static readonly DELETE_ACCOUNT_POLICY: string[] = [
+	static readonly DeleteAccountPolicy: string[] = [
 		"logs:DeleteAccountPolicy",
 		"logs:DeleteDataProtectionPolicy",
 		"logs:DeleteIndexPolicy",
@@ -946,252 +1067,246 @@ export class LogsOperations {
 		"logs:DeleteTransformer",
 	];
 	/** IAM actions required for the DeleteDataProtectionPolicy API call. */
-	static readonly DELETE_DATA_PROTECTION_POLICY: string[] = [
+	static readonly DeleteDataProtectionPolicy: string[] = [
 		"logs:DeleteDataProtectionPolicy",
 	];
 	/** IAM actions required for the DeleteDelivery API call. */
-	static readonly DELETE_DELIVERY: string[] = ["logs:DeleteDelivery"];
+	static readonly DeleteDelivery: string[] = ["logs:DeleteDelivery"];
 	/** IAM actions required for the DeleteDeliveryDestination API call. */
-	static readonly DELETE_DELIVERY_DESTINATION: string[] = [
+	static readonly DeleteDeliveryDestination: string[] = [
 		"logs:DeleteDeliveryDestination",
 	];
 	/** IAM actions required for the DeleteDeliveryDestinationPolicy API call. */
-	static readonly DELETE_DELIVERY_DESTINATION_POLICY: string[] = [
+	static readonly DeleteDeliveryDestinationPolicy: string[] = [
 		"logs:DeleteDeliveryDestinationPolicy",
 	];
 	/** IAM actions required for the DeleteDeliverySource API call. */
-	static readonly DELETE_DELIVERY_SOURCE: string[] = [
+	static readonly DeleteDeliverySource: string[] = [
 		"logs:DeleteDeliverySource",
 	];
 	/** IAM actions required for the DeleteDestination API call. */
-	static readonly DELETE_DESTINATION: string[] = ["logs:DeleteDestination"];
+	static readonly DeleteDestination: string[] = ["logs:DeleteDestination"];
 	/** IAM actions required for the DeleteIndexPolicy API call. */
-	static readonly DELETE_INDEX_POLICY: string[] = ["logs:DeleteIndexPolicy"];
+	static readonly DeleteIndexPolicy: string[] = ["logs:DeleteIndexPolicy"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = ["logs:DeleteIntegration"];
+	static readonly DeleteIntegration: string[] = ["logs:DeleteIntegration"];
 	/** IAM actions required for the DeleteLogAnomalyDetector API call. */
-	static readonly DELETE_LOG_ANOMALY_DETECTOR: string[] = [
+	static readonly DeleteLogAnomalyDetector: string[] = [
 		"logs:DeleteLogAnomalyDetector",
 	];
 	/** IAM actions required for the DeleteLogGroup API call. */
-	static readonly DELETE_LOG_GROUP: string[] = ["logs:DeleteLogGroup"];
+	static readonly DeleteLogGroup: string[] = ["logs:DeleteLogGroup"];
 	/** IAM actions required for the DeleteLogStream API call. */
-	static readonly DELETE_LOG_STREAM: string[] = ["logs:DeleteLogStream"];
+	static readonly DeleteLogStream: string[] = ["logs:DeleteLogStream"];
 	/** IAM actions required for the DeleteLookupTable API call. */
-	static readonly DELETE_LOOKUP_TABLE: string[] = ["logs:DeleteLookupTable"];
+	static readonly DeleteLookupTable: string[] = ["logs:DeleteLookupTable"];
 	/** IAM actions required for the DeleteMetricFilter API call. */
-	static readonly DELETE_METRIC_FILTER: string[] = ["logs:DeleteMetricFilter"];
+	static readonly DeleteMetricFilter: string[] = ["logs:DeleteMetricFilter"];
 	/** IAM actions required for the DeleteQueryDefinition API call. */
-	static readonly DELETE_QUERY_DEFINITION: string[] = [
+	static readonly DeleteQueryDefinition: string[] = [
 		"logs:DeleteQueryDefinition",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"logs:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteRetentionPolicy API call. */
-	static readonly DELETE_RETENTION_POLICY: string[] = [
+	static readonly DeleteRetentionPolicy: string[] = [
 		"logs:DeleteRetentionPolicy",
 	];
 	/** IAM actions required for the DeleteScheduledQuery API call. */
-	static readonly DELETE_SCHEDULED_QUERY: string[] = [
+	static readonly DeleteScheduledQuery: string[] = [
 		"logs:DeleteScheduledQuery",
 	];
 	/** IAM actions required for the DeleteSubscriptionFilter API call. */
-	static readonly DELETE_SUBSCRIPTION_FILTER: string[] = [
+	static readonly DeleteSubscriptionFilter: string[] = [
 		"logs:DeleteSubscriptionFilter",
 	];
 	/** IAM actions required for the DeleteSyslogConfiguration API call. */
-	static readonly DELETE_SYSLOG_CONFIGURATION: string[] = [
+	static readonly DeleteSyslogConfiguration: string[] = [
 		"logs:DeleteSyslogConfiguration",
 	];
 	/** IAM actions required for the DeleteTransformer API call. */
-	static readonly DELETE_TRANSFORMER: string[] = ["logs:DeleteTransformer"];
+	static readonly DeleteTransformer: string[] = ["logs:DeleteTransformer"];
 	/** IAM actions required for the DescribeAccountPolicies API call. */
-	static readonly DESCRIBE_ACCOUNT_POLICIES: string[] = [
+	static readonly DescribeAccountPolicies: string[] = [
 		"logs:DescribeAccountPolicies",
 	];
 	/** IAM actions required for the DescribeConfigurationTemplates API call. */
-	static readonly DESCRIBE_CONFIGURATION_TEMPLATES: string[] = [
+	static readonly DescribeConfigurationTemplates: string[] = [
 		"logs:DescribeConfigurationTemplates",
 	];
 	/** IAM actions required for the DescribeDeliveries API call. */
-	static readonly DESCRIBE_DELIVERIES: string[] = ["logs:DescribeDeliveries"];
+	static readonly DescribeDeliveries: string[] = ["logs:DescribeDeliveries"];
 	/** IAM actions required for the DescribeDeliveryDestinations API call. */
-	static readonly DESCRIBE_DELIVERY_DESTINATIONS: string[] = [
+	static readonly DescribeDeliveryDestinations: string[] = [
 		"logs:DescribeDeliveryDestinations",
 	];
 	/** IAM actions required for the DescribeDeliverySources API call. */
-	static readonly DESCRIBE_DELIVERY_SOURCES: string[] = [
+	static readonly DescribeDeliverySources: string[] = [
 		"logs:DescribeDeliverySources",
 	];
 	/** IAM actions required for the DescribeDestinations API call. */
-	static readonly DESCRIBE_DESTINATIONS: string[] = [
+	static readonly DescribeDestinations: string[] = [
 		"logs:DescribeDestinations",
 	];
 	/** IAM actions required for the DescribeExportTasks API call. */
-	static readonly DESCRIBE_EXPORT_TASKS: string[] = [
-		"logs:DescribeExportTasks",
-	];
+	static readonly DescribeExportTasks: string[] = ["logs:DescribeExportTasks"];
 	/** IAM actions required for the DescribeFieldIndexes API call. */
-	static readonly DESCRIBE_FIELD_INDEXES: string[] = [
+	static readonly DescribeFieldIndexes: string[] = [
 		"logs:DescribeFieldIndexes",
 	];
 	/** IAM actions required for the DescribeImportTaskBatches API call. */
-	static readonly DESCRIBE_IMPORT_TASK_BATCHES: string[] = [
+	static readonly DescribeImportTaskBatches: string[] = [
 		"logs:DescribeImportTaskBatches",
 	];
 	/** IAM actions required for the DescribeImportTasks API call. */
-	static readonly DESCRIBE_IMPORT_TASKS: string[] = [
-		"logs:DescribeImportTasks",
-	];
+	static readonly DescribeImportTasks: string[] = ["logs:DescribeImportTasks"];
 	/** IAM actions required for the DescribeIndexPolicies API call. */
-	static readonly DESCRIBE_INDEX_POLICIES: string[] = [
+	static readonly DescribeIndexPolicies: string[] = [
 		"logs:DescribeIndexPolicies",
 	];
 	/** IAM actions required for the DescribeLogGroups API call. */
-	static readonly DESCRIBE_LOG_GROUPS: string[] = ["logs:DescribeLogGroups"];
+	static readonly DescribeLogGroups: string[] = ["logs:DescribeLogGroups"];
 	/** IAM actions required for the DescribeLogStreams API call. */
-	static readonly DESCRIBE_LOG_STREAMS: string[] = ["logs:DescribeLogStreams"];
+	static readonly DescribeLogStreams: string[] = ["logs:DescribeLogStreams"];
 	/** IAM actions required for the DescribeLookupTables API call. */
-	static readonly DESCRIBE_LOOKUP_TABLES: string[] = [
+	static readonly DescribeLookupTables: string[] = [
 		"logs:DescribeLookupTables",
 	];
 	/** IAM actions required for the DescribeMetricFilters API call. */
-	static readonly DESCRIBE_METRIC_FILTERS: string[] = [
+	static readonly DescribeMetricFilters: string[] = [
 		"logs:DescribeMetricFilters",
 	];
 	/** IAM actions required for the DescribeQueries API call. */
-	static readonly DESCRIBE_QUERIES: string[] = [
+	static readonly DescribeQueries: string[] = [
 		"logs:DescribeQueries",
 		"logs:FilterLogEvents",
 	];
 	/** IAM actions required for the DescribeQueryDefinitions API call. */
-	static readonly DESCRIBE_QUERY_DEFINITIONS: string[] = [
+	static readonly DescribeQueryDefinitions: string[] = [
 		"logs:DescribeQueryDefinitions",
 	];
 	/** IAM actions required for the DescribeResourcePolicies API call. */
-	static readonly DESCRIBE_RESOURCE_POLICIES: string[] = [
+	static readonly DescribeResourcePolicies: string[] = [
 		"logs:DescribeResourcePolicies",
 	];
 	/** IAM actions required for the DescribeSubscriptionFilters API call. */
-	static readonly DESCRIBE_SUBSCRIPTION_FILTERS: string[] = [
+	static readonly DescribeSubscriptionFilters: string[] = [
 		"logs:DescribeSubscriptionFilters",
 	];
 	/** IAM actions required for the DisassociateKmsKey API call. */
-	static readonly DISASSOCIATE_KMS_KEY: string[] = ["logs:DisassociateKmsKey"];
+	static readonly DisassociateKmsKey: string[] = ["logs:DisassociateKmsKey"];
 	/** IAM actions required for the DisassociateSourceFromS3TableIntegration API call. */
-	static readonly DISASSOCIATE_SOURCE_FROM_S3_TABLE_INTEGRATION: string[] = [
+	static readonly DisassociateSourceFromS3TableIntegration: string[] = [
 		"logs:DisassociateSourceFromS3TableIntegration",
 	];
 	/** IAM actions required for the FilterLogEvents API call. */
-	static readonly FILTER_LOG_EVENTS: string[] = [
+	static readonly FilterLogEvents: string[] = [
 		"logs:FilterLogEvents",
 		"logs:Unmask",
 	];
 	/** IAM actions required for the GetDataProtectionPolicy API call. */
-	static readonly GET_DATA_PROTECTION_POLICY: string[] = [
+	static readonly opGetDataProtectionPolicy: string[] = [
 		"logs:GetDataProtectionPolicy",
 	];
 	/** IAM actions required for the GetDelivery API call. */
-	static readonly GET_DELIVERY: string[] = ["logs:GetDelivery"];
+	static readonly opGetDelivery: string[] = ["logs:GetDelivery"];
 	/** IAM actions required for the GetDeliveryDestination API call. */
-	static readonly GET_DELIVERY_DESTINATION: string[] = [
+	static readonly opGetDeliveryDestination: string[] = [
 		"logs:GetDeliveryDestination",
 	];
 	/** IAM actions required for the GetDeliveryDestinationPolicy API call. */
-	static readonly GET_DELIVERY_DESTINATION_POLICY: string[] = [
+	static readonly opGetDeliveryDestinationPolicy: string[] = [
 		"logs:GetDeliveryDestinationPolicy",
 	];
 	/** IAM actions required for the GetDeliverySource API call. */
-	static readonly GET_DELIVERY_SOURCE: string[] = ["logs:GetDeliverySource"];
+	static readonly opGetDeliverySource: string[] = ["logs:GetDeliverySource"];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly GET_INTEGRATION: string[] = ["logs:GetIntegration"];
+	static readonly opGetIntegration: string[] = ["logs:GetIntegration"];
 	/** IAM actions required for the GetLogAnomalyDetector API call. */
-	static readonly GET_LOG_ANOMALY_DETECTOR: string[] = [
+	static readonly opGetLogAnomalyDetector: string[] = [
 		"logs:GetLogAnomalyDetector",
 	];
 	/** IAM actions required for the GetLogEvents API call. */
-	static readonly GET_LOG_EVENTS: string[] = [
+	static readonly opGetLogEvents: string[] = [
 		"logs:GetLogEvents",
 		"logs:Unmask",
 	];
 	/** IAM actions required for the GetLogFields API call. */
-	static readonly GET_LOG_FIELDS: string[] = ["logs:GetLogFields"];
+	static readonly opGetLogFields: string[] = ["logs:GetLogFields"];
 	/** IAM actions required for the GetLogGroupFields API call. */
-	static readonly GET_LOG_GROUP_FIELDS: string[] = [
+	static readonly opGetLogGroupFields: string[] = [
 		"logs:FilterLogEvents",
 		"logs:GetLogGroupFields",
 	];
 	/** IAM actions required for the GetLogObject API call. */
-	static readonly GET_LOG_OBJECT: string[] = [];
+	static readonly opGetLogObject: string[] = [];
 	/** IAM actions required for the GetLogRecord API call. */
-	static readonly GET_LOG_RECORD: string[] = [
+	static readonly opGetLogRecord: string[] = [
 		"logs:FilterLogEvents",
 		"logs:GetLogRecord",
 		"logs:Unmask",
 	];
 	/** IAM actions required for the GetLookupTable API call. */
-	static readonly GET_LOOKUP_TABLE: string[] = ["logs:GetLookupTable"];
+	static readonly opGetLookupTable: string[] = ["logs:GetLookupTable"];
 	/** IAM actions required for the GetQueryResults API call. */
-	static readonly GET_QUERY_RESULTS: string[] = [
+	static readonly opGetQueryResults: string[] = [
 		"logs:FilterLogEvents",
 		"logs:GetQueryResults",
 		"logs:Unmask",
 	];
 	/** IAM actions required for the GetScheduledQuery API call. */
-	static readonly GET_SCHEDULED_QUERY: string[] = ["logs:GetScheduledQuery"];
+	static readonly opGetScheduledQuery: string[] = ["logs:GetScheduledQuery"];
 	/** IAM actions required for the GetScheduledQueryHistory API call. */
-	static readonly GET_SCHEDULED_QUERY_HISTORY: string[] = [
+	static readonly opGetScheduledQueryHistory: string[] = [
 		"logs:GetScheduledQueryHistory",
 	];
 	/** IAM actions required for the GetStorageTierPolicy API call. */
-	static readonly GET_STORAGE_TIER_POLICY: string[] = [
+	static readonly opGetStorageTierPolicy: string[] = [
 		"logs:GetStorageTierPolicy",
 	];
 	/** IAM actions required for the GetTransformer API call. */
-	static readonly GET_TRANSFORMER: string[] = ["logs:GetTransformer"];
+	static readonly opGetTransformer: string[] = ["logs:GetTransformer"];
 	/** IAM actions required for the ListAggregateLogGroupSummaries API call. */
-	static readonly LIST_AGGREGATE_LOG_GROUP_SUMMARIES: string[] = [
+	static readonly ListAggregateLogGroupSummaries: string[] = [
 		"logs:ListAggregateLogGroupSummaries",
 	];
 	/** IAM actions required for the ListAnomalies API call. */
-	static readonly LIST_ANOMALIES: string[] = ["logs:ListAnomalies"];
+	static readonly ListAnomalies: string[] = ["logs:ListAnomalies"];
 	/** IAM actions required for the ListIntegrations API call. */
-	static readonly LIST_INTEGRATIONS: string[] = ["logs:ListIntegrations"];
+	static readonly ListIntegrations: string[] = ["logs:ListIntegrations"];
 	/** IAM actions required for the ListLogAnomalyDetectors API call. */
-	static readonly LIST_LOG_ANOMALY_DETECTORS: string[] = [
+	static readonly ListLogAnomalyDetectors: string[] = [
 		"logs:ListLogAnomalyDetectors",
 	];
 	/** IAM actions required for the ListLogGroups API call. */
-	static readonly LIST_LOG_GROUPS: string[] = [
+	static readonly ListLogGroups: string[] = [
 		"logs:DescribeLogGroups",
 		"logs:ListLogGroups",
 	];
 	/** IAM actions required for the ListLogGroupsForQuery API call. */
-	static readonly LIST_LOG_GROUPS_FOR_QUERY: string[] = [
+	static readonly ListLogGroupsForQuery: string[] = [
 		"logs:ListLogGroupsForQuery",
 	];
 	/** IAM actions required for the ListScheduledQueries API call. */
-	static readonly LIST_SCHEDULED_QUERIES: string[] = [
+	static readonly ListScheduledQueries: string[] = [
 		"logs:ListScheduledQueries",
 	];
 	/** IAM actions required for the ListSourcesForS3TableIntegration API call. */
-	static readonly LIST_SOURCES_FOR_S3_TABLE_INTEGRATION: string[] = [
+	static readonly ListSourcesForS3TableIntegration: string[] = [
 		"logs:ListSourcesForS3TableIntegration",
 	];
 	/** IAM actions required for the ListSyslogConfigurations API call. */
-	static readonly LIST_SYSLOG_CONFIGURATIONS: string[] = [
+	static readonly ListSyslogConfigurations: string[] = [
 		"logs:ListSyslogConfigurations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"logs:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["logs:ListTagsForResource"];
 	/** IAM actions required for the ListTagsLogGroup API call. */
-	static readonly LIST_TAGS_LOG_GROUP: string[] = ["logs:ListTagsLogGroup"];
+	static readonly ListTagsLogGroup: string[] = ["logs:ListTagsLogGroup"];
 	/** IAM actions required for the PutAccountPolicy API call. */
-	static readonly PUT_ACCOUNT_POLICY: string[] = [
+	static readonly PutAccountPolicy: string[] = [
 		"iam:PassRole",
 		"logs:PutAccountPolicy",
 		"logs:PutDataProtectionPolicy",
@@ -1201,74 +1316,74 @@ export class LogsOperations {
 		"logs:PutTransformer",
 	];
 	/** IAM actions required for the PutBearerTokenAuthentication API call. */
-	static readonly PUT_BEARER_TOKEN_AUTHENTICATION: string[] = [
+	static readonly PutBearerTokenAuthentication: string[] = [
 		"logs:PutBearerTokenAuthentication",
 	];
 	/** IAM actions required for the PutDataProtectionPolicy API call. */
-	static readonly PUT_DATA_PROTECTION_POLICY: string[] = [
+	static readonly PutDataProtectionPolicy: string[] = [
 		"logs:PutDataProtectionPolicy",
 	];
 	/** IAM actions required for the PutDeliveryDestination API call. */
-	static readonly PUT_DELIVERY_DESTINATION: string[] = [
+	static readonly PutDeliveryDestination: string[] = [
 		"logs:PutDeliveryDestination",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the PutDeliveryDestinationPolicy API call. */
-	static readonly PUT_DELIVERY_DESTINATION_POLICY: string[] = [
+	static readonly PutDeliveryDestinationPolicy: string[] = [
 		"logs:PutDeliveryDestinationPolicy",
 	];
 	/** IAM actions required for the PutDeliverySource API call. */
-	static readonly PUT_DELIVERY_SOURCE: string[] = [
+	static readonly PutDeliverySource: string[] = [
 		"logs:PutDeliverySource",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the PutDestination API call. */
-	static readonly PUT_DESTINATION: string[] = [
+	static readonly PutDestination: string[] = [
 		"iam:PassRole",
 		"logs:PutDestination",
 		"logs:TagResource",
 	];
 	/** IAM actions required for the PutDestinationPolicy API call. */
-	static readonly PUT_DESTINATION_POLICY: string[] = [
+	static readonly PutDestinationPolicy: string[] = [
 		"logs:PutDestinationPolicy",
 	];
 	/** IAM actions required for the PutIndexPolicy API call. */
-	static readonly PUT_INDEX_POLICY: string[] = ["logs:PutIndexPolicy"];
+	static readonly PutIndexPolicy: string[] = ["logs:PutIndexPolicy"];
 	/** IAM actions required for the PutIntegration API call. */
-	static readonly PUT_INTEGRATION: string[] = ["logs:PutIntegration"];
+	static readonly PutIntegration: string[] = ["logs:PutIntegration"];
 	/** IAM actions required for the PutLogEvents API call. */
-	static readonly PUT_LOG_EVENTS: string[] = ["logs:PutLogEvents"];
+	static readonly PutLogEvents: string[] = ["logs:PutLogEvents"];
 	/** IAM actions required for the PutLogGroupDeletionProtection API call. */
-	static readonly PUT_LOG_GROUP_DELETION_PROTECTION: string[] = [
+	static readonly PutLogGroupDeletionProtection: string[] = [
 		"logs:PutLogGroupDeletionProtection",
 	];
 	/** IAM actions required for the PutMetricFilter API call. */
-	static readonly PUT_METRIC_FILTER: string[] = ["logs:PutMetricFilter"];
+	static readonly PutMetricFilter: string[] = ["logs:PutMetricFilter"];
 	/** IAM actions required for the PutQueryDefinition API call. */
-	static readonly PUT_QUERY_DEFINITION: string[] = ["logs:PutQueryDefinition"];
+	static readonly PutQueryDefinition: string[] = ["logs:PutQueryDefinition"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["logs:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["logs:PutResourcePolicy"];
 	/** IAM actions required for the PutRetentionPolicy API call. */
-	static readonly PUT_RETENTION_POLICY: string[] = ["logs:PutRetentionPolicy"];
+	static readonly PutRetentionPolicy: string[] = ["logs:PutRetentionPolicy"];
 	/** IAM actions required for the PutStorageTierPolicy API call. */
-	static readonly PUT_STORAGE_TIER_POLICY: string[] = [
+	static readonly PutStorageTierPolicy: string[] = [
 		"logs:PutStorageTierPolicy",
 	];
 	/** IAM actions required for the PutSubscriptionFilter API call. */
-	static readonly PUT_SUBSCRIPTION_FILTER: string[] = [
+	static readonly PutSubscriptionFilter: string[] = [
 		"iam:PassRole",
 		"logs:PutSubscriptionFilter",
 	];
 	/** IAM actions required for the PutSyslogConfiguration API call. */
-	static readonly PUT_SYSLOG_CONFIGURATION: string[] = [
+	static readonly PutSyslogConfiguration: string[] = [
 		"logs:PutSyslogConfiguration",
 	];
 	/** IAM actions required for the PutTransformer API call. */
-	static readonly PUT_TRANSFORMER: string[] = ["logs:PutTransformer"];
+	static readonly PutTransformer: string[] = ["logs:PutTransformer"];
 	/** IAM actions required for the StartLiveTail API call. */
-	static readonly START_LIVE_TAIL: string[] = [];
+	static readonly StartLiveTail: string[] = [];
 	/** IAM actions required for the StartQuery API call. */
-	static readonly START_QUERY: string[] = [
+	static readonly StartQuery: string[] = [
 		"logs:DescribeLogGroups",
 		"logs:DescribeQueryDefinitions",
 		"logs:FilterLogEvents",
@@ -1276,39 +1391,39 @@ export class LogsOperations {
 		"logs:Unmask",
 	];
 	/** IAM actions required for the StopQuery API call. */
-	static readonly STOP_QUERY: string[] = [
+	static readonly StopQuery: string[] = [
 		"logs:FilterLogEvents",
 		"logs:StopQuery",
 	];
 	/** IAM actions required for the TagLogGroup API call. */
-	static readonly TAG_LOG_GROUP: string[] = ["logs:TagLogGroup"];
+	static readonly TagLogGroup: string[] = ["logs:TagLogGroup"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["logs:TagResource"];
+	static readonly TagResource: string[] = ["logs:TagResource"];
 	/** IAM actions required for the TestMetricFilter API call. */
-	static readonly TEST_METRIC_FILTER: string[] = ["logs:TestMetricFilter"];
+	static readonly TestMetricFilter: string[] = ["logs:TestMetricFilter"];
 	/** IAM actions required for the TestTransformer API call. */
-	static readonly TEST_TRANSFORMER: string[] = ["logs:TestTransformer"];
+	static readonly TestTransformer: string[] = ["logs:TestTransformer"];
 	/** IAM actions required for the UntagLogGroup API call. */
-	static readonly UNTAG_LOG_GROUP: string[] = ["logs:UntagLogGroup"];
+	static readonly UntagLogGroup: string[] = ["logs:UntagLogGroup"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["logs:UntagResource"];
+	static readonly UntagResource: string[] = ["logs:UntagResource"];
 	/** IAM actions required for the UpdateAnomaly API call. */
-	static readonly UPDATE_ANOMALY: string[] = ["logs:UpdateAnomaly"];
+	static readonly UpdateAnomaly: string[] = ["logs:UpdateAnomaly"];
 	/** IAM actions required for the UpdateDeliveryConfiguration API call. */
-	static readonly UPDATE_DELIVERY_CONFIGURATION: string[] = [
+	static readonly UpdateDeliveryConfiguration: string[] = [
 		"logs:UpdateDeliveryConfiguration",
 	];
 	/** IAM actions required for the UpdateLogAnomalyDetector API call. */
-	static readonly UPDATE_LOG_ANOMALY_DETECTOR: string[] = [
+	static readonly UpdateLogAnomalyDetector: string[] = [
 		"logs:UpdateLogAnomalyDetector",
 	];
 	/** IAM actions required for the UpdateLookupTable API call. */
-	static readonly UPDATE_LOOKUP_TABLE: string[] = [
+	static readonly UpdateLookupTable: string[] = [
 		"logs:GetQueryResults",
 		"logs:UpdateLookupTable",
 	];
 	/** IAM actions required for the UpdateScheduledQuery API call. */
-	static readonly UPDATE_SCHEDULED_QUERY: string[] = [
+	static readonly UpdateScheduledQuery: string[] = [
 		"iam:PassRole",
 		"logs:UpdateScheduledQuery",
 	];
@@ -1319,83 +1434,83 @@ export class LogsOperations {
  */
 export class LogsConditions {
 	/** Condition keys applicable to the CreateDelivery action. */
-	static readonly CREATE_DELIVERY_CONDITION_KEYS: string[] = [
+	static readonly CreateDeliveryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLogAnomalyDetector action. */
-	static readonly CREATE_LOG_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateLogAnomalyDetectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLogGroup action. */
-	static readonly CREATE_LOG_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateLogGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLookupTable action. */
-	static readonly CREATE_LOOKUP_TABLE_CONDITION_KEYS: string[] = [
+	static readonly CreateLookupTableConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateScheduledQuery action. */
-	static readonly CREATE_SCHEDULED_QUERY_CONDITION_KEYS: string[] = [
+	static readonly CreateScheduledQueryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the IntegrateWithS3Table action. */
-	static readonly INTEGRATE_WITH_S3_TABLE_CONDITION_KEYS: string[] = [
+	static readonly IntegrateWithS3TableConditionKeys: string[] = [
 		"logs:data_source_name",
 		"logs:data_source_type",
 	];
 	/** Condition keys applicable to the ProcessWithPipeline action. */
-	static readonly PROCESS_WITH_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly ProcessWithPipelineConditionKeys: string[] = [
 		"logs:data_source_name",
 		"logs:data_source_type",
 	];
 	/** Condition keys applicable to the PutDeliveryDestination action. */
-	static readonly PUT_DELIVERY_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly PutDeliveryDestinationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"logs:DeliveryDestinationResourceArn",
 	];
 	/** Condition keys applicable to the PutDeliverySource action. */
-	static readonly PUT_DELIVERY_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly PutDeliverySourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"logs:LogGeneratingResourceArns",
 	];
 	/** Condition keys applicable to the PutDestination action. */
-	static readonly PUT_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly PutDestinationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagLogGroup action. */
-	static readonly TAG_LOG_GROUP_CONDITION_KEYS: string[] = [
+	static readonly TagLogGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagLogGroup action. */
-	static readonly UNTAG_LOG_GROUP_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagLogGroupConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateDeliveryConfiguration action. */
-	static readonly UPDATE_DELIVERY_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateDeliveryConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: logs:DeliveryDestinationResourceArn (ARN) */
 	static readonly DELIVERY_DESTINATION_RESOURCE_ARN =
 		"logs:DeliveryDestinationResourceArn";

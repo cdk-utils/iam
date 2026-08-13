@@ -13,128 +13,209 @@ export class AppflowActions {
 	static readonly SERVICE_PREFIX = "appflow";
 
 	/** [Write] appflow:CancelFlowExecutions */
-	static readonly CANCEL_FLOW_EXECUTIONS = "appflow:CancelFlowExecutions";
+	static readonly CancelFlowExecutions = "appflow:CancelFlowExecutions";
 	/** [Write] appflow:CreateConnectorProfile */
-	static readonly CREATE_CONNECTOR_PROFILE = "appflow:CreateConnectorProfile";
+	static readonly CreateConnectorProfile = "appflow:CreateConnectorProfile";
 	/** [Write] appflow:CreateFlow */
-	static readonly CREATE_FLOW = "appflow:CreateFlow";
+	static readonly CreateFlow = "appflow:CreateFlow";
 	/** [Write] appflow:DeleteConnectorProfile */
-	static readonly DELETE_CONNECTOR_PROFILE = "appflow:DeleteConnectorProfile";
+	static readonly DeleteConnectorProfile = "appflow:DeleteConnectorProfile";
 	/** [Write] appflow:DeleteFlow */
-	static readonly DELETE_FLOW = "appflow:DeleteFlow";
+	static readonly DeleteFlow = "appflow:DeleteFlow";
 	/** [Read] appflow:DescribeConnector */
-	static readonly DESCRIBE_CONNECTOR = "appflow:DescribeConnector";
+	static readonly DescribeConnector = "appflow:DescribeConnector";
 	/** [Read] appflow:DescribeConnectorEntity */
-	static readonly DESCRIBE_CONNECTOR_ENTITY = "appflow:DescribeConnectorEntity";
+	static readonly DescribeConnectorEntity = "appflow:DescribeConnectorEntity";
 	/** [Read] appflow:DescribeConnectorFields */
-	static readonly DESCRIBE_CONNECTOR_FIELDS = "appflow:DescribeConnectorFields";
+	static readonly DescribeConnectorFields = "appflow:DescribeConnectorFields";
 	/** [Read] appflow:DescribeConnectorProfiles */
-	static readonly DESCRIBE_CONNECTOR_PROFILES =
+	static readonly DescribeConnectorProfiles =
 		"appflow:DescribeConnectorProfiles";
 	/** [Read] appflow:DescribeConnectors */
-	static readonly DESCRIBE_CONNECTORS = "appflow:DescribeConnectors";
+	static readonly DescribeConnectors = "appflow:DescribeConnectors";
 	/** [Read] appflow:DescribeFlow */
-	static readonly DESCRIBE_FLOW = "appflow:DescribeFlow";
+	static readonly DescribeFlow = "appflow:DescribeFlow";
 	/** [Read] appflow:DescribeFlowExecution */
-	static readonly DESCRIBE_FLOW_EXECUTION = "appflow:DescribeFlowExecution";
+	static readonly DescribeFlowExecution = "appflow:DescribeFlowExecution";
 	/** [Read] appflow:DescribeFlowExecutionRecords */
-	static readonly DESCRIBE_FLOW_EXECUTION_RECORDS =
+	static readonly DescribeFlowExecutionRecords =
 		"appflow:DescribeFlowExecutionRecords";
 	/** [Read] appflow:DescribeFlows */
-	static readonly DESCRIBE_FLOWS = "appflow:DescribeFlows";
+	static readonly DescribeFlows = "appflow:DescribeFlows";
 	/** [List] appflow:ListConnectorEntities */
-	static readonly LIST_CONNECTOR_ENTITIES = "appflow:ListConnectorEntities";
+	static readonly ListConnectorEntities = "appflow:ListConnectorEntities";
 	/** [Read] appflow:ListConnectorFields */
-	static readonly LIST_CONNECTOR_FIELDS = "appflow:ListConnectorFields";
+	static readonly ListConnectorFields = "appflow:ListConnectorFields";
 	/** [List] appflow:ListConnectors */
-	static readonly LIST_CONNECTORS = "appflow:ListConnectors";
+	static readonly ListConnectors = "appflow:ListConnectors";
 	/** [List] appflow:ListFlows */
-	static readonly LIST_FLOWS = "appflow:ListFlows";
+	static readonly ListFlows = "appflow:ListFlows";
 	/** [Read] appflow:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "appflow:ListTagsForResource";
+	static readonly ListTagsForResource = "appflow:ListTagsForResource";
 	/** [Write] appflow:RegisterConnector */
-	static readonly REGISTER_CONNECTOR = "appflow:RegisterConnector";
+	static readonly RegisterConnector = "appflow:RegisterConnector";
 	/** [Write] appflow:ResetConnectorMetadataCache */
-	static readonly RESET_CONNECTOR_METADATA_CACHE =
+	static readonly ResetConnectorMetadataCache =
 		"appflow:ResetConnectorMetadataCache";
 	/** [Write] appflow:RunFlow */
-	static readonly RUN_FLOW = "appflow:RunFlow";
+	static readonly RunFlow = "appflow:RunFlow";
 	/** [Write] appflow:StartFlow */
-	static readonly START_FLOW = "appflow:StartFlow";
+	static readonly StartFlow = "appflow:StartFlow";
 	/** [Write] appflow:StopFlow */
-	static readonly STOP_FLOW = "appflow:StopFlow";
+	static readonly StopFlow = "appflow:StopFlow";
 	/** [Tagging] appflow:TagResource */
-	static readonly TAG_RESOURCE = "appflow:TagResource";
+	static readonly TagResource = "appflow:TagResource";
 	/** [Write] appflow:UnRegisterConnector */
-	static readonly UN_REGISTER_CONNECTOR = "appflow:UnRegisterConnector";
+	static readonly UnRegisterConnector = "appflow:UnRegisterConnector";
 	/** [Tagging] appflow:UntagResource */
-	static readonly UNTAG_RESOURCE = "appflow:UntagResource";
+	static readonly UntagResource = "appflow:UntagResource";
 	/** [Write] appflow:UpdateConnectorProfile */
-	static readonly UPDATE_CONNECTOR_PROFILE = "appflow:UpdateConnectorProfile";
+	static readonly UpdateConnectorProfile = "appflow:UpdateConnectorProfile";
 	/** [Write] appflow:UpdateConnectorRegistration */
-	static readonly UPDATE_CONNECTOR_REGISTRATION =
+	static readonly UpdateConnectorRegistration =
 		"appflow:UpdateConnectorRegistration";
 	/** [Write] appflow:UpdateFlow */
-	static readonly UPDATE_FLOW = "appflow:UpdateFlow";
+	static readonly UpdateFlow = "appflow:UpdateFlow";
 	/** [Write] appflow:UseConnectorProfile */
-	static readonly USE_CONNECTOR_PROFILE = "appflow:UseConnectorProfile";
+	static readonly UseConnectorProfile = "appflow:UseConnectorProfile";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppflowActions.DESCRIBE_CONNECTOR,
-		AppflowActions.DESCRIBE_CONNECTOR_ENTITY,
-		AppflowActions.DESCRIBE_CONNECTOR_FIELDS,
-		AppflowActions.DESCRIBE_CONNECTOR_PROFILES,
-		AppflowActions.DESCRIBE_CONNECTORS,
-		AppflowActions.DESCRIBE_FLOW,
-		AppflowActions.DESCRIBE_FLOW_EXECUTION,
-		AppflowActions.DESCRIBE_FLOW_EXECUTION_RECORDS,
-		AppflowActions.DESCRIBE_FLOWS,
-		AppflowActions.LIST_CONNECTOR_FIELDS,
-		AppflowActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AppflowActions.DescribeConnector,
+		AppflowActions.DescribeConnectorEntity,
+		AppflowActions.DescribeConnectorFields,
+		AppflowActions.DescribeConnectorProfiles,
+		AppflowActions.DescribeConnectors,
+		AppflowActions.DescribeFlow,
+		AppflowActions.DescribeFlowExecution,
+		AppflowActions.DescribeFlowExecutionRecords,
+		AppflowActions.DescribeFlows,
+		AppflowActions.ListConnectorFields,
+		AppflowActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppflowActions.CANCEL_FLOW_EXECUTIONS,
-		AppflowActions.CREATE_CONNECTOR_PROFILE,
-		AppflowActions.CREATE_FLOW,
-		AppflowActions.DELETE_CONNECTOR_PROFILE,
-		AppflowActions.DELETE_FLOW,
-		AppflowActions.REGISTER_CONNECTOR,
-		AppflowActions.RESET_CONNECTOR_METADATA_CACHE,
-		AppflowActions.RUN_FLOW,
-		AppflowActions.START_FLOW,
-		AppflowActions.STOP_FLOW,
-		AppflowActions.UN_REGISTER_CONNECTOR,
-		AppflowActions.UPDATE_CONNECTOR_PROFILE,
-		AppflowActions.UPDATE_CONNECTOR_REGISTRATION,
-		AppflowActions.UPDATE_FLOW,
-		AppflowActions.USE_CONNECTOR_PROFILE,
+	static readonly AllWriteActions: string[] = [
+		AppflowActions.CancelFlowExecutions,
+		AppflowActions.CreateConnectorProfile,
+		AppflowActions.CreateFlow,
+		AppflowActions.DeleteConnectorProfile,
+		AppflowActions.DeleteFlow,
+		AppflowActions.RegisterConnector,
+		AppflowActions.ResetConnectorMetadataCache,
+		AppflowActions.RunFlow,
+		AppflowActions.StartFlow,
+		AppflowActions.StopFlow,
+		AppflowActions.UnRegisterConnector,
+		AppflowActions.UpdateConnectorProfile,
+		AppflowActions.UpdateConnectorRegistration,
+		AppflowActions.UpdateFlow,
+		AppflowActions.UseConnectorProfile,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppflowActions.LIST_CONNECTOR_ENTITIES,
-		AppflowActions.LIST_CONNECTORS,
-		AppflowActions.LIST_FLOWS,
+	static readonly AllListActions: string[] = [
+		AppflowActions.ListConnectorEntities,
+		AppflowActions.ListConnectors,
+		AppflowActions.ListFlows,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppflowActions.TAG_RESOURCE,
-		AppflowActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppflowActions.TagResource,
+		AppflowActions.UntagResource,
 	];
 }
 
-const ConnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):connector/(?<connectorLabel>[^:/?]+)$",
-);
-const ConnectorprofileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):connectorprofile/(?<profileName>[^:/?]+)$",
-);
-const FlowArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):flow/(?<flowName>[^:/?]+)$",
-);
+/**
+ * Properties for building a connector ARN.
+ */
+export interface AppflowConnectorArnProps {
+	/** The ConnectorLabel component of the ARN. */
+	readonly connectorLabel: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector ARN.
+ */
+export interface AppflowConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectorLabel component. */
+	readonly connectorLabel: string;
+}
+
+/**
+ * Properties for building a connectorprofile ARN.
+ */
+export interface AppflowConnectorprofileArnProps {
+	/** The ProfileName component of the ARN. */
+	readonly profileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connectorprofile ARN.
+ */
+export interface AppflowConnectorprofileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfileName component. */
+	readonly profileName: string;
+}
+
+/**
+ * Properties for building a flow ARN.
+ */
+export interface AppflowFlowArnProps {
+	/** The FlowName component of the ARN. */
+	readonly flowName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a flow ARN.
+ */
+export interface AppflowFlowArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FlowName component. */
+	readonly flowName: string;
+}
+
+const ConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<connectorLabel>[^:/?]+)$/;
+const ConnectorprofileArnRegex =
+	/^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):connectorprofile\/(?<profileName>[^:/?]+)$/;
+const FlowArnRegex =
+	/^arn:(?<partition>[^:]+):appflow:(?<region>[^:]*):(?<account>[^:]*):flow\/(?<flowName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appflow resources.
@@ -143,16 +224,7 @@ export class AppflowResources {
 	/**
 	 * Builds an ARN for the connector resource.
 	 */
-	static connector(props: {
-		/** The ConnectorLabel component of the ARN. */
-		readonly connectorLabel: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connector(props: AppflowConnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appflow:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.connectorLabel}`;
 	}
 
@@ -167,12 +239,7 @@ export class AppflowResources {
 	 * Parses a connector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectorLabel: string;
-	} {
+	static parseConnectorArn(arn: string): AppflowConnectorArnComponents {
 		const match = ConnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connector ARN: ${arn}`);
@@ -188,16 +255,7 @@ export class AppflowResources {
 	/**
 	 * Builds an ARN for the connectorprofile resource.
 	 */
-	static connectorprofile(props: {
-		/** The ProfileName component of the ARN. */
-		readonly profileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectorprofile(props: AppflowConnectorprofileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appflow:${props.region ?? "*"}:${props.account ?? "*"}:connectorprofile/${props.profileName}`;
 	}
 
@@ -212,12 +270,9 @@ export class AppflowResources {
 	 * Parses a connectorprofile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorprofileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profileName: string;
-	} {
+	static parseConnectorprofileArn(
+		arn: string,
+	): AppflowConnectorprofileArnComponents {
 		const match = ConnectorprofileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connectorprofile ARN: ${arn}`);
@@ -233,16 +288,7 @@ export class AppflowResources {
 	/**
 	 * Builds an ARN for the flow resource.
 	 */
-	static flow(props: {
-		/** The FlowName component of the ARN. */
-		readonly flowName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static flow(props: AppflowFlowArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appflow:${props.region ?? "*"}:${props.account ?? "*"}:flow/${props.flowName}`;
 	}
 
@@ -257,12 +303,7 @@ export class AppflowResources {
 	 * Parses a flow ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFlowArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		flowName: string;
-	} {
+	static parseFlowArn(arn: string): AppflowFlowArnComponents {
 		const match = FlowArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid flow ARN: ${arn}`);
@@ -281,89 +322,87 @@ export class AppflowResources {
  */
 export class AppflowOperations {
 	/** IAM actions required for the CancelFlowExecutions API call. */
-	static readonly CANCEL_FLOW_EXECUTIONS: string[] = [
+	static readonly CancelFlowExecutions: string[] = [
 		"appflow:CancelFlowExecutions",
 	];
 	/** IAM actions required for the CreateConnectorProfile API call. */
-	static readonly CREATE_CONNECTOR_PROFILE: string[] = [
+	static readonly CreateConnectorProfile: string[] = [
 		"appflow:CreateConnectorProfile",
 		"appflow:DescribeConnector",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateFlow API call. */
-	static readonly CREATE_FLOW: string[] = [
+	static readonly CreateFlow: string[] = [
 		"appflow:CreateFlow",
 		"iam:PassRole",
 		"appflow:TagResource",
 		"appflow:UseConnectorProfile",
 	];
 	/** IAM actions required for the DeleteConnectorProfile API call. */
-	static readonly DELETE_CONNECTOR_PROFILE: string[] = [
+	static readonly DeleteConnectorProfile: string[] = [
 		"appflow:DeleteConnectorProfile",
 	];
 	/** IAM actions required for the DeleteFlow API call. */
-	static readonly DELETE_FLOW: string[] = ["appflow:DeleteFlow"];
+	static readonly DeleteFlow: string[] = ["appflow:DeleteFlow"];
 	/** IAM actions required for the DescribeConnector API call. */
-	static readonly DESCRIBE_CONNECTOR: string[] = ["appflow:DescribeConnector"];
+	static readonly DescribeConnector: string[] = ["appflow:DescribeConnector"];
 	/** IAM actions required for the DescribeConnectorEntity API call. */
-	static readonly DESCRIBE_CONNECTOR_ENTITY: string[] = [
+	static readonly DescribeConnectorEntity: string[] = [
 		"appflow:DescribeConnectorEntity",
 	];
 	/** IAM actions required for the DescribeConnectorProfiles API call. */
-	static readonly DESCRIBE_CONNECTOR_PROFILES: string[] = [
+	static readonly DescribeConnectorProfiles: string[] = [
 		"appflow:DescribeConnectorProfiles",
 	];
 	/** IAM actions required for the DescribeConnectors API call. */
-	static readonly DESCRIBE_CONNECTORS: string[] = [
-		"appflow:DescribeConnectors",
-	];
+	static readonly DescribeConnectors: string[] = ["appflow:DescribeConnectors"];
 	/** IAM actions required for the DescribeFlow API call. */
-	static readonly DESCRIBE_FLOW: string[] = ["appflow:DescribeFlow"];
+	static readonly DescribeFlow: string[] = ["appflow:DescribeFlow"];
 	/** IAM actions required for the DescribeFlowExecutionRecords API call. */
-	static readonly DESCRIBE_FLOW_EXECUTION_RECORDS: string[] = [
+	static readonly DescribeFlowExecutionRecords: string[] = [
 		"appflow:DescribeFlowExecutionRecords",
 	];
 	/** IAM actions required for the ListConnectorEntities API call. */
-	static readonly LIST_CONNECTOR_ENTITIES: string[] = [
+	static readonly ListConnectorEntities: string[] = [
 		"appflow:ListConnectorEntities",
 	];
 	/** IAM actions required for the ListConnectors API call. */
-	static readonly LIST_CONNECTORS: string[] = ["appflow:ListConnectors"];
+	static readonly ListConnectors: string[] = ["appflow:ListConnectors"];
 	/** IAM actions required for the ListFlows API call. */
-	static readonly LIST_FLOWS: string[] = ["appflow:ListFlows"];
+	static readonly ListFlows: string[] = ["appflow:ListFlows"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"appflow:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterConnector API call. */
-	static readonly REGISTER_CONNECTOR: string[] = ["appflow:RegisterConnector"];
+	static readonly RegisterConnector: string[] = ["appflow:RegisterConnector"];
 	/** IAM actions required for the ResetConnectorMetadataCache API call. */
-	static readonly RESET_CONNECTOR_METADATA_CACHE: string[] = [
+	static readonly ResetConnectorMetadataCache: string[] = [
 		"appflow:ResetConnectorMetadataCache",
 	];
 	/** IAM actions required for the StartFlow API call. */
-	static readonly START_FLOW: string[] = ["appflow:StartFlow"];
+	static readonly StartFlow: string[] = ["appflow:StartFlow"];
 	/** IAM actions required for the StopFlow API call. */
-	static readonly STOP_FLOW: string[] = ["appflow:StopFlow"];
+	static readonly StopFlow: string[] = ["appflow:StopFlow"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["appflow:TagResource"];
+	static readonly TagResource: string[] = ["appflow:TagResource"];
 	/** IAM actions required for the UnregisterConnector API call. */
-	static readonly UNREGISTER_CONNECTOR: string[] = [
+	static readonly UnregisterConnector: string[] = [
 		"appflow:UnRegisterConnector",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["appflow:UntagResource"];
+	static readonly UntagResource: string[] = ["appflow:UntagResource"];
 	/** IAM actions required for the UpdateConnectorProfile API call. */
-	static readonly UPDATE_CONNECTOR_PROFILE: string[] = [
+	static readonly UpdateConnectorProfile: string[] = [
 		"iam:PassRole",
 		"appflow:UpdateConnectorProfile",
 	];
 	/** IAM actions required for the UpdateConnectorRegistration API call. */
-	static readonly UPDATE_CONNECTOR_REGISTRATION: string[] = [
+	static readonly UpdateConnectorRegistration: string[] = [
 		"appflow:UpdateConnectorRegistration",
 	];
 	/** IAM actions required for the UpdateFlow API call. */
-	static readonly UPDATE_FLOW: string[] = [
+	static readonly UpdateFlow: string[] = [
 		"iam:PassRole",
 		"appflow:UpdateFlow",
 		"appflow:UseConnectorProfile",
@@ -375,39 +414,39 @@ export class AppflowOperations {
  */
 export class AppflowConditions {
 	/** Condition keys applicable to the CreateFlow action. */
-	static readonly CREATE_FLOW_CONDITION_KEYS: string[] = [
+	static readonly CreateFlowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteFlow action. */
-	static readonly DELETE_FLOW_CONDITION_KEYS: string[] = [
+	static readonly DeleteFlowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RegisterConnector action. */
-	static readonly REGISTER_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly RegisterConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UnRegisterConnector action. */
-	static readonly UN_REGISTER_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly UnRegisterConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

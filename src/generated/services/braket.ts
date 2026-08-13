@@ -13,95 +13,212 @@ export class BraketActions {
 	static readonly SERVICE_PREFIX = "braket";
 
 	/** [Write] braket:AcceptUserAgreement */
-	static readonly ACCEPT_USER_AGREEMENT = "braket:AcceptUserAgreement";
+	static readonly AcceptUserAgreement = "braket:AcceptUserAgreement";
 	/** [Write] braket:CancelJob */
-	static readonly CANCEL_JOB = "braket:CancelJob";
+	static readonly CancelJob = "braket:CancelJob";
 	/** [Write] braket:CancelQuantumTask */
-	static readonly CANCEL_QUANTUM_TASK = "braket:CancelQuantumTask";
+	static readonly CancelQuantumTask = "braket:CancelQuantumTask";
 	/** [Write] braket:CreateJob */
-	static readonly CREATE_JOB = "braket:CreateJob";
+	static readonly CreateJob = "braket:CreateJob";
 	/** [Write] braket:CreateQuantumTask */
-	static readonly CREATE_QUANTUM_TASK = "braket:CreateQuantumTask";
+	static readonly CreateQuantumTask = "braket:CreateQuantumTask";
 	/** [Write] braket:CreateSpendingLimit */
-	static readonly CREATE_SPENDING_LIMIT = "braket:CreateSpendingLimit";
+	static readonly CreateSpendingLimit = "braket:CreateSpendingLimit";
 	/** [Write] braket:DeleteSpendingLimit */
-	static readonly DELETE_SPENDING_LIMIT = "braket:DeleteSpendingLimit";
+	static readonly DeleteSpendingLimit = "braket:DeleteSpendingLimit";
 	/** [Read] braket:GetDevice */
-	static readonly GET_DEVICE = "braket:GetDevice";
+	static readonly actionGetDevice = "braket:GetDevice";
 	/** [Read] braket:GetJob */
-	static readonly GET_JOB = "braket:GetJob";
+	static readonly actionGetJob = "braket:GetJob";
 	/** [Read] braket:GetQuantumTask */
-	static readonly GET_QUANTUM_TASK = "braket:GetQuantumTask";
+	static readonly actionGetQuantumTask = "braket:GetQuantumTask";
 	/** [Read] braket:GetServiceLinkedRoleStatus */
-	static readonly GET_SERVICE_LINKED_ROLE_STATUS =
+	static readonly actionGetServiceLinkedRoleStatus =
 		"braket:GetServiceLinkedRoleStatus";
 	/** [Read] braket:GetUserAgreementStatus */
-	static readonly GET_USER_AGREEMENT_STATUS = "braket:GetUserAgreementStatus";
+	static readonly actionGetUserAgreementStatus =
+		"braket:GetUserAgreementStatus";
 	/** [Read] braket:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "braket:ListTagsForResource";
+	static readonly ListTagsForResource = "braket:ListTagsForResource";
 	/** [List] braket:SearchDevices */
-	static readonly SEARCH_DEVICES = "braket:SearchDevices";
+	static readonly SearchDevices = "braket:SearchDevices";
 	/** [List] braket:SearchJobs */
-	static readonly SEARCH_JOBS = "braket:SearchJobs";
+	static readonly SearchJobs = "braket:SearchJobs";
 	/** [List] braket:SearchQuantumTasks */
-	static readonly SEARCH_QUANTUM_TASKS = "braket:SearchQuantumTasks";
+	static readonly SearchQuantumTasks = "braket:SearchQuantumTasks";
 	/** [Read] braket:SearchSpendingLimits */
-	static readonly SEARCH_SPENDING_LIMITS = "braket:SearchSpendingLimits";
+	static readonly SearchSpendingLimits = "braket:SearchSpendingLimits";
 	/** [Tagging] braket:TagResource */
-	static readonly TAG_RESOURCE = "braket:TagResource";
+	static readonly TagResource = "braket:TagResource";
 	/** [Tagging] braket:UntagResource */
-	static readonly UNTAG_RESOURCE = "braket:UntagResource";
+	static readonly UntagResource = "braket:UntagResource";
 	/** [Write] braket:UpdateSpendingLimit */
-	static readonly UPDATE_SPENDING_LIMIT = "braket:UpdateSpendingLimit";
+	static readonly UpdateSpendingLimit = "braket:UpdateSpendingLimit";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BraketActions.GET_DEVICE,
-		BraketActions.GET_JOB,
-		BraketActions.GET_QUANTUM_TASK,
-		BraketActions.GET_SERVICE_LINKED_ROLE_STATUS,
-		BraketActions.GET_USER_AGREEMENT_STATUS,
-		BraketActions.LIST_TAGS_FOR_RESOURCE,
-		BraketActions.SEARCH_SPENDING_LIMITS,
+	static readonly AllReadActions: string[] = [
+		BraketActions.actionGetDevice,
+		BraketActions.actionGetJob,
+		BraketActions.actionGetQuantumTask,
+		BraketActions.actionGetServiceLinkedRoleStatus,
+		BraketActions.actionGetUserAgreementStatus,
+		BraketActions.ListTagsForResource,
+		BraketActions.SearchSpendingLimits,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BraketActions.ACCEPT_USER_AGREEMENT,
-		BraketActions.CANCEL_JOB,
-		BraketActions.CANCEL_QUANTUM_TASK,
-		BraketActions.CREATE_JOB,
-		BraketActions.CREATE_QUANTUM_TASK,
-		BraketActions.CREATE_SPENDING_LIMIT,
-		BraketActions.DELETE_SPENDING_LIMIT,
-		BraketActions.UPDATE_SPENDING_LIMIT,
+	static readonly AllWriteActions: string[] = [
+		BraketActions.AcceptUserAgreement,
+		BraketActions.CancelJob,
+		BraketActions.CancelQuantumTask,
+		BraketActions.CreateJob,
+		BraketActions.CreateQuantumTask,
+		BraketActions.CreateSpendingLimit,
+		BraketActions.DeleteSpendingLimit,
+		BraketActions.UpdateSpendingLimit,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BraketActions.SEARCH_DEVICES,
-		BraketActions.SEARCH_JOBS,
-		BraketActions.SEARCH_QUANTUM_TASKS,
+	static readonly AllListActions: string[] = [
+		BraketActions.SearchDevices,
+		BraketActions.SearchJobs,
+		BraketActions.SearchQuantumTasks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BraketActions.TAG_RESOURCE,
-		BraketActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BraketActions.TagResource,
+		BraketActions.UntagResource,
 	];
 }
 
-const DeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):braket:.*:.*:device/(?<deviceType>[^:/?]+)/(?<provider>[^:/?]+)/(?<deviceId>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):job/(?<randomId>[^:/?]+)$",
-);
-const QuantumTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):quantum-task/(?<randomId>[^:/?]+)$",
-);
-const SpendingLimitArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):spending-limit/(?<randomId>[^:/?]+)$",
-);
+/**
+ * Properties for building a device ARN.
+ */
+export interface BraketDeviceArnProps {
+	/** The DeviceType component of the ARN. */
+	readonly deviceType: string;
+	/** The Provider component of the ARN. */
+	readonly provider: string;
+	/** The DeviceId component of the ARN. */
+	readonly deviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device ARN.
+ */
+export interface BraketDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceType component. */
+	readonly deviceType: string;
+	/** The Provider component. */
+	readonly provider: string;
+	/** The DeviceId component. */
+	readonly deviceId: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface BraketJobArnProps {
+	/** The RandomId component of the ARN. */
+	readonly randomId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface BraketJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RandomId component. */
+	readonly randomId: string;
+}
+
+/**
+ * Properties for building a quantum-task ARN.
+ */
+export interface BraketQuantumTaskArnProps {
+	/** The RandomId component of the ARN. */
+	readonly randomId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a quantum-task ARN.
+ */
+export interface BraketQuantumTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RandomId component. */
+	readonly randomId: string;
+}
+
+/**
+ * Properties for building a spending-limit ARN.
+ */
+export interface BraketSpendingLimitArnProps {
+	/** The RandomId component of the ARN. */
+	readonly randomId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a spending-limit ARN.
+ */
+export interface BraketSpendingLimitArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RandomId component. */
+	readonly randomId: string;
+}
+
+const DeviceArnRegex =
+	/^arn:(?<partition>[^:]+):braket:.*:.*:device\/(?<deviceType>[^:/?]+)\/(?<provider>[^:/?]+)\/(?<deviceId>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):job\/(?<randomId>[^:/?]+)$/;
+const QuantumTaskArnRegex =
+	/^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):quantum-task\/(?<randomId>[^:/?]+)$/;
+const SpendingLimitArnRegex =
+	/^arn:(?<partition>[^:]+):braket:(?<region>[^:]*):(?<account>[^:]*):spending-limit\/(?<randomId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for braket resources.
@@ -110,20 +227,7 @@ export class BraketResources {
 	/**
 	 * Builds an ARN for the device resource.
 	 */
-	static device(props: {
-		/** The DeviceType component of the ARN. */
-		readonly deviceType: string;
-		/** The Provider component of the ARN. */
-		readonly provider: string;
-		/** The DeviceId component of the ARN. */
-		readonly deviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static device(props: BraketDeviceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:braket:*:*:device/${props.deviceType}/${props.provider}/${props.deviceId}`;
 	}
 
@@ -138,14 +242,7 @@ export class BraketResources {
 	 * Parses a device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceType: string;
-		provider: string;
-		deviceId: string;
-	} {
+	static parseDeviceArn(arn: string): BraketDeviceArnComponents {
 		const match = DeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device ARN: ${arn}`);
@@ -163,16 +260,7 @@ export class BraketResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The RandomId component of the ARN. */
-		readonly randomId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: BraketJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:braket:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.randomId}`;
 	}
 
@@ -187,12 +275,7 @@ export class BraketResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		randomId: string;
-	} {
+	static parseJobArn(arn: string): BraketJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -208,16 +291,7 @@ export class BraketResources {
 	/**
 	 * Builds an ARN for the quantum-task resource.
 	 */
-	static quantumTask(props: {
-		/** The RandomId component of the ARN. */
-		readonly randomId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static quantumTask(props: BraketQuantumTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:braket:${props.region ?? "*"}:${props.account ?? "*"}:quantum-task/${props.randomId}`;
 	}
 
@@ -232,12 +306,7 @@ export class BraketResources {
 	 * Parses a quantum-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQuantumTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		randomId: string;
-	} {
+	static parseQuantumTaskArn(arn: string): BraketQuantumTaskArnComponents {
 		const match = QuantumTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid quantum-task ARN: ${arn}`);
@@ -253,16 +322,7 @@ export class BraketResources {
 	/**
 	 * Builds an ARN for the spending-limit resource.
 	 */
-	static spendingLimit(props: {
-		/** The RandomId component of the ARN. */
-		readonly randomId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static spendingLimit(props: BraketSpendingLimitArnProps): string {
 		return `arn:${props.partition ?? "aws"}:braket:${props.region ?? "*"}:${props.account ?? "*"}:spending-limit/${props.randomId}`;
 	}
 
@@ -277,12 +337,7 @@ export class BraketResources {
 	 * Parses a spending-limit ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSpendingLimitArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		randomId: string;
-	} {
+	static parseSpendingLimitArn(arn: string): BraketSpendingLimitArnComponents {
 		const match = SpendingLimitArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid spending-limit ARN: ${arn}`);
@@ -301,57 +356,55 @@ export class BraketResources {
  */
 export class BraketOperations {
 	/** IAM actions required for the CancelJob API call. */
-	static readonly CANCEL_JOB: string[] = ["braket:CancelJob"];
+	static readonly CancelJob: string[] = ["braket:CancelJob"];
 	/** IAM actions required for the CancelQuantumTask API call. */
-	static readonly CANCEL_QUANTUM_TASK: string[] = ["braket:CancelQuantumTask"];
+	static readonly CancelQuantumTask: string[] = ["braket:CancelQuantumTask"];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"braket:CreateJob",
 		"iam:PassRole",
 		"braket:TagResource",
 	];
 	/** IAM actions required for the CreateQuantumTask API call. */
-	static readonly CREATE_QUANTUM_TASK: string[] = [
+	static readonly CreateQuantumTask: string[] = [
 		"braket:CreateQuantumTask",
 		"braket:TagResource",
 	];
 	/** IAM actions required for the CreateSpendingLimit API call. */
-	static readonly CREATE_SPENDING_LIMIT: string[] = [
+	static readonly CreateSpendingLimit: string[] = [
 		"braket:CreateSpendingLimit",
 		"braket:TagResource",
 	];
 	/** IAM actions required for the DeleteSpendingLimit API call. */
-	static readonly DELETE_SPENDING_LIMIT: string[] = [
+	static readonly DeleteSpendingLimit: string[] = [
 		"braket:DeleteSpendingLimit",
 	];
 	/** IAM actions required for the GetDevice API call. */
-	static readonly GET_DEVICE: string[] = ["braket:GetDevice"];
+	static readonly opGetDevice: string[] = ["braket:GetDevice"];
 	/** IAM actions required for the GetJob API call. */
-	static readonly GET_JOB: string[] = ["braket:GetJob"];
+	static readonly opGetJob: string[] = ["braket:GetJob"];
 	/** IAM actions required for the GetQuantumTask API call. */
-	static readonly GET_QUANTUM_TASK: string[] = ["braket:GetQuantumTask"];
+	static readonly opGetQuantumTask: string[] = ["braket:GetQuantumTask"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"braket:ListTagsForResource",
 	];
 	/** IAM actions required for the SearchDevices API call. */
-	static readonly SEARCH_DEVICES: string[] = ["braket:SearchDevices"];
+	static readonly SearchDevices: string[] = ["braket:SearchDevices"];
 	/** IAM actions required for the SearchJobs API call. */
-	static readonly SEARCH_JOBS: string[] = ["braket:SearchJobs"];
+	static readonly SearchJobs: string[] = ["braket:SearchJobs"];
 	/** IAM actions required for the SearchQuantumTasks API call. */
-	static readonly SEARCH_QUANTUM_TASKS: string[] = [
-		"braket:SearchQuantumTasks",
-	];
+	static readonly SearchQuantumTasks: string[] = ["braket:SearchQuantumTasks"];
 	/** IAM actions required for the SearchSpendingLimits API call. */
-	static readonly SEARCH_SPENDING_LIMITS: string[] = [
+	static readonly SearchSpendingLimits: string[] = [
 		"braket:SearchSpendingLimits",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["braket:TagResource"];
+	static readonly TagResource: string[] = ["braket:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["braket:UntagResource"];
+	static readonly UntagResource: string[] = ["braket:UntagResource"];
 	/** IAM actions required for the UpdateSpendingLimit API call. */
-	static readonly UPDATE_SPENDING_LIMIT: string[] = [
+	static readonly UpdateSpendingLimit: string[] = [
 		"braket:UpdateSpendingLimit",
 	];
 }
@@ -361,34 +414,34 @@ export class BraketOperations {
  */
 export class BraketConditions {
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateQuantumTask action. */
-	static readonly CREATE_QUANTUM_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateQuantumTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSpendingLimit action. */
-	static readonly CREATE_SPENDING_LIMIT_CONDITION_KEYS: string[] = [
+	static readonly CreateSpendingLimitConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

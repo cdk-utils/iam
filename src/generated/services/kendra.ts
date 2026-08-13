@@ -13,266 +13,507 @@ export class KendraActions {
 	static readonly SERVICE_PREFIX = "kendra";
 
 	/** [Write] kendra:AssociateEntitiesToExperience */
-	static readonly ASSOCIATE_ENTITIES_TO_EXPERIENCE =
+	static readonly AssociateEntitiesToExperience =
 		"kendra:AssociateEntitiesToExperience";
 	/** [Write] kendra:AssociatePersonasToEntities */
-	static readonly ASSOCIATE_PERSONAS_TO_ENTITIES =
+	static readonly AssociatePersonasToEntities =
 		"kendra:AssociatePersonasToEntities";
 	/** [Write] kendra:BatchDeleteDocument */
-	static readonly BATCH_DELETE_DOCUMENT = "kendra:BatchDeleteDocument";
+	static readonly BatchDeleteDocument = "kendra:BatchDeleteDocument";
 	/** [Write] kendra:BatchDeleteFeaturedResultsSet */
-	static readonly BATCH_DELETE_FEATURED_RESULTS_SET =
+	static readonly BatchDeleteFeaturedResultsSet =
 		"kendra:BatchDeleteFeaturedResultsSet";
 	/** [Read] kendra:BatchGetDocumentStatus */
-	static readonly BATCH_GET_DOCUMENT_STATUS = "kendra:BatchGetDocumentStatus";
+	static readonly BatchGetDocumentStatus = "kendra:BatchGetDocumentStatus";
 	/** [Write] kendra:BatchPutDocument */
-	static readonly BATCH_PUT_DOCUMENT = "kendra:BatchPutDocument";
+	static readonly BatchPutDocument = "kendra:BatchPutDocument";
 	/** [Write] kendra:ClearQuerySuggestions */
-	static readonly CLEAR_QUERY_SUGGESTIONS = "kendra:ClearQuerySuggestions";
+	static readonly ClearQuerySuggestions = "kendra:ClearQuerySuggestions";
 	/** [Write] kendra:CreateAccessControlConfiguration */
-	static readonly CREATE_ACCESS_CONTROL_CONFIGURATION =
+	static readonly CreateAccessControlConfiguration =
 		"kendra:CreateAccessControlConfiguration";
 	/** [Write] kendra:CreateDataSource */
-	static readonly CREATE_DATA_SOURCE = "kendra:CreateDataSource";
+	static readonly CreateDataSource = "kendra:CreateDataSource";
 	/** [Write] kendra:CreateExperience */
-	static readonly CREATE_EXPERIENCE = "kendra:CreateExperience";
+	static readonly CreateExperience = "kendra:CreateExperience";
 	/** [Write] kendra:CreateFaq */
-	static readonly CREATE_FAQ = "kendra:CreateFaq";
+	static readonly CreateFaq = "kendra:CreateFaq";
 	/** [Write] kendra:CreateFeaturedResultsSet */
-	static readonly CREATE_FEATURED_RESULTS_SET =
-		"kendra:CreateFeaturedResultsSet";
+	static readonly CreateFeaturedResultsSet = "kendra:CreateFeaturedResultsSet";
 	/** [Write] kendra:CreateIndex */
-	static readonly CREATE_INDEX = "kendra:CreateIndex";
+	static readonly CreateIndex = "kendra:CreateIndex";
 	/** [Write] kendra:CreateQuerySuggestionsBlockList */
-	static readonly CREATE_QUERY_SUGGESTIONS_BLOCK_LIST =
+	static readonly CreateQuerySuggestionsBlockList =
 		"kendra:CreateQuerySuggestionsBlockList";
 	/** [Write] kendra:CreateThesaurus */
-	static readonly CREATE_THESAURUS = "kendra:CreateThesaurus";
+	static readonly CreateThesaurus = "kendra:CreateThesaurus";
 	/** [Write] kendra:DeleteAccessControlConfiguration */
-	static readonly DELETE_ACCESS_CONTROL_CONFIGURATION =
+	static readonly DeleteAccessControlConfiguration =
 		"kendra:DeleteAccessControlConfiguration";
 	/** [Write] kendra:DeleteDataSource */
-	static readonly DELETE_DATA_SOURCE = "kendra:DeleteDataSource";
+	static readonly DeleteDataSource = "kendra:DeleteDataSource";
 	/** [Write] kendra:DeleteExperience */
-	static readonly DELETE_EXPERIENCE = "kendra:DeleteExperience";
+	static readonly DeleteExperience = "kendra:DeleteExperience";
 	/** [Write] kendra:DeleteFaq */
-	static readonly DELETE_FAQ = "kendra:DeleteFaq";
+	static readonly DeleteFaq = "kendra:DeleteFaq";
 	/** [Write] kendra:DeleteIndex */
-	static readonly DELETE_INDEX = "kendra:DeleteIndex";
+	static readonly DeleteIndex = "kendra:DeleteIndex";
 	/** [Write] kendra:DeletePrincipalMapping */
-	static readonly DELETE_PRINCIPAL_MAPPING = "kendra:DeletePrincipalMapping";
+	static readonly DeletePrincipalMapping = "kendra:DeletePrincipalMapping";
 	/** [Write] kendra:DeleteQuerySuggestionsBlockList */
-	static readonly DELETE_QUERY_SUGGESTIONS_BLOCK_LIST =
+	static readonly DeleteQuerySuggestionsBlockList =
 		"kendra:DeleteQuerySuggestionsBlockList";
 	/** [Write] kendra:DeleteThesaurus */
-	static readonly DELETE_THESAURUS = "kendra:DeleteThesaurus";
+	static readonly DeleteThesaurus = "kendra:DeleteThesaurus";
 	/** [Read] kendra:DescribeAccessControlConfiguration */
-	static readonly DESCRIBE_ACCESS_CONTROL_CONFIGURATION =
+	static readonly DescribeAccessControlConfiguration =
 		"kendra:DescribeAccessControlConfiguration";
 	/** [Read] kendra:DescribeDataSource */
-	static readonly DESCRIBE_DATA_SOURCE = "kendra:DescribeDataSource";
+	static readonly DescribeDataSource = "kendra:DescribeDataSource";
 	/** [Read] kendra:DescribeExperience */
-	static readonly DESCRIBE_EXPERIENCE = "kendra:DescribeExperience";
+	static readonly DescribeExperience = "kendra:DescribeExperience";
 	/** [Read] kendra:DescribeFaq */
-	static readonly DESCRIBE_FAQ = "kendra:DescribeFaq";
+	static readonly DescribeFaq = "kendra:DescribeFaq";
 	/** [Read] kendra:DescribeFeaturedResultsSet */
-	static readonly DESCRIBE_FEATURED_RESULTS_SET =
+	static readonly DescribeFeaturedResultsSet =
 		"kendra:DescribeFeaturedResultsSet";
 	/** [Read] kendra:DescribeIndex */
-	static readonly DESCRIBE_INDEX = "kendra:DescribeIndex";
+	static readonly DescribeIndex = "kendra:DescribeIndex";
 	/** [Read] kendra:DescribePrincipalMapping */
-	static readonly DESCRIBE_PRINCIPAL_MAPPING =
-		"kendra:DescribePrincipalMapping";
+	static readonly DescribePrincipalMapping = "kendra:DescribePrincipalMapping";
 	/** [Read] kendra:DescribeQuerySuggestionsBlockList */
-	static readonly DESCRIBE_QUERY_SUGGESTIONS_BLOCK_LIST =
+	static readonly DescribeQuerySuggestionsBlockList =
 		"kendra:DescribeQuerySuggestionsBlockList";
 	/** [Read] kendra:DescribeQuerySuggestionsConfig */
-	static readonly DESCRIBE_QUERY_SUGGESTIONS_CONFIG =
+	static readonly DescribeQuerySuggestionsConfig =
 		"kendra:DescribeQuerySuggestionsConfig";
 	/** [Read] kendra:DescribeThesaurus */
-	static readonly DESCRIBE_THESAURUS = "kendra:DescribeThesaurus";
+	static readonly DescribeThesaurus = "kendra:DescribeThesaurus";
 	/** [Write] kendra:DisassociateEntitiesFromExperience */
-	static readonly DISASSOCIATE_ENTITIES_FROM_EXPERIENCE =
+	static readonly DisassociateEntitiesFromExperience =
 		"kendra:DisassociateEntitiesFromExperience";
 	/** [Write] kendra:DisassociatePersonasFromEntities */
-	static readonly DISASSOCIATE_PERSONAS_FROM_ENTITIES =
+	static readonly DisassociatePersonasFromEntities =
 		"kendra:DisassociatePersonasFromEntities";
 	/** [Read] kendra:GetQuerySuggestions */
-	static readonly GET_QUERY_SUGGESTIONS = "kendra:GetQuerySuggestions";
+	static readonly actionGetQuerySuggestions = "kendra:GetQuerySuggestions";
 	/** [Read] kendra:GetSnapshots */
-	static readonly GET_SNAPSHOTS = "kendra:GetSnapshots";
+	static readonly actionGetSnapshots = "kendra:GetSnapshots";
 	/** [List] kendra:ListAccessControlConfigurations */
-	static readonly LIST_ACCESS_CONTROL_CONFIGURATIONS =
+	static readonly ListAccessControlConfigurations =
 		"kendra:ListAccessControlConfigurations";
 	/** [List] kendra:ListDataSourceSyncJobs */
-	static readonly LIST_DATA_SOURCE_SYNC_JOBS = "kendra:ListDataSourceSyncJobs";
+	static readonly ListDataSourceSyncJobs = "kendra:ListDataSourceSyncJobs";
 	/** [List] kendra:ListDataSources */
-	static readonly LIST_DATA_SOURCES = "kendra:ListDataSources";
+	static readonly ListDataSources = "kendra:ListDataSources";
 	/** [List] kendra:ListEntityPersonas */
-	static readonly LIST_ENTITY_PERSONAS = "kendra:ListEntityPersonas";
+	static readonly ListEntityPersonas = "kendra:ListEntityPersonas";
 	/** [List] kendra:ListExperienceEntities */
-	static readonly LIST_EXPERIENCE_ENTITIES = "kendra:ListExperienceEntities";
+	static readonly ListExperienceEntities = "kendra:ListExperienceEntities";
 	/** [List] kendra:ListExperiences */
-	static readonly LIST_EXPERIENCES = "kendra:ListExperiences";
+	static readonly ListExperiences = "kendra:ListExperiences";
 	/** [List] kendra:ListFaqs */
-	static readonly LIST_FAQS = "kendra:ListFaqs";
+	static readonly ListFaqs = "kendra:ListFaqs";
 	/** [List] kendra:ListFeaturedResultsSets */
-	static readonly LIST_FEATURED_RESULTS_SETS = "kendra:ListFeaturedResultsSets";
+	static readonly ListFeaturedResultsSets = "kendra:ListFeaturedResultsSets";
 	/** [List] kendra:ListGroupsOlderThanOrderingId */
-	static readonly LIST_GROUPS_OLDER_THAN_ORDERING_ID =
+	static readonly ListGroupsOlderThanOrderingId =
 		"kendra:ListGroupsOlderThanOrderingId";
 	/** [List] kendra:ListIndices */
-	static readonly LIST_INDICES = "kendra:ListIndices";
+	static readonly ListIndices = "kendra:ListIndices";
 	/** [List] kendra:ListQuerySuggestionsBlockLists */
-	static readonly LIST_QUERY_SUGGESTIONS_BLOCK_LISTS =
+	static readonly ListQuerySuggestionsBlockLists =
 		"kendra:ListQuerySuggestionsBlockLists";
 	/** [Read] kendra:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "kendra:ListTagsForResource";
+	static readonly ListTagsForResource = "kendra:ListTagsForResource";
 	/** [List] kendra:ListThesauri */
-	static readonly LIST_THESAURI = "kendra:ListThesauri";
+	static readonly ListThesauri = "kendra:ListThesauri";
 	/** [Write] kendra:PutPrincipalMapping */
-	static readonly PUT_PRINCIPAL_MAPPING = "kendra:PutPrincipalMapping";
+	static readonly PutPrincipalMapping = "kendra:PutPrincipalMapping";
 	/** [Read] kendra:Query */
-	static readonly QUERY = "kendra:Query";
+	static readonly Query = "kendra:Query";
 	/** [Read] kendra:Retrieve */
-	static readonly RETRIEVE = "kendra:Retrieve";
+	static readonly Retrieve = "kendra:Retrieve";
 	/** [Write] kendra:StartDataSourceSyncJob */
-	static readonly START_DATA_SOURCE_SYNC_JOB = "kendra:StartDataSourceSyncJob";
+	static readonly StartDataSourceSyncJob = "kendra:StartDataSourceSyncJob";
 	/** [Write] kendra:StopDataSourceSyncJob */
-	static readonly STOP_DATA_SOURCE_SYNC_JOB = "kendra:StopDataSourceSyncJob";
+	static readonly StopDataSourceSyncJob = "kendra:StopDataSourceSyncJob";
 	/** [Write] kendra:SubmitFeedback */
-	static readonly SUBMIT_FEEDBACK = "kendra:SubmitFeedback";
+	static readonly SubmitFeedback = "kendra:SubmitFeedback";
 	/** [Tagging] kendra:TagResource */
-	static readonly TAG_RESOURCE = "kendra:TagResource";
+	static readonly TagResource = "kendra:TagResource";
 	/** [Tagging] kendra:UntagResource */
-	static readonly UNTAG_RESOURCE = "kendra:UntagResource";
+	static readonly UntagResource = "kendra:UntagResource";
 	/** [Write] kendra:UpdateAccessControlConfiguration */
-	static readonly UPDATE_ACCESS_CONTROL_CONFIGURATION =
+	static readonly UpdateAccessControlConfiguration =
 		"kendra:UpdateAccessControlConfiguration";
 	/** [Write] kendra:UpdateDataSource */
-	static readonly UPDATE_DATA_SOURCE = "kendra:UpdateDataSource";
+	static readonly UpdateDataSource = "kendra:UpdateDataSource";
 	/** [Write] kendra:UpdateExperience */
-	static readonly UPDATE_EXPERIENCE = "kendra:UpdateExperience";
+	static readonly UpdateExperience = "kendra:UpdateExperience";
 	/** [Write] kendra:UpdateFeaturedResultsSet */
-	static readonly UPDATE_FEATURED_RESULTS_SET =
-		"kendra:UpdateFeaturedResultsSet";
+	static readonly UpdateFeaturedResultsSet = "kendra:UpdateFeaturedResultsSet";
 	/** [Write] kendra:UpdateIndex */
-	static readonly UPDATE_INDEX = "kendra:UpdateIndex";
+	static readonly UpdateIndex = "kendra:UpdateIndex";
 	/** [Write] kendra:UpdateQuerySuggestionsBlockList */
-	static readonly UPDATE_QUERY_SUGGESTIONS_BLOCK_LIST =
+	static readonly UpdateQuerySuggestionsBlockList =
 		"kendra:UpdateQuerySuggestionsBlockList";
 	/** [Write] kendra:UpdateQuerySuggestionsConfig */
-	static readonly UPDATE_QUERY_SUGGESTIONS_CONFIG =
+	static readonly UpdateQuerySuggestionsConfig =
 		"kendra:UpdateQuerySuggestionsConfig";
 	/** [Write] kendra:UpdateThesaurus */
-	static readonly UPDATE_THESAURUS = "kendra:UpdateThesaurus";
+	static readonly UpdateThesaurus = "kendra:UpdateThesaurus";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KendraActions.BATCH_GET_DOCUMENT_STATUS,
-		KendraActions.DESCRIBE_ACCESS_CONTROL_CONFIGURATION,
-		KendraActions.DESCRIBE_DATA_SOURCE,
-		KendraActions.DESCRIBE_EXPERIENCE,
-		KendraActions.DESCRIBE_FAQ,
-		KendraActions.DESCRIBE_FEATURED_RESULTS_SET,
-		KendraActions.DESCRIBE_INDEX,
-		KendraActions.DESCRIBE_PRINCIPAL_MAPPING,
-		KendraActions.DESCRIBE_QUERY_SUGGESTIONS_BLOCK_LIST,
-		KendraActions.DESCRIBE_QUERY_SUGGESTIONS_CONFIG,
-		KendraActions.DESCRIBE_THESAURUS,
-		KendraActions.GET_QUERY_SUGGESTIONS,
-		KendraActions.GET_SNAPSHOTS,
-		KendraActions.LIST_TAGS_FOR_RESOURCE,
-		KendraActions.QUERY,
-		KendraActions.RETRIEVE,
+	static readonly AllReadActions: string[] = [
+		KendraActions.BatchGetDocumentStatus,
+		KendraActions.DescribeAccessControlConfiguration,
+		KendraActions.DescribeDataSource,
+		KendraActions.DescribeExperience,
+		KendraActions.DescribeFaq,
+		KendraActions.DescribeFeaturedResultsSet,
+		KendraActions.DescribeIndex,
+		KendraActions.DescribePrincipalMapping,
+		KendraActions.DescribeQuerySuggestionsBlockList,
+		KendraActions.DescribeQuerySuggestionsConfig,
+		KendraActions.DescribeThesaurus,
+		KendraActions.actionGetQuerySuggestions,
+		KendraActions.actionGetSnapshots,
+		KendraActions.ListTagsForResource,
+		KendraActions.Query,
+		KendraActions.Retrieve,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KendraActions.ASSOCIATE_ENTITIES_TO_EXPERIENCE,
-		KendraActions.ASSOCIATE_PERSONAS_TO_ENTITIES,
-		KendraActions.BATCH_DELETE_DOCUMENT,
-		KendraActions.BATCH_DELETE_FEATURED_RESULTS_SET,
-		KendraActions.BATCH_PUT_DOCUMENT,
-		KendraActions.CLEAR_QUERY_SUGGESTIONS,
-		KendraActions.CREATE_ACCESS_CONTROL_CONFIGURATION,
-		KendraActions.CREATE_DATA_SOURCE,
-		KendraActions.CREATE_EXPERIENCE,
-		KendraActions.CREATE_FAQ,
-		KendraActions.CREATE_FEATURED_RESULTS_SET,
-		KendraActions.CREATE_INDEX,
-		KendraActions.CREATE_QUERY_SUGGESTIONS_BLOCK_LIST,
-		KendraActions.CREATE_THESAURUS,
-		KendraActions.DELETE_ACCESS_CONTROL_CONFIGURATION,
-		KendraActions.DELETE_DATA_SOURCE,
-		KendraActions.DELETE_EXPERIENCE,
-		KendraActions.DELETE_FAQ,
-		KendraActions.DELETE_INDEX,
-		KendraActions.DELETE_PRINCIPAL_MAPPING,
-		KendraActions.DELETE_QUERY_SUGGESTIONS_BLOCK_LIST,
-		KendraActions.DELETE_THESAURUS,
-		KendraActions.DISASSOCIATE_ENTITIES_FROM_EXPERIENCE,
-		KendraActions.DISASSOCIATE_PERSONAS_FROM_ENTITIES,
-		KendraActions.PUT_PRINCIPAL_MAPPING,
-		KendraActions.START_DATA_SOURCE_SYNC_JOB,
-		KendraActions.STOP_DATA_SOURCE_SYNC_JOB,
-		KendraActions.SUBMIT_FEEDBACK,
-		KendraActions.UPDATE_ACCESS_CONTROL_CONFIGURATION,
-		KendraActions.UPDATE_DATA_SOURCE,
-		KendraActions.UPDATE_EXPERIENCE,
-		KendraActions.UPDATE_FEATURED_RESULTS_SET,
-		KendraActions.UPDATE_INDEX,
-		KendraActions.UPDATE_QUERY_SUGGESTIONS_BLOCK_LIST,
-		KendraActions.UPDATE_QUERY_SUGGESTIONS_CONFIG,
-		KendraActions.UPDATE_THESAURUS,
+	static readonly AllWriteActions: string[] = [
+		KendraActions.AssociateEntitiesToExperience,
+		KendraActions.AssociatePersonasToEntities,
+		KendraActions.BatchDeleteDocument,
+		KendraActions.BatchDeleteFeaturedResultsSet,
+		KendraActions.BatchPutDocument,
+		KendraActions.ClearQuerySuggestions,
+		KendraActions.CreateAccessControlConfiguration,
+		KendraActions.CreateDataSource,
+		KendraActions.CreateExperience,
+		KendraActions.CreateFaq,
+		KendraActions.CreateFeaturedResultsSet,
+		KendraActions.CreateIndex,
+		KendraActions.CreateQuerySuggestionsBlockList,
+		KendraActions.CreateThesaurus,
+		KendraActions.DeleteAccessControlConfiguration,
+		KendraActions.DeleteDataSource,
+		KendraActions.DeleteExperience,
+		KendraActions.DeleteFaq,
+		KendraActions.DeleteIndex,
+		KendraActions.DeletePrincipalMapping,
+		KendraActions.DeleteQuerySuggestionsBlockList,
+		KendraActions.DeleteThesaurus,
+		KendraActions.DisassociateEntitiesFromExperience,
+		KendraActions.DisassociatePersonasFromEntities,
+		KendraActions.PutPrincipalMapping,
+		KendraActions.StartDataSourceSyncJob,
+		KendraActions.StopDataSourceSyncJob,
+		KendraActions.SubmitFeedback,
+		KendraActions.UpdateAccessControlConfiguration,
+		KendraActions.UpdateDataSource,
+		KendraActions.UpdateExperience,
+		KendraActions.UpdateFeaturedResultsSet,
+		KendraActions.UpdateIndex,
+		KendraActions.UpdateQuerySuggestionsBlockList,
+		KendraActions.UpdateQuerySuggestionsConfig,
+		KendraActions.UpdateThesaurus,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KendraActions.LIST_ACCESS_CONTROL_CONFIGURATIONS,
-		KendraActions.LIST_DATA_SOURCE_SYNC_JOBS,
-		KendraActions.LIST_DATA_SOURCES,
-		KendraActions.LIST_ENTITY_PERSONAS,
-		KendraActions.LIST_EXPERIENCE_ENTITIES,
-		KendraActions.LIST_EXPERIENCES,
-		KendraActions.LIST_FAQS,
-		KendraActions.LIST_FEATURED_RESULTS_SETS,
-		KendraActions.LIST_GROUPS_OLDER_THAN_ORDERING_ID,
-		KendraActions.LIST_INDICES,
-		KendraActions.LIST_QUERY_SUGGESTIONS_BLOCK_LISTS,
-		KendraActions.LIST_THESAURI,
+	static readonly AllListActions: string[] = [
+		KendraActions.ListAccessControlConfigurations,
+		KendraActions.ListDataSourceSyncJobs,
+		KendraActions.ListDataSources,
+		KendraActions.ListEntityPersonas,
+		KendraActions.ListExperienceEntities,
+		KendraActions.ListExperiences,
+		KendraActions.ListFaqs,
+		KendraActions.ListFeaturedResultsSets,
+		KendraActions.ListGroupsOlderThanOrderingId,
+		KendraActions.ListIndices,
+		KendraActions.ListQuerySuggestionsBlockLists,
+		KendraActions.ListThesauri,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KendraActions.TAG_RESOURCE,
-		KendraActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KendraActions.TagResource,
+		KendraActions.UntagResource,
 	];
 }
 
-const AccessControlConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/access-control-configuration/(?<accessControlConfigurationId>[^:/?]+)$",
-);
-const DataSourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/data-source/(?<dataSourceId>[^:/?]+)$",
-);
-const ExperienceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/experience/(?<experienceId>[^:/?]+)$",
-);
-const FaqArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/faq/(?<faqId>[^:/?]+)$",
-);
-const FeaturedResultsSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/featured-results-set/(?<featuredResultsSetId>[^:/?]+)$",
-);
-const IndexArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)$",
-);
-const QuerySuggestionsBlockListArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/query-suggestions-block-list/(?<querySuggestionsBlockListId>[^:/?]+)$",
-);
-const ThesaurusArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexId>[^:/?]+)/thesaurus/(?<thesaurusId>[^:/?]+)$",
-);
+/**
+ * Properties for building a access-control-configuration ARN.
+ */
+export interface KendraAccessControlConfigurationArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The AccessControlConfigurationId component of the ARN. */
+	readonly accessControlConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-control-configuration ARN.
+ */
+export interface KendraAccessControlConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The AccessControlConfigurationId component. */
+	readonly accessControlConfigurationId: string;
+}
+
+/**
+ * Properties for building a data-source ARN.
+ */
+export interface KendraDataSourceArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The DataSourceId component of the ARN. */
+	readonly dataSourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-source ARN.
+ */
+export interface KendraDataSourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The DataSourceId component. */
+	readonly dataSourceId: string;
+}
+
+/**
+ * Properties for building a experience ARN.
+ */
+export interface KendraExperienceArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The ExperienceId component of the ARN. */
+	readonly experienceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experience ARN.
+ */
+export interface KendraExperienceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The ExperienceId component. */
+	readonly experienceId: string;
+}
+
+/**
+ * Properties for building a faq ARN.
+ */
+export interface KendraFaqArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The FaqId component of the ARN. */
+	readonly faqId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a faq ARN.
+ */
+export interface KendraFaqArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The FaqId component. */
+	readonly faqId: string;
+}
+
+/**
+ * Properties for building a featured-results-set ARN.
+ */
+export interface KendraFeaturedResultsSetArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The FeaturedResultsSetId component of the ARN. */
+	readonly featuredResultsSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a featured-results-set ARN.
+ */
+export interface KendraFeaturedResultsSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The FeaturedResultsSetId component. */
+	readonly featuredResultsSetId: string;
+}
+
+/**
+ * Properties for building a index ARN.
+ */
+export interface KendraIndexArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a index ARN.
+ */
+export interface KendraIndexArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+}
+
+/**
+ * Properties for building a query-suggestions-block-list ARN.
+ */
+export interface KendraQuerySuggestionsBlockListArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The QuerySuggestionsBlockListId component of the ARN. */
+	readonly querySuggestionsBlockListId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a query-suggestions-block-list ARN.
+ */
+export interface KendraQuerySuggestionsBlockListArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The QuerySuggestionsBlockListId component. */
+	readonly querySuggestionsBlockListId: string;
+}
+
+/**
+ * Properties for building a thesaurus ARN.
+ */
+export interface KendraThesaurusArnProps {
+	/** The IndexId component of the ARN. */
+	readonly indexId: string;
+	/** The ThesaurusId component of the ARN. */
+	readonly thesaurusId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a thesaurus ARN.
+ */
+export interface KendraThesaurusArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexId component. */
+	readonly indexId: string;
+	/** The ThesaurusId component. */
+	readonly thesaurusId: string;
+}
+
+const AccessControlConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/access-control-configuration\/(?<accessControlConfigurationId>[^:/?]+)$/;
+const DataSourceArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/data-source\/(?<dataSourceId>[^:/?]+)$/;
+const ExperienceArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/experience\/(?<experienceId>[^:/?]+)$/;
+const FaqArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/faq\/(?<faqId>[^:/?]+)$/;
+const FeaturedResultsSetArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/featured-results-set\/(?<featuredResultsSetId>[^:/?]+)$/;
+const IndexArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)$/;
+const QuerySuggestionsBlockListArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/query-suggestions-block-list\/(?<querySuggestionsBlockListId>[^:/?]+)$/;
+const ThesaurusArnRegex =
+	/^arn:(?<partition>[^:]+):kendra:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexId>[^:/?]+)\/thesaurus\/(?<thesaurusId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kendra resources.
@@ -281,18 +522,9 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the access-control-configuration resource.
 	 */
-	static accessControlConfiguration(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The AccessControlConfigurationId component of the ARN. */
-		readonly accessControlConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessControlConfiguration(
+		props: KendraAccessControlConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/access-control-configuration/${props.accessControlConfigurationId}`;
 	}
 
@@ -307,13 +539,9 @@ export class KendraResources {
 	 * Parses a access-control-configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessControlConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		accessControlConfigurationId: string;
-	} {
+	static parseAccessControlConfigurationArn(
+		arn: string,
+	): KendraAccessControlConfigurationArnComponents {
 		const match = AccessControlConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-control-configuration ARN: ${arn}`);
@@ -330,18 +558,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the data-source resource.
 	 */
-	static dataSource(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The DataSourceId component of the ARN. */
-		readonly dataSourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataSource(props: KendraDataSourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/data-source/${props.dataSourceId}`;
 	}
 
@@ -356,13 +573,7 @@ export class KendraResources {
 	 * Parses a data-source ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataSourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		dataSourceId: string;
-	} {
+	static parseDataSourceArn(arn: string): KendraDataSourceArnComponents {
 		const match = DataSourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-source ARN: ${arn}`);
@@ -379,18 +590,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the experience resource.
 	 */
-	static experience(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The ExperienceId component of the ARN. */
-		readonly experienceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static experience(props: KendraExperienceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/experience/${props.experienceId}`;
 	}
 
@@ -405,13 +605,7 @@ export class KendraResources {
 	 * Parses a experience ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExperienceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		experienceId: string;
-	} {
+	static parseExperienceArn(arn: string): KendraExperienceArnComponents {
 		const match = ExperienceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid experience ARN: ${arn}`);
@@ -428,18 +622,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the faq resource.
 	 */
-	static faq(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The FaqId component of the ARN. */
-		readonly faqId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static faq(props: KendraFaqArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/faq/${props.faqId}`;
 	}
 
@@ -454,13 +637,7 @@ export class KendraResources {
 	 * Parses a faq ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFaqArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		faqId: string;
-	} {
+	static parseFaqArn(arn: string): KendraFaqArnComponents {
 		const match = FaqArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid faq ARN: ${arn}`);
@@ -477,18 +654,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the featured-results-set resource.
 	 */
-	static featuredResultsSet(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The FeaturedResultsSetId component of the ARN. */
-		readonly featuredResultsSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static featuredResultsSet(props: KendraFeaturedResultsSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/featured-results-set/${props.featuredResultsSetId}`;
 	}
 
@@ -503,13 +669,9 @@ export class KendraResources {
 	 * Parses a featured-results-set ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFeaturedResultsSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		featuredResultsSetId: string;
-	} {
+	static parseFeaturedResultsSetArn(
+		arn: string,
+	): KendraFeaturedResultsSetArnComponents {
 		const match = FeaturedResultsSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid featured-results-set ARN: ${arn}`);
@@ -526,16 +688,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the index resource.
 	 */
-	static index(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static index(props: KendraIndexArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}`;
 	}
 
@@ -550,12 +703,7 @@ export class KendraResources {
 	 * Parses a index ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIndexArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-	} {
+	static parseIndexArn(arn: string): KendraIndexArnComponents {
 		const match = IndexArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid index ARN: ${arn}`);
@@ -571,18 +719,9 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the query-suggestions-block-list resource.
 	 */
-	static querySuggestionsBlockList(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The QuerySuggestionsBlockListId component of the ARN. */
-		readonly querySuggestionsBlockListId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static querySuggestionsBlockList(
+		props: KendraQuerySuggestionsBlockListArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/query-suggestions-block-list/${props.querySuggestionsBlockListId}`;
 	}
 
@@ -597,13 +736,9 @@ export class KendraResources {
 	 * Parses a query-suggestions-block-list ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQuerySuggestionsBlockListArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		querySuggestionsBlockListId: string;
-	} {
+	static parseQuerySuggestionsBlockListArn(
+		arn: string,
+	): KendraQuerySuggestionsBlockListArnComponents {
 		const match = QuerySuggestionsBlockListArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid query-suggestions-block-list ARN: ${arn}`);
@@ -620,18 +755,7 @@ export class KendraResources {
 	/**
 	 * Builds an ARN for the thesaurus resource.
 	 */
-	static thesaurus(props: {
-		/** The IndexId component of the ARN. */
-		readonly indexId: string;
-		/** The ThesaurusId component of the ARN. */
-		readonly thesaurusId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static thesaurus(props: KendraThesaurusArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kendra:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexId}/thesaurus/${props.thesaurusId}`;
 	}
 
@@ -646,13 +770,7 @@ export class KendraResources {
 	 * Parses a thesaurus ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThesaurusArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexId: string;
-		thesaurusId: string;
-	} {
+	static parseThesaurusArn(arn: string): KendraThesaurusArnComponents {
 		const match = ThesaurusArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid thesaurus ARN: ${arn}`);
@@ -672,245 +790,241 @@ export class KendraResources {
  */
 export class KendraOperations {
 	/** IAM actions required for the AssociateEntitiesToExperience API call. */
-	static readonly ASSOCIATE_ENTITIES_TO_EXPERIENCE: string[] = [
+	static readonly AssociateEntitiesToExperience: string[] = [
 		"kendra:AssociateEntitiesToExperience",
 	];
 	/** IAM actions required for the AssociatePersonasToEntities API call. */
-	static readonly ASSOCIATE_PERSONAS_TO_ENTITIES: string[] = [
+	static readonly AssociatePersonasToEntities: string[] = [
 		"kendra:AssociatePersonasToEntities",
 	];
 	/** IAM actions required for the BatchDeleteDocument API call. */
-	static readonly BATCH_DELETE_DOCUMENT: string[] = [
+	static readonly BatchDeleteDocument: string[] = [
 		"kendra:BatchDeleteDocument",
 	];
 	/** IAM actions required for the BatchDeleteFeaturedResultsSet API call. */
-	static readonly BATCH_DELETE_FEATURED_RESULTS_SET: string[] = [
+	static readonly BatchDeleteFeaturedResultsSet: string[] = [
 		"kendra:BatchDeleteFeaturedResultsSet",
 	];
 	/** IAM actions required for the BatchGetDocumentStatus API call. */
-	static readonly BATCH_GET_DOCUMENT_STATUS: string[] = [
+	static readonly BatchGetDocumentStatus: string[] = [
 		"kendra:BatchGetDocumentStatus",
 	];
 	/** IAM actions required for the BatchPutDocument API call. */
-	static readonly BATCH_PUT_DOCUMENT: string[] = [
+	static readonly BatchPutDocument: string[] = [
 		"kendra:BatchPutDocument",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ClearQuerySuggestions API call. */
-	static readonly CLEAR_QUERY_SUGGESTIONS: string[] = [
+	static readonly ClearQuerySuggestions: string[] = [
 		"kendra:ClearQuerySuggestions",
 	];
 	/** IAM actions required for the CreateAccessControlConfiguration API call. */
-	static readonly CREATE_ACCESS_CONTROL_CONFIGURATION: string[] = [
+	static readonly CreateAccessControlConfiguration: string[] = [
 		"kendra:CreateAccessControlConfiguration",
 	];
 	/** IAM actions required for the CreateDataSource API call. */
-	static readonly CREATE_DATA_SOURCE: string[] = [
+	static readonly CreateDataSource: string[] = [
 		"kendra:CreateDataSource",
 		"iam:PassRole",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the CreateExperience API call. */
-	static readonly CREATE_EXPERIENCE: string[] = [
+	static readonly CreateExperience: string[] = [
 		"kendra:CreateExperience",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateFaq API call. */
-	static readonly CREATE_FAQ: string[] = [
+	static readonly CreateFaq: string[] = [
 		"kendra:CreateFaq",
 		"iam:PassRole",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the CreateFeaturedResultsSet API call. */
-	static readonly CREATE_FEATURED_RESULTS_SET: string[] = [
+	static readonly CreateFeaturedResultsSet: string[] = [
 		"kendra:CreateFeaturedResultsSet",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the CreateIndex API call. */
-	static readonly CREATE_INDEX: string[] = [
+	static readonly CreateIndex: string[] = [
 		"kendra:CreateIndex",
 		"iam:PassRole",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the CreateQuerySuggestionsBlockList API call. */
-	static readonly CREATE_QUERY_SUGGESTIONS_BLOCK_LIST: string[] = [
+	static readonly CreateQuerySuggestionsBlockList: string[] = [
 		"kendra:CreateQuerySuggestionsBlockList",
 		"iam:PassRole",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the CreateThesaurus API call. */
-	static readonly CREATE_THESAURUS: string[] = [
+	static readonly CreateThesaurus: string[] = [
 		"kendra:CreateThesaurus",
 		"iam:PassRole",
 		"kendra:TagResource",
 	];
 	/** IAM actions required for the DeleteAccessControlConfiguration API call. */
-	static readonly DELETE_ACCESS_CONTROL_CONFIGURATION: string[] = [
+	static readonly DeleteAccessControlConfiguration: string[] = [
 		"kendra:DeleteAccessControlConfiguration",
 	];
 	/** IAM actions required for the DeleteDataSource API call. */
-	static readonly DELETE_DATA_SOURCE: string[] = ["kendra:DeleteDataSource"];
+	static readonly DeleteDataSource: string[] = ["kendra:DeleteDataSource"];
 	/** IAM actions required for the DeleteExperience API call. */
-	static readonly DELETE_EXPERIENCE: string[] = ["kendra:DeleteExperience"];
+	static readonly DeleteExperience: string[] = ["kendra:DeleteExperience"];
 	/** IAM actions required for the DeleteFaq API call. */
-	static readonly DELETE_FAQ: string[] = ["kendra:DeleteFaq"];
+	static readonly DeleteFaq: string[] = ["kendra:DeleteFaq"];
 	/** IAM actions required for the DeleteIndex API call. */
-	static readonly DELETE_INDEX: string[] = ["kendra:DeleteIndex"];
+	static readonly DeleteIndex: string[] = ["kendra:DeleteIndex"];
 	/** IAM actions required for the DeletePrincipalMapping API call. */
-	static readonly DELETE_PRINCIPAL_MAPPING: string[] = [
+	static readonly DeletePrincipalMapping: string[] = [
 		"kendra:DeletePrincipalMapping",
 	];
 	/** IAM actions required for the DeleteQuerySuggestionsBlockList API call. */
-	static readonly DELETE_QUERY_SUGGESTIONS_BLOCK_LIST: string[] = [
+	static readonly DeleteQuerySuggestionsBlockList: string[] = [
 		"kendra:DeleteQuerySuggestionsBlockList",
 	];
 	/** IAM actions required for the DeleteThesaurus API call. */
-	static readonly DELETE_THESAURUS: string[] = ["kendra:DeleteThesaurus"];
+	static readonly DeleteThesaurus: string[] = ["kendra:DeleteThesaurus"];
 	/** IAM actions required for the DescribeAccessControlConfiguration API call. */
-	static readonly DESCRIBE_ACCESS_CONTROL_CONFIGURATION: string[] = [
+	static readonly DescribeAccessControlConfiguration: string[] = [
 		"kendra:DescribeAccessControlConfiguration",
 	];
 	/** IAM actions required for the DescribeDataSource API call. */
-	static readonly DESCRIBE_DATA_SOURCE: string[] = [
-		"kendra:DescribeDataSource",
-	];
+	static readonly DescribeDataSource: string[] = ["kendra:DescribeDataSource"];
 	/** IAM actions required for the DescribeExperience API call. */
-	static readonly DESCRIBE_EXPERIENCE: string[] = ["kendra:DescribeExperience"];
+	static readonly DescribeExperience: string[] = ["kendra:DescribeExperience"];
 	/** IAM actions required for the DescribeFaq API call. */
-	static readonly DESCRIBE_FAQ: string[] = ["kendra:DescribeFaq"];
+	static readonly DescribeFaq: string[] = ["kendra:DescribeFaq"];
 	/** IAM actions required for the DescribeFeaturedResultsSet API call. */
-	static readonly DESCRIBE_FEATURED_RESULTS_SET: string[] = [
+	static readonly DescribeFeaturedResultsSet: string[] = [
 		"kendra:DescribeFeaturedResultsSet",
 	];
 	/** IAM actions required for the DescribeIndex API call. */
-	static readonly DESCRIBE_INDEX: string[] = ["kendra:DescribeIndex"];
+	static readonly DescribeIndex: string[] = ["kendra:DescribeIndex"];
 	/** IAM actions required for the DescribePrincipalMapping API call. */
-	static readonly DESCRIBE_PRINCIPAL_MAPPING: string[] = [
+	static readonly DescribePrincipalMapping: string[] = [
 		"kendra:DescribePrincipalMapping",
 	];
 	/** IAM actions required for the DescribeQuerySuggestionsBlockList API call. */
-	static readonly DESCRIBE_QUERY_SUGGESTIONS_BLOCK_LIST: string[] = [
+	static readonly DescribeQuerySuggestionsBlockList: string[] = [
 		"kendra:DescribeQuerySuggestionsBlockList",
 	];
 	/** IAM actions required for the DescribeQuerySuggestionsConfig API call. */
-	static readonly DESCRIBE_QUERY_SUGGESTIONS_CONFIG: string[] = [
+	static readonly DescribeQuerySuggestionsConfig: string[] = [
 		"kendra:DescribeQuerySuggestionsConfig",
 	];
 	/** IAM actions required for the DescribeThesaurus API call. */
-	static readonly DESCRIBE_THESAURUS: string[] = ["kendra:DescribeThesaurus"];
+	static readonly DescribeThesaurus: string[] = ["kendra:DescribeThesaurus"];
 	/** IAM actions required for the DisassociateEntitiesFromExperience API call. */
-	static readonly DISASSOCIATE_ENTITIES_FROM_EXPERIENCE: string[] = [
+	static readonly DisassociateEntitiesFromExperience: string[] = [
 		"kendra:DisassociateEntitiesFromExperience",
 	];
 	/** IAM actions required for the DisassociatePersonasFromEntities API call. */
-	static readonly DISASSOCIATE_PERSONAS_FROM_ENTITIES: string[] = [
+	static readonly DisassociatePersonasFromEntities: string[] = [
 		"kendra:DisassociatePersonasFromEntities",
 	];
 	/** IAM actions required for the GetQuerySuggestions API call. */
-	static readonly GET_QUERY_SUGGESTIONS: string[] = [
+	static readonly opGetQuerySuggestions: string[] = [
 		"kendra:GetQuerySuggestions",
 	];
 	/** IAM actions required for the GetSnapshots API call. */
-	static readonly GET_SNAPSHOTS: string[] = ["kendra:GetSnapshots"];
+	static readonly opGetSnapshots: string[] = ["kendra:GetSnapshots"];
 	/** IAM actions required for the ListAccessControlConfigurations API call. */
-	static readonly LIST_ACCESS_CONTROL_CONFIGURATIONS: string[] = [
+	static readonly ListAccessControlConfigurations: string[] = [
 		"kendra:ListAccessControlConfigurations",
 	];
 	/** IAM actions required for the ListDataSourceSyncJobs API call. */
-	static readonly LIST_DATA_SOURCE_SYNC_JOBS: string[] = [
+	static readonly ListDataSourceSyncJobs: string[] = [
 		"kendra:ListDataSourceSyncJobs",
 	];
 	/** IAM actions required for the ListDataSources API call. */
-	static readonly LIST_DATA_SOURCES: string[] = ["kendra:ListDataSources"];
+	static readonly ListDataSources: string[] = ["kendra:ListDataSources"];
 	/** IAM actions required for the ListEntityPersonas API call. */
-	static readonly LIST_ENTITY_PERSONAS: string[] = [
-		"kendra:ListEntityPersonas",
-	];
+	static readonly ListEntityPersonas: string[] = ["kendra:ListEntityPersonas"];
 	/** IAM actions required for the ListExperienceEntities API call. */
-	static readonly LIST_EXPERIENCE_ENTITIES: string[] = [
+	static readonly ListExperienceEntities: string[] = [
 		"kendra:ListExperienceEntities",
 	];
 	/** IAM actions required for the ListExperiences API call. */
-	static readonly LIST_EXPERIENCES: string[] = ["kendra:ListExperiences"];
+	static readonly ListExperiences: string[] = ["kendra:ListExperiences"];
 	/** IAM actions required for the ListFaqs API call. */
-	static readonly LIST_FAQS: string[] = ["kendra:ListFaqs"];
+	static readonly ListFaqs: string[] = ["kendra:ListFaqs"];
 	/** IAM actions required for the ListFeaturedResultsSets API call. */
-	static readonly LIST_FEATURED_RESULTS_SETS: string[] = [
+	static readonly ListFeaturedResultsSets: string[] = [
 		"kendra:ListFeaturedResultsSets",
 	];
 	/** IAM actions required for the ListGroupsOlderThanOrderingId API call. */
-	static readonly LIST_GROUPS_OLDER_THAN_ORDERING_ID: string[] = [
+	static readonly ListGroupsOlderThanOrderingId: string[] = [
 		"kendra:ListGroupsOlderThanOrderingId",
 	];
 	/** IAM actions required for the ListIndices API call. */
-	static readonly LIST_INDICES: string[] = ["kendra:ListIndices"];
+	static readonly ListIndices: string[] = ["kendra:ListIndices"];
 	/** IAM actions required for the ListQuerySuggestionsBlockLists API call. */
-	static readonly LIST_QUERY_SUGGESTIONS_BLOCK_LISTS: string[] = [
+	static readonly ListQuerySuggestionsBlockLists: string[] = [
 		"kendra:ListQuerySuggestionsBlockLists",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"kendra:ListTagsForResource",
 	];
 	/** IAM actions required for the ListThesauri API call. */
-	static readonly LIST_THESAURI: string[] = ["kendra:ListThesauri"];
+	static readonly ListThesauri: string[] = ["kendra:ListThesauri"];
 	/** IAM actions required for the PutPrincipalMapping API call. */
-	static readonly PUT_PRINCIPAL_MAPPING: string[] = [
+	static readonly PutPrincipalMapping: string[] = [
 		"iam:PassRole",
 		"kendra:PutPrincipalMapping",
 	];
 	/** IAM actions required for the Query API call. */
-	static readonly QUERY: string[] = ["kendra:Query"];
+	static readonly Query: string[] = ["kendra:Query"];
 	/** IAM actions required for the Retrieve API call. */
-	static readonly RETRIEVE: string[] = ["kendra:Retrieve"];
+	static readonly Retrieve: string[] = ["kendra:Retrieve"];
 	/** IAM actions required for the StartDataSourceSyncJob API call. */
-	static readonly START_DATA_SOURCE_SYNC_JOB: string[] = [
+	static readonly StartDataSourceSyncJob: string[] = [
 		"kendra:StartDataSourceSyncJob",
 	];
 	/** IAM actions required for the StopDataSourceSyncJob API call. */
-	static readonly STOP_DATA_SOURCE_SYNC_JOB: string[] = [
+	static readonly StopDataSourceSyncJob: string[] = [
 		"kendra:StopDataSourceSyncJob",
 	];
 	/** IAM actions required for the SubmitFeedback API call. */
-	static readonly SUBMIT_FEEDBACK: string[] = ["kendra:SubmitFeedback"];
+	static readonly SubmitFeedback: string[] = ["kendra:SubmitFeedback"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kendra:TagResource"];
+	static readonly TagResource: string[] = ["kendra:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kendra:UntagResource"];
+	static readonly UntagResource: string[] = ["kendra:UntagResource"];
 	/** IAM actions required for the UpdateAccessControlConfiguration API call. */
-	static readonly UPDATE_ACCESS_CONTROL_CONFIGURATION: string[] = [
+	static readonly UpdateAccessControlConfiguration: string[] = [
 		"kendra:UpdateAccessControlConfiguration",
 	];
 	/** IAM actions required for the UpdateDataSource API call. */
-	static readonly UPDATE_DATA_SOURCE: string[] = [
+	static readonly UpdateDataSource: string[] = [
 		"iam:PassRole",
 		"kendra:UpdateDataSource",
 	];
 	/** IAM actions required for the UpdateExperience API call. */
-	static readonly UPDATE_EXPERIENCE: string[] = [
+	static readonly UpdateExperience: string[] = [
 		"iam:PassRole",
 		"kendra:UpdateExperience",
 	];
 	/** IAM actions required for the UpdateFeaturedResultsSet API call. */
-	static readonly UPDATE_FEATURED_RESULTS_SET: string[] = [
+	static readonly UpdateFeaturedResultsSet: string[] = [
 		"kendra:UpdateFeaturedResultsSet",
 	];
 	/** IAM actions required for the UpdateIndex API call. */
-	static readonly UPDATE_INDEX: string[] = [
+	static readonly UpdateIndex: string[] = [
 		"iam:PassRole",
 		"kendra:UpdateIndex",
 	];
 	/** IAM actions required for the UpdateQuerySuggestionsBlockList API call. */
-	static readonly UPDATE_QUERY_SUGGESTIONS_BLOCK_LIST: string[] = [
+	static readonly UpdateQuerySuggestionsBlockList: string[] = [
 		"iam:PassRole",
 		"kendra:UpdateQuerySuggestionsBlockList",
 	];
 	/** IAM actions required for the UpdateQuerySuggestionsConfig API call. */
-	static readonly UPDATE_QUERY_SUGGESTIONS_CONFIG: string[] = [
+	static readonly UpdateQuerySuggestionsConfig: string[] = [
 		"kendra:UpdateQuerySuggestionsConfig",
 	];
 	/** IAM actions required for the UpdateThesaurus API call. */
-	static readonly UPDATE_THESAURUS: string[] = [
+	static readonly UpdateThesaurus: string[] = [
 		"iam:PassRole",
 		"kendra:UpdateThesaurus",
 	];
@@ -921,47 +1035,49 @@ export class KendraOperations {
  */
 export class KendraConditions {
 	/** Condition keys applicable to the CreateDataSource action. */
-	static readonly CREATE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly CreateDataSourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFaq action. */
-	static readonly CREATE_FAQ_CONDITION_KEYS: string[] = [
+	static readonly CreateFaqConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFeaturedResultsSet action. */
-	static readonly CREATE_FEATURED_RESULTS_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateFeaturedResultsSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIndex action. */
-	static readonly CREATE_INDEX_CONDITION_KEYS: string[] = [
+	static readonly CreateIndexConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateQuerySuggestionsBlockList action. */
-	static readonly CREATE_QUERY_SUGGESTIONS_BLOCK_LIST_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateQuerySuggestionsBlockListConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateThesaurus action. */
-	static readonly CREATE_THESAURUS_CONDITION_KEYS: string[] = [
+	static readonly CreateThesaurusConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

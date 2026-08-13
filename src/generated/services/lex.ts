@@ -13,526 +13,764 @@ export class LexActions {
 	static readonly SERVICE_PREFIX = "lex";
 
 	/** [Write] lex:BatchCreateCustomVocabularyItem */
-	static readonly BATCH_CREATE_CUSTOM_VOCABULARY_ITEM =
+	static readonly BatchCreateCustomVocabularyItem =
 		"lex:BatchCreateCustomVocabularyItem";
 	/** [Write] lex:BatchDeleteCustomVocabularyItem */
-	static readonly BATCH_DELETE_CUSTOM_VOCABULARY_ITEM =
+	static readonly BatchDeleteCustomVocabularyItem =
 		"lex:BatchDeleteCustomVocabularyItem";
 	/** [Write] lex:BatchUpdateCustomVocabularyItem */
-	static readonly BATCH_UPDATE_CUSTOM_VOCABULARY_ITEM =
+	static readonly BatchUpdateCustomVocabularyItem =
 		"lex:BatchUpdateCustomVocabularyItem";
 	/** [Write] lex:BuildBotLocale */
-	static readonly BUILD_BOT_LOCALE = "lex:BuildBotLocale";
+	static readonly BuildBotLocale = "lex:BuildBotLocale";
 	/** [Write] lex:CreateBot */
-	static readonly CREATE_BOT = "lex:CreateBot";
+	static readonly CreateBot = "lex:CreateBot";
 	/** [Write] lex:CreateBotAlias */
-	static readonly CREATE_BOT_ALIAS = "lex:CreateBotAlias";
+	static readonly CreateBotAlias = "lex:CreateBotAlias";
 	/** [Write] lex:CreateBotChannel */
-	static readonly CREATE_BOT_CHANNEL = "lex:CreateBotChannel";
+	static readonly CreateBotChannel = "lex:CreateBotChannel";
 	/** [Write] lex:CreateBotLocale */
-	static readonly CREATE_BOT_LOCALE = "lex:CreateBotLocale";
+	static readonly CreateBotLocale = "lex:CreateBotLocale";
 	/** [Write] lex:CreateBotReplica */
-	static readonly CREATE_BOT_REPLICA = "lex:CreateBotReplica";
+	static readonly CreateBotReplica = "lex:CreateBotReplica";
 	/** [Write] lex:CreateBotVersion */
-	static readonly CREATE_BOT_VERSION = "lex:CreateBotVersion";
+	static readonly CreateBotVersion = "lex:CreateBotVersion";
 	/** [Write] lex:CreateCustomVocabulary */
-	static readonly CREATE_CUSTOM_VOCABULARY = "lex:CreateCustomVocabulary";
+	static readonly CreateCustomVocabulary = "lex:CreateCustomVocabulary";
 	/** [Write] lex:CreateExport */
-	static readonly CREATE_EXPORT = "lex:CreateExport";
+	static readonly CreateExport = "lex:CreateExport";
 	/** [Write] lex:CreateIntent */
-	static readonly CREATE_INTENT = "lex:CreateIntent";
+	static readonly CreateIntent = "lex:CreateIntent";
 	/** [Write] lex:CreateIntentVersion */
-	static readonly CREATE_INTENT_VERSION = "lex:CreateIntentVersion";
+	static readonly CreateIntentVersion = "lex:CreateIntentVersion";
 	/** [Write] lex:CreateResourcePolicy */
-	static readonly CREATE_RESOURCE_POLICY = "lex:CreateResourcePolicy";
+	static readonly CreateResourcePolicy = "lex:CreateResourcePolicy";
 	/** [Write] lex:CreateResourcePolicyStatement */
-	static readonly CREATE_RESOURCE_POLICY_STATEMENT =
+	static readonly CreateResourcePolicyStatement =
 		"lex:CreateResourcePolicyStatement";
 	/** [Write] lex:CreateSlot */
-	static readonly CREATE_SLOT = "lex:CreateSlot";
+	static readonly CreateSlot = "lex:CreateSlot";
 	/** [Write] lex:CreateSlotType */
-	static readonly CREATE_SLOT_TYPE = "lex:CreateSlotType";
+	static readonly CreateSlotType = "lex:CreateSlotType";
 	/** [Write] lex:CreateSlotTypeVersion */
-	static readonly CREATE_SLOT_TYPE_VERSION = "lex:CreateSlotTypeVersion";
+	static readonly CreateSlotTypeVersion = "lex:CreateSlotTypeVersion";
 	/** [Write] lex:CreateTestSet */
-	static readonly CREATE_TEST_SET = "lex:CreateTestSet";
+	static readonly CreateTestSet = "lex:CreateTestSet";
 	/** [Write] lex:CreateTestSetDiscrepancyReport */
-	static readonly CREATE_TEST_SET_DISCREPANCY_REPORT =
+	static readonly CreateTestSetDiscrepancyReport =
 		"lex:CreateTestSetDiscrepancyReport";
 	/** [Write] lex:CreateUploadUrl */
-	static readonly CREATE_UPLOAD_URL = "lex:CreateUploadUrl";
+	static readonly CreateUploadUrl = "lex:CreateUploadUrl";
 	/** [Write] lex:DeleteBot */
-	static readonly DELETE_BOT = "lex:DeleteBot";
+	static readonly DeleteBot = "lex:DeleteBot";
 	/** [Write] lex:DeleteBotAlias */
-	static readonly DELETE_BOT_ALIAS = "lex:DeleteBotAlias";
+	static readonly DeleteBotAlias = "lex:DeleteBotAlias";
 	/** [Write] lex:DeleteBotAnalyzerRecommendation */
-	static readonly DELETE_BOT_ANALYZER_RECOMMENDATION =
+	static readonly DeleteBotAnalyzerRecommendation =
 		"lex:DeleteBotAnalyzerRecommendation";
 	/** [Write] lex:DeleteBotChannel */
-	static readonly DELETE_BOT_CHANNEL = "lex:DeleteBotChannel";
+	static readonly DeleteBotChannel = "lex:DeleteBotChannel";
 	/** [Write] lex:DeleteBotChannelAssociation */
-	static readonly DELETE_BOT_CHANNEL_ASSOCIATION =
+	static readonly DeleteBotChannelAssociation =
 		"lex:DeleteBotChannelAssociation";
 	/** [Write] lex:DeleteBotLocale */
-	static readonly DELETE_BOT_LOCALE = "lex:DeleteBotLocale";
+	static readonly DeleteBotLocale = "lex:DeleteBotLocale";
 	/** [Write] lex:DeleteBotReplica */
-	static readonly DELETE_BOT_REPLICA = "lex:DeleteBotReplica";
+	static readonly DeleteBotReplica = "lex:DeleteBotReplica";
 	/** [Write] lex:DeleteBotVersion */
-	static readonly DELETE_BOT_VERSION = "lex:DeleteBotVersion";
+	static readonly DeleteBotVersion = "lex:DeleteBotVersion";
 	/** [Write] lex:DeleteCustomVocabulary */
-	static readonly DELETE_CUSTOM_VOCABULARY = "lex:DeleteCustomVocabulary";
+	static readonly DeleteCustomVocabulary = "lex:DeleteCustomVocabulary";
 	/** [Write] lex:DeleteExport */
-	static readonly DELETE_EXPORT = "lex:DeleteExport";
+	static readonly DeleteExport = "lex:DeleteExport";
 	/** [Write] lex:DeleteImport */
-	static readonly DELETE_IMPORT = "lex:DeleteImport";
+	static readonly DeleteImport = "lex:DeleteImport";
 	/** [Write] lex:DeleteIntent */
-	static readonly DELETE_INTENT = "lex:DeleteIntent";
+	static readonly DeleteIntent = "lex:DeleteIntent";
 	/** [Write] lex:DeleteIntentVersion */
-	static readonly DELETE_INTENT_VERSION = "lex:DeleteIntentVersion";
+	static readonly DeleteIntentVersion = "lex:DeleteIntentVersion";
 	/** [Write] lex:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "lex:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "lex:DeleteResourcePolicy";
 	/** [Write] lex:DeleteResourcePolicyStatement */
-	static readonly DELETE_RESOURCE_POLICY_STATEMENT =
+	static readonly DeleteResourcePolicyStatement =
 		"lex:DeleteResourcePolicyStatement";
 	/** [Write] lex:DeleteSession */
-	static readonly DELETE_SESSION = "lex:DeleteSession";
+	static readonly DeleteSession = "lex:DeleteSession";
 	/** [Write] lex:DeleteSlot */
-	static readonly DELETE_SLOT = "lex:DeleteSlot";
+	static readonly DeleteSlot = "lex:DeleteSlot";
 	/** [Write] lex:DeleteSlotType */
-	static readonly DELETE_SLOT_TYPE = "lex:DeleteSlotType";
+	static readonly DeleteSlotType = "lex:DeleteSlotType";
 	/** [Write] lex:DeleteSlotTypeVersion */
-	static readonly DELETE_SLOT_TYPE_VERSION = "lex:DeleteSlotTypeVersion";
+	static readonly DeleteSlotTypeVersion = "lex:DeleteSlotTypeVersion";
 	/** [Write] lex:DeleteTestSet */
-	static readonly DELETE_TEST_SET = "lex:DeleteTestSet";
+	static readonly DeleteTestSet = "lex:DeleteTestSet";
 	/** [Write] lex:DeleteUtterances */
-	static readonly DELETE_UTTERANCES = "lex:DeleteUtterances";
+	static readonly DeleteUtterances = "lex:DeleteUtterances";
 	/** [Read] lex:DescribeBot */
-	static readonly DESCRIBE_BOT = "lex:DescribeBot";
+	static readonly DescribeBot = "lex:DescribeBot";
 	/** [Read] lex:DescribeBotAlias */
-	static readonly DESCRIBE_BOT_ALIAS = "lex:DescribeBotAlias";
+	static readonly DescribeBotAlias = "lex:DescribeBotAlias";
 	/** [Read] lex:DescribeBotAnalyzerRecommendation */
-	static readonly DESCRIBE_BOT_ANALYZER_RECOMMENDATION =
+	static readonly DescribeBotAnalyzerRecommendation =
 		"lex:DescribeBotAnalyzerRecommendation";
 	/** [Read] lex:DescribeBotChannel */
-	static readonly DESCRIBE_BOT_CHANNEL = "lex:DescribeBotChannel";
+	static readonly DescribeBotChannel = "lex:DescribeBotChannel";
 	/** [Read] lex:DescribeBotLocale */
-	static readonly DESCRIBE_BOT_LOCALE = "lex:DescribeBotLocale";
+	static readonly DescribeBotLocale = "lex:DescribeBotLocale";
 	/** [Read] lex:DescribeBotRecommendation */
-	static readonly DESCRIBE_BOT_RECOMMENDATION = "lex:DescribeBotRecommendation";
+	static readonly DescribeBotRecommendation = "lex:DescribeBotRecommendation";
 	/** [Read] lex:DescribeBotReplica */
-	static readonly DESCRIBE_BOT_REPLICA = "lex:DescribeBotReplica";
+	static readonly DescribeBotReplica = "lex:DescribeBotReplica";
 	/** [Read] lex:DescribeBotResourceGeneration */
-	static readonly DESCRIBE_BOT_RESOURCE_GENERATION =
+	static readonly DescribeBotResourceGeneration =
 		"lex:DescribeBotResourceGeneration";
 	/** [Read] lex:DescribeBotVersion */
-	static readonly DESCRIBE_BOT_VERSION = "lex:DescribeBotVersion";
+	static readonly DescribeBotVersion = "lex:DescribeBotVersion";
 	/** [Read] lex:DescribeCustomVocabulary */
-	static readonly DESCRIBE_CUSTOM_VOCABULARY = "lex:DescribeCustomVocabulary";
+	static readonly DescribeCustomVocabulary = "lex:DescribeCustomVocabulary";
 	/** [Read] lex:DescribeCustomVocabularyMetadata */
-	static readonly DESCRIBE_CUSTOM_VOCABULARY_METADATA =
+	static readonly DescribeCustomVocabularyMetadata =
 		"lex:DescribeCustomVocabularyMetadata";
 	/** [Read] lex:DescribeExport */
-	static readonly DESCRIBE_EXPORT = "lex:DescribeExport";
+	static readonly DescribeExport = "lex:DescribeExport";
 	/** [Read] lex:DescribeImport */
-	static readonly DESCRIBE_IMPORT = "lex:DescribeImport";
+	static readonly DescribeImport = "lex:DescribeImport";
 	/** [Read] lex:DescribeIntent */
-	static readonly DESCRIBE_INTENT = "lex:DescribeIntent";
+	static readonly DescribeIntent = "lex:DescribeIntent";
 	/** [Read] lex:DescribeResourcePolicy */
-	static readonly DESCRIBE_RESOURCE_POLICY = "lex:DescribeResourcePolicy";
+	static readonly DescribeResourcePolicy = "lex:DescribeResourcePolicy";
 	/** [Read] lex:DescribeSlot */
-	static readonly DESCRIBE_SLOT = "lex:DescribeSlot";
+	static readonly DescribeSlot = "lex:DescribeSlot";
 	/** [Read] lex:DescribeSlotType */
-	static readonly DESCRIBE_SLOT_TYPE = "lex:DescribeSlotType";
+	static readonly DescribeSlotType = "lex:DescribeSlotType";
 	/** [Read] lex:DescribeTestExecution */
-	static readonly DESCRIBE_TEST_EXECUTION = "lex:DescribeTestExecution";
+	static readonly DescribeTestExecution = "lex:DescribeTestExecution";
 	/** [Read] lex:DescribeTestSet */
-	static readonly DESCRIBE_TEST_SET = "lex:DescribeTestSet";
+	static readonly DescribeTestSet = "lex:DescribeTestSet";
 	/** [Read] lex:DescribeTestSetDiscrepancyReport */
-	static readonly DESCRIBE_TEST_SET_DISCREPANCY_REPORT =
+	static readonly DescribeTestSetDiscrepancyReport =
 		"lex:DescribeTestSetDiscrepancyReport";
 	/** [Read] lex:DescribeTestSetGeneration */
-	static readonly DESCRIBE_TEST_SET_GENERATION =
-		"lex:DescribeTestSetGeneration";
+	static readonly DescribeTestSetGeneration = "lex:DescribeTestSetGeneration";
 	/** [Read] lex:GenerateBotElement */
-	static readonly GENERATE_BOT_ELEMENT = "lex:GenerateBotElement";
+	static readonly GenerateBotElement = "lex:GenerateBotElement";
 	/** [Read] lex:GetBot */
-	static readonly GET_BOT = "lex:GetBot";
+	static readonly actionGetBot = "lex:GetBot";
 	/** [Read] lex:GetBotAlias */
-	static readonly GET_BOT_ALIAS = "lex:GetBotAlias";
+	static readonly actionGetBotAlias = "lex:GetBotAlias";
 	/** [List] lex:GetBotAliases */
-	static readonly GET_BOT_ALIASES = "lex:GetBotAliases";
+	static readonly actionGetBotAliases = "lex:GetBotAliases";
 	/** [Read] lex:GetBotChannelAssociation */
-	static readonly GET_BOT_CHANNEL_ASSOCIATION = "lex:GetBotChannelAssociation";
+	static readonly actionGetBotChannelAssociation =
+		"lex:GetBotChannelAssociation";
 	/** [List] lex:GetBotChannelAssociations */
-	static readonly GET_BOT_CHANNEL_ASSOCIATIONS =
+	static readonly actionGetBotChannelAssociations =
 		"lex:GetBotChannelAssociations";
 	/** [List] lex:GetBotVersions */
-	static readonly GET_BOT_VERSIONS = "lex:GetBotVersions";
+	static readonly actionGetBotVersions = "lex:GetBotVersions";
 	/** [List] lex:GetBots */
-	static readonly GET_BOTS = "lex:GetBots";
+	static readonly actionGetBots = "lex:GetBots";
 	/** [Read] lex:GetBuiltinIntent */
-	static readonly GET_BUILTIN_INTENT = "lex:GetBuiltinIntent";
+	static readonly actionGetBuiltinIntent = "lex:GetBuiltinIntent";
 	/** [Read] lex:GetBuiltinIntents */
-	static readonly GET_BUILTIN_INTENTS = "lex:GetBuiltinIntents";
+	static readonly actionGetBuiltinIntents = "lex:GetBuiltinIntents";
 	/** [Read] lex:GetBuiltinSlotTypes */
-	static readonly GET_BUILTIN_SLOT_TYPES = "lex:GetBuiltinSlotTypes";
+	static readonly actionGetBuiltinSlotTypes = "lex:GetBuiltinSlotTypes";
 	/** [Read] lex:GetExport */
-	static readonly GET_EXPORT = "lex:GetExport";
+	static readonly actionGetExport = "lex:GetExport";
 	/** [Read] lex:GetImport */
-	static readonly GET_IMPORT = "lex:GetImport";
+	static readonly actionGetImport = "lex:GetImport";
 	/** [Read] lex:GetIntent */
-	static readonly GET_INTENT = "lex:GetIntent";
+	static readonly actionGetIntent = "lex:GetIntent";
 	/** [List] lex:GetIntentVersions */
-	static readonly GET_INTENT_VERSIONS = "lex:GetIntentVersions";
+	static readonly actionGetIntentVersions = "lex:GetIntentVersions";
 	/** [List] lex:GetIntents */
-	static readonly GET_INTENTS = "lex:GetIntents";
+	static readonly actionGetIntents = "lex:GetIntents";
 	/** [Read] lex:GetMigration */
-	static readonly GET_MIGRATION = "lex:GetMigration";
+	static readonly actionGetMigration = "lex:GetMigration";
 	/** [List] lex:GetMigrations */
-	static readonly GET_MIGRATIONS = "lex:GetMigrations";
+	static readonly actionGetMigrations = "lex:GetMigrations";
 	/** [Read] lex:GetSession */
-	static readonly GET_SESSION = "lex:GetSession";
+	static readonly actionGetSession = "lex:GetSession";
 	/** [Read] lex:GetSlotType */
-	static readonly GET_SLOT_TYPE = "lex:GetSlotType";
+	static readonly actionGetSlotType = "lex:GetSlotType";
 	/** [List] lex:GetSlotTypeVersions */
-	static readonly GET_SLOT_TYPE_VERSIONS = "lex:GetSlotTypeVersions";
+	static readonly actionGetSlotTypeVersions = "lex:GetSlotTypeVersions";
 	/** [List] lex:GetSlotTypes */
-	static readonly GET_SLOT_TYPES = "lex:GetSlotTypes";
+	static readonly actionGetSlotTypes = "lex:GetSlotTypes";
 	/** [Read] lex:GetTestExecutionArtifactsUrl */
-	static readonly GET_TEST_EXECUTION_ARTIFACTS_URL =
+	static readonly actionGetTestExecutionArtifactsUrl =
 		"lex:GetTestExecutionArtifactsUrl";
 	/** [List] lex:GetUtterancesView */
-	static readonly GET_UTTERANCES_VIEW = "lex:GetUtterancesView";
+	static readonly actionGetUtterancesView = "lex:GetUtterancesView";
 	/** [List] lex:ListAggregatedUtterances */
-	static readonly LIST_AGGREGATED_UTTERANCES = "lex:ListAggregatedUtterances";
+	static readonly ListAggregatedUtterances = "lex:ListAggregatedUtterances";
 	/** [List] lex:ListBotAliasReplicas */
-	static readonly LIST_BOT_ALIAS_REPLICAS = "lex:ListBotAliasReplicas";
+	static readonly ListBotAliasReplicas = "lex:ListBotAliasReplicas";
 	/** [List] lex:ListBotAliases */
-	static readonly LIST_BOT_ALIASES = "lex:ListBotAliases";
+	static readonly ListBotAliases = "lex:ListBotAliases";
 	/** [List] lex:ListBotAnalyzerRecommendations */
-	static readonly LIST_BOT_ANALYZER_RECOMMENDATIONS =
+	static readonly ListBotAnalyzerRecommendations =
 		"lex:ListBotAnalyzerRecommendations";
 	/** [List] lex:ListBotChannels */
-	static readonly LIST_BOT_CHANNELS = "lex:ListBotChannels";
+	static readonly ListBotChannels = "lex:ListBotChannels";
 	/** [List] lex:ListBotLocales */
-	static readonly LIST_BOT_LOCALES = "lex:ListBotLocales";
+	static readonly ListBotLocales = "lex:ListBotLocales";
 	/** [List] lex:ListBotRecommendations */
-	static readonly LIST_BOT_RECOMMENDATIONS = "lex:ListBotRecommendations";
+	static readonly ListBotRecommendations = "lex:ListBotRecommendations";
 	/** [List] lex:ListBotReplicas */
-	static readonly LIST_BOT_REPLICAS = "lex:ListBotReplicas";
+	static readonly ListBotReplicas = "lex:ListBotReplicas";
 	/** [List] lex:ListBotResourceGenerations */
-	static readonly LIST_BOT_RESOURCE_GENERATIONS =
-		"lex:ListBotResourceGenerations";
+	static readonly ListBotResourceGenerations = "lex:ListBotResourceGenerations";
 	/** [List] lex:ListBotVersionReplicas */
-	static readonly LIST_BOT_VERSION_REPLICAS = "lex:ListBotVersionReplicas";
+	static readonly ListBotVersionReplicas = "lex:ListBotVersionReplicas";
 	/** [List] lex:ListBotVersions */
-	static readonly LIST_BOT_VERSIONS = "lex:ListBotVersions";
+	static readonly ListBotVersions = "lex:ListBotVersions";
 	/** [List] lex:ListBots */
-	static readonly LIST_BOTS = "lex:ListBots";
+	static readonly ListBots = "lex:ListBots";
 	/** [List] lex:ListBuiltInIntents */
-	static readonly LIST_BUILT_IN_INTENTS = "lex:ListBuiltInIntents";
+	static readonly ListBuiltInIntents = "lex:ListBuiltInIntents";
 	/** [List] lex:ListBuiltInSlotTypes */
-	static readonly LIST_BUILT_IN_SLOT_TYPES = "lex:ListBuiltInSlotTypes";
+	static readonly ListBuiltInSlotTypes = "lex:ListBuiltInSlotTypes";
 	/** [List] lex:ListCustomVocabularyItems */
-	static readonly LIST_CUSTOM_VOCABULARY_ITEMS =
-		"lex:ListCustomVocabularyItems";
+	static readonly ListCustomVocabularyItems = "lex:ListCustomVocabularyItems";
 	/** [List] lex:ListExports */
-	static readonly LIST_EXPORTS = "lex:ListExports";
+	static readonly ListExports = "lex:ListExports";
 	/** [List] lex:ListImports */
-	static readonly LIST_IMPORTS = "lex:ListImports";
+	static readonly ListImports = "lex:ListImports";
 	/** [List] lex:ListIntentMetrics */
-	static readonly LIST_INTENT_METRICS = "lex:ListIntentMetrics";
+	static readonly ListIntentMetrics = "lex:ListIntentMetrics";
 	/** [List] lex:ListIntentPaths */
-	static readonly LIST_INTENT_PATHS = "lex:ListIntentPaths";
+	static readonly ListIntentPaths = "lex:ListIntentPaths";
 	/** [List] lex:ListIntentStageMetrics */
-	static readonly LIST_INTENT_STAGE_METRICS = "lex:ListIntentStageMetrics";
+	static readonly ListIntentStageMetrics = "lex:ListIntentStageMetrics";
 	/** [List] lex:ListIntents */
-	static readonly LIST_INTENTS = "lex:ListIntents";
+	static readonly ListIntents = "lex:ListIntents";
 	/** [List] lex:ListRecommendedIntents */
-	static readonly LIST_RECOMMENDED_INTENTS = "lex:ListRecommendedIntents";
+	static readonly ListRecommendedIntents = "lex:ListRecommendedIntents";
 	/** [List] lex:ListSessionAnalyticsData */
-	static readonly LIST_SESSION_ANALYTICS_DATA = "lex:ListSessionAnalyticsData";
+	static readonly ListSessionAnalyticsData = "lex:ListSessionAnalyticsData";
 	/** [List] lex:ListSessionMetrics */
-	static readonly LIST_SESSION_METRICS = "lex:ListSessionMetrics";
+	static readonly ListSessionMetrics = "lex:ListSessionMetrics";
 	/** [List] lex:ListSlotTypes */
-	static readonly LIST_SLOT_TYPES = "lex:ListSlotTypes";
+	static readonly ListSlotTypes = "lex:ListSlotTypes";
 	/** [List] lex:ListSlots */
-	static readonly LIST_SLOTS = "lex:ListSlots";
+	static readonly ListSlots = "lex:ListSlots";
 	/** [Read] lex:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "lex:ListTagsForResource";
+	static readonly ListTagsForResource = "lex:ListTagsForResource";
 	/** [Read] lex:ListTestExecutionResultItems */
-	static readonly LIST_TEST_EXECUTION_RESULT_ITEMS =
+	static readonly ListTestExecutionResultItems =
 		"lex:ListTestExecutionResultItems";
 	/** [List] lex:ListTestExecutions */
-	static readonly LIST_TEST_EXECUTIONS = "lex:ListTestExecutions";
+	static readonly ListTestExecutions = "lex:ListTestExecutions";
 	/** [Read] lex:ListTestSetRecords */
-	static readonly LIST_TEST_SET_RECORDS = "lex:ListTestSetRecords";
+	static readonly ListTestSetRecords = "lex:ListTestSetRecords";
 	/** [List] lex:ListTestSets */
-	static readonly LIST_TEST_SETS = "lex:ListTestSets";
+	static readonly ListTestSets = "lex:ListTestSets";
 	/** [Write] lex:PostContent */
-	static readonly POST_CONTENT = "lex:PostContent";
+	static readonly PostContent = "lex:PostContent";
 	/** [Write] lex:PostText */
-	static readonly POST_TEXT = "lex:PostText";
+	static readonly PostText = "lex:PostText";
 	/** [Write] lex:PutBot */
-	static readonly PUT_BOT = "lex:PutBot";
+	static readonly PutBot = "lex:PutBot";
 	/** [Write] lex:PutBotAlias */
-	static readonly PUT_BOT_ALIAS = "lex:PutBotAlias";
+	static readonly PutBotAlias = "lex:PutBotAlias";
 	/** [Write] lex:PutIntent */
-	static readonly PUT_INTENT = "lex:PutIntent";
+	static readonly PutIntent = "lex:PutIntent";
 	/** [Write] lex:PutSession */
-	static readonly PUT_SESSION = "lex:PutSession";
+	static readonly PutSession = "lex:PutSession";
 	/** [Write] lex:PutSlotType */
-	static readonly PUT_SLOT_TYPE = "lex:PutSlotType";
+	static readonly PutSlotType = "lex:PutSlotType";
 	/** [Write] lex:RecognizeText */
-	static readonly RECOGNIZE_TEXT = "lex:RecognizeText";
+	static readonly RecognizeText = "lex:RecognizeText";
 	/** [Write] lex:RecognizeUtterance */
-	static readonly RECOGNIZE_UTTERANCE = "lex:RecognizeUtterance";
+	static readonly RecognizeUtterance = "lex:RecognizeUtterance";
 	/** [List] lex:SearchAssociatedTranscripts */
-	static readonly SEARCH_ASSOCIATED_TRANSCRIPTS =
+	static readonly SearchAssociatedTranscripts =
 		"lex:SearchAssociatedTranscripts";
 	/** [Write] lex:StartBotAnalyzer */
-	static readonly START_BOT_ANALYZER = "lex:StartBotAnalyzer";
+	static readonly StartBotAnalyzer = "lex:StartBotAnalyzer";
 	/** [Write] lex:StartBotRecommendation */
-	static readonly START_BOT_RECOMMENDATION = "lex:StartBotRecommendation";
+	static readonly StartBotRecommendation = "lex:StartBotRecommendation";
 	/** [Write] lex:StartBotResourceGeneration */
-	static readonly START_BOT_RESOURCE_GENERATION =
-		"lex:StartBotResourceGeneration";
+	static readonly StartBotResourceGeneration = "lex:StartBotResourceGeneration";
 	/** [Write] lex:StartConversation */
-	static readonly START_CONVERSATION = "lex:StartConversation";
+	static readonly StartConversation = "lex:StartConversation";
 	/** [Write] lex:StartImport */
-	static readonly START_IMPORT = "lex:StartImport";
+	static readonly StartImport = "lex:StartImport";
 	/** [Write] lex:StartMigration */
-	static readonly START_MIGRATION = "lex:StartMigration";
+	static readonly StartMigration = "lex:StartMigration";
 	/** [Write] lex:StartTestExecution */
-	static readonly START_TEST_EXECUTION = "lex:StartTestExecution";
+	static readonly StartTestExecution = "lex:StartTestExecution";
 	/** [Write] lex:StartTestSetGeneration */
-	static readonly START_TEST_SET_GENERATION = "lex:StartTestSetGeneration";
+	static readonly StartTestSetGeneration = "lex:StartTestSetGeneration";
 	/** [Write] lex:StopBotAnalyzer */
-	static readonly STOP_BOT_ANALYZER = "lex:StopBotAnalyzer";
+	static readonly StopBotAnalyzer = "lex:StopBotAnalyzer";
 	/** [Write] lex:StopBotRecommendation */
-	static readonly STOP_BOT_RECOMMENDATION = "lex:StopBotRecommendation";
+	static readonly StopBotRecommendation = "lex:StopBotRecommendation";
 	/** [Tagging] lex:TagResource */
-	static readonly TAG_RESOURCE = "lex:TagResource";
+	static readonly TagResource = "lex:TagResource";
 	/** [Tagging] lex:UntagResource */
-	static readonly UNTAG_RESOURCE = "lex:UntagResource";
+	static readonly UntagResource = "lex:UntagResource";
 	/** [Write] lex:UpdateBot */
-	static readonly UPDATE_BOT = "lex:UpdateBot";
+	static readonly UpdateBot = "lex:UpdateBot";
 	/** [Write] lex:UpdateBotAlias */
-	static readonly UPDATE_BOT_ALIAS = "lex:UpdateBotAlias";
+	static readonly UpdateBotAlias = "lex:UpdateBotAlias";
 	/** [Write] lex:UpdateBotLocale */
-	static readonly UPDATE_BOT_LOCALE = "lex:UpdateBotLocale";
+	static readonly UpdateBotLocale = "lex:UpdateBotLocale";
 	/** [Write] lex:UpdateBotRecommendation */
-	static readonly UPDATE_BOT_RECOMMENDATION = "lex:UpdateBotRecommendation";
+	static readonly UpdateBotRecommendation = "lex:UpdateBotRecommendation";
 	/** [Write] lex:UpdateCustomVocabulary */
-	static readonly UPDATE_CUSTOM_VOCABULARY = "lex:UpdateCustomVocabulary";
+	static readonly UpdateCustomVocabulary = "lex:UpdateCustomVocabulary";
 	/** [Write] lex:UpdateExport */
-	static readonly UPDATE_EXPORT = "lex:UpdateExport";
+	static readonly UpdateExport = "lex:UpdateExport";
 	/** [Write] lex:UpdateIntent */
-	static readonly UPDATE_INTENT = "lex:UpdateIntent";
+	static readonly UpdateIntent = "lex:UpdateIntent";
 	/** [Write] lex:UpdateResourcePolicy */
-	static readonly UPDATE_RESOURCE_POLICY = "lex:UpdateResourcePolicy";
+	static readonly UpdateResourcePolicy = "lex:UpdateResourcePolicy";
 	/** [Write] lex:UpdateSlot */
-	static readonly UPDATE_SLOT = "lex:UpdateSlot";
+	static readonly UpdateSlot = "lex:UpdateSlot";
 	/** [Write] lex:UpdateSlotType */
-	static readonly UPDATE_SLOT_TYPE = "lex:UpdateSlotType";
+	static readonly UpdateSlotType = "lex:UpdateSlotType";
 	/** [Write] lex:UpdateTestSet */
-	static readonly UPDATE_TEST_SET = "lex:UpdateTestSet";
+	static readonly UpdateTestSet = "lex:UpdateTestSet";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LexActions.DESCRIBE_BOT,
-		LexActions.DESCRIBE_BOT_ALIAS,
-		LexActions.DESCRIBE_BOT_ANALYZER_RECOMMENDATION,
-		LexActions.DESCRIBE_BOT_CHANNEL,
-		LexActions.DESCRIBE_BOT_LOCALE,
-		LexActions.DESCRIBE_BOT_RECOMMENDATION,
-		LexActions.DESCRIBE_BOT_REPLICA,
-		LexActions.DESCRIBE_BOT_RESOURCE_GENERATION,
-		LexActions.DESCRIBE_BOT_VERSION,
-		LexActions.DESCRIBE_CUSTOM_VOCABULARY,
-		LexActions.DESCRIBE_CUSTOM_VOCABULARY_METADATA,
-		LexActions.DESCRIBE_EXPORT,
-		LexActions.DESCRIBE_IMPORT,
-		LexActions.DESCRIBE_INTENT,
-		LexActions.DESCRIBE_RESOURCE_POLICY,
-		LexActions.DESCRIBE_SLOT,
-		LexActions.DESCRIBE_SLOT_TYPE,
-		LexActions.DESCRIBE_TEST_EXECUTION,
-		LexActions.DESCRIBE_TEST_SET,
-		LexActions.DESCRIBE_TEST_SET_DISCREPANCY_REPORT,
-		LexActions.DESCRIBE_TEST_SET_GENERATION,
-		LexActions.GENERATE_BOT_ELEMENT,
-		LexActions.GET_BOT,
-		LexActions.GET_BOT_ALIAS,
-		LexActions.GET_BOT_CHANNEL_ASSOCIATION,
-		LexActions.GET_BUILTIN_INTENT,
-		LexActions.GET_BUILTIN_INTENTS,
-		LexActions.GET_BUILTIN_SLOT_TYPES,
-		LexActions.GET_EXPORT,
-		LexActions.GET_IMPORT,
-		LexActions.GET_INTENT,
-		LexActions.GET_MIGRATION,
-		LexActions.GET_SESSION,
-		LexActions.GET_SLOT_TYPE,
-		LexActions.GET_TEST_EXECUTION_ARTIFACTS_URL,
-		LexActions.LIST_TAGS_FOR_RESOURCE,
-		LexActions.LIST_TEST_EXECUTION_RESULT_ITEMS,
-		LexActions.LIST_TEST_SET_RECORDS,
+	static readonly AllReadActions: string[] = [
+		LexActions.DescribeBot,
+		LexActions.DescribeBotAlias,
+		LexActions.DescribeBotAnalyzerRecommendation,
+		LexActions.DescribeBotChannel,
+		LexActions.DescribeBotLocale,
+		LexActions.DescribeBotRecommendation,
+		LexActions.DescribeBotReplica,
+		LexActions.DescribeBotResourceGeneration,
+		LexActions.DescribeBotVersion,
+		LexActions.DescribeCustomVocabulary,
+		LexActions.DescribeCustomVocabularyMetadata,
+		LexActions.DescribeExport,
+		LexActions.DescribeImport,
+		LexActions.DescribeIntent,
+		LexActions.DescribeResourcePolicy,
+		LexActions.DescribeSlot,
+		LexActions.DescribeSlotType,
+		LexActions.DescribeTestExecution,
+		LexActions.DescribeTestSet,
+		LexActions.DescribeTestSetDiscrepancyReport,
+		LexActions.DescribeTestSetGeneration,
+		LexActions.GenerateBotElement,
+		LexActions.actionGetBot,
+		LexActions.actionGetBotAlias,
+		LexActions.actionGetBotChannelAssociation,
+		LexActions.actionGetBuiltinIntent,
+		LexActions.actionGetBuiltinIntents,
+		LexActions.actionGetBuiltinSlotTypes,
+		LexActions.actionGetExport,
+		LexActions.actionGetImport,
+		LexActions.actionGetIntent,
+		LexActions.actionGetMigration,
+		LexActions.actionGetSession,
+		LexActions.actionGetSlotType,
+		LexActions.actionGetTestExecutionArtifactsUrl,
+		LexActions.ListTagsForResource,
+		LexActions.ListTestExecutionResultItems,
+		LexActions.ListTestSetRecords,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LexActions.BATCH_CREATE_CUSTOM_VOCABULARY_ITEM,
-		LexActions.BATCH_DELETE_CUSTOM_VOCABULARY_ITEM,
-		LexActions.BATCH_UPDATE_CUSTOM_VOCABULARY_ITEM,
-		LexActions.BUILD_BOT_LOCALE,
-		LexActions.CREATE_BOT,
-		LexActions.CREATE_BOT_ALIAS,
-		LexActions.CREATE_BOT_CHANNEL,
-		LexActions.CREATE_BOT_LOCALE,
-		LexActions.CREATE_BOT_REPLICA,
-		LexActions.CREATE_BOT_VERSION,
-		LexActions.CREATE_CUSTOM_VOCABULARY,
-		LexActions.CREATE_EXPORT,
-		LexActions.CREATE_INTENT,
-		LexActions.CREATE_INTENT_VERSION,
-		LexActions.CREATE_RESOURCE_POLICY,
-		LexActions.CREATE_RESOURCE_POLICY_STATEMENT,
-		LexActions.CREATE_SLOT,
-		LexActions.CREATE_SLOT_TYPE,
-		LexActions.CREATE_SLOT_TYPE_VERSION,
-		LexActions.CREATE_TEST_SET,
-		LexActions.CREATE_TEST_SET_DISCREPANCY_REPORT,
-		LexActions.CREATE_UPLOAD_URL,
-		LexActions.DELETE_BOT,
-		LexActions.DELETE_BOT_ALIAS,
-		LexActions.DELETE_BOT_ANALYZER_RECOMMENDATION,
-		LexActions.DELETE_BOT_CHANNEL,
-		LexActions.DELETE_BOT_CHANNEL_ASSOCIATION,
-		LexActions.DELETE_BOT_LOCALE,
-		LexActions.DELETE_BOT_REPLICA,
-		LexActions.DELETE_BOT_VERSION,
-		LexActions.DELETE_CUSTOM_VOCABULARY,
-		LexActions.DELETE_EXPORT,
-		LexActions.DELETE_IMPORT,
-		LexActions.DELETE_INTENT,
-		LexActions.DELETE_INTENT_VERSION,
-		LexActions.DELETE_RESOURCE_POLICY,
-		LexActions.DELETE_RESOURCE_POLICY_STATEMENT,
-		LexActions.DELETE_SESSION,
-		LexActions.DELETE_SLOT,
-		LexActions.DELETE_SLOT_TYPE,
-		LexActions.DELETE_SLOT_TYPE_VERSION,
-		LexActions.DELETE_TEST_SET,
-		LexActions.DELETE_UTTERANCES,
-		LexActions.POST_CONTENT,
-		LexActions.POST_TEXT,
-		LexActions.PUT_BOT,
-		LexActions.PUT_BOT_ALIAS,
-		LexActions.PUT_INTENT,
-		LexActions.PUT_SESSION,
-		LexActions.PUT_SLOT_TYPE,
-		LexActions.RECOGNIZE_TEXT,
-		LexActions.RECOGNIZE_UTTERANCE,
-		LexActions.START_BOT_ANALYZER,
-		LexActions.START_BOT_RECOMMENDATION,
-		LexActions.START_BOT_RESOURCE_GENERATION,
-		LexActions.START_CONVERSATION,
-		LexActions.START_IMPORT,
-		LexActions.START_MIGRATION,
-		LexActions.START_TEST_EXECUTION,
-		LexActions.START_TEST_SET_GENERATION,
-		LexActions.STOP_BOT_ANALYZER,
-		LexActions.STOP_BOT_RECOMMENDATION,
-		LexActions.UPDATE_BOT,
-		LexActions.UPDATE_BOT_ALIAS,
-		LexActions.UPDATE_BOT_LOCALE,
-		LexActions.UPDATE_BOT_RECOMMENDATION,
-		LexActions.UPDATE_CUSTOM_VOCABULARY,
-		LexActions.UPDATE_EXPORT,
-		LexActions.UPDATE_INTENT,
-		LexActions.UPDATE_RESOURCE_POLICY,
-		LexActions.UPDATE_SLOT,
-		LexActions.UPDATE_SLOT_TYPE,
-		LexActions.UPDATE_TEST_SET,
+	static readonly AllWriteActions: string[] = [
+		LexActions.BatchCreateCustomVocabularyItem,
+		LexActions.BatchDeleteCustomVocabularyItem,
+		LexActions.BatchUpdateCustomVocabularyItem,
+		LexActions.BuildBotLocale,
+		LexActions.CreateBot,
+		LexActions.CreateBotAlias,
+		LexActions.CreateBotChannel,
+		LexActions.CreateBotLocale,
+		LexActions.CreateBotReplica,
+		LexActions.CreateBotVersion,
+		LexActions.CreateCustomVocabulary,
+		LexActions.CreateExport,
+		LexActions.CreateIntent,
+		LexActions.CreateIntentVersion,
+		LexActions.CreateResourcePolicy,
+		LexActions.CreateResourcePolicyStatement,
+		LexActions.CreateSlot,
+		LexActions.CreateSlotType,
+		LexActions.CreateSlotTypeVersion,
+		LexActions.CreateTestSet,
+		LexActions.CreateTestSetDiscrepancyReport,
+		LexActions.CreateUploadUrl,
+		LexActions.DeleteBot,
+		LexActions.DeleteBotAlias,
+		LexActions.DeleteBotAnalyzerRecommendation,
+		LexActions.DeleteBotChannel,
+		LexActions.DeleteBotChannelAssociation,
+		LexActions.DeleteBotLocale,
+		LexActions.DeleteBotReplica,
+		LexActions.DeleteBotVersion,
+		LexActions.DeleteCustomVocabulary,
+		LexActions.DeleteExport,
+		LexActions.DeleteImport,
+		LexActions.DeleteIntent,
+		LexActions.DeleteIntentVersion,
+		LexActions.DeleteResourcePolicy,
+		LexActions.DeleteResourcePolicyStatement,
+		LexActions.DeleteSession,
+		LexActions.DeleteSlot,
+		LexActions.DeleteSlotType,
+		LexActions.DeleteSlotTypeVersion,
+		LexActions.DeleteTestSet,
+		LexActions.DeleteUtterances,
+		LexActions.PostContent,
+		LexActions.PostText,
+		LexActions.PutBot,
+		LexActions.PutBotAlias,
+		LexActions.PutIntent,
+		LexActions.PutSession,
+		LexActions.PutSlotType,
+		LexActions.RecognizeText,
+		LexActions.RecognizeUtterance,
+		LexActions.StartBotAnalyzer,
+		LexActions.StartBotRecommendation,
+		LexActions.StartBotResourceGeneration,
+		LexActions.StartConversation,
+		LexActions.StartImport,
+		LexActions.StartMigration,
+		LexActions.StartTestExecution,
+		LexActions.StartTestSetGeneration,
+		LexActions.StopBotAnalyzer,
+		LexActions.StopBotRecommendation,
+		LexActions.UpdateBot,
+		LexActions.UpdateBotAlias,
+		LexActions.UpdateBotLocale,
+		LexActions.UpdateBotRecommendation,
+		LexActions.UpdateCustomVocabulary,
+		LexActions.UpdateExport,
+		LexActions.UpdateIntent,
+		LexActions.UpdateResourcePolicy,
+		LexActions.UpdateSlot,
+		LexActions.UpdateSlotType,
+		LexActions.UpdateTestSet,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LexActions.GET_BOT_ALIASES,
-		LexActions.GET_BOT_CHANNEL_ASSOCIATIONS,
-		LexActions.GET_BOT_VERSIONS,
-		LexActions.GET_BOTS,
-		LexActions.GET_INTENT_VERSIONS,
-		LexActions.GET_INTENTS,
-		LexActions.GET_MIGRATIONS,
-		LexActions.GET_SLOT_TYPE_VERSIONS,
-		LexActions.GET_SLOT_TYPES,
-		LexActions.GET_UTTERANCES_VIEW,
-		LexActions.LIST_AGGREGATED_UTTERANCES,
-		LexActions.LIST_BOT_ALIAS_REPLICAS,
-		LexActions.LIST_BOT_ALIASES,
-		LexActions.LIST_BOT_ANALYZER_RECOMMENDATIONS,
-		LexActions.LIST_BOT_CHANNELS,
-		LexActions.LIST_BOT_LOCALES,
-		LexActions.LIST_BOT_RECOMMENDATIONS,
-		LexActions.LIST_BOT_REPLICAS,
-		LexActions.LIST_BOT_RESOURCE_GENERATIONS,
-		LexActions.LIST_BOT_VERSION_REPLICAS,
-		LexActions.LIST_BOT_VERSIONS,
-		LexActions.LIST_BOTS,
-		LexActions.LIST_BUILT_IN_INTENTS,
-		LexActions.LIST_BUILT_IN_SLOT_TYPES,
-		LexActions.LIST_CUSTOM_VOCABULARY_ITEMS,
-		LexActions.LIST_EXPORTS,
-		LexActions.LIST_IMPORTS,
-		LexActions.LIST_INTENT_METRICS,
-		LexActions.LIST_INTENT_PATHS,
-		LexActions.LIST_INTENT_STAGE_METRICS,
-		LexActions.LIST_INTENTS,
-		LexActions.LIST_RECOMMENDED_INTENTS,
-		LexActions.LIST_SESSION_ANALYTICS_DATA,
-		LexActions.LIST_SESSION_METRICS,
-		LexActions.LIST_SLOT_TYPES,
-		LexActions.LIST_SLOTS,
-		LexActions.LIST_TEST_EXECUTIONS,
-		LexActions.LIST_TEST_SETS,
-		LexActions.SEARCH_ASSOCIATED_TRANSCRIPTS,
+	static readonly AllListActions: string[] = [
+		LexActions.actionGetBotAliases,
+		LexActions.actionGetBotChannelAssociations,
+		LexActions.actionGetBotVersions,
+		LexActions.actionGetBots,
+		LexActions.actionGetIntentVersions,
+		LexActions.actionGetIntents,
+		LexActions.actionGetMigrations,
+		LexActions.actionGetSlotTypeVersions,
+		LexActions.actionGetSlotTypes,
+		LexActions.actionGetUtterancesView,
+		LexActions.ListAggregatedUtterances,
+		LexActions.ListBotAliasReplicas,
+		LexActions.ListBotAliases,
+		LexActions.ListBotAnalyzerRecommendations,
+		LexActions.ListBotChannels,
+		LexActions.ListBotLocales,
+		LexActions.ListBotRecommendations,
+		LexActions.ListBotReplicas,
+		LexActions.ListBotResourceGenerations,
+		LexActions.ListBotVersionReplicas,
+		LexActions.ListBotVersions,
+		LexActions.ListBots,
+		LexActions.ListBuiltInIntents,
+		LexActions.ListBuiltInSlotTypes,
+		LexActions.ListCustomVocabularyItems,
+		LexActions.ListExports,
+		LexActions.ListImports,
+		LexActions.ListIntentMetrics,
+		LexActions.ListIntentPaths,
+		LexActions.ListIntentStageMetrics,
+		LexActions.ListIntents,
+		LexActions.ListRecommendedIntents,
+		LexActions.ListSessionAnalyticsData,
+		LexActions.ListSessionMetrics,
+		LexActions.ListSlotTypes,
+		LexActions.ListSlots,
+		LexActions.ListTestExecutions,
+		LexActions.ListTestSets,
+		LexActions.SearchAssociatedTranscripts,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LexActions.TAG_RESOURCE,
-		LexActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LexActions.TagResource,
+		LexActions.UntagResource,
 	];
 }
 
-const BotArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+))$",
-);
-const BotParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot/(?<botId>[^:/?]+)$",
-);
-const BotAliasArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot-alias/(?:[^:/?]+)/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+):(?:[^:/?]+))$",
-);
-const BotAliasParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-alias/(?<botId>[^:/?]+)/(?<botAliasId>[^:/?]+)$",
-);
-const BotVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot:(?<botName>[^:/?]+):(?<botVersion>[^:/?]+)$",
-);
-const ChannelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-channel:(?<botName>[^:/?]+):(?<botAlias>[^:/?]+):(?<channelName>[^:/?]+)$",
-);
-const IntentVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):intent:(?<intentName>[^:/?]+):(?<intentVersion>[^:/?]+)$",
-);
-const SlottypeVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):slottype:(?<slotName>[^:/?]+):(?<slotVersion>[^:/?]+)$",
-);
-const TestSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):test-set/(?<testSetId>[^:/?]+)$",
-);
+/**
+ * Properties for building a botVariant1 ARN.
+ */
+export interface LexBotVariant1ArnProps {
+	/** The BotId component of the ARN. */
+	readonly botId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a botVariant2 ARN.
+ */
+export interface LexBotVariant2ArnProps {
+	/** The BotName component of the ARN. */
+	readonly botName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bot ARN.
+ */
+export interface LexBotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BotId component. */
+	readonly botId: string;
+}
+
+/**
+ * Properties for building a bot aliasVariant1 ARN.
+ */
+export interface LexBotAliasVariant1ArnProps {
+	/** The BotId component of the ARN. */
+	readonly botId: string;
+	/** The BotAliasId component of the ARN. */
+	readonly botAliasId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a bot aliasVariant2 ARN.
+ */
+export interface LexBotAliasVariant2ArnProps {
+	/** The BotName component of the ARN. */
+	readonly botName: string;
+	/** The BotAlias component of the ARN. */
+	readonly botAlias: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bot alias ARN.
+ */
+export interface LexBotAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BotId component. */
+	readonly botId: string;
+	/** The BotAliasId component. */
+	readonly botAliasId: string;
+}
+
+/**
+ * Properties for building a bot version ARN.
+ */
+export interface LexBotVersionArnProps {
+	/** The BotName component of the ARN. */
+	readonly botName: string;
+	/** The BotVersion component of the ARN. */
+	readonly botVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bot version ARN.
+ */
+export interface LexBotVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BotName component. */
+	readonly botName: string;
+	/** The BotVersion component. */
+	readonly botVersion: string;
+}
+
+/**
+ * Properties for building a channel ARN.
+ */
+export interface LexChannelArnProps {
+	/** The BotName component of the ARN. */
+	readonly botName: string;
+	/** The BotAlias component of the ARN. */
+	readonly botAlias: string;
+	/** The ChannelName component of the ARN. */
+	readonly channelName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a channel ARN.
+ */
+export interface LexChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BotName component. */
+	readonly botName: string;
+	/** The BotAlias component. */
+	readonly botAlias: string;
+	/** The ChannelName component. */
+	readonly channelName: string;
+}
+
+/**
+ * Properties for building a intent version ARN.
+ */
+export interface LexIntentVersionArnProps {
+	/** The IntentName component of the ARN. */
+	readonly intentName: string;
+	/** The IntentVersion component of the ARN. */
+	readonly intentVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a intent version ARN.
+ */
+export interface LexIntentVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IntentName component. */
+	readonly intentName: string;
+	/** The IntentVersion component. */
+	readonly intentVersion: string;
+}
+
+/**
+ * Properties for building a slottype version ARN.
+ */
+export interface LexSlottypeVersionArnProps {
+	/** The SlotName component of the ARN. */
+	readonly slotName: string;
+	/** The SlotVersion component of the ARN. */
+	readonly slotVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a slottype version ARN.
+ */
+export interface LexSlottypeVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SlotName component. */
+	readonly slotName: string;
+	/** The SlotVersion component. */
+	readonly slotVersion: string;
+}
+
+/**
+ * Properties for building a test set ARN.
+ */
+export interface LexTestSetArnProps {
+	/** The TestSetId component of the ARN. */
+	readonly testSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a test set ARN.
+ */
+export interface LexTestSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestSetId component. */
+	readonly testSetId: string;
+}
+
+const BotArnRegex =
+	/^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot\/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+))$/;
+const BotParseRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot\/(?<botId>[^:/?]+)$/;
+const BotAliasArnRegex =
+	/^(?:arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot-alias\/(?:[^:/?]+)\/(?:[^:/?]+)|arn:(?:[^:]+):lex:(?:[^:]*):(?:[^:]*):bot:(?:[^:/?]+):(?:[^:/?]+))$/;
+const BotAliasParseRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-alias\/(?<botId>[^:/?]+)\/(?<botAliasId>[^:/?]+)$/;
+const BotVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot:(?<botName>[^:/?]+):(?<botVersion>[^:/?]+)$/;
+const ChannelArnRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):bot-channel:(?<botName>[^:/?]+):(?<botAlias>[^:/?]+):(?<channelName>[^:/?]+)$/;
+const IntentVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):intent:(?<intentName>[^:/?]+):(?<intentVersion>[^:/?]+)$/;
+const SlottypeVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):slottype:(?<slotName>[^:/?]+):(?<slotVersion>[^:/?]+)$/;
+const TestSetArnRegex =
+	/^arn:(?<partition>[^:]+):lex:(?<region>[^:]*):(?<account>[^:]*):test-set\/(?<testSetId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for lex resources.
@@ -541,32 +779,14 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the botVariant1 resource.
 	 */
-	static botVariant1(props: {
-		/** The BotId component of the ARN. */
-		readonly botId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static botVariant1(props: LexBotVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot/${props.botId}`;
 	}
 
 	/**
 	 * Builds an ARN for the botVariant2 resource.
 	 */
-	static botVariant2(props: {
-		/** The BotName component of the ARN. */
-		readonly botName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static botVariant2(props: LexBotVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot:${props.botName}`;
 	}
 
@@ -581,12 +801,7 @@ export class LexResources {
 	 * Parses a bot ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		botId: string;
-	} {
+	static parseBotArn(arn: string): LexBotArnComponents {
 		const match = BotParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bot ARN: ${arn}`);
@@ -602,36 +817,14 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the bot aliasVariant1 resource.
 	 */
-	static botAliasVariant1(props: {
-		/** The BotId component of the ARN. */
-		readonly botId: string;
-		/** The BotAliasId component of the ARN. */
-		readonly botAliasId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static botAliasVariant1(props: LexBotAliasVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot-alias/${props.botId}/${props.botAliasId}`;
 	}
 
 	/**
 	 * Builds an ARN for the bot aliasVariant2 resource.
 	 */
-	static botAliasVariant2(props: {
-		/** The BotName component of the ARN. */
-		readonly botName: string;
-		/** The BotAlias component of the ARN. */
-		readonly botAlias: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static botAliasVariant2(props: LexBotAliasVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot:${props.botName}:${props.botAlias}`;
 	}
 
@@ -646,13 +839,7 @@ export class LexResources {
 	 * Parses a bot alias ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBotAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		botId: string;
-		botAliasId: string;
-	} {
+	static parseBotAliasArn(arn: string): LexBotAliasArnComponents {
 		const match = BotAliasParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bot alias ARN: ${arn}`);
@@ -669,18 +856,7 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the bot version resource.
 	 */
-	static botVersion(props: {
-		/** The BotName component of the ARN. */
-		readonly botName: string;
-		/** The BotVersion component of the ARN. */
-		readonly botVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static botVersion(props: LexBotVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot:${props.botName}:${props.botVersion}`;
 	}
 
@@ -695,13 +871,7 @@ export class LexResources {
 	 * Parses a bot version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBotVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		botName: string;
-		botVersion: string;
-	} {
+	static parseBotVersionArn(arn: string): LexBotVersionArnComponents {
 		const match = BotVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bot version ARN: ${arn}`);
@@ -718,20 +888,7 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the channel resource.
 	 */
-	static channel(props: {
-		/** The BotName component of the ARN. */
-		readonly botName: string;
-		/** The BotAlias component of the ARN. */
-		readonly botAlias: string;
-		/** The ChannelName component of the ARN. */
-		readonly channelName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channel(props: LexChannelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:bot-channel:${props.botName}:${props.botAlias}:${props.channelName}`;
 	}
 
@@ -746,14 +903,7 @@ export class LexResources {
 	 * Parses a channel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		botName: string;
-		botAlias: string;
-		channelName: string;
-	} {
+	static parseChannelArn(arn: string): LexChannelArnComponents {
 		const match = ChannelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid channel ARN: ${arn}`);
@@ -771,18 +921,7 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the intent version resource.
 	 */
-	static intentVersion(props: {
-		/** The IntentName component of the ARN. */
-		readonly intentName: string;
-		/** The IntentVersion component of the ARN. */
-		readonly intentVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static intentVersion(props: LexIntentVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:intent:${props.intentName}:${props.intentVersion}`;
 	}
 
@@ -797,13 +936,7 @@ export class LexResources {
 	 * Parses a intent version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntentVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		intentName: string;
-		intentVersion: string;
-	} {
+	static parseIntentVersionArn(arn: string): LexIntentVersionArnComponents {
 		const match = IntentVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid intent version ARN: ${arn}`);
@@ -820,18 +953,7 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the slottype version resource.
 	 */
-	static slottypeVersion(props: {
-		/** The SlotName component of the ARN. */
-		readonly slotName: string;
-		/** The SlotVersion component of the ARN. */
-		readonly slotVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static slottypeVersion(props: LexSlottypeVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:slottype:${props.slotName}:${props.slotVersion}`;
 	}
 
@@ -846,13 +968,7 @@ export class LexResources {
 	 * Parses a slottype version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSlottypeVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		slotName: string;
-		slotVersion: string;
-	} {
+	static parseSlottypeVersionArn(arn: string): LexSlottypeVersionArnComponents {
 		const match = SlottypeVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid slottype version ARN: ${arn}`);
@@ -869,16 +985,7 @@ export class LexResources {
 	/**
 	 * Builds an ARN for the test set resource.
 	 */
-	static testSet(props: {
-		/** The TestSetId component of the ARN. */
-		readonly testSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testSet(props: LexTestSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lex:${props.region ?? "*"}:${props.account ?? "*"}:test-set/${props.testSetId}`;
 	}
 
@@ -893,12 +1000,7 @@ export class LexResources {
 	 * Parses a test set ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testSetId: string;
-	} {
+	static parseTestSetArn(arn: string): LexTestSetArnComponents {
 		const match = TestSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid test set ARN: ${arn}`);
@@ -917,21 +1019,21 @@ export class LexResources {
  */
 export class LexOperations {
 	/** IAM actions required for the BatchCreateCustomVocabularyItem API call. */
-	static readonly BATCH_CREATE_CUSTOM_VOCABULARY_ITEM: string[] = [
+	static readonly BatchCreateCustomVocabularyItem: string[] = [
 		"lex:BatchCreateCustomVocabularyItem",
 	];
 	/** IAM actions required for the BatchDeleteCustomVocabularyItem API call. */
-	static readonly BATCH_DELETE_CUSTOM_VOCABULARY_ITEM: string[] = [
+	static readonly BatchDeleteCustomVocabularyItem: string[] = [
 		"lex:BatchDeleteCustomVocabularyItem",
 	];
 	/** IAM actions required for the BatchUpdateCustomVocabularyItem API call. */
-	static readonly BATCH_UPDATE_CUSTOM_VOCABULARY_ITEM: string[] = [
+	static readonly BatchUpdateCustomVocabularyItem: string[] = [
 		"lex:BatchUpdateCustomVocabularyItem",
 	];
 	/** IAM actions required for the BuildBotLocale API call. */
-	static readonly BUILD_BOT_LOCALE: string[] = ["lex:BuildBotLocale"];
+	static readonly BuildBotLocale: string[] = ["lex:BuildBotLocale"];
 	/** IAM actions required for the CreateBot API call. */
-	static readonly CREATE_BOT: string[] = [
+	static readonly CreateBot: string[] = [
 		"lex:CreateBot",
 		"lex:DescribeBotAlias",
 		"lex:DescribeBotVersion",
@@ -939,47 +1041,45 @@ export class LexOperations {
 		"lex:TagResource",
 	];
 	/** IAM actions required for the CreateBotAlias API call. */
-	static readonly CREATE_BOT_ALIAS: string[] = [
+	static readonly CreateBotAlias: string[] = [
 		"lex:CreateBotAlias",
 		"lex:TagResource",
 	];
 	/** IAM actions required for the CreateBotLocale API call. */
-	static readonly CREATE_BOT_LOCALE: string[] = ["lex:CreateBotLocale"];
+	static readonly CreateBotLocale: string[] = ["lex:CreateBotLocale"];
 	/** IAM actions required for the CreateBotReplica API call. */
-	static readonly CREATE_BOT_REPLICA: string[] = ["lex:CreateBotReplica"];
+	static readonly CreateBotReplica: string[] = ["lex:CreateBotReplica"];
 	/** IAM actions required for the CreateBotVersion API call. */
-	static readonly CREATE_BOT_VERSION: string[] = ["lex:CreateBotVersion"];
+	static readonly CreateBotVersion: string[] = ["lex:CreateBotVersion"];
 	/** IAM actions required for the CreateExport API call. */
-	static readonly CREATE_EXPORT: string[] = ["lex:CreateExport"];
+	static readonly CreateExport: string[] = ["lex:CreateExport"];
 	/** IAM actions required for the CreateIntent API call. */
-	static readonly CREATE_INTENT: string[] = ["lex:CreateIntent"];
+	static readonly CreateIntent: string[] = ["lex:CreateIntent"];
 	/** IAM actions required for the CreateIntentVersion API call. */
-	static readonly CREATE_INTENT_VERSION: string[] = [];
+	static readonly CreateIntentVersion: string[] = [];
 	/** IAM actions required for the CreateResourcePolicy API call. */
-	static readonly CREATE_RESOURCE_POLICY: string[] = [
-		"lex:CreateResourcePolicy",
-	];
+	static readonly CreateResourcePolicy: string[] = ["lex:CreateResourcePolicy"];
 	/** IAM actions required for the CreateResourcePolicyStatement API call. */
-	static readonly CREATE_RESOURCE_POLICY_STATEMENT: string[] = [
+	static readonly CreateResourcePolicyStatement: string[] = [
 		"lex:CreateResourcePolicy",
 		"lex:UpdateResourcePolicy",
 	];
 	/** IAM actions required for the CreateSlot API call. */
-	static readonly CREATE_SLOT: string[] = ["lex:CreateSlot"];
+	static readonly CreateSlot: string[] = ["lex:CreateSlot"];
 	/** IAM actions required for the CreateSlotType API call. */
-	static readonly CREATE_SLOT_TYPE: string[] = ["lex:CreateSlotType"];
+	static readonly CreateSlotType: string[] = ["lex:CreateSlotType"];
 	/** IAM actions required for the CreateSlotTypeVersion API call. */
-	static readonly CREATE_SLOT_TYPE_VERSION: string[] = [
+	static readonly CreateSlotTypeVersion: string[] = [
 		"lex:CreateSlotTypeVersion",
 	];
 	/** IAM actions required for the CreateTestSetDiscrepancyReport API call. */
-	static readonly CREATE_TEST_SET_DISCREPANCY_REPORT: string[] = [
+	static readonly CreateTestSetDiscrepancyReport: string[] = [
 		"lex:CreateTestSetDiscrepancyReport",
 	];
 	/** IAM actions required for the CreateUploadUrl API call. */
-	static readonly CREATE_UPLOAD_URL: string[] = ["lex:CreateUploadUrl"];
+	static readonly CreateUploadUrl: string[] = ["lex:CreateUploadUrl"];
 	/** IAM actions required for the DeleteBot API call. */
-	static readonly DELETE_BOT: string[] = [
+	static readonly DeleteBot: string[] = [
 		"lex:DeleteBot",
 		"lex:DeleteBotAlias",
 		"lex:DeleteBotChannel",
@@ -992,20 +1092,20 @@ export class LexOperations {
 		"lex:DeleteSlotType",
 	];
 	/** IAM actions required for the DeleteBotAlias API call. */
-	static readonly DELETE_BOT_ALIAS: string[] = [
+	static readonly DeleteBotAlias: string[] = [
 		"lex:DeleteBotAlias",
 		"lex:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteBotAnalyzerRecommendation API call. */
-	static readonly DELETE_BOT_ANALYZER_RECOMMENDATION: string[] = [
+	static readonly DeleteBotAnalyzerRecommendation: string[] = [
 		"lex:DeleteBotAnalyzerRecommendation",
 	];
 	/** IAM actions required for the DeleteBotChannelAssociation API call. */
-	static readonly DELETE_BOT_CHANNEL_ASSOCIATION: string[] = [
+	static readonly DeleteBotChannelAssociation: string[] = [
 		"lex:DeleteBotChannelAssociation",
 	];
 	/** IAM actions required for the DeleteBotLocale API call. */
-	static readonly DELETE_BOT_LOCALE: string[] = [
+	static readonly DeleteBotLocale: string[] = [
 		"lex:DeleteBotLocale",
 		"lex:DeleteCustomVocabulary",
 		"lex:DeleteIntent",
@@ -1013,79 +1113,77 @@ export class LexOperations {
 		"lex:DeleteSlotType",
 	];
 	/** IAM actions required for the DeleteBotReplica API call. */
-	static readonly DELETE_BOT_REPLICA: string[] = ["lex:DeleteBotReplica"];
+	static readonly DeleteBotReplica: string[] = ["lex:DeleteBotReplica"];
 	/** IAM actions required for the DeleteBotVersion API call. */
-	static readonly DELETE_BOT_VERSION: string[] = ["lex:DeleteBotVersion"];
+	static readonly DeleteBotVersion: string[] = ["lex:DeleteBotVersion"];
 	/** IAM actions required for the DeleteCustomVocabulary API call. */
-	static readonly DELETE_CUSTOM_VOCABULARY: string[] = [
+	static readonly DeleteCustomVocabulary: string[] = [
 		"lex:DeleteCustomVocabulary",
 	];
 	/** IAM actions required for the DeleteExport API call. */
-	static readonly DELETE_EXPORT: string[] = ["lex:DeleteExport"];
+	static readonly DeleteExport: string[] = ["lex:DeleteExport"];
 	/** IAM actions required for the DeleteImport API call. */
-	static readonly DELETE_IMPORT: string[] = ["lex:DeleteImport"];
+	static readonly DeleteImport: string[] = ["lex:DeleteImport"];
 	/** IAM actions required for the DeleteIntent API call. */
-	static readonly DELETE_INTENT: string[] = ["lex:DeleteIntent"];
+	static readonly DeleteIntent: string[] = ["lex:DeleteIntent"];
 	/** IAM actions required for the DeleteIntentVersion API call. */
-	static readonly DELETE_INTENT_VERSION: string[] = ["lex:DeleteIntentVersion"];
+	static readonly DeleteIntentVersion: string[] = ["lex:DeleteIntentVersion"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
-		"lex:DeleteResourcePolicy",
-	];
+	static readonly DeleteResourcePolicy: string[] = ["lex:DeleteResourcePolicy"];
 	/** IAM actions required for the DeleteResourcePolicyStatement API call. */
-	static readonly DELETE_RESOURCE_POLICY_STATEMENT: string[] = [
+	static readonly DeleteResourcePolicyStatement: string[] = [
 		"lex:DeleteResourcePolicy",
 		"lex:UpdateResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSession API call. */
-	static readonly DELETE_SESSION: string[] = ["lex:DeleteSession"];
+	static readonly DeleteSession: string[] = ["lex:DeleteSession"];
 	/** IAM actions required for the DeleteSlot API call. */
-	static readonly DELETE_SLOT: string[] = ["lex:DeleteSlot"];
+	static readonly DeleteSlot: string[] = ["lex:DeleteSlot"];
 	/** IAM actions required for the DeleteSlotType API call. */
-	static readonly DELETE_SLOT_TYPE: string[] = ["lex:DeleteSlotType"];
+	static readonly DeleteSlotType: string[] = ["lex:DeleteSlotType"];
 	/** IAM actions required for the DeleteSlotTypeVersion API call. */
-	static readonly DELETE_SLOT_TYPE_VERSION: string[] = [
+	static readonly DeleteSlotTypeVersion: string[] = [
 		"lex:DeleteSlotTypeVersion",
 	];
 	/** IAM actions required for the DeleteTestSet API call. */
-	static readonly DELETE_TEST_SET: string[] = ["lex:DeleteTestSet"];
+	static readonly DeleteTestSet: string[] = ["lex:DeleteTestSet"];
 	/** IAM actions required for the DeleteUtterances API call. */
-	static readonly DELETE_UTTERANCES: string[] = ["lex:DeleteUtterances"];
+	static readonly DeleteUtterances: string[] = ["lex:DeleteUtterances"];
 	/** IAM actions required for the DescribeBot API call. */
-	static readonly DESCRIBE_BOT: string[] = [
+	static readonly DescribeBot: string[] = [
 		"lex:DescribeBot",
 		"lex:DescribeBotAlias",
 		"lex:DescribeBotVersion",
 	];
 	/** IAM actions required for the DescribeBotAlias API call. */
-	static readonly DESCRIBE_BOT_ALIAS: string[] = ["lex:DescribeBotAlias"];
+	static readonly DescribeBotAlias: string[] = ["lex:DescribeBotAlias"];
 	/** IAM actions required for the DescribeBotAnalyzerRecommendation API call. */
-	static readonly DESCRIBE_BOT_ANALYZER_RECOMMENDATION: string[] = [
+	static readonly DescribeBotAnalyzerRecommendation: string[] = [
 		"lex:DescribeBotAnalyzerRecommendation",
 	];
 	/** IAM actions required for the DescribeBotLocale API call. */
-	static readonly DESCRIBE_BOT_LOCALE: string[] = ["lex:DescribeBotLocale"];
+	static readonly DescribeBotLocale: string[] = ["lex:DescribeBotLocale"];
 	/** IAM actions required for the DescribeBotRecommendation API call. */
-	static readonly DESCRIBE_BOT_RECOMMENDATION: string[] = [
+	static readonly DescribeBotRecommendation: string[] = [
 		"lex:DescribeBotRecommendation",
 	];
 	/** IAM actions required for the DescribeBotReplica API call. */
-	static readonly DESCRIBE_BOT_REPLICA: string[] = ["lex:DescribeBotReplica"];
+	static readonly DescribeBotReplica: string[] = ["lex:DescribeBotReplica"];
 	/** IAM actions required for the DescribeBotResourceGeneration API call. */
-	static readonly DESCRIBE_BOT_RESOURCE_GENERATION: string[] = [
+	static readonly DescribeBotResourceGeneration: string[] = [
 		"lex:DescribeBotResourceGeneration",
 	];
 	/** IAM actions required for the DescribeBotVersion API call. */
-	static readonly DESCRIBE_BOT_VERSION: string[] = [
+	static readonly DescribeBotVersion: string[] = [
 		"lex:DescribeBotAlias",
 		"lex:DescribeBotVersion",
 	];
 	/** IAM actions required for the DescribeCustomVocabularyMetadata API call. */
-	static readonly DESCRIBE_CUSTOM_VOCABULARY_METADATA: string[] = [
+	static readonly DescribeCustomVocabularyMetadata: string[] = [
 		"lex:DescribeCustomVocabularyMetadata",
 	];
 	/** IAM actions required for the DescribeExport API call. */
-	static readonly DESCRIBE_EXPORT: string[] = [
+	static readonly DescribeExport: string[] = [
 		"lex:DescribeBot",
 		"lex:DescribeBotLocale",
 		"lex:DescribeCustomVocabulary",
@@ -1100,208 +1198,198 @@ export class LexOperations {
 		"lex:ListSlots",
 	];
 	/** IAM actions required for the DescribeImport API call. */
-	static readonly DESCRIBE_IMPORT: string[] = ["lex:DescribeImport"];
+	static readonly DescribeImport: string[] = ["lex:DescribeImport"];
 	/** IAM actions required for the DescribeIntent API call. */
-	static readonly DESCRIBE_INTENT: string[] = ["lex:DescribeIntent"];
+	static readonly DescribeIntent: string[] = ["lex:DescribeIntent"];
 	/** IAM actions required for the DescribeResourcePolicy API call. */
-	static readonly DESCRIBE_RESOURCE_POLICY: string[] = [
+	static readonly DescribeResourcePolicy: string[] = [
 		"lex:DescribeResourcePolicy",
 	];
 	/** IAM actions required for the DescribeSlot API call. */
-	static readonly DESCRIBE_SLOT: string[] = ["lex:DescribeSlot"];
+	static readonly DescribeSlot: string[] = ["lex:DescribeSlot"];
 	/** IAM actions required for the DescribeSlotType API call. */
-	static readonly DESCRIBE_SLOT_TYPE: string[] = ["lex:DescribeSlotType"];
+	static readonly DescribeSlotType: string[] = ["lex:DescribeSlotType"];
 	/** IAM actions required for the DescribeTestExecution API call. */
-	static readonly DESCRIBE_TEST_EXECUTION: string[] = [
+	static readonly DescribeTestExecution: string[] = [
 		"lex:DescribeTestExecution",
 	];
 	/** IAM actions required for the DescribeTestSet API call. */
-	static readonly DESCRIBE_TEST_SET: string[] = ["lex:DescribeTestSet"];
+	static readonly DescribeTestSet: string[] = ["lex:DescribeTestSet"];
 	/** IAM actions required for the DescribeTestSetDiscrepancyReport API call. */
-	static readonly DESCRIBE_TEST_SET_DISCREPANCY_REPORT: string[] = [
+	static readonly DescribeTestSetDiscrepancyReport: string[] = [
 		"lex:DescribeTestSetDiscrepancyReport",
 	];
 	/** IAM actions required for the DescribeTestSetGeneration API call. */
-	static readonly DESCRIBE_TEST_SET_GENERATION: string[] = [
+	static readonly DescribeTestSetGeneration: string[] = [
 		"lex:DescribeTestSetGeneration",
 	];
 	/** IAM actions required for the GenerateBotElement API call. */
-	static readonly GENERATE_BOT_ELEMENT: string[] = ["lex:GenerateBotElement"];
+	static readonly GenerateBotElement: string[] = ["lex:GenerateBotElement"];
 	/** IAM actions required for the GetBot API call. */
-	static readonly GET_BOT: string[] = ["lex:GetBot"];
+	static readonly opGetBot: string[] = ["lex:GetBot"];
 	/** IAM actions required for the GetBotAlias API call. */
-	static readonly GET_BOT_ALIAS: string[] = ["lex:GetBotAlias"];
+	static readonly opGetBotAlias: string[] = ["lex:GetBotAlias"];
 	/** IAM actions required for the GetBotAliases API call. */
-	static readonly GET_BOT_ALIASES: string[] = ["lex:GetBotAliases"];
+	static readonly opGetBotAliases: string[] = ["lex:GetBotAliases"];
 	/** IAM actions required for the GetBotChannelAssociation API call. */
-	static readonly GET_BOT_CHANNEL_ASSOCIATION: string[] = [
+	static readonly opGetBotChannelAssociation: string[] = [
 		"lex:GetBotChannelAssociation",
 	];
 	/** IAM actions required for the GetBotChannelAssociations API call. */
-	static readonly GET_BOT_CHANNEL_ASSOCIATIONS: string[] = [
+	static readonly opGetBotChannelAssociations: string[] = [
 		"lex:GetBotChannelAssociations",
 	];
 	/** IAM actions required for the GetBotVersions API call. */
-	static readonly GET_BOT_VERSIONS: string[] = ["lex:GetBotVersions"];
+	static readonly opGetBotVersions: string[] = ["lex:GetBotVersions"];
 	/** IAM actions required for the GetBots API call. */
-	static readonly GET_BOTS: string[] = ["lex:GetBots"];
+	static readonly opGetBots: string[] = ["lex:GetBots"];
 	/** IAM actions required for the GetBuiltinIntent API call. */
-	static readonly GET_BUILTIN_INTENT: string[] = ["lex:GetBuiltinIntent"];
+	static readonly opGetBuiltinIntent: string[] = ["lex:GetBuiltinIntent"];
 	/** IAM actions required for the GetBuiltinIntents API call. */
-	static readonly GET_BUILTIN_INTENTS: string[] = ["lex:GetBuiltinIntents"];
+	static readonly opGetBuiltinIntents: string[] = ["lex:GetBuiltinIntents"];
 	/** IAM actions required for the GetBuiltinSlotTypes API call. */
-	static readonly GET_BUILTIN_SLOT_TYPES: string[] = [
-		"lex:GetBuiltinSlotTypes",
-	];
+	static readonly opGetBuiltinSlotTypes: string[] = ["lex:GetBuiltinSlotTypes"];
 	/** IAM actions required for the GetExport API call. */
-	static readonly GET_EXPORT: string[] = ["lex:GetExport"];
+	static readonly opGetExport: string[] = ["lex:GetExport"];
 	/** IAM actions required for the GetImport API call. */
-	static readonly GET_IMPORT: string[] = ["lex:GetImport"];
+	static readonly opGetImport: string[] = ["lex:GetImport"];
 	/** IAM actions required for the GetIntent API call. */
-	static readonly GET_INTENT: string[] = ["lex:GetIntent"];
+	static readonly opGetIntent: string[] = ["lex:GetIntent"];
 	/** IAM actions required for the GetIntentVersions API call. */
-	static readonly GET_INTENT_VERSIONS: string[] = ["lex:GetIntentVersions"];
+	static readonly opGetIntentVersions: string[] = ["lex:GetIntentVersions"];
 	/** IAM actions required for the GetIntents API call. */
-	static readonly GET_INTENTS: string[] = ["lex:GetIntents"];
+	static readonly opGetIntents: string[] = ["lex:GetIntents"];
 	/** IAM actions required for the GetMigration API call. */
-	static readonly GET_MIGRATION: string[] = ["lex:GetMigration"];
+	static readonly opGetMigration: string[] = ["lex:GetMigration"];
 	/** IAM actions required for the GetMigrations API call. */
-	static readonly GET_MIGRATIONS: string[] = ["lex:GetMigrations"];
+	static readonly opGetMigrations: string[] = ["lex:GetMigrations"];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["lex:GetSession"];
+	static readonly opGetSession: string[] = ["lex:GetSession"];
 	/** IAM actions required for the GetSlotType API call. */
-	static readonly GET_SLOT_TYPE: string[] = ["lex:GetSlotType"];
+	static readonly opGetSlotType: string[] = ["lex:GetSlotType"];
 	/** IAM actions required for the GetSlotTypeVersions API call. */
-	static readonly GET_SLOT_TYPE_VERSIONS: string[] = [
-		"lex:GetSlotTypeVersions",
-	];
+	static readonly opGetSlotTypeVersions: string[] = ["lex:GetSlotTypeVersions"];
 	/** IAM actions required for the GetSlotTypes API call. */
-	static readonly GET_SLOT_TYPES: string[] = ["lex:GetSlotTypes"];
+	static readonly opGetSlotTypes: string[] = ["lex:GetSlotTypes"];
 	/** IAM actions required for the GetTestExecutionArtifactsUrl API call. */
-	static readonly GET_TEST_EXECUTION_ARTIFACTS_URL: string[] = [
+	static readonly opGetTestExecutionArtifactsUrl: string[] = [
 		"lex:GetTestExecutionArtifactsUrl",
 	];
 	/** IAM actions required for the GetUtterancesView API call. */
-	static readonly GET_UTTERANCES_VIEW: string[] = ["lex:GetUtterancesView"];
+	static readonly opGetUtterancesView: string[] = ["lex:GetUtterancesView"];
 	/** IAM actions required for the ListAggregatedUtterances API call. */
-	static readonly LIST_AGGREGATED_UTTERANCES: string[] = [
+	static readonly ListAggregatedUtterances: string[] = [
 		"lex:ListAggregatedUtterances",
 	];
 	/** IAM actions required for the ListBotAliasReplicas API call. */
-	static readonly LIST_BOT_ALIAS_REPLICAS: string[] = [
-		"lex:ListBotAliasReplicas",
-	];
+	static readonly ListBotAliasReplicas: string[] = ["lex:ListBotAliasReplicas"];
 	/** IAM actions required for the ListBotAliases API call. */
-	static readonly LIST_BOT_ALIASES: string[] = ["lex:ListBotAliases"];
+	static readonly ListBotAliases: string[] = ["lex:ListBotAliases"];
 	/** IAM actions required for the ListBotAnalyzerHistory API call. */
-	static readonly LIST_BOT_ANALYZER_HISTORY: string[] = [];
+	static readonly ListBotAnalyzerHistory: string[] = [];
 	/** IAM actions required for the ListBotLocales API call. */
-	static readonly LIST_BOT_LOCALES: string[] = ["lex:ListBotLocales"];
+	static readonly ListBotLocales: string[] = ["lex:ListBotLocales"];
 	/** IAM actions required for the ListBotRecommendations API call. */
-	static readonly LIST_BOT_RECOMMENDATIONS: string[] = [
+	static readonly ListBotRecommendations: string[] = [
 		"lex:ListBotRecommendations",
 	];
 	/** IAM actions required for the ListBotReplicas API call. */
-	static readonly LIST_BOT_REPLICAS: string[] = ["lex:ListBotReplicas"];
+	static readonly ListBotReplicas: string[] = ["lex:ListBotReplicas"];
 	/** IAM actions required for the ListBotResourceGenerations API call. */
-	static readonly LIST_BOT_RESOURCE_GENERATIONS: string[] = [
+	static readonly ListBotResourceGenerations: string[] = [
 		"lex:ListBotResourceGenerations",
 	];
 	/** IAM actions required for the ListBotVersionReplicas API call. */
-	static readonly LIST_BOT_VERSION_REPLICAS: string[] = [
+	static readonly ListBotVersionReplicas: string[] = [
 		"lex:ListBotVersionReplicas",
 	];
 	/** IAM actions required for the ListBotVersions API call. */
-	static readonly LIST_BOT_VERSIONS: string[] = ["lex:ListBotVersions"];
+	static readonly ListBotVersions: string[] = ["lex:ListBotVersions"];
 	/** IAM actions required for the ListBots API call. */
-	static readonly LIST_BOTS: string[] = ["lex:ListBots"];
+	static readonly ListBots: string[] = ["lex:ListBots"];
 	/** IAM actions required for the ListBuiltInIntents API call. */
-	static readonly LIST_BUILT_IN_INTENTS: string[] = ["lex:ListBuiltInIntents"];
+	static readonly ListBuiltInIntents: string[] = ["lex:ListBuiltInIntents"];
 	/** IAM actions required for the ListBuiltInSlotTypes API call. */
-	static readonly LIST_BUILT_IN_SLOT_TYPES: string[] = [
-		"lex:ListBuiltInSlotTypes",
-	];
+	static readonly ListBuiltInSlotTypes: string[] = ["lex:ListBuiltInSlotTypes"];
 	/** IAM actions required for the ListCustomVocabularyItems API call. */
-	static readonly LIST_CUSTOM_VOCABULARY_ITEMS: string[] = [
+	static readonly ListCustomVocabularyItems: string[] = [
 		"lex:ListCustomVocabularyItems",
 	];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["lex:ListExports"];
+	static readonly ListExports: string[] = ["lex:ListExports"];
 	/** IAM actions required for the ListImports API call. */
-	static readonly LIST_IMPORTS: string[] = ["lex:ListImports"];
+	static readonly ListImports: string[] = ["lex:ListImports"];
 	/** IAM actions required for the ListIntentMetrics API call. */
-	static readonly LIST_INTENT_METRICS: string[] = ["lex:ListIntentMetrics"];
+	static readonly ListIntentMetrics: string[] = ["lex:ListIntentMetrics"];
 	/** IAM actions required for the ListIntentPaths API call. */
-	static readonly LIST_INTENT_PATHS: string[] = ["lex:ListIntentPaths"];
+	static readonly ListIntentPaths: string[] = ["lex:ListIntentPaths"];
 	/** IAM actions required for the ListIntentStageMetrics API call. */
-	static readonly LIST_INTENT_STAGE_METRICS: string[] = [
+	static readonly ListIntentStageMetrics: string[] = [
 		"lex:ListIntentStageMetrics",
 	];
 	/** IAM actions required for the ListIntents API call. */
-	static readonly LIST_INTENTS: string[] = ["lex:ListIntents"];
+	static readonly ListIntents: string[] = ["lex:ListIntents"];
 	/** IAM actions required for the ListRecommendedIntents API call. */
-	static readonly LIST_RECOMMENDED_INTENTS: string[] = [
+	static readonly ListRecommendedIntents: string[] = [
 		"lex:ListRecommendedIntents",
 	];
 	/** IAM actions required for the ListSessionAnalyticsData API call. */
-	static readonly LIST_SESSION_ANALYTICS_DATA: string[] = [
+	static readonly ListSessionAnalyticsData: string[] = [
 		"lex:ListSessionAnalyticsData",
 	];
 	/** IAM actions required for the ListSessionMetrics API call. */
-	static readonly LIST_SESSION_METRICS: string[] = ["lex:ListSessionMetrics"];
+	static readonly ListSessionMetrics: string[] = ["lex:ListSessionMetrics"];
 	/** IAM actions required for the ListSlotTypes API call. */
-	static readonly LIST_SLOT_TYPES: string[] = ["lex:ListSlotTypes"];
+	static readonly ListSlotTypes: string[] = ["lex:ListSlotTypes"];
 	/** IAM actions required for the ListSlots API call. */
-	static readonly LIST_SLOTS: string[] = ["lex:ListSlots"];
+	static readonly ListSlots: string[] = ["lex:ListSlots"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"lex:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["lex:ListTagsForResource"];
 	/** IAM actions required for the ListTestExecutionResultItems API call. */
-	static readonly LIST_TEST_EXECUTION_RESULT_ITEMS: string[] = [
+	static readonly ListTestExecutionResultItems: string[] = [
 		"lex:ListTestExecutionResultItems",
 		"lex:ListTestSetRecords",
 	];
 	/** IAM actions required for the ListTestExecutions API call. */
-	static readonly LIST_TEST_EXECUTIONS: string[] = ["lex:ListTestExecutions"];
+	static readonly ListTestExecutions: string[] = ["lex:ListTestExecutions"];
 	/** IAM actions required for the ListTestSetRecords API call. */
-	static readonly LIST_TEST_SET_RECORDS: string[] = ["lex:ListTestSetRecords"];
+	static readonly ListTestSetRecords: string[] = ["lex:ListTestSetRecords"];
 	/** IAM actions required for the ListTestSets API call. */
-	static readonly LIST_TEST_SETS: string[] = ["lex:ListTestSets"];
+	static readonly ListTestSets: string[] = ["lex:ListTestSets"];
 	/** IAM actions required for the ListUtteranceAnalyticsData API call. */
-	static readonly LIST_UTTERANCE_ANALYTICS_DATA: string[] = [
+	static readonly ListUtteranceAnalyticsData: string[] = [
 		"lex:ListAggregatedUtterances",
 	];
 	/** IAM actions required for the ListUtteranceMetrics API call. */
-	static readonly LIST_UTTERANCE_METRICS: string[] = [
+	static readonly ListUtteranceMetrics: string[] = [
 		"lex:ListAggregatedUtterances",
 	];
 	/** IAM actions required for the PostContent API call. */
-	static readonly POST_CONTENT: string[] = ["lex:PostContent"];
+	static readonly PostContent: string[] = ["lex:PostContent"];
 	/** IAM actions required for the PostText API call. */
-	static readonly POST_TEXT: string[] = ["lex:PostText"];
+	static readonly PostText: string[] = ["lex:PostText"];
 	/** IAM actions required for the PutBot API call. */
-	static readonly PUT_BOT: string[] = ["lex:PutBot"];
+	static readonly PutBot: string[] = ["lex:PutBot"];
 	/** IAM actions required for the PutBotAlias API call. */
-	static readonly PUT_BOT_ALIAS: string[] = [];
+	static readonly PutBotAlias: string[] = [];
 	/** IAM actions required for the PutIntent API call. */
-	static readonly PUT_INTENT: string[] = ["lex:PutIntent"];
+	static readonly PutIntent: string[] = ["lex:PutIntent"];
 	/** IAM actions required for the PutSession API call. */
-	static readonly PUT_SESSION: string[] = ["lex:PutSession"];
+	static readonly PutSession: string[] = ["lex:PutSession"];
 	/** IAM actions required for the PutSlotType API call. */
-	static readonly PUT_SLOT_TYPE: string[] = ["lex:PutSlotType"];
+	static readonly PutSlotType: string[] = ["lex:PutSlotType"];
 	/** IAM actions required for the RecognizeText API call. */
-	static readonly RECOGNIZE_TEXT: string[] = ["lex:RecognizeText"];
+	static readonly RecognizeText: string[] = ["lex:RecognizeText"];
 	/** IAM actions required for the RecognizeUtterance API call. */
-	static readonly RECOGNIZE_UTTERANCE: string[] = ["lex:RecognizeUtterance"];
+	static readonly RecognizeUtterance: string[] = ["lex:RecognizeUtterance"];
 	/** IAM actions required for the SearchAssociatedTranscripts API call. */
-	static readonly SEARCH_ASSOCIATED_TRANSCRIPTS: string[] = [
+	static readonly SearchAssociatedTranscripts: string[] = [
 		"lex:SearchAssociatedTranscripts",
 	];
 	/** IAM actions required for the StartBotAnalyzer API call. */
-	static readonly START_BOT_ANALYZER: string[] = ["lex:StartBotAnalyzer"];
+	static readonly StartBotAnalyzer: string[] = ["lex:StartBotAnalyzer"];
 	/** IAM actions required for the StartBotRecommendation API call. */
-	static readonly START_BOT_RECOMMENDATION: string[] = [
+	static readonly StartBotRecommendation: string[] = [
 		"lex:CreateIntent",
 		"lex:CreateSlot",
 		"lex:CreateSlotType",
@@ -1311,13 +1399,13 @@ export class LexOperations {
 		"lex:StartBotRecommendation",
 	];
 	/** IAM actions required for the StartBotResourceGeneration API call. */
-	static readonly START_BOT_RESOURCE_GENERATION: string[] = [
+	static readonly StartBotResourceGeneration: string[] = [
 		"lex:StartBotResourceGeneration",
 	];
 	/** IAM actions required for the StartConversation API call. */
-	static readonly START_CONVERSATION: string[] = ["lex:StartConversation"];
+	static readonly StartConversation: string[] = ["lex:StartConversation"];
 	/** IAM actions required for the StartImport API call. */
-	static readonly START_IMPORT: string[] = [
+	static readonly StartImport: string[] = [
 		"lex:CreateBot",
 		"lex:CreateBotLocale",
 		"lex:CreateCustomVocabulary",
@@ -1342,54 +1430,52 @@ export class LexOperations {
 		"lex:UpdateTestSet",
 	];
 	/** IAM actions required for the StartMigration API call. */
-	static readonly START_MIGRATION: string[] = [];
+	static readonly StartMigration: string[] = [];
 	/** IAM actions required for the StartTestExecution API call. */
-	static readonly START_TEST_EXECUTION: string[] = ["lex:StartTestExecution"];
+	static readonly StartTestExecution: string[] = ["lex:StartTestExecution"];
 	/** IAM actions required for the StartTestSetGeneration API call. */
-	static readonly START_TEST_SET_GENERATION: string[] = [
+	static readonly StartTestSetGeneration: string[] = [
 		"iam:PassRole",
 		"lex:StartTestSetGeneration",
 		"lex:TagResource",
 	];
 	/** IAM actions required for the StopBotAnalyzer API call. */
-	static readonly STOP_BOT_ANALYZER: string[] = ["lex:StopBotAnalyzer"];
+	static readonly StopBotAnalyzer: string[] = ["lex:StopBotAnalyzer"];
 	/** IAM actions required for the StopBotRecommendation API call. */
-	static readonly STOP_BOT_RECOMMENDATION: string[] = [
+	static readonly StopBotRecommendation: string[] = [
 		"lex:StopBotRecommendation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["lex:TagResource"];
+	static readonly TagResource: string[] = ["lex:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["lex:UntagResource"];
+	static readonly UntagResource: string[] = ["lex:UntagResource"];
 	/** IAM actions required for the UpdateBot API call. */
-	static readonly UPDATE_BOT: string[] = [
+	static readonly UpdateBot: string[] = [
 		"lex:DescribeBotAlias",
 		"lex:DescribeBotVersion",
 		"iam:PassRole",
 		"lex:UpdateBot",
 	];
 	/** IAM actions required for the UpdateBotAlias API call. */
-	static readonly UPDATE_BOT_ALIAS: string[] = ["lex:UpdateBotAlias"];
+	static readonly UpdateBotAlias: string[] = ["lex:UpdateBotAlias"];
 	/** IAM actions required for the UpdateBotLocale API call. */
-	static readonly UPDATE_BOT_LOCALE: string[] = ["lex:UpdateBotLocale"];
+	static readonly UpdateBotLocale: string[] = ["lex:UpdateBotLocale"];
 	/** IAM actions required for the UpdateBotRecommendation API call. */
-	static readonly UPDATE_BOT_RECOMMENDATION: string[] = [
+	static readonly UpdateBotRecommendation: string[] = [
 		"lex:UpdateBotRecommendation",
 	];
 	/** IAM actions required for the UpdateExport API call. */
-	static readonly UPDATE_EXPORT: string[] = ["lex:UpdateExport"];
+	static readonly UpdateExport: string[] = ["lex:UpdateExport"];
 	/** IAM actions required for the UpdateIntent API call. */
-	static readonly UPDATE_INTENT: string[] = ["lex:UpdateIntent"];
+	static readonly UpdateIntent: string[] = ["lex:UpdateIntent"];
 	/** IAM actions required for the UpdateResourcePolicy API call. */
-	static readonly UPDATE_RESOURCE_POLICY: string[] = [
-		"lex:UpdateResourcePolicy",
-	];
+	static readonly UpdateResourcePolicy: string[] = ["lex:UpdateResourcePolicy"];
 	/** IAM actions required for the UpdateSlot API call. */
-	static readonly UPDATE_SLOT: string[] = ["lex:UpdateSlot"];
+	static readonly UpdateSlot: string[] = ["lex:UpdateSlot"];
 	/** IAM actions required for the UpdateSlotType API call. */
-	static readonly UPDATE_SLOT_TYPE: string[] = ["lex:UpdateSlotType"];
+	static readonly UpdateSlotType: string[] = ["lex:UpdateSlotType"];
 	/** IAM actions required for the UpdateTestSet API call. */
-	static readonly UPDATE_TEST_SET: string[] = ["lex:UpdateTestSet"];
+	static readonly UpdateTestSet: string[] = ["lex:UpdateTestSet"];
 }
 
 /**
@@ -1397,47 +1483,47 @@ export class LexOperations {
  */
 export class LexConditions {
 	/** Condition keys applicable to the CreateBot action. */
-	static readonly CREATE_BOT_CONDITION_KEYS: string[] = [
+	static readonly CreateBotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateBotAlias action. */
-	static readonly CREATE_BOT_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly CreateBotAliasConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutBot action. */
-	static readonly PUT_BOT_CONDITION_KEYS: string[] = [
+	static readonly PutBotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutBotAlias action. */
-	static readonly PUT_BOT_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly PutBotAliasConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartImport action. */
-	static readonly START_IMPORT_CONDITION_KEYS: string[] = [
+	static readonly StartImportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: lex:associatedIntents (ArrayOfString) */
 	static readonly ASSOCIATED_INTENTS = "lex:associatedIntents";
 	/** Condition key: lex:associatedSlotTypes (ArrayOfString) */

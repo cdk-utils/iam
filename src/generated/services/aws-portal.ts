@@ -13,45 +13,45 @@ export class AWSPortalActions {
 	static readonly SERVICE_PREFIX = "aws-portal";
 
 	/** [Read] aws-portal:GetConsoleActionSetEnforced */
-	static readonly GET_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly actionGetConsoleActionSetEnforced =
 		"aws-portal:GetConsoleActionSetEnforced";
 	/** [Write] aws-portal:ModifyAccount */
-	static readonly MODIFY_ACCOUNT = "aws-portal:ModifyAccount";
+	static readonly ModifyAccount = "aws-portal:ModifyAccount";
 	/** [Write] aws-portal:ModifyBilling */
-	static readonly MODIFY_BILLING = "aws-portal:ModifyBilling";
+	static readonly ModifyBilling = "aws-portal:ModifyBilling";
 	/** [Write] aws-portal:ModifyPaymentMethods */
-	static readonly MODIFY_PAYMENT_METHODS = "aws-portal:ModifyPaymentMethods";
+	static readonly ModifyPaymentMethods = "aws-portal:ModifyPaymentMethods";
 	/** [Write] aws-portal:UpdateConsoleActionSetEnforced */
-	static readonly UPDATE_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly UpdateConsoleActionSetEnforced =
 		"aws-portal:UpdateConsoleActionSetEnforced";
 	/** [Read] aws-portal:ViewAccount */
-	static readonly VIEW_ACCOUNT = "aws-portal:ViewAccount";
+	static readonly ViewAccount = "aws-portal:ViewAccount";
 	/** [Read] aws-portal:ViewBilling */
-	static readonly VIEW_BILLING = "aws-portal:ViewBilling";
+	static readonly ViewBilling = "aws-portal:ViewBilling";
 	/** [Read] aws-portal:ViewPaymentMethods */
-	static readonly VIEW_PAYMENT_METHODS = "aws-portal:ViewPaymentMethods";
+	static readonly ViewPaymentMethods = "aws-portal:ViewPaymentMethods";
 	/** [Read] aws-portal:ViewUsage */
-	static readonly VIEW_USAGE = "aws-portal:ViewUsage";
+	static readonly ViewUsage = "aws-portal:ViewUsage";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AWSPortalActions.GET_CONSOLE_ACTION_SET_ENFORCED,
-		AWSPortalActions.VIEW_ACCOUNT,
-		AWSPortalActions.VIEW_BILLING,
-		AWSPortalActions.VIEW_PAYMENT_METHODS,
-		AWSPortalActions.VIEW_USAGE,
+	static readonly AllReadActions: string[] = [
+		AWSPortalActions.actionGetConsoleActionSetEnforced,
+		AWSPortalActions.ViewAccount,
+		AWSPortalActions.ViewBilling,
+		AWSPortalActions.ViewPaymentMethods,
+		AWSPortalActions.ViewUsage,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AWSPortalActions.MODIFY_ACCOUNT,
-		AWSPortalActions.MODIFY_BILLING,
-		AWSPortalActions.MODIFY_PAYMENT_METHODS,
-		AWSPortalActions.UPDATE_CONSOLE_ACTION_SET_ENFORCED,
+	static readonly AllWriteActions: string[] = [
+		AWSPortalActions.ModifyAccount,
+		AWSPortalActions.ModifyBilling,
+		AWSPortalActions.ModifyPaymentMethods,
+		AWSPortalActions.UpdateConsoleActionSetEnforced,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

@@ -13,68 +13,95 @@ export class LicenseManagerLinuxSubscriptionsActions {
 	static readonly SERVICE_PREFIX = "license-manager-linux-subscriptions";
 
 	/** [Write] license-manager-linux-subscriptions:DeregisterSubscriptionProvider */
-	static readonly DEREGISTER_SUBSCRIPTION_PROVIDER =
+	static readonly DeregisterSubscriptionProvider =
 		"license-manager-linux-subscriptions:DeregisterSubscriptionProvider";
 	/** [Read] license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider */
-	static readonly GET_REGISTERED_SUBSCRIPTION_PROVIDER =
+	static readonly actionGetRegisteredSubscriptionProvider =
 		"license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider";
 	/** [Read] license-manager-linux-subscriptions:GetServiceSettings */
-	static readonly GET_SERVICE_SETTINGS =
+	static readonly actionGetServiceSettings =
 		"license-manager-linux-subscriptions:GetServiceSettings";
 	/** [Read] license-manager-linux-subscriptions:ListLinuxSubscriptionInstances */
-	static readonly LIST_LINUX_SUBSCRIPTION_INSTANCES =
+	static readonly ListLinuxSubscriptionInstances =
 		"license-manager-linux-subscriptions:ListLinuxSubscriptionInstances";
 	/** [Read] license-manager-linux-subscriptions:ListLinuxSubscriptions */
-	static readonly LIST_LINUX_SUBSCRIPTIONS =
+	static readonly ListLinuxSubscriptions =
 		"license-manager-linux-subscriptions:ListLinuxSubscriptions";
 	/** [Read] license-manager-linux-subscriptions:ListRegisteredSubscriptionProviders */
-	static readonly LIST_REGISTERED_SUBSCRIPTION_PROVIDERS =
+	static readonly ListRegisteredSubscriptionProviders =
 		"license-manager-linux-subscriptions:ListRegisteredSubscriptionProviders";
 	/** [Read] license-manager-linux-subscriptions:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"license-manager-linux-subscriptions:ListTagsForResource";
 	/** [Write] license-manager-linux-subscriptions:RegisterSubscriptionProvider */
-	static readonly REGISTER_SUBSCRIPTION_PROVIDER =
+	static readonly RegisterSubscriptionProvider =
 		"license-manager-linux-subscriptions:RegisterSubscriptionProvider";
 	/** [Tagging] license-manager-linux-subscriptions:TagResource */
-	static readonly TAG_RESOURCE =
+	static readonly TagResource =
 		"license-manager-linux-subscriptions:TagResource";
 	/** [Tagging] license-manager-linux-subscriptions:UntagResource */
-	static readonly UNTAG_RESOURCE =
+	static readonly UntagResource =
 		"license-manager-linux-subscriptions:UntagResource";
 	/** [Write] license-manager-linux-subscriptions:UpdateServiceSettings */
-	static readonly UPDATE_SERVICE_SETTINGS =
+	static readonly UpdateServiceSettings =
 		"license-manager-linux-subscriptions:UpdateServiceSettings";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LicenseManagerLinuxSubscriptionsActions.GET_REGISTERED_SUBSCRIPTION_PROVIDER,
-		LicenseManagerLinuxSubscriptionsActions.GET_SERVICE_SETTINGS,
-		LicenseManagerLinuxSubscriptionsActions.LIST_LINUX_SUBSCRIPTION_INSTANCES,
-		LicenseManagerLinuxSubscriptionsActions.LIST_LINUX_SUBSCRIPTIONS,
-		LicenseManagerLinuxSubscriptionsActions.LIST_REGISTERED_SUBSCRIPTION_PROVIDERS,
-		LicenseManagerLinuxSubscriptionsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		LicenseManagerLinuxSubscriptionsActions.actionGetRegisteredSubscriptionProvider,
+		LicenseManagerLinuxSubscriptionsActions.actionGetServiceSettings,
+		LicenseManagerLinuxSubscriptionsActions.ListLinuxSubscriptionInstances,
+		LicenseManagerLinuxSubscriptionsActions.ListLinuxSubscriptions,
+		LicenseManagerLinuxSubscriptionsActions.ListRegisteredSubscriptionProviders,
+		LicenseManagerLinuxSubscriptionsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LicenseManagerLinuxSubscriptionsActions.DEREGISTER_SUBSCRIPTION_PROVIDER,
-		LicenseManagerLinuxSubscriptionsActions.REGISTER_SUBSCRIPTION_PROVIDER,
-		LicenseManagerLinuxSubscriptionsActions.UPDATE_SERVICE_SETTINGS,
+	static readonly AllWriteActions: string[] = [
+		LicenseManagerLinuxSubscriptionsActions.DeregisterSubscriptionProvider,
+		LicenseManagerLinuxSubscriptionsActions.RegisterSubscriptionProvider,
+		LicenseManagerLinuxSubscriptionsActions.UpdateServiceSettings,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LicenseManagerLinuxSubscriptionsActions.TAG_RESOURCE,
-		LicenseManagerLinuxSubscriptionsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LicenseManagerLinuxSubscriptionsActions.TagResource,
+		LicenseManagerLinuxSubscriptionsActions.UntagResource,
 	];
 }
 
-const SubscriptionProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager-linux-subscriptions:(?<region>[^:]*):(?<account>[^:]*):subscription-provider/(?<subscriptionProviderId>[^:/?]+)$",
-);
+/**
+ * Properties for building a subscription-provider ARN.
+ */
+export interface LicenseManagerLinuxSubscriptionsSubscriptionProviderArnProps {
+	/** The SubscriptionProviderId component of the ARN. */
+	readonly subscriptionProviderId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subscription-provider ARN.
+ */
+export interface LicenseManagerLinuxSubscriptionsSubscriptionProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubscriptionProviderId component. */
+	readonly subscriptionProviderId: string;
+}
+
+const SubscriptionProviderArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager-linux-subscriptions:(?<region>[^:]*):(?<account>[^:]*):subscription-provider\/(?<subscriptionProviderId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for license-manager-linux-subscriptions resources.
@@ -83,16 +110,9 @@ export class LicenseManagerLinuxSubscriptionsResources {
 	/**
 	 * Builds an ARN for the subscription-provider resource.
 	 */
-	static subscriptionProvider(props: {
-		/** The SubscriptionProviderId component of the ARN. */
-		readonly subscriptionProviderId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subscriptionProvider(
+		props: LicenseManagerLinuxSubscriptionsSubscriptionProviderArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:license-manager-linux-subscriptions:${props.region ?? "*"}:${props.account ?? "*"}:subscription-provider/${props.subscriptionProviderId}`;
 	}
 
@@ -107,12 +127,9 @@ export class LicenseManagerLinuxSubscriptionsResources {
 	 * Parses a subscription-provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubscriptionProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subscriptionProviderId: string;
-	} {
+	static parseSubscriptionProviderArn(
+		arn: string,
+	): LicenseManagerLinuxSubscriptionsSubscriptionProviderArnComponents {
 		const match = SubscriptionProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subscription-provider ARN: ${arn}`);
@@ -131,48 +148,48 @@ export class LicenseManagerLinuxSubscriptionsResources {
  */
 export class LicenseManagerLinuxSubscriptionsOperations {
 	/** IAM actions required for the DeregisterSubscriptionProvider API call. */
-	static readonly DEREGISTER_SUBSCRIPTION_PROVIDER: string[] = [
+	static readonly DeregisterSubscriptionProvider: string[] = [
 		"license-manager-linux-subscriptions:DeregisterSubscriptionProvider",
 	];
 	/** IAM actions required for the GetRegisteredSubscriptionProvider API call. */
-	static readonly GET_REGISTERED_SUBSCRIPTION_PROVIDER: string[] = [
+	static readonly opGetRegisteredSubscriptionProvider: string[] = [
 		"license-manager-linux-subscriptions:GetRegisteredSubscriptionProvider",
 	];
 	/** IAM actions required for the GetServiceSettings API call. */
-	static readonly GET_SERVICE_SETTINGS: string[] = [
+	static readonly opGetServiceSettings: string[] = [
 		"license-manager-linux-subscriptions:GetServiceSettings",
 	];
 	/** IAM actions required for the ListLinuxSubscriptionInstances API call. */
-	static readonly LIST_LINUX_SUBSCRIPTION_INSTANCES: string[] = [
+	static readonly ListLinuxSubscriptionInstances: string[] = [
 		"license-manager-linux-subscriptions:ListLinuxSubscriptionInstances",
 	];
 	/** IAM actions required for the ListLinuxSubscriptions API call. */
-	static readonly LIST_LINUX_SUBSCRIPTIONS: string[] = [
+	static readonly ListLinuxSubscriptions: string[] = [
 		"license-manager-linux-subscriptions:ListLinuxSubscriptions",
 	];
 	/** IAM actions required for the ListRegisteredSubscriptionProviders API call. */
-	static readonly LIST_REGISTERED_SUBSCRIPTION_PROVIDERS: string[] = [
+	static readonly ListRegisteredSubscriptionProviders: string[] = [
 		"license-manager-linux-subscriptions:ListRegisteredSubscriptionProviders",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"license-manager-linux-subscriptions:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterSubscriptionProvider API call. */
-	static readonly REGISTER_SUBSCRIPTION_PROVIDER: string[] = [
+	static readonly RegisterSubscriptionProvider: string[] = [
 		"license-manager-linux-subscriptions:RegisterSubscriptionProvider",
 		"license-manager-linux-subscriptions:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"license-manager-linux-subscriptions:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"license-manager-linux-subscriptions:UntagResource",
 	];
 	/** IAM actions required for the UpdateServiceSettings API call. */
-	static readonly UPDATE_SERVICE_SETTINGS: string[] = [
+	static readonly UpdateServiceSettings: string[] = [
 		"license-manager-linux-subscriptions:UpdateServiceSettings",
 	];
 }
@@ -182,24 +199,24 @@ export class LicenseManagerLinuxSubscriptionsOperations {
  */
 export class LicenseManagerLinuxSubscriptionsConditions {
 	/** Condition keys applicable to the RegisterSubscriptionProvider action. */
-	static readonly REGISTER_SUBSCRIPTION_PROVIDER_CONDITION_KEYS: string[] = [
+	static readonly RegisterSubscriptionProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

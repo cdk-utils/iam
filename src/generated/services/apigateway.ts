@@ -13,67 +13,66 @@ export class ApiGatewayActions {
 	static readonly SERVICE_PREFIX = "apigateway";
 
 	/** [PermissionManagement] apigateway:AddCertificateToDomain */
-	static readonly ADD_CERTIFICATE_TO_DOMAIN =
-		"apigateway:AddCertificateToDomain";
+	static readonly AddCertificateToDomain = "apigateway:AddCertificateToDomain";
 	/** [PermissionManagement] apigateway:CreateAccessAssociation */
-	static readonly CREATE_ACCESS_ASSOCIATION =
+	static readonly CreateAccessAssociation =
 		"apigateway:CreateAccessAssociation";
 	/** [Write] apigateway:CreatePortal */
-	static readonly CREATE_PORTAL = "apigateway:CreatePortal";
+	static readonly CreatePortal = "apigateway:CreatePortal";
 	/** [Write] apigateway:CreatePortalProduct */
-	static readonly CREATE_PORTAL_PRODUCT = "apigateway:CreatePortalProduct";
+	static readonly CreatePortalProduct = "apigateway:CreatePortalProduct";
 	/** [Write] apigateway:CreateProductPage */
-	static readonly CREATE_PRODUCT_PAGE = "apigateway:CreateProductPage";
+	static readonly CreateProductPage = "apigateway:CreateProductPage";
 	/** [Write] apigateway:CreateProductRestEndpointPage */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE =
+	static readonly CreateProductRestEndpointPage =
 		"apigateway:CreateProductRestEndpointPage";
 	/** [Write] apigateway:CreateRoutingRule */
-	static readonly CREATE_ROUTING_RULE = "apigateway:CreateRoutingRule";
+	static readonly CreateRoutingRule = "apigateway:CreateRoutingRule";
 	/** [Write] apigateway:DELETE */
 	static readonly DELETE = "apigateway:DELETE";
 	/** [Write] apigateway:DeletePortal */
-	static readonly DELETE_PORTAL = "apigateway:DeletePortal";
+	static readonly DeletePortal = "apigateway:DeletePortal";
 	/** [Write] apigateway:DeletePortalProduct */
-	static readonly DELETE_PORTAL_PRODUCT = "apigateway:DeletePortalProduct";
+	static readonly DeletePortalProduct = "apigateway:DeletePortalProduct";
 	/** [PermissionManagement] apigateway:DeletePortalProductSharingPolicy */
-	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY =
+	static readonly DeletePortalProductSharingPolicy =
 		"apigateway:DeletePortalProductSharingPolicy";
 	/** [Write] apigateway:DeleteProductPage */
-	static readonly DELETE_PRODUCT_PAGE = "apigateway:DeleteProductPage";
+	static readonly DeleteProductPage = "apigateway:DeleteProductPage";
 	/** [Write] apigateway:DeleteProductRestEndpointPage */
-	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE =
+	static readonly DeleteProductRestEndpointPage =
 		"apigateway:DeleteProductRestEndpointPage";
 	/** [Write] apigateway:DeleteRoutingRule */
-	static readonly DELETE_ROUTING_RULE = "apigateway:DeleteRoutingRule";
+	static readonly DeleteRoutingRule = "apigateway:DeleteRoutingRule";
 	/** [Write] apigateway:DisablePortal */
-	static readonly DISABLE_PORTAL = "apigateway:DisablePortal";
+	static readonly DisablePortal = "apigateway:DisablePortal";
 	/** [Read] apigateway:GET */
 	static readonly GET = "apigateway:GET";
 	/** [Read] apigateway:GetPortal */
-	static readonly GET_PORTAL = "apigateway:GetPortal";
+	static readonly actionGetPortal = "apigateway:GetPortal";
 	/** [Read] apigateway:GetPortalProduct */
-	static readonly GET_PORTAL_PRODUCT = "apigateway:GetPortalProduct";
+	static readonly actionGetPortalProduct = "apigateway:GetPortalProduct";
 	/** [Read] apigateway:GetPortalProductSharingPolicy */
-	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY =
+	static readonly actionGetPortalProductSharingPolicy =
 		"apigateway:GetPortalProductSharingPolicy";
 	/** [Read] apigateway:GetProductPage */
-	static readonly GET_PRODUCT_PAGE = "apigateway:GetProductPage";
+	static readonly actionGetProductPage = "apigateway:GetProductPage";
 	/** [Read] apigateway:GetProductRestEndpointPage */
-	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE =
+	static readonly actionGetProductRestEndpointPage =
 		"apigateway:GetProductRestEndpointPage";
 	/** [Read] apigateway:GetRoutingRule */
-	static readonly GET_ROUTING_RULE = "apigateway:GetRoutingRule";
+	static readonly actionGetRoutingRule = "apigateway:GetRoutingRule";
 	/** [List] apigateway:ListPortalProducts */
-	static readonly LIST_PORTAL_PRODUCTS = "apigateway:ListPortalProducts";
+	static readonly ListPortalProducts = "apigateway:ListPortalProducts";
 	/** [List] apigateway:ListPortals */
-	static readonly LIST_PORTALS = "apigateway:ListPortals";
+	static readonly ListPortals = "apigateway:ListPortals";
 	/** [List] apigateway:ListProductPages */
-	static readonly LIST_PRODUCT_PAGES = "apigateway:ListProductPages";
+	static readonly ListProductPages = "apigateway:ListProductPages";
 	/** [List] apigateway:ListProductRestEndpointPages */
-	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES =
+	static readonly ListProductRestEndpointPages =
 		"apigateway:ListProductRestEndpointPages";
 	/** [List] apigateway:ListRoutingRules */
-	static readonly LIST_ROUTING_RULES = "apigateway:ListRoutingRules";
+	static readonly ListRoutingRules = "apigateway:ListRoutingRules";
 	/** [Write] apigateway:PATCH */
 	static readonly PATCH = "apigateway:PATCH";
 	/** [Write] apigateway:POST */
@@ -81,337 +80,2487 @@ export class ApiGatewayActions {
 	/** [Write] apigateway:PUT */
 	static readonly PUT = "apigateway:PUT";
 	/** [Write] apigateway:PreviewPortal */
-	static readonly PREVIEW_PORTAL = "apigateway:PreviewPortal";
+	static readonly PreviewPortal = "apigateway:PreviewPortal";
 	/** [Write] apigateway:PublishPortal */
-	static readonly PUBLISH_PORTAL = "apigateway:PublishPortal";
+	static readonly PublishPortal = "apigateway:PublishPortal";
 	/** [PermissionManagement] apigateway:PutPortalProductSharingPolicy */
-	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY =
+	static readonly PutPortalProductSharingPolicy =
 		"apigateway:PutPortalProductSharingPolicy";
 	/** [PermissionManagement] apigateway:RejectAccessAssociation */
-	static readonly REJECT_ACCESS_ASSOCIATION =
+	static readonly RejectAccessAssociation =
 		"apigateway:RejectAccessAssociation";
 	/** [PermissionManagement] apigateway:RemoveCertificateFromDomain */
-	static readonly REMOVE_CERTIFICATE_FROM_DOMAIN =
+	static readonly RemoveCertificateFromDomain =
 		"apigateway:RemoveCertificateFromDomain";
 	/** [PermissionManagement] apigateway:SetWebACL */
-	static readonly SET_WEB_ACL = "apigateway:SetWebACL";
+	static readonly actionSetWebACL = "apigateway:SetWebACL";
 	/** [PermissionManagement] apigateway:UpdateDomainNameManagementPolicy */
-	static readonly UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY =
+	static readonly UpdateDomainNameManagementPolicy =
 		"apigateway:UpdateDomainNameManagementPolicy";
 	/** [PermissionManagement] apigateway:UpdateDomainNamePolicy */
-	static readonly UPDATE_DOMAIN_NAME_POLICY =
-		"apigateway:UpdateDomainNamePolicy";
+	static readonly UpdateDomainNamePolicy = "apigateway:UpdateDomainNamePolicy";
 	/** [Write] apigateway:UpdatePortal */
-	static readonly UPDATE_PORTAL = "apigateway:UpdatePortal";
+	static readonly UpdatePortal = "apigateway:UpdatePortal";
 	/** [Write] apigateway:UpdatePortalProduct */
-	static readonly UPDATE_PORTAL_PRODUCT = "apigateway:UpdatePortalProduct";
+	static readonly UpdatePortalProduct = "apigateway:UpdatePortalProduct";
 	/** [Write] apigateway:UpdateProductPage */
-	static readonly UPDATE_PRODUCT_PAGE = "apigateway:UpdateProductPage";
+	static readonly UpdateProductPage = "apigateway:UpdateProductPage";
 	/** [Write] apigateway:UpdateProductRestEndpointPage */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE =
+	static readonly UpdateProductRestEndpointPage =
 		"apigateway:UpdateProductRestEndpointPage";
 	/** [PermissionManagement] apigateway:UpdateRestApiPolicy */
-	static readonly UPDATE_REST_API_POLICY = "apigateway:UpdateRestApiPolicy";
+	static readonly UpdateRestApiPolicy = "apigateway:UpdateRestApiPolicy";
 	/** [Write] apigateway:UpdateRoutingRule */
-	static readonly UPDATE_ROUTING_RULE = "apigateway:UpdateRoutingRule";
+	static readonly UpdateRoutingRule = "apigateway:UpdateRoutingRule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
+	static readonly AllReadActions: string[] = [
 		ApiGatewayActions.GET,
-		ApiGatewayActions.GET_PORTAL,
-		ApiGatewayActions.GET_PORTAL_PRODUCT,
-		ApiGatewayActions.GET_PORTAL_PRODUCT_SHARING_POLICY,
-		ApiGatewayActions.GET_PRODUCT_PAGE,
-		ApiGatewayActions.GET_PRODUCT_REST_ENDPOINT_PAGE,
-		ApiGatewayActions.GET_ROUTING_RULE,
+		ApiGatewayActions.actionGetPortal,
+		ApiGatewayActions.actionGetPortalProduct,
+		ApiGatewayActions.actionGetPortalProductSharingPolicy,
+		ApiGatewayActions.actionGetProductPage,
+		ApiGatewayActions.actionGetProductRestEndpointPage,
+		ApiGatewayActions.actionGetRoutingRule,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApiGatewayActions.CREATE_PORTAL,
-		ApiGatewayActions.CREATE_PORTAL_PRODUCT,
-		ApiGatewayActions.CREATE_PRODUCT_PAGE,
-		ApiGatewayActions.CREATE_PRODUCT_REST_ENDPOINT_PAGE,
-		ApiGatewayActions.CREATE_ROUTING_RULE,
+	static readonly AllWriteActions: string[] = [
+		ApiGatewayActions.CreatePortal,
+		ApiGatewayActions.CreatePortalProduct,
+		ApiGatewayActions.CreateProductPage,
+		ApiGatewayActions.CreateProductRestEndpointPage,
+		ApiGatewayActions.CreateRoutingRule,
 		ApiGatewayActions.DELETE,
-		ApiGatewayActions.DELETE_PORTAL,
-		ApiGatewayActions.DELETE_PORTAL_PRODUCT,
-		ApiGatewayActions.DELETE_PRODUCT_PAGE,
-		ApiGatewayActions.DELETE_PRODUCT_REST_ENDPOINT_PAGE,
-		ApiGatewayActions.DELETE_ROUTING_RULE,
-		ApiGatewayActions.DISABLE_PORTAL,
+		ApiGatewayActions.DeletePortal,
+		ApiGatewayActions.DeletePortalProduct,
+		ApiGatewayActions.DeleteProductPage,
+		ApiGatewayActions.DeleteProductRestEndpointPage,
+		ApiGatewayActions.DeleteRoutingRule,
+		ApiGatewayActions.DisablePortal,
 		ApiGatewayActions.PATCH,
 		ApiGatewayActions.POST,
 		ApiGatewayActions.PUT,
-		ApiGatewayActions.PREVIEW_PORTAL,
-		ApiGatewayActions.PUBLISH_PORTAL,
-		ApiGatewayActions.UPDATE_PORTAL,
-		ApiGatewayActions.UPDATE_PORTAL_PRODUCT,
-		ApiGatewayActions.UPDATE_PRODUCT_PAGE,
-		ApiGatewayActions.UPDATE_PRODUCT_REST_ENDPOINT_PAGE,
-		ApiGatewayActions.UPDATE_ROUTING_RULE,
+		ApiGatewayActions.PreviewPortal,
+		ApiGatewayActions.PublishPortal,
+		ApiGatewayActions.UpdatePortal,
+		ApiGatewayActions.UpdatePortalProduct,
+		ApiGatewayActions.UpdateProductPage,
+		ApiGatewayActions.UpdateProductRestEndpointPage,
+		ApiGatewayActions.UpdateRoutingRule,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ApiGatewayActions.LIST_PORTAL_PRODUCTS,
-		ApiGatewayActions.LIST_PORTALS,
-		ApiGatewayActions.LIST_PRODUCT_PAGES,
-		ApiGatewayActions.LIST_PRODUCT_REST_ENDPOINT_PAGES,
-		ApiGatewayActions.LIST_ROUTING_RULES,
+	static readonly AllListActions: string[] = [
+		ApiGatewayActions.ListPortalProducts,
+		ApiGatewayActions.ListPortals,
+		ApiGatewayActions.ListProductPages,
+		ApiGatewayActions.ListProductRestEndpointPages,
+		ApiGatewayActions.ListRoutingRules,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		ApiGatewayActions.ADD_CERTIFICATE_TO_DOMAIN,
-		ApiGatewayActions.CREATE_ACCESS_ASSOCIATION,
-		ApiGatewayActions.DELETE_PORTAL_PRODUCT_SHARING_POLICY,
-		ApiGatewayActions.PUT_PORTAL_PRODUCT_SHARING_POLICY,
-		ApiGatewayActions.REJECT_ACCESS_ASSOCIATION,
-		ApiGatewayActions.REMOVE_CERTIFICATE_FROM_DOMAIN,
-		ApiGatewayActions.SET_WEB_ACL,
-		ApiGatewayActions.UPDATE_DOMAIN_NAME_MANAGEMENT_POLICY,
-		ApiGatewayActions.UPDATE_DOMAIN_NAME_POLICY,
-		ApiGatewayActions.UPDATE_REST_API_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		ApiGatewayActions.AddCertificateToDomain,
+		ApiGatewayActions.CreateAccessAssociation,
+		ApiGatewayActions.DeletePortalProductSharingPolicy,
+		ApiGatewayActions.PutPortalProductSharingPolicy,
+		ApiGatewayActions.RejectAccessAssociation,
+		ApiGatewayActions.RemoveCertificateFromDomain,
+		ApiGatewayActions.actionSetWebACL,
+		ApiGatewayActions.UpdateDomainNameManagementPolicy,
+		ApiGatewayActions.UpdateDomainNamePolicy,
+		ApiGatewayActions.UpdateRestApiPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const AccessLogSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/accesslogsettings$",
-);
-const AccountArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/account$",
-);
-const APIArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)$",
-);
-const APIKeyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys/(?<apiKeyId>[^:/?]+)$",
-);
-const APIKeysArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apikeys$",
-);
-const APIMappingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings/(?<apiMappingId>[^:/?]+)$",
-);
-const APIMappingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/apimappings$",
-);
-const ApisArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis$",
-);
-const AuthorizerArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/authorizers/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/authorizers/(?:[^:/?]+))$",
-);
-const AuthorizerParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers/(?<authorizerId>[^:/?]+)$",
-);
-const AuthorizersArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/authorizers|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/authorizers)$",
-);
-const AuthorizersParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/authorizers$",
-);
-const AuthorizersCacheArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/cache/authorizers$",
-);
-const BasePathMappingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$",
-);
-const BasePathMappingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)/basepathmappings$",
-);
-const ClientCertificateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates/(?<clientCertificateId>[^:/?]+)$",
-);
-const ClientCertificatesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/clientcertificates$",
-);
-const CorsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/cors$",
-);
-const DeploymentArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/deployments/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/deployments/(?:[^:/?]+))$",
-);
-const DeploymentParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments/(?<deploymentId>[^:/?]+)$",
-);
-const DeploymentsArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/deployments|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/deployments)$",
-);
-const DeploymentsParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/deployments$",
-);
-const DocumentationPartArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts/(?<documentationPartId>[^:/?]+)$",
-);
-const DocumentationPartsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/parts$",
-);
-const DocumentationVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions/(?<documentationVersionId>[^:/?]+)$",
-);
-const DocumentationVersionsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/documentation/versions$",
-);
-const DomainNameArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)$",
-);
-const DomainNameAccessAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations/domainname/(?<domainName>[^:/?]+)/(?<sourceType>[^:/?]+)/(?<sourceId>[^:/?]+)$",
-);
-const DomainNameAccessAssociationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnameaccessassociations$",
-);
-const DomainNamesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames$",
-);
-const ExportedAPIArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/exports/(?<specification>[^:/?]+)$",
-);
-const GatewayResponseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses/(?<responseType>[^:/?]+)$",
-);
-const GatewayResponsesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/gatewayresponses$",
-);
-const IntegrationArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/integrations/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/resources/(?:[^:/?]+)/methods/(?:[^:/?]+)/integration)$",
-);
-const IntegrationParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)$",
-);
-const IntegrationResponseArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/integrations/(?:[^:/?]+)/integrationresponses/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/resources/(?:[^:/?]+)/methods/(?:[^:/?]+)/integration/responses/(?:[^:/?]+))$",
-);
-const IntegrationResponseParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses/(?<integrationResponseId>[^:/?]+)$",
-);
-const IntegrationResponsesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations/(?<integrationId>[^:/?]+)/integrationresponses$",
-);
-const IntegrationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/integrations$",
-);
-const MethodArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)$",
-);
-const MethodResponseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)/methods/(?<httpMethodType>[^:/?]+)/responses/(?<statusCode>[^:/?]+)$",
-);
-const ModelArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/models/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/models/(?:[^:/?]+))$",
-);
-const ModelParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)$",
-);
-const ModelTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models/(?<modelId>[^:/?]+)/template$",
-);
-const ModelsArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/models|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/models)$",
-);
-const ModelsParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/models$",
-);
-const PortalArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portals/(?<portalId>[^:/?]+)$",
-);
-const PortalProductArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)$",
-);
-const PrivateBasePathMappingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings/(?<basePath>[^:/?]+)$",
-);
-const PrivateBasePathMappingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)/basepathmappings$",
-);
-const PrivateDomainNameArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)\\+(?<domainIdentifier>[^:/?]+)$",
-);
-const ProductPageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productpages/(?<productPageId>[^:/?]+)$",
-);
-const ProductRestEndpointPageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/portalproducts/(?<portalProductId>[^:/?]+)/productrestendpointpages/(?<productRestEndpointPageId>[^:/?]+)$",
-);
-const RequestValidatorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators/(?<requestValidatorId>[^:/?]+)$",
-);
-const RequestValidatorsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/requestvalidators$",
-);
-const ResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources/(?<resourceId>[^:/?]+)$",
-);
-const ResourcesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/resources$",
-);
-const RestAPIArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)$",
-);
-const RestApisArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis$",
-);
-const RouteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)$",
-);
-const RouteRequestParameterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/requestparameters/(?<requestParameterKey>[^:/?]+)$",
-);
-const RouteResponseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses/(?<routeResponseId>[^:/?]+)$",
-);
-const RouteResponsesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes/(?<routeId>[^:/?]+)/routeresponses$",
-);
-const RouteSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/routesettings/(?<routeKey>[^:/?]+)$",
-);
-const RoutesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/routes$",
-);
-const RoutingRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):/domainnames/(?<domainName>[^:/?]+)/routingrules/(?<routingRuleId>[^:/?]+)$",
-);
-const SDKArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/(?<restAPIId>[^:/?]+)/stages/(?<stageName>[^:/?]+)/sdks/(?<sdkType>[^:/?]+)$",
-);
-const StageArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/stages/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/stages/(?:[^:/?]+))$",
-);
-const StageParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages/(?<stageName>[^:/?]+)$",
-);
-const StagesArnRegex = new RegExp(
-	"^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::/apis/(?:[^:/?]+)/stages|arn:(?:[^:]+):apigateway:(?:[^:]*)::/restapis/(?:[^:/?]+)/stages)$",
-);
-const StagesParseRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/apis/(?<apiId>[^:/?]+)/stages$",
-);
-const TagsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/tags/(?<urlEncodedResourceARN>[^:/?]+)$",
-);
-const TemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/restapis/models/(?<modelName>[^:/?]+)/template$",
-);
-const UsagePlanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)$",
-);
-const UsagePlanKeyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys/(?<id>[^:/?]+)$",
-);
-const UsagePlanKeysArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans/(?<usagePlanId>[^:/?]+)/keys$",
-);
-const UsagePlansArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/usageplans$",
-);
-const VPCLinkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks/(?<vpcLinkId>[^:/?]+)$",
-);
-const VPCLinksArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::/vpclinks$",
-);
+/**
+ * Properties for building a AccessLogSettings ARN.
+ */
+export interface ApiGatewayAccessLogSettingsArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AccessLogSettings ARN.
+ */
+export interface ApiGatewayAccessLogSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The StageName component. */
+	readonly stageName: string;
+}
+
+/**
+ * Properties for building a Account ARN.
+ */
+export interface ApiGatewayAccountArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Account ARN.
+ */
+export interface ApiGatewayAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a Api ARN.
+ */
+export interface ApiGatewayAPIArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Api ARN.
+ */
+export interface ApiGatewayAPIArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a ApiKey ARN.
+ */
+export interface ApiGatewayAPIKeyArnProps {
+	/** The ApiKeyId component of the ARN. */
+	readonly apiKeyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApiKey ARN.
+ */
+export interface ApiGatewayAPIKeyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiKeyId component. */
+	readonly apiKeyId: string;
+}
+
+/**
+ * Properties for building a ApiKeys ARN.
+ */
+export interface ApiGatewayAPIKeysArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApiKeys ARN.
+ */
+export interface ApiGatewayAPIKeysArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a ApiMapping ARN.
+ */
+export interface ApiGatewayAPIMappingArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The ApiMappingId component of the ARN. */
+	readonly apiMappingId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApiMapping ARN.
+ */
+export interface ApiGatewayAPIMappingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The ApiMappingId component. */
+	readonly apiMappingId: string;
+}
+
+/**
+ * Properties for building a ApiMappings ARN.
+ */
+export interface ApiGatewayAPIMappingsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApiMappings ARN.
+ */
+export interface ApiGatewayAPIMappingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a Apis ARN.
+ */
+export interface ApiGatewayApisArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Apis ARN.
+ */
+export interface ApiGatewayApisArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a AuthorizerVariant1 ARN.
+ */
+export interface ApiGatewayAuthorizerVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The AuthorizerId component of the ARN. */
+	readonly authorizerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a AuthorizerVariant2 ARN.
+ */
+export interface ApiGatewayAuthorizerVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The AuthorizerId component of the ARN. */
+	readonly authorizerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Authorizer ARN.
+ */
+export interface ApiGatewayAuthorizerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The AuthorizerId component. */
+	readonly authorizerId: string;
+}
+
+/**
+ * Properties for building a AuthorizersVariant1 ARN.
+ */
+export interface ApiGatewayAuthorizersVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a AuthorizersVariant2 ARN.
+ */
+export interface ApiGatewayAuthorizersVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Authorizers ARN.
+ */
+export interface ApiGatewayAuthorizersArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a AuthorizersCache ARN.
+ */
+export interface ApiGatewayAuthorizersCacheArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AuthorizersCache ARN.
+ */
+export interface ApiGatewayAuthorizersCacheArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The StageName component. */
+	readonly stageName: string;
+}
+
+/**
+ * Properties for building a BasePathMapping ARN.
+ */
+export interface ApiGatewayBasePathMappingArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The BasePath component of the ARN. */
+	readonly basePath: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BasePathMapping ARN.
+ */
+export interface ApiGatewayBasePathMappingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The BasePath component. */
+	readonly basePath: string;
+}
+
+/**
+ * Properties for building a BasePathMappings ARN.
+ */
+export interface ApiGatewayBasePathMappingsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BasePathMappings ARN.
+ */
+export interface ApiGatewayBasePathMappingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a ClientCertificate ARN.
+ */
+export interface ApiGatewayClientCertificateArnProps {
+	/** The ClientCertificateId component of the ARN. */
+	readonly clientCertificateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ClientCertificate ARN.
+ */
+export interface ApiGatewayClientCertificateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClientCertificateId component. */
+	readonly clientCertificateId: string;
+}
+
+/**
+ * Properties for building a ClientCertificates ARN.
+ */
+export interface ApiGatewayClientCertificatesArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ClientCertificates ARN.
+ */
+export interface ApiGatewayClientCertificatesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a Cors ARN.
+ */
+export interface ApiGatewayCorsArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Cors ARN.
+ */
+export interface ApiGatewayCorsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a DeploymentVariant1 ARN.
+ */
+export interface ApiGatewayDeploymentVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The DeploymentId component of the ARN. */
+	readonly deploymentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a DeploymentVariant2 ARN.
+ */
+export interface ApiGatewayDeploymentVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The DeploymentId component of the ARN. */
+	readonly deploymentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Deployment ARN.
+ */
+export interface ApiGatewayDeploymentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The DeploymentId component. */
+	readonly deploymentId: string;
+}
+
+/**
+ * Properties for building a DeploymentsVariant1 ARN.
+ */
+export interface ApiGatewayDeploymentsVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a DeploymentsVariant2 ARN.
+ */
+export interface ApiGatewayDeploymentsVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Deployments ARN.
+ */
+export interface ApiGatewayDeploymentsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a DocumentationPart ARN.
+ */
+export interface ApiGatewayDocumentationPartArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The DocumentationPartId component of the ARN. */
+	readonly documentationPartId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DocumentationPart ARN.
+ */
+export interface ApiGatewayDocumentationPartArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The DocumentationPartId component. */
+	readonly documentationPartId: string;
+}
+
+/**
+ * Properties for building a DocumentationParts ARN.
+ */
+export interface ApiGatewayDocumentationPartsArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DocumentationParts ARN.
+ */
+export interface ApiGatewayDocumentationPartsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a DocumentationVersion ARN.
+ */
+export interface ApiGatewayDocumentationVersionArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The DocumentationVersionId component of the ARN. */
+	readonly documentationVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DocumentationVersion ARN.
+ */
+export interface ApiGatewayDocumentationVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The DocumentationVersionId component. */
+	readonly documentationVersionId: string;
+}
+
+/**
+ * Properties for building a DocumentationVersions ARN.
+ */
+export interface ApiGatewayDocumentationVersionsArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DocumentationVersions ARN.
+ */
+export interface ApiGatewayDocumentationVersionsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a DomainName ARN.
+ */
+export interface ApiGatewayDomainNameArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DomainName ARN.
+ */
+export interface ApiGatewayDomainNameArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a DomainNameAccessAssociation ARN.
+ */
+export interface ApiGatewayDomainNameAccessAssociationArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The SourceType component of the ARN. */
+	readonly sourceType: string;
+	/** The SourceId component of the ARN. */
+	readonly sourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DomainNameAccessAssociation ARN.
+ */
+export interface ApiGatewayDomainNameAccessAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The SourceType component. */
+	readonly sourceType: string;
+	/** The SourceId component. */
+	readonly sourceId: string;
+}
+
+/**
+ * Properties for building a DomainNameAccessAssociations ARN.
+ */
+export interface ApiGatewayDomainNameAccessAssociationsArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DomainNameAccessAssociations ARN.
+ */
+export interface ApiGatewayDomainNameAccessAssociationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a DomainNames ARN.
+ */
+export interface ApiGatewayDomainNamesArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DomainNames ARN.
+ */
+export interface ApiGatewayDomainNamesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a ExportedAPI ARN.
+ */
+export interface ApiGatewayExportedAPIArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The Specification component of the ARN. */
+	readonly specification: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ExportedAPI ARN.
+ */
+export interface ApiGatewayExportedAPIArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The Specification component. */
+	readonly specification: string;
+}
+
+/**
+ * Properties for building a GatewayResponse ARN.
+ */
+export interface ApiGatewayGatewayResponseArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResponseType component of the ARN. */
+	readonly responseType: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a GatewayResponse ARN.
+ */
+export interface ApiGatewayGatewayResponseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The ResponseType component. */
+	readonly responseType: string;
+}
+
+/**
+ * Properties for building a GatewayResponses ARN.
+ */
+export interface ApiGatewayGatewayResponsesArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a GatewayResponses ARN.
+ */
+export interface ApiGatewayGatewayResponsesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a IntegrationVariant1 ARN.
+ */
+export interface ApiGatewayIntegrationVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a IntegrationVariant2 ARN.
+ */
+export interface ApiGatewayIntegrationVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The HttpMethodType component of the ARN. */
+	readonly httpMethodType: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Integration ARN.
+ */
+export interface ApiGatewayIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a IntegrationResponseVariant1 ARN.
+ */
+export interface ApiGatewayIntegrationResponseVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** The IntegrationResponseId component of the ARN. */
+	readonly integrationResponseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a IntegrationResponseVariant2 ARN.
+ */
+export interface ApiGatewayIntegrationResponseVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The HttpMethodType component of the ARN. */
+	readonly httpMethodType: string;
+	/** The StatusCode component of the ARN. */
+	readonly statusCode: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IntegrationResponse ARN.
+ */
+export interface ApiGatewayIntegrationResponseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+	/** The IntegrationResponseId component. */
+	readonly integrationResponseId: string;
+}
+
+/**
+ * Properties for building a IntegrationResponses ARN.
+ */
+export interface ApiGatewayIntegrationResponsesArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a IntegrationResponses ARN.
+ */
+export interface ApiGatewayIntegrationResponsesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a Integrations ARN.
+ */
+export interface ApiGatewayIntegrationsArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Integrations ARN.
+ */
+export interface ApiGatewayIntegrationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a Method ARN.
+ */
+export interface ApiGatewayMethodArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The HttpMethodType component of the ARN. */
+	readonly httpMethodType: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Method ARN.
+ */
+export interface ApiGatewayMethodArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+	/** The HttpMethodType component. */
+	readonly httpMethodType: string;
+}
+
+/**
+ * Properties for building a MethodResponse ARN.
+ */
+export interface ApiGatewayMethodResponseArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The HttpMethodType component of the ARN. */
+	readonly httpMethodType: string;
+	/** The StatusCode component of the ARN. */
+	readonly statusCode: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MethodResponse ARN.
+ */
+export interface ApiGatewayMethodResponseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+	/** The HttpMethodType component. */
+	readonly httpMethodType: string;
+	/** The StatusCode component. */
+	readonly statusCode: string;
+}
+
+/**
+ * Properties for building a ModelVariant1 ARN.
+ */
+export interface ApiGatewayModelVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The ModelId component of the ARN. */
+	readonly modelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a ModelVariant2 ARN.
+ */
+export interface ApiGatewayModelVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Model ARN.
+ */
+export interface ApiGatewayModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The ModelId component. */
+	readonly modelId: string;
+}
+
+/**
+ * Properties for building a ModelTemplate ARN.
+ */
+export interface ApiGatewayModelTemplateArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The ModelId component of the ARN. */
+	readonly modelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ModelTemplate ARN.
+ */
+export interface ApiGatewayModelTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The ModelId component. */
+	readonly modelId: string;
+}
+
+/**
+ * Properties for building a ModelsVariant1 ARN.
+ */
+export interface ApiGatewayModelsVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a ModelsVariant2 ARN.
+ */
+export interface ApiGatewayModelsVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Models ARN.
+ */
+export interface ApiGatewayModelsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a Portal ARN.
+ */
+export interface ApiGatewayPortalArnProps {
+	/** The PortalId component of the ARN. */
+	readonly portalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Portal ARN.
+ */
+export interface ApiGatewayPortalArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalId component. */
+	readonly portalId: string;
+}
+
+/**
+ * Properties for building a PortalProduct ARN.
+ */
+export interface ApiGatewayPortalProductArnProps {
+	/** The PortalProductId component of the ARN. */
+	readonly portalProductId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PortalProduct ARN.
+ */
+export interface ApiGatewayPortalProductArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalProductId component. */
+	readonly portalProductId: string;
+}
+
+/**
+ * Properties for building a PrivateBasePathMapping ARN.
+ */
+export interface ApiGatewayPrivateBasePathMappingArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The DomainIdentifier component of the ARN. */
+	readonly domainIdentifier: string;
+	/** The BasePath component of the ARN. */
+	readonly basePath: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PrivateBasePathMapping ARN.
+ */
+export interface ApiGatewayPrivateBasePathMappingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The DomainIdentifier component. */
+	readonly domainIdentifier: string;
+	/** The BasePath component. */
+	readonly basePath: string;
+}
+
+/**
+ * Properties for building a PrivateBasePathMappings ARN.
+ */
+export interface ApiGatewayPrivateBasePathMappingsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The DomainIdentifier component of the ARN. */
+	readonly domainIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PrivateBasePathMappings ARN.
+ */
+export interface ApiGatewayPrivateBasePathMappingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The DomainIdentifier component. */
+	readonly domainIdentifier: string;
+}
+
+/**
+ * Properties for building a PrivateDomainName ARN.
+ */
+export interface ApiGatewayPrivateDomainNameArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The DomainIdentifier component of the ARN. */
+	readonly domainIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PrivateDomainName ARN.
+ */
+export interface ApiGatewayPrivateDomainNameArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The DomainIdentifier component. */
+	readonly domainIdentifier: string;
+}
+
+/**
+ * Properties for building a ProductPage ARN.
+ */
+export interface ApiGatewayProductPageArnProps {
+	/** The PortalProductId component of the ARN. */
+	readonly portalProductId: string;
+	/** The ProductPageId component of the ARN. */
+	readonly productPageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ProductPage ARN.
+ */
+export interface ApiGatewayProductPageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalProductId component. */
+	readonly portalProductId: string;
+	/** The ProductPageId component. */
+	readonly productPageId: string;
+}
+
+/**
+ * Properties for building a ProductRestEndpointPage ARN.
+ */
+export interface ApiGatewayProductRestEndpointPageArnProps {
+	/** The PortalProductId component of the ARN. */
+	readonly portalProductId: string;
+	/** The ProductRestEndpointPageId component of the ARN. */
+	readonly productRestEndpointPageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ProductRestEndpointPage ARN.
+ */
+export interface ApiGatewayProductRestEndpointPageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalProductId component. */
+	readonly portalProductId: string;
+	/** The ProductRestEndpointPageId component. */
+	readonly productRestEndpointPageId: string;
+}
+
+/**
+ * Properties for building a RequestValidator ARN.
+ */
+export interface ApiGatewayRequestValidatorArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The RequestValidatorId component of the ARN. */
+	readonly requestValidatorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RequestValidator ARN.
+ */
+export interface ApiGatewayRequestValidatorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The RequestValidatorId component. */
+	readonly requestValidatorId: string;
+}
+
+/**
+ * Properties for building a RequestValidators ARN.
+ */
+export interface ApiGatewayRequestValidatorsArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RequestValidators ARN.
+ */
+export interface ApiGatewayRequestValidatorsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a Resource ARN.
+ */
+export interface ApiGatewayResourceArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Resource ARN.
+ */
+export interface ApiGatewayResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Resources ARN.
+ */
+export interface ApiGatewayResourcesArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Resources ARN.
+ */
+export interface ApiGatewayResourcesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a RestApi ARN.
+ */
+export interface ApiGatewayRestAPIArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RestApi ARN.
+ */
+export interface ApiGatewayRestAPIArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+}
+
+/**
+ * Properties for building a RestApis ARN.
+ */
+export interface ApiGatewayRestApisArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RestApis ARN.
+ */
+export interface ApiGatewayRestApisArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a Route ARN.
+ */
+export interface ApiGatewayRouteArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The RouteId component of the ARN. */
+	readonly routeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Route ARN.
+ */
+export interface ApiGatewayRouteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The RouteId component. */
+	readonly routeId: string;
+}
+
+/**
+ * Properties for building a RouteRequestParameter ARN.
+ */
+export interface ApiGatewayRouteRequestParameterArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The RouteId component of the ARN. */
+	readonly routeId: string;
+	/** The RequestParameterKey component of the ARN. */
+	readonly requestParameterKey: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RouteRequestParameter ARN.
+ */
+export interface ApiGatewayRouteRequestParameterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The RouteId component. */
+	readonly routeId: string;
+	/** The RequestParameterKey component. */
+	readonly requestParameterKey: string;
+}
+
+/**
+ * Properties for building a RouteResponse ARN.
+ */
+export interface ApiGatewayRouteResponseArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The RouteId component of the ARN. */
+	readonly routeId: string;
+	/** The RouteResponseId component of the ARN. */
+	readonly routeResponseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RouteResponse ARN.
+ */
+export interface ApiGatewayRouteResponseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The RouteId component. */
+	readonly routeId: string;
+	/** The RouteResponseId component. */
+	readonly routeResponseId: string;
+}
+
+/**
+ * Properties for building a RouteResponses ARN.
+ */
+export interface ApiGatewayRouteResponsesArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The RouteId component of the ARN. */
+	readonly routeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RouteResponses ARN.
+ */
+export interface ApiGatewayRouteResponsesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The RouteId component. */
+	readonly routeId: string;
+}
+
+/**
+ * Properties for building a RouteSettings ARN.
+ */
+export interface ApiGatewayRouteSettingsArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** The RouteKey component of the ARN. */
+	readonly routeKey: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RouteSettings ARN.
+ */
+export interface ApiGatewayRouteSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The StageName component. */
+	readonly stageName: string;
+	/** The RouteKey component. */
+	readonly routeKey: string;
+}
+
+/**
+ * Properties for building a Routes ARN.
+ */
+export interface ApiGatewayRoutesArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Routes ARN.
+ */
+export interface ApiGatewayRoutesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a RoutingRule ARN.
+ */
+export interface ApiGatewayRoutingRuleArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RoutingRuleId component of the ARN. */
+	readonly routingRuleId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RoutingRule ARN.
+ */
+export interface ApiGatewayRoutingRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RoutingRuleId component. */
+	readonly routingRuleId: string;
+}
+
+/**
+ * Properties for building a Sdk ARN.
+ */
+export interface ApiGatewaySDKArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** The SdkType component of the ARN. */
+	readonly sdkType: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Sdk ARN.
+ */
+export interface ApiGatewaySDKArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RestApiId component. */
+	readonly restAPIId: string;
+	/** The StageName component. */
+	readonly stageName: string;
+	/** The SdkType component. */
+	readonly sdkType: string;
+}
+
+/**
+ * Properties for building a StageVariant1 ARN.
+ */
+export interface ApiGatewayStageVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a StageVariant2 ARN.
+ */
+export interface ApiGatewayStageVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** The StageName component of the ARN. */
+	readonly stageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Stage ARN.
+ */
+export interface ApiGatewayStageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The StageName component. */
+	readonly stageName: string;
+}
+
+/**
+ * Properties for building a StagesVariant1 ARN.
+ */
+export interface ApiGatewayStagesVariant1ArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Properties for building a StagesVariant2 ARN.
+ */
+export interface ApiGatewayStagesVariant2ArnProps {
+	/** The RestApiId component of the ARN. */
+	readonly restAPIId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Stages ARN.
+ */
+export interface ApiGatewayStagesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a Tags ARN.
+ */
+export interface ApiGatewayTagsArnProps {
+	/** The UrlEncodedResourceARN component of the ARN. */
+	readonly urlEncodedResourceARN: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Tags ARN.
+ */
+export interface ApiGatewayTagsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UrlEncodedResourceARN component. */
+	readonly urlEncodedResourceARN: string;
+}
+
+/**
+ * Properties for building a Template ARN.
+ */
+export interface ApiGatewayTemplateArnProps {
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Template ARN.
+ */
+export interface ApiGatewayTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelName component. */
+	readonly modelName: string;
+}
+
+/**
+ * Properties for building a UsagePlan ARN.
+ */
+export interface ApiGatewayUsagePlanArnProps {
+	/** The UsagePlanId component of the ARN. */
+	readonly usagePlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a UsagePlan ARN.
+ */
+export interface ApiGatewayUsagePlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UsagePlanId component. */
+	readonly usagePlanId: string;
+}
+
+/**
+ * Properties for building a UsagePlanKey ARN.
+ */
+export interface ApiGatewayUsagePlanKeyArnProps {
+	/** The UsagePlanId component of the ARN. */
+	readonly usagePlanId: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a UsagePlanKey ARN.
+ */
+export interface ApiGatewayUsagePlanKeyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UsagePlanId component. */
+	readonly usagePlanId: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a UsagePlanKeys ARN.
+ */
+export interface ApiGatewayUsagePlanKeysArnProps {
+	/** The UsagePlanId component of the ARN. */
+	readonly usagePlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a UsagePlanKeys ARN.
+ */
+export interface ApiGatewayUsagePlanKeysArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UsagePlanId component. */
+	readonly usagePlanId: string;
+}
+
+/**
+ * Properties for building a UsagePlans ARN.
+ */
+export interface ApiGatewayUsagePlansArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a UsagePlans ARN.
+ */
+export interface ApiGatewayUsagePlansArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a VpcLink ARN.
+ */
+export interface ApiGatewayVPCLinkArnProps {
+	/** The VpcLinkId component of the ARN. */
+	readonly vpcLinkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VpcLink ARN.
+ */
+export interface ApiGatewayVPCLinkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcLinkId component. */
+	readonly vpcLinkId: string;
+}
+
+/**
+ * Properties for building a VpcLinks ARN.
+ */
+export interface ApiGatewayVPCLinksArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VpcLinks ARN.
+ */
+export interface ApiGatewayVPCLinksArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const AccessLogSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)\/accesslogsettings$/;
+const AccountArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/account$/;
+const APIArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)$/;
+const APIKeyArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apikeys\/(?<apiKeyId>[^:/?]+)$/;
+const APIKeysArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apikeys$/;
+const APIMappingArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\/apimappings\/(?<apiMappingId>[^:/?]+)$/;
+const APIMappingsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\/apimappings$/;
+const ApisArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis$/;
+const AuthorizerArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/authorizers\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/authorizers\/(?:[^:/?]+))$/;
+const AuthorizerParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/authorizers\/(?<authorizerId>[^:/?]+)$/;
+const AuthorizersArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/authorizers|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/authorizers)$/;
+const AuthorizersParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/authorizers$/;
+const AuthorizersCacheArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)\/cache\/authorizers$/;
+const BasePathMappingArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\/basepathmappings\/(?<basePath>[^:/?]+)$/;
+const BasePathMappingsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\/basepathmappings$/;
+const ClientCertificateArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/clientcertificates\/(?<clientCertificateId>[^:/?]+)$/;
+const ClientCertificatesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/clientcertificates$/;
+const CorsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/cors$/;
+const DeploymentArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/deployments\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/deployments\/(?:[^:/?]+))$/;
+const DeploymentParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/deployments\/(?<deploymentId>[^:/?]+)$/;
+const DeploymentsArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/deployments|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/deployments)$/;
+const DeploymentsParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/deployments$/;
+const DocumentationPartArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/documentation\/parts\/(?<documentationPartId>[^:/?]+)$/;
+const DocumentationPartsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/documentation\/parts$/;
+const DocumentationVersionArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/documentation\/versions\/(?<documentationVersionId>[^:/?]+)$/;
+const DocumentationVersionsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/documentation\/versions$/;
+const DomainNameArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)$/;
+const DomainNameAccessAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/domainnameaccessassociations\/domainname\/(?<domainName>[^:/?]+)\/(?<sourceType>[^:/?]+)\/(?<sourceId>[^:/?]+)$/;
+const DomainNameAccessAssociationsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/domainnameaccessassociations$/;
+const DomainNamesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames$/;
+const ExportedAPIArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/exports\/(?<specification>[^:/?]+)$/;
+const GatewayResponseArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/gatewayresponses\/(?<responseType>[^:/?]+)$/;
+const GatewayResponsesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/gatewayresponses$/;
+const IntegrationArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/integrations\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/resources\/(?:[^:/?]+)\/methods\/(?:[^:/?]+)\/integration)$/;
+const IntegrationParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/integrations\/(?<integrationId>[^:/?]+)$/;
+const IntegrationResponseArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/integrations\/(?:[^:/?]+)\/integrationresponses\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/resources\/(?:[^:/?]+)\/methods\/(?:[^:/?]+)\/integration\/responses\/(?:[^:/?]+))$/;
+const IntegrationResponseParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/integrations\/(?<integrationId>[^:/?]+)\/integrationresponses\/(?<integrationResponseId>[^:/?]+)$/;
+const IntegrationResponsesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/integrations\/(?<integrationId>[^:/?]+)\/integrationresponses$/;
+const IntegrationsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/integrations$/;
+const MethodArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/resources\/(?<resourceId>[^:/?]+)\/methods\/(?<httpMethodType>[^:/?]+)$/;
+const MethodResponseArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/resources\/(?<resourceId>[^:/?]+)\/methods\/(?<httpMethodType>[^:/?]+)\/responses\/(?<statusCode>[^:/?]+)$/;
+const ModelArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/models\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/models\/(?:[^:/?]+))$/;
+const ModelParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/models\/(?<modelId>[^:/?]+)$/;
+const ModelTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/models\/(?<modelId>[^:/?]+)\/template$/;
+const ModelsArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/models|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/models)$/;
+const ModelsParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/models$/;
+const PortalArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/portals\/(?<portalId>[^:/?]+)$/;
+const PortalProductArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/portalproducts\/(?<portalProductId>[^:/?]+)$/;
+const PrivateBasePathMappingArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\+(?<domainIdentifier>[^:/?]+)\/basepathmappings\/(?<basePath>[^:/?]+)$/;
+const PrivateBasePathMappingsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/domainnames\/(?<domainName>[^:/?]+)\+(?<domainIdentifier>[^:/?]+)\/basepathmappings$/;
+const PrivateDomainNameArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/domainnames\/(?<domainName>[^:/?]+)\+(?<domainIdentifier>[^:/?]+)$/;
+const ProductPageArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/portalproducts\/(?<portalProductId>[^:/?]+)\/productpages\/(?<productPageId>[^:/?]+)$/;
+const ProductRestEndpointPageArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/portalproducts\/(?<portalProductId>[^:/?]+)\/productrestendpointpages\/(?<productRestEndpointPageId>[^:/?]+)$/;
+const RequestValidatorArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/requestvalidators\/(?<requestValidatorId>[^:/?]+)$/;
+const RequestValidatorsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/requestvalidators$/;
+const ResourceArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/resources\/(?<resourceId>[^:/?]+)$/;
+const ResourcesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/resources$/;
+const RestAPIArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)$/;
+const RestApisArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis$/;
+const RouteArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/routes\/(?<routeId>[^:/?]+)$/;
+const RouteRequestParameterArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/routes\/(?<routeId>[^:/?]+)\/requestparameters\/(?<requestParameterKey>[^:/?]+)$/;
+const RouteResponseArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/routes\/(?<routeId>[^:/?]+)\/routeresponses\/(?<routeResponseId>[^:/?]+)$/;
+const RouteResponsesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/routes\/(?<routeId>[^:/?]+)\/routeresponses$/;
+const RouteSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)\/routesettings\/(?<routeKey>[^:/?]+)$/;
+const RoutesArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/routes$/;
+const RoutingRuleArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*):(?<account>[^:]*):\/domainnames\/(?<domainName>[^:/?]+)\/routingrules\/(?<routingRuleId>[^:/?]+)$/;
+const SDKArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<restAPIId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)\/sdks\/(?<sdkType>[^:/?]+)$/;
+const StageArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/stages\/(?:[^:/?]+)|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/stages\/(?:[^:/?]+))$/;
+const StageParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)$/;
+const StagesArnRegex =
+	/^(?:arn:(?:[^:]+):apigateway:(?:[^:]*)::\/apis\/(?:[^:/?]+)\/stages|arn:(?:[^:]+):apigateway:(?:[^:]*)::\/restapis\/(?:[^:/?]+)\/stages)$/;
+const StagesParseRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/apis\/(?<apiId>[^:/?]+)\/stages$/;
+const TagsArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/tags\/(?<urlEncodedResourceARN>[^:/?]+)$/;
+const TemplateArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/models\/(?<modelName>[^:/?]+)\/template$/;
+const UsagePlanArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/usageplans\/(?<usagePlanId>[^:/?]+)$/;
+const UsagePlanKeyArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/usageplans\/(?<usagePlanId>[^:/?]+)\/keys\/(?<id>[^:/?]+)$/;
+const UsagePlanKeysArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/usageplans\/(?<usagePlanId>[^:/?]+)\/keys$/;
+const UsagePlansArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/usageplans$/;
+const VPCLinkArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/vpclinks\/(?<vpcLinkId>[^:/?]+)$/;
+const VPCLinksArnRegex =
+	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/vpclinks$/;
 
 /**
  * ARN builders, validators, and parsers for apigateway resources.
@@ -420,18 +2569,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the AccessLogSettings resource.
 	 */
-	static accessLogSettings(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessLogSettings(props: ApiGatewayAccessLogSettingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/stages/${props.stageName}/accesslogsettings`;
 	}
 
@@ -446,13 +2584,9 @@ export class ApiGatewayResources {
 	 * Parses a AccessLogSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessLogSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		stageName: string;
-	} {
+	static parseAccessLogSettingsArn(
+		arn: string,
+	): ApiGatewayAccessLogSettingsArnComponents {
 		const match = AccessLogSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AccessLogSettings ARN: ${arn}`);
@@ -469,14 +2603,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Account resource.
 	 */
-	static account(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static account(props: ApiGatewayAccountArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/account`;
 	}
 
@@ -491,11 +2618,7 @@ export class ApiGatewayResources {
 	 * Parses a Account ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseAccountArn(arn: string): ApiGatewayAccountArnComponents {
 		const match = AccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Account ARN: ${arn}`);
@@ -510,16 +2633,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Api resource.
 	 */
-	static api(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static api(props: ApiGatewayAPIArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}`;
 	}
 
@@ -534,12 +2648,7 @@ export class ApiGatewayResources {
 	 * Parses a Api ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseAPIArn(arn: string): ApiGatewayAPIArnComponents {
 		const match = APIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Api ARN: ${arn}`);
@@ -555,16 +2664,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ApiKey resource.
 	 */
-	static apiKey(props: {
-		/** The ApiKeyId component of the ARN. */
-		readonly apiKeyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static apiKey(props: ApiGatewayAPIKeyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apikeys/${props.apiKeyId}`;
 	}
 
@@ -579,12 +2679,7 @@ export class ApiGatewayResources {
 	 * Parses a ApiKey ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIKeyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiKeyId: string;
-	} {
+	static parseAPIKeyArn(arn: string): ApiGatewayAPIKeyArnComponents {
 		const match = APIKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiKey ARN: ${arn}`);
@@ -600,14 +2695,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ApiKeys resource.
 	 */
-	static apiKeys(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static apiKeys(props: ApiGatewayAPIKeysArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apikeys`;
 	}
 
@@ -622,11 +2710,7 @@ export class ApiGatewayResources {
 	 * Parses a ApiKeys ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIKeysArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseAPIKeysArn(arn: string): ApiGatewayAPIKeysArnComponents {
 		const match = APIKeysArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiKeys ARN: ${arn}`);
@@ -641,18 +2725,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ApiMapping resource.
 	 */
-	static apiMapping(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The ApiMappingId component of the ARN. */
-		readonly apiMappingId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static apiMapping(props: ApiGatewayAPIMappingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}/apimappings/${props.apiMappingId}`;
 	}
 
@@ -667,13 +2740,7 @@ export class ApiGatewayResources {
 	 * Parses a ApiMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIMappingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		apiMappingId: string;
-	} {
+	static parseAPIMappingArn(arn: string): ApiGatewayAPIMappingArnComponents {
 		const match = APIMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiMapping ARN: ${arn}`);
@@ -690,16 +2757,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ApiMappings resource.
 	 */
-	static apiMappings(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static apiMappings(props: ApiGatewayAPIMappingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}/apimappings`;
 	}
 
@@ -714,12 +2772,7 @@ export class ApiGatewayResources {
 	 * Parses a ApiMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIMappingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseAPIMappingsArn(arn: string): ApiGatewayAPIMappingsArnComponents {
 		const match = APIMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApiMappings ARN: ${arn}`);
@@ -735,14 +2788,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Apis resource.
 	 */
-	static apis(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static apis(props: ApiGatewayApisArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis`;
 	}
 
@@ -757,11 +2803,7 @@ export class ApiGatewayResources {
 	 * Parses a Apis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApisArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseApisArn(arn: string): ApiGatewayApisArnComponents {
 		const match = ApisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Apis ARN: ${arn}`);
@@ -776,36 +2818,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the AuthorizerVariant1 resource.
 	 */
-	static authorizerVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The AuthorizerId component of the ARN. */
-		readonly authorizerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizerVariant1(
+		props: ApiGatewayAuthorizerVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/authorizers/${props.authorizerId}`;
 	}
 
 	/**
 	 * Builds an ARN for the AuthorizerVariant2 resource.
 	 */
-	static authorizerVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The AuthorizerId component of the ARN. */
-		readonly authorizerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizerVariant2(
+		props: ApiGatewayAuthorizerVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/authorizers/${props.authorizerId}`;
 	}
 
@@ -820,13 +2844,7 @@ export class ApiGatewayResources {
 	 * Parses a Authorizer ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		authorizerId: string;
-	} {
+	static parseAuthorizerArn(arn: string): ApiGatewayAuthorizerArnComponents {
 		const match = AuthorizerParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Authorizer ARN: ${arn}`);
@@ -843,32 +2861,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the AuthorizersVariant1 resource.
 	 */
-	static authorizersVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizersVariant1(
+		props: ApiGatewayAuthorizersVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/authorizers`;
 	}
 
 	/**
 	 * Builds an ARN for the AuthorizersVariant2 resource.
 	 */
-	static authorizersVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizersVariant2(
+		props: ApiGatewayAuthorizersVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/authorizers`;
 	}
 
@@ -883,12 +2887,7 @@ export class ApiGatewayResources {
 	 * Parses a Authorizers ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizersArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseAuthorizersArn(arn: string): ApiGatewayAuthorizersArnComponents {
 		const match = AuthorizersParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Authorizers ARN: ${arn}`);
@@ -904,18 +2903,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the AuthorizersCache resource.
 	 */
-	static authorizersCache(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizersCache(props: ApiGatewayAuthorizersCacheArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/stages/${props.stageName}/cache/authorizers`;
 	}
 
@@ -930,13 +2918,9 @@ export class ApiGatewayResources {
 	 * Parses a AuthorizersCache ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizersCacheArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		stageName: string;
-	} {
+	static parseAuthorizersCacheArn(
+		arn: string,
+	): ApiGatewayAuthorizersCacheArnComponents {
 		const match = AuthorizersCacheArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AuthorizersCache ARN: ${arn}`);
@@ -953,18 +2937,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the BasePathMapping resource.
 	 */
-	static basePathMapping(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The BasePath component of the ARN. */
-		readonly basePath: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static basePathMapping(props: ApiGatewayBasePathMappingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}/basepathmappings/${props.basePath}`;
 	}
 
@@ -979,13 +2952,9 @@ export class ApiGatewayResources {
 	 * Parses a BasePathMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBasePathMappingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		basePath: string;
-	} {
+	static parseBasePathMappingArn(
+		arn: string,
+	): ApiGatewayBasePathMappingArnComponents {
 		const match = BasePathMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BasePathMapping ARN: ${arn}`);
@@ -1002,16 +2971,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the BasePathMappings resource.
 	 */
-	static basePathMappings(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static basePathMappings(props: ApiGatewayBasePathMappingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}/basepathmappings`;
 	}
 
@@ -1026,12 +2986,9 @@ export class ApiGatewayResources {
 	 * Parses a BasePathMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBasePathMappingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseBasePathMappingsArn(
+		arn: string,
+	): ApiGatewayBasePathMappingsArnComponents {
 		const match = BasePathMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid BasePathMappings ARN: ${arn}`);
@@ -1047,16 +3004,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ClientCertificate resource.
 	 */
-	static clientCertificate(props: {
-		/** The ClientCertificateId component of the ARN. */
-		readonly clientCertificateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clientCertificate(props: ApiGatewayClientCertificateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/clientcertificates/${props.clientCertificateId}`;
 	}
 
@@ -1071,12 +3019,9 @@ export class ApiGatewayResources {
 	 * Parses a ClientCertificate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientCertificateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clientCertificateId: string;
-	} {
+	static parseClientCertificateArn(
+		arn: string,
+	): ApiGatewayClientCertificateArnComponents {
 		const match = ClientCertificateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ClientCertificate ARN: ${arn}`);
@@ -1092,14 +3037,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ClientCertificates resource.
 	 */
-	static clientCertificates(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clientCertificates(
+		props: ApiGatewayClientCertificatesArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/clientcertificates`;
 	}
 
@@ -1114,11 +3054,9 @@ export class ApiGatewayResources {
 	 * Parses a ClientCertificates ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientCertificatesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseClientCertificatesArn(
+		arn: string,
+	): ApiGatewayClientCertificatesArnComponents {
 		const match = ClientCertificatesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ClientCertificates ARN: ${arn}`);
@@ -1133,16 +3071,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Cors resource.
 	 */
-	static cors(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cors(props: ApiGatewayCorsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/cors`;
 	}
 
@@ -1157,12 +3086,7 @@ export class ApiGatewayResources {
 	 * Parses a Cors ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCorsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseCorsArn(arn: string): ApiGatewayCorsArnComponents {
 		const match = CorsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Cors ARN: ${arn}`);
@@ -1178,36 +3102,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DeploymentVariant1 resource.
 	 */
-	static deploymentVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The DeploymentId component of the ARN. */
-		readonly deploymentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentVariant1(
+		props: ApiGatewayDeploymentVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/deployments/${props.deploymentId}`;
 	}
 
 	/**
 	 * Builds an ARN for the DeploymentVariant2 resource.
 	 */
-	static deploymentVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The DeploymentId component of the ARN. */
-		readonly deploymentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentVariant2(
+		props: ApiGatewayDeploymentVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/deployments/${props.deploymentId}`;
 	}
 
@@ -1222,13 +3128,7 @@ export class ApiGatewayResources {
 	 * Parses a Deployment ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		deploymentId: string;
-	} {
+	static parseDeploymentArn(arn: string): ApiGatewayDeploymentArnComponents {
 		const match = DeploymentParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Deployment ARN: ${arn}`);
@@ -1245,32 +3145,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DeploymentsVariant1 resource.
 	 */
-	static deploymentsVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentsVariant1(
+		props: ApiGatewayDeploymentsVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/deployments`;
 	}
 
 	/**
 	 * Builds an ARN for the DeploymentsVariant2 resource.
 	 */
-	static deploymentsVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentsVariant2(
+		props: ApiGatewayDeploymentsVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/deployments`;
 	}
 
@@ -1285,12 +3171,7 @@ export class ApiGatewayResources {
 	 * Parses a Deployments ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseDeploymentsArn(arn: string): ApiGatewayDeploymentsArnComponents {
 		const match = DeploymentsParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Deployments ARN: ${arn}`);
@@ -1306,18 +3187,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DocumentationPart resource.
 	 */
-	static documentationPart(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The DocumentationPartId component of the ARN. */
-		readonly documentationPartId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static documentationPart(props: ApiGatewayDocumentationPartArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/documentation/parts/${props.documentationPartId}`;
 	}
 
@@ -1332,13 +3202,9 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationPart ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationPartArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		documentationPartId: string;
-	} {
+	static parseDocumentationPartArn(
+		arn: string,
+	): ApiGatewayDocumentationPartArnComponents {
 		const match = DocumentationPartArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationPart ARN: ${arn}`);
@@ -1355,16 +3221,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DocumentationParts resource.
 	 */
-	static documentationParts(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static documentationParts(
+		props: ApiGatewayDocumentationPartsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/documentation/parts`;
 	}
 
@@ -1379,12 +3238,9 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationParts ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationPartsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseDocumentationPartsArn(
+		arn: string,
+	): ApiGatewayDocumentationPartsArnComponents {
 		const match = DocumentationPartsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationParts ARN: ${arn}`);
@@ -1400,18 +3256,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DocumentationVersion resource.
 	 */
-	static documentationVersion(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The DocumentationVersionId component of the ARN. */
-		readonly documentationVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static documentationVersion(
+		props: ApiGatewayDocumentationVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/documentation/versions/${props.documentationVersionId}`;
 	}
 
@@ -1426,13 +3273,9 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationVersion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		documentationVersionId: string;
-	} {
+	static parseDocumentationVersionArn(
+		arn: string,
+	): ApiGatewayDocumentationVersionArnComponents {
 		const match = DocumentationVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationVersion ARN: ${arn}`);
@@ -1449,16 +3292,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DocumentationVersions resource.
 	 */
-	static documentationVersions(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static documentationVersions(
+		props: ApiGatewayDocumentationVersionsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/documentation/versions`;
 	}
 
@@ -1473,12 +3309,9 @@ export class ApiGatewayResources {
 	 * Parses a DocumentationVersions ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDocumentationVersionsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseDocumentationVersionsArn(
+		arn: string,
+	): ApiGatewayDocumentationVersionsArnComponents {
 		const match = DocumentationVersionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DocumentationVersions ARN: ${arn}`);
@@ -1494,16 +3327,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DomainName resource.
 	 */
-	static domainName(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainName(props: ApiGatewayDomainNameArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}`;
 	}
 
@@ -1518,12 +3342,7 @@ export class ApiGatewayResources {
 	 * Parses a DomainName ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainNameArn(arn: string): ApiGatewayDomainNameArnComponents {
 		const match = DomainNameArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainName ARN: ${arn}`);
@@ -1539,20 +3358,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DomainNameAccessAssociation resource.
 	 */
-	static domainNameAccessAssociation(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The SourceType component of the ARN. */
-		readonly sourceType: string;
-		/** The SourceId component of the ARN. */
-		readonly sourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainNameAccessAssociation(
+		props: ApiGatewayDomainNameAccessAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/domainnameaccessassociations/domainname/${props.domainName}/${props.sourceType}/${props.sourceId}`;
 	}
 
@@ -1567,14 +3375,9 @@ export class ApiGatewayResources {
 	 * Parses a DomainNameAccessAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameAccessAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		sourceType: string;
-		sourceId: string;
-	} {
+	static parseDomainNameAccessAssociationArn(
+		arn: string,
+	): ApiGatewayDomainNameAccessAssociationArnComponents {
 		const match = DomainNameAccessAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNameAccessAssociation ARN: ${arn}`);
@@ -1592,14 +3395,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DomainNameAccessAssociations resource.
 	 */
-	static domainNameAccessAssociations(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainNameAccessAssociations(
+		props: ApiGatewayDomainNameAccessAssociationsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/domainnameaccessassociations`;
 	}
 
@@ -1614,11 +3412,9 @@ export class ApiGatewayResources {
 	 * Parses a DomainNameAccessAssociations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNameAccessAssociationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseDomainNameAccessAssociationsArn(
+		arn: string,
+	): ApiGatewayDomainNameAccessAssociationsArnComponents {
 		const match = DomainNameAccessAssociationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNameAccessAssociations ARN: ${arn}`);
@@ -1633,14 +3429,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the DomainNames resource.
 	 */
-	static domainNames(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainNames(props: ApiGatewayDomainNamesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames`;
 	}
 
@@ -1655,11 +3444,7 @@ export class ApiGatewayResources {
 	 * Parses a DomainNames ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainNamesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseDomainNamesArn(arn: string): ApiGatewayDomainNamesArnComponents {
 		const match = DomainNamesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DomainNames ARN: ${arn}`);
@@ -1674,18 +3459,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ExportedAPI resource.
 	 */
-	static exportedAPI(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The Specification component of the ARN. */
-		readonly specification: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static exportedAPI(props: ApiGatewayExportedAPIArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/exports/${props.specification}`;
 	}
 
@@ -1700,13 +3474,7 @@ export class ApiGatewayResources {
 	 * Parses a ExportedAPI ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportedAPIArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		specification: string;
-	} {
+	static parseExportedAPIArn(arn: string): ApiGatewayExportedAPIArnComponents {
 		const match = ExportedAPIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ExportedAPI ARN: ${arn}`);
@@ -1723,18 +3491,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the GatewayResponse resource.
 	 */
-	static gatewayResponse(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResponseType component of the ARN. */
-		readonly responseType: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gatewayResponse(props: ApiGatewayGatewayResponseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/gatewayresponses/${props.responseType}`;
 	}
 
@@ -1749,13 +3506,9 @@ export class ApiGatewayResources {
 	 * Parses a GatewayResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayResponseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		responseType: string;
-	} {
+	static parseGatewayResponseArn(
+		arn: string,
+	): ApiGatewayGatewayResponseArnComponents {
 		const match = GatewayResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid GatewayResponse ARN: ${arn}`);
@@ -1772,16 +3525,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the GatewayResponses resource.
 	 */
-	static gatewayResponses(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gatewayResponses(props: ApiGatewayGatewayResponsesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/gatewayresponses`;
 	}
 
@@ -1796,12 +3540,9 @@ export class ApiGatewayResources {
 	 * Parses a GatewayResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayResponsesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseGatewayResponsesArn(
+		arn: string,
+	): ApiGatewayGatewayResponsesArnComponents {
 		const match = GatewayResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid GatewayResponses ARN: ${arn}`);
@@ -1817,38 +3558,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the IntegrationVariant1 resource.
 	 */
-	static integrationVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The IntegrationId component of the ARN. */
-		readonly integrationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationVariant1(
+		props: ApiGatewayIntegrationVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/integrations/${props.integrationId}`;
 	}
 
 	/**
 	 * Builds an ARN for the IntegrationVariant2 resource.
 	 */
-	static integrationVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The HttpMethodType component of the ARN. */
-		readonly httpMethodType: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationVariant2(
+		props: ApiGatewayIntegrationVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources/${props.resourceId}/methods/${props.httpMethodType}/integration`;
 	}
 
@@ -1863,13 +3584,7 @@ export class ApiGatewayResources {
 	 * Parses a Integration ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		integrationId: string;
-	} {
+	static parseIntegrationArn(arn: string): ApiGatewayIntegrationArnComponents {
 		const match = IntegrationParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Integration ARN: ${arn}`);
@@ -1886,42 +3601,18 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the IntegrationResponseVariant1 resource.
 	 */
-	static integrationResponseVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The IntegrationId component of the ARN. */
-		readonly integrationId: string;
-		/** The IntegrationResponseId component of the ARN. */
-		readonly integrationResponseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationResponseVariant1(
+		props: ApiGatewayIntegrationResponseVariant1ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/integrations/${props.integrationId}/integrationresponses/${props.integrationResponseId}`;
 	}
 
 	/**
 	 * Builds an ARN for the IntegrationResponseVariant2 resource.
 	 */
-	static integrationResponseVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The HttpMethodType component of the ARN. */
-		readonly httpMethodType: string;
-		/** The StatusCode component of the ARN. */
-		readonly statusCode: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationResponseVariant2(
+		props: ApiGatewayIntegrationResponseVariant2ArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources/${props.resourceId}/methods/${props.httpMethodType}/integration/responses/${props.statusCode}`;
 	}
 
@@ -1936,14 +3627,9 @@ export class ApiGatewayResources {
 	 * Parses a IntegrationResponse ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationResponseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		integrationId: string;
-		integrationResponseId: string;
-	} {
+	static parseIntegrationResponseArn(
+		arn: string,
+	): ApiGatewayIntegrationResponseArnComponents {
 		const match = IntegrationResponseParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid IntegrationResponse ARN: ${arn}`);
@@ -1961,18 +3647,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the IntegrationResponses resource.
 	 */
-	static integrationResponses(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The IntegrationId component of the ARN. */
-		readonly integrationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationResponses(
+		props: ApiGatewayIntegrationResponsesArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/integrations/${props.integrationId}/integrationresponses`;
 	}
 
@@ -1987,13 +3664,9 @@ export class ApiGatewayResources {
 	 * Parses a IntegrationResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationResponsesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		integrationId: string;
-	} {
+	static parseIntegrationResponsesArn(
+		arn: string,
+	): ApiGatewayIntegrationResponsesArnComponents {
 		const match = IntegrationResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid IntegrationResponses ARN: ${arn}`);
@@ -2010,16 +3683,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Integrations resource.
 	 */
-	static integrations(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrations(props: ApiGatewayIntegrationsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/integrations`;
 	}
 
@@ -2034,12 +3698,9 @@ export class ApiGatewayResources {
 	 * Parses a Integrations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseIntegrationsArn(
+		arn: string,
+	): ApiGatewayIntegrationsArnComponents {
 		const match = IntegrationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Integrations ARN: ${arn}`);
@@ -2055,20 +3716,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Method resource.
 	 */
-	static method(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The HttpMethodType component of the ARN. */
-		readonly httpMethodType: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static method(props: ApiGatewayMethodArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources/${props.resourceId}/methods/${props.httpMethodType}`;
 	}
 
@@ -2083,14 +3731,7 @@ export class ApiGatewayResources {
 	 * Parses a Method ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMethodArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		resourceId: string;
-		httpMethodType: string;
-	} {
+	static parseMethodArn(arn: string): ApiGatewayMethodArnComponents {
 		const match = MethodArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Method ARN: ${arn}`);
@@ -2108,22 +3749,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the MethodResponse resource.
 	 */
-	static methodResponse(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The HttpMethodType component of the ARN. */
-		readonly httpMethodType: string;
-		/** The StatusCode component of the ARN. */
-		readonly statusCode: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static methodResponse(props: ApiGatewayMethodResponseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources/${props.resourceId}/methods/${props.httpMethodType}/responses/${props.statusCode}`;
 	}
 
@@ -2138,15 +3764,9 @@ export class ApiGatewayResources {
 	 * Parses a MethodResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMethodResponseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		resourceId: string;
-		httpMethodType: string;
-		statusCode: string;
-	} {
+	static parseMethodResponseArn(
+		arn: string,
+	): ApiGatewayMethodResponseArnComponents {
 		const match = MethodResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MethodResponse ARN: ${arn}`);
@@ -2165,36 +3785,14 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ModelVariant1 resource.
 	 */
-	static modelVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The ModelId component of the ARN. */
-		readonly modelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelVariant1(props: ApiGatewayModelVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/models/${props.modelId}`;
 	}
 
 	/**
 	 * Builds an ARN for the ModelVariant2 resource.
 	 */
-	static modelVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelVariant2(props: ApiGatewayModelVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/models/${props.modelName}`;
 	}
 
@@ -2209,13 +3807,7 @@ export class ApiGatewayResources {
 	 * Parses a Model ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		modelId: string;
-	} {
+	static parseModelArn(arn: string): ApiGatewayModelArnComponents {
 		const match = ModelParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Model ARN: ${arn}`);
@@ -2232,18 +3824,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ModelTemplate resource.
 	 */
-	static modelTemplate(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The ModelId component of the ARN. */
-		readonly modelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelTemplate(props: ApiGatewayModelTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/models/${props.modelId}/template`;
 	}
 
@@ -2258,13 +3839,9 @@ export class ApiGatewayResources {
 	 * Parses a ModelTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		modelId: string;
-	} {
+	static parseModelTemplateArn(
+		arn: string,
+	): ApiGatewayModelTemplateArnComponents {
 		const match = ModelTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ModelTemplate ARN: ${arn}`);
@@ -2281,32 +3858,14 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ModelsVariant1 resource.
 	 */
-	static modelsVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelsVariant1(props: ApiGatewayModelsVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/models`;
 	}
 
 	/**
 	 * Builds an ARN for the ModelsVariant2 resource.
 	 */
-	static modelsVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelsVariant2(props: ApiGatewayModelsVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/models`;
 	}
 
@@ -2321,12 +3880,7 @@ export class ApiGatewayResources {
 	 * Parses a Models ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseModelsArn(arn: string): ApiGatewayModelsArnComponents {
 		const match = ModelsParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Models ARN: ${arn}`);
@@ -2342,16 +3896,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Portal resource.
 	 */
-	static portal(props: {
-		/** The PortalId component of the ARN. */
-		readonly portalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static portal(props: ApiGatewayPortalArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/portals/${props.portalId}`;
 	}
 
@@ -2366,12 +3911,7 @@ export class ApiGatewayResources {
 	 * Parses a Portal ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalId: string;
-	} {
+	static parsePortalArn(arn: string): ApiGatewayPortalArnComponents {
 		const match = PortalArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Portal ARN: ${arn}`);
@@ -2387,16 +3927,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the PortalProduct resource.
 	 */
-	static portalProduct(props: {
-		/** The PortalProductId component of the ARN. */
-		readonly portalProductId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static portalProduct(props: ApiGatewayPortalProductArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/portalproducts/${props.portalProductId}`;
 	}
 
@@ -2411,12 +3942,9 @@ export class ApiGatewayResources {
 	 * Parses a PortalProduct ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalProductArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalProductId: string;
-	} {
+	static parsePortalProductArn(
+		arn: string,
+	): ApiGatewayPortalProductArnComponents {
 		const match = PortalProductArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PortalProduct ARN: ${arn}`);
@@ -2432,20 +3960,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the PrivateBasePathMapping resource.
 	 */
-	static privateBasePathMapping(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The DomainIdentifier component of the ARN. */
-		readonly domainIdentifier: string;
-		/** The BasePath component of the ARN. */
-		readonly basePath: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privateBasePathMapping(
+		props: ApiGatewayPrivateBasePathMappingArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}+${props.domainIdentifier}/basepathmappings/${props.basePath}`;
 	}
 
@@ -2460,14 +3977,9 @@ export class ApiGatewayResources {
 	 * Parses a PrivateBasePathMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateBasePathMappingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		domainIdentifier: string;
-		basePath: string;
-	} {
+	static parsePrivateBasePathMappingArn(
+		arn: string,
+	): ApiGatewayPrivateBasePathMappingArnComponents {
 		const match = PrivateBasePathMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateBasePathMapping ARN: ${arn}`);
@@ -2485,18 +3997,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the PrivateBasePathMappings resource.
 	 */
-	static privateBasePathMappings(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The DomainIdentifier component of the ARN. */
-		readonly domainIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privateBasePathMappings(
+		props: ApiGatewayPrivateBasePathMappingsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/domainnames/${props.domainName}+${props.domainIdentifier}/basepathmappings`;
 	}
 
@@ -2511,13 +4014,9 @@ export class ApiGatewayResources {
 	 * Parses a PrivateBasePathMappings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateBasePathMappingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		domainIdentifier: string;
-	} {
+	static parsePrivateBasePathMappingsArn(
+		arn: string,
+	): ApiGatewayPrivateBasePathMappingsArnComponents {
 		const match = PrivateBasePathMappingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateBasePathMappings ARN: ${arn}`);
@@ -2534,18 +4033,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the PrivateDomainName resource.
 	 */
-	static privateDomainName(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The DomainIdentifier component of the ARN. */
-		readonly domainIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privateDomainName(props: ApiGatewayPrivateDomainNameArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/domainnames/${props.domainName}+${props.domainIdentifier}`;
 	}
 
@@ -2560,13 +4048,9 @@ export class ApiGatewayResources {
 	 * Parses a PrivateDomainName ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateDomainNameArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		domainIdentifier: string;
-	} {
+	static parsePrivateDomainNameArn(
+		arn: string,
+	): ApiGatewayPrivateDomainNameArnComponents {
 		const match = PrivateDomainNameArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateDomainName ARN: ${arn}`);
@@ -2583,18 +4067,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ProductPage resource.
 	 */
-	static productPage(props: {
-		/** The PortalProductId component of the ARN. */
-		readonly portalProductId: string;
-		/** The ProductPageId component of the ARN. */
-		readonly productPageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static productPage(props: ApiGatewayProductPageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/portalproducts/${props.portalProductId}/productpages/${props.productPageId}`;
 	}
 
@@ -2609,13 +4082,7 @@ export class ApiGatewayResources {
 	 * Parses a ProductPage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProductPageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalProductId: string;
-		productPageId: string;
-	} {
+	static parseProductPageArn(arn: string): ApiGatewayProductPageArnComponents {
 		const match = ProductPageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProductPage ARN: ${arn}`);
@@ -2632,18 +4099,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the ProductRestEndpointPage resource.
 	 */
-	static productRestEndpointPage(props: {
-		/** The PortalProductId component of the ARN. */
-		readonly portalProductId: string;
-		/** The ProductRestEndpointPageId component of the ARN. */
-		readonly productRestEndpointPageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static productRestEndpointPage(
+		props: ApiGatewayProductRestEndpointPageArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/portalproducts/${props.portalProductId}/productrestendpointpages/${props.productRestEndpointPageId}`;
 	}
 
@@ -2658,13 +4116,9 @@ export class ApiGatewayResources {
 	 * Parses a ProductRestEndpointPage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProductRestEndpointPageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalProductId: string;
-		productRestEndpointPageId: string;
-	} {
+	static parseProductRestEndpointPageArn(
+		arn: string,
+	): ApiGatewayProductRestEndpointPageArnComponents {
 		const match = ProductRestEndpointPageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProductRestEndpointPage ARN: ${arn}`);
@@ -2681,18 +4135,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RequestValidator resource.
 	 */
-	static requestValidator(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The RequestValidatorId component of the ARN. */
-		readonly requestValidatorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static requestValidator(props: ApiGatewayRequestValidatorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/requestvalidators/${props.requestValidatorId}`;
 	}
 
@@ -2707,13 +4150,9 @@ export class ApiGatewayResources {
 	 * Parses a RequestValidator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRequestValidatorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		requestValidatorId: string;
-	} {
+	static parseRequestValidatorArn(
+		arn: string,
+	): ApiGatewayRequestValidatorArnComponents {
 		const match = RequestValidatorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RequestValidator ARN: ${arn}`);
@@ -2730,16 +4169,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RequestValidators resource.
 	 */
-	static requestValidators(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static requestValidators(props: ApiGatewayRequestValidatorsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/requestvalidators`;
 	}
 
@@ -2754,12 +4184,9 @@ export class ApiGatewayResources {
 	 * Parses a RequestValidators ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRequestValidatorsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseRequestValidatorsArn(
+		arn: string,
+	): ApiGatewayRequestValidatorsArnComponents {
 		const match = RequestValidatorsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RequestValidators ARN: ${arn}`);
@@ -2775,18 +4202,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Resource resource.
 	 */
-	static resource(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resource(props: ApiGatewayResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources/${props.resourceId}`;
 	}
 
@@ -2801,13 +4217,7 @@ export class ApiGatewayResources {
 	 * Parses a Resource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		resourceId: string;
-	} {
+	static parseResourceArn(arn: string): ApiGatewayResourceArnComponents {
 		const match = ResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Resource ARN: ${arn}`);
@@ -2824,16 +4234,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Resources resource.
 	 */
-	static resources(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resources(props: ApiGatewayResourcesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/resources`;
 	}
 
@@ -2848,12 +4249,7 @@ export class ApiGatewayResources {
 	 * Parses a Resources ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourcesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseResourcesArn(arn: string): ApiGatewayResourcesArnComponents {
 		const match = ResourcesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Resources ARN: ${arn}`);
@@ -2869,16 +4265,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RestApi resource.
 	 */
-	static restAPI(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static restAPI(props: ApiGatewayRestAPIArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}`;
 	}
 
@@ -2893,12 +4280,7 @@ export class ApiGatewayResources {
 	 * Parses a RestApi ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRestAPIArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-	} {
+	static parseRestAPIArn(arn: string): ApiGatewayRestAPIArnComponents {
 		const match = RestAPIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RestApi ARN: ${arn}`);
@@ -2914,14 +4296,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RestApis resource.
 	 */
-	static restApis(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static restApis(props: ApiGatewayRestApisArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis`;
 	}
 
@@ -2936,11 +4311,7 @@ export class ApiGatewayResources {
 	 * Parses a RestApis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRestApisArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseRestApisArn(arn: string): ApiGatewayRestApisArnComponents {
 		const match = RestApisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RestApis ARN: ${arn}`);
@@ -2955,18 +4326,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Route resource.
 	 */
-	static route(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The RouteId component of the ARN. */
-		readonly routeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static route(props: ApiGatewayRouteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/routes/${props.routeId}`;
 	}
 
@@ -2981,13 +4341,7 @@ export class ApiGatewayResources {
 	 * Parses a Route ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		routeId: string;
-	} {
+	static parseRouteArn(arn: string): ApiGatewayRouteArnComponents {
 		const match = RouteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Route ARN: ${arn}`);
@@ -3004,20 +4358,9 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RouteRequestParameter resource.
 	 */
-	static routeRequestParameter(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The RouteId component of the ARN. */
-		readonly routeId: string;
-		/** The RequestParameterKey component of the ARN. */
-		readonly requestParameterKey: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeRequestParameter(
+		props: ApiGatewayRouteRequestParameterArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/routes/${props.routeId}/requestparameters/${props.requestParameterKey}`;
 	}
 
@@ -3032,14 +4375,9 @@ export class ApiGatewayResources {
 	 * Parses a RouteRequestParameter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteRequestParameterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		routeId: string;
-		requestParameterKey: string;
-	} {
+	static parseRouteRequestParameterArn(
+		arn: string,
+	): ApiGatewayRouteRequestParameterArnComponents {
 		const match = RouteRequestParameterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteRequestParameter ARN: ${arn}`);
@@ -3057,20 +4395,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RouteResponse resource.
 	 */
-	static routeResponse(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The RouteId component of the ARN. */
-		readonly routeId: string;
-		/** The RouteResponseId component of the ARN. */
-		readonly routeResponseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeResponse(props: ApiGatewayRouteResponseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/routes/${props.routeId}/routeresponses/${props.routeResponseId}`;
 	}
 
@@ -3085,14 +4410,9 @@ export class ApiGatewayResources {
 	 * Parses a RouteResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteResponseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		routeId: string;
-		routeResponseId: string;
-	} {
+	static parseRouteResponseArn(
+		arn: string,
+	): ApiGatewayRouteResponseArnComponents {
 		const match = RouteResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteResponse ARN: ${arn}`);
@@ -3110,18 +4430,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RouteResponses resource.
 	 */
-	static routeResponses(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The RouteId component of the ARN. */
-		readonly routeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeResponses(props: ApiGatewayRouteResponsesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/routes/${props.routeId}/routeresponses`;
 	}
 
@@ -3136,13 +4445,9 @@ export class ApiGatewayResources {
 	 * Parses a RouteResponses ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteResponsesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		routeId: string;
-	} {
+	static parseRouteResponsesArn(
+		arn: string,
+	): ApiGatewayRouteResponsesArnComponents {
 		const match = RouteResponsesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteResponses ARN: ${arn}`);
@@ -3159,20 +4464,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RouteSettings resource.
 	 */
-	static routeSettings(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** The RouteKey component of the ARN. */
-		readonly routeKey: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeSettings(props: ApiGatewayRouteSettingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/stages/${props.stageName}/routesettings/${props.routeKey}`;
 	}
 
@@ -3187,14 +4479,9 @@ export class ApiGatewayResources {
 	 * Parses a RouteSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		stageName: string;
-		routeKey: string;
-	} {
+	static parseRouteSettingsArn(
+		arn: string,
+	): ApiGatewayRouteSettingsArnComponents {
 		const match = RouteSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RouteSettings ARN: ${arn}`);
@@ -3212,16 +4499,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Routes resource.
 	 */
-	static routes(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routes(props: ApiGatewayRoutesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/routes`;
 	}
 
@@ -3236,12 +4514,7 @@ export class ApiGatewayResources {
 	 * Parses a Routes ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoutesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseRoutesArn(arn: string): ApiGatewayRoutesArnComponents {
 		const match = RoutesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Routes ARN: ${arn}`);
@@ -3257,18 +4530,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the RoutingRule resource.
 	 */
-	static routingRule(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RoutingRuleId component of the ARN. */
-		readonly routingRuleId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routingRule(props: ApiGatewayRoutingRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}:${props.account ?? "*"}:/domainnames/${props.domainName}/routingrules/${props.routingRuleId}`;
 	}
 
@@ -3283,13 +4545,7 @@ export class ApiGatewayResources {
 	 * Parses a RoutingRule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoutingRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		routingRuleId: string;
-	} {
+	static parseRoutingRuleArn(arn: string): ApiGatewayRoutingRuleArnComponents {
 		const match = RoutingRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RoutingRule ARN: ${arn}`);
@@ -3306,20 +4562,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Sdk resource.
 	 */
-	static sdk(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** The SdkType component of the ARN. */
-		readonly sdkType: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sdk(props: ApiGatewaySDKArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/stages/${props.stageName}/sdks/${props.sdkType}`;
 	}
 
@@ -3334,14 +4577,7 @@ export class ApiGatewayResources {
 	 * Parses a Sdk ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSDKArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		restAPIId: string;
-		stageName: string;
-		sdkType: string;
-	} {
+	static parseSDKArn(arn: string): ApiGatewaySDKArnComponents {
 		const match = SDKArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Sdk ARN: ${arn}`);
@@ -3359,36 +4595,14 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the StageVariant1 resource.
 	 */
-	static stageVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stageVariant1(props: ApiGatewayStageVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/stages/${props.stageName}`;
 	}
 
 	/**
 	 * Builds an ARN for the StageVariant2 resource.
 	 */
-	static stageVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** The StageName component of the ARN. */
-		readonly stageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stageVariant2(props: ApiGatewayStageVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/stages/${props.stageName}`;
 	}
 
@@ -3403,13 +4617,7 @@ export class ApiGatewayResources {
 	 * Parses a Stage ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		stageName: string;
-	} {
+	static parseStageArn(arn: string): ApiGatewayStageArnComponents {
 		const match = StageParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stage ARN: ${arn}`);
@@ -3426,32 +4634,14 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the StagesVariant1 resource.
 	 */
-	static stagesVariant1(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stagesVariant1(props: ApiGatewayStagesVariant1ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/apis/${props.apiId}/stages`;
 	}
 
 	/**
 	 * Builds an ARN for the StagesVariant2 resource.
 	 */
-	static stagesVariant2(props: {
-		/** The RestApiId component of the ARN. */
-		readonly restAPIId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stagesVariant2(props: ApiGatewayStagesVariant2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/${props.restAPIId}/stages`;
 	}
 
@@ -3466,12 +4656,7 @@ export class ApiGatewayResources {
 	 * Parses a Stages ARN into its components (uses first ARN variant format).
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStagesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseStagesArn(arn: string): ApiGatewayStagesArnComponents {
 		const match = StagesParseRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stages ARN: ${arn}`);
@@ -3487,16 +4672,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Tags resource.
 	 */
-	static tags(props: {
-		/** The UrlEncodedResourceARN component of the ARN. */
-		readonly urlEncodedResourceARN: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tags(props: ApiGatewayTagsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/tags/${props.urlEncodedResourceARN}`;
 	}
 
@@ -3511,12 +4687,7 @@ export class ApiGatewayResources {
 	 * Parses a Tags ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTagsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		urlEncodedResourceARN: string;
-	} {
+	static parseTagsArn(arn: string): ApiGatewayTagsArnComponents {
 		const match = TagsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Tags ARN: ${arn}`);
@@ -3532,16 +4703,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the Template resource.
 	 */
-	static template(props: {
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static template(props: ApiGatewayTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/restapis/models/${props.modelName}/template`;
 	}
 
@@ -3556,12 +4718,7 @@ export class ApiGatewayResources {
 	 * Parses a Template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelName: string;
-	} {
+	static parseTemplateArn(arn: string): ApiGatewayTemplateArnComponents {
 		const match = TemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Template ARN: ${arn}`);
@@ -3577,16 +4734,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the UsagePlan resource.
 	 */
-	static usagePlan(props: {
-		/** The UsagePlanId component of the ARN. */
-		readonly usagePlanId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usagePlan(props: ApiGatewayUsagePlanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/usageplans/${props.usagePlanId}`;
 	}
 
@@ -3601,12 +4749,7 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		usagePlanId: string;
-	} {
+	static parseUsagePlanArn(arn: string): ApiGatewayUsagePlanArnComponents {
 		const match = UsagePlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlan ARN: ${arn}`);
@@ -3622,18 +4765,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the UsagePlanKey resource.
 	 */
-	static usagePlanKey(props: {
-		/** The UsagePlanId component of the ARN. */
-		readonly usagePlanId: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usagePlanKey(props: ApiGatewayUsagePlanKeyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/usageplans/${props.usagePlanId}/keys/${props.id}`;
 	}
 
@@ -3648,13 +4780,9 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlanKey ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanKeyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		usagePlanId: string;
-		id: string;
-	} {
+	static parseUsagePlanKeyArn(
+		arn: string,
+	): ApiGatewayUsagePlanKeyArnComponents {
 		const match = UsagePlanKeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlanKey ARN: ${arn}`);
@@ -3671,16 +4799,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the UsagePlanKeys resource.
 	 */
-	static usagePlanKeys(props: {
-		/** The UsagePlanId component of the ARN. */
-		readonly usagePlanId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usagePlanKeys(props: ApiGatewayUsagePlanKeysArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/usageplans/${props.usagePlanId}/keys`;
 	}
 
@@ -3695,12 +4814,9 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlanKeys ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlanKeysArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		usagePlanId: string;
-	} {
+	static parseUsagePlanKeysArn(
+		arn: string,
+	): ApiGatewayUsagePlanKeysArnComponents {
 		const match = UsagePlanKeysArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlanKeys ARN: ${arn}`);
@@ -3716,14 +4832,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the UsagePlans resource.
 	 */
-	static usagePlans(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usagePlans(props: ApiGatewayUsagePlansArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/usageplans`;
 	}
 
@@ -3738,11 +4847,7 @@ export class ApiGatewayResources {
 	 * Parses a UsagePlans ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsagePlansArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseUsagePlansArn(arn: string): ApiGatewayUsagePlansArnComponents {
 		const match = UsagePlansArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid UsagePlans ARN: ${arn}`);
@@ -3757,16 +4862,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the VpcLink resource.
 	 */
-	static vpcLink(props: {
-		/** The VpcLinkId component of the ARN. */
-		readonly vpcLinkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcLink(props: ApiGatewayVPCLinkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/vpclinks/${props.vpcLinkId}`;
 	}
 
@@ -3781,12 +4877,7 @@ export class ApiGatewayResources {
 	 * Parses a VpcLink ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCLinkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcLinkId: string;
-	} {
+	static parseVPCLinkArn(arn: string): ApiGatewayVPCLinkArnComponents {
 		const match = VPCLinkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VpcLink ARN: ${arn}`);
@@ -3802,14 +4893,7 @@ export class ApiGatewayResources {
 	/**
 	 * Builds an ARN for the VpcLinks resource.
 	 */
-	static vpcLinks(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcLinks(props: ApiGatewayVPCLinksArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apigateway:${props.region ?? "*"}::/vpclinks`;
 	}
 
@@ -3824,11 +4908,7 @@ export class ApiGatewayResources {
 	 * Parses a VpcLinks ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCLinksArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseVPCLinksArn(arn: string): ApiGatewayVPCLinksArnComponents {
 		const match = VPCLinksArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VpcLinks ARN: ${arn}`);
@@ -3846,468 +4926,452 @@ export class ApiGatewayResources {
  */
 export class ApiGatewayOperations {
 	/** IAM actions required for the CreateApi API call. */
-	static readonly CREATE_API: string[] = ["apigateway:POST", "iam:PassRole"];
+	static readonly CreateApi: string[] = ["apigateway:POST", "iam:PassRole"];
 	/** IAM actions required for the CreateApiKey API call. */
-	static readonly CREATE_API_KEY: string[] = [
+	static readonly CreateApiKey: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the CreateApiMapping API call. */
-	static readonly CREATE_API_MAPPING: string[] = ["apigateway:POST"];
+	static readonly CreateApiMapping: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateAuthorizer API call. */
-	static readonly CREATE_AUTHORIZER: string[] = [
+	static readonly CreateAuthorizer: string[] = [
 		"apigateway:POST",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateBasePathMapping API call. */
-	static readonly CREATE_BASE_PATH_MAPPING: string[] = ["apigateway:POST"];
+	static readonly CreateBasePathMapping: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDeployment API call. */
-	static readonly CREATE_DEPLOYMENT: string[] = ["apigateway:POST"];
+	static readonly CreateDeployment: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDocumentationPart API call. */
-	static readonly CREATE_DOCUMENTATION_PART: string[] = ["apigateway:POST"];
+	static readonly CreateDocumentationPart: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDocumentationVersion API call. */
-	static readonly CREATE_DOCUMENTATION_VERSION: string[] = ["apigateway:POST"];
+	static readonly CreateDocumentationVersion: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateDomainName API call. */
-	static readonly CREATE_DOMAIN_NAME: string[] = [
+	static readonly CreateDomainName: string[] = [
 		"apigateway:AddCertificateToDomain",
 		"apigateway:POST",
 		"apigateway:PUT",
 		"apigateway:UpdateDomainNamePolicy",
 	];
 	/** IAM actions required for the CreateDomainNameAccessAssociation API call. */
-	static readonly CREATE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+	static readonly CreateDomainNameAccessAssociation: string[] = [
 		"apigateway:CreateAccessAssociation",
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CREATE_INTEGRATION: string[] = [
+	static readonly CreateIntegration: string[] = [
 		"apigateway:POST",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateIntegrationResponse API call. */
-	static readonly CREATE_INTEGRATION_RESPONSE: string[] = ["apigateway:POST"];
+	static readonly CreateIntegrationResponse: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateModel API call. */
-	static readonly CREATE_MODEL: string[] = ["apigateway:POST"];
+	static readonly CreateModel: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreatePortal API call. */
-	static readonly CREATE_PORTAL: string[] = [
+	static readonly CreatePortal: string[] = [
 		"apigateway:CreatePortal",
 		"apigateway:GetPortalProduct",
 		"apigateway:POST",
 	];
 	/** IAM actions required for the CreatePortalProduct API call. */
-	static readonly CREATE_PORTAL_PRODUCT: string[] = [
+	static readonly CreatePortalProduct: string[] = [
 		"apigateway:CreatePortalProduct",
 		"apigateway:POST",
 	];
 	/** IAM actions required for the CreateProductPage API call. */
-	static readonly CREATE_PRODUCT_PAGE: string[] = [
+	static readonly CreateProductPage: string[] = [
 		"apigateway:CreateProductPage",
 	];
 	/** IAM actions required for the CreateProductRestEndpointPage API call. */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+	static readonly CreateProductRestEndpointPage: string[] = [
 		"apigateway:CreateProductRestEndpointPage",
 	];
 	/** IAM actions required for the CreateRequestValidator API call. */
-	static readonly CREATE_REQUEST_VALIDATOR: string[] = ["apigateway:POST"];
+	static readonly CreateRequestValidator: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateResource API call. */
-	static readonly CREATE_RESOURCE: string[] = ["apigateway:POST"];
+	static readonly CreateResource: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRestApi API call. */
-	static readonly CREATE_REST_API: string[] = [
+	static readonly CreateRestApi: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 		"apigateway:UpdateRestApiPolicy",
 	];
 	/** IAM actions required for the CreateRoute API call. */
-	static readonly CREATE_ROUTE: string[] = ["apigateway:POST"];
+	static readonly CreateRoute: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRouteResponse API call. */
-	static readonly CREATE_ROUTE_RESPONSE: string[] = ["apigateway:POST"];
+	static readonly CreateRouteResponse: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateRoutingRule API call. */
-	static readonly CREATE_ROUTING_RULE: string[] = [
+	static readonly CreateRoutingRule: string[] = [
 		"apigateway:CreateRoutingRule",
 	];
 	/** IAM actions required for the CreateStage API call. */
-	static readonly CREATE_STAGE: string[] = [
-		"apigateway:POST",
-		"apigateway:PUT",
-	];
+	static readonly CreateStage: string[] = ["apigateway:POST", "apigateway:PUT"];
 	/** IAM actions required for the CreateUsagePlan API call. */
-	static readonly CREATE_USAGE_PLAN: string[] = [
+	static readonly CreateUsagePlan: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the CreateUsagePlanKey API call. */
-	static readonly CREATE_USAGE_PLAN_KEY: string[] = ["apigateway:POST"];
+	static readonly CreateUsagePlanKey: string[] = ["apigateway:POST"];
 	/** IAM actions required for the CreateVpcLink API call. */
-	static readonly CREATE_VPC_LINK: string[] = [
+	static readonly CreateVpcLink: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the DeleteAccessLogSettings API call. */
-	static readonly DELETE_ACCESS_LOG_SETTINGS: string[] = ["apigateway:DELETE"];
+	static readonly DeleteAccessLogSettings: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteApi API call. */
-	static readonly DELETE_API: string[] = ["apigateway:DELETE"];
+	static readonly DeleteApi: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteApiKey API call. */
-	static readonly DELETE_API_KEY: string[] = ["apigateway:DELETE"];
+	static readonly DeleteApiKey: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteApiMapping API call. */
-	static readonly DELETE_API_MAPPING: string[] = ["apigateway:DELETE"];
+	static readonly DeleteApiMapping: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteAuthorizer API call. */
-	static readonly DELETE_AUTHORIZER: string[] = ["apigateway:DELETE"];
+	static readonly DeleteAuthorizer: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteBasePathMapping API call. */
-	static readonly DELETE_BASE_PATH_MAPPING: string[] = ["apigateway:DELETE"];
+	static readonly DeleteBasePathMapping: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteClientCertificate API call. */
-	static readonly DELETE_CLIENT_CERTIFICATE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteClientCertificate: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteCorsConfiguration API call. */
-	static readonly DELETE_CORS_CONFIGURATION: string[] = ["apigateway:DELETE"];
+	static readonly DeleteCorsConfiguration: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteDeployment API call. */
-	static readonly DELETE_DEPLOYMENT: string[] = ["apigateway:DELETE"];
+	static readonly DeleteDeployment: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteDocumentationPart API call. */
-	static readonly DELETE_DOCUMENTATION_PART: string[] = ["apigateway:DELETE"];
+	static readonly DeleteDocumentationPart: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteDocumentationVersion API call. */
-	static readonly DELETE_DOCUMENTATION_VERSION: string[] = [
-		"apigateway:DELETE",
-	];
+	static readonly DeleteDocumentationVersion: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteDomainName API call. */
-	static readonly DELETE_DOMAIN_NAME: string[] = [
+	static readonly DeleteDomainName: string[] = [
 		"apigateway:DELETE",
 		"apigateway:RemoveCertificateFromDomain",
 	];
 	/** IAM actions required for the DeleteDomainNameAccessAssociation API call. */
-	static readonly DELETE_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+	static readonly DeleteDomainNameAccessAssociation: string[] = [
 		"apigateway:DELETE",
 	];
 	/** IAM actions required for the DeleteGatewayResponse API call. */
-	static readonly DELETE_GATEWAY_RESPONSE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteGatewayResponse: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = ["apigateway:DELETE"];
+	static readonly DeleteIntegration: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteIntegrationResponse API call. */
-	static readonly DELETE_INTEGRATION_RESPONSE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteIntegrationResponse: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteMethod API call. */
-	static readonly DELETE_METHOD: string[] = ["apigateway:DELETE"];
+	static readonly DeleteMethod: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteMethodResponse API call. */
-	static readonly DELETE_METHOD_RESPONSE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteMethodResponse: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteModel API call. */
-	static readonly DELETE_MODEL: string[] = ["apigateway:DELETE"];
+	static readonly DeleteModel: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeletePortal API call. */
-	static readonly DELETE_PORTAL: string[] = ["apigateway:DeletePortal"];
+	static readonly DeletePortal: string[] = ["apigateway:DeletePortal"];
 	/** IAM actions required for the DeletePortalProduct API call. */
-	static readonly DELETE_PORTAL_PRODUCT: string[] = [
+	static readonly DeletePortalProduct: string[] = [
 		"apigateway:DeletePortalProduct",
 	];
 	/** IAM actions required for the DeletePortalProductSharingPolicy API call. */
-	static readonly DELETE_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+	static readonly DeletePortalProductSharingPolicy: string[] = [
 		"apigateway:DeletePortalProductSharingPolicy",
 	];
 	/** IAM actions required for the DeleteProductPage API call. */
-	static readonly DELETE_PRODUCT_PAGE: string[] = [
+	static readonly DeleteProductPage: string[] = [
 		"apigateway:DeleteProductPage",
 	];
 	/** IAM actions required for the DeleteProductRestEndpointPage API call. */
-	static readonly DELETE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+	static readonly DeleteProductRestEndpointPage: string[] = [
 		"apigateway:DeleteProductRestEndpointPage",
 	];
 	/** IAM actions required for the DeleteRequestValidator API call. */
-	static readonly DELETE_REQUEST_VALIDATOR: string[] = ["apigateway:DELETE"];
+	static readonly DeleteRequestValidator: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteResource API call. */
-	static readonly DELETE_RESOURCE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteResource: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRestApi API call. */
-	static readonly DELETE_REST_API: string[] = ["apigateway:DELETE"];
+	static readonly DeleteRestApi: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRoute API call. */
-	static readonly DELETE_ROUTE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteRoute: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRouteRequestParameter API call. */
-	static readonly DELETE_ROUTE_REQUEST_PARAMETER: string[] = [
-		"apigateway:DELETE",
-	];
+	static readonly DeleteRouteRequestParameter: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRouteResponse API call. */
-	static readonly DELETE_ROUTE_RESPONSE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteRouteResponse: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRouteSettings API call. */
-	static readonly DELETE_ROUTE_SETTINGS: string[] = ["apigateway:DELETE"];
+	static readonly DeleteRouteSettings: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteRoutingRule API call. */
-	static readonly DELETE_ROUTING_RULE: string[] = [
+	static readonly DeleteRoutingRule: string[] = [
 		"apigateway:DeleteRoutingRule",
 	];
 	/** IAM actions required for the DeleteStage API call. */
-	static readonly DELETE_STAGE: string[] = ["apigateway:DELETE"];
+	static readonly DeleteStage: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteUsagePlan API call. */
-	static readonly DELETE_USAGE_PLAN: string[] = ["apigateway:DELETE"];
+	static readonly DeleteUsagePlan: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteUsagePlanKey API call. */
-	static readonly DELETE_USAGE_PLAN_KEY: string[] = ["apigateway:DELETE"];
+	static readonly DeleteUsagePlanKey: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DeleteVpcLink API call. */
-	static readonly DELETE_VPC_LINK: string[] = ["apigateway:DELETE"];
+	static readonly DeleteVpcLink: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the DisablePortal API call. */
-	static readonly DISABLE_PORTAL: string[] = ["apigateway:DisablePortal"];
+	static readonly DisablePortal: string[] = ["apigateway:DisablePortal"];
 	/** IAM actions required for the ExportApi API call. */
-	static readonly EXPORT_API: string[] = ["apigateway:GET"];
+	static readonly ExportApi: string[] = ["apigateway:GET"];
 	/** IAM actions required for the FlushStageAuthorizersCache API call. */
-	static readonly FLUSH_STAGE_AUTHORIZERS_CACHE: string[] = [
-		"apigateway:DELETE",
-	];
+	static readonly FlushStageAuthorizersCache: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the FlushStageCache API call. */
-	static readonly FLUSH_STAGE_CACHE: string[] = ["apigateway:DELETE"];
+	static readonly FlushStageCache: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the GenerateClientCertificate API call. */
-	static readonly GENERATE_CLIENT_CERTIFICATE: string[] = [
+	static readonly GenerateClientCertificate: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the GetAccount API call. */
-	static readonly GET_ACCOUNT: string[] = ["apigateway:GET"];
+	static readonly opGetAccount: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApi API call. */
-	static readonly GET_API: string[] = ["apigateway:GET"];
+	static readonly opGetApi: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApiKey API call. */
-	static readonly GET_API_KEY: string[] = ["apigateway:GET"];
+	static readonly opGetApiKey: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApiKeys API call. */
-	static readonly GET_API_KEYS: string[] = ["apigateway:GET"];
+	static readonly opGetApiKeys: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApiMapping API call. */
-	static readonly GET_API_MAPPING: string[] = ["apigateway:GET"];
+	static readonly opGetApiMapping: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApiMappings API call. */
-	static readonly GET_API_MAPPINGS: string[] = ["apigateway:GET"];
+	static readonly opGetApiMappings: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetApis API call. */
-	static readonly GET_APIS: string[] = ["apigateway:GET"];
+	static readonly opGetApis: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetAuthorizer API call. */
-	static readonly GET_AUTHORIZER: string[] = ["apigateway:GET"];
+	static readonly opGetAuthorizer: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetAuthorizers API call. */
-	static readonly GET_AUTHORIZERS: string[] = ["apigateway:GET"];
+	static readonly opGetAuthorizers: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetBasePathMapping API call. */
-	static readonly GET_BASE_PATH_MAPPING: string[] = ["apigateway:GET"];
+	static readonly opGetBasePathMapping: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetBasePathMappings API call. */
-	static readonly GET_BASE_PATH_MAPPINGS: string[] = ["apigateway:GET"];
+	static readonly opGetBasePathMappings: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetClientCertificate API call. */
-	static readonly GET_CLIENT_CERTIFICATE: string[] = ["apigateway:GET"];
+	static readonly opGetClientCertificate: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetClientCertificates API call. */
-	static readonly GET_CLIENT_CERTIFICATES: string[] = ["apigateway:GET"];
+	static readonly opGetClientCertificates: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDeployment API call. */
-	static readonly GET_DEPLOYMENT: string[] = ["apigateway:GET"];
+	static readonly opGetDeployment: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDeployments API call. */
-	static readonly GET_DEPLOYMENTS: string[] = ["apigateway:GET"];
+	static readonly opGetDeployments: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDocumentationPart API call. */
-	static readonly GET_DOCUMENTATION_PART: string[] = ["apigateway:GET"];
+	static readonly opGetDocumentationPart: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDocumentationParts API call. */
-	static readonly GET_DOCUMENTATION_PARTS: string[] = ["apigateway:GET"];
+	static readonly opGetDocumentationParts: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDocumentationVersion API call. */
-	static readonly GET_DOCUMENTATION_VERSION: string[] = ["apigateway:GET"];
+	static readonly opGetDocumentationVersion: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDocumentationVersions API call. */
-	static readonly GET_DOCUMENTATION_VERSIONS: string[] = ["apigateway:GET"];
+	static readonly opGetDocumentationVersions: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDomainName API call. */
-	static readonly GET_DOMAIN_NAME: string[] = ["apigateway:GET"];
+	static readonly opGetDomainName: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetDomainNameAccessAssociations API call. */
-	static readonly GET_DOMAIN_NAME_ACCESS_ASSOCIATIONS: string[] = [
+	static readonly opGetDomainNameAccessAssociations: string[] = [
 		"apigateway:GET",
 	];
 	/** IAM actions required for the GetDomainNames API call. */
-	static readonly GET_DOMAIN_NAMES: string[] = ["apigateway:GET"];
+	static readonly opGetDomainNames: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetExport API call. */
-	static readonly GET_EXPORT: string[] = ["apigateway:GET"];
+	static readonly opGetExport: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetGatewayResponse API call. */
-	static readonly GET_GATEWAY_RESPONSE: string[] = ["apigateway:GET"];
+	static readonly opGetGatewayResponse: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetGatewayResponses API call. */
-	static readonly GET_GATEWAY_RESPONSES: string[] = ["apigateway:GET"];
+	static readonly opGetGatewayResponses: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly GET_INTEGRATION: string[] = ["apigateway:GET"];
+	static readonly opGetIntegration: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetIntegrationResponse API call. */
-	static readonly GET_INTEGRATION_RESPONSE: string[] = ["apigateway:GET"];
+	static readonly opGetIntegrationResponse: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetIntegrationResponses API call. */
-	static readonly GET_INTEGRATION_RESPONSES: string[] = ["apigateway:GET"];
+	static readonly opGetIntegrationResponses: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetIntegrations API call. */
-	static readonly GET_INTEGRATIONS: string[] = ["apigateway:GET"];
+	static readonly opGetIntegrations: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetMethod API call. */
-	static readonly GET_METHOD: string[] = ["apigateway:GET"];
+	static readonly opGetMethod: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetMethodResponse API call. */
-	static readonly GET_METHOD_RESPONSE: string[] = ["apigateway:GET"];
+	static readonly opGetMethodResponse: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetModel API call. */
-	static readonly GET_MODEL: string[] = ["apigateway:GET"];
+	static readonly opGetModel: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetModelTemplate API call. */
-	static readonly GET_MODEL_TEMPLATE: string[] = ["apigateway:GET"];
+	static readonly opGetModelTemplate: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetModels API call. */
-	static readonly GET_MODELS: string[] = ["apigateway:GET"];
+	static readonly opGetModels: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetPortal API call. */
-	static readonly GET_PORTAL: string[] = ["apigateway:GetPortal"];
+	static readonly opGetPortal: string[] = ["apigateway:GetPortal"];
 	/** IAM actions required for the GetPortalProduct API call. */
-	static readonly GET_PORTAL_PRODUCT: string[] = [
+	static readonly opGetPortalProduct: string[] = [
 		"apigateway:GetPortalProduct",
 	];
 	/** IAM actions required for the GetPortalProductSharingPolicy API call. */
-	static readonly GET_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+	static readonly opGetPortalProductSharingPolicy: string[] = [
 		"apigateway:GetPortalProductSharingPolicy",
 	];
 	/** IAM actions required for the GetProductPage API call. */
-	static readonly GET_PRODUCT_PAGE: string[] = ["apigateway:GetProductPage"];
+	static readonly opGetProductPage: string[] = ["apigateway:GetProductPage"];
 	/** IAM actions required for the GetProductRestEndpointPage API call. */
-	static readonly GET_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+	static readonly opGetProductRestEndpointPage: string[] = [
 		"apigateway:GetProductRestEndpointPage",
 	];
 	/** IAM actions required for the GetRequestValidator API call. */
-	static readonly GET_REQUEST_VALIDATOR: string[] = ["apigateway:GET"];
+	static readonly opGetRequestValidator: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRequestValidators API call. */
-	static readonly GET_REQUEST_VALIDATORS: string[] = ["apigateway:GET"];
+	static readonly opGetRequestValidators: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetResource API call. */
-	static readonly GET_RESOURCE: string[] = ["apigateway:GET"];
+	static readonly opGetResource: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetResources API call. */
-	static readonly GET_RESOURCES: string[] = ["apigateway:GET"];
+	static readonly opGetResources: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRestApi API call. */
-	static readonly GET_REST_API: string[] = ["apigateway:GET"];
+	static readonly opGetRestApi: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRestApis API call. */
-	static readonly GET_REST_APIS: string[] = ["apigateway:GET"];
+	static readonly opGetRestApis: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRoute API call. */
-	static readonly GET_ROUTE: string[] = ["apigateway:GET"];
+	static readonly opGetRoute: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRouteResponse API call. */
-	static readonly GET_ROUTE_RESPONSE: string[] = ["apigateway:GET"];
+	static readonly opGetRouteResponse: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRouteResponses API call. */
-	static readonly GET_ROUTE_RESPONSES: string[] = ["apigateway:GET"];
+	static readonly opGetRouteResponses: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRoutes API call. */
-	static readonly GET_ROUTES: string[] = ["apigateway:GET"];
+	static readonly opGetRoutes: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetRoutingRule API call. */
-	static readonly GET_ROUTING_RULE: string[] = ["apigateway:GetRoutingRule"];
+	static readonly opGetRoutingRule: string[] = ["apigateway:GetRoutingRule"];
 	/** IAM actions required for the GetSdk API call. */
-	static readonly GET_SDK: string[] = ["apigateway:GET"];
+	static readonly opGetSdk: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetSdkType API call. */
-	static readonly GET_SDK_TYPE: string[] = ["apigateway:GET"];
+	static readonly opGetSdkType: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetSdkTypes API call. */
-	static readonly GET_SDK_TYPES: string[] = ["apigateway:GET"];
+	static readonly opGetSdkTypes: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetStage API call. */
-	static readonly GET_STAGE: string[] = ["apigateway:GET"];
+	static readonly opGetStage: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetStages API call. */
-	static readonly GET_STAGES: string[] = ["apigateway:GET"];
+	static readonly opGetStages: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetTags API call. */
-	static readonly GET_TAGS: string[] = ["apigateway:GET"];
+	static readonly opGetTags: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetUsage API call. */
-	static readonly GET_USAGE: string[] = ["apigateway:GET"];
+	static readonly opGetUsage: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetUsagePlan API call. */
-	static readonly GET_USAGE_PLAN: string[] = ["apigateway:GET"];
+	static readonly opGetUsagePlan: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetUsagePlanKey API call. */
-	static readonly GET_USAGE_PLAN_KEY: string[] = ["apigateway:GET"];
+	static readonly opGetUsagePlanKey: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetUsagePlanKeys API call. */
-	static readonly GET_USAGE_PLAN_KEYS: string[] = ["apigateway:GET"];
+	static readonly opGetUsagePlanKeys: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetUsagePlans API call. */
-	static readonly GET_USAGE_PLANS: string[] = ["apigateway:GET"];
+	static readonly opGetUsagePlans: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetVpcLink API call. */
-	static readonly GET_VPC_LINK: string[] = ["apigateway:GET"];
+	static readonly opGetVpcLink: string[] = ["apigateway:GET"];
 	/** IAM actions required for the GetVpcLinks API call. */
-	static readonly GET_VPC_LINKS: string[] = ["apigateway:GET"];
+	static readonly opGetVpcLinks: string[] = ["apigateway:GET"];
 	/** IAM actions required for the ImportApi API call. */
-	static readonly IMPORT_API: string[] = [
+	static readonly ImportApi: string[] = [
 		"apigateway:POST",
 		"apigateway:PUT",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ImportApiKeys API call. */
-	static readonly IMPORT_API_KEYS: string[] = ["apigateway:POST"];
+	static readonly ImportApiKeys: string[] = ["apigateway:POST"];
 	/** IAM actions required for the ImportDocumentationParts API call. */
-	static readonly IMPORT_DOCUMENTATION_PARTS: string[] = ["apigateway:PUT"];
+	static readonly ImportDocumentationParts: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the ImportRestApi API call. */
-	static readonly IMPORT_REST_API: string[] = [
+	static readonly ImportRestApi: string[] = [
 		"apigateway:POST",
 		"iam:PassRole",
 		"apigateway:UpdateRestApiPolicy",
 	];
 	/** IAM actions required for the ListPortalProducts API call. */
-	static readonly LIST_PORTAL_PRODUCTS: string[] = [
+	static readonly ListPortalProducts: string[] = [
 		"apigateway:ListPortalProducts",
 	];
 	/** IAM actions required for the ListPortals API call. */
-	static readonly LIST_PORTALS: string[] = ["apigateway:ListPortals"];
+	static readonly ListPortals: string[] = ["apigateway:ListPortals"];
 	/** IAM actions required for the ListProductPages API call. */
-	static readonly LIST_PRODUCT_PAGES: string[] = [
-		"apigateway:ListProductPages",
-	];
+	static readonly ListProductPages: string[] = ["apigateway:ListProductPages"];
 	/** IAM actions required for the ListProductRestEndpointPages API call. */
-	static readonly LIST_PRODUCT_REST_ENDPOINT_PAGES: string[] = [
+	static readonly ListProductRestEndpointPages: string[] = [
 		"apigateway:ListProductRestEndpointPages",
 	];
 	/** IAM actions required for the ListRoutingRules API call. */
-	static readonly LIST_ROUTING_RULES: string[] = [
-		"apigateway:ListRoutingRules",
-	];
+	static readonly ListRoutingRules: string[] = ["apigateway:ListRoutingRules"];
 	/** IAM actions required for the PreviewPortal API call. */
-	static readonly PREVIEW_PORTAL: string[] = [
+	static readonly PreviewPortal: string[] = [
 		"apigateway:GetPortalProduct",
 		"apigateway:PreviewPortal",
 	];
 	/** IAM actions required for the PublishPortal API call. */
-	static readonly PUBLISH_PORTAL: string[] = [
+	static readonly PublishPortal: string[] = [
 		"apigateway:GetPortalProduct",
 		"apigateway:PublishPortal",
 	];
 	/** IAM actions required for the PutGatewayResponse API call. */
-	static readonly PUT_GATEWAY_RESPONSE: string[] = ["apigateway:PUT"];
+	static readonly PutGatewayResponse: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutIntegration API call. */
-	static readonly PUT_INTEGRATION: string[] = [
-		"apigateway:PUT",
-		"iam:PassRole",
-	];
+	static readonly PutIntegration: string[] = ["apigateway:PUT", "iam:PassRole"];
 	/** IAM actions required for the PutIntegrationResponse API call. */
-	static readonly PUT_INTEGRATION_RESPONSE: string[] = ["apigateway:PUT"];
+	static readonly PutIntegrationResponse: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutMethod API call. */
-	static readonly PUT_METHOD: string[] = ["apigateway:PUT"];
+	static readonly PutMethod: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutMethodResponse API call. */
-	static readonly PUT_METHOD_RESPONSE: string[] = ["apigateway:PUT"];
+	static readonly PutMethodResponse: string[] = ["apigateway:PUT"];
 	/** IAM actions required for the PutPortalProductSharingPolicy API call. */
-	static readonly PUT_PORTAL_PRODUCT_SHARING_POLICY: string[] = [
+	static readonly PutPortalProductSharingPolicy: string[] = [
 		"apigateway:PutPortalProductSharingPolicy",
 	];
 	/** IAM actions required for the PutRestApi API call. */
-	static readonly PUT_REST_API: string[] = [
+	static readonly PutRestApi: string[] = [
 		"apigateway:PUT",
 		"iam:PassRole",
 		"apigateway:UpdateRestApiPolicy",
 	];
 	/** IAM actions required for the PutRoutingRule API call. */
-	static readonly PUT_ROUTING_RULE: string[] = ["apigateway:UpdateRoutingRule"];
+	static readonly PutRoutingRule: string[] = ["apigateway:UpdateRoutingRule"];
 	/** IAM actions required for the ReimportApi API call. */
-	static readonly REIMPORT_API: string[] = [
+	static readonly ReimportApi: string[] = [
 		"apigateway:DELETE",
 		"apigateway:POST",
 		"apigateway:PUT",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the RejectDomainNameAccessAssociation API call. */
-	static readonly REJECT_DOMAIN_NAME_ACCESS_ASSOCIATION: string[] = [
+	static readonly RejectDomainNameAccessAssociation: string[] = [
 		"apigateway:RejectAccessAssociation",
 	];
 	/** IAM actions required for the ResetAuthorizersCache API call. */
-	static readonly RESET_AUTHORIZERS_CACHE: string[] = ["apigateway:DELETE"];
+	static readonly ResetAuthorizersCache: string[] = ["apigateway:DELETE"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"apigateway:PATCH",
 		"apigateway:POST",
 		"apigateway:PUT",
 	];
 	/** IAM actions required for the TestInvokeAuthorizer API call. */
-	static readonly TEST_INVOKE_AUTHORIZER: string[] = ["apigateway:POST"];
+	static readonly TestInvokeAuthorizer: string[] = ["apigateway:POST"];
 	/** IAM actions required for the TestInvokeMethod API call. */
-	static readonly TEST_INVOKE_METHOD: string[] = ["apigateway:POST"];
+	static readonly TestInvokeMethod: string[] = ["apigateway:POST"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"apigateway:DELETE",
 		"apigateway:PATCH",
 	];
 	/** IAM actions required for the UpdateAccount API call. */
-	static readonly UPDATE_ACCOUNT: string[] = [
+	static readonly UpdateAccount: string[] = [
 		"apigateway:PATCH",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the UpdateApi API call. */
-	static readonly UPDATE_API: string[] = ["apigateway:PATCH", "iam:PassRole"];
+	static readonly UpdateApi: string[] = ["apigateway:PATCH", "iam:PassRole"];
 	/** IAM actions required for the UpdateApiKey API call. */
-	static readonly UPDATE_API_KEY: string[] = ["apigateway:PATCH"];
+	static readonly UpdateApiKey: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateApiMapping API call. */
-	static readonly UPDATE_API_MAPPING: string[] = ["apigateway:PATCH"];
+	static readonly UpdateApiMapping: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateAuthorizer API call. */
-	static readonly UPDATE_AUTHORIZER: string[] = [
+	static readonly UpdateAuthorizer: string[] = [
 		"apigateway:PATCH",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the UpdateBasePathMapping API call. */
-	static readonly UPDATE_BASE_PATH_MAPPING: string[] = ["apigateway:PATCH"];
+	static readonly UpdateBasePathMapping: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateClientCertificate API call. */
-	static readonly UPDATE_CLIENT_CERTIFICATE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateClientCertificate: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateDeployment API call. */
-	static readonly UPDATE_DEPLOYMENT: string[] = ["apigateway:PATCH"];
+	static readonly UpdateDeployment: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateDocumentationPart API call. */
-	static readonly UPDATE_DOCUMENTATION_PART: string[] = ["apigateway:PATCH"];
+	static readonly UpdateDocumentationPart: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateDocumentationVersion API call. */
-	static readonly UPDATE_DOCUMENTATION_VERSION: string[] = ["apigateway:PATCH"];
+	static readonly UpdateDocumentationVersion: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateDomainName API call. */
-	static readonly UPDATE_DOMAIN_NAME: string[] = [
+	static readonly UpdateDomainName: string[] = [
 		"apigateway:AddCertificateToDomain",
 		"apigateway:PATCH",
 		"apigateway:RemoveCertificateFromDomain",
@@ -4315,58 +5379,58 @@ export class ApiGatewayOperations {
 		"apigateway:UpdateDomainNamePolicy",
 	];
 	/** IAM actions required for the UpdateGatewayResponse API call. */
-	static readonly UPDATE_GATEWAY_RESPONSE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateGatewayResponse: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateIntegration API call. */
-	static readonly UPDATE_INTEGRATION: string[] = [
+	static readonly UpdateIntegration: string[] = [
 		"apigateway:PATCH",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the UpdateIntegrationResponse API call. */
-	static readonly UPDATE_INTEGRATION_RESPONSE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateIntegrationResponse: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateMethod API call. */
-	static readonly UPDATE_METHOD: string[] = ["apigateway:PATCH"];
+	static readonly UpdateMethod: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateMethodResponse API call. */
-	static readonly UPDATE_METHOD_RESPONSE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateMethodResponse: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateModel API call. */
-	static readonly UPDATE_MODEL: string[] = ["apigateway:PATCH"];
+	static readonly UpdateModel: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdatePortal API call. */
-	static readonly UPDATE_PORTAL: string[] = [
+	static readonly UpdatePortal: string[] = [
 		"apigateway:GetPortalProduct",
 		"apigateway:UpdatePortal",
 	];
 	/** IAM actions required for the UpdatePortalProduct API call. */
-	static readonly UPDATE_PORTAL_PRODUCT: string[] = [
+	static readonly UpdatePortalProduct: string[] = [
 		"apigateway:UpdatePortalProduct",
 	];
 	/** IAM actions required for the UpdateProductPage API call. */
-	static readonly UPDATE_PRODUCT_PAGE: string[] = [
+	static readonly UpdateProductPage: string[] = [
 		"apigateway:UpdateProductPage",
 	];
 	/** IAM actions required for the UpdateProductRestEndpointPage API call. */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE: string[] = [
+	static readonly UpdateProductRestEndpointPage: string[] = [
 		"apigateway:UpdateProductRestEndpointPage",
 	];
 	/** IAM actions required for the UpdateRequestValidator API call. */
-	static readonly UPDATE_REQUEST_VALIDATOR: string[] = ["apigateway:PATCH"];
+	static readonly UpdateRequestValidator: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateResource API call. */
-	static readonly UPDATE_RESOURCE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateResource: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateRestApi API call. */
-	static readonly UPDATE_REST_API: string[] = [
+	static readonly UpdateRestApi: string[] = [
 		"apigateway:PATCH",
 		"apigateway:UpdateRestApiPolicy",
 	];
 	/** IAM actions required for the UpdateRoute API call. */
-	static readonly UPDATE_ROUTE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateRoute: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateRouteResponse API call. */
-	static readonly UPDATE_ROUTE_RESPONSE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateRouteResponse: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateStage API call. */
-	static readonly UPDATE_STAGE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateStage: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateUsage API call. */
-	static readonly UPDATE_USAGE: string[] = ["apigateway:PATCH"];
+	static readonly UpdateUsage: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateUsagePlan API call. */
-	static readonly UPDATE_USAGE_PLAN: string[] = ["apigateway:PATCH"];
+	static readonly UpdateUsagePlan: string[] = ["apigateway:PATCH"];
 	/** IAM actions required for the UpdateVpcLink API call. */
-	static readonly UPDATE_VPC_LINK: string[] = ["apigateway:PATCH"];
+	static readonly UpdateVpcLink: string[] = ["apigateway:PATCH"];
 }
 
 /**
@@ -4374,7 +5438,7 @@ export class ApiGatewayOperations {
  */
 export class ApiGatewayConditions {
 	/** Condition keys applicable to the CreatePortal action. */
-	static readonly CREATE_PORTAL_CONDITION_KEYS: string[] = [
+	static readonly CreatePortalConditionKeys: string[] = [
 		"apigateway:Request/CognitoUserPoolArn",
 		"apigateway:Request/PortalDisplayName",
 		"apigateway:Request/PortalDomainName",
@@ -4382,64 +5446,64 @@ export class ApiGatewayConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePortalProduct action. */
-	static readonly CREATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = [
+	static readonly CreatePortalProductConditionKeys: string[] = [
 		"apigateway:Request/PortalProductDisplayName",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProductPage action. */
-	static readonly CREATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateProductPageConditionKeys: string[] = [
 		"apigateway:Request/ProductPageTitle",
 	];
 	/** Condition keys applicable to the CreateProductRestEndpointPage action. */
-	static readonly CREATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateProductRestEndpointPageConditionKeys: string[] = [
 		"apigateway:Request/Method",
 		"apigateway:Request/ProductRestEndpointPageEndpointPrefix",
 		"apigateway:Request/RestApiId",
 		"apigateway:Request/Stage",
 	];
 	/** Condition keys applicable to the CreateRoutingRule action. */
-	static readonly CREATE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateRoutingRuleConditionKeys: string[] = [
 		"apigateway:Request/ConditionBasePaths",
 		"apigateway:Request/Priority",
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DELETE action. */
-	static readonly DELETE_CONDITION_KEYS: string[] = [
+	static readonly DELETEConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteRoutingRule action. */
-	static readonly DELETE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+	static readonly DeleteRoutingRuleConditionKeys: string[] = [
 		"apigateway:Resource/ConditionBasePaths",
 		"apigateway:Resource/Priority",
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetRoutingRule action. */
-	static readonly GET_ROUTING_RULE_CONDITION_KEYS: string[] = [
+	static readonly actionGetRoutingRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListRoutingRules action. */
-	static readonly LIST_ROUTING_RULES_CONDITION_KEYS: string[] = [
+	static readonly ListRoutingRulesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PATCH action. */
-	static readonly PATCH_CONDITION_KEYS: string[] = [
+	static readonly PATCHConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the POST action. */
-	static readonly POST_CONDITION_KEYS: string[] = [
+	static readonly POSTConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PUT action. */
-	static readonly PUT_CONDITION_KEYS: string[] = [
+	static readonly PUTConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePortal action. */
-	static readonly UPDATE_PORTAL_CONDITION_KEYS: string[] = [
+	static readonly UpdatePortalConditionKeys: string[] = [
 		"apigateway:Request/CognitoUserPoolArn",
 		"apigateway:Request/PortalDisplayName",
 		"apigateway:Request/PortalDomainName",
@@ -4447,21 +5511,21 @@ export class ApiGatewayConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePortalProduct action. */
-	static readonly UPDATE_PORTAL_PRODUCT_CONDITION_KEYS: string[] = [
+	static readonly UpdatePortalProductConditionKeys: string[] = [
 		"apigateway:Request/PortalProductDisplayName",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateProductPage action. */
-	static readonly UPDATE_PRODUCT_PAGE_CONDITION_KEYS: string[] = [
+	static readonly UpdateProductPageConditionKeys: string[] = [
 		"apigateway:Request/ProductPageTitle",
 	];
 	/** Condition keys applicable to the UpdateProductRestEndpointPage action. */
-	static readonly UPDATE_PRODUCT_REST_ENDPOINT_PAGE_CONDITION_KEYS: string[] = [
+	static readonly UpdateProductRestEndpointPageConditionKeys: string[] = [
 		"apigateway:Request/ProductRestEndpointPageEndpointPrefix",
 	];
 	/** Condition keys applicable to the UpdateRoutingRule action. */
-	static readonly UPDATE_ROUTING_RULE_CONDITION_KEYS: string[] = [
+	static readonly UpdateRoutingRuleConditionKeys: string[] = [
 		"apigateway:Request/ConditionBasePaths",
 		"apigateway:Request/Priority",
 		"apigateway:Resource/ConditionBasePaths",
@@ -4606,11 +5670,11 @@ export class ApiGatewayConditions {
 	/** Condition key: apigateway:Resource/Stage (String) */
 	static readonly RESOURCE_STAGE = "apigateway:Resource/Stage";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `apigateway:Request/AccessAssociationSource`.

@@ -13,21 +13,21 @@ export class BcmRecommendedActionsActions {
 	static readonly SERVICE_PREFIX = "bcm-recommended-actions";
 
 	/** [List] bcm-recommended-actions:ListRecommendedActions */
-	static readonly LIST_RECOMMENDED_ACTIONS =
+	static readonly ListRecommendedActions =
 		"bcm-recommended-actions:ListRecommendedActions";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BcmRecommendedActionsActions.LIST_RECOMMENDED_ACTIONS,
+	static readonly AllListActions: string[] = [
+		BcmRecommendedActionsActions.ListRecommendedActions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -35,7 +35,7 @@ export class BcmRecommendedActionsActions {
  */
 export class BcmRecommendedActionsOperations {
 	/** IAM actions required for the ListRecommendedActions API call. */
-	static readonly LIST_RECOMMENDED_ACTIONS: string[] = [
+	static readonly ListRecommendedActions: string[] = [
 		"bcm-recommended-actions:ListRecommendedActions",
 	];
 }

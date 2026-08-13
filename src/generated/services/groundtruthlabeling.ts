@@ -13,73 +13,71 @@ export class GroundtruthlabelingActions {
 	static readonly SERVICE_PREFIX = "groundtruthlabeling";
 
 	/** [Write] groundtruthlabeling:AssociatePatchToManifestJob */
-	static readonly ASSOCIATE_PATCH_TO_MANIFEST_JOB =
+	static readonly AssociatePatchToManifestJob =
 		"groundtruthlabeling:AssociatePatchToManifestJob";
 	/** [Write] groundtruthlabeling:CreateBatch */
-	static readonly CREATE_BATCH = "groundtruthlabeling:CreateBatch";
+	static readonly CreateBatch = "groundtruthlabeling:CreateBatch";
 	/** [Write] groundtruthlabeling:CreateIntakeForm */
-	static readonly CREATE_INTAKE_FORM = "groundtruthlabeling:CreateIntakeForm";
+	static readonly CreateIntakeForm = "groundtruthlabeling:CreateIntakeForm";
 	/** [Write] groundtruthlabeling:CreateProject */
-	static readonly CREATE_PROJECT = "groundtruthlabeling:CreateProject";
+	static readonly CreateProject = "groundtruthlabeling:CreateProject";
 	/** [Write] groundtruthlabeling:CreateWorkflowDefinition */
-	static readonly CREATE_WORKFLOW_DEFINITION =
+	static readonly CreateWorkflowDefinition =
 		"groundtruthlabeling:CreateWorkflowDefinition";
 	/** [Read] groundtruthlabeling:DescribeConsoleJob */
-	static readonly DESCRIBE_CONSOLE_JOB =
-		"groundtruthlabeling:DescribeConsoleJob";
+	static readonly DescribeConsoleJob = "groundtruthlabeling:DescribeConsoleJob";
 	/** [Write] groundtruthlabeling:GenerateLIDARPreviewTaskConfigJob */
-	static readonly GENERATE_LIDAR_PREVIEW_TASK_CONFIG_JOB =
+	static readonly GenerateLIDARPreviewTaskConfigJob =
 		"groundtruthlabeling:GenerateLIDARPreviewTaskConfigJob";
 	/** [Read] groundtruthlabeling:GetBatch */
-	static readonly GET_BATCH = "groundtruthlabeling:GetBatch";
+	static readonly actionGetBatch = "groundtruthlabeling:GetBatch";
 	/** [Read] groundtruthlabeling:GetIntakeFormStatus */
-	static readonly GET_INTAKE_FORM_STATUS =
+	static readonly actionGetIntakeFormStatus =
 		"groundtruthlabeling:GetIntakeFormStatus";
 	/** [Read] groundtruthlabeling:ListBatches */
-	static readonly LIST_BATCHES = "groundtruthlabeling:ListBatches";
+	static readonly ListBatches = "groundtruthlabeling:ListBatches";
 	/** [Read] groundtruthlabeling:ListDatasetObjects */
-	static readonly LIST_DATASET_OBJECTS =
-		"groundtruthlabeling:ListDatasetObjects";
+	static readonly ListDatasetObjects = "groundtruthlabeling:ListDatasetObjects";
 	/** [Read] groundtruthlabeling:ListProjects */
-	static readonly LIST_PROJECTS = "groundtruthlabeling:ListProjects";
+	static readonly ListProjects = "groundtruthlabeling:ListProjects";
 	/** [Write] groundtruthlabeling:RunFilterOrSampleDatasetJob */
-	static readonly RUN_FILTER_OR_SAMPLE_DATASET_JOB =
+	static readonly RunFilterOrSampleDatasetJob =
 		"groundtruthlabeling:RunFilterOrSampleDatasetJob";
 	/** [Write] groundtruthlabeling:RunGenerateManifestByCrawlingJob */
-	static readonly RUN_GENERATE_MANIFEST_BY_CRAWLING_JOB =
+	static readonly RunGenerateManifestByCrawlingJob =
 		"groundtruthlabeling:RunGenerateManifestByCrawlingJob";
 	/** [Write] groundtruthlabeling:RunGenerateManifestMetricsJob */
-	static readonly RUN_GENERATE_MANIFEST_METRICS_JOB =
+	static readonly RunGenerateManifestMetricsJob =
 		"groundtruthlabeling:RunGenerateManifestMetricsJob";
 	/** [Write] groundtruthlabeling:UpdateBatch */
-	static readonly UPDATE_BATCH = "groundtruthlabeling:UpdateBatch";
+	static readonly UpdateBatch = "groundtruthlabeling:UpdateBatch";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GroundtruthlabelingActions.DESCRIBE_CONSOLE_JOB,
-		GroundtruthlabelingActions.GET_BATCH,
-		GroundtruthlabelingActions.GET_INTAKE_FORM_STATUS,
-		GroundtruthlabelingActions.LIST_BATCHES,
-		GroundtruthlabelingActions.LIST_DATASET_OBJECTS,
-		GroundtruthlabelingActions.LIST_PROJECTS,
+	static readonly AllReadActions: string[] = [
+		GroundtruthlabelingActions.DescribeConsoleJob,
+		GroundtruthlabelingActions.actionGetBatch,
+		GroundtruthlabelingActions.actionGetIntakeFormStatus,
+		GroundtruthlabelingActions.ListBatches,
+		GroundtruthlabelingActions.ListDatasetObjects,
+		GroundtruthlabelingActions.ListProjects,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GroundtruthlabelingActions.ASSOCIATE_PATCH_TO_MANIFEST_JOB,
-		GroundtruthlabelingActions.CREATE_BATCH,
-		GroundtruthlabelingActions.CREATE_INTAKE_FORM,
-		GroundtruthlabelingActions.CREATE_PROJECT,
-		GroundtruthlabelingActions.CREATE_WORKFLOW_DEFINITION,
-		GroundtruthlabelingActions.GENERATE_LIDAR_PREVIEW_TASK_CONFIG_JOB,
-		GroundtruthlabelingActions.RUN_FILTER_OR_SAMPLE_DATASET_JOB,
-		GroundtruthlabelingActions.RUN_GENERATE_MANIFEST_BY_CRAWLING_JOB,
-		GroundtruthlabelingActions.RUN_GENERATE_MANIFEST_METRICS_JOB,
-		GroundtruthlabelingActions.UPDATE_BATCH,
+	static readonly AllWriteActions: string[] = [
+		GroundtruthlabelingActions.AssociatePatchToManifestJob,
+		GroundtruthlabelingActions.CreateBatch,
+		GroundtruthlabelingActions.CreateIntakeForm,
+		GroundtruthlabelingActions.CreateProject,
+		GroundtruthlabelingActions.CreateWorkflowDefinition,
+		GroundtruthlabelingActions.GenerateLIDARPreviewTaskConfigJob,
+		GroundtruthlabelingActions.RunFilterOrSampleDatasetJob,
+		GroundtruthlabelingActions.RunGenerateManifestByCrawlingJob,
+		GroundtruthlabelingActions.RunGenerateManifestMetricsJob,
+		GroundtruthlabelingActions.UpdateBatch,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

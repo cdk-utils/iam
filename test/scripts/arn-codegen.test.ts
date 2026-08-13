@@ -39,9 +39,7 @@ describe("parseArnTemplate", () => {
 	});
 
 	it("identifies common variables correctly", () => {
-		const parsed = parseArnTemplate(
-			"arn:${Partition}:s3:::${BucketName}",
-		);
+		const parsed = parseArnTemplate("arn:${Partition}:s3:::${BucketName}");
 
 		// Partition is common, BucketName is resource-specific
 		expect(parsed.resourceVariables).toHaveLength(1);
@@ -56,8 +54,12 @@ describe("buildRegexPattern", () => {
 		);
 		const regex = new RegExp(pattern);
 
-		expect(regex.test("arn:aws:dynamodb:us-east-1:123456789012:table/MyTable")).toBe(true);
-		expect(regex.test("arn:aws-cn:dynamodb:cn-north-1:111222333444:table/Test")).toBe(true);
+		expect(
+			regex.test("arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"),
+		).toBe(true);
+		expect(
+			regex.test("arn:aws-cn:dynamodb:cn-north-1:111222333444:table/Test"),
+		).toBe(true);
 	});
 
 	it("rejects invalid ARNs", () => {
@@ -66,7 +68,9 @@ describe("buildRegexPattern", () => {
 		);
 		const regex = new RegExp(pattern);
 
-		expect(regex.test("arn:aws:dynamodb:us-east-1:123456789012:index/MyIndex")).toBe(false);
+		expect(
+			regex.test("arn:aws:dynamodb:us-east-1:123456789012:index/MyIndex"),
+		).toBe(false);
 		expect(regex.test("not-an-arn")).toBe(false);
 	});
 
@@ -76,9 +80,15 @@ describe("buildRegexPattern", () => {
 		);
 		const regex = new RegExp(pattern);
 
-		expect(regex.test("arn:aws:dynamodb::123456789012:global-table/MyGlobal")).toBe(true);
+		expect(
+			regex.test("arn:aws:dynamodb::123456789012:global-table/MyGlobal"),
+		).toBe(true);
 		// Should not match if region is present
-		expect(regex.test("arn:aws:dynamodb:us-east-1:123456789012:global-table/MyGlobal")).toBe(false);
+		expect(
+			regex.test(
+				"arn:aws:dynamodb:us-east-1:123456789012:global-table/MyGlobal",
+			),
+		).toBe(false);
 	});
 
 	it("extracts named capture groups", () => {
@@ -86,7 +96,9 @@ describe("buildRegexPattern", () => {
 			"arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}",
 		);
 		const regex = new RegExp(pattern);
-		const match = regex.exec("arn:aws:dynamodb:us-east-1:123456789012:table/MyTable");
+		const match = regex.exec(
+			"arn:aws:dynamodb:us-east-1:123456789012:table/MyTable",
+		);
 
 		expect(match?.groups?.partition).toBe("aws");
 		expect(match?.groups?.region).toBe("us-east-1");
@@ -100,7 +112,11 @@ describe("buildRegexPattern", () => {
 		);
 		const regex = new RegExp(pattern);
 
-		expect(regex.test("arn:aws:amplifybackend:us-east-1:123456789012:/backend/app1/api/anything")).toBe(true);
+		expect(
+			regex.test(
+				"arn:aws:amplifybackend:us-east-1:123456789012:/backend/app1/api/anything",
+			),
+		).toBe(true);
 	});
 
 	it("handles multi-variable ARNs", () => {
@@ -108,7 +124,9 @@ describe("buildRegexPattern", () => {
 			"arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/index/${IndexName}",
 		);
 		const regex = new RegExp(pattern);
-		const match = regex.exec("arn:aws:dynamodb:eu-west-1:999:table/Orders/index/GSI1");
+		const match = regex.exec(
+			"arn:aws:dynamodb:eu-west-1:999:table/Orders/index/GSI1",
+		);
 
 		expect(match?.groups?.tableName).toBe("Orders");
 		expect(match?.groups?.indexName).toBe("GSI1");

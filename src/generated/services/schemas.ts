@@ -13,124 +13,209 @@ export class SchemasActions {
 	static readonly SERVICE_PREFIX = "schemas";
 
 	/** [Write] schemas:CreateDiscoverer */
-	static readonly CREATE_DISCOVERER = "schemas:CreateDiscoverer";
+	static readonly CreateDiscoverer = "schemas:CreateDiscoverer";
 	/** [Write] schemas:CreateRegistry */
-	static readonly CREATE_REGISTRY = "schemas:CreateRegistry";
+	static readonly CreateRegistry = "schemas:CreateRegistry";
 	/** [Write] schemas:CreateSchema */
-	static readonly CREATE_SCHEMA = "schemas:CreateSchema";
+	static readonly CreateSchema = "schemas:CreateSchema";
 	/** [Write] schemas:DeleteDiscoverer */
-	static readonly DELETE_DISCOVERER = "schemas:DeleteDiscoverer";
+	static readonly DeleteDiscoverer = "schemas:DeleteDiscoverer";
 	/** [Write] schemas:DeleteRegistry */
-	static readonly DELETE_REGISTRY = "schemas:DeleteRegistry";
+	static readonly DeleteRegistry = "schemas:DeleteRegistry";
 	/** [Write] schemas:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "schemas:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "schemas:DeleteResourcePolicy";
 	/** [Write] schemas:DeleteSchema */
-	static readonly DELETE_SCHEMA = "schemas:DeleteSchema";
+	static readonly DeleteSchema = "schemas:DeleteSchema";
 	/** [Write] schemas:DeleteSchemaVersion */
-	static readonly DELETE_SCHEMA_VERSION = "schemas:DeleteSchemaVersion";
+	static readonly DeleteSchemaVersion = "schemas:DeleteSchemaVersion";
 	/** [Read] schemas:DescribeCodeBinding */
-	static readonly DESCRIBE_CODE_BINDING = "schemas:DescribeCodeBinding";
+	static readonly DescribeCodeBinding = "schemas:DescribeCodeBinding";
 	/** [Read] schemas:DescribeDiscoverer */
-	static readonly DESCRIBE_DISCOVERER = "schemas:DescribeDiscoverer";
+	static readonly DescribeDiscoverer = "schemas:DescribeDiscoverer";
 	/** [Read] schemas:DescribeRegistry */
-	static readonly DESCRIBE_REGISTRY = "schemas:DescribeRegistry";
+	static readonly DescribeRegistry = "schemas:DescribeRegistry";
 	/** [Read] schemas:DescribeSchema */
-	static readonly DESCRIBE_SCHEMA = "schemas:DescribeSchema";
+	static readonly DescribeSchema = "schemas:DescribeSchema";
 	/** [Read] schemas:ExportSchema */
-	static readonly EXPORT_SCHEMA = "schemas:ExportSchema";
+	static readonly ExportSchema = "schemas:ExportSchema";
 	/** [Read] schemas:GetCodeBindingSource */
-	static readonly GET_CODE_BINDING_SOURCE = "schemas:GetCodeBindingSource";
+	static readonly actionGetCodeBindingSource = "schemas:GetCodeBindingSource";
 	/** [Read] schemas:GetDiscoveredSchema */
-	static readonly GET_DISCOVERED_SCHEMA = "schemas:GetDiscoveredSchema";
+	static readonly actionGetDiscoveredSchema = "schemas:GetDiscoveredSchema";
 	/** [Read] schemas:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "schemas:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "schemas:GetResourcePolicy";
 	/** [List] schemas:ListDiscoverers */
-	static readonly LIST_DISCOVERERS = "schemas:ListDiscoverers";
+	static readonly ListDiscoverers = "schemas:ListDiscoverers";
 	/** [List] schemas:ListRegistries */
-	static readonly LIST_REGISTRIES = "schemas:ListRegistries";
+	static readonly ListRegistries = "schemas:ListRegistries";
 	/** [List] schemas:ListSchemaVersions */
-	static readonly LIST_SCHEMA_VERSIONS = "schemas:ListSchemaVersions";
+	static readonly ListSchemaVersions = "schemas:ListSchemaVersions";
 	/** [List] schemas:ListSchemas */
-	static readonly LIST_SCHEMAS = "schemas:ListSchemas";
+	static readonly ListSchemas = "schemas:ListSchemas";
 	/** [Read] schemas:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "schemas:ListTagsForResource";
+	static readonly ListTagsForResource = "schemas:ListTagsForResource";
 	/** [Write] schemas:PutCodeBinding */
-	static readonly PUT_CODE_BINDING = "schemas:PutCodeBinding";
+	static readonly PutCodeBinding = "schemas:PutCodeBinding";
 	/** [Write] schemas:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "schemas:PutResourcePolicy";
+	static readonly PutResourcePolicy = "schemas:PutResourcePolicy";
 	/** [List] schemas:SearchSchemas */
-	static readonly SEARCH_SCHEMAS = "schemas:SearchSchemas";
+	static readonly SearchSchemas = "schemas:SearchSchemas";
 	/** [Write] schemas:StartDiscoverer */
-	static readonly START_DISCOVERER = "schemas:StartDiscoverer";
+	static readonly StartDiscoverer = "schemas:StartDiscoverer";
 	/** [Write] schemas:StopDiscoverer */
-	static readonly STOP_DISCOVERER = "schemas:StopDiscoverer";
+	static readonly StopDiscoverer = "schemas:StopDiscoverer";
 	/** [Tagging] schemas:TagResource */
-	static readonly TAG_RESOURCE = "schemas:TagResource";
+	static readonly TagResource = "schemas:TagResource";
 	/** [Tagging] schemas:UntagResource */
-	static readonly UNTAG_RESOURCE = "schemas:UntagResource";
+	static readonly UntagResource = "schemas:UntagResource";
 	/** [Write] schemas:UpdateDiscoverer */
-	static readonly UPDATE_DISCOVERER = "schemas:UpdateDiscoverer";
+	static readonly UpdateDiscoverer = "schemas:UpdateDiscoverer";
 	/** [Write] schemas:UpdateRegistry */
-	static readonly UPDATE_REGISTRY = "schemas:UpdateRegistry";
+	static readonly UpdateRegistry = "schemas:UpdateRegistry";
 	/** [Write] schemas:UpdateSchema */
-	static readonly UPDATE_SCHEMA = "schemas:UpdateSchema";
+	static readonly UpdateSchema = "schemas:UpdateSchema";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SchemasActions.DESCRIBE_CODE_BINDING,
-		SchemasActions.DESCRIBE_DISCOVERER,
-		SchemasActions.DESCRIBE_REGISTRY,
-		SchemasActions.DESCRIBE_SCHEMA,
-		SchemasActions.EXPORT_SCHEMA,
-		SchemasActions.GET_CODE_BINDING_SOURCE,
-		SchemasActions.GET_DISCOVERED_SCHEMA,
-		SchemasActions.GET_RESOURCE_POLICY,
-		SchemasActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SchemasActions.DescribeCodeBinding,
+		SchemasActions.DescribeDiscoverer,
+		SchemasActions.DescribeRegistry,
+		SchemasActions.DescribeSchema,
+		SchemasActions.ExportSchema,
+		SchemasActions.actionGetCodeBindingSource,
+		SchemasActions.actionGetDiscoveredSchema,
+		SchemasActions.actionGetResourcePolicy,
+		SchemasActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SchemasActions.CREATE_DISCOVERER,
-		SchemasActions.CREATE_REGISTRY,
-		SchemasActions.CREATE_SCHEMA,
-		SchemasActions.DELETE_DISCOVERER,
-		SchemasActions.DELETE_REGISTRY,
-		SchemasActions.DELETE_RESOURCE_POLICY,
-		SchemasActions.DELETE_SCHEMA,
-		SchemasActions.DELETE_SCHEMA_VERSION,
-		SchemasActions.PUT_CODE_BINDING,
-		SchemasActions.PUT_RESOURCE_POLICY,
-		SchemasActions.START_DISCOVERER,
-		SchemasActions.STOP_DISCOVERER,
-		SchemasActions.UPDATE_DISCOVERER,
-		SchemasActions.UPDATE_REGISTRY,
-		SchemasActions.UPDATE_SCHEMA,
+	static readonly AllWriteActions: string[] = [
+		SchemasActions.CreateDiscoverer,
+		SchemasActions.CreateRegistry,
+		SchemasActions.CreateSchema,
+		SchemasActions.DeleteDiscoverer,
+		SchemasActions.DeleteRegistry,
+		SchemasActions.DeleteResourcePolicy,
+		SchemasActions.DeleteSchema,
+		SchemasActions.DeleteSchemaVersion,
+		SchemasActions.PutCodeBinding,
+		SchemasActions.PutResourcePolicy,
+		SchemasActions.StartDiscoverer,
+		SchemasActions.StopDiscoverer,
+		SchemasActions.UpdateDiscoverer,
+		SchemasActions.UpdateRegistry,
+		SchemasActions.UpdateSchema,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SchemasActions.LIST_DISCOVERERS,
-		SchemasActions.LIST_REGISTRIES,
-		SchemasActions.LIST_SCHEMA_VERSIONS,
-		SchemasActions.LIST_SCHEMAS,
-		SchemasActions.SEARCH_SCHEMAS,
+	static readonly AllListActions: string[] = [
+		SchemasActions.ListDiscoverers,
+		SchemasActions.ListRegistries,
+		SchemasActions.ListSchemaVersions,
+		SchemasActions.ListSchemas,
+		SchemasActions.SearchSchemas,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SchemasActions.TAG_RESOURCE,
-		SchemasActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SchemasActions.TagResource,
+		SchemasActions.UntagResource,
 	];
 }
 
-const DiscovererArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):discoverer/(?<discovererId>[^:/?]+)$",
-);
-const RegistryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):registry/(?<registryName>[^:/?]+)$",
-);
-const SchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):schema/(?<registryName>[^:/?]+)/(?<schemaName>[^:/?]+)$",
-);
+/**
+ * Properties for building a discoverer ARN.
+ */
+export interface SchemasDiscovererArnProps {
+	/** The DiscovererId component of the ARN. */
+	readonly discovererId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a discoverer ARN.
+ */
+export interface SchemasDiscovererArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DiscovererId component. */
+	readonly discovererId: string;
+}
+
+/**
+ * Properties for building a registry ARN.
+ */
+export interface SchemasRegistryArnProps {
+	/** The RegistryName component of the ARN. */
+	readonly registryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a registry ARN.
+ */
+export interface SchemasRegistryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RegistryName component. */
+	readonly registryName: string;
+}
+
+/**
+ * Properties for building a schema ARN.
+ */
+export interface SchemasSchemaArnProps {
+	/** The RegistryName component of the ARN. */
+	readonly registryName: string;
+	/** The SchemaName component of the ARN. */
+	readonly schemaName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a schema ARN.
+ */
+export interface SchemasSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RegistryName component. */
+	readonly registryName: string;
+	/** The SchemaName component. */
+	readonly schemaName: string;
+}
+
+const DiscovererArnRegex =
+	/^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):discoverer\/(?<discovererId>[^:/?]+)$/;
+const RegistryArnRegex =
+	/^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):registry\/(?<registryName>[^:/?]+)$/;
+const SchemaArnRegex =
+	/^arn:(?<partition>[^:]+):schemas:(?<region>[^:]*):(?<account>[^:]*):schema\/(?<registryName>[^:/?]+)\/(?<schemaName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for schemas resources.
@@ -139,16 +224,7 @@ export class SchemasResources {
 	/**
 	 * Builds an ARN for the discoverer resource.
 	 */
-	static discoverer(props: {
-		/** The DiscovererId component of the ARN. */
-		readonly discovererId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static discoverer(props: SchemasDiscovererArnProps): string {
 		return `arn:${props.partition ?? "aws"}:schemas:${props.region ?? "*"}:${props.account ?? "*"}:discoverer/${props.discovererId}`;
 	}
 
@@ -163,12 +239,7 @@ export class SchemasResources {
 	 * Parses a discoverer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDiscovererArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		discovererId: string;
-	} {
+	static parseDiscovererArn(arn: string): SchemasDiscovererArnComponents {
 		const match = DiscovererArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid discoverer ARN: ${arn}`);
@@ -184,16 +255,7 @@ export class SchemasResources {
 	/**
 	 * Builds an ARN for the registry resource.
 	 */
-	static registry(props: {
-		/** The RegistryName component of the ARN. */
-		readonly registryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static registry(props: SchemasRegistryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:schemas:${props.region ?? "*"}:${props.account ?? "*"}:registry/${props.registryName}`;
 	}
 
@@ -208,12 +270,7 @@ export class SchemasResources {
 	 * Parses a registry ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRegistryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		registryName: string;
-	} {
+	static parseRegistryArn(arn: string): SchemasRegistryArnComponents {
 		const match = RegistryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid registry ARN: ${arn}`);
@@ -229,18 +286,7 @@ export class SchemasResources {
 	/**
 	 * Builds an ARN for the schema resource.
 	 */
-	static schema(props: {
-		/** The RegistryName component of the ARN. */
-		readonly registryName: string;
-		/** The SchemaName component of the ARN. */
-		readonly schemaName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static schema(props: SchemasSchemaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:schemas:${props.region ?? "*"}:${props.account ?? "*"}:schema/${props.registryName}/${props.schemaName}`;
 	}
 
@@ -255,13 +301,7 @@ export class SchemasResources {
 	 * Parses a schema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		registryName: string;
-		schemaName: string;
-	} {
+	static parseSchemaArn(arn: string): SchemasSchemaArnComponents {
 		const match = SchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid schema ARN: ${arn}`);
@@ -281,92 +321,88 @@ export class SchemasResources {
  */
 export class SchemasOperations {
 	/** IAM actions required for the CreateDiscoverer API call. */
-	static readonly CREATE_DISCOVERER: string[] = [
+	static readonly CreateDiscoverer: string[] = [
 		"schemas:CreateDiscoverer",
 		"schemas:TagResource",
 	];
 	/** IAM actions required for the CreateRegistry API call. */
-	static readonly CREATE_REGISTRY: string[] = [
+	static readonly CreateRegistry: string[] = [
 		"schemas:CreateRegistry",
 		"schemas:TagResource",
 	];
 	/** IAM actions required for the CreateSchema API call. */
-	static readonly CREATE_SCHEMA: string[] = [
+	static readonly CreateSchema: string[] = [
 		"schemas:CreateSchema",
 		"schemas:TagResource",
 	];
 	/** IAM actions required for the DeleteDiscoverer API call. */
-	static readonly DELETE_DISCOVERER: string[] = ["schemas:DeleteDiscoverer"];
+	static readonly DeleteDiscoverer: string[] = ["schemas:DeleteDiscoverer"];
 	/** IAM actions required for the DeleteRegistry API call. */
-	static readonly DELETE_REGISTRY: string[] = ["schemas:DeleteRegistry"];
+	static readonly DeleteRegistry: string[] = ["schemas:DeleteRegistry"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"schemas:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSchema API call. */
-	static readonly DELETE_SCHEMA: string[] = ["schemas:DeleteSchema"];
+	static readonly DeleteSchema: string[] = ["schemas:DeleteSchema"];
 	/** IAM actions required for the DeleteSchemaVersion API call. */
-	static readonly DELETE_SCHEMA_VERSION: string[] = [
+	static readonly DeleteSchemaVersion: string[] = [
 		"schemas:DeleteSchemaVersion",
 	];
 	/** IAM actions required for the DescribeCodeBinding API call. */
-	static readonly DESCRIBE_CODE_BINDING: string[] = [
+	static readonly DescribeCodeBinding: string[] = [
 		"schemas:DescribeCodeBinding",
 	];
 	/** IAM actions required for the DescribeDiscoverer API call. */
-	static readonly DESCRIBE_DISCOVERER: string[] = [
-		"schemas:DescribeDiscoverer",
-	];
+	static readonly DescribeDiscoverer: string[] = ["schemas:DescribeDiscoverer"];
 	/** IAM actions required for the DescribeRegistry API call. */
-	static readonly DESCRIBE_REGISTRY: string[] = ["schemas:DescribeRegistry"];
+	static readonly DescribeRegistry: string[] = ["schemas:DescribeRegistry"];
 	/** IAM actions required for the DescribeSchema API call. */
-	static readonly DESCRIBE_SCHEMA: string[] = ["schemas:DescribeSchema"];
+	static readonly DescribeSchema: string[] = ["schemas:DescribeSchema"];
 	/** IAM actions required for the ExportSchema API call. */
-	static readonly EXPORT_SCHEMA: string[] = ["schemas:ExportSchema"];
+	static readonly ExportSchema: string[] = ["schemas:ExportSchema"];
 	/** IAM actions required for the GetCodeBindingSource API call. */
-	static readonly GET_CODE_BINDING_SOURCE: string[] = [
+	static readonly opGetCodeBindingSource: string[] = [
 		"schemas:GetCodeBindingSource",
 	];
 	/** IAM actions required for the GetDiscoveredSchema API call. */
-	static readonly GET_DISCOVERED_SCHEMA: string[] = [
+	static readonly opGetDiscoveredSchema: string[] = [
 		"schemas:GetDiscoveredSchema",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = ["schemas:GetResourcePolicy"];
+	static readonly opGetResourcePolicy: string[] = ["schemas:GetResourcePolicy"];
 	/** IAM actions required for the ListDiscoverers API call. */
-	static readonly LIST_DISCOVERERS: string[] = ["schemas:ListDiscoverers"];
+	static readonly ListDiscoverers: string[] = ["schemas:ListDiscoverers"];
 	/** IAM actions required for the ListRegistries API call. */
-	static readonly LIST_REGISTRIES: string[] = ["schemas:ListRegistries"];
+	static readonly ListRegistries: string[] = ["schemas:ListRegistries"];
 	/** IAM actions required for the ListSchemaVersions API call. */
-	static readonly LIST_SCHEMA_VERSIONS: string[] = [
-		"schemas:ListSchemaVersions",
-	];
+	static readonly ListSchemaVersions: string[] = ["schemas:ListSchemaVersions"];
 	/** IAM actions required for the ListSchemas API call. */
-	static readonly LIST_SCHEMAS: string[] = ["schemas:ListSchemas"];
+	static readonly ListSchemas: string[] = ["schemas:ListSchemas"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"schemas:ListTagsForResource",
 	];
 	/** IAM actions required for the PutCodeBinding API call. */
-	static readonly PUT_CODE_BINDING: string[] = ["schemas:PutCodeBinding"];
+	static readonly PutCodeBinding: string[] = ["schemas:PutCodeBinding"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["schemas:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["schemas:PutResourcePolicy"];
 	/** IAM actions required for the SearchSchemas API call. */
-	static readonly SEARCH_SCHEMAS: string[] = ["schemas:SearchSchemas"];
+	static readonly SearchSchemas: string[] = ["schemas:SearchSchemas"];
 	/** IAM actions required for the StartDiscoverer API call. */
-	static readonly START_DISCOVERER: string[] = ["schemas:StartDiscoverer"];
+	static readonly StartDiscoverer: string[] = ["schemas:StartDiscoverer"];
 	/** IAM actions required for the StopDiscoverer API call. */
-	static readonly STOP_DISCOVERER: string[] = ["schemas:StopDiscoverer"];
+	static readonly StopDiscoverer: string[] = ["schemas:StopDiscoverer"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["schemas:TagResource"];
+	static readonly TagResource: string[] = ["schemas:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["schemas:UntagResource"];
+	static readonly UntagResource: string[] = ["schemas:UntagResource"];
 	/** IAM actions required for the UpdateDiscoverer API call. */
-	static readonly UPDATE_DISCOVERER: string[] = ["schemas:UpdateDiscoverer"];
+	static readonly UpdateDiscoverer: string[] = ["schemas:UpdateDiscoverer"];
 	/** IAM actions required for the UpdateRegistry API call. */
-	static readonly UPDATE_REGISTRY: string[] = ["schemas:UpdateRegistry"];
+	static readonly UpdateRegistry: string[] = ["schemas:UpdateRegistry"];
 	/** IAM actions required for the UpdateSchema API call. */
-	static readonly UPDATE_SCHEMA: string[] = ["schemas:UpdateSchema"];
+	static readonly UpdateSchema: string[] = ["schemas:UpdateSchema"];
 }
 
 /**
@@ -374,34 +410,34 @@ export class SchemasOperations {
  */
 export class SchemasConditions {
 	/** Condition keys applicable to the CreateDiscoverer action. */
-	static readonly CREATE_DISCOVERER_CONDITION_KEYS: string[] = [
+	static readonly CreateDiscovererConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRegistry action. */
-	static readonly CREATE_REGISTRY_CONDITION_KEYS: string[] = [
+	static readonly CreateRegistryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSchema action. */
-	static readonly CREATE_SCHEMA_CONDITION_KEYS: string[] = [
+	static readonly CreateSchemaConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

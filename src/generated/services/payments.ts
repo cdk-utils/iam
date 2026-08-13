@@ -13,110 +13,130 @@ export class PaymentsActions {
 	static readonly SERVICE_PREFIX = "payments";
 
 	/** [Write] payments:AcceptFinancingApplicationTerms */
-	static readonly ACCEPT_FINANCING_APPLICATION_TERMS =
+	static readonly AcceptFinancingApplicationTerms =
 		"payments:AcceptFinancingApplicationTerms";
 	/** [Write] payments:CreateFinancingApplication */
-	static readonly CREATE_FINANCING_APPLICATION =
+	static readonly CreateFinancingApplication =
 		"payments:CreateFinancingApplication";
 	/** [Write] payments:CreatePaymentInstrument */
-	static readonly CREATE_PAYMENT_INSTRUMENT =
-		"payments:CreatePaymentInstrument";
+	static readonly CreatePaymentInstrument = "payments:CreatePaymentInstrument";
 	/** [Write] payments:DeletePaymentInstrument */
-	static readonly DELETE_PAYMENT_INSTRUMENT =
-		"payments:DeletePaymentInstrument";
+	static readonly DeletePaymentInstrument = "payments:DeletePaymentInstrument";
 	/** [Read] payments:GetFinancingApplication */
-	static readonly GET_FINANCING_APPLICATION =
+	static readonly actionGetFinancingApplication =
 		"payments:GetFinancingApplication";
 	/** [Read] payments:GetFinancingLine */
-	static readonly GET_FINANCING_LINE = "payments:GetFinancingLine";
+	static readonly actionGetFinancingLine = "payments:GetFinancingLine";
 	/** [Read] payments:GetFinancingLineWithdrawal */
-	static readonly GET_FINANCING_LINE_WITHDRAWAL =
+	static readonly actionGetFinancingLineWithdrawal =
 		"payments:GetFinancingLineWithdrawal";
 	/** [Read] payments:GetFinancingOption */
-	static readonly GET_FINANCING_OPTION = "payments:GetFinancingOption";
+	static readonly actionGetFinancingOption = "payments:GetFinancingOption";
 	/** [List] payments:GetPaymentInstrument */
-	static readonly GET_PAYMENT_INSTRUMENT = "payments:GetPaymentInstrument";
+	static readonly actionGetPaymentInstrument = "payments:GetPaymentInstrument";
 	/** [Read] payments:GetPaymentStatus */
-	static readonly GET_PAYMENT_STATUS = "payments:GetPaymentStatus";
+	static readonly actionGetPaymentStatus = "payments:GetPaymentStatus";
 	/** [List] payments:ListFinancingApplications */
-	static readonly LIST_FINANCING_APPLICATIONS =
+	static readonly ListFinancingApplications =
 		"payments:ListFinancingApplications";
 	/** [List] payments:ListFinancingLineWithdrawals */
-	static readonly LIST_FINANCING_LINE_WITHDRAWALS =
+	static readonly ListFinancingLineWithdrawals =
 		"payments:ListFinancingLineWithdrawals";
 	/** [List] payments:ListFinancingLines */
-	static readonly LIST_FINANCING_LINES = "payments:ListFinancingLines";
+	static readonly ListFinancingLines = "payments:ListFinancingLines";
 	/** [List] payments:ListPaymentInstruments */
-	static readonly LIST_PAYMENT_INSTRUMENTS = "payments:ListPaymentInstruments";
+	static readonly ListPaymentInstruments = "payments:ListPaymentInstruments";
 	/** [List] payments:ListPaymentPreferences */
-	static readonly LIST_PAYMENT_PREFERENCES = "payments:ListPaymentPreferences";
+	static readonly ListPaymentPreferences = "payments:ListPaymentPreferences";
 	/** [List] payments:ListPaymentProgramOptions */
-	static readonly LIST_PAYMENT_PROGRAM_OPTIONS =
+	static readonly ListPaymentProgramOptions =
 		"payments:ListPaymentProgramOptions";
 	/** [List] payments:ListPaymentProgramStatus */
-	static readonly LIST_PAYMENT_PROGRAM_STATUS =
+	static readonly ListPaymentProgramStatus =
 		"payments:ListPaymentProgramStatus";
 	/** [List] payments:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "payments:ListTagsForResource";
+	static readonly ListTagsForResource = "payments:ListTagsForResource";
 	/** [Write] payments:MakePayment */
-	static readonly MAKE_PAYMENT = "payments:MakePayment";
+	static readonly MakePayment = "payments:MakePayment";
 	/** [Tagging] payments:TagResource */
-	static readonly TAG_RESOURCE = "payments:TagResource";
+	static readonly TagResource = "payments:TagResource";
 	/** [Tagging] payments:UntagResource */
-	static readonly UNTAG_RESOURCE = "payments:UntagResource";
+	static readonly UntagResource = "payments:UntagResource";
 	/** [Write] payments:UpdateFinancingApplication */
-	static readonly UPDATE_FINANCING_APPLICATION =
+	static readonly UpdateFinancingApplication =
 		"payments:UpdateFinancingApplication";
 	/** [Write] payments:UpdatePaymentInstrument */
-	static readonly UPDATE_PAYMENT_INSTRUMENT =
-		"payments:UpdatePaymentInstrument";
+	static readonly UpdatePaymentInstrument = "payments:UpdatePaymentInstrument";
 	/** [Write] payments:UpdatePaymentPreferences */
-	static readonly UPDATE_PAYMENT_PREFERENCES =
+	static readonly UpdatePaymentPreferences =
 		"payments:UpdatePaymentPreferences";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PaymentsActions.GET_FINANCING_APPLICATION,
-		PaymentsActions.GET_FINANCING_LINE,
-		PaymentsActions.GET_FINANCING_LINE_WITHDRAWAL,
-		PaymentsActions.GET_FINANCING_OPTION,
-		PaymentsActions.GET_PAYMENT_STATUS,
+	static readonly AllReadActions: string[] = [
+		PaymentsActions.actionGetFinancingApplication,
+		PaymentsActions.actionGetFinancingLine,
+		PaymentsActions.actionGetFinancingLineWithdrawal,
+		PaymentsActions.actionGetFinancingOption,
+		PaymentsActions.actionGetPaymentStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PaymentsActions.ACCEPT_FINANCING_APPLICATION_TERMS,
-		PaymentsActions.CREATE_FINANCING_APPLICATION,
-		PaymentsActions.CREATE_PAYMENT_INSTRUMENT,
-		PaymentsActions.DELETE_PAYMENT_INSTRUMENT,
-		PaymentsActions.MAKE_PAYMENT,
-		PaymentsActions.UPDATE_FINANCING_APPLICATION,
-		PaymentsActions.UPDATE_PAYMENT_INSTRUMENT,
-		PaymentsActions.UPDATE_PAYMENT_PREFERENCES,
+	static readonly AllWriteActions: string[] = [
+		PaymentsActions.AcceptFinancingApplicationTerms,
+		PaymentsActions.CreateFinancingApplication,
+		PaymentsActions.CreatePaymentInstrument,
+		PaymentsActions.DeletePaymentInstrument,
+		PaymentsActions.MakePayment,
+		PaymentsActions.UpdateFinancingApplication,
+		PaymentsActions.UpdatePaymentInstrument,
+		PaymentsActions.UpdatePaymentPreferences,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PaymentsActions.GET_PAYMENT_INSTRUMENT,
-		PaymentsActions.LIST_FINANCING_APPLICATIONS,
-		PaymentsActions.LIST_FINANCING_LINE_WITHDRAWALS,
-		PaymentsActions.LIST_FINANCING_LINES,
-		PaymentsActions.LIST_PAYMENT_INSTRUMENTS,
-		PaymentsActions.LIST_PAYMENT_PREFERENCES,
-		PaymentsActions.LIST_PAYMENT_PROGRAM_OPTIONS,
-		PaymentsActions.LIST_PAYMENT_PROGRAM_STATUS,
-		PaymentsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		PaymentsActions.actionGetPaymentInstrument,
+		PaymentsActions.ListFinancingApplications,
+		PaymentsActions.ListFinancingLineWithdrawals,
+		PaymentsActions.ListFinancingLines,
+		PaymentsActions.ListPaymentInstruments,
+		PaymentsActions.ListPaymentPreferences,
+		PaymentsActions.ListPaymentProgramOptions,
+		PaymentsActions.ListPaymentProgramStatus,
+		PaymentsActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PaymentsActions.TAG_RESOURCE,
-		PaymentsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PaymentsActions.TagResource,
+		PaymentsActions.UntagResource,
 	];
 }
 
-const PaymentInstrumentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):payments::(?<account>[^:]*):payment-instrument:(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a payment-instrument ARN.
+ */
+export interface PaymentsPaymentInstrumentArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a payment-instrument ARN.
+ */
+export interface PaymentsPaymentInstrumentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const PaymentInstrumentArnRegex =
+	/^arn:(?<partition>[^:]+):payments::(?<account>[^:]*):payment-instrument:(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for payments resources.
@@ -125,14 +145,7 @@ export class PaymentsResources {
 	/**
 	 * Builds an ARN for the payment-instrument resource.
 	 */
-	static paymentInstrument(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static paymentInstrument(props: PaymentsPaymentInstrumentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:payments::${props.account ?? "*"}:payment-instrument:${props.resourceId}`;
 	}
 
@@ -147,11 +160,9 @@ export class PaymentsResources {
 	 * Parses a payment-instrument ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePaymentInstrumentArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePaymentInstrumentArn(
+		arn: string,
+	): PaymentsPaymentInstrumentArnComponents {
 		const match = PaymentInstrumentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid payment-instrument ARN: ${arn}`);
@@ -169,24 +180,24 @@ export class PaymentsResources {
  */
 export class PaymentsConditions {
 	/** Condition keys applicable to the CreatePaymentInstrument action. */
-	static readonly CREATE_PAYMENT_INSTRUMENT_CONDITION_KEYS: string[] = [
+	static readonly CreatePaymentInstrumentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

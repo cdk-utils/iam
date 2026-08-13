@@ -13,16 +13,16 @@ export class WamActions {
 	static readonly SERVICE_PREFIX = "wam";
 
 	/** [Write] wam:AuthenticatePackager */
-	static readonly AUTHENTICATE_PACKAGER = "wam:AuthenticatePackager";
+	static readonly AuthenticatePackager = "wam:AuthenticatePackager";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [WamActions.AUTHENTICATE_PACKAGER];
+	static readonly AllWriteActions: string[] = [WamActions.AuthenticatePackager];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

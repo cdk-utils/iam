@@ -13,87 +13,146 @@ export class S3vectorsActions {
 	static readonly SERVICE_PREFIX = "s3vectors";
 
 	/** [Write] s3vectors:CreateIndex */
-	static readonly CREATE_INDEX = "s3vectors:CreateIndex";
+	static readonly CreateIndex = "s3vectors:CreateIndex";
 	/** [Write] s3vectors:CreateVectorBucket */
-	static readonly CREATE_VECTOR_BUCKET = "s3vectors:CreateVectorBucket";
+	static readonly CreateVectorBucket = "s3vectors:CreateVectorBucket";
 	/** [Write] s3vectors:DeleteIndex */
-	static readonly DELETE_INDEX = "s3vectors:DeleteIndex";
+	static readonly DeleteIndex = "s3vectors:DeleteIndex";
 	/** [Write] s3vectors:DeleteVectorBucket */
-	static readonly DELETE_VECTOR_BUCKET = "s3vectors:DeleteVectorBucket";
+	static readonly DeleteVectorBucket = "s3vectors:DeleteVectorBucket";
 	/** [PermissionManagement] s3vectors:DeleteVectorBucketPolicy */
-	static readonly DELETE_VECTOR_BUCKET_POLICY =
+	static readonly DeleteVectorBucketPolicy =
 		"s3vectors:DeleteVectorBucketPolicy";
 	/** [Write] s3vectors:DeleteVectors */
-	static readonly DELETE_VECTORS = "s3vectors:DeleteVectors";
+	static readonly DeleteVectors = "s3vectors:DeleteVectors";
 	/** [Read] s3vectors:GetIndex */
-	static readonly GET_INDEX = "s3vectors:GetIndex";
+	static readonly actionGetIndex = "s3vectors:GetIndex";
 	/** [Read] s3vectors:GetVectorBucket */
-	static readonly GET_VECTOR_BUCKET = "s3vectors:GetVectorBucket";
+	static readonly actionGetVectorBucket = "s3vectors:GetVectorBucket";
 	/** [Read] s3vectors:GetVectorBucketPolicy */
-	static readonly GET_VECTOR_BUCKET_POLICY = "s3vectors:GetVectorBucketPolicy";
+	static readonly actionGetVectorBucketPolicy =
+		"s3vectors:GetVectorBucketPolicy";
 	/** [Read] s3vectors:GetVectors */
-	static readonly GET_VECTORS = "s3vectors:GetVectors";
+	static readonly actionGetVectors = "s3vectors:GetVectors";
 	/** [List] s3vectors:ListIndexes */
-	static readonly LIST_INDEXES = "s3vectors:ListIndexes";
+	static readonly ListIndexes = "s3vectors:ListIndexes";
 	/** [List] s3vectors:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "s3vectors:ListTagsForResource";
+	static readonly ListTagsForResource = "s3vectors:ListTagsForResource";
 	/** [List] s3vectors:ListVectorBuckets */
-	static readonly LIST_VECTOR_BUCKETS = "s3vectors:ListVectorBuckets";
+	static readonly ListVectorBuckets = "s3vectors:ListVectorBuckets";
 	/** [List] s3vectors:ListVectors */
-	static readonly LIST_VECTORS = "s3vectors:ListVectors";
+	static readonly ListVectors = "s3vectors:ListVectors";
 	/** [PermissionManagement] s3vectors:PutVectorBucketPolicy */
-	static readonly PUT_VECTOR_BUCKET_POLICY = "s3vectors:PutVectorBucketPolicy";
+	static readonly PutVectorBucketPolicy = "s3vectors:PutVectorBucketPolicy";
 	/** [Write] s3vectors:PutVectors */
-	static readonly PUT_VECTORS = "s3vectors:PutVectors";
+	static readonly PutVectors = "s3vectors:PutVectors";
 	/** [Read] s3vectors:QueryVectors */
-	static readonly QUERY_VECTORS = "s3vectors:QueryVectors";
+	static readonly QueryVectors = "s3vectors:QueryVectors";
 	/** [Tagging] s3vectors:TagResource */
-	static readonly TAG_RESOURCE = "s3vectors:TagResource";
+	static readonly TagResource = "s3vectors:TagResource";
 	/** [Tagging] s3vectors:UntagResource */
-	static readonly UNTAG_RESOURCE = "s3vectors:UntagResource";
+	static readonly UntagResource = "s3vectors:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		S3vectorsActions.GET_INDEX,
-		S3vectorsActions.GET_VECTOR_BUCKET,
-		S3vectorsActions.GET_VECTOR_BUCKET_POLICY,
-		S3vectorsActions.GET_VECTORS,
-		S3vectorsActions.QUERY_VECTORS,
+	static readonly AllReadActions: string[] = [
+		S3vectorsActions.actionGetIndex,
+		S3vectorsActions.actionGetVectorBucket,
+		S3vectorsActions.actionGetVectorBucketPolicy,
+		S3vectorsActions.actionGetVectors,
+		S3vectorsActions.QueryVectors,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		S3vectorsActions.CREATE_INDEX,
-		S3vectorsActions.CREATE_VECTOR_BUCKET,
-		S3vectorsActions.DELETE_INDEX,
-		S3vectorsActions.DELETE_VECTOR_BUCKET,
-		S3vectorsActions.DELETE_VECTORS,
-		S3vectorsActions.PUT_VECTORS,
+	static readonly AllWriteActions: string[] = [
+		S3vectorsActions.CreateIndex,
+		S3vectorsActions.CreateVectorBucket,
+		S3vectorsActions.DeleteIndex,
+		S3vectorsActions.DeleteVectorBucket,
+		S3vectorsActions.DeleteVectors,
+		S3vectorsActions.PutVectors,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		S3vectorsActions.LIST_INDEXES,
-		S3vectorsActions.LIST_TAGS_FOR_RESOURCE,
-		S3vectorsActions.LIST_VECTOR_BUCKETS,
-		S3vectorsActions.LIST_VECTORS,
+	static readonly AllListActions: string[] = [
+		S3vectorsActions.ListIndexes,
+		S3vectorsActions.ListTagsForResource,
+		S3vectorsActions.ListVectorBuckets,
+		S3vectorsActions.ListVectors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		S3vectorsActions.DELETE_VECTOR_BUCKET_POLICY,
-		S3vectorsActions.PUT_VECTOR_BUCKET_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		S3vectorsActions.DeleteVectorBucketPolicy,
+		S3vectorsActions.PutVectorBucketPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		S3vectorsActions.TAG_RESOURCE,
-		S3vectorsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		S3vectorsActions.TagResource,
+		S3vectorsActions.UntagResource,
 	];
 }
 
-const IndexArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3vectors:(?<region>[^:]*):(?<account>[^:]*):bucket/(?<bucketName>[^:/?]+)/index/(?<indexName>[^:/?]+)$",
-);
-const VectorBucketArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3vectors:(?<region>[^:]*):(?<account>[^:]*):bucket/(?<bucketName>[^:/?]+)$",
-);
+/**
+ * Properties for building a Index ARN.
+ */
+export interface S3vectorsIndexArnProps {
+	/** The BucketName component of the ARN. */
+	readonly bucketName: string;
+	/** The IndexName component of the ARN. */
+	readonly indexName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Index ARN.
+ */
+export interface S3vectorsIndexArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BucketName component. */
+	readonly bucketName: string;
+	/** The IndexName component. */
+	readonly indexName: string;
+}
+
+/**
+ * Properties for building a VectorBucket ARN.
+ */
+export interface S3vectorsVectorBucketArnProps {
+	/** The BucketName component of the ARN. */
+	readonly bucketName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VectorBucket ARN.
+ */
+export interface S3vectorsVectorBucketArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BucketName component. */
+	readonly bucketName: string;
+}
+
+const IndexArnRegex =
+	/^arn:(?<partition>[^:]+):s3vectors:(?<region>[^:]*):(?<account>[^:]*):bucket\/(?<bucketName>[^:/?]+)\/index\/(?<indexName>[^:/?]+)$/;
+const VectorBucketArnRegex =
+	/^arn:(?<partition>[^:]+):s3vectors:(?<region>[^:]*):(?<account>[^:]*):bucket\/(?<bucketName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for s3vectors resources.
@@ -102,18 +161,7 @@ export class S3vectorsResources {
 	/**
 	 * Builds an ARN for the Index resource.
 	 */
-	static index(props: {
-		/** The BucketName component of the ARN. */
-		readonly bucketName: string;
-		/** The IndexName component of the ARN. */
-		readonly indexName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static index(props: S3vectorsIndexArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3vectors:${props.region ?? "*"}:${props.account ?? "*"}:bucket/${props.bucketName}/index/${props.indexName}`;
 	}
 
@@ -128,13 +176,7 @@ export class S3vectorsResources {
 	 * Parses a Index ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIndexArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		bucketName: string;
-		indexName: string;
-	} {
+	static parseIndexArn(arn: string): S3vectorsIndexArnComponents {
 		const match = IndexArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Index ARN: ${arn}`);
@@ -151,16 +193,7 @@ export class S3vectorsResources {
 	/**
 	 * Builds an ARN for the VectorBucket resource.
 	 */
-	static vectorBucket(props: {
-		/** The BucketName component of the ARN. */
-		readonly bucketName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vectorBucket(props: S3vectorsVectorBucketArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3vectors:${props.region ?? "*"}:${props.account ?? "*"}:bucket/${props.bucketName}`;
 	}
 
@@ -175,12 +208,7 @@ export class S3vectorsResources {
 	 * Parses a VectorBucket ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVectorBucketArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		bucketName: string;
-	} {
+	static parseVectorBucketArn(arn: string): S3vectorsVectorBucketArnComponents {
 		const match = VectorBucketArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VectorBucket ARN: ${arn}`);
@@ -199,43 +227,43 @@ export class S3vectorsResources {
  */
 export class S3vectorsOperations {
 	/** IAM actions required for the CreateIndex API call. */
-	static readonly CREATE_INDEX: string[] = [];
+	static readonly CreateIndex: string[] = [];
 	/** IAM actions required for the CreateVectorBucket API call. */
-	static readonly CREATE_VECTOR_BUCKET: string[] = [];
+	static readonly CreateVectorBucket: string[] = [];
 	/** IAM actions required for the DeleteIndex API call. */
-	static readonly DELETE_INDEX: string[] = [];
+	static readonly DeleteIndex: string[] = [];
 	/** IAM actions required for the DeleteVectorBucket API call. */
-	static readonly DELETE_VECTOR_BUCKET: string[] = [];
+	static readonly DeleteVectorBucket: string[] = [];
 	/** IAM actions required for the DeleteVectorBucketPolicy API call. */
-	static readonly DELETE_VECTOR_BUCKET_POLICY: string[] = [];
+	static readonly DeleteVectorBucketPolicy: string[] = [];
 	/** IAM actions required for the DeleteVectors API call. */
-	static readonly DELETE_VECTORS: string[] = [];
+	static readonly DeleteVectors: string[] = [];
 	/** IAM actions required for the GetIndex API call. */
-	static readonly GET_INDEX: string[] = [];
+	static readonly opGetIndex: string[] = [];
 	/** IAM actions required for the GetVectorBucket API call. */
-	static readonly GET_VECTOR_BUCKET: string[] = [];
+	static readonly opGetVectorBucket: string[] = [];
 	/** IAM actions required for the GetVectorBucketPolicy API call. */
-	static readonly GET_VECTOR_BUCKET_POLICY: string[] = [];
+	static readonly opGetVectorBucketPolicy: string[] = [];
 	/** IAM actions required for the GetVectors API call. */
-	static readonly GET_VECTORS: string[] = [];
+	static readonly opGetVectors: string[] = [];
 	/** IAM actions required for the ListIndexes API call. */
-	static readonly LIST_INDEXES: string[] = [];
+	static readonly ListIndexes: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the ListVectorBuckets API call. */
-	static readonly LIST_VECTOR_BUCKETS: string[] = [];
+	static readonly ListVectorBuckets: string[] = [];
 	/** IAM actions required for the ListVectors API call. */
-	static readonly LIST_VECTORS: string[] = [];
+	static readonly ListVectors: string[] = [];
 	/** IAM actions required for the PutVectorBucketPolicy API call. */
-	static readonly PUT_VECTOR_BUCKET_POLICY: string[] = [];
+	static readonly PutVectorBucketPolicy: string[] = [];
 	/** IAM actions required for the PutVectors API call. */
-	static readonly PUT_VECTORS: string[] = [];
+	static readonly PutVectors: string[] = [];
 	/** IAM actions required for the QueryVectors API call. */
-	static readonly QUERY_VECTORS: string[] = [];
+	static readonly QueryVectors: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [];
+	static readonly TagResource: string[] = [];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [];
+	static readonly UntagResource: string[] = [];
 }
 
 /**
@@ -243,7 +271,7 @@ export class S3vectorsOperations {
  */
 export class S3vectorsConditions {
 	/** Condition keys applicable to the CreateIndex action. */
-	static readonly CREATE_INDEX_CONDITION_KEYS: string[] = [
+	static readonly CreateIndexConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -252,7 +280,7 @@ export class S3vectorsConditions {
 		"s3vectors:sseType",
 	];
 	/** Condition keys applicable to the CreateVectorBucket action. */
-	static readonly CREATE_VECTOR_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly CreateVectorBucketConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -261,95 +289,95 @@ export class S3vectorsConditions {
 		"s3vectors:sseType",
 	];
 	/** Condition keys applicable to the DeleteIndex action. */
-	static readonly DELETE_INDEX_CONDITION_KEYS: string[] = [
+	static readonly DeleteIndexConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteVectorBucket action. */
-	static readonly DELETE_VECTOR_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly DeleteVectorBucketConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteVectorBucketPolicy action. */
-	static readonly DELETE_VECTOR_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteVectorBucketPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteVectors action. */
-	static readonly DELETE_VECTORS_CONDITION_KEYS: string[] = [
+	static readonly DeleteVectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetIndex action. */
-	static readonly GET_INDEX_CONDITION_KEYS: string[] = [
+	static readonly actionGetIndexConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetVectorBucket action. */
-	static readonly GET_VECTOR_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly actionGetVectorBucketConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetVectorBucketPolicy action. */
-	static readonly GET_VECTOR_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetVectorBucketPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetVectors action. */
-	static readonly GET_VECTORS_CONDITION_KEYS: string[] = [
+	static readonly actionGetVectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListIndexes action. */
-	static readonly LIST_INDEXES_CONDITION_KEYS: string[] = [
+	static readonly ListIndexesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListVectors action. */
-	static readonly LIST_VECTORS_CONDITION_KEYS: string[] = [
+	static readonly ListVectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutVectorBucketPolicy action. */
-	static readonly PUT_VECTOR_BUCKET_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutVectorBucketPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutVectors action. */
-	static readonly PUT_VECTORS_CONDITION_KEYS: string[] = [
+	static readonly PutVectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the QueryVectors action. */
-	static readonly QUERY_VECTORS_CONDITION_KEYS: string[] = [
+	static readonly QueryVectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: s3vectors:VectorBucketTag/${TagKey} (String) */
 	static readonly VECTOR_BUCKET_TAG = "s3vectors:VectorBucketTag/${TagKey}";
 	/** Condition key: s3vectors:kmsKeyArn (ARN) */

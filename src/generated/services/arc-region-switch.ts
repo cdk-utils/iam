@@ -13,108 +13,129 @@ export class ArcRegionSwitchActions {
 	static readonly SERVICE_PREFIX = "arc-region-switch";
 
 	/** [Write] arc-region-switch:ApprovePlanExecutionStep */
-	static readonly APPROVE_PLAN_EXECUTION_STEP =
+	static readonly ApprovePlanExecutionStep =
 		"arc-region-switch:ApprovePlanExecutionStep";
 	/** [Write] arc-region-switch:CancelPlanExecution */
-	static readonly CANCEL_PLAN_EXECUTION =
-		"arc-region-switch:CancelPlanExecution";
+	static readonly CancelPlanExecution = "arc-region-switch:CancelPlanExecution";
 	/** [Write] arc-region-switch:CreatePlan */
-	static readonly CREATE_PLAN = "arc-region-switch:CreatePlan";
+	static readonly CreatePlan = "arc-region-switch:CreatePlan";
 	/** [Write] arc-region-switch:DeletePlan */
-	static readonly DELETE_PLAN = "arc-region-switch:DeletePlan";
+	static readonly DeletePlan = "arc-region-switch:DeletePlan";
 	/** [PermissionManagement] arc-region-switch:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY =
+	static readonly DeleteResourcePolicy =
 		"arc-region-switch:DeleteResourcePolicy";
 	/** [Read] arc-region-switch:GetPlan */
-	static readonly GET_PLAN = "arc-region-switch:GetPlan";
+	static readonly actionGetPlan = "arc-region-switch:GetPlan";
 	/** [Read] arc-region-switch:GetPlanEvaluationStatus */
-	static readonly GET_PLAN_EVALUATION_STATUS =
+	static readonly actionGetPlanEvaluationStatus =
 		"arc-region-switch:GetPlanEvaluationStatus";
 	/** [Read] arc-region-switch:GetPlanExecution */
-	static readonly GET_PLAN_EXECUTION = "arc-region-switch:GetPlanExecution";
+	static readonly actionGetPlanExecution = "arc-region-switch:GetPlanExecution";
 	/** [Read] arc-region-switch:GetPlanInRegion */
-	static readonly GET_PLAN_IN_REGION = "arc-region-switch:GetPlanInRegion";
+	static readonly actionGetPlanInRegion = "arc-region-switch:GetPlanInRegion";
 	/** [PermissionManagement] arc-region-switch:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "arc-region-switch:GetResourcePolicy";
+	static readonly actionGetResourcePolicy =
+		"arc-region-switch:GetResourcePolicy";
 	/** [List] arc-region-switch:ListPlanExecutionEvents */
-	static readonly LIST_PLAN_EXECUTION_EVENTS =
+	static readonly ListPlanExecutionEvents =
 		"arc-region-switch:ListPlanExecutionEvents";
 	/** [List] arc-region-switch:ListPlanExecutions */
-	static readonly LIST_PLAN_EXECUTIONS = "arc-region-switch:ListPlanExecutions";
+	static readonly ListPlanExecutions = "arc-region-switch:ListPlanExecutions";
 	/** [List] arc-region-switch:ListPlans */
-	static readonly LIST_PLANS = "arc-region-switch:ListPlans";
+	static readonly ListPlans = "arc-region-switch:ListPlans";
 	/** [List] arc-region-switch:ListPlansInRegion */
-	static readonly LIST_PLANS_IN_REGION = "arc-region-switch:ListPlansInRegion";
+	static readonly ListPlansInRegion = "arc-region-switch:ListPlansInRegion";
 	/** [List] arc-region-switch:ListRoute53HealthChecks */
-	static readonly LIST_ROUTE53_HEALTH_CHECKS =
+	static readonly ListRoute53HealthChecks =
 		"arc-region-switch:ListRoute53HealthChecks";
 	/** [List] arc-region-switch:ListRoute53HealthChecksInRegion */
-	static readonly LIST_ROUTE53_HEALTH_CHECKS_IN_REGION =
+	static readonly ListRoute53HealthChecksInRegion =
 		"arc-region-switch:ListRoute53HealthChecksInRegion";
 	/** [Read] arc-region-switch:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"arc-region-switch:ListTagsForResource";
+	static readonly ListTagsForResource = "arc-region-switch:ListTagsForResource";
 	/** [PermissionManagement] arc-region-switch:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "arc-region-switch:PutResourcePolicy";
+	static readonly PutResourcePolicy = "arc-region-switch:PutResourcePolicy";
 	/** [Write] arc-region-switch:StartPlanExecution */
-	static readonly START_PLAN_EXECUTION = "arc-region-switch:StartPlanExecution";
+	static readonly StartPlanExecution = "arc-region-switch:StartPlanExecution";
 	/** [Tagging] arc-region-switch:TagResource */
-	static readonly TAG_RESOURCE = "arc-region-switch:TagResource";
+	static readonly TagResource = "arc-region-switch:TagResource";
 	/** [Tagging] arc-region-switch:UntagResource */
-	static readonly UNTAG_RESOURCE = "arc-region-switch:UntagResource";
+	static readonly UntagResource = "arc-region-switch:UntagResource";
 	/** [Write] arc-region-switch:UpdatePlan */
-	static readonly UPDATE_PLAN = "arc-region-switch:UpdatePlan";
+	static readonly UpdatePlan = "arc-region-switch:UpdatePlan";
 	/** [Write] arc-region-switch:UpdatePlanExecution */
-	static readonly UPDATE_PLAN_EXECUTION =
-		"arc-region-switch:UpdatePlanExecution";
+	static readonly UpdatePlanExecution = "arc-region-switch:UpdatePlanExecution";
 	/** [Write] arc-region-switch:UpdatePlanExecutionStep */
-	static readonly UPDATE_PLAN_EXECUTION_STEP =
+	static readonly UpdatePlanExecutionStep =
 		"arc-region-switch:UpdatePlanExecutionStep";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ArcRegionSwitchActions.GET_PLAN,
-		ArcRegionSwitchActions.GET_PLAN_EVALUATION_STATUS,
-		ArcRegionSwitchActions.GET_PLAN_EXECUTION,
-		ArcRegionSwitchActions.GET_PLAN_IN_REGION,
-		ArcRegionSwitchActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ArcRegionSwitchActions.actionGetPlan,
+		ArcRegionSwitchActions.actionGetPlanEvaluationStatus,
+		ArcRegionSwitchActions.actionGetPlanExecution,
+		ArcRegionSwitchActions.actionGetPlanInRegion,
+		ArcRegionSwitchActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ArcRegionSwitchActions.APPROVE_PLAN_EXECUTION_STEP,
-		ArcRegionSwitchActions.CANCEL_PLAN_EXECUTION,
-		ArcRegionSwitchActions.CREATE_PLAN,
-		ArcRegionSwitchActions.DELETE_PLAN,
-		ArcRegionSwitchActions.START_PLAN_EXECUTION,
-		ArcRegionSwitchActions.UPDATE_PLAN,
-		ArcRegionSwitchActions.UPDATE_PLAN_EXECUTION,
-		ArcRegionSwitchActions.UPDATE_PLAN_EXECUTION_STEP,
+	static readonly AllWriteActions: string[] = [
+		ArcRegionSwitchActions.ApprovePlanExecutionStep,
+		ArcRegionSwitchActions.CancelPlanExecution,
+		ArcRegionSwitchActions.CreatePlan,
+		ArcRegionSwitchActions.DeletePlan,
+		ArcRegionSwitchActions.StartPlanExecution,
+		ArcRegionSwitchActions.UpdatePlan,
+		ArcRegionSwitchActions.UpdatePlanExecution,
+		ArcRegionSwitchActions.UpdatePlanExecutionStep,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ArcRegionSwitchActions.LIST_PLAN_EXECUTION_EVENTS,
-		ArcRegionSwitchActions.LIST_PLAN_EXECUTIONS,
-		ArcRegionSwitchActions.LIST_PLANS,
-		ArcRegionSwitchActions.LIST_PLANS_IN_REGION,
-		ArcRegionSwitchActions.LIST_ROUTE53_HEALTH_CHECKS,
-		ArcRegionSwitchActions.LIST_ROUTE53_HEALTH_CHECKS_IN_REGION,
+	static readonly AllListActions: string[] = [
+		ArcRegionSwitchActions.ListPlanExecutionEvents,
+		ArcRegionSwitchActions.ListPlanExecutions,
+		ArcRegionSwitchActions.ListPlans,
+		ArcRegionSwitchActions.ListPlansInRegion,
+		ArcRegionSwitchActions.ListRoute53HealthChecks,
+		ArcRegionSwitchActions.ListRoute53HealthChecksInRegion,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		ArcRegionSwitchActions.DELETE_RESOURCE_POLICY,
-		ArcRegionSwitchActions.GET_RESOURCE_POLICY,
-		ArcRegionSwitchActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		ArcRegionSwitchActions.DeleteResourcePolicy,
+		ArcRegionSwitchActions.actionGetResourcePolicy,
+		ArcRegionSwitchActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ArcRegionSwitchActions.TAG_RESOURCE,
-		ArcRegionSwitchActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ArcRegionSwitchActions.TagResource,
+		ArcRegionSwitchActions.UntagResource,
 	];
 }
 
-const PlanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):arc-region-switch::(?<account>[^:]*):plan/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a plan ARN.
+ */
+export interface ArcRegionSwitchPlanArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a plan ARN.
+ */
+export interface ArcRegionSwitchPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const PlanArnRegex =
+	/^arn:(?<partition>[^:]+):arc-region-switch::(?<account>[^:]*):plan\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for arc-region-switch resources.
@@ -123,14 +144,7 @@ export class ArcRegionSwitchResources {
 	/**
 	 * Builds an ARN for the plan resource.
 	 */
-	static plan(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static plan(props: ArcRegionSwitchPlanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:arc-region-switch::${props.account ?? "*"}:plan/${props.resourceId}`;
 	}
 
@@ -145,11 +159,7 @@ export class ArcRegionSwitchResources {
 	 * Parses a plan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePlanArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePlanArn(arn: string): ArcRegionSwitchPlanArnComponents {
 		const match = PlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid plan ARN: ${arn}`);
@@ -167,84 +177,82 @@ export class ArcRegionSwitchResources {
  */
 export class ArcRegionSwitchOperations {
 	/** IAM actions required for the ApprovePlanExecutionStep API call. */
-	static readonly APPROVE_PLAN_EXECUTION_STEP: string[] = [
+	static readonly ApprovePlanExecutionStep: string[] = [
 		"arc-region-switch:ApprovePlanExecutionStep",
 	];
 	/** IAM actions required for the CancelPlanExecution API call. */
-	static readonly CANCEL_PLAN_EXECUTION: string[] = [
+	static readonly CancelPlanExecution: string[] = [
 		"arc-region-switch:CancelPlanExecution",
 	];
 	/** IAM actions required for the CreatePlan API call. */
-	static readonly CREATE_PLAN: string[] = [
+	static readonly CreatePlan: string[] = [
 		"arc-region-switch:CreatePlan",
 		"arc-region-switch:GetPlan",
 		"iam:PassRole",
 		"arc-region-switch:TagResource",
 	];
 	/** IAM actions required for the DeletePlan API call. */
-	static readonly DELETE_PLAN: string[] = ["arc-region-switch:DeletePlan"];
+	static readonly DeletePlan: string[] = ["arc-region-switch:DeletePlan"];
 	/** IAM actions required for the GetPlan API call. */
-	static readonly GET_PLAN: string[] = ["arc-region-switch:GetPlan"];
+	static readonly opGetPlan: string[] = ["arc-region-switch:GetPlan"];
 	/** IAM actions required for the GetPlanEvaluationStatus API call. */
-	static readonly GET_PLAN_EVALUATION_STATUS: string[] = [
+	static readonly opGetPlanEvaluationStatus: string[] = [
 		"arc-region-switch:GetPlanEvaluationStatus",
 	];
 	/** IAM actions required for the GetPlanExecution API call. */
-	static readonly GET_PLAN_EXECUTION: string[] = [
+	static readonly opGetPlanExecution: string[] = [
 		"arc-region-switch:GetPlanExecution",
 	];
 	/** IAM actions required for the GetPlanInRegion API call. */
-	static readonly GET_PLAN_IN_REGION: string[] = [
+	static readonly opGetPlanInRegion: string[] = [
 		"arc-region-switch:GetPlanInRegion",
 	];
 	/** IAM actions required for the ListPlanExecutionEvents API call. */
-	static readonly LIST_PLAN_EXECUTION_EVENTS: string[] = [
+	static readonly ListPlanExecutionEvents: string[] = [
 		"arc-region-switch:ListPlanExecutionEvents",
 	];
 	/** IAM actions required for the ListPlanExecutions API call. */
-	static readonly LIST_PLAN_EXECUTIONS: string[] = [
+	static readonly ListPlanExecutions: string[] = [
 		"arc-region-switch:ListPlanExecutions",
 	];
 	/** IAM actions required for the ListPlans API call. */
-	static readonly LIST_PLANS: string[] = ["arc-region-switch:ListPlans"];
+	static readonly ListPlans: string[] = ["arc-region-switch:ListPlans"];
 	/** IAM actions required for the ListPlansInRegion API call. */
-	static readonly LIST_PLANS_IN_REGION: string[] = [
+	static readonly ListPlansInRegion: string[] = [
 		"arc-region-switch:ListPlansInRegion",
 	];
 	/** IAM actions required for the ListRoute53HealthChecks API call. */
-	static readonly LIST_ROUTE53_HEALTH_CHECKS: string[] = [
+	static readonly ListRoute53HealthChecks: string[] = [
 		"arc-region-switch:ListRoute53HealthChecks",
 	];
 	/** IAM actions required for the ListRoute53HealthChecksInRegion API call. */
-	static readonly LIST_ROUTE53_HEALTH_CHECKS_IN_REGION: string[] = [
+	static readonly ListRoute53HealthChecksInRegion: string[] = [
 		"arc-region-switch:ListRoute53HealthChecksInRegion",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"arc-region-switch:ListTagsForResource",
 	];
 	/** IAM actions required for the StartPlanExecution API call. */
-	static readonly START_PLAN_EXECUTION: string[] = [
+	static readonly StartPlanExecution: string[] = [
 		"arc-region-switch:StartPlanExecution",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["arc-region-switch:TagResource"];
+	static readonly TagResource: string[] = ["arc-region-switch:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
-		"arc-region-switch:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["arc-region-switch:UntagResource"];
 	/** IAM actions required for the UpdatePlan API call. */
-	static readonly UPDATE_PLAN: string[] = [
+	static readonly UpdatePlan: string[] = [
 		"arc-region-switch:GetPlan",
 		"iam:PassRole",
 		"arc-region-switch:UpdatePlan",
 	];
 	/** IAM actions required for the UpdatePlanExecution API call. */
-	static readonly UPDATE_PLAN_EXECUTION: string[] = [
+	static readonly UpdatePlanExecution: string[] = [
 		"arc-region-switch:UpdatePlanExecution",
 	];
 	/** IAM actions required for the UpdatePlanExecutionStep API call. */
-	static readonly UPDATE_PLAN_EXECUTION_STEP: string[] = [
+	static readonly UpdatePlanExecutionStep: string[] = [
 		"arc-region-switch:UpdatePlanExecutionStep",
 	];
 }
@@ -254,32 +262,32 @@ export class ArcRegionSwitchOperations {
  */
 export class ArcRegionSwitchConditions {
 	/** Condition keys applicable to the CreatePlan action. */
-	static readonly CREATE_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreatePlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

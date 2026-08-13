@@ -13,115 +13,115 @@ export class DiscoveryActions {
 	static readonly SERVICE_PREFIX = "discovery";
 
 	/** [Write] discovery:AssociateConfigurationItemsToApplication */
-	static readonly ASSOCIATE_CONFIGURATION_ITEMS_TO_APPLICATION =
+	static readonly AssociateConfigurationItemsToApplication =
 		"discovery:AssociateConfigurationItemsToApplication";
 	/** [Write] discovery:BatchDeleteAgents */
-	static readonly BATCH_DELETE_AGENTS = "discovery:BatchDeleteAgents";
+	static readonly BatchDeleteAgents = "discovery:BatchDeleteAgents";
 	/** [Write] discovery:BatchDeleteImportData */
-	static readonly BATCH_DELETE_IMPORT_DATA = "discovery:BatchDeleteImportData";
+	static readonly BatchDeleteImportData = "discovery:BatchDeleteImportData";
 	/** [Write] discovery:CreateApplication */
-	static readonly CREATE_APPLICATION = "discovery:CreateApplication";
+	static readonly CreateApplication = "discovery:CreateApplication";
 	/** [Tagging] discovery:CreateTags */
-	static readonly CREATE_TAGS = "discovery:CreateTags";
+	static readonly CreateTags = "discovery:CreateTags";
 	/** [Write] discovery:DeleteApplications */
-	static readonly DELETE_APPLICATIONS = "discovery:DeleteApplications";
+	static readonly DeleteApplications = "discovery:DeleteApplications";
 	/** [Tagging] discovery:DeleteTags */
-	static readonly DELETE_TAGS = "discovery:DeleteTags";
+	static readonly DeleteTags = "discovery:DeleteTags";
 	/** [Read] discovery:DescribeAgents */
-	static readonly DESCRIBE_AGENTS = "discovery:DescribeAgents";
+	static readonly DescribeAgents = "discovery:DescribeAgents";
 	/** [Read] discovery:DescribeBatchDeleteConfigurationTask */
-	static readonly DESCRIBE_BATCH_DELETE_CONFIGURATION_TASK =
+	static readonly DescribeBatchDeleteConfigurationTask =
 		"discovery:DescribeBatchDeleteConfigurationTask";
 	/** [Read] discovery:DescribeConfigurations */
-	static readonly DESCRIBE_CONFIGURATIONS = "discovery:DescribeConfigurations";
+	static readonly DescribeConfigurations = "discovery:DescribeConfigurations";
 	/** [Read] discovery:DescribeContinuousExports */
-	static readonly DESCRIBE_CONTINUOUS_EXPORTS =
+	static readonly DescribeContinuousExports =
 		"discovery:DescribeContinuousExports";
 	/** [Read] discovery:DescribeExportConfigurations */
-	static readonly DESCRIBE_EXPORT_CONFIGURATIONS =
+	static readonly DescribeExportConfigurations =
 		"discovery:DescribeExportConfigurations";
 	/** [Read] discovery:DescribeExportTasks */
-	static readonly DESCRIBE_EXPORT_TASKS = "discovery:DescribeExportTasks";
+	static readonly DescribeExportTasks = "discovery:DescribeExportTasks";
 	/** [List] discovery:DescribeImportTasks */
-	static readonly DESCRIBE_IMPORT_TASKS = "discovery:DescribeImportTasks";
+	static readonly DescribeImportTasks = "discovery:DescribeImportTasks";
 	/** [Read] discovery:DescribeTags */
-	static readonly DESCRIBE_TAGS = "discovery:DescribeTags";
+	static readonly DescribeTags = "discovery:DescribeTags";
 	/** [Write] discovery:DisassociateConfigurationItemsFromApplication */
-	static readonly DISASSOCIATE_CONFIGURATION_ITEMS_FROM_APPLICATION =
+	static readonly DisassociateConfigurationItemsFromApplication =
 		"discovery:DisassociateConfigurationItemsFromApplication";
 	/** [Write] discovery:ExportConfigurations */
-	static readonly EXPORT_CONFIGURATIONS = "discovery:ExportConfigurations";
+	static readonly ExportConfigurations = "discovery:ExportConfigurations";
 	/** [Read] discovery:GetDiscoverySummary */
-	static readonly GET_DISCOVERY_SUMMARY = "discovery:GetDiscoverySummary";
+	static readonly actionGetDiscoverySummary = "discovery:GetDiscoverySummary";
 	/** [Read] discovery:GetNetworkConnectionGraph */
-	static readonly GET_NETWORK_CONNECTION_GRAPH =
+	static readonly actionGetNetworkConnectionGraph =
 		"discovery:GetNetworkConnectionGraph";
 	/** [List] discovery:ListConfigurations */
-	static readonly LIST_CONFIGURATIONS = "discovery:ListConfigurations";
+	static readonly ListConfigurations = "discovery:ListConfigurations";
 	/** [List] discovery:ListServerNeighbors */
-	static readonly LIST_SERVER_NEIGHBORS = "discovery:ListServerNeighbors";
+	static readonly ListServerNeighbors = "discovery:ListServerNeighbors";
 	/** [Write] discovery:StartBatchDeleteConfigurationTask */
-	static readonly START_BATCH_DELETE_CONFIGURATION_TASK =
+	static readonly StartBatchDeleteConfigurationTask =
 		"discovery:StartBatchDeleteConfigurationTask";
 	/** [Write] discovery:StartContinuousExport */
-	static readonly START_CONTINUOUS_EXPORT = "discovery:StartContinuousExport";
+	static readonly StartContinuousExport = "discovery:StartContinuousExport";
 	/** [Write] discovery:StartDataCollectionByAgentIds */
-	static readonly START_DATA_COLLECTION_BY_AGENT_IDS =
+	static readonly StartDataCollectionByAgentIds =
 		"discovery:StartDataCollectionByAgentIds";
 	/** [Write] discovery:StartExportTask */
-	static readonly START_EXPORT_TASK = "discovery:StartExportTask";
+	static readonly StartExportTask = "discovery:StartExportTask";
 	/** [Write] discovery:StartImportTask */
-	static readonly START_IMPORT_TASK = "discovery:StartImportTask";
+	static readonly StartImportTask = "discovery:StartImportTask";
 	/** [Write] discovery:StopContinuousExport */
-	static readonly STOP_CONTINUOUS_EXPORT = "discovery:StopContinuousExport";
+	static readonly StopContinuousExport = "discovery:StopContinuousExport";
 	/** [Write] discovery:StopDataCollectionByAgentIds */
-	static readonly STOP_DATA_COLLECTION_BY_AGENT_IDS =
+	static readonly StopDataCollectionByAgentIds =
 		"discovery:StopDataCollectionByAgentIds";
 	/** [Write] discovery:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "discovery:UpdateApplication";
+	static readonly UpdateApplication = "discovery:UpdateApplication";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DiscoveryActions.DESCRIBE_AGENTS,
-		DiscoveryActions.DESCRIBE_BATCH_DELETE_CONFIGURATION_TASK,
-		DiscoveryActions.DESCRIBE_CONFIGURATIONS,
-		DiscoveryActions.DESCRIBE_CONTINUOUS_EXPORTS,
-		DiscoveryActions.DESCRIBE_EXPORT_CONFIGURATIONS,
-		DiscoveryActions.DESCRIBE_EXPORT_TASKS,
-		DiscoveryActions.DESCRIBE_TAGS,
-		DiscoveryActions.GET_DISCOVERY_SUMMARY,
-		DiscoveryActions.GET_NETWORK_CONNECTION_GRAPH,
+	static readonly AllReadActions: string[] = [
+		DiscoveryActions.DescribeAgents,
+		DiscoveryActions.DescribeBatchDeleteConfigurationTask,
+		DiscoveryActions.DescribeConfigurations,
+		DiscoveryActions.DescribeContinuousExports,
+		DiscoveryActions.DescribeExportConfigurations,
+		DiscoveryActions.DescribeExportTasks,
+		DiscoveryActions.DescribeTags,
+		DiscoveryActions.actionGetDiscoverySummary,
+		DiscoveryActions.actionGetNetworkConnectionGraph,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DiscoveryActions.ASSOCIATE_CONFIGURATION_ITEMS_TO_APPLICATION,
-		DiscoveryActions.BATCH_DELETE_AGENTS,
-		DiscoveryActions.BATCH_DELETE_IMPORT_DATA,
-		DiscoveryActions.CREATE_APPLICATION,
-		DiscoveryActions.DELETE_APPLICATIONS,
-		DiscoveryActions.DISASSOCIATE_CONFIGURATION_ITEMS_FROM_APPLICATION,
-		DiscoveryActions.EXPORT_CONFIGURATIONS,
-		DiscoveryActions.START_BATCH_DELETE_CONFIGURATION_TASK,
-		DiscoveryActions.START_CONTINUOUS_EXPORT,
-		DiscoveryActions.START_DATA_COLLECTION_BY_AGENT_IDS,
-		DiscoveryActions.START_EXPORT_TASK,
-		DiscoveryActions.START_IMPORT_TASK,
-		DiscoveryActions.STOP_CONTINUOUS_EXPORT,
-		DiscoveryActions.STOP_DATA_COLLECTION_BY_AGENT_IDS,
-		DiscoveryActions.UPDATE_APPLICATION,
+	static readonly AllWriteActions: string[] = [
+		DiscoveryActions.AssociateConfigurationItemsToApplication,
+		DiscoveryActions.BatchDeleteAgents,
+		DiscoveryActions.BatchDeleteImportData,
+		DiscoveryActions.CreateApplication,
+		DiscoveryActions.DeleteApplications,
+		DiscoveryActions.DisassociateConfigurationItemsFromApplication,
+		DiscoveryActions.ExportConfigurations,
+		DiscoveryActions.StartBatchDeleteConfigurationTask,
+		DiscoveryActions.StartContinuousExport,
+		DiscoveryActions.StartDataCollectionByAgentIds,
+		DiscoveryActions.StartExportTask,
+		DiscoveryActions.StartImportTask,
+		DiscoveryActions.StopContinuousExport,
+		DiscoveryActions.StopDataCollectionByAgentIds,
+		DiscoveryActions.UpdateApplication,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DiscoveryActions.DESCRIBE_IMPORT_TASKS,
-		DiscoveryActions.LIST_CONFIGURATIONS,
-		DiscoveryActions.LIST_SERVER_NEIGHBORS,
+	static readonly AllListActions: string[] = [
+		DiscoveryActions.DescribeImportTasks,
+		DiscoveryActions.ListConfigurations,
+		DiscoveryActions.ListServerNeighbors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DiscoveryActions.CREATE_TAGS,
-		DiscoveryActions.DELETE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		DiscoveryActions.CreateTags,
+		DiscoveryActions.DeleteTags,
 	];
 }
 
@@ -130,104 +130,99 @@ export class DiscoveryActions {
  */
 export class DiscoveryOperations {
 	/** IAM actions required for the AssociateConfigurationItemsToApplication API call. */
-	static readonly ASSOCIATE_CONFIGURATION_ITEMS_TO_APPLICATION: string[] = [
+	static readonly AssociateConfigurationItemsToApplication: string[] = [
 		"discovery:AssociateConfigurationItemsToApplication",
 	];
 	/** IAM actions required for the BatchDeleteAgents API call. */
-	static readonly BATCH_DELETE_AGENTS: string[] = [
-		"discovery:BatchDeleteAgents",
-	];
+	static readonly BatchDeleteAgents: string[] = ["discovery:BatchDeleteAgents"];
 	/** IAM actions required for the BatchDeleteImportData API call. */
-	static readonly BATCH_DELETE_IMPORT_DATA: string[] = [
+	static readonly BatchDeleteImportData: string[] = [
 		"discovery:BatchDeleteImportData",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
-		"discovery:CreateApplication",
-	];
+	static readonly CreateApplication: string[] = ["discovery:CreateApplication"];
 	/** IAM actions required for the CreateTags API call. */
-	static readonly CREATE_TAGS: string[] = ["discovery:CreateTags"];
+	static readonly CreateTags: string[] = ["discovery:CreateTags"];
 	/** IAM actions required for the DeleteApplications API call. */
-	static readonly DELETE_APPLICATIONS: string[] = [
+	static readonly DeleteApplications: string[] = [
 		"discovery:DeleteApplications",
 	];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["discovery:DeleteTags"];
+	static readonly DeleteTags: string[] = ["discovery:DeleteTags"];
 	/** IAM actions required for the DescribeAgents API call. */
-	static readonly DESCRIBE_AGENTS: string[] = ["discovery:DescribeAgents"];
+	static readonly DescribeAgents: string[] = ["discovery:DescribeAgents"];
 	/** IAM actions required for the DescribeBatchDeleteConfigurationTask API call. */
-	static readonly DESCRIBE_BATCH_DELETE_CONFIGURATION_TASK: string[] = [
+	static readonly DescribeBatchDeleteConfigurationTask: string[] = [
 		"discovery:DescribeBatchDeleteConfigurationTask",
 	];
 	/** IAM actions required for the DescribeConfigurations API call. */
-	static readonly DESCRIBE_CONFIGURATIONS: string[] = [
+	static readonly DescribeConfigurations: string[] = [
 		"discovery:DescribeConfigurations",
 	];
 	/** IAM actions required for the DescribeContinuousExports API call. */
-	static readonly DESCRIBE_CONTINUOUS_EXPORTS: string[] = [
+	static readonly DescribeContinuousExports: string[] = [
 		"discovery:DescribeContinuousExports",
 	];
 	/** IAM actions required for the DescribeExportConfigurations API call. */
-	static readonly DESCRIBE_EXPORT_CONFIGURATIONS: string[] = [
+	static readonly DescribeExportConfigurations: string[] = [
 		"discovery:DescribeExportConfigurations",
 	];
 	/** IAM actions required for the DescribeExportTasks API call. */
-	static readonly DESCRIBE_EXPORT_TASKS: string[] = [
+	static readonly DescribeExportTasks: string[] = [
 		"discovery:DescribeExportTasks",
 	];
 	/** IAM actions required for the DescribeImportTasks API call. */
-	static readonly DESCRIBE_IMPORT_TASKS: string[] = [
+	static readonly DescribeImportTasks: string[] = [
 		"discovery:DescribeImportTasks",
 	];
 	/** IAM actions required for the DescribeTags API call. */
-	static readonly DESCRIBE_TAGS: string[] = ["discovery:DescribeTags"];
+	static readonly DescribeTags: string[] = ["discovery:DescribeTags"];
 	/** IAM actions required for the DisassociateConfigurationItemsFromApplication API call. */
-	static readonly DISASSOCIATE_CONFIGURATION_ITEMS_FROM_APPLICATION: string[] =
-		["discovery:DisassociateConfigurationItemsFromApplication"];
+	static readonly DisassociateConfigurationItemsFromApplication: string[] = [
+		"discovery:DisassociateConfigurationItemsFromApplication",
+	];
 	/** IAM actions required for the ExportConfigurations API call. */
-	static readonly EXPORT_CONFIGURATIONS: string[] = [
+	static readonly ExportConfigurations: string[] = [
 		"discovery:ExportConfigurations",
 	];
 	/** IAM actions required for the GetDiscoverySummary API call. */
-	static readonly GET_DISCOVERY_SUMMARY: string[] = [
+	static readonly opGetDiscoverySummary: string[] = [
 		"discovery:GetDiscoverySummary",
 	];
 	/** IAM actions required for the ListConfigurations API call. */
-	static readonly LIST_CONFIGURATIONS: string[] = [
+	static readonly ListConfigurations: string[] = [
 		"discovery:ListConfigurations",
 	];
 	/** IAM actions required for the ListServerNeighbors API call. */
-	static readonly LIST_SERVER_NEIGHBORS: string[] = [
+	static readonly ListServerNeighbors: string[] = [
 		"discovery:ListServerNeighbors",
 	];
 	/** IAM actions required for the StartBatchDeleteConfigurationTask API call. */
-	static readonly START_BATCH_DELETE_CONFIGURATION_TASK: string[] = [
+	static readonly StartBatchDeleteConfigurationTask: string[] = [
 		"discovery:StartBatchDeleteConfigurationTask",
 	];
 	/** IAM actions required for the StartContinuousExport API call. */
-	static readonly START_CONTINUOUS_EXPORT: string[] = [
+	static readonly StartContinuousExport: string[] = [
 		"discovery:StartContinuousExport",
 	];
 	/** IAM actions required for the StartDataCollectionByAgentIds API call. */
-	static readonly START_DATA_COLLECTION_BY_AGENT_IDS: string[] = [
+	static readonly StartDataCollectionByAgentIds: string[] = [
 		"discovery:StartDataCollectionByAgentIds",
 	];
 	/** IAM actions required for the StartExportTask API call. */
-	static readonly START_EXPORT_TASK: string[] = ["discovery:StartExportTask"];
+	static readonly StartExportTask: string[] = ["discovery:StartExportTask"];
 	/** IAM actions required for the StartImportTask API call. */
-	static readonly START_IMPORT_TASK: string[] = ["discovery:StartImportTask"];
+	static readonly StartImportTask: string[] = ["discovery:StartImportTask"];
 	/** IAM actions required for the StopContinuousExport API call. */
-	static readonly STOP_CONTINUOUS_EXPORT: string[] = [
+	static readonly StopContinuousExport: string[] = [
 		"discovery:StopContinuousExport",
 	];
 	/** IAM actions required for the StopDataCollectionByAgentIds API call. */
-	static readonly STOP_DATA_COLLECTION_BY_AGENT_IDS: string[] = [
+	static readonly StopDataCollectionByAgentIds: string[] = [
 		"discovery:StopDataCollectionByAgentIds",
 	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
-		"discovery:UpdateApplication",
-	];
+	static readonly UpdateApplication: string[] = ["discovery:UpdateApplication"];
 }
 
 /**
@@ -235,10 +230,10 @@ export class DiscoveryOperations {
  */
 export class DiscoveryConditions {
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly DeleteTagsConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:TagKeys`.

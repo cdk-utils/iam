@@ -13,337 +13,362 @@ export class CodeCommitActions {
 	static readonly SERVICE_PREFIX = "codecommit";
 
 	/** [Write] codecommit:AssociateApprovalRuleTemplateWithRepository */
-	static readonly ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORY =
+	static readonly AssociateApprovalRuleTemplateWithRepository =
 		"codecommit:AssociateApprovalRuleTemplateWithRepository";
 	/** [Write] codecommit:BatchAssociateApprovalRuleTemplateWithRepositories */
-	static readonly BATCH_ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORIES =
+	static readonly BatchAssociateApprovalRuleTemplateWithRepositories =
 		"codecommit:BatchAssociateApprovalRuleTemplateWithRepositories";
 	/** [Read] codecommit:BatchDescribeMergeConflicts */
-	static readonly BATCH_DESCRIBE_MERGE_CONFLICTS =
+	static readonly BatchDescribeMergeConflicts =
 		"codecommit:BatchDescribeMergeConflicts";
 	/** [Write] codecommit:BatchDisassociateApprovalRuleTemplateFromRepositories */
-	static readonly BATCH_DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORIES =
+	static readonly BatchDisassociateApprovalRuleTemplateFromRepositories =
 		"codecommit:BatchDisassociateApprovalRuleTemplateFromRepositories";
 	/** [Read] codecommit:BatchGetCommits */
-	static readonly BATCH_GET_COMMITS = "codecommit:BatchGetCommits";
+	static readonly BatchGetCommits = "codecommit:BatchGetCommits";
 	/** [Read] codecommit:BatchGetPullRequests */
-	static readonly BATCH_GET_PULL_REQUESTS = "codecommit:BatchGetPullRequests";
+	static readonly BatchGetPullRequests = "codecommit:BatchGetPullRequests";
 	/** [Read] codecommit:BatchGetRepositories */
-	static readonly BATCH_GET_REPOSITORIES = "codecommit:BatchGetRepositories";
+	static readonly BatchGetRepositories = "codecommit:BatchGetRepositories";
 	/** [Read] codecommit:CancelUploadArchive */
-	static readonly CANCEL_UPLOAD_ARCHIVE = "codecommit:CancelUploadArchive";
+	static readonly CancelUploadArchive = "codecommit:CancelUploadArchive";
 	/** [Write] codecommit:CreateApprovalRuleTemplate */
-	static readonly CREATE_APPROVAL_RULE_TEMPLATE =
+	static readonly CreateApprovalRuleTemplate =
 		"codecommit:CreateApprovalRuleTemplate";
 	/** [Write] codecommit:CreateBranch */
-	static readonly CREATE_BRANCH = "codecommit:CreateBranch";
+	static readonly CreateBranch = "codecommit:CreateBranch";
 	/** [Write] codecommit:CreateCommit */
-	static readonly CREATE_COMMIT = "codecommit:CreateCommit";
+	static readonly CreateCommit = "codecommit:CreateCommit";
 	/** [Write] codecommit:CreatePullRequest */
-	static readonly CREATE_PULL_REQUEST = "codecommit:CreatePullRequest";
+	static readonly CreatePullRequest = "codecommit:CreatePullRequest";
 	/** [Write] codecommit:CreatePullRequestApprovalRule */
-	static readonly CREATE_PULL_REQUEST_APPROVAL_RULE =
+	static readonly CreatePullRequestApprovalRule =
 		"codecommit:CreatePullRequestApprovalRule";
 	/** [Write] codecommit:CreateRepository */
-	static readonly CREATE_REPOSITORY = "codecommit:CreateRepository";
+	static readonly CreateRepository = "codecommit:CreateRepository";
 	/** [Write] codecommit:CreateUnreferencedMergeCommit */
-	static readonly CREATE_UNREFERENCED_MERGE_COMMIT =
+	static readonly CreateUnreferencedMergeCommit =
 		"codecommit:CreateUnreferencedMergeCommit";
 	/** [Write] codecommit:DeleteApprovalRuleTemplate */
-	static readonly DELETE_APPROVAL_RULE_TEMPLATE =
+	static readonly DeleteApprovalRuleTemplate =
 		"codecommit:DeleteApprovalRuleTemplate";
 	/** [Write] codecommit:DeleteBranch */
-	static readonly DELETE_BRANCH = "codecommit:DeleteBranch";
+	static readonly DeleteBranch = "codecommit:DeleteBranch";
 	/** [Write] codecommit:DeleteCommentContent */
-	static readonly DELETE_COMMENT_CONTENT = "codecommit:DeleteCommentContent";
+	static readonly DeleteCommentContent = "codecommit:DeleteCommentContent";
 	/** [Write] codecommit:DeleteFile */
-	static readonly DELETE_FILE = "codecommit:DeleteFile";
+	static readonly DeleteFile = "codecommit:DeleteFile";
 	/** [Write] codecommit:DeletePullRequestApprovalRule */
-	static readonly DELETE_PULL_REQUEST_APPROVAL_RULE =
+	static readonly DeletePullRequestApprovalRule =
 		"codecommit:DeletePullRequestApprovalRule";
 	/** [Write] codecommit:DeleteRepository */
-	static readonly DELETE_REPOSITORY = "codecommit:DeleteRepository";
+	static readonly DeleteRepository = "codecommit:DeleteRepository";
 	/** [Read] codecommit:DescribeMergeConflicts */
-	static readonly DESCRIBE_MERGE_CONFLICTS =
-		"codecommit:DescribeMergeConflicts";
+	static readonly DescribeMergeConflicts = "codecommit:DescribeMergeConflicts";
 	/** [Read] codecommit:DescribePullRequestEvents */
-	static readonly DESCRIBE_PULL_REQUEST_EVENTS =
+	static readonly DescribePullRequestEvents =
 		"codecommit:DescribePullRequestEvents";
 	/** [Write] codecommit:DisassociateApprovalRuleTemplateFromRepository */
-	static readonly DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORY =
+	static readonly DisassociateApprovalRuleTemplateFromRepository =
 		"codecommit:DisassociateApprovalRuleTemplateFromRepository";
 	/** [Read] codecommit:EvaluatePullRequestApprovalRules */
-	static readonly EVALUATE_PULL_REQUEST_APPROVAL_RULES =
+	static readonly EvaluatePullRequestApprovalRules =
 		"codecommit:EvaluatePullRequestApprovalRules";
 	/** [Read] codecommit:GetApprovalRuleTemplate */
-	static readonly GET_APPROVAL_RULE_TEMPLATE =
+	static readonly actionGetApprovalRuleTemplate =
 		"codecommit:GetApprovalRuleTemplate";
 	/** [Read] codecommit:GetBlob */
-	static readonly GET_BLOB = "codecommit:GetBlob";
+	static readonly actionGetBlob = "codecommit:GetBlob";
 	/** [Read] codecommit:GetBranch */
-	static readonly GET_BRANCH = "codecommit:GetBranch";
+	static readonly actionGetBranch = "codecommit:GetBranch";
 	/** [Read] codecommit:GetComment */
-	static readonly GET_COMMENT = "codecommit:GetComment";
+	static readonly actionGetComment = "codecommit:GetComment";
 	/** [Read] codecommit:GetCommentReactions */
-	static readonly GET_COMMENT_REACTIONS = "codecommit:GetCommentReactions";
+	static readonly actionGetCommentReactions = "codecommit:GetCommentReactions";
 	/** [Read] codecommit:GetCommentsForComparedCommit */
-	static readonly GET_COMMENTS_FOR_COMPARED_COMMIT =
+	static readonly actionGetCommentsForComparedCommit =
 		"codecommit:GetCommentsForComparedCommit";
 	/** [Read] codecommit:GetCommentsForPullRequest */
-	static readonly GET_COMMENTS_FOR_PULL_REQUEST =
+	static readonly actionGetCommentsForPullRequest =
 		"codecommit:GetCommentsForPullRequest";
 	/** [Read] codecommit:GetCommit */
-	static readonly GET_COMMIT = "codecommit:GetCommit";
+	static readonly actionGetCommit = "codecommit:GetCommit";
 	/** [Read] codecommit:GetCommitHistory */
-	static readonly GET_COMMIT_HISTORY = "codecommit:GetCommitHistory";
+	static readonly actionGetCommitHistory = "codecommit:GetCommitHistory";
 	/** [Read] codecommit:GetCommitsFromMergeBase */
-	static readonly GET_COMMITS_FROM_MERGE_BASE =
+	static readonly actionGetCommitsFromMergeBase =
 		"codecommit:GetCommitsFromMergeBase";
 	/** [Read] codecommit:GetDifferences */
-	static readonly GET_DIFFERENCES = "codecommit:GetDifferences";
+	static readonly actionGetDifferences = "codecommit:GetDifferences";
 	/** [Read] codecommit:GetFile */
-	static readonly GET_FILE = "codecommit:GetFile";
+	static readonly actionGetFile = "codecommit:GetFile";
 	/** [Read] codecommit:GetFolder */
-	static readonly GET_FOLDER = "codecommit:GetFolder";
+	static readonly actionGetFolder = "codecommit:GetFolder";
 	/** [Read] codecommit:GetMergeCommit */
-	static readonly GET_MERGE_COMMIT = "codecommit:GetMergeCommit";
+	static readonly actionGetMergeCommit = "codecommit:GetMergeCommit";
 	/** [Read] codecommit:GetMergeConflicts */
-	static readonly GET_MERGE_CONFLICTS = "codecommit:GetMergeConflicts";
+	static readonly actionGetMergeConflicts = "codecommit:GetMergeConflicts";
 	/** [Read] codecommit:GetMergeOptions */
-	static readonly GET_MERGE_OPTIONS = "codecommit:GetMergeOptions";
+	static readonly actionGetMergeOptions = "codecommit:GetMergeOptions";
 	/** [Read] codecommit:GetObjectIdentifier */
-	static readonly GET_OBJECT_IDENTIFIER = "codecommit:GetObjectIdentifier";
+	static readonly actionGetObjectIdentifier = "codecommit:GetObjectIdentifier";
 	/** [Read] codecommit:GetPullRequest */
-	static readonly GET_PULL_REQUEST = "codecommit:GetPullRequest";
+	static readonly actionGetPullRequest = "codecommit:GetPullRequest";
 	/** [Read] codecommit:GetPullRequestApprovalStates */
-	static readonly GET_PULL_REQUEST_APPROVAL_STATES =
+	static readonly actionGetPullRequestApprovalStates =
 		"codecommit:GetPullRequestApprovalStates";
 	/** [Read] codecommit:GetPullRequestOverrideState */
-	static readonly GET_PULL_REQUEST_OVERRIDE_STATE =
+	static readonly actionGetPullRequestOverrideState =
 		"codecommit:GetPullRequestOverrideState";
 	/** [Read] codecommit:GetReferences */
-	static readonly GET_REFERENCES = "codecommit:GetReferences";
+	static readonly actionGetReferences = "codecommit:GetReferences";
 	/** [Read] codecommit:GetRepository */
-	static readonly GET_REPOSITORY = "codecommit:GetRepository";
+	static readonly actionGetRepository = "codecommit:GetRepository";
 	/** [Read] codecommit:GetRepositoryTriggers */
-	static readonly GET_REPOSITORY_TRIGGERS = "codecommit:GetRepositoryTriggers";
+	static readonly actionGetRepositoryTriggers =
+		"codecommit:GetRepositoryTriggers";
 	/** [Read] codecommit:GetTree */
-	static readonly GET_TREE = "codecommit:GetTree";
+	static readonly actionGetTree = "codecommit:GetTree";
 	/** [Read] codecommit:GetUploadArchiveStatus */
-	static readonly GET_UPLOAD_ARCHIVE_STATUS =
+	static readonly actionGetUploadArchiveStatus =
 		"codecommit:GetUploadArchiveStatus";
 	/** [Read] codecommit:GitPull */
-	static readonly GIT_PULL = "codecommit:GitPull";
+	static readonly GitPull = "codecommit:GitPull";
 	/** [Write] codecommit:GitPush */
-	static readonly GIT_PUSH = "codecommit:GitPush";
+	static readonly GitPush = "codecommit:GitPush";
 	/** [List] codecommit:ListApprovalRuleTemplates */
-	static readonly LIST_APPROVAL_RULE_TEMPLATES =
+	static readonly ListApprovalRuleTemplates =
 		"codecommit:ListApprovalRuleTemplates";
 	/** [List] codecommit:ListAssociatedApprovalRuleTemplatesForRepository */
-	static readonly LIST_ASSOCIATED_APPROVAL_RULE_TEMPLATES_FOR_REPOSITORY =
+	static readonly ListAssociatedApprovalRuleTemplatesForRepository =
 		"codecommit:ListAssociatedApprovalRuleTemplatesForRepository";
 	/** [List] codecommit:ListBranches */
-	static readonly LIST_BRANCHES = "codecommit:ListBranches";
+	static readonly ListBranches = "codecommit:ListBranches";
 	/** [List] codecommit:ListFileCommitHistory */
-	static readonly LIST_FILE_COMMIT_HISTORY = "codecommit:ListFileCommitHistory";
+	static readonly ListFileCommitHistory = "codecommit:ListFileCommitHistory";
 	/** [List] codecommit:ListPullRequests */
-	static readonly LIST_PULL_REQUESTS = "codecommit:ListPullRequests";
+	static readonly ListPullRequests = "codecommit:ListPullRequests";
 	/** [List] codecommit:ListRepositories */
-	static readonly LIST_REPOSITORIES = "codecommit:ListRepositories";
+	static readonly ListRepositories = "codecommit:ListRepositories";
 	/** [List] codecommit:ListRepositoriesForApprovalRuleTemplate */
-	static readonly LIST_REPOSITORIES_FOR_APPROVAL_RULE_TEMPLATE =
+	static readonly ListRepositoriesForApprovalRuleTemplate =
 		"codecommit:ListRepositoriesForApprovalRuleTemplate";
 	/** [List] codecommit:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "codecommit:ListTagsForResource";
+	static readonly ListTagsForResource = "codecommit:ListTagsForResource";
 	/** [Write] codecommit:MergeBranchesByFastForward */
-	static readonly MERGE_BRANCHES_BY_FAST_FORWARD =
+	static readonly MergeBranchesByFastForward =
 		"codecommit:MergeBranchesByFastForward";
 	/** [Write] codecommit:MergeBranchesBySquash */
-	static readonly MERGE_BRANCHES_BY_SQUASH = "codecommit:MergeBranchesBySquash";
+	static readonly MergeBranchesBySquash = "codecommit:MergeBranchesBySquash";
 	/** [Write] codecommit:MergeBranchesByThreeWay */
-	static readonly MERGE_BRANCHES_BY_THREE_WAY =
+	static readonly MergeBranchesByThreeWay =
 		"codecommit:MergeBranchesByThreeWay";
 	/** [Write] codecommit:MergePullRequestByFastForward */
-	static readonly MERGE_PULL_REQUEST_BY_FAST_FORWARD =
+	static readonly MergePullRequestByFastForward =
 		"codecommit:MergePullRequestByFastForward";
 	/** [Write] codecommit:MergePullRequestBySquash */
-	static readonly MERGE_PULL_REQUEST_BY_SQUASH =
+	static readonly MergePullRequestBySquash =
 		"codecommit:MergePullRequestBySquash";
 	/** [Write] codecommit:MergePullRequestByThreeWay */
-	static readonly MERGE_PULL_REQUEST_BY_THREE_WAY =
+	static readonly MergePullRequestByThreeWay =
 		"codecommit:MergePullRequestByThreeWay";
 	/** [Write] codecommit:OverridePullRequestApprovalRules */
-	static readonly OVERRIDE_PULL_REQUEST_APPROVAL_RULES =
+	static readonly OverridePullRequestApprovalRules =
 		"codecommit:OverridePullRequestApprovalRules";
 	/** [Write] codecommit:PostCommentForComparedCommit */
-	static readonly POST_COMMENT_FOR_COMPARED_COMMIT =
+	static readonly PostCommentForComparedCommit =
 		"codecommit:PostCommentForComparedCommit";
 	/** [Write] codecommit:PostCommentForPullRequest */
-	static readonly POST_COMMENT_FOR_PULL_REQUEST =
+	static readonly PostCommentForPullRequest =
 		"codecommit:PostCommentForPullRequest";
 	/** [Write] codecommit:PostCommentReply */
-	static readonly POST_COMMENT_REPLY = "codecommit:PostCommentReply";
+	static readonly PostCommentReply = "codecommit:PostCommentReply";
 	/** [Write] codecommit:PutCommentReaction */
-	static readonly PUT_COMMENT_REACTION = "codecommit:PutCommentReaction";
+	static readonly PutCommentReaction = "codecommit:PutCommentReaction";
 	/** [Write] codecommit:PutFile */
-	static readonly PUT_FILE = "codecommit:PutFile";
+	static readonly PutFile = "codecommit:PutFile";
 	/** [Write] codecommit:PutRepositoryTriggers */
-	static readonly PUT_REPOSITORY_TRIGGERS = "codecommit:PutRepositoryTriggers";
+	static readonly PutRepositoryTriggers = "codecommit:PutRepositoryTriggers";
 	/** [Tagging] codecommit:TagResource */
-	static readonly TAG_RESOURCE = "codecommit:TagResource";
+	static readonly TagResource = "codecommit:TagResource";
 	/** [Write] codecommit:TestRepositoryTriggers */
-	static readonly TEST_REPOSITORY_TRIGGERS =
-		"codecommit:TestRepositoryTriggers";
+	static readonly TestRepositoryTriggers = "codecommit:TestRepositoryTriggers";
 	/** [Tagging] codecommit:UntagResource */
-	static readonly UNTAG_RESOURCE = "codecommit:UntagResource";
+	static readonly UntagResource = "codecommit:UntagResource";
 	/** [Write] codecommit:UpdateApprovalRuleTemplateContent */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_CONTENT =
+	static readonly UpdateApprovalRuleTemplateContent =
 		"codecommit:UpdateApprovalRuleTemplateContent";
 	/** [Write] codecommit:UpdateApprovalRuleTemplateDescription */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_DESCRIPTION =
+	static readonly UpdateApprovalRuleTemplateDescription =
 		"codecommit:UpdateApprovalRuleTemplateDescription";
 	/** [Write] codecommit:UpdateApprovalRuleTemplateName */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_NAME =
+	static readonly UpdateApprovalRuleTemplateName =
 		"codecommit:UpdateApprovalRuleTemplateName";
 	/** [Write] codecommit:UpdateComment */
-	static readonly UPDATE_COMMENT = "codecommit:UpdateComment";
+	static readonly UpdateComment = "codecommit:UpdateComment";
 	/** [Write] codecommit:UpdateDefaultBranch */
-	static readonly UPDATE_DEFAULT_BRANCH = "codecommit:UpdateDefaultBranch";
+	static readonly UpdateDefaultBranch = "codecommit:UpdateDefaultBranch";
 	/** [Write] codecommit:UpdatePullRequestApprovalRuleContent */
-	static readonly UPDATE_PULL_REQUEST_APPROVAL_RULE_CONTENT =
+	static readonly UpdatePullRequestApprovalRuleContent =
 		"codecommit:UpdatePullRequestApprovalRuleContent";
 	/** [Write] codecommit:UpdatePullRequestApprovalState */
-	static readonly UPDATE_PULL_REQUEST_APPROVAL_STATE =
+	static readonly UpdatePullRequestApprovalState =
 		"codecommit:UpdatePullRequestApprovalState";
 	/** [Write] codecommit:UpdatePullRequestDescription */
-	static readonly UPDATE_PULL_REQUEST_DESCRIPTION =
+	static readonly UpdatePullRequestDescription =
 		"codecommit:UpdatePullRequestDescription";
 	/** [Write] codecommit:UpdatePullRequestStatus */
-	static readonly UPDATE_PULL_REQUEST_STATUS =
+	static readonly UpdatePullRequestStatus =
 		"codecommit:UpdatePullRequestStatus";
 	/** [Write] codecommit:UpdatePullRequestTitle */
-	static readonly UPDATE_PULL_REQUEST_TITLE =
-		"codecommit:UpdatePullRequestTitle";
+	static readonly UpdatePullRequestTitle = "codecommit:UpdatePullRequestTitle";
 	/** [Write] codecommit:UpdateRepositoryDescription */
-	static readonly UPDATE_REPOSITORY_DESCRIPTION =
+	static readonly UpdateRepositoryDescription =
 		"codecommit:UpdateRepositoryDescription";
 	/** [Write] codecommit:UpdateRepositoryEncryptionKey */
-	static readonly UPDATE_REPOSITORY_ENCRYPTION_KEY =
+	static readonly UpdateRepositoryEncryptionKey =
 		"codecommit:UpdateRepositoryEncryptionKey";
 	/** [Write] codecommit:UpdateRepositoryName */
-	static readonly UPDATE_REPOSITORY_NAME = "codecommit:UpdateRepositoryName";
+	static readonly UpdateRepositoryName = "codecommit:UpdateRepositoryName";
 	/** [Write] codecommit:UploadArchive */
-	static readonly UPLOAD_ARCHIVE = "codecommit:UploadArchive";
+	static readonly UploadArchive = "codecommit:UploadArchive";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeCommitActions.BATCH_DESCRIBE_MERGE_CONFLICTS,
-		CodeCommitActions.BATCH_GET_COMMITS,
-		CodeCommitActions.BATCH_GET_PULL_REQUESTS,
-		CodeCommitActions.BATCH_GET_REPOSITORIES,
-		CodeCommitActions.CANCEL_UPLOAD_ARCHIVE,
-		CodeCommitActions.DESCRIBE_MERGE_CONFLICTS,
-		CodeCommitActions.DESCRIBE_PULL_REQUEST_EVENTS,
-		CodeCommitActions.EVALUATE_PULL_REQUEST_APPROVAL_RULES,
-		CodeCommitActions.GET_APPROVAL_RULE_TEMPLATE,
-		CodeCommitActions.GET_BLOB,
-		CodeCommitActions.GET_BRANCH,
-		CodeCommitActions.GET_COMMENT,
-		CodeCommitActions.GET_COMMENT_REACTIONS,
-		CodeCommitActions.GET_COMMENTS_FOR_COMPARED_COMMIT,
-		CodeCommitActions.GET_COMMENTS_FOR_PULL_REQUEST,
-		CodeCommitActions.GET_COMMIT,
-		CodeCommitActions.GET_COMMIT_HISTORY,
-		CodeCommitActions.GET_COMMITS_FROM_MERGE_BASE,
-		CodeCommitActions.GET_DIFFERENCES,
-		CodeCommitActions.GET_FILE,
-		CodeCommitActions.GET_FOLDER,
-		CodeCommitActions.GET_MERGE_COMMIT,
-		CodeCommitActions.GET_MERGE_CONFLICTS,
-		CodeCommitActions.GET_MERGE_OPTIONS,
-		CodeCommitActions.GET_OBJECT_IDENTIFIER,
-		CodeCommitActions.GET_PULL_REQUEST,
-		CodeCommitActions.GET_PULL_REQUEST_APPROVAL_STATES,
-		CodeCommitActions.GET_PULL_REQUEST_OVERRIDE_STATE,
-		CodeCommitActions.GET_REFERENCES,
-		CodeCommitActions.GET_REPOSITORY,
-		CodeCommitActions.GET_REPOSITORY_TRIGGERS,
-		CodeCommitActions.GET_TREE,
-		CodeCommitActions.GET_UPLOAD_ARCHIVE_STATUS,
-		CodeCommitActions.GIT_PULL,
+	static readonly AllReadActions: string[] = [
+		CodeCommitActions.BatchDescribeMergeConflicts,
+		CodeCommitActions.BatchGetCommits,
+		CodeCommitActions.BatchGetPullRequests,
+		CodeCommitActions.BatchGetRepositories,
+		CodeCommitActions.CancelUploadArchive,
+		CodeCommitActions.DescribeMergeConflicts,
+		CodeCommitActions.DescribePullRequestEvents,
+		CodeCommitActions.EvaluatePullRequestApprovalRules,
+		CodeCommitActions.actionGetApprovalRuleTemplate,
+		CodeCommitActions.actionGetBlob,
+		CodeCommitActions.actionGetBranch,
+		CodeCommitActions.actionGetComment,
+		CodeCommitActions.actionGetCommentReactions,
+		CodeCommitActions.actionGetCommentsForComparedCommit,
+		CodeCommitActions.actionGetCommentsForPullRequest,
+		CodeCommitActions.actionGetCommit,
+		CodeCommitActions.actionGetCommitHistory,
+		CodeCommitActions.actionGetCommitsFromMergeBase,
+		CodeCommitActions.actionGetDifferences,
+		CodeCommitActions.actionGetFile,
+		CodeCommitActions.actionGetFolder,
+		CodeCommitActions.actionGetMergeCommit,
+		CodeCommitActions.actionGetMergeConflicts,
+		CodeCommitActions.actionGetMergeOptions,
+		CodeCommitActions.actionGetObjectIdentifier,
+		CodeCommitActions.actionGetPullRequest,
+		CodeCommitActions.actionGetPullRequestApprovalStates,
+		CodeCommitActions.actionGetPullRequestOverrideState,
+		CodeCommitActions.actionGetReferences,
+		CodeCommitActions.actionGetRepository,
+		CodeCommitActions.actionGetRepositoryTriggers,
+		CodeCommitActions.actionGetTree,
+		CodeCommitActions.actionGetUploadArchiveStatus,
+		CodeCommitActions.GitPull,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeCommitActions.ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORY,
-		CodeCommitActions.BATCH_ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORIES,
-		CodeCommitActions.BATCH_DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORIES,
-		CodeCommitActions.CREATE_APPROVAL_RULE_TEMPLATE,
-		CodeCommitActions.CREATE_BRANCH,
-		CodeCommitActions.CREATE_COMMIT,
-		CodeCommitActions.CREATE_PULL_REQUEST,
-		CodeCommitActions.CREATE_PULL_REQUEST_APPROVAL_RULE,
-		CodeCommitActions.CREATE_REPOSITORY,
-		CodeCommitActions.CREATE_UNREFERENCED_MERGE_COMMIT,
-		CodeCommitActions.DELETE_APPROVAL_RULE_TEMPLATE,
-		CodeCommitActions.DELETE_BRANCH,
-		CodeCommitActions.DELETE_COMMENT_CONTENT,
-		CodeCommitActions.DELETE_FILE,
-		CodeCommitActions.DELETE_PULL_REQUEST_APPROVAL_RULE,
-		CodeCommitActions.DELETE_REPOSITORY,
-		CodeCommitActions.DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORY,
-		CodeCommitActions.GIT_PUSH,
-		CodeCommitActions.MERGE_BRANCHES_BY_FAST_FORWARD,
-		CodeCommitActions.MERGE_BRANCHES_BY_SQUASH,
-		CodeCommitActions.MERGE_BRANCHES_BY_THREE_WAY,
-		CodeCommitActions.MERGE_PULL_REQUEST_BY_FAST_FORWARD,
-		CodeCommitActions.MERGE_PULL_REQUEST_BY_SQUASH,
-		CodeCommitActions.MERGE_PULL_REQUEST_BY_THREE_WAY,
-		CodeCommitActions.OVERRIDE_PULL_REQUEST_APPROVAL_RULES,
-		CodeCommitActions.POST_COMMENT_FOR_COMPARED_COMMIT,
-		CodeCommitActions.POST_COMMENT_FOR_PULL_REQUEST,
-		CodeCommitActions.POST_COMMENT_REPLY,
-		CodeCommitActions.PUT_COMMENT_REACTION,
-		CodeCommitActions.PUT_FILE,
-		CodeCommitActions.PUT_REPOSITORY_TRIGGERS,
-		CodeCommitActions.TEST_REPOSITORY_TRIGGERS,
-		CodeCommitActions.UPDATE_APPROVAL_RULE_TEMPLATE_CONTENT,
-		CodeCommitActions.UPDATE_APPROVAL_RULE_TEMPLATE_DESCRIPTION,
-		CodeCommitActions.UPDATE_APPROVAL_RULE_TEMPLATE_NAME,
-		CodeCommitActions.UPDATE_COMMENT,
-		CodeCommitActions.UPDATE_DEFAULT_BRANCH,
-		CodeCommitActions.UPDATE_PULL_REQUEST_APPROVAL_RULE_CONTENT,
-		CodeCommitActions.UPDATE_PULL_REQUEST_APPROVAL_STATE,
-		CodeCommitActions.UPDATE_PULL_REQUEST_DESCRIPTION,
-		CodeCommitActions.UPDATE_PULL_REQUEST_STATUS,
-		CodeCommitActions.UPDATE_PULL_REQUEST_TITLE,
-		CodeCommitActions.UPDATE_REPOSITORY_DESCRIPTION,
-		CodeCommitActions.UPDATE_REPOSITORY_ENCRYPTION_KEY,
-		CodeCommitActions.UPDATE_REPOSITORY_NAME,
-		CodeCommitActions.UPLOAD_ARCHIVE,
+	static readonly AllWriteActions: string[] = [
+		CodeCommitActions.AssociateApprovalRuleTemplateWithRepository,
+		CodeCommitActions.BatchAssociateApprovalRuleTemplateWithRepositories,
+		CodeCommitActions.BatchDisassociateApprovalRuleTemplateFromRepositories,
+		CodeCommitActions.CreateApprovalRuleTemplate,
+		CodeCommitActions.CreateBranch,
+		CodeCommitActions.CreateCommit,
+		CodeCommitActions.CreatePullRequest,
+		CodeCommitActions.CreatePullRequestApprovalRule,
+		CodeCommitActions.CreateRepository,
+		CodeCommitActions.CreateUnreferencedMergeCommit,
+		CodeCommitActions.DeleteApprovalRuleTemplate,
+		CodeCommitActions.DeleteBranch,
+		CodeCommitActions.DeleteCommentContent,
+		CodeCommitActions.DeleteFile,
+		CodeCommitActions.DeletePullRequestApprovalRule,
+		CodeCommitActions.DeleteRepository,
+		CodeCommitActions.DisassociateApprovalRuleTemplateFromRepository,
+		CodeCommitActions.GitPush,
+		CodeCommitActions.MergeBranchesByFastForward,
+		CodeCommitActions.MergeBranchesBySquash,
+		CodeCommitActions.MergeBranchesByThreeWay,
+		CodeCommitActions.MergePullRequestByFastForward,
+		CodeCommitActions.MergePullRequestBySquash,
+		CodeCommitActions.MergePullRequestByThreeWay,
+		CodeCommitActions.OverridePullRequestApprovalRules,
+		CodeCommitActions.PostCommentForComparedCommit,
+		CodeCommitActions.PostCommentForPullRequest,
+		CodeCommitActions.PostCommentReply,
+		CodeCommitActions.PutCommentReaction,
+		CodeCommitActions.PutFile,
+		CodeCommitActions.PutRepositoryTriggers,
+		CodeCommitActions.TestRepositoryTriggers,
+		CodeCommitActions.UpdateApprovalRuleTemplateContent,
+		CodeCommitActions.UpdateApprovalRuleTemplateDescription,
+		CodeCommitActions.UpdateApprovalRuleTemplateName,
+		CodeCommitActions.UpdateComment,
+		CodeCommitActions.UpdateDefaultBranch,
+		CodeCommitActions.UpdatePullRequestApprovalRuleContent,
+		CodeCommitActions.UpdatePullRequestApprovalState,
+		CodeCommitActions.UpdatePullRequestDescription,
+		CodeCommitActions.UpdatePullRequestStatus,
+		CodeCommitActions.UpdatePullRequestTitle,
+		CodeCommitActions.UpdateRepositoryDescription,
+		CodeCommitActions.UpdateRepositoryEncryptionKey,
+		CodeCommitActions.UpdateRepositoryName,
+		CodeCommitActions.UploadArchive,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeCommitActions.LIST_APPROVAL_RULE_TEMPLATES,
-		CodeCommitActions.LIST_ASSOCIATED_APPROVAL_RULE_TEMPLATES_FOR_REPOSITORY,
-		CodeCommitActions.LIST_BRANCHES,
-		CodeCommitActions.LIST_FILE_COMMIT_HISTORY,
-		CodeCommitActions.LIST_PULL_REQUESTS,
-		CodeCommitActions.LIST_REPOSITORIES,
-		CodeCommitActions.LIST_REPOSITORIES_FOR_APPROVAL_RULE_TEMPLATE,
-		CodeCommitActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CodeCommitActions.ListApprovalRuleTemplates,
+		CodeCommitActions.ListAssociatedApprovalRuleTemplatesForRepository,
+		CodeCommitActions.ListBranches,
+		CodeCommitActions.ListFileCommitHistory,
+		CodeCommitActions.ListPullRequests,
+		CodeCommitActions.ListRepositories,
+		CodeCommitActions.ListRepositoriesForApprovalRuleTemplate,
+		CodeCommitActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodeCommitActions.TAG_RESOURCE,
-		CodeCommitActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodeCommitActions.TagResource,
+		CodeCommitActions.UntagResource,
 	];
 }
 
-const RepositoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codecommit:(?<region>[^:]*):(?<account>[^:]*):(?<repositoryName>[^:/?]+)$",
-);
+/**
+ * Properties for building a repository ARN.
+ */
+export interface CodeCommitRepositoryArnProps {
+	/** The RepositoryName component of the ARN. */
+	readonly repositoryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a repository ARN.
+ */
+export interface CodeCommitRepositoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RepositoryName component. */
+	readonly repositoryName: string;
+}
+
+const RepositoryArnRegex =
+	/^arn:(?<partition>[^:]+):codecommit:(?<region>[^:]*):(?<account>[^:]*):(?<repositoryName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codecommit resources.
@@ -352,16 +377,7 @@ export class CodeCommitResources {
 	/**
 	 * Builds an ARN for the repository resource.
 	 */
-	static repository(props: {
-		/** The RepositoryName component of the ARN. */
-		readonly repositoryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static repository(props: CodeCommitRepositoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codecommit:${props.region ?? "*"}:${props.account ?? "*"}:${props.repositoryName}`;
 	}
 
@@ -376,12 +392,7 @@ export class CodeCommitResources {
 	 * Parses a repository ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRepositoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		repositoryName: string;
-	} {
+	static parseRepositoryArn(arn: string): CodeCommitRepositoryArnComponents {
 		const match = RepositoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid repository ARN: ${arn}`);
@@ -400,270 +411,268 @@ export class CodeCommitResources {
  */
 export class CodeCommitOperations {
 	/** IAM actions required for the AssociateApprovalRuleTemplateWithRepository API call. */
-	static readonly ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORY: string[] = [
+	static readonly AssociateApprovalRuleTemplateWithRepository: string[] = [
 		"codecommit:AssociateApprovalRuleTemplateWithRepository",
 	];
 	/** IAM actions required for the BatchAssociateApprovalRuleTemplateWithRepositories API call. */
-	static readonly BATCH_ASSOCIATE_APPROVAL_RULE_TEMPLATE_WITH_REPOSITORIES: string[] =
+	static readonly BatchAssociateApprovalRuleTemplateWithRepositories: string[] =
 		["codecommit:BatchAssociateApprovalRuleTemplateWithRepositories"];
 	/** IAM actions required for the BatchDescribeMergeConflicts API call. */
-	static readonly BATCH_DESCRIBE_MERGE_CONFLICTS: string[] = [
+	static readonly BatchDescribeMergeConflicts: string[] = [
 		"codecommit:BatchDescribeMergeConflicts",
 	];
 	/** IAM actions required for the BatchDisassociateApprovalRuleTemplateFromRepositories API call. */
-	static readonly BATCH_DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORIES: string[] =
+	static readonly BatchDisassociateApprovalRuleTemplateFromRepositories: string[] =
 		["codecommit:BatchDisassociateApprovalRuleTemplateFromRepositories"];
 	/** IAM actions required for the BatchGetCommits API call. */
-	static readonly BATCH_GET_COMMITS: string[] = ["codecommit:BatchGetCommits"];
+	static readonly BatchGetCommits: string[] = ["codecommit:BatchGetCommits"];
 	/** IAM actions required for the BatchGetRepositories API call. */
-	static readonly BATCH_GET_REPOSITORIES: string[] = [
+	static readonly BatchGetRepositories: string[] = [
 		"codecommit:BatchGetRepositories",
 	];
 	/** IAM actions required for the CreateApprovalRuleTemplate API call. */
-	static readonly CREATE_APPROVAL_RULE_TEMPLATE: string[] = [
+	static readonly CreateApprovalRuleTemplate: string[] = [
 		"codecommit:CreateApprovalRuleTemplate",
 	];
 	/** IAM actions required for the CreateBranch API call. */
-	static readonly CREATE_BRANCH: string[] = ["codecommit:CreateBranch"];
+	static readonly CreateBranch: string[] = ["codecommit:CreateBranch"];
 	/** IAM actions required for the CreateCommit API call. */
-	static readonly CREATE_COMMIT: string[] = ["codecommit:CreateCommit"];
+	static readonly CreateCommit: string[] = ["codecommit:CreateCommit"];
 	/** IAM actions required for the CreatePullRequest API call. */
-	static readonly CREATE_PULL_REQUEST: string[] = [
+	static readonly CreatePullRequest: string[] = [
 		"codecommit:CreatePullRequest",
 	];
 	/** IAM actions required for the CreatePullRequestApprovalRule API call. */
-	static readonly CREATE_PULL_REQUEST_APPROVAL_RULE: string[] = [
+	static readonly CreatePullRequestApprovalRule: string[] = [
 		"codecommit:CreatePullRequestApprovalRule",
 	];
 	/** IAM actions required for the CreateRepository API call. */
-	static readonly CREATE_REPOSITORY: string[] = [
+	static readonly CreateRepository: string[] = [
 		"codecommit:CreateRepository",
 		"codecommit:TagResource",
 	];
 	/** IAM actions required for the CreateUnreferencedMergeCommit API call. */
-	static readonly CREATE_UNREFERENCED_MERGE_COMMIT: string[] = [
+	static readonly CreateUnreferencedMergeCommit: string[] = [
 		"codecommit:CreateUnreferencedMergeCommit",
 	];
 	/** IAM actions required for the DeleteApprovalRuleTemplate API call. */
-	static readonly DELETE_APPROVAL_RULE_TEMPLATE: string[] = [
+	static readonly DeleteApprovalRuleTemplate: string[] = [
 		"codecommit:DeleteApprovalRuleTemplate",
 	];
 	/** IAM actions required for the DeleteBranch API call. */
-	static readonly DELETE_BRANCH: string[] = ["codecommit:DeleteBranch"];
+	static readonly DeleteBranch: string[] = ["codecommit:DeleteBranch"];
 	/** IAM actions required for the DeleteCommentContent API call. */
-	static readonly DELETE_COMMENT_CONTENT: string[] = [
+	static readonly DeleteCommentContent: string[] = [
 		"codecommit:DeleteCommentContent",
 	];
 	/** IAM actions required for the DeleteFile API call. */
-	static readonly DELETE_FILE: string[] = ["codecommit:DeleteFile"];
+	static readonly DeleteFile: string[] = ["codecommit:DeleteFile"];
 	/** IAM actions required for the DeletePullRequestApprovalRule API call. */
-	static readonly DELETE_PULL_REQUEST_APPROVAL_RULE: string[] = [
+	static readonly DeletePullRequestApprovalRule: string[] = [
 		"codecommit:DeletePullRequestApprovalRule",
 	];
 	/** IAM actions required for the DeleteRepository API call. */
-	static readonly DELETE_REPOSITORY: string[] = ["codecommit:DeleteRepository"];
+	static readonly DeleteRepository: string[] = ["codecommit:DeleteRepository"];
 	/** IAM actions required for the DescribeMergeConflicts API call. */
-	static readonly DESCRIBE_MERGE_CONFLICTS: string[] = [
+	static readonly DescribeMergeConflicts: string[] = [
 		"codecommit:DescribeMergeConflicts",
 	];
 	/** IAM actions required for the DescribePullRequestEvents API call. */
-	static readonly DESCRIBE_PULL_REQUEST_EVENTS: string[] = [
+	static readonly DescribePullRequestEvents: string[] = [
 		"codecommit:DescribePullRequestEvents",
 	];
 	/** IAM actions required for the DisassociateApprovalRuleTemplateFromRepository API call. */
-	static readonly DISASSOCIATE_APPROVAL_RULE_TEMPLATE_FROM_REPOSITORY: string[] =
-		["codecommit:DisassociateApprovalRuleTemplateFromRepository"];
+	static readonly DisassociateApprovalRuleTemplateFromRepository: string[] = [
+		"codecommit:DisassociateApprovalRuleTemplateFromRepository",
+	];
 	/** IAM actions required for the EvaluatePullRequestApprovalRules API call. */
-	static readonly EVALUATE_PULL_REQUEST_APPROVAL_RULES: string[] = [
+	static readonly EvaluatePullRequestApprovalRules: string[] = [
 		"codecommit:EvaluatePullRequestApprovalRules",
 	];
 	/** IAM actions required for the GetApprovalRuleTemplate API call. */
-	static readonly GET_APPROVAL_RULE_TEMPLATE: string[] = [
+	static readonly opGetApprovalRuleTemplate: string[] = [
 		"codecommit:GetApprovalRuleTemplate",
 	];
 	/** IAM actions required for the GetBlob API call. */
-	static readonly GET_BLOB: string[] = ["codecommit:GetBlob"];
+	static readonly opGetBlob: string[] = ["codecommit:GetBlob"];
 	/** IAM actions required for the GetBranch API call. */
-	static readonly GET_BRANCH: string[] = ["codecommit:GetBranch"];
+	static readonly opGetBranch: string[] = ["codecommit:GetBranch"];
 	/** IAM actions required for the GetComment API call. */
-	static readonly GET_COMMENT: string[] = ["codecommit:GetComment"];
+	static readonly opGetComment: string[] = ["codecommit:GetComment"];
 	/** IAM actions required for the GetCommentReactions API call. */
-	static readonly GET_COMMENT_REACTIONS: string[] = [
+	static readonly opGetCommentReactions: string[] = [
 		"codecommit:GetCommentReactions",
 	];
 	/** IAM actions required for the GetCommentsForComparedCommit API call. */
-	static readonly GET_COMMENTS_FOR_COMPARED_COMMIT: string[] = [
+	static readonly opGetCommentsForComparedCommit: string[] = [
 		"codecommit:GetCommentsForComparedCommit",
 	];
 	/** IAM actions required for the GetCommentsForPullRequest API call. */
-	static readonly GET_COMMENTS_FOR_PULL_REQUEST: string[] = [
+	static readonly opGetCommentsForPullRequest: string[] = [
 		"codecommit:GetCommentsForPullRequest",
 	];
 	/** IAM actions required for the GetCommit API call. */
-	static readonly GET_COMMIT: string[] = ["codecommit:GetCommit"];
+	static readonly opGetCommit: string[] = ["codecommit:GetCommit"];
 	/** IAM actions required for the GetDifferences API call. */
-	static readonly GET_DIFFERENCES: string[] = ["codecommit:GetDifferences"];
+	static readonly opGetDifferences: string[] = ["codecommit:GetDifferences"];
 	/** IAM actions required for the GetFile API call. */
-	static readonly GET_FILE: string[] = ["codecommit:GetFile"];
+	static readonly opGetFile: string[] = ["codecommit:GetFile"];
 	/** IAM actions required for the GetFolder API call. */
-	static readonly GET_FOLDER: string[] = ["codecommit:GetFolder"];
+	static readonly opGetFolder: string[] = ["codecommit:GetFolder"];
 	/** IAM actions required for the GetMergeCommit API call. */
-	static readonly GET_MERGE_COMMIT: string[] = ["codecommit:GetMergeCommit"];
+	static readonly opGetMergeCommit: string[] = ["codecommit:GetMergeCommit"];
 	/** IAM actions required for the GetMergeConflicts API call. */
-	static readonly GET_MERGE_CONFLICTS: string[] = [
+	static readonly opGetMergeConflicts: string[] = [
 		"codecommit:GetMergeConflicts",
 	];
 	/** IAM actions required for the GetMergeOptions API call. */
-	static readonly GET_MERGE_OPTIONS: string[] = ["codecommit:GetMergeOptions"];
+	static readonly opGetMergeOptions: string[] = ["codecommit:GetMergeOptions"];
 	/** IAM actions required for the GetPullRequest API call. */
-	static readonly GET_PULL_REQUEST: string[] = ["codecommit:GetPullRequest"];
+	static readonly opGetPullRequest: string[] = ["codecommit:GetPullRequest"];
 	/** IAM actions required for the GetPullRequestApprovalStates API call. */
-	static readonly GET_PULL_REQUEST_APPROVAL_STATES: string[] = [
+	static readonly opGetPullRequestApprovalStates: string[] = [
 		"codecommit:GetPullRequestApprovalStates",
 	];
 	/** IAM actions required for the GetPullRequestOverrideState API call. */
-	static readonly GET_PULL_REQUEST_OVERRIDE_STATE: string[] = [
+	static readonly opGetPullRequestOverrideState: string[] = [
 		"codecommit:GetPullRequestOverrideState",
 	];
 	/** IAM actions required for the GetRepository API call. */
-	static readonly GET_REPOSITORY: string[] = ["codecommit:GetRepository"];
+	static readonly opGetRepository: string[] = ["codecommit:GetRepository"];
 	/** IAM actions required for the GetRepositoryTriggers API call. */
-	static readonly GET_REPOSITORY_TRIGGERS: string[] = [
+	static readonly opGetRepositoryTriggers: string[] = [
 		"codecommit:GetRepositoryTriggers",
 	];
 	/** IAM actions required for the ListApprovalRuleTemplates API call. */
-	static readonly LIST_APPROVAL_RULE_TEMPLATES: string[] = [
+	static readonly ListApprovalRuleTemplates: string[] = [
 		"codecommit:ListApprovalRuleTemplates",
 	];
 	/** IAM actions required for the ListAssociatedApprovalRuleTemplatesForRepository API call. */
-	static readonly LIST_ASSOCIATED_APPROVAL_RULE_TEMPLATES_FOR_REPOSITORY: string[] =
-		["codecommit:ListAssociatedApprovalRuleTemplatesForRepository"];
+	static readonly ListAssociatedApprovalRuleTemplatesForRepository: string[] = [
+		"codecommit:ListAssociatedApprovalRuleTemplatesForRepository",
+	];
 	/** IAM actions required for the ListBranches API call. */
-	static readonly LIST_BRANCHES: string[] = ["codecommit:ListBranches"];
+	static readonly ListBranches: string[] = ["codecommit:ListBranches"];
 	/** IAM actions required for the ListFileCommitHistory API call. */
-	static readonly LIST_FILE_COMMIT_HISTORY: string[] = [
+	static readonly ListFileCommitHistory: string[] = [
 		"codecommit:ListFileCommitHistory",
 	];
 	/** IAM actions required for the ListPullRequests API call. */
-	static readonly LIST_PULL_REQUESTS: string[] = [
-		"codecommit:ListPullRequests",
-	];
+	static readonly ListPullRequests: string[] = ["codecommit:ListPullRequests"];
 	/** IAM actions required for the ListRepositories API call. */
-	static readonly LIST_REPOSITORIES: string[] = ["codecommit:ListRepositories"];
+	static readonly ListRepositories: string[] = ["codecommit:ListRepositories"];
 	/** IAM actions required for the ListRepositoriesForApprovalRuleTemplate API call. */
-	static readonly LIST_REPOSITORIES_FOR_APPROVAL_RULE_TEMPLATE: string[] = [
+	static readonly ListRepositoriesForApprovalRuleTemplate: string[] = [
 		"codecommit:ListRepositoriesForApprovalRuleTemplate",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"codecommit:ListTagsForResource",
 	];
 	/** IAM actions required for the MergeBranchesByFastForward API call. */
-	static readonly MERGE_BRANCHES_BY_FAST_FORWARD: string[] = [
+	static readonly MergeBranchesByFastForward: string[] = [
 		"codecommit:MergeBranchesByFastForward",
 	];
 	/** IAM actions required for the MergeBranchesBySquash API call. */
-	static readonly MERGE_BRANCHES_BY_SQUASH: string[] = [
+	static readonly MergeBranchesBySquash: string[] = [
 		"codecommit:MergeBranchesBySquash",
 	];
 	/** IAM actions required for the MergeBranchesByThreeWay API call. */
-	static readonly MERGE_BRANCHES_BY_THREE_WAY: string[] = [
+	static readonly MergeBranchesByThreeWay: string[] = [
 		"codecommit:MergeBranchesByThreeWay",
 	];
 	/** IAM actions required for the MergePullRequestByFastForward API call. */
-	static readonly MERGE_PULL_REQUEST_BY_FAST_FORWARD: string[] = [
+	static readonly MergePullRequestByFastForward: string[] = [
 		"codecommit:MergePullRequestByFastForward",
 	];
 	/** IAM actions required for the MergePullRequestBySquash API call. */
-	static readonly MERGE_PULL_REQUEST_BY_SQUASH: string[] = [
+	static readonly MergePullRequestBySquash: string[] = [
 		"codecommit:MergePullRequestBySquash",
 	];
 	/** IAM actions required for the MergePullRequestByThreeWay API call. */
-	static readonly MERGE_PULL_REQUEST_BY_THREE_WAY: string[] = [
+	static readonly MergePullRequestByThreeWay: string[] = [
 		"codecommit:MergePullRequestByThreeWay",
 	];
 	/** IAM actions required for the OverridePullRequestApprovalRules API call. */
-	static readonly OVERRIDE_PULL_REQUEST_APPROVAL_RULES: string[] = [
+	static readonly OverridePullRequestApprovalRules: string[] = [
 		"codecommit:OverridePullRequestApprovalRules",
 	];
 	/** IAM actions required for the PostCommentForComparedCommit API call. */
-	static readonly POST_COMMENT_FOR_COMPARED_COMMIT: string[] = [
+	static readonly PostCommentForComparedCommit: string[] = [
 		"codecommit:PostCommentForComparedCommit",
 	];
 	/** IAM actions required for the PostCommentForPullRequest API call. */
-	static readonly POST_COMMENT_FOR_PULL_REQUEST: string[] = [
+	static readonly PostCommentForPullRequest: string[] = [
 		"codecommit:PostCommentForPullRequest",
 	];
 	/** IAM actions required for the PostCommentReply API call. */
-	static readonly POST_COMMENT_REPLY: string[] = [
-		"codecommit:PostCommentReply",
-	];
+	static readonly PostCommentReply: string[] = ["codecommit:PostCommentReply"];
 	/** IAM actions required for the PutCommentReaction API call. */
-	static readonly PUT_COMMENT_REACTION: string[] = [
+	static readonly PutCommentReaction: string[] = [
 		"codecommit:PutCommentReaction",
 	];
 	/** IAM actions required for the PutFile API call. */
-	static readonly PUT_FILE: string[] = ["codecommit:PutFile"];
+	static readonly PutFile: string[] = ["codecommit:PutFile"];
 	/** IAM actions required for the PutRepositoryTriggers API call. */
-	static readonly PUT_REPOSITORY_TRIGGERS: string[] = [
+	static readonly PutRepositoryTriggers: string[] = [
 		"codecommit:PutRepositoryTriggers",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["codecommit:TagResource"];
+	static readonly TagResource: string[] = ["codecommit:TagResource"];
 	/** IAM actions required for the TestRepositoryTriggers API call. */
-	static readonly TEST_REPOSITORY_TRIGGERS: string[] = [
+	static readonly TestRepositoryTriggers: string[] = [
 		"codecommit:TestRepositoryTriggers",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["codecommit:UntagResource"];
+	static readonly UntagResource: string[] = ["codecommit:UntagResource"];
 	/** IAM actions required for the UpdateApprovalRuleTemplateContent API call. */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_CONTENT: string[] = [
+	static readonly UpdateApprovalRuleTemplateContent: string[] = [
 		"codecommit:UpdateApprovalRuleTemplateContent",
 	];
 	/** IAM actions required for the UpdateApprovalRuleTemplateDescription API call. */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_DESCRIPTION: string[] = [
+	static readonly UpdateApprovalRuleTemplateDescription: string[] = [
 		"codecommit:UpdateApprovalRuleTemplateDescription",
 	];
 	/** IAM actions required for the UpdateApprovalRuleTemplateName API call. */
-	static readonly UPDATE_APPROVAL_RULE_TEMPLATE_NAME: string[] = [
+	static readonly UpdateApprovalRuleTemplateName: string[] = [
 		"codecommit:UpdateApprovalRuleTemplateName",
 	];
 	/** IAM actions required for the UpdateComment API call. */
-	static readonly UPDATE_COMMENT: string[] = ["codecommit:UpdateComment"];
+	static readonly UpdateComment: string[] = ["codecommit:UpdateComment"];
 	/** IAM actions required for the UpdateDefaultBranch API call. */
-	static readonly UPDATE_DEFAULT_BRANCH: string[] = [
+	static readonly UpdateDefaultBranch: string[] = [
 		"codecommit:UpdateDefaultBranch",
 	];
 	/** IAM actions required for the UpdatePullRequestApprovalRuleContent API call. */
-	static readonly UPDATE_PULL_REQUEST_APPROVAL_RULE_CONTENT: string[] = [
+	static readonly UpdatePullRequestApprovalRuleContent: string[] = [
 		"codecommit:UpdatePullRequestApprovalRuleContent",
 	];
 	/** IAM actions required for the UpdatePullRequestApprovalState API call. */
-	static readonly UPDATE_PULL_REQUEST_APPROVAL_STATE: string[] = [
+	static readonly UpdatePullRequestApprovalState: string[] = [
 		"codecommit:UpdatePullRequestApprovalState",
 	];
 	/** IAM actions required for the UpdatePullRequestDescription API call. */
-	static readonly UPDATE_PULL_REQUEST_DESCRIPTION: string[] = [
+	static readonly UpdatePullRequestDescription: string[] = [
 		"codecommit:UpdatePullRequestDescription",
 	];
 	/** IAM actions required for the UpdatePullRequestStatus API call. */
-	static readonly UPDATE_PULL_REQUEST_STATUS: string[] = [
+	static readonly UpdatePullRequestStatus: string[] = [
 		"codecommit:UpdatePullRequestStatus",
 	];
 	/** IAM actions required for the UpdatePullRequestTitle API call. */
-	static readonly UPDATE_PULL_REQUEST_TITLE: string[] = [
+	static readonly UpdatePullRequestTitle: string[] = [
 		"codecommit:UpdatePullRequestTitle",
 	];
 	/** IAM actions required for the UpdateRepositoryDescription API call. */
-	static readonly UPDATE_REPOSITORY_DESCRIPTION: string[] = [
+	static readonly UpdateRepositoryDescription: string[] = [
 		"codecommit:UpdateRepositoryDescription",
 	];
 	/** IAM actions required for the UpdateRepositoryEncryptionKey API call. */
-	static readonly UPDATE_REPOSITORY_ENCRYPTION_KEY: string[] = [
+	static readonly UpdateRepositoryEncryptionKey: string[] = [
 		"codecommit:UpdateRepositoryEncryptionKey",
 	];
 	/** IAM actions required for the UpdateRepositoryName API call. */
-	static readonly UPDATE_REPOSITORY_NAME: string[] = [
+	static readonly UpdateRepositoryName: string[] = [
 		"codecommit:TagResource",
 		"codecommit:UpdateRepositoryName",
 	];
@@ -674,79 +683,78 @@ export class CodeCommitOperations {
  */
 export class CodeCommitConditions {
 	/** Condition keys applicable to the CreateBranch action. */
-	static readonly CREATE_BRANCH_CONDITION_KEYS: string[] = [
+	static readonly CreateBranchConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the CreateCommit action. */
-	static readonly CREATE_COMMIT_CONDITION_KEYS: string[] = [
+	static readonly CreateCommitConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the CreateRepository action. */
-	static readonly CREATE_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly CreateRepositoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUnreferencedMergeCommit action. */
-	static readonly CREATE_UNREFERENCED_MERGE_COMMIT_CONDITION_KEYS: string[] = [
+	static readonly CreateUnreferencedMergeCommitConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the DeleteBranch action. */
-	static readonly DELETE_BRANCH_CONDITION_KEYS: string[] = [
+	static readonly DeleteBranchConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the DeleteFile action. */
-	static readonly DELETE_FILE_CONDITION_KEYS: string[] = [
-		"codecommit:References",
-	];
+	static readonly DeleteFileConditionKeys: string[] = ["codecommit:References"];
 	/** Condition keys applicable to the GetMergeCommit action. */
-	static readonly GET_MERGE_COMMIT_CONDITION_KEYS: string[] = [
+	static readonly actionGetMergeCommitConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the GitPush action. */
-	static readonly GIT_PUSH_CONDITION_KEYS: string[] = ["codecommit:References"];
+	static readonly GitPushConditionKeys: string[] = ["codecommit:References"];
 	/** Condition keys applicable to the MergeBranchesByFastForward action. */
-	static readonly MERGE_BRANCHES_BY_FAST_FORWARD_CONDITION_KEYS: string[] = [
+	static readonly MergeBranchesByFastForwardConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the MergeBranchesBySquash action. */
-	static readonly MERGE_BRANCHES_BY_SQUASH_CONDITION_KEYS: string[] = [
+	static readonly MergeBranchesBySquashConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the MergeBranchesByThreeWay action. */
-	static readonly MERGE_BRANCHES_BY_THREE_WAY_CONDITION_KEYS: string[] = [
+	static readonly MergeBranchesByThreeWayConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the MergePullRequestByFastForward action. */
-	static readonly MERGE_PULL_REQUEST_BY_FAST_FORWARD_CONDITION_KEYS: string[] =
-		["codecommit:References"];
+	static readonly MergePullRequestByFastForwardConditionKeys: string[] = [
+		"codecommit:References",
+	];
 	/** Condition keys applicable to the MergePullRequestBySquash action. */
-	static readonly MERGE_PULL_REQUEST_BY_SQUASH_CONDITION_KEYS: string[] = [
+	static readonly MergePullRequestBySquashConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the MergePullRequestByThreeWay action. */
-	static readonly MERGE_PULL_REQUEST_BY_THREE_WAY_CONDITION_KEYS: string[] = [
+	static readonly MergePullRequestByThreeWayConditionKeys: string[] = [
 		"codecommit:References",
 	];
 	/** Condition keys applicable to the PutFile action. */
-	static readonly PUT_FILE_CONDITION_KEYS: string[] = ["codecommit:References"];
+	static readonly PutFileConditionKeys: string[] = ["codecommit:References"];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: codecommit:References (String) */
 	static readonly REFERENCES = "codecommit:References";
 

@@ -13,23 +13,23 @@ export class ResourceExplorerActions {
 	static readonly SERVICE_PREFIX = "resource-explorer";
 
 	/** [List] resource-explorer:ListResourceTypes */
-	static readonly LIST_RESOURCE_TYPES = "resource-explorer:ListResourceTypes";
+	static readonly ListResourceTypes = "resource-explorer:ListResourceTypes";
 	/** [List] resource-explorer:ListResources */
-	static readonly LIST_RESOURCES = "resource-explorer:ListResources";
+	static readonly ListResources = "resource-explorer:ListResources";
 	/** [Read] resource-explorer:ListTags */
-	static readonly LIST_TAGS = "resource-explorer:ListTags";
+	static readonly ListTags = "resource-explorer:ListTags";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [ResourceExplorerActions.LIST_TAGS];
+	static readonly AllReadActions: string[] = [ResourceExplorerActions.ListTags];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ResourceExplorerActions.LIST_RESOURCE_TYPES,
-		ResourceExplorerActions.LIST_RESOURCES,
+	static readonly AllListActions: string[] = [
+		ResourceExplorerActions.ListResourceTypes,
+		ResourceExplorerActions.ListResources,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

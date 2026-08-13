@@ -13,387 +13,643 @@ export class StorageGatewayActions {
 	static readonly SERVICE_PREFIX = "storagegateway";
 
 	/** [Write] storagegateway:ActivateGateway */
-	static readonly ACTIVATE_GATEWAY = "storagegateway:ActivateGateway";
+	static readonly ActivateGateway = "storagegateway:ActivateGateway";
 	/** [Write] storagegateway:AddCache */
-	static readonly ADD_CACHE = "storagegateway:AddCache";
+	static readonly AddCache = "storagegateway:AddCache";
 	/** [Tagging] storagegateway:AddTagsToResource */
-	static readonly ADD_TAGS_TO_RESOURCE = "storagegateway:AddTagsToResource";
+	static readonly AddTagsToResource = "storagegateway:AddTagsToResource";
 	/** [Write] storagegateway:AddUploadBuffer */
-	static readonly ADD_UPLOAD_BUFFER = "storagegateway:AddUploadBuffer";
+	static readonly AddUploadBuffer = "storagegateway:AddUploadBuffer";
 	/** [Write] storagegateway:AddWorkingStorage */
-	static readonly ADD_WORKING_STORAGE = "storagegateway:AddWorkingStorage";
+	static readonly AddWorkingStorage = "storagegateway:AddWorkingStorage";
 	/** [Write] storagegateway:AssignTapePool */
-	static readonly ASSIGN_TAPE_POOL = "storagegateway:AssignTapePool";
+	static readonly AssignTapePool = "storagegateway:AssignTapePool";
 	/** [Write] storagegateway:AssociateFileSystem */
-	static readonly ASSOCIATE_FILE_SYSTEM = "storagegateway:AssociateFileSystem";
+	static readonly AssociateFileSystem = "storagegateway:AssociateFileSystem";
 	/** [Write] storagegateway:AttachVolume */
-	static readonly ATTACH_VOLUME = "storagegateway:AttachVolume";
+	static readonly AttachVolume = "storagegateway:AttachVolume";
 	/** [Write] storagegateway:BypassGovernanceRetention */
-	static readonly BYPASS_GOVERNANCE_RETENTION =
+	static readonly BypassGovernanceRetention =
 		"storagegateway:BypassGovernanceRetention";
 	/** [Write] storagegateway:CancelArchival */
-	static readonly CANCEL_ARCHIVAL = "storagegateway:CancelArchival";
+	static readonly CancelArchival = "storagegateway:CancelArchival";
 	/** [Write] storagegateway:CancelCacheReport */
-	static readonly CANCEL_CACHE_REPORT = "storagegateway:CancelCacheReport";
+	static readonly CancelCacheReport = "storagegateway:CancelCacheReport";
 	/** [Write] storagegateway:CancelRetrieval */
-	static readonly CANCEL_RETRIEVAL = "storagegateway:CancelRetrieval";
+	static readonly CancelRetrieval = "storagegateway:CancelRetrieval";
 	/** [Write] storagegateway:CreateCachediSCSIVolume */
-	static readonly CREATE_CACHEDI_SCSI_VOLUME =
+	static readonly CreateCachediSCSIVolume =
 		"storagegateway:CreateCachediSCSIVolume";
 	/** [Write] storagegateway:CreateNFSFileShare */
-	static readonly CREATE_NFS_FILE_SHARE = "storagegateway:CreateNFSFileShare";
+	static readonly CreateNFSFileShare = "storagegateway:CreateNFSFileShare";
 	/** [Write] storagegateway:CreateSMBFileShare */
-	static readonly CREATE_SMB_FILE_SHARE = "storagegateway:CreateSMBFileShare";
+	static readonly CreateSMBFileShare = "storagegateway:CreateSMBFileShare";
 	/** [Write] storagegateway:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "storagegateway:CreateSnapshot";
+	static readonly CreateSnapshot = "storagegateway:CreateSnapshot";
 	/** [Write] storagegateway:CreateSnapshotFromVolumeRecoveryPoint */
-	static readonly CREATE_SNAPSHOT_FROM_VOLUME_RECOVERY_POINT =
+	static readonly CreateSnapshotFromVolumeRecoveryPoint =
 		"storagegateway:CreateSnapshotFromVolumeRecoveryPoint";
 	/** [Write] storagegateway:CreateStorediSCSIVolume */
-	static readonly CREATE_STOREDI_SCSI_VOLUME =
+	static readonly CreateStorediSCSIVolume =
 		"storagegateway:CreateStorediSCSIVolume";
 	/** [Write] storagegateway:CreateTapePool */
-	static readonly CREATE_TAPE_POOL = "storagegateway:CreateTapePool";
+	static readonly CreateTapePool = "storagegateway:CreateTapePool";
 	/** [Write] storagegateway:CreateTapeWithBarcode */
-	static readonly CREATE_TAPE_WITH_BARCODE =
+	static readonly CreateTapeWithBarcode =
 		"storagegateway:CreateTapeWithBarcode";
 	/** [Write] storagegateway:CreateTapes */
-	static readonly CREATE_TAPES = "storagegateway:CreateTapes";
+	static readonly CreateTapes = "storagegateway:CreateTapes";
 	/** [Write] storagegateway:DeleteAutomaticTapeCreationPolicy */
-	static readonly DELETE_AUTOMATIC_TAPE_CREATION_POLICY =
+	static readonly DeleteAutomaticTapeCreationPolicy =
 		"storagegateway:DeleteAutomaticTapeCreationPolicy";
 	/** [Write] storagegateway:DeleteBandwidthRateLimit */
-	static readonly DELETE_BANDWIDTH_RATE_LIMIT =
+	static readonly DeleteBandwidthRateLimit =
 		"storagegateway:DeleteBandwidthRateLimit";
 	/** [Write] storagegateway:DeleteCacheReport */
-	static readonly DELETE_CACHE_REPORT = "storagegateway:DeleteCacheReport";
+	static readonly DeleteCacheReport = "storagegateway:DeleteCacheReport";
 	/** [Write] storagegateway:DeleteChapCredentials */
-	static readonly DELETE_CHAP_CREDENTIALS =
+	static readonly DeleteChapCredentials =
 		"storagegateway:DeleteChapCredentials";
 	/** [Write] storagegateway:DeleteFileShare */
-	static readonly DELETE_FILE_SHARE = "storagegateway:DeleteFileShare";
+	static readonly DeleteFileShare = "storagegateway:DeleteFileShare";
 	/** [Write] storagegateway:DeleteGateway */
-	static readonly DELETE_GATEWAY = "storagegateway:DeleteGateway";
+	static readonly DeleteGateway = "storagegateway:DeleteGateway";
 	/** [Write] storagegateway:DeleteSnapshotSchedule */
-	static readonly DELETE_SNAPSHOT_SCHEDULE =
+	static readonly DeleteSnapshotSchedule =
 		"storagegateway:DeleteSnapshotSchedule";
 	/** [Write] storagegateway:DeleteTape */
-	static readonly DELETE_TAPE = "storagegateway:DeleteTape";
+	static readonly DeleteTape = "storagegateway:DeleteTape";
 	/** [Write] storagegateway:DeleteTapeArchive */
-	static readonly DELETE_TAPE_ARCHIVE = "storagegateway:DeleteTapeArchive";
+	static readonly DeleteTapeArchive = "storagegateway:DeleteTapeArchive";
 	/** [Write] storagegateway:DeleteTapePool */
-	static readonly DELETE_TAPE_POOL = "storagegateway:DeleteTapePool";
+	static readonly DeleteTapePool = "storagegateway:DeleteTapePool";
 	/** [Write] storagegateway:DeleteVolume */
-	static readonly DELETE_VOLUME = "storagegateway:DeleteVolume";
+	static readonly DeleteVolume = "storagegateway:DeleteVolume";
 	/** [Read] storagegateway:DescribeAvailabilityMonitorTest */
-	static readonly DESCRIBE_AVAILABILITY_MONITOR_TEST =
+	static readonly DescribeAvailabilityMonitorTest =
 		"storagegateway:DescribeAvailabilityMonitorTest";
 	/** [Read] storagegateway:DescribeBandwidthRateLimit */
-	static readonly DESCRIBE_BANDWIDTH_RATE_LIMIT =
+	static readonly DescribeBandwidthRateLimit =
 		"storagegateway:DescribeBandwidthRateLimit";
 	/** [Read] storagegateway:DescribeBandwidthRateLimitSchedule */
-	static readonly DESCRIBE_BANDWIDTH_RATE_LIMIT_SCHEDULE =
+	static readonly DescribeBandwidthRateLimitSchedule =
 		"storagegateway:DescribeBandwidthRateLimitSchedule";
 	/** [Read] storagegateway:DescribeCache */
-	static readonly DESCRIBE_CACHE = "storagegateway:DescribeCache";
+	static readonly DescribeCache = "storagegateway:DescribeCache";
 	/** [Read] storagegateway:DescribeCacheReport */
-	static readonly DESCRIBE_CACHE_REPORT = "storagegateway:DescribeCacheReport";
+	static readonly DescribeCacheReport = "storagegateway:DescribeCacheReport";
 	/** [Read] storagegateway:DescribeCachediSCSIVolumes */
-	static readonly DESCRIBE_CACHEDI_SCSI_VOLUMES =
+	static readonly DescribeCachediSCSIVolumes =
 		"storagegateway:DescribeCachediSCSIVolumes";
 	/** [Read] storagegateway:DescribeChapCredentials */
-	static readonly DESCRIBE_CHAP_CREDENTIALS =
+	static readonly DescribeChapCredentials =
 		"storagegateway:DescribeChapCredentials";
 	/** [Read] storagegateway:DescribeFileSystemAssociations */
-	static readonly DESCRIBE_FILE_SYSTEM_ASSOCIATIONS =
+	static readonly DescribeFileSystemAssociations =
 		"storagegateway:DescribeFileSystemAssociations";
 	/** [Read] storagegateway:DescribeGatewayInformation */
-	static readonly DESCRIBE_GATEWAY_INFORMATION =
+	static readonly DescribeGatewayInformation =
 		"storagegateway:DescribeGatewayInformation";
 	/** [Read] storagegateway:DescribeMaintenanceStartTime */
-	static readonly DESCRIBE_MAINTENANCE_START_TIME =
+	static readonly DescribeMaintenanceStartTime =
 		"storagegateway:DescribeMaintenanceStartTime";
 	/** [Read] storagegateway:DescribeNFSFileShares */
-	static readonly DESCRIBE_NFS_FILE_SHARES =
+	static readonly DescribeNFSFileShares =
 		"storagegateway:DescribeNFSFileShares";
 	/** [Read] storagegateway:DescribeSMBFileShares */
-	static readonly DESCRIBE_SMB_FILE_SHARES =
+	static readonly DescribeSMBFileShares =
 		"storagegateway:DescribeSMBFileShares";
 	/** [Read] storagegateway:DescribeSMBSettings */
-	static readonly DESCRIBE_SMB_SETTINGS = "storagegateway:DescribeSMBSettings";
+	static readonly DescribeSMBSettings = "storagegateway:DescribeSMBSettings";
 	/** [Read] storagegateway:DescribeSnapshotSchedule */
-	static readonly DESCRIBE_SNAPSHOT_SCHEDULE =
+	static readonly DescribeSnapshotSchedule =
 		"storagegateway:DescribeSnapshotSchedule";
 	/** [Read] storagegateway:DescribeStorediSCSIVolumes */
-	static readonly DESCRIBE_STOREDI_SCSI_VOLUMES =
+	static readonly DescribeStorediSCSIVolumes =
 		"storagegateway:DescribeStorediSCSIVolumes";
 	/** [Read] storagegateway:DescribeTapeArchives */
-	static readonly DESCRIBE_TAPE_ARCHIVES =
-		"storagegateway:DescribeTapeArchives";
+	static readonly DescribeTapeArchives = "storagegateway:DescribeTapeArchives";
 	/** [Read] storagegateway:DescribeTapeRecoveryPoints */
-	static readonly DESCRIBE_TAPE_RECOVERY_POINTS =
+	static readonly DescribeTapeRecoveryPoints =
 		"storagegateway:DescribeTapeRecoveryPoints";
 	/** [Read] storagegateway:DescribeTapes */
-	static readonly DESCRIBE_TAPES = "storagegateway:DescribeTapes";
+	static readonly DescribeTapes = "storagegateway:DescribeTapes";
 	/** [Read] storagegateway:DescribeUploadBuffer */
-	static readonly DESCRIBE_UPLOAD_BUFFER =
-		"storagegateway:DescribeUploadBuffer";
+	static readonly DescribeUploadBuffer = "storagegateway:DescribeUploadBuffer";
 	/** [Read] storagegateway:DescribeVTLDevices */
-	static readonly DESCRIBE_VTL_DEVICES = "storagegateway:DescribeVTLDevices";
+	static readonly DescribeVTLDevices = "storagegateway:DescribeVTLDevices";
 	/** [Read] storagegateway:DescribeWorkingStorage */
-	static readonly DESCRIBE_WORKING_STORAGE =
+	static readonly DescribeWorkingStorage =
 		"storagegateway:DescribeWorkingStorage";
 	/** [Write] storagegateway:DetachVolume */
-	static readonly DETACH_VOLUME = "storagegateway:DetachVolume";
+	static readonly DetachVolume = "storagegateway:DetachVolume";
 	/** [Write] storagegateway:DisableGateway */
-	static readonly DISABLE_GATEWAY = "storagegateway:DisableGateway";
+	static readonly DisableGateway = "storagegateway:DisableGateway";
 	/** [Write] storagegateway:DisassociateFileSystem */
-	static readonly DISASSOCIATE_FILE_SYSTEM =
+	static readonly DisassociateFileSystem =
 		"storagegateway:DisassociateFileSystem";
 	/** [Write] storagegateway:EvictFilesFailingUpload */
-	static readonly EVICT_FILES_FAILING_UPLOAD =
+	static readonly EvictFilesFailingUpload =
 		"storagegateway:EvictFilesFailingUpload";
 	/** [Write] storagegateway:JoinDomain */
-	static readonly JOIN_DOMAIN = "storagegateway:JoinDomain";
+	static readonly JoinDomain = "storagegateway:JoinDomain";
 	/** [List] storagegateway:ListAutomaticTapeCreationPolicies */
-	static readonly LIST_AUTOMATIC_TAPE_CREATION_POLICIES =
+	static readonly ListAutomaticTapeCreationPolicies =
 		"storagegateway:ListAutomaticTapeCreationPolicies";
 	/** [List] storagegateway:ListCacheReports */
-	static readonly LIST_CACHE_REPORTS = "storagegateway:ListCacheReports";
+	static readonly ListCacheReports = "storagegateway:ListCacheReports";
 	/** [List] storagegateway:ListFileShares */
-	static readonly LIST_FILE_SHARES = "storagegateway:ListFileShares";
+	static readonly ListFileShares = "storagegateway:ListFileShares";
 	/** [List] storagegateway:ListFileSystemAssociations */
-	static readonly LIST_FILE_SYSTEM_ASSOCIATIONS =
+	static readonly ListFileSystemAssociations =
 		"storagegateway:ListFileSystemAssociations";
 	/** [List] storagegateway:ListGateways */
-	static readonly LIST_GATEWAYS = "storagegateway:ListGateways";
+	static readonly ListGateways = "storagegateway:ListGateways";
 	/** [List] storagegateway:ListLocalDisks */
-	static readonly LIST_LOCAL_DISKS = "storagegateway:ListLocalDisks";
+	static readonly ListLocalDisks = "storagegateway:ListLocalDisks";
 	/** [List] storagegateway:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "storagegateway:ListTagsForResource";
+	static readonly ListTagsForResource = "storagegateway:ListTagsForResource";
 	/** [List] storagegateway:ListTapePools */
-	static readonly LIST_TAPE_POOLS = "storagegateway:ListTapePools";
+	static readonly ListTapePools = "storagegateway:ListTapePools";
 	/** [List] storagegateway:ListTapes */
-	static readonly LIST_TAPES = "storagegateway:ListTapes";
+	static readonly ListTapes = "storagegateway:ListTapes";
 	/** [List] storagegateway:ListVolumeInitiators */
-	static readonly LIST_VOLUME_INITIATORS =
-		"storagegateway:ListVolumeInitiators";
+	static readonly ListVolumeInitiators = "storagegateway:ListVolumeInitiators";
 	/** [List] storagegateway:ListVolumeRecoveryPoints */
-	static readonly LIST_VOLUME_RECOVERY_POINTS =
+	static readonly ListVolumeRecoveryPoints =
 		"storagegateway:ListVolumeRecoveryPoints";
 	/** [List] storagegateway:ListVolumes */
-	static readonly LIST_VOLUMES = "storagegateway:ListVolumes";
+	static readonly ListVolumes = "storagegateway:ListVolumes";
 	/** [Write] storagegateway:NotifyWhenUploaded */
-	static readonly NOTIFY_WHEN_UPLOADED = "storagegateway:NotifyWhenUploaded";
+	static readonly NotifyWhenUploaded = "storagegateway:NotifyWhenUploaded";
 	/** [Write] storagegateway:RefreshCache */
-	static readonly REFRESH_CACHE = "storagegateway:RefreshCache";
+	static readonly RefreshCache = "storagegateway:RefreshCache";
 	/** [Tagging] storagegateway:RemoveTagsFromResource */
-	static readonly REMOVE_TAGS_FROM_RESOURCE =
+	static readonly RemoveTagsFromResource =
 		"storagegateway:RemoveTagsFromResource";
 	/** [Write] storagegateway:ResetCache */
-	static readonly RESET_CACHE = "storagegateway:ResetCache";
+	static readonly ResetCache = "storagegateway:ResetCache";
 	/** [Write] storagegateway:RetrieveTapeArchive */
-	static readonly RETRIEVE_TAPE_ARCHIVE = "storagegateway:RetrieveTapeArchive";
+	static readonly RetrieveTapeArchive = "storagegateway:RetrieveTapeArchive";
 	/** [Write] storagegateway:RetrieveTapeRecoveryPoint */
-	static readonly RETRIEVE_TAPE_RECOVERY_POINT =
+	static readonly RetrieveTapeRecoveryPoint =
 		"storagegateway:RetrieveTapeRecoveryPoint";
 	/** [Write] storagegateway:SetLocalConsolePassword */
-	static readonly SET_LOCAL_CONSOLE_PASSWORD =
+	static readonly actionSetLocalConsolePassword =
 		"storagegateway:SetLocalConsolePassword";
 	/** [Write] storagegateway:SetSMBGuestPassword */
-	static readonly SET_SMB_GUEST_PASSWORD = "storagegateway:SetSMBGuestPassword";
+	static readonly actionSetSMBGuestPassword =
+		"storagegateway:SetSMBGuestPassword";
 	/** [Write] storagegateway:ShutdownGateway */
-	static readonly SHUTDOWN_GATEWAY = "storagegateway:ShutdownGateway";
+	static readonly ShutdownGateway = "storagegateway:ShutdownGateway";
 	/** [Write] storagegateway:StartAvailabilityMonitorTest */
-	static readonly START_AVAILABILITY_MONITOR_TEST =
+	static readonly StartAvailabilityMonitorTest =
 		"storagegateway:StartAvailabilityMonitorTest";
 	/** [Write] storagegateway:StartCacheReport */
-	static readonly START_CACHE_REPORT = "storagegateway:StartCacheReport";
+	static readonly StartCacheReport = "storagegateway:StartCacheReport";
 	/** [Write] storagegateway:StartGateway */
-	static readonly START_GATEWAY = "storagegateway:StartGateway";
+	static readonly StartGateway = "storagegateway:StartGateway";
 	/** [Write] storagegateway:UpdateAutomaticTapeCreationPolicy */
-	static readonly UPDATE_AUTOMATIC_TAPE_CREATION_POLICY =
+	static readonly UpdateAutomaticTapeCreationPolicy =
 		"storagegateway:UpdateAutomaticTapeCreationPolicy";
 	/** [Write] storagegateway:UpdateBandwidthRateLimit */
-	static readonly UPDATE_BANDWIDTH_RATE_LIMIT =
+	static readonly UpdateBandwidthRateLimit =
 		"storagegateway:UpdateBandwidthRateLimit";
 	/** [Write] storagegateway:UpdateBandwidthRateLimitSchedule */
-	static readonly UPDATE_BANDWIDTH_RATE_LIMIT_SCHEDULE =
+	static readonly UpdateBandwidthRateLimitSchedule =
 		"storagegateway:UpdateBandwidthRateLimitSchedule";
 	/** [Write] storagegateway:UpdateChapCredentials */
-	static readonly UPDATE_CHAP_CREDENTIALS =
+	static readonly UpdateChapCredentials =
 		"storagegateway:UpdateChapCredentials";
 	/** [Write] storagegateway:UpdateFileSystemAssociation */
-	static readonly UPDATE_FILE_SYSTEM_ASSOCIATION =
+	static readonly UpdateFileSystemAssociation =
 		"storagegateway:UpdateFileSystemAssociation";
 	/** [Write] storagegateway:UpdateGatewayInformation */
-	static readonly UPDATE_GATEWAY_INFORMATION =
+	static readonly UpdateGatewayInformation =
 		"storagegateway:UpdateGatewayInformation";
 	/** [Write] storagegateway:UpdateGatewaySoftwareNow */
-	static readonly UPDATE_GATEWAY_SOFTWARE_NOW =
+	static readonly UpdateGatewaySoftwareNow =
 		"storagegateway:UpdateGatewaySoftwareNow";
 	/** [Write] storagegateway:UpdateMaintenanceStartTime */
-	static readonly UPDATE_MAINTENANCE_START_TIME =
+	static readonly UpdateMaintenanceStartTime =
 		"storagegateway:UpdateMaintenanceStartTime";
 	/** [Write] storagegateway:UpdateNFSFileShare */
-	static readonly UPDATE_NFS_FILE_SHARE = "storagegateway:UpdateNFSFileShare";
+	static readonly UpdateNFSFileShare = "storagegateway:UpdateNFSFileShare";
 	/** [Write] storagegateway:UpdateSMBFileShare */
-	static readonly UPDATE_SMB_FILE_SHARE = "storagegateway:UpdateSMBFileShare";
+	static readonly UpdateSMBFileShare = "storagegateway:UpdateSMBFileShare";
 	/** [Write] storagegateway:UpdateSMBFileShareVisibility */
-	static readonly UPDATE_SMB_FILE_SHARE_VISIBILITY =
+	static readonly UpdateSMBFileShareVisibility =
 		"storagegateway:UpdateSMBFileShareVisibility";
 	/** [Write] storagegateway:UpdateSMBLocalGroups */
-	static readonly UPDATE_SMB_LOCAL_GROUPS =
-		"storagegateway:UpdateSMBLocalGroups";
+	static readonly UpdateSMBLocalGroups = "storagegateway:UpdateSMBLocalGroups";
 	/** [Write] storagegateway:UpdateSMBSecurityStrategy */
-	static readonly UPDATE_SMB_SECURITY_STRATEGY =
+	static readonly UpdateSMBSecurityStrategy =
 		"storagegateway:UpdateSMBSecurityStrategy";
 	/** [Write] storagegateway:UpdateSnapshotSchedule */
-	static readonly UPDATE_SNAPSHOT_SCHEDULE =
+	static readonly UpdateSnapshotSchedule =
 		"storagegateway:UpdateSnapshotSchedule";
 	/** [Write] storagegateway:UpdateVTLDeviceType */
-	static readonly UPDATE_VTL_DEVICE_TYPE = "storagegateway:UpdateVTLDeviceType";
+	static readonly UpdateVTLDeviceType = "storagegateway:UpdateVTLDeviceType";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		StorageGatewayActions.DESCRIBE_AVAILABILITY_MONITOR_TEST,
-		StorageGatewayActions.DESCRIBE_BANDWIDTH_RATE_LIMIT,
-		StorageGatewayActions.DESCRIBE_BANDWIDTH_RATE_LIMIT_SCHEDULE,
-		StorageGatewayActions.DESCRIBE_CACHE,
-		StorageGatewayActions.DESCRIBE_CACHE_REPORT,
-		StorageGatewayActions.DESCRIBE_CACHEDI_SCSI_VOLUMES,
-		StorageGatewayActions.DESCRIBE_CHAP_CREDENTIALS,
-		StorageGatewayActions.DESCRIBE_FILE_SYSTEM_ASSOCIATIONS,
-		StorageGatewayActions.DESCRIBE_GATEWAY_INFORMATION,
-		StorageGatewayActions.DESCRIBE_MAINTENANCE_START_TIME,
-		StorageGatewayActions.DESCRIBE_NFS_FILE_SHARES,
-		StorageGatewayActions.DESCRIBE_SMB_FILE_SHARES,
-		StorageGatewayActions.DESCRIBE_SMB_SETTINGS,
-		StorageGatewayActions.DESCRIBE_SNAPSHOT_SCHEDULE,
-		StorageGatewayActions.DESCRIBE_STOREDI_SCSI_VOLUMES,
-		StorageGatewayActions.DESCRIBE_TAPE_ARCHIVES,
-		StorageGatewayActions.DESCRIBE_TAPE_RECOVERY_POINTS,
-		StorageGatewayActions.DESCRIBE_TAPES,
-		StorageGatewayActions.DESCRIBE_UPLOAD_BUFFER,
-		StorageGatewayActions.DESCRIBE_VTL_DEVICES,
-		StorageGatewayActions.DESCRIBE_WORKING_STORAGE,
+	static readonly AllReadActions: string[] = [
+		StorageGatewayActions.DescribeAvailabilityMonitorTest,
+		StorageGatewayActions.DescribeBandwidthRateLimit,
+		StorageGatewayActions.DescribeBandwidthRateLimitSchedule,
+		StorageGatewayActions.DescribeCache,
+		StorageGatewayActions.DescribeCacheReport,
+		StorageGatewayActions.DescribeCachediSCSIVolumes,
+		StorageGatewayActions.DescribeChapCredentials,
+		StorageGatewayActions.DescribeFileSystemAssociations,
+		StorageGatewayActions.DescribeGatewayInformation,
+		StorageGatewayActions.DescribeMaintenanceStartTime,
+		StorageGatewayActions.DescribeNFSFileShares,
+		StorageGatewayActions.DescribeSMBFileShares,
+		StorageGatewayActions.DescribeSMBSettings,
+		StorageGatewayActions.DescribeSnapshotSchedule,
+		StorageGatewayActions.DescribeStorediSCSIVolumes,
+		StorageGatewayActions.DescribeTapeArchives,
+		StorageGatewayActions.DescribeTapeRecoveryPoints,
+		StorageGatewayActions.DescribeTapes,
+		StorageGatewayActions.DescribeUploadBuffer,
+		StorageGatewayActions.DescribeVTLDevices,
+		StorageGatewayActions.DescribeWorkingStorage,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		StorageGatewayActions.ACTIVATE_GATEWAY,
-		StorageGatewayActions.ADD_CACHE,
-		StorageGatewayActions.ADD_UPLOAD_BUFFER,
-		StorageGatewayActions.ADD_WORKING_STORAGE,
-		StorageGatewayActions.ASSIGN_TAPE_POOL,
-		StorageGatewayActions.ASSOCIATE_FILE_SYSTEM,
-		StorageGatewayActions.ATTACH_VOLUME,
-		StorageGatewayActions.BYPASS_GOVERNANCE_RETENTION,
-		StorageGatewayActions.CANCEL_ARCHIVAL,
-		StorageGatewayActions.CANCEL_CACHE_REPORT,
-		StorageGatewayActions.CANCEL_RETRIEVAL,
-		StorageGatewayActions.CREATE_CACHEDI_SCSI_VOLUME,
-		StorageGatewayActions.CREATE_NFS_FILE_SHARE,
-		StorageGatewayActions.CREATE_SMB_FILE_SHARE,
-		StorageGatewayActions.CREATE_SNAPSHOT,
-		StorageGatewayActions.CREATE_SNAPSHOT_FROM_VOLUME_RECOVERY_POINT,
-		StorageGatewayActions.CREATE_STOREDI_SCSI_VOLUME,
-		StorageGatewayActions.CREATE_TAPE_POOL,
-		StorageGatewayActions.CREATE_TAPE_WITH_BARCODE,
-		StorageGatewayActions.CREATE_TAPES,
-		StorageGatewayActions.DELETE_AUTOMATIC_TAPE_CREATION_POLICY,
-		StorageGatewayActions.DELETE_BANDWIDTH_RATE_LIMIT,
-		StorageGatewayActions.DELETE_CACHE_REPORT,
-		StorageGatewayActions.DELETE_CHAP_CREDENTIALS,
-		StorageGatewayActions.DELETE_FILE_SHARE,
-		StorageGatewayActions.DELETE_GATEWAY,
-		StorageGatewayActions.DELETE_SNAPSHOT_SCHEDULE,
-		StorageGatewayActions.DELETE_TAPE,
-		StorageGatewayActions.DELETE_TAPE_ARCHIVE,
-		StorageGatewayActions.DELETE_TAPE_POOL,
-		StorageGatewayActions.DELETE_VOLUME,
-		StorageGatewayActions.DETACH_VOLUME,
-		StorageGatewayActions.DISABLE_GATEWAY,
-		StorageGatewayActions.DISASSOCIATE_FILE_SYSTEM,
-		StorageGatewayActions.EVICT_FILES_FAILING_UPLOAD,
-		StorageGatewayActions.JOIN_DOMAIN,
-		StorageGatewayActions.NOTIFY_WHEN_UPLOADED,
-		StorageGatewayActions.REFRESH_CACHE,
-		StorageGatewayActions.RESET_CACHE,
-		StorageGatewayActions.RETRIEVE_TAPE_ARCHIVE,
-		StorageGatewayActions.RETRIEVE_TAPE_RECOVERY_POINT,
-		StorageGatewayActions.SET_LOCAL_CONSOLE_PASSWORD,
-		StorageGatewayActions.SET_SMB_GUEST_PASSWORD,
-		StorageGatewayActions.SHUTDOWN_GATEWAY,
-		StorageGatewayActions.START_AVAILABILITY_MONITOR_TEST,
-		StorageGatewayActions.START_CACHE_REPORT,
-		StorageGatewayActions.START_GATEWAY,
-		StorageGatewayActions.UPDATE_AUTOMATIC_TAPE_CREATION_POLICY,
-		StorageGatewayActions.UPDATE_BANDWIDTH_RATE_LIMIT,
-		StorageGatewayActions.UPDATE_BANDWIDTH_RATE_LIMIT_SCHEDULE,
-		StorageGatewayActions.UPDATE_CHAP_CREDENTIALS,
-		StorageGatewayActions.UPDATE_FILE_SYSTEM_ASSOCIATION,
-		StorageGatewayActions.UPDATE_GATEWAY_INFORMATION,
-		StorageGatewayActions.UPDATE_GATEWAY_SOFTWARE_NOW,
-		StorageGatewayActions.UPDATE_MAINTENANCE_START_TIME,
-		StorageGatewayActions.UPDATE_NFS_FILE_SHARE,
-		StorageGatewayActions.UPDATE_SMB_FILE_SHARE,
-		StorageGatewayActions.UPDATE_SMB_FILE_SHARE_VISIBILITY,
-		StorageGatewayActions.UPDATE_SMB_LOCAL_GROUPS,
-		StorageGatewayActions.UPDATE_SMB_SECURITY_STRATEGY,
-		StorageGatewayActions.UPDATE_SNAPSHOT_SCHEDULE,
-		StorageGatewayActions.UPDATE_VTL_DEVICE_TYPE,
+	static readonly AllWriteActions: string[] = [
+		StorageGatewayActions.ActivateGateway,
+		StorageGatewayActions.AddCache,
+		StorageGatewayActions.AddUploadBuffer,
+		StorageGatewayActions.AddWorkingStorage,
+		StorageGatewayActions.AssignTapePool,
+		StorageGatewayActions.AssociateFileSystem,
+		StorageGatewayActions.AttachVolume,
+		StorageGatewayActions.BypassGovernanceRetention,
+		StorageGatewayActions.CancelArchival,
+		StorageGatewayActions.CancelCacheReport,
+		StorageGatewayActions.CancelRetrieval,
+		StorageGatewayActions.CreateCachediSCSIVolume,
+		StorageGatewayActions.CreateNFSFileShare,
+		StorageGatewayActions.CreateSMBFileShare,
+		StorageGatewayActions.CreateSnapshot,
+		StorageGatewayActions.CreateSnapshotFromVolumeRecoveryPoint,
+		StorageGatewayActions.CreateStorediSCSIVolume,
+		StorageGatewayActions.CreateTapePool,
+		StorageGatewayActions.CreateTapeWithBarcode,
+		StorageGatewayActions.CreateTapes,
+		StorageGatewayActions.DeleteAutomaticTapeCreationPolicy,
+		StorageGatewayActions.DeleteBandwidthRateLimit,
+		StorageGatewayActions.DeleteCacheReport,
+		StorageGatewayActions.DeleteChapCredentials,
+		StorageGatewayActions.DeleteFileShare,
+		StorageGatewayActions.DeleteGateway,
+		StorageGatewayActions.DeleteSnapshotSchedule,
+		StorageGatewayActions.DeleteTape,
+		StorageGatewayActions.DeleteTapeArchive,
+		StorageGatewayActions.DeleteTapePool,
+		StorageGatewayActions.DeleteVolume,
+		StorageGatewayActions.DetachVolume,
+		StorageGatewayActions.DisableGateway,
+		StorageGatewayActions.DisassociateFileSystem,
+		StorageGatewayActions.EvictFilesFailingUpload,
+		StorageGatewayActions.JoinDomain,
+		StorageGatewayActions.NotifyWhenUploaded,
+		StorageGatewayActions.RefreshCache,
+		StorageGatewayActions.ResetCache,
+		StorageGatewayActions.RetrieveTapeArchive,
+		StorageGatewayActions.RetrieveTapeRecoveryPoint,
+		StorageGatewayActions.actionSetLocalConsolePassword,
+		StorageGatewayActions.actionSetSMBGuestPassword,
+		StorageGatewayActions.ShutdownGateway,
+		StorageGatewayActions.StartAvailabilityMonitorTest,
+		StorageGatewayActions.StartCacheReport,
+		StorageGatewayActions.StartGateway,
+		StorageGatewayActions.UpdateAutomaticTapeCreationPolicy,
+		StorageGatewayActions.UpdateBandwidthRateLimit,
+		StorageGatewayActions.UpdateBandwidthRateLimitSchedule,
+		StorageGatewayActions.UpdateChapCredentials,
+		StorageGatewayActions.UpdateFileSystemAssociation,
+		StorageGatewayActions.UpdateGatewayInformation,
+		StorageGatewayActions.UpdateGatewaySoftwareNow,
+		StorageGatewayActions.UpdateMaintenanceStartTime,
+		StorageGatewayActions.UpdateNFSFileShare,
+		StorageGatewayActions.UpdateSMBFileShare,
+		StorageGatewayActions.UpdateSMBFileShareVisibility,
+		StorageGatewayActions.UpdateSMBLocalGroups,
+		StorageGatewayActions.UpdateSMBSecurityStrategy,
+		StorageGatewayActions.UpdateSnapshotSchedule,
+		StorageGatewayActions.UpdateVTLDeviceType,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		StorageGatewayActions.LIST_AUTOMATIC_TAPE_CREATION_POLICIES,
-		StorageGatewayActions.LIST_CACHE_REPORTS,
-		StorageGatewayActions.LIST_FILE_SHARES,
-		StorageGatewayActions.LIST_FILE_SYSTEM_ASSOCIATIONS,
-		StorageGatewayActions.LIST_GATEWAYS,
-		StorageGatewayActions.LIST_LOCAL_DISKS,
-		StorageGatewayActions.LIST_TAGS_FOR_RESOURCE,
-		StorageGatewayActions.LIST_TAPE_POOLS,
-		StorageGatewayActions.LIST_TAPES,
-		StorageGatewayActions.LIST_VOLUME_INITIATORS,
-		StorageGatewayActions.LIST_VOLUME_RECOVERY_POINTS,
-		StorageGatewayActions.LIST_VOLUMES,
+	static readonly AllListActions: string[] = [
+		StorageGatewayActions.ListAutomaticTapeCreationPolicies,
+		StorageGatewayActions.ListCacheReports,
+		StorageGatewayActions.ListFileShares,
+		StorageGatewayActions.ListFileSystemAssociations,
+		StorageGatewayActions.ListGateways,
+		StorageGatewayActions.ListLocalDisks,
+		StorageGatewayActions.ListTagsForResource,
+		StorageGatewayActions.ListTapePools,
+		StorageGatewayActions.ListTapes,
+		StorageGatewayActions.ListVolumeInitiators,
+		StorageGatewayActions.ListVolumeRecoveryPoints,
+		StorageGatewayActions.ListVolumes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		StorageGatewayActions.ADD_TAGS_TO_RESOURCE,
-		StorageGatewayActions.REMOVE_TAGS_FROM_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		StorageGatewayActions.AddTagsToResource,
+		StorageGatewayActions.RemoveTagsFromResource,
 	];
 }
 
-const CacheReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):share/(?<shareId>[^:/?]+)/cache-report/(?<cacheReportId>[^:/?]+)$",
-);
-const DeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<gatewayId>[^:/?]+)/device/(?<vtldevice>[^:/?]+)$",
-);
-const FsAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):fs-association/(?<fsaId>[^:/?]+)$",
-);
-const GatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<gatewayId>[^:/?]+)$",
-);
-const ShareArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):share/(?<shareId>[^:/?]+)$",
-);
-const TapeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):tape/(?<tapeBarcode>[^:/?]+)$",
-);
-const TapepoolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):tapepool/(?<poolId>[^:/?]+)$",
-);
-const TargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<gatewayId>[^:/?]+)/target/(?<iscsiTarget>[^:/?]+)$",
-);
-const VolumeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<gatewayId>[^:/?]+)/volume/(?<volumeId>[^:/?]+)$",
-);
+/**
+ * Properties for building a cache-report ARN.
+ */
+export interface StorageGatewayCacheReportArnProps {
+	/** The ShareId component of the ARN. */
+	readonly shareId: string;
+	/** The CacheReportId component of the ARN. */
+	readonly cacheReportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cache-report ARN.
+ */
+export interface StorageGatewayCacheReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ShareId component. */
+	readonly shareId: string;
+	/** The CacheReportId component. */
+	readonly cacheReportId: string;
+}
+
+/**
+ * Properties for building a device ARN.
+ */
+export interface StorageGatewayDeviceArnProps {
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** The Vtldevice component of the ARN. */
+	readonly vtldevice: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device ARN.
+ */
+export interface StorageGatewayDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+	/** The Vtldevice component. */
+	readonly vtldevice: string;
+}
+
+/**
+ * Properties for building a fs-association ARN.
+ */
+export interface StorageGatewayFsAssociationArnProps {
+	/** The FsaId component of the ARN. */
+	readonly fsaId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fs-association ARN.
+ */
+export interface StorageGatewayFsAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FsaId component. */
+	readonly fsaId: string;
+}
+
+/**
+ * Properties for building a gateway ARN.
+ */
+export interface StorageGatewayGatewayArnProps {
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gateway ARN.
+ */
+export interface StorageGatewayGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+}
+
+/**
+ * Properties for building a share ARN.
+ */
+export interface StorageGatewayShareArnProps {
+	/** The ShareId component of the ARN. */
+	readonly shareId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a share ARN.
+ */
+export interface StorageGatewayShareArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ShareId component. */
+	readonly shareId: string;
+}
+
+/**
+ * Properties for building a tape ARN.
+ */
+export interface StorageGatewayTapeArnProps {
+	/** The TapeBarcode component of the ARN. */
+	readonly tapeBarcode: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tape ARN.
+ */
+export interface StorageGatewayTapeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TapeBarcode component. */
+	readonly tapeBarcode: string;
+}
+
+/**
+ * Properties for building a tapepool ARN.
+ */
+export interface StorageGatewayTapepoolArnProps {
+	/** The PoolId component of the ARN. */
+	readonly poolId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tapepool ARN.
+ */
+export interface StorageGatewayTapepoolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PoolId component. */
+	readonly poolId: string;
+}
+
+/**
+ * Properties for building a target ARN.
+ */
+export interface StorageGatewayTargetArnProps {
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** The IscsiTarget component of the ARN. */
+	readonly iscsiTarget: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a target ARN.
+ */
+export interface StorageGatewayTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+	/** The IscsiTarget component. */
+	readonly iscsiTarget: string;
+}
+
+/**
+ * Properties for building a volume ARN.
+ */
+export interface StorageGatewayVolumeArnProps {
+	/** The GatewayId component of the ARN. */
+	readonly gatewayId: string;
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a volume ARN.
+ */
+export interface StorageGatewayVolumeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GatewayId component. */
+	readonly gatewayId: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+}
+
+const CacheReportArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):share\/(?<shareId>[^:/?]+)\/cache-report\/(?<cacheReportId>[^:/?]+)$/;
+const DeviceArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)\/device\/(?<vtldevice>[^:/?]+)$/;
+const FsAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):fs-association\/(?<fsaId>[^:/?]+)$/;
+const GatewayArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)$/;
+const ShareArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):share\/(?<shareId>[^:/?]+)$/;
+const TapeArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):tape\/(?<tapeBarcode>[^:/?]+)$/;
+const TapepoolArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):tapepool\/(?<poolId>[^:/?]+)$/;
+const TargetArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)\/target\/(?<iscsiTarget>[^:/?]+)$/;
+const VolumeArnRegex =
+	/^arn:(?<partition>[^:]+):storagegateway:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)\/volume\/(?<volumeId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for storagegateway resources.
@@ -402,18 +658,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the cache-report resource.
 	 */
-	static cacheReport(props: {
-		/** The ShareId component of the ARN. */
-		readonly shareId: string;
-		/** The CacheReportId component of the ARN. */
-		readonly cacheReportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cacheReport(props: StorageGatewayCacheReportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:share/${props.shareId}/cache-report/${props.cacheReportId}`;
 	}
 
@@ -428,13 +673,9 @@ export class StorageGatewayResources {
 	 * Parses a cache-report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCacheReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		shareId: string;
-		cacheReportId: string;
-	} {
+	static parseCacheReportArn(
+		arn: string,
+	): StorageGatewayCacheReportArnComponents {
 		const match = CacheReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cache-report ARN: ${arn}`);
@@ -451,18 +692,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the device resource.
 	 */
-	static device(props: {
-		/** The GatewayId component of the ARN. */
-		readonly gatewayId: string;
-		/** The Vtldevice component of the ARN. */
-		readonly vtldevice: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static device(props: StorageGatewayDeviceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayId}/device/${props.vtldevice}`;
 	}
 
@@ -477,13 +707,7 @@ export class StorageGatewayResources {
 	 * Parses a device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		gatewayId: string;
-		vtldevice: string;
-	} {
+	static parseDeviceArn(arn: string): StorageGatewayDeviceArnComponents {
 		const match = DeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device ARN: ${arn}`);
@@ -500,16 +724,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the fs-association resource.
 	 */
-	static fsAssociation(props: {
-		/** The FsaId component of the ARN. */
-		readonly fsaId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fsAssociation(props: StorageGatewayFsAssociationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:fs-association/${props.fsaId}`;
 	}
 
@@ -524,12 +739,9 @@ export class StorageGatewayResources {
 	 * Parses a fs-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFsAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fsaId: string;
-	} {
+	static parseFsAssociationArn(
+		arn: string,
+	): StorageGatewayFsAssociationArnComponents {
 		const match = FsAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fs-association ARN: ${arn}`);
@@ -545,16 +757,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the gateway resource.
 	 */
-	static gateway(props: {
-		/** The GatewayId component of the ARN. */
-		readonly gatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gateway(props: StorageGatewayGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayId}`;
 	}
 
@@ -569,12 +772,7 @@ export class StorageGatewayResources {
 	 * Parses a gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		gatewayId: string;
-	} {
+	static parseGatewayArn(arn: string): StorageGatewayGatewayArnComponents {
 		const match = GatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid gateway ARN: ${arn}`);
@@ -590,16 +788,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the share resource.
 	 */
-	static share(props: {
-		/** The ShareId component of the ARN. */
-		readonly shareId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static share(props: StorageGatewayShareArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:share/${props.shareId}`;
 	}
 
@@ -614,12 +803,7 @@ export class StorageGatewayResources {
 	 * Parses a share ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseShareArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		shareId: string;
-	} {
+	static parseShareArn(arn: string): StorageGatewayShareArnComponents {
 		const match = ShareArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid share ARN: ${arn}`);
@@ -635,16 +819,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the tape resource.
 	 */
-	static tape(props: {
-		/** The TapeBarcode component of the ARN. */
-		readonly tapeBarcode: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tape(props: StorageGatewayTapeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:tape/${props.tapeBarcode}`;
 	}
 
@@ -659,12 +834,7 @@ export class StorageGatewayResources {
 	 * Parses a tape ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTapeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tapeBarcode: string;
-	} {
+	static parseTapeArn(arn: string): StorageGatewayTapeArnComponents {
 		const match = TapeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tape ARN: ${arn}`);
@@ -680,16 +850,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the tapepool resource.
 	 */
-	static tapepool(props: {
-		/** The PoolId component of the ARN. */
-		readonly poolId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tapepool(props: StorageGatewayTapepoolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:tapepool/${props.poolId}`;
 	}
 
@@ -704,12 +865,7 @@ export class StorageGatewayResources {
 	 * Parses a tapepool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTapepoolArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		poolId: string;
-	} {
+	static parseTapepoolArn(arn: string): StorageGatewayTapepoolArnComponents {
 		const match = TapepoolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tapepool ARN: ${arn}`);
@@ -725,18 +881,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the target resource.
 	 */
-	static target(props: {
-		/** The GatewayId component of the ARN. */
-		readonly gatewayId: string;
-		/** The IscsiTarget component of the ARN. */
-		readonly iscsiTarget: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static target(props: StorageGatewayTargetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayId}/target/${props.iscsiTarget}`;
 	}
 
@@ -751,13 +896,7 @@ export class StorageGatewayResources {
 	 * Parses a target ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTargetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		gatewayId: string;
-		iscsiTarget: string;
-	} {
+	static parseTargetArn(arn: string): StorageGatewayTargetArnComponents {
 		const match = TargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid target ARN: ${arn}`);
@@ -774,18 +913,7 @@ export class StorageGatewayResources {
 	/**
 	 * Builds an ARN for the volume resource.
 	 */
-	static volume(props: {
-		/** The GatewayId component of the ARN. */
-		readonly gatewayId: string;
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static volume(props: StorageGatewayVolumeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:storagegateway:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.gatewayId}/volume/${props.volumeId}`;
 	}
 
@@ -800,13 +928,7 @@ export class StorageGatewayResources {
 	 * Parses a volume ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVolumeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		gatewayId: string;
-		volumeId: string;
-	} {
+	static parseVolumeArn(arn: string): StorageGatewayVolumeArnComponents {
 		const match = VolumeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid volume ARN: ${arn}`);
@@ -826,364 +948,358 @@ export class StorageGatewayResources {
  */
 export class StorageGatewayOperations {
 	/** IAM actions required for the ActivateGateway API call. */
-	static readonly ACTIVATE_GATEWAY: string[] = [
+	static readonly ActivateGateway: string[] = [
 		"storagegateway:ActivateGateway",
 		"storagegateway:AddTagsToResource",
 	];
 	/** IAM actions required for the AddCache API call. */
-	static readonly ADD_CACHE: string[] = ["storagegateway:AddCache"];
+	static readonly AddCache: string[] = ["storagegateway:AddCache"];
 	/** IAM actions required for the AddTagsToResource API call. */
-	static readonly ADD_TAGS_TO_RESOURCE: string[] = [
+	static readonly AddTagsToResource: string[] = [
 		"storagegateway:AddTagsToResource",
 	];
 	/** IAM actions required for the AddUploadBuffer API call. */
-	static readonly ADD_UPLOAD_BUFFER: string[] = [
+	static readonly AddUploadBuffer: string[] = [
 		"storagegateway:AddUploadBuffer",
 	];
 	/** IAM actions required for the AddWorkingStorage API call. */
-	static readonly ADD_WORKING_STORAGE: string[] = [
+	static readonly AddWorkingStorage: string[] = [
 		"storagegateway:AddWorkingStorage",
 	];
 	/** IAM actions required for the AssignTapePool API call. */
-	static readonly ASSIGN_TAPE_POOL: string[] = [
+	static readonly AssignTapePool: string[] = [
 		"storagegateway:AssignTapePool",
 		"storagegateway:BypassGovernanceRetention",
 	];
 	/** IAM actions required for the AssociateFileSystem API call. */
-	static readonly ASSOCIATE_FILE_SYSTEM: string[] = [
+	static readonly AssociateFileSystem: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:AssociateFileSystem",
 	];
 	/** IAM actions required for the AttachVolume API call. */
-	static readonly ATTACH_VOLUME: string[] = ["storagegateway:AttachVolume"];
+	static readonly AttachVolume: string[] = ["storagegateway:AttachVolume"];
 	/** IAM actions required for the CancelArchival API call. */
-	static readonly CANCEL_ARCHIVAL: string[] = ["storagegateway:CancelArchival"];
+	static readonly CancelArchival: string[] = ["storagegateway:CancelArchival"];
 	/** IAM actions required for the CancelCacheReport API call. */
-	static readonly CANCEL_CACHE_REPORT: string[] = [
+	static readonly CancelCacheReport: string[] = [
 		"storagegateway:CancelCacheReport",
 	];
 	/** IAM actions required for the CancelRetrieval API call. */
-	static readonly CANCEL_RETRIEVAL: string[] = [
+	static readonly CancelRetrieval: string[] = [
 		"storagegateway:CancelRetrieval",
 	];
 	/** IAM actions required for the CreateCachediSCSIVolume API call. */
-	static readonly CREATE_CACHEDI_SCSI_VOLUME: string[] = [
+	static readonly CreateCachediSCSIVolume: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateCachediSCSIVolume",
 	];
 	/** IAM actions required for the CreateNFSFileShare API call. */
-	static readonly CREATE_NFS_FILE_SHARE: string[] = [
+	static readonly CreateNFSFileShare: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateNFSFileShare",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateSMBFileShare API call. */
-	static readonly CREATE_SMB_FILE_SHARE: string[] = [
+	static readonly CreateSMBFileShare: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateSMBFileShare",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateSnapshot API call. */
-	static readonly CREATE_SNAPSHOT: string[] = ["storagegateway:CreateSnapshot"];
+	static readonly CreateSnapshot: string[] = ["storagegateway:CreateSnapshot"];
 	/** IAM actions required for the CreateSnapshotFromVolumeRecoveryPoint API call. */
-	static readonly CREATE_SNAPSHOT_FROM_VOLUME_RECOVERY_POINT: string[] = [
+	static readonly CreateSnapshotFromVolumeRecoveryPoint: string[] = [
 		"storagegateway:CreateSnapshotFromVolumeRecoveryPoint",
 	];
 	/** IAM actions required for the CreateStorediSCSIVolume API call. */
-	static readonly CREATE_STOREDI_SCSI_VOLUME: string[] = [
+	static readonly CreateStorediSCSIVolume: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateStorediSCSIVolume",
 	];
 	/** IAM actions required for the CreateTapePool API call. */
-	static readonly CREATE_TAPE_POOL: string[] = [
+	static readonly CreateTapePool: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateTapePool",
 	];
 	/** IAM actions required for the CreateTapeWithBarcode API call. */
-	static readonly CREATE_TAPE_WITH_BARCODE: string[] = [
+	static readonly CreateTapeWithBarcode: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateTapeWithBarcode",
 	];
 	/** IAM actions required for the CreateTapes API call. */
-	static readonly CREATE_TAPES: string[] = [
+	static readonly CreateTapes: string[] = [
 		"storagegateway:AddTagsToResource",
 		"storagegateway:CreateTapes",
 	];
 	/** IAM actions required for the DeleteAutomaticTapeCreationPolicy API call. */
-	static readonly DELETE_AUTOMATIC_TAPE_CREATION_POLICY: string[] = [
+	static readonly DeleteAutomaticTapeCreationPolicy: string[] = [
 		"storagegateway:DeleteAutomaticTapeCreationPolicy",
 	];
 	/** IAM actions required for the DeleteBandwidthRateLimit API call. */
-	static readonly DELETE_BANDWIDTH_RATE_LIMIT: string[] = [
+	static readonly DeleteBandwidthRateLimit: string[] = [
 		"storagegateway:DeleteBandwidthRateLimit",
 	];
 	/** IAM actions required for the DeleteCacheReport API call. */
-	static readonly DELETE_CACHE_REPORT: string[] = [
+	static readonly DeleteCacheReport: string[] = [
 		"storagegateway:DeleteCacheReport",
 	];
 	/** IAM actions required for the DeleteChapCredentials API call. */
-	static readonly DELETE_CHAP_CREDENTIALS: string[] = [
+	static readonly DeleteChapCredentials: string[] = [
 		"storagegateway:DeleteChapCredentials",
 	];
 	/** IAM actions required for the DeleteFileShare API call. */
-	static readonly DELETE_FILE_SHARE: string[] = [
+	static readonly DeleteFileShare: string[] = [
 		"storagegateway:DeleteFileShare",
 	];
 	/** IAM actions required for the DeleteGateway API call. */
-	static readonly DELETE_GATEWAY: string[] = ["storagegateway:DeleteGateway"];
+	static readonly DeleteGateway: string[] = ["storagegateway:DeleteGateway"];
 	/** IAM actions required for the DeleteSnapshotSchedule API call. */
-	static readonly DELETE_SNAPSHOT_SCHEDULE: string[] = [
+	static readonly DeleteSnapshotSchedule: string[] = [
 		"storagegateway:DeleteSnapshotSchedule",
 	];
 	/** IAM actions required for the DeleteTape API call. */
-	static readonly DELETE_TAPE: string[] = ["storagegateway:DeleteTape"];
+	static readonly DeleteTape: string[] = ["storagegateway:DeleteTape"];
 	/** IAM actions required for the DeleteTapeArchive API call. */
-	static readonly DELETE_TAPE_ARCHIVE: string[] = [
+	static readonly DeleteTapeArchive: string[] = [
 		"storagegateway:BypassGovernanceRetention",
 		"storagegateway:DeleteTapeArchive",
 	];
 	/** IAM actions required for the DeleteTapePool API call. */
-	static readonly DELETE_TAPE_POOL: string[] = [
-		"storagegateway:DeleteTapePool",
-	];
+	static readonly DeleteTapePool: string[] = ["storagegateway:DeleteTapePool"];
 	/** IAM actions required for the DeleteVolume API call. */
-	static readonly DELETE_VOLUME: string[] = ["storagegateway:DeleteVolume"];
+	static readonly DeleteVolume: string[] = ["storagegateway:DeleteVolume"];
 	/** IAM actions required for the DescribeAvailabilityMonitorTest API call. */
-	static readonly DESCRIBE_AVAILABILITY_MONITOR_TEST: string[] = [
+	static readonly DescribeAvailabilityMonitorTest: string[] = [
 		"storagegateway:DescribeAvailabilityMonitorTest",
 	];
 	/** IAM actions required for the DescribeBandwidthRateLimit API call. */
-	static readonly DESCRIBE_BANDWIDTH_RATE_LIMIT: string[] = [
+	static readonly DescribeBandwidthRateLimit: string[] = [
 		"storagegateway:DescribeBandwidthRateLimit",
 	];
 	/** IAM actions required for the DescribeBandwidthRateLimitSchedule API call. */
-	static readonly DESCRIBE_BANDWIDTH_RATE_LIMIT_SCHEDULE: string[] = [
+	static readonly DescribeBandwidthRateLimitSchedule: string[] = [
 		"storagegateway:DescribeBandwidthRateLimitSchedule",
 	];
 	/** IAM actions required for the DescribeCache API call. */
-	static readonly DESCRIBE_CACHE: string[] = ["storagegateway:DescribeCache"];
+	static readonly DescribeCache: string[] = ["storagegateway:DescribeCache"];
 	/** IAM actions required for the DescribeCacheReport API call. */
-	static readonly DESCRIBE_CACHE_REPORT: string[] = [
+	static readonly DescribeCacheReport: string[] = [
 		"storagegateway:DescribeCacheReport",
 	];
 	/** IAM actions required for the DescribeCachediSCSIVolumes API call. */
-	static readonly DESCRIBE_CACHEDI_SCSI_VOLUMES: string[] = [
+	static readonly DescribeCachediSCSIVolumes: string[] = [
 		"storagegateway:DescribeCachediSCSIVolumes",
 	];
 	/** IAM actions required for the DescribeChapCredentials API call. */
-	static readonly DESCRIBE_CHAP_CREDENTIALS: string[] = [
+	static readonly DescribeChapCredentials: string[] = [
 		"storagegateway:DescribeChapCredentials",
 	];
 	/** IAM actions required for the DescribeFileSystemAssociations API call. */
-	static readonly DESCRIBE_FILE_SYSTEM_ASSOCIATIONS: string[] = [
+	static readonly DescribeFileSystemAssociations: string[] = [
 		"storagegateway:DescribeFileSystemAssociations",
 	];
 	/** IAM actions required for the DescribeGatewayInformation API call. */
-	static readonly DESCRIBE_GATEWAY_INFORMATION: string[] = [
+	static readonly DescribeGatewayInformation: string[] = [
 		"storagegateway:DescribeGatewayInformation",
 	];
 	/** IAM actions required for the DescribeMaintenanceStartTime API call. */
-	static readonly DESCRIBE_MAINTENANCE_START_TIME: string[] = [
+	static readonly DescribeMaintenanceStartTime: string[] = [
 		"storagegateway:DescribeMaintenanceStartTime",
 	];
 	/** IAM actions required for the DescribeNFSFileShares API call. */
-	static readonly DESCRIBE_NFS_FILE_SHARES: string[] = [
+	static readonly DescribeNFSFileShares: string[] = [
 		"storagegateway:DescribeNFSFileShares",
 	];
 	/** IAM actions required for the DescribeSMBFileShares API call. */
-	static readonly DESCRIBE_SMB_FILE_SHARES: string[] = [
+	static readonly DescribeSMBFileShares: string[] = [
 		"storagegateway:DescribeSMBFileShares",
 	];
 	/** IAM actions required for the DescribeSMBSettings API call. */
-	static readonly DESCRIBE_SMB_SETTINGS: string[] = [
+	static readonly DescribeSMBSettings: string[] = [
 		"storagegateway:DescribeSMBSettings",
 	];
 	/** IAM actions required for the DescribeSnapshotSchedule API call. */
-	static readonly DESCRIBE_SNAPSHOT_SCHEDULE: string[] = [
+	static readonly DescribeSnapshotSchedule: string[] = [
 		"storagegateway:DescribeSnapshotSchedule",
 	];
 	/** IAM actions required for the DescribeStorediSCSIVolumes API call. */
-	static readonly DESCRIBE_STOREDI_SCSI_VOLUMES: string[] = [
+	static readonly DescribeStorediSCSIVolumes: string[] = [
 		"storagegateway:DescribeStorediSCSIVolumes",
 	];
 	/** IAM actions required for the DescribeTapeArchives API call. */
-	static readonly DESCRIBE_TAPE_ARCHIVES: string[] = [
+	static readonly DescribeTapeArchives: string[] = [
 		"storagegateway:DescribeTapeArchives",
 	];
 	/** IAM actions required for the DescribeTapeRecoveryPoints API call. */
-	static readonly DESCRIBE_TAPE_RECOVERY_POINTS: string[] = [
+	static readonly DescribeTapeRecoveryPoints: string[] = [
 		"storagegateway:DescribeTapeRecoveryPoints",
 	];
 	/** IAM actions required for the DescribeTapes API call. */
-	static readonly DESCRIBE_TAPES: string[] = ["storagegateway:DescribeTapes"];
+	static readonly DescribeTapes: string[] = ["storagegateway:DescribeTapes"];
 	/** IAM actions required for the DescribeUploadBuffer API call. */
-	static readonly DESCRIBE_UPLOAD_BUFFER: string[] = [
+	static readonly DescribeUploadBuffer: string[] = [
 		"storagegateway:DescribeUploadBuffer",
 	];
 	/** IAM actions required for the DescribeVTLDevices API call. */
-	static readonly DESCRIBE_VTL_DEVICES: string[] = [
+	static readonly DescribeVTLDevices: string[] = [
 		"storagegateway:DescribeVTLDevices",
 	];
 	/** IAM actions required for the DescribeWorkingStorage API call. */
-	static readonly DESCRIBE_WORKING_STORAGE: string[] = [
+	static readonly DescribeWorkingStorage: string[] = [
 		"storagegateway:DescribeWorkingStorage",
 	];
 	/** IAM actions required for the DetachVolume API call. */
-	static readonly DETACH_VOLUME: string[] = ["storagegateway:DetachVolume"];
+	static readonly DetachVolume: string[] = ["storagegateway:DetachVolume"];
 	/** IAM actions required for the DisableGateway API call. */
-	static readonly DISABLE_GATEWAY: string[] = ["storagegateway:DisableGateway"];
+	static readonly DisableGateway: string[] = ["storagegateway:DisableGateway"];
 	/** IAM actions required for the DisassociateFileSystem API call. */
-	static readonly DISASSOCIATE_FILE_SYSTEM: string[] = [
+	static readonly DisassociateFileSystem: string[] = [
 		"storagegateway:DisassociateFileSystem",
 	];
 	/** IAM actions required for the EvictFilesFailingUpload API call. */
-	static readonly EVICT_FILES_FAILING_UPLOAD: string[] = [
+	static readonly EvictFilesFailingUpload: string[] = [
 		"storagegateway:EvictFilesFailingUpload",
 	];
 	/** IAM actions required for the JoinDomain API call. */
-	static readonly JOIN_DOMAIN: string[] = ["storagegateway:JoinDomain"];
+	static readonly JoinDomain: string[] = ["storagegateway:JoinDomain"];
 	/** IAM actions required for the ListAutomaticTapeCreationPolicies API call. */
-	static readonly LIST_AUTOMATIC_TAPE_CREATION_POLICIES: string[] = [
+	static readonly ListAutomaticTapeCreationPolicies: string[] = [
 		"storagegateway:ListAutomaticTapeCreationPolicies",
 	];
 	/** IAM actions required for the ListCacheReports API call. */
-	static readonly LIST_CACHE_REPORTS: string[] = [
+	static readonly ListCacheReports: string[] = [
 		"storagegateway:ListCacheReports",
 	];
 	/** IAM actions required for the ListFileShares API call. */
-	static readonly LIST_FILE_SHARES: string[] = [
-		"storagegateway:ListFileShares",
-	];
+	static readonly ListFileShares: string[] = ["storagegateway:ListFileShares"];
 	/** IAM actions required for the ListFileSystemAssociations API call. */
-	static readonly LIST_FILE_SYSTEM_ASSOCIATIONS: string[] = [
+	static readonly ListFileSystemAssociations: string[] = [
 		"storagegateway:ListFileSystemAssociations",
 	];
 	/** IAM actions required for the ListGateways API call. */
-	static readonly LIST_GATEWAYS: string[] = ["storagegateway:ListGateways"];
+	static readonly ListGateways: string[] = ["storagegateway:ListGateways"];
 	/** IAM actions required for the ListLocalDisks API call. */
-	static readonly LIST_LOCAL_DISKS: string[] = [
-		"storagegateway:ListLocalDisks",
-	];
+	static readonly ListLocalDisks: string[] = ["storagegateway:ListLocalDisks"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"storagegateway:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTapePools API call. */
-	static readonly LIST_TAPE_POOLS: string[] = ["storagegateway:ListTapePools"];
+	static readonly ListTapePools: string[] = ["storagegateway:ListTapePools"];
 	/** IAM actions required for the ListTapes API call. */
-	static readonly LIST_TAPES: string[] = ["storagegateway:ListTapes"];
+	static readonly ListTapes: string[] = ["storagegateway:ListTapes"];
 	/** IAM actions required for the ListVolumeInitiators API call. */
-	static readonly LIST_VOLUME_INITIATORS: string[] = [
+	static readonly ListVolumeInitiators: string[] = [
 		"storagegateway:ListVolumeInitiators",
 	];
 	/** IAM actions required for the ListVolumeRecoveryPoints API call. */
-	static readonly LIST_VOLUME_RECOVERY_POINTS: string[] = [
+	static readonly ListVolumeRecoveryPoints: string[] = [
 		"storagegateway:ListVolumeRecoveryPoints",
 	];
 	/** IAM actions required for the ListVolumes API call. */
-	static readonly LIST_VOLUMES: string[] = ["storagegateway:ListVolumes"];
+	static readonly ListVolumes: string[] = ["storagegateway:ListVolumes"];
 	/** IAM actions required for the NotifyWhenUploaded API call. */
-	static readonly NOTIFY_WHEN_UPLOADED: string[] = [
+	static readonly NotifyWhenUploaded: string[] = [
 		"storagegateway:NotifyWhenUploaded",
 	];
 	/** IAM actions required for the RefreshCache API call. */
-	static readonly REFRESH_CACHE: string[] = ["storagegateway:RefreshCache"];
+	static readonly RefreshCache: string[] = ["storagegateway:RefreshCache"];
 	/** IAM actions required for the RemoveTagsFromResource API call. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE: string[] = [
+	static readonly RemoveTagsFromResource: string[] = [
 		"storagegateway:RemoveTagsFromResource",
 	];
 	/** IAM actions required for the ResetCache API call. */
-	static readonly RESET_CACHE: string[] = ["storagegateway:ResetCache"];
+	static readonly ResetCache: string[] = ["storagegateway:ResetCache"];
 	/** IAM actions required for the RetrieveTapeArchive API call. */
-	static readonly RETRIEVE_TAPE_ARCHIVE: string[] = [
+	static readonly RetrieveTapeArchive: string[] = [
 		"storagegateway:RetrieveTapeArchive",
 	];
 	/** IAM actions required for the RetrieveTapeRecoveryPoint API call. */
-	static readonly RETRIEVE_TAPE_RECOVERY_POINT: string[] = [
+	static readonly RetrieveTapeRecoveryPoint: string[] = [
 		"storagegateway:RetrieveTapeRecoveryPoint",
 	];
 	/** IAM actions required for the SetLocalConsolePassword API call. */
-	static readonly SET_LOCAL_CONSOLE_PASSWORD: string[] = [
+	static readonly opSetLocalConsolePassword: string[] = [
 		"storagegateway:SetLocalConsolePassword",
 	];
 	/** IAM actions required for the SetSMBGuestPassword API call. */
-	static readonly SET_SMB_GUEST_PASSWORD: string[] = [
+	static readonly opSetSMBGuestPassword: string[] = [
 		"storagegateway:SetSMBGuestPassword",
 	];
 	/** IAM actions required for the ShutdownGateway API call. */
-	static readonly SHUTDOWN_GATEWAY: string[] = [
+	static readonly ShutdownGateway: string[] = [
 		"storagegateway:ShutdownGateway",
 	];
 	/** IAM actions required for the StartAvailabilityMonitorTest API call. */
-	static readonly START_AVAILABILITY_MONITOR_TEST: string[] = [
+	static readonly StartAvailabilityMonitorTest: string[] = [
 		"storagegateway:StartAvailabilityMonitorTest",
 	];
 	/** IAM actions required for the StartCacheReport API call. */
-	static readonly START_CACHE_REPORT: string[] = [
+	static readonly StartCacheReport: string[] = [
 		"storagegateway:AddTagsToResource",
 		"iam:PassRole",
 		"storagegateway:StartCacheReport",
 	];
 	/** IAM actions required for the StartGateway API call. */
-	static readonly START_GATEWAY: string[] = ["storagegateway:StartGateway"];
+	static readonly StartGateway: string[] = ["storagegateway:StartGateway"];
 	/** IAM actions required for the UpdateAutomaticTapeCreationPolicy API call. */
-	static readonly UPDATE_AUTOMATIC_TAPE_CREATION_POLICY: string[] = [
+	static readonly UpdateAutomaticTapeCreationPolicy: string[] = [
 		"storagegateway:UpdateAutomaticTapeCreationPolicy",
 	];
 	/** IAM actions required for the UpdateBandwidthRateLimit API call. */
-	static readonly UPDATE_BANDWIDTH_RATE_LIMIT: string[] = [
+	static readonly UpdateBandwidthRateLimit: string[] = [
 		"storagegateway:UpdateBandwidthRateLimit",
 	];
 	/** IAM actions required for the UpdateBandwidthRateLimitSchedule API call. */
-	static readonly UPDATE_BANDWIDTH_RATE_LIMIT_SCHEDULE: string[] = [
+	static readonly UpdateBandwidthRateLimitSchedule: string[] = [
 		"storagegateway:UpdateBandwidthRateLimitSchedule",
 	];
 	/** IAM actions required for the UpdateChapCredentials API call. */
-	static readonly UPDATE_CHAP_CREDENTIALS: string[] = [
+	static readonly UpdateChapCredentials: string[] = [
 		"storagegateway:UpdateChapCredentials",
 	];
 	/** IAM actions required for the UpdateFileSystemAssociation API call. */
-	static readonly UPDATE_FILE_SYSTEM_ASSOCIATION: string[] = [
+	static readonly UpdateFileSystemAssociation: string[] = [
 		"storagegateway:UpdateFileSystemAssociation",
 	];
 	/** IAM actions required for the UpdateGatewayInformation API call. */
-	static readonly UPDATE_GATEWAY_INFORMATION: string[] = [
+	static readonly UpdateGatewayInformation: string[] = [
 		"storagegateway:UpdateGatewayInformation",
 	];
 	/** IAM actions required for the UpdateGatewaySoftwareNow API call. */
-	static readonly UPDATE_GATEWAY_SOFTWARE_NOW: string[] = [
+	static readonly UpdateGatewaySoftwareNow: string[] = [
 		"storagegateway:UpdateGatewaySoftwareNow",
 	];
 	/** IAM actions required for the UpdateMaintenanceStartTime API call. */
-	static readonly UPDATE_MAINTENANCE_START_TIME: string[] = [
+	static readonly UpdateMaintenanceStartTime: string[] = [
 		"storagegateway:UpdateMaintenanceStartTime",
 	];
 	/** IAM actions required for the UpdateNFSFileShare API call. */
-	static readonly UPDATE_NFS_FILE_SHARE: string[] = [
+	static readonly UpdateNFSFileShare: string[] = [
 		"storagegateway:UpdateNFSFileShare",
 	];
 	/** IAM actions required for the UpdateSMBFileShare API call. */
-	static readonly UPDATE_SMB_FILE_SHARE: string[] = [
+	static readonly UpdateSMBFileShare: string[] = [
 		"storagegateway:UpdateSMBFileShare",
 	];
 	/** IAM actions required for the UpdateSMBFileShareVisibility API call. */
-	static readonly UPDATE_SMB_FILE_SHARE_VISIBILITY: string[] = [
+	static readonly UpdateSMBFileShareVisibility: string[] = [
 		"storagegateway:UpdateSMBFileShareVisibility",
 	];
 	/** IAM actions required for the UpdateSMBLocalGroups API call. */
-	static readonly UPDATE_SMB_LOCAL_GROUPS: string[] = [
+	static readonly UpdateSMBLocalGroups: string[] = [
 		"storagegateway:UpdateSMBLocalGroups",
 	];
 	/** IAM actions required for the UpdateSMBSecurityStrategy API call. */
-	static readonly UPDATE_SMB_SECURITY_STRATEGY: string[] = [
+	static readonly UpdateSMBSecurityStrategy: string[] = [
 		"storagegateway:UpdateSMBSecurityStrategy",
 	];
 	/** IAM actions required for the UpdateSnapshotSchedule API call. */
-	static readonly UPDATE_SNAPSHOT_SCHEDULE: string[] = [
+	static readonly UpdateSnapshotSchedule: string[] = [
 		"storagegateway:UpdateSnapshotSchedule",
 	];
 	/** IAM actions required for the UpdateVTLDeviceType API call. */
-	static readonly UPDATE_VTL_DEVICE_TYPE: string[] = [
+	static readonly UpdateVTLDeviceType: string[] = [
 		"storagegateway:UpdateVTLDeviceType",
 	];
 }
@@ -1193,84 +1309,84 @@ export class StorageGatewayOperations {
  */
 export class StorageGatewayConditions {
 	/** Condition keys applicable to the ActivateGateway action. */
-	static readonly ACTIVATE_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly ActivateGatewayConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the AddTagsToResource action. */
-	static readonly ADD_TAGS_TO_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AddTagsToResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the AssociateFileSystem action. */
-	static readonly ASSOCIATE_FILE_SYSTEM_CONDITION_KEYS: string[] = [
+	static readonly AssociateFileSystemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCachediSCSIVolume action. */
-	static readonly CREATE_CACHEDI_SCSI_VOLUME_CONDITION_KEYS: string[] = [
+	static readonly CreateCachediSCSIVolumeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNFSFileShare action. */
-	static readonly CREATE_NFS_FILE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateNFSFileShareConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSMBFileShare action. */
-	static readonly CREATE_SMB_FILE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateSMBFileShareConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshot action. */
-	static readonly CREATE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshotFromVolumeRecoveryPoint action. */
-	static readonly CREATE_SNAPSHOT_FROM_VOLUME_RECOVERY_POINT_CONDITION_KEYS: string[] =
+	static readonly CreateSnapshotFromVolumeRecoveryPointConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateStorediSCSIVolume action. */
-	static readonly CREATE_STOREDI_SCSI_VOLUME_CONDITION_KEYS: string[] = [
+	static readonly CreateStorediSCSIVolumeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTapePool action. */
-	static readonly CREATE_TAPE_POOL_CONDITION_KEYS: string[] = [
+	static readonly CreateTapePoolConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTapeWithBarcode action. */
-	static readonly CREATE_TAPE_WITH_BARCODE_CONDITION_KEYS: string[] = [
+	static readonly CreateTapeWithBarcodeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTapes action. */
-	static readonly CREATE_TAPES_CONDITION_KEYS: string[] = [
+	static readonly CreateTapesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RemoveTagsFromResource action. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly RemoveTagsFromResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCacheReport action. */
-	static readonly START_CACHE_REPORT_CONDITION_KEYS: string[] = [
+	static readonly StartCacheReportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateSnapshotSchedule action. */
-	static readonly UPDATE_SNAPSHOT_SCHEDULE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSnapshotScheduleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

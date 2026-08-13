@@ -13,93 +13,221 @@ export class KafkaconnectActions {
 	static readonly SERVICE_PREFIX = "kafkaconnect";
 
 	/** [Write] kafkaconnect:CreateConnector */
-	static readonly CREATE_CONNECTOR = "kafkaconnect:CreateConnector";
+	static readonly CreateConnector = "kafkaconnect:CreateConnector";
 	/** [Write] kafkaconnect:CreateCustomPlugin */
-	static readonly CREATE_CUSTOM_PLUGIN = "kafkaconnect:CreateCustomPlugin";
+	static readonly CreateCustomPlugin = "kafkaconnect:CreateCustomPlugin";
 	/** [Write] kafkaconnect:CreateWorkerConfiguration */
-	static readonly CREATE_WORKER_CONFIGURATION =
+	static readonly CreateWorkerConfiguration =
 		"kafkaconnect:CreateWorkerConfiguration";
 	/** [Write] kafkaconnect:DeleteConnector */
-	static readonly DELETE_CONNECTOR = "kafkaconnect:DeleteConnector";
+	static readonly DeleteConnector = "kafkaconnect:DeleteConnector";
 	/** [Write] kafkaconnect:DeleteCustomPlugin */
-	static readonly DELETE_CUSTOM_PLUGIN = "kafkaconnect:DeleteCustomPlugin";
+	static readonly DeleteCustomPlugin = "kafkaconnect:DeleteCustomPlugin";
 	/** [Write] kafkaconnect:DeleteWorkerConfiguration */
-	static readonly DELETE_WORKER_CONFIGURATION =
+	static readonly DeleteWorkerConfiguration =
 		"kafkaconnect:DeleteWorkerConfiguration";
 	/** [Read] kafkaconnect:DescribeConnector */
-	static readonly DESCRIBE_CONNECTOR = "kafkaconnect:DescribeConnector";
+	static readonly DescribeConnector = "kafkaconnect:DescribeConnector";
 	/** [Read] kafkaconnect:DescribeConnectorOperation */
-	static readonly DESCRIBE_CONNECTOR_OPERATION =
+	static readonly DescribeConnectorOperation =
 		"kafkaconnect:DescribeConnectorOperation";
 	/** [Read] kafkaconnect:DescribeCustomPlugin */
-	static readonly DESCRIBE_CUSTOM_PLUGIN = "kafkaconnect:DescribeCustomPlugin";
+	static readonly DescribeCustomPlugin = "kafkaconnect:DescribeCustomPlugin";
 	/** [Read] kafkaconnect:DescribeWorkerConfiguration */
-	static readonly DESCRIBE_WORKER_CONFIGURATION =
+	static readonly DescribeWorkerConfiguration =
 		"kafkaconnect:DescribeWorkerConfiguration";
 	/** [Read] kafkaconnect:ListConnectorOperations */
-	static readonly LIST_CONNECTOR_OPERATIONS =
+	static readonly ListConnectorOperations =
 		"kafkaconnect:ListConnectorOperations";
 	/** [Read] kafkaconnect:ListConnectors */
-	static readonly LIST_CONNECTORS = "kafkaconnect:ListConnectors";
+	static readonly ListConnectors = "kafkaconnect:ListConnectors";
 	/** [Read] kafkaconnect:ListCustomPlugins */
-	static readonly LIST_CUSTOM_PLUGINS = "kafkaconnect:ListCustomPlugins";
+	static readonly ListCustomPlugins = "kafkaconnect:ListCustomPlugins";
 	/** [Read] kafkaconnect:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "kafkaconnect:ListTagsForResource";
+	static readonly ListTagsForResource = "kafkaconnect:ListTagsForResource";
 	/** [Read] kafkaconnect:ListWorkerConfigurations */
-	static readonly LIST_WORKER_CONFIGURATIONS =
+	static readonly ListWorkerConfigurations =
 		"kafkaconnect:ListWorkerConfigurations";
 	/** [Tagging] kafkaconnect:TagResource */
-	static readonly TAG_RESOURCE = "kafkaconnect:TagResource";
+	static readonly TagResource = "kafkaconnect:TagResource";
 	/** [Tagging] kafkaconnect:UntagResource */
-	static readonly UNTAG_RESOURCE = "kafkaconnect:UntagResource";
+	static readonly UntagResource = "kafkaconnect:UntagResource";
 	/** [Write] kafkaconnect:UpdateConnector */
-	static readonly UPDATE_CONNECTOR = "kafkaconnect:UpdateConnector";
+	static readonly UpdateConnector = "kafkaconnect:UpdateConnector";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KafkaconnectActions.DESCRIBE_CONNECTOR,
-		KafkaconnectActions.DESCRIBE_CONNECTOR_OPERATION,
-		KafkaconnectActions.DESCRIBE_CUSTOM_PLUGIN,
-		KafkaconnectActions.DESCRIBE_WORKER_CONFIGURATION,
-		KafkaconnectActions.LIST_CONNECTOR_OPERATIONS,
-		KafkaconnectActions.LIST_CONNECTORS,
-		KafkaconnectActions.LIST_CUSTOM_PLUGINS,
-		KafkaconnectActions.LIST_TAGS_FOR_RESOURCE,
-		KafkaconnectActions.LIST_WORKER_CONFIGURATIONS,
+	static readonly AllReadActions: string[] = [
+		KafkaconnectActions.DescribeConnector,
+		KafkaconnectActions.DescribeConnectorOperation,
+		KafkaconnectActions.DescribeCustomPlugin,
+		KafkaconnectActions.DescribeWorkerConfiguration,
+		KafkaconnectActions.ListConnectorOperations,
+		KafkaconnectActions.ListConnectors,
+		KafkaconnectActions.ListCustomPlugins,
+		KafkaconnectActions.ListTagsForResource,
+		KafkaconnectActions.ListWorkerConfigurations,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KafkaconnectActions.CREATE_CONNECTOR,
-		KafkaconnectActions.CREATE_CUSTOM_PLUGIN,
-		KafkaconnectActions.CREATE_WORKER_CONFIGURATION,
-		KafkaconnectActions.DELETE_CONNECTOR,
-		KafkaconnectActions.DELETE_CUSTOM_PLUGIN,
-		KafkaconnectActions.DELETE_WORKER_CONFIGURATION,
-		KafkaconnectActions.UPDATE_CONNECTOR,
+	static readonly AllWriteActions: string[] = [
+		KafkaconnectActions.CreateConnector,
+		KafkaconnectActions.CreateCustomPlugin,
+		KafkaconnectActions.CreateWorkerConfiguration,
+		KafkaconnectActions.DeleteConnector,
+		KafkaconnectActions.DeleteCustomPlugin,
+		KafkaconnectActions.DeleteWorkerConfiguration,
+		KafkaconnectActions.UpdateConnector,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KafkaconnectActions.TAG_RESOURCE,
-		KafkaconnectActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KafkaconnectActions.TagResource,
+		KafkaconnectActions.UntagResource,
 	];
 }
 
-const ConnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):connector/(?<connectorName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const ConnectorOperationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):connector-operation/(?<connectorName>[^:/?]+)/(?<connectorUuid>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const CustomPluginArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):custom-plugin/(?<customPluginName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const WorkerConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):worker-configuration/(?<workerConfigurationName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
+/**
+ * Properties for building a connector ARN.
+ */
+export interface KafkaconnectConnectorArnProps {
+	/** The ConnectorName component of the ARN. */
+	readonly connectorName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector ARN.
+ */
+export interface KafkaconnectConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectorName component. */
+	readonly connectorName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a connector operation ARN.
+ */
+export interface KafkaconnectConnectorOperationArnProps {
+	/** The ConnectorName component of the ARN. */
+	readonly connectorName: string;
+	/** The ConnectorUUID component of the ARN. */
+	readonly connectorUuid: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector operation ARN.
+ */
+export interface KafkaconnectConnectorOperationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectorName component. */
+	readonly connectorName: string;
+	/** The ConnectorUUID component. */
+	readonly connectorUuid: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a custom plugin ARN.
+ */
+export interface KafkaconnectCustomPluginArnProps {
+	/** The CustomPluginName component of the ARN. */
+	readonly customPluginName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custom plugin ARN.
+ */
+export interface KafkaconnectCustomPluginArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CustomPluginName component. */
+	readonly customPluginName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a worker configuration ARN.
+ */
+export interface KafkaconnectWorkerConfigurationArnProps {
+	/** The WorkerConfigurationName component of the ARN. */
+	readonly workerConfigurationName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a worker configuration ARN.
+ */
+export interface KafkaconnectWorkerConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkerConfigurationName component. */
+	readonly workerConfigurationName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+const ConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<connectorName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const ConnectorOperationArnRegex =
+	/^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):connector-operation\/(?<connectorName>[^:/?]+)\/(?<connectorUuid>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const CustomPluginArnRegex =
+	/^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):custom-plugin\/(?<customPluginName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const WorkerConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):kafkaconnect:(?<region>[^:]*):(?<account>[^:]*):worker-configuration\/(?<workerConfigurationName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kafkaconnect resources.
@@ -108,18 +236,7 @@ export class KafkaconnectResources {
 	/**
 	 * Builds an ARN for the connector resource.
 	 */
-	static connector(props: {
-		/** The ConnectorName component of the ARN. */
-		readonly connectorName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connector(props: KafkaconnectConnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafkaconnect:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.connectorName}/${props.uuid}`;
 	}
 
@@ -134,13 +251,7 @@ export class KafkaconnectResources {
 	 * Parses a connector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectorName: string;
-		uuid: string;
-	} {
+	static parseConnectorArn(arn: string): KafkaconnectConnectorArnComponents {
 		const match = ConnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connector ARN: ${arn}`);
@@ -157,20 +268,9 @@ export class KafkaconnectResources {
 	/**
 	 * Builds an ARN for the connector operation resource.
 	 */
-	static connectorOperation(props: {
-		/** The ConnectorName component of the ARN. */
-		readonly connectorName: string;
-		/** The ConnectorUUID component of the ARN. */
-		readonly connectorUuid: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectorOperation(
+		props: KafkaconnectConnectorOperationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:kafkaconnect:${props.region ?? "*"}:${props.account ?? "*"}:connector-operation/${props.connectorName}/${props.connectorUuid}/${props.uuid}`;
 	}
 
@@ -185,14 +285,9 @@ export class KafkaconnectResources {
 	 * Parses a connector operation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorOperationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectorName: string;
-		connectorUuid: string;
-		uuid: string;
-	} {
+	static parseConnectorOperationArn(
+		arn: string,
+	): KafkaconnectConnectorOperationArnComponents {
 		const match = ConnectorOperationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connector operation ARN: ${arn}`);
@@ -210,18 +305,7 @@ export class KafkaconnectResources {
 	/**
 	 * Builds an ARN for the custom plugin resource.
 	 */
-	static customPlugin(props: {
-		/** The CustomPluginName component of the ARN. */
-		readonly customPluginName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customPlugin(props: KafkaconnectCustomPluginArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafkaconnect:${props.region ?? "*"}:${props.account ?? "*"}:custom-plugin/${props.customPluginName}/${props.uuid}`;
 	}
 
@@ -236,13 +320,9 @@ export class KafkaconnectResources {
 	 * Parses a custom plugin ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomPluginArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		customPluginName: string;
-		uuid: string;
-	} {
+	static parseCustomPluginArn(
+		arn: string,
+	): KafkaconnectCustomPluginArnComponents {
 		const match = CustomPluginArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custom plugin ARN: ${arn}`);
@@ -259,18 +339,9 @@ export class KafkaconnectResources {
 	/**
 	 * Builds an ARN for the worker configuration resource.
 	 */
-	static workerConfiguration(props: {
-		/** The WorkerConfigurationName component of the ARN. */
-		readonly workerConfigurationName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workerConfiguration(
+		props: KafkaconnectWorkerConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:kafkaconnect:${props.region ?? "*"}:${props.account ?? "*"}:worker-configuration/${props.workerConfigurationName}/${props.uuid}`;
 	}
 
@@ -285,13 +356,9 @@ export class KafkaconnectResources {
 	 * Parses a worker configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkerConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workerConfigurationName: string;
-		uuid: string;
-	} {
+	static parseWorkerConfigurationArn(
+		arn: string,
+	): KafkaconnectWorkerConfigurationArnComponents {
 		const match = WorkerConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid worker configuration ARN: ${arn}`);
@@ -311,72 +378,72 @@ export class KafkaconnectResources {
  */
 export class KafkaconnectOperations {
 	/** IAM actions required for the CreateConnector API call. */
-	static readonly CREATE_CONNECTOR: string[] = [
+	static readonly CreateConnector: string[] = [
 		"kafkaconnect:CreateConnector",
 		"iam:PassRole",
 		"kafkaconnect:TagResource",
 	];
 	/** IAM actions required for the CreateCustomPlugin API call. */
-	static readonly CREATE_CUSTOM_PLUGIN: string[] = [
+	static readonly CreateCustomPlugin: string[] = [
 		"kafkaconnect:CreateCustomPlugin",
 		"kafkaconnect:TagResource",
 	];
 	/** IAM actions required for the CreateWorkerConfiguration API call. */
-	static readonly CREATE_WORKER_CONFIGURATION: string[] = [
+	static readonly CreateWorkerConfiguration: string[] = [
 		"kafkaconnect:CreateWorkerConfiguration",
 		"kafkaconnect:TagResource",
 	];
 	/** IAM actions required for the DeleteConnector API call. */
-	static readonly DELETE_CONNECTOR: string[] = ["kafkaconnect:DeleteConnector"];
+	static readonly DeleteConnector: string[] = ["kafkaconnect:DeleteConnector"];
 	/** IAM actions required for the DeleteCustomPlugin API call. */
-	static readonly DELETE_CUSTOM_PLUGIN: string[] = [
+	static readonly DeleteCustomPlugin: string[] = [
 		"kafkaconnect:DeleteCustomPlugin",
 	];
 	/** IAM actions required for the DeleteWorkerConfiguration API call. */
-	static readonly DELETE_WORKER_CONFIGURATION: string[] = [
+	static readonly DeleteWorkerConfiguration: string[] = [
 		"kafkaconnect:DeleteWorkerConfiguration",
 	];
 	/** IAM actions required for the DescribeConnector API call. */
-	static readonly DESCRIBE_CONNECTOR: string[] = [
+	static readonly DescribeConnector: string[] = [
 		"kafkaconnect:DescribeConnector",
 	];
 	/** IAM actions required for the DescribeConnectorOperation API call. */
-	static readonly DESCRIBE_CONNECTOR_OPERATION: string[] = [
+	static readonly DescribeConnectorOperation: string[] = [
 		"kafkaconnect:DescribeConnector",
 		"kafkaconnect:DescribeConnectorOperation",
 	];
 	/** IAM actions required for the DescribeCustomPlugin API call. */
-	static readonly DESCRIBE_CUSTOM_PLUGIN: string[] = [
+	static readonly DescribeCustomPlugin: string[] = [
 		"kafkaconnect:DescribeCustomPlugin",
 	];
 	/** IAM actions required for the DescribeWorkerConfiguration API call. */
-	static readonly DESCRIBE_WORKER_CONFIGURATION: string[] = [
+	static readonly DescribeWorkerConfiguration: string[] = [
 		"kafkaconnect:DescribeWorkerConfiguration",
 	];
 	/** IAM actions required for the ListConnectorOperations API call. */
-	static readonly LIST_CONNECTOR_OPERATIONS: string[] = [
+	static readonly ListConnectorOperations: string[] = [
 		"kafkaconnect:ListConnectorOperations",
 	];
 	/** IAM actions required for the ListConnectors API call. */
-	static readonly LIST_CONNECTORS: string[] = ["kafkaconnect:ListConnectors"];
+	static readonly ListConnectors: string[] = ["kafkaconnect:ListConnectors"];
 	/** IAM actions required for the ListCustomPlugins API call. */
-	static readonly LIST_CUSTOM_PLUGINS: string[] = [
+	static readonly ListCustomPlugins: string[] = [
 		"kafkaconnect:ListCustomPlugins",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"kafkaconnect:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWorkerConfigurations API call. */
-	static readonly LIST_WORKER_CONFIGURATIONS: string[] = [
+	static readonly ListWorkerConfigurations: string[] = [
 		"kafkaconnect:ListWorkerConfigurations",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kafkaconnect:TagResource"];
+	static readonly TagResource: string[] = ["kafkaconnect:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kafkaconnect:UntagResource"];
+	static readonly UntagResource: string[] = ["kafkaconnect:UntagResource"];
 	/** IAM actions required for the UpdateConnector API call. */
-	static readonly UPDATE_CONNECTOR: string[] = ["kafkaconnect:UpdateConnector"];
+	static readonly UpdateConnector: string[] = ["kafkaconnect:UpdateConnector"];
 }
 
 /**
@@ -384,19 +451,19 @@ export class KafkaconnectOperations {
  */
 export class KafkaconnectConditions {
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

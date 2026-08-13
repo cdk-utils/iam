@@ -13,115 +13,142 @@ export class DaxActions {
 	static readonly SERVICE_PREFIX = "dax";
 
 	/** [Read] dax:BatchGetItem */
-	static readonly BATCH_GET_ITEM = "dax:BatchGetItem";
+	static readonly BatchGetItem = "dax:BatchGetItem";
 	/** [Write] dax:BatchWriteItem */
-	static readonly BATCH_WRITE_ITEM = "dax:BatchWriteItem";
+	static readonly BatchWriteItem = "dax:BatchWriteItem";
 	/** [Read] dax:ConditionCheckItem */
-	static readonly CONDITION_CHECK_ITEM = "dax:ConditionCheckItem";
+	static readonly ConditionCheckItem = "dax:ConditionCheckItem";
 	/** [Write] dax:CreateCluster */
-	static readonly CREATE_CLUSTER = "dax:CreateCluster";
+	static readonly CreateCluster = "dax:CreateCluster";
 	/** [Write] dax:CreateParameterGroup */
-	static readonly CREATE_PARAMETER_GROUP = "dax:CreateParameterGroup";
+	static readonly CreateParameterGroup = "dax:CreateParameterGroup";
 	/** [Write] dax:CreateSubnetGroup */
-	static readonly CREATE_SUBNET_GROUP = "dax:CreateSubnetGroup";
+	static readonly CreateSubnetGroup = "dax:CreateSubnetGroup";
 	/** [Write] dax:DecreaseReplicationFactor */
-	static readonly DECREASE_REPLICATION_FACTOR = "dax:DecreaseReplicationFactor";
+	static readonly DecreaseReplicationFactor = "dax:DecreaseReplicationFactor";
 	/** [Write] dax:DeleteCluster */
-	static readonly DELETE_CLUSTER = "dax:DeleteCluster";
+	static readonly DeleteCluster = "dax:DeleteCluster";
 	/** [Write] dax:DeleteItem */
-	static readonly DELETE_ITEM = "dax:DeleteItem";
+	static readonly DeleteItem = "dax:DeleteItem";
 	/** [Write] dax:DeleteParameterGroup */
-	static readonly DELETE_PARAMETER_GROUP = "dax:DeleteParameterGroup";
+	static readonly DeleteParameterGroup = "dax:DeleteParameterGroup";
 	/** [Write] dax:DeleteSubnetGroup */
-	static readonly DELETE_SUBNET_GROUP = "dax:DeleteSubnetGroup";
+	static readonly DeleteSubnetGroup = "dax:DeleteSubnetGroup";
 	/** [List] dax:DescribeClusters */
-	static readonly DESCRIBE_CLUSTERS = "dax:DescribeClusters";
+	static readonly DescribeClusters = "dax:DescribeClusters";
 	/** [List] dax:DescribeDefaultParameters */
-	static readonly DESCRIBE_DEFAULT_PARAMETERS = "dax:DescribeDefaultParameters";
+	static readonly DescribeDefaultParameters = "dax:DescribeDefaultParameters";
 	/** [List] dax:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "dax:DescribeEvents";
+	static readonly DescribeEvents = "dax:DescribeEvents";
 	/** [List] dax:DescribeParameterGroups */
-	static readonly DESCRIBE_PARAMETER_GROUPS = "dax:DescribeParameterGroups";
+	static readonly DescribeParameterGroups = "dax:DescribeParameterGroups";
 	/** [Read] dax:DescribeParameters */
-	static readonly DESCRIBE_PARAMETERS = "dax:DescribeParameters";
+	static readonly DescribeParameters = "dax:DescribeParameters";
 	/** [List] dax:DescribeSubnetGroups */
-	static readonly DESCRIBE_SUBNET_GROUPS = "dax:DescribeSubnetGroups";
+	static readonly DescribeSubnetGroups = "dax:DescribeSubnetGroups";
 	/** [Read] dax:GetItem */
-	static readonly GET_ITEM = "dax:GetItem";
+	static readonly actionGetItem = "dax:GetItem";
 	/** [Write] dax:IncreaseReplicationFactor */
-	static readonly INCREASE_REPLICATION_FACTOR = "dax:IncreaseReplicationFactor";
+	static readonly IncreaseReplicationFactor = "dax:IncreaseReplicationFactor";
 	/** [Read] dax:ListTags */
-	static readonly LIST_TAGS = "dax:ListTags";
+	static readonly ListTags = "dax:ListTags";
 	/** [Write] dax:PutItem */
-	static readonly PUT_ITEM = "dax:PutItem";
+	static readonly PutItem = "dax:PutItem";
 	/** [Read] dax:Query */
-	static readonly QUERY = "dax:Query";
+	static readonly Query = "dax:Query";
 	/** [Write] dax:RebootNode */
-	static readonly REBOOT_NODE = "dax:RebootNode";
+	static readonly RebootNode = "dax:RebootNode";
 	/** [Read] dax:Scan */
-	static readonly SCAN = "dax:Scan";
+	static readonly Scan = "dax:Scan";
 	/** [Tagging] dax:TagResource */
-	static readonly TAG_RESOURCE = "dax:TagResource";
+	static readonly TagResource = "dax:TagResource";
 	/** [Tagging] dax:UntagResource */
-	static readonly UNTAG_RESOURCE = "dax:UntagResource";
+	static readonly UntagResource = "dax:UntagResource";
 	/** [Write] dax:UpdateCluster */
-	static readonly UPDATE_CLUSTER = "dax:UpdateCluster";
+	static readonly UpdateCluster = "dax:UpdateCluster";
 	/** [Write] dax:UpdateItem */
-	static readonly UPDATE_ITEM = "dax:UpdateItem";
+	static readonly UpdateItem = "dax:UpdateItem";
 	/** [Write] dax:UpdateParameterGroup */
-	static readonly UPDATE_PARAMETER_GROUP = "dax:UpdateParameterGroup";
+	static readonly UpdateParameterGroup = "dax:UpdateParameterGroup";
 	/** [Write] dax:UpdateSubnetGroup */
-	static readonly UPDATE_SUBNET_GROUP = "dax:UpdateSubnetGroup";
+	static readonly UpdateSubnetGroup = "dax:UpdateSubnetGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DaxActions.BATCH_GET_ITEM,
-		DaxActions.CONDITION_CHECK_ITEM,
-		DaxActions.DESCRIBE_PARAMETERS,
-		DaxActions.GET_ITEM,
-		DaxActions.LIST_TAGS,
-		DaxActions.QUERY,
-		DaxActions.SCAN,
+	static readonly AllReadActions: string[] = [
+		DaxActions.BatchGetItem,
+		DaxActions.ConditionCheckItem,
+		DaxActions.DescribeParameters,
+		DaxActions.actionGetItem,
+		DaxActions.ListTags,
+		DaxActions.Query,
+		DaxActions.Scan,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DaxActions.BATCH_WRITE_ITEM,
-		DaxActions.CREATE_CLUSTER,
-		DaxActions.CREATE_PARAMETER_GROUP,
-		DaxActions.CREATE_SUBNET_GROUP,
-		DaxActions.DECREASE_REPLICATION_FACTOR,
-		DaxActions.DELETE_CLUSTER,
-		DaxActions.DELETE_ITEM,
-		DaxActions.DELETE_PARAMETER_GROUP,
-		DaxActions.DELETE_SUBNET_GROUP,
-		DaxActions.INCREASE_REPLICATION_FACTOR,
-		DaxActions.PUT_ITEM,
-		DaxActions.REBOOT_NODE,
-		DaxActions.UPDATE_CLUSTER,
-		DaxActions.UPDATE_ITEM,
-		DaxActions.UPDATE_PARAMETER_GROUP,
-		DaxActions.UPDATE_SUBNET_GROUP,
+	static readonly AllWriteActions: string[] = [
+		DaxActions.BatchWriteItem,
+		DaxActions.CreateCluster,
+		DaxActions.CreateParameterGroup,
+		DaxActions.CreateSubnetGroup,
+		DaxActions.DecreaseReplicationFactor,
+		DaxActions.DeleteCluster,
+		DaxActions.DeleteItem,
+		DaxActions.DeleteParameterGroup,
+		DaxActions.DeleteSubnetGroup,
+		DaxActions.IncreaseReplicationFactor,
+		DaxActions.PutItem,
+		DaxActions.RebootNode,
+		DaxActions.UpdateCluster,
+		DaxActions.UpdateItem,
+		DaxActions.UpdateParameterGroup,
+		DaxActions.UpdateSubnetGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DaxActions.DESCRIBE_CLUSTERS,
-		DaxActions.DESCRIBE_DEFAULT_PARAMETERS,
-		DaxActions.DESCRIBE_EVENTS,
-		DaxActions.DESCRIBE_PARAMETER_GROUPS,
-		DaxActions.DESCRIBE_SUBNET_GROUPS,
+	static readonly AllListActions: string[] = [
+		DaxActions.DescribeClusters,
+		DaxActions.DescribeDefaultParameters,
+		DaxActions.DescribeEvents,
+		DaxActions.DescribeParameterGroups,
+		DaxActions.DescribeSubnetGroups,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DaxActions.TAG_RESOURCE,
-		DaxActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DaxActions.TagResource,
+		DaxActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dax:(?<region>[^:]*):(?<account>[^:]*):cache/(?<clusterName>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface DaxApplicationArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface DaxApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):dax:(?<region>[^:]*):(?<account>[^:]*):cache\/(?<clusterName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for dax resources.
@@ -130,16 +157,7 @@ export class DaxResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: DaxApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dax:${props.region ?? "*"}:${props.account ?? "*"}:cache/${props.clusterName}`;
 	}
 
@@ -154,12 +172,7 @@ export class DaxResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseApplicationArn(arn: string): DaxApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -178,67 +191,59 @@ export class DaxResources {
  */
 export class DaxOperations {
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"dax:CreateCluster",
 		"iam:PassRole",
 		"dax:TagResource",
 	];
 	/** IAM actions required for the CreateParameterGroup API call. */
-	static readonly CREATE_PARAMETER_GROUP: string[] = [
-		"dax:CreateParameterGroup",
-	];
+	static readonly CreateParameterGroup: string[] = ["dax:CreateParameterGroup"];
 	/** IAM actions required for the CreateSubnetGroup API call. */
-	static readonly CREATE_SUBNET_GROUP: string[] = ["dax:CreateSubnetGroup"];
+	static readonly CreateSubnetGroup: string[] = ["dax:CreateSubnetGroup"];
 	/** IAM actions required for the DecreaseReplicationFactor API call. */
-	static readonly DECREASE_REPLICATION_FACTOR: string[] = [
+	static readonly DecreaseReplicationFactor: string[] = [
 		"dax:DecreaseReplicationFactor",
 	];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["dax:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["dax:DeleteCluster"];
 	/** IAM actions required for the DeleteParameterGroup API call. */
-	static readonly DELETE_PARAMETER_GROUP: string[] = [
-		"dax:DeleteParameterGroup",
-	];
+	static readonly DeleteParameterGroup: string[] = ["dax:DeleteParameterGroup"];
 	/** IAM actions required for the DeleteSubnetGroup API call. */
-	static readonly DELETE_SUBNET_GROUP: string[] = ["dax:DeleteSubnetGroup"];
+	static readonly DeleteSubnetGroup: string[] = ["dax:DeleteSubnetGroup"];
 	/** IAM actions required for the DescribeClusters API call. */
-	static readonly DESCRIBE_CLUSTERS: string[] = ["dax:DescribeClusters"];
+	static readonly DescribeClusters: string[] = ["dax:DescribeClusters"];
 	/** IAM actions required for the DescribeDefaultParameters API call. */
-	static readonly DESCRIBE_DEFAULT_PARAMETERS: string[] = [
+	static readonly DescribeDefaultParameters: string[] = [
 		"dax:DescribeDefaultParameters",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["dax:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["dax:DescribeEvents"];
 	/** IAM actions required for the DescribeParameterGroups API call. */
-	static readonly DESCRIBE_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeParameterGroups: string[] = [
 		"dax:DescribeParameterGroups",
 	];
 	/** IAM actions required for the DescribeParameters API call. */
-	static readonly DESCRIBE_PARAMETERS: string[] = ["dax:DescribeParameters"];
+	static readonly DescribeParameters: string[] = ["dax:DescribeParameters"];
 	/** IAM actions required for the DescribeSubnetGroups API call. */
-	static readonly DESCRIBE_SUBNET_GROUPS: string[] = [
-		"dax:DescribeSubnetGroups",
-	];
+	static readonly DescribeSubnetGroups: string[] = ["dax:DescribeSubnetGroups"];
 	/** IAM actions required for the IncreaseReplicationFactor API call. */
-	static readonly INCREASE_REPLICATION_FACTOR: string[] = [
+	static readonly IncreaseReplicationFactor: string[] = [
 		"dax:IncreaseReplicationFactor",
 	];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["dax:ListTags"];
+	static readonly ListTags: string[] = ["dax:ListTags"];
 	/** IAM actions required for the RebootNode API call. */
-	static readonly REBOOT_NODE: string[] = ["dax:RebootNode"];
+	static readonly RebootNode: string[] = ["dax:RebootNode"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["dax:TagResource"];
+	static readonly TagResource: string[] = ["dax:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["dax:UntagResource"];
+	static readonly UntagResource: string[] = ["dax:UntagResource"];
 	/** IAM actions required for the UpdateCluster API call. */
-	static readonly UPDATE_CLUSTER: string[] = ["dax:UpdateCluster"];
+	static readonly UpdateCluster: string[] = ["dax:UpdateCluster"];
 	/** IAM actions required for the UpdateParameterGroup API call. */
-	static readonly UPDATE_PARAMETER_GROUP: string[] = [
-		"dax:UpdateParameterGroup",
-	];
+	static readonly UpdateParameterGroup: string[] = ["dax:UpdateParameterGroup"];
 	/** IAM actions required for the UpdateSubnetGroup API call. */
-	static readonly UPDATE_SUBNET_GROUP: string[] = ["dax:UpdateSubnetGroup"];
+	static readonly UpdateSubnetGroup: string[] = ["dax:UpdateSubnetGroup"];
 }
 
 /**
@@ -246,19 +251,17 @@ export class DaxOperations {
  */
 export class DaxConditions {
 	/** Condition keys applicable to the DeleteItem action. */
-	static readonly DELETE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly DeleteItemConditionKeys: string[] = [
 		"dax:EnclosingOperation",
 	];
 	/** Condition keys applicable to the GetItem action. */
-	static readonly GET_ITEM_CONDITION_KEYS: string[] = [
+	static readonly actionGetItemConditionKeys: string[] = [
 		"dax:EnclosingOperation",
 	];
 	/** Condition keys applicable to the PutItem action. */
-	static readonly PUT_ITEM_CONDITION_KEYS: string[] = [
-		"dax:EnclosingOperation",
-	];
+	static readonly PutItemConditionKeys: string[] = ["dax:EnclosingOperation"];
 	/** Condition keys applicable to the UpdateItem action. */
-	static readonly UPDATE_ITEM_CONDITION_KEYS: string[] = [
+	static readonly UpdateItemConditionKeys: string[] = [
 		"dax:EnclosingOperation",
 	];
 

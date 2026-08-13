@@ -13,77 +13,143 @@ export class PiActions {
 	static readonly SERVICE_PREFIX = "pi";
 
 	/** [Write] pi:CreatePerformanceAnalysisReport */
-	static readonly CREATE_PERFORMANCE_ANALYSIS_REPORT =
+	static readonly CreatePerformanceAnalysisReport =
 		"pi:CreatePerformanceAnalysisReport";
 	/** [Write] pi:DeletePerformanceAnalysisReport */
-	static readonly DELETE_PERFORMANCE_ANALYSIS_REPORT =
+	static readonly DeletePerformanceAnalysisReport =
 		"pi:DeletePerformanceAnalysisReport";
 	/** [Read] pi:DescribeDimensionKeys */
-	static readonly DESCRIBE_DIMENSION_KEYS = "pi:DescribeDimensionKeys";
+	static readonly DescribeDimensionKeys = "pi:DescribeDimensionKeys";
 	/** [Read] pi:GetDimensionKeyDetails */
-	static readonly GET_DIMENSION_KEY_DETAILS = "pi:GetDimensionKeyDetails";
+	static readonly actionGetDimensionKeyDetails = "pi:GetDimensionKeyDetails";
 	/** [Read] pi:GetPerformanceAnalysisReport */
-	static readonly GET_PERFORMANCE_ANALYSIS_REPORT =
+	static readonly actionGetPerformanceAnalysisReport =
 		"pi:GetPerformanceAnalysisReport";
 	/** [Read] pi:GetResourceMetadata */
-	static readonly GET_RESOURCE_METADATA = "pi:GetResourceMetadata";
+	static readonly actionGetResourceMetadata = "pi:GetResourceMetadata";
 	/** [Read] pi:GetResourceMetrics */
-	static readonly GET_RESOURCE_METRICS = "pi:GetResourceMetrics";
+	static readonly actionGetResourceMetrics = "pi:GetResourceMetrics";
 	/** [Read] pi:ListAvailableResourceDimensions */
-	static readonly LIST_AVAILABLE_RESOURCE_DIMENSIONS =
+	static readonly ListAvailableResourceDimensions =
 		"pi:ListAvailableResourceDimensions";
 	/** [Read] pi:ListAvailableResourceMetrics */
-	static readonly LIST_AVAILABLE_RESOURCE_METRICS =
+	static readonly ListAvailableResourceMetrics =
 		"pi:ListAvailableResourceMetrics";
 	/** [List] pi:ListPerformanceAnalysisReportRecommendations */
-	static readonly LIST_PERFORMANCE_ANALYSIS_REPORT_RECOMMENDATIONS =
+	static readonly ListPerformanceAnalysisReportRecommendations =
 		"pi:ListPerformanceAnalysisReportRecommendations";
 	/** [List] pi:ListPerformanceAnalysisReports */
-	static readonly LIST_PERFORMANCE_ANALYSIS_REPORTS =
+	static readonly ListPerformanceAnalysisReports =
 		"pi:ListPerformanceAnalysisReports";
 	/** [List] pi:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "pi:ListTagsForResource";
+	static readonly ListTagsForResource = "pi:ListTagsForResource";
 	/** [Tagging] pi:TagResource */
-	static readonly TAG_RESOURCE = "pi:TagResource";
+	static readonly TagResource = "pi:TagResource";
 	/** [Tagging] pi:UntagResource */
-	static readonly UNTAG_RESOURCE = "pi:UntagResource";
+	static readonly UntagResource = "pi:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PiActions.DESCRIBE_DIMENSION_KEYS,
-		PiActions.GET_DIMENSION_KEY_DETAILS,
-		PiActions.GET_PERFORMANCE_ANALYSIS_REPORT,
-		PiActions.GET_RESOURCE_METADATA,
-		PiActions.GET_RESOURCE_METRICS,
-		PiActions.LIST_AVAILABLE_RESOURCE_DIMENSIONS,
-		PiActions.LIST_AVAILABLE_RESOURCE_METRICS,
+	static readonly AllReadActions: string[] = [
+		PiActions.DescribeDimensionKeys,
+		PiActions.actionGetDimensionKeyDetails,
+		PiActions.actionGetPerformanceAnalysisReport,
+		PiActions.actionGetResourceMetadata,
+		PiActions.actionGetResourceMetrics,
+		PiActions.ListAvailableResourceDimensions,
+		PiActions.ListAvailableResourceMetrics,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PiActions.CREATE_PERFORMANCE_ANALYSIS_REPORT,
-		PiActions.DELETE_PERFORMANCE_ANALYSIS_REPORT,
+	static readonly AllWriteActions: string[] = [
+		PiActions.CreatePerformanceAnalysisReport,
+		PiActions.DeletePerformanceAnalysisReport,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PiActions.LIST_PERFORMANCE_ANALYSIS_REPORT_RECOMMENDATIONS,
-		PiActions.LIST_PERFORMANCE_ANALYSIS_REPORTS,
-		PiActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		PiActions.ListPerformanceAnalysisReportRecommendations,
+		PiActions.ListPerformanceAnalysisReports,
+		PiActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PiActions.TAG_RESOURCE,
-		PiActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PiActions.TagResource,
+		PiActions.UntagResource,
 	];
 }
 
-const MetricResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):pi:(?<region>[^:]*):(?<account>[^:]*):metrics/(?<serviceType>[^:/?]+)/(?<identifier>[^:/?]+)$",
-);
-const PerfReportsResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):pi:(?<region>[^:]*):(?<account>[^:]*):perf-reports/(?<serviceType>[^:/?]+)/(?<identifier>[^:/?]+)/(?<reportId>[^:/?]+)$",
-);
+/**
+ * Properties for building a metric-resource ARN.
+ */
+export interface PiMetricResourceArnProps {
+	/** The ServiceType component of the ARN. */
+	readonly serviceType: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a metric-resource ARN.
+ */
+export interface PiMetricResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceType component. */
+	readonly serviceType: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a perf-reports-resource ARN.
+ */
+export interface PiPerfReportsResourceArnProps {
+	/** The ServiceType component of the ARN. */
+	readonly serviceType: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** The ReportId component of the ARN. */
+	readonly reportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a perf-reports-resource ARN.
+ */
+export interface PiPerfReportsResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceType component. */
+	readonly serviceType: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+	/** The ReportId component. */
+	readonly reportId: string;
+}
+
+const MetricResourceArnRegex =
+	/^arn:(?<partition>[^:]+):pi:(?<region>[^:]*):(?<account>[^:]*):metrics\/(?<serviceType>[^:/?]+)\/(?<identifier>[^:/?]+)$/;
+const PerfReportsResourceArnRegex =
+	/^arn:(?<partition>[^:]+):pi:(?<region>[^:]*):(?<account>[^:]*):perf-reports\/(?<serviceType>[^:/?]+)\/(?<identifier>[^:/?]+)\/(?<reportId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for pi resources.
@@ -92,18 +158,7 @@ export class PiResources {
 	/**
 	 * Builds an ARN for the metric-resource resource.
 	 */
-	static metricResource(props: {
-		/** The ServiceType component of the ARN. */
-		readonly serviceType: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static metricResource(props: PiMetricResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:pi:${props.region ?? "*"}:${props.account ?? "*"}:metrics/${props.serviceType}/${props.identifier}`;
 	}
 
@@ -118,13 +173,7 @@ export class PiResources {
 	 * Parses a metric-resource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMetricResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceType: string;
-		identifier: string;
-	} {
+	static parseMetricResourceArn(arn: string): PiMetricResourceArnComponents {
 		const match = MetricResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid metric-resource ARN: ${arn}`);
@@ -141,20 +190,7 @@ export class PiResources {
 	/**
 	 * Builds an ARN for the perf-reports-resource resource.
 	 */
-	static perfReportsResource(props: {
-		/** The ServiceType component of the ARN. */
-		readonly serviceType: string;
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** The ReportId component of the ARN. */
-		readonly reportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static perfReportsResource(props: PiPerfReportsResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:pi:${props.region ?? "*"}:${props.account ?? "*"}:perf-reports/${props.serviceType}/${props.identifier}/${props.reportId}`;
 	}
 
@@ -169,14 +205,9 @@ export class PiResources {
 	 * Parses a perf-reports-resource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePerfReportsResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceType: string;
-		identifier: string;
-		reportId: string;
-	} {
+	static parsePerfReportsResourceArn(
+		arn: string,
+	): PiPerfReportsResourceArnComponents {
 		const match = PerfReportsResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid perf-reports-resource ARN: ${arn}`);
@@ -197,56 +228,56 @@ export class PiResources {
  */
 export class PiOperations {
 	/** IAM actions required for the CreatePerformanceAnalysisReport API call. */
-	static readonly CREATE_PERFORMANCE_ANALYSIS_REPORT: string[] = [
+	static readonly CreatePerformanceAnalysisReport: string[] = [
 		"pi:CreatePerformanceAnalysisReport",
 		"pi:TagResource",
 	];
 	/** IAM actions required for the DeletePerformanceAnalysisReport API call. */
-	static readonly DELETE_PERFORMANCE_ANALYSIS_REPORT: string[] = [
+	static readonly DeletePerformanceAnalysisReport: string[] = [
 		"pi:DeletePerformanceAnalysisReport",
 	];
 	/** IAM actions required for the DescribeDimensionKeys API call. */
-	static readonly DESCRIBE_DIMENSION_KEYS: string[] = [
+	static readonly DescribeDimensionKeys: string[] = [
 		"pi:DescribeDimensionKeys",
 	];
 	/** IAM actions required for the GetDimensionKeyDetails API call. */
-	static readonly GET_DIMENSION_KEY_DETAILS: string[] = [
+	static readonly opGetDimensionKeyDetails: string[] = [
 		"pi:GetDimensionKeyDetails",
 	];
 	/** IAM actions required for the GetPerformanceAnalysisReport API call. */
-	static readonly GET_PERFORMANCE_ANALYSIS_REPORT: string[] = [
+	static readonly opGetPerformanceAnalysisReport: string[] = [
 		"pi:GetPerformanceAnalysisReport",
 	];
 	/** IAM actions required for the GetResourceMetadata API call. */
-	static readonly GET_RESOURCE_METADATA: string[] = ["pi:GetResourceMetadata"];
+	static readonly opGetResourceMetadata: string[] = ["pi:GetResourceMetadata"];
 	/** IAM actions required for the GetResourceMetrics API call. */
-	static readonly GET_RESOURCE_METRICS: string[] = ["pi:GetResourceMetrics"];
+	static readonly opGetResourceMetrics: string[] = ["pi:GetResourceMetrics"];
 	/** IAM actions required for the ListAvailableResourceDimensions API call. */
-	static readonly LIST_AVAILABLE_RESOURCE_DIMENSIONS: string[] = [
+	static readonly ListAvailableResourceDimensions: string[] = [
 		"pi:DescribeDimensionKeys",
 		"pi:GetDimensionKeyDetails",
 		"pi:GetResourceMetrics",
 		"pi:ListAvailableResourceDimensions",
 	];
 	/** IAM actions required for the ListAvailableResourceMetrics API call. */
-	static readonly LIST_AVAILABLE_RESOURCE_METRICS: string[] = [
+	static readonly ListAvailableResourceMetrics: string[] = [
 		"pi:ListAvailableResourceMetrics",
 	];
 	/** IAM actions required for the ListPerformanceAnalysisReportRecommendations API call. */
-	static readonly LIST_PERFORMANCE_ANALYSIS_REPORT_RECOMMENDATIONS: string[] = [
+	static readonly ListPerformanceAnalysisReportRecommendations: string[] = [
 		"pi:ListPerformanceAnalysisReportRecommendations",
 	];
 	/** IAM actions required for the ListPerformanceAnalysisReports API call. */
-	static readonly LIST_PERFORMANCE_ANALYSIS_REPORTS: string[] = [
+	static readonly ListPerformanceAnalysisReports: string[] = [
 		"pi:ListPerformanceAnalysisReports",
 		"pi:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = ["pi:ListTagsForResource"];
+	static readonly ListTagsForResource: string[] = ["pi:ListTagsForResource"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["pi:TagResource"];
+	static readonly TagResource: string[] = ["pi:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["pi:UntagResource"];
+	static readonly UntagResource: string[] = ["pi:UntagResource"];
 }
 
 /**
@@ -254,34 +285,36 @@ export class PiOperations {
  */
 export class PiConditions {
 	/** Condition keys applicable to the CreatePerformanceAnalysisReport action. */
-	static readonly CREATE_PERFORMANCE_ANALYSIS_REPORT_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreatePerformanceAnalysisReportConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DescribeDimensionKeys action. */
-	static readonly DESCRIBE_DIMENSION_KEYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeDimensionKeysConditionKeys: string[] = [
 		"pi:Dimensions",
 	];
 	/** Condition keys applicable to the GetDimensionKeyDetails action. */
-	static readonly GET_DIMENSION_KEY_DETAILS_CONDITION_KEYS: string[] = [
+	static readonly actionGetDimensionKeyDetailsConditionKeys: string[] = [
 		"pi:Dimensions",
 	];
 	/** Condition keys applicable to the GetResourceMetrics action. */
-	static readonly GET_RESOURCE_METRICS_CONDITION_KEYS: string[] = [
+	static readonly actionGetResourceMetricsConditionKeys: string[] = [
 		"pi:Dimensions",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: pi:Dimensions (ArrayOfString) */
 	static readonly DIMENSIONS = "pi:Dimensions";
 

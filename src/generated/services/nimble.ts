@@ -13,207 +13,424 @@ export class NimbleActions {
 	static readonly SERVICE_PREFIX = "nimble";
 
 	/** [Write] nimble:AcceptEulas */
-	static readonly ACCEPT_EULAS = "nimble:AcceptEulas";
+	static readonly AcceptEulas = "nimble:AcceptEulas";
 	/** [Write] nimble:CreateLaunchProfile */
-	static readonly CREATE_LAUNCH_PROFILE = "nimble:CreateLaunchProfile";
+	static readonly CreateLaunchProfile = "nimble:CreateLaunchProfile";
 	/** [Write] nimble:CreateStreamingImage */
-	static readonly CREATE_STREAMING_IMAGE = "nimble:CreateStreamingImage";
+	static readonly CreateStreamingImage = "nimble:CreateStreamingImage";
 	/** [Write] nimble:CreateStreamingSession */
-	static readonly CREATE_STREAMING_SESSION = "nimble:CreateStreamingSession";
+	static readonly CreateStreamingSession = "nimble:CreateStreamingSession";
 	/** [Write] nimble:CreateStreamingSessionStream */
-	static readonly CREATE_STREAMING_SESSION_STREAM =
+	static readonly CreateStreamingSessionStream =
 		"nimble:CreateStreamingSessionStream";
 	/** [Write] nimble:CreateStudio */
-	static readonly CREATE_STUDIO = "nimble:CreateStudio";
+	static readonly CreateStudio = "nimble:CreateStudio";
 	/** [Write] nimble:CreateStudioComponent */
-	static readonly CREATE_STUDIO_COMPONENT = "nimble:CreateStudioComponent";
+	static readonly CreateStudioComponent = "nimble:CreateStudioComponent";
 	/** [Write] nimble:DeleteLaunchProfile */
-	static readonly DELETE_LAUNCH_PROFILE = "nimble:DeleteLaunchProfile";
+	static readonly DeleteLaunchProfile = "nimble:DeleteLaunchProfile";
 	/** [Write] nimble:DeleteLaunchProfileMember */
-	static readonly DELETE_LAUNCH_PROFILE_MEMBER =
+	static readonly DeleteLaunchProfileMember =
 		"nimble:DeleteLaunchProfileMember";
 	/** [Write] nimble:DeleteStreamingImage */
-	static readonly DELETE_STREAMING_IMAGE = "nimble:DeleteStreamingImage";
+	static readonly DeleteStreamingImage = "nimble:DeleteStreamingImage";
 	/** [Write] nimble:DeleteStreamingSession */
-	static readonly DELETE_STREAMING_SESSION = "nimble:DeleteStreamingSession";
+	static readonly DeleteStreamingSession = "nimble:DeleteStreamingSession";
 	/** [Write] nimble:DeleteStudio */
-	static readonly DELETE_STUDIO = "nimble:DeleteStudio";
+	static readonly DeleteStudio = "nimble:DeleteStudio";
 	/** [Write] nimble:DeleteStudioComponent */
-	static readonly DELETE_STUDIO_COMPONENT = "nimble:DeleteStudioComponent";
+	static readonly DeleteStudioComponent = "nimble:DeleteStudioComponent";
 	/** [Write] nimble:DeleteStudioMember */
-	static readonly DELETE_STUDIO_MEMBER = "nimble:DeleteStudioMember";
+	static readonly DeleteStudioMember = "nimble:DeleteStudioMember";
 	/** [Read] nimble:GetEula */
-	static readonly GET_EULA = "nimble:GetEula";
+	static readonly actionGetEula = "nimble:GetEula";
 	/** [Read] nimble:GetFeatureMap */
-	static readonly GET_FEATURE_MAP = "nimble:GetFeatureMap";
+	static readonly actionGetFeatureMap = "nimble:GetFeatureMap";
 	/** [Read] nimble:GetLaunchProfile */
-	static readonly GET_LAUNCH_PROFILE = "nimble:GetLaunchProfile";
+	static readonly actionGetLaunchProfile = "nimble:GetLaunchProfile";
 	/** [Read] nimble:GetLaunchProfileDetails */
-	static readonly GET_LAUNCH_PROFILE_DETAILS = "nimble:GetLaunchProfileDetails";
+	static readonly actionGetLaunchProfileDetails =
+		"nimble:GetLaunchProfileDetails";
 	/** [Read] nimble:GetLaunchProfileInitialization */
-	static readonly GET_LAUNCH_PROFILE_INITIALIZATION =
+	static readonly actionGetLaunchProfileInitialization =
 		"nimble:GetLaunchProfileInitialization";
 	/** [Read] nimble:GetLaunchProfileMember */
-	static readonly GET_LAUNCH_PROFILE_MEMBER = "nimble:GetLaunchProfileMember";
+	static readonly actionGetLaunchProfileMember =
+		"nimble:GetLaunchProfileMember";
 	/** [Read] nimble:GetStreamingImage */
-	static readonly GET_STREAMING_IMAGE = "nimble:GetStreamingImage";
+	static readonly actionGetStreamingImage = "nimble:GetStreamingImage";
 	/** [Read] nimble:GetStreamingSession */
-	static readonly GET_STREAMING_SESSION = "nimble:GetStreamingSession";
+	static readonly actionGetStreamingSession = "nimble:GetStreamingSession";
 	/** [Read] nimble:GetStreamingSessionBackup */
-	static readonly GET_STREAMING_SESSION_BACKUP =
+	static readonly actionGetStreamingSessionBackup =
 		"nimble:GetStreamingSessionBackup";
 	/** [Read] nimble:GetStreamingSessionStream */
-	static readonly GET_STREAMING_SESSION_STREAM =
+	static readonly actionGetStreamingSessionStream =
 		"nimble:GetStreamingSessionStream";
 	/** [Read] nimble:GetStudio */
-	static readonly GET_STUDIO = "nimble:GetStudio";
+	static readonly actionGetStudio = "nimble:GetStudio";
 	/** [Read] nimble:GetStudioComponent */
-	static readonly GET_STUDIO_COMPONENT = "nimble:GetStudioComponent";
+	static readonly actionGetStudioComponent = "nimble:GetStudioComponent";
 	/** [Read] nimble:GetStudioMember */
-	static readonly GET_STUDIO_MEMBER = "nimble:GetStudioMember";
+	static readonly actionGetStudioMember = "nimble:GetStudioMember";
 	/** [Read] nimble:ListEulaAcceptances */
-	static readonly LIST_EULA_ACCEPTANCES = "nimble:ListEulaAcceptances";
+	static readonly ListEulaAcceptances = "nimble:ListEulaAcceptances";
 	/** [Read] nimble:ListEulas */
-	static readonly LIST_EULAS = "nimble:ListEulas";
+	static readonly ListEulas = "nimble:ListEulas";
 	/** [Read] nimble:ListLaunchProfileMembers */
-	static readonly LIST_LAUNCH_PROFILE_MEMBERS =
-		"nimble:ListLaunchProfileMembers";
+	static readonly ListLaunchProfileMembers = "nimble:ListLaunchProfileMembers";
 	/** [Read] nimble:ListLaunchProfiles */
-	static readonly LIST_LAUNCH_PROFILES = "nimble:ListLaunchProfiles";
+	static readonly ListLaunchProfiles = "nimble:ListLaunchProfiles";
 	/** [Read] nimble:ListStreamingImages */
-	static readonly LIST_STREAMING_IMAGES = "nimble:ListStreamingImages";
+	static readonly ListStreamingImages = "nimble:ListStreamingImages";
 	/** [Read] nimble:ListStreamingSessionBackups */
-	static readonly LIST_STREAMING_SESSION_BACKUPS =
+	static readonly ListStreamingSessionBackups =
 		"nimble:ListStreamingSessionBackups";
 	/** [Read] nimble:ListStreamingSessions */
-	static readonly LIST_STREAMING_SESSIONS = "nimble:ListStreamingSessions";
+	static readonly ListStreamingSessions = "nimble:ListStreamingSessions";
 	/** [Read] nimble:ListStudioComponents */
-	static readonly LIST_STUDIO_COMPONENTS = "nimble:ListStudioComponents";
+	static readonly ListStudioComponents = "nimble:ListStudioComponents";
 	/** [Read] nimble:ListStudioMembers */
-	static readonly LIST_STUDIO_MEMBERS = "nimble:ListStudioMembers";
+	static readonly ListStudioMembers = "nimble:ListStudioMembers";
 	/** [Read] nimble:ListStudios */
-	static readonly LIST_STUDIOS = "nimble:ListStudios";
+	static readonly ListStudios = "nimble:ListStudios";
 	/** [Read] nimble:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "nimble:ListTagsForResource";
+	static readonly ListTagsForResource = "nimble:ListTagsForResource";
 	/** [Write] nimble:PutLaunchProfileMembers */
-	static readonly PUT_LAUNCH_PROFILE_MEMBERS = "nimble:PutLaunchProfileMembers";
+	static readonly PutLaunchProfileMembers = "nimble:PutLaunchProfileMembers";
 	/** [Write] nimble:PutStudioLogEvents */
-	static readonly PUT_STUDIO_LOG_EVENTS = "nimble:PutStudioLogEvents";
+	static readonly PutStudioLogEvents = "nimble:PutStudioLogEvents";
 	/** [Write] nimble:PutStudioMembers */
-	static readonly PUT_STUDIO_MEMBERS = "nimble:PutStudioMembers";
+	static readonly PutStudioMembers = "nimble:PutStudioMembers";
 	/** [Write] nimble:StartStreamingSession */
-	static readonly START_STREAMING_SESSION = "nimble:StartStreamingSession";
+	static readonly StartStreamingSession = "nimble:StartStreamingSession";
 	/** [Write] nimble:StartStudioSSOConfigurationRepair */
-	static readonly START_STUDIO_SSO_CONFIGURATION_REPAIR =
+	static readonly StartStudioSSOConfigurationRepair =
 		"nimble:StartStudioSSOConfigurationRepair";
 	/** [Write] nimble:StopStreamingSession */
-	static readonly STOP_STREAMING_SESSION = "nimble:StopStreamingSession";
+	static readonly StopStreamingSession = "nimble:StopStreamingSession";
 	/** [Tagging] nimble:TagResource */
-	static readonly TAG_RESOURCE = "nimble:TagResource";
+	static readonly TagResource = "nimble:TagResource";
 	/** [Tagging] nimble:UntagResource */
-	static readonly UNTAG_RESOURCE = "nimble:UntagResource";
+	static readonly UntagResource = "nimble:UntagResource";
 	/** [Write] nimble:UpdateLaunchProfile */
-	static readonly UPDATE_LAUNCH_PROFILE = "nimble:UpdateLaunchProfile";
+	static readonly UpdateLaunchProfile = "nimble:UpdateLaunchProfile";
 	/** [Write] nimble:UpdateLaunchProfileMember */
-	static readonly UPDATE_LAUNCH_PROFILE_MEMBER =
+	static readonly UpdateLaunchProfileMember =
 		"nimble:UpdateLaunchProfileMember";
 	/** [Write] nimble:UpdateStreamingImage */
-	static readonly UPDATE_STREAMING_IMAGE = "nimble:UpdateStreamingImage";
+	static readonly UpdateStreamingImage = "nimble:UpdateStreamingImage";
 	/** [Write] nimble:UpdateStudio */
-	static readonly UPDATE_STUDIO = "nimble:UpdateStudio";
+	static readonly UpdateStudio = "nimble:UpdateStudio";
 	/** [Write] nimble:UpdateStudioComponent */
-	static readonly UPDATE_STUDIO_COMPONENT = "nimble:UpdateStudioComponent";
+	static readonly UpdateStudioComponent = "nimble:UpdateStudioComponent";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NimbleActions.GET_EULA,
-		NimbleActions.GET_FEATURE_MAP,
-		NimbleActions.GET_LAUNCH_PROFILE,
-		NimbleActions.GET_LAUNCH_PROFILE_DETAILS,
-		NimbleActions.GET_LAUNCH_PROFILE_INITIALIZATION,
-		NimbleActions.GET_LAUNCH_PROFILE_MEMBER,
-		NimbleActions.GET_STREAMING_IMAGE,
-		NimbleActions.GET_STREAMING_SESSION,
-		NimbleActions.GET_STREAMING_SESSION_BACKUP,
-		NimbleActions.GET_STREAMING_SESSION_STREAM,
-		NimbleActions.GET_STUDIO,
-		NimbleActions.GET_STUDIO_COMPONENT,
-		NimbleActions.GET_STUDIO_MEMBER,
-		NimbleActions.LIST_EULA_ACCEPTANCES,
-		NimbleActions.LIST_EULAS,
-		NimbleActions.LIST_LAUNCH_PROFILE_MEMBERS,
-		NimbleActions.LIST_LAUNCH_PROFILES,
-		NimbleActions.LIST_STREAMING_IMAGES,
-		NimbleActions.LIST_STREAMING_SESSION_BACKUPS,
-		NimbleActions.LIST_STREAMING_SESSIONS,
-		NimbleActions.LIST_STUDIO_COMPONENTS,
-		NimbleActions.LIST_STUDIO_MEMBERS,
-		NimbleActions.LIST_STUDIOS,
-		NimbleActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		NimbleActions.actionGetEula,
+		NimbleActions.actionGetFeatureMap,
+		NimbleActions.actionGetLaunchProfile,
+		NimbleActions.actionGetLaunchProfileDetails,
+		NimbleActions.actionGetLaunchProfileInitialization,
+		NimbleActions.actionGetLaunchProfileMember,
+		NimbleActions.actionGetStreamingImage,
+		NimbleActions.actionGetStreamingSession,
+		NimbleActions.actionGetStreamingSessionBackup,
+		NimbleActions.actionGetStreamingSessionStream,
+		NimbleActions.actionGetStudio,
+		NimbleActions.actionGetStudioComponent,
+		NimbleActions.actionGetStudioMember,
+		NimbleActions.ListEulaAcceptances,
+		NimbleActions.ListEulas,
+		NimbleActions.ListLaunchProfileMembers,
+		NimbleActions.ListLaunchProfiles,
+		NimbleActions.ListStreamingImages,
+		NimbleActions.ListStreamingSessionBackups,
+		NimbleActions.ListStreamingSessions,
+		NimbleActions.ListStudioComponents,
+		NimbleActions.ListStudioMembers,
+		NimbleActions.ListStudios,
+		NimbleActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NimbleActions.ACCEPT_EULAS,
-		NimbleActions.CREATE_LAUNCH_PROFILE,
-		NimbleActions.CREATE_STREAMING_IMAGE,
-		NimbleActions.CREATE_STREAMING_SESSION,
-		NimbleActions.CREATE_STREAMING_SESSION_STREAM,
-		NimbleActions.CREATE_STUDIO,
-		NimbleActions.CREATE_STUDIO_COMPONENT,
-		NimbleActions.DELETE_LAUNCH_PROFILE,
-		NimbleActions.DELETE_LAUNCH_PROFILE_MEMBER,
-		NimbleActions.DELETE_STREAMING_IMAGE,
-		NimbleActions.DELETE_STREAMING_SESSION,
-		NimbleActions.DELETE_STUDIO,
-		NimbleActions.DELETE_STUDIO_COMPONENT,
-		NimbleActions.DELETE_STUDIO_MEMBER,
-		NimbleActions.PUT_LAUNCH_PROFILE_MEMBERS,
-		NimbleActions.PUT_STUDIO_LOG_EVENTS,
-		NimbleActions.PUT_STUDIO_MEMBERS,
-		NimbleActions.START_STREAMING_SESSION,
-		NimbleActions.START_STUDIO_SSO_CONFIGURATION_REPAIR,
-		NimbleActions.STOP_STREAMING_SESSION,
-		NimbleActions.UPDATE_LAUNCH_PROFILE,
-		NimbleActions.UPDATE_LAUNCH_PROFILE_MEMBER,
-		NimbleActions.UPDATE_STREAMING_IMAGE,
-		NimbleActions.UPDATE_STUDIO,
-		NimbleActions.UPDATE_STUDIO_COMPONENT,
+	static readonly AllWriteActions: string[] = [
+		NimbleActions.AcceptEulas,
+		NimbleActions.CreateLaunchProfile,
+		NimbleActions.CreateStreamingImage,
+		NimbleActions.CreateStreamingSession,
+		NimbleActions.CreateStreamingSessionStream,
+		NimbleActions.CreateStudio,
+		NimbleActions.CreateStudioComponent,
+		NimbleActions.DeleteLaunchProfile,
+		NimbleActions.DeleteLaunchProfileMember,
+		NimbleActions.DeleteStreamingImage,
+		NimbleActions.DeleteStreamingSession,
+		NimbleActions.DeleteStudio,
+		NimbleActions.DeleteStudioComponent,
+		NimbleActions.DeleteStudioMember,
+		NimbleActions.PutLaunchProfileMembers,
+		NimbleActions.PutStudioLogEvents,
+		NimbleActions.PutStudioMembers,
+		NimbleActions.StartStreamingSession,
+		NimbleActions.StartStudioSSOConfigurationRepair,
+		NimbleActions.StopStreamingSession,
+		NimbleActions.UpdateLaunchProfile,
+		NimbleActions.UpdateLaunchProfileMember,
+		NimbleActions.UpdateStreamingImage,
+		NimbleActions.UpdateStudio,
+		NimbleActions.UpdateStudioComponent,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		NimbleActions.TAG_RESOURCE,
-		NimbleActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		NimbleActions.TagResource,
+		NimbleActions.UntagResource,
 	];
 }
 
-const EulaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):eula/(?<eulaId>[^:/?]+)$",
-);
-const EulaAcceptanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):eula-acceptance/(?<eulaAcceptanceId>[^:/?]+)$",
-);
-const LaunchProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):launch-profile/(?<launchProfileId>[^:/?]+)$",
-);
-const StreamingImageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-image/(?<streamingImageId>[^:/?]+)$",
-);
-const StreamingSessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-session/(?<streamingSessionId>[^:/?]+)$",
-);
-const StreamingSessionBackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-session-backup/(?<streamingSessionBackupId>[^:/?]+)$",
-);
-const StudioArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):studio/(?<studioId>[^:/?]+)$",
-);
-const StudioComponentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):studio-component/(?<studioComponentId>[^:/?]+)$",
-);
+/**
+ * Properties for building a eula ARN.
+ */
+export interface NimbleEulaArnProps {
+	/** The EulaId component of the ARN. */
+	readonly eulaId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a eula ARN.
+ */
+export interface NimbleEulaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EulaId component. */
+	readonly eulaId: string;
+}
+
+/**
+ * Properties for building a eula-acceptance ARN.
+ */
+export interface NimbleEulaAcceptanceArnProps {
+	/** The EulaAcceptanceId component of the ARN. */
+	readonly eulaAcceptanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a eula-acceptance ARN.
+ */
+export interface NimbleEulaAcceptanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EulaAcceptanceId component. */
+	readonly eulaAcceptanceId: string;
+}
+
+/**
+ * Properties for building a launch-profile ARN.
+ */
+export interface NimbleLaunchProfileArnProps {
+	/** The LaunchProfileId component of the ARN. */
+	readonly launchProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a launch-profile ARN.
+ */
+export interface NimbleLaunchProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LaunchProfileId component. */
+	readonly launchProfileId: string;
+}
+
+/**
+ * Properties for building a streaming-image ARN.
+ */
+export interface NimbleStreamingImageArnProps {
+	/** The StreamingImageId component of the ARN. */
+	readonly streamingImageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a streaming-image ARN.
+ */
+export interface NimbleStreamingImageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamingImageId component. */
+	readonly streamingImageId: string;
+}
+
+/**
+ * Properties for building a streaming-session ARN.
+ */
+export interface NimbleStreamingSessionArnProps {
+	/** The StreamingSessionId component of the ARN. */
+	readonly streamingSessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a streaming-session ARN.
+ */
+export interface NimbleStreamingSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamingSessionId component. */
+	readonly streamingSessionId: string;
+}
+
+/**
+ * Properties for building a streaming-session-backup ARN.
+ */
+export interface NimbleStreamingSessionBackupArnProps {
+	/** The StreamingSessionBackupId component of the ARN. */
+	readonly streamingSessionBackupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a streaming-session-backup ARN.
+ */
+export interface NimbleStreamingSessionBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamingSessionBackupId component. */
+	readonly streamingSessionBackupId: string;
+}
+
+/**
+ * Properties for building a studio ARN.
+ */
+export interface NimbleStudioArnProps {
+	/** The StudioId component of the ARN. */
+	readonly studioId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a studio ARN.
+ */
+export interface NimbleStudioArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StudioId component. */
+	readonly studioId: string;
+}
+
+/**
+ * Properties for building a studio-component ARN.
+ */
+export interface NimbleStudioComponentArnProps {
+	/** The StudioComponentId component of the ARN. */
+	readonly studioComponentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a studio-component ARN.
+ */
+export interface NimbleStudioComponentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StudioComponentId component. */
+	readonly studioComponentId: string;
+}
+
+const EulaArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):eula\/(?<eulaId>[^:/?]+)$/;
+const EulaAcceptanceArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):eula-acceptance\/(?<eulaAcceptanceId>[^:/?]+)$/;
+const LaunchProfileArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):launch-profile\/(?<launchProfileId>[^:/?]+)$/;
+const StreamingImageArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-image\/(?<streamingImageId>[^:/?]+)$/;
+const StreamingSessionArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-session\/(?<streamingSessionId>[^:/?]+)$/;
+const StreamingSessionBackupArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):streaming-session-backup\/(?<streamingSessionBackupId>[^:/?]+)$/;
+const StudioArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):studio\/(?<studioId>[^:/?]+)$/;
+const StudioComponentArnRegex =
+	/^arn:(?<partition>[^:]+):nimble:(?<region>[^:]*):(?<account>[^:]*):studio-component\/(?<studioComponentId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for nimble resources.
@@ -222,16 +439,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the eula resource.
 	 */
-	static eula(props: {
-		/** The EulaId component of the ARN. */
-		readonly eulaId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eula(props: NimbleEulaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:eula/${props.eulaId}`;
 	}
 
@@ -246,12 +454,7 @@ export class NimbleResources {
 	 * Parses a eula ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEulaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		eulaId: string;
-	} {
+	static parseEulaArn(arn: string): NimbleEulaArnComponents {
 		const match = EulaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid eula ARN: ${arn}`);
@@ -267,16 +470,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the eula-acceptance resource.
 	 */
-	static eulaAcceptance(props: {
-		/** The EulaAcceptanceId component of the ARN. */
-		readonly eulaAcceptanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eulaAcceptance(props: NimbleEulaAcceptanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:eula-acceptance/${props.eulaAcceptanceId}`;
 	}
 
@@ -291,12 +485,9 @@ export class NimbleResources {
 	 * Parses a eula-acceptance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEulaAcceptanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		eulaAcceptanceId: string;
-	} {
+	static parseEulaAcceptanceArn(
+		arn: string,
+	): NimbleEulaAcceptanceArnComponents {
 		const match = EulaAcceptanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid eula-acceptance ARN: ${arn}`);
@@ -312,16 +503,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the launch-profile resource.
 	 */
-	static launchProfile(props: {
-		/** The LaunchProfileId component of the ARN. */
-		readonly launchProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static launchProfile(props: NimbleLaunchProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:launch-profile/${props.launchProfileId}`;
 	}
 
@@ -336,12 +518,7 @@ export class NimbleResources {
 	 * Parses a launch-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLaunchProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		launchProfileId: string;
-	} {
+	static parseLaunchProfileArn(arn: string): NimbleLaunchProfileArnComponents {
 		const match = LaunchProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid launch-profile ARN: ${arn}`);
@@ -357,16 +534,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the streaming-image resource.
 	 */
-	static streamingImage(props: {
-		/** The StreamingImageId component of the ARN. */
-		readonly streamingImageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamingImage(props: NimbleStreamingImageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:streaming-image/${props.streamingImageId}`;
 	}
 
@@ -381,12 +549,9 @@ export class NimbleResources {
 	 * Parses a streaming-image ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamingImageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamingImageId: string;
-	} {
+	static parseStreamingImageArn(
+		arn: string,
+	): NimbleStreamingImageArnComponents {
 		const match = StreamingImageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid streaming-image ARN: ${arn}`);
@@ -402,16 +567,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the streaming-session resource.
 	 */
-	static streamingSession(props: {
-		/** The StreamingSessionId component of the ARN. */
-		readonly streamingSessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamingSession(props: NimbleStreamingSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:streaming-session/${props.streamingSessionId}`;
 	}
 
@@ -426,12 +582,9 @@ export class NimbleResources {
 	 * Parses a streaming-session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamingSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamingSessionId: string;
-	} {
+	static parseStreamingSessionArn(
+		arn: string,
+	): NimbleStreamingSessionArnComponents {
 		const match = StreamingSessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid streaming-session ARN: ${arn}`);
@@ -447,16 +600,9 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the streaming-session-backup resource.
 	 */
-	static streamingSessionBackup(props: {
-		/** The StreamingSessionBackupId component of the ARN. */
-		readonly streamingSessionBackupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamingSessionBackup(
+		props: NimbleStreamingSessionBackupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:streaming-session-backup/${props.streamingSessionBackupId}`;
 	}
 
@@ -471,12 +617,9 @@ export class NimbleResources {
 	 * Parses a streaming-session-backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamingSessionBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamingSessionBackupId: string;
-	} {
+	static parseStreamingSessionBackupArn(
+		arn: string,
+	): NimbleStreamingSessionBackupArnComponents {
 		const match = StreamingSessionBackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid streaming-session-backup ARN: ${arn}`);
@@ -492,16 +635,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the studio resource.
 	 */
-	static studio(props: {
-		/** The StudioId component of the ARN. */
-		readonly studioId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static studio(props: NimbleStudioArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:studio/${props.studioId}`;
 	}
 
@@ -516,12 +650,7 @@ export class NimbleResources {
 	 * Parses a studio ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStudioArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		studioId: string;
-	} {
+	static parseStudioArn(arn: string): NimbleStudioArnComponents {
 		const match = StudioArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid studio ARN: ${arn}`);
@@ -537,16 +666,7 @@ export class NimbleResources {
 	/**
 	 * Builds an ARN for the studio-component resource.
 	 */
-	static studioComponent(props: {
-		/** The StudioComponentId component of the ARN. */
-		readonly studioComponentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static studioComponent(props: NimbleStudioComponentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nimble:${props.region ?? "*"}:${props.account ?? "*"}:studio-component/${props.studioComponentId}`;
 	}
 
@@ -561,12 +681,9 @@ export class NimbleResources {
 	 * Parses a studio-component ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStudioComponentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		studioComponentId: string;
-	} {
+	static parseStudioComponentArn(
+		arn: string,
+	): NimbleStudioComponentArnComponents {
 		const match = StudioComponentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid studio-component ARN: ${arn}`);
@@ -585,88 +702,88 @@ export class NimbleResources {
  */
 export class NimbleConditions {
 	/** Condition keys applicable to the CreateLaunchProfile action. */
-	static readonly CREATE_LAUNCH_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateLaunchProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamingImage action. */
-	static readonly CREATE_STREAMING_IMAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamingImageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamingSession action. */
-	static readonly CREATE_STREAMING_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamingSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamingSessionStream action. */
-	static readonly CREATE_STREAMING_SESSION_STREAM_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamingSessionStreamConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the CreateStudio action. */
-	static readonly CREATE_STUDIO_CONDITION_KEYS: string[] = [
+	static readonly CreateStudioConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStudioComponent action. */
-	static readonly CREATE_STUDIO_COMPONENT_CONDITION_KEYS: string[] = [
+	static readonly CreateStudioComponentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteStreamingSession action. */
-	static readonly DELETE_STREAMING_SESSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteStreamingSessionConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the GetStreamingSession action. */
-	static readonly GET_STREAMING_SESSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetStreamingSessionConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the GetStreamingSessionBackup action. */
-	static readonly GET_STREAMING_SESSION_BACKUP_CONDITION_KEYS: string[] = [
+	static readonly actionGetStreamingSessionBackupConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the GetStreamingSessionStream action. */
-	static readonly GET_STREAMING_SESSION_STREAM_CONDITION_KEYS: string[] = [
+	static readonly actionGetStreamingSessionStreamConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListLaunchProfiles action. */
-	static readonly LIST_LAUNCH_PROFILES_CONDITION_KEYS: string[] = [
+	static readonly ListLaunchProfilesConditionKeys: string[] = [
 		"nimble:principalId",
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListStreamingSessionBackups action. */
-	static readonly LIST_STREAMING_SESSION_BACKUPS_CONDITION_KEYS: string[] = [
+	static readonly ListStreamingSessionBackupsConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListStreamingSessions action. */
-	static readonly LIST_STREAMING_SESSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListStreamingSessionsConditionKeys: string[] = [
 		"nimble:createdBy",
 		"nimble:ownedBy",
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the StartStreamingSession action. */
-	static readonly START_STREAMING_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartStreamingSessionConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the StopStreamingSession action. */
-	static readonly STOP_STREAMING_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StopStreamingSessionConditionKeys: string[] = [
 		"nimble:requesterPrincipalId",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: nimble:createdBy (String) */
 	static readonly CREATED_BY = "nimble:createdBy";
 	/** Condition key: nimble:ownedBy (String) */

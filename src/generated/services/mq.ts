@@ -13,113 +13,170 @@ export class MqActions {
 	static readonly SERVICE_PREFIX = "mq";
 
 	/** [Write] mq:CreateBroker */
-	static readonly CREATE_BROKER = "mq:CreateBroker";
+	static readonly CreateBroker = "mq:CreateBroker";
 	/** [Write] mq:CreateConfiguration */
-	static readonly CREATE_CONFIGURATION = "mq:CreateConfiguration";
+	static readonly CreateConfiguration = "mq:CreateConfiguration";
 	/** [Write] mq:CreateReplicaBroker */
-	static readonly CREATE_REPLICA_BROKER = "mq:CreateReplicaBroker";
+	static readonly CreateReplicaBroker = "mq:CreateReplicaBroker";
 	/** [Tagging] mq:CreateTags */
-	static readonly CREATE_TAGS = "mq:CreateTags";
+	static readonly CreateTags = "mq:CreateTags";
 	/** [Write] mq:CreateUser */
-	static readonly CREATE_USER = "mq:CreateUser";
+	static readonly CreateUser = "mq:CreateUser";
 	/** [Write] mq:DeleteBroker */
-	static readonly DELETE_BROKER = "mq:DeleteBroker";
+	static readonly DeleteBroker = "mq:DeleteBroker";
 	/** [Write] mq:DeleteConfiguration */
-	static readonly DELETE_CONFIGURATION = "mq:DeleteConfiguration";
+	static readonly DeleteConfiguration = "mq:DeleteConfiguration";
 	/** [Tagging] mq:DeleteTags */
-	static readonly DELETE_TAGS = "mq:DeleteTags";
+	static readonly DeleteTags = "mq:DeleteTags";
 	/** [Write] mq:DeleteUser */
-	static readonly DELETE_USER = "mq:DeleteUser";
+	static readonly DeleteUser = "mq:DeleteUser";
 	/** [Read] mq:DescribeBroker */
-	static readonly DESCRIBE_BROKER = "mq:DescribeBroker";
+	static readonly DescribeBroker = "mq:DescribeBroker";
 	/** [Read] mq:DescribeBrokerEngineTypes */
-	static readonly DESCRIBE_BROKER_ENGINE_TYPES = "mq:DescribeBrokerEngineTypes";
+	static readonly DescribeBrokerEngineTypes = "mq:DescribeBrokerEngineTypes";
 	/** [Read] mq:DescribeBrokerInstanceOptions */
-	static readonly DESCRIBE_BROKER_INSTANCE_OPTIONS =
+	static readonly DescribeBrokerInstanceOptions =
 		"mq:DescribeBrokerInstanceOptions";
 	/** [Read] mq:DescribeConfiguration */
-	static readonly DESCRIBE_CONFIGURATION = "mq:DescribeConfiguration";
+	static readonly DescribeConfiguration = "mq:DescribeConfiguration";
 	/** [Read] mq:DescribeConfigurationRevision */
-	static readonly DESCRIBE_CONFIGURATION_REVISION =
+	static readonly DescribeConfigurationRevision =
 		"mq:DescribeConfigurationRevision";
 	/** [Read] mq:DescribeSharedResources */
-	static readonly DESCRIBE_SHARED_RESOURCES = "mq:DescribeSharedResources";
+	static readonly DescribeSharedResources = "mq:DescribeSharedResources";
 	/** [Read] mq:DescribeUser */
-	static readonly DESCRIBE_USER = "mq:DescribeUser";
+	static readonly DescribeUser = "mq:DescribeUser";
 	/** [List] mq:ListBrokers */
-	static readonly LIST_BROKERS = "mq:ListBrokers";
+	static readonly ListBrokers = "mq:ListBrokers";
 	/** [List] mq:ListConfigurationRevisions */
-	static readonly LIST_CONFIGURATION_REVISIONS =
-		"mq:ListConfigurationRevisions";
+	static readonly ListConfigurationRevisions = "mq:ListConfigurationRevisions";
 	/** [List] mq:ListConfigurations */
-	static readonly LIST_CONFIGURATIONS = "mq:ListConfigurations";
+	static readonly ListConfigurations = "mq:ListConfigurations";
 	/** [List] mq:ListTags */
-	static readonly LIST_TAGS = "mq:ListTags";
+	static readonly ListTags = "mq:ListTags";
 	/** [List] mq:ListUsers */
-	static readonly LIST_USERS = "mq:ListUsers";
+	static readonly ListUsers = "mq:ListUsers";
 	/** [Write] mq:Promote */
-	static readonly PROMOTE = "mq:Promote";
+	static readonly Promote = "mq:Promote";
 	/** [Write] mq:RebootBroker */
-	static readonly REBOOT_BROKER = "mq:RebootBroker";
+	static readonly RebootBroker = "mq:RebootBroker";
 	/** [Write] mq:UpdateBroker */
-	static readonly UPDATE_BROKER = "mq:UpdateBroker";
+	static readonly UpdateBroker = "mq:UpdateBroker";
 	/** [Write] mq:UpdateBrokerAccessConfiguration */
-	static readonly UPDATE_BROKER_ACCESS_CONFIGURATION =
+	static readonly UpdateBrokerAccessConfiguration =
 		"mq:UpdateBrokerAccessConfiguration";
 	/** [Write] mq:UpdateConfiguration */
-	static readonly UPDATE_CONFIGURATION = "mq:UpdateConfiguration";
+	static readonly UpdateConfiguration = "mq:UpdateConfiguration";
 	/** [Write] mq:UpdateUser */
-	static readonly UPDATE_USER = "mq:UpdateUser";
+	static readonly UpdateUser = "mq:UpdateUser";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MqActions.DESCRIBE_BROKER,
-		MqActions.DESCRIBE_BROKER_ENGINE_TYPES,
-		MqActions.DESCRIBE_BROKER_INSTANCE_OPTIONS,
-		MqActions.DESCRIBE_CONFIGURATION,
-		MqActions.DESCRIBE_CONFIGURATION_REVISION,
-		MqActions.DESCRIBE_SHARED_RESOURCES,
-		MqActions.DESCRIBE_USER,
+	static readonly AllReadActions: string[] = [
+		MqActions.DescribeBroker,
+		MqActions.DescribeBrokerEngineTypes,
+		MqActions.DescribeBrokerInstanceOptions,
+		MqActions.DescribeConfiguration,
+		MqActions.DescribeConfigurationRevision,
+		MqActions.DescribeSharedResources,
+		MqActions.DescribeUser,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MqActions.CREATE_BROKER,
-		MqActions.CREATE_CONFIGURATION,
-		MqActions.CREATE_REPLICA_BROKER,
-		MqActions.CREATE_USER,
-		MqActions.DELETE_BROKER,
-		MqActions.DELETE_CONFIGURATION,
-		MqActions.DELETE_USER,
-		MqActions.PROMOTE,
-		MqActions.REBOOT_BROKER,
-		MqActions.UPDATE_BROKER,
-		MqActions.UPDATE_BROKER_ACCESS_CONFIGURATION,
-		MqActions.UPDATE_CONFIGURATION,
-		MqActions.UPDATE_USER,
+	static readonly AllWriteActions: string[] = [
+		MqActions.CreateBroker,
+		MqActions.CreateConfiguration,
+		MqActions.CreateReplicaBroker,
+		MqActions.CreateUser,
+		MqActions.DeleteBroker,
+		MqActions.DeleteConfiguration,
+		MqActions.DeleteUser,
+		MqActions.Promote,
+		MqActions.RebootBroker,
+		MqActions.UpdateBroker,
+		MqActions.UpdateBrokerAccessConfiguration,
+		MqActions.UpdateConfiguration,
+		MqActions.UpdateUser,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MqActions.LIST_BROKERS,
-		MqActions.LIST_CONFIGURATION_REVISIONS,
-		MqActions.LIST_CONFIGURATIONS,
-		MqActions.LIST_TAGS,
-		MqActions.LIST_USERS,
+	static readonly AllListActions: string[] = [
+		MqActions.ListBrokers,
+		MqActions.ListConfigurationRevisions,
+		MqActions.ListConfigurations,
+		MqActions.ListTags,
+		MqActions.ListUsers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		MqActions.CREATE_TAGS,
-		MqActions.DELETE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		MqActions.CreateTags,
+		MqActions.DeleteTags,
 	];
 }
 
-const BrokersArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mq:(?<region>[^:]*):(?<account>[^:]*):broker:(?<brokerName>[^:/?]+):(?<brokerId>[^:/?]+)$",
-);
-const ConfigurationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mq:(?<region>[^:]*):(?<account>[^:]*):configuration:(?<configurationId>[^:/?]+)$",
-);
+/**
+ * Properties for building a brokers ARN.
+ */
+export interface MqBrokersArnProps {
+	/** The BrokerName component of the ARN. */
+	readonly brokerName: string;
+	/** The BrokerId component of the ARN. */
+	readonly brokerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a brokers ARN.
+ */
+export interface MqBrokersArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BrokerName component. */
+	readonly brokerName: string;
+	/** The BrokerId component. */
+	readonly brokerId: string;
+}
+
+/**
+ * Properties for building a configurations ARN.
+ */
+export interface MqConfigurationsArnProps {
+	/** The ConfigurationId component of the ARN. */
+	readonly configurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configurations ARN.
+ */
+export interface MqConfigurationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationId component. */
+	readonly configurationId: string;
+}
+
+const BrokersArnRegex =
+	/^arn:(?<partition>[^:]+):mq:(?<region>[^:]*):(?<account>[^:]*):broker:(?<brokerName>[^:/?]+):(?<brokerId>[^:/?]+)$/;
+const ConfigurationsArnRegex =
+	/^arn:(?<partition>[^:]+):mq:(?<region>[^:]*):(?<account>[^:]*):configuration:(?<configurationId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for mq resources.
@@ -128,18 +185,7 @@ export class MqResources {
 	/**
 	 * Builds an ARN for the brokers resource.
 	 */
-	static brokers(props: {
-		/** The BrokerName component of the ARN. */
-		readonly brokerName: string;
-		/** The BrokerId component of the ARN. */
-		readonly brokerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static brokers(props: MqBrokersArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mq:${props.region ?? "*"}:${props.account ?? "*"}:broker:${props.brokerName}:${props.brokerId}`;
 	}
 
@@ -154,13 +200,7 @@ export class MqResources {
 	 * Parses a brokers ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBrokersArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		brokerName: string;
-		brokerId: string;
-	} {
+	static parseBrokersArn(arn: string): MqBrokersArnComponents {
 		const match = BrokersArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid brokers ARN: ${arn}`);
@@ -177,16 +217,7 @@ export class MqResources {
 	/**
 	 * Builds an ARN for the configurations resource.
 	 */
-	static configurations(props: {
-		/** The ConfigurationId component of the ARN. */
-		readonly configurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configurations(props: MqConfigurationsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mq:${props.region ?? "*"}:${props.account ?? "*"}:configuration:${props.configurationId}`;
 	}
 
@@ -201,12 +232,7 @@ export class MqResources {
 	 * Parses a configurations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configurationId: string;
-	} {
+	static parseConfigurationsArn(arn: string): MqConfigurationsArnComponents {
 		const match = ConfigurationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configurations ARN: ${arn}`);
@@ -225,78 +251,78 @@ export class MqResources {
  */
 export class MqOperations {
 	/** IAM actions required for the CreateBroker API call. */
-	static readonly CREATE_BROKER: string[] = [
+	static readonly CreateBroker: string[] = [
 		"mq:CreateBroker",
 		"mq:CreateTags",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateConfiguration API call. */
-	static readonly CREATE_CONFIGURATION: string[] = [
+	static readonly CreateConfiguration: string[] = [
 		"mq:CreateConfiguration",
 		"mq:CreateTags",
 	];
 	/** IAM actions required for the CreateTags API call. */
-	static readonly CREATE_TAGS: string[] = ["mq:CreateTags"];
+	static readonly CreateTags: string[] = ["mq:CreateTags"];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CREATE_USER: string[] = ["mq:CreateUser"];
+	static readonly CreateUser: string[] = ["mq:CreateUser"];
 	/** IAM actions required for the DeleteBroker API call. */
-	static readonly DELETE_BROKER: string[] = ["mq:DeleteBroker"];
+	static readonly DeleteBroker: string[] = ["mq:DeleteBroker"];
 	/** IAM actions required for the DeleteConfiguration API call. */
-	static readonly DELETE_CONFIGURATION: string[] = ["mq:DeleteConfiguration"];
+	static readonly DeleteConfiguration: string[] = ["mq:DeleteConfiguration"];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["mq:DeleteTags"];
+	static readonly DeleteTags: string[] = ["mq:DeleteTags"];
 	/** IAM actions required for the DeleteUser API call. */
-	static readonly DELETE_USER: string[] = ["mq:DeleteUser"];
+	static readonly DeleteUser: string[] = ["mq:DeleteUser"];
 	/** IAM actions required for the DescribeBroker API call. */
-	static readonly DESCRIBE_BROKER: string[] = ["mq:DescribeBroker"];
+	static readonly DescribeBroker: string[] = ["mq:DescribeBroker"];
 	/** IAM actions required for the DescribeBrokerEngineTypes API call. */
-	static readonly DESCRIBE_BROKER_ENGINE_TYPES: string[] = [
+	static readonly DescribeBrokerEngineTypes: string[] = [
 		"mq:DescribeBrokerEngineTypes",
 	];
 	/** IAM actions required for the DescribeBrokerInstanceOptions API call. */
-	static readonly DESCRIBE_BROKER_INSTANCE_OPTIONS: string[] = [
+	static readonly DescribeBrokerInstanceOptions: string[] = [
 		"mq:DescribeBrokerInstanceOptions",
 	];
 	/** IAM actions required for the DescribeConfiguration API call. */
-	static readonly DESCRIBE_CONFIGURATION: string[] = [
+	static readonly DescribeConfiguration: string[] = [
 		"mq:DescribeConfiguration",
 	];
 	/** IAM actions required for the DescribeConfigurationRevision API call. */
-	static readonly DESCRIBE_CONFIGURATION_REVISION: string[] = [
+	static readonly DescribeConfigurationRevision: string[] = [
 		"mq:DescribeConfigurationRevision",
 	];
 	/** IAM actions required for the DescribeSharedResources API call. */
-	static readonly DESCRIBE_SHARED_RESOURCES: string[] = [
+	static readonly DescribeSharedResources: string[] = [
 		"mq:DescribeSharedResources",
 	];
 	/** IAM actions required for the DescribeUser API call. */
-	static readonly DESCRIBE_USER: string[] = ["mq:DescribeUser"];
+	static readonly DescribeUser: string[] = ["mq:DescribeUser"];
 	/** IAM actions required for the ListBrokers API call. */
-	static readonly LIST_BROKERS: string[] = ["mq:ListBrokers"];
+	static readonly ListBrokers: string[] = ["mq:ListBrokers"];
 	/** IAM actions required for the ListConfigurationRevisions API call. */
-	static readonly LIST_CONFIGURATION_REVISIONS: string[] = [
+	static readonly ListConfigurationRevisions: string[] = [
 		"mq:ListConfigurationRevisions",
 	];
 	/** IAM actions required for the ListConfigurations API call. */
-	static readonly LIST_CONFIGURATIONS: string[] = ["mq:ListConfigurations"];
+	static readonly ListConfigurations: string[] = ["mq:ListConfigurations"];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["mq:ListTags"];
+	static readonly ListTags: string[] = ["mq:ListTags"];
 	/** IAM actions required for the ListUsers API call. */
-	static readonly LIST_USERS: string[] = ["mq:ListUsers"];
+	static readonly ListUsers: string[] = ["mq:ListUsers"];
 	/** IAM actions required for the Promote API call. */
-	static readonly PROMOTE: string[] = ["mq:Promote"];
+	static readonly Promote: string[] = ["mq:Promote"];
 	/** IAM actions required for the RebootBroker API call. */
-	static readonly REBOOT_BROKER: string[] = ["mq:RebootBroker"];
+	static readonly RebootBroker: string[] = ["mq:RebootBroker"];
 	/** IAM actions required for the UpdateBroker API call. */
-	static readonly UPDATE_BROKER: string[] = [
+	static readonly UpdateBroker: string[] = [
 		"iam:PassRole",
 		"mq:UpdateBroker",
 		"mq:UpdateBrokerAccessConfiguration",
 	];
 	/** IAM actions required for the UpdateConfiguration API call. */
-	static readonly UPDATE_CONFIGURATION: string[] = ["mq:UpdateConfiguration"];
+	static readonly UpdateConfiguration: string[] = ["mq:UpdateConfiguration"];
 	/** IAM actions required for the UpdateUser API call. */
-	static readonly UPDATE_USER: string[] = ["mq:UpdateUser"];
+	static readonly UpdateUser: string[] = ["mq:UpdateUser"];
 }
 
 /**
@@ -304,29 +330,29 @@ export class MqOperations {
  */
 export class MqConditions {
 	/** Condition keys applicable to the CreateBroker action. */
-	static readonly CREATE_BROKER_CONDITION_KEYS: string[] = [
+	static readonly CreateBrokerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfiguration action. */
-	static readonly CREATE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTags action. */
-	static readonly CREATE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly CreateTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly DeleteTagsConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

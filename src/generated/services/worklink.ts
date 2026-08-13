@@ -13,142 +13,165 @@ export class WorklinkActions {
 	static readonly SERVICE_PREFIX = "worklink";
 
 	/** [Write] worklink:AssociateDomain */
-	static readonly ASSOCIATE_DOMAIN = "worklink:AssociateDomain";
+	static readonly AssociateDomain = "worklink:AssociateDomain";
 	/** [Write] worklink:AssociateWebsiteAuthorizationProvider */
-	static readonly ASSOCIATE_WEBSITE_AUTHORIZATION_PROVIDER =
+	static readonly AssociateWebsiteAuthorizationProvider =
 		"worklink:AssociateWebsiteAuthorizationProvider";
 	/** [Write] worklink:AssociateWebsiteCertificateAuthority */
-	static readonly ASSOCIATE_WEBSITE_CERTIFICATE_AUTHORITY =
+	static readonly AssociateWebsiteCertificateAuthority =
 		"worklink:AssociateWebsiteCertificateAuthority";
 	/** [Write] worklink:CreateFleet */
-	static readonly CREATE_FLEET = "worklink:CreateFleet";
+	static readonly CreateFleet = "worklink:CreateFleet";
 	/** [Write] worklink:DeleteFleet */
-	static readonly DELETE_FLEET = "worklink:DeleteFleet";
+	static readonly DeleteFleet = "worklink:DeleteFleet";
 	/** [Read] worklink:DescribeAuditStreamConfiguration */
-	static readonly DESCRIBE_AUDIT_STREAM_CONFIGURATION =
+	static readonly DescribeAuditStreamConfiguration =
 		"worklink:DescribeAuditStreamConfiguration";
 	/** [Read] worklink:DescribeCompanyNetworkConfiguration */
-	static readonly DESCRIBE_COMPANY_NETWORK_CONFIGURATION =
+	static readonly DescribeCompanyNetworkConfiguration =
 		"worklink:DescribeCompanyNetworkConfiguration";
 	/** [Read] worklink:DescribeDevice */
-	static readonly DESCRIBE_DEVICE = "worklink:DescribeDevice";
+	static readonly DescribeDevice = "worklink:DescribeDevice";
 	/** [Read] worklink:DescribeDevicePolicyConfiguration */
-	static readonly DESCRIBE_DEVICE_POLICY_CONFIGURATION =
+	static readonly DescribeDevicePolicyConfiguration =
 		"worklink:DescribeDevicePolicyConfiguration";
 	/** [Read] worklink:DescribeDomain */
-	static readonly DESCRIBE_DOMAIN = "worklink:DescribeDomain";
+	static readonly DescribeDomain = "worklink:DescribeDomain";
 	/** [Read] worklink:DescribeFleetMetadata */
-	static readonly DESCRIBE_FLEET_METADATA = "worklink:DescribeFleetMetadata";
+	static readonly DescribeFleetMetadata = "worklink:DescribeFleetMetadata";
 	/** [Read] worklink:DescribeIdentityProviderConfiguration */
-	static readonly DESCRIBE_IDENTITY_PROVIDER_CONFIGURATION =
+	static readonly DescribeIdentityProviderConfiguration =
 		"worklink:DescribeIdentityProviderConfiguration";
 	/** [Read] worklink:DescribeWebsiteCertificateAuthority */
-	static readonly DESCRIBE_WEBSITE_CERTIFICATE_AUTHORITY =
+	static readonly DescribeWebsiteCertificateAuthority =
 		"worklink:DescribeWebsiteCertificateAuthority";
 	/** [Write] worklink:DisassociateDomain */
-	static readonly DISASSOCIATE_DOMAIN = "worklink:DisassociateDomain";
+	static readonly DisassociateDomain = "worklink:DisassociateDomain";
 	/** [Write] worklink:DisassociateWebsiteAuthorizationProvider */
-	static readonly DISASSOCIATE_WEBSITE_AUTHORIZATION_PROVIDER =
+	static readonly DisassociateWebsiteAuthorizationProvider =
 		"worklink:DisassociateWebsiteAuthorizationProvider";
 	/** [Write] worklink:DisassociateWebsiteCertificateAuthority */
-	static readonly DISASSOCIATE_WEBSITE_CERTIFICATE_AUTHORITY =
+	static readonly DisassociateWebsiteCertificateAuthority =
 		"worklink:DisassociateWebsiteCertificateAuthority";
 	/** [List] worklink:ListDevices */
-	static readonly LIST_DEVICES = "worklink:ListDevices";
+	static readonly ListDevices = "worklink:ListDevices";
 	/** [List] worklink:ListDomains */
-	static readonly LIST_DOMAINS = "worklink:ListDomains";
+	static readonly ListDomains = "worklink:ListDomains";
 	/** [List] worklink:ListFleets */
-	static readonly LIST_FLEETS = "worklink:ListFleets";
+	static readonly ListFleets = "worklink:ListFleets";
 	/** [Read] worklink:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "worklink:ListTagsForResource";
+	static readonly ListTagsForResource = "worklink:ListTagsForResource";
 	/** [List] worklink:ListWebsiteAuthorizationProviders */
-	static readonly LIST_WEBSITE_AUTHORIZATION_PROVIDERS =
+	static readonly ListWebsiteAuthorizationProviders =
 		"worklink:ListWebsiteAuthorizationProviders";
 	/** [List] worklink:ListWebsiteCertificateAuthorities */
-	static readonly LIST_WEBSITE_CERTIFICATE_AUTHORITIES =
+	static readonly ListWebsiteCertificateAuthorities =
 		"worklink:ListWebsiteCertificateAuthorities";
 	/** [Write] worklink:RestoreDomainAccess */
-	static readonly RESTORE_DOMAIN_ACCESS = "worklink:RestoreDomainAccess";
+	static readonly RestoreDomainAccess = "worklink:RestoreDomainAccess";
 	/** [Write] worklink:RevokeDomainAccess */
-	static readonly REVOKE_DOMAIN_ACCESS = "worklink:RevokeDomainAccess";
+	static readonly RevokeDomainAccess = "worklink:RevokeDomainAccess";
 	/** [List] worklink:SearchEntity */
-	static readonly SEARCH_ENTITY = "worklink:SearchEntity";
+	static readonly SearchEntity = "worklink:SearchEntity";
 	/** [Write] worklink:SignOutUser */
-	static readonly SIGN_OUT_USER = "worklink:SignOutUser";
+	static readonly SignOutUser = "worklink:SignOutUser";
 	/** [Tagging] worklink:TagResource */
-	static readonly TAG_RESOURCE = "worklink:TagResource";
+	static readonly TagResource = "worklink:TagResource";
 	/** [Tagging] worklink:UntagResource */
-	static readonly UNTAG_RESOURCE = "worklink:UntagResource";
+	static readonly UntagResource = "worklink:UntagResource";
 	/** [Write] worklink:UpdateAuditStreamConfiguration */
-	static readonly UPDATE_AUDIT_STREAM_CONFIGURATION =
+	static readonly UpdateAuditStreamConfiguration =
 		"worklink:UpdateAuditStreamConfiguration";
 	/** [Write] worklink:UpdateCompanyNetworkConfiguration */
-	static readonly UPDATE_COMPANY_NETWORK_CONFIGURATION =
+	static readonly UpdateCompanyNetworkConfiguration =
 		"worklink:UpdateCompanyNetworkConfiguration";
 	/** [Write] worklink:UpdateDevicePolicyConfiguration */
-	static readonly UPDATE_DEVICE_POLICY_CONFIGURATION =
+	static readonly UpdateDevicePolicyConfiguration =
 		"worklink:UpdateDevicePolicyConfiguration";
 	/** [Write] worklink:UpdateDomainMetadata */
-	static readonly UPDATE_DOMAIN_METADATA = "worklink:UpdateDomainMetadata";
+	static readonly UpdateDomainMetadata = "worklink:UpdateDomainMetadata";
 	/** [Write] worklink:UpdateFleetMetadata */
-	static readonly UPDATE_FLEET_METADATA = "worklink:UpdateFleetMetadata";
+	static readonly UpdateFleetMetadata = "worklink:UpdateFleetMetadata";
 	/** [Write] worklink:UpdateIdentityProviderConfiguration */
-	static readonly UPDATE_IDENTITY_PROVIDER_CONFIGURATION =
+	static readonly UpdateIdentityProviderConfiguration =
 		"worklink:UpdateIdentityProviderConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WorklinkActions.DESCRIBE_AUDIT_STREAM_CONFIGURATION,
-		WorklinkActions.DESCRIBE_COMPANY_NETWORK_CONFIGURATION,
-		WorklinkActions.DESCRIBE_DEVICE,
-		WorklinkActions.DESCRIBE_DEVICE_POLICY_CONFIGURATION,
-		WorklinkActions.DESCRIBE_DOMAIN,
-		WorklinkActions.DESCRIBE_FLEET_METADATA,
-		WorklinkActions.DESCRIBE_IDENTITY_PROVIDER_CONFIGURATION,
-		WorklinkActions.DESCRIBE_WEBSITE_CERTIFICATE_AUTHORITY,
-		WorklinkActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		WorklinkActions.DescribeAuditStreamConfiguration,
+		WorklinkActions.DescribeCompanyNetworkConfiguration,
+		WorklinkActions.DescribeDevice,
+		WorklinkActions.DescribeDevicePolicyConfiguration,
+		WorklinkActions.DescribeDomain,
+		WorklinkActions.DescribeFleetMetadata,
+		WorklinkActions.DescribeIdentityProviderConfiguration,
+		WorklinkActions.DescribeWebsiteCertificateAuthority,
+		WorklinkActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WorklinkActions.ASSOCIATE_DOMAIN,
-		WorklinkActions.ASSOCIATE_WEBSITE_AUTHORIZATION_PROVIDER,
-		WorklinkActions.ASSOCIATE_WEBSITE_CERTIFICATE_AUTHORITY,
-		WorklinkActions.CREATE_FLEET,
-		WorklinkActions.DELETE_FLEET,
-		WorklinkActions.DISASSOCIATE_DOMAIN,
-		WorklinkActions.DISASSOCIATE_WEBSITE_AUTHORIZATION_PROVIDER,
-		WorklinkActions.DISASSOCIATE_WEBSITE_CERTIFICATE_AUTHORITY,
-		WorklinkActions.RESTORE_DOMAIN_ACCESS,
-		WorklinkActions.REVOKE_DOMAIN_ACCESS,
-		WorklinkActions.SIGN_OUT_USER,
-		WorklinkActions.UPDATE_AUDIT_STREAM_CONFIGURATION,
-		WorklinkActions.UPDATE_COMPANY_NETWORK_CONFIGURATION,
-		WorklinkActions.UPDATE_DEVICE_POLICY_CONFIGURATION,
-		WorklinkActions.UPDATE_DOMAIN_METADATA,
-		WorklinkActions.UPDATE_FLEET_METADATA,
-		WorklinkActions.UPDATE_IDENTITY_PROVIDER_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		WorklinkActions.AssociateDomain,
+		WorklinkActions.AssociateWebsiteAuthorizationProvider,
+		WorklinkActions.AssociateWebsiteCertificateAuthority,
+		WorklinkActions.CreateFleet,
+		WorklinkActions.DeleteFleet,
+		WorklinkActions.DisassociateDomain,
+		WorklinkActions.DisassociateWebsiteAuthorizationProvider,
+		WorklinkActions.DisassociateWebsiteCertificateAuthority,
+		WorklinkActions.RestoreDomainAccess,
+		WorklinkActions.RevokeDomainAccess,
+		WorklinkActions.SignOutUser,
+		WorklinkActions.UpdateAuditStreamConfiguration,
+		WorklinkActions.UpdateCompanyNetworkConfiguration,
+		WorklinkActions.UpdateDevicePolicyConfiguration,
+		WorklinkActions.UpdateDomainMetadata,
+		WorklinkActions.UpdateFleetMetadata,
+		WorklinkActions.UpdateIdentityProviderConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WorklinkActions.LIST_DEVICES,
-		WorklinkActions.LIST_DOMAINS,
-		WorklinkActions.LIST_FLEETS,
-		WorklinkActions.LIST_WEBSITE_AUTHORIZATION_PROVIDERS,
-		WorklinkActions.LIST_WEBSITE_CERTIFICATE_AUTHORITIES,
-		WorklinkActions.SEARCH_ENTITY,
+	static readonly AllListActions: string[] = [
+		WorklinkActions.ListDevices,
+		WorklinkActions.ListDomains,
+		WorklinkActions.ListFleets,
+		WorklinkActions.ListWebsiteAuthorizationProviders,
+		WorklinkActions.ListWebsiteCertificateAuthorities,
+		WorklinkActions.SearchEntity,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WorklinkActions.TAG_RESOURCE,
-		WorklinkActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WorklinkActions.TagResource,
+		WorklinkActions.UntagResource,
 	];
 }
 
-const FleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):worklink::(?<account>[^:]*):fleet/(?<fleetName>[^:/?]+)$",
-);
+/**
+ * Properties for building a fleet ARN.
+ */
+export interface WorklinkFleetArnProps {
+	/** The FleetName component of the ARN. */
+	readonly fleetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fleet ARN.
+ */
+export interface WorklinkFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FleetName component. */
+	readonly fleetName: string;
+}
+
+const FleetArnRegex =
+	/^arn:(?<partition>[^:]+):worklink::(?<account>[^:]*):fleet\/(?<fleetName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for worklink resources.
@@ -157,14 +180,7 @@ export class WorklinkResources {
 	/**
 	 * Builds an ARN for the fleet resource.
 	 */
-	static fleet(props: {
-		/** The FleetName component of the ARN. */
-		readonly fleetName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fleet(props: WorklinkFleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:worklink::${props.account ?? "*"}:fleet/${props.fleetName}`;
 	}
 
@@ -179,11 +195,7 @@ export class WorklinkResources {
 	 * Parses a fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFleetArn(arn: string): {
-		partition: string;
-		account: string;
-		fleetName: string;
-	} {
+	static parseFleetArn(arn: string): WorklinkFleetArnComponents {
 		const match = FleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fleet ARN: ${arn}`);
@@ -201,34 +213,34 @@ export class WorklinkResources {
  */
 export class WorklinkConditions {
 	/** Condition keys applicable to the CreateFleet action. */
-	static readonly CREATE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteFleet action. */
-	static readonly DELETE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly DeleteFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeFleetMetadata action. */
-	static readonly DESCRIBE_FLEET_METADATA_CONDITION_KEYS: string[] = [
+	static readonly DescribeFleetMetadataConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

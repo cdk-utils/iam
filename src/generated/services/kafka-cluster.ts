@@ -13,94 +13,229 @@ export class KafkaClusterActions {
 	static readonly SERVICE_PREFIX = "kafka-cluster";
 
 	/** [Write] kafka-cluster:AlterCluster */
-	static readonly ALTER_CLUSTER = "kafka-cluster:AlterCluster";
+	static readonly AlterCluster = "kafka-cluster:AlterCluster";
 	/** [Write] kafka-cluster:AlterClusterDynamicConfiguration */
-	static readonly ALTER_CLUSTER_DYNAMIC_CONFIGURATION =
+	static readonly AlterClusterDynamicConfiguration =
 		"kafka-cluster:AlterClusterDynamicConfiguration";
 	/** [Write] kafka-cluster:AlterGroup */
-	static readonly ALTER_GROUP = "kafka-cluster:AlterGroup";
+	static readonly AlterGroup = "kafka-cluster:AlterGroup";
 	/** [Write] kafka-cluster:AlterTopic */
-	static readonly ALTER_TOPIC = "kafka-cluster:AlterTopic";
+	static readonly AlterTopic = "kafka-cluster:AlterTopic";
 	/** [Write] kafka-cluster:AlterTopicDynamicConfiguration */
-	static readonly ALTER_TOPIC_DYNAMIC_CONFIGURATION =
+	static readonly AlterTopicDynamicConfiguration =
 		"kafka-cluster:AlterTopicDynamicConfiguration";
 	/** [Write] kafka-cluster:AlterTransactionalId */
-	static readonly ALTER_TRANSACTIONAL_ID = "kafka-cluster:AlterTransactionalId";
+	static readonly AlterTransactionalId = "kafka-cluster:AlterTransactionalId";
 	/** [Write] kafka-cluster:Connect */
-	static readonly CONNECT = "kafka-cluster:Connect";
+	static readonly Connect = "kafka-cluster:Connect";
 	/** [Write] kafka-cluster:CreateTopic */
-	static readonly CREATE_TOPIC = "kafka-cluster:CreateTopic";
+	static readonly CreateTopic = "kafka-cluster:CreateTopic";
 	/** [Write] kafka-cluster:DeleteGroup */
-	static readonly DELETE_GROUP = "kafka-cluster:DeleteGroup";
+	static readonly DeleteGroup = "kafka-cluster:DeleteGroup";
 	/** [Write] kafka-cluster:DeleteTopic */
-	static readonly DELETE_TOPIC = "kafka-cluster:DeleteTopic";
+	static readonly DeleteTopic = "kafka-cluster:DeleteTopic";
 	/** [List] kafka-cluster:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "kafka-cluster:DescribeCluster";
+	static readonly DescribeCluster = "kafka-cluster:DescribeCluster";
 	/** [List] kafka-cluster:DescribeClusterDynamicConfiguration */
-	static readonly DESCRIBE_CLUSTER_DYNAMIC_CONFIGURATION =
+	static readonly DescribeClusterDynamicConfiguration =
 		"kafka-cluster:DescribeClusterDynamicConfiguration";
 	/** [List] kafka-cluster:DescribeGroup */
-	static readonly DESCRIBE_GROUP = "kafka-cluster:DescribeGroup";
+	static readonly DescribeGroup = "kafka-cluster:DescribeGroup";
 	/** [List] kafka-cluster:DescribeTopic */
-	static readonly DESCRIBE_TOPIC = "kafka-cluster:DescribeTopic";
+	static readonly DescribeTopic = "kafka-cluster:DescribeTopic";
 	/** [List] kafka-cluster:DescribeTopicDynamicConfiguration */
-	static readonly DESCRIBE_TOPIC_DYNAMIC_CONFIGURATION =
+	static readonly DescribeTopicDynamicConfiguration =
 		"kafka-cluster:DescribeTopicDynamicConfiguration";
 	/** [List] kafka-cluster:DescribeTransactionalId */
-	static readonly DESCRIBE_TRANSACTIONAL_ID =
+	static readonly DescribeTransactionalId =
 		"kafka-cluster:DescribeTransactionalId";
 	/** [Read] kafka-cluster:ReadData */
-	static readonly READ_DATA = "kafka-cluster:ReadData";
+	static readonly ReadData = "kafka-cluster:ReadData";
 	/** [Write] kafka-cluster:WriteData */
-	static readonly WRITE_DATA = "kafka-cluster:WriteData";
+	static readonly WriteData = "kafka-cluster:WriteData";
 	/** [Write] kafka-cluster:WriteDataIdempotently */
-	static readonly WRITE_DATA_IDEMPOTENTLY =
-		"kafka-cluster:WriteDataIdempotently";
+	static readonly WriteDataIdempotently = "kafka-cluster:WriteDataIdempotently";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [KafkaClusterActions.READ_DATA];
+	static readonly AllReadActions: string[] = [KafkaClusterActions.ReadData];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KafkaClusterActions.ALTER_CLUSTER,
-		KafkaClusterActions.ALTER_CLUSTER_DYNAMIC_CONFIGURATION,
-		KafkaClusterActions.ALTER_GROUP,
-		KafkaClusterActions.ALTER_TOPIC,
-		KafkaClusterActions.ALTER_TOPIC_DYNAMIC_CONFIGURATION,
-		KafkaClusterActions.ALTER_TRANSACTIONAL_ID,
-		KafkaClusterActions.CONNECT,
-		KafkaClusterActions.CREATE_TOPIC,
-		KafkaClusterActions.DELETE_GROUP,
-		KafkaClusterActions.DELETE_TOPIC,
-		KafkaClusterActions.WRITE_DATA,
-		KafkaClusterActions.WRITE_DATA_IDEMPOTENTLY,
+	static readonly AllWriteActions: string[] = [
+		KafkaClusterActions.AlterCluster,
+		KafkaClusterActions.AlterClusterDynamicConfiguration,
+		KafkaClusterActions.AlterGroup,
+		KafkaClusterActions.AlterTopic,
+		KafkaClusterActions.AlterTopicDynamicConfiguration,
+		KafkaClusterActions.AlterTransactionalId,
+		KafkaClusterActions.Connect,
+		KafkaClusterActions.CreateTopic,
+		KafkaClusterActions.DeleteGroup,
+		KafkaClusterActions.DeleteTopic,
+		KafkaClusterActions.WriteData,
+		KafkaClusterActions.WriteDataIdempotently,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KafkaClusterActions.DESCRIBE_CLUSTER,
-		KafkaClusterActions.DESCRIBE_CLUSTER_DYNAMIC_CONFIGURATION,
-		KafkaClusterActions.DESCRIBE_GROUP,
-		KafkaClusterActions.DESCRIBE_TOPIC,
-		KafkaClusterActions.DESCRIBE_TOPIC_DYNAMIC_CONFIGURATION,
-		KafkaClusterActions.DESCRIBE_TRANSACTIONAL_ID,
+	static readonly AllListActions: string[] = [
+		KafkaClusterActions.DescribeCluster,
+		KafkaClusterActions.DescribeClusterDynamicConfiguration,
+		KafkaClusterActions.DescribeGroup,
+		KafkaClusterActions.DescribeTopic,
+		KafkaClusterActions.DescribeTopicDynamicConfiguration,
+		KafkaClusterActions.DescribeTransactionalId,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)$",
-);
-const GroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):group/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<groupName>[^:/?]+)$",
-);
-const TopicArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<topicName>[^:/?]+)$",
-);
-const TransactionalIdArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):transactional-id/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<transactionalId>[^:/?]+)$",
-);
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface KafkaClusterClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface KafkaClusterClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+}
+
+/**
+ * Properties for building a group ARN.
+ */
+export interface KafkaClusterGroupArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The GroupName component of the ARN. */
+	readonly groupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a group ARN.
+ */
+export interface KafkaClusterGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The GroupName component. */
+	readonly groupName: string;
+}
+
+/**
+ * Properties for building a topic ARN.
+ */
+export interface KafkaClusterTopicArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The TopicName component of the ARN. */
+	readonly topicName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a topic ARN.
+ */
+export interface KafkaClusterTopicArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The TopicName component. */
+	readonly topicName: string;
+}
+
+/**
+ * Properties for building a transactional-id ARN.
+ */
+export interface KafkaClusterTransactionalIdArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The TransactionalId component of the ARN. */
+	readonly transactionalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transactional-id ARN.
+ */
+export interface KafkaClusterTransactionalIdArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The TransactionalId component. */
+	readonly transactionalId: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)$/;
+const GroupArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):group\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<groupName>[^:/?]+)$/;
+const TopicArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<topicName>[^:/?]+)$/;
+const TransactionalIdArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):transactional-id\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<transactionalId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kafka-cluster resources.
@@ -109,18 +244,7 @@ export class KafkaClusterResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: KafkaClusterClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterName}/${props.clusterUuid}`;
 	}
 
@@ -135,13 +259,7 @@ export class KafkaClusterResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-	} {
+	static parseClusterArn(arn: string): KafkaClusterClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -158,20 +276,7 @@ export class KafkaClusterResources {
 	/**
 	 * Builds an ARN for the group resource.
 	 */
-	static group(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The GroupName component of the ARN. */
-		readonly groupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static group(props: KafkaClusterGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:group/${props.clusterName}/${props.clusterUuid}/${props.groupName}`;
 	}
 
@@ -186,14 +291,7 @@ export class KafkaClusterResources {
 	 * Parses a group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		groupName: string;
-	} {
+	static parseGroupArn(arn: string): KafkaClusterGroupArnComponents {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
@@ -211,20 +309,7 @@ export class KafkaClusterResources {
 	/**
 	 * Builds an ARN for the topic resource.
 	 */
-	static topic(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The TopicName component of the ARN. */
-		readonly topicName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static topic(props: KafkaClusterTopicArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:topic/${props.clusterName}/${props.clusterUuid}/${props.topicName}`;
 	}
 
@@ -239,14 +324,7 @@ export class KafkaClusterResources {
 	 * Parses a topic ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTopicArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		topicName: string;
-	} {
+	static parseTopicArn(arn: string): KafkaClusterTopicArnComponents {
 		const match = TopicArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid topic ARN: ${arn}`);
@@ -264,20 +342,7 @@ export class KafkaClusterResources {
 	/**
 	 * Builds an ARN for the transactional-id resource.
 	 */
-	static transactionalId(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The TransactionalId component of the ARN. */
-		readonly transactionalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transactionalId(props: KafkaClusterTransactionalIdArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:transactional-id/${props.clusterName}/${props.clusterUuid}/${props.transactionalId}`;
 	}
 
@@ -292,14 +357,9 @@ export class KafkaClusterResources {
 	 * Parses a transactional-id ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransactionalIdArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		transactionalId: string;
-	} {
+	static parseTransactionalIdArn(
+		arn: string,
+	): KafkaClusterTransactionalIdArnComponents {
 		const match = TransactionalIdArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transactional-id ARN: ${arn}`);
@@ -320,7 +380,7 @@ export class KafkaClusterResources {
  */
 export class KafkaClusterConditions {
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.

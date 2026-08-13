@@ -13,84 +13,138 @@ export class ElementalInferenceActions {
 	static readonly SERVICE_PREFIX = "elemental-inference";
 
 	/** [Write] elemental-inference:AssociateFeed */
-	static readonly ASSOCIATE_FEED = "elemental-inference:AssociateFeed";
+	static readonly AssociateFeed = "elemental-inference:AssociateFeed";
 	/** [Write] elemental-inference:CreateDictionary */
-	static readonly CREATE_DICTIONARY = "elemental-inference:CreateDictionary";
+	static readonly CreateDictionary = "elemental-inference:CreateDictionary";
 	/** [Write] elemental-inference:CreateFeed */
-	static readonly CREATE_FEED = "elemental-inference:CreateFeed";
+	static readonly CreateFeed = "elemental-inference:CreateFeed";
 	/** [Write] elemental-inference:DeleteDictionary */
-	static readonly DELETE_DICTIONARY = "elemental-inference:DeleteDictionary";
+	static readonly DeleteDictionary = "elemental-inference:DeleteDictionary";
 	/** [Write] elemental-inference:DeleteFeed */
-	static readonly DELETE_FEED = "elemental-inference:DeleteFeed";
+	static readonly DeleteFeed = "elemental-inference:DeleteFeed";
 	/** [Write] elemental-inference:DisassociateFeed */
-	static readonly DISASSOCIATE_FEED = "elemental-inference:DisassociateFeed";
+	static readonly DisassociateFeed = "elemental-inference:DisassociateFeed";
 	/** [Read] elemental-inference:ExportDictionaryEntries */
-	static readonly EXPORT_DICTIONARY_ENTRIES =
+	static readonly ExportDictionaryEntries =
 		"elemental-inference:ExportDictionaryEntries";
 	/** [Read] elemental-inference:GetDictionary */
-	static readonly GET_DICTIONARY = "elemental-inference:GetDictionary";
+	static readonly actionGetDictionary = "elemental-inference:GetDictionary";
 	/** [Read] elemental-inference:GetFeed */
-	static readonly GET_FEED = "elemental-inference:GetFeed";
+	static readonly actionGetFeed = "elemental-inference:GetFeed";
 	/** [Read] elemental-inference:GetMetadata */
-	static readonly GET_METADATA = "elemental-inference:GetMetadata";
+	static readonly actionGetMetadata = "elemental-inference:GetMetadata";
 	/** [List] elemental-inference:ListDictionaries */
-	static readonly LIST_DICTIONARIES = "elemental-inference:ListDictionaries";
+	static readonly ListDictionaries = "elemental-inference:ListDictionaries";
 	/** [List] elemental-inference:ListFeeds */
-	static readonly LIST_FEEDS = "elemental-inference:ListFeeds";
+	static readonly ListFeeds = "elemental-inference:ListFeeds";
 	/** [Read] elemental-inference:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"elemental-inference:ListTagsForResource";
 	/** [Write] elemental-inference:PutMedia */
-	static readonly PUT_MEDIA = "elemental-inference:PutMedia";
+	static readonly PutMedia = "elemental-inference:PutMedia";
 	/** [Tagging] elemental-inference:TagResource */
-	static readonly TAG_RESOURCE = "elemental-inference:TagResource";
+	static readonly TagResource = "elemental-inference:TagResource";
 	/** [Tagging] elemental-inference:UntagResource */
-	static readonly UNTAG_RESOURCE = "elemental-inference:UntagResource";
+	static readonly UntagResource = "elemental-inference:UntagResource";
 	/** [Write] elemental-inference:UpdateDictionary */
-	static readonly UPDATE_DICTIONARY = "elemental-inference:UpdateDictionary";
+	static readonly UpdateDictionary = "elemental-inference:UpdateDictionary";
 	/** [Write] elemental-inference:UpdateFeed */
-	static readonly UPDATE_FEED = "elemental-inference:UpdateFeed";
+	static readonly UpdateFeed = "elemental-inference:UpdateFeed";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElementalInferenceActions.EXPORT_DICTIONARY_ENTRIES,
-		ElementalInferenceActions.GET_DICTIONARY,
-		ElementalInferenceActions.GET_FEED,
-		ElementalInferenceActions.GET_METADATA,
-		ElementalInferenceActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ElementalInferenceActions.ExportDictionaryEntries,
+		ElementalInferenceActions.actionGetDictionary,
+		ElementalInferenceActions.actionGetFeed,
+		ElementalInferenceActions.actionGetMetadata,
+		ElementalInferenceActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElementalInferenceActions.ASSOCIATE_FEED,
-		ElementalInferenceActions.CREATE_DICTIONARY,
-		ElementalInferenceActions.CREATE_FEED,
-		ElementalInferenceActions.DELETE_DICTIONARY,
-		ElementalInferenceActions.DELETE_FEED,
-		ElementalInferenceActions.DISASSOCIATE_FEED,
-		ElementalInferenceActions.PUT_MEDIA,
-		ElementalInferenceActions.UPDATE_DICTIONARY,
-		ElementalInferenceActions.UPDATE_FEED,
+	static readonly AllWriteActions: string[] = [
+		ElementalInferenceActions.AssociateFeed,
+		ElementalInferenceActions.CreateDictionary,
+		ElementalInferenceActions.CreateFeed,
+		ElementalInferenceActions.DeleteDictionary,
+		ElementalInferenceActions.DeleteFeed,
+		ElementalInferenceActions.DisassociateFeed,
+		ElementalInferenceActions.PutMedia,
+		ElementalInferenceActions.UpdateDictionary,
+		ElementalInferenceActions.UpdateFeed,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElementalInferenceActions.LIST_DICTIONARIES,
-		ElementalInferenceActions.LIST_FEEDS,
+	static readonly AllListActions: string[] = [
+		ElementalInferenceActions.ListDictionaries,
+		ElementalInferenceActions.ListFeeds,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ElementalInferenceActions.TAG_RESOURCE,
-		ElementalInferenceActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ElementalInferenceActions.TagResource,
+		ElementalInferenceActions.UntagResource,
 	];
 }
 
-const DictionaryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elemental-inference:(?<region>[^:]*):(?<account>[^:]*):dictionary/(?<id>[^:/?]+)$",
-);
-const FeedArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elemental-inference:(?<region>[^:]*):(?<account>[^:]*):feed/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a dictionary ARN.
+ */
+export interface ElementalInferenceDictionaryArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dictionary ARN.
+ */
+export interface ElementalInferenceDictionaryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a feed ARN.
+ */
+export interface ElementalInferenceFeedArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a feed ARN.
+ */
+export interface ElementalInferenceFeedArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const DictionaryArnRegex =
+	/^arn:(?<partition>[^:]+):elemental-inference:(?<region>[^:]*):(?<account>[^:]*):dictionary\/(?<id>[^:/?]+)$/;
+const FeedArnRegex =
+	/^arn:(?<partition>[^:]+):elemental-inference:(?<region>[^:]*):(?<account>[^:]*):feed\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elemental-inference resources.
@@ -99,16 +153,7 @@ export class ElementalInferenceResources {
 	/**
 	 * Builds an ARN for the dictionary resource.
 	 */
-	static dictionary(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dictionary(props: ElementalInferenceDictionaryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elemental-inference:${props.region ?? "*"}:${props.account ?? "*"}:dictionary/${props.id}`;
 	}
 
@@ -123,12 +168,9 @@ export class ElementalInferenceResources {
 	 * Parses a dictionary ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDictionaryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseDictionaryArn(
+		arn: string,
+	): ElementalInferenceDictionaryArnComponents {
 		const match = DictionaryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dictionary ARN: ${arn}`);
@@ -144,16 +186,7 @@ export class ElementalInferenceResources {
 	/**
 	 * Builds an ARN for the feed resource.
 	 */
-	static feed(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static feed(props: ElementalInferenceFeedArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elemental-inference:${props.region ?? "*"}:${props.account ?? "*"}:feed/${props.id}`;
 	}
 
@@ -168,12 +201,7 @@ export class ElementalInferenceResources {
 	 * Parses a feed ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFeedArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseFeedArn(arn: string): ElementalInferenceFeedArnComponents {
 		const match = FeedArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid feed ARN: ${arn}`);
@@ -192,64 +220,64 @@ export class ElementalInferenceResources {
  */
 export class ElementalInferenceOperations {
 	/** IAM actions required for the AssociateFeed API call. */
-	static readonly ASSOCIATE_FEED: string[] = [
+	static readonly AssociateFeed: string[] = [
 		"elemental-inference:AssociateFeed",
 	];
 	/** IAM actions required for the CreateDictionary API call. */
-	static readonly CREATE_DICTIONARY: string[] = [
+	static readonly CreateDictionary: string[] = [
 		"elemental-inference:CreateDictionary",
 		"elemental-inference:TagResource",
 	];
 	/** IAM actions required for the CreateFeed API call. */
-	static readonly CREATE_FEED: string[] = [
+	static readonly CreateFeed: string[] = [
 		"elemental-inference:CreateFeed",
 		"iam:PassRole",
 		"elemental-inference:TagResource",
 	];
 	/** IAM actions required for the DeleteDictionary API call. */
-	static readonly DELETE_DICTIONARY: string[] = [
+	static readonly DeleteDictionary: string[] = [
 		"elemental-inference:DeleteDictionary",
 	];
 	/** IAM actions required for the DeleteFeed API call. */
-	static readonly DELETE_FEED: string[] = ["elemental-inference:DeleteFeed"];
+	static readonly DeleteFeed: string[] = ["elemental-inference:DeleteFeed"];
 	/** IAM actions required for the DisassociateFeed API call. */
-	static readonly DISASSOCIATE_FEED: string[] = [
+	static readonly DisassociateFeed: string[] = [
 		"elemental-inference:DisassociateFeed",
 	];
 	/** IAM actions required for the ExportDictionaryEntries API call. */
-	static readonly EXPORT_DICTIONARY_ENTRIES: string[] = [
+	static readonly ExportDictionaryEntries: string[] = [
 		"elemental-inference:ExportDictionaryEntries",
 	];
 	/** IAM actions required for the GetDictionary API call. */
-	static readonly GET_DICTIONARY: string[] = [
+	static readonly opGetDictionary: string[] = [
 		"elemental-inference:GetDictionary",
 	];
 	/** IAM actions required for the GetFeed API call. */
-	static readonly GET_FEED: string[] = ["elemental-inference:GetFeed"];
+	static readonly opGetFeed: string[] = ["elemental-inference:GetFeed"];
 	/** IAM actions required for the ListDictionaries API call. */
-	static readonly LIST_DICTIONARIES: string[] = [
+	static readonly ListDictionaries: string[] = [
 		"elemental-inference:ListDictionaries",
 	];
 	/** IAM actions required for the ListFeeds API call. */
-	static readonly LIST_FEEDS: string[] = ["elemental-inference:ListFeeds"];
+	static readonly ListFeeds: string[] = ["elemental-inference:ListFeeds"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"elemental-inference:ListTagsForResource",
 	];
 	/** IAM actions required for the SearchFixtures API call. */
-	static readonly SEARCH_FIXTURES: string[] = [];
+	static readonly SearchFixtures: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["elemental-inference:TagResource"];
+	static readonly TagResource: string[] = ["elemental-inference:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"elemental-inference:UntagResource",
 	];
 	/** IAM actions required for the UpdateDictionary API call. */
-	static readonly UPDATE_DICTIONARY: string[] = [
+	static readonly UpdateDictionary: string[] = [
 		"elemental-inference:UpdateDictionary",
 	];
 	/** IAM actions required for the UpdateFeed API call. */
-	static readonly UPDATE_FEED: string[] = [
+	static readonly UpdateFeed: string[] = [
 		"iam:PassRole",
 		"elemental-inference:UpdateFeed",
 	];
@@ -260,29 +288,29 @@ export class ElementalInferenceOperations {
  */
 export class ElementalInferenceConditions {
 	/** Condition keys applicable to the CreateDictionary action. */
-	static readonly CREATE_DICTIONARY_CONDITION_KEYS: string[] = [
+	static readonly CreateDictionaryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFeed action. */
-	static readonly CREATE_FEED_CONDITION_KEYS: string[] = [
+	static readonly CreateFeedConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

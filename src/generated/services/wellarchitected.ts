@@ -13,357 +13,512 @@ export class WellArchitectedActions {
 	static readonly SERVICE_PREFIX = "wellarchitected";
 
 	/** [Write] wellarchitected:AssociateLenses */
-	static readonly ASSOCIATE_LENSES = "wellarchitected:AssociateLenses";
+	static readonly AssociateLenses = "wellarchitected:AssociateLenses";
 	/** [Write] wellarchitected:AssociateProfiles */
-	static readonly ASSOCIATE_PROFILES = "wellarchitected:AssociateProfiles";
+	static readonly AssociateProfiles = "wellarchitected:AssociateProfiles";
 	/** [Write] wellarchitected:ConfigureIntegration */
-	static readonly CONFIGURE_INTEGRATION =
-		"wellarchitected:ConfigureIntegration";
+	static readonly ConfigureIntegration = "wellarchitected:ConfigureIntegration";
 	/** [Write] wellarchitected:CreateAgentContext */
-	static readonly CREATE_AGENT_CONTEXT = "wellarchitected:CreateAgentContext";
+	static readonly CreateAgentContext = "wellarchitected:CreateAgentContext";
 	/** [Write] wellarchitected:CreateAgentGoal */
-	static readonly CREATE_AGENT_GOAL = "wellarchitected:CreateAgentGoal";
+	static readonly CreateAgentGoal = "wellarchitected:CreateAgentGoal";
 	/** [Write] wellarchitected:CreateAgentProfile */
-	static readonly CREATE_AGENT_PROFILE = "wellarchitected:CreateAgentProfile";
+	static readonly CreateAgentProfile = "wellarchitected:CreateAgentProfile";
 	/** [Write] wellarchitected:CreateLensShare */
-	static readonly CREATE_LENS_SHARE = "wellarchitected:CreateLensShare";
+	static readonly CreateLensShare = "wellarchitected:CreateLensShare";
 	/** [Write] wellarchitected:CreateLensVersion */
-	static readonly CREATE_LENS_VERSION = "wellarchitected:CreateLensVersion";
+	static readonly CreateLensVersion = "wellarchitected:CreateLensVersion";
 	/** [Write] wellarchitected:CreateMilestone */
-	static readonly CREATE_MILESTONE = "wellarchitected:CreateMilestone";
+	static readonly CreateMilestone = "wellarchitected:CreateMilestone";
 	/** [Write] wellarchitected:CreateProfile */
-	static readonly CREATE_PROFILE = "wellarchitected:CreateProfile";
+	static readonly CreateProfile = "wellarchitected:CreateProfile";
 	/** [Write] wellarchitected:CreateProfileShare */
-	static readonly CREATE_PROFILE_SHARE = "wellarchitected:CreateProfileShare";
+	static readonly CreateProfileShare = "wellarchitected:CreateProfileShare";
 	/** [Write] wellarchitected:CreateReviewTemplate */
-	static readonly CREATE_REVIEW_TEMPLATE =
-		"wellarchitected:CreateReviewTemplate";
+	static readonly CreateReviewTemplate = "wellarchitected:CreateReviewTemplate";
 	/** [Write] wellarchitected:CreateTemplateShare */
-	static readonly CREATE_TEMPLATE_SHARE = "wellarchitected:CreateTemplateShare";
+	static readonly CreateTemplateShare = "wellarchitected:CreateTemplateShare";
 	/** [Write] wellarchitected:CreateWorkload */
-	static readonly CREATE_WORKLOAD = "wellarchitected:CreateWorkload";
+	static readonly CreateWorkload = "wellarchitected:CreateWorkload";
 	/** [Write] wellarchitected:CreateWorkloadShare */
-	static readonly CREATE_WORKLOAD_SHARE = "wellarchitected:CreateWorkloadShare";
+	static readonly CreateWorkloadShare = "wellarchitected:CreateWorkloadShare";
 	/** [Write] wellarchitected:DeleteAgentContext */
-	static readonly DELETE_AGENT_CONTEXT = "wellarchitected:DeleteAgentContext";
+	static readonly DeleteAgentContext = "wellarchitected:DeleteAgentContext";
 	/** [Write] wellarchitected:DeleteAgentGoal */
-	static readonly DELETE_AGENT_GOAL = "wellarchitected:DeleteAgentGoal";
+	static readonly DeleteAgentGoal = "wellarchitected:DeleteAgentGoal";
 	/** [Write] wellarchitected:DeleteAgentProfile */
-	static readonly DELETE_AGENT_PROFILE = "wellarchitected:DeleteAgentProfile";
+	static readonly DeleteAgentProfile = "wellarchitected:DeleteAgentProfile";
 	/** [Write] wellarchitected:DeleteLens */
-	static readonly DELETE_LENS = "wellarchitected:DeleteLens";
+	static readonly DeleteLens = "wellarchitected:DeleteLens";
 	/** [Write] wellarchitected:DeleteLensShare */
-	static readonly DELETE_LENS_SHARE = "wellarchitected:DeleteLensShare";
+	static readonly DeleteLensShare = "wellarchitected:DeleteLensShare";
 	/** [Write] wellarchitected:DeleteProfile */
-	static readonly DELETE_PROFILE = "wellarchitected:DeleteProfile";
+	static readonly DeleteProfile = "wellarchitected:DeleteProfile";
 	/** [Write] wellarchitected:DeleteProfileShare */
-	static readonly DELETE_PROFILE_SHARE = "wellarchitected:DeleteProfileShare";
+	static readonly DeleteProfileShare = "wellarchitected:DeleteProfileShare";
 	/** [Write] wellarchitected:DeleteReviewTemplate */
-	static readonly DELETE_REVIEW_TEMPLATE =
-		"wellarchitected:DeleteReviewTemplate";
+	static readonly DeleteReviewTemplate = "wellarchitected:DeleteReviewTemplate";
 	/** [Write] wellarchitected:DeleteTemplateShare */
-	static readonly DELETE_TEMPLATE_SHARE = "wellarchitected:DeleteTemplateShare";
+	static readonly DeleteTemplateShare = "wellarchitected:DeleteTemplateShare";
 	/** [Write] wellarchitected:DeleteWorkload */
-	static readonly DELETE_WORKLOAD = "wellarchitected:DeleteWorkload";
+	static readonly DeleteWorkload = "wellarchitected:DeleteWorkload";
 	/** [Write] wellarchitected:DeleteWorkloadShare */
-	static readonly DELETE_WORKLOAD_SHARE = "wellarchitected:DeleteWorkloadShare";
+	static readonly DeleteWorkloadShare = "wellarchitected:DeleteWorkloadShare";
 	/** [Write] wellarchitected:DisassociateLenses */
-	static readonly DISASSOCIATE_LENSES = "wellarchitected:DisassociateLenses";
+	static readonly DisassociateLenses = "wellarchitected:DisassociateLenses";
 	/** [Write] wellarchitected:DisassociateProfiles */
-	static readonly DISASSOCIATE_PROFILES =
-		"wellarchitected:DisassociateProfiles";
+	static readonly DisassociateProfiles = "wellarchitected:DisassociateProfiles";
 	/** [Read] wellarchitected:ExportLens */
-	static readonly EXPORT_LENS = "wellarchitected:ExportLens";
+	static readonly ExportLens = "wellarchitected:ExportLens";
 	/** [Read] wellarchitected:GetAgentContext */
-	static readonly GET_AGENT_CONTEXT = "wellarchitected:GetAgentContext";
+	static readonly actionGetAgentContext = "wellarchitected:GetAgentContext";
 	/** [Read] wellarchitected:GetAgentGoal */
-	static readonly GET_AGENT_GOAL = "wellarchitected:GetAgentGoal";
+	static readonly actionGetAgentGoal = "wellarchitected:GetAgentGoal";
 	/** [Read] wellarchitected:GetAgentProfile */
-	static readonly GET_AGENT_PROFILE = "wellarchitected:GetAgentProfile";
+	static readonly actionGetAgentProfile = "wellarchitected:GetAgentProfile";
 	/** [Read] wellarchitected:GetAgentRecommendation */
-	static readonly GET_AGENT_RECOMMENDATION =
+	static readonly actionGetAgentRecommendation =
 		"wellarchitected:GetAgentRecommendation";
 	/** [Read] wellarchitected:GetAgentRecommendationGeneration */
-	static readonly GET_AGENT_RECOMMENDATION_GENERATION =
+	static readonly actionGetAgentRecommendationGeneration =
 		"wellarchitected:GetAgentRecommendationGeneration";
 	/** [Read] wellarchitected:GetAnswer */
-	static readonly GET_ANSWER = "wellarchitected:GetAnswer";
+	static readonly actionGetAnswer = "wellarchitected:GetAnswer";
 	/** [Read] wellarchitected:GetConsolidatedReport */
-	static readonly GET_CONSOLIDATED_REPORT =
+	static readonly actionGetConsolidatedReport =
 		"wellarchitected:GetConsolidatedReport";
 	/** [Read] wellarchitected:GetGlobalSettings */
-	static readonly GET_GLOBAL_SETTINGS = "wellarchitected:GetGlobalSettings";
+	static readonly actionGetGlobalSettings = "wellarchitected:GetGlobalSettings";
 	/** [Read] wellarchitected:GetLens */
-	static readonly GET_LENS = "wellarchitected:GetLens";
+	static readonly actionGetLens = "wellarchitected:GetLens";
 	/** [Read] wellarchitected:GetLensReview */
-	static readonly GET_LENS_REVIEW = "wellarchitected:GetLensReview";
+	static readonly actionGetLensReview = "wellarchitected:GetLensReview";
 	/** [Read] wellarchitected:GetLensReviewReport */
-	static readonly GET_LENS_REVIEW_REPORT =
+	static readonly actionGetLensReviewReport =
 		"wellarchitected:GetLensReviewReport";
 	/** [Read] wellarchitected:GetLensVersionDifference */
-	static readonly GET_LENS_VERSION_DIFFERENCE =
+	static readonly actionGetLensVersionDifference =
 		"wellarchitected:GetLensVersionDifference";
 	/** [Read] wellarchitected:GetMilestone */
-	static readonly GET_MILESTONE = "wellarchitected:GetMilestone";
+	static readonly actionGetMilestone = "wellarchitected:GetMilestone";
 	/** [Read] wellarchitected:GetProfile */
-	static readonly GET_PROFILE = "wellarchitected:GetProfile";
+	static readonly actionGetProfile = "wellarchitected:GetProfile";
 	/** [Read] wellarchitected:GetProfileTemplate */
-	static readonly GET_PROFILE_TEMPLATE = "wellarchitected:GetProfileTemplate";
+	static readonly actionGetProfileTemplate =
+		"wellarchitected:GetProfileTemplate";
 	/** [Read] wellarchitected:GetReviewTemplate */
-	static readonly GET_REVIEW_TEMPLATE = "wellarchitected:GetReviewTemplate";
+	static readonly actionGetReviewTemplate = "wellarchitected:GetReviewTemplate";
 	/** [Read] wellarchitected:GetReviewTemplateAnswer */
-	static readonly GET_REVIEW_TEMPLATE_ANSWER =
+	static readonly actionGetReviewTemplateAnswer =
 		"wellarchitected:GetReviewTemplateAnswer";
 	/** [Read] wellarchitected:GetReviewTemplateLensReview */
-	static readonly GET_REVIEW_TEMPLATE_LENS_REVIEW =
+	static readonly actionGetReviewTemplateLensReview =
 		"wellarchitected:GetReviewTemplateLensReview";
 	/** [Read] wellarchitected:GetWorkload */
-	static readonly GET_WORKLOAD = "wellarchitected:GetWorkload";
+	static readonly actionGetWorkload = "wellarchitected:GetWorkload";
 	/** [Write] wellarchitected:ImportLens */
-	static readonly IMPORT_LENS = "wellarchitected:ImportLens";
+	static readonly ImportLens = "wellarchitected:ImportLens";
 	/** [Read] wellarchitected:ListAgentContexts */
-	static readonly LIST_AGENT_CONTEXTS = "wellarchitected:ListAgentContexts";
+	static readonly ListAgentContexts = "wellarchitected:ListAgentContexts";
 	/** [Read] wellarchitected:ListAgentGoals */
-	static readonly LIST_AGENT_GOALS = "wellarchitected:ListAgentGoals";
+	static readonly ListAgentGoals = "wellarchitected:ListAgentGoals";
 	/** [Read] wellarchitected:ListAgentProfiles */
-	static readonly LIST_AGENT_PROFILES = "wellarchitected:ListAgentProfiles";
+	static readonly ListAgentProfiles = "wellarchitected:ListAgentProfiles";
 	/** [Read] wellarchitected:ListAgentRecommendationGenerations */
-	static readonly LIST_AGENT_RECOMMENDATION_GENERATIONS =
+	static readonly ListAgentRecommendationGenerations =
 		"wellarchitected:ListAgentRecommendationGenerations";
 	/** [Read] wellarchitected:ListAgentRecommendationItems */
-	static readonly LIST_AGENT_RECOMMENDATION_ITEMS =
+	static readonly ListAgentRecommendationItems =
 		"wellarchitected:ListAgentRecommendationItems";
 	/** [Read] wellarchitected:ListAgentRecommendations */
-	static readonly LIST_AGENT_RECOMMENDATIONS =
+	static readonly ListAgentRecommendations =
 		"wellarchitected:ListAgentRecommendations";
 	/** [List] wellarchitected:ListAnswers */
-	static readonly LIST_ANSWERS = "wellarchitected:ListAnswers";
+	static readonly ListAnswers = "wellarchitected:ListAnswers";
 	/** [List] wellarchitected:ListCheckDetails */
-	static readonly LIST_CHECK_DETAILS = "wellarchitected:ListCheckDetails";
+	static readonly ListCheckDetails = "wellarchitected:ListCheckDetails";
 	/** [List] wellarchitected:ListCheckSummaries */
-	static readonly LIST_CHECK_SUMMARIES = "wellarchitected:ListCheckSummaries";
+	static readonly ListCheckSummaries = "wellarchitected:ListCheckSummaries";
 	/** [List] wellarchitected:ListLensReviewImprovements */
-	static readonly LIST_LENS_REVIEW_IMPROVEMENTS =
+	static readonly ListLensReviewImprovements =
 		"wellarchitected:ListLensReviewImprovements";
 	/** [List] wellarchitected:ListLensReviews */
-	static readonly LIST_LENS_REVIEWS = "wellarchitected:ListLensReviews";
+	static readonly ListLensReviews = "wellarchitected:ListLensReviews";
 	/** [List] wellarchitected:ListLensShares */
-	static readonly LIST_LENS_SHARES = "wellarchitected:ListLensShares";
+	static readonly ListLensShares = "wellarchitected:ListLensShares";
 	/** [List] wellarchitected:ListLenses */
-	static readonly LIST_LENSES = "wellarchitected:ListLenses";
+	static readonly ListLenses = "wellarchitected:ListLenses";
 	/** [List] wellarchitected:ListMilestones */
-	static readonly LIST_MILESTONES = "wellarchitected:ListMilestones";
+	static readonly ListMilestones = "wellarchitected:ListMilestones";
 	/** [List] wellarchitected:ListNotifications */
-	static readonly LIST_NOTIFICATIONS = "wellarchitected:ListNotifications";
+	static readonly ListNotifications = "wellarchitected:ListNotifications";
 	/** [List] wellarchitected:ListProfileNotifications */
-	static readonly LIST_PROFILE_NOTIFICATIONS =
+	static readonly ListProfileNotifications =
 		"wellarchitected:ListProfileNotifications";
 	/** [List] wellarchitected:ListProfileShares */
-	static readonly LIST_PROFILE_SHARES = "wellarchitected:ListProfileShares";
+	static readonly ListProfileShares = "wellarchitected:ListProfileShares";
 	/** [List] wellarchitected:ListProfiles */
-	static readonly LIST_PROFILES = "wellarchitected:ListProfiles";
+	static readonly ListProfiles = "wellarchitected:ListProfiles";
 	/** [List] wellarchitected:ListReviewTemplateAnswers */
-	static readonly LIST_REVIEW_TEMPLATE_ANSWERS =
+	static readonly ListReviewTemplateAnswers =
 		"wellarchitected:ListReviewTemplateAnswers";
 	/** [List] wellarchitected:ListReviewTemplates */
-	static readonly LIST_REVIEW_TEMPLATES = "wellarchitected:ListReviewTemplates";
+	static readonly ListReviewTemplates = "wellarchitected:ListReviewTemplates";
 	/** [List] wellarchitected:ListShareInvitations */
-	static readonly LIST_SHARE_INVITATIONS =
-		"wellarchitected:ListShareInvitations";
+	static readonly ListShareInvitations = "wellarchitected:ListShareInvitations";
 	/** [Read] wellarchitected:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"wellarchitected:ListTagsForResource";
+	static readonly ListTagsForResource = "wellarchitected:ListTagsForResource";
 	/** [List] wellarchitected:ListTemplateShares */
-	static readonly LIST_TEMPLATE_SHARES = "wellarchitected:ListTemplateShares";
+	static readonly ListTemplateShares = "wellarchitected:ListTemplateShares";
 	/** [List] wellarchitected:ListWorkloadShares */
-	static readonly LIST_WORKLOAD_SHARES = "wellarchitected:ListWorkloadShares";
+	static readonly ListWorkloadShares = "wellarchitected:ListWorkloadShares";
 	/** [List] wellarchitected:ListWorkloads */
-	static readonly LIST_WORKLOADS = "wellarchitected:ListWorkloads";
+	static readonly ListWorkloads = "wellarchitected:ListWorkloads";
 	/** [Write] wellarchitected:PutAgentRecommendationFeedback */
-	static readonly PUT_AGENT_RECOMMENDATION_FEEDBACK =
+	static readonly PutAgentRecommendationFeedback =
 		"wellarchitected:PutAgentRecommendationFeedback";
 	/** [Write] wellarchitected:StartAgentRecommendationGeneration */
-	static readonly START_AGENT_RECOMMENDATION_GENERATION =
+	static readonly StartAgentRecommendationGeneration =
 		"wellarchitected:StartAgentRecommendationGeneration";
 	/** [Tagging] wellarchitected:TagResource */
-	static readonly TAG_RESOURCE = "wellarchitected:TagResource";
+	static readonly TagResource = "wellarchitected:TagResource";
 	/** [Tagging] wellarchitected:UntagResource */
-	static readonly UNTAG_RESOURCE = "wellarchitected:UntagResource";
+	static readonly UntagResource = "wellarchitected:UntagResource";
 	/** [Write] wellarchitected:UpdateAgentContext */
-	static readonly UPDATE_AGENT_CONTEXT = "wellarchitected:UpdateAgentContext";
+	static readonly UpdateAgentContext = "wellarchitected:UpdateAgentContext";
 	/** [Write] wellarchitected:UpdateAgentGoal */
-	static readonly UPDATE_AGENT_GOAL = "wellarchitected:UpdateAgentGoal";
+	static readonly UpdateAgentGoal = "wellarchitected:UpdateAgentGoal";
 	/** [Write] wellarchitected:UpdateAgentProfile */
-	static readonly UPDATE_AGENT_PROFILE = "wellarchitected:UpdateAgentProfile";
+	static readonly UpdateAgentProfile = "wellarchitected:UpdateAgentProfile";
 	/** [Write] wellarchitected:UpdateAgentRecommendationStatus */
-	static readonly UPDATE_AGENT_RECOMMENDATION_STATUS =
+	static readonly UpdateAgentRecommendationStatus =
 		"wellarchitected:UpdateAgentRecommendationStatus";
 	/** [Write] wellarchitected:UpdateAnswer */
-	static readonly UPDATE_ANSWER = "wellarchitected:UpdateAnswer";
+	static readonly UpdateAnswer = "wellarchitected:UpdateAnswer";
 	/** [Write] wellarchitected:UpdateGlobalSettings */
-	static readonly UPDATE_GLOBAL_SETTINGS =
-		"wellarchitected:UpdateGlobalSettings";
+	static readonly UpdateGlobalSettings = "wellarchitected:UpdateGlobalSettings";
 	/** [Write] wellarchitected:UpdateIntegration */
-	static readonly UPDATE_INTEGRATION = "wellarchitected:UpdateIntegration";
+	static readonly UpdateIntegration = "wellarchitected:UpdateIntegration";
 	/** [Write] wellarchitected:UpdateLensReview */
-	static readonly UPDATE_LENS_REVIEW = "wellarchitected:UpdateLensReview";
+	static readonly UpdateLensReview = "wellarchitected:UpdateLensReview";
 	/** [Write] wellarchitected:UpdateProfile */
-	static readonly UPDATE_PROFILE = "wellarchitected:UpdateProfile";
+	static readonly UpdateProfile = "wellarchitected:UpdateProfile";
 	/** [Write] wellarchitected:UpdateReviewTemplate */
-	static readonly UPDATE_REVIEW_TEMPLATE =
-		"wellarchitected:UpdateReviewTemplate";
+	static readonly UpdateReviewTemplate = "wellarchitected:UpdateReviewTemplate";
 	/** [Write] wellarchitected:UpdateReviewTemplateAnswer */
-	static readonly UPDATE_REVIEW_TEMPLATE_ANSWER =
+	static readonly UpdateReviewTemplateAnswer =
 		"wellarchitected:UpdateReviewTemplateAnswer";
 	/** [Write] wellarchitected:UpdateReviewTemplateLensReview */
-	static readonly UPDATE_REVIEW_TEMPLATE_LENS_REVIEW =
+	static readonly UpdateReviewTemplateLensReview =
 		"wellarchitected:UpdateReviewTemplateLensReview";
 	/** [Write] wellarchitected:UpdateShareInvitation */
-	static readonly UPDATE_SHARE_INVITATION =
+	static readonly UpdateShareInvitation =
 		"wellarchitected:UpdateShareInvitation";
 	/** [Write] wellarchitected:UpdateWorkload */
-	static readonly UPDATE_WORKLOAD = "wellarchitected:UpdateWorkload";
+	static readonly UpdateWorkload = "wellarchitected:UpdateWorkload";
 	/** [Write] wellarchitected:UpdateWorkloadShare */
-	static readonly UPDATE_WORKLOAD_SHARE = "wellarchitected:UpdateWorkloadShare";
+	static readonly UpdateWorkloadShare = "wellarchitected:UpdateWorkloadShare";
 	/** [Write] wellarchitected:UpgradeLensReview */
-	static readonly UPGRADE_LENS_REVIEW = "wellarchitected:UpgradeLensReview";
+	static readonly UpgradeLensReview = "wellarchitected:UpgradeLensReview";
 	/** [Write] wellarchitected:UpgradeProfileVersion */
-	static readonly UPGRADE_PROFILE_VERSION =
+	static readonly UpgradeProfileVersion =
 		"wellarchitected:UpgradeProfileVersion";
 	/** [Write] wellarchitected:UpgradeReviewTemplateLensReview */
-	static readonly UPGRADE_REVIEW_TEMPLATE_LENS_REVIEW =
+	static readonly UpgradeReviewTemplateLensReview =
 		"wellarchitected:UpgradeReviewTemplateLensReview";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WellArchitectedActions.EXPORT_LENS,
-		WellArchitectedActions.GET_AGENT_CONTEXT,
-		WellArchitectedActions.GET_AGENT_GOAL,
-		WellArchitectedActions.GET_AGENT_PROFILE,
-		WellArchitectedActions.GET_AGENT_RECOMMENDATION,
-		WellArchitectedActions.GET_AGENT_RECOMMENDATION_GENERATION,
-		WellArchitectedActions.GET_ANSWER,
-		WellArchitectedActions.GET_CONSOLIDATED_REPORT,
-		WellArchitectedActions.GET_GLOBAL_SETTINGS,
-		WellArchitectedActions.GET_LENS,
-		WellArchitectedActions.GET_LENS_REVIEW,
-		WellArchitectedActions.GET_LENS_REVIEW_REPORT,
-		WellArchitectedActions.GET_LENS_VERSION_DIFFERENCE,
-		WellArchitectedActions.GET_MILESTONE,
-		WellArchitectedActions.GET_PROFILE,
-		WellArchitectedActions.GET_PROFILE_TEMPLATE,
-		WellArchitectedActions.GET_REVIEW_TEMPLATE,
-		WellArchitectedActions.GET_REVIEW_TEMPLATE_ANSWER,
-		WellArchitectedActions.GET_REVIEW_TEMPLATE_LENS_REVIEW,
-		WellArchitectedActions.GET_WORKLOAD,
-		WellArchitectedActions.LIST_AGENT_CONTEXTS,
-		WellArchitectedActions.LIST_AGENT_GOALS,
-		WellArchitectedActions.LIST_AGENT_PROFILES,
-		WellArchitectedActions.LIST_AGENT_RECOMMENDATION_GENERATIONS,
-		WellArchitectedActions.LIST_AGENT_RECOMMENDATION_ITEMS,
-		WellArchitectedActions.LIST_AGENT_RECOMMENDATIONS,
-		WellArchitectedActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		WellArchitectedActions.ExportLens,
+		WellArchitectedActions.actionGetAgentContext,
+		WellArchitectedActions.actionGetAgentGoal,
+		WellArchitectedActions.actionGetAgentProfile,
+		WellArchitectedActions.actionGetAgentRecommendation,
+		WellArchitectedActions.actionGetAgentRecommendationGeneration,
+		WellArchitectedActions.actionGetAnswer,
+		WellArchitectedActions.actionGetConsolidatedReport,
+		WellArchitectedActions.actionGetGlobalSettings,
+		WellArchitectedActions.actionGetLens,
+		WellArchitectedActions.actionGetLensReview,
+		WellArchitectedActions.actionGetLensReviewReport,
+		WellArchitectedActions.actionGetLensVersionDifference,
+		WellArchitectedActions.actionGetMilestone,
+		WellArchitectedActions.actionGetProfile,
+		WellArchitectedActions.actionGetProfileTemplate,
+		WellArchitectedActions.actionGetReviewTemplate,
+		WellArchitectedActions.actionGetReviewTemplateAnswer,
+		WellArchitectedActions.actionGetReviewTemplateLensReview,
+		WellArchitectedActions.actionGetWorkload,
+		WellArchitectedActions.ListAgentContexts,
+		WellArchitectedActions.ListAgentGoals,
+		WellArchitectedActions.ListAgentProfiles,
+		WellArchitectedActions.ListAgentRecommendationGenerations,
+		WellArchitectedActions.ListAgentRecommendationItems,
+		WellArchitectedActions.ListAgentRecommendations,
+		WellArchitectedActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WellArchitectedActions.ASSOCIATE_LENSES,
-		WellArchitectedActions.ASSOCIATE_PROFILES,
-		WellArchitectedActions.CONFIGURE_INTEGRATION,
-		WellArchitectedActions.CREATE_AGENT_CONTEXT,
-		WellArchitectedActions.CREATE_AGENT_GOAL,
-		WellArchitectedActions.CREATE_AGENT_PROFILE,
-		WellArchitectedActions.CREATE_LENS_SHARE,
-		WellArchitectedActions.CREATE_LENS_VERSION,
-		WellArchitectedActions.CREATE_MILESTONE,
-		WellArchitectedActions.CREATE_PROFILE,
-		WellArchitectedActions.CREATE_PROFILE_SHARE,
-		WellArchitectedActions.CREATE_REVIEW_TEMPLATE,
-		WellArchitectedActions.CREATE_TEMPLATE_SHARE,
-		WellArchitectedActions.CREATE_WORKLOAD,
-		WellArchitectedActions.CREATE_WORKLOAD_SHARE,
-		WellArchitectedActions.DELETE_AGENT_CONTEXT,
-		WellArchitectedActions.DELETE_AGENT_GOAL,
-		WellArchitectedActions.DELETE_AGENT_PROFILE,
-		WellArchitectedActions.DELETE_LENS,
-		WellArchitectedActions.DELETE_LENS_SHARE,
-		WellArchitectedActions.DELETE_PROFILE,
-		WellArchitectedActions.DELETE_PROFILE_SHARE,
-		WellArchitectedActions.DELETE_REVIEW_TEMPLATE,
-		WellArchitectedActions.DELETE_TEMPLATE_SHARE,
-		WellArchitectedActions.DELETE_WORKLOAD,
-		WellArchitectedActions.DELETE_WORKLOAD_SHARE,
-		WellArchitectedActions.DISASSOCIATE_LENSES,
-		WellArchitectedActions.DISASSOCIATE_PROFILES,
-		WellArchitectedActions.IMPORT_LENS,
-		WellArchitectedActions.PUT_AGENT_RECOMMENDATION_FEEDBACK,
-		WellArchitectedActions.START_AGENT_RECOMMENDATION_GENERATION,
-		WellArchitectedActions.UPDATE_AGENT_CONTEXT,
-		WellArchitectedActions.UPDATE_AGENT_GOAL,
-		WellArchitectedActions.UPDATE_AGENT_PROFILE,
-		WellArchitectedActions.UPDATE_AGENT_RECOMMENDATION_STATUS,
-		WellArchitectedActions.UPDATE_ANSWER,
-		WellArchitectedActions.UPDATE_GLOBAL_SETTINGS,
-		WellArchitectedActions.UPDATE_INTEGRATION,
-		WellArchitectedActions.UPDATE_LENS_REVIEW,
-		WellArchitectedActions.UPDATE_PROFILE,
-		WellArchitectedActions.UPDATE_REVIEW_TEMPLATE,
-		WellArchitectedActions.UPDATE_REVIEW_TEMPLATE_ANSWER,
-		WellArchitectedActions.UPDATE_REVIEW_TEMPLATE_LENS_REVIEW,
-		WellArchitectedActions.UPDATE_SHARE_INVITATION,
-		WellArchitectedActions.UPDATE_WORKLOAD,
-		WellArchitectedActions.UPDATE_WORKLOAD_SHARE,
-		WellArchitectedActions.UPGRADE_LENS_REVIEW,
-		WellArchitectedActions.UPGRADE_PROFILE_VERSION,
-		WellArchitectedActions.UPGRADE_REVIEW_TEMPLATE_LENS_REVIEW,
+	static readonly AllWriteActions: string[] = [
+		WellArchitectedActions.AssociateLenses,
+		WellArchitectedActions.AssociateProfiles,
+		WellArchitectedActions.ConfigureIntegration,
+		WellArchitectedActions.CreateAgentContext,
+		WellArchitectedActions.CreateAgentGoal,
+		WellArchitectedActions.CreateAgentProfile,
+		WellArchitectedActions.CreateLensShare,
+		WellArchitectedActions.CreateLensVersion,
+		WellArchitectedActions.CreateMilestone,
+		WellArchitectedActions.CreateProfile,
+		WellArchitectedActions.CreateProfileShare,
+		WellArchitectedActions.CreateReviewTemplate,
+		WellArchitectedActions.CreateTemplateShare,
+		WellArchitectedActions.CreateWorkload,
+		WellArchitectedActions.CreateWorkloadShare,
+		WellArchitectedActions.DeleteAgentContext,
+		WellArchitectedActions.DeleteAgentGoal,
+		WellArchitectedActions.DeleteAgentProfile,
+		WellArchitectedActions.DeleteLens,
+		WellArchitectedActions.DeleteLensShare,
+		WellArchitectedActions.DeleteProfile,
+		WellArchitectedActions.DeleteProfileShare,
+		WellArchitectedActions.DeleteReviewTemplate,
+		WellArchitectedActions.DeleteTemplateShare,
+		WellArchitectedActions.DeleteWorkload,
+		WellArchitectedActions.DeleteWorkloadShare,
+		WellArchitectedActions.DisassociateLenses,
+		WellArchitectedActions.DisassociateProfiles,
+		WellArchitectedActions.ImportLens,
+		WellArchitectedActions.PutAgentRecommendationFeedback,
+		WellArchitectedActions.StartAgentRecommendationGeneration,
+		WellArchitectedActions.UpdateAgentContext,
+		WellArchitectedActions.UpdateAgentGoal,
+		WellArchitectedActions.UpdateAgentProfile,
+		WellArchitectedActions.UpdateAgentRecommendationStatus,
+		WellArchitectedActions.UpdateAnswer,
+		WellArchitectedActions.UpdateGlobalSettings,
+		WellArchitectedActions.UpdateIntegration,
+		WellArchitectedActions.UpdateLensReview,
+		WellArchitectedActions.UpdateProfile,
+		WellArchitectedActions.UpdateReviewTemplate,
+		WellArchitectedActions.UpdateReviewTemplateAnswer,
+		WellArchitectedActions.UpdateReviewTemplateLensReview,
+		WellArchitectedActions.UpdateShareInvitation,
+		WellArchitectedActions.UpdateWorkload,
+		WellArchitectedActions.UpdateWorkloadShare,
+		WellArchitectedActions.UpgradeLensReview,
+		WellArchitectedActions.UpgradeProfileVersion,
+		WellArchitectedActions.UpgradeReviewTemplateLensReview,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WellArchitectedActions.LIST_ANSWERS,
-		WellArchitectedActions.LIST_CHECK_DETAILS,
-		WellArchitectedActions.LIST_CHECK_SUMMARIES,
-		WellArchitectedActions.LIST_LENS_REVIEW_IMPROVEMENTS,
-		WellArchitectedActions.LIST_LENS_REVIEWS,
-		WellArchitectedActions.LIST_LENS_SHARES,
-		WellArchitectedActions.LIST_LENSES,
-		WellArchitectedActions.LIST_MILESTONES,
-		WellArchitectedActions.LIST_NOTIFICATIONS,
-		WellArchitectedActions.LIST_PROFILE_NOTIFICATIONS,
-		WellArchitectedActions.LIST_PROFILE_SHARES,
-		WellArchitectedActions.LIST_PROFILES,
-		WellArchitectedActions.LIST_REVIEW_TEMPLATE_ANSWERS,
-		WellArchitectedActions.LIST_REVIEW_TEMPLATES,
-		WellArchitectedActions.LIST_SHARE_INVITATIONS,
-		WellArchitectedActions.LIST_TEMPLATE_SHARES,
-		WellArchitectedActions.LIST_WORKLOAD_SHARES,
-		WellArchitectedActions.LIST_WORKLOADS,
+	static readonly AllListActions: string[] = [
+		WellArchitectedActions.ListAnswers,
+		WellArchitectedActions.ListCheckDetails,
+		WellArchitectedActions.ListCheckSummaries,
+		WellArchitectedActions.ListLensReviewImprovements,
+		WellArchitectedActions.ListLensReviews,
+		WellArchitectedActions.ListLensShares,
+		WellArchitectedActions.ListLenses,
+		WellArchitectedActions.ListMilestones,
+		WellArchitectedActions.ListNotifications,
+		WellArchitectedActions.ListProfileNotifications,
+		WellArchitectedActions.ListProfileShares,
+		WellArchitectedActions.ListProfiles,
+		WellArchitectedActions.ListReviewTemplateAnswers,
+		WellArchitectedActions.ListReviewTemplates,
+		WellArchitectedActions.ListShareInvitations,
+		WellArchitectedActions.ListTemplateShares,
+		WellArchitectedActions.ListWorkloadShares,
+		WellArchitectedActions.ListWorkloads,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WellArchitectedActions.TAG_RESOURCE,
-		WellArchitectedActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WellArchitectedActions.TagResource,
+		WellArchitectedActions.UntagResource,
 	];
 }
 
-const AgentProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):agent-profile/(?<profileName>[^:/?]+)$",
-);
-const AgentRecommendationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):agent-recommendation/(?<resourceId>[^:/?]+)$",
-);
-const LensArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):lens/(?<resourceId>[^:/?]+)$",
-);
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):profile/(?<resourceId>[^:/?]+)$",
-);
-const ReviewTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):review-template/(?<resourceId>[^:/?]+)$",
-);
-const WorkloadArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):workload/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a agent-profile ARN.
+ */
+export interface WellArchitectedAgentProfileArnProps {
+	/** The ProfileName component of the ARN. */
+	readonly profileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent-profile ARN.
+ */
+export interface WellArchitectedAgentProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfileName component. */
+	readonly profileName: string;
+}
+
+/**
+ * Properties for building a agent-recommendation ARN.
+ */
+export interface WellArchitectedAgentRecommendationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent-recommendation ARN.
+ */
+export interface WellArchitectedAgentRecommendationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a lens ARN.
+ */
+export interface WellArchitectedLensArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a lens ARN.
+ */
+export interface WellArchitectedLensArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a profile ARN.
+ */
+export interface WellArchitectedProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface WellArchitectedProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a review-template ARN.
+ */
+export interface WellArchitectedReviewTemplateArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a review-template ARN.
+ */
+export interface WellArchitectedReviewTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a workload ARN.
+ */
+export interface WellArchitectedWorkloadArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workload ARN.
+ */
+export interface WellArchitectedWorkloadArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AgentProfileArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):agent-profile\/(?<profileName>[^:/?]+)$/;
+const AgentRecommendationArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):agent-recommendation\/(?<resourceId>[^:/?]+)$/;
+const LensArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):lens\/(?<resourceId>[^:/?]+)$/;
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<resourceId>[^:/?]+)$/;
+const ReviewTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):review-template\/(?<resourceId>[^:/?]+)$/;
+const WorkloadArnRegex =
+	/^arn:(?<partition>[^:]+):wellarchitected:(?<region>[^:]*):(?<account>[^:]*):workload\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for wellarchitected resources.
@@ -372,16 +527,7 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the agent-profile resource.
 	 */
-	static agentProfile(props: {
-		/** The ProfileName component of the ARN. */
-		readonly profileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agentProfile(props: WellArchitectedAgentProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:agent-profile/${props.profileName}`;
 	}
 
@@ -396,12 +542,9 @@ export class WellArchitectedResources {
 	 * Parses a agent-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profileName: string;
-	} {
+	static parseAgentProfileArn(
+		arn: string,
+	): WellArchitectedAgentProfileArnComponents {
 		const match = AgentProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agent-profile ARN: ${arn}`);
@@ -417,16 +560,9 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the agent-recommendation resource.
 	 */
-	static agentRecommendation(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agentRecommendation(
+		props: WellArchitectedAgentRecommendationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:agent-recommendation/${props.resourceId}`;
 	}
 
@@ -441,12 +577,9 @@ export class WellArchitectedResources {
 	 * Parses a agent-recommendation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentRecommendationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAgentRecommendationArn(
+		arn: string,
+	): WellArchitectedAgentRecommendationArnComponents {
 		const match = AgentRecommendationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agent-recommendation ARN: ${arn}`);
@@ -462,16 +595,7 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the lens resource.
 	 */
-	static lens(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static lens(props: WellArchitectedLensArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:lens/${props.resourceId}`;
 	}
 
@@ -486,12 +610,7 @@ export class WellArchitectedResources {
 	 * Parses a lens ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLensArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseLensArn(arn: string): WellArchitectedLensArnComponents {
 		const match = LensArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid lens ARN: ${arn}`);
@@ -507,16 +626,7 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: WellArchitectedProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.resourceId}`;
 	}
 
@@ -531,12 +641,7 @@ export class WellArchitectedResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProfileArn(arn: string): WellArchitectedProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -552,16 +657,7 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the review-template resource.
 	 */
-	static reviewTemplate(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reviewTemplate(props: WellArchitectedReviewTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:review-template/${props.resourceId}`;
 	}
 
@@ -576,12 +672,9 @@ export class WellArchitectedResources {
 	 * Parses a review-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReviewTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseReviewTemplateArn(
+		arn: string,
+	): WellArchitectedReviewTemplateArnComponents {
 		const match = ReviewTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid review-template ARN: ${arn}`);
@@ -597,16 +690,7 @@ export class WellArchitectedResources {
 	/**
 	 * Builds an ARN for the workload resource.
 	 */
-	static workload(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workload(props: WellArchitectedWorkloadArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wellarchitected:${props.region ?? "*"}:${props.account ?? "*"}:workload/${props.resourceId}`;
 	}
 
@@ -621,12 +705,7 @@ export class WellArchitectedResources {
 	 * Parses a workload ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkloadArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseWorkloadArn(arn: string): WellArchitectedWorkloadArnComponents {
 		const match = WorkloadArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workload ARN: ${arn}`);
@@ -645,59 +724,59 @@ export class WellArchitectedResources {
  */
 export class WellArchitectedOperations {
 	/** IAM actions required for the AssociateLenses API call. */
-	static readonly ASSOCIATE_LENSES: string[] = [
+	static readonly AssociateLenses: string[] = [
 		"wellarchitected:AssociateLenses",
 	];
 	/** IAM actions required for the AssociateProfiles API call. */
-	static readonly ASSOCIATE_PROFILES: string[] = [
+	static readonly AssociateProfiles: string[] = [
 		"wellarchitected:AssociateProfiles",
 	];
 	/** IAM actions required for the CreateAgentContext API call. */
-	static readonly CREATE_AGENT_CONTEXT: string[] = [
+	static readonly CreateAgentContext: string[] = [
 		"wellarchitected:CreateAgentContext",
 	];
 	/** IAM actions required for the CreateAgentGoal API call. */
-	static readonly CREATE_AGENT_GOAL: string[] = [
+	static readonly CreateAgentGoal: string[] = [
 		"wellarchitected:CreateAgentGoal",
 	];
 	/** IAM actions required for the CreateAgentProfile API call. */
-	static readonly CREATE_AGENT_PROFILE: string[] = [
+	static readonly CreateAgentProfile: string[] = [
 		"wellarchitected:CreateAgentProfile",
 		"iam:PassRole",
 		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the CreateLensShare API call. */
-	static readonly CREATE_LENS_SHARE: string[] = [
+	static readonly CreateLensShare: string[] = [
 		"wellarchitected:CreateLensShare",
 	];
 	/** IAM actions required for the CreateLensVersion API call. */
-	static readonly CREATE_LENS_VERSION: string[] = [
+	static readonly CreateLensVersion: string[] = [
 		"wellarchitected:CreateLensVersion",
 	];
 	/** IAM actions required for the CreateMilestone API call. */
-	static readonly CREATE_MILESTONE: string[] = [
+	static readonly CreateMilestone: string[] = [
 		"wellarchitected:CreateMilestone",
 	];
 	/** IAM actions required for the CreateProfile API call. */
-	static readonly CREATE_PROFILE: string[] = [
+	static readonly CreateProfile: string[] = [
 		"wellarchitected:CreateProfile",
 		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the CreateProfileShare API call. */
-	static readonly CREATE_PROFILE_SHARE: string[] = [
+	static readonly CreateProfileShare: string[] = [
 		"wellarchitected:CreateProfileShare",
 	];
 	/** IAM actions required for the CreateReviewTemplate API call. */
-	static readonly CREATE_REVIEW_TEMPLATE: string[] = [
+	static readonly CreateReviewTemplate: string[] = [
 		"wellarchitected:CreateReviewTemplate",
 		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the CreateTemplateShare API call. */
-	static readonly CREATE_TEMPLATE_SHARE: string[] = [
+	static readonly CreateTemplateShare: string[] = [
 		"wellarchitected:CreateTemplateShare",
 	];
 	/** IAM actions required for the CreateWorkload API call. */
-	static readonly CREATE_WORKLOAD: string[] = [
+	static readonly CreateWorkload: string[] = [
 		"wellarchitected:CreateWorkload",
 		"wellarchitected:GetReviewTemplate",
 		"wellarchitected:GetReviewTemplateAnswer",
@@ -706,297 +785,287 @@ export class WellArchitectedOperations {
 		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the CreateWorkloadShare API call. */
-	static readonly CREATE_WORKLOAD_SHARE: string[] = [
+	static readonly CreateWorkloadShare: string[] = [
 		"wellarchitected:CreateWorkloadShare",
 	];
 	/** IAM actions required for the DeleteAgentContext API call. */
-	static readonly DELETE_AGENT_CONTEXT: string[] = [
+	static readonly DeleteAgentContext: string[] = [
 		"wellarchitected:DeleteAgentContext",
 	];
 	/** IAM actions required for the DeleteAgentGoal API call. */
-	static readonly DELETE_AGENT_GOAL: string[] = [
+	static readonly DeleteAgentGoal: string[] = [
 		"wellarchitected:DeleteAgentGoal",
 	];
 	/** IAM actions required for the DeleteAgentProfile API call. */
-	static readonly DELETE_AGENT_PROFILE: string[] = [
+	static readonly DeleteAgentProfile: string[] = [
 		"wellarchitected:DeleteAgentProfile",
 	];
 	/** IAM actions required for the DeleteLens API call. */
-	static readonly DELETE_LENS: string[] = ["wellarchitected:DeleteLens"];
+	static readonly DeleteLens: string[] = ["wellarchitected:DeleteLens"];
 	/** IAM actions required for the DeleteLensShare API call. */
-	static readonly DELETE_LENS_SHARE: string[] = [
+	static readonly DeleteLensShare: string[] = [
 		"wellarchitected:DeleteLensShare",
 	];
 	/** IAM actions required for the DeleteProfile API call. */
-	static readonly DELETE_PROFILE: string[] = ["wellarchitected:DeleteProfile"];
+	static readonly DeleteProfile: string[] = ["wellarchitected:DeleteProfile"];
 	/** IAM actions required for the DeleteProfileShare API call. */
-	static readonly DELETE_PROFILE_SHARE: string[] = [
+	static readonly DeleteProfileShare: string[] = [
 		"wellarchitected:DeleteProfileShare",
 	];
 	/** IAM actions required for the DeleteReviewTemplate API call. */
-	static readonly DELETE_REVIEW_TEMPLATE: string[] = [
+	static readonly DeleteReviewTemplate: string[] = [
 		"wellarchitected:DeleteReviewTemplate",
 	];
 	/** IAM actions required for the DeleteTemplateShare API call. */
-	static readonly DELETE_TEMPLATE_SHARE: string[] = [
+	static readonly DeleteTemplateShare: string[] = [
 		"wellarchitected:DeleteTemplateShare",
 	];
 	/** IAM actions required for the DeleteWorkload API call. */
-	static readonly DELETE_WORKLOAD: string[] = [
-		"wellarchitected:DeleteWorkload",
-	];
+	static readonly DeleteWorkload: string[] = ["wellarchitected:DeleteWorkload"];
 	/** IAM actions required for the DeleteWorkloadShare API call. */
-	static readonly DELETE_WORKLOAD_SHARE: string[] = [
+	static readonly DeleteWorkloadShare: string[] = [
 		"wellarchitected:DeleteWorkloadShare",
 	];
 	/** IAM actions required for the DisassociateLenses API call. */
-	static readonly DISASSOCIATE_LENSES: string[] = [
+	static readonly DisassociateLenses: string[] = [
 		"wellarchitected:DisassociateLenses",
 	];
 	/** IAM actions required for the DisassociateProfiles API call. */
-	static readonly DISASSOCIATE_PROFILES: string[] = [
+	static readonly DisassociateProfiles: string[] = [
 		"wellarchitected:DisassociateProfiles",
 	];
 	/** IAM actions required for the ExportLens API call. */
-	static readonly EXPORT_LENS: string[] = ["wellarchitected:ExportLens"];
+	static readonly ExportLens: string[] = ["wellarchitected:ExportLens"];
 	/** IAM actions required for the GetAgentContext API call. */
-	static readonly GET_AGENT_CONTEXT: string[] = [
+	static readonly opGetAgentContext: string[] = [
 		"wellarchitected:GetAgentContext",
 	];
 	/** IAM actions required for the GetAgentGoal API call. */
-	static readonly GET_AGENT_GOAL: string[] = ["wellarchitected:GetAgentGoal"];
+	static readonly opGetAgentGoal: string[] = ["wellarchitected:GetAgentGoal"];
 	/** IAM actions required for the GetAgentProfile API call. */
-	static readonly GET_AGENT_PROFILE: string[] = [
+	static readonly opGetAgentProfile: string[] = [
 		"wellarchitected:GetAgentProfile",
 	];
 	/** IAM actions required for the GetAgentRecommendation API call. */
-	static readonly GET_AGENT_RECOMMENDATION: string[] = [
+	static readonly opGetAgentRecommendation: string[] = [
 		"wellarchitected:GetAgentRecommendation",
 	];
 	/** IAM actions required for the GetAgentRecommendationGeneration API call. */
-	static readonly GET_AGENT_RECOMMENDATION_GENERATION: string[] = [
+	static readonly opGetAgentRecommendationGeneration: string[] = [
 		"wellarchitected:GetAgentRecommendationGeneration",
 	];
 	/** IAM actions required for the GetAnswer API call. */
-	static readonly GET_ANSWER: string[] = ["wellarchitected:GetAnswer"];
+	static readonly opGetAnswer: string[] = ["wellarchitected:GetAnswer"];
 	/** IAM actions required for the GetConsolidatedReport API call. */
-	static readonly GET_CONSOLIDATED_REPORT: string[] = [
+	static readonly opGetConsolidatedReport: string[] = [
 		"wellarchitected:GetConsolidatedReport",
 	];
 	/** IAM actions required for the GetGlobalSettings API call. */
-	static readonly GET_GLOBAL_SETTINGS: string[] = [
+	static readonly opGetGlobalSettings: string[] = [
 		"wellarchitected:GetGlobalSettings",
 	];
 	/** IAM actions required for the GetLens API call. */
-	static readonly GET_LENS: string[] = ["wellarchitected:GetLens"];
+	static readonly opGetLens: string[] = ["wellarchitected:GetLens"];
 	/** IAM actions required for the GetLensReview API call. */
-	static readonly GET_LENS_REVIEW: string[] = ["wellarchitected:GetLensReview"];
+	static readonly opGetLensReview: string[] = ["wellarchitected:GetLensReview"];
 	/** IAM actions required for the GetLensReviewReport API call. */
-	static readonly GET_LENS_REVIEW_REPORT: string[] = [
+	static readonly opGetLensReviewReport: string[] = [
 		"wellarchitected:GetLensReviewReport",
 	];
 	/** IAM actions required for the GetLensVersionDifference API call. */
-	static readonly GET_LENS_VERSION_DIFFERENCE: string[] = [
+	static readonly opGetLensVersionDifference: string[] = [
 		"wellarchitected:GetLensVersionDifference",
 	];
 	/** IAM actions required for the GetMilestone API call. */
-	static readonly GET_MILESTONE: string[] = ["wellarchitected:GetMilestone"];
+	static readonly opGetMilestone: string[] = ["wellarchitected:GetMilestone"];
 	/** IAM actions required for the GetProfile API call. */
-	static readonly GET_PROFILE: string[] = ["wellarchitected:GetProfile"];
+	static readonly opGetProfile: string[] = ["wellarchitected:GetProfile"];
 	/** IAM actions required for the GetProfileTemplate API call. */
-	static readonly GET_PROFILE_TEMPLATE: string[] = [
+	static readonly opGetProfileTemplate: string[] = [
 		"wellarchitected:GetProfileTemplate",
 	];
 	/** IAM actions required for the GetReviewTemplate API call. */
-	static readonly GET_REVIEW_TEMPLATE: string[] = [
+	static readonly opGetReviewTemplate: string[] = [
 		"wellarchitected:GetReviewTemplate",
 	];
 	/** IAM actions required for the GetReviewTemplateAnswer API call. */
-	static readonly GET_REVIEW_TEMPLATE_ANSWER: string[] = [
+	static readonly opGetReviewTemplateAnswer: string[] = [
 		"wellarchitected:GetReviewTemplateAnswer",
 	];
 	/** IAM actions required for the GetReviewTemplateLensReview API call. */
-	static readonly GET_REVIEW_TEMPLATE_LENS_REVIEW: string[] = [
+	static readonly opGetReviewTemplateLensReview: string[] = [
 		"wellarchitected:GetReviewTemplateLensReview",
 	];
 	/** IAM actions required for the GetWorkload API call. */
-	static readonly GET_WORKLOAD: string[] = ["wellarchitected:GetWorkload"];
+	static readonly opGetWorkload: string[] = ["wellarchitected:GetWorkload"];
 	/** IAM actions required for the ImportLens API call. */
-	static readonly IMPORT_LENS: string[] = [
+	static readonly ImportLens: string[] = [
 		"wellarchitected:ImportLens",
 		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the ListAgentContexts API call. */
-	static readonly LIST_AGENT_CONTEXTS: string[] = [
+	static readonly ListAgentContexts: string[] = [
 		"wellarchitected:ListAgentContexts",
 	];
 	/** IAM actions required for the ListAgentGoals API call. */
-	static readonly LIST_AGENT_GOALS: string[] = [
-		"wellarchitected:ListAgentGoals",
-	];
+	static readonly ListAgentGoals: string[] = ["wellarchitected:ListAgentGoals"];
 	/** IAM actions required for the ListAgentProfiles API call. */
-	static readonly LIST_AGENT_PROFILES: string[] = [
+	static readonly ListAgentProfiles: string[] = [
 		"wellarchitected:ListAgentProfiles",
 	];
 	/** IAM actions required for the ListAgentRecommendationGenerations API call. */
-	static readonly LIST_AGENT_RECOMMENDATION_GENERATIONS: string[] = [
+	static readonly ListAgentRecommendationGenerations: string[] = [
 		"wellarchitected:ListAgentRecommendationGenerations",
 	];
 	/** IAM actions required for the ListAgentRecommendationItems API call. */
-	static readonly LIST_AGENT_RECOMMENDATION_ITEMS: string[] = [
+	static readonly ListAgentRecommendationItems: string[] = [
 		"wellarchitected:ListAgentRecommendationItems",
 	];
 	/** IAM actions required for the ListAgentRecommendations API call. */
-	static readonly LIST_AGENT_RECOMMENDATIONS: string[] = [
+	static readonly ListAgentRecommendations: string[] = [
 		"wellarchitected:ListAgentRecommendations",
 	];
 	/** IAM actions required for the ListAnswers API call. */
-	static readonly LIST_ANSWERS: string[] = ["wellarchitected:ListAnswers"];
+	static readonly ListAnswers: string[] = ["wellarchitected:ListAnswers"];
 	/** IAM actions required for the ListCheckDetails API call. */
-	static readonly LIST_CHECK_DETAILS: string[] = [
+	static readonly ListCheckDetails: string[] = [
 		"wellarchitected:ListCheckDetails",
 	];
 	/** IAM actions required for the ListCheckSummaries API call. */
-	static readonly LIST_CHECK_SUMMARIES: string[] = [
+	static readonly ListCheckSummaries: string[] = [
 		"wellarchitected:ListCheckSummaries",
 	];
 	/** IAM actions required for the ListLensReviewImprovements API call. */
-	static readonly LIST_LENS_REVIEW_IMPROVEMENTS: string[] = [
+	static readonly ListLensReviewImprovements: string[] = [
 		"wellarchitected:ListLensReviewImprovements",
 	];
 	/** IAM actions required for the ListLensReviews API call. */
-	static readonly LIST_LENS_REVIEWS: string[] = [
+	static readonly ListLensReviews: string[] = [
 		"wellarchitected:ListLensReviews",
 	];
 	/** IAM actions required for the ListLensShares API call. */
-	static readonly LIST_LENS_SHARES: string[] = [
-		"wellarchitected:ListLensShares",
-	];
+	static readonly ListLensShares: string[] = ["wellarchitected:ListLensShares"];
 	/** IAM actions required for the ListLenses API call. */
-	static readonly LIST_LENSES: string[] = ["wellarchitected:ListLenses"];
+	static readonly ListLenses: string[] = ["wellarchitected:ListLenses"];
 	/** IAM actions required for the ListMilestones API call. */
-	static readonly LIST_MILESTONES: string[] = [
-		"wellarchitected:ListMilestones",
-	];
+	static readonly ListMilestones: string[] = ["wellarchitected:ListMilestones"];
 	/** IAM actions required for the ListNotifications API call. */
-	static readonly LIST_NOTIFICATIONS: string[] = [
+	static readonly ListNotifications: string[] = [
 		"wellarchitected:ListNotifications",
 	];
 	/** IAM actions required for the ListProfileNotifications API call. */
-	static readonly LIST_PROFILE_NOTIFICATIONS: string[] = [
+	static readonly ListProfileNotifications: string[] = [
 		"wellarchitected:ListProfileNotifications",
 	];
 	/** IAM actions required for the ListProfileShares API call. */
-	static readonly LIST_PROFILE_SHARES: string[] = [
+	static readonly ListProfileShares: string[] = [
 		"wellarchitected:ListProfileShares",
 	];
 	/** IAM actions required for the ListProfiles API call. */
-	static readonly LIST_PROFILES: string[] = ["wellarchitected:ListProfiles"];
+	static readonly ListProfiles: string[] = ["wellarchitected:ListProfiles"];
 	/** IAM actions required for the ListReviewTemplateAnswers API call. */
-	static readonly LIST_REVIEW_TEMPLATE_ANSWERS: string[] = [
+	static readonly ListReviewTemplateAnswers: string[] = [
 		"wellarchitected:ListReviewTemplateAnswers",
 	];
 	/** IAM actions required for the ListReviewTemplates API call. */
-	static readonly LIST_REVIEW_TEMPLATES: string[] = [
+	static readonly ListReviewTemplates: string[] = [
 		"wellarchitected:ListReviewTemplates",
 	];
 	/** IAM actions required for the ListShareInvitations API call. */
-	static readonly LIST_SHARE_INVITATIONS: string[] = [
+	static readonly ListShareInvitations: string[] = [
 		"wellarchitected:ListShareInvitations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"wellarchitected:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTemplateShares API call. */
-	static readonly LIST_TEMPLATE_SHARES: string[] = [
+	static readonly ListTemplateShares: string[] = [
 		"wellarchitected:ListTemplateShares",
 	];
 	/** IAM actions required for the ListWorkloadShares API call. */
-	static readonly LIST_WORKLOAD_SHARES: string[] = [
+	static readonly ListWorkloadShares: string[] = [
 		"wellarchitected:ListWorkloadShares",
 	];
 	/** IAM actions required for the ListWorkloads API call. */
-	static readonly LIST_WORKLOADS: string[] = ["wellarchitected:ListWorkloads"];
+	static readonly ListWorkloads: string[] = ["wellarchitected:ListWorkloads"];
 	/** IAM actions required for the PutAgentRecommendationFeedback API call. */
-	static readonly PUT_AGENT_RECOMMENDATION_FEEDBACK: string[] = [
+	static readonly PutAgentRecommendationFeedback: string[] = [
 		"wellarchitected:PutAgentRecommendationFeedback",
 	];
 	/** IAM actions required for the StartAgentRecommendationGeneration API call. */
-	static readonly START_AGENT_RECOMMENDATION_GENERATION: string[] = [
+	static readonly StartAgentRecommendationGeneration: string[] = [
 		"wellarchitected:StartAgentRecommendationGeneration",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["wellarchitected:TagResource"];
+	static readonly TagResource: string[] = ["wellarchitected:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["wellarchitected:UntagResource"];
+	static readonly UntagResource: string[] = ["wellarchitected:UntagResource"];
 	/** IAM actions required for the UpdateAgentContext API call. */
-	static readonly UPDATE_AGENT_CONTEXT: string[] = [
+	static readonly UpdateAgentContext: string[] = [
 		"wellarchitected:UpdateAgentContext",
 	];
 	/** IAM actions required for the UpdateAgentGoal API call. */
-	static readonly UPDATE_AGENT_GOAL: string[] = [
+	static readonly UpdateAgentGoal: string[] = [
 		"wellarchitected:UpdateAgentGoal",
 	];
 	/** IAM actions required for the UpdateAgentProfile API call. */
-	static readonly UPDATE_AGENT_PROFILE: string[] = [
+	static readonly UpdateAgentProfile: string[] = [
 		"iam:PassRole",
 		"wellarchitected:UpdateAgentProfile",
 	];
 	/** IAM actions required for the UpdateAgentRecommendationStatus API call. */
-	static readonly UPDATE_AGENT_RECOMMENDATION_STATUS: string[] = [
+	static readonly UpdateAgentRecommendationStatus: string[] = [
 		"wellarchitected:UpdateAgentRecommendationStatus",
 	];
 	/** IAM actions required for the UpdateAnswer API call. */
-	static readonly UPDATE_ANSWER: string[] = ["wellarchitected:UpdateAnswer"];
+	static readonly UpdateAnswer: string[] = ["wellarchitected:UpdateAnswer"];
 	/** IAM actions required for the UpdateGlobalSettings API call. */
-	static readonly UPDATE_GLOBAL_SETTINGS: string[] = [
+	static readonly UpdateGlobalSettings: string[] = [
 		"wellarchitected:UpdateGlobalSettings",
 	];
 	/** IAM actions required for the UpdateIntegration API call. */
-	static readonly UPDATE_INTEGRATION: string[] = [
+	static readonly UpdateIntegration: string[] = [
 		"wellarchitected:UpdateIntegration",
 	];
 	/** IAM actions required for the UpdateLensReview API call. */
-	static readonly UPDATE_LENS_REVIEW: string[] = [
+	static readonly UpdateLensReview: string[] = [
 		"wellarchitected:UpdateLensReview",
 	];
 	/** IAM actions required for the UpdateProfile API call. */
-	static readonly UPDATE_PROFILE: string[] = ["wellarchitected:UpdateProfile"];
+	static readonly UpdateProfile: string[] = ["wellarchitected:UpdateProfile"];
 	/** IAM actions required for the UpdateReviewTemplate API call. */
-	static readonly UPDATE_REVIEW_TEMPLATE: string[] = [
+	static readonly UpdateReviewTemplate: string[] = [
 		"wellarchitected:UpdateReviewTemplate",
 	];
 	/** IAM actions required for the UpdateReviewTemplateAnswer API call. */
-	static readonly UPDATE_REVIEW_TEMPLATE_ANSWER: string[] = [
+	static readonly UpdateReviewTemplateAnswer: string[] = [
 		"wellarchitected:UpdateReviewTemplateAnswer",
 	];
 	/** IAM actions required for the UpdateReviewTemplateLensReview API call. */
-	static readonly UPDATE_REVIEW_TEMPLATE_LENS_REVIEW: string[] = [
+	static readonly UpdateReviewTemplateLensReview: string[] = [
 		"wellarchitected:UpdateReviewTemplateLensReview",
 	];
 	/** IAM actions required for the UpdateShareInvitation API call. */
-	static readonly UPDATE_SHARE_INVITATION: string[] = [
+	static readonly UpdateShareInvitation: string[] = [
 		"wellarchitected:UpdateShareInvitation",
 	];
 	/** IAM actions required for the UpdateWorkload API call. */
-	static readonly UPDATE_WORKLOAD: string[] = [
-		"wellarchitected:UpdateWorkload",
-	];
+	static readonly UpdateWorkload: string[] = ["wellarchitected:UpdateWorkload"];
 	/** IAM actions required for the UpdateWorkloadShare API call. */
-	static readonly UPDATE_WORKLOAD_SHARE: string[] = [
+	static readonly UpdateWorkloadShare: string[] = [
 		"wellarchitected:UpdateWorkloadShare",
 	];
 	/** IAM actions required for the UpgradeLensReview API call. */
-	static readonly UPGRADE_LENS_REVIEW: string[] = [
+	static readonly UpgradeLensReview: string[] = [
 		"wellarchitected:UpgradeLensReview",
 	];
 	/** IAM actions required for the UpgradeProfileVersion API call. */
-	static readonly UPGRADE_PROFILE_VERSION: string[] = [
+	static readonly UpgradeProfileVersion: string[] = [
 		"wellarchitected:UpgradeProfileVersion",
 	];
 	/** IAM actions required for the UpgradeReviewTemplateLensReview API call. */
-	static readonly UPGRADE_REVIEW_TEMPLATE_LENS_REVIEW: string[] = [
+	static readonly UpgradeReviewTemplateLensReview: string[] = [
 		"wellarchitected:UpgradeReviewTemplateLensReview",
 	];
 }
@@ -1006,344 +1075,349 @@ export class WellArchitectedOperations {
  */
 export class WellArchitectedConditions {
 	/** Condition keys applicable to the AssociateLenses action. */
-	static readonly ASSOCIATE_LENSES_CONDITION_KEYS: string[] = [
+	static readonly AssociateLensesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the AssociateProfiles action. */
-	static readonly ASSOCIATE_PROFILES_CONDITION_KEYS: string[] = [
+	static readonly AssociateProfilesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAgentContext action. */
-	static readonly CREATE_AGENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentContextConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAgentGoal action. */
-	static readonly CREATE_AGENT_GOAL_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentGoalConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAgentProfile action. */
-	static readonly CREATE_AGENT_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLensShare action. */
-	static readonly CREATE_LENS_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateLensShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateLensVersion action. */
-	static readonly CREATE_LENS_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateLensVersionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateMilestone action. */
-	static readonly CREATE_MILESTONE_CONDITION_KEYS: string[] = [
+	static readonly CreateMilestoneConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateProfile action. */
-	static readonly CREATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProfileShare action. */
-	static readonly CREATE_PROFILE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateReviewTemplate action. */
-	static readonly CREATE_REVIEW_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateReviewTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTemplateShare action. */
-	static readonly CREATE_TEMPLATE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateTemplateShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateWorkload action. */
-	static readonly CREATE_WORKLOAD_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkloadConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"wellarchitected:JiraProjectKey",
 	];
 	/** Condition keys applicable to the CreateWorkloadShare action. */
-	static readonly CREATE_WORKLOAD_SHARE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkloadShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAgentContext action. */
-	static readonly DELETE_AGENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAgentContextConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAgentGoal action. */
-	static readonly DELETE_AGENT_GOAL_CONDITION_KEYS: string[] = [
+	static readonly DeleteAgentGoalConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAgentProfile action. */
-	static readonly DELETE_AGENT_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly DeleteAgentProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteLens action. */
-	static readonly DELETE_LENS_CONDITION_KEYS: string[] = [
+	static readonly DeleteLensConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteLensShare action. */
-	static readonly DELETE_LENS_SHARE_CONDITION_KEYS: string[] = [
+	static readonly DeleteLensShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteProfile action. */
-	static readonly DELETE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly DeleteProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteProfileShare action. */
-	static readonly DELETE_PROFILE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly DeleteProfileShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteReviewTemplate action. */
-	static readonly DELETE_REVIEW_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly DeleteReviewTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteTemplateShare action. */
-	static readonly DELETE_TEMPLATE_SHARE_CONDITION_KEYS: string[] = [
+	static readonly DeleteTemplateShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteWorkload action. */
-	static readonly DELETE_WORKLOAD_CONDITION_KEYS: string[] = [
+	static readonly DeleteWorkloadConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteWorkloadShare action. */
-	static readonly DELETE_WORKLOAD_SHARE_CONDITION_KEYS: string[] = [
+	static readonly DeleteWorkloadShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DisassociateLenses action. */
-	static readonly DISASSOCIATE_LENSES_CONDITION_KEYS: string[] = [
+	static readonly DisassociateLensesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DisassociateProfiles action. */
-	static readonly DISASSOCIATE_PROFILES_CONDITION_KEYS: string[] = [
+	static readonly DisassociateProfilesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ExportLens action. */
-	static readonly EXPORT_LENS_CONDITION_KEYS: string[] = [
+	static readonly ExportLensConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentContext action. */
-	static readonly GET_AGENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgentContextConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentGoal action. */
-	static readonly GET_AGENT_GOAL_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgentGoalConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentProfile action. */
-	static readonly GET_AGENT_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgentProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentRecommendation action. */
-	static readonly GET_AGENT_RECOMMENDATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgentRecommendationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentRecommendationGeneration action. */
-	static readonly GET_AGENT_RECOMMENDATION_GENERATION_CONDITION_KEYS: string[] =
+	static readonly actionGetAgentRecommendationGenerationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetAnswer action. */
-	static readonly GET_ANSWER_CONDITION_KEYS: string[] = [
+	static readonly actionGetAnswerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLens action. */
-	static readonly GET_LENS_CONDITION_KEYS: string[] = [
+	static readonly actionGetLensConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLensReview action. */
-	static readonly GET_LENS_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly actionGetLensReviewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLensReviewReport action. */
-	static readonly GET_LENS_REVIEW_REPORT_CONDITION_KEYS: string[] = [
+	static readonly actionGetLensReviewReportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLensVersionDifference action. */
-	static readonly GET_LENS_VERSION_DIFFERENCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetLensVersionDifferenceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetMilestone action. */
-	static readonly GET_MILESTONE_CONDITION_KEYS: string[] = [
+	static readonly actionGetMilestoneConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetProfile action. */
-	static readonly GET_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly actionGetProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetReviewTemplate action. */
-	static readonly GET_REVIEW_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly actionGetReviewTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetReviewTemplateAnswer action. */
-	static readonly GET_REVIEW_TEMPLATE_ANSWER_CONDITION_KEYS: string[] = [
+	static readonly actionGetReviewTemplateAnswerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetReviewTemplateLensReview action. */
-	static readonly GET_REVIEW_TEMPLATE_LENS_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly actionGetReviewTemplateLensReviewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetWorkload action. */
-	static readonly GET_WORKLOAD_CONDITION_KEYS: string[] = [
+	static readonly actionGetWorkloadConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ImportLens action. */
-	static readonly IMPORT_LENS_CONDITION_KEYS: string[] = [
+	static readonly ImportLensConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListAgentContexts action. */
-	static readonly LIST_AGENT_CONTEXTS_CONDITION_KEYS: string[] = [
+	static readonly ListAgentContextsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAgentGoals action. */
-	static readonly LIST_AGENT_GOALS_CONDITION_KEYS: string[] = [
+	static readonly ListAgentGoalsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAgentRecommendationGenerations action. */
-	static readonly LIST_AGENT_RECOMMENDATION_GENERATIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly ListAgentRecommendationGenerationsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListAgentRecommendationItems action. */
-	static readonly LIST_AGENT_RECOMMENDATION_ITEMS_CONDITION_KEYS: string[] = [
+	static readonly ListAgentRecommendationItemsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAgentRecommendations action. */
-	static readonly LIST_AGENT_RECOMMENDATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListAgentRecommendationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAnswers action. */
-	static readonly LIST_ANSWERS_CONDITION_KEYS: string[] = [
+	static readonly ListAnswersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListCheckDetails action. */
-	static readonly LIST_CHECK_DETAILS_CONDITION_KEYS: string[] = [
+	static readonly ListCheckDetailsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListCheckSummaries action. */
-	static readonly LIST_CHECK_SUMMARIES_CONDITION_KEYS: string[] = [
+	static readonly ListCheckSummariesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListLensReviewImprovements action. */
-	static readonly LIST_LENS_REVIEW_IMPROVEMENTS_CONDITION_KEYS: string[] = [
+	static readonly ListLensReviewImprovementsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListLensReviews action. */
-	static readonly LIST_LENS_REVIEWS_CONDITION_KEYS: string[] = [
+	static readonly ListLensReviewsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListLensShares action. */
-	static readonly LIST_LENS_SHARES_CONDITION_KEYS: string[] = [
+	static readonly ListLensSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListMilestones action. */
-	static readonly LIST_MILESTONES_CONDITION_KEYS: string[] = [
+	static readonly ListMilestonesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListProfileShares action. */
-	static readonly LIST_PROFILE_SHARES_CONDITION_KEYS: string[] = [
+	static readonly ListProfileSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListReviewTemplateAnswers action. */
-	static readonly LIST_REVIEW_TEMPLATE_ANSWERS_CONDITION_KEYS: string[] = [
+	static readonly ListReviewTemplateAnswersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTemplateShares action. */
-	static readonly LIST_TEMPLATE_SHARES_CONDITION_KEYS: string[] = [
+	static readonly ListTemplateSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListWorkloadShares action. */
-	static readonly LIST_WORKLOAD_SHARES_CONDITION_KEYS: string[] = [
+	static readonly ListWorkloadSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutAgentRecommendationFeedback action. */
-	static readonly PUT_AGENT_RECOMMENDATION_FEEDBACK_CONDITION_KEYS: string[] = [
+	static readonly PutAgentRecommendationFeedbackConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartAgentRecommendationGeneration action. */
-	static readonly START_AGENT_RECOMMENDATION_GENERATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly StartAgentRecommendationGenerationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateAgentContext action. */
-	static readonly UPDATE_AGENT_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly UpdateAgentContextConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateAgentGoal action. */
-	static readonly UPDATE_AGENT_GOAL_CONDITION_KEYS: string[] = [
+	static readonly UpdateAgentGoalConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateAgentProfile action. */
-	static readonly UPDATE_AGENT_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly UpdateAgentProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateAgentRecommendationStatus action. */
-	static readonly UPDATE_AGENT_RECOMMENDATION_STATUS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateAgentRecommendationStatusConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateAnswer action. */
-	static readonly UPDATE_ANSWER_CONDITION_KEYS: string[] = [
+	static readonly UpdateAnswerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateGlobalSettings action. */
-	static readonly UPDATE_GLOBAL_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly UpdateGlobalSettingsConditionKeys: string[] = [
 		"wellarchitected:JiraProjectKey",
 	];
 	/** Condition keys applicable to the UpdateIntegration action. */
-	static readonly UPDATE_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateLensReview action. */
-	static readonly UPDATE_LENS_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly UpdateLensReviewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateProfile action. */
-	static readonly UPDATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly UpdateProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateReviewTemplate action. */
-	static readonly UPDATE_REVIEW_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly UpdateReviewTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateReviewTemplateAnswer action. */
-	static readonly UPDATE_REVIEW_TEMPLATE_ANSWER_CONDITION_KEYS: string[] = [
+	static readonly UpdateReviewTemplateAnswerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateReviewTemplateLensReview action. */
-	static readonly UPDATE_REVIEW_TEMPLATE_LENS_REVIEW_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateReviewTemplateLensReviewConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateWorkload action. */
-	static readonly UPDATE_WORKLOAD_CONDITION_KEYS: string[] = [
+	static readonly UpdateWorkloadConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"wellarchitected:JiraProjectKey",
 	];
 	/** Condition keys applicable to the UpdateWorkloadShare action. */
-	static readonly UPDATE_WORKLOAD_SHARE_CONDITION_KEYS: string[] = [
+	static readonly UpdateWorkloadShareConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpgradeLensReview action. */
-	static readonly UPGRADE_LENS_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly UpgradeLensReviewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpgradeProfileVersion action. */
-	static readonly UPGRADE_PROFILE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly UpgradeProfileVersionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpgradeReviewTemplateLensReview action. */
-	static readonly UPGRADE_REVIEW_TEMPLATE_LENS_REVIEW_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpgradeReviewTemplateLensReviewConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: wellarchitected:JiraProjectKey (String) */
 	static readonly JIRA_PROJECT_KEY = "wellarchitected:JiraProjectKey";
 

@@ -13,173 +13,335 @@ export class DatabrewActions {
 	static readonly SERVICE_PREFIX = "databrew";
 
 	/** [Write] databrew:BatchDeleteRecipeVersion */
-	static readonly BATCH_DELETE_RECIPE_VERSION =
+	static readonly BatchDeleteRecipeVersion =
 		"databrew:BatchDeleteRecipeVersion";
 	/** [Write] databrew:CreateDataset */
-	static readonly CREATE_DATASET = "databrew:CreateDataset";
+	static readonly CreateDataset = "databrew:CreateDataset";
 	/** [Write] databrew:CreateProfileJob */
-	static readonly CREATE_PROFILE_JOB = "databrew:CreateProfileJob";
+	static readonly CreateProfileJob = "databrew:CreateProfileJob";
 	/** [Write] databrew:CreateProject */
-	static readonly CREATE_PROJECT = "databrew:CreateProject";
+	static readonly CreateProject = "databrew:CreateProject";
 	/** [Write] databrew:CreateRecipe */
-	static readonly CREATE_RECIPE = "databrew:CreateRecipe";
+	static readonly CreateRecipe = "databrew:CreateRecipe";
 	/** [Write] databrew:CreateRecipeJob */
-	static readonly CREATE_RECIPE_JOB = "databrew:CreateRecipeJob";
+	static readonly CreateRecipeJob = "databrew:CreateRecipeJob";
 	/** [Write] databrew:CreateRuleset */
-	static readonly CREATE_RULESET = "databrew:CreateRuleset";
+	static readonly CreateRuleset = "databrew:CreateRuleset";
 	/** [Write] databrew:CreateSchedule */
-	static readonly CREATE_SCHEDULE = "databrew:CreateSchedule";
+	static readonly CreateSchedule = "databrew:CreateSchedule";
 	/** [Write] databrew:DeleteDataset */
-	static readonly DELETE_DATASET = "databrew:DeleteDataset";
+	static readonly DeleteDataset = "databrew:DeleteDataset";
 	/** [Write] databrew:DeleteJob */
-	static readonly DELETE_JOB = "databrew:DeleteJob";
+	static readonly DeleteJob = "databrew:DeleteJob";
 	/** [Write] databrew:DeleteProject */
-	static readonly DELETE_PROJECT = "databrew:DeleteProject";
+	static readonly DeleteProject = "databrew:DeleteProject";
 	/** [Write] databrew:DeleteRecipeVersion */
-	static readonly DELETE_RECIPE_VERSION = "databrew:DeleteRecipeVersion";
+	static readonly DeleteRecipeVersion = "databrew:DeleteRecipeVersion";
 	/** [Write] databrew:DeleteRuleset */
-	static readonly DELETE_RULESET = "databrew:DeleteRuleset";
+	static readonly DeleteRuleset = "databrew:DeleteRuleset";
 	/** [Write] databrew:DeleteSchedule */
-	static readonly DELETE_SCHEDULE = "databrew:DeleteSchedule";
+	static readonly DeleteSchedule = "databrew:DeleteSchedule";
 	/** [Read] databrew:DescribeDataset */
-	static readonly DESCRIBE_DATASET = "databrew:DescribeDataset";
+	static readonly DescribeDataset = "databrew:DescribeDataset";
 	/** [Read] databrew:DescribeJob */
-	static readonly DESCRIBE_JOB = "databrew:DescribeJob";
+	static readonly DescribeJob = "databrew:DescribeJob";
 	/** [Read] databrew:DescribeJobRun */
-	static readonly DESCRIBE_JOB_RUN = "databrew:DescribeJobRun";
+	static readonly DescribeJobRun = "databrew:DescribeJobRun";
 	/** [Read] databrew:DescribeProject */
-	static readonly DESCRIBE_PROJECT = "databrew:DescribeProject";
+	static readonly DescribeProject = "databrew:DescribeProject";
 	/** [Read] databrew:DescribeRecipe */
-	static readonly DESCRIBE_RECIPE = "databrew:DescribeRecipe";
+	static readonly DescribeRecipe = "databrew:DescribeRecipe";
 	/** [Read] databrew:DescribeRuleset */
-	static readonly DESCRIBE_RULESET = "databrew:DescribeRuleset";
+	static readonly DescribeRuleset = "databrew:DescribeRuleset";
 	/** [Read] databrew:DescribeSchedule */
-	static readonly DESCRIBE_SCHEDULE = "databrew:DescribeSchedule";
+	static readonly DescribeSchedule = "databrew:DescribeSchedule";
 	/** [Read] databrew:ListDatasets */
-	static readonly LIST_DATASETS = "databrew:ListDatasets";
+	static readonly ListDatasets = "databrew:ListDatasets";
 	/** [Read] databrew:ListJobRuns */
-	static readonly LIST_JOB_RUNS = "databrew:ListJobRuns";
+	static readonly ListJobRuns = "databrew:ListJobRuns";
 	/** [Read] databrew:ListJobs */
-	static readonly LIST_JOBS = "databrew:ListJobs";
+	static readonly ListJobs = "databrew:ListJobs";
 	/** [Read] databrew:ListProjects */
-	static readonly LIST_PROJECTS = "databrew:ListProjects";
+	static readonly ListProjects = "databrew:ListProjects";
 	/** [Read] databrew:ListRecipeVersions */
-	static readonly LIST_RECIPE_VERSIONS = "databrew:ListRecipeVersions";
+	static readonly ListRecipeVersions = "databrew:ListRecipeVersions";
 	/** [Read] databrew:ListRecipes */
-	static readonly LIST_RECIPES = "databrew:ListRecipes";
+	static readonly ListRecipes = "databrew:ListRecipes";
 	/** [Read] databrew:ListRulesets */
-	static readonly LIST_RULESETS = "databrew:ListRulesets";
+	static readonly ListRulesets = "databrew:ListRulesets";
 	/** [Read] databrew:ListSchedules */
-	static readonly LIST_SCHEDULES = "databrew:ListSchedules";
+	static readonly ListSchedules = "databrew:ListSchedules";
 	/** [Read] databrew:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "databrew:ListTagsForResource";
+	static readonly ListTagsForResource = "databrew:ListTagsForResource";
 	/** [Write] databrew:PublishRecipe */
-	static readonly PUBLISH_RECIPE = "databrew:PublishRecipe";
+	static readonly PublishRecipe = "databrew:PublishRecipe";
 	/** [Write] databrew:SendProjectSessionAction */
-	static readonly SEND_PROJECT_SESSION_ACTION =
+	static readonly SendProjectSessionAction =
 		"databrew:SendProjectSessionAction";
 	/** [Write] databrew:StartJobRun */
-	static readonly START_JOB_RUN = "databrew:StartJobRun";
+	static readonly StartJobRun = "databrew:StartJobRun";
 	/** [Write] databrew:StartProjectSession */
-	static readonly START_PROJECT_SESSION = "databrew:StartProjectSession";
+	static readonly StartProjectSession = "databrew:StartProjectSession";
 	/** [Write] databrew:StopJobRun */
-	static readonly STOP_JOB_RUN = "databrew:StopJobRun";
+	static readonly StopJobRun = "databrew:StopJobRun";
 	/** [Tagging] databrew:TagResource */
-	static readonly TAG_RESOURCE = "databrew:TagResource";
+	static readonly TagResource = "databrew:TagResource";
 	/** [Tagging] databrew:UntagResource */
-	static readonly UNTAG_RESOURCE = "databrew:UntagResource";
+	static readonly UntagResource = "databrew:UntagResource";
 	/** [Write] databrew:UpdateDataset */
-	static readonly UPDATE_DATASET = "databrew:UpdateDataset";
+	static readonly UpdateDataset = "databrew:UpdateDataset";
 	/** [Write] databrew:UpdateProfileJob */
-	static readonly UPDATE_PROFILE_JOB = "databrew:UpdateProfileJob";
+	static readonly UpdateProfileJob = "databrew:UpdateProfileJob";
 	/** [Write] databrew:UpdateProject */
-	static readonly UPDATE_PROJECT = "databrew:UpdateProject";
+	static readonly UpdateProject = "databrew:UpdateProject";
 	/** [Write] databrew:UpdateRecipe */
-	static readonly UPDATE_RECIPE = "databrew:UpdateRecipe";
+	static readonly UpdateRecipe = "databrew:UpdateRecipe";
 	/** [Write] databrew:UpdateRecipeJob */
-	static readonly UPDATE_RECIPE_JOB = "databrew:UpdateRecipeJob";
+	static readonly UpdateRecipeJob = "databrew:UpdateRecipeJob";
 	/** [Write] databrew:UpdateRuleset */
-	static readonly UPDATE_RULESET = "databrew:UpdateRuleset";
+	static readonly UpdateRuleset = "databrew:UpdateRuleset";
 	/** [Write] databrew:UpdateSchedule */
-	static readonly UPDATE_SCHEDULE = "databrew:UpdateSchedule";
+	static readonly UpdateSchedule = "databrew:UpdateSchedule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DatabrewActions.DESCRIBE_DATASET,
-		DatabrewActions.DESCRIBE_JOB,
-		DatabrewActions.DESCRIBE_JOB_RUN,
-		DatabrewActions.DESCRIBE_PROJECT,
-		DatabrewActions.DESCRIBE_RECIPE,
-		DatabrewActions.DESCRIBE_RULESET,
-		DatabrewActions.DESCRIBE_SCHEDULE,
-		DatabrewActions.LIST_DATASETS,
-		DatabrewActions.LIST_JOB_RUNS,
-		DatabrewActions.LIST_JOBS,
-		DatabrewActions.LIST_PROJECTS,
-		DatabrewActions.LIST_RECIPE_VERSIONS,
-		DatabrewActions.LIST_RECIPES,
-		DatabrewActions.LIST_RULESETS,
-		DatabrewActions.LIST_SCHEDULES,
-		DatabrewActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		DatabrewActions.DescribeDataset,
+		DatabrewActions.DescribeJob,
+		DatabrewActions.DescribeJobRun,
+		DatabrewActions.DescribeProject,
+		DatabrewActions.DescribeRecipe,
+		DatabrewActions.DescribeRuleset,
+		DatabrewActions.DescribeSchedule,
+		DatabrewActions.ListDatasets,
+		DatabrewActions.ListJobRuns,
+		DatabrewActions.ListJobs,
+		DatabrewActions.ListProjects,
+		DatabrewActions.ListRecipeVersions,
+		DatabrewActions.ListRecipes,
+		DatabrewActions.ListRulesets,
+		DatabrewActions.ListSchedules,
+		DatabrewActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DatabrewActions.BATCH_DELETE_RECIPE_VERSION,
-		DatabrewActions.CREATE_DATASET,
-		DatabrewActions.CREATE_PROFILE_JOB,
-		DatabrewActions.CREATE_PROJECT,
-		DatabrewActions.CREATE_RECIPE,
-		DatabrewActions.CREATE_RECIPE_JOB,
-		DatabrewActions.CREATE_RULESET,
-		DatabrewActions.CREATE_SCHEDULE,
-		DatabrewActions.DELETE_DATASET,
-		DatabrewActions.DELETE_JOB,
-		DatabrewActions.DELETE_PROJECT,
-		DatabrewActions.DELETE_RECIPE_VERSION,
-		DatabrewActions.DELETE_RULESET,
-		DatabrewActions.DELETE_SCHEDULE,
-		DatabrewActions.PUBLISH_RECIPE,
-		DatabrewActions.SEND_PROJECT_SESSION_ACTION,
-		DatabrewActions.START_JOB_RUN,
-		DatabrewActions.START_PROJECT_SESSION,
-		DatabrewActions.STOP_JOB_RUN,
-		DatabrewActions.UPDATE_DATASET,
-		DatabrewActions.UPDATE_PROFILE_JOB,
-		DatabrewActions.UPDATE_PROJECT,
-		DatabrewActions.UPDATE_RECIPE,
-		DatabrewActions.UPDATE_RECIPE_JOB,
-		DatabrewActions.UPDATE_RULESET,
-		DatabrewActions.UPDATE_SCHEDULE,
+	static readonly AllWriteActions: string[] = [
+		DatabrewActions.BatchDeleteRecipeVersion,
+		DatabrewActions.CreateDataset,
+		DatabrewActions.CreateProfileJob,
+		DatabrewActions.CreateProject,
+		DatabrewActions.CreateRecipe,
+		DatabrewActions.CreateRecipeJob,
+		DatabrewActions.CreateRuleset,
+		DatabrewActions.CreateSchedule,
+		DatabrewActions.DeleteDataset,
+		DatabrewActions.DeleteJob,
+		DatabrewActions.DeleteProject,
+		DatabrewActions.DeleteRecipeVersion,
+		DatabrewActions.DeleteRuleset,
+		DatabrewActions.DeleteSchedule,
+		DatabrewActions.PublishRecipe,
+		DatabrewActions.SendProjectSessionAction,
+		DatabrewActions.StartJobRun,
+		DatabrewActions.StartProjectSession,
+		DatabrewActions.StopJobRun,
+		DatabrewActions.UpdateDataset,
+		DatabrewActions.UpdateProfileJob,
+		DatabrewActions.UpdateProject,
+		DatabrewActions.UpdateRecipe,
+		DatabrewActions.UpdateRecipeJob,
+		DatabrewActions.UpdateRuleset,
+		DatabrewActions.UpdateSchedule,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DatabrewActions.TAG_RESOURCE,
-		DatabrewActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DatabrewActions.TagResource,
+		DatabrewActions.UntagResource,
 	];
 }
 
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):dataset/(?<resourceId>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):job/(?<resourceId>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):project/(?<resourceId>[^:/?]+)$",
-);
-const RecipeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):recipe/(?<resourceId>[^:/?]+)$",
-);
-const RulesetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):ruleset/(?<resourceId>[^:/?]+)$",
-);
-const ScheduleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):schedule/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Dataset ARN.
+ */
+export interface DatabrewDatasetArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dataset ARN.
+ */
+export interface DatabrewDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Job ARN.
+ */
+export interface DatabrewJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Job ARN.
+ */
+export interface DatabrewJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Project ARN.
+ */
+export interface DatabrewProjectArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Project ARN.
+ */
+export interface DatabrewProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Recipe ARN.
+ */
+export interface DatabrewRecipeArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Recipe ARN.
+ */
+export interface DatabrewRecipeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Ruleset ARN.
+ */
+export interface DatabrewRulesetArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Ruleset ARN.
+ */
+export interface DatabrewRulesetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a Schedule ARN.
+ */
+export interface DatabrewScheduleArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Schedule ARN.
+ */
+export interface DatabrewScheduleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<resourceId>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):job\/(?<resourceId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):project\/(?<resourceId>[^:/?]+)$/;
+const RecipeArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):recipe\/(?<resourceId>[^:/?]+)$/;
+const RulesetArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):ruleset\/(?<resourceId>[^:/?]+)$/;
+const ScheduleArnRegex =
+	/^arn:(?<partition>[^:]+):databrew:(?<region>[^:]*):(?<account>[^:]*):schedule\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for databrew resources.
@@ -188,16 +350,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Dataset resource.
 	 */
-	static dataset(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: DatabrewDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:dataset/${props.resourceId}`;
 	}
 
@@ -212,12 +365,7 @@ export class DatabrewResources {
 	 * Parses a Dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDatasetArn(arn: string): DatabrewDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Dataset ARN: ${arn}`);
@@ -233,16 +381,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Job resource.
 	 */
-	static job(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: DatabrewJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.resourceId}`;
 	}
 
@@ -257,12 +396,7 @@ export class DatabrewResources {
 	 * Parses a Job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseJobArn(arn: string): DatabrewJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Job ARN: ${arn}`);
@@ -278,16 +412,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Project resource.
 	 */
-	static project(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: DatabrewProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.resourceId}`;
 	}
 
@@ -302,12 +427,7 @@ export class DatabrewResources {
 	 * Parses a Project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProjectArn(arn: string): DatabrewProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Project ARN: ${arn}`);
@@ -323,16 +443,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Recipe resource.
 	 */
-	static recipe(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recipe(props: DatabrewRecipeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:recipe/${props.resourceId}`;
 	}
 
@@ -347,12 +458,7 @@ export class DatabrewResources {
 	 * Parses a Recipe ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecipeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRecipeArn(arn: string): DatabrewRecipeArnComponents {
 		const match = RecipeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Recipe ARN: ${arn}`);
@@ -368,16 +474,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Ruleset resource.
 	 */
-	static ruleset(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ruleset(props: DatabrewRulesetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:ruleset/${props.resourceId}`;
 	}
 
@@ -392,12 +489,7 @@ export class DatabrewResources {
 	 * Parses a Ruleset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRulesetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRulesetArn(arn: string): DatabrewRulesetArnComponents {
 		const match = RulesetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Ruleset ARN: ${arn}`);
@@ -413,16 +505,7 @@ export class DatabrewResources {
 	/**
 	 * Builds an ARN for the Schedule resource.
 	 */
-	static schedule(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static schedule(props: DatabrewScheduleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:databrew:${props.region ?? "*"}:${props.account ?? "*"}:schedule/${props.resourceId}`;
 	}
 
@@ -437,12 +520,7 @@ export class DatabrewResources {
 	 * Parses a Schedule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScheduleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseScheduleArn(arn: string): DatabrewScheduleArnComponents {
 		const match = ScheduleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Schedule ARN: ${arn}`);
@@ -461,138 +539,138 @@ export class DatabrewResources {
  */
 export class DatabrewOperations {
 	/** IAM actions required for the BatchDeleteRecipeVersion API call. */
-	static readonly BATCH_DELETE_RECIPE_VERSION: string[] = [
+	static readonly BatchDeleteRecipeVersion: string[] = [
 		"databrew:BatchDeleteRecipeVersion",
 	];
 	/** IAM actions required for the CreateDataset API call. */
-	static readonly CREATE_DATASET: string[] = [
+	static readonly CreateDataset: string[] = [
 		"databrew:CreateDataset",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateProfileJob API call. */
-	static readonly CREATE_PROFILE_JOB: string[] = [
+	static readonly CreateProfileJob: string[] = [
 		"databrew:CreateProfileJob",
 		"iam:PassRole",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [
+	static readonly CreateProject: string[] = [
 		"databrew:CreateProject",
 		"iam:PassRole",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateRecipe API call. */
-	static readonly CREATE_RECIPE: string[] = [
+	static readonly CreateRecipe: string[] = [
 		"databrew:CreateRecipe",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateRecipeJob API call. */
-	static readonly CREATE_RECIPE_JOB: string[] = [
+	static readonly CreateRecipeJob: string[] = [
 		"databrew:CreateRecipeJob",
 		"iam:PassRole",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateRuleset API call. */
-	static readonly CREATE_RULESET: string[] = [
+	static readonly CreateRuleset: string[] = [
 		"databrew:CreateRuleset",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the CreateSchedule API call. */
-	static readonly CREATE_SCHEDULE: string[] = [
+	static readonly CreateSchedule: string[] = [
 		"databrew:CreateSchedule",
 		"databrew:TagResource",
 	];
 	/** IAM actions required for the DeleteDataset API call. */
-	static readonly DELETE_DATASET: string[] = ["databrew:DeleteDataset"];
+	static readonly DeleteDataset: string[] = ["databrew:DeleteDataset"];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["databrew:DeleteJob"];
+	static readonly DeleteJob: string[] = ["databrew:DeleteJob"];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = ["databrew:DeleteProject"];
+	static readonly DeleteProject: string[] = ["databrew:DeleteProject"];
 	/** IAM actions required for the DeleteRecipeVersion API call. */
-	static readonly DELETE_RECIPE_VERSION: string[] = [
+	static readonly DeleteRecipeVersion: string[] = [
 		"databrew:DeleteRecipeVersion",
 	];
 	/** IAM actions required for the DeleteRuleset API call. */
-	static readonly DELETE_RULESET: string[] = ["databrew:DeleteRuleset"];
+	static readonly DeleteRuleset: string[] = ["databrew:DeleteRuleset"];
 	/** IAM actions required for the DeleteSchedule API call. */
-	static readonly DELETE_SCHEDULE: string[] = ["databrew:DeleteSchedule"];
+	static readonly DeleteSchedule: string[] = ["databrew:DeleteSchedule"];
 	/** IAM actions required for the DescribeDataset API call. */
-	static readonly DESCRIBE_DATASET: string[] = ["databrew:DescribeDataset"];
+	static readonly DescribeDataset: string[] = ["databrew:DescribeDataset"];
 	/** IAM actions required for the DescribeJob API call. */
-	static readonly DESCRIBE_JOB: string[] = ["databrew:DescribeJob"];
+	static readonly DescribeJob: string[] = ["databrew:DescribeJob"];
 	/** IAM actions required for the DescribeJobRun API call. */
-	static readonly DESCRIBE_JOB_RUN: string[] = ["databrew:DescribeJobRun"];
+	static readonly DescribeJobRun: string[] = ["databrew:DescribeJobRun"];
 	/** IAM actions required for the DescribeProject API call. */
-	static readonly DESCRIBE_PROJECT: string[] = ["databrew:DescribeProject"];
+	static readonly DescribeProject: string[] = ["databrew:DescribeProject"];
 	/** IAM actions required for the DescribeRecipe API call. */
-	static readonly DESCRIBE_RECIPE: string[] = ["databrew:DescribeRecipe"];
+	static readonly DescribeRecipe: string[] = ["databrew:DescribeRecipe"];
 	/** IAM actions required for the DescribeRuleset API call. */
-	static readonly DESCRIBE_RULESET: string[] = ["databrew:DescribeRuleset"];
+	static readonly DescribeRuleset: string[] = ["databrew:DescribeRuleset"];
 	/** IAM actions required for the DescribeSchedule API call. */
-	static readonly DESCRIBE_SCHEDULE: string[] = ["databrew:DescribeSchedule"];
+	static readonly DescribeSchedule: string[] = ["databrew:DescribeSchedule"];
 	/** IAM actions required for the ListDatasets API call. */
-	static readonly LIST_DATASETS: string[] = ["databrew:ListDatasets"];
+	static readonly ListDatasets: string[] = ["databrew:ListDatasets"];
 	/** IAM actions required for the ListJobRuns API call. */
-	static readonly LIST_JOB_RUNS: string[] = ["databrew:ListJobRuns"];
+	static readonly ListJobRuns: string[] = ["databrew:ListJobRuns"];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["databrew:ListJobs"];
+	static readonly ListJobs: string[] = ["databrew:ListJobs"];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly LIST_PROJECTS: string[] = ["databrew:ListProjects"];
+	static readonly ListProjects: string[] = ["databrew:ListProjects"];
 	/** IAM actions required for the ListRecipeVersions API call. */
-	static readonly LIST_RECIPE_VERSIONS: string[] = [
+	static readonly ListRecipeVersions: string[] = [
 		"databrew:ListRecipeVersions",
 	];
 	/** IAM actions required for the ListRecipes API call. */
-	static readonly LIST_RECIPES: string[] = ["databrew:ListRecipes"];
+	static readonly ListRecipes: string[] = ["databrew:ListRecipes"];
 	/** IAM actions required for the ListRulesets API call. */
-	static readonly LIST_RULESETS: string[] = ["databrew:ListRulesets"];
+	static readonly ListRulesets: string[] = ["databrew:ListRulesets"];
 	/** IAM actions required for the ListSchedules API call. */
-	static readonly LIST_SCHEDULES: string[] = ["databrew:ListSchedules"];
+	static readonly ListSchedules: string[] = ["databrew:ListSchedules"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"databrew:ListTagsForResource",
 	];
 	/** IAM actions required for the PublishRecipe API call. */
-	static readonly PUBLISH_RECIPE: string[] = ["databrew:PublishRecipe"];
+	static readonly PublishRecipe: string[] = ["databrew:PublishRecipe"];
 	/** IAM actions required for the SendProjectSessionAction API call. */
-	static readonly SEND_PROJECT_SESSION_ACTION: string[] = [
+	static readonly SendProjectSessionAction: string[] = [
 		"databrew:SendProjectSessionAction",
 	];
 	/** IAM actions required for the StartJobRun API call. */
-	static readonly START_JOB_RUN: string[] = ["databrew:StartJobRun"];
+	static readonly StartJobRun: string[] = ["databrew:StartJobRun"];
 	/** IAM actions required for the StartProjectSession API call. */
-	static readonly START_PROJECT_SESSION: string[] = [
+	static readonly StartProjectSession: string[] = [
 		"databrew:StartProjectSession",
 	];
 	/** IAM actions required for the StopJobRun API call. */
-	static readonly STOP_JOB_RUN: string[] = ["databrew:StopJobRun"];
+	static readonly StopJobRun: string[] = ["databrew:StopJobRun"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["databrew:TagResource"];
+	static readonly TagResource: string[] = ["databrew:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["databrew:UntagResource"];
+	static readonly UntagResource: string[] = ["databrew:UntagResource"];
 	/** IAM actions required for the UpdateDataset API call. */
-	static readonly UPDATE_DATASET: string[] = ["databrew:UpdateDataset"];
+	static readonly UpdateDataset: string[] = ["databrew:UpdateDataset"];
 	/** IAM actions required for the UpdateProfileJob API call. */
-	static readonly UPDATE_PROFILE_JOB: string[] = [
+	static readonly UpdateProfileJob: string[] = [
 		"iam:PassRole",
 		"databrew:UpdateProfileJob",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UPDATE_PROJECT: string[] = [
+	static readonly UpdateProject: string[] = [
 		"iam:PassRole",
 		"databrew:UpdateProject",
 	];
 	/** IAM actions required for the UpdateRecipe API call. */
-	static readonly UPDATE_RECIPE: string[] = ["databrew:UpdateRecipe"];
+	static readonly UpdateRecipe: string[] = ["databrew:UpdateRecipe"];
 	/** IAM actions required for the UpdateRecipeJob API call. */
-	static readonly UPDATE_RECIPE_JOB: string[] = [
+	static readonly UpdateRecipeJob: string[] = [
 		"iam:PassRole",
 		"databrew:UpdateRecipeJob",
 	];
 	/** IAM actions required for the UpdateRuleset API call. */
-	static readonly UPDATE_RULESET: string[] = ["databrew:UpdateRuleset"];
+	static readonly UpdateRuleset: string[] = ["databrew:UpdateRuleset"];
 	/** IAM actions required for the UpdateSchedule API call. */
-	static readonly UPDATE_SCHEDULE: string[] = ["databrew:UpdateSchedule"];
+	static readonly UpdateSchedule: string[] = ["databrew:UpdateSchedule"];
 }
 
 /**
@@ -600,61 +678,61 @@ export class DatabrewOperations {
  */
 export class DatabrewConditions {
 	/** Condition keys applicable to the CreateDataset action. */
-	static readonly CREATE_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProfileJob action. */
-	static readonly CREATE_PROFILE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRecipe action. */
-	static readonly CREATE_RECIPE_CONDITION_KEYS: string[] = [
+	static readonly CreateRecipeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRecipeJob action. */
-	static readonly CREATE_RECIPE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateRecipeJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRuleset action. */
-	static readonly CREATE_RULESET_CONDITION_KEYS: string[] = [
+	static readonly CreateRulesetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSchedule action. */
-	static readonly CREATE_SCHEDULE_CONDITION_KEYS: string[] = [
+	static readonly CreateScheduleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

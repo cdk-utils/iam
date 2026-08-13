@@ -13,117 +13,143 @@ export class CognitoIdentityActions {
 	static readonly SERVICE_PREFIX = "cognito-identity";
 
 	/** [Write] cognito-identity:CreateIdentityPool */
-	static readonly CREATE_IDENTITY_POOL = "cognito-identity:CreateIdentityPool";
+	static readonly CreateIdentityPool = "cognito-identity:CreateIdentityPool";
 	/** [Write] cognito-identity:DeleteIdentities */
-	static readonly DELETE_IDENTITIES = "cognito-identity:DeleteIdentities";
+	static readonly DeleteIdentities = "cognito-identity:DeleteIdentities";
 	/** [Write] cognito-identity:DeleteIdentityPool */
-	static readonly DELETE_IDENTITY_POOL = "cognito-identity:DeleteIdentityPool";
+	static readonly DeleteIdentityPool = "cognito-identity:DeleteIdentityPool";
 	/** [Read] cognito-identity:DescribeIdentity */
-	static readonly DESCRIBE_IDENTITY = "cognito-identity:DescribeIdentity";
+	static readonly DescribeIdentity = "cognito-identity:DescribeIdentity";
 	/** [Read] cognito-identity:DescribeIdentityPool */
-	static readonly DESCRIBE_IDENTITY_POOL =
+	static readonly DescribeIdentityPool =
 		"cognito-identity:DescribeIdentityPool";
 	/** [Read] cognito-identity:GetCredentialsForIdentity */
-	static readonly GET_CREDENTIALS_FOR_IDENTITY =
+	static readonly actionGetCredentialsForIdentity =
 		"cognito-identity:GetCredentialsForIdentity";
 	/** [Write] cognito-identity:GetId */
-	static readonly GET_ID = "cognito-identity:GetId";
+	static readonly actionGetId = "cognito-identity:GetId";
 	/** [Read] cognito-identity:GetIdentityPoolAnalytics */
-	static readonly GET_IDENTITY_POOL_ANALYTICS =
+	static readonly actionGetIdentityPoolAnalytics =
 		"cognito-identity:GetIdentityPoolAnalytics";
 	/** [Read] cognito-identity:GetIdentityPoolDailyAnalytics */
-	static readonly GET_IDENTITY_POOL_DAILY_ANALYTICS =
+	static readonly actionGetIdentityPoolDailyAnalytics =
 		"cognito-identity:GetIdentityPoolDailyAnalytics";
 	/** [Read] cognito-identity:GetIdentityPoolRoles */
-	static readonly GET_IDENTITY_POOL_ROLES =
+	static readonly actionGetIdentityPoolRoles =
 		"cognito-identity:GetIdentityPoolRoles";
 	/** [Read] cognito-identity:GetIdentityProviderDailyAnalytics */
-	static readonly GET_IDENTITY_PROVIDER_DAILY_ANALYTICS =
+	static readonly actionGetIdentityProviderDailyAnalytics =
 		"cognito-identity:GetIdentityProviderDailyAnalytics";
 	/** [Read] cognito-identity:GetOpenIdToken */
-	static readonly GET_OPEN_ID_TOKEN = "cognito-identity:GetOpenIdToken";
+	static readonly actionGetOpenIdToken = "cognito-identity:GetOpenIdToken";
 	/** [Read] cognito-identity:GetOpenIdTokenForDeveloperIdentity */
-	static readonly GET_OPEN_ID_TOKEN_FOR_DEVELOPER_IDENTITY =
+	static readonly actionGetOpenIdTokenForDeveloperIdentity =
 		"cognito-identity:GetOpenIdTokenForDeveloperIdentity";
 	/** [Read] cognito-identity:GetPrincipalTagAttributeMap */
-	static readonly GET_PRINCIPAL_TAG_ATTRIBUTE_MAP =
+	static readonly actionGetPrincipalTagAttributeMap =
 		"cognito-identity:GetPrincipalTagAttributeMap";
 	/** [List] cognito-identity:ListIdentities */
-	static readonly LIST_IDENTITIES = "cognito-identity:ListIdentities";
+	static readonly ListIdentities = "cognito-identity:ListIdentities";
 	/** [List] cognito-identity:ListIdentityPools */
-	static readonly LIST_IDENTITY_POOLS = "cognito-identity:ListIdentityPools";
+	static readonly ListIdentityPools = "cognito-identity:ListIdentityPools";
 	/** [Read] cognito-identity:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"cognito-identity:ListTagsForResource";
+	static readonly ListTagsForResource = "cognito-identity:ListTagsForResource";
 	/** [Read] cognito-identity:LookupDeveloperIdentity */
-	static readonly LOOKUP_DEVELOPER_IDENTITY =
+	static readonly LookupDeveloperIdentity =
 		"cognito-identity:LookupDeveloperIdentity";
 	/** [Write] cognito-identity:MergeDeveloperIdentities */
-	static readonly MERGE_DEVELOPER_IDENTITIES =
+	static readonly MergeDeveloperIdentities =
 		"cognito-identity:MergeDeveloperIdentities";
 	/** [Write] cognito-identity:SetIdentityPoolRoles */
-	static readonly SET_IDENTITY_POOL_ROLES =
+	static readonly actionSetIdentityPoolRoles =
 		"cognito-identity:SetIdentityPoolRoles";
 	/** [Write] cognito-identity:SetPrincipalTagAttributeMap */
-	static readonly SET_PRINCIPAL_TAG_ATTRIBUTE_MAP =
+	static readonly actionSetPrincipalTagAttributeMap =
 		"cognito-identity:SetPrincipalTagAttributeMap";
 	/** [Tagging] cognito-identity:TagResource */
-	static readonly TAG_RESOURCE = "cognito-identity:TagResource";
+	static readonly TagResource = "cognito-identity:TagResource";
 	/** [Write] cognito-identity:UnlinkDeveloperIdentity */
-	static readonly UNLINK_DEVELOPER_IDENTITY =
+	static readonly UnlinkDeveloperIdentity =
 		"cognito-identity:UnlinkDeveloperIdentity";
 	/** [Write] cognito-identity:UnlinkIdentity */
-	static readonly UNLINK_IDENTITY = "cognito-identity:UnlinkIdentity";
+	static readonly UnlinkIdentity = "cognito-identity:UnlinkIdentity";
 	/** [Tagging] cognito-identity:UntagResource */
-	static readonly UNTAG_RESOURCE = "cognito-identity:UntagResource";
+	static readonly UntagResource = "cognito-identity:UntagResource";
 	/** [Write] cognito-identity:UpdateIdentityPool */
-	static readonly UPDATE_IDENTITY_POOL = "cognito-identity:UpdateIdentityPool";
+	static readonly UpdateIdentityPool = "cognito-identity:UpdateIdentityPool";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CognitoIdentityActions.DESCRIBE_IDENTITY,
-		CognitoIdentityActions.DESCRIBE_IDENTITY_POOL,
-		CognitoIdentityActions.GET_CREDENTIALS_FOR_IDENTITY,
-		CognitoIdentityActions.GET_IDENTITY_POOL_ANALYTICS,
-		CognitoIdentityActions.GET_IDENTITY_POOL_DAILY_ANALYTICS,
-		CognitoIdentityActions.GET_IDENTITY_POOL_ROLES,
-		CognitoIdentityActions.GET_IDENTITY_PROVIDER_DAILY_ANALYTICS,
-		CognitoIdentityActions.GET_OPEN_ID_TOKEN,
-		CognitoIdentityActions.GET_OPEN_ID_TOKEN_FOR_DEVELOPER_IDENTITY,
-		CognitoIdentityActions.GET_PRINCIPAL_TAG_ATTRIBUTE_MAP,
-		CognitoIdentityActions.LIST_TAGS_FOR_RESOURCE,
-		CognitoIdentityActions.LOOKUP_DEVELOPER_IDENTITY,
+	static readonly AllReadActions: string[] = [
+		CognitoIdentityActions.DescribeIdentity,
+		CognitoIdentityActions.DescribeIdentityPool,
+		CognitoIdentityActions.actionGetCredentialsForIdentity,
+		CognitoIdentityActions.actionGetIdentityPoolAnalytics,
+		CognitoIdentityActions.actionGetIdentityPoolDailyAnalytics,
+		CognitoIdentityActions.actionGetIdentityPoolRoles,
+		CognitoIdentityActions.actionGetIdentityProviderDailyAnalytics,
+		CognitoIdentityActions.actionGetOpenIdToken,
+		CognitoIdentityActions.actionGetOpenIdTokenForDeveloperIdentity,
+		CognitoIdentityActions.actionGetPrincipalTagAttributeMap,
+		CognitoIdentityActions.ListTagsForResource,
+		CognitoIdentityActions.LookupDeveloperIdentity,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CognitoIdentityActions.CREATE_IDENTITY_POOL,
-		CognitoIdentityActions.DELETE_IDENTITIES,
-		CognitoIdentityActions.DELETE_IDENTITY_POOL,
-		CognitoIdentityActions.GET_ID,
-		CognitoIdentityActions.MERGE_DEVELOPER_IDENTITIES,
-		CognitoIdentityActions.SET_IDENTITY_POOL_ROLES,
-		CognitoIdentityActions.SET_PRINCIPAL_TAG_ATTRIBUTE_MAP,
-		CognitoIdentityActions.UNLINK_DEVELOPER_IDENTITY,
-		CognitoIdentityActions.UNLINK_IDENTITY,
-		CognitoIdentityActions.UPDATE_IDENTITY_POOL,
+	static readonly AllWriteActions: string[] = [
+		CognitoIdentityActions.CreateIdentityPool,
+		CognitoIdentityActions.DeleteIdentities,
+		CognitoIdentityActions.DeleteIdentityPool,
+		CognitoIdentityActions.actionGetId,
+		CognitoIdentityActions.MergeDeveloperIdentities,
+		CognitoIdentityActions.actionSetIdentityPoolRoles,
+		CognitoIdentityActions.actionSetPrincipalTagAttributeMap,
+		CognitoIdentityActions.UnlinkDeveloperIdentity,
+		CognitoIdentityActions.UnlinkIdentity,
+		CognitoIdentityActions.UpdateIdentityPool,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CognitoIdentityActions.LIST_IDENTITIES,
-		CognitoIdentityActions.LIST_IDENTITY_POOLS,
+	static readonly AllListActions: string[] = [
+		CognitoIdentityActions.ListIdentities,
+		CognitoIdentityActions.ListIdentityPools,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CognitoIdentityActions.TAG_RESOURCE,
-		CognitoIdentityActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CognitoIdentityActions.TagResource,
+		CognitoIdentityActions.UntagResource,
 	];
 }
 
-const IdentitypoolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cognito-identity:(?<region>[^:]*):(?<account>[^:]*):identitypool/(?<identityPoolId>[^:/?]+)$",
-);
+/**
+ * Properties for building a identitypool ARN.
+ */
+export interface CognitoIdentityIdentitypoolArnProps {
+	/** The IdentityPoolId component of the ARN. */
+	readonly identityPoolId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identitypool ARN.
+ */
+export interface CognitoIdentityIdentitypoolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IdentityPoolId component. */
+	readonly identityPoolId: string;
+}
+
+const IdentitypoolArnRegex =
+	/^arn:(?<partition>[^:]+):cognito-identity:(?<region>[^:]*):(?<account>[^:]*):identitypool\/(?<identityPoolId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cognito-identity resources.
@@ -132,16 +158,7 @@ export class CognitoIdentityResources {
 	/**
 	 * Builds an ARN for the identitypool resource.
 	 */
-	static identitypool(props: {
-		/** The IdentityPoolId component of the ARN. */
-		readonly identityPoolId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identitypool(props: CognitoIdentityIdentitypoolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cognito-identity:${props.region ?? "*"}:${props.account ?? "*"}:identitypool/${props.identityPoolId}`;
 	}
 
@@ -156,12 +173,9 @@ export class CognitoIdentityResources {
 	 * Parses a identitypool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentitypoolArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identityPoolId: string;
-	} {
+	static parseIdentitypoolArn(
+		arn: string,
+	): CognitoIdentityIdentitypoolArnComponents {
 		const match = IdentitypoolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identitypool ARN: ${arn}`);
@@ -180,91 +194,91 @@ export class CognitoIdentityResources {
  */
 export class CognitoIdentityOperations {
 	/** IAM actions required for the CreateIdentityPool API call. */
-	static readonly CREATE_IDENTITY_POOL: string[] = [
+	static readonly CreateIdentityPool: string[] = [
 		"cognito-identity:CreateIdentityPool",
 		"cognito-identity:TagResource",
 	];
 	/** IAM actions required for the DeleteIdentities API call. */
-	static readonly DELETE_IDENTITIES: string[] = [
+	static readonly DeleteIdentities: string[] = [
 		"cognito-identity:DeleteIdentities",
 	];
 	/** IAM actions required for the DeleteIdentityPool API call. */
-	static readonly DELETE_IDENTITY_POOL: string[] = [
+	static readonly DeleteIdentityPool: string[] = [
 		"cognito-identity:DeleteIdentityPool",
 	];
 	/** IAM actions required for the DescribeIdentity API call. */
-	static readonly DESCRIBE_IDENTITY: string[] = [
+	static readonly DescribeIdentity: string[] = [
 		"cognito-identity:DescribeIdentity",
 	];
 	/** IAM actions required for the DescribeIdentityPool API call. */
-	static readonly DESCRIBE_IDENTITY_POOL: string[] = [
+	static readonly DescribeIdentityPool: string[] = [
 		"cognito-identity:DescribeIdentityPool",
 	];
 	/** IAM actions required for the GetCredentialsForIdentity API call. */
-	static readonly GET_CREDENTIALS_FOR_IDENTITY: string[] = [
+	static readonly opGetCredentialsForIdentity: string[] = [
 		"cognito-identity:GetCredentialsForIdentity",
 	];
 	/** IAM actions required for the GetId API call. */
-	static readonly GET_ID: string[] = ["cognito-identity:GetId"];
+	static readonly opGetId: string[] = ["cognito-identity:GetId"];
 	/** IAM actions required for the GetIdentityPoolRoles API call. */
-	static readonly GET_IDENTITY_POOL_ROLES: string[] = [
+	static readonly opGetIdentityPoolRoles: string[] = [
 		"cognito-identity:GetIdentityPoolRoles",
 	];
 	/** IAM actions required for the GetOpenIdToken API call. */
-	static readonly GET_OPEN_ID_TOKEN: string[] = [
+	static readonly opGetOpenIdToken: string[] = [
 		"cognito-identity:GetOpenIdToken",
 	];
 	/** IAM actions required for the GetOpenIdTokenForDeveloperIdentity API call. */
-	static readonly GET_OPEN_ID_TOKEN_FOR_DEVELOPER_IDENTITY: string[] = [
+	static readonly opGetOpenIdTokenForDeveloperIdentity: string[] = [
 		"cognito-identity:GetOpenIdTokenForDeveloperIdentity",
 	];
 	/** IAM actions required for the GetPrincipalTagAttributeMap API call. */
-	static readonly GET_PRINCIPAL_TAG_ATTRIBUTE_MAP: string[] = [
+	static readonly opGetPrincipalTagAttributeMap: string[] = [
 		"cognito-identity:GetPrincipalTagAttributeMap",
 	];
 	/** IAM actions required for the ListIdentities API call. */
-	static readonly LIST_IDENTITIES: string[] = [
+	static readonly ListIdentities: string[] = [
 		"cognito-identity:ListIdentities",
 	];
 	/** IAM actions required for the ListIdentityPools API call. */
-	static readonly LIST_IDENTITY_POOLS: string[] = [
+	static readonly ListIdentityPools: string[] = [
 		"cognito-identity:ListIdentityPools",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"cognito-identity:ListTagsForResource",
 	];
 	/** IAM actions required for the LookupDeveloperIdentity API call. */
-	static readonly LOOKUP_DEVELOPER_IDENTITY: string[] = [
+	static readonly LookupDeveloperIdentity: string[] = [
 		"cognito-identity:LookupDeveloperIdentity",
 	];
 	/** IAM actions required for the MergeDeveloperIdentities API call. */
-	static readonly MERGE_DEVELOPER_IDENTITIES: string[] = [
+	static readonly MergeDeveloperIdentities: string[] = [
 		"cognito-identity:MergeDeveloperIdentities",
 	];
 	/** IAM actions required for the SetIdentityPoolRoles API call. */
-	static readonly SET_IDENTITY_POOL_ROLES: string[] = [
+	static readonly opSetIdentityPoolRoles: string[] = [
 		"iam:PassRole",
 		"cognito-identity:SetIdentityPoolRoles",
 	];
 	/** IAM actions required for the SetPrincipalTagAttributeMap API call. */
-	static readonly SET_PRINCIPAL_TAG_ATTRIBUTE_MAP: string[] = [
+	static readonly opSetPrincipalTagAttributeMap: string[] = [
 		"cognito-identity:SetPrincipalTagAttributeMap",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cognito-identity:TagResource"];
+	static readonly TagResource: string[] = ["cognito-identity:TagResource"];
 	/** IAM actions required for the UnlinkDeveloperIdentity API call. */
-	static readonly UNLINK_DEVELOPER_IDENTITY: string[] = [
+	static readonly UnlinkDeveloperIdentity: string[] = [
 		"cognito-identity:UnlinkDeveloperIdentity",
 	];
 	/** IAM actions required for the UnlinkIdentity API call. */
-	static readonly UNLINK_IDENTITY: string[] = [
+	static readonly UnlinkIdentity: string[] = [
 		"cognito-identity:UnlinkIdentity",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cognito-identity:UntagResource"];
+	static readonly UntagResource: string[] = ["cognito-identity:UntagResource"];
 	/** IAM actions required for the UpdateIdentityPool API call. */
-	static readonly UPDATE_IDENTITY_POOL: string[] = [
+	static readonly UpdateIdentityPool: string[] = [
 		"cognito-identity:TagResource",
 		"cognito-identity:UntagResource",
 		"cognito-identity:UpdateIdentityPool",
@@ -276,68 +290,62 @@ export class CognitoIdentityOperations {
  */
 export class CognitoIdentityConditions {
 	/** Condition keys applicable to the CreateIdentityPool action. */
-	static readonly CREATE_IDENTITY_POOL_CONDITION_KEYS: string[] = [
+	static readonly CreateIdentityPoolConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteIdentities action. */
-	static readonly DELETE_IDENTITIES_CONDITION_KEYS: string[] = [
+	static readonly DeleteIdentitiesConditionKeys: string[] = [
 		"cognito-identity:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the DescribeIdentity action. */
-	static readonly DESCRIBE_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly DescribeIdentityConditionKeys: string[] = [
 		"cognito-identity:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the GetCredentialsForIdentity action. */
-	static readonly GET_CREDENTIALS_FOR_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetCredentialsForIdentityConditionKeys: string[] = [
 		"cognito-identity-auth:AccountId",
 		"cognito-identity-auth:IdentityPoolArn",
 		"cognito-identity-unauth:AccountId",
 		"cognito-identity-unauth:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the GetId action. */
-	static readonly GET_ID_CONDITION_KEYS: string[] = [
+	static readonly actionGetIdConditionKeys: string[] = [
 		"cognito-identity-auth:AccountId",
 		"cognito-identity-auth:IdentityPoolArn",
 		"cognito-identity-unauth:AccountId",
 		"cognito-identity-unauth:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the GetOpenIdToken action. */
-	static readonly GET_OPEN_ID_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly actionGetOpenIdTokenConditionKeys: string[] = [
 		"cognito-identity-auth:AccountId",
 		"cognito-identity-auth:IdentityPoolArn",
 		"cognito-identity-unauth:AccountId",
 		"cognito-identity-unauth:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UnlinkIdentity action. */
-	static readonly UNLINK_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly UnlinkIdentityConditionKeys: string[] = [
 		"cognito-identity-auth:AccountId",
 		"cognito-identity-auth:IdentityPoolArn",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cognito-identity-auth:AccountId (String) */
 	static readonly ACCOUNT_ID = "cognito-identity-auth:AccountId";
 	/** Condition key: cognito-identity-auth:IdentityPoolArn (ARN) */
 	static readonly IDENTITY_POOL_ARN = "cognito-identity-auth:IdentityPoolArn";
-	/** Condition key: cognito-identity-unauth:AccountId (String) */
-	static readonly ACCOUNT_ID = "cognito-identity-unauth:AccountId";
-	/** Condition key: cognito-identity-unauth:IdentityPoolArn (ARN) */
-	static readonly IDENTITY_POOL_ARN = "cognito-identity-unauth:IdentityPoolArn";
-	/** Condition key: cognito-identity:IdentityPoolArn (ARN) */
-	static readonly IDENTITY_POOL_ARN = "cognito-identity:IdentityPoolArn";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

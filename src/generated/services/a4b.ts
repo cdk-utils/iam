@@ -13,365 +13,684 @@ export class A4bActions {
 	static readonly SERVICE_PREFIX = "a4b";
 
 	/** [Write] a4b:ApproveSkill */
-	static readonly APPROVE_SKILL = "a4b:ApproveSkill";
+	static readonly ApproveSkill = "a4b:ApproveSkill";
 	/** [Write] a4b:AssociateContactWithAddressBook */
-	static readonly ASSOCIATE_CONTACT_WITH_ADDRESS_BOOK =
+	static readonly AssociateContactWithAddressBook =
 		"a4b:AssociateContactWithAddressBook";
 	/** [Write] a4b:AssociateDeviceWithNetworkProfile */
-	static readonly ASSOCIATE_DEVICE_WITH_NETWORK_PROFILE =
+	static readonly AssociateDeviceWithNetworkProfile =
 		"a4b:AssociateDeviceWithNetworkProfile";
 	/** [Write] a4b:AssociateDeviceWithRoom */
-	static readonly ASSOCIATE_DEVICE_WITH_ROOM = "a4b:AssociateDeviceWithRoom";
+	static readonly AssociateDeviceWithRoom = "a4b:AssociateDeviceWithRoom";
 	/** [Write] a4b:AssociateSkillGroupWithRoom */
-	static readonly ASSOCIATE_SKILL_GROUP_WITH_ROOM =
+	static readonly AssociateSkillGroupWithRoom =
 		"a4b:AssociateSkillGroupWithRoom";
 	/** [Write] a4b:AssociateSkillWithSkillGroup */
-	static readonly ASSOCIATE_SKILL_WITH_SKILL_GROUP =
+	static readonly AssociateSkillWithSkillGroup =
 		"a4b:AssociateSkillWithSkillGroup";
 	/** [Write] a4b:AssociateSkillWithUsers */
-	static readonly ASSOCIATE_SKILL_WITH_USERS = "a4b:AssociateSkillWithUsers";
+	static readonly AssociateSkillWithUsers = "a4b:AssociateSkillWithUsers";
 	/** [Write] a4b:CompleteRegistration */
-	static readonly COMPLETE_REGISTRATION = "a4b:CompleteRegistration";
+	static readonly CompleteRegistration = "a4b:CompleteRegistration";
 	/** [Write] a4b:CreateAddressBook */
-	static readonly CREATE_ADDRESS_BOOK = "a4b:CreateAddressBook";
+	static readonly CreateAddressBook = "a4b:CreateAddressBook";
 	/** [Write] a4b:CreateBusinessReportSchedule */
-	static readonly CREATE_BUSINESS_REPORT_SCHEDULE =
+	static readonly CreateBusinessReportSchedule =
 		"a4b:CreateBusinessReportSchedule";
 	/** [Write] a4b:CreateConferenceProvider */
-	static readonly CREATE_CONFERENCE_PROVIDER = "a4b:CreateConferenceProvider";
+	static readonly CreateConferenceProvider = "a4b:CreateConferenceProvider";
 	/** [Write] a4b:CreateContact */
-	static readonly CREATE_CONTACT = "a4b:CreateContact";
+	static readonly CreateContact = "a4b:CreateContact";
 	/** [Write] a4b:CreateGatewayGroup */
-	static readonly CREATE_GATEWAY_GROUP = "a4b:CreateGatewayGroup";
+	static readonly CreateGatewayGroup = "a4b:CreateGatewayGroup";
 	/** [Write] a4b:CreateNetworkProfile */
-	static readonly CREATE_NETWORK_PROFILE = "a4b:CreateNetworkProfile";
+	static readonly CreateNetworkProfile = "a4b:CreateNetworkProfile";
 	/** [Write] a4b:CreateProfile */
-	static readonly CREATE_PROFILE = "a4b:CreateProfile";
+	static readonly CreateProfile = "a4b:CreateProfile";
 	/** [Write] a4b:CreateRoom */
-	static readonly CREATE_ROOM = "a4b:CreateRoom";
+	static readonly CreateRoom = "a4b:CreateRoom";
 	/** [Write] a4b:CreateSkillGroup */
-	static readonly CREATE_SKILL_GROUP = "a4b:CreateSkillGroup";
+	static readonly CreateSkillGroup = "a4b:CreateSkillGroup";
 	/** [Write] a4b:CreateUser */
-	static readonly CREATE_USER = "a4b:CreateUser";
+	static readonly CreateUser = "a4b:CreateUser";
 	/** [Write] a4b:DeleteAddressBook */
-	static readonly DELETE_ADDRESS_BOOK = "a4b:DeleteAddressBook";
+	static readonly DeleteAddressBook = "a4b:DeleteAddressBook";
 	/** [Write] a4b:DeleteBusinessReportSchedule */
-	static readonly DELETE_BUSINESS_REPORT_SCHEDULE =
+	static readonly DeleteBusinessReportSchedule =
 		"a4b:DeleteBusinessReportSchedule";
 	/** [Write] a4b:DeleteConferenceProvider */
-	static readonly DELETE_CONFERENCE_PROVIDER = "a4b:DeleteConferenceProvider";
+	static readonly DeleteConferenceProvider = "a4b:DeleteConferenceProvider";
 	/** [Write] a4b:DeleteContact */
-	static readonly DELETE_CONTACT = "a4b:DeleteContact";
+	static readonly DeleteContact = "a4b:DeleteContact";
 	/** [Write] a4b:DeleteDevice */
-	static readonly DELETE_DEVICE = "a4b:DeleteDevice";
+	static readonly DeleteDevice = "a4b:DeleteDevice";
 	/** [Write] a4b:DeleteDeviceUsageData */
-	static readonly DELETE_DEVICE_USAGE_DATA = "a4b:DeleteDeviceUsageData";
+	static readonly DeleteDeviceUsageData = "a4b:DeleteDeviceUsageData";
 	/** [Write] a4b:DeleteGatewayGroup */
-	static readonly DELETE_GATEWAY_GROUP = "a4b:DeleteGatewayGroup";
+	static readonly DeleteGatewayGroup = "a4b:DeleteGatewayGroup";
 	/** [Write] a4b:DeleteNetworkProfile */
-	static readonly DELETE_NETWORK_PROFILE = "a4b:DeleteNetworkProfile";
+	static readonly DeleteNetworkProfile = "a4b:DeleteNetworkProfile";
 	/** [Write] a4b:DeleteProfile */
-	static readonly DELETE_PROFILE = "a4b:DeleteProfile";
+	static readonly DeleteProfile = "a4b:DeleteProfile";
 	/** [Write] a4b:DeleteRoom */
-	static readonly DELETE_ROOM = "a4b:DeleteRoom";
+	static readonly DeleteRoom = "a4b:DeleteRoom";
 	/** [Write] a4b:DeleteRoomSkillParameter */
-	static readonly DELETE_ROOM_SKILL_PARAMETER = "a4b:DeleteRoomSkillParameter";
+	static readonly DeleteRoomSkillParameter = "a4b:DeleteRoomSkillParameter";
 	/** [Write] a4b:DeleteSkillAuthorization */
-	static readonly DELETE_SKILL_AUTHORIZATION = "a4b:DeleteSkillAuthorization";
+	static readonly DeleteSkillAuthorization = "a4b:DeleteSkillAuthorization";
 	/** [Write] a4b:DeleteSkillGroup */
-	static readonly DELETE_SKILL_GROUP = "a4b:DeleteSkillGroup";
+	static readonly DeleteSkillGroup = "a4b:DeleteSkillGroup";
 	/** [Write] a4b:DeleteUser */
-	static readonly DELETE_USER = "a4b:DeleteUser";
+	static readonly DeleteUser = "a4b:DeleteUser";
 	/** [Write] a4b:DisassociateContactFromAddressBook */
-	static readonly DISASSOCIATE_CONTACT_FROM_ADDRESS_BOOK =
+	static readonly DisassociateContactFromAddressBook =
 		"a4b:DisassociateContactFromAddressBook";
 	/** [Write] a4b:DisassociateDeviceFromRoom */
-	static readonly DISASSOCIATE_DEVICE_FROM_ROOM =
-		"a4b:DisassociateDeviceFromRoom";
+	static readonly DisassociateDeviceFromRoom = "a4b:DisassociateDeviceFromRoom";
 	/** [Write] a4b:DisassociateSkillFromSkillGroup */
-	static readonly DISASSOCIATE_SKILL_FROM_SKILL_GROUP =
+	static readonly DisassociateSkillFromSkillGroup =
 		"a4b:DisassociateSkillFromSkillGroup";
 	/** [Write] a4b:DisassociateSkillFromUsers */
-	static readonly DISASSOCIATE_SKILL_FROM_USERS =
-		"a4b:DisassociateSkillFromUsers";
+	static readonly DisassociateSkillFromUsers = "a4b:DisassociateSkillFromUsers";
 	/** [Write] a4b:DisassociateSkillGroupFromRoom */
-	static readonly DISASSOCIATE_SKILL_GROUP_FROM_ROOM =
+	static readonly DisassociateSkillGroupFromRoom =
 		"a4b:DisassociateSkillGroupFromRoom";
 	/** [Write] a4b:ForgetSmartHomeAppliances */
-	static readonly FORGET_SMART_HOME_APPLIANCES =
-		"a4b:ForgetSmartHomeAppliances";
+	static readonly ForgetSmartHomeAppliances = "a4b:ForgetSmartHomeAppliances";
 	/** [Read] a4b:GetAddressBook */
-	static readonly GET_ADDRESS_BOOK = "a4b:GetAddressBook";
+	static readonly actionGetAddressBook = "a4b:GetAddressBook";
 	/** [Read] a4b:GetConferencePreference */
-	static readonly GET_CONFERENCE_PREFERENCE = "a4b:GetConferencePreference";
+	static readonly actionGetConferencePreference = "a4b:GetConferencePreference";
 	/** [Read] a4b:GetConferenceProvider */
-	static readonly GET_CONFERENCE_PROVIDER = "a4b:GetConferenceProvider";
+	static readonly actionGetConferenceProvider = "a4b:GetConferenceProvider";
 	/** [Read] a4b:GetContact */
-	static readonly GET_CONTACT = "a4b:GetContact";
+	static readonly actionGetContact = "a4b:GetContact";
 	/** [Read] a4b:GetDevice */
-	static readonly GET_DEVICE = "a4b:GetDevice";
+	static readonly actionGetDevice = "a4b:GetDevice";
 	/** [Read] a4b:GetGateway */
-	static readonly GET_GATEWAY = "a4b:GetGateway";
+	static readonly actionGetGateway = "a4b:GetGateway";
 	/** [Read] a4b:GetGatewayGroup */
-	static readonly GET_GATEWAY_GROUP = "a4b:GetGatewayGroup";
+	static readonly actionGetGatewayGroup = "a4b:GetGatewayGroup";
 	/** [Read] a4b:GetInvitationConfiguration */
-	static readonly GET_INVITATION_CONFIGURATION =
+	static readonly actionGetInvitationConfiguration =
 		"a4b:GetInvitationConfiguration";
 	/** [Read] a4b:GetNetworkProfile */
-	static readonly GET_NETWORK_PROFILE = "a4b:GetNetworkProfile";
+	static readonly actionGetNetworkProfile = "a4b:GetNetworkProfile";
 	/** [Read] a4b:GetProfile */
-	static readonly GET_PROFILE = "a4b:GetProfile";
+	static readonly actionGetProfile = "a4b:GetProfile";
 	/** [Read] a4b:GetRoom */
-	static readonly GET_ROOM = "a4b:GetRoom";
+	static readonly actionGetRoom = "a4b:GetRoom";
 	/** [Read] a4b:GetRoomSkillParameter */
-	static readonly GET_ROOM_SKILL_PARAMETER = "a4b:GetRoomSkillParameter";
+	static readonly actionGetRoomSkillParameter = "a4b:GetRoomSkillParameter";
 	/** [Read] a4b:GetSkillGroup */
-	static readonly GET_SKILL_GROUP = "a4b:GetSkillGroup";
+	static readonly actionGetSkillGroup = "a4b:GetSkillGroup";
 	/** [List] a4b:ListBusinessReportSchedules */
-	static readonly LIST_BUSINESS_REPORT_SCHEDULES =
+	static readonly ListBusinessReportSchedules =
 		"a4b:ListBusinessReportSchedules";
 	/** [List] a4b:ListConferenceProviders */
-	static readonly LIST_CONFERENCE_PROVIDERS = "a4b:ListConferenceProviders";
+	static readonly ListConferenceProviders = "a4b:ListConferenceProviders";
 	/** [List] a4b:ListDeviceEvents */
-	static readonly LIST_DEVICE_EVENTS = "a4b:ListDeviceEvents";
+	static readonly ListDeviceEvents = "a4b:ListDeviceEvents";
 	/** [List] a4b:ListGatewayGroups */
-	static readonly LIST_GATEWAY_GROUPS = "a4b:ListGatewayGroups";
+	static readonly ListGatewayGroups = "a4b:ListGatewayGroups";
 	/** [List] a4b:ListGateways */
-	static readonly LIST_GATEWAYS = "a4b:ListGateways";
+	static readonly ListGateways = "a4b:ListGateways";
 	/** [List] a4b:ListSkills */
-	static readonly LIST_SKILLS = "a4b:ListSkills";
+	static readonly ListSkills = "a4b:ListSkills";
 	/** [List] a4b:ListSkillsStoreCategories */
-	static readonly LIST_SKILLS_STORE_CATEGORIES =
-		"a4b:ListSkillsStoreCategories";
+	static readonly ListSkillsStoreCategories = "a4b:ListSkillsStoreCategories";
 	/** [List] a4b:ListSkillsStoreSkillsByCategory */
-	static readonly LIST_SKILLS_STORE_SKILLS_BY_CATEGORY =
+	static readonly ListSkillsStoreSkillsByCategory =
 		"a4b:ListSkillsStoreSkillsByCategory";
 	/** [List] a4b:ListSmartHomeAppliances */
-	static readonly LIST_SMART_HOME_APPLIANCES = "a4b:ListSmartHomeAppliances";
+	static readonly ListSmartHomeAppliances = "a4b:ListSmartHomeAppliances";
 	/** [Read] a4b:ListTags */
-	static readonly LIST_TAGS = "a4b:ListTags";
+	static readonly ListTags = "a4b:ListTags";
 	/** [Write] a4b:PutConferencePreference */
-	static readonly PUT_CONFERENCE_PREFERENCE = "a4b:PutConferencePreference";
+	static readonly PutConferencePreference = "a4b:PutConferencePreference";
 	/** [Write] a4b:PutDeviceSetupEvents */
-	static readonly PUT_DEVICE_SETUP_EVENTS = "a4b:PutDeviceSetupEvents";
+	static readonly PutDeviceSetupEvents = "a4b:PutDeviceSetupEvents";
 	/** [Write] a4b:PutInvitationConfiguration */
-	static readonly PUT_INVITATION_CONFIGURATION =
-		"a4b:PutInvitationConfiguration";
+	static readonly PutInvitationConfiguration = "a4b:PutInvitationConfiguration";
 	/** [Write] a4b:PutRoomSkillParameter */
-	static readonly PUT_ROOM_SKILL_PARAMETER = "a4b:PutRoomSkillParameter";
+	static readonly PutRoomSkillParameter = "a4b:PutRoomSkillParameter";
 	/** [Write] a4b:PutSkillAuthorization */
-	static readonly PUT_SKILL_AUTHORIZATION = "a4b:PutSkillAuthorization";
+	static readonly PutSkillAuthorization = "a4b:PutSkillAuthorization";
 	/** [Write] a4b:RegisterAVSDevice */
-	static readonly REGISTER_AVS_DEVICE = "a4b:RegisterAVSDevice";
+	static readonly RegisterAVSDevice = "a4b:RegisterAVSDevice";
 	/** [Write] a4b:RegisterDevice */
-	static readonly REGISTER_DEVICE = "a4b:RegisterDevice";
+	static readonly RegisterDevice = "a4b:RegisterDevice";
 	/** [Write] a4b:RejectSkill */
-	static readonly REJECT_SKILL = "a4b:RejectSkill";
+	static readonly RejectSkill = "a4b:RejectSkill";
 	/** [Read] a4b:ResolveRoom */
-	static readonly RESOLVE_ROOM = "a4b:ResolveRoom";
+	static readonly ResolveRoom = "a4b:ResolveRoom";
 	/** [Write] a4b:RevokeInvitation */
-	static readonly REVOKE_INVITATION = "a4b:RevokeInvitation";
+	static readonly RevokeInvitation = "a4b:RevokeInvitation";
 	/** [List] a4b:SearchAddressBooks */
-	static readonly SEARCH_ADDRESS_BOOKS = "a4b:SearchAddressBooks";
+	static readonly SearchAddressBooks = "a4b:SearchAddressBooks";
 	/** [List] a4b:SearchContacts */
-	static readonly SEARCH_CONTACTS = "a4b:SearchContacts";
+	static readonly SearchContacts = "a4b:SearchContacts";
 	/** [List] a4b:SearchDevices */
-	static readonly SEARCH_DEVICES = "a4b:SearchDevices";
+	static readonly SearchDevices = "a4b:SearchDevices";
 	/** [List] a4b:SearchNetworkProfiles */
-	static readonly SEARCH_NETWORK_PROFILES = "a4b:SearchNetworkProfiles";
+	static readonly SearchNetworkProfiles = "a4b:SearchNetworkProfiles";
 	/** [List] a4b:SearchProfiles */
-	static readonly SEARCH_PROFILES = "a4b:SearchProfiles";
+	static readonly SearchProfiles = "a4b:SearchProfiles";
 	/** [List] a4b:SearchRooms */
-	static readonly SEARCH_ROOMS = "a4b:SearchRooms";
+	static readonly SearchRooms = "a4b:SearchRooms";
 	/** [List] a4b:SearchSkillGroups */
-	static readonly SEARCH_SKILL_GROUPS = "a4b:SearchSkillGroups";
+	static readonly SearchSkillGroups = "a4b:SearchSkillGroups";
 	/** [List] a4b:SearchUsers */
-	static readonly SEARCH_USERS = "a4b:SearchUsers";
+	static readonly SearchUsers = "a4b:SearchUsers";
 	/** [Write] a4b:SendAnnouncement */
-	static readonly SEND_ANNOUNCEMENT = "a4b:SendAnnouncement";
+	static readonly SendAnnouncement = "a4b:SendAnnouncement";
 	/** [Write] a4b:SendInvitation */
-	static readonly SEND_INVITATION = "a4b:SendInvitation";
+	static readonly SendInvitation = "a4b:SendInvitation";
 	/** [Write] a4b:StartDeviceSync */
-	static readonly START_DEVICE_SYNC = "a4b:StartDeviceSync";
+	static readonly StartDeviceSync = "a4b:StartDeviceSync";
 	/** [Read] a4b:StartSmartHomeApplianceDiscovery */
-	static readonly START_SMART_HOME_APPLIANCE_DISCOVERY =
+	static readonly StartSmartHomeApplianceDiscovery =
 		"a4b:StartSmartHomeApplianceDiscovery";
 	/** [Tagging] a4b:TagResource */
-	static readonly TAG_RESOURCE = "a4b:TagResource";
+	static readonly TagResource = "a4b:TagResource";
 	/** [Tagging] a4b:UntagResource */
-	static readonly UNTAG_RESOURCE = "a4b:UntagResource";
+	static readonly UntagResource = "a4b:UntagResource";
 	/** [Write] a4b:UpdateAddressBook */
-	static readonly UPDATE_ADDRESS_BOOK = "a4b:UpdateAddressBook";
+	static readonly UpdateAddressBook = "a4b:UpdateAddressBook";
 	/** [Write] a4b:UpdateBusinessReportSchedule */
-	static readonly UPDATE_BUSINESS_REPORT_SCHEDULE =
+	static readonly UpdateBusinessReportSchedule =
 		"a4b:UpdateBusinessReportSchedule";
 	/** [Write] a4b:UpdateConferenceProvider */
-	static readonly UPDATE_CONFERENCE_PROVIDER = "a4b:UpdateConferenceProvider";
+	static readonly UpdateConferenceProvider = "a4b:UpdateConferenceProvider";
 	/** [Write] a4b:UpdateContact */
-	static readonly UPDATE_CONTACT = "a4b:UpdateContact";
+	static readonly UpdateContact = "a4b:UpdateContact";
 	/** [Write] a4b:UpdateDevice */
-	static readonly UPDATE_DEVICE = "a4b:UpdateDevice";
+	static readonly UpdateDevice = "a4b:UpdateDevice";
 	/** [Write] a4b:UpdateGateway */
-	static readonly UPDATE_GATEWAY = "a4b:UpdateGateway";
+	static readonly UpdateGateway = "a4b:UpdateGateway";
 	/** [Write] a4b:UpdateGatewayGroup */
-	static readonly UPDATE_GATEWAY_GROUP = "a4b:UpdateGatewayGroup";
+	static readonly UpdateGatewayGroup = "a4b:UpdateGatewayGroup";
 	/** [Write] a4b:UpdateNetworkProfile */
-	static readonly UPDATE_NETWORK_PROFILE = "a4b:UpdateNetworkProfile";
+	static readonly UpdateNetworkProfile = "a4b:UpdateNetworkProfile";
 	/** [Write] a4b:UpdateProfile */
-	static readonly UPDATE_PROFILE = "a4b:UpdateProfile";
+	static readonly UpdateProfile = "a4b:UpdateProfile";
 	/** [Write] a4b:UpdateRoom */
-	static readonly UPDATE_ROOM = "a4b:UpdateRoom";
+	static readonly UpdateRoom = "a4b:UpdateRoom";
 	/** [Write] a4b:UpdateSkillGroup */
-	static readonly UPDATE_SKILL_GROUP = "a4b:UpdateSkillGroup";
+	static readonly UpdateSkillGroup = "a4b:UpdateSkillGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		A4bActions.GET_ADDRESS_BOOK,
-		A4bActions.GET_CONFERENCE_PREFERENCE,
-		A4bActions.GET_CONFERENCE_PROVIDER,
-		A4bActions.GET_CONTACT,
-		A4bActions.GET_DEVICE,
-		A4bActions.GET_GATEWAY,
-		A4bActions.GET_GATEWAY_GROUP,
-		A4bActions.GET_INVITATION_CONFIGURATION,
-		A4bActions.GET_NETWORK_PROFILE,
-		A4bActions.GET_PROFILE,
-		A4bActions.GET_ROOM,
-		A4bActions.GET_ROOM_SKILL_PARAMETER,
-		A4bActions.GET_SKILL_GROUP,
-		A4bActions.LIST_TAGS,
-		A4bActions.RESOLVE_ROOM,
-		A4bActions.START_SMART_HOME_APPLIANCE_DISCOVERY,
+	static readonly AllReadActions: string[] = [
+		A4bActions.actionGetAddressBook,
+		A4bActions.actionGetConferencePreference,
+		A4bActions.actionGetConferenceProvider,
+		A4bActions.actionGetContact,
+		A4bActions.actionGetDevice,
+		A4bActions.actionGetGateway,
+		A4bActions.actionGetGatewayGroup,
+		A4bActions.actionGetInvitationConfiguration,
+		A4bActions.actionGetNetworkProfile,
+		A4bActions.actionGetProfile,
+		A4bActions.actionGetRoom,
+		A4bActions.actionGetRoomSkillParameter,
+		A4bActions.actionGetSkillGroup,
+		A4bActions.ListTags,
+		A4bActions.ResolveRoom,
+		A4bActions.StartSmartHomeApplianceDiscovery,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		A4bActions.APPROVE_SKILL,
-		A4bActions.ASSOCIATE_CONTACT_WITH_ADDRESS_BOOK,
-		A4bActions.ASSOCIATE_DEVICE_WITH_NETWORK_PROFILE,
-		A4bActions.ASSOCIATE_DEVICE_WITH_ROOM,
-		A4bActions.ASSOCIATE_SKILL_GROUP_WITH_ROOM,
-		A4bActions.ASSOCIATE_SKILL_WITH_SKILL_GROUP,
-		A4bActions.ASSOCIATE_SKILL_WITH_USERS,
-		A4bActions.COMPLETE_REGISTRATION,
-		A4bActions.CREATE_ADDRESS_BOOK,
-		A4bActions.CREATE_BUSINESS_REPORT_SCHEDULE,
-		A4bActions.CREATE_CONFERENCE_PROVIDER,
-		A4bActions.CREATE_CONTACT,
-		A4bActions.CREATE_GATEWAY_GROUP,
-		A4bActions.CREATE_NETWORK_PROFILE,
-		A4bActions.CREATE_PROFILE,
-		A4bActions.CREATE_ROOM,
-		A4bActions.CREATE_SKILL_GROUP,
-		A4bActions.CREATE_USER,
-		A4bActions.DELETE_ADDRESS_BOOK,
-		A4bActions.DELETE_BUSINESS_REPORT_SCHEDULE,
-		A4bActions.DELETE_CONFERENCE_PROVIDER,
-		A4bActions.DELETE_CONTACT,
-		A4bActions.DELETE_DEVICE,
-		A4bActions.DELETE_DEVICE_USAGE_DATA,
-		A4bActions.DELETE_GATEWAY_GROUP,
-		A4bActions.DELETE_NETWORK_PROFILE,
-		A4bActions.DELETE_PROFILE,
-		A4bActions.DELETE_ROOM,
-		A4bActions.DELETE_ROOM_SKILL_PARAMETER,
-		A4bActions.DELETE_SKILL_AUTHORIZATION,
-		A4bActions.DELETE_SKILL_GROUP,
-		A4bActions.DELETE_USER,
-		A4bActions.DISASSOCIATE_CONTACT_FROM_ADDRESS_BOOK,
-		A4bActions.DISASSOCIATE_DEVICE_FROM_ROOM,
-		A4bActions.DISASSOCIATE_SKILL_FROM_SKILL_GROUP,
-		A4bActions.DISASSOCIATE_SKILL_FROM_USERS,
-		A4bActions.DISASSOCIATE_SKILL_GROUP_FROM_ROOM,
-		A4bActions.FORGET_SMART_HOME_APPLIANCES,
-		A4bActions.PUT_CONFERENCE_PREFERENCE,
-		A4bActions.PUT_DEVICE_SETUP_EVENTS,
-		A4bActions.PUT_INVITATION_CONFIGURATION,
-		A4bActions.PUT_ROOM_SKILL_PARAMETER,
-		A4bActions.PUT_SKILL_AUTHORIZATION,
-		A4bActions.REGISTER_AVS_DEVICE,
-		A4bActions.REGISTER_DEVICE,
-		A4bActions.REJECT_SKILL,
-		A4bActions.REVOKE_INVITATION,
-		A4bActions.SEND_ANNOUNCEMENT,
-		A4bActions.SEND_INVITATION,
-		A4bActions.START_DEVICE_SYNC,
-		A4bActions.UPDATE_ADDRESS_BOOK,
-		A4bActions.UPDATE_BUSINESS_REPORT_SCHEDULE,
-		A4bActions.UPDATE_CONFERENCE_PROVIDER,
-		A4bActions.UPDATE_CONTACT,
-		A4bActions.UPDATE_DEVICE,
-		A4bActions.UPDATE_GATEWAY,
-		A4bActions.UPDATE_GATEWAY_GROUP,
-		A4bActions.UPDATE_NETWORK_PROFILE,
-		A4bActions.UPDATE_PROFILE,
-		A4bActions.UPDATE_ROOM,
-		A4bActions.UPDATE_SKILL_GROUP,
+	static readonly AllWriteActions: string[] = [
+		A4bActions.ApproveSkill,
+		A4bActions.AssociateContactWithAddressBook,
+		A4bActions.AssociateDeviceWithNetworkProfile,
+		A4bActions.AssociateDeviceWithRoom,
+		A4bActions.AssociateSkillGroupWithRoom,
+		A4bActions.AssociateSkillWithSkillGroup,
+		A4bActions.AssociateSkillWithUsers,
+		A4bActions.CompleteRegistration,
+		A4bActions.CreateAddressBook,
+		A4bActions.CreateBusinessReportSchedule,
+		A4bActions.CreateConferenceProvider,
+		A4bActions.CreateContact,
+		A4bActions.CreateGatewayGroup,
+		A4bActions.CreateNetworkProfile,
+		A4bActions.CreateProfile,
+		A4bActions.CreateRoom,
+		A4bActions.CreateSkillGroup,
+		A4bActions.CreateUser,
+		A4bActions.DeleteAddressBook,
+		A4bActions.DeleteBusinessReportSchedule,
+		A4bActions.DeleteConferenceProvider,
+		A4bActions.DeleteContact,
+		A4bActions.DeleteDevice,
+		A4bActions.DeleteDeviceUsageData,
+		A4bActions.DeleteGatewayGroup,
+		A4bActions.DeleteNetworkProfile,
+		A4bActions.DeleteProfile,
+		A4bActions.DeleteRoom,
+		A4bActions.DeleteRoomSkillParameter,
+		A4bActions.DeleteSkillAuthorization,
+		A4bActions.DeleteSkillGroup,
+		A4bActions.DeleteUser,
+		A4bActions.DisassociateContactFromAddressBook,
+		A4bActions.DisassociateDeviceFromRoom,
+		A4bActions.DisassociateSkillFromSkillGroup,
+		A4bActions.DisassociateSkillFromUsers,
+		A4bActions.DisassociateSkillGroupFromRoom,
+		A4bActions.ForgetSmartHomeAppliances,
+		A4bActions.PutConferencePreference,
+		A4bActions.PutDeviceSetupEvents,
+		A4bActions.PutInvitationConfiguration,
+		A4bActions.PutRoomSkillParameter,
+		A4bActions.PutSkillAuthorization,
+		A4bActions.RegisterAVSDevice,
+		A4bActions.RegisterDevice,
+		A4bActions.RejectSkill,
+		A4bActions.RevokeInvitation,
+		A4bActions.SendAnnouncement,
+		A4bActions.SendInvitation,
+		A4bActions.StartDeviceSync,
+		A4bActions.UpdateAddressBook,
+		A4bActions.UpdateBusinessReportSchedule,
+		A4bActions.UpdateConferenceProvider,
+		A4bActions.UpdateContact,
+		A4bActions.UpdateDevice,
+		A4bActions.UpdateGateway,
+		A4bActions.UpdateGatewayGroup,
+		A4bActions.UpdateNetworkProfile,
+		A4bActions.UpdateProfile,
+		A4bActions.UpdateRoom,
+		A4bActions.UpdateSkillGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		A4bActions.LIST_BUSINESS_REPORT_SCHEDULES,
-		A4bActions.LIST_CONFERENCE_PROVIDERS,
-		A4bActions.LIST_DEVICE_EVENTS,
-		A4bActions.LIST_GATEWAY_GROUPS,
-		A4bActions.LIST_GATEWAYS,
-		A4bActions.LIST_SKILLS,
-		A4bActions.LIST_SKILLS_STORE_CATEGORIES,
-		A4bActions.LIST_SKILLS_STORE_SKILLS_BY_CATEGORY,
-		A4bActions.LIST_SMART_HOME_APPLIANCES,
-		A4bActions.SEARCH_ADDRESS_BOOKS,
-		A4bActions.SEARCH_CONTACTS,
-		A4bActions.SEARCH_DEVICES,
-		A4bActions.SEARCH_NETWORK_PROFILES,
-		A4bActions.SEARCH_PROFILES,
-		A4bActions.SEARCH_ROOMS,
-		A4bActions.SEARCH_SKILL_GROUPS,
-		A4bActions.SEARCH_USERS,
+	static readonly AllListActions: string[] = [
+		A4bActions.ListBusinessReportSchedules,
+		A4bActions.ListConferenceProviders,
+		A4bActions.ListDeviceEvents,
+		A4bActions.ListGatewayGroups,
+		A4bActions.ListGateways,
+		A4bActions.ListSkills,
+		A4bActions.ListSkillsStoreCategories,
+		A4bActions.ListSkillsStoreSkillsByCategory,
+		A4bActions.ListSmartHomeAppliances,
+		A4bActions.SearchAddressBooks,
+		A4bActions.SearchContacts,
+		A4bActions.SearchDevices,
+		A4bActions.SearchNetworkProfiles,
+		A4bActions.SearchProfiles,
+		A4bActions.SearchRooms,
+		A4bActions.SearchSkillGroups,
+		A4bActions.SearchUsers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		A4bActions.TAG_RESOURCE,
-		A4bActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		A4bActions.TagResource,
+		A4bActions.UntagResource,
 	];
 }
 
-const AddressbookArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):address-book/(?<resourceId>[^:/?]+)$",
-);
-const ConferenceproviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):conference-provider/(?<resourceId>[^:/?]+)$",
-);
-const ContactArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):contact/(?<resourceId>[^:/?]+)$",
-);
-const DeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):device/(?<resourceId>[^:/?]+)$",
-);
-const GatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):gateway/(?<resourceId>[^:/?]+)$",
-);
-const GatewaygroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):gateway-group/(?<resourceId>[^:/?]+)$",
-);
-const NetworkprofileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):network-profile/(?<resourceId>[^:/?]+)$",
-);
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):profile/(?<resourceId>[^:/?]+)$",
-);
-const RoomArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):room/(?<resourceId>[^:/?]+)$",
-);
-const ScheduleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):schedule/(?<resourceId>[^:/?]+)$",
-);
-const SkillgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):skill-group/(?<resourceId>[^:/?]+)$",
-);
-const UserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):user/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a addressbook ARN.
+ */
+export interface A4bAddressbookArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a addressbook ARN.
+ */
+export interface A4bAddressbookArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a conferenceprovider ARN.
+ */
+export interface A4bConferenceproviderArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a conferenceprovider ARN.
+ */
+export interface A4bConferenceproviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a contact ARN.
+ */
+export interface A4bContactArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a contact ARN.
+ */
+export interface A4bContactArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a device ARN.
+ */
+export interface A4bDeviceArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device ARN.
+ */
+export interface A4bDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a gateway ARN.
+ */
+export interface A4bGatewayArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gateway ARN.
+ */
+export interface A4bGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a gatewaygroup ARN.
+ */
+export interface A4bGatewaygroupArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a gatewaygroup ARN.
+ */
+export interface A4bGatewaygroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a networkprofile ARN.
+ */
+export interface A4bNetworkprofileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a networkprofile ARN.
+ */
+export interface A4bNetworkprofileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a profile ARN.
+ */
+export interface A4bProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface A4bProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a room ARN.
+ */
+export interface A4bRoomArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a room ARN.
+ */
+export interface A4bRoomArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a schedule ARN.
+ */
+export interface A4bScheduleArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a schedule ARN.
+ */
+export interface A4bScheduleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a skillgroup ARN.
+ */
+export interface A4bSkillgroupArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a skillgroup ARN.
+ */
+export interface A4bSkillgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a user ARN.
+ */
+export interface A4bUserArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user ARN.
+ */
+export interface A4bUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AddressbookArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):address-book\/(?<resourceId>[^:/?]+)$/;
+const ConferenceproviderArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):conference-provider\/(?<resourceId>[^:/?]+)$/;
+const ContactArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):contact\/(?<resourceId>[^:/?]+)$/;
+const DeviceArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):device\/(?<resourceId>[^:/?]+)$/;
+const GatewayArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<resourceId>[^:/?]+)$/;
+const GatewaygroupArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):gateway-group\/(?<resourceId>[^:/?]+)$/;
+const NetworkprofileArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):network-profile\/(?<resourceId>[^:/?]+)$/;
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<resourceId>[^:/?]+)$/;
+const RoomArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):room\/(?<resourceId>[^:/?]+)$/;
+const ScheduleArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):schedule\/(?<resourceId>[^:/?]+)$/;
+const SkillgroupArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):skill-group\/(?<resourceId>[^:/?]+)$/;
+const UserArnRegex =
+	/^arn:(?<partition>[^:]+):a4b:(?<region>[^:]*):(?<account>[^:]*):user\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for a4b resources.
@@ -380,16 +699,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the addressbook resource.
 	 */
-	static addressbook(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static addressbook(props: A4bAddressbookArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:address-book/${props.resourceId}`;
 	}
 
@@ -404,12 +714,7 @@ export class A4bResources {
 	 * Parses a addressbook ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAddressbookArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAddressbookArn(arn: string): A4bAddressbookArnComponents {
 		const match = AddressbookArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid addressbook ARN: ${arn}`);
@@ -425,16 +730,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the conferenceprovider resource.
 	 */
-	static conferenceprovider(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static conferenceprovider(props: A4bConferenceproviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:conference-provider/${props.resourceId}`;
 	}
 
@@ -449,12 +745,9 @@ export class A4bResources {
 	 * Parses a conferenceprovider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConferenceproviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseConferenceproviderArn(
+		arn: string,
+	): A4bConferenceproviderArnComponents {
 		const match = ConferenceproviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid conferenceprovider ARN: ${arn}`);
@@ -470,16 +763,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the contact resource.
 	 */
-	static contact(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static contact(props: A4bContactArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:contact/${props.resourceId}`;
 	}
 
@@ -494,12 +778,7 @@ export class A4bResources {
 	 * Parses a contact ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContactArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseContactArn(arn: string): A4bContactArnComponents {
 		const match = ContactArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid contact ARN: ${arn}`);
@@ -515,16 +794,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the device resource.
 	 */
-	static device(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static device(props: A4bDeviceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:device/${props.resourceId}`;
 	}
 
@@ -539,12 +809,7 @@ export class A4bResources {
 	 * Parses a device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDeviceArn(arn: string): A4bDeviceArnComponents {
 		const match = DeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device ARN: ${arn}`);
@@ -560,16 +825,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the gateway resource.
 	 */
-	static gateway(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gateway(props: A4bGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:gateway/${props.resourceId}`;
 	}
 
@@ -584,12 +840,7 @@ export class A4bResources {
 	 * Parses a gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseGatewayArn(arn: string): A4bGatewayArnComponents {
 		const match = GatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid gateway ARN: ${arn}`);
@@ -605,16 +856,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the gatewaygroup resource.
 	 */
-	static gatewaygroup(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static gatewaygroup(props: A4bGatewaygroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:gateway-group/${props.resourceId}`;
 	}
 
@@ -629,12 +871,7 @@ export class A4bResources {
 	 * Parses a gatewaygroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGatewaygroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseGatewaygroupArn(arn: string): A4bGatewaygroupArnComponents {
 		const match = GatewaygroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid gatewaygroup ARN: ${arn}`);
@@ -650,16 +887,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the networkprofile resource.
 	 */
-	static networkprofile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkprofile(props: A4bNetworkprofileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:network-profile/${props.resourceId}`;
 	}
 
@@ -674,12 +902,7 @@ export class A4bResources {
 	 * Parses a networkprofile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkprofileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseNetworkprofileArn(arn: string): A4bNetworkprofileArnComponents {
 		const match = NetworkprofileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid networkprofile ARN: ${arn}`);
@@ -695,16 +918,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: A4bProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.resourceId}`;
 	}
 
@@ -719,12 +933,7 @@ export class A4bResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProfileArn(arn: string): A4bProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -740,16 +949,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the room resource.
 	 */
-	static room(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static room(props: A4bRoomArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:room/${props.resourceId}`;
 	}
 
@@ -764,12 +964,7 @@ export class A4bResources {
 	 * Parses a room ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoomArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRoomArn(arn: string): A4bRoomArnComponents {
 		const match = RoomArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid room ARN: ${arn}`);
@@ -785,16 +980,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the schedule resource.
 	 */
-	static schedule(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static schedule(props: A4bScheduleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:schedule/${props.resourceId}`;
 	}
 
@@ -809,12 +995,7 @@ export class A4bResources {
 	 * Parses a schedule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScheduleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseScheduleArn(arn: string): A4bScheduleArnComponents {
 		const match = ScheduleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid schedule ARN: ${arn}`);
@@ -830,16 +1011,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the skillgroup resource.
 	 */
-	static skillgroup(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static skillgroup(props: A4bSkillgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:skill-group/${props.resourceId}`;
 	}
 
@@ -854,12 +1026,7 @@ export class A4bResources {
 	 * Parses a skillgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSkillgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSkillgroupArn(arn: string): A4bSkillgroupArnComponents {
 		const match = SkillgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid skillgroup ARN: ${arn}`);
@@ -875,16 +1042,7 @@ export class A4bResources {
 	/**
 	 * Builds an ARN for the user resource.
 	 */
-	static user(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static user(props: A4bUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:a4b:${props.region ?? "*"}:${props.account ?? "*"}:user/${props.resourceId}`;
 	}
 
@@ -899,12 +1057,7 @@ export class A4bResources {
 	 * Parses a user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseUserArn(arn: string): A4bUserArnComponents {
 		const match = UserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user ARN: ${arn}`);
@@ -923,62 +1076,62 @@ export class A4bResources {
  */
 export class A4bConditions {
 	/** Condition keys applicable to the CreateAddressBook action. */
-	static readonly CREATE_ADDRESS_BOOK_CONDITION_KEYS: string[] = [
+	static readonly CreateAddressBookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateBusinessReportSchedule action. */
-	static readonly CREATE_BUSINESS_REPORT_SCHEDULE_CONDITION_KEYS: string[] = [
+	static readonly CreateBusinessReportScheduleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConferenceProvider action. */
-	static readonly CREATE_CONFERENCE_PROVIDER_CONDITION_KEYS: string[] = [
+	static readonly CreateConferenceProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateContact action. */
-	static readonly CREATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly CreateContactConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGatewayGroup action. */
-	static readonly CREATE_GATEWAY_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateGatewayGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetworkProfile action. */
-	static readonly CREATE_NETWORK_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProfile action. */
-	static readonly CREATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRoom action. */
-	static readonly CREATE_ROOM_CONDITION_KEYS: string[] = [
+	static readonly CreateRoomConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSkillGroup action. */
-	static readonly CREATE_SKILL_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateSkillGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUser action. */
-	static readonly CREATE_USER_CONDITION_KEYS: string[] = [
+	static readonly CreateUserConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RegisterAVSDevice action. */
-	static readonly REGISTER_AVS_DEVICE_CONDITION_KEYS: string[] = [
+	static readonly RegisterAVSDeviceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
@@ -988,11 +1141,11 @@ export class A4bConditions {
 	/** Condition key: a4b:filters_deviceType (ArrayOfString) */
 	static readonly FILTERS_DEVICE_TYPE = "a4b:filters_deviceType";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `a4b:amazonId`.

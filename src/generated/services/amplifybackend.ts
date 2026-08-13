@@ -13,146 +13,382 @@ export class AmplifybackendActions {
 	static readonly SERVICE_PREFIX = "amplifybackend";
 
 	/** [Write] amplifybackend:CloneBackend */
-	static readonly CLONE_BACKEND = "amplifybackend:CloneBackend";
+	static readonly CloneBackend = "amplifybackend:CloneBackend";
 	/** [Write] amplifybackend:CreateBackend */
-	static readonly CREATE_BACKEND = "amplifybackend:CreateBackend";
+	static readonly CreateBackend = "amplifybackend:CreateBackend";
 	/** [Write] amplifybackend:CreateBackendAPI */
-	static readonly CREATE_BACKEND_API = "amplifybackend:CreateBackendAPI";
+	static readonly CreateBackendAPI = "amplifybackend:CreateBackendAPI";
 	/** [Write] amplifybackend:CreateBackendAuth */
-	static readonly CREATE_BACKEND_AUTH = "amplifybackend:CreateBackendAuth";
+	static readonly CreateBackendAuth = "amplifybackend:CreateBackendAuth";
 	/** [Write] amplifybackend:CreateBackendConfig */
-	static readonly CREATE_BACKEND_CONFIG = "amplifybackend:CreateBackendConfig";
+	static readonly CreateBackendConfig = "amplifybackend:CreateBackendConfig";
 	/** [Write] amplifybackend:CreateBackendStorage */
-	static readonly CREATE_BACKEND_STORAGE =
-		"amplifybackend:CreateBackendStorage";
+	static readonly CreateBackendStorage = "amplifybackend:CreateBackendStorage";
 	/** [Write] amplifybackend:CreateToken */
-	static readonly CREATE_TOKEN = "amplifybackend:CreateToken";
+	static readonly CreateToken = "amplifybackend:CreateToken";
 	/** [Write] amplifybackend:DeleteBackend */
-	static readonly DELETE_BACKEND = "amplifybackend:DeleteBackend";
+	static readonly DeleteBackend = "amplifybackend:DeleteBackend";
 	/** [Write] amplifybackend:DeleteBackendAPI */
-	static readonly DELETE_BACKEND_API = "amplifybackend:DeleteBackendAPI";
+	static readonly DeleteBackendAPI = "amplifybackend:DeleteBackendAPI";
 	/** [Write] amplifybackend:DeleteBackendAuth */
-	static readonly DELETE_BACKEND_AUTH = "amplifybackend:DeleteBackendAuth";
+	static readonly DeleteBackendAuth = "amplifybackend:DeleteBackendAuth";
 	/** [Write] amplifybackend:DeleteBackendStorage */
-	static readonly DELETE_BACKEND_STORAGE =
-		"amplifybackend:DeleteBackendStorage";
+	static readonly DeleteBackendStorage = "amplifybackend:DeleteBackendStorage";
 	/** [Write] amplifybackend:DeleteToken */
-	static readonly DELETE_TOKEN = "amplifybackend:DeleteToken";
+	static readonly DeleteToken = "amplifybackend:DeleteToken";
 	/** [Write] amplifybackend:GenerateBackendAPIModels */
-	static readonly GENERATE_BACKEND_API_MODELS =
+	static readonly GenerateBackendAPIModels =
 		"amplifybackend:GenerateBackendAPIModels";
 	/** [Read] amplifybackend:GetBackend */
-	static readonly GET_BACKEND = "amplifybackend:GetBackend";
+	static readonly actionGetBackend = "amplifybackend:GetBackend";
 	/** [Read] amplifybackend:GetBackendAPI */
-	static readonly GET_BACKEND_API = "amplifybackend:GetBackendAPI";
+	static readonly actionGetBackendAPI = "amplifybackend:GetBackendAPI";
 	/** [Read] amplifybackend:GetBackendAPIModels */
-	static readonly GET_BACKEND_API_MODELS = "amplifybackend:GetBackendAPIModels";
+	static readonly actionGetBackendAPIModels =
+		"amplifybackend:GetBackendAPIModels";
 	/** [Read] amplifybackend:GetBackendAuth */
-	static readonly GET_BACKEND_AUTH = "amplifybackend:GetBackendAuth";
+	static readonly actionGetBackendAuth = "amplifybackend:GetBackendAuth";
 	/** [Read] amplifybackend:GetBackendJob */
-	static readonly GET_BACKEND_JOB = "amplifybackend:GetBackendJob";
+	static readonly actionGetBackendJob = "amplifybackend:GetBackendJob";
 	/** [Read] amplifybackend:GetBackendStorage */
-	static readonly GET_BACKEND_STORAGE = "amplifybackend:GetBackendStorage";
+	static readonly actionGetBackendStorage = "amplifybackend:GetBackendStorage";
 	/** [Read] amplifybackend:GetToken */
-	static readonly GET_TOKEN = "amplifybackend:GetToken";
+	static readonly actionGetToken = "amplifybackend:GetToken";
 	/** [Write] amplifybackend:ImportBackendAuth */
-	static readonly IMPORT_BACKEND_AUTH = "amplifybackend:ImportBackendAuth";
+	static readonly ImportBackendAuth = "amplifybackend:ImportBackendAuth";
 	/** [Write] amplifybackend:ImportBackendStorage */
-	static readonly IMPORT_BACKEND_STORAGE =
-		"amplifybackend:ImportBackendStorage";
+	static readonly ImportBackendStorage = "amplifybackend:ImportBackendStorage";
 	/** [List] amplifybackend:ListBackendJobs */
-	static readonly LIST_BACKEND_JOBS = "amplifybackend:ListBackendJobs";
+	static readonly ListBackendJobs = "amplifybackend:ListBackendJobs";
 	/** [List] amplifybackend:ListS3Buckets */
-	static readonly LIST_S3_BUCKETS = "amplifybackend:ListS3Buckets";
+	static readonly ListS3Buckets = "amplifybackend:ListS3Buckets";
 	/** [Write] amplifybackend:RemoveAllBackends */
-	static readonly REMOVE_ALL_BACKENDS = "amplifybackend:RemoveAllBackends";
+	static readonly RemoveAllBackends = "amplifybackend:RemoveAllBackends";
 	/** [Write] amplifybackend:RemoveBackendConfig */
-	static readonly REMOVE_BACKEND_CONFIG = "amplifybackend:RemoveBackendConfig";
+	static readonly RemoveBackendConfig = "amplifybackend:RemoveBackendConfig";
 	/** [Write] amplifybackend:UpdateBackendAPI */
-	static readonly UPDATE_BACKEND_API = "amplifybackend:UpdateBackendAPI";
+	static readonly UpdateBackendAPI = "amplifybackend:UpdateBackendAPI";
 	/** [Write] amplifybackend:UpdateBackendAuth */
-	static readonly UPDATE_BACKEND_AUTH = "amplifybackend:UpdateBackendAuth";
+	static readonly UpdateBackendAuth = "amplifybackend:UpdateBackendAuth";
 	/** [Write] amplifybackend:UpdateBackendConfig */
-	static readonly UPDATE_BACKEND_CONFIG = "amplifybackend:UpdateBackendConfig";
+	static readonly UpdateBackendConfig = "amplifybackend:UpdateBackendConfig";
 	/** [Write] amplifybackend:UpdateBackendJob */
-	static readonly UPDATE_BACKEND_JOB = "amplifybackend:UpdateBackendJob";
+	static readonly UpdateBackendJob = "amplifybackend:UpdateBackendJob";
 	/** [Write] amplifybackend:UpdateBackendStorage */
-	static readonly UPDATE_BACKEND_STORAGE =
-		"amplifybackend:UpdateBackendStorage";
+	static readonly UpdateBackendStorage = "amplifybackend:UpdateBackendStorage";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AmplifybackendActions.GET_BACKEND,
-		AmplifybackendActions.GET_BACKEND_API,
-		AmplifybackendActions.GET_BACKEND_API_MODELS,
-		AmplifybackendActions.GET_BACKEND_AUTH,
-		AmplifybackendActions.GET_BACKEND_JOB,
-		AmplifybackendActions.GET_BACKEND_STORAGE,
-		AmplifybackendActions.GET_TOKEN,
+	static readonly AllReadActions: string[] = [
+		AmplifybackendActions.actionGetBackend,
+		AmplifybackendActions.actionGetBackendAPI,
+		AmplifybackendActions.actionGetBackendAPIModels,
+		AmplifybackendActions.actionGetBackendAuth,
+		AmplifybackendActions.actionGetBackendJob,
+		AmplifybackendActions.actionGetBackendStorage,
+		AmplifybackendActions.actionGetToken,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AmplifybackendActions.CLONE_BACKEND,
-		AmplifybackendActions.CREATE_BACKEND,
-		AmplifybackendActions.CREATE_BACKEND_API,
-		AmplifybackendActions.CREATE_BACKEND_AUTH,
-		AmplifybackendActions.CREATE_BACKEND_CONFIG,
-		AmplifybackendActions.CREATE_BACKEND_STORAGE,
-		AmplifybackendActions.CREATE_TOKEN,
-		AmplifybackendActions.DELETE_BACKEND,
-		AmplifybackendActions.DELETE_BACKEND_API,
-		AmplifybackendActions.DELETE_BACKEND_AUTH,
-		AmplifybackendActions.DELETE_BACKEND_STORAGE,
-		AmplifybackendActions.DELETE_TOKEN,
-		AmplifybackendActions.GENERATE_BACKEND_API_MODELS,
-		AmplifybackendActions.IMPORT_BACKEND_AUTH,
-		AmplifybackendActions.IMPORT_BACKEND_STORAGE,
-		AmplifybackendActions.REMOVE_ALL_BACKENDS,
-		AmplifybackendActions.REMOVE_BACKEND_CONFIG,
-		AmplifybackendActions.UPDATE_BACKEND_API,
-		AmplifybackendActions.UPDATE_BACKEND_AUTH,
-		AmplifybackendActions.UPDATE_BACKEND_CONFIG,
-		AmplifybackendActions.UPDATE_BACKEND_JOB,
-		AmplifybackendActions.UPDATE_BACKEND_STORAGE,
+	static readonly AllWriteActions: string[] = [
+		AmplifybackendActions.CloneBackend,
+		AmplifybackendActions.CreateBackend,
+		AmplifybackendActions.CreateBackendAPI,
+		AmplifybackendActions.CreateBackendAuth,
+		AmplifybackendActions.CreateBackendConfig,
+		AmplifybackendActions.CreateBackendStorage,
+		AmplifybackendActions.CreateToken,
+		AmplifybackendActions.DeleteBackend,
+		AmplifybackendActions.DeleteBackendAPI,
+		AmplifybackendActions.DeleteBackendAuth,
+		AmplifybackendActions.DeleteBackendStorage,
+		AmplifybackendActions.DeleteToken,
+		AmplifybackendActions.GenerateBackendAPIModels,
+		AmplifybackendActions.ImportBackendAuth,
+		AmplifybackendActions.ImportBackendStorage,
+		AmplifybackendActions.RemoveAllBackends,
+		AmplifybackendActions.RemoveBackendConfig,
+		AmplifybackendActions.UpdateBackendAPI,
+		AmplifybackendActions.UpdateBackendAuth,
+		AmplifybackendActions.UpdateBackendConfig,
+		AmplifybackendActions.UpdateBackendJob,
+		AmplifybackendActions.UpdateBackendStorage,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AmplifybackendActions.LIST_BACKEND_JOBS,
-		AmplifybackendActions.LIST_S3_BUCKETS,
+	static readonly AllListActions: string[] = [
+		AmplifybackendActions.ListBackendJobs,
+		AmplifybackendActions.ListS3Buckets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const APIArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/api/.*$",
-);
-const AuthArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/auth/.*$",
-);
-const BackendArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/.*$",
-);
-const ConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/config/.*$",
-);
-const CreatedBackendArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/.*$",
-);
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/environments/.*$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/job/.*$",
-);
-const StorageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/storage/.*$",
-);
-const TokenArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):/backend/(?<appId>[^:/?]+)/challenge/.*$",
-);
+/**
+ * Properties for building a api ARN.
+ */
+export interface AmplifybackendAPIArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a api ARN.
+ */
+export interface AmplifybackendAPIArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a auth ARN.
+ */
+export interface AmplifybackendAuthArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a auth ARN.
+ */
+export interface AmplifybackendAuthArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a backend ARN.
+ */
+export interface AmplifybackendBackendArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a backend ARN.
+ */
+export interface AmplifybackendBackendArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a config ARN.
+ */
+export interface AmplifybackendConfigArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a config ARN.
+ */
+export interface AmplifybackendConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a created-backend ARN.
+ */
+export interface AmplifybackendCreatedBackendArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a created-backend ARN.
+ */
+export interface AmplifybackendCreatedBackendArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a environment ARN.
+ */
+export interface AmplifybackendEnvironmentArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface AmplifybackendEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface AmplifybackendJobArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface AmplifybackendJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a storage ARN.
+ */
+export interface AmplifybackendStorageArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a storage ARN.
+ */
+export interface AmplifybackendStorageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a token ARN.
+ */
+export interface AmplifybackendTokenArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a token ARN.
+ */
+export interface AmplifybackendTokenArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+const APIArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/api\/.*$/;
+const AuthArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/auth\/.*$/;
+const BackendArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/.*$/;
+const ConfigArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/config\/.*$/;
+const CreatedBackendArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/.*$/;
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/environments\/.*$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/job\/.*$/;
+const StorageArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/storage\/.*$/;
+const TokenArnRegex =
+	/^arn:(?<partition>[^:]+):amplifybackend:(?<region>[^:]*):(?<account>[^:]*):\/backend\/(?<appId>[^:/?]+)\/challenge\/.*$/;
 
 /**
  * ARN builders, validators, and parsers for amplifybackend resources.
@@ -161,16 +397,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the api resource.
 	 */
-	static api(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static api(props: AmplifybackendAPIArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/api/*`;
 	}
 
@@ -185,12 +412,7 @@ export class AmplifybackendResources {
 	 * Parses a api ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseAPIArn(arn: string): AmplifybackendAPIArnComponents {
 		const match = APIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid api ARN: ${arn}`);
@@ -206,16 +428,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the auth resource.
 	 */
-	static auth(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static auth(props: AmplifybackendAuthArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/auth/*`;
 	}
 
@@ -230,12 +443,7 @@ export class AmplifybackendResources {
 	 * Parses a auth ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseAuthArn(arn: string): AmplifybackendAuthArnComponents {
 		const match = AuthArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid auth ARN: ${arn}`);
@@ -251,16 +459,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the backend resource.
 	 */
-	static backend(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static backend(props: AmplifybackendBackendArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/*`;
 	}
 
@@ -275,12 +474,7 @@ export class AmplifybackendResources {
 	 * Parses a backend ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBackendArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseBackendArn(arn: string): AmplifybackendBackendArnComponents {
 		const match = BackendArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid backend ARN: ${arn}`);
@@ -296,16 +490,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the config resource.
 	 */
-	static config(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static config(props: AmplifybackendConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/config/*`;
 	}
 
@@ -320,12 +505,7 @@ export class AmplifybackendResources {
 	 * Parses a config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseConfigArn(arn: string): AmplifybackendConfigArnComponents {
 		const match = ConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid config ARN: ${arn}`);
@@ -341,14 +521,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the created-backend resource.
 	 */
-	static createdBackend(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static createdBackend(props: AmplifybackendCreatedBackendArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/*`;
 	}
 
@@ -363,11 +536,9 @@ export class AmplifybackendResources {
 	 * Parses a created-backend ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCreatedBackendArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseCreatedBackendArn(
+		arn: string,
+	): AmplifybackendCreatedBackendArnComponents {
 		const match = CreatedBackendArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid created-backend ARN: ${arn}`);
@@ -382,16 +553,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: AmplifybackendEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/environments/*`;
 	}
 
@@ -406,12 +568,9 @@ export class AmplifybackendResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseEnvironmentArn(
+		arn: string,
+	): AmplifybackendEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -427,16 +586,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: AmplifybackendJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/job/*`;
 	}
 
@@ -451,12 +601,7 @@ export class AmplifybackendResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseJobArn(arn: string): AmplifybackendJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -472,16 +617,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the storage resource.
 	 */
-	static storage(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static storage(props: AmplifybackendStorageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/storage/*`;
 	}
 
@@ -496,12 +632,7 @@ export class AmplifybackendResources {
 	 * Parses a storage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStorageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseStorageArn(arn: string): AmplifybackendStorageArnComponents {
 		const match = StorageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid storage ARN: ${arn}`);
@@ -517,16 +648,7 @@ export class AmplifybackendResources {
 	/**
 	 * Builds an ARN for the token resource.
 	 */
-	static token(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static token(props: AmplifybackendTokenArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifybackend:${props.region ?? "*"}:${props.account ?? "*"}:/backend/${props.appId}/challenge/*`;
 	}
 
@@ -541,12 +663,7 @@ export class AmplifybackendResources {
 	 * Parses a token ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTokenArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseTokenArn(arn: string): AmplifybackendTokenArnComponents {
 		const match = TokenArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid token ARN: ${arn}`);
@@ -565,107 +682,107 @@ export class AmplifybackendResources {
  */
 export class AmplifybackendOperations {
 	/** IAM actions required for the CloneBackend API call. */
-	static readonly CLONE_BACKEND: string[] = ["amplifybackend:CloneBackend"];
+	static readonly CloneBackend: string[] = ["amplifybackend:CloneBackend"];
 	/** IAM actions required for the CreateBackend API call. */
-	static readonly CREATE_BACKEND: string[] = ["amplifybackend:CreateBackend"];
+	static readonly CreateBackend: string[] = ["amplifybackend:CreateBackend"];
 	/** IAM actions required for the CreateBackendAPI API call. */
-	static readonly CREATE_BACKEND_API: string[] = [
+	static readonly CreateBackendAPI: string[] = [
 		"amplifybackend:CreateBackendAPI",
 	];
 	/** IAM actions required for the CreateBackendAuth API call. */
-	static readonly CREATE_BACKEND_AUTH: string[] = [
+	static readonly CreateBackendAuth: string[] = [
 		"amplifybackend:CreateBackendAuth",
 	];
 	/** IAM actions required for the CreateBackendConfig API call. */
-	static readonly CREATE_BACKEND_CONFIG: string[] = [
+	static readonly CreateBackendConfig: string[] = [
 		"amplifybackend:CreateBackendConfig",
 	];
 	/** IAM actions required for the CreateBackendStorage API call. */
-	static readonly CREATE_BACKEND_STORAGE: string[] = [
+	static readonly CreateBackendStorage: string[] = [
 		"amplifybackend:CreateBackendStorage",
 	];
 	/** IAM actions required for the CreateToken API call. */
-	static readonly CREATE_TOKEN: string[] = ["amplifybackend:CreateToken"];
+	static readonly CreateToken: string[] = ["amplifybackend:CreateToken"];
 	/** IAM actions required for the DeleteBackend API call. */
-	static readonly DELETE_BACKEND: string[] = ["amplifybackend:DeleteBackend"];
+	static readonly DeleteBackend: string[] = ["amplifybackend:DeleteBackend"];
 	/** IAM actions required for the DeleteBackendAPI API call. */
-	static readonly DELETE_BACKEND_API: string[] = [
+	static readonly DeleteBackendAPI: string[] = [
 		"amplifybackend:DeleteBackendAPI",
 	];
 	/** IAM actions required for the DeleteBackendAuth API call. */
-	static readonly DELETE_BACKEND_AUTH: string[] = [
+	static readonly DeleteBackendAuth: string[] = [
 		"amplifybackend:DeleteBackendAuth",
 	];
 	/** IAM actions required for the DeleteBackendStorage API call. */
-	static readonly DELETE_BACKEND_STORAGE: string[] = [
+	static readonly DeleteBackendStorage: string[] = [
 		"amplifybackend:DeleteBackendStorage",
 	];
 	/** IAM actions required for the DeleteToken API call. */
-	static readonly DELETE_TOKEN: string[] = ["amplifybackend:DeleteToken"];
+	static readonly DeleteToken: string[] = ["amplifybackend:DeleteToken"];
 	/** IAM actions required for the GenerateBackendAPIModels API call. */
-	static readonly GENERATE_BACKEND_API_MODELS: string[] = [
+	static readonly GenerateBackendAPIModels: string[] = [
 		"amplifybackend:GenerateBackendAPIModels",
 	];
 	/** IAM actions required for the GetBackend API call. */
-	static readonly GET_BACKEND: string[] = ["amplifybackend:GetBackend"];
+	static readonly opGetBackend: string[] = ["amplifybackend:GetBackend"];
 	/** IAM actions required for the GetBackendAPI API call. */
-	static readonly GET_BACKEND_API: string[] = ["amplifybackend:GetBackendAPI"];
+	static readonly opGetBackendAPI: string[] = ["amplifybackend:GetBackendAPI"];
 	/** IAM actions required for the GetBackendAPIModels API call. */
-	static readonly GET_BACKEND_API_MODELS: string[] = [
+	static readonly opGetBackendAPIModels: string[] = [
 		"amplifybackend:GetBackendAPIModels",
 	];
 	/** IAM actions required for the GetBackendAuth API call. */
-	static readonly GET_BACKEND_AUTH: string[] = [
+	static readonly opGetBackendAuth: string[] = [
 		"amplifybackend:GetBackendAuth",
 	];
 	/** IAM actions required for the GetBackendJob API call. */
-	static readonly GET_BACKEND_JOB: string[] = ["amplifybackend:GetBackendJob"];
+	static readonly opGetBackendJob: string[] = ["amplifybackend:GetBackendJob"];
 	/** IAM actions required for the GetBackendStorage API call. */
-	static readonly GET_BACKEND_STORAGE: string[] = [
+	static readonly opGetBackendStorage: string[] = [
 		"amplifybackend:GetBackendStorage",
 	];
 	/** IAM actions required for the GetToken API call. */
-	static readonly GET_TOKEN: string[] = ["amplifybackend:GetToken"];
+	static readonly opGetToken: string[] = ["amplifybackend:GetToken"];
 	/** IAM actions required for the ImportBackendAuth API call. */
-	static readonly IMPORT_BACKEND_AUTH: string[] = [
+	static readonly ImportBackendAuth: string[] = [
 		"amplifybackend:ImportBackendAuth",
 	];
 	/** IAM actions required for the ImportBackendStorage API call. */
-	static readonly IMPORT_BACKEND_STORAGE: string[] = [
+	static readonly ImportBackendStorage: string[] = [
 		"amplifybackend:ImportBackendStorage",
 	];
 	/** IAM actions required for the ListBackendJobs API call. */
-	static readonly LIST_BACKEND_JOBS: string[] = [
+	static readonly ListBackendJobs: string[] = [
 		"amplifybackend:ListBackendJobs",
 	];
 	/** IAM actions required for the ListS3Buckets API call. */
-	static readonly LIST_S3_BUCKETS: string[] = ["amplifybackend:ListS3Buckets"];
+	static readonly ListS3Buckets: string[] = ["amplifybackend:ListS3Buckets"];
 	/** IAM actions required for the RemoveAllBackends API call. */
-	static readonly REMOVE_ALL_BACKENDS: string[] = [
+	static readonly RemoveAllBackends: string[] = [
 		"amplifybackend:RemoveAllBackends",
 	];
 	/** IAM actions required for the RemoveBackendConfig API call. */
-	static readonly REMOVE_BACKEND_CONFIG: string[] = [
+	static readonly RemoveBackendConfig: string[] = [
 		"amplifybackend:RemoveBackendConfig",
 	];
 	/** IAM actions required for the UpdateBackendAPI API call. */
-	static readonly UPDATE_BACKEND_API: string[] = [
+	static readonly UpdateBackendAPI: string[] = [
 		"amplifybackend:UpdateBackendAPI",
 	];
 	/** IAM actions required for the UpdateBackendAuth API call. */
-	static readonly UPDATE_BACKEND_AUTH: string[] = [
+	static readonly UpdateBackendAuth: string[] = [
 		"amplifybackend:UpdateBackendAuth",
 	];
 	/** IAM actions required for the UpdateBackendConfig API call. */
-	static readonly UPDATE_BACKEND_CONFIG: string[] = [
+	static readonly UpdateBackendConfig: string[] = [
 		"amplifybackend:UpdateBackendConfig",
 	];
 	/** IAM actions required for the UpdateBackendJob API call. */
-	static readonly UPDATE_BACKEND_JOB: string[] = [
+	static readonly UpdateBackendJob: string[] = [
 		"amplifybackend:UpdateBackendJob",
 	];
 	/** IAM actions required for the UpdateBackendStorage API call. */
-	static readonly UPDATE_BACKEND_STORAGE: string[] = [
+	static readonly UpdateBackendStorage: string[] = [
 		"amplifybackend:UpdateBackendStorage",
 	];
 }

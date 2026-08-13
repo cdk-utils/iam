@@ -13,359 +13,518 @@ export class DRSActions {
 	static readonly SERVICE_PREFIX = "drs";
 
 	/** [Write] drs:AssociateFailbackClientToRecoveryInstanceForDrs */
-	static readonly ASSOCIATE_FAILBACK_CLIENT_TO_RECOVERY_INSTANCE_FOR_DRS =
+	static readonly AssociateFailbackClientToRecoveryInstanceForDrs =
 		"drs:AssociateFailbackClientToRecoveryInstanceForDrs";
 	/** [Write] drs:AssociateSourceNetworkStack */
-	static readonly ASSOCIATE_SOURCE_NETWORK_STACK =
+	static readonly AssociateSourceNetworkStack =
 		"drs:AssociateSourceNetworkStack";
 	/** [Write] drs:BatchCreateVolumeSnapshotGroupForDrs */
-	static readonly BATCH_CREATE_VOLUME_SNAPSHOT_GROUP_FOR_DRS =
+	static readonly BatchCreateVolumeSnapshotGroupForDrs =
 		"drs:BatchCreateVolumeSnapshotGroupForDrs";
 	/** [Write] drs:BatchDeleteSnapshotRequestForDrs */
-	static readonly BATCH_DELETE_SNAPSHOT_REQUEST_FOR_DRS =
+	static readonly BatchDeleteSnapshotRequestForDrs =
 		"drs:BatchDeleteSnapshotRequestForDrs";
 	/** [Write] drs:CreateConvertedSnapshotForDrs */
-	static readonly CREATE_CONVERTED_SNAPSHOT_FOR_DRS =
+	static readonly CreateConvertedSnapshotForDrs =
 		"drs:CreateConvertedSnapshotForDrs";
 	/** [Write] drs:CreateExtendedSourceServer */
-	static readonly CREATE_EXTENDED_SOURCE_SERVER =
-		"drs:CreateExtendedSourceServer";
+	static readonly CreateExtendedSourceServer = "drs:CreateExtendedSourceServer";
 	/** [Write] drs:CreateLaunchConfigurationTemplate */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly CreateLaunchConfigurationTemplate =
 		"drs:CreateLaunchConfigurationTemplate";
 	/** [Write] drs:CreateRecoveryInstanceForDrs */
-	static readonly CREATE_RECOVERY_INSTANCE_FOR_DRS =
+	static readonly CreateRecoveryInstanceForDrs =
 		"drs:CreateRecoveryInstanceForDrs";
 	/** [Write] drs:CreateReplicationConfigurationTemplate */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly CreateReplicationConfigurationTemplate =
 		"drs:CreateReplicationConfigurationTemplate";
 	/** [Write] drs:CreateSourceNetwork */
-	static readonly CREATE_SOURCE_NETWORK = "drs:CreateSourceNetwork";
+	static readonly CreateSourceNetwork = "drs:CreateSourceNetwork";
 	/** [Write] drs:CreateSourceServerForDrs */
-	static readonly CREATE_SOURCE_SERVER_FOR_DRS = "drs:CreateSourceServerForDrs";
+	static readonly CreateSourceServerForDrs = "drs:CreateSourceServerForDrs";
 	/** [Write] drs:DeleteJob */
-	static readonly DELETE_JOB = "drs:DeleteJob";
+	static readonly DeleteJob = "drs:DeleteJob";
 	/** [Write] drs:DeleteLaunchAction */
-	static readonly DELETE_LAUNCH_ACTION = "drs:DeleteLaunchAction";
+	static readonly DeleteLaunchAction = "drs:DeleteLaunchAction";
 	/** [Write] drs:DeleteLaunchConfigurationTemplate */
-	static readonly DELETE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly DeleteLaunchConfigurationTemplate =
 		"drs:DeleteLaunchConfigurationTemplate";
 	/** [Write] drs:DeleteRecoveryInstance */
-	static readonly DELETE_RECOVERY_INSTANCE = "drs:DeleteRecoveryInstance";
+	static readonly DeleteRecoveryInstance = "drs:DeleteRecoveryInstance";
 	/** [Write] drs:DeleteReplicationConfigurationTemplate */
-	static readonly DELETE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly DeleteReplicationConfigurationTemplate =
 		"drs:DeleteReplicationConfigurationTemplate";
 	/** [Write] drs:DeleteSourceNetwork */
-	static readonly DELETE_SOURCE_NETWORK = "drs:DeleteSourceNetwork";
+	static readonly DeleteSourceNetwork = "drs:DeleteSourceNetwork";
 	/** [Write] drs:DeleteSourceServer */
-	static readonly DELETE_SOURCE_SERVER = "drs:DeleteSourceServer";
+	static readonly DeleteSourceServer = "drs:DeleteSourceServer";
 	/** [Read] drs:DescribeJobLogItems */
-	static readonly DESCRIBE_JOB_LOG_ITEMS = "drs:DescribeJobLogItems";
+	static readonly DescribeJobLogItems = "drs:DescribeJobLogItems";
 	/** [Read] drs:DescribeJobs */
-	static readonly DESCRIBE_JOBS = "drs:DescribeJobs";
+	static readonly DescribeJobs = "drs:DescribeJobs";
 	/** [Read] drs:DescribeLaunchConfigurationTemplates */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES =
+	static readonly DescribeLaunchConfigurationTemplates =
 		"drs:DescribeLaunchConfigurationTemplates";
 	/** [Read] drs:DescribeRecoveryInstances */
-	static readonly DESCRIBE_RECOVERY_INSTANCES = "drs:DescribeRecoveryInstances";
+	static readonly DescribeRecoveryInstances = "drs:DescribeRecoveryInstances";
 	/** [Read] drs:DescribeRecoverySnapshots */
-	static readonly DESCRIBE_RECOVERY_SNAPSHOTS = "drs:DescribeRecoverySnapshots";
+	static readonly DescribeRecoverySnapshots = "drs:DescribeRecoverySnapshots";
 	/** [Read] drs:DescribeReplicationConfigurationTemplates */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES =
+	static readonly DescribeReplicationConfigurationTemplates =
 		"drs:DescribeReplicationConfigurationTemplates";
 	/** [Read] drs:DescribeReplicationServerAssociationsForDrs */
-	static readonly DESCRIBE_REPLICATION_SERVER_ASSOCIATIONS_FOR_DRS =
+	static readonly DescribeReplicationServerAssociationsForDrs =
 		"drs:DescribeReplicationServerAssociationsForDrs";
 	/** [Read] drs:DescribeSnapshotRequestsForDrs */
-	static readonly DESCRIBE_SNAPSHOT_REQUESTS_FOR_DRS =
+	static readonly DescribeSnapshotRequestsForDrs =
 		"drs:DescribeSnapshotRequestsForDrs";
 	/** [Read] drs:DescribeSourceNetworks */
-	static readonly DESCRIBE_SOURCE_NETWORKS = "drs:DescribeSourceNetworks";
+	static readonly DescribeSourceNetworks = "drs:DescribeSourceNetworks";
 	/** [Read] drs:DescribeSourceServers */
-	static readonly DESCRIBE_SOURCE_SERVERS = "drs:DescribeSourceServers";
+	static readonly DescribeSourceServers = "drs:DescribeSourceServers";
 	/** [Write] drs:DisconnectRecoveryInstance */
-	static readonly DISCONNECT_RECOVERY_INSTANCE =
-		"drs:DisconnectRecoveryInstance";
+	static readonly DisconnectRecoveryInstance = "drs:DisconnectRecoveryInstance";
 	/** [Write] drs:DisconnectSourceServer */
-	static readonly DISCONNECT_SOURCE_SERVER = "drs:DisconnectSourceServer";
+	static readonly DisconnectSourceServer = "drs:DisconnectSourceServer";
 	/** [Write] drs:ExportSourceNetworkCfnTemplate */
-	static readonly EXPORT_SOURCE_NETWORK_CFN_TEMPLATE =
+	static readonly ExportSourceNetworkCfnTemplate =
 		"drs:ExportSourceNetworkCfnTemplate";
 	/** [Read] drs:GetAgentCommandForDrs */
-	static readonly GET_AGENT_COMMAND_FOR_DRS = "drs:GetAgentCommandForDrs";
+	static readonly actionGetAgentCommandForDrs = "drs:GetAgentCommandForDrs";
 	/** [Read] drs:GetAgentConfirmedResumeInfoForDrs */
-	static readonly GET_AGENT_CONFIRMED_RESUME_INFO_FOR_DRS =
+	static readonly actionGetAgentConfirmedResumeInfoForDrs =
 		"drs:GetAgentConfirmedResumeInfoForDrs";
 	/** [Read] drs:GetAgentInstallationAssetsForDrs */
-	static readonly GET_AGENT_INSTALLATION_ASSETS_FOR_DRS =
+	static readonly actionGetAgentInstallationAssetsForDrs =
 		"drs:GetAgentInstallationAssetsForDrs";
 	/** [Read] drs:GetAgentReplicationInfoForDrs */
-	static readonly GET_AGENT_REPLICATION_INFO_FOR_DRS =
+	static readonly actionGetAgentReplicationInfoForDrs =
 		"drs:GetAgentReplicationInfoForDrs";
 	/** [Read] drs:GetAgentRuntimeConfigurationForDrs */
-	static readonly GET_AGENT_RUNTIME_CONFIGURATION_FOR_DRS =
+	static readonly actionGetAgentRuntimeConfigurationForDrs =
 		"drs:GetAgentRuntimeConfigurationForDrs";
 	/** [Read] drs:GetAgentSnapshotCreditsForDrs */
-	static readonly GET_AGENT_SNAPSHOT_CREDITS_FOR_DRS =
+	static readonly actionGetAgentSnapshotCreditsForDrs =
 		"drs:GetAgentSnapshotCreditsForDrs";
 	/** [Read] drs:GetChannelCommandsForDrs */
-	static readonly GET_CHANNEL_COMMANDS_FOR_DRS = "drs:GetChannelCommandsForDrs";
+	static readonly actionGetChannelCommandsForDrs =
+		"drs:GetChannelCommandsForDrs";
 	/** [Read] drs:GetFailbackCommandForDrs */
-	static readonly GET_FAILBACK_COMMAND_FOR_DRS = "drs:GetFailbackCommandForDrs";
+	static readonly actionGetFailbackCommandForDrs =
+		"drs:GetFailbackCommandForDrs";
 	/** [Read] drs:GetFailbackLaunchRequestedForDrs */
-	static readonly GET_FAILBACK_LAUNCH_REQUESTED_FOR_DRS =
+	static readonly actionGetFailbackLaunchRequestedForDrs =
 		"drs:GetFailbackLaunchRequestedForDrs";
 	/** [Read] drs:GetFailbackReplicationConfiguration */
-	static readonly GET_FAILBACK_REPLICATION_CONFIGURATION =
+	static readonly actionGetFailbackReplicationConfiguration =
 		"drs:GetFailbackReplicationConfiguration";
 	/** [Read] drs:GetLaunchConfiguration */
-	static readonly GET_LAUNCH_CONFIGURATION = "drs:GetLaunchConfiguration";
+	static readonly actionGetLaunchConfiguration = "drs:GetLaunchConfiguration";
 	/** [Read] drs:GetReplicationConfiguration */
-	static readonly GET_REPLICATION_CONFIGURATION =
+	static readonly actionGetReplicationConfiguration =
 		"drs:GetReplicationConfiguration";
 	/** [Read] drs:GetSuggestedFailbackClientDeviceMappingForDrs */
-	static readonly GET_SUGGESTED_FAILBACK_CLIENT_DEVICE_MAPPING_FOR_DRS =
+	static readonly actionGetSuggestedFailbackClientDeviceMappingForDrs =
 		"drs:GetSuggestedFailbackClientDeviceMappingForDrs";
 	/** [Write] drs:InitializeService */
-	static readonly INITIALIZE_SERVICE = "drs:InitializeService";
+	static readonly InitializeService = "drs:InitializeService";
 	/** [Write] drs:IssueAgentCertificateForDrs */
-	static readonly ISSUE_AGENT_CERTIFICATE_FOR_DRS =
+	static readonly IssueAgentCertificateForDrs =
 		"drs:IssueAgentCertificateForDrs";
 	/** [Read] drs:ListExtensibleSourceServers */
-	static readonly LIST_EXTENSIBLE_SOURCE_SERVERS =
+	static readonly ListExtensibleSourceServers =
 		"drs:ListExtensibleSourceServers";
 	/** [Read] drs:ListLaunchActions */
-	static readonly LIST_LAUNCH_ACTIONS = "drs:ListLaunchActions";
+	static readonly ListLaunchActions = "drs:ListLaunchActions";
 	/** [Read] drs:ListStagingAccounts */
-	static readonly LIST_STAGING_ACCOUNTS = "drs:ListStagingAccounts";
+	static readonly ListStagingAccounts = "drs:ListStagingAccounts";
 	/** [Read] drs:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "drs:ListTagsForResource";
+	static readonly ListTagsForResource = "drs:ListTagsForResource";
 	/** [Write] drs:NotifyAgentAuthenticationForDrs */
-	static readonly NOTIFY_AGENT_AUTHENTICATION_FOR_DRS =
+	static readonly NotifyAgentAuthenticationForDrs =
 		"drs:NotifyAgentAuthenticationForDrs";
 	/** [Write] drs:NotifyAgentConnectedForDrs */
-	static readonly NOTIFY_AGENT_CONNECTED_FOR_DRS =
-		"drs:NotifyAgentConnectedForDrs";
+	static readonly NotifyAgentConnectedForDrs = "drs:NotifyAgentConnectedForDrs";
 	/** [Write] drs:NotifyAgentDisconnectedForDrs */
-	static readonly NOTIFY_AGENT_DISCONNECTED_FOR_DRS =
+	static readonly NotifyAgentDisconnectedForDrs =
 		"drs:NotifyAgentDisconnectedForDrs";
 	/** [Write] drs:NotifyAgentReplicationProgressForDrs */
-	static readonly NOTIFY_AGENT_REPLICATION_PROGRESS_FOR_DRS =
+	static readonly NotifyAgentReplicationProgressForDrs =
 		"drs:NotifyAgentReplicationProgressForDrs";
 	/** [Write] drs:NotifyConsistencyAttainedForDrs */
-	static readonly NOTIFY_CONSISTENCY_ATTAINED_FOR_DRS =
+	static readonly NotifyConsistencyAttainedForDrs =
 		"drs:NotifyConsistencyAttainedForDrs";
 	/** [Write] drs:NotifyReplicationServerAuthenticationForDrs */
-	static readonly NOTIFY_REPLICATION_SERVER_AUTHENTICATION_FOR_DRS =
+	static readonly NotifyReplicationServerAuthenticationForDrs =
 		"drs:NotifyReplicationServerAuthenticationForDrs";
 	/** [Write] drs:NotifyVolumeEventForDrs */
-	static readonly NOTIFY_VOLUME_EVENT_FOR_DRS = "drs:NotifyVolumeEventForDrs";
+	static readonly NotifyVolumeEventForDrs = "drs:NotifyVolumeEventForDrs";
 	/** [Write] drs:PutLaunchAction */
-	static readonly PUT_LAUNCH_ACTION = "drs:PutLaunchAction";
+	static readonly PutLaunchAction = "drs:PutLaunchAction";
 	/** [Write] drs:RetryDataReplication */
-	static readonly RETRY_DATA_REPLICATION = "drs:RetryDataReplication";
+	static readonly RetryDataReplication = "drs:RetryDataReplication";
 	/** [Write] drs:ReverseReplication */
-	static readonly REVERSE_REPLICATION = "drs:ReverseReplication";
+	static readonly ReverseReplication = "drs:ReverseReplication";
 	/** [Write] drs:SendAgentLogsForDrs */
-	static readonly SEND_AGENT_LOGS_FOR_DRS = "drs:SendAgentLogsForDrs";
+	static readonly SendAgentLogsForDrs = "drs:SendAgentLogsForDrs";
 	/** [Write] drs:SendAgentMetricsForDrs */
-	static readonly SEND_AGENT_METRICS_FOR_DRS = "drs:SendAgentMetricsForDrs";
+	static readonly SendAgentMetricsForDrs = "drs:SendAgentMetricsForDrs";
 	/** [Write] drs:SendChannelCommandResultForDrs */
-	static readonly SEND_CHANNEL_COMMAND_RESULT_FOR_DRS =
+	static readonly SendChannelCommandResultForDrs =
 		"drs:SendChannelCommandResultForDrs";
 	/** [Write] drs:SendClientLogsForDrs */
-	static readonly SEND_CLIENT_LOGS_FOR_DRS = "drs:SendClientLogsForDrs";
+	static readonly SendClientLogsForDrs = "drs:SendClientLogsForDrs";
 	/** [Write] drs:SendClientMetricsForDrs */
-	static readonly SEND_CLIENT_METRICS_FOR_DRS = "drs:SendClientMetricsForDrs";
+	static readonly SendClientMetricsForDrs = "drs:SendClientMetricsForDrs";
 	/** [Write] drs:SendVolumeStatsForDrs */
-	static readonly SEND_VOLUME_STATS_FOR_DRS = "drs:SendVolumeStatsForDrs";
+	static readonly SendVolumeStatsForDrs = "drs:SendVolumeStatsForDrs";
 	/** [Write] drs:StartFailbackLaunch */
-	static readonly START_FAILBACK_LAUNCH = "drs:StartFailbackLaunch";
+	static readonly StartFailbackLaunch = "drs:StartFailbackLaunch";
 	/** [Write] drs:StartRecovery */
-	static readonly START_RECOVERY = "drs:StartRecovery";
+	static readonly StartRecovery = "drs:StartRecovery";
 	/** [Write] drs:StartReplication */
-	static readonly START_REPLICATION = "drs:StartReplication";
+	static readonly StartReplication = "drs:StartReplication";
 	/** [Write] drs:StartSourceNetworkRecovery */
-	static readonly START_SOURCE_NETWORK_RECOVERY =
-		"drs:StartSourceNetworkRecovery";
+	static readonly StartSourceNetworkRecovery = "drs:StartSourceNetworkRecovery";
 	/** [Write] drs:StartSourceNetworkReplication */
-	static readonly START_SOURCE_NETWORK_REPLICATION =
+	static readonly StartSourceNetworkReplication =
 		"drs:StartSourceNetworkReplication";
 	/** [Write] drs:StopFailback */
-	static readonly STOP_FAILBACK = "drs:StopFailback";
+	static readonly StopFailback = "drs:StopFailback";
 	/** [Write] drs:StopReplication */
-	static readonly STOP_REPLICATION = "drs:StopReplication";
+	static readonly StopReplication = "drs:StopReplication";
 	/** [Write] drs:StopSourceNetworkReplication */
-	static readonly STOP_SOURCE_NETWORK_REPLICATION =
+	static readonly StopSourceNetworkReplication =
 		"drs:StopSourceNetworkReplication";
 	/** [Tagging] drs:TagResource */
-	static readonly TAG_RESOURCE = "drs:TagResource";
+	static readonly TagResource = "drs:TagResource";
 	/** [Write] drs:TerminateRecoveryInstances */
-	static readonly TERMINATE_RECOVERY_INSTANCES =
-		"drs:TerminateRecoveryInstances";
+	static readonly TerminateRecoveryInstances = "drs:TerminateRecoveryInstances";
 	/** [Tagging] drs:UntagResource */
-	static readonly UNTAG_RESOURCE = "drs:UntagResource";
+	static readonly UntagResource = "drs:UntagResource";
 	/** [Write] drs:UpdateAgentBacklogForDrs */
-	static readonly UPDATE_AGENT_BACKLOG_FOR_DRS = "drs:UpdateAgentBacklogForDrs";
+	static readonly UpdateAgentBacklogForDrs = "drs:UpdateAgentBacklogForDrs";
 	/** [Write] drs:UpdateAgentConversionInfoForDrs */
-	static readonly UPDATE_AGENT_CONVERSION_INFO_FOR_DRS =
+	static readonly UpdateAgentConversionInfoForDrs =
 		"drs:UpdateAgentConversionInfoForDrs";
 	/** [Write] drs:UpdateAgentReplicationInfoForDrs */
-	static readonly UPDATE_AGENT_REPLICATION_INFO_FOR_DRS =
+	static readonly UpdateAgentReplicationInfoForDrs =
 		"drs:UpdateAgentReplicationInfoForDrs";
 	/** [Write] drs:UpdateAgentReplicationProcessStateForDrs */
-	static readonly UPDATE_AGENT_REPLICATION_PROCESS_STATE_FOR_DRS =
+	static readonly UpdateAgentReplicationProcessStateForDrs =
 		"drs:UpdateAgentReplicationProcessStateForDrs";
 	/** [Write] drs:UpdateAgentSourcePropertiesForDrs */
-	static readonly UPDATE_AGENT_SOURCE_PROPERTIES_FOR_DRS =
+	static readonly UpdateAgentSourcePropertiesForDrs =
 		"drs:UpdateAgentSourcePropertiesForDrs";
 	/** [Write] drs:UpdateFailbackClientDeviceMappingForDrs */
-	static readonly UPDATE_FAILBACK_CLIENT_DEVICE_MAPPING_FOR_DRS =
+	static readonly UpdateFailbackClientDeviceMappingForDrs =
 		"drs:UpdateFailbackClientDeviceMappingForDrs";
 	/** [Write] drs:UpdateFailbackClientLastSeenForDrs */
-	static readonly UPDATE_FAILBACK_CLIENT_LAST_SEEN_FOR_DRS =
+	static readonly UpdateFailbackClientLastSeenForDrs =
 		"drs:UpdateFailbackClientLastSeenForDrs";
 	/** [Write] drs:UpdateFailbackReplicationConfiguration */
-	static readonly UPDATE_FAILBACK_REPLICATION_CONFIGURATION =
+	static readonly UpdateFailbackReplicationConfiguration =
 		"drs:UpdateFailbackReplicationConfiguration";
 	/** [Write] drs:UpdateLaunchConfiguration */
-	static readonly UPDATE_LAUNCH_CONFIGURATION = "drs:UpdateLaunchConfiguration";
+	static readonly UpdateLaunchConfiguration = "drs:UpdateLaunchConfiguration";
 	/** [Write] drs:UpdateLaunchConfigurationTemplate */
-	static readonly UPDATE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly UpdateLaunchConfigurationTemplate =
 		"drs:UpdateLaunchConfigurationTemplate";
 	/** [Write] drs:UpdateReplicationCertificateForDrs */
-	static readonly UPDATE_REPLICATION_CERTIFICATE_FOR_DRS =
+	static readonly UpdateReplicationCertificateForDrs =
 		"drs:UpdateReplicationCertificateForDrs";
 	/** [Write] drs:UpdateReplicationConfiguration */
-	static readonly UPDATE_REPLICATION_CONFIGURATION =
+	static readonly UpdateReplicationConfiguration =
 		"drs:UpdateReplicationConfiguration";
 	/** [Write] drs:UpdateReplicationConfigurationTemplate */
-	static readonly UPDATE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly UpdateReplicationConfigurationTemplate =
 		"drs:UpdateReplicationConfigurationTemplate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DRSActions.DESCRIBE_JOB_LOG_ITEMS,
-		DRSActions.DESCRIBE_JOBS,
-		DRSActions.DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES,
-		DRSActions.DESCRIBE_RECOVERY_INSTANCES,
-		DRSActions.DESCRIBE_RECOVERY_SNAPSHOTS,
-		DRSActions.DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES,
-		DRSActions.DESCRIBE_REPLICATION_SERVER_ASSOCIATIONS_FOR_DRS,
-		DRSActions.DESCRIBE_SNAPSHOT_REQUESTS_FOR_DRS,
-		DRSActions.DESCRIBE_SOURCE_NETWORKS,
-		DRSActions.DESCRIBE_SOURCE_SERVERS,
-		DRSActions.GET_AGENT_COMMAND_FOR_DRS,
-		DRSActions.GET_AGENT_CONFIRMED_RESUME_INFO_FOR_DRS,
-		DRSActions.GET_AGENT_INSTALLATION_ASSETS_FOR_DRS,
-		DRSActions.GET_AGENT_REPLICATION_INFO_FOR_DRS,
-		DRSActions.GET_AGENT_RUNTIME_CONFIGURATION_FOR_DRS,
-		DRSActions.GET_AGENT_SNAPSHOT_CREDITS_FOR_DRS,
-		DRSActions.GET_CHANNEL_COMMANDS_FOR_DRS,
-		DRSActions.GET_FAILBACK_COMMAND_FOR_DRS,
-		DRSActions.GET_FAILBACK_LAUNCH_REQUESTED_FOR_DRS,
-		DRSActions.GET_FAILBACK_REPLICATION_CONFIGURATION,
-		DRSActions.GET_LAUNCH_CONFIGURATION,
-		DRSActions.GET_REPLICATION_CONFIGURATION,
-		DRSActions.GET_SUGGESTED_FAILBACK_CLIENT_DEVICE_MAPPING_FOR_DRS,
-		DRSActions.LIST_EXTENSIBLE_SOURCE_SERVERS,
-		DRSActions.LIST_LAUNCH_ACTIONS,
-		DRSActions.LIST_STAGING_ACCOUNTS,
-		DRSActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		DRSActions.DescribeJobLogItems,
+		DRSActions.DescribeJobs,
+		DRSActions.DescribeLaunchConfigurationTemplates,
+		DRSActions.DescribeRecoveryInstances,
+		DRSActions.DescribeRecoverySnapshots,
+		DRSActions.DescribeReplicationConfigurationTemplates,
+		DRSActions.DescribeReplicationServerAssociationsForDrs,
+		DRSActions.DescribeSnapshotRequestsForDrs,
+		DRSActions.DescribeSourceNetworks,
+		DRSActions.DescribeSourceServers,
+		DRSActions.actionGetAgentCommandForDrs,
+		DRSActions.actionGetAgentConfirmedResumeInfoForDrs,
+		DRSActions.actionGetAgentInstallationAssetsForDrs,
+		DRSActions.actionGetAgentReplicationInfoForDrs,
+		DRSActions.actionGetAgentRuntimeConfigurationForDrs,
+		DRSActions.actionGetAgentSnapshotCreditsForDrs,
+		DRSActions.actionGetChannelCommandsForDrs,
+		DRSActions.actionGetFailbackCommandForDrs,
+		DRSActions.actionGetFailbackLaunchRequestedForDrs,
+		DRSActions.actionGetFailbackReplicationConfiguration,
+		DRSActions.actionGetLaunchConfiguration,
+		DRSActions.actionGetReplicationConfiguration,
+		DRSActions.actionGetSuggestedFailbackClientDeviceMappingForDrs,
+		DRSActions.ListExtensibleSourceServers,
+		DRSActions.ListLaunchActions,
+		DRSActions.ListStagingAccounts,
+		DRSActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DRSActions.ASSOCIATE_FAILBACK_CLIENT_TO_RECOVERY_INSTANCE_FOR_DRS,
-		DRSActions.ASSOCIATE_SOURCE_NETWORK_STACK,
-		DRSActions.BATCH_CREATE_VOLUME_SNAPSHOT_GROUP_FOR_DRS,
-		DRSActions.BATCH_DELETE_SNAPSHOT_REQUEST_FOR_DRS,
-		DRSActions.CREATE_CONVERTED_SNAPSHOT_FOR_DRS,
-		DRSActions.CREATE_EXTENDED_SOURCE_SERVER,
-		DRSActions.CREATE_LAUNCH_CONFIGURATION_TEMPLATE,
-		DRSActions.CREATE_RECOVERY_INSTANCE_FOR_DRS,
-		DRSActions.CREATE_REPLICATION_CONFIGURATION_TEMPLATE,
-		DRSActions.CREATE_SOURCE_NETWORK,
-		DRSActions.CREATE_SOURCE_SERVER_FOR_DRS,
-		DRSActions.DELETE_JOB,
-		DRSActions.DELETE_LAUNCH_ACTION,
-		DRSActions.DELETE_LAUNCH_CONFIGURATION_TEMPLATE,
-		DRSActions.DELETE_RECOVERY_INSTANCE,
-		DRSActions.DELETE_REPLICATION_CONFIGURATION_TEMPLATE,
-		DRSActions.DELETE_SOURCE_NETWORK,
-		DRSActions.DELETE_SOURCE_SERVER,
-		DRSActions.DISCONNECT_RECOVERY_INSTANCE,
-		DRSActions.DISCONNECT_SOURCE_SERVER,
-		DRSActions.EXPORT_SOURCE_NETWORK_CFN_TEMPLATE,
-		DRSActions.INITIALIZE_SERVICE,
-		DRSActions.ISSUE_AGENT_CERTIFICATE_FOR_DRS,
-		DRSActions.NOTIFY_AGENT_AUTHENTICATION_FOR_DRS,
-		DRSActions.NOTIFY_AGENT_CONNECTED_FOR_DRS,
-		DRSActions.NOTIFY_AGENT_DISCONNECTED_FOR_DRS,
-		DRSActions.NOTIFY_AGENT_REPLICATION_PROGRESS_FOR_DRS,
-		DRSActions.NOTIFY_CONSISTENCY_ATTAINED_FOR_DRS,
-		DRSActions.NOTIFY_REPLICATION_SERVER_AUTHENTICATION_FOR_DRS,
-		DRSActions.NOTIFY_VOLUME_EVENT_FOR_DRS,
-		DRSActions.PUT_LAUNCH_ACTION,
-		DRSActions.RETRY_DATA_REPLICATION,
-		DRSActions.REVERSE_REPLICATION,
-		DRSActions.SEND_AGENT_LOGS_FOR_DRS,
-		DRSActions.SEND_AGENT_METRICS_FOR_DRS,
-		DRSActions.SEND_CHANNEL_COMMAND_RESULT_FOR_DRS,
-		DRSActions.SEND_CLIENT_LOGS_FOR_DRS,
-		DRSActions.SEND_CLIENT_METRICS_FOR_DRS,
-		DRSActions.SEND_VOLUME_STATS_FOR_DRS,
-		DRSActions.START_FAILBACK_LAUNCH,
-		DRSActions.START_RECOVERY,
-		DRSActions.START_REPLICATION,
-		DRSActions.START_SOURCE_NETWORK_RECOVERY,
-		DRSActions.START_SOURCE_NETWORK_REPLICATION,
-		DRSActions.STOP_FAILBACK,
-		DRSActions.STOP_REPLICATION,
-		DRSActions.STOP_SOURCE_NETWORK_REPLICATION,
-		DRSActions.TERMINATE_RECOVERY_INSTANCES,
-		DRSActions.UPDATE_AGENT_BACKLOG_FOR_DRS,
-		DRSActions.UPDATE_AGENT_CONVERSION_INFO_FOR_DRS,
-		DRSActions.UPDATE_AGENT_REPLICATION_INFO_FOR_DRS,
-		DRSActions.UPDATE_AGENT_REPLICATION_PROCESS_STATE_FOR_DRS,
-		DRSActions.UPDATE_AGENT_SOURCE_PROPERTIES_FOR_DRS,
-		DRSActions.UPDATE_FAILBACK_CLIENT_DEVICE_MAPPING_FOR_DRS,
-		DRSActions.UPDATE_FAILBACK_CLIENT_LAST_SEEN_FOR_DRS,
-		DRSActions.UPDATE_FAILBACK_REPLICATION_CONFIGURATION,
-		DRSActions.UPDATE_LAUNCH_CONFIGURATION,
-		DRSActions.UPDATE_LAUNCH_CONFIGURATION_TEMPLATE,
-		DRSActions.UPDATE_REPLICATION_CERTIFICATE_FOR_DRS,
-		DRSActions.UPDATE_REPLICATION_CONFIGURATION,
-		DRSActions.UPDATE_REPLICATION_CONFIGURATION_TEMPLATE,
+	static readonly AllWriteActions: string[] = [
+		DRSActions.AssociateFailbackClientToRecoveryInstanceForDrs,
+		DRSActions.AssociateSourceNetworkStack,
+		DRSActions.BatchCreateVolumeSnapshotGroupForDrs,
+		DRSActions.BatchDeleteSnapshotRequestForDrs,
+		DRSActions.CreateConvertedSnapshotForDrs,
+		DRSActions.CreateExtendedSourceServer,
+		DRSActions.CreateLaunchConfigurationTemplate,
+		DRSActions.CreateRecoveryInstanceForDrs,
+		DRSActions.CreateReplicationConfigurationTemplate,
+		DRSActions.CreateSourceNetwork,
+		DRSActions.CreateSourceServerForDrs,
+		DRSActions.DeleteJob,
+		DRSActions.DeleteLaunchAction,
+		DRSActions.DeleteLaunchConfigurationTemplate,
+		DRSActions.DeleteRecoveryInstance,
+		DRSActions.DeleteReplicationConfigurationTemplate,
+		DRSActions.DeleteSourceNetwork,
+		DRSActions.DeleteSourceServer,
+		DRSActions.DisconnectRecoveryInstance,
+		DRSActions.DisconnectSourceServer,
+		DRSActions.ExportSourceNetworkCfnTemplate,
+		DRSActions.InitializeService,
+		DRSActions.IssueAgentCertificateForDrs,
+		DRSActions.NotifyAgentAuthenticationForDrs,
+		DRSActions.NotifyAgentConnectedForDrs,
+		DRSActions.NotifyAgentDisconnectedForDrs,
+		DRSActions.NotifyAgentReplicationProgressForDrs,
+		DRSActions.NotifyConsistencyAttainedForDrs,
+		DRSActions.NotifyReplicationServerAuthenticationForDrs,
+		DRSActions.NotifyVolumeEventForDrs,
+		DRSActions.PutLaunchAction,
+		DRSActions.RetryDataReplication,
+		DRSActions.ReverseReplication,
+		DRSActions.SendAgentLogsForDrs,
+		DRSActions.SendAgentMetricsForDrs,
+		DRSActions.SendChannelCommandResultForDrs,
+		DRSActions.SendClientLogsForDrs,
+		DRSActions.SendClientMetricsForDrs,
+		DRSActions.SendVolumeStatsForDrs,
+		DRSActions.StartFailbackLaunch,
+		DRSActions.StartRecovery,
+		DRSActions.StartReplication,
+		DRSActions.StartSourceNetworkRecovery,
+		DRSActions.StartSourceNetworkReplication,
+		DRSActions.StopFailback,
+		DRSActions.StopReplication,
+		DRSActions.StopSourceNetworkReplication,
+		DRSActions.TerminateRecoveryInstances,
+		DRSActions.UpdateAgentBacklogForDrs,
+		DRSActions.UpdateAgentConversionInfoForDrs,
+		DRSActions.UpdateAgentReplicationInfoForDrs,
+		DRSActions.UpdateAgentReplicationProcessStateForDrs,
+		DRSActions.UpdateAgentSourcePropertiesForDrs,
+		DRSActions.UpdateFailbackClientDeviceMappingForDrs,
+		DRSActions.UpdateFailbackClientLastSeenForDrs,
+		DRSActions.UpdateFailbackReplicationConfiguration,
+		DRSActions.UpdateLaunchConfiguration,
+		DRSActions.UpdateLaunchConfigurationTemplate,
+		DRSActions.UpdateReplicationCertificateForDrs,
+		DRSActions.UpdateReplicationConfiguration,
+		DRSActions.UpdateReplicationConfigurationTemplate,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DRSActions.TAG_RESOURCE,
-		DRSActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DRSActions.TagResource,
+		DRSActions.UntagResource,
 	];
 }
 
-const JobResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobId>[^:/?]+)$",
-);
-const LaunchConfigurationTemplateResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template/(?<launchConfigurationTemplateId>[^:/?]+)$",
-);
-const RecoveryInstanceResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):recovery-instance/(?<recoveryInstanceId>[^:/?]+)$",
-);
-const ReplicationConfigurationTemplateResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template/(?<replicationConfigurationTemplateId>[^:/?]+)$",
-);
-const SourceNetworkResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):source-network/(?<sourceNetworkId>[^:/?]+)$",
-);
-const SourceServerResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):source-server/(?<sourceServerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a JobResource ARN.
+ */
+export interface DRSJobResourceArnProps {
+	/** The JobID component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a JobResource ARN.
+ */
+export interface DRSJobResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobID component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a LaunchConfigurationTemplateResource ARN.
+ */
+export interface DRSLaunchConfigurationTemplateResourceArnProps {
+	/** The LaunchConfigurationTemplateID component of the ARN. */
+	readonly launchConfigurationTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a LaunchConfigurationTemplateResource ARN.
+ */
+export interface DRSLaunchConfigurationTemplateResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LaunchConfigurationTemplateID component. */
+	readonly launchConfigurationTemplateId: string;
+}
+
+/**
+ * Properties for building a RecoveryInstanceResource ARN.
+ */
+export interface DRSRecoveryInstanceResourceArnProps {
+	/** The RecoveryInstanceID component of the ARN. */
+	readonly recoveryInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RecoveryInstanceResource ARN.
+ */
+export interface DRSRecoveryInstanceResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RecoveryInstanceID component. */
+	readonly recoveryInstanceId: string;
+}
+
+/**
+ * Properties for building a ReplicationConfigurationTemplateResource ARN.
+ */
+export interface DRSReplicationConfigurationTemplateResourceArnProps {
+	/** The ReplicationConfigurationTemplateID component of the ARN. */
+	readonly replicationConfigurationTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ReplicationConfigurationTemplateResource ARN.
+ */
+export interface DRSReplicationConfigurationTemplateResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReplicationConfigurationTemplateID component. */
+	readonly replicationConfigurationTemplateId: string;
+}
+
+/**
+ * Properties for building a SourceNetworkResource ARN.
+ */
+export interface DRSSourceNetworkResourceArnProps {
+	/** The SourceNetworkID component of the ARN. */
+	readonly sourceNetworkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SourceNetworkResource ARN.
+ */
+export interface DRSSourceNetworkResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceNetworkID component. */
+	readonly sourceNetworkId: string;
+}
+
+/**
+ * Properties for building a SourceServerResource ARN.
+ */
+export interface DRSSourceServerResourceArnProps {
+	/** The SourceServerID component of the ARN. */
+	readonly sourceServerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SourceServerResource ARN.
+ */
+export interface DRSSourceServerResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceServerID component. */
+	readonly sourceServerId: string;
+}
+
+const JobResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobId>[^:/?]+)$/;
+const LaunchConfigurationTemplateResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template\/(?<launchConfigurationTemplateId>[^:/?]+)$/;
+const RecoveryInstanceResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):recovery-instance\/(?<recoveryInstanceId>[^:/?]+)$/;
+const ReplicationConfigurationTemplateResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template\/(?<replicationConfigurationTemplateId>[^:/?]+)$/;
+const SourceNetworkResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):source-network\/(?<sourceNetworkId>[^:/?]+)$/;
+const SourceServerResourceArnRegex =
+	/^arn:(?<partition>[^:]+):drs:(?<region>[^:]*):(?<account>[^:]*):source-server\/(?<sourceServerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for drs resources.
@@ -374,16 +533,7 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the JobResource resource.
 	 */
-	static jobResource(props: {
-		/** The JobID component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobResource(props: DRSJobResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobId}`;
 	}
 
@@ -398,12 +548,7 @@ export class DRSResources {
 	 * Parses a JobResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseJobResourceArn(arn: string): DRSJobResourceArnComponents {
 		const match = JobResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid JobResource ARN: ${arn}`);
@@ -419,16 +564,9 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the LaunchConfigurationTemplateResource resource.
 	 */
-	static launchConfigurationTemplateResource(props: {
-		/** The LaunchConfigurationTemplateID component of the ARN. */
-		readonly launchConfigurationTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static launchConfigurationTemplateResource(
+		props: DRSLaunchConfigurationTemplateResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:launch-configuration-template/${props.launchConfigurationTemplateId}`;
 	}
 
@@ -443,12 +581,9 @@ export class DRSResources {
 	 * Parses a LaunchConfigurationTemplateResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLaunchConfigurationTemplateResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		launchConfigurationTemplateId: string;
-	} {
+	static parseLaunchConfigurationTemplateResourceArn(
+		arn: string,
+	): DRSLaunchConfigurationTemplateResourceArnComponents {
 		const match = LaunchConfigurationTemplateResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -467,16 +602,9 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the RecoveryInstanceResource resource.
 	 */
-	static recoveryInstanceResource(props: {
-		/** The RecoveryInstanceID component of the ARN. */
-		readonly recoveryInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recoveryInstanceResource(
+		props: DRSRecoveryInstanceResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:recovery-instance/${props.recoveryInstanceId}`;
 	}
 
@@ -491,12 +619,9 @@ export class DRSResources {
 	 * Parses a RecoveryInstanceResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecoveryInstanceResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		recoveryInstanceId: string;
-	} {
+	static parseRecoveryInstanceResourceArn(
+		arn: string,
+	): DRSRecoveryInstanceResourceArnComponents {
 		const match = RecoveryInstanceResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RecoveryInstanceResource ARN: ${arn}`);
@@ -512,16 +637,9 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the ReplicationConfigurationTemplateResource resource.
 	 */
-	static replicationConfigurationTemplateResource(props: {
-		/** The ReplicationConfigurationTemplateID component of the ARN. */
-		readonly replicationConfigurationTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static replicationConfigurationTemplateResource(
+		props: DRSReplicationConfigurationTemplateResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:replication-configuration-template/${props.replicationConfigurationTemplateId}`;
 	}
 
@@ -538,12 +656,9 @@ export class DRSResources {
 	 * Parses a ReplicationConfigurationTemplateResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReplicationConfigurationTemplateResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		replicationConfigurationTemplateId: string;
-	} {
+	static parseReplicationConfigurationTemplateResourceArn(
+		arn: string,
+	): DRSReplicationConfigurationTemplateResourceArnComponents {
 		const match = ReplicationConfigurationTemplateResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -562,16 +677,9 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the SourceNetworkResource resource.
 	 */
-	static sourceNetworkResource(props: {
-		/** The SourceNetworkID component of the ARN. */
-		readonly sourceNetworkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sourceNetworkResource(
+		props: DRSSourceNetworkResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:source-network/${props.sourceNetworkId}`;
 	}
 
@@ -586,12 +694,9 @@ export class DRSResources {
 	 * Parses a SourceNetworkResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSourceNetworkResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sourceNetworkId: string;
-	} {
+	static parseSourceNetworkResourceArn(
+		arn: string,
+	): DRSSourceNetworkResourceArnComponents {
 		const match = SourceNetworkResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SourceNetworkResource ARN: ${arn}`);
@@ -607,16 +712,7 @@ export class DRSResources {
 	/**
 	 * Builds an ARN for the SourceServerResource resource.
 	 */
-	static sourceServerResource(props: {
-		/** The SourceServerID component of the ARN. */
-		readonly sourceServerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sourceServerResource(props: DRSSourceServerResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:drs:${props.region ?? "*"}:${props.account ?? "*"}:source-server/${props.sourceServerId}`;
 	}
 
@@ -631,12 +727,9 @@ export class DRSResources {
 	 * Parses a SourceServerResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSourceServerResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sourceServerId: string;
-	} {
+	static parseSourceServerResourceArn(
+		arn: string,
+	): DRSSourceServerResourceArnComponents {
 		const match = SourceServerResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SourceServerResource ARN: ${arn}`);
@@ -655,177 +748,171 @@ export class DRSResources {
  */
 export class DRSOperations {
 	/** IAM actions required for the AssociateSourceNetworkStack API call. */
-	static readonly ASSOCIATE_SOURCE_NETWORK_STACK: string[] = [
+	static readonly AssociateSourceNetworkStack: string[] = [
 		"drs:AssociateSourceNetworkStack",
 	];
 	/** IAM actions required for the CreateExtendedSourceServer API call. */
-	static readonly CREATE_EXTENDED_SOURCE_SERVER: string[] = [
+	static readonly CreateExtendedSourceServer: string[] = [
 		"drs:CreateExtendedSourceServer",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the CreateLaunchConfigurationTemplate API call. */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly CreateLaunchConfigurationTemplate: string[] = [
 		"drs:CreateLaunchConfigurationTemplate",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the CreateReplicationConfigurationTemplate API call. */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly CreateReplicationConfigurationTemplate: string[] = [
 		"drs:CreateReplicationConfigurationTemplate",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the CreateSourceNetwork API call. */
-	static readonly CREATE_SOURCE_NETWORK: string[] = [
+	static readonly CreateSourceNetwork: string[] = [
 		"drs:CreateSourceNetwork",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["drs:DeleteJob"];
+	static readonly DeleteJob: string[] = ["drs:DeleteJob"];
 	/** IAM actions required for the DeleteLaunchAction API call. */
-	static readonly DELETE_LAUNCH_ACTION: string[] = ["drs:DeleteLaunchAction"];
+	static readonly DeleteLaunchAction: string[] = ["drs:DeleteLaunchAction"];
 	/** IAM actions required for the DeleteLaunchConfigurationTemplate API call. */
-	static readonly DELETE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly DeleteLaunchConfigurationTemplate: string[] = [
 		"drs:DeleteLaunchConfigurationTemplate",
 	];
 	/** IAM actions required for the DeleteRecoveryInstance API call. */
-	static readonly DELETE_RECOVERY_INSTANCE: string[] = [
+	static readonly DeleteRecoveryInstance: string[] = [
 		"drs:DeleteRecoveryInstance",
 	];
 	/** IAM actions required for the DeleteReplicationConfigurationTemplate API call. */
-	static readonly DELETE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly DeleteReplicationConfigurationTemplate: string[] = [
 		"drs:DeleteReplicationConfigurationTemplate",
 	];
 	/** IAM actions required for the DeleteSourceNetwork API call. */
-	static readonly DELETE_SOURCE_NETWORK: string[] = ["drs:DeleteSourceNetwork"];
+	static readonly DeleteSourceNetwork: string[] = ["drs:DeleteSourceNetwork"];
 	/** IAM actions required for the DeleteSourceServer API call. */
-	static readonly DELETE_SOURCE_SERVER: string[] = ["drs:DeleteSourceServer"];
+	static readonly DeleteSourceServer: string[] = ["drs:DeleteSourceServer"];
 	/** IAM actions required for the DescribeJobLogItems API call. */
-	static readonly DESCRIBE_JOB_LOG_ITEMS: string[] = [
-		"drs:DescribeJobLogItems",
-	];
+	static readonly DescribeJobLogItems: string[] = ["drs:DescribeJobLogItems"];
 	/** IAM actions required for the DescribeJobs API call. */
-	static readonly DESCRIBE_JOBS: string[] = ["drs:DescribeJobs"];
+	static readonly DescribeJobs: string[] = ["drs:DescribeJobs"];
 	/** IAM actions required for the DescribeLaunchConfigurationTemplates API call. */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES: string[] = [
+	static readonly DescribeLaunchConfigurationTemplates: string[] = [
 		"drs:DescribeLaunchConfigurationTemplates",
 	];
 	/** IAM actions required for the DescribeRecoveryInstances API call. */
-	static readonly DESCRIBE_RECOVERY_INSTANCES: string[] = [
+	static readonly DescribeRecoveryInstances: string[] = [
 		"drs:DescribeRecoveryInstances",
 	];
 	/** IAM actions required for the DescribeRecoverySnapshots API call. */
-	static readonly DESCRIBE_RECOVERY_SNAPSHOTS: string[] = [
+	static readonly DescribeRecoverySnapshots: string[] = [
 		"drs:DescribeRecoverySnapshots",
 	];
 	/** IAM actions required for the DescribeReplicationConfigurationTemplates API call. */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES: string[] = [
+	static readonly DescribeReplicationConfigurationTemplates: string[] = [
 		"drs:DescribeReplicationConfigurationTemplates",
 	];
 	/** IAM actions required for the DescribeSourceNetworks API call. */
-	static readonly DESCRIBE_SOURCE_NETWORKS: string[] = [
+	static readonly DescribeSourceNetworks: string[] = [
 		"drs:DescribeSourceNetworks",
 	];
 	/** IAM actions required for the DescribeSourceServers API call. */
-	static readonly DESCRIBE_SOURCE_SERVERS: string[] = [
+	static readonly DescribeSourceServers: string[] = [
 		"drs:DescribeSourceServers",
 	];
 	/** IAM actions required for the DisconnectRecoveryInstance API call. */
-	static readonly DISCONNECT_RECOVERY_INSTANCE: string[] = [
+	static readonly DisconnectRecoveryInstance: string[] = [
 		"drs:DisconnectRecoveryInstance",
 	];
 	/** IAM actions required for the DisconnectSourceServer API call. */
-	static readonly DISCONNECT_SOURCE_SERVER: string[] = [
+	static readonly DisconnectSourceServer: string[] = [
 		"drs:DisconnectSourceServer",
 	];
 	/** IAM actions required for the ExportSourceNetworkCfnTemplate API call. */
-	static readonly EXPORT_SOURCE_NETWORK_CFN_TEMPLATE: string[] = [
+	static readonly ExportSourceNetworkCfnTemplate: string[] = [
 		"drs:ExportSourceNetworkCfnTemplate",
 	];
 	/** IAM actions required for the GetFailbackReplicationConfiguration API call. */
-	static readonly GET_FAILBACK_REPLICATION_CONFIGURATION: string[] = [
+	static readonly opGetFailbackReplicationConfiguration: string[] = [
 		"drs:GetFailbackReplicationConfiguration",
 	];
 	/** IAM actions required for the GetLaunchConfiguration API call. */
-	static readonly GET_LAUNCH_CONFIGURATION: string[] = [
+	static readonly opGetLaunchConfiguration: string[] = [
 		"drs:GetLaunchConfiguration",
 	];
 	/** IAM actions required for the GetReplicationConfiguration API call. */
-	static readonly GET_REPLICATION_CONFIGURATION: string[] = [
+	static readonly opGetReplicationConfiguration: string[] = [
 		"drs:GetReplicationConfiguration",
 	];
 	/** IAM actions required for the InitializeService API call. */
-	static readonly INITIALIZE_SERVICE: string[] = ["drs:InitializeService"];
+	static readonly InitializeService: string[] = ["drs:InitializeService"];
 	/** IAM actions required for the ListExtensibleSourceServers API call. */
-	static readonly LIST_EXTENSIBLE_SOURCE_SERVERS: string[] = [
+	static readonly ListExtensibleSourceServers: string[] = [
 		"drs:ListExtensibleSourceServers",
 	];
 	/** IAM actions required for the ListLaunchActions API call. */
-	static readonly LIST_LAUNCH_ACTIONS: string[] = ["drs:ListLaunchActions"];
+	static readonly ListLaunchActions: string[] = ["drs:ListLaunchActions"];
 	/** IAM actions required for the ListStagingAccounts API call. */
-	static readonly LIST_STAGING_ACCOUNTS: string[] = ["drs:ListStagingAccounts"];
+	static readonly ListStagingAccounts: string[] = ["drs:ListStagingAccounts"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"drs:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["drs:ListTagsForResource"];
 	/** IAM actions required for the PutLaunchAction API call. */
-	static readonly PUT_LAUNCH_ACTION: string[] = ["drs:PutLaunchAction"];
+	static readonly PutLaunchAction: string[] = ["drs:PutLaunchAction"];
 	/** IAM actions required for the RetryDataReplication API call. */
-	static readonly RETRY_DATA_REPLICATION: string[] = [
-		"drs:RetryDataReplication",
-	];
+	static readonly RetryDataReplication: string[] = ["drs:RetryDataReplication"];
 	/** IAM actions required for the ReverseReplication API call. */
-	static readonly REVERSE_REPLICATION: string[] = ["drs:ReverseReplication"];
+	static readonly ReverseReplication: string[] = ["drs:ReverseReplication"];
 	/** IAM actions required for the StartFailbackLaunch API call. */
-	static readonly START_FAILBACK_LAUNCH: string[] = [];
+	static readonly StartFailbackLaunch: string[] = [];
 	/** IAM actions required for the StartRecovery API call. */
-	static readonly START_RECOVERY: string[] = [
+	static readonly StartRecovery: string[] = [
 		"drs:StartRecovery",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the StartReplication API call. */
-	static readonly START_REPLICATION: string[] = ["drs:StartReplication"];
+	static readonly StartReplication: string[] = ["drs:StartReplication"];
 	/** IAM actions required for the StartSourceNetworkRecovery API call. */
-	static readonly START_SOURCE_NETWORK_RECOVERY: string[] = [
+	static readonly StartSourceNetworkRecovery: string[] = [
 		"drs:StartSourceNetworkRecovery",
 		"drs:TagResource",
 	];
 	/** IAM actions required for the StartSourceNetworkReplication API call. */
-	static readonly START_SOURCE_NETWORK_REPLICATION: string[] = [
+	static readonly StartSourceNetworkReplication: string[] = [
 		"drs:StartSourceNetworkReplication",
 	];
 	/** IAM actions required for the StopFailback API call. */
-	static readonly STOP_FAILBACK: string[] = ["drs:StopFailback"];
+	static readonly StopFailback: string[] = ["drs:StopFailback"];
 	/** IAM actions required for the StopReplication API call. */
-	static readonly STOP_REPLICATION: string[] = ["drs:StopReplication"];
+	static readonly StopReplication: string[] = ["drs:StopReplication"];
 	/** IAM actions required for the StopSourceNetworkReplication API call. */
-	static readonly STOP_SOURCE_NETWORK_REPLICATION: string[] = [
+	static readonly StopSourceNetworkReplication: string[] = [
 		"drs:StopSourceNetworkReplication",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["drs:TagResource"];
+	static readonly TagResource: string[] = ["drs:TagResource"];
 	/** IAM actions required for the TerminateRecoveryInstances API call. */
-	static readonly TERMINATE_RECOVERY_INSTANCES: string[] = [
+	static readonly TerminateRecoveryInstances: string[] = [
 		"drs:TerminateRecoveryInstances",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["drs:UntagResource"];
+	static readonly UntagResource: string[] = ["drs:UntagResource"];
 	/** IAM actions required for the UpdateFailbackReplicationConfiguration API call. */
-	static readonly UPDATE_FAILBACK_REPLICATION_CONFIGURATION: string[] = [
+	static readonly UpdateFailbackReplicationConfiguration: string[] = [
 		"drs:UpdateFailbackReplicationConfiguration",
 	];
 	/** IAM actions required for the UpdateLaunchConfiguration API call. */
-	static readonly UPDATE_LAUNCH_CONFIGURATION: string[] = [
+	static readonly UpdateLaunchConfiguration: string[] = [
 		"drs:UpdateLaunchConfiguration",
 	];
 	/** IAM actions required for the UpdateLaunchConfigurationTemplate API call. */
-	static readonly UPDATE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly UpdateLaunchConfigurationTemplate: string[] = [
 		"drs:UpdateLaunchConfigurationTemplate",
 	];
 	/** IAM actions required for the UpdateReplicationConfiguration API call. */
-	static readonly UPDATE_REPLICATION_CONFIGURATION: string[] = [
+	static readonly UpdateReplicationConfiguration: string[] = [
 		"drs:UpdateReplicationConfiguration",
 	];
 	/** IAM actions required for the UpdateReplicationConfigurationTemplate API call. */
-	static readonly UPDATE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly UpdateReplicationConfigurationTemplate: string[] = [
 		"drs:UpdateReplicationConfigurationTemplate",
 	];
 }
@@ -835,84 +922,88 @@ export class DRSOperations {
  */
 export class DRSConditions {
 	/** Condition keys applicable to the AssociateSourceNetworkStack action. */
-	static readonly ASSOCIATE_SOURCE_NETWORK_STACK_CONDITION_KEYS: string[] = [
+	static readonly AssociateSourceNetworkStackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConvertedSnapshotForDrs action. */
-	static readonly CREATE_CONVERTED_SNAPSHOT_FOR_DRS_CONDITION_KEYS: string[] = [
+	static readonly CreateConvertedSnapshotForDrsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateExtendedSourceServer action. */
-	static readonly CREATE_EXTENDED_SOURCE_SERVER_CONDITION_KEYS: string[] = [
+	static readonly CreateExtendedSourceServerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLaunchConfigurationTemplate action. */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateLaunchConfigurationTemplateConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateRecoveryInstanceForDrs action. */
-	static readonly CREATE_RECOVERY_INSTANCE_FOR_DRS_CONDITION_KEYS: string[] = [
+	static readonly CreateRecoveryInstanceForDrsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateReplicationConfigurationTemplate action. */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly CreateReplicationConfigurationTemplateConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateSourceNetwork action. */
-	static readonly CREATE_SOURCE_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateSourceNetworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSourceServerForDrs action. */
-	static readonly CREATE_SOURCE_SERVER_FOR_DRS_CONDITION_KEYS: string[] = [
+	static readonly CreateSourceServerForDrsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ExportSourceNetworkCfnTemplate action. */
-	static readonly EXPORT_SOURCE_NETWORK_CFN_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly ExportSourceNetworkCfnTemplateConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the ReverseReplication action. */
-	static readonly REVERSE_REPLICATION_CONDITION_KEYS: string[] = [
+	static readonly ReverseReplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartFailbackLaunch action. */
-	static readonly START_FAILBACK_LAUNCH_CONDITION_KEYS: string[] = [
+	static readonly StartFailbackLaunchConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartRecovery action. */
-	static readonly START_RECOVERY_CONDITION_KEYS: string[] = [
+	static readonly StartRecoveryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartSourceNetworkRecovery action. */
-	static readonly START_SOURCE_NETWORK_RECOVERY_CONDITION_KEYS: string[] = [
+	static readonly StartSourceNetworkRecoveryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"drs:CreateAction",
 	];
 	/** Condition keys applicable to the TerminateRecoveryInstances action. */
-	static readonly TERMINATE_RECOVERY_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly TerminateRecoveryInstancesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: drs:CreateAction (String) */
 	static readonly CREATE_ACTION = "drs:CreateAction";
 	/** Condition key: drs:EC2InstanceARN (ARN) */

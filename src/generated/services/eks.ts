@@ -13,278 +13,642 @@ export class EKSActions {
 	static readonly SERVICE_PREFIX = "eks";
 
 	/** [Read] eks:AccessKubernetesApi */
-	static readonly ACCESS_KUBERNETES_API = "eks:AccessKubernetesApi";
+	static readonly AccessKubernetesApi = "eks:AccessKubernetesApi";
 	/** [Write] eks:AssociateAccessPolicy */
-	static readonly ASSOCIATE_ACCESS_POLICY = "eks:AssociateAccessPolicy";
+	static readonly AssociateAccessPolicy = "eks:AssociateAccessPolicy";
 	/** [Write] eks:AssociateEncryptionConfig */
-	static readonly ASSOCIATE_ENCRYPTION_CONFIG = "eks:AssociateEncryptionConfig";
+	static readonly AssociateEncryptionConfig = "eks:AssociateEncryptionConfig";
 	/** [Write] eks:AssociateIdentityProviderConfig */
-	static readonly ASSOCIATE_IDENTITY_PROVIDER_CONFIG =
+	static readonly AssociateIdentityProviderConfig =
 		"eks:AssociateIdentityProviderConfig";
 	/** [Write] eks:CancelUpdate */
-	static readonly CANCEL_UPDATE = "eks:CancelUpdate";
+	static readonly CancelUpdate = "eks:CancelUpdate";
 	/** [Write] eks:CreateAccessEntry */
-	static readonly CREATE_ACCESS_ENTRY = "eks:CreateAccessEntry";
+	static readonly CreateAccessEntry = "eks:CreateAccessEntry";
 	/** [Write] eks:CreateAddon */
-	static readonly CREATE_ADDON = "eks:CreateAddon";
+	static readonly CreateAddon = "eks:CreateAddon";
 	/** [Write] eks:CreateCapability */
-	static readonly CREATE_CAPABILITY = "eks:CreateCapability";
+	static readonly CreateCapability = "eks:CreateCapability";
 	/** [Write] eks:CreateCluster */
-	static readonly CREATE_CLUSTER = "eks:CreateCluster";
+	static readonly CreateCluster = "eks:CreateCluster";
 	/** [Write] eks:CreateEksAnywhereSubscription */
-	static readonly CREATE_EKS_ANYWHERE_SUBSCRIPTION =
+	static readonly CreateEksAnywhereSubscription =
 		"eks:CreateEksAnywhereSubscription";
 	/** [Write] eks:CreateFargateProfile */
-	static readonly CREATE_FARGATE_PROFILE = "eks:CreateFargateProfile";
+	static readonly CreateFargateProfile = "eks:CreateFargateProfile";
 	/** [Write] eks:CreateNodegroup */
-	static readonly CREATE_NODEGROUP = "eks:CreateNodegroup";
+	static readonly CreateNodegroup = "eks:CreateNodegroup";
 	/** [Write] eks:CreatePodIdentityAssociation */
-	static readonly CREATE_POD_IDENTITY_ASSOCIATION =
+	static readonly CreatePodIdentityAssociation =
 		"eks:CreatePodIdentityAssociation";
 	/** [Write] eks:DeleteAccessEntry */
-	static readonly DELETE_ACCESS_ENTRY = "eks:DeleteAccessEntry";
+	static readonly DeleteAccessEntry = "eks:DeleteAccessEntry";
 	/** [Write] eks:DeleteAddon */
-	static readonly DELETE_ADDON = "eks:DeleteAddon";
+	static readonly DeleteAddon = "eks:DeleteAddon";
 	/** [Write] eks:DeleteCapability */
-	static readonly DELETE_CAPABILITY = "eks:DeleteCapability";
+	static readonly DeleteCapability = "eks:DeleteCapability";
 	/** [Write] eks:DeleteCluster */
-	static readonly DELETE_CLUSTER = "eks:DeleteCluster";
+	static readonly DeleteCluster = "eks:DeleteCluster";
 	/** [Write] eks:DeleteEksAnywhereSubscription */
-	static readonly DELETE_EKS_ANYWHERE_SUBSCRIPTION =
+	static readonly DeleteEksAnywhereSubscription =
 		"eks:DeleteEksAnywhereSubscription";
 	/** [Write] eks:DeleteFargateProfile */
-	static readonly DELETE_FARGATE_PROFILE = "eks:DeleteFargateProfile";
+	static readonly DeleteFargateProfile = "eks:DeleteFargateProfile";
 	/** [Write] eks:DeleteNodegroup */
-	static readonly DELETE_NODEGROUP = "eks:DeleteNodegroup";
+	static readonly DeleteNodegroup = "eks:DeleteNodegroup";
 	/** [Write] eks:DeletePodIdentityAssociation */
-	static readonly DELETE_POD_IDENTITY_ASSOCIATION =
+	static readonly DeletePodIdentityAssociation =
 		"eks:DeletePodIdentityAssociation";
 	/** [Write] eks:DeregisterCluster */
-	static readonly DEREGISTER_CLUSTER = "eks:DeregisterCluster";
+	static readonly DeregisterCluster = "eks:DeregisterCluster";
 	/** [Read] eks:DescribeAccessEntry */
-	static readonly DESCRIBE_ACCESS_ENTRY = "eks:DescribeAccessEntry";
+	static readonly DescribeAccessEntry = "eks:DescribeAccessEntry";
 	/** [Read] eks:DescribeAddon */
-	static readonly DESCRIBE_ADDON = "eks:DescribeAddon";
+	static readonly DescribeAddon = "eks:DescribeAddon";
 	/** [Read] eks:DescribeAddonConfiguration */
-	static readonly DESCRIBE_ADDON_CONFIGURATION =
-		"eks:DescribeAddonConfiguration";
+	static readonly DescribeAddonConfiguration = "eks:DescribeAddonConfiguration";
 	/** [Read] eks:DescribeAddonVersions */
-	static readonly DESCRIBE_ADDON_VERSIONS = "eks:DescribeAddonVersions";
+	static readonly DescribeAddonVersions = "eks:DescribeAddonVersions";
 	/** [Read] eks:DescribeCapability */
-	static readonly DESCRIBE_CAPABILITY = "eks:DescribeCapability";
+	static readonly DescribeCapability = "eks:DescribeCapability";
 	/** [Read] eks:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "eks:DescribeCluster";
+	static readonly DescribeCluster = "eks:DescribeCluster";
 	/** [Read] eks:DescribeClusterVersions */
-	static readonly DESCRIBE_CLUSTER_VERSIONS = "eks:DescribeClusterVersions";
+	static readonly DescribeClusterVersions = "eks:DescribeClusterVersions";
 	/** [Read] eks:DescribeEksAnywhereSubscription */
-	static readonly DESCRIBE_EKS_ANYWHERE_SUBSCRIPTION =
+	static readonly DescribeEksAnywhereSubscription =
 		"eks:DescribeEksAnywhereSubscription";
 	/** [Read] eks:DescribeFargateProfile */
-	static readonly DESCRIBE_FARGATE_PROFILE = "eks:DescribeFargateProfile";
+	static readonly DescribeFargateProfile = "eks:DescribeFargateProfile";
 	/** [Read] eks:DescribeIdentityProviderConfig */
-	static readonly DESCRIBE_IDENTITY_PROVIDER_CONFIG =
+	static readonly DescribeIdentityProviderConfig =
 		"eks:DescribeIdentityProviderConfig";
 	/** [Read] eks:DescribeInsight */
-	static readonly DESCRIBE_INSIGHT = "eks:DescribeInsight";
+	static readonly DescribeInsight = "eks:DescribeInsight";
 	/** [Read] eks:DescribeInsightsRefresh */
-	static readonly DESCRIBE_INSIGHTS_REFRESH = "eks:DescribeInsightsRefresh";
+	static readonly DescribeInsightsRefresh = "eks:DescribeInsightsRefresh";
 	/** [Read] eks:DescribeNodegroup */
-	static readonly DESCRIBE_NODEGROUP = "eks:DescribeNodegroup";
+	static readonly DescribeNodegroup = "eks:DescribeNodegroup";
 	/** [Read] eks:DescribePodIdentityAssociation */
-	static readonly DESCRIBE_POD_IDENTITY_ASSOCIATION =
+	static readonly DescribePodIdentityAssociation =
 		"eks:DescribePodIdentityAssociation";
 	/** [Read] eks:DescribeUpdate */
-	static readonly DESCRIBE_UPDATE = "eks:DescribeUpdate";
+	static readonly DescribeUpdate = "eks:DescribeUpdate";
 	/** [Write] eks:DisassociateAccessPolicy */
-	static readonly DISASSOCIATE_ACCESS_POLICY = "eks:DisassociateAccessPolicy";
+	static readonly DisassociateAccessPolicy = "eks:DisassociateAccessPolicy";
 	/** [Write] eks:DisassociateIdentityProviderConfig */
-	static readonly DISASSOCIATE_IDENTITY_PROVIDER_CONFIG =
+	static readonly DisassociateIdentityProviderConfig =
 		"eks:DisassociateIdentityProviderConfig";
 	/** [List] eks:ListAccessEntries */
-	static readonly LIST_ACCESS_ENTRIES = "eks:ListAccessEntries";
+	static readonly ListAccessEntries = "eks:ListAccessEntries";
 	/** [List] eks:ListAccessPolicies */
-	static readonly LIST_ACCESS_POLICIES = "eks:ListAccessPolicies";
+	static readonly ListAccessPolicies = "eks:ListAccessPolicies";
 	/** [List] eks:ListAddons */
-	static readonly LIST_ADDONS = "eks:ListAddons";
+	static readonly ListAddons = "eks:ListAddons";
 	/** [List] eks:ListAssociatedAccessPolicies */
-	static readonly LIST_ASSOCIATED_ACCESS_POLICIES =
+	static readonly ListAssociatedAccessPolicies =
 		"eks:ListAssociatedAccessPolicies";
 	/** [List] eks:ListCapabilities */
-	static readonly LIST_CAPABILITIES = "eks:ListCapabilities";
+	static readonly ListCapabilities = "eks:ListCapabilities";
 	/** [List] eks:ListClusters */
-	static readonly LIST_CLUSTERS = "eks:ListClusters";
+	static readonly ListClusters = "eks:ListClusters";
 	/** [Read] eks:ListDashboardData */
-	static readonly LIST_DASHBOARD_DATA = "eks:ListDashboardData";
+	static readonly ListDashboardData = "eks:ListDashboardData";
 	/** [Read] eks:ListDashboardResources */
-	static readonly LIST_DASHBOARD_RESOURCES = "eks:ListDashboardResources";
+	static readonly ListDashboardResources = "eks:ListDashboardResources";
 	/** [List] eks:ListEksAnywhereSubscriptions */
-	static readonly LIST_EKS_ANYWHERE_SUBSCRIPTIONS =
+	static readonly ListEksAnywhereSubscriptions =
 		"eks:ListEksAnywhereSubscriptions";
 	/** [List] eks:ListFargateProfiles */
-	static readonly LIST_FARGATE_PROFILES = "eks:ListFargateProfiles";
+	static readonly ListFargateProfiles = "eks:ListFargateProfiles";
 	/** [List] eks:ListIdentityProviderConfigs */
-	static readonly LIST_IDENTITY_PROVIDER_CONFIGS =
+	static readonly ListIdentityProviderConfigs =
 		"eks:ListIdentityProviderConfigs";
 	/** [List] eks:ListInsights */
-	static readonly LIST_INSIGHTS = "eks:ListInsights";
+	static readonly ListInsights = "eks:ListInsights";
 	/** [List] eks:ListNodegroups */
-	static readonly LIST_NODEGROUPS = "eks:ListNodegroups";
+	static readonly ListNodegroups = "eks:ListNodegroups";
 	/** [List] eks:ListPodIdentityAssociations */
-	static readonly LIST_POD_IDENTITY_ASSOCIATIONS =
+	static readonly ListPodIdentityAssociations =
 		"eks:ListPodIdentityAssociations";
 	/** [Read] eks:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "eks:ListTagsForResource";
+	static readonly ListTagsForResource = "eks:ListTagsForResource";
 	/** [List] eks:ListUpdates */
-	static readonly LIST_UPDATES = "eks:ListUpdates";
+	static readonly ListUpdates = "eks:ListUpdates";
 	/** [Write] eks:MutateViaKubernetesApi */
-	static readonly MUTATE_VIA_KUBERNETES_API = "eks:MutateViaKubernetesApi";
+	static readonly MutateViaKubernetesApi = "eks:MutateViaKubernetesApi";
 	/** [Write] eks:RegisterCluster */
-	static readonly REGISTER_CLUSTER = "eks:RegisterCluster";
+	static readonly RegisterCluster = "eks:RegisterCluster";
 	/** [Write] eks:StartInsightsRefresh */
-	static readonly START_INSIGHTS_REFRESH = "eks:StartInsightsRefresh";
+	static readonly StartInsightsRefresh = "eks:StartInsightsRefresh";
 	/** [Tagging] eks:TagResource */
-	static readonly TAG_RESOURCE = "eks:TagResource";
+	static readonly TagResource = "eks:TagResource";
 	/** [Tagging] eks:UntagResource */
-	static readonly UNTAG_RESOURCE = "eks:UntagResource";
+	static readonly UntagResource = "eks:UntagResource";
 	/** [Write] eks:UpdateAccessEntry */
-	static readonly UPDATE_ACCESS_ENTRY = "eks:UpdateAccessEntry";
+	static readonly UpdateAccessEntry = "eks:UpdateAccessEntry";
 	/** [Write] eks:UpdateAddon */
-	static readonly UPDATE_ADDON = "eks:UpdateAddon";
+	static readonly UpdateAddon = "eks:UpdateAddon";
 	/** [Write] eks:UpdateCapability */
-	static readonly UPDATE_CAPABILITY = "eks:UpdateCapability";
+	static readonly UpdateCapability = "eks:UpdateCapability";
 	/** [Write] eks:UpdateClusterConfig */
-	static readonly UPDATE_CLUSTER_CONFIG = "eks:UpdateClusterConfig";
+	static readonly UpdateClusterConfig = "eks:UpdateClusterConfig";
 	/** [Write] eks:UpdateClusterVersion */
-	static readonly UPDATE_CLUSTER_VERSION = "eks:UpdateClusterVersion";
+	static readonly UpdateClusterVersion = "eks:UpdateClusterVersion";
 	/** [Write] eks:UpdateEksAnywhereSubscription */
-	static readonly UPDATE_EKS_ANYWHERE_SUBSCRIPTION =
+	static readonly UpdateEksAnywhereSubscription =
 		"eks:UpdateEksAnywhereSubscription";
 	/** [Write] eks:UpdateNodegroupConfig */
-	static readonly UPDATE_NODEGROUP_CONFIG = "eks:UpdateNodegroupConfig";
+	static readonly UpdateNodegroupConfig = "eks:UpdateNodegroupConfig";
 	/** [Write] eks:UpdateNodegroupVersion */
-	static readonly UPDATE_NODEGROUP_VERSION = "eks:UpdateNodegroupVersion";
+	static readonly UpdateNodegroupVersion = "eks:UpdateNodegroupVersion";
 	/** [Write] eks:UpdatePodIdentityAssociation */
-	static readonly UPDATE_POD_IDENTITY_ASSOCIATION =
+	static readonly UpdatePodIdentityAssociation =
 		"eks:UpdatePodIdentityAssociation";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		EKSActions.ACCESS_KUBERNETES_API,
-		EKSActions.DESCRIBE_ACCESS_ENTRY,
-		EKSActions.DESCRIBE_ADDON,
-		EKSActions.DESCRIBE_ADDON_CONFIGURATION,
-		EKSActions.DESCRIBE_ADDON_VERSIONS,
-		EKSActions.DESCRIBE_CAPABILITY,
-		EKSActions.DESCRIBE_CLUSTER,
-		EKSActions.DESCRIBE_CLUSTER_VERSIONS,
-		EKSActions.DESCRIBE_EKS_ANYWHERE_SUBSCRIPTION,
-		EKSActions.DESCRIBE_FARGATE_PROFILE,
-		EKSActions.DESCRIBE_IDENTITY_PROVIDER_CONFIG,
-		EKSActions.DESCRIBE_INSIGHT,
-		EKSActions.DESCRIBE_INSIGHTS_REFRESH,
-		EKSActions.DESCRIBE_NODEGROUP,
-		EKSActions.DESCRIBE_POD_IDENTITY_ASSOCIATION,
-		EKSActions.DESCRIBE_UPDATE,
-		EKSActions.LIST_DASHBOARD_DATA,
-		EKSActions.LIST_DASHBOARD_RESOURCES,
-		EKSActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		EKSActions.AccessKubernetesApi,
+		EKSActions.DescribeAccessEntry,
+		EKSActions.DescribeAddon,
+		EKSActions.DescribeAddonConfiguration,
+		EKSActions.DescribeAddonVersions,
+		EKSActions.DescribeCapability,
+		EKSActions.DescribeCluster,
+		EKSActions.DescribeClusterVersions,
+		EKSActions.DescribeEksAnywhereSubscription,
+		EKSActions.DescribeFargateProfile,
+		EKSActions.DescribeIdentityProviderConfig,
+		EKSActions.DescribeInsight,
+		EKSActions.DescribeInsightsRefresh,
+		EKSActions.DescribeNodegroup,
+		EKSActions.DescribePodIdentityAssociation,
+		EKSActions.DescribeUpdate,
+		EKSActions.ListDashboardData,
+		EKSActions.ListDashboardResources,
+		EKSActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		EKSActions.ASSOCIATE_ACCESS_POLICY,
-		EKSActions.ASSOCIATE_ENCRYPTION_CONFIG,
-		EKSActions.ASSOCIATE_IDENTITY_PROVIDER_CONFIG,
-		EKSActions.CANCEL_UPDATE,
-		EKSActions.CREATE_ACCESS_ENTRY,
-		EKSActions.CREATE_ADDON,
-		EKSActions.CREATE_CAPABILITY,
-		EKSActions.CREATE_CLUSTER,
-		EKSActions.CREATE_EKS_ANYWHERE_SUBSCRIPTION,
-		EKSActions.CREATE_FARGATE_PROFILE,
-		EKSActions.CREATE_NODEGROUP,
-		EKSActions.CREATE_POD_IDENTITY_ASSOCIATION,
-		EKSActions.DELETE_ACCESS_ENTRY,
-		EKSActions.DELETE_ADDON,
-		EKSActions.DELETE_CAPABILITY,
-		EKSActions.DELETE_CLUSTER,
-		EKSActions.DELETE_EKS_ANYWHERE_SUBSCRIPTION,
-		EKSActions.DELETE_FARGATE_PROFILE,
-		EKSActions.DELETE_NODEGROUP,
-		EKSActions.DELETE_POD_IDENTITY_ASSOCIATION,
-		EKSActions.DEREGISTER_CLUSTER,
-		EKSActions.DISASSOCIATE_ACCESS_POLICY,
-		EKSActions.DISASSOCIATE_IDENTITY_PROVIDER_CONFIG,
-		EKSActions.MUTATE_VIA_KUBERNETES_API,
-		EKSActions.REGISTER_CLUSTER,
-		EKSActions.START_INSIGHTS_REFRESH,
-		EKSActions.UPDATE_ACCESS_ENTRY,
-		EKSActions.UPDATE_ADDON,
-		EKSActions.UPDATE_CAPABILITY,
-		EKSActions.UPDATE_CLUSTER_CONFIG,
-		EKSActions.UPDATE_CLUSTER_VERSION,
-		EKSActions.UPDATE_EKS_ANYWHERE_SUBSCRIPTION,
-		EKSActions.UPDATE_NODEGROUP_CONFIG,
-		EKSActions.UPDATE_NODEGROUP_VERSION,
-		EKSActions.UPDATE_POD_IDENTITY_ASSOCIATION,
+	static readonly AllWriteActions: string[] = [
+		EKSActions.AssociateAccessPolicy,
+		EKSActions.AssociateEncryptionConfig,
+		EKSActions.AssociateIdentityProviderConfig,
+		EKSActions.CancelUpdate,
+		EKSActions.CreateAccessEntry,
+		EKSActions.CreateAddon,
+		EKSActions.CreateCapability,
+		EKSActions.CreateCluster,
+		EKSActions.CreateEksAnywhereSubscription,
+		EKSActions.CreateFargateProfile,
+		EKSActions.CreateNodegroup,
+		EKSActions.CreatePodIdentityAssociation,
+		EKSActions.DeleteAccessEntry,
+		EKSActions.DeleteAddon,
+		EKSActions.DeleteCapability,
+		EKSActions.DeleteCluster,
+		EKSActions.DeleteEksAnywhereSubscription,
+		EKSActions.DeleteFargateProfile,
+		EKSActions.DeleteNodegroup,
+		EKSActions.DeletePodIdentityAssociation,
+		EKSActions.DeregisterCluster,
+		EKSActions.DisassociateAccessPolicy,
+		EKSActions.DisassociateIdentityProviderConfig,
+		EKSActions.MutateViaKubernetesApi,
+		EKSActions.RegisterCluster,
+		EKSActions.StartInsightsRefresh,
+		EKSActions.UpdateAccessEntry,
+		EKSActions.UpdateAddon,
+		EKSActions.UpdateCapability,
+		EKSActions.UpdateClusterConfig,
+		EKSActions.UpdateClusterVersion,
+		EKSActions.UpdateEksAnywhereSubscription,
+		EKSActions.UpdateNodegroupConfig,
+		EKSActions.UpdateNodegroupVersion,
+		EKSActions.UpdatePodIdentityAssociation,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		EKSActions.LIST_ACCESS_ENTRIES,
-		EKSActions.LIST_ACCESS_POLICIES,
-		EKSActions.LIST_ADDONS,
-		EKSActions.LIST_ASSOCIATED_ACCESS_POLICIES,
-		EKSActions.LIST_CAPABILITIES,
-		EKSActions.LIST_CLUSTERS,
-		EKSActions.LIST_EKS_ANYWHERE_SUBSCRIPTIONS,
-		EKSActions.LIST_FARGATE_PROFILES,
-		EKSActions.LIST_IDENTITY_PROVIDER_CONFIGS,
-		EKSActions.LIST_INSIGHTS,
-		EKSActions.LIST_NODEGROUPS,
-		EKSActions.LIST_POD_IDENTITY_ASSOCIATIONS,
-		EKSActions.LIST_UPDATES,
+	static readonly AllListActions: string[] = [
+		EKSActions.ListAccessEntries,
+		EKSActions.ListAccessPolicies,
+		EKSActions.ListAddons,
+		EKSActions.ListAssociatedAccessPolicies,
+		EKSActions.ListCapabilities,
+		EKSActions.ListClusters,
+		EKSActions.ListEksAnywhereSubscriptions,
+		EKSActions.ListFargateProfiles,
+		EKSActions.ListIdentityProviderConfigs,
+		EKSActions.ListInsights,
+		EKSActions.ListNodegroups,
+		EKSActions.ListPodIdentityAssociations,
+		EKSActions.ListUpdates,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		EKSActions.TAG_RESOURCE,
-		EKSActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		EKSActions.TagResource,
+		EKSActions.UntagResource,
 	];
 }
 
-const AccessEntryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):access-entry/(?<clusterName>[^:/?]+)/(?<iamIdentityType>[^:/?]+)/(?<iamIdentityAccountId>[^:/?]+)/(?<iamIdentityName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const AccessPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks::aws:cluster-access-policy/(?<accessPolicyName>[^:/?]+)$",
-);
-const AddonArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):addon/(?<clusterName>[^:/?]+)/(?<addonName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const CapabilityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):capability/(?<clusterName>[^:/?]+)/(?<capabilityType>[^:/?]+)/(?<capabilityName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterName>[^:/?]+)$",
-);
-const DashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):dashboard/(?<dashboardName>[^:/?]+)$",
-);
-const EKSAnywhereSubscriptionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):eks-anywhere-subscription/(?<uuid>[^:/?]+)$",
-);
-const FargateprofileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):fargateprofile/(?<clusterName>[^:/?]+)/(?<fargateProfileName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const IdentityproviderconfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):identityproviderconfig/(?<clusterName>[^:/?]+)/(?<identityProviderType>[^:/?]+)/(?<identityProviderConfigName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const NodegroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):nodegroup/(?<clusterName>[^:/?]+)/(?<nodegroupName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const PodidentityassociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):podidentityassociation/(?<clusterName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
+/**
+ * Properties for building a access-entry ARN.
+ */
+export interface EKSAccessEntryArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The IamIdentityType component of the ARN. */
+	readonly iamIdentityType: string;
+	/** The IamIdentityAccountID component of the ARN. */
+	readonly iamIdentityAccountId: string;
+	/** The IamIdentityName component of the ARN. */
+	readonly iamIdentityName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-entry ARN.
+ */
+export interface EKSAccessEntryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The IamIdentityType component. */
+	readonly iamIdentityType: string;
+	/** The IamIdentityAccountID component. */
+	readonly iamIdentityAccountId: string;
+	/** The IamIdentityName component. */
+	readonly iamIdentityName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a access-policy ARN.
+ */
+export interface EKSAccessPolicyArnProps {
+	/** The AccessPolicyName component of the ARN. */
+	readonly accessPolicyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-policy ARN.
+ */
+export interface EKSAccessPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessPolicyName component. */
+	readonly accessPolicyName: string;
+}
+
+/**
+ * Properties for building a addon ARN.
+ */
+export interface EKSAddonArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The AddonName component of the ARN. */
+	readonly addonName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a addon ARN.
+ */
+export interface EKSAddonArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The AddonName component. */
+	readonly addonName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a capability ARN.
+ */
+export interface EKSCapabilityArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The CapabilityType component of the ARN. */
+	readonly capabilityType: string;
+	/** The CapabilityName component of the ARN. */
+	readonly capabilityName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capability ARN.
+ */
+export interface EKSCapabilityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The CapabilityType component. */
+	readonly capabilityType: string;
+	/** The CapabilityName component. */
+	readonly capabilityName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface EKSClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface EKSClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+/**
+ * Properties for building a dashboard ARN.
+ */
+export interface EKSDashboardArnProps {
+	/** The DashboardName component of the ARN. */
+	readonly dashboardName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dashboard ARN.
+ */
+export interface EKSDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DashboardName component. */
+	readonly dashboardName: string;
+}
+
+/**
+ * Properties for building a eks-anywhere-subscription ARN.
+ */
+export interface EKSEKSAnywhereSubscriptionArnProps {
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a eks-anywhere-subscription ARN.
+ */
+export interface EKSEKSAnywhereSubscriptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a fargateprofile ARN.
+ */
+export interface EKSFargateprofileArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The FargateProfileName component of the ARN. */
+	readonly fargateProfileName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fargateprofile ARN.
+ */
+export interface EKSFargateprofileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The FargateProfileName component. */
+	readonly fargateProfileName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a identityproviderconfig ARN.
+ */
+export interface EKSIdentityproviderconfigArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The IdentityProviderType component of the ARN. */
+	readonly identityProviderType: string;
+	/** The IdentityProviderConfigName component of the ARN. */
+	readonly identityProviderConfigName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identityproviderconfig ARN.
+ */
+export interface EKSIdentityproviderconfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The IdentityProviderType component. */
+	readonly identityProviderType: string;
+	/** The IdentityProviderConfigName component. */
+	readonly identityProviderConfigName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a nodegroup ARN.
+ */
+export interface EKSNodegroupArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The NodegroupName component of the ARN. */
+	readonly nodegroupName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a nodegroup ARN.
+ */
+export interface EKSNodegroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The NodegroupName component. */
+	readonly nodegroupName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a podidentityassociation ARN.
+ */
+export interface EKSPodidentityassociationArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a podidentityassociation ARN.
+ */
+export interface EKSPodidentityassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+const AccessEntryArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):access-entry\/(?<clusterName>[^:/?]+)\/(?<iamIdentityType>[^:/?]+)\/(?<iamIdentityAccountId>[^:/?]+)\/(?<iamIdentityName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const AccessPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):eks::aws:cluster-access-policy\/(?<accessPolicyName>[^:/?]+)$/;
+const AddonArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):addon\/(?<clusterName>[^:/?]+)\/(?<addonName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const CapabilityArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):capability\/(?<clusterName>[^:/?]+)\/(?<capabilityType>[^:/?]+)\/(?<capabilityName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterName>[^:/?]+)$/;
+const DashboardArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):dashboard\/(?<dashboardName>[^:/?]+)$/;
+const EKSAnywhereSubscriptionArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):eks-anywhere-subscription\/(?<uuid>[^:/?]+)$/;
+const FargateprofileArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):fargateprofile\/(?<clusterName>[^:/?]+)\/(?<fargateProfileName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const IdentityproviderconfigArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):identityproviderconfig\/(?<clusterName>[^:/?]+)\/(?<identityProviderType>[^:/?]+)\/(?<identityProviderConfigName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const NodegroupArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):nodegroup\/(?<clusterName>[^:/?]+)\/(?<nodegroupName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const PodidentityassociationArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):podidentityassociation\/(?<clusterName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for eks resources.
@@ -293,24 +657,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the access-entry resource.
 	 */
-	static accessEntry(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The IamIdentityType component of the ARN. */
-		readonly iamIdentityType: string;
-		/** The IamIdentityAccountID component of the ARN. */
-		readonly iamIdentityAccountId: string;
-		/** The IamIdentityName component of the ARN. */
-		readonly iamIdentityName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessEntry(props: EKSAccessEntryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:access-entry/${props.clusterName}/${props.iamIdentityType}/${props.iamIdentityAccountId}/${props.iamIdentityName}/${props.uuid}`;
 	}
 
@@ -325,16 +672,7 @@ export class EKSResources {
 	 * Parses a access-entry ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessEntryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		iamIdentityType: string;
-		iamIdentityAccountId: string;
-		iamIdentityName: string;
-		uuid: string;
-	} {
+	static parseAccessEntryArn(arn: string): EKSAccessEntryArnComponents {
 		const match = AccessEntryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-entry ARN: ${arn}`);
@@ -354,16 +692,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the access-policy resource.
 	 */
-	static accessPolicy(props: {
-		/** The AccessPolicyName component of the ARN. */
-		readonly accessPolicyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessPolicy(props: EKSAccessPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks::aws:cluster-access-policy/${props.accessPolicyName}`;
 	}
 
@@ -378,12 +707,7 @@ export class EKSResources {
 	 * Parses a access-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessPolicyName: string;
-	} {
+	static parseAccessPolicyArn(arn: string): EKSAccessPolicyArnComponents {
 		const match = AccessPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-policy ARN: ${arn}`);
@@ -399,20 +723,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the addon resource.
 	 */
-	static addon(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The AddonName component of the ARN. */
-		readonly addonName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static addon(props: EKSAddonArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:addon/${props.clusterName}/${props.addonName}/${props.uuid}`;
 	}
 
@@ -427,14 +738,7 @@ export class EKSResources {
 	 * Parses a addon ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAddonArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		addonName: string;
-		uuid: string;
-	} {
+	static parseAddonArn(arn: string): EKSAddonArnComponents {
 		const match = AddonArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid addon ARN: ${arn}`);
@@ -452,22 +756,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the capability resource.
 	 */
-	static capability(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The CapabilityType component of the ARN. */
-		readonly capabilityType: string;
-		/** The CapabilityName component of the ARN. */
-		readonly capabilityName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capability(props: EKSCapabilityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:capability/${props.clusterName}/${props.capabilityType}/${props.capabilityName}/${props.uuid}`;
 	}
 
@@ -482,15 +771,7 @@ export class EKSResources {
 	 * Parses a capability ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapabilityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		capabilityType: string;
-		capabilityName: string;
-		uuid: string;
-	} {
+	static parseCapabilityArn(arn: string): EKSCapabilityArnComponents {
 		const match = CapabilityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capability ARN: ${arn}`);
@@ -509,16 +790,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: EKSClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterName}`;
 	}
 
@@ -533,12 +805,7 @@ export class EKSResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseClusterArn(arn: string): EKSClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -554,16 +821,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the dashboard resource.
 	 */
-	static dashboard(props: {
-		/** The DashboardName component of the ARN. */
-		readonly dashboardName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboard(props: EKSDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:dashboard/${props.dashboardName}`;
 	}
 
@@ -578,12 +836,7 @@ export class EKSResources {
 	 * Parses a dashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dashboardName: string;
-	} {
+	static parseDashboardArn(arn: string): EKSDashboardArnComponents {
 		const match = DashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dashboard ARN: ${arn}`);
@@ -599,16 +852,9 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the eks-anywhere-subscription resource.
 	 */
-	static eksAnywhereSubscription(props: {
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eksAnywhereSubscription(
+		props: EKSEKSAnywhereSubscriptionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:eks-anywhere-subscription/${props.uuid}`;
 	}
 
@@ -623,12 +869,9 @@ export class EKSResources {
 	 * Parses a eks-anywhere-subscription ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEKSAnywhereSubscriptionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		uuid: string;
-	} {
+	static parseEKSAnywhereSubscriptionArn(
+		arn: string,
+	): EKSEKSAnywhereSubscriptionArnComponents {
 		const match = EKSAnywhereSubscriptionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid eks-anywhere-subscription ARN: ${arn}`);
@@ -644,20 +887,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the fargateprofile resource.
 	 */
-	static fargateprofile(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The FargateProfileName component of the ARN. */
-		readonly fargateProfileName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fargateprofile(props: EKSFargateprofileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:fargateprofile/${props.clusterName}/${props.fargateProfileName}/${props.uuid}`;
 	}
 
@@ -672,14 +902,7 @@ export class EKSResources {
 	 * Parses a fargateprofile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFargateprofileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		fargateProfileName: string;
-		uuid: string;
-	} {
+	static parseFargateprofileArn(arn: string): EKSFargateprofileArnComponents {
 		const match = FargateprofileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fargateprofile ARN: ${arn}`);
@@ -697,22 +920,9 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the identityproviderconfig resource.
 	 */
-	static identityproviderconfig(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The IdentityProviderType component of the ARN. */
-		readonly identityProviderType: string;
-		/** The IdentityProviderConfigName component of the ARN. */
-		readonly identityProviderConfigName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identityproviderconfig(
+		props: EKSIdentityproviderconfigArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:identityproviderconfig/${props.clusterName}/${props.identityProviderType}/${props.identityProviderConfigName}/${props.uuid}`;
 	}
 
@@ -727,15 +937,9 @@ export class EKSResources {
 	 * Parses a identityproviderconfig ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentityproviderconfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		identityProviderType: string;
-		identityProviderConfigName: string;
-		uuid: string;
-	} {
+	static parseIdentityproviderconfigArn(
+		arn: string,
+	): EKSIdentityproviderconfigArnComponents {
 		const match = IdentityproviderconfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identityproviderconfig ARN: ${arn}`);
@@ -754,20 +958,7 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the nodegroup resource.
 	 */
-	static nodegroup(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The NodegroupName component of the ARN. */
-		readonly nodegroupName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static nodegroup(props: EKSNodegroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:nodegroup/${props.clusterName}/${props.nodegroupName}/${props.uuid}`;
 	}
 
@@ -782,14 +973,7 @@ export class EKSResources {
 	 * Parses a nodegroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNodegroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		nodegroupName: string;
-		uuid: string;
-	} {
+	static parseNodegroupArn(arn: string): EKSNodegroupArnComponents {
 		const match = NodegroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid nodegroup ARN: ${arn}`);
@@ -807,18 +991,9 @@ export class EKSResources {
 	/**
 	 * Builds an ARN for the podidentityassociation resource.
 	 */
-	static podidentityassociation(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static podidentityassociation(
+		props: EKSPodidentityassociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:podidentityassociation/${props.clusterName}/${props.uuid}`;
 	}
 
@@ -833,13 +1008,9 @@ export class EKSResources {
 	 * Parses a podidentityassociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePodidentityassociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		uuid: string;
-	} {
+	static parsePodidentityassociationArn(
+		arn: string,
+	): EKSPodidentityassociationArnComponents {
 		const match = PodidentityassociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid podidentityassociation ARN: ${arn}`);
@@ -859,231 +1030,223 @@ export class EKSResources {
  */
 export class EKSOperations {
 	/** IAM actions required for the AssociateAccessPolicy API call. */
-	static readonly ASSOCIATE_ACCESS_POLICY: string[] = [
+	static readonly AssociateAccessPolicy: string[] = [
 		"eks:AssociateAccessPolicy",
 	];
 	/** IAM actions required for the AssociateEncryptionConfig API call. */
-	static readonly ASSOCIATE_ENCRYPTION_CONFIG: string[] = [
+	static readonly AssociateEncryptionConfig: string[] = [
 		"eks:AssociateEncryptionConfig",
 	];
 	/** IAM actions required for the AssociateIdentityProviderConfig API call. */
-	static readonly ASSOCIATE_IDENTITY_PROVIDER_CONFIG: string[] = [
+	static readonly AssociateIdentityProviderConfig: string[] = [
 		"eks:AssociateIdentityProviderConfig",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CancelUpdate API call. */
-	static readonly CANCEL_UPDATE: string[] = ["eks:CancelUpdate"];
+	static readonly CancelUpdate: string[] = ["eks:CancelUpdate"];
 	/** IAM actions required for the CreateAccessEntry API call. */
-	static readonly CREATE_ACCESS_ENTRY: string[] = [
+	static readonly CreateAccessEntry: string[] = [
 		"eks:CreateAccessEntry",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateAddon API call. */
-	static readonly CREATE_ADDON: string[] = [
+	static readonly CreateAddon: string[] = [
 		"eks:CreateAddon",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateCapability API call. */
-	static readonly CREATE_CAPABILITY: string[] = [
+	static readonly CreateCapability: string[] = [
 		"eks:CreateCapability",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"eks:CreateAccessEntry",
 		"eks:CreateCluster",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateEksAnywhereSubscription API call. */
-	static readonly CREATE_EKS_ANYWHERE_SUBSCRIPTION: string[] = [
+	static readonly CreateEksAnywhereSubscription: string[] = [
 		"eks:CreateEksAnywhereSubscription",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateFargateProfile API call. */
-	static readonly CREATE_FARGATE_PROFILE: string[] = [
+	static readonly CreateFargateProfile: string[] = [
 		"eks:CreateFargateProfile",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreateNodegroup API call. */
-	static readonly CREATE_NODEGROUP: string[] = [
+	static readonly CreateNodegroup: string[] = [
 		"eks:CreateNodegroup",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the CreatePodIdentityAssociation API call. */
-	static readonly CREATE_POD_IDENTITY_ASSOCIATION: string[] = [
+	static readonly CreatePodIdentityAssociation: string[] = [
 		"eks:CreatePodIdentityAssociation",
 		"iam:PassRole",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the DeleteAccessEntry API call. */
-	static readonly DELETE_ACCESS_ENTRY: string[] = ["eks:DeleteAccessEntry"];
+	static readonly DeleteAccessEntry: string[] = ["eks:DeleteAccessEntry"];
 	/** IAM actions required for the DeleteAddon API call. */
-	static readonly DELETE_ADDON: string[] = ["eks:DeleteAddon"];
+	static readonly DeleteAddon: string[] = ["eks:DeleteAddon"];
 	/** IAM actions required for the DeleteCapability API call. */
-	static readonly DELETE_CAPABILITY: string[] = ["eks:DeleteCapability"];
+	static readonly DeleteCapability: string[] = ["eks:DeleteCapability"];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["eks:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["eks:DeleteCluster"];
 	/** IAM actions required for the DeleteEksAnywhereSubscription API call. */
-	static readonly DELETE_EKS_ANYWHERE_SUBSCRIPTION: string[] = [
+	static readonly DeleteEksAnywhereSubscription: string[] = [
 		"eks:DeleteEksAnywhereSubscription",
 	];
 	/** IAM actions required for the DeleteFargateProfile API call. */
-	static readonly DELETE_FARGATE_PROFILE: string[] = [
-		"eks:DeleteFargateProfile",
-	];
+	static readonly DeleteFargateProfile: string[] = ["eks:DeleteFargateProfile"];
 	/** IAM actions required for the DeleteNodegroup API call. */
-	static readonly DELETE_NODEGROUP: string[] = ["eks:DeleteNodegroup"];
+	static readonly DeleteNodegroup: string[] = ["eks:DeleteNodegroup"];
 	/** IAM actions required for the DeletePodIdentityAssociation API call. */
-	static readonly DELETE_POD_IDENTITY_ASSOCIATION: string[] = [
+	static readonly DeletePodIdentityAssociation: string[] = [
 		"eks:DeletePodIdentityAssociation",
 	];
 	/** IAM actions required for the DeregisterCluster API call. */
-	static readonly DEREGISTER_CLUSTER: string[] = ["eks:DeregisterCluster"];
+	static readonly DeregisterCluster: string[] = ["eks:DeregisterCluster"];
 	/** IAM actions required for the DescribeAccessEntry API call. */
-	static readonly DESCRIBE_ACCESS_ENTRY: string[] = ["eks:DescribeAccessEntry"];
+	static readonly DescribeAccessEntry: string[] = ["eks:DescribeAccessEntry"];
 	/** IAM actions required for the DescribeAddon API call. */
-	static readonly DESCRIBE_ADDON: string[] = ["eks:DescribeAddon"];
+	static readonly DescribeAddon: string[] = ["eks:DescribeAddon"];
 	/** IAM actions required for the DescribeAddonConfiguration API call. */
-	static readonly DESCRIBE_ADDON_CONFIGURATION: string[] = [
+	static readonly DescribeAddonConfiguration: string[] = [
 		"eks:DescribeAddonConfiguration",
 	];
 	/** IAM actions required for the DescribeAddonVersions API call. */
-	static readonly DESCRIBE_ADDON_VERSIONS: string[] = [
+	static readonly DescribeAddonVersions: string[] = [
 		"eks:DescribeAddonVersions",
 	];
 	/** IAM actions required for the DescribeCapability API call. */
-	static readonly DESCRIBE_CAPABILITY: string[] = ["eks:DescribeCapability"];
+	static readonly DescribeCapability: string[] = ["eks:DescribeCapability"];
 	/** IAM actions required for the DescribeCluster API call. */
-	static readonly DESCRIBE_CLUSTER: string[] = ["eks:DescribeCluster"];
+	static readonly DescribeCluster: string[] = ["eks:DescribeCluster"];
 	/** IAM actions required for the DescribeClusterVersions API call. */
-	static readonly DESCRIBE_CLUSTER_VERSIONS: string[] = [
+	static readonly DescribeClusterVersions: string[] = [
 		"eks:DescribeClusterVersions",
 	];
 	/** IAM actions required for the DescribeEksAnywhereSubscription API call. */
-	static readonly DESCRIBE_EKS_ANYWHERE_SUBSCRIPTION: string[] = [
+	static readonly DescribeEksAnywhereSubscription: string[] = [
 		"eks:DescribeEksAnywhereSubscription",
 	];
 	/** IAM actions required for the DescribeFargateProfile API call. */
-	static readonly DESCRIBE_FARGATE_PROFILE: string[] = [
+	static readonly DescribeFargateProfile: string[] = [
 		"eks:DescribeFargateProfile",
 	];
 	/** IAM actions required for the DescribeIdentityProviderConfig API call. */
-	static readonly DESCRIBE_IDENTITY_PROVIDER_CONFIG: string[] = [
+	static readonly DescribeIdentityProviderConfig: string[] = [
 		"eks:DescribeIdentityProviderConfig",
 	];
 	/** IAM actions required for the DescribeInsight API call. */
-	static readonly DESCRIBE_INSIGHT: string[] = ["eks:DescribeInsight"];
+	static readonly DescribeInsight: string[] = ["eks:DescribeInsight"];
 	/** IAM actions required for the DescribeInsightsRefresh API call. */
-	static readonly DESCRIBE_INSIGHTS_REFRESH: string[] = [
+	static readonly DescribeInsightsRefresh: string[] = [
 		"eks:DescribeInsightsRefresh",
 	];
 	/** IAM actions required for the DescribeNodegroup API call. */
-	static readonly DESCRIBE_NODEGROUP: string[] = ["eks:DescribeNodegroup"];
+	static readonly DescribeNodegroup: string[] = ["eks:DescribeNodegroup"];
 	/** IAM actions required for the DescribePodIdentityAssociation API call. */
-	static readonly DESCRIBE_POD_IDENTITY_ASSOCIATION: string[] = [
+	static readonly DescribePodIdentityAssociation: string[] = [
 		"eks:DescribePodIdentityAssociation",
 	];
 	/** IAM actions required for the DescribeUpdate API call. */
-	static readonly DESCRIBE_UPDATE: string[] = ["eks:DescribeUpdate"];
+	static readonly DescribeUpdate: string[] = ["eks:DescribeUpdate"];
 	/** IAM actions required for the DisassociateAccessPolicy API call. */
-	static readonly DISASSOCIATE_ACCESS_POLICY: string[] = [
+	static readonly DisassociateAccessPolicy: string[] = [
 		"eks:DisassociateAccessPolicy",
 	];
 	/** IAM actions required for the DisassociateIdentityProviderConfig API call. */
-	static readonly DISASSOCIATE_IDENTITY_PROVIDER_CONFIG: string[] = [
+	static readonly DisassociateIdentityProviderConfig: string[] = [
 		"eks:DisassociateIdentityProviderConfig",
 	];
 	/** IAM actions required for the ListAccessEntries API call. */
-	static readonly LIST_ACCESS_ENTRIES: string[] = ["eks:ListAccessEntries"];
+	static readonly ListAccessEntries: string[] = ["eks:ListAccessEntries"];
 	/** IAM actions required for the ListAccessPolicies API call. */
-	static readonly LIST_ACCESS_POLICIES: string[] = ["eks:ListAccessPolicies"];
+	static readonly ListAccessPolicies: string[] = ["eks:ListAccessPolicies"];
 	/** IAM actions required for the ListAddons API call. */
-	static readonly LIST_ADDONS: string[] = ["eks:ListAddons"];
+	static readonly ListAddons: string[] = ["eks:ListAddons"];
 	/** IAM actions required for the ListAssociatedAccessPolicies API call. */
-	static readonly LIST_ASSOCIATED_ACCESS_POLICIES: string[] = [
+	static readonly ListAssociatedAccessPolicies: string[] = [
 		"eks:ListAssociatedAccessPolicies",
 	];
 	/** IAM actions required for the ListCapabilities API call. */
-	static readonly LIST_CAPABILITIES: string[] = ["eks:ListCapabilities"];
+	static readonly ListCapabilities: string[] = ["eks:ListCapabilities"];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["eks:ListClusters"];
+	static readonly ListClusters: string[] = ["eks:ListClusters"];
 	/** IAM actions required for the ListEksAnywhereSubscriptions API call. */
-	static readonly LIST_EKS_ANYWHERE_SUBSCRIPTIONS: string[] = [
+	static readonly ListEksAnywhereSubscriptions: string[] = [
 		"eks:ListEksAnywhereSubscriptions",
 	];
 	/** IAM actions required for the ListFargateProfiles API call. */
-	static readonly LIST_FARGATE_PROFILES: string[] = ["eks:ListFargateProfiles"];
+	static readonly ListFargateProfiles: string[] = ["eks:ListFargateProfiles"];
 	/** IAM actions required for the ListIdentityProviderConfigs API call. */
-	static readonly LIST_IDENTITY_PROVIDER_CONFIGS: string[] = [
+	static readonly ListIdentityProviderConfigs: string[] = [
 		"eks:ListIdentityProviderConfigs",
 	];
 	/** IAM actions required for the ListInsights API call. */
-	static readonly LIST_INSIGHTS: string[] = ["eks:ListInsights"];
+	static readonly ListInsights: string[] = ["eks:ListInsights"];
 	/** IAM actions required for the ListNodegroups API call. */
-	static readonly LIST_NODEGROUPS: string[] = ["eks:ListNodegroups"];
+	static readonly ListNodegroups: string[] = ["eks:ListNodegroups"];
 	/** IAM actions required for the ListPodIdentityAssociations API call. */
-	static readonly LIST_POD_IDENTITY_ASSOCIATIONS: string[] = [
+	static readonly ListPodIdentityAssociations: string[] = [
 		"eks:ListPodIdentityAssociations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"eks:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["eks:ListTagsForResource"];
 	/** IAM actions required for the ListUpdates API call. */
-	static readonly LIST_UPDATES: string[] = ["eks:ListUpdates"];
+	static readonly ListUpdates: string[] = ["eks:ListUpdates"];
 	/** IAM actions required for the RegisterCluster API call. */
-	static readonly REGISTER_CLUSTER: string[] = [
+	static readonly RegisterCluster: string[] = [
 		"iam:PassRole",
 		"eks:RegisterCluster",
 		"eks:TagResource",
 	];
 	/** IAM actions required for the StartInsightsRefresh API call. */
-	static readonly START_INSIGHTS_REFRESH: string[] = [
-		"eks:StartInsightsRefresh",
-	];
+	static readonly StartInsightsRefresh: string[] = ["eks:StartInsightsRefresh"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["eks:TagResource"];
+	static readonly TagResource: string[] = ["eks:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["eks:UntagResource"];
+	static readonly UntagResource: string[] = ["eks:UntagResource"];
 	/** IAM actions required for the UpdateAccessEntry API call. */
-	static readonly UPDATE_ACCESS_ENTRY: string[] = ["eks:UpdateAccessEntry"];
+	static readonly UpdateAccessEntry: string[] = ["eks:UpdateAccessEntry"];
 	/** IAM actions required for the UpdateAddon API call. */
-	static readonly UPDATE_ADDON: string[] = ["iam:PassRole", "eks:UpdateAddon"];
+	static readonly UpdateAddon: string[] = ["iam:PassRole", "eks:UpdateAddon"];
 	/** IAM actions required for the UpdateCapability API call. */
-	static readonly UPDATE_CAPABILITY: string[] = [
+	static readonly UpdateCapability: string[] = [
 		"iam:PassRole",
 		"eks:UpdateCapability",
 	];
 	/** IAM actions required for the UpdateClusterConfig API call. */
-	static readonly UPDATE_CLUSTER_CONFIG: string[] = [
+	static readonly UpdateClusterConfig: string[] = [
 		"eks:CreateAccessEntry",
 		"iam:PassRole",
 		"eks:UpdateClusterConfig",
 	];
 	/** IAM actions required for the UpdateClusterVersion API call. */
-	static readonly UPDATE_CLUSTER_VERSION: string[] = [
-		"eks:UpdateClusterVersion",
-	];
+	static readonly UpdateClusterVersion: string[] = ["eks:UpdateClusterVersion"];
 	/** IAM actions required for the UpdateEksAnywhereSubscription API call. */
-	static readonly UPDATE_EKS_ANYWHERE_SUBSCRIPTION: string[] = [
+	static readonly UpdateEksAnywhereSubscription: string[] = [
 		"eks:UpdateEksAnywhereSubscription",
 	];
 	/** IAM actions required for the UpdateNodegroupConfig API call. */
-	static readonly UPDATE_NODEGROUP_CONFIG: string[] = [
+	static readonly UpdateNodegroupConfig: string[] = [
 		"eks:UpdateNodegroupConfig",
 	];
 	/** IAM actions required for the UpdateNodegroupVersion API call. */
-	static readonly UPDATE_NODEGROUP_VERSION: string[] = [
+	static readonly UpdateNodegroupVersion: string[] = [
 		"eks:UpdateNodegroupVersion",
 	];
 	/** IAM actions required for the UpdatePodIdentityAssociation API call. */
-	static readonly UPDATE_POD_IDENTITY_ASSOCIATION: string[] = [
+	static readonly UpdatePodIdentityAssociation: string[] = [
 		"iam:PassRole",
 		"eks:UpdatePodIdentityAssociation",
 	];
@@ -1094,25 +1257,24 @@ export class EKSOperations {
  */
 export class EKSConditions {
 	/** Condition keys applicable to the AssociateAccessPolicy action. */
-	static readonly ASSOCIATE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly AssociateAccessPolicyConditionKeys: string[] = [
 		"eks:accessScope",
 		"eks:namespaces",
 		"eks:policyArn",
 	];
 	/** Condition keys applicable to the AssociateEncryptionConfig action. */
-	static readonly ASSOCIATE_ENCRYPTION_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly AssociateEncryptionConfigConditionKeys: string[] = [
 		"eks:encryptionConfigProviderKeyArns",
 	];
 	/** Condition keys applicable to the AssociateIdentityProviderConfig action. */
-	static readonly ASSOCIATE_IDENTITY_PROVIDER_CONFIG_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"eks:clientId",
-			"eks:issuerUrl",
-		];
+	static readonly AssociateIdentityProviderConfigConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"eks:clientId",
+		"eks:issuerUrl",
+	];
 	/** Condition keys applicable to the CreateAccessEntry action. */
-	static readonly CREATE_ACCESS_ENTRY_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessEntryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"eks:accessEntryType",
@@ -1121,17 +1283,17 @@ export class EKSConditions {
 		"eks:username",
 	];
 	/** Condition keys applicable to the CreateAddon action. */
-	static readonly CREATE_ADDON_CONDITION_KEYS: string[] = [
+	static readonly CreateAddonConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCapability action. */
-	static readonly CREATE_CAPABILITY_CONDITION_KEYS: string[] = [
+	static readonly CreateCapabilityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"eks:authenticationMode",
@@ -1155,45 +1317,45 @@ export class EKSConditions {
 		"eks:zonalShiftEnabled",
 	];
 	/** Condition keys applicable to the CreateEksAnywhereSubscription action. */
-	static readonly CREATE_EKS_ANYWHERE_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateEksAnywhereSubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFargateProfile action. */
-	static readonly CREATE_FARGATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateFargateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNodegroup action. */
-	static readonly CREATE_NODEGROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateNodegroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePodIdentityAssociation action. */
-	static readonly CREATE_POD_IDENTITY_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreatePodIdentityAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DisassociateAccessPolicy action. */
-	static readonly DISASSOCIATE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DisassociateAccessPolicyConditionKeys: string[] = [
 		"eks:accessScope",
 		"eks:namespaces",
 		"eks:policyArn",
 	];
 	/** Condition keys applicable to the RegisterCluster action. */
-	static readonly REGISTER_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly RegisterClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateClusterConfig action. */
-	static readonly UPDATE_CLUSTER_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly UpdateClusterConfigConditionKeys: string[] = [
 		"eks:authenticationMode",
 		"eks:blockStorageEnabled",
 		"eks:computeConfigEnabled",
@@ -1211,16 +1373,16 @@ export class EKSConditions {
 		"eks:zonalShiftEnabled",
 	];
 	/** Condition keys applicable to the UpdateClusterVersion action. */
-	static readonly UPDATE_CLUSTER_VERSION_CONDITION_KEYS: string[] = [
+	static readonly UpdateClusterVersionConditionKeys: string[] = [
 		"eks:kubernetesVersion",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: eks:accessEntryType (String) */
 	static readonly ACCESS_ENTRY_TYPE = "eks:accessEntryType";
 	/** Condition key: eks:accessScope (String) */

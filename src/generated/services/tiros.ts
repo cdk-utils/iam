@@ -13,32 +13,32 @@ export class TirosActions {
 	static readonly SERVICE_PREFIX = "tiros";
 
 	/** [Write] tiros:CreateQuery */
-	static readonly CREATE_QUERY = "tiros:CreateQuery";
+	static readonly CreateQuery = "tiros:CreateQuery";
 	/** [Write] tiros:ExtendQuery */
-	static readonly EXTEND_QUERY = "tiros:ExtendQuery";
+	static readonly ExtendQuery = "tiros:ExtendQuery";
 	/** [Read] tiros:GetQueryAnswer */
-	static readonly GET_QUERY_ANSWER = "tiros:GetQueryAnswer";
+	static readonly actionGetQueryAnswer = "tiros:GetQueryAnswer";
 	/** [Read] tiros:GetQueryExplanation */
-	static readonly GET_QUERY_EXPLANATION = "tiros:GetQueryExplanation";
+	static readonly actionGetQueryExplanation = "tiros:GetQueryExplanation";
 	/** [Read] tiros:GetQueryExtensionAccounts */
-	static readonly GET_QUERY_EXTENSION_ACCOUNTS =
+	static readonly actionGetQueryExtensionAccounts =
 		"tiros:GetQueryExtensionAccounts";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TirosActions.GET_QUERY_ANSWER,
-		TirosActions.GET_QUERY_EXPLANATION,
-		TirosActions.GET_QUERY_EXTENSION_ACCOUNTS,
+	static readonly AllReadActions: string[] = [
+		TirosActions.actionGetQueryAnswer,
+		TirosActions.actionGetQueryExplanation,
+		TirosActions.actionGetQueryExtensionAccounts,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		TirosActions.CREATE_QUERY,
-		TirosActions.EXTEND_QUERY,
+	static readonly AllWriteActions: string[] = [
+		TirosActions.CreateQuery,
+		TirosActions.ExtendQuery,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

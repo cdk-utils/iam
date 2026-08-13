@@ -13,100 +13,127 @@ export class SecretsManagerActions {
 	static readonly SERVICE_PREFIX = "secretsmanager";
 
 	/** [Read] secretsmanager:BatchGetSecretValue */
-	static readonly BATCH_GET_SECRET_VALUE = "secretsmanager:BatchGetSecretValue";
+	static readonly BatchGetSecretValue = "secretsmanager:BatchGetSecretValue";
 	/** [Write] secretsmanager:CancelRotateSecret */
-	static readonly CANCEL_ROTATE_SECRET = "secretsmanager:CancelRotateSecret";
+	static readonly CancelRotateSecret = "secretsmanager:CancelRotateSecret";
 	/** [Write] secretsmanager:CreateSecret */
-	static readonly CREATE_SECRET = "secretsmanager:CreateSecret";
+	static readonly CreateSecret = "secretsmanager:CreateSecret";
 	/** [PermissionManagement] secretsmanager:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY =
-		"secretsmanager:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "secretsmanager:DeleteResourcePolicy";
 	/** [Write] secretsmanager:DeleteSecret */
-	static readonly DELETE_SECRET = "secretsmanager:DeleteSecret";
+	static readonly DeleteSecret = "secretsmanager:DeleteSecret";
 	/** [Read] secretsmanager:DescribeSecret */
-	static readonly DESCRIBE_SECRET = "secretsmanager:DescribeSecret";
+	static readonly DescribeSecret = "secretsmanager:DescribeSecret";
 	/** [Read] secretsmanager:GetRandomPassword */
-	static readonly GET_RANDOM_PASSWORD = "secretsmanager:GetRandomPassword";
+	static readonly actionGetRandomPassword = "secretsmanager:GetRandomPassword";
 	/** [Read] secretsmanager:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "secretsmanager:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "secretsmanager:GetResourcePolicy";
 	/** [Read] secretsmanager:GetSecretValue */
-	static readonly GET_SECRET_VALUE = "secretsmanager:GetSecretValue";
+	static readonly actionGetSecretValue = "secretsmanager:GetSecretValue";
 	/** [Read] secretsmanager:ListSecretVersionIds */
-	static readonly LIST_SECRET_VERSION_IDS =
-		"secretsmanager:ListSecretVersionIds";
+	static readonly ListSecretVersionIds = "secretsmanager:ListSecretVersionIds";
 	/** [List] secretsmanager:ListSecrets */
-	static readonly LIST_SECRETS = "secretsmanager:ListSecrets";
+	static readonly ListSecrets = "secretsmanager:ListSecrets";
 	/** [PermissionManagement] secretsmanager:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "secretsmanager:PutResourcePolicy";
+	static readonly PutResourcePolicy = "secretsmanager:PutResourcePolicy";
 	/** [Write] secretsmanager:PutSecretValue */
-	static readonly PUT_SECRET_VALUE = "secretsmanager:PutSecretValue";
+	static readonly PutSecretValue = "secretsmanager:PutSecretValue";
 	/** [Write] secretsmanager:RemoveRegionsFromReplication */
-	static readonly REMOVE_REGIONS_FROM_REPLICATION =
+	static readonly RemoveRegionsFromReplication =
 		"secretsmanager:RemoveRegionsFromReplication";
 	/** [Write] secretsmanager:ReplicateSecretToRegions */
-	static readonly REPLICATE_SECRET_TO_REGIONS =
+	static readonly ReplicateSecretToRegions =
 		"secretsmanager:ReplicateSecretToRegions";
 	/** [Write] secretsmanager:RestoreSecret */
-	static readonly RESTORE_SECRET = "secretsmanager:RestoreSecret";
+	static readonly RestoreSecret = "secretsmanager:RestoreSecret";
 	/** [Write] secretsmanager:RotateSecret */
-	static readonly ROTATE_SECRET = "secretsmanager:RotateSecret";
+	static readonly RotateSecret = "secretsmanager:RotateSecret";
 	/** [Write] secretsmanager:StopReplicationToReplica */
-	static readonly STOP_REPLICATION_TO_REPLICA =
+	static readonly StopReplicationToReplica =
 		"secretsmanager:StopReplicationToReplica";
 	/** [Tagging] secretsmanager:TagResource */
-	static readonly TAG_RESOURCE = "secretsmanager:TagResource";
+	static readonly TagResource = "secretsmanager:TagResource";
 	/** [Tagging] secretsmanager:UntagResource */
-	static readonly UNTAG_RESOURCE = "secretsmanager:UntagResource";
+	static readonly UntagResource = "secretsmanager:UntagResource";
 	/** [Write] secretsmanager:UpdateSecret */
-	static readonly UPDATE_SECRET = "secretsmanager:UpdateSecret";
+	static readonly UpdateSecret = "secretsmanager:UpdateSecret";
 	/** [Write] secretsmanager:UpdateSecretVersionStage */
-	static readonly UPDATE_SECRET_VERSION_STAGE =
+	static readonly UpdateSecretVersionStage =
 		"secretsmanager:UpdateSecretVersionStage";
 	/** [PermissionManagement] secretsmanager:ValidateResourcePolicy */
-	static readonly VALIDATE_RESOURCE_POLICY =
+	static readonly ValidateResourcePolicy =
 		"secretsmanager:ValidateResourcePolicy";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SecretsManagerActions.BATCH_GET_SECRET_VALUE,
-		SecretsManagerActions.DESCRIBE_SECRET,
-		SecretsManagerActions.GET_RANDOM_PASSWORD,
-		SecretsManagerActions.GET_RESOURCE_POLICY,
-		SecretsManagerActions.GET_SECRET_VALUE,
-		SecretsManagerActions.LIST_SECRET_VERSION_IDS,
+	static readonly AllReadActions: string[] = [
+		SecretsManagerActions.BatchGetSecretValue,
+		SecretsManagerActions.DescribeSecret,
+		SecretsManagerActions.actionGetRandomPassword,
+		SecretsManagerActions.actionGetResourcePolicy,
+		SecretsManagerActions.actionGetSecretValue,
+		SecretsManagerActions.ListSecretVersionIds,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SecretsManagerActions.CANCEL_ROTATE_SECRET,
-		SecretsManagerActions.CREATE_SECRET,
-		SecretsManagerActions.DELETE_SECRET,
-		SecretsManagerActions.PUT_SECRET_VALUE,
-		SecretsManagerActions.REMOVE_REGIONS_FROM_REPLICATION,
-		SecretsManagerActions.REPLICATE_SECRET_TO_REGIONS,
-		SecretsManagerActions.RESTORE_SECRET,
-		SecretsManagerActions.ROTATE_SECRET,
-		SecretsManagerActions.STOP_REPLICATION_TO_REPLICA,
-		SecretsManagerActions.UPDATE_SECRET,
-		SecretsManagerActions.UPDATE_SECRET_VERSION_STAGE,
+	static readonly AllWriteActions: string[] = [
+		SecretsManagerActions.CancelRotateSecret,
+		SecretsManagerActions.CreateSecret,
+		SecretsManagerActions.DeleteSecret,
+		SecretsManagerActions.PutSecretValue,
+		SecretsManagerActions.RemoveRegionsFromReplication,
+		SecretsManagerActions.ReplicateSecretToRegions,
+		SecretsManagerActions.RestoreSecret,
+		SecretsManagerActions.RotateSecret,
+		SecretsManagerActions.StopReplicationToReplica,
+		SecretsManagerActions.UpdateSecret,
+		SecretsManagerActions.UpdateSecretVersionStage,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [SecretsManagerActions.LIST_SECRETS];
+	static readonly AllListActions: string[] = [
+		SecretsManagerActions.ListSecrets,
+	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		SecretsManagerActions.DELETE_RESOURCE_POLICY,
-		SecretsManagerActions.PUT_RESOURCE_POLICY,
-		SecretsManagerActions.VALIDATE_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		SecretsManagerActions.DeleteResourcePolicy,
+		SecretsManagerActions.PutResourcePolicy,
+		SecretsManagerActions.ValidateResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SecretsManagerActions.TAG_RESOURCE,
-		SecretsManagerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SecretsManagerActions.TagResource,
+		SecretsManagerActions.UntagResource,
 	];
 }
 
-const SecretArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):secretsmanager:(?<region>[^:]*):(?<account>[^:]*):secret:(?<secretId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Secret ARN.
+ */
+export interface SecretsManagerSecretArnProps {
+	/** The SecretId component of the ARN. */
+	readonly secretId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Secret ARN.
+ */
+export interface SecretsManagerSecretArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecretId component. */
+	readonly secretId: string;
+}
+
+const SecretArnRegex =
+	/^arn:(?<partition>[^:]+):secretsmanager:(?<region>[^:]*):(?<account>[^:]*):secret:(?<secretId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for secretsmanager resources.
@@ -115,16 +142,7 @@ export class SecretsManagerResources {
 	/**
 	 * Builds an ARN for the Secret resource.
 	 */
-	static secret(props: {
-		/** The SecretId component of the ARN. */
-		readonly secretId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static secret(props: SecretsManagerSecretArnProps): string {
 		return `arn:${props.partition ?? "aws"}:secretsmanager:${props.region ?? "*"}:${props.account ?? "*"}:secret:${props.secretId}`;
 	}
 
@@ -139,12 +157,7 @@ export class SecretsManagerResources {
 	 * Parses a Secret ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecretArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		secretId: string;
-	} {
+	static parseSecretArn(arn: string): SecretsManagerSecretArnComponents {
 		const match = SecretArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Secret ARN: ${arn}`);
@@ -163,86 +176,84 @@ export class SecretsManagerResources {
  */
 export class SecretsManagerOperations {
 	/** IAM actions required for the BatchGetSecretValue API call. */
-	static readonly BATCH_GET_SECRET_VALUE: string[] = [
+	static readonly BatchGetSecretValue: string[] = [
 		"secretsmanager:BatchGetSecretValue",
 		"secretsmanager:GetSecretValue",
 		"secretsmanager:ListSecrets",
 	];
 	/** IAM actions required for the CancelRotateSecret API call. */
-	static readonly CANCEL_ROTATE_SECRET: string[] = [
+	static readonly CancelRotateSecret: string[] = [
 		"secretsmanager:CancelRotateSecret",
 	];
 	/** IAM actions required for the CreateSecret API call. */
-	static readonly CREATE_SECRET: string[] = [
+	static readonly CreateSecret: string[] = [
 		"secretsmanager:CreateSecret",
 		"secretsmanager:ReplicateSecretToRegions",
 		"secretsmanager:TagResource",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"secretsmanager:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSecret API call. */
-	static readonly DELETE_SECRET: string[] = ["secretsmanager:DeleteSecret"];
+	static readonly DeleteSecret: string[] = ["secretsmanager:DeleteSecret"];
 	/** IAM actions required for the DescribeSecret API call. */
-	static readonly DESCRIBE_SECRET: string[] = ["secretsmanager:DescribeSecret"];
+	static readonly DescribeSecret: string[] = ["secretsmanager:DescribeSecret"];
 	/** IAM actions required for the GetRandomPassword API call. */
-	static readonly GET_RANDOM_PASSWORD: string[] = [
+	static readonly opGetRandomPassword: string[] = [
 		"secretsmanager:GetRandomPassword",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [
+	static readonly opGetResourcePolicy: string[] = [
 		"secretsmanager:GetResourcePolicy",
 	];
 	/** IAM actions required for the GetSecretValue API call. */
-	static readonly GET_SECRET_VALUE: string[] = [
+	static readonly opGetSecretValue: string[] = [
 		"secretsmanager:GetSecretValue",
 	];
 	/** IAM actions required for the ListSecretVersionIds API call. */
-	static readonly LIST_SECRET_VERSION_IDS: string[] = [
+	static readonly ListSecretVersionIds: string[] = [
 		"secretsmanager:ListSecretVersionIds",
 	];
 	/** IAM actions required for the ListSecrets API call. */
-	static readonly LIST_SECRETS: string[] = ["secretsmanager:ListSecrets"];
+	static readonly ListSecrets: string[] = ["secretsmanager:ListSecrets"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
+	static readonly PutResourcePolicy: string[] = [
 		"secretsmanager:PutResourcePolicy",
 	];
 	/** IAM actions required for the PutSecretValue API call. */
-	static readonly PUT_SECRET_VALUE: string[] = [
-		"secretsmanager:PutSecretValue",
-	];
+	static readonly PutSecretValue: string[] = ["secretsmanager:PutSecretValue"];
 	/** IAM actions required for the RemoveRegionsFromReplication API call. */
-	static readonly REMOVE_REGIONS_FROM_REPLICATION: string[] = [
+	static readonly RemoveRegionsFromReplication: string[] = [
 		"secretsmanager:RemoveRegionsFromReplication",
 	];
 	/** IAM actions required for the ReplicateSecretToRegions API call. */
-	static readonly REPLICATE_SECRET_TO_REGIONS: string[] = [
+	static readonly ReplicateSecretToRegions: string[] = [
 		"secretsmanager:ReplicateSecretToRegions",
 	];
 	/** IAM actions required for the RestoreSecret API call. */
-	static readonly RESTORE_SECRET: string[] = ["secretsmanager:RestoreSecret"];
+	static readonly RestoreSecret: string[] = ["secretsmanager:RestoreSecret"];
 	/** IAM actions required for the RotateSecret API call. */
-	static readonly ROTATE_SECRET: string[] = [
+	static readonly RotateSecret: string[] = [
 		"iam:PassRole",
 		"secretsmanager:RotateSecret",
 	];
 	/** IAM actions required for the StopReplicationToReplica API call. */
-	static readonly STOP_REPLICATION_TO_REPLICA: string[] = [
+	static readonly StopReplicationToReplica: string[] = [
 		"secretsmanager:StopReplicationToReplica",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["secretsmanager:TagResource"];
+	static readonly TagResource: string[] = ["secretsmanager:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["secretsmanager:UntagResource"];
+	static readonly UntagResource: string[] = ["secretsmanager:UntagResource"];
 	/** IAM actions required for the UpdateSecret API call. */
-	static readonly UPDATE_SECRET: string[] = ["secretsmanager:UpdateSecret"];
+	static readonly UpdateSecret: string[] = ["secretsmanager:UpdateSecret"];
 	/** IAM actions required for the UpdateSecretVersionStage API call. */
-	static readonly UPDATE_SECRET_VERSION_STAGE: string[] = [
+	static readonly UpdateSecretVersionStage: string[] = [
 		"secretsmanager:UpdateSecretVersionStage",
 	];
 	/** IAM actions required for the ValidateResourcePolicy API call. */
-	static readonly VALIDATE_RESOURCE_POLICY: string[] = [
+	static readonly ValidateResourcePolicy: string[] = [
 		"secretsmanager:PutResourcePolicy",
 		"secretsmanager:ValidateResourcePolicy",
 	];
@@ -253,7 +264,7 @@ export class SecretsManagerOperations {
  */
 export class SecretsManagerConditions {
 	/** Condition keys applicable to the CancelRotateSecret action. */
-	static readonly CANCEL_ROTATE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly CancelRotateSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -262,7 +273,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the CreateSecret action. */
-	static readonly CREATE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly CreateSecretConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -276,7 +287,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:Type",
 	];
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
-	static readonly DELETE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -285,7 +296,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the DeleteSecret action. */
-	static readonly DELETE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly DeleteSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ForceDeleteWithoutRecovery",
 		"secretsmanager:RecoveryWindowInDays",
@@ -296,7 +307,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the DescribeSecret action. */
-	static readonly DESCRIBE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -305,7 +316,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the GetResourcePolicy action. */
-	static readonly GET_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -314,7 +325,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the GetSecretValue action. */
-	static readonly GET_SECRET_VALUE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSecretValueConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -325,7 +336,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the ListSecretVersionIds action. */
-	static readonly LIST_SECRET_VERSION_IDS_CONDITION_KEYS: string[] = [
+	static readonly ListSecretVersionIdsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -334,7 +345,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:BlockPublicPolicy",
 		"secretsmanager:ResourceTag/tag-key",
@@ -344,7 +355,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the PutSecretValue action. */
-	static readonly PUT_SECRET_VALUE_CONDITION_KEYS: string[] = [
+	static readonly PutSecretValueConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -353,7 +364,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the RemoveRegionsFromReplication action. */
-	static readonly REMOVE_REGIONS_FROM_REPLICATION_CONDITION_KEYS: string[] = [
+	static readonly RemoveRegionsFromReplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -362,7 +373,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the ReplicateSecretToRegions action. */
-	static readonly REPLICATE_SECRET_TO_REGIONS_CONDITION_KEYS: string[] = [
+	static readonly ReplicateSecretToRegionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:AddReplicaRegions",
 		"secretsmanager:ForceOverwriteReplicaSecret",
@@ -373,7 +384,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the RestoreSecret action. */
-	static readonly RESTORE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly RestoreSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -382,7 +393,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the RotateSecret action. */
-	static readonly ROTATE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly RotateSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ExternalSecretRotationRoleArn",
 		"secretsmanager:ModifyRotationRules",
@@ -395,7 +406,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the StopReplicationToReplica action. */
-	static readonly STOP_REPLICATION_TO_REPLICA_CONDITION_KEYS: string[] = [
+	static readonly StopReplicationToReplicaConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -404,7 +415,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -415,7 +426,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"secretsmanager:ResourceTag/tag-key",
@@ -425,7 +436,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the UpdateSecret action. */
-	static readonly UPDATE_SECRET_CONDITION_KEYS: string[] = [
+	static readonly UpdateSecretConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:Description",
 		"secretsmanager:KmsKeyArn",
@@ -438,7 +449,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the UpdateSecretVersionStage action. */
-	static readonly UPDATE_SECRET_VERSION_STAGE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSecretVersionStageConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -448,7 +459,7 @@ export class SecretsManagerConditions {
 		"secretsmanager:resource/Type",
 	];
 	/** Condition keys applicable to the ValidateResourcePolicy action. */
-	static readonly VALIDATE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly ValidateResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"secretsmanager:ResourceTag/tag-key",
 		"secretsmanager:SecretId",
@@ -458,11 +469,11 @@ export class SecretsManagerConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: secretsmanager:AddReplicaRegions (ArrayOfString) */
 	static readonly ADD_REPLICA_REGIONS = "secretsmanager:AddReplicaRegions";
 	/** Condition key: secretsmanager:BlockPublicPolicy (Bool) */
@@ -616,7 +627,7 @@ export class SecretsManagerConditions {
 	/**
 	 * Generates a condition block for `secretsmanager:Name`.
 	 */
-	static name(value: string): Record<string, Record<string, string>> {
+	static conditionName(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "secretsmanager:Name": value } };
 	}
 

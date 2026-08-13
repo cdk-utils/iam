@@ -13,16 +13,18 @@ export class ServiceextractActions {
 	static readonly SERVICE_PREFIX = "serviceextract";
 
 	/** [Read] serviceextract:GetConfig */
-	static readonly GET_CONFIG = "serviceextract:GetConfig";
+	static readonly actionGetConfig = "serviceextract:GetConfig";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [ServiceextractActions.GET_CONFIG];
+	static readonly AllReadActions: string[] = [
+		ServiceextractActions.actionGetConfig,
+	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

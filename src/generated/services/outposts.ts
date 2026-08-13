@@ -13,168 +13,222 @@ export class OutpostsActions {
 	static readonly SERVICE_PREFIX = "outposts";
 
 	/** [Write] outposts:CancelCapacityTask */
-	static readonly CANCEL_CAPACITY_TASK = "outposts:CancelCapacityTask";
+	static readonly CancelCapacityTask = "outposts:CancelCapacityTask";
 	/** [Write] outposts:CancelOrder */
-	static readonly CANCEL_ORDER = "outposts:CancelOrder";
+	static readonly CancelOrder = "outposts:CancelOrder";
 	/** [Write] outposts:CreateOrder */
-	static readonly CREATE_ORDER = "outposts:CreateOrder";
+	static readonly CreateOrder = "outposts:CreateOrder";
 	/** [Write] outposts:CreateOutpost */
-	static readonly CREATE_OUTPOST = "outposts:CreateOutpost";
+	static readonly CreateOutpost = "outposts:CreateOutpost";
 	/** [Write] outposts:CreatePrivateConnectivityConfig */
-	static readonly CREATE_PRIVATE_CONNECTIVITY_CONFIG =
+	static readonly CreatePrivateConnectivityConfig =
 		"outposts:CreatePrivateConnectivityConfig";
 	/** [Write] outposts:CreateQuote */
-	static readonly CREATE_QUOTE = "outposts:CreateQuote";
+	static readonly CreateQuote = "outposts:CreateQuote";
 	/** [Write] outposts:CreateRenewal */
-	static readonly CREATE_RENEWAL = "outposts:CreateRenewal";
+	static readonly CreateRenewal = "outposts:CreateRenewal";
 	/** [Write] outposts:CreateSite */
-	static readonly CREATE_SITE = "outposts:CreateSite";
+	static readonly CreateSite = "outposts:CreateSite";
 	/** [Write] outposts:DeleteOutpost */
-	static readonly DELETE_OUTPOST = "outposts:DeleteOutpost";
+	static readonly DeleteOutpost = "outposts:DeleteOutpost";
 	/** [Write] outposts:DeleteQuote */
-	static readonly DELETE_QUOTE = "outposts:DeleteQuote";
+	static readonly DeleteQuote = "outposts:DeleteQuote";
 	/** [Write] outposts:DeleteSite */
-	static readonly DELETE_SITE = "outposts:DeleteSite";
+	static readonly DeleteSite = "outposts:DeleteSite";
 	/** [Read] outposts:GetCapacityTask */
-	static readonly GET_CAPACITY_TASK = "outposts:GetCapacityTask";
+	static readonly actionGetCapacityTask = "outposts:GetCapacityTask";
 	/** [Read] outposts:GetCatalogItem */
-	static readonly GET_CATALOG_ITEM = "outposts:GetCatalogItem";
+	static readonly actionGetCatalogItem = "outposts:GetCatalogItem";
 	/** [Read] outposts:GetConnection */
-	static readonly GET_CONNECTION = "outposts:GetConnection";
+	static readonly actionGetConnection = "outposts:GetConnection";
 	/** [Read] outposts:GetOrder */
-	static readonly GET_ORDER = "outposts:GetOrder";
+	static readonly actionGetOrder = "outposts:GetOrder";
 	/** [Read] outposts:GetOutpost */
-	static readonly GET_OUTPOST = "outposts:GetOutpost";
+	static readonly actionGetOutpost = "outposts:GetOutpost";
 	/** [Read] outposts:GetOutpostBillingInformation */
-	static readonly GET_OUTPOST_BILLING_INFORMATION =
+	static readonly actionGetOutpostBillingInformation =
 		"outposts:GetOutpostBillingInformation";
 	/** [Read] outposts:GetOutpostInstanceTypes */
-	static readonly GET_OUTPOST_INSTANCE_TYPES =
+	static readonly actionGetOutpostInstanceTypes =
 		"outposts:GetOutpostInstanceTypes";
 	/** [Read] outposts:GetOutpostSupportedInstanceTypes */
-	static readonly GET_OUTPOST_SUPPORTED_INSTANCE_TYPES =
+	static readonly actionGetOutpostSupportedInstanceTypes =
 		"outposts:GetOutpostSupportedInstanceTypes";
 	/** [Read] outposts:GetPrivateConnectivityConfig */
-	static readonly GET_PRIVATE_CONNECTIVITY_CONFIG =
+	static readonly actionGetPrivateConnectivityConfig =
 		"outposts:GetPrivateConnectivityConfig";
 	/** [Read] outposts:GetQuote */
-	static readonly GET_QUOTE = "outposts:GetQuote";
+	static readonly actionGetQuote = "outposts:GetQuote";
 	/** [Read] outposts:GetRenewalPricing */
-	static readonly GET_RENEWAL_PRICING = "outposts:GetRenewalPricing";
+	static readonly actionGetRenewalPricing = "outposts:GetRenewalPricing";
 	/** [Read] outposts:GetSite */
-	static readonly GET_SITE = "outposts:GetSite";
+	static readonly actionGetSite = "outposts:GetSite";
 	/** [Read] outposts:GetSiteAddress */
-	static readonly GET_SITE_ADDRESS = "outposts:GetSiteAddress";
+	static readonly actionGetSiteAddress = "outposts:GetSiteAddress";
 	/** [List] outposts:ListAssetInstances */
-	static readonly LIST_ASSET_INSTANCES = "outposts:ListAssetInstances";
+	static readonly ListAssetInstances = "outposts:ListAssetInstances";
 	/** [List] outposts:ListAssets */
-	static readonly LIST_ASSETS = "outposts:ListAssets";
+	static readonly ListAssets = "outposts:ListAssets";
 	/** [List] outposts:ListBlockingInstancesForCapacityTask */
-	static readonly LIST_BLOCKING_INSTANCES_FOR_CAPACITY_TASK =
+	static readonly ListBlockingInstancesForCapacityTask =
 		"outposts:ListBlockingInstancesForCapacityTask";
 	/** [List] outposts:ListCapacityTasks */
-	static readonly LIST_CAPACITY_TASKS = "outposts:ListCapacityTasks";
+	static readonly ListCapacityTasks = "outposts:ListCapacityTasks";
 	/** [List] outposts:ListCatalogItems */
-	static readonly LIST_CATALOG_ITEMS = "outposts:ListCatalogItems";
+	static readonly ListCatalogItems = "outposts:ListCatalogItems";
 	/** [List] outposts:ListOrderableInstanceTypes */
-	static readonly LIST_ORDERABLE_INSTANCE_TYPES =
+	static readonly ListOrderableInstanceTypes =
 		"outposts:ListOrderableInstanceTypes";
 	/** [List] outposts:ListOrders */
-	static readonly LIST_ORDERS = "outposts:ListOrders";
+	static readonly ListOrders = "outposts:ListOrders";
 	/** [List] outposts:ListOutposts */
-	static readonly LIST_OUTPOSTS = "outposts:ListOutposts";
+	static readonly ListOutposts = "outposts:ListOutposts";
 	/** [List] outposts:ListQuotes */
-	static readonly LIST_QUOTES = "outposts:ListQuotes";
+	static readonly ListQuotes = "outposts:ListQuotes";
 	/** [List] outposts:ListSites */
-	static readonly LIST_SITES = "outposts:ListSites";
+	static readonly ListSites = "outposts:ListSites";
 	/** [Read] outposts:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "outposts:ListTagsForResource";
+	static readonly ListTagsForResource = "outposts:ListTagsForResource";
 	/** [Write] outposts:StartCapacityTask */
-	static readonly START_CAPACITY_TASK = "outposts:StartCapacityTask";
+	static readonly StartCapacityTask = "outposts:StartCapacityTask";
 	/** [Write] outposts:StartConnection */
-	static readonly START_CONNECTION = "outposts:StartConnection";
+	static readonly StartConnection = "outposts:StartConnection";
 	/** [Tagging] outposts:TagResource */
-	static readonly TAG_RESOURCE = "outposts:TagResource";
+	static readonly TagResource = "outposts:TagResource";
 	/** [Tagging] outposts:UntagResource */
-	static readonly UNTAG_RESOURCE = "outposts:UntagResource";
+	static readonly UntagResource = "outposts:UntagResource";
 	/** [Write] outposts:UpdateOutpost */
-	static readonly UPDATE_OUTPOST = "outposts:UpdateOutpost";
+	static readonly UpdateOutpost = "outposts:UpdateOutpost";
 	/** [Write] outposts:UpdateQuote */
-	static readonly UPDATE_QUOTE = "outposts:UpdateQuote";
+	static readonly UpdateQuote = "outposts:UpdateQuote";
 	/** [Write] outposts:UpdateSite */
-	static readonly UPDATE_SITE = "outposts:UpdateSite";
+	static readonly UpdateSite = "outposts:UpdateSite";
 	/** [Write] outposts:UpdateSiteAddress */
-	static readonly UPDATE_SITE_ADDRESS = "outposts:UpdateSiteAddress";
+	static readonly UpdateSiteAddress = "outposts:UpdateSiteAddress";
 	/** [Write] outposts:UpdateSiteRackPhysicalProperties */
-	static readonly UPDATE_SITE_RACK_PHYSICAL_PROPERTIES =
+	static readonly UpdateSiteRackPhysicalProperties =
 		"outposts:UpdateSiteRackPhysicalProperties";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OutpostsActions.GET_CAPACITY_TASK,
-		OutpostsActions.GET_CATALOG_ITEM,
-		OutpostsActions.GET_CONNECTION,
-		OutpostsActions.GET_ORDER,
-		OutpostsActions.GET_OUTPOST,
-		OutpostsActions.GET_OUTPOST_BILLING_INFORMATION,
-		OutpostsActions.GET_OUTPOST_INSTANCE_TYPES,
-		OutpostsActions.GET_OUTPOST_SUPPORTED_INSTANCE_TYPES,
-		OutpostsActions.GET_PRIVATE_CONNECTIVITY_CONFIG,
-		OutpostsActions.GET_QUOTE,
-		OutpostsActions.GET_RENEWAL_PRICING,
-		OutpostsActions.GET_SITE,
-		OutpostsActions.GET_SITE_ADDRESS,
-		OutpostsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		OutpostsActions.actionGetCapacityTask,
+		OutpostsActions.actionGetCatalogItem,
+		OutpostsActions.actionGetConnection,
+		OutpostsActions.actionGetOrder,
+		OutpostsActions.actionGetOutpost,
+		OutpostsActions.actionGetOutpostBillingInformation,
+		OutpostsActions.actionGetOutpostInstanceTypes,
+		OutpostsActions.actionGetOutpostSupportedInstanceTypes,
+		OutpostsActions.actionGetPrivateConnectivityConfig,
+		OutpostsActions.actionGetQuote,
+		OutpostsActions.actionGetRenewalPricing,
+		OutpostsActions.actionGetSite,
+		OutpostsActions.actionGetSiteAddress,
+		OutpostsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OutpostsActions.CANCEL_CAPACITY_TASK,
-		OutpostsActions.CANCEL_ORDER,
-		OutpostsActions.CREATE_ORDER,
-		OutpostsActions.CREATE_OUTPOST,
-		OutpostsActions.CREATE_PRIVATE_CONNECTIVITY_CONFIG,
-		OutpostsActions.CREATE_QUOTE,
-		OutpostsActions.CREATE_RENEWAL,
-		OutpostsActions.CREATE_SITE,
-		OutpostsActions.DELETE_OUTPOST,
-		OutpostsActions.DELETE_QUOTE,
-		OutpostsActions.DELETE_SITE,
-		OutpostsActions.START_CAPACITY_TASK,
-		OutpostsActions.START_CONNECTION,
-		OutpostsActions.UPDATE_OUTPOST,
-		OutpostsActions.UPDATE_QUOTE,
-		OutpostsActions.UPDATE_SITE,
-		OutpostsActions.UPDATE_SITE_ADDRESS,
-		OutpostsActions.UPDATE_SITE_RACK_PHYSICAL_PROPERTIES,
+	static readonly AllWriteActions: string[] = [
+		OutpostsActions.CancelCapacityTask,
+		OutpostsActions.CancelOrder,
+		OutpostsActions.CreateOrder,
+		OutpostsActions.CreateOutpost,
+		OutpostsActions.CreatePrivateConnectivityConfig,
+		OutpostsActions.CreateQuote,
+		OutpostsActions.CreateRenewal,
+		OutpostsActions.CreateSite,
+		OutpostsActions.DeleteOutpost,
+		OutpostsActions.DeleteQuote,
+		OutpostsActions.DeleteSite,
+		OutpostsActions.StartCapacityTask,
+		OutpostsActions.StartConnection,
+		OutpostsActions.UpdateOutpost,
+		OutpostsActions.UpdateQuote,
+		OutpostsActions.UpdateSite,
+		OutpostsActions.UpdateSiteAddress,
+		OutpostsActions.UpdateSiteRackPhysicalProperties,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OutpostsActions.LIST_ASSET_INSTANCES,
-		OutpostsActions.LIST_ASSETS,
-		OutpostsActions.LIST_BLOCKING_INSTANCES_FOR_CAPACITY_TASK,
-		OutpostsActions.LIST_CAPACITY_TASKS,
-		OutpostsActions.LIST_CATALOG_ITEMS,
-		OutpostsActions.LIST_ORDERABLE_INSTANCE_TYPES,
-		OutpostsActions.LIST_ORDERS,
-		OutpostsActions.LIST_OUTPOSTS,
-		OutpostsActions.LIST_QUOTES,
-		OutpostsActions.LIST_SITES,
+	static readonly AllListActions: string[] = [
+		OutpostsActions.ListAssetInstances,
+		OutpostsActions.ListAssets,
+		OutpostsActions.ListBlockingInstancesForCapacityTask,
+		OutpostsActions.ListCapacityTasks,
+		OutpostsActions.ListCatalogItems,
+		OutpostsActions.ListOrderableInstanceTypes,
+		OutpostsActions.ListOrders,
+		OutpostsActions.ListOutposts,
+		OutpostsActions.ListQuotes,
+		OutpostsActions.ListSites,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OutpostsActions.TAG_RESOURCE,
-		OutpostsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OutpostsActions.TagResource,
+		OutpostsActions.UntagResource,
 	];
 }
 
-const OutpostArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):outposts:(?<region>[^:]*):(?<account>[^:]*):outpost/(?<outpostId>[^:/?]+)$",
-);
-const SiteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):outposts:(?<region>[^:]*):(?<account>[^:]*):site/(?<siteId>[^:/?]+)$",
-);
+/**
+ * Properties for building a outpost ARN.
+ */
+export interface OutpostsOutpostArnProps {
+	/** The OutpostId component of the ARN. */
+	readonly outpostId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a outpost ARN.
+ */
+export interface OutpostsOutpostArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostId component. */
+	readonly outpostId: string;
+}
+
+/**
+ * Properties for building a site ARN.
+ */
+export interface OutpostsSiteArnProps {
+	/** The SiteId component of the ARN. */
+	readonly siteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a site ARN.
+ */
+export interface OutpostsSiteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SiteId component. */
+	readonly siteId: string;
+}
+
+const OutpostArnRegex =
+	/^arn:(?<partition>[^:]+):outposts:(?<region>[^:]*):(?<account>[^:]*):outpost\/(?<outpostId>[^:/?]+)$/;
+const SiteArnRegex =
+	/^arn:(?<partition>[^:]+):outposts:(?<region>[^:]*):(?<account>[^:]*):site\/(?<siteId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for outposts resources.
@@ -183,16 +237,7 @@ export class OutpostsResources {
 	/**
 	 * Builds an ARN for the outpost resource.
 	 */
-	static outpost(props: {
-		/** The OutpostId component of the ARN. */
-		readonly outpostId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static outpost(props: OutpostsOutpostArnProps): string {
 		return `arn:${props.partition ?? "aws"}:outposts:${props.region ?? "*"}:${props.account ?? "*"}:outpost/${props.outpostId}`;
 	}
 
@@ -207,12 +252,7 @@ export class OutpostsResources {
 	 * Parses a outpost ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOutpostArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostId: string;
-	} {
+	static parseOutpostArn(arn: string): OutpostsOutpostArnComponents {
 		const match = OutpostArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid outpost ARN: ${arn}`);
@@ -228,16 +268,7 @@ export class OutpostsResources {
 	/**
 	 * Builds an ARN for the site resource.
 	 */
-	static site(props: {
-		/** The SiteId component of the ARN. */
-		readonly siteId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static site(props: OutpostsSiteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:outposts:${props.region ?? "*"}:${props.account ?? "*"}:site/${props.siteId}`;
 	}
 
@@ -252,12 +283,7 @@ export class OutpostsResources {
 	 * Parses a site ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSiteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		siteId: string;
-	} {
+	static parseSiteArn(arn: string): OutpostsSiteArnComponents {
 		const match = SiteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid site ARN: ${arn}`);
@@ -276,121 +302,115 @@ export class OutpostsResources {
  */
 export class OutpostsOperations {
 	/** IAM actions required for the CancelCapacityTask API call. */
-	static readonly CANCEL_CAPACITY_TASK: string[] = [
+	static readonly CancelCapacityTask: string[] = [
 		"outposts:CancelCapacityTask",
 	];
 	/** IAM actions required for the CancelOrder API call. */
-	static readonly CANCEL_ORDER: string[] = ["outposts:CancelOrder"];
+	static readonly CancelOrder: string[] = ["outposts:CancelOrder"];
 	/** IAM actions required for the CreateOrder API call. */
-	static readonly CREATE_ORDER: string[] = ["outposts:CreateOrder"];
+	static readonly CreateOrder: string[] = ["outposts:CreateOrder"];
 	/** IAM actions required for the CreateOutpost API call. */
-	static readonly CREATE_OUTPOST: string[] = [
+	static readonly CreateOutpost: string[] = [
 		"outposts:CreateOutpost",
 		"outposts:TagResource",
 	];
 	/** IAM actions required for the CreateQuote API call. */
-	static readonly CREATE_QUOTE: string[] = ["outposts:CreateQuote"];
+	static readonly CreateQuote: string[] = ["outposts:CreateQuote"];
 	/** IAM actions required for the CreateRenewal API call. */
-	static readonly CREATE_RENEWAL: string[] = ["outposts:CreateRenewal"];
+	static readonly CreateRenewal: string[] = ["outposts:CreateRenewal"];
 	/** IAM actions required for the CreateSite API call. */
-	static readonly CREATE_SITE: string[] = [
+	static readonly CreateSite: string[] = [
 		"outposts:CreateSite",
 		"outposts:TagResource",
 	];
 	/** IAM actions required for the DeleteOutpost API call. */
-	static readonly DELETE_OUTPOST: string[] = ["outposts:DeleteOutpost"];
+	static readonly DeleteOutpost: string[] = ["outposts:DeleteOutpost"];
 	/** IAM actions required for the DeleteQuote API call. */
-	static readonly DELETE_QUOTE: string[] = ["outposts:DeleteQuote"];
+	static readonly DeleteQuote: string[] = ["outposts:DeleteQuote"];
 	/** IAM actions required for the DeleteSite API call. */
-	static readonly DELETE_SITE: string[] = ["outposts:DeleteSite"];
+	static readonly DeleteSite: string[] = ["outposts:DeleteSite"];
 	/** IAM actions required for the GetCapacityTask API call. */
-	static readonly GET_CAPACITY_TASK: string[] = ["outposts:GetCapacityTask"];
+	static readonly opGetCapacityTask: string[] = ["outposts:GetCapacityTask"];
 	/** IAM actions required for the GetCatalogItem API call. */
-	static readonly GET_CATALOG_ITEM: string[] = ["outposts:GetCatalogItem"];
+	static readonly opGetCatalogItem: string[] = ["outposts:GetCatalogItem"];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = ["outposts:GetConnection"];
+	static readonly opGetConnection: string[] = ["outposts:GetConnection"];
 	/** IAM actions required for the GetOrder API call. */
-	static readonly GET_ORDER: string[] = ["outposts:GetOrder"];
+	static readonly opGetOrder: string[] = ["outposts:GetOrder"];
 	/** IAM actions required for the GetOutpost API call. */
-	static readonly GET_OUTPOST: string[] = ["outposts:GetOutpost"];
+	static readonly opGetOutpost: string[] = ["outposts:GetOutpost"];
 	/** IAM actions required for the GetOutpostBillingInformation API call. */
-	static readonly GET_OUTPOST_BILLING_INFORMATION: string[] = [
+	static readonly opGetOutpostBillingInformation: string[] = [
 		"outposts:GetOutpostBillingInformation",
 	];
 	/** IAM actions required for the GetOutpostInstanceTypes API call. */
-	static readonly GET_OUTPOST_INSTANCE_TYPES: string[] = [
+	static readonly opGetOutpostInstanceTypes: string[] = [
 		"outposts:GetOutpostInstanceTypes",
 	];
 	/** IAM actions required for the GetOutpostSupportedInstanceTypes API call. */
-	static readonly GET_OUTPOST_SUPPORTED_INSTANCE_TYPES: string[] = [
+	static readonly opGetOutpostSupportedInstanceTypes: string[] = [
 		"outposts:GetOutpostSupportedInstanceTypes",
 	];
 	/** IAM actions required for the GetQuote API call. */
-	static readonly GET_QUOTE: string[] = ["outposts:GetQuote"];
+	static readonly opGetQuote: string[] = ["outposts:GetQuote"];
 	/** IAM actions required for the GetRenewalPricing API call. */
-	static readonly GET_RENEWAL_PRICING: string[] = [
+	static readonly opGetRenewalPricing: string[] = [
 		"outposts:GetRenewalPricing",
 	];
 	/** IAM actions required for the GetSite API call. */
-	static readonly GET_SITE: string[] = ["outposts:GetSite"];
+	static readonly opGetSite: string[] = ["outposts:GetSite"];
 	/** IAM actions required for the GetSiteAddress API call. */
-	static readonly GET_SITE_ADDRESS: string[] = ["outposts:GetSiteAddress"];
+	static readonly opGetSiteAddress: string[] = ["outposts:GetSiteAddress"];
 	/** IAM actions required for the ListAssetInstances API call. */
-	static readonly LIST_ASSET_INSTANCES: string[] = [
+	static readonly ListAssetInstances: string[] = [
 		"outposts:ListAssetInstances",
 	];
 	/** IAM actions required for the ListAssets API call. */
-	static readonly LIST_ASSETS: string[] = ["outposts:ListAssets"];
+	static readonly ListAssets: string[] = ["outposts:ListAssets"];
 	/** IAM actions required for the ListBlockingInstancesForCapacityTask API call. */
-	static readonly LIST_BLOCKING_INSTANCES_FOR_CAPACITY_TASK: string[] = [
+	static readonly ListBlockingInstancesForCapacityTask: string[] = [
 		"outposts:ListBlockingInstancesForCapacityTask",
 	];
 	/** IAM actions required for the ListCapacityTasks API call. */
-	static readonly LIST_CAPACITY_TASKS: string[] = [
-		"outposts:ListCapacityTasks",
-	];
+	static readonly ListCapacityTasks: string[] = ["outposts:ListCapacityTasks"];
 	/** IAM actions required for the ListCatalogItems API call. */
-	static readonly LIST_CATALOG_ITEMS: string[] = ["outposts:ListCatalogItems"];
+	static readonly ListCatalogItems: string[] = ["outposts:ListCatalogItems"];
 	/** IAM actions required for the ListOrderableInstanceTypes API call. */
-	static readonly LIST_ORDERABLE_INSTANCE_TYPES: string[] = [
+	static readonly ListOrderableInstanceTypes: string[] = [
 		"outposts:ListOrderableInstanceTypes",
 	];
 	/** IAM actions required for the ListOrders API call. */
-	static readonly LIST_ORDERS: string[] = ["outposts:ListOrders"];
+	static readonly ListOrders: string[] = ["outposts:ListOrders"];
 	/** IAM actions required for the ListOutposts API call. */
-	static readonly LIST_OUTPOSTS: string[] = ["outposts:ListOutposts"];
+	static readonly ListOutposts: string[] = ["outposts:ListOutposts"];
 	/** IAM actions required for the ListQuotes API call. */
-	static readonly LIST_QUOTES: string[] = ["outposts:ListQuotes"];
+	static readonly ListQuotes: string[] = ["outposts:ListQuotes"];
 	/** IAM actions required for the ListSites API call. */
-	static readonly LIST_SITES: string[] = ["outposts:ListSites"];
+	static readonly ListSites: string[] = ["outposts:ListSites"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"outposts:ListTagsForResource",
 	];
 	/** IAM actions required for the StartCapacityTask API call. */
-	static readonly START_CAPACITY_TASK: string[] = [
-		"outposts:StartCapacityTask",
-	];
+	static readonly StartCapacityTask: string[] = ["outposts:StartCapacityTask"];
 	/** IAM actions required for the StartConnection API call. */
-	static readonly START_CONNECTION: string[] = ["outposts:StartConnection"];
+	static readonly StartConnection: string[] = ["outposts:StartConnection"];
 	/** IAM actions required for the StartOutpostDecommission API call. */
-	static readonly START_OUTPOST_DECOMMISSION: string[] = [];
+	static readonly StartOutpostDecommission: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["outposts:TagResource"];
+	static readonly TagResource: string[] = ["outposts:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["outposts:UntagResource"];
+	static readonly UntagResource: string[] = ["outposts:UntagResource"];
 	/** IAM actions required for the UpdateOutpost API call. */
-	static readonly UPDATE_OUTPOST: string[] = ["outposts:UpdateOutpost"];
+	static readonly UpdateOutpost: string[] = ["outposts:UpdateOutpost"];
 	/** IAM actions required for the UpdateQuote API call. */
-	static readonly UPDATE_QUOTE: string[] = ["outposts:UpdateQuote"];
+	static readonly UpdateQuote: string[] = ["outposts:UpdateQuote"];
 	/** IAM actions required for the UpdateSite API call. */
-	static readonly UPDATE_SITE: string[] = ["outposts:UpdateSite"];
+	static readonly UpdateSite: string[] = ["outposts:UpdateSite"];
 	/** IAM actions required for the UpdateSiteAddress API call. */
-	static readonly UPDATE_SITE_ADDRESS: string[] = [
-		"outposts:UpdateSiteAddress",
-	];
+	static readonly UpdateSiteAddress: string[] = ["outposts:UpdateSiteAddress"];
 	/** IAM actions required for the UpdateSiteRackPhysicalProperties API call. */
-	static readonly UPDATE_SITE_RACK_PHYSICAL_PROPERTIES: string[] = [
+	static readonly UpdateSiteRackPhysicalProperties: string[] = [
 		"outposts:UpdateSiteRackPhysicalProperties",
 	];
 }
@@ -400,31 +420,31 @@ export class OutpostsOperations {
  */
 export class OutpostsConditions {
 	/** Condition keys applicable to the CreateOutpost action. */
-	static readonly CREATE_OUTPOST_CONDITION_KEYS: string[] = [
+	static readonly CreateOutpostConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSite action. */
-	static readonly CREATE_SITE_CONDITION_KEYS: string[] = [
+	static readonly CreateSiteConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

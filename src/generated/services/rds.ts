@@ -13,658 +13,1304 @@ export class RDSActions {
 	static readonly SERVICE_PREFIX = "rds";
 
 	/** [Write] rds:AddRoleToDBCluster */
-	static readonly ADD_ROLE_TO_DB_CLUSTER = "rds:AddRoleToDBCluster";
+	static readonly AddRoleToDBCluster = "rds:AddRoleToDBCluster";
 	/** [Write] rds:AddRoleToDBInstance */
-	static readonly ADD_ROLE_TO_DB_INSTANCE = "rds:AddRoleToDBInstance";
+	static readonly AddRoleToDBInstance = "rds:AddRoleToDBInstance";
 	/** [Write] rds:AddSourceIdentifierToSubscription */
-	static readonly ADD_SOURCE_IDENTIFIER_TO_SUBSCRIPTION =
+	static readonly AddSourceIdentifierToSubscription =
 		"rds:AddSourceIdentifierToSubscription";
 	/** [Tagging] rds:AddTagsToResource */
-	static readonly ADD_TAGS_TO_RESOURCE = "rds:AddTagsToResource";
+	static readonly AddTagsToResource = "rds:AddTagsToResource";
 	/** [Write] rds:ApplyPendingMaintenanceAction */
-	static readonly APPLY_PENDING_MAINTENANCE_ACTION =
+	static readonly ApplyPendingMaintenanceAction =
 		"rds:ApplyPendingMaintenanceAction";
 	/** [PermissionManagement] rds:AuthorizeDBSecurityGroupIngress */
-	static readonly AUTHORIZE_DB_SECURITY_GROUP_INGRESS =
+	static readonly AuthorizeDBSecurityGroupIngress =
 		"rds:AuthorizeDBSecurityGroupIngress";
 	/** [Write] rds:BacktrackDBCluster */
-	static readonly BACKTRACK_DB_CLUSTER = "rds:BacktrackDBCluster";
+	static readonly BacktrackDBCluster = "rds:BacktrackDBCluster";
 	/** [Write] rds:CancelExportTask */
-	static readonly CANCEL_EXPORT_TASK = "rds:CancelExportTask";
+	static readonly CancelExportTask = "rds:CancelExportTask";
 	/** [Write] rds:CopyCustomDBEngineVersion */
-	static readonly COPY_CUSTOM_DB_ENGINE_VERSION =
-		"rds:CopyCustomDBEngineVersion";
+	static readonly CopyCustomDBEngineVersion = "rds:CopyCustomDBEngineVersion";
 	/** [Write] rds:CopyDBClusterParameterGroup */
-	static readonly COPY_DB_CLUSTER_PARAMETER_GROUP =
+	static readonly CopyDBClusterParameterGroup =
 		"rds:CopyDBClusterParameterGroup";
 	/** [Write] rds:CopyDBClusterSnapshot */
-	static readonly COPY_DB_CLUSTER_SNAPSHOT = "rds:CopyDBClusterSnapshot";
+	static readonly CopyDBClusterSnapshot = "rds:CopyDBClusterSnapshot";
 	/** [Write] rds:CopyDBParameterGroup */
-	static readonly COPY_DB_PARAMETER_GROUP = "rds:CopyDBParameterGroup";
+	static readonly CopyDBParameterGroup = "rds:CopyDBParameterGroup";
 	/** [Write] rds:CopyDBSnapshot */
-	static readonly COPY_DB_SNAPSHOT = "rds:CopyDBSnapshot";
+	static readonly CopyDBSnapshot = "rds:CopyDBSnapshot";
 	/** [Write] rds:CopyOptionGroup */
-	static readonly COPY_OPTION_GROUP = "rds:CopyOptionGroup";
+	static readonly CopyOptionGroup = "rds:CopyOptionGroup";
 	/** [Write] rds:CreateBlueGreenDeployment */
-	static readonly CREATE_BLUE_GREEN_DEPLOYMENT =
-		"rds:CreateBlueGreenDeployment";
+	static readonly CreateBlueGreenDeployment = "rds:CreateBlueGreenDeployment";
 	/** [Write] rds:CreateCustomDBEngineVersion */
-	static readonly CREATE_CUSTOM_DB_ENGINE_VERSION =
+	static readonly CreateCustomDBEngineVersion =
 		"rds:CreateCustomDBEngineVersion";
 	/** [Write] rds:CreateDBCluster */
-	static readonly CREATE_DB_CLUSTER = "rds:CreateDBCluster";
+	static readonly CreateDBCluster = "rds:CreateDBCluster";
 	/** [Write] rds:CreateDBClusterEndpoint */
-	static readonly CREATE_DB_CLUSTER_ENDPOINT = "rds:CreateDBClusterEndpoint";
+	static readonly CreateDBClusterEndpoint = "rds:CreateDBClusterEndpoint";
 	/** [Write] rds:CreateDBClusterParameterGroup */
-	static readonly CREATE_DB_CLUSTER_PARAMETER_GROUP =
+	static readonly CreateDBClusterParameterGroup =
 		"rds:CreateDBClusterParameterGroup";
 	/** [Write] rds:CreateDBClusterSnapshot */
-	static readonly CREATE_DB_CLUSTER_SNAPSHOT = "rds:CreateDBClusterSnapshot";
+	static readonly CreateDBClusterSnapshot = "rds:CreateDBClusterSnapshot";
 	/** [Write] rds:CreateDBInstance */
-	static readonly CREATE_DB_INSTANCE = "rds:CreateDBInstance";
+	static readonly CreateDBInstance = "rds:CreateDBInstance";
 	/** [Write] rds:CreateDBInstanceReadReplica */
-	static readonly CREATE_DB_INSTANCE_READ_REPLICA =
+	static readonly CreateDBInstanceReadReplica =
 		"rds:CreateDBInstanceReadReplica";
 	/** [Write] rds:CreateDBParameterGroup */
-	static readonly CREATE_DB_PARAMETER_GROUP = "rds:CreateDBParameterGroup";
+	static readonly CreateDBParameterGroup = "rds:CreateDBParameterGroup";
 	/** [Write] rds:CreateDBProxy */
-	static readonly CREATE_DB_PROXY = "rds:CreateDBProxy";
+	static readonly CreateDBProxy = "rds:CreateDBProxy";
 	/** [Write] rds:CreateDBProxyEndpoint */
-	static readonly CREATE_DB_PROXY_ENDPOINT = "rds:CreateDBProxyEndpoint";
+	static readonly CreateDBProxyEndpoint = "rds:CreateDBProxyEndpoint";
 	/** [Write] rds:CreateDBSecurityGroup */
-	static readonly CREATE_DB_SECURITY_GROUP = "rds:CreateDBSecurityGroup";
+	static readonly CreateDBSecurityGroup = "rds:CreateDBSecurityGroup";
 	/** [Write] rds:CreateDBShardGroup */
-	static readonly CREATE_DB_SHARD_GROUP = "rds:CreateDBShardGroup";
+	static readonly CreateDBShardGroup = "rds:CreateDBShardGroup";
 	/** [Write] rds:CreateDBSnapshot */
-	static readonly CREATE_DB_SNAPSHOT = "rds:CreateDBSnapshot";
+	static readonly CreateDBSnapshot = "rds:CreateDBSnapshot";
 	/** [Write] rds:CreateDBSubnetGroup */
-	static readonly CREATE_DB_SUBNET_GROUP = "rds:CreateDBSubnetGroup";
+	static readonly CreateDBSubnetGroup = "rds:CreateDBSubnetGroup";
 	/** [Write] rds:CreateEventSubscription */
-	static readonly CREATE_EVENT_SUBSCRIPTION = "rds:CreateEventSubscription";
+	static readonly CreateEventSubscription = "rds:CreateEventSubscription";
 	/** [Write] rds:CreateGlobalCluster */
-	static readonly CREATE_GLOBAL_CLUSTER = "rds:CreateGlobalCluster";
+	static readonly CreateGlobalCluster = "rds:CreateGlobalCluster";
 	/** [Write] rds:CreateIntegration */
-	static readonly CREATE_INTEGRATION = "rds:CreateIntegration";
+	static readonly CreateIntegration = "rds:CreateIntegration";
 	/** [Write] rds:CreateOptionGroup */
-	static readonly CREATE_OPTION_GROUP = "rds:CreateOptionGroup";
+	static readonly CreateOptionGroup = "rds:CreateOptionGroup";
 	/** [Write] rds:CreateTenantDatabase */
-	static readonly CREATE_TENANT_DATABASE = "rds:CreateTenantDatabase";
+	static readonly CreateTenantDatabase = "rds:CreateTenantDatabase";
 	/** [Write] rds:CrossRegionCommunication */
-	static readonly CROSS_REGION_COMMUNICATION = "rds:CrossRegionCommunication";
+	static readonly CrossRegionCommunication = "rds:CrossRegionCommunication";
 	/** [Write] rds:DeleteBlueGreenDeployment */
-	static readonly DELETE_BLUE_GREEN_DEPLOYMENT =
-		"rds:DeleteBlueGreenDeployment";
+	static readonly DeleteBlueGreenDeployment = "rds:DeleteBlueGreenDeployment";
 	/** [Write] rds:DeleteCustomDBEngineVersion */
-	static readonly DELETE_CUSTOM_DB_ENGINE_VERSION =
+	static readonly DeleteCustomDBEngineVersion =
 		"rds:DeleteCustomDBEngineVersion";
 	/** [Write] rds:DeleteDBCluster */
-	static readonly DELETE_DB_CLUSTER = "rds:DeleteDBCluster";
+	static readonly DeleteDBCluster = "rds:DeleteDBCluster";
 	/** [Write] rds:DeleteDBClusterAutomatedBackup */
-	static readonly DELETE_DB_CLUSTER_AUTOMATED_BACKUP =
+	static readonly DeleteDBClusterAutomatedBackup =
 		"rds:DeleteDBClusterAutomatedBackup";
 	/** [Write] rds:DeleteDBClusterEndpoint */
-	static readonly DELETE_DB_CLUSTER_ENDPOINT = "rds:DeleteDBClusterEndpoint";
+	static readonly DeleteDBClusterEndpoint = "rds:DeleteDBClusterEndpoint";
 	/** [Write] rds:DeleteDBClusterParameterGroup */
-	static readonly DELETE_DB_CLUSTER_PARAMETER_GROUP =
+	static readonly DeleteDBClusterParameterGroup =
 		"rds:DeleteDBClusterParameterGroup";
 	/** [Write] rds:DeleteDBClusterSnapshot */
-	static readonly DELETE_DB_CLUSTER_SNAPSHOT = "rds:DeleteDBClusterSnapshot";
+	static readonly DeleteDBClusterSnapshot = "rds:DeleteDBClusterSnapshot";
 	/** [Write] rds:DeleteDBInstance */
-	static readonly DELETE_DB_INSTANCE = "rds:DeleteDBInstance";
+	static readonly DeleteDBInstance = "rds:DeleteDBInstance";
 	/** [Write] rds:DeleteDBInstanceAutomatedBackup */
-	static readonly DELETE_DB_INSTANCE_AUTOMATED_BACKUP =
+	static readonly DeleteDBInstanceAutomatedBackup =
 		"rds:DeleteDBInstanceAutomatedBackup";
 	/** [Write] rds:DeleteDBParameterGroup */
-	static readonly DELETE_DB_PARAMETER_GROUP = "rds:DeleteDBParameterGroup";
+	static readonly DeleteDBParameterGroup = "rds:DeleteDBParameterGroup";
 	/** [Write] rds:DeleteDBProxy */
-	static readonly DELETE_DB_PROXY = "rds:DeleteDBProxy";
+	static readonly DeleteDBProxy = "rds:DeleteDBProxy";
 	/** [Write] rds:DeleteDBProxyEndpoint */
-	static readonly DELETE_DB_PROXY_ENDPOINT = "rds:DeleteDBProxyEndpoint";
+	static readonly DeleteDBProxyEndpoint = "rds:DeleteDBProxyEndpoint";
 	/** [Write] rds:DeleteDBSecurityGroup */
-	static readonly DELETE_DB_SECURITY_GROUP = "rds:DeleteDBSecurityGroup";
+	static readonly DeleteDBSecurityGroup = "rds:DeleteDBSecurityGroup";
 	/** [Write] rds:DeleteDBShardGroup */
-	static readonly DELETE_DB_SHARD_GROUP = "rds:DeleteDBShardGroup";
+	static readonly DeleteDBShardGroup = "rds:DeleteDBShardGroup";
 	/** [Write] rds:DeleteDBSnapshot */
-	static readonly DELETE_DB_SNAPSHOT = "rds:DeleteDBSnapshot";
+	static readonly DeleteDBSnapshot = "rds:DeleteDBSnapshot";
 	/** [Write] rds:DeleteDBSubnetGroup */
-	static readonly DELETE_DB_SUBNET_GROUP = "rds:DeleteDBSubnetGroup";
+	static readonly DeleteDBSubnetGroup = "rds:DeleteDBSubnetGroup";
 	/** [Write] rds:DeleteEventSubscription */
-	static readonly DELETE_EVENT_SUBSCRIPTION = "rds:DeleteEventSubscription";
+	static readonly DeleteEventSubscription = "rds:DeleteEventSubscription";
 	/** [Write] rds:DeleteGlobalCluster */
-	static readonly DELETE_GLOBAL_CLUSTER = "rds:DeleteGlobalCluster";
+	static readonly DeleteGlobalCluster = "rds:DeleteGlobalCluster";
 	/** [Write] rds:DeleteIntegration */
-	static readonly DELETE_INTEGRATION = "rds:DeleteIntegration";
+	static readonly DeleteIntegration = "rds:DeleteIntegration";
 	/** [Write] rds:DeleteOptionGroup */
-	static readonly DELETE_OPTION_GROUP = "rds:DeleteOptionGroup";
+	static readonly DeleteOptionGroup = "rds:DeleteOptionGroup";
 	/** [Write] rds:DeleteTenantDatabase */
-	static readonly DELETE_TENANT_DATABASE = "rds:DeleteTenantDatabase";
+	static readonly DeleteTenantDatabase = "rds:DeleteTenantDatabase";
 	/** [Write] rds:DeregisterDBProxyTargets */
-	static readonly DEREGISTER_DB_PROXY_TARGETS = "rds:DeregisterDBProxyTargets";
+	static readonly DeregisterDBProxyTargets = "rds:DeregisterDBProxyTargets";
 	/** [List] rds:DescribeAccountAttributes */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES = "rds:DescribeAccountAttributes";
+	static readonly DescribeAccountAttributes = "rds:DescribeAccountAttributes";
 	/** [List] rds:DescribeBlueGreenDeployments */
-	static readonly DESCRIBE_BLUE_GREEN_DEPLOYMENTS =
+	static readonly DescribeBlueGreenDeployments =
 		"rds:DescribeBlueGreenDeployments";
 	/** [List] rds:DescribeCertificates */
-	static readonly DESCRIBE_CERTIFICATES = "rds:DescribeCertificates";
+	static readonly DescribeCertificates = "rds:DescribeCertificates";
 	/** [List] rds:DescribeDBClusterAutomatedBackups */
-	static readonly DESCRIBE_DB_CLUSTER_AUTOMATED_BACKUPS =
+	static readonly DescribeDBClusterAutomatedBackups =
 		"rds:DescribeDBClusterAutomatedBackups";
 	/** [List] rds:DescribeDBClusterBacktracks */
-	static readonly DESCRIBE_DB_CLUSTER_BACKTRACKS =
+	static readonly DescribeDBClusterBacktracks =
 		"rds:DescribeDBClusterBacktracks";
 	/** [List] rds:DescribeDBClusterEndpoints */
-	static readonly DESCRIBE_DB_CLUSTER_ENDPOINTS =
-		"rds:DescribeDBClusterEndpoints";
+	static readonly DescribeDBClusterEndpoints = "rds:DescribeDBClusterEndpoints";
 	/** [List] rds:DescribeDBClusterParameterGroups */
-	static readonly DESCRIBE_DB_CLUSTER_PARAMETER_GROUPS =
+	static readonly DescribeDBClusterParameterGroups =
 		"rds:DescribeDBClusterParameterGroups";
 	/** [List] rds:DescribeDBClusterParameters */
-	static readonly DESCRIBE_DB_CLUSTER_PARAMETERS =
+	static readonly DescribeDBClusterParameters =
 		"rds:DescribeDBClusterParameters";
 	/** [List] rds:DescribeDBClusterSnapshotAttributes */
-	static readonly DESCRIBE_DB_CLUSTER_SNAPSHOT_ATTRIBUTES =
+	static readonly DescribeDBClusterSnapshotAttributes =
 		"rds:DescribeDBClusterSnapshotAttributes";
 	/** [List] rds:DescribeDBClusterSnapshots */
-	static readonly DESCRIBE_DB_CLUSTER_SNAPSHOTS =
-		"rds:DescribeDBClusterSnapshots";
+	static readonly DescribeDBClusterSnapshots = "rds:DescribeDBClusterSnapshots";
 	/** [List] rds:DescribeDBClusters */
-	static readonly DESCRIBE_DB_CLUSTERS = "rds:DescribeDBClusters";
+	static readonly DescribeDBClusters = "rds:DescribeDBClusters";
 	/** [List] rds:DescribeDBEngineVersions */
-	static readonly DESCRIBE_DB_ENGINE_VERSIONS = "rds:DescribeDBEngineVersions";
+	static readonly DescribeDBEngineVersions = "rds:DescribeDBEngineVersions";
 	/** [List] rds:DescribeDBInstanceAutomatedBackups */
-	static readonly DESCRIBE_DB_INSTANCE_AUTOMATED_BACKUPS =
+	static readonly DescribeDBInstanceAutomatedBackups =
 		"rds:DescribeDBInstanceAutomatedBackups";
 	/** [List] rds:DescribeDBInstances */
-	static readonly DESCRIBE_DB_INSTANCES = "rds:DescribeDBInstances";
+	static readonly DescribeDBInstances = "rds:DescribeDBInstances";
 	/** [List] rds:DescribeDBLogFiles */
-	static readonly DESCRIBE_DB_LOG_FILES = "rds:DescribeDBLogFiles";
+	static readonly DescribeDBLogFiles = "rds:DescribeDBLogFiles";
 	/** [List] rds:DescribeDBMajorEngineVersions */
-	static readonly DESCRIBE_DB_MAJOR_ENGINE_VERSIONS =
+	static readonly DescribeDBMajorEngineVersions =
 		"rds:DescribeDBMajorEngineVersions";
 	/** [List] rds:DescribeDBParameterGroups */
-	static readonly DESCRIBE_DB_PARAMETER_GROUPS =
-		"rds:DescribeDBParameterGroups";
+	static readonly DescribeDBParameterGroups = "rds:DescribeDBParameterGroups";
 	/** [List] rds:DescribeDBParameters */
-	static readonly DESCRIBE_DB_PARAMETERS = "rds:DescribeDBParameters";
+	static readonly DescribeDBParameters = "rds:DescribeDBParameters";
 	/** [List] rds:DescribeDBProxies */
-	static readonly DESCRIBE_DB_PROXIES = "rds:DescribeDBProxies";
+	static readonly DescribeDBProxies = "rds:DescribeDBProxies";
 	/** [List] rds:DescribeDBProxyEndpoints */
-	static readonly DESCRIBE_DB_PROXY_ENDPOINTS = "rds:DescribeDBProxyEndpoints";
+	static readonly DescribeDBProxyEndpoints = "rds:DescribeDBProxyEndpoints";
 	/** [List] rds:DescribeDBProxyTargetGroups */
-	static readonly DESCRIBE_DB_PROXY_TARGET_GROUPS =
+	static readonly DescribeDBProxyTargetGroups =
 		"rds:DescribeDBProxyTargetGroups";
 	/** [List] rds:DescribeDBProxyTargets */
-	static readonly DESCRIBE_DB_PROXY_TARGETS = "rds:DescribeDBProxyTargets";
+	static readonly DescribeDBProxyTargets = "rds:DescribeDBProxyTargets";
 	/** [List] rds:DescribeDBRecommendations */
-	static readonly DESCRIBE_DB_RECOMMENDATIONS = "rds:DescribeDBRecommendations";
+	static readonly DescribeDBRecommendations = "rds:DescribeDBRecommendations";
 	/** [List] rds:DescribeDBSecurityGroups */
-	static readonly DESCRIBE_DB_SECURITY_GROUPS = "rds:DescribeDBSecurityGroups";
+	static readonly DescribeDBSecurityGroups = "rds:DescribeDBSecurityGroups";
 	/** [List] rds:DescribeDBShardGroups */
-	static readonly DESCRIBE_DB_SHARD_GROUPS = "rds:DescribeDBShardGroups";
+	static readonly DescribeDBShardGroups = "rds:DescribeDBShardGroups";
 	/** [List] rds:DescribeDBSnapshotAttributes */
-	static readonly DESCRIBE_DB_SNAPSHOT_ATTRIBUTES =
+	static readonly DescribeDBSnapshotAttributes =
 		"rds:DescribeDBSnapshotAttributes";
 	/** [List] rds:DescribeDBSnapshotTenantDatabases */
-	static readonly DESCRIBE_DB_SNAPSHOT_TENANT_DATABASES =
+	static readonly DescribeDBSnapshotTenantDatabases =
 		"rds:DescribeDBSnapshotTenantDatabases";
 	/** [List] rds:DescribeDBSnapshots */
-	static readonly DESCRIBE_DB_SNAPSHOTS = "rds:DescribeDBSnapshots";
+	static readonly DescribeDBSnapshots = "rds:DescribeDBSnapshots";
 	/** [List] rds:DescribeDBSubnetGroups */
-	static readonly DESCRIBE_DB_SUBNET_GROUPS = "rds:DescribeDBSubnetGroups";
+	static readonly DescribeDBSubnetGroups = "rds:DescribeDBSubnetGroups";
 	/** [List] rds:DescribeEngineDefaultClusterParameters */
-	static readonly DESCRIBE_ENGINE_DEFAULT_CLUSTER_PARAMETERS =
+	static readonly DescribeEngineDefaultClusterParameters =
 		"rds:DescribeEngineDefaultClusterParameters";
 	/** [List] rds:DescribeEngineDefaultParameters */
-	static readonly DESCRIBE_ENGINE_DEFAULT_PARAMETERS =
+	static readonly DescribeEngineDefaultParameters =
 		"rds:DescribeEngineDefaultParameters";
 	/** [List] rds:DescribeEventCategories */
-	static readonly DESCRIBE_EVENT_CATEGORIES = "rds:DescribeEventCategories";
+	static readonly DescribeEventCategories = "rds:DescribeEventCategories";
 	/** [List] rds:DescribeEventSubscriptions */
-	static readonly DESCRIBE_EVENT_SUBSCRIPTIONS =
-		"rds:DescribeEventSubscriptions";
+	static readonly DescribeEventSubscriptions = "rds:DescribeEventSubscriptions";
 	/** [List] rds:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "rds:DescribeEvents";
+	static readonly DescribeEvents = "rds:DescribeEvents";
 	/** [List] rds:DescribeExportTasks */
-	static readonly DESCRIBE_EXPORT_TASKS = "rds:DescribeExportTasks";
+	static readonly DescribeExportTasks = "rds:DescribeExportTasks";
 	/** [List] rds:DescribeGlobalClusters */
-	static readonly DESCRIBE_GLOBAL_CLUSTERS = "rds:DescribeGlobalClusters";
+	static readonly DescribeGlobalClusters = "rds:DescribeGlobalClusters";
 	/** [List] rds:DescribeIntegrations */
-	static readonly DESCRIBE_INTEGRATIONS = "rds:DescribeIntegrations";
+	static readonly DescribeIntegrations = "rds:DescribeIntegrations";
 	/** [List] rds:DescribeOptionGroupOptions */
-	static readonly DESCRIBE_OPTION_GROUP_OPTIONS =
-		"rds:DescribeOptionGroupOptions";
+	static readonly DescribeOptionGroupOptions = "rds:DescribeOptionGroupOptions";
 	/** [List] rds:DescribeOptionGroups */
-	static readonly DESCRIBE_OPTION_GROUPS = "rds:DescribeOptionGroups";
+	static readonly DescribeOptionGroups = "rds:DescribeOptionGroups";
 	/** [List] rds:DescribeOrderableDBInstanceOptions */
-	static readonly DESCRIBE_ORDERABLE_DB_INSTANCE_OPTIONS =
+	static readonly DescribeOrderableDBInstanceOptions =
 		"rds:DescribeOrderableDBInstanceOptions";
 	/** [List] rds:DescribePendingMaintenanceActions */
-	static readonly DESCRIBE_PENDING_MAINTENANCE_ACTIONS =
+	static readonly DescribePendingMaintenanceActions =
 		"rds:DescribePendingMaintenanceActions";
 	/** [Read] rds:DescribeRecommendationGroups */
-	static readonly DESCRIBE_RECOMMENDATION_GROUPS =
+	static readonly DescribeRecommendationGroups =
 		"rds:DescribeRecommendationGroups";
 	/** [Read] rds:DescribeRecommendations */
-	static readonly DESCRIBE_RECOMMENDATIONS = "rds:DescribeRecommendations";
+	static readonly DescribeRecommendations = "rds:DescribeRecommendations";
 	/** [List] rds:DescribeReservedDBInstances */
-	static readonly DESCRIBE_RESERVED_DB_INSTANCES =
+	static readonly DescribeReservedDBInstances =
 		"rds:DescribeReservedDBInstances";
 	/** [List] rds:DescribeReservedDBInstancesOfferings */
-	static readonly DESCRIBE_RESERVED_DB_INSTANCES_OFFERINGS =
+	static readonly DescribeReservedDBInstancesOfferings =
 		"rds:DescribeReservedDBInstancesOfferings";
 	/** [List] rds:DescribeSourceRegions */
-	static readonly DESCRIBE_SOURCE_REGIONS = "rds:DescribeSourceRegions";
+	static readonly DescribeSourceRegions = "rds:DescribeSourceRegions";
 	/** [List] rds:DescribeTenantDatabases */
-	static readonly DESCRIBE_TENANT_DATABASES = "rds:DescribeTenantDatabases";
+	static readonly DescribeTenantDatabases = "rds:DescribeTenantDatabases";
 	/** [List] rds:DescribeValidDBInstanceModifications */
-	static readonly DESCRIBE_VALID_DB_INSTANCE_MODIFICATIONS =
+	static readonly DescribeValidDBInstanceModifications =
 		"rds:DescribeValidDBInstanceModifications";
 	/** [Write] rds:DisableHttpEndpoint */
-	static readonly DISABLE_HTTP_ENDPOINT = "rds:DisableHttpEndpoint";
+	static readonly DisableHttpEndpoint = "rds:DisableHttpEndpoint";
 	/** [Read] rds:DownloadCompleteDBLogFile */
-	static readonly DOWNLOAD_COMPLETE_DB_LOG_FILE =
-		"rds:DownloadCompleteDBLogFile";
+	static readonly DownloadCompleteDBLogFile = "rds:DownloadCompleteDBLogFile";
 	/** [Read] rds:DownloadDBLogFilePortion */
-	static readonly DOWNLOAD_DB_LOG_FILE_PORTION = "rds:DownloadDBLogFilePortion";
+	static readonly DownloadDBLogFilePortion = "rds:DownloadDBLogFilePortion";
 	/** [Write] rds:EnableHttpEndpoint */
-	static readonly ENABLE_HTTP_ENDPOINT = "rds:EnableHttpEndpoint";
+	static readonly EnableHttpEndpoint = "rds:EnableHttpEndpoint";
 	/** [Write] rds:FailoverDBCluster */
-	static readonly FAILOVER_DB_CLUSTER = "rds:FailoverDBCluster";
+	static readonly FailoverDBCluster = "rds:FailoverDBCluster";
 	/** [Write] rds:FailoverGlobalCluster */
-	static readonly FAILOVER_GLOBAL_CLUSTER = "rds:FailoverGlobalCluster";
+	static readonly FailoverGlobalCluster = "rds:FailoverGlobalCluster";
 	/** [Read] rds:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "rds:ListTagsForResource";
+	static readonly ListTagsForResource = "rds:ListTagsForResource";
 	/** [Write] rds:ModifyActivityStream */
-	static readonly MODIFY_ACTIVITY_STREAM = "rds:ModifyActivityStream";
+	static readonly ModifyActivityStream = "rds:ModifyActivityStream";
 	/** [Write] rds:ModifyCertificates */
-	static readonly MODIFY_CERTIFICATES = "rds:ModifyCertificates";
+	static readonly ModifyCertificates = "rds:ModifyCertificates";
 	/** [Write] rds:ModifyCurrentDBClusterCapacity */
-	static readonly MODIFY_CURRENT_DB_CLUSTER_CAPACITY =
+	static readonly ModifyCurrentDBClusterCapacity =
 		"rds:ModifyCurrentDBClusterCapacity";
 	/** [Write] rds:ModifyCustomDBEngineVersion */
-	static readonly MODIFY_CUSTOM_DB_ENGINE_VERSION =
+	static readonly ModifyCustomDBEngineVersion =
 		"rds:ModifyCustomDBEngineVersion";
 	/** [Write] rds:ModifyDBCluster */
-	static readonly MODIFY_DB_CLUSTER = "rds:ModifyDBCluster";
+	static readonly ModifyDBCluster = "rds:ModifyDBCluster";
 	/** [Write] rds:ModifyDBClusterEndpoint */
-	static readonly MODIFY_DB_CLUSTER_ENDPOINT = "rds:ModifyDBClusterEndpoint";
+	static readonly ModifyDBClusterEndpoint = "rds:ModifyDBClusterEndpoint";
 	/** [Write] rds:ModifyDBClusterParameterGroup */
-	static readonly MODIFY_DB_CLUSTER_PARAMETER_GROUP =
+	static readonly ModifyDBClusterParameterGroup =
 		"rds:ModifyDBClusterParameterGroup";
 	/** [Write] rds:ModifyDBClusterSnapshotAttribute */
-	static readonly MODIFY_DB_CLUSTER_SNAPSHOT_ATTRIBUTE =
+	static readonly ModifyDBClusterSnapshotAttribute =
 		"rds:ModifyDBClusterSnapshotAttribute";
 	/** [Write] rds:ModifyDBInstance */
-	static readonly MODIFY_DB_INSTANCE = "rds:ModifyDBInstance";
+	static readonly ModifyDBInstance = "rds:ModifyDBInstance";
 	/** [Write] rds:ModifyDBParameterGroup */
-	static readonly MODIFY_DB_PARAMETER_GROUP = "rds:ModifyDBParameterGroup";
+	static readonly ModifyDBParameterGroup = "rds:ModifyDBParameterGroup";
 	/** [Write] rds:ModifyDBProxy */
-	static readonly MODIFY_DB_PROXY = "rds:ModifyDBProxy";
+	static readonly ModifyDBProxy = "rds:ModifyDBProxy";
 	/** [Write] rds:ModifyDBProxyEndpoint */
-	static readonly MODIFY_DB_PROXY_ENDPOINT = "rds:ModifyDBProxyEndpoint";
+	static readonly ModifyDBProxyEndpoint = "rds:ModifyDBProxyEndpoint";
 	/** [Write] rds:ModifyDBProxyTargetGroup */
-	static readonly MODIFY_DB_PROXY_TARGET_GROUP = "rds:ModifyDBProxyTargetGroup";
+	static readonly ModifyDBProxyTargetGroup = "rds:ModifyDBProxyTargetGroup";
 	/** [Write] rds:ModifyDBRecommendation */
-	static readonly MODIFY_DB_RECOMMENDATION = "rds:ModifyDBRecommendation";
+	static readonly ModifyDBRecommendation = "rds:ModifyDBRecommendation";
 	/** [Write] rds:ModifyDBShardGroup */
-	static readonly MODIFY_DB_SHARD_GROUP = "rds:ModifyDBShardGroup";
+	static readonly ModifyDBShardGroup = "rds:ModifyDBShardGroup";
 	/** [Write] rds:ModifyDBSnapshot */
-	static readonly MODIFY_DB_SNAPSHOT = "rds:ModifyDBSnapshot";
+	static readonly ModifyDBSnapshot = "rds:ModifyDBSnapshot";
 	/** [Write] rds:ModifyDBSnapshotAttribute */
-	static readonly MODIFY_DB_SNAPSHOT_ATTRIBUTE =
-		"rds:ModifyDBSnapshotAttribute";
+	static readonly ModifyDBSnapshotAttribute = "rds:ModifyDBSnapshotAttribute";
 	/** [Write] rds:ModifyDBSubnetGroup */
-	static readonly MODIFY_DB_SUBNET_GROUP = "rds:ModifyDBSubnetGroup";
+	static readonly ModifyDBSubnetGroup = "rds:ModifyDBSubnetGroup";
 	/** [Write] rds:ModifyEventSubscription */
-	static readonly MODIFY_EVENT_SUBSCRIPTION = "rds:ModifyEventSubscription";
+	static readonly ModifyEventSubscription = "rds:ModifyEventSubscription";
 	/** [Write] rds:ModifyGlobalCluster */
-	static readonly MODIFY_GLOBAL_CLUSTER = "rds:ModifyGlobalCluster";
+	static readonly ModifyGlobalCluster = "rds:ModifyGlobalCluster";
 	/** [Write] rds:ModifyIntegration */
-	static readonly MODIFY_INTEGRATION = "rds:ModifyIntegration";
+	static readonly ModifyIntegration = "rds:ModifyIntegration";
 	/** [Write] rds:ModifyOptionGroup */
-	static readonly MODIFY_OPTION_GROUP = "rds:ModifyOptionGroup";
+	static readonly ModifyOptionGroup = "rds:ModifyOptionGroup";
 	/** [Write] rds:ModifyRecommendation */
-	static readonly MODIFY_RECOMMENDATION = "rds:ModifyRecommendation";
+	static readonly ModifyRecommendation = "rds:ModifyRecommendation";
 	/** [Write] rds:ModifyTenantDatabase */
-	static readonly MODIFY_TENANT_DATABASE = "rds:ModifyTenantDatabase";
+	static readonly ModifyTenantDatabase = "rds:ModifyTenantDatabase";
 	/** [Write] rds:PromoteReadReplica */
-	static readonly PROMOTE_READ_REPLICA = "rds:PromoteReadReplica";
+	static readonly PromoteReadReplica = "rds:PromoteReadReplica";
 	/** [Write] rds:PromoteReadReplicaDBCluster */
-	static readonly PROMOTE_READ_REPLICA_DB_CLUSTER =
+	static readonly PromoteReadReplicaDBCluster =
 		"rds:PromoteReadReplicaDBCluster";
 	/** [Write] rds:PurchaseReservedDBInstancesOffering */
-	static readonly PURCHASE_RESERVED_DB_INSTANCES_OFFERING =
+	static readonly PurchaseReservedDBInstancesOffering =
 		"rds:PurchaseReservedDBInstancesOffering";
 	/** [Write] rds:RebootDBCluster */
-	static readonly REBOOT_DB_CLUSTER = "rds:RebootDBCluster";
+	static readonly RebootDBCluster = "rds:RebootDBCluster";
 	/** [Write] rds:RebootDBInstance */
-	static readonly REBOOT_DB_INSTANCE = "rds:RebootDBInstance";
+	static readonly RebootDBInstance = "rds:RebootDBInstance";
 	/** [Write] rds:RebootDBShardGroup */
-	static readonly REBOOT_DB_SHARD_GROUP = "rds:RebootDBShardGroup";
+	static readonly RebootDBShardGroup = "rds:RebootDBShardGroup";
 	/** [Write] rds:RegisterDBProxyTargets */
-	static readonly REGISTER_DB_PROXY_TARGETS = "rds:RegisterDBProxyTargets";
+	static readonly RegisterDBProxyTargets = "rds:RegisterDBProxyTargets";
 	/** [Write] rds:RemoveFromGlobalCluster */
-	static readonly REMOVE_FROM_GLOBAL_CLUSTER = "rds:RemoveFromGlobalCluster";
+	static readonly RemoveFromGlobalCluster = "rds:RemoveFromGlobalCluster";
 	/** [Write] rds:RemoveRoleFromDBCluster */
-	static readonly REMOVE_ROLE_FROM_DB_CLUSTER = "rds:RemoveRoleFromDBCluster";
+	static readonly RemoveRoleFromDBCluster = "rds:RemoveRoleFromDBCluster";
 	/** [Write] rds:RemoveRoleFromDBInstance */
-	static readonly REMOVE_ROLE_FROM_DB_INSTANCE = "rds:RemoveRoleFromDBInstance";
+	static readonly RemoveRoleFromDBInstance = "rds:RemoveRoleFromDBInstance";
 	/** [Write] rds:RemoveSourceIdentifierFromSubscription */
-	static readonly REMOVE_SOURCE_IDENTIFIER_FROM_SUBSCRIPTION =
+	static readonly RemoveSourceIdentifierFromSubscription =
 		"rds:RemoveSourceIdentifierFromSubscription";
 	/** [Tagging] rds:RemoveTagsFromResource */
-	static readonly REMOVE_TAGS_FROM_RESOURCE = "rds:RemoveTagsFromResource";
+	static readonly RemoveTagsFromResource = "rds:RemoveTagsFromResource";
 	/** [Write] rds:ResetDBClusterParameterGroup */
-	static readonly RESET_DB_CLUSTER_PARAMETER_GROUP =
+	static readonly ResetDBClusterParameterGroup =
 		"rds:ResetDBClusterParameterGroup";
 	/** [Write] rds:ResetDBParameterGroup */
-	static readonly RESET_DB_PARAMETER_GROUP = "rds:ResetDBParameterGroup";
+	static readonly ResetDBParameterGroup = "rds:ResetDBParameterGroup";
 	/** [Write] rds:RestoreDBClusterFromS3 */
-	static readonly RESTORE_DB_CLUSTER_FROM_S3 = "rds:RestoreDBClusterFromS3";
+	static readonly RestoreDBClusterFromS3 = "rds:RestoreDBClusterFromS3";
 	/** [Write] rds:RestoreDBClusterFromSnapshot */
-	static readonly RESTORE_DB_CLUSTER_FROM_SNAPSHOT =
+	static readonly RestoreDBClusterFromSnapshot =
 		"rds:RestoreDBClusterFromSnapshot";
 	/** [Write] rds:RestoreDBClusterToPointInTime */
-	static readonly RESTORE_DB_CLUSTER_TO_POINT_IN_TIME =
+	static readonly RestoreDBClusterToPointInTime =
 		"rds:RestoreDBClusterToPointInTime";
 	/** [Write] rds:RestoreDBInstanceFromDBSnapshot */
-	static readonly RESTORE_DB_INSTANCE_FROM_DB_SNAPSHOT =
+	static readonly RestoreDBInstanceFromDBSnapshot =
 		"rds:RestoreDBInstanceFromDBSnapshot";
 	/** [Write] rds:RestoreDBInstanceFromS3 */
-	static readonly RESTORE_DB_INSTANCE_FROM_S3 = "rds:RestoreDBInstanceFromS3";
+	static readonly RestoreDBInstanceFromS3 = "rds:RestoreDBInstanceFromS3";
 	/** [Write] rds:RestoreDBInstanceToPointInTime */
-	static readonly RESTORE_DB_INSTANCE_TO_POINT_IN_TIME =
+	static readonly RestoreDBInstanceToPointInTime =
 		"rds:RestoreDBInstanceToPointInTime";
 	/** [Write] rds:RevokeDBSecurityGroupIngress */
-	static readonly REVOKE_DB_SECURITY_GROUP_INGRESS =
+	static readonly RevokeDBSecurityGroupIngress =
 		"rds:RevokeDBSecurityGroupIngress";
 	/** [Write] rds:StartActivityStream */
-	static readonly START_ACTIVITY_STREAM = "rds:StartActivityStream";
+	static readonly StartActivityStream = "rds:StartActivityStream";
 	/** [Write] rds:StartDBCluster */
-	static readonly START_DB_CLUSTER = "rds:StartDBCluster";
+	static readonly StartDBCluster = "rds:StartDBCluster";
 	/** [Write] rds:StartDBInstance */
-	static readonly START_DB_INSTANCE = "rds:StartDBInstance";
+	static readonly StartDBInstance = "rds:StartDBInstance";
 	/** [Write] rds:StartDBInstanceAutomatedBackupsReplication */
-	static readonly START_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION =
+	static readonly StartDBInstanceAutomatedBackupsReplication =
 		"rds:StartDBInstanceAutomatedBackupsReplication";
 	/** [Write] rds:StartExportTask */
-	static readonly START_EXPORT_TASK = "rds:StartExportTask";
+	static readonly StartExportTask = "rds:StartExportTask";
 	/** [Write] rds:StopActivityStream */
-	static readonly STOP_ACTIVITY_STREAM = "rds:StopActivityStream";
+	static readonly StopActivityStream = "rds:StopActivityStream";
 	/** [Write] rds:StopDBCluster */
-	static readonly STOP_DB_CLUSTER = "rds:StopDBCluster";
+	static readonly StopDBCluster = "rds:StopDBCluster";
 	/** [Write] rds:StopDBInstance */
-	static readonly STOP_DB_INSTANCE = "rds:StopDBInstance";
+	static readonly StopDBInstance = "rds:StopDBInstance";
 	/** [Write] rds:StopDBInstanceAutomatedBackupsReplication */
-	static readonly STOP_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION =
+	static readonly StopDBInstanceAutomatedBackupsReplication =
 		"rds:StopDBInstanceAutomatedBackupsReplication";
 	/** [Write] rds:SwitchoverBlueGreenDeployment */
-	static readonly SWITCHOVER_BLUE_GREEN_DEPLOYMENT =
+	static readonly SwitchoverBlueGreenDeployment =
 		"rds:SwitchoverBlueGreenDeployment";
 	/** [Write] rds:SwitchoverGlobalCluster */
-	static readonly SWITCHOVER_GLOBAL_CLUSTER = "rds:SwitchoverGlobalCluster";
+	static readonly SwitchoverGlobalCluster = "rds:SwitchoverGlobalCluster";
 	/** [Write] rds:SwitchoverReadReplica */
-	static readonly SWITCHOVER_READ_REPLICA = "rds:SwitchoverReadReplica";
+	static readonly SwitchoverReadReplica = "rds:SwitchoverReadReplica";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RDSActions.DESCRIBE_RECOMMENDATION_GROUPS,
-		RDSActions.DESCRIBE_RECOMMENDATIONS,
-		RDSActions.DOWNLOAD_COMPLETE_DB_LOG_FILE,
-		RDSActions.DOWNLOAD_DB_LOG_FILE_PORTION,
-		RDSActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		RDSActions.DescribeRecommendationGroups,
+		RDSActions.DescribeRecommendations,
+		RDSActions.DownloadCompleteDBLogFile,
+		RDSActions.DownloadDBLogFilePortion,
+		RDSActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RDSActions.ADD_ROLE_TO_DB_CLUSTER,
-		RDSActions.ADD_ROLE_TO_DB_INSTANCE,
-		RDSActions.ADD_SOURCE_IDENTIFIER_TO_SUBSCRIPTION,
-		RDSActions.APPLY_PENDING_MAINTENANCE_ACTION,
-		RDSActions.BACKTRACK_DB_CLUSTER,
-		RDSActions.CANCEL_EXPORT_TASK,
-		RDSActions.COPY_CUSTOM_DB_ENGINE_VERSION,
-		RDSActions.COPY_DB_CLUSTER_PARAMETER_GROUP,
-		RDSActions.COPY_DB_CLUSTER_SNAPSHOT,
-		RDSActions.COPY_DB_PARAMETER_GROUP,
-		RDSActions.COPY_DB_SNAPSHOT,
-		RDSActions.COPY_OPTION_GROUP,
-		RDSActions.CREATE_BLUE_GREEN_DEPLOYMENT,
-		RDSActions.CREATE_CUSTOM_DB_ENGINE_VERSION,
-		RDSActions.CREATE_DB_CLUSTER,
-		RDSActions.CREATE_DB_CLUSTER_ENDPOINT,
-		RDSActions.CREATE_DB_CLUSTER_PARAMETER_GROUP,
-		RDSActions.CREATE_DB_CLUSTER_SNAPSHOT,
-		RDSActions.CREATE_DB_INSTANCE,
-		RDSActions.CREATE_DB_INSTANCE_READ_REPLICA,
-		RDSActions.CREATE_DB_PARAMETER_GROUP,
-		RDSActions.CREATE_DB_PROXY,
-		RDSActions.CREATE_DB_PROXY_ENDPOINT,
-		RDSActions.CREATE_DB_SECURITY_GROUP,
-		RDSActions.CREATE_DB_SHARD_GROUP,
-		RDSActions.CREATE_DB_SNAPSHOT,
-		RDSActions.CREATE_DB_SUBNET_GROUP,
-		RDSActions.CREATE_EVENT_SUBSCRIPTION,
-		RDSActions.CREATE_GLOBAL_CLUSTER,
-		RDSActions.CREATE_INTEGRATION,
-		RDSActions.CREATE_OPTION_GROUP,
-		RDSActions.CREATE_TENANT_DATABASE,
-		RDSActions.CROSS_REGION_COMMUNICATION,
-		RDSActions.DELETE_BLUE_GREEN_DEPLOYMENT,
-		RDSActions.DELETE_CUSTOM_DB_ENGINE_VERSION,
-		RDSActions.DELETE_DB_CLUSTER,
-		RDSActions.DELETE_DB_CLUSTER_AUTOMATED_BACKUP,
-		RDSActions.DELETE_DB_CLUSTER_ENDPOINT,
-		RDSActions.DELETE_DB_CLUSTER_PARAMETER_GROUP,
-		RDSActions.DELETE_DB_CLUSTER_SNAPSHOT,
-		RDSActions.DELETE_DB_INSTANCE,
-		RDSActions.DELETE_DB_INSTANCE_AUTOMATED_BACKUP,
-		RDSActions.DELETE_DB_PARAMETER_GROUP,
-		RDSActions.DELETE_DB_PROXY,
-		RDSActions.DELETE_DB_PROXY_ENDPOINT,
-		RDSActions.DELETE_DB_SECURITY_GROUP,
-		RDSActions.DELETE_DB_SHARD_GROUP,
-		RDSActions.DELETE_DB_SNAPSHOT,
-		RDSActions.DELETE_DB_SUBNET_GROUP,
-		RDSActions.DELETE_EVENT_SUBSCRIPTION,
-		RDSActions.DELETE_GLOBAL_CLUSTER,
-		RDSActions.DELETE_INTEGRATION,
-		RDSActions.DELETE_OPTION_GROUP,
-		RDSActions.DELETE_TENANT_DATABASE,
-		RDSActions.DEREGISTER_DB_PROXY_TARGETS,
-		RDSActions.DISABLE_HTTP_ENDPOINT,
-		RDSActions.ENABLE_HTTP_ENDPOINT,
-		RDSActions.FAILOVER_DB_CLUSTER,
-		RDSActions.FAILOVER_GLOBAL_CLUSTER,
-		RDSActions.MODIFY_ACTIVITY_STREAM,
-		RDSActions.MODIFY_CERTIFICATES,
-		RDSActions.MODIFY_CURRENT_DB_CLUSTER_CAPACITY,
-		RDSActions.MODIFY_CUSTOM_DB_ENGINE_VERSION,
-		RDSActions.MODIFY_DB_CLUSTER,
-		RDSActions.MODIFY_DB_CLUSTER_ENDPOINT,
-		RDSActions.MODIFY_DB_CLUSTER_PARAMETER_GROUP,
-		RDSActions.MODIFY_DB_CLUSTER_SNAPSHOT_ATTRIBUTE,
-		RDSActions.MODIFY_DB_INSTANCE,
-		RDSActions.MODIFY_DB_PARAMETER_GROUP,
-		RDSActions.MODIFY_DB_PROXY,
-		RDSActions.MODIFY_DB_PROXY_ENDPOINT,
-		RDSActions.MODIFY_DB_PROXY_TARGET_GROUP,
-		RDSActions.MODIFY_DB_RECOMMENDATION,
-		RDSActions.MODIFY_DB_SHARD_GROUP,
-		RDSActions.MODIFY_DB_SNAPSHOT,
-		RDSActions.MODIFY_DB_SNAPSHOT_ATTRIBUTE,
-		RDSActions.MODIFY_DB_SUBNET_GROUP,
-		RDSActions.MODIFY_EVENT_SUBSCRIPTION,
-		RDSActions.MODIFY_GLOBAL_CLUSTER,
-		RDSActions.MODIFY_INTEGRATION,
-		RDSActions.MODIFY_OPTION_GROUP,
-		RDSActions.MODIFY_RECOMMENDATION,
-		RDSActions.MODIFY_TENANT_DATABASE,
-		RDSActions.PROMOTE_READ_REPLICA,
-		RDSActions.PROMOTE_READ_REPLICA_DB_CLUSTER,
-		RDSActions.PURCHASE_RESERVED_DB_INSTANCES_OFFERING,
-		RDSActions.REBOOT_DB_CLUSTER,
-		RDSActions.REBOOT_DB_INSTANCE,
-		RDSActions.REBOOT_DB_SHARD_GROUP,
-		RDSActions.REGISTER_DB_PROXY_TARGETS,
-		RDSActions.REMOVE_FROM_GLOBAL_CLUSTER,
-		RDSActions.REMOVE_ROLE_FROM_DB_CLUSTER,
-		RDSActions.REMOVE_ROLE_FROM_DB_INSTANCE,
-		RDSActions.REMOVE_SOURCE_IDENTIFIER_FROM_SUBSCRIPTION,
-		RDSActions.RESET_DB_CLUSTER_PARAMETER_GROUP,
-		RDSActions.RESET_DB_PARAMETER_GROUP,
-		RDSActions.RESTORE_DB_CLUSTER_FROM_S3,
-		RDSActions.RESTORE_DB_CLUSTER_FROM_SNAPSHOT,
-		RDSActions.RESTORE_DB_CLUSTER_TO_POINT_IN_TIME,
-		RDSActions.RESTORE_DB_INSTANCE_FROM_DB_SNAPSHOT,
-		RDSActions.RESTORE_DB_INSTANCE_FROM_S3,
-		RDSActions.RESTORE_DB_INSTANCE_TO_POINT_IN_TIME,
-		RDSActions.REVOKE_DB_SECURITY_GROUP_INGRESS,
-		RDSActions.START_ACTIVITY_STREAM,
-		RDSActions.START_DB_CLUSTER,
-		RDSActions.START_DB_INSTANCE,
-		RDSActions.START_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION,
-		RDSActions.START_EXPORT_TASK,
-		RDSActions.STOP_ACTIVITY_STREAM,
-		RDSActions.STOP_DB_CLUSTER,
-		RDSActions.STOP_DB_INSTANCE,
-		RDSActions.STOP_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION,
-		RDSActions.SWITCHOVER_BLUE_GREEN_DEPLOYMENT,
-		RDSActions.SWITCHOVER_GLOBAL_CLUSTER,
-		RDSActions.SWITCHOVER_READ_REPLICA,
+	static readonly AllWriteActions: string[] = [
+		RDSActions.AddRoleToDBCluster,
+		RDSActions.AddRoleToDBInstance,
+		RDSActions.AddSourceIdentifierToSubscription,
+		RDSActions.ApplyPendingMaintenanceAction,
+		RDSActions.BacktrackDBCluster,
+		RDSActions.CancelExportTask,
+		RDSActions.CopyCustomDBEngineVersion,
+		RDSActions.CopyDBClusterParameterGroup,
+		RDSActions.CopyDBClusterSnapshot,
+		RDSActions.CopyDBParameterGroup,
+		RDSActions.CopyDBSnapshot,
+		RDSActions.CopyOptionGroup,
+		RDSActions.CreateBlueGreenDeployment,
+		RDSActions.CreateCustomDBEngineVersion,
+		RDSActions.CreateDBCluster,
+		RDSActions.CreateDBClusterEndpoint,
+		RDSActions.CreateDBClusterParameterGroup,
+		RDSActions.CreateDBClusterSnapshot,
+		RDSActions.CreateDBInstance,
+		RDSActions.CreateDBInstanceReadReplica,
+		RDSActions.CreateDBParameterGroup,
+		RDSActions.CreateDBProxy,
+		RDSActions.CreateDBProxyEndpoint,
+		RDSActions.CreateDBSecurityGroup,
+		RDSActions.CreateDBShardGroup,
+		RDSActions.CreateDBSnapshot,
+		RDSActions.CreateDBSubnetGroup,
+		RDSActions.CreateEventSubscription,
+		RDSActions.CreateGlobalCluster,
+		RDSActions.CreateIntegration,
+		RDSActions.CreateOptionGroup,
+		RDSActions.CreateTenantDatabase,
+		RDSActions.CrossRegionCommunication,
+		RDSActions.DeleteBlueGreenDeployment,
+		RDSActions.DeleteCustomDBEngineVersion,
+		RDSActions.DeleteDBCluster,
+		RDSActions.DeleteDBClusterAutomatedBackup,
+		RDSActions.DeleteDBClusterEndpoint,
+		RDSActions.DeleteDBClusterParameterGroup,
+		RDSActions.DeleteDBClusterSnapshot,
+		RDSActions.DeleteDBInstance,
+		RDSActions.DeleteDBInstanceAutomatedBackup,
+		RDSActions.DeleteDBParameterGroup,
+		RDSActions.DeleteDBProxy,
+		RDSActions.DeleteDBProxyEndpoint,
+		RDSActions.DeleteDBSecurityGroup,
+		RDSActions.DeleteDBShardGroup,
+		RDSActions.DeleteDBSnapshot,
+		RDSActions.DeleteDBSubnetGroup,
+		RDSActions.DeleteEventSubscription,
+		RDSActions.DeleteGlobalCluster,
+		RDSActions.DeleteIntegration,
+		RDSActions.DeleteOptionGroup,
+		RDSActions.DeleteTenantDatabase,
+		RDSActions.DeregisterDBProxyTargets,
+		RDSActions.DisableHttpEndpoint,
+		RDSActions.EnableHttpEndpoint,
+		RDSActions.FailoverDBCluster,
+		RDSActions.FailoverGlobalCluster,
+		RDSActions.ModifyActivityStream,
+		RDSActions.ModifyCertificates,
+		RDSActions.ModifyCurrentDBClusterCapacity,
+		RDSActions.ModifyCustomDBEngineVersion,
+		RDSActions.ModifyDBCluster,
+		RDSActions.ModifyDBClusterEndpoint,
+		RDSActions.ModifyDBClusterParameterGroup,
+		RDSActions.ModifyDBClusterSnapshotAttribute,
+		RDSActions.ModifyDBInstance,
+		RDSActions.ModifyDBParameterGroup,
+		RDSActions.ModifyDBProxy,
+		RDSActions.ModifyDBProxyEndpoint,
+		RDSActions.ModifyDBProxyTargetGroup,
+		RDSActions.ModifyDBRecommendation,
+		RDSActions.ModifyDBShardGroup,
+		RDSActions.ModifyDBSnapshot,
+		RDSActions.ModifyDBSnapshotAttribute,
+		RDSActions.ModifyDBSubnetGroup,
+		RDSActions.ModifyEventSubscription,
+		RDSActions.ModifyGlobalCluster,
+		RDSActions.ModifyIntegration,
+		RDSActions.ModifyOptionGroup,
+		RDSActions.ModifyRecommendation,
+		RDSActions.ModifyTenantDatabase,
+		RDSActions.PromoteReadReplica,
+		RDSActions.PromoteReadReplicaDBCluster,
+		RDSActions.PurchaseReservedDBInstancesOffering,
+		RDSActions.RebootDBCluster,
+		RDSActions.RebootDBInstance,
+		RDSActions.RebootDBShardGroup,
+		RDSActions.RegisterDBProxyTargets,
+		RDSActions.RemoveFromGlobalCluster,
+		RDSActions.RemoveRoleFromDBCluster,
+		RDSActions.RemoveRoleFromDBInstance,
+		RDSActions.RemoveSourceIdentifierFromSubscription,
+		RDSActions.ResetDBClusterParameterGroup,
+		RDSActions.ResetDBParameterGroup,
+		RDSActions.RestoreDBClusterFromS3,
+		RDSActions.RestoreDBClusterFromSnapshot,
+		RDSActions.RestoreDBClusterToPointInTime,
+		RDSActions.RestoreDBInstanceFromDBSnapshot,
+		RDSActions.RestoreDBInstanceFromS3,
+		RDSActions.RestoreDBInstanceToPointInTime,
+		RDSActions.RevokeDBSecurityGroupIngress,
+		RDSActions.StartActivityStream,
+		RDSActions.StartDBCluster,
+		RDSActions.StartDBInstance,
+		RDSActions.StartDBInstanceAutomatedBackupsReplication,
+		RDSActions.StartExportTask,
+		RDSActions.StopActivityStream,
+		RDSActions.StopDBCluster,
+		RDSActions.StopDBInstance,
+		RDSActions.StopDBInstanceAutomatedBackupsReplication,
+		RDSActions.SwitchoverBlueGreenDeployment,
+		RDSActions.SwitchoverGlobalCluster,
+		RDSActions.SwitchoverReadReplica,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		RDSActions.DESCRIBE_ACCOUNT_ATTRIBUTES,
-		RDSActions.DESCRIBE_BLUE_GREEN_DEPLOYMENTS,
-		RDSActions.DESCRIBE_CERTIFICATES,
-		RDSActions.DESCRIBE_DB_CLUSTER_AUTOMATED_BACKUPS,
-		RDSActions.DESCRIBE_DB_CLUSTER_BACKTRACKS,
-		RDSActions.DESCRIBE_DB_CLUSTER_ENDPOINTS,
-		RDSActions.DESCRIBE_DB_CLUSTER_PARAMETER_GROUPS,
-		RDSActions.DESCRIBE_DB_CLUSTER_PARAMETERS,
-		RDSActions.DESCRIBE_DB_CLUSTER_SNAPSHOT_ATTRIBUTES,
-		RDSActions.DESCRIBE_DB_CLUSTER_SNAPSHOTS,
-		RDSActions.DESCRIBE_DB_CLUSTERS,
-		RDSActions.DESCRIBE_DB_ENGINE_VERSIONS,
-		RDSActions.DESCRIBE_DB_INSTANCE_AUTOMATED_BACKUPS,
-		RDSActions.DESCRIBE_DB_INSTANCES,
-		RDSActions.DESCRIBE_DB_LOG_FILES,
-		RDSActions.DESCRIBE_DB_MAJOR_ENGINE_VERSIONS,
-		RDSActions.DESCRIBE_DB_PARAMETER_GROUPS,
-		RDSActions.DESCRIBE_DB_PARAMETERS,
-		RDSActions.DESCRIBE_DB_PROXIES,
-		RDSActions.DESCRIBE_DB_PROXY_ENDPOINTS,
-		RDSActions.DESCRIBE_DB_PROXY_TARGET_GROUPS,
-		RDSActions.DESCRIBE_DB_PROXY_TARGETS,
-		RDSActions.DESCRIBE_DB_RECOMMENDATIONS,
-		RDSActions.DESCRIBE_DB_SECURITY_GROUPS,
-		RDSActions.DESCRIBE_DB_SHARD_GROUPS,
-		RDSActions.DESCRIBE_DB_SNAPSHOT_ATTRIBUTES,
-		RDSActions.DESCRIBE_DB_SNAPSHOT_TENANT_DATABASES,
-		RDSActions.DESCRIBE_DB_SNAPSHOTS,
-		RDSActions.DESCRIBE_DB_SUBNET_GROUPS,
-		RDSActions.DESCRIBE_ENGINE_DEFAULT_CLUSTER_PARAMETERS,
-		RDSActions.DESCRIBE_ENGINE_DEFAULT_PARAMETERS,
-		RDSActions.DESCRIBE_EVENT_CATEGORIES,
-		RDSActions.DESCRIBE_EVENT_SUBSCRIPTIONS,
-		RDSActions.DESCRIBE_EVENTS,
-		RDSActions.DESCRIBE_EXPORT_TASKS,
-		RDSActions.DESCRIBE_GLOBAL_CLUSTERS,
-		RDSActions.DESCRIBE_INTEGRATIONS,
-		RDSActions.DESCRIBE_OPTION_GROUP_OPTIONS,
-		RDSActions.DESCRIBE_OPTION_GROUPS,
-		RDSActions.DESCRIBE_ORDERABLE_DB_INSTANCE_OPTIONS,
-		RDSActions.DESCRIBE_PENDING_MAINTENANCE_ACTIONS,
-		RDSActions.DESCRIBE_RESERVED_DB_INSTANCES,
-		RDSActions.DESCRIBE_RESERVED_DB_INSTANCES_OFFERINGS,
-		RDSActions.DESCRIBE_SOURCE_REGIONS,
-		RDSActions.DESCRIBE_TENANT_DATABASES,
-		RDSActions.DESCRIBE_VALID_DB_INSTANCE_MODIFICATIONS,
+	static readonly AllListActions: string[] = [
+		RDSActions.DescribeAccountAttributes,
+		RDSActions.DescribeBlueGreenDeployments,
+		RDSActions.DescribeCertificates,
+		RDSActions.DescribeDBClusterAutomatedBackups,
+		RDSActions.DescribeDBClusterBacktracks,
+		RDSActions.DescribeDBClusterEndpoints,
+		RDSActions.DescribeDBClusterParameterGroups,
+		RDSActions.DescribeDBClusterParameters,
+		RDSActions.DescribeDBClusterSnapshotAttributes,
+		RDSActions.DescribeDBClusterSnapshots,
+		RDSActions.DescribeDBClusters,
+		RDSActions.DescribeDBEngineVersions,
+		RDSActions.DescribeDBInstanceAutomatedBackups,
+		RDSActions.DescribeDBInstances,
+		RDSActions.DescribeDBLogFiles,
+		RDSActions.DescribeDBMajorEngineVersions,
+		RDSActions.DescribeDBParameterGroups,
+		RDSActions.DescribeDBParameters,
+		RDSActions.DescribeDBProxies,
+		RDSActions.DescribeDBProxyEndpoints,
+		RDSActions.DescribeDBProxyTargetGroups,
+		RDSActions.DescribeDBProxyTargets,
+		RDSActions.DescribeDBRecommendations,
+		RDSActions.DescribeDBSecurityGroups,
+		RDSActions.DescribeDBShardGroups,
+		RDSActions.DescribeDBSnapshotAttributes,
+		RDSActions.DescribeDBSnapshotTenantDatabases,
+		RDSActions.DescribeDBSnapshots,
+		RDSActions.DescribeDBSubnetGroups,
+		RDSActions.DescribeEngineDefaultClusterParameters,
+		RDSActions.DescribeEngineDefaultParameters,
+		RDSActions.DescribeEventCategories,
+		RDSActions.DescribeEventSubscriptions,
+		RDSActions.DescribeEvents,
+		RDSActions.DescribeExportTasks,
+		RDSActions.DescribeGlobalClusters,
+		RDSActions.DescribeIntegrations,
+		RDSActions.DescribeOptionGroupOptions,
+		RDSActions.DescribeOptionGroups,
+		RDSActions.DescribeOrderableDBInstanceOptions,
+		RDSActions.DescribePendingMaintenanceActions,
+		RDSActions.DescribeReservedDBInstances,
+		RDSActions.DescribeReservedDBInstancesOfferings,
+		RDSActions.DescribeSourceRegions,
+		RDSActions.DescribeTenantDatabases,
+		RDSActions.DescribeValidDBInstanceModifications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		RDSActions.AUTHORIZE_DB_SECURITY_GROUP_INGRESS,
+	static readonly AllPermissionManagementActions: string[] = [
+		RDSActions.AuthorizeDBSecurityGroupIngress,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RDSActions.ADD_TAGS_TO_RESOURCE,
-		RDSActions.REMOVE_TAGS_FROM_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RDSActions.AddTagsToResource,
+		RDSActions.RemoveTagsFromResource,
 	];
 }
 
-const AutoBackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):auto-backup:(?<dbInstanceAutomatedBackupId>[^:/?]+)$",
-);
-const CevArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cev:(?<engine>[^:/?]+)/(?<engineVersion>[^:/?]+)/(?<customDBEngineVersionId>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<dbClusterInstanceName>[^:/?]+)$",
-);
-const ClusterAutoBackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-auto-backup:(?<dbClusterAutomatedBackupId>[^:/?]+)$",
-);
-const ClusterEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-endpoint:(?<dbClusterEndpoint>[^:/?]+)$",
-);
-const ClusterPgArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-pg:(?<clusterParameterGroupName>[^:/?]+)$",
-);
-const ClusterSnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-snapshot:(?<clusterSnapshotName>[^:/?]+)$",
-);
-const DBArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db:(?<dbInstanceName>[^:/?]+)$",
-);
-const DeploymentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):deployment:(?<blueGreenDeploymentIdentifier>[^:/?]+)$",
-);
-const EsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):es:(?<subscriptionName>[^:/?]+)$",
-);
-const GlobalClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds::(?<account>[^:]*):global-cluster:(?<globalCluster>[^:/?]+)$",
-);
-const IntegrationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):integration:(?<integrationIdentifier>[^:/?]+)$",
-);
-const OgArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):og:(?<optionGroupName>[^:/?]+)$",
-);
-const PgArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):pg:(?<parameterGroupName>[^:/?]+)$",
-);
-const ProxyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db-proxy:(?<dbProxyId>[^:/?]+)$",
-);
-const ProxyEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db-proxy-endpoint:(?<dbProxyEndpointId>[^:/?]+)$",
-);
-const RiArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):ri:(?<reservedDBInstanceName>[^:/?]+)$",
-);
-const SecgrpArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):secgrp:(?<securityGroupName>[^:/?]+)$",
-);
-const ShardgrpArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):shard-group:(?<dbShardGroupResourceId>[^:/?]+)$",
-);
-const SnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):snapshot:(?<snapshotName>[^:/?]+)$",
-);
-const SnapshotTenantDatabaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):snapshot-tenant-database:(?<snapshotName>[^:/?]+):(?<tenantResourceId>[^:/?]+)$",
-);
-const SubgrpArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):subgrp:(?<subnetGroupName>[^:/?]+)$",
-);
-const TargetGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):target-group:(?<targetGroupId>[^:/?]+)$",
-);
-const TenantDatabaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):tenant-database:(?<tenantResourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a auto-backup ARN.
+ */
+export interface RDSAutoBackupArnProps {
+	/** The DbInstanceAutomatedBackupId component of the ARN. */
+	readonly dbInstanceAutomatedBackupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a auto-backup ARN.
+ */
+export interface RDSAutoBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbInstanceAutomatedBackupId component. */
+	readonly dbInstanceAutomatedBackupId: string;
+}
+
+/**
+ * Properties for building a cev ARN.
+ */
+export interface RDSCevArnProps {
+	/** The Engine component of the ARN. */
+	readonly engine: string;
+	/** The EngineVersion component of the ARN. */
+	readonly engineVersion: string;
+	/** The CustomDbEngineVersionId component of the ARN. */
+	readonly customDBEngineVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cev ARN.
+ */
+export interface RDSCevArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Engine component. */
+	readonly engine: string;
+	/** The EngineVersion component. */
+	readonly engineVersion: string;
+	/** The CustomDbEngineVersionId component. */
+	readonly customDBEngineVersionId: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface RDSClusterArnProps {
+	/** The DbClusterInstanceName component of the ARN. */
+	readonly dbClusterInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface RDSClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbClusterInstanceName component. */
+	readonly dbClusterInstanceName: string;
+}
+
+/**
+ * Properties for building a cluster-auto-backup ARN.
+ */
+export interface RDSClusterAutoBackupArnProps {
+	/** The DbClusterAutomatedBackupId component of the ARN. */
+	readonly dbClusterAutomatedBackupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-auto-backup ARN.
+ */
+export interface RDSClusterAutoBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbClusterAutomatedBackupId component. */
+	readonly dbClusterAutomatedBackupId: string;
+}
+
+/**
+ * Properties for building a cluster-endpoint ARN.
+ */
+export interface RDSClusterEndpointArnProps {
+	/** The DbClusterEndpoint component of the ARN. */
+	readonly dbClusterEndpoint: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-endpoint ARN.
+ */
+export interface RDSClusterEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbClusterEndpoint component. */
+	readonly dbClusterEndpoint: string;
+}
+
+/**
+ * Properties for building a cluster-pg ARN.
+ */
+export interface RDSClusterPgArnProps {
+	/** The ClusterParameterGroupName component of the ARN. */
+	readonly clusterParameterGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-pg ARN.
+ */
+export interface RDSClusterPgArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterParameterGroupName component. */
+	readonly clusterParameterGroupName: string;
+}
+
+/**
+ * Properties for building a cluster-snapshot ARN.
+ */
+export interface RDSClusterSnapshotArnProps {
+	/** The ClusterSnapshotName component of the ARN. */
+	readonly clusterSnapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-snapshot ARN.
+ */
+export interface RDSClusterSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterSnapshotName component. */
+	readonly clusterSnapshotName: string;
+}
+
+/**
+ * Properties for building a db ARN.
+ */
+export interface RDSDBArnProps {
+	/** The DbInstanceName component of the ARN. */
+	readonly dbInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a db ARN.
+ */
+export interface RDSDBArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbInstanceName component. */
+	readonly dbInstanceName: string;
+}
+
+/**
+ * Properties for building a deployment ARN.
+ */
+export interface RDSDeploymentArnProps {
+	/** The BlueGreenDeploymentIdentifier component of the ARN. */
+	readonly blueGreenDeploymentIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deployment ARN.
+ */
+export interface RDSDeploymentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BlueGreenDeploymentIdentifier component. */
+	readonly blueGreenDeploymentIdentifier: string;
+}
+
+/**
+ * Properties for building a es ARN.
+ */
+export interface RDSEsArnProps {
+	/** The SubscriptionName component of the ARN. */
+	readonly subscriptionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a es ARN.
+ */
+export interface RDSEsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubscriptionName component. */
+	readonly subscriptionName: string;
+}
+
+/**
+ * Properties for building a global-cluster ARN.
+ */
+export interface RDSGlobalClusterArnProps {
+	/** The GlobalCluster component of the ARN. */
+	readonly globalCluster: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a global-cluster ARN.
+ */
+export interface RDSGlobalClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GlobalCluster component. */
+	readonly globalCluster: string;
+}
+
+/**
+ * Properties for building a integration ARN.
+ */
+export interface RDSIntegrationArnProps {
+	/** The IntegrationIdentifier component of the ARN. */
+	readonly integrationIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a integration ARN.
+ */
+export interface RDSIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IntegrationIdentifier component. */
+	readonly integrationIdentifier: string;
+}
+
+/**
+ * Properties for building a og ARN.
+ */
+export interface RDSOgArnProps {
+	/** The OptionGroupName component of the ARN. */
+	readonly optionGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a og ARN.
+ */
+export interface RDSOgArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OptionGroupName component. */
+	readonly optionGroupName: string;
+}
+
+/**
+ * Properties for building a pg ARN.
+ */
+export interface RDSPgArnProps {
+	/** The ParameterGroupName component of the ARN. */
+	readonly parameterGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pg ARN.
+ */
+export interface RDSPgArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ParameterGroupName component. */
+	readonly parameterGroupName: string;
+}
+
+/**
+ * Properties for building a proxy ARN.
+ */
+export interface RDSProxyArnProps {
+	/** The DbProxyId component of the ARN. */
+	readonly dbProxyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a proxy ARN.
+ */
+export interface RDSProxyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbProxyId component. */
+	readonly dbProxyId: string;
+}
+
+/**
+ * Properties for building a proxy-endpoint ARN.
+ */
+export interface RDSProxyEndpointArnProps {
+	/** The DbProxyEndpointId component of the ARN. */
+	readonly dbProxyEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a proxy-endpoint ARN.
+ */
+export interface RDSProxyEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbProxyEndpointId component. */
+	readonly dbProxyEndpointId: string;
+}
+
+/**
+ * Properties for building a ri ARN.
+ */
+export interface RDSRiArnProps {
+	/** The ReservedDbInstanceName component of the ARN. */
+	readonly reservedDBInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ri ARN.
+ */
+export interface RDSRiArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReservedDbInstanceName component. */
+	readonly reservedDBInstanceName: string;
+}
+
+/**
+ * Properties for building a secgrp ARN.
+ */
+export interface RDSSecgrpArnProps {
+	/** The SecurityGroupName component of the ARN. */
+	readonly securityGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a secgrp ARN.
+ */
+export interface RDSSecgrpArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityGroupName component. */
+	readonly securityGroupName: string;
+}
+
+/**
+ * Properties for building a shardgrp ARN.
+ */
+export interface RDSShardgrpArnProps {
+	/** The DbShardGroupResourceId component of the ARN. */
+	readonly dbShardGroupResourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a shardgrp ARN.
+ */
+export interface RDSShardgrpArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbShardGroupResourceId component. */
+	readonly dbShardGroupResourceId: string;
+}
+
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface RDSSnapshotArnProps {
+	/** The SnapshotName component of the ARN. */
+	readonly snapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface RDSSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotName component. */
+	readonly snapshotName: string;
+}
+
+/**
+ * Properties for building a snapshot-tenant-database ARN.
+ */
+export interface RDSSnapshotTenantDatabaseArnProps {
+	/** The SnapshotName component of the ARN. */
+	readonly snapshotName: string;
+	/** The TenantResourceId component of the ARN. */
+	readonly tenantResourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot-tenant-database ARN.
+ */
+export interface RDSSnapshotTenantDatabaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotName component. */
+	readonly snapshotName: string;
+	/** The TenantResourceId component. */
+	readonly tenantResourceId: string;
+}
+
+/**
+ * Properties for building a subgrp ARN.
+ */
+export interface RDSSubgrpArnProps {
+	/** The SubnetGroupName component of the ARN. */
+	readonly subnetGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subgrp ARN.
+ */
+export interface RDSSubgrpArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubnetGroupName component. */
+	readonly subnetGroupName: string;
+}
+
+/**
+ * Properties for building a target-group ARN.
+ */
+export interface RDSTargetGroupArnProps {
+	/** The TargetGroupId component of the ARN. */
+	readonly targetGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a target-group ARN.
+ */
+export interface RDSTargetGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TargetGroupId component. */
+	readonly targetGroupId: string;
+}
+
+/**
+ * Properties for building a tenant-database ARN.
+ */
+export interface RDSTenantDatabaseArnProps {
+	/** The TenantResourceId component of the ARN. */
+	readonly tenantResourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tenant-database ARN.
+ */
+export interface RDSTenantDatabaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TenantResourceId component. */
+	readonly tenantResourceId: string;
+}
+
+const AutoBackupArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):auto-backup:(?<dbInstanceAutomatedBackupId>[^:/?]+)$/;
+const CevArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cev:(?<engine>[^:/?]+)\/(?<engineVersion>[^:/?]+)\/(?<customDBEngineVersionId>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<dbClusterInstanceName>[^:/?]+)$/;
+const ClusterAutoBackupArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-auto-backup:(?<dbClusterAutomatedBackupId>[^:/?]+)$/;
+const ClusterEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-endpoint:(?<dbClusterEndpoint>[^:/?]+)$/;
+const ClusterPgArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-pg:(?<clusterParameterGroupName>[^:/?]+)$/;
+const ClusterSnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster-snapshot:(?<clusterSnapshotName>[^:/?]+)$/;
+const DBArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db:(?<dbInstanceName>[^:/?]+)$/;
+const DeploymentArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):deployment:(?<blueGreenDeploymentIdentifier>[^:/?]+)$/;
+const EsArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):es:(?<subscriptionName>[^:/?]+)$/;
+const GlobalClusterArnRegex =
+	/^arn:(?<partition>[^:]+):rds::(?<account>[^:]*):global-cluster:(?<globalCluster>[^:/?]+)$/;
+const IntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):integration:(?<integrationIdentifier>[^:/?]+)$/;
+const OgArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):og:(?<optionGroupName>[^:/?]+)$/;
+const PgArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):pg:(?<parameterGroupName>[^:/?]+)$/;
+const ProxyArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db-proxy:(?<dbProxyId>[^:/?]+)$/;
+const ProxyEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):db-proxy-endpoint:(?<dbProxyEndpointId>[^:/?]+)$/;
+const RiArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):ri:(?<reservedDBInstanceName>[^:/?]+)$/;
+const SecgrpArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):secgrp:(?<securityGroupName>[^:/?]+)$/;
+const ShardgrpArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):shard-group:(?<dbShardGroupResourceId>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):snapshot:(?<snapshotName>[^:/?]+)$/;
+const SnapshotTenantDatabaseArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):snapshot-tenant-database:(?<snapshotName>[^:/?]+):(?<tenantResourceId>[^:/?]+)$/;
+const SubgrpArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):subgrp:(?<subnetGroupName>[^:/?]+)$/;
+const TargetGroupArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):target-group:(?<targetGroupId>[^:/?]+)$/;
+const TenantDatabaseArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):tenant-database:(?<tenantResourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rds resources.
@@ -673,16 +1319,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the auto-backup resource.
 	 */
-	static autoBackup(props: {
-		/** The DbInstanceAutomatedBackupId component of the ARN. */
-		readonly dbInstanceAutomatedBackupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static autoBackup(props: RDSAutoBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:auto-backup:${props.dbInstanceAutomatedBackupId}`;
 	}
 
@@ -697,12 +1334,7 @@ export class RDSResources {
 	 * Parses a auto-backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutoBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbInstanceAutomatedBackupId: string;
-	} {
+	static parseAutoBackupArn(arn: string): RDSAutoBackupArnComponents {
 		const match = AutoBackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid auto-backup ARN: ${arn}`);
@@ -718,20 +1350,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cev resource.
 	 */
-	static cev(props: {
-		/** The Engine component of the ARN. */
-		readonly engine: string;
-		/** The EngineVersion component of the ARN. */
-		readonly engineVersion: string;
-		/** The CustomDbEngineVersionId component of the ARN. */
-		readonly customDBEngineVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cev(props: RDSCevArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cev:${props.engine}/${props.engineVersion}/${props.customDBEngineVersionId}`;
 	}
 
@@ -746,14 +1365,7 @@ export class RDSResources {
 	 * Parses a cev ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCevArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		engine: string;
-		engineVersion: string;
-		customDBEngineVersionId: string;
-	} {
+	static parseCevArn(arn: string): RDSCevArnComponents {
 		const match = CevArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cev ARN: ${arn}`);
@@ -771,16 +1383,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The DbClusterInstanceName component of the ARN. */
-		readonly dbClusterInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: RDSClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster:${props.dbClusterInstanceName}`;
 	}
 
@@ -795,12 +1398,7 @@ export class RDSResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbClusterInstanceName: string;
-	} {
+	static parseClusterArn(arn: string): RDSClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -816,16 +1414,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cluster-auto-backup resource.
 	 */
-	static clusterAutoBackup(props: {
-		/** The DbClusterAutomatedBackupId component of the ARN. */
-		readonly dbClusterAutomatedBackupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clusterAutoBackup(props: RDSClusterAutoBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster-auto-backup:${props.dbClusterAutomatedBackupId}`;
 	}
 
@@ -840,12 +1429,9 @@ export class RDSResources {
 	 * Parses a cluster-auto-backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterAutoBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbClusterAutomatedBackupId: string;
-	} {
+	static parseClusterAutoBackupArn(
+		arn: string,
+	): RDSClusterAutoBackupArnComponents {
 		const match = ClusterAutoBackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster-auto-backup ARN: ${arn}`);
@@ -861,16 +1447,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cluster-endpoint resource.
 	 */
-	static clusterEndpoint(props: {
-		/** The DbClusterEndpoint component of the ARN. */
-		readonly dbClusterEndpoint: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clusterEndpoint(props: RDSClusterEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster-endpoint:${props.dbClusterEndpoint}`;
 	}
 
@@ -885,12 +1462,7 @@ export class RDSResources {
 	 * Parses a cluster-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbClusterEndpoint: string;
-	} {
+	static parseClusterEndpointArn(arn: string): RDSClusterEndpointArnComponents {
 		const match = ClusterEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster-endpoint ARN: ${arn}`);
@@ -906,16 +1478,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cluster-pg resource.
 	 */
-	static clusterPg(props: {
-		/** The ClusterParameterGroupName component of the ARN. */
-		readonly clusterParameterGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clusterPg(props: RDSClusterPgArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster-pg:${props.clusterParameterGroupName}`;
 	}
 
@@ -930,12 +1493,7 @@ export class RDSResources {
 	 * Parses a cluster-pg ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterPgArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterParameterGroupName: string;
-	} {
+	static parseClusterPgArn(arn: string): RDSClusterPgArnComponents {
 		const match = ClusterPgArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster-pg ARN: ${arn}`);
@@ -951,16 +1509,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the cluster-snapshot resource.
 	 */
-	static clusterSnapshot(props: {
-		/** The ClusterSnapshotName component of the ARN. */
-		readonly clusterSnapshotName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clusterSnapshot(props: RDSClusterSnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster-snapshot:${props.clusterSnapshotName}`;
 	}
 
@@ -975,12 +1524,7 @@ export class RDSResources {
 	 * Parses a cluster-snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterSnapshotName: string;
-	} {
+	static parseClusterSnapshotArn(arn: string): RDSClusterSnapshotArnComponents {
 		const match = ClusterSnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster-snapshot ARN: ${arn}`);
@@ -996,16 +1540,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the db resource.
 	 */
-	static db(props: {
-		/** The DbInstanceName component of the ARN. */
-		readonly dbInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static db(props: RDSDBArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:db:${props.dbInstanceName}`;
 	}
 
@@ -1020,12 +1555,7 @@ export class RDSResources {
 	 * Parses a db ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDBArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbInstanceName: string;
-	} {
+	static parseDBArn(arn: string): RDSDBArnComponents {
 		const match = DBArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid db ARN: ${arn}`);
@@ -1041,16 +1571,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the deployment resource.
 	 */
-	static deployment(props: {
-		/** The BlueGreenDeploymentIdentifier component of the ARN. */
-		readonly blueGreenDeploymentIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deployment(props: RDSDeploymentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:deployment:${props.blueGreenDeploymentIdentifier}`;
 	}
 
@@ -1065,12 +1586,7 @@ export class RDSResources {
 	 * Parses a deployment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		blueGreenDeploymentIdentifier: string;
-	} {
+	static parseDeploymentArn(arn: string): RDSDeploymentArnComponents {
 		const match = DeploymentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deployment ARN: ${arn}`);
@@ -1087,16 +1603,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the es resource.
 	 */
-	static es(props: {
-		/** The SubscriptionName component of the ARN. */
-		readonly subscriptionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static es(props: RDSEsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:es:${props.subscriptionName}`;
 	}
 
@@ -1111,12 +1618,7 @@ export class RDSResources {
 	 * Parses a es ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subscriptionName: string;
-	} {
+	static parseEsArn(arn: string): RDSEsArnComponents {
 		const match = EsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid es ARN: ${arn}`);
@@ -1132,14 +1634,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the global-cluster resource.
 	 */
-	static globalCluster(props: {
-		/** The GlobalCluster component of the ARN. */
-		readonly globalCluster: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static globalCluster(props: RDSGlobalClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds::${props.account ?? "*"}:global-cluster:${props.globalCluster}`;
 	}
 
@@ -1154,11 +1649,7 @@ export class RDSResources {
 	 * Parses a global-cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGlobalClusterArn(arn: string): {
-		partition: string;
-		account: string;
-		globalCluster: string;
-	} {
+	static parseGlobalClusterArn(arn: string): RDSGlobalClusterArnComponents {
 		const match = GlobalClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid global-cluster ARN: ${arn}`);
@@ -1173,16 +1664,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the integration resource.
 	 */
-	static integration(props: {
-		/** The IntegrationIdentifier component of the ARN. */
-		readonly integrationIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integration(props: RDSIntegrationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:integration:${props.integrationIdentifier}`;
 	}
 
@@ -1197,12 +1679,7 @@ export class RDSResources {
 	 * Parses a integration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		integrationIdentifier: string;
-	} {
+	static parseIntegrationArn(arn: string): RDSIntegrationArnComponents {
 		const match = IntegrationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid integration ARN: ${arn}`);
@@ -1218,16 +1695,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the og resource.
 	 */
-	static og(props: {
-		/** The OptionGroupName component of the ARN. */
-		readonly optionGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static og(props: RDSOgArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:og:${props.optionGroupName}`;
 	}
 
@@ -1242,12 +1710,7 @@ export class RDSResources {
 	 * Parses a og ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOgArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		optionGroupName: string;
-	} {
+	static parseOgArn(arn: string): RDSOgArnComponents {
 		const match = OgArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid og ARN: ${arn}`);
@@ -1263,16 +1726,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the pg resource.
 	 */
-	static pg(props: {
-		/** The ParameterGroupName component of the ARN. */
-		readonly parameterGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pg(props: RDSPgArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:pg:${props.parameterGroupName}`;
 	}
 
@@ -1287,12 +1741,7 @@ export class RDSResources {
 	 * Parses a pg ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePgArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		parameterGroupName: string;
-	} {
+	static parsePgArn(arn: string): RDSPgArnComponents {
 		const match = PgArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pg ARN: ${arn}`);
@@ -1308,16 +1757,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the proxy resource.
 	 */
-	static proxy(props: {
-		/** The DbProxyId component of the ARN. */
-		readonly dbProxyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static proxy(props: RDSProxyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:db-proxy:${props.dbProxyId}`;
 	}
 
@@ -1332,12 +1772,7 @@ export class RDSResources {
 	 * Parses a proxy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProxyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbProxyId: string;
-	} {
+	static parseProxyArn(arn: string): RDSProxyArnComponents {
 		const match = ProxyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid proxy ARN: ${arn}`);
@@ -1353,16 +1788,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the proxy-endpoint resource.
 	 */
-	static proxyEndpoint(props: {
-		/** The DbProxyEndpointId component of the ARN. */
-		readonly dbProxyEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static proxyEndpoint(props: RDSProxyEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:db-proxy-endpoint:${props.dbProxyEndpointId}`;
 	}
 
@@ -1377,12 +1803,7 @@ export class RDSResources {
 	 * Parses a proxy-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProxyEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbProxyEndpointId: string;
-	} {
+	static parseProxyEndpointArn(arn: string): RDSProxyEndpointArnComponents {
 		const match = ProxyEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid proxy-endpoint ARN: ${arn}`);
@@ -1398,16 +1819,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the ri resource.
 	 */
-	static ri(props: {
-		/** The ReservedDbInstanceName component of the ARN. */
-		readonly reservedDBInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ri(props: RDSRiArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:ri:${props.reservedDBInstanceName}`;
 	}
 
@@ -1422,12 +1834,7 @@ export class RDSResources {
 	 * Parses a ri ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRiArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reservedDBInstanceName: string;
-	} {
+	static parseRiArn(arn: string): RDSRiArnComponents {
 		const match = RiArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ri ARN: ${arn}`);
@@ -1443,16 +1850,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the secgrp resource.
 	 */
-	static secgrp(props: {
-		/** The SecurityGroupName component of the ARN. */
-		readonly securityGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static secgrp(props: RDSSecgrpArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:secgrp:${props.securityGroupName}`;
 	}
 
@@ -1467,12 +1865,7 @@ export class RDSResources {
 	 * Parses a secgrp ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecgrpArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityGroupName: string;
-	} {
+	static parseSecgrpArn(arn: string): RDSSecgrpArnComponents {
 		const match = SecgrpArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid secgrp ARN: ${arn}`);
@@ -1488,16 +1881,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the shardgrp resource.
 	 */
-	static shardgrp(props: {
-		/** The DbShardGroupResourceId component of the ARN. */
-		readonly dbShardGroupResourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static shardgrp(props: RDSShardgrpArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:shard-group:${props.dbShardGroupResourceId}`;
 	}
 
@@ -1512,12 +1896,7 @@ export class RDSResources {
 	 * Parses a shardgrp ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseShardgrpArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbShardGroupResourceId: string;
-	} {
+	static parseShardgrpArn(arn: string): RDSShardgrpArnComponents {
 		const match = ShardgrpArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid shardgrp ARN: ${arn}`);
@@ -1533,16 +1912,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
-	static snapshot(props: {
-		/** The SnapshotName component of the ARN. */
-		readonly snapshotName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshot(props: RDSSnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:snapshot:${props.snapshotName}`;
 	}
 
@@ -1557,12 +1927,7 @@ export class RDSResources {
 	 * Parses a snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		snapshotName: string;
-	} {
+	static parseSnapshotArn(arn: string): RDSSnapshotArnComponents {
 		const match = SnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot ARN: ${arn}`);
@@ -1578,18 +1943,9 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the snapshot-tenant-database resource.
 	 */
-	static snapshotTenantDatabase(props: {
-		/** The SnapshotName component of the ARN. */
-		readonly snapshotName: string;
-		/** The TenantResourceId component of the ARN. */
-		readonly tenantResourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshotTenantDatabase(
+		props: RDSSnapshotTenantDatabaseArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:snapshot-tenant-database:${props.snapshotName}:${props.tenantResourceId}`;
 	}
 
@@ -1604,13 +1960,9 @@ export class RDSResources {
 	 * Parses a snapshot-tenant-database ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotTenantDatabaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		snapshotName: string;
-		tenantResourceId: string;
-	} {
+	static parseSnapshotTenantDatabaseArn(
+		arn: string,
+	): RDSSnapshotTenantDatabaseArnComponents {
 		const match = SnapshotTenantDatabaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot-tenant-database ARN: ${arn}`);
@@ -1627,16 +1979,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the subgrp resource.
 	 */
-	static subgrp(props: {
-		/** The SubnetGroupName component of the ARN. */
-		readonly subnetGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subgrp(props: RDSSubgrpArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:subgrp:${props.subnetGroupName}`;
 	}
 
@@ -1651,12 +1994,7 @@ export class RDSResources {
 	 * Parses a subgrp ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubgrpArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subnetGroupName: string;
-	} {
+	static parseSubgrpArn(arn: string): RDSSubgrpArnComponents {
 		const match = SubgrpArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subgrp ARN: ${arn}`);
@@ -1672,16 +2010,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the target-group resource.
 	 */
-	static targetGroup(props: {
-		/** The TargetGroupId component of the ARN. */
-		readonly targetGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static targetGroup(props: RDSTargetGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:target-group:${props.targetGroupId}`;
 	}
 
@@ -1696,12 +2025,7 @@ export class RDSResources {
 	 * Parses a target-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTargetGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		targetGroupId: string;
-	} {
+	static parseTargetGroupArn(arn: string): RDSTargetGroupArnComponents {
 		const match = TargetGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid target-group ARN: ${arn}`);
@@ -1717,16 +2041,7 @@ export class RDSResources {
 	/**
 	 * Builds an ARN for the tenant-database resource.
 	 */
-	static tenantDatabase(props: {
-		/** The TenantResourceId component of the ARN. */
-		readonly tenantResourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tenantDatabase(props: RDSTenantDatabaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:tenant-database:${props.tenantResourceId}`;
 	}
 
@@ -1741,12 +2056,7 @@ export class RDSResources {
 	 * Parses a tenant-database ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTenantDatabaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tenantResourceId: string;
-	} {
+	static parseTenantDatabaseArn(arn: string): RDSTenantDatabaseArnComponents {
 		const match = TenantDatabaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tenant-database ARN: ${arn}`);
@@ -1765,61 +2075,61 @@ export class RDSResources {
  */
 export class RDSOperations {
 	/** IAM actions required for the AddRoleToDBCluster API call. */
-	static readonly ADD_ROLE_TO_DB_CLUSTER: string[] = [
+	static readonly AddRoleToDBCluster: string[] = [
 		"rds:AddRoleToDBCluster",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddRoleToDBInstance API call. */
-	static readonly ADD_ROLE_TO_DB_INSTANCE: string[] = [
+	static readonly AddRoleToDBInstance: string[] = [
 		"rds:AddRoleToDBInstance",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddSourceIdentifierToSubscription API call. */
-	static readonly ADD_SOURCE_IDENTIFIER_TO_SUBSCRIPTION: string[] = [
+	static readonly AddSourceIdentifierToSubscription: string[] = [
 		"rds:AddSourceIdentifierToSubscription",
 	];
 	/** IAM actions required for the AddTagsToResource API call. */
-	static readonly ADD_TAGS_TO_RESOURCE: string[] = ["rds:AddTagsToResource"];
+	static readonly AddTagsToResource: string[] = ["rds:AddTagsToResource"];
 	/** IAM actions required for the ApplyPendingMaintenanceAction API call. */
-	static readonly APPLY_PENDING_MAINTENANCE_ACTION: string[] = [
+	static readonly ApplyPendingMaintenanceAction: string[] = [
 		"rds:ApplyPendingMaintenanceAction",
 	];
 	/** IAM actions required for the AuthorizeDBSecurityGroupIngress API call. */
-	static readonly AUTHORIZE_DB_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly AuthorizeDBSecurityGroupIngress: string[] = [
 		"rds:AuthorizeDBSecurityGroupIngress",
 	];
 	/** IAM actions required for the BacktrackDBCluster API call. */
-	static readonly BACKTRACK_DB_CLUSTER: string[] = ["rds:BacktrackDBCluster"];
+	static readonly BacktrackDBCluster: string[] = ["rds:BacktrackDBCluster"];
 	/** IAM actions required for the CancelExportTask API call. */
-	static readonly CANCEL_EXPORT_TASK: string[] = ["rds:CancelExportTask"];
+	static readonly CancelExportTask: string[] = ["rds:CancelExportTask"];
 	/** IAM actions required for the CopyDBClusterParameterGroup API call. */
-	static readonly COPY_DB_CLUSTER_PARAMETER_GROUP: string[] = [
+	static readonly CopyDBClusterParameterGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CopyDBClusterParameterGroup",
 	];
 	/** IAM actions required for the CopyDBClusterSnapshot API call. */
-	static readonly COPY_DB_CLUSTER_SNAPSHOT: string[] = [
+	static readonly CopyDBClusterSnapshot: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CopyDBClusterSnapshot",
 	];
 	/** IAM actions required for the CopyDBParameterGroup API call. */
-	static readonly COPY_DB_PARAMETER_GROUP: string[] = [
+	static readonly CopyDBParameterGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CopyDBParameterGroup",
 	];
 	/** IAM actions required for the CopyDBSnapshot API call. */
-	static readonly COPY_DB_SNAPSHOT: string[] = [
+	static readonly CopyDBSnapshot: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CopyCustomDBEngineVersion",
 		"rds:CopyDBSnapshot",
 	];
 	/** IAM actions required for the CopyOptionGroup API call. */
-	static readonly COPY_OPTION_GROUP: string[] = [
+	static readonly CopyOptionGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CopyOptionGroup",
 	];
 	/** IAM actions required for the CreateBlueGreenDeployment API call. */
-	static readonly CREATE_BLUE_GREEN_DEPLOYMENT: string[] = [
+	static readonly CreateBlueGreenDeployment: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateBlueGreenDeployment",
 		"rds:CreateDBCluster",
@@ -1830,12 +2140,12 @@ export class RDSOperations {
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateCustomDBEngineVersion API call. */
-	static readonly CREATE_CUSTOM_DB_ENGINE_VERSION: string[] = [
+	static readonly CreateCustomDBEngineVersion: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateCustomDBEngineVersion",
 	];
 	/** IAM actions required for the CreateDBCluster API call. */
-	static readonly CREATE_DB_CLUSTER: string[] = [
+	static readonly CreateDBCluster: string[] = [
 		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBCluster",
@@ -1843,97 +2153,97 @@ export class RDSOperations {
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDBClusterEndpoint API call. */
-	static readonly CREATE_DB_CLUSTER_ENDPOINT: string[] = [
+	static readonly CreateDBClusterEndpoint: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBClusterEndpoint",
 	];
 	/** IAM actions required for the CreateDBClusterParameterGroup API call. */
-	static readonly CREATE_DB_CLUSTER_PARAMETER_GROUP: string[] = [
+	static readonly CreateDBClusterParameterGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBClusterParameterGroup",
 	];
 	/** IAM actions required for the CreateDBClusterSnapshot API call. */
-	static readonly CREATE_DB_CLUSTER_SNAPSHOT: string[] = [
+	static readonly CreateDBClusterSnapshot: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBClusterSnapshot",
 	];
 	/** IAM actions required for the CreateDBInstance API call. */
-	static readonly CREATE_DB_INSTANCE: string[] = [
+	static readonly CreateDBInstance: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
 		"rds:CreateTenantDatabase",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDBInstanceReadReplica API call. */
-	static readonly CREATE_DB_INSTANCE_READ_REPLICA: string[] = [
+	static readonly CreateDBInstanceReadReplica: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstanceReadReplica",
 		"rds:CreateTenantDatabase",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDBParameterGroup API call. */
-	static readonly CREATE_DB_PARAMETER_GROUP: string[] = [
+	static readonly CreateDBParameterGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBParameterGroup",
 	];
 	/** IAM actions required for the CreateDBProxy API call. */
-	static readonly CREATE_DB_PROXY: string[] = [
+	static readonly CreateDBProxy: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBProxy",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDBProxyEndpoint API call. */
-	static readonly CREATE_DB_PROXY_ENDPOINT: string[] = [
+	static readonly CreateDBProxyEndpoint: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBProxyEndpoint",
 	];
 	/** IAM actions required for the CreateDBSecurityGroup API call. */
-	static readonly CREATE_DB_SECURITY_GROUP: string[] = [
+	static readonly CreateDBSecurityGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSecurityGroup",
 	];
 	/** IAM actions required for the CreateDBShardGroup API call. */
-	static readonly CREATE_DB_SHARD_GROUP: string[] = [
+	static readonly CreateDBShardGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBShardGroup",
 	];
 	/** IAM actions required for the CreateDBSnapshot API call. */
-	static readonly CREATE_DB_SNAPSHOT: string[] = [
+	static readonly CreateDBSnapshot: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSnapshot",
 	];
 	/** IAM actions required for the CreateDBSubnetGroup API call. */
-	static readonly CREATE_DB_SUBNET_GROUP: string[] = [
+	static readonly CreateDBSubnetGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSubnetGroup",
 	];
 	/** IAM actions required for the CreateEventSubscription API call. */
-	static readonly CREATE_EVENT_SUBSCRIPTION: string[] = [
+	static readonly CreateEventSubscription: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateEventSubscription",
 	];
 	/** IAM actions required for the CreateGlobalCluster API call. */
-	static readonly CREATE_GLOBAL_CLUSTER: string[] = [
+	static readonly CreateGlobalCluster: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateGlobalCluster",
 	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CREATE_INTEGRATION: string[] = [
+	static readonly CreateIntegration: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateIntegration",
 	];
 	/** IAM actions required for the CreateOptionGroup API call. */
-	static readonly CREATE_OPTION_GROUP: string[] = [
+	static readonly CreateOptionGroup: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateOptionGroup",
 	];
 	/** IAM actions required for the CreateTenantDatabase API call. */
-	static readonly CREATE_TENANT_DATABASE: string[] = [
+	static readonly CreateTenantDatabase: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateTenantDatabase",
 	];
 	/** IAM actions required for the DeleteBlueGreenDeployment API call. */
-	static readonly DELETE_BLUE_GREEN_DEPLOYMENT: string[] = [
+	static readonly DeleteBlueGreenDeployment: string[] = [
 		"rds:DeleteBlueGreenDeployment",
 		"rds:DeleteDBCluster",
 		"rds:DeleteDBClusterEndpoint",
@@ -1944,429 +2254,411 @@ export class RDSOperations {
 		"rds:RemoveFromGlobalCluster",
 	];
 	/** IAM actions required for the DeleteCustomDBEngineVersion API call. */
-	static readonly DELETE_CUSTOM_DB_ENGINE_VERSION: string[] = [
+	static readonly DeleteCustomDBEngineVersion: string[] = [
 		"rds:DeleteCustomDBEngineVersion",
 	];
 	/** IAM actions required for the DeleteDBCluster API call. */
-	static readonly DELETE_DB_CLUSTER: string[] = [
+	static readonly DeleteDBCluster: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBClusterSnapshot",
 		"rds:DeleteDBCluster",
 		"rds:DeleteDBInstance",
 	];
 	/** IAM actions required for the DeleteDBClusterAutomatedBackup API call. */
-	static readonly DELETE_DB_CLUSTER_AUTOMATED_BACKUP: string[] = [
+	static readonly DeleteDBClusterAutomatedBackup: string[] = [
 		"rds:DeleteDBClusterAutomatedBackup",
 	];
 	/** IAM actions required for the DeleteDBClusterEndpoint API call. */
-	static readonly DELETE_DB_CLUSTER_ENDPOINT: string[] = [
+	static readonly DeleteDBClusterEndpoint: string[] = [
 		"rds:DeleteDBClusterEndpoint",
 	];
 	/** IAM actions required for the DeleteDBClusterParameterGroup API call. */
-	static readonly DELETE_DB_CLUSTER_PARAMETER_GROUP: string[] = [
+	static readonly DeleteDBClusterParameterGroup: string[] = [
 		"rds:DeleteDBClusterParameterGroup",
 	];
 	/** IAM actions required for the DeleteDBClusterSnapshot API call. */
-	static readonly DELETE_DB_CLUSTER_SNAPSHOT: string[] = [
+	static readonly DeleteDBClusterSnapshot: string[] = [
 		"rds:DeleteDBClusterSnapshot",
 	];
 	/** IAM actions required for the DeleteDBInstance API call. */
-	static readonly DELETE_DB_INSTANCE: string[] = [
+	static readonly DeleteDBInstance: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSnapshot",
 		"rds:DeleteDBInstance",
 		"rds:DeleteTenantDatabase",
 	];
 	/** IAM actions required for the DeleteDBInstanceAutomatedBackup API call. */
-	static readonly DELETE_DB_INSTANCE_AUTOMATED_BACKUP: string[] = [
+	static readonly DeleteDBInstanceAutomatedBackup: string[] = [
 		"rds:DeleteDBInstanceAutomatedBackup",
 	];
 	/** IAM actions required for the DeleteDBParameterGroup API call. */
-	static readonly DELETE_DB_PARAMETER_GROUP: string[] = [
+	static readonly DeleteDBParameterGroup: string[] = [
 		"rds:DeleteDBParameterGroup",
 	];
 	/** IAM actions required for the DeleteDBProxy API call. */
-	static readonly DELETE_DB_PROXY: string[] = ["rds:DeleteDBProxy"];
+	static readonly DeleteDBProxy: string[] = ["rds:DeleteDBProxy"];
 	/** IAM actions required for the DeleteDBProxyEndpoint API call. */
-	static readonly DELETE_DB_PROXY_ENDPOINT: string[] = [
+	static readonly DeleteDBProxyEndpoint: string[] = [
 		"rds:DeleteDBProxyEndpoint",
 	];
 	/** IAM actions required for the DeleteDBSecurityGroup API call. */
-	static readonly DELETE_DB_SECURITY_GROUP: string[] = [
+	static readonly DeleteDBSecurityGroup: string[] = [
 		"rds:DeleteDBSecurityGroup",
 	];
 	/** IAM actions required for the DeleteDBShardGroup API call. */
-	static readonly DELETE_DB_SHARD_GROUP: string[] = ["rds:DeleteDBShardGroup"];
+	static readonly DeleteDBShardGroup: string[] = ["rds:DeleteDBShardGroup"];
 	/** IAM actions required for the DeleteDBSnapshot API call. */
-	static readonly DELETE_DB_SNAPSHOT: string[] = ["rds:DeleteDBSnapshot"];
+	static readonly DeleteDBSnapshot: string[] = ["rds:DeleteDBSnapshot"];
 	/** IAM actions required for the DeleteDBSubnetGroup API call. */
-	static readonly DELETE_DB_SUBNET_GROUP: string[] = [
-		"rds:DeleteDBSubnetGroup",
-	];
+	static readonly DeleteDBSubnetGroup: string[] = ["rds:DeleteDBSubnetGroup"];
 	/** IAM actions required for the DeleteEventSubscription API call. */
-	static readonly DELETE_EVENT_SUBSCRIPTION: string[] = [
+	static readonly DeleteEventSubscription: string[] = [
 		"rds:DeleteEventSubscription",
 	];
 	/** IAM actions required for the DeleteGlobalCluster API call. */
-	static readonly DELETE_GLOBAL_CLUSTER: string[] = ["rds:DeleteGlobalCluster"];
+	static readonly DeleteGlobalCluster: string[] = ["rds:DeleteGlobalCluster"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = ["rds:DeleteIntegration"];
+	static readonly DeleteIntegration: string[] = ["rds:DeleteIntegration"];
 	/** IAM actions required for the DeleteOptionGroup API call. */
-	static readonly DELETE_OPTION_GROUP: string[] = ["rds:DeleteOptionGroup"];
+	static readonly DeleteOptionGroup: string[] = ["rds:DeleteOptionGroup"];
 	/** IAM actions required for the DeleteTenantDatabase API call. */
-	static readonly DELETE_TENANT_DATABASE: string[] = [
+	static readonly DeleteTenantDatabase: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSnapshot",
 		"rds:DeleteTenantDatabase",
 	];
 	/** IAM actions required for the DeregisterDBProxyTargets API call. */
-	static readonly DEREGISTER_DB_PROXY_TARGETS: string[] = [
+	static readonly DeregisterDBProxyTargets: string[] = [
 		"rds:DeregisterDBProxyTargets",
 	];
 	/** IAM actions required for the DescribeAccountAttributes API call. */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES: string[] = [
+	static readonly DescribeAccountAttributes: string[] = [
 		"rds:DescribeAccountAttributes",
 	];
 	/** IAM actions required for the DescribeBlueGreenDeployments API call. */
-	static readonly DESCRIBE_BLUE_GREEN_DEPLOYMENTS: string[] = [
+	static readonly DescribeBlueGreenDeployments: string[] = [
 		"rds:DescribeBlueGreenDeployments",
 	];
 	/** IAM actions required for the DescribeCertificates API call. */
-	static readonly DESCRIBE_CERTIFICATES: string[] = [
-		"rds:DescribeCertificates",
-	];
+	static readonly DescribeCertificates: string[] = ["rds:DescribeCertificates"];
 	/** IAM actions required for the DescribeDBClusterAutomatedBackups API call. */
-	static readonly DESCRIBE_DB_CLUSTER_AUTOMATED_BACKUPS: string[] = [
+	static readonly DescribeDBClusterAutomatedBackups: string[] = [
 		"rds:DescribeDBClusterAutomatedBackups",
 	];
 	/** IAM actions required for the DescribeDBClusterBacktracks API call. */
-	static readonly DESCRIBE_DB_CLUSTER_BACKTRACKS: string[] = [
+	static readonly DescribeDBClusterBacktracks: string[] = [
 		"rds:DescribeDBClusterBacktracks",
 	];
 	/** IAM actions required for the DescribeDBClusterEndpoints API call. */
-	static readonly DESCRIBE_DB_CLUSTER_ENDPOINTS: string[] = [
+	static readonly DescribeDBClusterEndpoints: string[] = [
 		"rds:DescribeDBClusterEndpoints",
 	];
 	/** IAM actions required for the DescribeDBClusterParameterGroups API call. */
-	static readonly DESCRIBE_DB_CLUSTER_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeDBClusterParameterGroups: string[] = [
 		"rds:DescribeDBClusterParameterGroups",
 	];
 	/** IAM actions required for the DescribeDBClusterParameters API call. */
-	static readonly DESCRIBE_DB_CLUSTER_PARAMETERS: string[] = [
+	static readonly DescribeDBClusterParameters: string[] = [
 		"rds:DescribeDBClusterParameters",
 	];
 	/** IAM actions required for the DescribeDBClusterSnapshotAttributes API call. */
-	static readonly DESCRIBE_DB_CLUSTER_SNAPSHOT_ATTRIBUTES: string[] = [
+	static readonly DescribeDBClusterSnapshotAttributes: string[] = [
 		"rds:DescribeDBClusterSnapshotAttributes",
 	];
 	/** IAM actions required for the DescribeDBClusterSnapshots API call. */
-	static readonly DESCRIBE_DB_CLUSTER_SNAPSHOTS: string[] = [
+	static readonly DescribeDBClusterSnapshots: string[] = [
 		"rds:DescribeDBClusterSnapshots",
 	];
 	/** IAM actions required for the DescribeDBClusters API call. */
-	static readonly DESCRIBE_DB_CLUSTERS: string[] = ["rds:DescribeDBClusters"];
+	static readonly DescribeDBClusters: string[] = ["rds:DescribeDBClusters"];
 	/** IAM actions required for the DescribeDBEngineVersions API call. */
-	static readonly DESCRIBE_DB_ENGINE_VERSIONS: string[] = [
+	static readonly DescribeDBEngineVersions: string[] = [
 		"rds:DescribeDBEngineVersions",
 	];
 	/** IAM actions required for the DescribeDBInstanceAutomatedBackups API call. */
-	static readonly DESCRIBE_DB_INSTANCE_AUTOMATED_BACKUPS: string[] = [
+	static readonly DescribeDBInstanceAutomatedBackups: string[] = [
 		"rds:DescribeDBInstanceAutomatedBackups",
 	];
 	/** IAM actions required for the DescribeDBInstances API call. */
-	static readonly DESCRIBE_DB_INSTANCES: string[] = ["rds:DescribeDBInstances"];
+	static readonly DescribeDBInstances: string[] = ["rds:DescribeDBInstances"];
 	/** IAM actions required for the DescribeDBLogFiles API call. */
-	static readonly DESCRIBE_DB_LOG_FILES: string[] = ["rds:DescribeDBLogFiles"];
+	static readonly DescribeDBLogFiles: string[] = ["rds:DescribeDBLogFiles"];
 	/** IAM actions required for the DescribeDBMajorEngineVersions API call. */
-	static readonly DESCRIBE_DB_MAJOR_ENGINE_VERSIONS: string[] = [
+	static readonly DescribeDBMajorEngineVersions: string[] = [
 		"rds:DescribeDBMajorEngineVersions",
 	];
 	/** IAM actions required for the DescribeDBParameterGroups API call. */
-	static readonly DESCRIBE_DB_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeDBParameterGroups: string[] = [
 		"rds:DescribeDBParameterGroups",
 	];
 	/** IAM actions required for the DescribeDBParameters API call. */
-	static readonly DESCRIBE_DB_PARAMETERS: string[] = [
-		"rds:DescribeDBParameters",
-	];
+	static readonly DescribeDBParameters: string[] = ["rds:DescribeDBParameters"];
 	/** IAM actions required for the DescribeDBProxies API call. */
-	static readonly DESCRIBE_DB_PROXIES: string[] = ["rds:DescribeDBProxies"];
+	static readonly DescribeDBProxies: string[] = ["rds:DescribeDBProxies"];
 	/** IAM actions required for the DescribeDBProxyEndpoints API call. */
-	static readonly DESCRIBE_DB_PROXY_ENDPOINTS: string[] = [
+	static readonly DescribeDBProxyEndpoints: string[] = [
 		"rds:DescribeDBProxyEndpoints",
 	];
 	/** IAM actions required for the DescribeDBProxyTargetGroups API call. */
-	static readonly DESCRIBE_DB_PROXY_TARGET_GROUPS: string[] = [
+	static readonly DescribeDBProxyTargetGroups: string[] = [
 		"rds:DescribeDBProxyTargetGroups",
 	];
 	/** IAM actions required for the DescribeDBProxyTargets API call. */
-	static readonly DESCRIBE_DB_PROXY_TARGETS: string[] = [
+	static readonly DescribeDBProxyTargets: string[] = [
 		"rds:DescribeDBProxyTargets",
 	];
 	/** IAM actions required for the DescribeDBRecommendations API call. */
-	static readonly DESCRIBE_DB_RECOMMENDATIONS: string[] = [
+	static readonly DescribeDBRecommendations: string[] = [
 		"rds:DescribeDBRecommendations",
 	];
 	/** IAM actions required for the DescribeDBSecurityGroups API call. */
-	static readonly DESCRIBE_DB_SECURITY_GROUPS: string[] = [
+	static readonly DescribeDBSecurityGroups: string[] = [
 		"rds:DescribeDBSecurityGroups",
 	];
 	/** IAM actions required for the DescribeDBShardGroups API call. */
-	static readonly DESCRIBE_DB_SHARD_GROUPS: string[] = [
+	static readonly DescribeDBShardGroups: string[] = [
 		"rds:DescribeDBShardGroups",
 	];
 	/** IAM actions required for the DescribeDBSnapshotAttributes API call. */
-	static readonly DESCRIBE_DB_SNAPSHOT_ATTRIBUTES: string[] = [
+	static readonly DescribeDBSnapshotAttributes: string[] = [
 		"rds:DescribeDBSnapshotAttributes",
 	];
 	/** IAM actions required for the DescribeDBSnapshotTenantDatabases API call. */
-	static readonly DESCRIBE_DB_SNAPSHOT_TENANT_DATABASES: string[] = [
+	static readonly DescribeDBSnapshotTenantDatabases: string[] = [
 		"rds:DescribeDBSnapshotTenantDatabases",
 	];
 	/** IAM actions required for the DescribeDBSnapshots API call. */
-	static readonly DESCRIBE_DB_SNAPSHOTS: string[] = ["rds:DescribeDBSnapshots"];
+	static readonly DescribeDBSnapshots: string[] = ["rds:DescribeDBSnapshots"];
 	/** IAM actions required for the DescribeDBSubnetGroups API call. */
-	static readonly DESCRIBE_DB_SUBNET_GROUPS: string[] = [
+	static readonly DescribeDBSubnetGroups: string[] = [
 		"rds:DescribeDBSubnetGroups",
 	];
 	/** IAM actions required for the DescribeEngineDefaultClusterParameters API call. */
-	static readonly DESCRIBE_ENGINE_DEFAULT_CLUSTER_PARAMETERS: string[] = [
+	static readonly DescribeEngineDefaultClusterParameters: string[] = [
 		"rds:DescribeEngineDefaultClusterParameters",
 	];
 	/** IAM actions required for the DescribeEngineDefaultParameters API call. */
-	static readonly DESCRIBE_ENGINE_DEFAULT_PARAMETERS: string[] = [
+	static readonly DescribeEngineDefaultParameters: string[] = [
 		"rds:DescribeEngineDefaultParameters",
 	];
 	/** IAM actions required for the DescribeEventCategories API call. */
-	static readonly DESCRIBE_EVENT_CATEGORIES: string[] = [
+	static readonly DescribeEventCategories: string[] = [
 		"rds:DescribeEventCategories",
 	];
 	/** IAM actions required for the DescribeEventSubscriptions API call. */
-	static readonly DESCRIBE_EVENT_SUBSCRIPTIONS: string[] = [
+	static readonly DescribeEventSubscriptions: string[] = [
 		"rds:DescribeEventSubscriptions",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["rds:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["rds:DescribeEvents"];
 	/** IAM actions required for the DescribeExportTasks API call. */
-	static readonly DESCRIBE_EXPORT_TASKS: string[] = ["rds:DescribeExportTasks"];
+	static readonly DescribeExportTasks: string[] = ["rds:DescribeExportTasks"];
 	/** IAM actions required for the DescribeGlobalClusters API call. */
-	static readonly DESCRIBE_GLOBAL_CLUSTERS: string[] = [
+	static readonly DescribeGlobalClusters: string[] = [
 		"rds:DescribeGlobalClusters",
 	];
 	/** IAM actions required for the DescribeIntegrations API call. */
-	static readonly DESCRIBE_INTEGRATIONS: string[] = [
-		"rds:DescribeIntegrations",
-	];
+	static readonly DescribeIntegrations: string[] = ["rds:DescribeIntegrations"];
 	/** IAM actions required for the DescribeOptionGroupOptions API call. */
-	static readonly DESCRIBE_OPTION_GROUP_OPTIONS: string[] = [
+	static readonly DescribeOptionGroupOptions: string[] = [
 		"rds:DescribeOptionGroupOptions",
 	];
 	/** IAM actions required for the DescribeOptionGroups API call. */
-	static readonly DESCRIBE_OPTION_GROUPS: string[] = [
-		"rds:DescribeOptionGroups",
-	];
+	static readonly DescribeOptionGroups: string[] = ["rds:DescribeOptionGroups"];
 	/** IAM actions required for the DescribeOrderableDBInstanceOptions API call. */
-	static readonly DESCRIBE_ORDERABLE_DB_INSTANCE_OPTIONS: string[] = [
+	static readonly DescribeOrderableDBInstanceOptions: string[] = [
 		"rds:DescribeOrderableDBInstanceOptions",
 	];
 	/** IAM actions required for the DescribePendingMaintenanceActions API call. */
-	static readonly DESCRIBE_PENDING_MAINTENANCE_ACTIONS: string[] = [
+	static readonly DescribePendingMaintenanceActions: string[] = [
 		"rds:DescribePendingMaintenanceActions",
 	];
 	/** IAM actions required for the DescribeReservedDBInstances API call. */
-	static readonly DESCRIBE_RESERVED_DB_INSTANCES: string[] = [
+	static readonly DescribeReservedDBInstances: string[] = [
 		"rds:DescribeReservedDBInstances",
 	];
 	/** IAM actions required for the DescribeReservedDBInstancesOfferings API call. */
-	static readonly DESCRIBE_RESERVED_DB_INSTANCES_OFFERINGS: string[] = [
+	static readonly DescribeReservedDBInstancesOfferings: string[] = [
 		"rds:DescribeReservedDBInstancesOfferings",
 	];
 	/** IAM actions required for the DescribeServerlessV2PlatformVersions API call. */
-	static readonly DESCRIBE_SERVERLESS_V2_PLATFORM_VERSIONS: string[] = [];
+	static readonly DescribeServerlessV2PlatformVersions: string[] = [];
 	/** IAM actions required for the DescribeSourceRegions API call. */
-	static readonly DESCRIBE_SOURCE_REGIONS: string[] = [
+	static readonly DescribeSourceRegions: string[] = [
 		"rds:DescribeSourceRegions",
 	];
 	/** IAM actions required for the DescribeTenantDatabases API call. */
-	static readonly DESCRIBE_TENANT_DATABASES: string[] = [
+	static readonly DescribeTenantDatabases: string[] = [
 		"rds:DescribeTenantDatabases",
 	];
 	/** IAM actions required for the DescribeValidDBInstanceModifications API call. */
-	static readonly DESCRIBE_VALID_DB_INSTANCE_MODIFICATIONS: string[] = [
+	static readonly DescribeValidDBInstanceModifications: string[] = [
 		"rds:DescribeValidDBInstanceModifications",
 	];
 	/** IAM actions required for the DisableHttpEndpoint API call. */
-	static readonly DISABLE_HTTP_ENDPOINT: string[] = ["rds:DisableHttpEndpoint"];
+	static readonly DisableHttpEndpoint: string[] = ["rds:DisableHttpEndpoint"];
 	/** IAM actions required for the DownloadDBLogFilePortion API call. */
-	static readonly DOWNLOAD_DB_LOG_FILE_PORTION: string[] = [
+	static readonly DownloadDBLogFilePortion: string[] = [
 		"rds:DownloadDBLogFilePortion",
 	];
 	/** IAM actions required for the EnableHttpEndpoint API call. */
-	static readonly ENABLE_HTTP_ENDPOINT: string[] = ["rds:EnableHttpEndpoint"];
+	static readonly EnableHttpEndpoint: string[] = ["rds:EnableHttpEndpoint"];
 	/** IAM actions required for the FailoverDBCluster API call. */
-	static readonly FAILOVER_DB_CLUSTER: string[] = ["rds:FailoverDBCluster"];
+	static readonly FailoverDBCluster: string[] = ["rds:FailoverDBCluster"];
 	/** IAM actions required for the FailoverGlobalCluster API call. */
-	static readonly FAILOVER_GLOBAL_CLUSTER: string[] = [
+	static readonly FailoverGlobalCluster: string[] = [
 		"rds:FailoverGlobalCluster",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"rds:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["rds:ListTagsForResource"];
 	/** IAM actions required for the ModifyActivityStream API call. */
-	static readonly MODIFY_ACTIVITY_STREAM: string[] = [
-		"rds:ModifyActivityStream",
-	];
+	static readonly ModifyActivityStream: string[] = ["rds:ModifyActivityStream"];
 	/** IAM actions required for the ModifyCertificates API call. */
-	static readonly MODIFY_CERTIFICATES: string[] = ["rds:ModifyCertificates"];
+	static readonly ModifyCertificates: string[] = ["rds:ModifyCertificates"];
 	/** IAM actions required for the ModifyCurrentDBClusterCapacity API call. */
-	static readonly MODIFY_CURRENT_DB_CLUSTER_CAPACITY: string[] = [
+	static readonly ModifyCurrentDBClusterCapacity: string[] = [
 		"rds:ModifyCurrentDBClusterCapacity",
 	];
 	/** IAM actions required for the ModifyCustomDBEngineVersion API call. */
-	static readonly MODIFY_CUSTOM_DB_ENGINE_VERSION: string[] = [
+	static readonly ModifyCustomDBEngineVersion: string[] = [
 		"rds:ModifyCustomDBEngineVersion",
 	];
 	/** IAM actions required for the ModifyDBCluster API call. */
-	static readonly MODIFY_DB_CLUSTER: string[] = [
+	static readonly ModifyDBCluster: string[] = [
 		"rds:ModifyDBCluster",
 		"rds:ModifyDBInstance",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ModifyDBClusterEndpoint API call. */
-	static readonly MODIFY_DB_CLUSTER_ENDPOINT: string[] = [
+	static readonly ModifyDBClusterEndpoint: string[] = [
 		"rds:ModifyDBClusterEndpoint",
 	];
 	/** IAM actions required for the ModifyDBClusterParameterGroup API call. */
-	static readonly MODIFY_DB_CLUSTER_PARAMETER_GROUP: string[] = [
+	static readonly ModifyDBClusterParameterGroup: string[] = [
 		"rds:ModifyDBClusterParameterGroup",
 	];
 	/** IAM actions required for the ModifyDBClusterSnapshotAttribute API call. */
-	static readonly MODIFY_DB_CLUSTER_SNAPSHOT_ATTRIBUTE: string[] = [
+	static readonly ModifyDBClusterSnapshotAttribute: string[] = [
 		"rds:ModifyDBClusterSnapshotAttribute",
 	];
 	/** IAM actions required for the ModifyDBInstance API call. */
-	static readonly MODIFY_DB_INSTANCE: string[] = [
+	static readonly ModifyDBInstance: string[] = [
 		"rds:AddTagsToResource",
 		"rds:ModifyDBInstance",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ModifyDBParameterGroup API call. */
-	static readonly MODIFY_DB_PARAMETER_GROUP: string[] = [
+	static readonly ModifyDBParameterGroup: string[] = [
 		"rds:ModifyDBParameterGroup",
 	];
 	/** IAM actions required for the ModifyDBProxy API call. */
-	static readonly MODIFY_DB_PROXY: string[] = [
+	static readonly ModifyDBProxy: string[] = [
 		"rds:ModifyDBProxy",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ModifyDBProxyEndpoint API call. */
-	static readonly MODIFY_DB_PROXY_ENDPOINT: string[] = [
+	static readonly ModifyDBProxyEndpoint: string[] = [
 		"rds:ModifyDBProxyEndpoint",
 	];
 	/** IAM actions required for the ModifyDBProxyTargetGroup API call. */
-	static readonly MODIFY_DB_PROXY_TARGET_GROUP: string[] = [
+	static readonly ModifyDBProxyTargetGroup: string[] = [
 		"rds:ModifyDBProxyTargetGroup",
 	];
 	/** IAM actions required for the ModifyDBRecommendation API call. */
-	static readonly MODIFY_DB_RECOMMENDATION: string[] = [
+	static readonly ModifyDBRecommendation: string[] = [
 		"rds:ModifyDBRecommendation",
 	];
 	/** IAM actions required for the ModifyDBShardGroup API call. */
-	static readonly MODIFY_DB_SHARD_GROUP: string[] = ["rds:ModifyDBShardGroup"];
+	static readonly ModifyDBShardGroup: string[] = ["rds:ModifyDBShardGroup"];
 	/** IAM actions required for the ModifyDBSnapshot API call. */
-	static readonly MODIFY_DB_SNAPSHOT: string[] = ["rds:ModifyDBSnapshot"];
+	static readonly ModifyDBSnapshot: string[] = ["rds:ModifyDBSnapshot"];
 	/** IAM actions required for the ModifyDBSnapshotAttribute API call. */
-	static readonly MODIFY_DB_SNAPSHOT_ATTRIBUTE: string[] = [
+	static readonly ModifyDBSnapshotAttribute: string[] = [
 		"rds:ModifyDBSnapshotAttribute",
 	];
 	/** IAM actions required for the ModifyDBSubnetGroup API call. */
-	static readonly MODIFY_DB_SUBNET_GROUP: string[] = [
-		"rds:ModifyDBSubnetGroup",
-	];
+	static readonly ModifyDBSubnetGroup: string[] = ["rds:ModifyDBSubnetGroup"];
 	/** IAM actions required for the ModifyEventSubscription API call. */
-	static readonly MODIFY_EVENT_SUBSCRIPTION: string[] = [
+	static readonly ModifyEventSubscription: string[] = [
 		"rds:ModifyEventSubscription",
 	];
 	/** IAM actions required for the ModifyGlobalCluster API call. */
-	static readonly MODIFY_GLOBAL_CLUSTER: string[] = ["rds:ModifyGlobalCluster"];
+	static readonly ModifyGlobalCluster: string[] = ["rds:ModifyGlobalCluster"];
 	/** IAM actions required for the ModifyIntegration API call. */
-	static readonly MODIFY_INTEGRATION: string[] = ["rds:ModifyIntegration"];
+	static readonly ModifyIntegration: string[] = ["rds:ModifyIntegration"];
 	/** IAM actions required for the ModifyOptionGroup API call. */
-	static readonly MODIFY_OPTION_GROUP: string[] = [
+	static readonly ModifyOptionGroup: string[] = [
 		"rds:ModifyOptionGroup",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ModifyTenantDatabase API call. */
-	static readonly MODIFY_TENANT_DATABASE: string[] = [
-		"rds:ModifyTenantDatabase",
-	];
+	static readonly ModifyTenantDatabase: string[] = ["rds:ModifyTenantDatabase"];
 	/** IAM actions required for the PromoteReadReplica API call. */
-	static readonly PROMOTE_READ_REPLICA: string[] = [
+	static readonly PromoteReadReplica: string[] = [
 		"rds:AddTagsToResource",
 		"rds:PromoteReadReplica",
 	];
 	/** IAM actions required for the PromoteReadReplicaDBCluster API call. */
-	static readonly PROMOTE_READ_REPLICA_DB_CLUSTER: string[] = [
+	static readonly PromoteReadReplicaDBCluster: string[] = [
 		"rds:PromoteReadReplicaDBCluster",
 	];
 	/** IAM actions required for the PurchaseReservedDBInstancesOffering API call. */
-	static readonly PURCHASE_RESERVED_DB_INSTANCES_OFFERING: string[] = [
+	static readonly PurchaseReservedDBInstancesOffering: string[] = [
 		"rds:AddTagsToResource",
 		"rds:PurchaseReservedDBInstancesOffering",
 	];
 	/** IAM actions required for the RebootDBCluster API call. */
-	static readonly REBOOT_DB_CLUSTER: string[] = [
+	static readonly RebootDBCluster: string[] = [
 		"rds:RebootDBCluster",
 		"rds:RebootDBInstance",
 	];
 	/** IAM actions required for the RebootDBInstance API call. */
-	static readonly REBOOT_DB_INSTANCE: string[] = ["rds:RebootDBInstance"];
+	static readonly RebootDBInstance: string[] = ["rds:RebootDBInstance"];
 	/** IAM actions required for the RebootDBShardGroup API call. */
-	static readonly REBOOT_DB_SHARD_GROUP: string[] = ["rds:RebootDBShardGroup"];
+	static readonly RebootDBShardGroup: string[] = ["rds:RebootDBShardGroup"];
 	/** IAM actions required for the RegisterDBProxyTargets API call. */
-	static readonly REGISTER_DB_PROXY_TARGETS: string[] = [
+	static readonly RegisterDBProxyTargets: string[] = [
 		"rds:RegisterDBProxyTargets",
 	];
 	/** IAM actions required for the RemoveFromGlobalCluster API call. */
-	static readonly REMOVE_FROM_GLOBAL_CLUSTER: string[] = [
+	static readonly RemoveFromGlobalCluster: string[] = [
 		"rds:RemoveFromGlobalCluster",
 	];
 	/** IAM actions required for the RemoveRoleFromDBCluster API call. */
-	static readonly REMOVE_ROLE_FROM_DB_CLUSTER: string[] = [
+	static readonly RemoveRoleFromDBCluster: string[] = [
 		"iam:PassRole",
 		"rds:RemoveRoleFromDBCluster",
 	];
 	/** IAM actions required for the RemoveRoleFromDBInstance API call. */
-	static readonly REMOVE_ROLE_FROM_DB_INSTANCE: string[] = [
+	static readonly RemoveRoleFromDBInstance: string[] = [
 		"iam:PassRole",
 		"rds:RemoveRoleFromDBInstance",
 	];
 	/** IAM actions required for the RemoveSourceIdentifierFromSubscription API call. */
-	static readonly REMOVE_SOURCE_IDENTIFIER_FROM_SUBSCRIPTION: string[] = [
+	static readonly RemoveSourceIdentifierFromSubscription: string[] = [
 		"rds:RemoveSourceIdentifierFromSubscription",
 	];
 	/** IAM actions required for the RemoveTagsFromResource API call. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE: string[] = [
+	static readonly RemoveTagsFromResource: string[] = [
 		"rds:RemoveTagsFromResource",
 	];
 	/** IAM actions required for the ResetDBClusterParameterGroup API call. */
-	static readonly RESET_DB_CLUSTER_PARAMETER_GROUP: string[] = [
+	static readonly ResetDBClusterParameterGroup: string[] = [
 		"rds:ResetDBClusterParameterGroup",
 	];
 	/** IAM actions required for the ResetDBParameterGroup API call. */
-	static readonly RESET_DB_PARAMETER_GROUP: string[] = [
+	static readonly ResetDBParameterGroup: string[] = [
 		"rds:ResetDBParameterGroup",
 	];
 	/** IAM actions required for the RestoreDBClusterFromS3 API call. */
-	static readonly RESTORE_DB_CLUSTER_FROM_S3: string[] = [
+	static readonly RestoreDBClusterFromS3: string[] = [
 		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"iam:PassRole",
 		"rds:RestoreDBClusterFromS3",
 	];
 	/** IAM actions required for the RestoreDBClusterFromSnapshot API call. */
-	static readonly RESTORE_DB_CLUSTER_FROM_SNAPSHOT: string[] = [
+	static readonly RestoreDBClusterFromSnapshot: string[] = [
 		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
@@ -2374,68 +2666,68 @@ export class RDSOperations {
 		"rds:RestoreDBClusterFromSnapshot",
 	];
 	/** IAM actions required for the RestoreDBClusterToPointInTime API call. */
-	static readonly RESTORE_DB_CLUSTER_TO_POINT_IN_TIME: string[] = [
+	static readonly RestoreDBClusterToPointInTime: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
 		"iam:PassRole",
 		"rds:RestoreDBClusterToPointInTime",
 	];
 	/** IAM actions required for the RestoreDBInstanceFromDBSnapshot API call. */
-	static readonly RESTORE_DB_INSTANCE_FROM_DB_SNAPSHOT: string[] = [
+	static readonly RestoreDBInstanceFromDBSnapshot: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateTenantDatabase",
 		"iam:PassRole",
 		"rds:RestoreDBInstanceFromDBSnapshot",
 	];
 	/** IAM actions required for the RestoreDBInstanceFromS3 API call. */
-	static readonly RESTORE_DB_INSTANCE_FROM_S3: string[] = [
+	static readonly RestoreDBInstanceFromS3: string[] = [
 		"rds:AddTagsToResource",
 		"iam:PassRole",
 		"rds:RestoreDBInstanceFromS3",
 	];
 	/** IAM actions required for the RestoreDBInstanceToPointInTime API call. */
-	static readonly RESTORE_DB_INSTANCE_TO_POINT_IN_TIME: string[] = [
+	static readonly RestoreDBInstanceToPointInTime: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateTenantDatabase",
 		"iam:PassRole",
 		"rds:RestoreDBInstanceToPointInTime",
 	];
 	/** IAM actions required for the RevokeDBSecurityGroupIngress API call. */
-	static readonly REVOKE_DB_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly RevokeDBSecurityGroupIngress: string[] = [
 		"rds:RevokeDBSecurityGroupIngress",
 	];
 	/** IAM actions required for the StartActivityStream API call. */
-	static readonly START_ACTIVITY_STREAM: string[] = ["rds:StartActivityStream"];
+	static readonly StartActivityStream: string[] = ["rds:StartActivityStream"];
 	/** IAM actions required for the StartDBCluster API call. */
-	static readonly START_DB_CLUSTER: string[] = ["rds:StartDBCluster"];
+	static readonly StartDBCluster: string[] = ["rds:StartDBCluster"];
 	/** IAM actions required for the StartDBInstance API call. */
-	static readonly START_DB_INSTANCE: string[] = ["rds:StartDBInstance"];
+	static readonly StartDBInstance: string[] = ["rds:StartDBInstance"];
 	/** IAM actions required for the StartDBInstanceAutomatedBackupsReplication API call. */
-	static readonly START_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION: string[] = [
+	static readonly StartDBInstanceAutomatedBackupsReplication: string[] = [
 		"rds:AddTagsToResource",
 		"rds:StartDBInstanceAutomatedBackupsReplication",
 	];
 	/** IAM actions required for the StartExportTask API call. */
-	static readonly START_EXPORT_TASK: string[] = [
+	static readonly StartExportTask: string[] = [
 		"iam:PassRole",
 		"rds:StartExportTask",
 	];
 	/** IAM actions required for the StopActivityStream API call. */
-	static readonly STOP_ACTIVITY_STREAM: string[] = ["rds:StopActivityStream"];
+	static readonly StopActivityStream: string[] = ["rds:StopActivityStream"];
 	/** IAM actions required for the StopDBCluster API call. */
-	static readonly STOP_DB_CLUSTER: string[] = ["rds:StopDBCluster"];
+	static readonly StopDBCluster: string[] = ["rds:StopDBCluster"];
 	/** IAM actions required for the StopDBInstance API call. */
-	static readonly STOP_DB_INSTANCE: string[] = [
+	static readonly StopDBInstance: string[] = [
 		"rds:AddTagsToResource",
 		"rds:CreateDBSnapshot",
 		"rds:StopDBInstance",
 	];
 	/** IAM actions required for the StopDBInstanceAutomatedBackupsReplication API call. */
-	static readonly STOP_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION: string[] = [
+	static readonly StopDBInstanceAutomatedBackupsReplication: string[] = [
 		"rds:StopDBInstanceAutomatedBackupsReplication",
 	];
 	/** IAM actions required for the SwitchoverBlueGreenDeployment API call. */
-	static readonly SWITCHOVER_BLUE_GREEN_DEPLOYMENT: string[] = [
+	static readonly SwitchoverBlueGreenDeployment: string[] = [
 		"rds:ModifyDBCluster",
 		"rds:ModifyDBInstance",
 		"rds:ModifyGlobalCluster",
@@ -2444,11 +2736,11 @@ export class RDSOperations {
 		"rds:SwitchoverBlueGreenDeployment",
 	];
 	/** IAM actions required for the SwitchoverGlobalCluster API call. */
-	static readonly SWITCHOVER_GLOBAL_CLUSTER: string[] = [
+	static readonly SwitchoverGlobalCluster: string[] = [
 		"rds:SwitchoverGlobalCluster",
 	];
 	/** IAM actions required for the SwitchoverReadReplica API call. */
-	static readonly SWITCHOVER_READ_REPLICA: string[] = [
+	static readonly SwitchoverReadReplica: string[] = [
 		"rds:SwitchoverReadReplica",
 	];
 }
@@ -2458,45 +2750,45 @@ export class RDSOperations {
  */
 export class RDSConditions {
 	/** Condition keys applicable to the AddTagsToResource action. */
-	static readonly ADD_TAGS_TO_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AddTagsToResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:TagsFromRequest",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyDBClusterParameterGroup action. */
-	static readonly COPY_DB_CLUSTER_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CopyDBClusterParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyDBClusterSnapshot action. */
-	static readonly COPY_DB_CLUSTER_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CopyDBClusterSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyDBParameterGroup action. */
-	static readonly COPY_DB_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CopyDBParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyDBSnapshot action. */
-	static readonly COPY_DB_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CopyDBSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:CopyOptionGroup",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyOptionGroup action. */
-	static readonly COPY_OPTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CopyOptionGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateBlueGreenDeployment action. */
-	static readonly CREATE_BLUE_GREEN_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateBlueGreenDeploymentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -2515,13 +2807,13 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateCustomDBEngineVersion action. */
-	static readonly CREATE_CUSTOM_DB_ENGINE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomDBEngineVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBCluster action. */
-	static readonly CREATE_DB_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateDBClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:DatabaseClass",
@@ -2534,26 +2826,26 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBClusterEndpoint action. */
-	static readonly CREATE_DB_CLUSTER_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateDBClusterEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:EndpointType",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBClusterParameterGroup action. */
-	static readonly CREATE_DB_CLUSTER_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDBClusterParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBClusterSnapshot action. */
-	static readonly CREATE_DB_CLUSTER_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateDBClusterSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBInstance action. */
-	static readonly CREATE_DB_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateDBInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:BackupTarget",
@@ -2562,80 +2854,80 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBInstanceReadReplica action. */
-	static readonly CREATE_DB_INSTANCE_READ_REPLICA_CONDITION_KEYS: string[] = [
+	static readonly CreateDBInstanceReadReplicaConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:PubliclyAccessible",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBParameterGroup action. */
-	static readonly CREATE_DB_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDBParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBProxy action. */
-	static readonly CREATE_DB_PROXY_CONDITION_KEYS: string[] = [
+	static readonly CreateDBProxyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDBProxyEndpoint action. */
-	static readonly CREATE_DB_PROXY_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateDBProxyEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDBSecurityGroup action. */
-	static readonly CREATE_DB_SECURITY_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDBSecurityGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBShardGroup action. */
-	static readonly CREATE_DB_SHARD_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDBShardGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:PubliclyAccessible",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBSnapshot action. */
-	static readonly CREATE_DB_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateDBSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:BackupTarget",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBSubnetGroup action. */
-	static readonly CREATE_DB_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDBSubnetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateEventSubscription action. */
-	static readonly CREATE_EVENT_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateEventSubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateGlobalCluster action. */
-	static readonly CREATE_GLOBAL_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateGlobalClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateIntegration action. */
-	static readonly CREATE_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly CreateIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateOptionGroup action. */
-	static readonly CREATE_OPTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateOptionGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateTenantDatabase action. */
-	static readonly CREATE_TENANT_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly CreateTenantDatabaseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:ManageMasterUserPassword",
@@ -2643,40 +2935,43 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteBlueGreenDeployment action. */
-	static readonly DELETE_BLUE_GREEN_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteBlueGreenDeploymentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeIntegrations action. */
-	static readonly DESCRIBE_INTEGRATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeIntegrationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyDBCluster action. */
-	static readonly MODIFY_DB_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly ModifyDBClusterConditionKeys: string[] = [
 		"rds:DatabaseClass",
 		"rds:ManageMasterUserPassword",
 		"rds:Piops",
 		"rds:StorageSize",
 	];
 	/** Condition keys applicable to the ModifyDBInstance action. */
-	static readonly MODIFY_DB_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly ModifyDBInstanceConditionKeys: string[] = [
 		"rds:ManageMasterUserPassword",
 	];
 	/** Condition keys applicable to the ModifyTenantDatabase action. */
-	static readonly MODIFY_TENANT_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly ModifyTenantDatabaseConditionKeys: string[] = [
 		"rds:ManageMasterUserPassword",
 		"rds:TenantDatabaseName",
 	];
 	/** Condition keys applicable to the PurchaseReservedDBInstancesOffering action. */
-	static readonly PURCHASE_RESERVED_DB_INSTANCES_OFFERING_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys", "rds:req-tag/${TagKey}"];
+	static readonly PurchaseReservedDBInstancesOfferingConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rds:req-tag/${TagKey}",
+	];
 	/** Condition keys applicable to the RemoveTagsFromResource action. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly RemoveTagsFromResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBClusterFromS3 action. */
-	static readonly RESTORE_DB_CLUSTER_FROM_S3_CONDITION_KEYS: string[] = [
+	static readonly RestoreDBClusterFromS3ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:DatabaseEngine",
@@ -2686,7 +2981,7 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBClusterFromSnapshot action. */
-	static readonly RESTORE_DB_CLUSTER_FROM_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly RestoreDBClusterFromSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:DatabaseClass",
@@ -2695,27 +2990,25 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBClusterToPointInTime action. */
-	static readonly RESTORE_DB_CLUSTER_TO_POINT_IN_TIME_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"rds:DatabaseClass",
-			"rds:Piops",
-			"rds:StorageSize",
-			"rds:req-tag/${TagKey}",
-		];
+	static readonly RestoreDBClusterToPointInTimeConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rds:DatabaseClass",
+		"rds:Piops",
+		"rds:StorageSize",
+		"rds:req-tag/${TagKey}",
+	];
 	/** Condition keys applicable to the RestoreDBInstanceFromDBSnapshot action. */
-	static readonly RESTORE_DB_INSTANCE_FROM_DB_SNAPSHOT_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"rds:BackupTarget",
-			"rds:ManageMasterUserPassword",
-			"rds:PubliclyAccessible",
-			"rds:req-tag/${TagKey}",
-		];
+	static readonly RestoreDBInstanceFromDBSnapshotConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rds:BackupTarget",
+		"rds:ManageMasterUserPassword",
+		"rds:PubliclyAccessible",
+		"rds:req-tag/${TagKey}",
+	];
 	/** Condition keys applicable to the RestoreDBInstanceFromS3 action. */
-	static readonly RESTORE_DB_INSTANCE_FROM_S3_CONDITION_KEYS: string[] = [
+	static readonly RestoreDBInstanceFromS3ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rds:ManageMasterUserPassword",
@@ -2723,29 +3016,28 @@ export class RDSConditions {
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBInstanceToPointInTime action. */
-	static readonly RESTORE_DB_INSTANCE_TO_POINT_IN_TIME_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"rds:BackupTarget",
-			"rds:ManageMasterUserPassword",
-			"rds:PubliclyAccessible",
-			"rds:req-tag/${TagKey}",
-		];
+	static readonly RestoreDBInstanceToPointInTimeConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"rds:BackupTarget",
+		"rds:ManageMasterUserPassword",
+		"rds:PubliclyAccessible",
+		"rds:req-tag/${TagKey}",
+	];
 	/** Condition keys applicable to the StartDBInstanceAutomatedBackupsReplication action. */
-	static readonly START_DB_INSTANCE_AUTOMATED_BACKUPS_REPLICATION_CONDITION_KEYS: string[] =
+	static readonly StartDBInstanceAutomatedBackupsReplicationConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys", "rds:req-tag/${TagKey}"];
 	/** Condition keys applicable to the SwitchoverBlueGreenDeployment action. */
-	static readonly SWITCHOVER_BLUE_GREEN_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly SwitchoverBlueGreenDeploymentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: rds:BackupTarget (String) */
 	static readonly BACKUP_TARGET = "rds:BackupTarget";
 	/** Condition key: rds:CopyOptionGroup (Bool) */

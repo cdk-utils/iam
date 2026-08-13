@@ -13,69 +13,119 @@ export class BudgetsActions {
 	static readonly SERVICE_PREFIX = "budgets";
 
 	/** [Write] budgets:CreateBudgetAction */
-	static readonly CREATE_BUDGET_ACTION = "budgets:CreateBudgetAction";
+	static readonly CreateBudgetAction = "budgets:CreateBudgetAction";
 	/** [Write] budgets:DeleteBudgetAction */
-	static readonly DELETE_BUDGET_ACTION = "budgets:DeleteBudgetAction";
+	static readonly DeleteBudgetAction = "budgets:DeleteBudgetAction";
 	/** [Read] budgets:DescribeBudgetAction */
-	static readonly DESCRIBE_BUDGET_ACTION = "budgets:DescribeBudgetAction";
+	static readonly DescribeBudgetAction = "budgets:DescribeBudgetAction";
 	/** [Read] budgets:DescribeBudgetActionHistories */
-	static readonly DESCRIBE_BUDGET_ACTION_HISTORIES =
+	static readonly DescribeBudgetActionHistories =
 		"budgets:DescribeBudgetActionHistories";
 	/** [Read] budgets:DescribeBudgetActionsForAccount */
-	static readonly DESCRIBE_BUDGET_ACTIONS_FOR_ACCOUNT =
+	static readonly DescribeBudgetActionsForAccount =
 		"budgets:DescribeBudgetActionsForAccount";
 	/** [Read] budgets:DescribeBudgetActionsForBudget */
-	static readonly DESCRIBE_BUDGET_ACTIONS_FOR_BUDGET =
+	static readonly DescribeBudgetActionsForBudget =
 		"budgets:DescribeBudgetActionsForBudget";
 	/** [Write] budgets:ExecuteBudgetAction */
-	static readonly EXECUTE_BUDGET_ACTION = "budgets:ExecuteBudgetAction";
+	static readonly ExecuteBudgetAction = "budgets:ExecuteBudgetAction";
 	/** [Read] budgets:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "budgets:ListTagsForResource";
+	static readonly ListTagsForResource = "budgets:ListTagsForResource";
 	/** [Write] budgets:ModifyBudget */
-	static readonly MODIFY_BUDGET = "budgets:ModifyBudget";
+	static readonly ModifyBudget = "budgets:ModifyBudget";
 	/** [Tagging] budgets:TagResource */
-	static readonly TAG_RESOURCE = "budgets:TagResource";
+	static readonly TagResource = "budgets:TagResource";
 	/** [Tagging] budgets:UntagResource */
-	static readonly UNTAG_RESOURCE = "budgets:UntagResource";
+	static readonly UntagResource = "budgets:UntagResource";
 	/** [Write] budgets:UpdateBudgetAction */
-	static readonly UPDATE_BUDGET_ACTION = "budgets:UpdateBudgetAction";
+	static readonly UpdateBudgetAction = "budgets:UpdateBudgetAction";
 	/** [Read] budgets:ViewBudget */
-	static readonly VIEW_BUDGET = "budgets:ViewBudget";
+	static readonly ViewBudget = "budgets:ViewBudget";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BudgetsActions.DESCRIBE_BUDGET_ACTION,
-		BudgetsActions.DESCRIBE_BUDGET_ACTION_HISTORIES,
-		BudgetsActions.DESCRIBE_BUDGET_ACTIONS_FOR_ACCOUNT,
-		BudgetsActions.DESCRIBE_BUDGET_ACTIONS_FOR_BUDGET,
-		BudgetsActions.LIST_TAGS_FOR_RESOURCE,
-		BudgetsActions.VIEW_BUDGET,
+	static readonly AllReadActions: string[] = [
+		BudgetsActions.DescribeBudgetAction,
+		BudgetsActions.DescribeBudgetActionHistories,
+		BudgetsActions.DescribeBudgetActionsForAccount,
+		BudgetsActions.DescribeBudgetActionsForBudget,
+		BudgetsActions.ListTagsForResource,
+		BudgetsActions.ViewBudget,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BudgetsActions.CREATE_BUDGET_ACTION,
-		BudgetsActions.DELETE_BUDGET_ACTION,
-		BudgetsActions.EXECUTE_BUDGET_ACTION,
-		BudgetsActions.MODIFY_BUDGET,
-		BudgetsActions.UPDATE_BUDGET_ACTION,
+	static readonly AllWriteActions: string[] = [
+		BudgetsActions.CreateBudgetAction,
+		BudgetsActions.DeleteBudgetAction,
+		BudgetsActions.ExecuteBudgetAction,
+		BudgetsActions.ModifyBudget,
+		BudgetsActions.UpdateBudgetAction,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BudgetsActions.TAG_RESOURCE,
-		BudgetsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BudgetsActions.TagResource,
+		BudgetsActions.UntagResource,
 	];
 }
 
-const BudgetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):budgets::(?<account>[^:]*):budget/(?<budgetName>[^:/?]+)$",
-);
-const BudgetActionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):budgets::(?<account>[^:]*):budget/(?<budgetName>[^:/?]+)/action/(?<actionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a budget ARN.
+ */
+export interface BudgetsBudgetArnProps {
+	/** The BudgetName component of the ARN. */
+	readonly budgetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a budget ARN.
+ */
+export interface BudgetsBudgetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BudgetName component. */
+	readonly budgetName: string;
+}
+
+/**
+ * Properties for building a budgetAction ARN.
+ */
+export interface BudgetsBudgetActionArnProps {
+	/** The BudgetName component of the ARN. */
+	readonly budgetName: string;
+	/** The ActionId component of the ARN. */
+	readonly actionId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a budgetAction ARN.
+ */
+export interface BudgetsBudgetActionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BudgetName component. */
+	readonly budgetName: string;
+	/** The ActionId component. */
+	readonly actionId: string;
+}
+
+const BudgetArnRegex =
+	/^arn:(?<partition>[^:]+):budgets::(?<account>[^:]*):budget\/(?<budgetName>[^:/?]+)$/;
+const BudgetActionArnRegex =
+	/^arn:(?<partition>[^:]+):budgets::(?<account>[^:]*):budget\/(?<budgetName>[^:/?]+)\/action\/(?<actionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for budgets resources.
@@ -84,14 +134,7 @@ export class BudgetsResources {
 	/**
 	 * Builds an ARN for the budget resource.
 	 */
-	static budget(props: {
-		/** The BudgetName component of the ARN. */
-		readonly budgetName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static budget(props: BudgetsBudgetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:budgets::${props.account ?? "*"}:budget/${props.budgetName}`;
 	}
 
@@ -106,11 +149,7 @@ export class BudgetsResources {
 	 * Parses a budget ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBudgetArn(arn: string): {
-		partition: string;
-		account: string;
-		budgetName: string;
-	} {
+	static parseBudgetArn(arn: string): BudgetsBudgetArnComponents {
 		const match = BudgetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid budget ARN: ${arn}`);
@@ -125,16 +164,7 @@ export class BudgetsResources {
 	/**
 	 * Builds an ARN for the budgetAction resource.
 	 */
-	static budgetAction(props: {
-		/** The BudgetName component of the ARN. */
-		readonly budgetName: string;
-		/** The ActionId component of the ARN. */
-		readonly actionId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static budgetAction(props: BudgetsBudgetActionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:budgets::${props.account ?? "*"}:budget/${props.budgetName}/action/${props.actionId}`;
 	}
 
@@ -149,12 +179,7 @@ export class BudgetsResources {
 	 * Parses a budgetAction ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBudgetActionArn(arn: string): {
-		partition: string;
-		account: string;
-		budgetName: string;
-		actionId: string;
-	} {
+	static parseBudgetActionArn(arn: string): BudgetsBudgetActionArnComponents {
 		const match = BudgetActionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid budgetAction ARN: ${arn}`);
@@ -173,136 +198,136 @@ export class BudgetsResources {
  */
 export class BudgetsOperations {
 	/** IAM actions required for the CreateBudget API call. */
-	static readonly CREATE_BUDGET: string[] = [
+	static readonly CreateBudget: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 		"budgets:TagResource",
 	];
 	/** IAM actions required for the CreateBudgetAction API call. */
-	static readonly CREATE_BUDGET_ACTION: string[] = [
+	static readonly CreateBudgetAction: string[] = [
 		"budgets:CreateBudgetAction",
 		"aws-portal:ModifyBilling",
 		"iam:PassRole",
 		"budgets:TagResource",
 	];
 	/** IAM actions required for the CreateNotification API call. */
-	static readonly CREATE_NOTIFICATION: string[] = [
+	static readonly CreateNotification: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the CreateSubscriber API call. */
-	static readonly CREATE_SUBSCRIBER: string[] = [
+	static readonly CreateSubscriber: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the DeleteBudget API call. */
-	static readonly DELETE_BUDGET: string[] = [
+	static readonly DeleteBudget: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the DeleteBudgetAction API call. */
-	static readonly DELETE_BUDGET_ACTION: string[] = [
+	static readonly DeleteBudgetAction: string[] = [
 		"budgets:DeleteBudgetAction",
 		"aws-portal:ModifyBilling",
 	];
 	/** IAM actions required for the DeleteNotification API call. */
-	static readonly DELETE_NOTIFICATION: string[] = [
+	static readonly DeleteNotification: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the DeleteSubscriber API call. */
-	static readonly DELETE_SUBSCRIBER: string[] = [
+	static readonly DeleteSubscriber: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the DescribeBudget API call. */
-	static readonly DESCRIBE_BUDGET: string[] = [
+	static readonly DescribeBudget: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the DescribeBudgetAction API call. */
-	static readonly DESCRIBE_BUDGET_ACTION: string[] = [
+	static readonly DescribeBudgetAction: string[] = [
 		"budgets:DescribeBudgetAction",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DescribeBudgetActionHistories API call. */
-	static readonly DESCRIBE_BUDGET_ACTION_HISTORIES: string[] = [
+	static readonly DescribeBudgetActionHistories: string[] = [
 		"budgets:DescribeBudgetActionHistories",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DescribeBudgetActionsForAccount API call. */
-	static readonly DESCRIBE_BUDGET_ACTIONS_FOR_ACCOUNT: string[] = [
+	static readonly DescribeBudgetActionsForAccount: string[] = [
 		"budgets:DescribeBudgetActionsForAccount",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DescribeBudgetActionsForBudget API call. */
-	static readonly DESCRIBE_BUDGET_ACTIONS_FOR_BUDGET: string[] = [
+	static readonly DescribeBudgetActionsForBudget: string[] = [
 		"budgets:DescribeBudgetActionsForBudget",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DescribeBudgetNotificationsForAccount API call. */
-	static readonly DESCRIBE_BUDGET_NOTIFICATIONS_FOR_ACCOUNT: string[] = [
+	static readonly DescribeBudgetNotificationsForAccount: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the DescribeBudgetPerformanceHistory API call. */
-	static readonly DESCRIBE_BUDGET_PERFORMANCE_HISTORY: string[] = [
+	static readonly DescribeBudgetPerformanceHistory: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the DescribeBudgets API call. */
-	static readonly DESCRIBE_BUDGETS: string[] = [
+	static readonly DescribeBudgets: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the DescribeNotificationsForBudget API call. */
-	static readonly DESCRIBE_NOTIFICATIONS_FOR_BUDGET: string[] = [
+	static readonly DescribeNotificationsForBudget: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the DescribeSubscribersForNotification API call. */
-	static readonly DESCRIBE_SUBSCRIBERS_FOR_NOTIFICATION: string[] = [
+	static readonly DescribeSubscribersForNotification: string[] = [
 		"aws-portal:ViewBilling",
 		"budgets:ViewBudget",
 	];
 	/** IAM actions required for the ExecuteBudgetAction API call. */
-	static readonly EXECUTE_BUDGET_ACTION: string[] = [
+	static readonly ExecuteBudgetAction: string[] = [
 		"budgets:ExecuteBudgetAction",
 		"aws-portal:ModifyBilling",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"budgets:ListTagsForResource",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:UntagResource",
 	];
 	/** IAM actions required for the UpdateBudget API call. */
-	static readonly UPDATE_BUDGET: string[] = [
+	static readonly UpdateBudget: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the UpdateBudgetAction API call. */
-	static readonly UPDATE_BUDGET_ACTION: string[] = [
+	static readonly UpdateBudgetAction: string[] = [
 		"aws-portal:ModifyBilling",
 		"iam:PassRole",
 		"budgets:UpdateBudgetAction",
 	];
 	/** IAM actions required for the UpdateNotification API call. */
-	static readonly UPDATE_NOTIFICATION: string[] = [
+	static readonly UpdateNotification: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
 	/** IAM actions required for the UpdateSubscriber API call. */
-	static readonly UPDATE_SUBSCRIBER: string[] = [
+	static readonly UpdateSubscriber: string[] = [
 		"aws-portal:ModifyBilling",
 		"budgets:ModifyBudget",
 	];
@@ -313,25 +338,25 @@ export class BudgetsOperations {
  */
 export class BudgetsConditions {
 	/** Condition keys applicable to the CreateBudgetAction action. */
-	static readonly CREATE_BUDGET_ACTION_CONDITION_KEYS: string[] = [
+	static readonly CreateBudgetActionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

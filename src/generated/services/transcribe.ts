@@ -13,229 +13,467 @@ export class TranscribeActions {
 	static readonly SERVICE_PREFIX = "transcribe";
 
 	/** [Write] transcribe:CreateCallAnalyticsCategory */
-	static readonly CREATE_CALL_ANALYTICS_CATEGORY =
+	static readonly CreateCallAnalyticsCategory =
 		"transcribe:CreateCallAnalyticsCategory";
 	/** [Write] transcribe:CreateLanguageModel */
-	static readonly CREATE_LANGUAGE_MODEL = "transcribe:CreateLanguageModel";
+	static readonly CreateLanguageModel = "transcribe:CreateLanguageModel";
 	/** [Write] transcribe:CreateMedicalVocabulary */
-	static readonly CREATE_MEDICAL_VOCABULARY =
+	static readonly CreateMedicalVocabulary =
 		"transcribe:CreateMedicalVocabulary";
 	/** [Write] transcribe:CreateVocabulary */
-	static readonly CREATE_VOCABULARY = "transcribe:CreateVocabulary";
+	static readonly CreateVocabulary = "transcribe:CreateVocabulary";
 	/** [Write] transcribe:CreateVocabularyFilter */
-	static readonly CREATE_VOCABULARY_FILTER =
-		"transcribe:CreateVocabularyFilter";
+	static readonly CreateVocabularyFilter = "transcribe:CreateVocabularyFilter";
 	/** [Write] transcribe:DeleteCallAnalyticsCategory */
-	static readonly DELETE_CALL_ANALYTICS_CATEGORY =
+	static readonly DeleteCallAnalyticsCategory =
 		"transcribe:DeleteCallAnalyticsCategory";
 	/** [Write] transcribe:DeleteCallAnalyticsJob */
-	static readonly DELETE_CALL_ANALYTICS_JOB =
-		"transcribe:DeleteCallAnalyticsJob";
+	static readonly DeleteCallAnalyticsJob = "transcribe:DeleteCallAnalyticsJob";
 	/** [Write] transcribe:DeleteLanguageModel */
-	static readonly DELETE_LANGUAGE_MODEL = "transcribe:DeleteLanguageModel";
+	static readonly DeleteLanguageModel = "transcribe:DeleteLanguageModel";
 	/** [Write] transcribe:DeleteMedicalScribeJob */
-	static readonly DELETE_MEDICAL_SCRIBE_JOB =
-		"transcribe:DeleteMedicalScribeJob";
+	static readonly DeleteMedicalScribeJob = "transcribe:DeleteMedicalScribeJob";
 	/** [Write] transcribe:DeleteMedicalTranscriptionJob */
-	static readonly DELETE_MEDICAL_TRANSCRIPTION_JOB =
+	static readonly DeleteMedicalTranscriptionJob =
 		"transcribe:DeleteMedicalTranscriptionJob";
 	/** [Write] transcribe:DeleteMedicalVocabulary */
-	static readonly DELETE_MEDICAL_VOCABULARY =
+	static readonly DeleteMedicalVocabulary =
 		"transcribe:DeleteMedicalVocabulary";
 	/** [Write] transcribe:DeleteTranscriptionJob */
-	static readonly DELETE_TRANSCRIPTION_JOB =
-		"transcribe:DeleteTranscriptionJob";
+	static readonly DeleteTranscriptionJob = "transcribe:DeleteTranscriptionJob";
 	/** [Write] transcribe:DeleteVocabulary */
-	static readonly DELETE_VOCABULARY = "transcribe:DeleteVocabulary";
+	static readonly DeleteVocabulary = "transcribe:DeleteVocabulary";
 	/** [Write] transcribe:DeleteVocabularyFilter */
-	static readonly DELETE_VOCABULARY_FILTER =
-		"transcribe:DeleteVocabularyFilter";
+	static readonly DeleteVocabularyFilter = "transcribe:DeleteVocabularyFilter";
 	/** [Read] transcribe:DescribeLanguageModel */
-	static readonly DESCRIBE_LANGUAGE_MODEL = "transcribe:DescribeLanguageModel";
+	static readonly DescribeLanguageModel = "transcribe:DescribeLanguageModel";
 	/** [Read] transcribe:GetCallAnalyticsCategory */
-	static readonly GET_CALL_ANALYTICS_CATEGORY =
+	static readonly actionGetCallAnalyticsCategory =
 		"transcribe:GetCallAnalyticsCategory";
 	/** [Read] transcribe:GetCallAnalyticsJob */
-	static readonly GET_CALL_ANALYTICS_JOB = "transcribe:GetCallAnalyticsJob";
+	static readonly actionGetCallAnalyticsJob = "transcribe:GetCallAnalyticsJob";
 	/** [Read] transcribe:GetMedicalScribeJob */
-	static readonly GET_MEDICAL_SCRIBE_JOB = "transcribe:GetMedicalScribeJob";
+	static readonly actionGetMedicalScribeJob = "transcribe:GetMedicalScribeJob";
 	/** [Read] transcribe:GetMedicalScribeStream */
-	static readonly GET_MEDICAL_SCRIBE_STREAM =
+	static readonly actionGetMedicalScribeStream =
 		"transcribe:GetMedicalScribeStream";
 	/** [Read] transcribe:GetMedicalTranscriptionJob */
-	static readonly GET_MEDICAL_TRANSCRIPTION_JOB =
+	static readonly actionGetMedicalTranscriptionJob =
 		"transcribe:GetMedicalTranscriptionJob";
 	/** [Read] transcribe:GetMedicalVocabulary */
-	static readonly GET_MEDICAL_VOCABULARY = "transcribe:GetMedicalVocabulary";
+	static readonly actionGetMedicalVocabulary =
+		"transcribe:GetMedicalVocabulary";
 	/** [Read] transcribe:GetTranscriptionJob */
-	static readonly GET_TRANSCRIPTION_JOB = "transcribe:GetTranscriptionJob";
+	static readonly actionGetTranscriptionJob = "transcribe:GetTranscriptionJob";
 	/** [Read] transcribe:GetVocabulary */
-	static readonly GET_VOCABULARY = "transcribe:GetVocabulary";
+	static readonly actionGetVocabulary = "transcribe:GetVocabulary";
 	/** [Read] transcribe:GetVocabularyFilter */
-	static readonly GET_VOCABULARY_FILTER = "transcribe:GetVocabularyFilter";
+	static readonly actionGetVocabularyFilter = "transcribe:GetVocabularyFilter";
 	/** [List] transcribe:ListCallAnalyticsCategories */
-	static readonly LIST_CALL_ANALYTICS_CATEGORIES =
+	static readonly ListCallAnalyticsCategories =
 		"transcribe:ListCallAnalyticsCategories";
 	/** [List] transcribe:ListCallAnalyticsJobs */
-	static readonly LIST_CALL_ANALYTICS_JOBS = "transcribe:ListCallAnalyticsJobs";
+	static readonly ListCallAnalyticsJobs = "transcribe:ListCallAnalyticsJobs";
 	/** [List] transcribe:ListLanguageModels */
-	static readonly LIST_LANGUAGE_MODELS = "transcribe:ListLanguageModels";
+	static readonly ListLanguageModels = "transcribe:ListLanguageModels";
 	/** [List] transcribe:ListMedicalScribeJobs */
-	static readonly LIST_MEDICAL_SCRIBE_JOBS = "transcribe:ListMedicalScribeJobs";
+	static readonly ListMedicalScribeJobs = "transcribe:ListMedicalScribeJobs";
 	/** [List] transcribe:ListMedicalTranscriptionJobs */
-	static readonly LIST_MEDICAL_TRANSCRIPTION_JOBS =
+	static readonly ListMedicalTranscriptionJobs =
 		"transcribe:ListMedicalTranscriptionJobs";
 	/** [List] transcribe:ListMedicalVocabularies */
-	static readonly LIST_MEDICAL_VOCABULARIES =
+	static readonly ListMedicalVocabularies =
 		"transcribe:ListMedicalVocabularies";
 	/** [Read] transcribe:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "transcribe:ListTagsForResource";
+	static readonly ListTagsForResource = "transcribe:ListTagsForResource";
 	/** [List] transcribe:ListTranscriptionJobs */
-	static readonly LIST_TRANSCRIPTION_JOBS = "transcribe:ListTranscriptionJobs";
+	static readonly ListTranscriptionJobs = "transcribe:ListTranscriptionJobs";
 	/** [List] transcribe:ListVocabularies */
-	static readonly LIST_VOCABULARIES = "transcribe:ListVocabularies";
+	static readonly ListVocabularies = "transcribe:ListVocabularies";
 	/** [List] transcribe:ListVocabularyFilters */
-	static readonly LIST_VOCABULARY_FILTERS = "transcribe:ListVocabularyFilters";
+	static readonly ListVocabularyFilters = "transcribe:ListVocabularyFilters";
 	/** [Write] transcribe:StartCallAnalyticsJob */
-	static readonly START_CALL_ANALYTICS_JOB = "transcribe:StartCallAnalyticsJob";
+	static readonly StartCallAnalyticsJob = "transcribe:StartCallAnalyticsJob";
 	/** [Write] transcribe:StartCallAnalyticsStreamTranscription */
-	static readonly START_CALL_ANALYTICS_STREAM_TRANSCRIPTION =
+	static readonly StartCallAnalyticsStreamTranscription =
 		"transcribe:StartCallAnalyticsStreamTranscription";
 	/** [Write] transcribe:StartCallAnalyticsStreamTranscriptionWebSocket */
-	static readonly START_CALL_ANALYTICS_STREAM_TRANSCRIPTION_WEB_SOCKET =
+	static readonly StartCallAnalyticsStreamTranscriptionWebSocket =
 		"transcribe:StartCallAnalyticsStreamTranscriptionWebSocket";
 	/** [Write] transcribe:StartMedicalScribeJob */
-	static readonly START_MEDICAL_SCRIBE_JOB = "transcribe:StartMedicalScribeJob";
+	static readonly StartMedicalScribeJob = "transcribe:StartMedicalScribeJob";
 	/** [Write] transcribe:StartMedicalScribeStream */
-	static readonly START_MEDICAL_SCRIBE_STREAM =
+	static readonly StartMedicalScribeStream =
 		"transcribe:StartMedicalScribeStream";
 	/** [Write] transcribe:StartMedicalStreamTranscription */
-	static readonly START_MEDICAL_STREAM_TRANSCRIPTION =
+	static readonly StartMedicalStreamTranscription =
 		"transcribe:StartMedicalStreamTranscription";
 	/** [Write] transcribe:StartMedicalStreamTranscriptionWebSocket */
-	static readonly START_MEDICAL_STREAM_TRANSCRIPTION_WEB_SOCKET =
+	static readonly StartMedicalStreamTranscriptionWebSocket =
 		"transcribe:StartMedicalStreamTranscriptionWebSocket";
 	/** [Write] transcribe:StartMedicalTranscriptionJob */
-	static readonly START_MEDICAL_TRANSCRIPTION_JOB =
+	static readonly StartMedicalTranscriptionJob =
 		"transcribe:StartMedicalTranscriptionJob";
 	/** [Write] transcribe:StartStreamTranscription */
-	static readonly START_STREAM_TRANSCRIPTION =
+	static readonly StartStreamTranscription =
 		"transcribe:StartStreamTranscription";
 	/** [Write] transcribe:StartStreamTranscriptionWebSocket */
-	static readonly START_STREAM_TRANSCRIPTION_WEB_SOCKET =
+	static readonly StartStreamTranscriptionWebSocket =
 		"transcribe:StartStreamTranscriptionWebSocket";
 	/** [Write] transcribe:StartTranscriptionJob */
-	static readonly START_TRANSCRIPTION_JOB = "transcribe:StartTranscriptionJob";
+	static readonly StartTranscriptionJob = "transcribe:StartTranscriptionJob";
 	/** [Tagging] transcribe:TagResource */
-	static readonly TAG_RESOURCE = "transcribe:TagResource";
+	static readonly TagResource = "transcribe:TagResource";
 	/** [Tagging] transcribe:UntagResource */
-	static readonly UNTAG_RESOURCE = "transcribe:UntagResource";
+	static readonly UntagResource = "transcribe:UntagResource";
 	/** [Write] transcribe:UpdateCallAnalyticsCategory */
-	static readonly UPDATE_CALL_ANALYTICS_CATEGORY =
+	static readonly UpdateCallAnalyticsCategory =
 		"transcribe:UpdateCallAnalyticsCategory";
 	/** [Write] transcribe:UpdateMedicalVocabulary */
-	static readonly UPDATE_MEDICAL_VOCABULARY =
+	static readonly UpdateMedicalVocabulary =
 		"transcribe:UpdateMedicalVocabulary";
 	/** [Write] transcribe:UpdateVocabulary */
-	static readonly UPDATE_VOCABULARY = "transcribe:UpdateVocabulary";
+	static readonly UpdateVocabulary = "transcribe:UpdateVocabulary";
 	/** [Write] transcribe:UpdateVocabularyFilter */
-	static readonly UPDATE_VOCABULARY_FILTER =
-		"transcribe:UpdateVocabularyFilter";
+	static readonly UpdateVocabularyFilter = "transcribe:UpdateVocabularyFilter";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TranscribeActions.DESCRIBE_LANGUAGE_MODEL,
-		TranscribeActions.GET_CALL_ANALYTICS_CATEGORY,
-		TranscribeActions.GET_CALL_ANALYTICS_JOB,
-		TranscribeActions.GET_MEDICAL_SCRIBE_JOB,
-		TranscribeActions.GET_MEDICAL_SCRIBE_STREAM,
-		TranscribeActions.GET_MEDICAL_TRANSCRIPTION_JOB,
-		TranscribeActions.GET_MEDICAL_VOCABULARY,
-		TranscribeActions.GET_TRANSCRIPTION_JOB,
-		TranscribeActions.GET_VOCABULARY,
-		TranscribeActions.GET_VOCABULARY_FILTER,
-		TranscribeActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		TranscribeActions.DescribeLanguageModel,
+		TranscribeActions.actionGetCallAnalyticsCategory,
+		TranscribeActions.actionGetCallAnalyticsJob,
+		TranscribeActions.actionGetMedicalScribeJob,
+		TranscribeActions.actionGetMedicalScribeStream,
+		TranscribeActions.actionGetMedicalTranscriptionJob,
+		TranscribeActions.actionGetMedicalVocabulary,
+		TranscribeActions.actionGetTranscriptionJob,
+		TranscribeActions.actionGetVocabulary,
+		TranscribeActions.actionGetVocabularyFilter,
+		TranscribeActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		TranscribeActions.CREATE_CALL_ANALYTICS_CATEGORY,
-		TranscribeActions.CREATE_LANGUAGE_MODEL,
-		TranscribeActions.CREATE_MEDICAL_VOCABULARY,
-		TranscribeActions.CREATE_VOCABULARY,
-		TranscribeActions.CREATE_VOCABULARY_FILTER,
-		TranscribeActions.DELETE_CALL_ANALYTICS_CATEGORY,
-		TranscribeActions.DELETE_CALL_ANALYTICS_JOB,
-		TranscribeActions.DELETE_LANGUAGE_MODEL,
-		TranscribeActions.DELETE_MEDICAL_SCRIBE_JOB,
-		TranscribeActions.DELETE_MEDICAL_TRANSCRIPTION_JOB,
-		TranscribeActions.DELETE_MEDICAL_VOCABULARY,
-		TranscribeActions.DELETE_TRANSCRIPTION_JOB,
-		TranscribeActions.DELETE_VOCABULARY,
-		TranscribeActions.DELETE_VOCABULARY_FILTER,
-		TranscribeActions.START_CALL_ANALYTICS_JOB,
-		TranscribeActions.START_CALL_ANALYTICS_STREAM_TRANSCRIPTION,
-		TranscribeActions.START_CALL_ANALYTICS_STREAM_TRANSCRIPTION_WEB_SOCKET,
-		TranscribeActions.START_MEDICAL_SCRIBE_JOB,
-		TranscribeActions.START_MEDICAL_SCRIBE_STREAM,
-		TranscribeActions.START_MEDICAL_STREAM_TRANSCRIPTION,
-		TranscribeActions.START_MEDICAL_STREAM_TRANSCRIPTION_WEB_SOCKET,
-		TranscribeActions.START_MEDICAL_TRANSCRIPTION_JOB,
-		TranscribeActions.START_STREAM_TRANSCRIPTION,
-		TranscribeActions.START_STREAM_TRANSCRIPTION_WEB_SOCKET,
-		TranscribeActions.START_TRANSCRIPTION_JOB,
-		TranscribeActions.UPDATE_CALL_ANALYTICS_CATEGORY,
-		TranscribeActions.UPDATE_MEDICAL_VOCABULARY,
-		TranscribeActions.UPDATE_VOCABULARY,
-		TranscribeActions.UPDATE_VOCABULARY_FILTER,
+	static readonly AllWriteActions: string[] = [
+		TranscribeActions.CreateCallAnalyticsCategory,
+		TranscribeActions.CreateLanguageModel,
+		TranscribeActions.CreateMedicalVocabulary,
+		TranscribeActions.CreateVocabulary,
+		TranscribeActions.CreateVocabularyFilter,
+		TranscribeActions.DeleteCallAnalyticsCategory,
+		TranscribeActions.DeleteCallAnalyticsJob,
+		TranscribeActions.DeleteLanguageModel,
+		TranscribeActions.DeleteMedicalScribeJob,
+		TranscribeActions.DeleteMedicalTranscriptionJob,
+		TranscribeActions.DeleteMedicalVocabulary,
+		TranscribeActions.DeleteTranscriptionJob,
+		TranscribeActions.DeleteVocabulary,
+		TranscribeActions.DeleteVocabularyFilter,
+		TranscribeActions.StartCallAnalyticsJob,
+		TranscribeActions.StartCallAnalyticsStreamTranscription,
+		TranscribeActions.StartCallAnalyticsStreamTranscriptionWebSocket,
+		TranscribeActions.StartMedicalScribeJob,
+		TranscribeActions.StartMedicalScribeStream,
+		TranscribeActions.StartMedicalStreamTranscription,
+		TranscribeActions.StartMedicalStreamTranscriptionWebSocket,
+		TranscribeActions.StartMedicalTranscriptionJob,
+		TranscribeActions.StartStreamTranscription,
+		TranscribeActions.StartStreamTranscriptionWebSocket,
+		TranscribeActions.StartTranscriptionJob,
+		TranscribeActions.UpdateCallAnalyticsCategory,
+		TranscribeActions.UpdateMedicalVocabulary,
+		TranscribeActions.UpdateVocabulary,
+		TranscribeActions.UpdateVocabularyFilter,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		TranscribeActions.LIST_CALL_ANALYTICS_CATEGORIES,
-		TranscribeActions.LIST_CALL_ANALYTICS_JOBS,
-		TranscribeActions.LIST_LANGUAGE_MODELS,
-		TranscribeActions.LIST_MEDICAL_SCRIBE_JOBS,
-		TranscribeActions.LIST_MEDICAL_TRANSCRIPTION_JOBS,
-		TranscribeActions.LIST_MEDICAL_VOCABULARIES,
-		TranscribeActions.LIST_TRANSCRIPTION_JOBS,
-		TranscribeActions.LIST_VOCABULARIES,
-		TranscribeActions.LIST_VOCABULARY_FILTERS,
+	static readonly AllListActions: string[] = [
+		TranscribeActions.ListCallAnalyticsCategories,
+		TranscribeActions.ListCallAnalyticsJobs,
+		TranscribeActions.ListLanguageModels,
+		TranscribeActions.ListMedicalScribeJobs,
+		TranscribeActions.ListMedicalTranscriptionJobs,
+		TranscribeActions.ListMedicalVocabularies,
+		TranscribeActions.ListTranscriptionJobs,
+		TranscribeActions.ListVocabularies,
+		TranscribeActions.ListVocabularyFilters,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		TranscribeActions.TAG_RESOURCE,
-		TranscribeActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		TranscribeActions.TagResource,
+		TranscribeActions.UntagResource,
 	];
 }
 
-const CallanalyticscategoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):analytics-category/(?<categoryName>[^:/?]+)$",
-);
-const CallanalyticsjobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):analytics/(?<jobName>[^:/?]+)$",
-);
-const LanguagemodelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):language-model/(?<modelName>[^:/?]+)$",
-);
-const MedicalscribejobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-scribe-job/(?<jobName>[^:/?]+)$",
-);
-const MedicaltranscriptionjobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-transcription-job/(?<jobName>[^:/?]+)$",
-);
-const MedicalvocabularyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-vocabulary/(?<vocabularyName>[^:/?]+)$",
-);
-const TranscriptionjobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):transcription-job/(?<jobName>[^:/?]+)$",
-);
-const VocabularyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):vocabulary/(?<vocabularyName>[^:/?]+)$",
-);
-const VocabularyfilterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):vocabulary-filter/(?<vocabularyFilterName>[^:/?]+)$",
-);
+/**
+ * Properties for building a callanalyticscategory ARN.
+ */
+export interface TranscribeCallanalyticscategoryArnProps {
+	/** The CategoryName component of the ARN. */
+	readonly categoryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a callanalyticscategory ARN.
+ */
+export interface TranscribeCallanalyticscategoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CategoryName component. */
+	readonly categoryName: string;
+}
+
+/**
+ * Properties for building a callanalyticsjob ARN.
+ */
+export interface TranscribeCallanalyticsjobArnProps {
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a callanalyticsjob ARN.
+ */
+export interface TranscribeCallanalyticsjobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a languagemodel ARN.
+ */
+export interface TranscribeLanguagemodelArnProps {
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a languagemodel ARN.
+ */
+export interface TranscribeLanguagemodelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelName component. */
+	readonly modelName: string;
+}
+
+/**
+ * Properties for building a medicalscribejob ARN.
+ */
+export interface TranscribeMedicalscribejobArnProps {
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a medicalscribejob ARN.
+ */
+export interface TranscribeMedicalscribejobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a medicaltranscriptionjob ARN.
+ */
+export interface TranscribeMedicaltranscriptionjobArnProps {
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a medicaltranscriptionjob ARN.
+ */
+export interface TranscribeMedicaltranscriptionjobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a medicalvocabulary ARN.
+ */
+export interface TranscribeMedicalvocabularyArnProps {
+	/** The VocabularyName component of the ARN. */
+	readonly vocabularyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a medicalvocabulary ARN.
+ */
+export interface TranscribeMedicalvocabularyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VocabularyName component. */
+	readonly vocabularyName: string;
+}
+
+/**
+ * Properties for building a transcriptionjob ARN.
+ */
+export interface TranscribeTranscriptionjobArnProps {
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transcriptionjob ARN.
+ */
+export interface TranscribeTranscriptionjobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a vocabulary ARN.
+ */
+export interface TranscribeVocabularyArnProps {
+	/** The VocabularyName component of the ARN. */
+	readonly vocabularyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vocabulary ARN.
+ */
+export interface TranscribeVocabularyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VocabularyName component. */
+	readonly vocabularyName: string;
+}
+
+/**
+ * Properties for building a vocabularyfilter ARN.
+ */
+export interface TranscribeVocabularyfilterArnProps {
+	/** The VocabularyFilterName component of the ARN. */
+	readonly vocabularyFilterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vocabularyfilter ARN.
+ */
+export interface TranscribeVocabularyfilterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VocabularyFilterName component. */
+	readonly vocabularyFilterName: string;
+}
+
+const CallanalyticscategoryArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):analytics-category\/(?<categoryName>[^:/?]+)$/;
+const CallanalyticsjobArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):analytics\/(?<jobName>[^:/?]+)$/;
+const LanguagemodelArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):language-model\/(?<modelName>[^:/?]+)$/;
+const MedicalscribejobArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-scribe-job\/(?<jobName>[^:/?]+)$/;
+const MedicaltranscriptionjobArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-transcription-job\/(?<jobName>[^:/?]+)$/;
+const MedicalvocabularyArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):medical-vocabulary\/(?<vocabularyName>[^:/?]+)$/;
+const TranscriptionjobArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):transcription-job\/(?<jobName>[^:/?]+)$/;
+const VocabularyArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):vocabulary\/(?<vocabularyName>[^:/?]+)$/;
+const VocabularyfilterArnRegex =
+	/^arn:(?<partition>[^:]+):transcribe:(?<region>[^:]*):(?<account>[^:]*):vocabulary-filter\/(?<vocabularyFilterName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for transcribe resources.
@@ -244,16 +482,9 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the callanalyticscategory resource.
 	 */
-	static callanalyticscategory(props: {
-		/** The CategoryName component of the ARN. */
-		readonly categoryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static callanalyticscategory(
+		props: TranscribeCallanalyticscategoryArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:analytics-category/${props.categoryName}`;
 	}
 
@@ -268,12 +499,9 @@ export class TranscribeResources {
 	 * Parses a callanalyticscategory ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCallanalyticscategoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		categoryName: string;
-	} {
+	static parseCallanalyticscategoryArn(
+		arn: string,
+	): TranscribeCallanalyticscategoryArnComponents {
 		const match = CallanalyticscategoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid callanalyticscategory ARN: ${arn}`);
@@ -289,16 +517,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the callanalyticsjob resource.
 	 */
-	static callanalyticsjob(props: {
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static callanalyticsjob(props: TranscribeCallanalyticsjobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:analytics/${props.jobName}`;
 	}
 
@@ -313,12 +532,9 @@ export class TranscribeResources {
 	 * Parses a callanalyticsjob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCallanalyticsjobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobName: string;
-	} {
+	static parseCallanalyticsjobArn(
+		arn: string,
+	): TranscribeCallanalyticsjobArnComponents {
 		const match = CallanalyticsjobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid callanalyticsjob ARN: ${arn}`);
@@ -334,16 +550,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the languagemodel resource.
 	 */
-	static languagemodel(props: {
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static languagemodel(props: TranscribeLanguagemodelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:language-model/${props.modelName}`;
 	}
 
@@ -358,12 +565,9 @@ export class TranscribeResources {
 	 * Parses a languagemodel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLanguagemodelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelName: string;
-	} {
+	static parseLanguagemodelArn(
+		arn: string,
+	): TranscribeLanguagemodelArnComponents {
 		const match = LanguagemodelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid languagemodel ARN: ${arn}`);
@@ -379,16 +583,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the medicalscribejob resource.
 	 */
-	static medicalscribejob(props: {
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static medicalscribejob(props: TranscribeMedicalscribejobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:medical-scribe-job/${props.jobName}`;
 	}
 
@@ -403,12 +598,9 @@ export class TranscribeResources {
 	 * Parses a medicalscribejob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMedicalscribejobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobName: string;
-	} {
+	static parseMedicalscribejobArn(
+		arn: string,
+	): TranscribeMedicalscribejobArnComponents {
 		const match = MedicalscribejobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid medicalscribejob ARN: ${arn}`);
@@ -424,16 +616,9 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the medicaltranscriptionjob resource.
 	 */
-	static medicaltranscriptionjob(props: {
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static medicaltranscriptionjob(
+		props: TranscribeMedicaltranscriptionjobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:medical-transcription-job/${props.jobName}`;
 	}
 
@@ -448,12 +633,9 @@ export class TranscribeResources {
 	 * Parses a medicaltranscriptionjob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMedicaltranscriptionjobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobName: string;
-	} {
+	static parseMedicaltranscriptionjobArn(
+		arn: string,
+	): TranscribeMedicaltranscriptionjobArnComponents {
 		const match = MedicaltranscriptionjobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid medicaltranscriptionjob ARN: ${arn}`);
@@ -469,16 +651,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the medicalvocabulary resource.
 	 */
-	static medicalvocabulary(props: {
-		/** The VocabularyName component of the ARN. */
-		readonly vocabularyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static medicalvocabulary(props: TranscribeMedicalvocabularyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:medical-vocabulary/${props.vocabularyName}`;
 	}
 
@@ -493,12 +666,9 @@ export class TranscribeResources {
 	 * Parses a medicalvocabulary ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMedicalvocabularyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vocabularyName: string;
-	} {
+	static parseMedicalvocabularyArn(
+		arn: string,
+	): TranscribeMedicalvocabularyArnComponents {
 		const match = MedicalvocabularyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid medicalvocabulary ARN: ${arn}`);
@@ -514,16 +684,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the transcriptionjob resource.
 	 */
-	static transcriptionjob(props: {
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transcriptionjob(props: TranscribeTranscriptionjobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:transcription-job/${props.jobName}`;
 	}
 
@@ -538,12 +699,9 @@ export class TranscribeResources {
 	 * Parses a transcriptionjob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTranscriptionjobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobName: string;
-	} {
+	static parseTranscriptionjobArn(
+		arn: string,
+	): TranscribeTranscriptionjobArnComponents {
 		const match = TranscriptionjobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transcriptionjob ARN: ${arn}`);
@@ -559,16 +717,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the vocabulary resource.
 	 */
-	static vocabulary(props: {
-		/** The VocabularyName component of the ARN. */
-		readonly vocabularyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vocabulary(props: TranscribeVocabularyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:vocabulary/${props.vocabularyName}`;
 	}
 
@@ -583,12 +732,7 @@ export class TranscribeResources {
 	 * Parses a vocabulary ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVocabularyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vocabularyName: string;
-	} {
+	static parseVocabularyArn(arn: string): TranscribeVocabularyArnComponents {
 		const match = VocabularyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vocabulary ARN: ${arn}`);
@@ -604,16 +748,7 @@ export class TranscribeResources {
 	/**
 	 * Builds an ARN for the vocabularyfilter resource.
 	 */
-	static vocabularyfilter(props: {
-		/** The VocabularyFilterName component of the ARN. */
-		readonly vocabularyFilterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vocabularyfilter(props: TranscribeVocabularyfilterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transcribe:${props.region ?? "*"}:${props.account ?? "*"}:vocabulary-filter/${props.vocabularyFilterName}`;
 	}
 
@@ -628,12 +763,9 @@ export class TranscribeResources {
 	 * Parses a vocabularyfilter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVocabularyfilterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vocabularyFilterName: string;
-	} {
+	static parseVocabularyfilterArn(
+		arn: string,
+	): TranscribeVocabularyfilterArnComponents {
 		const match = VocabularyfilterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vocabularyfilter ARN: ${arn}`);
@@ -652,181 +784,181 @@ export class TranscribeResources {
  */
 export class TranscribeOperations {
 	/** IAM actions required for the CreateCallAnalyticsCategory API call. */
-	static readonly CREATE_CALL_ANALYTICS_CATEGORY: string[] = [
+	static readonly CreateCallAnalyticsCategory: string[] = [
 		"transcribe:CreateCallAnalyticsCategory",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the CreateLanguageModel API call. */
-	static readonly CREATE_LANGUAGE_MODEL: string[] = [
+	static readonly CreateLanguageModel: string[] = [
 		"transcribe:CreateLanguageModel",
 		"iam:PassRole",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the CreateMedicalVocabulary API call. */
-	static readonly CREATE_MEDICAL_VOCABULARY: string[] = [
+	static readonly CreateMedicalVocabulary: string[] = [
 		"transcribe:CreateMedicalVocabulary",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the CreateVocabulary API call. */
-	static readonly CREATE_VOCABULARY: string[] = [
+	static readonly CreateVocabulary: string[] = [
 		"transcribe:CreateVocabulary",
 		"iam:PassRole",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the CreateVocabularyFilter API call. */
-	static readonly CREATE_VOCABULARY_FILTER: string[] = [
+	static readonly CreateVocabularyFilter: string[] = [
 		"transcribe:CreateVocabularyFilter",
 		"iam:PassRole",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the DeleteCallAnalyticsCategory API call. */
-	static readonly DELETE_CALL_ANALYTICS_CATEGORY: string[] = [
+	static readonly DeleteCallAnalyticsCategory: string[] = [
 		"transcribe:DeleteCallAnalyticsCategory",
 	];
 	/** IAM actions required for the DeleteCallAnalyticsJob API call. */
-	static readonly DELETE_CALL_ANALYTICS_JOB: string[] = [
+	static readonly DeleteCallAnalyticsJob: string[] = [
 		"transcribe:DeleteCallAnalyticsJob",
 	];
 	/** IAM actions required for the DeleteLanguageModel API call. */
-	static readonly DELETE_LANGUAGE_MODEL: string[] = [
+	static readonly DeleteLanguageModel: string[] = [
 		"transcribe:DeleteLanguageModel",
 	];
 	/** IAM actions required for the DeleteMedicalScribeJob API call. */
-	static readonly DELETE_MEDICAL_SCRIBE_JOB: string[] = [
+	static readonly DeleteMedicalScribeJob: string[] = [
 		"transcribe:DeleteMedicalScribeJob",
 	];
 	/** IAM actions required for the DeleteMedicalTranscriptionJob API call. */
-	static readonly DELETE_MEDICAL_TRANSCRIPTION_JOB: string[] = [
+	static readonly DeleteMedicalTranscriptionJob: string[] = [
 		"transcribe:DeleteMedicalTranscriptionJob",
 	];
 	/** IAM actions required for the DeleteMedicalVocabulary API call. */
-	static readonly DELETE_MEDICAL_VOCABULARY: string[] = [
+	static readonly DeleteMedicalVocabulary: string[] = [
 		"transcribe:DeleteMedicalVocabulary",
 	];
 	/** IAM actions required for the DeleteTranscriptionJob API call. */
-	static readonly DELETE_TRANSCRIPTION_JOB: string[] = [
+	static readonly DeleteTranscriptionJob: string[] = [
 		"transcribe:DeleteTranscriptionJob",
 	];
 	/** IAM actions required for the DeleteVocabulary API call. */
-	static readonly DELETE_VOCABULARY: string[] = ["transcribe:DeleteVocabulary"];
+	static readonly DeleteVocabulary: string[] = ["transcribe:DeleteVocabulary"];
 	/** IAM actions required for the DeleteVocabularyFilter API call. */
-	static readonly DELETE_VOCABULARY_FILTER: string[] = [
+	static readonly DeleteVocabularyFilter: string[] = [
 		"transcribe:DeleteVocabularyFilter",
 	];
 	/** IAM actions required for the DescribeLanguageModel API call. */
-	static readonly DESCRIBE_LANGUAGE_MODEL: string[] = [
+	static readonly DescribeLanguageModel: string[] = [
 		"transcribe:DescribeLanguageModel",
 	];
 	/** IAM actions required for the GetCallAnalyticsCategory API call. */
-	static readonly GET_CALL_ANALYTICS_CATEGORY: string[] = [
+	static readonly opGetCallAnalyticsCategory: string[] = [
 		"transcribe:GetCallAnalyticsCategory",
 	];
 	/** IAM actions required for the GetCallAnalyticsJob API call. */
-	static readonly GET_CALL_ANALYTICS_JOB: string[] = [
+	static readonly opGetCallAnalyticsJob: string[] = [
 		"transcribe:GetCallAnalyticsJob",
 	];
 	/** IAM actions required for the GetMedicalScribeJob API call. */
-	static readonly GET_MEDICAL_SCRIBE_JOB: string[] = [
+	static readonly opGetMedicalScribeJob: string[] = [
 		"transcribe:GetMedicalScribeJob",
 	];
 	/** IAM actions required for the GetMedicalTranscriptionJob API call. */
-	static readonly GET_MEDICAL_TRANSCRIPTION_JOB: string[] = [
+	static readonly opGetMedicalTranscriptionJob: string[] = [
 		"transcribe:GetMedicalTranscriptionJob",
 	];
 	/** IAM actions required for the GetMedicalVocabulary API call. */
-	static readonly GET_MEDICAL_VOCABULARY: string[] = [
+	static readonly opGetMedicalVocabulary: string[] = [
 		"transcribe:GetMedicalVocabulary",
 	];
 	/** IAM actions required for the GetTranscriptionJob API call. */
-	static readonly GET_TRANSCRIPTION_JOB: string[] = [
+	static readonly opGetTranscriptionJob: string[] = [
 		"transcribe:GetTranscriptionJob",
 	];
 	/** IAM actions required for the GetVocabulary API call. */
-	static readonly GET_VOCABULARY: string[] = ["transcribe:GetVocabulary"];
+	static readonly opGetVocabulary: string[] = ["transcribe:GetVocabulary"];
 	/** IAM actions required for the GetVocabularyFilter API call. */
-	static readonly GET_VOCABULARY_FILTER: string[] = [
+	static readonly opGetVocabularyFilter: string[] = [
 		"transcribe:GetVocabularyFilter",
 	];
 	/** IAM actions required for the ListCallAnalyticsCategories API call. */
-	static readonly LIST_CALL_ANALYTICS_CATEGORIES: string[] = [
+	static readonly ListCallAnalyticsCategories: string[] = [
 		"transcribe:ListCallAnalyticsCategories",
 	];
 	/** IAM actions required for the ListCallAnalyticsJobs API call. */
-	static readonly LIST_CALL_ANALYTICS_JOBS: string[] = [
+	static readonly ListCallAnalyticsJobs: string[] = [
 		"transcribe:ListCallAnalyticsJobs",
 	];
 	/** IAM actions required for the ListLanguageModels API call. */
-	static readonly LIST_LANGUAGE_MODELS: string[] = [
+	static readonly ListLanguageModels: string[] = [
 		"transcribe:ListLanguageModels",
 	];
 	/** IAM actions required for the ListMedicalScribeJobs API call. */
-	static readonly LIST_MEDICAL_SCRIBE_JOBS: string[] = [
+	static readonly ListMedicalScribeJobs: string[] = [
 		"transcribe:ListMedicalScribeJobs",
 	];
 	/** IAM actions required for the ListMedicalTranscriptionJobs API call. */
-	static readonly LIST_MEDICAL_TRANSCRIPTION_JOBS: string[] = [
+	static readonly ListMedicalTranscriptionJobs: string[] = [
 		"transcribe:ListMedicalTranscriptionJobs",
 	];
 	/** IAM actions required for the ListMedicalVocabularies API call. */
-	static readonly LIST_MEDICAL_VOCABULARIES: string[] = [
+	static readonly ListMedicalVocabularies: string[] = [
 		"transcribe:ListMedicalVocabularies",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"transcribe:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTranscriptionJobs API call. */
-	static readonly LIST_TRANSCRIPTION_JOBS: string[] = [
+	static readonly ListTranscriptionJobs: string[] = [
 		"transcribe:ListTranscriptionJobs",
 	];
 	/** IAM actions required for the ListVocabularies API call. */
-	static readonly LIST_VOCABULARIES: string[] = ["transcribe:ListVocabularies"];
+	static readonly ListVocabularies: string[] = ["transcribe:ListVocabularies"];
 	/** IAM actions required for the ListVocabularyFilters API call. */
-	static readonly LIST_VOCABULARY_FILTERS: string[] = [
+	static readonly ListVocabularyFilters: string[] = [
 		"transcribe:ListVocabularyFilters",
 	];
 	/** IAM actions required for the StartCallAnalyticsJob API call. */
-	static readonly START_CALL_ANALYTICS_JOB: string[] = [
+	static readonly StartCallAnalyticsJob: string[] = [
 		"iam:PassRole",
 		"transcribe:StartCallAnalyticsJob",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the StartMedicalScribeJob API call. */
-	static readonly START_MEDICAL_SCRIBE_JOB: string[] = [
+	static readonly StartMedicalScribeJob: string[] = [
 		"iam:PassRole",
 		"transcribe:StartMedicalScribeJob",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the StartMedicalTranscriptionJob API call. */
-	static readonly START_MEDICAL_TRANSCRIPTION_JOB: string[] = [
+	static readonly StartMedicalTranscriptionJob: string[] = [
 		"transcribe:StartMedicalTranscriptionJob",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the StartTranscriptionJob API call. */
-	static readonly START_TRANSCRIPTION_JOB: string[] = [
+	static readonly StartTranscriptionJob: string[] = [
 		"iam:PassRole",
 		"transcribe:StartTranscriptionJob",
 		"transcribe:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["transcribe:TagResource"];
+	static readonly TagResource: string[] = ["transcribe:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["transcribe:UntagResource"];
+	static readonly UntagResource: string[] = ["transcribe:UntagResource"];
 	/** IAM actions required for the UpdateCallAnalyticsCategory API call. */
-	static readonly UPDATE_CALL_ANALYTICS_CATEGORY: string[] = [
+	static readonly UpdateCallAnalyticsCategory: string[] = [
 		"transcribe:UpdateCallAnalyticsCategory",
 	];
 	/** IAM actions required for the UpdateMedicalVocabulary API call. */
-	static readonly UPDATE_MEDICAL_VOCABULARY: string[] = [
+	static readonly UpdateMedicalVocabulary: string[] = [
 		"transcribe:UpdateMedicalVocabulary",
 	];
 	/** IAM actions required for the UpdateVocabulary API call. */
-	static readonly UPDATE_VOCABULARY: string[] = [
+	static readonly UpdateVocabulary: string[] = [
 		"iam:PassRole",
 		"transcribe:UpdateVocabulary",
 	];
 	/** IAM actions required for the UpdateVocabularyFilter API call. */
-	static readonly UPDATE_VOCABULARY_FILTER: string[] = [
+	static readonly UpdateVocabularyFilter: string[] = [
 		"iam:PassRole",
 		"transcribe:UpdateVocabularyFilter",
 	];
@@ -837,44 +969,44 @@ export class TranscribeOperations {
  */
 export class TranscribeConditions {
 	/** Condition keys applicable to the CreateCallAnalyticsCategory action. */
-	static readonly CREATE_CALL_ANALYTICS_CATEGORY_CONDITION_KEYS: string[] = [
+	static readonly CreateCallAnalyticsCategoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLanguageModel action. */
-	static readonly CREATE_LANGUAGE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateLanguageModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMedicalVocabulary action. */
-	static readonly CREATE_MEDICAL_VOCABULARY_CONDITION_KEYS: string[] = [
+	static readonly CreateMedicalVocabularyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVocabulary action. */
-	static readonly CREATE_VOCABULARY_CONDITION_KEYS: string[] = [
+	static readonly CreateVocabularyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVocabularyFilter action. */
-	static readonly CREATE_VOCABULARY_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateVocabularyFilterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCallAnalyticsJob action. */
-	static readonly START_CALL_ANALYTICS_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartCallAnalyticsJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"transcribe:OutputEncryptionKMSKeyId",
 		"transcribe:OutputLocation",
 	];
 	/** Condition keys applicable to the StartMedicalScribeJob action. */
-	static readonly START_MEDICAL_SCRIBE_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartMedicalScribeJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -882,7 +1014,7 @@ export class TranscribeConditions {
 		"transcribe:OutputEncryptionKMSKeyId",
 	];
 	/** Condition keys applicable to the StartMedicalTranscriptionJob action. */
-	static readonly START_MEDICAL_TRANSCRIPTION_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartMedicalTranscriptionJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -891,7 +1023,7 @@ export class TranscribeConditions {
 		"transcribe:OutputKey",
 	];
 	/** Condition keys applicable to the StartTranscriptionJob action. */
-	static readonly START_TRANSCRIPTION_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartTranscriptionJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -900,7 +1032,7 @@ export class TranscribeConditions {
 		"transcribe:OutputKey",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -909,14 +1041,14 @@ export class TranscribeConditions {
 		"transcribe:OutputKey",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: transcribe:OutputBucketName (String) */
 	static readonly OUTPUT_BUCKET_NAME = "transcribe:OutputBucketName";
 	/** Condition key: transcribe:OutputEncryptionKMSKeyId (String) */

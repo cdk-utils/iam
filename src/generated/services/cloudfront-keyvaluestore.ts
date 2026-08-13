@@ -13,43 +13,66 @@ export class CloudfrontKeyvaluestoreActions {
 	static readonly SERVICE_PREFIX = "cloudfront-keyvaluestore";
 
 	/** [Write] cloudfront-keyvaluestore:DeleteKey */
-	static readonly DELETE_KEY = "cloudfront-keyvaluestore:DeleteKey";
+	static readonly DeleteKey = "cloudfront-keyvaluestore:DeleteKey";
 	/** [Read] cloudfront-keyvaluestore:DescribeKeyValueStore */
-	static readonly DESCRIBE_KEY_VALUE_STORE =
+	static readonly DescribeKeyValueStore =
 		"cloudfront-keyvaluestore:DescribeKeyValueStore";
 	/** [Read] cloudfront-keyvaluestore:GetKey */
-	static readonly GET_KEY = "cloudfront-keyvaluestore:GetKey";
+	static readonly actionGetKey = "cloudfront-keyvaluestore:GetKey";
 	/** [List] cloudfront-keyvaluestore:ListKeys */
-	static readonly LIST_KEYS = "cloudfront-keyvaluestore:ListKeys";
+	static readonly ListKeys = "cloudfront-keyvaluestore:ListKeys";
 	/** [Write] cloudfront-keyvaluestore:PutKey */
-	static readonly PUT_KEY = "cloudfront-keyvaluestore:PutKey";
+	static readonly PutKey = "cloudfront-keyvaluestore:PutKey";
 	/** [Write] cloudfront-keyvaluestore:UpdateKeys */
-	static readonly UPDATE_KEYS = "cloudfront-keyvaluestore:UpdateKeys";
+	static readonly UpdateKeys = "cloudfront-keyvaluestore:UpdateKeys";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudfrontKeyvaluestoreActions.DESCRIBE_KEY_VALUE_STORE,
-		CloudfrontKeyvaluestoreActions.GET_KEY,
+	static readonly AllReadActions: string[] = [
+		CloudfrontKeyvaluestoreActions.DescribeKeyValueStore,
+		CloudfrontKeyvaluestoreActions.actionGetKey,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudfrontKeyvaluestoreActions.DELETE_KEY,
-		CloudfrontKeyvaluestoreActions.PUT_KEY,
-		CloudfrontKeyvaluestoreActions.UPDATE_KEYS,
+	static readonly AllWriteActions: string[] = [
+		CloudfrontKeyvaluestoreActions.DeleteKey,
+		CloudfrontKeyvaluestoreActions.PutKey,
+		CloudfrontKeyvaluestoreActions.UpdateKeys,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CloudfrontKeyvaluestoreActions.LIST_KEYS,
+	static readonly AllListActions: string[] = [
+		CloudfrontKeyvaluestoreActions.ListKeys,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const KeyValueStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):key-value-store/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a key-value-store ARN.
+ */
+export interface CloudfrontKeyvaluestoreKeyValueStoreArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a key-value-store ARN.
+ */
+export interface CloudfrontKeyvaluestoreKeyValueStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const KeyValueStoreArnRegex =
+	/^arn:(?<partition>[^:]+):cloudfront::(?<account>[^:]*):key-value-store\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudfront-keyvaluestore resources.
@@ -58,14 +81,9 @@ export class CloudfrontKeyvaluestoreResources {
 	/**
 	 * Builds an ARN for the key-value-store resource.
 	 */
-	static keyValueStore(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static keyValueStore(
+		props: CloudfrontKeyvaluestoreKeyValueStoreArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudfront::${props.account ?? "*"}:key-value-store/${props.resourceId}`;
 	}
 
@@ -80,11 +98,9 @@ export class CloudfrontKeyvaluestoreResources {
 	 * Parses a key-value-store ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKeyValueStoreArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseKeyValueStoreArn(
+		arn: string,
+	): CloudfrontKeyvaluestoreKeyValueStoreArnComponents {
 		const match = KeyValueStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid key-value-store ARN: ${arn}`);
@@ -102,19 +118,19 @@ export class CloudfrontKeyvaluestoreResources {
  */
 export class CloudfrontKeyvaluestoreOperations {
 	/** IAM actions required for the DeleteKey API call. */
-	static readonly DELETE_KEY: string[] = ["cloudfront-keyvaluestore:DeleteKey"];
+	static readonly DeleteKey: string[] = ["cloudfront-keyvaluestore:DeleteKey"];
 	/** IAM actions required for the DescribeKeyValueStore API call. */
-	static readonly DESCRIBE_KEY_VALUE_STORE: string[] = [
+	static readonly DescribeKeyValueStore: string[] = [
 		"cloudfront-keyvaluestore:DescribeKeyValueStore",
 	];
 	/** IAM actions required for the GetKey API call. */
-	static readonly GET_KEY: string[] = ["cloudfront-keyvaluestore:GetKey"];
+	static readonly opGetKey: string[] = ["cloudfront-keyvaluestore:GetKey"];
 	/** IAM actions required for the ListKeys API call. */
-	static readonly LIST_KEYS: string[] = ["cloudfront-keyvaluestore:ListKeys"];
+	static readonly ListKeys: string[] = ["cloudfront-keyvaluestore:ListKeys"];
 	/** IAM actions required for the PutKey API call. */
-	static readonly PUT_KEY: string[] = ["cloudfront-keyvaluestore:PutKey"];
+	static readonly PutKey: string[] = ["cloudfront-keyvaluestore:PutKey"];
 	/** IAM actions required for the UpdateKeys API call. */
-	static readonly UPDATE_KEYS: string[] = [
+	static readonly UpdateKeys: string[] = [
 		"cloudfront-keyvaluestore:UpdateKeys",
 	];
 }

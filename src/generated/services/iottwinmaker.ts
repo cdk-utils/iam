@@ -13,166 +13,344 @@ export class IottwinmakerActions {
 	static readonly SERVICE_PREFIX = "iottwinmaker";
 
 	/** [Write] iottwinmaker:BatchPutPropertyValues */
-	static readonly BATCH_PUT_PROPERTY_VALUES =
+	static readonly BatchPutPropertyValues =
 		"iottwinmaker:BatchPutPropertyValues";
 	/** [Write] iottwinmaker:CancelMetadataTransferJob */
-	static readonly CANCEL_METADATA_TRANSFER_JOB =
+	static readonly CancelMetadataTransferJob =
 		"iottwinmaker:CancelMetadataTransferJob";
 	/** [Write] iottwinmaker:CreateComponentType */
-	static readonly CREATE_COMPONENT_TYPE = "iottwinmaker:CreateComponentType";
+	static readonly CreateComponentType = "iottwinmaker:CreateComponentType";
 	/** [Write] iottwinmaker:CreateEntity */
-	static readonly CREATE_ENTITY = "iottwinmaker:CreateEntity";
+	static readonly CreateEntity = "iottwinmaker:CreateEntity";
 	/** [Write] iottwinmaker:CreateMetadataTransferJob */
-	static readonly CREATE_METADATA_TRANSFER_JOB =
+	static readonly CreateMetadataTransferJob =
 		"iottwinmaker:CreateMetadataTransferJob";
 	/** [Write] iottwinmaker:CreateScene */
-	static readonly CREATE_SCENE = "iottwinmaker:CreateScene";
+	static readonly CreateScene = "iottwinmaker:CreateScene";
 	/** [Write] iottwinmaker:CreateSyncJob */
-	static readonly CREATE_SYNC_JOB = "iottwinmaker:CreateSyncJob";
+	static readonly CreateSyncJob = "iottwinmaker:CreateSyncJob";
 	/** [Write] iottwinmaker:CreateWorkspace */
-	static readonly CREATE_WORKSPACE = "iottwinmaker:CreateWorkspace";
+	static readonly CreateWorkspace = "iottwinmaker:CreateWorkspace";
 	/** [Write] iottwinmaker:DeleteComponentType */
-	static readonly DELETE_COMPONENT_TYPE = "iottwinmaker:DeleteComponentType";
+	static readonly DeleteComponentType = "iottwinmaker:DeleteComponentType";
 	/** [Write] iottwinmaker:DeleteEntity */
-	static readonly DELETE_ENTITY = "iottwinmaker:DeleteEntity";
+	static readonly DeleteEntity = "iottwinmaker:DeleteEntity";
 	/** [Write] iottwinmaker:DeleteScene */
-	static readonly DELETE_SCENE = "iottwinmaker:DeleteScene";
+	static readonly DeleteScene = "iottwinmaker:DeleteScene";
 	/** [Write] iottwinmaker:DeleteSyncJob */
-	static readonly DELETE_SYNC_JOB = "iottwinmaker:DeleteSyncJob";
+	static readonly DeleteSyncJob = "iottwinmaker:DeleteSyncJob";
 	/** [Write] iottwinmaker:DeleteWorkspace */
-	static readonly DELETE_WORKSPACE = "iottwinmaker:DeleteWorkspace";
+	static readonly DeleteWorkspace = "iottwinmaker:DeleteWorkspace";
 	/** [Read] iottwinmaker:ExecuteQuery */
-	static readonly EXECUTE_QUERY = "iottwinmaker:ExecuteQuery";
+	static readonly ExecuteQuery = "iottwinmaker:ExecuteQuery";
 	/** [Read] iottwinmaker:GetComponentType */
-	static readonly GET_COMPONENT_TYPE = "iottwinmaker:GetComponentType";
+	static readonly actionGetComponentType = "iottwinmaker:GetComponentType";
 	/** [Read] iottwinmaker:GetEntity */
-	static readonly GET_ENTITY = "iottwinmaker:GetEntity";
+	static readonly actionGetEntity = "iottwinmaker:GetEntity";
 	/** [Read] iottwinmaker:GetMetadataTransferJob */
-	static readonly GET_METADATA_TRANSFER_JOB =
+	static readonly actionGetMetadataTransferJob =
 		"iottwinmaker:GetMetadataTransferJob";
 	/** [Read] iottwinmaker:GetPricingPlan */
-	static readonly GET_PRICING_PLAN = "iottwinmaker:GetPricingPlan";
+	static readonly actionGetPricingPlan = "iottwinmaker:GetPricingPlan";
 	/** [Read] iottwinmaker:GetPropertyValue */
-	static readonly GET_PROPERTY_VALUE = "iottwinmaker:GetPropertyValue";
+	static readonly actionGetPropertyValue = "iottwinmaker:GetPropertyValue";
 	/** [Read] iottwinmaker:GetPropertyValueHistory */
-	static readonly GET_PROPERTY_VALUE_HISTORY =
+	static readonly actionGetPropertyValueHistory =
 		"iottwinmaker:GetPropertyValueHistory";
 	/** [Read] iottwinmaker:GetScene */
-	static readonly GET_SCENE = "iottwinmaker:GetScene";
+	static readonly actionGetScene = "iottwinmaker:GetScene";
 	/** [Read] iottwinmaker:GetSyncJob */
-	static readonly GET_SYNC_JOB = "iottwinmaker:GetSyncJob";
+	static readonly actionGetSyncJob = "iottwinmaker:GetSyncJob";
 	/** [Read] iottwinmaker:GetWorkspace */
-	static readonly GET_WORKSPACE = "iottwinmaker:GetWorkspace";
+	static readonly actionGetWorkspace = "iottwinmaker:GetWorkspace";
 	/** [List] iottwinmaker:ListComponentTypes */
-	static readonly LIST_COMPONENT_TYPES = "iottwinmaker:ListComponentTypes";
+	static readonly ListComponentTypes = "iottwinmaker:ListComponentTypes";
 	/** [List] iottwinmaker:ListComponents */
-	static readonly LIST_COMPONENTS = "iottwinmaker:ListComponents";
+	static readonly ListComponents = "iottwinmaker:ListComponents";
 	/** [List] iottwinmaker:ListEntities */
-	static readonly LIST_ENTITIES = "iottwinmaker:ListEntities";
+	static readonly ListEntities = "iottwinmaker:ListEntities";
 	/** [List] iottwinmaker:ListMetadataTransferJobs */
-	static readonly LIST_METADATA_TRANSFER_JOBS =
+	static readonly ListMetadataTransferJobs =
 		"iottwinmaker:ListMetadataTransferJobs";
 	/** [List] iottwinmaker:ListProperties */
-	static readonly LIST_PROPERTIES = "iottwinmaker:ListProperties";
+	static readonly ListProperties = "iottwinmaker:ListProperties";
 	/** [List] iottwinmaker:ListScenes */
-	static readonly LIST_SCENES = "iottwinmaker:ListScenes";
+	static readonly ListScenes = "iottwinmaker:ListScenes";
 	/** [List] iottwinmaker:ListSyncJobs */
-	static readonly LIST_SYNC_JOBS = "iottwinmaker:ListSyncJobs";
+	static readonly ListSyncJobs = "iottwinmaker:ListSyncJobs";
 	/** [List] iottwinmaker:ListSyncResources */
-	static readonly LIST_SYNC_RESOURCES = "iottwinmaker:ListSyncResources";
+	static readonly ListSyncResources = "iottwinmaker:ListSyncResources";
 	/** [List] iottwinmaker:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "iottwinmaker:ListTagsForResource";
+	static readonly ListTagsForResource = "iottwinmaker:ListTagsForResource";
 	/** [List] iottwinmaker:ListWorkspaces */
-	static readonly LIST_WORKSPACES = "iottwinmaker:ListWorkspaces";
+	static readonly ListWorkspaces = "iottwinmaker:ListWorkspaces";
 	/** [Tagging] iottwinmaker:TagResource */
-	static readonly TAG_RESOURCE = "iottwinmaker:TagResource";
+	static readonly TagResource = "iottwinmaker:TagResource";
 	/** [Tagging] iottwinmaker:UntagResource */
-	static readonly UNTAG_RESOURCE = "iottwinmaker:UntagResource";
+	static readonly UntagResource = "iottwinmaker:UntagResource";
 	/** [Write] iottwinmaker:UpdateComponentType */
-	static readonly UPDATE_COMPONENT_TYPE = "iottwinmaker:UpdateComponentType";
+	static readonly UpdateComponentType = "iottwinmaker:UpdateComponentType";
 	/** [Write] iottwinmaker:UpdateEntity */
-	static readonly UPDATE_ENTITY = "iottwinmaker:UpdateEntity";
+	static readonly UpdateEntity = "iottwinmaker:UpdateEntity";
 	/** [Write] iottwinmaker:UpdatePricingPlan */
-	static readonly UPDATE_PRICING_PLAN = "iottwinmaker:UpdatePricingPlan";
+	static readonly UpdatePricingPlan = "iottwinmaker:UpdatePricingPlan";
 	/** [Write] iottwinmaker:UpdateScene */
-	static readonly UPDATE_SCENE = "iottwinmaker:UpdateScene";
+	static readonly UpdateScene = "iottwinmaker:UpdateScene";
 	/** [Write] iottwinmaker:UpdateWorkspace */
-	static readonly UPDATE_WORKSPACE = "iottwinmaker:UpdateWorkspace";
+	static readonly UpdateWorkspace = "iottwinmaker:UpdateWorkspace";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IottwinmakerActions.EXECUTE_QUERY,
-		IottwinmakerActions.GET_COMPONENT_TYPE,
-		IottwinmakerActions.GET_ENTITY,
-		IottwinmakerActions.GET_METADATA_TRANSFER_JOB,
-		IottwinmakerActions.GET_PRICING_PLAN,
-		IottwinmakerActions.GET_PROPERTY_VALUE,
-		IottwinmakerActions.GET_PROPERTY_VALUE_HISTORY,
-		IottwinmakerActions.GET_SCENE,
-		IottwinmakerActions.GET_SYNC_JOB,
-		IottwinmakerActions.GET_WORKSPACE,
+	static readonly AllReadActions: string[] = [
+		IottwinmakerActions.ExecuteQuery,
+		IottwinmakerActions.actionGetComponentType,
+		IottwinmakerActions.actionGetEntity,
+		IottwinmakerActions.actionGetMetadataTransferJob,
+		IottwinmakerActions.actionGetPricingPlan,
+		IottwinmakerActions.actionGetPropertyValue,
+		IottwinmakerActions.actionGetPropertyValueHistory,
+		IottwinmakerActions.actionGetScene,
+		IottwinmakerActions.actionGetSyncJob,
+		IottwinmakerActions.actionGetWorkspace,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IottwinmakerActions.BATCH_PUT_PROPERTY_VALUES,
-		IottwinmakerActions.CANCEL_METADATA_TRANSFER_JOB,
-		IottwinmakerActions.CREATE_COMPONENT_TYPE,
-		IottwinmakerActions.CREATE_ENTITY,
-		IottwinmakerActions.CREATE_METADATA_TRANSFER_JOB,
-		IottwinmakerActions.CREATE_SCENE,
-		IottwinmakerActions.CREATE_SYNC_JOB,
-		IottwinmakerActions.CREATE_WORKSPACE,
-		IottwinmakerActions.DELETE_COMPONENT_TYPE,
-		IottwinmakerActions.DELETE_ENTITY,
-		IottwinmakerActions.DELETE_SCENE,
-		IottwinmakerActions.DELETE_SYNC_JOB,
-		IottwinmakerActions.DELETE_WORKSPACE,
-		IottwinmakerActions.UPDATE_COMPONENT_TYPE,
-		IottwinmakerActions.UPDATE_ENTITY,
-		IottwinmakerActions.UPDATE_PRICING_PLAN,
-		IottwinmakerActions.UPDATE_SCENE,
-		IottwinmakerActions.UPDATE_WORKSPACE,
+	static readonly AllWriteActions: string[] = [
+		IottwinmakerActions.BatchPutPropertyValues,
+		IottwinmakerActions.CancelMetadataTransferJob,
+		IottwinmakerActions.CreateComponentType,
+		IottwinmakerActions.CreateEntity,
+		IottwinmakerActions.CreateMetadataTransferJob,
+		IottwinmakerActions.CreateScene,
+		IottwinmakerActions.CreateSyncJob,
+		IottwinmakerActions.CreateWorkspace,
+		IottwinmakerActions.DeleteComponentType,
+		IottwinmakerActions.DeleteEntity,
+		IottwinmakerActions.DeleteScene,
+		IottwinmakerActions.DeleteSyncJob,
+		IottwinmakerActions.DeleteWorkspace,
+		IottwinmakerActions.UpdateComponentType,
+		IottwinmakerActions.UpdateEntity,
+		IottwinmakerActions.UpdatePricingPlan,
+		IottwinmakerActions.UpdateScene,
+		IottwinmakerActions.UpdateWorkspace,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IottwinmakerActions.LIST_COMPONENT_TYPES,
-		IottwinmakerActions.LIST_COMPONENTS,
-		IottwinmakerActions.LIST_ENTITIES,
-		IottwinmakerActions.LIST_METADATA_TRANSFER_JOBS,
-		IottwinmakerActions.LIST_PROPERTIES,
-		IottwinmakerActions.LIST_SCENES,
-		IottwinmakerActions.LIST_SYNC_JOBS,
-		IottwinmakerActions.LIST_SYNC_RESOURCES,
-		IottwinmakerActions.LIST_TAGS_FOR_RESOURCE,
-		IottwinmakerActions.LIST_WORKSPACES,
+	static readonly AllListActions: string[] = [
+		IottwinmakerActions.ListComponentTypes,
+		IottwinmakerActions.ListComponents,
+		IottwinmakerActions.ListEntities,
+		IottwinmakerActions.ListMetadataTransferJobs,
+		IottwinmakerActions.ListProperties,
+		IottwinmakerActions.ListScenes,
+		IottwinmakerActions.ListSyncJobs,
+		IottwinmakerActions.ListSyncResources,
+		IottwinmakerActions.ListTagsForResource,
+		IottwinmakerActions.ListWorkspaces,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IottwinmakerActions.TAG_RESOURCE,
-		IottwinmakerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IottwinmakerActions.TagResource,
+		IottwinmakerActions.UntagResource,
 	];
 }
 
-const ComponentTypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)/component-type/(?<componentTypeId>[^:/?]+)$",
-);
-const EntityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)/entity/(?<entityId>[^:/?]+)$",
-);
-const MetadataTransferJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):metadata-transfer-job/(?<metadataTransferJobId>[^:/?]+)$",
-);
-const SceneArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)/scene/(?<sceneId>[^:/?]+)$",
-);
-const SyncJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)/sync-job/(?<syncJobId>[^:/?]+)$",
-);
-const WorkspaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a componentType ARN.
+ */
+export interface IottwinmakerComponentTypeArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The ComponentTypeId component of the ARN. */
+	readonly componentTypeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a componentType ARN.
+ */
+export interface IottwinmakerComponentTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The ComponentTypeId component. */
+	readonly componentTypeId: string;
+}
+
+/**
+ * Properties for building a entity ARN.
+ */
+export interface IottwinmakerEntityArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The EntityId component of the ARN. */
+	readonly entityId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a entity ARN.
+ */
+export interface IottwinmakerEntityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The EntityId component. */
+	readonly entityId: string;
+}
+
+/**
+ * Properties for building a metadataTransferJob ARN.
+ */
+export interface IottwinmakerMetadataTransferJobArnProps {
+	/** The MetadataTransferJobId component of the ARN. */
+	readonly metadataTransferJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a metadataTransferJob ARN.
+ */
+export interface IottwinmakerMetadataTransferJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MetadataTransferJobId component. */
+	readonly metadataTransferJobId: string;
+}
+
+/**
+ * Properties for building a scene ARN.
+ */
+export interface IottwinmakerSceneArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The SceneId component of the ARN. */
+	readonly sceneId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a scene ARN.
+ */
+export interface IottwinmakerSceneArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The SceneId component. */
+	readonly sceneId: string;
+}
+
+/**
+ * Properties for building a syncJob ARN.
+ */
+export interface IottwinmakerSyncJobArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The SyncJobId component of the ARN. */
+	readonly syncJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a syncJob ARN.
+ */
+export interface IottwinmakerSyncJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The SyncJobId component. */
+	readonly syncJobId: string;
+}
+
+/**
+ * Properties for building a workspace ARN.
+ */
+export interface IottwinmakerWorkspaceArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workspace ARN.
+ */
+export interface IottwinmakerWorkspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+}
+
+const ComponentTypeArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)\/component-type\/(?<componentTypeId>[^:/?]+)$/;
+const EntityArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)\/entity\/(?<entityId>[^:/?]+)$/;
+const MetadataTransferJobArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):metadata-transfer-job\/(?<metadataTransferJobId>[^:/?]+)$/;
+const SceneArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)\/scene\/(?<sceneId>[^:/?]+)$/;
+const SyncJobArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)\/sync-job\/(?<syncJobId>[^:/?]+)$/;
+const WorkspaceArnRegex =
+	/^arn:(?<partition>[^:]+):iottwinmaker:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iottwinmaker resources.
@@ -181,18 +359,7 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the componentType resource.
 	 */
-	static componentType(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The ComponentTypeId component of the ARN. */
-		readonly componentTypeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static componentType(props: IottwinmakerComponentTypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}/component-type/${props.componentTypeId}`;
 	}
 
@@ -207,13 +374,9 @@ export class IottwinmakerResources {
 	 * Parses a componentType ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComponentTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		componentTypeId: string;
-	} {
+	static parseComponentTypeArn(
+		arn: string,
+	): IottwinmakerComponentTypeArnComponents {
 		const match = ComponentTypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid componentType ARN: ${arn}`);
@@ -230,18 +393,7 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the entity resource.
 	 */
-	static entity(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The EntityId component of the ARN. */
-		readonly entityId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static entity(props: IottwinmakerEntityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}/entity/${props.entityId}`;
 	}
 
@@ -256,13 +408,7 @@ export class IottwinmakerResources {
 	 * Parses a entity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEntityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		entityId: string;
-	} {
+	static parseEntityArn(arn: string): IottwinmakerEntityArnComponents {
 		const match = EntityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid entity ARN: ${arn}`);
@@ -279,16 +425,9 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the metadataTransferJob resource.
 	 */
-	static metadataTransferJob(props: {
-		/** The MetadataTransferJobId component of the ARN. */
-		readonly metadataTransferJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static metadataTransferJob(
+		props: IottwinmakerMetadataTransferJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:metadata-transfer-job/${props.metadataTransferJobId}`;
 	}
 
@@ -303,12 +442,9 @@ export class IottwinmakerResources {
 	 * Parses a metadataTransferJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMetadataTransferJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		metadataTransferJobId: string;
-	} {
+	static parseMetadataTransferJobArn(
+		arn: string,
+	): IottwinmakerMetadataTransferJobArnComponents {
 		const match = MetadataTransferJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid metadataTransferJob ARN: ${arn}`);
@@ -324,18 +460,7 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the scene resource.
 	 */
-	static scene(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The SceneId component of the ARN. */
-		readonly sceneId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static scene(props: IottwinmakerSceneArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}/scene/${props.sceneId}`;
 	}
 
@@ -350,13 +475,7 @@ export class IottwinmakerResources {
 	 * Parses a scene ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSceneArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		sceneId: string;
-	} {
+	static parseSceneArn(arn: string): IottwinmakerSceneArnComponents {
 		const match = SceneArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid scene ARN: ${arn}`);
@@ -373,18 +492,7 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the syncJob resource.
 	 */
-	static syncJob(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The SyncJobId component of the ARN. */
-		readonly syncJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static syncJob(props: IottwinmakerSyncJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}/sync-job/${props.syncJobId}`;
 	}
 
@@ -399,13 +507,7 @@ export class IottwinmakerResources {
 	 * Parses a syncJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSyncJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		syncJobId: string;
-	} {
+	static parseSyncJobArn(arn: string): IottwinmakerSyncJobArnComponents {
 		const match = SyncJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid syncJob ARN: ${arn}`);
@@ -422,16 +524,7 @@ export class IottwinmakerResources {
 	/**
 	 * Builds an ARN for the workspace resource.
 	 */
-	static workspace(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workspace(props: IottwinmakerWorkspaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iottwinmaker:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}`;
 	}
 
@@ -446,12 +539,7 @@ export class IottwinmakerResources {
 	 * Parses a workspace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkspaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-	} {
+	static parseWorkspaceArn(arn: string): IottwinmakerWorkspaceArnComponents {
 		const match = WorkspaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workspace ARN: ${arn}`);
@@ -470,130 +558,130 @@ export class IottwinmakerResources {
  */
 export class IottwinmakerOperations {
 	/** IAM actions required for the BatchPutPropertyValues API call. */
-	static readonly BATCH_PUT_PROPERTY_VALUES: string[] = [
+	static readonly BatchPutPropertyValues: string[] = [
 		"iottwinmaker:BatchPutPropertyValues",
 	];
 	/** IAM actions required for the CancelMetadataTransferJob API call. */
-	static readonly CANCEL_METADATA_TRANSFER_JOB: string[] = [
+	static readonly CancelMetadataTransferJob: string[] = [
 		"iottwinmaker:CancelMetadataTransferJob",
 	];
 	/** IAM actions required for the CreateComponentType API call. */
-	static readonly CREATE_COMPONENT_TYPE: string[] = [
+	static readonly CreateComponentType: string[] = [
 		"iottwinmaker:CreateComponentType",
 		"iottwinmaker:TagResource",
 	];
 	/** IAM actions required for the CreateEntity API call. */
-	static readonly CREATE_ENTITY: string[] = [
+	static readonly CreateEntity: string[] = [
 		"iottwinmaker:CreateEntity",
 		"iottwinmaker:TagResource",
 	];
 	/** IAM actions required for the CreateMetadataTransferJob API call. */
-	static readonly CREATE_METADATA_TRANSFER_JOB: string[] = [
+	static readonly CreateMetadataTransferJob: string[] = [
 		"iottwinmaker:CreateMetadataTransferJob",
 	];
 	/** IAM actions required for the CreateScene API call. */
-	static readonly CREATE_SCENE: string[] = [
+	static readonly CreateScene: string[] = [
 		"iottwinmaker:CreateScene",
 		"iottwinmaker:TagResource",
 	];
 	/** IAM actions required for the CreateSyncJob API call. */
-	static readonly CREATE_SYNC_JOB: string[] = [
+	static readonly CreateSyncJob: string[] = [
 		"iottwinmaker:CreateSyncJob",
 		"iam:PassRole",
 		"iottwinmaker:TagResource",
 	];
 	/** IAM actions required for the CreateWorkspace API call. */
-	static readonly CREATE_WORKSPACE: string[] = [
+	static readonly CreateWorkspace: string[] = [
 		"iottwinmaker:CreateWorkspace",
 		"iam:PassRole",
 		"iottwinmaker:TagResource",
 	];
 	/** IAM actions required for the DeleteComponentType API call. */
-	static readonly DELETE_COMPONENT_TYPE: string[] = [
+	static readonly DeleteComponentType: string[] = [
 		"iottwinmaker:DeleteComponentType",
 	];
 	/** IAM actions required for the DeleteEntity API call. */
-	static readonly DELETE_ENTITY: string[] = ["iottwinmaker:DeleteEntity"];
+	static readonly DeleteEntity: string[] = ["iottwinmaker:DeleteEntity"];
 	/** IAM actions required for the DeleteScene API call. */
-	static readonly DELETE_SCENE: string[] = ["iottwinmaker:DeleteScene"];
+	static readonly DeleteScene: string[] = ["iottwinmaker:DeleteScene"];
 	/** IAM actions required for the DeleteSyncJob API call. */
-	static readonly DELETE_SYNC_JOB: string[] = ["iottwinmaker:DeleteSyncJob"];
+	static readonly DeleteSyncJob: string[] = ["iottwinmaker:DeleteSyncJob"];
 	/** IAM actions required for the DeleteWorkspace API call. */
-	static readonly DELETE_WORKSPACE: string[] = ["iottwinmaker:DeleteWorkspace"];
+	static readonly DeleteWorkspace: string[] = ["iottwinmaker:DeleteWorkspace"];
 	/** IAM actions required for the ExecuteQuery API call. */
-	static readonly EXECUTE_QUERY: string[] = ["iottwinmaker:ExecuteQuery"];
+	static readonly ExecuteQuery: string[] = ["iottwinmaker:ExecuteQuery"];
 	/** IAM actions required for the GetComponentType API call. */
-	static readonly GET_COMPONENT_TYPE: string[] = [
+	static readonly opGetComponentType: string[] = [
 		"iottwinmaker:GetComponentType",
 	];
 	/** IAM actions required for the GetEntity API call. */
-	static readonly GET_ENTITY: string[] = ["iottwinmaker:GetEntity"];
+	static readonly opGetEntity: string[] = ["iottwinmaker:GetEntity"];
 	/** IAM actions required for the GetMetadataTransferJob API call. */
-	static readonly GET_METADATA_TRANSFER_JOB: string[] = [
+	static readonly opGetMetadataTransferJob: string[] = [
 		"iottwinmaker:GetMetadataTransferJob",
 	];
 	/** IAM actions required for the GetPricingPlan API call. */
-	static readonly GET_PRICING_PLAN: string[] = ["iottwinmaker:GetPricingPlan"];
+	static readonly opGetPricingPlan: string[] = ["iottwinmaker:GetPricingPlan"];
 	/** IAM actions required for the GetPropertyValue API call. */
-	static readonly GET_PROPERTY_VALUE: string[] = [
+	static readonly opGetPropertyValue: string[] = [
 		"iottwinmaker:GetPropertyValue",
 	];
 	/** IAM actions required for the GetPropertyValueHistory API call. */
-	static readonly GET_PROPERTY_VALUE_HISTORY: string[] = [
+	static readonly opGetPropertyValueHistory: string[] = [
 		"iottwinmaker:GetPropertyValueHistory",
 	];
 	/** IAM actions required for the GetScene API call. */
-	static readonly GET_SCENE: string[] = ["iottwinmaker:GetScene"];
+	static readonly opGetScene: string[] = ["iottwinmaker:GetScene"];
 	/** IAM actions required for the GetSyncJob API call. */
-	static readonly GET_SYNC_JOB: string[] = ["iottwinmaker:GetSyncJob"];
+	static readonly opGetSyncJob: string[] = ["iottwinmaker:GetSyncJob"];
 	/** IAM actions required for the GetWorkspace API call. */
-	static readonly GET_WORKSPACE: string[] = ["iottwinmaker:GetWorkspace"];
+	static readonly opGetWorkspace: string[] = ["iottwinmaker:GetWorkspace"];
 	/** IAM actions required for the ListComponentTypes API call. */
-	static readonly LIST_COMPONENT_TYPES: string[] = [
+	static readonly ListComponentTypes: string[] = [
 		"iottwinmaker:ListComponentTypes",
 	];
 	/** IAM actions required for the ListComponents API call. */
-	static readonly LIST_COMPONENTS: string[] = ["iottwinmaker:ListComponents"];
+	static readonly ListComponents: string[] = ["iottwinmaker:ListComponents"];
 	/** IAM actions required for the ListEntities API call. */
-	static readonly LIST_ENTITIES: string[] = ["iottwinmaker:ListEntities"];
+	static readonly ListEntities: string[] = ["iottwinmaker:ListEntities"];
 	/** IAM actions required for the ListMetadataTransferJobs API call. */
-	static readonly LIST_METADATA_TRANSFER_JOBS: string[] = [
+	static readonly ListMetadataTransferJobs: string[] = [
 		"iottwinmaker:ListMetadataTransferJobs",
 	];
 	/** IAM actions required for the ListProperties API call. */
-	static readonly LIST_PROPERTIES: string[] = ["iottwinmaker:ListProperties"];
+	static readonly ListProperties: string[] = ["iottwinmaker:ListProperties"];
 	/** IAM actions required for the ListScenes API call. */
-	static readonly LIST_SCENES: string[] = ["iottwinmaker:ListScenes"];
+	static readonly ListScenes: string[] = ["iottwinmaker:ListScenes"];
 	/** IAM actions required for the ListSyncJobs API call. */
-	static readonly LIST_SYNC_JOBS: string[] = ["iottwinmaker:ListSyncJobs"];
+	static readonly ListSyncJobs: string[] = ["iottwinmaker:ListSyncJobs"];
 	/** IAM actions required for the ListSyncResources API call. */
-	static readonly LIST_SYNC_RESOURCES: string[] = [
+	static readonly ListSyncResources: string[] = [
 		"iottwinmaker:ListSyncResources",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"iottwinmaker:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWorkspaces API call. */
-	static readonly LIST_WORKSPACES: string[] = ["iottwinmaker:ListWorkspaces"];
+	static readonly ListWorkspaces: string[] = ["iottwinmaker:ListWorkspaces"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["iottwinmaker:TagResource"];
+	static readonly TagResource: string[] = ["iottwinmaker:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["iottwinmaker:UntagResource"];
+	static readonly UntagResource: string[] = ["iottwinmaker:UntagResource"];
 	/** IAM actions required for the UpdateComponentType API call. */
-	static readonly UPDATE_COMPONENT_TYPE: string[] = [
+	static readonly UpdateComponentType: string[] = [
 		"iottwinmaker:UpdateComponentType",
 	];
 	/** IAM actions required for the UpdateEntity API call. */
-	static readonly UPDATE_ENTITY: string[] = ["iottwinmaker:UpdateEntity"];
+	static readonly UpdateEntity: string[] = ["iottwinmaker:UpdateEntity"];
 	/** IAM actions required for the UpdatePricingPlan API call. */
-	static readonly UPDATE_PRICING_PLAN: string[] = [
+	static readonly UpdatePricingPlan: string[] = [
 		"iottwinmaker:UpdatePricingPlan",
 	];
 	/** IAM actions required for the UpdateScene API call. */
-	static readonly UPDATE_SCENE: string[] = ["iottwinmaker:UpdateScene"];
+	static readonly UpdateScene: string[] = ["iottwinmaker:UpdateScene"];
 	/** IAM actions required for the UpdateWorkspace API call. */
-	static readonly UPDATE_WORKSPACE: string[] = [
+	static readonly UpdateWorkspace: string[] = [
 		"iam:PassRole",
 		"iottwinmaker:UpdateWorkspace",
 	];
@@ -604,48 +692,48 @@ export class IottwinmakerOperations {
  */
 export class IottwinmakerConditions {
 	/** Condition keys applicable to the CreateComponentType action. */
-	static readonly CREATE_COMPONENT_TYPE_CONDITION_KEYS: string[] = [
+	static readonly CreateComponentTypeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEntity action. */
-	static readonly CREATE_ENTITY_CONDITION_KEYS: string[] = [
+	static readonly CreateEntityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateScene action. */
-	static readonly CREATE_SCENE_CONDITION_KEYS: string[] = [
+	static readonly CreateSceneConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSyncJob action. */
-	static readonly CREATE_SYNC_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateSyncJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkspace action. */
-	static readonly CREATE_WORKSPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkspaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iottwinmaker:destinationType (String) */
 	static readonly DESTINATION_TYPE = "iottwinmaker:destinationType";
 	/** Condition key: iottwinmaker:linkedServices (ArrayOfString) */

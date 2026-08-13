@@ -97,7 +97,15 @@ export function conditionKeyToMethodName(
 	// Replace remaining colons with hyphens for splitting
 	shortName = shortName.replace(/:/g, "-");
 
-	return toCamelCase(shortName);
+	let methodName = toCamelCase(shortName);
+
+	// Avoid conflicts with built-in properties (Function.name, Function.length, etc.)
+	const RESERVED_METHOD_NAMES = new Set(["name", "length", "caller", "arguments", "prototype"]);
+	if (RESERVED_METHOD_NAMES.has(methodName)) {
+		methodName = `condition${methodName.charAt(0).toUpperCase()}${methodName.slice(1)}`;
+	}
+
+	return methodName;
 }
 
 /**
@@ -119,7 +127,12 @@ export function conditionKeyToConstant(conditionKeyName: string): string {
 	// Replace remaining colons with underscores
 	shortName = shortName.replace(/:/g, "_");
 
-	return toUpperSnakeCase(shortName);
+	// Prefix with AWS_ for aws: keys to avoid collisions with service-specific keys
+	const constName = toUpperSnakeCase(shortName);
+	if (prefix === "aws") {
+		return `AWS_${constName}`;
+	}
+	return constName;
 }
 
 /**

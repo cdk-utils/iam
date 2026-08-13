@@ -13,398 +13,620 @@ export class CloudFormationActions {
 	static readonly SERVICE_PREFIX = "cloudformation";
 
 	/** [Write] cloudformation:ActivateOrganizationsAccess */
-	static readonly ACTIVATE_ORGANIZATIONS_ACCESS =
+	static readonly ActivateOrganizationsAccess =
 		"cloudformation:ActivateOrganizationsAccess";
 	/** [Write] cloudformation:ActivateType */
-	static readonly ACTIVATE_TYPE = "cloudformation:ActivateType";
+	static readonly ActivateType = "cloudformation:ActivateType";
 	/** [Read] cloudformation:BatchDescribeTypeConfigurations */
-	static readonly BATCH_DESCRIBE_TYPE_CONFIGURATIONS =
+	static readonly BatchDescribeTypeConfigurations =
 		"cloudformation:BatchDescribeTypeConfigurations";
 	/** [Write] cloudformation:CancelResourceRequest */
-	static readonly CANCEL_RESOURCE_REQUEST =
+	static readonly CancelResourceRequest =
 		"cloudformation:CancelResourceRequest";
 	/** [Write] cloudformation:CancelUpdateStack */
-	static readonly CANCEL_UPDATE_STACK = "cloudformation:CancelUpdateStack";
+	static readonly CancelUpdateStack = "cloudformation:CancelUpdateStack";
 	/** [Write] cloudformation:ContinueUpdateRollback */
-	static readonly CONTINUE_UPDATE_ROLLBACK =
+	static readonly ContinueUpdateRollback =
 		"cloudformation:ContinueUpdateRollback";
 	/** [Write] cloudformation:CreateChangeSet */
-	static readonly CREATE_CHANGE_SET = "cloudformation:CreateChangeSet";
+	static readonly CreateChangeSet = "cloudformation:CreateChangeSet";
 	/** [Write] cloudformation:CreateGeneratedTemplate */
-	static readonly CREATE_GENERATED_TEMPLATE =
+	static readonly CreateGeneratedTemplate =
 		"cloudformation:CreateGeneratedTemplate";
 	/** [Write] cloudformation:CreateResource */
-	static readonly CREATE_RESOURCE = "cloudformation:CreateResource";
+	static readonly CreateResource = "cloudformation:CreateResource";
 	/** [Write] cloudformation:CreateStack */
-	static readonly CREATE_STACK = "cloudformation:CreateStack";
+	static readonly CreateStack = "cloudformation:CreateStack";
 	/** [Write] cloudformation:CreateStackInstances */
-	static readonly CREATE_STACK_INSTANCES =
-		"cloudformation:CreateStackInstances";
+	static readonly CreateStackInstances = "cloudformation:CreateStackInstances";
 	/** [Write] cloudformation:CreateStackRefactor */
-	static readonly CREATE_STACK_REFACTOR = "cloudformation:CreateStackRefactor";
+	static readonly CreateStackRefactor = "cloudformation:CreateStackRefactor";
 	/** [Write] cloudformation:CreateStackSet */
-	static readonly CREATE_STACK_SET = "cloudformation:CreateStackSet";
+	static readonly CreateStackSet = "cloudformation:CreateStackSet";
 	/** [Write] cloudformation:CreateUploadBucket */
-	static readonly CREATE_UPLOAD_BUCKET = "cloudformation:CreateUploadBucket";
+	static readonly CreateUploadBucket = "cloudformation:CreateUploadBucket";
 	/** [Write] cloudformation:DeactivateOrganizationsAccess */
-	static readonly DEACTIVATE_ORGANIZATIONS_ACCESS =
+	static readonly DeactivateOrganizationsAccess =
 		"cloudformation:DeactivateOrganizationsAccess";
 	/** [Write] cloudformation:DeactivateType */
-	static readonly DEACTIVATE_TYPE = "cloudformation:DeactivateType";
+	static readonly DeactivateType = "cloudformation:DeactivateType";
 	/** [Write] cloudformation:DeleteChangeSet */
-	static readonly DELETE_CHANGE_SET = "cloudformation:DeleteChangeSet";
+	static readonly DeleteChangeSet = "cloudformation:DeleteChangeSet";
 	/** [Write] cloudformation:DeleteGeneratedTemplate */
-	static readonly DELETE_GENERATED_TEMPLATE =
+	static readonly DeleteGeneratedTemplate =
 		"cloudformation:DeleteGeneratedTemplate";
 	/** [Write] cloudformation:DeleteResource */
-	static readonly DELETE_RESOURCE = "cloudformation:DeleteResource";
+	static readonly DeleteResource = "cloudformation:DeleteResource";
 	/** [Write] cloudformation:DeleteStack */
-	static readonly DELETE_STACK = "cloudformation:DeleteStack";
+	static readonly DeleteStack = "cloudformation:DeleteStack";
 	/** [Write] cloudformation:DeleteStackInstances */
-	static readonly DELETE_STACK_INSTANCES =
-		"cloudformation:DeleteStackInstances";
+	static readonly DeleteStackInstances = "cloudformation:DeleteStackInstances";
 	/** [Write] cloudformation:DeleteStackSet */
-	static readonly DELETE_STACK_SET = "cloudformation:DeleteStackSet";
+	static readonly DeleteStackSet = "cloudformation:DeleteStackSet";
 	/** [Write] cloudformation:DeregisterType */
-	static readonly DEREGISTER_TYPE = "cloudformation:DeregisterType";
+	static readonly DeregisterType = "cloudformation:DeregisterType";
 	/** [Read] cloudformation:DescribeAccountLimits */
-	static readonly DESCRIBE_ACCOUNT_LIMITS =
+	static readonly DescribeAccountLimits =
 		"cloudformation:DescribeAccountLimits";
 	/** [Read] cloudformation:DescribeChangeSet */
-	static readonly DESCRIBE_CHANGE_SET = "cloudformation:DescribeChangeSet";
+	static readonly DescribeChangeSet = "cloudformation:DescribeChangeSet";
 	/** [Read] cloudformation:DescribeChangeSetHooks */
-	static readonly DESCRIBE_CHANGE_SET_HOOKS =
+	static readonly DescribeChangeSetHooks =
 		"cloudformation:DescribeChangeSetHooks";
 	/** [Read] cloudformation:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "cloudformation:DescribeEvents";
+	static readonly DescribeEvents = "cloudformation:DescribeEvents";
 	/** [Read] cloudformation:DescribeGeneratedTemplate */
-	static readonly DESCRIBE_GENERATED_TEMPLATE =
+	static readonly DescribeGeneratedTemplate =
 		"cloudformation:DescribeGeneratedTemplate";
 	/** [Read] cloudformation:DescribeOrganizationsAccess */
-	static readonly DESCRIBE_ORGANIZATIONS_ACCESS =
+	static readonly DescribeOrganizationsAccess =
 		"cloudformation:DescribeOrganizationsAccess";
 	/** [Read] cloudformation:DescribePublisher */
-	static readonly DESCRIBE_PUBLISHER = "cloudformation:DescribePublisher";
+	static readonly DescribePublisher = "cloudformation:DescribePublisher";
 	/** [Read] cloudformation:DescribeResourceScan */
-	static readonly DESCRIBE_RESOURCE_SCAN =
-		"cloudformation:DescribeResourceScan";
+	static readonly DescribeResourceScan = "cloudformation:DescribeResourceScan";
 	/** [Read] cloudformation:DescribeStackDriftDetectionStatus */
-	static readonly DESCRIBE_STACK_DRIFT_DETECTION_STATUS =
+	static readonly DescribeStackDriftDetectionStatus =
 		"cloudformation:DescribeStackDriftDetectionStatus";
 	/** [Read] cloudformation:DescribeStackEvents */
-	static readonly DESCRIBE_STACK_EVENTS = "cloudformation:DescribeStackEvents";
+	static readonly DescribeStackEvents = "cloudformation:DescribeStackEvents";
 	/** [Read] cloudformation:DescribeStackInstance */
-	static readonly DESCRIBE_STACK_INSTANCE =
+	static readonly DescribeStackInstance =
 		"cloudformation:DescribeStackInstance";
 	/** [Read] cloudformation:DescribeStackRefactor */
-	static readonly DESCRIBE_STACK_REFACTOR =
+	static readonly DescribeStackRefactor =
 		"cloudformation:DescribeStackRefactor";
 	/** [Read] cloudformation:DescribeStackResource */
-	static readonly DESCRIBE_STACK_RESOURCE =
+	static readonly DescribeStackResource =
 		"cloudformation:DescribeStackResource";
 	/** [Read] cloudformation:DescribeStackResourceDrifts */
-	static readonly DESCRIBE_STACK_RESOURCE_DRIFTS =
+	static readonly DescribeStackResourceDrifts =
 		"cloudformation:DescribeStackResourceDrifts";
 	/** [Read] cloudformation:DescribeStackResources */
-	static readonly DESCRIBE_STACK_RESOURCES =
+	static readonly DescribeStackResources =
 		"cloudformation:DescribeStackResources";
 	/** [Read] cloudformation:DescribeStackSet */
-	static readonly DESCRIBE_STACK_SET = "cloudformation:DescribeStackSet";
+	static readonly DescribeStackSet = "cloudformation:DescribeStackSet";
 	/** [Read] cloudformation:DescribeStackSetOperation */
-	static readonly DESCRIBE_STACK_SET_OPERATION =
+	static readonly DescribeStackSetOperation =
 		"cloudformation:DescribeStackSetOperation";
 	/** [List] cloudformation:DescribeStacks */
-	static readonly DESCRIBE_STACKS = "cloudformation:DescribeStacks";
+	static readonly DescribeStacks = "cloudformation:DescribeStacks";
 	/** [Read] cloudformation:DescribeType */
-	static readonly DESCRIBE_TYPE = "cloudformation:DescribeType";
+	static readonly DescribeType = "cloudformation:DescribeType";
 	/** [Read] cloudformation:DescribeTypeRegistration */
-	static readonly DESCRIBE_TYPE_REGISTRATION =
+	static readonly DescribeTypeRegistration =
 		"cloudformation:DescribeTypeRegistration";
 	/** [Read] cloudformation:DetectStackDrift */
-	static readonly DETECT_STACK_DRIFT = "cloudformation:DetectStackDrift";
+	static readonly DetectStackDrift = "cloudformation:DetectStackDrift";
 	/** [Read] cloudformation:DetectStackResourceDrift */
-	static readonly DETECT_STACK_RESOURCE_DRIFT =
+	static readonly DetectStackResourceDrift =
 		"cloudformation:DetectStackResourceDrift";
 	/** [Read] cloudformation:DetectStackSetDrift */
-	static readonly DETECT_STACK_SET_DRIFT = "cloudformation:DetectStackSetDrift";
+	static readonly DetectStackSetDrift = "cloudformation:DetectStackSetDrift";
 	/** [Read] cloudformation:EstimateTemplateCost */
-	static readonly ESTIMATE_TEMPLATE_COST =
-		"cloudformation:EstimateTemplateCost";
+	static readonly EstimateTemplateCost = "cloudformation:EstimateTemplateCost";
 	/** [Write] cloudformation:ExecuteChangeSet */
-	static readonly EXECUTE_CHANGE_SET = "cloudformation:ExecuteChangeSet";
+	static readonly ExecuteChangeSet = "cloudformation:ExecuteChangeSet";
 	/** [Write] cloudformation:ExecuteStackRefactor */
-	static readonly EXECUTE_STACK_REFACTOR =
-		"cloudformation:ExecuteStackRefactor";
+	static readonly ExecuteStackRefactor = "cloudformation:ExecuteStackRefactor";
 	/** [Read] cloudformation:GetGeneratedTemplate */
-	static readonly GET_GENERATED_TEMPLATE =
+	static readonly actionGetGeneratedTemplate =
 		"cloudformation:GetGeneratedTemplate";
 	/** [Read] cloudformation:GetHookResult */
-	static readonly GET_HOOK_RESULT = "cloudformation:GetHookResult";
+	static readonly actionGetHookResult = "cloudformation:GetHookResult";
 	/** [Read] cloudformation:GetResource */
-	static readonly GET_RESOURCE = "cloudformation:GetResource";
+	static readonly actionGetResource = "cloudformation:GetResource";
 	/** [Read] cloudformation:GetResourceRequestStatus */
-	static readonly GET_RESOURCE_REQUEST_STATUS =
+	static readonly actionGetResourceRequestStatus =
 		"cloudformation:GetResourceRequestStatus";
 	/** [Read] cloudformation:GetStackPolicy */
-	static readonly GET_STACK_POLICY = "cloudformation:GetStackPolicy";
+	static readonly actionGetStackPolicy = "cloudformation:GetStackPolicy";
 	/** [Read] cloudformation:GetTemplate */
-	static readonly GET_TEMPLATE = "cloudformation:GetTemplate";
+	static readonly actionGetTemplate = "cloudformation:GetTemplate";
 	/** [Read] cloudformation:GetTemplateSummary */
-	static readonly GET_TEMPLATE_SUMMARY = "cloudformation:GetTemplateSummary";
+	static readonly actionGetTemplateSummary =
+		"cloudformation:GetTemplateSummary";
 	/** [Write] cloudformation:ImportStacksToStackSet */
-	static readonly IMPORT_STACKS_TO_STACK_SET =
+	static readonly ImportStacksToStackSet =
 		"cloudformation:ImportStacksToStackSet";
 	/** [List] cloudformation:ListAllHookResults */
-	static readonly LIST_ALL_HOOK_RESULTS = "cloudformation:ListAllHookResults";
+	static readonly ListAllHookResults = "cloudformation:ListAllHookResults";
 	/** [List] cloudformation:ListChangeSets */
-	static readonly LIST_CHANGE_SETS = "cloudformation:ListChangeSets";
+	static readonly ListChangeSets = "cloudformation:ListChangeSets";
 	/** [List] cloudformation:ListExports */
-	static readonly LIST_EXPORTS = "cloudformation:ListExports";
+	static readonly ListExports = "cloudformation:ListExports";
 	/** [List] cloudformation:ListGeneratedTemplates */
-	static readonly LIST_GENERATED_TEMPLATES =
+	static readonly ListGeneratedTemplates =
 		"cloudformation:ListGeneratedTemplates";
 	/** [List] cloudformation:ListHookResults */
-	static readonly LIST_HOOK_RESULTS = "cloudformation:ListHookResults";
+	static readonly ListHookResults = "cloudformation:ListHookResults";
 	/** [List] cloudformation:ListImports */
-	static readonly LIST_IMPORTS = "cloudformation:ListImports";
+	static readonly ListImports = "cloudformation:ListImports";
 	/** [Read] cloudformation:ListResourceRequests */
-	static readonly LIST_RESOURCE_REQUESTS =
-		"cloudformation:ListResourceRequests";
+	static readonly ListResourceRequests = "cloudformation:ListResourceRequests";
 	/** [List] cloudformation:ListResourceScanRelatedResources */
-	static readonly LIST_RESOURCE_SCAN_RELATED_RESOURCES =
+	static readonly ListResourceScanRelatedResources =
 		"cloudformation:ListResourceScanRelatedResources";
 	/** [List] cloudformation:ListResourceScanResources */
-	static readonly LIST_RESOURCE_SCAN_RESOURCES =
+	static readonly ListResourceScanResources =
 		"cloudformation:ListResourceScanResources";
 	/** [List] cloudformation:ListResourceScans */
-	static readonly LIST_RESOURCE_SCANS = "cloudformation:ListResourceScans";
+	static readonly ListResourceScans = "cloudformation:ListResourceScans";
 	/** [Read] cloudformation:ListResources */
-	static readonly LIST_RESOURCES = "cloudformation:ListResources";
+	static readonly ListResources = "cloudformation:ListResources";
 	/** [List] cloudformation:ListStackInstanceResourceDrifts */
-	static readonly LIST_STACK_INSTANCE_RESOURCE_DRIFTS =
+	static readonly ListStackInstanceResourceDrifts =
 		"cloudformation:ListStackInstanceResourceDrifts";
 	/** [List] cloudformation:ListStackInstances */
-	static readonly LIST_STACK_INSTANCES = "cloudformation:ListStackInstances";
+	static readonly ListStackInstances = "cloudformation:ListStackInstances";
 	/** [List] cloudformation:ListStackRefactorActions */
-	static readonly LIST_STACK_REFACTOR_ACTIONS =
+	static readonly ListStackRefactorActions =
 		"cloudformation:ListStackRefactorActions";
 	/** [List] cloudformation:ListStackRefactors */
-	static readonly LIST_STACK_REFACTORS = "cloudformation:ListStackRefactors";
+	static readonly ListStackRefactors = "cloudformation:ListStackRefactors";
 	/** [List] cloudformation:ListStackResources */
-	static readonly LIST_STACK_RESOURCES = "cloudformation:ListStackResources";
+	static readonly ListStackResources = "cloudformation:ListStackResources";
 	/** [List] cloudformation:ListStackSetAutoDeploymentTargets */
-	static readonly LIST_STACK_SET_AUTO_DEPLOYMENT_TARGETS =
+	static readonly ListStackSetAutoDeploymentTargets =
 		"cloudformation:ListStackSetAutoDeploymentTargets";
 	/** [List] cloudformation:ListStackSetOperationResults */
-	static readonly LIST_STACK_SET_OPERATION_RESULTS =
+	static readonly ListStackSetOperationResults =
 		"cloudformation:ListStackSetOperationResults";
 	/** [List] cloudformation:ListStackSetOperations */
-	static readonly LIST_STACK_SET_OPERATIONS =
+	static readonly ListStackSetOperations =
 		"cloudformation:ListStackSetOperations";
 	/** [List] cloudformation:ListStackSets */
-	static readonly LIST_STACK_SETS = "cloudformation:ListStackSets";
+	static readonly ListStackSets = "cloudformation:ListStackSets";
 	/** [List] cloudformation:ListStacks */
-	static readonly LIST_STACKS = "cloudformation:ListStacks";
+	static readonly ListStacks = "cloudformation:ListStacks";
 	/** [List] cloudformation:ListTypeRegistrations */
-	static readonly LIST_TYPE_REGISTRATIONS =
+	static readonly ListTypeRegistrations =
 		"cloudformation:ListTypeRegistrations";
 	/** [List] cloudformation:ListTypeVersions */
-	static readonly LIST_TYPE_VERSIONS = "cloudformation:ListTypeVersions";
+	static readonly ListTypeVersions = "cloudformation:ListTypeVersions";
 	/** [List] cloudformation:ListTypes */
-	static readonly LIST_TYPES = "cloudformation:ListTypes";
+	static readonly ListTypes = "cloudformation:ListTypes";
 	/** [Write] cloudformation:PublishType */
-	static readonly PUBLISH_TYPE = "cloudformation:PublishType";
+	static readonly PublishType = "cloudformation:PublishType";
 	/** [Write] cloudformation:RecordHandlerProgress */
-	static readonly RECORD_HANDLER_PROGRESS =
+	static readonly RecordHandlerProgress =
 		"cloudformation:RecordHandlerProgress";
 	/** [Write] cloudformation:RegisterPublisher */
-	static readonly REGISTER_PUBLISHER = "cloudformation:RegisterPublisher";
+	static readonly RegisterPublisher = "cloudformation:RegisterPublisher";
 	/** [Write] cloudformation:RegisterType */
-	static readonly REGISTER_TYPE = "cloudformation:RegisterType";
+	static readonly RegisterType = "cloudformation:RegisterType";
 	/** [Write] cloudformation:RollbackStack */
-	static readonly ROLLBACK_STACK = "cloudformation:RollbackStack";
+	static readonly RollbackStack = "cloudformation:RollbackStack";
 	/** [PermissionManagement] cloudformation:SetStackPolicy */
-	static readonly SET_STACK_POLICY = "cloudformation:SetStackPolicy";
+	static readonly actionSetStackPolicy = "cloudformation:SetStackPolicy";
 	/** [Write] cloudformation:SetTypeConfiguration */
-	static readonly SET_TYPE_CONFIGURATION =
+	static readonly actionSetTypeConfiguration =
 		"cloudformation:SetTypeConfiguration";
 	/** [Write] cloudformation:SetTypeDefaultVersion */
-	static readonly SET_TYPE_DEFAULT_VERSION =
+	static readonly actionSetTypeDefaultVersion =
 		"cloudformation:SetTypeDefaultVersion";
 	/** [Write] cloudformation:SignalResource */
-	static readonly SIGNAL_RESOURCE = "cloudformation:SignalResource";
+	static readonly SignalResource = "cloudformation:SignalResource";
 	/** [Write] cloudformation:StartResourceScan */
-	static readonly START_RESOURCE_SCAN = "cloudformation:StartResourceScan";
+	static readonly StartResourceScan = "cloudformation:StartResourceScan";
 	/** [Write] cloudformation:StopStackSetOperation */
-	static readonly STOP_STACK_SET_OPERATION =
+	static readonly StopStackSetOperation =
 		"cloudformation:StopStackSetOperation";
 	/** [Tagging] cloudformation:TagResource */
-	static readonly TAG_RESOURCE = "cloudformation:TagResource";
+	static readonly TagResource = "cloudformation:TagResource";
 	/** [Write] cloudformation:TestType */
-	static readonly TEST_TYPE = "cloudformation:TestType";
+	static readonly TestType = "cloudformation:TestType";
 	/** [Tagging] cloudformation:UntagResource */
-	static readonly UNTAG_RESOURCE = "cloudformation:UntagResource";
+	static readonly UntagResource = "cloudformation:UntagResource";
 	/** [Write] cloudformation:UpdateGeneratedTemplate */
-	static readonly UPDATE_GENERATED_TEMPLATE =
+	static readonly UpdateGeneratedTemplate =
 		"cloudformation:UpdateGeneratedTemplate";
 	/** [Write] cloudformation:UpdateResource */
-	static readonly UPDATE_RESOURCE = "cloudformation:UpdateResource";
+	static readonly UpdateResource = "cloudformation:UpdateResource";
 	/** [Write] cloudformation:UpdateStack */
-	static readonly UPDATE_STACK = "cloudformation:UpdateStack";
+	static readonly UpdateStack = "cloudformation:UpdateStack";
 	/** [Write] cloudformation:UpdateStackInstances */
-	static readonly UPDATE_STACK_INSTANCES =
-		"cloudformation:UpdateStackInstances";
+	static readonly UpdateStackInstances = "cloudformation:UpdateStackInstances";
 	/** [Write] cloudformation:UpdateStackSet */
-	static readonly UPDATE_STACK_SET = "cloudformation:UpdateStackSet";
+	static readonly UpdateStackSet = "cloudformation:UpdateStackSet";
 	/** [Write] cloudformation:UpdateTerminationProtection */
-	static readonly UPDATE_TERMINATION_PROTECTION =
+	static readonly UpdateTerminationProtection =
 		"cloudformation:UpdateTerminationProtection";
 	/** [Read] cloudformation:ValidateTemplate */
-	static readonly VALIDATE_TEMPLATE = "cloudformation:ValidateTemplate";
+	static readonly ValidateTemplate = "cloudformation:ValidateTemplate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudFormationActions.BATCH_DESCRIBE_TYPE_CONFIGURATIONS,
-		CloudFormationActions.DESCRIBE_ACCOUNT_LIMITS,
-		CloudFormationActions.DESCRIBE_CHANGE_SET,
-		CloudFormationActions.DESCRIBE_CHANGE_SET_HOOKS,
-		CloudFormationActions.DESCRIBE_EVENTS,
-		CloudFormationActions.DESCRIBE_GENERATED_TEMPLATE,
-		CloudFormationActions.DESCRIBE_ORGANIZATIONS_ACCESS,
-		CloudFormationActions.DESCRIBE_PUBLISHER,
-		CloudFormationActions.DESCRIBE_RESOURCE_SCAN,
-		CloudFormationActions.DESCRIBE_STACK_DRIFT_DETECTION_STATUS,
-		CloudFormationActions.DESCRIBE_STACK_EVENTS,
-		CloudFormationActions.DESCRIBE_STACK_INSTANCE,
-		CloudFormationActions.DESCRIBE_STACK_REFACTOR,
-		CloudFormationActions.DESCRIBE_STACK_RESOURCE,
-		CloudFormationActions.DESCRIBE_STACK_RESOURCE_DRIFTS,
-		CloudFormationActions.DESCRIBE_STACK_RESOURCES,
-		CloudFormationActions.DESCRIBE_STACK_SET,
-		CloudFormationActions.DESCRIBE_STACK_SET_OPERATION,
-		CloudFormationActions.DESCRIBE_TYPE,
-		CloudFormationActions.DESCRIBE_TYPE_REGISTRATION,
-		CloudFormationActions.DETECT_STACK_DRIFT,
-		CloudFormationActions.DETECT_STACK_RESOURCE_DRIFT,
-		CloudFormationActions.DETECT_STACK_SET_DRIFT,
-		CloudFormationActions.ESTIMATE_TEMPLATE_COST,
-		CloudFormationActions.GET_GENERATED_TEMPLATE,
-		CloudFormationActions.GET_HOOK_RESULT,
-		CloudFormationActions.GET_RESOURCE,
-		CloudFormationActions.GET_RESOURCE_REQUEST_STATUS,
-		CloudFormationActions.GET_STACK_POLICY,
-		CloudFormationActions.GET_TEMPLATE,
-		CloudFormationActions.GET_TEMPLATE_SUMMARY,
-		CloudFormationActions.LIST_RESOURCE_REQUESTS,
-		CloudFormationActions.LIST_RESOURCES,
-		CloudFormationActions.VALIDATE_TEMPLATE,
+	static readonly AllReadActions: string[] = [
+		CloudFormationActions.BatchDescribeTypeConfigurations,
+		CloudFormationActions.DescribeAccountLimits,
+		CloudFormationActions.DescribeChangeSet,
+		CloudFormationActions.DescribeChangeSetHooks,
+		CloudFormationActions.DescribeEvents,
+		CloudFormationActions.DescribeGeneratedTemplate,
+		CloudFormationActions.DescribeOrganizationsAccess,
+		CloudFormationActions.DescribePublisher,
+		CloudFormationActions.DescribeResourceScan,
+		CloudFormationActions.DescribeStackDriftDetectionStatus,
+		CloudFormationActions.DescribeStackEvents,
+		CloudFormationActions.DescribeStackInstance,
+		CloudFormationActions.DescribeStackRefactor,
+		CloudFormationActions.DescribeStackResource,
+		CloudFormationActions.DescribeStackResourceDrifts,
+		CloudFormationActions.DescribeStackResources,
+		CloudFormationActions.DescribeStackSet,
+		CloudFormationActions.DescribeStackSetOperation,
+		CloudFormationActions.DescribeType,
+		CloudFormationActions.DescribeTypeRegistration,
+		CloudFormationActions.DetectStackDrift,
+		CloudFormationActions.DetectStackResourceDrift,
+		CloudFormationActions.DetectStackSetDrift,
+		CloudFormationActions.EstimateTemplateCost,
+		CloudFormationActions.actionGetGeneratedTemplate,
+		CloudFormationActions.actionGetHookResult,
+		CloudFormationActions.actionGetResource,
+		CloudFormationActions.actionGetResourceRequestStatus,
+		CloudFormationActions.actionGetStackPolicy,
+		CloudFormationActions.actionGetTemplate,
+		CloudFormationActions.actionGetTemplateSummary,
+		CloudFormationActions.ListResourceRequests,
+		CloudFormationActions.ListResources,
+		CloudFormationActions.ValidateTemplate,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudFormationActions.ACTIVATE_ORGANIZATIONS_ACCESS,
-		CloudFormationActions.ACTIVATE_TYPE,
-		CloudFormationActions.CANCEL_RESOURCE_REQUEST,
-		CloudFormationActions.CANCEL_UPDATE_STACK,
-		CloudFormationActions.CONTINUE_UPDATE_ROLLBACK,
-		CloudFormationActions.CREATE_CHANGE_SET,
-		CloudFormationActions.CREATE_GENERATED_TEMPLATE,
-		CloudFormationActions.CREATE_RESOURCE,
-		CloudFormationActions.CREATE_STACK,
-		CloudFormationActions.CREATE_STACK_INSTANCES,
-		CloudFormationActions.CREATE_STACK_REFACTOR,
-		CloudFormationActions.CREATE_STACK_SET,
-		CloudFormationActions.CREATE_UPLOAD_BUCKET,
-		CloudFormationActions.DEACTIVATE_ORGANIZATIONS_ACCESS,
-		CloudFormationActions.DEACTIVATE_TYPE,
-		CloudFormationActions.DELETE_CHANGE_SET,
-		CloudFormationActions.DELETE_GENERATED_TEMPLATE,
-		CloudFormationActions.DELETE_RESOURCE,
-		CloudFormationActions.DELETE_STACK,
-		CloudFormationActions.DELETE_STACK_INSTANCES,
-		CloudFormationActions.DELETE_STACK_SET,
-		CloudFormationActions.DEREGISTER_TYPE,
-		CloudFormationActions.EXECUTE_CHANGE_SET,
-		CloudFormationActions.EXECUTE_STACK_REFACTOR,
-		CloudFormationActions.IMPORT_STACKS_TO_STACK_SET,
-		CloudFormationActions.PUBLISH_TYPE,
-		CloudFormationActions.RECORD_HANDLER_PROGRESS,
-		CloudFormationActions.REGISTER_PUBLISHER,
-		CloudFormationActions.REGISTER_TYPE,
-		CloudFormationActions.ROLLBACK_STACK,
-		CloudFormationActions.SET_TYPE_CONFIGURATION,
-		CloudFormationActions.SET_TYPE_DEFAULT_VERSION,
-		CloudFormationActions.SIGNAL_RESOURCE,
-		CloudFormationActions.START_RESOURCE_SCAN,
-		CloudFormationActions.STOP_STACK_SET_OPERATION,
-		CloudFormationActions.TEST_TYPE,
-		CloudFormationActions.UPDATE_GENERATED_TEMPLATE,
-		CloudFormationActions.UPDATE_RESOURCE,
-		CloudFormationActions.UPDATE_STACK,
-		CloudFormationActions.UPDATE_STACK_INSTANCES,
-		CloudFormationActions.UPDATE_STACK_SET,
-		CloudFormationActions.UPDATE_TERMINATION_PROTECTION,
+	static readonly AllWriteActions: string[] = [
+		CloudFormationActions.ActivateOrganizationsAccess,
+		CloudFormationActions.ActivateType,
+		CloudFormationActions.CancelResourceRequest,
+		CloudFormationActions.CancelUpdateStack,
+		CloudFormationActions.ContinueUpdateRollback,
+		CloudFormationActions.CreateChangeSet,
+		CloudFormationActions.CreateGeneratedTemplate,
+		CloudFormationActions.CreateResource,
+		CloudFormationActions.CreateStack,
+		CloudFormationActions.CreateStackInstances,
+		CloudFormationActions.CreateStackRefactor,
+		CloudFormationActions.CreateStackSet,
+		CloudFormationActions.CreateUploadBucket,
+		CloudFormationActions.DeactivateOrganizationsAccess,
+		CloudFormationActions.DeactivateType,
+		CloudFormationActions.DeleteChangeSet,
+		CloudFormationActions.DeleteGeneratedTemplate,
+		CloudFormationActions.DeleteResource,
+		CloudFormationActions.DeleteStack,
+		CloudFormationActions.DeleteStackInstances,
+		CloudFormationActions.DeleteStackSet,
+		CloudFormationActions.DeregisterType,
+		CloudFormationActions.ExecuteChangeSet,
+		CloudFormationActions.ExecuteStackRefactor,
+		CloudFormationActions.ImportStacksToStackSet,
+		CloudFormationActions.PublishType,
+		CloudFormationActions.RecordHandlerProgress,
+		CloudFormationActions.RegisterPublisher,
+		CloudFormationActions.RegisterType,
+		CloudFormationActions.RollbackStack,
+		CloudFormationActions.actionSetTypeConfiguration,
+		CloudFormationActions.actionSetTypeDefaultVersion,
+		CloudFormationActions.SignalResource,
+		CloudFormationActions.StartResourceScan,
+		CloudFormationActions.StopStackSetOperation,
+		CloudFormationActions.TestType,
+		CloudFormationActions.UpdateGeneratedTemplate,
+		CloudFormationActions.UpdateResource,
+		CloudFormationActions.UpdateStack,
+		CloudFormationActions.UpdateStackInstances,
+		CloudFormationActions.UpdateStackSet,
+		CloudFormationActions.UpdateTerminationProtection,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CloudFormationActions.DESCRIBE_STACKS,
-		CloudFormationActions.LIST_ALL_HOOK_RESULTS,
-		CloudFormationActions.LIST_CHANGE_SETS,
-		CloudFormationActions.LIST_EXPORTS,
-		CloudFormationActions.LIST_GENERATED_TEMPLATES,
-		CloudFormationActions.LIST_HOOK_RESULTS,
-		CloudFormationActions.LIST_IMPORTS,
-		CloudFormationActions.LIST_RESOURCE_SCAN_RELATED_RESOURCES,
-		CloudFormationActions.LIST_RESOURCE_SCAN_RESOURCES,
-		CloudFormationActions.LIST_RESOURCE_SCANS,
-		CloudFormationActions.LIST_STACK_INSTANCE_RESOURCE_DRIFTS,
-		CloudFormationActions.LIST_STACK_INSTANCES,
-		CloudFormationActions.LIST_STACK_REFACTOR_ACTIONS,
-		CloudFormationActions.LIST_STACK_REFACTORS,
-		CloudFormationActions.LIST_STACK_RESOURCES,
-		CloudFormationActions.LIST_STACK_SET_AUTO_DEPLOYMENT_TARGETS,
-		CloudFormationActions.LIST_STACK_SET_OPERATION_RESULTS,
-		CloudFormationActions.LIST_STACK_SET_OPERATIONS,
-		CloudFormationActions.LIST_STACK_SETS,
-		CloudFormationActions.LIST_STACKS,
-		CloudFormationActions.LIST_TYPE_REGISTRATIONS,
-		CloudFormationActions.LIST_TYPE_VERSIONS,
-		CloudFormationActions.LIST_TYPES,
+	static readonly AllListActions: string[] = [
+		CloudFormationActions.DescribeStacks,
+		CloudFormationActions.ListAllHookResults,
+		CloudFormationActions.ListChangeSets,
+		CloudFormationActions.ListExports,
+		CloudFormationActions.ListGeneratedTemplates,
+		CloudFormationActions.ListHookResults,
+		CloudFormationActions.ListImports,
+		CloudFormationActions.ListResourceScanRelatedResources,
+		CloudFormationActions.ListResourceScanResources,
+		CloudFormationActions.ListResourceScans,
+		CloudFormationActions.ListStackInstanceResourceDrifts,
+		CloudFormationActions.ListStackInstances,
+		CloudFormationActions.ListStackRefactorActions,
+		CloudFormationActions.ListStackRefactors,
+		CloudFormationActions.ListStackResources,
+		CloudFormationActions.ListStackSetAutoDeploymentTargets,
+		CloudFormationActions.ListStackSetOperationResults,
+		CloudFormationActions.ListStackSetOperations,
+		CloudFormationActions.ListStackSets,
+		CloudFormationActions.ListStacks,
+		CloudFormationActions.ListTypeRegistrations,
+		CloudFormationActions.ListTypeVersions,
+		CloudFormationActions.ListTypes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CloudFormationActions.SET_STACK_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		CloudFormationActions.actionSetStackPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CloudFormationActions.TAG_RESOURCE,
-		CloudFormationActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CloudFormationActions.TagResource,
+		CloudFormationActions.UntagResource,
 	];
 }
 
-const ChangesetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):changeSet/(?<changeSetName>[^:/?]+)/(?<id>[^:/?]+)$",
-);
-const GeneratedtemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):generatedTemplate/(?<id>[^:/?]+)$",
-);
-const ResourcescanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):resourceScan/(?<id>[^:/?]+)$",
-);
-const StackArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stack/(?<stackName>[^:/?]+)/(?<id>[^:/?]+)$",
-);
-const StacksetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stackset/(?<stackSetName>[^:/?]+):(?<id>[^:/?]+)$",
-);
-const StacksetTargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stackset-target/(?<stackSetTarget>[^:/?]+)$",
-);
-const TypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):type/resource/(?<type>[^:/?]+)$",
-);
-const TypeHookArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):type/hook/(?<type>[^:/?]+)$",
-);
+/**
+ * Properties for building a changeset ARN.
+ */
+export interface CloudFormationChangesetArnProps {
+	/** The ChangeSetName component of the ARN. */
+	readonly changeSetName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a changeset ARN.
+ */
+export interface CloudFormationChangesetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ChangeSetName component. */
+	readonly changeSetName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a generatedtemplate ARN.
+ */
+export interface CloudFormationGeneratedtemplateArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a generatedtemplate ARN.
+ */
+export interface CloudFormationGeneratedtemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a resourcescan ARN.
+ */
+export interface CloudFormationResourcescanArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a resourcescan ARN.
+ */
+export interface CloudFormationResourcescanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a stack ARN.
+ */
+export interface CloudFormationStackArnProps {
+	/** The StackName component of the ARN. */
+	readonly stackName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stack ARN.
+ */
+export interface CloudFormationStackArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StackName component. */
+	readonly stackName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a stackset ARN.
+ */
+export interface CloudFormationStacksetArnProps {
+	/** The StackSetName component of the ARN. */
+	readonly stackSetName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stackset ARN.
+ */
+export interface CloudFormationStacksetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StackSetName component. */
+	readonly stackSetName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a stackset-target ARN.
+ */
+export interface CloudFormationStacksetTargetArnProps {
+	/** The StackSetTarget component of the ARN. */
+	readonly stackSetTarget: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stackset-target ARN.
+ */
+export interface CloudFormationStacksetTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StackSetTarget component. */
+	readonly stackSetTarget: string;
+}
+
+/**
+ * Properties for building a type ARN.
+ */
+export interface CloudFormationTypeArnProps {
+	/** The Type component of the ARN. */
+	readonly type: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a type ARN.
+ */
+export interface CloudFormationTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Type component. */
+	readonly type: string;
+}
+
+/**
+ * Properties for building a typeHook ARN.
+ */
+export interface CloudFormationTypeHookArnProps {
+	/** The Type component of the ARN. */
+	readonly type: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a typeHook ARN.
+ */
+export interface CloudFormationTypeHookArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Type component. */
+	readonly type: string;
+}
+
+const ChangesetArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):changeSet\/(?<changeSetName>[^:/?]+)\/(?<id>[^:/?]+)$/;
+const GeneratedtemplateArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):generatedTemplate\/(?<id>[^:/?]+)$/;
+const ResourcescanArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):resourceScan\/(?<id>[^:/?]+)$/;
+const StackArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stack\/(?<stackName>[^:/?]+)\/(?<id>[^:/?]+)$/;
+const StacksetArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stackset\/(?<stackSetName>[^:/?]+):(?<id>[^:/?]+)$/;
+const StacksetTargetArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):stackset-target\/(?<stackSetTarget>[^:/?]+)$/;
+const TypeArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):type\/resource\/(?<type>[^:/?]+)$/;
+const TypeHookArnRegex =
+	/^arn:(?<partition>[^:]+):cloudformation:(?<region>[^:]*):(?<account>[^:]*):type\/hook\/(?<type>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudformation resources.
@@ -413,18 +635,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the changeset resource.
 	 */
-	static changeset(props: {
-		/** The ChangeSetName component of the ARN. */
-		readonly changeSetName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static changeset(props: CloudFormationChangesetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:changeSet/${props.changeSetName}/${props.id}`;
 	}
 
@@ -439,13 +650,7 @@ export class CloudFormationResources {
 	 * Parses a changeset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChangesetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		changeSetName: string;
-		id: string;
-	} {
+	static parseChangesetArn(arn: string): CloudFormationChangesetArnComponents {
 		const match = ChangesetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid changeset ARN: ${arn}`);
@@ -462,16 +667,9 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the generatedtemplate resource.
 	 */
-	static generatedtemplate(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static generatedtemplate(
+		props: CloudFormationGeneratedtemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:generatedTemplate/${props.id}`;
 	}
 
@@ -486,12 +684,9 @@ export class CloudFormationResources {
 	 * Parses a generatedtemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGeneratedtemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseGeneratedtemplateArn(
+		arn: string,
+	): CloudFormationGeneratedtemplateArnComponents {
 		const match = GeneratedtemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid generatedtemplate ARN: ${arn}`);
@@ -507,16 +702,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the resourcescan resource.
 	 */
-	static resourcescan(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resourcescan(props: CloudFormationResourcescanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:resourceScan/${props.id}`;
 	}
 
@@ -531,12 +717,9 @@ export class CloudFormationResources {
 	 * Parses a resourcescan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourcescanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseResourcescanArn(
+		arn: string,
+	): CloudFormationResourcescanArnComponents {
 		const match = ResourcescanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid resourcescan ARN: ${arn}`);
@@ -552,18 +735,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the stack resource.
 	 */
-	static stack(props: {
-		/** The StackName component of the ARN. */
-		readonly stackName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stack(props: CloudFormationStackArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:stack/${props.stackName}/${props.id}`;
 	}
 
@@ -578,13 +750,7 @@ export class CloudFormationResources {
 	 * Parses a stack ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStackArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		stackName: string;
-		id: string;
-	} {
+	static parseStackArn(arn: string): CloudFormationStackArnComponents {
 		const match = StackArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stack ARN: ${arn}`);
@@ -601,18 +767,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the stackset resource.
 	 */
-	static stackset(props: {
-		/** The StackSetName component of the ARN. */
-		readonly stackSetName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stackset(props: CloudFormationStacksetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:stackset/${props.stackSetName}:${props.id}`;
 	}
 
@@ -627,13 +782,7 @@ export class CloudFormationResources {
 	 * Parses a stackset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStacksetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		stackSetName: string;
-		id: string;
-	} {
+	static parseStacksetArn(arn: string): CloudFormationStacksetArnComponents {
 		const match = StacksetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stackset ARN: ${arn}`);
@@ -650,16 +799,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the stackset-target resource.
 	 */
-	static stacksetTarget(props: {
-		/** The StackSetTarget component of the ARN. */
-		readonly stackSetTarget: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stacksetTarget(props: CloudFormationStacksetTargetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:stackset-target/${props.stackSetTarget}`;
 	}
 
@@ -674,12 +814,9 @@ export class CloudFormationResources {
 	 * Parses a stackset-target ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStacksetTargetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		stackSetTarget: string;
-	} {
+	static parseStacksetTargetArn(
+		arn: string,
+	): CloudFormationStacksetTargetArnComponents {
 		const match = StacksetTargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stackset-target ARN: ${arn}`);
@@ -695,16 +832,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the type resource.
 	 */
-	static type(props: {
-		/** The Type component of the ARN. */
-		readonly type: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static type(props: CloudFormationTypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:type/resource/${props.type}`;
 	}
 
@@ -719,12 +847,7 @@ export class CloudFormationResources {
 	 * Parses a type ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		type: string;
-	} {
+	static parseTypeArn(arn: string): CloudFormationTypeArnComponents {
 		const match = TypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid type ARN: ${arn}`);
@@ -740,16 +863,7 @@ export class CloudFormationResources {
 	/**
 	 * Builds an ARN for the typeHook resource.
 	 */
-	static typeHook(props: {
-		/** The Type component of the ARN. */
-		readonly type: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static typeHook(props: CloudFormationTypeHookArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudformation:${props.region ?? "*"}:${props.account ?? "*"}:type/hook/${props.type}`;
 	}
 
@@ -764,12 +878,7 @@ export class CloudFormationResources {
 	 * Parses a typeHook ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTypeHookArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		type: string;
-	} {
+	static parseTypeHookArn(arn: string): CloudFormationTypeHookArnComponents {
 		const match = TypeHookArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid typeHook ARN: ${arn}`);
@@ -788,375 +897,371 @@ export class CloudFormationResources {
  */
 export class CloudFormationOperations {
 	/** IAM actions required for the ActivateOrganizationsAccess API call. */
-	static readonly ACTIVATE_ORGANIZATIONS_ACCESS: string[] = [
+	static readonly ActivateOrganizationsAccess: string[] = [
 		"cloudformation:ActivateOrganizationsAccess",
 		"iam:CreateServiceLinkedRole",
 		"iam:GetRole",
 	];
 	/** IAM actions required for the ActivateType API call. */
-	static readonly ACTIVATE_TYPE: string[] = [
+	static readonly ActivateType: string[] = [
 		"cloudformation:ActivateType",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the BatchDescribeTypeConfigurations API call. */
-	static readonly BATCH_DESCRIBE_TYPE_CONFIGURATIONS: string[] = [
+	static readonly BatchDescribeTypeConfigurations: string[] = [
 		"cloudformation:BatchDescribeTypeConfigurations",
 	];
 	/** IAM actions required for the CancelResourceRequest API call. */
-	static readonly CANCEL_RESOURCE_REQUEST: string[] = [
+	static readonly CancelResourceRequest: string[] = [
 		"cloudformation:CancelResourceRequest",
 	];
 	/** IAM actions required for the CancelUpdateStack API call. */
-	static readonly CANCEL_UPDATE_STACK: string[] = [
+	static readonly CancelUpdateStack: string[] = [
 		"cloudformation:CancelUpdateStack",
 	];
 	/** IAM actions required for the ContinueUpdateRollback API call. */
-	static readonly CONTINUE_UPDATE_ROLLBACK: string[] = [
+	static readonly ContinueUpdateRollback: string[] = [
 		"cloudformation:ContinueUpdateRollback",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateChangeSet API call. */
-	static readonly CREATE_CHANGE_SET: string[] = [
+	static readonly CreateChangeSet: string[] = [
 		"cloudformation:CreateChangeSet",
 		"iam:PassRole",
 		"cloudformation:TagResource",
 		"cloudformation:UntagResource",
 	];
 	/** IAM actions required for the CreateGeneratedTemplate API call. */
-	static readonly CREATE_GENERATED_TEMPLATE: string[] = [
+	static readonly CreateGeneratedTemplate: string[] = [
 		"cloudformation:CreateGeneratedTemplate",
 	];
 	/** IAM actions required for the CreateResource API call. */
-	static readonly CREATE_RESOURCE: string[] = [
+	static readonly CreateResource: string[] = [
 		"cloudformation:CreateResource",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateStack API call. */
-	static readonly CREATE_STACK: string[] = [
+	static readonly CreateStack: string[] = [
 		"cloudformation:CreateStack",
 		"iam:PassRole",
 		"cloudformation:TagResource",
 	];
 	/** IAM actions required for the CreateStackInstances API call. */
-	static readonly CREATE_STACK_INSTANCES: string[] = [
+	static readonly CreateStackInstances: string[] = [
 		"cloudformation:CreateStackInstances",
 	];
 	/** IAM actions required for the CreateStackRefactor API call. */
-	static readonly CREATE_STACK_REFACTOR: string[] = [
+	static readonly CreateStackRefactor: string[] = [
 		"cloudformation:CreateStackRefactor",
 	];
 	/** IAM actions required for the CreateStackSet API call. */
-	static readonly CREATE_STACK_SET: string[] = [
+	static readonly CreateStackSet: string[] = [
 		"cloudformation:CreateStackSet",
 		"iam:PassRole",
 		"cloudformation:TagResource",
 	];
 	/** IAM actions required for the DeactivateOrganizationsAccess API call. */
-	static readonly DEACTIVATE_ORGANIZATIONS_ACCESS: string[] = [
+	static readonly DeactivateOrganizationsAccess: string[] = [
 		"cloudformation:DeactivateOrganizationsAccess",
 	];
 	/** IAM actions required for the DeactivateType API call. */
-	static readonly DEACTIVATE_TYPE: string[] = ["cloudformation:DeactivateType"];
+	static readonly DeactivateType: string[] = ["cloudformation:DeactivateType"];
 	/** IAM actions required for the DeleteChangeSet API call. */
-	static readonly DELETE_CHANGE_SET: string[] = [
+	static readonly DeleteChangeSet: string[] = [
 		"cloudformation:DeleteChangeSet",
 	];
 	/** IAM actions required for the DeleteGeneratedTemplate API call. */
-	static readonly DELETE_GENERATED_TEMPLATE: string[] = [
+	static readonly DeleteGeneratedTemplate: string[] = [
 		"cloudformation:DeleteGeneratedTemplate",
 	];
 	/** IAM actions required for the DeleteResource API call. */
-	static readonly DELETE_RESOURCE: string[] = [
+	static readonly DeleteResource: string[] = [
 		"cloudformation:DeleteResource",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteStack API call. */
-	static readonly DELETE_STACK: string[] = [
+	static readonly DeleteStack: string[] = [
 		"cloudformation:DeleteStack",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteStackInstances API call. */
-	static readonly DELETE_STACK_INSTANCES: string[] = [
+	static readonly DeleteStackInstances: string[] = [
 		"cloudformation:DeleteStackInstances",
 	];
 	/** IAM actions required for the DeleteStackSet API call. */
-	static readonly DELETE_STACK_SET: string[] = [
-		"cloudformation:DeleteStackSet",
-	];
+	static readonly DeleteStackSet: string[] = ["cloudformation:DeleteStackSet"];
 	/** IAM actions required for the DeregisterType API call. */
-	static readonly DEREGISTER_TYPE: string[] = ["cloudformation:DeregisterType"];
+	static readonly DeregisterType: string[] = ["cloudformation:DeregisterType"];
 	/** IAM actions required for the DescribeAccountLimits API call. */
-	static readonly DESCRIBE_ACCOUNT_LIMITS: string[] = [
+	static readonly DescribeAccountLimits: string[] = [
 		"cloudformation:DescribeAccountLimits",
 	];
 	/** IAM actions required for the DescribeChangeSet API call. */
-	static readonly DESCRIBE_CHANGE_SET: string[] = [
+	static readonly DescribeChangeSet: string[] = [
 		"cloudformation:DescribeChangeSet",
 	];
 	/** IAM actions required for the DescribeChangeSetHooks API call. */
-	static readonly DESCRIBE_CHANGE_SET_HOOKS: string[] = [
+	static readonly DescribeChangeSetHooks: string[] = [
 		"cloudformation:DescribeChangeSetHooks",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["cloudformation:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["cloudformation:DescribeEvents"];
 	/** IAM actions required for the DescribeGeneratedTemplate API call. */
-	static readonly DESCRIBE_GENERATED_TEMPLATE: string[] = [
+	static readonly DescribeGeneratedTemplate: string[] = [
 		"cloudformation:DescribeGeneratedTemplate",
 	];
 	/** IAM actions required for the DescribeOrganizationsAccess API call. */
-	static readonly DESCRIBE_ORGANIZATIONS_ACCESS: string[] = [
+	static readonly DescribeOrganizationsAccess: string[] = [
 		"cloudformation:DescribeOrganizationsAccess",
 	];
 	/** IAM actions required for the DescribePublisher API call. */
-	static readonly DESCRIBE_PUBLISHER: string[] = [
+	static readonly DescribePublisher: string[] = [
 		"cloudformation:DescribePublisher",
 	];
 	/** IAM actions required for the DescribeResourceScan API call. */
-	static readonly DESCRIBE_RESOURCE_SCAN: string[] = [
+	static readonly DescribeResourceScan: string[] = [
 		"cloudformation:DescribeResourceScan",
 	];
 	/** IAM actions required for the DescribeStackDriftDetectionStatus API call. */
-	static readonly DESCRIBE_STACK_DRIFT_DETECTION_STATUS: string[] = [
+	static readonly DescribeStackDriftDetectionStatus: string[] = [
 		"cloudformation:DescribeStackDriftDetectionStatus",
 	];
 	/** IAM actions required for the DescribeStackEvents API call. */
-	static readonly DESCRIBE_STACK_EVENTS: string[] = [
+	static readonly DescribeStackEvents: string[] = [
 		"cloudformation:DescribeStackEvents",
 	];
 	/** IAM actions required for the DescribeStackInstance API call. */
-	static readonly DESCRIBE_STACK_INSTANCE: string[] = [
+	static readonly DescribeStackInstance: string[] = [
 		"cloudformation:DescribeStackInstance",
 	];
 	/** IAM actions required for the DescribeStackRefactor API call. */
-	static readonly DESCRIBE_STACK_REFACTOR: string[] = [
+	static readonly DescribeStackRefactor: string[] = [
 		"cloudformation:DescribeStackRefactor",
 	];
 	/** IAM actions required for the DescribeStackResource API call. */
-	static readonly DESCRIBE_STACK_RESOURCE: string[] = [
+	static readonly DescribeStackResource: string[] = [
 		"cloudformation:DescribeStackResource",
 	];
 	/** IAM actions required for the DescribeStackResourceDrifts API call. */
-	static readonly DESCRIBE_STACK_RESOURCE_DRIFTS: string[] = [
+	static readonly DescribeStackResourceDrifts: string[] = [
 		"cloudformation:DescribeStackResourceDrifts",
 	];
 	/** IAM actions required for the DescribeStackResources API call. */
-	static readonly DESCRIBE_STACK_RESOURCES: string[] = [
+	static readonly DescribeStackResources: string[] = [
 		"cloudformation:DescribeStackResources",
 	];
 	/** IAM actions required for the DescribeStackSet API call. */
-	static readonly DESCRIBE_STACK_SET: string[] = [
+	static readonly DescribeStackSet: string[] = [
 		"cloudformation:DescribeStackSet",
 	];
 	/** IAM actions required for the DescribeStackSetOperation API call. */
-	static readonly DESCRIBE_STACK_SET_OPERATION: string[] = [
+	static readonly DescribeStackSetOperation: string[] = [
 		"cloudformation:DescribeStackSetOperation",
 	];
 	/** IAM actions required for the DescribeStacks API call. */
-	static readonly DESCRIBE_STACKS: string[] = [
+	static readonly DescribeStacks: string[] = [
 		"cloudformation:DescribeStacks",
 		"cloudformation:ListStacks",
 	];
 	/** IAM actions required for the DescribeType API call. */
-	static readonly DESCRIBE_TYPE: string[] = ["cloudformation:DescribeType"];
+	static readonly DescribeType: string[] = ["cloudformation:DescribeType"];
 	/** IAM actions required for the DescribeTypeRegistration API call. */
-	static readonly DESCRIBE_TYPE_REGISTRATION: string[] = [
+	static readonly DescribeTypeRegistration: string[] = [
 		"cloudformation:DescribeTypeRegistration",
 	];
 	/** IAM actions required for the DetectStackDrift API call. */
-	static readonly DETECT_STACK_DRIFT: string[] = [
+	static readonly DetectStackDrift: string[] = [
 		"cloudformation:DetectStackDrift",
 		"cloudformation:DetectStackResourceDrift",
 	];
 	/** IAM actions required for the DetectStackResourceDrift API call. */
-	static readonly DETECT_STACK_RESOURCE_DRIFT: string[] = [
+	static readonly DetectStackResourceDrift: string[] = [
 		"cloudformation:DetectStackResourceDrift",
 	];
 	/** IAM actions required for the DetectStackSetDrift API call. */
-	static readonly DETECT_STACK_SET_DRIFT: string[] = [
+	static readonly DetectStackSetDrift: string[] = [
 		"cloudformation:DetectStackSetDrift",
 	];
 	/** IAM actions required for the EstimateTemplateCost API call. */
-	static readonly ESTIMATE_TEMPLATE_COST: string[] = [
+	static readonly EstimateTemplateCost: string[] = [
 		"cloudformation:EstimateTemplateCost",
 	];
 	/** IAM actions required for the ExecuteChangeSet API call. */
-	static readonly EXECUTE_CHANGE_SET: string[] = [
+	static readonly ExecuteChangeSet: string[] = [
 		"cloudformation:ExecuteChangeSet",
 		"cloudformation:TagResource",
 		"cloudformation:UntagResource",
 	];
 	/** IAM actions required for the ExecuteStackRefactor API call. */
-	static readonly EXECUTE_STACK_REFACTOR: string[] = [
+	static readonly ExecuteStackRefactor: string[] = [
 		"cloudformation:ExecuteStackRefactor",
 	];
 	/** IAM actions required for the GetGeneratedTemplate API call. */
-	static readonly GET_GENERATED_TEMPLATE: string[] = [
+	static readonly opGetGeneratedTemplate: string[] = [
 		"cloudformation:GetGeneratedTemplate",
 	];
 	/** IAM actions required for the GetHookResult API call. */
-	static readonly GET_HOOK_RESULT: string[] = ["cloudformation:GetHookResult"];
+	static readonly opGetHookResult: string[] = ["cloudformation:GetHookResult"];
 	/** IAM actions required for the GetResource API call. */
-	static readonly GET_RESOURCE: string[] = [
+	static readonly opGetResource: string[] = [
 		"cloudformation:GetResource",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the GetResourceRequestStatus API call. */
-	static readonly GET_RESOURCE_REQUEST_STATUS: string[] = [
+	static readonly opGetResourceRequestStatus: string[] = [
 		"cloudformation:GetResourceRequestStatus",
 	];
 	/** IAM actions required for the GetStackPolicy API call. */
-	static readonly GET_STACK_POLICY: string[] = [
+	static readonly opGetStackPolicy: string[] = [
 		"cloudformation:GetStackPolicy",
 	];
 	/** IAM actions required for the GetTemplate API call. */
-	static readonly GET_TEMPLATE: string[] = ["cloudformation:GetTemplate"];
+	static readonly opGetTemplate: string[] = ["cloudformation:GetTemplate"];
 	/** IAM actions required for the GetTemplateSummary API call. */
-	static readonly GET_TEMPLATE_SUMMARY: string[] = [
+	static readonly opGetTemplateSummary: string[] = [
 		"cloudformation:GetTemplateSummary",
 	];
 	/** IAM actions required for the ImportStacksToStackSet API call. */
-	static readonly IMPORT_STACKS_TO_STACK_SET: string[] = [
+	static readonly ImportStacksToStackSet: string[] = [
 		"cloudformation:ImportStacksToStackSet",
 	];
 	/** IAM actions required for the ListChangeSets API call. */
-	static readonly LIST_CHANGE_SETS: string[] = [
-		"cloudformation:ListChangeSets",
-	];
+	static readonly ListChangeSets: string[] = ["cloudformation:ListChangeSets"];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["cloudformation:ListExports"];
+	static readonly ListExports: string[] = ["cloudformation:ListExports"];
 	/** IAM actions required for the ListGeneratedTemplates API call. */
-	static readonly LIST_GENERATED_TEMPLATES: string[] = [
+	static readonly ListGeneratedTemplates: string[] = [
 		"cloudformation:ListGeneratedTemplates",
 	];
 	/** IAM actions required for the ListHookResults API call. */
-	static readonly LIST_HOOK_RESULTS: string[] = [
+	static readonly ListHookResults: string[] = [
 		"cloudformation:ListAllHookResults",
 		"cloudformation:ListHookResults",
 	];
 	/** IAM actions required for the ListImports API call. */
-	static readonly LIST_IMPORTS: string[] = ["cloudformation:ListImports"];
+	static readonly ListImports: string[] = ["cloudformation:ListImports"];
 	/** IAM actions required for the ListResourceRequests API call. */
-	static readonly LIST_RESOURCE_REQUESTS: string[] = [
+	static readonly ListResourceRequests: string[] = [
 		"cloudformation:ListResourceRequests",
 	];
 	/** IAM actions required for the ListResourceScanRelatedResources API call. */
-	static readonly LIST_RESOURCE_SCAN_RELATED_RESOURCES: string[] = [
+	static readonly ListResourceScanRelatedResources: string[] = [
 		"cloudformation:ListResourceScanRelatedResources",
 	];
 	/** IAM actions required for the ListResourceScanResources API call. */
-	static readonly LIST_RESOURCE_SCAN_RESOURCES: string[] = [
+	static readonly ListResourceScanResources: string[] = [
 		"cloudformation:ListResourceScanResources",
 	];
 	/** IAM actions required for the ListResourceScans API call. */
-	static readonly LIST_RESOURCE_SCANS: string[] = [
+	static readonly ListResourceScans: string[] = [
 		"cloudformation:ListResourceScans",
 	];
 	/** IAM actions required for the ListResources API call. */
-	static readonly LIST_RESOURCES: string[] = [
+	static readonly ListResources: string[] = [
 		"cloudformation:ListResources",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ListStackInstanceResourceDrifts API call. */
-	static readonly LIST_STACK_INSTANCE_RESOURCE_DRIFTS: string[] = [
+	static readonly ListStackInstanceResourceDrifts: string[] = [
 		"cloudformation:ListStackInstanceResourceDrifts",
 	];
 	/** IAM actions required for the ListStackInstances API call. */
-	static readonly LIST_STACK_INSTANCES: string[] = [
+	static readonly ListStackInstances: string[] = [
 		"cloudformation:ListStackInstances",
 	];
 	/** IAM actions required for the ListStackRefactorActions API call. */
-	static readonly LIST_STACK_REFACTOR_ACTIONS: string[] = [
+	static readonly ListStackRefactorActions: string[] = [
 		"cloudformation:ListStackRefactorActions",
 	];
 	/** IAM actions required for the ListStackRefactors API call. */
-	static readonly LIST_STACK_REFACTORS: string[] = [
+	static readonly ListStackRefactors: string[] = [
 		"cloudformation:ListStackRefactors",
 	];
 	/** IAM actions required for the ListStackResources API call. */
-	static readonly LIST_STACK_RESOURCES: string[] = [
+	static readonly ListStackResources: string[] = [
 		"cloudformation:ListStackResources",
 	];
 	/** IAM actions required for the ListStackSetAutoDeploymentTargets API call. */
-	static readonly LIST_STACK_SET_AUTO_DEPLOYMENT_TARGETS: string[] = [
+	static readonly ListStackSetAutoDeploymentTargets: string[] = [
 		"cloudformation:ListStackSetAutoDeploymentTargets",
 	];
 	/** IAM actions required for the ListStackSetOperationResults API call. */
-	static readonly LIST_STACK_SET_OPERATION_RESULTS: string[] = [
+	static readonly ListStackSetOperationResults: string[] = [
 		"cloudformation:ListStackSetOperationResults",
 	];
 	/** IAM actions required for the ListStackSetOperations API call. */
-	static readonly LIST_STACK_SET_OPERATIONS: string[] = [
+	static readonly ListStackSetOperations: string[] = [
 		"cloudformation:ListStackSetOperations",
 	];
 	/** IAM actions required for the ListStackSets API call. */
-	static readonly LIST_STACK_SETS: string[] = ["cloudformation:ListStackSets"];
+	static readonly ListStackSets: string[] = ["cloudformation:ListStackSets"];
 	/** IAM actions required for the ListStacks API call. */
-	static readonly LIST_STACKS: string[] = ["cloudformation:ListStacks"];
+	static readonly ListStacks: string[] = ["cloudformation:ListStacks"];
 	/** IAM actions required for the ListTypeRegistrations API call. */
-	static readonly LIST_TYPE_REGISTRATIONS: string[] = [
+	static readonly ListTypeRegistrations: string[] = [
 		"cloudformation:ListTypeRegistrations",
 	];
 	/** IAM actions required for the ListTypeVersions API call. */
-	static readonly LIST_TYPE_VERSIONS: string[] = [
+	static readonly ListTypeVersions: string[] = [
 		"cloudformation:ListTypeVersions",
 	];
 	/** IAM actions required for the ListTypes API call. */
-	static readonly LIST_TYPES: string[] = ["cloudformation:ListTypes"];
+	static readonly ListTypes: string[] = ["cloudformation:ListTypes"];
 	/** IAM actions required for the PublishType API call. */
-	static readonly PUBLISH_TYPE: string[] = ["cloudformation:PublishType"];
+	static readonly PublishType: string[] = ["cloudformation:PublishType"];
 	/** IAM actions required for the RecordHandlerProgress API call. */
-	static readonly RECORD_HANDLER_PROGRESS: string[] = [
+	static readonly RecordHandlerProgress: string[] = [
 		"cloudformation:RecordHandlerProgress",
 	];
 	/** IAM actions required for the RegisterPublisher API call. */
-	static readonly REGISTER_PUBLISHER: string[] = [
+	static readonly RegisterPublisher: string[] = [
 		"cloudformation:RegisterPublisher",
 	];
 	/** IAM actions required for the RegisterType API call. */
-	static readonly REGISTER_TYPE: string[] = [
+	static readonly RegisterType: string[] = [
 		"iam:PassRole",
 		"cloudformation:RegisterType",
 	];
 	/** IAM actions required for the RollbackStack API call. */
-	static readonly ROLLBACK_STACK: string[] = [
+	static readonly RollbackStack: string[] = [
 		"iam:PassRole",
 		"cloudformation:RollbackStack",
 	];
 	/** IAM actions required for the SetStackPolicy API call. */
-	static readonly SET_STACK_POLICY: string[] = [
+	static readonly opSetStackPolicy: string[] = [
 		"cloudformation:SetStackPolicy",
 	];
 	/** IAM actions required for the SetTypeConfiguration API call. */
-	static readonly SET_TYPE_CONFIGURATION: string[] = [
+	static readonly opSetTypeConfiguration: string[] = [
 		"cloudformation:SetTypeConfiguration",
 	];
 	/** IAM actions required for the SetTypeDefaultVersion API call. */
-	static readonly SET_TYPE_DEFAULT_VERSION: string[] = [
+	static readonly opSetTypeDefaultVersion: string[] = [
 		"cloudformation:SetTypeDefaultVersion",
 	];
 	/** IAM actions required for the SignalResource API call. */
-	static readonly SIGNAL_RESOURCE: string[] = ["cloudformation:SignalResource"];
+	static readonly SignalResource: string[] = ["cloudformation:SignalResource"];
 	/** IAM actions required for the StartResourceScan API call. */
-	static readonly START_RESOURCE_SCAN: string[] = [
+	static readonly StartResourceScan: string[] = [
 		"cloudformation:StartResourceScan",
 	];
 	/** IAM actions required for the StopStackSetOperation API call. */
-	static readonly STOP_STACK_SET_OPERATION: string[] = [
+	static readonly StopStackSetOperation: string[] = [
 		"cloudformation:StopStackSetOperation",
 	];
 	/** IAM actions required for the TestType API call. */
-	static readonly TEST_TYPE: string[] = ["cloudformation:TestType"];
+	static readonly TestType: string[] = ["cloudformation:TestType"];
 	/** IAM actions required for the UpdateGeneratedTemplate API call. */
-	static readonly UPDATE_GENERATED_TEMPLATE: string[] = [
+	static readonly UpdateGeneratedTemplate: string[] = [
 		"cloudformation:UpdateGeneratedTemplate",
 	];
 	/** IAM actions required for the UpdateResource API call. */
-	static readonly UPDATE_RESOURCE: string[] = [
+	static readonly UpdateResource: string[] = [
 		"iam:PassRole",
 		"cloudformation:UpdateResource",
 	];
 	/** IAM actions required for the UpdateStack API call. */
-	static readonly UPDATE_STACK: string[] = [
+	static readonly UpdateStack: string[] = [
 		"iam:PassRole",
 		"cloudformation:SetStackPolicy",
 		"cloudformation:TagResource",
@@ -1164,22 +1269,22 @@ export class CloudFormationOperations {
 		"cloudformation:UpdateStack",
 	];
 	/** IAM actions required for the UpdateStackInstances API call. */
-	static readonly UPDATE_STACK_INSTANCES: string[] = [
+	static readonly UpdateStackInstances: string[] = [
 		"cloudformation:UpdateStackInstances",
 	];
 	/** IAM actions required for the UpdateStackSet API call. */
-	static readonly UPDATE_STACK_SET: string[] = [
+	static readonly UpdateStackSet: string[] = [
 		"iam:PassRole",
 		"cloudformation:TagResource",
 		"cloudformation:UntagResource",
 		"cloudformation:UpdateStackSet",
 	];
 	/** IAM actions required for the UpdateTerminationProtection API call. */
-	static readonly UPDATE_TERMINATION_PROTECTION: string[] = [
+	static readonly UpdateTerminationProtection: string[] = [
 		"cloudformation:UpdateTerminationProtection",
 	];
 	/** IAM actions required for the ValidateTemplate API call. */
-	static readonly VALIDATE_TEMPLATE: string[] = [
+	static readonly ValidateTemplate: string[] = [
 		"cloudformation:ValidateTemplate",
 	];
 }
@@ -1189,11 +1294,11 @@ export class CloudFormationOperations {
  */
 export class CloudFormationConditions {
 	/** Condition keys applicable to the ContinueUpdateRollback action. */
-	static readonly CONTINUE_UPDATE_ROLLBACK_CONDITION_KEYS: string[] = [
+	static readonly ContinueUpdateRollbackConditionKeys: string[] = [
 		"cloudformation:RoleArn",
 	];
 	/** Condition keys applicable to the CreateChangeSet action. */
-	static readonly CREATE_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateChangeSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:ChangeSetName",
@@ -1204,7 +1309,7 @@ export class CloudFormationConditions {
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the CreateStack action. */
-	static readonly CREATE_STACK_CONDITION_KEYS: string[] = [
+	static readonly CreateStackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:ResourceTypes",
@@ -1213,82 +1318,82 @@ export class CloudFormationConditions {
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the CreateStackInstances action. */
-	static readonly CREATE_STACK_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly CreateStackInstancesConditionKeys: string[] = [
 		"aws:TagKeys",
 		"cloudformation:TargetRegion",
 	];
 	/** Condition keys applicable to the CreateStackSet action. */
-	static readonly CREATE_STACK_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateStackSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:RoleArn",
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the DeleteChangeSet action. */
-	static readonly DELETE_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly DeleteChangeSetConditionKeys: string[] = [
 		"cloudformation:ChangeSetName",
 	];
 	/** Condition keys applicable to the DeleteStack action. */
-	static readonly DELETE_STACK_CONDITION_KEYS: string[] = [
+	static readonly DeleteStackConditionKeys: string[] = [
 		"cloudformation:RoleArn",
 	];
 	/** Condition keys applicable to the DeleteStackInstances action. */
-	static readonly DELETE_STACK_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DeleteStackInstancesConditionKeys: string[] = [
 		"cloudformation:TargetRegion",
 	];
 	/** Condition keys applicable to the DescribeChangeSet action. */
-	static readonly DESCRIBE_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly DescribeChangeSetConditionKeys: string[] = [
 		"cloudformation:ChangeSetName",
 	];
 	/** Condition keys applicable to the DescribeChangeSetHooks action. */
-	static readonly DESCRIBE_CHANGE_SET_HOOKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeChangeSetHooksConditionKeys: string[] = [
 		"cloudformation:ChangeSetName",
 	];
 	/** Condition keys applicable to the EstimateTemplateCost action. */
-	static readonly ESTIMATE_TEMPLATE_COST_CONDITION_KEYS: string[] = [
+	static readonly EstimateTemplateCostConditionKeys: string[] = [
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the ExecuteChangeSet action. */
-	static readonly EXECUTE_CHANGE_SET_CONDITION_KEYS: string[] = [
+	static readonly ExecuteChangeSetConditionKeys: string[] = [
 		"cloudformation:ChangeSetName",
 	];
 	/** Condition keys applicable to the GetHookResult action. */
-	static readonly GET_HOOK_RESULT_CONDITION_KEYS: string[] = [
+	static readonly actionGetHookResultConditionKeys: string[] = [
 		"cloudformation:TypeArn",
 	];
 	/** Condition keys applicable to the GetTemplateSummary action. */
-	static readonly GET_TEMPLATE_SUMMARY_CONDITION_KEYS: string[] = [
+	static readonly actionGetTemplateSummaryConditionKeys: string[] = [
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the ListAllHookResults action. */
-	static readonly LIST_ALL_HOOK_RESULTS_CONDITION_KEYS: string[] = [
+	static readonly ListAllHookResultsConditionKeys: string[] = [
 		"cloudformation:TypeArn",
 	];
 	/** Condition keys applicable to the ListHookResults action. */
-	static readonly LIST_HOOK_RESULTS_CONDITION_KEYS: string[] = [
+	static readonly ListHookResultsConditionKeys: string[] = [
 		"cloudformation:ChangeSetName",
 	];
 	/** Condition keys applicable to the RollbackStack action. */
-	static readonly ROLLBACK_STACK_CONDITION_KEYS: string[] = [
+	static readonly RollbackStackConditionKeys: string[] = [
 		"cloudformation:RoleArn",
 	];
 	/** Condition keys applicable to the SetStackPolicy action. */
-	static readonly SET_STACK_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionSetStackPolicyConditionKeys: string[] = [
 		"cloudformation:StackPolicyUrl",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:CreateAction",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"cloudformation:CreateAction",
 	];
 	/** Condition keys applicable to the UpdateStack action. */
-	static readonly UPDATE_STACK_CONDITION_KEYS: string[] = [
+	static readonly UpdateStackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:ResourceTypes",
@@ -1297,11 +1402,11 @@ export class CloudFormationConditions {
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the UpdateStackInstances action. */
-	static readonly UPDATE_STACK_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly UpdateStackInstancesConditionKeys: string[] = [
 		"cloudformation:TargetRegion",
 	];
 	/** Condition keys applicable to the UpdateStackSet action. */
-	static readonly UPDATE_STACK_SET_CONDITION_KEYS: string[] = [
+	static readonly UpdateStackSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:RoleArn",
@@ -1309,16 +1414,16 @@ export class CloudFormationConditions {
 		"cloudformation:TemplateUrl",
 	];
 	/** Condition keys applicable to the ValidateTemplate action. */
-	static readonly VALIDATE_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly ValidateTemplateConditionKeys: string[] = [
 		"cloudformation:TemplateUrl",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cloudformation:ChangeSetName (String) */
 	static readonly CHANGE_SET_NAME = "cloudformation:ChangeSetName";
 	/** Condition key: cloudformation:CreateAction (String) */

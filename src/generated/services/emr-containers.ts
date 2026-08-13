@@ -13,124 +13,264 @@ export class EmrContainersActions {
 	static readonly SERVICE_PREFIX = "emr-containers";
 
 	/** [Write] emr-containers:CancelJobRun */
-	static readonly CANCEL_JOB_RUN = "emr-containers:CancelJobRun";
+	static readonly CancelJobRun = "emr-containers:CancelJobRun";
 	/** [Write] emr-containers:CreateCertificate */
-	static readonly CREATE_CERTIFICATE = "emr-containers:CreateCertificate";
+	static readonly CreateCertificate = "emr-containers:CreateCertificate";
 	/** [Write] emr-containers:CreateJobTemplate */
-	static readonly CREATE_JOB_TEMPLATE = "emr-containers:CreateJobTemplate";
+	static readonly CreateJobTemplate = "emr-containers:CreateJobTemplate";
 	/** [Write] emr-containers:CreateManagedEndpoint */
-	static readonly CREATE_MANAGED_ENDPOINT =
+	static readonly CreateManagedEndpoint =
 		"emr-containers:CreateManagedEndpoint";
 	/** [Write] emr-containers:CreateSecurityConfiguration */
-	static readonly CREATE_SECURITY_CONFIGURATION =
+	static readonly CreateSecurityConfiguration =
 		"emr-containers:CreateSecurityConfiguration";
 	/** [Write] emr-containers:CreateVirtualCluster */
-	static readonly CREATE_VIRTUAL_CLUSTER =
-		"emr-containers:CreateVirtualCluster";
+	static readonly CreateVirtualCluster = "emr-containers:CreateVirtualCluster";
 	/** [Write] emr-containers:DeleteJobTemplate */
-	static readonly DELETE_JOB_TEMPLATE = "emr-containers:DeleteJobTemplate";
+	static readonly DeleteJobTemplate = "emr-containers:DeleteJobTemplate";
 	/** [Write] emr-containers:DeleteManagedEndpoint */
-	static readonly DELETE_MANAGED_ENDPOINT =
+	static readonly DeleteManagedEndpoint =
 		"emr-containers:DeleteManagedEndpoint";
 	/** [Write] emr-containers:DeleteSecurityConfiguration */
-	static readonly DELETE_SECURITY_CONFIGURATION =
+	static readonly DeleteSecurityConfiguration =
 		"emr-containers:DeleteSecurityConfiguration";
 	/** [Write] emr-containers:DeleteVirtualCluster */
-	static readonly DELETE_VIRTUAL_CLUSTER =
-		"emr-containers:DeleteVirtualCluster";
+	static readonly DeleteVirtualCluster = "emr-containers:DeleteVirtualCluster";
 	/** [Read] emr-containers:DescribeJobRun */
-	static readonly DESCRIBE_JOB_RUN = "emr-containers:DescribeJobRun";
+	static readonly DescribeJobRun = "emr-containers:DescribeJobRun";
 	/** [Read] emr-containers:DescribeJobTemplate */
-	static readonly DESCRIBE_JOB_TEMPLATE = "emr-containers:DescribeJobTemplate";
+	static readonly DescribeJobTemplate = "emr-containers:DescribeJobTemplate";
 	/** [Read] emr-containers:DescribeManagedEndpoint */
-	static readonly DESCRIBE_MANAGED_ENDPOINT =
+	static readonly DescribeManagedEndpoint =
 		"emr-containers:DescribeManagedEndpoint";
 	/** [Read] emr-containers:DescribeSecurityConfiguration */
-	static readonly DESCRIBE_SECURITY_CONFIGURATION =
+	static readonly DescribeSecurityConfiguration =
 		"emr-containers:DescribeSecurityConfiguration";
 	/** [Read] emr-containers:DescribeVirtualCluster */
-	static readonly DESCRIBE_VIRTUAL_CLUSTER =
+	static readonly DescribeVirtualCluster =
 		"emr-containers:DescribeVirtualCluster";
 	/** [Write] emr-containers:GetManagedEndpointSessionCredentials */
-	static readonly GET_MANAGED_ENDPOINT_SESSION_CREDENTIALS =
+	static readonly actionGetManagedEndpointSessionCredentials =
 		"emr-containers:GetManagedEndpointSessionCredentials";
 	/** [List] emr-containers:ListJobRuns */
-	static readonly LIST_JOB_RUNS = "emr-containers:ListJobRuns";
+	static readonly ListJobRuns = "emr-containers:ListJobRuns";
 	/** [List] emr-containers:ListJobTemplates */
-	static readonly LIST_JOB_TEMPLATES = "emr-containers:ListJobTemplates";
+	static readonly ListJobTemplates = "emr-containers:ListJobTemplates";
 	/** [List] emr-containers:ListManagedEndpoints */
-	static readonly LIST_MANAGED_ENDPOINTS =
-		"emr-containers:ListManagedEndpoints";
+	static readonly ListManagedEndpoints = "emr-containers:ListManagedEndpoints";
 	/** [List] emr-containers:ListSecurityConfigurations */
-	static readonly LIST_SECURITY_CONFIGURATIONS =
+	static readonly ListSecurityConfigurations =
 		"emr-containers:ListSecurityConfigurations";
 	/** [List] emr-containers:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "emr-containers:ListTagsForResource";
+	static readonly ListTagsForResource = "emr-containers:ListTagsForResource";
 	/** [List] emr-containers:ListVirtualClusters */
-	static readonly LIST_VIRTUAL_CLUSTERS = "emr-containers:ListVirtualClusters";
+	static readonly ListVirtualClusters = "emr-containers:ListVirtualClusters";
 	/** [Write] emr-containers:StartJobRun */
-	static readonly START_JOB_RUN = "emr-containers:StartJobRun";
+	static readonly StartJobRun = "emr-containers:StartJobRun";
 	/** [Tagging] emr-containers:TagResource */
-	static readonly TAG_RESOURCE = "emr-containers:TagResource";
+	static readonly TagResource = "emr-containers:TagResource";
 	/** [Tagging] emr-containers:UntagResource */
-	static readonly UNTAG_RESOURCE = "emr-containers:UntagResource";
+	static readonly UntagResource = "emr-containers:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		EmrContainersActions.DESCRIBE_JOB_RUN,
-		EmrContainersActions.DESCRIBE_JOB_TEMPLATE,
-		EmrContainersActions.DESCRIBE_MANAGED_ENDPOINT,
-		EmrContainersActions.DESCRIBE_SECURITY_CONFIGURATION,
-		EmrContainersActions.DESCRIBE_VIRTUAL_CLUSTER,
+	static readonly AllReadActions: string[] = [
+		EmrContainersActions.DescribeJobRun,
+		EmrContainersActions.DescribeJobTemplate,
+		EmrContainersActions.DescribeManagedEndpoint,
+		EmrContainersActions.DescribeSecurityConfiguration,
+		EmrContainersActions.DescribeVirtualCluster,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		EmrContainersActions.CANCEL_JOB_RUN,
-		EmrContainersActions.CREATE_CERTIFICATE,
-		EmrContainersActions.CREATE_JOB_TEMPLATE,
-		EmrContainersActions.CREATE_MANAGED_ENDPOINT,
-		EmrContainersActions.CREATE_SECURITY_CONFIGURATION,
-		EmrContainersActions.CREATE_VIRTUAL_CLUSTER,
-		EmrContainersActions.DELETE_JOB_TEMPLATE,
-		EmrContainersActions.DELETE_MANAGED_ENDPOINT,
-		EmrContainersActions.DELETE_SECURITY_CONFIGURATION,
-		EmrContainersActions.DELETE_VIRTUAL_CLUSTER,
-		EmrContainersActions.GET_MANAGED_ENDPOINT_SESSION_CREDENTIALS,
-		EmrContainersActions.START_JOB_RUN,
+	static readonly AllWriteActions: string[] = [
+		EmrContainersActions.CancelJobRun,
+		EmrContainersActions.CreateCertificate,
+		EmrContainersActions.CreateJobTemplate,
+		EmrContainersActions.CreateManagedEndpoint,
+		EmrContainersActions.CreateSecurityConfiguration,
+		EmrContainersActions.CreateVirtualCluster,
+		EmrContainersActions.DeleteJobTemplate,
+		EmrContainersActions.DeleteManagedEndpoint,
+		EmrContainersActions.DeleteSecurityConfiguration,
+		EmrContainersActions.DeleteVirtualCluster,
+		EmrContainersActions.actionGetManagedEndpointSessionCredentials,
+		EmrContainersActions.StartJobRun,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		EmrContainersActions.LIST_JOB_RUNS,
-		EmrContainersActions.LIST_JOB_TEMPLATES,
-		EmrContainersActions.LIST_MANAGED_ENDPOINTS,
-		EmrContainersActions.LIST_SECURITY_CONFIGURATIONS,
-		EmrContainersActions.LIST_TAGS_FOR_RESOURCE,
-		EmrContainersActions.LIST_VIRTUAL_CLUSTERS,
+	static readonly AllListActions: string[] = [
+		EmrContainersActions.ListJobRuns,
+		EmrContainersActions.ListJobTemplates,
+		EmrContainersActions.ListManagedEndpoints,
+		EmrContainersActions.ListSecurityConfigurations,
+		EmrContainersActions.ListTagsForResource,
+		EmrContainersActions.ListVirtualClusters,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		EmrContainersActions.TAG_RESOURCE,
-		EmrContainersActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		EmrContainersActions.TagResource,
+		EmrContainersActions.UntagResource,
 	];
 }
 
-const JobRunArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):/virtualclusters/(?<virtualClusterId>[^:/?]+)/jobruns/(?<jobRunId>[^:/?]+)$",
-);
-const JobTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):/jobtemplates/(?<jobTemplateId>[^:/?]+)$",
-);
-const ManagedEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):/virtualclusters/(?<virtualClusterId>[^:/?]+)/endpoints/(?<endpointId>[^:/?]+)$",
-);
-const SecurityConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):/securityconfigurations/(?<securityConfigurationId>[^:/?]+)$",
-);
-const VirtualClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):/virtualclusters/(?<virtualClusterId>[^:/?]+)$",
-);
+/**
+ * Properties for building a jobRun ARN.
+ */
+export interface EmrContainersJobRunArnProps {
+	/** The VirtualClusterId component of the ARN. */
+	readonly virtualClusterId: string;
+	/** The JobRunId component of the ARN. */
+	readonly jobRunId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a jobRun ARN.
+ */
+export interface EmrContainersJobRunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VirtualClusterId component. */
+	readonly virtualClusterId: string;
+	/** The JobRunId component. */
+	readonly jobRunId: string;
+}
+
+/**
+ * Properties for building a jobTemplate ARN.
+ */
+export interface EmrContainersJobTemplateArnProps {
+	/** The JobTemplateId component of the ARN. */
+	readonly jobTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a jobTemplate ARN.
+ */
+export interface EmrContainersJobTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobTemplateId component. */
+	readonly jobTemplateId: string;
+}
+
+/**
+ * Properties for building a managedEndpoint ARN.
+ */
+export interface EmrContainersManagedEndpointArnProps {
+	/** The VirtualClusterId component of the ARN. */
+	readonly virtualClusterId: string;
+	/** The EndpointId component of the ARN. */
+	readonly endpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a managedEndpoint ARN.
+ */
+export interface EmrContainersManagedEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VirtualClusterId component. */
+	readonly virtualClusterId: string;
+	/** The EndpointId component. */
+	readonly endpointId: string;
+}
+
+/**
+ * Properties for building a securityConfiguration ARN.
+ */
+export interface EmrContainersSecurityConfigurationArnProps {
+	/** The SecurityConfigurationId component of the ARN. */
+	readonly securityConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a securityConfiguration ARN.
+ */
+export interface EmrContainersSecurityConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityConfigurationId component. */
+	readonly securityConfigurationId: string;
+}
+
+/**
+ * Properties for building a virtualCluster ARN.
+ */
+export interface EmrContainersVirtualClusterArnProps {
+	/** The VirtualClusterId component of the ARN. */
+	readonly virtualClusterId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a virtualCluster ARN.
+ */
+export interface EmrContainersVirtualClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VirtualClusterId component. */
+	readonly virtualClusterId: string;
+}
+
+const JobRunArnRegex =
+	/^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):\/virtualclusters\/(?<virtualClusterId>[^:/?]+)\/jobruns\/(?<jobRunId>[^:/?]+)$/;
+const JobTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):\/jobtemplates\/(?<jobTemplateId>[^:/?]+)$/;
+const ManagedEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):\/virtualclusters\/(?<virtualClusterId>[^:/?]+)\/endpoints\/(?<endpointId>[^:/?]+)$/;
+const SecurityConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):\/securityconfigurations\/(?<securityConfigurationId>[^:/?]+)$/;
+const VirtualClusterArnRegex =
+	/^arn:(?<partition>[^:]+):emr-containers:(?<region>[^:]*):(?<account>[^:]*):\/virtualclusters\/(?<virtualClusterId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for emr-containers resources.
@@ -139,18 +279,7 @@ export class EmrContainersResources {
 	/**
 	 * Builds an ARN for the jobRun resource.
 	 */
-	static jobRun(props: {
-		/** The VirtualClusterId component of the ARN. */
-		readonly virtualClusterId: string;
-		/** The JobRunId component of the ARN. */
-		readonly jobRunId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobRun(props: EmrContainersJobRunArnProps): string {
 		return `arn:${props.partition ?? "aws"}:emr-containers:${props.region ?? "*"}:${props.account ?? "*"}:/virtualclusters/${props.virtualClusterId}/jobruns/${props.jobRunId}`;
 	}
 
@@ -165,13 +294,7 @@ export class EmrContainersResources {
 	 * Parses a jobRun ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobRunArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		virtualClusterId: string;
-		jobRunId: string;
-	} {
+	static parseJobRunArn(arn: string): EmrContainersJobRunArnComponents {
 		const match = JobRunArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid jobRun ARN: ${arn}`);
@@ -188,16 +311,7 @@ export class EmrContainersResources {
 	/**
 	 * Builds an ARN for the jobTemplate resource.
 	 */
-	static jobTemplate(props: {
-		/** The JobTemplateId component of the ARN. */
-		readonly jobTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobTemplate(props: EmrContainersJobTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:emr-containers:${props.region ?? "*"}:${props.account ?? "*"}:/jobtemplates/${props.jobTemplateId}`;
 	}
 
@@ -212,12 +326,9 @@ export class EmrContainersResources {
 	 * Parses a jobTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobTemplateId: string;
-	} {
+	static parseJobTemplateArn(
+		arn: string,
+	): EmrContainersJobTemplateArnComponents {
 		const match = JobTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid jobTemplate ARN: ${arn}`);
@@ -233,18 +344,7 @@ export class EmrContainersResources {
 	/**
 	 * Builds an ARN for the managedEndpoint resource.
 	 */
-	static managedEndpoint(props: {
-		/** The VirtualClusterId component of the ARN. */
-		readonly virtualClusterId: string;
-		/** The EndpointId component of the ARN. */
-		readonly endpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedEndpoint(props: EmrContainersManagedEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:emr-containers:${props.region ?? "*"}:${props.account ?? "*"}:/virtualclusters/${props.virtualClusterId}/endpoints/${props.endpointId}`;
 	}
 
@@ -259,13 +359,9 @@ export class EmrContainersResources {
 	 * Parses a managedEndpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		virtualClusterId: string;
-		endpointId: string;
-	} {
+	static parseManagedEndpointArn(
+		arn: string,
+	): EmrContainersManagedEndpointArnComponents {
 		const match = ManagedEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid managedEndpoint ARN: ${arn}`);
@@ -282,16 +378,9 @@ export class EmrContainersResources {
 	/**
 	 * Builds an ARN for the securityConfiguration resource.
 	 */
-	static securityConfiguration(props: {
-		/** The SecurityConfigurationId component of the ARN. */
-		readonly securityConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityConfiguration(
+		props: EmrContainersSecurityConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:emr-containers:${props.region ?? "*"}:${props.account ?? "*"}:/securityconfigurations/${props.securityConfigurationId}`;
 	}
 
@@ -306,12 +395,9 @@ export class EmrContainersResources {
 	 * Parses a securityConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityConfigurationId: string;
-	} {
+	static parseSecurityConfigurationArn(
+		arn: string,
+	): EmrContainersSecurityConfigurationArnComponents {
 		const match = SecurityConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid securityConfiguration ARN: ${arn}`);
@@ -327,16 +413,7 @@ export class EmrContainersResources {
 	/**
 	 * Builds an ARN for the virtualCluster resource.
 	 */
-	static virtualCluster(props: {
-		/** The VirtualClusterId component of the ARN. */
-		readonly virtualClusterId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static virtualCluster(props: EmrContainersVirtualClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:emr-containers:${props.region ?? "*"}:${props.account ?? "*"}:/virtualclusters/${props.virtualClusterId}`;
 	}
 
@@ -351,12 +428,9 @@ export class EmrContainersResources {
 	 * Parses a virtualCluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVirtualClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		virtualClusterId: string;
-	} {
+	static parseVirtualClusterArn(
+		arn: string,
+	): EmrContainersVirtualClusterArnComponents {
 		const match = VirtualClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid virtualCluster ARN: ${arn}`);
@@ -375,14 +449,14 @@ export class EmrContainersResources {
  */
 export class EmrContainersOperations {
 	/** IAM actions required for the CancelJobRun API call. */
-	static readonly CANCEL_JOB_RUN: string[] = ["emr-containers:CancelJobRun"];
+	static readonly CancelJobRun: string[] = ["emr-containers:CancelJobRun"];
 	/** IAM actions required for the CreateJobTemplate API call. */
-	static readonly CREATE_JOB_TEMPLATE: string[] = [
+	static readonly CreateJobTemplate: string[] = [
 		"emr-containers:CreateJobTemplate",
 		"emr-containers:TagResource",
 	];
 	/** IAM actions required for the CreateManagedEndpoint API call. */
-	static readonly CREATE_MANAGED_ENDPOINT: string[] = [
+	static readonly CreateManagedEndpoint: string[] = [
 		"ec2:AuthorizeSecurityGroupEgress",
 		"ec2:AuthorizeSecurityGroupIngress",
 		"emr-containers:CreateManagedEndpoint",
@@ -394,32 +468,32 @@ export class EmrContainersOperations {
 		"emr-containers:TagResource",
 	];
 	/** IAM actions required for the CreateSecurityConfiguration API call. */
-	static readonly CREATE_SECURITY_CONFIGURATION: string[] = [
+	static readonly CreateSecurityConfiguration: string[] = [
 		"emr-containers:CreateSecurityConfiguration",
 		"emr-containers:TagResource",
 	];
 	/** IAM actions required for the CreateVirtualCluster API call. */
-	static readonly CREATE_VIRTUAL_CLUSTER: string[] = [
+	static readonly CreateVirtualCluster: string[] = [
 		"emr-containers:CreateVirtualCluster",
 		"emr-containers:TagResource",
 	];
 	/** IAM actions required for the DeleteJobTemplate API call. */
-	static readonly DELETE_JOB_TEMPLATE: string[] = [
+	static readonly DeleteJobTemplate: string[] = [
 		"emr-containers:DeleteJobTemplate",
 	];
 	/** IAM actions required for the DeleteManagedEndpoint API call. */
-	static readonly DELETE_MANAGED_ENDPOINT: string[] = [
+	static readonly DeleteManagedEndpoint: string[] = [
 		"emr-containers:DeleteManagedEndpoint",
 		"ec2:DeleteSecurityGroup",
 		"ec2:RevokeSecurityGroupEgress",
 		"ec2:RevokeSecurityGroupIngress",
 	];
 	/** IAM actions required for the DeleteSecurityConfiguration API call. */
-	static readonly DELETE_SECURITY_CONFIGURATION: string[] = [
+	static readonly DeleteSecurityConfiguration: string[] = [
 		"emr-containers:DeleteSecurityConfiguration",
 	];
 	/** IAM actions required for the DeleteVirtualCluster API call. */
-	static readonly DELETE_VIRTUAL_CLUSTER: string[] = [
+	static readonly DeleteVirtualCluster: string[] = [
 		"eks:AssociateAccessPolicy",
 		"eks:DeleteAccessEntry",
 		"emr-containers:DeleteVirtualCluster",
@@ -428,64 +502,62 @@ export class EmrContainersOperations {
 		"eks:ListAssociatedAccessPolicies",
 	];
 	/** IAM actions required for the DescribeJobRun API call. */
-	static readonly DESCRIBE_JOB_RUN: string[] = [
-		"emr-containers:DescribeJobRun",
-	];
+	static readonly DescribeJobRun: string[] = ["emr-containers:DescribeJobRun"];
 	/** IAM actions required for the DescribeJobTemplate API call. */
-	static readonly DESCRIBE_JOB_TEMPLATE: string[] = [
+	static readonly DescribeJobTemplate: string[] = [
 		"emr-containers:DescribeJobTemplate",
 	];
 	/** IAM actions required for the DescribeManagedEndpoint API call. */
-	static readonly DESCRIBE_MANAGED_ENDPOINT: string[] = [
+	static readonly DescribeManagedEndpoint: string[] = [
 		"emr-containers:DescribeManagedEndpoint",
 	];
 	/** IAM actions required for the DescribeSecurityConfiguration API call. */
-	static readonly DESCRIBE_SECURITY_CONFIGURATION: string[] = [
+	static readonly DescribeSecurityConfiguration: string[] = [
 		"emr-containers:DescribeSecurityConfiguration",
 	];
 	/** IAM actions required for the DescribeVirtualCluster API call. */
-	static readonly DESCRIBE_VIRTUAL_CLUSTER: string[] = [
+	static readonly DescribeVirtualCluster: string[] = [
 		"emr-containers:DescribeVirtualCluster",
 	];
 	/** IAM actions required for the GetManagedEndpointSessionCredentials API call. */
-	static readonly GET_MANAGED_ENDPOINT_SESSION_CREDENTIALS: string[] = [
+	static readonly opGetManagedEndpointSessionCredentials: string[] = [
 		"emr-containers:GetManagedEndpointSessionCredentials",
 	];
 	/** IAM actions required for the ListJobRuns API call. */
-	static readonly LIST_JOB_RUNS: string[] = ["emr-containers:ListJobRuns"];
+	static readonly ListJobRuns: string[] = ["emr-containers:ListJobRuns"];
 	/** IAM actions required for the ListJobTemplates API call. */
-	static readonly LIST_JOB_TEMPLATES: string[] = [
+	static readonly ListJobTemplates: string[] = [
 		"emr-containers:ListJobTemplates",
 	];
 	/** IAM actions required for the ListManagedEndpoints API call. */
-	static readonly LIST_MANAGED_ENDPOINTS: string[] = [
+	static readonly ListManagedEndpoints: string[] = [
 		"emr-containers:ListManagedEndpoints",
 	];
 	/** IAM actions required for the ListSecurityConfigurations API call. */
-	static readonly LIST_SECURITY_CONFIGURATIONS: string[] = [
+	static readonly ListSecurityConfigurations: string[] = [
 		"emr-containers:ListSecurityConfigurations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"emr-containers:ListTagsForResource",
 	];
 	/** IAM actions required for the ListVirtualClusters API call. */
-	static readonly LIST_VIRTUAL_CLUSTERS: string[] = [
+	static readonly ListVirtualClusters: string[] = [
 		"emr-containers:ListVirtualClusters",
 	];
 	/** IAM actions required for the StartJobRun API call. */
-	static readonly START_JOB_RUN: string[] = [
+	static readonly StartJobRun: string[] = [
 		"emr-containers:DescribeJobTemplate",
 		"iam:PassRole",
 		"emr-containers:StartJobRun",
 		"emr-containers:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["emr-containers:TagResource"];
+	static readonly TagResource: string[] = ["emr-containers:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["emr-containers:UntagResource"];
+	static readonly UntagResource: string[] = ["emr-containers:UntagResource"];
 	/** IAM actions required for the UpdateVirtualCluster API call. */
-	static readonly UPDATE_VIRTUAL_CLUSTER: string[] = [];
+	static readonly UpdateVirtualCluster: string[] = [];
 }
 
 /**
@@ -493,47 +565,47 @@ export class EmrContainersOperations {
  */
 export class EmrContainersConditions {
 	/** Condition keys applicable to the CreateJobTemplate action. */
-	static readonly CREATE_JOB_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateJobTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateManagedEndpoint action. */
-	static readonly CREATE_MANAGED_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateManagedEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"emr-containers:ExecutionRoleArn",
 	];
 	/** Condition keys applicable to the CreateSecurityConfiguration action. */
-	static readonly CREATE_SECURITY_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateSecurityConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVirtualCluster action. */
-	static readonly CREATE_VIRTUAL_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateVirtualClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartJobRun action. */
-	static readonly START_JOB_RUN_CONDITION_KEYS: string[] = [
+	static readonly StartJobRunConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"emr-containers:ExecutionRoleArn",
 		"emr-containers:JobTemplateArn",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: emr-containers:ExecutionRoleArn (ARN) */
 	static readonly EXECUTION_ROLE_ARN = "emr-containers:ExecutionRoleArn";
 	/** Condition key: emr-containers:JobTemplateArn (ARN) */

@@ -13,278 +13,430 @@ export class RekognitionActions {
 	static readonly SERVICE_PREFIX = "rekognition";
 
 	/** [Write] rekognition:AssociateFaces */
-	static readonly ASSOCIATE_FACES = "rekognition:AssociateFaces";
+	static readonly AssociateFaces = "rekognition:AssociateFaces";
 	/** [Read] rekognition:CompareFaces */
-	static readonly COMPARE_FACES = "rekognition:CompareFaces";
+	static readonly CompareFaces = "rekognition:CompareFaces";
 	/** [Write] rekognition:CopyProjectVersion */
-	static readonly COPY_PROJECT_VERSION = "rekognition:CopyProjectVersion";
+	static readonly CopyProjectVersion = "rekognition:CopyProjectVersion";
 	/** [Write] rekognition:CreateCollection */
-	static readonly CREATE_COLLECTION = "rekognition:CreateCollection";
+	static readonly CreateCollection = "rekognition:CreateCollection";
 	/** [Write] rekognition:CreateDataset */
-	static readonly CREATE_DATASET = "rekognition:CreateDataset";
+	static readonly CreateDataset = "rekognition:CreateDataset";
 	/** [Write] rekognition:CreateFaceLivenessSession */
-	static readonly CREATE_FACE_LIVENESS_SESSION =
+	static readonly CreateFaceLivenessSession =
 		"rekognition:CreateFaceLivenessSession";
 	/** [Write] rekognition:CreateProject */
-	static readonly CREATE_PROJECT = "rekognition:CreateProject";
+	static readonly CreateProject = "rekognition:CreateProject";
 	/** [Write] rekognition:CreateProjectVersion */
-	static readonly CREATE_PROJECT_VERSION = "rekognition:CreateProjectVersion";
+	static readonly CreateProjectVersion = "rekognition:CreateProjectVersion";
 	/** [Write] rekognition:CreateStreamProcessor */
-	static readonly CREATE_STREAM_PROCESSOR = "rekognition:CreateStreamProcessor";
+	static readonly CreateStreamProcessor = "rekognition:CreateStreamProcessor";
 	/** [Write] rekognition:CreateUser */
-	static readonly CREATE_USER = "rekognition:CreateUser";
+	static readonly CreateUser = "rekognition:CreateUser";
 	/** [Write] rekognition:DeleteCollection */
-	static readonly DELETE_COLLECTION = "rekognition:DeleteCollection";
+	static readonly DeleteCollection = "rekognition:DeleteCollection";
 	/** [Write] rekognition:DeleteDataset */
-	static readonly DELETE_DATASET = "rekognition:DeleteDataset";
+	static readonly DeleteDataset = "rekognition:DeleteDataset";
 	/** [Write] rekognition:DeleteFaces */
-	static readonly DELETE_FACES = "rekognition:DeleteFaces";
+	static readonly DeleteFaces = "rekognition:DeleteFaces";
 	/** [Write] rekognition:DeleteProject */
-	static readonly DELETE_PROJECT = "rekognition:DeleteProject";
+	static readonly DeleteProject = "rekognition:DeleteProject";
 	/** [Write] rekognition:DeleteProjectPolicy */
-	static readonly DELETE_PROJECT_POLICY = "rekognition:DeleteProjectPolicy";
+	static readonly DeleteProjectPolicy = "rekognition:DeleteProjectPolicy";
 	/** [Write] rekognition:DeleteProjectVersion */
-	static readonly DELETE_PROJECT_VERSION = "rekognition:DeleteProjectVersion";
+	static readonly DeleteProjectVersion = "rekognition:DeleteProjectVersion";
 	/** [Write] rekognition:DeleteStreamProcessor */
-	static readonly DELETE_STREAM_PROCESSOR = "rekognition:DeleteStreamProcessor";
+	static readonly DeleteStreamProcessor = "rekognition:DeleteStreamProcessor";
 	/** [Write] rekognition:DeleteUser */
-	static readonly DELETE_USER = "rekognition:DeleteUser";
+	static readonly DeleteUser = "rekognition:DeleteUser";
 	/** [Read] rekognition:DescribeCollection */
-	static readonly DESCRIBE_COLLECTION = "rekognition:DescribeCollection";
+	static readonly DescribeCollection = "rekognition:DescribeCollection";
 	/** [Read] rekognition:DescribeDataset */
-	static readonly DESCRIBE_DATASET = "rekognition:DescribeDataset";
+	static readonly DescribeDataset = "rekognition:DescribeDataset";
 	/** [Read] rekognition:DescribeProjectVersions */
-	static readonly DESCRIBE_PROJECT_VERSIONS =
+	static readonly DescribeProjectVersions =
 		"rekognition:DescribeProjectVersions";
 	/** [Read] rekognition:DescribeProjects */
-	static readonly DESCRIBE_PROJECTS = "rekognition:DescribeProjects";
+	static readonly DescribeProjects = "rekognition:DescribeProjects";
 	/** [Read] rekognition:DescribeStreamProcessor */
-	static readonly DESCRIBE_STREAM_PROCESSOR =
+	static readonly DescribeStreamProcessor =
 		"rekognition:DescribeStreamProcessor";
 	/** [Read] rekognition:DetectCustomLabels */
-	static readonly DETECT_CUSTOM_LABELS = "rekognition:DetectCustomLabels";
+	static readonly DetectCustomLabels = "rekognition:DetectCustomLabels";
 	/** [Read] rekognition:DetectFaces */
-	static readonly DETECT_FACES = "rekognition:DetectFaces";
+	static readonly DetectFaces = "rekognition:DetectFaces";
 	/** [Read] rekognition:DetectLabels */
-	static readonly DETECT_LABELS = "rekognition:DetectLabels";
+	static readonly DetectLabels = "rekognition:DetectLabels";
 	/** [Read] rekognition:DetectModerationLabels */
-	static readonly DETECT_MODERATION_LABELS =
-		"rekognition:DetectModerationLabels";
+	static readonly DetectModerationLabels = "rekognition:DetectModerationLabels";
 	/** [Read] rekognition:DetectProtectiveEquipment */
-	static readonly DETECT_PROTECTIVE_EQUIPMENT =
+	static readonly DetectProtectiveEquipment =
 		"rekognition:DetectProtectiveEquipment";
 	/** [Read] rekognition:DetectText */
-	static readonly DETECT_TEXT = "rekognition:DetectText";
+	static readonly DetectText = "rekognition:DetectText";
 	/** [Write] rekognition:DisassociateFaces */
-	static readonly DISASSOCIATE_FACES = "rekognition:DisassociateFaces";
+	static readonly DisassociateFaces = "rekognition:DisassociateFaces";
 	/** [Write] rekognition:DistributeDatasetEntries */
-	static readonly DISTRIBUTE_DATASET_ENTRIES =
+	static readonly DistributeDatasetEntries =
 		"rekognition:DistributeDatasetEntries";
 	/** [Read] rekognition:GetCelebrityInfo */
-	static readonly GET_CELEBRITY_INFO = "rekognition:GetCelebrityInfo";
+	static readonly actionGetCelebrityInfo = "rekognition:GetCelebrityInfo";
 	/** [Read] rekognition:GetCelebrityRecognition */
-	static readonly GET_CELEBRITY_RECOGNITION =
+	static readonly actionGetCelebrityRecognition =
 		"rekognition:GetCelebrityRecognition";
 	/** [Read] rekognition:GetContentModeration */
-	static readonly GET_CONTENT_MODERATION = "rekognition:GetContentModeration";
+	static readonly actionGetContentModeration =
+		"rekognition:GetContentModeration";
 	/** [Read] rekognition:GetFaceDetection */
-	static readonly GET_FACE_DETECTION = "rekognition:GetFaceDetection";
+	static readonly actionGetFaceDetection = "rekognition:GetFaceDetection";
 	/** [Read] rekognition:GetFaceLivenessSessionResults */
-	static readonly GET_FACE_LIVENESS_SESSION_RESULTS =
+	static readonly actionGetFaceLivenessSessionResults =
 		"rekognition:GetFaceLivenessSessionResults";
 	/** [Read] rekognition:GetFaceSearch */
-	static readonly GET_FACE_SEARCH = "rekognition:GetFaceSearch";
+	static readonly actionGetFaceSearch = "rekognition:GetFaceSearch";
 	/** [Read] rekognition:GetLabelDetection */
-	static readonly GET_LABEL_DETECTION = "rekognition:GetLabelDetection";
+	static readonly actionGetLabelDetection = "rekognition:GetLabelDetection";
 	/** [Read] rekognition:GetMediaAnalysisJob */
-	static readonly GET_MEDIA_ANALYSIS_JOB = "rekognition:GetMediaAnalysisJob";
+	static readonly actionGetMediaAnalysisJob = "rekognition:GetMediaAnalysisJob";
 	/** [Read] rekognition:GetPersonTracking */
-	static readonly GET_PERSON_TRACKING = "rekognition:GetPersonTracking";
+	static readonly actionGetPersonTracking = "rekognition:GetPersonTracking";
 	/** [Read] rekognition:GetSegmentDetection */
-	static readonly GET_SEGMENT_DETECTION = "rekognition:GetSegmentDetection";
+	static readonly actionGetSegmentDetection = "rekognition:GetSegmentDetection";
 	/** [Read] rekognition:GetTextDetection */
-	static readonly GET_TEXT_DETECTION = "rekognition:GetTextDetection";
+	static readonly actionGetTextDetection = "rekognition:GetTextDetection";
 	/** [Write] rekognition:IndexFaces */
-	static readonly INDEX_FACES = "rekognition:IndexFaces";
+	static readonly IndexFaces = "rekognition:IndexFaces";
 	/** [Read] rekognition:ListCollections */
-	static readonly LIST_COLLECTIONS = "rekognition:ListCollections";
+	static readonly ListCollections = "rekognition:ListCollections";
 	/** [Read] rekognition:ListDatasetEntries */
-	static readonly LIST_DATASET_ENTRIES = "rekognition:ListDatasetEntries";
+	static readonly ListDatasetEntries = "rekognition:ListDatasetEntries";
 	/** [Read] rekognition:ListDatasetLabels */
-	static readonly LIST_DATASET_LABELS = "rekognition:ListDatasetLabels";
+	static readonly ListDatasetLabels = "rekognition:ListDatasetLabels";
 	/** [Read] rekognition:ListFaces */
-	static readonly LIST_FACES = "rekognition:ListFaces";
+	static readonly ListFaces = "rekognition:ListFaces";
 	/** [Read] rekognition:ListMediaAnalysisJobs */
-	static readonly LIST_MEDIA_ANALYSIS_JOBS =
-		"rekognition:ListMediaAnalysisJobs";
+	static readonly ListMediaAnalysisJobs = "rekognition:ListMediaAnalysisJobs";
 	/** [Read] rekognition:ListProjectPolicies */
-	static readonly LIST_PROJECT_POLICIES = "rekognition:ListProjectPolicies";
+	static readonly ListProjectPolicies = "rekognition:ListProjectPolicies";
 	/** [List] rekognition:ListStreamProcessors */
-	static readonly LIST_STREAM_PROCESSORS = "rekognition:ListStreamProcessors";
+	static readonly ListStreamProcessors = "rekognition:ListStreamProcessors";
 	/** [Read] rekognition:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "rekognition:ListTagsForResource";
+	static readonly ListTagsForResource = "rekognition:ListTagsForResource";
 	/** [Read] rekognition:ListUsers */
-	static readonly LIST_USERS = "rekognition:ListUsers";
+	static readonly ListUsers = "rekognition:ListUsers";
 	/** [Write] rekognition:PutProjectPolicy */
-	static readonly PUT_PROJECT_POLICY = "rekognition:PutProjectPolicy";
+	static readonly PutProjectPolicy = "rekognition:PutProjectPolicy";
 	/** [Read] rekognition:RecognizeCelebrities */
-	static readonly RECOGNIZE_CELEBRITIES = "rekognition:RecognizeCelebrities";
+	static readonly RecognizeCelebrities = "rekognition:RecognizeCelebrities";
 	/** [Read] rekognition:SearchFaces */
-	static readonly SEARCH_FACES = "rekognition:SearchFaces";
+	static readonly SearchFaces = "rekognition:SearchFaces";
 	/** [Read] rekognition:SearchFacesByImage */
-	static readonly SEARCH_FACES_BY_IMAGE = "rekognition:SearchFacesByImage";
+	static readonly SearchFacesByImage = "rekognition:SearchFacesByImage";
 	/** [Read] rekognition:SearchUsers */
-	static readonly SEARCH_USERS = "rekognition:SearchUsers";
+	static readonly SearchUsers = "rekognition:SearchUsers";
 	/** [Read] rekognition:SearchUsersByImage */
-	static readonly SEARCH_USERS_BY_IMAGE = "rekognition:SearchUsersByImage";
+	static readonly SearchUsersByImage = "rekognition:SearchUsersByImage";
 	/** [Write] rekognition:StartCelebrityRecognition */
-	static readonly START_CELEBRITY_RECOGNITION =
+	static readonly StartCelebrityRecognition =
 		"rekognition:StartCelebrityRecognition";
 	/** [Write] rekognition:StartContentModeration */
-	static readonly START_CONTENT_MODERATION =
-		"rekognition:StartContentModeration";
+	static readonly StartContentModeration = "rekognition:StartContentModeration";
 	/** [Write] rekognition:StartFaceDetection */
-	static readonly START_FACE_DETECTION = "rekognition:StartFaceDetection";
+	static readonly StartFaceDetection = "rekognition:StartFaceDetection";
 	/** [Write] rekognition:StartFaceLivenessSession */
-	static readonly START_FACE_LIVENESS_SESSION =
+	static readonly StartFaceLivenessSession =
 		"rekognition:StartFaceLivenessSession";
 	/** [Write] rekognition:StartFaceSearch */
-	static readonly START_FACE_SEARCH = "rekognition:StartFaceSearch";
+	static readonly StartFaceSearch = "rekognition:StartFaceSearch";
 	/** [Write] rekognition:StartLabelDetection */
-	static readonly START_LABEL_DETECTION = "rekognition:StartLabelDetection";
+	static readonly StartLabelDetection = "rekognition:StartLabelDetection";
 	/** [Write] rekognition:StartMediaAnalysisJob */
-	static readonly START_MEDIA_ANALYSIS_JOB =
-		"rekognition:StartMediaAnalysisJob";
+	static readonly StartMediaAnalysisJob = "rekognition:StartMediaAnalysisJob";
 	/** [Write] rekognition:StartPersonTracking */
-	static readonly START_PERSON_TRACKING = "rekognition:StartPersonTracking";
+	static readonly StartPersonTracking = "rekognition:StartPersonTracking";
 	/** [Write] rekognition:StartProjectVersion */
-	static readonly START_PROJECT_VERSION = "rekognition:StartProjectVersion";
+	static readonly StartProjectVersion = "rekognition:StartProjectVersion";
 	/** [Write] rekognition:StartSegmentDetection */
-	static readonly START_SEGMENT_DETECTION = "rekognition:StartSegmentDetection";
+	static readonly StartSegmentDetection = "rekognition:StartSegmentDetection";
 	/** [Write] rekognition:StartStreamProcessor */
-	static readonly START_STREAM_PROCESSOR = "rekognition:StartStreamProcessor";
+	static readonly StartStreamProcessor = "rekognition:StartStreamProcessor";
 	/** [Write] rekognition:StartTextDetection */
-	static readonly START_TEXT_DETECTION = "rekognition:StartTextDetection";
+	static readonly StartTextDetection = "rekognition:StartTextDetection";
 	/** [Write] rekognition:StopProjectVersion */
-	static readonly STOP_PROJECT_VERSION = "rekognition:StopProjectVersion";
+	static readonly StopProjectVersion = "rekognition:StopProjectVersion";
 	/** [Write] rekognition:StopStreamProcessor */
-	static readonly STOP_STREAM_PROCESSOR = "rekognition:StopStreamProcessor";
+	static readonly StopStreamProcessor = "rekognition:StopStreamProcessor";
 	/** [Tagging] rekognition:TagResource */
-	static readonly TAG_RESOURCE = "rekognition:TagResource";
+	static readonly TagResource = "rekognition:TagResource";
 	/** [Tagging] rekognition:UntagResource */
-	static readonly UNTAG_RESOURCE = "rekognition:UntagResource";
+	static readonly UntagResource = "rekognition:UntagResource";
 	/** [Write] rekognition:UpdateDatasetEntries */
-	static readonly UPDATE_DATASET_ENTRIES = "rekognition:UpdateDatasetEntries";
+	static readonly UpdateDatasetEntries = "rekognition:UpdateDatasetEntries";
 	/** [Write] rekognition:UpdateStreamProcessor */
-	static readonly UPDATE_STREAM_PROCESSOR = "rekognition:UpdateStreamProcessor";
+	static readonly UpdateStreamProcessor = "rekognition:UpdateStreamProcessor";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RekognitionActions.COMPARE_FACES,
-		RekognitionActions.DESCRIBE_COLLECTION,
-		RekognitionActions.DESCRIBE_DATASET,
-		RekognitionActions.DESCRIBE_PROJECT_VERSIONS,
-		RekognitionActions.DESCRIBE_PROJECTS,
-		RekognitionActions.DESCRIBE_STREAM_PROCESSOR,
-		RekognitionActions.DETECT_CUSTOM_LABELS,
-		RekognitionActions.DETECT_FACES,
-		RekognitionActions.DETECT_LABELS,
-		RekognitionActions.DETECT_MODERATION_LABELS,
-		RekognitionActions.DETECT_PROTECTIVE_EQUIPMENT,
-		RekognitionActions.DETECT_TEXT,
-		RekognitionActions.GET_CELEBRITY_INFO,
-		RekognitionActions.GET_CELEBRITY_RECOGNITION,
-		RekognitionActions.GET_CONTENT_MODERATION,
-		RekognitionActions.GET_FACE_DETECTION,
-		RekognitionActions.GET_FACE_LIVENESS_SESSION_RESULTS,
-		RekognitionActions.GET_FACE_SEARCH,
-		RekognitionActions.GET_LABEL_DETECTION,
-		RekognitionActions.GET_MEDIA_ANALYSIS_JOB,
-		RekognitionActions.GET_PERSON_TRACKING,
-		RekognitionActions.GET_SEGMENT_DETECTION,
-		RekognitionActions.GET_TEXT_DETECTION,
-		RekognitionActions.LIST_COLLECTIONS,
-		RekognitionActions.LIST_DATASET_ENTRIES,
-		RekognitionActions.LIST_DATASET_LABELS,
-		RekognitionActions.LIST_FACES,
-		RekognitionActions.LIST_MEDIA_ANALYSIS_JOBS,
-		RekognitionActions.LIST_PROJECT_POLICIES,
-		RekognitionActions.LIST_TAGS_FOR_RESOURCE,
-		RekognitionActions.LIST_USERS,
-		RekognitionActions.RECOGNIZE_CELEBRITIES,
-		RekognitionActions.SEARCH_FACES,
-		RekognitionActions.SEARCH_FACES_BY_IMAGE,
-		RekognitionActions.SEARCH_USERS,
-		RekognitionActions.SEARCH_USERS_BY_IMAGE,
+	static readonly AllReadActions: string[] = [
+		RekognitionActions.CompareFaces,
+		RekognitionActions.DescribeCollection,
+		RekognitionActions.DescribeDataset,
+		RekognitionActions.DescribeProjectVersions,
+		RekognitionActions.DescribeProjects,
+		RekognitionActions.DescribeStreamProcessor,
+		RekognitionActions.DetectCustomLabels,
+		RekognitionActions.DetectFaces,
+		RekognitionActions.DetectLabels,
+		RekognitionActions.DetectModerationLabels,
+		RekognitionActions.DetectProtectiveEquipment,
+		RekognitionActions.DetectText,
+		RekognitionActions.actionGetCelebrityInfo,
+		RekognitionActions.actionGetCelebrityRecognition,
+		RekognitionActions.actionGetContentModeration,
+		RekognitionActions.actionGetFaceDetection,
+		RekognitionActions.actionGetFaceLivenessSessionResults,
+		RekognitionActions.actionGetFaceSearch,
+		RekognitionActions.actionGetLabelDetection,
+		RekognitionActions.actionGetMediaAnalysisJob,
+		RekognitionActions.actionGetPersonTracking,
+		RekognitionActions.actionGetSegmentDetection,
+		RekognitionActions.actionGetTextDetection,
+		RekognitionActions.ListCollections,
+		RekognitionActions.ListDatasetEntries,
+		RekognitionActions.ListDatasetLabels,
+		RekognitionActions.ListFaces,
+		RekognitionActions.ListMediaAnalysisJobs,
+		RekognitionActions.ListProjectPolicies,
+		RekognitionActions.ListTagsForResource,
+		RekognitionActions.ListUsers,
+		RekognitionActions.RecognizeCelebrities,
+		RekognitionActions.SearchFaces,
+		RekognitionActions.SearchFacesByImage,
+		RekognitionActions.SearchUsers,
+		RekognitionActions.SearchUsersByImage,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RekognitionActions.ASSOCIATE_FACES,
-		RekognitionActions.COPY_PROJECT_VERSION,
-		RekognitionActions.CREATE_COLLECTION,
-		RekognitionActions.CREATE_DATASET,
-		RekognitionActions.CREATE_FACE_LIVENESS_SESSION,
-		RekognitionActions.CREATE_PROJECT,
-		RekognitionActions.CREATE_PROJECT_VERSION,
-		RekognitionActions.CREATE_STREAM_PROCESSOR,
-		RekognitionActions.CREATE_USER,
-		RekognitionActions.DELETE_COLLECTION,
-		RekognitionActions.DELETE_DATASET,
-		RekognitionActions.DELETE_FACES,
-		RekognitionActions.DELETE_PROJECT,
-		RekognitionActions.DELETE_PROJECT_POLICY,
-		RekognitionActions.DELETE_PROJECT_VERSION,
-		RekognitionActions.DELETE_STREAM_PROCESSOR,
-		RekognitionActions.DELETE_USER,
-		RekognitionActions.DISASSOCIATE_FACES,
-		RekognitionActions.DISTRIBUTE_DATASET_ENTRIES,
-		RekognitionActions.INDEX_FACES,
-		RekognitionActions.PUT_PROJECT_POLICY,
-		RekognitionActions.START_CELEBRITY_RECOGNITION,
-		RekognitionActions.START_CONTENT_MODERATION,
-		RekognitionActions.START_FACE_DETECTION,
-		RekognitionActions.START_FACE_LIVENESS_SESSION,
-		RekognitionActions.START_FACE_SEARCH,
-		RekognitionActions.START_LABEL_DETECTION,
-		RekognitionActions.START_MEDIA_ANALYSIS_JOB,
-		RekognitionActions.START_PERSON_TRACKING,
-		RekognitionActions.START_PROJECT_VERSION,
-		RekognitionActions.START_SEGMENT_DETECTION,
-		RekognitionActions.START_STREAM_PROCESSOR,
-		RekognitionActions.START_TEXT_DETECTION,
-		RekognitionActions.STOP_PROJECT_VERSION,
-		RekognitionActions.STOP_STREAM_PROCESSOR,
-		RekognitionActions.UPDATE_DATASET_ENTRIES,
-		RekognitionActions.UPDATE_STREAM_PROCESSOR,
+	static readonly AllWriteActions: string[] = [
+		RekognitionActions.AssociateFaces,
+		RekognitionActions.CopyProjectVersion,
+		RekognitionActions.CreateCollection,
+		RekognitionActions.CreateDataset,
+		RekognitionActions.CreateFaceLivenessSession,
+		RekognitionActions.CreateProject,
+		RekognitionActions.CreateProjectVersion,
+		RekognitionActions.CreateStreamProcessor,
+		RekognitionActions.CreateUser,
+		RekognitionActions.DeleteCollection,
+		RekognitionActions.DeleteDataset,
+		RekognitionActions.DeleteFaces,
+		RekognitionActions.DeleteProject,
+		RekognitionActions.DeleteProjectPolicy,
+		RekognitionActions.DeleteProjectVersion,
+		RekognitionActions.DeleteStreamProcessor,
+		RekognitionActions.DeleteUser,
+		RekognitionActions.DisassociateFaces,
+		RekognitionActions.DistributeDatasetEntries,
+		RekognitionActions.IndexFaces,
+		RekognitionActions.PutProjectPolicy,
+		RekognitionActions.StartCelebrityRecognition,
+		RekognitionActions.StartContentModeration,
+		RekognitionActions.StartFaceDetection,
+		RekognitionActions.StartFaceLivenessSession,
+		RekognitionActions.StartFaceSearch,
+		RekognitionActions.StartLabelDetection,
+		RekognitionActions.StartMediaAnalysisJob,
+		RekognitionActions.StartPersonTracking,
+		RekognitionActions.StartProjectVersion,
+		RekognitionActions.StartSegmentDetection,
+		RekognitionActions.StartStreamProcessor,
+		RekognitionActions.StartTextDetection,
+		RekognitionActions.StopProjectVersion,
+		RekognitionActions.StopStreamProcessor,
+		RekognitionActions.UpdateDatasetEntries,
+		RekognitionActions.UpdateStreamProcessor,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		RekognitionActions.LIST_STREAM_PROCESSORS,
+	static readonly AllListActions: string[] = [
+		RekognitionActions.ListStreamProcessors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RekognitionActions.TAG_RESOURCE,
-		RekognitionActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RekognitionActions.TagResource,
+		RekognitionActions.UntagResource,
 	];
 }
 
-const CollectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):collection/(?<collectionId>[^:/?]+)$",
-);
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectName>[^:/?]+)/dataset/(?<datasetType>[^:/?]+)/(?<creationTimestamp>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectName>[^:/?]+)/(?<creationTimestamp>[^:/?]+)$",
-);
-const ProjectversionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectName>[^:/?]+)/version/(?<versionName>[^:/?]+)/(?<creationTimestamp>[^:/?]+)$",
-);
-const StreamprocessorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):streamprocessor/(?<streamprocessorId>[^:/?]+)$",
-);
+/**
+ * Properties for building a collection ARN.
+ */
+export interface RekognitionCollectionArnProps {
+	/** The CollectionId component of the ARN. */
+	readonly collectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a collection ARN.
+ */
+export interface RekognitionCollectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollectionId component. */
+	readonly collectionId: string;
+}
+
+/**
+ * Properties for building a dataset ARN.
+ */
+export interface RekognitionDatasetArnProps {
+	/** The ProjectName component of the ARN. */
+	readonly projectName: string;
+	/** The DatasetType component of the ARN. */
+	readonly datasetType: string;
+	/** The CreationTimestamp component of the ARN. */
+	readonly creationTimestamp: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset ARN.
+ */
+export interface RekognitionDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectName component. */
+	readonly projectName: string;
+	/** The DatasetType component. */
+	readonly datasetType: string;
+	/** The CreationTimestamp component. */
+	readonly creationTimestamp: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface RekognitionProjectArnProps {
+	/** The ProjectName component of the ARN. */
+	readonly projectName: string;
+	/** The CreationTimestamp component of the ARN. */
+	readonly creationTimestamp: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface RekognitionProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectName component. */
+	readonly projectName: string;
+	/** The CreationTimestamp component. */
+	readonly creationTimestamp: string;
+}
+
+/**
+ * Properties for building a projectversion ARN.
+ */
+export interface RekognitionProjectversionArnProps {
+	/** The ProjectName component of the ARN. */
+	readonly projectName: string;
+	/** The VersionName component of the ARN. */
+	readonly versionName: string;
+	/** The CreationTimestamp component of the ARN. */
+	readonly creationTimestamp: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a projectversion ARN.
+ */
+export interface RekognitionProjectversionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectName component. */
+	readonly projectName: string;
+	/** The VersionName component. */
+	readonly versionName: string;
+	/** The CreationTimestamp component. */
+	readonly creationTimestamp: string;
+}
+
+/**
+ * Properties for building a streamprocessor ARN.
+ */
+export interface RekognitionStreamprocessorArnProps {
+	/** The StreamprocessorId component of the ARN. */
+	readonly streamprocessorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a streamprocessor ARN.
+ */
+export interface RekognitionStreamprocessorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamprocessorId component. */
+	readonly streamprocessorId: string;
+}
+
+const CollectionArnRegex =
+	/^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):collection\/(?<collectionId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectName>[^:/?]+)\/dataset\/(?<datasetType>[^:/?]+)\/(?<creationTimestamp>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectName>[^:/?]+)\/(?<creationTimestamp>[^:/?]+)$/;
+const ProjectversionArnRegex =
+	/^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectName>[^:/?]+)\/version\/(?<versionName>[^:/?]+)\/(?<creationTimestamp>[^:/?]+)$/;
+const StreamprocessorArnRegex =
+	/^arn:(?<partition>[^:]+):rekognition:(?<region>[^:]*):(?<account>[^:]*):streamprocessor\/(?<streamprocessorId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rekognition resources.
@@ -293,16 +445,7 @@ export class RekognitionResources {
 	/**
 	 * Builds an ARN for the collection resource.
 	 */
-	static collection(props: {
-		/** The CollectionId component of the ARN. */
-		readonly collectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static collection(props: RekognitionCollectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rekognition:${props.region ?? "*"}:${props.account ?? "*"}:collection/${props.collectionId}`;
 	}
 
@@ -317,12 +460,7 @@ export class RekognitionResources {
 	 * Parses a collection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCollectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		collectionId: string;
-	} {
+	static parseCollectionArn(arn: string): RekognitionCollectionArnComponents {
 		const match = CollectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid collection ARN: ${arn}`);
@@ -338,20 +476,7 @@ export class RekognitionResources {
 	/**
 	 * Builds an ARN for the dataset resource.
 	 */
-	static dataset(props: {
-		/** The ProjectName component of the ARN. */
-		readonly projectName: string;
-		/** The DatasetType component of the ARN. */
-		readonly datasetType: string;
-		/** The CreationTimestamp component of the ARN. */
-		readonly creationTimestamp: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: RekognitionDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rekognition:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectName}/dataset/${props.datasetType}/${props.creationTimestamp}`;
 	}
 
@@ -366,14 +491,7 @@ export class RekognitionResources {
 	 * Parses a dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectName: string;
-		datasetType: string;
-		creationTimestamp: string;
-	} {
+	static parseDatasetArn(arn: string): RekognitionDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataset ARN: ${arn}`);
@@ -391,18 +509,7 @@ export class RekognitionResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ProjectName component of the ARN. */
-		readonly projectName: string;
-		/** The CreationTimestamp component of the ARN. */
-		readonly creationTimestamp: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: RekognitionProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rekognition:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectName}/${props.creationTimestamp}`;
 	}
 
@@ -417,13 +524,7 @@ export class RekognitionResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectName: string;
-		creationTimestamp: string;
-	} {
+	static parseProjectArn(arn: string): RekognitionProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -440,20 +541,7 @@ export class RekognitionResources {
 	/**
 	 * Builds an ARN for the projectversion resource.
 	 */
-	static projectversion(props: {
-		/** The ProjectName component of the ARN. */
-		readonly projectName: string;
-		/** The VersionName component of the ARN. */
-		readonly versionName: string;
-		/** The CreationTimestamp component of the ARN. */
-		readonly creationTimestamp: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static projectversion(props: RekognitionProjectversionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rekognition:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectName}/version/${props.versionName}/${props.creationTimestamp}`;
 	}
 
@@ -468,14 +556,9 @@ export class RekognitionResources {
 	 * Parses a projectversion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectversionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectName: string;
-		versionName: string;
-		creationTimestamp: string;
-	} {
+	static parseProjectversionArn(
+		arn: string,
+	): RekognitionProjectversionArnComponents {
 		const match = ProjectversionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid projectversion ARN: ${arn}`);
@@ -493,16 +576,7 @@ export class RekognitionResources {
 	/**
 	 * Builds an ARN for the streamprocessor resource.
 	 */
-	static streamprocessor(props: {
-		/** The StreamprocessorId component of the ARN. */
-		readonly streamprocessorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static streamprocessor(props: RekognitionStreamprocessorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rekognition:${props.region ?? "*"}:${props.account ?? "*"}:streamprocessor/${props.streamprocessorId}`;
 	}
 
@@ -517,12 +591,9 @@ export class RekognitionResources {
 	 * Parses a streamprocessor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamprocessorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamprocessorId: string;
-	} {
+	static parseStreamprocessorArn(
+		arn: string,
+	): RekognitionStreamprocessorArnComponents {
 		const match = StreamprocessorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid streamprocessor ARN: ${arn}`);
@@ -541,280 +612,274 @@ export class RekognitionResources {
  */
 export class RekognitionOperations {
 	/** IAM actions required for the AssociateFaces API call. */
-	static readonly ASSOCIATE_FACES: string[] = ["rekognition:AssociateFaces"];
+	static readonly AssociateFaces: string[] = ["rekognition:AssociateFaces"];
 	/** IAM actions required for the CompareFaces API call. */
-	static readonly COMPARE_FACES: string[] = ["rekognition:CompareFaces"];
+	static readonly CompareFaces: string[] = ["rekognition:CompareFaces"];
 	/** IAM actions required for the CopyProjectVersion API call. */
-	static readonly COPY_PROJECT_VERSION: string[] = [
+	static readonly CopyProjectVersion: string[] = [
 		"rekognition:CopyProjectVersion",
 		"rekognition:CreateProjectVersion",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateCollection API call. */
-	static readonly CREATE_COLLECTION: string[] = [
+	static readonly CreateCollection: string[] = [
 		"rekognition:CreateCollection",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateDataset API call. */
-	static readonly CREATE_DATASET: string[] = [
+	static readonly CreateDataset: string[] = [
 		"rekognition:CreateDataset",
 		"rekognition:ListDatasetEntries",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateFaceLivenessSession API call. */
-	static readonly CREATE_FACE_LIVENESS_SESSION: string[] = [
+	static readonly CreateFaceLivenessSession: string[] = [
 		"rekognition:CreateFaceLivenessSession",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [
+	static readonly CreateProject: string[] = [
 		"rekognition:CreateProject",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateProjectVersion API call. */
-	static readonly CREATE_PROJECT_VERSION: string[] = [
+	static readonly CreateProjectVersion: string[] = [
 		"rekognition:CreateProjectVersion",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateStreamProcessor API call. */
-	static readonly CREATE_STREAM_PROCESSOR: string[] = [
+	static readonly CreateStreamProcessor: string[] = [
 		"rekognition:CreateStreamProcessor",
 		"iam:PassRole",
 		"rekognition:TagResource",
 	];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CREATE_USER: string[] = ["rekognition:CreateUser"];
+	static readonly CreateUser: string[] = ["rekognition:CreateUser"];
 	/** IAM actions required for the DeleteCollection API call. */
-	static readonly DELETE_COLLECTION: string[] = [
-		"rekognition:DeleteCollection",
-	];
+	static readonly DeleteCollection: string[] = ["rekognition:DeleteCollection"];
 	/** IAM actions required for the DeleteDataset API call. */
-	static readonly DELETE_DATASET: string[] = ["rekognition:DeleteDataset"];
+	static readonly DeleteDataset: string[] = ["rekognition:DeleteDataset"];
 	/** IAM actions required for the DeleteFaces API call. */
-	static readonly DELETE_FACES: string[] = ["rekognition:DeleteFaces"];
+	static readonly DeleteFaces: string[] = ["rekognition:DeleteFaces"];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = ["rekognition:DeleteProject"];
+	static readonly DeleteProject: string[] = ["rekognition:DeleteProject"];
 	/** IAM actions required for the DeleteProjectPolicy API call. */
-	static readonly DELETE_PROJECT_POLICY: string[] = [
+	static readonly DeleteProjectPolicy: string[] = [
 		"rekognition:DeleteProjectPolicy",
 	];
 	/** IAM actions required for the DeleteProjectVersion API call. */
-	static readonly DELETE_PROJECT_VERSION: string[] = [
+	static readonly DeleteProjectVersion: string[] = [
 		"rekognition:DeleteProjectVersion",
 	];
 	/** IAM actions required for the DeleteStreamProcessor API call. */
-	static readonly DELETE_STREAM_PROCESSOR: string[] = [
+	static readonly DeleteStreamProcessor: string[] = [
 		"rekognition:DeleteStreamProcessor",
 	];
 	/** IAM actions required for the DeleteUser API call. */
-	static readonly DELETE_USER: string[] = ["rekognition:DeleteUser"];
+	static readonly DeleteUser: string[] = ["rekognition:DeleteUser"];
 	/** IAM actions required for the DescribeCollection API call. */
-	static readonly DESCRIBE_COLLECTION: string[] = [
+	static readonly DescribeCollection: string[] = [
 		"rekognition:DescribeCollection",
 	];
 	/** IAM actions required for the DescribeDataset API call. */
-	static readonly DESCRIBE_DATASET: string[] = ["rekognition:DescribeDataset"];
+	static readonly DescribeDataset: string[] = ["rekognition:DescribeDataset"];
 	/** IAM actions required for the DescribeProjectVersions API call. */
-	static readonly DESCRIBE_PROJECT_VERSIONS: string[] = [
+	static readonly DescribeProjectVersions: string[] = [
 		"rekognition:DescribeProjectVersions",
 	];
 	/** IAM actions required for the DescribeProjects API call. */
-	static readonly DESCRIBE_PROJECTS: string[] = [
-		"rekognition:DescribeProjects",
-	];
+	static readonly DescribeProjects: string[] = ["rekognition:DescribeProjects"];
 	/** IAM actions required for the DescribeStreamProcessor API call. */
-	static readonly DESCRIBE_STREAM_PROCESSOR: string[] = [
+	static readonly DescribeStreamProcessor: string[] = [
 		"rekognition:DescribeStreamProcessor",
 	];
 	/** IAM actions required for the DetectCustomLabels API call. */
-	static readonly DETECT_CUSTOM_LABELS: string[] = [
+	static readonly DetectCustomLabels: string[] = [
 		"rekognition:DetectCustomLabels",
 	];
 	/** IAM actions required for the DetectFaces API call. */
-	static readonly DETECT_FACES: string[] = ["rekognition:DetectFaces"];
+	static readonly DetectFaces: string[] = ["rekognition:DetectFaces"];
 	/** IAM actions required for the DetectLabels API call. */
-	static readonly DETECT_LABELS: string[] = ["rekognition:DetectLabels"];
+	static readonly DetectLabels: string[] = ["rekognition:DetectLabels"];
 	/** IAM actions required for the DetectModerationLabels API call. */
-	static readonly DETECT_MODERATION_LABELS: string[] = [
+	static readonly DetectModerationLabels: string[] = [
 		"rekognition:DetectModerationLabels",
 	];
 	/** IAM actions required for the DetectProtectiveEquipment API call. */
-	static readonly DETECT_PROTECTIVE_EQUIPMENT: string[] = [
+	static readonly DetectProtectiveEquipment: string[] = [
 		"rekognition:DetectProtectiveEquipment",
 	];
 	/** IAM actions required for the DetectText API call. */
-	static readonly DETECT_TEXT: string[] = ["rekognition:DetectText"];
+	static readonly DetectText: string[] = ["rekognition:DetectText"];
 	/** IAM actions required for the DisassociateFaces API call. */
-	static readonly DISASSOCIATE_FACES: string[] = [
+	static readonly DisassociateFaces: string[] = [
 		"rekognition:DisassociateFaces",
 	];
 	/** IAM actions required for the DistributeDatasetEntries API call. */
-	static readonly DISTRIBUTE_DATASET_ENTRIES: string[] = [
+	static readonly DistributeDatasetEntries: string[] = [
 		"rekognition:DistributeDatasetEntries",
 	];
 	/** IAM actions required for the GetCelebrityInfo API call. */
-	static readonly GET_CELEBRITY_INFO: string[] = [
+	static readonly opGetCelebrityInfo: string[] = [
 		"rekognition:GetCelebrityInfo",
 	];
 	/** IAM actions required for the GetCelebrityRecognition API call. */
-	static readonly GET_CELEBRITY_RECOGNITION: string[] = [
+	static readonly opGetCelebrityRecognition: string[] = [
 		"rekognition:GetCelebrityRecognition",
 	];
 	/** IAM actions required for the GetContentModeration API call. */
-	static readonly GET_CONTENT_MODERATION: string[] = [
+	static readonly opGetContentModeration: string[] = [
 		"rekognition:GetContentModeration",
 	];
 	/** IAM actions required for the GetFaceDetection API call. */
-	static readonly GET_FACE_DETECTION: string[] = [
+	static readonly opGetFaceDetection: string[] = [
 		"rekognition:GetFaceDetection",
 	];
 	/** IAM actions required for the GetFaceLivenessSessionResults API call. */
-	static readonly GET_FACE_LIVENESS_SESSION_RESULTS: string[] = [
+	static readonly opGetFaceLivenessSessionResults: string[] = [
 		"rekognition:GetFaceLivenessSessionResults",
 	];
 	/** IAM actions required for the GetFaceSearch API call. */
-	static readonly GET_FACE_SEARCH: string[] = ["rekognition:GetFaceSearch"];
+	static readonly opGetFaceSearch: string[] = ["rekognition:GetFaceSearch"];
 	/** IAM actions required for the GetLabelDetection API call. */
-	static readonly GET_LABEL_DETECTION: string[] = [
+	static readonly opGetLabelDetection: string[] = [
 		"rekognition:GetLabelDetection",
 	];
 	/** IAM actions required for the GetMediaAnalysisJob API call. */
-	static readonly GET_MEDIA_ANALYSIS_JOB: string[] = [
+	static readonly opGetMediaAnalysisJob: string[] = [
 		"rekognition:GetMediaAnalysisJob",
 	];
 	/** IAM actions required for the GetPersonTracking API call. */
-	static readonly GET_PERSON_TRACKING: string[] = [
+	static readonly opGetPersonTracking: string[] = [
 		"rekognition:GetPersonTracking",
 	];
 	/** IAM actions required for the GetSegmentDetection API call. */
-	static readonly GET_SEGMENT_DETECTION: string[] = [
+	static readonly opGetSegmentDetection: string[] = [
 		"rekognition:GetSegmentDetection",
 	];
 	/** IAM actions required for the GetTextDetection API call. */
-	static readonly GET_TEXT_DETECTION: string[] = [
+	static readonly opGetTextDetection: string[] = [
 		"rekognition:GetTextDetection",
 	];
 	/** IAM actions required for the IndexFaces API call. */
-	static readonly INDEX_FACES: string[] = ["rekognition:IndexFaces"];
+	static readonly IndexFaces: string[] = ["rekognition:IndexFaces"];
 	/** IAM actions required for the ListCollections API call. */
-	static readonly LIST_COLLECTIONS: string[] = ["rekognition:ListCollections"];
+	static readonly ListCollections: string[] = ["rekognition:ListCollections"];
 	/** IAM actions required for the ListDatasetEntries API call. */
-	static readonly LIST_DATASET_ENTRIES: string[] = [
+	static readonly ListDatasetEntries: string[] = [
 		"rekognition:ListDatasetEntries",
 	];
 	/** IAM actions required for the ListDatasetLabels API call. */
-	static readonly LIST_DATASET_LABELS: string[] = [
+	static readonly ListDatasetLabels: string[] = [
 		"rekognition:ListDatasetLabels",
 	];
 	/** IAM actions required for the ListFaces API call. */
-	static readonly LIST_FACES: string[] = ["rekognition:ListFaces"];
+	static readonly ListFaces: string[] = ["rekognition:ListFaces"];
 	/** IAM actions required for the ListMediaAnalysisJobs API call. */
-	static readonly LIST_MEDIA_ANALYSIS_JOBS: string[] = [
+	static readonly ListMediaAnalysisJobs: string[] = [
 		"rekognition:ListMediaAnalysisJobs",
 	];
 	/** IAM actions required for the ListProjectPolicies API call. */
-	static readonly LIST_PROJECT_POLICIES: string[] = [
+	static readonly ListProjectPolicies: string[] = [
 		"rekognition:ListProjectPolicies",
 	];
 	/** IAM actions required for the ListStreamProcessors API call. */
-	static readonly LIST_STREAM_PROCESSORS: string[] = [
+	static readonly ListStreamProcessors: string[] = [
 		"rekognition:ListStreamProcessors",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"rekognition:ListTagsForResource",
 	];
 	/** IAM actions required for the ListUsers API call. */
-	static readonly LIST_USERS: string[] = ["rekognition:ListUsers"];
+	static readonly ListUsers: string[] = ["rekognition:ListUsers"];
 	/** IAM actions required for the PutProjectPolicy API call. */
-	static readonly PUT_PROJECT_POLICY: string[] = [
-		"rekognition:PutProjectPolicy",
-	];
+	static readonly PutProjectPolicy: string[] = ["rekognition:PutProjectPolicy"];
 	/** IAM actions required for the RecognizeCelebrities API call. */
-	static readonly RECOGNIZE_CELEBRITIES: string[] = [
+	static readonly RecognizeCelebrities: string[] = [
 		"rekognition:RecognizeCelebrities",
 	];
 	/** IAM actions required for the SearchFaces API call. */
-	static readonly SEARCH_FACES: string[] = ["rekognition:SearchFaces"];
+	static readonly SearchFaces: string[] = ["rekognition:SearchFaces"];
 	/** IAM actions required for the SearchFacesByImage API call. */
-	static readonly SEARCH_FACES_BY_IMAGE: string[] = [
+	static readonly SearchFacesByImage: string[] = [
 		"rekognition:SearchFacesByImage",
 	];
 	/** IAM actions required for the SearchUsers API call. */
-	static readonly SEARCH_USERS: string[] = ["rekognition:SearchUsers"];
+	static readonly SearchUsers: string[] = ["rekognition:SearchUsers"];
 	/** IAM actions required for the SearchUsersByImage API call. */
-	static readonly SEARCH_USERS_BY_IMAGE: string[] = [
+	static readonly SearchUsersByImage: string[] = [
 		"rekognition:SearchUsersByImage",
 	];
 	/** IAM actions required for the StartCelebrityRecognition API call. */
-	static readonly START_CELEBRITY_RECOGNITION: string[] = [
+	static readonly StartCelebrityRecognition: string[] = [
 		"iam:PassRole",
 		"rekognition:StartCelebrityRecognition",
 	];
 	/** IAM actions required for the StartContentModeration API call. */
-	static readonly START_CONTENT_MODERATION: string[] = [
+	static readonly StartContentModeration: string[] = [
 		"iam:PassRole",
 		"rekognition:StartContentModeration",
 	];
 	/** IAM actions required for the StartFaceDetection API call. */
-	static readonly START_FACE_DETECTION: string[] = [
+	static readonly StartFaceDetection: string[] = [
 		"iam:PassRole",
 		"rekognition:StartFaceDetection",
 	];
 	/** IAM actions required for the StartFaceSearch API call. */
-	static readonly START_FACE_SEARCH: string[] = [
+	static readonly StartFaceSearch: string[] = [
 		"iam:PassRole",
 		"rekognition:StartFaceSearch",
 	];
 	/** IAM actions required for the StartLabelDetection API call. */
-	static readonly START_LABEL_DETECTION: string[] = [
+	static readonly StartLabelDetection: string[] = [
 		"iam:PassRole",
 		"rekognition:StartLabelDetection",
 	];
 	/** IAM actions required for the StartMediaAnalysisJob API call. */
-	static readonly START_MEDIA_ANALYSIS_JOB: string[] = [
+	static readonly StartMediaAnalysisJob: string[] = [
 		"rekognition:StartMediaAnalysisJob",
 	];
 	/** IAM actions required for the StartPersonTracking API call. */
-	static readonly START_PERSON_TRACKING: string[] = [
+	static readonly StartPersonTracking: string[] = [
 		"iam:PassRole",
 		"rekognition:StartPersonTracking",
 	];
 	/** IAM actions required for the StartProjectVersion API call. */
-	static readonly START_PROJECT_VERSION: string[] = [
+	static readonly StartProjectVersion: string[] = [
 		"rekognition:StartProjectVersion",
 	];
 	/** IAM actions required for the StartSegmentDetection API call. */
-	static readonly START_SEGMENT_DETECTION: string[] = [
+	static readonly StartSegmentDetection: string[] = [
 		"iam:PassRole",
 		"rekognition:StartSegmentDetection",
 	];
 	/** IAM actions required for the StartStreamProcessor API call. */
-	static readonly START_STREAM_PROCESSOR: string[] = [
+	static readonly StartStreamProcessor: string[] = [
 		"rekognition:StartStreamProcessor",
 	];
 	/** IAM actions required for the StartTextDetection API call. */
-	static readonly START_TEXT_DETECTION: string[] = [
+	static readonly StartTextDetection: string[] = [
 		"iam:PassRole",
 		"rekognition:StartTextDetection",
 	];
 	/** IAM actions required for the StopProjectVersion API call. */
-	static readonly STOP_PROJECT_VERSION: string[] = [
+	static readonly StopProjectVersion: string[] = [
 		"rekognition:StopProjectVersion",
 	];
 	/** IAM actions required for the StopStreamProcessor API call. */
-	static readonly STOP_STREAM_PROCESSOR: string[] = [
+	static readonly StopStreamProcessor: string[] = [
 		"rekognition:StopStreamProcessor",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["rekognition:TagResource"];
+	static readonly TagResource: string[] = ["rekognition:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["rekognition:UntagResource"];
+	static readonly UntagResource: string[] = ["rekognition:UntagResource"];
 	/** IAM actions required for the UpdateDatasetEntries API call. */
-	static readonly UPDATE_DATASET_ENTRIES: string[] = [
+	static readonly UpdateDatasetEntries: string[] = [
 		"rekognition:UpdateDatasetEntries",
 	];
 	/** IAM actions required for the UpdateStreamProcessor API call. */
-	static readonly UPDATE_STREAM_PROCESSOR: string[] = [
+	static readonly UpdateStreamProcessor: string[] = [
 		"rekognition:UpdateStreamProcessor",
 	];
 }
@@ -824,49 +889,49 @@ export class RekognitionOperations {
  */
 export class RekognitionConditions {
 	/** Condition keys applicable to the CopyProjectVersion action. */
-	static readonly COPY_PROJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CopyProjectVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCollection action. */
-	static readonly CREATE_COLLECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateCollectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataset action. */
-	static readonly CREATE_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProjectVersion action. */
-	static readonly CREATE_PROJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStreamProcessor action. */
-	static readonly CREATE_STREAM_PROCESSOR_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamProcessorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

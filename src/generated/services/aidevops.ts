@@ -13,297 +13,468 @@ export class AidevopsActions {
 	static readonly SERVICE_PREFIX = "aidevops";
 
 	/** [PermissionManagement] aidevops:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"aidevops:AllowVendedLogDeliveryForResource";
 	/** [Write] aidevops:AssociateService */
-	static readonly ASSOCIATE_SERVICE = "aidevops:AssociateService";
+	static readonly AssociateService = "aidevops:AssociateService";
 	/** [Write] aidevops:CreateAccessToken */
-	static readonly CREATE_ACCESS_TOKEN = "aidevops:CreateAccessToken";
+	static readonly CreateAccessToken = "aidevops:CreateAccessToken";
 	/** [Write] aidevops:CreateAgentSpace */
-	static readonly CREATE_AGENT_SPACE = "aidevops:CreateAgentSpace";
+	static readonly CreateAgentSpace = "aidevops:CreateAgentSpace";
 	/** [Write] aidevops:CreateAsset */
-	static readonly CREATE_ASSET = "aidevops:CreateAsset";
+	static readonly CreateAsset = "aidevops:CreateAsset";
 	/** [Write] aidevops:CreateAssetFile */
-	static readonly CREATE_ASSET_FILE = "aidevops:CreateAssetFile";
+	static readonly CreateAssetFile = "aidevops:CreateAssetFile";
 	/** [Write] aidevops:CreateBacklogTask */
-	static readonly CREATE_BACKLOG_TASK = "aidevops:CreateBacklogTask";
+	static readonly CreateBacklogTask = "aidevops:CreateBacklogTask";
 	/** [Write] aidevops:CreateChat */
-	static readonly CREATE_CHAT = "aidevops:CreateChat";
+	static readonly CreateChat = "aidevops:CreateChat";
 	/** [Write] aidevops:CreateKnowledgeItem */
-	static readonly CREATE_KNOWLEDGE_ITEM = "aidevops:CreateKnowledgeItem";
+	static readonly CreateKnowledgeItem = "aidevops:CreateKnowledgeItem";
 	/** [Write] aidevops:CreateOneTimeLoginSession */
-	static readonly CREATE_ONE_TIME_LOGIN_SESSION =
+	static readonly CreateOneTimeLoginSession =
 		"aidevops:CreateOneTimeLoginSession";
 	/** [Write] aidevops:CreatePrivateConnection */
-	static readonly CREATE_PRIVATE_CONNECTION =
-		"aidevops:CreatePrivateConnection";
+	static readonly CreatePrivateConnection = "aidevops:CreatePrivateConnection";
 	/** [Write] aidevops:CreateTrigger */
-	static readonly CREATE_TRIGGER = "aidevops:CreateTrigger";
+	static readonly CreateTrigger = "aidevops:CreateTrigger";
 	/** [Write] aidevops:DeleteAgentSpace */
-	static readonly DELETE_AGENT_SPACE = "aidevops:DeleteAgentSpace";
+	static readonly DeleteAgentSpace = "aidevops:DeleteAgentSpace";
 	/** [Write] aidevops:DeleteAsset */
-	static readonly DELETE_ASSET = "aidevops:DeleteAsset";
+	static readonly DeleteAsset = "aidevops:DeleteAsset";
 	/** [Write] aidevops:DeleteAssetFile */
-	static readonly DELETE_ASSET_FILE = "aidevops:DeleteAssetFile";
+	static readonly DeleteAssetFile = "aidevops:DeleteAssetFile";
 	/** [Write] aidevops:DeleteKnowledgeItem */
-	static readonly DELETE_KNOWLEDGE_ITEM = "aidevops:DeleteKnowledgeItem";
+	static readonly DeleteKnowledgeItem = "aidevops:DeleteKnowledgeItem";
 	/** [Write] aidevops:DeletePrivateConnection */
-	static readonly DELETE_PRIVATE_CONNECTION =
-		"aidevops:DeletePrivateConnection";
+	static readonly DeletePrivateConnection = "aidevops:DeletePrivateConnection";
 	/** [Write] aidevops:DeleteTrigger */
-	static readonly DELETE_TRIGGER = "aidevops:DeleteTrigger";
+	static readonly DeleteTrigger = "aidevops:DeleteTrigger";
 	/** [Write] aidevops:DeregisterService */
-	static readonly DEREGISTER_SERVICE = "aidevops:DeregisterService";
+	static readonly DeregisterService = "aidevops:DeregisterService";
 	/** [Read] aidevops:DescribePrivateConnection */
-	static readonly DESCRIBE_PRIVATE_CONNECTION =
+	static readonly DescribePrivateConnection =
 		"aidevops:DescribePrivateConnection";
 	/** [Read] aidevops:DescribeServices */
-	static readonly DESCRIBE_SERVICES = "aidevops:DescribeServices";
+	static readonly DescribeServices = "aidevops:DescribeServices";
 	/** [Write] aidevops:DescribeSupportLevel */
-	static readonly DESCRIBE_SUPPORT_LEVEL = "aidevops:DescribeSupportLevel";
+	static readonly DescribeSupportLevel = "aidevops:DescribeSupportLevel";
 	/** [Write] aidevops:DisableOperatorApp */
-	static readonly DISABLE_OPERATOR_APP = "aidevops:DisableOperatorApp";
+	static readonly DisableOperatorApp = "aidevops:DisableOperatorApp";
 	/** [Write] aidevops:DisassociateService */
-	static readonly DISASSOCIATE_SERVICE = "aidevops:DisassociateService";
+	static readonly DisassociateService = "aidevops:DisassociateService";
 	/** [Write] aidevops:DiscoverTopology */
-	static readonly DISCOVER_TOPOLOGY = "aidevops:DiscoverTopology";
+	static readonly DiscoverTopology = "aidevops:DiscoverTopology";
 	/** [Write] aidevops:EnableOperatorApp */
-	static readonly ENABLE_OPERATOR_APP = "aidevops:EnableOperatorApp";
+	static readonly EnableOperatorApp = "aidevops:EnableOperatorApp";
 	/** [Write] aidevops:EndChatForCase */
-	static readonly END_CHAT_FOR_CASE = "aidevops:EndChatForCase";
+	static readonly EndChatForCase = "aidevops:EndChatForCase";
 	/** [Read] aidevops:GetAccessToken */
-	static readonly GET_ACCESS_TOKEN = "aidevops:GetAccessToken";
+	static readonly actionGetAccessToken = "aidevops:GetAccessToken";
 	/** [Read] aidevops:GetAccountUsage */
-	static readonly GET_ACCOUNT_USAGE = "aidevops:GetAccountUsage";
+	static readonly actionGetAccountUsage = "aidevops:GetAccountUsage";
 	/** [Read] aidevops:GetAgentSpace */
-	static readonly GET_AGENT_SPACE = "aidevops:GetAgentSpace";
+	static readonly actionGetAgentSpace = "aidevops:GetAgentSpace";
 	/** [Read] aidevops:GetAsset */
-	static readonly GET_ASSET = "aidevops:GetAsset";
+	static readonly actionGetAsset = "aidevops:GetAsset";
 	/** [Read] aidevops:GetAssetContent */
-	static readonly GET_ASSET_CONTENT = "aidevops:GetAssetContent";
+	static readonly actionGetAssetContent = "aidevops:GetAssetContent";
 	/** [Read] aidevops:GetAssetFile */
-	static readonly GET_ASSET_FILE = "aidevops:GetAssetFile";
+	static readonly actionGetAssetFile = "aidevops:GetAssetFile";
 	/** [Read] aidevops:GetAssociation */
-	static readonly GET_ASSOCIATION = "aidevops:GetAssociation";
+	static readonly actionGetAssociation = "aidevops:GetAssociation";
 	/** [Read] aidevops:GetBacklogTask */
-	static readonly GET_BACKLOG_TASK = "aidevops:GetBacklogTask";
+	static readonly actionGetBacklogTask = "aidevops:GetBacklogTask";
 	/** [Read] aidevops:GetKnowledgeItem */
-	static readonly GET_KNOWLEDGE_ITEM = "aidevops:GetKnowledgeItem";
+	static readonly actionGetKnowledgeItem = "aidevops:GetKnowledgeItem";
 	/** [Read] aidevops:GetOperatorApp */
-	static readonly GET_OPERATOR_APP = "aidevops:GetOperatorApp";
+	static readonly actionGetOperatorApp = "aidevops:GetOperatorApp";
 	/** [Read] aidevops:GetRecommendation */
-	static readonly GET_RECOMMENDATION = "aidevops:GetRecommendation";
+	static readonly actionGetRecommendation = "aidevops:GetRecommendation";
 	/** [Read] aidevops:GetService */
-	static readonly GET_SERVICE = "aidevops:GetService";
+	static readonly actionGetService = "aidevops:GetService";
 	/** [Read] aidevops:GetTrigger */
-	static readonly GET_TRIGGER = "aidevops:GetTrigger";
+	static readonly actionGetTrigger = "aidevops:GetTrigger";
 	/** [Write] aidevops:InitiateChatForCase */
-	static readonly INITIATE_CHAT_FOR_CASE = "aidevops:InitiateChatForCase";
+	static readonly InitiateChatForCase = "aidevops:InitiateChatForCase";
 	/** [List] aidevops:ListAccessTokens */
-	static readonly LIST_ACCESS_TOKENS = "aidevops:ListAccessTokens";
+	static readonly ListAccessTokens = "aidevops:ListAccessTokens";
 	/** [List] aidevops:ListAgentSpaces */
-	static readonly LIST_AGENT_SPACES = "aidevops:ListAgentSpaces";
+	static readonly ListAgentSpaces = "aidevops:ListAgentSpaces";
 	/** [List] aidevops:ListAssetFiles */
-	static readonly LIST_ASSET_FILES = "aidevops:ListAssetFiles";
+	static readonly ListAssetFiles = "aidevops:ListAssetFiles";
 	/** [List] aidevops:ListAssetTypes */
-	static readonly LIST_ASSET_TYPES = "aidevops:ListAssetTypes";
+	static readonly ListAssetTypes = "aidevops:ListAssetTypes";
 	/** [List] aidevops:ListAssetVersions */
-	static readonly LIST_ASSET_VERSIONS = "aidevops:ListAssetVersions";
+	static readonly ListAssetVersions = "aidevops:ListAssetVersions";
 	/** [List] aidevops:ListAssets */
-	static readonly LIST_ASSETS = "aidevops:ListAssets";
+	static readonly ListAssets = "aidevops:ListAssets";
 	/** [List] aidevops:ListAssociations */
-	static readonly LIST_ASSOCIATIONS = "aidevops:ListAssociations";
+	static readonly ListAssociations = "aidevops:ListAssociations";
 	/** [List] aidevops:ListBacklogTasks */
-	static readonly LIST_BACKLOG_TASKS = "aidevops:ListBacklogTasks";
+	static readonly ListBacklogTasks = "aidevops:ListBacklogTasks";
 	/** [List] aidevops:ListChats */
-	static readonly LIST_CHATS = "aidevops:ListChats";
+	static readonly ListChats = "aidevops:ListChats";
 	/** [List] aidevops:ListExecutions */
-	static readonly LIST_EXECUTIONS = "aidevops:ListExecutions";
+	static readonly ListExecutions = "aidevops:ListExecutions";
 	/** [List] aidevops:ListGoals */
-	static readonly LIST_GOALS = "aidevops:ListGoals";
+	static readonly ListGoals = "aidevops:ListGoals";
 	/** [List] aidevops:ListJournalRecords */
-	static readonly LIST_JOURNAL_RECORDS = "aidevops:ListJournalRecords";
+	static readonly ListJournalRecords = "aidevops:ListJournalRecords";
 	/** [List] aidevops:ListKnowledgeItemVersions */
-	static readonly LIST_KNOWLEDGE_ITEM_VERSIONS =
+	static readonly ListKnowledgeItemVersions =
 		"aidevops:ListKnowledgeItemVersions";
 	/** [List] aidevops:ListKnowledgeItems */
-	static readonly LIST_KNOWLEDGE_ITEMS = "aidevops:ListKnowledgeItems";
+	static readonly ListKnowledgeItems = "aidevops:ListKnowledgeItems";
 	/** [List] aidevops:ListPendingMessages */
-	static readonly LIST_PENDING_MESSAGES = "aidevops:ListPendingMessages";
+	static readonly ListPendingMessages = "aidevops:ListPendingMessages";
 	/** [List] aidevops:ListPrivateConnections */
-	static readonly LIST_PRIVATE_CONNECTIONS = "aidevops:ListPrivateConnections";
+	static readonly ListPrivateConnections = "aidevops:ListPrivateConnections";
 	/** [List] aidevops:ListRecommendations */
-	static readonly LIST_RECOMMENDATIONS = "aidevops:ListRecommendations";
+	static readonly ListRecommendations = "aidevops:ListRecommendations";
 	/** [List] aidevops:ListServices */
-	static readonly LIST_SERVICES = "aidevops:ListServices";
+	static readonly ListServices = "aidevops:ListServices";
 	/** [Read] aidevops:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "aidevops:ListTagsForResource";
+	static readonly ListTagsForResource = "aidevops:ListTagsForResource";
 	/** [List] aidevops:ListTriggers */
-	static readonly LIST_TRIGGERS = "aidevops:ListTriggers";
+	static readonly ListTriggers = "aidevops:ListTriggers";
 	/** [List] aidevops:ListWebhooks */
-	static readonly LIST_WEBHOOKS = "aidevops:ListWebhooks";
+	static readonly ListWebhooks = "aidevops:ListWebhooks";
 	/** [Write] aidevops:RegisterService */
-	static readonly REGISTER_SERVICE = "aidevops:RegisterService";
+	static readonly RegisterService = "aidevops:RegisterService";
 	/** [Write] aidevops:RevokeAccessToken */
-	static readonly REVOKE_ACCESS_TOKEN = "aidevops:RevokeAccessToken";
+	static readonly RevokeAccessToken = "aidevops:RevokeAccessToken";
 	/** [Write] aidevops:RotateAccessToken */
-	static readonly ROTATE_ACCESS_TOKEN = "aidevops:RotateAccessToken";
+	static readonly RotateAccessToken = "aidevops:RotateAccessToken";
 	/** [Read] aidevops:SearchServiceAccessibleResource */
-	static readonly SEARCH_SERVICE_ACCESSIBLE_RESOURCE =
+	static readonly SearchServiceAccessibleResource =
 		"aidevops:SearchServiceAccessibleResource";
 	/** [Write] aidevops:SendMessage */
-	static readonly SEND_MESSAGE = "aidevops:SendMessage";
+	static readonly SendMessage = "aidevops:SendMessage";
 	/** [Tagging] aidevops:TagResource */
-	static readonly TAG_RESOURCE = "aidevops:TagResource";
+	static readonly TagResource = "aidevops:TagResource";
 	/** [Tagging] aidevops:UntagResource */
-	static readonly UNTAG_RESOURCE = "aidevops:UntagResource";
+	static readonly UntagResource = "aidevops:UntagResource";
 	/** [Write] aidevops:UpdateAgentSpace */
-	static readonly UPDATE_AGENT_SPACE = "aidevops:UpdateAgentSpace";
+	static readonly UpdateAgentSpace = "aidevops:UpdateAgentSpace";
 	/** [Write] aidevops:UpdateApprovalAction */
-	static readonly UPDATE_APPROVAL_ACTION = "aidevops:UpdateApprovalAction";
+	static readonly UpdateApprovalAction = "aidevops:UpdateApprovalAction";
 	/** [Write] aidevops:UpdateAsset */
-	static readonly UPDATE_ASSET = "aidevops:UpdateAsset";
+	static readonly UpdateAsset = "aidevops:UpdateAsset";
 	/** [Write] aidevops:UpdateAssetFile */
-	static readonly UPDATE_ASSET_FILE = "aidevops:UpdateAssetFile";
+	static readonly UpdateAssetFile = "aidevops:UpdateAssetFile";
 	/** [Write] aidevops:UpdateAssociation */
-	static readonly UPDATE_ASSOCIATION = "aidevops:UpdateAssociation";
+	static readonly UpdateAssociation = "aidevops:UpdateAssociation";
 	/** [Write] aidevops:UpdateBacklogTask */
-	static readonly UPDATE_BACKLOG_TASK = "aidevops:UpdateBacklogTask";
+	static readonly UpdateBacklogTask = "aidevops:UpdateBacklogTask";
 	/** [Write] aidevops:UpdateGoal */
-	static readonly UPDATE_GOAL = "aidevops:UpdateGoal";
+	static readonly UpdateGoal = "aidevops:UpdateGoal";
 	/** [Write] aidevops:UpdateKnowledgeItem */
-	static readonly UPDATE_KNOWLEDGE_ITEM = "aidevops:UpdateKnowledgeItem";
+	static readonly UpdateKnowledgeItem = "aidevops:UpdateKnowledgeItem";
 	/** [Write] aidevops:UpdateOperatorAppIdpConfig */
-	static readonly UPDATE_OPERATOR_APP_IDP_CONFIG =
+	static readonly UpdateOperatorAppIdpConfig =
 		"aidevops:UpdateOperatorAppIdpConfig";
 	/** [Write] aidevops:UpdatePrivateConnectionCertificate */
-	static readonly UPDATE_PRIVATE_CONNECTION_CERTIFICATE =
+	static readonly UpdatePrivateConnectionCertificate =
 		"aidevops:UpdatePrivateConnectionCertificate";
 	/** [Write] aidevops:UpdateRecommendation */
-	static readonly UPDATE_RECOMMENDATION = "aidevops:UpdateRecommendation";
+	static readonly UpdateRecommendation = "aidevops:UpdateRecommendation";
 	/** [Write] aidevops:UpdateTrigger */
-	static readonly UPDATE_TRIGGER = "aidevops:UpdateTrigger";
+	static readonly UpdateTrigger = "aidevops:UpdateTrigger";
 	/** [Write] aidevops:ValidateAwsAssociations */
-	static readonly VALIDATE_AWS_ASSOCIATIONS =
-		"aidevops:ValidateAwsAssociations";
+	static readonly ValidateAwsAssociations = "aidevops:ValidateAwsAssociations";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AidevopsActions.DESCRIBE_PRIVATE_CONNECTION,
-		AidevopsActions.DESCRIBE_SERVICES,
-		AidevopsActions.GET_ACCESS_TOKEN,
-		AidevopsActions.GET_ACCOUNT_USAGE,
-		AidevopsActions.GET_AGENT_SPACE,
-		AidevopsActions.GET_ASSET,
-		AidevopsActions.GET_ASSET_CONTENT,
-		AidevopsActions.GET_ASSET_FILE,
-		AidevopsActions.GET_ASSOCIATION,
-		AidevopsActions.GET_BACKLOG_TASK,
-		AidevopsActions.GET_KNOWLEDGE_ITEM,
-		AidevopsActions.GET_OPERATOR_APP,
-		AidevopsActions.GET_RECOMMENDATION,
-		AidevopsActions.GET_SERVICE,
-		AidevopsActions.GET_TRIGGER,
-		AidevopsActions.LIST_TAGS_FOR_RESOURCE,
-		AidevopsActions.SEARCH_SERVICE_ACCESSIBLE_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AidevopsActions.DescribePrivateConnection,
+		AidevopsActions.DescribeServices,
+		AidevopsActions.actionGetAccessToken,
+		AidevopsActions.actionGetAccountUsage,
+		AidevopsActions.actionGetAgentSpace,
+		AidevopsActions.actionGetAsset,
+		AidevopsActions.actionGetAssetContent,
+		AidevopsActions.actionGetAssetFile,
+		AidevopsActions.actionGetAssociation,
+		AidevopsActions.actionGetBacklogTask,
+		AidevopsActions.actionGetKnowledgeItem,
+		AidevopsActions.actionGetOperatorApp,
+		AidevopsActions.actionGetRecommendation,
+		AidevopsActions.actionGetService,
+		AidevopsActions.actionGetTrigger,
+		AidevopsActions.ListTagsForResource,
+		AidevopsActions.SearchServiceAccessibleResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AidevopsActions.ASSOCIATE_SERVICE,
-		AidevopsActions.CREATE_ACCESS_TOKEN,
-		AidevopsActions.CREATE_AGENT_SPACE,
-		AidevopsActions.CREATE_ASSET,
-		AidevopsActions.CREATE_ASSET_FILE,
-		AidevopsActions.CREATE_BACKLOG_TASK,
-		AidevopsActions.CREATE_CHAT,
-		AidevopsActions.CREATE_KNOWLEDGE_ITEM,
-		AidevopsActions.CREATE_ONE_TIME_LOGIN_SESSION,
-		AidevopsActions.CREATE_PRIVATE_CONNECTION,
-		AidevopsActions.CREATE_TRIGGER,
-		AidevopsActions.DELETE_AGENT_SPACE,
-		AidevopsActions.DELETE_ASSET,
-		AidevopsActions.DELETE_ASSET_FILE,
-		AidevopsActions.DELETE_KNOWLEDGE_ITEM,
-		AidevopsActions.DELETE_PRIVATE_CONNECTION,
-		AidevopsActions.DELETE_TRIGGER,
-		AidevopsActions.DEREGISTER_SERVICE,
-		AidevopsActions.DESCRIBE_SUPPORT_LEVEL,
-		AidevopsActions.DISABLE_OPERATOR_APP,
-		AidevopsActions.DISASSOCIATE_SERVICE,
-		AidevopsActions.DISCOVER_TOPOLOGY,
-		AidevopsActions.ENABLE_OPERATOR_APP,
-		AidevopsActions.END_CHAT_FOR_CASE,
-		AidevopsActions.INITIATE_CHAT_FOR_CASE,
-		AidevopsActions.REGISTER_SERVICE,
-		AidevopsActions.REVOKE_ACCESS_TOKEN,
-		AidevopsActions.ROTATE_ACCESS_TOKEN,
-		AidevopsActions.SEND_MESSAGE,
-		AidevopsActions.UPDATE_AGENT_SPACE,
-		AidevopsActions.UPDATE_APPROVAL_ACTION,
-		AidevopsActions.UPDATE_ASSET,
-		AidevopsActions.UPDATE_ASSET_FILE,
-		AidevopsActions.UPDATE_ASSOCIATION,
-		AidevopsActions.UPDATE_BACKLOG_TASK,
-		AidevopsActions.UPDATE_GOAL,
-		AidevopsActions.UPDATE_KNOWLEDGE_ITEM,
-		AidevopsActions.UPDATE_OPERATOR_APP_IDP_CONFIG,
-		AidevopsActions.UPDATE_PRIVATE_CONNECTION_CERTIFICATE,
-		AidevopsActions.UPDATE_RECOMMENDATION,
-		AidevopsActions.UPDATE_TRIGGER,
-		AidevopsActions.VALIDATE_AWS_ASSOCIATIONS,
+	static readonly AllWriteActions: string[] = [
+		AidevopsActions.AssociateService,
+		AidevopsActions.CreateAccessToken,
+		AidevopsActions.CreateAgentSpace,
+		AidevopsActions.CreateAsset,
+		AidevopsActions.CreateAssetFile,
+		AidevopsActions.CreateBacklogTask,
+		AidevopsActions.CreateChat,
+		AidevopsActions.CreateKnowledgeItem,
+		AidevopsActions.CreateOneTimeLoginSession,
+		AidevopsActions.CreatePrivateConnection,
+		AidevopsActions.CreateTrigger,
+		AidevopsActions.DeleteAgentSpace,
+		AidevopsActions.DeleteAsset,
+		AidevopsActions.DeleteAssetFile,
+		AidevopsActions.DeleteKnowledgeItem,
+		AidevopsActions.DeletePrivateConnection,
+		AidevopsActions.DeleteTrigger,
+		AidevopsActions.DeregisterService,
+		AidevopsActions.DescribeSupportLevel,
+		AidevopsActions.DisableOperatorApp,
+		AidevopsActions.DisassociateService,
+		AidevopsActions.DiscoverTopology,
+		AidevopsActions.EnableOperatorApp,
+		AidevopsActions.EndChatForCase,
+		AidevopsActions.InitiateChatForCase,
+		AidevopsActions.RegisterService,
+		AidevopsActions.RevokeAccessToken,
+		AidevopsActions.RotateAccessToken,
+		AidevopsActions.SendMessage,
+		AidevopsActions.UpdateAgentSpace,
+		AidevopsActions.UpdateApprovalAction,
+		AidevopsActions.UpdateAsset,
+		AidevopsActions.UpdateAssetFile,
+		AidevopsActions.UpdateAssociation,
+		AidevopsActions.UpdateBacklogTask,
+		AidevopsActions.UpdateGoal,
+		AidevopsActions.UpdateKnowledgeItem,
+		AidevopsActions.UpdateOperatorAppIdpConfig,
+		AidevopsActions.UpdatePrivateConnectionCertificate,
+		AidevopsActions.UpdateRecommendation,
+		AidevopsActions.UpdateTrigger,
+		AidevopsActions.ValidateAwsAssociations,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AidevopsActions.LIST_ACCESS_TOKENS,
-		AidevopsActions.LIST_AGENT_SPACES,
-		AidevopsActions.LIST_ASSET_FILES,
-		AidevopsActions.LIST_ASSET_TYPES,
-		AidevopsActions.LIST_ASSET_VERSIONS,
-		AidevopsActions.LIST_ASSETS,
-		AidevopsActions.LIST_ASSOCIATIONS,
-		AidevopsActions.LIST_BACKLOG_TASKS,
-		AidevopsActions.LIST_CHATS,
-		AidevopsActions.LIST_EXECUTIONS,
-		AidevopsActions.LIST_GOALS,
-		AidevopsActions.LIST_JOURNAL_RECORDS,
-		AidevopsActions.LIST_KNOWLEDGE_ITEM_VERSIONS,
-		AidevopsActions.LIST_KNOWLEDGE_ITEMS,
-		AidevopsActions.LIST_PENDING_MESSAGES,
-		AidevopsActions.LIST_PRIVATE_CONNECTIONS,
-		AidevopsActions.LIST_RECOMMENDATIONS,
-		AidevopsActions.LIST_SERVICES,
-		AidevopsActions.LIST_TRIGGERS,
-		AidevopsActions.LIST_WEBHOOKS,
+	static readonly AllListActions: string[] = [
+		AidevopsActions.ListAccessTokens,
+		AidevopsActions.ListAgentSpaces,
+		AidevopsActions.ListAssetFiles,
+		AidevopsActions.ListAssetTypes,
+		AidevopsActions.ListAssetVersions,
+		AidevopsActions.ListAssets,
+		AidevopsActions.ListAssociations,
+		AidevopsActions.ListBacklogTasks,
+		AidevopsActions.ListChats,
+		AidevopsActions.ListExecutions,
+		AidevopsActions.ListGoals,
+		AidevopsActions.ListJournalRecords,
+		AidevopsActions.ListKnowledgeItemVersions,
+		AidevopsActions.ListKnowledgeItems,
+		AidevopsActions.ListPendingMessages,
+		AidevopsActions.ListPrivateConnections,
+		AidevopsActions.ListRecommendations,
+		AidevopsActions.ListServices,
+		AidevopsActions.ListTriggers,
+		AidevopsActions.ListWebhooks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		AidevopsActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
+	static readonly AllPermissionManagementActions: string[] = [
+		AidevopsActions.AllowVendedLogDeliveryForResource,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AidevopsActions.TAG_RESOURCE,
-		AidevopsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AidevopsActions.TagResource,
+		AidevopsActions.UntagResource,
 	];
 }
 
-const AgentspaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace/(?<agentSpaceId>[^:/?]+)$",
-);
-const AssetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace/(?<agentSpaceId>[^:/?]+)/asset/(?<assetId>[^:/?]+)$",
-);
-const AssociationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace/(?<agentSpaceId>[^:/?]+)/association/(?<associationId>[^:/?]+)$",
-);
-const PrivateConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):private-connection/(?<name>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceId>[^:/?]+)$",
-);
-const TriggerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace/(?<agentSpaceId>[^:/?]+)/trigger/(?<triggerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a agentspace ARN.
+ */
+export interface AidevopsAgentspaceArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agentspace ARN.
+ */
+export interface AidevopsAgentspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+}
+
+/**
+ * Properties for building a asset ARN.
+ */
+export interface AidevopsAssetArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The AssetId component of the ARN. */
+	readonly assetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a asset ARN.
+ */
+export interface AidevopsAssetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The AssetId component. */
+	readonly assetId: string;
+}
+
+/**
+ * Properties for building a associations ARN.
+ */
+export interface AidevopsAssociationsArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The AssociationId component of the ARN. */
+	readonly associationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a associations ARN.
+ */
+export interface AidevopsAssociationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The AssociationId component. */
+	readonly associationId: string;
+}
+
+/**
+ * Properties for building a private-connection ARN.
+ */
+export interface AidevopsPrivateConnectionArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a private-connection ARN.
+ */
+export interface AidevopsPrivateConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface AidevopsServiceArnProps {
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface AidevopsServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+}
+
+/**
+ * Properties for building a trigger ARN.
+ */
+export interface AidevopsTriggerArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The TriggerId component of the ARN. */
+	readonly triggerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trigger ARN.
+ */
+export interface AidevopsTriggerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The TriggerId component. */
+	readonly triggerId: string;
+}
+
+const AgentspaceArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)$/;
+const AssetArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/asset\/(?<assetId>[^:/?]+)$/;
+const AssociationsArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/association\/(?<associationId>[^:/?]+)$/;
+const PrivateConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):private-connection\/(?<name>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceId>[^:/?]+)$/;
+const TriggerArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/trigger\/(?<triggerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for aidevops resources.
@@ -312,16 +483,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the agentspace resource.
 	 */
-	static agentspace(props: {
-		/** The AgentSpaceId component of the ARN. */
-		readonly agentSpaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agentspace(props: AidevopsAgentspaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}`;
 	}
 
@@ -336,12 +498,7 @@ export class AidevopsResources {
 	 * Parses a agentspace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentspaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentSpaceId: string;
-	} {
+	static parseAgentspaceArn(arn: string): AidevopsAgentspaceArnComponents {
 		const match = AgentspaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agentspace ARN: ${arn}`);
@@ -357,18 +514,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the asset resource.
 	 */
-	static asset(props: {
-		/** The AgentSpaceId component of the ARN. */
-		readonly agentSpaceId: string;
-		/** The AssetId component of the ARN. */
-		readonly assetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static asset(props: AidevopsAssetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/asset/${props.assetId}`;
 	}
 
@@ -383,13 +529,7 @@ export class AidevopsResources {
 	 * Parses a asset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentSpaceId: string;
-		assetId: string;
-	} {
+	static parseAssetArn(arn: string): AidevopsAssetArnComponents {
 		const match = AssetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid asset ARN: ${arn}`);
@@ -406,18 +546,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the associations resource.
 	 */
-	static associations(props: {
-		/** The AgentSpaceId component of the ARN. */
-		readonly agentSpaceId: string;
-		/** The AssociationId component of the ARN. */
-		readonly associationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static associations(props: AidevopsAssociationsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/association/${props.associationId}`;
 	}
 
@@ -432,13 +561,7 @@ export class AidevopsResources {
 	 * Parses a associations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssociationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentSpaceId: string;
-		associationId: string;
-	} {
+	static parseAssociationsArn(arn: string): AidevopsAssociationsArnComponents {
 		const match = AssociationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid associations ARN: ${arn}`);
@@ -455,16 +578,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the private-connection resource.
 	 */
-	static privateConnection(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privateConnection(props: AidevopsPrivateConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:private-connection/${props.name}`;
 	}
 
@@ -479,12 +593,9 @@ export class AidevopsResources {
 	 * Parses a private-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parsePrivateConnectionArn(
+		arn: string,
+	): AidevopsPrivateConnectionArnComponents {
 		const match = PrivateConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid private-connection ARN: ${arn}`);
@@ -500,16 +611,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: AidevopsServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceId}`;
 	}
 
@@ -524,12 +626,7 @@ export class AidevopsResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceId: string;
-	} {
+	static parseServiceArn(arn: string): AidevopsServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -545,18 +642,7 @@ export class AidevopsResources {
 	/**
 	 * Builds an ARN for the trigger resource.
 	 */
-	static trigger(props: {
-		/** The AgentSpaceId component of the ARN. */
-		readonly agentSpaceId: string;
-		/** The TriggerId component of the ARN. */
-		readonly triggerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trigger(props: AidevopsTriggerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/trigger/${props.triggerId}`;
 	}
 
@@ -571,13 +657,7 @@ export class AidevopsResources {
 	 * Parses a trigger ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTriggerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentSpaceId: string;
-		triggerId: string;
-	} {
+	static parseTriggerArn(arn: string): AidevopsTriggerArnComponents {
 		const match = TriggerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trigger ARN: ${arn}`);
@@ -597,164 +677,164 @@ export class AidevopsResources {
  */
 export class AidevopsOperations {
 	/** IAM actions required for the AssociateService API call. */
-	static readonly ASSOCIATE_SERVICE: string[] = [
+	static readonly AssociateService: string[] = [
 		"aidevops:AssociateService",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateAgentSpace API call. */
-	static readonly CREATE_AGENT_SPACE: string[] = [
+	static readonly CreateAgentSpace: string[] = [
 		"aidevops:CreateAgentSpace",
 		"aidevops:TagResource",
 	];
 	/** IAM actions required for the CreateAsset API call. */
-	static readonly CREATE_ASSET: string[] = [];
+	static readonly CreateAsset: string[] = [];
 	/** IAM actions required for the CreateAssetFile API call. */
-	static readonly CREATE_ASSET_FILE: string[] = [];
+	static readonly CreateAssetFile: string[] = [];
 	/** IAM actions required for the CreateBacklogTask API call. */
-	static readonly CREATE_BACKLOG_TASK: string[] = [];
+	static readonly CreateBacklogTask: string[] = [];
 	/** IAM actions required for the CreateChat API call. */
-	static readonly CREATE_CHAT: string[] = [];
+	static readonly CreateChat: string[] = [];
 	/** IAM actions required for the CreatePrivateConnection API call. */
-	static readonly CREATE_PRIVATE_CONNECTION: string[] = [
+	static readonly CreatePrivateConnection: string[] = [
 		"aidevops:CreatePrivateConnection",
 		"aidevops:TagResource",
 	];
 	/** IAM actions required for the CreateTrigger API call. */
-	static readonly CREATE_TRIGGER: string[] = [];
+	static readonly CreateTrigger: string[] = [];
 	/** IAM actions required for the DeleteAgentSpace API call. */
-	static readonly DELETE_AGENT_SPACE: string[] = ["aidevops:DeleteAgentSpace"];
+	static readonly DeleteAgentSpace: string[] = ["aidevops:DeleteAgentSpace"];
 	/** IAM actions required for the DeleteAsset API call. */
-	static readonly DELETE_ASSET: string[] = [];
+	static readonly DeleteAsset: string[] = [];
 	/** IAM actions required for the DeleteAssetFile API call. */
-	static readonly DELETE_ASSET_FILE: string[] = [];
+	static readonly DeleteAssetFile: string[] = [];
 	/** IAM actions required for the DeletePrivateConnection API call. */
-	static readonly DELETE_PRIVATE_CONNECTION: string[] = [
+	static readonly DeletePrivateConnection: string[] = [
 		"aidevops:DeletePrivateConnection",
 	];
 	/** IAM actions required for the DeleteTrigger API call. */
-	static readonly DELETE_TRIGGER: string[] = [];
+	static readonly DeleteTrigger: string[] = [];
 	/** IAM actions required for the DeregisterService API call. */
-	static readonly DEREGISTER_SERVICE: string[] = ["aidevops:DeregisterService"];
+	static readonly DeregisterService: string[] = ["aidevops:DeregisterService"];
 	/** IAM actions required for the DescribePrivateConnection API call. */
-	static readonly DESCRIBE_PRIVATE_CONNECTION: string[] = [
+	static readonly DescribePrivateConnection: string[] = [
 		"aidevops:DescribePrivateConnection",
 	];
 	/** IAM actions required for the DisableOperatorApp API call. */
-	static readonly DISABLE_OPERATOR_APP: string[] = [
+	static readonly DisableOperatorApp: string[] = [
 		"aidevops:DisableOperatorApp",
 	];
 	/** IAM actions required for the DisassociateService API call. */
-	static readonly DISASSOCIATE_SERVICE: string[] = [
+	static readonly DisassociateService: string[] = [
 		"aidevops:DisassociateService",
 	];
 	/** IAM actions required for the EnableOperatorApp API call. */
-	static readonly ENABLE_OPERATOR_APP: string[] = [
+	static readonly EnableOperatorApp: string[] = [
 		"aidevops:EnableOperatorApp",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the GetAccountUsage API call. */
-	static readonly GET_ACCOUNT_USAGE: string[] = [];
+	static readonly opGetAccountUsage: string[] = [];
 	/** IAM actions required for the GetAgentSpace API call. */
-	static readonly GET_AGENT_SPACE: string[] = ["aidevops:GetAgentSpace"];
+	static readonly opGetAgentSpace: string[] = ["aidevops:GetAgentSpace"];
 	/** IAM actions required for the GetAsset API call. */
-	static readonly GET_ASSET: string[] = [];
+	static readonly opGetAsset: string[] = [];
 	/** IAM actions required for the GetAssetContent API call. */
-	static readonly GET_ASSET_CONTENT: string[] = [];
+	static readonly opGetAssetContent: string[] = [];
 	/** IAM actions required for the GetAssetFile API call. */
-	static readonly GET_ASSET_FILE: string[] = [];
+	static readonly opGetAssetFile: string[] = [];
 	/** IAM actions required for the GetAssociation API call. */
-	static readonly GET_ASSOCIATION: string[] = ["aidevops:GetAssociation"];
+	static readonly opGetAssociation: string[] = ["aidevops:GetAssociation"];
 	/** IAM actions required for the GetBacklogTask API call. */
-	static readonly GET_BACKLOG_TASK: string[] = [];
+	static readonly opGetBacklogTask: string[] = [];
 	/** IAM actions required for the GetOperatorApp API call. */
-	static readonly GET_OPERATOR_APP: string[] = ["aidevops:GetOperatorApp"];
+	static readonly opGetOperatorApp: string[] = ["aidevops:GetOperatorApp"];
 	/** IAM actions required for the GetRecommendation API call. */
-	static readonly GET_RECOMMENDATION: string[] = [];
+	static readonly opGetRecommendation: string[] = [];
 	/** IAM actions required for the GetService API call. */
-	static readonly GET_SERVICE: string[] = ["aidevops:GetService"];
+	static readonly opGetService: string[] = ["aidevops:GetService"];
 	/** IAM actions required for the GetTrigger API call. */
-	static readonly GET_TRIGGER: string[] = [];
+	static readonly opGetTrigger: string[] = [];
 	/** IAM actions required for the ListAgentSpaces API call. */
-	static readonly LIST_AGENT_SPACES: string[] = ["aidevops:ListAgentSpaces"];
+	static readonly ListAgentSpaces: string[] = ["aidevops:ListAgentSpaces"];
 	/** IAM actions required for the ListAssetFiles API call. */
-	static readonly LIST_ASSET_FILES: string[] = [];
+	static readonly ListAssetFiles: string[] = [];
 	/** IAM actions required for the ListAssetTypes API call. */
-	static readonly LIST_ASSET_TYPES: string[] = [];
+	static readonly ListAssetTypes: string[] = [];
 	/** IAM actions required for the ListAssetVersions API call. */
-	static readonly LIST_ASSET_VERSIONS: string[] = [];
+	static readonly ListAssetVersions: string[] = [];
 	/** IAM actions required for the ListAssets API call. */
-	static readonly LIST_ASSETS: string[] = [];
+	static readonly ListAssets: string[] = [];
 	/** IAM actions required for the ListAssociations API call. */
-	static readonly LIST_ASSOCIATIONS: string[] = ["aidevops:ListAssociations"];
+	static readonly ListAssociations: string[] = ["aidevops:ListAssociations"];
 	/** IAM actions required for the ListBacklogTasks API call. */
-	static readonly LIST_BACKLOG_TASKS: string[] = [];
+	static readonly ListBacklogTasks: string[] = [];
 	/** IAM actions required for the ListChats API call. */
-	static readonly LIST_CHATS: string[] = [];
+	static readonly ListChats: string[] = [];
 	/** IAM actions required for the ListExecutions API call. */
-	static readonly LIST_EXECUTIONS: string[] = [];
+	static readonly ListExecutions: string[] = [];
 	/** IAM actions required for the ListGoals API call. */
-	static readonly LIST_GOALS: string[] = [];
+	static readonly ListGoals: string[] = [];
 	/** IAM actions required for the ListJournalRecords API call. */
-	static readonly LIST_JOURNAL_RECORDS: string[] = [];
+	static readonly ListJournalRecords: string[] = [];
 	/** IAM actions required for the ListPendingMessages API call. */
-	static readonly LIST_PENDING_MESSAGES: string[] = [];
+	static readonly ListPendingMessages: string[] = [];
 	/** IAM actions required for the ListPrivateConnections API call. */
-	static readonly LIST_PRIVATE_CONNECTIONS: string[] = [
+	static readonly ListPrivateConnections: string[] = [
 		"aidevops:ListPrivateConnections",
 	];
 	/** IAM actions required for the ListRecommendations API call. */
-	static readonly LIST_RECOMMENDATIONS: string[] = [];
+	static readonly ListRecommendations: string[] = [];
 	/** IAM actions required for the ListServices API call. */
-	static readonly LIST_SERVICES: string[] = ["aidevops:ListServices"];
+	static readonly ListServices: string[] = ["aidevops:ListServices"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"aidevops:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTriggers API call. */
-	static readonly LIST_TRIGGERS: string[] = [];
+	static readonly ListTriggers: string[] = [];
 	/** IAM actions required for the ListWebhooks API call. */
-	static readonly LIST_WEBHOOKS: string[] = ["aidevops:ListWebhooks"];
+	static readonly ListWebhooks: string[] = ["aidevops:ListWebhooks"];
 	/** IAM actions required for the RegisterService API call. */
-	static readonly REGISTER_SERVICE: string[] = [
+	static readonly RegisterService: string[] = [
 		"iam:PassRole",
 		"aidevops:RegisterService",
 		"aidevops:TagResource",
 	];
 	/** IAM actions required for the SendMessage API call. */
-	static readonly SEND_MESSAGE: string[] = [];
+	static readonly SendMessage: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["aidevops:TagResource"];
+	static readonly TagResource: string[] = ["aidevops:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["aidevops:UntagResource"];
+	static readonly UntagResource: string[] = ["aidevops:UntagResource"];
 	/** IAM actions required for the UpdateAgentSpace API call. */
-	static readonly UPDATE_AGENT_SPACE: string[] = ["aidevops:UpdateAgentSpace"];
+	static readonly UpdateAgentSpace: string[] = ["aidevops:UpdateAgentSpace"];
 	/** IAM actions required for the UpdateAsset API call. */
-	static readonly UPDATE_ASSET: string[] = [];
+	static readonly UpdateAsset: string[] = [];
 	/** IAM actions required for the UpdateAssetFile API call. */
-	static readonly UPDATE_ASSET_FILE: string[] = [];
+	static readonly UpdateAssetFile: string[] = [];
 	/** IAM actions required for the UpdateAssociation API call. */
-	static readonly UPDATE_ASSOCIATION: string[] = [
+	static readonly UpdateAssociation: string[] = [
 		"iam:PassRole",
 		"aidevops:UpdateAssociation",
 	];
 	/** IAM actions required for the UpdateBacklogTask API call. */
-	static readonly UPDATE_BACKLOG_TASK: string[] = [];
+	static readonly UpdateBacklogTask: string[] = [];
 	/** IAM actions required for the UpdateGoal API call. */
-	static readonly UPDATE_GOAL: string[] = [];
+	static readonly UpdateGoal: string[] = [];
 	/** IAM actions required for the UpdateOperatorAppIdpConfig API call. */
-	static readonly UPDATE_OPERATOR_APP_IDP_CONFIG: string[] = [
+	static readonly UpdateOperatorAppIdpConfig: string[] = [
 		"aidevops:UpdateOperatorAppIdpConfig",
 	];
 	/** IAM actions required for the UpdatePrivateConnectionCertificate API call. */
-	static readonly UPDATE_PRIVATE_CONNECTION_CERTIFICATE: string[] = [
+	static readonly UpdatePrivateConnectionCertificate: string[] = [
 		"aidevops:UpdatePrivateConnectionCertificate",
 	];
 	/** IAM actions required for the UpdateRecommendation API call. */
-	static readonly UPDATE_RECOMMENDATION: string[] = [];
+	static readonly UpdateRecommendation: string[] = [];
 	/** IAM actions required for the UpdateTrigger API call. */
-	static readonly UPDATE_TRIGGER: string[] = [];
+	static readonly UpdateTrigger: string[] = [];
 	/** IAM actions required for the ValidateAwsAssociations API call. */
-	static readonly VALIDATE_AWS_ASSOCIATIONS: string[] = [
+	static readonly ValidateAwsAssociations: string[] = [
 		"aidevops:ValidateAwsAssociations",
 	];
 }
@@ -764,76 +844,77 @@ export class AidevopsOperations {
  */
 export class AidevopsConditions {
 	/** Condition keys applicable to the CreateAgentSpace action. */
-	static readonly CREATE_AGENT_SPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentSpaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePrivateConnection action. */
-	static readonly CREATE_PRIVATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreatePrivateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAgentSpace action. */
-	static readonly DELETE_AGENT_SPACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeletePrivateConnection action. */
-	static readonly DELETE_PRIVATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly DeletePrivateConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeregisterService action. */
-	static readonly DEREGISTER_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly DeregisterServiceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribePrivateConnection action. */
-	static readonly DESCRIBE_PRIVATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly DescribePrivateConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAgentSpace action. */
-	static readonly GET_AGENT_SPACE_CONDITION_KEYS: string[] = [
+	static readonly actionGetAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetService action. */
-	static readonly GET_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly actionGetServiceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RegisterService action. */
-	static readonly REGISTER_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly RegisterServiceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateAgentSpace action. */
-	static readonly UPDATE_AGENT_SPACE_CONDITION_KEYS: string[] = [
+	static readonly UpdateAgentSpaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdatePrivateConnectionCertificate action. */
-	static readonly UPDATE_PRIVATE_CONNECTION_CERTIFICATE_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdatePrivateConnectionCertificateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

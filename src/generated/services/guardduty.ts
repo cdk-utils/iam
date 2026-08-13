@@ -13,345 +13,584 @@ export class GuardDutyActions {
 	static readonly SERVICE_PREFIX = "guardduty";
 
 	/** [Write] guardduty:AcceptAdministratorInvitation */
-	static readonly ACCEPT_ADMINISTRATOR_INVITATION =
+	static readonly AcceptAdministratorInvitation =
 		"guardduty:AcceptAdministratorInvitation";
 	/** [Write] guardduty:AcceptInvitation */
-	static readonly ACCEPT_INVITATION = "guardduty:AcceptInvitation";
+	static readonly AcceptInvitation = "guardduty:AcceptInvitation";
 	/** [Write] guardduty:ArchiveFindings */
-	static readonly ARCHIVE_FINDINGS = "guardduty:ArchiveFindings";
+	static readonly ArchiveFindings = "guardduty:ArchiveFindings";
 	/** [Write] guardduty:CreateDetector */
-	static readonly CREATE_DETECTOR = "guardduty:CreateDetector";
+	static readonly CreateDetector = "guardduty:CreateDetector";
 	/** [Write] guardduty:CreateFilter */
-	static readonly CREATE_FILTER = "guardduty:CreateFilter";
+	static readonly CreateFilter = "guardduty:CreateFilter";
 	/** [Write] guardduty:CreateIPSet */
-	static readonly CREATE_IP_SET = "guardduty:CreateIPSet";
+	static readonly CreateIPSet = "guardduty:CreateIPSet";
 	/** [Write] guardduty:CreateInvestigation */
-	static readonly CREATE_INVESTIGATION = "guardduty:CreateInvestigation";
+	static readonly CreateInvestigation = "guardduty:CreateInvestigation";
 	/** [Write] guardduty:CreateMalwareProtectionPlan */
-	static readonly CREATE_MALWARE_PROTECTION_PLAN =
+	static readonly CreateMalwareProtectionPlan =
 		"guardduty:CreateMalwareProtectionPlan";
 	/** [Write] guardduty:CreateMembers */
-	static readonly CREATE_MEMBERS = "guardduty:CreateMembers";
+	static readonly CreateMembers = "guardduty:CreateMembers";
 	/** [Write] guardduty:CreatePublishingDestination */
-	static readonly CREATE_PUBLISHING_DESTINATION =
+	static readonly CreatePublishingDestination =
 		"guardduty:CreatePublishingDestination";
 	/** [Write] guardduty:CreateSampleFindings */
-	static readonly CREATE_SAMPLE_FINDINGS = "guardduty:CreateSampleFindings";
+	static readonly CreateSampleFindings = "guardduty:CreateSampleFindings";
 	/** [Write] guardduty:CreateThreatEntitySet */
-	static readonly CREATE_THREAT_ENTITY_SET = "guardduty:CreateThreatEntitySet";
+	static readonly CreateThreatEntitySet = "guardduty:CreateThreatEntitySet";
 	/** [Write] guardduty:CreateThreatIntelSet */
-	static readonly CREATE_THREAT_INTEL_SET = "guardduty:CreateThreatIntelSet";
+	static readonly CreateThreatIntelSet = "guardduty:CreateThreatIntelSet";
 	/** [Write] guardduty:CreateTrustedEntitySet */
-	static readonly CREATE_TRUSTED_ENTITY_SET =
-		"guardduty:CreateTrustedEntitySet";
+	static readonly CreateTrustedEntitySet = "guardduty:CreateTrustedEntitySet";
 	/** [Write] guardduty:DeclineInvitations */
-	static readonly DECLINE_INVITATIONS = "guardduty:DeclineInvitations";
+	static readonly DeclineInvitations = "guardduty:DeclineInvitations";
 	/** [Write] guardduty:DeleteDetector */
-	static readonly DELETE_DETECTOR = "guardduty:DeleteDetector";
+	static readonly DeleteDetector = "guardduty:DeleteDetector";
 	/** [Write] guardduty:DeleteFilter */
-	static readonly DELETE_FILTER = "guardduty:DeleteFilter";
+	static readonly DeleteFilter = "guardduty:DeleteFilter";
 	/** [Write] guardduty:DeleteIPSet */
-	static readonly DELETE_IP_SET = "guardduty:DeleteIPSet";
+	static readonly DeleteIPSet = "guardduty:DeleteIPSet";
 	/** [Write] guardduty:DeleteInvitations */
-	static readonly DELETE_INVITATIONS = "guardduty:DeleteInvitations";
+	static readonly DeleteInvitations = "guardduty:DeleteInvitations";
 	/** [Write] guardduty:DeleteMalwareProtectionPlan */
-	static readonly DELETE_MALWARE_PROTECTION_PLAN =
+	static readonly DeleteMalwareProtectionPlan =
 		"guardduty:DeleteMalwareProtectionPlan";
 	/** [Write] guardduty:DeleteMembers */
-	static readonly DELETE_MEMBERS = "guardduty:DeleteMembers";
+	static readonly DeleteMembers = "guardduty:DeleteMembers";
 	/** [Write] guardduty:DeletePublishingDestination */
-	static readonly DELETE_PUBLISHING_DESTINATION =
+	static readonly DeletePublishingDestination =
 		"guardduty:DeletePublishingDestination";
 	/** [Write] guardduty:DeleteThreatEntitySet */
-	static readonly DELETE_THREAT_ENTITY_SET = "guardduty:DeleteThreatEntitySet";
+	static readonly DeleteThreatEntitySet = "guardduty:DeleteThreatEntitySet";
 	/** [Write] guardduty:DeleteThreatIntelSet */
-	static readonly DELETE_THREAT_INTEL_SET = "guardduty:DeleteThreatIntelSet";
+	static readonly DeleteThreatIntelSet = "guardduty:DeleteThreatIntelSet";
 	/** [Write] guardduty:DeleteTrustedEntitySet */
-	static readonly DELETE_TRUSTED_ENTITY_SET =
-		"guardduty:DeleteTrustedEntitySet";
+	static readonly DeleteTrustedEntitySet = "guardduty:DeleteTrustedEntitySet";
 	/** [Read] guardduty:DescribeMalwareScans */
-	static readonly DESCRIBE_MALWARE_SCANS = "guardduty:DescribeMalwareScans";
+	static readonly DescribeMalwareScans = "guardduty:DescribeMalwareScans";
 	/** [Read] guardduty:DescribeOrganizationConfiguration */
-	static readonly DESCRIBE_ORGANIZATION_CONFIGURATION =
+	static readonly DescribeOrganizationConfiguration =
 		"guardduty:DescribeOrganizationConfiguration";
 	/** [Read] guardduty:DescribePublishingDestination */
-	static readonly DESCRIBE_PUBLISHING_DESTINATION =
+	static readonly DescribePublishingDestination =
 		"guardduty:DescribePublishingDestination";
 	/** [Write] guardduty:DisableOrganizationAdminAccount */
-	static readonly DISABLE_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly DisableOrganizationAdminAccount =
 		"guardduty:DisableOrganizationAdminAccount";
 	/** [Write] guardduty:DisassociateFromAdministratorAccount */
-	static readonly DISASSOCIATE_FROM_ADMINISTRATOR_ACCOUNT =
+	static readonly DisassociateFromAdministratorAccount =
 		"guardduty:DisassociateFromAdministratorAccount";
 	/** [Write] guardduty:DisassociateFromMasterAccount */
-	static readonly DISASSOCIATE_FROM_MASTER_ACCOUNT =
+	static readonly DisassociateFromMasterAccount =
 		"guardduty:DisassociateFromMasterAccount";
 	/** [Write] guardduty:DisassociateMembers */
-	static readonly DISASSOCIATE_MEMBERS = "guardduty:DisassociateMembers";
+	static readonly DisassociateMembers = "guardduty:DisassociateMembers";
 	/** [Write] guardduty:EnableOrganizationAdminAccount */
-	static readonly ENABLE_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly EnableOrganizationAdminAccount =
 		"guardduty:EnableOrganizationAdminAccount";
 	/** [Read] guardduty:GetAdministratorAccount */
-	static readonly GET_ADMINISTRATOR_ACCOUNT =
+	static readonly actionGetAdministratorAccount =
 		"guardduty:GetAdministratorAccount";
 	/** [Read] guardduty:GetCoverageStatistics */
-	static readonly GET_COVERAGE_STATISTICS = "guardduty:GetCoverageStatistics";
+	static readonly actionGetCoverageStatistics =
+		"guardduty:GetCoverageStatistics";
 	/** [Read] guardduty:GetDetector */
-	static readonly GET_DETECTOR = "guardduty:GetDetector";
+	static readonly actionGetDetector = "guardduty:GetDetector";
 	/** [Read] guardduty:GetFilter */
-	static readonly GET_FILTER = "guardduty:GetFilter";
+	static readonly actionGetFilter = "guardduty:GetFilter";
 	/** [Read] guardduty:GetFindings */
-	static readonly GET_FINDINGS = "guardduty:GetFindings";
+	static readonly actionGetFindings = "guardduty:GetFindings";
 	/** [Read] guardduty:GetFindingsStatistics */
-	static readonly GET_FINDINGS_STATISTICS = "guardduty:GetFindingsStatistics";
+	static readonly actionGetFindingsStatistics =
+		"guardduty:GetFindingsStatistics";
 	/** [Read] guardduty:GetIPSet */
-	static readonly GET_IP_SET = "guardduty:GetIPSet";
+	static readonly actionGetIPSet = "guardduty:GetIPSet";
 	/** [Read] guardduty:GetInvestigation */
-	static readonly GET_INVESTIGATION = "guardduty:GetInvestigation";
+	static readonly actionGetInvestigation = "guardduty:GetInvestigation";
 	/** [Read] guardduty:GetInvitationsCount */
-	static readonly GET_INVITATIONS_COUNT = "guardduty:GetInvitationsCount";
+	static readonly actionGetInvitationsCount = "guardduty:GetInvitationsCount";
 	/** [Read] guardduty:GetMalwareProtectionPlan */
-	static readonly GET_MALWARE_PROTECTION_PLAN =
+	static readonly actionGetMalwareProtectionPlan =
 		"guardduty:GetMalwareProtectionPlan";
 	/** [Read] guardduty:GetMalwareScan */
-	static readonly GET_MALWARE_SCAN = "guardduty:GetMalwareScan";
+	static readonly actionGetMalwareScan = "guardduty:GetMalwareScan";
 	/** [Read] guardduty:GetMalwareScanSettings */
-	static readonly GET_MALWARE_SCAN_SETTINGS =
+	static readonly actionGetMalwareScanSettings =
 		"guardduty:GetMalwareScanSettings";
 	/** [Read] guardduty:GetMasterAccount */
-	static readonly GET_MASTER_ACCOUNT = "guardduty:GetMasterAccount";
+	static readonly actionGetMasterAccount = "guardduty:GetMasterAccount";
 	/** [Read] guardduty:GetMemberDetectors */
-	static readonly GET_MEMBER_DETECTORS = "guardduty:GetMemberDetectors";
+	static readonly actionGetMemberDetectors = "guardduty:GetMemberDetectors";
 	/** [Read] guardduty:GetMembers */
-	static readonly GET_MEMBERS = "guardduty:GetMembers";
+	static readonly actionGetMembers = "guardduty:GetMembers";
 	/** [Read] guardduty:GetOrganizationStatistics */
-	static readonly GET_ORGANIZATION_STATISTICS =
+	static readonly actionGetOrganizationStatistics =
 		"guardduty:GetOrganizationStatistics";
 	/** [Read] guardduty:GetRemainingFreeTrialDays */
-	static readonly GET_REMAINING_FREE_TRIAL_DAYS =
+	static readonly actionGetRemainingFreeTrialDays =
 		"guardduty:GetRemainingFreeTrialDays";
 	/** [Read] guardduty:GetThreatEntitySet */
-	static readonly GET_THREAT_ENTITY_SET = "guardduty:GetThreatEntitySet";
+	static readonly actionGetThreatEntitySet = "guardduty:GetThreatEntitySet";
 	/** [Read] guardduty:GetThreatIntelSet */
-	static readonly GET_THREAT_INTEL_SET = "guardduty:GetThreatIntelSet";
+	static readonly actionGetThreatIntelSet = "guardduty:GetThreatIntelSet";
 	/** [Read] guardduty:GetTrustedEntitySet */
-	static readonly GET_TRUSTED_ENTITY_SET = "guardduty:GetTrustedEntitySet";
+	static readonly actionGetTrustedEntitySet = "guardduty:GetTrustedEntitySet";
 	/** [Read] guardduty:GetUsageStatistics */
-	static readonly GET_USAGE_STATISTICS = "guardduty:GetUsageStatistics";
+	static readonly actionGetUsageStatistics = "guardduty:GetUsageStatistics";
 	/** [Write] guardduty:InviteMembers */
-	static readonly INVITE_MEMBERS = "guardduty:InviteMembers";
+	static readonly InviteMembers = "guardduty:InviteMembers";
 	/** [List] guardduty:ListCoverage */
-	static readonly LIST_COVERAGE = "guardduty:ListCoverage";
+	static readonly ListCoverage = "guardduty:ListCoverage";
 	/** [List] guardduty:ListDetectors */
-	static readonly LIST_DETECTORS = "guardduty:ListDetectors";
+	static readonly ListDetectors = "guardduty:ListDetectors";
 	/** [List] guardduty:ListFilters */
-	static readonly LIST_FILTERS = "guardduty:ListFilters";
+	static readonly ListFilters = "guardduty:ListFilters";
 	/** [List] guardduty:ListFindings */
-	static readonly LIST_FINDINGS = "guardduty:ListFindings";
+	static readonly ListFindings = "guardduty:ListFindings";
 	/** [List] guardduty:ListIPSets */
-	static readonly LIST_IP_SETS = "guardduty:ListIPSets";
+	static readonly ListIPSets = "guardduty:ListIPSets";
 	/** [List] guardduty:ListInvestigations */
-	static readonly LIST_INVESTIGATIONS = "guardduty:ListInvestigations";
+	static readonly ListInvestigations = "guardduty:ListInvestigations";
 	/** [List] guardduty:ListInvitations */
-	static readonly LIST_INVITATIONS = "guardduty:ListInvitations";
+	static readonly ListInvitations = "guardduty:ListInvitations";
 	/** [List] guardduty:ListMalwareProtectionPlans */
-	static readonly LIST_MALWARE_PROTECTION_PLANS =
+	static readonly ListMalwareProtectionPlans =
 		"guardduty:ListMalwareProtectionPlans";
 	/** [List] guardduty:ListMalwareScans */
-	static readonly LIST_MALWARE_SCANS = "guardduty:ListMalwareScans";
+	static readonly ListMalwareScans = "guardduty:ListMalwareScans";
 	/** [List] guardduty:ListMembers */
-	static readonly LIST_MEMBERS = "guardduty:ListMembers";
+	static readonly ListMembers = "guardduty:ListMembers";
 	/** [List] guardduty:ListOrganizationAdminAccounts */
-	static readonly LIST_ORGANIZATION_ADMIN_ACCOUNTS =
+	static readonly ListOrganizationAdminAccounts =
 		"guardduty:ListOrganizationAdminAccounts";
 	/** [List] guardduty:ListPublishingDestinations */
-	static readonly LIST_PUBLISHING_DESTINATIONS =
+	static readonly ListPublishingDestinations =
 		"guardduty:ListPublishingDestinations";
 	/** [Read] guardduty:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "guardduty:ListTagsForResource";
+	static readonly ListTagsForResource = "guardduty:ListTagsForResource";
 	/** [List] guardduty:ListThreatEntitySets */
-	static readonly LIST_THREAT_ENTITY_SETS = "guardduty:ListThreatEntitySets";
+	static readonly ListThreatEntitySets = "guardduty:ListThreatEntitySets";
 	/** [List] guardduty:ListThreatIntelSets */
-	static readonly LIST_THREAT_INTEL_SETS = "guardduty:ListThreatIntelSets";
+	static readonly ListThreatIntelSets = "guardduty:ListThreatIntelSets";
 	/** [List] guardduty:ListTrustedEntitySets */
-	static readonly LIST_TRUSTED_ENTITY_SETS = "guardduty:ListTrustedEntitySets";
+	static readonly ListTrustedEntitySets = "guardduty:ListTrustedEntitySets";
 	/** [Write] guardduty:SendObjectMalwareScan */
-	static readonly SEND_OBJECT_MALWARE_SCAN = "guardduty:SendObjectMalwareScan";
+	static readonly SendObjectMalwareScan = "guardduty:SendObjectMalwareScan";
 	/** [Write] guardduty:SendSecurityTelemetry */
-	static readonly SEND_SECURITY_TELEMETRY = "guardduty:SendSecurityTelemetry";
+	static readonly SendSecurityTelemetry = "guardduty:SendSecurityTelemetry";
 	/** [Write] guardduty:StartMalwareScan */
-	static readonly START_MALWARE_SCAN = "guardduty:StartMalwareScan";
+	static readonly StartMalwareScan = "guardduty:StartMalwareScan";
 	/** [Write] guardduty:StartMonitoringMembers */
-	static readonly START_MONITORING_MEMBERS = "guardduty:StartMonitoringMembers";
+	static readonly StartMonitoringMembers = "guardduty:StartMonitoringMembers";
 	/** [Write] guardduty:StopMonitoringMembers */
-	static readonly STOP_MONITORING_MEMBERS = "guardduty:StopMonitoringMembers";
+	static readonly StopMonitoringMembers = "guardduty:StopMonitoringMembers";
 	/** [Tagging] guardduty:TagResource */
-	static readonly TAG_RESOURCE = "guardduty:TagResource";
+	static readonly TagResource = "guardduty:TagResource";
 	/** [Write] guardduty:UnarchiveFindings */
-	static readonly UNARCHIVE_FINDINGS = "guardduty:UnarchiveFindings";
+	static readonly UnarchiveFindings = "guardduty:UnarchiveFindings";
 	/** [Tagging] guardduty:UntagResource */
-	static readonly UNTAG_RESOURCE = "guardduty:UntagResource";
+	static readonly UntagResource = "guardduty:UntagResource";
 	/** [Write] guardduty:UpdateDetector */
-	static readonly UPDATE_DETECTOR = "guardduty:UpdateDetector";
+	static readonly UpdateDetector = "guardduty:UpdateDetector";
 	/** [Write] guardduty:UpdateFilter */
-	static readonly UPDATE_FILTER = "guardduty:UpdateFilter";
+	static readonly UpdateFilter = "guardduty:UpdateFilter";
 	/** [Write] guardduty:UpdateFindingsFeedback */
-	static readonly UPDATE_FINDINGS_FEEDBACK = "guardduty:UpdateFindingsFeedback";
+	static readonly UpdateFindingsFeedback = "guardduty:UpdateFindingsFeedback";
 	/** [Write] guardduty:UpdateIPSet */
-	static readonly UPDATE_IP_SET = "guardduty:UpdateIPSet";
+	static readonly UpdateIPSet = "guardduty:UpdateIPSet";
 	/** [Write] guardduty:UpdateMalwareProtectionPlan */
-	static readonly UPDATE_MALWARE_PROTECTION_PLAN =
+	static readonly UpdateMalwareProtectionPlan =
 		"guardduty:UpdateMalwareProtectionPlan";
 	/** [Write] guardduty:UpdateMalwareScanSettings */
-	static readonly UPDATE_MALWARE_SCAN_SETTINGS =
+	static readonly UpdateMalwareScanSettings =
 		"guardduty:UpdateMalwareScanSettings";
 	/** [Write] guardduty:UpdateMemberDetectors */
-	static readonly UPDATE_MEMBER_DETECTORS = "guardduty:UpdateMemberDetectors";
+	static readonly UpdateMemberDetectors = "guardduty:UpdateMemberDetectors";
 	/** [Write] guardduty:UpdateOrganizationConfiguration */
-	static readonly UPDATE_ORGANIZATION_CONFIGURATION =
+	static readonly UpdateOrganizationConfiguration =
 		"guardduty:UpdateOrganizationConfiguration";
 	/** [Write] guardduty:UpdatePublishingDestination */
-	static readonly UPDATE_PUBLISHING_DESTINATION =
+	static readonly UpdatePublishingDestination =
 		"guardduty:UpdatePublishingDestination";
 	/** [Write] guardduty:UpdateThreatEntitySet */
-	static readonly UPDATE_THREAT_ENTITY_SET = "guardduty:UpdateThreatEntitySet";
+	static readonly UpdateThreatEntitySet = "guardduty:UpdateThreatEntitySet";
 	/** [Write] guardduty:UpdateThreatIntelSet */
-	static readonly UPDATE_THREAT_INTEL_SET = "guardduty:UpdateThreatIntelSet";
+	static readonly UpdateThreatIntelSet = "guardduty:UpdateThreatIntelSet";
 	/** [Write] guardduty:UpdateTrustedEntitySet */
-	static readonly UPDATE_TRUSTED_ENTITY_SET =
-		"guardduty:UpdateTrustedEntitySet";
+	static readonly UpdateTrustedEntitySet = "guardduty:UpdateTrustedEntitySet";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GuardDutyActions.DESCRIBE_MALWARE_SCANS,
-		GuardDutyActions.DESCRIBE_ORGANIZATION_CONFIGURATION,
-		GuardDutyActions.DESCRIBE_PUBLISHING_DESTINATION,
-		GuardDutyActions.GET_ADMINISTRATOR_ACCOUNT,
-		GuardDutyActions.GET_COVERAGE_STATISTICS,
-		GuardDutyActions.GET_DETECTOR,
-		GuardDutyActions.GET_FILTER,
-		GuardDutyActions.GET_FINDINGS,
-		GuardDutyActions.GET_FINDINGS_STATISTICS,
-		GuardDutyActions.GET_IP_SET,
-		GuardDutyActions.GET_INVESTIGATION,
-		GuardDutyActions.GET_INVITATIONS_COUNT,
-		GuardDutyActions.GET_MALWARE_PROTECTION_PLAN,
-		GuardDutyActions.GET_MALWARE_SCAN,
-		GuardDutyActions.GET_MALWARE_SCAN_SETTINGS,
-		GuardDutyActions.GET_MASTER_ACCOUNT,
-		GuardDutyActions.GET_MEMBER_DETECTORS,
-		GuardDutyActions.GET_MEMBERS,
-		GuardDutyActions.GET_ORGANIZATION_STATISTICS,
-		GuardDutyActions.GET_REMAINING_FREE_TRIAL_DAYS,
-		GuardDutyActions.GET_THREAT_ENTITY_SET,
-		GuardDutyActions.GET_THREAT_INTEL_SET,
-		GuardDutyActions.GET_TRUSTED_ENTITY_SET,
-		GuardDutyActions.GET_USAGE_STATISTICS,
-		GuardDutyActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		GuardDutyActions.DescribeMalwareScans,
+		GuardDutyActions.DescribeOrganizationConfiguration,
+		GuardDutyActions.DescribePublishingDestination,
+		GuardDutyActions.actionGetAdministratorAccount,
+		GuardDutyActions.actionGetCoverageStatistics,
+		GuardDutyActions.actionGetDetector,
+		GuardDutyActions.actionGetFilter,
+		GuardDutyActions.actionGetFindings,
+		GuardDutyActions.actionGetFindingsStatistics,
+		GuardDutyActions.actionGetIPSet,
+		GuardDutyActions.actionGetInvestigation,
+		GuardDutyActions.actionGetInvitationsCount,
+		GuardDutyActions.actionGetMalwareProtectionPlan,
+		GuardDutyActions.actionGetMalwareScan,
+		GuardDutyActions.actionGetMalwareScanSettings,
+		GuardDutyActions.actionGetMasterAccount,
+		GuardDutyActions.actionGetMemberDetectors,
+		GuardDutyActions.actionGetMembers,
+		GuardDutyActions.actionGetOrganizationStatistics,
+		GuardDutyActions.actionGetRemainingFreeTrialDays,
+		GuardDutyActions.actionGetThreatEntitySet,
+		GuardDutyActions.actionGetThreatIntelSet,
+		GuardDutyActions.actionGetTrustedEntitySet,
+		GuardDutyActions.actionGetUsageStatistics,
+		GuardDutyActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GuardDutyActions.ACCEPT_ADMINISTRATOR_INVITATION,
-		GuardDutyActions.ACCEPT_INVITATION,
-		GuardDutyActions.ARCHIVE_FINDINGS,
-		GuardDutyActions.CREATE_DETECTOR,
-		GuardDutyActions.CREATE_FILTER,
-		GuardDutyActions.CREATE_IP_SET,
-		GuardDutyActions.CREATE_INVESTIGATION,
-		GuardDutyActions.CREATE_MALWARE_PROTECTION_PLAN,
-		GuardDutyActions.CREATE_MEMBERS,
-		GuardDutyActions.CREATE_PUBLISHING_DESTINATION,
-		GuardDutyActions.CREATE_SAMPLE_FINDINGS,
-		GuardDutyActions.CREATE_THREAT_ENTITY_SET,
-		GuardDutyActions.CREATE_THREAT_INTEL_SET,
-		GuardDutyActions.CREATE_TRUSTED_ENTITY_SET,
-		GuardDutyActions.DECLINE_INVITATIONS,
-		GuardDutyActions.DELETE_DETECTOR,
-		GuardDutyActions.DELETE_FILTER,
-		GuardDutyActions.DELETE_IP_SET,
-		GuardDutyActions.DELETE_INVITATIONS,
-		GuardDutyActions.DELETE_MALWARE_PROTECTION_PLAN,
-		GuardDutyActions.DELETE_MEMBERS,
-		GuardDutyActions.DELETE_PUBLISHING_DESTINATION,
-		GuardDutyActions.DELETE_THREAT_ENTITY_SET,
-		GuardDutyActions.DELETE_THREAT_INTEL_SET,
-		GuardDutyActions.DELETE_TRUSTED_ENTITY_SET,
-		GuardDutyActions.DISABLE_ORGANIZATION_ADMIN_ACCOUNT,
-		GuardDutyActions.DISASSOCIATE_FROM_ADMINISTRATOR_ACCOUNT,
-		GuardDutyActions.DISASSOCIATE_FROM_MASTER_ACCOUNT,
-		GuardDutyActions.DISASSOCIATE_MEMBERS,
-		GuardDutyActions.ENABLE_ORGANIZATION_ADMIN_ACCOUNT,
-		GuardDutyActions.INVITE_MEMBERS,
-		GuardDutyActions.SEND_OBJECT_MALWARE_SCAN,
-		GuardDutyActions.SEND_SECURITY_TELEMETRY,
-		GuardDutyActions.START_MALWARE_SCAN,
-		GuardDutyActions.START_MONITORING_MEMBERS,
-		GuardDutyActions.STOP_MONITORING_MEMBERS,
-		GuardDutyActions.UNARCHIVE_FINDINGS,
-		GuardDutyActions.UPDATE_DETECTOR,
-		GuardDutyActions.UPDATE_FILTER,
-		GuardDutyActions.UPDATE_FINDINGS_FEEDBACK,
-		GuardDutyActions.UPDATE_IP_SET,
-		GuardDutyActions.UPDATE_MALWARE_PROTECTION_PLAN,
-		GuardDutyActions.UPDATE_MALWARE_SCAN_SETTINGS,
-		GuardDutyActions.UPDATE_MEMBER_DETECTORS,
-		GuardDutyActions.UPDATE_ORGANIZATION_CONFIGURATION,
-		GuardDutyActions.UPDATE_PUBLISHING_DESTINATION,
-		GuardDutyActions.UPDATE_THREAT_ENTITY_SET,
-		GuardDutyActions.UPDATE_THREAT_INTEL_SET,
-		GuardDutyActions.UPDATE_TRUSTED_ENTITY_SET,
+	static readonly AllWriteActions: string[] = [
+		GuardDutyActions.AcceptAdministratorInvitation,
+		GuardDutyActions.AcceptInvitation,
+		GuardDutyActions.ArchiveFindings,
+		GuardDutyActions.CreateDetector,
+		GuardDutyActions.CreateFilter,
+		GuardDutyActions.CreateIPSet,
+		GuardDutyActions.CreateInvestigation,
+		GuardDutyActions.CreateMalwareProtectionPlan,
+		GuardDutyActions.CreateMembers,
+		GuardDutyActions.CreatePublishingDestination,
+		GuardDutyActions.CreateSampleFindings,
+		GuardDutyActions.CreateThreatEntitySet,
+		GuardDutyActions.CreateThreatIntelSet,
+		GuardDutyActions.CreateTrustedEntitySet,
+		GuardDutyActions.DeclineInvitations,
+		GuardDutyActions.DeleteDetector,
+		GuardDutyActions.DeleteFilter,
+		GuardDutyActions.DeleteIPSet,
+		GuardDutyActions.DeleteInvitations,
+		GuardDutyActions.DeleteMalwareProtectionPlan,
+		GuardDutyActions.DeleteMembers,
+		GuardDutyActions.DeletePublishingDestination,
+		GuardDutyActions.DeleteThreatEntitySet,
+		GuardDutyActions.DeleteThreatIntelSet,
+		GuardDutyActions.DeleteTrustedEntitySet,
+		GuardDutyActions.DisableOrganizationAdminAccount,
+		GuardDutyActions.DisassociateFromAdministratorAccount,
+		GuardDutyActions.DisassociateFromMasterAccount,
+		GuardDutyActions.DisassociateMembers,
+		GuardDutyActions.EnableOrganizationAdminAccount,
+		GuardDutyActions.InviteMembers,
+		GuardDutyActions.SendObjectMalwareScan,
+		GuardDutyActions.SendSecurityTelemetry,
+		GuardDutyActions.StartMalwareScan,
+		GuardDutyActions.StartMonitoringMembers,
+		GuardDutyActions.StopMonitoringMembers,
+		GuardDutyActions.UnarchiveFindings,
+		GuardDutyActions.UpdateDetector,
+		GuardDutyActions.UpdateFilter,
+		GuardDutyActions.UpdateFindingsFeedback,
+		GuardDutyActions.UpdateIPSet,
+		GuardDutyActions.UpdateMalwareProtectionPlan,
+		GuardDutyActions.UpdateMalwareScanSettings,
+		GuardDutyActions.UpdateMemberDetectors,
+		GuardDutyActions.UpdateOrganizationConfiguration,
+		GuardDutyActions.UpdatePublishingDestination,
+		GuardDutyActions.UpdateThreatEntitySet,
+		GuardDutyActions.UpdateThreatIntelSet,
+		GuardDutyActions.UpdateTrustedEntitySet,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GuardDutyActions.LIST_COVERAGE,
-		GuardDutyActions.LIST_DETECTORS,
-		GuardDutyActions.LIST_FILTERS,
-		GuardDutyActions.LIST_FINDINGS,
-		GuardDutyActions.LIST_IP_SETS,
-		GuardDutyActions.LIST_INVESTIGATIONS,
-		GuardDutyActions.LIST_INVITATIONS,
-		GuardDutyActions.LIST_MALWARE_PROTECTION_PLANS,
-		GuardDutyActions.LIST_MALWARE_SCANS,
-		GuardDutyActions.LIST_MEMBERS,
-		GuardDutyActions.LIST_ORGANIZATION_ADMIN_ACCOUNTS,
-		GuardDutyActions.LIST_PUBLISHING_DESTINATIONS,
-		GuardDutyActions.LIST_THREAT_ENTITY_SETS,
-		GuardDutyActions.LIST_THREAT_INTEL_SETS,
-		GuardDutyActions.LIST_TRUSTED_ENTITY_SETS,
+	static readonly AllListActions: string[] = [
+		GuardDutyActions.ListCoverage,
+		GuardDutyActions.ListDetectors,
+		GuardDutyActions.ListFilters,
+		GuardDutyActions.ListFindings,
+		GuardDutyActions.ListIPSets,
+		GuardDutyActions.ListInvestigations,
+		GuardDutyActions.ListInvitations,
+		GuardDutyActions.ListMalwareProtectionPlans,
+		GuardDutyActions.ListMalwareScans,
+		GuardDutyActions.ListMembers,
+		GuardDutyActions.ListOrganizationAdminAccounts,
+		GuardDutyActions.ListPublishingDestinations,
+		GuardDutyActions.ListThreatEntitySets,
+		GuardDutyActions.ListThreatIntelSets,
+		GuardDutyActions.ListTrustedEntitySets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GuardDutyActions.TAG_RESOURCE,
-		GuardDutyActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		GuardDutyActions.TagResource,
+		GuardDutyActions.UntagResource,
 	];
 }
 
-const DetectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)$",
-);
-const FilterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/filter/(?<filterName>[^:/?]+)$",
-);
-const IpsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/ipset/(?<ipSetId>[^:/?]+)$",
-);
-const MalwareprotectionplanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):malware-protection-plan/(?<malwareProtectionPlanId>[^:/?]+)$",
-);
-const PublishingDestinationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/publishingdestination/(?<publishingDestinationId>[^:/?]+)$",
-);
-const ThreatentitysetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/threatentityset/(?<threatEntitySetId>[^:/?]+)$",
-);
-const ThreatintelsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/threatintelset/(?<threatIntelSetId>[^:/?]+)$",
-);
-const TrustedentitysetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector/(?<detectorId>[^:/?]+)/trustedentityset/(?<trustedEntitySetId>[^:/?]+)$",
-);
+/**
+ * Properties for building a detector ARN.
+ */
+export interface GuardDutyDetectorArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a detector ARN.
+ */
+export interface GuardDutyDetectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+}
+
+/**
+ * Properties for building a filter ARN.
+ */
+export interface GuardDutyFilterArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The FilterName component of the ARN. */
+	readonly filterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a filter ARN.
+ */
+export interface GuardDutyFilterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The FilterName component. */
+	readonly filterName: string;
+}
+
+/**
+ * Properties for building a ipset ARN.
+ */
+export interface GuardDutyIpsetArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The IPSetId component of the ARN. */
+	readonly ipSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipset ARN.
+ */
+export interface GuardDutyIpsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The IPSetId component. */
+	readonly ipSetId: string;
+}
+
+/**
+ * Properties for building a malwareprotectionplan ARN.
+ */
+export interface GuardDutyMalwareprotectionplanArnProps {
+	/** The MalwareProtectionPlanId component of the ARN. */
+	readonly malwareProtectionPlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a malwareprotectionplan ARN.
+ */
+export interface GuardDutyMalwareprotectionplanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MalwareProtectionPlanId component. */
+	readonly malwareProtectionPlanId: string;
+}
+
+/**
+ * Properties for building a publishingDestination ARN.
+ */
+export interface GuardDutyPublishingDestinationArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The PublishingDestinationId component of the ARN. */
+	readonly publishingDestinationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a publishingDestination ARN.
+ */
+export interface GuardDutyPublishingDestinationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The PublishingDestinationId component. */
+	readonly publishingDestinationId: string;
+}
+
+/**
+ * Properties for building a threatentityset ARN.
+ */
+export interface GuardDutyThreatentitysetArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The ThreatEntitySetId component of the ARN. */
+	readonly threatEntitySetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a threatentityset ARN.
+ */
+export interface GuardDutyThreatentitysetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The ThreatEntitySetId component. */
+	readonly threatEntitySetId: string;
+}
+
+/**
+ * Properties for building a threatintelset ARN.
+ */
+export interface GuardDutyThreatintelsetArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The ThreatIntelSetId component of the ARN. */
+	readonly threatIntelSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a threatintelset ARN.
+ */
+export interface GuardDutyThreatintelsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The ThreatIntelSetId component. */
+	readonly threatIntelSetId: string;
+}
+
+/**
+ * Properties for building a trustedentityset ARN.
+ */
+export interface GuardDutyTrustedentitysetArnProps {
+	/** The DetectorId component of the ARN. */
+	readonly detectorId: string;
+	/** The TrustedEntitySetId component of the ARN. */
+	readonly trustedEntitySetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trustedentityset ARN.
+ */
+export interface GuardDutyTrustedentitysetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DetectorId component. */
+	readonly detectorId: string;
+	/** The TrustedEntitySetId component. */
+	readonly trustedEntitySetId: string;
+}
+
+const DetectorArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)$/;
+const FilterArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/filter\/(?<filterName>[^:/?]+)$/;
+const IpsetArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/ipset\/(?<ipSetId>[^:/?]+)$/;
+const MalwareprotectionplanArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):malware-protection-plan\/(?<malwareProtectionPlanId>[^:/?]+)$/;
+const PublishingDestinationArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/publishingdestination\/(?<publishingDestinationId>[^:/?]+)$/;
+const ThreatentitysetArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/threatentityset\/(?<threatEntitySetId>[^:/?]+)$/;
+const ThreatintelsetArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/threatintelset\/(?<threatIntelSetId>[^:/?]+)$/;
+const TrustedentitysetArnRegex =
+	/^arn:(?<partition>[^:]+):guardduty:(?<region>[^:]*):(?<account>[^:]*):detector\/(?<detectorId>[^:/?]+)\/trustedentityset\/(?<trustedEntitySetId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for guardduty resources.
@@ -360,16 +599,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the detector resource.
 	 */
-	static detector(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static detector(props: GuardDutyDetectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}`;
 	}
 
@@ -384,12 +614,7 @@ export class GuardDutyResources {
 	 * Parses a detector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDetectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-	} {
+	static parseDetectorArn(arn: string): GuardDutyDetectorArnComponents {
 		const match = DetectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid detector ARN: ${arn}`);
@@ -405,18 +630,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the filter resource.
 	 */
-	static filter(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The FilterName component of the ARN. */
-		readonly filterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static filter(props: GuardDutyFilterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/filter/${props.filterName}`;
 	}
 
@@ -431,13 +645,7 @@ export class GuardDutyResources {
 	 * Parses a filter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFilterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		filterName: string;
-	} {
+	static parseFilterArn(arn: string): GuardDutyFilterArnComponents {
 		const match = FilterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid filter ARN: ${arn}`);
@@ -454,18 +662,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the ipset resource.
 	 */
-	static ipset(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The IPSetId component of the ARN. */
-		readonly ipSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipset(props: GuardDutyIpsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/ipset/${props.ipSetId}`;
 	}
 
@@ -480,13 +677,7 @@ export class GuardDutyResources {
 	 * Parses a ipset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpsetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		ipSetId: string;
-	} {
+	static parseIpsetArn(arn: string): GuardDutyIpsetArnComponents {
 		const match = IpsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipset ARN: ${arn}`);
@@ -503,16 +694,9 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the malwareprotectionplan resource.
 	 */
-	static malwareprotectionplan(props: {
-		/** The MalwareProtectionPlanId component of the ARN. */
-		readonly malwareProtectionPlanId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static malwareprotectionplan(
+		props: GuardDutyMalwareprotectionplanArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:malware-protection-plan/${props.malwareProtectionPlanId}`;
 	}
 
@@ -527,12 +711,9 @@ export class GuardDutyResources {
 	 * Parses a malwareprotectionplan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMalwareprotectionplanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		malwareProtectionPlanId: string;
-	} {
+	static parseMalwareprotectionplanArn(
+		arn: string,
+	): GuardDutyMalwareprotectionplanArnComponents {
 		const match = MalwareprotectionplanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid malwareprotectionplan ARN: ${arn}`);
@@ -548,18 +729,9 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the publishingDestination resource.
 	 */
-	static publishingDestination(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The PublishingDestinationId component of the ARN. */
-		readonly publishingDestinationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static publishingDestination(
+		props: GuardDutyPublishingDestinationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/publishingdestination/${props.publishingDestinationId}`;
 	}
 
@@ -574,13 +746,9 @@ export class GuardDutyResources {
 	 * Parses a publishingDestination ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePublishingDestinationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		publishingDestinationId: string;
-	} {
+	static parsePublishingDestinationArn(
+		arn: string,
+	): GuardDutyPublishingDestinationArnComponents {
 		const match = PublishingDestinationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid publishingDestination ARN: ${arn}`);
@@ -597,18 +765,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the threatentityset resource.
 	 */
-	static threatentityset(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The ThreatEntitySetId component of the ARN. */
-		readonly threatEntitySetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static threatentityset(props: GuardDutyThreatentitysetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/threatentityset/${props.threatEntitySetId}`;
 	}
 
@@ -623,13 +780,9 @@ export class GuardDutyResources {
 	 * Parses a threatentityset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThreatentitysetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		threatEntitySetId: string;
-	} {
+	static parseThreatentitysetArn(
+		arn: string,
+	): GuardDutyThreatentitysetArnComponents {
 		const match = ThreatentitysetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid threatentityset ARN: ${arn}`);
@@ -646,18 +799,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the threatintelset resource.
 	 */
-	static threatintelset(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The ThreatIntelSetId component of the ARN. */
-		readonly threatIntelSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static threatintelset(props: GuardDutyThreatintelsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/threatintelset/${props.threatIntelSetId}`;
 	}
 
@@ -672,13 +814,9 @@ export class GuardDutyResources {
 	 * Parses a threatintelset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThreatintelsetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		threatIntelSetId: string;
-	} {
+	static parseThreatintelsetArn(
+		arn: string,
+	): GuardDutyThreatintelsetArnComponents {
 		const match = ThreatintelsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid threatintelset ARN: ${arn}`);
@@ -695,18 +833,7 @@ export class GuardDutyResources {
 	/**
 	 * Builds an ARN for the trustedentityset resource.
 	 */
-	static trustedentityset(props: {
-		/** The DetectorId component of the ARN. */
-		readonly detectorId: string;
-		/** The TrustedEntitySetId component of the ARN. */
-		readonly trustedEntitySetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trustedentityset(props: GuardDutyTrustedentitysetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:guardduty:${props.region ?? "*"}:${props.account ?? "*"}:detector/${props.detectorId}/trustedentityset/${props.trustedEntitySetId}`;
 	}
 
@@ -721,13 +848,9 @@ export class GuardDutyResources {
 	 * Parses a trustedentityset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrustedentitysetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		detectorId: string;
-		trustedEntitySetId: string;
-	} {
+	static parseTrustedentitysetArn(
+		arn: string,
+	): GuardDutyTrustedentitysetArnComponents {
 		const match = TrustedentitysetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trustedentityset ARN: ${arn}`);
@@ -747,316 +870,312 @@ export class GuardDutyResources {
  */
 export class GuardDutyOperations {
 	/** IAM actions required for the AcceptAdministratorInvitation API call. */
-	static readonly ACCEPT_ADMINISTRATOR_INVITATION: string[] = [
+	static readonly AcceptAdministratorInvitation: string[] = [
 		"guardduty:AcceptAdministratorInvitation",
 	];
 	/** IAM actions required for the AcceptInvitation API call. */
-	static readonly ACCEPT_INVITATION: string[] = ["guardduty:AcceptInvitation"];
+	static readonly AcceptInvitation: string[] = ["guardduty:AcceptInvitation"];
 	/** IAM actions required for the ArchiveFindings API call. */
-	static readonly ARCHIVE_FINDINGS: string[] = ["guardduty:ArchiveFindings"];
+	static readonly ArchiveFindings: string[] = ["guardduty:ArchiveFindings"];
 	/** IAM actions required for the CreateDetector API call. */
-	static readonly CREATE_DETECTOR: string[] = [
+	static readonly CreateDetector: string[] = [
 		"guardduty:CreateDetector",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateFilter API call. */
-	static readonly CREATE_FILTER: string[] = [
+	static readonly CreateFilter: string[] = [
 		"guardduty:CreateFilter",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateIPSet API call. */
-	static readonly CREATE_IP_SET: string[] = [
+	static readonly CreateIPSet: string[] = [
 		"guardduty:CreateIPSet",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateInvestigation API call. */
-	static readonly CREATE_INVESTIGATION: string[] = [
+	static readonly CreateInvestigation: string[] = [
 		"guardduty:CreateInvestigation",
 	];
 	/** IAM actions required for the CreateMalwareProtectionPlan API call. */
-	static readonly CREATE_MALWARE_PROTECTION_PLAN: string[] = [
+	static readonly CreateMalwareProtectionPlan: string[] = [
 		"guardduty:CreateMalwareProtectionPlan",
 		"iam:PassRole",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateMembers API call. */
-	static readonly CREATE_MEMBERS: string[] = ["guardduty:CreateMembers"];
+	static readonly CreateMembers: string[] = ["guardduty:CreateMembers"];
 	/** IAM actions required for the CreatePublishingDestination API call. */
-	static readonly CREATE_PUBLISHING_DESTINATION: string[] = [
+	static readonly CreatePublishingDestination: string[] = [
 		"guardduty:CreatePublishingDestination",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateSampleFindings API call. */
-	static readonly CREATE_SAMPLE_FINDINGS: string[] = [
+	static readonly CreateSampleFindings: string[] = [
 		"guardduty:CreateSampleFindings",
 	];
 	/** IAM actions required for the CreateThreatEntitySet API call. */
-	static readonly CREATE_THREAT_ENTITY_SET: string[] = [
+	static readonly CreateThreatEntitySet: string[] = [
 		"guardduty:CreateThreatEntitySet",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateThreatIntelSet API call. */
-	static readonly CREATE_THREAT_INTEL_SET: string[] = [
+	static readonly CreateThreatIntelSet: string[] = [
 		"guardduty:CreateThreatIntelSet",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the CreateTrustedEntitySet API call. */
-	static readonly CREATE_TRUSTED_ENTITY_SET: string[] = [
+	static readonly CreateTrustedEntitySet: string[] = [
 		"guardduty:CreateTrustedEntitySet",
 		"guardduty:TagResource",
 	];
 	/** IAM actions required for the DeclineInvitations API call. */
-	static readonly DECLINE_INVITATIONS: string[] = [
+	static readonly DeclineInvitations: string[] = [
 		"guardduty:DeclineInvitations",
 	];
 	/** IAM actions required for the DeleteDetector API call. */
-	static readonly DELETE_DETECTOR: string[] = ["guardduty:DeleteDetector"];
+	static readonly DeleteDetector: string[] = ["guardduty:DeleteDetector"];
 	/** IAM actions required for the DeleteFilter API call. */
-	static readonly DELETE_FILTER: string[] = ["guardduty:DeleteFilter"];
+	static readonly DeleteFilter: string[] = ["guardduty:DeleteFilter"];
 	/** IAM actions required for the DeleteIPSet API call. */
-	static readonly DELETE_IP_SET: string[] = ["guardduty:DeleteIPSet"];
+	static readonly DeleteIPSet: string[] = ["guardduty:DeleteIPSet"];
 	/** IAM actions required for the DeleteInvitations API call. */
-	static readonly DELETE_INVITATIONS: string[] = [
-		"guardduty:DeleteInvitations",
-	];
+	static readonly DeleteInvitations: string[] = ["guardduty:DeleteInvitations"];
 	/** IAM actions required for the DeleteMalwareProtectionPlan API call. */
-	static readonly DELETE_MALWARE_PROTECTION_PLAN: string[] = [
+	static readonly DeleteMalwareProtectionPlan: string[] = [
 		"guardduty:DeleteMalwareProtectionPlan",
 	];
 	/** IAM actions required for the DeleteMembers API call. */
-	static readonly DELETE_MEMBERS: string[] = ["guardduty:DeleteMembers"];
+	static readonly DeleteMembers: string[] = ["guardduty:DeleteMembers"];
 	/** IAM actions required for the DeletePublishingDestination API call. */
-	static readonly DELETE_PUBLISHING_DESTINATION: string[] = [
+	static readonly DeletePublishingDestination: string[] = [
 		"guardduty:DeletePublishingDestination",
 	];
 	/** IAM actions required for the DeleteThreatEntitySet API call. */
-	static readonly DELETE_THREAT_ENTITY_SET: string[] = [
+	static readonly DeleteThreatEntitySet: string[] = [
 		"guardduty:DeleteThreatEntitySet",
 	];
 	/** IAM actions required for the DeleteThreatIntelSet API call. */
-	static readonly DELETE_THREAT_INTEL_SET: string[] = [
+	static readonly DeleteThreatIntelSet: string[] = [
 		"guardduty:DeleteThreatIntelSet",
 	];
 	/** IAM actions required for the DeleteTrustedEntitySet API call. */
-	static readonly DELETE_TRUSTED_ENTITY_SET: string[] = [
+	static readonly DeleteTrustedEntitySet: string[] = [
 		"guardduty:DeleteTrustedEntitySet",
 	];
 	/** IAM actions required for the DescribeMalwareScans API call. */
-	static readonly DESCRIBE_MALWARE_SCANS: string[] = [
+	static readonly DescribeMalwareScans: string[] = [
 		"guardduty:DescribeMalwareScans",
 	];
 	/** IAM actions required for the DescribeOrganizationConfiguration API call. */
-	static readonly DESCRIBE_ORGANIZATION_CONFIGURATION: string[] = [
+	static readonly DescribeOrganizationConfiguration: string[] = [
 		"guardduty:DescribeOrganizationConfiguration",
 	];
 	/** IAM actions required for the DescribePublishingDestination API call. */
-	static readonly DESCRIBE_PUBLISHING_DESTINATION: string[] = [
+	static readonly DescribePublishingDestination: string[] = [
 		"guardduty:DescribePublishingDestination",
 	];
 	/** IAM actions required for the DisableOrganizationAdminAccount API call. */
-	static readonly DISABLE_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly DisableOrganizationAdminAccount: string[] = [
 		"guardduty:DisableOrganizationAdminAccount",
 	];
 	/** IAM actions required for the DisassociateFromAdministratorAccount API call. */
-	static readonly DISASSOCIATE_FROM_ADMINISTRATOR_ACCOUNT: string[] = [
+	static readonly DisassociateFromAdministratorAccount: string[] = [
 		"guardduty:DisassociateFromAdministratorAccount",
 	];
 	/** IAM actions required for the DisassociateFromMasterAccount API call. */
-	static readonly DISASSOCIATE_FROM_MASTER_ACCOUNT: string[] = [
+	static readonly DisassociateFromMasterAccount: string[] = [
 		"guardduty:DisassociateFromMasterAccount",
 	];
 	/** IAM actions required for the DisassociateMembers API call. */
-	static readonly DISASSOCIATE_MEMBERS: string[] = [
+	static readonly DisassociateMembers: string[] = [
 		"guardduty:DisassociateMembers",
 	];
 	/** IAM actions required for the EnableOrganizationAdminAccount API call. */
-	static readonly ENABLE_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly EnableOrganizationAdminAccount: string[] = [
 		"guardduty:EnableOrganizationAdminAccount",
 	];
 	/** IAM actions required for the GetAdministratorAccount API call. */
-	static readonly GET_ADMINISTRATOR_ACCOUNT: string[] = [
+	static readonly opGetAdministratorAccount: string[] = [
 		"guardduty:GetAdministratorAccount",
 	];
 	/** IAM actions required for the GetCoverageStatistics API call. */
-	static readonly GET_COVERAGE_STATISTICS: string[] = [
+	static readonly opGetCoverageStatistics: string[] = [
 		"guardduty:GetCoverageStatistics",
 	];
 	/** IAM actions required for the GetDetector API call. */
-	static readonly GET_DETECTOR: string[] = ["guardduty:GetDetector"];
+	static readonly opGetDetector: string[] = ["guardduty:GetDetector"];
 	/** IAM actions required for the GetFilter API call. */
-	static readonly GET_FILTER: string[] = ["guardduty:GetFilter"];
+	static readonly opGetFilter: string[] = ["guardduty:GetFilter"];
 	/** IAM actions required for the GetFindings API call. */
-	static readonly GET_FINDINGS: string[] = ["guardduty:GetFindings"];
+	static readonly opGetFindings: string[] = ["guardduty:GetFindings"];
 	/** IAM actions required for the GetFindingsStatistics API call. */
-	static readonly GET_FINDINGS_STATISTICS: string[] = [
+	static readonly opGetFindingsStatistics: string[] = [
 		"guardduty:GetFindingsStatistics",
 	];
 	/** IAM actions required for the GetIPSet API call. */
-	static readonly GET_IP_SET: string[] = ["guardduty:GetIPSet"];
+	static readonly opGetIPSet: string[] = ["guardduty:GetIPSet"];
 	/** IAM actions required for the GetInvestigation API call. */
-	static readonly GET_INVESTIGATION: string[] = ["guardduty:GetInvestigation"];
+	static readonly opGetInvestigation: string[] = ["guardduty:GetInvestigation"];
 	/** IAM actions required for the GetInvitationsCount API call. */
-	static readonly GET_INVITATIONS_COUNT: string[] = [
+	static readonly opGetInvitationsCount: string[] = [
 		"guardduty:GetInvitationsCount",
 	];
 	/** IAM actions required for the GetMalwareProtectionPlan API call. */
-	static readonly GET_MALWARE_PROTECTION_PLAN: string[] = [
+	static readonly opGetMalwareProtectionPlan: string[] = [
 		"guardduty:GetMalwareProtectionPlan",
 	];
 	/** IAM actions required for the GetMalwareScan API call. */
-	static readonly GET_MALWARE_SCAN: string[] = ["guardduty:GetMalwareScan"];
+	static readonly opGetMalwareScan: string[] = ["guardduty:GetMalwareScan"];
 	/** IAM actions required for the GetMalwareScanSettings API call. */
-	static readonly GET_MALWARE_SCAN_SETTINGS: string[] = [
+	static readonly opGetMalwareScanSettings: string[] = [
 		"guardduty:GetMalwareScanSettings",
 	];
 	/** IAM actions required for the GetMasterAccount API call. */
-	static readonly GET_MASTER_ACCOUNT: string[] = ["guardduty:GetMasterAccount"];
+	static readonly opGetMasterAccount: string[] = ["guardduty:GetMasterAccount"];
 	/** IAM actions required for the GetMemberDetectors API call. */
-	static readonly GET_MEMBER_DETECTORS: string[] = [
+	static readonly opGetMemberDetectors: string[] = [
 		"guardduty:GetMemberDetectors",
 	];
 	/** IAM actions required for the GetMembers API call. */
-	static readonly GET_MEMBERS: string[] = ["guardduty:GetMembers"];
+	static readonly opGetMembers: string[] = ["guardduty:GetMembers"];
 	/** IAM actions required for the GetOrganizationStatistics API call. */
-	static readonly GET_ORGANIZATION_STATISTICS: string[] = [
+	static readonly opGetOrganizationStatistics: string[] = [
 		"guardduty:GetOrganizationStatistics",
 	];
 	/** IAM actions required for the GetRemainingFreeTrialDays API call. */
-	static readonly GET_REMAINING_FREE_TRIAL_DAYS: string[] = [
+	static readonly opGetRemainingFreeTrialDays: string[] = [
 		"guardduty:GetRemainingFreeTrialDays",
 	];
 	/** IAM actions required for the GetThreatEntitySet API call. */
-	static readonly GET_THREAT_ENTITY_SET: string[] = [
+	static readonly opGetThreatEntitySet: string[] = [
 		"guardduty:GetThreatEntitySet",
 	];
 	/** IAM actions required for the GetThreatIntelSet API call. */
-	static readonly GET_THREAT_INTEL_SET: string[] = [
+	static readonly opGetThreatIntelSet: string[] = [
 		"guardduty:GetThreatIntelSet",
 	];
 	/** IAM actions required for the GetTrustedEntitySet API call. */
-	static readonly GET_TRUSTED_ENTITY_SET: string[] = [
+	static readonly opGetTrustedEntitySet: string[] = [
 		"guardduty:GetTrustedEntitySet",
 	];
 	/** IAM actions required for the GetUsageStatistics API call. */
-	static readonly GET_USAGE_STATISTICS: string[] = [
+	static readonly opGetUsageStatistics: string[] = [
 		"guardduty:GetUsageStatistics",
 	];
 	/** IAM actions required for the InviteMembers API call. */
-	static readonly INVITE_MEMBERS: string[] = ["guardduty:InviteMembers"];
+	static readonly InviteMembers: string[] = ["guardduty:InviteMembers"];
 	/** IAM actions required for the ListCoverage API call. */
-	static readonly LIST_COVERAGE: string[] = ["guardduty:ListCoverage"];
+	static readonly ListCoverage: string[] = ["guardduty:ListCoverage"];
 	/** IAM actions required for the ListDetectors API call. */
-	static readonly LIST_DETECTORS: string[] = ["guardduty:ListDetectors"];
+	static readonly ListDetectors: string[] = ["guardduty:ListDetectors"];
 	/** IAM actions required for the ListFilters API call. */
-	static readonly LIST_FILTERS: string[] = ["guardduty:ListFilters"];
+	static readonly ListFilters: string[] = ["guardduty:ListFilters"];
 	/** IAM actions required for the ListFindings API call. */
-	static readonly LIST_FINDINGS: string[] = ["guardduty:ListFindings"];
+	static readonly ListFindings: string[] = ["guardduty:ListFindings"];
 	/** IAM actions required for the ListIPSets API call. */
-	static readonly LIST_IP_SETS: string[] = ["guardduty:ListIPSets"];
+	static readonly ListIPSets: string[] = ["guardduty:ListIPSets"];
 	/** IAM actions required for the ListInvestigations API call. */
-	static readonly LIST_INVESTIGATIONS: string[] = [
+	static readonly ListInvestigations: string[] = [
 		"guardduty:ListInvestigations",
 	];
 	/** IAM actions required for the ListInvitations API call. */
-	static readonly LIST_INVITATIONS: string[] = ["guardduty:ListInvitations"];
+	static readonly ListInvitations: string[] = ["guardduty:ListInvitations"];
 	/** IAM actions required for the ListMalwareProtectionPlans API call. */
-	static readonly LIST_MALWARE_PROTECTION_PLANS: string[] = [
+	static readonly ListMalwareProtectionPlans: string[] = [
 		"guardduty:ListMalwareProtectionPlans",
 	];
 	/** IAM actions required for the ListMalwareScans API call. */
-	static readonly LIST_MALWARE_SCANS: string[] = ["guardduty:ListMalwareScans"];
+	static readonly ListMalwareScans: string[] = ["guardduty:ListMalwareScans"];
 	/** IAM actions required for the ListMembers API call. */
-	static readonly LIST_MEMBERS: string[] = ["guardduty:ListMembers"];
+	static readonly ListMembers: string[] = ["guardduty:ListMembers"];
 	/** IAM actions required for the ListOrganizationAdminAccounts API call. */
-	static readonly LIST_ORGANIZATION_ADMIN_ACCOUNTS: string[] = [
+	static readonly ListOrganizationAdminAccounts: string[] = [
 		"guardduty:ListOrganizationAdminAccounts",
 	];
 	/** IAM actions required for the ListPublishingDestinations API call. */
-	static readonly LIST_PUBLISHING_DESTINATIONS: string[] = [
+	static readonly ListPublishingDestinations: string[] = [
 		"guardduty:ListPublishingDestinations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"guardduty:ListTagsForResource",
 	];
 	/** IAM actions required for the ListThreatEntitySets API call. */
-	static readonly LIST_THREAT_ENTITY_SETS: string[] = [
+	static readonly ListThreatEntitySets: string[] = [
 		"guardduty:ListThreatEntitySets",
 	];
 	/** IAM actions required for the ListThreatIntelSets API call. */
-	static readonly LIST_THREAT_INTEL_SETS: string[] = [
+	static readonly ListThreatIntelSets: string[] = [
 		"guardduty:ListThreatIntelSets",
 	];
 	/** IAM actions required for the ListTrustedEntitySets API call. */
-	static readonly LIST_TRUSTED_ENTITY_SETS: string[] = [
+	static readonly ListTrustedEntitySets: string[] = [
 		"guardduty:ListTrustedEntitySets",
 	];
 	/** IAM actions required for the SendObjectMalwareScan API call. */
-	static readonly SEND_OBJECT_MALWARE_SCAN: string[] = [
+	static readonly SendObjectMalwareScan: string[] = [
 		"guardduty:SendObjectMalwareScan",
 	];
 	/** IAM actions required for the StartMalwareScan API call. */
-	static readonly START_MALWARE_SCAN: string[] = [
+	static readonly StartMalwareScan: string[] = [
 		"iam:PassRole",
 		"guardduty:StartMalwareScan",
 	];
 	/** IAM actions required for the StartMonitoringMembers API call. */
-	static readonly START_MONITORING_MEMBERS: string[] = [
+	static readonly StartMonitoringMembers: string[] = [
 		"guardduty:StartMonitoringMembers",
 	];
 	/** IAM actions required for the StopMonitoringMembers API call. */
-	static readonly STOP_MONITORING_MEMBERS: string[] = [
+	static readonly StopMonitoringMembers: string[] = [
 		"guardduty:StopMonitoringMembers",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["guardduty:TagResource"];
+	static readonly TagResource: string[] = ["guardduty:TagResource"];
 	/** IAM actions required for the UnarchiveFindings API call. */
-	static readonly UNARCHIVE_FINDINGS: string[] = [
-		"guardduty:UnarchiveFindings",
-	];
+	static readonly UnarchiveFindings: string[] = ["guardduty:UnarchiveFindings"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["guardduty:UntagResource"];
+	static readonly UntagResource: string[] = ["guardduty:UntagResource"];
 	/** IAM actions required for the UpdateDetector API call. */
-	static readonly UPDATE_DETECTOR: string[] = ["guardduty:UpdateDetector"];
+	static readonly UpdateDetector: string[] = ["guardduty:UpdateDetector"];
 	/** IAM actions required for the UpdateFilter API call. */
-	static readonly UPDATE_FILTER: string[] = ["guardduty:UpdateFilter"];
+	static readonly UpdateFilter: string[] = ["guardduty:UpdateFilter"];
 	/** IAM actions required for the UpdateFindingsFeedback API call. */
-	static readonly UPDATE_FINDINGS_FEEDBACK: string[] = [
+	static readonly UpdateFindingsFeedback: string[] = [
 		"guardduty:UpdateFindingsFeedback",
 	];
 	/** IAM actions required for the UpdateIPSet API call. */
-	static readonly UPDATE_IP_SET: string[] = ["guardduty:UpdateIPSet"];
+	static readonly UpdateIPSet: string[] = ["guardduty:UpdateIPSet"];
 	/** IAM actions required for the UpdateMalwareProtectionPlan API call. */
-	static readonly UPDATE_MALWARE_PROTECTION_PLAN: string[] = [
+	static readonly UpdateMalwareProtectionPlan: string[] = [
 		"iam:PassRole",
 		"guardduty:UpdateMalwareProtectionPlan",
 	];
 	/** IAM actions required for the UpdateMalwareScanSettings API call. */
-	static readonly UPDATE_MALWARE_SCAN_SETTINGS: string[] = [
+	static readonly UpdateMalwareScanSettings: string[] = [
 		"guardduty:UpdateMalwareScanSettings",
 	];
 	/** IAM actions required for the UpdateMemberDetectors API call. */
-	static readonly UPDATE_MEMBER_DETECTORS: string[] = [
+	static readonly UpdateMemberDetectors: string[] = [
 		"guardduty:UpdateMemberDetectors",
 	];
 	/** IAM actions required for the UpdateOrganizationConfiguration API call. */
-	static readonly UPDATE_ORGANIZATION_CONFIGURATION: string[] = [
+	static readonly UpdateOrganizationConfiguration: string[] = [
 		"guardduty:UpdateOrganizationConfiguration",
 	];
 	/** IAM actions required for the UpdatePublishingDestination API call. */
-	static readonly UPDATE_PUBLISHING_DESTINATION: string[] = [
+	static readonly UpdatePublishingDestination: string[] = [
 		"guardduty:UpdatePublishingDestination",
 	];
 	/** IAM actions required for the UpdateThreatEntitySet API call. */
-	static readonly UPDATE_THREAT_ENTITY_SET: string[] = [
+	static readonly UpdateThreatEntitySet: string[] = [
 		"guardduty:UpdateThreatEntitySet",
 	];
 	/** IAM actions required for the UpdateThreatIntelSet API call. */
-	static readonly UPDATE_THREAT_INTEL_SET: string[] = [
+	static readonly UpdateThreatIntelSet: string[] = [
 		"guardduty:UpdateThreatIntelSet",
 	];
 	/** IAM actions required for the UpdateTrustedEntitySet API call. */
-	static readonly UPDATE_TRUSTED_ENTITY_SET: string[] = [
+	static readonly UpdateTrustedEntitySet: string[] = [
 		"guardduty:UpdateTrustedEntitySet",
 	];
 }
@@ -1066,64 +1185,64 @@ export class GuardDutyOperations {
  */
 export class GuardDutyConditions {
 	/** Condition keys applicable to the CreateDetector action. */
-	static readonly CREATE_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateDetectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFilter action. */
-	static readonly CREATE_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateFilterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIPSet action. */
-	static readonly CREATE_IP_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateIPSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMalwareProtectionPlan action. */
-	static readonly CREATE_MALWARE_PROTECTION_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreateMalwareProtectionPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePublishingDestination action. */
-	static readonly CREATE_PUBLISHING_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly CreatePublishingDestinationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateThreatEntitySet action. */
-	static readonly CREATE_THREAT_ENTITY_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateThreatEntitySetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateThreatIntelSet action. */
-	static readonly CREATE_THREAT_INTEL_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateThreatIntelSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrustedEntitySet action. */
-	static readonly CREATE_TRUSTED_ENTITY_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateTrustedEntitySetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,201 +13,253 @@ export class KMSActions {
 	static readonly SERVICE_PREFIX = "kms";
 
 	/** [Write] kms:CancelKeyDeletion */
-	static readonly CANCEL_KEY_DELETION = "kms:CancelKeyDeletion";
+	static readonly CancelKeyDeletion = "kms:CancelKeyDeletion";
 	/** [Write] kms:ConnectCustomKeyStore */
-	static readonly CONNECT_CUSTOM_KEY_STORE = "kms:ConnectCustomKeyStore";
+	static readonly ConnectCustomKeyStore = "kms:ConnectCustomKeyStore";
 	/** [Write] kms:CreateAlias */
-	static readonly CREATE_ALIAS = "kms:CreateAlias";
+	static readonly CreateAlias = "kms:CreateAlias";
 	/** [Write] kms:CreateCustomKeyStore */
-	static readonly CREATE_CUSTOM_KEY_STORE = "kms:CreateCustomKeyStore";
+	static readonly CreateCustomKeyStore = "kms:CreateCustomKeyStore";
 	/** [PermissionManagement] kms:CreateGrant */
-	static readonly CREATE_GRANT = "kms:CreateGrant";
+	static readonly CreateGrant = "kms:CreateGrant";
 	/** [Write] kms:CreateKey */
-	static readonly CREATE_KEY = "kms:CreateKey";
+	static readonly CreateKey = "kms:CreateKey";
 	/** [Write] kms:Decrypt */
-	static readonly DECRYPT = "kms:Decrypt";
+	static readonly Decrypt = "kms:Decrypt";
 	/** [Write] kms:DeleteAlias */
-	static readonly DELETE_ALIAS = "kms:DeleteAlias";
+	static readonly DeleteAlias = "kms:DeleteAlias";
 	/** [Write] kms:DeleteCustomKeyStore */
-	static readonly DELETE_CUSTOM_KEY_STORE = "kms:DeleteCustomKeyStore";
+	static readonly DeleteCustomKeyStore = "kms:DeleteCustomKeyStore";
 	/** [Write] kms:DeleteImportedKeyMaterial */
-	static readonly DELETE_IMPORTED_KEY_MATERIAL =
-		"kms:DeleteImportedKeyMaterial";
+	static readonly DeleteImportedKeyMaterial = "kms:DeleteImportedKeyMaterial";
 	/** [Write] kms:DeriveSharedSecret */
-	static readonly DERIVE_SHARED_SECRET = "kms:DeriveSharedSecret";
+	static readonly DeriveSharedSecret = "kms:DeriveSharedSecret";
 	/** [Read] kms:DescribeCustomKeyStores */
-	static readonly DESCRIBE_CUSTOM_KEY_STORES = "kms:DescribeCustomKeyStores";
+	static readonly DescribeCustomKeyStores = "kms:DescribeCustomKeyStores";
 	/** [Read] kms:DescribeKey */
-	static readonly DESCRIBE_KEY = "kms:DescribeKey";
+	static readonly DescribeKey = "kms:DescribeKey";
 	/** [Write] kms:DisableKey */
-	static readonly DISABLE_KEY = "kms:DisableKey";
+	static readonly DisableKey = "kms:DisableKey";
 	/** [Write] kms:DisableKeyRotation */
-	static readonly DISABLE_KEY_ROTATION = "kms:DisableKeyRotation";
+	static readonly DisableKeyRotation = "kms:DisableKeyRotation";
 	/** [Write] kms:DisconnectCustomKeyStore */
-	static readonly DISCONNECT_CUSTOM_KEY_STORE = "kms:DisconnectCustomKeyStore";
+	static readonly DisconnectCustomKeyStore = "kms:DisconnectCustomKeyStore";
 	/** [Write] kms:EnableKey */
-	static readonly ENABLE_KEY = "kms:EnableKey";
+	static readonly EnableKey = "kms:EnableKey";
 	/** [Write] kms:EnableKeyRotation */
-	static readonly ENABLE_KEY_ROTATION = "kms:EnableKeyRotation";
+	static readonly EnableKeyRotation = "kms:EnableKeyRotation";
 	/** [Write] kms:Encrypt */
-	static readonly ENCRYPT = "kms:Encrypt";
+	static readonly Encrypt = "kms:Encrypt";
 	/** [Write] kms:GenerateDataKey */
-	static readonly GENERATE_DATA_KEY = "kms:GenerateDataKey";
+	static readonly GenerateDataKey = "kms:GenerateDataKey";
 	/** [Write] kms:GenerateDataKeyPair */
-	static readonly GENERATE_DATA_KEY_PAIR = "kms:GenerateDataKeyPair";
+	static readonly GenerateDataKeyPair = "kms:GenerateDataKeyPair";
 	/** [Write] kms:GenerateDataKeyPairWithoutPlaintext */
-	static readonly GENERATE_DATA_KEY_PAIR_WITHOUT_PLAINTEXT =
+	static readonly GenerateDataKeyPairWithoutPlaintext =
 		"kms:GenerateDataKeyPairWithoutPlaintext";
 	/** [Write] kms:GenerateDataKeyWithoutPlaintext */
-	static readonly GENERATE_DATA_KEY_WITHOUT_PLAINTEXT =
+	static readonly GenerateDataKeyWithoutPlaintext =
 		"kms:GenerateDataKeyWithoutPlaintext";
 	/** [Write] kms:GenerateMac */
-	static readonly GENERATE_MAC = "kms:GenerateMac";
+	static readonly GenerateMac = "kms:GenerateMac";
 	/** [Write] kms:GenerateRandom */
-	static readonly GENERATE_RANDOM = "kms:GenerateRandom";
+	static readonly GenerateRandom = "kms:GenerateRandom";
 	/** [Read] kms:GetKeyLastUsage */
-	static readonly GET_KEY_LAST_USAGE = "kms:GetKeyLastUsage";
+	static readonly actionGetKeyLastUsage = "kms:GetKeyLastUsage";
 	/** [Read] kms:GetKeyPolicy */
-	static readonly GET_KEY_POLICY = "kms:GetKeyPolicy";
+	static readonly actionGetKeyPolicy = "kms:GetKeyPolicy";
 	/** [Read] kms:GetKeyRotationStatus */
-	static readonly GET_KEY_ROTATION_STATUS = "kms:GetKeyRotationStatus";
+	static readonly actionGetKeyRotationStatus = "kms:GetKeyRotationStatus";
 	/** [Read] kms:GetParametersForImport */
-	static readonly GET_PARAMETERS_FOR_IMPORT = "kms:GetParametersForImport";
+	static readonly actionGetParametersForImport = "kms:GetParametersForImport";
 	/** [Read] kms:GetPublicKey */
-	static readonly GET_PUBLIC_KEY = "kms:GetPublicKey";
+	static readonly actionGetPublicKey = "kms:GetPublicKey";
 	/** [Write] kms:ImportKeyMaterial */
-	static readonly IMPORT_KEY_MATERIAL = "kms:ImportKeyMaterial";
+	static readonly ImportKeyMaterial = "kms:ImportKeyMaterial";
 	/** [List] kms:ListAliases */
-	static readonly LIST_ALIASES = "kms:ListAliases";
+	static readonly ListAliases = "kms:ListAliases";
 	/** [List] kms:ListGrants */
-	static readonly LIST_GRANTS = "kms:ListGrants";
+	static readonly ListGrants = "kms:ListGrants";
 	/** [List] kms:ListKeyPolicies */
-	static readonly LIST_KEY_POLICIES = "kms:ListKeyPolicies";
+	static readonly ListKeyPolicies = "kms:ListKeyPolicies";
 	/** [List] kms:ListKeyRotations */
-	static readonly LIST_KEY_ROTATIONS = "kms:ListKeyRotations";
+	static readonly ListKeyRotations = "kms:ListKeyRotations";
 	/** [List] kms:ListKeys */
-	static readonly LIST_KEYS = "kms:ListKeys";
+	static readonly ListKeys = "kms:ListKeys";
 	/** [List] kms:ListResourceTags */
-	static readonly LIST_RESOURCE_TAGS = "kms:ListResourceTags";
+	static readonly ListResourceTags = "kms:ListResourceTags";
 	/** [List] kms:ListRetirableGrants */
-	static readonly LIST_RETIRABLE_GRANTS = "kms:ListRetirableGrants";
+	static readonly ListRetirableGrants = "kms:ListRetirableGrants";
 	/** [PermissionManagement] kms:PutKeyPolicy */
-	static readonly PUT_KEY_POLICY = "kms:PutKeyPolicy";
+	static readonly PutKeyPolicy = "kms:PutKeyPolicy";
 	/** [Write] kms:ReEncryptFrom */
-	static readonly RE_ENCRYPT_FROM = "kms:ReEncryptFrom";
+	static readonly ReEncryptFrom = "kms:ReEncryptFrom";
 	/** [Write] kms:ReEncryptTo */
-	static readonly RE_ENCRYPT_TO = "kms:ReEncryptTo";
+	static readonly ReEncryptTo = "kms:ReEncryptTo";
 	/** [Write] kms:ReplicateKey */
-	static readonly REPLICATE_KEY = "kms:ReplicateKey";
+	static readonly ReplicateKey = "kms:ReplicateKey";
 	/** [PermissionManagement] kms:RetireGrant */
-	static readonly RETIRE_GRANT = "kms:RetireGrant";
+	static readonly RetireGrant = "kms:RetireGrant";
 	/** [PermissionManagement] kms:RevokeGrant */
-	static readonly REVOKE_GRANT = "kms:RevokeGrant";
+	static readonly RevokeGrant = "kms:RevokeGrant";
 	/** [Write] kms:RotateKeyOnDemand */
-	static readonly ROTATE_KEY_ON_DEMAND = "kms:RotateKeyOnDemand";
+	static readonly RotateKeyOnDemand = "kms:RotateKeyOnDemand";
 	/** [Write] kms:ScheduleKeyDeletion */
-	static readonly SCHEDULE_KEY_DELETION = "kms:ScheduleKeyDeletion";
+	static readonly ScheduleKeyDeletion = "kms:ScheduleKeyDeletion";
 	/** [Write] kms:Sign */
-	static readonly SIGN = "kms:Sign";
+	static readonly Sign = "kms:Sign";
 	/** [Write] kms:SynchronizeMultiRegionKey */
-	static readonly SYNCHRONIZE_MULTI_REGION_KEY =
-		"kms:SynchronizeMultiRegionKey";
+	static readonly SynchronizeMultiRegionKey = "kms:SynchronizeMultiRegionKey";
 	/** [Tagging] kms:TagResource */
-	static readonly TAG_RESOURCE = "kms:TagResource";
+	static readonly TagResource = "kms:TagResource";
 	/** [Tagging] kms:UntagResource */
-	static readonly UNTAG_RESOURCE = "kms:UntagResource";
+	static readonly UntagResource = "kms:UntagResource";
 	/** [Write] kms:UpdateAlias */
-	static readonly UPDATE_ALIAS = "kms:UpdateAlias";
+	static readonly UpdateAlias = "kms:UpdateAlias";
 	/** [Write] kms:UpdateCustomKeyStore */
-	static readonly UPDATE_CUSTOM_KEY_STORE = "kms:UpdateCustomKeyStore";
+	static readonly UpdateCustomKeyStore = "kms:UpdateCustomKeyStore";
 	/** [Write] kms:UpdateKeyDescription */
-	static readonly UPDATE_KEY_DESCRIPTION = "kms:UpdateKeyDescription";
+	static readonly UpdateKeyDescription = "kms:UpdateKeyDescription";
 	/** [Write] kms:UpdatePrimaryRegion */
-	static readonly UPDATE_PRIMARY_REGION = "kms:UpdatePrimaryRegion";
+	static readonly UpdatePrimaryRegion = "kms:UpdatePrimaryRegion";
 	/** [Write] kms:Verify */
-	static readonly VERIFY = "kms:Verify";
+	static readonly Verify = "kms:Verify";
 	/** [Write] kms:VerifyMac */
-	static readonly VERIFY_MAC = "kms:VerifyMac";
+	static readonly VerifyMac = "kms:VerifyMac";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KMSActions.DESCRIBE_CUSTOM_KEY_STORES,
-		KMSActions.DESCRIBE_KEY,
-		KMSActions.GET_KEY_LAST_USAGE,
-		KMSActions.GET_KEY_POLICY,
-		KMSActions.GET_KEY_ROTATION_STATUS,
-		KMSActions.GET_PARAMETERS_FOR_IMPORT,
-		KMSActions.GET_PUBLIC_KEY,
+	static readonly AllReadActions: string[] = [
+		KMSActions.DescribeCustomKeyStores,
+		KMSActions.DescribeKey,
+		KMSActions.actionGetKeyLastUsage,
+		KMSActions.actionGetKeyPolicy,
+		KMSActions.actionGetKeyRotationStatus,
+		KMSActions.actionGetParametersForImport,
+		KMSActions.actionGetPublicKey,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KMSActions.CANCEL_KEY_DELETION,
-		KMSActions.CONNECT_CUSTOM_KEY_STORE,
-		KMSActions.CREATE_ALIAS,
-		KMSActions.CREATE_CUSTOM_KEY_STORE,
-		KMSActions.CREATE_KEY,
-		KMSActions.DECRYPT,
-		KMSActions.DELETE_ALIAS,
-		KMSActions.DELETE_CUSTOM_KEY_STORE,
-		KMSActions.DELETE_IMPORTED_KEY_MATERIAL,
-		KMSActions.DERIVE_SHARED_SECRET,
-		KMSActions.DISABLE_KEY,
-		KMSActions.DISABLE_KEY_ROTATION,
-		KMSActions.DISCONNECT_CUSTOM_KEY_STORE,
-		KMSActions.ENABLE_KEY,
-		KMSActions.ENABLE_KEY_ROTATION,
-		KMSActions.ENCRYPT,
-		KMSActions.GENERATE_DATA_KEY,
-		KMSActions.GENERATE_DATA_KEY_PAIR,
-		KMSActions.GENERATE_DATA_KEY_PAIR_WITHOUT_PLAINTEXT,
-		KMSActions.GENERATE_DATA_KEY_WITHOUT_PLAINTEXT,
-		KMSActions.GENERATE_MAC,
-		KMSActions.GENERATE_RANDOM,
-		KMSActions.IMPORT_KEY_MATERIAL,
-		KMSActions.RE_ENCRYPT_FROM,
-		KMSActions.RE_ENCRYPT_TO,
-		KMSActions.REPLICATE_KEY,
-		KMSActions.ROTATE_KEY_ON_DEMAND,
-		KMSActions.SCHEDULE_KEY_DELETION,
-		KMSActions.SIGN,
-		KMSActions.SYNCHRONIZE_MULTI_REGION_KEY,
-		KMSActions.UPDATE_ALIAS,
-		KMSActions.UPDATE_CUSTOM_KEY_STORE,
-		KMSActions.UPDATE_KEY_DESCRIPTION,
-		KMSActions.UPDATE_PRIMARY_REGION,
-		KMSActions.VERIFY,
-		KMSActions.VERIFY_MAC,
+	static readonly AllWriteActions: string[] = [
+		KMSActions.CancelKeyDeletion,
+		KMSActions.ConnectCustomKeyStore,
+		KMSActions.CreateAlias,
+		KMSActions.CreateCustomKeyStore,
+		KMSActions.CreateKey,
+		KMSActions.Decrypt,
+		KMSActions.DeleteAlias,
+		KMSActions.DeleteCustomKeyStore,
+		KMSActions.DeleteImportedKeyMaterial,
+		KMSActions.DeriveSharedSecret,
+		KMSActions.DisableKey,
+		KMSActions.DisableKeyRotation,
+		KMSActions.DisconnectCustomKeyStore,
+		KMSActions.EnableKey,
+		KMSActions.EnableKeyRotation,
+		KMSActions.Encrypt,
+		KMSActions.GenerateDataKey,
+		KMSActions.GenerateDataKeyPair,
+		KMSActions.GenerateDataKeyPairWithoutPlaintext,
+		KMSActions.GenerateDataKeyWithoutPlaintext,
+		KMSActions.GenerateMac,
+		KMSActions.GenerateRandom,
+		KMSActions.ImportKeyMaterial,
+		KMSActions.ReEncryptFrom,
+		KMSActions.ReEncryptTo,
+		KMSActions.ReplicateKey,
+		KMSActions.RotateKeyOnDemand,
+		KMSActions.ScheduleKeyDeletion,
+		KMSActions.Sign,
+		KMSActions.SynchronizeMultiRegionKey,
+		KMSActions.UpdateAlias,
+		KMSActions.UpdateCustomKeyStore,
+		KMSActions.UpdateKeyDescription,
+		KMSActions.UpdatePrimaryRegion,
+		KMSActions.Verify,
+		KMSActions.VerifyMac,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KMSActions.LIST_ALIASES,
-		KMSActions.LIST_GRANTS,
-		KMSActions.LIST_KEY_POLICIES,
-		KMSActions.LIST_KEY_ROTATIONS,
-		KMSActions.LIST_KEYS,
-		KMSActions.LIST_RESOURCE_TAGS,
-		KMSActions.LIST_RETIRABLE_GRANTS,
+	static readonly AllListActions: string[] = [
+		KMSActions.ListAliases,
+		KMSActions.ListGrants,
+		KMSActions.ListKeyPolicies,
+		KMSActions.ListKeyRotations,
+		KMSActions.ListKeys,
+		KMSActions.ListResourceTags,
+		KMSActions.ListRetirableGrants,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		KMSActions.CREATE_GRANT,
-		KMSActions.PUT_KEY_POLICY,
-		KMSActions.RETIRE_GRANT,
-		KMSActions.REVOKE_GRANT,
+	static readonly AllPermissionManagementActions: string[] = [
+		KMSActions.CreateGrant,
+		KMSActions.PutKeyPolicy,
+		KMSActions.RetireGrant,
+		KMSActions.RevokeGrant,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KMSActions.TAG_RESOURCE,
-		KMSActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KMSActions.TagResource,
+		KMSActions.UntagResource,
 	];
 }
 
-const AliasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):alias/(?<alias>[^:/?]+)$",
-);
-const KeyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):key/(?<keyId>[^:/?]+)$",
-);
+/**
+ * Properties for building a alias ARN.
+ */
+export interface KMSAliasArnProps {
+	/** The Alias component of the ARN. */
+	readonly alias: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a alias ARN.
+ */
+export interface KMSAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Alias component. */
+	readonly alias: string;
+}
+
+/**
+ * Properties for building a key ARN.
+ */
+export interface KMSKeyArnProps {
+	/** The KeyId component of the ARN. */
+	readonly keyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a key ARN.
+ */
+export interface KMSKeyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KeyId component. */
+	readonly keyId: string;
+}
+
+const AliasArnRegex =
+	/^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):alias\/(?<alias>[^:/?]+)$/;
+const KeyArnRegex =
+	/^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):key\/(?<keyId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kms resources.
@@ -216,16 +268,7 @@ export class KMSResources {
 	/**
 	 * Builds an ARN for the alias resource.
 	 */
-	static alias(props: {
-		/** The Alias component of the ARN. */
-		readonly alias: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static alias(props: KMSAliasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kms:${props.region ?? "*"}:${props.account ?? "*"}:alias/${props.alias}`;
 	}
 
@@ -240,12 +283,7 @@ export class KMSResources {
 	 * Parses a alias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		alias: string;
-	} {
+	static parseAliasArn(arn: string): KMSAliasArnComponents {
 		const match = AliasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid alias ARN: ${arn}`);
@@ -261,16 +299,7 @@ export class KMSResources {
 	/**
 	 * Builds an ARN for the key resource.
 	 */
-	static key(props: {
-		/** The KeyId component of the ARN. */
-		readonly keyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static key(props: KMSKeyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kms:${props.region ?? "*"}:${props.account ?? "*"}:key/${props.keyId}`;
 	}
 
@@ -285,12 +314,7 @@ export class KMSResources {
 	 * Parses a key ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKeyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		keyId: string;
-	} {
+	static parseKeyArn(arn: string): KMSKeyArnComponents {
 		const match = KeyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid key ARN: ${arn}`);
@@ -309,146 +333,136 @@ export class KMSResources {
  */
 export class KMSOperations {
 	/** IAM actions required for the CancelKeyDeletion API call. */
-	static readonly CANCEL_KEY_DELETION: string[] = ["kms:CancelKeyDeletion"];
+	static readonly CancelKeyDeletion: string[] = ["kms:CancelKeyDeletion"];
 	/** IAM actions required for the ConnectCustomKeyStore API call. */
-	static readonly CONNECT_CUSTOM_KEY_STORE: string[] = [
+	static readonly ConnectCustomKeyStore: string[] = [
 		"kms:ConnectCustomKeyStore",
 	];
 	/** IAM actions required for the CreateAlias API call. */
-	static readonly CREATE_ALIAS: string[] = ["kms:CreateAlias"];
+	static readonly CreateAlias: string[] = ["kms:CreateAlias"];
 	/** IAM actions required for the CreateCustomKeyStore API call. */
-	static readonly CREATE_CUSTOM_KEY_STORE: string[] = [
-		"kms:CreateCustomKeyStore",
-	];
+	static readonly CreateCustomKeyStore: string[] = ["kms:CreateCustomKeyStore"];
 	/** IAM actions required for the CreateGrant API call. */
-	static readonly CREATE_GRANT: string[] = ["kms:CreateGrant"];
+	static readonly CreateGrant: string[] = ["kms:CreateGrant"];
 	/** IAM actions required for the CreateKey API call. */
-	static readonly CREATE_KEY: string[] = [
+	static readonly CreateKey: string[] = [
 		"kms:CreateKey",
 		"kms:PutKeyPolicy",
 		"kms:TagResource",
 	];
 	/** IAM actions required for the Decrypt API call. */
-	static readonly DECRYPT: string[] = ["kms:Decrypt"];
+	static readonly Decrypt: string[] = ["kms:Decrypt"];
 	/** IAM actions required for the DeleteAlias API call. */
-	static readonly DELETE_ALIAS: string[] = ["kms:DeleteAlias"];
+	static readonly DeleteAlias: string[] = ["kms:DeleteAlias"];
 	/** IAM actions required for the DeleteCustomKeyStore API call. */
-	static readonly DELETE_CUSTOM_KEY_STORE: string[] = [
-		"kms:DeleteCustomKeyStore",
-	];
+	static readonly DeleteCustomKeyStore: string[] = ["kms:DeleteCustomKeyStore"];
 	/** IAM actions required for the DeleteImportedKeyMaterial API call. */
-	static readonly DELETE_IMPORTED_KEY_MATERIAL: string[] = [
+	static readonly DeleteImportedKeyMaterial: string[] = [
 		"kms:DeleteImportedKeyMaterial",
 	];
 	/** IAM actions required for the DeriveSharedSecret API call. */
-	static readonly DERIVE_SHARED_SECRET: string[] = ["kms:DeriveSharedSecret"];
+	static readonly DeriveSharedSecret: string[] = ["kms:DeriveSharedSecret"];
 	/** IAM actions required for the DescribeCustomKeyStores API call. */
-	static readonly DESCRIBE_CUSTOM_KEY_STORES: string[] = [
+	static readonly DescribeCustomKeyStores: string[] = [
 		"kms:DescribeCustomKeyStores",
 	];
 	/** IAM actions required for the DescribeKey API call. */
-	static readonly DESCRIBE_KEY: string[] = ["kms:DescribeKey"];
+	static readonly DescribeKey: string[] = ["kms:DescribeKey"];
 	/** IAM actions required for the DisableKey API call. */
-	static readonly DISABLE_KEY: string[] = ["kms:DisableKey"];
+	static readonly DisableKey: string[] = ["kms:DisableKey"];
 	/** IAM actions required for the DisableKeyRotation API call. */
-	static readonly DISABLE_KEY_ROTATION: string[] = ["kms:DisableKeyRotation"];
+	static readonly DisableKeyRotation: string[] = ["kms:DisableKeyRotation"];
 	/** IAM actions required for the DisconnectCustomKeyStore API call. */
-	static readonly DISCONNECT_CUSTOM_KEY_STORE: string[] = [
+	static readonly DisconnectCustomKeyStore: string[] = [
 		"kms:DisconnectCustomKeyStore",
 	];
 	/** IAM actions required for the EnableKey API call. */
-	static readonly ENABLE_KEY: string[] = ["kms:EnableKey"];
+	static readonly EnableKey: string[] = ["kms:EnableKey"];
 	/** IAM actions required for the EnableKeyRotation API call. */
-	static readonly ENABLE_KEY_ROTATION: string[] = ["kms:EnableKeyRotation"];
+	static readonly EnableKeyRotation: string[] = ["kms:EnableKeyRotation"];
 	/** IAM actions required for the Encrypt API call. */
-	static readonly ENCRYPT: string[] = ["kms:Encrypt"];
+	static readonly Encrypt: string[] = ["kms:Encrypt"];
 	/** IAM actions required for the GenerateDataKey API call. */
-	static readonly GENERATE_DATA_KEY: string[] = ["kms:GenerateDataKey"];
+	static readonly GenerateDataKey: string[] = ["kms:GenerateDataKey"];
 	/** IAM actions required for the GenerateDataKeyPair API call. */
-	static readonly GENERATE_DATA_KEY_PAIR: string[] = [
-		"kms:GenerateDataKeyPair",
-	];
+	static readonly GenerateDataKeyPair: string[] = ["kms:GenerateDataKeyPair"];
 	/** IAM actions required for the GenerateDataKeyPairWithoutPlaintext API call. */
-	static readonly GENERATE_DATA_KEY_PAIR_WITHOUT_PLAINTEXT: string[] = [
+	static readonly GenerateDataKeyPairWithoutPlaintext: string[] = [
 		"kms:GenerateDataKeyPairWithoutPlaintext",
 	];
 	/** IAM actions required for the GenerateDataKeyWithoutPlaintext API call. */
-	static readonly GENERATE_DATA_KEY_WITHOUT_PLAINTEXT: string[] = [
+	static readonly GenerateDataKeyWithoutPlaintext: string[] = [
 		"kms:GenerateDataKeyWithoutPlaintext",
 	];
 	/** IAM actions required for the GenerateMac API call. */
-	static readonly GENERATE_MAC: string[] = ["kms:GenerateMac"];
+	static readonly GenerateMac: string[] = ["kms:GenerateMac"];
 	/** IAM actions required for the GenerateRandom API call. */
-	static readonly GENERATE_RANDOM: string[] = ["kms:GenerateRandom"];
+	static readonly GenerateRandom: string[] = ["kms:GenerateRandom"];
 	/** IAM actions required for the GetKeyLastUsage API call. */
-	static readonly GET_KEY_LAST_USAGE: string[] = ["kms:GetKeyLastUsage"];
+	static readonly opGetKeyLastUsage: string[] = ["kms:GetKeyLastUsage"];
 	/** IAM actions required for the GetKeyPolicy API call. */
-	static readonly GET_KEY_POLICY: string[] = ["kms:GetKeyPolicy"];
+	static readonly opGetKeyPolicy: string[] = ["kms:GetKeyPolicy"];
 	/** IAM actions required for the GetKeyRotationStatus API call. */
-	static readonly GET_KEY_ROTATION_STATUS: string[] = [
+	static readonly opGetKeyRotationStatus: string[] = [
 		"kms:GetKeyRotationStatus",
 	];
 	/** IAM actions required for the GetParametersForImport API call. */
-	static readonly GET_PARAMETERS_FOR_IMPORT: string[] = [
+	static readonly opGetParametersForImport: string[] = [
 		"kms:GetParametersForImport",
 	];
 	/** IAM actions required for the GetPublicKey API call. */
-	static readonly GET_PUBLIC_KEY: string[] = ["kms:GetPublicKey"];
+	static readonly opGetPublicKey: string[] = ["kms:GetPublicKey"];
 	/** IAM actions required for the ImportKeyMaterial API call. */
-	static readonly IMPORT_KEY_MATERIAL: string[] = ["kms:ImportKeyMaterial"];
+	static readonly ImportKeyMaterial: string[] = ["kms:ImportKeyMaterial"];
 	/** IAM actions required for the ListAliases API call. */
-	static readonly LIST_ALIASES: string[] = ["kms:ListAliases"];
+	static readonly ListAliases: string[] = ["kms:ListAliases"];
 	/** IAM actions required for the ListGrants API call. */
-	static readonly LIST_GRANTS: string[] = ["kms:ListGrants"];
+	static readonly ListGrants: string[] = ["kms:ListGrants"];
 	/** IAM actions required for the ListKeyPolicies API call. */
-	static readonly LIST_KEY_POLICIES: string[] = ["kms:ListKeyPolicies"];
+	static readonly ListKeyPolicies: string[] = ["kms:ListKeyPolicies"];
 	/** IAM actions required for the ListKeyRotations API call. */
-	static readonly LIST_KEY_ROTATIONS: string[] = ["kms:ListKeyRotations"];
+	static readonly ListKeyRotations: string[] = ["kms:ListKeyRotations"];
 	/** IAM actions required for the ListKeys API call. */
-	static readonly LIST_KEYS: string[] = ["kms:ListKeys"];
+	static readonly ListKeys: string[] = ["kms:ListKeys"];
 	/** IAM actions required for the ListResourceTags API call. */
-	static readonly LIST_RESOURCE_TAGS: string[] = ["kms:ListResourceTags"];
+	static readonly ListResourceTags: string[] = ["kms:ListResourceTags"];
 	/** IAM actions required for the ListRetirableGrants API call. */
-	static readonly LIST_RETIRABLE_GRANTS: string[] = ["kms:ListRetirableGrants"];
+	static readonly ListRetirableGrants: string[] = ["kms:ListRetirableGrants"];
 	/** IAM actions required for the PutKeyPolicy API call. */
-	static readonly PUT_KEY_POLICY: string[] = ["kms:PutKeyPolicy"];
+	static readonly PutKeyPolicy: string[] = ["kms:PutKeyPolicy"];
 	/** IAM actions required for the ReEncrypt API call. */
-	static readonly RE_ENCRYPT: string[] = [
+	static readonly ReEncrypt: string[] = [
 		"kms:ReEncryptFrom",
 		"kms:ReEncryptTo",
 	];
 	/** IAM actions required for the ReplicateKey API call. */
-	static readonly REPLICATE_KEY: string[] = ["kms:ReplicateKey"];
+	static readonly ReplicateKey: string[] = ["kms:ReplicateKey"];
 	/** IAM actions required for the RetireGrant API call. */
-	static readonly RETIRE_GRANT: string[] = ["kms:RetireGrant"];
+	static readonly RetireGrant: string[] = ["kms:RetireGrant"];
 	/** IAM actions required for the RevokeGrant API call. */
-	static readonly REVOKE_GRANT: string[] = ["kms:RevokeGrant"];
+	static readonly RevokeGrant: string[] = ["kms:RevokeGrant"];
 	/** IAM actions required for the RotateKeyOnDemand API call. */
-	static readonly ROTATE_KEY_ON_DEMAND: string[] = ["kms:RotateKeyOnDemand"];
+	static readonly RotateKeyOnDemand: string[] = ["kms:RotateKeyOnDemand"];
 	/** IAM actions required for the ScheduleKeyDeletion API call. */
-	static readonly SCHEDULE_KEY_DELETION: string[] = ["kms:ScheduleKeyDeletion"];
+	static readonly ScheduleKeyDeletion: string[] = ["kms:ScheduleKeyDeletion"];
 	/** IAM actions required for the Sign API call. */
-	static readonly SIGN: string[] = ["kms:Sign"];
+	static readonly Sign: string[] = ["kms:Sign"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kms:TagResource"];
+	static readonly TagResource: string[] = ["kms:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kms:UntagResource"];
+	static readonly UntagResource: string[] = ["kms:UntagResource"];
 	/** IAM actions required for the UpdateAlias API call. */
-	static readonly UPDATE_ALIAS: string[] = ["kms:UpdateAlias"];
+	static readonly UpdateAlias: string[] = ["kms:UpdateAlias"];
 	/** IAM actions required for the UpdateCustomKeyStore API call. */
-	static readonly UPDATE_CUSTOM_KEY_STORE: string[] = [
-		"kms:UpdateCustomKeyStore",
-	];
+	static readonly UpdateCustomKeyStore: string[] = ["kms:UpdateCustomKeyStore"];
 	/** IAM actions required for the UpdateKeyDescription API call. */
-	static readonly UPDATE_KEY_DESCRIPTION: string[] = [
-		"kms:UpdateKeyDescription",
-	];
+	static readonly UpdateKeyDescription: string[] = ["kms:UpdateKeyDescription"];
 	/** IAM actions required for the UpdatePrimaryRegion API call. */
-	static readonly UPDATE_PRIMARY_REGION: string[] = ["kms:UpdatePrimaryRegion"];
+	static readonly UpdatePrimaryRegion: string[] = ["kms:UpdatePrimaryRegion"];
 	/** IAM actions required for the Verify API call. */
-	static readonly VERIFY: string[] = ["kms:Verify"];
+	static readonly Verify: string[] = ["kms:Verify"];
 	/** IAM actions required for the VerifyMac API call. */
-	static readonly VERIFY_MAC: string[] = ["kms:VerifyMac"];
+	static readonly VerifyMac: string[] = ["kms:VerifyMac"];
 }
 
 /**
@@ -456,25 +470,25 @@ export class KMSOperations {
  */
 export class KMSConditions {
 	/** Condition keys applicable to the CancelKeyDeletion action. */
-	static readonly CANCEL_KEY_DELETION_CONDITION_KEYS: string[] = [
+	static readonly CancelKeyDeletionConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ConnectCustomKeyStore action. */
-	static readonly CONNECT_CUSTOM_KEY_STORE_CONDITION_KEYS: string[] = [
+	static readonly ConnectCustomKeyStoreConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the CreateAlias action. */
-	static readonly CREATE_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly CreateAliasConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the CreateCustomKeyStore action. */
-	static readonly CREATE_CUSTOM_KEY_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomKeyStoreConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the CreateGrant action. */
-	static readonly CREATE_GRANT_CONDITION_KEYS: string[] = [
+	static readonly CreateGrantConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionContext:${EncryptionContextKey}",
 		"kms:EncryptionContextKeys",
@@ -489,7 +503,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the CreateKey action. */
-	static readonly CREATE_KEY_CONDITION_KEYS: string[] = [
+	static readonly CreateKeyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -503,7 +517,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the Decrypt action. */
-	static readonly DECRYPT_CONDITION_KEYS: string[] = [
+	static readonly DecryptConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionAlgorithm",
 		"kms:EncryptionContext:${EncryptionContextKey}",
@@ -569,21 +583,21 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DeleteAlias action. */
-	static readonly DELETE_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly DeleteAliasConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DeleteCustomKeyStore action. */
-	static readonly DELETE_CUSTOM_KEY_STORE_CONDITION_KEYS: string[] = [
+	static readonly DeleteCustomKeyStoreConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the DeleteImportedKeyMaterial action. */
-	static readonly DELETE_IMPORTED_KEY_MATERIAL_CONDITION_KEYS: string[] = [
+	static readonly DeleteImportedKeyMaterialConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DeriveSharedSecret action. */
-	static readonly DERIVE_SHARED_SECRET_CONDITION_KEYS: string[] = [
+	static readonly DeriveSharedSecretConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:KeyAgreementAlgorithm",
 		"kms:RecipientAttestation:ImageSha384",
@@ -647,43 +661,43 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DescribeCustomKeyStores action. */
-	static readonly DESCRIBE_CUSTOM_KEY_STORES_CONDITION_KEYS: string[] = [
+	static readonly DescribeCustomKeyStoresConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the DescribeKey action. */
-	static readonly DESCRIBE_KEY_CONDITION_KEYS: string[] = [
+	static readonly DescribeKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:RequestAlias",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DisableKey action. */
-	static readonly DISABLE_KEY_CONDITION_KEYS: string[] = [
+	static readonly DisableKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:TrailingDaysWithoutKeyUsage",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DisableKeyRotation action. */
-	static readonly DISABLE_KEY_ROTATION_CONDITION_KEYS: string[] = [
+	static readonly DisableKeyRotationConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the DisconnectCustomKeyStore action. */
-	static readonly DISCONNECT_CUSTOM_KEY_STORE_CONDITION_KEYS: string[] = [
+	static readonly DisconnectCustomKeyStoreConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the EnableKey action. */
-	static readonly ENABLE_KEY_CONDITION_KEYS: string[] = [
+	static readonly EnableKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the EnableKeyRotation action. */
-	static readonly ENABLE_KEY_ROTATION_CONDITION_KEYS: string[] = [
+	static readonly EnableKeyRotationConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:RotationPeriodInDays",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the Encrypt action. */
-	static readonly ENCRYPT_CONDITION_KEYS: string[] = [
+	static readonly EncryptConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionAlgorithm",
 		"kms:EncryptionContext:${EncryptionContextKey}",
@@ -692,7 +706,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GenerateDataKey action. */
-	static readonly GENERATE_DATA_KEY_CONDITION_KEYS: string[] = [
+	static readonly GenerateDataKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionAlgorithm",
 		"kms:EncryptionContext:${EncryptionContextKey}",
@@ -758,7 +772,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GenerateDataKeyPair action. */
-	static readonly GENERATE_DATA_KEY_PAIR_CONDITION_KEYS: string[] = [
+	static readonly GenerateDataKeyPairConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:DataKeyPairSpec",
 		"kms:EncryptionAlgorithm",
@@ -825,35 +839,33 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GenerateDataKeyPairWithoutPlaintext action. */
-	static readonly GENERATE_DATA_KEY_PAIR_WITHOUT_PLAINTEXT_CONDITION_KEYS: string[] =
-		[
-			"kms:CallerAccount",
-			"kms:DataKeyPairSpec",
-			"kms:EncryptionAlgorithm",
-			"kms:EncryptionContext:${EncryptionContextKey}",
-			"kms:EncryptionContextKeys",
-			"kms:RequestAlias",
-			"kms:ViaService",
-		];
+	static readonly GenerateDataKeyPairWithoutPlaintextConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:DataKeyPairSpec",
+		"kms:EncryptionAlgorithm",
+		"kms:EncryptionContext:${EncryptionContextKey}",
+		"kms:EncryptionContextKeys",
+		"kms:RequestAlias",
+		"kms:ViaService",
+	];
 	/** Condition keys applicable to the GenerateDataKeyWithoutPlaintext action. */
-	static readonly GENERATE_DATA_KEY_WITHOUT_PLAINTEXT_CONDITION_KEYS: string[] =
-		[
-			"kms:CallerAccount",
-			"kms:EncryptionAlgorithm",
-			"kms:EncryptionContext:${EncryptionContextKey}",
-			"kms:EncryptionContextKeys",
-			"kms:RequestAlias",
-			"kms:ViaService",
-		];
+	static readonly GenerateDataKeyWithoutPlaintextConditionKeys: string[] = [
+		"kms:CallerAccount",
+		"kms:EncryptionAlgorithm",
+		"kms:EncryptionContext:${EncryptionContextKey}",
+		"kms:EncryptionContextKeys",
+		"kms:RequestAlias",
+		"kms:ViaService",
+	];
 	/** Condition keys applicable to the GenerateMac action. */
-	static readonly GENERATE_MAC_CONDITION_KEYS: string[] = [
+	static readonly GenerateMacConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:MacAlgorithm",
 		"kms:RequestAlias",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GenerateRandom action. */
-	static readonly GENERATE_RANDOM_CONDITION_KEYS: string[] = [
+	static readonly GenerateRandomConditionKeys: string[] = [
 		"kms:RecipientAttestation:ImageSha384",
 		"kms:RecipientAttestation:NitroTPMPCR0",
 		"kms:RecipientAttestation:NitroTPMPCR1",
@@ -913,69 +925,69 @@ export class KMSConditions {
 		"kms:RecipientAttestation:PCR9",
 	];
 	/** Condition keys applicable to the GetKeyLastUsage action. */
-	static readonly GET_KEY_LAST_USAGE_CONDITION_KEYS: string[] = [
+	static readonly actionGetKeyLastUsageConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GetKeyPolicy action. */
-	static readonly GET_KEY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetKeyPolicyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GetKeyRotationStatus action. */
-	static readonly GET_KEY_ROTATION_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetKeyRotationStatusConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GetParametersForImport action. */
-	static readonly GET_PARAMETERS_FOR_IMPORT_CONDITION_KEYS: string[] = [
+	static readonly actionGetParametersForImportConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 		"kms:WrappingAlgorithm",
 		"kms:WrappingKeySpec",
 	];
 	/** Condition keys applicable to the GetPublicKey action. */
-	static readonly GET_PUBLIC_KEY_CONDITION_KEYS: string[] = [
+	static readonly actionGetPublicKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:RequestAlias",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ImportKeyMaterial action. */
-	static readonly IMPORT_KEY_MATERIAL_CONDITION_KEYS: string[] = [
+	static readonly ImportKeyMaterialConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ExpirationModel",
 		"kms:ValidTo",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ListGrants action. */
-	static readonly LIST_GRANTS_CONDITION_KEYS: string[] = [
+	static readonly ListGrantsConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:GrantIsForAWSResource",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ListKeyPolicies action. */
-	static readonly LIST_KEY_POLICIES_CONDITION_KEYS: string[] = [
+	static readonly ListKeyPoliciesConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ListKeyRotations action. */
-	static readonly LIST_KEY_ROTATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListKeyRotationsConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ListResourceTags action. */
-	static readonly LIST_RESOURCE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly ListResourceTagsConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the PutKeyPolicy action. */
-	static readonly PUT_KEY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutKeyPolicyConditionKeys: string[] = [
 		"kms:BypassPolicyLockoutSafetyCheck",
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ReEncryptFrom action. */
-	static readonly RE_ENCRYPT_FROM_CONDITION_KEYS: string[] = [
+	static readonly ReEncryptFromConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionAlgorithm",
 		"kms:EncryptionContext:${EncryptionContextKey}",
@@ -985,7 +997,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ReEncryptTo action. */
-	static readonly RE_ENCRYPT_TO_CONDITION_KEYS: string[] = [
+	static readonly ReEncryptToConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionAlgorithm",
 		"kms:EncryptionContext:${EncryptionContextKey}",
@@ -995,13 +1007,13 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ReplicateKey action. */
-	static readonly REPLICATE_KEY_CONDITION_KEYS: string[] = [
+	static readonly ReplicateKeyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ReplicaRegion",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the RetireGrant action. */
-	static readonly RETIRE_GRANT_CONDITION_KEYS: string[] = [
+	static readonly RetireGrantConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:EncryptionContext:${EncryptionContextKey}",
 		"kms:EncryptionContextKeys",
@@ -1009,25 +1021,25 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the RevokeGrant action. */
-	static readonly REVOKE_GRANT_CONDITION_KEYS: string[] = [
+	static readonly RevokeGrantConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:GrantIsForAWSResource",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the RotateKeyOnDemand action. */
-	static readonly ROTATE_KEY_ON_DEMAND_CONDITION_KEYS: string[] = [
+	static readonly RotateKeyOnDemandConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ScheduleKeyDeletion action. */
-	static readonly SCHEDULE_KEY_DELETION_CONDITION_KEYS: string[] = [
+	static readonly ScheduleKeyDeletionConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ScheduleKeyDeletionPendingWindowInDays",
 		"kms:TrailingDaysWithoutKeyUsage",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the Sign action. */
-	static readonly SIGN_CONDITION_KEYS: string[] = [
+	static readonly SignConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:MessageType",
 		"kms:RequestAlias",
@@ -1035,40 +1047,40 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the UpdateAlias action. */
-	static readonly UPDATE_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly UpdateAliasConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the UpdateCustomKeyStore action. */
-	static readonly UPDATE_CUSTOM_KEY_STORE_CONDITION_KEYS: string[] = [
+	static readonly UpdateCustomKeyStoreConditionKeys: string[] = [
 		"kms:CallerAccount",
 	];
 	/** Condition keys applicable to the UpdateKeyDescription action. */
-	static readonly UPDATE_KEY_DESCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateKeyDescriptionConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the UpdatePrimaryRegion action. */
-	static readonly UPDATE_PRIMARY_REGION_CONDITION_KEYS: string[] = [
+	static readonly UpdatePrimaryRegionConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:PrimaryRegion",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the Verify action. */
-	static readonly VERIFY_CONDITION_KEYS: string[] = [
+	static readonly VerifyConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:MessageType",
 		"kms:RequestAlias",
@@ -1076,7 +1088,7 @@ export class KMSConditions {
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the VerifyMac action. */
-	static readonly VERIFY_MAC_CONDITION_KEYS: string[] = [
+	static readonly VerifyMacConditionKeys: string[] = [
 		"kms:CallerAccount",
 		"kms:MacAlgorithm",
 		"kms:RequestAlias",
@@ -1084,11 +1096,11 @@ export class KMSConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: kms:BypassPolicyLockoutSafetyCheck (Bool) */
 	static readonly BYPASS_POLICY_LOCKOUT_SAFETY_CHECK =
 		"kms:BypassPolicyLockoutSafetyCheck";

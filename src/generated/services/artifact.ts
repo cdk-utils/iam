@@ -13,112 +13,204 @@ export class ArtifactActions {
 	static readonly SERVICE_PREFIX = "artifact";
 
 	/** [Write] artifact:AcceptAgreement */
-	static readonly ACCEPT_AGREEMENT = "artifact:AcceptAgreement";
+	static readonly AcceptAgreement = "artifact:AcceptAgreement";
 	/** [Write] artifact:AcceptNdaForAgreement */
-	static readonly ACCEPT_NDA_FOR_AGREEMENT = "artifact:AcceptNdaForAgreement";
+	static readonly AcceptNdaForAgreement = "artifact:AcceptNdaForAgreement";
 	/** [Write] artifact:CreateComplianceInquiry */
-	static readonly CREATE_COMPLIANCE_INQUIRY =
-		"artifact:CreateComplianceInquiry";
+	static readonly CreateComplianceInquiry = "artifact:CreateComplianceInquiry";
 	/** [Read] artifact:ExportComplianceInquiry */
-	static readonly EXPORT_COMPLIANCE_INQUIRY =
-		"artifact:ExportComplianceInquiry";
+	static readonly ExportComplianceInquiry = "artifact:ExportComplianceInquiry";
 	/** [Read] artifact:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "artifact:GetAccountSettings";
+	static readonly actionGetAccountSettings = "artifact:GetAccountSettings";
 	/** [Read] artifact:GetAgreement */
-	static readonly GET_AGREEMENT = "artifact:GetAgreement";
+	static readonly actionGetAgreement = "artifact:GetAgreement";
 	/** [Read] artifact:GetComplianceInquiryMetadata */
-	static readonly GET_COMPLIANCE_INQUIRY_METADATA =
+	static readonly actionGetComplianceInquiryMetadata =
 		"artifact:GetComplianceInquiryMetadata";
 	/** [Read] artifact:GetCustomerAgreement */
-	static readonly GET_CUSTOMER_AGREEMENT = "artifact:GetCustomerAgreement";
+	static readonly actionGetCustomerAgreement = "artifact:GetCustomerAgreement";
 	/** [Read] artifact:GetNdaForAgreement */
-	static readonly GET_NDA_FOR_AGREEMENT = "artifact:GetNdaForAgreement";
+	static readonly actionGetNdaForAgreement = "artifact:GetNdaForAgreement";
 	/** [Read] artifact:GetReport */
-	static readonly GET_REPORT = "artifact:GetReport";
+	static readonly actionGetReport = "artifact:GetReport";
 	/** [Read] artifact:GetReportMetadata */
-	static readonly GET_REPORT_METADATA = "artifact:GetReportMetadata";
+	static readonly actionGetReportMetadata = "artifact:GetReportMetadata";
 	/** [Read] artifact:GetTermForReport */
-	static readonly GET_TERM_FOR_REPORT = "artifact:GetTermForReport";
+	static readonly actionGetTermForReport = "artifact:GetTermForReport";
 	/** [List] artifact:ListAgreements */
-	static readonly LIST_AGREEMENTS = "artifact:ListAgreements";
+	static readonly ListAgreements = "artifact:ListAgreements";
 	/** [List] artifact:ListComplianceInquiries */
-	static readonly LIST_COMPLIANCE_INQUIRIES =
-		"artifact:ListComplianceInquiries";
+	static readonly ListComplianceInquiries = "artifact:ListComplianceInquiries";
 	/** [List] artifact:ListComplianceInquiryQueries */
-	static readonly LIST_COMPLIANCE_INQUIRY_QUERIES =
+	static readonly ListComplianceInquiryQueries =
 		"artifact:ListComplianceInquiryQueries";
 	/** [List] artifact:ListCustomerAgreements */
-	static readonly LIST_CUSTOMER_AGREEMENTS = "artifact:ListCustomerAgreements";
+	static readonly ListCustomerAgreements = "artifact:ListCustomerAgreements";
 	/** [List] artifact:ListReportVersions */
-	static readonly LIST_REPORT_VERSIONS = "artifact:ListReportVersions";
+	static readonly ListReportVersions = "artifact:ListReportVersions";
 	/** [List] artifact:ListReports */
-	static readonly LIST_REPORTS = "artifact:ListReports";
+	static readonly ListReports = "artifact:ListReports";
 	/** [Read] artifact:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "artifact:ListTagsForResource";
+	static readonly ListTagsForResource = "artifact:ListTagsForResource";
 	/** [Write] artifact:PutAccountSettings */
-	static readonly PUT_ACCOUNT_SETTINGS = "artifact:PutAccountSettings";
+	static readonly PutAccountSettings = "artifact:PutAccountSettings";
 	/** [Write] artifact:PutComplianceInquiryFeedback */
-	static readonly PUT_COMPLIANCE_INQUIRY_FEEDBACK =
+	static readonly PutComplianceInquiryFeedback =
 		"artifact:PutComplianceInquiryFeedback";
 	/** [Tagging] artifact:TagResource */
-	static readonly TAG_RESOURCE = "artifact:TagResource";
+	static readonly TagResource = "artifact:TagResource";
 	/** [Write] artifact:TerminateAgreement */
-	static readonly TERMINATE_AGREEMENT = "artifact:TerminateAgreement";
+	static readonly TerminateAgreement = "artifact:TerminateAgreement";
 	/** [Tagging] artifact:UntagResource */
-	static readonly UNTAG_RESOURCE = "artifact:UntagResource";
+	static readonly UntagResource = "artifact:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ArtifactActions.EXPORT_COMPLIANCE_INQUIRY,
-		ArtifactActions.GET_ACCOUNT_SETTINGS,
-		ArtifactActions.GET_AGREEMENT,
-		ArtifactActions.GET_COMPLIANCE_INQUIRY_METADATA,
-		ArtifactActions.GET_CUSTOMER_AGREEMENT,
-		ArtifactActions.GET_NDA_FOR_AGREEMENT,
-		ArtifactActions.GET_REPORT,
-		ArtifactActions.GET_REPORT_METADATA,
-		ArtifactActions.GET_TERM_FOR_REPORT,
-		ArtifactActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ArtifactActions.ExportComplianceInquiry,
+		ArtifactActions.actionGetAccountSettings,
+		ArtifactActions.actionGetAgreement,
+		ArtifactActions.actionGetComplianceInquiryMetadata,
+		ArtifactActions.actionGetCustomerAgreement,
+		ArtifactActions.actionGetNdaForAgreement,
+		ArtifactActions.actionGetReport,
+		ArtifactActions.actionGetReportMetadata,
+		ArtifactActions.actionGetTermForReport,
+		ArtifactActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ArtifactActions.ACCEPT_AGREEMENT,
-		ArtifactActions.ACCEPT_NDA_FOR_AGREEMENT,
-		ArtifactActions.CREATE_COMPLIANCE_INQUIRY,
-		ArtifactActions.PUT_ACCOUNT_SETTINGS,
-		ArtifactActions.PUT_COMPLIANCE_INQUIRY_FEEDBACK,
-		ArtifactActions.TERMINATE_AGREEMENT,
+	static readonly AllWriteActions: string[] = [
+		ArtifactActions.AcceptAgreement,
+		ArtifactActions.AcceptNdaForAgreement,
+		ArtifactActions.CreateComplianceInquiry,
+		ArtifactActions.PutAccountSettings,
+		ArtifactActions.PutComplianceInquiryFeedback,
+		ArtifactActions.TerminateAgreement,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ArtifactActions.LIST_AGREEMENTS,
-		ArtifactActions.LIST_COMPLIANCE_INQUIRIES,
-		ArtifactActions.LIST_COMPLIANCE_INQUIRY_QUERIES,
-		ArtifactActions.LIST_CUSTOMER_AGREEMENTS,
-		ArtifactActions.LIST_REPORT_VERSIONS,
-		ArtifactActions.LIST_REPORTS,
+	static readonly AllListActions: string[] = [
+		ArtifactActions.ListAgreements,
+		ArtifactActions.ListComplianceInquiries,
+		ArtifactActions.ListComplianceInquiryQueries,
+		ArtifactActions.ListCustomerAgreements,
+		ArtifactActions.ListReportVersions,
+		ArtifactActions.ListReports,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ArtifactActions.TAG_RESOURCE,
-		ArtifactActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ArtifactActions.TagResource,
+		ArtifactActions.UntagResource,
 	];
 }
 
-const AgreementArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):artifact:::agreement/.*$",
-);
-const ComplianceInquiryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):artifact:(?<region>[^:]*):(?<account>[^:]*):compliance-inquiry/.*$",
-);
-const CustomerAgreementArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):artifact::(?<account>[^:]*):customer-agreement/.*$",
-);
-const ReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):artifact:(?<region>[^:]*)::report/(?<reportId>[^:/?]+):(?<version>[^:/?]+)$",
-);
+/**
+ * Properties for building a agreement ARN.
+ */
+export interface ArtifactAgreementArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agreement ARN.
+ */
+export interface ArtifactAgreementArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a compliance-inquiry ARN.
+ */
+export interface ArtifactComplianceInquiryArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a compliance-inquiry ARN.
+ */
+export interface ArtifactComplianceInquiryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a customer-agreement ARN.
+ */
+export interface ArtifactCustomerAgreementArnProps {
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customer-agreement ARN.
+ */
+export interface ArtifactCustomerAgreementArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a report ARN.
+ */
+export interface ArtifactReportArnProps {
+	/** The ReportId component of the ARN. */
+	readonly reportId: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a report ARN.
+ */
+export interface ArtifactReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportId component. */
+	readonly reportId: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+const AgreementArnRegex = /^arn:(?<partition>[^:]+):artifact:::agreement\/.*$/;
+const ComplianceInquiryArnRegex =
+	/^arn:(?<partition>[^:]+):artifact:(?<region>[^:]*):(?<account>[^:]*):compliance-inquiry\/.*$/;
+const CustomerAgreementArnRegex =
+	/^arn:(?<partition>[^:]+):artifact::(?<account>[^:]*):customer-agreement\/.*$/;
+const ReportArnRegex =
+	/^arn:(?<partition>[^:]+):artifact:(?<region>[^:]*)::report\/(?<reportId>[^:/?]+):(?<version>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for artifact resources.
@@ -127,14 +219,7 @@ export class ArtifactResources {
 	/**
 	 * Builds an ARN for the agreement resource.
 	 */
-	static agreement(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agreement(props: ArtifactAgreementArnProps): string {
 		return `arn:${props.partition ?? "aws"}:artifact:::agreement/*`;
 	}
 
@@ -149,11 +234,7 @@ export class ArtifactResources {
 	 * Parses a agreement ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgreementArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseAgreementArn(arn: string): ArtifactAgreementArnComponents {
 		const match = AgreementArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agreement ARN: ${arn}`);
@@ -168,14 +249,7 @@ export class ArtifactResources {
 	/**
 	 * Builds an ARN for the compliance-inquiry resource.
 	 */
-	static complianceInquiry(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static complianceInquiry(props: ArtifactComplianceInquiryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:artifact:${props.region ?? "*"}:${props.account ?? "*"}:compliance-inquiry/*`;
 	}
 
@@ -190,11 +264,9 @@ export class ArtifactResources {
 	 * Parses a compliance-inquiry ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComplianceInquiryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseComplianceInquiryArn(
+		arn: string,
+	): ArtifactComplianceInquiryArnComponents {
 		const match = ComplianceInquiryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid compliance-inquiry ARN: ${arn}`);
@@ -209,12 +281,7 @@ export class ArtifactResources {
 	/**
 	 * Builds an ARN for the customer-agreement resource.
 	 */
-	static customerAgreement(props: {
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customerAgreement(props: ArtifactCustomerAgreementArnProps): string {
 		return `arn:${props.partition ?? "aws"}:artifact::${props.account ?? "*"}:customer-agreement/*`;
 	}
 
@@ -229,10 +296,9 @@ export class ArtifactResources {
 	 * Parses a customer-agreement ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomerAgreementArn(arn: string): {
-		partition: string;
-		account: string;
-	} {
+	static parseCustomerAgreementArn(
+		arn: string,
+	): ArtifactCustomerAgreementArnComponents {
 		const match = CustomerAgreementArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid customer-agreement ARN: ${arn}`);
@@ -246,18 +312,7 @@ export class ArtifactResources {
 	/**
 	 * Builds an ARN for the report resource.
 	 */
-	static report(props: {
-		/** The ReportId component of the ARN. */
-		readonly reportId: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static report(props: ArtifactReportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:artifact:${props.region ?? "*"}::report/${props.reportId}:${props.version}`;
 	}
 
@@ -272,13 +327,7 @@ export class ArtifactResources {
 	 * Parses a report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportId: string;
-		version: string;
-	} {
+	static parseReportArn(arn: string): ArtifactReportArnComponents {
 		const match = ReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid report ARN: ${arn}`);
@@ -298,64 +347,64 @@ export class ArtifactResources {
  */
 export class ArtifactOperations {
 	/** IAM actions required for the CreateComplianceInquiry API call. */
-	static readonly CREATE_COMPLIANCE_INQUIRY: string[] = [
+	static readonly CreateComplianceInquiry: string[] = [
 		"artifact:CreateComplianceInquiry",
 		"artifact:TagResource",
 	];
 	/** IAM actions required for the ExportComplianceInquiry API call. */
-	static readonly EXPORT_COMPLIANCE_INQUIRY: string[] = [
+	static readonly ExportComplianceInquiry: string[] = [
 		"artifact:ExportComplianceInquiry",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
-	static readonly GET_ACCOUNT_SETTINGS: string[] = [
+	static readonly opGetAccountSettings: string[] = [
 		"artifact:GetAccountSettings",
 	];
 	/** IAM actions required for the GetComplianceInquiryMetadata API call. */
-	static readonly GET_COMPLIANCE_INQUIRY_METADATA: string[] = [
+	static readonly opGetComplianceInquiryMetadata: string[] = [
 		"artifact:GetComplianceInquiryMetadata",
 	];
 	/** IAM actions required for the GetReport API call. */
-	static readonly GET_REPORT: string[] = ["artifact:GetReport"];
+	static readonly opGetReport: string[] = ["artifact:GetReport"];
 	/** IAM actions required for the GetReportMetadata API call. */
-	static readonly GET_REPORT_METADATA: string[] = [
+	static readonly opGetReportMetadata: string[] = [
 		"artifact:GetReportMetadata",
 	];
 	/** IAM actions required for the GetTermForReport API call. */
-	static readonly GET_TERM_FOR_REPORT: string[] = ["artifact:GetTermForReport"];
+	static readonly opGetTermForReport: string[] = ["artifact:GetTermForReport"];
 	/** IAM actions required for the ListComplianceInquiries API call. */
-	static readonly LIST_COMPLIANCE_INQUIRIES: string[] = [
+	static readonly ListComplianceInquiries: string[] = [
 		"artifact:ListComplianceInquiries",
 	];
 	/** IAM actions required for the ListComplianceInquiryQueries API call. */
-	static readonly LIST_COMPLIANCE_INQUIRY_QUERIES: string[] = [
+	static readonly ListComplianceInquiryQueries: string[] = [
 		"artifact:ListComplianceInquiryQueries",
 	];
 	/** IAM actions required for the ListCustomerAgreements API call. */
-	static readonly LIST_CUSTOMER_AGREEMENTS: string[] = [
+	static readonly ListCustomerAgreements: string[] = [
 		"artifact:ListCustomerAgreements",
 	];
 	/** IAM actions required for the ListReportVersions API call. */
-	static readonly LIST_REPORT_VERSIONS: string[] = [
+	static readonly ListReportVersions: string[] = [
 		"artifact:ListReportVersions",
 	];
 	/** IAM actions required for the ListReports API call. */
-	static readonly LIST_REPORTS: string[] = ["artifact:ListReports"];
+	static readonly ListReports: string[] = ["artifact:ListReports"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"artifact:ListTagsForResource",
 	];
 	/** IAM actions required for the PutAccountSettings API call. */
-	static readonly PUT_ACCOUNT_SETTINGS: string[] = [
+	static readonly PutAccountSettings: string[] = [
 		"artifact:PutAccountSettings",
 	];
 	/** IAM actions required for the PutComplianceInquiryFeedback API call. */
-	static readonly PUT_COMPLIANCE_INQUIRY_FEEDBACK: string[] = [
+	static readonly PutComplianceInquiryFeedback: string[] = [
 		"artifact:PutComplianceInquiryFeedback",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["artifact:TagResource"];
+	static readonly TagResource: string[] = ["artifact:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["artifact:UntagResource"];
+	static readonly UntagResource: string[] = ["artifact:UntagResource"];
 }
 
 /**
@@ -363,28 +412,28 @@ export class ArtifactOperations {
  */
 export class ArtifactConditions {
 	/** Condition keys applicable to the CreateComplianceInquiry action. */
-	static readonly CREATE_COMPLIANCE_INQUIRY_CONDITION_KEYS: string[] = [
+	static readonly CreateComplianceInquiryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: artifact:ReportCategory (String) */
 	static readonly REPORT_CATEGORY = "artifact:ReportCategory";
 	/** Condition key: artifact:ReportSeries (String) */
 	static readonly REPORT_SERIES = "artifact:ReportSeries";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `artifact:ReportCategory`.

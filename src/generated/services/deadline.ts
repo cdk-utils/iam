@@ -13,435 +13,712 @@ export class DeadlineActions {
 	static readonly SERVICE_PREFIX = "deadline";
 
 	/** [PermissionManagement] deadline:AssociateMemberToFarm */
-	static readonly ASSOCIATE_MEMBER_TO_FARM = "deadline:AssociateMemberToFarm";
+	static readonly AssociateMemberToFarm = "deadline:AssociateMemberToFarm";
 	/** [PermissionManagement] deadline:AssociateMemberToFleet */
-	static readonly ASSOCIATE_MEMBER_TO_FLEET = "deadline:AssociateMemberToFleet";
+	static readonly AssociateMemberToFleet = "deadline:AssociateMemberToFleet";
 	/** [PermissionManagement] deadline:AssociateMemberToJob */
-	static readonly ASSOCIATE_MEMBER_TO_JOB = "deadline:AssociateMemberToJob";
+	static readonly AssociateMemberToJob = "deadline:AssociateMemberToJob";
 	/** [PermissionManagement] deadline:AssociateMemberToQueue */
-	static readonly ASSOCIATE_MEMBER_TO_QUEUE = "deadline:AssociateMemberToQueue";
+	static readonly AssociateMemberToQueue = "deadline:AssociateMemberToQueue";
 	/** [Write] deadline:AssumeFleetRoleForRead */
-	static readonly ASSUME_FLEET_ROLE_FOR_READ =
-		"deadline:AssumeFleetRoleForRead";
+	static readonly AssumeFleetRoleForRead = "deadline:AssumeFleetRoleForRead";
 	/** [Write] deadline:AssumeFleetRoleForWorker */
-	static readonly ASSUME_FLEET_ROLE_FOR_WORKER =
+	static readonly AssumeFleetRoleForWorker =
 		"deadline:AssumeFleetRoleForWorker";
 	/** [Write] deadline:AssumeQueueRoleForRead */
-	static readonly ASSUME_QUEUE_ROLE_FOR_READ =
-		"deadline:AssumeQueueRoleForRead";
+	static readonly AssumeQueueRoleForRead = "deadline:AssumeQueueRoleForRead";
 	/** [Write] deadline:AssumeQueueRoleForUser */
-	static readonly ASSUME_QUEUE_ROLE_FOR_USER =
-		"deadline:AssumeQueueRoleForUser";
+	static readonly AssumeQueueRoleForUser = "deadline:AssumeQueueRoleForUser";
 	/** [Write] deadline:AssumeQueueRoleForWorker */
-	static readonly ASSUME_QUEUE_ROLE_FOR_WORKER =
+	static readonly AssumeQueueRoleForWorker =
 		"deadline:AssumeQueueRoleForWorker";
 	/** [Read] deadline:BatchGetJobEntity */
-	static readonly BATCH_GET_JOB_ENTITY = "deadline:BatchGetJobEntity";
+	static readonly BatchGetJobEntity = "deadline:BatchGetJobEntity";
 	/** [Write] deadline:CopyJobTemplate */
-	static readonly COPY_JOB_TEMPLATE = "deadline:CopyJobTemplate";
+	static readonly CopyJobTemplate = "deadline:CopyJobTemplate";
 	/** [Write] deadline:CreateBudget */
-	static readonly CREATE_BUDGET = "deadline:CreateBudget";
+	static readonly CreateBudget = "deadline:CreateBudget";
 	/** [Write] deadline:CreateFarm */
-	static readonly CREATE_FARM = "deadline:CreateFarm";
+	static readonly CreateFarm = "deadline:CreateFarm";
 	/** [Write] deadline:CreateFleet */
-	static readonly CREATE_FLEET = "deadline:CreateFleet";
+	static readonly CreateFleet = "deadline:CreateFleet";
 	/** [Write] deadline:CreateJob */
-	static readonly CREATE_JOB = "deadline:CreateJob";
+	static readonly CreateJob = "deadline:CreateJob";
 	/** [Write] deadline:CreateLicenseEndpoint */
-	static readonly CREATE_LICENSE_ENDPOINT = "deadline:CreateLicenseEndpoint";
+	static readonly CreateLicenseEndpoint = "deadline:CreateLicenseEndpoint";
 	/** [Write] deadline:CreateLimit */
-	static readonly CREATE_LIMIT = "deadline:CreateLimit";
+	static readonly CreateLimit = "deadline:CreateLimit";
 	/** [Write] deadline:CreateMonitor */
-	static readonly CREATE_MONITOR = "deadline:CreateMonitor";
+	static readonly CreateMonitor = "deadline:CreateMonitor";
 	/** [Write] deadline:CreateQueue */
-	static readonly CREATE_QUEUE = "deadline:CreateQueue";
+	static readonly CreateQueue = "deadline:CreateQueue";
 	/** [Write] deadline:CreateQueueEnvironment */
-	static readonly CREATE_QUEUE_ENVIRONMENT = "deadline:CreateQueueEnvironment";
+	static readonly CreateQueueEnvironment = "deadline:CreateQueueEnvironment";
 	/** [Write] deadline:CreateQueueFleetAssociation */
-	static readonly CREATE_QUEUE_FLEET_ASSOCIATION =
+	static readonly CreateQueueFleetAssociation =
 		"deadline:CreateQueueFleetAssociation";
 	/** [Write] deadline:CreateQueueLimitAssociation */
-	static readonly CREATE_QUEUE_LIMIT_ASSOCIATION =
+	static readonly CreateQueueLimitAssociation =
 		"deadline:CreateQueueLimitAssociation";
 	/** [Write] deadline:CreateStorageProfile */
-	static readonly CREATE_STORAGE_PROFILE = "deadline:CreateStorageProfile";
+	static readonly CreateStorageProfile = "deadline:CreateStorageProfile";
 	/** [Write] deadline:CreateWorker */
-	static readonly CREATE_WORKER = "deadline:CreateWorker";
+	static readonly CreateWorker = "deadline:CreateWorker";
 	/** [Write] deadline:DeleteBudget */
-	static readonly DELETE_BUDGET = "deadline:DeleteBudget";
+	static readonly DeleteBudget = "deadline:DeleteBudget";
 	/** [Write] deadline:DeleteFarm */
-	static readonly DELETE_FARM = "deadline:DeleteFarm";
+	static readonly DeleteFarm = "deadline:DeleteFarm";
 	/** [Write] deadline:DeleteFleet */
-	static readonly DELETE_FLEET = "deadline:DeleteFleet";
+	static readonly DeleteFleet = "deadline:DeleteFleet";
 	/** [Write] deadline:DeleteLicenseEndpoint */
-	static readonly DELETE_LICENSE_ENDPOINT = "deadline:DeleteLicenseEndpoint";
+	static readonly DeleteLicenseEndpoint = "deadline:DeleteLicenseEndpoint";
 	/** [Write] deadline:DeleteLimit */
-	static readonly DELETE_LIMIT = "deadline:DeleteLimit";
+	static readonly DeleteLimit = "deadline:DeleteLimit";
 	/** [Write] deadline:DeleteMeteredProduct */
-	static readonly DELETE_METERED_PRODUCT = "deadline:DeleteMeteredProduct";
+	static readonly DeleteMeteredProduct = "deadline:DeleteMeteredProduct";
 	/** [Write] deadline:DeleteMonitor */
-	static readonly DELETE_MONITOR = "deadline:DeleteMonitor";
+	static readonly DeleteMonitor = "deadline:DeleteMonitor";
 	/** [Write] deadline:DeleteQueue */
-	static readonly DELETE_QUEUE = "deadline:DeleteQueue";
+	static readonly DeleteQueue = "deadline:DeleteQueue";
 	/** [Write] deadline:DeleteQueueEnvironment */
-	static readonly DELETE_QUEUE_ENVIRONMENT = "deadline:DeleteQueueEnvironment";
+	static readonly DeleteQueueEnvironment = "deadline:DeleteQueueEnvironment";
 	/** [Write] deadline:DeleteQueueFleetAssociation */
-	static readonly DELETE_QUEUE_FLEET_ASSOCIATION =
+	static readonly DeleteQueueFleetAssociation =
 		"deadline:DeleteQueueFleetAssociation";
 	/** [Write] deadline:DeleteQueueLimitAssociation */
-	static readonly DELETE_QUEUE_LIMIT_ASSOCIATION =
+	static readonly DeleteQueueLimitAssociation =
 		"deadline:DeleteQueueLimitAssociation";
 	/** [Write] deadline:DeleteStorageProfile */
-	static readonly DELETE_STORAGE_PROFILE = "deadline:DeleteStorageProfile";
+	static readonly DeleteStorageProfile = "deadline:DeleteStorageProfile";
 	/** [Write] deadline:DeleteVolume */
-	static readonly DELETE_VOLUME = "deadline:DeleteVolume";
+	static readonly DeleteVolume = "deadline:DeleteVolume";
 	/** [Write] deadline:DeleteWorker */
-	static readonly DELETE_WORKER = "deadline:DeleteWorker";
+	static readonly DeleteWorker = "deadline:DeleteWorker";
 	/** [PermissionManagement] deadline:DisassociateMemberFromFarm */
-	static readonly DISASSOCIATE_MEMBER_FROM_FARM =
+	static readonly DisassociateMemberFromFarm =
 		"deadline:DisassociateMemberFromFarm";
 	/** [PermissionManagement] deadline:DisassociateMemberFromFleet */
-	static readonly DISASSOCIATE_MEMBER_FROM_FLEET =
+	static readonly DisassociateMemberFromFleet =
 		"deadline:DisassociateMemberFromFleet";
 	/** [PermissionManagement] deadline:DisassociateMemberFromJob */
-	static readonly DISASSOCIATE_MEMBER_FROM_JOB =
+	static readonly DisassociateMemberFromJob =
 		"deadline:DisassociateMemberFromJob";
 	/** [PermissionManagement] deadline:DisassociateMemberFromQueue */
-	static readonly DISASSOCIATE_MEMBER_FROM_QUEUE =
+	static readonly DisassociateMemberFromQueue =
 		"deadline:DisassociateMemberFromQueue";
 	/** [Read] deadline:GetApplicationVersion */
-	static readonly GET_APPLICATION_VERSION = "deadline:GetApplicationVersion";
+	static readonly actionGetApplicationVersion =
+		"deadline:GetApplicationVersion";
 	/** [Read] deadline:GetBudget */
-	static readonly GET_BUDGET = "deadline:GetBudget";
+	static readonly actionGetBudget = "deadline:GetBudget";
 	/** [Read] deadline:GetFarm */
-	static readonly GET_FARM = "deadline:GetFarm";
+	static readonly actionGetFarm = "deadline:GetFarm";
 	/** [Read] deadline:GetFleet */
-	static readonly GET_FLEET = "deadline:GetFleet";
+	static readonly actionGetFleet = "deadline:GetFleet";
 	/** [Read] deadline:GetJob */
-	static readonly GET_JOB = "deadline:GetJob";
+	static readonly actionGetJob = "deadline:GetJob";
 	/** [Read] deadline:GetJobTemplate */
-	static readonly GET_JOB_TEMPLATE = "deadline:GetJobTemplate";
+	static readonly actionGetJobTemplate = "deadline:GetJobTemplate";
 	/** [Read] deadline:GetLicenseEndpoint */
-	static readonly GET_LICENSE_ENDPOINT = "deadline:GetLicenseEndpoint";
+	static readonly actionGetLicenseEndpoint = "deadline:GetLicenseEndpoint";
 	/** [Read] deadline:GetLimit */
-	static readonly GET_LIMIT = "deadline:GetLimit";
+	static readonly actionGetLimit = "deadline:GetLimit";
 	/** [Read] deadline:GetMonitor */
-	static readonly GET_MONITOR = "deadline:GetMonitor";
+	static readonly actionGetMonitor = "deadline:GetMonitor";
 	/** [Read] deadline:GetMonitorSettings */
-	static readonly GET_MONITOR_SETTINGS = "deadline:GetMonitorSettings";
+	static readonly actionGetMonitorSettings = "deadline:GetMonitorSettings";
 	/** [Read] deadline:GetQueue */
-	static readonly GET_QUEUE = "deadline:GetQueue";
+	static readonly actionGetQueue = "deadline:GetQueue";
 	/** [Read] deadline:GetQueueEnvironment */
-	static readonly GET_QUEUE_ENVIRONMENT = "deadline:GetQueueEnvironment";
+	static readonly actionGetQueueEnvironment = "deadline:GetQueueEnvironment";
 	/** [Read] deadline:GetQueueFleetAssociation */
-	static readonly GET_QUEUE_FLEET_ASSOCIATION =
+	static readonly actionGetQueueFleetAssociation =
 		"deadline:GetQueueFleetAssociation";
 	/** [Read] deadline:GetQueueLimitAssociation */
-	static readonly GET_QUEUE_LIMIT_ASSOCIATION =
+	static readonly actionGetQueueLimitAssociation =
 		"deadline:GetQueueLimitAssociation";
 	/** [Read] deadline:GetSession */
-	static readonly GET_SESSION = "deadline:GetSession";
+	static readonly actionGetSession = "deadline:GetSession";
 	/** [Read] deadline:GetSessionAction */
-	static readonly GET_SESSION_ACTION = "deadline:GetSessionAction";
+	static readonly actionGetSessionAction = "deadline:GetSessionAction";
 	/** [Read] deadline:GetSessionsStatisticsAggregation */
-	static readonly GET_SESSIONS_STATISTICS_AGGREGATION =
+	static readonly actionGetSessionsStatisticsAggregation =
 		"deadline:GetSessionsStatisticsAggregation";
 	/** [Read] deadline:GetStep */
-	static readonly GET_STEP = "deadline:GetStep";
+	static readonly actionGetStep = "deadline:GetStep";
 	/** [Read] deadline:GetStorageProfile */
-	static readonly GET_STORAGE_PROFILE = "deadline:GetStorageProfile";
+	static readonly actionGetStorageProfile = "deadline:GetStorageProfile";
 	/** [Read] deadline:GetStorageProfileForQueue */
-	static readonly GET_STORAGE_PROFILE_FOR_QUEUE =
+	static readonly actionGetStorageProfileForQueue =
 		"deadline:GetStorageProfileForQueue";
 	/** [Read] deadline:GetTask */
-	static readonly GET_TASK = "deadline:GetTask";
+	static readonly actionGetTask = "deadline:GetTask";
 	/** [Read] deadline:GetVolume */
-	static readonly GET_VOLUME = "deadline:GetVolume";
+	static readonly actionGetVolume = "deadline:GetVolume";
 	/** [Read] deadline:GetWorker */
-	static readonly GET_WORKER = "deadline:GetWorker";
+	static readonly actionGetWorker = "deadline:GetWorker";
 	/** [List] deadline:ListAvailableMeteredProducts */
-	static readonly LIST_AVAILABLE_METERED_PRODUCTS =
+	static readonly ListAvailableMeteredProducts =
 		"deadline:ListAvailableMeteredProducts";
 	/** [List] deadline:ListBudgets */
-	static readonly LIST_BUDGETS = "deadline:ListBudgets";
+	static readonly ListBudgets = "deadline:ListBudgets";
 	/** [List] deadline:ListFarmMembers */
-	static readonly LIST_FARM_MEMBERS = "deadline:ListFarmMembers";
+	static readonly ListFarmMembers = "deadline:ListFarmMembers";
 	/** [List] deadline:ListFarms */
-	static readonly LIST_FARMS = "deadline:ListFarms";
+	static readonly ListFarms = "deadline:ListFarms";
 	/** [List] deadline:ListFleetMembers */
-	static readonly LIST_FLEET_MEMBERS = "deadline:ListFleetMembers";
+	static readonly ListFleetMembers = "deadline:ListFleetMembers";
 	/** [List] deadline:ListFleets */
-	static readonly LIST_FLEETS = "deadline:ListFleets";
+	static readonly ListFleets = "deadline:ListFleets";
 	/** [List] deadline:ListJobMembers */
-	static readonly LIST_JOB_MEMBERS = "deadline:ListJobMembers";
+	static readonly ListJobMembers = "deadline:ListJobMembers";
 	/** [List] deadline:ListJobParameterDefinitions */
-	static readonly LIST_JOB_PARAMETER_DEFINITIONS =
+	static readonly ListJobParameterDefinitions =
 		"deadline:ListJobParameterDefinitions";
 	/** [List] deadline:ListJobs */
-	static readonly LIST_JOBS = "deadline:ListJobs";
+	static readonly ListJobs = "deadline:ListJobs";
 	/** [List] deadline:ListLicenseEndpoints */
-	static readonly LIST_LICENSE_ENDPOINTS = "deadline:ListLicenseEndpoints";
+	static readonly ListLicenseEndpoints = "deadline:ListLicenseEndpoints";
 	/** [List] deadline:ListLimits */
-	static readonly LIST_LIMITS = "deadline:ListLimits";
+	static readonly ListLimits = "deadline:ListLimits";
 	/** [List] deadline:ListMeteredProducts */
-	static readonly LIST_METERED_PRODUCTS = "deadline:ListMeteredProducts";
+	static readonly ListMeteredProducts = "deadline:ListMeteredProducts";
 	/** [List] deadline:ListMonitors */
-	static readonly LIST_MONITORS = "deadline:ListMonitors";
+	static readonly ListMonitors = "deadline:ListMonitors";
 	/** [List] deadline:ListQueueEnvironments */
-	static readonly LIST_QUEUE_ENVIRONMENTS = "deadline:ListQueueEnvironments";
+	static readonly ListQueueEnvironments = "deadline:ListQueueEnvironments";
 	/** [List] deadline:ListQueueFleetAssociations */
-	static readonly LIST_QUEUE_FLEET_ASSOCIATIONS =
+	static readonly ListQueueFleetAssociations =
 		"deadline:ListQueueFleetAssociations";
 	/** [List] deadline:ListQueueLimitAssociations */
-	static readonly LIST_QUEUE_LIMIT_ASSOCIATIONS =
+	static readonly ListQueueLimitAssociations =
 		"deadline:ListQueueLimitAssociations";
 	/** [List] deadline:ListQueueMembers */
-	static readonly LIST_QUEUE_MEMBERS = "deadline:ListQueueMembers";
+	static readonly ListQueueMembers = "deadline:ListQueueMembers";
 	/** [List] deadline:ListQueues */
-	static readonly LIST_QUEUES = "deadline:ListQueues";
+	static readonly ListQueues = "deadline:ListQueues";
 	/** [List] deadline:ListSessionActions */
-	static readonly LIST_SESSION_ACTIONS = "deadline:ListSessionActions";
+	static readonly ListSessionActions = "deadline:ListSessionActions";
 	/** [List] deadline:ListSessions */
-	static readonly LIST_SESSIONS = "deadline:ListSessions";
+	static readonly ListSessions = "deadline:ListSessions";
 	/** [List] deadline:ListSessionsForWorker */
-	static readonly LIST_SESSIONS_FOR_WORKER = "deadline:ListSessionsForWorker";
+	static readonly ListSessionsForWorker = "deadline:ListSessionsForWorker";
 	/** [List] deadline:ListStepConsumers */
-	static readonly LIST_STEP_CONSUMERS = "deadline:ListStepConsumers";
+	static readonly ListStepConsumers = "deadline:ListStepConsumers";
 	/** [List] deadline:ListStepDependencies */
-	static readonly LIST_STEP_DEPENDENCIES = "deadline:ListStepDependencies";
+	static readonly ListStepDependencies = "deadline:ListStepDependencies";
 	/** [List] deadline:ListSteps */
-	static readonly LIST_STEPS = "deadline:ListSteps";
+	static readonly ListSteps = "deadline:ListSteps";
 	/** [List] deadline:ListStorageProfiles */
-	static readonly LIST_STORAGE_PROFILES = "deadline:ListStorageProfiles";
+	static readonly ListStorageProfiles = "deadline:ListStorageProfiles";
 	/** [List] deadline:ListStorageProfilesForQueue */
-	static readonly LIST_STORAGE_PROFILES_FOR_QUEUE =
+	static readonly ListStorageProfilesForQueue =
 		"deadline:ListStorageProfilesForQueue";
 	/** [Read] deadline:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "deadline:ListTagsForResource";
+	static readonly ListTagsForResource = "deadline:ListTagsForResource";
 	/** [List] deadline:ListTasks */
-	static readonly LIST_TASKS = "deadline:ListTasks";
+	static readonly ListTasks = "deadline:ListTasks";
 	/** [List] deadline:ListVolumes */
-	static readonly LIST_VOLUMES = "deadline:ListVolumes";
+	static readonly ListVolumes = "deadline:ListVolumes";
 	/** [List] deadline:ListWorkers */
-	static readonly LIST_WORKERS = "deadline:ListWorkers";
+	static readonly ListWorkers = "deadline:ListWorkers";
 	/** [Write] deadline:PutMeteredProduct */
-	static readonly PUT_METERED_PRODUCT = "deadline:PutMeteredProduct";
+	static readonly PutMeteredProduct = "deadline:PutMeteredProduct";
 	/** [Read] deadline:SearchJobs */
-	static readonly SEARCH_JOBS = "deadline:SearchJobs";
+	static readonly SearchJobs = "deadline:SearchJobs";
 	/** [Read] deadline:SearchSteps */
-	static readonly SEARCH_STEPS = "deadline:SearchSteps";
+	static readonly SearchSteps = "deadline:SearchSteps";
 	/** [Read] deadline:SearchTasks */
-	static readonly SEARCH_TASKS = "deadline:SearchTasks";
+	static readonly SearchTasks = "deadline:SearchTasks";
 	/** [Read] deadline:SearchWorkers */
-	static readonly SEARCH_WORKERS = "deadline:SearchWorkers";
+	static readonly SearchWorkers = "deadline:SearchWorkers";
 	/** [Read] deadline:StartSessionsStatisticsAggregation */
-	static readonly START_SESSIONS_STATISTICS_AGGREGATION =
+	static readonly StartSessionsStatisticsAggregation =
 		"deadline:StartSessionsStatisticsAggregation";
 	/** [Tagging] deadline:TagResource */
-	static readonly TAG_RESOURCE = "deadline:TagResource";
+	static readonly TagResource = "deadline:TagResource";
 	/** [Tagging] deadline:UntagResource */
-	static readonly UNTAG_RESOURCE = "deadline:UntagResource";
+	static readonly UntagResource = "deadline:UntagResource";
 	/** [Write] deadline:UpdateBudget */
-	static readonly UPDATE_BUDGET = "deadline:UpdateBudget";
+	static readonly UpdateBudget = "deadline:UpdateBudget";
 	/** [Write] deadline:UpdateFarm */
-	static readonly UPDATE_FARM = "deadline:UpdateFarm";
+	static readonly UpdateFarm = "deadline:UpdateFarm";
 	/** [Write] deadline:UpdateFleet */
-	static readonly UPDATE_FLEET = "deadline:UpdateFleet";
+	static readonly UpdateFleet = "deadline:UpdateFleet";
 	/** [Write] deadline:UpdateJob */
-	static readonly UPDATE_JOB = "deadline:UpdateJob";
+	static readonly UpdateJob = "deadline:UpdateJob";
 	/** [Write] deadline:UpdateLimit */
-	static readonly UPDATE_LIMIT = "deadline:UpdateLimit";
+	static readonly UpdateLimit = "deadline:UpdateLimit";
 	/** [Write] deadline:UpdateMonitor */
-	static readonly UPDATE_MONITOR = "deadline:UpdateMonitor";
+	static readonly UpdateMonitor = "deadline:UpdateMonitor";
 	/** [Write] deadline:UpdateMonitorSettings */
-	static readonly UPDATE_MONITOR_SETTINGS = "deadline:UpdateMonitorSettings";
+	static readonly UpdateMonitorSettings = "deadline:UpdateMonitorSettings";
 	/** [Write] deadline:UpdateQueue */
-	static readonly UPDATE_QUEUE = "deadline:UpdateQueue";
+	static readonly UpdateQueue = "deadline:UpdateQueue";
 	/** [Write] deadline:UpdateQueueEnvironment */
-	static readonly UPDATE_QUEUE_ENVIRONMENT = "deadline:UpdateQueueEnvironment";
+	static readonly UpdateQueueEnvironment = "deadline:UpdateQueueEnvironment";
 	/** [Write] deadline:UpdateQueueFleetAssociation */
-	static readonly UPDATE_QUEUE_FLEET_ASSOCIATION =
+	static readonly UpdateQueueFleetAssociation =
 		"deadline:UpdateQueueFleetAssociation";
 	/** [Write] deadline:UpdateQueueLimitAssociation */
-	static readonly UPDATE_QUEUE_LIMIT_ASSOCIATION =
+	static readonly UpdateQueueLimitAssociation =
 		"deadline:UpdateQueueLimitAssociation";
 	/** [Write] deadline:UpdateSession */
-	static readonly UPDATE_SESSION = "deadline:UpdateSession";
+	static readonly UpdateSession = "deadline:UpdateSession";
 	/** [Write] deadline:UpdateStep */
-	static readonly UPDATE_STEP = "deadline:UpdateStep";
+	static readonly UpdateStep = "deadline:UpdateStep";
 	/** [Write] deadline:UpdateStorageProfile */
-	static readonly UPDATE_STORAGE_PROFILE = "deadline:UpdateStorageProfile";
+	static readonly UpdateStorageProfile = "deadline:UpdateStorageProfile";
 	/** [Write] deadline:UpdateTask */
-	static readonly UPDATE_TASK = "deadline:UpdateTask";
+	static readonly UpdateTask = "deadline:UpdateTask";
 	/** [Write] deadline:UpdateWorker */
-	static readonly UPDATE_WORKER = "deadline:UpdateWorker";
+	static readonly UpdateWorker = "deadline:UpdateWorker";
 	/** [Write] deadline:UpdateWorkerSchedule */
-	static readonly UPDATE_WORKER_SCHEDULE = "deadline:UpdateWorkerSchedule";
+	static readonly UpdateWorkerSchedule = "deadline:UpdateWorkerSchedule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DeadlineActions.BATCH_GET_JOB_ENTITY,
-		DeadlineActions.GET_APPLICATION_VERSION,
-		DeadlineActions.GET_BUDGET,
-		DeadlineActions.GET_FARM,
-		DeadlineActions.GET_FLEET,
-		DeadlineActions.GET_JOB,
-		DeadlineActions.GET_JOB_TEMPLATE,
-		DeadlineActions.GET_LICENSE_ENDPOINT,
-		DeadlineActions.GET_LIMIT,
-		DeadlineActions.GET_MONITOR,
-		DeadlineActions.GET_MONITOR_SETTINGS,
-		DeadlineActions.GET_QUEUE,
-		DeadlineActions.GET_QUEUE_ENVIRONMENT,
-		DeadlineActions.GET_QUEUE_FLEET_ASSOCIATION,
-		DeadlineActions.GET_QUEUE_LIMIT_ASSOCIATION,
-		DeadlineActions.GET_SESSION,
-		DeadlineActions.GET_SESSION_ACTION,
-		DeadlineActions.GET_SESSIONS_STATISTICS_AGGREGATION,
-		DeadlineActions.GET_STEP,
-		DeadlineActions.GET_STORAGE_PROFILE,
-		DeadlineActions.GET_STORAGE_PROFILE_FOR_QUEUE,
-		DeadlineActions.GET_TASK,
-		DeadlineActions.GET_VOLUME,
-		DeadlineActions.GET_WORKER,
-		DeadlineActions.LIST_TAGS_FOR_RESOURCE,
-		DeadlineActions.SEARCH_JOBS,
-		DeadlineActions.SEARCH_STEPS,
-		DeadlineActions.SEARCH_TASKS,
-		DeadlineActions.SEARCH_WORKERS,
-		DeadlineActions.START_SESSIONS_STATISTICS_AGGREGATION,
+	static readonly AllReadActions: string[] = [
+		DeadlineActions.BatchGetJobEntity,
+		DeadlineActions.actionGetApplicationVersion,
+		DeadlineActions.actionGetBudget,
+		DeadlineActions.actionGetFarm,
+		DeadlineActions.actionGetFleet,
+		DeadlineActions.actionGetJob,
+		DeadlineActions.actionGetJobTemplate,
+		DeadlineActions.actionGetLicenseEndpoint,
+		DeadlineActions.actionGetLimit,
+		DeadlineActions.actionGetMonitor,
+		DeadlineActions.actionGetMonitorSettings,
+		DeadlineActions.actionGetQueue,
+		DeadlineActions.actionGetQueueEnvironment,
+		DeadlineActions.actionGetQueueFleetAssociation,
+		DeadlineActions.actionGetQueueLimitAssociation,
+		DeadlineActions.actionGetSession,
+		DeadlineActions.actionGetSessionAction,
+		DeadlineActions.actionGetSessionsStatisticsAggregation,
+		DeadlineActions.actionGetStep,
+		DeadlineActions.actionGetStorageProfile,
+		DeadlineActions.actionGetStorageProfileForQueue,
+		DeadlineActions.actionGetTask,
+		DeadlineActions.actionGetVolume,
+		DeadlineActions.actionGetWorker,
+		DeadlineActions.ListTagsForResource,
+		DeadlineActions.SearchJobs,
+		DeadlineActions.SearchSteps,
+		DeadlineActions.SearchTasks,
+		DeadlineActions.SearchWorkers,
+		DeadlineActions.StartSessionsStatisticsAggregation,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DeadlineActions.ASSUME_FLEET_ROLE_FOR_READ,
-		DeadlineActions.ASSUME_FLEET_ROLE_FOR_WORKER,
-		DeadlineActions.ASSUME_QUEUE_ROLE_FOR_READ,
-		DeadlineActions.ASSUME_QUEUE_ROLE_FOR_USER,
-		DeadlineActions.ASSUME_QUEUE_ROLE_FOR_WORKER,
-		DeadlineActions.COPY_JOB_TEMPLATE,
-		DeadlineActions.CREATE_BUDGET,
-		DeadlineActions.CREATE_FARM,
-		DeadlineActions.CREATE_FLEET,
-		DeadlineActions.CREATE_JOB,
-		DeadlineActions.CREATE_LICENSE_ENDPOINT,
-		DeadlineActions.CREATE_LIMIT,
-		DeadlineActions.CREATE_MONITOR,
-		DeadlineActions.CREATE_QUEUE,
-		DeadlineActions.CREATE_QUEUE_ENVIRONMENT,
-		DeadlineActions.CREATE_QUEUE_FLEET_ASSOCIATION,
-		DeadlineActions.CREATE_QUEUE_LIMIT_ASSOCIATION,
-		DeadlineActions.CREATE_STORAGE_PROFILE,
-		DeadlineActions.CREATE_WORKER,
-		DeadlineActions.DELETE_BUDGET,
-		DeadlineActions.DELETE_FARM,
-		DeadlineActions.DELETE_FLEET,
-		DeadlineActions.DELETE_LICENSE_ENDPOINT,
-		DeadlineActions.DELETE_LIMIT,
-		DeadlineActions.DELETE_METERED_PRODUCT,
-		DeadlineActions.DELETE_MONITOR,
-		DeadlineActions.DELETE_QUEUE,
-		DeadlineActions.DELETE_QUEUE_ENVIRONMENT,
-		DeadlineActions.DELETE_QUEUE_FLEET_ASSOCIATION,
-		DeadlineActions.DELETE_QUEUE_LIMIT_ASSOCIATION,
-		DeadlineActions.DELETE_STORAGE_PROFILE,
-		DeadlineActions.DELETE_VOLUME,
-		DeadlineActions.DELETE_WORKER,
-		DeadlineActions.PUT_METERED_PRODUCT,
-		DeadlineActions.UPDATE_BUDGET,
-		DeadlineActions.UPDATE_FARM,
-		DeadlineActions.UPDATE_FLEET,
-		DeadlineActions.UPDATE_JOB,
-		DeadlineActions.UPDATE_LIMIT,
-		DeadlineActions.UPDATE_MONITOR,
-		DeadlineActions.UPDATE_MONITOR_SETTINGS,
-		DeadlineActions.UPDATE_QUEUE,
-		DeadlineActions.UPDATE_QUEUE_ENVIRONMENT,
-		DeadlineActions.UPDATE_QUEUE_FLEET_ASSOCIATION,
-		DeadlineActions.UPDATE_QUEUE_LIMIT_ASSOCIATION,
-		DeadlineActions.UPDATE_SESSION,
-		DeadlineActions.UPDATE_STEP,
-		DeadlineActions.UPDATE_STORAGE_PROFILE,
-		DeadlineActions.UPDATE_TASK,
-		DeadlineActions.UPDATE_WORKER,
-		DeadlineActions.UPDATE_WORKER_SCHEDULE,
+	static readonly AllWriteActions: string[] = [
+		DeadlineActions.AssumeFleetRoleForRead,
+		DeadlineActions.AssumeFleetRoleForWorker,
+		DeadlineActions.AssumeQueueRoleForRead,
+		DeadlineActions.AssumeQueueRoleForUser,
+		DeadlineActions.AssumeQueueRoleForWorker,
+		DeadlineActions.CopyJobTemplate,
+		DeadlineActions.CreateBudget,
+		DeadlineActions.CreateFarm,
+		DeadlineActions.CreateFleet,
+		DeadlineActions.CreateJob,
+		DeadlineActions.CreateLicenseEndpoint,
+		DeadlineActions.CreateLimit,
+		DeadlineActions.CreateMonitor,
+		DeadlineActions.CreateQueue,
+		DeadlineActions.CreateQueueEnvironment,
+		DeadlineActions.CreateQueueFleetAssociation,
+		DeadlineActions.CreateQueueLimitAssociation,
+		DeadlineActions.CreateStorageProfile,
+		DeadlineActions.CreateWorker,
+		DeadlineActions.DeleteBudget,
+		DeadlineActions.DeleteFarm,
+		DeadlineActions.DeleteFleet,
+		DeadlineActions.DeleteLicenseEndpoint,
+		DeadlineActions.DeleteLimit,
+		DeadlineActions.DeleteMeteredProduct,
+		DeadlineActions.DeleteMonitor,
+		DeadlineActions.DeleteQueue,
+		DeadlineActions.DeleteQueueEnvironment,
+		DeadlineActions.DeleteQueueFleetAssociation,
+		DeadlineActions.DeleteQueueLimitAssociation,
+		DeadlineActions.DeleteStorageProfile,
+		DeadlineActions.DeleteVolume,
+		DeadlineActions.DeleteWorker,
+		DeadlineActions.PutMeteredProduct,
+		DeadlineActions.UpdateBudget,
+		DeadlineActions.UpdateFarm,
+		DeadlineActions.UpdateFleet,
+		DeadlineActions.UpdateJob,
+		DeadlineActions.UpdateLimit,
+		DeadlineActions.UpdateMonitor,
+		DeadlineActions.UpdateMonitorSettings,
+		DeadlineActions.UpdateQueue,
+		DeadlineActions.UpdateQueueEnvironment,
+		DeadlineActions.UpdateQueueFleetAssociation,
+		DeadlineActions.UpdateQueueLimitAssociation,
+		DeadlineActions.UpdateSession,
+		DeadlineActions.UpdateStep,
+		DeadlineActions.UpdateStorageProfile,
+		DeadlineActions.UpdateTask,
+		DeadlineActions.UpdateWorker,
+		DeadlineActions.UpdateWorkerSchedule,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DeadlineActions.LIST_AVAILABLE_METERED_PRODUCTS,
-		DeadlineActions.LIST_BUDGETS,
-		DeadlineActions.LIST_FARM_MEMBERS,
-		DeadlineActions.LIST_FARMS,
-		DeadlineActions.LIST_FLEET_MEMBERS,
-		DeadlineActions.LIST_FLEETS,
-		DeadlineActions.LIST_JOB_MEMBERS,
-		DeadlineActions.LIST_JOB_PARAMETER_DEFINITIONS,
-		DeadlineActions.LIST_JOBS,
-		DeadlineActions.LIST_LICENSE_ENDPOINTS,
-		DeadlineActions.LIST_LIMITS,
-		DeadlineActions.LIST_METERED_PRODUCTS,
-		DeadlineActions.LIST_MONITORS,
-		DeadlineActions.LIST_QUEUE_ENVIRONMENTS,
-		DeadlineActions.LIST_QUEUE_FLEET_ASSOCIATIONS,
-		DeadlineActions.LIST_QUEUE_LIMIT_ASSOCIATIONS,
-		DeadlineActions.LIST_QUEUE_MEMBERS,
-		DeadlineActions.LIST_QUEUES,
-		DeadlineActions.LIST_SESSION_ACTIONS,
-		DeadlineActions.LIST_SESSIONS,
-		DeadlineActions.LIST_SESSIONS_FOR_WORKER,
-		DeadlineActions.LIST_STEP_CONSUMERS,
-		DeadlineActions.LIST_STEP_DEPENDENCIES,
-		DeadlineActions.LIST_STEPS,
-		DeadlineActions.LIST_STORAGE_PROFILES,
-		DeadlineActions.LIST_STORAGE_PROFILES_FOR_QUEUE,
-		DeadlineActions.LIST_TASKS,
-		DeadlineActions.LIST_VOLUMES,
-		DeadlineActions.LIST_WORKERS,
+	static readonly AllListActions: string[] = [
+		DeadlineActions.ListAvailableMeteredProducts,
+		DeadlineActions.ListBudgets,
+		DeadlineActions.ListFarmMembers,
+		DeadlineActions.ListFarms,
+		DeadlineActions.ListFleetMembers,
+		DeadlineActions.ListFleets,
+		DeadlineActions.ListJobMembers,
+		DeadlineActions.ListJobParameterDefinitions,
+		DeadlineActions.ListJobs,
+		DeadlineActions.ListLicenseEndpoints,
+		DeadlineActions.ListLimits,
+		DeadlineActions.ListMeteredProducts,
+		DeadlineActions.ListMonitors,
+		DeadlineActions.ListQueueEnvironments,
+		DeadlineActions.ListQueueFleetAssociations,
+		DeadlineActions.ListQueueLimitAssociations,
+		DeadlineActions.ListQueueMembers,
+		DeadlineActions.ListQueues,
+		DeadlineActions.ListSessionActions,
+		DeadlineActions.ListSessions,
+		DeadlineActions.ListSessionsForWorker,
+		DeadlineActions.ListStepConsumers,
+		DeadlineActions.ListStepDependencies,
+		DeadlineActions.ListSteps,
+		DeadlineActions.ListStorageProfiles,
+		DeadlineActions.ListStorageProfilesForQueue,
+		DeadlineActions.ListTasks,
+		DeadlineActions.ListVolumes,
+		DeadlineActions.ListWorkers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		DeadlineActions.ASSOCIATE_MEMBER_TO_FARM,
-		DeadlineActions.ASSOCIATE_MEMBER_TO_FLEET,
-		DeadlineActions.ASSOCIATE_MEMBER_TO_JOB,
-		DeadlineActions.ASSOCIATE_MEMBER_TO_QUEUE,
-		DeadlineActions.DISASSOCIATE_MEMBER_FROM_FARM,
-		DeadlineActions.DISASSOCIATE_MEMBER_FROM_FLEET,
-		DeadlineActions.DISASSOCIATE_MEMBER_FROM_JOB,
-		DeadlineActions.DISASSOCIATE_MEMBER_FROM_QUEUE,
+	static readonly AllPermissionManagementActions: string[] = [
+		DeadlineActions.AssociateMemberToFarm,
+		DeadlineActions.AssociateMemberToFleet,
+		DeadlineActions.AssociateMemberToJob,
+		DeadlineActions.AssociateMemberToQueue,
+		DeadlineActions.DisassociateMemberFromFarm,
+		DeadlineActions.DisassociateMemberFromFleet,
+		DeadlineActions.DisassociateMemberFromJob,
+		DeadlineActions.DisassociateMemberFromQueue,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DeadlineActions.TAG_RESOURCE,
-		DeadlineActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DeadlineActions.TagResource,
+		DeadlineActions.UntagResource,
 	];
 }
 
-const BudgetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/budget/(?<budgetId>[^:/?]+)$",
-);
-const FarmArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)$",
-);
-const FleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/fleet/(?<fleetId>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/queue/(?<queueId>[^:/?]+)/job/(?<jobId>[^:/?]+)$",
-);
-const LicenseEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):license-endpoint/(?<licenseEndpointId>[^:/?]+)$",
-);
-const MonitorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):monitor/(?<monitorId>[^:/?]+)$",
-);
-const QueueArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/queue/(?<queueId>[^:/?]+)$",
-);
-const VolumeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/fleet/(?<fleetId>[^:/?]+)/volume/(?<volumeId>[^:/?]+)$",
-);
-const WorkerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm/(?<farmId>[^:/?]+)/fleet/(?<fleetId>[^:/?]+)/worker/(?<workerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a budget ARN.
+ */
+export interface DeadlineBudgetArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The BudgetId component of the ARN. */
+	readonly budgetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a budget ARN.
+ */
+export interface DeadlineBudgetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The BudgetId component. */
+	readonly budgetId: string;
+}
+
+/**
+ * Properties for building a farm ARN.
+ */
+export interface DeadlineFarmArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a farm ARN.
+ */
+export interface DeadlineFarmArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+}
+
+/**
+ * Properties for building a fleet ARN.
+ */
+export interface DeadlineFleetArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The FleetId component of the ARN. */
+	readonly fleetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fleet ARN.
+ */
+export interface DeadlineFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The FleetId component. */
+	readonly fleetId: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface DeadlineJobArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The QueueId component of the ARN. */
+	readonly queueId: string;
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface DeadlineJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The QueueId component. */
+	readonly queueId: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a license-endpoint ARN.
+ */
+export interface DeadlineLicenseEndpointArnProps {
+	/** The LicenseEndpointId component of the ARN. */
+	readonly licenseEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license-endpoint ARN.
+ */
+export interface DeadlineLicenseEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseEndpointId component. */
+	readonly licenseEndpointId: string;
+}
+
+/**
+ * Properties for building a monitor ARN.
+ */
+export interface DeadlineMonitorArnProps {
+	/** The MonitorId component of the ARN. */
+	readonly monitorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a monitor ARN.
+ */
+export interface DeadlineMonitorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitorId component. */
+	readonly monitorId: string;
+}
+
+/**
+ * Properties for building a queue ARN.
+ */
+export interface DeadlineQueueArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The QueueId component of the ARN. */
+	readonly queueId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a queue ARN.
+ */
+export interface DeadlineQueueArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The QueueId component. */
+	readonly queueId: string;
+}
+
+/**
+ * Properties for building a volume ARN.
+ */
+export interface DeadlineVolumeArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The FleetId component of the ARN. */
+	readonly fleetId: string;
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a volume ARN.
+ */
+export interface DeadlineVolumeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The FleetId component. */
+	readonly fleetId: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+}
+
+/**
+ * Properties for building a worker ARN.
+ */
+export interface DeadlineWorkerArnProps {
+	/** The FarmId component of the ARN. */
+	readonly farmId: string;
+	/** The FleetId component of the ARN. */
+	readonly fleetId: string;
+	/** The WorkerId component of the ARN. */
+	readonly workerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a worker ARN.
+ */
+export interface DeadlineWorkerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FarmId component. */
+	readonly farmId: string;
+	/** The FleetId component. */
+	readonly fleetId: string;
+	/** The WorkerId component. */
+	readonly workerId: string;
+}
+
+const BudgetArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/budget\/(?<budgetId>[^:/?]+)$/;
+const FarmArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)$/;
+const FleetArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/fleet\/(?<fleetId>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/queue\/(?<queueId>[^:/?]+)\/job\/(?<jobId>[^:/?]+)$/;
+const LicenseEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):license-endpoint\/(?<licenseEndpointId>[^:/?]+)$/;
+const MonitorArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):monitor\/(?<monitorId>[^:/?]+)$/;
+const QueueArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/queue\/(?<queueId>[^:/?]+)$/;
+const VolumeArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/fleet\/(?<fleetId>[^:/?]+)\/volume\/(?<volumeId>[^:/?]+)$/;
+const WorkerArnRegex =
+	/^arn:(?<partition>[^:]+):deadline:(?<region>[^:]*):(?<account>[^:]*):farm\/(?<farmId>[^:/?]+)\/fleet\/(?<fleetId>[^:/?]+)\/worker\/(?<workerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for deadline resources.
@@ -450,18 +727,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the budget resource.
 	 */
-	static budget(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The BudgetId component of the ARN. */
-		readonly budgetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static budget(props: DeadlineBudgetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/budget/${props.budgetId}`;
 	}
 
@@ -476,13 +742,7 @@ export class DeadlineResources {
 	 * Parses a budget ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBudgetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		budgetId: string;
-	} {
+	static parseBudgetArn(arn: string): DeadlineBudgetArnComponents {
 		const match = BudgetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid budget ARN: ${arn}`);
@@ -499,16 +759,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the farm resource.
 	 */
-	static farm(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static farm(props: DeadlineFarmArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}`;
 	}
 
@@ -523,12 +774,7 @@ export class DeadlineResources {
 	 * Parses a farm ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFarmArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-	} {
+	static parseFarmArn(arn: string): DeadlineFarmArnComponents {
 		const match = FarmArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid farm ARN: ${arn}`);
@@ -544,18 +790,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the fleet resource.
 	 */
-	static fleet(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The FleetId component of the ARN. */
-		readonly fleetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fleet(props: DeadlineFleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/fleet/${props.fleetId}`;
 	}
 
@@ -570,13 +805,7 @@ export class DeadlineResources {
 	 * Parses a fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		fleetId: string;
-	} {
+	static parseFleetArn(arn: string): DeadlineFleetArnComponents {
 		const match = FleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fleet ARN: ${arn}`);
@@ -593,20 +822,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The QueueId component of the ARN. */
-		readonly queueId: string;
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: DeadlineJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/queue/${props.queueId}/job/${props.jobId}`;
 	}
 
@@ -621,14 +837,7 @@ export class DeadlineResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		queueId: string;
-		jobId: string;
-	} {
+	static parseJobArn(arn: string): DeadlineJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -646,16 +855,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the license-endpoint resource.
 	 */
-	static licenseEndpoint(props: {
-		/** The LicenseEndpointId component of the ARN. */
-		readonly licenseEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static licenseEndpoint(props: DeadlineLicenseEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:license-endpoint/${props.licenseEndpointId}`;
 	}
 
@@ -670,12 +870,9 @@ export class DeadlineResources {
 	 * Parses a license-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		licenseEndpointId: string;
-	} {
+	static parseLicenseEndpointArn(
+		arn: string,
+	): DeadlineLicenseEndpointArnComponents {
 		const match = LicenseEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license-endpoint ARN: ${arn}`);
@@ -691,16 +888,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the monitor resource.
 	 */
-	static monitor(props: {
-		/** The MonitorId component of the ARN. */
-		readonly monitorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static monitor(props: DeadlineMonitorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:monitor/${props.monitorId}`;
 	}
 
@@ -715,12 +903,7 @@ export class DeadlineResources {
 	 * Parses a monitor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMonitorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitorId: string;
-	} {
+	static parseMonitorArn(arn: string): DeadlineMonitorArnComponents {
 		const match = MonitorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid monitor ARN: ${arn}`);
@@ -736,18 +919,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the queue resource.
 	 */
-	static queue(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The QueueId component of the ARN. */
-		readonly queueId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static queue(props: DeadlineQueueArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/queue/${props.queueId}`;
 	}
 
@@ -762,13 +934,7 @@ export class DeadlineResources {
 	 * Parses a queue ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQueueArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		queueId: string;
-	} {
+	static parseQueueArn(arn: string): DeadlineQueueArnComponents {
 		const match = QueueArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid queue ARN: ${arn}`);
@@ -785,20 +951,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the volume resource.
 	 */
-	static volume(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The FleetId component of the ARN. */
-		readonly fleetId: string;
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static volume(props: DeadlineVolumeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/fleet/${props.fleetId}/volume/${props.volumeId}`;
 	}
 
@@ -813,14 +966,7 @@ export class DeadlineResources {
 	 * Parses a volume ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVolumeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		fleetId: string;
-		volumeId: string;
-	} {
+	static parseVolumeArn(arn: string): DeadlineVolumeArnComponents {
 		const match = VolumeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid volume ARN: ${arn}`);
@@ -838,20 +984,7 @@ export class DeadlineResources {
 	/**
 	 * Builds an ARN for the worker resource.
 	 */
-	static worker(props: {
-		/** The FarmId component of the ARN. */
-		readonly farmId: string;
-		/** The FleetId component of the ARN. */
-		readonly fleetId: string;
-		/** The WorkerId component of the ARN. */
-		readonly workerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static worker(props: DeadlineWorkerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:deadline:${props.region ?? "*"}:${props.account ?? "*"}:farm/${props.farmId}/fleet/${props.fleetId}/worker/${props.workerId}`;
 	}
 
@@ -866,14 +999,7 @@ export class DeadlineResources {
 	 * Parses a worker ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		farmId: string;
-		fleetId: string;
-		workerId: string;
-	} {
+	static parseWorkerArn(arn: string): DeadlineWorkerArnComponents {
 		const match = WorkerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid worker ARN: ${arn}`);
@@ -894,406 +1020,400 @@ export class DeadlineResources {
  */
 export class DeadlineOperations {
 	/** IAM actions required for the AssociateMemberToFarm API call. */
-	static readonly ASSOCIATE_MEMBER_TO_FARM: string[] = [
+	static readonly AssociateMemberToFarm: string[] = [
 		"deadline:AssociateMemberToFarm",
 	];
 	/** IAM actions required for the AssociateMemberToFleet API call. */
-	static readonly ASSOCIATE_MEMBER_TO_FLEET: string[] = [
+	static readonly AssociateMemberToFleet: string[] = [
 		"deadline:AssociateMemberToFleet",
 	];
 	/** IAM actions required for the AssociateMemberToJob API call. */
-	static readonly ASSOCIATE_MEMBER_TO_JOB: string[] = [
+	static readonly AssociateMemberToJob: string[] = [
 		"deadline:AssociateMemberToJob",
 	];
 	/** IAM actions required for the AssociateMemberToQueue API call. */
-	static readonly ASSOCIATE_MEMBER_TO_QUEUE: string[] = [
+	static readonly AssociateMemberToQueue: string[] = [
 		"deadline:AssociateMemberToQueue",
 	];
 	/** IAM actions required for the AssumeFleetRoleForRead API call. */
-	static readonly ASSUME_FLEET_ROLE_FOR_READ: string[] = [
+	static readonly AssumeFleetRoleForRead: string[] = [
 		"deadline:AssumeFleetRoleForRead",
 	];
 	/** IAM actions required for the AssumeFleetRoleForWorker API call. */
-	static readonly ASSUME_FLEET_ROLE_FOR_WORKER: string[] = [
+	static readonly AssumeFleetRoleForWorker: string[] = [
 		"deadline:AssumeFleetRoleForWorker",
 	];
 	/** IAM actions required for the AssumeQueueRoleForRead API call. */
-	static readonly ASSUME_QUEUE_ROLE_FOR_READ: string[] = [
+	static readonly AssumeQueueRoleForRead: string[] = [
 		"deadline:AssumeQueueRoleForRead",
 	];
 	/** IAM actions required for the AssumeQueueRoleForUser API call. */
-	static readonly ASSUME_QUEUE_ROLE_FOR_USER: string[] = [
+	static readonly AssumeQueueRoleForUser: string[] = [
 		"deadline:AssumeQueueRoleForUser",
 	];
 	/** IAM actions required for the AssumeQueueRoleForWorker API call. */
-	static readonly ASSUME_QUEUE_ROLE_FOR_WORKER: string[] = [
+	static readonly AssumeQueueRoleForWorker: string[] = [
 		"deadline:AssumeQueueRoleForWorker",
 	];
 	/** IAM actions required for the BatchGetJob API call. */
-	static readonly BATCH_GET_JOB: string[] = ["deadline:GetJob"];
+	static readonly BatchGetJob: string[] = ["deadline:GetJob"];
 	/** IAM actions required for the BatchGetJobEntity API call. */
-	static readonly BATCH_GET_JOB_ENTITY: string[] = [
-		"deadline:BatchGetJobEntity",
-	];
+	static readonly BatchGetJobEntity: string[] = ["deadline:BatchGetJobEntity"];
 	/** IAM actions required for the BatchGetSession API call. */
-	static readonly BATCH_GET_SESSION: string[] = ["deadline:GetSession"];
+	static readonly BatchGetSession: string[] = ["deadline:GetSession"];
 	/** IAM actions required for the BatchGetSessionAction API call. */
-	static readonly BATCH_GET_SESSION_ACTION: string[] = [
+	static readonly BatchGetSessionAction: string[] = [
 		"deadline:GetSessionAction",
 	];
 	/** IAM actions required for the BatchGetStep API call. */
-	static readonly BATCH_GET_STEP: string[] = ["deadline:GetStep"];
+	static readonly BatchGetStep: string[] = ["deadline:GetStep"];
 	/** IAM actions required for the BatchGetTask API call. */
-	static readonly BATCH_GET_TASK: string[] = ["deadline:GetTask"];
+	static readonly BatchGetTask: string[] = ["deadline:GetTask"];
 	/** IAM actions required for the BatchGetWorker API call. */
-	static readonly BATCH_GET_WORKER: string[] = ["deadline:GetWorker"];
+	static readonly BatchGetWorker: string[] = ["deadline:GetWorker"];
 	/** IAM actions required for the BatchUpdateJob API call. */
-	static readonly BATCH_UPDATE_JOB: string[] = ["deadline:UpdateJob"];
+	static readonly BatchUpdateJob: string[] = ["deadline:UpdateJob"];
 	/** IAM actions required for the BatchUpdateTask API call. */
-	static readonly BATCH_UPDATE_TASK: string[] = ["deadline:UpdateTask"];
+	static readonly BatchUpdateTask: string[] = ["deadline:UpdateTask"];
 	/** IAM actions required for the CopyJobTemplate API call. */
-	static readonly COPY_JOB_TEMPLATE: string[] = [
+	static readonly CopyJobTemplate: string[] = [
 		"deadline:CopyJobTemplate",
 		"deadline:GetJobTemplate",
 	];
 	/** IAM actions required for the CreateBudget API call. */
-	static readonly CREATE_BUDGET: string[] = [
+	static readonly CreateBudget: string[] = [
 		"deadline:CreateBudget",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateFarm API call. */
-	static readonly CREATE_FARM: string[] = [
+	static readonly CreateFarm: string[] = [
 		"deadline:CreateFarm",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateFleet API call. */
-	static readonly CREATE_FLEET: string[] = [
+	static readonly CreateFleet: string[] = [
 		"deadline:CreateFleet",
 		"iam:PassRole",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"deadline:CreateJob",
 		"deadline:GetJobTemplate",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseEndpoint API call. */
-	static readonly CREATE_LICENSE_ENDPOINT: string[] = [
+	static readonly CreateLicenseEndpoint: string[] = [
 		"deadline:CreateLicenseEndpoint",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateLimit API call. */
-	static readonly CREATE_LIMIT: string[] = ["deadline:CreateLimit"];
+	static readonly CreateLimit: string[] = ["deadline:CreateLimit"];
 	/** IAM actions required for the CreateMonitor API call. */
-	static readonly CREATE_MONITOR: string[] = [
+	static readonly CreateMonitor: string[] = [
 		"deadline:CreateMonitor",
 		"iam:PassRole",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateQueue API call. */
-	static readonly CREATE_QUEUE: string[] = [
+	static readonly CreateQueue: string[] = [
 		"deadline:CreateQueue",
 		"iam:PassRole",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the CreateQueueEnvironment API call. */
-	static readonly CREATE_QUEUE_ENVIRONMENT: string[] = [
+	static readonly CreateQueueEnvironment: string[] = [
 		"deadline:CreateQueueEnvironment",
 	];
 	/** IAM actions required for the CreateQueueFleetAssociation API call. */
-	static readonly CREATE_QUEUE_FLEET_ASSOCIATION: string[] = [
+	static readonly CreateQueueFleetAssociation: string[] = [
 		"deadline:CreateQueueFleetAssociation",
 	];
 	/** IAM actions required for the CreateQueueLimitAssociation API call. */
-	static readonly CREATE_QUEUE_LIMIT_ASSOCIATION: string[] = [
+	static readonly CreateQueueLimitAssociation: string[] = [
 		"deadline:CreateQueueLimitAssociation",
 	];
 	/** IAM actions required for the CreateStorageProfile API call. */
-	static readonly CREATE_STORAGE_PROFILE: string[] = [
+	static readonly CreateStorageProfile: string[] = [
 		"deadline:CreateStorageProfile",
 	];
 	/** IAM actions required for the CreateWorker API call. */
-	static readonly CREATE_WORKER: string[] = [
+	static readonly CreateWorker: string[] = [
 		"deadline:CreateWorker",
 		"deadline:ListTagsForResource",
 		"deadline:TagResource",
 	];
 	/** IAM actions required for the DeleteBudget API call. */
-	static readonly DELETE_BUDGET: string[] = ["deadline:DeleteBudget"];
+	static readonly DeleteBudget: string[] = ["deadline:DeleteBudget"];
 	/** IAM actions required for the DeleteFarm API call. */
-	static readonly DELETE_FARM: string[] = ["deadline:DeleteFarm"];
+	static readonly DeleteFarm: string[] = ["deadline:DeleteFarm"];
 	/** IAM actions required for the DeleteFleet API call. */
-	static readonly DELETE_FLEET: string[] = ["deadline:DeleteFleet"];
+	static readonly DeleteFleet: string[] = ["deadline:DeleteFleet"];
 	/** IAM actions required for the DeleteLicenseEndpoint API call. */
-	static readonly DELETE_LICENSE_ENDPOINT: string[] = [
+	static readonly DeleteLicenseEndpoint: string[] = [
 		"deadline:DeleteLicenseEndpoint",
 	];
 	/** IAM actions required for the DeleteLimit API call. */
-	static readonly DELETE_LIMIT: string[] = ["deadline:DeleteLimit"];
+	static readonly DeleteLimit: string[] = ["deadline:DeleteLimit"];
 	/** IAM actions required for the DeleteMeteredProduct API call. */
-	static readonly DELETE_METERED_PRODUCT: string[] = [
+	static readonly DeleteMeteredProduct: string[] = [
 		"deadline:DeleteMeteredProduct",
 	];
 	/** IAM actions required for the DeleteMonitor API call. */
-	static readonly DELETE_MONITOR: string[] = ["deadline:DeleteMonitor"];
+	static readonly DeleteMonitor: string[] = ["deadline:DeleteMonitor"];
 	/** IAM actions required for the DeleteQueue API call. */
-	static readonly DELETE_QUEUE: string[] = ["deadline:DeleteQueue"];
+	static readonly DeleteQueue: string[] = ["deadline:DeleteQueue"];
 	/** IAM actions required for the DeleteQueueEnvironment API call. */
-	static readonly DELETE_QUEUE_ENVIRONMENT: string[] = [
+	static readonly DeleteQueueEnvironment: string[] = [
 		"deadline:DeleteQueueEnvironment",
 	];
 	/** IAM actions required for the DeleteQueueFleetAssociation API call. */
-	static readonly DELETE_QUEUE_FLEET_ASSOCIATION: string[] = [
+	static readonly DeleteQueueFleetAssociation: string[] = [
 		"deadline:DeleteQueueFleetAssociation",
 	];
 	/** IAM actions required for the DeleteQueueLimitAssociation API call. */
-	static readonly DELETE_QUEUE_LIMIT_ASSOCIATION: string[] = [
+	static readonly DeleteQueueLimitAssociation: string[] = [
 		"deadline:DeleteQueueLimitAssociation",
 	];
 	/** IAM actions required for the DeleteStorageProfile API call. */
-	static readonly DELETE_STORAGE_PROFILE: string[] = [
+	static readonly DeleteStorageProfile: string[] = [
 		"deadline:DeleteStorageProfile",
 	];
 	/** IAM actions required for the DeleteVolume API call. */
-	static readonly DELETE_VOLUME: string[] = ["deadline:DeleteVolume"];
+	static readonly DeleteVolume: string[] = ["deadline:DeleteVolume"];
 	/** IAM actions required for the DeleteWorker API call. */
-	static readonly DELETE_WORKER: string[] = ["deadline:DeleteWorker"];
+	static readonly DeleteWorker: string[] = ["deadline:DeleteWorker"];
 	/** IAM actions required for the DisassociateMemberFromFarm API call. */
-	static readonly DISASSOCIATE_MEMBER_FROM_FARM: string[] = [
+	static readonly DisassociateMemberFromFarm: string[] = [
 		"deadline:DisassociateMemberFromFarm",
 	];
 	/** IAM actions required for the DisassociateMemberFromFleet API call. */
-	static readonly DISASSOCIATE_MEMBER_FROM_FLEET: string[] = [
+	static readonly DisassociateMemberFromFleet: string[] = [
 		"deadline:DisassociateMemberFromFleet",
 	];
 	/** IAM actions required for the DisassociateMemberFromJob API call. */
-	static readonly DISASSOCIATE_MEMBER_FROM_JOB: string[] = [
+	static readonly DisassociateMemberFromJob: string[] = [
 		"deadline:DisassociateMemberFromJob",
 	];
 	/** IAM actions required for the DisassociateMemberFromQueue API call. */
-	static readonly DISASSOCIATE_MEMBER_FROM_QUEUE: string[] = [
+	static readonly DisassociateMemberFromQueue: string[] = [
 		"deadline:DisassociateMemberFromQueue",
 	];
 	/** IAM actions required for the GetBudget API call. */
-	static readonly GET_BUDGET: string[] = ["deadline:GetBudget"];
+	static readonly opGetBudget: string[] = ["deadline:GetBudget"];
 	/** IAM actions required for the GetFarm API call. */
-	static readonly GET_FARM: string[] = ["deadline:GetFarm"];
+	static readonly opGetFarm: string[] = ["deadline:GetFarm"];
 	/** IAM actions required for the GetFleet API call. */
-	static readonly GET_FLEET: string[] = ["deadline:GetFleet"];
+	static readonly opGetFleet: string[] = ["deadline:GetFleet"];
 	/** IAM actions required for the GetJob API call. */
-	static readonly GET_JOB: string[] = ["deadline:GetJob"];
+	static readonly opGetJob: string[] = ["deadline:GetJob"];
 	/** IAM actions required for the GetLicenseEndpoint API call. */
-	static readonly GET_LICENSE_ENDPOINT: string[] = [
+	static readonly opGetLicenseEndpoint: string[] = [
 		"deadline:GetLicenseEndpoint",
 	];
 	/** IAM actions required for the GetLimit API call. */
-	static readonly GET_LIMIT: string[] = ["deadline:GetLimit"];
+	static readonly opGetLimit: string[] = ["deadline:GetLimit"];
 	/** IAM actions required for the GetMonitor API call. */
-	static readonly GET_MONITOR: string[] = ["deadline:GetMonitor"];
+	static readonly opGetMonitor: string[] = ["deadline:GetMonitor"];
 	/** IAM actions required for the GetMonitorSettings API call. */
-	static readonly GET_MONITOR_SETTINGS: string[] = [
+	static readonly opGetMonitorSettings: string[] = [
 		"deadline:GetMonitorSettings",
 	];
 	/** IAM actions required for the GetQueue API call. */
-	static readonly GET_QUEUE: string[] = ["deadline:GetQueue"];
+	static readonly opGetQueue: string[] = ["deadline:GetQueue"];
 	/** IAM actions required for the GetQueueEnvironment API call. */
-	static readonly GET_QUEUE_ENVIRONMENT: string[] = [
+	static readonly opGetQueueEnvironment: string[] = [
 		"deadline:GetQueueEnvironment",
 	];
 	/** IAM actions required for the GetQueueFleetAssociation API call. */
-	static readonly GET_QUEUE_FLEET_ASSOCIATION: string[] = [
+	static readonly opGetQueueFleetAssociation: string[] = [
 		"deadline:GetQueueFleetAssociation",
 	];
 	/** IAM actions required for the GetQueueLimitAssociation API call. */
-	static readonly GET_QUEUE_LIMIT_ASSOCIATION: string[] = [
+	static readonly opGetQueueLimitAssociation: string[] = [
 		"deadline:GetQueueLimitAssociation",
 	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["deadline:GetSession"];
+	static readonly opGetSession: string[] = ["deadline:GetSession"];
 	/** IAM actions required for the GetSessionAction API call. */
-	static readonly GET_SESSION_ACTION: string[] = ["deadline:GetSessionAction"];
+	static readonly opGetSessionAction: string[] = ["deadline:GetSessionAction"];
 	/** IAM actions required for the GetSessionsStatisticsAggregation API call. */
-	static readonly GET_SESSIONS_STATISTICS_AGGREGATION: string[] = [
+	static readonly opGetSessionsStatisticsAggregation: string[] = [
 		"deadline:GetSessionsStatisticsAggregation",
 	];
 	/** IAM actions required for the GetStep API call. */
-	static readonly GET_STEP: string[] = ["deadline:GetStep"];
+	static readonly opGetStep: string[] = ["deadline:GetStep"];
 	/** IAM actions required for the GetStorageProfile API call. */
-	static readonly GET_STORAGE_PROFILE: string[] = [
+	static readonly opGetStorageProfile: string[] = [
 		"deadline:GetStorageProfile",
 	];
 	/** IAM actions required for the GetStorageProfileForQueue API call. */
-	static readonly GET_STORAGE_PROFILE_FOR_QUEUE: string[] = [
+	static readonly opGetStorageProfileForQueue: string[] = [
 		"deadline:GetStorageProfileForQueue",
 	];
 	/** IAM actions required for the GetTask API call. */
-	static readonly GET_TASK: string[] = ["deadline:GetTask"];
+	static readonly opGetTask: string[] = ["deadline:GetTask"];
 	/** IAM actions required for the GetVolume API call. */
-	static readonly GET_VOLUME: string[] = ["deadline:GetVolume"];
+	static readonly opGetVolume: string[] = ["deadline:GetVolume"];
 	/** IAM actions required for the GetWorker API call. */
-	static readonly GET_WORKER: string[] = ["deadline:GetWorker"];
+	static readonly opGetWorker: string[] = ["deadline:GetWorker"];
 	/** IAM actions required for the ListAvailableMeteredProducts API call. */
-	static readonly LIST_AVAILABLE_METERED_PRODUCTS: string[] = [
+	static readonly ListAvailableMeteredProducts: string[] = [
 		"deadline:ListAvailableMeteredProducts",
 	];
 	/** IAM actions required for the ListBudgets API call. */
-	static readonly LIST_BUDGETS: string[] = ["deadline:ListBudgets"];
+	static readonly ListBudgets: string[] = ["deadline:ListBudgets"];
 	/** IAM actions required for the ListFarmMembers API call. */
-	static readonly LIST_FARM_MEMBERS: string[] = ["deadline:ListFarmMembers"];
+	static readonly ListFarmMembers: string[] = ["deadline:ListFarmMembers"];
 	/** IAM actions required for the ListFarms API call. */
-	static readonly LIST_FARMS: string[] = ["deadline:ListFarms"];
+	static readonly ListFarms: string[] = ["deadline:ListFarms"];
 	/** IAM actions required for the ListFleetMembers API call. */
-	static readonly LIST_FLEET_MEMBERS: string[] = ["deadline:ListFleetMembers"];
+	static readonly ListFleetMembers: string[] = ["deadline:ListFleetMembers"];
 	/** IAM actions required for the ListFleets API call. */
-	static readonly LIST_FLEETS: string[] = ["deadline:ListFleets"];
+	static readonly ListFleets: string[] = ["deadline:ListFleets"];
 	/** IAM actions required for the ListJobMembers API call. */
-	static readonly LIST_JOB_MEMBERS: string[] = ["deadline:ListJobMembers"];
+	static readonly ListJobMembers: string[] = ["deadline:ListJobMembers"];
 	/** IAM actions required for the ListJobParameterDefinitions API call. */
-	static readonly LIST_JOB_PARAMETER_DEFINITIONS: string[] = [
+	static readonly ListJobParameterDefinitions: string[] = [
 		"deadline:ListJobParameterDefinitions",
 	];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["deadline:ListJobs"];
+	static readonly ListJobs: string[] = ["deadline:ListJobs"];
 	/** IAM actions required for the ListLicenseEndpoints API call. */
-	static readonly LIST_LICENSE_ENDPOINTS: string[] = [
+	static readonly ListLicenseEndpoints: string[] = [
 		"deadline:ListLicenseEndpoints",
 	];
 	/** IAM actions required for the ListLimits API call. */
-	static readonly LIST_LIMITS: string[] = ["deadline:ListLimits"];
+	static readonly ListLimits: string[] = ["deadline:ListLimits"];
 	/** IAM actions required for the ListMeteredProducts API call. */
-	static readonly LIST_METERED_PRODUCTS: string[] = [
+	static readonly ListMeteredProducts: string[] = [
 		"deadline:ListMeteredProducts",
 	];
 	/** IAM actions required for the ListMonitors API call. */
-	static readonly LIST_MONITORS: string[] = ["deadline:ListMonitors"];
+	static readonly ListMonitors: string[] = ["deadline:ListMonitors"];
 	/** IAM actions required for the ListQueueEnvironments API call. */
-	static readonly LIST_QUEUE_ENVIRONMENTS: string[] = [
+	static readonly ListQueueEnvironments: string[] = [
 		"deadline:ListQueueEnvironments",
 	];
 	/** IAM actions required for the ListQueueFleetAssociations API call. */
-	static readonly LIST_QUEUE_FLEET_ASSOCIATIONS: string[] = [
+	static readonly ListQueueFleetAssociations: string[] = [
 		"deadline:ListQueueFleetAssociations",
 	];
 	/** IAM actions required for the ListQueueLimitAssociations API call. */
-	static readonly LIST_QUEUE_LIMIT_ASSOCIATIONS: string[] = [
+	static readonly ListQueueLimitAssociations: string[] = [
 		"deadline:ListQueueLimitAssociations",
 	];
 	/** IAM actions required for the ListQueueMembers API call. */
-	static readonly LIST_QUEUE_MEMBERS: string[] = ["deadline:ListQueueMembers"];
+	static readonly ListQueueMembers: string[] = ["deadline:ListQueueMembers"];
 	/** IAM actions required for the ListQueues API call. */
-	static readonly LIST_QUEUES: string[] = ["deadline:ListQueues"];
+	static readonly ListQueues: string[] = ["deadline:ListQueues"];
 	/** IAM actions required for the ListSessionActions API call. */
-	static readonly LIST_SESSION_ACTIONS: string[] = [
+	static readonly ListSessionActions: string[] = [
 		"deadline:ListSessionActions",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["deadline:ListSessions"];
+	static readonly ListSessions: string[] = ["deadline:ListSessions"];
 	/** IAM actions required for the ListSessionsForWorker API call. */
-	static readonly LIST_SESSIONS_FOR_WORKER: string[] = [
+	static readonly ListSessionsForWorker: string[] = [
 		"deadline:ListSessionsForWorker",
 	];
 	/** IAM actions required for the ListStepConsumers API call. */
-	static readonly LIST_STEP_CONSUMERS: string[] = [
-		"deadline:ListStepConsumers",
-	];
+	static readonly ListStepConsumers: string[] = ["deadline:ListStepConsumers"];
 	/** IAM actions required for the ListStepDependencies API call. */
-	static readonly LIST_STEP_DEPENDENCIES: string[] = [
+	static readonly ListStepDependencies: string[] = [
 		"deadline:ListStepDependencies",
 	];
 	/** IAM actions required for the ListSteps API call. */
-	static readonly LIST_STEPS: string[] = ["deadline:ListSteps"];
+	static readonly ListSteps: string[] = ["deadline:ListSteps"];
 	/** IAM actions required for the ListStorageProfiles API call. */
-	static readonly LIST_STORAGE_PROFILES: string[] = [
+	static readonly ListStorageProfiles: string[] = [
 		"deadline:ListStorageProfiles",
 	];
 	/** IAM actions required for the ListStorageProfilesForQueue API call. */
-	static readonly LIST_STORAGE_PROFILES_FOR_QUEUE: string[] = [
+	static readonly ListStorageProfilesForQueue: string[] = [
 		"deadline:ListStorageProfilesForQueue",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"deadline:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTasks API call. */
-	static readonly LIST_TASKS: string[] = ["deadline:ListTasks"];
+	static readonly ListTasks: string[] = ["deadline:ListTasks"];
 	/** IAM actions required for the ListVolumes API call. */
-	static readonly LIST_VOLUMES: string[] = ["deadline:ListVolumes"];
+	static readonly ListVolumes: string[] = ["deadline:ListVolumes"];
 	/** IAM actions required for the ListWorkers API call. */
-	static readonly LIST_WORKERS: string[] = ["deadline:ListWorkers"];
+	static readonly ListWorkers: string[] = ["deadline:ListWorkers"];
 	/** IAM actions required for the PutMeteredProduct API call. */
-	static readonly PUT_METERED_PRODUCT: string[] = [
-		"deadline:PutMeteredProduct",
-	];
+	static readonly PutMeteredProduct: string[] = ["deadline:PutMeteredProduct"];
 	/** IAM actions required for the SearchJobs API call. */
-	static readonly SEARCH_JOBS: string[] = ["deadline:SearchJobs"];
+	static readonly SearchJobs: string[] = ["deadline:SearchJobs"];
 	/** IAM actions required for the SearchSteps API call. */
-	static readonly SEARCH_STEPS: string[] = ["deadline:SearchSteps"];
+	static readonly SearchSteps: string[] = ["deadline:SearchSteps"];
 	/** IAM actions required for the SearchTasks API call. */
-	static readonly SEARCH_TASKS: string[] = ["deadline:SearchTasks"];
+	static readonly SearchTasks: string[] = ["deadline:SearchTasks"];
 	/** IAM actions required for the SearchWorkers API call. */
-	static readonly SEARCH_WORKERS: string[] = ["deadline:SearchWorkers"];
+	static readonly SearchWorkers: string[] = ["deadline:SearchWorkers"];
 	/** IAM actions required for the StartSessionsStatisticsAggregation API call. */
-	static readonly START_SESSIONS_STATISTICS_AGGREGATION: string[] = [
+	static readonly StartSessionsStatisticsAggregation: string[] = [
 		"deadline:StartSessionsStatisticsAggregation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["deadline:TagResource"];
+	static readonly TagResource: string[] = ["deadline:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["deadline:UntagResource"];
+	static readonly UntagResource: string[] = ["deadline:UntagResource"];
 	/** IAM actions required for the UpdateBudget API call. */
-	static readonly UPDATE_BUDGET: string[] = ["deadline:UpdateBudget"];
+	static readonly UpdateBudget: string[] = ["deadline:UpdateBudget"];
 	/** IAM actions required for the UpdateFarm API call. */
-	static readonly UPDATE_FARM: string[] = ["deadline:UpdateFarm"];
+	static readonly UpdateFarm: string[] = ["deadline:UpdateFarm"];
 	/** IAM actions required for the UpdateFleet API call. */
-	static readonly UPDATE_FLEET: string[] = [
+	static readonly UpdateFleet: string[] = [
 		"iam:PassRole",
 		"deadline:UpdateFleet",
 	];
 	/** IAM actions required for the UpdateJob API call. */
-	static readonly UPDATE_JOB: string[] = ["deadline:UpdateJob"];
+	static readonly UpdateJob: string[] = ["deadline:UpdateJob"];
 	/** IAM actions required for the UpdateLimit API call. */
-	static readonly UPDATE_LIMIT: string[] = ["deadline:UpdateLimit"];
+	static readonly UpdateLimit: string[] = ["deadline:UpdateLimit"];
 	/** IAM actions required for the UpdateMonitor API call. */
-	static readonly UPDATE_MONITOR: string[] = [
+	static readonly UpdateMonitor: string[] = [
 		"iam:PassRole",
 		"deadline:UpdateMonitor",
 	];
 	/** IAM actions required for the UpdateMonitorSettings API call. */
-	static readonly UPDATE_MONITOR_SETTINGS: string[] = [
+	static readonly UpdateMonitorSettings: string[] = [
 		"deadline:UpdateMonitorSettings",
 	];
 	/** IAM actions required for the UpdateQueue API call. */
-	static readonly UPDATE_QUEUE: string[] = [
+	static readonly UpdateQueue: string[] = [
 		"iam:PassRole",
 		"deadline:UpdateQueue",
 	];
 	/** IAM actions required for the UpdateQueueEnvironment API call. */
-	static readonly UPDATE_QUEUE_ENVIRONMENT: string[] = [
+	static readonly UpdateQueueEnvironment: string[] = [
 		"deadline:UpdateQueueEnvironment",
 	];
 	/** IAM actions required for the UpdateQueueFleetAssociation API call. */
-	static readonly UPDATE_QUEUE_FLEET_ASSOCIATION: string[] = [
+	static readonly UpdateQueueFleetAssociation: string[] = [
 		"deadline:UpdateQueueFleetAssociation",
 	];
 	/** IAM actions required for the UpdateQueueLimitAssociation API call. */
-	static readonly UPDATE_QUEUE_LIMIT_ASSOCIATION: string[] = [
+	static readonly UpdateQueueLimitAssociation: string[] = [
 		"deadline:UpdateQueueLimitAssociation",
 	];
 	/** IAM actions required for the UpdateSession API call. */
-	static readonly UPDATE_SESSION: string[] = ["deadline:UpdateSession"];
+	static readonly UpdateSession: string[] = ["deadline:UpdateSession"];
 	/** IAM actions required for the UpdateStep API call. */
-	static readonly UPDATE_STEP: string[] = ["deadline:UpdateStep"];
+	static readonly UpdateStep: string[] = ["deadline:UpdateStep"];
 	/** IAM actions required for the UpdateStorageProfile API call. */
-	static readonly UPDATE_STORAGE_PROFILE: string[] = [
+	static readonly UpdateStorageProfile: string[] = [
 		"deadline:UpdateStorageProfile",
 	];
 	/** IAM actions required for the UpdateTask API call. */
-	static readonly UPDATE_TASK: string[] = ["deadline:UpdateTask"];
+	static readonly UpdateTask: string[] = ["deadline:UpdateTask"];
 	/** IAM actions required for the UpdateWorker API call. */
-	static readonly UPDATE_WORKER: string[] = ["deadline:UpdateWorker"];
+	static readonly UpdateWorker: string[] = ["deadline:UpdateWorker"];
 	/** IAM actions required for the UpdateWorkerSchedule API call. */
-	static readonly UPDATE_WORKER_SCHEDULE: string[] = [
+	static readonly UpdateWorkerSchedule: string[] = [
 		"deadline:UpdateWorkerSchedule",
 	];
 }
@@ -1303,120 +1423,120 @@ export class DeadlineOperations {
  */
 export class DeadlineConditions {
 	/** Condition keys applicable to the AssociateMemberToFarm action. */
-	static readonly ASSOCIATE_MEMBER_TO_FARM_CONDITION_KEYS: string[] = [
+	static readonly AssociateMemberToFarmConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 		"deadline:MembershipLevel",
 	];
 	/** Condition keys applicable to the AssociateMemberToFleet action. */
-	static readonly ASSOCIATE_MEMBER_TO_FLEET_CONDITION_KEYS: string[] = [
+	static readonly AssociateMemberToFleetConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 		"deadline:MembershipLevel",
 	];
 	/** Condition keys applicable to the AssociateMemberToJob action. */
-	static readonly ASSOCIATE_MEMBER_TO_JOB_CONDITION_KEYS: string[] = [
+	static readonly AssociateMemberToJobConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 		"deadline:MembershipLevel",
 	];
 	/** Condition keys applicable to the AssociateMemberToQueue action. */
-	static readonly ASSOCIATE_MEMBER_TO_QUEUE_CONDITION_KEYS: string[] = [
+	static readonly AssociateMemberToQueueConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 		"deadline:MembershipLevel",
 	];
 	/** Condition keys applicable to the CreateBudget action. */
-	static readonly CREATE_BUDGET_CONDITION_KEYS: string[] = [
+	static readonly CreateBudgetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFarm action. */
-	static readonly CREATE_FARM_CONDITION_KEYS: string[] = [
+	static readonly CreateFarmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFleet action. */
-	static readonly CREATE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicenseEndpoint action. */
-	static readonly CREATE_LICENSE_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateLicenseEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMonitor action. */
-	static readonly CREATE_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateQueue action. */
-	static readonly CREATE_QUEUE_CONDITION_KEYS: string[] = [
+	static readonly CreateQueueConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorker action. */
-	static readonly CREATE_WORKER_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DisassociateMemberFromFarm action. */
-	static readonly DISASSOCIATE_MEMBER_FROM_FARM_CONDITION_KEYS: string[] = [
+	static readonly DisassociateMemberFromFarmConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 	];
 	/** Condition keys applicable to the DisassociateMemberFromFleet action. */
-	static readonly DISASSOCIATE_MEMBER_FROM_FLEET_CONDITION_KEYS: string[] = [
+	static readonly DisassociateMemberFromFleetConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 	];
 	/** Condition keys applicable to the DisassociateMemberFromJob action. */
-	static readonly DISASSOCIATE_MEMBER_FROM_JOB_CONDITION_KEYS: string[] = [
+	static readonly DisassociateMemberFromJobConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 	];
 	/** Condition keys applicable to the DisassociateMemberFromQueue action. */
-	static readonly DISASSOCIATE_MEMBER_FROM_QUEUE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateMemberFromQueueConditionKeys: string[] = [
 		"deadline:AssociatedMembershipLevel",
 	];
 	/** Condition keys applicable to the ListFarms action. */
-	static readonly LIST_FARMS_CONDITION_KEYS: string[] = [
+	static readonly ListFarmsConditionKeys: string[] = [
 		"deadline:PrincipalId",
 		"deadline:RequesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListFleets action. */
-	static readonly LIST_FLEETS_CONDITION_KEYS: string[] = [
+	static readonly ListFleetsConditionKeys: string[] = [
 		"deadline:PrincipalId",
 		"deadline:RequesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListJobs action. */
-	static readonly LIST_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListJobsConditionKeys: string[] = [
 		"deadline:PrincipalId",
 		"deadline:RequesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListQueues action. */
-	static readonly LIST_QUEUES_CONDITION_KEYS: string[] = [
+	static readonly ListQueuesConditionKeys: string[] = [
 		"deadline:PrincipalId",
 		"deadline:RequesterPrincipalId",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"deadline:CalledAction",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"deadline:CalledAction",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: deadline:AssociatedMembershipLevel (String) */
 	static readonly ASSOCIATED_MEMBERSHIP_LEVEL =
 		"deadline:AssociatedMembershipLevel";

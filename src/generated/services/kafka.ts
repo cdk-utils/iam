@@ -13,248 +13,520 @@ export class KafkaActions {
 	static readonly SERVICE_PREFIX = "kafka";
 
 	/** [Write] kafka:BatchAssociateScramSecret */
-	static readonly BATCH_ASSOCIATE_SCRAM_SECRET =
-		"kafka:BatchAssociateScramSecret";
+	static readonly BatchAssociateScramSecret = "kafka:BatchAssociateScramSecret";
 	/** [Write] kafka:BatchDisassociateScramSecret */
-	static readonly BATCH_DISASSOCIATE_SCRAM_SECRET =
+	static readonly BatchDisassociateScramSecret =
 		"kafka:BatchDisassociateScramSecret";
 	/** [Write] kafka:CreateChannel */
-	static readonly CREATE_CHANNEL = "kafka:CreateChannel";
+	static readonly CreateChannel = "kafka:CreateChannel";
 	/** [Write] kafka:CreateCluster */
-	static readonly CREATE_CLUSTER = "kafka:CreateCluster";
+	static readonly CreateCluster = "kafka:CreateCluster";
 	/** [Write] kafka:CreateClusterV2 */
-	static readonly CREATE_CLUSTER_V2 = "kafka:CreateClusterV2";
+	static readonly CreateClusterV2 = "kafka:CreateClusterV2";
 	/** [Write] kafka:CreateConfiguration */
-	static readonly CREATE_CONFIGURATION = "kafka:CreateConfiguration";
+	static readonly CreateConfiguration = "kafka:CreateConfiguration";
 	/** [Write] kafka:CreateReplicator */
-	static readonly CREATE_REPLICATOR = "kafka:CreateReplicator";
+	static readonly CreateReplicator = "kafka:CreateReplicator";
 	/** [Write] kafka:CreateTopic */
-	static readonly CREATE_TOPIC = "kafka:CreateTopic";
+	static readonly CreateTopic = "kafka:CreateTopic";
 	/** [Write] kafka:CreateVpcConnection */
-	static readonly CREATE_VPC_CONNECTION = "kafka:CreateVpcConnection";
+	static readonly CreateVpcConnection = "kafka:CreateVpcConnection";
 	/** [Write] kafka:DeleteChannel */
-	static readonly DELETE_CHANNEL = "kafka:DeleteChannel";
+	static readonly DeleteChannel = "kafka:DeleteChannel";
 	/** [Write] kafka:DeleteCluster */
-	static readonly DELETE_CLUSTER = "kafka:DeleteCluster";
+	static readonly DeleteCluster = "kafka:DeleteCluster";
 	/** [Write] kafka:DeleteClusterPolicy */
-	static readonly DELETE_CLUSTER_POLICY = "kafka:DeleteClusterPolicy";
+	static readonly DeleteClusterPolicy = "kafka:DeleteClusterPolicy";
 	/** [Write] kafka:DeleteConfiguration */
-	static readonly DELETE_CONFIGURATION = "kafka:DeleteConfiguration";
+	static readonly DeleteConfiguration = "kafka:DeleteConfiguration";
 	/** [Write] kafka:DeleteReplicator */
-	static readonly DELETE_REPLICATOR = "kafka:DeleteReplicator";
+	static readonly DeleteReplicator = "kafka:DeleteReplicator";
 	/** [Write] kafka:DeleteTopic */
-	static readonly DELETE_TOPIC = "kafka:DeleteTopic";
+	static readonly DeleteTopic = "kafka:DeleteTopic";
 	/** [Write] kafka:DeleteVpcConnection */
-	static readonly DELETE_VPC_CONNECTION = "kafka:DeleteVpcConnection";
+	static readonly DeleteVpcConnection = "kafka:DeleteVpcConnection";
 	/** [Read] kafka:DescribeChannel */
-	static readonly DESCRIBE_CHANNEL = "kafka:DescribeChannel";
+	static readonly DescribeChannel = "kafka:DescribeChannel";
 	/** [Read] kafka:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "kafka:DescribeCluster";
+	static readonly DescribeCluster = "kafka:DescribeCluster";
 	/** [Read] kafka:DescribeClusterOperation */
-	static readonly DESCRIBE_CLUSTER_OPERATION = "kafka:DescribeClusterOperation";
+	static readonly DescribeClusterOperation = "kafka:DescribeClusterOperation";
 	/** [Read] kafka:DescribeClusterOperationV2 */
-	static readonly DESCRIBE_CLUSTER_OPERATION_V2 =
+	static readonly DescribeClusterOperationV2 =
 		"kafka:DescribeClusterOperationV2";
 	/** [Read] kafka:DescribeClusterV2 */
-	static readonly DESCRIBE_CLUSTER_V2 = "kafka:DescribeClusterV2";
+	static readonly DescribeClusterV2 = "kafka:DescribeClusterV2";
 	/** [Read] kafka:DescribeConfiguration */
-	static readonly DESCRIBE_CONFIGURATION = "kafka:DescribeConfiguration";
+	static readonly DescribeConfiguration = "kafka:DescribeConfiguration";
 	/** [Read] kafka:DescribeConfigurationRevision */
-	static readonly DESCRIBE_CONFIGURATION_REVISION =
+	static readonly DescribeConfigurationRevision =
 		"kafka:DescribeConfigurationRevision";
 	/** [Read] kafka:DescribeReplicator */
-	static readonly DESCRIBE_REPLICATOR = "kafka:DescribeReplicator";
+	static readonly DescribeReplicator = "kafka:DescribeReplicator";
 	/** [Read] kafka:DescribeTopic */
-	static readonly DESCRIBE_TOPIC = "kafka:DescribeTopic";
+	static readonly DescribeTopic = "kafka:DescribeTopic";
 	/** [Read] kafka:DescribeTopicPartitions */
-	static readonly DESCRIBE_TOPIC_PARTITIONS = "kafka:DescribeTopicPartitions";
+	static readonly DescribeTopicPartitions = "kafka:DescribeTopicPartitions";
 	/** [Read] kafka:DescribeVpcConnection */
-	static readonly DESCRIBE_VPC_CONNECTION = "kafka:DescribeVpcConnection";
+	static readonly DescribeVpcConnection = "kafka:DescribeVpcConnection";
 	/** [Read] kafka:GetBootstrapBrokers */
-	static readonly GET_BOOTSTRAP_BROKERS = "kafka:GetBootstrapBrokers";
+	static readonly actionGetBootstrapBrokers = "kafka:GetBootstrapBrokers";
 	/** [Read] kafka:GetClusterPolicy */
-	static readonly GET_CLUSTER_POLICY = "kafka:GetClusterPolicy";
+	static readonly actionGetClusterPolicy = "kafka:GetClusterPolicy";
 	/** [List] kafka:GetCompatibleKafkaVersions */
-	static readonly GET_COMPATIBLE_KAFKA_VERSIONS =
+	static readonly actionGetCompatibleKafkaVersions =
 		"kafka:GetCompatibleKafkaVersions";
 	/** [List] kafka:ListChannels */
-	static readonly LIST_CHANNELS = "kafka:ListChannels";
+	static readonly ListChannels = "kafka:ListChannels";
 	/** [List] kafka:ListClientVpcConnections */
-	static readonly LIST_CLIENT_VPC_CONNECTIONS =
-		"kafka:ListClientVpcConnections";
+	static readonly ListClientVpcConnections = "kafka:ListClientVpcConnections";
 	/** [List] kafka:ListClusterOperations */
-	static readonly LIST_CLUSTER_OPERATIONS = "kafka:ListClusterOperations";
+	static readonly ListClusterOperations = "kafka:ListClusterOperations";
 	/** [List] kafka:ListClusterOperationsV2 */
-	static readonly LIST_CLUSTER_OPERATIONS_V2 = "kafka:ListClusterOperationsV2";
+	static readonly ListClusterOperationsV2 = "kafka:ListClusterOperationsV2";
 	/** [List] kafka:ListClusters */
-	static readonly LIST_CLUSTERS = "kafka:ListClusters";
+	static readonly ListClusters = "kafka:ListClusters";
 	/** [List] kafka:ListClustersV2 */
-	static readonly LIST_CLUSTERS_V2 = "kafka:ListClustersV2";
+	static readonly ListClustersV2 = "kafka:ListClustersV2";
 	/** [List] kafka:ListConfigurationRevisions */
-	static readonly LIST_CONFIGURATION_REVISIONS =
+	static readonly ListConfigurationRevisions =
 		"kafka:ListConfigurationRevisions";
 	/** [List] kafka:ListConfigurations */
-	static readonly LIST_CONFIGURATIONS = "kafka:ListConfigurations";
+	static readonly ListConfigurations = "kafka:ListConfigurations";
 	/** [List] kafka:ListKafkaVersions */
-	static readonly LIST_KAFKA_VERSIONS = "kafka:ListKafkaVersions";
+	static readonly ListKafkaVersions = "kafka:ListKafkaVersions";
 	/** [List] kafka:ListNodes */
-	static readonly LIST_NODES = "kafka:ListNodes";
+	static readonly ListNodes = "kafka:ListNodes";
 	/** [List] kafka:ListReplicators */
-	static readonly LIST_REPLICATORS = "kafka:ListReplicators";
+	static readonly ListReplicators = "kafka:ListReplicators";
 	/** [List] kafka:ListScramSecrets */
-	static readonly LIST_SCRAM_SECRETS = "kafka:ListScramSecrets";
+	static readonly ListScramSecrets = "kafka:ListScramSecrets";
 	/** [Read] kafka:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "kafka:ListTagsForResource";
+	static readonly ListTagsForResource = "kafka:ListTagsForResource";
 	/** [List] kafka:ListTopics */
-	static readonly LIST_TOPICS = "kafka:ListTopics";
+	static readonly ListTopics = "kafka:ListTopics";
 	/** [List] kafka:ListVpcConnections */
-	static readonly LIST_VPC_CONNECTIONS = "kafka:ListVpcConnections";
+	static readonly ListVpcConnections = "kafka:ListVpcConnections";
 	/** [Write] kafka:PutClusterPolicy */
-	static readonly PUT_CLUSTER_POLICY = "kafka:PutClusterPolicy";
+	static readonly PutClusterPolicy = "kafka:PutClusterPolicy";
 	/** [Write] kafka:RebootBroker */
-	static readonly REBOOT_BROKER = "kafka:RebootBroker";
+	static readonly RebootBroker = "kafka:RebootBroker";
 	/** [Write] kafka:RejectClientVpcConnection */
-	static readonly REJECT_CLIENT_VPC_CONNECTION =
-		"kafka:RejectClientVpcConnection";
+	static readonly RejectClientVpcConnection = "kafka:RejectClientVpcConnection";
 	/** [Tagging] kafka:TagResource */
-	static readonly TAG_RESOURCE = "kafka:TagResource";
+	static readonly TagResource = "kafka:TagResource";
 	/** [Tagging] kafka:UntagResource */
-	static readonly UNTAG_RESOURCE = "kafka:UntagResource";
+	static readonly UntagResource = "kafka:UntagResource";
 	/** [Write] kafka:UpdateBrokerCount */
-	static readonly UPDATE_BROKER_COUNT = "kafka:UpdateBrokerCount";
+	static readonly UpdateBrokerCount = "kafka:UpdateBrokerCount";
 	/** [Write] kafka:UpdateBrokerStorage */
-	static readonly UPDATE_BROKER_STORAGE = "kafka:UpdateBrokerStorage";
+	static readonly UpdateBrokerStorage = "kafka:UpdateBrokerStorage";
 	/** [Write] kafka:UpdateBrokerType */
-	static readonly UPDATE_BROKER_TYPE = "kafka:UpdateBrokerType";
+	static readonly UpdateBrokerType = "kafka:UpdateBrokerType";
 	/** [Write] kafka:UpdateChannel */
-	static readonly UPDATE_CHANNEL = "kafka:UpdateChannel";
+	static readonly UpdateChannel = "kafka:UpdateChannel";
 	/** [Write] kafka:UpdateClusterConfiguration */
-	static readonly UPDATE_CLUSTER_CONFIGURATION =
+	static readonly UpdateClusterConfiguration =
 		"kafka:UpdateClusterConfiguration";
 	/** [Write] kafka:UpdateClusterKafkaVersion */
-	static readonly UPDATE_CLUSTER_KAFKA_VERSION =
-		"kafka:UpdateClusterKafkaVersion";
+	static readonly UpdateClusterKafkaVersion = "kafka:UpdateClusterKafkaVersion";
 	/** [Write] kafka:UpdateConfiguration */
-	static readonly UPDATE_CONFIGURATION = "kafka:UpdateConfiguration";
+	static readonly UpdateConfiguration = "kafka:UpdateConfiguration";
 	/** [Write] kafka:UpdateConnectivity */
-	static readonly UPDATE_CONNECTIVITY = "kafka:UpdateConnectivity";
+	static readonly UpdateConnectivity = "kafka:UpdateConnectivity";
 	/** [Write] kafka:UpdateMonitoring */
-	static readonly UPDATE_MONITORING = "kafka:UpdateMonitoring";
+	static readonly UpdateMonitoring = "kafka:UpdateMonitoring";
 	/** [Write] kafka:UpdateRebalancing */
-	static readonly UPDATE_REBALANCING = "kafka:UpdateRebalancing";
+	static readonly UpdateRebalancing = "kafka:UpdateRebalancing";
 	/** [Write] kafka:UpdateReplicationInfo */
-	static readonly UPDATE_REPLICATION_INFO = "kafka:UpdateReplicationInfo";
+	static readonly UpdateReplicationInfo = "kafka:UpdateReplicationInfo";
 	/** [Write] kafka:UpdateSecurity */
-	static readonly UPDATE_SECURITY = "kafka:UpdateSecurity";
+	static readonly UpdateSecurity = "kafka:UpdateSecurity";
 	/** [Write] kafka:UpdateStorage */
-	static readonly UPDATE_STORAGE = "kafka:UpdateStorage";
+	static readonly UpdateStorage = "kafka:UpdateStorage";
 	/** [Write] kafka:UpdateTopic */
-	static readonly UPDATE_TOPIC = "kafka:UpdateTopic";
+	static readonly UpdateTopic = "kafka:UpdateTopic";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KafkaActions.DESCRIBE_CHANNEL,
-		KafkaActions.DESCRIBE_CLUSTER,
-		KafkaActions.DESCRIBE_CLUSTER_OPERATION,
-		KafkaActions.DESCRIBE_CLUSTER_OPERATION_V2,
-		KafkaActions.DESCRIBE_CLUSTER_V2,
-		KafkaActions.DESCRIBE_CONFIGURATION,
-		KafkaActions.DESCRIBE_CONFIGURATION_REVISION,
-		KafkaActions.DESCRIBE_REPLICATOR,
-		KafkaActions.DESCRIBE_TOPIC,
-		KafkaActions.DESCRIBE_TOPIC_PARTITIONS,
-		KafkaActions.DESCRIBE_VPC_CONNECTION,
-		KafkaActions.GET_BOOTSTRAP_BROKERS,
-		KafkaActions.GET_CLUSTER_POLICY,
-		KafkaActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		KafkaActions.DescribeChannel,
+		KafkaActions.DescribeCluster,
+		KafkaActions.DescribeClusterOperation,
+		KafkaActions.DescribeClusterOperationV2,
+		KafkaActions.DescribeClusterV2,
+		KafkaActions.DescribeConfiguration,
+		KafkaActions.DescribeConfigurationRevision,
+		KafkaActions.DescribeReplicator,
+		KafkaActions.DescribeTopic,
+		KafkaActions.DescribeTopicPartitions,
+		KafkaActions.DescribeVpcConnection,
+		KafkaActions.actionGetBootstrapBrokers,
+		KafkaActions.actionGetClusterPolicy,
+		KafkaActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KafkaActions.BATCH_ASSOCIATE_SCRAM_SECRET,
-		KafkaActions.BATCH_DISASSOCIATE_SCRAM_SECRET,
-		KafkaActions.CREATE_CHANNEL,
-		KafkaActions.CREATE_CLUSTER,
-		KafkaActions.CREATE_CLUSTER_V2,
-		KafkaActions.CREATE_CONFIGURATION,
-		KafkaActions.CREATE_REPLICATOR,
-		KafkaActions.CREATE_TOPIC,
-		KafkaActions.CREATE_VPC_CONNECTION,
-		KafkaActions.DELETE_CHANNEL,
-		KafkaActions.DELETE_CLUSTER,
-		KafkaActions.DELETE_CLUSTER_POLICY,
-		KafkaActions.DELETE_CONFIGURATION,
-		KafkaActions.DELETE_REPLICATOR,
-		KafkaActions.DELETE_TOPIC,
-		KafkaActions.DELETE_VPC_CONNECTION,
-		KafkaActions.PUT_CLUSTER_POLICY,
-		KafkaActions.REBOOT_BROKER,
-		KafkaActions.REJECT_CLIENT_VPC_CONNECTION,
-		KafkaActions.UPDATE_BROKER_COUNT,
-		KafkaActions.UPDATE_BROKER_STORAGE,
-		KafkaActions.UPDATE_BROKER_TYPE,
-		KafkaActions.UPDATE_CHANNEL,
-		KafkaActions.UPDATE_CLUSTER_CONFIGURATION,
-		KafkaActions.UPDATE_CLUSTER_KAFKA_VERSION,
-		KafkaActions.UPDATE_CONFIGURATION,
-		KafkaActions.UPDATE_CONNECTIVITY,
-		KafkaActions.UPDATE_MONITORING,
-		KafkaActions.UPDATE_REBALANCING,
-		KafkaActions.UPDATE_REPLICATION_INFO,
-		KafkaActions.UPDATE_SECURITY,
-		KafkaActions.UPDATE_STORAGE,
-		KafkaActions.UPDATE_TOPIC,
+	static readonly AllWriteActions: string[] = [
+		KafkaActions.BatchAssociateScramSecret,
+		KafkaActions.BatchDisassociateScramSecret,
+		KafkaActions.CreateChannel,
+		KafkaActions.CreateCluster,
+		KafkaActions.CreateClusterV2,
+		KafkaActions.CreateConfiguration,
+		KafkaActions.CreateReplicator,
+		KafkaActions.CreateTopic,
+		KafkaActions.CreateVpcConnection,
+		KafkaActions.DeleteChannel,
+		KafkaActions.DeleteCluster,
+		KafkaActions.DeleteClusterPolicy,
+		KafkaActions.DeleteConfiguration,
+		KafkaActions.DeleteReplicator,
+		KafkaActions.DeleteTopic,
+		KafkaActions.DeleteVpcConnection,
+		KafkaActions.PutClusterPolicy,
+		KafkaActions.RebootBroker,
+		KafkaActions.RejectClientVpcConnection,
+		KafkaActions.UpdateBrokerCount,
+		KafkaActions.UpdateBrokerStorage,
+		KafkaActions.UpdateBrokerType,
+		KafkaActions.UpdateChannel,
+		KafkaActions.UpdateClusterConfiguration,
+		KafkaActions.UpdateClusterKafkaVersion,
+		KafkaActions.UpdateConfiguration,
+		KafkaActions.UpdateConnectivity,
+		KafkaActions.UpdateMonitoring,
+		KafkaActions.UpdateRebalancing,
+		KafkaActions.UpdateReplicationInfo,
+		KafkaActions.UpdateSecurity,
+		KafkaActions.UpdateStorage,
+		KafkaActions.UpdateTopic,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KafkaActions.GET_COMPATIBLE_KAFKA_VERSIONS,
-		KafkaActions.LIST_CHANNELS,
-		KafkaActions.LIST_CLIENT_VPC_CONNECTIONS,
-		KafkaActions.LIST_CLUSTER_OPERATIONS,
-		KafkaActions.LIST_CLUSTER_OPERATIONS_V2,
-		KafkaActions.LIST_CLUSTERS,
-		KafkaActions.LIST_CLUSTERS_V2,
-		KafkaActions.LIST_CONFIGURATION_REVISIONS,
-		KafkaActions.LIST_CONFIGURATIONS,
-		KafkaActions.LIST_KAFKA_VERSIONS,
-		KafkaActions.LIST_NODES,
-		KafkaActions.LIST_REPLICATORS,
-		KafkaActions.LIST_SCRAM_SECRETS,
-		KafkaActions.LIST_TOPICS,
-		KafkaActions.LIST_VPC_CONNECTIONS,
+	static readonly AllListActions: string[] = [
+		KafkaActions.actionGetCompatibleKafkaVersions,
+		KafkaActions.ListChannels,
+		KafkaActions.ListClientVpcConnections,
+		KafkaActions.ListClusterOperations,
+		KafkaActions.ListClusterOperationsV2,
+		KafkaActions.ListClusters,
+		KafkaActions.ListClustersV2,
+		KafkaActions.ListConfigurationRevisions,
+		KafkaActions.ListConfigurations,
+		KafkaActions.ListKafkaVersions,
+		KafkaActions.ListNodes,
+		KafkaActions.ListReplicators,
+		KafkaActions.ListScramSecrets,
+		KafkaActions.ListTopics,
+		KafkaActions.ListVpcConnections,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KafkaActions.TAG_RESOURCE,
-		KafkaActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KafkaActions.TagResource,
+		KafkaActions.UntagResource,
 	];
 }
 
-const ChannelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):channel/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<channelName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const ConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):configuration/(?<configurationName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const GroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):group/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<groupName>[^:/?]+)$",
-);
-const ReplicatorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):replicator/(?<replicatorName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const TopicArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<topicName>[^:/?]+)$",
-);
-const TransactionalIdArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):transactional-id/(?<clusterName>[^:/?]+)/(?<clusterUuid>[^:/?]+)/(?<transactionalId>[^:/?]+)$",
-);
-const VPCConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<vpcOwnerAccount>[^:/?]+):vpc-connection/(?<clusterOwnerAccount>[^:/?]+)/(?<clusterName>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
+/**
+ * Properties for building a channel ARN.
+ */
+export interface KafkaChannelArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The ChannelName component of the ARN. */
+	readonly channelName: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a channel ARN.
+ */
+export interface KafkaChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The ChannelName component. */
+	readonly channelName: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface KafkaClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface KafkaClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a configuration ARN.
+ */
+export interface KafkaConfigurationArnProps {
+	/** The ConfigurationName component of the ARN. */
+	readonly configurationName: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration ARN.
+ */
+export interface KafkaConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationName component. */
+	readonly configurationName: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a group ARN.
+ */
+export interface KafkaGroupArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The GroupName component of the ARN. */
+	readonly groupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a group ARN.
+ */
+export interface KafkaGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The GroupName component. */
+	readonly groupName: string;
+}
+
+/**
+ * Properties for building a replicator ARN.
+ */
+export interface KafkaReplicatorArnProps {
+	/** The ReplicatorName component of the ARN. */
+	readonly replicatorName: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a replicator ARN.
+ */
+export interface KafkaReplicatorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReplicatorName component. */
+	readonly replicatorName: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a topic ARN.
+ */
+export interface KafkaTopicArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The TopicName component of the ARN. */
+	readonly topicName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a topic ARN.
+ */
+export interface KafkaTopicArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The TopicName component. */
+	readonly topicName: string;
+}
+
+/**
+ * Properties for building a transactional-id ARN.
+ */
+export interface KafkaTransactionalIdArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The TransactionalId component of the ARN. */
+	readonly transactionalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transactional-id ARN.
+ */
+export interface KafkaTransactionalIdArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The TransactionalId component. */
+	readonly transactionalId: string;
+}
+
+/**
+ * Properties for building a vpc-connection ARN.
+ */
+export interface KafkaVPCConnectionArnProps {
+	/** The VpcOwnerAccount component of the ARN. */
+	readonly vpcOwnerAccount: string;
+	/** The ClusterOwnerAccount component of the ARN. */
+	readonly clusterOwnerAccount: string;
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-connection ARN.
+ */
+export interface KafkaVPCConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcOwnerAccount component. */
+	readonly vpcOwnerAccount: string;
+	/** The ClusterOwnerAccount component. */
+	readonly clusterOwnerAccount: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+const ChannelArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):channel\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<channelName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const ConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):configuration\/(?<configurationName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const GroupArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):group\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<groupName>[^:/?]+)$/;
+const ReplicatorArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):replicator\/(?<replicatorName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const TopicArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<topicName>[^:/?]+)$/;
+const TransactionalIdArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):transactional-id\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<transactionalId>[^:/?]+)$/;
+const VPCConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<vpcOwnerAccount>[^:/?]+):vpc-connection\/(?<clusterOwnerAccount>[^:/?]+)\/(?<clusterName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kafka resources.
@@ -263,22 +535,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the channel resource.
 	 */
-	static channel(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The ChannelName component of the ARN. */
-		readonly channelName: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channel(props: KafkaChannelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:channel/${props.clusterName}/${props.clusterUuid}/${props.channelName}/${props.uuid}`;
 	}
 
@@ -293,15 +550,7 @@ export class KafkaResources {
 	 * Parses a channel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		channelName: string;
-		uuid: string;
-	} {
+	static parseChannelArn(arn: string): KafkaChannelArnComponents {
 		const match = ChannelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid channel ARN: ${arn}`);
@@ -320,18 +569,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: KafkaClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterName}/${props.uuid}`;
 	}
 
@@ -346,13 +584,7 @@ export class KafkaResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		uuid: string;
-	} {
+	static parseClusterArn(arn: string): KafkaClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -369,18 +601,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the configuration resource.
 	 */
-	static configuration(props: {
-		/** The ConfigurationName component of the ARN. */
-		readonly configurationName: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuration(props: KafkaConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:configuration/${props.configurationName}/${props.uuid}`;
 	}
 
@@ -395,13 +616,7 @@ export class KafkaResources {
 	 * Parses a configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configurationName: string;
-		uuid: string;
-	} {
+	static parseConfigurationArn(arn: string): KafkaConfigurationArnComponents {
 		const match = ConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration ARN: ${arn}`);
@@ -418,20 +633,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the group resource.
 	 */
-	static group(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The GroupName component of the ARN. */
-		readonly groupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static group(props: KafkaGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:group/${props.clusterName}/${props.clusterUuid}/${props.groupName}`;
 	}
 
@@ -446,14 +648,7 @@ export class KafkaResources {
 	 * Parses a group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		groupName: string;
-	} {
+	static parseGroupArn(arn: string): KafkaGroupArnComponents {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
@@ -471,18 +666,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the replicator resource.
 	 */
-	static replicator(props: {
-		/** The ReplicatorName component of the ARN. */
-		readonly replicatorName: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static replicator(props: KafkaReplicatorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:replicator/${props.replicatorName}/${props.uuid}`;
 	}
 
@@ -497,13 +681,7 @@ export class KafkaResources {
 	 * Parses a replicator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReplicatorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		replicatorName: string;
-		uuid: string;
-	} {
+	static parseReplicatorArn(arn: string): KafkaReplicatorArnComponents {
 		const match = ReplicatorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid replicator ARN: ${arn}`);
@@ -520,20 +698,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the topic resource.
 	 */
-	static topic(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The TopicName component of the ARN. */
-		readonly topicName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static topic(props: KafkaTopicArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:topic/${props.clusterName}/${props.clusterUuid}/${props.topicName}`;
 	}
 
@@ -548,14 +713,7 @@ export class KafkaResources {
 	 * Parses a topic ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTopicArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		topicName: string;
-	} {
+	static parseTopicArn(arn: string): KafkaTopicArnComponents {
 		const match = TopicArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid topic ARN: ${arn}`);
@@ -573,20 +731,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the transactional-id resource.
 	 */
-	static transactionalId(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The ClusterUuid component of the ARN. */
-		readonly clusterUuid: string;
-		/** The TransactionalId component of the ARN. */
-		readonly transactionalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transactionalId(props: KafkaTransactionalIdArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:transactional-id/${props.clusterName}/${props.clusterUuid}/${props.transactionalId}`;
 	}
 
@@ -601,14 +746,9 @@ export class KafkaResources {
 	 * Parses a transactional-id ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransactionalIdArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-		clusterUuid: string;
-		transactionalId: string;
-	} {
+	static parseTransactionalIdArn(
+		arn: string,
+	): KafkaTransactionalIdArnComponents {
 		const match = TransactionalIdArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transactional-id ARN: ${arn}`);
@@ -626,22 +766,7 @@ export class KafkaResources {
 	/**
 	 * Builds an ARN for the vpc-connection resource.
 	 */
-	static vpcConnection(props: {
-		/** The VpcOwnerAccount component of the ARN. */
-		readonly vpcOwnerAccount: string;
-		/** The ClusterOwnerAccount component of the ARN. */
-		readonly clusterOwnerAccount: string;
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcConnection(props: KafkaVPCConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.vpcOwnerAccount}:vpc-connection/${props.clusterOwnerAccount}/${props.clusterName}/${props.uuid}`;
 	}
 
@@ -656,15 +781,7 @@ export class KafkaResources {
 	 * Parses a vpc-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcOwnerAccount: string;
-		clusterOwnerAccount: string;
-		clusterName: string;
-		uuid: string;
-	} {
+	static parseVPCConnectionArn(arn: string): KafkaVPCConnectionArnComponents {
 		const match = VPCConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-connection ARN: ${arn}`);
@@ -686,35 +803,33 @@ export class KafkaResources {
  */
 export class KafkaOperations {
 	/** IAM actions required for the BatchAssociateScramSecret API call. */
-	static readonly BATCH_ASSOCIATE_SCRAM_SECRET: string[] = [
+	static readonly BatchAssociateScramSecret: string[] = [
 		"kafka:BatchAssociateScramSecret",
 	];
 	/** IAM actions required for the BatchDisassociateScramSecret API call. */
-	static readonly BATCH_DISASSOCIATE_SCRAM_SECRET: string[] = [
+	static readonly BatchDisassociateScramSecret: string[] = [
 		"kafka:BatchDisassociateScramSecret",
 	];
 	/** IAM actions required for the CreateChannel API call. */
-	static readonly CREATE_CHANNEL: string[] = [
+	static readonly CreateChannel: string[] = [
 		"kafka:CreateChannel",
 		"iam:PassRole",
 		"kafka:TagResource",
 	];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"kafka:CreateCluster",
 		"kafka:TagResource",
 	];
 	/** IAM actions required for the CreateClusterV2 API call. */
-	static readonly CREATE_CLUSTER_V2: string[] = [
+	static readonly CreateClusterV2: string[] = [
 		"kafka:CreateClusterV2",
 		"kafka:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguration API call. */
-	static readonly CREATE_CONFIGURATION: string[] = [
-		"kafka:CreateConfiguration",
-	];
+	static readonly CreateConfiguration: string[] = ["kafka:CreateConfiguration"];
 	/** IAM actions required for the CreateReplicator API call. */
-	static readonly CREATE_REPLICATOR: string[] = [
+	static readonly CreateReplicator: string[] = [
 		"kafka:CreateReplicator",
 		"kafka:DescribeClusterV2",
 		"kafka:GetBootstrapBrokers",
@@ -722,185 +837,173 @@ export class KafkaOperations {
 		"kafka:TagResource",
 	];
 	/** IAM actions required for the CreateTopic API call. */
-	static readonly CREATE_TOPIC: string[] = [
+	static readonly CreateTopic: string[] = [
 		"kafka-cluster:Connect",
 		"kafka-cluster:CreateTopic",
 	];
 	/** IAM actions required for the CreateVpcConnection API call. */
-	static readonly CREATE_VPC_CONNECTION: string[] = [
+	static readonly CreateVpcConnection: string[] = [
 		"kafka:CreateVpcConnection",
 		"kafka:TagResource",
 	];
 	/** IAM actions required for the DeleteChannel API call. */
-	static readonly DELETE_CHANNEL: string[] = ["kafka:DeleteChannel"];
+	static readonly DeleteChannel: string[] = ["kafka:DeleteChannel"];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["kafka:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["kafka:DeleteCluster"];
 	/** IAM actions required for the DeleteClusterPolicy API call. */
-	static readonly DELETE_CLUSTER_POLICY: string[] = [
-		"kafka:DeleteClusterPolicy",
-	];
+	static readonly DeleteClusterPolicy: string[] = ["kafka:DeleteClusterPolicy"];
 	/** IAM actions required for the DeleteConfiguration API call. */
-	static readonly DELETE_CONFIGURATION: string[] = [
-		"kafka:DeleteConfiguration",
-	];
+	static readonly DeleteConfiguration: string[] = ["kafka:DeleteConfiguration"];
 	/** IAM actions required for the DeleteReplicator API call. */
-	static readonly DELETE_REPLICATOR: string[] = ["kafka:DeleteReplicator"];
+	static readonly DeleteReplicator: string[] = ["kafka:DeleteReplicator"];
 	/** IAM actions required for the DeleteTopic API call. */
-	static readonly DELETE_TOPIC: string[] = [
+	static readonly DeleteTopic: string[] = [
 		"kafka-cluster:Connect",
 		"kafka-cluster:DeleteTopic",
 		"kafka-cluster:DescribeTopic",
 	];
 	/** IAM actions required for the DeleteVpcConnection API call. */
-	static readonly DELETE_VPC_CONNECTION: string[] = [
-		"kafka:DeleteVpcConnection",
-	];
+	static readonly DeleteVpcConnection: string[] = ["kafka:DeleteVpcConnection"];
 	/** IAM actions required for the DescribeChannel API call. */
-	static readonly DESCRIBE_CHANNEL: string[] = ["kafka:DescribeChannel"];
+	static readonly DescribeChannel: string[] = ["kafka:DescribeChannel"];
 	/** IAM actions required for the DescribeCluster API call. */
-	static readonly DESCRIBE_CLUSTER: string[] = ["kafka:DescribeCluster"];
+	static readonly DescribeCluster: string[] = ["kafka:DescribeCluster"];
 	/** IAM actions required for the DescribeClusterOperation API call. */
-	static readonly DESCRIBE_CLUSTER_OPERATION: string[] = [
+	static readonly DescribeClusterOperation: string[] = [
 		"kafka:DescribeClusterOperation",
 	];
 	/** IAM actions required for the DescribeClusterOperationV2 API call. */
-	static readonly DESCRIBE_CLUSTER_OPERATION_V2: string[] = [
+	static readonly DescribeClusterOperationV2: string[] = [
 		"kafka:DescribeClusterOperationV2",
 	];
 	/** IAM actions required for the DescribeClusterV2 API call. */
-	static readonly DESCRIBE_CLUSTER_V2: string[] = ["kafka:DescribeClusterV2"];
+	static readonly DescribeClusterV2: string[] = ["kafka:DescribeClusterV2"];
 	/** IAM actions required for the DescribeConfiguration API call. */
-	static readonly DESCRIBE_CONFIGURATION: string[] = [
+	static readonly DescribeConfiguration: string[] = [
 		"kafka:DescribeConfiguration",
 	];
 	/** IAM actions required for the DescribeConfigurationRevision API call. */
-	static readonly DESCRIBE_CONFIGURATION_REVISION: string[] = [
+	static readonly DescribeConfigurationRevision: string[] = [
 		"kafka:DescribeConfigurationRevision",
 	];
 	/** IAM actions required for the DescribeReplicator API call. */
-	static readonly DESCRIBE_REPLICATOR: string[] = [
+	static readonly DescribeReplicator: string[] = [
 		"kafka:DescribeReplicator",
 		"kafka:ListTagsForResource",
 	];
 	/** IAM actions required for the DescribeTopic API call. */
-	static readonly DESCRIBE_TOPIC: string[] = [
+	static readonly DescribeTopic: string[] = [
 		"kafka-cluster:Connect",
 		"kafka-cluster:DescribeTopic",
 		"kafka-cluster:DescribeTopicDynamicConfiguration",
 	];
 	/** IAM actions required for the DescribeTopicPartitions API call. */
-	static readonly DESCRIBE_TOPIC_PARTITIONS: string[] = [
+	static readonly DescribeTopicPartitions: string[] = [
 		"kafka-cluster:Connect",
 		"kafka-cluster:DescribeTopic",
 		"kafka-cluster:DescribeTopicDynamicConfiguration",
 	];
 	/** IAM actions required for the DescribeVpcConnection API call. */
-	static readonly DESCRIBE_VPC_CONNECTION: string[] = [
+	static readonly DescribeVpcConnection: string[] = [
 		"kafka:DescribeVpcConnection",
 	];
 	/** IAM actions required for the GetBootstrapBrokers API call. */
-	static readonly GET_BOOTSTRAP_BROKERS: string[] = [
+	static readonly opGetBootstrapBrokers: string[] = [
 		"kafka:GetBootstrapBrokers",
 	];
 	/** IAM actions required for the GetClusterPolicy API call. */
-	static readonly GET_CLUSTER_POLICY: string[] = ["kafka:GetClusterPolicy"];
+	static readonly opGetClusterPolicy: string[] = ["kafka:GetClusterPolicy"];
 	/** IAM actions required for the GetCompatibleKafkaVersions API call. */
-	static readonly GET_COMPATIBLE_KAFKA_VERSIONS: string[] = [
+	static readonly opGetCompatibleKafkaVersions: string[] = [
 		"kafka:GetCompatibleKafkaVersions",
 	];
 	/** IAM actions required for the ListChannels API call. */
-	static readonly LIST_CHANNELS: string[] = ["kafka:ListChannels"];
+	static readonly ListChannels: string[] = ["kafka:ListChannels"];
 	/** IAM actions required for the ListClientVpcConnections API call. */
-	static readonly LIST_CLIENT_VPC_CONNECTIONS: string[] = [
+	static readonly ListClientVpcConnections: string[] = [
 		"kafka:ListClientVpcConnections",
 	];
 	/** IAM actions required for the ListClusterOperations API call. */
-	static readonly LIST_CLUSTER_OPERATIONS: string[] = [
+	static readonly ListClusterOperations: string[] = [
 		"kafka:ListClusterOperations",
 	];
 	/** IAM actions required for the ListClusterOperationsV2 API call. */
-	static readonly LIST_CLUSTER_OPERATIONS_V2: string[] = [
+	static readonly ListClusterOperationsV2: string[] = [
 		"kafka:ListClusterOperationsV2",
 	];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["kafka:ListClusters"];
+	static readonly ListClusters: string[] = ["kafka:ListClusters"];
 	/** IAM actions required for the ListClustersV2 API call. */
-	static readonly LIST_CLUSTERS_V2: string[] = ["kafka:ListClustersV2"];
+	static readonly ListClustersV2: string[] = ["kafka:ListClustersV2"];
 	/** IAM actions required for the ListConfigurationRevisions API call. */
-	static readonly LIST_CONFIGURATION_REVISIONS: string[] = [
+	static readonly ListConfigurationRevisions: string[] = [
 		"kafka:ListConfigurationRevisions",
 	];
 	/** IAM actions required for the ListConfigurations API call. */
-	static readonly LIST_CONFIGURATIONS: string[] = ["kafka:ListConfigurations"];
+	static readonly ListConfigurations: string[] = ["kafka:ListConfigurations"];
 	/** IAM actions required for the ListKafkaVersions API call. */
-	static readonly LIST_KAFKA_VERSIONS: string[] = ["kafka:ListKafkaVersions"];
+	static readonly ListKafkaVersions: string[] = ["kafka:ListKafkaVersions"];
 	/** IAM actions required for the ListNodes API call. */
-	static readonly LIST_NODES: string[] = ["kafka:ListNodes"];
+	static readonly ListNodes: string[] = ["kafka:ListNodes"];
 	/** IAM actions required for the ListReplicators API call. */
-	static readonly LIST_REPLICATORS: string[] = ["kafka:ListReplicators"];
+	static readonly ListReplicators: string[] = ["kafka:ListReplicators"];
 	/** IAM actions required for the ListScramSecrets API call. */
-	static readonly LIST_SCRAM_SECRETS: string[] = ["kafka:ListScramSecrets"];
+	static readonly ListScramSecrets: string[] = ["kafka:ListScramSecrets"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"kafka:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["kafka:ListTagsForResource"];
 	/** IAM actions required for the ListTopics API call. */
-	static readonly LIST_TOPICS: string[] = [
+	static readonly ListTopics: string[] = [
 		"kafka-cluster:Connect",
 		"kafka-cluster:DescribeTopic",
 	];
 	/** IAM actions required for the ListVpcConnections API call. */
-	static readonly LIST_VPC_CONNECTIONS: string[] = ["kafka:ListVpcConnections"];
+	static readonly ListVpcConnections: string[] = ["kafka:ListVpcConnections"];
 	/** IAM actions required for the PutClusterPolicy API call. */
-	static readonly PUT_CLUSTER_POLICY: string[] = ["kafka:PutClusterPolicy"];
+	static readonly PutClusterPolicy: string[] = ["kafka:PutClusterPolicy"];
 	/** IAM actions required for the RebootBroker API call. */
-	static readonly REBOOT_BROKER: string[] = ["kafka:RebootBroker"];
+	static readonly RebootBroker: string[] = ["kafka:RebootBroker"];
 	/** IAM actions required for the RejectClientVpcConnection API call. */
-	static readonly REJECT_CLIENT_VPC_CONNECTION: string[] = [
+	static readonly RejectClientVpcConnection: string[] = [
 		"kafka:RejectClientVpcConnection",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kafka:TagResource"];
+	static readonly TagResource: string[] = ["kafka:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kafka:UntagResource"];
+	static readonly UntagResource: string[] = ["kafka:UntagResource"];
 	/** IAM actions required for the UpdateBrokerCount API call. */
-	static readonly UPDATE_BROKER_COUNT: string[] = ["kafka:UpdateBrokerCount"];
+	static readonly UpdateBrokerCount: string[] = ["kafka:UpdateBrokerCount"];
 	/** IAM actions required for the UpdateBrokerStorage API call. */
-	static readonly UPDATE_BROKER_STORAGE: string[] = [
-		"kafka:UpdateBrokerStorage",
-	];
+	static readonly UpdateBrokerStorage: string[] = ["kafka:UpdateBrokerStorage"];
 	/** IAM actions required for the UpdateBrokerType API call. */
-	static readonly UPDATE_BROKER_TYPE: string[] = ["kafka:UpdateBrokerType"];
+	static readonly UpdateBrokerType: string[] = ["kafka:UpdateBrokerType"];
 	/** IAM actions required for the UpdateChannel API call. */
-	static readonly UPDATE_CHANNEL: string[] = ["kafka:UpdateChannel"];
+	static readonly UpdateChannel: string[] = ["kafka:UpdateChannel"];
 	/** IAM actions required for the UpdateClusterConfiguration API call. */
-	static readonly UPDATE_CLUSTER_CONFIGURATION: string[] = [
+	static readonly UpdateClusterConfiguration: string[] = [
 		"kafka:UpdateClusterConfiguration",
 	];
 	/** IAM actions required for the UpdateClusterKafkaVersion API call. */
-	static readonly UPDATE_CLUSTER_KAFKA_VERSION: string[] = [
+	static readonly UpdateClusterKafkaVersion: string[] = [
 		"kafka:UpdateClusterKafkaVersion",
 	];
 	/** IAM actions required for the UpdateConfiguration API call. */
-	static readonly UPDATE_CONFIGURATION: string[] = [
-		"kafka:UpdateConfiguration",
-	];
+	static readonly UpdateConfiguration: string[] = ["kafka:UpdateConfiguration"];
 	/** IAM actions required for the UpdateConnectivity API call. */
-	static readonly UPDATE_CONNECTIVITY: string[] = ["kafka:UpdateConnectivity"];
+	static readonly UpdateConnectivity: string[] = ["kafka:UpdateConnectivity"];
 	/** IAM actions required for the UpdateMonitoring API call. */
-	static readonly UPDATE_MONITORING: string[] = ["kafka:UpdateMonitoring"];
+	static readonly UpdateMonitoring: string[] = ["kafka:UpdateMonitoring"];
 	/** IAM actions required for the UpdateRebalancing API call. */
-	static readonly UPDATE_REBALANCING: string[] = ["kafka:UpdateRebalancing"];
+	static readonly UpdateRebalancing: string[] = ["kafka:UpdateRebalancing"];
 	/** IAM actions required for the UpdateReplicationInfo API call. */
-	static readonly UPDATE_REPLICATION_INFO: string[] = [
+	static readonly UpdateReplicationInfo: string[] = [
 		"kafka:UpdateReplicationInfo",
 	];
 	/** IAM actions required for the UpdateSecurity API call. */
-	static readonly UPDATE_SECURITY: string[] = ["kafka:UpdateSecurity"];
+	static readonly UpdateSecurity: string[] = ["kafka:UpdateSecurity"];
 	/** IAM actions required for the UpdateStorage API call. */
-	static readonly UPDATE_STORAGE: string[] = ["kafka:UpdateStorage"];
+	static readonly UpdateStorage: string[] = ["kafka:UpdateStorage"];
 	/** IAM actions required for the UpdateTopic API call. */
-	static readonly UPDATE_TOPIC: string[] = [
+	static readonly UpdateTopic: string[] = [
 		"kafka-cluster:AlterTopic",
 		"kafka-cluster:AlterTopicDynamicConfiguration",
 		"kafka-cluster:Connect",
@@ -913,48 +1016,48 @@ export class KafkaOperations {
  */
 export class KafkaConditions {
 	/** Condition keys applicable to the CreateChannel action. */
-	static readonly CREATE_CHANNEL_CONDITION_KEYS: string[] = [
+	static readonly CreateChannelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateClusterV2 action. */
-	static readonly CREATE_CLUSTER_V2_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterV2ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateReplicator action. */
-	static readonly CREATE_REPLICATOR_CONDITION_KEYS: string[] = [
+	static readonly CreateReplicatorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVpcConnection action. */
-	static readonly CREATE_VPC_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateConnectivity action. */
-	static readonly UPDATE_CONNECTIVITY_CONDITION_KEYS: string[] = [
+	static readonly UpdateConnectivityConditionKeys: string[] = [
 		"kafka:publicAccessEnabled",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: kafka:publicAccessEnabled (Bool) */
 	static readonly PUBLIC_ACCESS_ENABLED = "kafka:publicAccessEnabled";
 

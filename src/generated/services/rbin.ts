@@ -13,54 +13,81 @@ export class RbinActions {
 	static readonly SERVICE_PREFIX = "rbin";
 
 	/** [Write] rbin:CreateRule */
-	static readonly CREATE_RULE = "rbin:CreateRule";
+	static readonly CreateRule = "rbin:CreateRule";
 	/** [Write] rbin:DeleteRule */
-	static readonly DELETE_RULE = "rbin:DeleteRule";
+	static readonly DeleteRule = "rbin:DeleteRule";
 	/** [Read] rbin:GetRule */
-	static readonly GET_RULE = "rbin:GetRule";
+	static readonly actionGetRule = "rbin:GetRule";
 	/** [Read] rbin:ListRules */
-	static readonly LIST_RULES = "rbin:ListRules";
+	static readonly ListRules = "rbin:ListRules";
 	/** [Read] rbin:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "rbin:ListTagsForResource";
+	static readonly ListTagsForResource = "rbin:ListTagsForResource";
 	/** [Write] rbin:LockRule */
-	static readonly LOCK_RULE = "rbin:LockRule";
+	static readonly LockRule = "rbin:LockRule";
 	/** [Tagging] rbin:TagResource */
-	static readonly TAG_RESOURCE = "rbin:TagResource";
+	static readonly TagResource = "rbin:TagResource";
 	/** [Write] rbin:UnlockRule */
-	static readonly UNLOCK_RULE = "rbin:UnlockRule";
+	static readonly UnlockRule = "rbin:UnlockRule";
 	/** [Tagging] rbin:UntagResource */
-	static readonly UNTAG_RESOURCE = "rbin:UntagResource";
+	static readonly UntagResource = "rbin:UntagResource";
 	/** [Write] rbin:UpdateRule */
-	static readonly UPDATE_RULE = "rbin:UpdateRule";
+	static readonly UpdateRule = "rbin:UpdateRule";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RbinActions.GET_RULE,
-		RbinActions.LIST_RULES,
-		RbinActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		RbinActions.actionGetRule,
+		RbinActions.ListRules,
+		RbinActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RbinActions.CREATE_RULE,
-		RbinActions.DELETE_RULE,
-		RbinActions.LOCK_RULE,
-		RbinActions.UNLOCK_RULE,
-		RbinActions.UPDATE_RULE,
+	static readonly AllWriteActions: string[] = [
+		RbinActions.CreateRule,
+		RbinActions.DeleteRule,
+		RbinActions.LockRule,
+		RbinActions.UnlockRule,
+		RbinActions.UpdateRule,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RbinActions.TAG_RESOURCE,
-		RbinActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RbinActions.TagResource,
+		RbinActions.UntagResource,
 	];
 }
 
-const RuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rbin:(?<region>[^:]*):(?<account>[^:]*):rule/(?<resourceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a rule ARN.
+ */
+export interface RbinRuleArnProps {
+	/** The ResourceName component of the ARN. */
+	readonly resourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rule ARN.
+ */
+export interface RbinRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceName component. */
+	readonly resourceName: string;
+}
+
+const RuleArnRegex =
+	/^arn:(?<partition>[^:]+):rbin:(?<region>[^:]*):(?<account>[^:]*):rule\/(?<resourceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rbin resources.
@@ -69,16 +96,7 @@ export class RbinResources {
 	/**
 	 * Builds an ARN for the rule resource.
 	 */
-	static rule(props: {
-		/** The ResourceName component of the ARN. */
-		readonly resourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rule(props: RbinRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rbin:${props.region ?? "*"}:${props.account ?? "*"}:rule/${props.resourceName}`;
 	}
 
@@ -93,12 +111,7 @@ export class RbinResources {
 	 * Parses a rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceName: string;
-	} {
+	static parseRuleArn(arn: string): RbinRuleArnComponents {
 		const match = RuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rule ARN: ${arn}`);
@@ -117,31 +130,29 @@ export class RbinResources {
  */
 export class RbinOperations {
 	/** IAM actions required for the CreateRule API call. */
-	static readonly CREATE_RULE: string[] = [
+	static readonly CreateRule: string[] = [
 		"rbin:CreateRule",
 		"rbin:LockRule",
 		"rbin:TagResource",
 	];
 	/** IAM actions required for the DeleteRule API call. */
-	static readonly DELETE_RULE: string[] = ["rbin:DeleteRule"];
+	static readonly DeleteRule: string[] = ["rbin:DeleteRule"];
 	/** IAM actions required for the GetRule API call. */
-	static readonly GET_RULE: string[] = ["rbin:GetRule"];
+	static readonly opGetRule: string[] = ["rbin:GetRule"];
 	/** IAM actions required for the ListRules API call. */
-	static readonly LIST_RULES: string[] = ["rbin:ListRules"];
+	static readonly ListRules: string[] = ["rbin:ListRules"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"rbin:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["rbin:ListTagsForResource"];
 	/** IAM actions required for the LockRule API call. */
-	static readonly LOCK_RULE: string[] = ["rbin:LockRule"];
+	static readonly LockRule: string[] = ["rbin:LockRule"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["rbin:TagResource"];
+	static readonly TagResource: string[] = ["rbin:TagResource"];
 	/** IAM actions required for the UnlockRule API call. */
-	static readonly UNLOCK_RULE: string[] = ["rbin:UnlockRule"];
+	static readonly UnlockRule: string[] = ["rbin:UnlockRule"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["rbin:UntagResource"];
+	static readonly UntagResource: string[] = ["rbin:UntagResource"];
 	/** IAM actions required for the UpdateRule API call. */
-	static readonly UPDATE_RULE: string[] = ["rbin:UpdateRule"];
+	static readonly UpdateRule: string[] = ["rbin:UpdateRule"];
 }
 
 /**
@@ -149,65 +160,65 @@ export class RbinOperations {
  */
 export class RbinConditions {
 	/** Condition keys applicable to the CreateRule action. */
-	static readonly CREATE_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"rbin:Request/ResourceType",
 	];
 	/** Condition keys applicable to the DeleteRule action. */
-	static readonly DELETE_RULE_CONDITION_KEYS: string[] = [
+	static readonly DeleteRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the GetRule action. */
-	static readonly GET_RULE_CONDITION_KEYS: string[] = [
+	static readonly actionGetRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the ListRules action. */
-	static readonly LIST_RULES_CONDITION_KEYS: string[] = [
+	static readonly ListRulesConditionKeys: string[] = [
 		"rbin:Request/ResourceType",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the LockRule action. */
-	static readonly LOCK_RULE_CONDITION_KEYS: string[] = [
+	static readonly LockRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the UnlockRule action. */
-	static readonly UNLOCK_RULE_CONDITION_KEYS: string[] = [
+	static readonly UnlockRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"rbin:Attribute/ResourceType",
 	];
 	/** Condition keys applicable to the UpdateRule action. */
-	static readonly UPDATE_RULE_CONDITION_KEYS: string[] = [
+	static readonly UpdateRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"rbin:Attribute/ResourceType",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: rbin:Attribute/ResourceType (String) */
 	static readonly ATTRIBUTE_RESOURCE_TYPE = "rbin:Attribute/ResourceType";
 	/** Condition key: rbin:Request/ResourceType (String) */

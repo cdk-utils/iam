@@ -367,7 +367,11 @@ describe("syncServiceReference", () => {
 
 		// Entry says "dynamo" but detail says "dynamodb"
 		const entries: ServiceReferenceEntry[] = [
-			{ service: "dynamo", url: "http://example.com/dynamo.json", modified: 100 },
+			{
+				service: "dynamo",
+				url: "http://example.com/dynamo.json",
+				modified: 100,
+			},
 		];
 
 		mockFetchList.mockResolvedValueOnce(entries);

@@ -13,75 +13,104 @@ export class HealthActions {
 	static readonly SERVICE_PREFIX = "health";
 
 	/** [Read] health:DescribeAffectedAccountsForOrganization */
-	static readonly DESCRIBE_AFFECTED_ACCOUNTS_FOR_ORGANIZATION =
+	static readonly DescribeAffectedAccountsForOrganization =
 		"health:DescribeAffectedAccountsForOrganization";
 	/** [Read] health:DescribeAffectedEntities */
-	static readonly DESCRIBE_AFFECTED_ENTITIES =
-		"health:DescribeAffectedEntities";
+	static readonly DescribeAffectedEntities = "health:DescribeAffectedEntities";
 	/** [Read] health:DescribeAffectedEntitiesForOrganization */
-	static readonly DESCRIBE_AFFECTED_ENTITIES_FOR_ORGANIZATION =
+	static readonly DescribeAffectedEntitiesForOrganization =
 		"health:DescribeAffectedEntitiesForOrganization";
 	/** [Read] health:DescribeEntityAggregates */
-	static readonly DESCRIBE_ENTITY_AGGREGATES =
-		"health:DescribeEntityAggregates";
+	static readonly DescribeEntityAggregates = "health:DescribeEntityAggregates";
 	/** [Read] health:DescribeEntityAggregatesForOrganization */
-	static readonly DESCRIBE_ENTITY_AGGREGATES_FOR_ORGANIZATION =
+	static readonly DescribeEntityAggregatesForOrganization =
 		"health:DescribeEntityAggregatesForOrganization";
 	/** [Read] health:DescribeEventAggregates */
-	static readonly DESCRIBE_EVENT_AGGREGATES = "health:DescribeEventAggregates";
+	static readonly DescribeEventAggregates = "health:DescribeEventAggregates";
 	/** [Read] health:DescribeEventDetails */
-	static readonly DESCRIBE_EVENT_DETAILS = "health:DescribeEventDetails";
+	static readonly DescribeEventDetails = "health:DescribeEventDetails";
 	/** [Read] health:DescribeEventDetailsForOrganization */
-	static readonly DESCRIBE_EVENT_DETAILS_FOR_ORGANIZATION =
+	static readonly DescribeEventDetailsForOrganization =
 		"health:DescribeEventDetailsForOrganization";
 	/** [Read] health:DescribeEventTypes */
-	static readonly DESCRIBE_EVENT_TYPES = "health:DescribeEventTypes";
+	static readonly DescribeEventTypes = "health:DescribeEventTypes";
 	/** [Read] health:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "health:DescribeEvents";
+	static readonly DescribeEvents = "health:DescribeEvents";
 	/** [Read] health:DescribeEventsForOrganization */
-	static readonly DESCRIBE_EVENTS_FOR_ORGANIZATION =
+	static readonly DescribeEventsForOrganization =
 		"health:DescribeEventsForOrganization";
 	/** [Read] health:DescribeHealthServiceStatusForOrganization */
-	static readonly DESCRIBE_HEALTH_SERVICE_STATUS_FOR_ORGANIZATION =
+	static readonly DescribeHealthServiceStatusForOrganization =
 		"health:DescribeHealthServiceStatusForOrganization";
 	/** [PermissionManagement] health:DisableHealthServiceAccessForOrganization */
-	static readonly DISABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION =
+	static readonly DisableHealthServiceAccessForOrganization =
 		"health:DisableHealthServiceAccessForOrganization";
 	/** [PermissionManagement] health:EnableHealthServiceAccessForOrganization */
-	static readonly ENABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION =
+	static readonly EnableHealthServiceAccessForOrganization =
 		"health:EnableHealthServiceAccessForOrganization";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		HealthActions.DESCRIBE_AFFECTED_ACCOUNTS_FOR_ORGANIZATION,
-		HealthActions.DESCRIBE_AFFECTED_ENTITIES,
-		HealthActions.DESCRIBE_AFFECTED_ENTITIES_FOR_ORGANIZATION,
-		HealthActions.DESCRIBE_ENTITY_AGGREGATES,
-		HealthActions.DESCRIBE_ENTITY_AGGREGATES_FOR_ORGANIZATION,
-		HealthActions.DESCRIBE_EVENT_AGGREGATES,
-		HealthActions.DESCRIBE_EVENT_DETAILS,
-		HealthActions.DESCRIBE_EVENT_DETAILS_FOR_ORGANIZATION,
-		HealthActions.DESCRIBE_EVENT_TYPES,
-		HealthActions.DESCRIBE_EVENTS,
-		HealthActions.DESCRIBE_EVENTS_FOR_ORGANIZATION,
-		HealthActions.DESCRIBE_HEALTH_SERVICE_STATUS_FOR_ORGANIZATION,
+	static readonly AllReadActions: string[] = [
+		HealthActions.DescribeAffectedAccountsForOrganization,
+		HealthActions.DescribeAffectedEntities,
+		HealthActions.DescribeAffectedEntitiesForOrganization,
+		HealthActions.DescribeEntityAggregates,
+		HealthActions.DescribeEntityAggregatesForOrganization,
+		HealthActions.DescribeEventAggregates,
+		HealthActions.DescribeEventDetails,
+		HealthActions.DescribeEventDetailsForOrganization,
+		HealthActions.DescribeEventTypes,
+		HealthActions.DescribeEvents,
+		HealthActions.DescribeEventsForOrganization,
+		HealthActions.DescribeHealthServiceStatusForOrganization,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		HealthActions.DISABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION,
-		HealthActions.ENABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION,
+	static readonly AllPermissionManagementActions: string[] = [
+		HealthActions.DisableHealthServiceAccessForOrganization,
+		HealthActions.EnableHealthServiceAccessForOrganization,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const EventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):health:.*::event/(?<service>[^:/?]+)/(?<eventTypeCode>[^:/?]+)/.*$",
-);
+/**
+ * Properties for building a event ARN.
+ */
+export interface HealthEventArnProps {
+	/** The Service component of the ARN. */
+	readonly service: string;
+	/** The EventTypeCode component of the ARN. */
+	readonly eventTypeCode: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event ARN.
+ */
+export interface HealthEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Service component. */
+	readonly service: string;
+	/** The EventTypeCode component. */
+	readonly eventTypeCode: string;
+}
+
+const EventArnRegex =
+	/^arn:(?<partition>[^:]+):health:.*::event\/(?<service>[^:/?]+)\/(?<eventTypeCode>[^:/?]+)\/.*$/;
 
 /**
  * ARN builders, validators, and parsers for health resources.
@@ -90,18 +119,7 @@ export class HealthResources {
 	/**
 	 * Builds an ARN for the event resource.
 	 */
-	static event(props: {
-		/** The Service component of the ARN. */
-		readonly service: string;
-		/** The EventTypeCode component of the ARN. */
-		readonly eventTypeCode: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static event(props: HealthEventArnProps): string {
 		return `arn:${props.partition ?? "aws"}:health:*::event/${props.service}/${props.eventTypeCode}/*`;
 	}
 
@@ -116,13 +134,7 @@ export class HealthResources {
 	 * Parses a event ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		service: string;
-		eventTypeCode: string;
-	} {
+	static parseEventArn(arn: string): HealthEventArnComponents {
 		const match = EventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid event ARN: ${arn}`);
@@ -142,65 +154,63 @@ export class HealthResources {
  */
 export class HealthOperations {
 	/** IAM actions required for the DescribeAffectedAccountsForOrganization API call. */
-	static readonly DESCRIBE_AFFECTED_ACCOUNTS_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeAffectedAccountsForOrganization: string[] = [
 		"health:DescribeAffectedAccountsForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DescribeAffectedEntities API call. */
-	static readonly DESCRIBE_AFFECTED_ENTITIES: string[] = [
+	static readonly DescribeAffectedEntities: string[] = [
 		"health:DescribeAffectedEntities",
 	];
 	/** IAM actions required for the DescribeAffectedEntitiesForOrganization API call. */
-	static readonly DESCRIBE_AFFECTED_ENTITIES_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeAffectedEntitiesForOrganization: string[] = [
 		"health:DescribeAffectedEntitiesForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DescribeEntityAggregates API call. */
-	static readonly DESCRIBE_ENTITY_AGGREGATES: string[] = [
+	static readonly DescribeEntityAggregates: string[] = [
 		"health:DescribeEntityAggregates",
 	];
 	/** IAM actions required for the DescribeEntityAggregatesForOrganization API call. */
-	static readonly DESCRIBE_ENTITY_AGGREGATES_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeEntityAggregatesForOrganization: string[] = [
 		"health:DescribeEntityAggregatesForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DescribeEventAggregates API call. */
-	static readonly DESCRIBE_EVENT_AGGREGATES: string[] = [
+	static readonly DescribeEventAggregates: string[] = [
 		"health:DescribeEventAggregates",
 	];
 	/** IAM actions required for the DescribeEventDetails API call. */
-	static readonly DESCRIBE_EVENT_DETAILS: string[] = [
+	static readonly DescribeEventDetails: string[] = [
 		"health:DescribeEventDetails",
 	];
 	/** IAM actions required for the DescribeEventDetailsForOrganization API call. */
-	static readonly DESCRIBE_EVENT_DETAILS_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeEventDetailsForOrganization: string[] = [
 		"health:DescribeEventDetailsForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DescribeEventTypes API call. */
-	static readonly DESCRIBE_EVENT_TYPES: string[] = [
-		"health:DescribeEventTypes",
-	];
+	static readonly DescribeEventTypes: string[] = ["health:DescribeEventTypes"];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["health:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["health:DescribeEvents"];
 	/** IAM actions required for the DescribeEventsForOrganization API call. */
-	static readonly DESCRIBE_EVENTS_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeEventsForOrganization: string[] = [
 		"health:DescribeEventsForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DescribeHealthServiceStatusForOrganization API call. */
-	static readonly DESCRIBE_HEALTH_SERVICE_STATUS_FOR_ORGANIZATION: string[] = [
+	static readonly DescribeHealthServiceStatusForOrganization: string[] = [
 		"health:DescribeHealthServiceStatusForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the DisableHealthServiceAccessForOrganization API call. */
-	static readonly DISABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly DisableHealthServiceAccessForOrganization: string[] = [
 		"organizations:DisableAWSServiceAccess",
 		"health:DisableHealthServiceAccessForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the EnableHealthServiceAccessForOrganization API call. */
-	static readonly ENABLE_HEALTH_SERVICE_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly EnableHealthServiceAccessForOrganization: string[] = [
 		"iam:CreateServiceLinkedRole",
 		"organizations:EnableAWSServiceAccess",
 		"health:EnableHealthServiceAccessForOrganization",
@@ -213,12 +223,12 @@ export class HealthOperations {
  */
 export class HealthConditions {
 	/** Condition keys applicable to the DescribeAffectedEntities action. */
-	static readonly DESCRIBE_AFFECTED_ENTITIES_CONDITION_KEYS: string[] = [
+	static readonly DescribeAffectedEntitiesConditionKeys: string[] = [
 		"health:eventTypeCode",
 		"health:service",
 	];
 	/** Condition keys applicable to the DescribeEventDetails action. */
-	static readonly DESCRIBE_EVENT_DETAILS_CONDITION_KEYS: string[] = [
+	static readonly DescribeEventDetailsConditionKeys: string[] = [
 		"health:eventTypeCode",
 		"health:service",
 	];

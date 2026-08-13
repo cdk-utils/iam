@@ -13,318 +13,595 @@ export class WorkspacesWebActions {
 	static readonly SERVICE_PREFIX = "workspaces-web";
 
 	/** [Write] workspaces-web:AssociateBrowserSettings */
-	static readonly ASSOCIATE_BROWSER_SETTINGS =
+	static readonly AssociateBrowserSettings =
 		"workspaces-web:AssociateBrowserSettings";
 	/** [Write] workspaces-web:AssociateDataProtectionSettings */
-	static readonly ASSOCIATE_DATA_PROTECTION_SETTINGS =
+	static readonly AssociateDataProtectionSettings =
 		"workspaces-web:AssociateDataProtectionSettings";
 	/** [Write] workspaces-web:AssociateIpAccessSettings */
-	static readonly ASSOCIATE_IP_ACCESS_SETTINGS =
+	static readonly AssociateIpAccessSettings =
 		"workspaces-web:AssociateIpAccessSettings";
 	/** [Write] workspaces-web:AssociateNetworkSettings */
-	static readonly ASSOCIATE_NETWORK_SETTINGS =
+	static readonly AssociateNetworkSettings =
 		"workspaces-web:AssociateNetworkSettings";
 	/** [Write] workspaces-web:AssociateSessionLogger */
-	static readonly ASSOCIATE_SESSION_LOGGER =
+	static readonly AssociateSessionLogger =
 		"workspaces-web:AssociateSessionLogger";
 	/** [Write] workspaces-web:AssociateTrustStore */
-	static readonly ASSOCIATE_TRUST_STORE = "workspaces-web:AssociateTrustStore";
+	static readonly AssociateTrustStore = "workspaces-web:AssociateTrustStore";
 	/** [Write] workspaces-web:AssociateUserAccessLoggingSettings */
-	static readonly ASSOCIATE_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly AssociateUserAccessLoggingSettings =
 		"workspaces-web:AssociateUserAccessLoggingSettings";
 	/** [Write] workspaces-web:AssociateUserSettings */
-	static readonly ASSOCIATE_USER_SETTINGS =
+	static readonly AssociateUserSettings =
 		"workspaces-web:AssociateUserSettings";
 	/** [Write] workspaces-web:CreateBrowserSettings */
-	static readonly CREATE_BROWSER_SETTINGS =
+	static readonly CreateBrowserSettings =
 		"workspaces-web:CreateBrowserSettings";
 	/** [Write] workspaces-web:CreateDataProtectionSettings */
-	static readonly CREATE_DATA_PROTECTION_SETTINGS =
+	static readonly CreateDataProtectionSettings =
 		"workspaces-web:CreateDataProtectionSettings";
 	/** [Write] workspaces-web:CreateIdentityProvider */
-	static readonly CREATE_IDENTITY_PROVIDER =
+	static readonly CreateIdentityProvider =
 		"workspaces-web:CreateIdentityProvider";
 	/** [Write] workspaces-web:CreateIpAccessSettings */
-	static readonly CREATE_IP_ACCESS_SETTINGS =
+	static readonly CreateIpAccessSettings =
 		"workspaces-web:CreateIpAccessSettings";
 	/** [Write] workspaces-web:CreateNetworkSettings */
-	static readonly CREATE_NETWORK_SETTINGS =
+	static readonly CreateNetworkSettings =
 		"workspaces-web:CreateNetworkSettings";
 	/** [Write] workspaces-web:CreatePortal */
-	static readonly CREATE_PORTAL = "workspaces-web:CreatePortal";
+	static readonly CreatePortal = "workspaces-web:CreatePortal";
 	/** [Write] workspaces-web:CreateSessionLogger */
-	static readonly CREATE_SESSION_LOGGER = "workspaces-web:CreateSessionLogger";
+	static readonly CreateSessionLogger = "workspaces-web:CreateSessionLogger";
 	/** [Write] workspaces-web:CreateTrustStore */
-	static readonly CREATE_TRUST_STORE = "workspaces-web:CreateTrustStore";
+	static readonly CreateTrustStore = "workspaces-web:CreateTrustStore";
 	/** [Write] workspaces-web:CreateUserAccessLoggingSettings */
-	static readonly CREATE_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly CreateUserAccessLoggingSettings =
 		"workspaces-web:CreateUserAccessLoggingSettings";
 	/** [Write] workspaces-web:CreateUserSettings */
-	static readonly CREATE_USER_SETTINGS = "workspaces-web:CreateUserSettings";
+	static readonly CreateUserSettings = "workspaces-web:CreateUserSettings";
 	/** [Write] workspaces-web:DeleteBrowserSettings */
-	static readonly DELETE_BROWSER_SETTINGS =
+	static readonly DeleteBrowserSettings =
 		"workspaces-web:DeleteBrowserSettings";
 	/** [Write] workspaces-web:DeleteDataProtectionSettings */
-	static readonly DELETE_DATA_PROTECTION_SETTINGS =
+	static readonly DeleteDataProtectionSettings =
 		"workspaces-web:DeleteDataProtectionSettings";
 	/** [Write] workspaces-web:DeleteIdentityProvider */
-	static readonly DELETE_IDENTITY_PROVIDER =
+	static readonly DeleteIdentityProvider =
 		"workspaces-web:DeleteIdentityProvider";
 	/** [Write] workspaces-web:DeleteIpAccessSettings */
-	static readonly DELETE_IP_ACCESS_SETTINGS =
+	static readonly DeleteIpAccessSettings =
 		"workspaces-web:DeleteIpAccessSettings";
 	/** [Write] workspaces-web:DeleteNetworkSettings */
-	static readonly DELETE_NETWORK_SETTINGS =
+	static readonly DeleteNetworkSettings =
 		"workspaces-web:DeleteNetworkSettings";
 	/** [Write] workspaces-web:DeletePortal */
-	static readonly DELETE_PORTAL = "workspaces-web:DeletePortal";
+	static readonly DeletePortal = "workspaces-web:DeletePortal";
 	/** [Write] workspaces-web:DeleteSessionLogger */
-	static readonly DELETE_SESSION_LOGGER = "workspaces-web:DeleteSessionLogger";
+	static readonly DeleteSessionLogger = "workspaces-web:DeleteSessionLogger";
 	/** [Write] workspaces-web:DeleteTrustStore */
-	static readonly DELETE_TRUST_STORE = "workspaces-web:DeleteTrustStore";
+	static readonly DeleteTrustStore = "workspaces-web:DeleteTrustStore";
 	/** [Write] workspaces-web:DeleteUserAccessLoggingSettings */
-	static readonly DELETE_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly DeleteUserAccessLoggingSettings =
 		"workspaces-web:DeleteUserAccessLoggingSettings";
 	/** [Write] workspaces-web:DeleteUserSettings */
-	static readonly DELETE_USER_SETTINGS = "workspaces-web:DeleteUserSettings";
+	static readonly DeleteUserSettings = "workspaces-web:DeleteUserSettings";
 	/** [Write] workspaces-web:DisassociateBrowserSettings */
-	static readonly DISASSOCIATE_BROWSER_SETTINGS =
+	static readonly DisassociateBrowserSettings =
 		"workspaces-web:DisassociateBrowserSettings";
 	/** [Write] workspaces-web:DisassociateDataProtectionSettings */
-	static readonly DISASSOCIATE_DATA_PROTECTION_SETTINGS =
+	static readonly DisassociateDataProtectionSettings =
 		"workspaces-web:DisassociateDataProtectionSettings";
 	/** [Write] workspaces-web:DisassociateIpAccessSettings */
-	static readonly DISASSOCIATE_IP_ACCESS_SETTINGS =
+	static readonly DisassociateIpAccessSettings =
 		"workspaces-web:DisassociateIpAccessSettings";
 	/** [Write] workspaces-web:DisassociateNetworkSettings */
-	static readonly DISASSOCIATE_NETWORK_SETTINGS =
+	static readonly DisassociateNetworkSettings =
 		"workspaces-web:DisassociateNetworkSettings";
 	/** [Write] workspaces-web:DisassociateSessionLogger */
-	static readonly DISASSOCIATE_SESSION_LOGGER =
+	static readonly DisassociateSessionLogger =
 		"workspaces-web:DisassociateSessionLogger";
 	/** [Write] workspaces-web:DisassociateTrustStore */
-	static readonly DISASSOCIATE_TRUST_STORE =
+	static readonly DisassociateTrustStore =
 		"workspaces-web:DisassociateTrustStore";
 	/** [Write] workspaces-web:DisassociateUserAccessLoggingSettings */
-	static readonly DISASSOCIATE_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly DisassociateUserAccessLoggingSettings =
 		"workspaces-web:DisassociateUserAccessLoggingSettings";
 	/** [Write] workspaces-web:DisassociateUserSettings */
-	static readonly DISASSOCIATE_USER_SETTINGS =
+	static readonly DisassociateUserSettings =
 		"workspaces-web:DisassociateUserSettings";
 	/** [Write] workspaces-web:ExpireSession */
-	static readonly EXPIRE_SESSION = "workspaces-web:ExpireSession";
+	static readonly ExpireSession = "workspaces-web:ExpireSession";
 	/** [Read] workspaces-web:GetBrowserSettings */
-	static readonly GET_BROWSER_SETTINGS = "workspaces-web:GetBrowserSettings";
+	static readonly actionGetBrowserSettings =
+		"workspaces-web:GetBrowserSettings";
 	/** [Read] workspaces-web:GetDataProtectionSettings */
-	static readonly GET_DATA_PROTECTION_SETTINGS =
+	static readonly actionGetDataProtectionSettings =
 		"workspaces-web:GetDataProtectionSettings";
 	/** [Read] workspaces-web:GetIdentityProvider */
-	static readonly GET_IDENTITY_PROVIDER = "workspaces-web:GetIdentityProvider";
+	static readonly actionGetIdentityProvider =
+		"workspaces-web:GetIdentityProvider";
 	/** [Read] workspaces-web:GetIpAccessSettings */
-	static readonly GET_IP_ACCESS_SETTINGS = "workspaces-web:GetIpAccessSettings";
+	static readonly actionGetIpAccessSettings =
+		"workspaces-web:GetIpAccessSettings";
 	/** [Read] workspaces-web:GetNetworkSettings */
-	static readonly GET_NETWORK_SETTINGS = "workspaces-web:GetNetworkSettings";
+	static readonly actionGetNetworkSettings =
+		"workspaces-web:GetNetworkSettings";
 	/** [Read] workspaces-web:GetPortal */
-	static readonly GET_PORTAL = "workspaces-web:GetPortal";
+	static readonly actionGetPortal = "workspaces-web:GetPortal";
 	/** [Read] workspaces-web:GetPortalServiceProviderMetadata */
-	static readonly GET_PORTAL_SERVICE_PROVIDER_METADATA =
+	static readonly actionGetPortalServiceProviderMetadata =
 		"workspaces-web:GetPortalServiceProviderMetadata";
 	/** [Read] workspaces-web:GetSession */
-	static readonly GET_SESSION = "workspaces-web:GetSession";
+	static readonly actionGetSession = "workspaces-web:GetSession";
 	/** [Read] workspaces-web:GetSessionLogger */
-	static readonly GET_SESSION_LOGGER = "workspaces-web:GetSessionLogger";
+	static readonly actionGetSessionLogger = "workspaces-web:GetSessionLogger";
 	/** [Read] workspaces-web:GetTrustStore */
-	static readonly GET_TRUST_STORE = "workspaces-web:GetTrustStore";
+	static readonly actionGetTrustStore = "workspaces-web:GetTrustStore";
 	/** [Read] workspaces-web:GetTrustStoreCertificate */
-	static readonly GET_TRUST_STORE_CERTIFICATE =
+	static readonly actionGetTrustStoreCertificate =
 		"workspaces-web:GetTrustStoreCertificate";
 	/** [Read] workspaces-web:GetUserAccessLoggingSettings */
-	static readonly GET_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly actionGetUserAccessLoggingSettings =
 		"workspaces-web:GetUserAccessLoggingSettings";
 	/** [Read] workspaces-web:GetUserSettings */
-	static readonly GET_USER_SETTINGS = "workspaces-web:GetUserSettings";
+	static readonly actionGetUserSettings = "workspaces-web:GetUserSettings";
 	/** [Read] workspaces-web:ListBrowserSettings */
-	static readonly LIST_BROWSER_SETTINGS = "workspaces-web:ListBrowserSettings";
+	static readonly ListBrowserSettings = "workspaces-web:ListBrowserSettings";
 	/** [Read] workspaces-web:ListDataProtectionSettings */
-	static readonly LIST_DATA_PROTECTION_SETTINGS =
+	static readonly ListDataProtectionSettings =
 		"workspaces-web:ListDataProtectionSettings";
 	/** [Read] workspaces-web:ListIdentityProviders */
-	static readonly LIST_IDENTITY_PROVIDERS =
+	static readonly ListIdentityProviders =
 		"workspaces-web:ListIdentityProviders";
 	/** [Read] workspaces-web:ListIpAccessSettings */
-	static readonly LIST_IP_ACCESS_SETTINGS =
-		"workspaces-web:ListIpAccessSettings";
+	static readonly ListIpAccessSettings = "workspaces-web:ListIpAccessSettings";
 	/** [Read] workspaces-web:ListNetworkSettings */
-	static readonly LIST_NETWORK_SETTINGS = "workspaces-web:ListNetworkSettings";
+	static readonly ListNetworkSettings = "workspaces-web:ListNetworkSettings";
 	/** [Read] workspaces-web:ListPortals */
-	static readonly LIST_PORTALS = "workspaces-web:ListPortals";
+	static readonly ListPortals = "workspaces-web:ListPortals";
 	/** [Read] workspaces-web:ListSessionLoggers */
-	static readonly LIST_SESSION_LOGGERS = "workspaces-web:ListSessionLoggers";
+	static readonly ListSessionLoggers = "workspaces-web:ListSessionLoggers";
 	/** [Read] workspaces-web:ListSessions */
-	static readonly LIST_SESSIONS = "workspaces-web:ListSessions";
+	static readonly ListSessions = "workspaces-web:ListSessions";
 	/** [Read] workspaces-web:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "workspaces-web:ListTagsForResource";
+	static readonly ListTagsForResource = "workspaces-web:ListTagsForResource";
 	/** [Read] workspaces-web:ListTrustStoreCertificates */
-	static readonly LIST_TRUST_STORE_CERTIFICATES =
+	static readonly ListTrustStoreCertificates =
 		"workspaces-web:ListTrustStoreCertificates";
 	/** [Read] workspaces-web:ListTrustStores */
-	static readonly LIST_TRUST_STORES = "workspaces-web:ListTrustStores";
+	static readonly ListTrustStores = "workspaces-web:ListTrustStores";
 	/** [Read] workspaces-web:ListUserAccessLoggingSettings */
-	static readonly LIST_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly ListUserAccessLoggingSettings =
 		"workspaces-web:ListUserAccessLoggingSettings";
 	/** [Read] workspaces-web:ListUserSettings */
-	static readonly LIST_USER_SETTINGS = "workspaces-web:ListUserSettings";
+	static readonly ListUserSettings = "workspaces-web:ListUserSettings";
 	/** [Tagging] workspaces-web:TagResource */
-	static readonly TAG_RESOURCE = "workspaces-web:TagResource";
+	static readonly TagResource = "workspaces-web:TagResource";
 	/** [Tagging] workspaces-web:UntagResource */
-	static readonly UNTAG_RESOURCE = "workspaces-web:UntagResource";
+	static readonly UntagResource = "workspaces-web:UntagResource";
 	/** [Write] workspaces-web:UpdateBrowserSettings */
-	static readonly UPDATE_BROWSER_SETTINGS =
+	static readonly UpdateBrowserSettings =
 		"workspaces-web:UpdateBrowserSettings";
 	/** [Write] workspaces-web:UpdateDataProtectionSettings */
-	static readonly UPDATE_DATA_PROTECTION_SETTINGS =
+	static readonly UpdateDataProtectionSettings =
 		"workspaces-web:UpdateDataProtectionSettings";
 	/** [Write] workspaces-web:UpdateIdentityProvider */
-	static readonly UPDATE_IDENTITY_PROVIDER =
+	static readonly UpdateIdentityProvider =
 		"workspaces-web:UpdateIdentityProvider";
 	/** [Write] workspaces-web:UpdateIpAccessSettings */
-	static readonly UPDATE_IP_ACCESS_SETTINGS =
+	static readonly UpdateIpAccessSettings =
 		"workspaces-web:UpdateIpAccessSettings";
 	/** [Write] workspaces-web:UpdateNetworkSettings */
-	static readonly UPDATE_NETWORK_SETTINGS =
+	static readonly UpdateNetworkSettings =
 		"workspaces-web:UpdateNetworkSettings";
 	/** [Write] workspaces-web:UpdatePortal */
-	static readonly UPDATE_PORTAL = "workspaces-web:UpdatePortal";
+	static readonly UpdatePortal = "workspaces-web:UpdatePortal";
 	/** [Write] workspaces-web:UpdateSessionLogger */
-	static readonly UPDATE_SESSION_LOGGER = "workspaces-web:UpdateSessionLogger";
+	static readonly UpdateSessionLogger = "workspaces-web:UpdateSessionLogger";
 	/** [Write] workspaces-web:UpdateTrustStore */
-	static readonly UPDATE_TRUST_STORE = "workspaces-web:UpdateTrustStore";
+	static readonly UpdateTrustStore = "workspaces-web:UpdateTrustStore";
 	/** [Write] workspaces-web:UpdateUserAccessLoggingSettings */
-	static readonly UPDATE_USER_ACCESS_LOGGING_SETTINGS =
+	static readonly UpdateUserAccessLoggingSettings =
 		"workspaces-web:UpdateUserAccessLoggingSettings";
 	/** [Write] workspaces-web:UpdateUserSettings */
-	static readonly UPDATE_USER_SETTINGS = "workspaces-web:UpdateUserSettings";
+	static readonly UpdateUserSettings = "workspaces-web:UpdateUserSettings";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WorkspacesWebActions.GET_BROWSER_SETTINGS,
-		WorkspacesWebActions.GET_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.GET_IDENTITY_PROVIDER,
-		WorkspacesWebActions.GET_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.GET_NETWORK_SETTINGS,
-		WorkspacesWebActions.GET_PORTAL,
-		WorkspacesWebActions.GET_PORTAL_SERVICE_PROVIDER_METADATA,
-		WorkspacesWebActions.GET_SESSION,
-		WorkspacesWebActions.GET_SESSION_LOGGER,
-		WorkspacesWebActions.GET_TRUST_STORE,
-		WorkspacesWebActions.GET_TRUST_STORE_CERTIFICATE,
-		WorkspacesWebActions.GET_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.GET_USER_SETTINGS,
-		WorkspacesWebActions.LIST_BROWSER_SETTINGS,
-		WorkspacesWebActions.LIST_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.LIST_IDENTITY_PROVIDERS,
-		WorkspacesWebActions.LIST_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.LIST_NETWORK_SETTINGS,
-		WorkspacesWebActions.LIST_PORTALS,
-		WorkspacesWebActions.LIST_SESSION_LOGGERS,
-		WorkspacesWebActions.LIST_SESSIONS,
-		WorkspacesWebActions.LIST_TAGS_FOR_RESOURCE,
-		WorkspacesWebActions.LIST_TRUST_STORE_CERTIFICATES,
-		WorkspacesWebActions.LIST_TRUST_STORES,
-		WorkspacesWebActions.LIST_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.LIST_USER_SETTINGS,
+	static readonly AllReadActions: string[] = [
+		WorkspacesWebActions.actionGetBrowserSettings,
+		WorkspacesWebActions.actionGetDataProtectionSettings,
+		WorkspacesWebActions.actionGetIdentityProvider,
+		WorkspacesWebActions.actionGetIpAccessSettings,
+		WorkspacesWebActions.actionGetNetworkSettings,
+		WorkspacesWebActions.actionGetPortal,
+		WorkspacesWebActions.actionGetPortalServiceProviderMetadata,
+		WorkspacesWebActions.actionGetSession,
+		WorkspacesWebActions.actionGetSessionLogger,
+		WorkspacesWebActions.actionGetTrustStore,
+		WorkspacesWebActions.actionGetTrustStoreCertificate,
+		WorkspacesWebActions.actionGetUserAccessLoggingSettings,
+		WorkspacesWebActions.actionGetUserSettings,
+		WorkspacesWebActions.ListBrowserSettings,
+		WorkspacesWebActions.ListDataProtectionSettings,
+		WorkspacesWebActions.ListIdentityProviders,
+		WorkspacesWebActions.ListIpAccessSettings,
+		WorkspacesWebActions.ListNetworkSettings,
+		WorkspacesWebActions.ListPortals,
+		WorkspacesWebActions.ListSessionLoggers,
+		WorkspacesWebActions.ListSessions,
+		WorkspacesWebActions.ListTagsForResource,
+		WorkspacesWebActions.ListTrustStoreCertificates,
+		WorkspacesWebActions.ListTrustStores,
+		WorkspacesWebActions.ListUserAccessLoggingSettings,
+		WorkspacesWebActions.ListUserSettings,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WorkspacesWebActions.ASSOCIATE_BROWSER_SETTINGS,
-		WorkspacesWebActions.ASSOCIATE_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.ASSOCIATE_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.ASSOCIATE_NETWORK_SETTINGS,
-		WorkspacesWebActions.ASSOCIATE_SESSION_LOGGER,
-		WorkspacesWebActions.ASSOCIATE_TRUST_STORE,
-		WorkspacesWebActions.ASSOCIATE_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.ASSOCIATE_USER_SETTINGS,
-		WorkspacesWebActions.CREATE_BROWSER_SETTINGS,
-		WorkspacesWebActions.CREATE_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.CREATE_IDENTITY_PROVIDER,
-		WorkspacesWebActions.CREATE_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.CREATE_NETWORK_SETTINGS,
-		WorkspacesWebActions.CREATE_PORTAL,
-		WorkspacesWebActions.CREATE_SESSION_LOGGER,
-		WorkspacesWebActions.CREATE_TRUST_STORE,
-		WorkspacesWebActions.CREATE_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.CREATE_USER_SETTINGS,
-		WorkspacesWebActions.DELETE_BROWSER_SETTINGS,
-		WorkspacesWebActions.DELETE_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.DELETE_IDENTITY_PROVIDER,
-		WorkspacesWebActions.DELETE_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.DELETE_NETWORK_SETTINGS,
-		WorkspacesWebActions.DELETE_PORTAL,
-		WorkspacesWebActions.DELETE_SESSION_LOGGER,
-		WorkspacesWebActions.DELETE_TRUST_STORE,
-		WorkspacesWebActions.DELETE_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.DELETE_USER_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_BROWSER_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_NETWORK_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_SESSION_LOGGER,
-		WorkspacesWebActions.DISASSOCIATE_TRUST_STORE,
-		WorkspacesWebActions.DISASSOCIATE_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.DISASSOCIATE_USER_SETTINGS,
-		WorkspacesWebActions.EXPIRE_SESSION,
-		WorkspacesWebActions.UPDATE_BROWSER_SETTINGS,
-		WorkspacesWebActions.UPDATE_DATA_PROTECTION_SETTINGS,
-		WorkspacesWebActions.UPDATE_IDENTITY_PROVIDER,
-		WorkspacesWebActions.UPDATE_IP_ACCESS_SETTINGS,
-		WorkspacesWebActions.UPDATE_NETWORK_SETTINGS,
-		WorkspacesWebActions.UPDATE_PORTAL,
-		WorkspacesWebActions.UPDATE_SESSION_LOGGER,
-		WorkspacesWebActions.UPDATE_TRUST_STORE,
-		WorkspacesWebActions.UPDATE_USER_ACCESS_LOGGING_SETTINGS,
-		WorkspacesWebActions.UPDATE_USER_SETTINGS,
+	static readonly AllWriteActions: string[] = [
+		WorkspacesWebActions.AssociateBrowserSettings,
+		WorkspacesWebActions.AssociateDataProtectionSettings,
+		WorkspacesWebActions.AssociateIpAccessSettings,
+		WorkspacesWebActions.AssociateNetworkSettings,
+		WorkspacesWebActions.AssociateSessionLogger,
+		WorkspacesWebActions.AssociateTrustStore,
+		WorkspacesWebActions.AssociateUserAccessLoggingSettings,
+		WorkspacesWebActions.AssociateUserSettings,
+		WorkspacesWebActions.CreateBrowserSettings,
+		WorkspacesWebActions.CreateDataProtectionSettings,
+		WorkspacesWebActions.CreateIdentityProvider,
+		WorkspacesWebActions.CreateIpAccessSettings,
+		WorkspacesWebActions.CreateNetworkSettings,
+		WorkspacesWebActions.CreatePortal,
+		WorkspacesWebActions.CreateSessionLogger,
+		WorkspacesWebActions.CreateTrustStore,
+		WorkspacesWebActions.CreateUserAccessLoggingSettings,
+		WorkspacesWebActions.CreateUserSettings,
+		WorkspacesWebActions.DeleteBrowserSettings,
+		WorkspacesWebActions.DeleteDataProtectionSettings,
+		WorkspacesWebActions.DeleteIdentityProvider,
+		WorkspacesWebActions.DeleteIpAccessSettings,
+		WorkspacesWebActions.DeleteNetworkSettings,
+		WorkspacesWebActions.DeletePortal,
+		WorkspacesWebActions.DeleteSessionLogger,
+		WorkspacesWebActions.DeleteTrustStore,
+		WorkspacesWebActions.DeleteUserAccessLoggingSettings,
+		WorkspacesWebActions.DeleteUserSettings,
+		WorkspacesWebActions.DisassociateBrowserSettings,
+		WorkspacesWebActions.DisassociateDataProtectionSettings,
+		WorkspacesWebActions.DisassociateIpAccessSettings,
+		WorkspacesWebActions.DisassociateNetworkSettings,
+		WorkspacesWebActions.DisassociateSessionLogger,
+		WorkspacesWebActions.DisassociateTrustStore,
+		WorkspacesWebActions.DisassociateUserAccessLoggingSettings,
+		WorkspacesWebActions.DisassociateUserSettings,
+		WorkspacesWebActions.ExpireSession,
+		WorkspacesWebActions.UpdateBrowserSettings,
+		WorkspacesWebActions.UpdateDataProtectionSettings,
+		WorkspacesWebActions.UpdateIdentityProvider,
+		WorkspacesWebActions.UpdateIpAccessSettings,
+		WorkspacesWebActions.UpdateNetworkSettings,
+		WorkspacesWebActions.UpdatePortal,
+		WorkspacesWebActions.UpdateSessionLogger,
+		WorkspacesWebActions.UpdateTrustStore,
+		WorkspacesWebActions.UpdateUserAccessLoggingSettings,
+		WorkspacesWebActions.UpdateUserSettings,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WorkspacesWebActions.TAG_RESOURCE,
-		WorkspacesWebActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WorkspacesWebActions.TagResource,
+		WorkspacesWebActions.UntagResource,
 	];
 }
 
-const BrowserSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):browserSettings/(?<browserSettingsId>[^:/?]+)$",
-);
-const DataProtectionSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):dataProtectionSettings/(?<dataProtectionSettingsId>[^:/?]+)$",
-);
-const IdentityProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):identityProvider/(?<portalId>[^:/?]+)/(?<identityProviderId>[^:/?]+)$",
-);
-const IPAccessSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):ipAccessSettings/(?<ipAccessSettingsId>[^:/?]+)$",
-);
-const NetworkSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):networkSettings/(?<networkSettingsId>[^:/?]+)$",
-);
-const PortalArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):portal/(?<portalId>[^:/?]+)$",
-);
-const SessionLoggerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):sessionLogger/(?<sessionLoggerId>[^:/?]+)$",
-);
-const TrustStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):trustStore/(?<trustStoreId>[^:/?]+)$",
-);
-const UserAccessLoggingSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):userAccessLoggingSettings/(?<userAccessLoggingSettingsId>[^:/?]+)$",
-);
-const UserSettingsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):userSettings/(?<userSettingsId>[^:/?]+)$",
-);
+/**
+ * Properties for building a browserSettings ARN.
+ */
+export interface WorkspacesWebBrowserSettingsArnProps {
+	/** The BrowserSettingsId component of the ARN. */
+	readonly browserSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a browserSettings ARN.
+ */
+export interface WorkspacesWebBrowserSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BrowserSettingsId component. */
+	readonly browserSettingsId: string;
+}
+
+/**
+ * Properties for building a dataProtectionSettings ARN.
+ */
+export interface WorkspacesWebDataProtectionSettingsArnProps {
+	/** The DataProtectionSettingsId component of the ARN. */
+	readonly dataProtectionSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataProtectionSettings ARN.
+ */
+export interface WorkspacesWebDataProtectionSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataProtectionSettingsId component. */
+	readonly dataProtectionSettingsId: string;
+}
+
+/**
+ * Properties for building a identityProvider ARN.
+ */
+export interface WorkspacesWebIdentityProviderArnProps {
+	/** The PortalId component of the ARN. */
+	readonly portalId: string;
+	/** The IdentityProviderId component of the ARN. */
+	readonly identityProviderId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identityProvider ARN.
+ */
+export interface WorkspacesWebIdentityProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalId component. */
+	readonly portalId: string;
+	/** The IdentityProviderId component. */
+	readonly identityProviderId: string;
+}
+
+/**
+ * Properties for building a ipAccessSettings ARN.
+ */
+export interface WorkspacesWebIPAccessSettingsArnProps {
+	/** The IpAccessSettingsId component of the ARN. */
+	readonly ipAccessSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipAccessSettings ARN.
+ */
+export interface WorkspacesWebIPAccessSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpAccessSettingsId component. */
+	readonly ipAccessSettingsId: string;
+}
+
+/**
+ * Properties for building a networkSettings ARN.
+ */
+export interface WorkspacesWebNetworkSettingsArnProps {
+	/** The NetworkSettingsId component of the ARN. */
+	readonly networkSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a networkSettings ARN.
+ */
+export interface WorkspacesWebNetworkSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkSettingsId component. */
+	readonly networkSettingsId: string;
+}
+
+/**
+ * Properties for building a portal ARN.
+ */
+export interface WorkspacesWebPortalArnProps {
+	/** The PortalId component of the ARN. */
+	readonly portalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a portal ARN.
+ */
+export interface WorkspacesWebPortalArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PortalId component. */
+	readonly portalId: string;
+}
+
+/**
+ * Properties for building a sessionLogger ARN.
+ */
+export interface WorkspacesWebSessionLoggerArnProps {
+	/** The SessionLoggerId component of the ARN. */
+	readonly sessionLoggerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sessionLogger ARN.
+ */
+export interface WorkspacesWebSessionLoggerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SessionLoggerId component. */
+	readonly sessionLoggerId: string;
+}
+
+/**
+ * Properties for building a trustStore ARN.
+ */
+export interface WorkspacesWebTrustStoreArnProps {
+	/** The TrustStoreId component of the ARN. */
+	readonly trustStoreId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trustStore ARN.
+ */
+export interface WorkspacesWebTrustStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrustStoreId component. */
+	readonly trustStoreId: string;
+}
+
+/**
+ * Properties for building a userAccessLoggingSettings ARN.
+ */
+export interface WorkspacesWebUserAccessLoggingSettingsArnProps {
+	/** The UserAccessLoggingSettingsId component of the ARN. */
+	readonly userAccessLoggingSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a userAccessLoggingSettings ARN.
+ */
+export interface WorkspacesWebUserAccessLoggingSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserAccessLoggingSettingsId component. */
+	readonly userAccessLoggingSettingsId: string;
+}
+
+/**
+ * Properties for building a userSettings ARN.
+ */
+export interface WorkspacesWebUserSettingsArnProps {
+	/** The UserSettingsId component of the ARN. */
+	readonly userSettingsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a userSettings ARN.
+ */
+export interface WorkspacesWebUserSettingsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserSettingsId component. */
+	readonly userSettingsId: string;
+}
+
+const BrowserSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):browserSettings\/(?<browserSettingsId>[^:/?]+)$/;
+const DataProtectionSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):dataProtectionSettings\/(?<dataProtectionSettingsId>[^:/?]+)$/;
+const IdentityProviderArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):identityProvider\/(?<portalId>[^:/?]+)\/(?<identityProviderId>[^:/?]+)$/;
+const IPAccessSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):ipAccessSettings\/(?<ipAccessSettingsId>[^:/?]+)$/;
+const NetworkSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):networkSettings\/(?<networkSettingsId>[^:/?]+)$/;
+const PortalArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):portal\/(?<portalId>[^:/?]+)$/;
+const SessionLoggerArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):sessionLogger\/(?<sessionLoggerId>[^:/?]+)$/;
+const TrustStoreArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):trustStore\/(?<trustStoreId>[^:/?]+)$/;
+const UserAccessLoggingSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):userAccessLoggingSettings\/(?<userAccessLoggingSettingsId>[^:/?]+)$/;
+const UserSettingsArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-web:(?<region>[^:]*):(?<account>[^:]*):userSettings\/(?<userSettingsId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for workspaces-web resources.
@@ -333,16 +610,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the browserSettings resource.
 	 */
-	static browserSettings(props: {
-		/** The BrowserSettingsId component of the ARN. */
-		readonly browserSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static browserSettings(props: WorkspacesWebBrowserSettingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:browserSettings/${props.browserSettingsId}`;
 	}
 
@@ -357,12 +625,9 @@ export class WorkspacesWebResources {
 	 * Parses a browserSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBrowserSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		browserSettingsId: string;
-	} {
+	static parseBrowserSettingsArn(
+		arn: string,
+	): WorkspacesWebBrowserSettingsArnComponents {
 		const match = BrowserSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid browserSettings ARN: ${arn}`);
@@ -378,16 +643,9 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the dataProtectionSettings resource.
 	 */
-	static dataProtectionSettings(props: {
-		/** The DataProtectionSettingsId component of the ARN. */
-		readonly dataProtectionSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataProtectionSettings(
+		props: WorkspacesWebDataProtectionSettingsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:dataProtectionSettings/${props.dataProtectionSettingsId}`;
 	}
 
@@ -402,12 +660,9 @@ export class WorkspacesWebResources {
 	 * Parses a dataProtectionSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataProtectionSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataProtectionSettingsId: string;
-	} {
+	static parseDataProtectionSettingsArn(
+		arn: string,
+	): WorkspacesWebDataProtectionSettingsArnComponents {
 		const match = DataProtectionSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataProtectionSettings ARN: ${arn}`);
@@ -423,18 +678,9 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the identityProvider resource.
 	 */
-	static identityProvider(props: {
-		/** The PortalId component of the ARN. */
-		readonly portalId: string;
-		/** The IdentityProviderId component of the ARN. */
-		readonly identityProviderId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identityProvider(
+		props: WorkspacesWebIdentityProviderArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:identityProvider/${props.portalId}/${props.identityProviderId}`;
 	}
 
@@ -449,13 +695,9 @@ export class WorkspacesWebResources {
 	 * Parses a identityProvider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentityProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalId: string;
-		identityProviderId: string;
-	} {
+	static parseIdentityProviderArn(
+		arn: string,
+	): WorkspacesWebIdentityProviderArnComponents {
 		const match = IdentityProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identityProvider ARN: ${arn}`);
@@ -472,16 +714,9 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the ipAccessSettings resource.
 	 */
-	static ipAccessSettings(props: {
-		/** The IpAccessSettingsId component of the ARN. */
-		readonly ipAccessSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipAccessSettings(
+		props: WorkspacesWebIPAccessSettingsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:ipAccessSettings/${props.ipAccessSettingsId}`;
 	}
 
@@ -496,12 +731,9 @@ export class WorkspacesWebResources {
 	 * Parses a ipAccessSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIPAccessSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ipAccessSettingsId: string;
-	} {
+	static parseIPAccessSettingsArn(
+		arn: string,
+	): WorkspacesWebIPAccessSettingsArnComponents {
 		const match = IPAccessSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipAccessSettings ARN: ${arn}`);
@@ -517,16 +749,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the networkSettings resource.
 	 */
-	static networkSettings(props: {
-		/** The NetworkSettingsId component of the ARN. */
-		readonly networkSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkSettings(props: WorkspacesWebNetworkSettingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:networkSettings/${props.networkSettingsId}`;
 	}
 
@@ -541,12 +764,9 @@ export class WorkspacesWebResources {
 	 * Parses a networkSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkSettingsId: string;
-	} {
+	static parseNetworkSettingsArn(
+		arn: string,
+	): WorkspacesWebNetworkSettingsArnComponents {
 		const match = NetworkSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid networkSettings ARN: ${arn}`);
@@ -562,16 +782,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the portal resource.
 	 */
-	static portal(props: {
-		/** The PortalId component of the ARN. */
-		readonly portalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static portal(props: WorkspacesWebPortalArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:portal/${props.portalId}`;
 	}
 
@@ -586,12 +797,7 @@ export class WorkspacesWebResources {
 	 * Parses a portal ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePortalArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		portalId: string;
-	} {
+	static parsePortalArn(arn: string): WorkspacesWebPortalArnComponents {
 		const match = PortalArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid portal ARN: ${arn}`);
@@ -607,16 +813,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the sessionLogger resource.
 	 */
-	static sessionLogger(props: {
-		/** The SessionLoggerId component of the ARN. */
-		readonly sessionLoggerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sessionLogger(props: WorkspacesWebSessionLoggerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:sessionLogger/${props.sessionLoggerId}`;
 	}
 
@@ -631,12 +828,9 @@ export class WorkspacesWebResources {
 	 * Parses a sessionLogger ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionLoggerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sessionLoggerId: string;
-	} {
+	static parseSessionLoggerArn(
+		arn: string,
+	): WorkspacesWebSessionLoggerArnComponents {
 		const match = SessionLoggerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sessionLogger ARN: ${arn}`);
@@ -652,16 +846,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the trustStore resource.
 	 */
-	static trustStore(props: {
-		/** The TrustStoreId component of the ARN. */
-		readonly trustStoreId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trustStore(props: WorkspacesWebTrustStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:trustStore/${props.trustStoreId}`;
 	}
 
@@ -676,12 +861,7 @@ export class WorkspacesWebResources {
 	 * Parses a trustStore ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrustStoreArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trustStoreId: string;
-	} {
+	static parseTrustStoreArn(arn: string): WorkspacesWebTrustStoreArnComponents {
 		const match = TrustStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trustStore ARN: ${arn}`);
@@ -697,16 +877,9 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the userAccessLoggingSettings resource.
 	 */
-	static userAccessLoggingSettings(props: {
-		/** The UserAccessLoggingSettingsId component of the ARN. */
-		readonly userAccessLoggingSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static userAccessLoggingSettings(
+		props: WorkspacesWebUserAccessLoggingSettingsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:userAccessLoggingSettings/${props.userAccessLoggingSettingsId}`;
 	}
 
@@ -721,12 +894,9 @@ export class WorkspacesWebResources {
 	 * Parses a userAccessLoggingSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserAccessLoggingSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userAccessLoggingSettingsId: string;
-	} {
+	static parseUserAccessLoggingSettingsArn(
+		arn: string,
+	): WorkspacesWebUserAccessLoggingSettingsArnComponents {
 		const match = UserAccessLoggingSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid userAccessLoggingSettings ARN: ${arn}`);
@@ -742,16 +912,7 @@ export class WorkspacesWebResources {
 	/**
 	 * Builds an ARN for the userSettings resource.
 	 */
-	static userSettings(props: {
-		/** The UserSettingsId component of the ARN. */
-		readonly userSettingsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static userSettings(props: WorkspacesWebUserSettingsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-web:${props.region ?? "*"}:${props.account ?? "*"}:userSettings/${props.userSettingsId}`;
 	}
 
@@ -766,12 +927,9 @@ export class WorkspacesWebResources {
 	 * Parses a userSettings ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserSettingsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userSettingsId: string;
-	} {
+	static parseUserSettingsArn(
+		arn: string,
+	): WorkspacesWebUserSettingsArnComponents {
 		const match = UserSettingsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid userSettings ARN: ${arn}`);
@@ -790,293 +948,293 @@ export class WorkspacesWebResources {
  */
 export class WorkspacesWebOperations {
 	/** IAM actions required for the AssociateBrowserSettings API call. */
-	static readonly ASSOCIATE_BROWSER_SETTINGS: string[] = [
+	static readonly AssociateBrowserSettings: string[] = [
 		"workspaces-web:AssociateBrowserSettings",
 	];
 	/** IAM actions required for the AssociateDataProtectionSettings API call. */
-	static readonly ASSOCIATE_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly AssociateDataProtectionSettings: string[] = [
 		"workspaces-web:AssociateDataProtectionSettings",
 	];
 	/** IAM actions required for the AssociateIpAccessSettings API call. */
-	static readonly ASSOCIATE_IP_ACCESS_SETTINGS: string[] = [
+	static readonly AssociateIpAccessSettings: string[] = [
 		"workspaces-web:AssociateIpAccessSettings",
 	];
 	/** IAM actions required for the AssociateNetworkSettings API call. */
-	static readonly ASSOCIATE_NETWORK_SETTINGS: string[] = [
+	static readonly AssociateNetworkSettings: string[] = [
 		"workspaces-web:AssociateNetworkSettings",
 	];
 	/** IAM actions required for the AssociateSessionLogger API call. */
-	static readonly ASSOCIATE_SESSION_LOGGER: string[] = [
+	static readonly AssociateSessionLogger: string[] = [
 		"workspaces-web:AssociateSessionLogger",
 	];
 	/** IAM actions required for the AssociateTrustStore API call. */
-	static readonly ASSOCIATE_TRUST_STORE: string[] = [
+	static readonly AssociateTrustStore: string[] = [
 		"workspaces-web:AssociateTrustStore",
 	];
 	/** IAM actions required for the AssociateUserAccessLoggingSettings API call. */
-	static readonly ASSOCIATE_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly AssociateUserAccessLoggingSettings: string[] = [
 		"workspaces-web:AssociateUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the AssociateUserSettings API call. */
-	static readonly ASSOCIATE_USER_SETTINGS: string[] = [
+	static readonly AssociateUserSettings: string[] = [
 		"workspaces-web:AssociateUserSettings",
 	];
 	/** IAM actions required for the CreateBrowserSettings API call. */
-	static readonly CREATE_BROWSER_SETTINGS: string[] = [
+	static readonly CreateBrowserSettings: string[] = [
 		"workspaces-web:CreateBrowserSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateDataProtectionSettings API call. */
-	static readonly CREATE_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly CreateDataProtectionSettings: string[] = [
 		"workspaces-web:CreateDataProtectionSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateIdentityProvider API call. */
-	static readonly CREATE_IDENTITY_PROVIDER: string[] = [
+	static readonly CreateIdentityProvider: string[] = [
 		"workspaces-web:CreateIdentityProvider",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateIpAccessSettings API call. */
-	static readonly CREATE_IP_ACCESS_SETTINGS: string[] = [
+	static readonly CreateIpAccessSettings: string[] = [
 		"workspaces-web:CreateIpAccessSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateNetworkSettings API call. */
-	static readonly CREATE_NETWORK_SETTINGS: string[] = [
+	static readonly CreateNetworkSettings: string[] = [
 		"workspaces-web:CreateNetworkSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreatePortal API call. */
-	static readonly CREATE_PORTAL: string[] = [
+	static readonly CreatePortal: string[] = [
 		"workspaces-web:CreatePortal",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateSessionLogger API call. */
-	static readonly CREATE_SESSION_LOGGER: string[] = [
+	static readonly CreateSessionLogger: string[] = [
 		"workspaces-web:CreateSessionLogger",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateTrustStore API call. */
-	static readonly CREATE_TRUST_STORE: string[] = [
+	static readonly CreateTrustStore: string[] = [
 		"workspaces-web:CreateTrustStore",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateUserAccessLoggingSettings API call. */
-	static readonly CREATE_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly CreateUserAccessLoggingSettings: string[] = [
 		"workspaces-web:CreateUserAccessLoggingSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the CreateUserSettings API call. */
-	static readonly CREATE_USER_SETTINGS: string[] = [
+	static readonly CreateUserSettings: string[] = [
 		"workspaces-web:CreateUserSettings",
 		"workspaces-web:TagResource",
 	];
 	/** IAM actions required for the DeleteBrowserSettings API call. */
-	static readonly DELETE_BROWSER_SETTINGS: string[] = [
+	static readonly DeleteBrowserSettings: string[] = [
 		"workspaces-web:DeleteBrowserSettings",
 	];
 	/** IAM actions required for the DeleteDataProtectionSettings API call. */
-	static readonly DELETE_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly DeleteDataProtectionSettings: string[] = [
 		"workspaces-web:DeleteDataProtectionSettings",
 	];
 	/** IAM actions required for the DeleteIdentityProvider API call. */
-	static readonly DELETE_IDENTITY_PROVIDER: string[] = [
+	static readonly DeleteIdentityProvider: string[] = [
 		"workspaces-web:DeleteIdentityProvider",
 	];
 	/** IAM actions required for the DeleteIpAccessSettings API call. */
-	static readonly DELETE_IP_ACCESS_SETTINGS: string[] = [
+	static readonly DeleteIpAccessSettings: string[] = [
 		"workspaces-web:DeleteIpAccessSettings",
 	];
 	/** IAM actions required for the DeleteNetworkSettings API call. */
-	static readonly DELETE_NETWORK_SETTINGS: string[] = [
+	static readonly DeleteNetworkSettings: string[] = [
 		"workspaces-web:DeleteNetworkSettings",
 	];
 	/** IAM actions required for the DeletePortal API call. */
-	static readonly DELETE_PORTAL: string[] = ["workspaces-web:DeletePortal"];
+	static readonly DeletePortal: string[] = ["workspaces-web:DeletePortal"];
 	/** IAM actions required for the DeleteSessionLogger API call. */
-	static readonly DELETE_SESSION_LOGGER: string[] = [
+	static readonly DeleteSessionLogger: string[] = [
 		"workspaces-web:DeleteSessionLogger",
 	];
 	/** IAM actions required for the DeleteTrustStore API call. */
-	static readonly DELETE_TRUST_STORE: string[] = [
+	static readonly DeleteTrustStore: string[] = [
 		"workspaces-web:DeleteTrustStore",
 	];
 	/** IAM actions required for the DeleteUserAccessLoggingSettings API call. */
-	static readonly DELETE_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly DeleteUserAccessLoggingSettings: string[] = [
 		"workspaces-web:DeleteUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the DeleteUserSettings API call. */
-	static readonly DELETE_USER_SETTINGS: string[] = [
+	static readonly DeleteUserSettings: string[] = [
 		"workspaces-web:DeleteUserSettings",
 	];
 	/** IAM actions required for the DisassociateBrowserSettings API call. */
-	static readonly DISASSOCIATE_BROWSER_SETTINGS: string[] = [
+	static readonly DisassociateBrowserSettings: string[] = [
 		"workspaces-web:DisassociateBrowserSettings",
 	];
 	/** IAM actions required for the DisassociateDataProtectionSettings API call. */
-	static readonly DISASSOCIATE_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly DisassociateDataProtectionSettings: string[] = [
 		"workspaces-web:DisassociateDataProtectionSettings",
 	];
 	/** IAM actions required for the DisassociateIpAccessSettings API call. */
-	static readonly DISASSOCIATE_IP_ACCESS_SETTINGS: string[] = [
+	static readonly DisassociateIpAccessSettings: string[] = [
 		"workspaces-web:DisassociateIpAccessSettings",
 	];
 	/** IAM actions required for the DisassociateNetworkSettings API call. */
-	static readonly DISASSOCIATE_NETWORK_SETTINGS: string[] = [
+	static readonly DisassociateNetworkSettings: string[] = [
 		"workspaces-web:DisassociateNetworkSettings",
 	];
 	/** IAM actions required for the DisassociateSessionLogger API call. */
-	static readonly DISASSOCIATE_SESSION_LOGGER: string[] = [
+	static readonly DisassociateSessionLogger: string[] = [
 		"workspaces-web:DisassociateSessionLogger",
 	];
 	/** IAM actions required for the DisassociateTrustStore API call. */
-	static readonly DISASSOCIATE_TRUST_STORE: string[] = [
+	static readonly DisassociateTrustStore: string[] = [
 		"workspaces-web:DisassociateTrustStore",
 	];
 	/** IAM actions required for the DisassociateUserAccessLoggingSettings API call. */
-	static readonly DISASSOCIATE_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly DisassociateUserAccessLoggingSettings: string[] = [
 		"workspaces-web:DisassociateUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the DisassociateUserSettings API call. */
-	static readonly DISASSOCIATE_USER_SETTINGS: string[] = [
+	static readonly DisassociateUserSettings: string[] = [
 		"workspaces-web:DisassociateUserSettings",
 	];
 	/** IAM actions required for the ExpireSession API call. */
-	static readonly EXPIRE_SESSION: string[] = ["workspaces-web:ExpireSession"];
+	static readonly ExpireSession: string[] = ["workspaces-web:ExpireSession"];
 	/** IAM actions required for the GetBrowserSettings API call. */
-	static readonly GET_BROWSER_SETTINGS: string[] = [
+	static readonly opGetBrowserSettings: string[] = [
 		"workspaces-web:GetBrowserSettings",
 	];
 	/** IAM actions required for the GetDataProtectionSettings API call. */
-	static readonly GET_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly opGetDataProtectionSettings: string[] = [
 		"workspaces-web:GetDataProtectionSettings",
 	];
 	/** IAM actions required for the GetIdentityProvider API call. */
-	static readonly GET_IDENTITY_PROVIDER: string[] = [
+	static readonly opGetIdentityProvider: string[] = [
 		"workspaces-web:GetIdentityProvider",
 	];
 	/** IAM actions required for the GetIpAccessSettings API call. */
-	static readonly GET_IP_ACCESS_SETTINGS: string[] = [
+	static readonly opGetIpAccessSettings: string[] = [
 		"workspaces-web:GetIpAccessSettings",
 	];
 	/** IAM actions required for the GetNetworkSettings API call. */
-	static readonly GET_NETWORK_SETTINGS: string[] = [
+	static readonly opGetNetworkSettings: string[] = [
 		"workspaces-web:GetNetworkSettings",
 	];
 	/** IAM actions required for the GetPortal API call. */
-	static readonly GET_PORTAL: string[] = ["workspaces-web:GetPortal"];
+	static readonly opGetPortal: string[] = ["workspaces-web:GetPortal"];
 	/** IAM actions required for the GetPortalServiceProviderMetadata API call. */
-	static readonly GET_PORTAL_SERVICE_PROVIDER_METADATA: string[] = [
+	static readonly opGetPortalServiceProviderMetadata: string[] = [
 		"workspaces-web:GetPortalServiceProviderMetadata",
 	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["workspaces-web:GetSession"];
+	static readonly opGetSession: string[] = ["workspaces-web:GetSession"];
 	/** IAM actions required for the GetSessionLogger API call. */
-	static readonly GET_SESSION_LOGGER: string[] = [
+	static readonly opGetSessionLogger: string[] = [
 		"workspaces-web:GetSessionLogger",
 	];
 	/** IAM actions required for the GetTrustStore API call. */
-	static readonly GET_TRUST_STORE: string[] = ["workspaces-web:GetTrustStore"];
+	static readonly opGetTrustStore: string[] = ["workspaces-web:GetTrustStore"];
 	/** IAM actions required for the GetTrustStoreCertificate API call. */
-	static readonly GET_TRUST_STORE_CERTIFICATE: string[] = [
+	static readonly opGetTrustStoreCertificate: string[] = [
 		"workspaces-web:GetTrustStoreCertificate",
 	];
 	/** IAM actions required for the GetUserAccessLoggingSettings API call. */
-	static readonly GET_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly opGetUserAccessLoggingSettings: string[] = [
 		"workspaces-web:GetUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the GetUserSettings API call. */
-	static readonly GET_USER_SETTINGS: string[] = [
+	static readonly opGetUserSettings: string[] = [
 		"workspaces-web:GetUserSettings",
 	];
 	/** IAM actions required for the ListBrowserSettings API call. */
-	static readonly LIST_BROWSER_SETTINGS: string[] = [
+	static readonly ListBrowserSettings: string[] = [
 		"workspaces-web:ListBrowserSettings",
 	];
 	/** IAM actions required for the ListDataProtectionSettings API call. */
-	static readonly LIST_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly ListDataProtectionSettings: string[] = [
 		"workspaces-web:ListDataProtectionSettings",
 	];
 	/** IAM actions required for the ListIdentityProviders API call. */
-	static readonly LIST_IDENTITY_PROVIDERS: string[] = [
+	static readonly ListIdentityProviders: string[] = [
 		"workspaces-web:ListIdentityProviders",
 	];
 	/** IAM actions required for the ListIpAccessSettings API call. */
-	static readonly LIST_IP_ACCESS_SETTINGS: string[] = [
+	static readonly ListIpAccessSettings: string[] = [
 		"workspaces-web:ListIpAccessSettings",
 	];
 	/** IAM actions required for the ListNetworkSettings API call. */
-	static readonly LIST_NETWORK_SETTINGS: string[] = [
+	static readonly ListNetworkSettings: string[] = [
 		"workspaces-web:ListNetworkSettings",
 	];
 	/** IAM actions required for the ListPortals API call. */
-	static readonly LIST_PORTALS: string[] = ["workspaces-web:ListPortals"];
+	static readonly ListPortals: string[] = ["workspaces-web:ListPortals"];
 	/** IAM actions required for the ListSessionLoggers API call. */
-	static readonly LIST_SESSION_LOGGERS: string[] = [
+	static readonly ListSessionLoggers: string[] = [
 		"workspaces-web:ListSessionLoggers",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["workspaces-web:ListSessions"];
+	static readonly ListSessions: string[] = ["workspaces-web:ListSessions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"workspaces-web:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTrustStoreCertificates API call. */
-	static readonly LIST_TRUST_STORE_CERTIFICATES: string[] = [
+	static readonly ListTrustStoreCertificates: string[] = [
 		"workspaces-web:ListTrustStoreCertificates",
 	];
 	/** IAM actions required for the ListTrustStores API call. */
-	static readonly LIST_TRUST_STORES: string[] = [
+	static readonly ListTrustStores: string[] = [
 		"workspaces-web:ListTrustStores",
 	];
 	/** IAM actions required for the ListUserAccessLoggingSettings API call. */
-	static readonly LIST_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly ListUserAccessLoggingSettings: string[] = [
 		"workspaces-web:ListUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the ListUserSettings API call. */
-	static readonly LIST_USER_SETTINGS: string[] = [
+	static readonly ListUserSettings: string[] = [
 		"workspaces-web:ListUserSettings",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["workspaces-web:TagResource"];
+	static readonly TagResource: string[] = ["workspaces-web:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["workspaces-web:UntagResource"];
+	static readonly UntagResource: string[] = ["workspaces-web:UntagResource"];
 	/** IAM actions required for the UpdateBrowserSettings API call. */
-	static readonly UPDATE_BROWSER_SETTINGS: string[] = [
+	static readonly UpdateBrowserSettings: string[] = [
 		"workspaces-web:UpdateBrowserSettings",
 	];
 	/** IAM actions required for the UpdateDataProtectionSettings API call. */
-	static readonly UPDATE_DATA_PROTECTION_SETTINGS: string[] = [
+	static readonly UpdateDataProtectionSettings: string[] = [
 		"workspaces-web:UpdateDataProtectionSettings",
 	];
 	/** IAM actions required for the UpdateIdentityProvider API call. */
-	static readonly UPDATE_IDENTITY_PROVIDER: string[] = [
+	static readonly UpdateIdentityProvider: string[] = [
 		"workspaces-web:UpdateIdentityProvider",
 	];
 	/** IAM actions required for the UpdateIpAccessSettings API call. */
-	static readonly UPDATE_IP_ACCESS_SETTINGS: string[] = [
+	static readonly UpdateIpAccessSettings: string[] = [
 		"workspaces-web:UpdateIpAccessSettings",
 	];
 	/** IAM actions required for the UpdateNetworkSettings API call. */
-	static readonly UPDATE_NETWORK_SETTINGS: string[] = [
+	static readonly UpdateNetworkSettings: string[] = [
 		"workspaces-web:UpdateNetworkSettings",
 	];
 	/** IAM actions required for the UpdatePortal API call. */
-	static readonly UPDATE_PORTAL: string[] = ["workspaces-web:UpdatePortal"];
+	static readonly UpdatePortal: string[] = ["workspaces-web:UpdatePortal"];
 	/** IAM actions required for the UpdateSessionLogger API call. */
-	static readonly UPDATE_SESSION_LOGGER: string[] = [
+	static readonly UpdateSessionLogger: string[] = [
 		"workspaces-web:UpdateSessionLogger",
 	];
 	/** IAM actions required for the UpdateTrustStore API call. */
-	static readonly UPDATE_TRUST_STORE: string[] = [
+	static readonly UpdateTrustStore: string[] = [
 		"workspaces-web:UpdateTrustStore",
 	];
 	/** IAM actions required for the UpdateUserAccessLoggingSettings API call. */
-	static readonly UPDATE_USER_ACCESS_LOGGING_SETTINGS: string[] = [
+	static readonly UpdateUserAccessLoggingSettings: string[] = [
 		"workspaces-web:UpdateUserAccessLoggingSettings",
 	];
 	/** IAM actions required for the UpdateUserSettings API call. */
-	static readonly UPDATE_USER_SETTINGS: string[] = [
+	static readonly UpdateUserSettings: string[] = [
 		"workspaces-web:UpdateUserSettings",
 	];
 }
@@ -1086,67 +1244,69 @@ export class WorkspacesWebOperations {
  */
 export class WorkspacesWebConditions {
 	/** Condition keys applicable to the CreateBrowserSettings action. */
-	static readonly CREATE_BROWSER_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly CreateBrowserSettingsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataProtectionSettings action. */
-	static readonly CREATE_DATA_PROTECTION_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly CreateDataProtectionSettingsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIdentityProvider action. */
-	static readonly CREATE_IDENTITY_PROVIDER_CONDITION_KEYS: string[] = [
+	static readonly CreateIdentityProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIpAccessSettings action. */
-	static readonly CREATE_IP_ACCESS_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly CreateIpAccessSettingsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetworkSettings action. */
-	static readonly CREATE_NETWORK_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkSettingsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePortal action. */
-	static readonly CREATE_PORTAL_CONDITION_KEYS: string[] = [
+	static readonly CreatePortalConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSessionLogger action. */
-	static readonly CREATE_SESSION_LOGGER_CONDITION_KEYS: string[] = [
+	static readonly CreateSessionLoggerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrustStore action. */
-	static readonly CREATE_TRUST_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateTrustStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUserAccessLoggingSettings action. */
-	static readonly CREATE_USER_ACCESS_LOGGING_SETTINGS_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateUserAccessLoggingSettingsConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateUserSettings action. */
-	static readonly CREATE_USER_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly CreateUserSettingsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,31 +13,58 @@ export class BedrockWebsearchActions {
 	static readonly SERVICE_PREFIX = "bedrock-websearch";
 
 	/** [Read] bedrock-websearch:ExternalWebAccess */
-	static readonly EXTERNAL_WEB_ACCESS = "bedrock-websearch:ExternalWebAccess";
+	static readonly ExternalWebAccess = "bedrock-websearch:ExternalWebAccess";
 	/** [Read] bedrock-websearch:InvokeFetch */
-	static readonly INVOKE_FETCH = "bedrock-websearch:InvokeFetch";
+	static readonly InvokeFetch = "bedrock-websearch:InvokeFetch";
 	/** [Read] bedrock-websearch:InvokeSearch */
-	static readonly INVOKE_SEARCH = "bedrock-websearch:InvokeSearch";
+	static readonly InvokeSearch = "bedrock-websearch:InvokeSearch";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BedrockWebsearchActions.EXTERNAL_WEB_ACCESS,
-		BedrockWebsearchActions.INVOKE_FETCH,
-		BedrockWebsearchActions.INVOKE_SEARCH,
+	static readonly AllReadActions: string[] = [
+		BedrockWebsearchActions.ExternalWebAccess,
+		BedrockWebsearchActions.InvokeFetch,
+		BedrockWebsearchActions.InvokeSearch,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ToolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock-websearch:(?<region>[^:]*):aws:tool/(?<toolName>[^:/?]+)$",
-);
+/**
+ * Properties for building a tool ARN.
+ */
+export interface BedrockWebsearchToolArnProps {
+	/** The ToolName component of the ARN. */
+	readonly toolName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tool ARN.
+ */
+export interface BedrockWebsearchToolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ToolName component. */
+	readonly toolName: string;
+}
+
+const ToolArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-websearch:(?<region>[^:]*):aws:tool\/(?<toolName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bedrock-websearch resources.
@@ -46,16 +73,7 @@ export class BedrockWebsearchResources {
 	/**
 	 * Builds an ARN for the tool resource.
 	 */
-	static tool(props: {
-		/** The ToolName component of the ARN. */
-		readonly toolName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tool(props: BedrockWebsearchToolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock-websearch:${props.region ?? "*"}:aws:tool/${props.toolName}`;
 	}
 
@@ -70,12 +88,7 @@ export class BedrockWebsearchResources {
 	 * Parses a tool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseToolArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		toolName: string;
-	} {
+	static parseToolArn(arn: string): BedrockWebsearchToolArnComponents {
 		const match = ToolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tool ARN: ${arn}`);

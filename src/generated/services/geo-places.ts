@@ -13,43 +13,66 @@ export class GeoPlacesActions {
 	static readonly SERVICE_PREFIX = "geo-places";
 
 	/** [Read] geo-places:Autocomplete */
-	static readonly AUTOCOMPLETE = "geo-places:Autocomplete";
+	static readonly Autocomplete = "geo-places:Autocomplete";
 	/** [Read] geo-places:Geocode */
-	static readonly GEOCODE = "geo-places:Geocode";
+	static readonly Geocode = "geo-places:Geocode";
 	/** [Read] geo-places:GetPlace */
-	static readonly GET_PLACE = "geo-places:GetPlace";
+	static readonly actionGetPlace = "geo-places:GetPlace";
 	/** [Read] geo-places:ReverseGeocode */
-	static readonly REVERSE_GEOCODE = "geo-places:ReverseGeocode";
+	static readonly ReverseGeocode = "geo-places:ReverseGeocode";
 	/** [Read] geo-places:SearchNearby */
-	static readonly SEARCH_NEARBY = "geo-places:SearchNearby";
+	static readonly SearchNearby = "geo-places:SearchNearby";
 	/** [Read] geo-places:SearchText */
-	static readonly SEARCH_TEXT = "geo-places:SearchText";
+	static readonly SearchText = "geo-places:SearchText";
 	/** [Read] geo-places:Suggest */
-	static readonly SUGGEST = "geo-places:Suggest";
+	static readonly Suggest = "geo-places:Suggest";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GeoPlacesActions.AUTOCOMPLETE,
-		GeoPlacesActions.GEOCODE,
-		GeoPlacesActions.GET_PLACE,
-		GeoPlacesActions.REVERSE_GEOCODE,
-		GeoPlacesActions.SEARCH_NEARBY,
-		GeoPlacesActions.SEARCH_TEXT,
-		GeoPlacesActions.SUGGEST,
+	static readonly AllReadActions: string[] = [
+		GeoPlacesActions.Autocomplete,
+		GeoPlacesActions.Geocode,
+		GeoPlacesActions.actionGetPlace,
+		GeoPlacesActions.ReverseGeocode,
+		GeoPlacesActions.SearchNearby,
+		GeoPlacesActions.SearchText,
+		GeoPlacesActions.Suggest,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):geo-places:(?<region>[^:]*)::provider/default$",
-);
+/**
+ * Properties for building a provider ARN.
+ */
+export interface GeoPlacesProviderArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a provider ARN.
+ */
+export interface GeoPlacesProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const ProviderArnRegex =
+	/^arn:(?<partition>[^:]+):geo-places:(?<region>[^:]*)::provider\/default$/;
 
 /**
  * ARN builders, validators, and parsers for geo-places resources.
@@ -58,14 +81,7 @@ export class GeoPlacesResources {
 	/**
 	 * Builds an ARN for the provider resource.
 	 */
-	static provider(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static provider(props: GeoPlacesProviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:geo-places:${props.region ?? "*"}::provider/default`;
 	}
 
@@ -80,11 +96,7 @@ export class GeoPlacesResources {
 	 * Parses a provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseProviderArn(arn: string): GeoPlacesProviderArnComponents {
 		const match = ProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid provider ARN: ${arn}`);
@@ -102,17 +114,17 @@ export class GeoPlacesResources {
  */
 export class GeoPlacesOperations {
 	/** IAM actions required for the Autocomplete API call. */
-	static readonly AUTOCOMPLETE: string[] = ["geo-places:Autocomplete"];
+	static readonly Autocomplete: string[] = ["geo-places:Autocomplete"];
 	/** IAM actions required for the Geocode API call. */
-	static readonly GEOCODE: string[] = ["geo-places:Geocode"];
+	static readonly Geocode: string[] = ["geo-places:Geocode"];
 	/** IAM actions required for the GetPlace API call. */
-	static readonly GET_PLACE: string[] = ["geo-places:GetPlace"];
+	static readonly opGetPlace: string[] = ["geo-places:GetPlace"];
 	/** IAM actions required for the ReverseGeocode API call. */
-	static readonly REVERSE_GEOCODE: string[] = ["geo-places:ReverseGeocode"];
+	static readonly ReverseGeocode: string[] = ["geo-places:ReverseGeocode"];
 	/** IAM actions required for the SearchNearby API call. */
-	static readonly SEARCH_NEARBY: string[] = ["geo-places:SearchNearby"];
+	static readonly SearchNearby: string[] = ["geo-places:SearchNearby"];
 	/** IAM actions required for the SearchText API call. */
-	static readonly SEARCH_TEXT: string[] = ["geo-places:SearchText"];
+	static readonly SearchText: string[] = ["geo-places:SearchText"];
 	/** IAM actions required for the Suggest API call. */
-	static readonly SUGGEST: string[] = ["geo-places:Suggest"];
+	static readonly Suggest: string[] = ["geo-places:Suggest"];
 }

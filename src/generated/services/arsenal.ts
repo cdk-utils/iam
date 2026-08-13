@@ -13,19 +13,18 @@ export class ArsenalActions {
 	static readonly SERVICE_PREFIX = "arsenal";
 
 	/** [Write] arsenal:RegisterOnPremisesAgent */
-	static readonly REGISTER_ON_PREMISES_AGENT =
-		"arsenal:RegisterOnPremisesAgent";
+	static readonly RegisterOnPremisesAgent = "arsenal:RegisterOnPremisesAgent";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ArsenalActions.REGISTER_ON_PREMISES_AGENT,
+	static readonly AllWriteActions: string[] = [
+		ArsenalActions.RegisterOnPremisesAgent,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

@@ -23,13 +23,21 @@ import {
 	fetchServiceDetail,
 	fetchServiceReferenceList,
 } from "../../scripts/fetch-service-reference";
-import { generateForService } from "../../scripts/generate-service";
 import { generateIndex } from "../../scripts/generate-index";
+import { generateForService } from "../../scripts/generate-service";
 
-const mockFetchList = fetchServiceReferenceList as jest.MockedFunction<typeof fetchServiceReferenceList>;
-const mockFetchDetail = fetchServiceDetail as jest.MockedFunction<typeof fetchServiceDetail>;
-const mockGenerateForService = generateForService as jest.MockedFunction<typeof generateForService>;
-const mockGenerateIndex = generateIndex as jest.MockedFunction<typeof generateIndex>;
+const mockFetchList = fetchServiceReferenceList as jest.MockedFunction<
+	typeof fetchServiceReferenceList
+>;
+const mockFetchDetail = fetchServiceDetail as jest.MockedFunction<
+	typeof fetchServiceDetail
+>;
+const mockGenerateForService = generateForService as jest.MockedFunction<
+	typeof generateForService
+>;
+const mockGenerateIndex = generateIndex as jest.MockedFunction<
+	typeof generateIndex
+>;
 
 // =============================================================================
 // Test helpers
@@ -58,7 +66,11 @@ afterEach(() => {
 // =============================================================================
 
 const serviceEntries: ServiceReferenceEntry[] = [
-	{ service: "dynamodb", url: "https://example.com/dynamodb.json", modified: 1000 },
+	{
+		service: "dynamodb",
+		url: "https://example.com/dynamodb.json",
+		modified: 1000,
+	},
 	{ service: "s3", url: "https://example.com/s3.json", modified: 2000 },
 	{ service: "lambda", url: "https://example.com/lambda.json", modified: 3000 },
 ];
@@ -69,8 +81,20 @@ function makeDetail(name: string): ServiceDetail {
 		Version: "v1.0",
 		Actions: [{ Name: "TestAction" }],
 		ConditionKeys: [{ Name: `${name}:key`, Types: ["String"] }],
-		Operations: [{ Name: "TestOp", AuthorizedActions: [{ Name: "TestAction", Service: name }] }],
-		Resources: [{ Name: "item", ARNFormats: [`arn:\${Partition}:${name}:\${Region}:\${Account}:item/\${Id}`] }],
+		Operations: [
+			{
+				Name: "TestOp",
+				AuthorizedActions: [{ Name: "TestAction", Service: name }],
+			},
+		],
+		Resources: [
+			{
+				Name: "item",
+				ARNFormats: [
+					`arn:\${Partition}:${name}:\${Region}:\${Account}:item/\${Id}`,
+				],
+			},
+		],
 	};
 }
 
@@ -121,9 +145,15 @@ describe("updateServiceReference", () => {
 		// Verify each service was fetched and generated
 		expect(mockFetchDetail).toHaveBeenCalledTimes(3);
 		expect(mockGenerateForService).toHaveBeenCalledTimes(3);
-		expect(mockGenerateForService).toHaveBeenCalledWith(path.join(dataDir, "dynamodb.json"));
-		expect(mockGenerateForService).toHaveBeenCalledWith(path.join(dataDir, "s3.json"));
-		expect(mockGenerateForService).toHaveBeenCalledWith(path.join(dataDir, "lambda.json"));
+		expect(mockGenerateForService).toHaveBeenCalledWith(
+			path.join(dataDir, "dynamodb.json"),
+		);
+		expect(mockGenerateForService).toHaveBeenCalledWith(
+			path.join(dataDir, "s3.json"),
+		);
+		expect(mockGenerateForService).toHaveBeenCalledWith(
+			path.join(dataDir, "lambda.json"),
+		);
 
 		// Verify barrel index was regenerated
 		expect(mockGenerateIndex).toHaveBeenCalledTimes(1);
@@ -157,7 +187,9 @@ describe("updateServiceReference", () => {
 		// dynamodb (modified=1000) should NOT be fetched
 		expect(mockFetchDetail).toHaveBeenCalledTimes(2);
 		expect(mockFetchDetail).toHaveBeenCalledWith("https://example.com/s3.json");
-		expect(mockFetchDetail).toHaveBeenCalledWith("https://example.com/lambda.json");
+		expect(mockFetchDetail).toHaveBeenCalledWith(
+			"https://example.com/lambda.json",
+		);
 
 		expect(mockGenerateForService).toHaveBeenCalledTimes(2);
 		expect(mockGenerateIndex).toHaveBeenCalledTimes(1);
@@ -212,7 +244,11 @@ describe("updateServiceReference", () => {
 	it("uses ServiceDetail.Name for the JSON filename", async () => {
 		// Entry says "dynamo" but detail says "dynamodb"
 		mockFetchList.mockResolvedValueOnce([
-			{ service: "dynamo", url: "https://example.com/dynamo.json", modified: 100 },
+			{
+				service: "dynamo",
+				url: "https://example.com/dynamo.json",
+				modified: 100,
+			},
 		]);
 		mockFetchDetail.mockResolvedValueOnce(makeDetail("dynamodb"));
 
@@ -224,7 +260,9 @@ describe("updateServiceReference", () => {
 
 		expect(result.updatedServices).toEqual(["dynamodb"]);
 		expect(fs.existsSync(path.join(dataDir, "dynamodb.json"))).toBe(true);
-		expect(mockGenerateForService).toHaveBeenCalledWith(path.join(dataDir, "dynamodb.json"));
+		expect(mockGenerateForService).toHaveBeenCalledWith(
+			path.join(dataDir, "dynamodb.json"),
+		);
 	});
 
 	it("propagates errors from fetchServiceReferenceList", async () => {

@@ -13,23 +13,26 @@ export class MobileanalyticsActions {
 	static readonly SERVICE_PREFIX = "mobileanalytics";
 
 	/** [Read] mobileanalytics:GetFinancialReports */
-	static readonly GET_FINANCIAL_REPORTS = "mobileanalytics:GetFinancialReports";
+	static readonly actionGetFinancialReports =
+		"mobileanalytics:GetFinancialReports";
 	/** [Read] mobileanalytics:GetReports */
-	static readonly GET_REPORTS = "mobileanalytics:GetReports";
+	static readonly actionGetReports = "mobileanalytics:GetReports";
 	/** [Write] mobileanalytics:PutEvents */
-	static readonly PUT_EVENTS = "mobileanalytics:PutEvents";
+	static readonly PutEvents = "mobileanalytics:PutEvents";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MobileanalyticsActions.GET_FINANCIAL_REPORTS,
-		MobileanalyticsActions.GET_REPORTS,
+	static readonly AllReadActions: string[] = [
+		MobileanalyticsActions.actionGetFinancialReports,
+		MobileanalyticsActions.actionGetReports,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [MobileanalyticsActions.PUT_EVENTS];
+	static readonly AllWriteActions: string[] = [
+		MobileanalyticsActions.PutEvents,
+	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

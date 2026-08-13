@@ -13,239 +13,467 @@ export class FsxActions {
 	static readonly SERVICE_PREFIX = "fsx";
 
 	/** [Write] fsx:AssociateFileGateway */
-	static readonly ASSOCIATE_FILE_GATEWAY = "fsx:AssociateFileGateway";
+	static readonly AssociateFileGateway = "fsx:AssociateFileGateway";
 	/** [Write] fsx:AssociateFileSystemAliases */
-	static readonly ASSOCIATE_FILE_SYSTEM_ALIASES =
-		"fsx:AssociateFileSystemAliases";
+	static readonly AssociateFileSystemAliases = "fsx:AssociateFileSystemAliases";
 	/** [PermissionManagement] fsx:BypassSnaplockEnterpriseRetention */
-	static readonly BYPASS_SNAPLOCK_ENTERPRISE_RETENTION =
+	static readonly BypassSnaplockEnterpriseRetention =
 		"fsx:BypassSnaplockEnterpriseRetention";
 	/** [Write] fsx:CancelDataRepositoryTask */
-	static readonly CANCEL_DATA_REPOSITORY_TASK = "fsx:CancelDataRepositoryTask";
+	static readonly CancelDataRepositoryTask = "fsx:CancelDataRepositoryTask";
 	/** [Write] fsx:CopyBackup */
-	static readonly COPY_BACKUP = "fsx:CopyBackup";
+	static readonly CopyBackup = "fsx:CopyBackup";
 	/** [Write] fsx:CopySnapshotAndUpdateVolume */
-	static readonly COPY_SNAPSHOT_AND_UPDATE_VOLUME =
+	static readonly CopySnapshotAndUpdateVolume =
 		"fsx:CopySnapshotAndUpdateVolume";
 	/** [Write] fsx:CreateAndAttachS3AccessPoint */
-	static readonly CREATE_AND_ATTACH_S3_ACCESS_POINT =
+	static readonly CreateAndAttachS3AccessPoint =
 		"fsx:CreateAndAttachS3AccessPoint";
 	/** [Write] fsx:CreateBackup */
-	static readonly CREATE_BACKUP = "fsx:CreateBackup";
+	static readonly CreateBackup = "fsx:CreateBackup";
 	/** [Write] fsx:CreateDataRepositoryAssociation */
-	static readonly CREATE_DATA_REPOSITORY_ASSOCIATION =
+	static readonly CreateDataRepositoryAssociation =
 		"fsx:CreateDataRepositoryAssociation";
 	/** [Write] fsx:CreateDataRepositoryTask */
-	static readonly CREATE_DATA_REPOSITORY_TASK = "fsx:CreateDataRepositoryTask";
+	static readonly CreateDataRepositoryTask = "fsx:CreateDataRepositoryTask";
 	/** [Write] fsx:CreateFileCache */
-	static readonly CREATE_FILE_CACHE = "fsx:CreateFileCache";
+	static readonly CreateFileCache = "fsx:CreateFileCache";
 	/** [Write] fsx:CreateFileSystem */
-	static readonly CREATE_FILE_SYSTEM = "fsx:CreateFileSystem";
+	static readonly CreateFileSystem = "fsx:CreateFileSystem";
 	/** [Write] fsx:CreateFileSystemFromBackup */
-	static readonly CREATE_FILE_SYSTEM_FROM_BACKUP =
-		"fsx:CreateFileSystemFromBackup";
+	static readonly CreateFileSystemFromBackup = "fsx:CreateFileSystemFromBackup";
 	/** [Write] fsx:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "fsx:CreateSnapshot";
+	static readonly CreateSnapshot = "fsx:CreateSnapshot";
 	/** [Write] fsx:CreateStorageVirtualMachine */
-	static readonly CREATE_STORAGE_VIRTUAL_MACHINE =
+	static readonly CreateStorageVirtualMachine =
 		"fsx:CreateStorageVirtualMachine";
 	/** [Write] fsx:CreateVolume */
-	static readonly CREATE_VOLUME = "fsx:CreateVolume";
+	static readonly CreateVolume = "fsx:CreateVolume";
 	/** [Write] fsx:CreateVolumeFromBackup */
-	static readonly CREATE_VOLUME_FROM_BACKUP = "fsx:CreateVolumeFromBackup";
+	static readonly CreateVolumeFromBackup = "fsx:CreateVolumeFromBackup";
 	/** [Write] fsx:DeleteBackup */
-	static readonly DELETE_BACKUP = "fsx:DeleteBackup";
+	static readonly DeleteBackup = "fsx:DeleteBackup";
 	/** [Write] fsx:DeleteDataRepositoryAssociation */
-	static readonly DELETE_DATA_REPOSITORY_ASSOCIATION =
+	static readonly DeleteDataRepositoryAssociation =
 		"fsx:DeleteDataRepositoryAssociation";
 	/** [Write] fsx:DeleteFileCache */
-	static readonly DELETE_FILE_CACHE = "fsx:DeleteFileCache";
+	static readonly DeleteFileCache = "fsx:DeleteFileCache";
 	/** [Write] fsx:DeleteFileSystem */
-	static readonly DELETE_FILE_SYSTEM = "fsx:DeleteFileSystem";
+	static readonly DeleteFileSystem = "fsx:DeleteFileSystem";
 	/** [PermissionManagement] fsx:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "fsx:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "fsx:DeleteResourcePolicy";
 	/** [Write] fsx:DeleteSnapshot */
-	static readonly DELETE_SNAPSHOT = "fsx:DeleteSnapshot";
+	static readonly DeleteSnapshot = "fsx:DeleteSnapshot";
 	/** [Write] fsx:DeleteStorageVirtualMachine */
-	static readonly DELETE_STORAGE_VIRTUAL_MACHINE =
+	static readonly DeleteStorageVirtualMachine =
 		"fsx:DeleteStorageVirtualMachine";
 	/** [Write] fsx:DeleteVolume */
-	static readonly DELETE_VOLUME = "fsx:DeleteVolume";
+	static readonly DeleteVolume = "fsx:DeleteVolume";
 	/** [Read] fsx:DescribeAssociatedFileGateways */
-	static readonly DESCRIBE_ASSOCIATED_FILE_GATEWAYS =
+	static readonly DescribeAssociatedFileGateways =
 		"fsx:DescribeAssociatedFileGateways";
 	/** [Read] fsx:DescribeBackups */
-	static readonly DESCRIBE_BACKUPS = "fsx:DescribeBackups";
+	static readonly DescribeBackups = "fsx:DescribeBackups";
 	/** [Read] fsx:DescribeDataRepositoryAssociations */
-	static readonly DESCRIBE_DATA_REPOSITORY_ASSOCIATIONS =
+	static readonly DescribeDataRepositoryAssociations =
 		"fsx:DescribeDataRepositoryAssociations";
 	/** [Read] fsx:DescribeDataRepositoryTasks */
-	static readonly DESCRIBE_DATA_REPOSITORY_TASKS =
+	static readonly DescribeDataRepositoryTasks =
 		"fsx:DescribeDataRepositoryTasks";
 	/** [Read] fsx:DescribeFileCaches */
-	static readonly DESCRIBE_FILE_CACHES = "fsx:DescribeFileCaches";
+	static readonly DescribeFileCaches = "fsx:DescribeFileCaches";
 	/** [Read] fsx:DescribeFileSystemAliases */
-	static readonly DESCRIBE_FILE_SYSTEM_ALIASES =
-		"fsx:DescribeFileSystemAliases";
+	static readonly DescribeFileSystemAliases = "fsx:DescribeFileSystemAliases";
 	/** [Read] fsx:DescribeFileSystems */
-	static readonly DESCRIBE_FILE_SYSTEMS = "fsx:DescribeFileSystems";
+	static readonly DescribeFileSystems = "fsx:DescribeFileSystems";
 	/** [Read] fsx:DescribeS3AccessPointAttachments */
-	static readonly DESCRIBE_S3_ACCESS_POINT_ATTACHMENTS =
+	static readonly DescribeS3AccessPointAttachments =
 		"fsx:DescribeS3AccessPointAttachments";
 	/** [Read] fsx:DescribeSharedVpcConfiguration */
-	static readonly DESCRIBE_SHARED_VPC_CONFIGURATION =
+	static readonly DescribeSharedVpcConfiguration =
 		"fsx:DescribeSharedVpcConfiguration";
 	/** [Read] fsx:DescribeSnapshots */
-	static readonly DESCRIBE_SNAPSHOTS = "fsx:DescribeSnapshots";
+	static readonly DescribeSnapshots = "fsx:DescribeSnapshots";
 	/** [Read] fsx:DescribeStorageVirtualMachines */
-	static readonly DESCRIBE_STORAGE_VIRTUAL_MACHINES =
+	static readonly DescribeStorageVirtualMachines =
 		"fsx:DescribeStorageVirtualMachines";
 	/** [Read] fsx:DescribeVolumes */
-	static readonly DESCRIBE_VOLUMES = "fsx:DescribeVolumes";
+	static readonly DescribeVolumes = "fsx:DescribeVolumes";
 	/** [Write] fsx:DetachAndDeleteS3AccessPoint */
-	static readonly DETACH_AND_DELETE_S3_ACCESS_POINT =
+	static readonly DetachAndDeleteS3AccessPoint =
 		"fsx:DetachAndDeleteS3AccessPoint";
 	/** [Write] fsx:DisassociateFileGateway */
-	static readonly DISASSOCIATE_FILE_GATEWAY = "fsx:DisassociateFileGateway";
+	static readonly DisassociateFileGateway = "fsx:DisassociateFileGateway";
 	/** [Write] fsx:DisassociateFileSystemAliases */
-	static readonly DISASSOCIATE_FILE_SYSTEM_ALIASES =
+	static readonly DisassociateFileSystemAliases =
 		"fsx:DisassociateFileSystemAliases";
 	/** [PermissionManagement] fsx:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "fsx:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "fsx:GetResourcePolicy";
 	/** [Read] fsx:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "fsx:ListTagsForResource";
+	static readonly ListTagsForResource = "fsx:ListTagsForResource";
 	/** [PermissionManagement] fsx:ManageBackupPrincipalAssociations */
-	static readonly MANAGE_BACKUP_PRINCIPAL_ASSOCIATIONS =
+	static readonly ManageBackupPrincipalAssociations =
 		"fsx:ManageBackupPrincipalAssociations";
 	/** [PermissionManagement] fsx:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "fsx:PutResourcePolicy";
+	static readonly PutResourcePolicy = "fsx:PutResourcePolicy";
 	/** [Write] fsx:ReleaseFileSystemNfsV3Locks */
-	static readonly RELEASE_FILE_SYSTEM_NFS_V3_LOCKS =
+	static readonly ReleaseFileSystemNfsV3Locks =
 		"fsx:ReleaseFileSystemNfsV3Locks";
 	/** [Write] fsx:RestoreVolumeFromSnapshot */
-	static readonly RESTORE_VOLUME_FROM_SNAPSHOT =
-		"fsx:RestoreVolumeFromSnapshot";
+	static readonly RestoreVolumeFromSnapshot = "fsx:RestoreVolumeFromSnapshot";
 	/** [Write] fsx:StartMisconfiguredStateRecovery */
-	static readonly START_MISCONFIGURED_STATE_RECOVERY =
+	static readonly StartMisconfiguredStateRecovery =
 		"fsx:StartMisconfiguredStateRecovery";
 	/** [Tagging] fsx:TagResource */
-	static readonly TAG_RESOURCE = "fsx:TagResource";
+	static readonly TagResource = "fsx:TagResource";
 	/** [Tagging] fsx:UntagResource */
-	static readonly UNTAG_RESOURCE = "fsx:UntagResource";
+	static readonly UntagResource = "fsx:UntagResource";
 	/** [Write] fsx:UpdateDataRepositoryAssociation */
-	static readonly UPDATE_DATA_REPOSITORY_ASSOCIATION =
+	static readonly UpdateDataRepositoryAssociation =
 		"fsx:UpdateDataRepositoryAssociation";
 	/** [Write] fsx:UpdateFileCache */
-	static readonly UPDATE_FILE_CACHE = "fsx:UpdateFileCache";
+	static readonly UpdateFileCache = "fsx:UpdateFileCache";
 	/** [Write] fsx:UpdateFileSystem */
-	static readonly UPDATE_FILE_SYSTEM = "fsx:UpdateFileSystem";
+	static readonly UpdateFileSystem = "fsx:UpdateFileSystem";
 	/** [Write] fsx:UpdateSharedVpcConfiguration */
-	static readonly UPDATE_SHARED_VPC_CONFIGURATION =
+	static readonly UpdateSharedVpcConfiguration =
 		"fsx:UpdateSharedVpcConfiguration";
 	/** [Write] fsx:UpdateSnapshot */
-	static readonly UPDATE_SNAPSHOT = "fsx:UpdateSnapshot";
+	static readonly UpdateSnapshot = "fsx:UpdateSnapshot";
 	/** [Write] fsx:UpdateStorageVirtualMachine */
-	static readonly UPDATE_STORAGE_VIRTUAL_MACHINE =
+	static readonly UpdateStorageVirtualMachine =
 		"fsx:UpdateStorageVirtualMachine";
 	/** [Write] fsx:UpdateVolume */
-	static readonly UPDATE_VOLUME = "fsx:UpdateVolume";
+	static readonly UpdateVolume = "fsx:UpdateVolume";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		FsxActions.DESCRIBE_ASSOCIATED_FILE_GATEWAYS,
-		FsxActions.DESCRIBE_BACKUPS,
-		FsxActions.DESCRIBE_DATA_REPOSITORY_ASSOCIATIONS,
-		FsxActions.DESCRIBE_DATA_REPOSITORY_TASKS,
-		FsxActions.DESCRIBE_FILE_CACHES,
-		FsxActions.DESCRIBE_FILE_SYSTEM_ALIASES,
-		FsxActions.DESCRIBE_FILE_SYSTEMS,
-		FsxActions.DESCRIBE_S3_ACCESS_POINT_ATTACHMENTS,
-		FsxActions.DESCRIBE_SHARED_VPC_CONFIGURATION,
-		FsxActions.DESCRIBE_SNAPSHOTS,
-		FsxActions.DESCRIBE_STORAGE_VIRTUAL_MACHINES,
-		FsxActions.DESCRIBE_VOLUMES,
-		FsxActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		FsxActions.DescribeAssociatedFileGateways,
+		FsxActions.DescribeBackups,
+		FsxActions.DescribeDataRepositoryAssociations,
+		FsxActions.DescribeDataRepositoryTasks,
+		FsxActions.DescribeFileCaches,
+		FsxActions.DescribeFileSystemAliases,
+		FsxActions.DescribeFileSystems,
+		FsxActions.DescribeS3AccessPointAttachments,
+		FsxActions.DescribeSharedVpcConfiguration,
+		FsxActions.DescribeSnapshots,
+		FsxActions.DescribeStorageVirtualMachines,
+		FsxActions.DescribeVolumes,
+		FsxActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		FsxActions.ASSOCIATE_FILE_GATEWAY,
-		FsxActions.ASSOCIATE_FILE_SYSTEM_ALIASES,
-		FsxActions.CANCEL_DATA_REPOSITORY_TASK,
-		FsxActions.COPY_BACKUP,
-		FsxActions.COPY_SNAPSHOT_AND_UPDATE_VOLUME,
-		FsxActions.CREATE_AND_ATTACH_S3_ACCESS_POINT,
-		FsxActions.CREATE_BACKUP,
-		FsxActions.CREATE_DATA_REPOSITORY_ASSOCIATION,
-		FsxActions.CREATE_DATA_REPOSITORY_TASK,
-		FsxActions.CREATE_FILE_CACHE,
-		FsxActions.CREATE_FILE_SYSTEM,
-		FsxActions.CREATE_FILE_SYSTEM_FROM_BACKUP,
-		FsxActions.CREATE_SNAPSHOT,
-		FsxActions.CREATE_STORAGE_VIRTUAL_MACHINE,
-		FsxActions.CREATE_VOLUME,
-		FsxActions.CREATE_VOLUME_FROM_BACKUP,
-		FsxActions.DELETE_BACKUP,
-		FsxActions.DELETE_DATA_REPOSITORY_ASSOCIATION,
-		FsxActions.DELETE_FILE_CACHE,
-		FsxActions.DELETE_FILE_SYSTEM,
-		FsxActions.DELETE_SNAPSHOT,
-		FsxActions.DELETE_STORAGE_VIRTUAL_MACHINE,
-		FsxActions.DELETE_VOLUME,
-		FsxActions.DETACH_AND_DELETE_S3_ACCESS_POINT,
-		FsxActions.DISASSOCIATE_FILE_GATEWAY,
-		FsxActions.DISASSOCIATE_FILE_SYSTEM_ALIASES,
-		FsxActions.RELEASE_FILE_SYSTEM_NFS_V3_LOCKS,
-		FsxActions.RESTORE_VOLUME_FROM_SNAPSHOT,
-		FsxActions.START_MISCONFIGURED_STATE_RECOVERY,
-		FsxActions.UPDATE_DATA_REPOSITORY_ASSOCIATION,
-		FsxActions.UPDATE_FILE_CACHE,
-		FsxActions.UPDATE_FILE_SYSTEM,
-		FsxActions.UPDATE_SHARED_VPC_CONFIGURATION,
-		FsxActions.UPDATE_SNAPSHOT,
-		FsxActions.UPDATE_STORAGE_VIRTUAL_MACHINE,
-		FsxActions.UPDATE_VOLUME,
+	static readonly AllWriteActions: string[] = [
+		FsxActions.AssociateFileGateway,
+		FsxActions.AssociateFileSystemAliases,
+		FsxActions.CancelDataRepositoryTask,
+		FsxActions.CopyBackup,
+		FsxActions.CopySnapshotAndUpdateVolume,
+		FsxActions.CreateAndAttachS3AccessPoint,
+		FsxActions.CreateBackup,
+		FsxActions.CreateDataRepositoryAssociation,
+		FsxActions.CreateDataRepositoryTask,
+		FsxActions.CreateFileCache,
+		FsxActions.CreateFileSystem,
+		FsxActions.CreateFileSystemFromBackup,
+		FsxActions.CreateSnapshot,
+		FsxActions.CreateStorageVirtualMachine,
+		FsxActions.CreateVolume,
+		FsxActions.CreateVolumeFromBackup,
+		FsxActions.DeleteBackup,
+		FsxActions.DeleteDataRepositoryAssociation,
+		FsxActions.DeleteFileCache,
+		FsxActions.DeleteFileSystem,
+		FsxActions.DeleteSnapshot,
+		FsxActions.DeleteStorageVirtualMachine,
+		FsxActions.DeleteVolume,
+		FsxActions.DetachAndDeleteS3AccessPoint,
+		FsxActions.DisassociateFileGateway,
+		FsxActions.DisassociateFileSystemAliases,
+		FsxActions.ReleaseFileSystemNfsV3Locks,
+		FsxActions.RestoreVolumeFromSnapshot,
+		FsxActions.StartMisconfiguredStateRecovery,
+		FsxActions.UpdateDataRepositoryAssociation,
+		FsxActions.UpdateFileCache,
+		FsxActions.UpdateFileSystem,
+		FsxActions.UpdateSharedVpcConfiguration,
+		FsxActions.UpdateSnapshot,
+		FsxActions.UpdateStorageVirtualMachine,
+		FsxActions.UpdateVolume,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		FsxActions.BYPASS_SNAPLOCK_ENTERPRISE_RETENTION,
-		FsxActions.DELETE_RESOURCE_POLICY,
-		FsxActions.GET_RESOURCE_POLICY,
-		FsxActions.MANAGE_BACKUP_PRINCIPAL_ASSOCIATIONS,
-		FsxActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		FsxActions.BypassSnaplockEnterpriseRetention,
+		FsxActions.DeleteResourcePolicy,
+		FsxActions.actionGetResourcePolicy,
+		FsxActions.ManageBackupPrincipalAssociations,
+		FsxActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		FsxActions.TAG_RESOURCE,
-		FsxActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		FsxActions.TagResource,
+		FsxActions.UntagResource,
 	];
 }
 
-const AssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):association/(?<fileSystemIdOrFileCacheId>[^:/?]+)/(?<dataRepositoryAssociationId>[^:/?]+)$",
-);
-const BackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):backup/(?<backupId>[^:/?]+)$",
-);
-const FileCacheArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-cache/(?<fileCacheId>[^:/?]+)$",
-);
-const FileSystemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-system/(?<fileSystemId>[^:/?]+)$",
-);
-const SnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapshot/(?<volumeId>[^:/?]+)/(?<snapshotId>[^:/?]+)$",
-);
-const StorageVirtualMachineArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):storage-virtual-machine/(?<fileSystemId>[^:/?]+)/(?<storageVirtualMachineId>[^:/?]+)$",
-);
-const TaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):task/(?<taskId>[^:/?]+)$",
-);
-const VolumeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):volume/(?<fileSystemId>[^:/?]+)/(?<volumeId>[^:/?]+)$",
-);
+/**
+ * Properties for building a association ARN.
+ */
+export interface FsxAssociationArnProps {
+	/** The FileSystemIdOrFileCacheId component of the ARN. */
+	readonly fileSystemIdOrFileCacheId: string;
+	/** The DataRepositoryAssociationId component of the ARN. */
+	readonly dataRepositoryAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a association ARN.
+ */
+export interface FsxAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemIdOrFileCacheId component. */
+	readonly fileSystemIdOrFileCacheId: string;
+	/** The DataRepositoryAssociationId component. */
+	readonly dataRepositoryAssociationId: string;
+}
+
+/**
+ * Properties for building a backup ARN.
+ */
+export interface FsxBackupArnProps {
+	/** The BackupId component of the ARN. */
+	readonly backupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a backup ARN.
+ */
+export interface FsxBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BackupId component. */
+	readonly backupId: string;
+}
+
+/**
+ * Properties for building a file-cache ARN.
+ */
+export interface FsxFileCacheArnProps {
+	/** The FileCacheId component of the ARN. */
+	readonly fileCacheId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a file-cache ARN.
+ */
+export interface FsxFileCacheArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileCacheId component. */
+	readonly fileCacheId: string;
+}
+
+/**
+ * Properties for building a file-system ARN.
+ */
+export interface FsxFileSystemArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a file-system ARN.
+ */
+export interface FsxFileSystemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+}
+
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface FsxSnapshotArnProps {
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** The SnapshotId component of the ARN. */
+	readonly snapshotId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface FsxSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+	/** The SnapshotId component. */
+	readonly snapshotId: string;
+}
+
+/**
+ * Properties for building a storage-virtual-machine ARN.
+ */
+export interface FsxStorageVirtualMachineArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The StorageVirtualMachineId component of the ARN. */
+	readonly storageVirtualMachineId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a storage-virtual-machine ARN.
+ */
+export interface FsxStorageVirtualMachineArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The StorageVirtualMachineId component. */
+	readonly storageVirtualMachineId: string;
+}
+
+/**
+ * Properties for building a task ARN.
+ */
+export interface FsxTaskArnProps {
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a task ARN.
+ */
+export interface FsxTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+}
+
+/**
+ * Properties for building a volume ARN.
+ */
+export interface FsxVolumeArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a volume ARN.
+ */
+export interface FsxVolumeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+}
+
+const AssociationArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):association\/(?<fileSystemIdOrFileCacheId>[^:/?]+)\/(?<dataRepositoryAssociationId>[^:/?]+)$/;
+const BackupArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):backup\/(?<backupId>[^:/?]+)$/;
+const FileCacheArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-cache\/(?<fileCacheId>[^:/?]+)$/;
+const FileSystemArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-system\/(?<fileSystemId>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapshot\/(?<volumeId>[^:/?]+)\/(?<snapshotId>[^:/?]+)$/;
+const StorageVirtualMachineArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):storage-virtual-machine\/(?<fileSystemId>[^:/?]+)\/(?<storageVirtualMachineId>[^:/?]+)$/;
+const TaskArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):task\/(?<taskId>[^:/?]+)$/;
+const VolumeArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):volume\/(?<fileSystemId>[^:/?]+)\/(?<volumeId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for fsx resources.
@@ -254,18 +482,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the association resource.
 	 */
-	static association(props: {
-		/** The FileSystemIdOrFileCacheId component of the ARN. */
-		readonly fileSystemIdOrFileCacheId: string;
-		/** The DataRepositoryAssociationId component of the ARN. */
-		readonly dataRepositoryAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static association(props: FsxAssociationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:association/${props.fileSystemIdOrFileCacheId}/${props.dataRepositoryAssociationId}`;
 	}
 
@@ -280,13 +497,7 @@ export class FsxResources {
 	 * Parses a association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemIdOrFileCacheId: string;
-		dataRepositoryAssociationId: string;
-	} {
+	static parseAssociationArn(arn: string): FsxAssociationArnComponents {
 		const match = AssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid association ARN: ${arn}`);
@@ -303,16 +514,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the backup resource.
 	 */
-	static backup(props: {
-		/** The BackupId component of the ARN. */
-		readonly backupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static backup(props: FsxBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:backup/${props.backupId}`;
 	}
 
@@ -327,12 +529,7 @@ export class FsxResources {
 	 * Parses a backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBackupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		backupId: string;
-	} {
+	static parseBackupArn(arn: string): FsxBackupArnComponents {
 		const match = BackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid backup ARN: ${arn}`);
@@ -348,16 +545,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the file-cache resource.
 	 */
-	static fileCache(props: {
-		/** The FileCacheId component of the ARN. */
-		readonly fileCacheId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fileCache(props: FsxFileCacheArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:file-cache/${props.fileCacheId}`;
 	}
 
@@ -372,12 +560,7 @@ export class FsxResources {
 	 * Parses a file-cache ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFileCacheArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileCacheId: string;
-	} {
+	static parseFileCacheArn(arn: string): FsxFileCacheArnComponents {
 		const match = FileCacheArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid file-cache ARN: ${arn}`);
@@ -393,16 +576,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the file-system resource.
 	 */
-	static fileSystem(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fileSystem(props: FsxFileSystemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:file-system/${props.fileSystemId}`;
 	}
 
@@ -417,12 +591,7 @@ export class FsxResources {
 	 * Parses a file-system ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFileSystemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-	} {
+	static parseFileSystemArn(arn: string): FsxFileSystemArnComponents {
 		const match = FileSystemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid file-system ARN: ${arn}`);
@@ -438,18 +607,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
-	static snapshot(props: {
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** The SnapshotId component of the ARN. */
-		readonly snapshotId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshot(props: FsxSnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:snapshot/${props.volumeId}/${props.snapshotId}`;
 	}
 
@@ -464,13 +622,7 @@ export class FsxResources {
 	 * Parses a snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		volumeId: string;
-		snapshotId: string;
-	} {
+	static parseSnapshotArn(arn: string): FsxSnapshotArnComponents {
 		const match = SnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot ARN: ${arn}`);
@@ -487,18 +639,9 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the storage-virtual-machine resource.
 	 */
-	static storageVirtualMachine(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** The StorageVirtualMachineId component of the ARN. */
-		readonly storageVirtualMachineId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static storageVirtualMachine(
+		props: FsxStorageVirtualMachineArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:storage-virtual-machine/${props.fileSystemId}/${props.storageVirtualMachineId}`;
 	}
 
@@ -513,13 +656,9 @@ export class FsxResources {
 	 * Parses a storage-virtual-machine ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStorageVirtualMachineArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-		storageVirtualMachineId: string;
-	} {
+	static parseStorageVirtualMachineArn(
+		arn: string,
+	): FsxStorageVirtualMachineArnComponents {
 		const match = StorageVirtualMachineArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid storage-virtual-machine ARN: ${arn}`);
@@ -536,16 +675,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the task resource.
 	 */
-	static task(props: {
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static task(props: FsxTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:task/${props.taskId}`;
 	}
 
@@ -560,12 +690,7 @@ export class FsxResources {
 	 * Parses a task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		taskId: string;
-	} {
+	static parseTaskArn(arn: string): FsxTaskArnComponents {
 		const match = TaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid task ARN: ${arn}`);
@@ -581,18 +706,7 @@ export class FsxResources {
 	/**
 	 * Builds an ARN for the volume resource.
 	 */
-	static volume(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static volume(props: FsxVolumeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:volume/${props.fileSystemId}/${props.volumeId}`;
 	}
 
@@ -607,13 +721,7 @@ export class FsxResources {
 	 * Parses a volume ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVolumeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-		volumeId: string;
-	} {
+	static parseVolumeArn(arn: string): FsxVolumeArnComponents {
 		const match = VolumeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid volume ARN: ${arn}`);
@@ -633,185 +741,183 @@ export class FsxResources {
  */
 export class FsxOperations {
 	/** IAM actions required for the AssociateFileSystemAliases API call. */
-	static readonly ASSOCIATE_FILE_SYSTEM_ALIASES: string[] = [
+	static readonly AssociateFileSystemAliases: string[] = [
 		"fsx:AssociateFileSystemAliases",
 	];
 	/** IAM actions required for the CancelDataRepositoryTask API call. */
-	static readonly CANCEL_DATA_REPOSITORY_TASK: string[] = [
+	static readonly CancelDataRepositoryTask: string[] = [
 		"fsx:CancelDataRepositoryTask",
 	];
 	/** IAM actions required for the CopyBackup API call. */
-	static readonly COPY_BACKUP: string[] = ["fsx:CopyBackup", "fsx:TagResource"];
+	static readonly CopyBackup: string[] = ["fsx:CopyBackup", "fsx:TagResource"];
 	/** IAM actions required for the CopySnapshotAndUpdateVolume API call. */
-	static readonly COPY_SNAPSHOT_AND_UPDATE_VOLUME: string[] = [
+	static readonly CopySnapshotAndUpdateVolume: string[] = [
 		"fsx:CopySnapshotAndUpdateVolume",
 	];
 	/** IAM actions required for the CreateAndAttachS3AccessPoint API call. */
-	static readonly CREATE_AND_ATTACH_S3_ACCESS_POINT: string[] = [
+	static readonly CreateAndAttachS3AccessPoint: string[] = [
 		"fsx:CreateAndAttachS3AccessPoint",
 	];
 	/** IAM actions required for the CreateBackup API call. */
-	static readonly CREATE_BACKUP: string[] = [
+	static readonly CreateBackup: string[] = [
 		"fsx:CreateBackup",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateDataRepositoryAssociation API call. */
-	static readonly CREATE_DATA_REPOSITORY_ASSOCIATION: string[] = [
+	static readonly CreateDataRepositoryAssociation: string[] = [
 		"fsx:CreateDataRepositoryAssociation",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateDataRepositoryTask API call. */
-	static readonly CREATE_DATA_REPOSITORY_TASK: string[] = [
+	static readonly CreateDataRepositoryTask: string[] = [
 		"fsx:CreateDataRepositoryTask",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateFileCache API call. */
-	static readonly CREATE_FILE_CACHE: string[] = [
+	static readonly CreateFileCache: string[] = [
 		"fsx:CreateDataRepositoryAssociation",
 		"fsx:CreateFileCache",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateFileSystem API call. */
-	static readonly CREATE_FILE_SYSTEM: string[] = [
+	static readonly CreateFileSystem: string[] = [
 		"fsx:CreateFileSystem",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateFileSystemFromBackup API call. */
-	static readonly CREATE_FILE_SYSTEM_FROM_BACKUP: string[] = [
+	static readonly CreateFileSystemFromBackup: string[] = [
 		"fsx:CreateFileSystemFromBackup",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateSnapshot API call. */
-	static readonly CREATE_SNAPSHOT: string[] = [
+	static readonly CreateSnapshot: string[] = [
 		"fsx:CreateSnapshot",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateStorageVirtualMachine API call. */
-	static readonly CREATE_STORAGE_VIRTUAL_MACHINE: string[] = [
+	static readonly CreateStorageVirtualMachine: string[] = [
 		"fsx:CreateStorageVirtualMachine",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateVolume API call. */
-	static readonly CREATE_VOLUME: string[] = [
+	static readonly CreateVolume: string[] = [
 		"fsx:CreateVolume",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateVolumeFromBackup API call. */
-	static readonly CREATE_VOLUME_FROM_BACKUP: string[] = [
+	static readonly CreateVolumeFromBackup: string[] = [
 		"fsx:CreateVolumeFromBackup",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the DeleteBackup API call. */
-	static readonly DELETE_BACKUP: string[] = ["fsx:DeleteBackup"];
+	static readonly DeleteBackup: string[] = ["fsx:DeleteBackup"];
 	/** IAM actions required for the DeleteDataRepositoryAssociation API call. */
-	static readonly DELETE_DATA_REPOSITORY_ASSOCIATION: string[] = [
+	static readonly DeleteDataRepositoryAssociation: string[] = [
 		"fsx:DeleteDataRepositoryAssociation",
 	];
 	/** IAM actions required for the DeleteFileCache API call. */
-	static readonly DELETE_FILE_CACHE: string[] = [
+	static readonly DeleteFileCache: string[] = [
 		"fsx:DeleteDataRepositoryAssociation",
 		"fsx:DeleteFileCache",
 	];
 	/** IAM actions required for the DeleteFileSystem API call. */
-	static readonly DELETE_FILE_SYSTEM: string[] = [
+	static readonly DeleteFileSystem: string[] = [
 		"fsx:CreateBackup",
 		"fsx:DeleteFileSystem",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the DeleteSnapshot API call. */
-	static readonly DELETE_SNAPSHOT: string[] = ["fsx:DeleteSnapshot"];
+	static readonly DeleteSnapshot: string[] = ["fsx:DeleteSnapshot"];
 	/** IAM actions required for the DeleteStorageVirtualMachine API call. */
-	static readonly DELETE_STORAGE_VIRTUAL_MACHINE: string[] = [
+	static readonly DeleteStorageVirtualMachine: string[] = [
 		"fsx:DeleteStorageVirtualMachine",
 	];
 	/** IAM actions required for the DeleteVolume API call. */
-	static readonly DELETE_VOLUME: string[] = [
+	static readonly DeleteVolume: string[] = [
 		"fsx:BypassSnaplockEnterpriseRetention",
 		"fsx:DeleteVolume",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the DescribeBackups API call. */
-	static readonly DESCRIBE_BACKUPS: string[] = ["fsx:DescribeBackups"];
+	static readonly DescribeBackups: string[] = ["fsx:DescribeBackups"];
 	/** IAM actions required for the DescribeDataRepositoryAssociations API call. */
-	static readonly DESCRIBE_DATA_REPOSITORY_ASSOCIATIONS: string[] = [
+	static readonly DescribeDataRepositoryAssociations: string[] = [
 		"fsx:DescribeDataRepositoryAssociations",
 	];
 	/** IAM actions required for the DescribeDataRepositoryTasks API call. */
-	static readonly DESCRIBE_DATA_REPOSITORY_TASKS: string[] = [
+	static readonly DescribeDataRepositoryTasks: string[] = [
 		"fsx:DescribeDataRepositoryTasks",
 	];
 	/** IAM actions required for the DescribeFileCaches API call. */
-	static readonly DESCRIBE_FILE_CACHES: string[] = ["fsx:DescribeFileCaches"];
+	static readonly DescribeFileCaches: string[] = ["fsx:DescribeFileCaches"];
 	/** IAM actions required for the DescribeFileSystemAliases API call. */
-	static readonly DESCRIBE_FILE_SYSTEM_ALIASES: string[] = [
+	static readonly DescribeFileSystemAliases: string[] = [
 		"fsx:DescribeFileSystemAliases",
 	];
 	/** IAM actions required for the DescribeFileSystems API call. */
-	static readonly DESCRIBE_FILE_SYSTEMS: string[] = ["fsx:DescribeFileSystems"];
+	static readonly DescribeFileSystems: string[] = ["fsx:DescribeFileSystems"];
 	/** IAM actions required for the DescribeS3AccessPointAttachments API call. */
-	static readonly DESCRIBE_S3_ACCESS_POINT_ATTACHMENTS: string[] = [
+	static readonly DescribeS3AccessPointAttachments: string[] = [
 		"fsx:DescribeS3AccessPointAttachments",
 	];
 	/** IAM actions required for the DescribeSharedVpcConfiguration API call. */
-	static readonly DESCRIBE_SHARED_VPC_CONFIGURATION: string[] = [
+	static readonly DescribeSharedVpcConfiguration: string[] = [
 		"fsx:DescribeSharedVpcConfiguration",
 	];
 	/** IAM actions required for the DescribeSnapshots API call. */
-	static readonly DESCRIBE_SNAPSHOTS: string[] = ["fsx:DescribeSnapshots"];
+	static readonly DescribeSnapshots: string[] = ["fsx:DescribeSnapshots"];
 	/** IAM actions required for the DescribeStorageVirtualMachines API call. */
-	static readonly DESCRIBE_STORAGE_VIRTUAL_MACHINES: string[] = [
+	static readonly DescribeStorageVirtualMachines: string[] = [
 		"fsx:DescribeStorageVirtualMachines",
 	];
 	/** IAM actions required for the DescribeVolumes API call. */
-	static readonly DESCRIBE_VOLUMES: string[] = ["fsx:DescribeVolumes"];
+	static readonly DescribeVolumes: string[] = ["fsx:DescribeVolumes"];
 	/** IAM actions required for the DetachAndDeleteS3AccessPoint API call. */
-	static readonly DETACH_AND_DELETE_S3_ACCESS_POINT: string[] = [
+	static readonly DetachAndDeleteS3AccessPoint: string[] = [
 		"fsx:DetachAndDeleteS3AccessPoint",
 	];
 	/** IAM actions required for the DisassociateFileSystemAliases API call. */
-	static readonly DISASSOCIATE_FILE_SYSTEM_ALIASES: string[] = [
+	static readonly DisassociateFileSystemAliases: string[] = [
 		"fsx:DisassociateFileSystemAliases",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"fsx:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["fsx:ListTagsForResource"];
 	/** IAM actions required for the ReleaseFileSystemNfsV3Locks API call. */
-	static readonly RELEASE_FILE_SYSTEM_NFS_V3_LOCKS: string[] = [
+	static readonly ReleaseFileSystemNfsV3Locks: string[] = [
 		"fsx:ReleaseFileSystemNfsV3Locks",
 	];
 	/** IAM actions required for the RestoreVolumeFromSnapshot API call. */
-	static readonly RESTORE_VOLUME_FROM_SNAPSHOT: string[] = [
+	static readonly RestoreVolumeFromSnapshot: string[] = [
 		"fsx:RestoreVolumeFromSnapshot",
 	];
 	/** IAM actions required for the StartMisconfiguredStateRecovery API call. */
-	static readonly START_MISCONFIGURED_STATE_RECOVERY: string[] = [
+	static readonly StartMisconfiguredStateRecovery: string[] = [
 		"fsx:StartMisconfiguredStateRecovery",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["fsx:TagResource"];
+	static readonly TagResource: string[] = ["fsx:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["fsx:UntagResource"];
+	static readonly UntagResource: string[] = ["fsx:UntagResource"];
 	/** IAM actions required for the UpdateDataRepositoryAssociation API call. */
-	static readonly UPDATE_DATA_REPOSITORY_ASSOCIATION: string[] = [
+	static readonly UpdateDataRepositoryAssociation: string[] = [
 		"fsx:UpdateDataRepositoryAssociation",
 	];
 	/** IAM actions required for the UpdateFileCache API call. */
-	static readonly UPDATE_FILE_CACHE: string[] = ["fsx:UpdateFileCache"];
+	static readonly UpdateFileCache: string[] = ["fsx:UpdateFileCache"];
 	/** IAM actions required for the UpdateFileSystem API call. */
-	static readonly UPDATE_FILE_SYSTEM: string[] = ["fsx:UpdateFileSystem"];
+	static readonly UpdateFileSystem: string[] = ["fsx:UpdateFileSystem"];
 	/** IAM actions required for the UpdateSharedVpcConfiguration API call. */
-	static readonly UPDATE_SHARED_VPC_CONFIGURATION: string[] = [
+	static readonly UpdateSharedVpcConfiguration: string[] = [
 		"fsx:UpdateSharedVpcConfiguration",
 	];
 	/** IAM actions required for the UpdateSnapshot API call. */
-	static readonly UPDATE_SNAPSHOT: string[] = ["fsx:UpdateSnapshot"];
+	static readonly UpdateSnapshot: string[] = ["fsx:UpdateSnapshot"];
 	/** IAM actions required for the UpdateStorageVirtualMachine API call. */
-	static readonly UPDATE_STORAGE_VIRTUAL_MACHINE: string[] = [
+	static readonly UpdateStorageVirtualMachine: string[] = [
 		"fsx:UpdateStorageVirtualMachine",
 	];
 	/** IAM actions required for the UpdateVolume API call. */
-	static readonly UPDATE_VOLUME: string[] = ["fsx:UpdateVolume"];
+	static readonly UpdateVolume: string[] = ["fsx:UpdateVolume"];
 }
 
 /**
@@ -819,73 +925,75 @@ export class FsxOperations {
  */
 export class FsxConditions {
 	/** Condition keys applicable to the CopyBackup action. */
-	static readonly COPY_BACKUP_CONDITION_KEYS: string[] = [
+	static readonly CopyBackupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateBackup action. */
-	static readonly CREATE_BACKUP_CONDITION_KEYS: string[] = [
+	static readonly CreateBackupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataRepositoryAssociation action. */
-	static readonly CREATE_DATA_REPOSITORY_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateDataRepositoryAssociationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateDataRepositoryTask action. */
-	static readonly CREATE_DATA_REPOSITORY_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateDataRepositoryTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFileCache action. */
-	static readonly CREATE_FILE_CACHE_CONDITION_KEYS: string[] = [
+	static readonly CreateFileCacheConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFileSystem action. */
-	static readonly CREATE_FILE_SYSTEM_CONDITION_KEYS: string[] = [
+	static readonly CreateFileSystemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFileSystemFromBackup action. */
-	static readonly CREATE_FILE_SYSTEM_FROM_BACKUP_CONDITION_KEYS: string[] = [
+	static readonly CreateFileSystemFromBackupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshot action. */
-	static readonly CREATE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStorageVirtualMachine action. */
-	static readonly CREATE_STORAGE_VIRTUAL_MACHINE_CONDITION_KEYS: string[] = [
+	static readonly CreateStorageVirtualMachineConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVolumeFromBackup action. */
-	static readonly CREATE_VOLUME_FROM_BACKUP_CONDITION_KEYS: string[] = [
+	static readonly CreateVolumeFromBackupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"fsx:StorageVirtualMachineId",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateVolume action. */
-	static readonly UPDATE_VOLUME_CONDITION_KEYS: string[] = [
+	static readonly UpdateVolumeConditionKeys: string[] = [
 		"fsx:ParentVolumeId",
 		"fsx:StorageVirtualMachineId",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: fsx:IsBackupCopyDestination (Bool) */
 	static readonly IS_BACKUP_COPY_DESTINATION = "fsx:IsBackupCopyDestination";
 	/** Condition key: fsx:IsBackupCopySource (Bool) */

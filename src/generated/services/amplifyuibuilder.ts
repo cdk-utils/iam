@@ -13,123 +13,262 @@ export class AmplifyuibuilderActions {
 	static readonly SERVICE_PREFIX = "amplifyuibuilder";
 
 	/** [Write] amplifyuibuilder:CreateComponent */
-	static readonly CREATE_COMPONENT = "amplifyuibuilder:CreateComponent";
+	static readonly CreateComponent = "amplifyuibuilder:CreateComponent";
 	/** [Write] amplifyuibuilder:CreateForm */
-	static readonly CREATE_FORM = "amplifyuibuilder:CreateForm";
+	static readonly CreateForm = "amplifyuibuilder:CreateForm";
 	/** [Write] amplifyuibuilder:CreateTheme */
-	static readonly CREATE_THEME = "amplifyuibuilder:CreateTheme";
+	static readonly CreateTheme = "amplifyuibuilder:CreateTheme";
 	/** [Write] amplifyuibuilder:DeleteComponent */
-	static readonly DELETE_COMPONENT = "amplifyuibuilder:DeleteComponent";
+	static readonly DeleteComponent = "amplifyuibuilder:DeleteComponent";
 	/** [Write] amplifyuibuilder:DeleteForm */
-	static readonly DELETE_FORM = "amplifyuibuilder:DeleteForm";
+	static readonly DeleteForm = "amplifyuibuilder:DeleteForm";
 	/** [Write] amplifyuibuilder:DeleteTheme */
-	static readonly DELETE_THEME = "amplifyuibuilder:DeleteTheme";
+	static readonly DeleteTheme = "amplifyuibuilder:DeleteTheme";
 	/** [Write] amplifyuibuilder:ExchangeCodeForToken */
-	static readonly EXCHANGE_CODE_FOR_TOKEN =
+	static readonly ExchangeCodeForToken =
 		"amplifyuibuilder:ExchangeCodeForToken";
 	/** [Read] amplifyuibuilder:ExportComponents */
-	static readonly EXPORT_COMPONENTS = "amplifyuibuilder:ExportComponents";
+	static readonly ExportComponents = "amplifyuibuilder:ExportComponents";
 	/** [Read] amplifyuibuilder:ExportForms */
-	static readonly EXPORT_FORMS = "amplifyuibuilder:ExportForms";
+	static readonly ExportForms = "amplifyuibuilder:ExportForms";
 	/** [Read] amplifyuibuilder:ExportThemes */
-	static readonly EXPORT_THEMES = "amplifyuibuilder:ExportThemes";
+	static readonly ExportThemes = "amplifyuibuilder:ExportThemes";
 	/** [Read] amplifyuibuilder:GetCodegenJob */
-	static readonly GET_CODEGEN_JOB = "amplifyuibuilder:GetCodegenJob";
+	static readonly actionGetCodegenJob = "amplifyuibuilder:GetCodegenJob";
 	/** [Read] amplifyuibuilder:GetComponent */
-	static readonly GET_COMPONENT = "amplifyuibuilder:GetComponent";
+	static readonly actionGetComponent = "amplifyuibuilder:GetComponent";
 	/** [Read] amplifyuibuilder:GetForm */
-	static readonly GET_FORM = "amplifyuibuilder:GetForm";
+	static readonly actionGetForm = "amplifyuibuilder:GetForm";
 	/** [Read] amplifyuibuilder:GetMetadata */
-	static readonly GET_METADATA = "amplifyuibuilder:GetMetadata";
+	static readonly actionGetMetadata = "amplifyuibuilder:GetMetadata";
 	/** [Read] amplifyuibuilder:GetTheme */
-	static readonly GET_THEME = "amplifyuibuilder:GetTheme";
+	static readonly actionGetTheme = "amplifyuibuilder:GetTheme";
 	/** [List] amplifyuibuilder:ListCodegenJobs */
-	static readonly LIST_CODEGEN_JOBS = "amplifyuibuilder:ListCodegenJobs";
+	static readonly ListCodegenJobs = "amplifyuibuilder:ListCodegenJobs";
 	/** [List] amplifyuibuilder:ListComponents */
-	static readonly LIST_COMPONENTS = "amplifyuibuilder:ListComponents";
+	static readonly ListComponents = "amplifyuibuilder:ListComponents";
 	/** [List] amplifyuibuilder:ListForms */
-	static readonly LIST_FORMS = "amplifyuibuilder:ListForms";
+	static readonly ListForms = "amplifyuibuilder:ListForms";
 	/** [List] amplifyuibuilder:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"amplifyuibuilder:ListTagsForResource";
+	static readonly ListTagsForResource = "amplifyuibuilder:ListTagsForResource";
 	/** [List] amplifyuibuilder:ListThemes */
-	static readonly LIST_THEMES = "amplifyuibuilder:ListThemes";
+	static readonly ListThemes = "amplifyuibuilder:ListThemes";
 	/** [Write] amplifyuibuilder:PutMetadataFlag */
-	static readonly PUT_METADATA_FLAG = "amplifyuibuilder:PutMetadataFlag";
+	static readonly PutMetadataFlag = "amplifyuibuilder:PutMetadataFlag";
 	/** [Write] amplifyuibuilder:RefreshToken */
-	static readonly REFRESH_TOKEN = "amplifyuibuilder:RefreshToken";
+	static readonly RefreshToken = "amplifyuibuilder:RefreshToken";
 	/** [Write] amplifyuibuilder:ResetMetadataFlag */
-	static readonly RESET_METADATA_FLAG = "amplifyuibuilder:ResetMetadataFlag";
+	static readonly ResetMetadataFlag = "amplifyuibuilder:ResetMetadataFlag";
 	/** [Write] amplifyuibuilder:StartCodegenJob */
-	static readonly START_CODEGEN_JOB = "amplifyuibuilder:StartCodegenJob";
+	static readonly StartCodegenJob = "amplifyuibuilder:StartCodegenJob";
 	/** [Tagging] amplifyuibuilder:TagResource */
-	static readonly TAG_RESOURCE = "amplifyuibuilder:TagResource";
+	static readonly TagResource = "amplifyuibuilder:TagResource";
 	/** [Tagging] amplifyuibuilder:UntagResource */
-	static readonly UNTAG_RESOURCE = "amplifyuibuilder:UntagResource";
+	static readonly UntagResource = "amplifyuibuilder:UntagResource";
 	/** [Write] amplifyuibuilder:UpdateComponent */
-	static readonly UPDATE_COMPONENT = "amplifyuibuilder:UpdateComponent";
+	static readonly UpdateComponent = "amplifyuibuilder:UpdateComponent";
 	/** [Write] amplifyuibuilder:UpdateForm */
-	static readonly UPDATE_FORM = "amplifyuibuilder:UpdateForm";
+	static readonly UpdateForm = "amplifyuibuilder:UpdateForm";
 	/** [Write] amplifyuibuilder:UpdateTheme */
-	static readonly UPDATE_THEME = "amplifyuibuilder:UpdateTheme";
+	static readonly UpdateTheme = "amplifyuibuilder:UpdateTheme";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AmplifyuibuilderActions.EXPORT_COMPONENTS,
-		AmplifyuibuilderActions.EXPORT_FORMS,
-		AmplifyuibuilderActions.EXPORT_THEMES,
-		AmplifyuibuilderActions.GET_CODEGEN_JOB,
-		AmplifyuibuilderActions.GET_COMPONENT,
-		AmplifyuibuilderActions.GET_FORM,
-		AmplifyuibuilderActions.GET_METADATA,
-		AmplifyuibuilderActions.GET_THEME,
+	static readonly AllReadActions: string[] = [
+		AmplifyuibuilderActions.ExportComponents,
+		AmplifyuibuilderActions.ExportForms,
+		AmplifyuibuilderActions.ExportThemes,
+		AmplifyuibuilderActions.actionGetCodegenJob,
+		AmplifyuibuilderActions.actionGetComponent,
+		AmplifyuibuilderActions.actionGetForm,
+		AmplifyuibuilderActions.actionGetMetadata,
+		AmplifyuibuilderActions.actionGetTheme,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AmplifyuibuilderActions.CREATE_COMPONENT,
-		AmplifyuibuilderActions.CREATE_FORM,
-		AmplifyuibuilderActions.CREATE_THEME,
-		AmplifyuibuilderActions.DELETE_COMPONENT,
-		AmplifyuibuilderActions.DELETE_FORM,
-		AmplifyuibuilderActions.DELETE_THEME,
-		AmplifyuibuilderActions.EXCHANGE_CODE_FOR_TOKEN,
-		AmplifyuibuilderActions.PUT_METADATA_FLAG,
-		AmplifyuibuilderActions.REFRESH_TOKEN,
-		AmplifyuibuilderActions.RESET_METADATA_FLAG,
-		AmplifyuibuilderActions.START_CODEGEN_JOB,
-		AmplifyuibuilderActions.UPDATE_COMPONENT,
-		AmplifyuibuilderActions.UPDATE_FORM,
-		AmplifyuibuilderActions.UPDATE_THEME,
+	static readonly AllWriteActions: string[] = [
+		AmplifyuibuilderActions.CreateComponent,
+		AmplifyuibuilderActions.CreateForm,
+		AmplifyuibuilderActions.CreateTheme,
+		AmplifyuibuilderActions.DeleteComponent,
+		AmplifyuibuilderActions.DeleteForm,
+		AmplifyuibuilderActions.DeleteTheme,
+		AmplifyuibuilderActions.ExchangeCodeForToken,
+		AmplifyuibuilderActions.PutMetadataFlag,
+		AmplifyuibuilderActions.RefreshToken,
+		AmplifyuibuilderActions.ResetMetadataFlag,
+		AmplifyuibuilderActions.StartCodegenJob,
+		AmplifyuibuilderActions.UpdateComponent,
+		AmplifyuibuilderActions.UpdateForm,
+		AmplifyuibuilderActions.UpdateTheme,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AmplifyuibuilderActions.LIST_CODEGEN_JOBS,
-		AmplifyuibuilderActions.LIST_COMPONENTS,
-		AmplifyuibuilderActions.LIST_FORMS,
-		AmplifyuibuilderActions.LIST_TAGS_FOR_RESOURCE,
-		AmplifyuibuilderActions.LIST_THEMES,
+	static readonly AllListActions: string[] = [
+		AmplifyuibuilderActions.ListCodegenJobs,
+		AmplifyuibuilderActions.ListComponents,
+		AmplifyuibuilderActions.ListForms,
+		AmplifyuibuilderActions.ListTagsForResource,
+		AmplifyuibuilderActions.ListThemes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AmplifyuibuilderActions.TAG_RESOURCE,
-		AmplifyuibuilderActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AmplifyuibuilderActions.TagResource,
+		AmplifyuibuilderActions.UntagResource,
 	];
 }
 
-const CodegenJobResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app/(?<appId>[^:/?]+)/environment/(?<environmentName>[^:/?]+)/codegen-jobs/(?<id>[^:/?]+)$",
-);
-const ComponentResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app/(?<appId>[^:/?]+)/environment/(?<environmentName>[^:/?]+)/components/(?<id>[^:/?]+)$",
-);
-const FormResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app/(?<appId>[^:/?]+)/environment/(?<environmentName>[^:/?]+)/forms/(?<id>[^:/?]+)$",
-);
-const ThemeResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app/(?<appId>[^:/?]+)/environment/(?<environmentName>[^:/?]+)/themes/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a CodegenJobResource ARN.
+ */
+export interface AmplifyuibuilderCodegenJobResourceArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CodegenJobResource ARN.
+ */
+export interface AmplifyuibuilderCodegenJobResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a ComponentResource ARN.
+ */
+export interface AmplifyuibuilderComponentResourceArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ComponentResource ARN.
+ */
+export interface AmplifyuibuilderComponentResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a FormResource ARN.
+ */
+export interface AmplifyuibuilderFormResourceArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a FormResource ARN.
+ */
+export interface AmplifyuibuilderFormResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a ThemeResource ARN.
+ */
+export interface AmplifyuibuilderThemeResourceArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ThemeResource ARN.
+ */
+export interface AmplifyuibuilderThemeResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const CodegenJobResourceArnRegex =
+	/^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appId>[^:/?]+)\/environment\/(?<environmentName>[^:/?]+)\/codegen-jobs\/(?<id>[^:/?]+)$/;
+const ComponentResourceArnRegex =
+	/^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appId>[^:/?]+)\/environment\/(?<environmentName>[^:/?]+)\/components\/(?<id>[^:/?]+)$/;
+const FormResourceArnRegex =
+	/^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appId>[^:/?]+)\/environment\/(?<environmentName>[^:/?]+)\/forms\/(?<id>[^:/?]+)$/;
+const ThemeResourceArnRegex =
+	/^arn:(?<partition>[^:]+):amplifyuibuilder:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appId>[^:/?]+)\/environment\/(?<environmentName>[^:/?]+)\/themes\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for amplifyuibuilder resources.
@@ -138,20 +277,9 @@ export class AmplifyuibuilderResources {
 	/**
 	 * Builds an ARN for the CodegenJobResource resource.
 	 */
-	static codegenJobResource(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static codegenJobResource(
+		props: AmplifyuibuilderCodegenJobResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:amplifyuibuilder:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appId}/environment/${props.environmentName}/codegen-jobs/${props.id}`;
 	}
 
@@ -166,14 +294,9 @@ export class AmplifyuibuilderResources {
 	 * Parses a CodegenJobResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCodegenJobResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-		environmentName: string;
-		id: string;
-	} {
+	static parseCodegenJobResourceArn(
+		arn: string,
+	): AmplifyuibuilderCodegenJobResourceArnComponents {
 		const match = CodegenJobResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid CodegenJobResource ARN: ${arn}`);
@@ -191,20 +314,9 @@ export class AmplifyuibuilderResources {
 	/**
 	 * Builds an ARN for the ComponentResource resource.
 	 */
-	static componentResource(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static componentResource(
+		props: AmplifyuibuilderComponentResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:amplifyuibuilder:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appId}/environment/${props.environmentName}/components/${props.id}`;
 	}
 
@@ -219,14 +331,9 @@ export class AmplifyuibuilderResources {
 	 * Parses a ComponentResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComponentResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-		environmentName: string;
-		id: string;
-	} {
+	static parseComponentResourceArn(
+		arn: string,
+	): AmplifyuibuilderComponentResourceArnComponents {
 		const match = ComponentResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ComponentResource ARN: ${arn}`);
@@ -244,20 +351,7 @@ export class AmplifyuibuilderResources {
 	/**
 	 * Builds an ARN for the FormResource resource.
 	 */
-	static formResource(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static formResource(props: AmplifyuibuilderFormResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifyuibuilder:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appId}/environment/${props.environmentName}/forms/${props.id}`;
 	}
 
@@ -272,14 +366,9 @@ export class AmplifyuibuilderResources {
 	 * Parses a FormResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFormResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-		environmentName: string;
-		id: string;
-	} {
+	static parseFormResourceArn(
+		arn: string,
+	): AmplifyuibuilderFormResourceArnComponents {
 		const match = FormResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid FormResource ARN: ${arn}`);
@@ -297,20 +386,7 @@ export class AmplifyuibuilderResources {
 	/**
 	 * Builds an ARN for the ThemeResource resource.
 	 */
-	static themeResource(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static themeResource(props: AmplifyuibuilderThemeResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:amplifyuibuilder:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appId}/environment/${props.environmentName}/themes/${props.id}`;
 	}
 
@@ -325,14 +401,9 @@ export class AmplifyuibuilderResources {
 	 * Parses a ThemeResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThemeResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-		environmentName: string;
-		id: string;
-	} {
+	static parseThemeResourceArn(
+		arn: string,
+	): AmplifyuibuilderThemeResourceArnComponents {
 		const match = ThemeResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ThemeResource ARN: ${arn}`);
@@ -353,90 +424,90 @@ export class AmplifyuibuilderResources {
  */
 export class AmplifyuibuilderOperations {
 	/** IAM actions required for the CreateComponent API call. */
-	static readonly CREATE_COMPONENT: string[] = [
+	static readonly CreateComponent: string[] = [
 		"amplifyuibuilder:CreateComponent",
 		"amplifyuibuilder:TagResource",
 	];
 	/** IAM actions required for the CreateForm API call. */
-	static readonly CREATE_FORM: string[] = [
+	static readonly CreateForm: string[] = [
 		"amplifyuibuilder:CreateForm",
 		"amplifyuibuilder:TagResource",
 	];
 	/** IAM actions required for the CreateTheme API call. */
-	static readonly CREATE_THEME: string[] = [
+	static readonly CreateTheme: string[] = [
 		"amplifyuibuilder:CreateTheme",
 		"amplifyuibuilder:TagResource",
 	];
 	/** IAM actions required for the DeleteComponent API call. */
-	static readonly DELETE_COMPONENT: string[] = [
+	static readonly DeleteComponent: string[] = [
 		"amplifyuibuilder:DeleteComponent",
 	];
 	/** IAM actions required for the DeleteForm API call. */
-	static readonly DELETE_FORM: string[] = ["amplifyuibuilder:DeleteForm"];
+	static readonly DeleteForm: string[] = ["amplifyuibuilder:DeleteForm"];
 	/** IAM actions required for the DeleteTheme API call. */
-	static readonly DELETE_THEME: string[] = ["amplifyuibuilder:DeleteTheme"];
+	static readonly DeleteTheme: string[] = ["amplifyuibuilder:DeleteTheme"];
 	/** IAM actions required for the ExchangeCodeForToken API call. */
-	static readonly EXCHANGE_CODE_FOR_TOKEN: string[] = [
+	static readonly ExchangeCodeForToken: string[] = [
 		"amplifyuibuilder:ExchangeCodeForToken",
 	];
 	/** IAM actions required for the ExportComponents API call. */
-	static readonly EXPORT_COMPONENTS: string[] = [
+	static readonly ExportComponents: string[] = [
 		"amplifyuibuilder:ExportComponents",
 	];
 	/** IAM actions required for the ExportForms API call. */
-	static readonly EXPORT_FORMS: string[] = ["amplifyuibuilder:ExportForms"];
+	static readonly ExportForms: string[] = ["amplifyuibuilder:ExportForms"];
 	/** IAM actions required for the ExportThemes API call. */
-	static readonly EXPORT_THEMES: string[] = ["amplifyuibuilder:ExportThemes"];
+	static readonly ExportThemes: string[] = ["amplifyuibuilder:ExportThemes"];
 	/** IAM actions required for the GetCodegenJob API call. */
-	static readonly GET_CODEGEN_JOB: string[] = [
+	static readonly opGetCodegenJob: string[] = [
 		"amplifyuibuilder:GetCodegenJob",
 	];
 	/** IAM actions required for the GetComponent API call. */
-	static readonly GET_COMPONENT: string[] = ["amplifyuibuilder:GetComponent"];
+	static readonly opGetComponent: string[] = ["amplifyuibuilder:GetComponent"];
 	/** IAM actions required for the GetForm API call. */
-	static readonly GET_FORM: string[] = ["amplifyuibuilder:GetForm"];
+	static readonly opGetForm: string[] = ["amplifyuibuilder:GetForm"];
 	/** IAM actions required for the GetMetadata API call. */
-	static readonly GET_METADATA: string[] = ["amplifyuibuilder:GetMetadata"];
+	static readonly opGetMetadata: string[] = ["amplifyuibuilder:GetMetadata"];
 	/** IAM actions required for the GetTheme API call. */
-	static readonly GET_THEME: string[] = ["amplifyuibuilder:GetTheme"];
+	static readonly opGetTheme: string[] = ["amplifyuibuilder:GetTheme"];
 	/** IAM actions required for the ListCodegenJobs API call. */
-	static readonly LIST_CODEGEN_JOBS: string[] = [
+	static readonly ListCodegenJobs: string[] = [
 		"amplifyuibuilder:ListCodegenJobs",
 	];
 	/** IAM actions required for the ListComponents API call. */
-	static readonly LIST_COMPONENTS: string[] = [
+	static readonly ListComponents: string[] = [
 		"amplifyuibuilder:ListComponents",
 	];
 	/** IAM actions required for the ListForms API call. */
-	static readonly LIST_FORMS: string[] = ["amplifyuibuilder:ListForms"];
+	static readonly ListForms: string[] = ["amplifyuibuilder:ListForms"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"amplifyuibuilder:ListTagsForResource",
 	];
 	/** IAM actions required for the ListThemes API call. */
-	static readonly LIST_THEMES: string[] = ["amplifyuibuilder:ListThemes"];
+	static readonly ListThemes: string[] = ["amplifyuibuilder:ListThemes"];
 	/** IAM actions required for the PutMetadataFlag API call. */
-	static readonly PUT_METADATA_FLAG: string[] = [
+	static readonly PutMetadataFlag: string[] = [
 		"amplifyuibuilder:PutMetadataFlag",
 	];
 	/** IAM actions required for the RefreshToken API call. */
-	static readonly REFRESH_TOKEN: string[] = ["amplifyuibuilder:RefreshToken"];
+	static readonly RefreshToken: string[] = ["amplifyuibuilder:RefreshToken"];
 	/** IAM actions required for the StartCodegenJob API call. */
-	static readonly START_CODEGEN_JOB: string[] = [
+	static readonly StartCodegenJob: string[] = [
 		"amplifyuibuilder:StartCodegenJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["amplifyuibuilder:TagResource"];
+	static readonly TagResource: string[] = ["amplifyuibuilder:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["amplifyuibuilder:UntagResource"];
+	static readonly UntagResource: string[] = ["amplifyuibuilder:UntagResource"];
 	/** IAM actions required for the UpdateComponent API call. */
-	static readonly UPDATE_COMPONENT: string[] = [
+	static readonly UpdateComponent: string[] = [
 		"amplifyuibuilder:UpdateComponent",
 	];
 	/** IAM actions required for the UpdateForm API call. */
-	static readonly UPDATE_FORM: string[] = ["amplifyuibuilder:UpdateForm"];
+	static readonly UpdateForm: string[] = ["amplifyuibuilder:UpdateForm"];
 	/** IAM actions required for the UpdateTheme API call. */
-	static readonly UPDATE_THEME: string[] = ["amplifyuibuilder:UpdateTheme"];
+	static readonly UpdateTheme: string[] = ["amplifyuibuilder:UpdateTheme"];
 }
 
 /**
@@ -444,32 +515,32 @@ export class AmplifyuibuilderOperations {
  */
 export class AmplifyuibuilderConditions {
 	/** Condition keys applicable to the CreateComponent action. */
-	static readonly CREATE_COMPONENT_CONDITION_KEYS: string[] = [
+	static readonly CreateComponentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateForm action. */
-	static readonly CREATE_FORM_CONDITION_KEYS: string[] = [
+	static readonly CreateFormConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTheme action. */
-	static readonly CREATE_THEME_CONDITION_KEYS: string[] = [
+	static readonly CreateThemeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCodegenJob action. */
-	static readonly START_CODEGEN_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartCodegenJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: amplifyuibuilder:CodegenJobResourceAppId (String) */
 	static readonly CODEGEN_JOB_RESOURCE_APP_ID =
@@ -504,11 +575,11 @@ export class AmplifyuibuilderConditions {
 	/** Condition key: amplifyuibuilder:ThemeResourceId (String) */
 	static readonly THEME_RESOURCE_ID = "amplifyuibuilder:ThemeResourceId";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `amplifyuibuilder:CodegenJobResourceAppId`.

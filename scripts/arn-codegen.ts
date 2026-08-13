@@ -165,18 +165,17 @@ export function generateBuilderCode(
 	resourceName: string,
 	parsed: ParsedArnTemplate,
 	_serviceName: string,
+	classPrefix?: string,
 ): string {
-	const methodName = toCamelCase(resourceName);
-	const params = generateBuilderParams(parsed);
+	let methodName = toCamelCase(resourceName);
+	const pascalName = toPascalCase(resourceName);
 
-	const requiredParams = params.filter((p) => p.required);
-	const optionalParams = params.filter((p) => !p.required);
-
-	// Build the interface fields
-	const interfaceFields = [
-		...requiredParams.map((p) => `\t\t/** ${p.description} */\n\t\treadonly ${p.name}: ${p.type};`),
-		...optionalParams.map((p) => `\t\t/** ${p.description} */\n\t\treadonly ${p.name}?: ${p.type};`),
-	].join("\n");
+	// Avoid jsii reserved member names
+	const JSII_RESERVED = new Set(["build", "toString", "hashCode", "equals"]);
+	if (JSII_RESERVED.has(methodName)) {
+		methodName = `${methodName}Resource`;
+	}
+	const prefix = classPrefix ?? "";
 
 	// Build the template literal for the ARN
 	let arnExpression = parsed.template
@@ -184,13 +183,11 @@ export function generateBuilderCode(
 		.replace("${Account}", "${props.account ?? \"*\"}");
 
 	if (parsed.isGlobal) {
-		// Global resources have empty region — keep it empty
 		arnExpression = arnExpression.replace("${Region}", "");
 	} else {
 		arnExpression = arnExpression.replace("${Region}", "${props.region ?? \"*\"}");
 	}
 
-	// Replace resource variables
 	for (const v of parsed.resourceVariables) {
 		arnExpression = arnExpression.replace(`\${${v.name}}`, `\${props.${v.paramName}}`);
 	}
@@ -198,11 +195,64 @@ export function generateBuilderCode(
 	return `\t/**
 \t * Builds an ARN for the ${resourceName} resource.
 \t */
-\tstatic ${methodName}(props: {
-${interfaceFields}
-\t}): string {
+\tstatic ${methodName}(props: ${prefix}${pascalName}ArnProps): string {
 \t\treturn \`${arnExpression}\`;
 \t}`;
+}
+
+/**
+ * Generates the named interface for ARN builder props.
+ */
+export function generatePropsInterface(
+	resourceName: string,
+	parsed: ParsedArnTemplate,
+	classPrefix?: string,
+): string {
+	const pascalName = toPascalCase(resourceName);
+	const prefix = classPrefix ?? "";
+	const interfaceName = `${prefix}${pascalName}ArnProps`;
+	const params = generateBuilderParams(parsed);
+
+	const fields = params.map((p) => {
+		const optional = p.required ? "" : "?";
+		return `\t/** ${p.description} */\n\treadonly ${p.name}${optional}: ${p.type};`;
+	});
+
+	return `/**
+ * Properties for building a ${resourceName} ARN.
+ */
+export interface ${interfaceName} {
+${fields.join("\n")}
+}`;
+}
+
+/**
+ * Generates the named interface for ARN parser result.
+ */
+export function generateParserResultInterface(
+	resourceName: string,
+	parsed: ParsedArnTemplate,
+	classPrefix?: string,
+): string {
+	const pascalName = toPascalCase(resourceName);
+	const prefix = classPrefix ?? "";
+	const interfaceName = `${prefix}${pascalName}ArnComponents`;
+
+	const fields = [
+		"\t/** AWS partition. */\n\treadonly partition: string;",
+		...(parsed.isGlobal ? [] : ["\t/** AWS region. */\n\treadonly region: string;"]),
+		"\t/** AWS account ID. */\n\treadonly account: string;",
+		...parsed.resourceVariables.map(
+			(v) => `\t/** The ${v.name} component. */\n\treadonly ${v.paramName}: string;`,
+		),
+	];
+
+	return `/**
+ * Parsed components of a ${resourceName} ARN.
+ */
+export interface ${interfaceName} {
+${fields.join("\n")}
+}`;
 }
 
 /**
@@ -227,23 +277,17 @@ export function generateValidatorCode(
 export function generateParserCode(
 	resourceName: string,
 	parsed: ParsedArnTemplate,
+	classPrefix?: string,
 ): string {
 	const pascalName = toPascalCase(resourceName);
+	const prefix = classPrefix ?? "";
 	const methodName = `parse${pascalName}Arn`;
-
-	// Build the return type fields
-	const returnFields = [
-		"partition: string",
-		...(parsed.isGlobal ? [] : ["region: string"]),
-		"account: string",
-		...parsed.resourceVariables.map((v) => `${v.paramName}: string`),
-	];
 
 	return `\t/**
 \t * Parses a ${resourceName} ARN into its components.
 \t * @throws Error if the ARN does not match the expected format.
 \t */
-\tstatic ${methodName}(arn: string): { ${returnFields.join("; ")} } {
+\tstatic ${methodName}(arn: string): ${prefix}${pascalName}ArnComponents {
 \t\tconst match = ${pascalName}ArnRegex.exec(arn);
 \t\tif (!match?.groups) {
 \t\t\tthrow new Error(\`Invalid ${resourceName} ARN: \${arn}\`);

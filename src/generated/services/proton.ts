@@ -13,460 +13,910 @@ export class ProtonActions {
 	static readonly SERVICE_PREFIX = "proton";
 
 	/** [Write] proton:AcceptEnvironmentAccountConnection */
-	static readonly ACCEPT_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly AcceptEnvironmentAccountConnection =
 		"proton:AcceptEnvironmentAccountConnection";
 	/** [Write] proton:CancelComponentDeployment */
-	static readonly CANCEL_COMPONENT_DEPLOYMENT =
+	static readonly CancelComponentDeployment =
 		"proton:CancelComponentDeployment";
 	/** [Write] proton:CancelEnvironmentDeployment */
-	static readonly CANCEL_ENVIRONMENT_DEPLOYMENT =
+	static readonly CancelEnvironmentDeployment =
 		"proton:CancelEnvironmentDeployment";
 	/** [Write] proton:CancelServiceInstanceDeployment */
-	static readonly CANCEL_SERVICE_INSTANCE_DEPLOYMENT =
+	static readonly CancelServiceInstanceDeployment =
 		"proton:CancelServiceInstanceDeployment";
 	/** [Write] proton:CancelServicePipelineDeployment */
-	static readonly CANCEL_SERVICE_PIPELINE_DEPLOYMENT =
+	static readonly CancelServicePipelineDeployment =
 		"proton:CancelServicePipelineDeployment";
 	/** [Write] proton:CreateComponent */
-	static readonly CREATE_COMPONENT = "proton:CreateComponent";
+	static readonly CreateComponent = "proton:CreateComponent";
 	/** [Write] proton:CreateEnvironment */
-	static readonly CREATE_ENVIRONMENT = "proton:CreateEnvironment";
+	static readonly CreateEnvironment = "proton:CreateEnvironment";
 	/** [Write] proton:CreateEnvironmentAccountConnection */
-	static readonly CREATE_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly CreateEnvironmentAccountConnection =
 		"proton:CreateEnvironmentAccountConnection";
 	/** [Write] proton:CreateEnvironmentTemplate */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE =
+	static readonly CreateEnvironmentTemplate =
 		"proton:CreateEnvironmentTemplate";
 	/** [Write] proton:CreateEnvironmentTemplateMajorVersion */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION =
+	static readonly CreateEnvironmentTemplateMajorVersion =
 		"proton:CreateEnvironmentTemplateMajorVersion";
 	/** [Write] proton:CreateEnvironmentTemplateMinorVersion */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_MINOR_VERSION =
+	static readonly CreateEnvironmentTemplateMinorVersion =
 		"proton:CreateEnvironmentTemplateMinorVersion";
 	/** [Write] proton:CreateEnvironmentTemplateVersion */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_VERSION =
+	static readonly CreateEnvironmentTemplateVersion =
 		"proton:CreateEnvironmentTemplateVersion";
 	/** [Write] proton:CreateRepository */
-	static readonly CREATE_REPOSITORY = "proton:CreateRepository";
+	static readonly CreateRepository = "proton:CreateRepository";
 	/** [Write] proton:CreateService */
-	static readonly CREATE_SERVICE = "proton:CreateService";
+	static readonly CreateService = "proton:CreateService";
 	/** [Write] proton:CreateServiceInstance */
-	static readonly CREATE_SERVICE_INSTANCE = "proton:CreateServiceInstance";
+	static readonly CreateServiceInstance = "proton:CreateServiceInstance";
 	/** [Write] proton:CreateServiceSyncConfig */
-	static readonly CREATE_SERVICE_SYNC_CONFIG = "proton:CreateServiceSyncConfig";
+	static readonly CreateServiceSyncConfig = "proton:CreateServiceSyncConfig";
 	/** [Write] proton:CreateServiceTemplate */
-	static readonly CREATE_SERVICE_TEMPLATE = "proton:CreateServiceTemplate";
+	static readonly CreateServiceTemplate = "proton:CreateServiceTemplate";
 	/** [Write] proton:CreateServiceTemplateMajorVersion */
-	static readonly CREATE_SERVICE_TEMPLATE_MAJOR_VERSION =
+	static readonly CreateServiceTemplateMajorVersion =
 		"proton:CreateServiceTemplateMajorVersion";
 	/** [Write] proton:CreateServiceTemplateMinorVersion */
-	static readonly CREATE_SERVICE_TEMPLATE_MINOR_VERSION =
+	static readonly CreateServiceTemplateMinorVersion =
 		"proton:CreateServiceTemplateMinorVersion";
 	/** [Write] proton:CreateServiceTemplateVersion */
-	static readonly CREATE_SERVICE_TEMPLATE_VERSION =
+	static readonly CreateServiceTemplateVersion =
 		"proton:CreateServiceTemplateVersion";
 	/** [Write] proton:CreateTemplateSyncConfig */
-	static readonly CREATE_TEMPLATE_SYNC_CONFIG =
-		"proton:CreateTemplateSyncConfig";
+	static readonly CreateTemplateSyncConfig = "proton:CreateTemplateSyncConfig";
 	/** [Write] proton:DeleteAccountRoles */
-	static readonly DELETE_ACCOUNT_ROLES = "proton:DeleteAccountRoles";
+	static readonly DeleteAccountRoles = "proton:DeleteAccountRoles";
 	/** [Write] proton:DeleteComponent */
-	static readonly DELETE_COMPONENT = "proton:DeleteComponent";
+	static readonly DeleteComponent = "proton:DeleteComponent";
 	/** [Write] proton:DeleteDeployment */
-	static readonly DELETE_DEPLOYMENT = "proton:DeleteDeployment";
+	static readonly DeleteDeployment = "proton:DeleteDeployment";
 	/** [Write] proton:DeleteEnvironment */
-	static readonly DELETE_ENVIRONMENT = "proton:DeleteEnvironment";
+	static readonly DeleteEnvironment = "proton:DeleteEnvironment";
 	/** [Write] proton:DeleteEnvironmentAccountConnection */
-	static readonly DELETE_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly DeleteEnvironmentAccountConnection =
 		"proton:DeleteEnvironmentAccountConnection";
 	/** [Write] proton:DeleteEnvironmentTemplate */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE =
+	static readonly DeleteEnvironmentTemplate =
 		"proton:DeleteEnvironmentTemplate";
 	/** [Write] proton:DeleteEnvironmentTemplateMajorVersion */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION =
+	static readonly DeleteEnvironmentTemplateMajorVersion =
 		"proton:DeleteEnvironmentTemplateMajorVersion";
 	/** [Write] proton:DeleteEnvironmentTemplateMinorVersion */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE_MINOR_VERSION =
+	static readonly DeleteEnvironmentTemplateMinorVersion =
 		"proton:DeleteEnvironmentTemplateMinorVersion";
 	/** [Write] proton:DeleteEnvironmentTemplateVersion */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE_VERSION =
+	static readonly DeleteEnvironmentTemplateVersion =
 		"proton:DeleteEnvironmentTemplateVersion";
 	/** [Write] proton:DeleteRepository */
-	static readonly DELETE_REPOSITORY = "proton:DeleteRepository";
+	static readonly DeleteRepository = "proton:DeleteRepository";
 	/** [Write] proton:DeleteService */
-	static readonly DELETE_SERVICE = "proton:DeleteService";
+	static readonly DeleteService = "proton:DeleteService";
 	/** [Write] proton:DeleteServiceSyncConfig */
-	static readonly DELETE_SERVICE_SYNC_CONFIG = "proton:DeleteServiceSyncConfig";
+	static readonly DeleteServiceSyncConfig = "proton:DeleteServiceSyncConfig";
 	/** [Write] proton:DeleteServiceTemplate */
-	static readonly DELETE_SERVICE_TEMPLATE = "proton:DeleteServiceTemplate";
+	static readonly DeleteServiceTemplate = "proton:DeleteServiceTemplate";
 	/** [Write] proton:DeleteServiceTemplateMajorVersion */
-	static readonly DELETE_SERVICE_TEMPLATE_MAJOR_VERSION =
+	static readonly DeleteServiceTemplateMajorVersion =
 		"proton:DeleteServiceTemplateMajorVersion";
 	/** [Write] proton:DeleteServiceTemplateMinorVersion */
-	static readonly DELETE_SERVICE_TEMPLATE_MINOR_VERSION =
+	static readonly DeleteServiceTemplateMinorVersion =
 		"proton:DeleteServiceTemplateMinorVersion";
 	/** [Write] proton:DeleteServiceTemplateVersion */
-	static readonly DELETE_SERVICE_TEMPLATE_VERSION =
+	static readonly DeleteServiceTemplateVersion =
 		"proton:DeleteServiceTemplateVersion";
 	/** [Write] proton:DeleteTemplateSyncConfig */
-	static readonly DELETE_TEMPLATE_SYNC_CONFIG =
-		"proton:DeleteTemplateSyncConfig";
+	static readonly DeleteTemplateSyncConfig = "proton:DeleteTemplateSyncConfig";
 	/** [Read] proton:GetAccountRoles */
-	static readonly GET_ACCOUNT_ROLES = "proton:GetAccountRoles";
+	static readonly actionGetAccountRoles = "proton:GetAccountRoles";
 	/** [Read] proton:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "proton:GetAccountSettings";
+	static readonly actionGetAccountSettings = "proton:GetAccountSettings";
 	/** [Read] proton:GetComponent */
-	static readonly GET_COMPONENT = "proton:GetComponent";
+	static readonly actionGetComponent = "proton:GetComponent";
 	/** [Read] proton:GetDeployment */
-	static readonly GET_DEPLOYMENT = "proton:GetDeployment";
+	static readonly actionGetDeployment = "proton:GetDeployment";
 	/** [Read] proton:GetEnvironment */
-	static readonly GET_ENVIRONMENT = "proton:GetEnvironment";
+	static readonly actionGetEnvironment = "proton:GetEnvironment";
 	/** [Read] proton:GetEnvironmentAccountConnection */
-	static readonly GET_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly actionGetEnvironmentAccountConnection =
 		"proton:GetEnvironmentAccountConnection";
 	/** [Read] proton:GetEnvironmentTemplate */
-	static readonly GET_ENVIRONMENT_TEMPLATE = "proton:GetEnvironmentTemplate";
+	static readonly actionGetEnvironmentTemplate =
+		"proton:GetEnvironmentTemplate";
 	/** [Read] proton:GetEnvironmentTemplateMajorVersion */
-	static readonly GET_ENVIRONMENT_TEMPLATE_MAJOR_VERSION =
+	static readonly actionGetEnvironmentTemplateMajorVersion =
 		"proton:GetEnvironmentTemplateMajorVersion";
 	/** [Read] proton:GetEnvironmentTemplateMinorVersion */
-	static readonly GET_ENVIRONMENT_TEMPLATE_MINOR_VERSION =
+	static readonly actionGetEnvironmentTemplateMinorVersion =
 		"proton:GetEnvironmentTemplateMinorVersion";
 	/** [Read] proton:GetEnvironmentTemplateVersion */
-	static readonly GET_ENVIRONMENT_TEMPLATE_VERSION =
+	static readonly actionGetEnvironmentTemplateVersion =
 		"proton:GetEnvironmentTemplateVersion";
 	/** [Read] proton:GetRepository */
-	static readonly GET_REPOSITORY = "proton:GetRepository";
+	static readonly actionGetRepository = "proton:GetRepository";
 	/** [Read] proton:GetRepositorySyncStatus */
-	static readonly GET_REPOSITORY_SYNC_STATUS = "proton:GetRepositorySyncStatus";
+	static readonly actionGetRepositorySyncStatus =
+		"proton:GetRepositorySyncStatus";
 	/** [Read] proton:GetResourceTemplateVersionStatusCounts */
-	static readonly GET_RESOURCE_TEMPLATE_VERSION_STATUS_COUNTS =
+	static readonly actionGetResourceTemplateVersionStatusCounts =
 		"proton:GetResourceTemplateVersionStatusCounts";
 	/** [Read] proton:GetResourcesSummary */
-	static readonly GET_RESOURCES_SUMMARY = "proton:GetResourcesSummary";
+	static readonly actionGetResourcesSummary = "proton:GetResourcesSummary";
 	/** [Read] proton:GetService */
-	static readonly GET_SERVICE = "proton:GetService";
+	static readonly actionGetService = "proton:GetService";
 	/** [Read] proton:GetServiceInstance */
-	static readonly GET_SERVICE_INSTANCE = "proton:GetServiceInstance";
+	static readonly actionGetServiceInstance = "proton:GetServiceInstance";
 	/** [Read] proton:GetServiceInstanceSyncStatus */
-	static readonly GET_SERVICE_INSTANCE_SYNC_STATUS =
+	static readonly actionGetServiceInstanceSyncStatus =
 		"proton:GetServiceInstanceSyncStatus";
 	/** [Read] proton:GetServiceSyncBlockerSummary */
-	static readonly GET_SERVICE_SYNC_BLOCKER_SUMMARY =
+	static readonly actionGetServiceSyncBlockerSummary =
 		"proton:GetServiceSyncBlockerSummary";
 	/** [Read] proton:GetServiceSyncConfig */
-	static readonly GET_SERVICE_SYNC_CONFIG = "proton:GetServiceSyncConfig";
+	static readonly actionGetServiceSyncConfig = "proton:GetServiceSyncConfig";
 	/** [Read] proton:GetServiceTemplate */
-	static readonly GET_SERVICE_TEMPLATE = "proton:GetServiceTemplate";
+	static readonly actionGetServiceTemplate = "proton:GetServiceTemplate";
 	/** [Read] proton:GetServiceTemplateMajorVersion */
-	static readonly GET_SERVICE_TEMPLATE_MAJOR_VERSION =
+	static readonly actionGetServiceTemplateMajorVersion =
 		"proton:GetServiceTemplateMajorVersion";
 	/** [Read] proton:GetServiceTemplateMinorVersion */
-	static readonly GET_SERVICE_TEMPLATE_MINOR_VERSION =
+	static readonly actionGetServiceTemplateMinorVersion =
 		"proton:GetServiceTemplateMinorVersion";
 	/** [Read] proton:GetServiceTemplateVersion */
-	static readonly GET_SERVICE_TEMPLATE_VERSION =
+	static readonly actionGetServiceTemplateVersion =
 		"proton:GetServiceTemplateVersion";
 	/** [Read] proton:GetTemplateSyncConfig */
-	static readonly GET_TEMPLATE_SYNC_CONFIG = "proton:GetTemplateSyncConfig";
+	static readonly actionGetTemplateSyncConfig = "proton:GetTemplateSyncConfig";
 	/** [Read] proton:GetTemplateSyncStatus */
-	static readonly GET_TEMPLATE_SYNC_STATUS = "proton:GetTemplateSyncStatus";
+	static readonly actionGetTemplateSyncStatus = "proton:GetTemplateSyncStatus";
 	/** [List] proton:ListComponentOutputs */
-	static readonly LIST_COMPONENT_OUTPUTS = "proton:ListComponentOutputs";
+	static readonly ListComponentOutputs = "proton:ListComponentOutputs";
 	/** [List] proton:ListComponentProvisionedResources */
-	static readonly LIST_COMPONENT_PROVISIONED_RESOURCES =
+	static readonly ListComponentProvisionedResources =
 		"proton:ListComponentProvisionedResources";
 	/** [List] proton:ListComponents */
-	static readonly LIST_COMPONENTS = "proton:ListComponents";
+	static readonly ListComponents = "proton:ListComponents";
 	/** [List] proton:ListDeployments */
-	static readonly LIST_DEPLOYMENTS = "proton:ListDeployments";
+	static readonly ListDeployments = "proton:ListDeployments";
 	/** [List] proton:ListEnvironmentAccountConnections */
-	static readonly LIST_ENVIRONMENT_ACCOUNT_CONNECTIONS =
+	static readonly ListEnvironmentAccountConnections =
 		"proton:ListEnvironmentAccountConnections";
 	/** [List] proton:ListEnvironmentOutputs */
-	static readonly LIST_ENVIRONMENT_OUTPUTS = "proton:ListEnvironmentOutputs";
+	static readonly ListEnvironmentOutputs = "proton:ListEnvironmentOutputs";
 	/** [List] proton:ListEnvironmentProvisionedResources */
-	static readonly LIST_ENVIRONMENT_PROVISIONED_RESOURCES =
+	static readonly ListEnvironmentProvisionedResources =
 		"proton:ListEnvironmentProvisionedResources";
 	/** [List] proton:ListEnvironmentTemplateMajorVersions */
-	static readonly LIST_ENVIRONMENT_TEMPLATE_MAJOR_VERSIONS =
+	static readonly ListEnvironmentTemplateMajorVersions =
 		"proton:ListEnvironmentTemplateMajorVersions";
 	/** [List] proton:ListEnvironmentTemplateMinorVersions */
-	static readonly LIST_ENVIRONMENT_TEMPLATE_MINOR_VERSIONS =
+	static readonly ListEnvironmentTemplateMinorVersions =
 		"proton:ListEnvironmentTemplateMinorVersions";
 	/** [List] proton:ListEnvironmentTemplateVersions */
-	static readonly LIST_ENVIRONMENT_TEMPLATE_VERSIONS =
+	static readonly ListEnvironmentTemplateVersions =
 		"proton:ListEnvironmentTemplateVersions";
 	/** [List] proton:ListEnvironmentTemplates */
-	static readonly LIST_ENVIRONMENT_TEMPLATES =
-		"proton:ListEnvironmentTemplates";
+	static readonly ListEnvironmentTemplates = "proton:ListEnvironmentTemplates";
 	/** [List] proton:ListEnvironments */
-	static readonly LIST_ENVIRONMENTS = "proton:ListEnvironments";
+	static readonly ListEnvironments = "proton:ListEnvironments";
 	/** [List] proton:ListRepositories */
-	static readonly LIST_REPOSITORIES = "proton:ListRepositories";
+	static readonly ListRepositories = "proton:ListRepositories";
 	/** [List] proton:ListRepositorySyncDefinitions */
-	static readonly LIST_REPOSITORY_SYNC_DEFINITIONS =
+	static readonly ListRepositorySyncDefinitions =
 		"proton:ListRepositorySyncDefinitions";
 	/** [List] proton:ListServiceInstanceOutputs */
-	static readonly LIST_SERVICE_INSTANCE_OUTPUTS =
+	static readonly ListServiceInstanceOutputs =
 		"proton:ListServiceInstanceOutputs";
 	/** [List] proton:ListServiceInstanceProvisionedResources */
-	static readonly LIST_SERVICE_INSTANCE_PROVISIONED_RESOURCES =
+	static readonly ListServiceInstanceProvisionedResources =
 		"proton:ListServiceInstanceProvisionedResources";
 	/** [List] proton:ListServiceInstances */
-	static readonly LIST_SERVICE_INSTANCES = "proton:ListServiceInstances";
+	static readonly ListServiceInstances = "proton:ListServiceInstances";
 	/** [List] proton:ListServicePipelineOutputs */
-	static readonly LIST_SERVICE_PIPELINE_OUTPUTS =
+	static readonly ListServicePipelineOutputs =
 		"proton:ListServicePipelineOutputs";
 	/** [List] proton:ListServicePipelineProvisionedResources */
-	static readonly LIST_SERVICE_PIPELINE_PROVISIONED_RESOURCES =
+	static readonly ListServicePipelineProvisionedResources =
 		"proton:ListServicePipelineProvisionedResources";
 	/** [List] proton:ListServiceTemplateMajorVersions */
-	static readonly LIST_SERVICE_TEMPLATE_MAJOR_VERSIONS =
+	static readonly ListServiceTemplateMajorVersions =
 		"proton:ListServiceTemplateMajorVersions";
 	/** [List] proton:ListServiceTemplateMinorVersions */
-	static readonly LIST_SERVICE_TEMPLATE_MINOR_VERSIONS =
+	static readonly ListServiceTemplateMinorVersions =
 		"proton:ListServiceTemplateMinorVersions";
 	/** [List] proton:ListServiceTemplateVersions */
-	static readonly LIST_SERVICE_TEMPLATE_VERSIONS =
+	static readonly ListServiceTemplateVersions =
 		"proton:ListServiceTemplateVersions";
 	/** [List] proton:ListServiceTemplates */
-	static readonly LIST_SERVICE_TEMPLATES = "proton:ListServiceTemplates";
+	static readonly ListServiceTemplates = "proton:ListServiceTemplates";
 	/** [List] proton:ListServices */
-	static readonly LIST_SERVICES = "proton:ListServices";
+	static readonly ListServices = "proton:ListServices";
 	/** [Read] proton:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "proton:ListTagsForResource";
+	static readonly ListTagsForResource = "proton:ListTagsForResource";
 	/** [Write] proton:NotifyResourceDeploymentStatusChange */
-	static readonly NOTIFY_RESOURCE_DEPLOYMENT_STATUS_CHANGE =
+	static readonly NotifyResourceDeploymentStatusChange =
 		"proton:NotifyResourceDeploymentStatusChange";
 	/** [Write] proton:RejectEnvironmentAccountConnection */
-	static readonly REJECT_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly RejectEnvironmentAccountConnection =
 		"proton:RejectEnvironmentAccountConnection";
 	/** [Tagging] proton:TagResource */
-	static readonly TAG_RESOURCE = "proton:TagResource";
+	static readonly TagResource = "proton:TagResource";
 	/** [Tagging] proton:UntagResource */
-	static readonly UNTAG_RESOURCE = "proton:UntagResource";
+	static readonly UntagResource = "proton:UntagResource";
 	/** [Write] proton:UpdateAccountRoles */
-	static readonly UPDATE_ACCOUNT_ROLES = "proton:UpdateAccountRoles";
+	static readonly UpdateAccountRoles = "proton:UpdateAccountRoles";
 	/** [Write] proton:UpdateAccountSettings */
-	static readonly UPDATE_ACCOUNT_SETTINGS = "proton:UpdateAccountSettings";
+	static readonly UpdateAccountSettings = "proton:UpdateAccountSettings";
 	/** [Write] proton:UpdateComponent */
-	static readonly UPDATE_COMPONENT = "proton:UpdateComponent";
+	static readonly UpdateComponent = "proton:UpdateComponent";
 	/** [Write] proton:UpdateEnvironment */
-	static readonly UPDATE_ENVIRONMENT = "proton:UpdateEnvironment";
+	static readonly UpdateEnvironment = "proton:UpdateEnvironment";
 	/** [Write] proton:UpdateEnvironmentAccountConnection */
-	static readonly UPDATE_ENVIRONMENT_ACCOUNT_CONNECTION =
+	static readonly UpdateEnvironmentAccountConnection =
 		"proton:UpdateEnvironmentAccountConnection";
 	/** [Write] proton:UpdateEnvironmentTemplate */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE =
+	static readonly UpdateEnvironmentTemplate =
 		"proton:UpdateEnvironmentTemplate";
 	/** [Write] proton:UpdateEnvironmentTemplateMajorVersion */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION =
+	static readonly UpdateEnvironmentTemplateMajorVersion =
 		"proton:UpdateEnvironmentTemplateMajorVersion";
 	/** [Write] proton:UpdateEnvironmentTemplateMinorVersion */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE_MINOR_VERSION =
+	static readonly UpdateEnvironmentTemplateMinorVersion =
 		"proton:UpdateEnvironmentTemplateMinorVersion";
 	/** [Write] proton:UpdateEnvironmentTemplateVersion */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE_VERSION =
+	static readonly UpdateEnvironmentTemplateVersion =
 		"proton:UpdateEnvironmentTemplateVersion";
 	/** [Write] proton:UpdateService */
-	static readonly UPDATE_SERVICE = "proton:UpdateService";
+	static readonly UpdateService = "proton:UpdateService";
 	/** [Write] proton:UpdateServiceInstance */
-	static readonly UPDATE_SERVICE_INSTANCE = "proton:UpdateServiceInstance";
+	static readonly UpdateServiceInstance = "proton:UpdateServiceInstance";
 	/** [Write] proton:UpdateServicePipeline */
-	static readonly UPDATE_SERVICE_PIPELINE = "proton:UpdateServicePipeline";
+	static readonly UpdateServicePipeline = "proton:UpdateServicePipeline";
 	/** [Write] proton:UpdateServiceSyncBlocker */
-	static readonly UPDATE_SERVICE_SYNC_BLOCKER =
-		"proton:UpdateServiceSyncBlocker";
+	static readonly UpdateServiceSyncBlocker = "proton:UpdateServiceSyncBlocker";
 	/** [Write] proton:UpdateServiceSyncConfig */
-	static readonly UPDATE_SERVICE_SYNC_CONFIG = "proton:UpdateServiceSyncConfig";
+	static readonly UpdateServiceSyncConfig = "proton:UpdateServiceSyncConfig";
 	/** [Write] proton:UpdateServiceTemplate */
-	static readonly UPDATE_SERVICE_TEMPLATE = "proton:UpdateServiceTemplate";
+	static readonly UpdateServiceTemplate = "proton:UpdateServiceTemplate";
 	/** [Write] proton:UpdateServiceTemplateMajorVersion */
-	static readonly UPDATE_SERVICE_TEMPLATE_MAJOR_VERSION =
+	static readonly UpdateServiceTemplateMajorVersion =
 		"proton:UpdateServiceTemplateMajorVersion";
 	/** [Write] proton:UpdateServiceTemplateMinorVersion */
-	static readonly UPDATE_SERVICE_TEMPLATE_MINOR_VERSION =
+	static readonly UpdateServiceTemplateMinorVersion =
 		"proton:UpdateServiceTemplateMinorVersion";
 	/** [Write] proton:UpdateServiceTemplateVersion */
-	static readonly UPDATE_SERVICE_TEMPLATE_VERSION =
+	static readonly UpdateServiceTemplateVersion =
 		"proton:UpdateServiceTemplateVersion";
 	/** [Write] proton:UpdateTemplateSyncConfig */
-	static readonly UPDATE_TEMPLATE_SYNC_CONFIG =
-		"proton:UpdateTemplateSyncConfig";
+	static readonly UpdateTemplateSyncConfig = "proton:UpdateTemplateSyncConfig";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ProtonActions.GET_ACCOUNT_ROLES,
-		ProtonActions.GET_ACCOUNT_SETTINGS,
-		ProtonActions.GET_COMPONENT,
-		ProtonActions.GET_DEPLOYMENT,
-		ProtonActions.GET_ENVIRONMENT,
-		ProtonActions.GET_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.GET_ENVIRONMENT_TEMPLATE,
-		ProtonActions.GET_ENVIRONMENT_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.GET_ENVIRONMENT_TEMPLATE_MINOR_VERSION,
-		ProtonActions.GET_ENVIRONMENT_TEMPLATE_VERSION,
-		ProtonActions.GET_REPOSITORY,
-		ProtonActions.GET_REPOSITORY_SYNC_STATUS,
-		ProtonActions.GET_RESOURCE_TEMPLATE_VERSION_STATUS_COUNTS,
-		ProtonActions.GET_RESOURCES_SUMMARY,
-		ProtonActions.GET_SERVICE,
-		ProtonActions.GET_SERVICE_INSTANCE,
-		ProtonActions.GET_SERVICE_INSTANCE_SYNC_STATUS,
-		ProtonActions.GET_SERVICE_SYNC_BLOCKER_SUMMARY,
-		ProtonActions.GET_SERVICE_SYNC_CONFIG,
-		ProtonActions.GET_SERVICE_TEMPLATE,
-		ProtonActions.GET_SERVICE_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.GET_SERVICE_TEMPLATE_MINOR_VERSION,
-		ProtonActions.GET_SERVICE_TEMPLATE_VERSION,
-		ProtonActions.GET_TEMPLATE_SYNC_CONFIG,
-		ProtonActions.GET_TEMPLATE_SYNC_STATUS,
-		ProtonActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ProtonActions.actionGetAccountRoles,
+		ProtonActions.actionGetAccountSettings,
+		ProtonActions.actionGetComponent,
+		ProtonActions.actionGetDeployment,
+		ProtonActions.actionGetEnvironment,
+		ProtonActions.actionGetEnvironmentAccountConnection,
+		ProtonActions.actionGetEnvironmentTemplate,
+		ProtonActions.actionGetEnvironmentTemplateMajorVersion,
+		ProtonActions.actionGetEnvironmentTemplateMinorVersion,
+		ProtonActions.actionGetEnvironmentTemplateVersion,
+		ProtonActions.actionGetRepository,
+		ProtonActions.actionGetRepositorySyncStatus,
+		ProtonActions.actionGetResourceTemplateVersionStatusCounts,
+		ProtonActions.actionGetResourcesSummary,
+		ProtonActions.actionGetService,
+		ProtonActions.actionGetServiceInstance,
+		ProtonActions.actionGetServiceInstanceSyncStatus,
+		ProtonActions.actionGetServiceSyncBlockerSummary,
+		ProtonActions.actionGetServiceSyncConfig,
+		ProtonActions.actionGetServiceTemplate,
+		ProtonActions.actionGetServiceTemplateMajorVersion,
+		ProtonActions.actionGetServiceTemplateMinorVersion,
+		ProtonActions.actionGetServiceTemplateVersion,
+		ProtonActions.actionGetTemplateSyncConfig,
+		ProtonActions.actionGetTemplateSyncStatus,
+		ProtonActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ProtonActions.ACCEPT_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.CANCEL_COMPONENT_DEPLOYMENT,
-		ProtonActions.CANCEL_ENVIRONMENT_DEPLOYMENT,
-		ProtonActions.CANCEL_SERVICE_INSTANCE_DEPLOYMENT,
-		ProtonActions.CANCEL_SERVICE_PIPELINE_DEPLOYMENT,
-		ProtonActions.CREATE_COMPONENT,
-		ProtonActions.CREATE_ENVIRONMENT,
-		ProtonActions.CREATE_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.CREATE_ENVIRONMENT_TEMPLATE,
-		ProtonActions.CREATE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.CREATE_ENVIRONMENT_TEMPLATE_MINOR_VERSION,
-		ProtonActions.CREATE_ENVIRONMENT_TEMPLATE_VERSION,
-		ProtonActions.CREATE_REPOSITORY,
-		ProtonActions.CREATE_SERVICE,
-		ProtonActions.CREATE_SERVICE_INSTANCE,
-		ProtonActions.CREATE_SERVICE_SYNC_CONFIG,
-		ProtonActions.CREATE_SERVICE_TEMPLATE,
-		ProtonActions.CREATE_SERVICE_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.CREATE_SERVICE_TEMPLATE_MINOR_VERSION,
-		ProtonActions.CREATE_SERVICE_TEMPLATE_VERSION,
-		ProtonActions.CREATE_TEMPLATE_SYNC_CONFIG,
-		ProtonActions.DELETE_ACCOUNT_ROLES,
-		ProtonActions.DELETE_COMPONENT,
-		ProtonActions.DELETE_DEPLOYMENT,
-		ProtonActions.DELETE_ENVIRONMENT,
-		ProtonActions.DELETE_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.DELETE_ENVIRONMENT_TEMPLATE,
-		ProtonActions.DELETE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.DELETE_ENVIRONMENT_TEMPLATE_MINOR_VERSION,
-		ProtonActions.DELETE_ENVIRONMENT_TEMPLATE_VERSION,
-		ProtonActions.DELETE_REPOSITORY,
-		ProtonActions.DELETE_SERVICE,
-		ProtonActions.DELETE_SERVICE_SYNC_CONFIG,
-		ProtonActions.DELETE_SERVICE_TEMPLATE,
-		ProtonActions.DELETE_SERVICE_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.DELETE_SERVICE_TEMPLATE_MINOR_VERSION,
-		ProtonActions.DELETE_SERVICE_TEMPLATE_VERSION,
-		ProtonActions.DELETE_TEMPLATE_SYNC_CONFIG,
-		ProtonActions.NOTIFY_RESOURCE_DEPLOYMENT_STATUS_CHANGE,
-		ProtonActions.REJECT_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.UPDATE_ACCOUNT_ROLES,
-		ProtonActions.UPDATE_ACCOUNT_SETTINGS,
-		ProtonActions.UPDATE_COMPONENT,
-		ProtonActions.UPDATE_ENVIRONMENT,
-		ProtonActions.UPDATE_ENVIRONMENT_ACCOUNT_CONNECTION,
-		ProtonActions.UPDATE_ENVIRONMENT_TEMPLATE,
-		ProtonActions.UPDATE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.UPDATE_ENVIRONMENT_TEMPLATE_MINOR_VERSION,
-		ProtonActions.UPDATE_ENVIRONMENT_TEMPLATE_VERSION,
-		ProtonActions.UPDATE_SERVICE,
-		ProtonActions.UPDATE_SERVICE_INSTANCE,
-		ProtonActions.UPDATE_SERVICE_PIPELINE,
-		ProtonActions.UPDATE_SERVICE_SYNC_BLOCKER,
-		ProtonActions.UPDATE_SERVICE_SYNC_CONFIG,
-		ProtonActions.UPDATE_SERVICE_TEMPLATE,
-		ProtonActions.UPDATE_SERVICE_TEMPLATE_MAJOR_VERSION,
-		ProtonActions.UPDATE_SERVICE_TEMPLATE_MINOR_VERSION,
-		ProtonActions.UPDATE_SERVICE_TEMPLATE_VERSION,
-		ProtonActions.UPDATE_TEMPLATE_SYNC_CONFIG,
+	static readonly AllWriteActions: string[] = [
+		ProtonActions.AcceptEnvironmentAccountConnection,
+		ProtonActions.CancelComponentDeployment,
+		ProtonActions.CancelEnvironmentDeployment,
+		ProtonActions.CancelServiceInstanceDeployment,
+		ProtonActions.CancelServicePipelineDeployment,
+		ProtonActions.CreateComponent,
+		ProtonActions.CreateEnvironment,
+		ProtonActions.CreateEnvironmentAccountConnection,
+		ProtonActions.CreateEnvironmentTemplate,
+		ProtonActions.CreateEnvironmentTemplateMajorVersion,
+		ProtonActions.CreateEnvironmentTemplateMinorVersion,
+		ProtonActions.CreateEnvironmentTemplateVersion,
+		ProtonActions.CreateRepository,
+		ProtonActions.CreateService,
+		ProtonActions.CreateServiceInstance,
+		ProtonActions.CreateServiceSyncConfig,
+		ProtonActions.CreateServiceTemplate,
+		ProtonActions.CreateServiceTemplateMajorVersion,
+		ProtonActions.CreateServiceTemplateMinorVersion,
+		ProtonActions.CreateServiceTemplateVersion,
+		ProtonActions.CreateTemplateSyncConfig,
+		ProtonActions.DeleteAccountRoles,
+		ProtonActions.DeleteComponent,
+		ProtonActions.DeleteDeployment,
+		ProtonActions.DeleteEnvironment,
+		ProtonActions.DeleteEnvironmentAccountConnection,
+		ProtonActions.DeleteEnvironmentTemplate,
+		ProtonActions.DeleteEnvironmentTemplateMajorVersion,
+		ProtonActions.DeleteEnvironmentTemplateMinorVersion,
+		ProtonActions.DeleteEnvironmentTemplateVersion,
+		ProtonActions.DeleteRepository,
+		ProtonActions.DeleteService,
+		ProtonActions.DeleteServiceSyncConfig,
+		ProtonActions.DeleteServiceTemplate,
+		ProtonActions.DeleteServiceTemplateMajorVersion,
+		ProtonActions.DeleteServiceTemplateMinorVersion,
+		ProtonActions.DeleteServiceTemplateVersion,
+		ProtonActions.DeleteTemplateSyncConfig,
+		ProtonActions.NotifyResourceDeploymentStatusChange,
+		ProtonActions.RejectEnvironmentAccountConnection,
+		ProtonActions.UpdateAccountRoles,
+		ProtonActions.UpdateAccountSettings,
+		ProtonActions.UpdateComponent,
+		ProtonActions.UpdateEnvironment,
+		ProtonActions.UpdateEnvironmentAccountConnection,
+		ProtonActions.UpdateEnvironmentTemplate,
+		ProtonActions.UpdateEnvironmentTemplateMajorVersion,
+		ProtonActions.UpdateEnvironmentTemplateMinorVersion,
+		ProtonActions.UpdateEnvironmentTemplateVersion,
+		ProtonActions.UpdateService,
+		ProtonActions.UpdateServiceInstance,
+		ProtonActions.UpdateServicePipeline,
+		ProtonActions.UpdateServiceSyncBlocker,
+		ProtonActions.UpdateServiceSyncConfig,
+		ProtonActions.UpdateServiceTemplate,
+		ProtonActions.UpdateServiceTemplateMajorVersion,
+		ProtonActions.UpdateServiceTemplateMinorVersion,
+		ProtonActions.UpdateServiceTemplateVersion,
+		ProtonActions.UpdateTemplateSyncConfig,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ProtonActions.LIST_COMPONENT_OUTPUTS,
-		ProtonActions.LIST_COMPONENT_PROVISIONED_RESOURCES,
-		ProtonActions.LIST_COMPONENTS,
-		ProtonActions.LIST_DEPLOYMENTS,
-		ProtonActions.LIST_ENVIRONMENT_ACCOUNT_CONNECTIONS,
-		ProtonActions.LIST_ENVIRONMENT_OUTPUTS,
-		ProtonActions.LIST_ENVIRONMENT_PROVISIONED_RESOURCES,
-		ProtonActions.LIST_ENVIRONMENT_TEMPLATE_MAJOR_VERSIONS,
-		ProtonActions.LIST_ENVIRONMENT_TEMPLATE_MINOR_VERSIONS,
-		ProtonActions.LIST_ENVIRONMENT_TEMPLATE_VERSIONS,
-		ProtonActions.LIST_ENVIRONMENT_TEMPLATES,
-		ProtonActions.LIST_ENVIRONMENTS,
-		ProtonActions.LIST_REPOSITORIES,
-		ProtonActions.LIST_REPOSITORY_SYNC_DEFINITIONS,
-		ProtonActions.LIST_SERVICE_INSTANCE_OUTPUTS,
-		ProtonActions.LIST_SERVICE_INSTANCE_PROVISIONED_RESOURCES,
-		ProtonActions.LIST_SERVICE_INSTANCES,
-		ProtonActions.LIST_SERVICE_PIPELINE_OUTPUTS,
-		ProtonActions.LIST_SERVICE_PIPELINE_PROVISIONED_RESOURCES,
-		ProtonActions.LIST_SERVICE_TEMPLATE_MAJOR_VERSIONS,
-		ProtonActions.LIST_SERVICE_TEMPLATE_MINOR_VERSIONS,
-		ProtonActions.LIST_SERVICE_TEMPLATE_VERSIONS,
-		ProtonActions.LIST_SERVICE_TEMPLATES,
-		ProtonActions.LIST_SERVICES,
+	static readonly AllListActions: string[] = [
+		ProtonActions.ListComponentOutputs,
+		ProtonActions.ListComponentProvisionedResources,
+		ProtonActions.ListComponents,
+		ProtonActions.ListDeployments,
+		ProtonActions.ListEnvironmentAccountConnections,
+		ProtonActions.ListEnvironmentOutputs,
+		ProtonActions.ListEnvironmentProvisionedResources,
+		ProtonActions.ListEnvironmentTemplateMajorVersions,
+		ProtonActions.ListEnvironmentTemplateMinorVersions,
+		ProtonActions.ListEnvironmentTemplateVersions,
+		ProtonActions.ListEnvironmentTemplates,
+		ProtonActions.ListEnvironments,
+		ProtonActions.ListRepositories,
+		ProtonActions.ListRepositorySyncDefinitions,
+		ProtonActions.ListServiceInstanceOutputs,
+		ProtonActions.ListServiceInstanceProvisionedResources,
+		ProtonActions.ListServiceInstances,
+		ProtonActions.ListServicePipelineOutputs,
+		ProtonActions.ListServicePipelineProvisionedResources,
+		ProtonActions.ListServiceTemplateMajorVersions,
+		ProtonActions.ListServiceTemplateMinorVersions,
+		ProtonActions.ListServiceTemplateVersions,
+		ProtonActions.ListServiceTemplates,
+		ProtonActions.ListServices,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ProtonActions.TAG_RESOURCE,
-		ProtonActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ProtonActions.TagResource,
+		ProtonActions.UntagResource,
 	];
 }
 
-const ComponentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):component/(?<id>[^:/?]+)$",
-);
-const DeploymentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):deployment/(?<id>[^:/?]+)$",
-);
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment/(?<name>[^:/?]+)$",
-);
-const EnvironmentAccountConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-account-connection/(?<id>[^:/?]+)$",
-);
-const EnvironmentTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template/(?<name>[^:/?]+)$",
-);
-const EnvironmentTemplateMajorVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)$",
-);
-const EnvironmentTemplateMinorVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)\\.(?<minorVersionId>[^:/?]+)$",
-);
-const EnvironmentTemplateVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template/(?<templateName>[^:/?]+):(?<majorVersion>[^:/?]+)\\.(?<minorVersion>[^:/?]+)$",
-);
-const RepositoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):repository/(?<provider>[^:/?]+):(?<name>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service/(?<name>[^:/?]+)$",
-);
-const ServiceInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceName>[^:/?]+)/service-instance/(?<name>[^:/?]+)$",
-);
-const ServiceTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template/(?<name>[^:/?]+)$",
-);
-const ServiceTemplateMajorVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)$",
-);
-const ServiceTemplateMinorVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)\\.(?<minorVersionId>[^:/?]+)$",
-);
-const ServiceTemplateVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template/(?<templateName>[^:/?]+):(?<majorVersion>[^:/?]+)\\.(?<minorVersion>[^:/?]+)$",
-);
+/**
+ * Properties for building a component ARN.
+ */
+export interface ProtonComponentArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a component ARN.
+ */
+export interface ProtonComponentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a deployment ARN.
+ */
+export interface ProtonDeploymentArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deployment ARN.
+ */
+export interface ProtonDeploymentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a environment ARN.
+ */
+export interface ProtonEnvironmentArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface ProtonEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a environment-account-connection ARN.
+ */
+export interface ProtonEnvironmentAccountConnectionArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment-account-connection ARN.
+ */
+export interface ProtonEnvironmentAccountConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a environment-template ARN.
+ */
+export interface ProtonEnvironmentTemplateArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment-template ARN.
+ */
+export interface ProtonEnvironmentTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a environment-template-major-version ARN.
+ */
+export interface ProtonEnvironmentTemplateMajorVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersionId component of the ARN. */
+	readonly majorVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment-template-major-version ARN.
+ */
+export interface ProtonEnvironmentTemplateMajorVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersionId component. */
+	readonly majorVersionId: string;
+}
+
+/**
+ * Properties for building a environment-template-minor-version ARN.
+ */
+export interface ProtonEnvironmentTemplateMinorVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersionId component of the ARN. */
+	readonly majorVersionId: string;
+	/** The MinorVersionId component of the ARN. */
+	readonly minorVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment-template-minor-version ARN.
+ */
+export interface ProtonEnvironmentTemplateMinorVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersionId component. */
+	readonly majorVersionId: string;
+	/** The MinorVersionId component. */
+	readonly minorVersionId: string;
+}
+
+/**
+ * Properties for building a environment-template-version ARN.
+ */
+export interface ProtonEnvironmentTemplateVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersion component of the ARN. */
+	readonly majorVersion: string;
+	/** The MinorVersion component of the ARN. */
+	readonly minorVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment-template-version ARN.
+ */
+export interface ProtonEnvironmentTemplateVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersion component. */
+	readonly majorVersion: string;
+	/** The MinorVersion component. */
+	readonly minorVersion: string;
+}
+
+/**
+ * Properties for building a repository ARN.
+ */
+export interface ProtonRepositoryArnProps {
+	/** The Provider component of the ARN. */
+	readonly provider: string;
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a repository ARN.
+ */
+export interface ProtonRepositoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Provider component. */
+	readonly provider: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface ProtonServiceArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface ProtonServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a service-instance ARN.
+ */
+export interface ProtonServiceInstanceArnProps {
+	/** The ServiceName component of the ARN. */
+	readonly serviceName: string;
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service-instance ARN.
+ */
+export interface ProtonServiceInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceName component. */
+	readonly serviceName: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a service-template ARN.
+ */
+export interface ProtonServiceTemplateArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service-template ARN.
+ */
+export interface ProtonServiceTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a service-template-major-version ARN.
+ */
+export interface ProtonServiceTemplateMajorVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersionId component of the ARN. */
+	readonly majorVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service-template-major-version ARN.
+ */
+export interface ProtonServiceTemplateMajorVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersionId component. */
+	readonly majorVersionId: string;
+}
+
+/**
+ * Properties for building a service-template-minor-version ARN.
+ */
+export interface ProtonServiceTemplateMinorVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersionId component of the ARN. */
+	readonly majorVersionId: string;
+	/** The MinorVersionId component of the ARN. */
+	readonly minorVersionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service-template-minor-version ARN.
+ */
+export interface ProtonServiceTemplateMinorVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersionId component. */
+	readonly majorVersionId: string;
+	/** The MinorVersionId component. */
+	readonly minorVersionId: string;
+}
+
+/**
+ * Properties for building a service-template-version ARN.
+ */
+export interface ProtonServiceTemplateVersionArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** The MajorVersion component of the ARN. */
+	readonly majorVersion: string;
+	/** The MinorVersion component of the ARN. */
+	readonly minorVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service-template-version ARN.
+ */
+export interface ProtonServiceTemplateVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+	/** The MajorVersion component. */
+	readonly majorVersion: string;
+	/** The MinorVersion component. */
+	readonly minorVersion: string;
+}
+
+const ComponentArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):component\/(?<id>[^:/?]+)$/;
+const DeploymentArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):deployment\/(?<id>[^:/?]+)$/;
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment\/(?<name>[^:/?]+)$/;
+const EnvironmentAccountConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-account-connection\/(?<id>[^:/?]+)$/;
+const EnvironmentTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template\/(?<name>[^:/?]+)$/;
+const EnvironmentTemplateMajorVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template\/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)$/;
+const EnvironmentTemplateMinorVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template\/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)\.(?<minorVersionId>[^:/?]+)$/;
+const EnvironmentTemplateVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):environment-template\/(?<templateName>[^:/?]+):(?<majorVersion>[^:/?]+)\.(?<minorVersion>[^:/?]+)$/;
+const RepositoryArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):repository\/(?<provider>[^:/?]+):(?<name>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service\/(?<name>[^:/?]+)$/;
+const ServiceInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceName>[^:/?]+)\/service-instance\/(?<name>[^:/?]+)$/;
+const ServiceTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template\/(?<name>[^:/?]+)$/;
+const ServiceTemplateMajorVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template\/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)$/;
+const ServiceTemplateMinorVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template\/(?<templateName>[^:/?]+):(?<majorVersionId>[^:/?]+)\.(?<minorVersionId>[^:/?]+)$/;
+const ServiceTemplateVersionArnRegex =
+	/^arn:(?<partition>[^:]+):proton:(?<region>[^:]*):(?<account>[^:]*):service-template\/(?<templateName>[^:/?]+):(?<majorVersion>[^:/?]+)\.(?<minorVersion>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for proton resources.
@@ -475,16 +925,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the component resource.
 	 */
-	static component(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static component(props: ProtonComponentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:component/${props.id}`;
 	}
 
@@ -499,12 +940,7 @@ export class ProtonResources {
 	 * Parses a component ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComponentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseComponentArn(arn: string): ProtonComponentArnComponents {
 		const match = ComponentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid component ARN: ${arn}`);
@@ -520,16 +956,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the deployment resource.
 	 */
-	static deployment(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deployment(props: ProtonDeploymentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:deployment/${props.id}`;
 	}
 
@@ -544,12 +971,7 @@ export class ProtonResources {
 	 * Parses a deployment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseDeploymentArn(arn: string): ProtonDeploymentArnComponents {
 		const match = DeploymentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deployment ARN: ${arn}`);
@@ -565,16 +987,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: ProtonEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment/${props.name}`;
 	}
 
@@ -589,12 +1002,7 @@ export class ProtonResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseEnvironmentArn(arn: string): ProtonEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -610,16 +1018,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment-account-connection resource.
 	 */
-	static environmentAccountConnection(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environmentAccountConnection(
+		props: ProtonEnvironmentAccountConnectionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment-account-connection/${props.id}`;
 	}
 
@@ -634,12 +1035,9 @@ export class ProtonResources {
 	 * Parses a environment-account-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentAccountConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseEnvironmentAccountConnectionArn(
+		arn: string,
+	): ProtonEnvironmentAccountConnectionArnComponents {
 		const match = EnvironmentAccountConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment-account-connection ARN: ${arn}`);
@@ -655,16 +1053,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment-template resource.
 	 */
-	static environmentTemplate(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environmentTemplate(props: ProtonEnvironmentTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment-template/${props.name}`;
 	}
 
@@ -679,12 +1068,9 @@ export class ProtonResources {
 	 * Parses a environment-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseEnvironmentTemplateArn(
+		arn: string,
+	): ProtonEnvironmentTemplateArnComponents {
 		const match = EnvironmentTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment-template ARN: ${arn}`);
@@ -700,18 +1086,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment-template-major-version resource.
 	 */
-	static environmentTemplateMajorVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersionId component of the ARN. */
-		readonly majorVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environmentTemplateMajorVersion(
+		props: ProtonEnvironmentTemplateMajorVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment-template/${props.templateName}:${props.majorVersionId}`;
 	}
 
@@ -726,13 +1103,9 @@ export class ProtonResources {
 	 * Parses a environment-template-major-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentTemplateMajorVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersionId: string;
-	} {
+	static parseEnvironmentTemplateMajorVersionArn(
+		arn: string,
+	): ProtonEnvironmentTemplateMajorVersionArnComponents {
 		const match = EnvironmentTemplateMajorVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment-template-major-version ARN: ${arn}`);
@@ -749,20 +1122,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment-template-minor-version resource.
 	 */
-	static environmentTemplateMinorVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersionId component of the ARN. */
-		readonly majorVersionId: string;
-		/** The MinorVersionId component of the ARN. */
-		readonly minorVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environmentTemplateMinorVersion(
+		props: ProtonEnvironmentTemplateMinorVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment-template/${props.templateName}:${props.majorVersionId}.${props.minorVersionId}`;
 	}
 
@@ -777,14 +1139,9 @@ export class ProtonResources {
 	 * Parses a environment-template-minor-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentTemplateMinorVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersionId: string;
-		minorVersionId: string;
-	} {
+	static parseEnvironmentTemplateMinorVersionArn(
+		arn: string,
+	): ProtonEnvironmentTemplateMinorVersionArnComponents {
 		const match = EnvironmentTemplateMinorVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment-template-minor-version ARN: ${arn}`);
@@ -802,20 +1159,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the environment-template-version resource.
 	 */
-	static environmentTemplateVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersion component of the ARN. */
-		readonly majorVersion: string;
-		/** The MinorVersion component of the ARN. */
-		readonly minorVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environmentTemplateVersion(
+		props: ProtonEnvironmentTemplateVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:environment-template/${props.templateName}:${props.majorVersion}.${props.minorVersion}`;
 	}
 
@@ -830,14 +1176,9 @@ export class ProtonResources {
 	 * Parses a environment-template-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentTemplateVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersion: string;
-		minorVersion: string;
-	} {
+	static parseEnvironmentTemplateVersionArn(
+		arn: string,
+	): ProtonEnvironmentTemplateVersionArnComponents {
 		const match = EnvironmentTemplateVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment-template-version ARN: ${arn}`);
@@ -855,18 +1196,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the repository resource.
 	 */
-	static repository(props: {
-		/** The Provider component of the ARN. */
-		readonly provider: string;
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static repository(props: ProtonRepositoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:repository/${props.provider}:${props.name}`;
 	}
 
@@ -881,13 +1211,7 @@ export class ProtonResources {
 	 * Parses a repository ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRepositoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		provider: string;
-		name: string;
-	} {
+	static parseRepositoryArn(arn: string): ProtonRepositoryArnComponents {
 		const match = RepositoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid repository ARN: ${arn}`);
@@ -904,16 +1228,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: ProtonServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.name}`;
 	}
 
@@ -928,12 +1243,7 @@ export class ProtonResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseServiceArn(arn: string): ProtonServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -949,18 +1259,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service-instance resource.
 	 */
-	static serviceInstance(props: {
-		/** The ServiceName component of the ARN. */
-		readonly serviceName: string;
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serviceInstance(props: ProtonServiceInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceName}/service-instance/${props.name}`;
 	}
 
@@ -975,13 +1274,9 @@ export class ProtonResources {
 	 * Parses a service-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceName: string;
-		name: string;
-	} {
+	static parseServiceInstanceArn(
+		arn: string,
+	): ProtonServiceInstanceArnComponents {
 		const match = ServiceInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service-instance ARN: ${arn}`);
@@ -998,16 +1293,7 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service-template resource.
 	 */
-	static serviceTemplate(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serviceTemplate(props: ProtonServiceTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service-template/${props.name}`;
 	}
 
@@ -1022,12 +1308,9 @@ export class ProtonResources {
 	 * Parses a service-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseServiceTemplateArn(
+		arn: string,
+	): ProtonServiceTemplateArnComponents {
 		const match = ServiceTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service-template ARN: ${arn}`);
@@ -1043,18 +1326,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service-template-major-version resource.
 	 */
-	static serviceTemplateMajorVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersionId component of the ARN. */
-		readonly majorVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serviceTemplateMajorVersion(
+		props: ProtonServiceTemplateMajorVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service-template/${props.templateName}:${props.majorVersionId}`;
 	}
 
@@ -1069,13 +1343,9 @@ export class ProtonResources {
 	 * Parses a service-template-major-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceTemplateMajorVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersionId: string;
-	} {
+	static parseServiceTemplateMajorVersionArn(
+		arn: string,
+	): ProtonServiceTemplateMajorVersionArnComponents {
 		const match = ServiceTemplateMajorVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service-template-major-version ARN: ${arn}`);
@@ -1092,20 +1362,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service-template-minor-version resource.
 	 */
-	static serviceTemplateMinorVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersionId component of the ARN. */
-		readonly majorVersionId: string;
-		/** The MinorVersionId component of the ARN. */
-		readonly minorVersionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serviceTemplateMinorVersion(
+		props: ProtonServiceTemplateMinorVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service-template/${props.templateName}:${props.majorVersionId}.${props.minorVersionId}`;
 	}
 
@@ -1120,14 +1379,9 @@ export class ProtonResources {
 	 * Parses a service-template-minor-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceTemplateMinorVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersionId: string;
-		minorVersionId: string;
-	} {
+	static parseServiceTemplateMinorVersionArn(
+		arn: string,
+	): ProtonServiceTemplateMinorVersionArnComponents {
 		const match = ServiceTemplateMinorVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service-template-minor-version ARN: ${arn}`);
@@ -1145,20 +1399,9 @@ export class ProtonResources {
 	/**
 	 * Builds an ARN for the service-template-version resource.
 	 */
-	static serviceTemplateVersion(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** The MajorVersion component of the ARN. */
-		readonly majorVersion: string;
-		/** The MinorVersion component of the ARN. */
-		readonly minorVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serviceTemplateVersion(
+		props: ProtonServiceTemplateVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:proton:${props.region ?? "*"}:${props.account ?? "*"}:service-template/${props.templateName}:${props.majorVersion}.${props.minorVersion}`;
 	}
 
@@ -1173,14 +1416,9 @@ export class ProtonResources {
 	 * Parses a service-template-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceTemplateVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-		majorVersion: string;
-		minorVersion: string;
-	} {
+	static parseServiceTemplateVersionArn(
+		arn: string,
+	): ProtonServiceTemplateVersionArnComponents {
 		const match = ServiceTemplateVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service-template-version ARN: ${arn}`);
@@ -1201,133 +1439,133 @@ export class ProtonResources {
  */
 export class ProtonOperations {
 	/** IAM actions required for the AcceptEnvironmentAccountConnection API call. */
-	static readonly ACCEPT_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly AcceptEnvironmentAccountConnection: string[] = [
 		"proton:AcceptEnvironmentAccountConnection",
 	];
 	/** IAM actions required for the CancelComponentDeployment API call. */
-	static readonly CANCEL_COMPONENT_DEPLOYMENT: string[] = [
+	static readonly CancelComponentDeployment: string[] = [
 		"proton:CancelComponentDeployment",
 	];
 	/** IAM actions required for the CancelEnvironmentDeployment API call. */
-	static readonly CANCEL_ENVIRONMENT_DEPLOYMENT: string[] = [
+	static readonly CancelEnvironmentDeployment: string[] = [
 		"proton:CancelEnvironmentDeployment",
 	];
 	/** IAM actions required for the CancelServiceInstanceDeployment API call. */
-	static readonly CANCEL_SERVICE_INSTANCE_DEPLOYMENT: string[] = [
+	static readonly CancelServiceInstanceDeployment: string[] = [
 		"proton:CancelServiceInstanceDeployment",
 	];
 	/** IAM actions required for the CancelServicePipelineDeployment API call. */
-	static readonly CANCEL_SERVICE_PIPELINE_DEPLOYMENT: string[] = [
+	static readonly CancelServicePipelineDeployment: string[] = [
 		"proton:CancelServicePipelineDeployment",
 	];
 	/** IAM actions required for the CreateComponent API call. */
-	static readonly CREATE_COMPONENT: string[] = [
+	static readonly CreateComponent: string[] = [
 		"proton:CreateComponent",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateEnvironment API call. */
-	static readonly CREATE_ENVIRONMENT: string[] = [
+	static readonly CreateEnvironment: string[] = [
 		"proton:CreateEnvironment",
 		"iam:PassRole",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateEnvironmentAccountConnection API call. */
-	static readonly CREATE_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly CreateEnvironmentAccountConnection: string[] = [
 		"proton:CreateEnvironmentAccountConnection",
 		"iam:PassRole",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateEnvironmentTemplate API call. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE: string[] = [
+	static readonly CreateEnvironmentTemplate: string[] = [
 		"proton:CreateEnvironmentTemplate",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateEnvironmentTemplateVersion API call. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_VERSION: string[] = [
+	static readonly CreateEnvironmentTemplateVersion: string[] = [
 		"proton:CreateEnvironmentTemplateVersion",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateRepository API call. */
-	static readonly CREATE_REPOSITORY: string[] = [
+	static readonly CreateRepository: string[] = [
 		"proton:CreateRepository",
 		"codestar-connections:PassConnection",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateService API call. */
-	static readonly CREATE_SERVICE: string[] = [
+	static readonly CreateService: string[] = [
 		"proton:CreateService",
 		"codestar-connections:PassConnection",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateServiceInstance API call. */
-	static readonly CREATE_SERVICE_INSTANCE: string[] = [
+	static readonly CreateServiceInstance: string[] = [
 		"proton:CreateServiceInstance",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateServiceSyncConfig API call. */
-	static readonly CREATE_SERVICE_SYNC_CONFIG: string[] = [
+	static readonly CreateServiceSyncConfig: string[] = [
 		"proton:CreateServiceSyncConfig",
 	];
 	/** IAM actions required for the CreateServiceTemplate API call. */
-	static readonly CREATE_SERVICE_TEMPLATE: string[] = [
+	static readonly CreateServiceTemplate: string[] = [
 		"proton:CreateServiceTemplate",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateServiceTemplateVersion API call. */
-	static readonly CREATE_SERVICE_TEMPLATE_VERSION: string[] = [
+	static readonly CreateServiceTemplateVersion: string[] = [
 		"proton:CreateServiceTemplateVersion",
 		"proton:TagResource",
 	];
 	/** IAM actions required for the CreateTemplateSyncConfig API call. */
-	static readonly CREATE_TEMPLATE_SYNC_CONFIG: string[] = [
+	static readonly CreateTemplateSyncConfig: string[] = [
 		"proton:CreateTemplateSyncConfig",
 	];
 	/** IAM actions required for the DeleteComponent API call. */
-	static readonly DELETE_COMPONENT: string[] = ["proton:DeleteComponent"];
+	static readonly DeleteComponent: string[] = ["proton:DeleteComponent"];
 	/** IAM actions required for the DeleteDeployment API call. */
-	static readonly DELETE_DEPLOYMENT: string[] = ["proton:DeleteDeployment"];
+	static readonly DeleteDeployment: string[] = ["proton:DeleteDeployment"];
 	/** IAM actions required for the DeleteEnvironment API call. */
-	static readonly DELETE_ENVIRONMENT: string[] = ["proton:DeleteEnvironment"];
+	static readonly DeleteEnvironment: string[] = ["proton:DeleteEnvironment"];
 	/** IAM actions required for the DeleteEnvironmentAccountConnection API call. */
-	static readonly DELETE_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly DeleteEnvironmentAccountConnection: string[] = [
 		"proton:DeleteEnvironmentAccountConnection",
 	];
 	/** IAM actions required for the DeleteEnvironmentTemplate API call. */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE: string[] = [
+	static readonly DeleteEnvironmentTemplate: string[] = [
 		"proton:DeleteEnvironmentTemplate",
 	];
 	/** IAM actions required for the DeleteEnvironmentTemplateVersion API call. */
-	static readonly DELETE_ENVIRONMENT_TEMPLATE_VERSION: string[] = [
+	static readonly DeleteEnvironmentTemplateVersion: string[] = [
 		"proton:DeleteEnvironmentTemplateVersion",
 	];
 	/** IAM actions required for the DeleteRepository API call. */
-	static readonly DELETE_REPOSITORY: string[] = ["proton:DeleteRepository"];
+	static readonly DeleteRepository: string[] = ["proton:DeleteRepository"];
 	/** IAM actions required for the DeleteService API call. */
-	static readonly DELETE_SERVICE: string[] = ["proton:DeleteService"];
+	static readonly DeleteService: string[] = ["proton:DeleteService"];
 	/** IAM actions required for the DeleteServiceSyncConfig API call. */
-	static readonly DELETE_SERVICE_SYNC_CONFIG: string[] = [
+	static readonly DeleteServiceSyncConfig: string[] = [
 		"proton:DeleteServiceSyncConfig",
 	];
 	/** IAM actions required for the DeleteServiceTemplate API call. */
-	static readonly DELETE_SERVICE_TEMPLATE: string[] = [
+	static readonly DeleteServiceTemplate: string[] = [
 		"proton:DeleteServiceTemplate",
 	];
 	/** IAM actions required for the DeleteServiceTemplateVersion API call. */
-	static readonly DELETE_SERVICE_TEMPLATE_VERSION: string[] = [
+	static readonly DeleteServiceTemplateVersion: string[] = [
 		"proton:DeleteServiceTemplateVersion",
 	];
 	/** IAM actions required for the DeleteTemplateSyncConfig API call. */
-	static readonly DELETE_TEMPLATE_SYNC_CONFIG: string[] = [
+	static readonly DeleteTemplateSyncConfig: string[] = [
 		"proton:DeleteTemplateSyncConfig",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
-	static readonly GET_ACCOUNT_SETTINGS: string[] = [
+	static readonly opGetAccountSettings: string[] = [
 		"proton:GetAccountSettings",
 	];
 	/** IAM actions required for the GetComponent API call. */
-	static readonly GET_COMPONENT: string[] = ["proton:GetComponent"];
+	static readonly opGetComponent: string[] = ["proton:GetComponent"];
 	/** IAM actions required for the GetDeployment API call. */
-	static readonly GET_DEPLOYMENT: string[] = [
+	static readonly opGetDeployment: string[] = [
 		"proton:GetComponent",
 		"proton:GetDeployment",
 		"proton:GetEnvironment",
@@ -1335,200 +1573,200 @@ export class ProtonOperations {
 		"proton:GetServiceInstance",
 	];
 	/** IAM actions required for the GetEnvironment API call. */
-	static readonly GET_ENVIRONMENT: string[] = ["proton:GetEnvironment"];
+	static readonly opGetEnvironment: string[] = ["proton:GetEnvironment"];
 	/** IAM actions required for the GetEnvironmentAccountConnection API call. */
-	static readonly GET_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly opGetEnvironmentAccountConnection: string[] = [
 		"proton:GetEnvironmentAccountConnection",
 	];
 	/** IAM actions required for the GetEnvironmentTemplate API call. */
-	static readonly GET_ENVIRONMENT_TEMPLATE: string[] = [
+	static readonly opGetEnvironmentTemplate: string[] = [
 		"proton:GetEnvironmentTemplate",
 	];
 	/** IAM actions required for the GetEnvironmentTemplateVersion API call. */
-	static readonly GET_ENVIRONMENT_TEMPLATE_VERSION: string[] = [
+	static readonly opGetEnvironmentTemplateVersion: string[] = [
 		"proton:GetEnvironmentTemplateVersion",
 	];
 	/** IAM actions required for the GetRepository API call. */
-	static readonly GET_REPOSITORY: string[] = ["proton:GetRepository"];
+	static readonly opGetRepository: string[] = ["proton:GetRepository"];
 	/** IAM actions required for the GetRepositorySyncStatus API call. */
-	static readonly GET_REPOSITORY_SYNC_STATUS: string[] = [
+	static readonly opGetRepositorySyncStatus: string[] = [
 		"proton:GetRepositorySyncStatus",
 	];
 	/** IAM actions required for the GetResourcesSummary API call. */
-	static readonly GET_RESOURCES_SUMMARY: string[] = [
+	static readonly opGetResourcesSummary: string[] = [
 		"proton:GetResourcesSummary",
 	];
 	/** IAM actions required for the GetService API call. */
-	static readonly GET_SERVICE: string[] = ["proton:GetService"];
+	static readonly opGetService: string[] = ["proton:GetService"];
 	/** IAM actions required for the GetServiceInstance API call. */
-	static readonly GET_SERVICE_INSTANCE: string[] = [
+	static readonly opGetServiceInstance: string[] = [
 		"proton:GetServiceInstance",
 	];
 	/** IAM actions required for the GetServiceInstanceSyncStatus API call. */
-	static readonly GET_SERVICE_INSTANCE_SYNC_STATUS: string[] = [
+	static readonly opGetServiceInstanceSyncStatus: string[] = [
 		"proton:GetServiceInstanceSyncStatus",
 	];
 	/** IAM actions required for the GetServiceSyncBlockerSummary API call. */
-	static readonly GET_SERVICE_SYNC_BLOCKER_SUMMARY: string[] = [
+	static readonly opGetServiceSyncBlockerSummary: string[] = [
 		"proton:GetServiceSyncBlockerSummary",
 	];
 	/** IAM actions required for the GetServiceSyncConfig API call. */
-	static readonly GET_SERVICE_SYNC_CONFIG: string[] = [
+	static readonly opGetServiceSyncConfig: string[] = [
 		"proton:GetServiceSyncConfig",
 	];
 	/** IAM actions required for the GetServiceTemplate API call. */
-	static readonly GET_SERVICE_TEMPLATE: string[] = [
+	static readonly opGetServiceTemplate: string[] = [
 		"proton:GetServiceTemplate",
 	];
 	/** IAM actions required for the GetServiceTemplateVersion API call. */
-	static readonly GET_SERVICE_TEMPLATE_VERSION: string[] = [
+	static readonly opGetServiceTemplateVersion: string[] = [
 		"proton:GetServiceTemplateVersion",
 	];
 	/** IAM actions required for the GetTemplateSyncConfig API call. */
-	static readonly GET_TEMPLATE_SYNC_CONFIG: string[] = [
+	static readonly opGetTemplateSyncConfig: string[] = [
 		"proton:GetTemplateSyncConfig",
 	];
 	/** IAM actions required for the GetTemplateSyncStatus API call. */
-	static readonly GET_TEMPLATE_SYNC_STATUS: string[] = [
+	static readonly opGetTemplateSyncStatus: string[] = [
 		"proton:GetTemplateSyncStatus",
 	];
 	/** IAM actions required for the ListComponentOutputs API call. */
-	static readonly LIST_COMPONENT_OUTPUTS: string[] = [
+	static readonly ListComponentOutputs: string[] = [
 		"proton:ListComponentOutputs",
 	];
 	/** IAM actions required for the ListComponentProvisionedResources API call. */
-	static readonly LIST_COMPONENT_PROVISIONED_RESOURCES: string[] = [
+	static readonly ListComponentProvisionedResources: string[] = [
 		"proton:ListComponentProvisionedResources",
 	];
 	/** IAM actions required for the ListComponents API call. */
-	static readonly LIST_COMPONENTS: string[] = ["proton:ListComponents"];
+	static readonly ListComponents: string[] = ["proton:ListComponents"];
 	/** IAM actions required for the ListDeployments API call. */
-	static readonly LIST_DEPLOYMENTS: string[] = ["proton:ListDeployments"];
+	static readonly ListDeployments: string[] = ["proton:ListDeployments"];
 	/** IAM actions required for the ListEnvironmentAccountConnections API call. */
-	static readonly LIST_ENVIRONMENT_ACCOUNT_CONNECTIONS: string[] = [
+	static readonly ListEnvironmentAccountConnections: string[] = [
 		"proton:ListEnvironmentAccountConnections",
 	];
 	/** IAM actions required for the ListEnvironmentOutputs API call. */
-	static readonly LIST_ENVIRONMENT_OUTPUTS: string[] = [
+	static readonly ListEnvironmentOutputs: string[] = [
 		"proton:ListEnvironmentOutputs",
 	];
 	/** IAM actions required for the ListEnvironmentProvisionedResources API call. */
-	static readonly LIST_ENVIRONMENT_PROVISIONED_RESOURCES: string[] = [
+	static readonly ListEnvironmentProvisionedResources: string[] = [
 		"proton:ListEnvironmentProvisionedResources",
 	];
 	/** IAM actions required for the ListEnvironmentTemplateVersions API call. */
-	static readonly LIST_ENVIRONMENT_TEMPLATE_VERSIONS: string[] = [
+	static readonly ListEnvironmentTemplateVersions: string[] = [
 		"proton:ListEnvironmentTemplateVersions",
 	];
 	/** IAM actions required for the ListEnvironmentTemplates API call. */
-	static readonly LIST_ENVIRONMENT_TEMPLATES: string[] = [
+	static readonly ListEnvironmentTemplates: string[] = [
 		"proton:ListEnvironmentTemplates",
 	];
 	/** IAM actions required for the ListEnvironments API call. */
-	static readonly LIST_ENVIRONMENTS: string[] = ["proton:ListEnvironments"];
+	static readonly ListEnvironments: string[] = ["proton:ListEnvironments"];
 	/** IAM actions required for the ListRepositories API call. */
-	static readonly LIST_REPOSITORIES: string[] = ["proton:ListRepositories"];
+	static readonly ListRepositories: string[] = ["proton:ListRepositories"];
 	/** IAM actions required for the ListRepositorySyncDefinitions API call. */
-	static readonly LIST_REPOSITORY_SYNC_DEFINITIONS: string[] = [
+	static readonly ListRepositorySyncDefinitions: string[] = [
 		"proton:ListRepositorySyncDefinitions",
 	];
 	/** IAM actions required for the ListServiceInstanceOutputs API call. */
-	static readonly LIST_SERVICE_INSTANCE_OUTPUTS: string[] = [
+	static readonly ListServiceInstanceOutputs: string[] = [
 		"proton:ListServiceInstanceOutputs",
 	];
 	/** IAM actions required for the ListServiceInstanceProvisionedResources API call. */
-	static readonly LIST_SERVICE_INSTANCE_PROVISIONED_RESOURCES: string[] = [
+	static readonly ListServiceInstanceProvisionedResources: string[] = [
 		"proton:ListServiceInstanceProvisionedResources",
 	];
 	/** IAM actions required for the ListServiceInstances API call. */
-	static readonly LIST_SERVICE_INSTANCES: string[] = [
+	static readonly ListServiceInstances: string[] = [
 		"proton:ListServiceInstances",
 	];
 	/** IAM actions required for the ListServicePipelineOutputs API call. */
-	static readonly LIST_SERVICE_PIPELINE_OUTPUTS: string[] = [
+	static readonly ListServicePipelineOutputs: string[] = [
 		"proton:ListServicePipelineOutputs",
 	];
 	/** IAM actions required for the ListServicePipelineProvisionedResources API call. */
-	static readonly LIST_SERVICE_PIPELINE_PROVISIONED_RESOURCES: string[] = [
+	static readonly ListServicePipelineProvisionedResources: string[] = [
 		"proton:ListServicePipelineProvisionedResources",
 	];
 	/** IAM actions required for the ListServiceTemplateVersions API call. */
-	static readonly LIST_SERVICE_TEMPLATE_VERSIONS: string[] = [
+	static readonly ListServiceTemplateVersions: string[] = [
 		"proton:ListServiceTemplateVersions",
 	];
 	/** IAM actions required for the ListServiceTemplates API call. */
-	static readonly LIST_SERVICE_TEMPLATES: string[] = [
+	static readonly ListServiceTemplates: string[] = [
 		"proton:ListServiceTemplates",
 	];
 	/** IAM actions required for the ListServices API call. */
-	static readonly LIST_SERVICES: string[] = ["proton:ListServices"];
+	static readonly ListServices: string[] = ["proton:ListServices"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"proton:ListTagsForResource",
 	];
 	/** IAM actions required for the NotifyResourceDeploymentStatusChange API call. */
-	static readonly NOTIFY_RESOURCE_DEPLOYMENT_STATUS_CHANGE: string[] = [
+	static readonly NotifyResourceDeploymentStatusChange: string[] = [
 		"proton:NotifyResourceDeploymentStatusChange",
 	];
 	/** IAM actions required for the RejectEnvironmentAccountConnection API call. */
-	static readonly REJECT_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly RejectEnvironmentAccountConnection: string[] = [
 		"proton:RejectEnvironmentAccountConnection",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["proton:TagResource"];
+	static readonly TagResource: string[] = ["proton:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["proton:UntagResource"];
+	static readonly UntagResource: string[] = ["proton:UntagResource"];
 	/** IAM actions required for the UpdateAccountSettings API call. */
-	static readonly UPDATE_ACCOUNT_SETTINGS: string[] = [
+	static readonly UpdateAccountSettings: string[] = [
 		"iam:PassRole",
 		"proton:UpdateAccountSettings",
 	];
 	/** IAM actions required for the UpdateComponent API call. */
-	static readonly UPDATE_COMPONENT: string[] = ["proton:UpdateComponent"];
+	static readonly UpdateComponent: string[] = ["proton:UpdateComponent"];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UPDATE_ENVIRONMENT: string[] = [
+	static readonly UpdateEnvironment: string[] = [
 		"iam:PassRole",
 		"proton:UpdateEnvironment",
 	];
 	/** IAM actions required for the UpdateEnvironmentAccountConnection API call. */
-	static readonly UPDATE_ENVIRONMENT_ACCOUNT_CONNECTION: string[] = [
+	static readonly UpdateEnvironmentAccountConnection: string[] = [
 		"iam:PassRole",
 		"proton:UpdateEnvironmentAccountConnection",
 	];
 	/** IAM actions required for the UpdateEnvironmentTemplate API call. */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE: string[] = [
+	static readonly UpdateEnvironmentTemplate: string[] = [
 		"proton:UpdateEnvironmentTemplate",
 	];
 	/** IAM actions required for the UpdateEnvironmentTemplateVersion API call. */
-	static readonly UPDATE_ENVIRONMENT_TEMPLATE_VERSION: string[] = [
+	static readonly UpdateEnvironmentTemplateVersion: string[] = [
 		"proton:UpdateEnvironmentTemplateVersion",
 	];
 	/** IAM actions required for the UpdateService API call. */
-	static readonly UPDATE_SERVICE: string[] = ["proton:UpdateService"];
+	static readonly UpdateService: string[] = ["proton:UpdateService"];
 	/** IAM actions required for the UpdateServiceInstance API call. */
-	static readonly UPDATE_SERVICE_INSTANCE: string[] = [
+	static readonly UpdateServiceInstance: string[] = [
 		"proton:UpdateServiceInstance",
 	];
 	/** IAM actions required for the UpdateServicePipeline API call. */
-	static readonly UPDATE_SERVICE_PIPELINE: string[] = [
+	static readonly UpdateServicePipeline: string[] = [
 		"proton:UpdateServicePipeline",
 	];
 	/** IAM actions required for the UpdateServiceSyncBlocker API call. */
-	static readonly UPDATE_SERVICE_SYNC_BLOCKER: string[] = [
+	static readonly UpdateServiceSyncBlocker: string[] = [
 		"proton:UpdateServiceSyncBlocker",
 	];
 	/** IAM actions required for the UpdateServiceSyncConfig API call. */
-	static readonly UPDATE_SERVICE_SYNC_CONFIG: string[] = [];
+	static readonly UpdateServiceSyncConfig: string[] = [];
 	/** IAM actions required for the UpdateServiceTemplate API call. */
-	static readonly UPDATE_SERVICE_TEMPLATE: string[] = [
+	static readonly UpdateServiceTemplate: string[] = [
 		"proton:UpdateServiceTemplate",
 	];
 	/** IAM actions required for the UpdateServiceTemplateVersion API call. */
-	static readonly UPDATE_SERVICE_TEMPLATE_VERSION: string[] = [
+	static readonly UpdateServiceTemplateVersion: string[] = [
 		"proton:UpdateServiceTemplateVersion",
 	];
 	/** IAM actions required for the UpdateTemplateSyncConfig API call. */
-	static readonly UPDATE_TEMPLATE_SYNC_CONFIG: string[] = [
+	static readonly UpdateTemplateSyncConfig: string[] = [
 		"proton:UpdateTemplateSyncConfig",
 	];
 }
@@ -1538,114 +1776,124 @@ export class ProtonOperations {
  */
 export class ProtonConditions {
 	/** Condition keys applicable to the CancelEnvironmentDeployment action. */
-	static readonly CANCEL_ENVIRONMENT_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly CancelEnvironmentDeploymentConditionKeys: string[] = [
 		"proton:EnvironmentTemplate",
 	];
 	/** Condition keys applicable to the CancelServiceInstanceDeployment action. */
-	static readonly CANCEL_SERVICE_INSTANCE_DEPLOYMENT_CONDITION_KEYS: string[] =
-		["proton:ServiceTemplate"];
+	static readonly CancelServiceInstanceDeploymentConditionKeys: string[] = [
+		"proton:ServiceTemplate",
+	];
 	/** Condition keys applicable to the CancelServicePipelineDeployment action. */
-	static readonly CANCEL_SERVICE_PIPELINE_DEPLOYMENT_CONDITION_KEYS: string[] =
-		["proton:ServiceTemplate"];
+	static readonly CancelServicePipelineDeploymentConditionKeys: string[] = [
+		"proton:ServiceTemplate",
+	];
 	/** Condition keys applicable to the CreateComponent action. */
-	static readonly CREATE_COMPONENT_CONDITION_KEYS: string[] = [
+	static readonly CreateComponentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEnvironment action. */
-	static readonly CREATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"proton:EnvironmentTemplate",
 	];
 	/** Condition keys applicable to the CreateEnvironmentAccountConnection action. */
-	static readonly CREATE_ENVIRONMENT_ACCOUNT_CONNECTION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateEnvironmentAccountConnectionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateEnvironmentTemplate action. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEnvironmentTemplateMajorVersion action. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_MAJOR_VERSION_CONDITION_KEYS: string[] =
+	static readonly CreateEnvironmentTemplateMajorVersionConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateEnvironmentTemplateMinorVersion action. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_MINOR_VERSION_CONDITION_KEYS: string[] =
+	static readonly CreateEnvironmentTemplateMinorVersionConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateEnvironmentTemplateVersion action. */
-	static readonly CREATE_ENVIRONMENT_TEMPLATE_VERSION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateEnvironmentTemplateVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateRepository action. */
-	static readonly CREATE_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly CreateRepositoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateService action. */
-	static readonly CREATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"proton:ServiceTemplate",
 	];
 	/** Condition keys applicable to the CreateServiceInstance action. */
-	static readonly CREATE_SERVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"proton:ServiceTemplate",
 	];
 	/** Condition keys applicable to the CreateServiceTemplate action. */
-	static readonly CREATE_SERVICE_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateServiceTemplateMajorVersion action. */
-	static readonly CREATE_SERVICE_TEMPLATE_MAJOR_VERSION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateServiceTemplateMajorVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateServiceTemplateMinorVersion action. */
-	static readonly CREATE_SERVICE_TEMPLATE_MINOR_VERSION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateServiceTemplateMinorVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateServiceTemplateVersion action. */
-	static readonly CREATE_SERVICE_TEMPLATE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceTemplateVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteEnvironment action. */
-	static readonly DELETE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteEnvironmentConditionKeys: string[] = [
 		"proton:EnvironmentTemplate",
 	];
 	/** Condition keys applicable to the DeleteService action. */
-	static readonly DELETE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly DeleteServiceConditionKeys: string[] = [
 		"proton:ServiceTemplate",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateEnvironment action. */
-	static readonly UPDATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateEnvironmentConditionKeys: string[] = [
 		"proton:EnvironmentTemplate",
 	];
 	/** Condition keys applicable to the UpdateService action. */
-	static readonly UPDATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly UpdateServiceConditionKeys: string[] = [
 		"proton:ServiceTemplate",
 	];
 	/** Condition keys applicable to the UpdateServiceInstance action. */
-	static readonly UPDATE_SERVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateServiceInstanceConditionKeys: string[] = [
 		"proton:ServiceTemplate",
 	];
 	/** Condition keys applicable to the UpdateServicePipeline action. */
-	static readonly UPDATE_SERVICE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly UpdateServicePipelineConditionKeys: string[] = [
 		"proton:ServiceTemplate",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: proton:EnvironmentTemplate (String) */
 	static readonly ENVIRONMENT_TEMPLATE = "proton:EnvironmentTemplate";
 	/** Condition key: proton:ServiceTemplate (String) */

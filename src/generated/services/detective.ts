@@ -13,144 +13,171 @@ export class DetectiveActions {
 	static readonly SERVICE_PREFIX = "detective";
 
 	/** [Write] detective:AcceptInvitation */
-	static readonly ACCEPT_INVITATION = "detective:AcceptInvitation";
+	static readonly AcceptInvitation = "detective:AcceptInvitation";
 	/** [Read] detective:BatchGetGraphMemberDatasources */
-	static readonly BATCH_GET_GRAPH_MEMBER_DATASOURCES =
+	static readonly BatchGetGraphMemberDatasources =
 		"detective:BatchGetGraphMemberDatasources";
 	/** [Read] detective:BatchGetMembershipDatasources */
-	static readonly BATCH_GET_MEMBERSHIP_DATASOURCES =
+	static readonly BatchGetMembershipDatasources =
 		"detective:BatchGetMembershipDatasources";
 	/** [Write] detective:CreateGraph */
-	static readonly CREATE_GRAPH = "detective:CreateGraph";
+	static readonly CreateGraph = "detective:CreateGraph";
 	/** [Write] detective:CreateMembers */
-	static readonly CREATE_MEMBERS = "detective:CreateMembers";
+	static readonly CreateMembers = "detective:CreateMembers";
 	/** [Write] detective:DeleteGraph */
-	static readonly DELETE_GRAPH = "detective:DeleteGraph";
+	static readonly DeleteGraph = "detective:DeleteGraph";
 	/** [Write] detective:DeleteMembers */
-	static readonly DELETE_MEMBERS = "detective:DeleteMembers";
+	static readonly DeleteMembers = "detective:DeleteMembers";
 	/** [Read] detective:DescribeOrganizationConfiguration */
-	static readonly DESCRIBE_ORGANIZATION_CONFIGURATION =
+	static readonly DescribeOrganizationConfiguration =
 		"detective:DescribeOrganizationConfiguration";
 	/** [Write] detective:DisableOrganizationAdminAccount */
-	static readonly DISABLE_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly DisableOrganizationAdminAccount =
 		"detective:DisableOrganizationAdminAccount";
 	/** [Write] detective:DisassociateMembership */
-	static readonly DISASSOCIATE_MEMBERSHIP = "detective:DisassociateMembership";
+	static readonly DisassociateMembership = "detective:DisassociateMembership";
 	/** [Write] detective:EnableOrganizationAdminAccount */
-	static readonly ENABLE_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly EnableOrganizationAdminAccount =
 		"detective:EnableOrganizationAdminAccount";
 	/** [Read] detective:GetFreeTrialEligibility */
-	static readonly GET_FREE_TRIAL_ELIGIBILITY =
+	static readonly actionGetFreeTrialEligibility =
 		"detective:GetFreeTrialEligibility";
 	/** [Read] detective:GetGraphIngestState */
-	static readonly GET_GRAPH_INGEST_STATE = "detective:GetGraphIngestState";
+	static readonly actionGetGraphIngestState = "detective:GetGraphIngestState";
 	/** [Read] detective:GetInvestigation */
-	static readonly GET_INVESTIGATION = "detective:GetInvestigation";
+	static readonly actionGetInvestigation = "detective:GetInvestigation";
 	/** [Read] detective:GetMembers */
-	static readonly GET_MEMBERS = "detective:GetMembers";
+	static readonly actionGetMembers = "detective:GetMembers";
 	/** [Read] detective:GetPricingInformation */
-	static readonly GET_PRICING_INFORMATION = "detective:GetPricingInformation";
+	static readonly actionGetPricingInformation =
+		"detective:GetPricingInformation";
 	/** [Read] detective:GetUsageInformation */
-	static readonly GET_USAGE_INFORMATION = "detective:GetUsageInformation";
+	static readonly actionGetUsageInformation = "detective:GetUsageInformation";
 	/** [Read] detective:InvokeAssistant */
-	static readonly INVOKE_ASSISTANT = "detective:InvokeAssistant";
+	static readonly InvokeAssistant = "detective:InvokeAssistant";
 	/** [List] detective:ListDatasourcePackages */
-	static readonly LIST_DATASOURCE_PACKAGES = "detective:ListDatasourcePackages";
+	static readonly ListDatasourcePackages = "detective:ListDatasourcePackages";
 	/** [List] detective:ListGraphs */
-	static readonly LIST_GRAPHS = "detective:ListGraphs";
+	static readonly ListGraphs = "detective:ListGraphs";
 	/** [List] detective:ListHighDegreeEntities */
-	static readonly LIST_HIGH_DEGREE_ENTITIES =
-		"detective:ListHighDegreeEntities";
+	static readonly ListHighDegreeEntities = "detective:ListHighDegreeEntities";
 	/** [List] detective:ListIndicators */
-	static readonly LIST_INDICATORS = "detective:ListIndicators";
+	static readonly ListIndicators = "detective:ListIndicators";
 	/** [List] detective:ListInvestigations */
-	static readonly LIST_INVESTIGATIONS = "detective:ListInvestigations";
+	static readonly ListInvestigations = "detective:ListInvestigations";
 	/** [List] detective:ListInvitations */
-	static readonly LIST_INVITATIONS = "detective:ListInvitations";
+	static readonly ListInvitations = "detective:ListInvitations";
 	/** [List] detective:ListMembers */
-	static readonly LIST_MEMBERS = "detective:ListMembers";
+	static readonly ListMembers = "detective:ListMembers";
 	/** [List] detective:ListOrganizationAdminAccount */
-	static readonly LIST_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly ListOrganizationAdminAccount =
 		"detective:ListOrganizationAdminAccount";
 	/** [List] detective:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "detective:ListTagsForResource";
+	static readonly ListTagsForResource = "detective:ListTagsForResource";
 	/** [Write] detective:RejectInvitation */
-	static readonly REJECT_INVITATION = "detective:RejectInvitation";
+	static readonly RejectInvitation = "detective:RejectInvitation";
 	/** [Read] detective:SearchGraph */
-	static readonly SEARCH_GRAPH = "detective:SearchGraph";
+	static readonly SearchGraph = "detective:SearchGraph";
 	/** [Write] detective:StartInvestigation */
-	static readonly START_INVESTIGATION = "detective:StartInvestigation";
+	static readonly StartInvestigation = "detective:StartInvestigation";
 	/** [Write] detective:StartMonitoringMember */
-	static readonly START_MONITORING_MEMBER = "detective:StartMonitoringMember";
+	static readonly StartMonitoringMember = "detective:StartMonitoringMember";
 	/** [Tagging] detective:TagResource */
-	static readonly TAG_RESOURCE = "detective:TagResource";
+	static readonly TagResource = "detective:TagResource";
 	/** [Tagging] detective:UntagResource */
-	static readonly UNTAG_RESOURCE = "detective:UntagResource";
+	static readonly UntagResource = "detective:UntagResource";
 	/** [Write] detective:UpdateDatasourcePackages */
-	static readonly UPDATE_DATASOURCE_PACKAGES =
+	static readonly UpdateDatasourcePackages =
 		"detective:UpdateDatasourcePackages";
 	/** [Write] detective:UpdateInvestigationState */
-	static readonly UPDATE_INVESTIGATION_STATE =
+	static readonly UpdateInvestigationState =
 		"detective:UpdateInvestigationState";
 	/** [Write] detective:UpdateOrganizationConfiguration */
-	static readonly UPDATE_ORGANIZATION_CONFIGURATION =
+	static readonly UpdateOrganizationConfiguration =
 		"detective:UpdateOrganizationConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DetectiveActions.BATCH_GET_GRAPH_MEMBER_DATASOURCES,
-		DetectiveActions.BATCH_GET_MEMBERSHIP_DATASOURCES,
-		DetectiveActions.DESCRIBE_ORGANIZATION_CONFIGURATION,
-		DetectiveActions.GET_FREE_TRIAL_ELIGIBILITY,
-		DetectiveActions.GET_GRAPH_INGEST_STATE,
-		DetectiveActions.GET_INVESTIGATION,
-		DetectiveActions.GET_MEMBERS,
-		DetectiveActions.GET_PRICING_INFORMATION,
-		DetectiveActions.GET_USAGE_INFORMATION,
-		DetectiveActions.INVOKE_ASSISTANT,
-		DetectiveActions.SEARCH_GRAPH,
+	static readonly AllReadActions: string[] = [
+		DetectiveActions.BatchGetGraphMemberDatasources,
+		DetectiveActions.BatchGetMembershipDatasources,
+		DetectiveActions.DescribeOrganizationConfiguration,
+		DetectiveActions.actionGetFreeTrialEligibility,
+		DetectiveActions.actionGetGraphIngestState,
+		DetectiveActions.actionGetInvestigation,
+		DetectiveActions.actionGetMembers,
+		DetectiveActions.actionGetPricingInformation,
+		DetectiveActions.actionGetUsageInformation,
+		DetectiveActions.InvokeAssistant,
+		DetectiveActions.SearchGraph,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DetectiveActions.ACCEPT_INVITATION,
-		DetectiveActions.CREATE_GRAPH,
-		DetectiveActions.CREATE_MEMBERS,
-		DetectiveActions.DELETE_GRAPH,
-		DetectiveActions.DELETE_MEMBERS,
-		DetectiveActions.DISABLE_ORGANIZATION_ADMIN_ACCOUNT,
-		DetectiveActions.DISASSOCIATE_MEMBERSHIP,
-		DetectiveActions.ENABLE_ORGANIZATION_ADMIN_ACCOUNT,
-		DetectiveActions.REJECT_INVITATION,
-		DetectiveActions.START_INVESTIGATION,
-		DetectiveActions.START_MONITORING_MEMBER,
-		DetectiveActions.UPDATE_DATASOURCE_PACKAGES,
-		DetectiveActions.UPDATE_INVESTIGATION_STATE,
-		DetectiveActions.UPDATE_ORGANIZATION_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		DetectiveActions.AcceptInvitation,
+		DetectiveActions.CreateGraph,
+		DetectiveActions.CreateMembers,
+		DetectiveActions.DeleteGraph,
+		DetectiveActions.DeleteMembers,
+		DetectiveActions.DisableOrganizationAdminAccount,
+		DetectiveActions.DisassociateMembership,
+		DetectiveActions.EnableOrganizationAdminAccount,
+		DetectiveActions.RejectInvitation,
+		DetectiveActions.StartInvestigation,
+		DetectiveActions.StartMonitoringMember,
+		DetectiveActions.UpdateDatasourcePackages,
+		DetectiveActions.UpdateInvestigationState,
+		DetectiveActions.UpdateOrganizationConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DetectiveActions.LIST_DATASOURCE_PACKAGES,
-		DetectiveActions.LIST_GRAPHS,
-		DetectiveActions.LIST_HIGH_DEGREE_ENTITIES,
-		DetectiveActions.LIST_INDICATORS,
-		DetectiveActions.LIST_INVESTIGATIONS,
-		DetectiveActions.LIST_INVITATIONS,
-		DetectiveActions.LIST_MEMBERS,
-		DetectiveActions.LIST_ORGANIZATION_ADMIN_ACCOUNT,
-		DetectiveActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		DetectiveActions.ListDatasourcePackages,
+		DetectiveActions.ListGraphs,
+		DetectiveActions.ListHighDegreeEntities,
+		DetectiveActions.ListIndicators,
+		DetectiveActions.ListInvestigations,
+		DetectiveActions.ListInvitations,
+		DetectiveActions.ListMembers,
+		DetectiveActions.ListOrganizationAdminAccount,
+		DetectiveActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DetectiveActions.TAG_RESOURCE,
-		DetectiveActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DetectiveActions.TagResource,
+		DetectiveActions.UntagResource,
 	];
 }
 
-const GraphArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):detective:(?<region>[^:]*):(?<account>[^:]*):graph:(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Graph ARN.
+ */
+export interface DetectiveGraphArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Graph ARN.
+ */
+export interface DetectiveGraphArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const GraphArnRegex =
+	/^arn:(?<partition>[^:]+):detective:(?<region>[^:]*):(?<account>[^:]*):graph:(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for detective resources.
@@ -159,16 +186,7 @@ export class DetectiveResources {
 	/**
 	 * Builds an ARN for the Graph resource.
 	 */
-	static graph(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static graph(props: DetectiveGraphArnProps): string {
 		return `arn:${props.partition ?? "aws"}:detective:${props.region ?? "*"}:${props.account ?? "*"}:graph:${props.resourceId}`;
 	}
 
@@ -183,12 +201,7 @@ export class DetectiveResources {
 	 * Parses a Graph ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGraphArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseGraphArn(arn: string): DetectiveGraphArnComponents {
 		const match = GraphArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Graph ARN: ${arn}`);
@@ -207,97 +220,97 @@ export class DetectiveResources {
  */
 export class DetectiveOperations {
 	/** IAM actions required for the AcceptInvitation API call. */
-	static readonly ACCEPT_INVITATION: string[] = ["detective:AcceptInvitation"];
+	static readonly AcceptInvitation: string[] = ["detective:AcceptInvitation"];
 	/** IAM actions required for the BatchGetGraphMemberDatasources API call. */
-	static readonly BATCH_GET_GRAPH_MEMBER_DATASOURCES: string[] = [
+	static readonly BatchGetGraphMemberDatasources: string[] = [
 		"detective:BatchGetGraphMemberDatasources",
 	];
 	/** IAM actions required for the BatchGetMembershipDatasources API call. */
-	static readonly BATCH_GET_MEMBERSHIP_DATASOURCES: string[] = [
+	static readonly BatchGetMembershipDatasources: string[] = [
 		"detective:BatchGetMembershipDatasources",
 	];
 	/** IAM actions required for the CreateGraph API call. */
-	static readonly CREATE_GRAPH: string[] = [
+	static readonly CreateGraph: string[] = [
 		"detective:CreateGraph",
 		"detective:TagResource",
 	];
 	/** IAM actions required for the CreateMembers API call. */
-	static readonly CREATE_MEMBERS: string[] = ["detective:CreateMembers"];
+	static readonly CreateMembers: string[] = ["detective:CreateMembers"];
 	/** IAM actions required for the DeleteGraph API call. */
-	static readonly DELETE_GRAPH: string[] = ["detective:DeleteGraph"];
+	static readonly DeleteGraph: string[] = ["detective:DeleteGraph"];
 	/** IAM actions required for the DeleteMembers API call. */
-	static readonly DELETE_MEMBERS: string[] = ["detective:DeleteMembers"];
+	static readonly DeleteMembers: string[] = ["detective:DeleteMembers"];
 	/** IAM actions required for the DescribeOrganizationConfiguration API call. */
-	static readonly DESCRIBE_ORGANIZATION_CONFIGURATION: string[] = [
+	static readonly DescribeOrganizationConfiguration: string[] = [
 		"detective:DescribeOrganizationConfiguration",
 	];
 	/** IAM actions required for the DisableOrganizationAdminAccount API call. */
-	static readonly DISABLE_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly DisableOrganizationAdminAccount: string[] = [
 		"detective:DisableOrganizationAdminAccount",
 	];
 	/** IAM actions required for the DisassociateMembership API call. */
-	static readonly DISASSOCIATE_MEMBERSHIP: string[] = [
+	static readonly DisassociateMembership: string[] = [
 		"detective:DisassociateMembership",
 	];
 	/** IAM actions required for the EnableOrganizationAdminAccount API call. */
-	static readonly ENABLE_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly EnableOrganizationAdminAccount: string[] = [
 		"iam:CreateServiceLinkedRole",
 		"organizations:EnableAWSServiceAccess",
 		"detective:EnableOrganizationAdminAccount",
 		"organizations:RegisterDelegatedAdministrator",
 	];
 	/** IAM actions required for the GetInvestigation API call. */
-	static readonly GET_INVESTIGATION: string[] = ["detective:GetInvestigation"];
+	static readonly opGetInvestigation: string[] = ["detective:GetInvestigation"];
 	/** IAM actions required for the GetMembers API call. */
-	static readonly GET_MEMBERS: string[] = ["detective:GetMembers"];
+	static readonly opGetMembers: string[] = ["detective:GetMembers"];
 	/** IAM actions required for the ListDatasourcePackages API call. */
-	static readonly LIST_DATASOURCE_PACKAGES: string[] = [
+	static readonly ListDatasourcePackages: string[] = [
 		"detective:ListDatasourcePackages",
 	];
 	/** IAM actions required for the ListGraphs API call. */
-	static readonly LIST_GRAPHS: string[] = ["detective:ListGraphs"];
+	static readonly ListGraphs: string[] = ["detective:ListGraphs"];
 	/** IAM actions required for the ListIndicators API call. */
-	static readonly LIST_INDICATORS: string[] = ["detective:ListIndicators"];
+	static readonly ListIndicators: string[] = ["detective:ListIndicators"];
 	/** IAM actions required for the ListInvestigations API call. */
-	static readonly LIST_INVESTIGATIONS: string[] = [
+	static readonly ListInvestigations: string[] = [
 		"detective:ListInvestigations",
 	];
 	/** IAM actions required for the ListInvitations API call. */
-	static readonly LIST_INVITATIONS: string[] = ["detective:ListInvitations"];
+	static readonly ListInvitations: string[] = ["detective:ListInvitations"];
 	/** IAM actions required for the ListMembers API call. */
-	static readonly LIST_MEMBERS: string[] = ["detective:ListMembers"];
+	static readonly ListMembers: string[] = ["detective:ListMembers"];
 	/** IAM actions required for the ListOrganizationAdminAccounts API call. */
-	static readonly LIST_ORGANIZATION_ADMIN_ACCOUNTS: string[] = [
+	static readonly ListOrganizationAdminAccounts: string[] = [
 		"detective:ListOrganizationAdminAccount",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"detective:ListTagsForResource",
 	];
 	/** IAM actions required for the RejectInvitation API call. */
-	static readonly REJECT_INVITATION: string[] = ["detective:RejectInvitation"];
+	static readonly RejectInvitation: string[] = ["detective:RejectInvitation"];
 	/** IAM actions required for the StartInvestigation API call. */
-	static readonly START_INVESTIGATION: string[] = [
+	static readonly StartInvestigation: string[] = [
 		"detective:StartInvestigation",
 	];
 	/** IAM actions required for the StartMonitoringMember API call. */
-	static readonly START_MONITORING_MEMBER: string[] = [
+	static readonly StartMonitoringMember: string[] = [
 		"detective:StartMonitoringMember",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["detective:TagResource"];
+	static readonly TagResource: string[] = ["detective:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["detective:UntagResource"];
+	static readonly UntagResource: string[] = ["detective:UntagResource"];
 	/** IAM actions required for the UpdateDatasourcePackages API call. */
-	static readonly UPDATE_DATASOURCE_PACKAGES: string[] = [
+	static readonly UpdateDatasourcePackages: string[] = [
 		"detective:UpdateDatasourcePackages",
 	];
 	/** IAM actions required for the UpdateInvestigationState API call. */
-	static readonly UPDATE_INVESTIGATION_STATE: string[] = [
+	static readonly UpdateInvestigationState: string[] = [
 		"detective:UpdateInvestigationState",
 	];
 	/** IAM actions required for the UpdateOrganizationConfiguration API call. */
-	static readonly UPDATE_ORGANIZATION_CONFIGURATION: string[] = [
+	static readonly UpdateOrganizationConfiguration: string[] = [
 		"detective:UpdateOrganizationConfiguration",
 	];
 }
@@ -307,30 +320,30 @@ export class DetectiveOperations {
  */
 export class DetectiveConditions {
 	/** Condition keys applicable to the CreateGraph action. */
-	static readonly CREATE_GRAPH_CONDITION_KEYS: string[] = [
+	static readonly CreateGraphConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

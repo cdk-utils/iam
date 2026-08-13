@@ -13,59 +13,82 @@ export class SavingsplansActions {
 	static readonly SERVICE_PREFIX = "savingsplans";
 
 	/** [Write] savingsplans:CreateSavingsPlan */
-	static readonly CREATE_SAVINGS_PLAN = "savingsplans:CreateSavingsPlan";
+	static readonly CreateSavingsPlan = "savingsplans:CreateSavingsPlan";
 	/** [Write] savingsplans:DeleteQueuedSavingsPlan */
-	static readonly DELETE_QUEUED_SAVINGS_PLAN =
+	static readonly DeleteQueuedSavingsPlan =
 		"savingsplans:DeleteQueuedSavingsPlan";
 	/** [Read] savingsplans:DescribeSavingsPlanRates */
-	static readonly DESCRIBE_SAVINGS_PLAN_RATES =
+	static readonly DescribeSavingsPlanRates =
 		"savingsplans:DescribeSavingsPlanRates";
 	/** [Read] savingsplans:DescribeSavingsPlans */
-	static readonly DESCRIBE_SAVINGS_PLANS = "savingsplans:DescribeSavingsPlans";
+	static readonly DescribeSavingsPlans = "savingsplans:DescribeSavingsPlans";
 	/** [Read] savingsplans:DescribeSavingsPlansOfferingRates */
-	static readonly DESCRIBE_SAVINGS_PLANS_OFFERING_RATES =
+	static readonly DescribeSavingsPlansOfferingRates =
 		"savingsplans:DescribeSavingsPlansOfferingRates";
 	/** [Read] savingsplans:DescribeSavingsPlansOfferings */
-	static readonly DESCRIBE_SAVINGS_PLANS_OFFERINGS =
+	static readonly DescribeSavingsPlansOfferings =
 		"savingsplans:DescribeSavingsPlansOfferings";
 	/** [List] savingsplans:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "savingsplans:ListTagsForResource";
+	static readonly ListTagsForResource = "savingsplans:ListTagsForResource";
 	/** [Write] savingsplans:ReturnSavingsPlan */
-	static readonly RETURN_SAVINGS_PLAN = "savingsplans:ReturnSavingsPlan";
+	static readonly ReturnSavingsPlan = "savingsplans:ReturnSavingsPlan";
 	/** [Tagging] savingsplans:TagResource */
-	static readonly TAG_RESOURCE = "savingsplans:TagResource";
+	static readonly TagResource = "savingsplans:TagResource";
 	/** [Tagging] savingsplans:UntagResource */
-	static readonly UNTAG_RESOURCE = "savingsplans:UntagResource";
+	static readonly UntagResource = "savingsplans:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SavingsplansActions.DESCRIBE_SAVINGS_PLAN_RATES,
-		SavingsplansActions.DESCRIBE_SAVINGS_PLANS,
-		SavingsplansActions.DESCRIBE_SAVINGS_PLANS_OFFERING_RATES,
-		SavingsplansActions.DESCRIBE_SAVINGS_PLANS_OFFERINGS,
+	static readonly AllReadActions: string[] = [
+		SavingsplansActions.DescribeSavingsPlanRates,
+		SavingsplansActions.DescribeSavingsPlans,
+		SavingsplansActions.DescribeSavingsPlansOfferingRates,
+		SavingsplansActions.DescribeSavingsPlansOfferings,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SavingsplansActions.CREATE_SAVINGS_PLAN,
-		SavingsplansActions.DELETE_QUEUED_SAVINGS_PLAN,
-		SavingsplansActions.RETURN_SAVINGS_PLAN,
+	static readonly AllWriteActions: string[] = [
+		SavingsplansActions.CreateSavingsPlan,
+		SavingsplansActions.DeleteQueuedSavingsPlan,
+		SavingsplansActions.ReturnSavingsPlan,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SavingsplansActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		SavingsplansActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SavingsplansActions.TAG_RESOURCE,
-		SavingsplansActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SavingsplansActions.TagResource,
+		SavingsplansActions.UntagResource,
 	];
 }
 
-const SavingsplanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):savingsplans::(?<account>[^:]*):savingsplan/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a savingsplan ARN.
+ */
+export interface SavingsplansSavingsplanArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a savingsplan ARN.
+ */
+export interface SavingsplansSavingsplanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const SavingsplanArnRegex =
+	/^arn:(?<partition>[^:]+):savingsplans::(?<account>[^:]*):savingsplan\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for savingsplans resources.
@@ -74,14 +97,7 @@ export class SavingsplansResources {
 	/**
 	 * Builds an ARN for the savingsplan resource.
 	 */
-	static savingsplan(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static savingsplan(props: SavingsplansSavingsplanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:savingsplans::${props.account ?? "*"}:savingsplan/${props.resourceId}`;
 	}
 
@@ -96,11 +112,9 @@ export class SavingsplansResources {
 	 * Parses a savingsplan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSavingsplanArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSavingsplanArn(
+		arn: string,
+	): SavingsplansSavingsplanArnComponents {
 		const match = SavingsplanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid savingsplan ARN: ${arn}`);
@@ -118,42 +132,42 @@ export class SavingsplansResources {
  */
 export class SavingsplansOperations {
 	/** IAM actions required for the CreateSavingsPlan API call. */
-	static readonly CREATE_SAVINGS_PLAN: string[] = [
+	static readonly CreateSavingsPlan: string[] = [
 		"savingsplans:CreateSavingsPlan",
 		"savingsplans:TagResource",
 	];
 	/** IAM actions required for the DeleteQueuedSavingsPlan API call. */
-	static readonly DELETE_QUEUED_SAVINGS_PLAN: string[] = [
+	static readonly DeleteQueuedSavingsPlan: string[] = [
 		"savingsplans:DeleteQueuedSavingsPlan",
 	];
 	/** IAM actions required for the DescribeSavingsPlanRates API call. */
-	static readonly DESCRIBE_SAVINGS_PLAN_RATES: string[] = [
+	static readonly DescribeSavingsPlanRates: string[] = [
 		"savingsplans:DescribeSavingsPlanRates",
 	];
 	/** IAM actions required for the DescribeSavingsPlans API call. */
-	static readonly DESCRIBE_SAVINGS_PLANS: string[] = [
+	static readonly DescribeSavingsPlans: string[] = [
 		"savingsplans:DescribeSavingsPlans",
 	];
 	/** IAM actions required for the DescribeSavingsPlansOfferingRates API call. */
-	static readonly DESCRIBE_SAVINGS_PLANS_OFFERING_RATES: string[] = [
+	static readonly DescribeSavingsPlansOfferingRates: string[] = [
 		"savingsplans:DescribeSavingsPlansOfferingRates",
 	];
 	/** IAM actions required for the DescribeSavingsPlansOfferings API call. */
-	static readonly DESCRIBE_SAVINGS_PLANS_OFFERINGS: string[] = [
+	static readonly DescribeSavingsPlansOfferings: string[] = [
 		"savingsplans:DescribeSavingsPlansOfferings",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"savingsplans:ListTagsForResource",
 	];
 	/** IAM actions required for the ReturnSavingsPlan API call. */
-	static readonly RETURN_SAVINGS_PLAN: string[] = [
+	static readonly ReturnSavingsPlan: string[] = [
 		"savingsplans:ReturnSavingsPlan",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["savingsplans:TagResource"];
+	static readonly TagResource: string[] = ["savingsplans:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["savingsplans:UntagResource"];
+	static readonly UntagResource: string[] = ["savingsplans:UntagResource"];
 }
 
 /**
@@ -161,40 +175,40 @@ export class SavingsplansOperations {
  */
 export class SavingsplansConditions {
 	/** Condition keys applicable to the CreateSavingsPlan action. */
-	static readonly CREATE_SAVINGS_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreateSavingsPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteQueuedSavingsPlan action. */
-	static readonly DELETE_QUEUED_SAVINGS_PLAN_CONDITION_KEYS: string[] = [
+	static readonly DeleteQueuedSavingsPlanConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeSavingsPlanRates action. */
-	static readonly DESCRIBE_SAVINGS_PLAN_RATES_CONDITION_KEYS: string[] = [
+	static readonly DescribeSavingsPlanRatesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeSavingsPlans action. */
-	static readonly DESCRIBE_SAVINGS_PLANS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSavingsPlansConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ReturnSavingsPlan action. */
-	static readonly RETURN_SAVINGS_PLAN_CONDITION_KEYS: string[] = [
+	static readonly ReturnSavingsPlanConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

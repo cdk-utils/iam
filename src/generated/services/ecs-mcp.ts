@@ -13,21 +13,21 @@ export class ECSMcpActions {
 	static readonly SERVICE_PREFIX = "ecs-mcp";
 
 	/** [Read] ecs-mcp:InvokeReadOnlyTools */
-	static readonly INVOKE_READ_ONLY_TOOLS = "ecs-mcp:InvokeReadOnlyTools";
+	static readonly InvokeReadOnlyTools = "ecs-mcp:InvokeReadOnlyTools";
 	/** [Read] ecs-mcp:UseMcp */
-	static readonly USE_MCP = "ecs-mcp:UseMcp";
+	static readonly UseMcp = "ecs-mcp:UseMcp";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ECSMcpActions.INVOKE_READ_ONLY_TOOLS,
-		ECSMcpActions.USE_MCP,
+	static readonly AllReadActions: string[] = [
+		ECSMcpActions.InvokeReadOnlyTools,
+		ECSMcpActions.UseMcp,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

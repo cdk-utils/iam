@@ -13,410 +13,775 @@ export class ProfileActions {
 	static readonly SERVICE_PREFIX = "profile";
 
 	/** [Write] profile:AddProfileKey */
-	static readonly ADD_PROFILE_KEY = "profile:AddProfileKey";
+	static readonly AddProfileKey = "profile:AddProfileKey";
 	/** [Read] profile:BatchGetCalculatedAttributeForProfile */
-	static readonly BATCH_GET_CALCULATED_ATTRIBUTE_FOR_PROFILE =
+	static readonly BatchGetCalculatedAttributeForProfile =
 		"profile:BatchGetCalculatedAttributeForProfile";
 	/** [Read] profile:BatchGetProfile */
-	static readonly BATCH_GET_PROFILE = "profile:BatchGetProfile";
+	static readonly BatchGetProfile = "profile:BatchGetProfile";
 	/** [Write] profile:CreateCalculatedAttributeDefinition */
-	static readonly CREATE_CALCULATED_ATTRIBUTE_DEFINITION =
+	static readonly CreateCalculatedAttributeDefinition =
 		"profile:CreateCalculatedAttributeDefinition";
 	/** [Write] profile:CreateDomain */
-	static readonly CREATE_DOMAIN = "profile:CreateDomain";
+	static readonly CreateDomain = "profile:CreateDomain";
 	/** [Write] profile:CreateDomainLayout */
-	static readonly CREATE_DOMAIN_LAYOUT = "profile:CreateDomainLayout";
+	static readonly CreateDomainLayout = "profile:CreateDomainLayout";
 	/** [Write] profile:CreateEventStream */
-	static readonly CREATE_EVENT_STREAM = "profile:CreateEventStream";
+	static readonly CreateEventStream = "profile:CreateEventStream";
 	/** [Write] profile:CreateEventTrigger */
-	static readonly CREATE_EVENT_TRIGGER = "profile:CreateEventTrigger";
+	static readonly CreateEventTrigger = "profile:CreateEventTrigger";
 	/** [Write] profile:CreateIntegrationWorkflow */
-	static readonly CREATE_INTEGRATION_WORKFLOW =
+	static readonly CreateIntegrationWorkflow =
 		"profile:CreateIntegrationWorkflow";
 	/** [Write] profile:CreateProfile */
-	static readonly CREATE_PROFILE = "profile:CreateProfile";
+	static readonly CreateProfile = "profile:CreateProfile";
 	/** [Write] profile:CreateRecommender */
-	static readonly CREATE_RECOMMENDER = "profile:CreateRecommender";
+	static readonly CreateRecommender = "profile:CreateRecommender";
 	/** [Write] profile:CreateRecommenderFilter */
-	static readonly CREATE_RECOMMENDER_FILTER = "profile:CreateRecommenderFilter";
+	static readonly CreateRecommenderFilter = "profile:CreateRecommenderFilter";
 	/** [Write] profile:CreateRecommenderSchema */
-	static readonly CREATE_RECOMMENDER_SCHEMA = "profile:CreateRecommenderSchema";
+	static readonly CreateRecommenderSchema = "profile:CreateRecommenderSchema";
 	/** [Write] profile:CreateSegmentDefinition */
-	static readonly CREATE_SEGMENT_DEFINITION = "profile:CreateSegmentDefinition";
+	static readonly CreateSegmentDefinition = "profile:CreateSegmentDefinition";
 	/** [Write] profile:CreateSegmentEstimate */
-	static readonly CREATE_SEGMENT_ESTIMATE = "profile:CreateSegmentEstimate";
+	static readonly CreateSegmentEstimate = "profile:CreateSegmentEstimate";
 	/** [Write] profile:CreateSegmentSnapshot */
-	static readonly CREATE_SEGMENT_SNAPSHOT = "profile:CreateSegmentSnapshot";
+	static readonly CreateSegmentSnapshot = "profile:CreateSegmentSnapshot";
 	/** [Write] profile:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "profile:CreateSnapshot";
+	static readonly CreateSnapshot = "profile:CreateSnapshot";
 	/** [Write] profile:CreateUploadJob */
-	static readonly CREATE_UPLOAD_JOB = "profile:CreateUploadJob";
+	static readonly CreateUploadJob = "profile:CreateUploadJob";
 	/** [Write] profile:DeleteCalculatedAttributeDefinition */
-	static readonly DELETE_CALCULATED_ATTRIBUTE_DEFINITION =
+	static readonly DeleteCalculatedAttributeDefinition =
 		"profile:DeleteCalculatedAttributeDefinition";
 	/** [Write] profile:DeleteDomain */
-	static readonly DELETE_DOMAIN = "profile:DeleteDomain";
+	static readonly DeleteDomain = "profile:DeleteDomain";
 	/** [Write] profile:DeleteDomainLayout */
-	static readonly DELETE_DOMAIN_LAYOUT = "profile:DeleteDomainLayout";
+	static readonly DeleteDomainLayout = "profile:DeleteDomainLayout";
 	/** [Write] profile:DeleteDomainObjectType */
-	static readonly DELETE_DOMAIN_OBJECT_TYPE = "profile:DeleteDomainObjectType";
+	static readonly DeleteDomainObjectType = "profile:DeleteDomainObjectType";
 	/** [Write] profile:DeleteEventStream */
-	static readonly DELETE_EVENT_STREAM = "profile:DeleteEventStream";
+	static readonly DeleteEventStream = "profile:DeleteEventStream";
 	/** [Write] profile:DeleteEventTrigger */
-	static readonly DELETE_EVENT_TRIGGER = "profile:DeleteEventTrigger";
+	static readonly DeleteEventTrigger = "profile:DeleteEventTrigger";
 	/** [Write] profile:DeleteIntegration */
-	static readonly DELETE_INTEGRATION = "profile:DeleteIntegration";
+	static readonly DeleteIntegration = "profile:DeleteIntegration";
 	/** [Write] profile:DeleteProfile */
-	static readonly DELETE_PROFILE = "profile:DeleteProfile";
+	static readonly DeleteProfile = "profile:DeleteProfile";
 	/** [Write] profile:DeleteProfileKey */
-	static readonly DELETE_PROFILE_KEY = "profile:DeleteProfileKey";
+	static readonly DeleteProfileKey = "profile:DeleteProfileKey";
 	/** [Write] profile:DeleteProfileObject */
-	static readonly DELETE_PROFILE_OBJECT = "profile:DeleteProfileObject";
+	static readonly DeleteProfileObject = "profile:DeleteProfileObject";
 	/** [Write] profile:DeleteProfileObjectType */
-	static readonly DELETE_PROFILE_OBJECT_TYPE =
-		"profile:DeleteProfileObjectType";
+	static readonly DeleteProfileObjectType = "profile:DeleteProfileObjectType";
 	/** [Write] profile:DeleteRecommender */
-	static readonly DELETE_RECOMMENDER = "profile:DeleteRecommender";
+	static readonly DeleteRecommender = "profile:DeleteRecommender";
 	/** [Write] profile:DeleteRecommenderFilter */
-	static readonly DELETE_RECOMMENDER_FILTER = "profile:DeleteRecommenderFilter";
+	static readonly DeleteRecommenderFilter = "profile:DeleteRecommenderFilter";
 	/** [Write] profile:DeleteRecommenderSchema */
-	static readonly DELETE_RECOMMENDER_SCHEMA = "profile:DeleteRecommenderSchema";
+	static readonly DeleteRecommenderSchema = "profile:DeleteRecommenderSchema";
 	/** [Write] profile:DeleteSegmentDefinition */
-	static readonly DELETE_SEGMENT_DEFINITION = "profile:DeleteSegmentDefinition";
+	static readonly DeleteSegmentDefinition = "profile:DeleteSegmentDefinition";
 	/** [Write] profile:DeleteWorkflow */
-	static readonly DELETE_WORKFLOW = "profile:DeleteWorkflow";
+	static readonly DeleteWorkflow = "profile:DeleteWorkflow";
 	/** [Read] profile:DetectProfileObjectType */
-	static readonly DETECT_PROFILE_OBJECT_TYPE =
-		"profile:DetectProfileObjectType";
+	static readonly DetectProfileObjectType = "profile:DetectProfileObjectType";
 	/** [Read] profile:GetAutoMergingPreview */
-	static readonly GET_AUTO_MERGING_PREVIEW = "profile:GetAutoMergingPreview";
+	static readonly actionGetAutoMergingPreview = "profile:GetAutoMergingPreview";
 	/** [Read] profile:GetCalculatedAttributeDefinition */
-	static readonly GET_CALCULATED_ATTRIBUTE_DEFINITION =
+	static readonly actionGetCalculatedAttributeDefinition =
 		"profile:GetCalculatedAttributeDefinition";
 	/** [Read] profile:GetCalculatedAttributeForProfile */
-	static readonly GET_CALCULATED_ATTRIBUTE_FOR_PROFILE =
+	static readonly actionGetCalculatedAttributeForProfile =
 		"profile:GetCalculatedAttributeForProfile";
 	/** [Read] profile:GetDomain */
-	static readonly GET_DOMAIN = "profile:GetDomain";
+	static readonly actionGetDomain = "profile:GetDomain";
 	/** [Read] profile:GetDomainLayout */
-	static readonly GET_DOMAIN_LAYOUT = "profile:GetDomainLayout";
+	static readonly actionGetDomainLayout = "profile:GetDomainLayout";
 	/** [Read] profile:GetDomainObjectType */
-	static readonly GET_DOMAIN_OBJECT_TYPE = "profile:GetDomainObjectType";
+	static readonly actionGetDomainObjectType = "profile:GetDomainObjectType";
 	/** [Read] profile:GetEventStream */
-	static readonly GET_EVENT_STREAM = "profile:GetEventStream";
+	static readonly actionGetEventStream = "profile:GetEventStream";
 	/** [Read] profile:GetEventTrigger */
-	static readonly GET_EVENT_TRIGGER = "profile:GetEventTrigger";
+	static readonly actionGetEventTrigger = "profile:GetEventTrigger";
 	/** [Read] profile:GetIdentityResolutionJob */
-	static readonly GET_IDENTITY_RESOLUTION_JOB =
+	static readonly actionGetIdentityResolutionJob =
 		"profile:GetIdentityResolutionJob";
 	/** [Read] profile:GetIntegration */
-	static readonly GET_INTEGRATION = "profile:GetIntegration";
+	static readonly actionGetIntegration = "profile:GetIntegration";
 	/** [List] profile:GetMatches */
-	static readonly GET_MATCHES = "profile:GetMatches";
+	static readonly actionGetMatches = "profile:GetMatches";
 	/** [Read] profile:GetObjectTypeAttributeStatistics */
-	static readonly GET_OBJECT_TYPE_ATTRIBUTE_STATISTICS =
+	static readonly actionGetObjectTypeAttributeStatistics =
 		"profile:GetObjectTypeAttributeStatistics";
 	/** [Read] profile:GetProfileHistoryRecord */
-	static readonly GET_PROFILE_HISTORY_RECORD =
+	static readonly actionGetProfileHistoryRecord =
 		"profile:GetProfileHistoryRecord";
 	/** [Read] profile:GetProfileInsights */
-	static readonly GET_PROFILE_INSIGHTS = "profile:GetProfileInsights";
+	static readonly actionGetProfileInsights = "profile:GetProfileInsights";
 	/** [Read] profile:GetProfileObjectType */
-	static readonly GET_PROFILE_OBJECT_TYPE = "profile:GetProfileObjectType";
+	static readonly actionGetProfileObjectType = "profile:GetProfileObjectType";
 	/** [Read] profile:GetProfileObjectTypeTemplate */
-	static readonly GET_PROFILE_OBJECT_TYPE_TEMPLATE =
+	static readonly actionGetProfileObjectTypeTemplate =
 		"profile:GetProfileObjectTypeTemplate";
 	/** [Read] profile:GetProfileRecommendations */
-	static readonly GET_PROFILE_RECOMMENDATIONS =
+	static readonly actionGetProfileRecommendations =
 		"profile:GetProfileRecommendations";
 	/** [Read] profile:GetRecommender */
-	static readonly GET_RECOMMENDER = "profile:GetRecommender";
+	static readonly actionGetRecommender = "profile:GetRecommender";
 	/** [Read] profile:GetRecommenderFilter */
-	static readonly GET_RECOMMENDER_FILTER = "profile:GetRecommenderFilter";
+	static readonly actionGetRecommenderFilter = "profile:GetRecommenderFilter";
 	/** [Read] profile:GetRecommenderSchema */
-	static readonly GET_RECOMMENDER_SCHEMA = "profile:GetRecommenderSchema";
+	static readonly actionGetRecommenderSchema = "profile:GetRecommenderSchema";
 	/** [Read] profile:GetSegmentDefinition */
-	static readonly GET_SEGMENT_DEFINITION = "profile:GetSegmentDefinition";
+	static readonly actionGetSegmentDefinition = "profile:GetSegmentDefinition";
 	/** [Read] profile:GetSegmentEstimate */
-	static readonly GET_SEGMENT_ESTIMATE = "profile:GetSegmentEstimate";
+	static readonly actionGetSegmentEstimate = "profile:GetSegmentEstimate";
 	/** [Read] profile:GetSegmentMembership */
-	static readonly GET_SEGMENT_MEMBERSHIP = "profile:GetSegmentMembership";
+	static readonly actionGetSegmentMembership = "profile:GetSegmentMembership";
 	/** [Read] profile:GetSegmentSnapshot */
-	static readonly GET_SEGMENT_SNAPSHOT = "profile:GetSegmentSnapshot";
+	static readonly actionGetSegmentSnapshot = "profile:GetSegmentSnapshot";
 	/** [List] profile:GetSimilarProfiles */
-	static readonly GET_SIMILAR_PROFILES = "profile:GetSimilarProfiles";
+	static readonly actionGetSimilarProfiles = "profile:GetSimilarProfiles";
 	/** [Read] profile:GetSnapshot */
-	static readonly GET_SNAPSHOT = "profile:GetSnapshot";
+	static readonly actionGetSnapshot = "profile:GetSnapshot";
 	/** [Read] profile:GetUploadJob */
-	static readonly GET_UPLOAD_JOB = "profile:GetUploadJob";
+	static readonly actionGetUploadJob = "profile:GetUploadJob";
 	/** [Read] profile:GetUploadJobPath */
-	static readonly GET_UPLOAD_JOB_PATH = "profile:GetUploadJobPath";
+	static readonly actionGetUploadJobPath = "profile:GetUploadJobPath";
 	/** [Read] profile:GetWorkflow */
-	static readonly GET_WORKFLOW = "profile:GetWorkflow";
+	static readonly actionGetWorkflow = "profile:GetWorkflow";
 	/** [Read] profile:GetWorkflowSteps */
-	static readonly GET_WORKFLOW_STEPS = "profile:GetWorkflowSteps";
+	static readonly actionGetWorkflowSteps = "profile:GetWorkflowSteps";
 	/** [List] profile:ListAccountIntegrations */
-	static readonly LIST_ACCOUNT_INTEGRATIONS = "profile:ListAccountIntegrations";
+	static readonly ListAccountIntegrations = "profile:ListAccountIntegrations";
 	/** [List] profile:ListCalculatedAttributeDefinitions */
-	static readonly LIST_CALCULATED_ATTRIBUTE_DEFINITIONS =
+	static readonly ListCalculatedAttributeDefinitions =
 		"profile:ListCalculatedAttributeDefinitions";
 	/** [List] profile:ListCalculatedAttributesForProfile */
-	static readonly LIST_CALCULATED_ATTRIBUTES_FOR_PROFILE =
+	static readonly ListCalculatedAttributesForProfile =
 		"profile:ListCalculatedAttributesForProfile";
 	/** [List] profile:ListDomainLayouts */
-	static readonly LIST_DOMAIN_LAYOUTS = "profile:ListDomainLayouts";
+	static readonly ListDomainLayouts = "profile:ListDomainLayouts";
 	/** [List] profile:ListDomainObjectTypes */
-	static readonly LIST_DOMAIN_OBJECT_TYPES = "profile:ListDomainObjectTypes";
+	static readonly ListDomainObjectTypes = "profile:ListDomainObjectTypes";
 	/** [List] profile:ListDomainObjects */
-	static readonly LIST_DOMAIN_OBJECTS = "profile:ListDomainObjects";
+	static readonly ListDomainObjects = "profile:ListDomainObjects";
 	/** [List] profile:ListDomains */
-	static readonly LIST_DOMAINS = "profile:ListDomains";
+	static readonly ListDomains = "profile:ListDomains";
 	/** [List] profile:ListEventStreams */
-	static readonly LIST_EVENT_STREAMS = "profile:ListEventStreams";
+	static readonly ListEventStreams = "profile:ListEventStreams";
 	/** [List] profile:ListEventTriggers */
-	static readonly LIST_EVENT_TRIGGERS = "profile:ListEventTriggers";
+	static readonly ListEventTriggers = "profile:ListEventTriggers";
 	/** [List] profile:ListIdentityResolutionJobs */
-	static readonly LIST_IDENTITY_RESOLUTION_JOBS =
+	static readonly ListIdentityResolutionJobs =
 		"profile:ListIdentityResolutionJobs";
 	/** [List] profile:ListIntegrations */
-	static readonly LIST_INTEGRATIONS = "profile:ListIntegrations";
+	static readonly ListIntegrations = "profile:ListIntegrations";
 	/** [List] profile:ListObjectTypeAttributeValues */
-	static readonly LIST_OBJECT_TYPE_ATTRIBUTE_VALUES =
+	static readonly ListObjectTypeAttributeValues =
 		"profile:ListObjectTypeAttributeValues";
 	/** [List] profile:ListObjectTypeAttributes */
-	static readonly LIST_OBJECT_TYPE_ATTRIBUTES =
-		"profile:ListObjectTypeAttributes";
+	static readonly ListObjectTypeAttributes = "profile:ListObjectTypeAttributes";
 	/** [List] profile:ListProfileAttributeValues */
-	static readonly LIST_PROFILE_ATTRIBUTE_VALUES =
+	static readonly ListProfileAttributeValues =
 		"profile:ListProfileAttributeValues";
 	/** [List] profile:ListProfileHistoryRecords */
-	static readonly LIST_PROFILE_HISTORY_RECORDS =
+	static readonly ListProfileHistoryRecords =
 		"profile:ListProfileHistoryRecords";
 	/** [List] profile:ListProfileObjectTypeTemplates */
-	static readonly LIST_PROFILE_OBJECT_TYPE_TEMPLATES =
+	static readonly ListProfileObjectTypeTemplates =
 		"profile:ListProfileObjectTypeTemplates";
 	/** [List] profile:ListProfileObjectTypes */
-	static readonly LIST_PROFILE_OBJECT_TYPES = "profile:ListProfileObjectTypes";
+	static readonly ListProfileObjectTypes = "profile:ListProfileObjectTypes";
 	/** [List] profile:ListProfileObjects */
-	static readonly LIST_PROFILE_OBJECTS = "profile:ListProfileObjects";
+	static readonly ListProfileObjects = "profile:ListProfileObjects";
 	/** [List] profile:ListRecommenderFilters */
-	static readonly LIST_RECOMMENDER_FILTERS = "profile:ListRecommenderFilters";
+	static readonly ListRecommenderFilters = "profile:ListRecommenderFilters";
 	/** [List] profile:ListRecommenderRecipes */
-	static readonly LIST_RECOMMENDER_RECIPES = "profile:ListRecommenderRecipes";
+	static readonly ListRecommenderRecipes = "profile:ListRecommenderRecipes";
 	/** [List] profile:ListRecommenderSchemas */
-	static readonly LIST_RECOMMENDER_SCHEMAS = "profile:ListRecommenderSchemas";
+	static readonly ListRecommenderSchemas = "profile:ListRecommenderSchemas";
 	/** [List] profile:ListRecommenders */
-	static readonly LIST_RECOMMENDERS = "profile:ListRecommenders";
+	static readonly ListRecommenders = "profile:ListRecommenders";
 	/** [List] profile:ListRuleBasedMatches */
-	static readonly LIST_RULE_BASED_MATCHES = "profile:ListRuleBasedMatches";
+	static readonly ListRuleBasedMatches = "profile:ListRuleBasedMatches";
 	/** [List] profile:ListSegmentDefinitions */
-	static readonly LIST_SEGMENT_DEFINITIONS = "profile:ListSegmentDefinitions";
+	static readonly ListSegmentDefinitions = "profile:ListSegmentDefinitions";
 	/** [Read] profile:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "profile:ListTagsForResource";
+	static readonly ListTagsForResource = "profile:ListTagsForResource";
 	/** [List] profile:ListUploadJobs */
-	static readonly LIST_UPLOAD_JOBS = "profile:ListUploadJobs";
+	static readonly ListUploadJobs = "profile:ListUploadJobs";
 	/** [List] profile:ListWorkflows */
-	static readonly LIST_WORKFLOWS = "profile:ListWorkflows";
+	static readonly ListWorkflows = "profile:ListWorkflows";
 	/** [Write] profile:MergeProfiles */
-	static readonly MERGE_PROFILES = "profile:MergeProfiles";
+	static readonly MergeProfiles = "profile:MergeProfiles";
 	/** [Write] profile:PutDomainObjectType */
-	static readonly PUT_DOMAIN_OBJECT_TYPE = "profile:PutDomainObjectType";
+	static readonly PutDomainObjectType = "profile:PutDomainObjectType";
 	/** [Write] profile:PutIntegration */
-	static readonly PUT_INTEGRATION = "profile:PutIntegration";
+	static readonly PutIntegration = "profile:PutIntegration";
 	/** [Write] profile:PutProfileObject */
-	static readonly PUT_PROFILE_OBJECT = "profile:PutProfileObject";
+	static readonly PutProfileObject = "profile:PutProfileObject";
 	/** [Write] profile:PutProfileObjectType */
-	static readonly PUT_PROFILE_OBJECT_TYPE = "profile:PutProfileObjectType";
+	static readonly PutProfileObjectType = "profile:PutProfileObjectType";
 	/** [Read] profile:SearchProfiles */
-	static readonly SEARCH_PROFILES = "profile:SearchProfiles";
+	static readonly SearchProfiles = "profile:SearchProfiles";
 	/** [Write] profile:StartRecommender */
-	static readonly START_RECOMMENDER = "profile:StartRecommender";
+	static readonly StartRecommender = "profile:StartRecommender";
 	/** [Write] profile:StartUploadJob */
-	static readonly START_UPLOAD_JOB = "profile:StartUploadJob";
+	static readonly StartUploadJob = "profile:StartUploadJob";
 	/** [Write] profile:StopRecommender */
-	static readonly STOP_RECOMMENDER = "profile:StopRecommender";
+	static readonly StopRecommender = "profile:StopRecommender";
 	/** [Write] profile:StopUploadJob */
-	static readonly STOP_UPLOAD_JOB = "profile:StopUploadJob";
+	static readonly StopUploadJob = "profile:StopUploadJob";
 	/** [Tagging] profile:TagResource */
-	static readonly TAG_RESOURCE = "profile:TagResource";
+	static readonly TagResource = "profile:TagResource";
 	/** [Tagging] profile:UntagResource */
-	static readonly UNTAG_RESOURCE = "profile:UntagResource";
+	static readonly UntagResource = "profile:UntagResource";
 	/** [Write] profile:UpdateCalculatedAttributeDefinition */
-	static readonly UPDATE_CALCULATED_ATTRIBUTE_DEFINITION =
+	static readonly UpdateCalculatedAttributeDefinition =
 		"profile:UpdateCalculatedAttributeDefinition";
 	/** [Write] profile:UpdateDomain */
-	static readonly UPDATE_DOMAIN = "profile:UpdateDomain";
+	static readonly UpdateDomain = "profile:UpdateDomain";
 	/** [Write] profile:UpdateDomainLayout */
-	static readonly UPDATE_DOMAIN_LAYOUT = "profile:UpdateDomainLayout";
+	static readonly UpdateDomainLayout = "profile:UpdateDomainLayout";
 	/** [Write] profile:UpdateEventTrigger */
-	static readonly UPDATE_EVENT_TRIGGER = "profile:UpdateEventTrigger";
+	static readonly UpdateEventTrigger = "profile:UpdateEventTrigger";
 	/** [Write] profile:UpdateProfile */
-	static readonly UPDATE_PROFILE = "profile:UpdateProfile";
+	static readonly UpdateProfile = "profile:UpdateProfile";
 	/** [Write] profile:UpdateRecommender */
-	static readonly UPDATE_RECOMMENDER = "profile:UpdateRecommender";
+	static readonly UpdateRecommender = "profile:UpdateRecommender";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ProfileActions.BATCH_GET_CALCULATED_ATTRIBUTE_FOR_PROFILE,
-		ProfileActions.BATCH_GET_PROFILE,
-		ProfileActions.DETECT_PROFILE_OBJECT_TYPE,
-		ProfileActions.GET_AUTO_MERGING_PREVIEW,
-		ProfileActions.GET_CALCULATED_ATTRIBUTE_DEFINITION,
-		ProfileActions.GET_CALCULATED_ATTRIBUTE_FOR_PROFILE,
-		ProfileActions.GET_DOMAIN,
-		ProfileActions.GET_DOMAIN_LAYOUT,
-		ProfileActions.GET_DOMAIN_OBJECT_TYPE,
-		ProfileActions.GET_EVENT_STREAM,
-		ProfileActions.GET_EVENT_TRIGGER,
-		ProfileActions.GET_IDENTITY_RESOLUTION_JOB,
-		ProfileActions.GET_INTEGRATION,
-		ProfileActions.GET_OBJECT_TYPE_ATTRIBUTE_STATISTICS,
-		ProfileActions.GET_PROFILE_HISTORY_RECORD,
-		ProfileActions.GET_PROFILE_INSIGHTS,
-		ProfileActions.GET_PROFILE_OBJECT_TYPE,
-		ProfileActions.GET_PROFILE_OBJECT_TYPE_TEMPLATE,
-		ProfileActions.GET_PROFILE_RECOMMENDATIONS,
-		ProfileActions.GET_RECOMMENDER,
-		ProfileActions.GET_RECOMMENDER_FILTER,
-		ProfileActions.GET_RECOMMENDER_SCHEMA,
-		ProfileActions.GET_SEGMENT_DEFINITION,
-		ProfileActions.GET_SEGMENT_ESTIMATE,
-		ProfileActions.GET_SEGMENT_MEMBERSHIP,
-		ProfileActions.GET_SEGMENT_SNAPSHOT,
-		ProfileActions.GET_SNAPSHOT,
-		ProfileActions.GET_UPLOAD_JOB,
-		ProfileActions.GET_UPLOAD_JOB_PATH,
-		ProfileActions.GET_WORKFLOW,
-		ProfileActions.GET_WORKFLOW_STEPS,
-		ProfileActions.LIST_TAGS_FOR_RESOURCE,
-		ProfileActions.SEARCH_PROFILES,
+	static readonly AllReadActions: string[] = [
+		ProfileActions.BatchGetCalculatedAttributeForProfile,
+		ProfileActions.BatchGetProfile,
+		ProfileActions.DetectProfileObjectType,
+		ProfileActions.actionGetAutoMergingPreview,
+		ProfileActions.actionGetCalculatedAttributeDefinition,
+		ProfileActions.actionGetCalculatedAttributeForProfile,
+		ProfileActions.actionGetDomain,
+		ProfileActions.actionGetDomainLayout,
+		ProfileActions.actionGetDomainObjectType,
+		ProfileActions.actionGetEventStream,
+		ProfileActions.actionGetEventTrigger,
+		ProfileActions.actionGetIdentityResolutionJob,
+		ProfileActions.actionGetIntegration,
+		ProfileActions.actionGetObjectTypeAttributeStatistics,
+		ProfileActions.actionGetProfileHistoryRecord,
+		ProfileActions.actionGetProfileInsights,
+		ProfileActions.actionGetProfileObjectType,
+		ProfileActions.actionGetProfileObjectTypeTemplate,
+		ProfileActions.actionGetProfileRecommendations,
+		ProfileActions.actionGetRecommender,
+		ProfileActions.actionGetRecommenderFilter,
+		ProfileActions.actionGetRecommenderSchema,
+		ProfileActions.actionGetSegmentDefinition,
+		ProfileActions.actionGetSegmentEstimate,
+		ProfileActions.actionGetSegmentMembership,
+		ProfileActions.actionGetSegmentSnapshot,
+		ProfileActions.actionGetSnapshot,
+		ProfileActions.actionGetUploadJob,
+		ProfileActions.actionGetUploadJobPath,
+		ProfileActions.actionGetWorkflow,
+		ProfileActions.actionGetWorkflowSteps,
+		ProfileActions.ListTagsForResource,
+		ProfileActions.SearchProfiles,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ProfileActions.ADD_PROFILE_KEY,
-		ProfileActions.CREATE_CALCULATED_ATTRIBUTE_DEFINITION,
-		ProfileActions.CREATE_DOMAIN,
-		ProfileActions.CREATE_DOMAIN_LAYOUT,
-		ProfileActions.CREATE_EVENT_STREAM,
-		ProfileActions.CREATE_EVENT_TRIGGER,
-		ProfileActions.CREATE_INTEGRATION_WORKFLOW,
-		ProfileActions.CREATE_PROFILE,
-		ProfileActions.CREATE_RECOMMENDER,
-		ProfileActions.CREATE_RECOMMENDER_FILTER,
-		ProfileActions.CREATE_RECOMMENDER_SCHEMA,
-		ProfileActions.CREATE_SEGMENT_DEFINITION,
-		ProfileActions.CREATE_SEGMENT_ESTIMATE,
-		ProfileActions.CREATE_SEGMENT_SNAPSHOT,
-		ProfileActions.CREATE_SNAPSHOT,
-		ProfileActions.CREATE_UPLOAD_JOB,
-		ProfileActions.DELETE_CALCULATED_ATTRIBUTE_DEFINITION,
-		ProfileActions.DELETE_DOMAIN,
-		ProfileActions.DELETE_DOMAIN_LAYOUT,
-		ProfileActions.DELETE_DOMAIN_OBJECT_TYPE,
-		ProfileActions.DELETE_EVENT_STREAM,
-		ProfileActions.DELETE_EVENT_TRIGGER,
-		ProfileActions.DELETE_INTEGRATION,
-		ProfileActions.DELETE_PROFILE,
-		ProfileActions.DELETE_PROFILE_KEY,
-		ProfileActions.DELETE_PROFILE_OBJECT,
-		ProfileActions.DELETE_PROFILE_OBJECT_TYPE,
-		ProfileActions.DELETE_RECOMMENDER,
-		ProfileActions.DELETE_RECOMMENDER_FILTER,
-		ProfileActions.DELETE_RECOMMENDER_SCHEMA,
-		ProfileActions.DELETE_SEGMENT_DEFINITION,
-		ProfileActions.DELETE_WORKFLOW,
-		ProfileActions.MERGE_PROFILES,
-		ProfileActions.PUT_DOMAIN_OBJECT_TYPE,
-		ProfileActions.PUT_INTEGRATION,
-		ProfileActions.PUT_PROFILE_OBJECT,
-		ProfileActions.PUT_PROFILE_OBJECT_TYPE,
-		ProfileActions.START_RECOMMENDER,
-		ProfileActions.START_UPLOAD_JOB,
-		ProfileActions.STOP_RECOMMENDER,
-		ProfileActions.STOP_UPLOAD_JOB,
-		ProfileActions.UPDATE_CALCULATED_ATTRIBUTE_DEFINITION,
-		ProfileActions.UPDATE_DOMAIN,
-		ProfileActions.UPDATE_DOMAIN_LAYOUT,
-		ProfileActions.UPDATE_EVENT_TRIGGER,
-		ProfileActions.UPDATE_PROFILE,
-		ProfileActions.UPDATE_RECOMMENDER,
+	static readonly AllWriteActions: string[] = [
+		ProfileActions.AddProfileKey,
+		ProfileActions.CreateCalculatedAttributeDefinition,
+		ProfileActions.CreateDomain,
+		ProfileActions.CreateDomainLayout,
+		ProfileActions.CreateEventStream,
+		ProfileActions.CreateEventTrigger,
+		ProfileActions.CreateIntegrationWorkflow,
+		ProfileActions.CreateProfile,
+		ProfileActions.CreateRecommender,
+		ProfileActions.CreateRecommenderFilter,
+		ProfileActions.CreateRecommenderSchema,
+		ProfileActions.CreateSegmentDefinition,
+		ProfileActions.CreateSegmentEstimate,
+		ProfileActions.CreateSegmentSnapshot,
+		ProfileActions.CreateSnapshot,
+		ProfileActions.CreateUploadJob,
+		ProfileActions.DeleteCalculatedAttributeDefinition,
+		ProfileActions.DeleteDomain,
+		ProfileActions.DeleteDomainLayout,
+		ProfileActions.DeleteDomainObjectType,
+		ProfileActions.DeleteEventStream,
+		ProfileActions.DeleteEventTrigger,
+		ProfileActions.DeleteIntegration,
+		ProfileActions.DeleteProfile,
+		ProfileActions.DeleteProfileKey,
+		ProfileActions.DeleteProfileObject,
+		ProfileActions.DeleteProfileObjectType,
+		ProfileActions.DeleteRecommender,
+		ProfileActions.DeleteRecommenderFilter,
+		ProfileActions.DeleteRecommenderSchema,
+		ProfileActions.DeleteSegmentDefinition,
+		ProfileActions.DeleteWorkflow,
+		ProfileActions.MergeProfiles,
+		ProfileActions.PutDomainObjectType,
+		ProfileActions.PutIntegration,
+		ProfileActions.PutProfileObject,
+		ProfileActions.PutProfileObjectType,
+		ProfileActions.StartRecommender,
+		ProfileActions.StartUploadJob,
+		ProfileActions.StopRecommender,
+		ProfileActions.StopUploadJob,
+		ProfileActions.UpdateCalculatedAttributeDefinition,
+		ProfileActions.UpdateDomain,
+		ProfileActions.UpdateDomainLayout,
+		ProfileActions.UpdateEventTrigger,
+		ProfileActions.UpdateProfile,
+		ProfileActions.UpdateRecommender,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ProfileActions.GET_MATCHES,
-		ProfileActions.GET_SIMILAR_PROFILES,
-		ProfileActions.LIST_ACCOUNT_INTEGRATIONS,
-		ProfileActions.LIST_CALCULATED_ATTRIBUTE_DEFINITIONS,
-		ProfileActions.LIST_CALCULATED_ATTRIBUTES_FOR_PROFILE,
-		ProfileActions.LIST_DOMAIN_LAYOUTS,
-		ProfileActions.LIST_DOMAIN_OBJECT_TYPES,
-		ProfileActions.LIST_DOMAIN_OBJECTS,
-		ProfileActions.LIST_DOMAINS,
-		ProfileActions.LIST_EVENT_STREAMS,
-		ProfileActions.LIST_EVENT_TRIGGERS,
-		ProfileActions.LIST_IDENTITY_RESOLUTION_JOBS,
-		ProfileActions.LIST_INTEGRATIONS,
-		ProfileActions.LIST_OBJECT_TYPE_ATTRIBUTE_VALUES,
-		ProfileActions.LIST_OBJECT_TYPE_ATTRIBUTES,
-		ProfileActions.LIST_PROFILE_ATTRIBUTE_VALUES,
-		ProfileActions.LIST_PROFILE_HISTORY_RECORDS,
-		ProfileActions.LIST_PROFILE_OBJECT_TYPE_TEMPLATES,
-		ProfileActions.LIST_PROFILE_OBJECT_TYPES,
-		ProfileActions.LIST_PROFILE_OBJECTS,
-		ProfileActions.LIST_RECOMMENDER_FILTERS,
-		ProfileActions.LIST_RECOMMENDER_RECIPES,
-		ProfileActions.LIST_RECOMMENDER_SCHEMAS,
-		ProfileActions.LIST_RECOMMENDERS,
-		ProfileActions.LIST_RULE_BASED_MATCHES,
-		ProfileActions.LIST_SEGMENT_DEFINITIONS,
-		ProfileActions.LIST_UPLOAD_JOBS,
-		ProfileActions.LIST_WORKFLOWS,
+	static readonly AllListActions: string[] = [
+		ProfileActions.actionGetMatches,
+		ProfileActions.actionGetSimilarProfiles,
+		ProfileActions.ListAccountIntegrations,
+		ProfileActions.ListCalculatedAttributeDefinitions,
+		ProfileActions.ListCalculatedAttributesForProfile,
+		ProfileActions.ListDomainLayouts,
+		ProfileActions.ListDomainObjectTypes,
+		ProfileActions.ListDomainObjects,
+		ProfileActions.ListDomains,
+		ProfileActions.ListEventStreams,
+		ProfileActions.ListEventTriggers,
+		ProfileActions.ListIdentityResolutionJobs,
+		ProfileActions.ListIntegrations,
+		ProfileActions.ListObjectTypeAttributeValues,
+		ProfileActions.ListObjectTypeAttributes,
+		ProfileActions.ListProfileAttributeValues,
+		ProfileActions.ListProfileHistoryRecords,
+		ProfileActions.ListProfileObjectTypeTemplates,
+		ProfileActions.ListProfileObjectTypes,
+		ProfileActions.ListProfileObjects,
+		ProfileActions.ListRecommenderFilters,
+		ProfileActions.ListRecommenderRecipes,
+		ProfileActions.ListRecommenderSchemas,
+		ProfileActions.ListRecommenders,
+		ProfileActions.ListRuleBasedMatches,
+		ProfileActions.ListSegmentDefinitions,
+		ProfileActions.ListUploadJobs,
+		ProfileActions.ListWorkflows,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ProfileActions.TAG_RESOURCE,
-		ProfileActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ProfileActions.TagResource,
+		ProfileActions.UntagResource,
 	];
 }
 
-const CalculatedAttributesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/calculated-attributes/(?<calculatedAttributeName>[^:/?]+)$",
-);
-const DomainObjectTypesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/domain-object-types/(?<objectTypeName>[^:/?]+)$",
-);
-const DomainsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)$",
-);
-const EventStreamsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/event-streams/(?<eventStreamName>[^:/?]+)$",
-);
-const EventTriggersArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/event-triggers/(?<eventTriggerName>[^:/?]+)$",
-);
-const IntegrationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/integrations/(?<uri>[^:/?]+)$",
-);
-const LayoutsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/layouts/(?<layoutDefinitionName>[^:/?]+)$",
-);
-const ObjectTypesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/object-types/(?<objectTypeName>[^:/?]+)$",
-);
-const RecommenderFiltersArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/recommender-filters/(?<recommenderFilterName>[^:/?]+)$",
-);
-const RecommenderSchemasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/recommender-schemas/(?<recommenderSchemaName>[^:/?]+)$",
-);
-const RecommendersArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/recommenders/(?<recommenderTypeName>[^:/?]+)$",
-);
-const SegmentDefinitionsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains/(?<domainName>[^:/?]+)/segment-definitions/(?<segmentDefinitionName>[^:/?]+)$",
-);
+/**
+ * Properties for building a calculated-attributes ARN.
+ */
+export interface ProfileCalculatedAttributesArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The CalculatedAttributeName component of the ARN. */
+	readonly calculatedAttributeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a calculated-attributes ARN.
+ */
+export interface ProfileCalculatedAttributesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The CalculatedAttributeName component. */
+	readonly calculatedAttributeName: string;
+}
+
+/**
+ * Properties for building a domain-object-types ARN.
+ */
+export interface ProfileDomainObjectTypesArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The ObjectTypeName component of the ARN. */
+	readonly objectTypeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain-object-types ARN.
+ */
+export interface ProfileDomainObjectTypesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The ObjectTypeName component. */
+	readonly objectTypeName: string;
+}
+
+/**
+ * Properties for building a domains ARN.
+ */
+export interface ProfileDomainsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domains ARN.
+ */
+export interface ProfileDomainsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a event-streams ARN.
+ */
+export interface ProfileEventStreamsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The EventStreamName component of the ARN. */
+	readonly eventStreamName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-streams ARN.
+ */
+export interface ProfileEventStreamsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The EventStreamName component. */
+	readonly eventStreamName: string;
+}
+
+/**
+ * Properties for building a event-triggers ARN.
+ */
+export interface ProfileEventTriggersArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The EventTriggerName component of the ARN. */
+	readonly eventTriggerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a event-triggers ARN.
+ */
+export interface ProfileEventTriggersArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The EventTriggerName component. */
+	readonly eventTriggerName: string;
+}
+
+/**
+ * Properties for building a integrations ARN.
+ */
+export interface ProfileIntegrationsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The Uri component of the ARN. */
+	readonly uri: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a integrations ARN.
+ */
+export interface ProfileIntegrationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The Uri component. */
+	readonly uri: string;
+}
+
+/**
+ * Properties for building a layouts ARN.
+ */
+export interface ProfileLayoutsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The LayoutDefinitionName component of the ARN. */
+	readonly layoutDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a layouts ARN.
+ */
+export interface ProfileLayoutsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The LayoutDefinitionName component. */
+	readonly layoutDefinitionName: string;
+}
+
+/**
+ * Properties for building a object-types ARN.
+ */
+export interface ProfileObjectTypesArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The ObjectTypeName component of the ARN. */
+	readonly objectTypeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a object-types ARN.
+ */
+export interface ProfileObjectTypesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The ObjectTypeName component. */
+	readonly objectTypeName: string;
+}
+
+/**
+ * Properties for building a recommender-filters ARN.
+ */
+export interface ProfileRecommenderFiltersArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RecommenderFilterName component of the ARN. */
+	readonly recommenderFilterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recommender-filters ARN.
+ */
+export interface ProfileRecommenderFiltersArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RecommenderFilterName component. */
+	readonly recommenderFilterName: string;
+}
+
+/**
+ * Properties for building a recommender-schemas ARN.
+ */
+export interface ProfileRecommenderSchemasArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RecommenderSchemaName component of the ARN. */
+	readonly recommenderSchemaName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recommender-schemas ARN.
+ */
+export interface ProfileRecommenderSchemasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RecommenderSchemaName component. */
+	readonly recommenderSchemaName: string;
+}
+
+/**
+ * Properties for building a recommenders ARN.
+ */
+export interface ProfileRecommendersArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RecommenderTypeName component of the ARN. */
+	readonly recommenderTypeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recommenders ARN.
+ */
+export interface ProfileRecommendersArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RecommenderTypeName component. */
+	readonly recommenderTypeName: string;
+}
+
+/**
+ * Properties for building a segment-definitions ARN.
+ */
+export interface ProfileSegmentDefinitionsArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The SegmentDefinitionName component of the ARN. */
+	readonly segmentDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a segment-definitions ARN.
+ */
+export interface ProfileSegmentDefinitionsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The SegmentDefinitionName component. */
+	readonly segmentDefinitionName: string;
+}
+
+const CalculatedAttributesArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/calculated-attributes\/(?<calculatedAttributeName>[^:/?]+)$/;
+const DomainObjectTypesArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/domain-object-types\/(?<objectTypeName>[^:/?]+)$/;
+const DomainsArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)$/;
+const EventStreamsArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/event-streams\/(?<eventStreamName>[^:/?]+)$/;
+const EventTriggersArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/event-triggers\/(?<eventTriggerName>[^:/?]+)$/;
+const IntegrationsArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/integrations\/(?<uri>[^:/?]+)$/;
+const LayoutsArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/layouts\/(?<layoutDefinitionName>[^:/?]+)$/;
+const ObjectTypesArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/object-types\/(?<objectTypeName>[^:/?]+)$/;
+const RecommenderFiltersArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/recommender-filters\/(?<recommenderFilterName>[^:/?]+)$/;
+const RecommenderSchemasArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/recommender-schemas\/(?<recommenderSchemaName>[^:/?]+)$/;
+const RecommendersArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/recommenders\/(?<recommenderTypeName>[^:/?]+)$/;
+const SegmentDefinitionsArnRegex =
+	/^arn:(?<partition>[^:]+):profile:(?<region>[^:]*):(?<account>[^:]*):domains\/(?<domainName>[^:/?]+)\/segment-definitions\/(?<segmentDefinitionName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for profile resources.
@@ -425,18 +790,9 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the calculated-attributes resource.
 	 */
-	static calculatedAttributes(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The CalculatedAttributeName component of the ARN. */
-		readonly calculatedAttributeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static calculatedAttributes(
+		props: ProfileCalculatedAttributesArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/calculated-attributes/${props.calculatedAttributeName}`;
 	}
 
@@ -451,13 +807,9 @@ export class ProfileResources {
 	 * Parses a calculated-attributes ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCalculatedAttributesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		calculatedAttributeName: string;
-	} {
+	static parseCalculatedAttributesArn(
+		arn: string,
+	): ProfileCalculatedAttributesArnComponents {
 		const match = CalculatedAttributesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid calculated-attributes ARN: ${arn}`);
@@ -474,18 +826,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the domain-object-types resource.
 	 */
-	static domainObjectTypes(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The ObjectTypeName component of the ARN. */
-		readonly objectTypeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainObjectTypes(props: ProfileDomainObjectTypesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/domain-object-types/${props.objectTypeName}`;
 	}
 
@@ -500,13 +841,9 @@ export class ProfileResources {
 	 * Parses a domain-object-types ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainObjectTypesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		objectTypeName: string;
-	} {
+	static parseDomainObjectTypesArn(
+		arn: string,
+	): ProfileDomainObjectTypesArnComponents {
 		const match = DomainObjectTypesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain-object-types ARN: ${arn}`);
@@ -523,16 +860,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the domains resource.
 	 */
-	static domains(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domains(props: ProfileDomainsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}`;
 	}
 
@@ -547,12 +875,7 @@ export class ProfileResources {
 	 * Parses a domains ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainsArn(arn: string): ProfileDomainsArnComponents {
 		const match = DomainsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domains ARN: ${arn}`);
@@ -568,18 +891,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the event-streams resource.
 	 */
-	static eventStreams(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The EventStreamName component of the ARN. */
-		readonly eventStreamName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventStreams(props: ProfileEventStreamsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/event-streams/${props.eventStreamName}`;
 	}
 
@@ -594,13 +906,7 @@ export class ProfileResources {
 	 * Parses a event-streams ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventStreamsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		eventStreamName: string;
-	} {
+	static parseEventStreamsArn(arn: string): ProfileEventStreamsArnComponents {
 		const match = EventStreamsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid event-streams ARN: ${arn}`);
@@ -617,18 +923,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the event-triggers resource.
 	 */
-	static eventTriggers(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The EventTriggerName component of the ARN. */
-		readonly eventTriggerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventTriggers(props: ProfileEventTriggersArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/event-triggers/${props.eventTriggerName}`;
 	}
 
@@ -643,13 +938,7 @@ export class ProfileResources {
 	 * Parses a event-triggers ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventTriggersArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		eventTriggerName: string;
-	} {
+	static parseEventTriggersArn(arn: string): ProfileEventTriggersArnComponents {
 		const match = EventTriggersArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid event-triggers ARN: ${arn}`);
@@ -666,18 +955,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the integrations resource.
 	 */
-	static integrations(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The Uri component of the ARN. */
-		readonly uri: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrations(props: ProfileIntegrationsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/integrations/${props.uri}`;
 	}
 
@@ -692,13 +970,7 @@ export class ProfileResources {
 	 * Parses a integrations ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		uri: string;
-	} {
+	static parseIntegrationsArn(arn: string): ProfileIntegrationsArnComponents {
 		const match = IntegrationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid integrations ARN: ${arn}`);
@@ -715,18 +987,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the layouts resource.
 	 */
-	static layouts(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The LayoutDefinitionName component of the ARN. */
-		readonly layoutDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static layouts(props: ProfileLayoutsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/layouts/${props.layoutDefinitionName}`;
 	}
 
@@ -741,13 +1002,7 @@ export class ProfileResources {
 	 * Parses a layouts ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLayoutsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		layoutDefinitionName: string;
-	} {
+	static parseLayoutsArn(arn: string): ProfileLayoutsArnComponents {
 		const match = LayoutsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid layouts ARN: ${arn}`);
@@ -764,18 +1019,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the object-types resource.
 	 */
-	static objectTypes(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The ObjectTypeName component of the ARN. */
-		readonly objectTypeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static objectTypes(props: ProfileObjectTypesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/object-types/${props.objectTypeName}`;
 	}
 
@@ -790,13 +1034,7 @@ export class ProfileResources {
 	 * Parses a object-types ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseObjectTypesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		objectTypeName: string;
-	} {
+	static parseObjectTypesArn(arn: string): ProfileObjectTypesArnComponents {
 		const match = ObjectTypesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid object-types ARN: ${arn}`);
@@ -813,18 +1051,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the recommender-filters resource.
 	 */
-	static recommenderFilters(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RecommenderFilterName component of the ARN. */
-		readonly recommenderFilterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recommenderFilters(props: ProfileRecommenderFiltersArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/recommender-filters/${props.recommenderFilterName}`;
 	}
 
@@ -839,13 +1066,9 @@ export class ProfileResources {
 	 * Parses a recommender-filters ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecommenderFiltersArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		recommenderFilterName: string;
-	} {
+	static parseRecommenderFiltersArn(
+		arn: string,
+	): ProfileRecommenderFiltersArnComponents {
 		const match = RecommenderFiltersArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recommender-filters ARN: ${arn}`);
@@ -862,18 +1085,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the recommender-schemas resource.
 	 */
-	static recommenderSchemas(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RecommenderSchemaName component of the ARN. */
-		readonly recommenderSchemaName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recommenderSchemas(props: ProfileRecommenderSchemasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/recommender-schemas/${props.recommenderSchemaName}`;
 	}
 
@@ -888,13 +1100,9 @@ export class ProfileResources {
 	 * Parses a recommender-schemas ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecommenderSchemasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		recommenderSchemaName: string;
-	} {
+	static parseRecommenderSchemasArn(
+		arn: string,
+	): ProfileRecommenderSchemasArnComponents {
 		const match = RecommenderSchemasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recommender-schemas ARN: ${arn}`);
@@ -911,18 +1119,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the recommenders resource.
 	 */
-	static recommenders(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RecommenderTypeName component of the ARN. */
-		readonly recommenderTypeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recommenders(props: ProfileRecommendersArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/recommenders/${props.recommenderTypeName}`;
 	}
 
@@ -937,13 +1134,7 @@ export class ProfileResources {
 	 * Parses a recommenders ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecommendersArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		recommenderTypeName: string;
-	} {
+	static parseRecommendersArn(arn: string): ProfileRecommendersArnComponents {
 		const match = RecommendersArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recommenders ARN: ${arn}`);
@@ -960,18 +1151,7 @@ export class ProfileResources {
 	/**
 	 * Builds an ARN for the segment-definitions resource.
 	 */
-	static segmentDefinitions(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The SegmentDefinitionName component of the ARN. */
-		readonly segmentDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static segmentDefinitions(props: ProfileSegmentDefinitionsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:profile:${props.region ?? "*"}:${props.account ?? "*"}:domains/${props.domainName}/segment-definitions/${props.segmentDefinitionName}`;
 	}
 
@@ -986,13 +1166,9 @@ export class ProfileResources {
 	 * Parses a segment-definitions ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSegmentDefinitionsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		segmentDefinitionName: string;
-	} {
+	static parseSegmentDefinitionsArn(
+		arn: string,
+	): ProfileSegmentDefinitionsArnComponents {
 		const match = SegmentDefinitionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid segment-definitions ARN: ${arn}`);
@@ -1012,357 +1188,347 @@ export class ProfileResources {
  */
 export class ProfileOperations {
 	/** IAM actions required for the AddProfileKey API call. */
-	static readonly ADD_PROFILE_KEY: string[] = ["profile:AddProfileKey"];
+	static readonly AddProfileKey: string[] = ["profile:AddProfileKey"];
 	/** IAM actions required for the BatchGetCalculatedAttributeForProfile API call. */
-	static readonly BATCH_GET_CALCULATED_ATTRIBUTE_FOR_PROFILE: string[] = [
+	static readonly BatchGetCalculatedAttributeForProfile: string[] = [
 		"profile:BatchGetCalculatedAttributeForProfile",
 	];
 	/** IAM actions required for the BatchGetProfile API call. */
-	static readonly BATCH_GET_PROFILE: string[] = ["profile:BatchGetProfile"];
+	static readonly BatchGetProfile: string[] = ["profile:BatchGetProfile"];
 	/** IAM actions required for the BatchPutProfileObject API call. */
-	static readonly BATCH_PUT_PROFILE_OBJECT: string[] = [];
+	static readonly BatchPutProfileObject: string[] = [];
 	/** IAM actions required for the CreateCalculatedAttributeDefinition API call. */
-	static readonly CREATE_CALCULATED_ATTRIBUTE_DEFINITION: string[] = [
+	static readonly CreateCalculatedAttributeDefinition: string[] = [
 		"profile:CreateCalculatedAttributeDefinition",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateDomain API call. */
-	static readonly CREATE_DOMAIN: string[] = [
+	static readonly CreateDomain: string[] = [
 		"profile:CreateDomain",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateDomainLayout API call. */
-	static readonly CREATE_DOMAIN_LAYOUT: string[] = [
+	static readonly CreateDomainLayout: string[] = [
 		"profile:CreateDomainLayout",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateEventStream API call. */
-	static readonly CREATE_EVENT_STREAM: string[] = [
+	static readonly CreateEventStream: string[] = [
 		"profile:CreateEventStream",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateEventTrigger API call. */
-	static readonly CREATE_EVENT_TRIGGER: string[] = [
+	static readonly CreateEventTrigger: string[] = [
 		"profile:CreateEventTrigger",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateIntegrationWorkflow API call. */
-	static readonly CREATE_INTEGRATION_WORKFLOW: string[] = [
+	static readonly CreateIntegrationWorkflow: string[] = [
 		"profile:CreateIntegrationWorkflow",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateProfile API call. */
-	static readonly CREATE_PROFILE: string[] = ["profile:CreateProfile"];
+	static readonly CreateProfile: string[] = ["profile:CreateProfile"];
 	/** IAM actions required for the CreateRecommender API call. */
-	static readonly CREATE_RECOMMENDER: string[] = ["profile:CreateRecommender"];
+	static readonly CreateRecommender: string[] = ["profile:CreateRecommender"];
 	/** IAM actions required for the CreateRecommenderFilter API call. */
-	static readonly CREATE_RECOMMENDER_FILTER: string[] = [
+	static readonly CreateRecommenderFilter: string[] = [
 		"profile:CreateRecommenderFilter",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateRecommenderSchema API call. */
-	static readonly CREATE_RECOMMENDER_SCHEMA: string[] = [
+	static readonly CreateRecommenderSchema: string[] = [
 		"profile:CreateRecommenderSchema",
 	];
 	/** IAM actions required for the CreateSegmentDefinition API call. */
-	static readonly CREATE_SEGMENT_DEFINITION: string[] = [
+	static readonly CreateSegmentDefinition: string[] = [
 		"profile:CreateSegmentDefinition",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the CreateSegmentEstimate API call. */
-	static readonly CREATE_SEGMENT_ESTIMATE: string[] = [
+	static readonly CreateSegmentEstimate: string[] = [
 		"profile:CreateSegmentEstimate",
 	];
 	/** IAM actions required for the CreateSegmentSnapshot API call. */
-	static readonly CREATE_SEGMENT_SNAPSHOT: string[] = [
+	static readonly CreateSegmentSnapshot: string[] = [
 		"profile:CreateSegmentSnapshot",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateUploadJob API call. */
-	static readonly CREATE_UPLOAD_JOB: string[] = ["profile:CreateUploadJob"];
+	static readonly CreateUploadJob: string[] = ["profile:CreateUploadJob"];
 	/** IAM actions required for the DeleteCalculatedAttributeDefinition API call. */
-	static readonly DELETE_CALCULATED_ATTRIBUTE_DEFINITION: string[] = [
+	static readonly DeleteCalculatedAttributeDefinition: string[] = [
 		"profile:DeleteCalculatedAttributeDefinition",
 	];
 	/** IAM actions required for the DeleteDomain API call. */
-	static readonly DELETE_DOMAIN: string[] = ["profile:DeleteDomain"];
+	static readonly DeleteDomain: string[] = ["profile:DeleteDomain"];
 	/** IAM actions required for the DeleteDomainLayout API call. */
-	static readonly DELETE_DOMAIN_LAYOUT: string[] = [
-		"profile:DeleteDomainLayout",
-	];
+	static readonly DeleteDomainLayout: string[] = ["profile:DeleteDomainLayout"];
 	/** IAM actions required for the DeleteDomainObjectType API call. */
-	static readonly DELETE_DOMAIN_OBJECT_TYPE: string[] = [
+	static readonly DeleteDomainObjectType: string[] = [
 		"profile:DeleteDomainObjectType",
 	];
 	/** IAM actions required for the DeleteEventStream API call. */
-	static readonly DELETE_EVENT_STREAM: string[] = ["profile:DeleteEventStream"];
+	static readonly DeleteEventStream: string[] = ["profile:DeleteEventStream"];
 	/** IAM actions required for the DeleteEventTrigger API call. */
-	static readonly DELETE_EVENT_TRIGGER: string[] = [
-		"profile:DeleteEventTrigger",
-	];
+	static readonly DeleteEventTrigger: string[] = ["profile:DeleteEventTrigger"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = ["profile:DeleteIntegration"];
+	static readonly DeleteIntegration: string[] = ["profile:DeleteIntegration"];
 	/** IAM actions required for the DeleteProfile API call. */
-	static readonly DELETE_PROFILE: string[] = ["profile:DeleteProfile"];
+	static readonly DeleteProfile: string[] = ["profile:DeleteProfile"];
 	/** IAM actions required for the DeleteProfileKey API call. */
-	static readonly DELETE_PROFILE_KEY: string[] = ["profile:DeleteProfileKey"];
+	static readonly DeleteProfileKey: string[] = ["profile:DeleteProfileKey"];
 	/** IAM actions required for the DeleteProfileObject API call. */
-	static readonly DELETE_PROFILE_OBJECT: string[] = [
+	static readonly DeleteProfileObject: string[] = [
 		"profile:DeleteProfileObject",
 	];
 	/** IAM actions required for the DeleteProfileObjectType API call. */
-	static readonly DELETE_PROFILE_OBJECT_TYPE: string[] = [
+	static readonly DeleteProfileObjectType: string[] = [
 		"profile:DeleteProfileObjectType",
 	];
 	/** IAM actions required for the DeleteRecommender API call. */
-	static readonly DELETE_RECOMMENDER: string[] = ["profile:DeleteRecommender"];
+	static readonly DeleteRecommender: string[] = ["profile:DeleteRecommender"];
 	/** IAM actions required for the DeleteRecommenderFilter API call. */
-	static readonly DELETE_RECOMMENDER_FILTER: string[] = [
+	static readonly DeleteRecommenderFilter: string[] = [
 		"profile:DeleteRecommenderFilter",
 	];
 	/** IAM actions required for the DeleteRecommenderSchema API call. */
-	static readonly DELETE_RECOMMENDER_SCHEMA: string[] = [
+	static readonly DeleteRecommenderSchema: string[] = [
 		"profile:DeleteRecommenderSchema",
 	];
 	/** IAM actions required for the DeleteSegmentDefinition API call. */
-	static readonly DELETE_SEGMENT_DEFINITION: string[] = [
+	static readonly DeleteSegmentDefinition: string[] = [
 		"profile:DeleteSegmentDefinition",
 	];
 	/** IAM actions required for the DeleteWorkflow API call. */
-	static readonly DELETE_WORKFLOW: string[] = ["profile:DeleteWorkflow"];
+	static readonly DeleteWorkflow: string[] = ["profile:DeleteWorkflow"];
 	/** IAM actions required for the DetectProfileObjectType API call. */
-	static readonly DETECT_PROFILE_OBJECT_TYPE: string[] = [
+	static readonly DetectProfileObjectType: string[] = [
 		"profile:DetectProfileObjectType",
 	];
 	/** IAM actions required for the GetAutoMergingPreview API call. */
-	static readonly GET_AUTO_MERGING_PREVIEW: string[] = [
+	static readonly opGetAutoMergingPreview: string[] = [
 		"profile:GetAutoMergingPreview",
 	];
 	/** IAM actions required for the GetCalculatedAttributeDefinition API call. */
-	static readonly GET_CALCULATED_ATTRIBUTE_DEFINITION: string[] = [
+	static readonly opGetCalculatedAttributeDefinition: string[] = [
 		"profile:GetCalculatedAttributeDefinition",
 	];
 	/** IAM actions required for the GetCalculatedAttributeForProfile API call. */
-	static readonly GET_CALCULATED_ATTRIBUTE_FOR_PROFILE: string[] = [
+	static readonly opGetCalculatedAttributeForProfile: string[] = [
 		"profile:GetCalculatedAttributeForProfile",
 	];
 	/** IAM actions required for the GetDomain API call. */
-	static readonly GET_DOMAIN: string[] = ["profile:GetDomain"];
+	static readonly opGetDomain: string[] = ["profile:GetDomain"];
 	/** IAM actions required for the GetDomainLayout API call. */
-	static readonly GET_DOMAIN_LAYOUT: string[] = ["profile:GetDomainLayout"];
+	static readonly opGetDomainLayout: string[] = ["profile:GetDomainLayout"];
 	/** IAM actions required for the GetDomainObjectType API call. */
-	static readonly GET_DOMAIN_OBJECT_TYPE: string[] = [
+	static readonly opGetDomainObjectType: string[] = [
 		"profile:GetDomainObjectType",
 	];
 	/** IAM actions required for the GetEventStream API call. */
-	static readonly GET_EVENT_STREAM: string[] = ["profile:GetEventStream"];
+	static readonly opGetEventStream: string[] = ["profile:GetEventStream"];
 	/** IAM actions required for the GetEventTrigger API call. */
-	static readonly GET_EVENT_TRIGGER: string[] = ["profile:GetEventTrigger"];
+	static readonly opGetEventTrigger: string[] = ["profile:GetEventTrigger"];
 	/** IAM actions required for the GetIdentityResolutionJob API call. */
-	static readonly GET_IDENTITY_RESOLUTION_JOB: string[] = [
+	static readonly opGetIdentityResolutionJob: string[] = [
 		"profile:GetIdentityResolutionJob",
 	];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly GET_INTEGRATION: string[] = ["profile:GetIntegration"];
+	static readonly opGetIntegration: string[] = ["profile:GetIntegration"];
 	/** IAM actions required for the GetMatches API call. */
-	static readonly GET_MATCHES: string[] = ["profile:GetMatches"];
+	static readonly opGetMatches: string[] = ["profile:GetMatches"];
 	/** IAM actions required for the GetObjectTypeAttributeStatistics API call. */
-	static readonly GET_OBJECT_TYPE_ATTRIBUTE_STATISTICS: string[] = [
+	static readonly opGetObjectTypeAttributeStatistics: string[] = [
 		"profile:GetObjectTypeAttributeStatistics",
 	];
 	/** IAM actions required for the GetProfileHistoryRecord API call. */
-	static readonly GET_PROFILE_HISTORY_RECORD: string[] = [
+	static readonly opGetProfileHistoryRecord: string[] = [
 		"profile:GetProfileHistoryRecord",
 	];
 	/** IAM actions required for the GetProfileObjectType API call. */
-	static readonly GET_PROFILE_OBJECT_TYPE: string[] = [
+	static readonly opGetProfileObjectType: string[] = [
 		"profile:GetProfileObjectType",
 	];
 	/** IAM actions required for the GetProfileObjectTypeTemplate API call. */
-	static readonly GET_PROFILE_OBJECT_TYPE_TEMPLATE: string[] = [
+	static readonly opGetProfileObjectTypeTemplate: string[] = [
 		"profile:GetProfileObjectTypeTemplate",
 	];
 	/** IAM actions required for the GetProfileRecommendations API call. */
-	static readonly GET_PROFILE_RECOMMENDATIONS: string[] = [
+	static readonly opGetProfileRecommendations: string[] = [
 		"profile:GetProfileRecommendations",
 	];
 	/** IAM actions required for the GetRecommender API call. */
-	static readonly GET_RECOMMENDER: string[] = ["profile:GetRecommender"];
+	static readonly opGetRecommender: string[] = ["profile:GetRecommender"];
 	/** IAM actions required for the GetRecommenderFilter API call. */
-	static readonly GET_RECOMMENDER_FILTER: string[] = [
+	static readonly opGetRecommenderFilter: string[] = [
 		"profile:GetRecommenderFilter",
 	];
 	/** IAM actions required for the GetRecommenderSchema API call. */
-	static readonly GET_RECOMMENDER_SCHEMA: string[] = [
+	static readonly opGetRecommenderSchema: string[] = [
 		"profile:GetRecommenderSchema",
 	];
 	/** IAM actions required for the GetSegmentDefinition API call. */
-	static readonly GET_SEGMENT_DEFINITION: string[] = [
+	static readonly opGetSegmentDefinition: string[] = [
 		"profile:GetSegmentDefinition",
 	];
 	/** IAM actions required for the GetSegmentEstimate API call. */
-	static readonly GET_SEGMENT_ESTIMATE: string[] = [
+	static readonly opGetSegmentEstimate: string[] = [
 		"profile:GetSegmentEstimate",
 	];
 	/** IAM actions required for the GetSegmentMembership API call. */
-	static readonly GET_SEGMENT_MEMBERSHIP: string[] = [
+	static readonly opGetSegmentMembership: string[] = [
 		"profile:GetSegmentMembership",
 	];
 	/** IAM actions required for the GetSegmentSnapshot API call. */
-	static readonly GET_SEGMENT_SNAPSHOT: string[] = [
+	static readonly opGetSegmentSnapshot: string[] = [
 		"profile:GetSegmentSnapshot",
 	];
 	/** IAM actions required for the GetSimilarProfiles API call. */
-	static readonly GET_SIMILAR_PROFILES: string[] = [
+	static readonly opGetSimilarProfiles: string[] = [
 		"profile:GetSimilarProfiles",
 	];
 	/** IAM actions required for the GetUploadJob API call. */
-	static readonly GET_UPLOAD_JOB: string[] = ["profile:GetUploadJob"];
+	static readonly opGetUploadJob: string[] = ["profile:GetUploadJob"];
 	/** IAM actions required for the GetUploadJobPath API call. */
-	static readonly GET_UPLOAD_JOB_PATH: string[] = ["profile:GetUploadJobPath"];
+	static readonly opGetUploadJobPath: string[] = ["profile:GetUploadJobPath"];
 	/** IAM actions required for the GetWorkflow API call. */
-	static readonly GET_WORKFLOW: string[] = ["profile:GetWorkflow"];
+	static readonly opGetWorkflow: string[] = ["profile:GetWorkflow"];
 	/** IAM actions required for the GetWorkflowSteps API call. */
-	static readonly GET_WORKFLOW_STEPS: string[] = ["profile:GetWorkflowSteps"];
+	static readonly opGetWorkflowSteps: string[] = ["profile:GetWorkflowSteps"];
 	/** IAM actions required for the ListAccountIntegrations API call. */
-	static readonly LIST_ACCOUNT_INTEGRATIONS: string[] = [
+	static readonly ListAccountIntegrations: string[] = [
 		"profile:ListAccountIntegrations",
 	];
 	/** IAM actions required for the ListCalculatedAttributeDefinitions API call. */
-	static readonly LIST_CALCULATED_ATTRIBUTE_DEFINITIONS: string[] = [
+	static readonly ListCalculatedAttributeDefinitions: string[] = [
 		"profile:ListCalculatedAttributeDefinitions",
 	];
 	/** IAM actions required for the ListCalculatedAttributesForProfile API call. */
-	static readonly LIST_CALCULATED_ATTRIBUTES_FOR_PROFILE: string[] = [
+	static readonly ListCalculatedAttributesForProfile: string[] = [
 		"profile:ListCalculatedAttributesForProfile",
 	];
 	/** IAM actions required for the ListDomainLayouts API call. */
-	static readonly LIST_DOMAIN_LAYOUTS: string[] = ["profile:ListDomainLayouts"];
+	static readonly ListDomainLayouts: string[] = ["profile:ListDomainLayouts"];
 	/** IAM actions required for the ListDomainObjectTypes API call. */
-	static readonly LIST_DOMAIN_OBJECT_TYPES: string[] = [
+	static readonly ListDomainObjectTypes: string[] = [
 		"profile:ListDomainObjectTypes",
 	];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = ["profile:ListDomains"];
+	static readonly ListDomains: string[] = ["profile:ListDomains"];
 	/** IAM actions required for the ListEventStreams API call. */
-	static readonly LIST_EVENT_STREAMS: string[] = ["profile:ListEventStreams"];
+	static readonly ListEventStreams: string[] = ["profile:ListEventStreams"];
 	/** IAM actions required for the ListEventTriggers API call. */
-	static readonly LIST_EVENT_TRIGGERS: string[] = ["profile:ListEventTriggers"];
+	static readonly ListEventTriggers: string[] = ["profile:ListEventTriggers"];
 	/** IAM actions required for the ListIdentityResolutionJobs API call. */
-	static readonly LIST_IDENTITY_RESOLUTION_JOBS: string[] = [
+	static readonly ListIdentityResolutionJobs: string[] = [
 		"profile:ListIdentityResolutionJobs",
 	];
 	/** IAM actions required for the ListIntegrations API call. */
-	static readonly LIST_INTEGRATIONS: string[] = ["profile:ListIntegrations"];
+	static readonly ListIntegrations: string[] = ["profile:ListIntegrations"];
 	/** IAM actions required for the ListObjectTypeAttributeValues API call. */
-	static readonly LIST_OBJECT_TYPE_ATTRIBUTE_VALUES: string[] = [
+	static readonly ListObjectTypeAttributeValues: string[] = [
 		"profile:ListObjectTypeAttributeValues",
 	];
 	/** IAM actions required for the ListObjectTypeAttributes API call. */
-	static readonly LIST_OBJECT_TYPE_ATTRIBUTES: string[] = [
+	static readonly ListObjectTypeAttributes: string[] = [
 		"profile:ListObjectTypeAttributes",
 	];
 	/** IAM actions required for the ListProfileAttributeValues API call. */
-	static readonly LIST_PROFILE_ATTRIBUTE_VALUES: string[] = [
+	static readonly ListProfileAttributeValues: string[] = [
 		"profile:ListProfileAttributeValues",
 	];
 	/** IAM actions required for the ListProfileHistoryRecords API call. */
-	static readonly LIST_PROFILE_HISTORY_RECORDS: string[] = [
+	static readonly ListProfileHistoryRecords: string[] = [
 		"profile:ListProfileHistoryRecords",
 	];
 	/** IAM actions required for the ListProfileObjectTypeTemplates API call. */
-	static readonly LIST_PROFILE_OBJECT_TYPE_TEMPLATES: string[] = [
+	static readonly ListProfileObjectTypeTemplates: string[] = [
 		"profile:ListProfileObjectTypeTemplates",
 	];
 	/** IAM actions required for the ListProfileObjectTypes API call. */
-	static readonly LIST_PROFILE_OBJECT_TYPES: string[] = [
+	static readonly ListProfileObjectTypes: string[] = [
 		"profile:ListProfileObjectTypes",
 	];
 	/** IAM actions required for the ListProfileObjects API call. */
-	static readonly LIST_PROFILE_OBJECTS: string[] = [
-		"profile:ListProfileObjects",
-	];
+	static readonly ListProfileObjects: string[] = ["profile:ListProfileObjects"];
 	/** IAM actions required for the ListRecommenderFilters API call. */
-	static readonly LIST_RECOMMENDER_FILTERS: string[] = [
+	static readonly ListRecommenderFilters: string[] = [
 		"profile:ListRecommenderFilters",
 	];
 	/** IAM actions required for the ListRecommenderRecipes API call. */
-	static readonly LIST_RECOMMENDER_RECIPES: string[] = [
+	static readonly ListRecommenderRecipes: string[] = [
 		"profile:ListRecommenderRecipes",
 	];
 	/** IAM actions required for the ListRecommenderSchemas API call. */
-	static readonly LIST_RECOMMENDER_SCHEMAS: string[] = [
+	static readonly ListRecommenderSchemas: string[] = [
 		"profile:ListRecommenderSchemas",
 	];
 	/** IAM actions required for the ListRecommenders API call. */
-	static readonly LIST_RECOMMENDERS: string[] = ["profile:ListRecommenders"];
+	static readonly ListRecommenders: string[] = ["profile:ListRecommenders"];
 	/** IAM actions required for the ListRuleBasedMatches API call. */
-	static readonly LIST_RULE_BASED_MATCHES: string[] = [
+	static readonly ListRuleBasedMatches: string[] = [
 		"profile:ListRuleBasedMatches",
 	];
 	/** IAM actions required for the ListSegmentDefinitions API call. */
-	static readonly LIST_SEGMENT_DEFINITIONS: string[] = [
+	static readonly ListSegmentDefinitions: string[] = [
 		"profile:ListSegmentDefinitions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"profile:ListTagsForResource",
 	];
 	/** IAM actions required for the ListUploadJobs API call. */
-	static readonly LIST_UPLOAD_JOBS: string[] = ["profile:ListUploadJobs"];
+	static readonly ListUploadJobs: string[] = ["profile:ListUploadJobs"];
 	/** IAM actions required for the ListWorkflows API call. */
-	static readonly LIST_WORKFLOWS: string[] = ["profile:ListWorkflows"];
+	static readonly ListWorkflows: string[] = ["profile:ListWorkflows"];
 	/** IAM actions required for the MergeProfiles API call. */
-	static readonly MERGE_PROFILES: string[] = ["profile:MergeProfiles"];
+	static readonly MergeProfiles: string[] = ["profile:MergeProfiles"];
 	/** IAM actions required for the PutDomainObjectType API call. */
-	static readonly PUT_DOMAIN_OBJECT_TYPE: string[] = [
+	static readonly PutDomainObjectType: string[] = [
 		"profile:PutDomainObjectType",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the PutIntegration API call. */
-	static readonly PUT_INTEGRATION: string[] = [
+	static readonly PutIntegration: string[] = [
 		"profile:PutIntegration",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the PutProfileObject API call. */
-	static readonly PUT_PROFILE_OBJECT: string[] = ["profile:PutProfileObject"];
+	static readonly PutProfileObject: string[] = ["profile:PutProfileObject"];
 	/** IAM actions required for the PutProfileObjectType API call. */
-	static readonly PUT_PROFILE_OBJECT_TYPE: string[] = [
+	static readonly PutProfileObjectType: string[] = [
 		"profile:PutProfileObjectType",
 		"profile:TagResource",
 	];
 	/** IAM actions required for the SearchProfiles API call. */
-	static readonly SEARCH_PROFILES: string[] = ["profile:SearchProfiles"];
+	static readonly SearchProfiles: string[] = ["profile:SearchProfiles"];
 	/** IAM actions required for the StartRecommender API call. */
-	static readonly START_RECOMMENDER: string[] = ["profile:StartRecommender"];
+	static readonly StartRecommender: string[] = ["profile:StartRecommender"];
 	/** IAM actions required for the StartUploadJob API call. */
-	static readonly START_UPLOAD_JOB: string[] = ["profile:StartUploadJob"];
+	static readonly StartUploadJob: string[] = ["profile:StartUploadJob"];
 	/** IAM actions required for the StopRecommender API call. */
-	static readonly STOP_RECOMMENDER: string[] = ["profile:StopRecommender"];
+	static readonly StopRecommender: string[] = ["profile:StopRecommender"];
 	/** IAM actions required for the StopUploadJob API call. */
-	static readonly STOP_UPLOAD_JOB: string[] = ["profile:StopUploadJob"];
+	static readonly StopUploadJob: string[] = ["profile:StopUploadJob"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["profile:TagResource"];
+	static readonly TagResource: string[] = ["profile:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["profile:UntagResource"];
+	static readonly UntagResource: string[] = ["profile:UntagResource"];
 	/** IAM actions required for the UpdateCalculatedAttributeDefinition API call. */
-	static readonly UPDATE_CALCULATED_ATTRIBUTE_DEFINITION: string[] = [
+	static readonly UpdateCalculatedAttributeDefinition: string[] = [
 		"profile:UpdateCalculatedAttributeDefinition",
 	];
 	/** IAM actions required for the UpdateDomain API call. */
-	static readonly UPDATE_DOMAIN: string[] = ["profile:UpdateDomain"];
+	static readonly UpdateDomain: string[] = ["profile:UpdateDomain"];
 	/** IAM actions required for the UpdateDomainLayout API call. */
-	static readonly UPDATE_DOMAIN_LAYOUT: string[] = [
-		"profile:UpdateDomainLayout",
-	];
+	static readonly UpdateDomainLayout: string[] = ["profile:UpdateDomainLayout"];
 	/** IAM actions required for the UpdateEventTrigger API call. */
-	static readonly UPDATE_EVENT_TRIGGER: string[] = [
-		"profile:UpdateEventTrigger",
-	];
+	static readonly UpdateEventTrigger: string[] = ["profile:UpdateEventTrigger"];
 	/** IAM actions required for the UpdateProfile API call. */
-	static readonly UPDATE_PROFILE: string[] = ["profile:UpdateProfile"];
+	static readonly UpdateProfile: string[] = ["profile:UpdateProfile"];
 	/** IAM actions required for the UpdateRecommender API call. */
-	static readonly UPDATE_RECOMMENDER: string[] = ["profile:UpdateRecommender"];
+	static readonly UpdateRecommender: string[] = ["profile:UpdateRecommender"];
 }
 
 /**
@@ -1370,29 +1536,29 @@ export class ProfileOperations {
  */
 export class ProfileConditions {
 	/** Condition keys applicable to the CreateRecommenderFilter action. */
-	static readonly CREATE_RECOMMENDER_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateRecommenderFilterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRecommenderSchema action. */
-	static readonly CREATE_RECOMMENDER_SCHEMA_CONDITION_KEYS: string[] = [
+	static readonly CreateRecommenderSchemaConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

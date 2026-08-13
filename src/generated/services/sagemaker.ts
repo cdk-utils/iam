@@ -13,1718 +13,3716 @@ export class SageMakerActions {
 	static readonly SERVICE_PREFIX = "sagemaker";
 
 	/** [Read] sagemaker:AccessModelPackage */
-	static readonly ACCESS_MODEL_PACKAGE = "sagemaker:AccessModelPackage";
+	static readonly AccessModelPackage = "sagemaker:AccessModelPackage";
 	/** [Write] sagemaker:AddAssociation */
-	static readonly ADD_ASSOCIATION = "sagemaker:AddAssociation";
+	static readonly AddAssociation = "sagemaker:AddAssociation";
 	/** [Tagging] sagemaker:AddTags */
-	static readonly ADD_TAGS = "sagemaker:AddTags";
+	static readonly AddTags = "sagemaker:AddTags";
 	/** [Write] sagemaker:AssociateTrialComponent */
-	static readonly ASSOCIATE_TRIAL_COMPONENT =
-		"sagemaker:AssociateTrialComponent";
+	static readonly AssociateTrialComponent = "sagemaker:AssociateTrialComponent";
 	/** [Write] sagemaker:AttachClusterNodeVolume */
-	static readonly ATTACH_CLUSTER_NODE_VOLUME =
-		"sagemaker:AttachClusterNodeVolume";
+	static readonly AttachClusterNodeVolume = "sagemaker:AttachClusterNodeVolume";
 	/** [Write] sagemaker:BatchAddClusterNodes */
-	static readonly BATCH_ADD_CLUSTER_NODES = "sagemaker:BatchAddClusterNodes";
+	static readonly BatchAddClusterNodes = "sagemaker:BatchAddClusterNodes";
 	/** [Write] sagemaker:BatchDeleteClusterNodes */
-	static readonly BATCH_DELETE_CLUSTER_NODES =
-		"sagemaker:BatchDeleteClusterNodes";
+	static readonly BatchDeleteClusterNodes = "sagemaker:BatchDeleteClusterNodes";
 	/** [Read] sagemaker:BatchDescribeModelPackage */
-	static readonly BATCH_DESCRIBE_MODEL_PACKAGE =
+	static readonly BatchDescribeModelPackage =
 		"sagemaker:BatchDescribeModelPackage";
 	/** [Read] sagemaker:BatchGetMetrics */
-	static readonly BATCH_GET_METRICS = "sagemaker:BatchGetMetrics";
+	static readonly BatchGetMetrics = "sagemaker:BatchGetMetrics";
 	/** [Read] sagemaker:BatchGetRecord */
-	static readonly BATCH_GET_RECORD = "sagemaker:BatchGetRecord";
+	static readonly BatchGetRecord = "sagemaker:BatchGetRecord";
 	/** [Write] sagemaker:BatchPutMetrics */
-	static readonly BATCH_PUT_METRICS = "sagemaker:BatchPutMetrics";
+	static readonly BatchPutMetrics = "sagemaker:BatchPutMetrics";
 	/** [Write] sagemaker:BatchWriteRecord */
-	static readonly BATCH_WRITE_RECORD = "sagemaker:BatchWriteRecord";
+	static readonly BatchWriteRecord = "sagemaker:BatchWriteRecord";
 	/** [Write] sagemaker:CallMlflowAppApi */
-	static readonly CALL_MLFLOW_APP_API = "sagemaker:CallMlflowAppApi";
+	static readonly CallMlflowAppApi = "sagemaker:CallMlflowAppApi";
 	/** [Write] sagemaker:CallPartnerAppApi */
-	static readonly CALL_PARTNER_APP_API = "sagemaker:CallPartnerAppApi";
+	static readonly CallPartnerAppApi = "sagemaker:CallPartnerAppApi";
 	/** [Read] sagemaker:CallWithBearerToken */
-	static readonly CALL_WITH_BEARER_TOKEN = "sagemaker:CallWithBearerToken";
+	static readonly CallWithBearerToken = "sagemaker:CallWithBearerToken";
 	/** [Write] sagemaker:CompleteRollout */
-	static readonly COMPLETE_ROLLOUT = "sagemaker:CompleteRollout";
+	static readonly CompleteRollout = "sagemaker:CompleteRollout";
 	/** [Write] sagemaker:CreateAIBenchmarkJob */
-	static readonly CREATE_AI_BENCHMARK_JOB = "sagemaker:CreateAIBenchmarkJob";
+	static readonly CreateAIBenchmarkJob = "sagemaker:CreateAIBenchmarkJob";
 	/** [Write] sagemaker:CreateAIRecommendationJob */
-	static readonly CREATE_AI_RECOMMENDATION_JOB =
+	static readonly CreateAIRecommendationJob =
 		"sagemaker:CreateAIRecommendationJob";
 	/** [Write] sagemaker:CreateAIWorkloadConfig */
-	static readonly CREATE_AI_WORKLOAD_CONFIG =
-		"sagemaker:CreateAIWorkloadConfig";
+	static readonly CreateAIWorkloadConfig = "sagemaker:CreateAIWorkloadConfig";
 	/** [Write] sagemaker:CreateAction */
-	static readonly CREATE_ACTION = "sagemaker:CreateAction";
+	static readonly CreateAction = "sagemaker:CreateAction";
 	/** [Write] sagemaker:CreateAlgorithm */
-	static readonly CREATE_ALGORITHM = "sagemaker:CreateAlgorithm";
+	static readonly CreateAlgorithm = "sagemaker:CreateAlgorithm";
 	/** [Write] sagemaker:CreateApp */
-	static readonly CREATE_APP = "sagemaker:CreateApp";
+	static readonly CreateApp = "sagemaker:CreateApp";
 	/** [Write] sagemaker:CreateAppImageConfig */
-	static readonly CREATE_APP_IMAGE_CONFIG = "sagemaker:CreateAppImageConfig";
+	static readonly CreateAppImageConfig = "sagemaker:CreateAppImageConfig";
 	/** [Write] sagemaker:CreateArtifact */
-	static readonly CREATE_ARTIFACT = "sagemaker:CreateArtifact";
+	static readonly CreateArtifact = "sagemaker:CreateArtifact";
 	/** [Write] sagemaker:CreateAutoMLJob */
-	static readonly CREATE_AUTO_ML_JOB = "sagemaker:CreateAutoMLJob";
+	static readonly CreateAutoMLJob = "sagemaker:CreateAutoMLJob";
 	/** [Write] sagemaker:CreateAutoMLJobV2 */
-	static readonly CREATE_AUTO_ML_JOB_V2 = "sagemaker:CreateAutoMLJobV2";
+	static readonly CreateAutoMLJobV2 = "sagemaker:CreateAutoMLJobV2";
 	/** [Write] sagemaker:CreateCluster */
-	static readonly CREATE_CLUSTER = "sagemaker:CreateCluster";
+	static readonly CreateCluster = "sagemaker:CreateCluster";
 	/** [Write] sagemaker:CreateClusterSchedulerConfig */
-	static readonly CREATE_CLUSTER_SCHEDULER_CONFIG =
+	static readonly CreateClusterSchedulerConfig =
 		"sagemaker:CreateClusterSchedulerConfig";
 	/** [Write] sagemaker:CreateCodeRepository */
-	static readonly CREATE_CODE_REPOSITORY = "sagemaker:CreateCodeRepository";
+	static readonly CreateCodeRepository = "sagemaker:CreateCodeRepository";
 	/** [Write] sagemaker:CreateCompilationJob */
-	static readonly CREATE_COMPILATION_JOB = "sagemaker:CreateCompilationJob";
+	static readonly CreateCompilationJob = "sagemaker:CreateCompilationJob";
 	/** [Write] sagemaker:CreateComputeQuota */
-	static readonly CREATE_COMPUTE_QUOTA = "sagemaker:CreateComputeQuota";
+	static readonly CreateComputeQuota = "sagemaker:CreateComputeQuota";
 	/** [Write] sagemaker:CreateContext */
-	static readonly CREATE_CONTEXT = "sagemaker:CreateContext";
+	static readonly CreateContext = "sagemaker:CreateContext";
 	/** [Write] sagemaker:CreateDataQualityJobDefinition */
-	static readonly CREATE_DATA_QUALITY_JOB_DEFINITION =
+	static readonly CreateDataQualityJobDefinition =
 		"sagemaker:CreateDataQualityJobDefinition";
 	/** [Write] sagemaker:CreateDeviceFleet */
-	static readonly CREATE_DEVICE_FLEET = "sagemaker:CreateDeviceFleet";
+	static readonly CreateDeviceFleet = "sagemaker:CreateDeviceFleet";
 	/** [Write] sagemaker:CreateDomain */
-	static readonly CREATE_DOMAIN = "sagemaker:CreateDomain";
+	static readonly CreateDomain = "sagemaker:CreateDomain";
 	/** [Write] sagemaker:CreateEdgeDeploymentPlan */
-	static readonly CREATE_EDGE_DEPLOYMENT_PLAN =
+	static readonly CreateEdgeDeploymentPlan =
 		"sagemaker:CreateEdgeDeploymentPlan";
 	/** [Write] sagemaker:CreateEdgeDeploymentStage */
-	static readonly CREATE_EDGE_DEPLOYMENT_STAGE =
+	static readonly CreateEdgeDeploymentStage =
 		"sagemaker:CreateEdgeDeploymentStage";
 	/** [Write] sagemaker:CreateEdgePackagingJob */
-	static readonly CREATE_EDGE_PACKAGING_JOB =
-		"sagemaker:CreateEdgePackagingJob";
+	static readonly CreateEdgePackagingJob = "sagemaker:CreateEdgePackagingJob";
 	/** [Write] sagemaker:CreateEndpoint */
-	static readonly CREATE_ENDPOINT = "sagemaker:CreateEndpoint";
+	static readonly CreateEndpoint = "sagemaker:CreateEndpoint";
 	/** [Write] sagemaker:CreateEndpointConfig */
-	static readonly CREATE_ENDPOINT_CONFIG = "sagemaker:CreateEndpointConfig";
+	static readonly CreateEndpointConfig = "sagemaker:CreateEndpointConfig";
 	/** [Write] sagemaker:CreateExperiment */
-	static readonly CREATE_EXPERIMENT = "sagemaker:CreateExperiment";
+	static readonly CreateExperiment = "sagemaker:CreateExperiment";
 	/** [Write] sagemaker:CreateFeatureGroup */
-	static readonly CREATE_FEATURE_GROUP = "sagemaker:CreateFeatureGroup";
+	static readonly CreateFeatureGroup = "sagemaker:CreateFeatureGroup";
 	/** [Write] sagemaker:CreateFlowDefinition */
-	static readonly CREATE_FLOW_DEFINITION = "sagemaker:CreateFlowDefinition";
+	static readonly CreateFlowDefinition = "sagemaker:CreateFlowDefinition";
 	/** [Write] sagemaker:CreateHub */
-	static readonly CREATE_HUB = "sagemaker:CreateHub";
+	static readonly CreateHub = "sagemaker:CreateHub";
 	/** [Read] sagemaker:CreateHubContentPresignedUrls */
-	static readonly CREATE_HUB_CONTENT_PRESIGNED_URLS =
+	static readonly CreateHubContentPresignedUrls =
 		"sagemaker:CreateHubContentPresignedUrls";
 	/** [Write] sagemaker:CreateHubContentReference */
-	static readonly CREATE_HUB_CONTENT_REFERENCE =
+	static readonly CreateHubContentReference =
 		"sagemaker:CreateHubContentReference";
 	/** [Write] sagemaker:CreateHumanTaskUi */
-	static readonly CREATE_HUMAN_TASK_UI = "sagemaker:CreateHumanTaskUi";
+	static readonly CreateHumanTaskUi = "sagemaker:CreateHumanTaskUi";
 	/** [Write] sagemaker:CreateHyperParameterTuningJob */
-	static readonly CREATE_HYPER_PARAMETER_TUNING_JOB =
+	static readonly CreateHyperParameterTuningJob =
 		"sagemaker:CreateHyperParameterTuningJob";
 	/** [Write] sagemaker:CreateImage */
-	static readonly CREATE_IMAGE = "sagemaker:CreateImage";
+	static readonly CreateImage = "sagemaker:CreateImage";
 	/** [Write] sagemaker:CreateImageVersion */
-	static readonly CREATE_IMAGE_VERSION = "sagemaker:CreateImageVersion";
+	static readonly CreateImageVersion = "sagemaker:CreateImageVersion";
 	/** [Write] sagemaker:CreateInferenceComponent */
-	static readonly CREATE_INFERENCE_COMPONENT =
+	static readonly CreateInferenceComponent =
 		"sagemaker:CreateInferenceComponent";
 	/** [Write] sagemaker:CreateInferenceExperiment */
-	static readonly CREATE_INFERENCE_EXPERIMENT =
+	static readonly CreateInferenceExperiment =
 		"sagemaker:CreateInferenceExperiment";
 	/** [Write] sagemaker:CreateInferenceRecommendationsJob */
-	static readonly CREATE_INFERENCE_RECOMMENDATIONS_JOB =
+	static readonly CreateInferenceRecommendationsJob =
 		"sagemaker:CreateInferenceRecommendationsJob";
 	/** [Write] sagemaker:CreateJob */
-	static readonly CREATE_JOB = "sagemaker:CreateJob";
+	static readonly CreateJob = "sagemaker:CreateJob";
 	/** [Write] sagemaker:CreateLabelingJob */
-	static readonly CREATE_LABELING_JOB = "sagemaker:CreateLabelingJob";
+	static readonly CreateLabelingJob = "sagemaker:CreateLabelingJob";
 	/** [Write] sagemaker:CreateLineageGroupPolicy */
-	static readonly CREATE_LINEAGE_GROUP_POLICY =
+	static readonly CreateLineageGroupPolicy =
 		"sagemaker:CreateLineageGroupPolicy";
 	/** [Write] sagemaker:CreateMlflowApp */
-	static readonly CREATE_MLFLOW_APP = "sagemaker:CreateMlflowApp";
+	static readonly CreateMlflowApp = "sagemaker:CreateMlflowApp";
 	/** [Write] sagemaker:CreateMlflowTrackingServer */
-	static readonly CREATE_MLFLOW_TRACKING_SERVER =
+	static readonly CreateMlflowTrackingServer =
 		"sagemaker:CreateMlflowTrackingServer";
 	/** [Write] sagemaker:CreateModel */
-	static readonly CREATE_MODEL = "sagemaker:CreateModel";
+	static readonly CreateModel = "sagemaker:CreateModel";
 	/** [Write] sagemaker:CreateModelBiasJobDefinition */
-	static readonly CREATE_MODEL_BIAS_JOB_DEFINITION =
+	static readonly CreateModelBiasJobDefinition =
 		"sagemaker:CreateModelBiasJobDefinition";
 	/** [Write] sagemaker:CreateModelCard */
-	static readonly CREATE_MODEL_CARD = "sagemaker:CreateModelCard";
+	static readonly CreateModelCard = "sagemaker:CreateModelCard";
 	/** [Write] sagemaker:CreateModelCardExportJob */
-	static readonly CREATE_MODEL_CARD_EXPORT_JOB =
+	static readonly CreateModelCardExportJob =
 		"sagemaker:CreateModelCardExportJob";
 	/** [Write] sagemaker:CreateModelExplainabilityJobDefinition */
-	static readonly CREATE_MODEL_EXPLAINABILITY_JOB_DEFINITION =
+	static readonly CreateModelExplainabilityJobDefinition =
 		"sagemaker:CreateModelExplainabilityJobDefinition";
 	/** [Write] sagemaker:CreateModelPackage */
-	static readonly CREATE_MODEL_PACKAGE = "sagemaker:CreateModelPackage";
+	static readonly CreateModelPackage = "sagemaker:CreateModelPackage";
 	/** [Write] sagemaker:CreateModelPackageGroup */
-	static readonly CREATE_MODEL_PACKAGE_GROUP =
-		"sagemaker:CreateModelPackageGroup";
+	static readonly CreateModelPackageGroup = "sagemaker:CreateModelPackageGroup";
 	/** [Write] sagemaker:CreateModelQualityJobDefinition */
-	static readonly CREATE_MODEL_QUALITY_JOB_DEFINITION =
+	static readonly CreateModelQualityJobDefinition =
 		"sagemaker:CreateModelQualityJobDefinition";
 	/** [Write] sagemaker:CreateMonitoringSchedule */
-	static readonly CREATE_MONITORING_SCHEDULE =
+	static readonly CreateMonitoringSchedule =
 		"sagemaker:CreateMonitoringSchedule";
 	/** [Write] sagemaker:CreateNotebookInstance */
-	static readonly CREATE_NOTEBOOK_INSTANCE = "sagemaker:CreateNotebookInstance";
+	static readonly CreateNotebookInstance = "sagemaker:CreateNotebookInstance";
 	/** [Write] sagemaker:CreateNotebookInstanceLifecycleConfig */
-	static readonly CREATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG =
+	static readonly CreateNotebookInstanceLifecycleConfig =
 		"sagemaker:CreateNotebookInstanceLifecycleConfig";
 	/** [Write] sagemaker:CreateOptimizationJob */
-	static readonly CREATE_OPTIMIZATION_JOB = "sagemaker:CreateOptimizationJob";
+	static readonly CreateOptimizationJob = "sagemaker:CreateOptimizationJob";
 	/** [Write] sagemaker:CreatePartnerApp */
-	static readonly CREATE_PARTNER_APP = "sagemaker:CreatePartnerApp";
+	static readonly CreatePartnerApp = "sagemaker:CreatePartnerApp";
 	/** [Write] sagemaker:CreatePartnerAppPresignedUrl */
-	static readonly CREATE_PARTNER_APP_PRESIGNED_URL =
+	static readonly CreatePartnerAppPresignedUrl =
 		"sagemaker:CreatePartnerAppPresignedUrl";
 	/** [Write] sagemaker:CreatePipeline */
-	static readonly CREATE_PIPELINE = "sagemaker:CreatePipeline";
+	static readonly CreatePipeline = "sagemaker:CreatePipeline";
 	/** [Write] sagemaker:CreatePresignedDomainUrl */
-	static readonly CREATE_PRESIGNED_DOMAIN_URL =
+	static readonly CreatePresignedDomainUrl =
 		"sagemaker:CreatePresignedDomainUrl";
 	/** [Write] sagemaker:CreatePresignedMlflowAppUrl */
-	static readonly CREATE_PRESIGNED_MLFLOW_APP_URL =
+	static readonly CreatePresignedMlflowAppUrl =
 		"sagemaker:CreatePresignedMlflowAppUrl";
 	/** [Write] sagemaker:CreatePresignedMlflowTrackingServerUrl */
-	static readonly CREATE_PRESIGNED_MLFLOW_TRACKING_SERVER_URL =
+	static readonly CreatePresignedMlflowTrackingServerUrl =
 		"sagemaker:CreatePresignedMlflowTrackingServerUrl";
 	/** [Write] sagemaker:CreatePresignedNotebookInstanceUrl */
-	static readonly CREATE_PRESIGNED_NOTEBOOK_INSTANCE_URL =
+	static readonly CreatePresignedNotebookInstanceUrl =
 		"sagemaker:CreatePresignedNotebookInstanceUrl";
 	/** [Write] sagemaker:CreateProcessingJob */
-	static readonly CREATE_PROCESSING_JOB = "sagemaker:CreateProcessingJob";
+	static readonly CreateProcessingJob = "sagemaker:CreateProcessingJob";
 	/** [Write] sagemaker:CreateProject */
-	static readonly CREATE_PROJECT = "sagemaker:CreateProject";
+	static readonly CreateProject = "sagemaker:CreateProject";
 	/** [Write] sagemaker:CreateReservedCapacity */
-	static readonly CREATE_RESERVED_CAPACITY = "sagemaker:CreateReservedCapacity";
+	static readonly CreateReservedCapacity = "sagemaker:CreateReservedCapacity";
 	/** [Write] sagemaker:CreateSharedModel */
-	static readonly CREATE_SHARED_MODEL = "sagemaker:CreateSharedModel";
+	static readonly CreateSharedModel = "sagemaker:CreateSharedModel";
 	/** [Write] sagemaker:CreateSpace */
-	static readonly CREATE_SPACE = "sagemaker:CreateSpace";
+	static readonly CreateSpace = "sagemaker:CreateSpace";
 	/** [Write] sagemaker:CreateStudioLifecycleConfig */
-	static readonly CREATE_STUDIO_LIFECYCLE_CONFIG =
+	static readonly CreateStudioLifecycleConfig =
 		"sagemaker:CreateStudioLifecycleConfig";
 	/** [Write] sagemaker:CreateTrainingJob */
-	static readonly CREATE_TRAINING_JOB = "sagemaker:CreateTrainingJob";
+	static readonly CreateTrainingJob = "sagemaker:CreateTrainingJob";
 	/** [Write] sagemaker:CreateTrainingPlan */
-	static readonly CREATE_TRAINING_PLAN = "sagemaker:CreateTrainingPlan";
+	static readonly CreateTrainingPlan = "sagemaker:CreateTrainingPlan";
 	/** [Write] sagemaker:CreateTransformJob */
-	static readonly CREATE_TRANSFORM_JOB = "sagemaker:CreateTransformJob";
+	static readonly CreateTransformJob = "sagemaker:CreateTransformJob";
 	/** [Write] sagemaker:CreateTrial */
-	static readonly CREATE_TRIAL = "sagemaker:CreateTrial";
+	static readonly CreateTrial = "sagemaker:CreateTrial";
 	/** [Write] sagemaker:CreateTrialComponent */
-	static readonly CREATE_TRIAL_COMPONENT = "sagemaker:CreateTrialComponent";
+	static readonly CreateTrialComponent = "sagemaker:CreateTrialComponent";
 	/** [Write] sagemaker:CreateUserProfile */
-	static readonly CREATE_USER_PROFILE = "sagemaker:CreateUserProfile";
+	static readonly CreateUserProfile = "sagemaker:CreateUserProfile";
 	/** [Write] sagemaker:CreateWorkforce */
-	static readonly CREATE_WORKFORCE = "sagemaker:CreateWorkforce";
+	static readonly CreateWorkforce = "sagemaker:CreateWorkforce";
 	/** [Write] sagemaker:CreateWorkteam */
-	static readonly CREATE_WORKTEAM = "sagemaker:CreateWorkteam";
+	static readonly CreateWorkteam = "sagemaker:CreateWorkteam";
 	/** [Write] sagemaker:DeleteAIBenchmarkJob */
-	static readonly DELETE_AI_BENCHMARK_JOB = "sagemaker:DeleteAIBenchmarkJob";
+	static readonly DeleteAIBenchmarkJob = "sagemaker:DeleteAIBenchmarkJob";
 	/** [Write] sagemaker:DeleteAIRecommendationJob */
-	static readonly DELETE_AI_RECOMMENDATION_JOB =
+	static readonly DeleteAIRecommendationJob =
 		"sagemaker:DeleteAIRecommendationJob";
 	/** [Write] sagemaker:DeleteAIWorkloadConfig */
-	static readonly DELETE_AI_WORKLOAD_CONFIG =
-		"sagemaker:DeleteAIWorkloadConfig";
+	static readonly DeleteAIWorkloadConfig = "sagemaker:DeleteAIWorkloadConfig";
 	/** [Write] sagemaker:DeleteAction */
-	static readonly DELETE_ACTION = "sagemaker:DeleteAction";
+	static readonly DeleteAction = "sagemaker:DeleteAction";
 	/** [Write] sagemaker:DeleteAlgorithm */
-	static readonly DELETE_ALGORITHM = "sagemaker:DeleteAlgorithm";
+	static readonly DeleteAlgorithm = "sagemaker:DeleteAlgorithm";
 	/** [Write] sagemaker:DeleteApp */
-	static readonly DELETE_APP = "sagemaker:DeleteApp";
+	static readonly DeleteApp = "sagemaker:DeleteApp";
 	/** [Write] sagemaker:DeleteAppImageConfig */
-	static readonly DELETE_APP_IMAGE_CONFIG = "sagemaker:DeleteAppImageConfig";
+	static readonly DeleteAppImageConfig = "sagemaker:DeleteAppImageConfig";
 	/** [Write] sagemaker:DeleteArtifact */
-	static readonly DELETE_ARTIFACT = "sagemaker:DeleteArtifact";
+	static readonly DeleteArtifact = "sagemaker:DeleteArtifact";
 	/** [Write] sagemaker:DeleteAssociation */
-	static readonly DELETE_ASSOCIATION = "sagemaker:DeleteAssociation";
+	static readonly DeleteAssociation = "sagemaker:DeleteAssociation";
 	/** [Write] sagemaker:DeleteCluster */
-	static readonly DELETE_CLUSTER = "sagemaker:DeleteCluster";
+	static readonly DeleteCluster = "sagemaker:DeleteCluster";
 	/** [Write] sagemaker:DeleteClusterSchedulerConfig */
-	static readonly DELETE_CLUSTER_SCHEDULER_CONFIG =
+	static readonly DeleteClusterSchedulerConfig =
 		"sagemaker:DeleteClusterSchedulerConfig";
 	/** [Write] sagemaker:DeleteCodeRepository */
-	static readonly DELETE_CODE_REPOSITORY = "sagemaker:DeleteCodeRepository";
+	static readonly DeleteCodeRepository = "sagemaker:DeleteCodeRepository";
 	/** [Write] sagemaker:DeleteCompilationJob */
-	static readonly DELETE_COMPILATION_JOB = "sagemaker:DeleteCompilationJob";
+	static readonly DeleteCompilationJob = "sagemaker:DeleteCompilationJob";
 	/** [Write] sagemaker:DeleteComputeQuota */
-	static readonly DELETE_COMPUTE_QUOTA = "sagemaker:DeleteComputeQuota";
+	static readonly DeleteComputeQuota = "sagemaker:DeleteComputeQuota";
 	/** [Write] sagemaker:DeleteContext */
-	static readonly DELETE_CONTEXT = "sagemaker:DeleteContext";
+	static readonly DeleteContext = "sagemaker:DeleteContext";
 	/** [Write] sagemaker:DeleteDataQualityJobDefinition */
-	static readonly DELETE_DATA_QUALITY_JOB_DEFINITION =
+	static readonly DeleteDataQualityJobDefinition =
 		"sagemaker:DeleteDataQualityJobDefinition";
 	/** [Write] sagemaker:DeleteDeviceFleet */
-	static readonly DELETE_DEVICE_FLEET = "sagemaker:DeleteDeviceFleet";
+	static readonly DeleteDeviceFleet = "sagemaker:DeleteDeviceFleet";
 	/** [Write] sagemaker:DeleteDomain */
-	static readonly DELETE_DOMAIN = "sagemaker:DeleteDomain";
+	static readonly DeleteDomain = "sagemaker:DeleteDomain";
 	/** [Write] sagemaker:DeleteEdgeDeploymentPlan */
-	static readonly DELETE_EDGE_DEPLOYMENT_PLAN =
+	static readonly DeleteEdgeDeploymentPlan =
 		"sagemaker:DeleteEdgeDeploymentPlan";
 	/** [Write] sagemaker:DeleteEdgeDeploymentStage */
-	static readonly DELETE_EDGE_DEPLOYMENT_STAGE =
+	static readonly DeleteEdgeDeploymentStage =
 		"sagemaker:DeleteEdgeDeploymentStage";
 	/** [Write] sagemaker:DeleteEndpoint */
-	static readonly DELETE_ENDPOINT = "sagemaker:DeleteEndpoint";
+	static readonly DeleteEndpoint = "sagemaker:DeleteEndpoint";
 	/** [Write] sagemaker:DeleteEndpointConfig */
-	static readonly DELETE_ENDPOINT_CONFIG = "sagemaker:DeleteEndpointConfig";
+	static readonly DeleteEndpointConfig = "sagemaker:DeleteEndpointConfig";
 	/** [Write] sagemaker:DeleteExperiment */
-	static readonly DELETE_EXPERIMENT = "sagemaker:DeleteExperiment";
+	static readonly DeleteExperiment = "sagemaker:DeleteExperiment";
 	/** [Write] sagemaker:DeleteFeatureGroup */
-	static readonly DELETE_FEATURE_GROUP = "sagemaker:DeleteFeatureGroup";
+	static readonly DeleteFeatureGroup = "sagemaker:DeleteFeatureGroup";
 	/** [Write] sagemaker:DeleteFlowDefinition */
-	static readonly DELETE_FLOW_DEFINITION = "sagemaker:DeleteFlowDefinition";
+	static readonly DeleteFlowDefinition = "sagemaker:DeleteFlowDefinition";
 	/** [Write] sagemaker:DeleteHub */
-	static readonly DELETE_HUB = "sagemaker:DeleteHub";
+	static readonly DeleteHub = "sagemaker:DeleteHub";
 	/** [Write] sagemaker:DeleteHubContent */
-	static readonly DELETE_HUB_CONTENT = "sagemaker:DeleteHubContent";
+	static readonly DeleteHubContent = "sagemaker:DeleteHubContent";
 	/** [Write] sagemaker:DeleteHubContentReference */
-	static readonly DELETE_HUB_CONTENT_REFERENCE =
+	static readonly DeleteHubContentReference =
 		"sagemaker:DeleteHubContentReference";
 	/** [Write] sagemaker:DeleteHumanLoop */
-	static readonly DELETE_HUMAN_LOOP = "sagemaker:DeleteHumanLoop";
+	static readonly DeleteHumanLoop = "sagemaker:DeleteHumanLoop";
 	/** [Write] sagemaker:DeleteHumanTaskUi */
-	static readonly DELETE_HUMAN_TASK_UI = "sagemaker:DeleteHumanTaskUi";
+	static readonly DeleteHumanTaskUi = "sagemaker:DeleteHumanTaskUi";
 	/** [Write] sagemaker:DeleteHyperParameterTuningJob */
-	static readonly DELETE_HYPER_PARAMETER_TUNING_JOB =
+	static readonly DeleteHyperParameterTuningJob =
 		"sagemaker:DeleteHyperParameterTuningJob";
 	/** [Write] sagemaker:DeleteImage */
-	static readonly DELETE_IMAGE = "sagemaker:DeleteImage";
+	static readonly DeleteImage = "sagemaker:DeleteImage";
 	/** [Write] sagemaker:DeleteImageVersion */
-	static readonly DELETE_IMAGE_VERSION = "sagemaker:DeleteImageVersion";
+	static readonly DeleteImageVersion = "sagemaker:DeleteImageVersion";
 	/** [Write] sagemaker:DeleteInferenceComponent */
-	static readonly DELETE_INFERENCE_COMPONENT =
+	static readonly DeleteInferenceComponent =
 		"sagemaker:DeleteInferenceComponent";
 	/** [Write] sagemaker:DeleteInferenceExperiment */
-	static readonly DELETE_INFERENCE_EXPERIMENT =
+	static readonly DeleteInferenceExperiment =
 		"sagemaker:DeleteInferenceExperiment";
 	/** [Write] sagemaker:DeleteJob */
-	static readonly DELETE_JOB = "sagemaker:DeleteJob";
+	static readonly DeleteJob = "sagemaker:DeleteJob";
 	/** [Write] sagemaker:DeleteLineageGroupPolicy */
-	static readonly DELETE_LINEAGE_GROUP_POLICY =
+	static readonly DeleteLineageGroupPolicy =
 		"sagemaker:DeleteLineageGroupPolicy";
 	/** [Write] sagemaker:DeleteMlflowApp */
-	static readonly DELETE_MLFLOW_APP = "sagemaker:DeleteMlflowApp";
+	static readonly DeleteMlflowApp = "sagemaker:DeleteMlflowApp";
 	/** [Write] sagemaker:DeleteMlflowTrackingServer */
-	static readonly DELETE_MLFLOW_TRACKING_SERVER =
+	static readonly DeleteMlflowTrackingServer =
 		"sagemaker:DeleteMlflowTrackingServer";
 	/** [Write] sagemaker:DeleteModel */
-	static readonly DELETE_MODEL = "sagemaker:DeleteModel";
+	static readonly DeleteModel = "sagemaker:DeleteModel";
 	/** [Write] sagemaker:DeleteModelBiasJobDefinition */
-	static readonly DELETE_MODEL_BIAS_JOB_DEFINITION =
+	static readonly DeleteModelBiasJobDefinition =
 		"sagemaker:DeleteModelBiasJobDefinition";
 	/** [Write] sagemaker:DeleteModelCard */
-	static readonly DELETE_MODEL_CARD = "sagemaker:DeleteModelCard";
+	static readonly DeleteModelCard = "sagemaker:DeleteModelCard";
 	/** [Write] sagemaker:DeleteModelExplainabilityJobDefinition */
-	static readonly DELETE_MODEL_EXPLAINABILITY_JOB_DEFINITION =
+	static readonly DeleteModelExplainabilityJobDefinition =
 		"sagemaker:DeleteModelExplainabilityJobDefinition";
 	/** [Write] sagemaker:DeleteModelPackage */
-	static readonly DELETE_MODEL_PACKAGE = "sagemaker:DeleteModelPackage";
+	static readonly DeleteModelPackage = "sagemaker:DeleteModelPackage";
 	/** [Write] sagemaker:DeleteModelPackageGroup */
-	static readonly DELETE_MODEL_PACKAGE_GROUP =
-		"sagemaker:DeleteModelPackageGroup";
+	static readonly DeleteModelPackageGroup = "sagemaker:DeleteModelPackageGroup";
 	/** [Write] sagemaker:DeleteModelPackageGroupPolicy */
-	static readonly DELETE_MODEL_PACKAGE_GROUP_POLICY =
+	static readonly DeleteModelPackageGroupPolicy =
 		"sagemaker:DeleteModelPackageGroupPolicy";
 	/** [Write] sagemaker:DeleteModelQualityJobDefinition */
-	static readonly DELETE_MODEL_QUALITY_JOB_DEFINITION =
+	static readonly DeleteModelQualityJobDefinition =
 		"sagemaker:DeleteModelQualityJobDefinition";
 	/** [Write] sagemaker:DeleteMonitoringSchedule */
-	static readonly DELETE_MONITORING_SCHEDULE =
+	static readonly DeleteMonitoringSchedule =
 		"sagemaker:DeleteMonitoringSchedule";
 	/** [Write] sagemaker:DeleteNotebookInstance */
-	static readonly DELETE_NOTEBOOK_INSTANCE = "sagemaker:DeleteNotebookInstance";
+	static readonly DeleteNotebookInstance = "sagemaker:DeleteNotebookInstance";
 	/** [Write] sagemaker:DeleteNotebookInstanceLifecycleConfig */
-	static readonly DELETE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG =
+	static readonly DeleteNotebookInstanceLifecycleConfig =
 		"sagemaker:DeleteNotebookInstanceLifecycleConfig";
 	/** [Write] sagemaker:DeleteOptimizationJob */
-	static readonly DELETE_OPTIMIZATION_JOB = "sagemaker:DeleteOptimizationJob";
+	static readonly DeleteOptimizationJob = "sagemaker:DeleteOptimizationJob";
 	/** [Write] sagemaker:DeletePartnerApp */
-	static readonly DELETE_PARTNER_APP = "sagemaker:DeletePartnerApp";
+	static readonly DeletePartnerApp = "sagemaker:DeletePartnerApp";
 	/** [Write] sagemaker:DeletePipeline */
-	static readonly DELETE_PIPELINE = "sagemaker:DeletePipeline";
+	static readonly DeletePipeline = "sagemaker:DeletePipeline";
 	/** [Write] sagemaker:DeleteProcessingJob */
-	static readonly DELETE_PROCESSING_JOB = "sagemaker:DeleteProcessingJob";
+	static readonly DeleteProcessingJob = "sagemaker:DeleteProcessingJob";
 	/** [Write] sagemaker:DeleteProject */
-	static readonly DELETE_PROJECT = "sagemaker:DeleteProject";
+	static readonly DeleteProject = "sagemaker:DeleteProject";
 	/** [Write] sagemaker:DeleteRecord */
-	static readonly DELETE_RECORD = "sagemaker:DeleteRecord";
+	static readonly DeleteRecord = "sagemaker:DeleteRecord";
 	/** [Write] sagemaker:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "sagemaker:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "sagemaker:DeleteResourcePolicy";
 	/** [Write] sagemaker:DeleteSpace */
-	static readonly DELETE_SPACE = "sagemaker:DeleteSpace";
+	static readonly DeleteSpace = "sagemaker:DeleteSpace";
 	/** [Write] sagemaker:DeleteStudioLifecycleConfig */
-	static readonly DELETE_STUDIO_LIFECYCLE_CONFIG =
+	static readonly DeleteStudioLifecycleConfig =
 		"sagemaker:DeleteStudioLifecycleConfig";
 	/** [Tagging] sagemaker:DeleteTags */
-	static readonly DELETE_TAGS = "sagemaker:DeleteTags";
+	static readonly DeleteTags = "sagemaker:DeleteTags";
 	/** [Write] sagemaker:DeleteTrainingJob */
-	static readonly DELETE_TRAINING_JOB = "sagemaker:DeleteTrainingJob";
+	static readonly DeleteTrainingJob = "sagemaker:DeleteTrainingJob";
 	/** [Write] sagemaker:DeleteTrial */
-	static readonly DELETE_TRIAL = "sagemaker:DeleteTrial";
+	static readonly DeleteTrial = "sagemaker:DeleteTrial";
 	/** [Write] sagemaker:DeleteTrialComponent */
-	static readonly DELETE_TRIAL_COMPONENT = "sagemaker:DeleteTrialComponent";
+	static readonly DeleteTrialComponent = "sagemaker:DeleteTrialComponent";
 	/** [Write] sagemaker:DeleteUserProfile */
-	static readonly DELETE_USER_PROFILE = "sagemaker:DeleteUserProfile";
+	static readonly DeleteUserProfile = "sagemaker:DeleteUserProfile";
 	/** [Write] sagemaker:DeleteWorkforce */
-	static readonly DELETE_WORKFORCE = "sagemaker:DeleteWorkforce";
+	static readonly DeleteWorkforce = "sagemaker:DeleteWorkforce";
 	/** [Write] sagemaker:DeleteWorkteam */
-	static readonly DELETE_WORKTEAM = "sagemaker:DeleteWorkteam";
+	static readonly DeleteWorkteam = "sagemaker:DeleteWorkteam";
 	/** [Write] sagemaker:DeployHubModel */
-	static readonly DEPLOY_HUB_MODEL = "sagemaker:DeployHubModel";
+	static readonly DeployHubModel = "sagemaker:DeployHubModel";
 	/** [Write] sagemaker:DeregisterDevices */
-	static readonly DEREGISTER_DEVICES = "sagemaker:DeregisterDevices";
+	static readonly DeregisterDevices = "sagemaker:DeregisterDevices";
 	/** [Read] sagemaker:DescribeAIBenchmarkJob */
-	static readonly DESCRIBE_AI_BENCHMARK_JOB =
-		"sagemaker:DescribeAIBenchmarkJob";
+	static readonly DescribeAIBenchmarkJob = "sagemaker:DescribeAIBenchmarkJob";
 	/** [Read] sagemaker:DescribeAIRecommendationJob */
-	static readonly DESCRIBE_AI_RECOMMENDATION_JOB =
+	static readonly DescribeAIRecommendationJob =
 		"sagemaker:DescribeAIRecommendationJob";
 	/** [Read] sagemaker:DescribeAIWorkloadConfig */
-	static readonly DESCRIBE_AI_WORKLOAD_CONFIG =
+	static readonly DescribeAIWorkloadConfig =
 		"sagemaker:DescribeAIWorkloadConfig";
 	/** [Read] sagemaker:DescribeAction */
-	static readonly DESCRIBE_ACTION = "sagemaker:DescribeAction";
+	static readonly DescribeAction = "sagemaker:DescribeAction";
 	/** [Read] sagemaker:DescribeAlgorithm */
-	static readonly DESCRIBE_ALGORITHM = "sagemaker:DescribeAlgorithm";
+	static readonly DescribeAlgorithm = "sagemaker:DescribeAlgorithm";
 	/** [Read] sagemaker:DescribeApp */
-	static readonly DESCRIBE_APP = "sagemaker:DescribeApp";
+	static readonly DescribeApp = "sagemaker:DescribeApp";
 	/** [Read] sagemaker:DescribeAppImageConfig */
-	static readonly DESCRIBE_APP_IMAGE_CONFIG =
-		"sagemaker:DescribeAppImageConfig";
+	static readonly DescribeAppImageConfig = "sagemaker:DescribeAppImageConfig";
 	/** [Read] sagemaker:DescribeArtifact */
-	static readonly DESCRIBE_ARTIFACT = "sagemaker:DescribeArtifact";
+	static readonly DescribeArtifact = "sagemaker:DescribeArtifact";
 	/** [Read] sagemaker:DescribeAutoMLJob */
-	static readonly DESCRIBE_AUTO_ML_JOB = "sagemaker:DescribeAutoMLJob";
+	static readonly DescribeAutoMLJob = "sagemaker:DescribeAutoMLJob";
 	/** [Read] sagemaker:DescribeAutoMLJobV2 */
-	static readonly DESCRIBE_AUTO_ML_JOB_V2 = "sagemaker:DescribeAutoMLJobV2";
+	static readonly DescribeAutoMLJobV2 = "sagemaker:DescribeAutoMLJobV2";
 	/** [Read] sagemaker:DescribeCluster */
-	static readonly DESCRIBE_CLUSTER = "sagemaker:DescribeCluster";
+	static readonly DescribeCluster = "sagemaker:DescribeCluster";
 	/** [Read] sagemaker:DescribeClusterEvent */
-	static readonly DESCRIBE_CLUSTER_EVENT = "sagemaker:DescribeClusterEvent";
+	static readonly DescribeClusterEvent = "sagemaker:DescribeClusterEvent";
 	/** [Read] sagemaker:DescribeClusterInference */
-	static readonly DESCRIBE_CLUSTER_INFERENCE =
+	static readonly DescribeClusterInference =
 		"sagemaker:DescribeClusterInference";
 	/** [Read] sagemaker:DescribeClusterNode */
-	static readonly DESCRIBE_CLUSTER_NODE = "sagemaker:DescribeClusterNode";
+	static readonly DescribeClusterNode = "sagemaker:DescribeClusterNode";
 	/** [Read] sagemaker:DescribeClusterSchedulerConfig */
-	static readonly DESCRIBE_CLUSTER_SCHEDULER_CONFIG =
+	static readonly DescribeClusterSchedulerConfig =
 		"sagemaker:DescribeClusterSchedulerConfig";
 	/** [Read] sagemaker:DescribeCodeRepository */
-	static readonly DESCRIBE_CODE_REPOSITORY = "sagemaker:DescribeCodeRepository";
+	static readonly DescribeCodeRepository = "sagemaker:DescribeCodeRepository";
 	/** [Read] sagemaker:DescribeCompilationJob */
-	static readonly DESCRIBE_COMPILATION_JOB = "sagemaker:DescribeCompilationJob";
+	static readonly DescribeCompilationJob = "sagemaker:DescribeCompilationJob";
 	/** [Read] sagemaker:DescribeComputeQuota */
-	static readonly DESCRIBE_COMPUTE_QUOTA = "sagemaker:DescribeComputeQuota";
+	static readonly DescribeComputeQuota = "sagemaker:DescribeComputeQuota";
 	/** [Read] sagemaker:DescribeContext */
-	static readonly DESCRIBE_CONTEXT = "sagemaker:DescribeContext";
+	static readonly DescribeContext = "sagemaker:DescribeContext";
 	/** [Read] sagemaker:DescribeDataQualityJobDefinition */
-	static readonly DESCRIBE_DATA_QUALITY_JOB_DEFINITION =
+	static readonly DescribeDataQualityJobDefinition =
 		"sagemaker:DescribeDataQualityJobDefinition";
 	/** [Read] sagemaker:DescribeDevice */
-	static readonly DESCRIBE_DEVICE = "sagemaker:DescribeDevice";
+	static readonly DescribeDevice = "sagemaker:DescribeDevice";
 	/** [Read] sagemaker:DescribeDeviceFleet */
-	static readonly DESCRIBE_DEVICE_FLEET = "sagemaker:DescribeDeviceFleet";
+	static readonly DescribeDeviceFleet = "sagemaker:DescribeDeviceFleet";
 	/** [Read] sagemaker:DescribeDomain */
-	static readonly DESCRIBE_DOMAIN = "sagemaker:DescribeDomain";
+	static readonly DescribeDomain = "sagemaker:DescribeDomain";
 	/** [Read] sagemaker:DescribeEdgeDeploymentPlan */
-	static readonly DESCRIBE_EDGE_DEPLOYMENT_PLAN =
+	static readonly DescribeEdgeDeploymentPlan =
 		"sagemaker:DescribeEdgeDeploymentPlan";
 	/** [Read] sagemaker:DescribeEdgePackagingJob */
-	static readonly DESCRIBE_EDGE_PACKAGING_JOB =
+	static readonly DescribeEdgePackagingJob =
 		"sagemaker:DescribeEdgePackagingJob";
 	/** [Read] sagemaker:DescribeEndpoint */
-	static readonly DESCRIBE_ENDPOINT = "sagemaker:DescribeEndpoint";
+	static readonly DescribeEndpoint = "sagemaker:DescribeEndpoint";
 	/** [Read] sagemaker:DescribeEndpointConfig */
-	static readonly DESCRIBE_ENDPOINT_CONFIG = "sagemaker:DescribeEndpointConfig";
+	static readonly DescribeEndpointConfig = "sagemaker:DescribeEndpointConfig";
 	/** [Read] sagemaker:DescribeExperiment */
-	static readonly DESCRIBE_EXPERIMENT = "sagemaker:DescribeExperiment";
+	static readonly DescribeExperiment = "sagemaker:DescribeExperiment";
 	/** [Read] sagemaker:DescribeFeatureGroup */
-	static readonly DESCRIBE_FEATURE_GROUP = "sagemaker:DescribeFeatureGroup";
+	static readonly DescribeFeatureGroup = "sagemaker:DescribeFeatureGroup";
 	/** [Read] sagemaker:DescribeFeatureMetadata */
-	static readonly DESCRIBE_FEATURE_METADATA =
-		"sagemaker:DescribeFeatureMetadata";
+	static readonly DescribeFeatureMetadata = "sagemaker:DescribeFeatureMetadata";
 	/** [Read] sagemaker:DescribeFlowDefinition */
-	static readonly DESCRIBE_FLOW_DEFINITION = "sagemaker:DescribeFlowDefinition";
+	static readonly DescribeFlowDefinition = "sagemaker:DescribeFlowDefinition";
 	/** [Read] sagemaker:DescribeHub */
-	static readonly DESCRIBE_HUB = "sagemaker:DescribeHub";
+	static readonly DescribeHub = "sagemaker:DescribeHub";
 	/** [Read] sagemaker:DescribeHubContent */
-	static readonly DESCRIBE_HUB_CONTENT = "sagemaker:DescribeHubContent";
+	static readonly DescribeHubContent = "sagemaker:DescribeHubContent";
 	/** [Read] sagemaker:DescribeHumanLoop */
-	static readonly DESCRIBE_HUMAN_LOOP = "sagemaker:DescribeHumanLoop";
+	static readonly DescribeHumanLoop = "sagemaker:DescribeHumanLoop";
 	/** [Read] sagemaker:DescribeHumanTaskUi */
-	static readonly DESCRIBE_HUMAN_TASK_UI = "sagemaker:DescribeHumanTaskUi";
+	static readonly DescribeHumanTaskUi = "sagemaker:DescribeHumanTaskUi";
 	/** [Read] sagemaker:DescribeHyperParameterTuningJob */
-	static readonly DESCRIBE_HYPER_PARAMETER_TUNING_JOB =
+	static readonly DescribeHyperParameterTuningJob =
 		"sagemaker:DescribeHyperParameterTuningJob";
 	/** [Read] sagemaker:DescribeImage */
-	static readonly DESCRIBE_IMAGE = "sagemaker:DescribeImage";
+	static readonly DescribeImage = "sagemaker:DescribeImage";
 	/** [Read] sagemaker:DescribeImageVersion */
-	static readonly DESCRIBE_IMAGE_VERSION = "sagemaker:DescribeImageVersion";
+	static readonly DescribeImageVersion = "sagemaker:DescribeImageVersion";
 	/** [Read] sagemaker:DescribeInferenceComponent */
-	static readonly DESCRIBE_INFERENCE_COMPONENT =
+	static readonly DescribeInferenceComponent =
 		"sagemaker:DescribeInferenceComponent";
 	/** [Read] sagemaker:DescribeInferenceExperiment */
-	static readonly DESCRIBE_INFERENCE_EXPERIMENT =
+	static readonly DescribeInferenceExperiment =
 		"sagemaker:DescribeInferenceExperiment";
 	/** [Read] sagemaker:DescribeInferenceRecommendationsJob */
-	static readonly DESCRIBE_INFERENCE_RECOMMENDATIONS_JOB =
+	static readonly DescribeInferenceRecommendationsJob =
 		"sagemaker:DescribeInferenceRecommendationsJob";
 	/** [Read] sagemaker:DescribeJob */
-	static readonly DESCRIBE_JOB = "sagemaker:DescribeJob";
+	static readonly DescribeJob = "sagemaker:DescribeJob";
 	/** [Read] sagemaker:DescribeJobSchemaVersion */
-	static readonly DESCRIBE_JOB_SCHEMA_VERSION =
+	static readonly DescribeJobSchemaVersion =
 		"sagemaker:DescribeJobSchemaVersion";
 	/** [Read] sagemaker:DescribeLabelingJob */
-	static readonly DESCRIBE_LABELING_JOB = "sagemaker:DescribeLabelingJob";
+	static readonly DescribeLabelingJob = "sagemaker:DescribeLabelingJob";
 	/** [Read] sagemaker:DescribeLineageGroup */
-	static readonly DESCRIBE_LINEAGE_GROUP = "sagemaker:DescribeLineageGroup";
+	static readonly DescribeLineageGroup = "sagemaker:DescribeLineageGroup";
 	/** [Read] sagemaker:DescribeMlflowApp */
-	static readonly DESCRIBE_MLFLOW_APP = "sagemaker:DescribeMlflowApp";
+	static readonly DescribeMlflowApp = "sagemaker:DescribeMlflowApp";
 	/** [Read] sagemaker:DescribeMlflowTrackingServer */
-	static readonly DESCRIBE_MLFLOW_TRACKING_SERVER =
+	static readonly DescribeMlflowTrackingServer =
 		"sagemaker:DescribeMlflowTrackingServer";
 	/** [Read] sagemaker:DescribeModel */
-	static readonly DESCRIBE_MODEL = "sagemaker:DescribeModel";
+	static readonly DescribeModel = "sagemaker:DescribeModel";
 	/** [Read] sagemaker:DescribeModelBiasJobDefinition */
-	static readonly DESCRIBE_MODEL_BIAS_JOB_DEFINITION =
+	static readonly DescribeModelBiasJobDefinition =
 		"sagemaker:DescribeModelBiasJobDefinition";
 	/** [Read] sagemaker:DescribeModelCard */
-	static readonly DESCRIBE_MODEL_CARD = "sagemaker:DescribeModelCard";
+	static readonly DescribeModelCard = "sagemaker:DescribeModelCard";
 	/** [Read] sagemaker:DescribeModelCardExportJob */
-	static readonly DESCRIBE_MODEL_CARD_EXPORT_JOB =
+	static readonly DescribeModelCardExportJob =
 		"sagemaker:DescribeModelCardExportJob";
 	/** [Read] sagemaker:DescribeModelExplainabilityJobDefinition */
-	static readonly DESCRIBE_MODEL_EXPLAINABILITY_JOB_DEFINITION =
+	static readonly DescribeModelExplainabilityJobDefinition =
 		"sagemaker:DescribeModelExplainabilityJobDefinition";
 	/** [Read] sagemaker:DescribeModelPackage */
-	static readonly DESCRIBE_MODEL_PACKAGE = "sagemaker:DescribeModelPackage";
+	static readonly DescribeModelPackage = "sagemaker:DescribeModelPackage";
 	/** [Read] sagemaker:DescribeModelPackageGroup */
-	static readonly DESCRIBE_MODEL_PACKAGE_GROUP =
+	static readonly DescribeModelPackageGroup =
 		"sagemaker:DescribeModelPackageGroup";
 	/** [Read] sagemaker:DescribeModelQualityJobDefinition */
-	static readonly DESCRIBE_MODEL_QUALITY_JOB_DEFINITION =
+	static readonly DescribeModelQualityJobDefinition =
 		"sagemaker:DescribeModelQualityJobDefinition";
 	/** [Read] sagemaker:DescribeMonitoringSchedule */
-	static readonly DESCRIBE_MONITORING_SCHEDULE =
+	static readonly DescribeMonitoringSchedule =
 		"sagemaker:DescribeMonitoringSchedule";
 	/** [Read] sagemaker:DescribeNotebookInstance */
-	static readonly DESCRIBE_NOTEBOOK_INSTANCE =
+	static readonly DescribeNotebookInstance =
 		"sagemaker:DescribeNotebookInstance";
 	/** [Read] sagemaker:DescribeNotebookInstanceLifecycleConfig */
-	static readonly DESCRIBE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG =
+	static readonly DescribeNotebookInstanceLifecycleConfig =
 		"sagemaker:DescribeNotebookInstanceLifecycleConfig";
 	/** [Read] sagemaker:DescribeOptimizationJob */
-	static readonly DESCRIBE_OPTIMIZATION_JOB =
-		"sagemaker:DescribeOptimizationJob";
+	static readonly DescribeOptimizationJob = "sagemaker:DescribeOptimizationJob";
 	/** [Read] sagemaker:DescribePartnerApp */
-	static readonly DESCRIBE_PARTNER_APP = "sagemaker:DescribePartnerApp";
+	static readonly DescribePartnerApp = "sagemaker:DescribePartnerApp";
 	/** [Read] sagemaker:DescribePipeline */
-	static readonly DESCRIBE_PIPELINE = "sagemaker:DescribePipeline";
+	static readonly DescribePipeline = "sagemaker:DescribePipeline";
 	/** [Read] sagemaker:DescribePipelineDefinitionForExecution */
-	static readonly DESCRIBE_PIPELINE_DEFINITION_FOR_EXECUTION =
+	static readonly DescribePipelineDefinitionForExecution =
 		"sagemaker:DescribePipelineDefinitionForExecution";
 	/** [Read] sagemaker:DescribePipelineExecution */
-	static readonly DESCRIBE_PIPELINE_EXECUTION =
+	static readonly DescribePipelineExecution =
 		"sagemaker:DescribePipelineExecution";
 	/** [Read] sagemaker:DescribeProcessingJob */
-	static readonly DESCRIBE_PROCESSING_JOB = "sagemaker:DescribeProcessingJob";
+	static readonly DescribeProcessingJob = "sagemaker:DescribeProcessingJob";
 	/** [Read] sagemaker:DescribeProject */
-	static readonly DESCRIBE_PROJECT = "sagemaker:DescribeProject";
+	static readonly DescribeProject = "sagemaker:DescribeProject";
 	/** [Read] sagemaker:DescribeReservedCapacity */
-	static readonly DESCRIBE_RESERVED_CAPACITY =
+	static readonly DescribeReservedCapacity =
 		"sagemaker:DescribeReservedCapacity";
 	/** [Read] sagemaker:DescribeSharedModel */
-	static readonly DESCRIBE_SHARED_MODEL = "sagemaker:DescribeSharedModel";
+	static readonly DescribeSharedModel = "sagemaker:DescribeSharedModel";
 	/** [Read] sagemaker:DescribeSpace */
-	static readonly DESCRIBE_SPACE = "sagemaker:DescribeSpace";
+	static readonly DescribeSpace = "sagemaker:DescribeSpace";
 	/** [Read] sagemaker:DescribeStudioLifecycleConfig */
-	static readonly DESCRIBE_STUDIO_LIFECYCLE_CONFIG =
+	static readonly DescribeStudioLifecycleConfig =
 		"sagemaker:DescribeStudioLifecycleConfig";
 	/** [Read] sagemaker:DescribeSubscribedWorkteam */
-	static readonly DESCRIBE_SUBSCRIBED_WORKTEAM =
+	static readonly DescribeSubscribedWorkteam =
 		"sagemaker:DescribeSubscribedWorkteam";
 	/** [Read] sagemaker:DescribeTrainingJob */
-	static readonly DESCRIBE_TRAINING_JOB = "sagemaker:DescribeTrainingJob";
+	static readonly DescribeTrainingJob = "sagemaker:DescribeTrainingJob";
 	/** [Read] sagemaker:DescribeTrainingPlan */
-	static readonly DESCRIBE_TRAINING_PLAN = "sagemaker:DescribeTrainingPlan";
+	static readonly DescribeTrainingPlan = "sagemaker:DescribeTrainingPlan";
 	/** [Read] sagemaker:DescribeTransformJob */
-	static readonly DESCRIBE_TRANSFORM_JOB = "sagemaker:DescribeTransformJob";
+	static readonly DescribeTransformJob = "sagemaker:DescribeTransformJob";
 	/** [Read] sagemaker:DescribeTrial */
-	static readonly DESCRIBE_TRIAL = "sagemaker:DescribeTrial";
+	static readonly DescribeTrial = "sagemaker:DescribeTrial";
 	/** [Read] sagemaker:DescribeTrialComponent */
-	static readonly DESCRIBE_TRIAL_COMPONENT = "sagemaker:DescribeTrialComponent";
+	static readonly DescribeTrialComponent = "sagemaker:DescribeTrialComponent";
 	/** [Read] sagemaker:DescribeUserProfile */
-	static readonly DESCRIBE_USER_PROFILE = "sagemaker:DescribeUserProfile";
+	static readonly DescribeUserProfile = "sagemaker:DescribeUserProfile";
 	/** [Read] sagemaker:DescribeWorkforce */
-	static readonly DESCRIBE_WORKFORCE = "sagemaker:DescribeWorkforce";
+	static readonly DescribeWorkforce = "sagemaker:DescribeWorkforce";
 	/** [Read] sagemaker:DescribeWorkteam */
-	static readonly DESCRIBE_WORKTEAM = "sagemaker:DescribeWorkteam";
+	static readonly DescribeWorkteam = "sagemaker:DescribeWorkteam";
 	/** [Write] sagemaker:DetachClusterNodeVolume */
-	static readonly DETACH_CLUSTER_NODE_VOLUME =
-		"sagemaker:DetachClusterNodeVolume";
+	static readonly DetachClusterNodeVolume = "sagemaker:DetachClusterNodeVolume";
 	/** [Write] sagemaker:DisableSagemakerServicecatalogPortfolio */
-	static readonly DISABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO =
+	static readonly DisableSagemakerServicecatalogPortfolio =
 		"sagemaker:DisableSagemakerServicecatalogPortfolio";
 	/** [Write] sagemaker:DisassociateTrialComponent */
-	static readonly DISASSOCIATE_TRIAL_COMPONENT =
+	static readonly DisassociateTrialComponent =
 		"sagemaker:DisassociateTrialComponent";
 	/** [Write] sagemaker:EnableSagemakerServicecatalogPortfolio */
-	static readonly ENABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO =
+	static readonly EnableSagemakerServicecatalogPortfolio =
 		"sagemaker:EnableSagemakerServicecatalogPortfolio";
 	/** [Read] sagemaker:GetDeployments */
-	static readonly GET_DEPLOYMENTS = "sagemaker:GetDeployments";
+	static readonly actionGetDeployments = "sagemaker:GetDeployments";
 	/** [Read] sagemaker:GetDeviceFleetReport */
-	static readonly GET_DEVICE_FLEET_REPORT = "sagemaker:GetDeviceFleetReport";
+	static readonly actionGetDeviceFleetReport = "sagemaker:GetDeviceFleetReport";
 	/** [Read] sagemaker:GetDeviceRegistration */
-	static readonly GET_DEVICE_REGISTRATION = "sagemaker:GetDeviceRegistration";
+	static readonly actionGetDeviceRegistration =
+		"sagemaker:GetDeviceRegistration";
 	/** [Read] sagemaker:GetLineageGroupPolicy */
-	static readonly GET_LINEAGE_GROUP_POLICY = "sagemaker:GetLineageGroupPolicy";
+	static readonly actionGetLineageGroupPolicy =
+		"sagemaker:GetLineageGroupPolicy";
 	/** [Read] sagemaker:GetModelPackageGroupPolicy */
-	static readonly GET_MODEL_PACKAGE_GROUP_POLICY =
+	static readonly actionGetModelPackageGroupPolicy =
 		"sagemaker:GetModelPackageGroupPolicy";
 	/** [Read] sagemaker:GetRecord */
-	static readonly GET_RECORD = "sagemaker:GetRecord";
+	static readonly actionGetRecord = "sagemaker:GetRecord";
 	/** [Read] sagemaker:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "sagemaker:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "sagemaker:GetResourcePolicy";
 	/** [Read] sagemaker:GetSagemakerServicecatalogPortfolioStatus */
-	static readonly GET_SAGEMAKER_SERVICECATALOG_PORTFOLIO_STATUS =
+	static readonly actionGetSagemakerServicecatalogPortfolioStatus =
 		"sagemaker:GetSagemakerServicecatalogPortfolioStatus";
 	/** [Read] sagemaker:GetScalingConfigurationRecommendation */
-	static readonly GET_SCALING_CONFIGURATION_RECOMMENDATION =
+	static readonly actionGetScalingConfigurationRecommendation =
 		"sagemaker:GetScalingConfigurationRecommendation";
 	/** [Read] sagemaker:GetSearchSuggestions */
-	static readonly GET_SEARCH_SUGGESTIONS = "sagemaker:GetSearchSuggestions";
+	static readonly actionGetSearchSuggestions = "sagemaker:GetSearchSuggestions";
 	/** [Write] sagemaker:ImportHubContent */
-	static readonly IMPORT_HUB_CONTENT = "sagemaker:ImportHubContent";
+	static readonly ImportHubContent = "sagemaker:ImportHubContent";
 	/** [Read] sagemaker:InvokeEndpoint */
-	static readonly INVOKE_ENDPOINT = "sagemaker:InvokeEndpoint";
+	static readonly InvokeEndpoint = "sagemaker:InvokeEndpoint";
 	/** [Read] sagemaker:InvokeEndpointAsync */
-	static readonly INVOKE_ENDPOINT_ASYNC = "sagemaker:InvokeEndpointAsync";
+	static readonly InvokeEndpointAsync = "sagemaker:InvokeEndpointAsync";
 	/** [Read] sagemaker:InvokeEndpointWithResponseStream */
-	static readonly INVOKE_ENDPOINT_WITH_RESPONSE_STREAM =
+	static readonly InvokeEndpointWithResponseStream =
 		"sagemaker:InvokeEndpointWithResponseStream";
 	/** [List] sagemaker:ListAIBenchmarkJobs */
-	static readonly LIST_AI_BENCHMARK_JOBS = "sagemaker:ListAIBenchmarkJobs";
+	static readonly ListAIBenchmarkJobs = "sagemaker:ListAIBenchmarkJobs";
 	/** [List] sagemaker:ListAIRecommendationJobs */
-	static readonly LIST_AI_RECOMMENDATION_JOBS =
+	static readonly ListAIRecommendationJobs =
 		"sagemaker:ListAIRecommendationJobs";
 	/** [List] sagemaker:ListAIWorkloadConfigs */
-	static readonly LIST_AI_WORKLOAD_CONFIGS = "sagemaker:ListAIWorkloadConfigs";
+	static readonly ListAIWorkloadConfigs = "sagemaker:ListAIWorkloadConfigs";
 	/** [List] sagemaker:ListActions */
-	static readonly LIST_ACTIONS = "sagemaker:ListActions";
+	static readonly ListActions = "sagemaker:ListActions";
 	/** [List] sagemaker:ListAlgorithms */
-	static readonly LIST_ALGORITHMS = "sagemaker:ListAlgorithms";
+	static readonly ListAlgorithms = "sagemaker:ListAlgorithms";
 	/** [List] sagemaker:ListAliases */
-	static readonly LIST_ALIASES = "sagemaker:ListAliases";
+	static readonly ListAliases = "sagemaker:ListAliases";
 	/** [List] sagemaker:ListAppImageConfigs */
-	static readonly LIST_APP_IMAGE_CONFIGS = "sagemaker:ListAppImageConfigs";
+	static readonly ListAppImageConfigs = "sagemaker:ListAppImageConfigs";
 	/** [List] sagemaker:ListApps */
-	static readonly LIST_APPS = "sagemaker:ListApps";
+	static readonly ListApps = "sagemaker:ListApps";
 	/** [List] sagemaker:ListArtifacts */
-	static readonly LIST_ARTIFACTS = "sagemaker:ListArtifacts";
+	static readonly ListArtifacts = "sagemaker:ListArtifacts";
 	/** [List] sagemaker:ListAssociations */
-	static readonly LIST_ASSOCIATIONS = "sagemaker:ListAssociations";
+	static readonly ListAssociations = "sagemaker:ListAssociations";
 	/** [List] sagemaker:ListAutoMLJobs */
-	static readonly LIST_AUTO_ML_JOBS = "sagemaker:ListAutoMLJobs";
+	static readonly ListAutoMLJobs = "sagemaker:ListAutoMLJobs";
 	/** [List] sagemaker:ListCandidatesForAutoMLJob */
-	static readonly LIST_CANDIDATES_FOR_AUTO_ML_JOB =
+	static readonly ListCandidatesForAutoMLJob =
 		"sagemaker:ListCandidatesForAutoMLJob";
 	/** [List] sagemaker:ListClusterEvents */
-	static readonly LIST_CLUSTER_EVENTS = "sagemaker:ListClusterEvents";
+	static readonly ListClusterEvents = "sagemaker:ListClusterEvents";
 	/** [List] sagemaker:ListClusterNodes */
-	static readonly LIST_CLUSTER_NODES = "sagemaker:ListClusterNodes";
+	static readonly ListClusterNodes = "sagemaker:ListClusterNodes";
 	/** [List] sagemaker:ListClusterSchedulerConfigs */
-	static readonly LIST_CLUSTER_SCHEDULER_CONFIGS =
+	static readonly ListClusterSchedulerConfigs =
 		"sagemaker:ListClusterSchedulerConfigs";
 	/** [List] sagemaker:ListClusters */
-	static readonly LIST_CLUSTERS = "sagemaker:ListClusters";
+	static readonly ListClusters = "sagemaker:ListClusters";
 	/** [List] sagemaker:ListCodeRepositories */
-	static readonly LIST_CODE_REPOSITORIES = "sagemaker:ListCodeRepositories";
+	static readonly ListCodeRepositories = "sagemaker:ListCodeRepositories";
 	/** [List] sagemaker:ListCompilationJobs */
-	static readonly LIST_COMPILATION_JOBS = "sagemaker:ListCompilationJobs";
+	static readonly ListCompilationJobs = "sagemaker:ListCompilationJobs";
 	/** [List] sagemaker:ListComputeQuotas */
-	static readonly LIST_COMPUTE_QUOTAS = "sagemaker:ListComputeQuotas";
+	static readonly ListComputeQuotas = "sagemaker:ListComputeQuotas";
 	/** [List] sagemaker:ListContexts */
-	static readonly LIST_CONTEXTS = "sagemaker:ListContexts";
+	static readonly ListContexts = "sagemaker:ListContexts";
 	/** [List] sagemaker:ListDataQualityJobDefinitions */
-	static readonly LIST_DATA_QUALITY_JOB_DEFINITIONS =
+	static readonly ListDataQualityJobDefinitions =
 		"sagemaker:ListDataQualityJobDefinitions";
 	/** [List] sagemaker:ListDeviceFleets */
-	static readonly LIST_DEVICE_FLEETS = "sagemaker:ListDeviceFleets";
+	static readonly ListDeviceFleets = "sagemaker:ListDeviceFleets";
 	/** [List] sagemaker:ListDevices */
-	static readonly LIST_DEVICES = "sagemaker:ListDevices";
+	static readonly ListDevices = "sagemaker:ListDevices";
 	/** [List] sagemaker:ListDomains */
-	static readonly LIST_DOMAINS = "sagemaker:ListDomains";
+	static readonly ListDomains = "sagemaker:ListDomains";
 	/** [List] sagemaker:ListEdgeDeploymentPlans */
-	static readonly LIST_EDGE_DEPLOYMENT_PLANS =
-		"sagemaker:ListEdgeDeploymentPlans";
+	static readonly ListEdgeDeploymentPlans = "sagemaker:ListEdgeDeploymentPlans";
 	/** [List] sagemaker:ListEdgePackagingJobs */
-	static readonly LIST_EDGE_PACKAGING_JOBS = "sagemaker:ListEdgePackagingJobs";
+	static readonly ListEdgePackagingJobs = "sagemaker:ListEdgePackagingJobs";
 	/** [List] sagemaker:ListEndpointConfigs */
-	static readonly LIST_ENDPOINT_CONFIGS = "sagemaker:ListEndpointConfigs";
+	static readonly ListEndpointConfigs = "sagemaker:ListEndpointConfigs";
 	/** [List] sagemaker:ListEndpoints */
-	static readonly LIST_ENDPOINTS = "sagemaker:ListEndpoints";
+	static readonly ListEndpoints = "sagemaker:ListEndpoints";
 	/** [List] sagemaker:ListExperiments */
-	static readonly LIST_EXPERIMENTS = "sagemaker:ListExperiments";
+	static readonly ListExperiments = "sagemaker:ListExperiments";
 	/** [List] sagemaker:ListFeatureGroups */
-	static readonly LIST_FEATURE_GROUPS = "sagemaker:ListFeatureGroups";
+	static readonly ListFeatureGroups = "sagemaker:ListFeatureGroups";
 	/** [List] sagemaker:ListFlowDefinitions */
-	static readonly LIST_FLOW_DEFINITIONS = "sagemaker:ListFlowDefinitions";
+	static readonly ListFlowDefinitions = "sagemaker:ListFlowDefinitions";
 	/** [List] sagemaker:ListHubContentVersions */
-	static readonly LIST_HUB_CONTENT_VERSIONS =
-		"sagemaker:ListHubContentVersions";
+	static readonly ListHubContentVersions = "sagemaker:ListHubContentVersions";
 	/** [List] sagemaker:ListHubContents */
-	static readonly LIST_HUB_CONTENTS = "sagemaker:ListHubContents";
+	static readonly ListHubContents = "sagemaker:ListHubContents";
 	/** [List] sagemaker:ListHubs */
-	static readonly LIST_HUBS = "sagemaker:ListHubs";
+	static readonly ListHubs = "sagemaker:ListHubs";
 	/** [List] sagemaker:ListHumanLoops */
-	static readonly LIST_HUMAN_LOOPS = "sagemaker:ListHumanLoops";
+	static readonly ListHumanLoops = "sagemaker:ListHumanLoops";
 	/** [List] sagemaker:ListHumanTaskUis */
-	static readonly LIST_HUMAN_TASK_UIS = "sagemaker:ListHumanTaskUis";
+	static readonly ListHumanTaskUis = "sagemaker:ListHumanTaskUis";
 	/** [List] sagemaker:ListHyperParameterTuningJobs */
-	static readonly LIST_HYPER_PARAMETER_TUNING_JOBS =
+	static readonly ListHyperParameterTuningJobs =
 		"sagemaker:ListHyperParameterTuningJobs";
 	/** [List] sagemaker:ListImageVersions */
-	static readonly LIST_IMAGE_VERSIONS = "sagemaker:ListImageVersions";
+	static readonly ListImageVersions = "sagemaker:ListImageVersions";
 	/** [List] sagemaker:ListImages */
-	static readonly LIST_IMAGES = "sagemaker:ListImages";
+	static readonly ListImages = "sagemaker:ListImages";
 	/** [List] sagemaker:ListInferenceComponents */
-	static readonly LIST_INFERENCE_COMPONENTS =
-		"sagemaker:ListInferenceComponents";
+	static readonly ListInferenceComponents = "sagemaker:ListInferenceComponents";
 	/** [List] sagemaker:ListInferenceExperiments */
-	static readonly LIST_INFERENCE_EXPERIMENTS =
+	static readonly ListInferenceExperiments =
 		"sagemaker:ListInferenceExperiments";
 	/** [List] sagemaker:ListInferenceRecommendationsJobSteps */
-	static readonly LIST_INFERENCE_RECOMMENDATIONS_JOB_STEPS =
+	static readonly ListInferenceRecommendationsJobSteps =
 		"sagemaker:ListInferenceRecommendationsJobSteps";
 	/** [List] sagemaker:ListInferenceRecommendationsJobs */
-	static readonly LIST_INFERENCE_RECOMMENDATIONS_JOBS =
+	static readonly ListInferenceRecommendationsJobs =
 		"sagemaker:ListInferenceRecommendationsJobs";
 	/** [List] sagemaker:ListJobSchemaVersions */
-	static readonly LIST_JOB_SCHEMA_VERSIONS = "sagemaker:ListJobSchemaVersions";
+	static readonly ListJobSchemaVersions = "sagemaker:ListJobSchemaVersions";
 	/** [List] sagemaker:ListJobs */
-	static readonly LIST_JOBS = "sagemaker:ListJobs";
+	static readonly ListJobs = "sagemaker:ListJobs";
 	/** [List] sagemaker:ListLabelingJobs */
-	static readonly LIST_LABELING_JOBS = "sagemaker:ListLabelingJobs";
+	static readonly ListLabelingJobs = "sagemaker:ListLabelingJobs";
 	/** [List] sagemaker:ListLabelingJobsForWorkteam */
-	static readonly LIST_LABELING_JOBS_FOR_WORKTEAM =
+	static readonly ListLabelingJobsForWorkteam =
 		"sagemaker:ListLabelingJobsForWorkteam";
 	/** [List] sagemaker:ListLineageGroups */
-	static readonly LIST_LINEAGE_GROUPS = "sagemaker:ListLineageGroups";
+	static readonly ListLineageGroups = "sagemaker:ListLineageGroups";
 	/** [List] sagemaker:ListMlflowApps */
-	static readonly LIST_MLFLOW_APPS = "sagemaker:ListMlflowApps";
+	static readonly ListMlflowApps = "sagemaker:ListMlflowApps";
 	/** [List] sagemaker:ListMlflowTrackingServers */
-	static readonly LIST_MLFLOW_TRACKING_SERVERS =
+	static readonly ListMlflowTrackingServers =
 		"sagemaker:ListMlflowTrackingServers";
 	/** [List] sagemaker:ListModelBiasJobDefinitions */
-	static readonly LIST_MODEL_BIAS_JOB_DEFINITIONS =
+	static readonly ListModelBiasJobDefinitions =
 		"sagemaker:ListModelBiasJobDefinitions";
 	/** [List] sagemaker:ListModelCardExportJobs */
-	static readonly LIST_MODEL_CARD_EXPORT_JOBS =
-		"sagemaker:ListModelCardExportJobs";
+	static readonly ListModelCardExportJobs = "sagemaker:ListModelCardExportJobs";
 	/** [List] sagemaker:ListModelCardVersions */
-	static readonly LIST_MODEL_CARD_VERSIONS = "sagemaker:ListModelCardVersions";
+	static readonly ListModelCardVersions = "sagemaker:ListModelCardVersions";
 	/** [List] sagemaker:ListModelCards */
-	static readonly LIST_MODEL_CARDS = "sagemaker:ListModelCards";
+	static readonly ListModelCards = "sagemaker:ListModelCards";
 	/** [List] sagemaker:ListModelExplainabilityJobDefinitions */
-	static readonly LIST_MODEL_EXPLAINABILITY_JOB_DEFINITIONS =
+	static readonly ListModelExplainabilityJobDefinitions =
 		"sagemaker:ListModelExplainabilityJobDefinitions";
 	/** [List] sagemaker:ListModelMetadata */
-	static readonly LIST_MODEL_METADATA = "sagemaker:ListModelMetadata";
+	static readonly ListModelMetadata = "sagemaker:ListModelMetadata";
 	/** [List] sagemaker:ListModelPackageGroups */
-	static readonly LIST_MODEL_PACKAGE_GROUPS =
-		"sagemaker:ListModelPackageGroups";
+	static readonly ListModelPackageGroups = "sagemaker:ListModelPackageGroups";
 	/** [List] sagemaker:ListModelPackages */
-	static readonly LIST_MODEL_PACKAGES = "sagemaker:ListModelPackages";
+	static readonly ListModelPackages = "sagemaker:ListModelPackages";
 	/** [List] sagemaker:ListModelQualityJobDefinitions */
-	static readonly LIST_MODEL_QUALITY_JOB_DEFINITIONS =
+	static readonly ListModelQualityJobDefinitions =
 		"sagemaker:ListModelQualityJobDefinitions";
 	/** [List] sagemaker:ListModels */
-	static readonly LIST_MODELS = "sagemaker:ListModels";
+	static readonly ListModels = "sagemaker:ListModels";
 	/** [List] sagemaker:ListMonitoringAlertHistory */
-	static readonly LIST_MONITORING_ALERT_HISTORY =
+	static readonly ListMonitoringAlertHistory =
 		"sagemaker:ListMonitoringAlertHistory";
 	/** [List] sagemaker:ListMonitoringAlerts */
-	static readonly LIST_MONITORING_ALERTS = "sagemaker:ListMonitoringAlerts";
+	static readonly ListMonitoringAlerts = "sagemaker:ListMonitoringAlerts";
 	/** [List] sagemaker:ListMonitoringExecutions */
-	static readonly LIST_MONITORING_EXECUTIONS =
+	static readonly ListMonitoringExecutions =
 		"sagemaker:ListMonitoringExecutions";
 	/** [List] sagemaker:ListMonitoringSchedules */
-	static readonly LIST_MONITORING_SCHEDULES =
-		"sagemaker:ListMonitoringSchedules";
+	static readonly ListMonitoringSchedules = "sagemaker:ListMonitoringSchedules";
 	/** [List] sagemaker:ListNotebookInstanceLifecycleConfigs */
-	static readonly LIST_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIGS =
+	static readonly ListNotebookInstanceLifecycleConfigs =
 		"sagemaker:ListNotebookInstanceLifecycleConfigs";
 	/** [List] sagemaker:ListNotebookInstances */
-	static readonly LIST_NOTEBOOK_INSTANCES = "sagemaker:ListNotebookInstances";
+	static readonly ListNotebookInstances = "sagemaker:ListNotebookInstances";
 	/** [List] sagemaker:ListOptimizationJobs */
-	static readonly LIST_OPTIMIZATION_JOBS = "sagemaker:ListOptimizationJobs";
+	static readonly ListOptimizationJobs = "sagemaker:ListOptimizationJobs";
 	/** [List] sagemaker:ListPartnerApps */
-	static readonly LIST_PARTNER_APPS = "sagemaker:ListPartnerApps";
+	static readonly ListPartnerApps = "sagemaker:ListPartnerApps";
 	/** [List] sagemaker:ListPipelineExecutionSteps */
-	static readonly LIST_PIPELINE_EXECUTION_STEPS =
+	static readonly ListPipelineExecutionSteps =
 		"sagemaker:ListPipelineExecutionSteps";
 	/** [List] sagemaker:ListPipelineExecutions */
-	static readonly LIST_PIPELINE_EXECUTIONS = "sagemaker:ListPipelineExecutions";
+	static readonly ListPipelineExecutions = "sagemaker:ListPipelineExecutions";
 	/** [List] sagemaker:ListPipelineParametersForExecution */
-	static readonly LIST_PIPELINE_PARAMETERS_FOR_EXECUTION =
+	static readonly ListPipelineParametersForExecution =
 		"sagemaker:ListPipelineParametersForExecution";
 	/** [List] sagemaker:ListPipelineVersions */
-	static readonly LIST_PIPELINE_VERSIONS = "sagemaker:ListPipelineVersions";
+	static readonly ListPipelineVersions = "sagemaker:ListPipelineVersions";
 	/** [List] sagemaker:ListPipelines */
-	static readonly LIST_PIPELINES = "sagemaker:ListPipelines";
+	static readonly ListPipelines = "sagemaker:ListPipelines";
 	/** [List] sagemaker:ListProcessingJobs */
-	static readonly LIST_PROCESSING_JOBS = "sagemaker:ListProcessingJobs";
+	static readonly ListProcessingJobs = "sagemaker:ListProcessingJobs";
 	/** [List] sagemaker:ListProjects */
-	static readonly LIST_PROJECTS = "sagemaker:ListProjects";
+	static readonly ListProjects = "sagemaker:ListProjects";
 	/** [List] sagemaker:ListRecords */
-	static readonly LIST_RECORDS = "sagemaker:ListRecords";
+	static readonly ListRecords = "sagemaker:ListRecords";
 	/** [List] sagemaker:ListResourceCatalogs */
-	static readonly LIST_RESOURCE_CATALOGS = "sagemaker:ListResourceCatalogs";
+	static readonly ListResourceCatalogs = "sagemaker:ListResourceCatalogs";
 	/** [List] sagemaker:ListSharedModelEvents */
-	static readonly LIST_SHARED_MODEL_EVENTS = "sagemaker:ListSharedModelEvents";
+	static readonly ListSharedModelEvents = "sagemaker:ListSharedModelEvents";
 	/** [List] sagemaker:ListSharedModelVersions */
-	static readonly LIST_SHARED_MODEL_VERSIONS =
-		"sagemaker:ListSharedModelVersions";
+	static readonly ListSharedModelVersions = "sagemaker:ListSharedModelVersions";
 	/** [List] sagemaker:ListSharedModels */
-	static readonly LIST_SHARED_MODELS = "sagemaker:ListSharedModels";
+	static readonly ListSharedModels = "sagemaker:ListSharedModels";
 	/** [List] sagemaker:ListSpaces */
-	static readonly LIST_SPACES = "sagemaker:ListSpaces";
+	static readonly ListSpaces = "sagemaker:ListSpaces";
 	/** [List] sagemaker:ListStageDevices */
-	static readonly LIST_STAGE_DEVICES = "sagemaker:ListStageDevices";
+	static readonly ListStageDevices = "sagemaker:ListStageDevices";
 	/** [List] sagemaker:ListStudioLifecycleConfigs */
-	static readonly LIST_STUDIO_LIFECYCLE_CONFIGS =
+	static readonly ListStudioLifecycleConfigs =
 		"sagemaker:ListStudioLifecycleConfigs";
 	/** [List] sagemaker:ListSubscribedWorkteams */
-	static readonly LIST_SUBSCRIBED_WORKTEAMS =
-		"sagemaker:ListSubscribedWorkteams";
+	static readonly ListSubscribedWorkteams = "sagemaker:ListSubscribedWorkteams";
 	/** [List] sagemaker:ListTags */
-	static readonly LIST_TAGS = "sagemaker:ListTags";
+	static readonly ListTags = "sagemaker:ListTags";
 	/** [List] sagemaker:ListTrainingJobs */
-	static readonly LIST_TRAINING_JOBS = "sagemaker:ListTrainingJobs";
+	static readonly ListTrainingJobs = "sagemaker:ListTrainingJobs";
 	/** [List] sagemaker:ListTrainingJobsForHyperParameterTuningJob */
-	static readonly LIST_TRAINING_JOBS_FOR_HYPER_PARAMETER_TUNING_JOB =
+	static readonly ListTrainingJobsForHyperParameterTuningJob =
 		"sagemaker:ListTrainingJobsForHyperParameterTuningJob";
 	/** [List] sagemaker:ListTrainingPlans */
-	static readonly LIST_TRAINING_PLANS = "sagemaker:ListTrainingPlans";
+	static readonly ListTrainingPlans = "sagemaker:ListTrainingPlans";
 	/** [List] sagemaker:ListTransformJobs */
-	static readonly LIST_TRANSFORM_JOBS = "sagemaker:ListTransformJobs";
+	static readonly ListTransformJobs = "sagemaker:ListTransformJobs";
 	/** [List] sagemaker:ListTrialComponents */
-	static readonly LIST_TRIAL_COMPONENTS = "sagemaker:ListTrialComponents";
+	static readonly ListTrialComponents = "sagemaker:ListTrialComponents";
 	/** [List] sagemaker:ListTrials */
-	static readonly LIST_TRIALS = "sagemaker:ListTrials";
+	static readonly ListTrials = "sagemaker:ListTrials";
 	/** [List] sagemaker:ListUltraServersByReservedCapacity */
-	static readonly LIST_ULTRA_SERVERS_BY_RESERVED_CAPACITY =
+	static readonly ListUltraServersByReservedCapacity =
 		"sagemaker:ListUltraServersByReservedCapacity";
 	/** [List] sagemaker:ListUserProfiles */
-	static readonly LIST_USER_PROFILES = "sagemaker:ListUserProfiles";
+	static readonly ListUserProfiles = "sagemaker:ListUserProfiles";
 	/** [List] sagemaker:ListWorkforces */
-	static readonly LIST_WORKFORCES = "sagemaker:ListWorkforces";
+	static readonly ListWorkforces = "sagemaker:ListWorkforces";
 	/** [List] sagemaker:ListWorkteams */
-	static readonly LIST_WORKTEAMS = "sagemaker:ListWorkteams";
+	static readonly ListWorkteams = "sagemaker:ListWorkteams";
 	/** [Write] sagemaker:PutLineageGroupPolicy */
-	static readonly PUT_LINEAGE_GROUP_POLICY = "sagemaker:PutLineageGroupPolicy";
+	static readonly PutLineageGroupPolicy = "sagemaker:PutLineageGroupPolicy";
 	/** [Write] sagemaker:PutModelPackageGroupPolicy */
-	static readonly PUT_MODEL_PACKAGE_GROUP_POLICY =
+	static readonly PutModelPackageGroupPolicy =
 		"sagemaker:PutModelPackageGroupPolicy";
 	/** [Write] sagemaker:PutRecord */
-	static readonly PUT_RECORD = "sagemaker:PutRecord";
+	static readonly PutRecord = "sagemaker:PutRecord";
 	/** [Write] sagemaker:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "sagemaker:PutResourcePolicy";
+	static readonly PutResourcePolicy = "sagemaker:PutResourcePolicy";
 	/** [List] sagemaker:QueryLineage */
-	static readonly QUERY_LINEAGE = "sagemaker:QueryLineage";
+	static readonly QueryLineage = "sagemaker:QueryLineage";
 	/** [Write] sagemaker:RegisterDevices */
-	static readonly REGISTER_DEVICES = "sagemaker:RegisterDevices";
+	static readonly RegisterDevices = "sagemaker:RegisterDevices";
 	/** [Read] sagemaker:RenderUiTemplate */
-	static readonly RENDER_UI_TEMPLATE = "sagemaker:RenderUiTemplate";
+	static readonly RenderUiTemplate = "sagemaker:RenderUiTemplate";
 	/** [Write] sagemaker:RetryPipelineExecution */
-	static readonly RETRY_PIPELINE_EXECUTION = "sagemaker:RetryPipelineExecution";
+	static readonly RetryPipelineExecution = "sagemaker:RetryPipelineExecution";
 	/** [Write] sagemaker:Sample */
-	static readonly SAMPLE = "sagemaker:Sample";
+	static readonly Sample = "sagemaker:Sample";
 	/** [Write] sagemaker:SampleWithResponseStream */
-	static readonly SAMPLE_WITH_RESPONSE_STREAM =
+	static readonly SampleWithResponseStream =
 		"sagemaker:SampleWithResponseStream";
 	/** [Read] sagemaker:Search */
-	static readonly SEARCH = "sagemaker:Search";
+	static readonly Search = "sagemaker:Search";
 	/** [Read] sagemaker:SearchTrainingPlanOfferings */
-	static readonly SEARCH_TRAINING_PLAN_OFFERINGS =
+	static readonly SearchTrainingPlanOfferings =
 		"sagemaker:SearchTrainingPlanOfferings";
 	/** [Write] sagemaker:SendHeartbeat */
-	static readonly SEND_HEARTBEAT = "sagemaker:SendHeartbeat";
+	static readonly SendHeartbeat = "sagemaker:SendHeartbeat";
 	/** [Write] sagemaker:SendPipelineExecutionStepFailure */
-	static readonly SEND_PIPELINE_EXECUTION_STEP_FAILURE =
+	static readonly SendPipelineExecutionStepFailure =
 		"sagemaker:SendPipelineExecutionStepFailure";
 	/** [Write] sagemaker:SendPipelineExecutionStepSuccess */
-	static readonly SEND_PIPELINE_EXECUTION_STEP_SUCCESS =
+	static readonly SendPipelineExecutionStepSuccess =
 		"sagemaker:SendPipelineExecutionStepSuccess";
 	/** [Write] sagemaker:SendSharedModelEvent */
-	static readonly SEND_SHARED_MODEL_EVENT = "sagemaker:SendSharedModelEvent";
+	static readonly SendSharedModelEvent = "sagemaker:SendSharedModelEvent";
 	/** [Write] sagemaker:StartClusterHealthCheck */
-	static readonly START_CLUSTER_HEALTH_CHECK =
-		"sagemaker:StartClusterHealthCheck";
+	static readonly StartClusterHealthCheck = "sagemaker:StartClusterHealthCheck";
 	/** [Write] sagemaker:StartEdgeDeploymentStage */
-	static readonly START_EDGE_DEPLOYMENT_STAGE =
+	static readonly StartEdgeDeploymentStage =
 		"sagemaker:StartEdgeDeploymentStage";
 	/** [Write] sagemaker:StartHumanLoop */
-	static readonly START_HUMAN_LOOP = "sagemaker:StartHumanLoop";
+	static readonly StartHumanLoop = "sagemaker:StartHumanLoop";
 	/** [Write] sagemaker:StartInferenceExperiment */
-	static readonly START_INFERENCE_EXPERIMENT =
+	static readonly StartInferenceExperiment =
 		"sagemaker:StartInferenceExperiment";
 	/** [Write] sagemaker:StartMlflowTrackingServer */
-	static readonly START_MLFLOW_TRACKING_SERVER =
+	static readonly StartMlflowTrackingServer =
 		"sagemaker:StartMlflowTrackingServer";
 	/** [Write] sagemaker:StartMonitoringSchedule */
-	static readonly START_MONITORING_SCHEDULE =
-		"sagemaker:StartMonitoringSchedule";
+	static readonly StartMonitoringSchedule = "sagemaker:StartMonitoringSchedule";
 	/** [Write] sagemaker:StartNotebookInstance */
-	static readonly START_NOTEBOOK_INSTANCE = "sagemaker:StartNotebookInstance";
+	static readonly StartNotebookInstance = "sagemaker:StartNotebookInstance";
 	/** [Write] sagemaker:StartPipelineExecution */
-	static readonly START_PIPELINE_EXECUTION = "sagemaker:StartPipelineExecution";
+	static readonly StartPipelineExecution = "sagemaker:StartPipelineExecution";
 	/** [Write] sagemaker:StartSession */
-	static readonly START_SESSION = "sagemaker:StartSession";
+	static readonly StartSession = "sagemaker:StartSession";
 	/** [Write] sagemaker:StopAIBenchmarkJob */
-	static readonly STOP_AI_BENCHMARK_JOB = "sagemaker:StopAIBenchmarkJob";
+	static readonly StopAIBenchmarkJob = "sagemaker:StopAIBenchmarkJob";
 	/** [Write] sagemaker:StopAIRecommendationJob */
-	static readonly STOP_AI_RECOMMENDATION_JOB =
-		"sagemaker:StopAIRecommendationJob";
+	static readonly StopAIRecommendationJob = "sagemaker:StopAIRecommendationJob";
 	/** [Write] sagemaker:StopAutoMLJob */
-	static readonly STOP_AUTO_ML_JOB = "sagemaker:StopAutoMLJob";
+	static readonly StopAutoMLJob = "sagemaker:StopAutoMLJob";
 	/** [Write] sagemaker:StopCompilationJob */
-	static readonly STOP_COMPILATION_JOB = "sagemaker:StopCompilationJob";
+	static readonly StopCompilationJob = "sagemaker:StopCompilationJob";
 	/** [Write] sagemaker:StopEdgeDeploymentStage */
-	static readonly STOP_EDGE_DEPLOYMENT_STAGE =
-		"sagemaker:StopEdgeDeploymentStage";
+	static readonly StopEdgeDeploymentStage = "sagemaker:StopEdgeDeploymentStage";
 	/** [Write] sagemaker:StopEdgePackagingJob */
-	static readonly STOP_EDGE_PACKAGING_JOB = "sagemaker:StopEdgePackagingJob";
+	static readonly StopEdgePackagingJob = "sagemaker:StopEdgePackagingJob";
 	/** [Write] sagemaker:StopHumanLoop */
-	static readonly STOP_HUMAN_LOOP = "sagemaker:StopHumanLoop";
+	static readonly StopHumanLoop = "sagemaker:StopHumanLoop";
 	/** [Write] sagemaker:StopHyperParameterTuningJob */
-	static readonly STOP_HYPER_PARAMETER_TUNING_JOB =
+	static readonly StopHyperParameterTuningJob =
 		"sagemaker:StopHyperParameterTuningJob";
 	/** [Write] sagemaker:StopInferenceExperiment */
-	static readonly STOP_INFERENCE_EXPERIMENT =
-		"sagemaker:StopInferenceExperiment";
+	static readonly StopInferenceExperiment = "sagemaker:StopInferenceExperiment";
 	/** [Write] sagemaker:StopInferenceRecommendationsJob */
-	static readonly STOP_INFERENCE_RECOMMENDATIONS_JOB =
+	static readonly StopInferenceRecommendationsJob =
 		"sagemaker:StopInferenceRecommendationsJob";
 	/** [Write] sagemaker:StopJob */
-	static readonly STOP_JOB = "sagemaker:StopJob";
+	static readonly StopJob = "sagemaker:StopJob";
 	/** [Write] sagemaker:StopLabelingJob */
-	static readonly STOP_LABELING_JOB = "sagemaker:StopLabelingJob";
+	static readonly StopLabelingJob = "sagemaker:StopLabelingJob";
 	/** [Write] sagemaker:StopMlflowTrackingServer */
-	static readonly STOP_MLFLOW_TRACKING_SERVER =
+	static readonly StopMlflowTrackingServer =
 		"sagemaker:StopMlflowTrackingServer";
 	/** [Write] sagemaker:StopMonitoringSchedule */
-	static readonly STOP_MONITORING_SCHEDULE = "sagemaker:StopMonitoringSchedule";
+	static readonly StopMonitoringSchedule = "sagemaker:StopMonitoringSchedule";
 	/** [Write] sagemaker:StopNotebookInstance */
-	static readonly STOP_NOTEBOOK_INSTANCE = "sagemaker:StopNotebookInstance";
+	static readonly StopNotebookInstance = "sagemaker:StopNotebookInstance";
 	/** [Write] sagemaker:StopOptimizationJob */
-	static readonly STOP_OPTIMIZATION_JOB = "sagemaker:StopOptimizationJob";
+	static readonly StopOptimizationJob = "sagemaker:StopOptimizationJob";
 	/** [Write] sagemaker:StopPipelineExecution */
-	static readonly STOP_PIPELINE_EXECUTION = "sagemaker:StopPipelineExecution";
+	static readonly StopPipelineExecution = "sagemaker:StopPipelineExecution";
 	/** [Write] sagemaker:StopProcessingJob */
-	static readonly STOP_PROCESSING_JOB = "sagemaker:StopProcessingJob";
+	static readonly StopProcessingJob = "sagemaker:StopProcessingJob";
 	/** [Write] sagemaker:StopTrainingJob */
-	static readonly STOP_TRAINING_JOB = "sagemaker:StopTrainingJob";
+	static readonly StopTrainingJob = "sagemaker:StopTrainingJob";
 	/** [Write] sagemaker:StopTransformJob */
-	static readonly STOP_TRANSFORM_JOB = "sagemaker:StopTransformJob";
+	static readonly StopTransformJob = "sagemaker:StopTransformJob";
 	/** [Write] sagemaker:TrainHubModel */
-	static readonly TRAIN_HUB_MODEL = "sagemaker:TrainHubModel";
+	static readonly TrainHubModel = "sagemaker:TrainHubModel";
 	/** [Write] sagemaker:UpdateAction */
-	static readonly UPDATE_ACTION = "sagemaker:UpdateAction";
+	static readonly UpdateAction = "sagemaker:UpdateAction";
 	/** [Write] sagemaker:UpdateAppImageConfig */
-	static readonly UPDATE_APP_IMAGE_CONFIG = "sagemaker:UpdateAppImageConfig";
+	static readonly UpdateAppImageConfig = "sagemaker:UpdateAppImageConfig";
 	/** [Write] sagemaker:UpdateArtifact */
-	static readonly UPDATE_ARTIFACT = "sagemaker:UpdateArtifact";
+	static readonly UpdateArtifact = "sagemaker:UpdateArtifact";
 	/** [Write] sagemaker:UpdateCluster */
-	static readonly UPDATE_CLUSTER = "sagemaker:UpdateCluster";
+	static readonly UpdateCluster = "sagemaker:UpdateCluster";
 	/** [Write] sagemaker:UpdateClusterInference */
-	static readonly UPDATE_CLUSTER_INFERENCE = "sagemaker:UpdateClusterInference";
+	static readonly UpdateClusterInference = "sagemaker:UpdateClusterInference";
 	/** [Write] sagemaker:UpdateClusterSchedulerConfig */
-	static readonly UPDATE_CLUSTER_SCHEDULER_CONFIG =
+	static readonly UpdateClusterSchedulerConfig =
 		"sagemaker:UpdateClusterSchedulerConfig";
 	/** [Write] sagemaker:UpdateClusterSoftware */
-	static readonly UPDATE_CLUSTER_SOFTWARE = "sagemaker:UpdateClusterSoftware";
+	static readonly UpdateClusterSoftware = "sagemaker:UpdateClusterSoftware";
 	/** [Write] sagemaker:UpdateCodeRepository */
-	static readonly UPDATE_CODE_REPOSITORY = "sagemaker:UpdateCodeRepository";
+	static readonly UpdateCodeRepository = "sagemaker:UpdateCodeRepository";
 	/** [Write] sagemaker:UpdateComputeQuota */
-	static readonly UPDATE_COMPUTE_QUOTA = "sagemaker:UpdateComputeQuota";
+	static readonly UpdateComputeQuota = "sagemaker:UpdateComputeQuota";
 	/** [Write] sagemaker:UpdateContext */
-	static readonly UPDATE_CONTEXT = "sagemaker:UpdateContext";
+	static readonly UpdateContext = "sagemaker:UpdateContext";
 	/** [Write] sagemaker:UpdateDeviceFleet */
-	static readonly UPDATE_DEVICE_FLEET = "sagemaker:UpdateDeviceFleet";
+	static readonly UpdateDeviceFleet = "sagemaker:UpdateDeviceFleet";
 	/** [Write] sagemaker:UpdateDevices */
-	static readonly UPDATE_DEVICES = "sagemaker:UpdateDevices";
+	static readonly UpdateDevices = "sagemaker:UpdateDevices";
 	/** [Write] sagemaker:UpdateDomain */
-	static readonly UPDATE_DOMAIN = "sagemaker:UpdateDomain";
+	static readonly UpdateDomain = "sagemaker:UpdateDomain";
 	/** [Write] sagemaker:UpdateEndpoint */
-	static readonly UPDATE_ENDPOINT = "sagemaker:UpdateEndpoint";
+	static readonly UpdateEndpoint = "sagemaker:UpdateEndpoint";
 	/** [Write] sagemaker:UpdateEndpointWeightsAndCapacities */
-	static readonly UPDATE_ENDPOINT_WEIGHTS_AND_CAPACITIES =
+	static readonly UpdateEndpointWeightsAndCapacities =
 		"sagemaker:UpdateEndpointWeightsAndCapacities";
 	/** [Write] sagemaker:UpdateExperiment */
-	static readonly UPDATE_EXPERIMENT = "sagemaker:UpdateExperiment";
+	static readonly UpdateExperiment = "sagemaker:UpdateExperiment";
 	/** [Write] sagemaker:UpdateFeatureGroup */
-	static readonly UPDATE_FEATURE_GROUP = "sagemaker:UpdateFeatureGroup";
+	static readonly UpdateFeatureGroup = "sagemaker:UpdateFeatureGroup";
 	/** [Write] sagemaker:UpdateFeatureMetadata */
-	static readonly UPDATE_FEATURE_METADATA = "sagemaker:UpdateFeatureMetadata";
+	static readonly UpdateFeatureMetadata = "sagemaker:UpdateFeatureMetadata";
 	/** [Write] sagemaker:UpdateHub */
-	static readonly UPDATE_HUB = "sagemaker:UpdateHub";
+	static readonly UpdateHub = "sagemaker:UpdateHub";
 	/** [Write] sagemaker:UpdateHubContent */
-	static readonly UPDATE_HUB_CONTENT = "sagemaker:UpdateHubContent";
+	static readonly UpdateHubContent = "sagemaker:UpdateHubContent";
 	/** [Write] sagemaker:UpdateHubContentReference */
-	static readonly UPDATE_HUB_CONTENT_REFERENCE =
+	static readonly UpdateHubContentReference =
 		"sagemaker:UpdateHubContentReference";
 	/** [Write] sagemaker:UpdateImage */
-	static readonly UPDATE_IMAGE = "sagemaker:UpdateImage";
+	static readonly UpdateImage = "sagemaker:UpdateImage";
 	/** [Write] sagemaker:UpdateImageVersion */
-	static readonly UPDATE_IMAGE_VERSION = "sagemaker:UpdateImageVersion";
+	static readonly UpdateImageVersion = "sagemaker:UpdateImageVersion";
 	/** [Write] sagemaker:UpdateInferenceComponent */
-	static readonly UPDATE_INFERENCE_COMPONENT =
+	static readonly UpdateInferenceComponent =
 		"sagemaker:UpdateInferenceComponent";
 	/** [Write] sagemaker:UpdateInferenceComponentRuntimeConfig */
-	static readonly UPDATE_INFERENCE_COMPONENT_RUNTIME_CONFIG =
+	static readonly UpdateInferenceComponentRuntimeConfig =
 		"sagemaker:UpdateInferenceComponentRuntimeConfig";
 	/** [Write] sagemaker:UpdateInferenceExperiment */
-	static readonly UPDATE_INFERENCE_EXPERIMENT =
+	static readonly UpdateInferenceExperiment =
 		"sagemaker:UpdateInferenceExperiment";
 	/** [Write] sagemaker:UpdateMlflowApp */
-	static readonly UPDATE_MLFLOW_APP = "sagemaker:UpdateMlflowApp";
+	static readonly UpdateMlflowApp = "sagemaker:UpdateMlflowApp";
 	/** [Write] sagemaker:UpdateMlflowTrackingServer */
-	static readonly UPDATE_MLFLOW_TRACKING_SERVER =
+	static readonly UpdateMlflowTrackingServer =
 		"sagemaker:UpdateMlflowTrackingServer";
 	/** [Write] sagemaker:UpdateModelCard */
-	static readonly UPDATE_MODEL_CARD = "sagemaker:UpdateModelCard";
+	static readonly UpdateModelCard = "sagemaker:UpdateModelCard";
 	/** [Write] sagemaker:UpdateModelPackage */
-	static readonly UPDATE_MODEL_PACKAGE = "sagemaker:UpdateModelPackage";
+	static readonly UpdateModelPackage = "sagemaker:UpdateModelPackage";
 	/** [Write] sagemaker:UpdateMonitoringAlert */
-	static readonly UPDATE_MONITORING_ALERT = "sagemaker:UpdateMonitoringAlert";
+	static readonly UpdateMonitoringAlert = "sagemaker:UpdateMonitoringAlert";
 	/** [Write] sagemaker:UpdateMonitoringSchedule */
-	static readonly UPDATE_MONITORING_SCHEDULE =
+	static readonly UpdateMonitoringSchedule =
 		"sagemaker:UpdateMonitoringSchedule";
 	/** [Write] sagemaker:UpdateNotebookInstance */
-	static readonly UPDATE_NOTEBOOK_INSTANCE = "sagemaker:UpdateNotebookInstance";
+	static readonly UpdateNotebookInstance = "sagemaker:UpdateNotebookInstance";
 	/** [Write] sagemaker:UpdateNotebookInstanceLifecycleConfig */
-	static readonly UPDATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG =
+	static readonly UpdateNotebookInstanceLifecycleConfig =
 		"sagemaker:UpdateNotebookInstanceLifecycleConfig";
 	/** [Write] sagemaker:UpdatePartnerApp */
-	static readonly UPDATE_PARTNER_APP = "sagemaker:UpdatePartnerApp";
+	static readonly UpdatePartnerApp = "sagemaker:UpdatePartnerApp";
 	/** [Write] sagemaker:UpdatePipeline */
-	static readonly UPDATE_PIPELINE = "sagemaker:UpdatePipeline";
+	static readonly UpdatePipeline = "sagemaker:UpdatePipeline";
 	/** [Write] sagemaker:UpdatePipelineExecution */
-	static readonly UPDATE_PIPELINE_EXECUTION =
-		"sagemaker:UpdatePipelineExecution";
+	static readonly UpdatePipelineExecution = "sagemaker:UpdatePipelineExecution";
 	/** [Write] sagemaker:UpdatePipelineVersion */
-	static readonly UPDATE_PIPELINE_VERSION = "sagemaker:UpdatePipelineVersion";
+	static readonly UpdatePipelineVersion = "sagemaker:UpdatePipelineVersion";
 	/** [Write] sagemaker:UpdateProject */
-	static readonly UPDATE_PROJECT = "sagemaker:UpdateProject";
+	static readonly UpdateProject = "sagemaker:UpdateProject";
 	/** [Write] sagemaker:UpdateReward */
-	static readonly UPDATE_REWARD = "sagemaker:UpdateReward";
+	static readonly UpdateReward = "sagemaker:UpdateReward";
 	/** [Write] sagemaker:UpdateSharedModel */
-	static readonly UPDATE_SHARED_MODEL = "sagemaker:UpdateSharedModel";
+	static readonly UpdateSharedModel = "sagemaker:UpdateSharedModel";
 	/** [Write] sagemaker:UpdateSpace */
-	static readonly UPDATE_SPACE = "sagemaker:UpdateSpace";
+	static readonly UpdateSpace = "sagemaker:UpdateSpace";
 	/** [Write] sagemaker:UpdateTrainingJob */
-	static readonly UPDATE_TRAINING_JOB = "sagemaker:UpdateTrainingJob";
+	static readonly UpdateTrainingJob = "sagemaker:UpdateTrainingJob";
 	/** [Write] sagemaker:UpdateTrial */
-	static readonly UPDATE_TRIAL = "sagemaker:UpdateTrial";
+	static readonly UpdateTrial = "sagemaker:UpdateTrial";
 	/** [Write] sagemaker:UpdateTrialComponent */
-	static readonly UPDATE_TRIAL_COMPONENT = "sagemaker:UpdateTrialComponent";
+	static readonly UpdateTrialComponent = "sagemaker:UpdateTrialComponent";
 	/** [Write] sagemaker:UpdateUserProfile */
-	static readonly UPDATE_USER_PROFILE = "sagemaker:UpdateUserProfile";
+	static readonly UpdateUserProfile = "sagemaker:UpdateUserProfile";
 	/** [Write] sagemaker:UpdateWorkforce */
-	static readonly UPDATE_WORKFORCE = "sagemaker:UpdateWorkforce";
+	static readonly UpdateWorkforce = "sagemaker:UpdateWorkforce";
 	/** [Write] sagemaker:UpdateWorkteam */
-	static readonly UPDATE_WORKTEAM = "sagemaker:UpdateWorkteam";
+	static readonly UpdateWorkteam = "sagemaker:UpdateWorkteam";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SageMakerActions.ACCESS_MODEL_PACKAGE,
-		SageMakerActions.BATCH_DESCRIBE_MODEL_PACKAGE,
-		SageMakerActions.BATCH_GET_METRICS,
-		SageMakerActions.BATCH_GET_RECORD,
-		SageMakerActions.CALL_WITH_BEARER_TOKEN,
-		SageMakerActions.CREATE_HUB_CONTENT_PRESIGNED_URLS,
-		SageMakerActions.DESCRIBE_AI_BENCHMARK_JOB,
-		SageMakerActions.DESCRIBE_AI_RECOMMENDATION_JOB,
-		SageMakerActions.DESCRIBE_AI_WORKLOAD_CONFIG,
-		SageMakerActions.DESCRIBE_ACTION,
-		SageMakerActions.DESCRIBE_ALGORITHM,
-		SageMakerActions.DESCRIBE_APP,
-		SageMakerActions.DESCRIBE_APP_IMAGE_CONFIG,
-		SageMakerActions.DESCRIBE_ARTIFACT,
-		SageMakerActions.DESCRIBE_AUTO_ML_JOB,
-		SageMakerActions.DESCRIBE_AUTO_ML_JOB_V2,
-		SageMakerActions.DESCRIBE_CLUSTER,
-		SageMakerActions.DESCRIBE_CLUSTER_EVENT,
-		SageMakerActions.DESCRIBE_CLUSTER_INFERENCE,
-		SageMakerActions.DESCRIBE_CLUSTER_NODE,
-		SageMakerActions.DESCRIBE_CLUSTER_SCHEDULER_CONFIG,
-		SageMakerActions.DESCRIBE_CODE_REPOSITORY,
-		SageMakerActions.DESCRIBE_COMPILATION_JOB,
-		SageMakerActions.DESCRIBE_COMPUTE_QUOTA,
-		SageMakerActions.DESCRIBE_CONTEXT,
-		SageMakerActions.DESCRIBE_DATA_QUALITY_JOB_DEFINITION,
-		SageMakerActions.DESCRIBE_DEVICE,
-		SageMakerActions.DESCRIBE_DEVICE_FLEET,
-		SageMakerActions.DESCRIBE_DOMAIN,
-		SageMakerActions.DESCRIBE_EDGE_DEPLOYMENT_PLAN,
-		SageMakerActions.DESCRIBE_EDGE_PACKAGING_JOB,
-		SageMakerActions.DESCRIBE_ENDPOINT,
-		SageMakerActions.DESCRIBE_ENDPOINT_CONFIG,
-		SageMakerActions.DESCRIBE_EXPERIMENT,
-		SageMakerActions.DESCRIBE_FEATURE_GROUP,
-		SageMakerActions.DESCRIBE_FEATURE_METADATA,
-		SageMakerActions.DESCRIBE_FLOW_DEFINITION,
-		SageMakerActions.DESCRIBE_HUB,
-		SageMakerActions.DESCRIBE_HUB_CONTENT,
-		SageMakerActions.DESCRIBE_HUMAN_LOOP,
-		SageMakerActions.DESCRIBE_HUMAN_TASK_UI,
-		SageMakerActions.DESCRIBE_HYPER_PARAMETER_TUNING_JOB,
-		SageMakerActions.DESCRIBE_IMAGE,
-		SageMakerActions.DESCRIBE_IMAGE_VERSION,
-		SageMakerActions.DESCRIBE_INFERENCE_COMPONENT,
-		SageMakerActions.DESCRIBE_INFERENCE_EXPERIMENT,
-		SageMakerActions.DESCRIBE_INFERENCE_RECOMMENDATIONS_JOB,
-		SageMakerActions.DESCRIBE_JOB,
-		SageMakerActions.DESCRIBE_JOB_SCHEMA_VERSION,
-		SageMakerActions.DESCRIBE_LABELING_JOB,
-		SageMakerActions.DESCRIBE_LINEAGE_GROUP,
-		SageMakerActions.DESCRIBE_MLFLOW_APP,
-		SageMakerActions.DESCRIBE_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.DESCRIBE_MODEL,
-		SageMakerActions.DESCRIBE_MODEL_BIAS_JOB_DEFINITION,
-		SageMakerActions.DESCRIBE_MODEL_CARD,
-		SageMakerActions.DESCRIBE_MODEL_CARD_EXPORT_JOB,
-		SageMakerActions.DESCRIBE_MODEL_EXPLAINABILITY_JOB_DEFINITION,
-		SageMakerActions.DESCRIBE_MODEL_PACKAGE,
-		SageMakerActions.DESCRIBE_MODEL_PACKAGE_GROUP,
-		SageMakerActions.DESCRIBE_MODEL_QUALITY_JOB_DEFINITION,
-		SageMakerActions.DESCRIBE_MONITORING_SCHEDULE,
-		SageMakerActions.DESCRIBE_NOTEBOOK_INSTANCE,
-		SageMakerActions.DESCRIBE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG,
-		SageMakerActions.DESCRIBE_OPTIMIZATION_JOB,
-		SageMakerActions.DESCRIBE_PARTNER_APP,
-		SageMakerActions.DESCRIBE_PIPELINE,
-		SageMakerActions.DESCRIBE_PIPELINE_DEFINITION_FOR_EXECUTION,
-		SageMakerActions.DESCRIBE_PIPELINE_EXECUTION,
-		SageMakerActions.DESCRIBE_PROCESSING_JOB,
-		SageMakerActions.DESCRIBE_PROJECT,
-		SageMakerActions.DESCRIBE_RESERVED_CAPACITY,
-		SageMakerActions.DESCRIBE_SHARED_MODEL,
-		SageMakerActions.DESCRIBE_SPACE,
-		SageMakerActions.DESCRIBE_STUDIO_LIFECYCLE_CONFIG,
-		SageMakerActions.DESCRIBE_SUBSCRIBED_WORKTEAM,
-		SageMakerActions.DESCRIBE_TRAINING_JOB,
-		SageMakerActions.DESCRIBE_TRAINING_PLAN,
-		SageMakerActions.DESCRIBE_TRANSFORM_JOB,
-		SageMakerActions.DESCRIBE_TRIAL,
-		SageMakerActions.DESCRIBE_TRIAL_COMPONENT,
-		SageMakerActions.DESCRIBE_USER_PROFILE,
-		SageMakerActions.DESCRIBE_WORKFORCE,
-		SageMakerActions.DESCRIBE_WORKTEAM,
-		SageMakerActions.GET_DEPLOYMENTS,
-		SageMakerActions.GET_DEVICE_FLEET_REPORT,
-		SageMakerActions.GET_DEVICE_REGISTRATION,
-		SageMakerActions.GET_LINEAGE_GROUP_POLICY,
-		SageMakerActions.GET_MODEL_PACKAGE_GROUP_POLICY,
-		SageMakerActions.GET_RECORD,
-		SageMakerActions.GET_RESOURCE_POLICY,
-		SageMakerActions.GET_SAGEMAKER_SERVICECATALOG_PORTFOLIO_STATUS,
-		SageMakerActions.GET_SCALING_CONFIGURATION_RECOMMENDATION,
-		SageMakerActions.GET_SEARCH_SUGGESTIONS,
-		SageMakerActions.INVOKE_ENDPOINT,
-		SageMakerActions.INVOKE_ENDPOINT_ASYNC,
-		SageMakerActions.INVOKE_ENDPOINT_WITH_RESPONSE_STREAM,
-		SageMakerActions.RENDER_UI_TEMPLATE,
-		SageMakerActions.SEARCH,
-		SageMakerActions.SEARCH_TRAINING_PLAN_OFFERINGS,
+	static readonly AllReadActions: string[] = [
+		SageMakerActions.AccessModelPackage,
+		SageMakerActions.BatchDescribeModelPackage,
+		SageMakerActions.BatchGetMetrics,
+		SageMakerActions.BatchGetRecord,
+		SageMakerActions.CallWithBearerToken,
+		SageMakerActions.CreateHubContentPresignedUrls,
+		SageMakerActions.DescribeAIBenchmarkJob,
+		SageMakerActions.DescribeAIRecommendationJob,
+		SageMakerActions.DescribeAIWorkloadConfig,
+		SageMakerActions.DescribeAction,
+		SageMakerActions.DescribeAlgorithm,
+		SageMakerActions.DescribeApp,
+		SageMakerActions.DescribeAppImageConfig,
+		SageMakerActions.DescribeArtifact,
+		SageMakerActions.DescribeAutoMLJob,
+		SageMakerActions.DescribeAutoMLJobV2,
+		SageMakerActions.DescribeCluster,
+		SageMakerActions.DescribeClusterEvent,
+		SageMakerActions.DescribeClusterInference,
+		SageMakerActions.DescribeClusterNode,
+		SageMakerActions.DescribeClusterSchedulerConfig,
+		SageMakerActions.DescribeCodeRepository,
+		SageMakerActions.DescribeCompilationJob,
+		SageMakerActions.DescribeComputeQuota,
+		SageMakerActions.DescribeContext,
+		SageMakerActions.DescribeDataQualityJobDefinition,
+		SageMakerActions.DescribeDevice,
+		SageMakerActions.DescribeDeviceFleet,
+		SageMakerActions.DescribeDomain,
+		SageMakerActions.DescribeEdgeDeploymentPlan,
+		SageMakerActions.DescribeEdgePackagingJob,
+		SageMakerActions.DescribeEndpoint,
+		SageMakerActions.DescribeEndpointConfig,
+		SageMakerActions.DescribeExperiment,
+		SageMakerActions.DescribeFeatureGroup,
+		SageMakerActions.DescribeFeatureMetadata,
+		SageMakerActions.DescribeFlowDefinition,
+		SageMakerActions.DescribeHub,
+		SageMakerActions.DescribeHubContent,
+		SageMakerActions.DescribeHumanLoop,
+		SageMakerActions.DescribeHumanTaskUi,
+		SageMakerActions.DescribeHyperParameterTuningJob,
+		SageMakerActions.DescribeImage,
+		SageMakerActions.DescribeImageVersion,
+		SageMakerActions.DescribeInferenceComponent,
+		SageMakerActions.DescribeInferenceExperiment,
+		SageMakerActions.DescribeInferenceRecommendationsJob,
+		SageMakerActions.DescribeJob,
+		SageMakerActions.DescribeJobSchemaVersion,
+		SageMakerActions.DescribeLabelingJob,
+		SageMakerActions.DescribeLineageGroup,
+		SageMakerActions.DescribeMlflowApp,
+		SageMakerActions.DescribeMlflowTrackingServer,
+		SageMakerActions.DescribeModel,
+		SageMakerActions.DescribeModelBiasJobDefinition,
+		SageMakerActions.DescribeModelCard,
+		SageMakerActions.DescribeModelCardExportJob,
+		SageMakerActions.DescribeModelExplainabilityJobDefinition,
+		SageMakerActions.DescribeModelPackage,
+		SageMakerActions.DescribeModelPackageGroup,
+		SageMakerActions.DescribeModelQualityJobDefinition,
+		SageMakerActions.DescribeMonitoringSchedule,
+		SageMakerActions.DescribeNotebookInstance,
+		SageMakerActions.DescribeNotebookInstanceLifecycleConfig,
+		SageMakerActions.DescribeOptimizationJob,
+		SageMakerActions.DescribePartnerApp,
+		SageMakerActions.DescribePipeline,
+		SageMakerActions.DescribePipelineDefinitionForExecution,
+		SageMakerActions.DescribePipelineExecution,
+		SageMakerActions.DescribeProcessingJob,
+		SageMakerActions.DescribeProject,
+		SageMakerActions.DescribeReservedCapacity,
+		SageMakerActions.DescribeSharedModel,
+		SageMakerActions.DescribeSpace,
+		SageMakerActions.DescribeStudioLifecycleConfig,
+		SageMakerActions.DescribeSubscribedWorkteam,
+		SageMakerActions.DescribeTrainingJob,
+		SageMakerActions.DescribeTrainingPlan,
+		SageMakerActions.DescribeTransformJob,
+		SageMakerActions.DescribeTrial,
+		SageMakerActions.DescribeTrialComponent,
+		SageMakerActions.DescribeUserProfile,
+		SageMakerActions.DescribeWorkforce,
+		SageMakerActions.DescribeWorkteam,
+		SageMakerActions.actionGetDeployments,
+		SageMakerActions.actionGetDeviceFleetReport,
+		SageMakerActions.actionGetDeviceRegistration,
+		SageMakerActions.actionGetLineageGroupPolicy,
+		SageMakerActions.actionGetModelPackageGroupPolicy,
+		SageMakerActions.actionGetRecord,
+		SageMakerActions.actionGetResourcePolicy,
+		SageMakerActions.actionGetSagemakerServicecatalogPortfolioStatus,
+		SageMakerActions.actionGetScalingConfigurationRecommendation,
+		SageMakerActions.actionGetSearchSuggestions,
+		SageMakerActions.InvokeEndpoint,
+		SageMakerActions.InvokeEndpointAsync,
+		SageMakerActions.InvokeEndpointWithResponseStream,
+		SageMakerActions.RenderUiTemplate,
+		SageMakerActions.Search,
+		SageMakerActions.SearchTrainingPlanOfferings,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SageMakerActions.ADD_ASSOCIATION,
-		SageMakerActions.ASSOCIATE_TRIAL_COMPONENT,
-		SageMakerActions.ATTACH_CLUSTER_NODE_VOLUME,
-		SageMakerActions.BATCH_ADD_CLUSTER_NODES,
-		SageMakerActions.BATCH_DELETE_CLUSTER_NODES,
-		SageMakerActions.BATCH_PUT_METRICS,
-		SageMakerActions.BATCH_WRITE_RECORD,
-		SageMakerActions.CALL_MLFLOW_APP_API,
-		SageMakerActions.CALL_PARTNER_APP_API,
-		SageMakerActions.COMPLETE_ROLLOUT,
-		SageMakerActions.CREATE_AI_BENCHMARK_JOB,
-		SageMakerActions.CREATE_AI_RECOMMENDATION_JOB,
-		SageMakerActions.CREATE_AI_WORKLOAD_CONFIG,
-		SageMakerActions.CREATE_ACTION,
-		SageMakerActions.CREATE_ALGORITHM,
-		SageMakerActions.CREATE_APP,
-		SageMakerActions.CREATE_APP_IMAGE_CONFIG,
-		SageMakerActions.CREATE_ARTIFACT,
-		SageMakerActions.CREATE_AUTO_ML_JOB,
-		SageMakerActions.CREATE_AUTO_ML_JOB_V2,
-		SageMakerActions.CREATE_CLUSTER,
-		SageMakerActions.CREATE_CLUSTER_SCHEDULER_CONFIG,
-		SageMakerActions.CREATE_CODE_REPOSITORY,
-		SageMakerActions.CREATE_COMPILATION_JOB,
-		SageMakerActions.CREATE_COMPUTE_QUOTA,
-		SageMakerActions.CREATE_CONTEXT,
-		SageMakerActions.CREATE_DATA_QUALITY_JOB_DEFINITION,
-		SageMakerActions.CREATE_DEVICE_FLEET,
-		SageMakerActions.CREATE_DOMAIN,
-		SageMakerActions.CREATE_EDGE_DEPLOYMENT_PLAN,
-		SageMakerActions.CREATE_EDGE_DEPLOYMENT_STAGE,
-		SageMakerActions.CREATE_EDGE_PACKAGING_JOB,
-		SageMakerActions.CREATE_ENDPOINT,
-		SageMakerActions.CREATE_ENDPOINT_CONFIG,
-		SageMakerActions.CREATE_EXPERIMENT,
-		SageMakerActions.CREATE_FEATURE_GROUP,
-		SageMakerActions.CREATE_FLOW_DEFINITION,
-		SageMakerActions.CREATE_HUB,
-		SageMakerActions.CREATE_HUB_CONTENT_REFERENCE,
-		SageMakerActions.CREATE_HUMAN_TASK_UI,
-		SageMakerActions.CREATE_HYPER_PARAMETER_TUNING_JOB,
-		SageMakerActions.CREATE_IMAGE,
-		SageMakerActions.CREATE_IMAGE_VERSION,
-		SageMakerActions.CREATE_INFERENCE_COMPONENT,
-		SageMakerActions.CREATE_INFERENCE_EXPERIMENT,
-		SageMakerActions.CREATE_INFERENCE_RECOMMENDATIONS_JOB,
-		SageMakerActions.CREATE_JOB,
-		SageMakerActions.CREATE_LABELING_JOB,
-		SageMakerActions.CREATE_LINEAGE_GROUP_POLICY,
-		SageMakerActions.CREATE_MLFLOW_APP,
-		SageMakerActions.CREATE_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.CREATE_MODEL,
-		SageMakerActions.CREATE_MODEL_BIAS_JOB_DEFINITION,
-		SageMakerActions.CREATE_MODEL_CARD,
-		SageMakerActions.CREATE_MODEL_CARD_EXPORT_JOB,
-		SageMakerActions.CREATE_MODEL_EXPLAINABILITY_JOB_DEFINITION,
-		SageMakerActions.CREATE_MODEL_PACKAGE,
-		SageMakerActions.CREATE_MODEL_PACKAGE_GROUP,
-		SageMakerActions.CREATE_MODEL_QUALITY_JOB_DEFINITION,
-		SageMakerActions.CREATE_MONITORING_SCHEDULE,
-		SageMakerActions.CREATE_NOTEBOOK_INSTANCE,
-		SageMakerActions.CREATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG,
-		SageMakerActions.CREATE_OPTIMIZATION_JOB,
-		SageMakerActions.CREATE_PARTNER_APP,
-		SageMakerActions.CREATE_PARTNER_APP_PRESIGNED_URL,
-		SageMakerActions.CREATE_PIPELINE,
-		SageMakerActions.CREATE_PRESIGNED_DOMAIN_URL,
-		SageMakerActions.CREATE_PRESIGNED_MLFLOW_APP_URL,
-		SageMakerActions.CREATE_PRESIGNED_MLFLOW_TRACKING_SERVER_URL,
-		SageMakerActions.CREATE_PRESIGNED_NOTEBOOK_INSTANCE_URL,
-		SageMakerActions.CREATE_PROCESSING_JOB,
-		SageMakerActions.CREATE_PROJECT,
-		SageMakerActions.CREATE_RESERVED_CAPACITY,
-		SageMakerActions.CREATE_SHARED_MODEL,
-		SageMakerActions.CREATE_SPACE,
-		SageMakerActions.CREATE_STUDIO_LIFECYCLE_CONFIG,
-		SageMakerActions.CREATE_TRAINING_JOB,
-		SageMakerActions.CREATE_TRAINING_PLAN,
-		SageMakerActions.CREATE_TRANSFORM_JOB,
-		SageMakerActions.CREATE_TRIAL,
-		SageMakerActions.CREATE_TRIAL_COMPONENT,
-		SageMakerActions.CREATE_USER_PROFILE,
-		SageMakerActions.CREATE_WORKFORCE,
-		SageMakerActions.CREATE_WORKTEAM,
-		SageMakerActions.DELETE_AI_BENCHMARK_JOB,
-		SageMakerActions.DELETE_AI_RECOMMENDATION_JOB,
-		SageMakerActions.DELETE_AI_WORKLOAD_CONFIG,
-		SageMakerActions.DELETE_ACTION,
-		SageMakerActions.DELETE_ALGORITHM,
-		SageMakerActions.DELETE_APP,
-		SageMakerActions.DELETE_APP_IMAGE_CONFIG,
-		SageMakerActions.DELETE_ARTIFACT,
-		SageMakerActions.DELETE_ASSOCIATION,
-		SageMakerActions.DELETE_CLUSTER,
-		SageMakerActions.DELETE_CLUSTER_SCHEDULER_CONFIG,
-		SageMakerActions.DELETE_CODE_REPOSITORY,
-		SageMakerActions.DELETE_COMPILATION_JOB,
-		SageMakerActions.DELETE_COMPUTE_QUOTA,
-		SageMakerActions.DELETE_CONTEXT,
-		SageMakerActions.DELETE_DATA_QUALITY_JOB_DEFINITION,
-		SageMakerActions.DELETE_DEVICE_FLEET,
-		SageMakerActions.DELETE_DOMAIN,
-		SageMakerActions.DELETE_EDGE_DEPLOYMENT_PLAN,
-		SageMakerActions.DELETE_EDGE_DEPLOYMENT_STAGE,
-		SageMakerActions.DELETE_ENDPOINT,
-		SageMakerActions.DELETE_ENDPOINT_CONFIG,
-		SageMakerActions.DELETE_EXPERIMENT,
-		SageMakerActions.DELETE_FEATURE_GROUP,
-		SageMakerActions.DELETE_FLOW_DEFINITION,
-		SageMakerActions.DELETE_HUB,
-		SageMakerActions.DELETE_HUB_CONTENT,
-		SageMakerActions.DELETE_HUB_CONTENT_REFERENCE,
-		SageMakerActions.DELETE_HUMAN_LOOP,
-		SageMakerActions.DELETE_HUMAN_TASK_UI,
-		SageMakerActions.DELETE_HYPER_PARAMETER_TUNING_JOB,
-		SageMakerActions.DELETE_IMAGE,
-		SageMakerActions.DELETE_IMAGE_VERSION,
-		SageMakerActions.DELETE_INFERENCE_COMPONENT,
-		SageMakerActions.DELETE_INFERENCE_EXPERIMENT,
-		SageMakerActions.DELETE_JOB,
-		SageMakerActions.DELETE_LINEAGE_GROUP_POLICY,
-		SageMakerActions.DELETE_MLFLOW_APP,
-		SageMakerActions.DELETE_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.DELETE_MODEL,
-		SageMakerActions.DELETE_MODEL_BIAS_JOB_DEFINITION,
-		SageMakerActions.DELETE_MODEL_CARD,
-		SageMakerActions.DELETE_MODEL_EXPLAINABILITY_JOB_DEFINITION,
-		SageMakerActions.DELETE_MODEL_PACKAGE,
-		SageMakerActions.DELETE_MODEL_PACKAGE_GROUP,
-		SageMakerActions.DELETE_MODEL_PACKAGE_GROUP_POLICY,
-		SageMakerActions.DELETE_MODEL_QUALITY_JOB_DEFINITION,
-		SageMakerActions.DELETE_MONITORING_SCHEDULE,
-		SageMakerActions.DELETE_NOTEBOOK_INSTANCE,
-		SageMakerActions.DELETE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG,
-		SageMakerActions.DELETE_OPTIMIZATION_JOB,
-		SageMakerActions.DELETE_PARTNER_APP,
-		SageMakerActions.DELETE_PIPELINE,
-		SageMakerActions.DELETE_PROCESSING_JOB,
-		SageMakerActions.DELETE_PROJECT,
-		SageMakerActions.DELETE_RECORD,
-		SageMakerActions.DELETE_RESOURCE_POLICY,
-		SageMakerActions.DELETE_SPACE,
-		SageMakerActions.DELETE_STUDIO_LIFECYCLE_CONFIG,
-		SageMakerActions.DELETE_TRAINING_JOB,
-		SageMakerActions.DELETE_TRIAL,
-		SageMakerActions.DELETE_TRIAL_COMPONENT,
-		SageMakerActions.DELETE_USER_PROFILE,
-		SageMakerActions.DELETE_WORKFORCE,
-		SageMakerActions.DELETE_WORKTEAM,
-		SageMakerActions.DEPLOY_HUB_MODEL,
-		SageMakerActions.DEREGISTER_DEVICES,
-		SageMakerActions.DETACH_CLUSTER_NODE_VOLUME,
-		SageMakerActions.DISABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO,
-		SageMakerActions.DISASSOCIATE_TRIAL_COMPONENT,
-		SageMakerActions.ENABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO,
-		SageMakerActions.IMPORT_HUB_CONTENT,
-		SageMakerActions.PUT_LINEAGE_GROUP_POLICY,
-		SageMakerActions.PUT_MODEL_PACKAGE_GROUP_POLICY,
-		SageMakerActions.PUT_RECORD,
-		SageMakerActions.PUT_RESOURCE_POLICY,
-		SageMakerActions.REGISTER_DEVICES,
-		SageMakerActions.RETRY_PIPELINE_EXECUTION,
-		SageMakerActions.SAMPLE,
-		SageMakerActions.SAMPLE_WITH_RESPONSE_STREAM,
-		SageMakerActions.SEND_HEARTBEAT,
-		SageMakerActions.SEND_PIPELINE_EXECUTION_STEP_FAILURE,
-		SageMakerActions.SEND_PIPELINE_EXECUTION_STEP_SUCCESS,
-		SageMakerActions.SEND_SHARED_MODEL_EVENT,
-		SageMakerActions.START_CLUSTER_HEALTH_CHECK,
-		SageMakerActions.START_EDGE_DEPLOYMENT_STAGE,
-		SageMakerActions.START_HUMAN_LOOP,
-		SageMakerActions.START_INFERENCE_EXPERIMENT,
-		SageMakerActions.START_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.START_MONITORING_SCHEDULE,
-		SageMakerActions.START_NOTEBOOK_INSTANCE,
-		SageMakerActions.START_PIPELINE_EXECUTION,
-		SageMakerActions.START_SESSION,
-		SageMakerActions.STOP_AI_BENCHMARK_JOB,
-		SageMakerActions.STOP_AI_RECOMMENDATION_JOB,
-		SageMakerActions.STOP_AUTO_ML_JOB,
-		SageMakerActions.STOP_COMPILATION_JOB,
-		SageMakerActions.STOP_EDGE_DEPLOYMENT_STAGE,
-		SageMakerActions.STOP_EDGE_PACKAGING_JOB,
-		SageMakerActions.STOP_HUMAN_LOOP,
-		SageMakerActions.STOP_HYPER_PARAMETER_TUNING_JOB,
-		SageMakerActions.STOP_INFERENCE_EXPERIMENT,
-		SageMakerActions.STOP_INFERENCE_RECOMMENDATIONS_JOB,
-		SageMakerActions.STOP_JOB,
-		SageMakerActions.STOP_LABELING_JOB,
-		SageMakerActions.STOP_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.STOP_MONITORING_SCHEDULE,
-		SageMakerActions.STOP_NOTEBOOK_INSTANCE,
-		SageMakerActions.STOP_OPTIMIZATION_JOB,
-		SageMakerActions.STOP_PIPELINE_EXECUTION,
-		SageMakerActions.STOP_PROCESSING_JOB,
-		SageMakerActions.STOP_TRAINING_JOB,
-		SageMakerActions.STOP_TRANSFORM_JOB,
-		SageMakerActions.TRAIN_HUB_MODEL,
-		SageMakerActions.UPDATE_ACTION,
-		SageMakerActions.UPDATE_APP_IMAGE_CONFIG,
-		SageMakerActions.UPDATE_ARTIFACT,
-		SageMakerActions.UPDATE_CLUSTER,
-		SageMakerActions.UPDATE_CLUSTER_INFERENCE,
-		SageMakerActions.UPDATE_CLUSTER_SCHEDULER_CONFIG,
-		SageMakerActions.UPDATE_CLUSTER_SOFTWARE,
-		SageMakerActions.UPDATE_CODE_REPOSITORY,
-		SageMakerActions.UPDATE_COMPUTE_QUOTA,
-		SageMakerActions.UPDATE_CONTEXT,
-		SageMakerActions.UPDATE_DEVICE_FLEET,
-		SageMakerActions.UPDATE_DEVICES,
-		SageMakerActions.UPDATE_DOMAIN,
-		SageMakerActions.UPDATE_ENDPOINT,
-		SageMakerActions.UPDATE_ENDPOINT_WEIGHTS_AND_CAPACITIES,
-		SageMakerActions.UPDATE_EXPERIMENT,
-		SageMakerActions.UPDATE_FEATURE_GROUP,
-		SageMakerActions.UPDATE_FEATURE_METADATA,
-		SageMakerActions.UPDATE_HUB,
-		SageMakerActions.UPDATE_HUB_CONTENT,
-		SageMakerActions.UPDATE_HUB_CONTENT_REFERENCE,
-		SageMakerActions.UPDATE_IMAGE,
-		SageMakerActions.UPDATE_IMAGE_VERSION,
-		SageMakerActions.UPDATE_INFERENCE_COMPONENT,
-		SageMakerActions.UPDATE_INFERENCE_COMPONENT_RUNTIME_CONFIG,
-		SageMakerActions.UPDATE_INFERENCE_EXPERIMENT,
-		SageMakerActions.UPDATE_MLFLOW_APP,
-		SageMakerActions.UPDATE_MLFLOW_TRACKING_SERVER,
-		SageMakerActions.UPDATE_MODEL_CARD,
-		SageMakerActions.UPDATE_MODEL_PACKAGE,
-		SageMakerActions.UPDATE_MONITORING_ALERT,
-		SageMakerActions.UPDATE_MONITORING_SCHEDULE,
-		SageMakerActions.UPDATE_NOTEBOOK_INSTANCE,
-		SageMakerActions.UPDATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG,
-		SageMakerActions.UPDATE_PARTNER_APP,
-		SageMakerActions.UPDATE_PIPELINE,
-		SageMakerActions.UPDATE_PIPELINE_EXECUTION,
-		SageMakerActions.UPDATE_PIPELINE_VERSION,
-		SageMakerActions.UPDATE_PROJECT,
-		SageMakerActions.UPDATE_REWARD,
-		SageMakerActions.UPDATE_SHARED_MODEL,
-		SageMakerActions.UPDATE_SPACE,
-		SageMakerActions.UPDATE_TRAINING_JOB,
-		SageMakerActions.UPDATE_TRIAL,
-		SageMakerActions.UPDATE_TRIAL_COMPONENT,
-		SageMakerActions.UPDATE_USER_PROFILE,
-		SageMakerActions.UPDATE_WORKFORCE,
-		SageMakerActions.UPDATE_WORKTEAM,
+	static readonly AllWriteActions: string[] = [
+		SageMakerActions.AddAssociation,
+		SageMakerActions.AssociateTrialComponent,
+		SageMakerActions.AttachClusterNodeVolume,
+		SageMakerActions.BatchAddClusterNodes,
+		SageMakerActions.BatchDeleteClusterNodes,
+		SageMakerActions.BatchPutMetrics,
+		SageMakerActions.BatchWriteRecord,
+		SageMakerActions.CallMlflowAppApi,
+		SageMakerActions.CallPartnerAppApi,
+		SageMakerActions.CompleteRollout,
+		SageMakerActions.CreateAIBenchmarkJob,
+		SageMakerActions.CreateAIRecommendationJob,
+		SageMakerActions.CreateAIWorkloadConfig,
+		SageMakerActions.CreateAction,
+		SageMakerActions.CreateAlgorithm,
+		SageMakerActions.CreateApp,
+		SageMakerActions.CreateAppImageConfig,
+		SageMakerActions.CreateArtifact,
+		SageMakerActions.CreateAutoMLJob,
+		SageMakerActions.CreateAutoMLJobV2,
+		SageMakerActions.CreateCluster,
+		SageMakerActions.CreateClusterSchedulerConfig,
+		SageMakerActions.CreateCodeRepository,
+		SageMakerActions.CreateCompilationJob,
+		SageMakerActions.CreateComputeQuota,
+		SageMakerActions.CreateContext,
+		SageMakerActions.CreateDataQualityJobDefinition,
+		SageMakerActions.CreateDeviceFleet,
+		SageMakerActions.CreateDomain,
+		SageMakerActions.CreateEdgeDeploymentPlan,
+		SageMakerActions.CreateEdgeDeploymentStage,
+		SageMakerActions.CreateEdgePackagingJob,
+		SageMakerActions.CreateEndpoint,
+		SageMakerActions.CreateEndpointConfig,
+		SageMakerActions.CreateExperiment,
+		SageMakerActions.CreateFeatureGroup,
+		SageMakerActions.CreateFlowDefinition,
+		SageMakerActions.CreateHub,
+		SageMakerActions.CreateHubContentReference,
+		SageMakerActions.CreateHumanTaskUi,
+		SageMakerActions.CreateHyperParameterTuningJob,
+		SageMakerActions.CreateImage,
+		SageMakerActions.CreateImageVersion,
+		SageMakerActions.CreateInferenceComponent,
+		SageMakerActions.CreateInferenceExperiment,
+		SageMakerActions.CreateInferenceRecommendationsJob,
+		SageMakerActions.CreateJob,
+		SageMakerActions.CreateLabelingJob,
+		SageMakerActions.CreateLineageGroupPolicy,
+		SageMakerActions.CreateMlflowApp,
+		SageMakerActions.CreateMlflowTrackingServer,
+		SageMakerActions.CreateModel,
+		SageMakerActions.CreateModelBiasJobDefinition,
+		SageMakerActions.CreateModelCard,
+		SageMakerActions.CreateModelCardExportJob,
+		SageMakerActions.CreateModelExplainabilityJobDefinition,
+		SageMakerActions.CreateModelPackage,
+		SageMakerActions.CreateModelPackageGroup,
+		SageMakerActions.CreateModelQualityJobDefinition,
+		SageMakerActions.CreateMonitoringSchedule,
+		SageMakerActions.CreateNotebookInstance,
+		SageMakerActions.CreateNotebookInstanceLifecycleConfig,
+		SageMakerActions.CreateOptimizationJob,
+		SageMakerActions.CreatePartnerApp,
+		SageMakerActions.CreatePartnerAppPresignedUrl,
+		SageMakerActions.CreatePipeline,
+		SageMakerActions.CreatePresignedDomainUrl,
+		SageMakerActions.CreatePresignedMlflowAppUrl,
+		SageMakerActions.CreatePresignedMlflowTrackingServerUrl,
+		SageMakerActions.CreatePresignedNotebookInstanceUrl,
+		SageMakerActions.CreateProcessingJob,
+		SageMakerActions.CreateProject,
+		SageMakerActions.CreateReservedCapacity,
+		SageMakerActions.CreateSharedModel,
+		SageMakerActions.CreateSpace,
+		SageMakerActions.CreateStudioLifecycleConfig,
+		SageMakerActions.CreateTrainingJob,
+		SageMakerActions.CreateTrainingPlan,
+		SageMakerActions.CreateTransformJob,
+		SageMakerActions.CreateTrial,
+		SageMakerActions.CreateTrialComponent,
+		SageMakerActions.CreateUserProfile,
+		SageMakerActions.CreateWorkforce,
+		SageMakerActions.CreateWorkteam,
+		SageMakerActions.DeleteAIBenchmarkJob,
+		SageMakerActions.DeleteAIRecommendationJob,
+		SageMakerActions.DeleteAIWorkloadConfig,
+		SageMakerActions.DeleteAction,
+		SageMakerActions.DeleteAlgorithm,
+		SageMakerActions.DeleteApp,
+		SageMakerActions.DeleteAppImageConfig,
+		SageMakerActions.DeleteArtifact,
+		SageMakerActions.DeleteAssociation,
+		SageMakerActions.DeleteCluster,
+		SageMakerActions.DeleteClusterSchedulerConfig,
+		SageMakerActions.DeleteCodeRepository,
+		SageMakerActions.DeleteCompilationJob,
+		SageMakerActions.DeleteComputeQuota,
+		SageMakerActions.DeleteContext,
+		SageMakerActions.DeleteDataQualityJobDefinition,
+		SageMakerActions.DeleteDeviceFleet,
+		SageMakerActions.DeleteDomain,
+		SageMakerActions.DeleteEdgeDeploymentPlan,
+		SageMakerActions.DeleteEdgeDeploymentStage,
+		SageMakerActions.DeleteEndpoint,
+		SageMakerActions.DeleteEndpointConfig,
+		SageMakerActions.DeleteExperiment,
+		SageMakerActions.DeleteFeatureGroup,
+		SageMakerActions.DeleteFlowDefinition,
+		SageMakerActions.DeleteHub,
+		SageMakerActions.DeleteHubContent,
+		SageMakerActions.DeleteHubContentReference,
+		SageMakerActions.DeleteHumanLoop,
+		SageMakerActions.DeleteHumanTaskUi,
+		SageMakerActions.DeleteHyperParameterTuningJob,
+		SageMakerActions.DeleteImage,
+		SageMakerActions.DeleteImageVersion,
+		SageMakerActions.DeleteInferenceComponent,
+		SageMakerActions.DeleteInferenceExperiment,
+		SageMakerActions.DeleteJob,
+		SageMakerActions.DeleteLineageGroupPolicy,
+		SageMakerActions.DeleteMlflowApp,
+		SageMakerActions.DeleteMlflowTrackingServer,
+		SageMakerActions.DeleteModel,
+		SageMakerActions.DeleteModelBiasJobDefinition,
+		SageMakerActions.DeleteModelCard,
+		SageMakerActions.DeleteModelExplainabilityJobDefinition,
+		SageMakerActions.DeleteModelPackage,
+		SageMakerActions.DeleteModelPackageGroup,
+		SageMakerActions.DeleteModelPackageGroupPolicy,
+		SageMakerActions.DeleteModelQualityJobDefinition,
+		SageMakerActions.DeleteMonitoringSchedule,
+		SageMakerActions.DeleteNotebookInstance,
+		SageMakerActions.DeleteNotebookInstanceLifecycleConfig,
+		SageMakerActions.DeleteOptimizationJob,
+		SageMakerActions.DeletePartnerApp,
+		SageMakerActions.DeletePipeline,
+		SageMakerActions.DeleteProcessingJob,
+		SageMakerActions.DeleteProject,
+		SageMakerActions.DeleteRecord,
+		SageMakerActions.DeleteResourcePolicy,
+		SageMakerActions.DeleteSpace,
+		SageMakerActions.DeleteStudioLifecycleConfig,
+		SageMakerActions.DeleteTrainingJob,
+		SageMakerActions.DeleteTrial,
+		SageMakerActions.DeleteTrialComponent,
+		SageMakerActions.DeleteUserProfile,
+		SageMakerActions.DeleteWorkforce,
+		SageMakerActions.DeleteWorkteam,
+		SageMakerActions.DeployHubModel,
+		SageMakerActions.DeregisterDevices,
+		SageMakerActions.DetachClusterNodeVolume,
+		SageMakerActions.DisableSagemakerServicecatalogPortfolio,
+		SageMakerActions.DisassociateTrialComponent,
+		SageMakerActions.EnableSagemakerServicecatalogPortfolio,
+		SageMakerActions.ImportHubContent,
+		SageMakerActions.PutLineageGroupPolicy,
+		SageMakerActions.PutModelPackageGroupPolicy,
+		SageMakerActions.PutRecord,
+		SageMakerActions.PutResourcePolicy,
+		SageMakerActions.RegisterDevices,
+		SageMakerActions.RetryPipelineExecution,
+		SageMakerActions.Sample,
+		SageMakerActions.SampleWithResponseStream,
+		SageMakerActions.SendHeartbeat,
+		SageMakerActions.SendPipelineExecutionStepFailure,
+		SageMakerActions.SendPipelineExecutionStepSuccess,
+		SageMakerActions.SendSharedModelEvent,
+		SageMakerActions.StartClusterHealthCheck,
+		SageMakerActions.StartEdgeDeploymentStage,
+		SageMakerActions.StartHumanLoop,
+		SageMakerActions.StartInferenceExperiment,
+		SageMakerActions.StartMlflowTrackingServer,
+		SageMakerActions.StartMonitoringSchedule,
+		SageMakerActions.StartNotebookInstance,
+		SageMakerActions.StartPipelineExecution,
+		SageMakerActions.StartSession,
+		SageMakerActions.StopAIBenchmarkJob,
+		SageMakerActions.StopAIRecommendationJob,
+		SageMakerActions.StopAutoMLJob,
+		SageMakerActions.StopCompilationJob,
+		SageMakerActions.StopEdgeDeploymentStage,
+		SageMakerActions.StopEdgePackagingJob,
+		SageMakerActions.StopHumanLoop,
+		SageMakerActions.StopHyperParameterTuningJob,
+		SageMakerActions.StopInferenceExperiment,
+		SageMakerActions.StopInferenceRecommendationsJob,
+		SageMakerActions.StopJob,
+		SageMakerActions.StopLabelingJob,
+		SageMakerActions.StopMlflowTrackingServer,
+		SageMakerActions.StopMonitoringSchedule,
+		SageMakerActions.StopNotebookInstance,
+		SageMakerActions.StopOptimizationJob,
+		SageMakerActions.StopPipelineExecution,
+		SageMakerActions.StopProcessingJob,
+		SageMakerActions.StopTrainingJob,
+		SageMakerActions.StopTransformJob,
+		SageMakerActions.TrainHubModel,
+		SageMakerActions.UpdateAction,
+		SageMakerActions.UpdateAppImageConfig,
+		SageMakerActions.UpdateArtifact,
+		SageMakerActions.UpdateCluster,
+		SageMakerActions.UpdateClusterInference,
+		SageMakerActions.UpdateClusterSchedulerConfig,
+		SageMakerActions.UpdateClusterSoftware,
+		SageMakerActions.UpdateCodeRepository,
+		SageMakerActions.UpdateComputeQuota,
+		SageMakerActions.UpdateContext,
+		SageMakerActions.UpdateDeviceFleet,
+		SageMakerActions.UpdateDevices,
+		SageMakerActions.UpdateDomain,
+		SageMakerActions.UpdateEndpoint,
+		SageMakerActions.UpdateEndpointWeightsAndCapacities,
+		SageMakerActions.UpdateExperiment,
+		SageMakerActions.UpdateFeatureGroup,
+		SageMakerActions.UpdateFeatureMetadata,
+		SageMakerActions.UpdateHub,
+		SageMakerActions.UpdateHubContent,
+		SageMakerActions.UpdateHubContentReference,
+		SageMakerActions.UpdateImage,
+		SageMakerActions.UpdateImageVersion,
+		SageMakerActions.UpdateInferenceComponent,
+		SageMakerActions.UpdateInferenceComponentRuntimeConfig,
+		SageMakerActions.UpdateInferenceExperiment,
+		SageMakerActions.UpdateMlflowApp,
+		SageMakerActions.UpdateMlflowTrackingServer,
+		SageMakerActions.UpdateModelCard,
+		SageMakerActions.UpdateModelPackage,
+		SageMakerActions.UpdateMonitoringAlert,
+		SageMakerActions.UpdateMonitoringSchedule,
+		SageMakerActions.UpdateNotebookInstance,
+		SageMakerActions.UpdateNotebookInstanceLifecycleConfig,
+		SageMakerActions.UpdatePartnerApp,
+		SageMakerActions.UpdatePipeline,
+		SageMakerActions.UpdatePipelineExecution,
+		SageMakerActions.UpdatePipelineVersion,
+		SageMakerActions.UpdateProject,
+		SageMakerActions.UpdateReward,
+		SageMakerActions.UpdateSharedModel,
+		SageMakerActions.UpdateSpace,
+		SageMakerActions.UpdateTrainingJob,
+		SageMakerActions.UpdateTrial,
+		SageMakerActions.UpdateTrialComponent,
+		SageMakerActions.UpdateUserProfile,
+		SageMakerActions.UpdateWorkforce,
+		SageMakerActions.UpdateWorkteam,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SageMakerActions.LIST_AI_BENCHMARK_JOBS,
-		SageMakerActions.LIST_AI_RECOMMENDATION_JOBS,
-		SageMakerActions.LIST_AI_WORKLOAD_CONFIGS,
-		SageMakerActions.LIST_ACTIONS,
-		SageMakerActions.LIST_ALGORITHMS,
-		SageMakerActions.LIST_ALIASES,
-		SageMakerActions.LIST_APP_IMAGE_CONFIGS,
-		SageMakerActions.LIST_APPS,
-		SageMakerActions.LIST_ARTIFACTS,
-		SageMakerActions.LIST_ASSOCIATIONS,
-		SageMakerActions.LIST_AUTO_ML_JOBS,
-		SageMakerActions.LIST_CANDIDATES_FOR_AUTO_ML_JOB,
-		SageMakerActions.LIST_CLUSTER_EVENTS,
-		SageMakerActions.LIST_CLUSTER_NODES,
-		SageMakerActions.LIST_CLUSTER_SCHEDULER_CONFIGS,
-		SageMakerActions.LIST_CLUSTERS,
-		SageMakerActions.LIST_CODE_REPOSITORIES,
-		SageMakerActions.LIST_COMPILATION_JOBS,
-		SageMakerActions.LIST_COMPUTE_QUOTAS,
-		SageMakerActions.LIST_CONTEXTS,
-		SageMakerActions.LIST_DATA_QUALITY_JOB_DEFINITIONS,
-		SageMakerActions.LIST_DEVICE_FLEETS,
-		SageMakerActions.LIST_DEVICES,
-		SageMakerActions.LIST_DOMAINS,
-		SageMakerActions.LIST_EDGE_DEPLOYMENT_PLANS,
-		SageMakerActions.LIST_EDGE_PACKAGING_JOBS,
-		SageMakerActions.LIST_ENDPOINT_CONFIGS,
-		SageMakerActions.LIST_ENDPOINTS,
-		SageMakerActions.LIST_EXPERIMENTS,
-		SageMakerActions.LIST_FEATURE_GROUPS,
-		SageMakerActions.LIST_FLOW_DEFINITIONS,
-		SageMakerActions.LIST_HUB_CONTENT_VERSIONS,
-		SageMakerActions.LIST_HUB_CONTENTS,
-		SageMakerActions.LIST_HUBS,
-		SageMakerActions.LIST_HUMAN_LOOPS,
-		SageMakerActions.LIST_HUMAN_TASK_UIS,
-		SageMakerActions.LIST_HYPER_PARAMETER_TUNING_JOBS,
-		SageMakerActions.LIST_IMAGE_VERSIONS,
-		SageMakerActions.LIST_IMAGES,
-		SageMakerActions.LIST_INFERENCE_COMPONENTS,
-		SageMakerActions.LIST_INFERENCE_EXPERIMENTS,
-		SageMakerActions.LIST_INFERENCE_RECOMMENDATIONS_JOB_STEPS,
-		SageMakerActions.LIST_INFERENCE_RECOMMENDATIONS_JOBS,
-		SageMakerActions.LIST_JOB_SCHEMA_VERSIONS,
-		SageMakerActions.LIST_JOBS,
-		SageMakerActions.LIST_LABELING_JOBS,
-		SageMakerActions.LIST_LABELING_JOBS_FOR_WORKTEAM,
-		SageMakerActions.LIST_LINEAGE_GROUPS,
-		SageMakerActions.LIST_MLFLOW_APPS,
-		SageMakerActions.LIST_MLFLOW_TRACKING_SERVERS,
-		SageMakerActions.LIST_MODEL_BIAS_JOB_DEFINITIONS,
-		SageMakerActions.LIST_MODEL_CARD_EXPORT_JOBS,
-		SageMakerActions.LIST_MODEL_CARD_VERSIONS,
-		SageMakerActions.LIST_MODEL_CARDS,
-		SageMakerActions.LIST_MODEL_EXPLAINABILITY_JOB_DEFINITIONS,
-		SageMakerActions.LIST_MODEL_METADATA,
-		SageMakerActions.LIST_MODEL_PACKAGE_GROUPS,
-		SageMakerActions.LIST_MODEL_PACKAGES,
-		SageMakerActions.LIST_MODEL_QUALITY_JOB_DEFINITIONS,
-		SageMakerActions.LIST_MODELS,
-		SageMakerActions.LIST_MONITORING_ALERT_HISTORY,
-		SageMakerActions.LIST_MONITORING_ALERTS,
-		SageMakerActions.LIST_MONITORING_EXECUTIONS,
-		SageMakerActions.LIST_MONITORING_SCHEDULES,
-		SageMakerActions.LIST_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIGS,
-		SageMakerActions.LIST_NOTEBOOK_INSTANCES,
-		SageMakerActions.LIST_OPTIMIZATION_JOBS,
-		SageMakerActions.LIST_PARTNER_APPS,
-		SageMakerActions.LIST_PIPELINE_EXECUTION_STEPS,
-		SageMakerActions.LIST_PIPELINE_EXECUTIONS,
-		SageMakerActions.LIST_PIPELINE_PARAMETERS_FOR_EXECUTION,
-		SageMakerActions.LIST_PIPELINE_VERSIONS,
-		SageMakerActions.LIST_PIPELINES,
-		SageMakerActions.LIST_PROCESSING_JOBS,
-		SageMakerActions.LIST_PROJECTS,
-		SageMakerActions.LIST_RECORDS,
-		SageMakerActions.LIST_RESOURCE_CATALOGS,
-		SageMakerActions.LIST_SHARED_MODEL_EVENTS,
-		SageMakerActions.LIST_SHARED_MODEL_VERSIONS,
-		SageMakerActions.LIST_SHARED_MODELS,
-		SageMakerActions.LIST_SPACES,
-		SageMakerActions.LIST_STAGE_DEVICES,
-		SageMakerActions.LIST_STUDIO_LIFECYCLE_CONFIGS,
-		SageMakerActions.LIST_SUBSCRIBED_WORKTEAMS,
-		SageMakerActions.LIST_TAGS,
-		SageMakerActions.LIST_TRAINING_JOBS,
-		SageMakerActions.LIST_TRAINING_JOBS_FOR_HYPER_PARAMETER_TUNING_JOB,
-		SageMakerActions.LIST_TRAINING_PLANS,
-		SageMakerActions.LIST_TRANSFORM_JOBS,
-		SageMakerActions.LIST_TRIAL_COMPONENTS,
-		SageMakerActions.LIST_TRIALS,
-		SageMakerActions.LIST_ULTRA_SERVERS_BY_RESERVED_CAPACITY,
-		SageMakerActions.LIST_USER_PROFILES,
-		SageMakerActions.LIST_WORKFORCES,
-		SageMakerActions.LIST_WORKTEAMS,
-		SageMakerActions.QUERY_LINEAGE,
+	static readonly AllListActions: string[] = [
+		SageMakerActions.ListAIBenchmarkJobs,
+		SageMakerActions.ListAIRecommendationJobs,
+		SageMakerActions.ListAIWorkloadConfigs,
+		SageMakerActions.ListActions,
+		SageMakerActions.ListAlgorithms,
+		SageMakerActions.ListAliases,
+		SageMakerActions.ListAppImageConfigs,
+		SageMakerActions.ListApps,
+		SageMakerActions.ListArtifacts,
+		SageMakerActions.ListAssociations,
+		SageMakerActions.ListAutoMLJobs,
+		SageMakerActions.ListCandidatesForAutoMLJob,
+		SageMakerActions.ListClusterEvents,
+		SageMakerActions.ListClusterNodes,
+		SageMakerActions.ListClusterSchedulerConfigs,
+		SageMakerActions.ListClusters,
+		SageMakerActions.ListCodeRepositories,
+		SageMakerActions.ListCompilationJobs,
+		SageMakerActions.ListComputeQuotas,
+		SageMakerActions.ListContexts,
+		SageMakerActions.ListDataQualityJobDefinitions,
+		SageMakerActions.ListDeviceFleets,
+		SageMakerActions.ListDevices,
+		SageMakerActions.ListDomains,
+		SageMakerActions.ListEdgeDeploymentPlans,
+		SageMakerActions.ListEdgePackagingJobs,
+		SageMakerActions.ListEndpointConfigs,
+		SageMakerActions.ListEndpoints,
+		SageMakerActions.ListExperiments,
+		SageMakerActions.ListFeatureGroups,
+		SageMakerActions.ListFlowDefinitions,
+		SageMakerActions.ListHubContentVersions,
+		SageMakerActions.ListHubContents,
+		SageMakerActions.ListHubs,
+		SageMakerActions.ListHumanLoops,
+		SageMakerActions.ListHumanTaskUis,
+		SageMakerActions.ListHyperParameterTuningJobs,
+		SageMakerActions.ListImageVersions,
+		SageMakerActions.ListImages,
+		SageMakerActions.ListInferenceComponents,
+		SageMakerActions.ListInferenceExperiments,
+		SageMakerActions.ListInferenceRecommendationsJobSteps,
+		SageMakerActions.ListInferenceRecommendationsJobs,
+		SageMakerActions.ListJobSchemaVersions,
+		SageMakerActions.ListJobs,
+		SageMakerActions.ListLabelingJobs,
+		SageMakerActions.ListLabelingJobsForWorkteam,
+		SageMakerActions.ListLineageGroups,
+		SageMakerActions.ListMlflowApps,
+		SageMakerActions.ListMlflowTrackingServers,
+		SageMakerActions.ListModelBiasJobDefinitions,
+		SageMakerActions.ListModelCardExportJobs,
+		SageMakerActions.ListModelCardVersions,
+		SageMakerActions.ListModelCards,
+		SageMakerActions.ListModelExplainabilityJobDefinitions,
+		SageMakerActions.ListModelMetadata,
+		SageMakerActions.ListModelPackageGroups,
+		SageMakerActions.ListModelPackages,
+		SageMakerActions.ListModelQualityJobDefinitions,
+		SageMakerActions.ListModels,
+		SageMakerActions.ListMonitoringAlertHistory,
+		SageMakerActions.ListMonitoringAlerts,
+		SageMakerActions.ListMonitoringExecutions,
+		SageMakerActions.ListMonitoringSchedules,
+		SageMakerActions.ListNotebookInstanceLifecycleConfigs,
+		SageMakerActions.ListNotebookInstances,
+		SageMakerActions.ListOptimizationJobs,
+		SageMakerActions.ListPartnerApps,
+		SageMakerActions.ListPipelineExecutionSteps,
+		SageMakerActions.ListPipelineExecutions,
+		SageMakerActions.ListPipelineParametersForExecution,
+		SageMakerActions.ListPipelineVersions,
+		SageMakerActions.ListPipelines,
+		SageMakerActions.ListProcessingJobs,
+		SageMakerActions.ListProjects,
+		SageMakerActions.ListRecords,
+		SageMakerActions.ListResourceCatalogs,
+		SageMakerActions.ListSharedModelEvents,
+		SageMakerActions.ListSharedModelVersions,
+		SageMakerActions.ListSharedModels,
+		SageMakerActions.ListSpaces,
+		SageMakerActions.ListStageDevices,
+		SageMakerActions.ListStudioLifecycleConfigs,
+		SageMakerActions.ListSubscribedWorkteams,
+		SageMakerActions.ListTags,
+		SageMakerActions.ListTrainingJobs,
+		SageMakerActions.ListTrainingJobsForHyperParameterTuningJob,
+		SageMakerActions.ListTrainingPlans,
+		SageMakerActions.ListTransformJobs,
+		SageMakerActions.ListTrialComponents,
+		SageMakerActions.ListTrials,
+		SageMakerActions.ListUltraServersByReservedCapacity,
+		SageMakerActions.ListUserProfiles,
+		SageMakerActions.ListWorkforces,
+		SageMakerActions.ListWorkteams,
+		SageMakerActions.QueryLineage,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SageMakerActions.ADD_TAGS,
-		SageMakerActions.DELETE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		SageMakerActions.AddTags,
+		SageMakerActions.DeleteTags,
 	];
 }
 
-const ActionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):action/(?<actionName>[^:/?]+)$",
-);
-const AiBenchmarkJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-benchmark-job/(?<aiBenchmarkJobName>[^:/?]+)$",
-);
-const AiRecommendationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-recommendation-job/(?<aiRecommendationJobName>[^:/?]+)$",
-);
-const AiWorkloadConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-workload-config/(?<aiWorkloadConfigName>[^:/?]+)$",
-);
-const AlgorithmArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):algorithm/(?<algorithmName>[^:/?]+)$",
-);
-const AppArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):app/(?<domainId>[^:/?]+)/(?<userProfileName>[^:/?]+)/(?<appType>[^:/?]+)/(?<appName>[^:/?]+)$",
-);
-const AppImageConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):app-image-config/(?<appImageConfigName>[^:/?]+)$",
-);
-const ArtifactArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):artifact/(?<hashOfArtifactSource>[^:/?]+)$",
-);
-const AutomlJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):automl-job/(?<autoMlJobJobName>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterId>[^:/?]+)$",
-);
-const ClusterSchedulerConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):cluster-scheduler-config/(?<clusterSchedulerConfigId>[^:/?]+)$",
-);
-const CodeRepositoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):code-repository/(?<codeRepositoryName>[^:/?]+)$",
-);
-const CompilationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):compilation-job/(?<compilationJobName>[^:/?]+)$",
-);
-const ComputeQuotaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):compute-quota/(?<computeQuotaId>[^:/?]+)$",
-);
-const ContextArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):context/(?<contextName>[^:/?]+)$",
-);
-const DataQualityJobDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):data-quality-job-definition/(?<dataQualityJobDefinitionName>[^:/?]+)$",
-);
-const DeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):device-fleet/(?<deviceFleetName>[^:/?]+)/device/(?<deviceName>[^:/?]+)$",
-);
-const DeviceFleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):device-fleet/(?<deviceFleetName>[^:/?]+)$",
-);
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)$",
-);
-const EdgeDeploymentPlanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):edge-deployment/(?<edgeDeploymentPlanName>[^:/?]+)$",
-);
-const EdgePackagingJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):edge-packaging-job/(?<edgePackagingJobName>[^:/?]+)$",
-);
-const EndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):endpoint/(?<endpointName>[^:/?]+)$",
-);
-const EndpointConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):endpoint-config/(?<endpointConfigName>[^:/?]+)$",
-);
-const ExperimentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment/(?<experimentName>[^:/?]+)$",
-);
-const ExperimentTrialArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial/(?<trialName>[^:/?]+)$",
-);
-const ExperimentTrialComponentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial-component/(?<trialComponentName>[^:/?]+)$",
-);
-const FeatureGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):feature-group/(?<featureGroupName>[^:/?]+)$",
-);
-const FlowDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):flow-definition/(?<flowDefinitionName>[^:/?]+)$",
-);
-const HubArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hub/(?<hubName>[^:/?]+)$",
-);
-const HubContentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hub-content/(?<hubName>[^:/?]+)/(?<hubContentType>[^:/?]+)/(?<hubContentName>[^:/?]+)$",
-);
-const HumanLoopArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):human-loop/(?<humanLoopName>[^:/?]+)$",
-);
-const HumanTaskUiArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):human-task-ui/(?<humanTaskUiName>[^:/?]+)$",
-);
-const HyperParameterTuningJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hyper-parameter-tuning-job/(?<hyperParameterTuningJobName>[^:/?]+)$",
-);
-const ImageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):image/(?<imageName>[^:/?]+)$",
-);
-const ImageVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):image-version/(?<imageName>[^:/?]+)/(?<version>[^:/?]+)$",
-);
-const InferenceComponentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-component/(?<inferenceComponentName>[^:/?]+)$",
-);
-const InferenceExperimentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-experiment/(?<inferenceExperimentName>[^:/?]+)$",
-);
-const InferenceRecommendationsJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-recommendations-job/(?<inferenceRecommendationsJobName>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobCategory>[^:/?]+)/(?<jobName>[^:/?]+)$",
-);
-const LabelingJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):labeling-job/(?<labelingJobName>[^:/?]+)$",
-);
-const LineageGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):lineage-group/(?<lineageGroupName>[^:/?]+)$",
-);
-const MlflowAppArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-app/(?<mLflowAppId>[^:/?]+)$",
-);
-const MlflowTrackingServerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-tracking-server/(?<mlflowTrackingServerName>[^:/?]+)$",
-);
-const ModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model/(?<modelName>[^:/?]+)$",
-);
-const ModelBiasJobDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-bias-job-definition/(?<modelBiasJobDefinitionName>[^:/?]+)$",
-);
-const ModelCardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-card/(?<modelCardName>[^:/?]+)$",
-);
-const ModelCardExportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-card/(?<modelCardName>[^:/?]+)/export-job/(?<exportJobName>[^:/?]+)$",
-);
-const ModelExplainabilityJobDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-explainability-job-definition/(?<modelExplainabilityJobDefinitionName>[^:/?]+)$",
-);
-const ModelPackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-package/(?<modelPackageName>[^:/?]+)$",
-);
-const ModelPackageGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-package-group/(?<modelPackageGroupName>[^:/?]+)$",
-);
-const ModelQualityJobDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-quality-job-definition/(?<modelQualityJobDefinitionName>[^:/?]+)$",
-);
-const MonitoringScheduleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):monitoring-schedule/(?<monitoringScheduleName>[^:/?]+)$",
-);
-const MonitoringScheduleAlertArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):monitoring-schedule/(?<monitoringScheduleName>[^:/?]+)/alert/(?<monitoringScheduleAlertName>[^:/?]+)$",
-);
-const NotebookInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):notebook-instance/(?<notebookInstanceName>[^:/?]+)$",
-);
-const NotebookInstanceLifecycleConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):notebook-instance-lifecycle-config/(?<notebookInstanceLifecycleConfigName>[^:/?]+)$",
-);
-const OptimizationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):optimization-job/(?<optimizationJobName>[^:/?]+)$",
-);
-const PartnerAppArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):partner-app/(?<appId>[^:/?]+)$",
-);
-const PipelineArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):pipeline/(?<pipelineName>[^:/?]+)$",
-);
-const PipelineExecutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):pipeline/(?<pipelineName>[^:/?]+)/execution/(?<randomString>[^:/?]+)$",
-);
-const ProcessingJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):processing-job/(?<processingJobName>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):project/(?<projectName>[^:/?]+)$",
-);
-const ReservedCapacityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):reserved-capacity/(?<randomString>[^:/?]+)$",
-);
-const SagemakerCatalogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):sagemaker-catalog/(?<resourceCatalogName>[^:/?]+)$",
-);
-const SharedModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model/(?<sharedModelId>[^:/?]+)$",
-);
-const SharedModelEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model-event/(?<eventId>[^:/?]+)$",
-);
-const SpaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):space/(?<domainId>[^:/?]+)/(?<spaceName>[^:/?]+)$",
-);
-const StudioLifecycleConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):studio-lifecycle-config/(?<studioLifecycleConfigName>[^:/?]+)$",
-);
-const TrainingJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-job/(?<trainingJobName>[^:/?]+)$",
-);
-const TrainingPlanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-plan/(?<trainingPlanName>[^:/?]+)$",
-);
-const TransformJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):transform-job/(?<transformJobName>[^:/?]+)$",
-);
-const UserProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):user-profile/(?<domainId>[^:/?]+)/(?<userProfileName>[^:/?]+)$",
-);
-const WorkforceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):workforce/(?<workforceName>[^:/?]+)$",
-);
-const WorkteamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):workteam/(?<workteamName>[^:/?]+)$",
-);
+/**
+ * Properties for building a action ARN.
+ */
+export interface SageMakerActionArnProps {
+	/** The ActionName component of the ARN. */
+	readonly actionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a action ARN.
+ */
+export interface SageMakerActionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ActionName component. */
+	readonly actionName: string;
+}
+
+/**
+ * Properties for building a ai-benchmark-job ARN.
+ */
+export interface SageMakerAiBenchmarkJobArnProps {
+	/** The AIBenchmarkJobName component of the ARN. */
+	readonly aiBenchmarkJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ai-benchmark-job ARN.
+ */
+export interface SageMakerAiBenchmarkJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AIBenchmarkJobName component. */
+	readonly aiBenchmarkJobName: string;
+}
+
+/**
+ * Properties for building a ai-recommendation-job ARN.
+ */
+export interface SageMakerAiRecommendationJobArnProps {
+	/** The AIRecommendationJobName component of the ARN. */
+	readonly aiRecommendationJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ai-recommendation-job ARN.
+ */
+export interface SageMakerAiRecommendationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AIRecommendationJobName component. */
+	readonly aiRecommendationJobName: string;
+}
+
+/**
+ * Properties for building a ai-workload-config ARN.
+ */
+export interface SageMakerAiWorkloadConfigArnProps {
+	/** The AIWorkloadConfigName component of the ARN. */
+	readonly aiWorkloadConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ai-workload-config ARN.
+ */
+export interface SageMakerAiWorkloadConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AIWorkloadConfigName component. */
+	readonly aiWorkloadConfigName: string;
+}
+
+/**
+ * Properties for building a algorithm ARN.
+ */
+export interface SageMakerAlgorithmArnProps {
+	/** The AlgorithmName component of the ARN. */
+	readonly algorithmName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a algorithm ARN.
+ */
+export interface SageMakerAlgorithmArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AlgorithmName component. */
+	readonly algorithmName: string;
+}
+
+/**
+ * Properties for building a app ARN.
+ */
+export interface SageMakerAppArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The UserProfileName component of the ARN. */
+	readonly userProfileName: string;
+	/** The AppType component of the ARN. */
+	readonly appType: string;
+	/** The AppName component of the ARN. */
+	readonly appName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a app ARN.
+ */
+export interface SageMakerAppArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The UserProfileName component. */
+	readonly userProfileName: string;
+	/** The AppType component. */
+	readonly appType: string;
+	/** The AppName component. */
+	readonly appName: string;
+}
+
+/**
+ * Properties for building a app-image-config ARN.
+ */
+export interface SageMakerAppImageConfigArnProps {
+	/** The AppImageConfigName component of the ARN. */
+	readonly appImageConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a app-image-config ARN.
+ */
+export interface SageMakerAppImageConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppImageConfigName component. */
+	readonly appImageConfigName: string;
+}
+
+/**
+ * Properties for building a artifact ARN.
+ */
+export interface SageMakerArtifactArnProps {
+	/** The HashOfArtifactSource component of the ARN. */
+	readonly hashOfArtifactSource: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a artifact ARN.
+ */
+export interface SageMakerArtifactArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HashOfArtifactSource component. */
+	readonly hashOfArtifactSource: string;
+}
+
+/**
+ * Properties for building a automl-job ARN.
+ */
+export interface SageMakerAutomlJobArnProps {
+	/** The AutoMLJobJobName component of the ARN. */
+	readonly autoMlJobJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a automl-job ARN.
+ */
+export interface SageMakerAutomlJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AutoMLJobJobName component. */
+	readonly autoMlJobJobName: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface SageMakerClusterArnProps {
+	/** The ClusterId component of the ARN. */
+	readonly clusterId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface SageMakerClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterId component. */
+	readonly clusterId: string;
+}
+
+/**
+ * Properties for building a cluster-scheduler-config ARN.
+ */
+export interface SageMakerClusterSchedulerConfigArnProps {
+	/** The ClusterSchedulerConfigId component of the ARN. */
+	readonly clusterSchedulerConfigId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-scheduler-config ARN.
+ */
+export interface SageMakerClusterSchedulerConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterSchedulerConfigId component. */
+	readonly clusterSchedulerConfigId: string;
+}
+
+/**
+ * Properties for building a code-repository ARN.
+ */
+export interface SageMakerCodeRepositoryArnProps {
+	/** The CodeRepositoryName component of the ARN. */
+	readonly codeRepositoryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a code-repository ARN.
+ */
+export interface SageMakerCodeRepositoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CodeRepositoryName component. */
+	readonly codeRepositoryName: string;
+}
+
+/**
+ * Properties for building a compilation-job ARN.
+ */
+export interface SageMakerCompilationJobArnProps {
+	/** The CompilationJobName component of the ARN. */
+	readonly compilationJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a compilation-job ARN.
+ */
+export interface SageMakerCompilationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CompilationJobName component. */
+	readonly compilationJobName: string;
+}
+
+/**
+ * Properties for building a compute-quota ARN.
+ */
+export interface SageMakerComputeQuotaArnProps {
+	/** The ComputeQuotaId component of the ARN. */
+	readonly computeQuotaId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a compute-quota ARN.
+ */
+export interface SageMakerComputeQuotaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ComputeQuotaId component. */
+	readonly computeQuotaId: string;
+}
+
+/**
+ * Properties for building a context ARN.
+ */
+export interface SageMakerContextArnProps {
+	/** The ContextName component of the ARN. */
+	readonly contextName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a context ARN.
+ */
+export interface SageMakerContextArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ContextName component. */
+	readonly contextName: string;
+}
+
+/**
+ * Properties for building a data-quality-job-definition ARN.
+ */
+export interface SageMakerDataQualityJobDefinitionArnProps {
+	/** The DataQualityJobDefinitionName component of the ARN. */
+	readonly dataQualityJobDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-quality-job-definition ARN.
+ */
+export interface SageMakerDataQualityJobDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataQualityJobDefinitionName component. */
+	readonly dataQualityJobDefinitionName: string;
+}
+
+/**
+ * Properties for building a device ARN.
+ */
+export interface SageMakerDeviceArnProps {
+	/** The DeviceFleetName component of the ARN. */
+	readonly deviceFleetName: string;
+	/** The DeviceName component of the ARN. */
+	readonly deviceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device ARN.
+ */
+export interface SageMakerDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceFleetName component. */
+	readonly deviceFleetName: string;
+	/** The DeviceName component. */
+	readonly deviceName: string;
+}
+
+/**
+ * Properties for building a device-fleet ARN.
+ */
+export interface SageMakerDeviceFleetArnProps {
+	/** The DeviceFleetName component of the ARN. */
+	readonly deviceFleetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device-fleet ARN.
+ */
+export interface SageMakerDeviceFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceFleetName component. */
+	readonly deviceFleetName: string;
+}
+
+/**
+ * Properties for building a domain ARN.
+ */
+export interface SageMakerDomainArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain ARN.
+ */
+export interface SageMakerDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+}
+
+/**
+ * Properties for building a edge-deployment-plan ARN.
+ */
+export interface SageMakerEdgeDeploymentPlanArnProps {
+	/** The EdgeDeploymentPlanName component of the ARN. */
+	readonly edgeDeploymentPlanName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a edge-deployment-plan ARN.
+ */
+export interface SageMakerEdgeDeploymentPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EdgeDeploymentPlanName component. */
+	readonly edgeDeploymentPlanName: string;
+}
+
+/**
+ * Properties for building a edge-packaging-job ARN.
+ */
+export interface SageMakerEdgePackagingJobArnProps {
+	/** The EdgePackagingJobName component of the ARN. */
+	readonly edgePackagingJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a edge-packaging-job ARN.
+ */
+export interface SageMakerEdgePackagingJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EdgePackagingJobName component. */
+	readonly edgePackagingJobName: string;
+}
+
+/**
+ * Properties for building a endpoint ARN.
+ */
+export interface SageMakerEndpointArnProps {
+	/** The EndpointName component of the ARN. */
+	readonly endpointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a endpoint ARN.
+ */
+export interface SageMakerEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EndpointName component. */
+	readonly endpointName: string;
+}
+
+/**
+ * Properties for building a endpoint-config ARN.
+ */
+export interface SageMakerEndpointConfigArnProps {
+	/** The EndpointConfigName component of the ARN. */
+	readonly endpointConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a endpoint-config ARN.
+ */
+export interface SageMakerEndpointConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EndpointConfigName component. */
+	readonly endpointConfigName: string;
+}
+
+/**
+ * Properties for building a experiment ARN.
+ */
+export interface SageMakerExperimentArnProps {
+	/** The ExperimentName component of the ARN. */
+	readonly experimentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experiment ARN.
+ */
+export interface SageMakerExperimentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExperimentName component. */
+	readonly experimentName: string;
+}
+
+/**
+ * Properties for building a experiment-trial ARN.
+ */
+export interface SageMakerExperimentTrialArnProps {
+	/** The TrialName component of the ARN. */
+	readonly trialName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experiment-trial ARN.
+ */
+export interface SageMakerExperimentTrialArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrialName component. */
+	readonly trialName: string;
+}
+
+/**
+ * Properties for building a experiment-trial-component ARN.
+ */
+export interface SageMakerExperimentTrialComponentArnProps {
+	/** The TrialComponentName component of the ARN. */
+	readonly trialComponentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experiment-trial-component ARN.
+ */
+export interface SageMakerExperimentTrialComponentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrialComponentName component. */
+	readonly trialComponentName: string;
+}
+
+/**
+ * Properties for building a feature-group ARN.
+ */
+export interface SageMakerFeatureGroupArnProps {
+	/** The FeatureGroupName component of the ARN. */
+	readonly featureGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a feature-group ARN.
+ */
+export interface SageMakerFeatureGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FeatureGroupName component. */
+	readonly featureGroupName: string;
+}
+
+/**
+ * Properties for building a flow-definition ARN.
+ */
+export interface SageMakerFlowDefinitionArnProps {
+	/** The FlowDefinitionName component of the ARN. */
+	readonly flowDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a flow-definition ARN.
+ */
+export interface SageMakerFlowDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FlowDefinitionName component. */
+	readonly flowDefinitionName: string;
+}
+
+/**
+ * Properties for building a hub ARN.
+ */
+export interface SageMakerHubArnProps {
+	/** The HubName component of the ARN. */
+	readonly hubName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a hub ARN.
+ */
+export interface SageMakerHubArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HubName component. */
+	readonly hubName: string;
+}
+
+/**
+ * Properties for building a hub-content ARN.
+ */
+export interface SageMakerHubContentArnProps {
+	/** The HubName component of the ARN. */
+	readonly hubName: string;
+	/** The HubContentType component of the ARN. */
+	readonly hubContentType: string;
+	/** The HubContentName component of the ARN. */
+	readonly hubContentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a hub-content ARN.
+ */
+export interface SageMakerHubContentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HubName component. */
+	readonly hubName: string;
+	/** The HubContentType component. */
+	readonly hubContentType: string;
+	/** The HubContentName component. */
+	readonly hubContentName: string;
+}
+
+/**
+ * Properties for building a human-loop ARN.
+ */
+export interface SageMakerHumanLoopArnProps {
+	/** The HumanLoopName component of the ARN. */
+	readonly humanLoopName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a human-loop ARN.
+ */
+export interface SageMakerHumanLoopArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HumanLoopName component. */
+	readonly humanLoopName: string;
+}
+
+/**
+ * Properties for building a human-task-ui ARN.
+ */
+export interface SageMakerHumanTaskUiArnProps {
+	/** The HumanTaskUiName component of the ARN. */
+	readonly humanTaskUiName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a human-task-ui ARN.
+ */
+export interface SageMakerHumanTaskUiArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HumanTaskUiName component. */
+	readonly humanTaskUiName: string;
+}
+
+/**
+ * Properties for building a hyper-parameter-tuning-job ARN.
+ */
+export interface SageMakerHyperParameterTuningJobArnProps {
+	/** The HyperParameterTuningJobName component of the ARN. */
+	readonly hyperParameterTuningJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a hyper-parameter-tuning-job ARN.
+ */
+export interface SageMakerHyperParameterTuningJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HyperParameterTuningJobName component. */
+	readonly hyperParameterTuningJobName: string;
+}
+
+/**
+ * Properties for building a image ARN.
+ */
+export interface SageMakerImageArnProps {
+	/** The ImageName component of the ARN. */
+	readonly imageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a image ARN.
+ */
+export interface SageMakerImageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImageName component. */
+	readonly imageName: string;
+}
+
+/**
+ * Properties for building a image-version ARN.
+ */
+export interface SageMakerImageVersionArnProps {
+	/** The ImageName component of the ARN. */
+	readonly imageName: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a image-version ARN.
+ */
+export interface SageMakerImageVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImageName component. */
+	readonly imageName: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+/**
+ * Properties for building a inference-component ARN.
+ */
+export interface SageMakerInferenceComponentArnProps {
+	/** The InferenceComponentName component of the ARN. */
+	readonly inferenceComponentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-component ARN.
+ */
+export interface SageMakerInferenceComponentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InferenceComponentName component. */
+	readonly inferenceComponentName: string;
+}
+
+/**
+ * Properties for building a inference-experiment ARN.
+ */
+export interface SageMakerInferenceExperimentArnProps {
+	/** The InferenceExperimentName component of the ARN. */
+	readonly inferenceExperimentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-experiment ARN.
+ */
+export interface SageMakerInferenceExperimentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InferenceExperimentName component. */
+	readonly inferenceExperimentName: string;
+}
+
+/**
+ * Properties for building a inference-recommendations-job ARN.
+ */
+export interface SageMakerInferenceRecommendationsJobArnProps {
+	/** The InferenceRecommendationsJobName component of the ARN. */
+	readonly inferenceRecommendationsJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-recommendations-job ARN.
+ */
+export interface SageMakerInferenceRecommendationsJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InferenceRecommendationsJobName component. */
+	readonly inferenceRecommendationsJobName: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface SageMakerJobArnProps {
+	/** The JobCategory component of the ARN. */
+	readonly jobCategory: string;
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface SageMakerJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobCategory component. */
+	readonly jobCategory: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a labeling-job ARN.
+ */
+export interface SageMakerLabelingJobArnProps {
+	/** The LabelingJobName component of the ARN. */
+	readonly labelingJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a labeling-job ARN.
+ */
+export interface SageMakerLabelingJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LabelingJobName component. */
+	readonly labelingJobName: string;
+}
+
+/**
+ * Properties for building a lineage-group ARN.
+ */
+export interface SageMakerLineageGroupArnProps {
+	/** The LineageGroupName component of the ARN. */
+	readonly lineageGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a lineage-group ARN.
+ */
+export interface SageMakerLineageGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LineageGroupName component. */
+	readonly lineageGroupName: string;
+}
+
+/**
+ * Properties for building a mlflow-app ARN.
+ */
+export interface SageMakerMlflowAppArnProps {
+	/** The MLflowAppId component of the ARN. */
+	readonly mLflowAppId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mlflow-app ARN.
+ */
+export interface SageMakerMlflowAppArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MLflowAppId component. */
+	readonly mLflowAppId: string;
+}
+
+/**
+ * Properties for building a mlflow-tracking-server ARN.
+ */
+export interface SageMakerMlflowTrackingServerArnProps {
+	/** The MlflowTrackingServerName component of the ARN. */
+	readonly mlflowTrackingServerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mlflow-tracking-server ARN.
+ */
+export interface SageMakerMlflowTrackingServerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MlflowTrackingServerName component. */
+	readonly mlflowTrackingServerName: string;
+}
+
+/**
+ * Properties for building a model ARN.
+ */
+export interface SageMakerModelArnProps {
+	/** The ModelName component of the ARN. */
+	readonly modelName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model ARN.
+ */
+export interface SageMakerModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelName component. */
+	readonly modelName: string;
+}
+
+/**
+ * Properties for building a model-bias-job-definition ARN.
+ */
+export interface SageMakerModelBiasJobDefinitionArnProps {
+	/** The ModelBiasJobDefinitionName component of the ARN. */
+	readonly modelBiasJobDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-bias-job-definition ARN.
+ */
+export interface SageMakerModelBiasJobDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelBiasJobDefinitionName component. */
+	readonly modelBiasJobDefinitionName: string;
+}
+
+/**
+ * Properties for building a model-card ARN.
+ */
+export interface SageMakerModelCardArnProps {
+	/** The ModelCardName component of the ARN. */
+	readonly modelCardName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-card ARN.
+ */
+export interface SageMakerModelCardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelCardName component. */
+	readonly modelCardName: string;
+}
+
+/**
+ * Properties for building a model-card-export-job ARN.
+ */
+export interface SageMakerModelCardExportJobArnProps {
+	/** The ModelCardName component of the ARN. */
+	readonly modelCardName: string;
+	/** The ExportJobName component of the ARN. */
+	readonly exportJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-card-export-job ARN.
+ */
+export interface SageMakerModelCardExportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelCardName component. */
+	readonly modelCardName: string;
+	/** The ExportJobName component. */
+	readonly exportJobName: string;
+}
+
+/**
+ * Properties for building a model-explainability-job-definition ARN.
+ */
+export interface SageMakerModelExplainabilityJobDefinitionArnProps {
+	/** The ModelExplainabilityJobDefinitionName component of the ARN. */
+	readonly modelExplainabilityJobDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-explainability-job-definition ARN.
+ */
+export interface SageMakerModelExplainabilityJobDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelExplainabilityJobDefinitionName component. */
+	readonly modelExplainabilityJobDefinitionName: string;
+}
+
+/**
+ * Properties for building a model-package ARN.
+ */
+export interface SageMakerModelPackageArnProps {
+	/** The ModelPackageName component of the ARN. */
+	readonly modelPackageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-package ARN.
+ */
+export interface SageMakerModelPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelPackageName component. */
+	readonly modelPackageName: string;
+}
+
+/**
+ * Properties for building a model-package-group ARN.
+ */
+export interface SageMakerModelPackageGroupArnProps {
+	/** The ModelPackageGroupName component of the ARN. */
+	readonly modelPackageGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-package-group ARN.
+ */
+export interface SageMakerModelPackageGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelPackageGroupName component. */
+	readonly modelPackageGroupName: string;
+}
+
+/**
+ * Properties for building a model-quality-job-definition ARN.
+ */
+export interface SageMakerModelQualityJobDefinitionArnProps {
+	/** The ModelQualityJobDefinitionName component of the ARN. */
+	readonly modelQualityJobDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-quality-job-definition ARN.
+ */
+export interface SageMakerModelQualityJobDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ModelQualityJobDefinitionName component. */
+	readonly modelQualityJobDefinitionName: string;
+}
+
+/**
+ * Properties for building a monitoring-schedule ARN.
+ */
+export interface SageMakerMonitoringScheduleArnProps {
+	/** The MonitoringScheduleName component of the ARN. */
+	readonly monitoringScheduleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a monitoring-schedule ARN.
+ */
+export interface SageMakerMonitoringScheduleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitoringScheduleName component. */
+	readonly monitoringScheduleName: string;
+}
+
+/**
+ * Properties for building a monitoring-schedule-alert ARN.
+ */
+export interface SageMakerMonitoringScheduleAlertArnProps {
+	/** The MonitoringScheduleName component of the ARN. */
+	readonly monitoringScheduleName: string;
+	/** The MonitoringScheduleAlertName component of the ARN. */
+	readonly monitoringScheduleAlertName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a monitoring-schedule-alert ARN.
+ */
+export interface SageMakerMonitoringScheduleAlertArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitoringScheduleName component. */
+	readonly monitoringScheduleName: string;
+	/** The MonitoringScheduleAlertName component. */
+	readonly monitoringScheduleAlertName: string;
+}
+
+/**
+ * Properties for building a notebook-instance ARN.
+ */
+export interface SageMakerNotebookInstanceArnProps {
+	/** The NotebookInstanceName component of the ARN. */
+	readonly notebookInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a notebook-instance ARN.
+ */
+export interface SageMakerNotebookInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotebookInstanceName component. */
+	readonly notebookInstanceName: string;
+}
+
+/**
+ * Properties for building a notebook-instance-lifecycle-config ARN.
+ */
+export interface SageMakerNotebookInstanceLifecycleConfigArnProps {
+	/** The NotebookInstanceLifecycleConfigName component of the ARN. */
+	readonly notebookInstanceLifecycleConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a notebook-instance-lifecycle-config ARN.
+ */
+export interface SageMakerNotebookInstanceLifecycleConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NotebookInstanceLifecycleConfigName component. */
+	readonly notebookInstanceLifecycleConfigName: string;
+}
+
+/**
+ * Properties for building a optimization-job ARN.
+ */
+export interface SageMakerOptimizationJobArnProps {
+	/** The OptimizationJobName component of the ARN. */
+	readonly optimizationJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a optimization-job ARN.
+ */
+export interface SageMakerOptimizationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OptimizationJobName component. */
+	readonly optimizationJobName: string;
+}
+
+/**
+ * Properties for building a partner-app ARN.
+ */
+export interface SageMakerPartnerAppArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a partner-app ARN.
+ */
+export interface SageMakerPartnerAppArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a pipeline ARN.
+ */
+export interface SageMakerPipelineArnProps {
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipeline ARN.
+ */
+export interface SageMakerPipelineArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+}
+
+/**
+ * Properties for building a pipeline-execution ARN.
+ */
+export interface SageMakerPipelineExecutionArnProps {
+	/** The PipelineName component of the ARN. */
+	readonly pipelineName: string;
+	/** The RandomString component of the ARN. */
+	readonly randomString: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipeline-execution ARN.
+ */
+export interface SageMakerPipelineExecutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineName component. */
+	readonly pipelineName: string;
+	/** The RandomString component. */
+	readonly randomString: string;
+}
+
+/**
+ * Properties for building a processing-job ARN.
+ */
+export interface SageMakerProcessingJobArnProps {
+	/** The ProcessingJobName component of the ARN. */
+	readonly processingJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a processing-job ARN.
+ */
+export interface SageMakerProcessingJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProcessingJobName component. */
+	readonly processingJobName: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface SageMakerProjectArnProps {
+	/** The ProjectName component of the ARN. */
+	readonly projectName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface SageMakerProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectName component. */
+	readonly projectName: string;
+}
+
+/**
+ * Properties for building a reserved-capacity ARN.
+ */
+export interface SageMakerReservedCapacityArnProps {
+	/** The RandomString component of the ARN. */
+	readonly randomString: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reserved-capacity ARN.
+ */
+export interface SageMakerReservedCapacityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RandomString component. */
+	readonly randomString: string;
+}
+
+/**
+ * Properties for building a sagemaker-catalog ARN.
+ */
+export interface SageMakerSagemakerCatalogArnProps {
+	/** The ResourceCatalogName component of the ARN. */
+	readonly resourceCatalogName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sagemaker-catalog ARN.
+ */
+export interface SageMakerSagemakerCatalogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceCatalogName component. */
+	readonly resourceCatalogName: string;
+}
+
+/**
+ * Properties for building a shared-model ARN.
+ */
+export interface SageMakerSharedModelArnProps {
+	/** The SharedModelId component of the ARN. */
+	readonly sharedModelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a shared-model ARN.
+ */
+export interface SageMakerSharedModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SharedModelId component. */
+	readonly sharedModelId: string;
+}
+
+/**
+ * Properties for building a shared-model-event ARN.
+ */
+export interface SageMakerSharedModelEventArnProps {
+	/** The EventId component of the ARN. */
+	readonly eventId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a shared-model-event ARN.
+ */
+export interface SageMakerSharedModelEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EventId component. */
+	readonly eventId: string;
+}
+
+/**
+ * Properties for building a space ARN.
+ */
+export interface SageMakerSpaceArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The SpaceName component of the ARN. */
+	readonly spaceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a space ARN.
+ */
+export interface SageMakerSpaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The SpaceName component. */
+	readonly spaceName: string;
+}
+
+/**
+ * Properties for building a studio-lifecycle-config ARN.
+ */
+export interface SageMakerStudioLifecycleConfigArnProps {
+	/** The StudioLifecycleConfigName component of the ARN. */
+	readonly studioLifecycleConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a studio-lifecycle-config ARN.
+ */
+export interface SageMakerStudioLifecycleConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StudioLifecycleConfigName component. */
+	readonly studioLifecycleConfigName: string;
+}
+
+/**
+ * Properties for building a training-job ARN.
+ */
+export interface SageMakerTrainingJobArnProps {
+	/** The TrainingJobName component of the ARN. */
+	readonly trainingJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a training-job ARN.
+ */
+export interface SageMakerTrainingJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrainingJobName component. */
+	readonly trainingJobName: string;
+}
+
+/**
+ * Properties for building a training-plan ARN.
+ */
+export interface SageMakerTrainingPlanArnProps {
+	/** The TrainingPlanName component of the ARN. */
+	readonly trainingPlanName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a training-plan ARN.
+ */
+export interface SageMakerTrainingPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrainingPlanName component. */
+	readonly trainingPlanName: string;
+}
+
+/**
+ * Properties for building a transform-job ARN.
+ */
+export interface SageMakerTransformJobArnProps {
+	/** The TransformJobName component of the ARN. */
+	readonly transformJobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transform-job ARN.
+ */
+export interface SageMakerTransformJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransformJobName component. */
+	readonly transformJobName: string;
+}
+
+/**
+ * Properties for building a user-profile ARN.
+ */
+export interface SageMakerUserProfileArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The UserProfileName component of the ARN. */
+	readonly userProfileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user-profile ARN.
+ */
+export interface SageMakerUserProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The UserProfileName component. */
+	readonly userProfileName: string;
+}
+
+/**
+ * Properties for building a workforce ARN.
+ */
+export interface SageMakerWorkforceArnProps {
+	/** The WorkforceName component of the ARN. */
+	readonly workforceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workforce ARN.
+ */
+export interface SageMakerWorkforceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkforceName component. */
+	readonly workforceName: string;
+}
+
+/**
+ * Properties for building a workteam ARN.
+ */
+export interface SageMakerWorkteamArnProps {
+	/** The WorkteamName component of the ARN. */
+	readonly workteamName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workteam ARN.
+ */
+export interface SageMakerWorkteamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkteamName component. */
+	readonly workteamName: string;
+}
+
+const ActionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):action\/(?<actionName>[^:/?]+)$/;
+const AiBenchmarkJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-benchmark-job\/(?<aiBenchmarkJobName>[^:/?]+)$/;
+const AiRecommendationJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-recommendation-job\/(?<aiRecommendationJobName>[^:/?]+)$/;
+const AiWorkloadConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):ai-workload-config\/(?<aiWorkloadConfigName>[^:/?]+)$/;
+const AlgorithmArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):algorithm\/(?<algorithmName>[^:/?]+)$/;
+const AppArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):app\/(?<domainId>[^:/?]+)\/(?<userProfileName>[^:/?]+)\/(?<appType>[^:/?]+)\/(?<appName>[^:/?]+)$/;
+const AppImageConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):app-image-config\/(?<appImageConfigName>[^:/?]+)$/;
+const ArtifactArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):artifact\/(?<hashOfArtifactSource>[^:/?]+)$/;
+const AutomlJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):automl-job\/(?<autoMlJobJobName>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterId>[^:/?]+)$/;
+const ClusterSchedulerConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):cluster-scheduler-config\/(?<clusterSchedulerConfigId>[^:/?]+)$/;
+const CodeRepositoryArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):code-repository\/(?<codeRepositoryName>[^:/?]+)$/;
+const CompilationJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):compilation-job\/(?<compilationJobName>[^:/?]+)$/;
+const ComputeQuotaArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):compute-quota\/(?<computeQuotaId>[^:/?]+)$/;
+const ContextArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):context\/(?<contextName>[^:/?]+)$/;
+const DataQualityJobDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):data-quality-job-definition\/(?<dataQualityJobDefinitionName>[^:/?]+)$/;
+const DeviceArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):device-fleet\/(?<deviceFleetName>[^:/?]+)\/device\/(?<deviceName>[^:/?]+)$/;
+const DeviceFleetArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):device-fleet\/(?<deviceFleetName>[^:/?]+)$/;
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)$/;
+const EdgeDeploymentPlanArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):edge-deployment\/(?<edgeDeploymentPlanName>[^:/?]+)$/;
+const EdgePackagingJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):edge-packaging-job\/(?<edgePackagingJobName>[^:/?]+)$/;
+const EndpointArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):endpoint\/(?<endpointName>[^:/?]+)$/;
+const EndpointConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):endpoint-config\/(?<endpointConfigName>[^:/?]+)$/;
+const ExperimentArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment\/(?<experimentName>[^:/?]+)$/;
+const ExperimentTrialArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial\/(?<trialName>[^:/?]+)$/;
+const ExperimentTrialComponentArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial-component\/(?<trialComponentName>[^:/?]+)$/;
+const FeatureGroupArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):feature-group\/(?<featureGroupName>[^:/?]+)$/;
+const FlowDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):flow-definition\/(?<flowDefinitionName>[^:/?]+)$/;
+const HubArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hub\/(?<hubName>[^:/?]+)$/;
+const HubContentArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hub-content\/(?<hubName>[^:/?]+)\/(?<hubContentType>[^:/?]+)\/(?<hubContentName>[^:/?]+)$/;
+const HumanLoopArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):human-loop\/(?<humanLoopName>[^:/?]+)$/;
+const HumanTaskUiArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):human-task-ui\/(?<humanTaskUiName>[^:/?]+)$/;
+const HyperParameterTuningJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hyper-parameter-tuning-job\/(?<hyperParameterTuningJobName>[^:/?]+)$/;
+const ImageArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):image\/(?<imageName>[^:/?]+)$/;
+const ImageVersionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):image-version\/(?<imageName>[^:/?]+)\/(?<version>[^:/?]+)$/;
+const InferenceComponentArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-component\/(?<inferenceComponentName>[^:/?]+)$/;
+const InferenceExperimentArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-experiment\/(?<inferenceExperimentName>[^:/?]+)$/;
+const InferenceRecommendationsJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-recommendations-job\/(?<inferenceRecommendationsJobName>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobCategory>[^:/?]+)\/(?<jobName>[^:/?]+)$/;
+const LabelingJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):labeling-job\/(?<labelingJobName>[^:/?]+)$/;
+const LineageGroupArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):lineage-group\/(?<lineageGroupName>[^:/?]+)$/;
+const MlflowAppArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-app\/(?<mLflowAppId>[^:/?]+)$/;
+const MlflowTrackingServerArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-tracking-server\/(?<mlflowTrackingServerName>[^:/?]+)$/;
+const ModelArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model\/(?<modelName>[^:/?]+)$/;
+const ModelBiasJobDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-bias-job-definition\/(?<modelBiasJobDefinitionName>[^:/?]+)$/;
+const ModelCardArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-card\/(?<modelCardName>[^:/?]+)$/;
+const ModelCardExportJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-card\/(?<modelCardName>[^:/?]+)\/export-job\/(?<exportJobName>[^:/?]+)$/;
+const ModelExplainabilityJobDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-explainability-job-definition\/(?<modelExplainabilityJobDefinitionName>[^:/?]+)$/;
+const ModelPackageArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-package\/(?<modelPackageName>[^:/?]+)$/;
+const ModelPackageGroupArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-package-group\/(?<modelPackageGroupName>[^:/?]+)$/;
+const ModelQualityJobDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):model-quality-job-definition\/(?<modelQualityJobDefinitionName>[^:/?]+)$/;
+const MonitoringScheduleArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):monitoring-schedule\/(?<monitoringScheduleName>[^:/?]+)$/;
+const MonitoringScheduleAlertArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):monitoring-schedule\/(?<monitoringScheduleName>[^:/?]+)\/alert\/(?<monitoringScheduleAlertName>[^:/?]+)$/;
+const NotebookInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):notebook-instance\/(?<notebookInstanceName>[^:/?]+)$/;
+const NotebookInstanceLifecycleConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):notebook-instance-lifecycle-config\/(?<notebookInstanceLifecycleConfigName>[^:/?]+)$/;
+const OptimizationJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):optimization-job\/(?<optimizationJobName>[^:/?]+)$/;
+const PartnerAppArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):partner-app\/(?<appId>[^:/?]+)$/;
+const PipelineArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):pipeline\/(?<pipelineName>[^:/?]+)$/;
+const PipelineExecutionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):pipeline\/(?<pipelineName>[^:/?]+)\/execution\/(?<randomString>[^:/?]+)$/;
+const ProcessingJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):processing-job\/(?<processingJobName>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectName>[^:/?]+)$/;
+const ReservedCapacityArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):reserved-capacity\/(?<randomString>[^:/?]+)$/;
+const SagemakerCatalogArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):sagemaker-catalog\/(?<resourceCatalogName>[^:/?]+)$/;
+const SharedModelArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model\/(?<sharedModelId>[^:/?]+)$/;
+const SharedModelEventArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model-event\/(?<eventId>[^:/?]+)$/;
+const SpaceArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):space\/(?<domainId>[^:/?]+)\/(?<spaceName>[^:/?]+)$/;
+const StudioLifecycleConfigArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):studio-lifecycle-config\/(?<studioLifecycleConfigName>[^:/?]+)$/;
+const TrainingJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-job\/(?<trainingJobName>[^:/?]+)$/;
+const TrainingPlanArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):training-plan\/(?<trainingPlanName>[^:/?]+)$/;
+const TransformJobArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):transform-job\/(?<transformJobName>[^:/?]+)$/;
+const UserProfileArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):user-profile\/(?<domainId>[^:/?]+)\/(?<userProfileName>[^:/?]+)$/;
+const WorkforceArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):workforce\/(?<workforceName>[^:/?]+)$/;
+const WorkteamArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):workteam\/(?<workteamName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for sagemaker resources.
@@ -1733,16 +3731,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the action resource.
 	 */
-	static action(props: {
-		/** The ActionName component of the ARN. */
-		readonly actionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static action(props: SageMakerActionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:action/${props.actionName}`;
 	}
 
@@ -1757,12 +3746,7 @@ export class SageMakerResources {
 	 * Parses a action ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseActionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		actionName: string;
-	} {
+	static parseActionArn(arn: string): SageMakerActionArnComponents {
 		const match = ActionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid action ARN: ${arn}`);
@@ -1778,16 +3762,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the ai-benchmark-job resource.
 	 */
-	static aiBenchmarkJob(props: {
-		/** The AIBenchmarkJobName component of the ARN. */
-		readonly aiBenchmarkJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiBenchmarkJob(props: SageMakerAiBenchmarkJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:ai-benchmark-job/${props.aiBenchmarkJobName}`;
 	}
 
@@ -1802,12 +3777,9 @@ export class SageMakerResources {
 	 * Parses a ai-benchmark-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiBenchmarkJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		aiBenchmarkJobName: string;
-	} {
+	static parseAiBenchmarkJobArn(
+		arn: string,
+	): SageMakerAiBenchmarkJobArnComponents {
 		const match = AiBenchmarkJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ai-benchmark-job ARN: ${arn}`);
@@ -1823,16 +3795,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the ai-recommendation-job resource.
 	 */
-	static aiRecommendationJob(props: {
-		/** The AIRecommendationJobName component of the ARN. */
-		readonly aiRecommendationJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiRecommendationJob(
+		props: SageMakerAiRecommendationJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:ai-recommendation-job/${props.aiRecommendationJobName}`;
 	}
 
@@ -1847,12 +3812,9 @@ export class SageMakerResources {
 	 * Parses a ai-recommendation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiRecommendationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		aiRecommendationJobName: string;
-	} {
+	static parseAiRecommendationJobArn(
+		arn: string,
+	): SageMakerAiRecommendationJobArnComponents {
 		const match = AiRecommendationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ai-recommendation-job ARN: ${arn}`);
@@ -1868,16 +3830,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the ai-workload-config resource.
 	 */
-	static aiWorkloadConfig(props: {
-		/** The AIWorkloadConfigName component of the ARN. */
-		readonly aiWorkloadConfigName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiWorkloadConfig(props: SageMakerAiWorkloadConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:ai-workload-config/${props.aiWorkloadConfigName}`;
 	}
 
@@ -1892,12 +3845,9 @@ export class SageMakerResources {
 	 * Parses a ai-workload-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiWorkloadConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		aiWorkloadConfigName: string;
-	} {
+	static parseAiWorkloadConfigArn(
+		arn: string,
+	): SageMakerAiWorkloadConfigArnComponents {
 		const match = AiWorkloadConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ai-workload-config ARN: ${arn}`);
@@ -1913,16 +3863,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the algorithm resource.
 	 */
-	static algorithm(props: {
-		/** The AlgorithmName component of the ARN. */
-		readonly algorithmName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static algorithm(props: SageMakerAlgorithmArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:algorithm/${props.algorithmName}`;
 	}
 
@@ -1937,12 +3878,7 @@ export class SageMakerResources {
 	 * Parses a algorithm ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAlgorithmArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		algorithmName: string;
-	} {
+	static parseAlgorithmArn(arn: string): SageMakerAlgorithmArnComponents {
 		const match = AlgorithmArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid algorithm ARN: ${arn}`);
@@ -1958,22 +3894,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the app resource.
 	 */
-	static app(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The UserProfileName component of the ARN. */
-		readonly userProfileName: string;
-		/** The AppType component of the ARN. */
-		readonly appType: string;
-		/** The AppName component of the ARN. */
-		readonly appName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static app(props: SageMakerAppArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.domainId}/${props.userProfileName}/${props.appType}/${props.appName}`;
 	}
 
@@ -1988,15 +3909,7 @@ export class SageMakerResources {
 	 * Parses a app ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		userProfileName: string;
-		appType: string;
-		appName: string;
-	} {
+	static parseAppArn(arn: string): SageMakerAppArnComponents {
 		const match = AppArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid app ARN: ${arn}`);
@@ -2015,16 +3928,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the app-image-config resource.
 	 */
-	static appImageConfig(props: {
-		/** The AppImageConfigName component of the ARN. */
-		readonly appImageConfigName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appImageConfig(props: SageMakerAppImageConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:app-image-config/${props.appImageConfigName}`;
 	}
 
@@ -2039,12 +3943,9 @@ export class SageMakerResources {
 	 * Parses a app-image-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppImageConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appImageConfigName: string;
-	} {
+	static parseAppImageConfigArn(
+		arn: string,
+	): SageMakerAppImageConfigArnComponents {
 		const match = AppImageConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid app-image-config ARN: ${arn}`);
@@ -2060,16 +3961,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the artifact resource.
 	 */
-	static artifact(props: {
-		/** The HashOfArtifactSource component of the ARN. */
-		readonly hashOfArtifactSource: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static artifact(props: SageMakerArtifactArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:artifact/${props.hashOfArtifactSource}`;
 	}
 
@@ -2084,12 +3976,7 @@ export class SageMakerResources {
 	 * Parses a artifact ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseArtifactArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hashOfArtifactSource: string;
-	} {
+	static parseArtifactArn(arn: string): SageMakerArtifactArnComponents {
 		const match = ArtifactArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid artifact ARN: ${arn}`);
@@ -2105,16 +3992,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the automl-job resource.
 	 */
-	static automlJob(props: {
-		/** The AutoMLJobJobName component of the ARN. */
-		readonly autoMlJobJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static automlJob(props: SageMakerAutomlJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:automl-job/${props.autoMlJobJobName}`;
 	}
 
@@ -2129,12 +4007,7 @@ export class SageMakerResources {
 	 * Parses a automl-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutomlJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		autoMlJobJobName: string;
-	} {
+	static parseAutomlJobArn(arn: string): SageMakerAutomlJobArnComponents {
 		const match = AutomlJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid automl-job ARN: ${arn}`);
@@ -2150,16 +4023,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterId component of the ARN. */
-		readonly clusterId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: SageMakerClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterId}`;
 	}
 
@@ -2174,12 +4038,7 @@ export class SageMakerResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterId: string;
-	} {
+	static parseClusterArn(arn: string): SageMakerClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -2195,16 +4054,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the cluster-scheduler-config resource.
 	 */
-	static clusterSchedulerConfig(props: {
-		/** The ClusterSchedulerConfigId component of the ARN. */
-		readonly clusterSchedulerConfigId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clusterSchedulerConfig(
+		props: SageMakerClusterSchedulerConfigArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:cluster-scheduler-config/${props.clusterSchedulerConfigId}`;
 	}
 
@@ -2219,12 +4071,9 @@ export class SageMakerResources {
 	 * Parses a cluster-scheduler-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterSchedulerConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterSchedulerConfigId: string;
-	} {
+	static parseClusterSchedulerConfigArn(
+		arn: string,
+	): SageMakerClusterSchedulerConfigArnComponents {
 		const match = ClusterSchedulerConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster-scheduler-config ARN: ${arn}`);
@@ -2240,16 +4089,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the code-repository resource.
 	 */
-	static codeRepository(props: {
-		/** The CodeRepositoryName component of the ARN. */
-		readonly codeRepositoryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static codeRepository(props: SageMakerCodeRepositoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:code-repository/${props.codeRepositoryName}`;
 	}
 
@@ -2264,12 +4104,9 @@ export class SageMakerResources {
 	 * Parses a code-repository ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCodeRepositoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		codeRepositoryName: string;
-	} {
+	static parseCodeRepositoryArn(
+		arn: string,
+	): SageMakerCodeRepositoryArnComponents {
 		const match = CodeRepositoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid code-repository ARN: ${arn}`);
@@ -2285,16 +4122,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the compilation-job resource.
 	 */
-	static compilationJob(props: {
-		/** The CompilationJobName component of the ARN. */
-		readonly compilationJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static compilationJob(props: SageMakerCompilationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:compilation-job/${props.compilationJobName}`;
 	}
 
@@ -2309,12 +4137,9 @@ export class SageMakerResources {
 	 * Parses a compilation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCompilationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		compilationJobName: string;
-	} {
+	static parseCompilationJobArn(
+		arn: string,
+	): SageMakerCompilationJobArnComponents {
 		const match = CompilationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid compilation-job ARN: ${arn}`);
@@ -2330,16 +4155,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the compute-quota resource.
 	 */
-	static computeQuota(props: {
-		/** The ComputeQuotaId component of the ARN. */
-		readonly computeQuotaId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static computeQuota(props: SageMakerComputeQuotaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:compute-quota/${props.computeQuotaId}`;
 	}
 
@@ -2354,12 +4170,7 @@ export class SageMakerResources {
 	 * Parses a compute-quota ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseComputeQuotaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		computeQuotaId: string;
-	} {
+	static parseComputeQuotaArn(arn: string): SageMakerComputeQuotaArnComponents {
 		const match = ComputeQuotaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid compute-quota ARN: ${arn}`);
@@ -2375,16 +4186,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the context resource.
 	 */
-	static context(props: {
-		/** The ContextName component of the ARN. */
-		readonly contextName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static context(props: SageMakerContextArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:context/${props.contextName}`;
 	}
 
@@ -2399,12 +4201,7 @@ export class SageMakerResources {
 	 * Parses a context ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContextArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		contextName: string;
-	} {
+	static parseContextArn(arn: string): SageMakerContextArnComponents {
 		const match = ContextArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid context ARN: ${arn}`);
@@ -2420,16 +4217,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the data-quality-job-definition resource.
 	 */
-	static dataQualityJobDefinition(props: {
-		/** The DataQualityJobDefinitionName component of the ARN. */
-		readonly dataQualityJobDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataQualityJobDefinition(
+		props: SageMakerDataQualityJobDefinitionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:data-quality-job-definition/${props.dataQualityJobDefinitionName}`;
 	}
 
@@ -2444,12 +4234,9 @@ export class SageMakerResources {
 	 * Parses a data-quality-job-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataQualityJobDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataQualityJobDefinitionName: string;
-	} {
+	static parseDataQualityJobDefinitionArn(
+		arn: string,
+	): SageMakerDataQualityJobDefinitionArnComponents {
 		const match = DataQualityJobDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-quality-job-definition ARN: ${arn}`);
@@ -2465,18 +4252,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the device resource.
 	 */
-	static device(props: {
-		/** The DeviceFleetName component of the ARN. */
-		readonly deviceFleetName: string;
-		/** The DeviceName component of the ARN. */
-		readonly deviceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static device(props: SageMakerDeviceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:device-fleet/${props.deviceFleetName}/device/${props.deviceName}`;
 	}
 
@@ -2491,13 +4267,7 @@ export class SageMakerResources {
 	 * Parses a device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceFleetName: string;
-		deviceName: string;
-	} {
+	static parseDeviceArn(arn: string): SageMakerDeviceArnComponents {
 		const match = DeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device ARN: ${arn}`);
@@ -2514,16 +4284,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the device-fleet resource.
 	 */
-	static deviceFleet(props: {
-		/** The DeviceFleetName component of the ARN. */
-		readonly deviceFleetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deviceFleet(props: SageMakerDeviceFleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:device-fleet/${props.deviceFleetName}`;
 	}
 
@@ -2538,12 +4299,7 @@ export class SageMakerResources {
 	 * Parses a device-fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceFleetName: string;
-	} {
+	static parseDeviceFleetArn(arn: string): SageMakerDeviceFleetArnComponents {
 		const match = DeviceFleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device-fleet ARN: ${arn}`);
@@ -2559,16 +4315,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the domain resource.
 	 */
-	static domain(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: SageMakerDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}`;
 	}
 
@@ -2583,12 +4330,7 @@ export class SageMakerResources {
 	 * Parses a domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-	} {
+	static parseDomainArn(arn: string): SageMakerDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain ARN: ${arn}`);
@@ -2604,16 +4346,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the edge-deployment-plan resource.
 	 */
-	static edgeDeploymentPlan(props: {
-		/** The EdgeDeploymentPlanName component of the ARN. */
-		readonly edgeDeploymentPlanName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static edgeDeploymentPlan(
+		props: SageMakerEdgeDeploymentPlanArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:edge-deployment/${props.edgeDeploymentPlanName}`;
 	}
 
@@ -2628,12 +4363,9 @@ export class SageMakerResources {
 	 * Parses a edge-deployment-plan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEdgeDeploymentPlanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		edgeDeploymentPlanName: string;
-	} {
+	static parseEdgeDeploymentPlanArn(
+		arn: string,
+	): SageMakerEdgeDeploymentPlanArnComponents {
 		const match = EdgeDeploymentPlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid edge-deployment-plan ARN: ${arn}`);
@@ -2649,16 +4381,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the edge-packaging-job resource.
 	 */
-	static edgePackagingJob(props: {
-		/** The EdgePackagingJobName component of the ARN. */
-		readonly edgePackagingJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static edgePackagingJob(props: SageMakerEdgePackagingJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:edge-packaging-job/${props.edgePackagingJobName}`;
 	}
 
@@ -2673,12 +4396,9 @@ export class SageMakerResources {
 	 * Parses a edge-packaging-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEdgePackagingJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		edgePackagingJobName: string;
-	} {
+	static parseEdgePackagingJobArn(
+		arn: string,
+	): SageMakerEdgePackagingJobArnComponents {
 		const match = EdgePackagingJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid edge-packaging-job ARN: ${arn}`);
@@ -2694,16 +4414,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the endpoint resource.
 	 */
-	static endpoint(props: {
-		/** The EndpointName component of the ARN. */
-		readonly endpointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static endpoint(props: SageMakerEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:endpoint/${props.endpointName}`;
 	}
 
@@ -2718,12 +4429,7 @@ export class SageMakerResources {
 	 * Parses a endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		endpointName: string;
-	} {
+	static parseEndpointArn(arn: string): SageMakerEndpointArnComponents {
 		const match = EndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid endpoint ARN: ${arn}`);
@@ -2739,16 +4445,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the endpoint-config resource.
 	 */
-	static endpointConfig(props: {
-		/** The EndpointConfigName component of the ARN. */
-		readonly endpointConfigName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static endpointConfig(props: SageMakerEndpointConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:endpoint-config/${props.endpointConfigName}`;
 	}
 
@@ -2763,12 +4460,9 @@ export class SageMakerResources {
 	 * Parses a endpoint-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEndpointConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		endpointConfigName: string;
-	} {
+	static parseEndpointConfigArn(
+		arn: string,
+	): SageMakerEndpointConfigArnComponents {
 		const match = EndpointConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid endpoint-config ARN: ${arn}`);
@@ -2784,16 +4478,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the experiment resource.
 	 */
-	static experiment(props: {
-		/** The ExperimentName component of the ARN. */
-		readonly experimentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static experiment(props: SageMakerExperimentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:experiment/${props.experimentName}`;
 	}
 
@@ -2808,12 +4493,7 @@ export class SageMakerResources {
 	 * Parses a experiment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExperimentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		experimentName: string;
-	} {
+	static parseExperimentArn(arn: string): SageMakerExperimentArnComponents {
 		const match = ExperimentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid experiment ARN: ${arn}`);
@@ -2829,16 +4509,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the experiment-trial resource.
 	 */
-	static experimentTrial(props: {
-		/** The TrialName component of the ARN. */
-		readonly trialName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static experimentTrial(props: SageMakerExperimentTrialArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:experiment-trial/${props.trialName}`;
 	}
 
@@ -2853,12 +4524,9 @@ export class SageMakerResources {
 	 * Parses a experiment-trial ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExperimentTrialArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trialName: string;
-	} {
+	static parseExperimentTrialArn(
+		arn: string,
+	): SageMakerExperimentTrialArnComponents {
 		const match = ExperimentTrialArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid experiment-trial ARN: ${arn}`);
@@ -2874,16 +4542,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the experiment-trial-component resource.
 	 */
-	static experimentTrialComponent(props: {
-		/** The TrialComponentName component of the ARN. */
-		readonly trialComponentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static experimentTrialComponent(
+		props: SageMakerExperimentTrialComponentArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:experiment-trial-component/${props.trialComponentName}`;
 	}
 
@@ -2898,12 +4559,9 @@ export class SageMakerResources {
 	 * Parses a experiment-trial-component ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExperimentTrialComponentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trialComponentName: string;
-	} {
+	static parseExperimentTrialComponentArn(
+		arn: string,
+	): SageMakerExperimentTrialComponentArnComponents {
 		const match = ExperimentTrialComponentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid experiment-trial-component ARN: ${arn}`);
@@ -2919,16 +4577,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the feature-group resource.
 	 */
-	static featureGroup(props: {
-		/** The FeatureGroupName component of the ARN. */
-		readonly featureGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static featureGroup(props: SageMakerFeatureGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:feature-group/${props.featureGroupName}`;
 	}
 
@@ -2943,12 +4592,7 @@ export class SageMakerResources {
 	 * Parses a feature-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFeatureGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		featureGroupName: string;
-	} {
+	static parseFeatureGroupArn(arn: string): SageMakerFeatureGroupArnComponents {
 		const match = FeatureGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid feature-group ARN: ${arn}`);
@@ -2964,16 +4608,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the flow-definition resource.
 	 */
-	static flowDefinition(props: {
-		/** The FlowDefinitionName component of the ARN. */
-		readonly flowDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static flowDefinition(props: SageMakerFlowDefinitionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:flow-definition/${props.flowDefinitionName}`;
 	}
 
@@ -2988,12 +4623,9 @@ export class SageMakerResources {
 	 * Parses a flow-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFlowDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		flowDefinitionName: string;
-	} {
+	static parseFlowDefinitionArn(
+		arn: string,
+	): SageMakerFlowDefinitionArnComponents {
 		const match = FlowDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid flow-definition ARN: ${arn}`);
@@ -3009,16 +4641,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the hub resource.
 	 */
-	static hub(props: {
-		/** The HubName component of the ARN. */
-		readonly hubName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static hub(props: SageMakerHubArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:hub/${props.hubName}`;
 	}
 
@@ -3033,12 +4656,7 @@ export class SageMakerResources {
 	 * Parses a hub ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHubArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hubName: string;
-	} {
+	static parseHubArn(arn: string): SageMakerHubArnComponents {
 		const match = HubArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid hub ARN: ${arn}`);
@@ -3054,20 +4672,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the hub-content resource.
 	 */
-	static hubContent(props: {
-		/** The HubName component of the ARN. */
-		readonly hubName: string;
-		/** The HubContentType component of the ARN. */
-		readonly hubContentType: string;
-		/** The HubContentName component of the ARN. */
-		readonly hubContentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static hubContent(props: SageMakerHubContentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:hub-content/${props.hubName}/${props.hubContentType}/${props.hubContentName}`;
 	}
 
@@ -3082,14 +4687,7 @@ export class SageMakerResources {
 	 * Parses a hub-content ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHubContentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hubName: string;
-		hubContentType: string;
-		hubContentName: string;
-	} {
+	static parseHubContentArn(arn: string): SageMakerHubContentArnComponents {
 		const match = HubContentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid hub-content ARN: ${arn}`);
@@ -3107,16 +4705,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the human-loop resource.
 	 */
-	static humanLoop(props: {
-		/** The HumanLoopName component of the ARN. */
-		readonly humanLoopName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static humanLoop(props: SageMakerHumanLoopArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:human-loop/${props.humanLoopName}`;
 	}
 
@@ -3131,12 +4720,7 @@ export class SageMakerResources {
 	 * Parses a human-loop ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHumanLoopArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		humanLoopName: string;
-	} {
+	static parseHumanLoopArn(arn: string): SageMakerHumanLoopArnComponents {
 		const match = HumanLoopArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid human-loop ARN: ${arn}`);
@@ -3152,16 +4736,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the human-task-ui resource.
 	 */
-	static humanTaskUi(props: {
-		/** The HumanTaskUiName component of the ARN. */
-		readonly humanTaskUiName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static humanTaskUi(props: SageMakerHumanTaskUiArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:human-task-ui/${props.humanTaskUiName}`;
 	}
 
@@ -3176,12 +4751,7 @@ export class SageMakerResources {
 	 * Parses a human-task-ui ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHumanTaskUiArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		humanTaskUiName: string;
-	} {
+	static parseHumanTaskUiArn(arn: string): SageMakerHumanTaskUiArnComponents {
 		const match = HumanTaskUiArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid human-task-ui ARN: ${arn}`);
@@ -3197,16 +4767,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the hyper-parameter-tuning-job resource.
 	 */
-	static hyperParameterTuningJob(props: {
-		/** The HyperParameterTuningJobName component of the ARN. */
-		readonly hyperParameterTuningJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static hyperParameterTuningJob(
+		props: SageMakerHyperParameterTuningJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:hyper-parameter-tuning-job/${props.hyperParameterTuningJobName}`;
 	}
 
@@ -3221,12 +4784,9 @@ export class SageMakerResources {
 	 * Parses a hyper-parameter-tuning-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHyperParameterTuningJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hyperParameterTuningJobName: string;
-	} {
+	static parseHyperParameterTuningJobArn(
+		arn: string,
+	): SageMakerHyperParameterTuningJobArnComponents {
 		const match = HyperParameterTuningJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid hyper-parameter-tuning-job ARN: ${arn}`);
@@ -3242,16 +4802,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the image resource.
 	 */
-	static image(props: {
-		/** The ImageName component of the ARN. */
-		readonly imageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static image(props: SageMakerImageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:image/${props.imageName}`;
 	}
 
@@ -3266,12 +4817,7 @@ export class SageMakerResources {
 	 * Parses a image ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		imageName: string;
-	} {
+	static parseImageArn(arn: string): SageMakerImageArnComponents {
 		const match = ImageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid image ARN: ${arn}`);
@@ -3287,18 +4833,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the image-version resource.
 	 */
-	static imageVersion(props: {
-		/** The ImageName component of the ARN. */
-		readonly imageName: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static imageVersion(props: SageMakerImageVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:image-version/${props.imageName}/${props.version}`;
 	}
 
@@ -3313,13 +4848,7 @@ export class SageMakerResources {
 	 * Parses a image-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImageVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		imageName: string;
-		version: string;
-	} {
+	static parseImageVersionArn(arn: string): SageMakerImageVersionArnComponents {
 		const match = ImageVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid image-version ARN: ${arn}`);
@@ -3336,16 +4865,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the inference-component resource.
 	 */
-	static inferenceComponent(props: {
-		/** The InferenceComponentName component of the ARN. */
-		readonly inferenceComponentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static inferenceComponent(
+		props: SageMakerInferenceComponentArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:inference-component/${props.inferenceComponentName}`;
 	}
 
@@ -3360,12 +4882,9 @@ export class SageMakerResources {
 	 * Parses a inference-component ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInferenceComponentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		inferenceComponentName: string;
-	} {
+	static parseInferenceComponentArn(
+		arn: string,
+	): SageMakerInferenceComponentArnComponents {
 		const match = InferenceComponentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid inference-component ARN: ${arn}`);
@@ -3381,16 +4900,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the inference-experiment resource.
 	 */
-	static inferenceExperiment(props: {
-		/** The InferenceExperimentName component of the ARN. */
-		readonly inferenceExperimentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static inferenceExperiment(
+		props: SageMakerInferenceExperimentArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:inference-experiment/${props.inferenceExperimentName}`;
 	}
 
@@ -3405,12 +4917,9 @@ export class SageMakerResources {
 	 * Parses a inference-experiment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInferenceExperimentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		inferenceExperimentName: string;
-	} {
+	static parseInferenceExperimentArn(
+		arn: string,
+	): SageMakerInferenceExperimentArnComponents {
 		const match = InferenceExperimentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid inference-experiment ARN: ${arn}`);
@@ -3426,16 +4935,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the inference-recommendations-job resource.
 	 */
-	static inferenceRecommendationsJob(props: {
-		/** The InferenceRecommendationsJobName component of the ARN. */
-		readonly inferenceRecommendationsJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static inferenceRecommendationsJob(
+		props: SageMakerInferenceRecommendationsJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:inference-recommendations-job/${props.inferenceRecommendationsJobName}`;
 	}
 
@@ -3450,12 +4952,9 @@ export class SageMakerResources {
 	 * Parses a inference-recommendations-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInferenceRecommendationsJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		inferenceRecommendationsJobName: string;
-	} {
+	static parseInferenceRecommendationsJobArn(
+		arn: string,
+	): SageMakerInferenceRecommendationsJobArnComponents {
 		const match = InferenceRecommendationsJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid inference-recommendations-job ARN: ${arn}`);
@@ -3472,18 +4971,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The JobCategory component of the ARN. */
-		readonly jobCategory: string;
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: SageMakerJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobCategory}/${props.jobName}`;
 	}
 
@@ -3498,13 +4986,7 @@ export class SageMakerResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobCategory: string;
-		jobName: string;
-	} {
+	static parseJobArn(arn: string): SageMakerJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -3521,16 +5003,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the labeling-job resource.
 	 */
-	static labelingJob(props: {
-		/** The LabelingJobName component of the ARN. */
-		readonly labelingJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static labelingJob(props: SageMakerLabelingJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:labeling-job/${props.labelingJobName}`;
 	}
 
@@ -3545,12 +5018,7 @@ export class SageMakerResources {
 	 * Parses a labeling-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLabelingJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		labelingJobName: string;
-	} {
+	static parseLabelingJobArn(arn: string): SageMakerLabelingJobArnComponents {
 		const match = LabelingJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid labeling-job ARN: ${arn}`);
@@ -3566,16 +5034,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the lineage-group resource.
 	 */
-	static lineageGroup(props: {
-		/** The LineageGroupName component of the ARN. */
-		readonly lineageGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static lineageGroup(props: SageMakerLineageGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:lineage-group/${props.lineageGroupName}`;
 	}
 
@@ -3590,12 +5049,7 @@ export class SageMakerResources {
 	 * Parses a lineage-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLineageGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		lineageGroupName: string;
-	} {
+	static parseLineageGroupArn(arn: string): SageMakerLineageGroupArnComponents {
 		const match = LineageGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid lineage-group ARN: ${arn}`);
@@ -3611,16 +5065,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the mlflow-app resource.
 	 */
-	static mlflowApp(props: {
-		/** The MLflowAppId component of the ARN. */
-		readonly mLflowAppId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mlflowApp(props: SageMakerMlflowAppArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:mlflow-app/${props.mLflowAppId}`;
 	}
 
@@ -3635,12 +5080,7 @@ export class SageMakerResources {
 	 * Parses a mlflow-app ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMlflowAppArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		mLflowAppId: string;
-	} {
+	static parseMlflowAppArn(arn: string): SageMakerMlflowAppArnComponents {
 		const match = MlflowAppArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mlflow-app ARN: ${arn}`);
@@ -3656,16 +5096,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the mlflow-tracking-server resource.
 	 */
-	static mlflowTrackingServer(props: {
-		/** The MlflowTrackingServerName component of the ARN. */
-		readonly mlflowTrackingServerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mlflowTrackingServer(
+		props: SageMakerMlflowTrackingServerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:mlflow-tracking-server/${props.mlflowTrackingServerName}`;
 	}
 
@@ -3680,12 +5113,9 @@ export class SageMakerResources {
 	 * Parses a mlflow-tracking-server ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMlflowTrackingServerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		mlflowTrackingServerName: string;
-	} {
+	static parseMlflowTrackingServerArn(
+		arn: string,
+	): SageMakerMlflowTrackingServerArnComponents {
 		const match = MlflowTrackingServerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mlflow-tracking-server ARN: ${arn}`);
@@ -3701,16 +5131,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model resource.
 	 */
-	static model(props: {
-		/** The ModelName component of the ARN. */
-		readonly modelName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static model(props: SageMakerModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model/${props.modelName}`;
 	}
 
@@ -3725,12 +5146,7 @@ export class SageMakerResources {
 	 * Parses a model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelName: string;
-	} {
+	static parseModelArn(arn: string): SageMakerModelArnComponents {
 		const match = ModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model ARN: ${arn}`);
@@ -3746,16 +5162,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-bias-job-definition resource.
 	 */
-	static modelBiasJobDefinition(props: {
-		/** The ModelBiasJobDefinitionName component of the ARN. */
-		readonly modelBiasJobDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelBiasJobDefinition(
+		props: SageMakerModelBiasJobDefinitionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-bias-job-definition/${props.modelBiasJobDefinitionName}`;
 	}
 
@@ -3770,12 +5179,9 @@ export class SageMakerResources {
 	 * Parses a model-bias-job-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelBiasJobDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelBiasJobDefinitionName: string;
-	} {
+	static parseModelBiasJobDefinitionArn(
+		arn: string,
+	): SageMakerModelBiasJobDefinitionArnComponents {
 		const match = ModelBiasJobDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-bias-job-definition ARN: ${arn}`);
@@ -3791,16 +5197,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-card resource.
 	 */
-	static modelCard(props: {
-		/** The ModelCardName component of the ARN. */
-		readonly modelCardName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelCard(props: SageMakerModelCardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-card/${props.modelCardName}`;
 	}
 
@@ -3815,12 +5212,7 @@ export class SageMakerResources {
 	 * Parses a model-card ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelCardArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelCardName: string;
-	} {
+	static parseModelCardArn(arn: string): SageMakerModelCardArnComponents {
 		const match = ModelCardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-card ARN: ${arn}`);
@@ -3836,18 +5228,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-card-export-job resource.
 	 */
-	static modelCardExportJob(props: {
-		/** The ModelCardName component of the ARN. */
-		readonly modelCardName: string;
-		/** The ExportJobName component of the ARN. */
-		readonly exportJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelCardExportJob(
+		props: SageMakerModelCardExportJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-card/${props.modelCardName}/export-job/${props.exportJobName}`;
 	}
 
@@ -3862,13 +5245,9 @@ export class SageMakerResources {
 	 * Parses a model-card-export-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelCardExportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelCardName: string;
-		exportJobName: string;
-	} {
+	static parseModelCardExportJobArn(
+		arn: string,
+	): SageMakerModelCardExportJobArnComponents {
 		const match = ModelCardExportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-card-export-job ARN: ${arn}`);
@@ -3885,16 +5264,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-explainability-job-definition resource.
 	 */
-	static modelExplainabilityJobDefinition(props: {
-		/** The ModelExplainabilityJobDefinitionName component of the ARN. */
-		readonly modelExplainabilityJobDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelExplainabilityJobDefinition(
+		props: SageMakerModelExplainabilityJobDefinitionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-explainability-job-definition/${props.modelExplainabilityJobDefinitionName}`;
 	}
 
@@ -3909,12 +5281,9 @@ export class SageMakerResources {
 	 * Parses a model-explainability-job-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelExplainabilityJobDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelExplainabilityJobDefinitionName: string;
-	} {
+	static parseModelExplainabilityJobDefinitionArn(
+		arn: string,
+	): SageMakerModelExplainabilityJobDefinitionArnComponents {
 		const match = ModelExplainabilityJobDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -3933,16 +5302,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-package resource.
 	 */
-	static modelPackage(props: {
-		/** The ModelPackageName component of the ARN. */
-		readonly modelPackageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelPackage(props: SageMakerModelPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-package/${props.modelPackageName}`;
 	}
 
@@ -3957,12 +5317,7 @@ export class SageMakerResources {
 	 * Parses a model-package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelPackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelPackageName: string;
-	} {
+	static parseModelPackageArn(arn: string): SageMakerModelPackageArnComponents {
 		const match = ModelPackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-package ARN: ${arn}`);
@@ -3978,16 +5333,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-package-group resource.
 	 */
-	static modelPackageGroup(props: {
-		/** The ModelPackageGroupName component of the ARN. */
-		readonly modelPackageGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelPackageGroup(props: SageMakerModelPackageGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-package-group/${props.modelPackageGroupName}`;
 	}
 
@@ -4002,12 +5348,9 @@ export class SageMakerResources {
 	 * Parses a model-package-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelPackageGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelPackageGroupName: string;
-	} {
+	static parseModelPackageGroupArn(
+		arn: string,
+	): SageMakerModelPackageGroupArnComponents {
 		const match = ModelPackageGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-package-group ARN: ${arn}`);
@@ -4023,16 +5366,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the model-quality-job-definition resource.
 	 */
-	static modelQualityJobDefinition(props: {
-		/** The ModelQualityJobDefinitionName component of the ARN. */
-		readonly modelQualityJobDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelQualityJobDefinition(
+		props: SageMakerModelQualityJobDefinitionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:model-quality-job-definition/${props.modelQualityJobDefinitionName}`;
 	}
 
@@ -4047,12 +5383,9 @@ export class SageMakerResources {
 	 * Parses a model-quality-job-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelQualityJobDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		modelQualityJobDefinitionName: string;
-	} {
+	static parseModelQualityJobDefinitionArn(
+		arn: string,
+	): SageMakerModelQualityJobDefinitionArnComponents {
 		const match = ModelQualityJobDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-quality-job-definition ARN: ${arn}`);
@@ -4069,16 +5402,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the monitoring-schedule resource.
 	 */
-	static monitoringSchedule(props: {
-		/** The MonitoringScheduleName component of the ARN. */
-		readonly monitoringScheduleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static monitoringSchedule(
+		props: SageMakerMonitoringScheduleArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:monitoring-schedule/${props.monitoringScheduleName}`;
 	}
 
@@ -4093,12 +5419,9 @@ export class SageMakerResources {
 	 * Parses a monitoring-schedule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMonitoringScheduleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitoringScheduleName: string;
-	} {
+	static parseMonitoringScheduleArn(
+		arn: string,
+	): SageMakerMonitoringScheduleArnComponents {
 		const match = MonitoringScheduleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid monitoring-schedule ARN: ${arn}`);
@@ -4114,18 +5437,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the monitoring-schedule-alert resource.
 	 */
-	static monitoringScheduleAlert(props: {
-		/** The MonitoringScheduleName component of the ARN. */
-		readonly monitoringScheduleName: string;
-		/** The MonitoringScheduleAlertName component of the ARN. */
-		readonly monitoringScheduleAlertName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static monitoringScheduleAlert(
+		props: SageMakerMonitoringScheduleAlertArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:monitoring-schedule/${props.monitoringScheduleName}/alert/${props.monitoringScheduleAlertName}`;
 	}
 
@@ -4140,13 +5454,9 @@ export class SageMakerResources {
 	 * Parses a monitoring-schedule-alert ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMonitoringScheduleAlertArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitoringScheduleName: string;
-		monitoringScheduleAlertName: string;
-	} {
+	static parseMonitoringScheduleAlertArn(
+		arn: string,
+	): SageMakerMonitoringScheduleAlertArnComponents {
 		const match = MonitoringScheduleAlertArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid monitoring-schedule-alert ARN: ${arn}`);
@@ -4163,16 +5473,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the notebook-instance resource.
 	 */
-	static notebookInstance(props: {
-		/** The NotebookInstanceName component of the ARN. */
-		readonly notebookInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notebookInstance(props: SageMakerNotebookInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:notebook-instance/${props.notebookInstanceName}`;
 	}
 
@@ -4187,12 +5488,9 @@ export class SageMakerResources {
 	 * Parses a notebook-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotebookInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		notebookInstanceName: string;
-	} {
+	static parseNotebookInstanceArn(
+		arn: string,
+	): SageMakerNotebookInstanceArnComponents {
 		const match = NotebookInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid notebook-instance ARN: ${arn}`);
@@ -4208,16 +5506,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the notebook-instance-lifecycle-config resource.
 	 */
-	static notebookInstanceLifecycleConfig(props: {
-		/** The NotebookInstanceLifecycleConfigName component of the ARN. */
-		readonly notebookInstanceLifecycleConfigName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notebookInstanceLifecycleConfig(
+		props: SageMakerNotebookInstanceLifecycleConfigArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:notebook-instance-lifecycle-config/${props.notebookInstanceLifecycleConfigName}`;
 	}
 
@@ -4232,12 +5523,9 @@ export class SageMakerResources {
 	 * Parses a notebook-instance-lifecycle-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotebookInstanceLifecycleConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		notebookInstanceLifecycleConfigName: string;
-	} {
+	static parseNotebookInstanceLifecycleConfigArn(
+		arn: string,
+	): SageMakerNotebookInstanceLifecycleConfigArnComponents {
 		const match = NotebookInstanceLifecycleConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid notebook-instance-lifecycle-config ARN: ${arn}`);
@@ -4254,16 +5542,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the optimization-job resource.
 	 */
-	static optimizationJob(props: {
-		/** The OptimizationJobName component of the ARN. */
-		readonly optimizationJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static optimizationJob(props: SageMakerOptimizationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:optimization-job/${props.optimizationJobName}`;
 	}
 
@@ -4278,12 +5557,9 @@ export class SageMakerResources {
 	 * Parses a optimization-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOptimizationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		optimizationJobName: string;
-	} {
+	static parseOptimizationJobArn(
+		arn: string,
+	): SageMakerOptimizationJobArnComponents {
 		const match = OptimizationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid optimization-job ARN: ${arn}`);
@@ -4299,16 +5575,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the partner-app resource.
 	 */
-	static partnerApp(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static partnerApp(props: SageMakerPartnerAppArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:partner-app/${props.appId}`;
 	}
 
@@ -4323,12 +5590,7 @@ export class SageMakerResources {
 	 * Parses a partner-app ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePartnerAppArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parsePartnerAppArn(arn: string): SageMakerPartnerAppArnComponents {
 		const match = PartnerAppArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid partner-app ARN: ${arn}`);
@@ -4344,16 +5606,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the pipeline resource.
 	 */
-	static pipeline(props: {
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipeline(props: SageMakerPipelineArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:pipeline/${props.pipelineName}`;
 	}
 
@@ -4368,12 +5621,7 @@ export class SageMakerResources {
 	 * Parses a pipeline ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipelineArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineName: string;
-	} {
+	static parsePipelineArn(arn: string): SageMakerPipelineArnComponents {
 		const match = PipelineArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipeline ARN: ${arn}`);
@@ -4389,18 +5637,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the pipeline-execution resource.
 	 */
-	static pipelineExecution(props: {
-		/** The PipelineName component of the ARN. */
-		readonly pipelineName: string;
-		/** The RandomString component of the ARN. */
-		readonly randomString: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipelineExecution(props: SageMakerPipelineExecutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:pipeline/${props.pipelineName}/execution/${props.randomString}`;
 	}
 
@@ -4415,13 +5652,9 @@ export class SageMakerResources {
 	 * Parses a pipeline-execution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipelineExecutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineName: string;
-		randomString: string;
-	} {
+	static parsePipelineExecutionArn(
+		arn: string,
+	): SageMakerPipelineExecutionArnComponents {
 		const match = PipelineExecutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipeline-execution ARN: ${arn}`);
@@ -4438,16 +5671,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the processing-job resource.
 	 */
-	static processingJob(props: {
-		/** The ProcessingJobName component of the ARN. */
-		readonly processingJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static processingJob(props: SageMakerProcessingJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:processing-job/${props.processingJobName}`;
 	}
 
@@ -4462,12 +5686,9 @@ export class SageMakerResources {
 	 * Parses a processing-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProcessingJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		processingJobName: string;
-	} {
+	static parseProcessingJobArn(
+		arn: string,
+	): SageMakerProcessingJobArnComponents {
 		const match = ProcessingJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid processing-job ARN: ${arn}`);
@@ -4483,16 +5704,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ProjectName component of the ARN. */
-		readonly projectName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: SageMakerProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectName}`;
 	}
 
@@ -4507,12 +5719,7 @@ export class SageMakerResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectName: string;
-	} {
+	static parseProjectArn(arn: string): SageMakerProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -4528,16 +5735,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the reserved-capacity resource.
 	 */
-	static reservedCapacity(props: {
-		/** The RandomString component of the ARN. */
-		readonly randomString: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reservedCapacity(props: SageMakerReservedCapacityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:reserved-capacity/${props.randomString}`;
 	}
 
@@ -4552,12 +5750,9 @@ export class SageMakerResources {
 	 * Parses a reserved-capacity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReservedCapacityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		randomString: string;
-	} {
+	static parseReservedCapacityArn(
+		arn: string,
+	): SageMakerReservedCapacityArnComponents {
 		const match = ReservedCapacityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reserved-capacity ARN: ${arn}`);
@@ -4573,16 +5768,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the sagemaker-catalog resource.
 	 */
-	static sagemakerCatalog(props: {
-		/** The ResourceCatalogName component of the ARN. */
-		readonly resourceCatalogName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sagemakerCatalog(props: SageMakerSagemakerCatalogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:sagemaker-catalog/${props.resourceCatalogName}`;
 	}
 
@@ -4597,12 +5783,9 @@ export class SageMakerResources {
 	 * Parses a sagemaker-catalog ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSagemakerCatalogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceCatalogName: string;
-	} {
+	static parseSagemakerCatalogArn(
+		arn: string,
+	): SageMakerSagemakerCatalogArnComponents {
 		const match = SagemakerCatalogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sagemaker-catalog ARN: ${arn}`);
@@ -4618,16 +5801,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the shared-model resource.
 	 */
-	static sharedModel(props: {
-		/** The SharedModelId component of the ARN. */
-		readonly sharedModelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sharedModel(props: SageMakerSharedModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:shared-model/${props.sharedModelId}`;
 	}
 
@@ -4642,12 +5816,7 @@ export class SageMakerResources {
 	 * Parses a shared-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSharedModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sharedModelId: string;
-	} {
+	static parseSharedModelArn(arn: string): SageMakerSharedModelArnComponents {
 		const match = SharedModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid shared-model ARN: ${arn}`);
@@ -4663,16 +5832,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the shared-model-event resource.
 	 */
-	static sharedModelEvent(props: {
-		/** The EventId component of the ARN. */
-		readonly eventId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sharedModelEvent(props: SageMakerSharedModelEventArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:shared-model-event/${props.eventId}`;
 	}
 
@@ -4687,12 +5847,9 @@ export class SageMakerResources {
 	 * Parses a shared-model-event ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSharedModelEventArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		eventId: string;
-	} {
+	static parseSharedModelEventArn(
+		arn: string,
+	): SageMakerSharedModelEventArnComponents {
 		const match = SharedModelEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid shared-model-event ARN: ${arn}`);
@@ -4708,18 +5865,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the space resource.
 	 */
-	static space(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The SpaceName component of the ARN. */
-		readonly spaceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static space(props: SageMakerSpaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:space/${props.domainId}/${props.spaceName}`;
 	}
 
@@ -4734,13 +5880,7 @@ export class SageMakerResources {
 	 * Parses a space ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSpaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		spaceName: string;
-	} {
+	static parseSpaceArn(arn: string): SageMakerSpaceArnComponents {
 		const match = SpaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid space ARN: ${arn}`);
@@ -4757,16 +5897,9 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the studio-lifecycle-config resource.
 	 */
-	static studioLifecycleConfig(props: {
-		/** The StudioLifecycleConfigName component of the ARN. */
-		readonly studioLifecycleConfigName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static studioLifecycleConfig(
+		props: SageMakerStudioLifecycleConfigArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:studio-lifecycle-config/${props.studioLifecycleConfigName}`;
 	}
 
@@ -4781,12 +5914,9 @@ export class SageMakerResources {
 	 * Parses a studio-lifecycle-config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStudioLifecycleConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		studioLifecycleConfigName: string;
-	} {
+	static parseStudioLifecycleConfigArn(
+		arn: string,
+	): SageMakerStudioLifecycleConfigArnComponents {
 		const match = StudioLifecycleConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid studio-lifecycle-config ARN: ${arn}`);
@@ -4802,16 +5932,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the training-job resource.
 	 */
-	static trainingJob(props: {
-		/** The TrainingJobName component of the ARN. */
-		readonly trainingJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trainingJob(props: SageMakerTrainingJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:training-job/${props.trainingJobName}`;
 	}
 
@@ -4826,12 +5947,7 @@ export class SageMakerResources {
 	 * Parses a training-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrainingJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trainingJobName: string;
-	} {
+	static parseTrainingJobArn(arn: string): SageMakerTrainingJobArnComponents {
 		const match = TrainingJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid training-job ARN: ${arn}`);
@@ -4847,16 +5963,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the training-plan resource.
 	 */
-	static trainingPlan(props: {
-		/** The TrainingPlanName component of the ARN. */
-		readonly trainingPlanName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trainingPlan(props: SageMakerTrainingPlanArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:training-plan/${props.trainingPlanName}`;
 	}
 
@@ -4871,12 +5978,7 @@ export class SageMakerResources {
 	 * Parses a training-plan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrainingPlanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trainingPlanName: string;
-	} {
+	static parseTrainingPlanArn(arn: string): SageMakerTrainingPlanArnComponents {
 		const match = TrainingPlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid training-plan ARN: ${arn}`);
@@ -4892,16 +5994,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the transform-job resource.
 	 */
-	static transformJob(props: {
-		/** The TransformJobName component of the ARN. */
-		readonly transformJobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transformJob(props: SageMakerTransformJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:transform-job/${props.transformJobName}`;
 	}
 
@@ -4916,12 +6009,7 @@ export class SageMakerResources {
 	 * Parses a transform-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransformJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transformJobName: string;
-	} {
+	static parseTransformJobArn(arn: string): SageMakerTransformJobArnComponents {
 		const match = TransformJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transform-job ARN: ${arn}`);
@@ -4937,18 +6025,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the user-profile resource.
 	 */
-	static userProfile(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The UserProfileName component of the ARN. */
-		readonly userProfileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static userProfile(props: SageMakerUserProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:user-profile/${props.domainId}/${props.userProfileName}`;
 	}
 
@@ -4963,13 +6040,7 @@ export class SageMakerResources {
 	 * Parses a user-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		userProfileName: string;
-	} {
+	static parseUserProfileArn(arn: string): SageMakerUserProfileArnComponents {
 		const match = UserProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user-profile ARN: ${arn}`);
@@ -4986,16 +6057,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the workforce resource.
 	 */
-	static workforce(props: {
-		/** The WorkforceName component of the ARN. */
-		readonly workforceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workforce(props: SageMakerWorkforceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:workforce/${props.workforceName}`;
 	}
 
@@ -5010,12 +6072,7 @@ export class SageMakerResources {
 	 * Parses a workforce ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkforceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workforceName: string;
-	} {
+	static parseWorkforceArn(arn: string): SageMakerWorkforceArnComponents {
 		const match = WorkforceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workforce ARN: ${arn}`);
@@ -5031,16 +6088,7 @@ export class SageMakerResources {
 	/**
 	 * Builds an ARN for the workteam resource.
 	 */
-	static workteam(props: {
-		/** The WorkteamName component of the ARN. */
-		readonly workteamName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workteam(props: SageMakerWorkteamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:workteam/${props.workteamName}`;
 	}
 
@@ -5055,12 +6103,7 @@ export class SageMakerResources {
 	 * Parses a workteam ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkteamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workteamName: string;
-	} {
+	static parseWorkteamArn(arn: string): SageMakerWorkteamArnComponents {
 		const match = WorkteamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workteam ARN: ${arn}`);
@@ -5079,239 +6122,239 @@ export class SageMakerResources {
  */
 export class SageMakerOperations {
 	/** IAM actions required for the AddAssociation API call. */
-	static readonly ADD_ASSOCIATION: string[] = ["sagemaker:AddAssociation"];
+	static readonly AddAssociation: string[] = ["sagemaker:AddAssociation"];
 	/** IAM actions required for the AddTags API call. */
-	static readonly ADD_TAGS: string[] = ["sagemaker:AddTags"];
+	static readonly AddTags: string[] = ["sagemaker:AddTags"];
 	/** IAM actions required for the AssociateTrialComponent API call. */
-	static readonly ASSOCIATE_TRIAL_COMPONENT: string[] = [
+	static readonly AssociateTrialComponent: string[] = [
 		"sagemaker:AssociateTrialComponent",
 	];
 	/** IAM actions required for the AttachClusterNodeVolume API call. */
-	static readonly ATTACH_CLUSTER_NODE_VOLUME: string[] = [
+	static readonly AttachClusterNodeVolume: string[] = [
 		"sagemaker:AttachClusterNodeVolume",
 	];
 	/** IAM actions required for the BatchAddClusterNodes API call. */
-	static readonly BATCH_ADD_CLUSTER_NODES: string[] = [
+	static readonly BatchAddClusterNodes: string[] = [
 		"sagemaker:BatchAddClusterNodes",
 	];
 	/** IAM actions required for the BatchDeleteClusterNodes API call. */
-	static readonly BATCH_DELETE_CLUSTER_NODES: string[] = [
+	static readonly BatchDeleteClusterNodes: string[] = [
 		"sagemaker:BatchDeleteClusterNodes",
 	];
 	/** IAM actions required for the BatchDescribeModelPackage API call. */
-	static readonly BATCH_DESCRIBE_MODEL_PACKAGE: string[] = [
+	static readonly BatchDescribeModelPackage: string[] = [
 		"sagemaker:BatchDescribeModelPackage",
 	];
 	/** IAM actions required for the BatchGetMetrics API call. */
-	static readonly BATCH_GET_METRICS: string[] = ["sagemaker:BatchGetMetrics"];
+	static readonly BatchGetMetrics: string[] = ["sagemaker:BatchGetMetrics"];
 	/** IAM actions required for the BatchGetRecord API call. */
-	static readonly BATCH_GET_RECORD: string[] = ["sagemaker:BatchGetRecord"];
+	static readonly BatchGetRecord: string[] = ["sagemaker:BatchGetRecord"];
 	/** IAM actions required for the BatchPutMetrics API call. */
-	static readonly BATCH_PUT_METRICS: string[] = ["sagemaker:BatchPutMetrics"];
+	static readonly BatchPutMetrics: string[] = ["sagemaker:BatchPutMetrics"];
 	/** IAM actions required for the BatchRebootClusterNodes API call. */
-	static readonly BATCH_REBOOT_CLUSTER_NODES: string[] = [];
+	static readonly BatchRebootClusterNodes: string[] = [];
 	/** IAM actions required for the BatchReplaceClusterNodes API call. */
-	static readonly BATCH_REPLACE_CLUSTER_NODES: string[] = [];
+	static readonly BatchReplaceClusterNodes: string[] = [];
 	/** IAM actions required for the BatchWriteRecord API call. */
-	static readonly BATCH_WRITE_RECORD: string[] = [
+	static readonly BatchWriteRecord: string[] = [
 		"sagemaker:BatchWriteRecord",
 		"sagemaker:PutRecord",
 	];
 	/** IAM actions required for the CompleteRollout API call. */
-	static readonly COMPLETE_ROLLOUT: string[] = [
+	static readonly CompleteRollout: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:CompleteRollout",
 	];
 	/** IAM actions required for the CreateAIBenchmarkJob API call. */
-	static readonly CREATE_AI_BENCHMARK_JOB: string[] = [
+	static readonly CreateAIBenchmarkJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAIBenchmarkJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateAIRecommendationJob API call. */
-	static readonly CREATE_AI_RECOMMENDATION_JOB: string[] = [
+	static readonly CreateAIRecommendationJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAIRecommendationJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateAIWorkloadConfig API call. */
-	static readonly CREATE_AI_WORKLOAD_CONFIG: string[] = [
+	static readonly CreateAIWorkloadConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAIWorkloadConfig",
 	];
 	/** IAM actions required for the CreateAction API call. */
-	static readonly CREATE_ACTION: string[] = [
+	static readonly CreateAction: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAction",
 	];
 	/** IAM actions required for the CreateAlgorithm API call. */
-	static readonly CREATE_ALGORITHM: string[] = [
+	static readonly CreateAlgorithm: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAlgorithm",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateApp API call. */
-	static readonly CREATE_APP: string[] = [
+	static readonly CreateApp: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateApp",
 	];
 	/** IAM actions required for the CreateAppImageConfig API call. */
-	static readonly CREATE_APP_IMAGE_CONFIG: string[] = [
+	static readonly CreateAppImageConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAppImageConfig",
 	];
 	/** IAM actions required for the CreateArtifact API call. */
-	static readonly CREATE_ARTIFACT: string[] = [
+	static readonly CreateArtifact: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateArtifact",
 	];
 	/** IAM actions required for the CreateAutoMLJob API call. */
-	static readonly CREATE_AUTO_ML_JOB: string[] = [
+	static readonly CreateAutoMLJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAutoMLJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateAutoMLJobV2 API call. */
-	static readonly CREATE_AUTO_ML_JOB_V2: string[] = [
+	static readonly CreateAutoMLJobV2: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateAutoMLJobV2",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateCluster",
 		"iam:PassRole",
 		"sagemaker:UpdateClusterSoftware",
 	];
 	/** IAM actions required for the CreateClusterSchedulerConfig API call. */
-	static readonly CREATE_CLUSTER_SCHEDULER_CONFIG: string[] = [
+	static readonly CreateClusterSchedulerConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateClusterSchedulerConfig",
 	];
 	/** IAM actions required for the CreateCodeRepository API call. */
-	static readonly CREATE_CODE_REPOSITORY: string[] = [
+	static readonly CreateCodeRepository: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateCodeRepository",
 	];
 	/** IAM actions required for the CreateCompilationJob API call. */
-	static readonly CREATE_COMPILATION_JOB: string[] = [
+	static readonly CreateCompilationJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateCompilationJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateComputeQuota API call. */
-	static readonly CREATE_COMPUTE_QUOTA: string[] = [
+	static readonly CreateComputeQuota: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateComputeQuota",
 	];
 	/** IAM actions required for the CreateContext API call. */
-	static readonly CREATE_CONTEXT: string[] = [
+	static readonly CreateContext: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateContext",
 	];
 	/** IAM actions required for the CreateDataQualityJobDefinition API call. */
-	static readonly CREATE_DATA_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly CreateDataQualityJobDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateDataQualityJobDefinition",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDeviceFleet API call. */
-	static readonly CREATE_DEVICE_FLEET: string[] = [];
+	static readonly CreateDeviceFleet: string[] = [];
 	/** IAM actions required for the CreateDomain API call. */
-	static readonly CREATE_DOMAIN: string[] = [
+	static readonly CreateDomain: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateDomain",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateEdgeDeploymentPlan API call. */
-	static readonly CREATE_EDGE_DEPLOYMENT_PLAN: string[] = [];
+	static readonly CreateEdgeDeploymentPlan: string[] = [];
 	/** IAM actions required for the CreateEdgeDeploymentStage API call. */
-	static readonly CREATE_EDGE_DEPLOYMENT_STAGE: string[] = [];
+	static readonly CreateEdgeDeploymentStage: string[] = [];
 	/** IAM actions required for the CreateEdgePackagingJob API call. */
-	static readonly CREATE_EDGE_PACKAGING_JOB: string[] = [];
+	static readonly CreateEdgePackagingJob: string[] = [];
 	/** IAM actions required for the CreateEndpoint API call. */
-	static readonly CREATE_ENDPOINT: string[] = [
+	static readonly CreateEndpoint: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateEndpoint",
 	];
 	/** IAM actions required for the CreateEndpointConfig API call. */
-	static readonly CREATE_ENDPOINT_CONFIG: string[] = [
+	static readonly CreateEndpointConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateEndpointConfig",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateExperiment API call. */
-	static readonly CREATE_EXPERIMENT: string[] = [
+	static readonly CreateExperiment: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateExperiment",
 	];
 	/** IAM actions required for the CreateFeatureGroup API call. */
-	static readonly CREATE_FEATURE_GROUP: string[] = [
+	static readonly CreateFeatureGroup: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateFeatureGroup",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateFlowDefinition API call. */
-	static readonly CREATE_FLOW_DEFINITION: string[] = [
+	static readonly CreateFlowDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateFlowDefinition",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateHub API call. */
-	static readonly CREATE_HUB: string[] = [
+	static readonly CreateHub: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateHub",
 	];
 	/** IAM actions required for the CreateHubContentPresignedUrls API call. */
-	static readonly CREATE_HUB_CONTENT_PRESIGNED_URLS: string[] = [
+	static readonly CreateHubContentPresignedUrls: string[] = [
 		"sagemaker:CreateHubContentPresignedUrls",
 	];
 	/** IAM actions required for the CreateHubContentReference API call. */
-	static readonly CREATE_HUB_CONTENT_REFERENCE: string[] = [
+	static readonly CreateHubContentReference: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateHubContentReference",
 	];
 	/** IAM actions required for the CreateHumanTaskUi API call. */
-	static readonly CREATE_HUMAN_TASK_UI: string[] = [
+	static readonly CreateHumanTaskUi: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateHumanTaskUi",
 	];
 	/** IAM actions required for the CreateHyperParameterTuningJob API call. */
-	static readonly CREATE_HYPER_PARAMETER_TUNING_JOB: string[] = [
+	static readonly CreateHyperParameterTuningJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateHyperParameterTuningJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateImage API call. */
-	static readonly CREATE_IMAGE: string[] = [
+	static readonly CreateImage: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateImage",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateImageVersion API call. */
-	static readonly CREATE_IMAGE_VERSION: string[] = [
+	static readonly CreateImageVersion: string[] = [
 		"sagemaker:CreateImageVersion",
 	];
 	/** IAM actions required for the CreateInferenceComponent API call. */
-	static readonly CREATE_INFERENCE_COMPONENT: string[] = [
+	static readonly CreateInferenceComponent: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateInferenceComponent",
 	];
 	/** IAM actions required for the CreateInferenceExperiment API call. */
-	static readonly CREATE_INFERENCE_EXPERIMENT: string[] = [
+	static readonly CreateInferenceExperiment: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateInferenceExperiment",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateInferenceRecommendationsJob API call. */
-	static readonly CREATE_INFERENCE_RECOMMENDATIONS_JOB: string[] = [
+	static readonly CreateInferenceRecommendationsJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateInferenceRecommendationsJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateJob",
 		"sagemaker:ImportHubContent",
@@ -5319,1157 +6362,1116 @@ export class SageMakerOperations {
 		"sagemaker:UpdateHubContent",
 	];
 	/** IAM actions required for the CreateLabelingJob API call. */
-	static readonly CREATE_LABELING_JOB: string[] = [
+	static readonly CreateLabelingJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateLabelingJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateMlflowApp API call. */
-	static readonly CREATE_MLFLOW_APP: string[] = [
+	static readonly CreateMlflowApp: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateMlflowApp",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateMlflowTrackingServer API call. */
-	static readonly CREATE_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly CreateMlflowTrackingServer: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateMlflowTrackingServer",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModel API call. */
-	static readonly CREATE_MODEL: string[] = [
+	static readonly CreateModel: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModel",
 		"sagemaker:DeployHubModel",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModelBiasJobDefinition API call. */
-	static readonly CREATE_MODEL_BIAS_JOB_DEFINITION: string[] = [
+	static readonly CreateModelBiasJobDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelBiasJobDefinition",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModelCard API call. */
-	static readonly CREATE_MODEL_CARD: string[] = [
+	static readonly CreateModelCard: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelCard",
 	];
 	/** IAM actions required for the CreateModelCardExportJob API call. */
-	static readonly CREATE_MODEL_CARD_EXPORT_JOB: string[] = [
+	static readonly CreateModelCardExportJob: string[] = [
 		"sagemaker:CreateModelCardExportJob",
 	];
 	/** IAM actions required for the CreateModelExplainabilityJobDefinition API call. */
-	static readonly CREATE_MODEL_EXPLAINABILITY_JOB_DEFINITION: string[] = [
+	static readonly CreateModelExplainabilityJobDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelExplainabilityJobDefinition",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModelPackage API call. */
-	static readonly CREATE_MODEL_PACKAGE: string[] = [
+	static readonly CreateModelPackage: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelPackage",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModelPackageGroup API call. */
-	static readonly CREATE_MODEL_PACKAGE_GROUP: string[] = [
+	static readonly CreateModelPackageGroup: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelPackageGroup",
 	];
 	/** IAM actions required for the CreateModelQualityJobDefinition API call. */
-	static readonly CREATE_MODEL_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly CreateModelQualityJobDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateModelQualityJobDefinition",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateMonitoringSchedule API call. */
-	static readonly CREATE_MONITORING_SCHEDULE: string[] = [
+	static readonly CreateMonitoringSchedule: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateMonitoringSchedule",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateNotebookInstance API call. */
-	static readonly CREATE_NOTEBOOK_INSTANCE: string[] = [
+	static readonly CreateNotebookInstance: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateNotebookInstance",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateNotebookInstanceLifecycleConfig API call. */
-	static readonly CREATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG: string[] = [
+	static readonly CreateNotebookInstanceLifecycleConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateNotebookInstanceLifecycleConfig",
 	];
 	/** IAM actions required for the CreateOptimizationJob API call. */
-	static readonly CREATE_OPTIMIZATION_JOB: string[] = [
+	static readonly CreateOptimizationJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateOptimizationJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreatePartnerApp API call. */
-	static readonly CREATE_PARTNER_APP: string[] = [
+	static readonly CreatePartnerApp: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreatePartnerApp",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreatePartnerAppPresignedUrl API call. */
-	static readonly CREATE_PARTNER_APP_PRESIGNED_URL: string[] = [
+	static readonly CreatePartnerAppPresignedUrl: string[] = [
 		"sagemaker:CreatePartnerAppPresignedUrl",
 	];
 	/** IAM actions required for the CreatePipeline API call. */
-	static readonly CREATE_PIPELINE: string[] = [
+	static readonly CreatePipeline: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreatePipeline",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreatePresignedDomainUrl API call. */
-	static readonly CREATE_PRESIGNED_DOMAIN_URL: string[] = [
+	static readonly CreatePresignedDomainUrl: string[] = [
 		"sagemaker:CreatePresignedDomainUrl",
 	];
 	/** IAM actions required for the CreatePresignedMlflowAppUrl API call. */
-	static readonly CREATE_PRESIGNED_MLFLOW_APP_URL: string[] = [
+	static readonly CreatePresignedMlflowAppUrl: string[] = [
 		"sagemaker:CreatePresignedMlflowAppUrl",
 	];
 	/** IAM actions required for the CreatePresignedMlflowTrackingServerUrl API call. */
-	static readonly CREATE_PRESIGNED_MLFLOW_TRACKING_SERVER_URL: string[] = [
+	static readonly CreatePresignedMlflowTrackingServerUrl: string[] = [
 		"sagemaker:CreatePresignedMlflowTrackingServerUrl",
 	];
 	/** IAM actions required for the CreatePresignedNotebookInstanceUrl API call. */
-	static readonly CREATE_PRESIGNED_NOTEBOOK_INSTANCE_URL: string[] = [
+	static readonly CreatePresignedNotebookInstanceUrl: string[] = [
 		"sagemaker:CreatePresignedNotebookInstanceUrl",
 	];
 	/** IAM actions required for the CreateProcessingJob API call. */
-	static readonly CREATE_PROCESSING_JOB: string[] = [
+	static readonly CreateProcessingJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateProcessingJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [
+	static readonly CreateProject: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateProject",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateSpace API call. */
-	static readonly CREATE_SPACE: string[] = [
+	static readonly CreateSpace: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateSpace",
 	];
 	/** IAM actions required for the CreateStudioLifecycleConfig API call. */
-	static readonly CREATE_STUDIO_LIFECYCLE_CONFIG: string[] = [
+	static readonly CreateStudioLifecycleConfig: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateStudioLifecycleConfig",
 	];
 	/** IAM actions required for the CreateTrainingJob API call. */
-	static readonly CREATE_TRAINING_JOB: string[] = [
+	static readonly CreateTrainingJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateTrainingJob",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateTrainingPlan API call. */
-	static readonly CREATE_TRAINING_PLAN: string[] = [
+	static readonly CreateTrainingPlan: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateReservedCapacity",
 		"sagemaker:CreateTrainingPlan",
 	];
 	/** IAM actions required for the CreateTransformJob API call. */
-	static readonly CREATE_TRANSFORM_JOB: string[] = [
+	static readonly CreateTransformJob: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateTransformJob",
 	];
 	/** IAM actions required for the CreateTrial API call. */
-	static readonly CREATE_TRIAL: string[] = [
+	static readonly CreateTrial: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateTrial",
 	];
 	/** IAM actions required for the CreateTrialComponent API call. */
-	static readonly CREATE_TRIAL_COMPONENT: string[] = [
+	static readonly CreateTrialComponent: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateTrialComponent",
 	];
 	/** IAM actions required for the CreateUserProfile API call. */
-	static readonly CREATE_USER_PROFILE: string[] = [
+	static readonly CreateUserProfile: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateUserProfile",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateWorkforce API call. */
-	static readonly CREATE_WORKFORCE: string[] = [
+	static readonly CreateWorkforce: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateWorkforce",
 	];
 	/** IAM actions required for the CreateWorkteam API call. */
-	static readonly CREATE_WORKTEAM: string[] = [
+	static readonly CreateWorkteam: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateWorkteam",
 	];
 	/** IAM actions required for the DeleteAIBenchmarkJob API call. */
-	static readonly DELETE_AI_BENCHMARK_JOB: string[] = [
+	static readonly DeleteAIBenchmarkJob: string[] = [
 		"sagemaker:DeleteAIBenchmarkJob",
 	];
 	/** IAM actions required for the DeleteAIRecommendationJob API call. */
-	static readonly DELETE_AI_RECOMMENDATION_JOB: string[] = [
+	static readonly DeleteAIRecommendationJob: string[] = [
 		"sagemaker:DeleteAIRecommendationJob",
 	];
 	/** IAM actions required for the DeleteAIWorkloadConfig API call. */
-	static readonly DELETE_AI_WORKLOAD_CONFIG: string[] = [
+	static readonly DeleteAIWorkloadConfig: string[] = [
 		"sagemaker:DeleteAIWorkloadConfig",
 	];
 	/** IAM actions required for the DeleteAction API call. */
-	static readonly DELETE_ACTION: string[] = ["sagemaker:DeleteAction"];
+	static readonly DeleteAction: string[] = ["sagemaker:DeleteAction"];
 	/** IAM actions required for the DeleteAlgorithm API call. */
-	static readonly DELETE_ALGORITHM: string[] = ["sagemaker:DeleteAlgorithm"];
+	static readonly DeleteAlgorithm: string[] = ["sagemaker:DeleteAlgorithm"];
 	/** IAM actions required for the DeleteApp API call. */
-	static readonly DELETE_APP: string[] = ["sagemaker:DeleteApp"];
+	static readonly DeleteApp: string[] = ["sagemaker:DeleteApp"];
 	/** IAM actions required for the DeleteAppImageConfig API call. */
-	static readonly DELETE_APP_IMAGE_CONFIG: string[] = [
+	static readonly DeleteAppImageConfig: string[] = [
 		"sagemaker:DeleteAppImageConfig",
 	];
 	/** IAM actions required for the DeleteArtifact API call. */
-	static readonly DELETE_ARTIFACT: string[] = ["sagemaker:DeleteArtifact"];
+	static readonly DeleteArtifact: string[] = ["sagemaker:DeleteArtifact"];
 	/** IAM actions required for the DeleteAssociation API call. */
-	static readonly DELETE_ASSOCIATION: string[] = [
-		"sagemaker:DeleteAssociation",
-	];
+	static readonly DeleteAssociation: string[] = ["sagemaker:DeleteAssociation"];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["sagemaker:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["sagemaker:DeleteCluster"];
 	/** IAM actions required for the DeleteClusterSchedulerConfig API call. */
-	static readonly DELETE_CLUSTER_SCHEDULER_CONFIG: string[] = [
+	static readonly DeleteClusterSchedulerConfig: string[] = [
 		"sagemaker:DeleteClusterSchedulerConfig",
 	];
 	/** IAM actions required for the DeleteCodeRepository API call. */
-	static readonly DELETE_CODE_REPOSITORY: string[] = [
+	static readonly DeleteCodeRepository: string[] = [
 		"sagemaker:DeleteCodeRepository",
 	];
 	/** IAM actions required for the DeleteCompilationJob API call. */
-	static readonly DELETE_COMPILATION_JOB: string[] = [
+	static readonly DeleteCompilationJob: string[] = [
 		"sagemaker:DeleteCompilationJob",
 	];
 	/** IAM actions required for the DeleteComputeQuota API call. */
-	static readonly DELETE_COMPUTE_QUOTA: string[] = [
+	static readonly DeleteComputeQuota: string[] = [
 		"sagemaker:DeleteComputeQuota",
 	];
 	/** IAM actions required for the DeleteContext API call. */
-	static readonly DELETE_CONTEXT: string[] = ["sagemaker:DeleteContext"];
+	static readonly DeleteContext: string[] = ["sagemaker:DeleteContext"];
 	/** IAM actions required for the DeleteDataQualityJobDefinition API call. */
-	static readonly DELETE_DATA_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly DeleteDataQualityJobDefinition: string[] = [
 		"sagemaker:DeleteDataQualityJobDefinition",
 	];
 	/** IAM actions required for the DeleteDeviceFleet API call. */
-	static readonly DELETE_DEVICE_FLEET: string[] = [];
+	static readonly DeleteDeviceFleet: string[] = [];
 	/** IAM actions required for the DeleteDomain API call. */
-	static readonly DELETE_DOMAIN: string[] = ["sagemaker:DeleteDomain"];
+	static readonly DeleteDomain: string[] = ["sagemaker:DeleteDomain"];
 	/** IAM actions required for the DeleteEdgeDeploymentPlan API call. */
-	static readonly DELETE_EDGE_DEPLOYMENT_PLAN: string[] = [];
+	static readonly DeleteEdgeDeploymentPlan: string[] = [];
 	/** IAM actions required for the DeleteEdgeDeploymentStage API call. */
-	static readonly DELETE_EDGE_DEPLOYMENT_STAGE: string[] = [];
+	static readonly DeleteEdgeDeploymentStage: string[] = [];
 	/** IAM actions required for the DeleteEndpoint API call. */
-	static readonly DELETE_ENDPOINT: string[] = ["sagemaker:DeleteEndpoint"];
+	static readonly DeleteEndpoint: string[] = ["sagemaker:DeleteEndpoint"];
 	/** IAM actions required for the DeleteEndpointConfig API call. */
-	static readonly DELETE_ENDPOINT_CONFIG: string[] = [
+	static readonly DeleteEndpointConfig: string[] = [
 		"sagemaker:DeleteEndpointConfig",
 	];
 	/** IAM actions required for the DeleteExperiment API call. */
-	static readonly DELETE_EXPERIMENT: string[] = ["sagemaker:DeleteExperiment"];
+	static readonly DeleteExperiment: string[] = ["sagemaker:DeleteExperiment"];
 	/** IAM actions required for the DeleteFeatureGroup API call. */
-	static readonly DELETE_FEATURE_GROUP: string[] = [
+	static readonly DeleteFeatureGroup: string[] = [
 		"sagemaker:DeleteFeatureGroup",
 	];
 	/** IAM actions required for the DeleteFlowDefinition API call. */
-	static readonly DELETE_FLOW_DEFINITION: string[] = [
+	static readonly DeleteFlowDefinition: string[] = [
 		"sagemaker:DeleteFlowDefinition",
 	];
 	/** IAM actions required for the DeleteHub API call. */
-	static readonly DELETE_HUB: string[] = ["sagemaker:DeleteHub"];
+	static readonly DeleteHub: string[] = ["sagemaker:DeleteHub"];
 	/** IAM actions required for the DeleteHubContent API call. */
-	static readonly DELETE_HUB_CONTENT: string[] = ["sagemaker:DeleteHubContent"];
+	static readonly DeleteHubContent: string[] = ["sagemaker:DeleteHubContent"];
 	/** IAM actions required for the DeleteHubContentReference API call. */
-	static readonly DELETE_HUB_CONTENT_REFERENCE: string[] = [
+	static readonly DeleteHubContentReference: string[] = [
 		"sagemaker:DeleteHubContentReference",
 	];
 	/** IAM actions required for the DeleteHumanLoop API call. */
-	static readonly DELETE_HUMAN_LOOP: string[] = ["sagemaker:DeleteHumanLoop"];
+	static readonly DeleteHumanLoop: string[] = ["sagemaker:DeleteHumanLoop"];
 	/** IAM actions required for the DeleteHumanTaskUi API call. */
-	static readonly DELETE_HUMAN_TASK_UI: string[] = [
-		"sagemaker:DeleteHumanTaskUi",
-	];
+	static readonly DeleteHumanTaskUi: string[] = ["sagemaker:DeleteHumanTaskUi"];
 	/** IAM actions required for the DeleteHyperParameterTuningJob API call. */
-	static readonly DELETE_HYPER_PARAMETER_TUNING_JOB: string[] = [
+	static readonly DeleteHyperParameterTuningJob: string[] = [
 		"sagemaker:DeleteHyperParameterTuningJob",
 	];
 	/** IAM actions required for the DeleteImage API call. */
-	static readonly DELETE_IMAGE: string[] = ["sagemaker:DeleteImage"];
+	static readonly DeleteImage: string[] = ["sagemaker:DeleteImage"];
 	/** IAM actions required for the DeleteImageVersion API call. */
-	static readonly DELETE_IMAGE_VERSION: string[] = [
+	static readonly DeleteImageVersion: string[] = [
 		"sagemaker:DeleteImageVersion",
 	];
 	/** IAM actions required for the DeleteInferenceComponent API call. */
-	static readonly DELETE_INFERENCE_COMPONENT: string[] = [
+	static readonly DeleteInferenceComponent: string[] = [
 		"sagemaker:DeleteInferenceComponent",
 	];
 	/** IAM actions required for the DeleteInferenceExperiment API call. */
-	static readonly DELETE_INFERENCE_EXPERIMENT: string[] = [
+	static readonly DeleteInferenceExperiment: string[] = [
 		"sagemaker:DeleteInferenceExperiment",
 	];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["sagemaker:DeleteJob"];
+	static readonly DeleteJob: string[] = ["sagemaker:DeleteJob"];
 	/** IAM actions required for the DeleteMlflowApp API call. */
-	static readonly DELETE_MLFLOW_APP: string[] = ["sagemaker:DeleteMlflowApp"];
+	static readonly DeleteMlflowApp: string[] = ["sagemaker:DeleteMlflowApp"];
 	/** IAM actions required for the DeleteMlflowTrackingServer API call. */
-	static readonly DELETE_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly DeleteMlflowTrackingServer: string[] = [
 		"sagemaker:DeleteMlflowTrackingServer",
 	];
 	/** IAM actions required for the DeleteModel API call. */
-	static readonly DELETE_MODEL: string[] = ["sagemaker:DeleteModel"];
+	static readonly DeleteModel: string[] = ["sagemaker:DeleteModel"];
 	/** IAM actions required for the DeleteModelBiasJobDefinition API call. */
-	static readonly DELETE_MODEL_BIAS_JOB_DEFINITION: string[] = [
+	static readonly DeleteModelBiasJobDefinition: string[] = [
 		"sagemaker:DeleteModelBiasJobDefinition",
 	];
 	/** IAM actions required for the DeleteModelCard API call. */
-	static readonly DELETE_MODEL_CARD: string[] = ["sagemaker:DeleteModelCard"];
+	static readonly DeleteModelCard: string[] = ["sagemaker:DeleteModelCard"];
 	/** IAM actions required for the DeleteModelExplainabilityJobDefinition API call. */
-	static readonly DELETE_MODEL_EXPLAINABILITY_JOB_DEFINITION: string[] = [
+	static readonly DeleteModelExplainabilityJobDefinition: string[] = [
 		"sagemaker:DeleteModelExplainabilityJobDefinition",
 	];
 	/** IAM actions required for the DeleteModelPackage API call. */
-	static readonly DELETE_MODEL_PACKAGE: string[] = [
+	static readonly DeleteModelPackage: string[] = [
 		"sagemaker:DeleteModelPackage",
 	];
 	/** IAM actions required for the DeleteModelPackageGroup API call. */
-	static readonly DELETE_MODEL_PACKAGE_GROUP: string[] = [
+	static readonly DeleteModelPackageGroup: string[] = [
 		"sagemaker:DeleteModelPackageGroup",
 	];
 	/** IAM actions required for the DeleteModelPackageGroupPolicy API call. */
-	static readonly DELETE_MODEL_PACKAGE_GROUP_POLICY: string[] = [
+	static readonly DeleteModelPackageGroupPolicy: string[] = [
 		"sagemaker:DeleteModelPackageGroupPolicy",
 	];
 	/** IAM actions required for the DeleteModelQualityJobDefinition API call. */
-	static readonly DELETE_MODEL_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly DeleteModelQualityJobDefinition: string[] = [
 		"sagemaker:DeleteModelQualityJobDefinition",
 	];
 	/** IAM actions required for the DeleteMonitoringSchedule API call. */
-	static readonly DELETE_MONITORING_SCHEDULE: string[] = [
+	static readonly DeleteMonitoringSchedule: string[] = [
 		"sagemaker:DeleteMonitoringSchedule",
 	];
 	/** IAM actions required for the DeleteNotebookInstance API call. */
-	static readonly DELETE_NOTEBOOK_INSTANCE: string[] = [
+	static readonly DeleteNotebookInstance: string[] = [
 		"sagemaker:DeleteNotebookInstance",
 	];
 	/** IAM actions required for the DeleteNotebookInstanceLifecycleConfig API call. */
-	static readonly DELETE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG: string[] = [
+	static readonly DeleteNotebookInstanceLifecycleConfig: string[] = [
 		"sagemaker:DeleteNotebookInstanceLifecycleConfig",
 	];
 	/** IAM actions required for the DeleteOptimizationJob API call. */
-	static readonly DELETE_OPTIMIZATION_JOB: string[] = [
+	static readonly DeleteOptimizationJob: string[] = [
 		"sagemaker:DeleteOptimizationJob",
 	];
 	/** IAM actions required for the DeletePartnerApp API call. */
-	static readonly DELETE_PARTNER_APP: string[] = ["sagemaker:DeletePartnerApp"];
+	static readonly DeletePartnerApp: string[] = ["sagemaker:DeletePartnerApp"];
 	/** IAM actions required for the DeletePipeline API call. */
-	static readonly DELETE_PIPELINE: string[] = ["sagemaker:DeletePipeline"];
+	static readonly DeletePipeline: string[] = ["sagemaker:DeletePipeline"];
 	/** IAM actions required for the DeleteProcessingJob API call. */
-	static readonly DELETE_PROCESSING_JOB: string[] = [
+	static readonly DeleteProcessingJob: string[] = [
 		"sagemaker:DeleteProcessingJob",
 	];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = ["sagemaker:DeleteProject"];
+	static readonly DeleteProject: string[] = ["sagemaker:DeleteProject"];
 	/** IAM actions required for the DeleteRecord API call. */
-	static readonly DELETE_RECORD: string[] = ["sagemaker:DeleteRecord"];
+	static readonly DeleteRecord: string[] = ["sagemaker:DeleteRecord"];
 	/** IAM actions required for the DeleteSpace API call. */
-	static readonly DELETE_SPACE: string[] = ["sagemaker:DeleteSpace"];
+	static readonly DeleteSpace: string[] = ["sagemaker:DeleteSpace"];
 	/** IAM actions required for the DeleteStudioLifecycleConfig API call. */
-	static readonly DELETE_STUDIO_LIFECYCLE_CONFIG: string[] = [
+	static readonly DeleteStudioLifecycleConfig: string[] = [
 		"sagemaker:DeleteStudioLifecycleConfig",
 	];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["sagemaker:DeleteTags"];
+	static readonly DeleteTags: string[] = ["sagemaker:DeleteTags"];
 	/** IAM actions required for the DeleteTrainingJob API call. */
-	static readonly DELETE_TRAINING_JOB: string[] = [
-		"sagemaker:DeleteTrainingJob",
-	];
+	static readonly DeleteTrainingJob: string[] = ["sagemaker:DeleteTrainingJob"];
 	/** IAM actions required for the DeleteTrial API call. */
-	static readonly DELETE_TRIAL: string[] = ["sagemaker:DeleteTrial"];
+	static readonly DeleteTrial: string[] = ["sagemaker:DeleteTrial"];
 	/** IAM actions required for the DeleteTrialComponent API call. */
-	static readonly DELETE_TRIAL_COMPONENT: string[] = [
+	static readonly DeleteTrialComponent: string[] = [
 		"sagemaker:DeleteTrialComponent",
 	];
 	/** IAM actions required for the DeleteUserProfile API call. */
-	static readonly DELETE_USER_PROFILE: string[] = [
-		"sagemaker:DeleteUserProfile",
-	];
+	static readonly DeleteUserProfile: string[] = ["sagemaker:DeleteUserProfile"];
 	/** IAM actions required for the DeleteWorkforce API call. */
-	static readonly DELETE_WORKFORCE: string[] = ["sagemaker:DeleteWorkforce"];
+	static readonly DeleteWorkforce: string[] = ["sagemaker:DeleteWorkforce"];
 	/** IAM actions required for the DeleteWorkteam API call. */
-	static readonly DELETE_WORKTEAM: string[] = ["sagemaker:DeleteWorkteam"];
+	static readonly DeleteWorkteam: string[] = ["sagemaker:DeleteWorkteam"];
 	/** IAM actions required for the DeregisterDevices API call. */
-	static readonly DEREGISTER_DEVICES: string[] = [];
+	static readonly DeregisterDevices: string[] = [];
 	/** IAM actions required for the DescribeAIBenchmarkJob API call. */
-	static readonly DESCRIBE_AI_BENCHMARK_JOB: string[] = [
+	static readonly DescribeAIBenchmarkJob: string[] = [
 		"sagemaker:DescribeAIBenchmarkJob",
 	];
 	/** IAM actions required for the DescribeAIRecommendationJob API call. */
-	static readonly DESCRIBE_AI_RECOMMENDATION_JOB: string[] = [
+	static readonly DescribeAIRecommendationJob: string[] = [
 		"sagemaker:DescribeAIRecommendationJob",
 	];
 	/** IAM actions required for the DescribeAIWorkloadConfig API call. */
-	static readonly DESCRIBE_AI_WORKLOAD_CONFIG: string[] = [
+	static readonly DescribeAIWorkloadConfig: string[] = [
 		"sagemaker:DescribeAIWorkloadConfig",
 	];
 	/** IAM actions required for the DescribeAction API call. */
-	static readonly DESCRIBE_ACTION: string[] = ["sagemaker:DescribeAction"];
+	static readonly DescribeAction: string[] = ["sagemaker:DescribeAction"];
 	/** IAM actions required for the DescribeAlgorithm API call. */
-	static readonly DESCRIBE_ALGORITHM: string[] = [
-		"sagemaker:DescribeAlgorithm",
-	];
+	static readonly DescribeAlgorithm: string[] = ["sagemaker:DescribeAlgorithm"];
 	/** IAM actions required for the DescribeApp API call. */
-	static readonly DESCRIBE_APP: string[] = ["sagemaker:DescribeApp"];
+	static readonly DescribeApp: string[] = ["sagemaker:DescribeApp"];
 	/** IAM actions required for the DescribeAppImageConfig API call. */
-	static readonly DESCRIBE_APP_IMAGE_CONFIG: string[] = [
+	static readonly DescribeAppImageConfig: string[] = [
 		"sagemaker:DescribeAppImageConfig",
 	];
 	/** IAM actions required for the DescribeArtifact API call. */
-	static readonly DESCRIBE_ARTIFACT: string[] = ["sagemaker:DescribeArtifact"];
+	static readonly DescribeArtifact: string[] = ["sagemaker:DescribeArtifact"];
 	/** IAM actions required for the DescribeAutoMLJob API call. */
-	static readonly DESCRIBE_AUTO_ML_JOB: string[] = [
-		"sagemaker:DescribeAutoMLJob",
-	];
+	static readonly DescribeAutoMLJob: string[] = ["sagemaker:DescribeAutoMLJob"];
 	/** IAM actions required for the DescribeAutoMLJobV2 API call. */
-	static readonly DESCRIBE_AUTO_ML_JOB_V2: string[] = [
+	static readonly DescribeAutoMLJobV2: string[] = [
 		"sagemaker:DescribeAutoMLJobV2",
 	];
 	/** IAM actions required for the DescribeCluster API call. */
-	static readonly DESCRIBE_CLUSTER: string[] = ["sagemaker:DescribeCluster"];
+	static readonly DescribeCluster: string[] = ["sagemaker:DescribeCluster"];
 	/** IAM actions required for the DescribeClusterEvent API call. */
-	static readonly DESCRIBE_CLUSTER_EVENT: string[] = [
+	static readonly DescribeClusterEvent: string[] = [
 		"sagemaker:DescribeClusterEvent",
 	];
 	/** IAM actions required for the DescribeClusterNode API call. */
-	static readonly DESCRIBE_CLUSTER_NODE: string[] = [
+	static readonly DescribeClusterNode: string[] = [
 		"sagemaker:DescribeClusterNode",
 	];
 	/** IAM actions required for the DescribeClusterSchedulerConfig API call. */
-	static readonly DESCRIBE_CLUSTER_SCHEDULER_CONFIG: string[] = [
+	static readonly DescribeClusterSchedulerConfig: string[] = [
 		"sagemaker:DescribeClusterSchedulerConfig",
 	];
 	/** IAM actions required for the DescribeCodeRepository API call. */
-	static readonly DESCRIBE_CODE_REPOSITORY: string[] = [
+	static readonly DescribeCodeRepository: string[] = [
 		"sagemaker:DescribeCodeRepository",
 	];
 	/** IAM actions required for the DescribeCompilationJob API call. */
-	static readonly DESCRIBE_COMPILATION_JOB: string[] = [
+	static readonly DescribeCompilationJob: string[] = [
 		"sagemaker:DescribeCompilationJob",
 	];
 	/** IAM actions required for the DescribeComputeQuota API call. */
-	static readonly DESCRIBE_COMPUTE_QUOTA: string[] = [
+	static readonly DescribeComputeQuota: string[] = [
 		"sagemaker:DescribeComputeQuota",
 	];
 	/** IAM actions required for the DescribeContext API call. */
-	static readonly DESCRIBE_CONTEXT: string[] = ["sagemaker:DescribeContext"];
+	static readonly DescribeContext: string[] = ["sagemaker:DescribeContext"];
 	/** IAM actions required for the DescribeDataQualityJobDefinition API call. */
-	static readonly DESCRIBE_DATA_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly DescribeDataQualityJobDefinition: string[] = [
 		"sagemaker:DescribeDataQualityJobDefinition",
 	];
 	/** IAM actions required for the DescribeDevice API call. */
-	static readonly DESCRIBE_DEVICE: string[] = [];
+	static readonly DescribeDevice: string[] = [];
 	/** IAM actions required for the DescribeDeviceFleet API call. */
-	static readonly DESCRIBE_DEVICE_FLEET: string[] = [];
+	static readonly DescribeDeviceFleet: string[] = [];
 	/** IAM actions required for the DescribeDomain API call. */
-	static readonly DESCRIBE_DOMAIN: string[] = ["sagemaker:DescribeDomain"];
+	static readonly DescribeDomain: string[] = ["sagemaker:DescribeDomain"];
 	/** IAM actions required for the DescribeEdgeDeploymentPlan API call. */
-	static readonly DESCRIBE_EDGE_DEPLOYMENT_PLAN: string[] = [];
+	static readonly DescribeEdgeDeploymentPlan: string[] = [];
 	/** IAM actions required for the DescribeEdgePackagingJob API call. */
-	static readonly DESCRIBE_EDGE_PACKAGING_JOB: string[] = [];
+	static readonly DescribeEdgePackagingJob: string[] = [];
 	/** IAM actions required for the DescribeEndpoint API call. */
-	static readonly DESCRIBE_ENDPOINT: string[] = ["sagemaker:DescribeEndpoint"];
+	static readonly DescribeEndpoint: string[] = ["sagemaker:DescribeEndpoint"];
 	/** IAM actions required for the DescribeEndpointConfig API call. */
-	static readonly DESCRIBE_ENDPOINT_CONFIG: string[] = [
+	static readonly DescribeEndpointConfig: string[] = [
 		"sagemaker:DescribeEndpointConfig",
 	];
 	/** IAM actions required for the DescribeExperiment API call. */
-	static readonly DESCRIBE_EXPERIMENT: string[] = [
+	static readonly DescribeExperiment: string[] = [
 		"sagemaker:DescribeExperiment",
 	];
 	/** IAM actions required for the DescribeFeatureGroup API call. */
-	static readonly DESCRIBE_FEATURE_GROUP: string[] = [
+	static readonly DescribeFeatureGroup: string[] = [
 		"sagemaker:DescribeFeatureGroup",
 	];
 	/** IAM actions required for the DescribeFeatureMetadata API call. */
-	static readonly DESCRIBE_FEATURE_METADATA: string[] = [
+	static readonly DescribeFeatureMetadata: string[] = [
 		"sagemaker:DescribeFeatureMetadata",
 	];
 	/** IAM actions required for the DescribeFlowDefinition API call. */
-	static readonly DESCRIBE_FLOW_DEFINITION: string[] = [
+	static readonly DescribeFlowDefinition: string[] = [
 		"sagemaker:DescribeFlowDefinition",
 	];
 	/** IAM actions required for the DescribeHub API call. */
-	static readonly DESCRIBE_HUB: string[] = ["sagemaker:DescribeHub"];
+	static readonly DescribeHub: string[] = ["sagemaker:DescribeHub"];
 	/** IAM actions required for the DescribeHubContent API call. */
-	static readonly DESCRIBE_HUB_CONTENT: string[] = [
+	static readonly DescribeHubContent: string[] = [
 		"sagemaker:DescribeHubContent",
 	];
 	/** IAM actions required for the DescribeHumanLoop API call. */
-	static readonly DESCRIBE_HUMAN_LOOP: string[] = [
-		"sagemaker:DescribeHumanLoop",
-	];
+	static readonly DescribeHumanLoop: string[] = ["sagemaker:DescribeHumanLoop"];
 	/** IAM actions required for the DescribeHumanTaskUi API call. */
-	static readonly DESCRIBE_HUMAN_TASK_UI: string[] = [
+	static readonly DescribeHumanTaskUi: string[] = [
 		"sagemaker:DescribeHumanTaskUi",
 	];
 	/** IAM actions required for the DescribeHyperParameterTuningJob API call. */
-	static readonly DESCRIBE_HYPER_PARAMETER_TUNING_JOB: string[] = [
+	static readonly DescribeHyperParameterTuningJob: string[] = [
 		"sagemaker:DescribeHyperParameterTuningJob",
 	];
 	/** IAM actions required for the DescribeImage API call. */
-	static readonly DESCRIBE_IMAGE: string[] = ["sagemaker:DescribeImage"];
+	static readonly DescribeImage: string[] = ["sagemaker:DescribeImage"];
 	/** IAM actions required for the DescribeImageVersion API call. */
-	static readonly DESCRIBE_IMAGE_VERSION: string[] = [
+	static readonly DescribeImageVersion: string[] = [
 		"sagemaker:DescribeImageVersion",
 	];
 	/** IAM actions required for the DescribeInferenceComponent API call. */
-	static readonly DESCRIBE_INFERENCE_COMPONENT: string[] = [
+	static readonly DescribeInferenceComponent: string[] = [
 		"sagemaker:DescribeInferenceComponent",
 	];
 	/** IAM actions required for the DescribeInferenceExperiment API call. */
-	static readonly DESCRIBE_INFERENCE_EXPERIMENT: string[] = [
+	static readonly DescribeInferenceExperiment: string[] = [
 		"sagemaker:DescribeInferenceExperiment",
 	];
 	/** IAM actions required for the DescribeInferenceRecommendationsJob API call. */
-	static readonly DESCRIBE_INFERENCE_RECOMMENDATIONS_JOB: string[] = [
+	static readonly DescribeInferenceRecommendationsJob: string[] = [
 		"sagemaker:DescribeInferenceRecommendationsJob",
 	];
 	/** IAM actions required for the DescribeJob API call. */
-	static readonly DESCRIBE_JOB: string[] = ["sagemaker:DescribeJob"];
+	static readonly DescribeJob: string[] = ["sagemaker:DescribeJob"];
 	/** IAM actions required for the DescribeJobSchemaVersion API call. */
-	static readonly DESCRIBE_JOB_SCHEMA_VERSION: string[] = [
+	static readonly DescribeJobSchemaVersion: string[] = [
 		"sagemaker:DescribeJobSchemaVersion",
 	];
 	/** IAM actions required for the DescribeLabelingJob API call. */
-	static readonly DESCRIBE_LABELING_JOB: string[] = [
+	static readonly DescribeLabelingJob: string[] = [
 		"sagemaker:DescribeLabelingJob",
 	];
 	/** IAM actions required for the DescribeLineageGroup API call. */
-	static readonly DESCRIBE_LINEAGE_GROUP: string[] = [
+	static readonly DescribeLineageGroup: string[] = [
 		"sagemaker:DescribeLineageGroup",
 	];
 	/** IAM actions required for the DescribeMlflowApp API call. */
-	static readonly DESCRIBE_MLFLOW_APP: string[] = [
-		"sagemaker:DescribeMlflowApp",
-	];
+	static readonly DescribeMlflowApp: string[] = ["sagemaker:DescribeMlflowApp"];
 	/** IAM actions required for the DescribeMlflowTrackingServer API call. */
-	static readonly DESCRIBE_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly DescribeMlflowTrackingServer: string[] = [
 		"sagemaker:DescribeMlflowTrackingServer",
 	];
 	/** IAM actions required for the DescribeModel API call. */
-	static readonly DESCRIBE_MODEL: string[] = ["sagemaker:DescribeModel"];
+	static readonly DescribeModel: string[] = ["sagemaker:DescribeModel"];
 	/** IAM actions required for the DescribeModelBiasJobDefinition API call. */
-	static readonly DESCRIBE_MODEL_BIAS_JOB_DEFINITION: string[] = [
+	static readonly DescribeModelBiasJobDefinition: string[] = [
 		"sagemaker:DescribeModelBiasJobDefinition",
 	];
 	/** IAM actions required for the DescribeModelCard API call. */
-	static readonly DESCRIBE_MODEL_CARD: string[] = [
-		"sagemaker:DescribeModelCard",
-	];
+	static readonly DescribeModelCard: string[] = ["sagemaker:DescribeModelCard"];
 	/** IAM actions required for the DescribeModelCardExportJob API call. */
-	static readonly DESCRIBE_MODEL_CARD_EXPORT_JOB: string[] = [
+	static readonly DescribeModelCardExportJob: string[] = [
 		"sagemaker:DescribeModelCardExportJob",
 	];
 	/** IAM actions required for the DescribeModelExplainabilityJobDefinition API call. */
-	static readonly DESCRIBE_MODEL_EXPLAINABILITY_JOB_DEFINITION: string[] = [
+	static readonly DescribeModelExplainabilityJobDefinition: string[] = [
 		"sagemaker:DescribeModelExplainabilityJobDefinition",
 	];
 	/** IAM actions required for the DescribeModelPackage API call. */
-	static readonly DESCRIBE_MODEL_PACKAGE: string[] = [
+	static readonly DescribeModelPackage: string[] = [
 		"sagemaker:DescribeModelPackage",
 	];
 	/** IAM actions required for the DescribeModelPackageGroup API call. */
-	static readonly DESCRIBE_MODEL_PACKAGE_GROUP: string[] = [
+	static readonly DescribeModelPackageGroup: string[] = [
 		"sagemaker:DescribeModelPackageGroup",
 	];
 	/** IAM actions required for the DescribeModelQualityJobDefinition API call. */
-	static readonly DESCRIBE_MODEL_QUALITY_JOB_DEFINITION: string[] = [
+	static readonly DescribeModelQualityJobDefinition: string[] = [
 		"sagemaker:DescribeModelQualityJobDefinition",
 	];
 	/** IAM actions required for the DescribeMonitoringSchedule API call. */
-	static readonly DESCRIBE_MONITORING_SCHEDULE: string[] = [
+	static readonly DescribeMonitoringSchedule: string[] = [
 		"sagemaker:DescribeMonitoringSchedule",
 	];
 	/** IAM actions required for the DescribeNotebookInstance API call. */
-	static readonly DESCRIBE_NOTEBOOK_INSTANCE: string[] = [
+	static readonly DescribeNotebookInstance: string[] = [
 		"sagemaker:DescribeNotebookInstance",
 	];
 	/** IAM actions required for the DescribeNotebookInstanceLifecycleConfig API call. */
-	static readonly DESCRIBE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG: string[] = [
+	static readonly DescribeNotebookInstanceLifecycleConfig: string[] = [
 		"sagemaker:DescribeNotebookInstanceLifecycleConfig",
 	];
 	/** IAM actions required for the DescribeOptimizationJob API call. */
-	static readonly DESCRIBE_OPTIMIZATION_JOB: string[] = [
+	static readonly DescribeOptimizationJob: string[] = [
 		"sagemaker:DescribeOptimizationJob",
 	];
 	/** IAM actions required for the DescribePartnerApp API call. */
-	static readonly DESCRIBE_PARTNER_APP: string[] = [
+	static readonly DescribePartnerApp: string[] = [
 		"sagemaker:DescribePartnerApp",
 	];
 	/** IAM actions required for the DescribePipeline API call. */
-	static readonly DESCRIBE_PIPELINE: string[] = ["sagemaker:DescribePipeline"];
+	static readonly DescribePipeline: string[] = ["sagemaker:DescribePipeline"];
 	/** IAM actions required for the DescribePipelineDefinitionForExecution API call. */
-	static readonly DESCRIBE_PIPELINE_DEFINITION_FOR_EXECUTION: string[] = [
+	static readonly DescribePipelineDefinitionForExecution: string[] = [
 		"sagemaker:DescribePipelineDefinitionForExecution",
 	];
 	/** IAM actions required for the DescribePipelineExecution API call. */
-	static readonly DESCRIBE_PIPELINE_EXECUTION: string[] = [
+	static readonly DescribePipelineExecution: string[] = [
 		"sagemaker:DescribePipelineExecution",
 	];
 	/** IAM actions required for the DescribeProcessingJob API call. */
-	static readonly DESCRIBE_PROCESSING_JOB: string[] = [
+	static readonly DescribeProcessingJob: string[] = [
 		"sagemaker:DescribeProcessingJob",
 	];
 	/** IAM actions required for the DescribeProject API call. */
-	static readonly DESCRIBE_PROJECT: string[] = ["sagemaker:DescribeProject"];
+	static readonly DescribeProject: string[] = ["sagemaker:DescribeProject"];
 	/** IAM actions required for the DescribeReservedCapacity API call. */
-	static readonly DESCRIBE_RESERVED_CAPACITY: string[] = [
+	static readonly DescribeReservedCapacity: string[] = [
 		"sagemaker:DescribeReservedCapacity",
 	];
 	/** IAM actions required for the DescribeSpace API call. */
-	static readonly DESCRIBE_SPACE: string[] = ["sagemaker:DescribeSpace"];
+	static readonly DescribeSpace: string[] = ["sagemaker:DescribeSpace"];
 	/** IAM actions required for the DescribeStudioLifecycleConfig API call. */
-	static readonly DESCRIBE_STUDIO_LIFECYCLE_CONFIG: string[] = [
+	static readonly DescribeStudioLifecycleConfig: string[] = [
 		"sagemaker:DescribeStudioLifecycleConfig",
 	];
 	/** IAM actions required for the DescribeSubscribedWorkteam API call. */
-	static readonly DESCRIBE_SUBSCRIBED_WORKTEAM: string[] = [
+	static readonly DescribeSubscribedWorkteam: string[] = [
 		"sagemaker:DescribeSubscribedWorkteam",
 	];
 	/** IAM actions required for the DescribeTrainingJob API call. */
-	static readonly DESCRIBE_TRAINING_JOB: string[] = [
+	static readonly DescribeTrainingJob: string[] = [
 		"sagemaker:DescribeTrainingJob",
 	];
 	/** IAM actions required for the DescribeTrainingPlan API call. */
-	static readonly DESCRIBE_TRAINING_PLAN: string[] = [
+	static readonly DescribeTrainingPlan: string[] = [
 		"sagemaker:DescribeTrainingPlan",
 	];
 	/** IAM actions required for the DescribeTrainingPlanExtensionHistory API call. */
-	static readonly DESCRIBE_TRAINING_PLAN_EXTENSION_HISTORY: string[] = [];
+	static readonly DescribeTrainingPlanExtensionHistory: string[] = [];
 	/** IAM actions required for the DescribeTransformJob API call. */
-	static readonly DESCRIBE_TRANSFORM_JOB: string[] = [
+	static readonly DescribeTransformJob: string[] = [
 		"sagemaker:DescribeTransformJob",
 	];
 	/** IAM actions required for the DescribeTrial API call. */
-	static readonly DESCRIBE_TRIAL: string[] = ["sagemaker:DescribeTrial"];
+	static readonly DescribeTrial: string[] = ["sagemaker:DescribeTrial"];
 	/** IAM actions required for the DescribeTrialComponent API call. */
-	static readonly DESCRIBE_TRIAL_COMPONENT: string[] = [
+	static readonly DescribeTrialComponent: string[] = [
 		"sagemaker:DescribeTrialComponent",
 	];
 	/** IAM actions required for the DescribeUserProfile API call. */
-	static readonly DESCRIBE_USER_PROFILE: string[] = [
+	static readonly DescribeUserProfile: string[] = [
 		"sagemaker:DescribeUserProfile",
 	];
 	/** IAM actions required for the DescribeWorkforce API call. */
-	static readonly DESCRIBE_WORKFORCE: string[] = [
-		"sagemaker:DescribeWorkforce",
-	];
+	static readonly DescribeWorkforce: string[] = ["sagemaker:DescribeWorkforce"];
 	/** IAM actions required for the DescribeWorkteam API call. */
-	static readonly DESCRIBE_WORKTEAM: string[] = ["sagemaker:DescribeWorkteam"];
+	static readonly DescribeWorkteam: string[] = ["sagemaker:DescribeWorkteam"];
 	/** IAM actions required for the DetachClusterNodeVolume API call. */
-	static readonly DETACH_CLUSTER_NODE_VOLUME: string[] = [
+	static readonly DetachClusterNodeVolume: string[] = [
 		"sagemaker:DetachClusterNodeVolume",
 	];
 	/** IAM actions required for the DisableSagemakerServicecatalogPortfolio API call. */
-	static readonly DISABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO: string[] = [
+	static readonly DisableSagemakerServicecatalogPortfolio: string[] = [
 		"sagemaker:DisableSagemakerServicecatalogPortfolio",
 	];
 	/** IAM actions required for the DisassociateTrialComponent API call. */
-	static readonly DISASSOCIATE_TRIAL_COMPONENT: string[] = [
+	static readonly DisassociateTrialComponent: string[] = [
 		"sagemaker:DisassociateTrialComponent",
 	];
 	/** IAM actions required for the EnableSagemakerServicecatalogPortfolio API call. */
-	static readonly ENABLE_SAGEMAKER_SERVICECATALOG_PORTFOLIO: string[] = [
+	static readonly EnableSagemakerServicecatalogPortfolio: string[] = [
 		"sagemaker:EnableSagemakerServicecatalogPortfolio",
 	];
 	/** IAM actions required for the ExtendTrainingPlan API call. */
-	static readonly EXTEND_TRAINING_PLAN: string[] = [];
+	static readonly ExtendTrainingPlan: string[] = [];
 	/** IAM actions required for the GetDeployments API call. */
-	static readonly GET_DEPLOYMENTS: string[] = [];
+	static readonly opGetDeployments: string[] = [];
 	/** IAM actions required for the GetDeviceFleetReport API call. */
-	static readonly GET_DEVICE_FLEET_REPORT: string[] = [];
+	static readonly opGetDeviceFleetReport: string[] = [];
 	/** IAM actions required for the GetDeviceRegistration API call. */
-	static readonly GET_DEVICE_REGISTRATION: string[] = [];
+	static readonly opGetDeviceRegistration: string[] = [];
 	/** IAM actions required for the GetLineageGroupPolicy API call. */
-	static readonly GET_LINEAGE_GROUP_POLICY: string[] = [
+	static readonly opGetLineageGroupPolicy: string[] = [
 		"sagemaker:GetLineageGroupPolicy",
 	];
 	/** IAM actions required for the GetModelPackageGroupPolicy API call. */
-	static readonly GET_MODEL_PACKAGE_GROUP_POLICY: string[] = [
+	static readonly opGetModelPackageGroupPolicy: string[] = [
 		"sagemaker:GetModelPackageGroupPolicy",
 	];
 	/** IAM actions required for the GetRecord API call. */
-	static readonly GET_RECORD: string[] = ["sagemaker:GetRecord"];
+	static readonly opGetRecord: string[] = ["sagemaker:GetRecord"];
 	/** IAM actions required for the GetSagemakerServicecatalogPortfolioStatus API call. */
-	static readonly GET_SAGEMAKER_SERVICECATALOG_PORTFOLIO_STATUS: string[] = [
+	static readonly opGetSagemakerServicecatalogPortfolioStatus: string[] = [
 		"sagemaker:GetSagemakerServicecatalogPortfolioStatus",
 	];
 	/** IAM actions required for the GetScalingConfigurationRecommendation API call. */
-	static readonly GET_SCALING_CONFIGURATION_RECOMMENDATION: string[] = [
+	static readonly opGetScalingConfigurationRecommendation: string[] = [
 		"sagemaker:GetScalingConfigurationRecommendation",
 	];
 	/** IAM actions required for the GetSearchSuggestions API call. */
-	static readonly GET_SEARCH_SUGGESTIONS: string[] = [
+	static readonly opGetSearchSuggestions: string[] = [
 		"sagemaker:GetSearchSuggestions",
 	];
 	/** IAM actions required for the ImportHubContent API call. */
-	static readonly IMPORT_HUB_CONTENT: string[] = [
+	static readonly ImportHubContent: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:ImportHubContent",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the InvokeEndpoint API call. */
-	static readonly INVOKE_ENDPOINT: string[] = ["sagemaker:InvokeEndpoint"];
+	static readonly InvokeEndpoint: string[] = ["sagemaker:InvokeEndpoint"];
 	/** IAM actions required for the InvokeEndpointAsync API call. */
-	static readonly INVOKE_ENDPOINT_ASYNC: string[] = [
+	static readonly InvokeEndpointAsync: string[] = [
 		"sagemaker:InvokeEndpointAsync",
 	];
 	/** IAM actions required for the InvokeEndpointWithResponseStream API call. */
-	static readonly INVOKE_ENDPOINT_WITH_RESPONSE_STREAM: string[] = [
+	static readonly InvokeEndpointWithResponseStream: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:InvokeEndpoint",
 	];
 	/** IAM actions required for the ListAIBenchmarkJobs API call. */
-	static readonly LIST_AI_BENCHMARK_JOBS: string[] = [
+	static readonly ListAIBenchmarkJobs: string[] = [
 		"sagemaker:ListAIBenchmarkJobs",
 	];
 	/** IAM actions required for the ListAIRecommendationJobs API call. */
-	static readonly LIST_AI_RECOMMENDATION_JOBS: string[] = [
+	static readonly ListAIRecommendationJobs: string[] = [
 		"sagemaker:ListAIRecommendationJobs",
 	];
 	/** IAM actions required for the ListAIWorkloadConfigs API call. */
-	static readonly LIST_AI_WORKLOAD_CONFIGS: string[] = [
+	static readonly ListAIWorkloadConfigs: string[] = [
 		"sagemaker:ListAIWorkloadConfigs",
 	];
 	/** IAM actions required for the ListActions API call. */
-	static readonly LIST_ACTIONS: string[] = ["sagemaker:ListActions"];
+	static readonly ListActions: string[] = ["sagemaker:ListActions"];
 	/** IAM actions required for the ListAlgorithms API call. */
-	static readonly LIST_ALGORITHMS: string[] = ["sagemaker:ListAlgorithms"];
+	static readonly ListAlgorithms: string[] = ["sagemaker:ListAlgorithms"];
 	/** IAM actions required for the ListAliases API call. */
-	static readonly LIST_ALIASES: string[] = ["sagemaker:ListAliases"];
+	static readonly ListAliases: string[] = ["sagemaker:ListAliases"];
 	/** IAM actions required for the ListAppImageConfigs API call. */
-	static readonly LIST_APP_IMAGE_CONFIGS: string[] = [
+	static readonly ListAppImageConfigs: string[] = [
 		"sagemaker:ListAppImageConfigs",
 	];
 	/** IAM actions required for the ListApps API call. */
-	static readonly LIST_APPS: string[] = ["sagemaker:ListApps"];
+	static readonly ListApps: string[] = ["sagemaker:ListApps"];
 	/** IAM actions required for the ListArtifacts API call. */
-	static readonly LIST_ARTIFACTS: string[] = ["sagemaker:ListArtifacts"];
+	static readonly ListArtifacts: string[] = ["sagemaker:ListArtifacts"];
 	/** IAM actions required for the ListAssociations API call. */
-	static readonly LIST_ASSOCIATIONS: string[] = ["sagemaker:ListAssociations"];
+	static readonly ListAssociations: string[] = ["sagemaker:ListAssociations"];
 	/** IAM actions required for the ListAutoMLJobs API call. */
-	static readonly LIST_AUTO_ML_JOBS: string[] = ["sagemaker:ListAutoMLJobs"];
+	static readonly ListAutoMLJobs: string[] = ["sagemaker:ListAutoMLJobs"];
 	/** IAM actions required for the ListCandidatesForAutoMLJob API call. */
-	static readonly LIST_CANDIDATES_FOR_AUTO_ML_JOB: string[] = [
+	static readonly ListCandidatesForAutoMLJob: string[] = [
 		"sagemaker:ListCandidatesForAutoMLJob",
 	];
 	/** IAM actions required for the ListClusterEvents API call. */
-	static readonly LIST_CLUSTER_EVENTS: string[] = [
-		"sagemaker:ListClusterEvents",
-	];
+	static readonly ListClusterEvents: string[] = ["sagemaker:ListClusterEvents"];
 	/** IAM actions required for the ListClusterNodes API call. */
-	static readonly LIST_CLUSTER_NODES: string[] = ["sagemaker:ListClusterNodes"];
+	static readonly ListClusterNodes: string[] = ["sagemaker:ListClusterNodes"];
 	/** IAM actions required for the ListClusterSchedulerConfigs API call. */
-	static readonly LIST_CLUSTER_SCHEDULER_CONFIGS: string[] = [
+	static readonly ListClusterSchedulerConfigs: string[] = [
 		"sagemaker:ListClusterSchedulerConfigs",
 	];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["sagemaker:ListClusters"];
+	static readonly ListClusters: string[] = ["sagemaker:ListClusters"];
 	/** IAM actions required for the ListCodeRepositories API call. */
-	static readonly LIST_CODE_REPOSITORIES: string[] = [
+	static readonly ListCodeRepositories: string[] = [
 		"sagemaker:ListCodeRepositories",
 	];
 	/** IAM actions required for the ListCompilationJobs API call. */
-	static readonly LIST_COMPILATION_JOBS: string[] = [
+	static readonly ListCompilationJobs: string[] = [
 		"sagemaker:ListCompilationJobs",
 	];
 	/** IAM actions required for the ListComputeQuotas API call. */
-	static readonly LIST_COMPUTE_QUOTAS: string[] = [
-		"sagemaker:ListComputeQuotas",
-	];
+	static readonly ListComputeQuotas: string[] = ["sagemaker:ListComputeQuotas"];
 	/** IAM actions required for the ListContexts API call. */
-	static readonly LIST_CONTEXTS: string[] = ["sagemaker:ListContexts"];
+	static readonly ListContexts: string[] = ["sagemaker:ListContexts"];
 	/** IAM actions required for the ListDataQualityJobDefinitions API call. */
-	static readonly LIST_DATA_QUALITY_JOB_DEFINITIONS: string[] = [
+	static readonly ListDataQualityJobDefinitions: string[] = [
 		"sagemaker:ListDataQualityJobDefinitions",
 	];
 	/** IAM actions required for the ListDeviceFleets API call. */
-	static readonly LIST_DEVICE_FLEETS: string[] = [];
+	static readonly ListDeviceFleets: string[] = [];
 	/** IAM actions required for the ListDevices API call. */
-	static readonly LIST_DEVICES: string[] = [];
+	static readonly ListDevices: string[] = [];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = ["sagemaker:ListDomains"];
+	static readonly ListDomains: string[] = ["sagemaker:ListDomains"];
 	/** IAM actions required for the ListEdgeDeploymentPlans API call. */
-	static readonly LIST_EDGE_DEPLOYMENT_PLANS: string[] = [];
+	static readonly ListEdgeDeploymentPlans: string[] = [];
 	/** IAM actions required for the ListEdgePackagingJobs API call. */
-	static readonly LIST_EDGE_PACKAGING_JOBS: string[] = [];
+	static readonly ListEdgePackagingJobs: string[] = [];
 	/** IAM actions required for the ListEndpointConfigs API call. */
-	static readonly LIST_ENDPOINT_CONFIGS: string[] = [
+	static readonly ListEndpointConfigs: string[] = [
 		"sagemaker:ListEndpointConfigs",
 	];
 	/** IAM actions required for the ListEndpoints API call. */
-	static readonly LIST_ENDPOINTS: string[] = ["sagemaker:ListEndpoints"];
+	static readonly ListEndpoints: string[] = ["sagemaker:ListEndpoints"];
 	/** IAM actions required for the ListExperiments API call. */
-	static readonly LIST_EXPERIMENTS: string[] = ["sagemaker:ListExperiments"];
+	static readonly ListExperiments: string[] = ["sagemaker:ListExperiments"];
 	/** IAM actions required for the ListFeatureGroups API call. */
-	static readonly LIST_FEATURE_GROUPS: string[] = [
-		"sagemaker:ListFeatureGroups",
-	];
+	static readonly ListFeatureGroups: string[] = ["sagemaker:ListFeatureGroups"];
 	/** IAM actions required for the ListFlowDefinitions API call. */
-	static readonly LIST_FLOW_DEFINITIONS: string[] = [
+	static readonly ListFlowDefinitions: string[] = [
 		"sagemaker:ListFlowDefinitions",
 	];
 	/** IAM actions required for the ListHubContentVersions API call. */
-	static readonly LIST_HUB_CONTENT_VERSIONS: string[] = [
+	static readonly ListHubContentVersions: string[] = [
 		"sagemaker:ListHubContentVersions",
 	];
 	/** IAM actions required for the ListHubContents API call. */
-	static readonly LIST_HUB_CONTENTS: string[] = ["sagemaker:ListHubContents"];
+	static readonly ListHubContents: string[] = ["sagemaker:ListHubContents"];
 	/** IAM actions required for the ListHubs API call. */
-	static readonly LIST_HUBS: string[] = ["sagemaker:ListHubs"];
+	static readonly ListHubs: string[] = ["sagemaker:ListHubs"];
 	/** IAM actions required for the ListHumanLoops API call. */
-	static readonly LIST_HUMAN_LOOPS: string[] = ["sagemaker:ListHumanLoops"];
+	static readonly ListHumanLoops: string[] = ["sagemaker:ListHumanLoops"];
 	/** IAM actions required for the ListHumanTaskUis API call. */
-	static readonly LIST_HUMAN_TASK_UIS: string[] = [
-		"sagemaker:ListHumanTaskUis",
-	];
+	static readonly ListHumanTaskUis: string[] = ["sagemaker:ListHumanTaskUis"];
 	/** IAM actions required for the ListHyperParameterTuningJobs API call. */
-	static readonly LIST_HYPER_PARAMETER_TUNING_JOBS: string[] = [
+	static readonly ListHyperParameterTuningJobs: string[] = [
 		"sagemaker:ListHyperParameterTuningJobs",
 	];
 	/** IAM actions required for the ListImageVersions API call. */
-	static readonly LIST_IMAGE_VERSIONS: string[] = [
-		"sagemaker:ListImageVersions",
-	];
+	static readonly ListImageVersions: string[] = ["sagemaker:ListImageVersions"];
 	/** IAM actions required for the ListImages API call. */
-	static readonly LIST_IMAGES: string[] = ["sagemaker:ListImages"];
+	static readonly ListImages: string[] = ["sagemaker:ListImages"];
 	/** IAM actions required for the ListInferenceComponents API call. */
-	static readonly LIST_INFERENCE_COMPONENTS: string[] = [
+	static readonly ListInferenceComponents: string[] = [
 		"sagemaker:ListInferenceComponents",
 	];
 	/** IAM actions required for the ListInferenceExperiments API call. */
-	static readonly LIST_INFERENCE_EXPERIMENTS: string[] = [
+	static readonly ListInferenceExperiments: string[] = [
 		"sagemaker:ListInferenceExperiments",
 	];
 	/** IAM actions required for the ListInferenceRecommendationsJobSteps API call. */
-	static readonly LIST_INFERENCE_RECOMMENDATIONS_JOB_STEPS: string[] = [
+	static readonly ListInferenceRecommendationsJobSteps: string[] = [
 		"sagemaker:ListInferenceRecommendationsJobSteps",
 	];
 	/** IAM actions required for the ListInferenceRecommendationsJobs API call. */
-	static readonly LIST_INFERENCE_RECOMMENDATIONS_JOBS: string[] = [
+	static readonly ListInferenceRecommendationsJobs: string[] = [
 		"sagemaker:ListInferenceRecommendationsJobs",
 	];
 	/** IAM actions required for the ListJobSchemaVersions API call. */
-	static readonly LIST_JOB_SCHEMA_VERSIONS: string[] = [
+	static readonly ListJobSchemaVersions: string[] = [
 		"sagemaker:ListJobSchemaVersions",
 	];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["sagemaker:ListJobs"];
+	static readonly ListJobs: string[] = ["sagemaker:ListJobs"];
 	/** IAM actions required for the ListLabelingJobs API call. */
-	static readonly LIST_LABELING_JOBS: string[] = ["sagemaker:ListLabelingJobs"];
+	static readonly ListLabelingJobs: string[] = ["sagemaker:ListLabelingJobs"];
 	/** IAM actions required for the ListLabelingJobsForWorkteam API call. */
-	static readonly LIST_LABELING_JOBS_FOR_WORKTEAM: string[] = [
+	static readonly ListLabelingJobsForWorkteam: string[] = [
 		"sagemaker:ListLabelingJobsForWorkteam",
 	];
 	/** IAM actions required for the ListLineageGroups API call. */
-	static readonly LIST_LINEAGE_GROUPS: string[] = [
-		"sagemaker:ListLineageGroups",
-	];
+	static readonly ListLineageGroups: string[] = ["sagemaker:ListLineageGroups"];
 	/** IAM actions required for the ListMlflowApps API call. */
-	static readonly LIST_MLFLOW_APPS: string[] = ["sagemaker:ListMlflowApps"];
+	static readonly ListMlflowApps: string[] = ["sagemaker:ListMlflowApps"];
 	/** IAM actions required for the ListMlflowTrackingServers API call. */
-	static readonly LIST_MLFLOW_TRACKING_SERVERS: string[] = [
+	static readonly ListMlflowTrackingServers: string[] = [
 		"sagemaker:ListMlflowTrackingServers",
 	];
 	/** IAM actions required for the ListModelBiasJobDefinitions API call. */
-	static readonly LIST_MODEL_BIAS_JOB_DEFINITIONS: string[] = [
+	static readonly ListModelBiasJobDefinitions: string[] = [
 		"sagemaker:ListModelBiasJobDefinitions",
 	];
 	/** IAM actions required for the ListModelCardExportJobs API call. */
-	static readonly LIST_MODEL_CARD_EXPORT_JOBS: string[] = [
+	static readonly ListModelCardExportJobs: string[] = [
 		"sagemaker:ListModelCardExportJobs",
 	];
 	/** IAM actions required for the ListModelCardVersions API call. */
-	static readonly LIST_MODEL_CARD_VERSIONS: string[] = [
+	static readonly ListModelCardVersions: string[] = [
 		"sagemaker:ListModelCardVersions",
 	];
 	/** IAM actions required for the ListModelCards API call. */
-	static readonly LIST_MODEL_CARDS: string[] = ["sagemaker:ListModelCards"];
+	static readonly ListModelCards: string[] = ["sagemaker:ListModelCards"];
 	/** IAM actions required for the ListModelExplainabilityJobDefinitions API call. */
-	static readonly LIST_MODEL_EXPLAINABILITY_JOB_DEFINITIONS: string[] = [
+	static readonly ListModelExplainabilityJobDefinitions: string[] = [
 		"sagemaker:ListModelExplainabilityJobDefinitions",
 	];
 	/** IAM actions required for the ListModelMetadata API call. */
-	static readonly LIST_MODEL_METADATA: string[] = [
-		"sagemaker:ListModelMetadata",
-	];
+	static readonly ListModelMetadata: string[] = ["sagemaker:ListModelMetadata"];
 	/** IAM actions required for the ListModelPackageGroups API call. */
-	static readonly LIST_MODEL_PACKAGE_GROUPS: string[] = [
+	static readonly ListModelPackageGroups: string[] = [
 		"sagemaker:ListModelPackageGroups",
 	];
 	/** IAM actions required for the ListModelPackages API call. */
-	static readonly LIST_MODEL_PACKAGES: string[] = [
-		"sagemaker:ListModelPackages",
-	];
+	static readonly ListModelPackages: string[] = ["sagemaker:ListModelPackages"];
 	/** IAM actions required for the ListModelQualityJobDefinitions API call. */
-	static readonly LIST_MODEL_QUALITY_JOB_DEFINITIONS: string[] = [
+	static readonly ListModelQualityJobDefinitions: string[] = [
 		"sagemaker:ListModelQualityJobDefinitions",
 	];
 	/** IAM actions required for the ListModels API call. */
-	static readonly LIST_MODELS: string[] = ["sagemaker:ListModels"];
+	static readonly ListModels: string[] = ["sagemaker:ListModels"];
 	/** IAM actions required for the ListMonitoringAlertHistory API call. */
-	static readonly LIST_MONITORING_ALERT_HISTORY: string[] = [
+	static readonly ListMonitoringAlertHistory: string[] = [
 		"sagemaker:ListMonitoringAlertHistory",
 	];
 	/** IAM actions required for the ListMonitoringAlerts API call. */
-	static readonly LIST_MONITORING_ALERTS: string[] = [
+	static readonly ListMonitoringAlerts: string[] = [
 		"sagemaker:ListMonitoringAlerts",
 	];
 	/** IAM actions required for the ListMonitoringExecutions API call. */
-	static readonly LIST_MONITORING_EXECUTIONS: string[] = [
+	static readonly ListMonitoringExecutions: string[] = [
 		"sagemaker:ListMonitoringExecutions",
 	];
 	/** IAM actions required for the ListMonitoringSchedules API call. */
-	static readonly LIST_MONITORING_SCHEDULES: string[] = [
+	static readonly ListMonitoringSchedules: string[] = [
 		"sagemaker:ListMonitoringSchedules",
 	];
 	/** IAM actions required for the ListNotebookInstanceLifecycleConfigs API call. */
-	static readonly LIST_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIGS: string[] = [
+	static readonly ListNotebookInstanceLifecycleConfigs: string[] = [
 		"sagemaker:ListNotebookInstanceLifecycleConfigs",
 	];
 	/** IAM actions required for the ListNotebookInstances API call. */
-	static readonly LIST_NOTEBOOK_INSTANCES: string[] = [
+	static readonly ListNotebookInstances: string[] = [
 		"sagemaker:ListNotebookInstances",
 	];
 	/** IAM actions required for the ListOptimizationJobs API call. */
-	static readonly LIST_OPTIMIZATION_JOBS: string[] = [
+	static readonly ListOptimizationJobs: string[] = [
 		"sagemaker:ListOptimizationJobs",
 	];
 	/** IAM actions required for the ListPartnerApps API call. */
-	static readonly LIST_PARTNER_APPS: string[] = ["sagemaker:ListPartnerApps"];
+	static readonly ListPartnerApps: string[] = ["sagemaker:ListPartnerApps"];
 	/** IAM actions required for the ListPipelineExecutionSteps API call. */
-	static readonly LIST_PIPELINE_EXECUTION_STEPS: string[] = [
+	static readonly ListPipelineExecutionSteps: string[] = [
 		"sagemaker:ListPipelineExecutionSteps",
 	];
 	/** IAM actions required for the ListPipelineExecutions API call. */
-	static readonly LIST_PIPELINE_EXECUTIONS: string[] = [
+	static readonly ListPipelineExecutions: string[] = [
 		"sagemaker:ListPipelineExecutions",
 	];
 	/** IAM actions required for the ListPipelineParametersForExecution API call. */
-	static readonly LIST_PIPELINE_PARAMETERS_FOR_EXECUTION: string[] = [
+	static readonly ListPipelineParametersForExecution: string[] = [
 		"sagemaker:ListPipelineParametersForExecution",
 	];
 	/** IAM actions required for the ListPipelineVersions API call. */
-	static readonly LIST_PIPELINE_VERSIONS: string[] = [
+	static readonly ListPipelineVersions: string[] = [
 		"sagemaker:ListPipelineVersions",
 	];
 	/** IAM actions required for the ListPipelines API call. */
-	static readonly LIST_PIPELINES: string[] = ["sagemaker:ListPipelines"];
+	static readonly ListPipelines: string[] = ["sagemaker:ListPipelines"];
 	/** IAM actions required for the ListProcessingJobs API call. */
-	static readonly LIST_PROCESSING_JOBS: string[] = [
+	static readonly ListProcessingJobs: string[] = [
 		"sagemaker:ListProcessingJobs",
 	];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly LIST_PROJECTS: string[] = ["sagemaker:ListProjects"];
+	static readonly ListProjects: string[] = ["sagemaker:ListProjects"];
 	/** IAM actions required for the ListRecords API call. */
-	static readonly LIST_RECORDS: string[] = ["sagemaker:ListRecords"];
+	static readonly ListRecords: string[] = ["sagemaker:ListRecords"];
 	/** IAM actions required for the ListResourceCatalogs API call. */
-	static readonly LIST_RESOURCE_CATALOGS: string[] = [
+	static readonly ListResourceCatalogs: string[] = [
 		"sagemaker:ListResourceCatalogs",
 	];
 	/** IAM actions required for the ListSpaces API call. */
-	static readonly LIST_SPACES: string[] = ["sagemaker:ListSpaces"];
+	static readonly ListSpaces: string[] = ["sagemaker:ListSpaces"];
 	/** IAM actions required for the ListStageDevices API call. */
-	static readonly LIST_STAGE_DEVICES: string[] = [];
+	static readonly ListStageDevices: string[] = [];
 	/** IAM actions required for the ListStudioLifecycleConfigs API call. */
-	static readonly LIST_STUDIO_LIFECYCLE_CONFIGS: string[] = [
+	static readonly ListStudioLifecycleConfigs: string[] = [
 		"sagemaker:ListStudioLifecycleConfigs",
 	];
 	/** IAM actions required for the ListSubscribedWorkteams API call. */
-	static readonly LIST_SUBSCRIBED_WORKTEAMS: string[] = [
+	static readonly ListSubscribedWorkteams: string[] = [
 		"sagemaker:ListSubscribedWorkteams",
 	];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["sagemaker:ListTags"];
+	static readonly ListTags: string[] = ["sagemaker:ListTags"];
 	/** IAM actions required for the ListTrainingJobs API call. */
-	static readonly LIST_TRAINING_JOBS: string[] = ["sagemaker:ListTrainingJobs"];
+	static readonly ListTrainingJobs: string[] = ["sagemaker:ListTrainingJobs"];
 	/** IAM actions required for the ListTrainingJobsForHyperParameterTuningJob API call. */
-	static readonly LIST_TRAINING_JOBS_FOR_HYPER_PARAMETER_TUNING_JOB: string[] =
-		["sagemaker:ListTrainingJobsForHyperParameterTuningJob"];
+	static readonly ListTrainingJobsForHyperParameterTuningJob: string[] = [
+		"sagemaker:ListTrainingJobsForHyperParameterTuningJob",
+	];
 	/** IAM actions required for the ListTrainingPlans API call. */
-	static readonly LIST_TRAINING_PLANS: string[] = [
-		"sagemaker:ListTrainingPlans",
-	];
+	static readonly ListTrainingPlans: string[] = ["sagemaker:ListTrainingPlans"];
 	/** IAM actions required for the ListTransformJobs API call. */
-	static readonly LIST_TRANSFORM_JOBS: string[] = [
-		"sagemaker:ListTransformJobs",
-	];
+	static readonly ListTransformJobs: string[] = ["sagemaker:ListTransformJobs"];
 	/** IAM actions required for the ListTrialComponents API call. */
-	static readonly LIST_TRIAL_COMPONENTS: string[] = [
+	static readonly ListTrialComponents: string[] = [
 		"sagemaker:ListTrialComponents",
 	];
 	/** IAM actions required for the ListTrials API call. */
-	static readonly LIST_TRIALS: string[] = ["sagemaker:ListTrials"];
+	static readonly ListTrials: string[] = ["sagemaker:ListTrials"];
 	/** IAM actions required for the ListUltraServersByReservedCapacity API call. */
-	static readonly LIST_ULTRA_SERVERS_BY_RESERVED_CAPACITY: string[] = [
+	static readonly ListUltraServersByReservedCapacity: string[] = [
 		"sagemaker:ListUltraServersByReservedCapacity",
 	];
 	/** IAM actions required for the ListUserProfiles API call. */
-	static readonly LIST_USER_PROFILES: string[] = ["sagemaker:ListUserProfiles"];
+	static readonly ListUserProfiles: string[] = ["sagemaker:ListUserProfiles"];
 	/** IAM actions required for the ListWorkforces API call. */
-	static readonly LIST_WORKFORCES: string[] = ["sagemaker:ListWorkforces"];
+	static readonly ListWorkforces: string[] = ["sagemaker:ListWorkforces"];
 	/** IAM actions required for the ListWorkteams API call. */
-	static readonly LIST_WORKTEAMS: string[] = ["sagemaker:ListWorkteams"];
+	static readonly ListWorkteams: string[] = ["sagemaker:ListWorkteams"];
 	/** IAM actions required for the PutModelPackageGroupPolicy API call. */
-	static readonly PUT_MODEL_PACKAGE_GROUP_POLICY: string[] = [
+	static readonly PutModelPackageGroupPolicy: string[] = [
 		"sagemaker:PutModelPackageGroupPolicy",
 	];
 	/** IAM actions required for the PutRecord API call. */
-	static readonly PUT_RECORD: string[] = ["sagemaker:PutRecord"];
+	static readonly PutRecord: string[] = ["sagemaker:PutRecord"];
 	/** IAM actions required for the QueryLineage API call. */
-	static readonly QUERY_LINEAGE: string[] = ["sagemaker:QueryLineage"];
+	static readonly QueryLineage: string[] = ["sagemaker:QueryLineage"];
 	/** IAM actions required for the RegisterDevices API call. */
-	static readonly REGISTER_DEVICES: string[] = [];
+	static readonly RegisterDevices: string[] = [];
 	/** IAM actions required for the RenderUiTemplate API call. */
-	static readonly RENDER_UI_TEMPLATE: string[] = [
+	static readonly RenderUiTemplate: string[] = [
 		"iam:PassRole",
 		"sagemaker:RenderUiTemplate",
 	];
 	/** IAM actions required for the RetryPipelineExecution API call. */
-	static readonly RETRY_PIPELINE_EXECUTION: string[] = [
+	static readonly RetryPipelineExecution: string[] = [
 		"sagemaker:RetryPipelineExecution",
 	];
 	/** IAM actions required for the Sample API call. */
-	static readonly SAMPLE: string[] = [
+	static readonly Sample: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:Sample",
 	];
 	/** IAM actions required for the SampleWithResponseStream API call. */
-	static readonly SAMPLE_WITH_RESPONSE_STREAM: string[] = [
+	static readonly SampleWithResponseStream: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:SampleWithResponseStream",
 	];
 	/** IAM actions required for the Search API call. */
-	static readonly SEARCH: string[] = ["sagemaker:Search"];
+	static readonly Search: string[] = ["sagemaker:Search"];
 	/** IAM actions required for the SearchTrainingPlanOfferings API call. */
-	static readonly SEARCH_TRAINING_PLAN_OFFERINGS: string[] = [
+	static readonly SearchTrainingPlanOfferings: string[] = [
 		"sagemaker:SearchTrainingPlanOfferings",
 	];
 	/** IAM actions required for the SendHeartbeat API call. */
-	static readonly SEND_HEARTBEAT: string[] = [];
+	static readonly SendHeartbeat: string[] = [];
 	/** IAM actions required for the SendPipelineExecutionStepFailure API call. */
-	static readonly SEND_PIPELINE_EXECUTION_STEP_FAILURE: string[] = [
+	static readonly SendPipelineExecutionStepFailure: string[] = [
 		"sagemaker:SendPipelineExecutionStepFailure",
 	];
 	/** IAM actions required for the SendPipelineExecutionStepSuccess API call. */
-	static readonly SEND_PIPELINE_EXECUTION_STEP_SUCCESS: string[] = [
+	static readonly SendPipelineExecutionStepSuccess: string[] = [
 		"sagemaker:SendPipelineExecutionStepSuccess",
 	];
 	/** IAM actions required for the StartClusterHealthCheck API call. */
-	static readonly START_CLUSTER_HEALTH_CHECK: string[] = [
+	static readonly StartClusterHealthCheck: string[] = [
 		"sagemaker:StartClusterHealthCheck",
 	];
 	/** IAM actions required for the StartEdgeDeploymentStage API call. */
-	static readonly START_EDGE_DEPLOYMENT_STAGE: string[] = [];
+	static readonly StartEdgeDeploymentStage: string[] = [];
 	/** IAM actions required for the StartHumanLoop API call. */
-	static readonly START_HUMAN_LOOP: string[] = ["sagemaker:StartHumanLoop"];
+	static readonly StartHumanLoop: string[] = ["sagemaker:StartHumanLoop"];
 	/** IAM actions required for the StartInferenceExperiment API call. */
-	static readonly START_INFERENCE_EXPERIMENT: string[] = [
+	static readonly StartInferenceExperiment: string[] = [
 		"sagemaker:StartInferenceExperiment",
 	];
 	/** IAM actions required for the StartMlflowTrackingServer API call. */
-	static readonly START_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly StartMlflowTrackingServer: string[] = [
 		"sagemaker:StartMlflowTrackingServer",
 	];
 	/** IAM actions required for the StartMonitoringSchedule API call. */
-	static readonly START_MONITORING_SCHEDULE: string[] = [
+	static readonly StartMonitoringSchedule: string[] = [
 		"sagemaker:StartMonitoringSchedule",
 	];
 	/** IAM actions required for the StartNotebookInstance API call. */
-	static readonly START_NOTEBOOK_INSTANCE: string[] = [
+	static readonly StartNotebookInstance: string[] = [
 		"sagemaker:StartNotebookInstance",
 	];
 	/** IAM actions required for the StartPipelineExecution API call. */
-	static readonly START_PIPELINE_EXECUTION: string[] = [
+	static readonly StartPipelineExecution: string[] = [
 		"sagemaker:StartPipelineExecution",
 	];
 	/** IAM actions required for the StartSession API call. */
-	static readonly START_SESSION: string[] = ["sagemaker:StartSession"];
+	static readonly StartSession: string[] = ["sagemaker:StartSession"];
 	/** IAM actions required for the StopAIBenchmarkJob API call. */
-	static readonly STOP_AI_BENCHMARK_JOB: string[] = [
+	static readonly StopAIBenchmarkJob: string[] = [
 		"sagemaker:StopAIBenchmarkJob",
 	];
 	/** IAM actions required for the StopAIRecommendationJob API call. */
-	static readonly STOP_AI_RECOMMENDATION_JOB: string[] = [
+	static readonly StopAIRecommendationJob: string[] = [
 		"sagemaker:StopAIRecommendationJob",
 	];
 	/** IAM actions required for the StopAutoMLJob API call. */
-	static readonly STOP_AUTO_ML_JOB: string[] = ["sagemaker:StopAutoMLJob"];
+	static readonly StopAutoMLJob: string[] = ["sagemaker:StopAutoMLJob"];
 	/** IAM actions required for the StopCompilationJob API call. */
-	static readonly STOP_COMPILATION_JOB: string[] = [
+	static readonly StopCompilationJob: string[] = [
 		"sagemaker:StopCompilationJob",
 	];
 	/** IAM actions required for the StopEdgeDeploymentStage API call. */
-	static readonly STOP_EDGE_DEPLOYMENT_STAGE: string[] = [];
+	static readonly StopEdgeDeploymentStage: string[] = [];
 	/** IAM actions required for the StopEdgePackagingJob API call. */
-	static readonly STOP_EDGE_PACKAGING_JOB: string[] = [];
+	static readonly StopEdgePackagingJob: string[] = [];
 	/** IAM actions required for the StopHumanLoop API call. */
-	static readonly STOP_HUMAN_LOOP: string[] = ["sagemaker:StopHumanLoop"];
+	static readonly StopHumanLoop: string[] = ["sagemaker:StopHumanLoop"];
 	/** IAM actions required for the StopHyperParameterTuningJob API call. */
-	static readonly STOP_HYPER_PARAMETER_TUNING_JOB: string[] = [
+	static readonly StopHyperParameterTuningJob: string[] = [
 		"sagemaker:StopHyperParameterTuningJob",
 	];
 	/** IAM actions required for the StopInferenceExperiment API call. */
-	static readonly STOP_INFERENCE_EXPERIMENT: string[] = [
+	static readonly StopInferenceExperiment: string[] = [
 		"sagemaker:StopInferenceExperiment",
 	];
 	/** IAM actions required for the StopInferenceRecommendationsJob API call. */
-	static readonly STOP_INFERENCE_RECOMMENDATIONS_JOB: string[] = [
+	static readonly StopInferenceRecommendationsJob: string[] = [
 		"sagemaker:StopInferenceRecommendationsJob",
 	];
 	/** IAM actions required for the StopJob API call. */
-	static readonly STOP_JOB: string[] = ["sagemaker:StopJob"];
+	static readonly StopJob: string[] = ["sagemaker:StopJob"];
 	/** IAM actions required for the StopLabelingJob API call. */
-	static readonly STOP_LABELING_JOB: string[] = ["sagemaker:StopLabelingJob"];
+	static readonly StopLabelingJob: string[] = ["sagemaker:StopLabelingJob"];
 	/** IAM actions required for the StopMlflowTrackingServer API call. */
-	static readonly STOP_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly StopMlflowTrackingServer: string[] = [
 		"sagemaker:StopMlflowTrackingServer",
 	];
 	/** IAM actions required for the StopMonitoringSchedule API call. */
-	static readonly STOP_MONITORING_SCHEDULE: string[] = [
+	static readonly StopMonitoringSchedule: string[] = [
 		"sagemaker:StopMonitoringSchedule",
 	];
 	/** IAM actions required for the StopNotebookInstance API call. */
-	static readonly STOP_NOTEBOOK_INSTANCE: string[] = [
+	static readonly StopNotebookInstance: string[] = [
 		"sagemaker:StopNotebookInstance",
 	];
 	/** IAM actions required for the StopOptimizationJob API call. */
-	static readonly STOP_OPTIMIZATION_JOB: string[] = [
+	static readonly StopOptimizationJob: string[] = [
 		"sagemaker:StopOptimizationJob",
 	];
 	/** IAM actions required for the StopPipelineExecution API call. */
-	static readonly STOP_PIPELINE_EXECUTION: string[] = [
+	static readonly StopPipelineExecution: string[] = [
 		"sagemaker:StopPipelineExecution",
 	];
 	/** IAM actions required for the StopProcessingJob API call. */
-	static readonly STOP_PROCESSING_JOB: string[] = [
-		"sagemaker:StopProcessingJob",
-	];
+	static readonly StopProcessingJob: string[] = ["sagemaker:StopProcessingJob"];
 	/** IAM actions required for the StopTrainingJob API call. */
-	static readonly STOP_TRAINING_JOB: string[] = ["sagemaker:StopTrainingJob"];
+	static readonly StopTrainingJob: string[] = ["sagemaker:StopTrainingJob"];
 	/** IAM actions required for the StopTransformJob API call. */
-	static readonly STOP_TRANSFORM_JOB: string[] = ["sagemaker:StopTransformJob"];
+	static readonly StopTransformJob: string[] = ["sagemaker:StopTransformJob"];
 	/** IAM actions required for the UpdateAction API call. */
-	static readonly UPDATE_ACTION: string[] = ["sagemaker:UpdateAction"];
+	static readonly UpdateAction: string[] = ["sagemaker:UpdateAction"];
 	/** IAM actions required for the UpdateAppImageConfig API call. */
-	static readonly UPDATE_APP_IMAGE_CONFIG: string[] = [
+	static readonly UpdateAppImageConfig: string[] = [
 		"sagemaker:UpdateAppImageConfig",
 	];
 	/** IAM actions required for the UpdateArtifact API call. */
-	static readonly UPDATE_ARTIFACT: string[] = ["sagemaker:UpdateArtifact"];
+	static readonly UpdateArtifact: string[] = ["sagemaker:UpdateArtifact"];
 	/** IAM actions required for the UpdateCluster API call. */
-	static readonly UPDATE_CLUSTER: string[] = [
+	static readonly UpdateCluster: string[] = [
 		"sagemaker:BatchAddClusterNodes",
 		"sagemaker:BatchDeleteClusterNodes",
 		"iam:PassRole",
@@ -6477,156 +7479,154 @@ export class SageMakerOperations {
 		"sagemaker:UpdateClusterSoftware",
 	];
 	/** IAM actions required for the UpdateClusterSchedulerConfig API call. */
-	static readonly UPDATE_CLUSTER_SCHEDULER_CONFIG: string[] = [
+	static readonly UpdateClusterSchedulerConfig: string[] = [
 		"sagemaker:UpdateClusterSchedulerConfig",
 	];
 	/** IAM actions required for the UpdateClusterSoftware API call. */
-	static readonly UPDATE_CLUSTER_SOFTWARE: string[] = [
+	static readonly UpdateClusterSoftware: string[] = [
 		"sagemaker:UpdateClusterSoftware",
 	];
 	/** IAM actions required for the UpdateCodeRepository API call. */
-	static readonly UPDATE_CODE_REPOSITORY: string[] = [
+	static readonly UpdateCodeRepository: string[] = [
 		"sagemaker:UpdateCodeRepository",
 	];
 	/** IAM actions required for the UpdateComputeQuota API call. */
-	static readonly UPDATE_COMPUTE_QUOTA: string[] = [
+	static readonly UpdateComputeQuota: string[] = [
 		"sagemaker:UpdateComputeQuota",
 	];
 	/** IAM actions required for the UpdateContext API call. */
-	static readonly UPDATE_CONTEXT: string[] = ["sagemaker:UpdateContext"];
+	static readonly UpdateContext: string[] = ["sagemaker:UpdateContext"];
 	/** IAM actions required for the UpdateDeviceFleet API call. */
-	static readonly UPDATE_DEVICE_FLEET: string[] = [];
+	static readonly UpdateDeviceFleet: string[] = [];
 	/** IAM actions required for the UpdateDevices API call. */
-	static readonly UPDATE_DEVICES: string[] = [];
+	static readonly UpdateDevices: string[] = [];
 	/** IAM actions required for the UpdateDomain API call. */
-	static readonly UPDATE_DOMAIN: string[] = [
+	static readonly UpdateDomain: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdateDomain",
 	];
 	/** IAM actions required for the UpdateEndpoint API call. */
-	static readonly UPDATE_ENDPOINT: string[] = ["sagemaker:UpdateEndpoint"];
+	static readonly UpdateEndpoint: string[] = ["sagemaker:UpdateEndpoint"];
 	/** IAM actions required for the UpdateEndpointWeightsAndCapacities API call. */
-	static readonly UPDATE_ENDPOINT_WEIGHTS_AND_CAPACITIES: string[] = [
+	static readonly UpdateEndpointWeightsAndCapacities: string[] = [
 		"sagemaker:UpdateEndpointWeightsAndCapacities",
 	];
 	/** IAM actions required for the UpdateExperiment API call. */
-	static readonly UPDATE_EXPERIMENT: string[] = ["sagemaker:UpdateExperiment"];
+	static readonly UpdateExperiment: string[] = ["sagemaker:UpdateExperiment"];
 	/** IAM actions required for the UpdateFeatureGroup API call. */
-	static readonly UPDATE_FEATURE_GROUP: string[] = [
+	static readonly UpdateFeatureGroup: string[] = [
 		"sagemaker:UpdateFeatureGroup",
 	];
 	/** IAM actions required for the UpdateFeatureMetadata API call. */
-	static readonly UPDATE_FEATURE_METADATA: string[] = [
+	static readonly UpdateFeatureMetadata: string[] = [
 		"sagemaker:UpdateFeatureMetadata",
 	];
 	/** IAM actions required for the UpdateHub API call. */
-	static readonly UPDATE_HUB: string[] = ["sagemaker:UpdateHub"];
+	static readonly UpdateHub: string[] = ["sagemaker:UpdateHub"];
 	/** IAM actions required for the UpdateHubContent API call. */
-	static readonly UPDATE_HUB_CONTENT: string[] = ["sagemaker:UpdateHubContent"];
+	static readonly UpdateHubContent: string[] = ["sagemaker:UpdateHubContent"];
 	/** IAM actions required for the UpdateHubContentReference API call. */
-	static readonly UPDATE_HUB_CONTENT_REFERENCE: string[] = [
+	static readonly UpdateHubContentReference: string[] = [
 		"sagemaker:UpdateHubContentReference",
 	];
 	/** IAM actions required for the UpdateImage API call. */
-	static readonly UPDATE_IMAGE: string[] = [
+	static readonly UpdateImage: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdateImage",
 	];
 	/** IAM actions required for the UpdateImageVersion API call. */
-	static readonly UPDATE_IMAGE_VERSION: string[] = [
+	static readonly UpdateImageVersion: string[] = [
 		"sagemaker:UpdateImageVersion",
 	];
 	/** IAM actions required for the UpdateInferenceComponent API call. */
-	static readonly UPDATE_INFERENCE_COMPONENT: string[] = [
+	static readonly UpdateInferenceComponent: string[] = [
 		"sagemaker:UpdateInferenceComponent",
 	];
 	/** IAM actions required for the UpdateInferenceComponentRuntimeConfig API call. */
-	static readonly UPDATE_INFERENCE_COMPONENT_RUNTIME_CONFIG: string[] = [
+	static readonly UpdateInferenceComponentRuntimeConfig: string[] = [
 		"sagemaker:UpdateInferenceComponentRuntimeConfig",
 	];
 	/** IAM actions required for the UpdateInferenceExperiment API call. */
-	static readonly UPDATE_INFERENCE_EXPERIMENT: string[] = [
+	static readonly UpdateInferenceExperiment: string[] = [
 		"sagemaker:UpdateInferenceExperiment",
 	];
 	/** IAM actions required for the UpdateMlflowApp API call. */
-	static readonly UPDATE_MLFLOW_APP: string[] = ["sagemaker:UpdateMlflowApp"];
+	static readonly UpdateMlflowApp: string[] = ["sagemaker:UpdateMlflowApp"];
 	/** IAM actions required for the UpdateMlflowTrackingServer API call. */
-	static readonly UPDATE_MLFLOW_TRACKING_SERVER: string[] = [
+	static readonly UpdateMlflowTrackingServer: string[] = [
 		"sagemaker:UpdateMlflowTrackingServer",
 	];
 	/** IAM actions required for the UpdateModelCard API call. */
-	static readonly UPDATE_MODEL_CARD: string[] = ["sagemaker:UpdateModelCard"];
+	static readonly UpdateModelCard: string[] = ["sagemaker:UpdateModelCard"];
 	/** IAM actions required for the UpdateModelPackage API call. */
-	static readonly UPDATE_MODEL_PACKAGE: string[] = [
+	static readonly UpdateModelPackage: string[] = [
 		"sagemaker:UpdateModelPackage",
 	];
 	/** IAM actions required for the UpdateMonitoringAlert API call. */
-	static readonly UPDATE_MONITORING_ALERT: string[] = [
+	static readonly UpdateMonitoringAlert: string[] = [
 		"sagemaker:UpdateMonitoringAlert",
 	];
 	/** IAM actions required for the UpdateMonitoringSchedule API call. */
-	static readonly UPDATE_MONITORING_SCHEDULE: string[] = [
+	static readonly UpdateMonitoringSchedule: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdateMonitoringSchedule",
 	];
 	/** IAM actions required for the UpdateNotebookInstance API call. */
-	static readonly UPDATE_NOTEBOOK_INSTANCE: string[] = [
+	static readonly UpdateNotebookInstance: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdateNotebookInstance",
 	];
 	/** IAM actions required for the UpdateNotebookInstanceLifecycleConfig API call. */
-	static readonly UPDATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG: string[] = [
+	static readonly UpdateNotebookInstanceLifecycleConfig: string[] = [
 		"sagemaker:UpdateNotebookInstanceLifecycleConfig",
 	];
 	/** IAM actions required for the UpdatePartnerApp API call. */
-	static readonly UPDATE_PARTNER_APP: string[] = [
+	static readonly UpdatePartnerApp: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:UpdatePartnerApp",
 	];
 	/** IAM actions required for the UpdatePipeline API call. */
-	static readonly UPDATE_PIPELINE: string[] = [
+	static readonly UpdatePipeline: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdatePipeline",
 	];
 	/** IAM actions required for the UpdatePipelineExecution API call. */
-	static readonly UPDATE_PIPELINE_EXECUTION: string[] = [
+	static readonly UpdatePipelineExecution: string[] = [
 		"sagemaker:UpdatePipelineExecution",
 	];
 	/** IAM actions required for the UpdatePipelineVersion API call. */
-	static readonly UPDATE_PIPELINE_VERSION: string[] = [
+	static readonly UpdatePipelineVersion: string[] = [
 		"sagemaker:UpdatePipelineVersion",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UPDATE_PROJECT: string[] = [
+	static readonly UpdateProject: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:UpdateProject",
 	];
 	/** IAM actions required for the UpdateReward API call. */
-	static readonly UPDATE_REWARD: string[] = [
+	static readonly UpdateReward: string[] = [
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:UpdateReward",
 	];
 	/** IAM actions required for the UpdateSpace API call. */
-	static readonly UPDATE_SPACE: string[] = ["sagemaker:UpdateSpace"];
+	static readonly UpdateSpace: string[] = ["sagemaker:UpdateSpace"];
 	/** IAM actions required for the UpdateTrainingJob API call. */
-	static readonly UPDATE_TRAINING_JOB: string[] = [
-		"sagemaker:UpdateTrainingJob",
-	];
+	static readonly UpdateTrainingJob: string[] = ["sagemaker:UpdateTrainingJob"];
 	/** IAM actions required for the UpdateTrial API call. */
-	static readonly UPDATE_TRIAL: string[] = ["sagemaker:UpdateTrial"];
+	static readonly UpdateTrial: string[] = ["sagemaker:UpdateTrial"];
 	/** IAM actions required for the UpdateTrialComponent API call. */
-	static readonly UPDATE_TRIAL_COMPONENT: string[] = [
+	static readonly UpdateTrialComponent: string[] = [
 		"sagemaker:UpdateTrialComponent",
 	];
 	/** IAM actions required for the UpdateUserProfile API call. */
-	static readonly UPDATE_USER_PROFILE: string[] = [
+	static readonly UpdateUserProfile: string[] = [
 		"iam:PassRole",
 		"sagemaker:UpdateUserProfile",
 	];
 	/** IAM actions required for the UpdateWorkforce API call. */
-	static readonly UPDATE_WORKFORCE: string[] = ["sagemaker:UpdateWorkforce"];
+	static readonly UpdateWorkforce: string[] = ["sagemaker:UpdateWorkforce"];
 	/** IAM actions required for the UpdateWorkteam API call. */
-	static readonly UPDATE_WORKTEAM: string[] = ["sagemaker:UpdateWorkteam"];
+	static readonly UpdateWorkteam: string[] = ["sagemaker:UpdateWorkteam"];
 }
 
 /**
@@ -6634,42 +7634,42 @@ export class SageMakerOperations {
  */
 export class SageMakerConditions {
 	/** Condition keys applicable to the AddTags action. */
-	static readonly ADD_TAGS_CONDITION_KEYS: string[] = [
+	static readonly AddTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:TaggingAction",
 	];
 	/** Condition keys applicable to the CallWithBearerToken action. */
-	static readonly CALL_WITH_BEARER_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly CallWithBearerTokenConditionKeys: string[] = [
 		"sagemaker:BearerTokenType",
 	];
 	/** Condition keys applicable to the CreateAIBenchmarkJob action. */
-	static readonly CREATE_AI_BENCHMARK_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateAIBenchmarkJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIRecommendationJob action. */
-	static readonly CREATE_AI_RECOMMENDATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateAIRecommendationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIWorkloadConfig action. */
-	static readonly CREATE_AI_WORKLOAD_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateAIWorkloadConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAction action. */
-	static readonly CREATE_ACTION_CONDITION_KEYS: string[] = [
+	static readonly CreateActionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAlgorithm action. */
-	static readonly CREATE_ALGORITHM_CONDITION_KEYS: string[] = [
+	static readonly CreateAlgorithmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApp action. */
-	static readonly CREATE_APP_CONDITION_KEYS: string[] = [
+	static readonly CreateAppConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:ImageArns",
@@ -6680,17 +7680,17 @@ export class SageMakerConditions {
 		"sagemaker:StudioLifecycleConfigArns",
 	];
 	/** Condition keys applicable to the CreateAppImageConfig action. */
-	static readonly CREATE_APP_IMAGE_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateAppImageConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateArtifact action. */
-	static readonly CREATE_ARTIFACT_CONDITION_KEYS: string[] = [
+	static readonly CreateArtifactConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAutoMLJob action. */
-	static readonly CREATE_AUTO_ML_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateAutoMLJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InterContainerTrafficEncryption",
@@ -6700,7 +7700,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateAutoMLJobV2 action. */
-	static readonly CREATE_AUTO_ML_JOB_V2_CONDITION_KEYS: string[] = [
+	static readonly CreateAutoMLJobV2ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InterContainerTrafficEncryption",
@@ -6710,7 +7710,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -6718,51 +7718,50 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateClusterSchedulerConfig action. */
-	static readonly CREATE_CLUSTER_SCHEDULER_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterSchedulerConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCodeRepository action. */
-	static readonly CREATE_CODE_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly CreateCodeRepositoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCompilationJob action. */
-	static readonly CREATE_COMPILATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateCompilationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateComputeQuota action. */
-	static readonly CREATE_COMPUTE_QUOTA_CONDITION_KEYS: string[] = [
+	static readonly CreateComputeQuotaConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateContext action. */
-	static readonly CREATE_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly CreateContextConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataQualityJobDefinition action. */
-	static readonly CREATE_DATA_QUALITY_JOB_DEFINITION_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"sagemaker:InstanceTypes",
-			"sagemaker:InterContainerTrafficEncryption",
-			"sagemaker:MaxRuntimeInSeconds",
-			"sagemaker:NetworkIsolation",
-			"sagemaker:OutputKmsKeyArn",
-			"sagemaker:VolumeKmsKeyArn",
-			"sagemaker:VpcSecurityGroupIds",
-			"sagemaker:VpcSubnets",
-		];
+	static readonly CreateDataQualityJobDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"sagemaker:InstanceTypes",
+		"sagemaker:InterContainerTrafficEncryption",
+		"sagemaker:MaxRuntimeInSeconds",
+		"sagemaker:NetworkIsolation",
+		"sagemaker:OutputKmsKeyArn",
+		"sagemaker:VolumeKmsKeyArn",
+		"sagemaker:VpcSecurityGroupIds",
+		"sagemaker:VpcSubnets",
+	];
 	/** Condition keys applicable to the CreateDeviceFleet action. */
-	static readonly CREATE_DEVICE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateDeviceFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDomain action. */
-	static readonly CREATE_DOMAIN_CONDITION_KEYS: string[] = [
+	static readonly CreateDomainConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:AppNetworkAccessType",
@@ -6776,27 +7775,27 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateEdgeDeploymentPlan action. */
-	static readonly CREATE_EDGE_DEPLOYMENT_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreateEdgeDeploymentPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEdgeDeploymentStage action. */
-	static readonly CREATE_EDGE_DEPLOYMENT_STAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateEdgeDeploymentStageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEdgePackagingJob action. */
-	static readonly CREATE_EDGE_PACKAGING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateEdgePackagingJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEndpoint action. */
-	static readonly CREATE_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEndpointConfig action. */
-	static readonly CREATE_ENDPOINT_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateEndpointConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:AcceleratorTypes",
@@ -6810,12 +7809,12 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateExperiment action. */
-	static readonly CREATE_EXPERIMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateExperimentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFeatureGroup action. */
-	static readonly CREATE_FEATURE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateFeatureGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:FeatureGroupDisableGlueTableCreation",
@@ -6826,29 +7825,29 @@ export class SageMakerConditions {
 		"sagemaker:FeatureGroupOnlineStoreKmsKeyArn",
 	];
 	/** Condition keys applicable to the CreateFlowDefinition action. */
-	static readonly CREATE_FLOW_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly CreateFlowDefinitionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:WorkteamArn",
 		"sagemaker:WorkteamType",
 	];
 	/** Condition keys applicable to the CreateHub action. */
-	static readonly CREATE_HUB_CONDITION_KEYS: string[] = [
+	static readonly CreateHubConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateHubContentReference action. */
-	static readonly CREATE_HUB_CONTENT_REFERENCE_CONDITION_KEYS: string[] = [
+	static readonly CreateHubContentReferenceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateHumanTaskUi action. */
-	static readonly CREATE_HUMAN_TASK_UI_CONDITION_KEYS: string[] = [
+	static readonly CreateHumanTaskUiConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateHyperParameterTuningJob action. */
-	static readonly CREATE_HYPER_PARAMETER_TUNING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateHyperParameterTuningJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:FileSystemAccessMode",
@@ -6865,26 +7864,28 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateImage action. */
-	static readonly CREATE_IMAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateImageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateInferenceComponent action. */
-	static readonly CREATE_INFERENCE_COMPONENT_CONDITION_KEYS: string[] = [
+	static readonly CreateInferenceComponentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:ModelArn",
 	];
 	/** Condition keys applicable to the CreateInferenceExperiment action. */
-	static readonly CREATE_INFERENCE_EXPERIMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateInferenceExperimentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateInferenceRecommendationsJob action. */
-	static readonly CREATE_INFERENCE_RECOMMENDATIONS_JOB_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateInferenceRecommendationsJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:OutputKmsKeyArn",
@@ -6892,7 +7893,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateLabelingJob action. */
-	static readonly CREATE_LABELING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateLabelingJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:OutputKmsKeyArn",
@@ -6901,17 +7902,17 @@ export class SageMakerConditions {
 		"sagemaker:WorkteamType",
 	];
 	/** Condition keys applicable to the CreateMlflowApp action. */
-	static readonly CREATE_MLFLOW_APP_CONDITION_KEYS: string[] = [
+	static readonly CreateMlflowAppConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMlflowTrackingServer action. */
-	static readonly CREATE_MLFLOW_TRACKING_SERVER_CONDITION_KEYS: string[] = [
+	static readonly CreateMlflowTrackingServerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModel action. */
-	static readonly CREATE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:DirectGatedModelAccess",
@@ -6920,7 +7921,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateModelBiasJobDefinition action. */
-	static readonly CREATE_MODEL_BIAS_JOB_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly CreateModelBiasJobDefinitionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -6933,12 +7934,12 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateModelCard action. */
-	static readonly CREATE_MODEL_CARD_CONDITION_KEYS: string[] = [
+	static readonly CreateModelCardConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelExplainabilityJobDefinition action. */
-	static readonly CREATE_MODEL_EXPLAINABILITY_JOB_DEFINITION_CONDITION_KEYS: string[] =
+	static readonly CreateModelExplainabilityJobDefinitionConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
@@ -6952,7 +7953,7 @@ export class SageMakerConditions {
 			"sagemaker:VpcSubnets",
 		];
 	/** Condition keys applicable to the CreateModelPackage action. */
-	static readonly CREATE_MODEL_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateModelPackageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:CustomerMetadataProperties/${MetadataKey}",
@@ -6961,26 +7962,25 @@ export class SageMakerConditions {
 		"sagemaker:ModelLifeCycle:StageStatus",
 	];
 	/** Condition keys applicable to the CreateModelPackageGroup action. */
-	static readonly CREATE_MODEL_PACKAGE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateModelPackageGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelQualityJobDefinition action. */
-	static readonly CREATE_MODEL_QUALITY_JOB_DEFINITION_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"sagemaker:InstanceTypes",
-			"sagemaker:InterContainerTrafficEncryption",
-			"sagemaker:MaxRuntimeInSeconds",
-			"sagemaker:NetworkIsolation",
-			"sagemaker:OutputKmsKeyArn",
-			"sagemaker:VolumeKmsKeyArn",
-			"sagemaker:VpcSecurityGroupIds",
-			"sagemaker:VpcSubnets",
-		];
+	static readonly CreateModelQualityJobDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"sagemaker:InstanceTypes",
+		"sagemaker:InterContainerTrafficEncryption",
+		"sagemaker:MaxRuntimeInSeconds",
+		"sagemaker:NetworkIsolation",
+		"sagemaker:OutputKmsKeyArn",
+		"sagemaker:VolumeKmsKeyArn",
+		"sagemaker:VpcSecurityGroupIds",
+		"sagemaker:VpcSubnets",
+	];
 	/** Condition keys applicable to the CreateMonitoringSchedule action. */
-	static readonly CREATE_MONITORING_SCHEDULE_CONDITION_KEYS: string[] = [
+	static readonly CreateMonitoringScheduleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -6993,7 +7993,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateNotebookInstance action. */
-	static readonly CREATE_NOTEBOOK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateNotebookInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:AcceleratorTypes",
@@ -7007,25 +8007,25 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateNotebookInstanceLifecycleConfig action. */
-	static readonly CREATE_NOTEBOOK_INSTANCE_LIFECYCLE_CONFIG_CONDITION_KEYS: string[] =
+	static readonly CreateNotebookInstanceLifecycleConfigConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateOptimizationJob action. */
-	static readonly CREATE_OPTIMIZATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateOptimizationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePartnerApp action. */
-	static readonly CREATE_PARTNER_APP_CONDITION_KEYS: string[] = [
+	static readonly CreatePartnerAppConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePipeline action. */
-	static readonly CREATE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly CreatePipelineConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProcessingJob action. */
-	static readonly CREATE_PROCESSING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateProcessingJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -7038,17 +8038,17 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateReservedCapacity action. */
-	static readonly CREATE_RESERVED_CAPACITY_CONDITION_KEYS: string[] = [
+	static readonly CreateReservedCapacityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSpace action. */
-	static readonly CREATE_SPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateSpaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:ImageArns",
@@ -7060,12 +8060,12 @@ export class SageMakerConditions {
 		"sagemaker:StudioLifecycleConfigArns",
 	];
 	/** Condition keys applicable to the CreateStudioLifecycleConfig action. */
-	static readonly CREATE_STUDIO_LIFECYCLE_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateStudioLifecycleConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrainingJob action. */
-	static readonly CREATE_TRAINING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateTrainingJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:DirectGatedModelAccess",
@@ -7085,12 +8085,12 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the CreateTrainingPlan action. */
-	static readonly CREATE_TRAINING_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreateTrainingPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTransformJob action. */
-	static readonly CREATE_TRANSFORM_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateTransformJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -7099,17 +8099,17 @@ export class SageMakerConditions {
 		"sagemaker:VolumeKmsKeyArn",
 	];
 	/** Condition keys applicable to the CreateTrial action. */
-	static readonly CREATE_TRIAL_CONDITION_KEYS: string[] = [
+	static readonly CreateTrialConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrialComponent action. */
-	static readonly CREATE_TRIAL_COMPONENT_CONDITION_KEYS: string[] = [
+	static readonly CreateTrialComponentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUserProfile action. */
-	static readonly CREATE_USER_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateUserProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:DomainSharingOutputKmsKeyArn",
@@ -7120,65 +8120,65 @@ export class SageMakerConditions {
 		"sagemaker:VpcSecurityGroupIds",
 	];
 	/** Condition keys applicable to the CreateWorkforce action. */
-	static readonly CREATE_WORKFORCE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkforceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkteam action. */
-	static readonly CREATE_WORKTEAM_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkteamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteApp action. */
-	static readonly DELETE_APP_CONDITION_KEYS: string[] = [
+	static readonly DeleteAppConditionKeys: string[] = [
 		"sagemaker:OwnerUserProfileArn",
 		"sagemaker:SpaceSharingType",
 	];
 	/** Condition keys applicable to the DeleteFeatureGroup action. */
-	static readonly DELETE_FEATURE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteFeatureGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSpace action. */
-	static readonly DELETE_SPACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteSpaceConditionKeys: string[] = [
 		"sagemaker:OwnerUserProfileArn",
 		"sagemaker:SpaceSharingType",
 	];
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly DeleteTagsConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the DescribePipeline action. */
-	static readonly DESCRIBE_PIPELINE_CONDITION_KEYS: string[] = [
+	static readonly DescribePipelineConditionKeys: string[] = [
 		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the ImportHubContent action. */
-	static readonly IMPORT_HUB_CONTENT_CONDITION_KEYS: string[] = [
+	static readonly ImportHubContentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the InvokeEndpoint action. */
-	static readonly INVOKE_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly InvokeEndpointConditionKeys: string[] = [
 		"sagemaker:TargetModel",
 	];
 	/** Condition keys applicable to the RegisterDevices action. */
-	static readonly REGISTER_DEVICES_CONDITION_KEYS: string[] = [
+	static readonly RegisterDevicesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the Search action. */
-	static readonly SEARCH_CONDITION_KEYS: string[] = [
+	static readonly SearchConditionKeys: string[] = [
 		"sagemaker:SearchVisibilityCondition/${FilterKey}",
 	];
 	/** Condition keys applicable to the StartPipelineExecution action. */
-	static readonly START_PIPELINE_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly StartPipelineExecutionConditionKeys: string[] = [
 		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the UpdateCluster action. */
-	static readonly UPDATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly UpdateClusterConditionKeys: string[] = [
 		"sagemaker:InstanceTypes",
 		"sagemaker:VpcSecurityGroupIds",
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the UpdateDomain action. */
-	static readonly UPDATE_DOMAIN_CONDITION_KEYS: string[] = [
+	static readonly UpdateDomainConditionKeys: string[] = [
 		"sagemaker:AppNetworkAccessType",
 		"sagemaker:DomainSharingOutputKmsKeyArn",
 		"sagemaker:ImageArns",
@@ -7189,7 +8189,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the UpdateModelPackage action. */
-	static readonly UPDATE_MODEL_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly UpdateModelPackageConditionKeys: string[] = [
 		"sagemaker:CustomerMetadataProperties/${MetadataKey}",
 		"sagemaker:CustomerMetadataPropertiesToRemove",
 		"sagemaker:ModelApprovalStatus",
@@ -7197,7 +8197,7 @@ export class SageMakerConditions {
 		"sagemaker:ModelLifeCycle:StageStatus",
 	];
 	/** Condition keys applicable to the UpdateMonitoringSchedule action. */
-	static readonly UPDATE_MONITORING_SCHEDULE_CONDITION_KEYS: string[] = [
+	static readonly UpdateMonitoringScheduleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sagemaker:InstanceTypes",
@@ -7210,7 +8210,7 @@ export class SageMakerConditions {
 		"sagemaker:VpcSubnets",
 	];
 	/** Condition keys applicable to the UpdateNotebookInstance action. */
-	static readonly UPDATE_NOTEBOOK_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateNotebookInstanceConditionKeys: string[] = [
 		"sagemaker:AcceleratorTypes",
 		"sagemaker:InstanceTypes",
 		"sagemaker:MinimumInstanceMetadataServiceVersion",
@@ -7218,16 +8218,16 @@ export class SageMakerConditions {
 		"sagemaker:RootAccess",
 	];
 	/** Condition keys applicable to the UpdatePipelineVersion action. */
-	static readonly UPDATE_PIPELINE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly UpdatePipelineVersionConditionKeys: string[] = [
 		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the UpdateProject action. */
-	static readonly UPDATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly UpdateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateSpace action. */
-	static readonly UPDATE_SPACE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSpaceConditionKeys: string[] = [
 		"sagemaker:ImageArns",
 		"sagemaker:ImageVersionArns",
 		"sagemaker:InstanceTypes",
@@ -7237,13 +8237,13 @@ export class SageMakerConditions {
 		"sagemaker:StudioLifecycleConfigArns",
 	];
 	/** Condition keys applicable to the UpdateTrainingJob action. */
-	static readonly UPDATE_TRAINING_JOB_CONDITION_KEYS: string[] = [
+	static readonly UpdateTrainingJobConditionKeys: string[] = [
 		"sagemaker:EnableRemoteDebug",
 		"sagemaker:InstanceTypes",
 		"sagemaker:KeepAlivePeriod",
 	];
 	/** Condition keys applicable to the UpdateUserProfile action. */
-	static readonly UPDATE_USER_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly UpdateUserProfileConditionKeys: string[] = [
 		"sagemaker:DomainSharingOutputKmsKeyArn",
 		"sagemaker:ImageArns",
 		"sagemaker:ImageVersionArns",
@@ -7254,11 +8254,11 @@ export class SageMakerConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: sagemaker:AcceleratorTypes (ArrayOfString) */
 	static readonly ACCELERATOR_TYPES = "sagemaker:AcceleratorTypes";
 	/** Condition key: sagemaker:AppNetworkAccessType (String) */
@@ -7373,8 +8373,6 @@ export class SageMakerConditions {
 	static readonly REMOTE_ACCESS = "sagemaker:RemoteAccess";
 	/** Condition key: sagemaker:ResourceTag/ (String) */
 	static readonly RESOURCE_TAG = "sagemaker:ResourceTag/";
-	/** Condition key: sagemaker:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "sagemaker:ResourceTag/${TagKey}";
 	/** Condition key: sagemaker:RootAccess (String) */
 	static readonly ROOT_ACCESS = "sagemaker:RootAccess";
 	/** Condition key: sagemaker:SearchVisibilityCondition/${FilterKey} (String) */
@@ -7855,20 +8853,6 @@ export class SageMakerConditions {
 	 */
 	static remoteAccess(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "sagemaker:RemoteAccess": value } };
-	}
-
-	/**
-	 * Generates a condition block for `sagemaker:ResourceTag/`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "sagemaker:ResourceTag/": value } };
-	}
-
-	/**
-	 * Generates a condition block for `sagemaker:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "sagemaker:ResourceTag/${TagKey}": value } };
 	}
 
 	/**

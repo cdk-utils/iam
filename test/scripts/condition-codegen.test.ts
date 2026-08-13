@@ -86,34 +86,48 @@ describe("shouldGenerateBuilder", () => {
 	});
 
 	it("returns true for aws: global keys", () => {
-		expect(shouldGenerateBuilder("aws:RequestTag/${TagKey}", "dynamodb")).toBe(true);
+		expect(shouldGenerateBuilder("aws:RequestTag/${TagKey}", "dynamodb")).toBe(
+			true,
+		);
 		expect(shouldGenerateBuilder("aws:TagKeys", "s3")).toBe(true);
 	});
 
 	it("returns false for third-party OIDC keys", () => {
 		expect(shouldGenerateBuilder("accounts.google.com:aud", "sts")).toBe(false);
-		expect(shouldGenerateBuilder("token.actions.githubusercontent.com:sub", "sts")).toBe(false);
+		expect(
+			shouldGenerateBuilder("token.actions.githubusercontent.com:sub", "sts"),
+		).toBe(false);
 		expect(shouldGenerateBuilder("saml:aud", "sts")).toBe(false);
 	});
 });
 
 describe("conditionKeyToMethodName", () => {
 	it("converts service-prefixed keys", () => {
-		expect(conditionKeyToMethodName("dynamodb:Attributes", "dynamodb")).toBe("attributes");
-		expect(conditionKeyToMethodName("dynamodb:LeadingKeys", "dynamodb")).toBe("leadingKeys");
-		expect(conditionKeyToMethodName("dynamodb:ReturnConsumedCapacity", "dynamodb")).toBe(
-			"returnConsumedCapacity",
+		expect(conditionKeyToMethodName("dynamodb:Attributes", "dynamodb")).toBe(
+			"attributes",
 		);
+		expect(conditionKeyToMethodName("dynamodb:LeadingKeys", "dynamodb")).toBe(
+			"leadingKeys",
+		);
+		expect(
+			conditionKeyToMethodName("dynamodb:ReturnConsumedCapacity", "dynamodb"),
+		).toBe("returnConsumedCapacity");
 	});
 
 	it("converts aws: global keys", () => {
-		expect(conditionKeyToMethodName("aws:RequestTag/${TagKey}", "dynamodb")).toBe("requestTag");
+		expect(
+			conditionKeyToMethodName("aws:RequestTag/${TagKey}", "dynamodb"),
+		).toBe("requestTag");
 		expect(conditionKeyToMethodName("aws:TagKeys", "dynamodb")).toBe("tagKeys");
-		expect(conditionKeyToMethodName("aws:ResourceTag/${TagKey}", "dynamodb")).toBe("resourceTag");
+		expect(
+			conditionKeyToMethodName("aws:ResourceTag/${TagKey}", "dynamodb"),
+		).toBe("resourceTag");
 	});
 
 	it("handles keys with no template variable", () => {
-		expect(conditionKeyToMethodName("dynamodb:FullTableScan", "dynamodb")).toBe("fullTableScan");
+		expect(conditionKeyToMethodName("dynamodb:FullTableScan", "dynamodb")).toBe(
+			"fullTableScan",
+		);
 	});
 });
 
@@ -121,14 +135,20 @@ describe("conditionKeyToConstant", () => {
 	it("converts to UPPER_SNAKE_CASE", () => {
 		expect(conditionKeyToConstant("dynamodb:Attributes")).toBe("ATTRIBUTES");
 		expect(conditionKeyToConstant("dynamodb:LeadingKeys")).toBe("LEADING_KEYS");
-		expect(conditionKeyToConstant("aws:RequestTag/${TagKey}")).toBe("REQUEST_TAG");
-		expect(conditionKeyToConstant("aws:TagKeys")).toBe("TAG_KEYS");
+		expect(conditionKeyToConstant("aws:RequestTag/${TagKey}")).toBe(
+			"AWS_REQUEST_TAG",
+		);
+		expect(conditionKeyToConstant("aws:TagKeys")).toBe("AWS_TAG_KEYS");
 	});
 });
 
 describe("generateConditionBuilder", () => {
 	it("generates a String condition builder", () => {
-		const code = generateConditionBuilder("dynamodb:EnclosingOperation", ["String"], "dynamodb");
+		const code = generateConditionBuilder(
+			"dynamodb:EnclosingOperation",
+			["String"],
+			"dynamodb",
+		);
 
 		expect(code).toContain("static enclosingOperation(value: string)");
 		expect(code).toContain('"StringEquals"');
@@ -136,7 +156,11 @@ describe("generateConditionBuilder", () => {
 	});
 
 	it("generates an ArrayOfString condition builder", () => {
-		const code = generateConditionBuilder("dynamodb:Attributes", ["ArrayOfString"], "dynamodb");
+		const code = generateConditionBuilder(
+			"dynamodb:Attributes",
+			["ArrayOfString"],
+			"dynamodb",
+		);
 
 		expect(code).toContain("static attributes(values: string[])");
 		expect(code).toContain('"ForAllValues:StringEquals"');
@@ -144,7 +168,11 @@ describe("generateConditionBuilder", () => {
 	});
 
 	it("generates a Bool condition builder", () => {
-		const code = generateConditionBuilder("dynamodb:FullTableScan", ["Bool"], "dynamodb");
+		const code = generateConditionBuilder(
+			"dynamodb:FullTableScan",
+			["Bool"],
+			"dynamodb",
+		);
 
 		expect(code).toContain("static fullTableScan(value: boolean)");
 		expect(code).toContain('"Bool"');

@@ -13,179 +13,256 @@ export class AossActions {
 	static readonly SERVICE_PREFIX = "aoss";
 
 	/** [Write] aoss:APIAccessAll */
-	static readonly API_ACCESS_ALL = "aoss:APIAccessAll";
+	static readonly APIAccessAll = "aoss:APIAccessAll";
 	/** [Write] aoss:AddCollectionToCollectionGroup */
-	static readonly ADD_COLLECTION_TO_COLLECTION_GROUP =
+	static readonly AddCollectionToCollectionGroup =
 		"aoss:AddCollectionToCollectionGroup";
 	/** [Read] aoss:BatchGetCollection */
-	static readonly BATCH_GET_COLLECTION = "aoss:BatchGetCollection";
+	static readonly BatchGetCollection = "aoss:BatchGetCollection";
 	/** [Read] aoss:BatchGetCollectionGroup */
-	static readonly BATCH_GET_COLLECTION_GROUP = "aoss:BatchGetCollectionGroup";
+	static readonly BatchGetCollectionGroup = "aoss:BatchGetCollectionGroup";
 	/** [Read] aoss:BatchGetEffectiveLifecyclePolicy */
-	static readonly BATCH_GET_EFFECTIVE_LIFECYCLE_POLICY =
+	static readonly BatchGetEffectiveLifecyclePolicy =
 		"aoss:BatchGetEffectiveLifecyclePolicy";
 	/** [Read] aoss:BatchGetLifecyclePolicy */
-	static readonly BATCH_GET_LIFECYCLE_POLICY = "aoss:BatchGetLifecyclePolicy";
+	static readonly BatchGetLifecyclePolicy = "aoss:BatchGetLifecyclePolicy";
 	/** [Read] aoss:BatchGetVpcEndpoint */
-	static readonly BATCH_GET_VPC_ENDPOINT = "aoss:BatchGetVpcEndpoint";
+	static readonly BatchGetVpcEndpoint = "aoss:BatchGetVpcEndpoint";
 	/** [Write] aoss:CreateAccessPolicy */
-	static readonly CREATE_ACCESS_POLICY = "aoss:CreateAccessPolicy";
+	static readonly CreateAccessPolicy = "aoss:CreateAccessPolicy";
 	/** [Write] aoss:CreateCollection */
-	static readonly CREATE_COLLECTION = "aoss:CreateCollection";
+	static readonly CreateCollection = "aoss:CreateCollection";
 	/** [Write] aoss:CreateCollectionGroup */
-	static readonly CREATE_COLLECTION_GROUP = "aoss:CreateCollectionGroup";
+	static readonly CreateCollectionGroup = "aoss:CreateCollectionGroup";
 	/** [Write] aoss:CreateIndex */
-	static readonly CREATE_INDEX = "aoss:CreateIndex";
+	static readonly CreateIndex = "aoss:CreateIndex";
 	/** [Write] aoss:CreateLifecyclePolicy */
-	static readonly CREATE_LIFECYCLE_POLICY = "aoss:CreateLifecyclePolicy";
+	static readonly CreateLifecyclePolicy = "aoss:CreateLifecyclePolicy";
 	/** [Write] aoss:CreateSecurityConfig */
-	static readonly CREATE_SECURITY_CONFIG = "aoss:CreateSecurityConfig";
+	static readonly CreateSecurityConfig = "aoss:CreateSecurityConfig";
 	/** [Write] aoss:CreateSecurityPolicy */
-	static readonly CREATE_SECURITY_POLICY = "aoss:CreateSecurityPolicy";
+	static readonly CreateSecurityPolicy = "aoss:CreateSecurityPolicy";
 	/** [Write] aoss:CreateVpcEndpoint */
-	static readonly CREATE_VPC_ENDPOINT = "aoss:CreateVpcEndpoint";
+	static readonly CreateVpcEndpoint = "aoss:CreateVpcEndpoint";
 	/** [Write] aoss:DashboardsAccessAll */
-	static readonly DASHBOARDS_ACCESS_ALL = "aoss:DashboardsAccessAll";
+	static readonly DashboardsAccessAll = "aoss:DashboardsAccessAll";
 	/** [Write] aoss:DeleteAccessPolicy */
-	static readonly DELETE_ACCESS_POLICY = "aoss:DeleteAccessPolicy";
+	static readonly DeleteAccessPolicy = "aoss:DeleteAccessPolicy";
 	/** [Write] aoss:DeleteCollection */
-	static readonly DELETE_COLLECTION = "aoss:DeleteCollection";
+	static readonly DeleteCollection = "aoss:DeleteCollection";
 	/** [Write] aoss:DeleteCollectionGroup */
-	static readonly DELETE_COLLECTION_GROUP = "aoss:DeleteCollectionGroup";
+	static readonly DeleteCollectionGroup = "aoss:DeleteCollectionGroup";
 	/** [Write] aoss:DeleteIndex */
-	static readonly DELETE_INDEX = "aoss:DeleteIndex";
+	static readonly DeleteIndex = "aoss:DeleteIndex";
 	/** [Write] aoss:DeleteLifecyclePolicy */
-	static readonly DELETE_LIFECYCLE_POLICY = "aoss:DeleteLifecyclePolicy";
+	static readonly DeleteLifecyclePolicy = "aoss:DeleteLifecyclePolicy";
 	/** [Write] aoss:DeleteSecurityConfig */
-	static readonly DELETE_SECURITY_CONFIG = "aoss:DeleteSecurityConfig";
+	static readonly DeleteSecurityConfig = "aoss:DeleteSecurityConfig";
 	/** [Write] aoss:DeleteSecurityPolicy */
-	static readonly DELETE_SECURITY_POLICY = "aoss:DeleteSecurityPolicy";
+	static readonly DeleteSecurityPolicy = "aoss:DeleteSecurityPolicy";
 	/** [Write] aoss:DeleteVpcEndpoint */
-	static readonly DELETE_VPC_ENDPOINT = "aoss:DeleteVpcEndpoint";
+	static readonly DeleteVpcEndpoint = "aoss:DeleteVpcEndpoint";
 	/** [Read] aoss:GetAccessPolicy */
-	static readonly GET_ACCESS_POLICY = "aoss:GetAccessPolicy";
+	static readonly actionGetAccessPolicy = "aoss:GetAccessPolicy";
 	/** [Read] aoss:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "aoss:GetAccountSettings";
+	static readonly actionGetAccountSettings = "aoss:GetAccountSettings";
 	/** [Read] aoss:GetIndex */
-	static readonly GET_INDEX = "aoss:GetIndex";
+	static readonly actionGetIndex = "aoss:GetIndex";
 	/** [Read] aoss:GetPoliciesStats */
-	static readonly GET_POLICIES_STATS = "aoss:GetPoliciesStats";
+	static readonly actionGetPoliciesStats = "aoss:GetPoliciesStats";
 	/** [Read] aoss:GetSecurityConfig */
-	static readonly GET_SECURITY_CONFIG = "aoss:GetSecurityConfig";
+	static readonly actionGetSecurityConfig = "aoss:GetSecurityConfig";
 	/** [Read] aoss:GetSecurityPolicy */
-	static readonly GET_SECURITY_POLICY = "aoss:GetSecurityPolicy";
+	static readonly actionGetSecurityPolicy = "aoss:GetSecurityPolicy";
 	/** [List] aoss:ListAccessPolicies */
-	static readonly LIST_ACCESS_POLICIES = "aoss:ListAccessPolicies";
+	static readonly ListAccessPolicies = "aoss:ListAccessPolicies";
 	/** [List] aoss:ListCollectionGroups */
-	static readonly LIST_COLLECTION_GROUPS = "aoss:ListCollectionGroups";
+	static readonly ListCollectionGroups = "aoss:ListCollectionGroups";
 	/** [List] aoss:ListCollections */
-	static readonly LIST_COLLECTIONS = "aoss:ListCollections";
+	static readonly ListCollections = "aoss:ListCollections";
 	/** [List] aoss:ListLifecyclePolicies */
-	static readonly LIST_LIFECYCLE_POLICIES = "aoss:ListLifecyclePolicies";
+	static readonly ListLifecyclePolicies = "aoss:ListLifecyclePolicies";
 	/** [List] aoss:ListSecurityConfigs */
-	static readonly LIST_SECURITY_CONFIGS = "aoss:ListSecurityConfigs";
+	static readonly ListSecurityConfigs = "aoss:ListSecurityConfigs";
 	/** [List] aoss:ListSecurityPolicies */
-	static readonly LIST_SECURITY_POLICIES = "aoss:ListSecurityPolicies";
+	static readonly ListSecurityPolicies = "aoss:ListSecurityPolicies";
 	/** [List] aoss:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "aoss:ListTagsForResource";
+	static readonly ListTagsForResource = "aoss:ListTagsForResource";
 	/** [List] aoss:ListVpcEndpoints */
-	static readonly LIST_VPC_ENDPOINTS = "aoss:ListVpcEndpoints";
+	static readonly ListVpcEndpoints = "aoss:ListVpcEndpoints";
 	/** [Write] aoss:TagResource */
-	static readonly TAG_RESOURCE = "aoss:TagResource";
+	static readonly TagResource = "aoss:TagResource";
 	/** [Write] aoss:UntagResource */
-	static readonly UNTAG_RESOURCE = "aoss:UntagResource";
+	static readonly UntagResource = "aoss:UntagResource";
 	/** [Write] aoss:UpdateAccessPolicy */
-	static readonly UPDATE_ACCESS_POLICY = "aoss:UpdateAccessPolicy";
+	static readonly UpdateAccessPolicy = "aoss:UpdateAccessPolicy";
 	/** [Write] aoss:UpdateAccountSettings */
-	static readonly UPDATE_ACCOUNT_SETTINGS = "aoss:UpdateAccountSettings";
+	static readonly UpdateAccountSettings = "aoss:UpdateAccountSettings";
 	/** [Write] aoss:UpdateCollection */
-	static readonly UPDATE_COLLECTION = "aoss:UpdateCollection";
+	static readonly UpdateCollection = "aoss:UpdateCollection";
 	/** [Write] aoss:UpdateCollectionGroup */
-	static readonly UPDATE_COLLECTION_GROUP = "aoss:UpdateCollectionGroup";
+	static readonly UpdateCollectionGroup = "aoss:UpdateCollectionGroup";
 	/** [Write] aoss:UpdateIndex */
-	static readonly UPDATE_INDEX = "aoss:UpdateIndex";
+	static readonly UpdateIndex = "aoss:UpdateIndex";
 	/** [Write] aoss:UpdateLifecyclePolicy */
-	static readonly UPDATE_LIFECYCLE_POLICY = "aoss:UpdateLifecyclePolicy";
+	static readonly UpdateLifecyclePolicy = "aoss:UpdateLifecyclePolicy";
 	/** [Write] aoss:UpdateSecurityConfig */
-	static readonly UPDATE_SECURITY_CONFIG = "aoss:UpdateSecurityConfig";
+	static readonly UpdateSecurityConfig = "aoss:UpdateSecurityConfig";
 	/** [Write] aoss:UpdateSecurityPolicy */
-	static readonly UPDATE_SECURITY_POLICY = "aoss:UpdateSecurityPolicy";
+	static readonly UpdateSecurityPolicy = "aoss:UpdateSecurityPolicy";
 	/** [Write] aoss:UpdateVpcEndpoint */
-	static readonly UPDATE_VPC_ENDPOINT = "aoss:UpdateVpcEndpoint";
+	static readonly UpdateVpcEndpoint = "aoss:UpdateVpcEndpoint";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AossActions.BATCH_GET_COLLECTION,
-		AossActions.BATCH_GET_COLLECTION_GROUP,
-		AossActions.BATCH_GET_EFFECTIVE_LIFECYCLE_POLICY,
-		AossActions.BATCH_GET_LIFECYCLE_POLICY,
-		AossActions.BATCH_GET_VPC_ENDPOINT,
-		AossActions.GET_ACCESS_POLICY,
-		AossActions.GET_ACCOUNT_SETTINGS,
-		AossActions.GET_INDEX,
-		AossActions.GET_POLICIES_STATS,
-		AossActions.GET_SECURITY_CONFIG,
-		AossActions.GET_SECURITY_POLICY,
+	static readonly AllReadActions: string[] = [
+		AossActions.BatchGetCollection,
+		AossActions.BatchGetCollectionGroup,
+		AossActions.BatchGetEffectiveLifecyclePolicy,
+		AossActions.BatchGetLifecyclePolicy,
+		AossActions.BatchGetVpcEndpoint,
+		AossActions.actionGetAccessPolicy,
+		AossActions.actionGetAccountSettings,
+		AossActions.actionGetIndex,
+		AossActions.actionGetPoliciesStats,
+		AossActions.actionGetSecurityConfig,
+		AossActions.actionGetSecurityPolicy,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AossActions.API_ACCESS_ALL,
-		AossActions.ADD_COLLECTION_TO_COLLECTION_GROUP,
-		AossActions.CREATE_ACCESS_POLICY,
-		AossActions.CREATE_COLLECTION,
-		AossActions.CREATE_COLLECTION_GROUP,
-		AossActions.CREATE_INDEX,
-		AossActions.CREATE_LIFECYCLE_POLICY,
-		AossActions.CREATE_SECURITY_CONFIG,
-		AossActions.CREATE_SECURITY_POLICY,
-		AossActions.CREATE_VPC_ENDPOINT,
-		AossActions.DASHBOARDS_ACCESS_ALL,
-		AossActions.DELETE_ACCESS_POLICY,
-		AossActions.DELETE_COLLECTION,
-		AossActions.DELETE_COLLECTION_GROUP,
-		AossActions.DELETE_INDEX,
-		AossActions.DELETE_LIFECYCLE_POLICY,
-		AossActions.DELETE_SECURITY_CONFIG,
-		AossActions.DELETE_SECURITY_POLICY,
-		AossActions.DELETE_VPC_ENDPOINT,
-		AossActions.TAG_RESOURCE,
-		AossActions.UNTAG_RESOURCE,
-		AossActions.UPDATE_ACCESS_POLICY,
-		AossActions.UPDATE_ACCOUNT_SETTINGS,
-		AossActions.UPDATE_COLLECTION,
-		AossActions.UPDATE_COLLECTION_GROUP,
-		AossActions.UPDATE_INDEX,
-		AossActions.UPDATE_LIFECYCLE_POLICY,
-		AossActions.UPDATE_SECURITY_CONFIG,
-		AossActions.UPDATE_SECURITY_POLICY,
-		AossActions.UPDATE_VPC_ENDPOINT,
+	static readonly AllWriteActions: string[] = [
+		AossActions.APIAccessAll,
+		AossActions.AddCollectionToCollectionGroup,
+		AossActions.CreateAccessPolicy,
+		AossActions.CreateCollection,
+		AossActions.CreateCollectionGroup,
+		AossActions.CreateIndex,
+		AossActions.CreateLifecyclePolicy,
+		AossActions.CreateSecurityConfig,
+		AossActions.CreateSecurityPolicy,
+		AossActions.CreateVpcEndpoint,
+		AossActions.DashboardsAccessAll,
+		AossActions.DeleteAccessPolicy,
+		AossActions.DeleteCollection,
+		AossActions.DeleteCollectionGroup,
+		AossActions.DeleteIndex,
+		AossActions.DeleteLifecyclePolicy,
+		AossActions.DeleteSecurityConfig,
+		AossActions.DeleteSecurityPolicy,
+		AossActions.DeleteVpcEndpoint,
+		AossActions.TagResource,
+		AossActions.UntagResource,
+		AossActions.UpdateAccessPolicy,
+		AossActions.UpdateAccountSettings,
+		AossActions.UpdateCollection,
+		AossActions.UpdateCollectionGroup,
+		AossActions.UpdateIndex,
+		AossActions.UpdateLifecyclePolicy,
+		AossActions.UpdateSecurityConfig,
+		AossActions.UpdateSecurityPolicy,
+		AossActions.UpdateVpcEndpoint,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AossActions.LIST_ACCESS_POLICIES,
-		AossActions.LIST_COLLECTION_GROUPS,
-		AossActions.LIST_COLLECTIONS,
-		AossActions.LIST_LIFECYCLE_POLICIES,
-		AossActions.LIST_SECURITY_CONFIGS,
-		AossActions.LIST_SECURITY_POLICIES,
-		AossActions.LIST_TAGS_FOR_RESOURCE,
-		AossActions.LIST_VPC_ENDPOINTS,
+	static readonly AllListActions: string[] = [
+		AossActions.ListAccessPolicies,
+		AossActions.ListCollectionGroups,
+		AossActions.ListCollections,
+		AossActions.ListLifecyclePolicies,
+		AossActions.ListSecurityConfigs,
+		AossActions.ListSecurityPolicies,
+		AossActions.ListTagsForResource,
+		AossActions.ListVpcEndpoints,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const CollectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection/(?<collectionId>[^:/?]+)$",
-);
-const CollectionGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection-group/(?<collectionGroupId>[^:/?]+)$",
-);
-const DashboardsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):dashboards/default$",
-);
+/**
+ * Properties for building a Collection ARN.
+ */
+export interface AossCollectionArnProps {
+	/** The CollectionId component of the ARN. */
+	readonly collectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Collection ARN.
+ */
+export interface AossCollectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollectionId component. */
+	readonly collectionId: string;
+}
+
+/**
+ * Properties for building a CollectionGroup ARN.
+ */
+export interface AossCollectionGroupArnProps {
+	/** The CollectionGroupId component of the ARN. */
+	readonly collectionGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CollectionGroup ARN.
+ */
+export interface AossCollectionGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollectionGroupId component. */
+	readonly collectionGroupId: string;
+}
+
+/**
+ * Properties for building a Dashboards ARN.
+ */
+export interface AossDashboardsArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dashboards ARN.
+ */
+export interface AossDashboardsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const CollectionArnRegex =
+	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection\/(?<collectionId>[^:/?]+)$/;
+const CollectionGroupArnRegex =
+	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):collection-group\/(?<collectionGroupId>[^:/?]+)$/;
+const DashboardsArnRegex =
+	/^arn:(?<partition>[^:]+):aoss:(?<region>[^:]*):(?<account>[^:]*):dashboards\/default$/;
 
 /**
  * ARN builders, validators, and parsers for aoss resources.
@@ -194,16 +271,7 @@ export class AossResources {
 	/**
 	 * Builds an ARN for the Collection resource.
 	 */
-	static collection(props: {
-		/** The CollectionId component of the ARN. */
-		readonly collectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static collection(props: AossCollectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aoss:${props.region ?? "*"}:${props.account ?? "*"}:collection/${props.collectionId}`;
 	}
 
@@ -218,12 +286,7 @@ export class AossResources {
 	 * Parses a Collection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCollectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		collectionId: string;
-	} {
+	static parseCollectionArn(arn: string): AossCollectionArnComponents {
 		const match = CollectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Collection ARN: ${arn}`);
@@ -239,16 +302,7 @@ export class AossResources {
 	/**
 	 * Builds an ARN for the CollectionGroup resource.
 	 */
-	static collectionGroup(props: {
-		/** The CollectionGroupId component of the ARN. */
-		readonly collectionGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static collectionGroup(props: AossCollectionGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aoss:${props.region ?? "*"}:${props.account ?? "*"}:collection-group/${props.collectionGroupId}`;
 	}
 
@@ -263,12 +317,9 @@ export class AossResources {
 	 * Parses a CollectionGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCollectionGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		collectionGroupId: string;
-	} {
+	static parseCollectionGroupArn(
+		arn: string,
+	): AossCollectionGroupArnComponents {
 		const match = CollectionGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid CollectionGroup ARN: ${arn}`);
@@ -284,14 +335,7 @@ export class AossResources {
 	/**
 	 * Builds an ARN for the Dashboards resource.
 	 */
-	static dashboards(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboards(props: AossDashboardsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aoss:${props.region ?? "*"}:${props.account ?? "*"}:dashboards/default`;
 	}
 
@@ -306,11 +350,7 @@ export class AossResources {
 	 * Parses a Dashboards ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseDashboardsArn(arn: string): AossDashboardsArnComponents {
 		const match = DashboardsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Dashboards ARN: ${arn}`);
@@ -328,146 +368,140 @@ export class AossResources {
  */
 export class AossOperations {
 	/** IAM actions required for the BatchGetCollection API call. */
-	static readonly BATCH_GET_COLLECTION: string[] = ["aoss:BatchGetCollection"];
+	static readonly BatchGetCollection: string[] = ["aoss:BatchGetCollection"];
 	/** IAM actions required for the BatchGetCollectionGroup API call. */
-	static readonly BATCH_GET_COLLECTION_GROUP: string[] = [
+	static readonly BatchGetCollectionGroup: string[] = [
 		"aoss:BatchGetCollectionGroup",
 	];
 	/** IAM actions required for the BatchGetEffectiveLifecyclePolicy API call. */
-	static readonly BATCH_GET_EFFECTIVE_LIFECYCLE_POLICY: string[] = [
+	static readonly BatchGetEffectiveLifecyclePolicy: string[] = [
 		"aoss:BatchGetEffectiveLifecyclePolicy",
 	];
 	/** IAM actions required for the BatchGetLifecyclePolicy API call. */
-	static readonly BATCH_GET_LIFECYCLE_POLICY: string[] = [
+	static readonly BatchGetLifecyclePolicy: string[] = [
 		"aoss:BatchGetLifecyclePolicy",
 	];
 	/** IAM actions required for the BatchGetVpcEndpoint API call. */
-	static readonly BATCH_GET_VPC_ENDPOINT: string[] = [
-		"aoss:BatchGetVpcEndpoint",
-	];
+	static readonly BatchGetVpcEndpoint: string[] = ["aoss:BatchGetVpcEndpoint"];
 	/** IAM actions required for the CreateAccessPolicy API call. */
-	static readonly CREATE_ACCESS_POLICY: string[] = ["aoss:CreateAccessPolicy"];
+	static readonly CreateAccessPolicy: string[] = ["aoss:CreateAccessPolicy"];
 	/** IAM actions required for the CreateCollection API call. */
-	static readonly CREATE_COLLECTION: string[] = [
+	static readonly CreateCollection: string[] = [
 		"aoss:AddCollectionToCollectionGroup",
 		"aoss:CreateCollection",
 		"aoss:TagResource",
 	];
 	/** IAM actions required for the CreateCollectionGroup API call. */
-	static readonly CREATE_COLLECTION_GROUP: string[] = [
+	static readonly CreateCollectionGroup: string[] = [
 		"aoss:CreateCollectionGroup",
 		"aoss:TagResource",
 	];
 	/** IAM actions required for the CreateIndex API call. */
-	static readonly CREATE_INDEX: string[] = ["aoss:CreateIndex"];
+	static readonly CreateIndex: string[] = ["aoss:CreateIndex"];
 	/** IAM actions required for the CreateLifecyclePolicy API call. */
-	static readonly CREATE_LIFECYCLE_POLICY: string[] = [
+	static readonly CreateLifecyclePolicy: string[] = [
 		"aoss:CreateLifecyclePolicy",
 	];
 	/** IAM actions required for the CreateSecurityConfig API call. */
-	static readonly CREATE_SECURITY_CONFIG: string[] = [
+	static readonly CreateSecurityConfig: string[] = [
 		"aoss:CreateSecurityConfig",
 	];
 	/** IAM actions required for the CreateSecurityPolicy API call. */
-	static readonly CREATE_SECURITY_POLICY: string[] = [
+	static readonly CreateSecurityPolicy: string[] = [
 		"aoss:CreateSecurityPolicy",
 	];
 	/** IAM actions required for the CreateVpcEndpoint API call. */
-	static readonly CREATE_VPC_ENDPOINT: string[] = ["aoss:CreateVpcEndpoint"];
+	static readonly CreateVpcEndpoint: string[] = ["aoss:CreateVpcEndpoint"];
 	/** IAM actions required for the DeleteAccessPolicy API call. */
-	static readonly DELETE_ACCESS_POLICY: string[] = ["aoss:DeleteAccessPolicy"];
+	static readonly DeleteAccessPolicy: string[] = ["aoss:DeleteAccessPolicy"];
 	/** IAM actions required for the DeleteCollection API call. */
-	static readonly DELETE_COLLECTION: string[] = ["aoss:DeleteCollection"];
+	static readonly DeleteCollection: string[] = ["aoss:DeleteCollection"];
 	/** IAM actions required for the DeleteCollectionGroup API call. */
-	static readonly DELETE_COLLECTION_GROUP: string[] = [
+	static readonly DeleteCollectionGroup: string[] = [
 		"aoss:DeleteCollectionGroup",
 	];
 	/** IAM actions required for the DeleteIndex API call. */
-	static readonly DELETE_INDEX: string[] = ["aoss:DeleteIndex"];
+	static readonly DeleteIndex: string[] = ["aoss:DeleteIndex"];
 	/** IAM actions required for the DeleteLifecyclePolicy API call. */
-	static readonly DELETE_LIFECYCLE_POLICY: string[] = [
+	static readonly DeleteLifecyclePolicy: string[] = [
 		"aoss:DeleteLifecyclePolicy",
 	];
 	/** IAM actions required for the DeleteSecurityConfig API call. */
-	static readonly DELETE_SECURITY_CONFIG: string[] = [
+	static readonly DeleteSecurityConfig: string[] = [
 		"aoss:DeleteSecurityConfig",
 	];
 	/** IAM actions required for the DeleteSecurityPolicy API call. */
-	static readonly DELETE_SECURITY_POLICY: string[] = [
+	static readonly DeleteSecurityPolicy: string[] = [
 		"aoss:DeleteSecurityPolicy",
 	];
 	/** IAM actions required for the DeleteVpcEndpoint API call. */
-	static readonly DELETE_VPC_ENDPOINT: string[] = ["aoss:DeleteVpcEndpoint"];
+	static readonly DeleteVpcEndpoint: string[] = ["aoss:DeleteVpcEndpoint"];
 	/** IAM actions required for the GetAccessPolicy API call. */
-	static readonly GET_ACCESS_POLICY: string[] = ["aoss:GetAccessPolicy"];
+	static readonly opGetAccessPolicy: string[] = ["aoss:GetAccessPolicy"];
 	/** IAM actions required for the GetAccountSettings API call. */
-	static readonly GET_ACCOUNT_SETTINGS: string[] = ["aoss:GetAccountSettings"];
+	static readonly opGetAccountSettings: string[] = ["aoss:GetAccountSettings"];
 	/** IAM actions required for the GetIndex API call. */
-	static readonly GET_INDEX: string[] = ["aoss:GetIndex"];
+	static readonly opGetIndex: string[] = ["aoss:GetIndex"];
 	/** IAM actions required for the GetPoliciesStats API call. */
-	static readonly GET_POLICIES_STATS: string[] = ["aoss:GetPoliciesStats"];
+	static readonly opGetPoliciesStats: string[] = ["aoss:GetPoliciesStats"];
 	/** IAM actions required for the GetSecurityConfig API call. */
-	static readonly GET_SECURITY_CONFIG: string[] = ["aoss:GetSecurityConfig"];
+	static readonly opGetSecurityConfig: string[] = ["aoss:GetSecurityConfig"];
 	/** IAM actions required for the GetSecurityPolicy API call. */
-	static readonly GET_SECURITY_POLICY: string[] = ["aoss:GetSecurityPolicy"];
+	static readonly opGetSecurityPolicy: string[] = ["aoss:GetSecurityPolicy"];
 	/** IAM actions required for the ListAccessPolicies API call. */
-	static readonly LIST_ACCESS_POLICIES: string[] = ["aoss:ListAccessPolicies"];
+	static readonly ListAccessPolicies: string[] = ["aoss:ListAccessPolicies"];
 	/** IAM actions required for the ListCollectionGroups API call. */
-	static readonly LIST_COLLECTION_GROUPS: string[] = [
+	static readonly ListCollectionGroups: string[] = [
 		"aoss:ListCollectionGroups",
 	];
 	/** IAM actions required for the ListCollections API call. */
-	static readonly LIST_COLLECTIONS: string[] = ["aoss:ListCollections"];
+	static readonly ListCollections: string[] = ["aoss:ListCollections"];
 	/** IAM actions required for the ListLifecyclePolicies API call. */
-	static readonly LIST_LIFECYCLE_POLICIES: string[] = [
+	static readonly ListLifecyclePolicies: string[] = [
 		"aoss:ListLifecyclePolicies",
 	];
 	/** IAM actions required for the ListSecurityConfigs API call. */
-	static readonly LIST_SECURITY_CONFIGS: string[] = [
-		"aoss:ListSecurityConfigs",
-	];
+	static readonly ListSecurityConfigs: string[] = ["aoss:ListSecurityConfigs"];
 	/** IAM actions required for the ListSecurityPolicies API call. */
-	static readonly LIST_SECURITY_POLICIES: string[] = [
+	static readonly ListSecurityPolicies: string[] = [
 		"aoss:ListSecurityPolicies",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"aoss:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["aoss:ListTagsForResource"];
 	/** IAM actions required for the ListVpcEndpoints API call. */
-	static readonly LIST_VPC_ENDPOINTS: string[] = ["aoss:ListVpcEndpoints"];
+	static readonly ListVpcEndpoints: string[] = ["aoss:ListVpcEndpoints"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["aoss:TagResource"];
+	static readonly TagResource: string[] = ["aoss:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["aoss:UntagResource"];
+	static readonly UntagResource: string[] = ["aoss:UntagResource"];
 	/** IAM actions required for the UpdateAccessPolicy API call. */
-	static readonly UPDATE_ACCESS_POLICY: string[] = ["aoss:UpdateAccessPolicy"];
+	static readonly UpdateAccessPolicy: string[] = ["aoss:UpdateAccessPolicy"];
 	/** IAM actions required for the UpdateAccountSettings API call. */
-	static readonly UPDATE_ACCOUNT_SETTINGS: string[] = [
+	static readonly UpdateAccountSettings: string[] = [
 		"aoss:UpdateAccountSettings",
 	];
 	/** IAM actions required for the UpdateCollection API call. */
-	static readonly UPDATE_COLLECTION: string[] = ["aoss:UpdateCollection"];
+	static readonly UpdateCollection: string[] = ["aoss:UpdateCollection"];
 	/** IAM actions required for the UpdateCollectionGroup API call. */
-	static readonly UPDATE_COLLECTION_GROUP: string[] = [
+	static readonly UpdateCollectionGroup: string[] = [
 		"aoss:UpdateCollectionGroup",
 	];
 	/** IAM actions required for the UpdateIndex API call. */
-	static readonly UPDATE_INDEX: string[] = ["aoss:UpdateIndex"];
+	static readonly UpdateIndex: string[] = ["aoss:UpdateIndex"];
 	/** IAM actions required for the UpdateLifecyclePolicy API call. */
-	static readonly UPDATE_LIFECYCLE_POLICY: string[] = [
+	static readonly UpdateLifecyclePolicy: string[] = [
 		"aoss:UpdateLifecyclePolicy",
 	];
 	/** IAM actions required for the UpdateSecurityConfig API call. */
-	static readonly UPDATE_SECURITY_CONFIG: string[] = [
+	static readonly UpdateSecurityConfig: string[] = [
 		"aoss:UpdateSecurityConfig",
 	];
 	/** IAM actions required for the UpdateSecurityPolicy API call. */
-	static readonly UPDATE_SECURITY_POLICY: string[] = [
+	static readonly UpdateSecurityPolicy: string[] = [
 		"aoss:UpdateSecurityPolicy",
 	];
 	/** IAM actions required for the UpdateVpcEndpoint API call. */
-	static readonly UPDATE_VPC_ENDPOINT: string[] = ["aoss:UpdateVpcEndpoint"];
+	static readonly UpdateVpcEndpoint: string[] = ["aoss:UpdateVpcEndpoint"];
 }
 
 /**
@@ -475,91 +509,86 @@ export class AossOperations {
  */
 export class AossConditions {
 	/** Condition keys applicable to the APIAccessAll action. */
-	static readonly API_ACCESS_ALL_CONDITION_KEYS: string[] = [
+	static readonly APIAccessAllConditionKeys: string[] = [
 		"aoss:CollectionId",
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the AddCollectionToCollectionGroup action. */
-	static readonly ADD_COLLECTION_TO_COLLECTION_GROUP_CONDITION_KEYS: string[] =
-		["aoss:collection-group"];
+	static readonly AddCollectionToCollectionGroupConditionKeys: string[] = [
+		"aoss:collection-group",
+	];
 	/** Condition keys applicable to the BatchGetCollection action. */
-	static readonly BATCH_GET_COLLECTION_CONDITION_KEYS: string[] = [
+	static readonly BatchGetCollectionConditionKeys: string[] = [
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the BatchGetCollectionGroup action. */
-	static readonly BATCH_GET_COLLECTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly BatchGetCollectionGroupConditionKeys: string[] = [
 		"aoss:collection-group",
 	];
 	/** Condition keys applicable to the CreateAccessPolicy action. */
-	static readonly CREATE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPolicyConditionKeys: string[] = [
 		"aoss:collection",
 		"aoss:index",
 	];
 	/** Condition keys applicable to the CreateCollection action. */
-	static readonly CREATE_COLLECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateCollectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCollectionGroup action. */
-	static readonly CREATE_COLLECTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateCollectionGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLifecyclePolicy action. */
-	static readonly CREATE_LIFECYCLE_POLICY_CONDITION_KEYS: string[] = [
-		"aoss:index",
-	];
+	static readonly CreateLifecyclePolicyConditionKeys: string[] = ["aoss:index"];
 	/** Condition keys applicable to the CreateSecurityPolicy action. */
-	static readonly CREATE_SECURITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateSecurityPolicyConditionKeys: string[] = [
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the DashboardsAccessAll action. */
-	static readonly DASHBOARDS_ACCESS_ALL_CONDITION_KEYS: string[] = [
+	static readonly DashboardsAccessAllConditionKeys: string[] = [
 		"aoss:CollectionId",
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the DeleteAccessPolicy action. */
-	static readonly DELETE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteAccessPolicyConditionKeys: string[] = [
 		"aoss:collection",
 		"aoss:index",
 	];
 	/** Condition keys applicable to the DeleteLifecyclePolicy action. */
-	static readonly DELETE_LIFECYCLE_POLICY_CONDITION_KEYS: string[] = [
-		"aoss:index",
-	];
+	static readonly DeleteLifecyclePolicyConditionKeys: string[] = ["aoss:index"];
 	/** Condition keys applicable to the DeleteSecurityPolicy action. */
-	static readonly DELETE_SECURITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteSecurityPolicyConditionKeys: string[] = [
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the GetAccessPolicy action. */
-	static readonly GET_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccessPolicyConditionKeys: string[] = [
 		"aoss:collection",
 		"aoss:index",
 	];
 	/** Condition keys applicable to the GetSecurityPolicy action. */
-	static readonly GET_SECURITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetSecurityPolicyConditionKeys: string[] = [
 		"aoss:collection",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateAccessPolicy action. */
-	static readonly UPDATE_ACCESS_POLICY_CONDITION_KEYS: string[] = [
+	static readonly UpdateAccessPolicyConditionKeys: string[] = [
 		"aoss:collection",
 		"aoss:index",
 	];
 	/** Condition keys applicable to the UpdateLifecyclePolicy action. */
-	static readonly UPDATE_LIFECYCLE_POLICY_CONDITION_KEYS: string[] = [
-		"aoss:index",
-	];
+	static readonly UpdateLifecyclePolicyConditionKeys: string[] = ["aoss:index"];
 	/** Condition keys applicable to the UpdateSecurityPolicy action. */
-	static readonly UPDATE_SECURITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly UpdateSecurityPolicyConditionKeys: string[] = [
 		"aoss:collection",
 	];
 
@@ -572,11 +601,11 @@ export class AossConditions {
 	/** Condition key: aoss:index (String) */
 	static readonly INDEX = "aoss:index";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aoss:CollectionId`.

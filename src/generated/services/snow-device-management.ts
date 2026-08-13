@@ -13,71 +13,125 @@ export class SnowDeviceManagementActions {
 	static readonly SERVICE_PREFIX = "snow-device-management";
 
 	/** [Write] snow-device-management:CancelTask */
-	static readonly CANCEL_TASK = "snow-device-management:CancelTask";
+	static readonly CancelTask = "snow-device-management:CancelTask";
 	/** [Write] snow-device-management:CreateTask */
-	static readonly CREATE_TASK = "snow-device-management:CreateTask";
+	static readonly CreateTask = "snow-device-management:CreateTask";
 	/** [Read] snow-device-management:DescribeDevice */
-	static readonly DESCRIBE_DEVICE = "snow-device-management:DescribeDevice";
+	static readonly DescribeDevice = "snow-device-management:DescribeDevice";
 	/** [Read] snow-device-management:DescribeDeviceEc2Instances */
-	static readonly DESCRIBE_DEVICE_EC2_INSTANCES =
+	static readonly DescribeDeviceEc2Instances =
 		"snow-device-management:DescribeDeviceEc2Instances";
 	/** [Read] snow-device-management:DescribeExecution */
-	static readonly DESCRIBE_EXECUTION =
+	static readonly DescribeExecution =
 		"snow-device-management:DescribeExecution";
 	/** [Read] snow-device-management:DescribeTask */
-	static readonly DESCRIBE_TASK = "snow-device-management:DescribeTask";
+	static readonly DescribeTask = "snow-device-management:DescribeTask";
 	/** [List] snow-device-management:ListDeviceResources */
-	static readonly LIST_DEVICE_RESOURCES =
+	static readonly ListDeviceResources =
 		"snow-device-management:ListDeviceResources";
 	/** [List] snow-device-management:ListDevices */
-	static readonly LIST_DEVICES = "snow-device-management:ListDevices";
+	static readonly ListDevices = "snow-device-management:ListDevices";
 	/** [List] snow-device-management:ListExecutions */
-	static readonly LIST_EXECUTIONS = "snow-device-management:ListExecutions";
+	static readonly ListExecutions = "snow-device-management:ListExecutions";
 	/** [Read] snow-device-management:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"snow-device-management:ListTagsForResource";
 	/** [List] snow-device-management:ListTasks */
-	static readonly LIST_TASKS = "snow-device-management:ListTasks";
+	static readonly ListTasks = "snow-device-management:ListTasks";
 	/** [Tagging] snow-device-management:TagResource */
-	static readonly TAG_RESOURCE = "snow-device-management:TagResource";
+	static readonly TagResource = "snow-device-management:TagResource";
 	/** [Tagging] snow-device-management:UntagResource */
-	static readonly UNTAG_RESOURCE = "snow-device-management:UntagResource";
+	static readonly UntagResource = "snow-device-management:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SnowDeviceManagementActions.DESCRIBE_DEVICE,
-		SnowDeviceManagementActions.DESCRIBE_DEVICE_EC2_INSTANCES,
-		SnowDeviceManagementActions.DESCRIBE_EXECUTION,
-		SnowDeviceManagementActions.DESCRIBE_TASK,
-		SnowDeviceManagementActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SnowDeviceManagementActions.DescribeDevice,
+		SnowDeviceManagementActions.DescribeDeviceEc2Instances,
+		SnowDeviceManagementActions.DescribeExecution,
+		SnowDeviceManagementActions.DescribeTask,
+		SnowDeviceManagementActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SnowDeviceManagementActions.CANCEL_TASK,
-		SnowDeviceManagementActions.CREATE_TASK,
+	static readonly AllWriteActions: string[] = [
+		SnowDeviceManagementActions.CancelTask,
+		SnowDeviceManagementActions.CreateTask,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SnowDeviceManagementActions.LIST_DEVICE_RESOURCES,
-		SnowDeviceManagementActions.LIST_DEVICES,
-		SnowDeviceManagementActions.LIST_EXECUTIONS,
-		SnowDeviceManagementActions.LIST_TASKS,
+	static readonly AllListActions: string[] = [
+		SnowDeviceManagementActions.ListDeviceResources,
+		SnowDeviceManagementActions.ListDevices,
+		SnowDeviceManagementActions.ListExecutions,
+		SnowDeviceManagementActions.ListTasks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SnowDeviceManagementActions.TAG_RESOURCE,
-		SnowDeviceManagementActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SnowDeviceManagementActions.TagResource,
+		SnowDeviceManagementActions.UntagResource,
 	];
 }
 
-const ManagedDeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):snow-device-management:(?<region>[^:]*):(?<account>[^:]*):managed-device/(?<resourceId>[^:/?]+)$",
-);
-const TaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):snow-device-management:(?<region>[^:]*):(?<account>[^:]*):task/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a managed-device ARN.
+ */
+export interface SnowDeviceManagementManagedDeviceArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a managed-device ARN.
+ */
+export interface SnowDeviceManagementManagedDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a task ARN.
+ */
+export interface SnowDeviceManagementTaskArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a task ARN.
+ */
+export interface SnowDeviceManagementTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ManagedDeviceArnRegex =
+	/^arn:(?<partition>[^:]+):snow-device-management:(?<region>[^:]*):(?<account>[^:]*):managed-device\/(?<resourceId>[^:/?]+)$/;
+const TaskArnRegex =
+	/^arn:(?<partition>[^:]+):snow-device-management:(?<region>[^:]*):(?<account>[^:]*):task\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for snow-device-management resources.
@@ -86,16 +140,9 @@ export class SnowDeviceManagementResources {
 	/**
 	 * Builds an ARN for the managed-device resource.
 	 */
-	static managedDevice(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedDevice(
+		props: SnowDeviceManagementManagedDeviceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:snow-device-management:${props.region ?? "*"}:${props.account ?? "*"}:managed-device/${props.resourceId}`;
 	}
 
@@ -110,12 +157,9 @@ export class SnowDeviceManagementResources {
 	 * Parses a managed-device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseManagedDeviceArn(
+		arn: string,
+	): SnowDeviceManagementManagedDeviceArnComponents {
 		const match = ManagedDeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid managed-device ARN: ${arn}`);
@@ -131,16 +175,7 @@ export class SnowDeviceManagementResources {
 	/**
 	 * Builds an ARN for the task resource.
 	 */
-	static task(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static task(props: SnowDeviceManagementTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:snow-device-management:${props.region ?? "*"}:${props.account ?? "*"}:task/${props.resourceId}`;
 	}
 
@@ -155,12 +190,7 @@ export class SnowDeviceManagementResources {
 	 * Parses a task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseTaskArn(arn: string): SnowDeviceManagementTaskArnComponents {
 		const match = TaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid task ARN: ${arn}`);
@@ -179,52 +209,52 @@ export class SnowDeviceManagementResources {
  */
 export class SnowDeviceManagementOperations {
 	/** IAM actions required for the CancelTask API call. */
-	static readonly CANCEL_TASK: string[] = ["snow-device-management:CancelTask"];
+	static readonly CancelTask: string[] = ["snow-device-management:CancelTask"];
 	/** IAM actions required for the CreateTask API call. */
-	static readonly CREATE_TASK: string[] = [
+	static readonly CreateTask: string[] = [
 		"snow-device-management:CreateTask",
 		"snow-device-management:TagResource",
 	];
 	/** IAM actions required for the DescribeDevice API call. */
-	static readonly DESCRIBE_DEVICE: string[] = [
+	static readonly DescribeDevice: string[] = [
 		"snow-device-management:DescribeDevice",
 	];
 	/** IAM actions required for the DescribeDeviceEc2Instances API call. */
-	static readonly DESCRIBE_DEVICE_EC2_INSTANCES: string[] = [
+	static readonly DescribeDeviceEc2Instances: string[] = [
 		"snow-device-management:DescribeDeviceEc2Instances",
 	];
 	/** IAM actions required for the DescribeExecution API call. */
-	static readonly DESCRIBE_EXECUTION: string[] = [
+	static readonly DescribeExecution: string[] = [
 		"snow-device-management:DescribeExecution",
 	];
 	/** IAM actions required for the DescribeTask API call. */
-	static readonly DESCRIBE_TASK: string[] = [
+	static readonly DescribeTask: string[] = [
 		"snow-device-management:DescribeTask",
 	];
 	/** IAM actions required for the ListDeviceResources API call. */
-	static readonly LIST_DEVICE_RESOURCES: string[] = [
+	static readonly ListDeviceResources: string[] = [
 		"snow-device-management:ListDeviceResources",
 	];
 	/** IAM actions required for the ListDevices API call. */
-	static readonly LIST_DEVICES: string[] = [
+	static readonly ListDevices: string[] = [
 		"snow-device-management:ListDevices",
 	];
 	/** IAM actions required for the ListExecutions API call. */
-	static readonly LIST_EXECUTIONS: string[] = [
+	static readonly ListExecutions: string[] = [
 		"snow-device-management:ListExecutions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"snow-device-management:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTasks API call. */
-	static readonly LIST_TASKS: string[] = ["snow-device-management:ListTasks"];
+	static readonly ListTasks: string[] = ["snow-device-management:ListTasks"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"snow-device-management:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"snow-device-management:UntagResource",
 	];
 }
@@ -234,30 +264,30 @@ export class SnowDeviceManagementOperations {
  */
 export class SnowDeviceManagementConditions {
 	/** Condition keys applicable to the CreateTask action. */
-	static readonly CREATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

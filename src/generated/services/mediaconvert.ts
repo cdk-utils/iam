@@ -13,134 +13,269 @@ export class MediaConvertActions {
 	static readonly SERVICE_PREFIX = "mediaconvert";
 
 	/** [Write] mediaconvert:AssociateCertificate */
-	static readonly ASSOCIATE_CERTIFICATE = "mediaconvert:AssociateCertificate";
+	static readonly AssociateCertificate = "mediaconvert:AssociateCertificate";
 	/** [Write] mediaconvert:CancelJob */
-	static readonly CANCEL_JOB = "mediaconvert:CancelJob";
+	static readonly CancelJob = "mediaconvert:CancelJob";
 	/** [Write] mediaconvert:CreateJob */
-	static readonly CREATE_JOB = "mediaconvert:CreateJob";
+	static readonly CreateJob = "mediaconvert:CreateJob";
 	/** [Write] mediaconvert:CreateJobTemplate */
-	static readonly CREATE_JOB_TEMPLATE = "mediaconvert:CreateJobTemplate";
+	static readonly CreateJobTemplate = "mediaconvert:CreateJobTemplate";
 	/** [Write] mediaconvert:CreatePreset */
-	static readonly CREATE_PRESET = "mediaconvert:CreatePreset";
+	static readonly CreatePreset = "mediaconvert:CreatePreset";
 	/** [Write] mediaconvert:CreateQueue */
-	static readonly CREATE_QUEUE = "mediaconvert:CreateQueue";
+	static readonly CreateQueue = "mediaconvert:CreateQueue";
 	/** [Write] mediaconvert:CreateResourceShare */
-	static readonly CREATE_RESOURCE_SHARE = "mediaconvert:CreateResourceShare";
+	static readonly CreateResourceShare = "mediaconvert:CreateResourceShare";
 	/** [Write] mediaconvert:DeleteJobTemplate */
-	static readonly DELETE_JOB_TEMPLATE = "mediaconvert:DeleteJobTemplate";
+	static readonly DeleteJobTemplate = "mediaconvert:DeleteJobTemplate";
 	/** [Write] mediaconvert:DeletePolicy */
-	static readonly DELETE_POLICY = "mediaconvert:DeletePolicy";
+	static readonly DeletePolicy = "mediaconvert:DeletePolicy";
 	/** [Write] mediaconvert:DeletePreset */
-	static readonly DELETE_PRESET = "mediaconvert:DeletePreset";
+	static readonly DeletePreset = "mediaconvert:DeletePreset";
 	/** [Write] mediaconvert:DeleteQueue */
-	static readonly DELETE_QUEUE = "mediaconvert:DeleteQueue";
+	static readonly DeleteQueue = "mediaconvert:DeleteQueue";
 	/** [List] mediaconvert:DescribeEndpoints */
-	static readonly DESCRIBE_ENDPOINTS = "mediaconvert:DescribeEndpoints";
+	static readonly DescribeEndpoints = "mediaconvert:DescribeEndpoints";
 	/** [Write] mediaconvert:DisassociateCertificate */
-	static readonly DISASSOCIATE_CERTIFICATE =
+	static readonly DisassociateCertificate =
 		"mediaconvert:DisassociateCertificate";
 	/** [Read] mediaconvert:GetJob */
-	static readonly GET_JOB = "mediaconvert:GetJob";
+	static readonly actionGetJob = "mediaconvert:GetJob";
 	/** [Read] mediaconvert:GetJobTemplate */
-	static readonly GET_JOB_TEMPLATE = "mediaconvert:GetJobTemplate";
+	static readonly actionGetJobTemplate = "mediaconvert:GetJobTemplate";
 	/** [Read] mediaconvert:GetPolicy */
-	static readonly GET_POLICY = "mediaconvert:GetPolicy";
+	static readonly actionGetPolicy = "mediaconvert:GetPolicy";
 	/** [Read] mediaconvert:GetPreset */
-	static readonly GET_PRESET = "mediaconvert:GetPreset";
+	static readonly actionGetPreset = "mediaconvert:GetPreset";
 	/** [Read] mediaconvert:GetQueue */
-	static readonly GET_QUEUE = "mediaconvert:GetQueue";
+	static readonly actionGetQueue = "mediaconvert:GetQueue";
 	/** [List] mediaconvert:ListJobTemplates */
-	static readonly LIST_JOB_TEMPLATES = "mediaconvert:ListJobTemplates";
+	static readonly ListJobTemplates = "mediaconvert:ListJobTemplates";
 	/** [List] mediaconvert:ListJobs */
-	static readonly LIST_JOBS = "mediaconvert:ListJobs";
+	static readonly ListJobs = "mediaconvert:ListJobs";
 	/** [List] mediaconvert:ListPresets */
-	static readonly LIST_PRESETS = "mediaconvert:ListPresets";
+	static readonly ListPresets = "mediaconvert:ListPresets";
 	/** [List] mediaconvert:ListQueues */
-	static readonly LIST_QUEUES = "mediaconvert:ListQueues";
+	static readonly ListQueues = "mediaconvert:ListQueues";
 	/** [Read] mediaconvert:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "mediaconvert:ListTagsForResource";
+	static readonly ListTagsForResource = "mediaconvert:ListTagsForResource";
 	/** [List] mediaconvert:ListVersions */
-	static readonly LIST_VERSIONS = "mediaconvert:ListVersions";
+	static readonly ListVersions = "mediaconvert:ListVersions";
 	/** [Read] mediaconvert:Probe */
-	static readonly PROBE = "mediaconvert:Probe";
+	static readonly Probe = "mediaconvert:Probe";
 	/** [Write] mediaconvert:PutPolicy */
-	static readonly PUT_POLICY = "mediaconvert:PutPolicy";
+	static readonly PutPolicy = "mediaconvert:PutPolicy";
 	/** [List] mediaconvert:SearchJobs */
-	static readonly SEARCH_JOBS = "mediaconvert:SearchJobs";
+	static readonly SearchJobs = "mediaconvert:SearchJobs";
 	/** [Tagging] mediaconvert:TagResource */
-	static readonly TAG_RESOURCE = "mediaconvert:TagResource";
+	static readonly TagResource = "mediaconvert:TagResource";
 	/** [Tagging] mediaconvert:UntagResource */
-	static readonly UNTAG_RESOURCE = "mediaconvert:UntagResource";
+	static readonly UntagResource = "mediaconvert:UntagResource";
 	/** [Write] mediaconvert:UpdateJobTemplate */
-	static readonly UPDATE_JOB_TEMPLATE = "mediaconvert:UpdateJobTemplate";
+	static readonly UpdateJobTemplate = "mediaconvert:UpdateJobTemplate";
 	/** [Write] mediaconvert:UpdatePreset */
-	static readonly UPDATE_PRESET = "mediaconvert:UpdatePreset";
+	static readonly UpdatePreset = "mediaconvert:UpdatePreset";
 	/** [Write] mediaconvert:UpdateQueue */
-	static readonly UPDATE_QUEUE = "mediaconvert:UpdateQueue";
+	static readonly UpdateQueue = "mediaconvert:UpdateQueue";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MediaConvertActions.GET_JOB,
-		MediaConvertActions.GET_JOB_TEMPLATE,
-		MediaConvertActions.GET_POLICY,
-		MediaConvertActions.GET_PRESET,
-		MediaConvertActions.GET_QUEUE,
-		MediaConvertActions.LIST_TAGS_FOR_RESOURCE,
-		MediaConvertActions.PROBE,
+	static readonly AllReadActions: string[] = [
+		MediaConvertActions.actionGetJob,
+		MediaConvertActions.actionGetJobTemplate,
+		MediaConvertActions.actionGetPolicy,
+		MediaConvertActions.actionGetPreset,
+		MediaConvertActions.actionGetQueue,
+		MediaConvertActions.ListTagsForResource,
+		MediaConvertActions.Probe,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MediaConvertActions.ASSOCIATE_CERTIFICATE,
-		MediaConvertActions.CANCEL_JOB,
-		MediaConvertActions.CREATE_JOB,
-		MediaConvertActions.CREATE_JOB_TEMPLATE,
-		MediaConvertActions.CREATE_PRESET,
-		MediaConvertActions.CREATE_QUEUE,
-		MediaConvertActions.CREATE_RESOURCE_SHARE,
-		MediaConvertActions.DELETE_JOB_TEMPLATE,
-		MediaConvertActions.DELETE_POLICY,
-		MediaConvertActions.DELETE_PRESET,
-		MediaConvertActions.DELETE_QUEUE,
-		MediaConvertActions.DISASSOCIATE_CERTIFICATE,
-		MediaConvertActions.PUT_POLICY,
-		MediaConvertActions.UPDATE_JOB_TEMPLATE,
-		MediaConvertActions.UPDATE_PRESET,
-		MediaConvertActions.UPDATE_QUEUE,
+	static readonly AllWriteActions: string[] = [
+		MediaConvertActions.AssociateCertificate,
+		MediaConvertActions.CancelJob,
+		MediaConvertActions.CreateJob,
+		MediaConvertActions.CreateJobTemplate,
+		MediaConvertActions.CreatePreset,
+		MediaConvertActions.CreateQueue,
+		MediaConvertActions.CreateResourceShare,
+		MediaConvertActions.DeleteJobTemplate,
+		MediaConvertActions.DeletePolicy,
+		MediaConvertActions.DeletePreset,
+		MediaConvertActions.DeleteQueue,
+		MediaConvertActions.DisassociateCertificate,
+		MediaConvertActions.PutPolicy,
+		MediaConvertActions.UpdateJobTemplate,
+		MediaConvertActions.UpdatePreset,
+		MediaConvertActions.UpdateQueue,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MediaConvertActions.DESCRIBE_ENDPOINTS,
-		MediaConvertActions.LIST_JOB_TEMPLATES,
-		MediaConvertActions.LIST_JOBS,
-		MediaConvertActions.LIST_PRESETS,
-		MediaConvertActions.LIST_QUEUES,
-		MediaConvertActions.LIST_VERSIONS,
-		MediaConvertActions.SEARCH_JOBS,
+	static readonly AllListActions: string[] = [
+		MediaConvertActions.DescribeEndpoints,
+		MediaConvertActions.ListJobTemplates,
+		MediaConvertActions.ListJobs,
+		MediaConvertActions.ListPresets,
+		MediaConvertActions.ListQueues,
+		MediaConvertActions.ListVersions,
+		MediaConvertActions.SearchJobs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		MediaConvertActions.TAG_RESOURCE,
-		MediaConvertActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		MediaConvertActions.TagResource,
+		MediaConvertActions.UntagResource,
 	];
 }
 
-const CertificateAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):certificates/(?<certificateARN>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):jobs/(?<jobId>[^:/?]+)$",
-);
-const JobTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):jobTemplates/(?<jobTemplateName>[^:/?]+)$",
-);
-const PresetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):presets/(?<presetName>[^:/?]+)$",
-);
-const QueueArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):queues/(?<queueName>[^:/?]+)$",
-);
+/**
+ * Properties for building a CertificateAssociation ARN.
+ */
+export interface MediaConvertCertificateAssociationArnProps {
+	/** The CertificateArn component of the ARN. */
+	readonly certificateARN: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CertificateAssociation ARN.
+ */
+export interface MediaConvertCertificateAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CertificateArn component. */
+	readonly certificateARN: string;
+}
+
+/**
+ * Properties for building a Job ARN.
+ */
+export interface MediaConvertJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Job ARN.
+ */
+export interface MediaConvertJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a JobTemplate ARN.
+ */
+export interface MediaConvertJobTemplateArnProps {
+	/** The JobTemplateName component of the ARN. */
+	readonly jobTemplateName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a JobTemplate ARN.
+ */
+export interface MediaConvertJobTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobTemplateName component. */
+	readonly jobTemplateName: string;
+}
+
+/**
+ * Properties for building a Preset ARN.
+ */
+export interface MediaConvertPresetArnProps {
+	/** The PresetName component of the ARN. */
+	readonly presetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Preset ARN.
+ */
+export interface MediaConvertPresetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PresetName component. */
+	readonly presetName: string;
+}
+
+/**
+ * Properties for building a Queue ARN.
+ */
+export interface MediaConvertQueueArnProps {
+	/** The QueueName component of the ARN. */
+	readonly queueName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Queue ARN.
+ */
+export interface MediaConvertQueueArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The QueueName component. */
+	readonly queueName: string;
+}
+
+const CertificateAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):certificates\/(?<certificateARN>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):jobs\/(?<jobId>[^:/?]+)$/;
+const JobTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):jobTemplates\/(?<jobTemplateName>[^:/?]+)$/;
+const PresetArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):presets\/(?<presetName>[^:/?]+)$/;
+const QueueArnRegex =
+	/^arn:(?<partition>[^:]+):mediaconvert:(?<region>[^:]*):(?<account>[^:]*):queues\/(?<queueName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for mediaconvert resources.
@@ -149,16 +284,9 @@ export class MediaConvertResources {
 	/**
 	 * Builds an ARN for the CertificateAssociation resource.
 	 */
-	static certificateAssociation(props: {
-		/** The CertificateArn component of the ARN. */
-		readonly certificateARN: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static certificateAssociation(
+		props: MediaConvertCertificateAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:mediaconvert:${props.region ?? "*"}:${props.account ?? "*"}:certificates/${props.certificateARN}`;
 	}
 
@@ -173,12 +301,9 @@ export class MediaConvertResources {
 	 * Parses a CertificateAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCertificateAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		certificateARN: string;
-	} {
+	static parseCertificateAssociationArn(
+		arn: string,
+	): MediaConvertCertificateAssociationArnComponents {
 		const match = CertificateAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid CertificateAssociation ARN: ${arn}`);
@@ -194,16 +319,7 @@ export class MediaConvertResources {
 	/**
 	 * Builds an ARN for the Job resource.
 	 */
-	static job(props: {
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: MediaConvertJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mediaconvert:${props.region ?? "*"}:${props.account ?? "*"}:jobs/${props.jobId}`;
 	}
 
@@ -218,12 +334,7 @@ export class MediaConvertResources {
 	 * Parses a Job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseJobArn(arn: string): MediaConvertJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Job ARN: ${arn}`);
@@ -239,16 +350,7 @@ export class MediaConvertResources {
 	/**
 	 * Builds an ARN for the JobTemplate resource.
 	 */
-	static jobTemplate(props: {
-		/** The JobTemplateName component of the ARN. */
-		readonly jobTemplateName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobTemplate(props: MediaConvertJobTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mediaconvert:${props.region ?? "*"}:${props.account ?? "*"}:jobTemplates/${props.jobTemplateName}`;
 	}
 
@@ -263,12 +365,9 @@ export class MediaConvertResources {
 	 * Parses a JobTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobTemplateName: string;
-	} {
+	static parseJobTemplateArn(
+		arn: string,
+	): MediaConvertJobTemplateArnComponents {
 		const match = JobTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid JobTemplate ARN: ${arn}`);
@@ -284,16 +383,7 @@ export class MediaConvertResources {
 	/**
 	 * Builds an ARN for the Preset resource.
 	 */
-	static preset(props: {
-		/** The PresetName component of the ARN. */
-		readonly presetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static preset(props: MediaConvertPresetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mediaconvert:${props.region ?? "*"}:${props.account ?? "*"}:presets/${props.presetName}`;
 	}
 
@@ -308,12 +398,7 @@ export class MediaConvertResources {
 	 * Parses a Preset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePresetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		presetName: string;
-	} {
+	static parsePresetArn(arn: string): MediaConvertPresetArnComponents {
 		const match = PresetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Preset ARN: ${arn}`);
@@ -329,16 +414,7 @@ export class MediaConvertResources {
 	/**
 	 * Builds an ARN for the Queue resource.
 	 */
-	static queue(props: {
-		/** The QueueName component of the ARN. */
-		readonly queueName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static queue(props: MediaConvertQueueArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mediaconvert:${props.region ?? "*"}:${props.account ?? "*"}:queues/${props.queueName}`;
 	}
 
@@ -353,12 +429,7 @@ export class MediaConvertResources {
 	 * Parses a Queue ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQueueArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		queueName: string;
-	} {
+	static parseQueueArn(arn: string): MediaConvertQueueArnComponents {
 		const match = QueueArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Queue ARN: ${arn}`);
@@ -377,108 +448,108 @@ export class MediaConvertResources {
  */
 export class MediaConvertOperations {
 	/** IAM actions required for the AssociateCertificate API call. */
-	static readonly ASSOCIATE_CERTIFICATE: string[] = [
+	static readonly AssociateCertificate: string[] = [
 		"mediaconvert:AssociateCertificate",
 	];
 	/** IAM actions required for the CancelJob API call. */
-	static readonly CANCEL_JOB: string[] = ["mediaconvert:CancelJob"];
+	static readonly CancelJob: string[] = ["mediaconvert:CancelJob"];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"mediaconvert:CreateJob",
 		"iam:PassRole",
 		"mediaconvert:TagResource",
 	];
 	/** IAM actions required for the CreateJobTemplate API call. */
-	static readonly CREATE_JOB_TEMPLATE: string[] = [
+	static readonly CreateJobTemplate: string[] = [
 		"mediaconvert:CreateJobTemplate",
 		"mediaconvert:TagResource",
 	];
 	/** IAM actions required for the CreatePreset API call. */
-	static readonly CREATE_PRESET: string[] = [
+	static readonly CreatePreset: string[] = [
 		"mediaconvert:CreatePreset",
 		"mediaconvert:TagResource",
 	];
 	/** IAM actions required for the CreateQueue API call. */
-	static readonly CREATE_QUEUE: string[] = [
+	static readonly CreateQueue: string[] = [
 		"mediaconvert:CreateQueue",
 		"mediaconvert:TagResource",
 	];
 	/** IAM actions required for the CreateResourceShare API call. */
-	static readonly CREATE_RESOURCE_SHARE: string[] = [
+	static readonly CreateResourceShare: string[] = [
 		"mediaconvert:CreateResourceShare",
 	];
 	/** IAM actions required for the DeleteJobTemplate API call. */
-	static readonly DELETE_JOB_TEMPLATE: string[] = [
+	static readonly DeleteJobTemplate: string[] = [
 		"mediaconvert:DeleteJobTemplate",
 	];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = ["mediaconvert:DeletePolicy"];
+	static readonly DeletePolicy: string[] = ["mediaconvert:DeletePolicy"];
 	/** IAM actions required for the DeletePreset API call. */
-	static readonly DELETE_PRESET: string[] = ["mediaconvert:DeletePreset"];
+	static readonly DeletePreset: string[] = ["mediaconvert:DeletePreset"];
 	/** IAM actions required for the DeleteQueue API call. */
-	static readonly DELETE_QUEUE: string[] = ["mediaconvert:DeleteQueue"];
+	static readonly DeleteQueue: string[] = ["mediaconvert:DeleteQueue"];
 	/** IAM actions required for the DescribeEndpoints API call. */
-	static readonly DESCRIBE_ENDPOINTS: string[] = [
+	static readonly DescribeEndpoints: string[] = [
 		"mediaconvert:DescribeEndpoints",
 	];
 	/** IAM actions required for the DisassociateCertificate API call. */
-	static readonly DISASSOCIATE_CERTIFICATE: string[] = [
+	static readonly DisassociateCertificate: string[] = [
 		"mediaconvert:DisassociateCertificate",
 	];
 	/** IAM actions required for the GetJob API call. */
-	static readonly GET_JOB: string[] = ["mediaconvert:GetJob"];
+	static readonly opGetJob: string[] = ["mediaconvert:GetJob"];
 	/** IAM actions required for the GetJobTemplate API call. */
-	static readonly GET_JOB_TEMPLATE: string[] = [
+	static readonly opGetJobTemplate: string[] = [
 		"mediaconvert:GetJobTemplate",
 		"mediaconvert:ListJobTemplates",
 	];
 	/** IAM actions required for the GetJobsQueryResults API call. */
-	static readonly GET_JOBS_QUERY_RESULTS: string[] = [];
+	static readonly opGetJobsQueryResults: string[] = [];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = ["mediaconvert:GetPolicy"];
+	static readonly opGetPolicy: string[] = ["mediaconvert:GetPolicy"];
 	/** IAM actions required for the GetPreset API call. */
-	static readonly GET_PRESET: string[] = [
+	static readonly opGetPreset: string[] = [
 		"mediaconvert:GetPreset",
 		"mediaconvert:ListPresets",
 	];
 	/** IAM actions required for the GetQueue API call. */
-	static readonly GET_QUEUE: string[] = ["mediaconvert:GetQueue"];
+	static readonly opGetQueue: string[] = ["mediaconvert:GetQueue"];
 	/** IAM actions required for the ListJobTemplates API call. */
-	static readonly LIST_JOB_TEMPLATES: string[] = [
+	static readonly ListJobTemplates: string[] = [
 		"mediaconvert:ListJobTemplates",
 	];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["mediaconvert:ListJobs"];
+	static readonly ListJobs: string[] = ["mediaconvert:ListJobs"];
 	/** IAM actions required for the ListPresets API call. */
-	static readonly LIST_PRESETS: string[] = ["mediaconvert:ListPresets"];
+	static readonly ListPresets: string[] = ["mediaconvert:ListPresets"];
 	/** IAM actions required for the ListQueues API call. */
-	static readonly LIST_QUEUES: string[] = ["mediaconvert:ListQueues"];
+	static readonly ListQueues: string[] = ["mediaconvert:ListQueues"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"mediaconvert:ListTagsForResource",
 	];
 	/** IAM actions required for the ListVersions API call. */
-	static readonly LIST_VERSIONS: string[] = ["mediaconvert:ListVersions"];
+	static readonly ListVersions: string[] = ["mediaconvert:ListVersions"];
 	/** IAM actions required for the Probe API call. */
-	static readonly PROBE: string[] = ["mediaconvert:Probe"];
+	static readonly Probe: string[] = ["mediaconvert:Probe"];
 	/** IAM actions required for the PutPolicy API call. */
-	static readonly PUT_POLICY: string[] = ["mediaconvert:PutPolicy"];
+	static readonly PutPolicy: string[] = ["mediaconvert:PutPolicy"];
 	/** IAM actions required for the SearchJobs API call. */
-	static readonly SEARCH_JOBS: string[] = ["mediaconvert:SearchJobs"];
+	static readonly SearchJobs: string[] = ["mediaconvert:SearchJobs"];
 	/** IAM actions required for the StartJobsQuery API call. */
-	static readonly START_JOBS_QUERY: string[] = [];
+	static readonly StartJobsQuery: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["mediaconvert:TagResource"];
+	static readonly TagResource: string[] = ["mediaconvert:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["mediaconvert:UntagResource"];
+	static readonly UntagResource: string[] = ["mediaconvert:UntagResource"];
 	/** IAM actions required for the UpdateJobTemplate API call. */
-	static readonly UPDATE_JOB_TEMPLATE: string[] = [
+	static readonly UpdateJobTemplate: string[] = [
 		"mediaconvert:UpdateJobTemplate",
 	];
 	/** IAM actions required for the UpdatePreset API call. */
-	static readonly UPDATE_PRESET: string[] = ["mediaconvert:UpdatePreset"];
+	static readonly UpdatePreset: string[] = ["mediaconvert:UpdatePreset"];
 	/** IAM actions required for the UpdateQueue API call. */
-	static readonly UPDATE_QUEUE: string[] = ["mediaconvert:UpdateQueue"];
+	static readonly UpdateQueue: string[] = ["mediaconvert:UpdateQueue"];
 }
 
 /**
@@ -486,7 +557,7 @@ export class MediaConvertOperations {
  */
 export class MediaConvertConditions {
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"mediaconvert:HttpInputsAllowed",
@@ -494,36 +565,36 @@ export class MediaConvertConditions {
 		"mediaconvert:S3InputsAllowed",
 	];
 	/** Condition keys applicable to the CreateJobTemplate action. */
-	static readonly CREATE_JOB_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateJobTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePreset action. */
-	static readonly CREATE_PRESET_CONDITION_KEYS: string[] = [
+	static readonly CreatePresetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateQueue action. */
-	static readonly CREATE_QUEUE_CONDITION_KEYS: string[] = [
+	static readonly CreateQueueConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: mediaconvert:HttpInputsAllowed (Bool) */
 	static readonly HTTP_INPUTS_ALLOWED = "mediaconvert:HttpInputsAllowed";
 	/** Condition key: mediaconvert:HttpsInputsAllowed (Bool) */

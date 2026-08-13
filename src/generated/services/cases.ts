@@ -13,174 +13,390 @@ export class CasesActions {
 	static readonly SERVICE_PREFIX = "cases";
 
 	/** [Read] cases:BatchGetCaseRule */
-	static readonly BATCH_GET_CASE_RULE = "cases:BatchGetCaseRule";
+	static readonly BatchGetCaseRule = "cases:BatchGetCaseRule";
 	/** [Read] cases:BatchGetField */
-	static readonly BATCH_GET_FIELD = "cases:BatchGetField";
+	static readonly BatchGetField = "cases:BatchGetField";
 	/** [Write] cases:BatchPutFieldOptions */
-	static readonly BATCH_PUT_FIELD_OPTIONS = "cases:BatchPutFieldOptions";
+	static readonly BatchPutFieldOptions = "cases:BatchPutFieldOptions";
 	/** [Write] cases:CreateCase */
-	static readonly CREATE_CASE = "cases:CreateCase";
+	static readonly CreateCase = "cases:CreateCase";
 	/** [Write] cases:CreateCaseRule */
-	static readonly CREATE_CASE_RULE = "cases:CreateCaseRule";
+	static readonly CreateCaseRule = "cases:CreateCaseRule";
 	/** [Write] cases:CreateDomain */
-	static readonly CREATE_DOMAIN = "cases:CreateDomain";
+	static readonly CreateDomain = "cases:CreateDomain";
 	/** [Write] cases:CreateField */
-	static readonly CREATE_FIELD = "cases:CreateField";
+	static readonly CreateField = "cases:CreateField";
 	/** [Write] cases:CreateLayout */
-	static readonly CREATE_LAYOUT = "cases:CreateLayout";
+	static readonly CreateLayout = "cases:CreateLayout";
 	/** [Write] cases:CreateRelatedItem */
-	static readonly CREATE_RELATED_ITEM = "cases:CreateRelatedItem";
+	static readonly CreateRelatedItem = "cases:CreateRelatedItem";
 	/** [Write] cases:CreateTemplate */
-	static readonly CREATE_TEMPLATE = "cases:CreateTemplate";
+	static readonly CreateTemplate = "cases:CreateTemplate";
 	/** [Write] cases:DeleteCase */
-	static readonly DELETE_CASE = "cases:DeleteCase";
+	static readonly DeleteCase = "cases:DeleteCase";
 	/** [Write] cases:DeleteCaseRule */
-	static readonly DELETE_CASE_RULE = "cases:DeleteCaseRule";
+	static readonly DeleteCaseRule = "cases:DeleteCaseRule";
 	/** [Write] cases:DeleteDomain */
-	static readonly DELETE_DOMAIN = "cases:DeleteDomain";
+	static readonly DeleteDomain = "cases:DeleteDomain";
 	/** [Write] cases:DeleteField */
-	static readonly DELETE_FIELD = "cases:DeleteField";
+	static readonly DeleteField = "cases:DeleteField";
 	/** [Write] cases:DeleteLayout */
-	static readonly DELETE_LAYOUT = "cases:DeleteLayout";
+	static readonly DeleteLayout = "cases:DeleteLayout";
 	/** [Write] cases:DeleteRelatedItem */
-	static readonly DELETE_RELATED_ITEM = "cases:DeleteRelatedItem";
+	static readonly DeleteRelatedItem = "cases:DeleteRelatedItem";
 	/** [Write] cases:DeleteTemplate */
-	static readonly DELETE_TEMPLATE = "cases:DeleteTemplate";
+	static readonly DeleteTemplate = "cases:DeleteTemplate";
 	/** [Read] cases:GetCase */
-	static readonly GET_CASE = "cases:GetCase";
+	static readonly actionGetCase = "cases:GetCase";
 	/** [Read] cases:GetCaseAuditEvents */
-	static readonly GET_CASE_AUDIT_EVENTS = "cases:GetCaseAuditEvents";
+	static readonly actionGetCaseAuditEvents = "cases:GetCaseAuditEvents";
 	/** [Read] cases:GetCaseEventConfiguration */
-	static readonly GET_CASE_EVENT_CONFIGURATION =
+	static readonly actionGetCaseEventConfiguration =
 		"cases:GetCaseEventConfiguration";
 	/** [Read] cases:GetDomain */
-	static readonly GET_DOMAIN = "cases:GetDomain";
+	static readonly actionGetDomain = "cases:GetDomain";
 	/** [Read] cases:GetLayout */
-	static readonly GET_LAYOUT = "cases:GetLayout";
+	static readonly actionGetLayout = "cases:GetLayout";
 	/** [Read] cases:GetTemplate */
-	static readonly GET_TEMPLATE = "cases:GetTemplate";
+	static readonly actionGetTemplate = "cases:GetTemplate";
 	/** [List] cases:ListCaseRules */
-	static readonly LIST_CASE_RULES = "cases:ListCaseRules";
+	static readonly ListCaseRules = "cases:ListCaseRules";
 	/** [List] cases:ListCasesForContact */
-	static readonly LIST_CASES_FOR_CONTACT = "cases:ListCasesForContact";
+	static readonly ListCasesForContact = "cases:ListCasesForContact";
 	/** [List] cases:ListDomains */
-	static readonly LIST_DOMAINS = "cases:ListDomains";
+	static readonly ListDomains = "cases:ListDomains";
 	/** [List] cases:ListFieldOptions */
-	static readonly LIST_FIELD_OPTIONS = "cases:ListFieldOptions";
+	static readonly ListFieldOptions = "cases:ListFieldOptions";
 	/** [List] cases:ListFields */
-	static readonly LIST_FIELDS = "cases:ListFields";
+	static readonly ListFields = "cases:ListFields";
 	/** [List] cases:ListLayouts */
-	static readonly LIST_LAYOUTS = "cases:ListLayouts";
+	static readonly ListLayouts = "cases:ListLayouts";
 	/** [Read] cases:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cases:ListTagsForResource";
+	static readonly ListTagsForResource = "cases:ListTagsForResource";
 	/** [List] cases:ListTemplates */
-	static readonly LIST_TEMPLATES = "cases:ListTemplates";
+	static readonly ListTemplates = "cases:ListTemplates";
 	/** [Write] cases:PutCaseEventConfiguration */
-	static readonly PUT_CASE_EVENT_CONFIGURATION =
-		"cases:PutCaseEventConfiguration";
+	static readonly PutCaseEventConfiguration = "cases:PutCaseEventConfiguration";
 	/** [Read] cases:SearchAllRelatedItems */
-	static readonly SEARCH_ALL_RELATED_ITEMS = "cases:SearchAllRelatedItems";
+	static readonly SearchAllRelatedItems = "cases:SearchAllRelatedItems";
 	/** [Read] cases:SearchCases */
-	static readonly SEARCH_CASES = "cases:SearchCases";
+	static readonly SearchCases = "cases:SearchCases";
 	/** [Read] cases:SearchRelatedItems */
-	static readonly SEARCH_RELATED_ITEMS = "cases:SearchRelatedItems";
+	static readonly SearchRelatedItems = "cases:SearchRelatedItems";
 	/** [Tagging] cases:TagResource */
-	static readonly TAG_RESOURCE = "cases:TagResource";
+	static readonly TagResource = "cases:TagResource";
 	/** [Tagging] cases:UntagResource */
-	static readonly UNTAG_RESOURCE = "cases:UntagResource";
+	static readonly UntagResource = "cases:UntagResource";
 	/** [Write] cases:UpdateCase */
-	static readonly UPDATE_CASE = "cases:UpdateCase";
+	static readonly UpdateCase = "cases:UpdateCase";
 	/** [Write] cases:UpdateCaseRule */
-	static readonly UPDATE_CASE_RULE = "cases:UpdateCaseRule";
+	static readonly UpdateCaseRule = "cases:UpdateCaseRule";
 	/** [Write] cases:UpdateField */
-	static readonly UPDATE_FIELD = "cases:UpdateField";
+	static readonly UpdateField = "cases:UpdateField";
 	/** [Write] cases:UpdateLayout */
-	static readonly UPDATE_LAYOUT = "cases:UpdateLayout";
+	static readonly UpdateLayout = "cases:UpdateLayout";
 	/** [Write] cases:UpdateRelatedItem */
-	static readonly UPDATE_RELATED_ITEM = "cases:UpdateRelatedItem";
+	static readonly UpdateRelatedItem = "cases:UpdateRelatedItem";
 	/** [Write] cases:UpdateTemplate */
-	static readonly UPDATE_TEMPLATE = "cases:UpdateTemplate";
+	static readonly UpdateTemplate = "cases:UpdateTemplate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CasesActions.BATCH_GET_CASE_RULE,
-		CasesActions.BATCH_GET_FIELD,
-		CasesActions.GET_CASE,
-		CasesActions.GET_CASE_AUDIT_EVENTS,
-		CasesActions.GET_CASE_EVENT_CONFIGURATION,
-		CasesActions.GET_DOMAIN,
-		CasesActions.GET_LAYOUT,
-		CasesActions.GET_TEMPLATE,
-		CasesActions.LIST_TAGS_FOR_RESOURCE,
-		CasesActions.SEARCH_ALL_RELATED_ITEMS,
-		CasesActions.SEARCH_CASES,
-		CasesActions.SEARCH_RELATED_ITEMS,
+	static readonly AllReadActions: string[] = [
+		CasesActions.BatchGetCaseRule,
+		CasesActions.BatchGetField,
+		CasesActions.actionGetCase,
+		CasesActions.actionGetCaseAuditEvents,
+		CasesActions.actionGetCaseEventConfiguration,
+		CasesActions.actionGetDomain,
+		CasesActions.actionGetLayout,
+		CasesActions.actionGetTemplate,
+		CasesActions.ListTagsForResource,
+		CasesActions.SearchAllRelatedItems,
+		CasesActions.SearchCases,
+		CasesActions.SearchRelatedItems,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CasesActions.BATCH_PUT_FIELD_OPTIONS,
-		CasesActions.CREATE_CASE,
-		CasesActions.CREATE_CASE_RULE,
-		CasesActions.CREATE_DOMAIN,
-		CasesActions.CREATE_FIELD,
-		CasesActions.CREATE_LAYOUT,
-		CasesActions.CREATE_RELATED_ITEM,
-		CasesActions.CREATE_TEMPLATE,
-		CasesActions.DELETE_CASE,
-		CasesActions.DELETE_CASE_RULE,
-		CasesActions.DELETE_DOMAIN,
-		CasesActions.DELETE_FIELD,
-		CasesActions.DELETE_LAYOUT,
-		CasesActions.DELETE_RELATED_ITEM,
-		CasesActions.DELETE_TEMPLATE,
-		CasesActions.PUT_CASE_EVENT_CONFIGURATION,
-		CasesActions.UPDATE_CASE,
-		CasesActions.UPDATE_CASE_RULE,
-		CasesActions.UPDATE_FIELD,
-		CasesActions.UPDATE_LAYOUT,
-		CasesActions.UPDATE_RELATED_ITEM,
-		CasesActions.UPDATE_TEMPLATE,
+	static readonly AllWriteActions: string[] = [
+		CasesActions.BatchPutFieldOptions,
+		CasesActions.CreateCase,
+		CasesActions.CreateCaseRule,
+		CasesActions.CreateDomain,
+		CasesActions.CreateField,
+		CasesActions.CreateLayout,
+		CasesActions.CreateRelatedItem,
+		CasesActions.CreateTemplate,
+		CasesActions.DeleteCase,
+		CasesActions.DeleteCaseRule,
+		CasesActions.DeleteDomain,
+		CasesActions.DeleteField,
+		CasesActions.DeleteLayout,
+		CasesActions.DeleteRelatedItem,
+		CasesActions.DeleteTemplate,
+		CasesActions.PutCaseEventConfiguration,
+		CasesActions.UpdateCase,
+		CasesActions.UpdateCaseRule,
+		CasesActions.UpdateField,
+		CasesActions.UpdateLayout,
+		CasesActions.UpdateRelatedItem,
+		CasesActions.UpdateTemplate,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CasesActions.LIST_CASE_RULES,
-		CasesActions.LIST_CASES_FOR_CONTACT,
-		CasesActions.LIST_DOMAINS,
-		CasesActions.LIST_FIELD_OPTIONS,
-		CasesActions.LIST_FIELDS,
-		CasesActions.LIST_LAYOUTS,
-		CasesActions.LIST_TEMPLATES,
+	static readonly AllListActions: string[] = [
+		CasesActions.ListCaseRules,
+		CasesActions.ListCasesForContact,
+		CasesActions.ListDomains,
+		CasesActions.ListFieldOptions,
+		CasesActions.ListFields,
+		CasesActions.ListLayouts,
+		CasesActions.ListTemplates,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CasesActions.TAG_RESOURCE,
-		CasesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CasesActions.TagResource,
+		CasesActions.UntagResource,
 	];
 }
 
-const CaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/case/(?<caseId>[^:/?]+)$",
-);
-const CaseRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/case-rule/(?<caseRuleId>[^:/?]+)$",
-);
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)$",
-);
-const FieldArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/field/(?<fieldId>[^:/?]+)$",
-);
-const LayoutArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/layout/(?<layoutId>[^:/?]+)$",
-);
-const RelatedItemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/case/(?<caseId>[^:/?]+)/related-item/(?<relatedItemId>[^:/?]+)$",
-);
-const TemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainId>[^:/?]+)/template/(?<templateId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Case ARN.
+ */
+export interface CasesCaseArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The CaseId component of the ARN. */
+	readonly caseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Case ARN.
+ */
+export interface CasesCaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The CaseId component. */
+	readonly caseId: string;
+}
+
+/**
+ * Properties for building a CaseRule ARN.
+ */
+export interface CasesCaseRuleArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The CaseRuleId component of the ARN. */
+	readonly caseRuleId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CaseRule ARN.
+ */
+export interface CasesCaseRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The CaseRuleId component. */
+	readonly caseRuleId: string;
+}
+
+/**
+ * Properties for building a Domain ARN.
+ */
+export interface CasesDomainArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Domain ARN.
+ */
+export interface CasesDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+}
+
+/**
+ * Properties for building a Field ARN.
+ */
+export interface CasesFieldArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The FieldId component of the ARN. */
+	readonly fieldId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Field ARN.
+ */
+export interface CasesFieldArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The FieldId component. */
+	readonly fieldId: string;
+}
+
+/**
+ * Properties for building a Layout ARN.
+ */
+export interface CasesLayoutArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The LayoutId component of the ARN. */
+	readonly layoutId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Layout ARN.
+ */
+export interface CasesLayoutArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The LayoutId component. */
+	readonly layoutId: string;
+}
+
+/**
+ * Properties for building a RelatedItem ARN.
+ */
+export interface CasesRelatedItemArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The CaseId component of the ARN. */
+	readonly caseId: string;
+	/** The RelatedItemId component of the ARN. */
+	readonly relatedItemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RelatedItem ARN.
+ */
+export interface CasesRelatedItemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The CaseId component. */
+	readonly caseId: string;
+	/** The RelatedItemId component. */
+	readonly relatedItemId: string;
+}
+
+/**
+ * Properties for building a Template ARN.
+ */
+export interface CasesTemplateArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The TemplateId component of the ARN. */
+	readonly templateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Template ARN.
+ */
+export interface CasesTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The TemplateId component. */
+	readonly templateId: string;
+}
+
+const CaseArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/case\/(?<caseId>[^:/?]+)$/;
+const CaseRuleArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/case-rule\/(?<caseRuleId>[^:/?]+)$/;
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)$/;
+const FieldArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/field\/(?<fieldId>[^:/?]+)$/;
+const LayoutArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/layout\/(?<layoutId>[^:/?]+)$/;
+const RelatedItemArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/case\/(?<caseId>[^:/?]+)\/related-item\/(?<relatedItemId>[^:/?]+)$/;
+const TemplateArnRegex =
+	/^arn:(?<partition>[^:]+):cases:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/template\/(?<templateId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cases resources.
@@ -189,18 +405,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the Case resource.
 	 */
-	static case(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The CaseId component of the ARN. */
-		readonly caseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static case(props: CasesCaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/case/${props.caseId}`;
 	}
 
@@ -215,13 +420,7 @@ export class CasesResources {
 	 * Parses a Case ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		caseId: string;
-	} {
+	static parseCaseArn(arn: string): CasesCaseArnComponents {
 		const match = CaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Case ARN: ${arn}`);
@@ -238,18 +437,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the CaseRule resource.
 	 */
-	static caseRule(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The CaseRuleId component of the ARN. */
-		readonly caseRuleId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static caseRule(props: CasesCaseRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/case-rule/${props.caseRuleId}`;
 	}
 
@@ -264,13 +452,7 @@ export class CasesResources {
 	 * Parses a CaseRule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCaseRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		caseRuleId: string;
-	} {
+	static parseCaseRuleArn(arn: string): CasesCaseRuleArnComponents {
 		const match = CaseRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid CaseRule ARN: ${arn}`);
@@ -287,16 +469,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the Domain resource.
 	 */
-	static domain(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: CasesDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}`;
 	}
 
@@ -311,12 +484,7 @@ export class CasesResources {
 	 * Parses a Domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-	} {
+	static parseDomainArn(arn: string): CasesDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Domain ARN: ${arn}`);
@@ -332,18 +500,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the Field resource.
 	 */
-	static field(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The FieldId component of the ARN. */
-		readonly fieldId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static field(props: CasesFieldArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/field/${props.fieldId}`;
 	}
 
@@ -358,13 +515,7 @@ export class CasesResources {
 	 * Parses a Field ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFieldArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		fieldId: string;
-	} {
+	static parseFieldArn(arn: string): CasesFieldArnComponents {
 		const match = FieldArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Field ARN: ${arn}`);
@@ -381,18 +532,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the Layout resource.
 	 */
-	static layout(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The LayoutId component of the ARN. */
-		readonly layoutId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static layout(props: CasesLayoutArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/layout/${props.layoutId}`;
 	}
 
@@ -407,13 +547,7 @@ export class CasesResources {
 	 * Parses a Layout ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLayoutArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		layoutId: string;
-	} {
+	static parseLayoutArn(arn: string): CasesLayoutArnComponents {
 		const match = LayoutArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Layout ARN: ${arn}`);
@@ -430,20 +564,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the RelatedItem resource.
 	 */
-	static relatedItem(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The CaseId component of the ARN. */
-		readonly caseId: string;
-		/** The RelatedItemId component of the ARN. */
-		readonly relatedItemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static relatedItem(props: CasesRelatedItemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/case/${props.caseId}/related-item/${props.relatedItemId}`;
 	}
 
@@ -458,14 +579,7 @@ export class CasesResources {
 	 * Parses a RelatedItem ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRelatedItemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		caseId: string;
-		relatedItemId: string;
-	} {
+	static parseRelatedItemArn(arn: string): CasesRelatedItemArnComponents {
 		const match = RelatedItemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid RelatedItem ARN: ${arn}`);
@@ -483,18 +597,7 @@ export class CasesResources {
 	/**
 	 * Builds an ARN for the Template resource.
 	 */
-	static template(props: {
-		/** The DomainId component of the ARN. */
-		readonly domainId: string;
-		/** The TemplateId component of the ARN. */
-		readonly templateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static template(props: CasesTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cases:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/template/${props.templateId}`;
 	}
 
@@ -509,13 +612,7 @@ export class CasesResources {
 	 * Parses a Template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainId: string;
-		templateId: string;
-	} {
+	static parseTemplateArn(arn: string): CasesTemplateArnComponents {
 		const match = TemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Template ARN: ${arn}`);
@@ -535,108 +632,102 @@ export class CasesResources {
  */
 export class CasesOperations {
 	/** IAM actions required for the BatchGetCaseRule API call. */
-	static readonly BATCH_GET_CASE_RULE: string[] = ["cases:BatchGetCaseRule"];
+	static readonly BatchGetCaseRule: string[] = ["cases:BatchGetCaseRule"];
 	/** IAM actions required for the BatchGetField API call. */
-	static readonly BATCH_GET_FIELD: string[] = ["cases:BatchGetField"];
+	static readonly BatchGetField: string[] = ["cases:BatchGetField"];
 	/** IAM actions required for the BatchPutFieldOptions API call. */
-	static readonly BATCH_PUT_FIELD_OPTIONS: string[] = [
+	static readonly BatchPutFieldOptions: string[] = [
 		"cases:BatchPutFieldOptions",
 	];
 	/** IAM actions required for the CreateCase API call. */
-	static readonly CREATE_CASE: string[] = [
+	static readonly CreateCase: string[] = [
 		"cases:CreateCase",
 		"cases:TagResource",
 	];
 	/** IAM actions required for the CreateCaseRule API call. */
-	static readonly CREATE_CASE_RULE: string[] = ["cases:CreateCaseRule"];
+	static readonly CreateCaseRule: string[] = ["cases:CreateCaseRule"];
 	/** IAM actions required for the CreateDomain API call. */
-	static readonly CREATE_DOMAIN: string[] = ["cases:CreateDomain"];
+	static readonly CreateDomain: string[] = ["cases:CreateDomain"];
 	/** IAM actions required for the CreateField API call. */
-	static readonly CREATE_FIELD: string[] = ["cases:CreateField"];
+	static readonly CreateField: string[] = ["cases:CreateField"];
 	/** IAM actions required for the CreateLayout API call. */
-	static readonly CREATE_LAYOUT: string[] = ["cases:CreateLayout"];
+	static readonly CreateLayout: string[] = ["cases:CreateLayout"];
 	/** IAM actions required for the CreateRelatedItem API call. */
-	static readonly CREATE_RELATED_ITEM: string[] = ["cases:CreateRelatedItem"];
+	static readonly CreateRelatedItem: string[] = ["cases:CreateRelatedItem"];
 	/** IAM actions required for the CreateTemplate API call. */
-	static readonly CREATE_TEMPLATE: string[] = ["cases:CreateTemplate"];
+	static readonly CreateTemplate: string[] = ["cases:CreateTemplate"];
 	/** IAM actions required for the DeleteCase API call. */
-	static readonly DELETE_CASE: string[] = ["cases:DeleteCase"];
+	static readonly DeleteCase: string[] = ["cases:DeleteCase"];
 	/** IAM actions required for the DeleteCaseRule API call. */
-	static readonly DELETE_CASE_RULE: string[] = ["cases:DeleteCaseRule"];
+	static readonly DeleteCaseRule: string[] = ["cases:DeleteCaseRule"];
 	/** IAM actions required for the DeleteDomain API call. */
-	static readonly DELETE_DOMAIN: string[] = ["cases:DeleteDomain"];
+	static readonly DeleteDomain: string[] = ["cases:DeleteDomain"];
 	/** IAM actions required for the DeleteField API call. */
-	static readonly DELETE_FIELD: string[] = ["cases:DeleteField"];
+	static readonly DeleteField: string[] = ["cases:DeleteField"];
 	/** IAM actions required for the DeleteLayout API call. */
-	static readonly DELETE_LAYOUT: string[] = ["cases:DeleteLayout"];
+	static readonly DeleteLayout: string[] = ["cases:DeleteLayout"];
 	/** IAM actions required for the DeleteRelatedItem API call. */
-	static readonly DELETE_RELATED_ITEM: string[] = ["cases:DeleteRelatedItem"];
+	static readonly DeleteRelatedItem: string[] = ["cases:DeleteRelatedItem"];
 	/** IAM actions required for the DeleteTemplate API call. */
-	static readonly DELETE_TEMPLATE: string[] = ["cases:DeleteTemplate"];
+	static readonly DeleteTemplate: string[] = ["cases:DeleteTemplate"];
 	/** IAM actions required for the GetCase API call. */
-	static readonly GET_CASE: string[] = ["cases:GetCase"];
+	static readonly opGetCase: string[] = ["cases:GetCase"];
 	/** IAM actions required for the GetCaseAuditEvents API call. */
-	static readonly GET_CASE_AUDIT_EVENTS: string[] = [
-		"cases:GetCaseAuditEvents",
-	];
+	static readonly opGetCaseAuditEvents: string[] = ["cases:GetCaseAuditEvents"];
 	/** IAM actions required for the GetCaseEventConfiguration API call. */
-	static readonly GET_CASE_EVENT_CONFIGURATION: string[] = [
+	static readonly opGetCaseEventConfiguration: string[] = [
 		"cases:GetCaseEventConfiguration",
 	];
 	/** IAM actions required for the GetDomain API call. */
-	static readonly GET_DOMAIN: string[] = ["cases:GetDomain"];
+	static readonly opGetDomain: string[] = ["cases:GetDomain"];
 	/** IAM actions required for the GetLayout API call. */
-	static readonly GET_LAYOUT: string[] = ["cases:GetLayout"];
+	static readonly opGetLayout: string[] = ["cases:GetLayout"];
 	/** IAM actions required for the GetTemplate API call. */
-	static readonly GET_TEMPLATE: string[] = ["cases:GetTemplate"];
+	static readonly opGetTemplate: string[] = ["cases:GetTemplate"];
 	/** IAM actions required for the ListCaseRules API call. */
-	static readonly LIST_CASE_RULES: string[] = ["cases:ListCaseRules"];
+	static readonly ListCaseRules: string[] = ["cases:ListCaseRules"];
 	/** IAM actions required for the ListCasesForContact API call. */
-	static readonly LIST_CASES_FOR_CONTACT: string[] = [
-		"cases:ListCasesForContact",
-	];
+	static readonly ListCasesForContact: string[] = ["cases:ListCasesForContact"];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = ["cases:ListDomains"];
+	static readonly ListDomains: string[] = ["cases:ListDomains"];
 	/** IAM actions required for the ListFieldOptions API call. */
-	static readonly LIST_FIELD_OPTIONS: string[] = ["cases:ListFieldOptions"];
+	static readonly ListFieldOptions: string[] = ["cases:ListFieldOptions"];
 	/** IAM actions required for the ListFields API call. */
-	static readonly LIST_FIELDS: string[] = ["cases:ListFields"];
+	static readonly ListFields: string[] = ["cases:ListFields"];
 	/** IAM actions required for the ListLayouts API call. */
-	static readonly LIST_LAYOUTS: string[] = ["cases:ListLayouts"];
+	static readonly ListLayouts: string[] = ["cases:ListLayouts"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"cases:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["cases:ListTagsForResource"];
 	/** IAM actions required for the ListTemplates API call. */
-	static readonly LIST_TEMPLATES: string[] = ["cases:ListTemplates"];
+	static readonly ListTemplates: string[] = ["cases:ListTemplates"];
 	/** IAM actions required for the PutCaseEventConfiguration API call. */
-	static readonly PUT_CASE_EVENT_CONFIGURATION: string[] = [
+	static readonly PutCaseEventConfiguration: string[] = [
 		"cases:PutCaseEventConfiguration",
 	];
 	/** IAM actions required for the SearchAllRelatedItems API call. */
-	static readonly SEARCH_ALL_RELATED_ITEMS: string[] = [
+	static readonly SearchAllRelatedItems: string[] = [
 		"cases:SearchAllRelatedItems",
 	];
 	/** IAM actions required for the SearchCases API call. */
-	static readonly SEARCH_CASES: string[] = ["cases:SearchCases"];
+	static readonly SearchCases: string[] = ["cases:SearchCases"];
 	/** IAM actions required for the SearchRelatedItems API call. */
-	static readonly SEARCH_RELATED_ITEMS: string[] = ["cases:SearchRelatedItems"];
+	static readonly SearchRelatedItems: string[] = ["cases:SearchRelatedItems"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cases:TagResource"];
+	static readonly TagResource: string[] = ["cases:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cases:UntagResource"];
+	static readonly UntagResource: string[] = ["cases:UntagResource"];
 	/** IAM actions required for the UpdateCase API call. */
-	static readonly UPDATE_CASE: string[] = ["cases:UpdateCase"];
+	static readonly UpdateCase: string[] = ["cases:UpdateCase"];
 	/** IAM actions required for the UpdateCaseRule API call. */
-	static readonly UPDATE_CASE_RULE: string[] = ["cases:UpdateCaseRule"];
+	static readonly UpdateCaseRule: string[] = ["cases:UpdateCaseRule"];
 	/** IAM actions required for the UpdateField API call. */
-	static readonly UPDATE_FIELD: string[] = ["cases:UpdateField"];
+	static readonly UpdateField: string[] = ["cases:UpdateField"];
 	/** IAM actions required for the UpdateLayout API call. */
-	static readonly UPDATE_LAYOUT: string[] = ["cases:UpdateLayout"];
+	static readonly UpdateLayout: string[] = ["cases:UpdateLayout"];
 	/** IAM actions required for the UpdateRelatedItem API call. */
-	static readonly UPDATE_RELATED_ITEM: string[] = ["cases:UpdateRelatedItem"];
+	static readonly UpdateRelatedItem: string[] = ["cases:UpdateRelatedItem"];
 	/** IAM actions required for the UpdateTemplate API call. */
-	static readonly UPDATE_TEMPLATE: string[] = ["cases:UpdateTemplate"];
+	static readonly UpdateTemplate: string[] = ["cases:UpdateTemplate"];
 }
 
 /**
@@ -644,27 +735,27 @@ export class CasesOperations {
  */
 export class CasesConditions {
 	/** Condition keys applicable to the CreateCase action. */
-	static readonly CREATE_CASE_CONDITION_KEYS: string[] = ["connect:UserArn"];
+	static readonly CreateCaseConditionKeys: string[] = ["connect:UserArn"];
 	/** Condition keys applicable to the CreateRelatedItem action. */
-	static readonly CREATE_RELATED_ITEM_CONDITION_KEYS: string[] = [
+	static readonly CreateRelatedItemConditionKeys: string[] = [
 		"connect:UserArn",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateCase action. */
-	static readonly UPDATE_CASE_CONDITION_KEYS: string[] = ["connect:UserArn"];
+	static readonly UpdateCaseConditionKeys: string[] = ["connect:UserArn"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cases:CreatedBy (String) */
 	static readonly CREATED_BY = "cases:CreatedBy";
 	/** Condition key: cases:RelatedItemType (String) */

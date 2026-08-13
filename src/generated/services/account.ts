@@ -13,80 +13,132 @@ export class AccountActions {
 	static readonly SERVICE_PREFIX = "account";
 
 	/** [Write] account:AcceptPrimaryEmailUpdate */
-	static readonly ACCEPT_PRIMARY_EMAIL_UPDATE =
-		"account:AcceptPrimaryEmailUpdate";
+	static readonly AcceptPrimaryEmailUpdate = "account:AcceptPrimaryEmailUpdate";
 	/** [Write] account:CloseAccount */
-	static readonly CLOSE_ACCOUNT = "account:CloseAccount";
+	static readonly CloseAccount = "account:CloseAccount";
 	/** [Write] account:DeleteAlternateContact */
-	static readonly DELETE_ALTERNATE_CONTACT = "account:DeleteAlternateContact";
+	static readonly DeleteAlternateContact = "account:DeleteAlternateContact";
 	/** [Write] account:DisableRegion */
-	static readonly DISABLE_REGION = "account:DisableRegion";
+	static readonly DisableRegion = "account:DisableRegion";
 	/** [Write] account:EnableRegion */
-	static readonly ENABLE_REGION = "account:EnableRegion";
+	static readonly EnableRegion = "account:EnableRegion";
 	/** [Read] account:GetAccountInformation */
-	static readonly GET_ACCOUNT_INFORMATION = "account:GetAccountInformation";
+	static readonly actionGetAccountInformation = "account:GetAccountInformation";
 	/** [Read] account:GetAlternateContact */
-	static readonly GET_ALTERNATE_CONTACT = "account:GetAlternateContact";
+	static readonly actionGetAlternateContact = "account:GetAlternateContact";
 	/** [Read] account:GetContactInformation */
-	static readonly GET_CONTACT_INFORMATION = "account:GetContactInformation";
+	static readonly actionGetContactInformation = "account:GetContactInformation";
 	/** [Read] account:GetGovCloudAccountInformation */
-	static readonly GET_GOV_CLOUD_ACCOUNT_INFORMATION =
+	static readonly actionGetGovCloudAccountInformation =
 		"account:GetGovCloudAccountInformation";
 	/** [Read] account:GetPrimaryEmail */
-	static readonly GET_PRIMARY_EMAIL = "account:GetPrimaryEmail";
+	static readonly actionGetPrimaryEmail = "account:GetPrimaryEmail";
 	/** [Read] account:GetPrimaryEmailUpdateStatus */
-	static readonly GET_PRIMARY_EMAIL_UPDATE_STATUS =
+	static readonly actionGetPrimaryEmailUpdateStatus =
 		"account:GetPrimaryEmailUpdateStatus";
 	/** [Read] account:GetRegionOptStatus */
-	static readonly GET_REGION_OPT_STATUS = "account:GetRegionOptStatus";
+	static readonly actionGetRegionOptStatus = "account:GetRegionOptStatus";
 	/** [List] account:ListRegions */
-	static readonly LIST_REGIONS = "account:ListRegions";
+	static readonly ListRegions = "account:ListRegions";
 	/** [Write] account:PutAccountName */
-	static readonly PUT_ACCOUNT_NAME = "account:PutAccountName";
+	static readonly PutAccountName = "account:PutAccountName";
 	/** [Write] account:PutAlternateContact */
-	static readonly PUT_ALTERNATE_CONTACT = "account:PutAlternateContact";
+	static readonly PutAlternateContact = "account:PutAlternateContact";
 	/** [Write] account:PutContactInformation */
-	static readonly PUT_CONTACT_INFORMATION = "account:PutContactInformation";
+	static readonly PutContactInformation = "account:PutContactInformation";
 	/** [Write] account:StartPrimaryEmailUpdate */
-	static readonly START_PRIMARY_EMAIL_UPDATE =
-		"account:StartPrimaryEmailUpdate";
+	static readonly StartPrimaryEmailUpdate = "account:StartPrimaryEmailUpdate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AccountActions.GET_ACCOUNT_INFORMATION,
-		AccountActions.GET_ALTERNATE_CONTACT,
-		AccountActions.GET_CONTACT_INFORMATION,
-		AccountActions.GET_GOV_CLOUD_ACCOUNT_INFORMATION,
-		AccountActions.GET_PRIMARY_EMAIL,
-		AccountActions.GET_PRIMARY_EMAIL_UPDATE_STATUS,
-		AccountActions.GET_REGION_OPT_STATUS,
+	static readonly AllReadActions: string[] = [
+		AccountActions.actionGetAccountInformation,
+		AccountActions.actionGetAlternateContact,
+		AccountActions.actionGetContactInformation,
+		AccountActions.actionGetGovCloudAccountInformation,
+		AccountActions.actionGetPrimaryEmail,
+		AccountActions.actionGetPrimaryEmailUpdateStatus,
+		AccountActions.actionGetRegionOptStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AccountActions.ACCEPT_PRIMARY_EMAIL_UPDATE,
-		AccountActions.CLOSE_ACCOUNT,
-		AccountActions.DELETE_ALTERNATE_CONTACT,
-		AccountActions.DISABLE_REGION,
-		AccountActions.ENABLE_REGION,
-		AccountActions.PUT_ACCOUNT_NAME,
-		AccountActions.PUT_ALTERNATE_CONTACT,
-		AccountActions.PUT_CONTACT_INFORMATION,
-		AccountActions.START_PRIMARY_EMAIL_UPDATE,
+	static readonly AllWriteActions: string[] = [
+		AccountActions.AcceptPrimaryEmailUpdate,
+		AccountActions.CloseAccount,
+		AccountActions.DeleteAlternateContact,
+		AccountActions.DisableRegion,
+		AccountActions.EnableRegion,
+		AccountActions.PutAccountName,
+		AccountActions.PutAlternateContact,
+		AccountActions.PutContactInformation,
+		AccountActions.StartPrimaryEmailUpdate,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [AccountActions.LIST_REGIONS];
+	static readonly AllListActions: string[] = [AccountActions.ListRegions];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const AccountArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):account::(?<account>[^:]*):account$",
-);
-const AccountInOrganizationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):account::(?<managementAccountId>[^:/?]+):account/o-(?<organizationId>[^:/?]+)/(?<memberAccountId>[^:/?]+)$",
-);
+/**
+ * Properties for building a account ARN.
+ */
+export interface AccountAccountArnProps {
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a account ARN.
+ */
+export interface AccountAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a accountInOrganization ARN.
+ */
+export interface AccountAccountInOrganizationArnProps {
+	/** The ManagementAccountId component of the ARN. */
+	readonly managementAccountId: string;
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The MemberAccountId component of the ARN. */
+	readonly memberAccountId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accountInOrganization ARN.
+ */
+export interface AccountAccountInOrganizationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ManagementAccountId component. */
+	readonly managementAccountId: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The MemberAccountId component. */
+	readonly memberAccountId: string;
+}
+
+const AccountArnRegex =
+	/^arn:(?<partition>[^:]+):account::(?<account>[^:]*):account$/;
+const AccountInOrganizationArnRegex =
+	/^arn:(?<partition>[^:]+):account::(?<managementAccountId>[^:/?]+):account\/o-(?<organizationId>[^:/?]+)\/(?<memberAccountId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for account resources.
@@ -95,12 +147,7 @@ export class AccountResources {
 	/**
 	 * Builds an ARN for the account resource.
 	 */
-	static account(props: {
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static account(props: AccountAccountArnProps): string {
 		return `arn:${props.partition ?? "aws"}:account::${props.account ?? "*"}:account`;
 	}
 
@@ -115,7 +162,7 @@ export class AccountResources {
 	 * Parses a account ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountArn(arn: string): { partition: string; account: string } {
+	static parseAccountArn(arn: string): AccountAccountArnComponents {
 		const match = AccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid account ARN: ${arn}`);
@@ -129,20 +176,9 @@ export class AccountResources {
 	/**
 	 * Builds an ARN for the accountInOrganization resource.
 	 */
-	static accountInOrganization(props: {
-		/** The ManagementAccountId component of the ARN. */
-		readonly managementAccountId: string;
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The MemberAccountId component of the ARN. */
-		readonly memberAccountId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accountInOrganization(
+		props: AccountAccountInOrganizationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:account::${props.managementAccountId}:account/o-${props.organizationId}/${props.memberAccountId}`;
 	}
 
@@ -157,14 +193,9 @@ export class AccountResources {
 	 * Parses a accountInOrganization ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountInOrganizationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		managementAccountId: string;
-		organizationId: string;
-		memberAccountId: string;
-	} {
+	static parseAccountInOrganizationArn(
+		arn: string,
+	): AccountAccountInOrganizationArnComponents {
 		const match = AccountInOrganizationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid accountInOrganization ARN: ${arn}`);
@@ -185,61 +216,61 @@ export class AccountResources {
  */
 export class AccountOperations {
 	/** IAM actions required for the AcceptPrimaryEmailUpdate API call. */
-	static readonly ACCEPT_PRIMARY_EMAIL_UPDATE: string[] = [
+	static readonly AcceptPrimaryEmailUpdate: string[] = [
 		"account:AcceptPrimaryEmailUpdate",
 		"iam:UpdateAccountEmailAddress",
 	];
 	/** IAM actions required for the DeleteAlternateContact API call. */
-	static readonly DELETE_ALTERNATE_CONTACT: string[] = [
+	static readonly DeleteAlternateContact: string[] = [
 		"account:DeleteAlternateContact",
 	];
 	/** IAM actions required for the DisableRegion API call. */
-	static readonly DISABLE_REGION: string[] = ["account:DisableRegion"];
+	static readonly DisableRegion: string[] = ["account:DisableRegion"];
 	/** IAM actions required for the EnableRegion API call. */
-	static readonly ENABLE_REGION: string[] = ["account:EnableRegion"];
+	static readonly EnableRegion: string[] = ["account:EnableRegion"];
 	/** IAM actions required for the GetAccountInformation API call. */
-	static readonly GET_ACCOUNT_INFORMATION: string[] = [
+	static readonly opGetAccountInformation: string[] = [
 		"account:GetAccountInformation",
 	];
 	/** IAM actions required for the GetAlternateContact API call. */
-	static readonly GET_ALTERNATE_CONTACT: string[] = [
+	static readonly opGetAlternateContact: string[] = [
 		"account:GetAlternateContact",
 	];
 	/** IAM actions required for the GetContactInformation API call. */
-	static readonly GET_CONTACT_INFORMATION: string[] = [
+	static readonly opGetContactInformation: string[] = [
 		"account:GetContactInformation",
 	];
 	/** IAM actions required for the GetGovCloudAccountInformation API call. */
-	static readonly GET_GOV_CLOUD_ACCOUNT_INFORMATION: string[] = [
+	static readonly opGetGovCloudAccountInformation: string[] = [
 		"account:GetGovCloudAccountInformation",
 	];
 	/** IAM actions required for the GetPrimaryEmail API call. */
-	static readonly GET_PRIMARY_EMAIL: string[] = ["account:GetPrimaryEmail"];
+	static readonly opGetPrimaryEmail: string[] = ["account:GetPrimaryEmail"];
 	/** IAM actions required for the GetPrimaryEmailUpdateStatus API call. */
-	static readonly GET_PRIMARY_EMAIL_UPDATE_STATUS: string[] = [
+	static readonly opGetPrimaryEmailUpdateStatus: string[] = [
 		"account:GetPrimaryEmailUpdateStatus",
 	];
 	/** IAM actions required for the GetRegionOptStatus API call. */
-	static readonly GET_REGION_OPT_STATUS: string[] = [
+	static readonly opGetRegionOptStatus: string[] = [
 		"account:GetRegionOptStatus",
 	];
 	/** IAM actions required for the ListRegions API call. */
-	static readonly LIST_REGIONS: string[] = ["account:ListRegions"];
+	static readonly ListRegions: string[] = ["account:ListRegions"];
 	/** IAM actions required for the PutAccountName API call. */
-	static readonly PUT_ACCOUNT_NAME: string[] = [
+	static readonly PutAccountName: string[] = [
 		"account:PutAccountName",
 		"iam:UpdateAccountName",
 	];
 	/** IAM actions required for the PutAlternateContact API call. */
-	static readonly PUT_ALTERNATE_CONTACT: string[] = [
+	static readonly PutAlternateContact: string[] = [
 		"account:PutAlternateContact",
 	];
 	/** IAM actions required for the PutContactInformation API call. */
-	static readonly PUT_CONTACT_INFORMATION: string[] = [
+	static readonly PutContactInformation: string[] = [
 		"account:PutContactInformation",
 	];
 	/** IAM actions required for the StartPrimaryEmailUpdate API call. */
-	static readonly START_PRIMARY_EMAIL_UPDATE: string[] = [
+	static readonly StartPrimaryEmailUpdate: string[] = [
 		"account:StartPrimaryEmailUpdate",
 		"iam:UpdateAccountEmailAddress",
 	];
@@ -250,35 +281,35 @@ export class AccountOperations {
  */
 export class AccountConditions {
 	/** Condition keys applicable to the AcceptPrimaryEmailUpdate action. */
-	static readonly ACCEPT_PRIMARY_EMAIL_UPDATE_CONDITION_KEYS: string[] = [
+	static readonly AcceptPrimaryEmailUpdateConditionKeys: string[] = [
 		"account:EmailTargetDomain",
 	];
 	/** Condition keys applicable to the DeleteAlternateContact action. */
-	static readonly DELETE_ALTERNATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly DeleteAlternateContactConditionKeys: string[] = [
 		"account:AlternateContactTypes",
 	];
 	/** Condition keys applicable to the DisableRegion action. */
-	static readonly DISABLE_REGION_CONDITION_KEYS: string[] = [
+	static readonly DisableRegionConditionKeys: string[] = [
 		"account:TargetRegion",
 	];
 	/** Condition keys applicable to the EnableRegion action. */
-	static readonly ENABLE_REGION_CONDITION_KEYS: string[] = [
+	static readonly EnableRegionConditionKeys: string[] = [
 		"account:TargetRegion",
 	];
 	/** Condition keys applicable to the GetAlternateContact action. */
-	static readonly GET_ALTERNATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly actionGetAlternateContactConditionKeys: string[] = [
 		"account:AlternateContactTypes",
 	];
 	/** Condition keys applicable to the GetRegionOptStatus action. */
-	static readonly GET_REGION_OPT_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetRegionOptStatusConditionKeys: string[] = [
 		"account:TargetRegion",
 	];
 	/** Condition keys applicable to the PutAlternateContact action. */
-	static readonly PUT_ALTERNATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly PutAlternateContactConditionKeys: string[] = [
 		"account:AlternateContactTypes",
 	];
 	/** Condition keys applicable to the StartPrimaryEmailUpdate action. */
-	static readonly START_PRIMARY_EMAIL_UPDATE_CONDITION_KEYS: string[] = [
+	static readonly StartPrimaryEmailUpdateConditionKeys: string[] = [
 		"account:EmailTargetDomain",
 	];
 

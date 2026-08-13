@@ -13,244 +13,379 @@ export class ApsActions {
 	static readonly SERVICE_PREFIX = "aps";
 
 	/** [Write] aps:CreateAlertManagerAlerts */
-	static readonly CREATE_ALERT_MANAGER_ALERTS = "aps:CreateAlertManagerAlerts";
+	static readonly CreateAlertManagerAlerts = "aps:CreateAlertManagerAlerts";
 	/** [Write] aps:CreateAlertManagerDefinition */
-	static readonly CREATE_ALERT_MANAGER_DEFINITION =
+	static readonly CreateAlertManagerDefinition =
 		"aps:CreateAlertManagerDefinition";
 	/** [Write] aps:CreateAnomalyDetector */
-	static readonly CREATE_ANOMALY_DETECTOR = "aps:CreateAnomalyDetector";
+	static readonly CreateAnomalyDetector = "aps:CreateAnomalyDetector";
 	/** [Write] aps:CreateLoggingConfiguration */
-	static readonly CREATE_LOGGING_CONFIGURATION =
-		"aps:CreateLoggingConfiguration";
+	static readonly CreateLoggingConfiguration = "aps:CreateLoggingConfiguration";
 	/** [Write] aps:CreateQueryLoggingConfiguration */
-	static readonly CREATE_QUERY_LOGGING_CONFIGURATION =
+	static readonly CreateQueryLoggingConfiguration =
 		"aps:CreateQueryLoggingConfiguration";
 	/** [Write] aps:CreateRuleGroupsNamespace */
-	static readonly CREATE_RULE_GROUPS_NAMESPACE =
-		"aps:CreateRuleGroupsNamespace";
+	static readonly CreateRuleGroupsNamespace = "aps:CreateRuleGroupsNamespace";
 	/** [Write] aps:CreateScraper */
-	static readonly CREATE_SCRAPER = "aps:CreateScraper";
+	static readonly CreateScraper = "aps:CreateScraper";
 	/** [Write] aps:CreateWorkspace */
-	static readonly CREATE_WORKSPACE = "aps:CreateWorkspace";
+	static readonly CreateWorkspace = "aps:CreateWorkspace";
 	/** [Write] aps:DeleteAlertManagerDefinition */
-	static readonly DELETE_ALERT_MANAGER_DEFINITION =
+	static readonly DeleteAlertManagerDefinition =
 		"aps:DeleteAlertManagerDefinition";
 	/** [Write] aps:DeleteAlertManagerSilence */
-	static readonly DELETE_ALERT_MANAGER_SILENCE =
-		"aps:DeleteAlertManagerSilence";
+	static readonly DeleteAlertManagerSilence = "aps:DeleteAlertManagerSilence";
 	/** [Write] aps:DeleteAnomalyDetector */
-	static readonly DELETE_ANOMALY_DETECTOR = "aps:DeleteAnomalyDetector";
+	static readonly DeleteAnomalyDetector = "aps:DeleteAnomalyDetector";
 	/** [Write] aps:DeleteLoggingConfiguration */
-	static readonly DELETE_LOGGING_CONFIGURATION =
-		"aps:DeleteLoggingConfiguration";
+	static readonly DeleteLoggingConfiguration = "aps:DeleteLoggingConfiguration";
 	/** [Write] aps:DeleteQueryLoggingConfiguration */
-	static readonly DELETE_QUERY_LOGGING_CONFIGURATION =
+	static readonly DeleteQueryLoggingConfiguration =
 		"aps:DeleteQueryLoggingConfiguration";
 	/** [Write] aps:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "aps:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "aps:DeleteResourcePolicy";
 	/** [Write] aps:DeleteRuleGroupsNamespace */
-	static readonly DELETE_RULE_GROUPS_NAMESPACE =
-		"aps:DeleteRuleGroupsNamespace";
+	static readonly DeleteRuleGroupsNamespace = "aps:DeleteRuleGroupsNamespace";
 	/** [Write] aps:DeleteScraper */
-	static readonly DELETE_SCRAPER = "aps:DeleteScraper";
+	static readonly DeleteScraper = "aps:DeleteScraper";
 	/** [Write] aps:DeleteScraperLoggingConfiguration */
-	static readonly DELETE_SCRAPER_LOGGING_CONFIGURATION =
+	static readonly DeleteScraperLoggingConfiguration =
 		"aps:DeleteScraperLoggingConfiguration";
 	/** [Write] aps:DeleteWorkspace */
-	static readonly DELETE_WORKSPACE = "aps:DeleteWorkspace";
+	static readonly DeleteWorkspace = "aps:DeleteWorkspace";
 	/** [Read] aps:DescribeAlertManagerDefinition */
-	static readonly DESCRIBE_ALERT_MANAGER_DEFINITION =
+	static readonly DescribeAlertManagerDefinition =
 		"aps:DescribeAlertManagerDefinition";
 	/** [Read] aps:DescribeAnomalyDetector */
-	static readonly DESCRIBE_ANOMALY_DETECTOR = "aps:DescribeAnomalyDetector";
+	static readonly DescribeAnomalyDetector = "aps:DescribeAnomalyDetector";
 	/** [Read] aps:DescribeLoggingConfiguration */
-	static readonly DESCRIBE_LOGGING_CONFIGURATION =
+	static readonly DescribeLoggingConfiguration =
 		"aps:DescribeLoggingConfiguration";
 	/** [Read] aps:DescribeQueryLoggingConfiguration */
-	static readonly DESCRIBE_QUERY_LOGGING_CONFIGURATION =
+	static readonly DescribeQueryLoggingConfiguration =
 		"aps:DescribeQueryLoggingConfiguration";
 	/** [Read] aps:DescribeResourcePolicy */
-	static readonly DESCRIBE_RESOURCE_POLICY = "aps:DescribeResourcePolicy";
+	static readonly DescribeResourcePolicy = "aps:DescribeResourcePolicy";
 	/** [Read] aps:DescribeRuleGroupsNamespace */
-	static readonly DESCRIBE_RULE_GROUPS_NAMESPACE =
+	static readonly DescribeRuleGroupsNamespace =
 		"aps:DescribeRuleGroupsNamespace";
 	/** [Read] aps:DescribeScraper */
-	static readonly DESCRIBE_SCRAPER = "aps:DescribeScraper";
+	static readonly DescribeScraper = "aps:DescribeScraper";
 	/** [Read] aps:DescribeScraperLoggingConfiguration */
-	static readonly DESCRIBE_SCRAPER_LOGGING_CONFIGURATION =
+	static readonly DescribeScraperLoggingConfiguration =
 		"aps:DescribeScraperLoggingConfiguration";
 	/** [Read] aps:DescribeWorkspace */
-	static readonly DESCRIBE_WORKSPACE = "aps:DescribeWorkspace";
+	static readonly DescribeWorkspace = "aps:DescribeWorkspace";
 	/** [Read] aps:DescribeWorkspaceConfiguration */
-	static readonly DESCRIBE_WORKSPACE_CONFIGURATION =
+	static readonly DescribeWorkspaceConfiguration =
 		"aps:DescribeWorkspaceConfiguration";
 	/** [Read] aps:GetAlertManagerSilence */
-	static readonly GET_ALERT_MANAGER_SILENCE = "aps:GetAlertManagerSilence";
+	static readonly actionGetAlertManagerSilence = "aps:GetAlertManagerSilence";
 	/** [Read] aps:GetAlertManagerStatus */
-	static readonly GET_ALERT_MANAGER_STATUS = "aps:GetAlertManagerStatus";
+	static readonly actionGetAlertManagerStatus = "aps:GetAlertManagerStatus";
 	/** [Read] aps:GetDefaultScraperConfiguration */
-	static readonly GET_DEFAULT_SCRAPER_CONFIGURATION =
+	static readonly actionGetDefaultScraperConfiguration =
 		"aps:GetDefaultScraperConfiguration";
 	/** [Read] aps:GetLabels */
-	static readonly GET_LABELS = "aps:GetLabels";
+	static readonly actionGetLabels = "aps:GetLabels";
 	/** [Read] aps:GetMetricMetadata */
-	static readonly GET_METRIC_METADATA = "aps:GetMetricMetadata";
+	static readonly actionGetMetricMetadata = "aps:GetMetricMetadata";
 	/** [Read] aps:GetSeries */
-	static readonly GET_SERIES = "aps:GetSeries";
+	static readonly actionGetSeries = "aps:GetSeries";
 	/** [Read] aps:ListAlertManagerAlertGroups */
-	static readonly LIST_ALERT_MANAGER_ALERT_GROUPS =
+	static readonly ListAlertManagerAlertGroups =
 		"aps:ListAlertManagerAlertGroups";
 	/** [Read] aps:ListAlertManagerAlerts */
-	static readonly LIST_ALERT_MANAGER_ALERTS = "aps:ListAlertManagerAlerts";
+	static readonly ListAlertManagerAlerts = "aps:ListAlertManagerAlerts";
 	/** [Read] aps:ListAlertManagerReceivers */
-	static readonly LIST_ALERT_MANAGER_RECEIVERS =
-		"aps:ListAlertManagerReceivers";
+	static readonly ListAlertManagerReceivers = "aps:ListAlertManagerReceivers";
 	/** [Read] aps:ListAlertManagerSilences */
-	static readonly LIST_ALERT_MANAGER_SILENCES = "aps:ListAlertManagerSilences";
+	static readonly ListAlertManagerSilences = "aps:ListAlertManagerSilences";
 	/** [Read] aps:ListAlerts */
-	static readonly LIST_ALERTS = "aps:ListAlerts";
+	static readonly ListAlerts = "aps:ListAlerts";
 	/** [List] aps:ListAnomalyDetectors */
-	static readonly LIST_ANOMALY_DETECTORS = "aps:ListAnomalyDetectors";
+	static readonly ListAnomalyDetectors = "aps:ListAnomalyDetectors";
 	/** [List] aps:ListRuleGroupsNamespaces */
-	static readonly LIST_RULE_GROUPS_NAMESPACES = "aps:ListRuleGroupsNamespaces";
+	static readonly ListRuleGroupsNamespaces = "aps:ListRuleGroupsNamespaces";
 	/** [Read] aps:ListRules */
-	static readonly LIST_RULES = "aps:ListRules";
+	static readonly ListRules = "aps:ListRules";
 	/** [List] aps:ListScrapers */
-	static readonly LIST_SCRAPERS = "aps:ListScrapers";
+	static readonly ListScrapers = "aps:ListScrapers";
 	/** [Read] aps:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "aps:ListTagsForResource";
+	static readonly ListTagsForResource = "aps:ListTagsForResource";
 	/** [List] aps:ListWorkspaces */
-	static readonly LIST_WORKSPACES = "aps:ListWorkspaces";
+	static readonly ListWorkspaces = "aps:ListWorkspaces";
 	/** [Read] aps:PreviewAnomalyDetector */
-	static readonly PREVIEW_ANOMALY_DETECTOR = "aps:PreviewAnomalyDetector";
+	static readonly PreviewAnomalyDetector = "aps:PreviewAnomalyDetector";
 	/** [Write] aps:PutAlertManagerDefinition */
-	static readonly PUT_ALERT_MANAGER_DEFINITION =
-		"aps:PutAlertManagerDefinition";
+	static readonly PutAlertManagerDefinition = "aps:PutAlertManagerDefinition";
 	/** [Write] aps:PutAlertManagerSilences */
-	static readonly PUT_ALERT_MANAGER_SILENCES = "aps:PutAlertManagerSilences";
+	static readonly PutAlertManagerSilences = "aps:PutAlertManagerSilences";
 	/** [Write] aps:PutAnomalyDetector */
-	static readonly PUT_ANOMALY_DETECTOR = "aps:PutAnomalyDetector";
+	static readonly PutAnomalyDetector = "aps:PutAnomalyDetector";
 	/** [Write] aps:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "aps:PutResourcePolicy";
+	static readonly PutResourcePolicy = "aps:PutResourcePolicy";
 	/** [Write] aps:PutRuleGroupsNamespace */
-	static readonly PUT_RULE_GROUPS_NAMESPACE = "aps:PutRuleGroupsNamespace";
+	static readonly PutRuleGroupsNamespace = "aps:PutRuleGroupsNamespace";
 	/** [Read] aps:QueryMetrics */
-	static readonly QUERY_METRICS = "aps:QueryMetrics";
+	static readonly QueryMetrics = "aps:QueryMetrics";
 	/** [Write] aps:RemoteWrite */
-	static readonly REMOTE_WRITE = "aps:RemoteWrite";
+	static readonly RemoteWrite = "aps:RemoteWrite";
 	/** [Tagging] aps:TagResource */
-	static readonly TAG_RESOURCE = "aps:TagResource";
+	static readonly TagResource = "aps:TagResource";
 	/** [Tagging] aps:UntagResource */
-	static readonly UNTAG_RESOURCE = "aps:UntagResource";
+	static readonly UntagResource = "aps:UntagResource";
 	/** [Write] aps:UpdateLoggingConfiguration */
-	static readonly UPDATE_LOGGING_CONFIGURATION =
-		"aps:UpdateLoggingConfiguration";
+	static readonly UpdateLoggingConfiguration = "aps:UpdateLoggingConfiguration";
 	/** [Write] aps:UpdateQueryLoggingConfiguration */
-	static readonly UPDATE_QUERY_LOGGING_CONFIGURATION =
+	static readonly UpdateQueryLoggingConfiguration =
 		"aps:UpdateQueryLoggingConfiguration";
 	/** [Write] aps:UpdateScraper */
-	static readonly UPDATE_SCRAPER = "aps:UpdateScraper";
+	static readonly UpdateScraper = "aps:UpdateScraper";
 	/** [Write] aps:UpdateScraperLoggingConfiguration */
-	static readonly UPDATE_SCRAPER_LOGGING_CONFIGURATION =
+	static readonly UpdateScraperLoggingConfiguration =
 		"aps:UpdateScraperLoggingConfiguration";
 	/** [Write] aps:UpdateWorkspaceAlias */
-	static readonly UPDATE_WORKSPACE_ALIAS = "aps:UpdateWorkspaceAlias";
+	static readonly UpdateWorkspaceAlias = "aps:UpdateWorkspaceAlias";
 	/** [Write] aps:UpdateWorkspaceConfiguration */
-	static readonly UPDATE_WORKSPACE_CONFIGURATION =
+	static readonly UpdateWorkspaceConfiguration =
 		"aps:UpdateWorkspaceConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApsActions.DESCRIBE_ALERT_MANAGER_DEFINITION,
-		ApsActions.DESCRIBE_ANOMALY_DETECTOR,
-		ApsActions.DESCRIBE_LOGGING_CONFIGURATION,
-		ApsActions.DESCRIBE_QUERY_LOGGING_CONFIGURATION,
-		ApsActions.DESCRIBE_RESOURCE_POLICY,
-		ApsActions.DESCRIBE_RULE_GROUPS_NAMESPACE,
-		ApsActions.DESCRIBE_SCRAPER,
-		ApsActions.DESCRIBE_SCRAPER_LOGGING_CONFIGURATION,
-		ApsActions.DESCRIBE_WORKSPACE,
-		ApsActions.DESCRIBE_WORKSPACE_CONFIGURATION,
-		ApsActions.GET_ALERT_MANAGER_SILENCE,
-		ApsActions.GET_ALERT_MANAGER_STATUS,
-		ApsActions.GET_DEFAULT_SCRAPER_CONFIGURATION,
-		ApsActions.GET_LABELS,
-		ApsActions.GET_METRIC_METADATA,
-		ApsActions.GET_SERIES,
-		ApsActions.LIST_ALERT_MANAGER_ALERT_GROUPS,
-		ApsActions.LIST_ALERT_MANAGER_ALERTS,
-		ApsActions.LIST_ALERT_MANAGER_RECEIVERS,
-		ApsActions.LIST_ALERT_MANAGER_SILENCES,
-		ApsActions.LIST_ALERTS,
-		ApsActions.LIST_RULES,
-		ApsActions.LIST_TAGS_FOR_RESOURCE,
-		ApsActions.PREVIEW_ANOMALY_DETECTOR,
-		ApsActions.QUERY_METRICS,
+	static readonly AllReadActions: string[] = [
+		ApsActions.DescribeAlertManagerDefinition,
+		ApsActions.DescribeAnomalyDetector,
+		ApsActions.DescribeLoggingConfiguration,
+		ApsActions.DescribeQueryLoggingConfiguration,
+		ApsActions.DescribeResourcePolicy,
+		ApsActions.DescribeRuleGroupsNamespace,
+		ApsActions.DescribeScraper,
+		ApsActions.DescribeScraperLoggingConfiguration,
+		ApsActions.DescribeWorkspace,
+		ApsActions.DescribeWorkspaceConfiguration,
+		ApsActions.actionGetAlertManagerSilence,
+		ApsActions.actionGetAlertManagerStatus,
+		ApsActions.actionGetDefaultScraperConfiguration,
+		ApsActions.actionGetLabels,
+		ApsActions.actionGetMetricMetadata,
+		ApsActions.actionGetSeries,
+		ApsActions.ListAlertManagerAlertGroups,
+		ApsActions.ListAlertManagerAlerts,
+		ApsActions.ListAlertManagerReceivers,
+		ApsActions.ListAlertManagerSilences,
+		ApsActions.ListAlerts,
+		ApsActions.ListRules,
+		ApsActions.ListTagsForResource,
+		ApsActions.PreviewAnomalyDetector,
+		ApsActions.QueryMetrics,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApsActions.CREATE_ALERT_MANAGER_ALERTS,
-		ApsActions.CREATE_ALERT_MANAGER_DEFINITION,
-		ApsActions.CREATE_ANOMALY_DETECTOR,
-		ApsActions.CREATE_LOGGING_CONFIGURATION,
-		ApsActions.CREATE_QUERY_LOGGING_CONFIGURATION,
-		ApsActions.CREATE_RULE_GROUPS_NAMESPACE,
-		ApsActions.CREATE_SCRAPER,
-		ApsActions.CREATE_WORKSPACE,
-		ApsActions.DELETE_ALERT_MANAGER_DEFINITION,
-		ApsActions.DELETE_ALERT_MANAGER_SILENCE,
-		ApsActions.DELETE_ANOMALY_DETECTOR,
-		ApsActions.DELETE_LOGGING_CONFIGURATION,
-		ApsActions.DELETE_QUERY_LOGGING_CONFIGURATION,
-		ApsActions.DELETE_RESOURCE_POLICY,
-		ApsActions.DELETE_RULE_GROUPS_NAMESPACE,
-		ApsActions.DELETE_SCRAPER,
-		ApsActions.DELETE_SCRAPER_LOGGING_CONFIGURATION,
-		ApsActions.DELETE_WORKSPACE,
-		ApsActions.PUT_ALERT_MANAGER_DEFINITION,
-		ApsActions.PUT_ALERT_MANAGER_SILENCES,
-		ApsActions.PUT_ANOMALY_DETECTOR,
-		ApsActions.PUT_RESOURCE_POLICY,
-		ApsActions.PUT_RULE_GROUPS_NAMESPACE,
-		ApsActions.REMOTE_WRITE,
-		ApsActions.UPDATE_LOGGING_CONFIGURATION,
-		ApsActions.UPDATE_QUERY_LOGGING_CONFIGURATION,
-		ApsActions.UPDATE_SCRAPER,
-		ApsActions.UPDATE_SCRAPER_LOGGING_CONFIGURATION,
-		ApsActions.UPDATE_WORKSPACE_ALIAS,
-		ApsActions.UPDATE_WORKSPACE_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		ApsActions.CreateAlertManagerAlerts,
+		ApsActions.CreateAlertManagerDefinition,
+		ApsActions.CreateAnomalyDetector,
+		ApsActions.CreateLoggingConfiguration,
+		ApsActions.CreateQueryLoggingConfiguration,
+		ApsActions.CreateRuleGroupsNamespace,
+		ApsActions.CreateScraper,
+		ApsActions.CreateWorkspace,
+		ApsActions.DeleteAlertManagerDefinition,
+		ApsActions.DeleteAlertManagerSilence,
+		ApsActions.DeleteAnomalyDetector,
+		ApsActions.DeleteLoggingConfiguration,
+		ApsActions.DeleteQueryLoggingConfiguration,
+		ApsActions.DeleteResourcePolicy,
+		ApsActions.DeleteRuleGroupsNamespace,
+		ApsActions.DeleteScraper,
+		ApsActions.DeleteScraperLoggingConfiguration,
+		ApsActions.DeleteWorkspace,
+		ApsActions.PutAlertManagerDefinition,
+		ApsActions.PutAlertManagerSilences,
+		ApsActions.PutAnomalyDetector,
+		ApsActions.PutResourcePolicy,
+		ApsActions.PutRuleGroupsNamespace,
+		ApsActions.RemoteWrite,
+		ApsActions.UpdateLoggingConfiguration,
+		ApsActions.UpdateQueryLoggingConfiguration,
+		ApsActions.UpdateScraper,
+		ApsActions.UpdateScraperLoggingConfiguration,
+		ApsActions.UpdateWorkspaceAlias,
+		ApsActions.UpdateWorkspaceConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ApsActions.LIST_ANOMALY_DETECTORS,
-		ApsActions.LIST_RULE_GROUPS_NAMESPACES,
-		ApsActions.LIST_SCRAPERS,
-		ApsActions.LIST_WORKSPACES,
+	static readonly AllListActions: string[] = [
+		ApsActions.ListAnomalyDetectors,
+		ApsActions.ListRuleGroupsNamespaces,
+		ApsActions.ListScrapers,
+		ApsActions.ListWorkspaces,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ApsActions.TAG_RESOURCE,
-		ApsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ApsActions.TagResource,
+		ApsActions.UntagResource,
 	];
 }
 
-const AnomalydetectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):anomalydetector/(?<workspaceId>[^:/?]+)/(?<anomalyDetectorId>[^:/?]+)$",
-);
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterName>[^:/?]+)$",
-);
-const RulegroupsnamespaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):rulegroupsnamespace/(?<workspaceId>[^:/?]+)/(?<namespace>[^:/?]+)$",
-);
-const ScraperArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):scraper/(?<scraperId>[^:/?]+)$",
-);
-const WorkspaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):workspace/(?<workspaceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a anomalydetector ARN.
+ */
+export interface ApsAnomalydetectorArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The AnomalyDetectorId component of the ARN. */
+	readonly anomalyDetectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a anomalydetector ARN.
+ */
+export interface ApsAnomalydetectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The AnomalyDetectorId component. */
+	readonly anomalyDetectorId: string;
+}
+
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface ApsClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface ApsClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+/**
+ * Properties for building a rulegroupsnamespace ARN.
+ */
+export interface ApsRulegroupsnamespaceArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The Namespace component of the ARN. */
+	readonly namespace: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rulegroupsnamespace ARN.
+ */
+export interface ApsRulegroupsnamespaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The Namespace component. */
+	readonly namespace: string;
+}
+
+/**
+ * Properties for building a scraper ARN.
+ */
+export interface ApsScraperArnProps {
+	/** The ScraperId component of the ARN. */
+	readonly scraperId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a scraper ARN.
+ */
+export interface ApsScraperArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ScraperId component. */
+	readonly scraperId: string;
+}
+
+/**
+ * Properties for building a workspace ARN.
+ */
+export interface ApsWorkspaceArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workspace ARN.
+ */
+export interface ApsWorkspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+}
+
+const AnomalydetectorArnRegex =
+	/^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):anomalydetector\/(?<workspaceId>[^:/?]+)\/(?<anomalyDetectorId>[^:/?]+)$/;
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):eks:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterName>[^:/?]+)$/;
+const RulegroupsnamespaceArnRegex =
+	/^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):rulegroupsnamespace\/(?<workspaceId>[^:/?]+)\/(?<namespace>[^:/?]+)$/;
+const ScraperArnRegex =
+	/^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):scraper\/(?<scraperId>[^:/?]+)$/;
+const WorkspaceArnRegex =
+	/^arn:(?<partition>[^:]+):aps:(?<region>[^:]*):(?<account>[^:]*):workspace\/(?<workspaceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for aps resources.
@@ -259,18 +394,7 @@ export class ApsResources {
 	/**
 	 * Builds an ARN for the anomalydetector resource.
 	 */
-	static anomalydetector(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The AnomalyDetectorId component of the ARN. */
-		readonly anomalyDetectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anomalydetector(props: ApsAnomalydetectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aps:${props.region ?? "*"}:${props.account ?? "*"}:anomalydetector/${props.workspaceId}/${props.anomalyDetectorId}`;
 	}
 
@@ -285,13 +409,7 @@ export class ApsResources {
 	 * Parses a anomalydetector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnomalydetectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		anomalyDetectorId: string;
-	} {
+	static parseAnomalydetectorArn(arn: string): ApsAnomalydetectorArnComponents {
 		const match = AnomalydetectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid anomalydetector ARN: ${arn}`);
@@ -308,16 +426,7 @@ export class ApsResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: ApsClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:eks:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterName}`;
 	}
 
@@ -332,12 +441,7 @@ export class ApsResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseClusterArn(arn: string): ApsClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -353,18 +457,7 @@ export class ApsResources {
 	/**
 	 * Builds an ARN for the rulegroupsnamespace resource.
 	 */
-	static rulegroupsnamespace(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The Namespace component of the ARN. */
-		readonly namespace: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rulegroupsnamespace(props: ApsRulegroupsnamespaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aps:${props.region ?? "*"}:${props.account ?? "*"}:rulegroupsnamespace/${props.workspaceId}/${props.namespace}`;
 	}
 
@@ -379,13 +472,9 @@ export class ApsResources {
 	 * Parses a rulegroupsnamespace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRulegroupsnamespaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		namespace: string;
-	} {
+	static parseRulegroupsnamespaceArn(
+		arn: string,
+	): ApsRulegroupsnamespaceArnComponents {
 		const match = RulegroupsnamespaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rulegroupsnamespace ARN: ${arn}`);
@@ -402,16 +491,7 @@ export class ApsResources {
 	/**
 	 * Builds an ARN for the scraper resource.
 	 */
-	static scraper(props: {
-		/** The ScraperId component of the ARN. */
-		readonly scraperId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static scraper(props: ApsScraperArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aps:${props.region ?? "*"}:${props.account ?? "*"}:scraper/${props.scraperId}`;
 	}
 
@@ -426,12 +506,7 @@ export class ApsResources {
 	 * Parses a scraper ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScraperArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		scraperId: string;
-	} {
+	static parseScraperArn(arn: string): ApsScraperArnComponents {
 		const match = ScraperArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid scraper ARN: ${arn}`);
@@ -447,16 +522,7 @@ export class ApsResources {
 	/**
 	 * Builds an ARN for the workspace resource.
 	 */
-	static workspace(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workspace(props: ApsWorkspaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:aps:${props.region ?? "*"}:${props.account ?? "*"}:workspace/${props.workspaceId}`;
 	}
 
@@ -471,12 +537,7 @@ export class ApsResources {
 	 * Parses a workspace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkspaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-	} {
+	static parseWorkspaceArn(arn: string): ApsWorkspaceArnComponents {
 		const match = WorkspaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workspace ARN: ${arn}`);
@@ -495,165 +556,157 @@ export class ApsResources {
  */
 export class ApsOperations {
 	/** IAM actions required for the CreateAlertManagerDefinition API call. */
-	static readonly CREATE_ALERT_MANAGER_DEFINITION: string[] = [
+	static readonly CreateAlertManagerDefinition: string[] = [
 		"aps:CreateAlertManagerDefinition",
 	];
 	/** IAM actions required for the CreateAnomalyDetector API call. */
-	static readonly CREATE_ANOMALY_DETECTOR: string[] = [
+	static readonly CreateAnomalyDetector: string[] = [
 		"aps:CreateAnomalyDetector",
 		"aps:TagResource",
 	];
 	/** IAM actions required for the CreateLoggingConfiguration API call. */
-	static readonly CREATE_LOGGING_CONFIGURATION: string[] = [
+	static readonly CreateLoggingConfiguration: string[] = [
 		"aps:CreateLoggingConfiguration",
 	];
 	/** IAM actions required for the CreateQueryLoggingConfiguration API call. */
-	static readonly CREATE_QUERY_LOGGING_CONFIGURATION: string[] = [
+	static readonly CreateQueryLoggingConfiguration: string[] = [
 		"aps:CreateQueryLoggingConfiguration",
 	];
 	/** IAM actions required for the CreateRuleGroupsNamespace API call. */
-	static readonly CREATE_RULE_GROUPS_NAMESPACE: string[] = [
+	static readonly CreateRuleGroupsNamespace: string[] = [
 		"aps:CreateRuleGroupsNamespace",
 		"aps:TagResource",
 	];
 	/** IAM actions required for the CreateScraper API call. */
-	static readonly CREATE_SCRAPER: string[] = [
+	static readonly CreateScraper: string[] = [
 		"aps:CreateScraper",
 		"iam:PassRole",
 		"aps:TagResource",
 	];
 	/** IAM actions required for the CreateWorkspace API call. */
-	static readonly CREATE_WORKSPACE: string[] = [
+	static readonly CreateWorkspace: string[] = [
 		"aps:CreateWorkspace",
 		"aps:TagResource",
 	];
 	/** IAM actions required for the DeleteAlertManagerDefinition API call. */
-	static readonly DELETE_ALERT_MANAGER_DEFINITION: string[] = [
+	static readonly DeleteAlertManagerDefinition: string[] = [
 		"aps:DeleteAlertManagerDefinition",
 	];
 	/** IAM actions required for the DeleteAnomalyDetector API call. */
-	static readonly DELETE_ANOMALY_DETECTOR: string[] = [
+	static readonly DeleteAnomalyDetector: string[] = [
 		"aps:DeleteAnomalyDetector",
 	];
 	/** IAM actions required for the DeleteLoggingConfiguration API call. */
-	static readonly DELETE_LOGGING_CONFIGURATION: string[] = [
+	static readonly DeleteLoggingConfiguration: string[] = [
 		"aps:DeleteLoggingConfiguration",
 	];
 	/** IAM actions required for the DeleteQueryLoggingConfiguration API call. */
-	static readonly DELETE_QUERY_LOGGING_CONFIGURATION: string[] = [
+	static readonly DeleteQueryLoggingConfiguration: string[] = [
 		"aps:DeleteQueryLoggingConfiguration",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
-		"aps:DeleteResourcePolicy",
-	];
+	static readonly DeleteResourcePolicy: string[] = ["aps:DeleteResourcePolicy"];
 	/** IAM actions required for the DeleteRuleGroupsNamespace API call. */
-	static readonly DELETE_RULE_GROUPS_NAMESPACE: string[] = [
+	static readonly DeleteRuleGroupsNamespace: string[] = [
 		"aps:DeleteRuleGroupsNamespace",
 	];
 	/** IAM actions required for the DeleteScraper API call. */
-	static readonly DELETE_SCRAPER: string[] = ["aps:DeleteScraper"];
+	static readonly DeleteScraper: string[] = ["aps:DeleteScraper"];
 	/** IAM actions required for the DeleteScraperLoggingConfiguration API call. */
-	static readonly DELETE_SCRAPER_LOGGING_CONFIGURATION: string[] = [
+	static readonly DeleteScraperLoggingConfiguration: string[] = [
 		"aps:DeleteScraperLoggingConfiguration",
 	];
 	/** IAM actions required for the DeleteWorkspace API call. */
-	static readonly DELETE_WORKSPACE: string[] = ["aps:DeleteWorkspace"];
+	static readonly DeleteWorkspace: string[] = ["aps:DeleteWorkspace"];
 	/** IAM actions required for the DescribeAlertManagerDefinition API call. */
-	static readonly DESCRIBE_ALERT_MANAGER_DEFINITION: string[] = [
+	static readonly DescribeAlertManagerDefinition: string[] = [
 		"aps:DescribeAlertManagerDefinition",
 	];
 	/** IAM actions required for the DescribeAnomalyDetector API call. */
-	static readonly DESCRIBE_ANOMALY_DETECTOR: string[] = [
+	static readonly DescribeAnomalyDetector: string[] = [
 		"aps:DescribeAnomalyDetector",
 	];
 	/** IAM actions required for the DescribeLoggingConfiguration API call. */
-	static readonly DESCRIBE_LOGGING_CONFIGURATION: string[] = [
+	static readonly DescribeLoggingConfiguration: string[] = [
 		"aps:DescribeLoggingConfiguration",
 	];
 	/** IAM actions required for the DescribeQueryLoggingConfiguration API call. */
-	static readonly DESCRIBE_QUERY_LOGGING_CONFIGURATION: string[] = [
+	static readonly DescribeQueryLoggingConfiguration: string[] = [
 		"aps:DescribeQueryLoggingConfiguration",
 	];
 	/** IAM actions required for the DescribeResourcePolicy API call. */
-	static readonly DESCRIBE_RESOURCE_POLICY: string[] = [
+	static readonly DescribeResourcePolicy: string[] = [
 		"aps:DescribeResourcePolicy",
 	];
 	/** IAM actions required for the DescribeRuleGroupsNamespace API call. */
-	static readonly DESCRIBE_RULE_GROUPS_NAMESPACE: string[] = [
+	static readonly DescribeRuleGroupsNamespace: string[] = [
 		"aps:DescribeRuleGroupsNamespace",
 	];
 	/** IAM actions required for the DescribeScraper API call. */
-	static readonly DESCRIBE_SCRAPER: string[] = ["aps:DescribeScraper"];
+	static readonly DescribeScraper: string[] = ["aps:DescribeScraper"];
 	/** IAM actions required for the DescribeScraperLoggingConfiguration API call. */
-	static readonly DESCRIBE_SCRAPER_LOGGING_CONFIGURATION: string[] = [
+	static readonly DescribeScraperLoggingConfiguration: string[] = [
 		"aps:DescribeScraperLoggingConfiguration",
 	];
 	/** IAM actions required for the DescribeWorkspace API call. */
-	static readonly DESCRIBE_WORKSPACE: string[] = ["aps:DescribeWorkspace"];
+	static readonly DescribeWorkspace: string[] = ["aps:DescribeWorkspace"];
 	/** IAM actions required for the DescribeWorkspaceConfiguration API call. */
-	static readonly DESCRIBE_WORKSPACE_CONFIGURATION: string[] = [
+	static readonly DescribeWorkspaceConfiguration: string[] = [
 		"aps:DescribeWorkspaceConfiguration",
 	];
 	/** IAM actions required for the GetDefaultScraperConfiguration API call. */
-	static readonly GET_DEFAULT_SCRAPER_CONFIGURATION: string[] = [
+	static readonly opGetDefaultScraperConfiguration: string[] = [
 		"aps:GetDefaultScraperConfiguration",
 	];
 	/** IAM actions required for the ListAnomalyDetectors API call. */
-	static readonly LIST_ANOMALY_DETECTORS: string[] = [
-		"aps:ListAnomalyDetectors",
-	];
+	static readonly ListAnomalyDetectors: string[] = ["aps:ListAnomalyDetectors"];
 	/** IAM actions required for the ListRuleGroupsNamespaces API call. */
-	static readonly LIST_RULE_GROUPS_NAMESPACES: string[] = [
+	static readonly ListRuleGroupsNamespaces: string[] = [
 		"aps:ListRuleGroupsNamespaces",
 	];
 	/** IAM actions required for the ListScrapers API call. */
-	static readonly LIST_SCRAPERS: string[] = ["aps:ListScrapers"];
+	static readonly ListScrapers: string[] = ["aps:ListScrapers"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"aps:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["aps:ListTagsForResource"];
 	/** IAM actions required for the ListWorkspaces API call. */
-	static readonly LIST_WORKSPACES: string[] = ["aps:ListWorkspaces"];
+	static readonly ListWorkspaces: string[] = ["aps:ListWorkspaces"];
 	/** IAM actions required for the PutAlertManagerDefinition API call. */
-	static readonly PUT_ALERT_MANAGER_DEFINITION: string[] = [
+	static readonly PutAlertManagerDefinition: string[] = [
 		"aps:PutAlertManagerDefinition",
 	];
 	/** IAM actions required for the PutAnomalyDetector API call. */
-	static readonly PUT_ANOMALY_DETECTOR: string[] = ["aps:PutAnomalyDetector"];
+	static readonly PutAnomalyDetector: string[] = ["aps:PutAnomalyDetector"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["aps:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["aps:PutResourcePolicy"];
 	/** IAM actions required for the PutRuleGroupsNamespace API call. */
-	static readonly PUT_RULE_GROUPS_NAMESPACE: string[] = [
+	static readonly PutRuleGroupsNamespace: string[] = [
 		"aps:PutRuleGroupsNamespace",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["aps:TagResource"];
+	static readonly TagResource: string[] = ["aps:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["aps:UntagResource"];
+	static readonly UntagResource: string[] = ["aps:UntagResource"];
 	/** IAM actions required for the UpdateLoggingConfiguration API call. */
-	static readonly UPDATE_LOGGING_CONFIGURATION: string[] = [
+	static readonly UpdateLoggingConfiguration: string[] = [
 		"aps:UpdateLoggingConfiguration",
 	];
 	/** IAM actions required for the UpdateQueryLoggingConfiguration API call. */
-	static readonly UPDATE_QUERY_LOGGING_CONFIGURATION: string[] = [
+	static readonly UpdateQueryLoggingConfiguration: string[] = [
 		"aps:UpdateQueryLoggingConfiguration",
 	];
 	/** IAM actions required for the UpdateScraper API call. */
-	static readonly UPDATE_SCRAPER: string[] = [
+	static readonly UpdateScraper: string[] = [
 		"iam:PassRole",
 		"aps:UpdateScraper",
 	];
 	/** IAM actions required for the UpdateScraperLoggingConfiguration API call. */
-	static readonly UPDATE_SCRAPER_LOGGING_CONFIGURATION: string[] = [
+	static readonly UpdateScraperLoggingConfiguration: string[] = [
 		"aps:UpdateScraperLoggingConfiguration",
 	];
 	/** IAM actions required for the UpdateWorkspaceAlias API call. */
-	static readonly UPDATE_WORKSPACE_ALIAS: string[] = [
-		"aps:UpdateWorkspaceAlias",
-	];
+	static readonly UpdateWorkspaceAlias: string[] = ["aps:UpdateWorkspaceAlias"];
 	/** IAM actions required for the UpdateWorkspaceConfiguration API call. */
-	static readonly UPDATE_WORKSPACE_CONFIGURATION: string[] = [
+	static readonly UpdateWorkspaceConfiguration: string[] = [
 		"aps:UpdateWorkspaceConfiguration",
 	];
 }
@@ -663,242 +716,249 @@ export class ApsOperations {
  */
 export class ApsConditions {
 	/** Condition keys applicable to the CreateAlertManagerAlerts action. */
-	static readonly CREATE_ALERT_MANAGER_ALERTS_CONDITION_KEYS: string[] = [
+	static readonly CreateAlertManagerAlertsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAlertManagerDefinition action. */
-	static readonly CREATE_ALERT_MANAGER_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly CreateAlertManagerDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAnomalyDetector action. */
-	static readonly CREATE_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAnomalyDetectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLoggingConfiguration action. */
-	static readonly CREATE_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateLoggingConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateQueryLoggingConfiguration action. */
-	static readonly CREATE_QUERY_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly CreateQueryLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the CreateRuleGroupsNamespace action. */
-	static readonly CREATE_RULE_GROUPS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateRuleGroupsNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateScraper action. */
-	static readonly CREATE_SCRAPER_CONDITION_KEYS: string[] = [
+	static readonly CreateScraperConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkspace action. */
-	static readonly CREATE_WORKSPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkspaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAlertManagerDefinition action. */
-	static readonly DELETE_ALERT_MANAGER_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly DeleteAlertManagerDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAlertManagerSilence action. */
-	static readonly DELETE_ALERT_MANAGER_SILENCE_CONDITION_KEYS: string[] = [
+	static readonly DeleteAlertManagerSilenceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAnomalyDetector action. */
-	static readonly DELETE_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly DeleteAnomalyDetectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteLoggingConfiguration action. */
-	static readonly DELETE_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteLoggingConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteQueryLoggingConfiguration action. */
-	static readonly DELETE_QUERY_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteQueryLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
-	static readonly DELETE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteRuleGroupsNamespace action. */
-	static readonly DELETE_RULE_GROUPS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteRuleGroupsNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteScraper action. */
-	static readonly DELETE_SCRAPER_CONDITION_KEYS: string[] = [
+	static readonly DeleteScraperConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteScraperLoggingConfiguration action. */
-	static readonly DELETE_SCRAPER_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteScraperLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteWorkspace action. */
-	static readonly DELETE_WORKSPACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteWorkspaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeAlertManagerDefinition action. */
-	static readonly DESCRIBE_ALERT_MANAGER_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly DescribeAlertManagerDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeAnomalyDetector action. */
-	static readonly DESCRIBE_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly DescribeAnomalyDetectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeLoggingConfiguration action. */
-	static readonly DESCRIBE_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly DescribeLoggingConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeQueryLoggingConfiguration action. */
-	static readonly DESCRIBE_QUERY_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DescribeQueryLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DescribeResourcePolicy action. */
-	static readonly DESCRIBE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DescribeResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeRuleGroupsNamespace action. */
-	static readonly DESCRIBE_RULE_GROUPS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly DescribeRuleGroupsNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeScraper action. */
-	static readonly DESCRIBE_SCRAPER_CONDITION_KEYS: string[] = [
+	static readonly DescribeScraperConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeScraperLoggingConfiguration action. */
-	static readonly DESCRIBE_SCRAPER_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DescribeScraperLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DescribeWorkspace action. */
-	static readonly DESCRIBE_WORKSPACE_CONDITION_KEYS: string[] = [
+	static readonly DescribeWorkspaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeWorkspaceConfiguration action. */
-	static readonly DESCRIBE_WORKSPACE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly DescribeWorkspaceConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAlertManagerSilence action. */
-	static readonly GET_ALERT_MANAGER_SILENCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetAlertManagerSilenceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAlertManagerStatus action. */
-	static readonly GET_ALERT_MANAGER_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAlertManagerStatusConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetLabels action. */
-	static readonly GET_LABELS_CONDITION_KEYS: string[] = [
+	static readonly actionGetLabelsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetMetricMetadata action. */
-	static readonly GET_METRIC_METADATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetMetricMetadataConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSeries action. */
-	static readonly GET_SERIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetSeriesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAlertManagerAlertGroups action. */
-	static readonly LIST_ALERT_MANAGER_ALERT_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly ListAlertManagerAlertGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAlertManagerAlerts action. */
-	static readonly LIST_ALERT_MANAGER_ALERTS_CONDITION_KEYS: string[] = [
+	static readonly ListAlertManagerAlertsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAlertManagerReceivers action. */
-	static readonly LIST_ALERT_MANAGER_RECEIVERS_CONDITION_KEYS: string[] = [
+	static readonly ListAlertManagerReceiversConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAlertManagerSilences action. */
-	static readonly LIST_ALERT_MANAGER_SILENCES_CONDITION_KEYS: string[] = [
+	static readonly ListAlertManagerSilencesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAlerts action. */
-	static readonly LIST_ALERTS_CONDITION_KEYS: string[] = [
+	static readonly ListAlertsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAnomalyDetectors action. */
-	static readonly LIST_ANOMALY_DETECTORS_CONDITION_KEYS: string[] = [
+	static readonly ListAnomalyDetectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListRuleGroupsNamespaces action. */
-	static readonly LIST_RULE_GROUPS_NAMESPACES_CONDITION_KEYS: string[] = [
+	static readonly ListRuleGroupsNamespacesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListRules action. */
-	static readonly LIST_RULES_CONDITION_KEYS: string[] = [
+	static readonly ListRulesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PreviewAnomalyDetector action. */
-	static readonly PREVIEW_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly PreviewAnomalyDetectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutAlertManagerDefinition action. */
-	static readonly PUT_ALERT_MANAGER_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly PutAlertManagerDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutAlertManagerSilences action. */
-	static readonly PUT_ALERT_MANAGER_SILENCES_CONDITION_KEYS: string[] = [
+	static readonly PutAlertManagerSilencesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutAnomalyDetector action. */
-	static readonly PUT_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly PutAnomalyDetectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutRuleGroupsNamespace action. */
-	static readonly PUT_RULE_GROUPS_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly PutRuleGroupsNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the QueryMetrics action. */
-	static readonly QUERY_METRICS_CONDITION_KEYS: string[] = [
+	static readonly QueryMetricsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RemoteWrite action. */
-	static readonly REMOTE_WRITE_CONDITION_KEYS: string[] = [
+	static readonly RemoteWriteConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateLoggingConfiguration action. */
-	static readonly UPDATE_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateLoggingConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateQueryLoggingConfiguration action. */
-	static readonly UPDATE_QUERY_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateQueryLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateScraper action. */
-	static readonly UPDATE_SCRAPER_CONDITION_KEYS: string[] = [
+	static readonly UpdateScraperConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateScraperLoggingConfiguration action. */
-	static readonly UPDATE_SCRAPER_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateScraperLoggingConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateWorkspaceAlias action. */
-	static readonly UPDATE_WORKSPACE_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly UpdateWorkspaceAliasConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateWorkspaceConfiguration action. */
-	static readonly UPDATE_WORKSPACE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateWorkspaceConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,119 +13,241 @@ export class AppfabricActions {
 	static readonly SERVICE_PREFIX = "appfabric";
 
 	/** [Write] appfabric:BatchGetUserAccessTasks */
-	static readonly BATCH_GET_USER_ACCESS_TASKS =
-		"appfabric:BatchGetUserAccessTasks";
+	static readonly BatchGetUserAccessTasks = "appfabric:BatchGetUserAccessTasks";
 	/** [Write] appfabric:ConnectAppAuthorization */
-	static readonly CONNECT_APP_AUTHORIZATION =
-		"appfabric:ConnectAppAuthorization";
+	static readonly ConnectAppAuthorization = "appfabric:ConnectAppAuthorization";
 	/** [Write] appfabric:CreateAppAuthorization */
-	static readonly CREATE_APP_AUTHORIZATION = "appfabric:CreateAppAuthorization";
+	static readonly CreateAppAuthorization = "appfabric:CreateAppAuthorization";
 	/** [Write] appfabric:CreateAppBundle */
-	static readonly CREATE_APP_BUNDLE = "appfabric:CreateAppBundle";
+	static readonly CreateAppBundle = "appfabric:CreateAppBundle";
 	/** [Write] appfabric:CreateIngestion */
-	static readonly CREATE_INGESTION = "appfabric:CreateIngestion";
+	static readonly CreateIngestion = "appfabric:CreateIngestion";
 	/** [Write] appfabric:CreateIngestionDestination */
-	static readonly CREATE_INGESTION_DESTINATION =
+	static readonly CreateIngestionDestination =
 		"appfabric:CreateIngestionDestination";
 	/** [Write] appfabric:DeleteAppAuthorization */
-	static readonly DELETE_APP_AUTHORIZATION = "appfabric:DeleteAppAuthorization";
+	static readonly DeleteAppAuthorization = "appfabric:DeleteAppAuthorization";
 	/** [Write] appfabric:DeleteAppBundle */
-	static readonly DELETE_APP_BUNDLE = "appfabric:DeleteAppBundle";
+	static readonly DeleteAppBundle = "appfabric:DeleteAppBundle";
 	/** [Write] appfabric:DeleteIngestion */
-	static readonly DELETE_INGESTION = "appfabric:DeleteIngestion";
+	static readonly DeleteIngestion = "appfabric:DeleteIngestion";
 	/** [Write] appfabric:DeleteIngestionDestination */
-	static readonly DELETE_INGESTION_DESTINATION =
+	static readonly DeleteIngestionDestination =
 		"appfabric:DeleteIngestionDestination";
 	/** [Read] appfabric:GetAppAuthorization */
-	static readonly GET_APP_AUTHORIZATION = "appfabric:GetAppAuthorization";
+	static readonly actionGetAppAuthorization = "appfabric:GetAppAuthorization";
 	/** [Read] appfabric:GetAppBundle */
-	static readonly GET_APP_BUNDLE = "appfabric:GetAppBundle";
+	static readonly actionGetAppBundle = "appfabric:GetAppBundle";
 	/** [Read] appfabric:GetIngestion */
-	static readonly GET_INGESTION = "appfabric:GetIngestion";
+	static readonly actionGetIngestion = "appfabric:GetIngestion";
 	/** [Read] appfabric:GetIngestionDestination */
-	static readonly GET_INGESTION_DESTINATION =
+	static readonly actionGetIngestionDestination =
 		"appfabric:GetIngestionDestination";
 	/** [List] appfabric:ListAppAuthorizations */
-	static readonly LIST_APP_AUTHORIZATIONS = "appfabric:ListAppAuthorizations";
+	static readonly ListAppAuthorizations = "appfabric:ListAppAuthorizations";
 	/** [List] appfabric:ListAppBundles */
-	static readonly LIST_APP_BUNDLES = "appfabric:ListAppBundles";
+	static readonly ListAppBundles = "appfabric:ListAppBundles";
 	/** [List] appfabric:ListIngestionDestinations */
-	static readonly LIST_INGESTION_DESTINATIONS =
+	static readonly ListIngestionDestinations =
 		"appfabric:ListIngestionDestinations";
 	/** [List] appfabric:ListIngestions */
-	static readonly LIST_INGESTIONS = "appfabric:ListIngestions";
+	static readonly ListIngestions = "appfabric:ListIngestions";
 	/** [Read] appfabric:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "appfabric:ListTagsForResource";
+	static readonly ListTagsForResource = "appfabric:ListTagsForResource";
 	/** [Write] appfabric:StartIngestion */
-	static readonly START_INGESTION = "appfabric:StartIngestion";
+	static readonly StartIngestion = "appfabric:StartIngestion";
 	/** [Write] appfabric:StartUserAccessTasks */
-	static readonly START_USER_ACCESS_TASKS = "appfabric:StartUserAccessTasks";
+	static readonly StartUserAccessTasks = "appfabric:StartUserAccessTasks";
 	/** [Write] appfabric:StopIngestion */
-	static readonly STOP_INGESTION = "appfabric:StopIngestion";
+	static readonly StopIngestion = "appfabric:StopIngestion";
 	/** [Tagging] appfabric:TagResource */
-	static readonly TAG_RESOURCE = "appfabric:TagResource";
+	static readonly TagResource = "appfabric:TagResource";
 	/** [Tagging] appfabric:UntagResource */
-	static readonly UNTAG_RESOURCE = "appfabric:UntagResource";
+	static readonly UntagResource = "appfabric:UntagResource";
 	/** [Write] appfabric:UpdateAppAuthorization */
-	static readonly UPDATE_APP_AUTHORIZATION = "appfabric:UpdateAppAuthorization";
+	static readonly UpdateAppAuthorization = "appfabric:UpdateAppAuthorization";
 	/** [Write] appfabric:UpdateIngestionDestination */
-	static readonly UPDATE_INGESTION_DESTINATION =
+	static readonly UpdateIngestionDestination =
 		"appfabric:UpdateIngestionDestination";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppfabricActions.GET_APP_AUTHORIZATION,
-		AppfabricActions.GET_APP_BUNDLE,
-		AppfabricActions.GET_INGESTION,
-		AppfabricActions.GET_INGESTION_DESTINATION,
-		AppfabricActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AppfabricActions.actionGetAppAuthorization,
+		AppfabricActions.actionGetAppBundle,
+		AppfabricActions.actionGetIngestion,
+		AppfabricActions.actionGetIngestionDestination,
+		AppfabricActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppfabricActions.BATCH_GET_USER_ACCESS_TASKS,
-		AppfabricActions.CONNECT_APP_AUTHORIZATION,
-		AppfabricActions.CREATE_APP_AUTHORIZATION,
-		AppfabricActions.CREATE_APP_BUNDLE,
-		AppfabricActions.CREATE_INGESTION,
-		AppfabricActions.CREATE_INGESTION_DESTINATION,
-		AppfabricActions.DELETE_APP_AUTHORIZATION,
-		AppfabricActions.DELETE_APP_BUNDLE,
-		AppfabricActions.DELETE_INGESTION,
-		AppfabricActions.DELETE_INGESTION_DESTINATION,
-		AppfabricActions.START_INGESTION,
-		AppfabricActions.START_USER_ACCESS_TASKS,
-		AppfabricActions.STOP_INGESTION,
-		AppfabricActions.UPDATE_APP_AUTHORIZATION,
-		AppfabricActions.UPDATE_INGESTION_DESTINATION,
+	static readonly AllWriteActions: string[] = [
+		AppfabricActions.BatchGetUserAccessTasks,
+		AppfabricActions.ConnectAppAuthorization,
+		AppfabricActions.CreateAppAuthorization,
+		AppfabricActions.CreateAppBundle,
+		AppfabricActions.CreateIngestion,
+		AppfabricActions.CreateIngestionDestination,
+		AppfabricActions.DeleteAppAuthorization,
+		AppfabricActions.DeleteAppBundle,
+		AppfabricActions.DeleteIngestion,
+		AppfabricActions.DeleteIngestionDestination,
+		AppfabricActions.StartIngestion,
+		AppfabricActions.StartUserAccessTasks,
+		AppfabricActions.StopIngestion,
+		AppfabricActions.UpdateAppAuthorization,
+		AppfabricActions.UpdateIngestionDestination,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppfabricActions.LIST_APP_AUTHORIZATIONS,
-		AppfabricActions.LIST_APP_BUNDLES,
-		AppfabricActions.LIST_INGESTION_DESTINATIONS,
-		AppfabricActions.LIST_INGESTIONS,
+	static readonly AllListActions: string[] = [
+		AppfabricActions.ListAppAuthorizations,
+		AppfabricActions.ListAppBundles,
+		AppfabricActions.ListIngestionDestinations,
+		AppfabricActions.ListIngestions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppfabricActions.TAG_RESOURCE,
-		AppfabricActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppfabricActions.TagResource,
+		AppfabricActions.UntagResource,
 	];
 }
 
-const AppauthorizationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle/(?<appbundleId>[^:/?]+)/appauthorization/(?<appAuthorizationIdentifier>[^:/?]+)$",
-);
-const AppbundleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle/(?<appBundleIdentifier>[^:/?]+)$",
-);
-const IngestionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle/(?<appbundleId>[^:/?]+)/ingestion/(?<ingestionIdentifier>[^:/?]+)$",
-);
-const IngestiondestinationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle/(?<appbundleId>[^:/?]+)/ingestion/(?<ingestionIdentifier>[^:/?]+)/ingestiondestination/(?<ingestionDestinationIdentifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a appauthorization ARN.
+ */
+export interface AppfabricAppauthorizationArnProps {
+	/** The AppbundleId component of the ARN. */
+	readonly appbundleId: string;
+	/** The AppAuthorizationIdentifier component of the ARN. */
+	readonly appAuthorizationIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a appauthorization ARN.
+ */
+export interface AppfabricAppauthorizationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppbundleId component. */
+	readonly appbundleId: string;
+	/** The AppAuthorizationIdentifier component. */
+	readonly appAuthorizationIdentifier: string;
+}
+
+/**
+ * Properties for building a appbundle ARN.
+ */
+export interface AppfabricAppbundleArnProps {
+	/** The AppBundleIdentifier component of the ARN. */
+	readonly appBundleIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a appbundle ARN.
+ */
+export interface AppfabricAppbundleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppBundleIdentifier component. */
+	readonly appBundleIdentifier: string;
+}
+
+/**
+ * Properties for building a ingestion ARN.
+ */
+export interface AppfabricIngestionArnProps {
+	/** The AppbundleId component of the ARN. */
+	readonly appbundleId: string;
+	/** The IngestionIdentifier component of the ARN. */
+	readonly ingestionIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ingestion ARN.
+ */
+export interface AppfabricIngestionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppbundleId component. */
+	readonly appbundleId: string;
+	/** The IngestionIdentifier component. */
+	readonly ingestionIdentifier: string;
+}
+
+/**
+ * Properties for building a ingestiondestination ARN.
+ */
+export interface AppfabricIngestiondestinationArnProps {
+	/** The AppbundleId component of the ARN. */
+	readonly appbundleId: string;
+	/** The IngestionIdentifier component of the ARN. */
+	readonly ingestionIdentifier: string;
+	/** The IngestionDestinationIdentifier component of the ARN. */
+	readonly ingestionDestinationIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ingestiondestination ARN.
+ */
+export interface AppfabricIngestiondestinationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppbundleId component. */
+	readonly appbundleId: string;
+	/** The IngestionIdentifier component. */
+	readonly ingestionIdentifier: string;
+	/** The IngestionDestinationIdentifier component. */
+	readonly ingestionDestinationIdentifier: string;
+}
+
+const AppauthorizationArnRegex =
+	/^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle\/(?<appbundleId>[^:/?]+)\/appauthorization\/(?<appAuthorizationIdentifier>[^:/?]+)$/;
+const AppbundleArnRegex =
+	/^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle\/(?<appBundleIdentifier>[^:/?]+)$/;
+const IngestionArnRegex =
+	/^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle\/(?<appbundleId>[^:/?]+)\/ingestion\/(?<ingestionIdentifier>[^:/?]+)$/;
+const IngestiondestinationArnRegex =
+	/^arn:(?<partition>[^:]+):appfabric:(?<region>[^:]*):(?<account>[^:]*):appbundle\/(?<appbundleId>[^:/?]+)\/ingestion\/(?<ingestionIdentifier>[^:/?]+)\/ingestiondestination\/(?<ingestionDestinationIdentifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appfabric resources.
@@ -134,18 +256,7 @@ export class AppfabricResources {
 	/**
 	 * Builds an ARN for the appauthorization resource.
 	 */
-	static appauthorization(props: {
-		/** The AppbundleId component of the ARN. */
-		readonly appbundleId: string;
-		/** The AppAuthorizationIdentifier component of the ARN. */
-		readonly appAuthorizationIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appauthorization(props: AppfabricAppauthorizationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appfabric:${props.region ?? "*"}:${props.account ?? "*"}:appbundle/${props.appbundleId}/appauthorization/${props.appAuthorizationIdentifier}`;
 	}
 
@@ -160,13 +271,9 @@ export class AppfabricResources {
 	 * Parses a appauthorization ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppauthorizationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appbundleId: string;
-		appAuthorizationIdentifier: string;
-	} {
+	static parseAppauthorizationArn(
+		arn: string,
+	): AppfabricAppauthorizationArnComponents {
 		const match = AppauthorizationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid appauthorization ARN: ${arn}`);
@@ -183,16 +290,7 @@ export class AppfabricResources {
 	/**
 	 * Builds an ARN for the appbundle resource.
 	 */
-	static appbundle(props: {
-		/** The AppBundleIdentifier component of the ARN. */
-		readonly appBundleIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appbundle(props: AppfabricAppbundleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appfabric:${props.region ?? "*"}:${props.account ?? "*"}:appbundle/${props.appBundleIdentifier}`;
 	}
 
@@ -207,12 +305,7 @@ export class AppfabricResources {
 	 * Parses a appbundle ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppbundleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appBundleIdentifier: string;
-	} {
+	static parseAppbundleArn(arn: string): AppfabricAppbundleArnComponents {
 		const match = AppbundleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid appbundle ARN: ${arn}`);
@@ -228,18 +321,7 @@ export class AppfabricResources {
 	/**
 	 * Builds an ARN for the ingestion resource.
 	 */
-	static ingestion(props: {
-		/** The AppbundleId component of the ARN. */
-		readonly appbundleId: string;
-		/** The IngestionIdentifier component of the ARN. */
-		readonly ingestionIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ingestion(props: AppfabricIngestionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appfabric:${props.region ?? "*"}:${props.account ?? "*"}:appbundle/${props.appbundleId}/ingestion/${props.ingestionIdentifier}`;
 	}
 
@@ -254,13 +336,7 @@ export class AppfabricResources {
 	 * Parses a ingestion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIngestionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appbundleId: string;
-		ingestionIdentifier: string;
-	} {
+	static parseIngestionArn(arn: string): AppfabricIngestionArnComponents {
 		const match = IngestionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ingestion ARN: ${arn}`);
@@ -277,20 +353,9 @@ export class AppfabricResources {
 	/**
 	 * Builds an ARN for the ingestiondestination resource.
 	 */
-	static ingestiondestination(props: {
-		/** The AppbundleId component of the ARN. */
-		readonly appbundleId: string;
-		/** The IngestionIdentifier component of the ARN. */
-		readonly ingestionIdentifier: string;
-		/** The IngestionDestinationIdentifier component of the ARN. */
-		readonly ingestionDestinationIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ingestiondestination(
+		props: AppfabricIngestiondestinationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appfabric:${props.region ?? "*"}:${props.account ?? "*"}:appbundle/${props.appbundleId}/ingestion/${props.ingestionIdentifier}/ingestiondestination/${props.ingestionDestinationIdentifier}`;
 	}
 
@@ -305,14 +370,9 @@ export class AppfabricResources {
 	 * Parses a ingestiondestination ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIngestiondestinationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appbundleId: string;
-		ingestionIdentifier: string;
-		ingestionDestinationIdentifier: string;
-	} {
+	static parseIngestiondestinationArn(
+		arn: string,
+	): AppfabricIngestiondestinationArnComponents {
 		const match = IngestiondestinationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ingestiondestination ARN: ${arn}`);
@@ -334,91 +394,91 @@ export class AppfabricResources {
  */
 export class AppfabricOperations {
 	/** IAM actions required for the BatchGetUserAccessTasks API call. */
-	static readonly BATCH_GET_USER_ACCESS_TASKS: string[] = [
+	static readonly BatchGetUserAccessTasks: string[] = [
 		"appfabric:BatchGetUserAccessTasks",
 	];
 	/** IAM actions required for the ConnectAppAuthorization API call. */
-	static readonly CONNECT_APP_AUTHORIZATION: string[] = [
+	static readonly ConnectAppAuthorization: string[] = [
 		"appfabric:ConnectAppAuthorization",
 	];
 	/** IAM actions required for the CreateAppAuthorization API call. */
-	static readonly CREATE_APP_AUTHORIZATION: string[] = [
+	static readonly CreateAppAuthorization: string[] = [
 		"appfabric:CreateAppAuthorization",
 		"appfabric:TagResource",
 	];
 	/** IAM actions required for the CreateAppBundle API call. */
-	static readonly CREATE_APP_BUNDLE: string[] = [
+	static readonly CreateAppBundle: string[] = [
 		"appfabric:CreateAppBundle",
 		"appfabric:TagResource",
 	];
 	/** IAM actions required for the CreateIngestion API call. */
-	static readonly CREATE_INGESTION: string[] = [
+	static readonly CreateIngestion: string[] = [
 		"appfabric:CreateIngestion",
 		"appfabric:TagResource",
 	];
 	/** IAM actions required for the CreateIngestionDestination API call. */
-	static readonly CREATE_INGESTION_DESTINATION: string[] = [
+	static readonly CreateIngestionDestination: string[] = [
 		"appfabric:CreateIngestionDestination",
 		"appfabric:TagResource",
 	];
 	/** IAM actions required for the DeleteAppAuthorization API call. */
-	static readonly DELETE_APP_AUTHORIZATION: string[] = [
+	static readonly DeleteAppAuthorization: string[] = [
 		"appfabric:DeleteAppAuthorization",
 	];
 	/** IAM actions required for the DeleteAppBundle API call. */
-	static readonly DELETE_APP_BUNDLE: string[] = ["appfabric:DeleteAppBundle"];
+	static readonly DeleteAppBundle: string[] = ["appfabric:DeleteAppBundle"];
 	/** IAM actions required for the DeleteIngestion API call. */
-	static readonly DELETE_INGESTION: string[] = ["appfabric:DeleteIngestion"];
+	static readonly DeleteIngestion: string[] = ["appfabric:DeleteIngestion"];
 	/** IAM actions required for the DeleteIngestionDestination API call. */
-	static readonly DELETE_INGESTION_DESTINATION: string[] = [
+	static readonly DeleteIngestionDestination: string[] = [
 		"appfabric:DeleteIngestionDestination",
 	];
 	/** IAM actions required for the GetAppAuthorization API call. */
-	static readonly GET_APP_AUTHORIZATION: string[] = [
+	static readonly opGetAppAuthorization: string[] = [
 		"appfabric:GetAppAuthorization",
 	];
 	/** IAM actions required for the GetAppBundle API call. */
-	static readonly GET_APP_BUNDLE: string[] = ["appfabric:GetAppBundle"];
+	static readonly opGetAppBundle: string[] = ["appfabric:GetAppBundle"];
 	/** IAM actions required for the GetIngestion API call. */
-	static readonly GET_INGESTION: string[] = ["appfabric:GetIngestion"];
+	static readonly opGetIngestion: string[] = ["appfabric:GetIngestion"];
 	/** IAM actions required for the GetIngestionDestination API call. */
-	static readonly GET_INGESTION_DESTINATION: string[] = [
+	static readonly opGetIngestionDestination: string[] = [
 		"appfabric:GetIngestionDestination",
 	];
 	/** IAM actions required for the ListAppAuthorizations API call. */
-	static readonly LIST_APP_AUTHORIZATIONS: string[] = [
+	static readonly ListAppAuthorizations: string[] = [
 		"appfabric:ListAppAuthorizations",
 	];
 	/** IAM actions required for the ListAppBundles API call. */
-	static readonly LIST_APP_BUNDLES: string[] = ["appfabric:ListAppBundles"];
+	static readonly ListAppBundles: string[] = ["appfabric:ListAppBundles"];
 	/** IAM actions required for the ListIngestionDestinations API call. */
-	static readonly LIST_INGESTION_DESTINATIONS: string[] = [
+	static readonly ListIngestionDestinations: string[] = [
 		"appfabric:ListIngestionDestinations",
 	];
 	/** IAM actions required for the ListIngestions API call. */
-	static readonly LIST_INGESTIONS: string[] = ["appfabric:ListIngestions"];
+	static readonly ListIngestions: string[] = ["appfabric:ListIngestions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"appfabric:ListTagsForResource",
 	];
 	/** IAM actions required for the StartIngestion API call. */
-	static readonly START_INGESTION: string[] = ["appfabric:StartIngestion"];
+	static readonly StartIngestion: string[] = ["appfabric:StartIngestion"];
 	/** IAM actions required for the StartUserAccessTasks API call. */
-	static readonly START_USER_ACCESS_TASKS: string[] = [
+	static readonly StartUserAccessTasks: string[] = [
 		"appfabric:StartUserAccessTasks",
 	];
 	/** IAM actions required for the StopIngestion API call. */
-	static readonly STOP_INGESTION: string[] = ["appfabric:StopIngestion"];
+	static readonly StopIngestion: string[] = ["appfabric:StopIngestion"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["appfabric:TagResource"];
+	static readonly TagResource: string[] = ["appfabric:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["appfabric:UntagResource"];
+	static readonly UntagResource: string[] = ["appfabric:UntagResource"];
 	/** IAM actions required for the UpdateAppAuthorization API call. */
-	static readonly UPDATE_APP_AUTHORIZATION: string[] = [
+	static readonly UpdateAppAuthorization: string[] = [
 		"appfabric:UpdateAppAuthorization",
 	];
 	/** IAM actions required for the UpdateIngestionDestination API call. */
-	static readonly UPDATE_INGESTION_DESTINATION: string[] = [
+	static readonly UpdateIngestionDestination: string[] = [
 		"appfabric:UpdateIngestionDestination",
 	];
 }
@@ -428,64 +488,64 @@ export class AppfabricOperations {
  */
 export class AppfabricConditions {
 	/** Condition keys applicable to the CreateAppAuthorization action. */
-	static readonly CREATE_APP_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAppAuthorizationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAppBundle action. */
-	static readonly CREATE_APP_BUNDLE_CONDITION_KEYS: string[] = [
+	static readonly CreateAppBundleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIngestion action. */
-	static readonly CREATE_INGESTION_CONDITION_KEYS: string[] = [
+	static readonly CreateIngestionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIngestionDestination action. */
-	static readonly CREATE_INGESTION_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly CreateIngestionDestinationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetAppAuthorization action. */
-	static readonly GET_APP_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetAppAuthorizationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAppBundle action. */
-	static readonly GET_APP_BUNDLE_CONDITION_KEYS: string[] = [
+	static readonly actionGetAppBundleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetIngestion action. */
-	static readonly GET_INGESTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetIngestionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetIngestionDestination action. */
-	static readonly GET_INGESTION_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetIngestionDestinationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateAppAuthorization action. */
-	static readonly UPDATE_APP_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateAppAuthorizationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateIngestionDestination action. */
-	static readonly UPDATE_INGESTION_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateIngestionDestinationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

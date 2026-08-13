@@ -13,100 +13,190 @@ export class CassandraActions {
 	static readonly SERVICE_PREFIX = "cassandra";
 
 	/** [Write] cassandra:Alter */
-	static readonly ALTER = "cassandra:Alter";
+	static readonly Alter = "cassandra:Alter";
 	/** [Write] cassandra:AlterMultiRegionResource */
-	static readonly ALTER_MULTI_REGION_RESOURCE =
+	static readonly AlterMultiRegionResource =
 		"cassandra:AlterMultiRegionResource";
 	/** [Write] cassandra:Create */
-	static readonly CREATE = "cassandra:Create";
+	static readonly Create = "cassandra:Create";
 	/** [Write] cassandra:CreateMultiRegionResource */
-	static readonly CREATE_MULTI_REGION_RESOURCE =
+	static readonly CreateMultiRegionResource =
 		"cassandra:CreateMultiRegionResource";
 	/** [Write] cassandra:Drop */
-	static readonly DROP = "cassandra:Drop";
+	static readonly Drop = "cassandra:Drop";
 	/** [Write] cassandra:DropMultiRegionResource */
-	static readonly DROP_MULTI_REGION_RESOURCE =
-		"cassandra:DropMultiRegionResource";
+	static readonly DropMultiRegionResource = "cassandra:DropMultiRegionResource";
 	/** [Read] cassandra:GetRecords */
-	static readonly GET_RECORDS = "cassandra:GetRecords";
+	static readonly actionGetRecords = "cassandra:GetRecords";
 	/** [Read] cassandra:GetShardIterator */
-	static readonly GET_SHARD_ITERATOR = "cassandra:GetShardIterator";
+	static readonly actionGetShardIterator = "cassandra:GetShardIterator";
 	/** [Read] cassandra:GetStream */
-	static readonly GET_STREAM = "cassandra:GetStream";
+	static readonly actionGetStream = "cassandra:GetStream";
 	/** [List] cassandra:ListStreams */
-	static readonly LIST_STREAMS = "cassandra:ListStreams";
+	static readonly ListStreams = "cassandra:ListStreams";
 	/** [Write] cassandra:Modify */
-	static readonly MODIFY = "cassandra:Modify";
+	static readonly Modify = "cassandra:Modify";
 	/** [Write] cassandra:ModifyMultiRegionResource */
-	static readonly MODIFY_MULTI_REGION_RESOURCE =
+	static readonly ModifyMultiRegionResource =
 		"cassandra:ModifyMultiRegionResource";
 	/** [Write] cassandra:Restore */
-	static readonly RESTORE = "cassandra:Restore";
+	static readonly Restore = "cassandra:Restore";
 	/** [Write] cassandra:RestoreMultiRegionTable */
-	static readonly RESTORE_MULTI_REGION_TABLE =
-		"cassandra:RestoreMultiRegionTable";
+	static readonly RestoreMultiRegionTable = "cassandra:RestoreMultiRegionTable";
 	/** [Read] cassandra:Select */
-	static readonly SELECT = "cassandra:Select";
+	static readonly Select = "cassandra:Select";
 	/** [Read] cassandra:SelectMultiRegionResource */
-	static readonly SELECT_MULTI_REGION_RESOURCE =
+	static readonly SelectMultiRegionResource =
 		"cassandra:SelectMultiRegionResource";
 	/** [Tagging] cassandra:TagMultiRegionResource */
-	static readonly TAG_MULTI_REGION_RESOURCE =
-		"cassandra:TagMultiRegionResource";
+	static readonly TagMultiRegionResource = "cassandra:TagMultiRegionResource";
 	/** [Tagging] cassandra:TagResource */
-	static readonly TAG_RESOURCE = "cassandra:TagResource";
+	static readonly TagResource = "cassandra:TagResource";
 	/** [Tagging] cassandra:UnTagMultiRegionResource */
-	static readonly UN_TAG_MULTI_REGION_RESOURCE =
+	static readonly UnTagMultiRegionResource =
 		"cassandra:UnTagMultiRegionResource";
 	/** [Tagging] cassandra:UntagResource */
-	static readonly UNTAG_RESOURCE = "cassandra:UntagResource";
+	static readonly UntagResource = "cassandra:UntagResource";
 	/** [Write] cassandra:UpdatePartitioner */
-	static readonly UPDATE_PARTITIONER = "cassandra:UpdatePartitioner";
+	static readonly UpdatePartitioner = "cassandra:UpdatePartitioner";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CassandraActions.GET_RECORDS,
-		CassandraActions.GET_SHARD_ITERATOR,
-		CassandraActions.GET_STREAM,
-		CassandraActions.SELECT,
-		CassandraActions.SELECT_MULTI_REGION_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		CassandraActions.actionGetRecords,
+		CassandraActions.actionGetShardIterator,
+		CassandraActions.actionGetStream,
+		CassandraActions.Select,
+		CassandraActions.SelectMultiRegionResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CassandraActions.ALTER,
-		CassandraActions.ALTER_MULTI_REGION_RESOURCE,
-		CassandraActions.CREATE,
-		CassandraActions.CREATE_MULTI_REGION_RESOURCE,
-		CassandraActions.DROP,
-		CassandraActions.DROP_MULTI_REGION_RESOURCE,
-		CassandraActions.MODIFY,
-		CassandraActions.MODIFY_MULTI_REGION_RESOURCE,
-		CassandraActions.RESTORE,
-		CassandraActions.RESTORE_MULTI_REGION_TABLE,
-		CassandraActions.UPDATE_PARTITIONER,
+	static readonly AllWriteActions: string[] = [
+		CassandraActions.Alter,
+		CassandraActions.AlterMultiRegionResource,
+		CassandraActions.Create,
+		CassandraActions.CreateMultiRegionResource,
+		CassandraActions.Drop,
+		CassandraActions.DropMultiRegionResource,
+		CassandraActions.Modify,
+		CassandraActions.ModifyMultiRegionResource,
+		CassandraActions.Restore,
+		CassandraActions.RestoreMultiRegionTable,
+		CassandraActions.UpdatePartitioner,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [CassandraActions.LIST_STREAMS];
+	static readonly AllListActions: string[] = [CassandraActions.ListStreams];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CassandraActions.TAG_MULTI_REGION_RESOURCE,
-		CassandraActions.TAG_RESOURCE,
-		CassandraActions.UN_TAG_MULTI_REGION_RESOURCE,
-		CassandraActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CassandraActions.TagMultiRegionResource,
+		CassandraActions.TagResource,
+		CassandraActions.UnTagMultiRegionResource,
+		CassandraActions.UntagResource,
 	];
 }
 
-const KeyspaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):/keyspace/(?<keyspaceName>[^:/?]+)/$",
-);
-const StreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):/keyspace/(?<keyspaceName>[^:/?]+)/table/(?<tableName>[^:/?]+)/stream/(?<streamLabel>[^:/?]+)$",
-);
-const TableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):/keyspace/(?<keyspaceName>[^:/?]+)/table/(?<tableName>[^:/?]+)$",
-);
+/**
+ * Properties for building a keyspace ARN.
+ */
+export interface CassandraKeyspaceArnProps {
+	/** The KeyspaceName component of the ARN. */
+	readonly keyspaceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a keyspace ARN.
+ */
+export interface CassandraKeyspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KeyspaceName component. */
+	readonly keyspaceName: string;
+}
+
+/**
+ * Properties for building a stream ARN.
+ */
+export interface CassandraStreamArnProps {
+	/** The KeyspaceName component of the ARN. */
+	readonly keyspaceName: string;
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The StreamLabel component of the ARN. */
+	readonly streamLabel: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stream ARN.
+ */
+export interface CassandraStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KeyspaceName component. */
+	readonly keyspaceName: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The StreamLabel component. */
+	readonly streamLabel: string;
+}
+
+/**
+ * Properties for building a table ARN.
+ */
+export interface CassandraTableArnProps {
+	/** The KeyspaceName component of the ARN. */
+	readonly keyspaceName: string;
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a table ARN.
+ */
+export interface CassandraTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KeyspaceName component. */
+	readonly keyspaceName: string;
+	/** The TableName component. */
+	readonly tableName: string;
+}
+
+const KeyspaceArnRegex =
+	/^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):\/keyspace\/(?<keyspaceName>[^:/?]+)\/$/;
+const StreamArnRegex =
+	/^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):\/keyspace\/(?<keyspaceName>[^:/?]+)\/table\/(?<tableName>[^:/?]+)\/stream\/(?<streamLabel>[^:/?]+)$/;
+const TableArnRegex =
+	/^arn:(?<partition>[^:]+):cassandra:(?<region>[^:]*):(?<account>[^:]*):\/keyspace\/(?<keyspaceName>[^:/?]+)\/table\/(?<tableName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cassandra resources.
@@ -115,16 +205,7 @@ export class CassandraResources {
 	/**
 	 * Builds an ARN for the keyspace resource.
 	 */
-	static keyspace(props: {
-		/** The KeyspaceName component of the ARN. */
-		readonly keyspaceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static keyspace(props: CassandraKeyspaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cassandra:${props.region ?? "*"}:${props.account ?? "*"}:/keyspace/${props.keyspaceName}/`;
 	}
 
@@ -139,12 +220,7 @@ export class CassandraResources {
 	 * Parses a keyspace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKeyspaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		keyspaceName: string;
-	} {
+	static parseKeyspaceArn(arn: string): CassandraKeyspaceArnComponents {
 		const match = KeyspaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid keyspace ARN: ${arn}`);
@@ -160,20 +236,7 @@ export class CassandraResources {
 	/**
 	 * Builds an ARN for the stream resource.
 	 */
-	static stream(props: {
-		/** The KeyspaceName component of the ARN. */
-		readonly keyspaceName: string;
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The StreamLabel component of the ARN. */
-		readonly streamLabel: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stream(props: CassandraStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cassandra:${props.region ?? "*"}:${props.account ?? "*"}:/keyspace/${props.keyspaceName}/table/${props.tableName}/stream/${props.streamLabel}`;
 	}
 
@@ -188,14 +251,7 @@ export class CassandraResources {
 	 * Parses a stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		keyspaceName: string;
-		tableName: string;
-		streamLabel: string;
-	} {
+	static parseStreamArn(arn: string): CassandraStreamArnComponents {
 		const match = StreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stream ARN: ${arn}`);
@@ -213,18 +269,7 @@ export class CassandraResources {
 	/**
 	 * Builds an ARN for the table resource.
 	 */
-	static table(props: {
-		/** The KeyspaceName component of the ARN. */
-		readonly keyspaceName: string;
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static table(props: CassandraTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cassandra:${props.region ?? "*"}:${props.account ?? "*"}:/keyspace/${props.keyspaceName}/table/${props.tableName}`;
 	}
 
@@ -239,13 +284,7 @@ export class CassandraResources {
 	 * Parses a table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		keyspaceName: string;
-		tableName: string;
-	} {
+	static parseTableArn(arn: string): CassandraTableArnComponents {
 		const match = TableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid table ARN: ${arn}`);
@@ -265,88 +304,88 @@ export class CassandraResources {
  */
 export class CassandraOperations {
 	/** IAM actions required for the CreateKeyspace API call. */
-	static readonly CREATE_KEYSPACE: string[] = [
+	static readonly CreateKeyspace: string[] = [
 		"cassandra:Create",
 		"cassandra:CreateMultiRegionResource",
 		"cassandra:TagResource",
 	];
 	/** IAM actions required for the CreateTable API call. */
-	static readonly CREATE_TABLE: string[] = [
+	static readonly CreateTable: string[] = [
 		"cassandra:Create",
 		"cassandra:CreateMultiRegionResource",
 		"cassandra:TagResource",
 	];
 	/** IAM actions required for the CreateType API call. */
-	static readonly CREATE_TYPE: string[] = [
+	static readonly CreateType: string[] = [
 		"cassandra:Create",
 		"cassandra:CreateMultiRegionResource",
 	];
 	/** IAM actions required for the DeleteKeyspace API call. */
-	static readonly DELETE_KEYSPACE: string[] = [
+	static readonly DeleteKeyspace: string[] = [
 		"cassandra:Drop",
 		"cassandra:DropMultiRegionResource",
 	];
 	/** IAM actions required for the DeleteTable API call. */
-	static readonly DELETE_TABLE: string[] = [
+	static readonly DeleteTable: string[] = [
 		"cassandra:Drop",
 		"cassandra:DropMultiRegionResource",
 	];
 	/** IAM actions required for the DeleteType API call. */
-	static readonly DELETE_TYPE: string[] = [
+	static readonly DeleteType: string[] = [
 		"cassandra:Drop",
 		"cassandra:DropMultiRegionResource",
 	];
 	/** IAM actions required for the GetKeyspace API call. */
-	static readonly GET_KEYSPACE: string[] = ["cassandra:Select"];
+	static readonly opGetKeyspace: string[] = ["cassandra:Select"];
 	/** IAM actions required for the GetRecords API call. */
-	static readonly GET_RECORDS: string[] = ["cassandra:GetRecords"];
+	static readonly opGetRecords: string[] = ["cassandra:GetRecords"];
 	/** IAM actions required for the GetShardIterator API call. */
-	static readonly GET_SHARD_ITERATOR: string[] = ["cassandra:GetShardIterator"];
+	static readonly opGetShardIterator: string[] = ["cassandra:GetShardIterator"];
 	/** IAM actions required for the GetStream API call. */
-	static readonly GET_STREAM: string[] = ["cassandra:GetStream"];
+	static readonly opGetStream: string[] = ["cassandra:GetStream"];
 	/** IAM actions required for the GetTable API call. */
-	static readonly GET_TABLE: string[] = ["cassandra:Select"];
+	static readonly opGetTable: string[] = ["cassandra:Select"];
 	/** IAM actions required for the GetTableAutoScalingSettings API call. */
-	static readonly GET_TABLE_AUTO_SCALING_SETTINGS: string[] = [
+	static readonly opGetTableAutoScalingSettings: string[] = [
 		"application-autoscaling:DescribeScalableTargets",
 		"application-autoscaling:DescribeScalingPolicies",
 		"cassandra:Select",
 		"cassandra:SelectMultiRegionResource",
 	];
 	/** IAM actions required for the GetType API call. */
-	static readonly GET_TYPE: string[] = ["cassandra:Select"];
+	static readonly opGetType: string[] = ["cassandra:Select"];
 	/** IAM actions required for the ListKeyspaces API call. */
-	static readonly LIST_KEYSPACES: string[] = ["cassandra:Select"];
+	static readonly ListKeyspaces: string[] = ["cassandra:Select"];
 	/** IAM actions required for the ListStreams API call. */
-	static readonly LIST_STREAMS: string[] = ["cassandra:ListStreams"];
+	static readonly ListStreams: string[] = ["cassandra:ListStreams"];
 	/** IAM actions required for the ListTables API call. */
-	static readonly LIST_TABLES: string[] = ["cassandra:Select"];
+	static readonly ListTables: string[] = ["cassandra:Select"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the ListTypes API call. */
-	static readonly LIST_TYPES: string[] = ["cassandra:Select"];
+	static readonly ListTypes: string[] = ["cassandra:Select"];
 	/** IAM actions required for the RestoreTable API call. */
-	static readonly RESTORE_TABLE: string[] = [
+	static readonly RestoreTable: string[] = [
 		"cassandra:Restore",
 		"cassandra:RestoreMultiRegionTable",
 		"cassandra:Select",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"cassandra:Alter",
 		"cassandra:AlterMultiRegionResource",
 		"cassandra:TagMultiRegionResource",
 		"cassandra:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"cassandra:Alter",
 		"cassandra:AlterMultiRegionResource",
 		"cassandra:UnTagMultiRegionResource",
 		"cassandra:UntagResource",
 	];
 	/** IAM actions required for the UpdateKeyspace API call. */
-	static readonly UPDATE_KEYSPACE: string[] = [
+	static readonly UpdateKeyspace: string[] = [
 		"cassandra:Alter",
 		"cassandra:AlterMultiRegionResource",
 		"cassandra:Create",
@@ -364,7 +403,7 @@ export class CassandraOperations {
 		"cassandra:TagResource",
 	];
 	/** IAM actions required for the UpdateTable API call. */
-	static readonly UPDATE_TABLE: string[] = [
+	static readonly UpdateTable: string[] = [
 		"cassandra:Alter",
 		"cassandra:AlterMultiRegionResource",
 	];
@@ -375,48 +414,48 @@ export class CassandraOperations {
  */
 export class CassandraConditions {
 	/** Condition keys applicable to the Alter action. */
-	static readonly ALTER_CONDITION_KEYS: string[] = [
+	static readonly AlterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the AlterMultiRegionResource action. */
-	static readonly ALTER_MULTI_REGION_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AlterMultiRegionResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the Create action. */
-	static readonly CREATE_CONDITION_KEYS: string[] = [
+	static readonly CreateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMultiRegionResource action. */
-	static readonly CREATE_MULTI_REGION_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly CreateMultiRegionResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagMultiRegionResource action. */
-	static readonly TAG_MULTI_REGION_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagMultiRegionResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UnTagMultiRegionResource action. */
-	static readonly UN_TAG_MULTI_REGION_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UnTagMultiRegionResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

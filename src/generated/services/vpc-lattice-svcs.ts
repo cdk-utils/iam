@@ -13,31 +13,89 @@ export class VPCLatticeSvcsActions {
 	static readonly SERVICE_PREFIX = "vpc-lattice-svcs";
 
 	/** [Write] vpc-lattice-svcs:Connect */
-	static readonly CONNECT = "vpc-lattice-svcs:Connect";
+	static readonly Connect = "vpc-lattice-svcs:Connect";
 	/** [Write] vpc-lattice-svcs:Invoke */
-	static readonly INVOKE = "vpc-lattice-svcs:Invoke";
+	static readonly Invoke = "vpc-lattice-svcs:Invoke";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		VPCLatticeSvcsActions.CONNECT,
-		VPCLatticeSvcsActions.INVOKE,
+	static readonly AllWriteActions: string[] = [
+		VPCLatticeSvcsActions.Connect,
+		VPCLatticeSvcsActions.Invoke,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):vpc-lattice:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceId>[^:/?]+)/(?<requestPath>[^:/?]+)$",
-);
-const TCPServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):vpc-lattice:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Service ARN.
+ */
+export interface VPCLatticeSvcsServiceArnProps {
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** The RequestPath component of the ARN. */
+	readonly requestPath: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Service ARN.
+ */
+export interface VPCLatticeSvcsServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+	/** The RequestPath component. */
+	readonly requestPath: string;
+}
+
+/**
+ * Properties for building a TCP Service ARN.
+ */
+export interface VPCLatticeSvcsTCPServiceArnProps {
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TCP Service ARN.
+ */
+export interface VPCLatticeSvcsTCPServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+}
+
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):vpc-lattice:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceId>[^:/?]+)\/(?<requestPath>[^:/?]+)$/;
+const TCPServiceArnRegex =
+	/^arn:(?<partition>[^:]+):vpc-lattice:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for vpc-lattice-svcs resources.
@@ -46,18 +104,7 @@ export class VPCLatticeSvcsResources {
 	/**
 	 * Builds an ARN for the Service resource.
 	 */
-	static service(props: {
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** The RequestPath component of the ARN. */
-		readonly requestPath: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: VPCLatticeSvcsServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:vpc-lattice:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceId}/${props.requestPath}`;
 	}
 
@@ -72,13 +119,7 @@ export class VPCLatticeSvcsResources {
 	 * Parses a Service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceId: string;
-		requestPath: string;
-	} {
+	static parseServiceArn(arn: string): VPCLatticeSvcsServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Service ARN: ${arn}`);
@@ -95,16 +136,7 @@ export class VPCLatticeSvcsResources {
 	/**
 	 * Builds an ARN for the TCP Service resource.
 	 */
-	static tcpService(props: {
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tcpService(props: VPCLatticeSvcsTCPServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:vpc-lattice:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceId}`;
 	}
 
@@ -119,12 +151,9 @@ export class VPCLatticeSvcsResources {
 	 * Parses a TCP Service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTCPServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceId: string;
-	} {
+	static parseTCPServiceArn(
+		arn: string,
+	): VPCLatticeSvcsTCPServiceArnComponents {
 		const match = TCPServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TCP Service ARN: ${arn}`);
@@ -143,7 +172,7 @@ export class VPCLatticeSvcsResources {
  */
 export class VPCLatticeSvcsConditions {
 	/** Condition keys applicable to the Connect action. */
-	static readonly CONNECT_CONDITION_KEYS: string[] = [
+	static readonly ConnectConditionKeys: string[] = [
 		"vpc-lattice-svcs:Port",
 		"vpc-lattice-svcs:ServiceArn",
 		"vpc-lattice-svcs:ServiceNetworkArn",
@@ -151,7 +180,7 @@ export class VPCLatticeSvcsConditions {
 		"vpc-lattice-svcs:SourceVpcOwnerAccount",
 	];
 	/** Condition keys applicable to the Invoke action. */
-	static readonly INVOKE_CONDITION_KEYS: string[] = [
+	static readonly InvokeConditionKeys: string[] = [
 		"vpc-lattice-svcs:Port",
 		"vpc-lattice-svcs:RequestHeader/${HeaderName}",
 		"vpc-lattice-svcs:RequestMethod",

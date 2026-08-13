@@ -13,16 +13,16 @@ export class RhelkbActions {
 	static readonly SERVICE_PREFIX = "rhelkb";
 
 	/** [Read] rhelkb:GetRhelURL */
-	static readonly GET_RHEL_URL = "rhelkb:GetRhelURL";
+	static readonly actionGetRhelURL = "rhelkb:GetRhelURL";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [RhelkbActions.GET_RHEL_URL];
+	static readonly AllReadActions: string[] = [RhelkbActions.actionGetRhelURL];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

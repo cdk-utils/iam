@@ -13,40 +13,40 @@ export class ActivateActions {
 	static readonly SERVICE_PREFIX = "activate";
 
 	/** [Write] activate:CreateForm */
-	static readonly CREATE_FORM = "activate:CreateForm";
+	static readonly CreateForm = "activate:CreateForm";
 	/** [Read] activate:GetAccountContact */
-	static readonly GET_ACCOUNT_CONTACT = "activate:GetAccountContact";
+	static readonly actionGetAccountContact = "activate:GetAccountContact";
 	/** [Read] activate:GetContentInfo */
-	static readonly GET_CONTENT_INFO = "activate:GetContentInfo";
+	static readonly actionGetContentInfo = "activate:GetContentInfo";
 	/** [Read] activate:GetCosts */
-	static readonly GET_COSTS = "activate:GetCosts";
+	static readonly actionGetCosts = "activate:GetCosts";
 	/** [Read] activate:GetCredits */
-	static readonly GET_CREDITS = "activate:GetCredits";
+	static readonly actionGetCredits = "activate:GetCredits";
 	/** [Read] activate:GetMemberInfo */
-	static readonly GET_MEMBER_INFO = "activate:GetMemberInfo";
+	static readonly actionGetMemberInfo = "activate:GetMemberInfo";
 	/** [Read] activate:GetProgram */
-	static readonly GET_PROGRAM = "activate:GetProgram";
+	static readonly actionGetProgram = "activate:GetProgram";
 	/** [Write] activate:PutMemberInfo */
-	static readonly PUT_MEMBER_INFO = "activate:PutMemberInfo";
+	static readonly PutMemberInfo = "activate:PutMemberInfo";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ActivateActions.GET_ACCOUNT_CONTACT,
-		ActivateActions.GET_CONTENT_INFO,
-		ActivateActions.GET_COSTS,
-		ActivateActions.GET_CREDITS,
-		ActivateActions.GET_MEMBER_INFO,
-		ActivateActions.GET_PROGRAM,
+	static readonly AllReadActions: string[] = [
+		ActivateActions.actionGetAccountContact,
+		ActivateActions.actionGetContentInfo,
+		ActivateActions.actionGetCosts,
+		ActivateActions.actionGetCredits,
+		ActivateActions.actionGetMemberInfo,
+		ActivateActions.actionGetProgram,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ActivateActions.CREATE_FORM,
-		ActivateActions.PUT_MEMBER_INFO,
+	static readonly AllWriteActions: string[] = [
+		ActivateActions.CreateForm,
+		ActivateActions.PutMemberInfo,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

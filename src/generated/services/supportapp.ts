@@ -13,65 +13,65 @@ export class SupportappActions {
 	static readonly SERVICE_PREFIX = "supportapp";
 
 	/** [Write] supportapp:CreateSlackChannelConfiguration */
-	static readonly CREATE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly CreateSlackChannelConfiguration =
 		"supportapp:CreateSlackChannelConfiguration";
 	/** [Write] supportapp:DeleteAccountAlias */
-	static readonly DELETE_ACCOUNT_ALIAS = "supportapp:DeleteAccountAlias";
+	static readonly DeleteAccountAlias = "supportapp:DeleteAccountAlias";
 	/** [Write] supportapp:DeleteSlackChannelConfiguration */
-	static readonly DELETE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly DeleteSlackChannelConfiguration =
 		"supportapp:DeleteSlackChannelConfiguration";
 	/** [Write] supportapp:DeleteSlackWorkspaceConfiguration */
-	static readonly DELETE_SLACK_WORKSPACE_CONFIGURATION =
+	static readonly DeleteSlackWorkspaceConfiguration =
 		"supportapp:DeleteSlackWorkspaceConfiguration";
 	/** [Read] supportapp:DescribeSlackChannels */
-	static readonly DESCRIBE_SLACK_CHANNELS = "supportapp:DescribeSlackChannels";
+	static readonly DescribeSlackChannels = "supportapp:DescribeSlackChannels";
 	/** [Read] supportapp:GetAccountAlias */
-	static readonly GET_ACCOUNT_ALIAS = "supportapp:GetAccountAlias";
+	static readonly actionGetAccountAlias = "supportapp:GetAccountAlias";
 	/** [Read] supportapp:GetSlackOauthParameters */
-	static readonly GET_SLACK_OAUTH_PARAMETERS =
+	static readonly actionGetSlackOauthParameters =
 		"supportapp:GetSlackOauthParameters";
 	/** [Read] supportapp:ListSlackChannelConfigurations */
-	static readonly LIST_SLACK_CHANNEL_CONFIGURATIONS =
+	static readonly ListSlackChannelConfigurations =
 		"supportapp:ListSlackChannelConfigurations";
 	/** [Read] supportapp:ListSlackWorkspaceConfigurations */
-	static readonly LIST_SLACK_WORKSPACE_CONFIGURATIONS =
+	static readonly ListSlackWorkspaceConfigurations =
 		"supportapp:ListSlackWorkspaceConfigurations";
 	/** [Write] supportapp:PutAccountAlias */
-	static readonly PUT_ACCOUNT_ALIAS = "supportapp:PutAccountAlias";
+	static readonly PutAccountAlias = "supportapp:PutAccountAlias";
 	/** [Write] supportapp:RedeemSlackOauthCode */
-	static readonly REDEEM_SLACK_OAUTH_CODE = "supportapp:RedeemSlackOauthCode";
+	static readonly RedeemSlackOauthCode = "supportapp:RedeemSlackOauthCode";
 	/** [Write] supportapp:RegisterSlackWorkspaceForOrganization */
-	static readonly REGISTER_SLACK_WORKSPACE_FOR_ORGANIZATION =
+	static readonly RegisterSlackWorkspaceForOrganization =
 		"supportapp:RegisterSlackWorkspaceForOrganization";
 	/** [Write] supportapp:UpdateSlackChannelConfiguration */
-	static readonly UPDATE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly UpdateSlackChannelConfiguration =
 		"supportapp:UpdateSlackChannelConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SupportappActions.DESCRIBE_SLACK_CHANNELS,
-		SupportappActions.GET_ACCOUNT_ALIAS,
-		SupportappActions.GET_SLACK_OAUTH_PARAMETERS,
-		SupportappActions.LIST_SLACK_CHANNEL_CONFIGURATIONS,
-		SupportappActions.LIST_SLACK_WORKSPACE_CONFIGURATIONS,
+	static readonly AllReadActions: string[] = [
+		SupportappActions.DescribeSlackChannels,
+		SupportappActions.actionGetAccountAlias,
+		SupportappActions.actionGetSlackOauthParameters,
+		SupportappActions.ListSlackChannelConfigurations,
+		SupportappActions.ListSlackWorkspaceConfigurations,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SupportappActions.CREATE_SLACK_CHANNEL_CONFIGURATION,
-		SupportappActions.DELETE_ACCOUNT_ALIAS,
-		SupportappActions.DELETE_SLACK_CHANNEL_CONFIGURATION,
-		SupportappActions.DELETE_SLACK_WORKSPACE_CONFIGURATION,
-		SupportappActions.PUT_ACCOUNT_ALIAS,
-		SupportappActions.REDEEM_SLACK_OAUTH_CODE,
-		SupportappActions.REGISTER_SLACK_WORKSPACE_FOR_ORGANIZATION,
-		SupportappActions.UPDATE_SLACK_CHANNEL_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		SupportappActions.CreateSlackChannelConfiguration,
+		SupportappActions.DeleteAccountAlias,
+		SupportappActions.DeleteSlackChannelConfiguration,
+		SupportappActions.DeleteSlackWorkspaceConfiguration,
+		SupportappActions.PutAccountAlias,
+		SupportappActions.RedeemSlackOauthCode,
+		SupportappActions.RegisterSlackWorkspaceForOrganization,
+		SupportappActions.UpdateSlackChannelConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -79,40 +79,40 @@ export class SupportappActions {
  */
 export class SupportappOperations {
 	/** IAM actions required for the CreateSlackChannelConfiguration API call. */
-	static readonly CREATE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly CreateSlackChannelConfiguration: string[] = [
 		"supportapp:CreateSlackChannelConfiguration",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteAccountAlias API call. */
-	static readonly DELETE_ACCOUNT_ALIAS: string[] = [
+	static readonly DeleteAccountAlias: string[] = [
 		"supportapp:DeleteAccountAlias",
 	];
 	/** IAM actions required for the DeleteSlackChannelConfiguration API call. */
-	static readonly DELETE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly DeleteSlackChannelConfiguration: string[] = [
 		"supportapp:DeleteSlackChannelConfiguration",
 	];
 	/** IAM actions required for the DeleteSlackWorkspaceConfiguration API call. */
-	static readonly DELETE_SLACK_WORKSPACE_CONFIGURATION: string[] = [
+	static readonly DeleteSlackWorkspaceConfiguration: string[] = [
 		"supportapp:DeleteSlackWorkspaceConfiguration",
 	];
 	/** IAM actions required for the GetAccountAlias API call. */
-	static readonly GET_ACCOUNT_ALIAS: string[] = ["supportapp:GetAccountAlias"];
+	static readonly opGetAccountAlias: string[] = ["supportapp:GetAccountAlias"];
 	/** IAM actions required for the ListSlackChannelConfigurations API call. */
-	static readonly LIST_SLACK_CHANNEL_CONFIGURATIONS: string[] = [
+	static readonly ListSlackChannelConfigurations: string[] = [
 		"supportapp:ListSlackChannelConfigurations",
 	];
 	/** IAM actions required for the ListSlackWorkspaceConfigurations API call. */
-	static readonly LIST_SLACK_WORKSPACE_CONFIGURATIONS: string[] = [
+	static readonly ListSlackWorkspaceConfigurations: string[] = [
 		"supportapp:ListSlackWorkspaceConfigurations",
 	];
 	/** IAM actions required for the PutAccountAlias API call. */
-	static readonly PUT_ACCOUNT_ALIAS: string[] = ["supportapp:PutAccountAlias"];
+	static readonly PutAccountAlias: string[] = ["supportapp:PutAccountAlias"];
 	/** IAM actions required for the RegisterSlackWorkspaceForOrganization API call. */
-	static readonly REGISTER_SLACK_WORKSPACE_FOR_ORGANIZATION: string[] = [
+	static readonly RegisterSlackWorkspaceForOrganization: string[] = [
 		"supportapp:RegisterSlackWorkspaceForOrganization",
 	];
 	/** IAM actions required for the UpdateSlackChannelConfiguration API call. */
-	static readonly UPDATE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly UpdateSlackChannelConfiguration: string[] = [
 		"iam:PassRole",
 		"supportapp:UpdateSlackChannelConfiguration",
 	];

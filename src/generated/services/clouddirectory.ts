@@ -13,254 +13,369 @@ export class ClouddirectoryActions {
 	static readonly SERVICE_PREFIX = "clouddirectory";
 
 	/** [Write] clouddirectory:AddFacetToObject */
-	static readonly ADD_FACET_TO_OBJECT = "clouddirectory:AddFacetToObject";
+	static readonly AddFacetToObject = "clouddirectory:AddFacetToObject";
 	/** [Write] clouddirectory:ApplySchema */
-	static readonly APPLY_SCHEMA = "clouddirectory:ApplySchema";
+	static readonly ApplySchema = "clouddirectory:ApplySchema";
 	/** [Write] clouddirectory:AttachObject */
-	static readonly ATTACH_OBJECT = "clouddirectory:AttachObject";
+	static readonly AttachObject = "clouddirectory:AttachObject";
 	/** [Write] clouddirectory:AttachPolicy */
-	static readonly ATTACH_POLICY = "clouddirectory:AttachPolicy";
+	static readonly AttachPolicy = "clouddirectory:AttachPolicy";
 	/** [Write] clouddirectory:AttachToIndex */
-	static readonly ATTACH_TO_INDEX = "clouddirectory:AttachToIndex";
+	static readonly AttachToIndex = "clouddirectory:AttachToIndex";
 	/** [Write] clouddirectory:AttachTypedLink */
-	static readonly ATTACH_TYPED_LINK = "clouddirectory:AttachTypedLink";
+	static readonly AttachTypedLink = "clouddirectory:AttachTypedLink";
 	/** [Read] clouddirectory:BatchRead */
-	static readonly BATCH_READ = "clouddirectory:BatchRead";
+	static readonly BatchRead = "clouddirectory:BatchRead";
 	/** [Write] clouddirectory:BatchWrite */
-	static readonly BATCH_WRITE = "clouddirectory:BatchWrite";
+	static readonly BatchWrite = "clouddirectory:BatchWrite";
 	/** [Write] clouddirectory:CreateDirectory */
-	static readonly CREATE_DIRECTORY = "clouddirectory:CreateDirectory";
+	static readonly CreateDirectory = "clouddirectory:CreateDirectory";
 	/** [Write] clouddirectory:CreateFacet */
-	static readonly CREATE_FACET = "clouddirectory:CreateFacet";
+	static readonly CreateFacet = "clouddirectory:CreateFacet";
 	/** [Write] clouddirectory:CreateIndex */
-	static readonly CREATE_INDEX = "clouddirectory:CreateIndex";
+	static readonly CreateIndex = "clouddirectory:CreateIndex";
 	/** [Write] clouddirectory:CreateObject */
-	static readonly CREATE_OBJECT = "clouddirectory:CreateObject";
+	static readonly CreateObject = "clouddirectory:CreateObject";
 	/** [Write] clouddirectory:CreateSchema */
-	static readonly CREATE_SCHEMA = "clouddirectory:CreateSchema";
+	static readonly CreateSchema = "clouddirectory:CreateSchema";
 	/** [Write] clouddirectory:CreateTypedLinkFacet */
-	static readonly CREATE_TYPED_LINK_FACET =
-		"clouddirectory:CreateTypedLinkFacet";
+	static readonly CreateTypedLinkFacet = "clouddirectory:CreateTypedLinkFacet";
 	/** [Write] clouddirectory:DeleteDirectory */
-	static readonly DELETE_DIRECTORY = "clouddirectory:DeleteDirectory";
+	static readonly DeleteDirectory = "clouddirectory:DeleteDirectory";
 	/** [Write] clouddirectory:DeleteFacet */
-	static readonly DELETE_FACET = "clouddirectory:DeleteFacet";
+	static readonly DeleteFacet = "clouddirectory:DeleteFacet";
 	/** [Write] clouddirectory:DeleteObject */
-	static readonly DELETE_OBJECT = "clouddirectory:DeleteObject";
+	static readonly DeleteObject = "clouddirectory:DeleteObject";
 	/** [Write] clouddirectory:DeleteSchema */
-	static readonly DELETE_SCHEMA = "clouddirectory:DeleteSchema";
+	static readonly DeleteSchema = "clouddirectory:DeleteSchema";
 	/** [Write] clouddirectory:DeleteTypedLinkFacet */
-	static readonly DELETE_TYPED_LINK_FACET =
-		"clouddirectory:DeleteTypedLinkFacet";
+	static readonly DeleteTypedLinkFacet = "clouddirectory:DeleteTypedLinkFacet";
 	/** [Write] clouddirectory:DetachFromIndex */
-	static readonly DETACH_FROM_INDEX = "clouddirectory:DetachFromIndex";
+	static readonly DetachFromIndex = "clouddirectory:DetachFromIndex";
 	/** [Write] clouddirectory:DetachObject */
-	static readonly DETACH_OBJECT = "clouddirectory:DetachObject";
+	static readonly DetachObject = "clouddirectory:DetachObject";
 	/** [Write] clouddirectory:DetachPolicy */
-	static readonly DETACH_POLICY = "clouddirectory:DetachPolicy";
+	static readonly DetachPolicy = "clouddirectory:DetachPolicy";
 	/** [Write] clouddirectory:DetachTypedLink */
-	static readonly DETACH_TYPED_LINK = "clouddirectory:DetachTypedLink";
+	static readonly DetachTypedLink = "clouddirectory:DetachTypedLink";
 	/** [Write] clouddirectory:DisableDirectory */
-	static readonly DISABLE_DIRECTORY = "clouddirectory:DisableDirectory";
+	static readonly DisableDirectory = "clouddirectory:DisableDirectory";
 	/** [Write] clouddirectory:EnableDirectory */
-	static readonly ENABLE_DIRECTORY = "clouddirectory:EnableDirectory";
+	static readonly EnableDirectory = "clouddirectory:EnableDirectory";
 	/** [Read] clouddirectory:GetAppliedSchemaVersion */
-	static readonly GET_APPLIED_SCHEMA_VERSION =
+	static readonly actionGetAppliedSchemaVersion =
 		"clouddirectory:GetAppliedSchemaVersion";
 	/** [Read] clouddirectory:GetDirectory */
-	static readonly GET_DIRECTORY = "clouddirectory:GetDirectory";
+	static readonly actionGetDirectory = "clouddirectory:GetDirectory";
 	/** [Read] clouddirectory:GetFacet */
-	static readonly GET_FACET = "clouddirectory:GetFacet";
+	static readonly actionGetFacet = "clouddirectory:GetFacet";
 	/** [Read] clouddirectory:GetLinkAttributes */
-	static readonly GET_LINK_ATTRIBUTES = "clouddirectory:GetLinkAttributes";
+	static readonly actionGetLinkAttributes = "clouddirectory:GetLinkAttributes";
 	/** [Read] clouddirectory:GetObjectAttributes */
-	static readonly GET_OBJECT_ATTRIBUTES = "clouddirectory:GetObjectAttributes";
+	static readonly actionGetObjectAttributes =
+		"clouddirectory:GetObjectAttributes";
 	/** [Read] clouddirectory:GetObjectInformation */
-	static readonly GET_OBJECT_INFORMATION =
+	static readonly actionGetObjectInformation =
 		"clouddirectory:GetObjectInformation";
 	/** [Read] clouddirectory:GetSchemaAsJson */
-	static readonly GET_SCHEMA_AS_JSON = "clouddirectory:GetSchemaAsJson";
+	static readonly actionGetSchemaAsJson = "clouddirectory:GetSchemaAsJson";
 	/** [Read] clouddirectory:GetTypedLinkFacetInformation */
-	static readonly GET_TYPED_LINK_FACET_INFORMATION =
+	static readonly actionGetTypedLinkFacetInformation =
 		"clouddirectory:GetTypedLinkFacetInformation";
 	/** [List] clouddirectory:ListAppliedSchemaArns */
-	static readonly LIST_APPLIED_SCHEMA_ARNS =
+	static readonly ListAppliedSchemaArns =
 		"clouddirectory:ListAppliedSchemaArns";
 	/** [Read] clouddirectory:ListAttachedIndices */
-	static readonly LIST_ATTACHED_INDICES = "clouddirectory:ListAttachedIndices";
+	static readonly ListAttachedIndices = "clouddirectory:ListAttachedIndices";
 	/** [List] clouddirectory:ListDevelopmentSchemaArns */
-	static readonly LIST_DEVELOPMENT_SCHEMA_ARNS =
+	static readonly ListDevelopmentSchemaArns =
 		"clouddirectory:ListDevelopmentSchemaArns";
 	/** [List] clouddirectory:ListDirectories */
-	static readonly LIST_DIRECTORIES = "clouddirectory:ListDirectories";
+	static readonly ListDirectories = "clouddirectory:ListDirectories";
 	/** [Read] clouddirectory:ListFacetAttributes */
-	static readonly LIST_FACET_ATTRIBUTES = "clouddirectory:ListFacetAttributes";
+	static readonly ListFacetAttributes = "clouddirectory:ListFacetAttributes";
 	/** [Read] clouddirectory:ListFacetNames */
-	static readonly LIST_FACET_NAMES = "clouddirectory:ListFacetNames";
+	static readonly ListFacetNames = "clouddirectory:ListFacetNames";
 	/** [Read] clouddirectory:ListIncomingTypedLinks */
-	static readonly LIST_INCOMING_TYPED_LINKS =
+	static readonly ListIncomingTypedLinks =
 		"clouddirectory:ListIncomingTypedLinks";
 	/** [Read] clouddirectory:ListIndex */
-	static readonly LIST_INDEX = "clouddirectory:ListIndex";
+	static readonly ListIndex = "clouddirectory:ListIndex";
 	/** [List] clouddirectory:ListManagedSchemaArns */
-	static readonly LIST_MANAGED_SCHEMA_ARNS =
+	static readonly ListManagedSchemaArns =
 		"clouddirectory:ListManagedSchemaArns";
 	/** [Read] clouddirectory:ListObjectAttributes */
-	static readonly LIST_OBJECT_ATTRIBUTES =
-		"clouddirectory:ListObjectAttributes";
+	static readonly ListObjectAttributes = "clouddirectory:ListObjectAttributes";
 	/** [Read] clouddirectory:ListObjectChildren */
-	static readonly LIST_OBJECT_CHILDREN = "clouddirectory:ListObjectChildren";
+	static readonly ListObjectChildren = "clouddirectory:ListObjectChildren";
 	/** [Read] clouddirectory:ListObjectParentPaths */
-	static readonly LIST_OBJECT_PARENT_PATHS =
+	static readonly ListObjectParentPaths =
 		"clouddirectory:ListObjectParentPaths";
 	/** [Read] clouddirectory:ListObjectParents */
-	static readonly LIST_OBJECT_PARENTS = "clouddirectory:ListObjectParents";
+	static readonly ListObjectParents = "clouddirectory:ListObjectParents";
 	/** [Read] clouddirectory:ListObjectPolicies */
-	static readonly LIST_OBJECT_POLICIES = "clouddirectory:ListObjectPolicies";
+	static readonly ListObjectPolicies = "clouddirectory:ListObjectPolicies";
 	/** [Read] clouddirectory:ListOutgoingTypedLinks */
-	static readonly LIST_OUTGOING_TYPED_LINKS =
+	static readonly ListOutgoingTypedLinks =
 		"clouddirectory:ListOutgoingTypedLinks";
 	/** [Read] clouddirectory:ListPolicyAttachments */
-	static readonly LIST_POLICY_ATTACHMENTS =
+	static readonly ListPolicyAttachments =
 		"clouddirectory:ListPolicyAttachments";
 	/** [List] clouddirectory:ListPublishedSchemaArns */
-	static readonly LIST_PUBLISHED_SCHEMA_ARNS =
+	static readonly ListPublishedSchemaArns =
 		"clouddirectory:ListPublishedSchemaArns";
 	/** [Read] clouddirectory:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "clouddirectory:ListTagsForResource";
+	static readonly ListTagsForResource = "clouddirectory:ListTagsForResource";
 	/** [Read] clouddirectory:ListTypedLinkFacetAttributes */
-	static readonly LIST_TYPED_LINK_FACET_ATTRIBUTES =
+	static readonly ListTypedLinkFacetAttributes =
 		"clouddirectory:ListTypedLinkFacetAttributes";
 	/** [Read] clouddirectory:ListTypedLinkFacetNames */
-	static readonly LIST_TYPED_LINK_FACET_NAMES =
+	static readonly ListTypedLinkFacetNames =
 		"clouddirectory:ListTypedLinkFacetNames";
 	/** [Read] clouddirectory:LookupPolicy */
-	static readonly LOOKUP_POLICY = "clouddirectory:LookupPolicy";
+	static readonly LookupPolicy = "clouddirectory:LookupPolicy";
 	/** [Write] clouddirectory:PublishSchema */
-	static readonly PUBLISH_SCHEMA = "clouddirectory:PublishSchema";
+	static readonly PublishSchema = "clouddirectory:PublishSchema";
 	/** [Write] clouddirectory:PutSchemaFromJson */
-	static readonly PUT_SCHEMA_FROM_JSON = "clouddirectory:PutSchemaFromJson";
+	static readonly PutSchemaFromJson = "clouddirectory:PutSchemaFromJson";
 	/** [Write] clouddirectory:RemoveFacetFromObject */
-	static readonly REMOVE_FACET_FROM_OBJECT =
+	static readonly RemoveFacetFromObject =
 		"clouddirectory:RemoveFacetFromObject";
 	/** [Tagging] clouddirectory:TagResource */
-	static readonly TAG_RESOURCE = "clouddirectory:TagResource";
+	static readonly TagResource = "clouddirectory:TagResource";
 	/** [Tagging] clouddirectory:UntagResource */
-	static readonly UNTAG_RESOURCE = "clouddirectory:UntagResource";
+	static readonly UntagResource = "clouddirectory:UntagResource";
 	/** [Write] clouddirectory:UpdateFacet */
-	static readonly UPDATE_FACET = "clouddirectory:UpdateFacet";
+	static readonly UpdateFacet = "clouddirectory:UpdateFacet";
 	/** [Write] clouddirectory:UpdateLinkAttributes */
-	static readonly UPDATE_LINK_ATTRIBUTES =
-		"clouddirectory:UpdateLinkAttributes";
+	static readonly UpdateLinkAttributes = "clouddirectory:UpdateLinkAttributes";
 	/** [Write] clouddirectory:UpdateObjectAttributes */
-	static readonly UPDATE_OBJECT_ATTRIBUTES =
+	static readonly UpdateObjectAttributes =
 		"clouddirectory:UpdateObjectAttributes";
 	/** [Write] clouddirectory:UpdateSchema */
-	static readonly UPDATE_SCHEMA = "clouddirectory:UpdateSchema";
+	static readonly UpdateSchema = "clouddirectory:UpdateSchema";
 	/** [Write] clouddirectory:UpdateTypedLinkFacet */
-	static readonly UPDATE_TYPED_LINK_FACET =
-		"clouddirectory:UpdateTypedLinkFacet";
+	static readonly UpdateTypedLinkFacet = "clouddirectory:UpdateTypedLinkFacet";
 	/** [Write] clouddirectory:UpgradeAppliedSchema */
-	static readonly UPGRADE_APPLIED_SCHEMA =
-		"clouddirectory:UpgradeAppliedSchema";
+	static readonly UpgradeAppliedSchema = "clouddirectory:UpgradeAppliedSchema";
 	/** [Write] clouddirectory:UpgradePublishedSchema */
-	static readonly UPGRADE_PUBLISHED_SCHEMA =
+	static readonly UpgradePublishedSchema =
 		"clouddirectory:UpgradePublishedSchema";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ClouddirectoryActions.BATCH_READ,
-		ClouddirectoryActions.GET_APPLIED_SCHEMA_VERSION,
-		ClouddirectoryActions.GET_DIRECTORY,
-		ClouddirectoryActions.GET_FACET,
-		ClouddirectoryActions.GET_LINK_ATTRIBUTES,
-		ClouddirectoryActions.GET_OBJECT_ATTRIBUTES,
-		ClouddirectoryActions.GET_OBJECT_INFORMATION,
-		ClouddirectoryActions.GET_SCHEMA_AS_JSON,
-		ClouddirectoryActions.GET_TYPED_LINK_FACET_INFORMATION,
-		ClouddirectoryActions.LIST_ATTACHED_INDICES,
-		ClouddirectoryActions.LIST_FACET_ATTRIBUTES,
-		ClouddirectoryActions.LIST_FACET_NAMES,
-		ClouddirectoryActions.LIST_INCOMING_TYPED_LINKS,
-		ClouddirectoryActions.LIST_INDEX,
-		ClouddirectoryActions.LIST_OBJECT_ATTRIBUTES,
-		ClouddirectoryActions.LIST_OBJECT_CHILDREN,
-		ClouddirectoryActions.LIST_OBJECT_PARENT_PATHS,
-		ClouddirectoryActions.LIST_OBJECT_PARENTS,
-		ClouddirectoryActions.LIST_OBJECT_POLICIES,
-		ClouddirectoryActions.LIST_OUTGOING_TYPED_LINKS,
-		ClouddirectoryActions.LIST_POLICY_ATTACHMENTS,
-		ClouddirectoryActions.LIST_TAGS_FOR_RESOURCE,
-		ClouddirectoryActions.LIST_TYPED_LINK_FACET_ATTRIBUTES,
-		ClouddirectoryActions.LIST_TYPED_LINK_FACET_NAMES,
-		ClouddirectoryActions.LOOKUP_POLICY,
+	static readonly AllReadActions: string[] = [
+		ClouddirectoryActions.BatchRead,
+		ClouddirectoryActions.actionGetAppliedSchemaVersion,
+		ClouddirectoryActions.actionGetDirectory,
+		ClouddirectoryActions.actionGetFacet,
+		ClouddirectoryActions.actionGetLinkAttributes,
+		ClouddirectoryActions.actionGetObjectAttributes,
+		ClouddirectoryActions.actionGetObjectInformation,
+		ClouddirectoryActions.actionGetSchemaAsJson,
+		ClouddirectoryActions.actionGetTypedLinkFacetInformation,
+		ClouddirectoryActions.ListAttachedIndices,
+		ClouddirectoryActions.ListFacetAttributes,
+		ClouddirectoryActions.ListFacetNames,
+		ClouddirectoryActions.ListIncomingTypedLinks,
+		ClouddirectoryActions.ListIndex,
+		ClouddirectoryActions.ListObjectAttributes,
+		ClouddirectoryActions.ListObjectChildren,
+		ClouddirectoryActions.ListObjectParentPaths,
+		ClouddirectoryActions.ListObjectParents,
+		ClouddirectoryActions.ListObjectPolicies,
+		ClouddirectoryActions.ListOutgoingTypedLinks,
+		ClouddirectoryActions.ListPolicyAttachments,
+		ClouddirectoryActions.ListTagsForResource,
+		ClouddirectoryActions.ListTypedLinkFacetAttributes,
+		ClouddirectoryActions.ListTypedLinkFacetNames,
+		ClouddirectoryActions.LookupPolicy,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ClouddirectoryActions.ADD_FACET_TO_OBJECT,
-		ClouddirectoryActions.APPLY_SCHEMA,
-		ClouddirectoryActions.ATTACH_OBJECT,
-		ClouddirectoryActions.ATTACH_POLICY,
-		ClouddirectoryActions.ATTACH_TO_INDEX,
-		ClouddirectoryActions.ATTACH_TYPED_LINK,
-		ClouddirectoryActions.BATCH_WRITE,
-		ClouddirectoryActions.CREATE_DIRECTORY,
-		ClouddirectoryActions.CREATE_FACET,
-		ClouddirectoryActions.CREATE_INDEX,
-		ClouddirectoryActions.CREATE_OBJECT,
-		ClouddirectoryActions.CREATE_SCHEMA,
-		ClouddirectoryActions.CREATE_TYPED_LINK_FACET,
-		ClouddirectoryActions.DELETE_DIRECTORY,
-		ClouddirectoryActions.DELETE_FACET,
-		ClouddirectoryActions.DELETE_OBJECT,
-		ClouddirectoryActions.DELETE_SCHEMA,
-		ClouddirectoryActions.DELETE_TYPED_LINK_FACET,
-		ClouddirectoryActions.DETACH_FROM_INDEX,
-		ClouddirectoryActions.DETACH_OBJECT,
-		ClouddirectoryActions.DETACH_POLICY,
-		ClouddirectoryActions.DETACH_TYPED_LINK,
-		ClouddirectoryActions.DISABLE_DIRECTORY,
-		ClouddirectoryActions.ENABLE_DIRECTORY,
-		ClouddirectoryActions.PUBLISH_SCHEMA,
-		ClouddirectoryActions.PUT_SCHEMA_FROM_JSON,
-		ClouddirectoryActions.REMOVE_FACET_FROM_OBJECT,
-		ClouddirectoryActions.UPDATE_FACET,
-		ClouddirectoryActions.UPDATE_LINK_ATTRIBUTES,
-		ClouddirectoryActions.UPDATE_OBJECT_ATTRIBUTES,
-		ClouddirectoryActions.UPDATE_SCHEMA,
-		ClouddirectoryActions.UPDATE_TYPED_LINK_FACET,
-		ClouddirectoryActions.UPGRADE_APPLIED_SCHEMA,
-		ClouddirectoryActions.UPGRADE_PUBLISHED_SCHEMA,
+	static readonly AllWriteActions: string[] = [
+		ClouddirectoryActions.AddFacetToObject,
+		ClouddirectoryActions.ApplySchema,
+		ClouddirectoryActions.AttachObject,
+		ClouddirectoryActions.AttachPolicy,
+		ClouddirectoryActions.AttachToIndex,
+		ClouddirectoryActions.AttachTypedLink,
+		ClouddirectoryActions.BatchWrite,
+		ClouddirectoryActions.CreateDirectory,
+		ClouddirectoryActions.CreateFacet,
+		ClouddirectoryActions.CreateIndex,
+		ClouddirectoryActions.CreateObject,
+		ClouddirectoryActions.CreateSchema,
+		ClouddirectoryActions.CreateTypedLinkFacet,
+		ClouddirectoryActions.DeleteDirectory,
+		ClouddirectoryActions.DeleteFacet,
+		ClouddirectoryActions.DeleteObject,
+		ClouddirectoryActions.DeleteSchema,
+		ClouddirectoryActions.DeleteTypedLinkFacet,
+		ClouddirectoryActions.DetachFromIndex,
+		ClouddirectoryActions.DetachObject,
+		ClouddirectoryActions.DetachPolicy,
+		ClouddirectoryActions.DetachTypedLink,
+		ClouddirectoryActions.DisableDirectory,
+		ClouddirectoryActions.EnableDirectory,
+		ClouddirectoryActions.PublishSchema,
+		ClouddirectoryActions.PutSchemaFromJson,
+		ClouddirectoryActions.RemoveFacetFromObject,
+		ClouddirectoryActions.UpdateFacet,
+		ClouddirectoryActions.UpdateLinkAttributes,
+		ClouddirectoryActions.UpdateObjectAttributes,
+		ClouddirectoryActions.UpdateSchema,
+		ClouddirectoryActions.UpdateTypedLinkFacet,
+		ClouddirectoryActions.UpgradeAppliedSchema,
+		ClouddirectoryActions.UpgradePublishedSchema,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ClouddirectoryActions.LIST_APPLIED_SCHEMA_ARNS,
-		ClouddirectoryActions.LIST_DEVELOPMENT_SCHEMA_ARNS,
-		ClouddirectoryActions.LIST_DIRECTORIES,
-		ClouddirectoryActions.LIST_MANAGED_SCHEMA_ARNS,
-		ClouddirectoryActions.LIST_PUBLISHED_SCHEMA_ARNS,
+	static readonly AllListActions: string[] = [
+		ClouddirectoryActions.ListAppliedSchemaArns,
+		ClouddirectoryActions.ListDevelopmentSchemaArns,
+		ClouddirectoryActions.ListDirectories,
+		ClouddirectoryActions.ListManagedSchemaArns,
+		ClouddirectoryActions.ListPublishedSchemaArns,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ClouddirectoryActions.TAG_RESOURCE,
-		ClouddirectoryActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ClouddirectoryActions.TagResource,
+		ClouddirectoryActions.UntagResource,
 	];
 }
 
-const AppliedSchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):directory/(?<directoryId>[^:/?]+)/schema/(?<schemaName>[^:/?]+)/(?<version>[^:/?]+)$",
-);
-const DevelopmentSchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):schema/development/(?<schemaName>[^:/?]+)$",
-);
-const DirectoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):directory/(?<directoryId>[^:/?]+)$",
-);
-const PublishedSchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):schema/published/(?<schemaName>[^:/?]+)/(?<version>[^:/?]+)$",
-);
+/**
+ * Properties for building a appliedSchema ARN.
+ */
+export interface ClouddirectoryAppliedSchemaArnProps {
+	/** The DirectoryId component of the ARN. */
+	readonly directoryId: string;
+	/** The SchemaName component of the ARN. */
+	readonly schemaName: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a appliedSchema ARN.
+ */
+export interface ClouddirectoryAppliedSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DirectoryId component. */
+	readonly directoryId: string;
+	/** The SchemaName component. */
+	readonly schemaName: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+/**
+ * Properties for building a developmentSchema ARN.
+ */
+export interface ClouddirectoryDevelopmentSchemaArnProps {
+	/** The SchemaName component of the ARN. */
+	readonly schemaName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a developmentSchema ARN.
+ */
+export interface ClouddirectoryDevelopmentSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SchemaName component. */
+	readonly schemaName: string;
+}
+
+/**
+ * Properties for building a directory ARN.
+ */
+export interface ClouddirectoryDirectoryArnProps {
+	/** The DirectoryId component of the ARN. */
+	readonly directoryId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a directory ARN.
+ */
+export interface ClouddirectoryDirectoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DirectoryId component. */
+	readonly directoryId: string;
+}
+
+/**
+ * Properties for building a publishedSchema ARN.
+ */
+export interface ClouddirectoryPublishedSchemaArnProps {
+	/** The SchemaName component of the ARN. */
+	readonly schemaName: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a publishedSchema ARN.
+ */
+export interface ClouddirectoryPublishedSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SchemaName component. */
+	readonly schemaName: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+const AppliedSchemaArnRegex =
+	/^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):directory\/(?<directoryId>[^:/?]+)\/schema\/(?<schemaName>[^:/?]+)\/(?<version>[^:/?]+)$/;
+const DevelopmentSchemaArnRegex =
+	/^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):schema\/development\/(?<schemaName>[^:/?]+)$/;
+const DirectoryArnRegex =
+	/^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):directory\/(?<directoryId>[^:/?]+)$/;
+const PublishedSchemaArnRegex =
+	/^arn:(?<partition>[^:]+):clouddirectory:(?<region>[^:]*):(?<account>[^:]*):schema\/published\/(?<schemaName>[^:/?]+)\/(?<version>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for clouddirectory resources.
@@ -269,20 +384,7 @@ export class ClouddirectoryResources {
 	/**
 	 * Builds an ARN for the appliedSchema resource.
 	 */
-	static appliedSchema(props: {
-		/** The DirectoryId component of the ARN. */
-		readonly directoryId: string;
-		/** The SchemaName component of the ARN. */
-		readonly schemaName: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appliedSchema(props: ClouddirectoryAppliedSchemaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:clouddirectory:${props.region ?? "*"}:${props.account ?? "*"}:directory/${props.directoryId}/schema/${props.schemaName}/${props.version}`;
 	}
 
@@ -297,14 +399,9 @@ export class ClouddirectoryResources {
 	 * Parses a appliedSchema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppliedSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		directoryId: string;
-		schemaName: string;
-		version: string;
-	} {
+	static parseAppliedSchemaArn(
+		arn: string,
+	): ClouddirectoryAppliedSchemaArnComponents {
 		const match = AppliedSchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid appliedSchema ARN: ${arn}`);
@@ -322,16 +419,9 @@ export class ClouddirectoryResources {
 	/**
 	 * Builds an ARN for the developmentSchema resource.
 	 */
-	static developmentSchema(props: {
-		/** The SchemaName component of the ARN. */
-		readonly schemaName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static developmentSchema(
+		props: ClouddirectoryDevelopmentSchemaArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:clouddirectory:${props.region ?? "*"}:${props.account ?? "*"}:schema/development/${props.schemaName}`;
 	}
 
@@ -346,12 +436,9 @@ export class ClouddirectoryResources {
 	 * Parses a developmentSchema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDevelopmentSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		schemaName: string;
-	} {
+	static parseDevelopmentSchemaArn(
+		arn: string,
+	): ClouddirectoryDevelopmentSchemaArnComponents {
 		const match = DevelopmentSchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid developmentSchema ARN: ${arn}`);
@@ -367,16 +454,7 @@ export class ClouddirectoryResources {
 	/**
 	 * Builds an ARN for the directory resource.
 	 */
-	static directory(props: {
-		/** The DirectoryId component of the ARN. */
-		readonly directoryId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static directory(props: ClouddirectoryDirectoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:clouddirectory:${props.region ?? "*"}:${props.account ?? "*"}:directory/${props.directoryId}`;
 	}
 
@@ -391,12 +469,7 @@ export class ClouddirectoryResources {
 	 * Parses a directory ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDirectoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		directoryId: string;
-	} {
+	static parseDirectoryArn(arn: string): ClouddirectoryDirectoryArnComponents {
 		const match = DirectoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid directory ARN: ${arn}`);
@@ -412,18 +485,7 @@ export class ClouddirectoryResources {
 	/**
 	 * Builds an ARN for the publishedSchema resource.
 	 */
-	static publishedSchema(props: {
-		/** The SchemaName component of the ARN. */
-		readonly schemaName: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static publishedSchema(props: ClouddirectoryPublishedSchemaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:clouddirectory:${props.region ?? "*"}:${props.account ?? "*"}:schema/published/${props.schemaName}/${props.version}`;
 	}
 
@@ -438,13 +500,9 @@ export class ClouddirectoryResources {
 	 * Parses a publishedSchema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePublishedSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		schemaName: string;
-		version: string;
-	} {
+	static parsePublishedSchemaArn(
+		arn: string,
+	): ClouddirectoryPublishedSchemaArnComponents {
 		const match = PublishedSchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid publishedSchema ARN: ${arn}`);
@@ -464,23 +522,23 @@ export class ClouddirectoryResources {
  */
 export class ClouddirectoryOperations {
 	/** IAM actions required for the AddFacetToObject API call. */
-	static readonly ADD_FACET_TO_OBJECT: string[] = [
+	static readonly AddFacetToObject: string[] = [
 		"clouddirectory:AddFacetToObject",
 	];
 	/** IAM actions required for the ApplySchema API call. */
-	static readonly APPLY_SCHEMA: string[] = ["clouddirectory:ApplySchema"];
+	static readonly ApplySchema: string[] = ["clouddirectory:ApplySchema"];
 	/** IAM actions required for the AttachObject API call. */
-	static readonly ATTACH_OBJECT: string[] = ["clouddirectory:AttachObject"];
+	static readonly AttachObject: string[] = ["clouddirectory:AttachObject"];
 	/** IAM actions required for the AttachPolicy API call. */
-	static readonly ATTACH_POLICY: string[] = ["clouddirectory:AttachPolicy"];
+	static readonly AttachPolicy: string[] = ["clouddirectory:AttachPolicy"];
 	/** IAM actions required for the AttachToIndex API call. */
-	static readonly ATTACH_TO_INDEX: string[] = ["clouddirectory:AttachToIndex"];
+	static readonly AttachToIndex: string[] = ["clouddirectory:AttachToIndex"];
 	/** IAM actions required for the AttachTypedLink API call. */
-	static readonly ATTACH_TYPED_LINK: string[] = [
+	static readonly AttachTypedLink: string[] = [
 		"clouddirectory:AttachTypedLink",
 	];
 	/** IAM actions required for the BatchRead API call. */
-	static readonly BATCH_READ: string[] = [
+	static readonly BatchRead: string[] = [
 		"clouddirectory:BatchRead",
 		"clouddirectory:GetLinkAttributes",
 		"clouddirectory:GetObjectAttributes",
@@ -498,7 +556,7 @@ export class ClouddirectoryOperations {
 		"clouddirectory:LookupPolicy",
 	];
 	/** IAM actions required for the BatchWrite API call. */
-	static readonly BATCH_WRITE: string[] = [
+	static readonly BatchWrite: string[] = [
 		"clouddirectory:AddFacetToObject",
 		"clouddirectory:AttachObject",
 		"clouddirectory:AttachPolicy",
@@ -516,205 +574,203 @@ export class ClouddirectoryOperations {
 		"clouddirectory:UpdateObjectAttributes",
 	];
 	/** IAM actions required for the CreateDirectory API call. */
-	static readonly CREATE_DIRECTORY: string[] = [
+	static readonly CreateDirectory: string[] = [
 		"clouddirectory:CreateDirectory",
 	];
 	/** IAM actions required for the CreateFacet API call. */
-	static readonly CREATE_FACET: string[] = ["clouddirectory:CreateFacet"];
+	static readonly CreateFacet: string[] = ["clouddirectory:CreateFacet"];
 	/** IAM actions required for the CreateIndex API call. */
-	static readonly CREATE_INDEX: string[] = [
+	static readonly CreateIndex: string[] = [
 		"clouddirectory:AttachObject",
 		"clouddirectory:CreateIndex",
 	];
 	/** IAM actions required for the CreateObject API call. */
-	static readonly CREATE_OBJECT: string[] = [
+	static readonly CreateObject: string[] = [
 		"clouddirectory:AttachObject",
 		"clouddirectory:CreateObject",
 	];
 	/** IAM actions required for the CreateSchema API call. */
-	static readonly CREATE_SCHEMA: string[] = ["clouddirectory:CreateSchema"];
+	static readonly CreateSchema: string[] = ["clouddirectory:CreateSchema"];
 	/** IAM actions required for the CreateTypedLinkFacet API call. */
-	static readonly CREATE_TYPED_LINK_FACET: string[] = [
+	static readonly CreateTypedLinkFacet: string[] = [
 		"clouddirectory:CreateTypedLinkFacet",
 	];
 	/** IAM actions required for the DeleteDirectory API call. */
-	static readonly DELETE_DIRECTORY: string[] = [
+	static readonly DeleteDirectory: string[] = [
 		"clouddirectory:DeleteDirectory",
 	];
 	/** IAM actions required for the DeleteFacet API call. */
-	static readonly DELETE_FACET: string[] = ["clouddirectory:DeleteFacet"];
+	static readonly DeleteFacet: string[] = ["clouddirectory:DeleteFacet"];
 	/** IAM actions required for the DeleteObject API call. */
-	static readonly DELETE_OBJECT: string[] = ["clouddirectory:DeleteObject"];
+	static readonly DeleteObject: string[] = ["clouddirectory:DeleteObject"];
 	/** IAM actions required for the DeleteSchema API call. */
-	static readonly DELETE_SCHEMA: string[] = ["clouddirectory:DeleteSchema"];
+	static readonly DeleteSchema: string[] = ["clouddirectory:DeleteSchema"];
 	/** IAM actions required for the DeleteTypedLinkFacet API call. */
-	static readonly DELETE_TYPED_LINK_FACET: string[] = [
+	static readonly DeleteTypedLinkFacet: string[] = [
 		"clouddirectory:DeleteTypedLinkFacet",
 	];
 	/** IAM actions required for the DetachFromIndex API call. */
-	static readonly DETACH_FROM_INDEX: string[] = [
+	static readonly DetachFromIndex: string[] = [
 		"clouddirectory:DetachFromIndex",
 	];
 	/** IAM actions required for the DetachObject API call. */
-	static readonly DETACH_OBJECT: string[] = ["clouddirectory:DetachObject"];
+	static readonly DetachObject: string[] = ["clouddirectory:DetachObject"];
 	/** IAM actions required for the DetachPolicy API call. */
-	static readonly DETACH_POLICY: string[] = ["clouddirectory:DetachPolicy"];
+	static readonly DetachPolicy: string[] = ["clouddirectory:DetachPolicy"];
 	/** IAM actions required for the DetachTypedLink API call. */
-	static readonly DETACH_TYPED_LINK: string[] = [
+	static readonly DetachTypedLink: string[] = [
 		"clouddirectory:DetachTypedLink",
 	];
 	/** IAM actions required for the DisableDirectory API call. */
-	static readonly DISABLE_DIRECTORY: string[] = [
+	static readonly DisableDirectory: string[] = [
 		"clouddirectory:DisableDirectory",
 	];
 	/** IAM actions required for the EnableDirectory API call. */
-	static readonly ENABLE_DIRECTORY: string[] = [
+	static readonly EnableDirectory: string[] = [
 		"clouddirectory:EnableDirectory",
 	];
 	/** IAM actions required for the GetAppliedSchemaVersion API call. */
-	static readonly GET_APPLIED_SCHEMA_VERSION: string[] = [
+	static readonly opGetAppliedSchemaVersion: string[] = [
 		"clouddirectory:GetAppliedSchemaVersion",
 	];
 	/** IAM actions required for the GetDirectory API call. */
-	static readonly GET_DIRECTORY: string[] = ["clouddirectory:GetDirectory"];
+	static readonly opGetDirectory: string[] = ["clouddirectory:GetDirectory"];
 	/** IAM actions required for the GetFacet API call. */
-	static readonly GET_FACET: string[] = ["clouddirectory:GetFacet"];
+	static readonly opGetFacet: string[] = ["clouddirectory:GetFacet"];
 	/** IAM actions required for the GetLinkAttributes API call. */
-	static readonly GET_LINK_ATTRIBUTES: string[] = [
+	static readonly opGetLinkAttributes: string[] = [
 		"clouddirectory:GetLinkAttributes",
 	];
 	/** IAM actions required for the GetObjectAttributes API call. */
-	static readonly GET_OBJECT_ATTRIBUTES: string[] = [
+	static readonly opGetObjectAttributes: string[] = [
 		"clouddirectory:GetObjectAttributes",
 	];
 	/** IAM actions required for the GetObjectInformation API call. */
-	static readonly GET_OBJECT_INFORMATION: string[] = [
+	static readonly opGetObjectInformation: string[] = [
 		"clouddirectory:GetObjectInformation",
 	];
 	/** IAM actions required for the GetSchemaAsJson API call. */
-	static readonly GET_SCHEMA_AS_JSON: string[] = [
+	static readonly opGetSchemaAsJson: string[] = [
 		"clouddirectory:GetSchemaAsJson",
 	];
 	/** IAM actions required for the GetTypedLinkFacetInformation API call. */
-	static readonly GET_TYPED_LINK_FACET_INFORMATION: string[] = [
+	static readonly opGetTypedLinkFacetInformation: string[] = [
 		"clouddirectory:GetTypedLinkFacetInformation",
 	];
 	/** IAM actions required for the ListAppliedSchemaArns API call. */
-	static readonly LIST_APPLIED_SCHEMA_ARNS: string[] = [
+	static readonly ListAppliedSchemaArns: string[] = [
 		"clouddirectory:ListAppliedSchemaArns",
 	];
 	/** IAM actions required for the ListAttachedIndices API call. */
-	static readonly LIST_ATTACHED_INDICES: string[] = [
+	static readonly ListAttachedIndices: string[] = [
 		"clouddirectory:ListAttachedIndices",
 	];
 	/** IAM actions required for the ListDevelopmentSchemaArns API call. */
-	static readonly LIST_DEVELOPMENT_SCHEMA_ARNS: string[] = [
+	static readonly ListDevelopmentSchemaArns: string[] = [
 		"clouddirectory:ListDevelopmentSchemaArns",
 	];
 	/** IAM actions required for the ListDirectories API call. */
-	static readonly LIST_DIRECTORIES: string[] = [
+	static readonly ListDirectories: string[] = [
 		"clouddirectory:ListDirectories",
 	];
 	/** IAM actions required for the ListFacetAttributes API call. */
-	static readonly LIST_FACET_ATTRIBUTES: string[] = [
+	static readonly ListFacetAttributes: string[] = [
 		"clouddirectory:ListFacetAttributes",
 	];
 	/** IAM actions required for the ListFacetNames API call. */
-	static readonly LIST_FACET_NAMES: string[] = [
-		"clouddirectory:ListFacetNames",
-	];
+	static readonly ListFacetNames: string[] = ["clouddirectory:ListFacetNames"];
 	/** IAM actions required for the ListIncomingTypedLinks API call. */
-	static readonly LIST_INCOMING_TYPED_LINKS: string[] = [
+	static readonly ListIncomingTypedLinks: string[] = [
 		"clouddirectory:ListIncomingTypedLinks",
 	];
 	/** IAM actions required for the ListIndex API call. */
-	static readonly LIST_INDEX: string[] = ["clouddirectory:ListIndex"];
+	static readonly ListIndex: string[] = ["clouddirectory:ListIndex"];
 	/** IAM actions required for the ListManagedSchemaArns API call. */
-	static readonly LIST_MANAGED_SCHEMA_ARNS: string[] = [
+	static readonly ListManagedSchemaArns: string[] = [
 		"clouddirectory:ListManagedSchemaArns",
 	];
 	/** IAM actions required for the ListObjectAttributes API call. */
-	static readonly LIST_OBJECT_ATTRIBUTES: string[] = [
+	static readonly ListObjectAttributes: string[] = [
 		"clouddirectory:ListObjectAttributes",
 	];
 	/** IAM actions required for the ListObjectChildren API call. */
-	static readonly LIST_OBJECT_CHILDREN: string[] = [
+	static readonly ListObjectChildren: string[] = [
 		"clouddirectory:ListObjectChildren",
 	];
 	/** IAM actions required for the ListObjectParentPaths API call. */
-	static readonly LIST_OBJECT_PARENT_PATHS: string[] = [
+	static readonly ListObjectParentPaths: string[] = [
 		"clouddirectory:ListObjectParentPaths",
 	];
 	/** IAM actions required for the ListObjectParents API call. */
-	static readonly LIST_OBJECT_PARENTS: string[] = [
+	static readonly ListObjectParents: string[] = [
 		"clouddirectory:ListObjectParents",
 	];
 	/** IAM actions required for the ListObjectPolicies API call. */
-	static readonly LIST_OBJECT_POLICIES: string[] = [
+	static readonly ListObjectPolicies: string[] = [
 		"clouddirectory:ListObjectPolicies",
 	];
 	/** IAM actions required for the ListOutgoingTypedLinks API call. */
-	static readonly LIST_OUTGOING_TYPED_LINKS: string[] = [
+	static readonly ListOutgoingTypedLinks: string[] = [
 		"clouddirectory:ListOutgoingTypedLinks",
 	];
 	/** IAM actions required for the ListPolicyAttachments API call. */
-	static readonly LIST_POLICY_ATTACHMENTS: string[] = [
+	static readonly ListPolicyAttachments: string[] = [
 		"clouddirectory:ListPolicyAttachments",
 	];
 	/** IAM actions required for the ListPublishedSchemaArns API call. */
-	static readonly LIST_PUBLISHED_SCHEMA_ARNS: string[] = [
+	static readonly ListPublishedSchemaArns: string[] = [
 		"clouddirectory:ListPublishedSchemaArns",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"clouddirectory:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTypedLinkFacetAttributes API call. */
-	static readonly LIST_TYPED_LINK_FACET_ATTRIBUTES: string[] = [
+	static readonly ListTypedLinkFacetAttributes: string[] = [
 		"clouddirectory:ListTypedLinkFacetAttributes",
 	];
 	/** IAM actions required for the ListTypedLinkFacetNames API call. */
-	static readonly LIST_TYPED_LINK_FACET_NAMES: string[] = [
+	static readonly ListTypedLinkFacetNames: string[] = [
 		"clouddirectory:ListTypedLinkFacetNames",
 	];
 	/** IAM actions required for the LookupPolicy API call. */
-	static readonly LOOKUP_POLICY: string[] = ["clouddirectory:LookupPolicy"];
+	static readonly LookupPolicy: string[] = ["clouddirectory:LookupPolicy"];
 	/** IAM actions required for the PublishSchema API call. */
-	static readonly PUBLISH_SCHEMA: string[] = ["clouddirectory:PublishSchema"];
+	static readonly PublishSchema: string[] = ["clouddirectory:PublishSchema"];
 	/** IAM actions required for the PutSchemaFromJson API call. */
-	static readonly PUT_SCHEMA_FROM_JSON: string[] = [
+	static readonly PutSchemaFromJson: string[] = [
 		"clouddirectory:PutSchemaFromJson",
 	];
 	/** IAM actions required for the RemoveFacetFromObject API call. */
-	static readonly REMOVE_FACET_FROM_OBJECT: string[] = [
+	static readonly RemoveFacetFromObject: string[] = [
 		"clouddirectory:RemoveFacetFromObject",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["clouddirectory:TagResource"];
+	static readonly TagResource: string[] = ["clouddirectory:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["clouddirectory:UntagResource"];
+	static readonly UntagResource: string[] = ["clouddirectory:UntagResource"];
 	/** IAM actions required for the UpdateFacet API call. */
-	static readonly UPDATE_FACET: string[] = ["clouddirectory:UpdateFacet"];
+	static readonly UpdateFacet: string[] = ["clouddirectory:UpdateFacet"];
 	/** IAM actions required for the UpdateLinkAttributes API call. */
-	static readonly UPDATE_LINK_ATTRIBUTES: string[] = [
+	static readonly UpdateLinkAttributes: string[] = [
 		"clouddirectory:UpdateLinkAttributes",
 	];
 	/** IAM actions required for the UpdateObjectAttributes API call. */
-	static readonly UPDATE_OBJECT_ATTRIBUTES: string[] = [
+	static readonly UpdateObjectAttributes: string[] = [
 		"clouddirectory:UpdateObjectAttributes",
 	];
 	/** IAM actions required for the UpdateSchema API call. */
-	static readonly UPDATE_SCHEMA: string[] = ["clouddirectory:UpdateSchema"];
+	static readonly UpdateSchema: string[] = ["clouddirectory:UpdateSchema"];
 	/** IAM actions required for the UpdateTypedLinkFacet API call. */
-	static readonly UPDATE_TYPED_LINK_FACET: string[] = [
+	static readonly UpdateTypedLinkFacet: string[] = [
 		"clouddirectory:UpdateTypedLinkFacet",
 	];
 	/** IAM actions required for the UpgradeAppliedSchema API call. */
-	static readonly UPGRADE_APPLIED_SCHEMA: string[] = [
+	static readonly UpgradeAppliedSchema: string[] = [
 		"clouddirectory:UpgradeAppliedSchema",
 	];
 	/** IAM actions required for the UpgradePublishedSchema API call. */
-	static readonly UPGRADE_PUBLISHED_SCHEMA: string[] = [
+	static readonly UpgradePublishedSchema: string[] = [
 		"clouddirectory:UpgradePublishedSchema",
 	];
 }

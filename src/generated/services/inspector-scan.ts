@@ -13,18 +13,18 @@ export class InspectorScanActions {
 	static readonly SERVICE_PREFIX = "inspector-scan";
 
 	/** [Read] inspector-scan:ScanSbom */
-	static readonly SCAN_SBOM = "inspector-scan:ScanSbom";
+	static readonly ScanSbom = "inspector-scan:ScanSbom";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [InspectorScanActions.SCAN_SBOM];
+	static readonly AllReadActions: string[] = [InspectorScanActions.ScanSbom];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -32,5 +32,5 @@ export class InspectorScanActions {
  */
 export class InspectorScanOperations {
 	/** IAM actions required for the ScanSbom API call. */
-	static readonly SCAN_SBOM: string[] = ["inspector-scan:ScanSbom"];
+	static readonly ScanSbom: string[] = ["inspector-scan:ScanSbom"];
 }

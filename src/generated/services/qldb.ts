@@ -13,144 +13,260 @@ export class QldbActions {
 	static readonly SERVICE_PREFIX = "qldb";
 
 	/** [Write] qldb:CancelJournalKinesisStream */
-	static readonly CANCEL_JOURNAL_KINESIS_STREAM =
+	static readonly CancelJournalKinesisStream =
 		"qldb:CancelJournalKinesisStream";
 	/** [Write] qldb:CreateLedger */
-	static readonly CREATE_LEDGER = "qldb:CreateLedger";
+	static readonly CreateLedger = "qldb:CreateLedger";
 	/** [Write] qldb:DeleteLedger */
-	static readonly DELETE_LEDGER = "qldb:DeleteLedger";
+	static readonly DeleteLedger = "qldb:DeleteLedger";
 	/** [Read] qldb:DescribeJournalKinesisStream */
-	static readonly DESCRIBE_JOURNAL_KINESIS_STREAM =
+	static readonly DescribeJournalKinesisStream =
 		"qldb:DescribeJournalKinesisStream";
 	/** [Read] qldb:DescribeJournalS3Export */
-	static readonly DESCRIBE_JOURNAL_S3_EXPORT = "qldb:DescribeJournalS3Export";
+	static readonly DescribeJournalS3Export = "qldb:DescribeJournalS3Export";
 	/** [Read] qldb:DescribeLedger */
-	static readonly DESCRIBE_LEDGER = "qldb:DescribeLedger";
+	static readonly DescribeLedger = "qldb:DescribeLedger";
 	/** [Write] qldb:ExecuteStatement */
-	static readonly EXECUTE_STATEMENT = "qldb:ExecuteStatement";
+	static readonly ExecuteStatement = "qldb:ExecuteStatement";
 	/** [Write] qldb:ExportJournalToS3 */
-	static readonly EXPORT_JOURNAL_TO_S3 = "qldb:ExportJournalToS3";
+	static readonly ExportJournalToS3 = "qldb:ExportJournalToS3";
 	/** [Read] qldb:GetBlock */
-	static readonly GET_BLOCK = "qldb:GetBlock";
+	static readonly actionGetBlock = "qldb:GetBlock";
 	/** [Read] qldb:GetDigest */
-	static readonly GET_DIGEST = "qldb:GetDigest";
+	static readonly actionGetDigest = "qldb:GetDigest";
 	/** [Read] qldb:GetRevision */
-	static readonly GET_REVISION = "qldb:GetRevision";
+	static readonly actionGetRevision = "qldb:GetRevision";
 	/** [Write] qldb:InsertSampleData */
-	static readonly INSERT_SAMPLE_DATA = "qldb:InsertSampleData";
+	static readonly InsertSampleData = "qldb:InsertSampleData";
 	/** [List] qldb:ListJournalKinesisStreamsForLedger */
-	static readonly LIST_JOURNAL_KINESIS_STREAMS_FOR_LEDGER =
+	static readonly ListJournalKinesisStreamsForLedger =
 		"qldb:ListJournalKinesisStreamsForLedger";
 	/** [List] qldb:ListJournalS3Exports */
-	static readonly LIST_JOURNAL_S3_EXPORTS = "qldb:ListJournalS3Exports";
+	static readonly ListJournalS3Exports = "qldb:ListJournalS3Exports";
 	/** [List] qldb:ListJournalS3ExportsForLedger */
-	static readonly LIST_JOURNAL_S3_EXPORTS_FOR_LEDGER =
+	static readonly ListJournalS3ExportsForLedger =
 		"qldb:ListJournalS3ExportsForLedger";
 	/** [List] qldb:ListLedgers */
-	static readonly LIST_LEDGERS = "qldb:ListLedgers";
+	static readonly ListLedgers = "qldb:ListLedgers";
 	/** [Read] qldb:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "qldb:ListTagsForResource";
+	static readonly ListTagsForResource = "qldb:ListTagsForResource";
 	/** [Write] qldb:PartiQLCreateIndex */
-	static readonly PARTI_QL_CREATE_INDEX = "qldb:PartiQLCreateIndex";
+	static readonly PartiQLCreateIndex = "qldb:PartiQLCreateIndex";
 	/** [Write] qldb:PartiQLCreateTable */
-	static readonly PARTI_QL_CREATE_TABLE = "qldb:PartiQLCreateTable";
+	static readonly PartiQLCreateTable = "qldb:PartiQLCreateTable";
 	/** [Write] qldb:PartiQLDelete */
-	static readonly PARTI_QL_DELETE = "qldb:PartiQLDelete";
+	static readonly PartiQLDelete = "qldb:PartiQLDelete";
 	/** [Write] qldb:PartiQLDropIndex */
-	static readonly PARTI_QL_DROP_INDEX = "qldb:PartiQLDropIndex";
+	static readonly PartiQLDropIndex = "qldb:PartiQLDropIndex";
 	/** [Write] qldb:PartiQLDropTable */
-	static readonly PARTI_QL_DROP_TABLE = "qldb:PartiQLDropTable";
+	static readonly PartiQLDropTable = "qldb:PartiQLDropTable";
 	/** [Read] qldb:PartiQLHistoryFunction */
-	static readonly PARTI_QL_HISTORY_FUNCTION = "qldb:PartiQLHistoryFunction";
+	static readonly PartiQLHistoryFunction = "qldb:PartiQLHistoryFunction";
 	/** [Write] qldb:PartiQLInsert */
-	static readonly PARTI_QL_INSERT = "qldb:PartiQLInsert";
+	static readonly PartiQLInsert = "qldb:PartiQLInsert";
 	/** [Write] qldb:PartiQLRedact */
-	static readonly PARTI_QL_REDACT = "qldb:PartiQLRedact";
+	static readonly PartiQLRedact = "qldb:PartiQLRedact";
 	/** [Read] qldb:PartiQLSelect */
-	static readonly PARTI_QL_SELECT = "qldb:PartiQLSelect";
+	static readonly PartiQLSelect = "qldb:PartiQLSelect";
 	/** [Write] qldb:PartiQLUndropTable */
-	static readonly PARTI_QL_UNDROP_TABLE = "qldb:PartiQLUndropTable";
+	static readonly PartiQLUndropTable = "qldb:PartiQLUndropTable";
 	/** [Write] qldb:PartiQLUpdate */
-	static readonly PARTI_QL_UPDATE = "qldb:PartiQLUpdate";
+	static readonly PartiQLUpdate = "qldb:PartiQLUpdate";
 	/** [Write] qldb:SendCommand */
-	static readonly SEND_COMMAND = "qldb:SendCommand";
+	static readonly SendCommand = "qldb:SendCommand";
 	/** [Write] qldb:ShowCatalog */
-	static readonly SHOW_CATALOG = "qldb:ShowCatalog";
+	static readonly ShowCatalog = "qldb:ShowCatalog";
 	/** [Write] qldb:StreamJournalToKinesis */
-	static readonly STREAM_JOURNAL_TO_KINESIS = "qldb:StreamJournalToKinesis";
+	static readonly StreamJournalToKinesis = "qldb:StreamJournalToKinesis";
 	/** [Tagging] qldb:TagResource */
-	static readonly TAG_RESOURCE = "qldb:TagResource";
+	static readonly TagResource = "qldb:TagResource";
 	/** [Tagging] qldb:UntagResource */
-	static readonly UNTAG_RESOURCE = "qldb:UntagResource";
+	static readonly UntagResource = "qldb:UntagResource";
 	/** [Write] qldb:UpdateLedger */
-	static readonly UPDATE_LEDGER = "qldb:UpdateLedger";
+	static readonly UpdateLedger = "qldb:UpdateLedger";
 	/** [Write] qldb:UpdateLedgerPermissionsMode */
-	static readonly UPDATE_LEDGER_PERMISSIONS_MODE =
+	static readonly UpdateLedgerPermissionsMode =
 		"qldb:UpdateLedgerPermissionsMode";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		QldbActions.DESCRIBE_JOURNAL_KINESIS_STREAM,
-		QldbActions.DESCRIBE_JOURNAL_S3_EXPORT,
-		QldbActions.DESCRIBE_LEDGER,
-		QldbActions.GET_BLOCK,
-		QldbActions.GET_DIGEST,
-		QldbActions.GET_REVISION,
-		QldbActions.LIST_TAGS_FOR_RESOURCE,
-		QldbActions.PARTI_QL_HISTORY_FUNCTION,
-		QldbActions.PARTI_QL_SELECT,
+	static readonly AllReadActions: string[] = [
+		QldbActions.DescribeJournalKinesisStream,
+		QldbActions.DescribeJournalS3Export,
+		QldbActions.DescribeLedger,
+		QldbActions.actionGetBlock,
+		QldbActions.actionGetDigest,
+		QldbActions.actionGetRevision,
+		QldbActions.ListTagsForResource,
+		QldbActions.PartiQLHistoryFunction,
+		QldbActions.PartiQLSelect,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		QldbActions.CANCEL_JOURNAL_KINESIS_STREAM,
-		QldbActions.CREATE_LEDGER,
-		QldbActions.DELETE_LEDGER,
-		QldbActions.EXECUTE_STATEMENT,
-		QldbActions.EXPORT_JOURNAL_TO_S3,
-		QldbActions.INSERT_SAMPLE_DATA,
-		QldbActions.PARTI_QL_CREATE_INDEX,
-		QldbActions.PARTI_QL_CREATE_TABLE,
-		QldbActions.PARTI_QL_DELETE,
-		QldbActions.PARTI_QL_DROP_INDEX,
-		QldbActions.PARTI_QL_DROP_TABLE,
-		QldbActions.PARTI_QL_INSERT,
-		QldbActions.PARTI_QL_REDACT,
-		QldbActions.PARTI_QL_UNDROP_TABLE,
-		QldbActions.PARTI_QL_UPDATE,
-		QldbActions.SEND_COMMAND,
-		QldbActions.SHOW_CATALOG,
-		QldbActions.STREAM_JOURNAL_TO_KINESIS,
-		QldbActions.UPDATE_LEDGER,
-		QldbActions.UPDATE_LEDGER_PERMISSIONS_MODE,
+	static readonly AllWriteActions: string[] = [
+		QldbActions.CancelJournalKinesisStream,
+		QldbActions.CreateLedger,
+		QldbActions.DeleteLedger,
+		QldbActions.ExecuteStatement,
+		QldbActions.ExportJournalToS3,
+		QldbActions.InsertSampleData,
+		QldbActions.PartiQLCreateIndex,
+		QldbActions.PartiQLCreateTable,
+		QldbActions.PartiQLDelete,
+		QldbActions.PartiQLDropIndex,
+		QldbActions.PartiQLDropTable,
+		QldbActions.PartiQLInsert,
+		QldbActions.PartiQLRedact,
+		QldbActions.PartiQLUndropTable,
+		QldbActions.PartiQLUpdate,
+		QldbActions.SendCommand,
+		QldbActions.ShowCatalog,
+		QldbActions.StreamJournalToKinesis,
+		QldbActions.UpdateLedger,
+		QldbActions.UpdateLedgerPermissionsMode,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		QldbActions.LIST_JOURNAL_KINESIS_STREAMS_FOR_LEDGER,
-		QldbActions.LIST_JOURNAL_S3_EXPORTS,
-		QldbActions.LIST_JOURNAL_S3_EXPORTS_FOR_LEDGER,
-		QldbActions.LIST_LEDGERS,
+	static readonly AllListActions: string[] = [
+		QldbActions.ListJournalKinesisStreamsForLedger,
+		QldbActions.ListJournalS3Exports,
+		QldbActions.ListJournalS3ExportsForLedger,
+		QldbActions.ListLedgers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		QldbActions.TAG_RESOURCE,
-		QldbActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		QldbActions.TagResource,
+		QldbActions.UntagResource,
 	];
 }
 
-const CatalogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger/(?<ledgerName>[^:/?]+)/information_schema/user_tables$",
-);
-const LedgerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger/(?<ledgerName>[^:/?]+)$",
-);
-const StreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):stream/(?<ledgerName>[^:/?]+)/(?<streamId>[^:/?]+)$",
-);
-const TableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger/(?<ledgerName>[^:/?]+)/table/(?<tableId>[^:/?]+)$",
-);
+/**
+ * Properties for building a catalog ARN.
+ */
+export interface QldbCatalogArnProps {
+	/** The LedgerName component of the ARN. */
+	readonly ledgerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a catalog ARN.
+ */
+export interface QldbCatalogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LedgerName component. */
+	readonly ledgerName: string;
+}
+
+/**
+ * Properties for building a ledger ARN.
+ */
+export interface QldbLedgerArnProps {
+	/** The LedgerName component of the ARN. */
+	readonly ledgerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ledger ARN.
+ */
+export interface QldbLedgerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LedgerName component. */
+	readonly ledgerName: string;
+}
+
+/**
+ * Properties for building a stream ARN.
+ */
+export interface QldbStreamArnProps {
+	/** The LedgerName component of the ARN. */
+	readonly ledgerName: string;
+	/** The StreamId component of the ARN. */
+	readonly streamId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stream ARN.
+ */
+export interface QldbStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LedgerName component. */
+	readonly ledgerName: string;
+	/** The StreamId component. */
+	readonly streamId: string;
+}
+
+/**
+ * Properties for building a table ARN.
+ */
+export interface QldbTableArnProps {
+	/** The LedgerName component of the ARN. */
+	readonly ledgerName: string;
+	/** The TableId component of the ARN. */
+	readonly tableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a table ARN.
+ */
+export interface QldbTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LedgerName component. */
+	readonly ledgerName: string;
+	/** The TableId component. */
+	readonly tableId: string;
+}
+
+const CatalogArnRegex =
+	/^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger\/(?<ledgerName>[^:/?]+)\/information_schema\/user_tables$/;
+const LedgerArnRegex =
+	/^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger\/(?<ledgerName>[^:/?]+)$/;
+const StreamArnRegex =
+	/^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):stream\/(?<ledgerName>[^:/?]+)\/(?<streamId>[^:/?]+)$/;
+const TableArnRegex =
+	/^arn:(?<partition>[^:]+):qldb:(?<region>[^:]*):(?<account>[^:]*):ledger\/(?<ledgerName>[^:/?]+)\/table\/(?<tableId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for qldb resources.
@@ -159,16 +275,7 @@ export class QldbResources {
 	/**
 	 * Builds an ARN for the catalog resource.
 	 */
-	static catalog(props: {
-		/** The LedgerName component of the ARN. */
-		readonly ledgerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static catalog(props: QldbCatalogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qldb:${props.region ?? "*"}:${props.account ?? "*"}:ledger/${props.ledgerName}/information_schema/user_tables`;
 	}
 
@@ -183,12 +290,7 @@ export class QldbResources {
 	 * Parses a catalog ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCatalogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ledgerName: string;
-	} {
+	static parseCatalogArn(arn: string): QldbCatalogArnComponents {
 		const match = CatalogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid catalog ARN: ${arn}`);
@@ -204,16 +306,7 @@ export class QldbResources {
 	/**
 	 * Builds an ARN for the ledger resource.
 	 */
-	static ledger(props: {
-		/** The LedgerName component of the ARN. */
-		readonly ledgerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ledger(props: QldbLedgerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qldb:${props.region ?? "*"}:${props.account ?? "*"}:ledger/${props.ledgerName}`;
 	}
 
@@ -228,12 +321,7 @@ export class QldbResources {
 	 * Parses a ledger ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLedgerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ledgerName: string;
-	} {
+	static parseLedgerArn(arn: string): QldbLedgerArnComponents {
 		const match = LedgerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ledger ARN: ${arn}`);
@@ -249,18 +337,7 @@ export class QldbResources {
 	/**
 	 * Builds an ARN for the stream resource.
 	 */
-	static stream(props: {
-		/** The LedgerName component of the ARN. */
-		readonly ledgerName: string;
-		/** The StreamId component of the ARN. */
-		readonly streamId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stream(props: QldbStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qldb:${props.region ?? "*"}:${props.account ?? "*"}:stream/${props.ledgerName}/${props.streamId}`;
 	}
 
@@ -275,13 +352,7 @@ export class QldbResources {
 	 * Parses a stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ledgerName: string;
-		streamId: string;
-	} {
+	static parseStreamArn(arn: string): QldbStreamArnComponents {
 		const match = StreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stream ARN: ${arn}`);
@@ -298,18 +369,7 @@ export class QldbResources {
 	/**
 	 * Builds an ARN for the table resource.
 	 */
-	static table(props: {
-		/** The LedgerName component of the ARN. */
-		readonly ledgerName: string;
-		/** The TableId component of the ARN. */
-		readonly tableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static table(props: QldbTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qldb:${props.region ?? "*"}:${props.account ?? "*"}:ledger/${props.ledgerName}/table/${props.tableId}`;
 	}
 
@@ -324,13 +384,7 @@ export class QldbResources {
 	 * Parses a table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ledgerName: string;
-		tableId: string;
-	} {
+	static parseTableArn(arn: string): QldbTableArnComponents {
 		const match = TableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid table ARN: ${arn}`);
@@ -350,41 +404,41 @@ export class QldbResources {
  */
 export class QldbConditions {
 	/** Condition keys applicable to the CreateLedger action. */
-	static readonly CREATE_LEDGER_CONDITION_KEYS: string[] = [
+	static readonly CreateLedgerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PartiQLCreateTable action. */
-	static readonly PARTI_QL_CREATE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly PartiQLCreateTableConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PartiQLDropIndex action. */
-	static readonly PARTI_QL_DROP_INDEX_CONDITION_KEYS: string[] = ["qldb:Purge"];
+	static readonly PartiQLDropIndexConditionKeys: string[] = ["qldb:Purge"];
 	/** Condition keys applicable to the PartiQLDropTable action. */
-	static readonly PARTI_QL_DROP_TABLE_CONDITION_KEYS: string[] = ["qldb:Purge"];
+	static readonly PartiQLDropTableConditionKeys: string[] = ["qldb:Purge"];
 	/** Condition keys applicable to the StreamJournalToKinesis action. */
-	static readonly STREAM_JOURNAL_TO_KINESIS_CONDITION_KEYS: string[] = [
+	static readonly StreamJournalToKinesisConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: qldb:Purge (String) */
 	static readonly PURGE = "qldb:Purge";
 

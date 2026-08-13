@@ -13,90 +13,143 @@ export class Route53profilesActions {
 	static readonly SERVICE_PREFIX = "route53profiles";
 
 	/** [Write] route53profiles:AssociateProfile */
-	static readonly ASSOCIATE_PROFILE = "route53profiles:AssociateProfile";
+	static readonly AssociateProfile = "route53profiles:AssociateProfile";
 	/** [Write] route53profiles:AssociateResourceToProfile */
-	static readonly ASSOCIATE_RESOURCE_TO_PROFILE =
+	static readonly AssociateResourceToProfile =
 		"route53profiles:AssociateResourceToProfile";
 	/** [Write] route53profiles:CreateProfile */
-	static readonly CREATE_PROFILE = "route53profiles:CreateProfile";
+	static readonly CreateProfile = "route53profiles:CreateProfile";
 	/** [Write] route53profiles:DeleteProfile */
-	static readonly DELETE_PROFILE = "route53profiles:DeleteProfile";
+	static readonly DeleteProfile = "route53profiles:DeleteProfile";
 	/** [Write] route53profiles:DisassociateProfile */
-	static readonly DISASSOCIATE_PROFILE = "route53profiles:DisassociateProfile";
+	static readonly DisassociateProfile = "route53profiles:DisassociateProfile";
 	/** [Write] route53profiles:DisassociateResourceFromProfile */
-	static readonly DISASSOCIATE_RESOURCE_FROM_PROFILE =
+	static readonly DisassociateResourceFromProfile =
 		"route53profiles:DisassociateResourceFromProfile";
 	/** [Read] route53profiles:GetProfile */
-	static readonly GET_PROFILE = "route53profiles:GetProfile";
+	static readonly actionGetProfile = "route53profiles:GetProfile";
 	/** [Read] route53profiles:GetProfileAssociation */
-	static readonly GET_PROFILE_ASSOCIATION =
+	static readonly actionGetProfileAssociation =
 		"route53profiles:GetProfileAssociation";
 	/** [Read] route53profiles:GetProfilePolicy */
-	static readonly GET_PROFILE_POLICY = "route53profiles:GetProfilePolicy";
+	static readonly actionGetProfilePolicy = "route53profiles:GetProfilePolicy";
 	/** [Read] route53profiles:GetProfileResourceAssociation */
-	static readonly GET_PROFILE_RESOURCE_ASSOCIATION =
+	static readonly actionGetProfileResourceAssociation =
 		"route53profiles:GetProfileResourceAssociation";
 	/** [List] route53profiles:ListProfileAssociations */
-	static readonly LIST_PROFILE_ASSOCIATIONS =
+	static readonly ListProfileAssociations =
 		"route53profiles:ListProfileAssociations";
 	/** [List] route53profiles:ListProfileResourceAssociations */
-	static readonly LIST_PROFILE_RESOURCE_ASSOCIATIONS =
+	static readonly ListProfileResourceAssociations =
 		"route53profiles:ListProfileResourceAssociations";
 	/** [List] route53profiles:ListProfiles */
-	static readonly LIST_PROFILES = "route53profiles:ListProfiles";
+	static readonly ListProfiles = "route53profiles:ListProfiles";
 	/** [List] route53profiles:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"route53profiles:ListTagsForResource";
+	static readonly ListTagsForResource = "route53profiles:ListTagsForResource";
 	/** [Write] route53profiles:PutProfilePolicy */
-	static readonly PUT_PROFILE_POLICY = "route53profiles:PutProfilePolicy";
+	static readonly PutProfilePolicy = "route53profiles:PutProfilePolicy";
 	/** [Tagging] route53profiles:TagResource */
-	static readonly TAG_RESOURCE = "route53profiles:TagResource";
+	static readonly TagResource = "route53profiles:TagResource";
 	/** [Tagging] route53profiles:UntagResource */
-	static readonly UNTAG_RESOURCE = "route53profiles:UntagResource";
+	static readonly UntagResource = "route53profiles:UntagResource";
 	/** [Write] route53profiles:UpdateProfileResourceAssociation */
-	static readonly UPDATE_PROFILE_RESOURCE_ASSOCIATION =
+	static readonly UpdateProfileResourceAssociation =
 		"route53profiles:UpdateProfileResourceAssociation";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		Route53profilesActions.GET_PROFILE,
-		Route53profilesActions.GET_PROFILE_ASSOCIATION,
-		Route53profilesActions.GET_PROFILE_POLICY,
-		Route53profilesActions.GET_PROFILE_RESOURCE_ASSOCIATION,
+	static readonly AllReadActions: string[] = [
+		Route53profilesActions.actionGetProfile,
+		Route53profilesActions.actionGetProfileAssociation,
+		Route53profilesActions.actionGetProfilePolicy,
+		Route53profilesActions.actionGetProfileResourceAssociation,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		Route53profilesActions.ASSOCIATE_PROFILE,
-		Route53profilesActions.ASSOCIATE_RESOURCE_TO_PROFILE,
-		Route53profilesActions.CREATE_PROFILE,
-		Route53profilesActions.DELETE_PROFILE,
-		Route53profilesActions.DISASSOCIATE_PROFILE,
-		Route53profilesActions.DISASSOCIATE_RESOURCE_FROM_PROFILE,
-		Route53profilesActions.PUT_PROFILE_POLICY,
-		Route53profilesActions.UPDATE_PROFILE_RESOURCE_ASSOCIATION,
+	static readonly AllWriteActions: string[] = [
+		Route53profilesActions.AssociateProfile,
+		Route53profilesActions.AssociateResourceToProfile,
+		Route53profilesActions.CreateProfile,
+		Route53profilesActions.DeleteProfile,
+		Route53profilesActions.DisassociateProfile,
+		Route53profilesActions.DisassociateResourceFromProfile,
+		Route53profilesActions.PutProfilePolicy,
+		Route53profilesActions.UpdateProfileResourceAssociation,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		Route53profilesActions.LIST_PROFILE_ASSOCIATIONS,
-		Route53profilesActions.LIST_PROFILE_RESOURCE_ASSOCIATIONS,
-		Route53profilesActions.LIST_PROFILES,
-		Route53profilesActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		Route53profilesActions.ListProfileAssociations,
+		Route53profilesActions.ListProfileResourceAssociations,
+		Route53profilesActions.ListProfiles,
+		Route53profilesActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		Route53profilesActions.TAG_RESOURCE,
-		Route53profilesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		Route53profilesActions.TagResource,
+		Route53profilesActions.UntagResource,
 	];
 }
 
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):route53profiles:(?<region>[^:]*):(?<account>[^:]*):profile/(?<resourceId>[^:/?]+)$",
-);
-const ProfileAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):route53profiles:(?<region>[^:]*):(?<account>[^:]*):profile-association/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a profile ARN.
+ */
+export interface Route53profilesProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface Route53profilesProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a profile-association ARN.
+ */
+export interface Route53profilesProfileAssociationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile-association ARN.
+ */
+export interface Route53profilesProfileAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):route53profiles:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<resourceId>[^:/?]+)$/;
+const ProfileAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):route53profiles:(?<region>[^:]*):(?<account>[^:]*):profile-association\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for route53profiles resources.
@@ -105,16 +158,7 @@ export class Route53profilesResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: Route53profilesProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:route53profiles:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.resourceId}`;
 	}
 
@@ -129,12 +173,7 @@ export class Route53profilesResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProfileArn(arn: string): Route53profilesProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -150,16 +189,9 @@ export class Route53profilesResources {
 	/**
 	 * Builds an ARN for the profile-association resource.
 	 */
-	static profileAssociation(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profileAssociation(
+		props: Route53profilesProfileAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:route53profiles:${props.region ?? "*"}:${props.account ?? "*"}:profile-association/${props.resourceId}`;
 	}
 
@@ -174,12 +206,9 @@ export class Route53profilesResources {
 	 * Parses a profile-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProfileAssociationArn(
+		arn: string,
+	): Route53profilesProfileAssociationArnComponents {
 		const match = ProfileAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile-association ARN: ${arn}`);
@@ -198,59 +227,59 @@ export class Route53profilesResources {
  */
 export class Route53profilesOperations {
 	/** IAM actions required for the AssociateProfile API call. */
-	static readonly ASSOCIATE_PROFILE: string[] = [
+	static readonly AssociateProfile: string[] = [
 		"route53profiles:AssociateProfile",
 		"route53profiles:TagResource",
 	];
 	/** IAM actions required for the AssociateResourceToProfile API call. */
-	static readonly ASSOCIATE_RESOURCE_TO_PROFILE: string[] = [
+	static readonly AssociateResourceToProfile: string[] = [
 		"route53profiles:AssociateResourceToProfile",
 	];
 	/** IAM actions required for the CreateProfile API call. */
-	static readonly CREATE_PROFILE: string[] = [
+	static readonly CreateProfile: string[] = [
 		"route53profiles:CreateProfile",
 		"route53profiles:TagResource",
 	];
 	/** IAM actions required for the DeleteProfile API call. */
-	static readonly DELETE_PROFILE: string[] = ["route53profiles:DeleteProfile"];
+	static readonly DeleteProfile: string[] = ["route53profiles:DeleteProfile"];
 	/** IAM actions required for the DisassociateProfile API call. */
-	static readonly DISASSOCIATE_PROFILE: string[] = [
+	static readonly DisassociateProfile: string[] = [
 		"route53profiles:DisassociateProfile",
 	];
 	/** IAM actions required for the DisassociateResourceFromProfile API call. */
-	static readonly DISASSOCIATE_RESOURCE_FROM_PROFILE: string[] = [
+	static readonly DisassociateResourceFromProfile: string[] = [
 		"route53profiles:DisassociateResourceFromProfile",
 	];
 	/** IAM actions required for the GetProfile API call. */
-	static readonly GET_PROFILE: string[] = ["route53profiles:GetProfile"];
+	static readonly opGetProfile: string[] = ["route53profiles:GetProfile"];
 	/** IAM actions required for the GetProfileAssociation API call. */
-	static readonly GET_PROFILE_ASSOCIATION: string[] = [
+	static readonly opGetProfileAssociation: string[] = [
 		"route53profiles:GetProfileAssociation",
 	];
 	/** IAM actions required for the GetProfileResourceAssociation API call. */
-	static readonly GET_PROFILE_RESOURCE_ASSOCIATION: string[] = [
+	static readonly opGetProfileResourceAssociation: string[] = [
 		"route53profiles:GetProfileResourceAssociation",
 	];
 	/** IAM actions required for the ListProfileAssociations API call. */
-	static readonly LIST_PROFILE_ASSOCIATIONS: string[] = [
+	static readonly ListProfileAssociations: string[] = [
 		"route53profiles:ListProfileAssociations",
 	];
 	/** IAM actions required for the ListProfileResourceAssociations API call. */
-	static readonly LIST_PROFILE_RESOURCE_ASSOCIATIONS: string[] = [
+	static readonly ListProfileResourceAssociations: string[] = [
 		"route53profiles:ListProfileResourceAssociations",
 	];
 	/** IAM actions required for the ListProfiles API call. */
-	static readonly LIST_PROFILES: string[] = ["route53profiles:ListProfiles"];
+	static readonly ListProfiles: string[] = ["route53profiles:ListProfiles"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"route53profiles:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["route53profiles:TagResource"];
+	static readonly TagResource: string[] = ["route53profiles:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["route53profiles:UntagResource"];
+	static readonly UntagResource: string[] = ["route53profiles:UntagResource"];
 	/** IAM actions required for the UpdateProfileResourceAssociation API call. */
-	static readonly UPDATE_PROFILE_RESOURCE_ASSOCIATION: string[] = [
+	static readonly UpdateProfileResourceAssociation: string[] = [
 		"route53profiles:UpdateProfileResourceAssociation",
 	];
 }
@@ -260,13 +289,13 @@ export class Route53profilesOperations {
  */
 export class Route53profilesConditions {
 	/** Condition keys applicable to the AssociateProfile action. */
-	static readonly ASSOCIATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly AssociateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"route53profiles:ResourceIds",
 	];
 	/** Condition keys applicable to the AssociateResourceToProfile action. */
-	static readonly ASSOCIATE_RESOURCE_TO_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly AssociateResourceToProfileConditionKeys: string[] = [
 		"route53profiles:FirewallRuleGroupPriority",
 		"route53profiles:HostedZoneDomains",
 		"route53profiles:ResolverRuleDomains",
@@ -274,45 +303,43 @@ export class Route53profilesConditions {
 		"route53profiles:ResourceTypes",
 	];
 	/** Condition keys applicable to the CreateProfile action. */
-	static readonly CREATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DisassociateProfile action. */
-	static readonly DISASSOCIATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateProfileConditionKeys: string[] = [
 		"route53profiles:ResourceIds",
 	];
 	/** Condition keys applicable to the DisassociateResourceFromProfile action. */
-	static readonly DISASSOCIATE_RESOURCE_FROM_PROFILE_CONDITION_KEYS: string[] =
-		[
-			"route53profiles:FirewallRuleGroupPriority",
-			"route53profiles:HostedZoneDomains",
-			"route53profiles:ResolverRuleDomains",
-			"route53profiles:ResourceArns",
-			"route53profiles:ResourceTypes",
-		];
+	static readonly DisassociateResourceFromProfileConditionKeys: string[] = [
+		"route53profiles:FirewallRuleGroupPriority",
+		"route53profiles:HostedZoneDomains",
+		"route53profiles:ResolverRuleDomains",
+		"route53profiles:ResourceArns",
+		"route53profiles:ResourceTypes",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateProfileResourceAssociation action. */
-	static readonly UPDATE_PROFILE_RESOURCE_ASSOCIATION_CONDITION_KEYS: string[] =
-		[
-			"route53profiles:FirewallRuleGroupPriority",
-			"route53profiles:HostedZoneDomains",
-			"route53profiles:ResolverRuleDomains",
-			"route53profiles:ResourceTypes",
-		];
+	static readonly UpdateProfileResourceAssociationConditionKeys: string[] = [
+		"route53profiles:FirewallRuleGroupPriority",
+		"route53profiles:HostedZoneDomains",
+		"route53profiles:ResolverRuleDomains",
+		"route53profiles:ResourceTypes",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: route53profiles:FirewallRuleGroupPriority (Numeric) */
 	static readonly FIREWALL_RULE_GROUP_PRIORITY =
 		"route53profiles:FirewallRuleGroupPriority";

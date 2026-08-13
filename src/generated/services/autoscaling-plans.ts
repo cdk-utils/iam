@@ -13,39 +13,39 @@ export class AutoscalingPlansActions {
 	static readonly SERVICE_PREFIX = "autoscaling-plans";
 
 	/** [Write] autoscaling-plans:CreateScalingPlan */
-	static readonly CREATE_SCALING_PLAN = "autoscaling-plans:CreateScalingPlan";
+	static readonly CreateScalingPlan = "autoscaling-plans:CreateScalingPlan";
 	/** [Write] autoscaling-plans:DeleteScalingPlan */
-	static readonly DELETE_SCALING_PLAN = "autoscaling-plans:DeleteScalingPlan";
+	static readonly DeleteScalingPlan = "autoscaling-plans:DeleteScalingPlan";
 	/** [Read] autoscaling-plans:DescribeScalingPlanResources */
-	static readonly DESCRIBE_SCALING_PLAN_RESOURCES =
+	static readonly DescribeScalingPlanResources =
 		"autoscaling-plans:DescribeScalingPlanResources";
 	/** [Read] autoscaling-plans:DescribeScalingPlans */
-	static readonly DESCRIBE_SCALING_PLANS =
+	static readonly DescribeScalingPlans =
 		"autoscaling-plans:DescribeScalingPlans";
 	/** [Read] autoscaling-plans:GetScalingPlanResourceForecastData */
-	static readonly GET_SCALING_PLAN_RESOURCE_FORECAST_DATA =
+	static readonly actionGetScalingPlanResourceForecastData =
 		"autoscaling-plans:GetScalingPlanResourceForecastData";
 	/** [Write] autoscaling-plans:UpdateScalingPlan */
-	static readonly UPDATE_SCALING_PLAN = "autoscaling-plans:UpdateScalingPlan";
+	static readonly UpdateScalingPlan = "autoscaling-plans:UpdateScalingPlan";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AutoscalingPlansActions.DESCRIBE_SCALING_PLAN_RESOURCES,
-		AutoscalingPlansActions.DESCRIBE_SCALING_PLANS,
-		AutoscalingPlansActions.GET_SCALING_PLAN_RESOURCE_FORECAST_DATA,
+	static readonly AllReadActions: string[] = [
+		AutoscalingPlansActions.DescribeScalingPlanResources,
+		AutoscalingPlansActions.DescribeScalingPlans,
+		AutoscalingPlansActions.actionGetScalingPlanResourceForecastData,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AutoscalingPlansActions.CREATE_SCALING_PLAN,
-		AutoscalingPlansActions.DELETE_SCALING_PLAN,
-		AutoscalingPlansActions.UPDATE_SCALING_PLAN,
+	static readonly AllWriteActions: string[] = [
+		AutoscalingPlansActions.CreateScalingPlan,
+		AutoscalingPlansActions.DeleteScalingPlan,
+		AutoscalingPlansActions.UpdateScalingPlan,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -53,27 +53,27 @@ export class AutoscalingPlansActions {
  */
 export class AutoscalingPlansOperations {
 	/** IAM actions required for the CreateScalingPlan API call. */
-	static readonly CREATE_SCALING_PLAN: string[] = [
+	static readonly CreateScalingPlan: string[] = [
 		"autoscaling-plans:CreateScalingPlan",
 	];
 	/** IAM actions required for the DeleteScalingPlan API call. */
-	static readonly DELETE_SCALING_PLAN: string[] = [
+	static readonly DeleteScalingPlan: string[] = [
 		"autoscaling-plans:DeleteScalingPlan",
 	];
 	/** IAM actions required for the DescribeScalingPlanResources API call. */
-	static readonly DESCRIBE_SCALING_PLAN_RESOURCES: string[] = [
+	static readonly DescribeScalingPlanResources: string[] = [
 		"autoscaling-plans:DescribeScalingPlanResources",
 	];
 	/** IAM actions required for the DescribeScalingPlans API call. */
-	static readonly DESCRIBE_SCALING_PLANS: string[] = [
+	static readonly DescribeScalingPlans: string[] = [
 		"autoscaling-plans:DescribeScalingPlans",
 	];
 	/** IAM actions required for the GetScalingPlanResourceForecastData API call. */
-	static readonly GET_SCALING_PLAN_RESOURCE_FORECAST_DATA: string[] = [
+	static readonly opGetScalingPlanResourceForecastData: string[] = [
 		"autoscaling-plans:GetScalingPlanResourceForecastData",
 	];
 	/** IAM actions required for the UpdateScalingPlan API call. */
-	static readonly UPDATE_SCALING_PLAN: string[] = [
+	static readonly UpdateScalingPlan: string[] = [
 		"autoscaling-plans:UpdateScalingPlan",
 	];
 }

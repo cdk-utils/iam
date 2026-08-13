@@ -13,83 +13,163 @@ export class InternetmonitorActions {
 	static readonly SERVICE_PREFIX = "internetmonitor";
 
 	/** [Write] internetmonitor:CreateMonitor */
-	static readonly CREATE_MONITOR = "internetmonitor:CreateMonitor";
+	static readonly CreateMonitor = "internetmonitor:CreateMonitor";
 	/** [Write] internetmonitor:DeleteMonitor */
-	static readonly DELETE_MONITOR = "internetmonitor:DeleteMonitor";
+	static readonly DeleteMonitor = "internetmonitor:DeleteMonitor";
 	/** [Read] internetmonitor:GetHealthEvent */
-	static readonly GET_HEALTH_EVENT = "internetmonitor:GetHealthEvent";
+	static readonly actionGetHealthEvent = "internetmonitor:GetHealthEvent";
 	/** [Read] internetmonitor:GetInternetEvent */
-	static readonly GET_INTERNET_EVENT = "internetmonitor:GetInternetEvent";
+	static readonly actionGetInternetEvent = "internetmonitor:GetInternetEvent";
 	/** [Read] internetmonitor:GetMonitor */
-	static readonly GET_MONITOR = "internetmonitor:GetMonitor";
+	static readonly actionGetMonitor = "internetmonitor:GetMonitor";
 	/** [Read] internetmonitor:GetQueryResults */
-	static readonly GET_QUERY_RESULTS = "internetmonitor:GetQueryResults";
+	static readonly actionGetQueryResults = "internetmonitor:GetQueryResults";
 	/** [Read] internetmonitor:GetQueryStatus */
-	static readonly GET_QUERY_STATUS = "internetmonitor:GetQueryStatus";
+	static readonly actionGetQueryStatus = "internetmonitor:GetQueryStatus";
 	/** [Write] internetmonitor:Link */
-	static readonly LINK = "internetmonitor:Link";
+	static readonly Link = "internetmonitor:Link";
 	/** [List] internetmonitor:ListHealthEvents */
-	static readonly LIST_HEALTH_EVENTS = "internetmonitor:ListHealthEvents";
+	static readonly ListHealthEvents = "internetmonitor:ListHealthEvents";
 	/** [List] internetmonitor:ListInternetEvents */
-	static readonly LIST_INTERNET_EVENTS = "internetmonitor:ListInternetEvents";
+	static readonly ListInternetEvents = "internetmonitor:ListInternetEvents";
 	/** [List] internetmonitor:ListMonitors */
-	static readonly LIST_MONITORS = "internetmonitor:ListMonitors";
+	static readonly ListMonitors = "internetmonitor:ListMonitors";
 	/** [Read] internetmonitor:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"internetmonitor:ListTagsForResource";
+	static readonly ListTagsForResource = "internetmonitor:ListTagsForResource";
 	/** [Read] internetmonitor:StartQuery */
-	static readonly START_QUERY = "internetmonitor:StartQuery";
+	static readonly StartQuery = "internetmonitor:StartQuery";
 	/** [Read] internetmonitor:StopQuery */
-	static readonly STOP_QUERY = "internetmonitor:StopQuery";
+	static readonly StopQuery = "internetmonitor:StopQuery";
 	/** [Tagging] internetmonitor:TagResource */
-	static readonly TAG_RESOURCE = "internetmonitor:TagResource";
+	static readonly TagResource = "internetmonitor:TagResource";
 	/** [Tagging] internetmonitor:UntagResource */
-	static readonly UNTAG_RESOURCE = "internetmonitor:UntagResource";
+	static readonly UntagResource = "internetmonitor:UntagResource";
 	/** [Write] internetmonitor:UpdateMonitor */
-	static readonly UPDATE_MONITOR = "internetmonitor:UpdateMonitor";
+	static readonly UpdateMonitor = "internetmonitor:UpdateMonitor";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		InternetmonitorActions.GET_HEALTH_EVENT,
-		InternetmonitorActions.GET_INTERNET_EVENT,
-		InternetmonitorActions.GET_MONITOR,
-		InternetmonitorActions.GET_QUERY_RESULTS,
-		InternetmonitorActions.GET_QUERY_STATUS,
-		InternetmonitorActions.LIST_TAGS_FOR_RESOURCE,
-		InternetmonitorActions.START_QUERY,
-		InternetmonitorActions.STOP_QUERY,
+	static readonly AllReadActions: string[] = [
+		InternetmonitorActions.actionGetHealthEvent,
+		InternetmonitorActions.actionGetInternetEvent,
+		InternetmonitorActions.actionGetMonitor,
+		InternetmonitorActions.actionGetQueryResults,
+		InternetmonitorActions.actionGetQueryStatus,
+		InternetmonitorActions.ListTagsForResource,
+		InternetmonitorActions.StartQuery,
+		InternetmonitorActions.StopQuery,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		InternetmonitorActions.CREATE_MONITOR,
-		InternetmonitorActions.DELETE_MONITOR,
-		InternetmonitorActions.LINK,
-		InternetmonitorActions.UPDATE_MONITOR,
+	static readonly AllWriteActions: string[] = [
+		InternetmonitorActions.CreateMonitor,
+		InternetmonitorActions.DeleteMonitor,
+		InternetmonitorActions.Link,
+		InternetmonitorActions.UpdateMonitor,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		InternetmonitorActions.LIST_HEALTH_EVENTS,
-		InternetmonitorActions.LIST_INTERNET_EVENTS,
-		InternetmonitorActions.LIST_MONITORS,
+	static readonly AllListActions: string[] = [
+		InternetmonitorActions.ListHealthEvents,
+		InternetmonitorActions.ListInternetEvents,
+		InternetmonitorActions.ListMonitors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		InternetmonitorActions.TAG_RESOURCE,
-		InternetmonitorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		InternetmonitorActions.TagResource,
+		InternetmonitorActions.UntagResource,
 	];
 }
 
-const HealthEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):internetmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor/(?<monitorName>[^:/?]+)/health-event/(?<eventId>[^:/?]+)$",
-);
-const InternetEventArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):internetmonitor::(?<account>[^:]*):internet-event/(?<internetEventId>[^:/?]+)$",
-);
-const MonitorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):internetmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor/(?<monitorName>[^:/?]+)$",
-);
+/**
+ * Properties for building a HealthEvent ARN.
+ */
+export interface InternetmonitorHealthEventArnProps {
+	/** The MonitorName component of the ARN. */
+	readonly monitorName: string;
+	/** The EventId component of the ARN. */
+	readonly eventId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a HealthEvent ARN.
+ */
+export interface InternetmonitorHealthEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitorName component. */
+	readonly monitorName: string;
+	/** The EventId component. */
+	readonly eventId: string;
+}
+
+/**
+ * Properties for building a InternetEvent ARN.
+ */
+export interface InternetmonitorInternetEventArnProps {
+	/** The InternetEventId component of the ARN. */
+	readonly internetEventId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a InternetEvent ARN.
+ */
+export interface InternetmonitorInternetEventArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InternetEventId component. */
+	readonly internetEventId: string;
+}
+
+/**
+ * Properties for building a Monitor ARN.
+ */
+export interface InternetmonitorMonitorArnProps {
+	/** The MonitorName component of the ARN. */
+	readonly monitorName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Monitor ARN.
+ */
+export interface InternetmonitorMonitorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitorName component. */
+	readonly monitorName: string;
+}
+
+const HealthEventArnRegex =
+	/^arn:(?<partition>[^:]+):internetmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor\/(?<monitorName>[^:/?]+)\/health-event\/(?<eventId>[^:/?]+)$/;
+const InternetEventArnRegex =
+	/^arn:(?<partition>[^:]+):internetmonitor::(?<account>[^:]*):internet-event\/(?<internetEventId>[^:/?]+)$/;
+const MonitorArnRegex =
+	/^arn:(?<partition>[^:]+):internetmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor\/(?<monitorName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for internetmonitor resources.
@@ -98,18 +178,7 @@ export class InternetmonitorResources {
 	/**
 	 * Builds an ARN for the HealthEvent resource.
 	 */
-	static healthEvent(props: {
-		/** The MonitorName component of the ARN. */
-		readonly monitorName: string;
-		/** The EventId component of the ARN. */
-		readonly eventId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static healthEvent(props: InternetmonitorHealthEventArnProps): string {
 		return `arn:${props.partition ?? "aws"}:internetmonitor:${props.region ?? "*"}:${props.account ?? "*"}:monitor/${props.monitorName}/health-event/${props.eventId}`;
 	}
 
@@ -124,13 +193,9 @@ export class InternetmonitorResources {
 	 * Parses a HealthEvent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHealthEventArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitorName: string;
-		eventId: string;
-	} {
+	static parseHealthEventArn(
+		arn: string,
+	): InternetmonitorHealthEventArnComponents {
 		const match = HealthEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid HealthEvent ARN: ${arn}`);
@@ -147,14 +212,7 @@ export class InternetmonitorResources {
 	/**
 	 * Builds an ARN for the InternetEvent resource.
 	 */
-	static internetEvent(props: {
-		/** The InternetEventId component of the ARN. */
-		readonly internetEventId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static internetEvent(props: InternetmonitorInternetEventArnProps): string {
 		return `arn:${props.partition ?? "aws"}:internetmonitor::${props.account ?? "*"}:internet-event/${props.internetEventId}`;
 	}
 
@@ -169,11 +227,9 @@ export class InternetmonitorResources {
 	 * Parses a InternetEvent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInternetEventArn(arn: string): {
-		partition: string;
-		account: string;
-		internetEventId: string;
-	} {
+	static parseInternetEventArn(
+		arn: string,
+	): InternetmonitorInternetEventArnComponents {
 		const match = InternetEventArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid InternetEvent ARN: ${arn}`);
@@ -188,16 +244,7 @@ export class InternetmonitorResources {
 	/**
 	 * Builds an ARN for the Monitor resource.
 	 */
-	static monitor(props: {
-		/** The MonitorName component of the ARN. */
-		readonly monitorName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static monitor(props: InternetmonitorMonitorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:internetmonitor:${props.region ?? "*"}:${props.account ?? "*"}:monitor/${props.monitorName}`;
 	}
 
@@ -212,12 +259,7 @@ export class InternetmonitorResources {
 	 * Parses a Monitor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMonitorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitorName: string;
-	} {
+	static parseMonitorArn(arn: string): InternetmonitorMonitorArnComponents {
 		const match = MonitorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Monitor ARN: ${arn}`);
@@ -236,54 +278,54 @@ export class InternetmonitorResources {
  */
 export class InternetmonitorOperations {
 	/** IAM actions required for the CreateMonitor API call. */
-	static readonly CREATE_MONITOR: string[] = [
+	static readonly CreateMonitor: string[] = [
 		"internetmonitor:CreateMonitor",
 		"internetmonitor:TagResource",
 	];
 	/** IAM actions required for the DeleteMonitor API call. */
-	static readonly DELETE_MONITOR: string[] = ["internetmonitor:DeleteMonitor"];
+	static readonly DeleteMonitor: string[] = ["internetmonitor:DeleteMonitor"];
 	/** IAM actions required for the GetHealthEvent API call. */
-	static readonly GET_HEALTH_EVENT: string[] = [
+	static readonly opGetHealthEvent: string[] = [
 		"internetmonitor:GetHealthEvent",
 	];
 	/** IAM actions required for the GetInternetEvent API call. */
-	static readonly GET_INTERNET_EVENT: string[] = [
+	static readonly opGetInternetEvent: string[] = [
 		"internetmonitor:GetInternetEvent",
 	];
 	/** IAM actions required for the GetMonitor API call. */
-	static readonly GET_MONITOR: string[] = ["internetmonitor:GetMonitor"];
+	static readonly opGetMonitor: string[] = ["internetmonitor:GetMonitor"];
 	/** IAM actions required for the GetQueryResults API call. */
-	static readonly GET_QUERY_RESULTS: string[] = [
+	static readonly opGetQueryResults: string[] = [
 		"internetmonitor:GetQueryResults",
 	];
 	/** IAM actions required for the GetQueryStatus API call. */
-	static readonly GET_QUERY_STATUS: string[] = [
+	static readonly opGetQueryStatus: string[] = [
 		"internetmonitor:GetQueryStatus",
 	];
 	/** IAM actions required for the ListHealthEvents API call. */
-	static readonly LIST_HEALTH_EVENTS: string[] = [
+	static readonly ListHealthEvents: string[] = [
 		"internetmonitor:ListHealthEvents",
 	];
 	/** IAM actions required for the ListInternetEvents API call. */
-	static readonly LIST_INTERNET_EVENTS: string[] = [
+	static readonly ListInternetEvents: string[] = [
 		"internetmonitor:ListInternetEvents",
 	];
 	/** IAM actions required for the ListMonitors API call. */
-	static readonly LIST_MONITORS: string[] = ["internetmonitor:ListMonitors"];
+	static readonly ListMonitors: string[] = ["internetmonitor:ListMonitors"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"internetmonitor:ListTagsForResource",
 	];
 	/** IAM actions required for the StartQuery API call. */
-	static readonly START_QUERY: string[] = ["internetmonitor:StartQuery"];
+	static readonly StartQuery: string[] = ["internetmonitor:StartQuery"];
 	/** IAM actions required for the StopQuery API call. */
-	static readonly STOP_QUERY: string[] = ["internetmonitor:StopQuery"];
+	static readonly StopQuery: string[] = ["internetmonitor:StopQuery"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["internetmonitor:TagResource"];
+	static readonly TagResource: string[] = ["internetmonitor:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["internetmonitor:UntagResource"];
+	static readonly UntagResource: string[] = ["internetmonitor:UntagResource"];
 	/** IAM actions required for the UpdateMonitor API call. */
-	static readonly UPDATE_MONITOR: string[] = ["internetmonitor:UpdateMonitor"];
+	static readonly UpdateMonitor: string[] = ["internetmonitor:UpdateMonitor"];
 }
 
 /**
@@ -291,24 +333,24 @@ export class InternetmonitorOperations {
  */
 export class InternetmonitorConditions {
 	/** Condition keys applicable to the CreateMonitor action. */
-	static readonly CREATE_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

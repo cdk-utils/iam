@@ -13,119 +13,177 @@ export class DsqlActions {
 	static readonly SERVICE_PREFIX = "dsql";
 
 	/** [Write] dsql:AddPeerCluster */
-	static readonly ADD_PEER_CLUSTER = "dsql:AddPeerCluster";
+	static readonly AddPeerCluster = "dsql:AddPeerCluster";
 	/** [Write] dsql:CreateCluster */
-	static readonly CREATE_CLUSTER = "dsql:CreateCluster";
+	static readonly CreateCluster = "dsql:CreateCluster";
 	/** [Write] dsql:CreateStream */
-	static readonly CREATE_STREAM = "dsql:CreateStream";
+	static readonly CreateStream = "dsql:CreateStream";
 	/** [Write] dsql:DbConnect */
-	static readonly DB_CONNECT = "dsql:DbConnect";
+	static readonly DbConnect = "dsql:DbConnect";
 	/** [Write] dsql:DbConnectAdmin */
-	static readonly DB_CONNECT_ADMIN = "dsql:DbConnectAdmin";
+	static readonly DbConnectAdmin = "dsql:DbConnectAdmin";
 	/** [Write] dsql:DeleteCluster */
-	static readonly DELETE_CLUSTER = "dsql:DeleteCluster";
+	static readonly DeleteCluster = "dsql:DeleteCluster";
 	/** [Write] dsql:DeleteClusterPolicy */
-	static readonly DELETE_CLUSTER_POLICY = "dsql:DeleteClusterPolicy";
+	static readonly DeleteClusterPolicy = "dsql:DeleteClusterPolicy";
 	/** [Write] dsql:DeleteStream */
-	static readonly DELETE_STREAM = "dsql:DeleteStream";
+	static readonly DeleteStream = "dsql:DeleteStream";
 	/** [Read] dsql:GetBackupJob */
-	static readonly GET_BACKUP_JOB = "dsql:GetBackupJob";
+	static readonly actionGetBackupJob = "dsql:GetBackupJob";
 	/** [Read] dsql:GetCluster */
-	static readonly GET_CLUSTER = "dsql:GetCluster";
+	static readonly actionGetCluster = "dsql:GetCluster";
 	/** [Read] dsql:GetClusterPolicy */
-	static readonly GET_CLUSTER_POLICY = "dsql:GetClusterPolicy";
+	static readonly actionGetClusterPolicy = "dsql:GetClusterPolicy";
 	/** [Read] dsql:GetRestoreJob */
-	static readonly GET_RESTORE_JOB = "dsql:GetRestoreJob";
+	static readonly actionGetRestoreJob = "dsql:GetRestoreJob";
 	/** [Read] dsql:GetStream */
-	static readonly GET_STREAM = "dsql:GetStream";
+	static readonly actionGetStream = "dsql:GetStream";
 	/** [Read] dsql:GetVpcEndpointServiceName */
-	static readonly GET_VPC_ENDPOINT_SERVICE_NAME =
+	static readonly actionGetVpcEndpointServiceName =
 		"dsql:GetVpcEndpointServiceName";
 	/** [Write] dsql:InjectError */
-	static readonly INJECT_ERROR = "dsql:InjectError";
+	static readonly InjectError = "dsql:InjectError";
 	/** [List] dsql:ListClusters */
-	static readonly LIST_CLUSTERS = "dsql:ListClusters";
+	static readonly ListClusters = "dsql:ListClusters";
 	/** [List] dsql:ListStreams */
-	static readonly LIST_STREAMS = "dsql:ListStreams";
+	static readonly ListStreams = "dsql:ListStreams";
 	/** [Read] dsql:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "dsql:ListTagsForResource";
+	static readonly ListTagsForResource = "dsql:ListTagsForResource";
 	/** [Write] dsql:PutClusterPolicy */
-	static readonly PUT_CLUSTER_POLICY = "dsql:PutClusterPolicy";
+	static readonly PutClusterPolicy = "dsql:PutClusterPolicy";
 	/** [Write] dsql:PutMultiRegionProperties */
-	static readonly PUT_MULTI_REGION_PROPERTIES = "dsql:PutMultiRegionProperties";
+	static readonly PutMultiRegionProperties = "dsql:PutMultiRegionProperties";
 	/** [Write] dsql:PutWitnessRegion */
-	static readonly PUT_WITNESS_REGION = "dsql:PutWitnessRegion";
+	static readonly PutWitnessRegion = "dsql:PutWitnessRegion";
 	/** [Write] dsql:RemovePeerCluster */
-	static readonly REMOVE_PEER_CLUSTER = "dsql:RemovePeerCluster";
+	static readonly RemovePeerCluster = "dsql:RemovePeerCluster";
 	/** [Write] dsql:StartBackupJob */
-	static readonly START_BACKUP_JOB = "dsql:StartBackupJob";
+	static readonly StartBackupJob = "dsql:StartBackupJob";
 	/** [Write] dsql:StartRestoreJob */
-	static readonly START_RESTORE_JOB = "dsql:StartRestoreJob";
+	static readonly StartRestoreJob = "dsql:StartRestoreJob";
 	/** [Write] dsql:StopBackupJob */
-	static readonly STOP_BACKUP_JOB = "dsql:StopBackupJob";
+	static readonly StopBackupJob = "dsql:StopBackupJob";
 	/** [Write] dsql:StopRestoreJob */
-	static readonly STOP_RESTORE_JOB = "dsql:StopRestoreJob";
+	static readonly StopRestoreJob = "dsql:StopRestoreJob";
 	/** [Tagging] dsql:TagResource */
-	static readonly TAG_RESOURCE = "dsql:TagResource";
+	static readonly TagResource = "dsql:TagResource";
 	/** [Tagging] dsql:UntagResource */
-	static readonly UNTAG_RESOURCE = "dsql:UntagResource";
+	static readonly UntagResource = "dsql:UntagResource";
 	/** [Write] dsql:UpdateCluster */
-	static readonly UPDATE_CLUSTER = "dsql:UpdateCluster";
+	static readonly UpdateCluster = "dsql:UpdateCluster";
 	/** [Write] dsql:UpdateStream */
-	static readonly UPDATE_STREAM = "dsql:UpdateStream";
+	static readonly UpdateStream = "dsql:UpdateStream";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DsqlActions.GET_BACKUP_JOB,
-		DsqlActions.GET_CLUSTER,
-		DsqlActions.GET_CLUSTER_POLICY,
-		DsqlActions.GET_RESTORE_JOB,
-		DsqlActions.GET_STREAM,
-		DsqlActions.GET_VPC_ENDPOINT_SERVICE_NAME,
-		DsqlActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		DsqlActions.actionGetBackupJob,
+		DsqlActions.actionGetCluster,
+		DsqlActions.actionGetClusterPolicy,
+		DsqlActions.actionGetRestoreJob,
+		DsqlActions.actionGetStream,
+		DsqlActions.actionGetVpcEndpointServiceName,
+		DsqlActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DsqlActions.ADD_PEER_CLUSTER,
-		DsqlActions.CREATE_CLUSTER,
-		DsqlActions.CREATE_STREAM,
-		DsqlActions.DB_CONNECT,
-		DsqlActions.DB_CONNECT_ADMIN,
-		DsqlActions.DELETE_CLUSTER,
-		DsqlActions.DELETE_CLUSTER_POLICY,
-		DsqlActions.DELETE_STREAM,
-		DsqlActions.INJECT_ERROR,
-		DsqlActions.PUT_CLUSTER_POLICY,
-		DsqlActions.PUT_MULTI_REGION_PROPERTIES,
-		DsqlActions.PUT_WITNESS_REGION,
-		DsqlActions.REMOVE_PEER_CLUSTER,
-		DsqlActions.START_BACKUP_JOB,
-		DsqlActions.START_RESTORE_JOB,
-		DsqlActions.STOP_BACKUP_JOB,
-		DsqlActions.STOP_RESTORE_JOB,
-		DsqlActions.UPDATE_CLUSTER,
-		DsqlActions.UPDATE_STREAM,
+	static readonly AllWriteActions: string[] = [
+		DsqlActions.AddPeerCluster,
+		DsqlActions.CreateCluster,
+		DsqlActions.CreateStream,
+		DsqlActions.DbConnect,
+		DsqlActions.DbConnectAdmin,
+		DsqlActions.DeleteCluster,
+		DsqlActions.DeleteClusterPolicy,
+		DsqlActions.DeleteStream,
+		DsqlActions.InjectError,
+		DsqlActions.PutClusterPolicy,
+		DsqlActions.PutMultiRegionProperties,
+		DsqlActions.PutWitnessRegion,
+		DsqlActions.RemovePeerCluster,
+		DsqlActions.StartBackupJob,
+		DsqlActions.StartRestoreJob,
+		DsqlActions.StopBackupJob,
+		DsqlActions.StopRestoreJob,
+		DsqlActions.UpdateCluster,
+		DsqlActions.UpdateStream,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DsqlActions.LIST_CLUSTERS,
-		DsqlActions.LIST_STREAMS,
+	static readonly AllListActions: string[] = [
+		DsqlActions.ListClusters,
+		DsqlActions.ListStreams,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DsqlActions.TAG_RESOURCE,
-		DsqlActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DsqlActions.TagResource,
+		DsqlActions.UntagResource,
 	];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dsql:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<identifier>[^:/?]+)$",
-);
-const StreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):dsql:(?<region>[^:]*):(?<account>[^:]*):cluster/(?<clusterId>[^:/?]+)/stream/(?<streamId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Cluster ARN.
+ */
+export interface DsqlClusterArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Cluster ARN.
+ */
+export interface DsqlClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a Stream ARN.
+ */
+export interface DsqlStreamArnProps {
+	/** The ClusterId component of the ARN. */
+	readonly clusterId: string;
+	/** The StreamId component of the ARN. */
+	readonly streamId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Stream ARN.
+ */
+export interface DsqlStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterId component. */
+	readonly clusterId: string;
+	/** The StreamId component. */
+	readonly streamId: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):dsql:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<identifier>[^:/?]+)$/;
+const StreamArnRegex =
+	/^arn:(?<partition>[^:]+):dsql:(?<region>[^:]*):(?<account>[^:]*):cluster\/(?<clusterId>[^:/?]+)\/stream\/(?<streamId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for dsql resources.
@@ -134,16 +192,7 @@ export class DsqlResources {
 	/**
 	 * Builds an ARN for the Cluster resource.
 	 */
-	static cluster(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: DsqlClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dsql:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.identifier}`;
 	}
 
@@ -158,12 +207,7 @@ export class DsqlResources {
 	 * Parses a Cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseClusterArn(arn: string): DsqlClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Cluster ARN: ${arn}`);
@@ -179,18 +223,7 @@ export class DsqlResources {
 	/**
 	 * Builds an ARN for the Stream resource.
 	 */
-	static stream(props: {
-		/** The ClusterId component of the ARN. */
-		readonly clusterId: string;
-		/** The StreamId component of the ARN. */
-		readonly streamId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stream(props: DsqlStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:dsql:${props.region ?? "*"}:${props.account ?? "*"}:cluster/${props.clusterId}/stream/${props.streamId}`;
 	}
 
@@ -205,13 +238,7 @@ export class DsqlResources {
 	 * Parses a Stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterId: string;
-		streamId: string;
-	} {
+	static parseStreamArn(arn: string): DsqlStreamArnComponents {
 		const match = StreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Stream ARN: ${arn}`);
@@ -231,7 +258,7 @@ export class DsqlResources {
  */
 export class DsqlOperations {
 	/** IAM actions required for the CreateCluster API call. */
-	static readonly CREATE_CLUSTER: string[] = [
+	static readonly CreateCluster: string[] = [
 		"dsql:AddPeerCluster",
 		"dsql:CreateCluster",
 		"dsql:DeleteClusterPolicy",
@@ -241,48 +268,44 @@ export class DsqlOperations {
 		"dsql:TagResource",
 	];
 	/** IAM actions required for the CreateStream API call. */
-	static readonly CREATE_STREAM: string[] = [
+	static readonly CreateStream: string[] = [
 		"dsql:CreateStream",
 		"iam:PassRole",
 		"dsql:TagResource",
 	];
 	/** IAM actions required for the DeleteCluster API call. */
-	static readonly DELETE_CLUSTER: string[] = ["dsql:DeleteCluster"];
+	static readonly DeleteCluster: string[] = ["dsql:DeleteCluster"];
 	/** IAM actions required for the DeleteClusterPolicy API call. */
-	static readonly DELETE_CLUSTER_POLICY: string[] = [
-		"dsql:DeleteClusterPolicy",
-	];
+	static readonly DeleteClusterPolicy: string[] = ["dsql:DeleteClusterPolicy"];
 	/** IAM actions required for the DeleteStream API call. */
-	static readonly DELETE_STREAM: string[] = ["dsql:DeleteStream"];
+	static readonly DeleteStream: string[] = ["dsql:DeleteStream"];
 	/** IAM actions required for the GetCluster API call. */
-	static readonly GET_CLUSTER: string[] = ["dsql:GetCluster"];
+	static readonly opGetCluster: string[] = ["dsql:GetCluster"];
 	/** IAM actions required for the GetClusterPolicy API call. */
-	static readonly GET_CLUSTER_POLICY: string[] = ["dsql:GetClusterPolicy"];
+	static readonly opGetClusterPolicy: string[] = ["dsql:GetClusterPolicy"];
 	/** IAM actions required for the GetStream API call. */
-	static readonly GET_STREAM: string[] = ["dsql:GetStream"];
+	static readonly opGetStream: string[] = ["dsql:GetStream"];
 	/** IAM actions required for the GetVpcEndpointServiceName API call. */
-	static readonly GET_VPC_ENDPOINT_SERVICE_NAME: string[] = [
+	static readonly opGetVpcEndpointServiceName: string[] = [
 		"dsql:GetVpcEndpointServiceName",
 	];
 	/** IAM actions required for the ListClusters API call. */
-	static readonly LIST_CLUSTERS: string[] = ["dsql:ListClusters"];
+	static readonly ListClusters: string[] = ["dsql:ListClusters"];
 	/** IAM actions required for the ListStreams API call. */
-	static readonly LIST_STREAMS: string[] = ["dsql:ListStreams"];
+	static readonly ListStreams: string[] = ["dsql:ListStreams"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"dsql:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["dsql:ListTagsForResource"];
 	/** IAM actions required for the PutClusterPolicy API call. */
-	static readonly PUT_CLUSTER_POLICY: string[] = [
+	static readonly PutClusterPolicy: string[] = [
 		"dsql:DeleteClusterPolicy",
 		"dsql:PutClusterPolicy",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["dsql:TagResource"];
+	static readonly TagResource: string[] = ["dsql:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["dsql:UntagResource"];
+	static readonly UntagResource: string[] = ["dsql:UntagResource"];
 	/** IAM actions required for the UpdateCluster API call. */
-	static readonly UPDATE_CLUSTER: string[] = [
+	static readonly UpdateCluster: string[] = [
 		"dsql:AddPeerCluster",
 		"dsql:GetCluster",
 		"dsql:PutMultiRegionProperties",
@@ -297,43 +320,41 @@ export class DsqlOperations {
  */
 export class DsqlConditions {
 	/** Condition keys applicable to the CreateCluster action. */
-	static readonly CREATE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateClusterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"dsql:WitnessRegion",
 	];
 	/** Condition keys applicable to the CreateStream action. */
-	static readonly CREATE_STREAM_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the InjectError action. */
-	static readonly INJECT_ERROR_CONDITION_KEYS: string[] = [
+	static readonly InjectErrorConditionKeys: string[] = [
 		"dsql:FisActionId",
 		"dsql:FisTargetArns",
 	];
 	/** Condition keys applicable to the PutWitnessRegion action. */
-	static readonly PUT_WITNESS_REGION_CONDITION_KEYS: string[] = [
+	static readonly PutWitnessRegionConditionKeys: string[] = [
 		"dsql:WitnessRegion",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateCluster action. */
-	static readonly UPDATE_CLUSTER_CONDITION_KEYS: string[] = [
-		"dsql:WitnessRegion",
-	];
+	static readonly UpdateClusterConditionKeys: string[] = ["dsql:WitnessRegion"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: dsql:FisActionId (String) */
 	static readonly FIS_ACTION_ID = "dsql:FisActionId";
 	/** Condition key: dsql:FisTargetArns (ArrayOfARN) */

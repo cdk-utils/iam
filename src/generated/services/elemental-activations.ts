@@ -13,61 +13,60 @@ export class ElementalActivationsActions {
 	static readonly SERVICE_PREFIX = "elemental-activations";
 
 	/** [Write] elemental-activations:CompleteAccountRegistration */
-	static readonly COMPLETE_ACCOUNT_REGISTRATION =
+	static readonly CompleteAccountRegistration =
 		"elemental-activations:CompleteAccountRegistration";
 	/** [Write] elemental-activations:CompleteFileUpload */
-	static readonly COMPLETE_FILE_UPLOAD =
+	static readonly CompleteFileUpload =
 		"elemental-activations:CompleteFileUpload";
 	/** [Write] elemental-activations:ConfirmAccount */
-	static readonly CONFIRM_ACCOUNT = "elemental-activations:ConfirmAccount";
+	static readonly ConfirmAccount = "elemental-activations:ConfirmAccount";
 	/** [Read] elemental-activations:DownloadKickstart */
-	static readonly DOWNLOAD_KICKSTART =
-		"elemental-activations:DownloadKickstart";
+	static readonly DownloadKickstart = "elemental-activations:DownloadKickstart";
 	/** [Read] elemental-activations:DownloadSoftware */
-	static readonly DOWNLOAD_SOFTWARE = "elemental-activations:DownloadSoftware";
+	static readonly DownloadSoftware = "elemental-activations:DownloadSoftware";
 	/** [Write] elemental-activations:GenerateLicense */
-	static readonly GENERATE_LICENSE = "elemental-activations:GenerateLicense";
+	static readonly GenerateLicense = "elemental-activations:GenerateLicense";
 	/** [Write] elemental-activations:GenerateLicenses */
-	static readonly GENERATE_LICENSES = "elemental-activations:GenerateLicenses";
+	static readonly GenerateLicenses = "elemental-activations:GenerateLicenses";
 	/** [Read] elemental-activations:GetArtifactGroupSoftwareVersions */
-	static readonly GET_ARTIFACT_GROUP_SOFTWARE_VERSIONS =
+	static readonly actionGetArtifactGroupSoftwareVersions =
 		"elemental-activations:GetArtifactGroupSoftwareVersions";
 	/** [Read] elemental-activations:GetAsset */
-	static readonly GET_ASSET = "elemental-activations:GetAsset";
+	static readonly actionGetAsset = "elemental-activations:GetAsset";
 	/** [Read] elemental-activations:GetAssets */
-	static readonly GET_ASSETS = "elemental-activations:GetAssets";
+	static readonly actionGetAssets = "elemental-activations:GetAssets";
 	/** [Read] elemental-activations:GetProductAdvisories */
-	static readonly GET_PRODUCT_ADVISORIES =
+	static readonly actionGetProductAdvisories =
 		"elemental-activations:GetProductAdvisories";
 	/** [Read] elemental-activations:GetSoftwareVersions */
-	static readonly GET_SOFTWARE_VERSIONS =
+	static readonly actionGetSoftwareVersions =
 		"elemental-activations:GetSoftwareVersions";
 	/** [Write] elemental-activations:StartFileUpload */
-	static readonly START_FILE_UPLOAD = "elemental-activations:StartFileUpload";
+	static readonly StartFileUpload = "elemental-activations:StartFileUpload";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElementalActivationsActions.DOWNLOAD_KICKSTART,
-		ElementalActivationsActions.DOWNLOAD_SOFTWARE,
-		ElementalActivationsActions.GET_ARTIFACT_GROUP_SOFTWARE_VERSIONS,
-		ElementalActivationsActions.GET_ASSET,
-		ElementalActivationsActions.GET_ASSETS,
-		ElementalActivationsActions.GET_PRODUCT_ADVISORIES,
-		ElementalActivationsActions.GET_SOFTWARE_VERSIONS,
+	static readonly AllReadActions: string[] = [
+		ElementalActivationsActions.DownloadKickstart,
+		ElementalActivationsActions.DownloadSoftware,
+		ElementalActivationsActions.actionGetArtifactGroupSoftwareVersions,
+		ElementalActivationsActions.actionGetAsset,
+		ElementalActivationsActions.actionGetAssets,
+		ElementalActivationsActions.actionGetProductAdvisories,
+		ElementalActivationsActions.actionGetSoftwareVersions,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElementalActivationsActions.COMPLETE_ACCOUNT_REGISTRATION,
-		ElementalActivationsActions.COMPLETE_FILE_UPLOAD,
-		ElementalActivationsActions.CONFIRM_ACCOUNT,
-		ElementalActivationsActions.GENERATE_LICENSE,
-		ElementalActivationsActions.GENERATE_LICENSES,
-		ElementalActivationsActions.START_FILE_UPLOAD,
+	static readonly AllWriteActions: string[] = [
+		ElementalActivationsActions.CompleteAccountRegistration,
+		ElementalActivationsActions.CompleteFileUpload,
+		ElementalActivationsActions.ConfirmAccount,
+		ElementalActivationsActions.GenerateLicense,
+		ElementalActivationsActions.GenerateLicenses,
+		ElementalActivationsActions.StartFileUpload,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

@@ -13,42 +13,42 @@ export class TagActions {
 	static readonly SERVICE_PREFIX = "tag";
 
 	/** [Read] tag:DescribeReportCreation */
-	static readonly DESCRIBE_REPORT_CREATION = "tag:DescribeReportCreation";
+	static readonly DescribeReportCreation = "tag:DescribeReportCreation";
 	/** [Read] tag:GetComplianceSummary */
-	static readonly GET_COMPLIANCE_SUMMARY = "tag:GetComplianceSummary";
+	static readonly actionGetComplianceSummary = "tag:GetComplianceSummary";
 	/** [Read] tag:GetResources */
-	static readonly GET_RESOURCES = "tag:GetResources";
+	static readonly actionGetResources = "tag:GetResources";
 	/** [Read] tag:GetTagKeys */
-	static readonly GET_TAG_KEYS = "tag:GetTagKeys";
+	static readonly actionGetTagKeys = "tag:GetTagKeys";
 	/** [Read] tag:GetTagValues */
-	static readonly GET_TAG_VALUES = "tag:GetTagValues";
+	static readonly actionGetTagValues = "tag:GetTagValues";
 	/** [List] tag:ListRequiredTags */
-	static readonly LIST_REQUIRED_TAGS = "tag:ListRequiredTags";
+	static readonly ListRequiredTags = "tag:ListRequiredTags";
 	/** [Write] tag:StartReportCreation */
-	static readonly START_REPORT_CREATION = "tag:StartReportCreation";
+	static readonly StartReportCreation = "tag:StartReportCreation";
 	/** [Tagging] tag:TagResources */
-	static readonly TAG_RESOURCES = "tag:TagResources";
+	static readonly TagResources = "tag:TagResources";
 	/** [Tagging] tag:UntagResources */
-	static readonly UNTAG_RESOURCES = "tag:UntagResources";
+	static readonly UntagResources = "tag:UntagResources";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TagActions.DESCRIBE_REPORT_CREATION,
-		TagActions.GET_COMPLIANCE_SUMMARY,
-		TagActions.GET_RESOURCES,
-		TagActions.GET_TAG_KEYS,
-		TagActions.GET_TAG_VALUES,
+	static readonly AllReadActions: string[] = [
+		TagActions.DescribeReportCreation,
+		TagActions.actionGetComplianceSummary,
+		TagActions.actionGetResources,
+		TagActions.actionGetTagKeys,
+		TagActions.actionGetTagValues,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [TagActions.START_REPORT_CREATION];
+	static readonly AllWriteActions: string[] = [TagActions.StartReportCreation];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [TagActions.LIST_REQUIRED_TAGS];
+	static readonly AllListActions: string[] = [TagActions.ListRequiredTags];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		TagActions.TAG_RESOURCES,
-		TagActions.UNTAG_RESOURCES,
+	static readonly AllTaggingActions: string[] = [
+		TagActions.TagResources,
+		TagActions.UntagResources,
 	];
 }
 
@@ -57,25 +57,25 @@ export class TagActions {
  */
 export class TagOperations {
 	/** IAM actions required for the DescribeReportCreation API call. */
-	static readonly DESCRIBE_REPORT_CREATION: string[] = [
+	static readonly DescribeReportCreation: string[] = [
 		"tag:DescribeReportCreation",
 	];
 	/** IAM actions required for the GetComplianceSummary API call. */
-	static readonly GET_COMPLIANCE_SUMMARY: string[] = [
+	static readonly opGetComplianceSummary: string[] = [
 		"tag:GetComplianceSummary",
 	];
 	/** IAM actions required for the GetResources API call. */
-	static readonly GET_RESOURCES: string[] = ["tag:GetResources"];
+	static readonly opGetResources: string[] = ["tag:GetResources"];
 	/** IAM actions required for the GetTagKeys API call. */
-	static readonly GET_TAG_KEYS: string[] = ["tag:GetTagKeys"];
+	static readonly opGetTagKeys: string[] = ["tag:GetTagKeys"];
 	/** IAM actions required for the GetTagValues API call. */
-	static readonly GET_TAG_VALUES: string[] = ["tag:GetTagValues"];
+	static readonly opGetTagValues: string[] = ["tag:GetTagValues"];
 	/** IAM actions required for the ListRequiredTags API call. */
-	static readonly LIST_REQUIRED_TAGS: string[] = ["tag:ListRequiredTags"];
+	static readonly ListRequiredTags: string[] = ["tag:ListRequiredTags"];
 	/** IAM actions required for the StartReportCreation API call. */
-	static readonly START_REPORT_CREATION: string[] = ["tag:StartReportCreation"];
+	static readonly StartReportCreation: string[] = ["tag:StartReportCreation"];
 	/** IAM actions required for the TagResources API call. */
-	static readonly TAG_RESOURCES: string[] = ["tag:TagResources"];
+	static readonly TagResources: string[] = ["tag:TagResources"];
 	/** IAM actions required for the UntagResources API call. */
-	static readonly UNTAG_RESOURCES: string[] = ["tag:UntagResources"];
+	static readonly UntagResources: string[] = ["tag:UntagResources"];
 }

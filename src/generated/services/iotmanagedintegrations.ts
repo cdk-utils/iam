@@ -13,359 +13,496 @@ export class IotmanagedintegrationsActions {
 	static readonly SERVICE_PREFIX = "iotmanagedintegrations";
 
 	/** [Write] iotmanagedintegrations:CreateAccountAssociation */
-	static readonly CREATE_ACCOUNT_ASSOCIATION =
+	static readonly CreateAccountAssociation =
 		"iotmanagedintegrations:CreateAccountAssociation";
 	/** [Write] iotmanagedintegrations:CreateCloudConnector */
-	static readonly CREATE_CLOUD_CONNECTOR =
+	static readonly CreateCloudConnector =
 		"iotmanagedintegrations:CreateCloudConnector";
 	/** [Write] iotmanagedintegrations:CreateConnectorDestination */
-	static readonly CREATE_CONNECTOR_DESTINATION =
+	static readonly CreateConnectorDestination =
 		"iotmanagedintegrations:CreateConnectorDestination";
 	/** [Write] iotmanagedintegrations:CreateCredentialLocker */
-	static readonly CREATE_CREDENTIAL_LOCKER =
+	static readonly CreateCredentialLocker =
 		"iotmanagedintegrations:CreateCredentialLocker";
 	/** [Write] iotmanagedintegrations:CreateDestination */
-	static readonly CREATE_DESTINATION =
+	static readonly CreateDestination =
 		"iotmanagedintegrations:CreateDestination";
 	/** [Write] iotmanagedintegrations:CreateEventLogConfiguration */
-	static readonly CREATE_EVENT_LOG_CONFIGURATION =
+	static readonly CreateEventLogConfiguration =
 		"iotmanagedintegrations:CreateEventLogConfiguration";
 	/** [Write] iotmanagedintegrations:CreateManagedThing */
-	static readonly CREATE_MANAGED_THING =
+	static readonly CreateManagedThing =
 		"iotmanagedintegrations:CreateManagedThing";
 	/** [Write] iotmanagedintegrations:CreateNotificationConfiguration */
-	static readonly CREATE_NOTIFICATION_CONFIGURATION =
+	static readonly CreateNotificationConfiguration =
 		"iotmanagedintegrations:CreateNotificationConfiguration";
 	/** [Write] iotmanagedintegrations:CreateOtaTask */
-	static readonly CREATE_OTA_TASK = "iotmanagedintegrations:CreateOtaTask";
+	static readonly CreateOtaTask = "iotmanagedintegrations:CreateOtaTask";
 	/** [Write] iotmanagedintegrations:CreateOtaTaskConfiguration */
-	static readonly CREATE_OTA_TASK_CONFIGURATION =
+	static readonly CreateOtaTaskConfiguration =
 		"iotmanagedintegrations:CreateOtaTaskConfiguration";
 	/** [Write] iotmanagedintegrations:CreateProvisioningProfile */
-	static readonly CREATE_PROVISIONING_PROFILE =
+	static readonly CreateProvisioningProfile =
 		"iotmanagedintegrations:CreateProvisioningProfile";
 	/** [Write] iotmanagedintegrations:DeleteAccountAssociation */
-	static readonly DELETE_ACCOUNT_ASSOCIATION =
+	static readonly DeleteAccountAssociation =
 		"iotmanagedintegrations:DeleteAccountAssociation";
 	/** [Write] iotmanagedintegrations:DeleteCloudConnector */
-	static readonly DELETE_CLOUD_CONNECTOR =
+	static readonly DeleteCloudConnector =
 		"iotmanagedintegrations:DeleteCloudConnector";
 	/** [Write] iotmanagedintegrations:DeleteConnectorDestination */
-	static readonly DELETE_CONNECTOR_DESTINATION =
+	static readonly DeleteConnectorDestination =
 		"iotmanagedintegrations:DeleteConnectorDestination";
 	/** [Write] iotmanagedintegrations:DeleteCredentialLocker */
-	static readonly DELETE_CREDENTIAL_LOCKER =
+	static readonly DeleteCredentialLocker =
 		"iotmanagedintegrations:DeleteCredentialLocker";
 	/** [Write] iotmanagedintegrations:DeleteDestination */
-	static readonly DELETE_DESTINATION =
+	static readonly DeleteDestination =
 		"iotmanagedintegrations:DeleteDestination";
 	/** [Write] iotmanagedintegrations:DeleteEventLogConfiguration */
-	static readonly DELETE_EVENT_LOG_CONFIGURATION =
+	static readonly DeleteEventLogConfiguration =
 		"iotmanagedintegrations:DeleteEventLogConfiguration";
 	/** [Write] iotmanagedintegrations:DeleteManagedThing */
-	static readonly DELETE_MANAGED_THING =
+	static readonly DeleteManagedThing =
 		"iotmanagedintegrations:DeleteManagedThing";
 	/** [Write] iotmanagedintegrations:DeleteNotificationConfiguration */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION =
+	static readonly DeleteNotificationConfiguration =
 		"iotmanagedintegrations:DeleteNotificationConfiguration";
 	/** [Write] iotmanagedintegrations:DeleteOtaTask */
-	static readonly DELETE_OTA_TASK = "iotmanagedintegrations:DeleteOtaTask";
+	static readonly DeleteOtaTask = "iotmanagedintegrations:DeleteOtaTask";
 	/** [Write] iotmanagedintegrations:DeleteOtaTaskConfiguration */
-	static readonly DELETE_OTA_TASK_CONFIGURATION =
+	static readonly DeleteOtaTaskConfiguration =
 		"iotmanagedintegrations:DeleteOtaTaskConfiguration";
 	/** [Write] iotmanagedintegrations:DeleteProvisioningProfile */
-	static readonly DELETE_PROVISIONING_PROFILE =
+	static readonly DeleteProvisioningProfile =
 		"iotmanagedintegrations:DeleteProvisioningProfile";
 	/** [Write] iotmanagedintegrations:DeregisterAccountAssociation */
-	static readonly DEREGISTER_ACCOUNT_ASSOCIATION =
+	static readonly DeregisterAccountAssociation =
 		"iotmanagedintegrations:DeregisterAccountAssociation";
 	/** [Read] iotmanagedintegrations:GetAccountAssociation */
-	static readonly GET_ACCOUNT_ASSOCIATION =
+	static readonly actionGetAccountAssociation =
 		"iotmanagedintegrations:GetAccountAssociation";
 	/** [Read] iotmanagedintegrations:GetCloudConnector */
-	static readonly GET_CLOUD_CONNECTOR =
+	static readonly actionGetCloudConnector =
 		"iotmanagedintegrations:GetCloudConnector";
 	/** [Read] iotmanagedintegrations:GetConnectorDestination */
-	static readonly GET_CONNECTOR_DESTINATION =
+	static readonly actionGetConnectorDestination =
 		"iotmanagedintegrations:GetConnectorDestination";
 	/** [Read] iotmanagedintegrations:GetCredentialLocker */
-	static readonly GET_CREDENTIAL_LOCKER =
+	static readonly actionGetCredentialLocker =
 		"iotmanagedintegrations:GetCredentialLocker";
 	/** [Read] iotmanagedintegrations:GetCustomEndpoint */
-	static readonly GET_CUSTOM_ENDPOINT =
+	static readonly actionGetCustomEndpoint =
 		"iotmanagedintegrations:GetCustomEndpoint";
 	/** [Read] iotmanagedintegrations:GetDefaultEncryptionConfiguration */
-	static readonly GET_DEFAULT_ENCRYPTION_CONFIGURATION =
+	static readonly actionGetDefaultEncryptionConfiguration =
 		"iotmanagedintegrations:GetDefaultEncryptionConfiguration";
 	/** [Read] iotmanagedintegrations:GetDestination */
-	static readonly GET_DESTINATION = "iotmanagedintegrations:GetDestination";
+	static readonly actionGetDestination =
+		"iotmanagedintegrations:GetDestination";
 	/** [Read] iotmanagedintegrations:GetDeviceDiscovery */
-	static readonly GET_DEVICE_DISCOVERY =
+	static readonly actionGetDeviceDiscovery =
 		"iotmanagedintegrations:GetDeviceDiscovery";
 	/** [Read] iotmanagedintegrations:GetEventLogConfiguration */
-	static readonly GET_EVENT_LOG_CONFIGURATION =
+	static readonly actionGetEventLogConfiguration =
 		"iotmanagedintegrations:GetEventLogConfiguration";
 	/** [Read] iotmanagedintegrations:GetHubConfiguration */
-	static readonly GET_HUB_CONFIGURATION =
+	static readonly actionGetHubConfiguration =
 		"iotmanagedintegrations:GetHubConfiguration";
 	/** [Read] iotmanagedintegrations:GetManagedThing */
-	static readonly GET_MANAGED_THING = "iotmanagedintegrations:GetManagedThing";
+	static readonly actionGetManagedThing =
+		"iotmanagedintegrations:GetManagedThing";
 	/** [Read] iotmanagedintegrations:GetManagedThingCapabilities */
-	static readonly GET_MANAGED_THING_CAPABILITIES =
+	static readonly actionGetManagedThingCapabilities =
 		"iotmanagedintegrations:GetManagedThingCapabilities";
 	/** [Read] iotmanagedintegrations:GetManagedThingCertificate */
-	static readonly GET_MANAGED_THING_CERTIFICATE =
+	static readonly actionGetManagedThingCertificate =
 		"iotmanagedintegrations:GetManagedThingCertificate";
 	/** [Read] iotmanagedintegrations:GetManagedThingConnectivityData */
-	static readonly GET_MANAGED_THING_CONNECTIVITY_DATA =
+	static readonly actionGetManagedThingConnectivityData =
 		"iotmanagedintegrations:GetManagedThingConnectivityData";
 	/** [Read] iotmanagedintegrations:GetManagedThingMetaData */
-	static readonly GET_MANAGED_THING_META_DATA =
+	static readonly actionGetManagedThingMetaData =
 		"iotmanagedintegrations:GetManagedThingMetaData";
 	/** [Read] iotmanagedintegrations:GetManagedThingState */
-	static readonly GET_MANAGED_THING_STATE =
+	static readonly actionGetManagedThingState =
 		"iotmanagedintegrations:GetManagedThingState";
 	/** [Read] iotmanagedintegrations:GetNotificationConfiguration */
-	static readonly GET_NOTIFICATION_CONFIGURATION =
+	static readonly actionGetNotificationConfiguration =
 		"iotmanagedintegrations:GetNotificationConfiguration";
 	/** [Read] iotmanagedintegrations:GetOtaTask */
-	static readonly GET_OTA_TASK = "iotmanagedintegrations:GetOtaTask";
+	static readonly actionGetOtaTask = "iotmanagedintegrations:GetOtaTask";
 	/** [Read] iotmanagedintegrations:GetOtaTaskConfiguration */
-	static readonly GET_OTA_TASK_CONFIGURATION =
+	static readonly actionGetOtaTaskConfiguration =
 		"iotmanagedintegrations:GetOtaTaskConfiguration";
 	/** [Read] iotmanagedintegrations:GetProvisioningProfile */
-	static readonly GET_PROVISIONING_PROFILE =
+	static readonly actionGetProvisioningProfile =
 		"iotmanagedintegrations:GetProvisioningProfile";
 	/** [Read] iotmanagedintegrations:GetRuntimeLogConfiguration */
-	static readonly GET_RUNTIME_LOG_CONFIGURATION =
+	static readonly actionGetRuntimeLogConfiguration =
 		"iotmanagedintegrations:GetRuntimeLogConfiguration";
 	/** [Read] iotmanagedintegrations:GetSchemaVersion */
-	static readonly GET_SCHEMA_VERSION =
+	static readonly actionGetSchemaVersion =
 		"iotmanagedintegrations:GetSchemaVersion";
 	/** [List] iotmanagedintegrations:ListAccountAssociations */
-	static readonly LIST_ACCOUNT_ASSOCIATIONS =
+	static readonly ListAccountAssociations =
 		"iotmanagedintegrations:ListAccountAssociations";
 	/** [List] iotmanagedintegrations:ListCloudConnectors */
-	static readonly LIST_CLOUD_CONNECTORS =
+	static readonly ListCloudConnectors =
 		"iotmanagedintegrations:ListCloudConnectors";
 	/** [List] iotmanagedintegrations:ListConnectorDestinations */
-	static readonly LIST_CONNECTOR_DESTINATIONS =
+	static readonly ListConnectorDestinations =
 		"iotmanagedintegrations:ListConnectorDestinations";
 	/** [List] iotmanagedintegrations:ListCredentialLockers */
-	static readonly LIST_CREDENTIAL_LOCKERS =
+	static readonly ListCredentialLockers =
 		"iotmanagedintegrations:ListCredentialLockers";
 	/** [List] iotmanagedintegrations:ListDestinations */
-	static readonly LIST_DESTINATIONS = "iotmanagedintegrations:ListDestinations";
+	static readonly ListDestinations = "iotmanagedintegrations:ListDestinations";
 	/** [List] iotmanagedintegrations:ListDeviceDiscoveries */
-	static readonly LIST_DEVICE_DISCOVERIES =
+	static readonly ListDeviceDiscoveries =
 		"iotmanagedintegrations:ListDeviceDiscoveries";
 	/** [Read] iotmanagedintegrations:ListDiscoveredDevices */
-	static readonly LIST_DISCOVERED_DEVICES =
+	static readonly ListDiscoveredDevices =
 		"iotmanagedintegrations:ListDiscoveredDevices";
 	/** [Read] iotmanagedintegrations:ListEventLogConfigurations */
-	static readonly LIST_EVENT_LOG_CONFIGURATIONS =
+	static readonly ListEventLogConfigurations =
 		"iotmanagedintegrations:ListEventLogConfigurations";
 	/** [List] iotmanagedintegrations:ListManagedThingAccountAssociations */
-	static readonly LIST_MANAGED_THING_ACCOUNT_ASSOCIATIONS =
+	static readonly ListManagedThingAccountAssociations =
 		"iotmanagedintegrations:ListManagedThingAccountAssociations";
 	/** [Read] iotmanagedintegrations:ListManagedThingSchemas */
-	static readonly LIST_MANAGED_THING_SCHEMAS =
+	static readonly ListManagedThingSchemas =
 		"iotmanagedintegrations:ListManagedThingSchemas";
 	/** [List] iotmanagedintegrations:ListManagedThings */
-	static readonly LIST_MANAGED_THINGS =
+	static readonly ListManagedThings =
 		"iotmanagedintegrations:ListManagedThings";
 	/** [Read] iotmanagedintegrations:ListNotificationConfigurations */
-	static readonly LIST_NOTIFICATION_CONFIGURATIONS =
+	static readonly ListNotificationConfigurations =
 		"iotmanagedintegrations:ListNotificationConfigurations";
 	/** [Read] iotmanagedintegrations:ListOtaTaskConfigurations */
-	static readonly LIST_OTA_TASK_CONFIGURATIONS =
+	static readonly ListOtaTaskConfigurations =
 		"iotmanagedintegrations:ListOtaTaskConfigurations";
 	/** [Read] iotmanagedintegrations:ListOtaTaskExecutions */
-	static readonly LIST_OTA_TASK_EXECUTIONS =
+	static readonly ListOtaTaskExecutions =
 		"iotmanagedintegrations:ListOtaTaskExecutions";
 	/** [List] iotmanagedintegrations:ListOtaTasks */
-	static readonly LIST_OTA_TASKS = "iotmanagedintegrations:ListOtaTasks";
+	static readonly ListOtaTasks = "iotmanagedintegrations:ListOtaTasks";
 	/** [List] iotmanagedintegrations:ListProvisioningProfiles */
-	static readonly LIST_PROVISIONING_PROFILES =
+	static readonly ListProvisioningProfiles =
 		"iotmanagedintegrations:ListProvisioningProfiles";
 	/** [List] iotmanagedintegrations:ListSchemaVersions */
-	static readonly LIST_SCHEMA_VERSIONS =
+	static readonly ListSchemaVersions =
 		"iotmanagedintegrations:ListSchemaVersions";
 	/** [Read] iotmanagedintegrations:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"iotmanagedintegrations:ListTagsForResource";
 	/** [Write] iotmanagedintegrations:PutDefaultEncryptionConfiguration */
-	static readonly PUT_DEFAULT_ENCRYPTION_CONFIGURATION =
+	static readonly PutDefaultEncryptionConfiguration =
 		"iotmanagedintegrations:PutDefaultEncryptionConfiguration";
 	/** [Write] iotmanagedintegrations:PutHubConfiguration */
-	static readonly PUT_HUB_CONFIGURATION =
+	static readonly PutHubConfiguration =
 		"iotmanagedintegrations:PutHubConfiguration";
 	/** [Write] iotmanagedintegrations:PutRuntimeLogConfiguration */
-	static readonly PUT_RUNTIME_LOG_CONFIGURATION =
+	static readonly PutRuntimeLogConfiguration =
 		"iotmanagedintegrations:PutRuntimeLogConfiguration";
 	/** [Write] iotmanagedintegrations:RegisterAccountAssociation */
-	static readonly REGISTER_ACCOUNT_ASSOCIATION =
+	static readonly RegisterAccountAssociation =
 		"iotmanagedintegrations:RegisterAccountAssociation";
 	/** [Write] iotmanagedintegrations:RegisterCustomEndpoint */
-	static readonly REGISTER_CUSTOM_ENDPOINT =
+	static readonly RegisterCustomEndpoint =
 		"iotmanagedintegrations:RegisterCustomEndpoint";
 	/** [Write] iotmanagedintegrations:ResetRuntimeLogConfiguration */
-	static readonly RESET_RUNTIME_LOG_CONFIGURATION =
+	static readonly ResetRuntimeLogConfiguration =
 		"iotmanagedintegrations:ResetRuntimeLogConfiguration";
 	/** [Write] iotmanagedintegrations:SendConnectorEvent */
-	static readonly SEND_CONNECTOR_EVENT =
+	static readonly SendConnectorEvent =
 		"iotmanagedintegrations:SendConnectorEvent";
 	/** [Write] iotmanagedintegrations:SendManagedThingCommand */
-	static readonly SEND_MANAGED_THING_COMMAND =
+	static readonly SendManagedThingCommand =
 		"iotmanagedintegrations:SendManagedThingCommand";
 	/** [Write] iotmanagedintegrations:StartAccountAssociationRefresh */
-	static readonly START_ACCOUNT_ASSOCIATION_REFRESH =
+	static readonly StartAccountAssociationRefresh =
 		"iotmanagedintegrations:StartAccountAssociationRefresh";
 	/** [Write] iotmanagedintegrations:StartDeviceDiscovery */
-	static readonly START_DEVICE_DISCOVERY =
+	static readonly StartDeviceDiscovery =
 		"iotmanagedintegrations:StartDeviceDiscovery";
 	/** [Tagging] iotmanagedintegrations:TagResource */
-	static readonly TAG_RESOURCE = "iotmanagedintegrations:TagResource";
+	static readonly TagResource = "iotmanagedintegrations:TagResource";
 	/** [Tagging] iotmanagedintegrations:UntagResource */
-	static readonly UNTAG_RESOURCE = "iotmanagedintegrations:UntagResource";
+	static readonly UntagResource = "iotmanagedintegrations:UntagResource";
 	/** [Write] iotmanagedintegrations:UpdateAccountAssociation */
-	static readonly UPDATE_ACCOUNT_ASSOCIATION =
+	static readonly UpdateAccountAssociation =
 		"iotmanagedintegrations:UpdateAccountAssociation";
 	/** [Write] iotmanagedintegrations:UpdateCloudConnector */
-	static readonly UPDATE_CLOUD_CONNECTOR =
+	static readonly UpdateCloudConnector =
 		"iotmanagedintegrations:UpdateCloudConnector";
 	/** [Write] iotmanagedintegrations:UpdateConnectorDestination */
-	static readonly UPDATE_CONNECTOR_DESTINATION =
+	static readonly UpdateConnectorDestination =
 		"iotmanagedintegrations:UpdateConnectorDestination";
 	/** [Write] iotmanagedintegrations:UpdateDestination */
-	static readonly UPDATE_DESTINATION =
+	static readonly UpdateDestination =
 		"iotmanagedintegrations:UpdateDestination";
 	/** [Write] iotmanagedintegrations:UpdateEventLogConfiguration */
-	static readonly UPDATE_EVENT_LOG_CONFIGURATION =
+	static readonly UpdateEventLogConfiguration =
 		"iotmanagedintegrations:UpdateEventLogConfiguration";
 	/** [Write] iotmanagedintegrations:UpdateManagedThing */
-	static readonly UPDATE_MANAGED_THING =
+	static readonly UpdateManagedThing =
 		"iotmanagedintegrations:UpdateManagedThing";
 	/** [Write] iotmanagedintegrations:UpdateNotificationConfiguration */
-	static readonly UPDATE_NOTIFICATION_CONFIGURATION =
+	static readonly UpdateNotificationConfiguration =
 		"iotmanagedintegrations:UpdateNotificationConfiguration";
 	/** [Write] iotmanagedintegrations:UpdateOtaTask */
-	static readonly UPDATE_OTA_TASK = "iotmanagedintegrations:UpdateOtaTask";
+	static readonly UpdateOtaTask = "iotmanagedintegrations:UpdateOtaTask";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotmanagedintegrationsActions.GET_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.GET_CLOUD_CONNECTOR,
-		IotmanagedintegrationsActions.GET_CONNECTOR_DESTINATION,
-		IotmanagedintegrationsActions.GET_CREDENTIAL_LOCKER,
-		IotmanagedintegrationsActions.GET_CUSTOM_ENDPOINT,
-		IotmanagedintegrationsActions.GET_DEFAULT_ENCRYPTION_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_DESTINATION,
-		IotmanagedintegrationsActions.GET_DEVICE_DISCOVERY,
-		IotmanagedintegrationsActions.GET_EVENT_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_HUB_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_MANAGED_THING,
-		IotmanagedintegrationsActions.GET_MANAGED_THING_CAPABILITIES,
-		IotmanagedintegrationsActions.GET_MANAGED_THING_CERTIFICATE,
-		IotmanagedintegrationsActions.GET_MANAGED_THING_CONNECTIVITY_DATA,
-		IotmanagedintegrationsActions.GET_MANAGED_THING_META_DATA,
-		IotmanagedintegrationsActions.GET_MANAGED_THING_STATE,
-		IotmanagedintegrationsActions.GET_NOTIFICATION_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_OTA_TASK,
-		IotmanagedintegrationsActions.GET_OTA_TASK_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_PROVISIONING_PROFILE,
-		IotmanagedintegrationsActions.GET_RUNTIME_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.GET_SCHEMA_VERSION,
-		IotmanagedintegrationsActions.LIST_DISCOVERED_DEVICES,
-		IotmanagedintegrationsActions.LIST_EVENT_LOG_CONFIGURATIONS,
-		IotmanagedintegrationsActions.LIST_MANAGED_THING_SCHEMAS,
-		IotmanagedintegrationsActions.LIST_NOTIFICATION_CONFIGURATIONS,
-		IotmanagedintegrationsActions.LIST_OTA_TASK_CONFIGURATIONS,
-		IotmanagedintegrationsActions.LIST_OTA_TASK_EXECUTIONS,
-		IotmanagedintegrationsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		IotmanagedintegrationsActions.actionGetAccountAssociation,
+		IotmanagedintegrationsActions.actionGetCloudConnector,
+		IotmanagedintegrationsActions.actionGetConnectorDestination,
+		IotmanagedintegrationsActions.actionGetCredentialLocker,
+		IotmanagedintegrationsActions.actionGetCustomEndpoint,
+		IotmanagedintegrationsActions.actionGetDefaultEncryptionConfiguration,
+		IotmanagedintegrationsActions.actionGetDestination,
+		IotmanagedintegrationsActions.actionGetDeviceDiscovery,
+		IotmanagedintegrationsActions.actionGetEventLogConfiguration,
+		IotmanagedintegrationsActions.actionGetHubConfiguration,
+		IotmanagedintegrationsActions.actionGetManagedThing,
+		IotmanagedintegrationsActions.actionGetManagedThingCapabilities,
+		IotmanagedintegrationsActions.actionGetManagedThingCertificate,
+		IotmanagedintegrationsActions.actionGetManagedThingConnectivityData,
+		IotmanagedintegrationsActions.actionGetManagedThingMetaData,
+		IotmanagedintegrationsActions.actionGetManagedThingState,
+		IotmanagedintegrationsActions.actionGetNotificationConfiguration,
+		IotmanagedintegrationsActions.actionGetOtaTask,
+		IotmanagedintegrationsActions.actionGetOtaTaskConfiguration,
+		IotmanagedintegrationsActions.actionGetProvisioningProfile,
+		IotmanagedintegrationsActions.actionGetRuntimeLogConfiguration,
+		IotmanagedintegrationsActions.actionGetSchemaVersion,
+		IotmanagedintegrationsActions.ListDiscoveredDevices,
+		IotmanagedintegrationsActions.ListEventLogConfigurations,
+		IotmanagedintegrationsActions.ListManagedThingSchemas,
+		IotmanagedintegrationsActions.ListNotificationConfigurations,
+		IotmanagedintegrationsActions.ListOtaTaskConfigurations,
+		IotmanagedintegrationsActions.ListOtaTaskExecutions,
+		IotmanagedintegrationsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotmanagedintegrationsActions.CREATE_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.CREATE_CLOUD_CONNECTOR,
-		IotmanagedintegrationsActions.CREATE_CONNECTOR_DESTINATION,
-		IotmanagedintegrationsActions.CREATE_CREDENTIAL_LOCKER,
-		IotmanagedintegrationsActions.CREATE_DESTINATION,
-		IotmanagedintegrationsActions.CREATE_EVENT_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.CREATE_MANAGED_THING,
-		IotmanagedintegrationsActions.CREATE_NOTIFICATION_CONFIGURATION,
-		IotmanagedintegrationsActions.CREATE_OTA_TASK,
-		IotmanagedintegrationsActions.CREATE_OTA_TASK_CONFIGURATION,
-		IotmanagedintegrationsActions.CREATE_PROVISIONING_PROFILE,
-		IotmanagedintegrationsActions.DELETE_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.DELETE_CLOUD_CONNECTOR,
-		IotmanagedintegrationsActions.DELETE_CONNECTOR_DESTINATION,
-		IotmanagedintegrationsActions.DELETE_CREDENTIAL_LOCKER,
-		IotmanagedintegrationsActions.DELETE_DESTINATION,
-		IotmanagedintegrationsActions.DELETE_EVENT_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.DELETE_MANAGED_THING,
-		IotmanagedintegrationsActions.DELETE_NOTIFICATION_CONFIGURATION,
-		IotmanagedintegrationsActions.DELETE_OTA_TASK,
-		IotmanagedintegrationsActions.DELETE_OTA_TASK_CONFIGURATION,
-		IotmanagedintegrationsActions.DELETE_PROVISIONING_PROFILE,
-		IotmanagedintegrationsActions.DEREGISTER_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.PUT_DEFAULT_ENCRYPTION_CONFIGURATION,
-		IotmanagedintegrationsActions.PUT_HUB_CONFIGURATION,
-		IotmanagedintegrationsActions.PUT_RUNTIME_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.REGISTER_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.REGISTER_CUSTOM_ENDPOINT,
-		IotmanagedintegrationsActions.RESET_RUNTIME_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.SEND_CONNECTOR_EVENT,
-		IotmanagedintegrationsActions.SEND_MANAGED_THING_COMMAND,
-		IotmanagedintegrationsActions.START_ACCOUNT_ASSOCIATION_REFRESH,
-		IotmanagedintegrationsActions.START_DEVICE_DISCOVERY,
-		IotmanagedintegrationsActions.UPDATE_ACCOUNT_ASSOCIATION,
-		IotmanagedintegrationsActions.UPDATE_CLOUD_CONNECTOR,
-		IotmanagedintegrationsActions.UPDATE_CONNECTOR_DESTINATION,
-		IotmanagedintegrationsActions.UPDATE_DESTINATION,
-		IotmanagedintegrationsActions.UPDATE_EVENT_LOG_CONFIGURATION,
-		IotmanagedintegrationsActions.UPDATE_MANAGED_THING,
-		IotmanagedintegrationsActions.UPDATE_NOTIFICATION_CONFIGURATION,
-		IotmanagedintegrationsActions.UPDATE_OTA_TASK,
+	static readonly AllWriteActions: string[] = [
+		IotmanagedintegrationsActions.CreateAccountAssociation,
+		IotmanagedintegrationsActions.CreateCloudConnector,
+		IotmanagedintegrationsActions.CreateConnectorDestination,
+		IotmanagedintegrationsActions.CreateCredentialLocker,
+		IotmanagedintegrationsActions.CreateDestination,
+		IotmanagedintegrationsActions.CreateEventLogConfiguration,
+		IotmanagedintegrationsActions.CreateManagedThing,
+		IotmanagedintegrationsActions.CreateNotificationConfiguration,
+		IotmanagedintegrationsActions.CreateOtaTask,
+		IotmanagedintegrationsActions.CreateOtaTaskConfiguration,
+		IotmanagedintegrationsActions.CreateProvisioningProfile,
+		IotmanagedintegrationsActions.DeleteAccountAssociation,
+		IotmanagedintegrationsActions.DeleteCloudConnector,
+		IotmanagedintegrationsActions.DeleteConnectorDestination,
+		IotmanagedintegrationsActions.DeleteCredentialLocker,
+		IotmanagedintegrationsActions.DeleteDestination,
+		IotmanagedintegrationsActions.DeleteEventLogConfiguration,
+		IotmanagedintegrationsActions.DeleteManagedThing,
+		IotmanagedintegrationsActions.DeleteNotificationConfiguration,
+		IotmanagedintegrationsActions.DeleteOtaTask,
+		IotmanagedintegrationsActions.DeleteOtaTaskConfiguration,
+		IotmanagedintegrationsActions.DeleteProvisioningProfile,
+		IotmanagedintegrationsActions.DeregisterAccountAssociation,
+		IotmanagedintegrationsActions.PutDefaultEncryptionConfiguration,
+		IotmanagedintegrationsActions.PutHubConfiguration,
+		IotmanagedintegrationsActions.PutRuntimeLogConfiguration,
+		IotmanagedintegrationsActions.RegisterAccountAssociation,
+		IotmanagedintegrationsActions.RegisterCustomEndpoint,
+		IotmanagedintegrationsActions.ResetRuntimeLogConfiguration,
+		IotmanagedintegrationsActions.SendConnectorEvent,
+		IotmanagedintegrationsActions.SendManagedThingCommand,
+		IotmanagedintegrationsActions.StartAccountAssociationRefresh,
+		IotmanagedintegrationsActions.StartDeviceDiscovery,
+		IotmanagedintegrationsActions.UpdateAccountAssociation,
+		IotmanagedintegrationsActions.UpdateCloudConnector,
+		IotmanagedintegrationsActions.UpdateConnectorDestination,
+		IotmanagedintegrationsActions.UpdateDestination,
+		IotmanagedintegrationsActions.UpdateEventLogConfiguration,
+		IotmanagedintegrationsActions.UpdateManagedThing,
+		IotmanagedintegrationsActions.UpdateNotificationConfiguration,
+		IotmanagedintegrationsActions.UpdateOtaTask,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IotmanagedintegrationsActions.LIST_ACCOUNT_ASSOCIATIONS,
-		IotmanagedintegrationsActions.LIST_CLOUD_CONNECTORS,
-		IotmanagedintegrationsActions.LIST_CONNECTOR_DESTINATIONS,
-		IotmanagedintegrationsActions.LIST_CREDENTIAL_LOCKERS,
-		IotmanagedintegrationsActions.LIST_DESTINATIONS,
-		IotmanagedintegrationsActions.LIST_DEVICE_DISCOVERIES,
-		IotmanagedintegrationsActions.LIST_MANAGED_THING_ACCOUNT_ASSOCIATIONS,
-		IotmanagedintegrationsActions.LIST_MANAGED_THINGS,
-		IotmanagedintegrationsActions.LIST_OTA_TASKS,
-		IotmanagedintegrationsActions.LIST_PROVISIONING_PROFILES,
-		IotmanagedintegrationsActions.LIST_SCHEMA_VERSIONS,
+	static readonly AllListActions: string[] = [
+		IotmanagedintegrationsActions.ListAccountAssociations,
+		IotmanagedintegrationsActions.ListCloudConnectors,
+		IotmanagedintegrationsActions.ListConnectorDestinations,
+		IotmanagedintegrationsActions.ListCredentialLockers,
+		IotmanagedintegrationsActions.ListDestinations,
+		IotmanagedintegrationsActions.ListDeviceDiscoveries,
+		IotmanagedintegrationsActions.ListManagedThingAccountAssociations,
+		IotmanagedintegrationsActions.ListManagedThings,
+		IotmanagedintegrationsActions.ListOtaTasks,
+		IotmanagedintegrationsActions.ListProvisioningProfiles,
+		IotmanagedintegrationsActions.ListSchemaVersions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IotmanagedintegrationsActions.TAG_RESOURCE,
-		IotmanagedintegrationsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IotmanagedintegrationsActions.TagResource,
+		IotmanagedintegrationsActions.UntagResource,
 	];
 }
 
-const AccountAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):account-association/(?<accountAssociationId>[^:/?]+)$",
-);
-const CredentialLockerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):credential-locker/(?<identifier>[^:/?]+)$",
-);
-const ManagedThingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):managed-thing/(?<identifier>[^:/?]+)$",
-);
-const OtaTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):ota-task/(?<identifier>[^:/?]+)$",
-);
-const ProvisioningProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):provisioning-profile/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a account-association ARN.
+ */
+export interface IotmanagedintegrationsAccountAssociationArnProps {
+	/** The AccountAssociationId component of the ARN. */
+	readonly accountAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a account-association ARN.
+ */
+export interface IotmanagedintegrationsAccountAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountAssociationId component. */
+	readonly accountAssociationId: string;
+}
+
+/**
+ * Properties for building a credential-locker ARN.
+ */
+export interface IotmanagedintegrationsCredentialLockerArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a credential-locker ARN.
+ */
+export interface IotmanagedintegrationsCredentialLockerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a managed-thing ARN.
+ */
+export interface IotmanagedintegrationsManagedThingArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a managed-thing ARN.
+ */
+export interface IotmanagedintegrationsManagedThingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a ota-task ARN.
+ */
+export interface IotmanagedintegrationsOtaTaskArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ota-task ARN.
+ */
+export interface IotmanagedintegrationsOtaTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a provisioning-profile ARN.
+ */
+export interface IotmanagedintegrationsProvisioningProfileArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a provisioning-profile ARN.
+ */
+export interface IotmanagedintegrationsProvisioningProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const AccountAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):account-association\/(?<accountAssociationId>[^:/?]+)$/;
+const CredentialLockerArnRegex =
+	/^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):credential-locker\/(?<identifier>[^:/?]+)$/;
+const ManagedThingArnRegex =
+	/^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):managed-thing\/(?<identifier>[^:/?]+)$/;
+const OtaTaskArnRegex =
+	/^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):ota-task\/(?<identifier>[^:/?]+)$/;
+const ProvisioningProfileArnRegex =
+	/^arn:(?<partition>[^:]+):iotmanagedintegrations:(?<region>[^:]*):(?<account>[^:]*):provisioning-profile\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iotmanagedintegrations resources.
@@ -374,16 +511,9 @@ export class IotmanagedintegrationsResources {
 	/**
 	 * Builds an ARN for the account-association resource.
 	 */
-	static accountAssociation(props: {
-		/** The AccountAssociationId component of the ARN. */
-		readonly accountAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accountAssociation(
+		props: IotmanagedintegrationsAccountAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iotmanagedintegrations:${props.region ?? "*"}:${props.account ?? "*"}:account-association/${props.accountAssociationId}`;
 	}
 
@@ -398,12 +528,9 @@ export class IotmanagedintegrationsResources {
 	 * Parses a account-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountAssociationId: string;
-	} {
+	static parseAccountAssociationArn(
+		arn: string,
+	): IotmanagedintegrationsAccountAssociationArnComponents {
 		const match = AccountAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid account-association ARN: ${arn}`);
@@ -419,16 +546,9 @@ export class IotmanagedintegrationsResources {
 	/**
 	 * Builds an ARN for the credential-locker resource.
 	 */
-	static credentialLocker(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static credentialLocker(
+		props: IotmanagedintegrationsCredentialLockerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iotmanagedintegrations:${props.region ?? "*"}:${props.account ?? "*"}:credential-locker/${props.identifier}`;
 	}
 
@@ -443,12 +563,9 @@ export class IotmanagedintegrationsResources {
 	 * Parses a credential-locker ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCredentialLockerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseCredentialLockerArn(
+		arn: string,
+	): IotmanagedintegrationsCredentialLockerArnComponents {
 		const match = CredentialLockerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid credential-locker ARN: ${arn}`);
@@ -464,16 +581,9 @@ export class IotmanagedintegrationsResources {
 	/**
 	 * Builds an ARN for the managed-thing resource.
 	 */
-	static managedThing(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedThing(
+		props: IotmanagedintegrationsManagedThingArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iotmanagedintegrations:${props.region ?? "*"}:${props.account ?? "*"}:managed-thing/${props.identifier}`;
 	}
 
@@ -488,12 +598,9 @@ export class IotmanagedintegrationsResources {
 	 * Parses a managed-thing ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedThingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseManagedThingArn(
+		arn: string,
+	): IotmanagedintegrationsManagedThingArnComponents {
 		const match = ManagedThingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid managed-thing ARN: ${arn}`);
@@ -509,16 +616,7 @@ export class IotmanagedintegrationsResources {
 	/**
 	 * Builds an ARN for the ota-task resource.
 	 */
-	static otaTask(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static otaTask(props: IotmanagedintegrationsOtaTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotmanagedintegrations:${props.region ?? "*"}:${props.account ?? "*"}:ota-task/${props.identifier}`;
 	}
 
@@ -533,12 +631,9 @@ export class IotmanagedintegrationsResources {
 	 * Parses a ota-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOtaTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseOtaTaskArn(
+		arn: string,
+	): IotmanagedintegrationsOtaTaskArnComponents {
 		const match = OtaTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ota-task ARN: ${arn}`);
@@ -554,16 +649,9 @@ export class IotmanagedintegrationsResources {
 	/**
 	 * Builds an ARN for the provisioning-profile resource.
 	 */
-	static provisioningProfile(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static provisioningProfile(
+		props: IotmanagedintegrationsProvisioningProfileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iotmanagedintegrations:${props.region ?? "*"}:${props.account ?? "*"}:provisioning-profile/${props.identifier}`;
 	}
 
@@ -578,12 +666,9 @@ export class IotmanagedintegrationsResources {
 	 * Parses a provisioning-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProvisioningProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseProvisioningProfileArn(
+		arn: string,
+	): IotmanagedintegrationsProvisioningProfileArnComponents {
 		const match = ProvisioningProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid provisioning-profile ARN: ${arn}`);
@@ -602,339 +687,339 @@ export class IotmanagedintegrationsResources {
  */
 export class IotmanagedintegrationsOperations {
 	/** IAM actions required for the CreateAccountAssociation API call. */
-	static readonly CREATE_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly CreateAccountAssociation: string[] = [
 		"iotmanagedintegrations:CreateAccountAssociation",
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the CreateCloudConnector API call. */
-	static readonly CREATE_CLOUD_CONNECTOR: string[] = [
+	static readonly CreateCloudConnector: string[] = [
 		"iotmanagedintegrations:CreateCloudConnector",
 	];
 	/** IAM actions required for the CreateConnectorDestination API call. */
-	static readonly CREATE_CONNECTOR_DESTINATION: string[] = [
+	static readonly CreateConnectorDestination: string[] = [
 		"iotmanagedintegrations:CreateConnectorDestination",
 	];
 	/** IAM actions required for the CreateCredentialLocker API call. */
-	static readonly CREATE_CREDENTIAL_LOCKER: string[] = [
+	static readonly CreateCredentialLocker: string[] = [
 		"iotmanagedintegrations:CreateCredentialLocker",
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the CreateDestination API call. */
-	static readonly CREATE_DESTINATION: string[] = [
+	static readonly CreateDestination: string[] = [
 		"iotmanagedintegrations:CreateDestination",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateEventLogConfiguration API call. */
-	static readonly CREATE_EVENT_LOG_CONFIGURATION: string[] = [
+	static readonly CreateEventLogConfiguration: string[] = [
 		"iotmanagedintegrations:CreateEventLogConfiguration",
 	];
 	/** IAM actions required for the CreateManagedThing API call. */
-	static readonly CREATE_MANAGED_THING: string[] = [
+	static readonly CreateManagedThing: string[] = [
 		"iotmanagedintegrations:CreateManagedThing",
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the CreateNotificationConfiguration API call. */
-	static readonly CREATE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly CreateNotificationConfiguration: string[] = [
 		"iotmanagedintegrations:CreateNotificationConfiguration",
 	];
 	/** IAM actions required for the CreateOtaTask API call. */
-	static readonly CREATE_OTA_TASK: string[] = [
+	static readonly CreateOtaTask: string[] = [
 		"iotmanagedintegrations:CreateOtaTask",
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the CreateOtaTaskConfiguration API call. */
-	static readonly CREATE_OTA_TASK_CONFIGURATION: string[] = [
+	static readonly CreateOtaTaskConfiguration: string[] = [
 		"iotmanagedintegrations:CreateOtaTaskConfiguration",
 	];
 	/** IAM actions required for the CreateProvisioningProfile API call. */
-	static readonly CREATE_PROVISIONING_PROFILE: string[] = [
+	static readonly CreateProvisioningProfile: string[] = [
 		"iotmanagedintegrations:CreateProvisioningProfile",
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the DeleteAccountAssociation API call. */
-	static readonly DELETE_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly DeleteAccountAssociation: string[] = [
 		"iotmanagedintegrations:DeleteAccountAssociation",
 	];
 	/** IAM actions required for the DeleteCloudConnector API call. */
-	static readonly DELETE_CLOUD_CONNECTOR: string[] = [
+	static readonly DeleteCloudConnector: string[] = [
 		"iotmanagedintegrations:DeleteCloudConnector",
 	];
 	/** IAM actions required for the DeleteConnectorDestination API call. */
-	static readonly DELETE_CONNECTOR_DESTINATION: string[] = [
+	static readonly DeleteConnectorDestination: string[] = [
 		"iotmanagedintegrations:DeleteConnectorDestination",
 	];
 	/** IAM actions required for the DeleteCredentialLocker API call. */
-	static readonly DELETE_CREDENTIAL_LOCKER: string[] = [
+	static readonly DeleteCredentialLocker: string[] = [
 		"iotmanagedintegrations:DeleteCredentialLocker",
 	];
 	/** IAM actions required for the DeleteDestination API call. */
-	static readonly DELETE_DESTINATION: string[] = [
+	static readonly DeleteDestination: string[] = [
 		"iotmanagedintegrations:DeleteDestination",
 	];
 	/** IAM actions required for the DeleteEventLogConfiguration API call. */
-	static readonly DELETE_EVENT_LOG_CONFIGURATION: string[] = [
+	static readonly DeleteEventLogConfiguration: string[] = [
 		"iotmanagedintegrations:DeleteEventLogConfiguration",
 	];
 	/** IAM actions required for the DeleteManagedThing API call. */
-	static readonly DELETE_MANAGED_THING: string[] = [
+	static readonly DeleteManagedThing: string[] = [
 		"iotmanagedintegrations:DeleteManagedThing",
 	];
 	/** IAM actions required for the DeleteNotificationConfiguration API call. */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly DeleteNotificationConfiguration: string[] = [
 		"iotmanagedintegrations:DeleteNotificationConfiguration",
 	];
 	/** IAM actions required for the DeleteOtaTask API call. */
-	static readonly DELETE_OTA_TASK: string[] = [
+	static readonly DeleteOtaTask: string[] = [
 		"iotmanagedintegrations:DeleteOtaTask",
 	];
 	/** IAM actions required for the DeleteOtaTaskConfiguration API call. */
-	static readonly DELETE_OTA_TASK_CONFIGURATION: string[] = [
+	static readonly DeleteOtaTaskConfiguration: string[] = [
 		"iotmanagedintegrations:DeleteOtaTaskConfiguration",
 	];
 	/** IAM actions required for the DeleteProvisioningProfile API call. */
-	static readonly DELETE_PROVISIONING_PROFILE: string[] = [
+	static readonly DeleteProvisioningProfile: string[] = [
 		"iotmanagedintegrations:DeleteProvisioningProfile",
 	];
 	/** IAM actions required for the DeregisterAccountAssociation API call. */
-	static readonly DEREGISTER_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly DeregisterAccountAssociation: string[] = [
 		"iotmanagedintegrations:DeregisterAccountAssociation",
 	];
 	/** IAM actions required for the GetAccountAssociation API call. */
-	static readonly GET_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly opGetAccountAssociation: string[] = [
 		"iotmanagedintegrations:GetAccountAssociation",
 	];
 	/** IAM actions required for the GetCloudConnector API call. */
-	static readonly GET_CLOUD_CONNECTOR: string[] = [
+	static readonly opGetCloudConnector: string[] = [
 		"iotmanagedintegrations:GetCloudConnector",
 	];
 	/** IAM actions required for the GetConnectorDestination API call. */
-	static readonly GET_CONNECTOR_DESTINATION: string[] = [
+	static readonly opGetConnectorDestination: string[] = [
 		"iotmanagedintegrations:GetConnectorDestination",
 	];
 	/** IAM actions required for the GetCredentialLocker API call. */
-	static readonly GET_CREDENTIAL_LOCKER: string[] = [
+	static readonly opGetCredentialLocker: string[] = [
 		"iotmanagedintegrations:GetCredentialLocker",
 	];
 	/** IAM actions required for the GetCustomEndpoint API call. */
-	static readonly GET_CUSTOM_ENDPOINT: string[] = [
+	static readonly opGetCustomEndpoint: string[] = [
 		"iotmanagedintegrations:GetCustomEndpoint",
 	];
 	/** IAM actions required for the GetDefaultEncryptionConfiguration API call. */
-	static readonly GET_DEFAULT_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly opGetDefaultEncryptionConfiguration: string[] = [
 		"iotmanagedintegrations:GetDefaultEncryptionConfiguration",
 	];
 	/** IAM actions required for the GetDestination API call. */
-	static readonly GET_DESTINATION: string[] = [
+	static readonly opGetDestination: string[] = [
 		"iotmanagedintegrations:GetDestination",
 	];
 	/** IAM actions required for the GetDeviceDiscovery API call. */
-	static readonly GET_DEVICE_DISCOVERY: string[] = [
+	static readonly opGetDeviceDiscovery: string[] = [
 		"iotmanagedintegrations:GetDeviceDiscovery",
 	];
 	/** IAM actions required for the GetEventLogConfiguration API call. */
-	static readonly GET_EVENT_LOG_CONFIGURATION: string[] = [
+	static readonly opGetEventLogConfiguration: string[] = [
 		"iotmanagedintegrations:GetEventLogConfiguration",
 	];
 	/** IAM actions required for the GetHubConfiguration API call. */
-	static readonly GET_HUB_CONFIGURATION: string[] = [
+	static readonly opGetHubConfiguration: string[] = [
 		"iotmanagedintegrations:GetHubConfiguration",
 	];
 	/** IAM actions required for the GetManagedThing API call. */
-	static readonly GET_MANAGED_THING: string[] = [
+	static readonly opGetManagedThing: string[] = [
 		"iotmanagedintegrations:GetManagedThing",
 	];
 	/** IAM actions required for the GetManagedThingCapabilities API call. */
-	static readonly GET_MANAGED_THING_CAPABILITIES: string[] = [
+	static readonly opGetManagedThingCapabilities: string[] = [
 		"iotmanagedintegrations:GetManagedThingCapabilities",
 	];
 	/** IAM actions required for the GetManagedThingCertificate API call. */
-	static readonly GET_MANAGED_THING_CERTIFICATE: string[] = [];
+	static readonly opGetManagedThingCertificate: string[] = [];
 	/** IAM actions required for the GetManagedThingConnectivityData API call. */
-	static readonly GET_MANAGED_THING_CONNECTIVITY_DATA: string[] = [
+	static readonly opGetManagedThingConnectivityData: string[] = [
 		"iotmanagedintegrations:GetManagedThingConnectivityData",
 	];
 	/** IAM actions required for the GetManagedThingMetaData API call. */
-	static readonly GET_MANAGED_THING_META_DATA: string[] = [
+	static readonly opGetManagedThingMetaData: string[] = [
 		"iotmanagedintegrations:GetManagedThingMetaData",
 	];
 	/** IAM actions required for the GetManagedThingState API call. */
-	static readonly GET_MANAGED_THING_STATE: string[] = [
+	static readonly opGetManagedThingState: string[] = [
 		"iotmanagedintegrations:GetManagedThingState",
 	];
 	/** IAM actions required for the GetNotificationConfiguration API call. */
-	static readonly GET_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly opGetNotificationConfiguration: string[] = [
 		"iotmanagedintegrations:GetNotificationConfiguration",
 	];
 	/** IAM actions required for the GetOtaTask API call. */
-	static readonly GET_OTA_TASK: string[] = [
+	static readonly opGetOtaTask: string[] = [
 		"iotmanagedintegrations:GetOtaTask",
 	];
 	/** IAM actions required for the GetOtaTaskConfiguration API call. */
-	static readonly GET_OTA_TASK_CONFIGURATION: string[] = [
+	static readonly opGetOtaTaskConfiguration: string[] = [
 		"iotmanagedintegrations:GetOtaTaskConfiguration",
 	];
 	/** IAM actions required for the GetProvisioningProfile API call. */
-	static readonly GET_PROVISIONING_PROFILE: string[] = [
+	static readonly opGetProvisioningProfile: string[] = [
 		"iotmanagedintegrations:GetProvisioningProfile",
 	];
 	/** IAM actions required for the GetRuntimeLogConfiguration API call. */
-	static readonly GET_RUNTIME_LOG_CONFIGURATION: string[] = [
+	static readonly opGetRuntimeLogConfiguration: string[] = [
 		"iotmanagedintegrations:GetRuntimeLogConfiguration",
 	];
 	/** IAM actions required for the GetSchemaVersion API call. */
-	static readonly GET_SCHEMA_VERSION: string[] = [
+	static readonly opGetSchemaVersion: string[] = [
 		"iotmanagedintegrations:GetSchemaVersion",
 	];
 	/** IAM actions required for the ListAccountAssociations API call. */
-	static readonly LIST_ACCOUNT_ASSOCIATIONS: string[] = [
+	static readonly ListAccountAssociations: string[] = [
 		"iotmanagedintegrations:ListAccountAssociations",
 	];
 	/** IAM actions required for the ListCloudConnectors API call. */
-	static readonly LIST_CLOUD_CONNECTORS: string[] = [
+	static readonly ListCloudConnectors: string[] = [
 		"iotmanagedintegrations:ListCloudConnectors",
 	];
 	/** IAM actions required for the ListConnectorDestinations API call. */
-	static readonly LIST_CONNECTOR_DESTINATIONS: string[] = [
+	static readonly ListConnectorDestinations: string[] = [
 		"iotmanagedintegrations:ListConnectorDestinations",
 	];
 	/** IAM actions required for the ListCredentialLockers API call. */
-	static readonly LIST_CREDENTIAL_LOCKERS: string[] = [
+	static readonly ListCredentialLockers: string[] = [
 		"iotmanagedintegrations:ListCredentialLockers",
 	];
 	/** IAM actions required for the ListDestinations API call. */
-	static readonly LIST_DESTINATIONS: string[] = [
+	static readonly ListDestinations: string[] = [
 		"iotmanagedintegrations:ListDestinations",
 	];
 	/** IAM actions required for the ListDeviceDiscoveries API call. */
-	static readonly LIST_DEVICE_DISCOVERIES: string[] = [
+	static readonly ListDeviceDiscoveries: string[] = [
 		"iotmanagedintegrations:ListDeviceDiscoveries",
 	];
 	/** IAM actions required for the ListDiscoveredDevices API call. */
-	static readonly LIST_DISCOVERED_DEVICES: string[] = [
+	static readonly ListDiscoveredDevices: string[] = [
 		"iotmanagedintegrations:ListDiscoveredDevices",
 	];
 	/** IAM actions required for the ListEventLogConfigurations API call. */
-	static readonly LIST_EVENT_LOG_CONFIGURATIONS: string[] = [
+	static readonly ListEventLogConfigurations: string[] = [
 		"iotmanagedintegrations:ListEventLogConfigurations",
 	];
 	/** IAM actions required for the ListManagedThingAccountAssociations API call. */
-	static readonly LIST_MANAGED_THING_ACCOUNT_ASSOCIATIONS: string[] = [
+	static readonly ListManagedThingAccountAssociations: string[] = [
 		"iotmanagedintegrations:ListManagedThingAccountAssociations",
 	];
 	/** IAM actions required for the ListManagedThingSchemas API call. */
-	static readonly LIST_MANAGED_THING_SCHEMAS: string[] = [
+	static readonly ListManagedThingSchemas: string[] = [
 		"iotmanagedintegrations:ListManagedThingSchemas",
 	];
 	/** IAM actions required for the ListManagedThings API call. */
-	static readonly LIST_MANAGED_THINGS: string[] = [
+	static readonly ListManagedThings: string[] = [
 		"iotmanagedintegrations:ListManagedThings",
 	];
 	/** IAM actions required for the ListNotificationConfigurations API call. */
-	static readonly LIST_NOTIFICATION_CONFIGURATIONS: string[] = [
+	static readonly ListNotificationConfigurations: string[] = [
 		"iotmanagedintegrations:ListNotificationConfigurations",
 	];
 	/** IAM actions required for the ListOtaTaskConfigurations API call. */
-	static readonly LIST_OTA_TASK_CONFIGURATIONS: string[] = [
+	static readonly ListOtaTaskConfigurations: string[] = [
 		"iotmanagedintegrations:ListOtaTaskConfigurations",
 	];
 	/** IAM actions required for the ListOtaTaskExecutions API call. */
-	static readonly LIST_OTA_TASK_EXECUTIONS: string[] = [
+	static readonly ListOtaTaskExecutions: string[] = [
 		"iotmanagedintegrations:ListOtaTaskExecutions",
 	];
 	/** IAM actions required for the ListOtaTasks API call. */
-	static readonly LIST_OTA_TASKS: string[] = [
+	static readonly ListOtaTasks: string[] = [
 		"iotmanagedintegrations:ListOtaTasks",
 	];
 	/** IAM actions required for the ListProvisioningProfiles API call. */
-	static readonly LIST_PROVISIONING_PROFILES: string[] = [
+	static readonly ListProvisioningProfiles: string[] = [
 		"iotmanagedintegrations:ListProvisioningProfiles",
 	];
 	/** IAM actions required for the ListSchemaVersions API call. */
-	static readonly LIST_SCHEMA_VERSIONS: string[] = [
+	static readonly ListSchemaVersions: string[] = [
 		"iotmanagedintegrations:ListSchemaVersions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"iotmanagedintegrations:ListTagsForResource",
 	];
 	/** IAM actions required for the PutDefaultEncryptionConfiguration API call. */
-	static readonly PUT_DEFAULT_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly PutDefaultEncryptionConfiguration: string[] = [
 		"iotmanagedintegrations:PutDefaultEncryptionConfiguration",
 	];
 	/** IAM actions required for the PutHubConfiguration API call. */
-	static readonly PUT_HUB_CONFIGURATION: string[] = [
+	static readonly PutHubConfiguration: string[] = [
 		"iotmanagedintegrations:PutHubConfiguration",
 	];
 	/** IAM actions required for the PutRuntimeLogConfiguration API call. */
-	static readonly PUT_RUNTIME_LOG_CONFIGURATION: string[] = [
+	static readonly PutRuntimeLogConfiguration: string[] = [
 		"iotmanagedintegrations:PutRuntimeLogConfiguration",
 	];
 	/** IAM actions required for the RegisterAccountAssociation API call. */
-	static readonly REGISTER_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly RegisterAccountAssociation: string[] = [
 		"iotmanagedintegrations:RegisterAccountAssociation",
 	];
 	/** IAM actions required for the RegisterCustomEndpoint API call. */
-	static readonly REGISTER_CUSTOM_ENDPOINT: string[] = [
+	static readonly RegisterCustomEndpoint: string[] = [
 		"iotmanagedintegrations:RegisterCustomEndpoint",
 	];
 	/** IAM actions required for the ResetRuntimeLogConfiguration API call. */
-	static readonly RESET_RUNTIME_LOG_CONFIGURATION: string[] = [
+	static readonly ResetRuntimeLogConfiguration: string[] = [
 		"iotmanagedintegrations:ResetRuntimeLogConfiguration",
 	];
 	/** IAM actions required for the SendConnectorEvent API call. */
-	static readonly SEND_CONNECTOR_EVENT: string[] = [
+	static readonly SendConnectorEvent: string[] = [
 		"iotmanagedintegrations:SendConnectorEvent",
 	];
 	/** IAM actions required for the SendManagedThingCommand API call. */
-	static readonly SEND_MANAGED_THING_COMMAND: string[] = [
+	static readonly SendManagedThingCommand: string[] = [
 		"iotmanagedintegrations:SendManagedThingCommand",
 	];
 	/** IAM actions required for the StartAccountAssociationRefresh API call. */
-	static readonly START_ACCOUNT_ASSOCIATION_REFRESH: string[] = [
+	static readonly StartAccountAssociationRefresh: string[] = [
 		"iotmanagedintegrations:StartAccountAssociationRefresh",
 	];
 	/** IAM actions required for the StartDeviceDiscovery API call. */
-	static readonly START_DEVICE_DISCOVERY: string[] = [
+	static readonly StartDeviceDiscovery: string[] = [
 		"iotmanagedintegrations:StartDeviceDiscovery",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"iotmanagedintegrations:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"iotmanagedintegrations:UntagResource",
 	];
 	/** IAM actions required for the UpdateAccountAssociation API call. */
-	static readonly UPDATE_ACCOUNT_ASSOCIATION: string[] = [
+	static readonly UpdateAccountAssociation: string[] = [
 		"iotmanagedintegrations:UpdateAccountAssociation",
 	];
 	/** IAM actions required for the UpdateCloudConnector API call. */
-	static readonly UPDATE_CLOUD_CONNECTOR: string[] = [
+	static readonly UpdateCloudConnector: string[] = [
 		"iotmanagedintegrations:UpdateCloudConnector",
 	];
 	/** IAM actions required for the UpdateConnectorDestination API call. */
-	static readonly UPDATE_CONNECTOR_DESTINATION: string[] = [
+	static readonly UpdateConnectorDestination: string[] = [
 		"iotmanagedintegrations:UpdateConnectorDestination",
 	];
 	/** IAM actions required for the UpdateDestination API call. */
-	static readonly UPDATE_DESTINATION: string[] = [
+	static readonly UpdateDestination: string[] = [
 		"iotmanagedintegrations:UpdateDestination",
 	];
 	/** IAM actions required for the UpdateEventLogConfiguration API call. */
-	static readonly UPDATE_EVENT_LOG_CONFIGURATION: string[] = [
+	static readonly UpdateEventLogConfiguration: string[] = [
 		"iotmanagedintegrations:UpdateEventLogConfiguration",
 	];
 	/** IAM actions required for the UpdateManagedThing API call. */
-	static readonly UPDATE_MANAGED_THING: string[] = [
+	static readonly UpdateManagedThing: string[] = [
 		"iotmanagedintegrations:UpdateManagedThing",
 	];
 	/** IAM actions required for the UpdateNotificationConfiguration API call. */
-	static readonly UPDATE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly UpdateNotificationConfiguration: string[] = [
 		"iotmanagedintegrations:UpdateNotificationConfiguration",
 	];
 	/** IAM actions required for the UpdateOtaTask API call. */
-	static readonly UPDATE_OTA_TASK: string[] = [
+	static readonly UpdateOtaTask: string[] = [
 		"iotmanagedintegrations:UpdateOtaTask",
 	];
 }
@@ -944,65 +1029,65 @@ export class IotmanagedintegrationsOperations {
  */
 export class IotmanagedintegrationsConditions {
 	/** Condition keys applicable to the CreateAccountAssociation action. */
-	static readonly CREATE_ACCOUNT_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAccountAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"iotmanagedintegrations:connectorDestinationId",
 	];
 	/** Condition keys applicable to the CreateConnectorDestination action. */
-	static readonly CREATE_CONNECTOR_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectorDestinationConditionKeys: string[] = [
 		"iotmanagedintegrations:cloudConnectorId",
 	];
 	/** Condition keys applicable to the CreateCredentialLocker action. */
-	static readonly CREATE_CREDENTIAL_LOCKER_CONDITION_KEYS: string[] = [
+	static readonly CreateCredentialLockerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateManagedThing action. */
-	static readonly CREATE_MANAGED_THING_CONDITION_KEYS: string[] = [
+	static readonly CreateManagedThingConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateOtaTask action. */
-	static readonly CREATE_OTA_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateOtaTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProvisioningProfile action. */
-	static readonly CREATE_PROVISIONING_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateProvisioningProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteCloudConnector action. */
-	static readonly DELETE_CLOUD_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly DeleteCloudConnectorConditionKeys: string[] = [
 		"iotmanagedintegrations:cloudConnectorId",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateCloudConnector action. */
-	static readonly UPDATE_CLOUD_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly UpdateCloudConnectorConditionKeys: string[] = [
 		"iotmanagedintegrations:cloudConnectorId",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iotmanagedintegrations:cloudConnectorId (String) */
 	static readonly CLOUD_CONNECTOR_ID =
 		"iotmanagedintegrations:cloudConnectorId";

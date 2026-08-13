@@ -13,62 +13,89 @@ export class CurActions {
 	static readonly SERVICE_PREFIX = "cur";
 
 	/** [Write] cur:DeleteReportDefinition */
-	static readonly DELETE_REPORT_DEFINITION = "cur:DeleteReportDefinition";
+	static readonly DeleteReportDefinition = "cur:DeleteReportDefinition";
 	/** [Read] cur:DescribeReportDefinitions */
-	static readonly DESCRIBE_REPORT_DEFINITIONS = "cur:DescribeReportDefinitions";
+	static readonly DescribeReportDefinitions = "cur:DescribeReportDefinitions";
 	/** [Read] cur:GetClassicReport */
-	static readonly GET_CLASSIC_REPORT = "cur:GetClassicReport";
+	static readonly actionGetClassicReport = "cur:GetClassicReport";
 	/** [Read] cur:GetClassicReportPreferences */
-	static readonly GET_CLASSIC_REPORT_PREFERENCES =
+	static readonly actionGetClassicReportPreferences =
 		"cur:GetClassicReportPreferences";
 	/** [Read] cur:GetUsageReport */
-	static readonly GET_USAGE_REPORT = "cur:GetUsageReport";
+	static readonly actionGetUsageReport = "cur:GetUsageReport";
 	/** [Read] cur:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cur:ListTagsForResource";
+	static readonly ListTagsForResource = "cur:ListTagsForResource";
 	/** [Write] cur:ModifyReportDefinition */
-	static readonly MODIFY_REPORT_DEFINITION = "cur:ModifyReportDefinition";
+	static readonly ModifyReportDefinition = "cur:ModifyReportDefinition";
 	/** [Write] cur:PutClassicReportPreferences */
-	static readonly PUT_CLASSIC_REPORT_PREFERENCES =
+	static readonly PutClassicReportPreferences =
 		"cur:PutClassicReportPreferences";
 	/** [Write] cur:PutReportDefinition */
-	static readonly PUT_REPORT_DEFINITION = "cur:PutReportDefinition";
+	static readonly PutReportDefinition = "cur:PutReportDefinition";
 	/** [Tagging] cur:TagResource */
-	static readonly TAG_RESOURCE = "cur:TagResource";
+	static readonly TagResource = "cur:TagResource";
 	/** [Tagging] cur:UntagResource */
-	static readonly UNTAG_RESOURCE = "cur:UntagResource";
+	static readonly UntagResource = "cur:UntagResource";
 	/** [Read] cur:ValidateReportDestination */
-	static readonly VALIDATE_REPORT_DESTINATION = "cur:ValidateReportDestination";
+	static readonly ValidateReportDestination = "cur:ValidateReportDestination";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CurActions.DESCRIBE_REPORT_DEFINITIONS,
-		CurActions.GET_CLASSIC_REPORT,
-		CurActions.GET_CLASSIC_REPORT_PREFERENCES,
-		CurActions.GET_USAGE_REPORT,
-		CurActions.LIST_TAGS_FOR_RESOURCE,
-		CurActions.VALIDATE_REPORT_DESTINATION,
+	static readonly AllReadActions: string[] = [
+		CurActions.DescribeReportDefinitions,
+		CurActions.actionGetClassicReport,
+		CurActions.actionGetClassicReportPreferences,
+		CurActions.actionGetUsageReport,
+		CurActions.ListTagsForResource,
+		CurActions.ValidateReportDestination,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CurActions.DELETE_REPORT_DEFINITION,
-		CurActions.MODIFY_REPORT_DEFINITION,
-		CurActions.PUT_CLASSIC_REPORT_PREFERENCES,
-		CurActions.PUT_REPORT_DEFINITION,
+	static readonly AllWriteActions: string[] = [
+		CurActions.DeleteReportDefinition,
+		CurActions.ModifyReportDefinition,
+		CurActions.PutClassicReportPreferences,
+		CurActions.PutReportDefinition,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CurActions.TAG_RESOURCE,
-		CurActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CurActions.TagResource,
+		CurActions.UntagResource,
 	];
 }
 
-const CurArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cur:(?<region>[^:]*):(?<account>[^:]*):definition/(?<reportName>[^:/?]+)$",
-);
+/**
+ * Properties for building a cur ARN.
+ */
+export interface CurCurArnProps {
+	/** The ReportName component of the ARN. */
+	readonly reportName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cur ARN.
+ */
+export interface CurCurArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportName component. */
+	readonly reportName: string;
+}
+
+const CurArnRegex =
+	/^arn:(?<partition>[^:]+):cur:(?<region>[^:]*):(?<account>[^:]*):definition\/(?<reportName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cur resources.
@@ -77,16 +104,7 @@ export class CurResources {
 	/**
 	 * Builds an ARN for the cur resource.
 	 */
-	static cur(props: {
-		/** The ReportName component of the ARN. */
-		readonly reportName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cur(props: CurCurArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cur:${props.region ?? "*"}:${props.account ?? "*"}:definition/${props.reportName}`;
 	}
 
@@ -101,12 +119,7 @@ export class CurResources {
 	 * Parses a cur ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCurArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportName: string;
-	} {
+	static parseCurArn(arn: string): CurCurArnComponents {
 		const match = CurArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cur ARN: ${arn}`);
@@ -125,30 +138,28 @@ export class CurResources {
  */
 export class CurOperations {
 	/** IAM actions required for the DeleteReportDefinition API call. */
-	static readonly DELETE_REPORT_DEFINITION: string[] = [
+	static readonly DeleteReportDefinition: string[] = [
 		"cur:DeleteReportDefinition",
 	];
 	/** IAM actions required for the DescribeReportDefinitions API call. */
-	static readonly DESCRIBE_REPORT_DEFINITIONS: string[] = [
+	static readonly DescribeReportDefinitions: string[] = [
 		"cur:DescribeReportDefinitions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"cur:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["cur:ListTagsForResource"];
 	/** IAM actions required for the ModifyReportDefinition API call. */
-	static readonly MODIFY_REPORT_DEFINITION: string[] = [
+	static readonly ModifyReportDefinition: string[] = [
 		"cur:ModifyReportDefinition",
 	];
 	/** IAM actions required for the PutReportDefinition API call. */
-	static readonly PUT_REPORT_DEFINITION: string[] = [
+	static readonly PutReportDefinition: string[] = [
 		"cur:PutReportDefinition",
 		"cur:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cur:TagResource"];
+	static readonly TagResource: string[] = ["cur:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cur:UntagResource"];
+	static readonly UntagResource: string[] = ["cur:UntagResource"];
 }
 
 /**
@@ -156,27 +167,27 @@ export class CurOperations {
  */
 export class CurConditions {
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

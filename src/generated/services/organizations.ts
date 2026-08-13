@@ -13,271 +13,526 @@ export class OrganizationsActions {
 	static readonly SERVICE_PREFIX = "organizations";
 
 	/** [Write] organizations:AcceptHandshake */
-	static readonly ACCEPT_HANDSHAKE = "organizations:AcceptHandshake";
+	static readonly AcceptHandshake = "organizations:AcceptHandshake";
 	/** [PermissionManagement] organizations:AttachPolicy */
-	static readonly ATTACH_POLICY = "organizations:AttachPolicy";
+	static readonly AttachPolicy = "organizations:AttachPolicy";
 	/** [Write] organizations:CancelHandshake */
-	static readonly CANCEL_HANDSHAKE = "organizations:CancelHandshake";
+	static readonly CancelHandshake = "organizations:CancelHandshake";
 	/** [Write] organizations:CloseAccount */
-	static readonly CLOSE_ACCOUNT = "organizations:CloseAccount";
+	static readonly CloseAccount = "organizations:CloseAccount";
 	/** [Write] organizations:CreateAccount */
-	static readonly CREATE_ACCOUNT = "organizations:CreateAccount";
+	static readonly CreateAccount = "organizations:CreateAccount";
 	/** [Write] organizations:CreateGovCloudAccount */
-	static readonly CREATE_GOV_CLOUD_ACCOUNT =
-		"organizations:CreateGovCloudAccount";
+	static readonly CreateGovCloudAccount = "organizations:CreateGovCloudAccount";
 	/** [Write] organizations:CreateOrganization */
-	static readonly CREATE_ORGANIZATION = "organizations:CreateOrganization";
+	static readonly CreateOrganization = "organizations:CreateOrganization";
 	/** [Write] organizations:CreateOrganizationalUnit */
-	static readonly CREATE_ORGANIZATIONAL_UNIT =
+	static readonly CreateOrganizationalUnit =
 		"organizations:CreateOrganizationalUnit";
 	/** [Write] organizations:CreatePolicy */
-	static readonly CREATE_POLICY = "organizations:CreatePolicy";
+	static readonly CreatePolicy = "organizations:CreatePolicy";
 	/** [Write] organizations:DeclineHandshake */
-	static readonly DECLINE_HANDSHAKE = "organizations:DeclineHandshake";
+	static readonly DeclineHandshake = "organizations:DeclineHandshake";
 	/** [Write] organizations:DeleteOrganization */
-	static readonly DELETE_ORGANIZATION = "organizations:DeleteOrganization";
+	static readonly DeleteOrganization = "organizations:DeleteOrganization";
 	/** [Write] organizations:DeleteOrganizationalUnit */
-	static readonly DELETE_ORGANIZATIONAL_UNIT =
+	static readonly DeleteOrganizationalUnit =
 		"organizations:DeleteOrganizationalUnit";
 	/** [Write] organizations:DeletePolicy */
-	static readonly DELETE_POLICY = "organizations:DeletePolicy";
+	static readonly DeletePolicy = "organizations:DeletePolicy";
 	/** [PermissionManagement] organizations:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "organizations:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "organizations:DeleteResourcePolicy";
 	/** [Write] organizations:DeregisterDelegatedAdministrator */
-	static readonly DEREGISTER_DELEGATED_ADMINISTRATOR =
+	static readonly DeregisterDelegatedAdministrator =
 		"organizations:DeregisterDelegatedAdministrator";
 	/** [Read] organizations:DescribeAccount */
-	static readonly DESCRIBE_ACCOUNT = "organizations:DescribeAccount";
+	static readonly DescribeAccount = "organizations:DescribeAccount";
 	/** [Read] organizations:DescribeCreateAccountStatus */
-	static readonly DESCRIBE_CREATE_ACCOUNT_STATUS =
+	static readonly DescribeCreateAccountStatus =
 		"organizations:DescribeCreateAccountStatus";
 	/** [Read] organizations:DescribeEffectivePolicy */
-	static readonly DESCRIBE_EFFECTIVE_POLICY =
+	static readonly DescribeEffectivePolicy =
 		"organizations:DescribeEffectivePolicy";
 	/** [Read] organizations:DescribeHandshake */
-	static readonly DESCRIBE_HANDSHAKE = "organizations:DescribeHandshake";
+	static readonly DescribeHandshake = "organizations:DescribeHandshake";
 	/** [Read] organizations:DescribeOrganization */
-	static readonly DESCRIBE_ORGANIZATION = "organizations:DescribeOrganization";
+	static readonly DescribeOrganization = "organizations:DescribeOrganization";
 	/** [Read] organizations:DescribeOrganizationalUnit */
-	static readonly DESCRIBE_ORGANIZATIONAL_UNIT =
+	static readonly DescribeOrganizationalUnit =
 		"organizations:DescribeOrganizationalUnit";
 	/** [Read] organizations:DescribePolicy */
-	static readonly DESCRIBE_POLICY = "organizations:DescribePolicy";
+	static readonly DescribePolicy = "organizations:DescribePolicy";
 	/** [Read] organizations:DescribeResourcePolicy */
-	static readonly DESCRIBE_RESOURCE_POLICY =
+	static readonly DescribeResourcePolicy =
 		"organizations:DescribeResourcePolicy";
 	/** [Read] organizations:DescribeResponsibilityTransfer */
-	static readonly DESCRIBE_RESPONSIBILITY_TRANSFER =
+	static readonly DescribeResponsibilityTransfer =
 		"organizations:DescribeResponsibilityTransfer";
 	/** [PermissionManagement] organizations:DetachPolicy */
-	static readonly DETACH_POLICY = "organizations:DetachPolicy";
+	static readonly DetachPolicy = "organizations:DetachPolicy";
 	/** [Write] organizations:DisableAWSServiceAccess */
-	static readonly DISABLE_AWS_SERVICE_ACCESS =
+	static readonly DisableAWSServiceAccess =
 		"organizations:DisableAWSServiceAccess";
 	/** [Write] organizations:DisablePolicyType */
-	static readonly DISABLE_POLICY_TYPE = "organizations:DisablePolicyType";
+	static readonly DisablePolicyType = "organizations:DisablePolicyType";
 	/** [Write] organizations:EnableAWSServiceAccess */
-	static readonly ENABLE_AWS_SERVICE_ACCESS =
+	static readonly EnableAWSServiceAccess =
 		"organizations:EnableAWSServiceAccess";
 	/** [Write] organizations:EnableAllFeatures */
-	static readonly ENABLE_ALL_FEATURES = "organizations:EnableAllFeatures";
+	static readonly EnableAllFeatures = "organizations:EnableAllFeatures";
 	/** [Write] organizations:EnablePolicyType */
-	static readonly ENABLE_POLICY_TYPE = "organizations:EnablePolicyType";
+	static readonly EnablePolicyType = "organizations:EnablePolicyType";
 	/** [Write] organizations:InviteAccountToOrganization */
-	static readonly INVITE_ACCOUNT_TO_ORGANIZATION =
+	static readonly InviteAccountToOrganization =
 		"organizations:InviteAccountToOrganization";
 	/** [Write] organizations:InviteOrganizationToTransferResponsibility */
-	static readonly INVITE_ORGANIZATION_TO_TRANSFER_RESPONSIBILITY =
+	static readonly InviteOrganizationToTransferResponsibility =
 		"organizations:InviteOrganizationToTransferResponsibility";
 	/** [Write] organizations:LeaveOrganization */
-	static readonly LEAVE_ORGANIZATION = "organizations:LeaveOrganization";
+	static readonly LeaveOrganization = "organizations:LeaveOrganization";
 	/** [List] organizations:ListAWSServiceAccessForOrganization */
-	static readonly LIST_AWS_SERVICE_ACCESS_FOR_ORGANIZATION =
+	static readonly ListAWSServiceAccessForOrganization =
 		"organizations:ListAWSServiceAccessForOrganization";
 	/** [List] organizations:ListAccounts */
-	static readonly LIST_ACCOUNTS = "organizations:ListAccounts";
+	static readonly ListAccounts = "organizations:ListAccounts";
 	/** [List] organizations:ListAccountsForParent */
-	static readonly LIST_ACCOUNTS_FOR_PARENT =
-		"organizations:ListAccountsForParent";
+	static readonly ListAccountsForParent = "organizations:ListAccountsForParent";
 	/** [List] organizations:ListAccountsWithInvalidEffectivePolicy */
-	static readonly LIST_ACCOUNTS_WITH_INVALID_EFFECTIVE_POLICY =
+	static readonly ListAccountsWithInvalidEffectivePolicy =
 		"organizations:ListAccountsWithInvalidEffectivePolicy";
 	/** [List] organizations:ListChildren */
-	static readonly LIST_CHILDREN = "organizations:ListChildren";
+	static readonly ListChildren = "organizations:ListChildren";
 	/** [List] organizations:ListCreateAccountStatus */
-	static readonly LIST_CREATE_ACCOUNT_STATUS =
+	static readonly ListCreateAccountStatus =
 		"organizations:ListCreateAccountStatus";
 	/** [List] organizations:ListDelegatedAdministrators */
-	static readonly LIST_DELEGATED_ADMINISTRATORS =
+	static readonly ListDelegatedAdministrators =
 		"organizations:ListDelegatedAdministrators";
 	/** [List] organizations:ListDelegatedServicesForAccount */
-	static readonly LIST_DELEGATED_SERVICES_FOR_ACCOUNT =
+	static readonly ListDelegatedServicesForAccount =
 		"organizations:ListDelegatedServicesForAccount";
 	/** [List] organizations:ListEffectivePolicyValidationErrors */
-	static readonly LIST_EFFECTIVE_POLICY_VALIDATION_ERRORS =
+	static readonly ListEffectivePolicyValidationErrors =
 		"organizations:ListEffectivePolicyValidationErrors";
 	/** [List] organizations:ListHandshakesForAccount */
-	static readonly LIST_HANDSHAKES_FOR_ACCOUNT =
+	static readonly ListHandshakesForAccount =
 		"organizations:ListHandshakesForAccount";
 	/** [List] organizations:ListHandshakesForOrganization */
-	static readonly LIST_HANDSHAKES_FOR_ORGANIZATION =
+	static readonly ListHandshakesForOrganization =
 		"organizations:ListHandshakesForOrganization";
 	/** [List] organizations:ListInboundResponsibilityTransfers */
-	static readonly LIST_INBOUND_RESPONSIBILITY_TRANSFERS =
+	static readonly ListInboundResponsibilityTransfers =
 		"organizations:ListInboundResponsibilityTransfers";
 	/** [List] organizations:ListOrganizationalUnitsForParent */
-	static readonly LIST_ORGANIZATIONAL_UNITS_FOR_PARENT =
+	static readonly ListOrganizationalUnitsForParent =
 		"organizations:ListOrganizationalUnitsForParent";
 	/** [List] organizations:ListOutboundResponsibilityTransfers */
-	static readonly LIST_OUTBOUND_RESPONSIBILITY_TRANSFERS =
+	static readonly ListOutboundResponsibilityTransfers =
 		"organizations:ListOutboundResponsibilityTransfers";
 	/** [List] organizations:ListParents */
-	static readonly LIST_PARENTS = "organizations:ListParents";
+	static readonly ListParents = "organizations:ListParents";
 	/** [List] organizations:ListPolicies */
-	static readonly LIST_POLICIES = "organizations:ListPolicies";
+	static readonly ListPolicies = "organizations:ListPolicies";
 	/** [List] organizations:ListPoliciesForTarget */
-	static readonly LIST_POLICIES_FOR_TARGET =
-		"organizations:ListPoliciesForTarget";
+	static readonly ListPoliciesForTarget = "organizations:ListPoliciesForTarget";
 	/** [List] organizations:ListRoots */
-	static readonly LIST_ROOTS = "organizations:ListRoots";
+	static readonly ListRoots = "organizations:ListRoots";
 	/** [List] organizations:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "organizations:ListTagsForResource";
+	static readonly ListTagsForResource = "organizations:ListTagsForResource";
 	/** [List] organizations:ListTargetsForPolicy */
-	static readonly LIST_TARGETS_FOR_POLICY =
-		"organizations:ListTargetsForPolicy";
+	static readonly ListTargetsForPolicy = "organizations:ListTargetsForPolicy";
 	/** [Write] organizations:MoveAccount */
-	static readonly MOVE_ACCOUNT = "organizations:MoveAccount";
+	static readonly MoveAccount = "organizations:MoveAccount";
 	/** [PermissionManagement] organizations:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "organizations:PutResourcePolicy";
+	static readonly PutResourcePolicy = "organizations:PutResourcePolicy";
 	/** [Write] organizations:RegisterDelegatedAdministrator */
-	static readonly REGISTER_DELEGATED_ADMINISTRATOR =
+	static readonly RegisterDelegatedAdministrator =
 		"organizations:RegisterDelegatedAdministrator";
 	/** [Write] organizations:RemoveAccountFromOrganization */
-	static readonly REMOVE_ACCOUNT_FROM_ORGANIZATION =
+	static readonly RemoveAccountFromOrganization =
 		"organizations:RemoveAccountFromOrganization";
 	/** [Tagging] organizations:TagResource */
-	static readonly TAG_RESOURCE = "organizations:TagResource";
+	static readonly TagResource = "organizations:TagResource";
 	/** [Write] organizations:TerminateResponsibilityTransfer */
-	static readonly TERMINATE_RESPONSIBILITY_TRANSFER =
+	static readonly TerminateResponsibilityTransfer =
 		"organizations:TerminateResponsibilityTransfer";
 	/** [Tagging] organizations:UntagResource */
-	static readonly UNTAG_RESOURCE = "organizations:UntagResource";
+	static readonly UntagResource = "organizations:UntagResource";
 	/** [Write] organizations:UpdateOrganizationalUnit */
-	static readonly UPDATE_ORGANIZATIONAL_UNIT =
+	static readonly UpdateOrganizationalUnit =
 		"organizations:UpdateOrganizationalUnit";
 	/** [PermissionManagement] organizations:UpdatePolicy */
-	static readonly UPDATE_POLICY = "organizations:UpdatePolicy";
+	static readonly UpdatePolicy = "organizations:UpdatePolicy";
 	/** [Write] organizations:UpdateResponsibilityTransfer */
-	static readonly UPDATE_RESPONSIBILITY_TRANSFER =
+	static readonly UpdateResponsibilityTransfer =
 		"organizations:UpdateResponsibilityTransfer";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OrganizationsActions.DESCRIBE_ACCOUNT,
-		OrganizationsActions.DESCRIBE_CREATE_ACCOUNT_STATUS,
-		OrganizationsActions.DESCRIBE_EFFECTIVE_POLICY,
-		OrganizationsActions.DESCRIBE_HANDSHAKE,
-		OrganizationsActions.DESCRIBE_ORGANIZATION,
-		OrganizationsActions.DESCRIBE_ORGANIZATIONAL_UNIT,
-		OrganizationsActions.DESCRIBE_POLICY,
-		OrganizationsActions.DESCRIBE_RESOURCE_POLICY,
-		OrganizationsActions.DESCRIBE_RESPONSIBILITY_TRANSFER,
+	static readonly AllReadActions: string[] = [
+		OrganizationsActions.DescribeAccount,
+		OrganizationsActions.DescribeCreateAccountStatus,
+		OrganizationsActions.DescribeEffectivePolicy,
+		OrganizationsActions.DescribeHandshake,
+		OrganizationsActions.DescribeOrganization,
+		OrganizationsActions.DescribeOrganizationalUnit,
+		OrganizationsActions.DescribePolicy,
+		OrganizationsActions.DescribeResourcePolicy,
+		OrganizationsActions.DescribeResponsibilityTransfer,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OrganizationsActions.ACCEPT_HANDSHAKE,
-		OrganizationsActions.CANCEL_HANDSHAKE,
-		OrganizationsActions.CLOSE_ACCOUNT,
-		OrganizationsActions.CREATE_ACCOUNT,
-		OrganizationsActions.CREATE_GOV_CLOUD_ACCOUNT,
-		OrganizationsActions.CREATE_ORGANIZATION,
-		OrganizationsActions.CREATE_ORGANIZATIONAL_UNIT,
-		OrganizationsActions.CREATE_POLICY,
-		OrganizationsActions.DECLINE_HANDSHAKE,
-		OrganizationsActions.DELETE_ORGANIZATION,
-		OrganizationsActions.DELETE_ORGANIZATIONAL_UNIT,
-		OrganizationsActions.DELETE_POLICY,
-		OrganizationsActions.DEREGISTER_DELEGATED_ADMINISTRATOR,
-		OrganizationsActions.DISABLE_AWS_SERVICE_ACCESS,
-		OrganizationsActions.DISABLE_POLICY_TYPE,
-		OrganizationsActions.ENABLE_AWS_SERVICE_ACCESS,
-		OrganizationsActions.ENABLE_ALL_FEATURES,
-		OrganizationsActions.ENABLE_POLICY_TYPE,
-		OrganizationsActions.INVITE_ACCOUNT_TO_ORGANIZATION,
-		OrganizationsActions.INVITE_ORGANIZATION_TO_TRANSFER_RESPONSIBILITY,
-		OrganizationsActions.LEAVE_ORGANIZATION,
-		OrganizationsActions.MOVE_ACCOUNT,
-		OrganizationsActions.REGISTER_DELEGATED_ADMINISTRATOR,
-		OrganizationsActions.REMOVE_ACCOUNT_FROM_ORGANIZATION,
-		OrganizationsActions.TERMINATE_RESPONSIBILITY_TRANSFER,
-		OrganizationsActions.UPDATE_ORGANIZATIONAL_UNIT,
-		OrganizationsActions.UPDATE_RESPONSIBILITY_TRANSFER,
+	static readonly AllWriteActions: string[] = [
+		OrganizationsActions.AcceptHandshake,
+		OrganizationsActions.CancelHandshake,
+		OrganizationsActions.CloseAccount,
+		OrganizationsActions.CreateAccount,
+		OrganizationsActions.CreateGovCloudAccount,
+		OrganizationsActions.CreateOrganization,
+		OrganizationsActions.CreateOrganizationalUnit,
+		OrganizationsActions.CreatePolicy,
+		OrganizationsActions.DeclineHandshake,
+		OrganizationsActions.DeleteOrganization,
+		OrganizationsActions.DeleteOrganizationalUnit,
+		OrganizationsActions.DeletePolicy,
+		OrganizationsActions.DeregisterDelegatedAdministrator,
+		OrganizationsActions.DisableAWSServiceAccess,
+		OrganizationsActions.DisablePolicyType,
+		OrganizationsActions.EnableAWSServiceAccess,
+		OrganizationsActions.EnableAllFeatures,
+		OrganizationsActions.EnablePolicyType,
+		OrganizationsActions.InviteAccountToOrganization,
+		OrganizationsActions.InviteOrganizationToTransferResponsibility,
+		OrganizationsActions.LeaveOrganization,
+		OrganizationsActions.MoveAccount,
+		OrganizationsActions.RegisterDelegatedAdministrator,
+		OrganizationsActions.RemoveAccountFromOrganization,
+		OrganizationsActions.TerminateResponsibilityTransfer,
+		OrganizationsActions.UpdateOrganizationalUnit,
+		OrganizationsActions.UpdateResponsibilityTransfer,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OrganizationsActions.LIST_AWS_SERVICE_ACCESS_FOR_ORGANIZATION,
-		OrganizationsActions.LIST_ACCOUNTS,
-		OrganizationsActions.LIST_ACCOUNTS_FOR_PARENT,
-		OrganizationsActions.LIST_ACCOUNTS_WITH_INVALID_EFFECTIVE_POLICY,
-		OrganizationsActions.LIST_CHILDREN,
-		OrganizationsActions.LIST_CREATE_ACCOUNT_STATUS,
-		OrganizationsActions.LIST_DELEGATED_ADMINISTRATORS,
-		OrganizationsActions.LIST_DELEGATED_SERVICES_FOR_ACCOUNT,
-		OrganizationsActions.LIST_EFFECTIVE_POLICY_VALIDATION_ERRORS,
-		OrganizationsActions.LIST_HANDSHAKES_FOR_ACCOUNT,
-		OrganizationsActions.LIST_HANDSHAKES_FOR_ORGANIZATION,
-		OrganizationsActions.LIST_INBOUND_RESPONSIBILITY_TRANSFERS,
-		OrganizationsActions.LIST_ORGANIZATIONAL_UNITS_FOR_PARENT,
-		OrganizationsActions.LIST_OUTBOUND_RESPONSIBILITY_TRANSFERS,
-		OrganizationsActions.LIST_PARENTS,
-		OrganizationsActions.LIST_POLICIES,
-		OrganizationsActions.LIST_POLICIES_FOR_TARGET,
-		OrganizationsActions.LIST_ROOTS,
-		OrganizationsActions.LIST_TAGS_FOR_RESOURCE,
-		OrganizationsActions.LIST_TARGETS_FOR_POLICY,
+	static readonly AllListActions: string[] = [
+		OrganizationsActions.ListAWSServiceAccessForOrganization,
+		OrganizationsActions.ListAccounts,
+		OrganizationsActions.ListAccountsForParent,
+		OrganizationsActions.ListAccountsWithInvalidEffectivePolicy,
+		OrganizationsActions.ListChildren,
+		OrganizationsActions.ListCreateAccountStatus,
+		OrganizationsActions.ListDelegatedAdministrators,
+		OrganizationsActions.ListDelegatedServicesForAccount,
+		OrganizationsActions.ListEffectivePolicyValidationErrors,
+		OrganizationsActions.ListHandshakesForAccount,
+		OrganizationsActions.ListHandshakesForOrganization,
+		OrganizationsActions.ListInboundResponsibilityTransfers,
+		OrganizationsActions.ListOrganizationalUnitsForParent,
+		OrganizationsActions.ListOutboundResponsibilityTransfers,
+		OrganizationsActions.ListParents,
+		OrganizationsActions.ListPolicies,
+		OrganizationsActions.ListPoliciesForTarget,
+		OrganizationsActions.ListRoots,
+		OrganizationsActions.ListTagsForResource,
+		OrganizationsActions.ListTargetsForPolicy,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		OrganizationsActions.ATTACH_POLICY,
-		OrganizationsActions.DELETE_RESOURCE_POLICY,
-		OrganizationsActions.DETACH_POLICY,
-		OrganizationsActions.PUT_RESOURCE_POLICY,
-		OrganizationsActions.UPDATE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		OrganizationsActions.AttachPolicy,
+		OrganizationsActions.DeleteResourcePolicy,
+		OrganizationsActions.DetachPolicy,
+		OrganizationsActions.PutResourcePolicy,
+		OrganizationsActions.UpdatePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OrganizationsActions.TAG_RESOURCE,
-		OrganizationsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OrganizationsActions.TagResource,
+		OrganizationsActions.UntagResource,
 	];
 }
 
-const AccountArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):account/o-(?<organizationId>[^:/?]+)/(?<accountId>[^:/?]+)$",
-);
-const AwspolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::aws:policy/(?<policyType>[^:/?]+)/p-(?<policyId>[^:/?]+)$",
-);
-const HandshakeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):handshake/o-(?<organizationId>[^:/?]+)/(?<handshakeType>[^:/?]+)/h-(?<handshakeId>[^:/?]+)$",
-);
-const OrganizationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):organization/o-(?<organizationId>[^:/?]+)$",
-);
-const OrganizationalunitArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):ou/o-(?<organizationId>[^:/?]+)/ou-(?<organizationalUnitId>[^:/?]+)$",
-);
-const PolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):policy/o-(?<organizationId>[^:/?]+)/(?<policyType>[^:/?]+)/p-(?<policyId>[^:/?]+)$",
-);
-const ResourcepolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):resourcepolicy/o-(?<organizationId>[^:/?]+)/rp-(?<resourcePolicyId>[^:/?]+)$",
-);
-const ResponsibilitytransferArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):transfer/o-(?<organizationId>[^:/?]+)/(?<transferType>[^:/?]+)/(?<transferDirection>[^:/?]+)/rt-(?<responsibilityTransferId>[^:/?]+)$",
-);
-const RootArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):root/o-(?<organizationId>[^:/?]+)/r-(?<rootId>[^:/?]+)$",
-);
+/**
+ * Properties for building a account ARN.
+ */
+export interface OrganizationsAccountArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a account ARN.
+ */
+export interface OrganizationsAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+}
+
+/**
+ * Properties for building a awspolicy ARN.
+ */
+export interface OrganizationsAwspolicyArnProps {
+	/** The PolicyType component of the ARN. */
+	readonly policyType: string;
+	/** The PolicyId component of the ARN. */
+	readonly policyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a awspolicy ARN.
+ */
+export interface OrganizationsAwspolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PolicyType component. */
+	readonly policyType: string;
+	/** The PolicyId component. */
+	readonly policyId: string;
+}
+
+/**
+ * Properties for building a handshake ARN.
+ */
+export interface OrganizationsHandshakeArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The HandshakeType component of the ARN. */
+	readonly handshakeType: string;
+	/** The HandshakeId component of the ARN. */
+	readonly handshakeId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a handshake ARN.
+ */
+export interface OrganizationsHandshakeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The HandshakeType component. */
+	readonly handshakeType: string;
+	/** The HandshakeId component. */
+	readonly handshakeId: string;
+}
+
+/**
+ * Properties for building a organization ARN.
+ */
+export interface OrganizationsOrganizationArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a organization ARN.
+ */
+export interface OrganizationsOrganizationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+}
+
+/**
+ * Properties for building a organizationalunit ARN.
+ */
+export interface OrganizationsOrganizationalunitArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The OrganizationalUnitId component of the ARN. */
+	readonly organizationalUnitId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a organizationalunit ARN.
+ */
+export interface OrganizationsOrganizationalunitArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The OrganizationalUnitId component. */
+	readonly organizationalUnitId: string;
+}
+
+/**
+ * Properties for building a policy ARN.
+ */
+export interface OrganizationsPolicyArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The PolicyType component of the ARN. */
+	readonly policyType: string;
+	/** The PolicyId component of the ARN. */
+	readonly policyId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a policy ARN.
+ */
+export interface OrganizationsPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The PolicyType component. */
+	readonly policyType: string;
+	/** The PolicyId component. */
+	readonly policyId: string;
+}
+
+/**
+ * Properties for building a resourcepolicy ARN.
+ */
+export interface OrganizationsResourcepolicyArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The ResourcePolicyId component of the ARN. */
+	readonly resourcePolicyId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a resourcepolicy ARN.
+ */
+export interface OrganizationsResourcepolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The ResourcePolicyId component. */
+	readonly resourcePolicyId: string;
+}
+
+/**
+ * Properties for building a responsibilitytransfer ARN.
+ */
+export interface OrganizationsResponsibilitytransferArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The TransferType component of the ARN. */
+	readonly transferType: string;
+	/** The TransferDirection component of the ARN. */
+	readonly transferDirection: string;
+	/** The ResponsibilityTransferId component of the ARN. */
+	readonly responsibilityTransferId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a responsibilitytransfer ARN.
+ */
+export interface OrganizationsResponsibilitytransferArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The TransferType component. */
+	readonly transferType: string;
+	/** The TransferDirection component. */
+	readonly transferDirection: string;
+	/** The ResponsibilityTransferId component. */
+	readonly responsibilityTransferId: string;
+}
+
+/**
+ * Properties for building a root ARN.
+ */
+export interface OrganizationsRootArnProps {
+	/** The OrganizationId component of the ARN. */
+	readonly organizationId: string;
+	/** The RootId component of the ARN. */
+	readonly rootId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a root ARN.
+ */
+export interface OrganizationsRootArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OrganizationId component. */
+	readonly organizationId: string;
+	/** The RootId component. */
+	readonly rootId: string;
+}
+
+const AccountArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):account\/o-(?<organizationId>[^:/?]+)\/(?<accountId>[^:/?]+)$/;
+const AwspolicyArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::aws:policy\/(?<policyType>[^:/?]+)\/p-(?<policyId>[^:/?]+)$/;
+const HandshakeArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):handshake\/o-(?<organizationId>[^:/?]+)\/(?<handshakeType>[^:/?]+)\/h-(?<handshakeId>[^:/?]+)$/;
+const OrganizationArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):organization\/o-(?<organizationId>[^:/?]+)$/;
+const OrganizationalunitArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):ou\/o-(?<organizationId>[^:/?]+)\/ou-(?<organizationalUnitId>[^:/?]+)$/;
+const PolicyArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):policy\/o-(?<organizationId>[^:/?]+)\/(?<policyType>[^:/?]+)\/p-(?<policyId>[^:/?]+)$/;
+const ResourcepolicyArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):resourcepolicy\/o-(?<organizationId>[^:/?]+)\/rp-(?<resourcePolicyId>[^:/?]+)$/;
+const ResponsibilitytransferArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):transfer\/o-(?<organizationId>[^:/?]+)\/(?<transferType>[^:/?]+)\/(?<transferDirection>[^:/?]+)\/rt-(?<responsibilityTransferId>[^:/?]+)$/;
+const RootArnRegex =
+	/^arn:(?<partition>[^:]+):organizations::(?<account>[^:]*):root\/o-(?<organizationId>[^:/?]+)\/r-(?<rootId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for organizations resources.
@@ -286,16 +541,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the account resource.
 	 */
-	static account(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static account(props: OrganizationsAccountArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:account/o-${props.organizationId}/${props.accountId}`;
 	}
 
@@ -310,12 +556,7 @@ export class OrganizationsResources {
 	 * Parses a account ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		accountId: string;
-	} {
+	static parseAccountArn(arn: string): OrganizationsAccountArnComponents {
 		const match = AccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid account ARN: ${arn}`);
@@ -331,18 +572,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the awspolicy resource.
 	 */
-	static awspolicy(props: {
-		/** The PolicyType component of the ARN. */
-		readonly policyType: string;
-		/** The PolicyId component of the ARN. */
-		readonly policyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static awspolicy(props: OrganizationsAwspolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::aws:policy/${props.policyType}/p-${props.policyId}`;
 	}
 
@@ -357,13 +587,7 @@ export class OrganizationsResources {
 	 * Parses a awspolicy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAwspolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		policyType: string;
-		policyId: string;
-	} {
+	static parseAwspolicyArn(arn: string): OrganizationsAwspolicyArnComponents {
 		const match = AwspolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid awspolicy ARN: ${arn}`);
@@ -380,18 +604,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the handshake resource.
 	 */
-	static handshake(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The HandshakeType component of the ARN. */
-		readonly handshakeType: string;
-		/** The HandshakeId component of the ARN. */
-		readonly handshakeId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static handshake(props: OrganizationsHandshakeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:handshake/o-${props.organizationId}/${props.handshakeType}/h-${props.handshakeId}`;
 	}
 
@@ -406,13 +619,7 @@ export class OrganizationsResources {
 	 * Parses a handshake ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHandshakeArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		handshakeType: string;
-		handshakeId: string;
-	} {
+	static parseHandshakeArn(arn: string): OrganizationsHandshakeArnComponents {
 		const match = HandshakeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid handshake ARN: ${arn}`);
@@ -429,14 +636,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the organization resource.
 	 */
-	static organization(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static organization(props: OrganizationsOrganizationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:organization/o-${props.organizationId}`;
 	}
 
@@ -451,11 +651,9 @@ export class OrganizationsResources {
 	 * Parses a organization ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOrganizationArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-	} {
+	static parseOrganizationArn(
+		arn: string,
+	): OrganizationsOrganizationArnComponents {
 		const match = OrganizationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid organization ARN: ${arn}`);
@@ -470,16 +668,9 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the organizationalunit resource.
 	 */
-	static organizationalunit(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The OrganizationalUnitId component of the ARN. */
-		readonly organizationalUnitId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static organizationalunit(
+		props: OrganizationsOrganizationalunitArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:ou/o-${props.organizationId}/ou-${props.organizationalUnitId}`;
 	}
 
@@ -494,12 +685,9 @@ export class OrganizationsResources {
 	 * Parses a organizationalunit ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOrganizationalunitArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		organizationalUnitId: string;
-	} {
+	static parseOrganizationalunitArn(
+		arn: string,
+	): OrganizationsOrganizationalunitArnComponents {
 		const match = OrganizationalunitArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid organizationalunit ARN: ${arn}`);
@@ -515,18 +703,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the policy resource.
 	 */
-	static policy(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The PolicyType component of the ARN. */
-		readonly policyType: string;
-		/** The PolicyId component of the ARN. */
-		readonly policyId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static policy(props: OrganizationsPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:policy/o-${props.organizationId}/${props.policyType}/p-${props.policyId}`;
 	}
 
@@ -541,13 +718,7 @@ export class OrganizationsResources {
 	 * Parses a policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		policyType: string;
-		policyId: string;
-	} {
+	static parsePolicyArn(arn: string): OrganizationsPolicyArnComponents {
 		const match = PolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid policy ARN: ${arn}`);
@@ -564,16 +735,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the resourcepolicy resource.
 	 */
-	static resourcepolicy(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The ResourcePolicyId component of the ARN. */
-		readonly resourcePolicyId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resourcepolicy(props: OrganizationsResourcepolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:resourcepolicy/o-${props.organizationId}/rp-${props.resourcePolicyId}`;
 	}
 
@@ -588,12 +750,9 @@ export class OrganizationsResources {
 	 * Parses a resourcepolicy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResourcepolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		resourcePolicyId: string;
-	} {
+	static parseResourcepolicyArn(
+		arn: string,
+	): OrganizationsResourcepolicyArnComponents {
 		const match = ResourcepolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid resourcepolicy ARN: ${arn}`);
@@ -609,20 +768,9 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the responsibilitytransfer resource.
 	 */
-	static responsibilitytransfer(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The TransferType component of the ARN. */
-		readonly transferType: string;
-		/** The TransferDirection component of the ARN. */
-		readonly transferDirection: string;
-		/** The ResponsibilityTransferId component of the ARN. */
-		readonly responsibilityTransferId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static responsibilitytransfer(
+		props: OrganizationsResponsibilitytransferArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:transfer/o-${props.organizationId}/${props.transferType}/${props.transferDirection}/rt-${props.responsibilityTransferId}`;
 	}
 
@@ -637,14 +785,9 @@ export class OrganizationsResources {
 	 * Parses a responsibilitytransfer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResponsibilitytransferArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		transferType: string;
-		transferDirection: string;
-		responsibilityTransferId: string;
-	} {
+	static parseResponsibilitytransferArn(
+		arn: string,
+	): OrganizationsResponsibilitytransferArnComponents {
 		const match = ResponsibilitytransferArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid responsibilitytransfer ARN: ${arn}`);
@@ -662,16 +805,7 @@ export class OrganizationsResources {
 	/**
 	 * Builds an ARN for the root resource.
 	 */
-	static root(props: {
-		/** The OrganizationId component of the ARN. */
-		readonly organizationId: string;
-		/** The RootId component of the ARN. */
-		readonly rootId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static root(props: OrganizationsRootArnProps): string {
 		return `arn:${props.partition ?? "aws"}:organizations::${props.account ?? "*"}:root/o-${props.organizationId}/r-${props.rootId}`;
 	}
 
@@ -686,12 +820,7 @@ export class OrganizationsResources {
 	 * Parses a root ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRootArn(arn: string): {
-		partition: string;
-		account: string;
-		organizationId: string;
-		rootId: string;
-	} {
+	static parseRootArn(arn: string): OrganizationsRootArnComponents {
 		const match = RootArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid root ARN: ${arn}`);
@@ -710,235 +839,231 @@ export class OrganizationsResources {
  */
 export class OrganizationsOperations {
 	/** IAM actions required for the AcceptHandshake API call. */
-	static readonly ACCEPT_HANDSHAKE: string[] = [
+	static readonly AcceptHandshake: string[] = [
 		"organizations:AcceptHandshake",
 		"organizations:LeaveOrganization",
 	];
 	/** IAM actions required for the AttachPolicy API call. */
-	static readonly ATTACH_POLICY: string[] = ["organizations:AttachPolicy"];
+	static readonly AttachPolicy: string[] = ["organizations:AttachPolicy"];
 	/** IAM actions required for the CancelHandshake API call. */
-	static readonly CANCEL_HANDSHAKE: string[] = [
-		"organizations:CancelHandshake",
-	];
+	static readonly CancelHandshake: string[] = ["organizations:CancelHandshake"];
 	/** IAM actions required for the CloseAccount API call. */
-	static readonly CLOSE_ACCOUNT: string[] = ["organizations:CloseAccount"];
+	static readonly CloseAccount: string[] = ["organizations:CloseAccount"];
 	/** IAM actions required for the CreateAccount API call. */
-	static readonly CREATE_ACCOUNT: string[] = [
+	static readonly CreateAccount: string[] = [
 		"organizations:CreateAccount",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the CreateGovCloudAccount API call. */
-	static readonly CREATE_GOV_CLOUD_ACCOUNT: string[] = [
+	static readonly CreateGovCloudAccount: string[] = [
 		"organizations:CreateGovCloudAccount",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the CreateOrganization API call. */
-	static readonly CREATE_ORGANIZATION: string[] = [
+	static readonly CreateOrganization: string[] = [
 		"organizations:CreateOrganization",
 	];
 	/** IAM actions required for the CreateOrganizationalUnit API call. */
-	static readonly CREATE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly CreateOrganizationalUnit: string[] = [
 		"organizations:CreateOrganizationalUnit",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the CreatePolicy API call. */
-	static readonly CREATE_POLICY: string[] = [
+	static readonly CreatePolicy: string[] = [
 		"organizations:CreatePolicy",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the DeclineHandshake API call. */
-	static readonly DECLINE_HANDSHAKE: string[] = [
+	static readonly DeclineHandshake: string[] = [
 		"organizations:DeclineHandshake",
 	];
 	/** IAM actions required for the DeleteOrganization API call. */
-	static readonly DELETE_ORGANIZATION: string[] = [
+	static readonly DeleteOrganization: string[] = [
 		"organizations:DeleteOrganization",
 	];
 	/** IAM actions required for the DeleteOrganizationalUnit API call. */
-	static readonly DELETE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly DeleteOrganizationalUnit: string[] = [
 		"organizations:DeleteOrganizationalUnit",
 	];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = ["organizations:DeletePolicy"];
+	static readonly DeletePolicy: string[] = ["organizations:DeletePolicy"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"organizations:DeleteResourcePolicy",
 	];
 	/** IAM actions required for the DeregisterDelegatedAdministrator API call. */
-	static readonly DEREGISTER_DELEGATED_ADMINISTRATOR: string[] = [
+	static readonly DeregisterDelegatedAdministrator: string[] = [
 		"organizations:DeregisterDelegatedAdministrator",
 	];
 	/** IAM actions required for the DescribeAccount API call. */
-	static readonly DESCRIBE_ACCOUNT: string[] = [
-		"organizations:DescribeAccount",
-	];
+	static readonly DescribeAccount: string[] = ["organizations:DescribeAccount"];
 	/** IAM actions required for the DescribeCreateAccountStatus API call. */
-	static readonly DESCRIBE_CREATE_ACCOUNT_STATUS: string[] = [
+	static readonly DescribeCreateAccountStatus: string[] = [
 		"organizations:DescribeCreateAccountStatus",
 	];
 	/** IAM actions required for the DescribeEffectivePolicy API call. */
-	static readonly DESCRIBE_EFFECTIVE_POLICY: string[] = [
+	static readonly DescribeEffectivePolicy: string[] = [
 		"organizations:DescribeEffectivePolicy",
 	];
 	/** IAM actions required for the DescribeHandshake API call. */
-	static readonly DESCRIBE_HANDSHAKE: string[] = [
+	static readonly DescribeHandshake: string[] = [
 		"organizations:DescribeHandshake",
 	];
 	/** IAM actions required for the DescribeOrganization API call. */
-	static readonly DESCRIBE_ORGANIZATION: string[] = [
+	static readonly DescribeOrganization: string[] = [
 		"organizations:DescribeOrganization",
 	];
 	/** IAM actions required for the DescribeOrganizationalUnit API call. */
-	static readonly DESCRIBE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly DescribeOrganizationalUnit: string[] = [
 		"organizations:DescribeOrganizationalUnit",
 	];
 	/** IAM actions required for the DescribePolicy API call. */
-	static readonly DESCRIBE_POLICY: string[] = ["organizations:DescribePolicy"];
+	static readonly DescribePolicy: string[] = ["organizations:DescribePolicy"];
 	/** IAM actions required for the DescribeResourcePolicy API call. */
-	static readonly DESCRIBE_RESOURCE_POLICY: string[] = [
+	static readonly DescribeResourcePolicy: string[] = [
 		"organizations:DescribeResourcePolicy",
 	];
 	/** IAM actions required for the DescribeResponsibilityTransfer API call. */
-	static readonly DESCRIBE_RESPONSIBILITY_TRANSFER: string[] = [
+	static readonly DescribeResponsibilityTransfer: string[] = [
 		"organizations:DescribeResponsibilityTransfer",
 	];
 	/** IAM actions required for the DetachPolicy API call. */
-	static readonly DETACH_POLICY: string[] = ["organizations:DetachPolicy"];
+	static readonly DetachPolicy: string[] = ["organizations:DetachPolicy"];
 	/** IAM actions required for the DisableAWSServiceAccess API call. */
-	static readonly DISABLE_AWS_SERVICE_ACCESS: string[] = [
+	static readonly DisableAWSServiceAccess: string[] = [
 		"organizations:DisableAWSServiceAccess",
 	];
 	/** IAM actions required for the DisablePolicyType API call. */
-	static readonly DISABLE_POLICY_TYPE: string[] = [
+	static readonly DisablePolicyType: string[] = [
 		"organizations:DisablePolicyType",
 	];
 	/** IAM actions required for the EnableAWSServiceAccess API call. */
-	static readonly ENABLE_AWS_SERVICE_ACCESS: string[] = [
+	static readonly EnableAWSServiceAccess: string[] = [
 		"organizations:EnableAWSServiceAccess",
 	];
 	/** IAM actions required for the EnableAllFeatures API call. */
-	static readonly ENABLE_ALL_FEATURES: string[] = [
+	static readonly EnableAllFeatures: string[] = [
 		"organizations:EnableAllFeatures",
 	];
 	/** IAM actions required for the EnablePolicyType API call. */
-	static readonly ENABLE_POLICY_TYPE: string[] = [
+	static readonly EnablePolicyType: string[] = [
 		"organizations:EnablePolicyType",
 	];
 	/** IAM actions required for the InviteAccountToOrganization API call. */
-	static readonly INVITE_ACCOUNT_TO_ORGANIZATION: string[] = [
+	static readonly InviteAccountToOrganization: string[] = [
 		"organizations:InviteAccountToOrganization",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the InviteOrganizationToTransferResponsibility API call. */
-	static readonly INVITE_ORGANIZATION_TO_TRANSFER_RESPONSIBILITY: string[] = [
+	static readonly InviteOrganizationToTransferResponsibility: string[] = [
 		"organizations:InviteOrganizationToTransferResponsibility",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the LeaveOrganization API call. */
-	static readonly LEAVE_ORGANIZATION: string[] = [
+	static readonly LeaveOrganization: string[] = [
 		"organizations:LeaveOrganization",
 	];
 	/** IAM actions required for the ListAWSServiceAccessForOrganization API call. */
-	static readonly LIST_AWS_SERVICE_ACCESS_FOR_ORGANIZATION: string[] = [
+	static readonly ListAWSServiceAccessForOrganization: string[] = [
 		"organizations:ListAWSServiceAccessForOrganization",
 	];
 	/** IAM actions required for the ListAccounts API call. */
-	static readonly LIST_ACCOUNTS: string[] = ["organizations:ListAccounts"];
+	static readonly ListAccounts: string[] = ["organizations:ListAccounts"];
 	/** IAM actions required for the ListAccountsForParent API call. */
-	static readonly LIST_ACCOUNTS_FOR_PARENT: string[] = [
+	static readonly ListAccountsForParent: string[] = [
 		"organizations:ListAccountsForParent",
 	];
 	/** IAM actions required for the ListAccountsWithInvalidEffectivePolicy API call. */
-	static readonly LIST_ACCOUNTS_WITH_INVALID_EFFECTIVE_POLICY: string[] = [
+	static readonly ListAccountsWithInvalidEffectivePolicy: string[] = [
 		"organizations:ListAccountsWithInvalidEffectivePolicy",
 	];
 	/** IAM actions required for the ListChildren API call. */
-	static readonly LIST_CHILDREN: string[] = ["organizations:ListChildren"];
+	static readonly ListChildren: string[] = ["organizations:ListChildren"];
 	/** IAM actions required for the ListCreateAccountStatus API call. */
-	static readonly LIST_CREATE_ACCOUNT_STATUS: string[] = [
+	static readonly ListCreateAccountStatus: string[] = [
 		"organizations:ListCreateAccountStatus",
 	];
 	/** IAM actions required for the ListDelegatedAdministrators API call. */
-	static readonly LIST_DELEGATED_ADMINISTRATORS: string[] = [
+	static readonly ListDelegatedAdministrators: string[] = [
 		"organizations:ListDelegatedAdministrators",
 	];
 	/** IAM actions required for the ListDelegatedServicesForAccount API call. */
-	static readonly LIST_DELEGATED_SERVICES_FOR_ACCOUNT: string[] = [
+	static readonly ListDelegatedServicesForAccount: string[] = [
 		"organizations:ListDelegatedServicesForAccount",
 	];
 	/** IAM actions required for the ListEffectivePolicyValidationErrors API call. */
-	static readonly LIST_EFFECTIVE_POLICY_VALIDATION_ERRORS: string[] = [
+	static readonly ListEffectivePolicyValidationErrors: string[] = [
 		"organizations:ListEffectivePolicyValidationErrors",
 	];
 	/** IAM actions required for the ListHandshakesForAccount API call. */
-	static readonly LIST_HANDSHAKES_FOR_ACCOUNT: string[] = [
+	static readonly ListHandshakesForAccount: string[] = [
 		"organizations:ListHandshakesForAccount",
 	];
 	/** IAM actions required for the ListHandshakesForOrganization API call. */
-	static readonly LIST_HANDSHAKES_FOR_ORGANIZATION: string[] = [
+	static readonly ListHandshakesForOrganization: string[] = [
 		"organizations:ListHandshakesForOrganization",
 	];
 	/** IAM actions required for the ListInboundResponsibilityTransfers API call. */
-	static readonly LIST_INBOUND_RESPONSIBILITY_TRANSFERS: string[] = [
+	static readonly ListInboundResponsibilityTransfers: string[] = [
 		"organizations:ListInboundResponsibilityTransfers",
 	];
 	/** IAM actions required for the ListOrganizationalUnitsForParent API call. */
-	static readonly LIST_ORGANIZATIONAL_UNITS_FOR_PARENT: string[] = [
+	static readonly ListOrganizationalUnitsForParent: string[] = [
 		"organizations:ListOrganizationalUnitsForParent",
 	];
 	/** IAM actions required for the ListOutboundResponsibilityTransfers API call. */
-	static readonly LIST_OUTBOUND_RESPONSIBILITY_TRANSFERS: string[] = [
+	static readonly ListOutboundResponsibilityTransfers: string[] = [
 		"organizations:ListOutboundResponsibilityTransfers",
 	];
 	/** IAM actions required for the ListParents API call. */
-	static readonly LIST_PARENTS: string[] = ["organizations:ListParents"];
+	static readonly ListParents: string[] = ["organizations:ListParents"];
 	/** IAM actions required for the ListPolicies API call. */
-	static readonly LIST_POLICIES: string[] = ["organizations:ListPolicies"];
+	static readonly ListPolicies: string[] = ["organizations:ListPolicies"];
 	/** IAM actions required for the ListPoliciesForTarget API call. */
-	static readonly LIST_POLICIES_FOR_TARGET: string[] = [
+	static readonly ListPoliciesForTarget: string[] = [
 		"organizations:ListPoliciesForTarget",
 	];
 	/** IAM actions required for the ListRoots API call. */
-	static readonly LIST_ROOTS: string[] = ["organizations:ListRoots"];
+	static readonly ListRoots: string[] = ["organizations:ListRoots"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"organizations:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTargetsForPolicy API call. */
-	static readonly LIST_TARGETS_FOR_POLICY: string[] = [
+	static readonly ListTargetsForPolicy: string[] = [
 		"organizations:ListTargetsForPolicy",
 	];
 	/** IAM actions required for the MoveAccount API call. */
-	static readonly MOVE_ACCOUNT: string[] = ["organizations:MoveAccount"];
+	static readonly MoveAccount: string[] = ["organizations:MoveAccount"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [
+	static readonly PutResourcePolicy: string[] = [
 		"organizations:PutResourcePolicy",
 		"organizations:TagResource",
 	];
 	/** IAM actions required for the RegisterDelegatedAdministrator API call. */
-	static readonly REGISTER_DELEGATED_ADMINISTRATOR: string[] = [
+	static readonly RegisterDelegatedAdministrator: string[] = [
 		"organizations:RegisterDelegatedAdministrator",
 	];
 	/** IAM actions required for the RemoveAccountFromOrganization API call. */
-	static readonly REMOVE_ACCOUNT_FROM_ORGANIZATION: string[] = [
+	static readonly RemoveAccountFromOrganization: string[] = [
 		"organizations:RemoveAccountFromOrganization",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["organizations:TagResource"];
+	static readonly TagResource: string[] = ["organizations:TagResource"];
 	/** IAM actions required for the TerminateResponsibilityTransfer API call. */
-	static readonly TERMINATE_RESPONSIBILITY_TRANSFER: string[] = [
+	static readonly TerminateResponsibilityTransfer: string[] = [
 		"organizations:TerminateResponsibilityTransfer",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["organizations:UntagResource"];
+	static readonly UntagResource: string[] = ["organizations:UntagResource"];
 	/** IAM actions required for the UpdateOrganizationalUnit API call. */
-	static readonly UPDATE_ORGANIZATIONAL_UNIT: string[] = [
+	static readonly UpdateOrganizationalUnit: string[] = [
 		"organizations:UpdateOrganizationalUnit",
 	];
 	/** IAM actions required for the UpdatePolicy API call. */
-	static readonly UPDATE_POLICY: string[] = ["organizations:UpdatePolicy"];
+	static readonly UpdatePolicy: string[] = ["organizations:UpdatePolicy"];
 	/** IAM actions required for the UpdateResponsibilityTransfer API call. */
-	static readonly UPDATE_RESPONSIBILITY_TRANSFER: string[] = [
+	static readonly UpdateResponsibilityTransfer: string[] = [
 		"organizations:UpdateResponsibilityTransfer",
 	];
 }
@@ -948,154 +1073,160 @@ export class OrganizationsOperations {
  */
 export class OrganizationsConditions {
 	/** Condition keys applicable to the AttachPolicy action. */
-	static readonly ATTACH_POLICY_CONDITION_KEYS: string[] = [
+	static readonly AttachPolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the CreateAccount action. */
-	static readonly CREATE_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly CreateAccountConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGovCloudAccount action. */
-	static readonly CREATE_GOV_CLOUD_ACCOUNT_CONDITION_KEYS: string[] = [
+	static readonly CreateGovCloudAccountConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateOrganizationalUnit action. */
-	static readonly CREATE_ORGANIZATIONAL_UNIT_CONDITION_KEYS: string[] = [
+	static readonly CreateOrganizationalUnitConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePolicy action. */
-	static readonly CREATE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreatePolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the DeletePolicy action. */
-	static readonly DELETE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeletePolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the DeregisterDelegatedAdministrator action. */
-	static readonly DEREGISTER_DELEGATED_ADMINISTRATOR_CONDITION_KEYS: string[] =
-		["organizations:ServicePrincipal"];
+	static readonly DeregisterDelegatedAdministratorConditionKeys: string[] = [
+		"organizations:ServicePrincipal",
+	];
 	/** Condition keys applicable to the DescribeEffectivePolicy action. */
-	static readonly DESCRIBE_EFFECTIVE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DescribeEffectivePolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the DescribePolicy action. */
-	static readonly DESCRIBE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DescribePolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the DescribeResponsibilityTransfer action. */
-	static readonly DESCRIBE_RESPONSIBILITY_TRANSFER_CONDITION_KEYS: string[] = [
+	static readonly DescribeResponsibilityTransferConditionKeys: string[] = [
 		"organizations:TransferDirection",
 		"organizations:TransferType",
 	];
 	/** Condition keys applicable to the DetachPolicy action. */
-	static readonly DETACH_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DetachPolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the DisableAWSServiceAccess action. */
-	static readonly DISABLE_AWS_SERVICE_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly DisableAWSServiceAccessConditionKeys: string[] = [
 		"organizations:ServicePrincipal",
 	];
 	/** Condition keys applicable to the DisablePolicyType action. */
-	static readonly DISABLE_POLICY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DisablePolicyTypeConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the EnableAWSServiceAccess action. */
-	static readonly ENABLE_AWS_SERVICE_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly EnableAWSServiceAccessConditionKeys: string[] = [
 		"organizations:ServicePrincipal",
 	];
 	/** Condition keys applicable to the EnablePolicyType action. */
-	static readonly ENABLE_POLICY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly EnablePolicyTypeConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the InviteAccountToOrganization action. */
-	static readonly INVITE_ACCOUNT_TO_ORGANIZATION_CONDITION_KEYS: string[] = [
+	static readonly InviteAccountToOrganizationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the InviteOrganizationToTransferResponsibility action. */
-	static readonly INVITE_ORGANIZATION_TO_TRANSFER_RESPONSIBILITY_CONDITION_KEYS: string[] =
+	static readonly InviteOrganizationToTransferResponsibilityConditionKeys: string[] =
 		["organizations:TransferDirection", "organizations:TransferType"];
 	/** Condition keys applicable to the ListAccountsWithInvalidEffectivePolicy action. */
-	static readonly LIST_ACCOUNTS_WITH_INVALID_EFFECTIVE_POLICY_CONDITION_KEYS: string[] =
+	static readonly ListAccountsWithInvalidEffectivePolicyConditionKeys: string[] =
 		["organizations:PolicyType"];
 	/** Condition keys applicable to the ListDelegatedAdministrators action. */
-	static readonly LIST_DELEGATED_ADMINISTRATORS_CONDITION_KEYS: string[] = [
+	static readonly ListDelegatedAdministratorsConditionKeys: string[] = [
 		"organizations:ServicePrincipal",
 	];
 	/** Condition keys applicable to the ListEffectivePolicyValidationErrors action. */
-	static readonly LIST_EFFECTIVE_POLICY_VALIDATION_ERRORS_CONDITION_KEYS: string[] =
-		["organizations:PolicyType"];
+	static readonly ListEffectivePolicyValidationErrorsConditionKeys: string[] = [
+		"organizations:PolicyType",
+	];
 	/** Condition keys applicable to the ListInboundResponsibilityTransfers action. */
-	static readonly LIST_INBOUND_RESPONSIBILITY_TRANSFERS_CONDITION_KEYS: string[] =
-		["organizations:TransferDirection", "organizations:TransferType"];
+	static readonly ListInboundResponsibilityTransfersConditionKeys: string[] = [
+		"organizations:TransferDirection",
+		"organizations:TransferType",
+	];
 	/** Condition keys applicable to the ListOutboundResponsibilityTransfers action. */
-	static readonly LIST_OUTBOUND_RESPONSIBILITY_TRANSFERS_CONDITION_KEYS: string[] =
-		["organizations:TransferDirection", "organizations:TransferType"];
+	static readonly ListOutboundResponsibilityTransfersConditionKeys: string[] = [
+		"organizations:TransferDirection",
+		"organizations:TransferType",
+	];
 	/** Condition keys applicable to the ListPolicies action. */
-	static readonly LIST_POLICIES_CONDITION_KEYS: string[] = [
+	static readonly ListPoliciesConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the ListPoliciesForTarget action. */
-	static readonly LIST_POLICIES_FOR_TARGET_CONDITION_KEYS: string[] = [
+	static readonly ListPoliciesForTargetConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the ListTargetsForPolicy action. */
-	static readonly LIST_TARGETS_FOR_POLICY_CONDITION_KEYS: string[] = [
+	static readonly ListTargetsForPolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RegisterDelegatedAdministrator action. */
-	static readonly REGISTER_DELEGATED_ADMINISTRATOR_CONDITION_KEYS: string[] = [
+	static readonly RegisterDelegatedAdministratorConditionKeys: string[] = [
 		"organizations:ServicePrincipal",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the TerminateResponsibilityTransfer action. */
-	static readonly TERMINATE_RESPONSIBILITY_TRANSFER_CONDITION_KEYS: string[] = [
+	static readonly TerminateResponsibilityTransferConditionKeys: string[] = [
 		"organizations:TransferDirection",
 		"organizations:TransferType",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the UpdatePolicy action. */
-	static readonly UPDATE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly UpdatePolicyConditionKeys: string[] = [
 		"organizations:PolicyType",
 	];
 	/** Condition keys applicable to the UpdateResponsibilityTransfer action. */
-	static readonly UPDATE_RESPONSIBILITY_TRANSFER_CONDITION_KEYS: string[] = [
+	static readonly UpdateResponsibilityTransferConditionKeys: string[] = [
 		"organizations:TransferDirection",
 		"organizations:TransferType",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: organizations:PolicyType (String) */
 	static readonly POLICY_TYPE = "organizations:PolicyType";
 	/** Condition key: organizations:ServicePrincipal (String) */

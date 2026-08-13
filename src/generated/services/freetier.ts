@@ -13,42 +13,42 @@ export class FreetierActions {
 	static readonly SERVICE_PREFIX = "freetier";
 
 	/** [Read] freetier:GetAccountActivity */
-	static readonly GET_ACCOUNT_ACTIVITY = "freetier:GetAccountActivity";
+	static readonly actionGetAccountActivity = "freetier:GetAccountActivity";
 	/** [Read] freetier:GetAccountPlanState */
-	static readonly GET_ACCOUNT_PLAN_STATE = "freetier:GetAccountPlanState";
+	static readonly actionGetAccountPlanState = "freetier:GetAccountPlanState";
 	/** [Read] freetier:GetFreeTierAlertPreference */
-	static readonly GET_FREE_TIER_ALERT_PREFERENCE =
+	static readonly actionGetFreeTierAlertPreference =
 		"freetier:GetFreeTierAlertPreference";
 	/** [Read] freetier:GetFreeTierUsage */
-	static readonly GET_FREE_TIER_USAGE = "freetier:GetFreeTierUsage";
+	static readonly actionGetFreeTierUsage = "freetier:GetFreeTierUsage";
 	/** [List] freetier:ListAccountActivities */
-	static readonly LIST_ACCOUNT_ACTIVITIES = "freetier:ListAccountActivities";
+	static readonly ListAccountActivities = "freetier:ListAccountActivities";
 	/** [Write] freetier:PutFreeTierAlertPreference */
-	static readonly PUT_FREE_TIER_ALERT_PREFERENCE =
+	static readonly PutFreeTierAlertPreference =
 		"freetier:PutFreeTierAlertPreference";
 	/** [Write] freetier:UpgradeAccountPlan */
-	static readonly UPGRADE_ACCOUNT_PLAN = "freetier:UpgradeAccountPlan";
+	static readonly UpgradeAccountPlan = "freetier:UpgradeAccountPlan";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		FreetierActions.GET_ACCOUNT_ACTIVITY,
-		FreetierActions.GET_ACCOUNT_PLAN_STATE,
-		FreetierActions.GET_FREE_TIER_ALERT_PREFERENCE,
-		FreetierActions.GET_FREE_TIER_USAGE,
+	static readonly AllReadActions: string[] = [
+		FreetierActions.actionGetAccountActivity,
+		FreetierActions.actionGetAccountPlanState,
+		FreetierActions.actionGetFreeTierAlertPreference,
+		FreetierActions.actionGetFreeTierUsage,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		FreetierActions.PUT_FREE_TIER_ALERT_PREFERENCE,
-		FreetierActions.UPGRADE_ACCOUNT_PLAN,
+	static readonly AllWriteActions: string[] = [
+		FreetierActions.PutFreeTierAlertPreference,
+		FreetierActions.UpgradeAccountPlan,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		FreetierActions.LIST_ACCOUNT_ACTIVITIES,
+	static readonly AllListActions: string[] = [
+		FreetierActions.ListAccountActivities,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -56,24 +56,24 @@ export class FreetierActions {
  */
 export class FreetierOperations {
 	/** IAM actions required for the GetAccountActivity API call. */
-	static readonly GET_ACCOUNT_ACTIVITY: string[] = [
+	static readonly opGetAccountActivity: string[] = [
 		"freetier:GetAccountActivity",
 	];
 	/** IAM actions required for the GetAccountPlanState API call. */
-	static readonly GET_ACCOUNT_PLAN_STATE: string[] = [
+	static readonly opGetAccountPlanState: string[] = [
 		"freetier:GetAccountPlanState",
 	];
 	/** IAM actions required for the GetFreeTierUsage API call. */
-	static readonly GET_FREE_TIER_USAGE: string[] = [
+	static readonly opGetFreeTierUsage: string[] = [
 		"freetier:GetFreeTierUsage",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListAccountActivities API call. */
-	static readonly LIST_ACCOUNT_ACTIVITIES: string[] = [
+	static readonly ListAccountActivities: string[] = [
 		"freetier:ListAccountActivities",
 	];
 	/** IAM actions required for the UpgradeAccountPlan API call. */
-	static readonly UPGRADE_ACCOUNT_PLAN: string[] = [
+	static readonly UpgradeAccountPlan: string[] = [
 		"freetier:UpgradeAccountPlan",
 	];
 }

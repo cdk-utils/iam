@@ -13,1072 +13,1734 @@ export class GlueActions {
 	static readonly SERVICE_PREFIX = "glue";
 
 	/** [Read] glue:AccessDataQualityRuntimeConfiguration */
-	static readonly ACCESS_DATA_QUALITY_RUNTIME_CONFIGURATION =
+	static readonly AccessDataQualityRuntimeConfiguration =
 		"glue:AccessDataQualityRuntimeConfiguration";
 	/** [Write] glue:AuthorizeInboundIntegration */
-	static readonly AUTHORIZE_INBOUND_INTEGRATION =
+	static readonly AuthorizeInboundIntegration =
 		"glue:AuthorizeInboundIntegration";
 	/** [Write] glue:BatchCreatePartition */
-	static readonly BATCH_CREATE_PARTITION = "glue:BatchCreatePartition";
+	static readonly BatchCreatePartition = "glue:BatchCreatePartition";
 	/** [Write] glue:BatchDeleteConnection */
-	static readonly BATCH_DELETE_CONNECTION = "glue:BatchDeleteConnection";
+	static readonly BatchDeleteConnection = "glue:BatchDeleteConnection";
 	/** [Write] glue:BatchDeletePartition */
-	static readonly BATCH_DELETE_PARTITION = "glue:BatchDeletePartition";
+	static readonly BatchDeletePartition = "glue:BatchDeletePartition";
 	/** [Write] glue:BatchDeleteTable */
-	static readonly BATCH_DELETE_TABLE = "glue:BatchDeleteTable";
+	static readonly BatchDeleteTable = "glue:BatchDeleteTable";
 	/** [Write] glue:BatchDeleteTableVersion */
-	static readonly BATCH_DELETE_TABLE_VERSION = "glue:BatchDeleteTableVersion";
+	static readonly BatchDeleteTableVersion = "glue:BatchDeleteTableVersion";
 	/** [Read] glue:BatchGetBlueprints */
-	static readonly BATCH_GET_BLUEPRINTS = "glue:BatchGetBlueprints";
+	static readonly BatchGetBlueprints = "glue:BatchGetBlueprints";
 	/** [Read] glue:BatchGetCrawlers */
-	static readonly BATCH_GET_CRAWLERS = "glue:BatchGetCrawlers";
+	static readonly BatchGetCrawlers = "glue:BatchGetCrawlers";
 	/** [Read] glue:BatchGetCustomEntityTypes */
-	static readonly BATCH_GET_CUSTOM_ENTITY_TYPES =
-		"glue:BatchGetCustomEntityTypes";
+	static readonly BatchGetCustomEntityTypes = "glue:BatchGetCustomEntityTypes";
 	/** [Read] glue:BatchGetDevEndpoints */
-	static readonly BATCH_GET_DEV_ENDPOINTS = "glue:BatchGetDevEndpoints";
+	static readonly BatchGetDevEndpoints = "glue:BatchGetDevEndpoints";
 	/** [Read] glue:BatchGetJobs */
-	static readonly BATCH_GET_JOBS = "glue:BatchGetJobs";
+	static readonly BatchGetJobs = "glue:BatchGetJobs";
 	/** [Read] glue:BatchGetPartition */
-	static readonly BATCH_GET_PARTITION = "glue:BatchGetPartition";
+	static readonly BatchGetPartition = "glue:BatchGetPartition";
 	/** [PermissionManagement] glue:BatchGetStageFiles */
-	static readonly BATCH_GET_STAGE_FILES = "glue:BatchGetStageFiles";
+	static readonly BatchGetStageFiles = "glue:BatchGetStageFiles";
 	/** [Read] glue:BatchGetTableOptimizer */
-	static readonly BATCH_GET_TABLE_OPTIMIZER = "glue:BatchGetTableOptimizer";
+	static readonly BatchGetTableOptimizer = "glue:BatchGetTableOptimizer";
 	/** [Read] glue:BatchGetTriggers */
-	static readonly BATCH_GET_TRIGGERS = "glue:BatchGetTriggers";
+	static readonly BatchGetTriggers = "glue:BatchGetTriggers";
 	/** [Read] glue:BatchGetWorkflows */
-	static readonly BATCH_GET_WORKFLOWS = "glue:BatchGetWorkflows";
+	static readonly BatchGetWorkflows = "glue:BatchGetWorkflows";
 	/** [Write] glue:BatchStopJobRun */
-	static readonly BATCH_STOP_JOB_RUN = "glue:BatchStopJobRun";
+	static readonly BatchStopJobRun = "glue:BatchStopJobRun";
 	/** [Write] glue:BatchUpdatePartition */
-	static readonly BATCH_UPDATE_PARTITION = "glue:BatchUpdatePartition";
+	static readonly BatchUpdatePartition = "glue:BatchUpdatePartition";
 	/** [Write] glue:CancelDataQualityRuleRecommendationRun */
-	static readonly CANCEL_DATA_QUALITY_RULE_RECOMMENDATION_RUN =
+	static readonly CancelDataQualityRuleRecommendationRun =
 		"glue:CancelDataQualityRuleRecommendationRun";
 	/** [Write] glue:CancelDataQualityRulesetEvaluationRun */
-	static readonly CANCEL_DATA_QUALITY_RULESET_EVALUATION_RUN =
+	static readonly CancelDataQualityRulesetEvaluationRun =
 		"glue:CancelDataQualityRulesetEvaluationRun";
 	/** [Write] glue:CancelMLTaskRun */
-	static readonly CANCEL_ML_TASK_RUN = "glue:CancelMLTaskRun";
+	static readonly CancelMLTaskRun = "glue:CancelMLTaskRun";
 	/** [Write] glue:CancelStatement */
-	static readonly CANCEL_STATEMENT = "glue:CancelStatement";
+	static readonly CancelStatement = "glue:CancelStatement";
 	/** [Read] glue:CheckSchemaVersionValidity */
-	static readonly CHECK_SCHEMA_VERSION_VALIDITY =
+	static readonly CheckSchemaVersionValidity =
 		"glue:CheckSchemaVersionValidity";
 	/** [Write] glue:CreateBlueprint */
-	static readonly CREATE_BLUEPRINT = "glue:CreateBlueprint";
+	static readonly CreateBlueprint = "glue:CreateBlueprint";
 	/** [Write] glue:CreateCatalog */
-	static readonly CREATE_CATALOG = "glue:CreateCatalog";
+	static readonly CreateCatalog = "glue:CreateCatalog";
 	/** [Write] glue:CreateClassifier */
-	static readonly CREATE_CLASSIFIER = "glue:CreateClassifier";
+	static readonly CreateClassifier = "glue:CreateClassifier";
 	/** [Write] glue:CreateColumnStatisticsTaskSettings */
-	static readonly CREATE_COLUMN_STATISTICS_TASK_SETTINGS =
+	static readonly CreateColumnStatisticsTaskSettings =
 		"glue:CreateColumnStatisticsTaskSettings";
 	/** [Write] glue:CreateConnection */
-	static readonly CREATE_CONNECTION = "glue:CreateConnection";
+	static readonly CreateConnection = "glue:CreateConnection";
 	/** [Write] glue:CreateCrawler */
-	static readonly CREATE_CRAWLER = "glue:CreateCrawler";
+	static readonly CreateCrawler = "glue:CreateCrawler";
 	/** [Write] glue:CreateCustomEntityType */
-	static readonly CREATE_CUSTOM_ENTITY_TYPE = "glue:CreateCustomEntityType";
+	static readonly CreateCustomEntityType = "glue:CreateCustomEntityType";
 	/** [Write] glue:CreateDataQualityRuleset */
-	static readonly CREATE_DATA_QUALITY_RULESET = "glue:CreateDataQualityRuleset";
+	static readonly CreateDataQualityRuleset = "glue:CreateDataQualityRuleset";
 	/** [Write] glue:CreateDatabase */
-	static readonly CREATE_DATABASE = "glue:CreateDatabase";
+	static readonly CreateDatabase = "glue:CreateDatabase";
 	/** [Write] glue:CreateDevEndpoint */
-	static readonly CREATE_DEV_ENDPOINT = "glue:CreateDevEndpoint";
+	static readonly CreateDevEndpoint = "glue:CreateDevEndpoint";
 	/** [Write] glue:CreateGlueIdentityCenterConfiguration */
-	static readonly CREATE_GLUE_IDENTITY_CENTER_CONFIGURATION =
+	static readonly CreateGlueIdentityCenterConfiguration =
 		"glue:CreateGlueIdentityCenterConfiguration";
 	/** [Write] glue:CreateInboundIntegration */
-	static readonly CREATE_INBOUND_INTEGRATION = "glue:CreateInboundIntegration";
+	static readonly CreateInboundIntegration = "glue:CreateInboundIntegration";
 	/** [Write] glue:CreateIntegration */
-	static readonly CREATE_INTEGRATION = "glue:CreateIntegration";
+	static readonly CreateIntegration = "glue:CreateIntegration";
 	/** [Write] glue:CreateIntegrationResourceProperty */
-	static readonly CREATE_INTEGRATION_RESOURCE_PROPERTY =
+	static readonly CreateIntegrationResourceProperty =
 		"glue:CreateIntegrationResourceProperty";
 	/** [Write] glue:CreateIntegrationTableProperties */
-	static readonly CREATE_INTEGRATION_TABLE_PROPERTIES =
+	static readonly CreateIntegrationTableProperties =
 		"glue:CreateIntegrationTableProperties";
 	/** [Write] glue:CreateJob */
-	static readonly CREATE_JOB = "glue:CreateJob";
+	static readonly CreateJob = "glue:CreateJob";
 	/** [Write] glue:CreateMLTransform */
-	static readonly CREATE_ML_TRANSFORM = "glue:CreateMLTransform";
+	static readonly CreateMLTransform = "glue:CreateMLTransform";
 	/** [Write] glue:CreatePartition */
-	static readonly CREATE_PARTITION = "glue:CreatePartition";
+	static readonly CreatePartition = "glue:CreatePartition";
 	/** [Write] glue:CreatePartitionIndex */
-	static readonly CREATE_PARTITION_INDEX = "glue:CreatePartitionIndex";
+	static readonly CreatePartitionIndex = "glue:CreatePartitionIndex";
 	/** [Write] glue:CreateRegistry */
-	static readonly CREATE_REGISTRY = "glue:CreateRegistry";
+	static readonly CreateRegistry = "glue:CreateRegistry";
 	/** [Write] glue:CreateSchema */
-	static readonly CREATE_SCHEMA = "glue:CreateSchema";
+	static readonly CreateSchema = "glue:CreateSchema";
 	/** [Write] glue:CreateScript */
-	static readonly CREATE_SCRIPT = "glue:CreateScript";
+	static readonly CreateScript = "glue:CreateScript";
 	/** [Write] glue:CreateSecurityConfiguration */
-	static readonly CREATE_SECURITY_CONFIGURATION =
+	static readonly CreateSecurityConfiguration =
 		"glue:CreateSecurityConfiguration";
 	/** [Write] glue:CreateSession */
-	static readonly CREATE_SESSION = "glue:CreateSession";
+	static readonly CreateSession = "glue:CreateSession";
 	/** [Write] glue:CreateTable */
-	static readonly CREATE_TABLE = "glue:CreateTable";
+	static readonly CreateTable = "glue:CreateTable";
 	/** [Write] glue:CreateTableOptimizer */
-	static readonly CREATE_TABLE_OPTIMIZER = "glue:CreateTableOptimizer";
+	static readonly CreateTableOptimizer = "glue:CreateTableOptimizer";
 	/** [Write] glue:CreateTrigger */
-	static readonly CREATE_TRIGGER = "glue:CreateTrigger";
+	static readonly CreateTrigger = "glue:CreateTrigger";
 	/** [Write] glue:CreateUsageProfile */
-	static readonly CREATE_USAGE_PROFILE = "glue:CreateUsageProfile";
+	static readonly CreateUsageProfile = "glue:CreateUsageProfile";
 	/** [Write] glue:CreateUserDefinedFunction */
-	static readonly CREATE_USER_DEFINED_FUNCTION =
-		"glue:CreateUserDefinedFunction";
+	static readonly CreateUserDefinedFunction = "glue:CreateUserDefinedFunction";
 	/** [Write] glue:CreateWorkflow */
-	static readonly CREATE_WORKFLOW = "glue:CreateWorkflow";
+	static readonly CreateWorkflow = "glue:CreateWorkflow";
 	/** [Write] glue:DeleteBlueprint */
-	static readonly DELETE_BLUEPRINT = "glue:DeleteBlueprint";
+	static readonly DeleteBlueprint = "glue:DeleteBlueprint";
 	/** [Write] glue:DeleteCatalog */
-	static readonly DELETE_CATALOG = "glue:DeleteCatalog";
+	static readonly DeleteCatalog = "glue:DeleteCatalog";
 	/** [Write] glue:DeleteClassifier */
-	static readonly DELETE_CLASSIFIER = "glue:DeleteClassifier";
+	static readonly DeleteClassifier = "glue:DeleteClassifier";
 	/** [Write] glue:DeleteColumnStatisticsForPartition */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_PARTITION =
+	static readonly DeleteColumnStatisticsForPartition =
 		"glue:DeleteColumnStatisticsForPartition";
 	/** [Write] glue:DeleteColumnStatisticsForTable */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_TABLE =
+	static readonly DeleteColumnStatisticsForTable =
 		"glue:DeleteColumnStatisticsForTable";
 	/** [Write] glue:DeleteColumnStatisticsTaskSettings */
-	static readonly DELETE_COLUMN_STATISTICS_TASK_SETTINGS =
+	static readonly DeleteColumnStatisticsTaskSettings =
 		"glue:DeleteColumnStatisticsTaskSettings";
 	/** [Write] glue:DeleteConnection */
-	static readonly DELETE_CONNECTION = "glue:DeleteConnection";
+	static readonly DeleteConnection = "glue:DeleteConnection";
 	/** [Write] glue:DeleteConnectionType */
-	static readonly DELETE_CONNECTION_TYPE = "glue:DeleteConnectionType";
+	static readonly DeleteConnectionType = "glue:DeleteConnectionType";
 	/** [Write] glue:DeleteCrawler */
-	static readonly DELETE_CRAWLER = "glue:DeleteCrawler";
+	static readonly DeleteCrawler = "glue:DeleteCrawler";
 	/** [Write] glue:DeleteCustomEntityType */
-	static readonly DELETE_CUSTOM_ENTITY_TYPE = "glue:DeleteCustomEntityType";
+	static readonly DeleteCustomEntityType = "glue:DeleteCustomEntityType";
 	/** [Write] glue:DeleteDataQualityRuleset */
-	static readonly DELETE_DATA_QUALITY_RULESET = "glue:DeleteDataQualityRuleset";
+	static readonly DeleteDataQualityRuleset = "glue:DeleteDataQualityRuleset";
 	/** [Write] glue:DeleteDatabase */
-	static readonly DELETE_DATABASE = "glue:DeleteDatabase";
+	static readonly DeleteDatabase = "glue:DeleteDatabase";
 	/** [Write] glue:DeleteDevEndpoint */
-	static readonly DELETE_DEV_ENDPOINT = "glue:DeleteDevEndpoint";
+	static readonly DeleteDevEndpoint = "glue:DeleteDevEndpoint";
 	/** [Write] glue:DeleteGlueIdentityCenterConfiguration */
-	static readonly DELETE_GLUE_IDENTITY_CENTER_CONFIGURATION =
+	static readonly DeleteGlueIdentityCenterConfiguration =
 		"glue:DeleteGlueIdentityCenterConfiguration";
 	/** [Write] glue:DeleteIntegration */
-	static readonly DELETE_INTEGRATION = "glue:DeleteIntegration";
+	static readonly DeleteIntegration = "glue:DeleteIntegration";
 	/** [Write] glue:DeleteIntegrationResourceProperty */
-	static readonly DELETE_INTEGRATION_RESOURCE_PROPERTY =
+	static readonly DeleteIntegrationResourceProperty =
 		"glue:DeleteIntegrationResourceProperty";
 	/** [Write] glue:DeleteIntegrationTableProperties */
-	static readonly DELETE_INTEGRATION_TABLE_PROPERTIES =
+	static readonly DeleteIntegrationTableProperties =
 		"glue:DeleteIntegrationTableProperties";
 	/** [Write] glue:DeleteJob */
-	static readonly DELETE_JOB = "glue:DeleteJob";
+	static readonly DeleteJob = "glue:DeleteJob";
 	/** [Write] glue:DeleteMLTransform */
-	static readonly DELETE_ML_TRANSFORM = "glue:DeleteMLTransform";
+	static readonly DeleteMLTransform = "glue:DeleteMLTransform";
 	/** [Write] glue:DeletePartition */
-	static readonly DELETE_PARTITION = "glue:DeletePartition";
+	static readonly DeletePartition = "glue:DeletePartition";
 	/** [Write] glue:DeletePartitionIndex */
-	static readonly DELETE_PARTITION_INDEX = "glue:DeletePartitionIndex";
+	static readonly DeletePartitionIndex = "glue:DeletePartitionIndex";
 	/** [Write] glue:DeleteRegistry */
-	static readonly DELETE_REGISTRY = "glue:DeleteRegistry";
+	static readonly DeleteRegistry = "glue:DeleteRegistry";
 	/** [PermissionManagement] glue:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "glue:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "glue:DeleteResourcePolicy";
 	/** [Write] glue:DeleteSchema */
-	static readonly DELETE_SCHEMA = "glue:DeleteSchema";
+	static readonly DeleteSchema = "glue:DeleteSchema";
 	/** [Write] glue:DeleteSchemaVersions */
-	static readonly DELETE_SCHEMA_VERSIONS = "glue:DeleteSchemaVersions";
+	static readonly DeleteSchemaVersions = "glue:DeleteSchemaVersions";
 	/** [Write] glue:DeleteSecurityConfiguration */
-	static readonly DELETE_SECURITY_CONFIGURATION =
+	static readonly DeleteSecurityConfiguration =
 		"glue:DeleteSecurityConfiguration";
 	/** [Write] glue:DeleteSession */
-	static readonly DELETE_SESSION = "glue:DeleteSession";
+	static readonly DeleteSession = "glue:DeleteSession";
 	/** [Write] glue:DeleteTable */
-	static readonly DELETE_TABLE = "glue:DeleteTable";
+	static readonly DeleteTable = "glue:DeleteTable";
 	/** [Write] glue:DeleteTableOptimizer */
-	static readonly DELETE_TABLE_OPTIMIZER = "glue:DeleteTableOptimizer";
+	static readonly DeleteTableOptimizer = "glue:DeleteTableOptimizer";
 	/** [Write] glue:DeleteTableVersion */
-	static readonly DELETE_TABLE_VERSION = "glue:DeleteTableVersion";
+	static readonly DeleteTableVersion = "glue:DeleteTableVersion";
 	/** [Write] glue:DeleteTrigger */
-	static readonly DELETE_TRIGGER = "glue:DeleteTrigger";
+	static readonly DeleteTrigger = "glue:DeleteTrigger";
 	/** [Write] glue:DeleteUsageProfile */
-	static readonly DELETE_USAGE_PROFILE = "glue:DeleteUsageProfile";
+	static readonly DeleteUsageProfile = "glue:DeleteUsageProfile";
 	/** [Write] glue:DeleteUserDefinedFunction */
-	static readonly DELETE_USER_DEFINED_FUNCTION =
-		"glue:DeleteUserDefinedFunction";
+	static readonly DeleteUserDefinedFunction = "glue:DeleteUserDefinedFunction";
 	/** [Write] glue:DeleteWorkflow */
-	static readonly DELETE_WORKFLOW = "glue:DeleteWorkflow";
+	static readonly DeleteWorkflow = "glue:DeleteWorkflow";
 	/** [PermissionManagement] glue:DeregisterDataPreview */
-	static readonly DEREGISTER_DATA_PREVIEW = "glue:DeregisterDataPreview";
+	static readonly DeregisterDataPreview = "glue:DeregisterDataPreview";
 	/** [PermissionManagement] glue:DescribeConnectionType */
-	static readonly DESCRIBE_CONNECTION_TYPE = "glue:DescribeConnectionType";
+	static readonly DescribeConnectionType = "glue:DescribeConnectionType";
 	/** [PermissionManagement] glue:DescribeEntity */
-	static readonly DESCRIBE_ENTITY = "glue:DescribeEntity";
+	static readonly DescribeEntity = "glue:DescribeEntity";
 	/** [List] glue:DescribeInboundIntegrations */
-	static readonly DESCRIBE_INBOUND_INTEGRATIONS =
+	static readonly DescribeInboundIntegrations =
 		"glue:DescribeInboundIntegrations";
 	/** [List] glue:DescribeIntegrations */
-	static readonly DESCRIBE_INTEGRATIONS = "glue:DescribeIntegrations";
+	static readonly DescribeIntegrations = "glue:DescribeIntegrations";
 	/** [Write] glue:FederateAuthorization */
-	static readonly FEDERATE_AUTHORIZATION = "glue:FederateAuthorization";
+	static readonly FederateAuthorization = "glue:FederateAuthorization";
 	/** [Read] glue:GetBlueprint */
-	static readonly GET_BLUEPRINT = "glue:GetBlueprint";
+	static readonly actionGetBlueprint = "glue:GetBlueprint";
 	/** [Read] glue:GetBlueprintRun */
-	static readonly GET_BLUEPRINT_RUN = "glue:GetBlueprintRun";
+	static readonly actionGetBlueprintRun = "glue:GetBlueprintRun";
 	/** [Read] glue:GetBlueprintRuns */
-	static readonly GET_BLUEPRINT_RUNS = "glue:GetBlueprintRuns";
+	static readonly actionGetBlueprintRuns = "glue:GetBlueprintRuns";
 	/** [Read] glue:GetCatalog */
-	static readonly GET_CATALOG = "glue:GetCatalog";
+	static readonly actionGetCatalog = "glue:GetCatalog";
 	/** [Read] glue:GetCatalogImportStatus */
-	static readonly GET_CATALOG_IMPORT_STATUS = "glue:GetCatalogImportStatus";
+	static readonly actionGetCatalogImportStatus = "glue:GetCatalogImportStatus";
 	/** [Read] glue:GetCatalogs */
-	static readonly GET_CATALOGS = "glue:GetCatalogs";
+	static readonly actionGetCatalogs = "glue:GetCatalogs";
 	/** [Read] glue:GetClassifier */
-	static readonly GET_CLASSIFIER = "glue:GetClassifier";
+	static readonly actionGetClassifier = "glue:GetClassifier";
 	/** [Read] glue:GetClassifiers */
-	static readonly GET_CLASSIFIERS = "glue:GetClassifiers";
+	static readonly actionGetClassifiers = "glue:GetClassifiers";
 	/** [Read] glue:GetColumnStatisticsForPartition */
-	static readonly GET_COLUMN_STATISTICS_FOR_PARTITION =
+	static readonly actionGetColumnStatisticsForPartition =
 		"glue:GetColumnStatisticsForPartition";
 	/** [Read] glue:GetColumnStatisticsForTable */
-	static readonly GET_COLUMN_STATISTICS_FOR_TABLE =
+	static readonly actionGetColumnStatisticsForTable =
 		"glue:GetColumnStatisticsForTable";
 	/** [Read] glue:GetColumnStatisticsTaskRun */
-	static readonly GET_COLUMN_STATISTICS_TASK_RUN =
+	static readonly actionGetColumnStatisticsTaskRun =
 		"glue:GetColumnStatisticsTaskRun";
 	/** [Read] glue:GetColumnStatisticsTaskRuns */
-	static readonly GET_COLUMN_STATISTICS_TASK_RUNS =
+	static readonly actionGetColumnStatisticsTaskRuns =
 		"glue:GetColumnStatisticsTaskRuns";
 	/** [Read] glue:GetColumnStatisticsTaskSettings */
-	static readonly GET_COLUMN_STATISTICS_TASK_SETTINGS =
+	static readonly actionGetColumnStatisticsTaskSettings =
 		"glue:GetColumnStatisticsTaskSettings";
 	/** [Read] glue:GetCompletion */
-	static readonly GET_COMPLETION = "glue:GetCompletion";
+	static readonly actionGetCompletion = "glue:GetCompletion";
 	/** [Read] glue:GetConnection */
-	static readonly GET_CONNECTION = "glue:GetConnection";
+	static readonly actionGetConnection = "glue:GetConnection";
 	/** [Read] glue:GetConnections */
-	static readonly GET_CONNECTIONS = "glue:GetConnections";
+	static readonly actionGetConnections = "glue:GetConnections";
 	/** [Read] glue:GetCrawler */
-	static readonly GET_CRAWLER = "glue:GetCrawler";
+	static readonly actionGetCrawler = "glue:GetCrawler";
 	/** [Read] glue:GetCrawlerMetrics */
-	static readonly GET_CRAWLER_METRICS = "glue:GetCrawlerMetrics";
+	static readonly actionGetCrawlerMetrics = "glue:GetCrawlerMetrics";
 	/** [Read] glue:GetCrawlers */
-	static readonly GET_CRAWLERS = "glue:GetCrawlers";
+	static readonly actionGetCrawlers = "glue:GetCrawlers";
 	/** [Read] glue:GetCustomEntityType */
-	static readonly GET_CUSTOM_ENTITY_TYPE = "glue:GetCustomEntityType";
+	static readonly actionGetCustomEntityType = "glue:GetCustomEntityType";
 	/** [Read] glue:GetDashboardUrl */
-	static readonly GET_DASHBOARD_URL = "glue:GetDashboardUrl";
+	static readonly actionGetDashboardUrl = "glue:GetDashboardUrl";
 	/** [Read] glue:GetDataCatalogEncryptionSettings */
-	static readonly GET_DATA_CATALOG_ENCRYPTION_SETTINGS =
+	static readonly actionGetDataCatalogEncryptionSettings =
 		"glue:GetDataCatalogEncryptionSettings";
 	/** [PermissionManagement] glue:GetDataPreviewStatement */
-	static readonly GET_DATA_PREVIEW_STATEMENT = "glue:GetDataPreviewStatement";
+	static readonly actionGetDataPreviewStatement =
+		"glue:GetDataPreviewStatement";
 	/** [Read] glue:GetDataQualityModel */
-	static readonly GET_DATA_QUALITY_MODEL = "glue:GetDataQualityModel";
+	static readonly actionGetDataQualityModel = "glue:GetDataQualityModel";
 	/** [Read] glue:GetDataQualityModelResult */
-	static readonly GET_DATA_QUALITY_MODEL_RESULT =
+	static readonly actionGetDataQualityModelResult =
 		"glue:GetDataQualityModelResult";
 	/** [Read] glue:GetDataQualityResult */
-	static readonly GET_DATA_QUALITY_RESULT = "glue:GetDataQualityResult";
+	static readonly actionGetDataQualityResult = "glue:GetDataQualityResult";
 	/** [Read] glue:GetDataQualityRuleRecommendationRun */
-	static readonly GET_DATA_QUALITY_RULE_RECOMMENDATION_RUN =
+	static readonly actionGetDataQualityRuleRecommendationRun =
 		"glue:GetDataQualityRuleRecommendationRun";
 	/** [Read] glue:GetDataQualityRuleset */
-	static readonly GET_DATA_QUALITY_RULESET = "glue:GetDataQualityRuleset";
+	static readonly actionGetDataQualityRuleset = "glue:GetDataQualityRuleset";
 	/** [Read] glue:GetDataQualityRulesetEvaluationRun */
-	static readonly GET_DATA_QUALITY_RULESET_EVALUATION_RUN =
+	static readonly actionGetDataQualityRulesetEvaluationRun =
 		"glue:GetDataQualityRulesetEvaluationRun";
 	/** [Read] glue:GetDatabase */
-	static readonly GET_DATABASE = "glue:GetDatabase";
+	static readonly actionGetDatabase = "glue:GetDatabase";
 	/** [Read] glue:GetDatabases */
-	static readonly GET_DATABASES = "glue:GetDatabases";
+	static readonly actionGetDatabases = "glue:GetDatabases";
 	/** [Read] glue:GetDataflowGraph */
-	static readonly GET_DATAFLOW_GRAPH = "glue:GetDataflowGraph";
+	static readonly actionGetDataflowGraph = "glue:GetDataflowGraph";
 	/** [Read] glue:GetDevEndpoint */
-	static readonly GET_DEV_ENDPOINT = "glue:GetDevEndpoint";
+	static readonly actionGetDevEndpoint = "glue:GetDevEndpoint";
 	/** [Read] glue:GetDevEndpoints */
-	static readonly GET_DEV_ENDPOINTS = "glue:GetDevEndpoints";
+	static readonly actionGetDevEndpoints = "glue:GetDevEndpoints";
 	/** [Read] glue:GetEntityRecords */
-	static readonly GET_ENTITY_RECORDS = "glue:GetEntityRecords";
+	static readonly actionGetEntityRecords = "glue:GetEntityRecords";
 	/** [PermissionManagement] glue:GetEnvironment */
-	static readonly GET_ENVIRONMENT = "glue:GetEnvironment";
+	static readonly actionGetEnvironment = "glue:GetEnvironment";
 	/** [PermissionManagement] glue:GetExecutors */
-	static readonly GET_EXECUTORS = "glue:GetExecutors";
+	static readonly actionGetExecutors = "glue:GetExecutors";
 	/** [PermissionManagement] glue:GetExecutorsThreads */
-	static readonly GET_EXECUTORS_THREADS = "glue:GetExecutorsThreads";
+	static readonly actionGetExecutorsThreads = "glue:GetExecutorsThreads";
 	/** [Read] glue:GetGeneratedCode */
-	static readonly GET_GENERATED_CODE = "glue:GetGeneratedCode";
+	static readonly actionGetGeneratedCode = "glue:GetGeneratedCode";
 	/** [Read] glue:GetGlueIdentityCenterConfiguration */
-	static readonly GET_GLUE_IDENTITY_CENTER_CONFIGURATION =
+	static readonly actionGetGlueIdentityCenterConfiguration =
 		"glue:GetGlueIdentityCenterConfiguration";
 	/** [Read] glue:GetIntegrationResourceProperty */
-	static readonly GET_INTEGRATION_RESOURCE_PROPERTY =
+	static readonly actionGetIntegrationResourceProperty =
 		"glue:GetIntegrationResourceProperty";
 	/** [Read] glue:GetIntegrationTableProperties */
-	static readonly GET_INTEGRATION_TABLE_PROPERTIES =
+	static readonly actionGetIntegrationTableProperties =
 		"glue:GetIntegrationTableProperties";
 	/** [Read] glue:GetJob */
-	static readonly GET_JOB = "glue:GetJob";
+	static readonly actionGetJob = "glue:GetJob";
 	/** [Read] glue:GetJobBookmark */
-	static readonly GET_JOB_BOOKMARK = "glue:GetJobBookmark";
+	static readonly actionGetJobBookmark = "glue:GetJobBookmark";
 	/** [Read] glue:GetJobRun */
-	static readonly GET_JOB_RUN = "glue:GetJobRun";
+	static readonly actionGetJobRun = "glue:GetJobRun";
 	/** [Read] glue:GetJobRuns */
-	static readonly GET_JOB_RUNS = "glue:GetJobRuns";
+	static readonly actionGetJobRuns = "glue:GetJobRuns";
 	/** [Read] glue:GetJobUpgradeAnalysis */
-	static readonly GET_JOB_UPGRADE_ANALYSIS = "glue:GetJobUpgradeAnalysis";
+	static readonly actionGetJobUpgradeAnalysis = "glue:GetJobUpgradeAnalysis";
 	/** [Read] glue:GetJobs */
-	static readonly GET_JOBS = "glue:GetJobs";
+	static readonly actionGetJobs = "glue:GetJobs";
 	/** [PermissionManagement] glue:GetLogParsingStatus */
-	static readonly GET_LOG_PARSING_STATUS = "glue:GetLogParsingStatus";
+	static readonly actionGetLogParsingStatus = "glue:GetLogParsingStatus";
 	/** [Read] glue:GetMLTaskRun */
-	static readonly GET_ML_TASK_RUN = "glue:GetMLTaskRun";
+	static readonly actionGetMLTaskRun = "glue:GetMLTaskRun";
 	/** [List] glue:GetMLTaskRuns */
-	static readonly GET_ML_TASK_RUNS = "glue:GetMLTaskRuns";
+	static readonly actionGetMLTaskRuns = "glue:GetMLTaskRuns";
 	/** [Read] glue:GetMLTransform */
-	static readonly GET_ML_TRANSFORM = "glue:GetMLTransform";
+	static readonly actionGetMLTransform = "glue:GetMLTransform";
 	/** [List] glue:GetMLTransforms */
-	static readonly GET_ML_TRANSFORMS = "glue:GetMLTransforms";
+	static readonly actionGetMLTransforms = "glue:GetMLTransforms";
 	/** [Read] glue:GetMapping */
-	static readonly GET_MAPPING = "glue:GetMapping";
+	static readonly actionGetMapping = "glue:GetMapping";
 	/** [PermissionManagement] glue:GetNotebookInstanceStatus */
-	static readonly GET_NOTEBOOK_INSTANCE_STATUS =
+	static readonly actionGetNotebookInstanceStatus =
 		"glue:GetNotebookInstanceStatus";
 	/** [Read] glue:GetPartition */
-	static readonly GET_PARTITION = "glue:GetPartition";
+	static readonly actionGetPartition = "glue:GetPartition";
 	/** [Read] glue:GetPartitionIndexes */
-	static readonly GET_PARTITION_INDEXES = "glue:GetPartitionIndexes";
+	static readonly actionGetPartitionIndexes = "glue:GetPartitionIndexes";
 	/** [Read] glue:GetPartitions */
-	static readonly GET_PARTITIONS = "glue:GetPartitions";
+	static readonly actionGetPartitions = "glue:GetPartitions";
 	/** [Read] glue:GetPlan */
-	static readonly GET_PLAN = "glue:GetPlan";
+	static readonly actionGetPlan = "glue:GetPlan";
 	/** [PermissionManagement] glue:GetQueries */
-	static readonly GET_QUERIES = "glue:GetQueries";
+	static readonly actionGetQueries = "glue:GetQueries";
 	/** [PermissionManagement] glue:GetQuery */
-	static readonly GET_QUERY = "glue:GetQuery";
+	static readonly actionGetQuery = "glue:GetQuery";
 	/** [PermissionManagement] glue:GetRecipeAction */
-	static readonly GET_RECIPE_ACTION = "glue:GetRecipeAction";
+	static readonly actionGetRecipeAction = "glue:GetRecipeAction";
 	/** [Read] glue:GetRegistry */
-	static readonly GET_REGISTRY = "glue:GetRegistry";
+	static readonly actionGetRegistry = "glue:GetRegistry";
 	/** [Read] glue:GetResourcePolicies */
-	static readonly GET_RESOURCE_POLICIES = "glue:GetResourcePolicies";
+	static readonly actionGetResourcePolicies = "glue:GetResourcePolicies";
 	/** [Read] glue:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "glue:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "glue:GetResourcePolicy";
 	/** [Read] glue:GetSchema */
-	static readonly GET_SCHEMA = "glue:GetSchema";
+	static readonly actionGetSchema = "glue:GetSchema";
 	/** [Read] glue:GetSchemaByDefinition */
-	static readonly GET_SCHEMA_BY_DEFINITION = "glue:GetSchemaByDefinition";
+	static readonly actionGetSchemaByDefinition = "glue:GetSchemaByDefinition";
 	/** [Read] glue:GetSchemaVersion */
-	static readonly GET_SCHEMA_VERSION = "glue:GetSchemaVersion";
+	static readonly actionGetSchemaVersion = "glue:GetSchemaVersion";
 	/** [Read] glue:GetSchemaVersionsDiff */
-	static readonly GET_SCHEMA_VERSIONS_DIFF = "glue:GetSchemaVersionsDiff";
+	static readonly actionGetSchemaVersionsDiff = "glue:GetSchemaVersionsDiff";
 	/** [Read] glue:GetSecurityConfiguration */
-	static readonly GET_SECURITY_CONFIGURATION = "glue:GetSecurityConfiguration";
+	static readonly actionGetSecurityConfiguration =
+		"glue:GetSecurityConfiguration";
 	/** [Read] glue:GetSecurityConfigurations */
-	static readonly GET_SECURITY_CONFIGURATIONS =
+	static readonly actionGetSecurityConfigurations =
 		"glue:GetSecurityConfigurations";
 	/** [Read] glue:GetSession */
-	static readonly GET_SESSION = "glue:GetSession";
+	static readonly actionGetSession = "glue:GetSession";
 	/** [Read] glue:GetSessionEndpoint */
-	static readonly GET_SESSION_ENDPOINT = "glue:GetSessionEndpoint";
+	static readonly actionGetSessionEndpoint = "glue:GetSessionEndpoint";
 	/** [PermissionManagement] glue:GetStage */
-	static readonly GET_STAGE = "glue:GetStage";
+	static readonly actionGetStage = "glue:GetStage";
 	/** [PermissionManagement] glue:GetStageAttempt */
-	static readonly GET_STAGE_ATTEMPT = "glue:GetStageAttempt";
+	static readonly actionGetStageAttempt = "glue:GetStageAttempt";
 	/** [PermissionManagement] glue:GetStageAttemptTaskList */
-	static readonly GET_STAGE_ATTEMPT_TASK_LIST = "glue:GetStageAttemptTaskList";
+	static readonly actionGetStageAttemptTaskList =
+		"glue:GetStageAttemptTaskList";
 	/** [PermissionManagement] glue:GetStageAttemptTaskSummary */
-	static readonly GET_STAGE_ATTEMPT_TASK_SUMMARY =
+	static readonly actionGetStageAttemptTaskSummary =
 		"glue:GetStageAttemptTaskSummary";
 	/** [PermissionManagement] glue:GetStageFiles */
-	static readonly GET_STAGE_FILES = "glue:GetStageFiles";
+	static readonly actionGetStageFiles = "glue:GetStageFiles";
 	/** [PermissionManagement] glue:GetStages */
-	static readonly GET_STAGES = "glue:GetStages";
+	static readonly actionGetStages = "glue:GetStages";
 	/** [Read] glue:GetStatement */
-	static readonly GET_STATEMENT = "glue:GetStatement";
+	static readonly actionGetStatement = "glue:GetStatement";
 	/** [PermissionManagement] glue:GetStorage */
-	static readonly GET_STORAGE = "glue:GetStorage";
+	static readonly actionGetStorage = "glue:GetStorage";
 	/** [PermissionManagement] glue:GetStorageUnit */
-	static readonly GET_STORAGE_UNIT = "glue:GetStorageUnit";
+	static readonly actionGetStorageUnit = "glue:GetStorageUnit";
 	/** [Read] glue:GetTable */
-	static readonly GET_TABLE = "glue:GetTable";
+	static readonly actionGetTable = "glue:GetTable";
 	/** [Read] glue:GetTableOptimizer */
-	static readonly GET_TABLE_OPTIMIZER = "glue:GetTableOptimizer";
+	static readonly actionGetTableOptimizer = "glue:GetTableOptimizer";
 	/** [Read] glue:GetTableVersion */
-	static readonly GET_TABLE_VERSION = "glue:GetTableVersion";
+	static readonly actionGetTableVersion = "glue:GetTableVersion";
 	/** [Read] glue:GetTableVersions */
-	static readonly GET_TABLE_VERSIONS = "glue:GetTableVersions";
+	static readonly actionGetTableVersions = "glue:GetTableVersions";
 	/** [Read] glue:GetTables */
-	static readonly GET_TABLES = "glue:GetTables";
+	static readonly actionGetTables = "glue:GetTables";
 	/** [Read] glue:GetTags */
-	static readonly GET_TAGS = "glue:GetTags";
+	static readonly actionGetTags = "glue:GetTags";
 	/** [Read] glue:GetTrigger */
-	static readonly GET_TRIGGER = "glue:GetTrigger";
+	static readonly actionGetTrigger = "glue:GetTrigger";
 	/** [Read] glue:GetTriggers */
-	static readonly GET_TRIGGERS = "glue:GetTriggers";
+	static readonly actionGetTriggers = "glue:GetTriggers";
 	/** [Read] glue:GetUsageProfile */
-	static readonly GET_USAGE_PROFILE = "glue:GetUsageProfile";
+	static readonly actionGetUsageProfile = "glue:GetUsageProfile";
 	/** [Read] glue:GetUserDefinedFunction */
-	static readonly GET_USER_DEFINED_FUNCTION = "glue:GetUserDefinedFunction";
+	static readonly actionGetUserDefinedFunction = "glue:GetUserDefinedFunction";
 	/** [Read] glue:GetUserDefinedFunctions */
-	static readonly GET_USER_DEFINED_FUNCTIONS = "glue:GetUserDefinedFunctions";
+	static readonly actionGetUserDefinedFunctions =
+		"glue:GetUserDefinedFunctions";
 	/** [Read] glue:GetWorkflow */
-	static readonly GET_WORKFLOW = "glue:GetWorkflow";
+	static readonly actionGetWorkflow = "glue:GetWorkflow";
 	/** [Read] glue:GetWorkflowRun */
-	static readonly GET_WORKFLOW_RUN = "glue:GetWorkflowRun";
+	static readonly actionGetWorkflowRun = "glue:GetWorkflowRun";
 	/** [Read] glue:GetWorkflowRunProperties */
-	static readonly GET_WORKFLOW_RUN_PROPERTIES = "glue:GetWorkflowRunProperties";
+	static readonly actionGetWorkflowRunProperties =
+		"glue:GetWorkflowRunProperties";
 	/** [Read] glue:GetWorkflowRuns */
-	static readonly GET_WORKFLOW_RUNS = "glue:GetWorkflowRuns";
+	static readonly actionGetWorkflowRuns = "glue:GetWorkflowRuns";
 	/** [PermissionManagement] glue:GlueNotebookAuthorize */
-	static readonly GLUE_NOTEBOOK_AUTHORIZE = "glue:GlueNotebookAuthorize";
+	static readonly GlueNotebookAuthorize = "glue:GlueNotebookAuthorize";
 	/** [PermissionManagement] glue:GlueNotebookRefreshCredentials */
-	static readonly GLUE_NOTEBOOK_REFRESH_CREDENTIALS =
+	static readonly GlueNotebookRefreshCredentials =
 		"glue:GlueNotebookRefreshCredentials";
 	/** [Write] glue:ImportCatalogToGlue */
-	static readonly IMPORT_CATALOG_TO_GLUE = "glue:ImportCatalogToGlue";
+	static readonly ImportCatalogToGlue = "glue:ImportCatalogToGlue";
 	/** [List] glue:ListBlueprints */
-	static readonly LIST_BLUEPRINTS = "glue:ListBlueprints";
+	static readonly ListBlueprints = "glue:ListBlueprints";
 	/** [Read] glue:ListColumnStatisticsTaskRuns */
-	static readonly LIST_COLUMN_STATISTICS_TASK_RUNS =
+	static readonly ListColumnStatisticsTaskRuns =
 		"glue:ListColumnStatisticsTaskRuns";
 	/** [PermissionManagement] glue:ListConnectionTypes */
-	static readonly LIST_CONNECTION_TYPES = "glue:ListConnectionTypes";
+	static readonly ListConnectionTypes = "glue:ListConnectionTypes";
 	/** [List] glue:ListCrawlers */
-	static readonly LIST_CRAWLERS = "glue:ListCrawlers";
+	static readonly ListCrawlers = "glue:ListCrawlers";
 	/** [List] glue:ListCrawls */
-	static readonly LIST_CRAWLS = "glue:ListCrawls";
+	static readonly ListCrawls = "glue:ListCrawls";
 	/** [List] glue:ListCustomEntityTypes */
-	static readonly LIST_CUSTOM_ENTITY_TYPES = "glue:ListCustomEntityTypes";
+	static readonly ListCustomEntityTypes = "glue:ListCustomEntityTypes";
 	/** [List] glue:ListDataQualityResults */
-	static readonly LIST_DATA_QUALITY_RESULTS = "glue:ListDataQualityResults";
+	static readonly ListDataQualityResults = "glue:ListDataQualityResults";
 	/** [List] glue:ListDataQualityRuleRecommendationRuns */
-	static readonly LIST_DATA_QUALITY_RULE_RECOMMENDATION_RUNS =
+	static readonly ListDataQualityRuleRecommendationRuns =
 		"glue:ListDataQualityRuleRecommendationRuns";
 	/** [List] glue:ListDataQualityRulesetEvaluationRuns */
-	static readonly LIST_DATA_QUALITY_RULESET_EVALUATION_RUNS =
+	static readonly ListDataQualityRulesetEvaluationRuns =
 		"glue:ListDataQualityRulesetEvaluationRuns";
 	/** [List] glue:ListDataQualityRulesets */
-	static readonly LIST_DATA_QUALITY_RULESETS = "glue:ListDataQualityRulesets";
+	static readonly ListDataQualityRulesets = "glue:ListDataQualityRulesets";
 	/** [List] glue:ListDevEndpoints */
-	static readonly LIST_DEV_ENDPOINTS = "glue:ListDevEndpoints";
+	static readonly ListDevEndpoints = "glue:ListDevEndpoints";
 	/** [PermissionManagement] glue:ListEntities */
-	static readonly LIST_ENTITIES = "glue:ListEntities";
+	static readonly ListEntities = "glue:ListEntities";
 	/** [List] glue:ListIntegrationResourceProperties */
-	static readonly LIST_INTEGRATION_RESOURCE_PROPERTIES =
+	static readonly ListIntegrationResourceProperties =
 		"glue:ListIntegrationResourceProperties";
 	/** [List] glue:ListJobUpgradeAnalyses */
-	static readonly LIST_JOB_UPGRADE_ANALYSES = "glue:ListJobUpgradeAnalyses";
+	static readonly ListJobUpgradeAnalyses = "glue:ListJobUpgradeAnalyses";
 	/** [List] glue:ListJobs */
-	static readonly LIST_JOBS = "glue:ListJobs";
+	static readonly ListJobs = "glue:ListJobs";
 	/** [List] glue:ListMLTransforms */
-	static readonly LIST_ML_TRANSFORMS = "glue:ListMLTransforms";
+	static readonly ListMLTransforms = "glue:ListMLTransforms";
 	/** [List] glue:ListRegistries */
-	static readonly LIST_REGISTRIES = "glue:ListRegistries";
+	static readonly ListRegistries = "glue:ListRegistries";
 	/** [List] glue:ListSchemaVersions */
-	static readonly LIST_SCHEMA_VERSIONS = "glue:ListSchemaVersions";
+	static readonly ListSchemaVersions = "glue:ListSchemaVersions";
 	/** [List] glue:ListSchemas */
-	static readonly LIST_SCHEMAS = "glue:ListSchemas";
+	static readonly ListSchemas = "glue:ListSchemas";
 	/** [List] glue:ListSessions */
-	static readonly LIST_SESSIONS = "glue:ListSessions";
+	static readonly ListSessions = "glue:ListSessions";
 	/** [List] glue:ListStatements */
-	static readonly LIST_STATEMENTS = "glue:ListStatements";
+	static readonly ListStatements = "glue:ListStatements";
 	/** [List] glue:ListTableOptimizerRuns */
-	static readonly LIST_TABLE_OPTIMIZER_RUNS = "glue:ListTableOptimizerRuns";
+	static readonly ListTableOptimizerRuns = "glue:ListTableOptimizerRuns";
 	/** [List] glue:ListTriggers */
-	static readonly LIST_TRIGGERS = "glue:ListTriggers";
+	static readonly ListTriggers = "glue:ListTriggers";
 	/** [List] glue:ListUsageProfiles */
-	static readonly LIST_USAGE_PROFILES = "glue:ListUsageProfiles";
+	static readonly ListUsageProfiles = "glue:ListUsageProfiles";
 	/** [List] glue:ListWorkflows */
-	static readonly LIST_WORKFLOWS = "glue:ListWorkflows";
+	static readonly ListWorkflows = "glue:ListWorkflows";
 	/** [PermissionManagement] glue:ManagedConnector */
-	static readonly MANAGED_CONNECTOR = "glue:ManagedConnector";
+	static readonly ManagedConnector = "glue:ManagedConnector";
 	/** [Write] glue:ModifyIntegration */
-	static readonly MODIFY_INTEGRATION = "glue:ModifyIntegration";
+	static readonly ModifyIntegration = "glue:ModifyIntegration";
 	/** [Write] glue:NotifyEvent */
-	static readonly NOTIFY_EVENT = "glue:NotifyEvent";
+	static readonly NotifyEvent = "glue:NotifyEvent";
 	/** [Write] glue:PassConnection */
-	static readonly PASS_CONNECTION = "glue:PassConnection";
+	static readonly PassConnection = "glue:PassConnection";
 	/** [Write] glue:PublishDataQuality */
-	static readonly PUBLISH_DATA_QUALITY = "glue:PublishDataQuality";
+	static readonly PublishDataQuality = "glue:PublishDataQuality";
 	/** [Write] glue:PutDataCatalogEncryptionSettings */
-	static readonly PUT_DATA_CATALOG_ENCRYPTION_SETTINGS =
+	static readonly PutDataCatalogEncryptionSettings =
 		"glue:PutDataCatalogEncryptionSettings";
 	/** [Write] glue:PutDataQualityProfileAnnotation */
-	static readonly PUT_DATA_QUALITY_PROFILE_ANNOTATION =
+	static readonly PutDataQualityProfileAnnotation =
 		"glue:PutDataQualityProfileAnnotation";
 	/** [Write] glue:PutDataQualityStatisticAnnotation */
-	static readonly PUT_DATA_QUALITY_STATISTIC_ANNOTATION =
+	static readonly PutDataQualityStatisticAnnotation =
 		"glue:PutDataQualityStatisticAnnotation";
 	/** [PermissionManagement] glue:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "glue:PutResourcePolicy";
+	static readonly PutResourcePolicy = "glue:PutResourcePolicy";
 	/** [Write] glue:PutSchemaVersionMetadata */
-	static readonly PUT_SCHEMA_VERSION_METADATA = "glue:PutSchemaVersionMetadata";
+	static readonly PutSchemaVersionMetadata = "glue:PutSchemaVersionMetadata";
 	/** [Write] glue:PutWorkflowRunProperties */
-	static readonly PUT_WORKFLOW_RUN_PROPERTIES = "glue:PutWorkflowRunProperties";
+	static readonly PutWorkflowRunProperties = "glue:PutWorkflowRunProperties";
 	/** [List] glue:QuerySchemaVersionMetadata */
-	static readonly QUERY_SCHEMA_VERSION_METADATA =
+	static readonly QuerySchemaVersionMetadata =
 		"glue:QuerySchemaVersionMetadata";
 	/** [PermissionManagement] glue:RefreshOAuth2Tokens */
-	static readonly REFRESH_O_AUTH2_TOKENS = "glue:RefreshOAuth2Tokens";
+	static readonly RefreshOAuth2Tokens = "glue:RefreshOAuth2Tokens";
 	/** [Write] glue:RegisterConnectionType */
-	static readonly REGISTER_CONNECTION_TYPE = "glue:RegisterConnectionType";
+	static readonly RegisterConnectionType = "glue:RegisterConnectionType";
 	/** [Write] glue:RegisterSchemaVersion */
-	static readonly REGISTER_SCHEMA_VERSION = "glue:RegisterSchemaVersion";
+	static readonly RegisterSchemaVersion = "glue:RegisterSchemaVersion";
 	/** [Write] glue:RemoveSchemaVersionMetadata */
-	static readonly REMOVE_SCHEMA_VERSION_METADATA =
+	static readonly RemoveSchemaVersionMetadata =
 		"glue:RemoveSchemaVersionMetadata";
 	/** [Write] glue:RenameTable */
-	static readonly RENAME_TABLE = "glue:RenameTable";
+	static readonly RenameTable = "glue:RenameTable";
 	/** [PermissionManagement] glue:RequestLogParsing */
-	static readonly REQUEST_LOG_PARSING = "glue:RequestLogParsing";
+	static readonly RequestLogParsing = "glue:RequestLogParsing";
 	/** [Write] glue:ResetJobBookmark */
-	static readonly RESET_JOB_BOOKMARK = "glue:ResetJobBookmark";
+	static readonly ResetJobBookmark = "glue:ResetJobBookmark";
 	/** [Write] glue:ResumeWorkflowRun */
-	static readonly RESUME_WORKFLOW_RUN = "glue:ResumeWorkflowRun";
+	static readonly ResumeWorkflowRun = "glue:ResumeWorkflowRun";
 	/** [PermissionManagement] glue:RunDataPreviewStatement */
-	static readonly RUN_DATA_PREVIEW_STATEMENT = "glue:RunDataPreviewStatement";
+	static readonly RunDataPreviewStatement = "glue:RunDataPreviewStatement";
 	/** [Write] glue:RunStatement */
-	static readonly RUN_STATEMENT = "glue:RunStatement";
+	static readonly RunStatement = "glue:RunStatement";
 	/** [Read] glue:SearchTables */
-	static readonly SEARCH_TABLES = "glue:SearchTables";
+	static readonly SearchTables = "glue:SearchTables";
 	/** [Write] glue:SendFeedback */
-	static readonly SEND_FEEDBACK = "glue:SendFeedback";
+	static readonly SendFeedback = "glue:SendFeedback";
 	/** [PermissionManagement] glue:SendRecipeAction */
-	static readonly SEND_RECIPE_ACTION = "glue:SendRecipeAction";
+	static readonly SendRecipeAction = "glue:SendRecipeAction";
 	/** [Write] glue:StartBlueprintRun */
-	static readonly START_BLUEPRINT_RUN = "glue:StartBlueprintRun";
+	static readonly StartBlueprintRun = "glue:StartBlueprintRun";
 	/** [Write] glue:StartColumnStatisticsTaskRun */
-	static readonly START_COLUMN_STATISTICS_TASK_RUN =
+	static readonly StartColumnStatisticsTaskRun =
 		"glue:StartColumnStatisticsTaskRun";
 	/** [Write] glue:StartColumnStatisticsTaskRunSchedule */
-	static readonly START_COLUMN_STATISTICS_TASK_RUN_SCHEDULE =
+	static readonly StartColumnStatisticsTaskRunSchedule =
 		"glue:StartColumnStatisticsTaskRunSchedule";
 	/** [Write] glue:StartCompletion */
-	static readonly START_COMPLETION = "glue:StartCompletion";
+	static readonly StartCompletion = "glue:StartCompletion";
 	/** [Write] glue:StartCrawler */
-	static readonly START_CRAWLER = "glue:StartCrawler";
+	static readonly StartCrawler = "glue:StartCrawler";
 	/** [Write] glue:StartCrawlerSchedule */
-	static readonly START_CRAWLER_SCHEDULE = "glue:StartCrawlerSchedule";
+	static readonly StartCrawlerSchedule = "glue:StartCrawlerSchedule";
 	/** [Write] glue:StartDataQualityRuleRecommendationRun */
-	static readonly START_DATA_QUALITY_RULE_RECOMMENDATION_RUN =
+	static readonly StartDataQualityRuleRecommendationRun =
 		"glue:StartDataQualityRuleRecommendationRun";
 	/** [Write] glue:StartDataQualityRulesetEvaluationRun */
-	static readonly START_DATA_QUALITY_RULESET_EVALUATION_RUN =
+	static readonly StartDataQualityRulesetEvaluationRun =
 		"glue:StartDataQualityRulesetEvaluationRun";
 	/** [Write] glue:StartExportLabelsTaskRun */
-	static readonly START_EXPORT_LABELS_TASK_RUN =
-		"glue:StartExportLabelsTaskRun";
+	static readonly StartExportLabelsTaskRun = "glue:StartExportLabelsTaskRun";
 	/** [Write] glue:StartImportLabelsTaskRun */
-	static readonly START_IMPORT_LABELS_TASK_RUN =
-		"glue:StartImportLabelsTaskRun";
+	static readonly StartImportLabelsTaskRun = "glue:StartImportLabelsTaskRun";
 	/** [Write] glue:StartJobRun */
-	static readonly START_JOB_RUN = "glue:StartJobRun";
+	static readonly StartJobRun = "glue:StartJobRun";
 	/** [Write] glue:StartJobUpgradeAnalysis */
-	static readonly START_JOB_UPGRADE_ANALYSIS = "glue:StartJobUpgradeAnalysis";
+	static readonly StartJobUpgradeAnalysis = "glue:StartJobUpgradeAnalysis";
 	/** [Write] glue:StartMLEvaluationTaskRun */
-	static readonly START_ML_EVALUATION_TASK_RUN =
-		"glue:StartMLEvaluationTaskRun";
+	static readonly StartMLEvaluationTaskRun = "glue:StartMLEvaluationTaskRun";
 	/** [Write] glue:StartMLLabelingSetGenerationTaskRun */
-	static readonly START_ML_LABELING_SET_GENERATION_TASK_RUN =
+	static readonly StartMLLabelingSetGenerationTaskRun =
 		"glue:StartMLLabelingSetGenerationTaskRun";
 	/** [PermissionManagement] glue:StartNotebook */
-	static readonly START_NOTEBOOK = "glue:StartNotebook";
+	static readonly StartNotebook = "glue:StartNotebook";
 	/** [Write] glue:StartTrigger */
-	static readonly START_TRIGGER = "glue:StartTrigger";
+	static readonly StartTrigger = "glue:StartTrigger";
 	/** [Write] glue:StartWorkflowRun */
-	static readonly START_WORKFLOW_RUN = "glue:StartWorkflowRun";
+	static readonly StartWorkflowRun = "glue:StartWorkflowRun";
 	/** [Write] glue:StopColumnStatisticsTaskRun */
-	static readonly STOP_COLUMN_STATISTICS_TASK_RUN =
+	static readonly StopColumnStatisticsTaskRun =
 		"glue:StopColumnStatisticsTaskRun";
 	/** [Write] glue:StopColumnStatisticsTaskRunSchedule */
-	static readonly STOP_COLUMN_STATISTICS_TASK_RUN_SCHEDULE =
+	static readonly StopColumnStatisticsTaskRunSchedule =
 		"glue:StopColumnStatisticsTaskRunSchedule";
 	/** [Write] glue:StopCrawler */
-	static readonly STOP_CRAWLER = "glue:StopCrawler";
+	static readonly StopCrawler = "glue:StopCrawler";
 	/** [Write] glue:StopCrawlerSchedule */
-	static readonly STOP_CRAWLER_SCHEDULE = "glue:StopCrawlerSchedule";
+	static readonly StopCrawlerSchedule = "glue:StopCrawlerSchedule";
 	/** [Write] glue:StopJobUpgradeAnalysis */
-	static readonly STOP_JOB_UPGRADE_ANALYSIS = "glue:StopJobUpgradeAnalysis";
+	static readonly StopJobUpgradeAnalysis = "glue:StopJobUpgradeAnalysis";
 	/** [Write] glue:StopSession */
-	static readonly STOP_SESSION = "glue:StopSession";
+	static readonly StopSession = "glue:StopSession";
 	/** [Write] glue:StopTrigger */
-	static readonly STOP_TRIGGER = "glue:StopTrigger";
+	static readonly StopTrigger = "glue:StopTrigger";
 	/** [Write] glue:StopWorkflowRun */
-	static readonly STOP_WORKFLOW_RUN = "glue:StopWorkflowRun";
+	static readonly StopWorkflowRun = "glue:StopWorkflowRun";
 	/** [Tagging] glue:TagResource */
-	static readonly TAG_RESOURCE = "glue:TagResource";
+	static readonly TagResource = "glue:TagResource";
 	/** [PermissionManagement] glue:TerminateNotebook */
-	static readonly TERMINATE_NOTEBOOK = "glue:TerminateNotebook";
+	static readonly TerminateNotebook = "glue:TerminateNotebook";
 	/** [PermissionManagement] glue:TestConnection */
-	static readonly TEST_CONNECTION = "glue:TestConnection";
+	static readonly TestConnection = "glue:TestConnection";
 	/** [Tagging] glue:UntagResource */
-	static readonly UNTAG_RESOURCE = "glue:UntagResource";
+	static readonly UntagResource = "glue:UntagResource";
 	/** [Write] glue:UpdateBlueprint */
-	static readonly UPDATE_BLUEPRINT = "glue:UpdateBlueprint";
+	static readonly UpdateBlueprint = "glue:UpdateBlueprint";
 	/** [Write] glue:UpdateCatalog */
-	static readonly UPDATE_CATALOG = "glue:UpdateCatalog";
+	static readonly UpdateCatalog = "glue:UpdateCatalog";
 	/** [Write] glue:UpdateClassifier */
-	static readonly UPDATE_CLASSIFIER = "glue:UpdateClassifier";
+	static readonly UpdateClassifier = "glue:UpdateClassifier";
 	/** [Write] glue:UpdateColumnStatisticsForPartition */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_PARTITION =
+	static readonly UpdateColumnStatisticsForPartition =
 		"glue:UpdateColumnStatisticsForPartition";
 	/** [Write] glue:UpdateColumnStatisticsForTable */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_TABLE =
+	static readonly UpdateColumnStatisticsForTable =
 		"glue:UpdateColumnStatisticsForTable";
 	/** [Write] glue:UpdateColumnStatisticsTaskSettings */
-	static readonly UPDATE_COLUMN_STATISTICS_TASK_SETTINGS =
+	static readonly UpdateColumnStatisticsTaskSettings =
 		"glue:UpdateColumnStatisticsTaskSettings";
 	/** [Write] glue:UpdateConnection */
-	static readonly UPDATE_CONNECTION = "glue:UpdateConnection";
+	static readonly UpdateConnection = "glue:UpdateConnection";
 	/** [Write] glue:UpdateCrawler */
-	static readonly UPDATE_CRAWLER = "glue:UpdateCrawler";
+	static readonly UpdateCrawler = "glue:UpdateCrawler";
 	/** [Write] glue:UpdateCrawlerSchedule */
-	static readonly UPDATE_CRAWLER_SCHEDULE = "glue:UpdateCrawlerSchedule";
+	static readonly UpdateCrawlerSchedule = "glue:UpdateCrawlerSchedule";
 	/** [Write] glue:UpdateDataQualityRuleset */
-	static readonly UPDATE_DATA_QUALITY_RULESET = "glue:UpdateDataQualityRuleset";
+	static readonly UpdateDataQualityRuleset = "glue:UpdateDataQualityRuleset";
 	/** [Write] glue:UpdateDatabase */
-	static readonly UPDATE_DATABASE = "glue:UpdateDatabase";
+	static readonly UpdateDatabase = "glue:UpdateDatabase";
 	/** [Write] glue:UpdateDevEndpoint */
-	static readonly UPDATE_DEV_ENDPOINT = "glue:UpdateDevEndpoint";
+	static readonly UpdateDevEndpoint = "glue:UpdateDevEndpoint";
 	/** [Write] glue:UpdateGlueIdentityCenterConfiguration */
-	static readonly UPDATE_GLUE_IDENTITY_CENTER_CONFIGURATION =
+	static readonly UpdateGlueIdentityCenterConfiguration =
 		"glue:UpdateGlueIdentityCenterConfiguration";
 	/** [Write] glue:UpdateIntegrationResourceProperty */
-	static readonly UPDATE_INTEGRATION_RESOURCE_PROPERTY =
+	static readonly UpdateIntegrationResourceProperty =
 		"glue:UpdateIntegrationResourceProperty";
 	/** [Write] glue:UpdateIntegrationTableProperties */
-	static readonly UPDATE_INTEGRATION_TABLE_PROPERTIES =
+	static readonly UpdateIntegrationTableProperties =
 		"glue:UpdateIntegrationTableProperties";
 	/** [Write] glue:UpdateJob */
-	static readonly UPDATE_JOB = "glue:UpdateJob";
+	static readonly UpdateJob = "glue:UpdateJob";
 	/** [Write] glue:UpdateJobFromSourceControl */
-	static readonly UPDATE_JOB_FROM_SOURCE_CONTROL =
+	static readonly UpdateJobFromSourceControl =
 		"glue:UpdateJobFromSourceControl";
 	/** [Write] glue:UpdateMLTransform */
-	static readonly UPDATE_ML_TRANSFORM = "glue:UpdateMLTransform";
+	static readonly UpdateMLTransform = "glue:UpdateMLTransform";
 	/** [Write] glue:UpdatePartition */
-	static readonly UPDATE_PARTITION = "glue:UpdatePartition";
+	static readonly UpdatePartition = "glue:UpdatePartition";
 	/** [Write] glue:UpdateRegistry */
-	static readonly UPDATE_REGISTRY = "glue:UpdateRegistry";
+	static readonly UpdateRegistry = "glue:UpdateRegistry";
 	/** [Write] glue:UpdateSchema */
-	static readonly UPDATE_SCHEMA = "glue:UpdateSchema";
+	static readonly UpdateSchema = "glue:UpdateSchema";
 	/** [Write] glue:UpdateSourceControlFromJob */
-	static readonly UPDATE_SOURCE_CONTROL_FROM_JOB =
+	static readonly UpdateSourceControlFromJob =
 		"glue:UpdateSourceControlFromJob";
 	/** [Write] glue:UpdateTable */
-	static readonly UPDATE_TABLE = "glue:UpdateTable";
+	static readonly UpdateTable = "glue:UpdateTable";
 	/** [Write] glue:UpdateTableOptimizer */
-	static readonly UPDATE_TABLE_OPTIMIZER = "glue:UpdateTableOptimizer";
+	static readonly UpdateTableOptimizer = "glue:UpdateTableOptimizer";
 	/** [Write] glue:UpdateTrigger */
-	static readonly UPDATE_TRIGGER = "glue:UpdateTrigger";
+	static readonly UpdateTrigger = "glue:UpdateTrigger";
 	/** [Write] glue:UpdateUsageProfile */
-	static readonly UPDATE_USAGE_PROFILE = "glue:UpdateUsageProfile";
+	static readonly UpdateUsageProfile = "glue:UpdateUsageProfile";
 	/** [Write] glue:UpdateUserDefinedFunction */
-	static readonly UPDATE_USER_DEFINED_FUNCTION =
-		"glue:UpdateUserDefinedFunction";
+	static readonly UpdateUserDefinedFunction = "glue:UpdateUserDefinedFunction";
 	/** [Write] glue:UpdateWorkflow */
-	static readonly UPDATE_WORKFLOW = "glue:UpdateWorkflow";
+	static readonly UpdateWorkflow = "glue:UpdateWorkflow";
 	/** [Write] glue:UpgradeJob */
-	static readonly UPGRADE_JOB = "glue:UpgradeJob";
+	static readonly UpgradeJob = "glue:UpgradeJob";
 	/** [PermissionManagement] glue:UseGlueStudio */
-	static readonly USE_GLUE_STUDIO = "glue:UseGlueStudio";
+	static readonly UseGlueStudio = "glue:UseGlueStudio";
 	/** [Write] glue:UseMLTransforms */
-	static readonly USE_ML_TRANSFORMS = "glue:UseMLTransforms";
+	static readonly UseMLTransforms = "glue:UseMLTransforms";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GlueActions.ACCESS_DATA_QUALITY_RUNTIME_CONFIGURATION,
-		GlueActions.BATCH_GET_BLUEPRINTS,
-		GlueActions.BATCH_GET_CRAWLERS,
-		GlueActions.BATCH_GET_CUSTOM_ENTITY_TYPES,
-		GlueActions.BATCH_GET_DEV_ENDPOINTS,
-		GlueActions.BATCH_GET_JOBS,
-		GlueActions.BATCH_GET_PARTITION,
-		GlueActions.BATCH_GET_TABLE_OPTIMIZER,
-		GlueActions.BATCH_GET_TRIGGERS,
-		GlueActions.BATCH_GET_WORKFLOWS,
-		GlueActions.CHECK_SCHEMA_VERSION_VALIDITY,
-		GlueActions.GET_BLUEPRINT,
-		GlueActions.GET_BLUEPRINT_RUN,
-		GlueActions.GET_BLUEPRINT_RUNS,
-		GlueActions.GET_CATALOG,
-		GlueActions.GET_CATALOG_IMPORT_STATUS,
-		GlueActions.GET_CATALOGS,
-		GlueActions.GET_CLASSIFIER,
-		GlueActions.GET_CLASSIFIERS,
-		GlueActions.GET_COLUMN_STATISTICS_FOR_PARTITION,
-		GlueActions.GET_COLUMN_STATISTICS_FOR_TABLE,
-		GlueActions.GET_COLUMN_STATISTICS_TASK_RUN,
-		GlueActions.GET_COLUMN_STATISTICS_TASK_RUNS,
-		GlueActions.GET_COLUMN_STATISTICS_TASK_SETTINGS,
-		GlueActions.GET_COMPLETION,
-		GlueActions.GET_CONNECTION,
-		GlueActions.GET_CONNECTIONS,
-		GlueActions.GET_CRAWLER,
-		GlueActions.GET_CRAWLER_METRICS,
-		GlueActions.GET_CRAWLERS,
-		GlueActions.GET_CUSTOM_ENTITY_TYPE,
-		GlueActions.GET_DASHBOARD_URL,
-		GlueActions.GET_DATA_CATALOG_ENCRYPTION_SETTINGS,
-		GlueActions.GET_DATA_QUALITY_MODEL,
-		GlueActions.GET_DATA_QUALITY_MODEL_RESULT,
-		GlueActions.GET_DATA_QUALITY_RESULT,
-		GlueActions.GET_DATA_QUALITY_RULE_RECOMMENDATION_RUN,
-		GlueActions.GET_DATA_QUALITY_RULESET,
-		GlueActions.GET_DATA_QUALITY_RULESET_EVALUATION_RUN,
-		GlueActions.GET_DATABASE,
-		GlueActions.GET_DATABASES,
-		GlueActions.GET_DATAFLOW_GRAPH,
-		GlueActions.GET_DEV_ENDPOINT,
-		GlueActions.GET_DEV_ENDPOINTS,
-		GlueActions.GET_ENTITY_RECORDS,
-		GlueActions.GET_GENERATED_CODE,
-		GlueActions.GET_GLUE_IDENTITY_CENTER_CONFIGURATION,
-		GlueActions.GET_INTEGRATION_RESOURCE_PROPERTY,
-		GlueActions.GET_INTEGRATION_TABLE_PROPERTIES,
-		GlueActions.GET_JOB,
-		GlueActions.GET_JOB_BOOKMARK,
-		GlueActions.GET_JOB_RUN,
-		GlueActions.GET_JOB_RUNS,
-		GlueActions.GET_JOB_UPGRADE_ANALYSIS,
-		GlueActions.GET_JOBS,
-		GlueActions.GET_ML_TASK_RUN,
-		GlueActions.GET_ML_TRANSFORM,
-		GlueActions.GET_MAPPING,
-		GlueActions.GET_PARTITION,
-		GlueActions.GET_PARTITION_INDEXES,
-		GlueActions.GET_PARTITIONS,
-		GlueActions.GET_PLAN,
-		GlueActions.GET_REGISTRY,
-		GlueActions.GET_RESOURCE_POLICIES,
-		GlueActions.GET_RESOURCE_POLICY,
-		GlueActions.GET_SCHEMA,
-		GlueActions.GET_SCHEMA_BY_DEFINITION,
-		GlueActions.GET_SCHEMA_VERSION,
-		GlueActions.GET_SCHEMA_VERSIONS_DIFF,
-		GlueActions.GET_SECURITY_CONFIGURATION,
-		GlueActions.GET_SECURITY_CONFIGURATIONS,
-		GlueActions.GET_SESSION,
-		GlueActions.GET_SESSION_ENDPOINT,
-		GlueActions.GET_STATEMENT,
-		GlueActions.GET_TABLE,
-		GlueActions.GET_TABLE_OPTIMIZER,
-		GlueActions.GET_TABLE_VERSION,
-		GlueActions.GET_TABLE_VERSIONS,
-		GlueActions.GET_TABLES,
-		GlueActions.GET_TAGS,
-		GlueActions.GET_TRIGGER,
-		GlueActions.GET_TRIGGERS,
-		GlueActions.GET_USAGE_PROFILE,
-		GlueActions.GET_USER_DEFINED_FUNCTION,
-		GlueActions.GET_USER_DEFINED_FUNCTIONS,
-		GlueActions.GET_WORKFLOW,
-		GlueActions.GET_WORKFLOW_RUN,
-		GlueActions.GET_WORKFLOW_RUN_PROPERTIES,
-		GlueActions.GET_WORKFLOW_RUNS,
-		GlueActions.LIST_COLUMN_STATISTICS_TASK_RUNS,
-		GlueActions.SEARCH_TABLES,
+	static readonly AllReadActions: string[] = [
+		GlueActions.AccessDataQualityRuntimeConfiguration,
+		GlueActions.BatchGetBlueprints,
+		GlueActions.BatchGetCrawlers,
+		GlueActions.BatchGetCustomEntityTypes,
+		GlueActions.BatchGetDevEndpoints,
+		GlueActions.BatchGetJobs,
+		GlueActions.BatchGetPartition,
+		GlueActions.BatchGetTableOptimizer,
+		GlueActions.BatchGetTriggers,
+		GlueActions.BatchGetWorkflows,
+		GlueActions.CheckSchemaVersionValidity,
+		GlueActions.actionGetBlueprint,
+		GlueActions.actionGetBlueprintRun,
+		GlueActions.actionGetBlueprintRuns,
+		GlueActions.actionGetCatalog,
+		GlueActions.actionGetCatalogImportStatus,
+		GlueActions.actionGetCatalogs,
+		GlueActions.actionGetClassifier,
+		GlueActions.actionGetClassifiers,
+		GlueActions.actionGetColumnStatisticsForPartition,
+		GlueActions.actionGetColumnStatisticsForTable,
+		GlueActions.actionGetColumnStatisticsTaskRun,
+		GlueActions.actionGetColumnStatisticsTaskRuns,
+		GlueActions.actionGetColumnStatisticsTaskSettings,
+		GlueActions.actionGetCompletion,
+		GlueActions.actionGetConnection,
+		GlueActions.actionGetConnections,
+		GlueActions.actionGetCrawler,
+		GlueActions.actionGetCrawlerMetrics,
+		GlueActions.actionGetCrawlers,
+		GlueActions.actionGetCustomEntityType,
+		GlueActions.actionGetDashboardUrl,
+		GlueActions.actionGetDataCatalogEncryptionSettings,
+		GlueActions.actionGetDataQualityModel,
+		GlueActions.actionGetDataQualityModelResult,
+		GlueActions.actionGetDataQualityResult,
+		GlueActions.actionGetDataQualityRuleRecommendationRun,
+		GlueActions.actionGetDataQualityRuleset,
+		GlueActions.actionGetDataQualityRulesetEvaluationRun,
+		GlueActions.actionGetDatabase,
+		GlueActions.actionGetDatabases,
+		GlueActions.actionGetDataflowGraph,
+		GlueActions.actionGetDevEndpoint,
+		GlueActions.actionGetDevEndpoints,
+		GlueActions.actionGetEntityRecords,
+		GlueActions.actionGetGeneratedCode,
+		GlueActions.actionGetGlueIdentityCenterConfiguration,
+		GlueActions.actionGetIntegrationResourceProperty,
+		GlueActions.actionGetIntegrationTableProperties,
+		GlueActions.actionGetJob,
+		GlueActions.actionGetJobBookmark,
+		GlueActions.actionGetJobRun,
+		GlueActions.actionGetJobRuns,
+		GlueActions.actionGetJobUpgradeAnalysis,
+		GlueActions.actionGetJobs,
+		GlueActions.actionGetMLTaskRun,
+		GlueActions.actionGetMLTransform,
+		GlueActions.actionGetMapping,
+		GlueActions.actionGetPartition,
+		GlueActions.actionGetPartitionIndexes,
+		GlueActions.actionGetPartitions,
+		GlueActions.actionGetPlan,
+		GlueActions.actionGetRegistry,
+		GlueActions.actionGetResourcePolicies,
+		GlueActions.actionGetResourcePolicy,
+		GlueActions.actionGetSchema,
+		GlueActions.actionGetSchemaByDefinition,
+		GlueActions.actionGetSchemaVersion,
+		GlueActions.actionGetSchemaVersionsDiff,
+		GlueActions.actionGetSecurityConfiguration,
+		GlueActions.actionGetSecurityConfigurations,
+		GlueActions.actionGetSession,
+		GlueActions.actionGetSessionEndpoint,
+		GlueActions.actionGetStatement,
+		GlueActions.actionGetTable,
+		GlueActions.actionGetTableOptimizer,
+		GlueActions.actionGetTableVersion,
+		GlueActions.actionGetTableVersions,
+		GlueActions.actionGetTables,
+		GlueActions.actionGetTags,
+		GlueActions.actionGetTrigger,
+		GlueActions.actionGetTriggers,
+		GlueActions.actionGetUsageProfile,
+		GlueActions.actionGetUserDefinedFunction,
+		GlueActions.actionGetUserDefinedFunctions,
+		GlueActions.actionGetWorkflow,
+		GlueActions.actionGetWorkflowRun,
+		GlueActions.actionGetWorkflowRunProperties,
+		GlueActions.actionGetWorkflowRuns,
+		GlueActions.ListColumnStatisticsTaskRuns,
+		GlueActions.SearchTables,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GlueActions.AUTHORIZE_INBOUND_INTEGRATION,
-		GlueActions.BATCH_CREATE_PARTITION,
-		GlueActions.BATCH_DELETE_CONNECTION,
-		GlueActions.BATCH_DELETE_PARTITION,
-		GlueActions.BATCH_DELETE_TABLE,
-		GlueActions.BATCH_DELETE_TABLE_VERSION,
-		GlueActions.BATCH_STOP_JOB_RUN,
-		GlueActions.BATCH_UPDATE_PARTITION,
-		GlueActions.CANCEL_DATA_QUALITY_RULE_RECOMMENDATION_RUN,
-		GlueActions.CANCEL_DATA_QUALITY_RULESET_EVALUATION_RUN,
-		GlueActions.CANCEL_ML_TASK_RUN,
-		GlueActions.CANCEL_STATEMENT,
-		GlueActions.CREATE_BLUEPRINT,
-		GlueActions.CREATE_CATALOG,
-		GlueActions.CREATE_CLASSIFIER,
-		GlueActions.CREATE_COLUMN_STATISTICS_TASK_SETTINGS,
-		GlueActions.CREATE_CONNECTION,
-		GlueActions.CREATE_CRAWLER,
-		GlueActions.CREATE_CUSTOM_ENTITY_TYPE,
-		GlueActions.CREATE_DATA_QUALITY_RULESET,
-		GlueActions.CREATE_DATABASE,
-		GlueActions.CREATE_DEV_ENDPOINT,
-		GlueActions.CREATE_GLUE_IDENTITY_CENTER_CONFIGURATION,
-		GlueActions.CREATE_INBOUND_INTEGRATION,
-		GlueActions.CREATE_INTEGRATION,
-		GlueActions.CREATE_INTEGRATION_RESOURCE_PROPERTY,
-		GlueActions.CREATE_INTEGRATION_TABLE_PROPERTIES,
-		GlueActions.CREATE_JOB,
-		GlueActions.CREATE_ML_TRANSFORM,
-		GlueActions.CREATE_PARTITION,
-		GlueActions.CREATE_PARTITION_INDEX,
-		GlueActions.CREATE_REGISTRY,
-		GlueActions.CREATE_SCHEMA,
-		GlueActions.CREATE_SCRIPT,
-		GlueActions.CREATE_SECURITY_CONFIGURATION,
-		GlueActions.CREATE_SESSION,
-		GlueActions.CREATE_TABLE,
-		GlueActions.CREATE_TABLE_OPTIMIZER,
-		GlueActions.CREATE_TRIGGER,
-		GlueActions.CREATE_USAGE_PROFILE,
-		GlueActions.CREATE_USER_DEFINED_FUNCTION,
-		GlueActions.CREATE_WORKFLOW,
-		GlueActions.DELETE_BLUEPRINT,
-		GlueActions.DELETE_CATALOG,
-		GlueActions.DELETE_CLASSIFIER,
-		GlueActions.DELETE_COLUMN_STATISTICS_FOR_PARTITION,
-		GlueActions.DELETE_COLUMN_STATISTICS_FOR_TABLE,
-		GlueActions.DELETE_COLUMN_STATISTICS_TASK_SETTINGS,
-		GlueActions.DELETE_CONNECTION,
-		GlueActions.DELETE_CONNECTION_TYPE,
-		GlueActions.DELETE_CRAWLER,
-		GlueActions.DELETE_CUSTOM_ENTITY_TYPE,
-		GlueActions.DELETE_DATA_QUALITY_RULESET,
-		GlueActions.DELETE_DATABASE,
-		GlueActions.DELETE_DEV_ENDPOINT,
-		GlueActions.DELETE_GLUE_IDENTITY_CENTER_CONFIGURATION,
-		GlueActions.DELETE_INTEGRATION,
-		GlueActions.DELETE_INTEGRATION_RESOURCE_PROPERTY,
-		GlueActions.DELETE_INTEGRATION_TABLE_PROPERTIES,
-		GlueActions.DELETE_JOB,
-		GlueActions.DELETE_ML_TRANSFORM,
-		GlueActions.DELETE_PARTITION,
-		GlueActions.DELETE_PARTITION_INDEX,
-		GlueActions.DELETE_REGISTRY,
-		GlueActions.DELETE_SCHEMA,
-		GlueActions.DELETE_SCHEMA_VERSIONS,
-		GlueActions.DELETE_SECURITY_CONFIGURATION,
-		GlueActions.DELETE_SESSION,
-		GlueActions.DELETE_TABLE,
-		GlueActions.DELETE_TABLE_OPTIMIZER,
-		GlueActions.DELETE_TABLE_VERSION,
-		GlueActions.DELETE_TRIGGER,
-		GlueActions.DELETE_USAGE_PROFILE,
-		GlueActions.DELETE_USER_DEFINED_FUNCTION,
-		GlueActions.DELETE_WORKFLOW,
-		GlueActions.FEDERATE_AUTHORIZATION,
-		GlueActions.IMPORT_CATALOG_TO_GLUE,
-		GlueActions.MODIFY_INTEGRATION,
-		GlueActions.NOTIFY_EVENT,
-		GlueActions.PASS_CONNECTION,
-		GlueActions.PUBLISH_DATA_QUALITY,
-		GlueActions.PUT_DATA_CATALOG_ENCRYPTION_SETTINGS,
-		GlueActions.PUT_DATA_QUALITY_PROFILE_ANNOTATION,
-		GlueActions.PUT_DATA_QUALITY_STATISTIC_ANNOTATION,
-		GlueActions.PUT_SCHEMA_VERSION_METADATA,
-		GlueActions.PUT_WORKFLOW_RUN_PROPERTIES,
-		GlueActions.REGISTER_CONNECTION_TYPE,
-		GlueActions.REGISTER_SCHEMA_VERSION,
-		GlueActions.REMOVE_SCHEMA_VERSION_METADATA,
-		GlueActions.RENAME_TABLE,
-		GlueActions.RESET_JOB_BOOKMARK,
-		GlueActions.RESUME_WORKFLOW_RUN,
-		GlueActions.RUN_STATEMENT,
-		GlueActions.SEND_FEEDBACK,
-		GlueActions.START_BLUEPRINT_RUN,
-		GlueActions.START_COLUMN_STATISTICS_TASK_RUN,
-		GlueActions.START_COLUMN_STATISTICS_TASK_RUN_SCHEDULE,
-		GlueActions.START_COMPLETION,
-		GlueActions.START_CRAWLER,
-		GlueActions.START_CRAWLER_SCHEDULE,
-		GlueActions.START_DATA_QUALITY_RULE_RECOMMENDATION_RUN,
-		GlueActions.START_DATA_QUALITY_RULESET_EVALUATION_RUN,
-		GlueActions.START_EXPORT_LABELS_TASK_RUN,
-		GlueActions.START_IMPORT_LABELS_TASK_RUN,
-		GlueActions.START_JOB_RUN,
-		GlueActions.START_JOB_UPGRADE_ANALYSIS,
-		GlueActions.START_ML_EVALUATION_TASK_RUN,
-		GlueActions.START_ML_LABELING_SET_GENERATION_TASK_RUN,
-		GlueActions.START_TRIGGER,
-		GlueActions.START_WORKFLOW_RUN,
-		GlueActions.STOP_COLUMN_STATISTICS_TASK_RUN,
-		GlueActions.STOP_COLUMN_STATISTICS_TASK_RUN_SCHEDULE,
-		GlueActions.STOP_CRAWLER,
-		GlueActions.STOP_CRAWLER_SCHEDULE,
-		GlueActions.STOP_JOB_UPGRADE_ANALYSIS,
-		GlueActions.STOP_SESSION,
-		GlueActions.STOP_TRIGGER,
-		GlueActions.STOP_WORKFLOW_RUN,
-		GlueActions.UPDATE_BLUEPRINT,
-		GlueActions.UPDATE_CATALOG,
-		GlueActions.UPDATE_CLASSIFIER,
-		GlueActions.UPDATE_COLUMN_STATISTICS_FOR_PARTITION,
-		GlueActions.UPDATE_COLUMN_STATISTICS_FOR_TABLE,
-		GlueActions.UPDATE_COLUMN_STATISTICS_TASK_SETTINGS,
-		GlueActions.UPDATE_CONNECTION,
-		GlueActions.UPDATE_CRAWLER,
-		GlueActions.UPDATE_CRAWLER_SCHEDULE,
-		GlueActions.UPDATE_DATA_QUALITY_RULESET,
-		GlueActions.UPDATE_DATABASE,
-		GlueActions.UPDATE_DEV_ENDPOINT,
-		GlueActions.UPDATE_GLUE_IDENTITY_CENTER_CONFIGURATION,
-		GlueActions.UPDATE_INTEGRATION_RESOURCE_PROPERTY,
-		GlueActions.UPDATE_INTEGRATION_TABLE_PROPERTIES,
-		GlueActions.UPDATE_JOB,
-		GlueActions.UPDATE_JOB_FROM_SOURCE_CONTROL,
-		GlueActions.UPDATE_ML_TRANSFORM,
-		GlueActions.UPDATE_PARTITION,
-		GlueActions.UPDATE_REGISTRY,
-		GlueActions.UPDATE_SCHEMA,
-		GlueActions.UPDATE_SOURCE_CONTROL_FROM_JOB,
-		GlueActions.UPDATE_TABLE,
-		GlueActions.UPDATE_TABLE_OPTIMIZER,
-		GlueActions.UPDATE_TRIGGER,
-		GlueActions.UPDATE_USAGE_PROFILE,
-		GlueActions.UPDATE_USER_DEFINED_FUNCTION,
-		GlueActions.UPDATE_WORKFLOW,
-		GlueActions.UPGRADE_JOB,
-		GlueActions.USE_ML_TRANSFORMS,
+	static readonly AllWriteActions: string[] = [
+		GlueActions.AuthorizeInboundIntegration,
+		GlueActions.BatchCreatePartition,
+		GlueActions.BatchDeleteConnection,
+		GlueActions.BatchDeletePartition,
+		GlueActions.BatchDeleteTable,
+		GlueActions.BatchDeleteTableVersion,
+		GlueActions.BatchStopJobRun,
+		GlueActions.BatchUpdatePartition,
+		GlueActions.CancelDataQualityRuleRecommendationRun,
+		GlueActions.CancelDataQualityRulesetEvaluationRun,
+		GlueActions.CancelMLTaskRun,
+		GlueActions.CancelStatement,
+		GlueActions.CreateBlueprint,
+		GlueActions.CreateCatalog,
+		GlueActions.CreateClassifier,
+		GlueActions.CreateColumnStatisticsTaskSettings,
+		GlueActions.CreateConnection,
+		GlueActions.CreateCrawler,
+		GlueActions.CreateCustomEntityType,
+		GlueActions.CreateDataQualityRuleset,
+		GlueActions.CreateDatabase,
+		GlueActions.CreateDevEndpoint,
+		GlueActions.CreateGlueIdentityCenterConfiguration,
+		GlueActions.CreateInboundIntegration,
+		GlueActions.CreateIntegration,
+		GlueActions.CreateIntegrationResourceProperty,
+		GlueActions.CreateIntegrationTableProperties,
+		GlueActions.CreateJob,
+		GlueActions.CreateMLTransform,
+		GlueActions.CreatePartition,
+		GlueActions.CreatePartitionIndex,
+		GlueActions.CreateRegistry,
+		GlueActions.CreateSchema,
+		GlueActions.CreateScript,
+		GlueActions.CreateSecurityConfiguration,
+		GlueActions.CreateSession,
+		GlueActions.CreateTable,
+		GlueActions.CreateTableOptimizer,
+		GlueActions.CreateTrigger,
+		GlueActions.CreateUsageProfile,
+		GlueActions.CreateUserDefinedFunction,
+		GlueActions.CreateWorkflow,
+		GlueActions.DeleteBlueprint,
+		GlueActions.DeleteCatalog,
+		GlueActions.DeleteClassifier,
+		GlueActions.DeleteColumnStatisticsForPartition,
+		GlueActions.DeleteColumnStatisticsForTable,
+		GlueActions.DeleteColumnStatisticsTaskSettings,
+		GlueActions.DeleteConnection,
+		GlueActions.DeleteConnectionType,
+		GlueActions.DeleteCrawler,
+		GlueActions.DeleteCustomEntityType,
+		GlueActions.DeleteDataQualityRuleset,
+		GlueActions.DeleteDatabase,
+		GlueActions.DeleteDevEndpoint,
+		GlueActions.DeleteGlueIdentityCenterConfiguration,
+		GlueActions.DeleteIntegration,
+		GlueActions.DeleteIntegrationResourceProperty,
+		GlueActions.DeleteIntegrationTableProperties,
+		GlueActions.DeleteJob,
+		GlueActions.DeleteMLTransform,
+		GlueActions.DeletePartition,
+		GlueActions.DeletePartitionIndex,
+		GlueActions.DeleteRegistry,
+		GlueActions.DeleteSchema,
+		GlueActions.DeleteSchemaVersions,
+		GlueActions.DeleteSecurityConfiguration,
+		GlueActions.DeleteSession,
+		GlueActions.DeleteTable,
+		GlueActions.DeleteTableOptimizer,
+		GlueActions.DeleteTableVersion,
+		GlueActions.DeleteTrigger,
+		GlueActions.DeleteUsageProfile,
+		GlueActions.DeleteUserDefinedFunction,
+		GlueActions.DeleteWorkflow,
+		GlueActions.FederateAuthorization,
+		GlueActions.ImportCatalogToGlue,
+		GlueActions.ModifyIntegration,
+		GlueActions.NotifyEvent,
+		GlueActions.PassConnection,
+		GlueActions.PublishDataQuality,
+		GlueActions.PutDataCatalogEncryptionSettings,
+		GlueActions.PutDataQualityProfileAnnotation,
+		GlueActions.PutDataQualityStatisticAnnotation,
+		GlueActions.PutSchemaVersionMetadata,
+		GlueActions.PutWorkflowRunProperties,
+		GlueActions.RegisterConnectionType,
+		GlueActions.RegisterSchemaVersion,
+		GlueActions.RemoveSchemaVersionMetadata,
+		GlueActions.RenameTable,
+		GlueActions.ResetJobBookmark,
+		GlueActions.ResumeWorkflowRun,
+		GlueActions.RunStatement,
+		GlueActions.SendFeedback,
+		GlueActions.StartBlueprintRun,
+		GlueActions.StartColumnStatisticsTaskRun,
+		GlueActions.StartColumnStatisticsTaskRunSchedule,
+		GlueActions.StartCompletion,
+		GlueActions.StartCrawler,
+		GlueActions.StartCrawlerSchedule,
+		GlueActions.StartDataQualityRuleRecommendationRun,
+		GlueActions.StartDataQualityRulesetEvaluationRun,
+		GlueActions.StartExportLabelsTaskRun,
+		GlueActions.StartImportLabelsTaskRun,
+		GlueActions.StartJobRun,
+		GlueActions.StartJobUpgradeAnalysis,
+		GlueActions.StartMLEvaluationTaskRun,
+		GlueActions.StartMLLabelingSetGenerationTaskRun,
+		GlueActions.StartTrigger,
+		GlueActions.StartWorkflowRun,
+		GlueActions.StopColumnStatisticsTaskRun,
+		GlueActions.StopColumnStatisticsTaskRunSchedule,
+		GlueActions.StopCrawler,
+		GlueActions.StopCrawlerSchedule,
+		GlueActions.StopJobUpgradeAnalysis,
+		GlueActions.StopSession,
+		GlueActions.StopTrigger,
+		GlueActions.StopWorkflowRun,
+		GlueActions.UpdateBlueprint,
+		GlueActions.UpdateCatalog,
+		GlueActions.UpdateClassifier,
+		GlueActions.UpdateColumnStatisticsForPartition,
+		GlueActions.UpdateColumnStatisticsForTable,
+		GlueActions.UpdateColumnStatisticsTaskSettings,
+		GlueActions.UpdateConnection,
+		GlueActions.UpdateCrawler,
+		GlueActions.UpdateCrawlerSchedule,
+		GlueActions.UpdateDataQualityRuleset,
+		GlueActions.UpdateDatabase,
+		GlueActions.UpdateDevEndpoint,
+		GlueActions.UpdateGlueIdentityCenterConfiguration,
+		GlueActions.UpdateIntegrationResourceProperty,
+		GlueActions.UpdateIntegrationTableProperties,
+		GlueActions.UpdateJob,
+		GlueActions.UpdateJobFromSourceControl,
+		GlueActions.UpdateMLTransform,
+		GlueActions.UpdatePartition,
+		GlueActions.UpdateRegistry,
+		GlueActions.UpdateSchema,
+		GlueActions.UpdateSourceControlFromJob,
+		GlueActions.UpdateTable,
+		GlueActions.UpdateTableOptimizer,
+		GlueActions.UpdateTrigger,
+		GlueActions.UpdateUsageProfile,
+		GlueActions.UpdateUserDefinedFunction,
+		GlueActions.UpdateWorkflow,
+		GlueActions.UpgradeJob,
+		GlueActions.UseMLTransforms,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GlueActions.DESCRIBE_INBOUND_INTEGRATIONS,
-		GlueActions.DESCRIBE_INTEGRATIONS,
-		GlueActions.GET_ML_TASK_RUNS,
-		GlueActions.GET_ML_TRANSFORMS,
-		GlueActions.LIST_BLUEPRINTS,
-		GlueActions.LIST_CRAWLERS,
-		GlueActions.LIST_CRAWLS,
-		GlueActions.LIST_CUSTOM_ENTITY_TYPES,
-		GlueActions.LIST_DATA_QUALITY_RESULTS,
-		GlueActions.LIST_DATA_QUALITY_RULE_RECOMMENDATION_RUNS,
-		GlueActions.LIST_DATA_QUALITY_RULESET_EVALUATION_RUNS,
-		GlueActions.LIST_DATA_QUALITY_RULESETS,
-		GlueActions.LIST_DEV_ENDPOINTS,
-		GlueActions.LIST_INTEGRATION_RESOURCE_PROPERTIES,
-		GlueActions.LIST_JOB_UPGRADE_ANALYSES,
-		GlueActions.LIST_JOBS,
-		GlueActions.LIST_ML_TRANSFORMS,
-		GlueActions.LIST_REGISTRIES,
-		GlueActions.LIST_SCHEMA_VERSIONS,
-		GlueActions.LIST_SCHEMAS,
-		GlueActions.LIST_SESSIONS,
-		GlueActions.LIST_STATEMENTS,
-		GlueActions.LIST_TABLE_OPTIMIZER_RUNS,
-		GlueActions.LIST_TRIGGERS,
-		GlueActions.LIST_USAGE_PROFILES,
-		GlueActions.LIST_WORKFLOWS,
-		GlueActions.QUERY_SCHEMA_VERSION_METADATA,
+	static readonly AllListActions: string[] = [
+		GlueActions.DescribeInboundIntegrations,
+		GlueActions.DescribeIntegrations,
+		GlueActions.actionGetMLTaskRuns,
+		GlueActions.actionGetMLTransforms,
+		GlueActions.ListBlueprints,
+		GlueActions.ListCrawlers,
+		GlueActions.ListCrawls,
+		GlueActions.ListCustomEntityTypes,
+		GlueActions.ListDataQualityResults,
+		GlueActions.ListDataQualityRuleRecommendationRuns,
+		GlueActions.ListDataQualityRulesetEvaluationRuns,
+		GlueActions.ListDataQualityRulesets,
+		GlueActions.ListDevEndpoints,
+		GlueActions.ListIntegrationResourceProperties,
+		GlueActions.ListJobUpgradeAnalyses,
+		GlueActions.ListJobs,
+		GlueActions.ListMLTransforms,
+		GlueActions.ListRegistries,
+		GlueActions.ListSchemaVersions,
+		GlueActions.ListSchemas,
+		GlueActions.ListSessions,
+		GlueActions.ListStatements,
+		GlueActions.ListTableOptimizerRuns,
+		GlueActions.ListTriggers,
+		GlueActions.ListUsageProfiles,
+		GlueActions.ListWorkflows,
+		GlueActions.QuerySchemaVersionMetadata,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		GlueActions.BATCH_GET_STAGE_FILES,
-		GlueActions.DELETE_RESOURCE_POLICY,
-		GlueActions.DEREGISTER_DATA_PREVIEW,
-		GlueActions.DESCRIBE_CONNECTION_TYPE,
-		GlueActions.DESCRIBE_ENTITY,
-		GlueActions.GET_DATA_PREVIEW_STATEMENT,
-		GlueActions.GET_ENVIRONMENT,
-		GlueActions.GET_EXECUTORS,
-		GlueActions.GET_EXECUTORS_THREADS,
-		GlueActions.GET_LOG_PARSING_STATUS,
-		GlueActions.GET_NOTEBOOK_INSTANCE_STATUS,
-		GlueActions.GET_QUERIES,
-		GlueActions.GET_QUERY,
-		GlueActions.GET_RECIPE_ACTION,
-		GlueActions.GET_STAGE,
-		GlueActions.GET_STAGE_ATTEMPT,
-		GlueActions.GET_STAGE_ATTEMPT_TASK_LIST,
-		GlueActions.GET_STAGE_ATTEMPT_TASK_SUMMARY,
-		GlueActions.GET_STAGE_FILES,
-		GlueActions.GET_STAGES,
-		GlueActions.GET_STORAGE,
-		GlueActions.GET_STORAGE_UNIT,
-		GlueActions.GLUE_NOTEBOOK_AUTHORIZE,
-		GlueActions.GLUE_NOTEBOOK_REFRESH_CREDENTIALS,
-		GlueActions.LIST_CONNECTION_TYPES,
-		GlueActions.LIST_ENTITIES,
-		GlueActions.MANAGED_CONNECTOR,
-		GlueActions.PUT_RESOURCE_POLICY,
-		GlueActions.REFRESH_O_AUTH2_TOKENS,
-		GlueActions.REQUEST_LOG_PARSING,
-		GlueActions.RUN_DATA_PREVIEW_STATEMENT,
-		GlueActions.SEND_RECIPE_ACTION,
-		GlueActions.START_NOTEBOOK,
-		GlueActions.TERMINATE_NOTEBOOK,
-		GlueActions.TEST_CONNECTION,
-		GlueActions.USE_GLUE_STUDIO,
+	static readonly AllPermissionManagementActions: string[] = [
+		GlueActions.BatchGetStageFiles,
+		GlueActions.DeleteResourcePolicy,
+		GlueActions.DeregisterDataPreview,
+		GlueActions.DescribeConnectionType,
+		GlueActions.DescribeEntity,
+		GlueActions.actionGetDataPreviewStatement,
+		GlueActions.actionGetEnvironment,
+		GlueActions.actionGetExecutors,
+		GlueActions.actionGetExecutorsThreads,
+		GlueActions.actionGetLogParsingStatus,
+		GlueActions.actionGetNotebookInstanceStatus,
+		GlueActions.actionGetQueries,
+		GlueActions.actionGetQuery,
+		GlueActions.actionGetRecipeAction,
+		GlueActions.actionGetStage,
+		GlueActions.actionGetStageAttempt,
+		GlueActions.actionGetStageAttemptTaskList,
+		GlueActions.actionGetStageAttemptTaskSummary,
+		GlueActions.actionGetStageFiles,
+		GlueActions.actionGetStages,
+		GlueActions.actionGetStorage,
+		GlueActions.actionGetStorageUnit,
+		GlueActions.GlueNotebookAuthorize,
+		GlueActions.GlueNotebookRefreshCredentials,
+		GlueActions.ListConnectionTypes,
+		GlueActions.ListEntities,
+		GlueActions.ManagedConnector,
+		GlueActions.PutResourcePolicy,
+		GlueActions.RefreshOAuth2Tokens,
+		GlueActions.RequestLogParsing,
+		GlueActions.RunDataPreviewStatement,
+		GlueActions.SendRecipeAction,
+		GlueActions.StartNotebook,
+		GlueActions.TerminateNotebook,
+		GlueActions.TestConnection,
+		GlueActions.UseGlueStudio,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GlueActions.TAG_RESOURCE,
-		GlueActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		GlueActions.TagResource,
+		GlueActions.UntagResource,
 	];
 }
 
-const BlueprintArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):blueprint/(?<blueprintName>[^:/?]+)$",
-);
-const CatalogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):catalog/(?<catalogName>[^:/?]+)$",
-);
-const CompletionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):completion/(?<completionId>[^:/?]+)$",
-);
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):connection/(?<connectionName>[^:/?]+)$",
-);
-const ConnectionTypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):connectionType:(?<connectionTypeName>[^:/?]+)$",
-);
-const CrawlerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):crawler/(?<crawlerName>[^:/?]+)$",
-);
-const CustomEntityTypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):customEntityType/(?<customEntityTypeId>[^:/?]+)$",
-);
-const DataQualityRulesetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):dataQualityRuleset/(?<rulesetName>[^:/?]+)$",
-);
-const DatabaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):database/(?<databaseName>[^:/?]+)$",
-);
-const DevendpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):devEndpoint/(?<devEndpointName>[^:/?]+)$",
-);
-const IntegrationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):integration:(?<integrationId>[^:/?]+)$",
-);
-const IntegrationResourcePropertyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):integrationresourceproperty/(?<resourceType>[^:/?]+)/(?<resourceName>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobName>[^:/?]+)$",
-);
-const MlTransformArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):mlTransform/(?<transformId>[^:/?]+)$",
-);
-const RegistryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):registry/(?<registryName>[^:/?]+)$",
-);
-const RootcatalogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):catalog$",
-);
-const SchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):schema/(?<schemaName>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):session/(?<sessionId>[^:/?]+)$",
-);
-const TableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):table/(?<databaseName>[^:/?]+)/(?<tableName>[^:/?]+)$",
-);
-const TableversionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):tableVersion/(?<databaseName>[^:/?]+)/(?<tableName>[^:/?]+)/(?<tableVersionName>[^:/?]+)$",
-);
-const TriggerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):trigger/(?<triggerName>[^:/?]+)$",
-);
-const UsageProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):usageProfile/(?<usageProfileId>[^:/?]+)$",
-);
-const UserdefinedfunctionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):userDefinedFunction/(?<databaseName>[^:/?]+)/(?<userDefinedFunctionName>[^:/?]+)$",
-);
-const WorkflowArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):workflow/(?<workflowName>[^:/?]+)$",
-);
+/**
+ * Properties for building a blueprint ARN.
+ */
+export interface GlueBlueprintArnProps {
+	/** The BlueprintName component of the ARN. */
+	readonly blueprintName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a blueprint ARN.
+ */
+export interface GlueBlueprintArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BlueprintName component. */
+	readonly blueprintName: string;
+}
+
+/**
+ * Properties for building a catalog ARN.
+ */
+export interface GlueCatalogArnProps {
+	/** The CatalogName component of the ARN. */
+	readonly catalogName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a catalog ARN.
+ */
+export interface GlueCatalogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CatalogName component. */
+	readonly catalogName: string;
+}
+
+/**
+ * Properties for building a completion ARN.
+ */
+export interface GlueCompletionArnProps {
+	/** The CompletionId component of the ARN. */
+	readonly completionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a completion ARN.
+ */
+export interface GlueCompletionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CompletionId component. */
+	readonly completionId: string;
+}
+
+/**
+ * Properties for building a connection ARN.
+ */
+export interface GlueConnectionArnProps {
+	/** The ConnectionName component of the ARN. */
+	readonly connectionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection ARN.
+ */
+export interface GlueConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionName component. */
+	readonly connectionName: string;
+}
+
+/**
+ * Properties for building a connectionType ARN.
+ */
+export interface GlueConnectionTypeArnProps {
+	/** The ConnectionTypeName component of the ARN. */
+	readonly connectionTypeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connectionType ARN.
+ */
+export interface GlueConnectionTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionTypeName component. */
+	readonly connectionTypeName: string;
+}
+
+/**
+ * Properties for building a crawler ARN.
+ */
+export interface GlueCrawlerArnProps {
+	/** The CrawlerName component of the ARN. */
+	readonly crawlerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a crawler ARN.
+ */
+export interface GlueCrawlerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CrawlerName component. */
+	readonly crawlerName: string;
+}
+
+/**
+ * Properties for building a customEntityType ARN.
+ */
+export interface GlueCustomEntityTypeArnProps {
+	/** The CustomEntityTypeId component of the ARN. */
+	readonly customEntityTypeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customEntityType ARN.
+ */
+export interface GlueCustomEntityTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CustomEntityTypeId component. */
+	readonly customEntityTypeId: string;
+}
+
+/**
+ * Properties for building a dataQualityRuleset ARN.
+ */
+export interface GlueDataQualityRulesetArnProps {
+	/** The RulesetName component of the ARN. */
+	readonly rulesetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataQualityRuleset ARN.
+ */
+export interface GlueDataQualityRulesetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RulesetName component. */
+	readonly rulesetName: string;
+}
+
+/**
+ * Properties for building a database ARN.
+ */
+export interface GlueDatabaseArnProps {
+	/** The DatabaseName component of the ARN. */
+	readonly databaseName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a database ARN.
+ */
+export interface GlueDatabaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatabaseName component. */
+	readonly databaseName: string;
+}
+
+/**
+ * Properties for building a devendpoint ARN.
+ */
+export interface GlueDevendpointArnProps {
+	/** The DevEndpointName component of the ARN. */
+	readonly devEndpointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a devendpoint ARN.
+ */
+export interface GlueDevendpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DevEndpointName component. */
+	readonly devEndpointName: string;
+}
+
+/**
+ * Properties for building a integration ARN.
+ */
+export interface GlueIntegrationArnProps {
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a integration ARN.
+ */
+export interface GlueIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a integrationResourceProperty ARN.
+ */
+export interface GlueIntegrationResourcePropertyArnProps {
+	/** The ResourceType component of the ARN. */
+	readonly resourceType: string;
+	/** The ResourceName component of the ARN. */
+	readonly resourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a integrationResourceProperty ARN.
+ */
+export interface GlueIntegrationResourcePropertyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceType component. */
+	readonly resourceType: string;
+	/** The ResourceName component. */
+	readonly resourceName: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface GlueJobArnProps {
+	/** The JobName component of the ARN. */
+	readonly jobName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface GlueJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobName component. */
+	readonly jobName: string;
+}
+
+/**
+ * Properties for building a mlTransform ARN.
+ */
+export interface GlueMlTransformArnProps {
+	/** The TransformId component of the ARN. */
+	readonly transformId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mlTransform ARN.
+ */
+export interface GlueMlTransformArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransformId component. */
+	readonly transformId: string;
+}
+
+/**
+ * Properties for building a registry ARN.
+ */
+export interface GlueRegistryArnProps {
+	/** The RegistryName component of the ARN. */
+	readonly registryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a registry ARN.
+ */
+export interface GlueRegistryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RegistryName component. */
+	readonly registryName: string;
+}
+
+/**
+ * Properties for building a rootcatalog ARN.
+ */
+export interface GlueRootcatalogArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rootcatalog ARN.
+ */
+export interface GlueRootcatalogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a schema ARN.
+ */
+export interface GlueSchemaArnProps {
+	/** The SchemaName component of the ARN. */
+	readonly schemaName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a schema ARN.
+ */
+export interface GlueSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SchemaName component. */
+	readonly schemaName: string;
+}
+
+/**
+ * Properties for building a session ARN.
+ */
+export interface GlueSessionArnProps {
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a session ARN.
+ */
+export interface GlueSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+/**
+ * Properties for building a table ARN.
+ */
+export interface GlueTableArnProps {
+	/** The DatabaseName component of the ARN. */
+	readonly databaseName: string;
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a table ARN.
+ */
+export interface GlueTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatabaseName component. */
+	readonly databaseName: string;
+	/** The TableName component. */
+	readonly tableName: string;
+}
+
+/**
+ * Properties for building a tableversion ARN.
+ */
+export interface GlueTableversionArnProps {
+	/** The DatabaseName component of the ARN. */
+	readonly databaseName: string;
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** The TableVersionName component of the ARN. */
+	readonly tableVersionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tableversion ARN.
+ */
+export interface GlueTableversionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatabaseName component. */
+	readonly databaseName: string;
+	/** The TableName component. */
+	readonly tableName: string;
+	/** The TableVersionName component. */
+	readonly tableVersionName: string;
+}
+
+/**
+ * Properties for building a trigger ARN.
+ */
+export interface GlueTriggerArnProps {
+	/** The TriggerName component of the ARN. */
+	readonly triggerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trigger ARN.
+ */
+export interface GlueTriggerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TriggerName component. */
+	readonly triggerName: string;
+}
+
+/**
+ * Properties for building a usageProfile ARN.
+ */
+export interface GlueUsageProfileArnProps {
+	/** The UsageProfileId component of the ARN. */
+	readonly usageProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a usageProfile ARN.
+ */
+export interface GlueUsageProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UsageProfileId component. */
+	readonly usageProfileId: string;
+}
+
+/**
+ * Properties for building a userdefinedfunction ARN.
+ */
+export interface GlueUserdefinedfunctionArnProps {
+	/** The DatabaseName component of the ARN. */
+	readonly databaseName: string;
+	/** The UserDefinedFunctionName component of the ARN. */
+	readonly userDefinedFunctionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a userdefinedfunction ARN.
+ */
+export interface GlueUserdefinedfunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatabaseName component. */
+	readonly databaseName: string;
+	/** The UserDefinedFunctionName component. */
+	readonly userDefinedFunctionName: string;
+}
+
+/**
+ * Properties for building a workflow ARN.
+ */
+export interface GlueWorkflowArnProps {
+	/** The WorkflowName component of the ARN. */
+	readonly workflowName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workflow ARN.
+ */
+export interface GlueWorkflowArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkflowName component. */
+	readonly workflowName: string;
+}
+
+const BlueprintArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):blueprint\/(?<blueprintName>[^:/?]+)$/;
+const CatalogArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalogName>[^:/?]+)$/;
+const CompletionArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):completion\/(?<completionId>[^:/?]+)$/;
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):connection\/(?<connectionName>[^:/?]+)$/;
+const ConnectionTypeArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):connectionType:(?<connectionTypeName>[^:/?]+)$/;
+const CrawlerArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):crawler\/(?<crawlerName>[^:/?]+)$/;
+const CustomEntityTypeArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):customEntityType\/(?<customEntityTypeId>[^:/?]+)$/;
+const DataQualityRulesetArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):dataQualityRuleset\/(?<rulesetName>[^:/?]+)$/;
+const DatabaseArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):database\/(?<databaseName>[^:/?]+)$/;
+const DevendpointArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):devEndpoint\/(?<devEndpointName>[^:/?]+)$/;
+const IntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):integration:(?<integrationId>[^:/?]+)$/;
+const IntegrationResourcePropertyArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):integrationresourceproperty\/(?<resourceType>[^:/?]+)\/(?<resourceName>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobName>[^:/?]+)$/;
+const MlTransformArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):mlTransform\/(?<transformId>[^:/?]+)$/;
+const RegistryArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):registry\/(?<registryName>[^:/?]+)$/;
+const RootcatalogArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):catalog$/;
+const SchemaArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):schema\/(?<schemaName>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):session\/(?<sessionId>[^:/?]+)$/;
+const TableArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):table\/(?<databaseName>[^:/?]+)\/(?<tableName>[^:/?]+)$/;
+const TableversionArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):tableVersion\/(?<databaseName>[^:/?]+)\/(?<tableName>[^:/?]+)\/(?<tableVersionName>[^:/?]+)$/;
+const TriggerArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):trigger\/(?<triggerName>[^:/?]+)$/;
+const UsageProfileArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):usageProfile\/(?<usageProfileId>[^:/?]+)$/;
+const UserdefinedfunctionArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):userDefinedFunction\/(?<databaseName>[^:/?]+)\/(?<userDefinedFunctionName>[^:/?]+)$/;
+const WorkflowArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):workflow\/(?<workflowName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for glue resources.
@@ -1087,16 +1749,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the blueprint resource.
 	 */
-	static blueprint(props: {
-		/** The BlueprintName component of the ARN. */
-		readonly blueprintName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static blueprint(props: GlueBlueprintArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:blueprint/${props.blueprintName}`;
 	}
 
@@ -1111,12 +1764,7 @@ export class GlueResources {
 	 * Parses a blueprint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBlueprintArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		blueprintName: string;
-	} {
+	static parseBlueprintArn(arn: string): GlueBlueprintArnComponents {
 		const match = BlueprintArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid blueprint ARN: ${arn}`);
@@ -1132,16 +1780,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the catalog resource.
 	 */
-	static catalog(props: {
-		/** The CatalogName component of the ARN. */
-		readonly catalogName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static catalog(props: GlueCatalogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalogName}`;
 	}
 
@@ -1156,12 +1795,7 @@ export class GlueResources {
 	 * Parses a catalog ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCatalogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		catalogName: string;
-	} {
+	static parseCatalogArn(arn: string): GlueCatalogArnComponents {
 		const match = CatalogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid catalog ARN: ${arn}`);
@@ -1177,16 +1811,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the completion resource.
 	 */
-	static completion(props: {
-		/** The CompletionId component of the ARN. */
-		readonly completionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static completion(props: GlueCompletionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:completion/${props.completionId}`;
 	}
 
@@ -1201,12 +1826,7 @@ export class GlueResources {
 	 * Parses a completion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCompletionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		completionId: string;
-	} {
+	static parseCompletionArn(arn: string): GlueCompletionArnComponents {
 		const match = CompletionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid completion ARN: ${arn}`);
@@ -1222,16 +1842,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the connection resource.
 	 */
-	static connection(props: {
-		/** The ConnectionName component of the ARN. */
-		readonly connectionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: GlueConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:connection/${props.connectionName}`;
 	}
 
@@ -1246,12 +1857,7 @@ export class GlueResources {
 	 * Parses a connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionName: string;
-	} {
+	static parseConnectionArn(arn: string): GlueConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection ARN: ${arn}`);
@@ -1267,16 +1873,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the connectionType resource.
 	 */
-	static connectionType(props: {
-		/** The ConnectionTypeName component of the ARN. */
-		readonly connectionTypeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectionType(props: GlueConnectionTypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:connectionType:${props.connectionTypeName}`;
 	}
 
@@ -1291,12 +1888,7 @@ export class GlueResources {
 	 * Parses a connectionType ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionTypeName: string;
-	} {
+	static parseConnectionTypeArn(arn: string): GlueConnectionTypeArnComponents {
 		const match = ConnectionTypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connectionType ARN: ${arn}`);
@@ -1312,16 +1904,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the crawler resource.
 	 */
-	static crawler(props: {
-		/** The CrawlerName component of the ARN. */
-		readonly crawlerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static crawler(props: GlueCrawlerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:crawler/${props.crawlerName}`;
 	}
 
@@ -1336,12 +1919,7 @@ export class GlueResources {
 	 * Parses a crawler ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCrawlerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		crawlerName: string;
-	} {
+	static parseCrawlerArn(arn: string): GlueCrawlerArnComponents {
 		const match = CrawlerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid crawler ARN: ${arn}`);
@@ -1357,16 +1935,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the customEntityType resource.
 	 */
-	static customEntityType(props: {
-		/** The CustomEntityTypeId component of the ARN. */
-		readonly customEntityTypeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customEntityType(props: GlueCustomEntityTypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:customEntityType/${props.customEntityTypeId}`;
 	}
 
@@ -1381,12 +1950,9 @@ export class GlueResources {
 	 * Parses a customEntityType ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomEntityTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		customEntityTypeId: string;
-	} {
+	static parseCustomEntityTypeArn(
+		arn: string,
+	): GlueCustomEntityTypeArnComponents {
 		const match = CustomEntityTypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid customEntityType ARN: ${arn}`);
@@ -1402,16 +1968,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the dataQualityRuleset resource.
 	 */
-	static dataQualityRuleset(props: {
-		/** The RulesetName component of the ARN. */
-		readonly rulesetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataQualityRuleset(props: GlueDataQualityRulesetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:dataQualityRuleset/${props.rulesetName}`;
 	}
 
@@ -1426,12 +1983,9 @@ export class GlueResources {
 	 * Parses a dataQualityRuleset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataQualityRulesetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		rulesetName: string;
-	} {
+	static parseDataQualityRulesetArn(
+		arn: string,
+	): GlueDataQualityRulesetArnComponents {
 		const match = DataQualityRulesetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataQualityRuleset ARN: ${arn}`);
@@ -1447,16 +2001,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the database resource.
 	 */
-	static database(props: {
-		/** The DatabaseName component of the ARN. */
-		readonly databaseName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static database(props: GlueDatabaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:database/${props.databaseName}`;
 	}
 
@@ -1471,12 +2016,7 @@ export class GlueResources {
 	 * Parses a database ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatabaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		databaseName: string;
-	} {
+	static parseDatabaseArn(arn: string): GlueDatabaseArnComponents {
 		const match = DatabaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid database ARN: ${arn}`);
@@ -1492,16 +2032,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the devendpoint resource.
 	 */
-	static devendpoint(props: {
-		/** The DevEndpointName component of the ARN. */
-		readonly devEndpointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static devendpoint(props: GlueDevendpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:devEndpoint/${props.devEndpointName}`;
 	}
 
@@ -1516,12 +2047,7 @@ export class GlueResources {
 	 * Parses a devendpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDevendpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		devEndpointName: string;
-	} {
+	static parseDevendpointArn(arn: string): GlueDevendpointArnComponents {
 		const match = DevendpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid devendpoint ARN: ${arn}`);
@@ -1537,16 +2063,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the integration resource.
 	 */
-	static integration(props: {
-		/** The IntegrationId component of the ARN. */
-		readonly integrationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integration(props: GlueIntegrationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:integration:${props.integrationId}`;
 	}
 
@@ -1561,12 +2078,7 @@ export class GlueResources {
 	 * Parses a integration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		integrationId: string;
-	} {
+	static parseIntegrationArn(arn: string): GlueIntegrationArnComponents {
 		const match = IntegrationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid integration ARN: ${arn}`);
@@ -1582,18 +2094,9 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the integrationResourceProperty resource.
 	 */
-	static integrationResourceProperty(props: {
-		/** The ResourceType component of the ARN. */
-		readonly resourceType: string;
-		/** The ResourceName component of the ARN. */
-		readonly resourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integrationResourceProperty(
+		props: GlueIntegrationResourcePropertyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:integrationresourceproperty/${props.resourceType}/${props.resourceName}`;
 	}
 
@@ -1608,13 +2111,9 @@ export class GlueResources {
 	 * Parses a integrationResourceProperty ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationResourcePropertyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceType: string;
-		resourceName: string;
-	} {
+	static parseIntegrationResourcePropertyArn(
+		arn: string,
+	): GlueIntegrationResourcePropertyArnComponents {
 		const match = IntegrationResourcePropertyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid integrationResourceProperty ARN: ${arn}`);
@@ -1631,16 +2130,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The JobName component of the ARN. */
-		readonly jobName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: GlueJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobName}`;
 	}
 
@@ -1655,12 +2145,7 @@ export class GlueResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobName: string;
-	} {
+	static parseJobArn(arn: string): GlueJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -1676,16 +2161,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the mlTransform resource.
 	 */
-	static mlTransform(props: {
-		/** The TransformId component of the ARN. */
-		readonly transformId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mlTransform(props: GlueMlTransformArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:mlTransform/${props.transformId}`;
 	}
 
@@ -1700,12 +2176,7 @@ export class GlueResources {
 	 * Parses a mlTransform ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMlTransformArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transformId: string;
-	} {
+	static parseMlTransformArn(arn: string): GlueMlTransformArnComponents {
 		const match = MlTransformArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mlTransform ARN: ${arn}`);
@@ -1721,16 +2192,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the registry resource.
 	 */
-	static registry(props: {
-		/** The RegistryName component of the ARN. */
-		readonly registryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static registry(props: GlueRegistryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:registry/${props.registryName}`;
 	}
 
@@ -1745,12 +2207,7 @@ export class GlueResources {
 	 * Parses a registry ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRegistryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		registryName: string;
-	} {
+	static parseRegistryArn(arn: string): GlueRegistryArnComponents {
 		const match = RegistryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid registry ARN: ${arn}`);
@@ -1766,14 +2223,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the rootcatalog resource.
 	 */
-	static rootcatalog(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rootcatalog(props: GlueRootcatalogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:catalog`;
 	}
 
@@ -1788,11 +2238,7 @@ export class GlueResources {
 	 * Parses a rootcatalog ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRootcatalogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseRootcatalogArn(arn: string): GlueRootcatalogArnComponents {
 		const match = RootcatalogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rootcatalog ARN: ${arn}`);
@@ -1807,16 +2253,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the schema resource.
 	 */
-	static schema(props: {
-		/** The SchemaName component of the ARN. */
-		readonly schemaName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static schema(props: GlueSchemaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:schema/${props.schemaName}`;
 	}
 
@@ -1831,12 +2268,7 @@ export class GlueResources {
 	 * Parses a schema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		schemaName: string;
-	} {
+	static parseSchemaArn(arn: string): GlueSchemaArnComponents {
 		const match = SchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid schema ARN: ${arn}`);
@@ -1852,16 +2284,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the session resource.
 	 */
-	static session(props: {
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: GlueSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:session/${props.sessionId}`;
 	}
 
@@ -1876,12 +2299,7 @@ export class GlueResources {
 	 * Parses a session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): GlueSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid session ARN: ${arn}`);
@@ -1897,18 +2315,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the table resource.
 	 */
-	static table(props: {
-		/** The DatabaseName component of the ARN. */
-		readonly databaseName: string;
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static table(props: GlueTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.databaseName}/${props.tableName}`;
 	}
 
@@ -1923,13 +2330,7 @@ export class GlueResources {
 	 * Parses a table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		databaseName: string;
-		tableName: string;
-	} {
+	static parseTableArn(arn: string): GlueTableArnComponents {
 		const match = TableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid table ARN: ${arn}`);
@@ -1946,20 +2347,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the tableversion resource.
 	 */
-	static tableversion(props: {
-		/** The DatabaseName component of the ARN. */
-		readonly databaseName: string;
-		/** The TableName component of the ARN. */
-		readonly tableName: string;
-		/** The TableVersionName component of the ARN. */
-		readonly tableVersionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tableversion(props: GlueTableversionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:tableVersion/${props.databaseName}/${props.tableName}/${props.tableVersionName}`;
 	}
 
@@ -1974,14 +2362,7 @@ export class GlueResources {
 	 * Parses a tableversion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableversionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		databaseName: string;
-		tableName: string;
-		tableVersionName: string;
-	} {
+	static parseTableversionArn(arn: string): GlueTableversionArnComponents {
 		const match = TableversionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tableversion ARN: ${arn}`);
@@ -1999,16 +2380,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the trigger resource.
 	 */
-	static trigger(props: {
-		/** The TriggerName component of the ARN. */
-		readonly triggerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trigger(props: GlueTriggerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:trigger/${props.triggerName}`;
 	}
 
@@ -2023,12 +2395,7 @@ export class GlueResources {
 	 * Parses a trigger ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTriggerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		triggerName: string;
-	} {
+	static parseTriggerArn(arn: string): GlueTriggerArnComponents {
 		const match = TriggerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trigger ARN: ${arn}`);
@@ -2044,16 +2411,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the usageProfile resource.
 	 */
-	static usageProfile(props: {
-		/** The UsageProfileId component of the ARN. */
-		readonly usageProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usageProfile(props: GlueUsageProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:usageProfile/${props.usageProfileId}`;
 	}
 
@@ -2068,12 +2426,7 @@ export class GlueResources {
 	 * Parses a usageProfile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsageProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		usageProfileId: string;
-	} {
+	static parseUsageProfileArn(arn: string): GlueUsageProfileArnComponents {
 		const match = UsageProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid usageProfile ARN: ${arn}`);
@@ -2089,18 +2442,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the userdefinedfunction resource.
 	 */
-	static userdefinedfunction(props: {
-		/** The DatabaseName component of the ARN. */
-		readonly databaseName: string;
-		/** The UserDefinedFunctionName component of the ARN. */
-		readonly userDefinedFunctionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static userdefinedfunction(props: GlueUserdefinedfunctionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:userDefinedFunction/${props.databaseName}/${props.userDefinedFunctionName}`;
 	}
 
@@ -2115,13 +2457,9 @@ export class GlueResources {
 	 * Parses a userdefinedfunction ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserdefinedfunctionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		databaseName: string;
-		userDefinedFunctionName: string;
-	} {
+	static parseUserdefinedfunctionArn(
+		arn: string,
+	): GlueUserdefinedfunctionArnComponents {
 		const match = UserdefinedfunctionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid userdefinedfunction ARN: ${arn}`);
@@ -2138,16 +2476,7 @@ export class GlueResources {
 	/**
 	 * Builds an ARN for the workflow resource.
 	 */
-	static workflow(props: {
-		/** The WorkflowName component of the ARN. */
-		readonly workflowName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workflow(props: GlueWorkflowArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:workflow/${props.workflowName}`;
 	}
 
@@ -2162,12 +2491,7 @@ export class GlueResources {
 	 * Parses a workflow ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkflowArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workflowName: string;
-	} {
+	static parseWorkflowArn(arn: string): GlueWorkflowArnComponents {
 		const match = WorkflowArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workflow ARN: ${arn}`);
@@ -2186,932 +2510,926 @@ export class GlueResources {
  */
 export class GlueOperations {
 	/** IAM actions required for the AssociateGlossaryTerms API call. */
-	static readonly ASSOCIATE_GLOSSARY_TERMS: string[] = [];
+	static readonly AssociateGlossaryTerms: string[] = [];
 	/** IAM actions required for the BatchCreatePartition API call. */
-	static readonly BATCH_CREATE_PARTITION: string[] = [];
+	static readonly BatchCreatePartition: string[] = [];
 	/** IAM actions required for the BatchDeleteConnection API call. */
-	static readonly BATCH_DELETE_CONNECTION: string[] = [
+	static readonly BatchDeleteConnection: string[] = [
 		"glue:BatchDeleteConnection",
 		"glue:DeleteConnection",
 	];
 	/** IAM actions required for the BatchDeletePartition API call. */
-	static readonly BATCH_DELETE_PARTITION: string[] = [];
+	static readonly BatchDeletePartition: string[] = [];
 	/** IAM actions required for the BatchDeleteTable API call. */
-	static readonly BATCH_DELETE_TABLE: string[] = [];
+	static readonly BatchDeleteTable: string[] = [];
 	/** IAM actions required for the BatchDeleteTableVersion API call. */
-	static readonly BATCH_DELETE_TABLE_VERSION: string[] = [
+	static readonly BatchDeleteTableVersion: string[] = [
 		"glue:BatchDeleteTableVersion",
 		"glue:DeleteTableVersion",
 	];
 	/** IAM actions required for the BatchGetBlueprints API call. */
-	static readonly BATCH_GET_BLUEPRINTS: string[] = [
+	static readonly BatchGetBlueprints: string[] = [
 		"glue:BatchGetBlueprints",
 		"glue:GetBlueprint",
 	];
 	/** IAM actions required for the BatchGetCrawlers API call. */
-	static readonly BATCH_GET_CRAWLERS: string[] = ["glue:BatchGetCrawlers"];
+	static readonly BatchGetCrawlers: string[] = ["glue:BatchGetCrawlers"];
 	/** IAM actions required for the BatchGetCustomEntityTypes API call. */
-	static readonly BATCH_GET_CUSTOM_ENTITY_TYPES: string[] = [
+	static readonly BatchGetCustomEntityTypes: string[] = [
 		"glue:BatchGetCustomEntityTypes",
 		"glue:GetCustomEntityType",
 	];
 	/** IAM actions required for the BatchGetDataQualityResult API call. */
-	static readonly BATCH_GET_DATA_QUALITY_RESULT: string[] = [
+	static readonly BatchGetDataQualityResult: string[] = [
 		"glue:GetDataQualityResult",
 	];
 	/** IAM actions required for the BatchGetDataQualityRulesetEvaluationRun API call. */
-	static readonly BATCH_GET_DATA_QUALITY_RULESET_EVALUATION_RUN: string[] = [];
+	static readonly BatchGetDataQualityRulesetEvaluationRun: string[] = [];
 	/** IAM actions required for the BatchGetDevEndpoints API call. */
-	static readonly BATCH_GET_DEV_ENDPOINTS: string[] = [
+	static readonly BatchGetDevEndpoints: string[] = [
 		"glue:BatchGetDevEndpoints",
 		"glue:GetDevEndpoint",
 	];
 	/** IAM actions required for the BatchGetIterableForms API call. */
-	static readonly BATCH_GET_ITERABLE_FORMS: string[] = [];
+	static readonly BatchGetIterableForms: string[] = [];
 	/** IAM actions required for the BatchGetJobs API call. */
-	static readonly BATCH_GET_JOBS: string[] = [
-		"glue:BatchGetJobs",
-		"glue:GetJob",
-	];
+	static readonly BatchGetJobs: string[] = ["glue:BatchGetJobs", "glue:GetJob"];
 	/** IAM actions required for the BatchGetPartition API call. */
-	static readonly BATCH_GET_PARTITION: string[] = [];
+	static readonly BatchGetPartition: string[] = [];
 	/** IAM actions required for the BatchGetTableOptimizer API call. */
-	static readonly BATCH_GET_TABLE_OPTIMIZER: string[] = [
+	static readonly BatchGetTableOptimizer: string[] = [
 		"glue:BatchGetTableOptimizer",
 	];
 	/** IAM actions required for the BatchGetTriggers API call. */
-	static readonly BATCH_GET_TRIGGERS: string[] = [
+	static readonly BatchGetTriggers: string[] = [
 		"glue:BatchGetTriggers",
 		"glue:GetTrigger",
 	];
 	/** IAM actions required for the BatchGetWorkflows API call. */
-	static readonly BATCH_GET_WORKFLOWS: string[] = [
+	static readonly BatchGetWorkflows: string[] = [
 		"glue:BatchGetWorkflows",
 		"glue:GetWorkflow",
 	];
 	/** IAM actions required for the BatchPutDataQualityStatisticAnnotation API call. */
-	static readonly BATCH_PUT_DATA_QUALITY_STATISTIC_ANNOTATION: string[] = [
+	static readonly BatchPutDataQualityStatisticAnnotation: string[] = [
 		"glue:PutDataQualityStatisticAnnotation",
 	];
 	/** IAM actions required for the BatchStopJobRun API call. */
-	static readonly BATCH_STOP_JOB_RUN: string[] = ["glue:BatchStopJobRun"];
+	static readonly BatchStopJobRun: string[] = ["glue:BatchStopJobRun"];
 	/** IAM actions required for the BatchUpdatePartition API call. */
-	static readonly BATCH_UPDATE_PARTITION: string[] = [];
+	static readonly BatchUpdatePartition: string[] = [];
 	/** IAM actions required for the CancelDataQualityRuleRecommendationRun API call. */
-	static readonly CANCEL_DATA_QUALITY_RULE_RECOMMENDATION_RUN: string[] = [
+	static readonly CancelDataQualityRuleRecommendationRun: string[] = [
 		"glue:CancelDataQualityRuleRecommendationRun",
 	];
 	/** IAM actions required for the CancelDataQualityRulesetEvaluationRun API call. */
-	static readonly CANCEL_DATA_QUALITY_RULESET_EVALUATION_RUN: string[] = [
+	static readonly CancelDataQualityRulesetEvaluationRun: string[] = [
 		"glue:CancelDataQualityRulesetEvaluationRun",
 	];
 	/** IAM actions required for the CancelMLTaskRun API call. */
-	static readonly CANCEL_ML_TASK_RUN: string[] = ["glue:CancelMLTaskRun"];
+	static readonly CancelMLTaskRun: string[] = ["glue:CancelMLTaskRun"];
 	/** IAM actions required for the CancelStatement API call. */
-	static readonly CANCEL_STATEMENT: string[] = ["glue:CancelStatement"];
+	static readonly CancelStatement: string[] = ["glue:CancelStatement"];
 	/** IAM actions required for the CheckSchemaVersionValidity API call. */
-	static readonly CHECK_SCHEMA_VERSION_VALIDITY: string[] = [
+	static readonly CheckSchemaVersionValidity: string[] = [
 		"glue:CheckSchemaVersionValidity",
 	];
 	/** IAM actions required for the CreateBlueprint API call. */
-	static readonly CREATE_BLUEPRINT: string[] = [
+	static readonly CreateBlueprint: string[] = [
 		"glue:CreateBlueprint",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateCatalog API call. */
-	static readonly CREATE_CATALOG: string[] = [
+	static readonly CreateCatalog: string[] = [
 		"glue:CreateCatalog",
 		"glue:PassConnection",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateClassifier API call. */
-	static readonly CREATE_CLASSIFIER: string[] = ["glue:CreateClassifier"];
+	static readonly CreateClassifier: string[] = ["glue:CreateClassifier"];
 	/** IAM actions required for the CreateColumnStatisticsTaskSettings API call. */
-	static readonly CREATE_COLUMN_STATISTICS_TASK_SETTINGS: string[] = [
+	static readonly CreateColumnStatisticsTaskSettings: string[] = [
 		"glue:CreateColumnStatisticsTaskSettings",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateConnection API call. */
-	static readonly CREATE_CONNECTION: string[] = [
+	static readonly CreateConnection: string[] = [
 		"glue:CreateConnection",
 		"glue:DescribeConnectionType",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateCrawler API call. */
-	static readonly CREATE_CRAWLER: string[] = [
+	static readonly CreateCrawler: string[] = [
 		"glue:CreateCrawler",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateCustomEntityType API call. */
-	static readonly CREATE_CUSTOM_ENTITY_TYPE: string[] = [
+	static readonly CreateCustomEntityType: string[] = [
 		"glue:CreateCustomEntityType",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateDataQualityRuleset API call. */
-	static readonly CREATE_DATA_QUALITY_RULESET: string[] = [
+	static readonly CreateDataQualityRuleset: string[] = [
 		"glue:CreateDataQualityRuleset",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateDatabase API call. */
-	static readonly CREATE_DATABASE: string[] = [
+	static readonly CreateDatabase: string[] = [
 		"glue:CreateDatabase",
 		"glue:PassConnection",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateDevEndpoint API call. */
-	static readonly CREATE_DEV_ENDPOINT: string[] = [
+	static readonly CreateDevEndpoint: string[] = [
 		"glue:CreateDevEndpoint",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateGlossary API call. */
-	static readonly CREATE_GLOSSARY: string[] = [];
+	static readonly CreateGlossary: string[] = [];
 	/** IAM actions required for the CreateGlossaryTerm API call. */
-	static readonly CREATE_GLOSSARY_TERM: string[] = [];
+	static readonly CreateGlossaryTerm: string[] = [];
 	/** IAM actions required for the CreateGlueIdentityCenterConfiguration API call. */
-	static readonly CREATE_GLUE_IDENTITY_CENTER_CONFIGURATION: string[] = [
+	static readonly CreateGlueIdentityCenterConfiguration: string[] = [
 		"glue:CreateGlueIdentityCenterConfiguration",
 	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CREATE_INTEGRATION: string[] = [
+	static readonly CreateIntegration: string[] = [
 		"glue:CreateIntegration",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateIntegrationResourceProperty API call. */
-	static readonly CREATE_INTEGRATION_RESOURCE_PROPERTY: string[] = [
+	static readonly CreateIntegrationResourceProperty: string[] = [
 		"glue:CreateIntegrationResourceProperty",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateIntegrationTableProperties API call. */
-	static readonly CREATE_INTEGRATION_TABLE_PROPERTIES: string[] = [
+	static readonly CreateIntegrationTableProperties: string[] = [
 		"glue:CreateIntegrationTableProperties",
 	];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"glue:CreateJob",
 		"glue:GetUsageProfile",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateMLTransform API call. */
-	static readonly CREATE_ML_TRANSFORM: string[] = [
+	static readonly CreateMLTransform: string[] = [
 		"glue:CreateMLTransform",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreatePartition API call. */
-	static readonly CREATE_PARTITION: string[] = ["glue:CreatePartition"];
+	static readonly CreatePartition: string[] = ["glue:CreatePartition"];
 	/** IAM actions required for the CreatePartitionIndex API call. */
-	static readonly CREATE_PARTITION_INDEX: string[] = ["glue:UpdateTable"];
+	static readonly CreatePartitionIndex: string[] = ["glue:UpdateTable"];
 	/** IAM actions required for the CreateRegistry API call. */
-	static readonly CREATE_REGISTRY: string[] = [
+	static readonly CreateRegistry: string[] = [
 		"glue:CreateRegistry",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateSchema API call. */
-	static readonly CREATE_SCHEMA: string[] = [
+	static readonly CreateSchema: string[] = [
 		"glue:CreateSchema",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateScript API call. */
-	static readonly CREATE_SCRIPT: string[] = ["glue:CreateScript"];
+	static readonly CreateScript: string[] = ["glue:CreateScript"];
 	/** IAM actions required for the CreateSecurityConfiguration API call. */
-	static readonly CREATE_SECURITY_CONFIGURATION: string[] = [
+	static readonly CreateSecurityConfiguration: string[] = [
 		"glue:CreateSecurityConfiguration",
 	];
 	/** IAM actions required for the CreateSession API call. */
-	static readonly CREATE_SESSION: string[] = [
+	static readonly CreateSession: string[] = [
 		"glue:CreateSession",
 		"glue:GetUsageProfile",
 		"iam:PassRole",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateTable API call. */
-	static readonly CREATE_TABLE: string[] = [
+	static readonly CreateTable: string[] = [
 		"glue:CreateTable",
 		"glue:PassConnection",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateTableOptimizer API call. */
-	static readonly CREATE_TABLE_OPTIMIZER: string[] = [
+	static readonly CreateTableOptimizer: string[] = [
 		"glue:CreateTableOptimizer",
 		"glue:PassConnection",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateTrigger API call. */
-	static readonly CREATE_TRIGGER: string[] = [
+	static readonly CreateTrigger: string[] = [
 		"glue:CreateTrigger",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateUsageProfile API call. */
-	static readonly CREATE_USAGE_PROFILE: string[] = [
+	static readonly CreateUsageProfile: string[] = [
 		"glue:CreateUsageProfile",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the CreateUserDefinedFunction API call. */
-	static readonly CREATE_USER_DEFINED_FUNCTION: string[] = [
+	static readonly CreateUserDefinedFunction: string[] = [
 		"glue:CreateUserDefinedFunction",
 	];
 	/** IAM actions required for the CreateWorkflow API call. */
-	static readonly CREATE_WORKFLOW: string[] = [
+	static readonly CreateWorkflow: string[] = [
 		"glue:CreateWorkflow",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the DeleteAsset API call. */
-	static readonly DELETE_ASSET: string[] = [];
+	static readonly DeleteAsset: string[] = [];
 	/** IAM actions required for the DeleteAssetType API call. */
-	static readonly DELETE_ASSET_TYPE: string[] = [];
+	static readonly DeleteAssetType: string[] = [];
 	/** IAM actions required for the DeleteAttachment API call. */
-	static readonly DELETE_ATTACHMENT: string[] = [];
+	static readonly DeleteAttachment: string[] = [];
 	/** IAM actions required for the DeleteBlueprint API call. */
-	static readonly DELETE_BLUEPRINT: string[] = ["glue:DeleteBlueprint"];
+	static readonly DeleteBlueprint: string[] = ["glue:DeleteBlueprint"];
 	/** IAM actions required for the DeleteCatalog API call. */
-	static readonly DELETE_CATALOG: string[] = ["glue:DeleteCatalog"];
+	static readonly DeleteCatalog: string[] = ["glue:DeleteCatalog"];
 	/** IAM actions required for the DeleteClassifier API call. */
-	static readonly DELETE_CLASSIFIER: string[] = ["glue:DeleteClassifier"];
+	static readonly DeleteClassifier: string[] = ["glue:DeleteClassifier"];
 	/** IAM actions required for the DeleteColumnStatisticsForPartition API call. */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_PARTITION: string[] = [
+	static readonly DeleteColumnStatisticsForPartition: string[] = [
 		"glue:UpdatePartition",
 	];
 	/** IAM actions required for the DeleteColumnStatisticsForTable API call. */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_TABLE: string[] = [
+	static readonly DeleteColumnStatisticsForTable: string[] = [
 		"glue:UpdateTable",
 	];
 	/** IAM actions required for the DeleteColumnStatisticsTaskSettings API call. */
-	static readonly DELETE_COLUMN_STATISTICS_TASK_SETTINGS: string[] = [
+	static readonly DeleteColumnStatisticsTaskSettings: string[] = [
 		"glue:DeleteColumnStatisticsTaskSettings",
 	];
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = ["glue:DeleteConnection"];
+	static readonly DeleteConnection: string[] = ["glue:DeleteConnection"];
 	/** IAM actions required for the DeleteConnectionType API call. */
-	static readonly DELETE_CONNECTION_TYPE: string[] = [
+	static readonly DeleteConnectionType: string[] = [
 		"glue:DeleteConnectionType",
 	];
 	/** IAM actions required for the DeleteCrawler API call. */
-	static readonly DELETE_CRAWLER: string[] = ["glue:DeleteCrawler"];
+	static readonly DeleteCrawler: string[] = ["glue:DeleteCrawler"];
 	/** IAM actions required for the DeleteCustomEntityType API call. */
-	static readonly DELETE_CUSTOM_ENTITY_TYPE: string[] = [
+	static readonly DeleteCustomEntityType: string[] = [
 		"glue:DeleteCustomEntityType",
 	];
 	/** IAM actions required for the DeleteDataQualityRuleset API call. */
-	static readonly DELETE_DATA_QUALITY_RULESET: string[] = [
+	static readonly DeleteDataQualityRuleset: string[] = [
 		"glue:DeleteDataQualityRuleset",
 	];
 	/** IAM actions required for the DeleteDatabase API call. */
-	static readonly DELETE_DATABASE: string[] = ["glue:DeleteDatabase"];
+	static readonly DeleteDatabase: string[] = ["glue:DeleteDatabase"];
 	/** IAM actions required for the DeleteDevEndpoint API call. */
-	static readonly DELETE_DEV_ENDPOINT: string[] = ["glue:DeleteDevEndpoint"];
+	static readonly DeleteDevEndpoint: string[] = ["glue:DeleteDevEndpoint"];
 	/** IAM actions required for the DeleteFormType API call. */
-	static readonly DELETE_FORM_TYPE: string[] = [];
+	static readonly DeleteFormType: string[] = [];
 	/** IAM actions required for the DeleteGlossary API call. */
-	static readonly DELETE_GLOSSARY: string[] = [];
+	static readonly DeleteGlossary: string[] = [];
 	/** IAM actions required for the DeleteGlossaryTerm API call. */
-	static readonly DELETE_GLOSSARY_TERM: string[] = [];
+	static readonly DeleteGlossaryTerm: string[] = [];
 	/** IAM actions required for the DeleteGlueIdentityCenterConfiguration API call. */
-	static readonly DELETE_GLUE_IDENTITY_CENTER_CONFIGURATION: string[] = [
+	static readonly DeleteGlueIdentityCenterConfiguration: string[] = [
 		"glue:DeleteGlueIdentityCenterConfiguration",
 	];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = ["glue:DeleteIntegration"];
+	static readonly DeleteIntegration: string[] = ["glue:DeleteIntegration"];
 	/** IAM actions required for the DeleteIntegrationResourceProperty API call. */
-	static readonly DELETE_INTEGRATION_RESOURCE_PROPERTY: string[] = [
+	static readonly DeleteIntegrationResourceProperty: string[] = [
 		"glue:DeleteIntegrationResourceProperty",
 	];
 	/** IAM actions required for the DeleteIntegrationTableProperties API call. */
-	static readonly DELETE_INTEGRATION_TABLE_PROPERTIES: string[] = [
+	static readonly DeleteIntegrationTableProperties: string[] = [
 		"glue:DeleteIntegrationTableProperties",
 	];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["glue:DeleteJob"];
+	static readonly DeleteJob: string[] = ["glue:DeleteJob"];
 	/** IAM actions required for the DeleteMLTransform API call. */
-	static readonly DELETE_ML_TRANSFORM: string[] = ["glue:DeleteMLTransform"];
+	static readonly DeleteMLTransform: string[] = ["glue:DeleteMLTransform"];
 	/** IAM actions required for the DeletePartition API call. */
-	static readonly DELETE_PARTITION: string[] = ["glue:DeletePartition"];
+	static readonly DeletePartition: string[] = ["glue:DeletePartition"];
 	/** IAM actions required for the DeletePartitionIndex API call. */
-	static readonly DELETE_PARTITION_INDEX: string[] = ["glue:UpdateTable"];
+	static readonly DeletePartitionIndex: string[] = ["glue:UpdateTable"];
 	/** IAM actions required for the DeleteRegistry API call. */
-	static readonly DELETE_REGISTRY: string[] = ["glue:DeleteRegistry"];
+	static readonly DeleteRegistry: string[] = ["glue:DeleteRegistry"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [];
+	static readonly DeleteResourcePolicy: string[] = [];
 	/** IAM actions required for the DeleteSchema API call. */
-	static readonly DELETE_SCHEMA: string[] = ["glue:DeleteSchema"];
+	static readonly DeleteSchema: string[] = ["glue:DeleteSchema"];
 	/** IAM actions required for the DeleteSchemaVersions API call. */
-	static readonly DELETE_SCHEMA_VERSIONS: string[] = [
+	static readonly DeleteSchemaVersions: string[] = [
 		"glue:DeleteSchemaVersions",
 	];
 	/** IAM actions required for the DeleteSecurityConfiguration API call. */
-	static readonly DELETE_SECURITY_CONFIGURATION: string[] = [
+	static readonly DeleteSecurityConfiguration: string[] = [
 		"glue:DeleteSecurityConfiguration",
 	];
 	/** IAM actions required for the DeleteSession API call. */
-	static readonly DELETE_SESSION: string[] = ["glue:DeleteSession"];
+	static readonly DeleteSession: string[] = ["glue:DeleteSession"];
 	/** IAM actions required for the DeleteTable API call. */
-	static readonly DELETE_TABLE: string[] = ["glue:DeleteTable"];
+	static readonly DeleteTable: string[] = ["glue:DeleteTable"];
 	/** IAM actions required for the DeleteTableOptimizer API call. */
-	static readonly DELETE_TABLE_OPTIMIZER: string[] = [
+	static readonly DeleteTableOptimizer: string[] = [
 		"glue:DeleteTableOptimizer",
 	];
 	/** IAM actions required for the DeleteTableVersion API call. */
-	static readonly DELETE_TABLE_VERSION: string[] = ["glue:DeleteTableVersion"];
+	static readonly DeleteTableVersion: string[] = ["glue:DeleteTableVersion"];
 	/** IAM actions required for the DeleteTrigger API call. */
-	static readonly DELETE_TRIGGER: string[] = ["glue:DeleteTrigger"];
+	static readonly DeleteTrigger: string[] = ["glue:DeleteTrigger"];
 	/** IAM actions required for the DeleteUsageProfile API call. */
-	static readonly DELETE_USAGE_PROFILE: string[] = ["glue:DeleteUsageProfile"];
+	static readonly DeleteUsageProfile: string[] = ["glue:DeleteUsageProfile"];
 	/** IAM actions required for the DeleteUserDefinedFunction API call. */
-	static readonly DELETE_USER_DEFINED_FUNCTION: string[] = [
+	static readonly DeleteUserDefinedFunction: string[] = [
 		"glue:DeleteUserDefinedFunction",
 	];
 	/** IAM actions required for the DeleteWorkflow API call. */
-	static readonly DELETE_WORKFLOW: string[] = ["glue:DeleteWorkflow"];
+	static readonly DeleteWorkflow: string[] = ["glue:DeleteWorkflow"];
 	/** IAM actions required for the DescribeConnectionType API call. */
-	static readonly DESCRIBE_CONNECTION_TYPE: string[] = [
+	static readonly DescribeConnectionType: string[] = [
 		"glue:DescribeConnectionType",
 	];
 	/** IAM actions required for the DescribeEntity API call. */
-	static readonly DESCRIBE_ENTITY: string[] = ["glue:DescribeEntity"];
+	static readonly DescribeEntity: string[] = ["glue:DescribeEntity"];
 	/** IAM actions required for the DescribeInboundIntegrations API call. */
-	static readonly DESCRIBE_INBOUND_INTEGRATIONS: string[] = [
+	static readonly DescribeInboundIntegrations: string[] = [
 		"glue:DescribeInboundIntegrations",
 	];
 	/** IAM actions required for the DescribeIntegrations API call. */
-	static readonly DESCRIBE_INTEGRATIONS: string[] = [
+	static readonly DescribeIntegrations: string[] = [
 		"glue:DescribeIntegrations",
 	];
 	/** IAM actions required for the DisassociateGlossaryTerms API call. */
-	static readonly DISASSOCIATE_GLOSSARY_TERMS: string[] = [];
+	static readonly DisassociateGlossaryTerms: string[] = [];
 	/** IAM actions required for the GetAsset API call. */
-	static readonly GET_ASSET: string[] = [];
+	static readonly opGetAsset: string[] = [];
 	/** IAM actions required for the GetAssetType API call. */
-	static readonly GET_ASSET_TYPE: string[] = [];
+	static readonly opGetAssetType: string[] = [];
 	/** IAM actions required for the GetBlueprint API call. */
-	static readonly GET_BLUEPRINT: string[] = ["glue:GetBlueprint"];
+	static readonly opGetBlueprint: string[] = ["glue:GetBlueprint"];
 	/** IAM actions required for the GetBlueprintRun API call. */
-	static readonly GET_BLUEPRINT_RUN: string[] = ["glue:GetBlueprintRun"];
+	static readonly opGetBlueprintRun: string[] = ["glue:GetBlueprintRun"];
 	/** IAM actions required for the GetBlueprintRuns API call. */
-	static readonly GET_BLUEPRINT_RUNS: string[] = ["glue:GetBlueprintRuns"];
+	static readonly opGetBlueprintRuns: string[] = ["glue:GetBlueprintRuns"];
 	/** IAM actions required for the GetCatalog API call. */
-	static readonly GET_CATALOG: string[] = ["glue:GetCatalog"];
+	static readonly opGetCatalog: string[] = ["glue:GetCatalog"];
 	/** IAM actions required for the GetCatalogImportStatus API call. */
-	static readonly GET_CATALOG_IMPORT_STATUS: string[] = [
+	static readonly opGetCatalogImportStatus: string[] = [
 		"glue:GetCatalogImportStatus",
 	];
 	/** IAM actions required for the GetCatalogs API call. */
-	static readonly GET_CATALOGS: string[] = [
+	static readonly opGetCatalogs: string[] = [
 		"athena:GetCatalogs",
 		"glue:GetCatalogs",
 	];
 	/** IAM actions required for the GetClassifier API call. */
-	static readonly GET_CLASSIFIER: string[] = ["glue:GetClassifier"];
+	static readonly opGetClassifier: string[] = ["glue:GetClassifier"];
 	/** IAM actions required for the GetClassifiers API call. */
-	static readonly GET_CLASSIFIERS: string[] = ["glue:GetClassifiers"];
+	static readonly opGetClassifiers: string[] = ["glue:GetClassifiers"];
 	/** IAM actions required for the GetColumnStatisticsForPartition API call. */
-	static readonly GET_COLUMN_STATISTICS_FOR_PARTITION: string[] = [
+	static readonly opGetColumnStatisticsForPartition: string[] = [
 		"glue:GetPartition",
 	];
 	/** IAM actions required for the GetColumnStatisticsForTable API call. */
-	static readonly GET_COLUMN_STATISTICS_FOR_TABLE: string[] = ["glue:GetTable"];
+	static readonly opGetColumnStatisticsForTable: string[] = ["glue:GetTable"];
 	/** IAM actions required for the GetColumnStatisticsTaskRun API call. */
-	static readonly GET_COLUMN_STATISTICS_TASK_RUN: string[] = [
+	static readonly opGetColumnStatisticsTaskRun: string[] = [
 		"glue:GetColumnStatisticsTaskRun",
 	];
 	/** IAM actions required for the GetColumnStatisticsTaskRuns API call. */
-	static readonly GET_COLUMN_STATISTICS_TASK_RUNS: string[] = [
+	static readonly opGetColumnStatisticsTaskRuns: string[] = [
 		"glue:GetColumnStatisticsTaskRuns",
 	];
 	/** IAM actions required for the GetColumnStatisticsTaskSettings API call. */
-	static readonly GET_COLUMN_STATISTICS_TASK_SETTINGS: string[] = [
+	static readonly opGetColumnStatisticsTaskSettings: string[] = [
 		"glue:GetColumnStatisticsTaskSettings",
 	];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = ["glue:GetConnection"];
+	static readonly opGetConnection: string[] = ["glue:GetConnection"];
 	/** IAM actions required for the GetConnections API call. */
-	static readonly GET_CONNECTIONS: string[] = ["glue:GetConnections"];
+	static readonly opGetConnections: string[] = ["glue:GetConnections"];
 	/** IAM actions required for the GetCrawler API call. */
-	static readonly GET_CRAWLER: string[] = ["glue:GetCrawler"];
+	static readonly opGetCrawler: string[] = ["glue:GetCrawler"];
 	/** IAM actions required for the GetCrawlerMetrics API call. */
-	static readonly GET_CRAWLER_METRICS: string[] = ["glue:GetCrawlerMetrics"];
+	static readonly opGetCrawlerMetrics: string[] = ["glue:GetCrawlerMetrics"];
 	/** IAM actions required for the GetCrawlers API call. */
-	static readonly GET_CRAWLERS: string[] = ["glue:GetCrawlers"];
+	static readonly opGetCrawlers: string[] = ["glue:GetCrawlers"];
 	/** IAM actions required for the GetCustomEntityType API call. */
-	static readonly GET_CUSTOM_ENTITY_TYPE: string[] = [
+	static readonly opGetCustomEntityType: string[] = [
 		"glue:GetCustomEntityType",
 	];
 	/** IAM actions required for the GetDashboardUrl API call. */
-	static readonly GET_DASHBOARD_URL: string[] = ["glue:GetDashboardUrl"];
+	static readonly opGetDashboardUrl: string[] = ["glue:GetDashboardUrl"];
 	/** IAM actions required for the GetDataCatalogEncryptionSettings API call. */
-	static readonly GET_DATA_CATALOG_ENCRYPTION_SETTINGS: string[] = [
+	static readonly opGetDataCatalogEncryptionSettings: string[] = [
 		"glue:GetDataCatalogEncryptionSettings",
 	];
 	/** IAM actions required for the GetDataCatalogExportConfiguration API call. */
-	static readonly GET_DATA_CATALOG_EXPORT_CONFIGURATION: string[] = [];
+	static readonly opGetDataCatalogExportConfiguration: string[] = [];
 	/** IAM actions required for the GetDataQualityModel API call. */
-	static readonly GET_DATA_QUALITY_MODEL: string[] = [
+	static readonly opGetDataQualityModel: string[] = [
 		"glue:GetDataQualityModel",
 	];
 	/** IAM actions required for the GetDataQualityModelResult API call. */
-	static readonly GET_DATA_QUALITY_MODEL_RESULT: string[] = [
+	static readonly opGetDataQualityModelResult: string[] = [
 		"glue:GetDataQualityModelResult",
 	];
 	/** IAM actions required for the GetDataQualityResult API call. */
-	static readonly GET_DATA_QUALITY_RESULT: string[] = [
+	static readonly opGetDataQualityResult: string[] = [
 		"glue:GetDataQualityResult",
 	];
 	/** IAM actions required for the GetDataQualityRuleRecommendationRun API call. */
-	static readonly GET_DATA_QUALITY_RULE_RECOMMENDATION_RUN: string[] = [
+	static readonly opGetDataQualityRuleRecommendationRun: string[] = [
 		"glue:GetDataQualityRuleRecommendationRun",
 	];
 	/** IAM actions required for the GetDataQualityRuleset API call. */
-	static readonly GET_DATA_QUALITY_RULESET: string[] = [
+	static readonly opGetDataQualityRuleset: string[] = [
 		"glue:GetDataQualityRuleset",
 	];
 	/** IAM actions required for the GetDataQualityRulesetEvaluationRun API call. */
-	static readonly GET_DATA_QUALITY_RULESET_EVALUATION_RUN: string[] = [
+	static readonly opGetDataQualityRulesetEvaluationRun: string[] = [
 		"glue:GetDataQualityRulesetEvaluationRun",
 	];
 	/** IAM actions required for the GetDatabase API call. */
-	static readonly GET_DATABASE: string[] = ["glue:GetDatabase"];
+	static readonly opGetDatabase: string[] = ["glue:GetDatabase"];
 	/** IAM actions required for the GetDatabases API call. */
-	static readonly GET_DATABASES: string[] = ["glue:GetDatabases"];
+	static readonly opGetDatabases: string[] = ["glue:GetDatabases"];
 	/** IAM actions required for the GetDataflowGraph API call. */
-	static readonly GET_DATAFLOW_GRAPH: string[] = ["glue:GetDataflowGraph"];
+	static readonly opGetDataflowGraph: string[] = ["glue:GetDataflowGraph"];
 	/** IAM actions required for the GetDevEndpoint API call. */
-	static readonly GET_DEV_ENDPOINT: string[] = ["glue:GetDevEndpoint"];
+	static readonly opGetDevEndpoint: string[] = ["glue:GetDevEndpoint"];
 	/** IAM actions required for the GetDevEndpoints API call. */
-	static readonly GET_DEV_ENDPOINTS: string[] = ["glue:GetDevEndpoints"];
+	static readonly opGetDevEndpoints: string[] = ["glue:GetDevEndpoints"];
 	/** IAM actions required for the GetEntityRecords API call. */
-	static readonly GET_ENTITY_RECORDS: string[] = ["glue:GetEntityRecords"];
+	static readonly opGetEntityRecords: string[] = ["glue:GetEntityRecords"];
 	/** IAM actions required for the GetFormType API call. */
-	static readonly GET_FORM_TYPE: string[] = [];
+	static readonly opGetFormType: string[] = [];
 	/** IAM actions required for the GetGlossary API call. */
-	static readonly GET_GLOSSARY: string[] = [];
+	static readonly opGetGlossary: string[] = [];
 	/** IAM actions required for the GetGlossaryTerm API call. */
-	static readonly GET_GLOSSARY_TERM: string[] = [];
+	static readonly opGetGlossaryTerm: string[] = [];
 	/** IAM actions required for the GetGlueIdentityCenterConfiguration API call. */
-	static readonly GET_GLUE_IDENTITY_CENTER_CONFIGURATION: string[] = [
+	static readonly opGetGlueIdentityCenterConfiguration: string[] = [
 		"glue:GetGlueIdentityCenterConfiguration",
 	];
 	/** IAM actions required for the GetIntegrationResourceProperty API call. */
-	static readonly GET_INTEGRATION_RESOURCE_PROPERTY: string[] = [
+	static readonly opGetIntegrationResourceProperty: string[] = [
 		"glue:GetIntegrationResourceProperty",
 	];
 	/** IAM actions required for the GetIntegrationTableProperties API call. */
-	static readonly GET_INTEGRATION_TABLE_PROPERTIES: string[] = [
+	static readonly opGetIntegrationTableProperties: string[] = [
 		"glue:GetIntegrationTableProperties",
 	];
 	/** IAM actions required for the GetJob API call. */
-	static readonly GET_JOB: string[] = ["glue:GetJob", "iam:PassRole"];
+	static readonly opGetJob: string[] = ["glue:GetJob", "iam:PassRole"];
 	/** IAM actions required for the GetJobBookmark API call. */
-	static readonly GET_JOB_BOOKMARK: string[] = ["glue:GetJobBookmark"];
+	static readonly opGetJobBookmark: string[] = ["glue:GetJobBookmark"];
 	/** IAM actions required for the GetJobRun API call. */
-	static readonly GET_JOB_RUN: string[] = ["glue:GetJobRun"];
+	static readonly opGetJobRun: string[] = ["glue:GetJobRun"];
 	/** IAM actions required for the GetJobRuns API call. */
-	static readonly GET_JOB_RUNS: string[] = ["glue:GetJobRuns"];
+	static readonly opGetJobRuns: string[] = ["glue:GetJobRuns"];
 	/** IAM actions required for the GetJobs API call. */
-	static readonly GET_JOBS: string[] = ["glue:GetJobs", "iam:PassRole"];
+	static readonly opGetJobs: string[] = ["glue:GetJobs", "iam:PassRole"];
 	/** IAM actions required for the GetMLTaskRun API call. */
-	static readonly GET_ML_TASK_RUN: string[] = ["glue:GetMLTaskRun"];
+	static readonly opGetMLTaskRun: string[] = ["glue:GetMLTaskRun"];
 	/** IAM actions required for the GetMLTaskRuns API call. */
-	static readonly GET_ML_TASK_RUNS: string[] = ["glue:GetMLTaskRuns"];
+	static readonly opGetMLTaskRuns: string[] = ["glue:GetMLTaskRuns"];
 	/** IAM actions required for the GetMLTransform API call. */
-	static readonly GET_ML_TRANSFORM: string[] = ["glue:GetMLTransform"];
+	static readonly opGetMLTransform: string[] = ["glue:GetMLTransform"];
 	/** IAM actions required for the GetMLTransforms API call. */
-	static readonly GET_ML_TRANSFORMS: string[] = ["glue:GetMLTransforms"];
+	static readonly opGetMLTransforms: string[] = ["glue:GetMLTransforms"];
 	/** IAM actions required for the GetMapping API call. */
-	static readonly GET_MAPPING: string[] = ["glue:GetMapping"];
+	static readonly opGetMapping: string[] = ["glue:GetMapping"];
 	/** IAM actions required for the GetMaterializedViewRefreshTaskRun API call. */
-	static readonly GET_MATERIALIZED_VIEW_REFRESH_TASK_RUN: string[] = [];
+	static readonly opGetMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the GetPartition API call. */
-	static readonly GET_PARTITION: string[] = ["glue:GetPartition"];
+	static readonly opGetPartition: string[] = ["glue:GetPartition"];
 	/** IAM actions required for the GetPartitionIndexes API call. */
-	static readonly GET_PARTITION_INDEXES: string[] = [];
+	static readonly opGetPartitionIndexes: string[] = [];
 	/** IAM actions required for the GetPartitions API call. */
-	static readonly GET_PARTITIONS: string[] = ["glue:GetPartitions"];
+	static readonly opGetPartitions: string[] = ["glue:GetPartitions"];
 	/** IAM actions required for the GetPlan API call. */
-	static readonly GET_PLAN: string[] = ["glue:GetPlan"];
+	static readonly opGetPlan: string[] = ["glue:GetPlan"];
 	/** IAM actions required for the GetRegistry API call. */
-	static readonly GET_REGISTRY: string[] = ["glue:GetRegistry"];
+	static readonly opGetRegistry: string[] = ["glue:GetRegistry"];
 	/** IAM actions required for the GetResourcePolicies API call. */
-	static readonly GET_RESOURCE_POLICIES: string[] = [];
+	static readonly opGetResourcePolicies: string[] = [];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = [];
+	static readonly opGetResourcePolicy: string[] = [];
 	/** IAM actions required for the GetSchema API call. */
-	static readonly GET_SCHEMA: string[] = ["glue:GetSchema"];
+	static readonly opGetSchema: string[] = ["glue:GetSchema"];
 	/** IAM actions required for the GetSchemaByDefinition API call. */
-	static readonly GET_SCHEMA_BY_DEFINITION: string[] = [
+	static readonly opGetSchemaByDefinition: string[] = [
 		"glue:GetSchemaByDefinition",
 	];
 	/** IAM actions required for the GetSchemaVersion API call. */
-	static readonly GET_SCHEMA_VERSION: string[] = ["glue:GetSchemaVersion"];
+	static readonly opGetSchemaVersion: string[] = ["glue:GetSchemaVersion"];
 	/** IAM actions required for the GetSchemaVersionsDiff API call. */
-	static readonly GET_SCHEMA_VERSIONS_DIFF: string[] = [
+	static readonly opGetSchemaVersionsDiff: string[] = [
 		"glue:GetSchemaVersionsDiff",
 	];
 	/** IAM actions required for the GetSecurityConfiguration API call. */
-	static readonly GET_SECURITY_CONFIGURATION: string[] = [
+	static readonly opGetSecurityConfiguration: string[] = [
 		"glue:GetSecurityConfiguration",
 	];
 	/** IAM actions required for the GetSecurityConfigurations API call. */
-	static readonly GET_SECURITY_CONFIGURATIONS: string[] = [
+	static readonly opGetSecurityConfigurations: string[] = [
 		"glue:GetSecurityConfigurations",
 	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["glue:GetSession"];
+	static readonly opGetSession: string[] = ["glue:GetSession"];
 	/** IAM actions required for the GetSessionEndpoint API call. */
-	static readonly GET_SESSION_ENDPOINT: string[] = ["glue:GetSessionEndpoint"];
+	static readonly opGetSessionEndpoint: string[] = ["glue:GetSessionEndpoint"];
 	/** IAM actions required for the GetStatement API call. */
-	static readonly GET_STATEMENT: string[] = ["glue:GetStatement"];
+	static readonly opGetStatement: string[] = ["glue:GetStatement"];
 	/** IAM actions required for the GetTable API call. */
-	static readonly GET_TABLE: string[] = ["athena:GetTable", "glue:GetTable"];
+	static readonly opGetTable: string[] = ["athena:GetTable", "glue:GetTable"];
 	/** IAM actions required for the GetTableOptimizer API call. */
-	static readonly GET_TABLE_OPTIMIZER: string[] = ["glue:GetTableOptimizer"];
+	static readonly opGetTableOptimizer: string[] = ["glue:GetTableOptimizer"];
 	/** IAM actions required for the GetTableVersion API call. */
-	static readonly GET_TABLE_VERSION: string[] = ["glue:GetTableVersion"];
+	static readonly opGetTableVersion: string[] = ["glue:GetTableVersion"];
 	/** IAM actions required for the GetTableVersions API call. */
-	static readonly GET_TABLE_VERSIONS: string[] = ["glue:GetTableVersions"];
+	static readonly opGetTableVersions: string[] = ["glue:GetTableVersions"];
 	/** IAM actions required for the GetTables API call. */
-	static readonly GET_TABLES: string[] = ["athena:GetTables", "glue:GetTables"];
+	static readonly opGetTables: string[] = [
+		"athena:GetTables",
+		"glue:GetTables",
+	];
 	/** IAM actions required for the GetTags API call. */
-	static readonly GET_TAGS: string[] = ["glue:GetTags"];
+	static readonly opGetTags: string[] = ["glue:GetTags"];
 	/** IAM actions required for the GetTrigger API call. */
-	static readonly GET_TRIGGER: string[] = ["glue:GetTrigger"];
+	static readonly opGetTrigger: string[] = ["glue:GetTrigger"];
 	/** IAM actions required for the GetTriggers API call. */
-	static readonly GET_TRIGGERS: string[] = ["glue:GetTriggers"];
+	static readonly opGetTriggers: string[] = ["glue:GetTriggers"];
 	/** IAM actions required for the GetUnfilteredPartitionMetadata API call. */
-	static readonly GET_UNFILTERED_PARTITION_METADATA: string[] = [];
+	static readonly opGetUnfilteredPartitionMetadata: string[] = [];
 	/** IAM actions required for the GetUnfilteredPartitionsMetadata API call. */
-	static readonly GET_UNFILTERED_PARTITIONS_METADATA: string[] = [];
+	static readonly opGetUnfilteredPartitionsMetadata: string[] = [];
 	/** IAM actions required for the GetUnfilteredTableMetadata API call. */
-	static readonly GET_UNFILTERED_TABLE_METADATA: string[] = [];
+	static readonly opGetUnfilteredTableMetadata: string[] = [];
 	/** IAM actions required for the GetUsageProfile API call. */
-	static readonly GET_USAGE_PROFILE: string[] = ["glue:GetUsageProfile"];
+	static readonly opGetUsageProfile: string[] = ["glue:GetUsageProfile"];
 	/** IAM actions required for the GetUserDefinedFunction API call. */
-	static readonly GET_USER_DEFINED_FUNCTION: string[] = [
+	static readonly opGetUserDefinedFunction: string[] = [
 		"glue:GetUserDefinedFunction",
 	];
 	/** IAM actions required for the GetUserDefinedFunctions API call. */
-	static readonly GET_USER_DEFINED_FUNCTIONS: string[] = [
+	static readonly opGetUserDefinedFunctions: string[] = [
 		"glue:GetUserDefinedFunctions",
 	];
 	/** IAM actions required for the GetWorkflow API call. */
-	static readonly GET_WORKFLOW: string[] = ["glue:GetWorkflow"];
+	static readonly opGetWorkflow: string[] = ["glue:GetWorkflow"];
 	/** IAM actions required for the GetWorkflowRun API call. */
-	static readonly GET_WORKFLOW_RUN: string[] = ["glue:GetWorkflowRun"];
+	static readonly opGetWorkflowRun: string[] = ["glue:GetWorkflowRun"];
 	/** IAM actions required for the GetWorkflowRunProperties API call. */
-	static readonly GET_WORKFLOW_RUN_PROPERTIES: string[] = [
+	static readonly opGetWorkflowRunProperties: string[] = [
 		"glue:GetWorkflowRunProperties",
 	];
 	/** IAM actions required for the GetWorkflowRuns API call. */
-	static readonly GET_WORKFLOW_RUNS: string[] = ["glue:GetWorkflowRuns"];
+	static readonly opGetWorkflowRuns: string[] = ["glue:GetWorkflowRuns"];
 	/** IAM actions required for the ImportCatalogToGlue API call. */
-	static readonly IMPORT_CATALOG_TO_GLUE: string[] = [
-		"glue:ImportCatalogToGlue",
-	];
+	static readonly ImportCatalogToGlue: string[] = ["glue:ImportCatalogToGlue"];
 	/** IAM actions required for the ListAssetTypes API call. */
-	static readonly LIST_ASSET_TYPES: string[] = [];
+	static readonly ListAssetTypes: string[] = [];
 	/** IAM actions required for the ListBlueprints API call. */
-	static readonly LIST_BLUEPRINTS: string[] = ["glue:ListBlueprints"];
+	static readonly ListBlueprints: string[] = ["glue:ListBlueprints"];
 	/** IAM actions required for the ListColumnStatisticsTaskRuns API call. */
-	static readonly LIST_COLUMN_STATISTICS_TASK_RUNS: string[] = [
+	static readonly ListColumnStatisticsTaskRuns: string[] = [
 		"glue:ListColumnStatisticsTaskRuns",
 	];
 	/** IAM actions required for the ListConnectionTypes API call. */
-	static readonly LIST_CONNECTION_TYPES: string[] = [
-		"glue:ListConnectionTypes",
-	];
+	static readonly ListConnectionTypes: string[] = ["glue:ListConnectionTypes"];
 	/** IAM actions required for the ListCrawlers API call. */
-	static readonly LIST_CRAWLERS: string[] = ["glue:ListCrawlers"];
+	static readonly ListCrawlers: string[] = ["glue:ListCrawlers"];
 	/** IAM actions required for the ListCrawls API call. */
-	static readonly LIST_CRAWLS: string[] = ["glue:ListCrawls"];
+	static readonly ListCrawls: string[] = ["glue:ListCrawls"];
 	/** IAM actions required for the ListCustomEntityTypes API call. */
-	static readonly LIST_CUSTOM_ENTITY_TYPES: string[] = [
+	static readonly ListCustomEntityTypes: string[] = [
 		"glue:ListCustomEntityTypes",
 	];
 	/** IAM actions required for the ListDataQualityResults API call. */
-	static readonly LIST_DATA_QUALITY_RESULTS: string[] = [
+	static readonly ListDataQualityResults: string[] = [
 		"glue:ListDataQualityResults",
 	];
 	/** IAM actions required for the ListDataQualityRuleRecommendationRuns API call. */
-	static readonly LIST_DATA_QUALITY_RULE_RECOMMENDATION_RUNS: string[] = [
+	static readonly ListDataQualityRuleRecommendationRuns: string[] = [
 		"glue:ListDataQualityRuleRecommendationRuns",
 	];
 	/** IAM actions required for the ListDataQualityRulesetEvaluationRuns API call. */
-	static readonly LIST_DATA_QUALITY_RULESET_EVALUATION_RUNS: string[] = [
+	static readonly ListDataQualityRulesetEvaluationRuns: string[] = [
 		"glue:ListDataQualityRulesetEvaluationRuns",
 	];
 	/** IAM actions required for the ListDataQualityRulesets API call. */
-	static readonly LIST_DATA_QUALITY_RULESETS: string[] = [
+	static readonly ListDataQualityRulesets: string[] = [
 		"glue:ListDataQualityRulesets",
 	];
 	/** IAM actions required for the ListDataQualityStatisticAnnotations API call. */
-	static readonly LIST_DATA_QUALITY_STATISTIC_ANNOTATIONS: string[] = [
+	static readonly ListDataQualityStatisticAnnotations: string[] = [
 		"glue:GetDataQualityResult",
 	];
 	/** IAM actions required for the ListDataQualityStatistics API call. */
-	static readonly LIST_DATA_QUALITY_STATISTICS: string[] = [
+	static readonly ListDataQualityStatistics: string[] = [
 		"glue:GetDataQualityResult",
 	];
 	/** IAM actions required for the ListDevEndpoints API call. */
-	static readonly LIST_DEV_ENDPOINTS: string[] = ["glue:ListDevEndpoints"];
+	static readonly ListDevEndpoints: string[] = ["glue:ListDevEndpoints"];
 	/** IAM actions required for the ListEntities API call. */
-	static readonly LIST_ENTITIES: string[] = ["glue:ListEntities"];
+	static readonly ListEntities: string[] = ["glue:ListEntities"];
 	/** IAM actions required for the ListFormTypes API call. */
-	static readonly LIST_FORM_TYPES: string[] = [];
+	static readonly ListFormTypes: string[] = [];
 	/** IAM actions required for the ListGlossaries API call. */
-	static readonly LIST_GLOSSARIES: string[] = [];
+	static readonly ListGlossaries: string[] = [];
 	/** IAM actions required for the ListGlossaryTerms API call. */
-	static readonly LIST_GLOSSARY_TERMS: string[] = [];
+	static readonly ListGlossaryTerms: string[] = [];
 	/** IAM actions required for the ListIntegrationResourceProperties API call. */
-	static readonly LIST_INTEGRATION_RESOURCE_PROPERTIES: string[] = [
+	static readonly ListIntegrationResourceProperties: string[] = [
 		"glue:ListIntegrationResourceProperties",
 	];
 	/** IAM actions required for the ListIterableForms API call. */
-	static readonly LIST_ITERABLE_FORMS: string[] = [];
+	static readonly ListIterableForms: string[] = [];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["glue:ListJobs"];
+	static readonly ListJobs: string[] = ["glue:ListJobs"];
 	/** IAM actions required for the ListMLTransforms API call. */
-	static readonly LIST_ML_TRANSFORMS: string[] = ["glue:ListMLTransforms"];
+	static readonly ListMLTransforms: string[] = ["glue:ListMLTransforms"];
 	/** IAM actions required for the ListMaterializedViewRefreshTaskRuns API call. */
-	static readonly LIST_MATERIALIZED_VIEW_REFRESH_TASK_RUNS: string[] = [];
+	static readonly ListMaterializedViewRefreshTaskRuns: string[] = [];
 	/** IAM actions required for the ListRegistries API call. */
-	static readonly LIST_REGISTRIES: string[] = ["glue:ListRegistries"];
+	static readonly ListRegistries: string[] = ["glue:ListRegistries"];
 	/** IAM actions required for the ListSchemaVersions API call. */
-	static readonly LIST_SCHEMA_VERSIONS: string[] = ["glue:ListSchemaVersions"];
+	static readonly ListSchemaVersions: string[] = ["glue:ListSchemaVersions"];
 	/** IAM actions required for the ListSchemas API call. */
-	static readonly LIST_SCHEMAS: string[] = ["glue:ListSchemas"];
+	static readonly ListSchemas: string[] = ["glue:ListSchemas"];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["glue:ListSessions"];
+	static readonly ListSessions: string[] = ["glue:ListSessions"];
 	/** IAM actions required for the ListStatements API call. */
-	static readonly LIST_STATEMENTS: string[] = ["glue:ListStatements"];
+	static readonly ListStatements: string[] = ["glue:ListStatements"];
 	/** IAM actions required for the ListTableOptimizerRuns API call. */
-	static readonly LIST_TABLE_OPTIMIZER_RUNS: string[] = [
+	static readonly ListTableOptimizerRuns: string[] = [
 		"glue:ListTableOptimizerRuns",
 	];
 	/** IAM actions required for the ListTriggers API call. */
-	static readonly LIST_TRIGGERS: string[] = ["glue:ListTriggers"];
+	static readonly ListTriggers: string[] = ["glue:ListTriggers"];
 	/** IAM actions required for the ListUsageProfiles API call. */
-	static readonly LIST_USAGE_PROFILES: string[] = ["glue:ListUsageProfiles"];
+	static readonly ListUsageProfiles: string[] = ["glue:ListUsageProfiles"];
 	/** IAM actions required for the ListWorkflows API call. */
-	static readonly LIST_WORKFLOWS: string[] = ["glue:ListWorkflows"];
+	static readonly ListWorkflows: string[] = ["glue:ListWorkflows"];
 	/** IAM actions required for the ModifyIntegration API call. */
-	static readonly MODIFY_INTEGRATION: string[] = ["glue:ModifyIntegration"];
+	static readonly ModifyIntegration: string[] = ["glue:ModifyIntegration"];
 	/** IAM actions required for the PutAsset API call. */
-	static readonly PUT_ASSET: string[] = [];
+	static readonly PutAsset: string[] = [];
 	/** IAM actions required for the PutAssetType API call. */
-	static readonly PUT_ASSET_TYPE: string[] = [];
+	static readonly PutAssetType: string[] = [];
 	/** IAM actions required for the PutAttachment API call. */
-	static readonly PUT_ATTACHMENT: string[] = [];
+	static readonly PutAttachment: string[] = [];
 	/** IAM actions required for the PutDataCatalogEncryptionSettings API call. */
-	static readonly PUT_DATA_CATALOG_ENCRYPTION_SETTINGS: string[] = [
+	static readonly PutDataCatalogEncryptionSettings: string[] = [
 		"iam:PassRole",
 		"glue:PutDataCatalogEncryptionSettings",
 	];
 	/** IAM actions required for the PutDataCatalogExportConfiguration API call. */
-	static readonly PUT_DATA_CATALOG_EXPORT_CONFIGURATION: string[] = [];
+	static readonly PutDataCatalogExportConfiguration: string[] = [];
 	/** IAM actions required for the PutDataQualityProfileAnnotation API call. */
-	static readonly PUT_DATA_QUALITY_PROFILE_ANNOTATION: string[] = [
+	static readonly PutDataQualityProfileAnnotation: string[] = [
 		"glue:PutDataQualityProfileAnnotation",
 	];
 	/** IAM actions required for the PutFormType API call. */
-	static readonly PUT_FORM_TYPE: string[] = [];
+	static readonly PutFormType: string[] = [];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = [];
+	static readonly PutResourcePolicy: string[] = [];
 	/** IAM actions required for the PutSchemaVersionMetadata API call. */
-	static readonly PUT_SCHEMA_VERSION_METADATA: string[] = [
+	static readonly PutSchemaVersionMetadata: string[] = [
 		"glue:PutSchemaVersionMetadata",
 	];
 	/** IAM actions required for the PutWorkflowRunProperties API call. */
-	static readonly PUT_WORKFLOW_RUN_PROPERTIES: string[] = [
+	static readonly PutWorkflowRunProperties: string[] = [
 		"glue:PutWorkflowRunProperties",
 	];
 	/** IAM actions required for the QuerySchemaVersionMetadata API call. */
-	static readonly QUERY_SCHEMA_VERSION_METADATA: string[] = [
+	static readonly QuerySchemaVersionMetadata: string[] = [
 		"glue:QuerySchemaVersionMetadata",
 	];
 	/** IAM actions required for the RegisterConnectionType API call. */
-	static readonly REGISTER_CONNECTION_TYPE: string[] = [
+	static readonly RegisterConnectionType: string[] = [
 		"glue:RegisterConnectionType",
 		"glue:TagResource",
 	];
 	/** IAM actions required for the RegisterSchemaVersion API call. */
-	static readonly REGISTER_SCHEMA_VERSION: string[] = [
+	static readonly RegisterSchemaVersion: string[] = [
 		"glue:RegisterSchemaVersion",
 	];
 	/** IAM actions required for the RemoveSchemaVersionMetadata API call. */
-	static readonly REMOVE_SCHEMA_VERSION_METADATA: string[] = [
+	static readonly RemoveSchemaVersionMetadata: string[] = [
 		"glue:RemoveSchemaVersionMetadata",
 	];
 	/** IAM actions required for the ResetJobBookmark API call. */
-	static readonly RESET_JOB_BOOKMARK: string[] = ["glue:ResetJobBookmark"];
+	static readonly ResetJobBookmark: string[] = ["glue:ResetJobBookmark"];
 	/** IAM actions required for the ResumeWorkflowRun API call. */
-	static readonly RESUME_WORKFLOW_RUN: string[] = ["glue:ResumeWorkflowRun"];
+	static readonly ResumeWorkflowRun: string[] = ["glue:ResumeWorkflowRun"];
 	/** IAM actions required for the RunStatement API call. */
-	static readonly RUN_STATEMENT: string[] = ["glue:RunStatement"];
+	static readonly RunStatement: string[] = ["glue:RunStatement"];
 	/** IAM actions required for the SearchAssets API call. */
-	static readonly SEARCH_ASSETS: string[] = [];
+	static readonly SearchAssets: string[] = [];
 	/** IAM actions required for the SearchTables API call. */
-	static readonly SEARCH_TABLES: string[] = ["glue:SearchTables"];
+	static readonly SearchTables: string[] = ["glue:SearchTables"];
 	/** IAM actions required for the StartBlueprintRun API call. */
-	static readonly START_BLUEPRINT_RUN: string[] = [
+	static readonly StartBlueprintRun: string[] = [
 		"iam:PassRole",
 		"glue:StartBlueprintRun",
 	];
 	/** IAM actions required for the StartColumnStatisticsTaskRun API call. */
-	static readonly START_COLUMN_STATISTICS_TASK_RUN: string[] = [
+	static readonly StartColumnStatisticsTaskRun: string[] = [
 		"iam:PassRole",
 		"glue:StartColumnStatisticsTaskRun",
 	];
 	/** IAM actions required for the StartColumnStatisticsTaskRunSchedule API call. */
-	static readonly START_COLUMN_STATISTICS_TASK_RUN_SCHEDULE: string[] = [
+	static readonly StartColumnStatisticsTaskRunSchedule: string[] = [
 		"glue:StartColumnStatisticsTaskRunSchedule",
 	];
 	/** IAM actions required for the StartCrawler API call. */
-	static readonly START_CRAWLER: string[] = ["glue:StartCrawler"];
+	static readonly StartCrawler: string[] = ["glue:StartCrawler"];
 	/** IAM actions required for the StartCrawlerSchedule API call. */
-	static readonly START_CRAWLER_SCHEDULE: string[] = [
+	static readonly StartCrawlerSchedule: string[] = [
 		"glue:StartCrawlerSchedule",
 	];
 	/** IAM actions required for the StartDataQualityRuleRecommendationRun API call. */
-	static readonly START_DATA_QUALITY_RULE_RECOMMENDATION_RUN: string[] = [
+	static readonly StartDataQualityRuleRecommendationRun: string[] = [
 		"iam:PassRole",
 		"glue:StartDataQualityRuleRecommendationRun",
 	];
 	/** IAM actions required for the StartDataQualityRulesetEvaluationRun API call. */
-	static readonly START_DATA_QUALITY_RULESET_EVALUATION_RUN: string[] = [
+	static readonly StartDataQualityRulesetEvaluationRun: string[] = [
 		"iam:PassRole",
 		"glue:StartDataQualityRulesetEvaluationRun",
 	];
 	/** IAM actions required for the StartExportLabelsTaskRun API call. */
-	static readonly START_EXPORT_LABELS_TASK_RUN: string[] = [
+	static readonly StartExportLabelsTaskRun: string[] = [
 		"glue:StartExportLabelsTaskRun",
 	];
 	/** IAM actions required for the StartImportLabelsTaskRun API call. */
-	static readonly START_IMPORT_LABELS_TASK_RUN: string[] = [
+	static readonly StartImportLabelsTaskRun: string[] = [
 		"glue:StartImportLabelsTaskRun",
 	];
 	/** IAM actions required for the StartJobRun API call. */
-	static readonly START_JOB_RUN: string[] = [
+	static readonly StartJobRun: string[] = [
 		"glue:GetUsageProfile",
 		"glue:StartJobRun",
 	];
 	/** IAM actions required for the StartMLEvaluationTaskRun API call. */
-	static readonly START_ML_EVALUATION_TASK_RUN: string[] = [
+	static readonly StartMLEvaluationTaskRun: string[] = [
 		"glue:StartMLEvaluationTaskRun",
 	];
 	/** IAM actions required for the StartMLLabelingSetGenerationTaskRun API call. */
-	static readonly START_ML_LABELING_SET_GENERATION_TASK_RUN: string[] = [
+	static readonly StartMLLabelingSetGenerationTaskRun: string[] = [
 		"glue:StartMLLabelingSetGenerationTaskRun",
 	];
 	/** IAM actions required for the StartMaterializedViewRefreshTaskRun API call. */
-	static readonly START_MATERIALIZED_VIEW_REFRESH_TASK_RUN: string[] = [];
+	static readonly StartMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the StartTrigger API call. */
-	static readonly START_TRIGGER: string[] = ["glue:StartTrigger"];
+	static readonly StartTrigger: string[] = ["glue:StartTrigger"];
 	/** IAM actions required for the StartWorkflowRun API call. */
-	static readonly START_WORKFLOW_RUN: string[] = ["glue:StartWorkflowRun"];
+	static readonly StartWorkflowRun: string[] = ["glue:StartWorkflowRun"];
 	/** IAM actions required for the StopColumnStatisticsTaskRun API call. */
-	static readonly STOP_COLUMN_STATISTICS_TASK_RUN: string[] = [
+	static readonly StopColumnStatisticsTaskRun: string[] = [
 		"glue:StopColumnStatisticsTaskRun",
 	];
 	/** IAM actions required for the StopColumnStatisticsTaskRunSchedule API call. */
-	static readonly STOP_COLUMN_STATISTICS_TASK_RUN_SCHEDULE: string[] = [
+	static readonly StopColumnStatisticsTaskRunSchedule: string[] = [
 		"glue:StopColumnStatisticsTaskRunSchedule",
 	];
 	/** IAM actions required for the StopCrawler API call. */
-	static readonly STOP_CRAWLER: string[] = ["glue:StopCrawler"];
+	static readonly StopCrawler: string[] = ["glue:StopCrawler"];
 	/** IAM actions required for the StopCrawlerSchedule API call. */
-	static readonly STOP_CRAWLER_SCHEDULE: string[] = [
-		"glue:StopCrawlerSchedule",
-	];
+	static readonly StopCrawlerSchedule: string[] = ["glue:StopCrawlerSchedule"];
 	/** IAM actions required for the StopMaterializedViewRefreshTaskRun API call. */
-	static readonly STOP_MATERIALIZED_VIEW_REFRESH_TASK_RUN: string[] = [];
+	static readonly StopMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the StopSession API call. */
-	static readonly STOP_SESSION: string[] = ["glue:StopSession"];
+	static readonly StopSession: string[] = ["glue:StopSession"];
 	/** IAM actions required for the StopTrigger API call. */
-	static readonly STOP_TRIGGER: string[] = ["glue:StopTrigger"];
+	static readonly StopTrigger: string[] = ["glue:StopTrigger"];
 	/** IAM actions required for the StopWorkflowRun API call. */
-	static readonly STOP_WORKFLOW_RUN: string[] = ["glue:StopWorkflowRun"];
+	static readonly StopWorkflowRun: string[] = ["glue:StopWorkflowRun"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["glue:TagResource"];
+	static readonly TagResource: string[] = ["glue:TagResource"];
 	/** IAM actions required for the TestConnection API call. */
-	static readonly TEST_CONNECTION: string[] = [
+	static readonly TestConnection: string[] = [
 		"iam:PassRole",
 		"glue:TestConnection",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["glue:UntagResource"];
+	static readonly UntagResource: string[] = ["glue:UntagResource"];
 	/** IAM actions required for the UpdateAsset API call. */
-	static readonly UPDATE_ASSET: string[] = [];
+	static readonly UpdateAsset: string[] = [];
 	/** IAM actions required for the UpdateBlueprint API call. */
-	static readonly UPDATE_BLUEPRINT: string[] = ["glue:UpdateBlueprint"];
+	static readonly UpdateBlueprint: string[] = ["glue:UpdateBlueprint"];
 	/** IAM actions required for the UpdateCatalog API call. */
-	static readonly UPDATE_CATALOG: string[] = [
+	static readonly UpdateCatalog: string[] = [
 		"iam:PassRole",
 		"glue:UpdateCatalog",
 	];
 	/** IAM actions required for the UpdateClassifier API call. */
-	static readonly UPDATE_CLASSIFIER: string[] = ["glue:UpdateClassifier"];
+	static readonly UpdateClassifier: string[] = ["glue:UpdateClassifier"];
 	/** IAM actions required for the UpdateColumnStatisticsForPartition API call. */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_PARTITION: string[] = [
+	static readonly UpdateColumnStatisticsForPartition: string[] = [
 		"glue:UpdatePartition",
 	];
 	/** IAM actions required for the UpdateColumnStatisticsForTable API call. */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_TABLE: string[] = [
+	static readonly UpdateColumnStatisticsForTable: string[] = [
 		"glue:UpdateTable",
 	];
 	/** IAM actions required for the UpdateColumnStatisticsTaskSettings API call. */
-	static readonly UPDATE_COLUMN_STATISTICS_TASK_SETTINGS: string[] = [
+	static readonly UpdateColumnStatisticsTaskSettings: string[] = [
 		"iam:PassRole",
 		"glue:UpdateColumnStatisticsTaskSettings",
 	];
 	/** IAM actions required for the UpdateConnection API call. */
-	static readonly UPDATE_CONNECTION: string[] = [
+	static readonly UpdateConnection: string[] = [
 		"iam:PassRole",
 		"glue:UpdateConnection",
 	];
 	/** IAM actions required for the UpdateCrawler API call. */
-	static readonly UPDATE_CRAWLER: string[] = [
+	static readonly UpdateCrawler: string[] = [
 		"iam:PassRole",
 		"glue:UpdateCrawler",
 	];
 	/** IAM actions required for the UpdateCrawlerSchedule API call. */
-	static readonly UPDATE_CRAWLER_SCHEDULE: string[] = [
+	static readonly UpdateCrawlerSchedule: string[] = [
 		"glue:UpdateCrawlerSchedule",
 	];
 	/** IAM actions required for the UpdateDataQualityRuleset API call. */
-	static readonly UPDATE_DATA_QUALITY_RULESET: string[] = [
+	static readonly UpdateDataQualityRuleset: string[] = [
 		"glue:UpdateDataQualityRuleset",
 	];
 	/** IAM actions required for the UpdateDatabase API call. */
-	static readonly UPDATE_DATABASE: string[] = ["glue:UpdateDatabase"];
+	static readonly UpdateDatabase: string[] = ["glue:UpdateDatabase"];
 	/** IAM actions required for the UpdateDevEndpoint API call. */
-	static readonly UPDATE_DEV_ENDPOINT: string[] = ["glue:UpdateDevEndpoint"];
+	static readonly UpdateDevEndpoint: string[] = ["glue:UpdateDevEndpoint"];
 	/** IAM actions required for the UpdateGlossary API call. */
-	static readonly UPDATE_GLOSSARY: string[] = [];
+	static readonly UpdateGlossary: string[] = [];
 	/** IAM actions required for the UpdateGlossaryTerm API call. */
-	static readonly UPDATE_GLOSSARY_TERM: string[] = [];
+	static readonly UpdateGlossaryTerm: string[] = [];
 	/** IAM actions required for the UpdateGlueIdentityCenterConfiguration API call. */
-	static readonly UPDATE_GLUE_IDENTITY_CENTER_CONFIGURATION: string[] = [
+	static readonly UpdateGlueIdentityCenterConfiguration: string[] = [
 		"glue:UpdateGlueIdentityCenterConfiguration",
 	];
 	/** IAM actions required for the UpdateIntegrationResourceProperty API call. */
-	static readonly UPDATE_INTEGRATION_RESOURCE_PROPERTY: string[] = [
+	static readonly UpdateIntegrationResourceProperty: string[] = [
 		"iam:PassRole",
 		"glue:UpdateIntegrationResourceProperty",
 	];
 	/** IAM actions required for the UpdateIntegrationTableProperties API call. */
-	static readonly UPDATE_INTEGRATION_TABLE_PROPERTIES: string[] = [
+	static readonly UpdateIntegrationTableProperties: string[] = [
 		"glue:UpdateIntegrationTableProperties",
 	];
 	/** IAM actions required for the UpdateJob API call. */
-	static readonly UPDATE_JOB: string[] = [
+	static readonly UpdateJob: string[] = [
 		"glue:GetUsageProfile",
 		"iam:PassRole",
 		"glue:UpdateJob",
 	];
 	/** IAM actions required for the UpdateJobFromSourceControl API call. */
-	static readonly UPDATE_JOB_FROM_SOURCE_CONTROL: string[] = [
+	static readonly UpdateJobFromSourceControl: string[] = [
 		"glue:UpdateJobFromSourceControl",
 	];
 	/** IAM actions required for the UpdateMLTransform API call. */
-	static readonly UPDATE_ML_TRANSFORM: string[] = [
+	static readonly UpdateMLTransform: string[] = [
 		"iam:PassRole",
 		"glue:UpdateMLTransform",
 	];
 	/** IAM actions required for the UpdatePartition API call. */
-	static readonly UPDATE_PARTITION: string[] = ["glue:UpdatePartition"];
+	static readonly UpdatePartition: string[] = ["glue:UpdatePartition"];
 	/** IAM actions required for the UpdateRegistry API call. */
-	static readonly UPDATE_REGISTRY: string[] = ["glue:UpdateRegistry"];
+	static readonly UpdateRegistry: string[] = ["glue:UpdateRegistry"];
 	/** IAM actions required for the UpdateSchema API call. */
-	static readonly UPDATE_SCHEMA: string[] = ["glue:UpdateSchema"];
+	static readonly UpdateSchema: string[] = ["glue:UpdateSchema"];
 	/** IAM actions required for the UpdateSourceControlFromJob API call. */
-	static readonly UPDATE_SOURCE_CONTROL_FROM_JOB: string[] = [
+	static readonly UpdateSourceControlFromJob: string[] = [
 		"glue:UpdateSourceControlFromJob",
 	];
 	/** IAM actions required for the UpdateTable API call. */
-	static readonly UPDATE_TABLE: string[] = [
+	static readonly UpdateTable: string[] = [
 		"glue:PassConnection",
 		"iam:PassRole",
 		"glue:UpdateTable",
 	];
 	/** IAM actions required for the UpdateTableOptimizer API call. */
-	static readonly UPDATE_TABLE_OPTIMIZER: string[] = [
+	static readonly UpdateTableOptimizer: string[] = [
 		"glue:PassConnection",
 		"iam:PassRole",
 		"glue:UpdateTableOptimizer",
 	];
 	/** IAM actions required for the UpdateTrigger API call. */
-	static readonly UPDATE_TRIGGER: string[] = ["glue:UpdateTrigger"];
+	static readonly UpdateTrigger: string[] = ["glue:UpdateTrigger"];
 	/** IAM actions required for the UpdateUsageProfile API call. */
-	static readonly UPDATE_USAGE_PROFILE: string[] = ["glue:UpdateUsageProfile"];
+	static readonly UpdateUsageProfile: string[] = ["glue:UpdateUsageProfile"];
 	/** IAM actions required for the UpdateUserDefinedFunction API call. */
-	static readonly UPDATE_USER_DEFINED_FUNCTION: string[] = [
+	static readonly UpdateUserDefinedFunction: string[] = [
 		"glue:UpdateUserDefinedFunction",
 	];
 	/** IAM actions required for the UpdateWorkflow API call. */
-	static readonly UPDATE_WORKFLOW: string[] = ["glue:UpdateWorkflow"];
+	static readonly UpdateWorkflow: string[] = ["glue:UpdateWorkflow"];
 }
 
 /**
@@ -3119,88 +3437,90 @@ export class GlueOperations {
  */
 export class GlueConditions {
 	/** Condition keys applicable to the BatchCreatePartition action. */
-	static readonly BATCH_CREATE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly BatchCreatePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchDeleteConnection action. */
-	static readonly BATCH_DELETE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly BatchDeleteConnectionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchDeletePartition action. */
-	static readonly BATCH_DELETE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly BatchDeletePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchDeleteTable action. */
-	static readonly BATCH_DELETE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly BatchDeleteTableConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchDeleteTableVersion action. */
-	static readonly BATCH_DELETE_TABLE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly BatchDeleteTableVersionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchGetPartition action. */
-	static readonly BATCH_GET_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly BatchGetPartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the BatchUpdatePartition action. */
-	static readonly BATCH_UPDATE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly BatchUpdatePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateBlueprint action. */
-	static readonly CREATE_BLUEPRINT_CONDITION_KEYS: string[] = [
+	static readonly CreateBlueprintConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCatalog action. */
-	static readonly CREATE_CATALOG_CONDITION_KEYS: string[] = [
+	static readonly CreateCatalogConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateConnection action. */
-	static readonly CREATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateCrawler action. */
-	static readonly CREATE_CRAWLER_CONDITION_KEYS: string[] = [
+	static readonly CreateCrawlerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomEntityType action. */
-	static readonly CREATE_CUSTOM_ENTITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomEntityTypeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataQualityRuleset action. */
-	static readonly CREATE_DATA_QUALITY_RULESET_CONDITION_KEYS: string[] = [
+	static readonly CreateDataQualityRulesetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDatabase action. */
-	static readonly CREATE_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly CreateDatabaseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateDevEndpoint action. */
-	static readonly CREATE_DEV_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateDevEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIntegration action. */
-	static readonly CREATE_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly CreateIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIntegrationResourceProperty action. */
-	static readonly CREATE_INTEGRATION_RESOURCE_PROPERTY_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateIntegrationResourcePropertyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:SecurityGroupIds",
@@ -3208,30 +3528,30 @@ export class GlueConditions {
 		"glue:VpcIds",
 	];
 	/** Condition keys applicable to the CreateMLTransform action. */
-	static readonly CREATE_ML_TRANSFORM_CONDITION_KEYS: string[] = [
+	static readonly CreateMLTransformConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePartition action. */
-	static readonly CREATE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly CreatePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreatePartitionIndex action. */
-	static readonly CREATE_PARTITION_INDEX_CONDITION_KEYS: string[] = [
+	static readonly CreatePartitionIndexConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateRegistry action. */
-	static readonly CREATE_REGISTRY_CONDITION_KEYS: string[] = [
+	static readonly CreateRegistryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSchema action. */
-	static readonly CREATE_SCHEMA_CONDITION_KEYS: string[] = [
+	static readonly CreateSchemaConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSession action. */
-	static readonly CREATE_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:SecurityGroupIds",
@@ -3239,243 +3559,247 @@ export class GlueConditions {
 		"glue:VpcIds",
 	];
 	/** Condition keys applicable to the CreateTable action. */
-	static readonly CREATE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly CreateTableConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateTrigger action. */
-	static readonly CREATE_TRIGGER_CONDITION_KEYS: string[] = [
+	static readonly CreateTriggerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUsageProfile action. */
-	static readonly CREATE_USAGE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateUsageProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateUserDefinedFunction action. */
-	static readonly CREATE_USER_DEFINED_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly CreateUserDefinedFunctionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateWorkflow action. */
-	static readonly CREATE_WORKFLOW_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkflowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteCatalog action. */
-	static readonly DELETE_CATALOG_CONDITION_KEYS: string[] = [
+	static readonly DeleteCatalogConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteColumnStatisticsForPartition action. */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_PARTITION_CONDITION_KEYS: string[] =
-		["glue:LakeFormationPermissions"];
+	static readonly DeleteColumnStatisticsForPartitionConditionKeys: string[] = [
+		"glue:LakeFormationPermissions",
+	];
 	/** Condition keys applicable to the DeleteColumnStatisticsForTable action. */
-	static readonly DELETE_COLUMN_STATISTICS_FOR_TABLE_CONDITION_KEYS: string[] =
-		["glue:LakeFormationPermissions"];
+	static readonly DeleteColumnStatisticsForTableConditionKeys: string[] = [
+		"glue:LakeFormationPermissions",
+	];
 	/** Condition keys applicable to the DeleteConnection action. */
-	static readonly DELETE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteConnectionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteDatabase action. */
-	static readonly DELETE_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly DeleteDatabaseConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteIntegration action. */
-	static readonly DELETE_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeletePartition action. */
-	static readonly DELETE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly DeletePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeletePartitionIndex action. */
-	static readonly DELETE_PARTITION_INDEX_CONDITION_KEYS: string[] = [
+	static readonly DeletePartitionIndexConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteTable action. */
-	static readonly DELETE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly DeleteTableConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteTableVersion action. */
-	static readonly DELETE_TABLE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteTableVersionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DeleteUserDefinedFunction action. */
-	static readonly DELETE_USER_DEFINED_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteUserDefinedFunctionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the DescribeIntegrations action. */
-	static readonly DESCRIBE_INTEGRATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeIntegrationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the FederateAuthorization action. */
-	static readonly FEDERATE_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly FederateAuthorizationConditionKeys: string[] = [
 		"glue:EnabledForRedshiftAutoDiscovery",
 		"glue:FederatedAuthorizationSource",
 	];
 	/** Condition keys applicable to the GetCatalog action. */
-	static readonly GET_CATALOG_CONDITION_KEYS: string[] = [
+	static readonly actionGetCatalogConditionKeys: string[] = [
 		"glue:EnabledForRedshiftAutoDiscovery",
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetCatalogImportStatus action. */
-	static readonly GET_CATALOG_IMPORT_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetCatalogImportStatusConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetCatalogs action. */
-	static readonly GET_CATALOGS_CONDITION_KEYS: string[] = [
+	static readonly actionGetCatalogsConditionKeys: string[] = [
 		"glue:EnabledForRedshiftAutoDiscovery",
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetColumnStatisticsForPartition action. */
-	static readonly GET_COLUMN_STATISTICS_FOR_PARTITION_CONDITION_KEYS: string[] =
+	static readonly actionGetColumnStatisticsForPartitionConditionKeys: string[] =
 		["glue:LakeFormationPermissions"];
 	/** Condition keys applicable to the GetColumnStatisticsForTable action. */
-	static readonly GET_COLUMN_STATISTICS_FOR_TABLE_CONDITION_KEYS: string[] = [
+	static readonly actionGetColumnStatisticsForTableConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetConnection action. */
-	static readonly GET_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetConnections action. */
-	static readonly GET_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionsConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetDatabase action. */
-	static readonly GET_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly actionGetDatabaseConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetDatabases action. */
-	static readonly GET_DATABASES_CONDITION_KEYS: string[] = [
+	static readonly actionGetDatabasesConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetPartition action. */
-	static readonly GET_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly actionGetPartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetPartitionIndexes action. */
-	static readonly GET_PARTITION_INDEXES_CONDITION_KEYS: string[] = [
+	static readonly actionGetPartitionIndexesConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetPartitions action. */
-	static readonly GET_PARTITIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetPartitionsConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetTable action. */
-	static readonly GET_TABLE_CONDITION_KEYS: string[] = [
+	static readonly actionGetTableConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetTableVersion action. */
-	static readonly GET_TABLE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetTableVersionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetTableVersions action. */
-	static readonly GET_TABLE_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetTableVersionsConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetTables action. */
-	static readonly GET_TABLES_CONDITION_KEYS: string[] = [
+	static readonly actionGetTablesConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetUserDefinedFunction action. */
-	static readonly GET_USER_DEFINED_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetUserDefinedFunctionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the GetUserDefinedFunctions action. */
-	static readonly GET_USER_DEFINED_FUNCTIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetUserDefinedFunctionsConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the ImportCatalogToGlue action. */
-	static readonly IMPORT_CATALOG_TO_GLUE_CONDITION_KEYS: string[] = [
+	static readonly ImportCatalogToGlueConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the ModifyIntegration action. */
-	static readonly MODIFY_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly ModifyIntegrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RegisterConnectionType action. */
-	static readonly REGISTER_CONNECTION_TYPE_CONDITION_KEYS: string[] = [
+	static readonly RegisterConnectionTypeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RenameTable action. */
-	static readonly RENAME_TABLE_CONDITION_KEYS: string[] = [
+	static readonly RenameTableConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the SearchTables action. */
-	static readonly SEARCH_TABLES_CONDITION_KEYS: string[] = [
+	static readonly SearchTablesConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateCatalog action. */
-	static readonly UPDATE_CATALOG_CONDITION_KEYS: string[] = [
+	static readonly UpdateCatalogConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateColumnStatisticsForPartition action. */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_PARTITION_CONDITION_KEYS: string[] =
-		["glue:LakeFormationPermissions"];
+	static readonly UpdateColumnStatisticsForPartitionConditionKeys: string[] = [
+		"glue:LakeFormationPermissions",
+	];
 	/** Condition keys applicable to the UpdateColumnStatisticsForTable action. */
-	static readonly UPDATE_COLUMN_STATISTICS_FOR_TABLE_CONDITION_KEYS: string[] =
-		["glue:LakeFormationPermissions"];
+	static readonly UpdateColumnStatisticsForTableConditionKeys: string[] = [
+		"glue:LakeFormationPermissions",
+	];
 	/** Condition keys applicable to the UpdateConnection action. */
-	static readonly UPDATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateConnectionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateDatabase action. */
-	static readonly UPDATE_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly UpdateDatabaseConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateJob action. */
-	static readonly UPDATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly UpdateJobConditionKeys: string[] = [
 		"glue:SecurityGroupIds",
 		"glue:SubnetIds",
 		"glue:VpcIds",
 	];
 	/** Condition keys applicable to the UpdatePartition action. */
-	static readonly UPDATE_PARTITION_CONDITION_KEYS: string[] = [
+	static readonly UpdatePartitionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateTable action. */
-	static readonly UPDATE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly UpdateTableConditionKeys: string[] = [
 		"glue:FederatedAuthorizationSource",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateUserDefinedFunction action. */
-	static readonly UPDATE_USER_DEFINED_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateUserDefinedFunctionConditionKeys: string[] = [
 		"glue:LakeFormationPermissions",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: glue:CredentialIssuingService (String) */
 	static readonly CREDENTIAL_ISSUING_SERVICE = "glue:CredentialIssuingService";
 	/** Condition key: glue:EnabledForRedshiftAutoDiscovery (Bool) */

@@ -13,32 +13,32 @@ export class PricingActions {
 	static readonly SERVICE_PREFIX = "pricing";
 
 	/** [Read] pricing:DescribeServices */
-	static readonly DESCRIBE_SERVICES = "pricing:DescribeServices";
+	static readonly DescribeServices = "pricing:DescribeServices";
 	/** [Read] pricing:GetAttributeValues */
-	static readonly GET_ATTRIBUTE_VALUES = "pricing:GetAttributeValues";
+	static readonly actionGetAttributeValues = "pricing:GetAttributeValues";
 	/** [Read] pricing:GetPriceListFileUrl */
-	static readonly GET_PRICE_LIST_FILE_URL = "pricing:GetPriceListFileUrl";
+	static readonly actionGetPriceListFileUrl = "pricing:GetPriceListFileUrl";
 	/** [Read] pricing:GetProducts */
-	static readonly GET_PRODUCTS = "pricing:GetProducts";
+	static readonly actionGetProducts = "pricing:GetProducts";
 	/** [Read] pricing:ListPriceLists */
-	static readonly LIST_PRICE_LISTS = "pricing:ListPriceLists";
+	static readonly ListPriceLists = "pricing:ListPriceLists";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PricingActions.DESCRIBE_SERVICES,
-		PricingActions.GET_ATTRIBUTE_VALUES,
-		PricingActions.GET_PRICE_LIST_FILE_URL,
-		PricingActions.GET_PRODUCTS,
-		PricingActions.LIST_PRICE_LISTS,
+	static readonly AllReadActions: string[] = [
+		PricingActions.DescribeServices,
+		PricingActions.actionGetAttributeValues,
+		PricingActions.actionGetPriceListFileUrl,
+		PricingActions.actionGetProducts,
+		PricingActions.ListPriceLists,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -46,17 +46,17 @@ export class PricingActions {
  */
 export class PricingOperations {
 	/** IAM actions required for the DescribeServices API call. */
-	static readonly DESCRIBE_SERVICES: string[] = ["pricing:DescribeServices"];
+	static readonly DescribeServices: string[] = ["pricing:DescribeServices"];
 	/** IAM actions required for the GetAttributeValues API call. */
-	static readonly GET_ATTRIBUTE_VALUES: string[] = [
+	static readonly opGetAttributeValues: string[] = [
 		"pricing:GetAttributeValues",
 	];
 	/** IAM actions required for the GetPriceListFileUrl API call. */
-	static readonly GET_PRICE_LIST_FILE_URL: string[] = [
+	static readonly opGetPriceListFileUrl: string[] = [
 		"pricing:GetPriceListFileUrl",
 	];
 	/** IAM actions required for the GetProducts API call. */
-	static readonly GET_PRODUCTS: string[] = ["pricing:GetProducts"];
+	static readonly opGetProducts: string[] = ["pricing:GetProducts"];
 	/** IAM actions required for the ListPriceLists API call. */
-	static readonly LIST_PRICE_LISTS: string[] = ["pricing:ListPriceLists"];
+	static readonly ListPriceLists: string[] = ["pricing:ListPriceLists"];
 }

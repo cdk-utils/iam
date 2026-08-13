@@ -13,68 +13,144 @@ export class BcmDataExportsActions {
 	static readonly SERVICE_PREFIX = "bcm-data-exports";
 
 	/** [Write] bcm-data-exports:CreateExport */
-	static readonly CREATE_EXPORT = "bcm-data-exports:CreateExport";
+	static readonly CreateExport = "bcm-data-exports:CreateExport";
 	/** [Write] bcm-data-exports:DeleteExport */
-	static readonly DELETE_EXPORT = "bcm-data-exports:DeleteExport";
+	static readonly DeleteExport = "bcm-data-exports:DeleteExport";
 	/** [Read] bcm-data-exports:GetExecution */
-	static readonly GET_EXECUTION = "bcm-data-exports:GetExecution";
+	static readonly actionGetExecution = "bcm-data-exports:GetExecution";
 	/** [Read] bcm-data-exports:GetExport */
-	static readonly GET_EXPORT = "bcm-data-exports:GetExport";
+	static readonly actionGetExport = "bcm-data-exports:GetExport";
 	/** [Read] bcm-data-exports:GetTable */
-	static readonly GET_TABLE = "bcm-data-exports:GetTable";
+	static readonly actionGetTable = "bcm-data-exports:GetTable";
 	/** [List] bcm-data-exports:ListExecutions */
-	static readonly LIST_EXECUTIONS = "bcm-data-exports:ListExecutions";
+	static readonly ListExecutions = "bcm-data-exports:ListExecutions";
 	/** [List] bcm-data-exports:ListExports */
-	static readonly LIST_EXPORTS = "bcm-data-exports:ListExports";
+	static readonly ListExports = "bcm-data-exports:ListExports";
 	/** [List] bcm-data-exports:ListTables */
-	static readonly LIST_TABLES = "bcm-data-exports:ListTables";
+	static readonly ListTables = "bcm-data-exports:ListTables";
 	/** [Read] bcm-data-exports:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"bcm-data-exports:ListTagsForResource";
+	static readonly ListTagsForResource = "bcm-data-exports:ListTagsForResource";
 	/** [Tagging] bcm-data-exports:TagResource */
-	static readonly TAG_RESOURCE = "bcm-data-exports:TagResource";
+	static readonly TagResource = "bcm-data-exports:TagResource";
 	/** [Tagging] bcm-data-exports:UntagResource */
-	static readonly UNTAG_RESOURCE = "bcm-data-exports:UntagResource";
+	static readonly UntagResource = "bcm-data-exports:UntagResource";
 	/** [Write] bcm-data-exports:UpdateExport */
-	static readonly UPDATE_EXPORT = "bcm-data-exports:UpdateExport";
+	static readonly UpdateExport = "bcm-data-exports:UpdateExport";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BcmDataExportsActions.GET_EXECUTION,
-		BcmDataExportsActions.GET_EXPORT,
-		BcmDataExportsActions.GET_TABLE,
-		BcmDataExportsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		BcmDataExportsActions.actionGetExecution,
+		BcmDataExportsActions.actionGetExport,
+		BcmDataExportsActions.actionGetTable,
+		BcmDataExportsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BcmDataExportsActions.CREATE_EXPORT,
-		BcmDataExportsActions.DELETE_EXPORT,
-		BcmDataExportsActions.UPDATE_EXPORT,
+	static readonly AllWriteActions: string[] = [
+		BcmDataExportsActions.CreateExport,
+		BcmDataExportsActions.DeleteExport,
+		BcmDataExportsActions.UpdateExport,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BcmDataExportsActions.LIST_EXECUTIONS,
-		BcmDataExportsActions.LIST_EXPORTS,
-		BcmDataExportsActions.LIST_TABLES,
+	static readonly AllListActions: string[] = [
+		BcmDataExportsActions.ListExecutions,
+		BcmDataExportsActions.ListExports,
+		BcmDataExportsActions.ListTables,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BcmDataExportsActions.TAG_RESOURCE,
-		BcmDataExportsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BcmDataExportsActions.TagResource,
+		BcmDataExportsActions.UntagResource,
 	];
 }
 
-const BillingviewArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview/(?<resourceId>[^:/?]+)$",
-);
-const ExportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bcm-data-exports:(?<region>[^:]*):(?<account>[^:]*):export/(?<identifier>[^:/?]+)$",
-);
-const TableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bcm-data-exports:(?<region>[^:]*):(?<account>[^:]*):table/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a billingview ARN.
+ */
+export interface BcmDataExportsBillingviewArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a billingview ARN.
+ */
+export interface BcmDataExportsBillingviewArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a export ARN.
+ */
+export interface BcmDataExportsExportArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export ARN.
+ */
+export interface BcmDataExportsExportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a table ARN.
+ */
+export interface BcmDataExportsTableArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a table ARN.
+ */
+export interface BcmDataExportsTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const BillingviewArnRegex =
+	/^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview\/(?<resourceId>[^:/?]+)$/;
+const ExportArnRegex =
+	/^arn:(?<partition>[^:]+):bcm-data-exports:(?<region>[^:]*):(?<account>[^:]*):export\/(?<identifier>[^:/?]+)$/;
+const TableArnRegex =
+	/^arn:(?<partition>[^:]+):bcm-data-exports:(?<region>[^:]*):(?<account>[^:]*):table\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bcm-data-exports resources.
@@ -83,14 +159,7 @@ export class BcmDataExportsResources {
 	/**
 	 * Builds an ARN for the billingview resource.
 	 */
-	static billingview(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billingview(props: BcmDataExportsBillingviewArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billing::${props.account ?? "*"}:billingview/${props.resourceId}`;
 	}
 
@@ -105,11 +174,9 @@ export class BcmDataExportsResources {
 	 * Parses a billingview ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillingviewArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBillingviewArn(
+		arn: string,
+	): BcmDataExportsBillingviewArnComponents {
 		const match = BillingviewArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid billingview ARN: ${arn}`);
@@ -124,16 +191,7 @@ export class BcmDataExportsResources {
 	/**
 	 * Builds an ARN for the export resource.
 	 */
-	static export(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static export(props: BcmDataExportsExportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bcm-data-exports:${props.region ?? "*"}:${props.account ?? "*"}:export/${props.identifier}`;
 	}
 
@@ -148,12 +206,7 @@ export class BcmDataExportsResources {
 	 * Parses a export ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseExportArn(arn: string): BcmDataExportsExportArnComponents {
 		const match = ExportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export ARN: ${arn}`);
@@ -169,16 +222,7 @@ export class BcmDataExportsResources {
 	/**
 	 * Builds an ARN for the table resource.
 	 */
-	static table(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static table(props: BcmDataExportsTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bcm-data-exports:${props.region ?? "*"}:${props.account ?? "*"}:table/${props.identifier}`;
 	}
 
@@ -193,12 +237,7 @@ export class BcmDataExportsResources {
 	 * Parses a table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseTableArn(arn: string): BcmDataExportsTableArnComponents {
 		const match = TableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid table ARN: ${arn}`);
@@ -217,7 +256,7 @@ export class BcmDataExportsResources {
  */
 export class BcmDataExportsOperations {
 	/** IAM actions required for the CreateExport API call. */
-	static readonly CREATE_EXPORT: string[] = [
+	static readonly CreateExport: string[] = [
 		"bcm-data-exports:CreateExport",
 		"sustainability:GetCarbonFootprintSummary",
 		"cost-optimization-hub:GetRecommendation",
@@ -226,31 +265,31 @@ export class BcmDataExportsOperations {
 		"cur:PutReportDefinition",
 	];
 	/** IAM actions required for the DeleteExport API call. */
-	static readonly DELETE_EXPORT: string[] = ["bcm-data-exports:DeleteExport"];
+	static readonly DeleteExport: string[] = ["bcm-data-exports:DeleteExport"];
 	/** IAM actions required for the GetExecution API call. */
-	static readonly GET_EXECUTION: string[] = ["bcm-data-exports:GetExecution"];
+	static readonly opGetExecution: string[] = ["bcm-data-exports:GetExecution"];
 	/** IAM actions required for the GetExport API call. */
-	static readonly GET_EXPORT: string[] = ["bcm-data-exports:GetExport"];
+	static readonly opGetExport: string[] = ["bcm-data-exports:GetExport"];
 	/** IAM actions required for the GetTable API call. */
-	static readonly GET_TABLE: string[] = ["bcm-data-exports:GetTable"];
+	static readonly opGetTable: string[] = ["bcm-data-exports:GetTable"];
 	/** IAM actions required for the ListExecutions API call. */
-	static readonly LIST_EXECUTIONS: string[] = [
+	static readonly ListExecutions: string[] = [
 		"bcm-data-exports:ListExecutions",
 	];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["bcm-data-exports:ListExports"];
+	static readonly ListExports: string[] = ["bcm-data-exports:ListExports"];
 	/** IAM actions required for the ListTables API call. */
-	static readonly LIST_TABLES: string[] = ["bcm-data-exports:ListTables"];
+	static readonly ListTables: string[] = ["bcm-data-exports:ListTables"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"bcm-data-exports:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["bcm-data-exports:TagResource"];
+	static readonly TagResource: string[] = ["bcm-data-exports:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["bcm-data-exports:UntagResource"];
+	static readonly UntagResource: string[] = ["bcm-data-exports:UntagResource"];
 	/** IAM actions required for the UpdateExport API call. */
-	static readonly UPDATE_EXPORT: string[] = ["bcm-data-exports:UpdateExport"];
+	static readonly UpdateExport: string[] = ["bcm-data-exports:UpdateExport"];
 }
 
 /**
@@ -258,52 +297,52 @@ export class BcmDataExportsOperations {
  */
 export class BcmDataExportsConditions {
 	/** Condition keys applicable to the CreateExport action. */
-	static readonly CREATE_EXPORT_CONDITION_KEYS: string[] = [
+	static readonly CreateExportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteExport action. */
-	static readonly DELETE_EXPORT_CONDITION_KEYS: string[] = [
+	static readonly DeleteExportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetExecution action. */
-	static readonly GET_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetExecutionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetExport action. */
-	static readonly GET_EXPORT_CONDITION_KEYS: string[] = [
+	static readonly actionGetExportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListExecutions action. */
-	static readonly LIST_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListExecutionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateExport action. */
-	static readonly UPDATE_EXPORT_CONDITION_KEYS: string[] = [
+	static readonly UpdateExportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

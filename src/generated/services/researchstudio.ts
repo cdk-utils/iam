@@ -13,35 +13,35 @@ export class ResearchstudioActions {
 	static readonly SERVICE_PREFIX = "researchstudio";
 
 	/** [Write] researchstudio:AssignPrincipal */
-	static readonly ASSIGN_PRINCIPAL = "researchstudio:AssignPrincipal";
+	static readonly AssignPrincipal = "researchstudio:AssignPrincipal";
 	/** [Write] researchstudio:CreateApplication */
-	static readonly CREATE_APPLICATION = "researchstudio:CreateApplication";
+	static readonly CreateApplication = "researchstudio:CreateApplication";
 	/** [Write] researchstudio:DeleteApplication */
-	static readonly DELETE_APPLICATION = "researchstudio:DeleteApplication";
+	static readonly DeleteApplication = "researchstudio:DeleteApplication";
 	/** [Write] researchstudio:DeletePrincipal */
-	static readonly DELETE_PRINCIPAL = "researchstudio:DeletePrincipal";
+	static readonly DeletePrincipal = "researchstudio:DeletePrincipal";
 	/** [Read] researchstudio:GetApplication */
-	static readonly GET_APPLICATION = "researchstudio:GetApplication";
+	static readonly actionGetApplication = "researchstudio:GetApplication";
 	/** [List] researchstudio:ListApplications */
-	static readonly LIST_APPLICATIONS = "researchstudio:ListApplications";
+	static readonly ListApplications = "researchstudio:ListApplications";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ResearchstudioActions.GET_APPLICATION,
+	static readonly AllReadActions: string[] = [
+		ResearchstudioActions.actionGetApplication,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ResearchstudioActions.ASSIGN_PRINCIPAL,
-		ResearchstudioActions.CREATE_APPLICATION,
-		ResearchstudioActions.DELETE_APPLICATION,
-		ResearchstudioActions.DELETE_PRINCIPAL,
+	static readonly AllWriteActions: string[] = [
+		ResearchstudioActions.AssignPrincipal,
+		ResearchstudioActions.CreateApplication,
+		ResearchstudioActions.DeleteApplication,
+		ResearchstudioActions.DeletePrincipal,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ResearchstudioActions.LIST_APPLICATIONS,
+	static readonly AllListActions: string[] = [
+		ResearchstudioActions.ListApplications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

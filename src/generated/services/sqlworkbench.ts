@@ -13,297 +13,403 @@ export class SqlworkbenchActions {
 	static readonly SERVICE_PREFIX = "sqlworkbench";
 
 	/** [Write] sqlworkbench:AssociateConnectionWithChart */
-	static readonly ASSOCIATE_CONNECTION_WITH_CHART =
+	static readonly AssociateConnectionWithChart =
 		"sqlworkbench:AssociateConnectionWithChart";
 	/** [Write] sqlworkbench:AssociateConnectionWithTab */
-	static readonly ASSOCIATE_CONNECTION_WITH_TAB =
+	static readonly AssociateConnectionWithTab =
 		"sqlworkbench:AssociateConnectionWithTab";
 	/** [Write] sqlworkbench:AssociateNotebookWithTab */
-	static readonly ASSOCIATE_NOTEBOOK_WITH_TAB =
+	static readonly AssociateNotebookWithTab =
 		"sqlworkbench:AssociateNotebookWithTab";
 	/** [Write] sqlworkbench:AssociateQueryWithTab */
-	static readonly ASSOCIATE_QUERY_WITH_TAB =
-		"sqlworkbench:AssociateQueryWithTab";
+	static readonly AssociateQueryWithTab = "sqlworkbench:AssociateQueryWithTab";
 	/** [Write] sqlworkbench:BatchDeleteFolder */
-	static readonly BATCH_DELETE_FOLDER = "sqlworkbench:BatchDeleteFolder";
+	static readonly BatchDeleteFolder = "sqlworkbench:BatchDeleteFolder";
 	/** [Read] sqlworkbench:BatchGetNotebookCell */
-	static readonly BATCH_GET_NOTEBOOK_CELL = "sqlworkbench:BatchGetNotebookCell";
+	static readonly BatchGetNotebookCell = "sqlworkbench:BatchGetNotebookCell";
 	/** [Write] sqlworkbench:CreateAccount */
-	static readonly CREATE_ACCOUNT = "sqlworkbench:CreateAccount";
+	static readonly CreateAccount = "sqlworkbench:CreateAccount";
 	/** [Write] sqlworkbench:CreateChart */
-	static readonly CREATE_CHART = "sqlworkbench:CreateChart";
+	static readonly CreateChart = "sqlworkbench:CreateChart";
 	/** [Write] sqlworkbench:CreateConnection */
-	static readonly CREATE_CONNECTION = "sqlworkbench:CreateConnection";
+	static readonly CreateConnection = "sqlworkbench:CreateConnection";
 	/** [Write] sqlworkbench:CreateFolder */
-	static readonly CREATE_FOLDER = "sqlworkbench:CreateFolder";
+	static readonly CreateFolder = "sqlworkbench:CreateFolder";
 	/** [Write] sqlworkbench:CreateNotebook */
-	static readonly CREATE_NOTEBOOK = "sqlworkbench:CreateNotebook";
+	static readonly CreateNotebook = "sqlworkbench:CreateNotebook";
 	/** [Write] sqlworkbench:CreateNotebookCell */
-	static readonly CREATE_NOTEBOOK_CELL = "sqlworkbench:CreateNotebookCell";
+	static readonly CreateNotebookCell = "sqlworkbench:CreateNotebookCell";
 	/** [Write] sqlworkbench:CreateNotebookFromVersion */
-	static readonly CREATE_NOTEBOOK_FROM_VERSION =
+	static readonly CreateNotebookFromVersion =
 		"sqlworkbench:CreateNotebookFromVersion";
 	/** [Write] sqlworkbench:CreateNotebookVersion */
-	static readonly CREATE_NOTEBOOK_VERSION =
-		"sqlworkbench:CreateNotebookVersion";
+	static readonly CreateNotebookVersion = "sqlworkbench:CreateNotebookVersion";
 	/** [Write] sqlworkbench:CreateSavedQuery */
-	static readonly CREATE_SAVED_QUERY = "sqlworkbench:CreateSavedQuery";
+	static readonly CreateSavedQuery = "sqlworkbench:CreateSavedQuery";
 	/** [Write] sqlworkbench:DeleteChart */
-	static readonly DELETE_CHART = "sqlworkbench:DeleteChart";
+	static readonly DeleteChart = "sqlworkbench:DeleteChart";
 	/** [Write] sqlworkbench:DeleteConnection */
-	static readonly DELETE_CONNECTION = "sqlworkbench:DeleteConnection";
+	static readonly DeleteConnection = "sqlworkbench:DeleteConnection";
 	/** [Write] sqlworkbench:DeleteNotebook */
-	static readonly DELETE_NOTEBOOK = "sqlworkbench:DeleteNotebook";
+	static readonly DeleteNotebook = "sqlworkbench:DeleteNotebook";
 	/** [Write] sqlworkbench:DeleteNotebookCell */
-	static readonly DELETE_NOTEBOOK_CELL = "sqlworkbench:DeleteNotebookCell";
+	static readonly DeleteNotebookCell = "sqlworkbench:DeleteNotebookCell";
 	/** [Write] sqlworkbench:DeleteNotebookVersion */
-	static readonly DELETE_NOTEBOOK_VERSION =
-		"sqlworkbench:DeleteNotebookVersion";
+	static readonly DeleteNotebookVersion = "sqlworkbench:DeleteNotebookVersion";
 	/** [Write] sqlworkbench:DeleteQCustomContext */
-	static readonly DELETE_Q_CUSTOM_CONTEXT = "sqlworkbench:DeleteQCustomContext";
+	static readonly DeleteQCustomContext = "sqlworkbench:DeleteQCustomContext";
 	/** [Write] sqlworkbench:DeleteSavedQuery */
-	static readonly DELETE_SAVED_QUERY = "sqlworkbench:DeleteSavedQuery";
+	static readonly DeleteSavedQuery = "sqlworkbench:DeleteSavedQuery";
 	/** [Write] sqlworkbench:DeleteSqlGenerationContext */
-	static readonly DELETE_SQL_GENERATION_CONTEXT =
+	static readonly DeleteSqlGenerationContext =
 		"sqlworkbench:DeleteSqlGenerationContext";
 	/** [Write] sqlworkbench:DeleteTab */
-	static readonly DELETE_TAB = "sqlworkbench:DeleteTab";
+	static readonly DeleteTab = "sqlworkbench:DeleteTab";
 	/** [Write] sqlworkbench:DriverExecute */
-	static readonly DRIVER_EXECUTE = "sqlworkbench:DriverExecute";
+	static readonly DriverExecute = "sqlworkbench:DriverExecute";
 	/** [Write] sqlworkbench:DuplicateNotebook */
-	static readonly DUPLICATE_NOTEBOOK = "sqlworkbench:DuplicateNotebook";
+	static readonly DuplicateNotebook = "sqlworkbench:DuplicateNotebook";
 	/** [Read] sqlworkbench:ExportNotebook */
-	static readonly EXPORT_NOTEBOOK = "sqlworkbench:ExportNotebook";
+	static readonly ExportNotebook = "sqlworkbench:ExportNotebook";
 	/** [Write] sqlworkbench:GenerateSession */
-	static readonly GENERATE_SESSION = "sqlworkbench:GenerateSession";
+	static readonly GenerateSession = "sqlworkbench:GenerateSession";
 	/** [Read] sqlworkbench:GetAccountInfo */
-	static readonly GET_ACCOUNT_INFO = "sqlworkbench:GetAccountInfo";
+	static readonly actionGetAccountInfo = "sqlworkbench:GetAccountInfo";
 	/** [Read] sqlworkbench:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "sqlworkbench:GetAccountSettings";
+	static readonly actionGetAccountSettings = "sqlworkbench:GetAccountSettings";
 	/** [Read] sqlworkbench:GetAutocompletionMetadata */
-	static readonly GET_AUTOCOMPLETION_METADATA =
+	static readonly actionGetAutocompletionMetadata =
 		"sqlworkbench:GetAutocompletionMetadata";
 	/** [Read] sqlworkbench:GetAutocompletionResource */
-	static readonly GET_AUTOCOMPLETION_RESOURCE =
+	static readonly actionGetAutocompletionResource =
 		"sqlworkbench:GetAutocompletionResource";
 	/** [Read] sqlworkbench:GetChart */
-	static readonly GET_CHART = "sqlworkbench:GetChart";
+	static readonly actionGetChart = "sqlworkbench:GetChart";
 	/** [Read] sqlworkbench:GetConnection */
-	static readonly GET_CONNECTION = "sqlworkbench:GetConnection";
+	static readonly actionGetConnection = "sqlworkbench:GetConnection";
 	/** [Read] sqlworkbench:GetNotebook */
-	static readonly GET_NOTEBOOK = "sqlworkbench:GetNotebook";
+	static readonly actionGetNotebook = "sqlworkbench:GetNotebook";
 	/** [Read] sqlworkbench:GetNotebookVersion */
-	static readonly GET_NOTEBOOK_VERSION = "sqlworkbench:GetNotebookVersion";
+	static readonly actionGetNotebookVersion = "sqlworkbench:GetNotebookVersion";
 	/** [Read] sqlworkbench:GetQCustomContext */
-	static readonly GET_Q_CUSTOM_CONTEXT = "sqlworkbench:GetQCustomContext";
+	static readonly actionGetQCustomContext = "sqlworkbench:GetQCustomContext";
 	/** [Read] sqlworkbench:GetQSqlPromptQuotas */
-	static readonly GET_Q_SQL_PROMPT_QUOTAS = "sqlworkbench:GetQSqlPromptQuotas";
+	static readonly actionGetQSqlPromptQuotas =
+		"sqlworkbench:GetQSqlPromptQuotas";
 	/** [Read] sqlworkbench:GetQSqlRecommendations */
-	static readonly GET_Q_SQL_RECOMMENDATIONS =
+	static readonly actionGetQSqlRecommendations =
 		"sqlworkbench:GetQSqlRecommendations";
 	/** [Read] sqlworkbench:GetQueryExecutionHistory */
-	static readonly GET_QUERY_EXECUTION_HISTORY =
+	static readonly actionGetQueryExecutionHistory =
 		"sqlworkbench:GetQueryExecutionHistory";
 	/** [Read] sqlworkbench:GetSavedQuery */
-	static readonly GET_SAVED_QUERY = "sqlworkbench:GetSavedQuery";
+	static readonly actionGetSavedQuery = "sqlworkbench:GetSavedQuery";
 	/** [Read] sqlworkbench:GetSchemaInference */
-	static readonly GET_SCHEMA_INFERENCE = "sqlworkbench:GetSchemaInference";
+	static readonly actionGetSchemaInference = "sqlworkbench:GetSchemaInference";
 	/** [Read] sqlworkbench:GetSqlGenerationContext */
-	static readonly GET_SQL_GENERATION_CONTEXT =
+	static readonly actionGetSqlGenerationContext =
 		"sqlworkbench:GetSqlGenerationContext";
 	/** [Read] sqlworkbench:GetSqlRecommendations */
-	static readonly GET_SQL_RECOMMENDATIONS =
+	static readonly actionGetSqlRecommendations =
 		"sqlworkbench:GetSqlRecommendations";
 	/** [Read] sqlworkbench:GetUserInfo */
-	static readonly GET_USER_INFO = "sqlworkbench:GetUserInfo";
+	static readonly actionGetUserInfo = "sqlworkbench:GetUserInfo";
 	/** [Read] sqlworkbench:GetUserWorkspaceSettings */
-	static readonly GET_USER_WORKSPACE_SETTINGS =
+	static readonly actionGetUserWorkspaceSettings =
 		"sqlworkbench:GetUserWorkspaceSettings";
 	/** [Write] sqlworkbench:ImportNotebook */
-	static readonly IMPORT_NOTEBOOK = "sqlworkbench:ImportNotebook";
+	static readonly ImportNotebook = "sqlworkbench:ImportNotebook";
 	/** [List] sqlworkbench:ListConnections */
-	static readonly LIST_CONNECTIONS = "sqlworkbench:ListConnections";
+	static readonly ListConnections = "sqlworkbench:ListConnections";
 	/** [List] sqlworkbench:ListDatabases */
-	static readonly LIST_DATABASES = "sqlworkbench:ListDatabases";
+	static readonly ListDatabases = "sqlworkbench:ListDatabases";
 	/** [List] sqlworkbench:ListFiles */
-	static readonly LIST_FILES = "sqlworkbench:ListFiles";
+	static readonly ListFiles = "sqlworkbench:ListFiles";
 	/** [List] sqlworkbench:ListNotebookVersions */
-	static readonly LIST_NOTEBOOK_VERSIONS = "sqlworkbench:ListNotebookVersions";
+	static readonly ListNotebookVersions = "sqlworkbench:ListNotebookVersions";
 	/** [List] sqlworkbench:ListNotebooks */
-	static readonly LIST_NOTEBOOKS = "sqlworkbench:ListNotebooks";
+	static readonly ListNotebooks = "sqlworkbench:ListNotebooks";
 	/** [List] sqlworkbench:ListQueryExecutionHistory */
-	static readonly LIST_QUERY_EXECUTION_HISTORY =
+	static readonly ListQueryExecutionHistory =
 		"sqlworkbench:ListQueryExecutionHistory";
 	/** [List] sqlworkbench:ListRedshiftClusters */
-	static readonly LIST_REDSHIFT_CLUSTERS = "sqlworkbench:ListRedshiftClusters";
+	static readonly ListRedshiftClusters = "sqlworkbench:ListRedshiftClusters";
 	/** [Read] sqlworkbench:ListSampleDatabases */
-	static readonly LIST_SAMPLE_DATABASES = "sqlworkbench:ListSampleDatabases";
+	static readonly ListSampleDatabases = "sqlworkbench:ListSampleDatabases";
 	/** [List] sqlworkbench:ListSavedQueryVersions */
-	static readonly LIST_SAVED_QUERY_VERSIONS =
+	static readonly ListSavedQueryVersions =
 		"sqlworkbench:ListSavedQueryVersions";
 	/** [List] sqlworkbench:ListTabs */
-	static readonly LIST_TABS = "sqlworkbench:ListTabs";
+	static readonly ListTabs = "sqlworkbench:ListTabs";
 	/** [Read] sqlworkbench:ListTaggedResources */
-	static readonly LIST_TAGGED_RESOURCES = "sqlworkbench:ListTaggedResources";
+	static readonly ListTaggedResources = "sqlworkbench:ListTaggedResources";
 	/** [Read] sqlworkbench:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "sqlworkbench:ListTagsForResource";
+	static readonly ListTagsForResource = "sqlworkbench:ListTagsForResource";
 	/** [Write] sqlworkbench:PassAccountSettings */
-	static readonly PASS_ACCOUNT_SETTINGS = "sqlworkbench:PassAccountSettings";
+	static readonly PassAccountSettings = "sqlworkbench:PassAccountSettings";
 	/** [Write] sqlworkbench:PutQCustomContext */
-	static readonly PUT_Q_CUSTOM_CONTEXT = "sqlworkbench:PutQCustomContext";
+	static readonly PutQCustomContext = "sqlworkbench:PutQCustomContext";
 	/** [Write] sqlworkbench:PutSqlGenerationContext */
-	static readonly PUT_SQL_GENERATION_CONTEXT =
+	static readonly PutSqlGenerationContext =
 		"sqlworkbench:PutSqlGenerationContext";
 	/** [Write] sqlworkbench:PutTab */
-	static readonly PUT_TAB = "sqlworkbench:PutTab";
+	static readonly PutTab = "sqlworkbench:PutTab";
 	/** [Write] sqlworkbench:PutUserWorkspaceSettings */
-	static readonly PUT_USER_WORKSPACE_SETTINGS =
+	static readonly PutUserWorkspaceSettings =
 		"sqlworkbench:PutUserWorkspaceSettings";
 	/** [Write] sqlworkbench:RestoreNotebookVersion */
-	static readonly RESTORE_NOTEBOOK_VERSION =
+	static readonly RestoreNotebookVersion =
 		"sqlworkbench:RestoreNotebookVersion";
 	/** [Tagging] sqlworkbench:TagResource */
-	static readonly TAG_RESOURCE = "sqlworkbench:TagResource";
+	static readonly TagResource = "sqlworkbench:TagResource";
 	/** [Tagging] sqlworkbench:UntagResource */
-	static readonly UNTAG_RESOURCE = "sqlworkbench:UntagResource";
+	static readonly UntagResource = "sqlworkbench:UntagResource";
 	/** [Write] sqlworkbench:UpdateAccountConnectionSettings */
-	static readonly UPDATE_ACCOUNT_CONNECTION_SETTINGS =
+	static readonly UpdateAccountConnectionSettings =
 		"sqlworkbench:UpdateAccountConnectionSettings";
 	/** [Write] sqlworkbench:UpdateAccountExportSettings */
-	static readonly UPDATE_ACCOUNT_EXPORT_SETTINGS =
+	static readonly UpdateAccountExportSettings =
 		"sqlworkbench:UpdateAccountExportSettings";
 	/** [Write] sqlworkbench:UpdateAccountGeneralSettings */
-	static readonly UPDATE_ACCOUNT_GENERAL_SETTINGS =
+	static readonly UpdateAccountGeneralSettings =
 		"sqlworkbench:UpdateAccountGeneralSettings";
 	/** [Write] sqlworkbench:UpdateAccountQSqlSettings */
-	static readonly UPDATE_ACCOUNT_Q_SQL_SETTINGS =
+	static readonly UpdateAccountQSqlSettings =
 		"sqlworkbench:UpdateAccountQSqlSettings";
 	/** [Write] sqlworkbench:UpdateChart */
-	static readonly UPDATE_CHART = "sqlworkbench:UpdateChart";
+	static readonly UpdateChart = "sqlworkbench:UpdateChart";
 	/** [Write] sqlworkbench:UpdateConnection */
-	static readonly UPDATE_CONNECTION = "sqlworkbench:UpdateConnection";
+	static readonly UpdateConnection = "sqlworkbench:UpdateConnection";
 	/** [Write] sqlworkbench:UpdateFileFolder */
-	static readonly UPDATE_FILE_FOLDER = "sqlworkbench:UpdateFileFolder";
+	static readonly UpdateFileFolder = "sqlworkbench:UpdateFileFolder";
 	/** [Write] sqlworkbench:UpdateFolder */
-	static readonly UPDATE_FOLDER = "sqlworkbench:UpdateFolder";
+	static readonly UpdateFolder = "sqlworkbench:UpdateFolder";
 	/** [Write] sqlworkbench:UpdateNotebook */
-	static readonly UPDATE_NOTEBOOK = "sqlworkbench:UpdateNotebook";
+	static readonly UpdateNotebook = "sqlworkbench:UpdateNotebook";
 	/** [Write] sqlworkbench:UpdateNotebookCellContent */
-	static readonly UPDATE_NOTEBOOK_CELL_CONTENT =
+	static readonly UpdateNotebookCellContent =
 		"sqlworkbench:UpdateNotebookCellContent";
 	/** [Write] sqlworkbench:UpdateNotebookCellLayout */
-	static readonly UPDATE_NOTEBOOK_CELL_LAYOUT =
+	static readonly UpdateNotebookCellLayout =
 		"sqlworkbench:UpdateNotebookCellLayout";
 	/** [Write] sqlworkbench:UpdateSavedQuery */
-	static readonly UPDATE_SAVED_QUERY = "sqlworkbench:UpdateSavedQuery";
+	static readonly UpdateSavedQuery = "sqlworkbench:UpdateSavedQuery";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SqlworkbenchActions.BATCH_GET_NOTEBOOK_CELL,
-		SqlworkbenchActions.EXPORT_NOTEBOOK,
-		SqlworkbenchActions.GET_ACCOUNT_INFO,
-		SqlworkbenchActions.GET_ACCOUNT_SETTINGS,
-		SqlworkbenchActions.GET_AUTOCOMPLETION_METADATA,
-		SqlworkbenchActions.GET_AUTOCOMPLETION_RESOURCE,
-		SqlworkbenchActions.GET_CHART,
-		SqlworkbenchActions.GET_CONNECTION,
-		SqlworkbenchActions.GET_NOTEBOOK,
-		SqlworkbenchActions.GET_NOTEBOOK_VERSION,
-		SqlworkbenchActions.GET_Q_CUSTOM_CONTEXT,
-		SqlworkbenchActions.GET_Q_SQL_PROMPT_QUOTAS,
-		SqlworkbenchActions.GET_Q_SQL_RECOMMENDATIONS,
-		SqlworkbenchActions.GET_QUERY_EXECUTION_HISTORY,
-		SqlworkbenchActions.GET_SAVED_QUERY,
-		SqlworkbenchActions.GET_SCHEMA_INFERENCE,
-		SqlworkbenchActions.GET_SQL_GENERATION_CONTEXT,
-		SqlworkbenchActions.GET_SQL_RECOMMENDATIONS,
-		SqlworkbenchActions.GET_USER_INFO,
-		SqlworkbenchActions.GET_USER_WORKSPACE_SETTINGS,
-		SqlworkbenchActions.LIST_SAMPLE_DATABASES,
-		SqlworkbenchActions.LIST_TAGGED_RESOURCES,
-		SqlworkbenchActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SqlworkbenchActions.BatchGetNotebookCell,
+		SqlworkbenchActions.ExportNotebook,
+		SqlworkbenchActions.actionGetAccountInfo,
+		SqlworkbenchActions.actionGetAccountSettings,
+		SqlworkbenchActions.actionGetAutocompletionMetadata,
+		SqlworkbenchActions.actionGetAutocompletionResource,
+		SqlworkbenchActions.actionGetChart,
+		SqlworkbenchActions.actionGetConnection,
+		SqlworkbenchActions.actionGetNotebook,
+		SqlworkbenchActions.actionGetNotebookVersion,
+		SqlworkbenchActions.actionGetQCustomContext,
+		SqlworkbenchActions.actionGetQSqlPromptQuotas,
+		SqlworkbenchActions.actionGetQSqlRecommendations,
+		SqlworkbenchActions.actionGetQueryExecutionHistory,
+		SqlworkbenchActions.actionGetSavedQuery,
+		SqlworkbenchActions.actionGetSchemaInference,
+		SqlworkbenchActions.actionGetSqlGenerationContext,
+		SqlworkbenchActions.actionGetSqlRecommendations,
+		SqlworkbenchActions.actionGetUserInfo,
+		SqlworkbenchActions.actionGetUserWorkspaceSettings,
+		SqlworkbenchActions.ListSampleDatabases,
+		SqlworkbenchActions.ListTaggedResources,
+		SqlworkbenchActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SqlworkbenchActions.ASSOCIATE_CONNECTION_WITH_CHART,
-		SqlworkbenchActions.ASSOCIATE_CONNECTION_WITH_TAB,
-		SqlworkbenchActions.ASSOCIATE_NOTEBOOK_WITH_TAB,
-		SqlworkbenchActions.ASSOCIATE_QUERY_WITH_TAB,
-		SqlworkbenchActions.BATCH_DELETE_FOLDER,
-		SqlworkbenchActions.CREATE_ACCOUNT,
-		SqlworkbenchActions.CREATE_CHART,
-		SqlworkbenchActions.CREATE_CONNECTION,
-		SqlworkbenchActions.CREATE_FOLDER,
-		SqlworkbenchActions.CREATE_NOTEBOOK,
-		SqlworkbenchActions.CREATE_NOTEBOOK_CELL,
-		SqlworkbenchActions.CREATE_NOTEBOOK_FROM_VERSION,
-		SqlworkbenchActions.CREATE_NOTEBOOK_VERSION,
-		SqlworkbenchActions.CREATE_SAVED_QUERY,
-		SqlworkbenchActions.DELETE_CHART,
-		SqlworkbenchActions.DELETE_CONNECTION,
-		SqlworkbenchActions.DELETE_NOTEBOOK,
-		SqlworkbenchActions.DELETE_NOTEBOOK_CELL,
-		SqlworkbenchActions.DELETE_NOTEBOOK_VERSION,
-		SqlworkbenchActions.DELETE_Q_CUSTOM_CONTEXT,
-		SqlworkbenchActions.DELETE_SAVED_QUERY,
-		SqlworkbenchActions.DELETE_SQL_GENERATION_CONTEXT,
-		SqlworkbenchActions.DELETE_TAB,
-		SqlworkbenchActions.DRIVER_EXECUTE,
-		SqlworkbenchActions.DUPLICATE_NOTEBOOK,
-		SqlworkbenchActions.GENERATE_SESSION,
-		SqlworkbenchActions.IMPORT_NOTEBOOK,
-		SqlworkbenchActions.PASS_ACCOUNT_SETTINGS,
-		SqlworkbenchActions.PUT_Q_CUSTOM_CONTEXT,
-		SqlworkbenchActions.PUT_SQL_GENERATION_CONTEXT,
-		SqlworkbenchActions.PUT_TAB,
-		SqlworkbenchActions.PUT_USER_WORKSPACE_SETTINGS,
-		SqlworkbenchActions.RESTORE_NOTEBOOK_VERSION,
-		SqlworkbenchActions.UPDATE_ACCOUNT_CONNECTION_SETTINGS,
-		SqlworkbenchActions.UPDATE_ACCOUNT_EXPORT_SETTINGS,
-		SqlworkbenchActions.UPDATE_ACCOUNT_GENERAL_SETTINGS,
-		SqlworkbenchActions.UPDATE_ACCOUNT_Q_SQL_SETTINGS,
-		SqlworkbenchActions.UPDATE_CHART,
-		SqlworkbenchActions.UPDATE_CONNECTION,
-		SqlworkbenchActions.UPDATE_FILE_FOLDER,
-		SqlworkbenchActions.UPDATE_FOLDER,
-		SqlworkbenchActions.UPDATE_NOTEBOOK,
-		SqlworkbenchActions.UPDATE_NOTEBOOK_CELL_CONTENT,
-		SqlworkbenchActions.UPDATE_NOTEBOOK_CELL_LAYOUT,
-		SqlworkbenchActions.UPDATE_SAVED_QUERY,
+	static readonly AllWriteActions: string[] = [
+		SqlworkbenchActions.AssociateConnectionWithChart,
+		SqlworkbenchActions.AssociateConnectionWithTab,
+		SqlworkbenchActions.AssociateNotebookWithTab,
+		SqlworkbenchActions.AssociateQueryWithTab,
+		SqlworkbenchActions.BatchDeleteFolder,
+		SqlworkbenchActions.CreateAccount,
+		SqlworkbenchActions.CreateChart,
+		SqlworkbenchActions.CreateConnection,
+		SqlworkbenchActions.CreateFolder,
+		SqlworkbenchActions.CreateNotebook,
+		SqlworkbenchActions.CreateNotebookCell,
+		SqlworkbenchActions.CreateNotebookFromVersion,
+		SqlworkbenchActions.CreateNotebookVersion,
+		SqlworkbenchActions.CreateSavedQuery,
+		SqlworkbenchActions.DeleteChart,
+		SqlworkbenchActions.DeleteConnection,
+		SqlworkbenchActions.DeleteNotebook,
+		SqlworkbenchActions.DeleteNotebookCell,
+		SqlworkbenchActions.DeleteNotebookVersion,
+		SqlworkbenchActions.DeleteQCustomContext,
+		SqlworkbenchActions.DeleteSavedQuery,
+		SqlworkbenchActions.DeleteSqlGenerationContext,
+		SqlworkbenchActions.DeleteTab,
+		SqlworkbenchActions.DriverExecute,
+		SqlworkbenchActions.DuplicateNotebook,
+		SqlworkbenchActions.GenerateSession,
+		SqlworkbenchActions.ImportNotebook,
+		SqlworkbenchActions.PassAccountSettings,
+		SqlworkbenchActions.PutQCustomContext,
+		SqlworkbenchActions.PutSqlGenerationContext,
+		SqlworkbenchActions.PutTab,
+		SqlworkbenchActions.PutUserWorkspaceSettings,
+		SqlworkbenchActions.RestoreNotebookVersion,
+		SqlworkbenchActions.UpdateAccountConnectionSettings,
+		SqlworkbenchActions.UpdateAccountExportSettings,
+		SqlworkbenchActions.UpdateAccountGeneralSettings,
+		SqlworkbenchActions.UpdateAccountQSqlSettings,
+		SqlworkbenchActions.UpdateChart,
+		SqlworkbenchActions.UpdateConnection,
+		SqlworkbenchActions.UpdateFileFolder,
+		SqlworkbenchActions.UpdateFolder,
+		SqlworkbenchActions.UpdateNotebook,
+		SqlworkbenchActions.UpdateNotebookCellContent,
+		SqlworkbenchActions.UpdateNotebookCellLayout,
+		SqlworkbenchActions.UpdateSavedQuery,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SqlworkbenchActions.LIST_CONNECTIONS,
-		SqlworkbenchActions.LIST_DATABASES,
-		SqlworkbenchActions.LIST_FILES,
-		SqlworkbenchActions.LIST_NOTEBOOK_VERSIONS,
-		SqlworkbenchActions.LIST_NOTEBOOKS,
-		SqlworkbenchActions.LIST_QUERY_EXECUTION_HISTORY,
-		SqlworkbenchActions.LIST_REDSHIFT_CLUSTERS,
-		SqlworkbenchActions.LIST_SAVED_QUERY_VERSIONS,
-		SqlworkbenchActions.LIST_TABS,
+	static readonly AllListActions: string[] = [
+		SqlworkbenchActions.ListConnections,
+		SqlworkbenchActions.ListDatabases,
+		SqlworkbenchActions.ListFiles,
+		SqlworkbenchActions.ListNotebookVersions,
+		SqlworkbenchActions.ListNotebooks,
+		SqlworkbenchActions.ListQueryExecutionHistory,
+		SqlworkbenchActions.ListRedshiftClusters,
+		SqlworkbenchActions.ListSavedQueryVersions,
+		SqlworkbenchActions.ListTabs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SqlworkbenchActions.TAG_RESOURCE,
-		SqlworkbenchActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SqlworkbenchActions.TagResource,
+		SqlworkbenchActions.UntagResource,
 	];
 }
 
-const ChartArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):chart/(?<resourceId>[^:/?]+)$",
-);
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):connection/(?<resourceId>[^:/?]+)$",
-);
-const NotebookArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):notebook/(?<resourceId>[^:/?]+)$",
-);
-const QueryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):query/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a chart ARN.
+ */
+export interface SqlworkbenchChartArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a chart ARN.
+ */
+export interface SqlworkbenchChartArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a connection ARN.
+ */
+export interface SqlworkbenchConnectionArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection ARN.
+ */
+export interface SqlworkbenchConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a notebook ARN.
+ */
+export interface SqlworkbenchNotebookArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a notebook ARN.
+ */
+export interface SqlworkbenchNotebookArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a query ARN.
+ */
+export interface SqlworkbenchQueryArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a query ARN.
+ */
+export interface SqlworkbenchQueryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ChartArnRegex =
+	/^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):chart\/(?<resourceId>[^:/?]+)$/;
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):connection\/(?<resourceId>[^:/?]+)$/;
+const NotebookArnRegex =
+	/^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):notebook\/(?<resourceId>[^:/?]+)$/;
+const QueryArnRegex =
+	/^arn:(?<partition>[^:]+):sqlworkbench:(?<region>[^:]*):(?<account>[^:]*):query\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for sqlworkbench resources.
@@ -312,16 +418,7 @@ export class SqlworkbenchResources {
 	/**
 	 * Builds an ARN for the chart resource.
 	 */
-	static chart(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static chart(props: SqlworkbenchChartArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sqlworkbench:${props.region ?? "*"}:${props.account ?? "*"}:chart/${props.resourceId}`;
 	}
 
@@ -336,12 +433,7 @@ export class SqlworkbenchResources {
 	 * Parses a chart ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChartArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseChartArn(arn: string): SqlworkbenchChartArnComponents {
 		const match = ChartArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid chart ARN: ${arn}`);
@@ -357,16 +449,7 @@ export class SqlworkbenchResources {
 	/**
 	 * Builds an ARN for the connection resource.
 	 */
-	static connection(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: SqlworkbenchConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sqlworkbench:${props.region ?? "*"}:${props.account ?? "*"}:connection/${props.resourceId}`;
 	}
 
@@ -381,12 +464,7 @@ export class SqlworkbenchResources {
 	 * Parses a connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseConnectionArn(arn: string): SqlworkbenchConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection ARN: ${arn}`);
@@ -402,16 +480,7 @@ export class SqlworkbenchResources {
 	/**
 	 * Builds an ARN for the notebook resource.
 	 */
-	static notebook(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static notebook(props: SqlworkbenchNotebookArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sqlworkbench:${props.region ?? "*"}:${props.account ?? "*"}:notebook/${props.resourceId}`;
 	}
 
@@ -426,12 +495,7 @@ export class SqlworkbenchResources {
 	 * Parses a notebook ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNotebookArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseNotebookArn(arn: string): SqlworkbenchNotebookArnComponents {
 		const match = NotebookArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid notebook ARN: ${arn}`);
@@ -447,16 +511,7 @@ export class SqlworkbenchResources {
 	/**
 	 * Builds an ARN for the query resource.
 	 */
-	static query(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static query(props: SqlworkbenchQueryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sqlworkbench:${props.region ?? "*"}:${props.account ?? "*"}:query/${props.resourceId}`;
 	}
 
@@ -471,12 +526,7 @@ export class SqlworkbenchResources {
 	 * Parses a query ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQueryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseQueryArn(arn: string): SqlworkbenchQueryArnComponents {
 		const match = QueryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid query ARN: ${arn}`);
@@ -495,99 +545,99 @@ export class SqlworkbenchResources {
  */
 export class SqlworkbenchConditions {
 	/** Condition keys applicable to the CreateChart action. */
-	static readonly CREATE_CHART_CONDITION_KEYS: string[] = [
+	static readonly CreateChartConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnection action. */
-	static readonly CREATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNotebook action. */
-	static readonly CREATE_NOTEBOOK_CONDITION_KEYS: string[] = [
+	static readonly CreateNotebookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNotebookCell action. */
-	static readonly CREATE_NOTEBOOK_CELL_CONDITION_KEYS: string[] = [
+	static readonly CreateNotebookCellConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNotebookFromVersion action. */
-	static readonly CREATE_NOTEBOOK_FROM_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateNotebookFromVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNotebookVersion action. */
-	static readonly CREATE_NOTEBOOK_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateNotebookVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSavedQuery action. */
-	static readonly CREATE_SAVED_QUERY_CONDITION_KEYS: string[] = [
+	static readonly CreateSavedQueryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DuplicateNotebook action. */
-	static readonly DUPLICATE_NOTEBOOK_CONDITION_KEYS: string[] = [
+	static readonly DuplicateNotebookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportNotebook action. */
-	static readonly IMPORT_NOTEBOOK_CONDITION_KEYS: string[] = [
+	static readonly ImportNotebookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RestoreNotebookVersion action. */
-	static readonly RESTORE_NOTEBOOK_VERSION_CONDITION_KEYS: string[] = [
+	static readonly RestoreNotebookVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateChart action. */
-	static readonly UPDATE_CHART_CONDITION_KEYS: string[] = [
+	static readonly UpdateChartConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateConnection action. */
-	static readonly UPDATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateNotebook action. */
-	static readonly UPDATE_NOTEBOOK_CONDITION_KEYS: string[] = [
+	static readonly UpdateNotebookConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateNotebookCellContent action. */
-	static readonly UPDATE_NOTEBOOK_CELL_CONTENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateNotebookCellContentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateNotebookCellLayout action. */
-	static readonly UPDATE_NOTEBOOK_CELL_LAYOUT_CONDITION_KEYS: string[] = [
+	static readonly UpdateNotebookCellLayoutConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateSavedQuery action. */
-	static readonly UPDATE_SAVED_QUERY_CONDITION_KEYS: string[] = [
+	static readonly UpdateSavedQueryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

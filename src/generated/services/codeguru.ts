@@ -13,19 +13,19 @@ export class CodeguruActions {
 	static readonly SERVICE_PREFIX = "codeguru";
 
 	/** [Read] codeguru:GetCodeGuruFreeTrialSummary */
-	static readonly GET_CODE_GURU_FREE_TRIAL_SUMMARY =
+	static readonly actionGetCodeGuruFreeTrialSummary =
 		"codeguru:GetCodeGuruFreeTrialSummary";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeguruActions.GET_CODE_GURU_FREE_TRIAL_SUMMARY,
+	static readonly AllReadActions: string[] = [
+		CodeguruActions.actionGetCodeGuruFreeTrialSummary,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

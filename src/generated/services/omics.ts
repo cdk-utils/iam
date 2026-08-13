@@ -13,402 +13,819 @@ export class OmicsActions {
 	static readonly SERVICE_PREFIX = "omics";
 
 	/** [Write] omics:AbortMultipartReadSetUpload */
-	static readonly ABORT_MULTIPART_READ_SET_UPLOAD =
+	static readonly AbortMultipartReadSetUpload =
 		"omics:AbortMultipartReadSetUpload";
 	/** [Write] omics:AcceptShare */
-	static readonly ACCEPT_SHARE = "omics:AcceptShare";
+	static readonly AcceptShare = "omics:AcceptShare";
 	/** [Write] omics:BatchDeleteReadSet */
-	static readonly BATCH_DELETE_READ_SET = "omics:BatchDeleteReadSet";
+	static readonly BatchDeleteReadSet = "omics:BatchDeleteReadSet";
 	/** [Write] omics:CancelAnnotationImportJob */
-	static readonly CANCEL_ANNOTATION_IMPORT_JOB =
-		"omics:CancelAnnotationImportJob";
+	static readonly CancelAnnotationImportJob = "omics:CancelAnnotationImportJob";
 	/** [Write] omics:CancelRun */
-	static readonly CANCEL_RUN = "omics:CancelRun";
+	static readonly CancelRun = "omics:CancelRun";
 	/** [Write] omics:CancelRunBatch */
-	static readonly CANCEL_RUN_BATCH = "omics:CancelRunBatch";
+	static readonly CancelRunBatch = "omics:CancelRunBatch";
 	/** [Write] omics:CancelVariantImportJob */
-	static readonly CANCEL_VARIANT_IMPORT_JOB = "omics:CancelVariantImportJob";
+	static readonly CancelVariantImportJob = "omics:CancelVariantImportJob";
 	/** [Write] omics:CompleteMultipartReadSetUpload */
-	static readonly COMPLETE_MULTIPART_READ_SET_UPLOAD =
+	static readonly CompleteMultipartReadSetUpload =
 		"omics:CompleteMultipartReadSetUpload";
 	/** [Write] omics:CreateAnnotationStore */
-	static readonly CREATE_ANNOTATION_STORE = "omics:CreateAnnotationStore";
+	static readonly CreateAnnotationStore = "omics:CreateAnnotationStore";
 	/** [Write] omics:CreateAnnotationStoreVersion */
-	static readonly CREATE_ANNOTATION_STORE_VERSION =
+	static readonly CreateAnnotationStoreVersion =
 		"omics:CreateAnnotationStoreVersion";
 	/** [Write] omics:CreateConfiguration */
-	static readonly CREATE_CONFIGURATION = "omics:CreateConfiguration";
+	static readonly CreateConfiguration = "omics:CreateConfiguration";
 	/** [Write] omics:CreateMultipartReadSetUpload */
-	static readonly CREATE_MULTIPART_READ_SET_UPLOAD =
+	static readonly CreateMultipartReadSetUpload =
 		"omics:CreateMultipartReadSetUpload";
 	/** [Write] omics:CreateReferenceStore */
-	static readonly CREATE_REFERENCE_STORE = "omics:CreateReferenceStore";
+	static readonly CreateReferenceStore = "omics:CreateReferenceStore";
 	/** [Write] omics:CreateRunCache */
-	static readonly CREATE_RUN_CACHE = "omics:CreateRunCache";
+	static readonly CreateRunCache = "omics:CreateRunCache";
 	/** [Write] omics:CreateRunGroup */
-	static readonly CREATE_RUN_GROUP = "omics:CreateRunGroup";
+	static readonly CreateRunGroup = "omics:CreateRunGroup";
 	/** [Write] omics:CreateSequenceStore */
-	static readonly CREATE_SEQUENCE_STORE = "omics:CreateSequenceStore";
+	static readonly CreateSequenceStore = "omics:CreateSequenceStore";
 	/** [Write] omics:CreateShare */
-	static readonly CREATE_SHARE = "omics:CreateShare";
+	static readonly CreateShare = "omics:CreateShare";
 	/** [Write] omics:CreateVariantStore */
-	static readonly CREATE_VARIANT_STORE = "omics:CreateVariantStore";
+	static readonly CreateVariantStore = "omics:CreateVariantStore";
 	/** [Write] omics:CreateWorkflow */
-	static readonly CREATE_WORKFLOW = "omics:CreateWorkflow";
+	static readonly CreateWorkflow = "omics:CreateWorkflow";
 	/** [Write] omics:CreateWorkflowVersion */
-	static readonly CREATE_WORKFLOW_VERSION = "omics:CreateWorkflowVersion";
+	static readonly CreateWorkflowVersion = "omics:CreateWorkflowVersion";
 	/** [Write] omics:DeleteAnnotationStore */
-	static readonly DELETE_ANNOTATION_STORE = "omics:DeleteAnnotationStore";
+	static readonly DeleteAnnotationStore = "omics:DeleteAnnotationStore";
 	/** [Write] omics:DeleteAnnotationStoreVersions */
-	static readonly DELETE_ANNOTATION_STORE_VERSIONS =
+	static readonly DeleteAnnotationStoreVersions =
 		"omics:DeleteAnnotationStoreVersions";
 	/** [Write] omics:DeleteBatch */
-	static readonly DELETE_BATCH = "omics:DeleteBatch";
+	static readonly DeleteBatch = "omics:DeleteBatch";
 	/** [Write] omics:DeleteConfiguration */
-	static readonly DELETE_CONFIGURATION = "omics:DeleteConfiguration";
+	static readonly DeleteConfiguration = "omics:DeleteConfiguration";
 	/** [Write] omics:DeleteReference */
-	static readonly DELETE_REFERENCE = "omics:DeleteReference";
+	static readonly DeleteReference = "omics:DeleteReference";
 	/** [Write] omics:DeleteReferenceStore */
-	static readonly DELETE_REFERENCE_STORE = "omics:DeleteReferenceStore";
+	static readonly DeleteReferenceStore = "omics:DeleteReferenceStore";
 	/** [Write] omics:DeleteRun */
-	static readonly DELETE_RUN = "omics:DeleteRun";
+	static readonly DeleteRun = "omics:DeleteRun";
 	/** [Write] omics:DeleteRunBatch */
-	static readonly DELETE_RUN_BATCH = "omics:DeleteRunBatch";
+	static readonly DeleteRunBatch = "omics:DeleteRunBatch";
 	/** [Write] omics:DeleteRunCache */
-	static readonly DELETE_RUN_CACHE = "omics:DeleteRunCache";
+	static readonly DeleteRunCache = "omics:DeleteRunCache";
 	/** [Write] omics:DeleteRunGroup */
-	static readonly DELETE_RUN_GROUP = "omics:DeleteRunGroup";
+	static readonly DeleteRunGroup = "omics:DeleteRunGroup";
 	/** [Write] omics:DeleteS3AccessPolicy */
-	static readonly DELETE_S3_ACCESS_POLICY = "omics:DeleteS3AccessPolicy";
+	static readonly DeleteS3AccessPolicy = "omics:DeleteS3AccessPolicy";
 	/** [Write] omics:DeleteSequenceStore */
-	static readonly DELETE_SEQUENCE_STORE = "omics:DeleteSequenceStore";
+	static readonly DeleteSequenceStore = "omics:DeleteSequenceStore";
 	/** [Write] omics:DeleteShare */
-	static readonly DELETE_SHARE = "omics:DeleteShare";
+	static readonly DeleteShare = "omics:DeleteShare";
 	/** [Write] omics:DeleteVariantStore */
-	static readonly DELETE_VARIANT_STORE = "omics:DeleteVariantStore";
+	static readonly DeleteVariantStore = "omics:DeleteVariantStore";
 	/** [Write] omics:DeleteWorkflow */
-	static readonly DELETE_WORKFLOW = "omics:DeleteWorkflow";
+	static readonly DeleteWorkflow = "omics:DeleteWorkflow";
 	/** [Write] omics:DeleteWorkflowVersion */
-	static readonly DELETE_WORKFLOW_VERSION = "omics:DeleteWorkflowVersion";
+	static readonly DeleteWorkflowVersion = "omics:DeleteWorkflowVersion";
 	/** [Read] omics:GetAnnotationImportJob */
-	static readonly GET_ANNOTATION_IMPORT_JOB = "omics:GetAnnotationImportJob";
+	static readonly actionGetAnnotationImportJob = "omics:GetAnnotationImportJob";
 	/** [Read] omics:GetAnnotationStore */
-	static readonly GET_ANNOTATION_STORE = "omics:GetAnnotationStore";
+	static readonly actionGetAnnotationStore = "omics:GetAnnotationStore";
 	/** [Read] omics:GetAnnotationStoreVersion */
-	static readonly GET_ANNOTATION_STORE_VERSION =
+	static readonly actionGetAnnotationStoreVersion =
 		"omics:GetAnnotationStoreVersion";
 	/** [Read] omics:GetBatch */
-	static readonly GET_BATCH = "omics:GetBatch";
+	static readonly actionGetBatch = "omics:GetBatch";
 	/** [Read] omics:GetConfiguration */
-	static readonly GET_CONFIGURATION = "omics:GetConfiguration";
+	static readonly actionGetConfiguration = "omics:GetConfiguration";
 	/** [Read] omics:GetReadSet */
-	static readonly GET_READ_SET = "omics:GetReadSet";
+	static readonly actionGetReadSet = "omics:GetReadSet";
 	/** [Read] omics:GetReadSetActivationJob */
-	static readonly GET_READ_SET_ACTIVATION_JOB = "omics:GetReadSetActivationJob";
+	static readonly actionGetReadSetActivationJob =
+		"omics:GetReadSetActivationJob";
 	/** [Read] omics:GetReadSetExportJob */
-	static readonly GET_READ_SET_EXPORT_JOB = "omics:GetReadSetExportJob";
+	static readonly actionGetReadSetExportJob = "omics:GetReadSetExportJob";
 	/** [Read] omics:GetReadSetImportJob */
-	static readonly GET_READ_SET_IMPORT_JOB = "omics:GetReadSetImportJob";
+	static readonly actionGetReadSetImportJob = "omics:GetReadSetImportJob";
 	/** [Read] omics:GetReadSetMetadata */
-	static readonly GET_READ_SET_METADATA = "omics:GetReadSetMetadata";
+	static readonly actionGetReadSetMetadata = "omics:GetReadSetMetadata";
 	/** [Read] omics:GetReference */
-	static readonly GET_REFERENCE = "omics:GetReference";
+	static readonly actionGetReference = "omics:GetReference";
 	/** [Read] omics:GetReferenceImportJob */
-	static readonly GET_REFERENCE_IMPORT_JOB = "omics:GetReferenceImportJob";
+	static readonly actionGetReferenceImportJob = "omics:GetReferenceImportJob";
 	/** [Read] omics:GetReferenceMetadata */
-	static readonly GET_REFERENCE_METADATA = "omics:GetReferenceMetadata";
+	static readonly actionGetReferenceMetadata = "omics:GetReferenceMetadata";
 	/** [Read] omics:GetReferenceStore */
-	static readonly GET_REFERENCE_STORE = "omics:GetReferenceStore";
+	static readonly actionGetReferenceStore = "omics:GetReferenceStore";
 	/** [Read] omics:GetRun */
-	static readonly GET_RUN = "omics:GetRun";
+	static readonly actionGetRun = "omics:GetRun";
 	/** [Read] omics:GetRunCache */
-	static readonly GET_RUN_CACHE = "omics:GetRunCache";
+	static readonly actionGetRunCache = "omics:GetRunCache";
 	/** [Read] omics:GetRunGroup */
-	static readonly GET_RUN_GROUP = "omics:GetRunGroup";
+	static readonly actionGetRunGroup = "omics:GetRunGroup";
 	/** [Read] omics:GetRunTask */
-	static readonly GET_RUN_TASK = "omics:GetRunTask";
+	static readonly actionGetRunTask = "omics:GetRunTask";
 	/** [Read] omics:GetS3AccessPolicy */
-	static readonly GET_S3_ACCESS_POLICY = "omics:GetS3AccessPolicy";
+	static readonly actionGetS3AccessPolicy = "omics:GetS3AccessPolicy";
 	/** [Read] omics:GetSequenceStore */
-	static readonly GET_SEQUENCE_STORE = "omics:GetSequenceStore";
+	static readonly actionGetSequenceStore = "omics:GetSequenceStore";
 	/** [Read] omics:GetShare */
-	static readonly GET_SHARE = "omics:GetShare";
+	static readonly actionGetShare = "omics:GetShare";
 	/** [Read] omics:GetVariantImportJob */
-	static readonly GET_VARIANT_IMPORT_JOB = "omics:GetVariantImportJob";
+	static readonly actionGetVariantImportJob = "omics:GetVariantImportJob";
 	/** [Read] omics:GetVariantStore */
-	static readonly GET_VARIANT_STORE = "omics:GetVariantStore";
+	static readonly actionGetVariantStore = "omics:GetVariantStore";
 	/** [Read] omics:GetWorkflow */
-	static readonly GET_WORKFLOW = "omics:GetWorkflow";
+	static readonly actionGetWorkflow = "omics:GetWorkflow";
 	/** [Read] omics:GetWorkflowVersion */
-	static readonly GET_WORKFLOW_VERSION = "omics:GetWorkflowVersion";
+	static readonly actionGetWorkflowVersion = "omics:GetWorkflowVersion";
 	/** [List] omics:ListAnnotationImportJobs */
-	static readonly LIST_ANNOTATION_IMPORT_JOBS =
-		"omics:ListAnnotationImportJobs";
+	static readonly ListAnnotationImportJobs = "omics:ListAnnotationImportJobs";
 	/** [List] omics:ListAnnotationStoreVersions */
-	static readonly LIST_ANNOTATION_STORE_VERSIONS =
+	static readonly ListAnnotationStoreVersions =
 		"omics:ListAnnotationStoreVersions";
 	/** [List] omics:ListAnnotationStores */
-	static readonly LIST_ANNOTATION_STORES = "omics:ListAnnotationStores";
+	static readonly ListAnnotationStores = "omics:ListAnnotationStores";
 	/** [List] omics:ListBatch */
-	static readonly LIST_BATCH = "omics:ListBatch";
+	static readonly ListBatch = "omics:ListBatch";
 	/** [List] omics:ListConfigurations */
-	static readonly LIST_CONFIGURATIONS = "omics:ListConfigurations";
+	static readonly ListConfigurations = "omics:ListConfigurations";
 	/** [List] omics:ListMultipartReadSetUploads */
-	static readonly LIST_MULTIPART_READ_SET_UPLOADS =
+	static readonly ListMultipartReadSetUploads =
 		"omics:ListMultipartReadSetUploads";
 	/** [List] omics:ListReadSetActivationJobs */
-	static readonly LIST_READ_SET_ACTIVATION_JOBS =
-		"omics:ListReadSetActivationJobs";
+	static readonly ListReadSetActivationJobs = "omics:ListReadSetActivationJobs";
 	/** [List] omics:ListReadSetExportJobs */
-	static readonly LIST_READ_SET_EXPORT_JOBS = "omics:ListReadSetExportJobs";
+	static readonly ListReadSetExportJobs = "omics:ListReadSetExportJobs";
 	/** [List] omics:ListReadSetImportJobs */
-	static readonly LIST_READ_SET_IMPORT_JOBS = "omics:ListReadSetImportJobs";
+	static readonly ListReadSetImportJobs = "omics:ListReadSetImportJobs";
 	/** [List] omics:ListReadSetUploadParts */
-	static readonly LIST_READ_SET_UPLOAD_PARTS = "omics:ListReadSetUploadParts";
+	static readonly ListReadSetUploadParts = "omics:ListReadSetUploadParts";
 	/** [List] omics:ListReadSets */
-	static readonly LIST_READ_SETS = "omics:ListReadSets";
+	static readonly ListReadSets = "omics:ListReadSets";
 	/** [List] omics:ListReferenceImportJobs */
-	static readonly LIST_REFERENCE_IMPORT_JOBS = "omics:ListReferenceImportJobs";
+	static readonly ListReferenceImportJobs = "omics:ListReferenceImportJobs";
 	/** [List] omics:ListReferenceStores */
-	static readonly LIST_REFERENCE_STORES = "omics:ListReferenceStores";
+	static readonly ListReferenceStores = "omics:ListReferenceStores";
 	/** [List] omics:ListReferences */
-	static readonly LIST_REFERENCES = "omics:ListReferences";
+	static readonly ListReferences = "omics:ListReferences";
 	/** [List] omics:ListRunCaches */
-	static readonly LIST_RUN_CACHES = "omics:ListRunCaches";
+	static readonly ListRunCaches = "omics:ListRunCaches";
 	/** [List] omics:ListRunGroups */
-	static readonly LIST_RUN_GROUPS = "omics:ListRunGroups";
+	static readonly ListRunGroups = "omics:ListRunGroups";
 	/** [List] omics:ListRunTasks */
-	static readonly LIST_RUN_TASKS = "omics:ListRunTasks";
+	static readonly ListRunTasks = "omics:ListRunTasks";
 	/** [List] omics:ListRuns */
-	static readonly LIST_RUNS = "omics:ListRuns";
+	static readonly ListRuns = "omics:ListRuns";
 	/** [List] omics:ListRunsInBatch */
-	static readonly LIST_RUNS_IN_BATCH = "omics:ListRunsInBatch";
+	static readonly ListRunsInBatch = "omics:ListRunsInBatch";
 	/** [List] omics:ListSequenceStores */
-	static readonly LIST_SEQUENCE_STORES = "omics:ListSequenceStores";
+	static readonly ListSequenceStores = "omics:ListSequenceStores";
 	/** [List] omics:ListShares */
-	static readonly LIST_SHARES = "omics:ListShares";
+	static readonly ListShares = "omics:ListShares";
 	/** [List] omics:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "omics:ListTagsForResource";
+	static readonly ListTagsForResource = "omics:ListTagsForResource";
 	/** [List] omics:ListVariantImportJobs */
-	static readonly LIST_VARIANT_IMPORT_JOBS = "omics:ListVariantImportJobs";
+	static readonly ListVariantImportJobs = "omics:ListVariantImportJobs";
 	/** [List] omics:ListVariantStores */
-	static readonly LIST_VARIANT_STORES = "omics:ListVariantStores";
+	static readonly ListVariantStores = "omics:ListVariantStores";
 	/** [List] omics:ListWorkflowVersions */
-	static readonly LIST_WORKFLOW_VERSIONS = "omics:ListWorkflowVersions";
+	static readonly ListWorkflowVersions = "omics:ListWorkflowVersions";
 	/** [List] omics:ListWorkflows */
-	static readonly LIST_WORKFLOWS = "omics:ListWorkflows";
+	static readonly ListWorkflows = "omics:ListWorkflows";
 	/** [Write] omics:PutS3AccessPolicy */
-	static readonly PUT_S3_ACCESS_POLICY = "omics:PutS3AccessPolicy";
+	static readonly PutS3AccessPolicy = "omics:PutS3AccessPolicy";
 	/** [Write] omics:StartAnnotationImportJob */
-	static readonly START_ANNOTATION_IMPORT_JOB =
-		"omics:StartAnnotationImportJob";
+	static readonly StartAnnotationImportJob = "omics:StartAnnotationImportJob";
 	/** [Write] omics:StartReadSetActivationJob */
-	static readonly START_READ_SET_ACTIVATION_JOB =
-		"omics:StartReadSetActivationJob";
+	static readonly StartReadSetActivationJob = "omics:StartReadSetActivationJob";
 	/** [Write] omics:StartReadSetExportJob */
-	static readonly START_READ_SET_EXPORT_JOB = "omics:StartReadSetExportJob";
+	static readonly StartReadSetExportJob = "omics:StartReadSetExportJob";
 	/** [Write] omics:StartReadSetImportJob */
-	static readonly START_READ_SET_IMPORT_JOB = "omics:StartReadSetImportJob";
+	static readonly StartReadSetImportJob = "omics:StartReadSetImportJob";
 	/** [Write] omics:StartReferenceImportJob */
-	static readonly START_REFERENCE_IMPORT_JOB = "omics:StartReferenceImportJob";
+	static readonly StartReferenceImportJob = "omics:StartReferenceImportJob";
 	/** [Write] omics:StartRun */
-	static readonly START_RUN = "omics:StartRun";
+	static readonly StartRun = "omics:StartRun";
 	/** [Write] omics:StartRunBatch */
-	static readonly START_RUN_BATCH = "omics:StartRunBatch";
+	static readonly StartRunBatch = "omics:StartRunBatch";
 	/** [Write] omics:StartVariantImportJob */
-	static readonly START_VARIANT_IMPORT_JOB = "omics:StartVariantImportJob";
+	static readonly StartVariantImportJob = "omics:StartVariantImportJob";
 	/** [Tagging] omics:TagResource */
-	static readonly TAG_RESOURCE = "omics:TagResource";
+	static readonly TagResource = "omics:TagResource";
 	/** [Tagging] omics:UntagResource */
-	static readonly UNTAG_RESOURCE = "omics:UntagResource";
+	static readonly UntagResource = "omics:UntagResource";
 	/** [Write] omics:UpdateAnnotationStore */
-	static readonly UPDATE_ANNOTATION_STORE = "omics:UpdateAnnotationStore";
+	static readonly UpdateAnnotationStore = "omics:UpdateAnnotationStore";
 	/** [Write] omics:UpdateAnnotationStoreVersion */
-	static readonly UPDATE_ANNOTATION_STORE_VERSION =
+	static readonly UpdateAnnotationStoreVersion =
 		"omics:UpdateAnnotationStoreVersion";
 	/** [Write] omics:UpdateRunCache */
-	static readonly UPDATE_RUN_CACHE = "omics:UpdateRunCache";
+	static readonly UpdateRunCache = "omics:UpdateRunCache";
 	/** [Write] omics:UpdateRunGroup */
-	static readonly UPDATE_RUN_GROUP = "omics:UpdateRunGroup";
+	static readonly UpdateRunGroup = "omics:UpdateRunGroup";
 	/** [Write] omics:UpdateSequenceStore */
-	static readonly UPDATE_SEQUENCE_STORE = "omics:UpdateSequenceStore";
+	static readonly UpdateSequenceStore = "omics:UpdateSequenceStore";
 	/** [Write] omics:UpdateVariantStore */
-	static readonly UPDATE_VARIANT_STORE = "omics:UpdateVariantStore";
+	static readonly UpdateVariantStore = "omics:UpdateVariantStore";
 	/** [Write] omics:UpdateWorkflow */
-	static readonly UPDATE_WORKFLOW = "omics:UpdateWorkflow";
+	static readonly UpdateWorkflow = "omics:UpdateWorkflow";
 	/** [Write] omics:UpdateWorkflowVersion */
-	static readonly UPDATE_WORKFLOW_VERSION = "omics:UpdateWorkflowVersion";
+	static readonly UpdateWorkflowVersion = "omics:UpdateWorkflowVersion";
 	/** [Write] omics:UploadReadSetPart */
-	static readonly UPLOAD_READ_SET_PART = "omics:UploadReadSetPart";
+	static readonly UploadReadSetPart = "omics:UploadReadSetPart";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OmicsActions.GET_ANNOTATION_IMPORT_JOB,
-		OmicsActions.GET_ANNOTATION_STORE,
-		OmicsActions.GET_ANNOTATION_STORE_VERSION,
-		OmicsActions.GET_BATCH,
-		OmicsActions.GET_CONFIGURATION,
-		OmicsActions.GET_READ_SET,
-		OmicsActions.GET_READ_SET_ACTIVATION_JOB,
-		OmicsActions.GET_READ_SET_EXPORT_JOB,
-		OmicsActions.GET_READ_SET_IMPORT_JOB,
-		OmicsActions.GET_READ_SET_METADATA,
-		OmicsActions.GET_REFERENCE,
-		OmicsActions.GET_REFERENCE_IMPORT_JOB,
-		OmicsActions.GET_REFERENCE_METADATA,
-		OmicsActions.GET_REFERENCE_STORE,
-		OmicsActions.GET_RUN,
-		OmicsActions.GET_RUN_CACHE,
-		OmicsActions.GET_RUN_GROUP,
-		OmicsActions.GET_RUN_TASK,
-		OmicsActions.GET_S3_ACCESS_POLICY,
-		OmicsActions.GET_SEQUENCE_STORE,
-		OmicsActions.GET_SHARE,
-		OmicsActions.GET_VARIANT_IMPORT_JOB,
-		OmicsActions.GET_VARIANT_STORE,
-		OmicsActions.GET_WORKFLOW,
-		OmicsActions.GET_WORKFLOW_VERSION,
+	static readonly AllReadActions: string[] = [
+		OmicsActions.actionGetAnnotationImportJob,
+		OmicsActions.actionGetAnnotationStore,
+		OmicsActions.actionGetAnnotationStoreVersion,
+		OmicsActions.actionGetBatch,
+		OmicsActions.actionGetConfiguration,
+		OmicsActions.actionGetReadSet,
+		OmicsActions.actionGetReadSetActivationJob,
+		OmicsActions.actionGetReadSetExportJob,
+		OmicsActions.actionGetReadSetImportJob,
+		OmicsActions.actionGetReadSetMetadata,
+		OmicsActions.actionGetReference,
+		OmicsActions.actionGetReferenceImportJob,
+		OmicsActions.actionGetReferenceMetadata,
+		OmicsActions.actionGetReferenceStore,
+		OmicsActions.actionGetRun,
+		OmicsActions.actionGetRunCache,
+		OmicsActions.actionGetRunGroup,
+		OmicsActions.actionGetRunTask,
+		OmicsActions.actionGetS3AccessPolicy,
+		OmicsActions.actionGetSequenceStore,
+		OmicsActions.actionGetShare,
+		OmicsActions.actionGetVariantImportJob,
+		OmicsActions.actionGetVariantStore,
+		OmicsActions.actionGetWorkflow,
+		OmicsActions.actionGetWorkflowVersion,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OmicsActions.ABORT_MULTIPART_READ_SET_UPLOAD,
-		OmicsActions.ACCEPT_SHARE,
-		OmicsActions.BATCH_DELETE_READ_SET,
-		OmicsActions.CANCEL_ANNOTATION_IMPORT_JOB,
-		OmicsActions.CANCEL_RUN,
-		OmicsActions.CANCEL_RUN_BATCH,
-		OmicsActions.CANCEL_VARIANT_IMPORT_JOB,
-		OmicsActions.COMPLETE_MULTIPART_READ_SET_UPLOAD,
-		OmicsActions.CREATE_ANNOTATION_STORE,
-		OmicsActions.CREATE_ANNOTATION_STORE_VERSION,
-		OmicsActions.CREATE_CONFIGURATION,
-		OmicsActions.CREATE_MULTIPART_READ_SET_UPLOAD,
-		OmicsActions.CREATE_REFERENCE_STORE,
-		OmicsActions.CREATE_RUN_CACHE,
-		OmicsActions.CREATE_RUN_GROUP,
-		OmicsActions.CREATE_SEQUENCE_STORE,
-		OmicsActions.CREATE_SHARE,
-		OmicsActions.CREATE_VARIANT_STORE,
-		OmicsActions.CREATE_WORKFLOW,
-		OmicsActions.CREATE_WORKFLOW_VERSION,
-		OmicsActions.DELETE_ANNOTATION_STORE,
-		OmicsActions.DELETE_ANNOTATION_STORE_VERSIONS,
-		OmicsActions.DELETE_BATCH,
-		OmicsActions.DELETE_CONFIGURATION,
-		OmicsActions.DELETE_REFERENCE,
-		OmicsActions.DELETE_REFERENCE_STORE,
-		OmicsActions.DELETE_RUN,
-		OmicsActions.DELETE_RUN_BATCH,
-		OmicsActions.DELETE_RUN_CACHE,
-		OmicsActions.DELETE_RUN_GROUP,
-		OmicsActions.DELETE_S3_ACCESS_POLICY,
-		OmicsActions.DELETE_SEQUENCE_STORE,
-		OmicsActions.DELETE_SHARE,
-		OmicsActions.DELETE_VARIANT_STORE,
-		OmicsActions.DELETE_WORKFLOW,
-		OmicsActions.DELETE_WORKFLOW_VERSION,
-		OmicsActions.PUT_S3_ACCESS_POLICY,
-		OmicsActions.START_ANNOTATION_IMPORT_JOB,
-		OmicsActions.START_READ_SET_ACTIVATION_JOB,
-		OmicsActions.START_READ_SET_EXPORT_JOB,
-		OmicsActions.START_READ_SET_IMPORT_JOB,
-		OmicsActions.START_REFERENCE_IMPORT_JOB,
-		OmicsActions.START_RUN,
-		OmicsActions.START_RUN_BATCH,
-		OmicsActions.START_VARIANT_IMPORT_JOB,
-		OmicsActions.UPDATE_ANNOTATION_STORE,
-		OmicsActions.UPDATE_ANNOTATION_STORE_VERSION,
-		OmicsActions.UPDATE_RUN_CACHE,
-		OmicsActions.UPDATE_RUN_GROUP,
-		OmicsActions.UPDATE_SEQUENCE_STORE,
-		OmicsActions.UPDATE_VARIANT_STORE,
-		OmicsActions.UPDATE_WORKFLOW,
-		OmicsActions.UPDATE_WORKFLOW_VERSION,
-		OmicsActions.UPLOAD_READ_SET_PART,
+	static readonly AllWriteActions: string[] = [
+		OmicsActions.AbortMultipartReadSetUpload,
+		OmicsActions.AcceptShare,
+		OmicsActions.BatchDeleteReadSet,
+		OmicsActions.CancelAnnotationImportJob,
+		OmicsActions.CancelRun,
+		OmicsActions.CancelRunBatch,
+		OmicsActions.CancelVariantImportJob,
+		OmicsActions.CompleteMultipartReadSetUpload,
+		OmicsActions.CreateAnnotationStore,
+		OmicsActions.CreateAnnotationStoreVersion,
+		OmicsActions.CreateConfiguration,
+		OmicsActions.CreateMultipartReadSetUpload,
+		OmicsActions.CreateReferenceStore,
+		OmicsActions.CreateRunCache,
+		OmicsActions.CreateRunGroup,
+		OmicsActions.CreateSequenceStore,
+		OmicsActions.CreateShare,
+		OmicsActions.CreateVariantStore,
+		OmicsActions.CreateWorkflow,
+		OmicsActions.CreateWorkflowVersion,
+		OmicsActions.DeleteAnnotationStore,
+		OmicsActions.DeleteAnnotationStoreVersions,
+		OmicsActions.DeleteBatch,
+		OmicsActions.DeleteConfiguration,
+		OmicsActions.DeleteReference,
+		OmicsActions.DeleteReferenceStore,
+		OmicsActions.DeleteRun,
+		OmicsActions.DeleteRunBatch,
+		OmicsActions.DeleteRunCache,
+		OmicsActions.DeleteRunGroup,
+		OmicsActions.DeleteS3AccessPolicy,
+		OmicsActions.DeleteSequenceStore,
+		OmicsActions.DeleteShare,
+		OmicsActions.DeleteVariantStore,
+		OmicsActions.DeleteWorkflow,
+		OmicsActions.DeleteWorkflowVersion,
+		OmicsActions.PutS3AccessPolicy,
+		OmicsActions.StartAnnotationImportJob,
+		OmicsActions.StartReadSetActivationJob,
+		OmicsActions.StartReadSetExportJob,
+		OmicsActions.StartReadSetImportJob,
+		OmicsActions.StartReferenceImportJob,
+		OmicsActions.StartRun,
+		OmicsActions.StartRunBatch,
+		OmicsActions.StartVariantImportJob,
+		OmicsActions.UpdateAnnotationStore,
+		OmicsActions.UpdateAnnotationStoreVersion,
+		OmicsActions.UpdateRunCache,
+		OmicsActions.UpdateRunGroup,
+		OmicsActions.UpdateSequenceStore,
+		OmicsActions.UpdateVariantStore,
+		OmicsActions.UpdateWorkflow,
+		OmicsActions.UpdateWorkflowVersion,
+		OmicsActions.UploadReadSetPart,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OmicsActions.LIST_ANNOTATION_IMPORT_JOBS,
-		OmicsActions.LIST_ANNOTATION_STORE_VERSIONS,
-		OmicsActions.LIST_ANNOTATION_STORES,
-		OmicsActions.LIST_BATCH,
-		OmicsActions.LIST_CONFIGURATIONS,
-		OmicsActions.LIST_MULTIPART_READ_SET_UPLOADS,
-		OmicsActions.LIST_READ_SET_ACTIVATION_JOBS,
-		OmicsActions.LIST_READ_SET_EXPORT_JOBS,
-		OmicsActions.LIST_READ_SET_IMPORT_JOBS,
-		OmicsActions.LIST_READ_SET_UPLOAD_PARTS,
-		OmicsActions.LIST_READ_SETS,
-		OmicsActions.LIST_REFERENCE_IMPORT_JOBS,
-		OmicsActions.LIST_REFERENCE_STORES,
-		OmicsActions.LIST_REFERENCES,
-		OmicsActions.LIST_RUN_CACHES,
-		OmicsActions.LIST_RUN_GROUPS,
-		OmicsActions.LIST_RUN_TASKS,
-		OmicsActions.LIST_RUNS,
-		OmicsActions.LIST_RUNS_IN_BATCH,
-		OmicsActions.LIST_SEQUENCE_STORES,
-		OmicsActions.LIST_SHARES,
-		OmicsActions.LIST_TAGS_FOR_RESOURCE,
-		OmicsActions.LIST_VARIANT_IMPORT_JOBS,
-		OmicsActions.LIST_VARIANT_STORES,
-		OmicsActions.LIST_WORKFLOW_VERSIONS,
-		OmicsActions.LIST_WORKFLOWS,
+	static readonly AllListActions: string[] = [
+		OmicsActions.ListAnnotationImportJobs,
+		OmicsActions.ListAnnotationStoreVersions,
+		OmicsActions.ListAnnotationStores,
+		OmicsActions.ListBatch,
+		OmicsActions.ListConfigurations,
+		OmicsActions.ListMultipartReadSetUploads,
+		OmicsActions.ListReadSetActivationJobs,
+		OmicsActions.ListReadSetExportJobs,
+		OmicsActions.ListReadSetImportJobs,
+		OmicsActions.ListReadSetUploadParts,
+		OmicsActions.ListReadSets,
+		OmicsActions.ListReferenceImportJobs,
+		OmicsActions.ListReferenceStores,
+		OmicsActions.ListReferences,
+		OmicsActions.ListRunCaches,
+		OmicsActions.ListRunGroups,
+		OmicsActions.ListRunTasks,
+		OmicsActions.ListRuns,
+		OmicsActions.ListRunsInBatch,
+		OmicsActions.ListSequenceStores,
+		OmicsActions.ListShares,
+		OmicsActions.ListTagsForResource,
+		OmicsActions.ListVariantImportJobs,
+		OmicsActions.ListVariantStores,
+		OmicsActions.ListWorkflowVersions,
+		OmicsActions.ListWorkflows,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OmicsActions.TAG_RESOURCE,
-		OmicsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OmicsActions.TagResource,
+		OmicsActions.UntagResource,
 	];
 }
 
-const AnnotationStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):annotationStore/(?<annotationStoreName>[^:/?]+)$",
-);
-const AnnotationStoreVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):annotationStore/(?<annotationStoreName>[^:/?]+)/version/(?<annotationStoreVersionName>[^:/?]+)$",
-);
-const TaskResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):task/(?<id>[^:/?]+)$",
-);
-const VariantStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):variantStore/(?<variantStoreName>[^:/?]+)$",
-);
-const WorkflowVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):workflow/(?<id>[^:/?]+)/version/(?<versionName>[^:/?]+)$",
-);
-const ConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):configuration/(?<name>[^:/?]+)$",
-);
-const ReadSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):sequenceStore/(?<sequenceStoreId>[^:/?]+)/readSet/(?<readSetId>[^:/?]+)$",
-);
-const ReferenceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):referenceStore/(?<referenceStoreId>[^:/?]+)/reference/(?<referenceId>[^:/?]+)$",
-);
-const ReferenceStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):referenceStore/(?<referenceStoreId>[^:/?]+)$",
-);
-const RunArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):run/(?<id>[^:/?]+)$",
-);
-const RunBatchArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runBatch/(?<batchId>[^:/?]+)$",
-);
-const RunCacheArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runCache/(?<id>[^:/?]+)$",
-);
-const RunGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runGroup/(?<id>[^:/?]+)$",
-);
-const SequenceStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):sequenceStore/(?<sequenceStoreId>[^:/?]+)$",
-);
-const WorkflowArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):workflow/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a AnnotationStore ARN.
+ */
+export interface OmicsAnnotationStoreArnProps {
+	/** The AnnotationStoreName component of the ARN. */
+	readonly annotationStoreName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AnnotationStore ARN.
+ */
+export interface OmicsAnnotationStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnnotationStoreName component. */
+	readonly annotationStoreName: string;
+}
+
+/**
+ * Properties for building a AnnotationStoreVersion ARN.
+ */
+export interface OmicsAnnotationStoreVersionArnProps {
+	/** The AnnotationStoreName component of the ARN. */
+	readonly annotationStoreName: string;
+	/** The AnnotationStoreVersionName component of the ARN. */
+	readonly annotationStoreVersionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AnnotationStoreVersion ARN.
+ */
+export interface OmicsAnnotationStoreVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnnotationStoreName component. */
+	readonly annotationStoreName: string;
+	/** The AnnotationStoreVersionName component. */
+	readonly annotationStoreVersionName: string;
+}
+
+/**
+ * Properties for building a TaskResource ARN.
+ */
+export interface OmicsTaskResourceArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TaskResource ARN.
+ */
+export interface OmicsTaskResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a VariantStore ARN.
+ */
+export interface OmicsVariantStoreArnProps {
+	/** The VariantStoreName component of the ARN. */
+	readonly variantStoreName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VariantStore ARN.
+ */
+export interface OmicsVariantStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VariantStoreName component. */
+	readonly variantStoreName: string;
+}
+
+/**
+ * Properties for building a WorkflowVersion ARN.
+ */
+export interface OmicsWorkflowVersionArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** The VersionName component of the ARN. */
+	readonly versionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a WorkflowVersion ARN.
+ */
+export interface OmicsWorkflowVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+	/** The VersionName component. */
+	readonly versionName: string;
+}
+
+/**
+ * Properties for building a configuration ARN.
+ */
+export interface OmicsConfigurationArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration ARN.
+ */
+export interface OmicsConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+/**
+ * Properties for building a readSet ARN.
+ */
+export interface OmicsReadSetArnProps {
+	/** The SequenceStoreId component of the ARN. */
+	readonly sequenceStoreId: string;
+	/** The ReadSetId component of the ARN. */
+	readonly readSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a readSet ARN.
+ */
+export interface OmicsReadSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SequenceStoreId component. */
+	readonly sequenceStoreId: string;
+	/** The ReadSetId component. */
+	readonly readSetId: string;
+}
+
+/**
+ * Properties for building a reference ARN.
+ */
+export interface OmicsReferenceArnProps {
+	/** The ReferenceStoreId component of the ARN. */
+	readonly referenceStoreId: string;
+	/** The ReferenceId component of the ARN. */
+	readonly referenceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reference ARN.
+ */
+export interface OmicsReferenceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReferenceStoreId component. */
+	readonly referenceStoreId: string;
+	/** The ReferenceId component. */
+	readonly referenceId: string;
+}
+
+/**
+ * Properties for building a referenceStore ARN.
+ */
+export interface OmicsReferenceStoreArnProps {
+	/** The ReferenceStoreId component of the ARN. */
+	readonly referenceStoreId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a referenceStore ARN.
+ */
+export interface OmicsReferenceStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReferenceStoreId component. */
+	readonly referenceStoreId: string;
+}
+
+/**
+ * Properties for building a run ARN.
+ */
+export interface OmicsRunArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a run ARN.
+ */
+export interface OmicsRunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a runBatch ARN.
+ */
+export interface OmicsRunBatchArnProps {
+	/** The BatchId component of the ARN. */
+	readonly batchId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runBatch ARN.
+ */
+export interface OmicsRunBatchArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BatchId component. */
+	readonly batchId: string;
+}
+
+/**
+ * Properties for building a runCache ARN.
+ */
+export interface OmicsRunCacheArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runCache ARN.
+ */
+export interface OmicsRunCacheArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a runGroup ARN.
+ */
+export interface OmicsRunGroupArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a runGroup ARN.
+ */
+export interface OmicsRunGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a sequenceStore ARN.
+ */
+export interface OmicsSequenceStoreArnProps {
+	/** The SequenceStoreId component of the ARN. */
+	readonly sequenceStoreId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sequenceStore ARN.
+ */
+export interface OmicsSequenceStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SequenceStoreId component. */
+	readonly sequenceStoreId: string;
+}
+
+/**
+ * Properties for building a workflow ARN.
+ */
+export interface OmicsWorkflowArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workflow ARN.
+ */
+export interface OmicsWorkflowArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const AnnotationStoreArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):annotationStore\/(?<annotationStoreName>[^:/?]+)$/;
+const AnnotationStoreVersionArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):annotationStore\/(?<annotationStoreName>[^:/?]+)\/version\/(?<annotationStoreVersionName>[^:/?]+)$/;
+const TaskResourceArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):task\/(?<id>[^:/?]+)$/;
+const VariantStoreArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):variantStore\/(?<variantStoreName>[^:/?]+)$/;
+const WorkflowVersionArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):workflow\/(?<id>[^:/?]+)\/version\/(?<versionName>[^:/?]+)$/;
+const ConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):configuration\/(?<name>[^:/?]+)$/;
+const ReadSetArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):sequenceStore\/(?<sequenceStoreId>[^:/?]+)\/readSet\/(?<readSetId>[^:/?]+)$/;
+const ReferenceArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):referenceStore\/(?<referenceStoreId>[^:/?]+)\/reference\/(?<referenceId>[^:/?]+)$/;
+const ReferenceStoreArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):referenceStore\/(?<referenceStoreId>[^:/?]+)$/;
+const RunArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):run\/(?<id>[^:/?]+)$/;
+const RunBatchArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runBatch\/(?<batchId>[^:/?]+)$/;
+const RunCacheArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runCache\/(?<id>[^:/?]+)$/;
+const RunGroupArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):runGroup\/(?<id>[^:/?]+)$/;
+const SequenceStoreArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):sequenceStore\/(?<sequenceStoreId>[^:/?]+)$/;
+const WorkflowArnRegex =
+	/^arn:(?<partition>[^:]+):omics:(?<region>[^:]*):(?<account>[^:]*):workflow\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for omics resources.
@@ -417,16 +834,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the AnnotationStore resource.
 	 */
-	static annotationStore(props: {
-		/** The AnnotationStoreName component of the ARN. */
-		readonly annotationStoreName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static annotationStore(props: OmicsAnnotationStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:annotationStore/${props.annotationStoreName}`;
 	}
 
@@ -441,12 +849,9 @@ export class OmicsResources {
 	 * Parses a AnnotationStore ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnnotationStoreArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		annotationStoreName: string;
-	} {
+	static parseAnnotationStoreArn(
+		arn: string,
+	): OmicsAnnotationStoreArnComponents {
 		const match = AnnotationStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AnnotationStore ARN: ${arn}`);
@@ -462,18 +867,9 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the AnnotationStoreVersion resource.
 	 */
-	static annotationStoreVersion(props: {
-		/** The AnnotationStoreName component of the ARN. */
-		readonly annotationStoreName: string;
-		/** The AnnotationStoreVersionName component of the ARN. */
-		readonly annotationStoreVersionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static annotationStoreVersion(
+		props: OmicsAnnotationStoreVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:annotationStore/${props.annotationStoreName}/version/${props.annotationStoreVersionName}`;
 	}
 
@@ -488,13 +884,9 @@ export class OmicsResources {
 	 * Parses a AnnotationStoreVersion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnnotationStoreVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		annotationStoreName: string;
-		annotationStoreVersionName: string;
-	} {
+	static parseAnnotationStoreVersionArn(
+		arn: string,
+	): OmicsAnnotationStoreVersionArnComponents {
 		const match = AnnotationStoreVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AnnotationStoreVersion ARN: ${arn}`);
@@ -511,16 +903,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the TaskResource resource.
 	 */
-	static taskResource(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static taskResource(props: OmicsTaskResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:task/${props.id}`;
 	}
 
@@ -535,12 +918,7 @@ export class OmicsResources {
 	 * Parses a TaskResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseTaskResourceArn(arn: string): OmicsTaskResourceArnComponents {
 		const match = TaskResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TaskResource ARN: ${arn}`);
@@ -556,16 +934,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the VariantStore resource.
 	 */
-	static variantStore(props: {
-		/** The VariantStoreName component of the ARN. */
-		readonly variantStoreName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static variantStore(props: OmicsVariantStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:variantStore/${props.variantStoreName}`;
 	}
 
@@ -580,12 +949,7 @@ export class OmicsResources {
 	 * Parses a VariantStore ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVariantStoreArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		variantStoreName: string;
-	} {
+	static parseVariantStoreArn(arn: string): OmicsVariantStoreArnComponents {
 		const match = VariantStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VariantStore ARN: ${arn}`);
@@ -601,18 +965,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the WorkflowVersion resource.
 	 */
-	static workflowVersion(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** The VersionName component of the ARN. */
-		readonly versionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workflowVersion(props: OmicsWorkflowVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:workflow/${props.id}/version/${props.versionName}`;
 	}
 
@@ -627,13 +980,9 @@ export class OmicsResources {
 	 * Parses a WorkflowVersion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkflowVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-		versionName: string;
-	} {
+	static parseWorkflowVersionArn(
+		arn: string,
+	): OmicsWorkflowVersionArnComponents {
 		const match = WorkflowVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid WorkflowVersion ARN: ${arn}`);
@@ -650,16 +999,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the configuration resource.
 	 */
-	static configuration(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuration(props: OmicsConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:configuration/${props.name}`;
 	}
 
@@ -674,12 +1014,7 @@ export class OmicsResources {
 	 * Parses a configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseConfigurationArn(arn: string): OmicsConfigurationArnComponents {
 		const match = ConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration ARN: ${arn}`);
@@ -695,18 +1030,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the readSet resource.
 	 */
-	static readSet(props: {
-		/** The SequenceStoreId component of the ARN. */
-		readonly sequenceStoreId: string;
-		/** The ReadSetId component of the ARN. */
-		readonly readSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static readSet(props: OmicsReadSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:sequenceStore/${props.sequenceStoreId}/readSet/${props.readSetId}`;
 	}
 
@@ -721,13 +1045,7 @@ export class OmicsResources {
 	 * Parses a readSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReadSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sequenceStoreId: string;
-		readSetId: string;
-	} {
+	static parseReadSetArn(arn: string): OmicsReadSetArnComponents {
 		const match = ReadSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid readSet ARN: ${arn}`);
@@ -744,18 +1062,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the reference resource.
 	 */
-	static reference(props: {
-		/** The ReferenceStoreId component of the ARN. */
-		readonly referenceStoreId: string;
-		/** The ReferenceId component of the ARN. */
-		readonly referenceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reference(props: OmicsReferenceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:referenceStore/${props.referenceStoreId}/reference/${props.referenceId}`;
 	}
 
@@ -770,13 +1077,7 @@ export class OmicsResources {
 	 * Parses a reference ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReferenceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		referenceStoreId: string;
-		referenceId: string;
-	} {
+	static parseReferenceArn(arn: string): OmicsReferenceArnComponents {
 		const match = ReferenceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reference ARN: ${arn}`);
@@ -793,16 +1094,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the referenceStore resource.
 	 */
-	static referenceStore(props: {
-		/** The ReferenceStoreId component of the ARN. */
-		readonly referenceStoreId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static referenceStore(props: OmicsReferenceStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:referenceStore/${props.referenceStoreId}`;
 	}
 
@@ -817,12 +1109,7 @@ export class OmicsResources {
 	 * Parses a referenceStore ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReferenceStoreArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		referenceStoreId: string;
-	} {
+	static parseReferenceStoreArn(arn: string): OmicsReferenceStoreArnComponents {
 		const match = ReferenceStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid referenceStore ARN: ${arn}`);
@@ -838,16 +1125,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the run resource.
 	 */
-	static run(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static run(props: OmicsRunArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:run/${props.id}`;
 	}
 
@@ -862,12 +1140,7 @@ export class OmicsResources {
 	 * Parses a run ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRunArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseRunArn(arn: string): OmicsRunArnComponents {
 		const match = RunArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid run ARN: ${arn}`);
@@ -883,16 +1156,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the runBatch resource.
 	 */
-	static runBatch(props: {
-		/** The BatchId component of the ARN. */
-		readonly batchId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static runBatch(props: OmicsRunBatchArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:runBatch/${props.batchId}`;
 	}
 
@@ -907,12 +1171,7 @@ export class OmicsResources {
 	 * Parses a runBatch ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRunBatchArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		batchId: string;
-	} {
+	static parseRunBatchArn(arn: string): OmicsRunBatchArnComponents {
 		const match = RunBatchArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid runBatch ARN: ${arn}`);
@@ -928,16 +1187,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the runCache resource.
 	 */
-	static runCache(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static runCache(props: OmicsRunCacheArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:runCache/${props.id}`;
 	}
 
@@ -952,12 +1202,7 @@ export class OmicsResources {
 	 * Parses a runCache ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRunCacheArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseRunCacheArn(arn: string): OmicsRunCacheArnComponents {
 		const match = RunCacheArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid runCache ARN: ${arn}`);
@@ -973,16 +1218,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the runGroup resource.
 	 */
-	static runGroup(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static runGroup(props: OmicsRunGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:runGroup/${props.id}`;
 	}
 
@@ -997,12 +1233,7 @@ export class OmicsResources {
 	 * Parses a runGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRunGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseRunGroupArn(arn: string): OmicsRunGroupArnComponents {
 		const match = RunGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid runGroup ARN: ${arn}`);
@@ -1018,16 +1249,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the sequenceStore resource.
 	 */
-	static sequenceStore(props: {
-		/** The SequenceStoreId component of the ARN. */
-		readonly sequenceStoreId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sequenceStore(props: OmicsSequenceStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:sequenceStore/${props.sequenceStoreId}`;
 	}
 
@@ -1042,12 +1264,7 @@ export class OmicsResources {
 	 * Parses a sequenceStore ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSequenceStoreArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sequenceStoreId: string;
-	} {
+	static parseSequenceStoreArn(arn: string): OmicsSequenceStoreArnComponents {
 		const match = SequenceStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sequenceStore ARN: ${arn}`);
@@ -1063,16 +1280,7 @@ export class OmicsResources {
 	/**
 	 * Builds an ARN for the workflow resource.
 	 */
-	static workflow(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workflow(props: OmicsWorkflowArnProps): string {
 		return `arn:${props.partition ?? "aws"}:omics:${props.region ?? "*"}:${props.account ?? "*"}:workflow/${props.id}`;
 	}
 
@@ -1087,12 +1295,7 @@ export class OmicsResources {
 	 * Parses a workflow ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkflowArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-	} {
+	static parseWorkflowArn(arn: string): OmicsWorkflowArnComponents {
 		const match = WorkflowArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workflow ARN: ${arn}`);
@@ -1111,43 +1314,41 @@ export class OmicsResources {
  */
 export class OmicsOperations {
 	/** IAM actions required for the AbortMultipartReadSetUpload API call. */
-	static readonly ABORT_MULTIPART_READ_SET_UPLOAD: string[] = [
+	static readonly AbortMultipartReadSetUpload: string[] = [
 		"omics:AbortMultipartReadSetUpload",
 	];
 	/** IAM actions required for the AcceptShare API call. */
-	static readonly ACCEPT_SHARE: string[] = ["omics:AcceptShare"];
+	static readonly AcceptShare: string[] = ["omics:AcceptShare"];
 	/** IAM actions required for the BatchDeleteReadSet API call. */
-	static readonly BATCH_DELETE_READ_SET: string[] = [
-		"omics:BatchDeleteReadSet",
-	];
+	static readonly BatchDeleteReadSet: string[] = ["omics:BatchDeleteReadSet"];
 	/** IAM actions required for the CancelAnnotationImportJob API call. */
-	static readonly CANCEL_ANNOTATION_IMPORT_JOB: string[] = [
+	static readonly CancelAnnotationImportJob: string[] = [
 		"omics:CancelAnnotationImportJob",
 	];
 	/** IAM actions required for the CancelRun API call. */
-	static readonly CANCEL_RUN: string[] = ["omics:CancelRun"];
+	static readonly CancelRun: string[] = ["omics:CancelRun"];
 	/** IAM actions required for the CancelRunBatch API call. */
-	static readonly CANCEL_RUN_BATCH: string[] = ["omics:CancelRunBatch"];
+	static readonly CancelRunBatch: string[] = ["omics:CancelRunBatch"];
 	/** IAM actions required for the CancelVariantImportJob API call. */
-	static readonly CANCEL_VARIANT_IMPORT_JOB: string[] = [
+	static readonly CancelVariantImportJob: string[] = [
 		"omics:CancelVariantImportJob",
 	];
 	/** IAM actions required for the CompleteMultipartReadSetUpload API call. */
-	static readonly COMPLETE_MULTIPART_READ_SET_UPLOAD: string[] = [
+	static readonly CompleteMultipartReadSetUpload: string[] = [
 		"omics:CompleteMultipartReadSetUpload",
 	];
 	/** IAM actions required for the CreateAnnotationStore API call. */
-	static readonly CREATE_ANNOTATION_STORE: string[] = [
+	static readonly CreateAnnotationStore: string[] = [
 		"omics:CreateAnnotationStore",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateAnnotationStoreVersion API call. */
-	static readonly CREATE_ANNOTATION_STORE_VERSION: string[] = [
+	static readonly CreateAnnotationStoreVersion: string[] = [
 		"omics:CreateAnnotationStoreVersion",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguration API call. */
-	static readonly CREATE_CONFIGURATION: string[] = [
+	static readonly CreateConfiguration: string[] = [
 		"omics:CreateConfiguration",
 		"ec2:DescribeSecurityGroups",
 		"ec2:DescribeSubnets",
@@ -1156,320 +1357,308 @@ export class OmicsOperations {
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateMultipartReadSetUpload API call. */
-	static readonly CREATE_MULTIPART_READ_SET_UPLOAD: string[] = [
+	static readonly CreateMultipartReadSetUpload: string[] = [
 		"omics:CreateMultipartReadSetUpload",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateReferenceStore API call. */
-	static readonly CREATE_REFERENCE_STORE: string[] = [
+	static readonly CreateReferenceStore: string[] = [
 		"omics:CreateReferenceStore",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateRunCache API call. */
-	static readonly CREATE_RUN_CACHE: string[] = [
+	static readonly CreateRunCache: string[] = [
 		"omics:CreateRunCache",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateRunGroup API call. */
-	static readonly CREATE_RUN_GROUP: string[] = [
+	static readonly CreateRunGroup: string[] = [
 		"omics:CreateRunGroup",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateSequenceStore API call. */
-	static readonly CREATE_SEQUENCE_STORE: string[] = [
+	static readonly CreateSequenceStore: string[] = [
 		"omics:CreateSequenceStore",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateShare API call. */
-	static readonly CREATE_SHARE: string[] = ["omics:CreateShare"];
+	static readonly CreateShare: string[] = ["omics:CreateShare"];
 	/** IAM actions required for the CreateVariantStore API call. */
-	static readonly CREATE_VARIANT_STORE: string[] = [
+	static readonly CreateVariantStore: string[] = [
 		"omics:CreateVariantStore",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateWorkflow API call. */
-	static readonly CREATE_WORKFLOW: string[] = [
+	static readonly CreateWorkflow: string[] = [
 		"omics:CreateWorkflow",
 		"codeconnections:PassConnection",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the CreateWorkflowVersion API call. */
-	static readonly CREATE_WORKFLOW_VERSION: string[] = [
+	static readonly CreateWorkflowVersion: string[] = [
 		"omics:CreateWorkflowVersion",
 		"codeconnections:PassConnection",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the DeleteAnnotationStore API call. */
-	static readonly DELETE_ANNOTATION_STORE: string[] = [
+	static readonly DeleteAnnotationStore: string[] = [
 		"omics:DeleteAnnotationStore",
 	];
 	/** IAM actions required for the DeleteAnnotationStoreVersions API call. */
-	static readonly DELETE_ANNOTATION_STORE_VERSIONS: string[] = [
+	static readonly DeleteAnnotationStoreVersions: string[] = [
 		"omics:DeleteAnnotationStoreVersions",
 	];
 	/** IAM actions required for the DeleteBatch API call. */
-	static readonly DELETE_BATCH: string[] = ["omics:DeleteBatch"];
+	static readonly DeleteBatch: string[] = ["omics:DeleteBatch"];
 	/** IAM actions required for the DeleteConfiguration API call. */
-	static readonly DELETE_CONFIGURATION: string[] = [
-		"omics:DeleteConfiguration",
-	];
+	static readonly DeleteConfiguration: string[] = ["omics:DeleteConfiguration"];
 	/** IAM actions required for the DeleteReference API call. */
-	static readonly DELETE_REFERENCE: string[] = ["omics:DeleteReference"];
+	static readonly DeleteReference: string[] = ["omics:DeleteReference"];
 	/** IAM actions required for the DeleteReferenceStore API call. */
-	static readonly DELETE_REFERENCE_STORE: string[] = [
+	static readonly DeleteReferenceStore: string[] = [
 		"omics:DeleteReferenceStore",
 	];
 	/** IAM actions required for the DeleteRun API call. */
-	static readonly DELETE_RUN: string[] = ["omics:DeleteRun"];
+	static readonly DeleteRun: string[] = ["omics:DeleteRun"];
 	/** IAM actions required for the DeleteRunBatch API call. */
-	static readonly DELETE_RUN_BATCH: string[] = ["omics:DeleteRunBatch"];
+	static readonly DeleteRunBatch: string[] = ["omics:DeleteRunBatch"];
 	/** IAM actions required for the DeleteRunCache API call. */
-	static readonly DELETE_RUN_CACHE: string[] = ["omics:DeleteRunCache"];
+	static readonly DeleteRunCache: string[] = ["omics:DeleteRunCache"];
 	/** IAM actions required for the DeleteRunGroup API call. */
-	static readonly DELETE_RUN_GROUP: string[] = ["omics:DeleteRunGroup"];
+	static readonly DeleteRunGroup: string[] = ["omics:DeleteRunGroup"];
 	/** IAM actions required for the DeleteS3AccessPolicy API call. */
-	static readonly DELETE_S3_ACCESS_POLICY: string[] = [
+	static readonly DeleteS3AccessPolicy: string[] = [
 		"omics:DeleteS3AccessPolicy",
 	];
 	/** IAM actions required for the DeleteSequenceStore API call. */
-	static readonly DELETE_SEQUENCE_STORE: string[] = [
-		"omics:DeleteSequenceStore",
-	];
+	static readonly DeleteSequenceStore: string[] = ["omics:DeleteSequenceStore"];
 	/** IAM actions required for the DeleteShare API call. */
-	static readonly DELETE_SHARE: string[] = ["omics:DeleteShare"];
+	static readonly DeleteShare: string[] = ["omics:DeleteShare"];
 	/** IAM actions required for the DeleteVariantStore API call. */
-	static readonly DELETE_VARIANT_STORE: string[] = ["omics:DeleteVariantStore"];
+	static readonly DeleteVariantStore: string[] = ["omics:DeleteVariantStore"];
 	/** IAM actions required for the DeleteWorkflow API call. */
-	static readonly DELETE_WORKFLOW: string[] = ["omics:DeleteWorkflow"];
+	static readonly DeleteWorkflow: string[] = ["omics:DeleteWorkflow"];
 	/** IAM actions required for the DeleteWorkflowVersion API call. */
-	static readonly DELETE_WORKFLOW_VERSION: string[] = [
+	static readonly DeleteWorkflowVersion: string[] = [
 		"omics:DeleteWorkflowVersion",
 	];
 	/** IAM actions required for the GetAnnotationImportJob API call. */
-	static readonly GET_ANNOTATION_IMPORT_JOB: string[] = [
+	static readonly opGetAnnotationImportJob: string[] = [
 		"omics:GetAnnotationImportJob",
 	];
 	/** IAM actions required for the GetAnnotationStore API call. */
-	static readonly GET_ANNOTATION_STORE: string[] = ["omics:GetAnnotationStore"];
+	static readonly opGetAnnotationStore: string[] = ["omics:GetAnnotationStore"];
 	/** IAM actions required for the GetAnnotationStoreVersion API call. */
-	static readonly GET_ANNOTATION_STORE_VERSION: string[] = [
+	static readonly opGetAnnotationStoreVersion: string[] = [
 		"omics:GetAnnotationStoreVersion",
 	];
 	/** IAM actions required for the GetBatch API call. */
-	static readonly GET_BATCH: string[] = ["omics:GetBatch"];
+	static readonly opGetBatch: string[] = ["omics:GetBatch"];
 	/** IAM actions required for the GetConfiguration API call. */
-	static readonly GET_CONFIGURATION: string[] = ["omics:GetConfiguration"];
+	static readonly opGetConfiguration: string[] = ["omics:GetConfiguration"];
 	/** IAM actions required for the GetReadSet API call. */
-	static readonly GET_READ_SET: string[] = ["omics:GetReadSet"];
+	static readonly opGetReadSet: string[] = ["omics:GetReadSet"];
 	/** IAM actions required for the GetReadSetActivationJob API call. */
-	static readonly GET_READ_SET_ACTIVATION_JOB: string[] = [
+	static readonly opGetReadSetActivationJob: string[] = [
 		"omics:GetReadSetActivationJob",
 	];
 	/** IAM actions required for the GetReadSetExportJob API call. */
-	static readonly GET_READ_SET_EXPORT_JOB: string[] = [
+	static readonly opGetReadSetExportJob: string[] = [
 		"omics:GetReadSetExportJob",
 	];
 	/** IAM actions required for the GetReadSetImportJob API call. */
-	static readonly GET_READ_SET_IMPORT_JOB: string[] = [
+	static readonly opGetReadSetImportJob: string[] = [
 		"omics:GetReadSetImportJob",
 	];
 	/** IAM actions required for the GetReadSetMetadata API call. */
-	static readonly GET_READ_SET_METADATA: string[] = [
-		"omics:GetReadSetMetadata",
-	];
+	static readonly opGetReadSetMetadata: string[] = ["omics:GetReadSetMetadata"];
 	/** IAM actions required for the GetReference API call. */
-	static readonly GET_REFERENCE: string[] = ["omics:GetReference"];
+	static readonly opGetReference: string[] = ["omics:GetReference"];
 	/** IAM actions required for the GetReferenceImportJob API call. */
-	static readonly GET_REFERENCE_IMPORT_JOB: string[] = [
+	static readonly opGetReferenceImportJob: string[] = [
 		"omics:GetReferenceImportJob",
 	];
 	/** IAM actions required for the GetReferenceMetadata API call. */
-	static readonly GET_REFERENCE_METADATA: string[] = [
+	static readonly opGetReferenceMetadata: string[] = [
 		"omics:GetReferenceMetadata",
 	];
 	/** IAM actions required for the GetReferenceStore API call. */
-	static readonly GET_REFERENCE_STORE: string[] = ["omics:GetReferenceStore"];
+	static readonly opGetReferenceStore: string[] = ["omics:GetReferenceStore"];
 	/** IAM actions required for the GetRun API call. */
-	static readonly GET_RUN: string[] = ["omics:GetRun"];
+	static readonly opGetRun: string[] = ["omics:GetRun"];
 	/** IAM actions required for the GetRunCache API call. */
-	static readonly GET_RUN_CACHE: string[] = ["omics:GetRunCache"];
+	static readonly opGetRunCache: string[] = ["omics:GetRunCache"];
 	/** IAM actions required for the GetRunGroup API call. */
-	static readonly GET_RUN_GROUP: string[] = ["omics:GetRunGroup"];
+	static readonly opGetRunGroup: string[] = ["omics:GetRunGroup"];
 	/** IAM actions required for the GetRunTask API call. */
-	static readonly GET_RUN_TASK: string[] = ["omics:GetRunTask"];
+	static readonly opGetRunTask: string[] = ["omics:GetRunTask"];
 	/** IAM actions required for the GetS3AccessPolicy API call. */
-	static readonly GET_S3_ACCESS_POLICY: string[] = ["omics:GetS3AccessPolicy"];
+	static readonly opGetS3AccessPolicy: string[] = ["omics:GetS3AccessPolicy"];
 	/** IAM actions required for the GetSequenceStore API call. */
-	static readonly GET_SEQUENCE_STORE: string[] = ["omics:GetSequenceStore"];
+	static readonly opGetSequenceStore: string[] = ["omics:GetSequenceStore"];
 	/** IAM actions required for the GetShare API call. */
-	static readonly GET_SHARE: string[] = ["omics:GetShare"];
+	static readonly opGetShare: string[] = ["omics:GetShare"];
 	/** IAM actions required for the GetVariantImportJob API call. */
-	static readonly GET_VARIANT_IMPORT_JOB: string[] = [
+	static readonly opGetVariantImportJob: string[] = [
 		"omics:GetVariantImportJob",
 	];
 	/** IAM actions required for the GetVariantStore API call. */
-	static readonly GET_VARIANT_STORE: string[] = ["omics:GetVariantStore"];
+	static readonly opGetVariantStore: string[] = ["omics:GetVariantStore"];
 	/** IAM actions required for the GetWorkflow API call. */
-	static readonly GET_WORKFLOW: string[] = ["omics:GetWorkflow"];
+	static readonly opGetWorkflow: string[] = ["omics:GetWorkflow"];
 	/** IAM actions required for the GetWorkflowVersion API call. */
-	static readonly GET_WORKFLOW_VERSION: string[] = ["omics:GetWorkflowVersion"];
+	static readonly opGetWorkflowVersion: string[] = ["omics:GetWorkflowVersion"];
 	/** IAM actions required for the ListAnnotationImportJobs API call. */
-	static readonly LIST_ANNOTATION_IMPORT_JOBS: string[] = [
+	static readonly ListAnnotationImportJobs: string[] = [
 		"omics:ListAnnotationImportJobs",
 	];
 	/** IAM actions required for the ListAnnotationStoreVersions API call. */
-	static readonly LIST_ANNOTATION_STORE_VERSIONS: string[] = [
+	static readonly ListAnnotationStoreVersions: string[] = [
 		"omics:ListAnnotationStoreVersions",
 	];
 	/** IAM actions required for the ListAnnotationStores API call. */
-	static readonly LIST_ANNOTATION_STORES: string[] = [
+	static readonly ListAnnotationStores: string[] = [
 		"omics:ListAnnotationStores",
 	];
 	/** IAM actions required for the ListBatch API call. */
-	static readonly LIST_BATCH: string[] = ["omics:ListBatch"];
+	static readonly ListBatch: string[] = ["omics:ListBatch"];
 	/** IAM actions required for the ListConfigurations API call. */
-	static readonly LIST_CONFIGURATIONS: string[] = ["omics:ListConfigurations"];
+	static readonly ListConfigurations: string[] = ["omics:ListConfigurations"];
 	/** IAM actions required for the ListMultipartReadSetUploads API call. */
-	static readonly LIST_MULTIPART_READ_SET_UPLOADS: string[] = [
+	static readonly ListMultipartReadSetUploads: string[] = [
 		"omics:ListMultipartReadSetUploads",
 	];
 	/** IAM actions required for the ListReadSetActivationJobs API call. */
-	static readonly LIST_READ_SET_ACTIVATION_JOBS: string[] = [
+	static readonly ListReadSetActivationJobs: string[] = [
 		"omics:ListReadSetActivationJobs",
 	];
 	/** IAM actions required for the ListReadSetExportJobs API call. */
-	static readonly LIST_READ_SET_EXPORT_JOBS: string[] = [
+	static readonly ListReadSetExportJobs: string[] = [
 		"omics:ListReadSetExportJobs",
 	];
 	/** IAM actions required for the ListReadSetImportJobs API call. */
-	static readonly LIST_READ_SET_IMPORT_JOBS: string[] = [
+	static readonly ListReadSetImportJobs: string[] = [
 		"omics:ListReadSetImportJobs",
 	];
 	/** IAM actions required for the ListReadSetUploadParts API call. */
-	static readonly LIST_READ_SET_UPLOAD_PARTS: string[] = [
+	static readonly ListReadSetUploadParts: string[] = [
 		"omics:ListReadSetUploadParts",
 	];
 	/** IAM actions required for the ListReadSets API call. */
-	static readonly LIST_READ_SETS: string[] = ["omics:ListReadSets"];
+	static readonly ListReadSets: string[] = ["omics:ListReadSets"];
 	/** IAM actions required for the ListReferenceImportJobs API call. */
-	static readonly LIST_REFERENCE_IMPORT_JOBS: string[] = [
+	static readonly ListReferenceImportJobs: string[] = [
 		"omics:ListReferenceImportJobs",
 	];
 	/** IAM actions required for the ListReferenceStores API call. */
-	static readonly LIST_REFERENCE_STORES: string[] = [
-		"omics:ListReferenceStores",
-	];
+	static readonly ListReferenceStores: string[] = ["omics:ListReferenceStores"];
 	/** IAM actions required for the ListReferences API call. */
-	static readonly LIST_REFERENCES: string[] = ["omics:ListReferences"];
+	static readonly ListReferences: string[] = ["omics:ListReferences"];
 	/** IAM actions required for the ListRunCaches API call. */
-	static readonly LIST_RUN_CACHES: string[] = ["omics:ListRunCaches"];
+	static readonly ListRunCaches: string[] = ["omics:ListRunCaches"];
 	/** IAM actions required for the ListRunGroups API call. */
-	static readonly LIST_RUN_GROUPS: string[] = ["omics:ListRunGroups"];
+	static readonly ListRunGroups: string[] = ["omics:ListRunGroups"];
 	/** IAM actions required for the ListRunTasks API call. */
-	static readonly LIST_RUN_TASKS: string[] = ["omics:ListRunTasks"];
+	static readonly ListRunTasks: string[] = ["omics:ListRunTasks"];
 	/** IAM actions required for the ListRuns API call. */
-	static readonly LIST_RUNS: string[] = ["omics:ListRuns"];
+	static readonly ListRuns: string[] = ["omics:ListRuns"];
 	/** IAM actions required for the ListRunsInBatch API call. */
-	static readonly LIST_RUNS_IN_BATCH: string[] = ["omics:ListRunsInBatch"];
+	static readonly ListRunsInBatch: string[] = ["omics:ListRunsInBatch"];
 	/** IAM actions required for the ListSequenceStores API call. */
-	static readonly LIST_SEQUENCE_STORES: string[] = ["omics:ListSequenceStores"];
+	static readonly ListSequenceStores: string[] = ["omics:ListSequenceStores"];
 	/** IAM actions required for the ListShares API call. */
-	static readonly LIST_SHARES: string[] = ["omics:ListShares"];
+	static readonly ListShares: string[] = ["omics:ListShares"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"omics:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["omics:ListTagsForResource"];
 	/** IAM actions required for the ListVariantImportJobs API call. */
-	static readonly LIST_VARIANT_IMPORT_JOBS: string[] = [
+	static readonly ListVariantImportJobs: string[] = [
 		"omics:ListVariantImportJobs",
 	];
 	/** IAM actions required for the ListVariantStores API call. */
-	static readonly LIST_VARIANT_STORES: string[] = ["omics:ListVariantStores"];
+	static readonly ListVariantStores: string[] = ["omics:ListVariantStores"];
 	/** IAM actions required for the ListWorkflowVersions API call. */
-	static readonly LIST_WORKFLOW_VERSIONS: string[] = [
+	static readonly ListWorkflowVersions: string[] = [
 		"omics:ListWorkflowVersions",
 	];
 	/** IAM actions required for the ListWorkflows API call. */
-	static readonly LIST_WORKFLOWS: string[] = ["omics:ListWorkflows"];
+	static readonly ListWorkflows: string[] = ["omics:ListWorkflows"];
 	/** IAM actions required for the PutS3AccessPolicy API call. */
-	static readonly PUT_S3_ACCESS_POLICY: string[] = ["omics:PutS3AccessPolicy"];
+	static readonly PutS3AccessPolicy: string[] = ["omics:PutS3AccessPolicy"];
 	/** IAM actions required for the StartAnnotationImportJob API call. */
-	static readonly START_ANNOTATION_IMPORT_JOB: string[] = [
+	static readonly StartAnnotationImportJob: string[] = [
 		"iam:PassRole",
 		"omics:StartAnnotationImportJob",
 	];
 	/** IAM actions required for the StartReadSetActivationJob API call. */
-	static readonly START_READ_SET_ACTIVATION_JOB: string[] = [
+	static readonly StartReadSetActivationJob: string[] = [
 		"omics:StartReadSetActivationJob",
 	];
 	/** IAM actions required for the StartReadSetExportJob API call. */
-	static readonly START_READ_SET_EXPORT_JOB: string[] = [
+	static readonly StartReadSetExportJob: string[] = [
 		"iam:PassRole",
 		"omics:StartReadSetExportJob",
 	];
 	/** IAM actions required for the StartReadSetImportJob API call. */
-	static readonly START_READ_SET_IMPORT_JOB: string[] = [
+	static readonly StartReadSetImportJob: string[] = [
 		"iam:PassRole",
 		"omics:StartReadSetImportJob",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the StartReferenceImportJob API call. */
-	static readonly START_REFERENCE_IMPORT_JOB: string[] = [
+	static readonly StartReferenceImportJob: string[] = [
 		"iam:PassRole",
 		"omics:StartReferenceImportJob",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the StartRun API call. */
-	static readonly START_RUN: string[] = [
+	static readonly StartRun: string[] = [
 		"iam:PassRole",
 		"omics:StartRun",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the StartRunBatch API call. */
-	static readonly START_RUN_BATCH: string[] = [
+	static readonly StartRunBatch: string[] = [
 		"iam:PassRole",
 		"omics:StartRun",
 		"omics:StartRunBatch",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the StartVariantImportJob API call. */
-	static readonly START_VARIANT_IMPORT_JOB: string[] = [
+	static readonly StartVariantImportJob: string[] = [
 		"iam:PassRole",
 		"omics:StartVariantImportJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"omics:CreateRunGroup",
 		"omics:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["omics:UntagResource"];
+	static readonly UntagResource: string[] = ["omics:UntagResource"];
 	/** IAM actions required for the UpdateAnnotationStore API call. */
-	static readonly UPDATE_ANNOTATION_STORE: string[] = [
+	static readonly UpdateAnnotationStore: string[] = [
 		"omics:UpdateAnnotationStore",
 	];
 	/** IAM actions required for the UpdateAnnotationStoreVersion API call. */
-	static readonly UPDATE_ANNOTATION_STORE_VERSION: string[] = [
+	static readonly UpdateAnnotationStoreVersion: string[] = [
 		"omics:UpdateAnnotationStoreVersion",
 	];
 	/** IAM actions required for the UpdateRunCache API call. */
-	static readonly UPDATE_RUN_CACHE: string[] = ["omics:UpdateRunCache"];
+	static readonly UpdateRunCache: string[] = ["omics:UpdateRunCache"];
 	/** IAM actions required for the UpdateRunGroup API call. */
-	static readonly UPDATE_RUN_GROUP: string[] = ["omics:UpdateRunGroup"];
+	static readonly UpdateRunGroup: string[] = ["omics:UpdateRunGroup"];
 	/** IAM actions required for the UpdateSequenceStore API call. */
-	static readonly UPDATE_SEQUENCE_STORE: string[] = [
-		"omics:UpdateSequenceStore",
-	];
+	static readonly UpdateSequenceStore: string[] = ["omics:UpdateSequenceStore"];
 	/** IAM actions required for the UpdateVariantStore API call. */
-	static readonly UPDATE_VARIANT_STORE: string[] = ["omics:UpdateVariantStore"];
+	static readonly UpdateVariantStore: string[] = ["omics:UpdateVariantStore"];
 	/** IAM actions required for the UpdateWorkflow API call. */
-	static readonly UPDATE_WORKFLOW: string[] = ["omics:UpdateWorkflow"];
+	static readonly UpdateWorkflow: string[] = ["omics:UpdateWorkflow"];
 	/** IAM actions required for the UpdateWorkflowVersion API call. */
-	static readonly UPDATE_WORKFLOW_VERSION: string[] = [
+	static readonly UpdateWorkflowVersion: string[] = [
 		"omics:UpdateWorkflowVersion",
 	];
 	/** IAM actions required for the UploadReadSetPart API call. */
-	static readonly UPLOAD_READ_SET_PART: string[] = ["omics:UploadReadSetPart"];
+	static readonly UploadReadSetPart: string[] = ["omics:UploadReadSetPart"];
 }
 
 /**
@@ -1477,79 +1666,79 @@ export class OmicsOperations {
  */
 export class OmicsConditions {
 	/** Condition keys applicable to the CreateAnnotationStore action. */
-	static readonly CREATE_ANNOTATION_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateAnnotationStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAnnotationStoreVersion action. */
-	static readonly CREATE_ANNOTATION_STORE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateAnnotationStoreVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfiguration action. */
-	static readonly CREATE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateReferenceStore action. */
-	static readonly CREATE_REFERENCE_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateReferenceStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRunCache action. */
-	static readonly CREATE_RUN_CACHE_CONDITION_KEYS: string[] = [
+	static readonly CreateRunCacheConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRunGroup action. */
-	static readonly CREATE_RUN_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateRunGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSequenceStore action. */
-	static readonly CREATE_SEQUENCE_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateSequenceStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVariantStore action. */
-	static readonly CREATE_VARIANT_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreateVariantStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkflow action. */
-	static readonly CREATE_WORKFLOW_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkflowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorkflowVersion action. */
-	static readonly CREATE_WORKFLOW_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkflowVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartRun action. */
-	static readonly START_RUN_CONDITION_KEYS: string[] = [
+	static readonly StartRunConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartRunBatch action. */
-	static readonly START_RUN_BATCH_CONDITION_KEYS: string[] = [
+	static readonly StartRunBatchConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

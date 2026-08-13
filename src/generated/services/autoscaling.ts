@@ -13,266 +13,324 @@ export class AutoscalingActions {
 	static readonly SERVICE_PREFIX = "autoscaling";
 
 	/** [Write] autoscaling:AttachInstances */
-	static readonly ATTACH_INSTANCES = "autoscaling:AttachInstances";
+	static readonly AttachInstances = "autoscaling:AttachInstances";
 	/** [Write] autoscaling:AttachLoadBalancerTargetGroups */
-	static readonly ATTACH_LOAD_BALANCER_TARGET_GROUPS =
+	static readonly AttachLoadBalancerTargetGroups =
 		"autoscaling:AttachLoadBalancerTargetGroups";
 	/** [Write] autoscaling:AttachLoadBalancers */
-	static readonly ATTACH_LOAD_BALANCERS = "autoscaling:AttachLoadBalancers";
+	static readonly AttachLoadBalancers = "autoscaling:AttachLoadBalancers";
 	/** [Write] autoscaling:AttachTrafficSources */
-	static readonly ATTACH_TRAFFIC_SOURCES = "autoscaling:AttachTrafficSources";
+	static readonly AttachTrafficSources = "autoscaling:AttachTrafficSources";
 	/** [Write] autoscaling:BatchDeleteScheduledAction */
-	static readonly BATCH_DELETE_SCHEDULED_ACTION =
+	static readonly BatchDeleteScheduledAction =
 		"autoscaling:BatchDeleteScheduledAction";
 	/** [Write] autoscaling:BatchPutScheduledUpdateGroupAction */
-	static readonly BATCH_PUT_SCHEDULED_UPDATE_GROUP_ACTION =
+	static readonly BatchPutScheduledUpdateGroupAction =
 		"autoscaling:BatchPutScheduledUpdateGroupAction";
 	/** [Write] autoscaling:CancelInstanceRefresh */
-	static readonly CANCEL_INSTANCE_REFRESH = "autoscaling:CancelInstanceRefresh";
+	static readonly CancelInstanceRefresh = "autoscaling:CancelInstanceRefresh";
 	/** [Write] autoscaling:CompleteLifecycleAction */
-	static readonly COMPLETE_LIFECYCLE_ACTION =
+	static readonly CompleteLifecycleAction =
 		"autoscaling:CompleteLifecycleAction";
 	/** [Write] autoscaling:CreateAutoScalingGroup */
-	static readonly CREATE_AUTO_SCALING_GROUP =
-		"autoscaling:CreateAutoScalingGroup";
+	static readonly CreateAutoScalingGroup = "autoscaling:CreateAutoScalingGroup";
 	/** [Write] autoscaling:CreateLaunchConfiguration */
-	static readonly CREATE_LAUNCH_CONFIGURATION =
+	static readonly CreateLaunchConfiguration =
 		"autoscaling:CreateLaunchConfiguration";
 	/** [Tagging] autoscaling:CreateOrUpdateTags */
-	static readonly CREATE_OR_UPDATE_TAGS = "autoscaling:CreateOrUpdateTags";
+	static readonly CreateOrUpdateTags = "autoscaling:CreateOrUpdateTags";
 	/** [Write] autoscaling:DeleteAutoScalingGroup */
-	static readonly DELETE_AUTO_SCALING_GROUP =
-		"autoscaling:DeleteAutoScalingGroup";
+	static readonly DeleteAutoScalingGroup = "autoscaling:DeleteAutoScalingGroup";
 	/** [Write] autoscaling:DeleteLaunchConfiguration */
-	static readonly DELETE_LAUNCH_CONFIGURATION =
+	static readonly DeleteLaunchConfiguration =
 		"autoscaling:DeleteLaunchConfiguration";
 	/** [Write] autoscaling:DeleteLifecycleHook */
-	static readonly DELETE_LIFECYCLE_HOOK = "autoscaling:DeleteLifecycleHook";
+	static readonly DeleteLifecycleHook = "autoscaling:DeleteLifecycleHook";
 	/** [Write] autoscaling:DeleteNotificationConfiguration */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION =
+	static readonly DeleteNotificationConfiguration =
 		"autoscaling:DeleteNotificationConfiguration";
 	/** [Write] autoscaling:DeletePolicy */
-	static readonly DELETE_POLICY = "autoscaling:DeletePolicy";
+	static readonly DeletePolicy = "autoscaling:DeletePolicy";
 	/** [Write] autoscaling:DeleteScheduledAction */
-	static readonly DELETE_SCHEDULED_ACTION = "autoscaling:DeleteScheduledAction";
+	static readonly DeleteScheduledAction = "autoscaling:DeleteScheduledAction";
 	/** [Tagging] autoscaling:DeleteTags */
-	static readonly DELETE_TAGS = "autoscaling:DeleteTags";
+	static readonly DeleteTags = "autoscaling:DeleteTags";
 	/** [Write] autoscaling:DeleteWarmPool */
-	static readonly DELETE_WARM_POOL = "autoscaling:DeleteWarmPool";
+	static readonly DeleteWarmPool = "autoscaling:DeleteWarmPool";
 	/** [List] autoscaling:DescribeAccountLimits */
-	static readonly DESCRIBE_ACCOUNT_LIMITS = "autoscaling:DescribeAccountLimits";
+	static readonly DescribeAccountLimits = "autoscaling:DescribeAccountLimits";
 	/** [List] autoscaling:DescribeAccountSettings */
-	static readonly DESCRIBE_ACCOUNT_SETTINGS =
+	static readonly DescribeAccountSettings =
 		"autoscaling:DescribeAccountSettings";
 	/** [List] autoscaling:DescribeAdjustmentTypes */
-	static readonly DESCRIBE_ADJUSTMENT_TYPES =
+	static readonly DescribeAdjustmentTypes =
 		"autoscaling:DescribeAdjustmentTypes";
 	/** [List] autoscaling:DescribeAutoScalingGroups */
-	static readonly DESCRIBE_AUTO_SCALING_GROUPS =
+	static readonly DescribeAutoScalingGroups =
 		"autoscaling:DescribeAutoScalingGroups";
 	/** [List] autoscaling:DescribeAutoScalingInstances */
-	static readonly DESCRIBE_AUTO_SCALING_INSTANCES =
+	static readonly DescribeAutoScalingInstances =
 		"autoscaling:DescribeAutoScalingInstances";
 	/** [List] autoscaling:DescribeAutoScalingNotificationTypes */
-	static readonly DESCRIBE_AUTO_SCALING_NOTIFICATION_TYPES =
+	static readonly DescribeAutoScalingNotificationTypes =
 		"autoscaling:DescribeAutoScalingNotificationTypes";
 	/** [List] autoscaling:DescribeInstanceRefreshes */
-	static readonly DESCRIBE_INSTANCE_REFRESHES =
+	static readonly DescribeInstanceRefreshes =
 		"autoscaling:DescribeInstanceRefreshes";
 	/** [List] autoscaling:DescribeLaunchConfigurations */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATIONS =
+	static readonly DescribeLaunchConfigurations =
 		"autoscaling:DescribeLaunchConfigurations";
 	/** [List] autoscaling:DescribeLifecycleHookTypes */
-	static readonly DESCRIBE_LIFECYCLE_HOOK_TYPES =
+	static readonly DescribeLifecycleHookTypes =
 		"autoscaling:DescribeLifecycleHookTypes";
 	/** [List] autoscaling:DescribeLifecycleHooks */
-	static readonly DESCRIBE_LIFECYCLE_HOOKS =
-		"autoscaling:DescribeLifecycleHooks";
+	static readonly DescribeLifecycleHooks = "autoscaling:DescribeLifecycleHooks";
 	/** [List] autoscaling:DescribeLoadBalancerTargetGroups */
-	static readonly DESCRIBE_LOAD_BALANCER_TARGET_GROUPS =
+	static readonly DescribeLoadBalancerTargetGroups =
 		"autoscaling:DescribeLoadBalancerTargetGroups";
 	/** [List] autoscaling:DescribeLoadBalancers */
-	static readonly DESCRIBE_LOAD_BALANCERS = "autoscaling:DescribeLoadBalancers";
+	static readonly DescribeLoadBalancers = "autoscaling:DescribeLoadBalancers";
 	/** [List] autoscaling:DescribeMetricCollectionTypes */
-	static readonly DESCRIBE_METRIC_COLLECTION_TYPES =
+	static readonly DescribeMetricCollectionTypes =
 		"autoscaling:DescribeMetricCollectionTypes";
 	/** [List] autoscaling:DescribeNotificationConfigurations */
-	static readonly DESCRIBE_NOTIFICATION_CONFIGURATIONS =
+	static readonly DescribeNotificationConfigurations =
 		"autoscaling:DescribeNotificationConfigurations";
 	/** [List] autoscaling:DescribePolicies */
-	static readonly DESCRIBE_POLICIES = "autoscaling:DescribePolicies";
+	static readonly DescribePolicies = "autoscaling:DescribePolicies";
 	/** [List] autoscaling:DescribeScalingActivities */
-	static readonly DESCRIBE_SCALING_ACTIVITIES =
+	static readonly DescribeScalingActivities =
 		"autoscaling:DescribeScalingActivities";
 	/** [List] autoscaling:DescribeScalingProcessTypes */
-	static readonly DESCRIBE_SCALING_PROCESS_TYPES =
+	static readonly DescribeScalingProcessTypes =
 		"autoscaling:DescribeScalingProcessTypes";
 	/** [List] autoscaling:DescribeScheduledActions */
-	static readonly DESCRIBE_SCHEDULED_ACTIONS =
+	static readonly DescribeScheduledActions =
 		"autoscaling:DescribeScheduledActions";
 	/** [Read] autoscaling:DescribeTags */
-	static readonly DESCRIBE_TAGS = "autoscaling:DescribeTags";
+	static readonly DescribeTags = "autoscaling:DescribeTags";
 	/** [List] autoscaling:DescribeTerminationPolicyTypes */
-	static readonly DESCRIBE_TERMINATION_POLICY_TYPES =
+	static readonly DescribeTerminationPolicyTypes =
 		"autoscaling:DescribeTerminationPolicyTypes";
 	/** [List] autoscaling:DescribeTrafficSources */
-	static readonly DESCRIBE_TRAFFIC_SOURCES =
-		"autoscaling:DescribeTrafficSources";
+	static readonly DescribeTrafficSources = "autoscaling:DescribeTrafficSources";
 	/** [List] autoscaling:DescribeWarmPool */
-	static readonly DESCRIBE_WARM_POOL = "autoscaling:DescribeWarmPool";
+	static readonly DescribeWarmPool = "autoscaling:DescribeWarmPool";
 	/** [Write] autoscaling:DetachInstances */
-	static readonly DETACH_INSTANCES = "autoscaling:DetachInstances";
+	static readonly DetachInstances = "autoscaling:DetachInstances";
 	/** [Write] autoscaling:DetachLoadBalancerTargetGroups */
-	static readonly DETACH_LOAD_BALANCER_TARGET_GROUPS =
+	static readonly DetachLoadBalancerTargetGroups =
 		"autoscaling:DetachLoadBalancerTargetGroups";
 	/** [Write] autoscaling:DetachLoadBalancers */
-	static readonly DETACH_LOAD_BALANCERS = "autoscaling:DetachLoadBalancers";
+	static readonly DetachLoadBalancers = "autoscaling:DetachLoadBalancers";
 	/** [Write] autoscaling:DetachTrafficSources */
-	static readonly DETACH_TRAFFIC_SOURCES = "autoscaling:DetachTrafficSources";
+	static readonly DetachTrafficSources = "autoscaling:DetachTrafficSources";
 	/** [Write] autoscaling:DisableMetricsCollection */
-	static readonly DISABLE_METRICS_COLLECTION =
+	static readonly DisableMetricsCollection =
 		"autoscaling:DisableMetricsCollection";
 	/** [Write] autoscaling:EnableMetricsCollection */
-	static readonly ENABLE_METRICS_COLLECTION =
+	static readonly EnableMetricsCollection =
 		"autoscaling:EnableMetricsCollection";
 	/** [Write] autoscaling:EnterStandby */
-	static readonly ENTER_STANDBY = "autoscaling:EnterStandby";
+	static readonly EnterStandby = "autoscaling:EnterStandby";
 	/** [Write] autoscaling:ExecutePolicy */
-	static readonly EXECUTE_POLICY = "autoscaling:ExecutePolicy";
+	static readonly ExecutePolicy = "autoscaling:ExecutePolicy";
 	/** [Write] autoscaling:ExitStandby */
-	static readonly EXIT_STANDBY = "autoscaling:ExitStandby";
+	static readonly ExitStandby = "autoscaling:ExitStandby";
 	/** [List] autoscaling:GetPredictiveScalingForecast */
-	static readonly GET_PREDICTIVE_SCALING_FORECAST =
+	static readonly actionGetPredictiveScalingForecast =
 		"autoscaling:GetPredictiveScalingForecast";
 	/** [Write] autoscaling:LaunchInstances */
-	static readonly LAUNCH_INSTANCES = "autoscaling:LaunchInstances";
+	static readonly LaunchInstances = "autoscaling:LaunchInstances";
 	/** [Write] autoscaling:PutAccountSetting */
-	static readonly PUT_ACCOUNT_SETTING = "autoscaling:PutAccountSetting";
+	static readonly PutAccountSetting = "autoscaling:PutAccountSetting";
 	/** [Write] autoscaling:PutLifecycleHook */
-	static readonly PUT_LIFECYCLE_HOOK = "autoscaling:PutLifecycleHook";
+	static readonly PutLifecycleHook = "autoscaling:PutLifecycleHook";
 	/** [Write] autoscaling:PutNotificationConfiguration */
-	static readonly PUT_NOTIFICATION_CONFIGURATION =
+	static readonly PutNotificationConfiguration =
 		"autoscaling:PutNotificationConfiguration";
 	/** [Write] autoscaling:PutScalingPolicy */
-	static readonly PUT_SCALING_POLICY = "autoscaling:PutScalingPolicy";
+	static readonly PutScalingPolicy = "autoscaling:PutScalingPolicy";
 	/** [Write] autoscaling:PutScheduledUpdateGroupAction */
-	static readonly PUT_SCHEDULED_UPDATE_GROUP_ACTION =
+	static readonly PutScheduledUpdateGroupAction =
 		"autoscaling:PutScheduledUpdateGroupAction";
 	/** [Write] autoscaling:PutWarmPool */
-	static readonly PUT_WARM_POOL = "autoscaling:PutWarmPool";
+	static readonly PutWarmPool = "autoscaling:PutWarmPool";
 	/** [Write] autoscaling:RecordLifecycleActionHeartbeat */
-	static readonly RECORD_LIFECYCLE_ACTION_HEARTBEAT =
+	static readonly RecordLifecycleActionHeartbeat =
 		"autoscaling:RecordLifecycleActionHeartbeat";
 	/** [Write] autoscaling:ResumeProcesses */
-	static readonly RESUME_PROCESSES = "autoscaling:ResumeProcesses";
+	static readonly ResumeProcesses = "autoscaling:ResumeProcesses";
 	/** [Write] autoscaling:RollbackInstanceRefresh */
-	static readonly ROLLBACK_INSTANCE_REFRESH =
+	static readonly RollbackInstanceRefresh =
 		"autoscaling:RollbackInstanceRefresh";
 	/** [Write] autoscaling:SetDesiredCapacity */
-	static readonly SET_DESIRED_CAPACITY = "autoscaling:SetDesiredCapacity";
+	static readonly actionSetDesiredCapacity = "autoscaling:SetDesiredCapacity";
 	/** [Write] autoscaling:SetInstanceHealth */
-	static readonly SET_INSTANCE_HEALTH = "autoscaling:SetInstanceHealth";
+	static readonly actionSetInstanceHealth = "autoscaling:SetInstanceHealth";
 	/** [Write] autoscaling:SetInstanceProtection */
-	static readonly SET_INSTANCE_PROTECTION = "autoscaling:SetInstanceProtection";
+	static readonly actionSetInstanceProtection =
+		"autoscaling:SetInstanceProtection";
 	/** [Write] autoscaling:StartInstanceRefresh */
-	static readonly START_INSTANCE_REFRESH = "autoscaling:StartInstanceRefresh";
+	static readonly StartInstanceRefresh = "autoscaling:StartInstanceRefresh";
 	/** [Write] autoscaling:SuspendProcesses */
-	static readonly SUSPEND_PROCESSES = "autoscaling:SuspendProcesses";
+	static readonly SuspendProcesses = "autoscaling:SuspendProcesses";
 	/** [Write] autoscaling:TerminateInstanceInAutoScalingGroup */
-	static readonly TERMINATE_INSTANCE_IN_AUTO_SCALING_GROUP =
+	static readonly TerminateInstanceInAutoScalingGroup =
 		"autoscaling:TerminateInstanceInAutoScalingGroup";
 	/** [Write] autoscaling:UpdateAutoScalingGroup */
-	static readonly UPDATE_AUTO_SCALING_GROUP =
-		"autoscaling:UpdateAutoScalingGroup";
+	static readonly UpdateAutoScalingGroup = "autoscaling:UpdateAutoScalingGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [AutoscalingActions.DESCRIBE_TAGS];
+	static readonly AllReadActions: string[] = [AutoscalingActions.DescribeTags];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AutoscalingActions.ATTACH_INSTANCES,
-		AutoscalingActions.ATTACH_LOAD_BALANCER_TARGET_GROUPS,
-		AutoscalingActions.ATTACH_LOAD_BALANCERS,
-		AutoscalingActions.ATTACH_TRAFFIC_SOURCES,
-		AutoscalingActions.BATCH_DELETE_SCHEDULED_ACTION,
-		AutoscalingActions.BATCH_PUT_SCHEDULED_UPDATE_GROUP_ACTION,
-		AutoscalingActions.CANCEL_INSTANCE_REFRESH,
-		AutoscalingActions.COMPLETE_LIFECYCLE_ACTION,
-		AutoscalingActions.CREATE_AUTO_SCALING_GROUP,
-		AutoscalingActions.CREATE_LAUNCH_CONFIGURATION,
-		AutoscalingActions.DELETE_AUTO_SCALING_GROUP,
-		AutoscalingActions.DELETE_LAUNCH_CONFIGURATION,
-		AutoscalingActions.DELETE_LIFECYCLE_HOOK,
-		AutoscalingActions.DELETE_NOTIFICATION_CONFIGURATION,
-		AutoscalingActions.DELETE_POLICY,
-		AutoscalingActions.DELETE_SCHEDULED_ACTION,
-		AutoscalingActions.DELETE_WARM_POOL,
-		AutoscalingActions.DETACH_INSTANCES,
-		AutoscalingActions.DETACH_LOAD_BALANCER_TARGET_GROUPS,
-		AutoscalingActions.DETACH_LOAD_BALANCERS,
-		AutoscalingActions.DETACH_TRAFFIC_SOURCES,
-		AutoscalingActions.DISABLE_METRICS_COLLECTION,
-		AutoscalingActions.ENABLE_METRICS_COLLECTION,
-		AutoscalingActions.ENTER_STANDBY,
-		AutoscalingActions.EXECUTE_POLICY,
-		AutoscalingActions.EXIT_STANDBY,
-		AutoscalingActions.LAUNCH_INSTANCES,
-		AutoscalingActions.PUT_ACCOUNT_SETTING,
-		AutoscalingActions.PUT_LIFECYCLE_HOOK,
-		AutoscalingActions.PUT_NOTIFICATION_CONFIGURATION,
-		AutoscalingActions.PUT_SCALING_POLICY,
-		AutoscalingActions.PUT_SCHEDULED_UPDATE_GROUP_ACTION,
-		AutoscalingActions.PUT_WARM_POOL,
-		AutoscalingActions.RECORD_LIFECYCLE_ACTION_HEARTBEAT,
-		AutoscalingActions.RESUME_PROCESSES,
-		AutoscalingActions.ROLLBACK_INSTANCE_REFRESH,
-		AutoscalingActions.SET_DESIRED_CAPACITY,
-		AutoscalingActions.SET_INSTANCE_HEALTH,
-		AutoscalingActions.SET_INSTANCE_PROTECTION,
-		AutoscalingActions.START_INSTANCE_REFRESH,
-		AutoscalingActions.SUSPEND_PROCESSES,
-		AutoscalingActions.TERMINATE_INSTANCE_IN_AUTO_SCALING_GROUP,
-		AutoscalingActions.UPDATE_AUTO_SCALING_GROUP,
+	static readonly AllWriteActions: string[] = [
+		AutoscalingActions.AttachInstances,
+		AutoscalingActions.AttachLoadBalancerTargetGroups,
+		AutoscalingActions.AttachLoadBalancers,
+		AutoscalingActions.AttachTrafficSources,
+		AutoscalingActions.BatchDeleteScheduledAction,
+		AutoscalingActions.BatchPutScheduledUpdateGroupAction,
+		AutoscalingActions.CancelInstanceRefresh,
+		AutoscalingActions.CompleteLifecycleAction,
+		AutoscalingActions.CreateAutoScalingGroup,
+		AutoscalingActions.CreateLaunchConfiguration,
+		AutoscalingActions.DeleteAutoScalingGroup,
+		AutoscalingActions.DeleteLaunchConfiguration,
+		AutoscalingActions.DeleteLifecycleHook,
+		AutoscalingActions.DeleteNotificationConfiguration,
+		AutoscalingActions.DeletePolicy,
+		AutoscalingActions.DeleteScheduledAction,
+		AutoscalingActions.DeleteWarmPool,
+		AutoscalingActions.DetachInstances,
+		AutoscalingActions.DetachLoadBalancerTargetGroups,
+		AutoscalingActions.DetachLoadBalancers,
+		AutoscalingActions.DetachTrafficSources,
+		AutoscalingActions.DisableMetricsCollection,
+		AutoscalingActions.EnableMetricsCollection,
+		AutoscalingActions.EnterStandby,
+		AutoscalingActions.ExecutePolicy,
+		AutoscalingActions.ExitStandby,
+		AutoscalingActions.LaunchInstances,
+		AutoscalingActions.PutAccountSetting,
+		AutoscalingActions.PutLifecycleHook,
+		AutoscalingActions.PutNotificationConfiguration,
+		AutoscalingActions.PutScalingPolicy,
+		AutoscalingActions.PutScheduledUpdateGroupAction,
+		AutoscalingActions.PutWarmPool,
+		AutoscalingActions.RecordLifecycleActionHeartbeat,
+		AutoscalingActions.ResumeProcesses,
+		AutoscalingActions.RollbackInstanceRefresh,
+		AutoscalingActions.actionSetDesiredCapacity,
+		AutoscalingActions.actionSetInstanceHealth,
+		AutoscalingActions.actionSetInstanceProtection,
+		AutoscalingActions.StartInstanceRefresh,
+		AutoscalingActions.SuspendProcesses,
+		AutoscalingActions.TerminateInstanceInAutoScalingGroup,
+		AutoscalingActions.UpdateAutoScalingGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AutoscalingActions.DESCRIBE_ACCOUNT_LIMITS,
-		AutoscalingActions.DESCRIBE_ACCOUNT_SETTINGS,
-		AutoscalingActions.DESCRIBE_ADJUSTMENT_TYPES,
-		AutoscalingActions.DESCRIBE_AUTO_SCALING_GROUPS,
-		AutoscalingActions.DESCRIBE_AUTO_SCALING_INSTANCES,
-		AutoscalingActions.DESCRIBE_AUTO_SCALING_NOTIFICATION_TYPES,
-		AutoscalingActions.DESCRIBE_INSTANCE_REFRESHES,
-		AutoscalingActions.DESCRIBE_LAUNCH_CONFIGURATIONS,
-		AutoscalingActions.DESCRIBE_LIFECYCLE_HOOK_TYPES,
-		AutoscalingActions.DESCRIBE_LIFECYCLE_HOOKS,
-		AutoscalingActions.DESCRIBE_LOAD_BALANCER_TARGET_GROUPS,
-		AutoscalingActions.DESCRIBE_LOAD_BALANCERS,
-		AutoscalingActions.DESCRIBE_METRIC_COLLECTION_TYPES,
-		AutoscalingActions.DESCRIBE_NOTIFICATION_CONFIGURATIONS,
-		AutoscalingActions.DESCRIBE_POLICIES,
-		AutoscalingActions.DESCRIBE_SCALING_ACTIVITIES,
-		AutoscalingActions.DESCRIBE_SCALING_PROCESS_TYPES,
-		AutoscalingActions.DESCRIBE_SCHEDULED_ACTIONS,
-		AutoscalingActions.DESCRIBE_TERMINATION_POLICY_TYPES,
-		AutoscalingActions.DESCRIBE_TRAFFIC_SOURCES,
-		AutoscalingActions.DESCRIBE_WARM_POOL,
-		AutoscalingActions.GET_PREDICTIVE_SCALING_FORECAST,
+	static readonly AllListActions: string[] = [
+		AutoscalingActions.DescribeAccountLimits,
+		AutoscalingActions.DescribeAccountSettings,
+		AutoscalingActions.DescribeAdjustmentTypes,
+		AutoscalingActions.DescribeAutoScalingGroups,
+		AutoscalingActions.DescribeAutoScalingInstances,
+		AutoscalingActions.DescribeAutoScalingNotificationTypes,
+		AutoscalingActions.DescribeInstanceRefreshes,
+		AutoscalingActions.DescribeLaunchConfigurations,
+		AutoscalingActions.DescribeLifecycleHookTypes,
+		AutoscalingActions.DescribeLifecycleHooks,
+		AutoscalingActions.DescribeLoadBalancerTargetGroups,
+		AutoscalingActions.DescribeLoadBalancers,
+		AutoscalingActions.DescribeMetricCollectionTypes,
+		AutoscalingActions.DescribeNotificationConfigurations,
+		AutoscalingActions.DescribePolicies,
+		AutoscalingActions.DescribeScalingActivities,
+		AutoscalingActions.DescribeScalingProcessTypes,
+		AutoscalingActions.DescribeScheduledActions,
+		AutoscalingActions.DescribeTerminationPolicyTypes,
+		AutoscalingActions.DescribeTrafficSources,
+		AutoscalingActions.DescribeWarmPool,
+		AutoscalingActions.actionGetPredictiveScalingForecast,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AutoscalingActions.CREATE_OR_UPDATE_TAGS,
-		AutoscalingActions.DELETE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		AutoscalingActions.CreateOrUpdateTags,
+		AutoscalingActions.DeleteTags,
 	];
 }
 
-const AutoScalingGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):autoscaling:(?<region>[^:]*):(?<account>[^:]*):autoScalingGroup:(?<groupId>[^:/?]+):autoScalingGroupName/(?<groupFriendlyName>[^:/?]+)$",
-);
-const LaunchConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):autoscaling:(?<region>[^:]*):(?<account>[^:]*):launchConfiguration:(?<id>[^:/?]+):launchConfigurationName/(?<launchConfigurationName>[^:/?]+)$",
-);
+/**
+ * Properties for building a autoScalingGroup ARN.
+ */
+export interface AutoscalingAutoScalingGroupArnProps {
+	/** The GroupId component of the ARN. */
+	readonly groupId: string;
+	/** The GroupFriendlyName component of the ARN. */
+	readonly groupFriendlyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a autoScalingGroup ARN.
+ */
+export interface AutoscalingAutoScalingGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GroupId component. */
+	readonly groupId: string;
+	/** The GroupFriendlyName component. */
+	readonly groupFriendlyName: string;
+}
+
+/**
+ * Properties for building a launchConfiguration ARN.
+ */
+export interface AutoscalingLaunchConfigurationArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** The LaunchConfigurationName component of the ARN. */
+	readonly launchConfigurationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a launchConfiguration ARN.
+ */
+export interface AutoscalingLaunchConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+	/** The LaunchConfigurationName component. */
+	readonly launchConfigurationName: string;
+}
+
+const AutoScalingGroupArnRegex =
+	/^arn:(?<partition>[^:]+):autoscaling:(?<region>[^:]*):(?<account>[^:]*):autoScalingGroup:(?<groupId>[^:/?]+):autoScalingGroupName\/(?<groupFriendlyName>[^:/?]+)$/;
+const LaunchConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):autoscaling:(?<region>[^:]*):(?<account>[^:]*):launchConfiguration:(?<id>[^:/?]+):launchConfigurationName\/(?<launchConfigurationName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for autoscaling resources.
@@ -281,18 +339,7 @@ export class AutoscalingResources {
 	/**
 	 * Builds an ARN for the autoScalingGroup resource.
 	 */
-	static autoScalingGroup(props: {
-		/** The GroupId component of the ARN. */
-		readonly groupId: string;
-		/** The GroupFriendlyName component of the ARN. */
-		readonly groupFriendlyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static autoScalingGroup(props: AutoscalingAutoScalingGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:autoscaling:${props.region ?? "*"}:${props.account ?? "*"}:autoScalingGroup:${props.groupId}:autoScalingGroupName/${props.groupFriendlyName}`;
 	}
 
@@ -307,13 +354,9 @@ export class AutoscalingResources {
 	 * Parses a autoScalingGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutoScalingGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		groupId: string;
-		groupFriendlyName: string;
-	} {
+	static parseAutoScalingGroupArn(
+		arn: string,
+	): AutoscalingAutoScalingGroupArnComponents {
 		const match = AutoScalingGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid autoScalingGroup ARN: ${arn}`);
@@ -330,18 +373,9 @@ export class AutoscalingResources {
 	/**
 	 * Builds an ARN for the launchConfiguration resource.
 	 */
-	static launchConfiguration(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** The LaunchConfigurationName component of the ARN. */
-		readonly launchConfigurationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static launchConfiguration(
+		props: AutoscalingLaunchConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:autoscaling:${props.region ?? "*"}:${props.account ?? "*"}:launchConfiguration:${props.id}:launchConfigurationName/${props.launchConfigurationName}`;
 	}
 
@@ -356,13 +390,9 @@ export class AutoscalingResources {
 	 * Parses a launchConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLaunchConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		id: string;
-		launchConfigurationName: string;
-	} {
+	static parseLaunchConfigurationArn(
+		arn: string,
+	): AutoscalingLaunchConfigurationArnComponents {
 		const match = LaunchConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid launchConfiguration ARN: ${arn}`);
@@ -382,247 +412,239 @@ export class AutoscalingResources {
  */
 export class AutoscalingOperations {
 	/** IAM actions required for the AttachInstances API call. */
-	static readonly ATTACH_INSTANCES: string[] = ["autoscaling:AttachInstances"];
+	static readonly AttachInstances: string[] = ["autoscaling:AttachInstances"];
 	/** IAM actions required for the AttachLoadBalancerTargetGroups API call. */
-	static readonly ATTACH_LOAD_BALANCER_TARGET_GROUPS: string[] = [
+	static readonly AttachLoadBalancerTargetGroups: string[] = [
 		"autoscaling:AttachLoadBalancerTargetGroups",
 	];
 	/** IAM actions required for the AttachLoadBalancers API call. */
-	static readonly ATTACH_LOAD_BALANCERS: string[] = [
+	static readonly AttachLoadBalancers: string[] = [
 		"autoscaling:AttachLoadBalancers",
 	];
 	/** IAM actions required for the AttachTrafficSources API call. */
-	static readonly ATTACH_TRAFFIC_SOURCES: string[] = [
+	static readonly AttachTrafficSources: string[] = [
 		"autoscaling:AttachTrafficSources",
 	];
 	/** IAM actions required for the BatchDeleteScheduledAction API call. */
-	static readonly BATCH_DELETE_SCHEDULED_ACTION: string[] = [
+	static readonly BatchDeleteScheduledAction: string[] = [
 		"autoscaling:BatchDeleteScheduledAction",
 	];
 	/** IAM actions required for the BatchPutScheduledUpdateGroupAction API call. */
-	static readonly BATCH_PUT_SCHEDULED_UPDATE_GROUP_ACTION: string[] = [
+	static readonly BatchPutScheduledUpdateGroupAction: string[] = [
 		"autoscaling:BatchPutScheduledUpdateGroupAction",
 	];
 	/** IAM actions required for the CancelInstanceRefresh API call. */
-	static readonly CANCEL_INSTANCE_REFRESH: string[] = [
+	static readonly CancelInstanceRefresh: string[] = [
 		"autoscaling:CancelInstanceRefresh",
 	];
 	/** IAM actions required for the CompleteLifecycleAction API call. */
-	static readonly COMPLETE_LIFECYCLE_ACTION: string[] = [
+	static readonly CompleteLifecycleAction: string[] = [
 		"autoscaling:CompleteLifecycleAction",
 	];
 	/** IAM actions required for the CreateAutoScalingGroup API call. */
-	static readonly CREATE_AUTO_SCALING_GROUP: string[] = [
+	static readonly CreateAutoScalingGroup: string[] = [
 		"autoscaling:CreateAutoScalingGroup",
 		"autoscaling:CreateOrUpdateTags",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateLaunchConfiguration API call. */
-	static readonly CREATE_LAUNCH_CONFIGURATION: string[] = [
+	static readonly CreateLaunchConfiguration: string[] = [
 		"autoscaling:CreateLaunchConfiguration",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateOrUpdateTags API call. */
-	static readonly CREATE_OR_UPDATE_TAGS: string[] = [
+	static readonly CreateOrUpdateTags: string[] = [
 		"autoscaling:CreateOrUpdateTags",
 	];
 	/** IAM actions required for the DeleteAutoScalingGroup API call. */
-	static readonly DELETE_AUTO_SCALING_GROUP: string[] = [
+	static readonly DeleteAutoScalingGroup: string[] = [
 		"autoscaling:DeleteAutoScalingGroup",
 	];
 	/** IAM actions required for the DeleteLaunchConfiguration API call. */
-	static readonly DELETE_LAUNCH_CONFIGURATION: string[] = [
+	static readonly DeleteLaunchConfiguration: string[] = [
 		"autoscaling:DeleteLaunchConfiguration",
 	];
 	/** IAM actions required for the DeleteLifecycleHook API call. */
-	static readonly DELETE_LIFECYCLE_HOOK: string[] = [
+	static readonly DeleteLifecycleHook: string[] = [
 		"autoscaling:DeleteLifecycleHook",
 	];
 	/** IAM actions required for the DeleteNotificationConfiguration API call. */
-	static readonly DELETE_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly DeleteNotificationConfiguration: string[] = [
 		"autoscaling:DeleteNotificationConfiguration",
 	];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = ["autoscaling:DeletePolicy"];
+	static readonly DeletePolicy: string[] = ["autoscaling:DeletePolicy"];
 	/** IAM actions required for the DeleteScheduledAction API call. */
-	static readonly DELETE_SCHEDULED_ACTION: string[] = [
+	static readonly DeleteScheduledAction: string[] = [
 		"autoscaling:DeleteScheduledAction",
 	];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["autoscaling:DeleteTags"];
+	static readonly DeleteTags: string[] = ["autoscaling:DeleteTags"];
 	/** IAM actions required for the DeleteWarmPool API call. */
-	static readonly DELETE_WARM_POOL: string[] = ["autoscaling:DeleteWarmPool"];
+	static readonly DeleteWarmPool: string[] = ["autoscaling:DeleteWarmPool"];
 	/** IAM actions required for the DescribeAccountLimits API call. */
-	static readonly DESCRIBE_ACCOUNT_LIMITS: string[] = [
+	static readonly DescribeAccountLimits: string[] = [
 		"autoscaling:DescribeAccountLimits",
 	];
 	/** IAM actions required for the DescribeAdjustmentTypes API call. */
-	static readonly DESCRIBE_ADJUSTMENT_TYPES: string[] = [
+	static readonly DescribeAdjustmentTypes: string[] = [
 		"autoscaling:DescribeAdjustmentTypes",
 	];
 	/** IAM actions required for the DescribeAutoScalingGroups API call. */
-	static readonly DESCRIBE_AUTO_SCALING_GROUPS: string[] = [
+	static readonly DescribeAutoScalingGroups: string[] = [
 		"autoscaling:DescribeAutoScalingGroups",
 	];
 	/** IAM actions required for the DescribeAutoScalingInstances API call. */
-	static readonly DESCRIBE_AUTO_SCALING_INSTANCES: string[] = [
+	static readonly DescribeAutoScalingInstances: string[] = [
 		"autoscaling:DescribeAutoScalingInstances",
 	];
 	/** IAM actions required for the DescribeAutoScalingNotificationTypes API call. */
-	static readonly DESCRIBE_AUTO_SCALING_NOTIFICATION_TYPES: string[] = [
+	static readonly DescribeAutoScalingNotificationTypes: string[] = [
 		"autoscaling:DescribeAutoScalingNotificationTypes",
 	];
 	/** IAM actions required for the DescribeInstanceRefreshes API call. */
-	static readonly DESCRIBE_INSTANCE_REFRESHES: string[] = [
+	static readonly DescribeInstanceRefreshes: string[] = [
 		"autoscaling:DescribeInstanceRefreshes",
 	];
 	/** IAM actions required for the DescribeLaunchConfigurations API call. */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATIONS: string[] = [
+	static readonly DescribeLaunchConfigurations: string[] = [
 		"autoscaling:DescribeLaunchConfigurations",
 	];
 	/** IAM actions required for the DescribeLifecycleHookTypes API call. */
-	static readonly DESCRIBE_LIFECYCLE_HOOK_TYPES: string[] = [
+	static readonly DescribeLifecycleHookTypes: string[] = [
 		"autoscaling:DescribeLifecycleHookTypes",
 	];
 	/** IAM actions required for the DescribeLifecycleHooks API call. */
-	static readonly DESCRIBE_LIFECYCLE_HOOKS: string[] = [
+	static readonly DescribeLifecycleHooks: string[] = [
 		"autoscaling:DescribeLifecycleHooks",
 	];
 	/** IAM actions required for the DescribeLoadBalancerTargetGroups API call. */
-	static readonly DESCRIBE_LOAD_BALANCER_TARGET_GROUPS: string[] = [
+	static readonly DescribeLoadBalancerTargetGroups: string[] = [
 		"autoscaling:DescribeLoadBalancerTargetGroups",
 	];
 	/** IAM actions required for the DescribeLoadBalancers API call. */
-	static readonly DESCRIBE_LOAD_BALANCERS: string[] = [
+	static readonly DescribeLoadBalancers: string[] = [
 		"autoscaling:DescribeLoadBalancers",
 	];
 	/** IAM actions required for the DescribeMetricCollectionTypes API call. */
-	static readonly DESCRIBE_METRIC_COLLECTION_TYPES: string[] = [
+	static readonly DescribeMetricCollectionTypes: string[] = [
 		"autoscaling:DescribeMetricCollectionTypes",
 	];
 	/** IAM actions required for the DescribeNotificationConfigurations API call. */
-	static readonly DESCRIBE_NOTIFICATION_CONFIGURATIONS: string[] = [
+	static readonly DescribeNotificationConfigurations: string[] = [
 		"autoscaling:DescribeNotificationConfigurations",
 	];
 	/** IAM actions required for the DescribePolicies API call. */
-	static readonly DESCRIBE_POLICIES: string[] = [
-		"autoscaling:DescribePolicies",
-	];
+	static readonly DescribePolicies: string[] = ["autoscaling:DescribePolicies"];
 	/** IAM actions required for the DescribeScalingActivities API call. */
-	static readonly DESCRIBE_SCALING_ACTIVITIES: string[] = [
+	static readonly DescribeScalingActivities: string[] = [
 		"autoscaling:DescribeScalingActivities",
 	];
 	/** IAM actions required for the DescribeScalingProcessTypes API call. */
-	static readonly DESCRIBE_SCALING_PROCESS_TYPES: string[] = [
+	static readonly DescribeScalingProcessTypes: string[] = [
 		"autoscaling:DescribeScalingProcessTypes",
 	];
 	/** IAM actions required for the DescribeScheduledActions API call. */
-	static readonly DESCRIBE_SCHEDULED_ACTIONS: string[] = [
+	static readonly DescribeScheduledActions: string[] = [
 		"autoscaling:DescribeScheduledActions",
 	];
 	/** IAM actions required for the DescribeTags API call. */
-	static readonly DESCRIBE_TAGS: string[] = ["autoscaling:DescribeTags"];
+	static readonly DescribeTags: string[] = ["autoscaling:DescribeTags"];
 	/** IAM actions required for the DescribeTerminationPolicyTypes API call. */
-	static readonly DESCRIBE_TERMINATION_POLICY_TYPES: string[] = [
+	static readonly DescribeTerminationPolicyTypes: string[] = [
 		"autoscaling:DescribeTerminationPolicyTypes",
 	];
 	/** IAM actions required for the DescribeTrafficSources API call. */
-	static readonly DESCRIBE_TRAFFIC_SOURCES: string[] = [
+	static readonly DescribeTrafficSources: string[] = [
 		"autoscaling:DescribeTrafficSources",
 	];
 	/** IAM actions required for the DescribeWarmPool API call. */
-	static readonly DESCRIBE_WARM_POOL: string[] = [
-		"autoscaling:DescribeWarmPool",
-	];
+	static readonly DescribeWarmPool: string[] = ["autoscaling:DescribeWarmPool"];
 	/** IAM actions required for the DetachInstances API call. */
-	static readonly DETACH_INSTANCES: string[] = ["autoscaling:DetachInstances"];
+	static readonly DetachInstances: string[] = ["autoscaling:DetachInstances"];
 	/** IAM actions required for the DetachLoadBalancerTargetGroups API call. */
-	static readonly DETACH_LOAD_BALANCER_TARGET_GROUPS: string[] = [
+	static readonly DetachLoadBalancerTargetGroups: string[] = [
 		"autoscaling:DetachLoadBalancerTargetGroups",
 	];
 	/** IAM actions required for the DetachLoadBalancers API call. */
-	static readonly DETACH_LOAD_BALANCERS: string[] = [
+	static readonly DetachLoadBalancers: string[] = [
 		"autoscaling:DetachLoadBalancers",
 	];
 	/** IAM actions required for the DetachTrafficSources API call. */
-	static readonly DETACH_TRAFFIC_SOURCES: string[] = [
+	static readonly DetachTrafficSources: string[] = [
 		"autoscaling:DetachTrafficSources",
 	];
 	/** IAM actions required for the DisableMetricsCollection API call. */
-	static readonly DISABLE_METRICS_COLLECTION: string[] = [
+	static readonly DisableMetricsCollection: string[] = [
 		"autoscaling:DisableMetricsCollection",
 	];
 	/** IAM actions required for the EnableMetricsCollection API call. */
-	static readonly ENABLE_METRICS_COLLECTION: string[] = [
+	static readonly EnableMetricsCollection: string[] = [
 		"autoscaling:EnableMetricsCollection",
 	];
 	/** IAM actions required for the EnterStandby API call. */
-	static readonly ENTER_STANDBY: string[] = ["autoscaling:EnterStandby"];
+	static readonly EnterStandby: string[] = ["autoscaling:EnterStandby"];
 	/** IAM actions required for the ExecutePolicy API call. */
-	static readonly EXECUTE_POLICY: string[] = ["autoscaling:ExecutePolicy"];
+	static readonly ExecutePolicy: string[] = ["autoscaling:ExecutePolicy"];
 	/** IAM actions required for the ExitStandby API call. */
-	static readonly EXIT_STANDBY: string[] = ["autoscaling:ExitStandby"];
+	static readonly ExitStandby: string[] = ["autoscaling:ExitStandby"];
 	/** IAM actions required for the GetPredictiveScalingForecast API call. */
-	static readonly GET_PREDICTIVE_SCALING_FORECAST: string[] = [
+	static readonly opGetPredictiveScalingForecast: string[] = [
 		"autoscaling:GetPredictiveScalingForecast",
 	];
 	/** IAM actions required for the LaunchInstances API call. */
-	static readonly LAUNCH_INSTANCES: string[] = ["autoscaling:LaunchInstances"];
+	static readonly LaunchInstances: string[] = ["autoscaling:LaunchInstances"];
 	/** IAM actions required for the PutLifecycleHook API call. */
-	static readonly PUT_LIFECYCLE_HOOK: string[] = [
+	static readonly PutLifecycleHook: string[] = [
 		"iam:PassRole",
 		"autoscaling:PutLifecycleHook",
 	];
 	/** IAM actions required for the PutNotificationConfiguration API call. */
-	static readonly PUT_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly PutNotificationConfiguration: string[] = [
 		"autoscaling:PutNotificationConfiguration",
 	];
 	/** IAM actions required for the PutScalingPolicy API call. */
-	static readonly PUT_SCALING_POLICY: string[] = [
-		"autoscaling:PutScalingPolicy",
-	];
+	static readonly PutScalingPolicy: string[] = ["autoscaling:PutScalingPolicy"];
 	/** IAM actions required for the PutScheduledUpdateGroupAction API call. */
-	static readonly PUT_SCHEDULED_UPDATE_GROUP_ACTION: string[] = [
+	static readonly PutScheduledUpdateGroupAction: string[] = [
 		"autoscaling:PutScheduledUpdateGroupAction",
 	];
 	/** IAM actions required for the PutWarmPool API call. */
-	static readonly PUT_WARM_POOL: string[] = ["autoscaling:PutWarmPool"];
+	static readonly PutWarmPool: string[] = ["autoscaling:PutWarmPool"];
 	/** IAM actions required for the RecordLifecycleActionHeartbeat API call. */
-	static readonly RECORD_LIFECYCLE_ACTION_HEARTBEAT: string[] = [
+	static readonly RecordLifecycleActionHeartbeat: string[] = [
 		"autoscaling:RecordLifecycleActionHeartbeat",
 	];
 	/** IAM actions required for the ResumeProcesses API call. */
-	static readonly RESUME_PROCESSES: string[] = ["autoscaling:ResumeProcesses"];
+	static readonly ResumeProcesses: string[] = ["autoscaling:ResumeProcesses"];
 	/** IAM actions required for the RollbackInstanceRefresh API call. */
-	static readonly ROLLBACK_INSTANCE_REFRESH: string[] = [
+	static readonly RollbackInstanceRefresh: string[] = [
 		"autoscaling:RollbackInstanceRefresh",
 	];
 	/** IAM actions required for the SetDesiredCapacity API call. */
-	static readonly SET_DESIRED_CAPACITY: string[] = [
+	static readonly opSetDesiredCapacity: string[] = [
 		"autoscaling:SetDesiredCapacity",
 	];
 	/** IAM actions required for the SetInstanceHealth API call. */
-	static readonly SET_INSTANCE_HEALTH: string[] = [
+	static readonly opSetInstanceHealth: string[] = [
 		"autoscaling:SetInstanceHealth",
 	];
 	/** IAM actions required for the SetInstanceProtection API call. */
-	static readonly SET_INSTANCE_PROTECTION: string[] = [
+	static readonly opSetInstanceProtection: string[] = [
 		"autoscaling:SetInstanceProtection",
 	];
 	/** IAM actions required for the StartInstanceRefresh API call. */
-	static readonly START_INSTANCE_REFRESH: string[] = [
+	static readonly StartInstanceRefresh: string[] = [
 		"autoscaling:StartInstanceRefresh",
 	];
 	/** IAM actions required for the SuspendProcesses API call. */
-	static readonly SUSPEND_PROCESSES: string[] = [
-		"autoscaling:SuspendProcesses",
-	];
+	static readonly SuspendProcesses: string[] = ["autoscaling:SuspendProcesses"];
 	/** IAM actions required for the TerminateInstanceInAutoScalingGroup API call. */
-	static readonly TERMINATE_INSTANCE_IN_AUTO_SCALING_GROUP: string[] = [
+	static readonly TerminateInstanceInAutoScalingGroup: string[] = [
 		"autoscaling:TerminateInstanceInAutoScalingGroup",
 	];
 	/** IAM actions required for the UpdateAutoScalingGroup API call. */
-	static readonly UPDATE_AUTO_SCALING_GROUP: string[] = [
+	static readonly UpdateAutoScalingGroup: string[] = [
 		"iam:PassRole",
 		"autoscaling:UpdateAutoScalingGroup",
 	];
@@ -633,18 +655,19 @@ export class AutoscalingOperations {
  */
 export class AutoscalingConditions {
 	/** Condition keys applicable to the AttachLoadBalancerTargetGroups action. */
-	static readonly ATTACH_LOAD_BALANCER_TARGET_GROUPS_CONDITION_KEYS: string[] =
-		["autoscaling:TargetGroupARNs"];
+	static readonly AttachLoadBalancerTargetGroupsConditionKeys: string[] = [
+		"autoscaling:TargetGroupARNs",
+	];
 	/** Condition keys applicable to the AttachLoadBalancers action. */
-	static readonly ATTACH_LOAD_BALANCERS_CONDITION_KEYS: string[] = [
+	static readonly AttachLoadBalancersConditionKeys: string[] = [
 		"autoscaling:LoadBalancerNames",
 	];
 	/** Condition keys applicable to the AttachTrafficSources action. */
-	static readonly ATTACH_TRAFFIC_SOURCES_CONDITION_KEYS: string[] = [
+	static readonly AttachTrafficSourcesConditionKeys: string[] = [
 		"autoscaling:TrafficSourceIdentifiers",
 	];
 	/** Condition keys applicable to the CreateAutoScalingGroup action. */
-	static readonly CREATE_AUTO_SCALING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateAutoScalingGroupConditionKeys: string[] = [
 		"autoscaling:CapacityReservationIds",
 		"autoscaling:CapacityReservationResourceGroupArns",
 		"autoscaling:ImageId",
@@ -662,7 +685,7 @@ export class AutoscalingConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLaunchConfiguration action. */
-	static readonly CREATE_LAUNCH_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateLaunchConfigurationConditionKeys: string[] = [
 		"autoscaling:ImageId",
 		"autoscaling:InstanceType",
 		"autoscaling:MetadataHttpEndpoint",
@@ -671,37 +694,38 @@ export class AutoscalingConditions {
 		"autoscaling:SpotPrice",
 	];
 	/** Condition keys applicable to the CreateOrUpdateTags action. */
-	static readonly CREATE_OR_UPDATE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly CreateOrUpdateTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly DeleteTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DetachLoadBalancerTargetGroups action. */
-	static readonly DETACH_LOAD_BALANCER_TARGET_GROUPS_CONDITION_KEYS: string[] =
-		["autoscaling:TargetGroupARNs"];
+	static readonly DetachLoadBalancerTargetGroupsConditionKeys: string[] = [
+		"autoscaling:TargetGroupARNs",
+	];
 	/** Condition keys applicable to the DetachLoadBalancers action. */
-	static readonly DETACH_LOAD_BALANCERS_CONDITION_KEYS: string[] = [
+	static readonly DetachLoadBalancersConditionKeys: string[] = [
 		"autoscaling:LoadBalancerNames",
 	];
 	/** Condition keys applicable to the DetachTrafficSources action. */
-	static readonly DETACH_TRAFFIC_SOURCES_CONDITION_KEYS: string[] = [
+	static readonly DetachTrafficSourcesConditionKeys: string[] = [
 		"autoscaling:TrafficSourceIdentifiers",
 	];
 	/** Condition keys applicable to the PutScheduledUpdateGroupAction action. */
-	static readonly PUT_SCHEDULED_UPDATE_GROUP_ACTION_CONDITION_KEYS: string[] = [
+	static readonly PutScheduledUpdateGroupActionConditionKeys: string[] = [
 		"autoscaling:MaxSize",
 		"autoscaling:MinSize",
 	];
 	/** Condition keys applicable to the StartInstanceRefresh action. */
-	static readonly START_INSTANCE_REFRESH_CONDITION_KEYS: string[] = [
+	static readonly StartInstanceRefreshConditionKeys: string[] = [
 		"autoscaling:ImageId",
 	];
 	/** Condition keys applicable to the UpdateAutoScalingGroup action. */
-	static readonly UPDATE_AUTO_SCALING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly UpdateAutoScalingGroupConditionKeys: string[] = [
 		"autoscaling:CapacityReservationIds",
 		"autoscaling:CapacityReservationResourceGroupArns",
 		"autoscaling:ImageId",
@@ -760,11 +784,11 @@ export class AutoscalingConditions {
 	/** Condition key: autoscaling:VPCZoneIdentifiers (ArrayOfString) */
 	static readonly VPC_ZONE_IDENTIFIERS = "autoscaling:VPCZoneIdentifiers";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `autoscaling:CapacityReservationIds`.
@@ -955,13 +979,6 @@ export class AutoscalingConditions {
 	 */
 	static requestTag(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
-	}
-
-	/**
-	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
 	}
 
 	/**

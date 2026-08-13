@@ -13,128 +13,155 @@ export class GlacierActions {
 	static readonly SERVICE_PREFIX = "glacier";
 
 	/** [Write] glacier:AbortMultipartUpload */
-	static readonly ABORT_MULTIPART_UPLOAD = "glacier:AbortMultipartUpload";
+	static readonly AbortMultipartUpload = "glacier:AbortMultipartUpload";
 	/** [PermissionManagement] glacier:AbortVaultLock */
-	static readonly ABORT_VAULT_LOCK = "glacier:AbortVaultLock";
+	static readonly AbortVaultLock = "glacier:AbortVaultLock";
 	/** [Tagging] glacier:AddTagsToVault */
-	static readonly ADD_TAGS_TO_VAULT = "glacier:AddTagsToVault";
+	static readonly AddTagsToVault = "glacier:AddTagsToVault";
 	/** [Write] glacier:CompleteMultipartUpload */
-	static readonly COMPLETE_MULTIPART_UPLOAD = "glacier:CompleteMultipartUpload";
+	static readonly CompleteMultipartUpload = "glacier:CompleteMultipartUpload";
 	/** [PermissionManagement] glacier:CompleteVaultLock */
-	static readonly COMPLETE_VAULT_LOCK = "glacier:CompleteVaultLock";
+	static readonly CompleteVaultLock = "glacier:CompleteVaultLock";
 	/** [Write] glacier:CreateVault */
-	static readonly CREATE_VAULT = "glacier:CreateVault";
+	static readonly CreateVault = "glacier:CreateVault";
 	/** [Write] glacier:DeleteArchive */
-	static readonly DELETE_ARCHIVE = "glacier:DeleteArchive";
+	static readonly DeleteArchive = "glacier:DeleteArchive";
 	/** [Write] glacier:DeleteVault */
-	static readonly DELETE_VAULT = "glacier:DeleteVault";
+	static readonly DeleteVault = "glacier:DeleteVault";
 	/** [PermissionManagement] glacier:DeleteVaultAccessPolicy */
-	static readonly DELETE_VAULT_ACCESS_POLICY =
-		"glacier:DeleteVaultAccessPolicy";
+	static readonly DeleteVaultAccessPolicy = "glacier:DeleteVaultAccessPolicy";
 	/** [Write] glacier:DeleteVaultNotifications */
-	static readonly DELETE_VAULT_NOTIFICATIONS =
-		"glacier:DeleteVaultNotifications";
+	static readonly DeleteVaultNotifications = "glacier:DeleteVaultNotifications";
 	/** [Read] glacier:DescribeJob */
-	static readonly DESCRIBE_JOB = "glacier:DescribeJob";
+	static readonly DescribeJob = "glacier:DescribeJob";
 	/** [Read] glacier:DescribeVault */
-	static readonly DESCRIBE_VAULT = "glacier:DescribeVault";
+	static readonly DescribeVault = "glacier:DescribeVault";
 	/** [Read] glacier:GetDataRetrievalPolicy */
-	static readonly GET_DATA_RETRIEVAL_POLICY = "glacier:GetDataRetrievalPolicy";
+	static readonly actionGetDataRetrievalPolicy =
+		"glacier:GetDataRetrievalPolicy";
 	/** [Read] glacier:GetJobOutput */
-	static readonly GET_JOB_OUTPUT = "glacier:GetJobOutput";
+	static readonly actionGetJobOutput = "glacier:GetJobOutput";
 	/** [Read] glacier:GetVaultAccessPolicy */
-	static readonly GET_VAULT_ACCESS_POLICY = "glacier:GetVaultAccessPolicy";
+	static readonly actionGetVaultAccessPolicy = "glacier:GetVaultAccessPolicy";
 	/** [Read] glacier:GetVaultLock */
-	static readonly GET_VAULT_LOCK = "glacier:GetVaultLock";
+	static readonly actionGetVaultLock = "glacier:GetVaultLock";
 	/** [Read] glacier:GetVaultNotifications */
-	static readonly GET_VAULT_NOTIFICATIONS = "glacier:GetVaultNotifications";
+	static readonly actionGetVaultNotifications = "glacier:GetVaultNotifications";
 	/** [Write] glacier:InitiateJob */
-	static readonly INITIATE_JOB = "glacier:InitiateJob";
+	static readonly InitiateJob = "glacier:InitiateJob";
 	/** [Write] glacier:InitiateMultipartUpload */
-	static readonly INITIATE_MULTIPART_UPLOAD = "glacier:InitiateMultipartUpload";
+	static readonly InitiateMultipartUpload = "glacier:InitiateMultipartUpload";
 	/** [PermissionManagement] glacier:InitiateVaultLock */
-	static readonly INITIATE_VAULT_LOCK = "glacier:InitiateVaultLock";
+	static readonly InitiateVaultLock = "glacier:InitiateVaultLock";
 	/** [List] glacier:ListJobs */
-	static readonly LIST_JOBS = "glacier:ListJobs";
+	static readonly ListJobs = "glacier:ListJobs";
 	/** [List] glacier:ListMultipartUploads */
-	static readonly LIST_MULTIPART_UPLOADS = "glacier:ListMultipartUploads";
+	static readonly ListMultipartUploads = "glacier:ListMultipartUploads";
 	/** [List] glacier:ListParts */
-	static readonly LIST_PARTS = "glacier:ListParts";
+	static readonly ListParts = "glacier:ListParts";
 	/** [List] glacier:ListProvisionedCapacity */
-	static readonly LIST_PROVISIONED_CAPACITY = "glacier:ListProvisionedCapacity";
+	static readonly ListProvisionedCapacity = "glacier:ListProvisionedCapacity";
 	/** [List] glacier:ListTagsForVault */
-	static readonly LIST_TAGS_FOR_VAULT = "glacier:ListTagsForVault";
+	static readonly ListTagsForVault = "glacier:ListTagsForVault";
 	/** [List] glacier:ListVaults */
-	static readonly LIST_VAULTS = "glacier:ListVaults";
+	static readonly ListVaults = "glacier:ListVaults";
 	/** [Write] glacier:PurchaseProvisionedCapacity */
-	static readonly PURCHASE_PROVISIONED_CAPACITY =
+	static readonly PurchaseProvisionedCapacity =
 		"glacier:PurchaseProvisionedCapacity";
 	/** [Tagging] glacier:RemoveTagsFromVault */
-	static readonly REMOVE_TAGS_FROM_VAULT = "glacier:RemoveTagsFromVault";
+	static readonly RemoveTagsFromVault = "glacier:RemoveTagsFromVault";
 	/** [PermissionManagement] glacier:SetDataRetrievalPolicy */
-	static readonly SET_DATA_RETRIEVAL_POLICY = "glacier:SetDataRetrievalPolicy";
+	static readonly actionSetDataRetrievalPolicy =
+		"glacier:SetDataRetrievalPolicy";
 	/** [PermissionManagement] glacier:SetVaultAccessPolicy */
-	static readonly SET_VAULT_ACCESS_POLICY = "glacier:SetVaultAccessPolicy";
+	static readonly actionSetVaultAccessPolicy = "glacier:SetVaultAccessPolicy";
 	/** [Write] glacier:SetVaultNotifications */
-	static readonly SET_VAULT_NOTIFICATIONS = "glacier:SetVaultNotifications";
+	static readonly actionSetVaultNotifications = "glacier:SetVaultNotifications";
 	/** [Write] glacier:UploadArchive */
-	static readonly UPLOAD_ARCHIVE = "glacier:UploadArchive";
+	static readonly UploadArchive = "glacier:UploadArchive";
 	/** [Write] glacier:UploadMultipartPart */
-	static readonly UPLOAD_MULTIPART_PART = "glacier:UploadMultipartPart";
+	static readonly UploadMultipartPart = "glacier:UploadMultipartPart";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GlacierActions.DESCRIBE_JOB,
-		GlacierActions.DESCRIBE_VAULT,
-		GlacierActions.GET_DATA_RETRIEVAL_POLICY,
-		GlacierActions.GET_JOB_OUTPUT,
-		GlacierActions.GET_VAULT_ACCESS_POLICY,
-		GlacierActions.GET_VAULT_LOCK,
-		GlacierActions.GET_VAULT_NOTIFICATIONS,
+	static readonly AllReadActions: string[] = [
+		GlacierActions.DescribeJob,
+		GlacierActions.DescribeVault,
+		GlacierActions.actionGetDataRetrievalPolicy,
+		GlacierActions.actionGetJobOutput,
+		GlacierActions.actionGetVaultAccessPolicy,
+		GlacierActions.actionGetVaultLock,
+		GlacierActions.actionGetVaultNotifications,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GlacierActions.ABORT_MULTIPART_UPLOAD,
-		GlacierActions.COMPLETE_MULTIPART_UPLOAD,
-		GlacierActions.CREATE_VAULT,
-		GlacierActions.DELETE_ARCHIVE,
-		GlacierActions.DELETE_VAULT,
-		GlacierActions.DELETE_VAULT_NOTIFICATIONS,
-		GlacierActions.INITIATE_JOB,
-		GlacierActions.INITIATE_MULTIPART_UPLOAD,
-		GlacierActions.PURCHASE_PROVISIONED_CAPACITY,
-		GlacierActions.SET_VAULT_NOTIFICATIONS,
-		GlacierActions.UPLOAD_ARCHIVE,
-		GlacierActions.UPLOAD_MULTIPART_PART,
+	static readonly AllWriteActions: string[] = [
+		GlacierActions.AbortMultipartUpload,
+		GlacierActions.CompleteMultipartUpload,
+		GlacierActions.CreateVault,
+		GlacierActions.DeleteArchive,
+		GlacierActions.DeleteVault,
+		GlacierActions.DeleteVaultNotifications,
+		GlacierActions.InitiateJob,
+		GlacierActions.InitiateMultipartUpload,
+		GlacierActions.PurchaseProvisionedCapacity,
+		GlacierActions.actionSetVaultNotifications,
+		GlacierActions.UploadArchive,
+		GlacierActions.UploadMultipartPart,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GlacierActions.LIST_JOBS,
-		GlacierActions.LIST_MULTIPART_UPLOADS,
-		GlacierActions.LIST_PARTS,
-		GlacierActions.LIST_PROVISIONED_CAPACITY,
-		GlacierActions.LIST_TAGS_FOR_VAULT,
-		GlacierActions.LIST_VAULTS,
+	static readonly AllListActions: string[] = [
+		GlacierActions.ListJobs,
+		GlacierActions.ListMultipartUploads,
+		GlacierActions.ListParts,
+		GlacierActions.ListProvisionedCapacity,
+		GlacierActions.ListTagsForVault,
+		GlacierActions.ListVaults,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		GlacierActions.ABORT_VAULT_LOCK,
-		GlacierActions.COMPLETE_VAULT_LOCK,
-		GlacierActions.DELETE_VAULT_ACCESS_POLICY,
-		GlacierActions.INITIATE_VAULT_LOCK,
-		GlacierActions.SET_DATA_RETRIEVAL_POLICY,
-		GlacierActions.SET_VAULT_ACCESS_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		GlacierActions.AbortVaultLock,
+		GlacierActions.CompleteVaultLock,
+		GlacierActions.DeleteVaultAccessPolicy,
+		GlacierActions.InitiateVaultLock,
+		GlacierActions.actionSetDataRetrievalPolicy,
+		GlacierActions.actionSetVaultAccessPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GlacierActions.ADD_TAGS_TO_VAULT,
-		GlacierActions.REMOVE_TAGS_FROM_VAULT,
+	static readonly AllTaggingActions: string[] = [
+		GlacierActions.AddTagsToVault,
+		GlacierActions.RemoveTagsFromVault,
 	];
 }
 
-const VaultArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):glacier:(?<region>[^:]*):(?<account>[^:]*):vaults/(?<vaultName>[^:/?]+)$",
-);
+/**
+ * Properties for building a vault ARN.
+ */
+export interface GlacierVaultArnProps {
+	/** The VaultName component of the ARN. */
+	readonly vaultName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vault ARN.
+ */
+export interface GlacierVaultArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VaultName component. */
+	readonly vaultName: string;
+}
+
+const VaultArnRegex =
+	/^arn:(?<partition>[^:]+):glacier:(?<region>[^:]*):(?<account>[^:]*):vaults\/(?<vaultName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for glacier resources.
@@ -143,16 +170,7 @@ export class GlacierResources {
 	/**
 	 * Builds an ARN for the vault resource.
 	 */
-	static vault(props: {
-		/** The VaultName component of the ARN. */
-		readonly vaultName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vault(props: GlacierVaultArnProps): string {
 		return `arn:${props.partition ?? "aws"}:glacier:${props.region ?? "*"}:${props.account ?? "*"}:vaults/${props.vaultName}`;
 	}
 
@@ -167,12 +185,7 @@ export class GlacierResources {
 	 * Parses a vault ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVaultArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vaultName: string;
-	} {
+	static parseVaultArn(arn: string): GlacierVaultArnComponents {
 		const match = VaultArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vault ARN: ${arn}`);
@@ -191,104 +204,104 @@ export class GlacierResources {
  */
 export class GlacierOperations {
 	/** IAM actions required for the AbortMultipartUpload API call. */
-	static readonly ABORT_MULTIPART_UPLOAD: string[] = [
+	static readonly AbortMultipartUpload: string[] = [
 		"glacier:AbortMultipartUpload",
 	];
 	/** IAM actions required for the AbortVaultLock API call. */
-	static readonly ABORT_VAULT_LOCK: string[] = ["glacier:AbortVaultLock"];
+	static readonly AbortVaultLock: string[] = ["glacier:AbortVaultLock"];
 	/** IAM actions required for the AddTagsToVault API call. */
-	static readonly ADD_TAGS_TO_VAULT: string[] = ["glacier:AddTagsToVault"];
+	static readonly AddTagsToVault: string[] = ["glacier:AddTagsToVault"];
 	/** IAM actions required for the CompleteMultipartUpload API call. */
-	static readonly COMPLETE_MULTIPART_UPLOAD: string[] = [
+	static readonly CompleteMultipartUpload: string[] = [
 		"glacier:CompleteMultipartUpload",
 	];
 	/** IAM actions required for the CompleteVaultLock API call. */
-	static readonly COMPLETE_VAULT_LOCK: string[] = ["glacier:CompleteVaultLock"];
+	static readonly CompleteVaultLock: string[] = ["glacier:CompleteVaultLock"];
 	/** IAM actions required for the CreateVault API call. */
-	static readonly CREATE_VAULT: string[] = ["glacier:CreateVault"];
+	static readonly CreateVault: string[] = ["glacier:CreateVault"];
 	/** IAM actions required for the DeleteArchive API call. */
-	static readonly DELETE_ARCHIVE: string[] = ["glacier:DeleteArchive"];
+	static readonly DeleteArchive: string[] = ["glacier:DeleteArchive"];
 	/** IAM actions required for the DeleteVault API call. */
-	static readonly DELETE_VAULT: string[] = ["glacier:DeleteVault"];
+	static readonly DeleteVault: string[] = ["glacier:DeleteVault"];
 	/** IAM actions required for the DeleteVaultAccessPolicy API call. */
-	static readonly DELETE_VAULT_ACCESS_POLICY: string[] = [
+	static readonly DeleteVaultAccessPolicy: string[] = [
 		"glacier:DeleteVaultAccessPolicy",
 	];
 	/** IAM actions required for the DeleteVaultNotifications API call. */
-	static readonly DELETE_VAULT_NOTIFICATIONS: string[] = [
+	static readonly DeleteVaultNotifications: string[] = [
 		"glacier:DeleteVaultNotifications",
 	];
 	/** IAM actions required for the DescribeJob API call. */
-	static readonly DESCRIBE_JOB: string[] = ["glacier:DescribeJob"];
+	static readonly DescribeJob: string[] = ["glacier:DescribeJob"];
 	/** IAM actions required for the DescribeVault API call. */
-	static readonly DESCRIBE_VAULT: string[] = ["glacier:DescribeVault"];
+	static readonly DescribeVault: string[] = ["glacier:DescribeVault"];
 	/** IAM actions required for the GetDataRetrievalPolicy API call. */
-	static readonly GET_DATA_RETRIEVAL_POLICY: string[] = [
+	static readonly opGetDataRetrievalPolicy: string[] = [
 		"glacier:GetDataRetrievalPolicy",
 	];
 	/** IAM actions required for the GetJobOutput API call. */
-	static readonly GET_JOB_OUTPUT: string[] = ["glacier:GetJobOutput"];
+	static readonly opGetJobOutput: string[] = ["glacier:GetJobOutput"];
 	/** IAM actions required for the GetVaultAccessPolicy API call. */
-	static readonly GET_VAULT_ACCESS_POLICY: string[] = [
+	static readonly opGetVaultAccessPolicy: string[] = [
 		"glacier:GetVaultAccessPolicy",
 	];
 	/** IAM actions required for the GetVaultLock API call. */
-	static readonly GET_VAULT_LOCK: string[] = ["glacier:GetVaultLock"];
+	static readonly opGetVaultLock: string[] = ["glacier:GetVaultLock"];
 	/** IAM actions required for the GetVaultNotifications API call. */
-	static readonly GET_VAULT_NOTIFICATIONS: string[] = [
+	static readonly opGetVaultNotifications: string[] = [
 		"glacier:GetVaultNotifications",
 	];
 	/** IAM actions required for the InitiateJob API call. */
-	static readonly INITIATE_JOB: string[] = [
+	static readonly InitiateJob: string[] = [
 		"glacier:GetJobOutput",
 		"glacier:InitiateJob",
 	];
 	/** IAM actions required for the InitiateMultipartUpload API call. */
-	static readonly INITIATE_MULTIPART_UPLOAD: string[] = [
+	static readonly InitiateMultipartUpload: string[] = [
 		"glacier:InitiateMultipartUpload",
 	];
 	/** IAM actions required for the InitiateVaultLock API call. */
-	static readonly INITIATE_VAULT_LOCK: string[] = ["glacier:InitiateVaultLock"];
+	static readonly InitiateVaultLock: string[] = ["glacier:InitiateVaultLock"];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["glacier:ListJobs"];
+	static readonly ListJobs: string[] = ["glacier:ListJobs"];
 	/** IAM actions required for the ListMultipartUploads API call. */
-	static readonly LIST_MULTIPART_UPLOADS: string[] = [
+	static readonly ListMultipartUploads: string[] = [
 		"glacier:ListMultipartUploads",
 	];
 	/** IAM actions required for the ListParts API call. */
-	static readonly LIST_PARTS: string[] = ["glacier:ListParts"];
+	static readonly ListParts: string[] = ["glacier:ListParts"];
 	/** IAM actions required for the ListProvisionedCapacity API call. */
-	static readonly LIST_PROVISIONED_CAPACITY: string[] = [
+	static readonly ListProvisionedCapacity: string[] = [
 		"glacier:ListProvisionedCapacity",
 	];
 	/** IAM actions required for the ListTagsForVault API call. */
-	static readonly LIST_TAGS_FOR_VAULT: string[] = ["glacier:ListTagsForVault"];
+	static readonly ListTagsForVault: string[] = ["glacier:ListTagsForVault"];
 	/** IAM actions required for the ListVaults API call. */
-	static readonly LIST_VAULTS: string[] = ["glacier:ListVaults"];
+	static readonly ListVaults: string[] = ["glacier:ListVaults"];
 	/** IAM actions required for the PurchaseProvisionedCapacity API call. */
-	static readonly PURCHASE_PROVISIONED_CAPACITY: string[] = [
+	static readonly PurchaseProvisionedCapacity: string[] = [
 		"glacier:PurchaseProvisionedCapacity",
 	];
 	/** IAM actions required for the RemoveTagsFromVault API call. */
-	static readonly REMOVE_TAGS_FROM_VAULT: string[] = [
+	static readonly RemoveTagsFromVault: string[] = [
 		"glacier:RemoveTagsFromVault",
 	];
 	/** IAM actions required for the SetDataRetrievalPolicy API call. */
-	static readonly SET_DATA_RETRIEVAL_POLICY: string[] = [
+	static readonly opSetDataRetrievalPolicy: string[] = [
 		"glacier:SetDataRetrievalPolicy",
 	];
 	/** IAM actions required for the SetVaultAccessPolicy API call. */
-	static readonly SET_VAULT_ACCESS_POLICY: string[] = [
+	static readonly opSetVaultAccessPolicy: string[] = [
 		"glacier:SetVaultAccessPolicy",
 	];
 	/** IAM actions required for the SetVaultNotifications API call. */
-	static readonly SET_VAULT_NOTIFICATIONS: string[] = [
+	static readonly opSetVaultNotifications: string[] = [
 		"glacier:SetVaultNotifications",
 	];
 	/** IAM actions required for the UploadArchive API call. */
-	static readonly UPLOAD_ARCHIVE: string[] = ["glacier:UploadArchive"];
+	static readonly UploadArchive: string[] = ["glacier:UploadArchive"];
 	/** IAM actions required for the UploadMultipartPart API call. */
-	static readonly UPLOAD_MULTIPART_PART: string[] = [
+	static readonly UploadMultipartPart: string[] = [
 		"glacier:UploadMultipartPart",
 	];
 }
@@ -298,11 +311,11 @@ export class GlacierOperations {
  */
 export class GlacierConditions {
 	/** Condition keys applicable to the DeleteArchive action. */
-	static readonly DELETE_ARCHIVE_CONDITION_KEYS: string[] = [
+	static readonly DeleteArchiveConditionKeys: string[] = [
 		"glacier:ArchiveAgeInDays",
 	];
 	/** Condition keys applicable to the InitiateJob action. */
-	static readonly INITIATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly InitiateJobConditionKeys: string[] = [
 		"glacier:ArchiveAgeInDays",
 	];
 

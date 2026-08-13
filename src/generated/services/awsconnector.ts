@@ -13,25 +13,25 @@ export class AwsconnectorActions {
 	static readonly SERVICE_PREFIX = "awsconnector";
 
 	/** [Read] awsconnector:GetConnectorHealth */
-	static readonly GET_CONNECTOR_HEALTH = "awsconnector:GetConnectorHealth";
+	static readonly actionGetConnectorHealth = "awsconnector:GetConnectorHealth";
 	/** [Write] awsconnector:RegisterConnector */
-	static readonly REGISTER_CONNECTOR = "awsconnector:RegisterConnector";
+	static readonly RegisterConnector = "awsconnector:RegisterConnector";
 	/** [Read] awsconnector:ValidateConnectorId */
-	static readonly VALIDATE_CONNECTOR_ID = "awsconnector:ValidateConnectorId";
+	static readonly ValidateConnectorId = "awsconnector:ValidateConnectorId";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AwsconnectorActions.GET_CONNECTOR_HEALTH,
-		AwsconnectorActions.VALIDATE_CONNECTOR_ID,
+	static readonly AllReadActions: string[] = [
+		AwsconnectorActions.actionGetConnectorHealth,
+		AwsconnectorActions.ValidateConnectorId,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AwsconnectorActions.REGISTER_CONNECTOR,
+	static readonly AllWriteActions: string[] = [
+		AwsconnectorActions.RegisterConnector,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

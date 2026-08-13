@@ -13,86 +13,195 @@ export class STSActions {
 	static readonly SERVICE_PREFIX = "sts";
 
 	/** [Write] sts:AssumeRole */
-	static readonly ASSUME_ROLE = "sts:AssumeRole";
+	static readonly AssumeRole = "sts:AssumeRole";
 	/** [Write] sts:AssumeRoleWithSAML */
-	static readonly ASSUME_ROLE_WITH_SAML = "sts:AssumeRoleWithSAML";
+	static readonly AssumeRoleWithSAML = "sts:AssumeRoleWithSAML";
 	/** [Write] sts:AssumeRoleWithWebIdentity */
-	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY =
-		"sts:AssumeRoleWithWebIdentity";
+	static readonly AssumeRoleWithWebIdentity = "sts:AssumeRoleWithWebIdentity";
 	/** [Write] sts:AssumeRoot */
-	static readonly ASSUME_ROOT = "sts:AssumeRoot";
+	static readonly AssumeRoot = "sts:AssumeRoot";
 	/** [Write] sts:DecodeAuthorizationMessage */
-	static readonly DECODE_AUTHORIZATION_MESSAGE =
-		"sts:DecodeAuthorizationMessage";
+	static readonly DecodeAuthorizationMessage = "sts:DecodeAuthorizationMessage";
 	/** [Read] sts:GetAccessKeyInfo */
-	static readonly GET_ACCESS_KEY_INFO = "sts:GetAccessKeyInfo";
+	static readonly actionGetAccessKeyInfo = "sts:GetAccessKeyInfo";
 	/** [Read] sts:GetCallerIdentity */
-	static readonly GET_CALLER_IDENTITY = "sts:GetCallerIdentity";
+	static readonly actionGetCallerIdentity = "sts:GetCallerIdentity";
 	/** [Write] sts:GetDelegatedAccessToken */
-	static readonly GET_DELEGATED_ACCESS_TOKEN = "sts:GetDelegatedAccessToken";
+	static readonly actionGetDelegatedAccessToken = "sts:GetDelegatedAccessToken";
 	/** [Write] sts:GetFederationToken */
-	static readonly GET_FEDERATION_TOKEN = "sts:GetFederationToken";
+	static readonly actionGetFederationToken = "sts:GetFederationToken";
 	/** [Read] sts:GetServiceBearerToken */
-	static readonly GET_SERVICE_BEARER_TOKEN = "sts:GetServiceBearerToken";
+	static readonly actionGetServiceBearerToken = "sts:GetServiceBearerToken";
 	/** [Read] sts:GetSessionToken */
-	static readonly GET_SESSION_TOKEN = "sts:GetSessionToken";
+	static readonly actionGetSessionToken = "sts:GetSessionToken";
 	/** [Write] sts:GetWebIdentityToken */
-	static readonly GET_WEB_IDENTITY_TOKEN = "sts:GetWebIdentityToken";
+	static readonly actionGetWebIdentityToken = "sts:GetWebIdentityToken";
 	/** [Write] sts:SetContext */
-	static readonly SET_CONTEXT = "sts:SetContext";
+	static readonly actionSetContext = "sts:SetContext";
 	/** [Write] sts:SetSourceIdentity */
-	static readonly SET_SOURCE_IDENTITY = "sts:SetSourceIdentity";
+	static readonly actionSetSourceIdentity = "sts:SetSourceIdentity";
 	/** [Tagging] sts:TagGetWebIdentityToken */
-	static readonly TAG_GET_WEB_IDENTITY_TOKEN = "sts:TagGetWebIdentityToken";
+	static readonly TagGetWebIdentityToken = "sts:TagGetWebIdentityToken";
 	/** [Tagging] sts:TagSession */
-	static readonly TAG_SESSION = "sts:TagSession";
+	static readonly TagSession = "sts:TagSession";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		STSActions.GET_ACCESS_KEY_INFO,
-		STSActions.GET_CALLER_IDENTITY,
-		STSActions.GET_SERVICE_BEARER_TOKEN,
-		STSActions.GET_SESSION_TOKEN,
+	static readonly AllReadActions: string[] = [
+		STSActions.actionGetAccessKeyInfo,
+		STSActions.actionGetCallerIdentity,
+		STSActions.actionGetServiceBearerToken,
+		STSActions.actionGetSessionToken,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		STSActions.ASSUME_ROLE,
-		STSActions.ASSUME_ROLE_WITH_SAML,
-		STSActions.ASSUME_ROLE_WITH_WEB_IDENTITY,
-		STSActions.ASSUME_ROOT,
-		STSActions.DECODE_AUTHORIZATION_MESSAGE,
-		STSActions.GET_DELEGATED_ACCESS_TOKEN,
-		STSActions.GET_FEDERATION_TOKEN,
-		STSActions.GET_WEB_IDENTITY_TOKEN,
-		STSActions.SET_CONTEXT,
-		STSActions.SET_SOURCE_IDENTITY,
+	static readonly AllWriteActions: string[] = [
+		STSActions.AssumeRole,
+		STSActions.AssumeRoleWithSAML,
+		STSActions.AssumeRoleWithWebIdentity,
+		STSActions.AssumeRoot,
+		STSActions.DecodeAuthorizationMessage,
+		STSActions.actionGetDelegatedAccessToken,
+		STSActions.actionGetFederationToken,
+		STSActions.actionGetWebIdentityToken,
+		STSActions.actionSetContext,
+		STSActions.actionSetSourceIdentity,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		STSActions.TAG_GET_WEB_IDENTITY_TOKEN,
-		STSActions.TAG_SESSION,
+	static readonly AllTaggingActions: string[] = [
+		STSActions.TagGetWebIdentityToken,
+		STSActions.TagSession,
 	];
 }
 
-const ContextProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iam::aws:contextProvider/(?<contextProviderName>[^:/?]+)$",
-);
-const FederatedUserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):federated-user/(?<federatedUserName>[^:/?]+)$",
-);
-const RoleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role/(?<roleNameWithPath>[^:/?]+)$",
-);
-const RootUserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):root$",
-);
-const SelfSessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):self$",
-);
+/**
+ * Properties for building a context-provider ARN.
+ */
+export interface STSContextProviderArnProps {
+	/** The ContextProviderName component of the ARN. */
+	readonly contextProviderName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a context-provider ARN.
+ */
+export interface STSContextProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ContextProviderName component. */
+	readonly contextProviderName: string;
+}
+
+/**
+ * Properties for building a federated-user ARN.
+ */
+export interface STSFederatedUserArnProps {
+	/** The FederatedUserName component of the ARN. */
+	readonly federatedUserName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a federated-user ARN.
+ */
+export interface STSFederatedUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FederatedUserName component. */
+	readonly federatedUserName: string;
+}
+
+/**
+ * Properties for building a role ARN.
+ */
+export interface STSRoleArnProps {
+	/** The RoleNameWithPath component of the ARN. */
+	readonly roleNameWithPath: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a role ARN.
+ */
+export interface STSRoleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RoleNameWithPath component. */
+	readonly roleNameWithPath: string;
+}
+
+/**
+ * Properties for building a root-user ARN.
+ */
+export interface STSRootUserArnProps {
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a root-user ARN.
+ */
+export interface STSRootUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a self-session ARN.
+ */
+export interface STSSelfSessionArnProps {
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a self-session ARN.
+ */
+export interface STSSelfSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const ContextProviderArnRegex =
+	/^arn:(?<partition>[^:]+):iam::aws:contextProvider\/(?<contextProviderName>[^:/?]+)$/;
+const FederatedUserArnRegex =
+	/^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):federated-user\/(?<federatedUserName>[^:/?]+)$/;
+const RoleArnRegex =
+	/^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role\/(?<roleNameWithPath>[^:/?]+)$/;
+const RootUserArnRegex =
+	/^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):root$/;
+const SelfSessionArnRegex =
+	/^arn:(?<partition>[^:]+):sts::(?<account>[^:]*):self$/;
 
 /**
  * ARN builders, validators, and parsers for sts resources.
@@ -101,16 +210,7 @@ export class STSResources {
 	/**
 	 * Builds an ARN for the context-provider resource.
 	 */
-	static contextProvider(props: {
-		/** The ContextProviderName component of the ARN. */
-		readonly contextProviderName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static contextProvider(props: STSContextProviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iam::aws:contextProvider/${props.contextProviderName}`;
 	}
 
@@ -125,12 +225,7 @@ export class STSResources {
 	 * Parses a context-provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContextProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		contextProviderName: string;
-	} {
+	static parseContextProviderArn(arn: string): STSContextProviderArnComponents {
 		const match = ContextProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid context-provider ARN: ${arn}`);
@@ -146,14 +241,7 @@ export class STSResources {
 	/**
 	 * Builds an ARN for the federated-user resource.
 	 */
-	static federatedUser(props: {
-		/** The FederatedUserName component of the ARN. */
-		readonly federatedUserName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static federatedUser(props: STSFederatedUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sts::${props.account ?? "*"}:federated-user/${props.federatedUserName}`;
 	}
 
@@ -168,11 +256,7 @@ export class STSResources {
 	 * Parses a federated-user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFederatedUserArn(arn: string): {
-		partition: string;
-		account: string;
-		federatedUserName: string;
-	} {
+	static parseFederatedUserArn(arn: string): STSFederatedUserArnComponents {
 		const match = FederatedUserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid federated-user ARN: ${arn}`);
@@ -187,14 +271,7 @@ export class STSResources {
 	/**
 	 * Builds an ARN for the role resource.
 	 */
-	static role(props: {
-		/** The RoleNameWithPath component of the ARN. */
-		readonly roleNameWithPath: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static role(props: STSRoleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iam::${props.account ?? "*"}:role/${props.roleNameWithPath}`;
 	}
 
@@ -209,11 +286,7 @@ export class STSResources {
 	 * Parses a role ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoleArn(arn: string): {
-		partition: string;
-		account: string;
-		roleNameWithPath: string;
-	} {
+	static parseRoleArn(arn: string): STSRoleArnComponents {
 		const match = RoleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid role ARN: ${arn}`);
@@ -228,12 +301,7 @@ export class STSResources {
 	/**
 	 * Builds an ARN for the root-user resource.
 	 */
-	static rootUser(props: {
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rootUser(props: STSRootUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iam::${props.account ?? "*"}:root`;
 	}
 
@@ -248,7 +316,7 @@ export class STSResources {
 	 * Parses a root-user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRootUserArn(arn: string): { partition: string; account: string } {
+	static parseRootUserArn(arn: string): STSRootUserArnComponents {
 		const match = RootUserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid root-user ARN: ${arn}`);
@@ -262,12 +330,7 @@ export class STSResources {
 	/**
 	 * Builds an ARN for the self-session resource.
 	 */
-	static selfSession(props: {
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static selfSession(props: STSSelfSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sts::${props.account ?? "*"}:self`;
 	}
 
@@ -282,10 +345,7 @@ export class STSResources {
 	 * Parses a self-session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSelfSessionArn(arn: string): {
-		partition: string;
-		account: string;
-	} {
+	static parseSelfSessionArn(arn: string): STSSelfSessionArnComponents {
 		const match = SelfSessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid self-session ARN: ${arn}`);
@@ -302,39 +362,39 @@ export class STSResources {
  */
 export class STSOperations {
 	/** IAM actions required for the AssumeRole API call. */
-	static readonly ASSUME_ROLE: string[] = [
+	static readonly AssumeRole: string[] = [
 		"sts:AssumeRole",
 		"sts:SetContext",
 		"sts:SetSourceIdentity",
 		"sts:TagSession",
 	];
 	/** IAM actions required for the AssumeRoleWithSAML API call. */
-	static readonly ASSUME_ROLE_WITH_SAML: string[] = [];
+	static readonly AssumeRoleWithSAML: string[] = [];
 	/** IAM actions required for the AssumeRoleWithWebIdentity API call. */
-	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY: string[] = [];
+	static readonly AssumeRoleWithWebIdentity: string[] = [];
 	/** IAM actions required for the AssumeRoot API call. */
-	static readonly ASSUME_ROOT: string[] = ["sts:AssumeRoot"];
+	static readonly AssumeRoot: string[] = ["sts:AssumeRoot"];
 	/** IAM actions required for the DecodeAuthorizationMessage API call. */
-	static readonly DECODE_AUTHORIZATION_MESSAGE: string[] = [
+	static readonly DecodeAuthorizationMessage: string[] = [
 		"sts:DecodeAuthorizationMessage",
 	];
 	/** IAM actions required for the GetAccessKeyInfo API call. */
-	static readonly GET_ACCESS_KEY_INFO: string[] = ["sts:GetAccessKeyInfo"];
+	static readonly opGetAccessKeyInfo: string[] = ["sts:GetAccessKeyInfo"];
 	/** IAM actions required for the GetCallerIdentity API call. */
-	static readonly GET_CALLER_IDENTITY: string[] = ["sts:GetCallerIdentity"];
+	static readonly opGetCallerIdentity: string[] = ["sts:GetCallerIdentity"];
 	/** IAM actions required for the GetDelegatedAccessToken API call. */
-	static readonly GET_DELEGATED_ACCESS_TOKEN: string[] = [
+	static readonly opGetDelegatedAccessToken: string[] = [
 		"sts:GetDelegatedAccessToken",
 	];
 	/** IAM actions required for the GetFederationToken API call. */
-	static readonly GET_FEDERATION_TOKEN: string[] = [
+	static readonly opGetFederationToken: string[] = [
 		"sts:GetFederationToken",
 		"sts:TagSession",
 	];
 	/** IAM actions required for the GetSessionToken API call. */
-	static readonly GET_SESSION_TOKEN: string[] = ["sts:GetSessionToken"];
+	static readonly opGetSessionToken: string[] = ["sts:GetSessionToken"];
 	/** IAM actions required for the GetWebIdentityToken API call. */
-	static readonly GET_WEB_IDENTITY_TOKEN: string[] = [
+	static readonly opGetWebIdentityToken: string[] = [
 		"sts:GetWebIdentityToken",
 		"sts:TagGetWebIdentityToken",
 	];
@@ -345,7 +405,7 @@ export class STSOperations {
  */
 export class STSConditions {
 	/** Condition keys applicable to the AssumeRole action. */
-	static readonly ASSUME_ROLE_CONDITION_KEYS: string[] = [
+	static readonly AssumeRoleConditionKeys: string[] = [
 		"accounts.google.com:aud",
 		"accounts.google.com:sub",
 		"aws:RequestTag/${TagKey}",
@@ -367,7 +427,7 @@ export class STSConditions {
 		"www.amazon.com:user_id",
 	];
 	/** Condition keys applicable to the AssumeRoleWithSAML action. */
-	static readonly ASSUME_ROLE_WITH_SAML_CONDITION_KEYS: string[] = [
+	static readonly AssumeRoleWithSAMLConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"saml:aud",
@@ -407,7 +467,7 @@ export class STSConditions {
 		"sts:TransitiveTagKeys",
 	];
 	/** Condition keys applicable to the AssumeRoleWithWebIdentity action. */
-	static readonly ASSUME_ROLE_WITH_WEB_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly AssumeRoleWithWebIdentityConditionKeys: string[] = [
 		"accounts.google.com:aud",
 		"accounts.google.com:google/organization_number",
 		"accounts.google.com:oaud",
@@ -499,19 +559,19 @@ export class STSConditions {
 		"www.amazon.com:user_id",
 	];
 	/** Condition keys applicable to the AssumeRoot action. */
-	static readonly ASSUME_ROOT_CONDITION_KEYS: string[] = ["sts:TaskPolicyArn"];
+	static readonly AssumeRootConditionKeys: string[] = ["sts:TaskPolicyArn"];
 	/** Condition keys applicable to the GetFederationToken action. */
-	static readonly GET_FEDERATION_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly actionGetFederationTokenConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetServiceBearerToken action. */
-	static readonly GET_SERVICE_BEARER_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly actionGetServiceBearerTokenConditionKeys: string[] = [
 		"sts:AWSServiceName",
 		"sts:DurationSeconds",
 	];
 	/** Condition keys applicable to the GetWebIdentityToken action. */
-	static readonly GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly actionGetWebIdentityTokenConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"sts:DurationSeconds",
@@ -519,21 +579,21 @@ export class STSConditions {
 		"sts:SigningAlgorithm",
 	];
 	/** Condition keys applicable to the SetContext action. */
-	static readonly SET_CONTEXT_CONDITION_KEYS: string[] = [
+	static readonly actionSetContextConditionKeys: string[] = [
 		"sts:RequestContext/${ContextKey}",
 		"sts:RequestContextProviders",
 	];
 	/** Condition keys applicable to the SetSourceIdentity action. */
-	static readonly SET_SOURCE_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly actionSetSourceIdentityConditionKeys: string[] = [
 		"sts:SourceIdentity",
 	];
 	/** Condition keys applicable to the TagGetWebIdentityToken action. */
-	static readonly TAG_GET_WEB_IDENTITY_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly TagGetWebIdentityTokenConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagSession action. */
-	static readonly TAG_SESSION_CONDITION_KEYS: string[] = [
+	static readonly TagSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"saml:aud",
@@ -565,49 +625,14 @@ export class STSConditions {
 	static readonly PIPELINE_ID = "agent.${Domain}.buildkite.dev:pipeline_id";
 	/** Condition key: agent.${Domain}.buildkite.dev:pipeline_slug (String) */
 	static readonly PIPELINE_SLUG = "agent.${Domain}.buildkite.dev:pipeline_slug";
-	/** Condition key: agent.${Domain}.buildkite.site:build_branch (String) */
-	static readonly BUILD_BRANCH = "agent.${Domain}.buildkite.site:build_branch";
-	/** Condition key: agent.${Domain}.buildkite.site:cluster_id (String) */
-	static readonly CLUSTER_ID = "agent.${Domain}.buildkite.site:cluster_id";
-	/** Condition key: agent.${Domain}.buildkite.site:cluster_name (String) */
-	static readonly CLUSTER_NAME = "agent.${Domain}.buildkite.site:cluster_name";
-	/** Condition key: agent.${Domain}.buildkite.site:organization_id (String) */
-	static readonly ORGANIZATION_ID =
-		"agent.${Domain}.buildkite.site:organization_id";
-	/** Condition key: agent.${Domain}.buildkite.site:organization_slug (String) */
-	static readonly ORGANIZATION_SLUG =
-		"agent.${Domain}.buildkite.site:organization_slug";
-	/** Condition key: agent.${Domain}.buildkite.site:pipeline_id (String) */
-	static readonly PIPELINE_ID = "agent.${Domain}.buildkite.site:pipeline_id";
-	/** Condition key: agent.${Domain}.buildkite.site:pipeline_slug (String) */
-	static readonly PIPELINE_SLUG =
-		"agent.${Domain}.buildkite.site:pipeline_slug";
-	/** Condition key: agent.buildkite.com:build_branch (String) */
-	static readonly BUILD_BRANCH = "agent.buildkite.com:build_branch";
-	/** Condition key: agent.buildkite.com:cluster_id (String) */
-	static readonly CLUSTER_ID = "agent.buildkite.com:cluster_id";
-	/** Condition key: agent.buildkite.com:cluster_name (String) */
-	static readonly CLUSTER_NAME = "agent.buildkite.com:cluster_name";
-	/** Condition key: agent.buildkite.com:organization_id (String) */
-	static readonly ORGANIZATION_ID = "agent.buildkite.com:organization_id";
-	/** Condition key: agent.buildkite.com:organization_slug (String) */
-	static readonly ORGANIZATION_SLUG = "agent.buildkite.com:organization_slug";
-	/** Condition key: agent.buildkite.com:pipeline_id (String) */
-	static readonly PIPELINE_ID = "agent.buildkite.com:pipeline_id";
-	/** Condition key: agent.buildkite.com:pipeline_slug (String) */
-	static readonly PIPELINE_SLUG = "agent.buildkite.com:pipeline_slug";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cognito-identity.amazonaws.com:amr (String) */
 	static readonly AMR = "cognito-identity.amazonaws.com:amr";
-	/** Condition key: cognito-identity.amazonaws.com:aud (String) */
-	static readonly AUD = "cognito-identity.amazonaws.com:aud";
-	/** Condition key: cognito-identity.amazonaws.com:sub (String) */
-	static readonly SUB = "cognito-identity.amazonaws.com:sub";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:actor (String) */
 	static readonly ACTOR = "github.com/enterprises/${EnterpriseName}:actor";
 	/** Condition key: github.com/enterprises/${EnterpriseName}:actor_id (String) */
@@ -666,8 +691,6 @@ export class STSConditions {
 	/** Condition key: oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id (String) */
 	static readonly OIDC_CIRCLECI_COM_PROJECT_ID =
 		"oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id";
-	/** Condition key: saml:aud (String) */
-	static readonly AUD = "saml:aud";
 	/** Condition key: saml:cn (ArrayOfString) */
 	static readonly CN = "saml:cn";
 	/** Condition key: saml:commonName (String) */
@@ -723,8 +746,6 @@ export class STSConditions {
 	static readonly ORGANIZATION_STATUS = "saml:organizationStatus";
 	/** Condition key: saml:primaryGroupSID (String) */
 	static readonly PRIMARY_GROUP_SID = "saml:primaryGroupSID";
-	/** Condition key: saml:sub (String) */
-	static readonly SUB = "saml:sub";
 	/** Condition key: saml:sub_type (String) */
 	static readonly SUB_TYPE = "saml:sub_type";
 	/** Condition key: saml:surname (String) */
@@ -757,88 +778,6 @@ export class STSConditions {
 	static readonly TASK_POLICY_ARN = "sts:TaskPolicyArn";
 	/** Condition key: sts:TransitiveTagKeys (ArrayOfString) */
 	static readonly TRANSITIVE_TAG_KEYS = "sts:TransitiveTagKeys";
-	/** Condition key: token.actions.${Domain}.ghe.com:actor (String) */
-	static readonly ACTOR = "token.actions.${Domain}.ghe.com:actor";
-	/** Condition key: token.actions.${Domain}.ghe.com:actor_id (String) */
-	static readonly ACTOR_ID = "token.actions.${Domain}.ghe.com:actor_id";
-	/** Condition key: token.actions.${Domain}.ghe.com:enterprise_id (String) */
-	static readonly ENTERPRISE_ID =
-		"token.actions.${Domain}.ghe.com:enterprise_id";
-	/** Condition key: token.actions.${Domain}.ghe.com:environment (String) */
-	static readonly ENVIRONMENT = "token.actions.${Domain}.ghe.com:environment";
-	/** Condition key: token.actions.${Domain}.ghe.com:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF =
-		"token.actions.${Domain}.ghe.com:job_workflow_ref";
-	/** Condition key: token.actions.${Domain}.ghe.com:ref (String) */
-	static readonly REF = "token.actions.${Domain}.ghe.com:ref";
-	/** Condition key: token.actions.${Domain}.ghe.com:repository (String) */
-	static readonly REPOSITORY = "token.actions.${Domain}.ghe.com:repository";
-	/** Condition key: token.actions.${Domain}.ghe.com:repository_id (String) */
-	static readonly REPOSITORY_ID =
-		"token.actions.${Domain}.ghe.com:repository_id";
-	/** Condition key: token.actions.${Domain}.ghe.com:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID =
-		"token.actions.${Domain}.ghe.com:repository_owner_id";
-	/** Condition key: token.actions.${Domain}.ghe.com:workflow (String) */
-	static readonly WORKFLOW = "token.actions.${Domain}.ghe.com:workflow";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:actor (String) */
-	static readonly ACTOR =
-		"token.actions.githubusercontent.com/${SubPath}:actor";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:actor_id (String) */
-	static readonly ACTOR_ID =
-		"token.actions.githubusercontent.com/${SubPath}:actor_id";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:enterprise_id (String) */
-	static readonly ENTERPRISE_ID =
-		"token.actions.githubusercontent.com/${SubPath}:enterprise_id";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:environment (String) */
-	static readonly ENVIRONMENT =
-		"token.actions.githubusercontent.com/${SubPath}:environment";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF =
-		"token.actions.githubusercontent.com/${SubPath}:job_workflow_ref";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:ref (String) */
-	static readonly REF = "token.actions.githubusercontent.com/${SubPath}:ref";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository (String) */
-	static readonly REPOSITORY =
-		"token.actions.githubusercontent.com/${SubPath}:repository";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository_id (String) */
-	static readonly REPOSITORY_ID =
-		"token.actions.githubusercontent.com/${SubPath}:repository_id";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID =
-		"token.actions.githubusercontent.com/${SubPath}:repository_owner_id";
-	/** Condition key: token.actions.githubusercontent.com/${SubPath}:workflow (String) */
-	static readonly WORKFLOW =
-		"token.actions.githubusercontent.com/${SubPath}:workflow";
-	/** Condition key: token.actions.githubusercontent.com:actor (String) */
-	static readonly ACTOR = "token.actions.githubusercontent.com:actor";
-	/** Condition key: token.actions.githubusercontent.com:actor_id (String) */
-	static readonly ACTOR_ID = "token.actions.githubusercontent.com:actor_id";
-	/** Condition key: token.actions.githubusercontent.com:enterprise_id (String) */
-	static readonly ENTERPRISE_ID =
-		"token.actions.githubusercontent.com:enterprise_id";
-	/** Condition key: token.actions.githubusercontent.com:environment (String) */
-	static readonly ENVIRONMENT =
-		"token.actions.githubusercontent.com:environment";
-	/** Condition key: token.actions.githubusercontent.com:job_workflow_ref (String) */
-	static readonly JOB_WORKFLOW_REF =
-		"token.actions.githubusercontent.com:job_workflow_ref";
-	/** Condition key: token.actions.githubusercontent.com:ref (String) */
-	static readonly REF = "token.actions.githubusercontent.com:ref";
-	/** Condition key: token.actions.githubusercontent.com:repository (String) */
-	static readonly REPOSITORY = "token.actions.githubusercontent.com:repository";
-	/** Condition key: token.actions.githubusercontent.com:repository_id (String) */
-	static readonly REPOSITORY_ID =
-		"token.actions.githubusercontent.com:repository_id";
-	/** Condition key: token.actions.githubusercontent.com:repository_owner_id (String) */
-	static readonly REPOSITORY_OWNER_ID =
-		"token.actions.githubusercontent.com:repository_owner_id";
-	/** Condition key: token.actions.githubusercontent.com:workflow (String) */
-	static readonly WORKFLOW = "token.actions.githubusercontent.com:workflow";
-	/** Condition key: www.amazon.com:app_id (String) */
-	static readonly APP_ID = "www.amazon.com:app_id";
-	/** Condition key: www.amazon.com:user_id (String) */
-	static readonly USER_ID = "www.amazon.com:user_id";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

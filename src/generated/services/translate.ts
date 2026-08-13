@@ -13,89 +13,140 @@ export class TranslateActions {
 	static readonly SERVICE_PREFIX = "translate";
 
 	/** [Write] translate:CreateParallelData */
-	static readonly CREATE_PARALLEL_DATA = "translate:CreateParallelData";
+	static readonly CreateParallelData = "translate:CreateParallelData";
 	/** [Write] translate:DeleteParallelData */
-	static readonly DELETE_PARALLEL_DATA = "translate:DeleteParallelData";
+	static readonly DeleteParallelData = "translate:DeleteParallelData";
 	/** [Write] translate:DeleteTerminology */
-	static readonly DELETE_TERMINOLOGY = "translate:DeleteTerminology";
+	static readonly DeleteTerminology = "translate:DeleteTerminology";
 	/** [Read] translate:DescribeTextTranslationJob */
-	static readonly DESCRIBE_TEXT_TRANSLATION_JOB =
+	static readonly DescribeTextTranslationJob =
 		"translate:DescribeTextTranslationJob";
 	/** [Read] translate:GetParallelData */
-	static readonly GET_PARALLEL_DATA = "translate:GetParallelData";
+	static readonly actionGetParallelData = "translate:GetParallelData";
 	/** [Read] translate:GetTerminology */
-	static readonly GET_TERMINOLOGY = "translate:GetTerminology";
+	static readonly actionGetTerminology = "translate:GetTerminology";
 	/** [Write] translate:ImportTerminology */
-	static readonly IMPORT_TERMINOLOGY = "translate:ImportTerminology";
+	static readonly ImportTerminology = "translate:ImportTerminology";
 	/** [List] translate:ListLanguages */
-	static readonly LIST_LANGUAGES = "translate:ListLanguages";
+	static readonly ListLanguages = "translate:ListLanguages";
 	/** [List] translate:ListParallelData */
-	static readonly LIST_PARALLEL_DATA = "translate:ListParallelData";
+	static readonly ListParallelData = "translate:ListParallelData";
 	/** [Read] translate:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "translate:ListTagsForResource";
+	static readonly ListTagsForResource = "translate:ListTagsForResource";
 	/** [List] translate:ListTerminologies */
-	static readonly LIST_TERMINOLOGIES = "translate:ListTerminologies";
+	static readonly ListTerminologies = "translate:ListTerminologies";
 	/** [List] translate:ListTextTranslationJobs */
-	static readonly LIST_TEXT_TRANSLATION_JOBS =
-		"translate:ListTextTranslationJobs";
+	static readonly ListTextTranslationJobs = "translate:ListTextTranslationJobs";
 	/** [Write] translate:StartTextTranslationJob */
-	static readonly START_TEXT_TRANSLATION_JOB =
-		"translate:StartTextTranslationJob";
+	static readonly StartTextTranslationJob = "translate:StartTextTranslationJob";
 	/** [Write] translate:StopTextTranslationJob */
-	static readonly STOP_TEXT_TRANSLATION_JOB =
-		"translate:StopTextTranslationJob";
+	static readonly StopTextTranslationJob = "translate:StopTextTranslationJob";
 	/** [Tagging] translate:TagResource */
-	static readonly TAG_RESOURCE = "translate:TagResource";
+	static readonly TagResource = "translate:TagResource";
 	/** [Read] translate:TranslateDocument */
-	static readonly TRANSLATE_DOCUMENT = "translate:TranslateDocument";
+	static readonly TranslateDocument = "translate:TranslateDocument";
 	/** [Read] translate:TranslateText */
-	static readonly TRANSLATE_TEXT = "translate:TranslateText";
+	static readonly TranslateText = "translate:TranslateText";
 	/** [Tagging] translate:UntagResource */
-	static readonly UNTAG_RESOURCE = "translate:UntagResource";
+	static readonly UntagResource = "translate:UntagResource";
 	/** [Write] translate:UpdateParallelData */
-	static readonly UPDATE_PARALLEL_DATA = "translate:UpdateParallelData";
+	static readonly UpdateParallelData = "translate:UpdateParallelData";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TranslateActions.DESCRIBE_TEXT_TRANSLATION_JOB,
-		TranslateActions.GET_PARALLEL_DATA,
-		TranslateActions.GET_TERMINOLOGY,
-		TranslateActions.LIST_TAGS_FOR_RESOURCE,
-		TranslateActions.TRANSLATE_DOCUMENT,
-		TranslateActions.TRANSLATE_TEXT,
+	static readonly AllReadActions: string[] = [
+		TranslateActions.DescribeTextTranslationJob,
+		TranslateActions.actionGetParallelData,
+		TranslateActions.actionGetTerminology,
+		TranslateActions.ListTagsForResource,
+		TranslateActions.TranslateDocument,
+		TranslateActions.TranslateText,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		TranslateActions.CREATE_PARALLEL_DATA,
-		TranslateActions.DELETE_PARALLEL_DATA,
-		TranslateActions.DELETE_TERMINOLOGY,
-		TranslateActions.IMPORT_TERMINOLOGY,
-		TranslateActions.START_TEXT_TRANSLATION_JOB,
-		TranslateActions.STOP_TEXT_TRANSLATION_JOB,
-		TranslateActions.UPDATE_PARALLEL_DATA,
+	static readonly AllWriteActions: string[] = [
+		TranslateActions.CreateParallelData,
+		TranslateActions.DeleteParallelData,
+		TranslateActions.DeleteTerminology,
+		TranslateActions.ImportTerminology,
+		TranslateActions.StartTextTranslationJob,
+		TranslateActions.StopTextTranslationJob,
+		TranslateActions.UpdateParallelData,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		TranslateActions.LIST_LANGUAGES,
-		TranslateActions.LIST_PARALLEL_DATA,
-		TranslateActions.LIST_TERMINOLOGIES,
-		TranslateActions.LIST_TEXT_TRANSLATION_JOBS,
+	static readonly AllListActions: string[] = [
+		TranslateActions.ListLanguages,
+		TranslateActions.ListParallelData,
+		TranslateActions.ListTerminologies,
+		TranslateActions.ListTextTranslationJobs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		TranslateActions.TAG_RESOURCE,
-		TranslateActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		TranslateActions.TagResource,
+		TranslateActions.UntagResource,
 	];
 }
 
-const ParallelDataArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):translate:(?<region>[^:]*):(?<account>[^:]*):parallel-data/(?<resourceName>[^:/?]+)$",
-);
-const TerminologyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):translate:(?<region>[^:]*):(?<account>[^:]*):terminology/(?<resourceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a parallel-data ARN.
+ */
+export interface TranslateParallelDataArnProps {
+	/** The ResourceName component of the ARN. */
+	readonly resourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a parallel-data ARN.
+ */
+export interface TranslateParallelDataArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceName component. */
+	readonly resourceName: string;
+}
+
+/**
+ * Properties for building a terminology ARN.
+ */
+export interface TranslateTerminologyArnProps {
+	/** The ResourceName component of the ARN. */
+	readonly resourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a terminology ARN.
+ */
+export interface TranslateTerminologyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceName component. */
+	readonly resourceName: string;
+}
+
+const ParallelDataArnRegex =
+	/^arn:(?<partition>[^:]+):translate:(?<region>[^:]*):(?<account>[^:]*):parallel-data\/(?<resourceName>[^:/?]+)$/;
+const TerminologyArnRegex =
+	/^arn:(?<partition>[^:]+):translate:(?<region>[^:]*):(?<account>[^:]*):terminology\/(?<resourceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for translate resources.
@@ -104,16 +155,7 @@ export class TranslateResources {
 	/**
 	 * Builds an ARN for the parallel-data resource.
 	 */
-	static parallelData(props: {
-		/** The ResourceName component of the ARN. */
-		readonly resourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static parallelData(props: TranslateParallelDataArnProps): string {
 		return `arn:${props.partition ?? "aws"}:translate:${props.region ?? "*"}:${props.account ?? "*"}:parallel-data/${props.resourceName}`;
 	}
 
@@ -128,12 +170,7 @@ export class TranslateResources {
 	 * Parses a parallel-data ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseParallelDataArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceName: string;
-	} {
+	static parseParallelDataArn(arn: string): TranslateParallelDataArnComponents {
 		const match = ParallelDataArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid parallel-data ARN: ${arn}`);
@@ -149,16 +186,7 @@ export class TranslateResources {
 	/**
 	 * Builds an ARN for the terminology resource.
 	 */
-	static terminology(props: {
-		/** The ResourceName component of the ARN. */
-		readonly resourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static terminology(props: TranslateTerminologyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:translate:${props.region ?? "*"}:${props.account ?? "*"}:terminology/${props.resourceName}`;
 	}
 
@@ -173,12 +201,7 @@ export class TranslateResources {
 	 * Parses a terminology ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTerminologyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceName: string;
-	} {
+	static parseTerminologyArn(arn: string): TranslateTerminologyArnComponents {
 		const match = TerminologyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid terminology ARN: ${arn}`);
@@ -197,68 +220,62 @@ export class TranslateResources {
  */
 export class TranslateOperations {
 	/** IAM actions required for the CreateParallelData API call. */
-	static readonly CREATE_PARALLEL_DATA: string[] = [
+	static readonly CreateParallelData: string[] = [
 		"translate:CreateParallelData",
 		"translate:TagResource",
 	];
 	/** IAM actions required for the DeleteParallelData API call. */
-	static readonly DELETE_PARALLEL_DATA: string[] = [
+	static readonly DeleteParallelData: string[] = [
 		"translate:DeleteParallelData",
 	];
 	/** IAM actions required for the DeleteTerminology API call. */
-	static readonly DELETE_TERMINOLOGY: string[] = [
-		"translate:DeleteTerminology",
-	];
+	static readonly DeleteTerminology: string[] = ["translate:DeleteTerminology"];
 	/** IAM actions required for the DescribeTextTranslationJob API call. */
-	static readonly DESCRIBE_TEXT_TRANSLATION_JOB: string[] = [
+	static readonly DescribeTextTranslationJob: string[] = [
 		"translate:DescribeTextTranslationJob",
 	];
 	/** IAM actions required for the GetParallelData API call. */
-	static readonly GET_PARALLEL_DATA: string[] = ["translate:GetParallelData"];
+	static readonly opGetParallelData: string[] = ["translate:GetParallelData"];
 	/** IAM actions required for the GetTerminology API call. */
-	static readonly GET_TERMINOLOGY: string[] = ["translate:GetTerminology"];
+	static readonly opGetTerminology: string[] = ["translate:GetTerminology"];
 	/** IAM actions required for the ImportTerminology API call. */
-	static readonly IMPORT_TERMINOLOGY: string[] = [
+	static readonly ImportTerminology: string[] = [
 		"translate:ImportTerminology",
 		"translate:TagResource",
 	];
 	/** IAM actions required for the ListLanguages API call. */
-	static readonly LIST_LANGUAGES: string[] = ["translate:ListLanguages"];
+	static readonly ListLanguages: string[] = ["translate:ListLanguages"];
 	/** IAM actions required for the ListParallelData API call. */
-	static readonly LIST_PARALLEL_DATA: string[] = ["translate:ListParallelData"];
+	static readonly ListParallelData: string[] = ["translate:ListParallelData"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"translate:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTerminologies API call. */
-	static readonly LIST_TERMINOLOGIES: string[] = [
-		"translate:ListTerminologies",
-	];
+	static readonly ListTerminologies: string[] = ["translate:ListTerminologies"];
 	/** IAM actions required for the ListTextTranslationJobs API call. */
-	static readonly LIST_TEXT_TRANSLATION_JOBS: string[] = [
+	static readonly ListTextTranslationJobs: string[] = [
 		"translate:ListTextTranslationJobs",
 	];
 	/** IAM actions required for the StartTextTranslationJob API call. */
-	static readonly START_TEXT_TRANSLATION_JOB: string[] = [
+	static readonly StartTextTranslationJob: string[] = [
 		"iam:PassRole",
 		"translate:StartTextTranslationJob",
 	];
 	/** IAM actions required for the StopTextTranslationJob API call. */
-	static readonly STOP_TEXT_TRANSLATION_JOB: string[] = [
+	static readonly StopTextTranslationJob: string[] = [
 		"translate:StopTextTranslationJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["translate:TagResource"];
+	static readonly TagResource: string[] = ["translate:TagResource"];
 	/** IAM actions required for the TranslateDocument API call. */
-	static readonly TRANSLATE_DOCUMENT: string[] = [
-		"translate:TranslateDocument",
-	];
+	static readonly TranslateDocument: string[] = ["translate:TranslateDocument"];
 	/** IAM actions required for the TranslateText API call. */
-	static readonly TRANSLATE_TEXT: string[] = ["translate:TranslateText"];
+	static readonly TranslateText: string[] = ["translate:TranslateText"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["translate:UntagResource"];
+	static readonly UntagResource: string[] = ["translate:UntagResource"];
 	/** IAM actions required for the UpdateParallelData API call. */
-	static readonly UPDATE_PARALLEL_DATA: string[] = [
+	static readonly UpdateParallelData: string[] = [
 		"translate:UpdateParallelData",
 	];
 }
@@ -268,29 +285,29 @@ export class TranslateOperations {
  */
 export class TranslateConditions {
 	/** Condition keys applicable to the CreateParallelData action. */
-	static readonly CREATE_PARALLEL_DATA_CONDITION_KEYS: string[] = [
+	static readonly CreateParallelDataConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportTerminology action. */
-	static readonly IMPORT_TERMINOLOGY_CONDITION_KEYS: string[] = [
+	static readonly ImportTerminologyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

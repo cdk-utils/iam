@@ -13,214 +13,344 @@ export class CodeArtifactActions {
 	static readonly SERVICE_PREFIX = "codeartifact";
 
 	/** [Write] codeartifact:AssociateExternalConnection */
-	static readonly ASSOCIATE_EXTERNAL_CONNECTION =
+	static readonly AssociateExternalConnection =
 		"codeartifact:AssociateExternalConnection";
 	/** [Write] codeartifact:AssociateWithDownstreamRepository */
-	static readonly ASSOCIATE_WITH_DOWNSTREAM_REPOSITORY =
+	static readonly AssociateWithDownstreamRepository =
 		"codeartifact:AssociateWithDownstreamRepository";
 	/** [Write] codeartifact:CopyPackageVersions */
-	static readonly COPY_PACKAGE_VERSIONS = "codeartifact:CopyPackageVersions";
+	static readonly CopyPackageVersions = "codeartifact:CopyPackageVersions";
 	/** [Write] codeartifact:CreateDomain */
-	static readonly CREATE_DOMAIN = "codeartifact:CreateDomain";
+	static readonly CreateDomain = "codeartifact:CreateDomain";
 	/** [Write] codeartifact:CreatePackageGroup */
-	static readonly CREATE_PACKAGE_GROUP = "codeartifact:CreatePackageGroup";
+	static readonly CreatePackageGroup = "codeartifact:CreatePackageGroup";
 	/** [Write] codeartifact:CreateRepository */
-	static readonly CREATE_REPOSITORY = "codeartifact:CreateRepository";
+	static readonly CreateRepository = "codeartifact:CreateRepository";
 	/** [Write] codeartifact:DeleteDomain */
-	static readonly DELETE_DOMAIN = "codeartifact:DeleteDomain";
+	static readonly DeleteDomain = "codeartifact:DeleteDomain";
 	/** [PermissionManagement] codeartifact:DeleteDomainPermissionsPolicy */
-	static readonly DELETE_DOMAIN_PERMISSIONS_POLICY =
+	static readonly DeleteDomainPermissionsPolicy =
 		"codeartifact:DeleteDomainPermissionsPolicy";
 	/** [Write] codeartifact:DeletePackage */
-	static readonly DELETE_PACKAGE = "codeartifact:DeletePackage";
+	static readonly DeletePackage = "codeartifact:DeletePackage";
 	/** [Write] codeartifact:DeletePackageGroup */
-	static readonly DELETE_PACKAGE_GROUP = "codeartifact:DeletePackageGroup";
+	static readonly DeletePackageGroup = "codeartifact:DeletePackageGroup";
 	/** [Write] codeartifact:DeletePackageVersions */
-	static readonly DELETE_PACKAGE_VERSIONS =
-		"codeartifact:DeletePackageVersions";
+	static readonly DeletePackageVersions = "codeartifact:DeletePackageVersions";
 	/** [Write] codeartifact:DeleteRepository */
-	static readonly DELETE_REPOSITORY = "codeartifact:DeleteRepository";
+	static readonly DeleteRepository = "codeartifact:DeleteRepository";
 	/** [PermissionManagement] codeartifact:DeleteRepositoryPermissionsPolicy */
-	static readonly DELETE_REPOSITORY_PERMISSIONS_POLICY =
+	static readonly DeleteRepositoryPermissionsPolicy =
 		"codeartifact:DeleteRepositoryPermissionsPolicy";
 	/** [Read] codeartifact:DescribeDomain */
-	static readonly DESCRIBE_DOMAIN = "codeartifact:DescribeDomain";
+	static readonly DescribeDomain = "codeartifact:DescribeDomain";
 	/** [Read] codeartifact:DescribePackage */
-	static readonly DESCRIBE_PACKAGE = "codeartifact:DescribePackage";
+	static readonly DescribePackage = "codeartifact:DescribePackage";
 	/** [Read] codeartifact:DescribePackageGroup */
-	static readonly DESCRIBE_PACKAGE_GROUP = "codeartifact:DescribePackageGroup";
+	static readonly DescribePackageGroup = "codeartifact:DescribePackageGroup";
 	/** [Read] codeartifact:DescribePackageVersion */
-	static readonly DESCRIBE_PACKAGE_VERSION =
+	static readonly DescribePackageVersion =
 		"codeartifact:DescribePackageVersion";
 	/** [Read] codeartifact:DescribeRepository */
-	static readonly DESCRIBE_REPOSITORY = "codeartifact:DescribeRepository";
+	static readonly DescribeRepository = "codeartifact:DescribeRepository";
 	/** [Write] codeartifact:DisassociateExternalConnection */
-	static readonly DISASSOCIATE_EXTERNAL_CONNECTION =
+	static readonly DisassociateExternalConnection =
 		"codeartifact:DisassociateExternalConnection";
 	/** [Write] codeartifact:DisposePackageVersions */
-	static readonly DISPOSE_PACKAGE_VERSIONS =
+	static readonly DisposePackageVersions =
 		"codeartifact:DisposePackageVersions";
 	/** [Read] codeartifact:GetAssociatedPackageGroup */
-	static readonly GET_ASSOCIATED_PACKAGE_GROUP =
+	static readonly actionGetAssociatedPackageGroup =
 		"codeartifact:GetAssociatedPackageGroup";
 	/** [Read] codeartifact:GetAuthorizationToken */
-	static readonly GET_AUTHORIZATION_TOKEN =
+	static readonly actionGetAuthorizationToken =
 		"codeartifact:GetAuthorizationToken";
 	/** [Read] codeartifact:GetDomainPermissionsPolicy */
-	static readonly GET_DOMAIN_PERMISSIONS_POLICY =
+	static readonly actionGetDomainPermissionsPolicy =
 		"codeartifact:GetDomainPermissionsPolicy";
 	/** [Read] codeartifact:GetPackageVersionAsset */
-	static readonly GET_PACKAGE_VERSION_ASSET =
+	static readonly actionGetPackageVersionAsset =
 		"codeartifact:GetPackageVersionAsset";
 	/** [Read] codeartifact:GetPackageVersionReadme */
-	static readonly GET_PACKAGE_VERSION_README =
+	static readonly actionGetPackageVersionReadme =
 		"codeartifact:GetPackageVersionReadme";
 	/** [Read] codeartifact:GetRepositoryEndpoint */
-	static readonly GET_REPOSITORY_ENDPOINT =
+	static readonly actionGetRepositoryEndpoint =
 		"codeartifact:GetRepositoryEndpoint";
 	/** [Read] codeartifact:GetRepositoryPermissionsPolicy */
-	static readonly GET_REPOSITORY_PERMISSIONS_POLICY =
+	static readonly actionGetRepositoryPermissionsPolicy =
 		"codeartifact:GetRepositoryPermissionsPolicy";
 	/** [List] codeartifact:ListAllowedRepositoriesForGroup */
-	static readonly LIST_ALLOWED_REPOSITORIES_FOR_GROUP =
+	static readonly ListAllowedRepositoriesForGroup =
 		"codeartifact:ListAllowedRepositoriesForGroup";
 	/** [List] codeartifact:ListAssociatedPackages */
-	static readonly LIST_ASSOCIATED_PACKAGES =
+	static readonly ListAssociatedPackages =
 		"codeartifact:ListAssociatedPackages";
 	/** [List] codeartifact:ListDomains */
-	static readonly LIST_DOMAINS = "codeartifact:ListDomains";
+	static readonly ListDomains = "codeartifact:ListDomains";
 	/** [List] codeartifact:ListPackageGroups */
-	static readonly LIST_PACKAGE_GROUPS = "codeartifact:ListPackageGroups";
+	static readonly ListPackageGroups = "codeartifact:ListPackageGroups";
 	/** [List] codeartifact:ListPackageVersionAssets */
-	static readonly LIST_PACKAGE_VERSION_ASSETS =
+	static readonly ListPackageVersionAssets =
 		"codeartifact:ListPackageVersionAssets";
 	/** [List] codeartifact:ListPackageVersionDependencies */
-	static readonly LIST_PACKAGE_VERSION_DEPENDENCIES =
+	static readonly ListPackageVersionDependencies =
 		"codeartifact:ListPackageVersionDependencies";
 	/** [List] codeartifact:ListPackageVersions */
-	static readonly LIST_PACKAGE_VERSIONS = "codeartifact:ListPackageVersions";
+	static readonly ListPackageVersions = "codeartifact:ListPackageVersions";
 	/** [List] codeartifact:ListPackages */
-	static readonly LIST_PACKAGES = "codeartifact:ListPackages";
+	static readonly ListPackages = "codeartifact:ListPackages";
 	/** [List] codeartifact:ListRepositories */
-	static readonly LIST_REPOSITORIES = "codeartifact:ListRepositories";
+	static readonly ListRepositories = "codeartifact:ListRepositories";
 	/** [List] codeartifact:ListRepositoriesInDomain */
-	static readonly LIST_REPOSITORIES_IN_DOMAIN =
+	static readonly ListRepositoriesInDomain =
 		"codeartifact:ListRepositoriesInDomain";
 	/** [List] codeartifact:ListSubPackageGroups */
-	static readonly LIST_SUB_PACKAGE_GROUPS = "codeartifact:ListSubPackageGroups";
+	static readonly ListSubPackageGroups = "codeartifact:ListSubPackageGroups";
 	/** [List] codeartifact:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "codeartifact:ListTagsForResource";
+	static readonly ListTagsForResource = "codeartifact:ListTagsForResource";
 	/** [Write] codeartifact:PublishPackageVersion */
-	static readonly PUBLISH_PACKAGE_VERSION =
-		"codeartifact:PublishPackageVersion";
+	static readonly PublishPackageVersion = "codeartifact:PublishPackageVersion";
 	/** [Write] codeartifact:PutDomainPermissionsPolicy */
-	static readonly PUT_DOMAIN_PERMISSIONS_POLICY =
+	static readonly PutDomainPermissionsPolicy =
 		"codeartifact:PutDomainPermissionsPolicy";
 	/** [Write] codeartifact:PutPackageMetadata */
-	static readonly PUT_PACKAGE_METADATA = "codeartifact:PutPackageMetadata";
+	static readonly PutPackageMetadata = "codeartifact:PutPackageMetadata";
 	/** [Write] codeartifact:PutPackageOriginConfiguration */
-	static readonly PUT_PACKAGE_ORIGIN_CONFIGURATION =
+	static readonly PutPackageOriginConfiguration =
 		"codeartifact:PutPackageOriginConfiguration";
 	/** [Write] codeartifact:PutRepositoryPermissionsPolicy */
-	static readonly PUT_REPOSITORY_PERMISSIONS_POLICY =
+	static readonly PutRepositoryPermissionsPolicy =
 		"codeartifact:PutRepositoryPermissionsPolicy";
 	/** [Read] codeartifact:ReadFromRepository */
-	static readonly READ_FROM_REPOSITORY = "codeartifact:ReadFromRepository";
+	static readonly ReadFromRepository = "codeartifact:ReadFromRepository";
 	/** [Tagging] codeartifact:TagResource */
-	static readonly TAG_RESOURCE = "codeartifact:TagResource";
+	static readonly TagResource = "codeartifact:TagResource";
 	/** [Tagging] codeartifact:UntagResource */
-	static readonly UNTAG_RESOURCE = "codeartifact:UntagResource";
+	static readonly UntagResource = "codeartifact:UntagResource";
 	/** [Write] codeartifact:UpdatePackageGroup */
-	static readonly UPDATE_PACKAGE_GROUP = "codeartifact:UpdatePackageGroup";
+	static readonly UpdatePackageGroup = "codeartifact:UpdatePackageGroup";
 	/** [Write] codeartifact:UpdatePackageGroupOriginConfiguration */
-	static readonly UPDATE_PACKAGE_GROUP_ORIGIN_CONFIGURATION =
+	static readonly UpdatePackageGroupOriginConfiguration =
 		"codeartifact:UpdatePackageGroupOriginConfiguration";
 	/** [Write] codeartifact:UpdatePackageVersionsStatus */
-	static readonly UPDATE_PACKAGE_VERSIONS_STATUS =
+	static readonly UpdatePackageVersionsStatus =
 		"codeartifact:UpdatePackageVersionsStatus";
 	/** [Write] codeartifact:UpdateRepository */
-	static readonly UPDATE_REPOSITORY = "codeartifact:UpdateRepository";
+	static readonly UpdateRepository = "codeartifact:UpdateRepository";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeArtifactActions.DESCRIBE_DOMAIN,
-		CodeArtifactActions.DESCRIBE_PACKAGE,
-		CodeArtifactActions.DESCRIBE_PACKAGE_GROUP,
-		CodeArtifactActions.DESCRIBE_PACKAGE_VERSION,
-		CodeArtifactActions.DESCRIBE_REPOSITORY,
-		CodeArtifactActions.GET_ASSOCIATED_PACKAGE_GROUP,
-		CodeArtifactActions.GET_AUTHORIZATION_TOKEN,
-		CodeArtifactActions.GET_DOMAIN_PERMISSIONS_POLICY,
-		CodeArtifactActions.GET_PACKAGE_VERSION_ASSET,
-		CodeArtifactActions.GET_PACKAGE_VERSION_README,
-		CodeArtifactActions.GET_REPOSITORY_ENDPOINT,
-		CodeArtifactActions.GET_REPOSITORY_PERMISSIONS_POLICY,
-		CodeArtifactActions.READ_FROM_REPOSITORY,
+	static readonly AllReadActions: string[] = [
+		CodeArtifactActions.DescribeDomain,
+		CodeArtifactActions.DescribePackage,
+		CodeArtifactActions.DescribePackageGroup,
+		CodeArtifactActions.DescribePackageVersion,
+		CodeArtifactActions.DescribeRepository,
+		CodeArtifactActions.actionGetAssociatedPackageGroup,
+		CodeArtifactActions.actionGetAuthorizationToken,
+		CodeArtifactActions.actionGetDomainPermissionsPolicy,
+		CodeArtifactActions.actionGetPackageVersionAsset,
+		CodeArtifactActions.actionGetPackageVersionReadme,
+		CodeArtifactActions.actionGetRepositoryEndpoint,
+		CodeArtifactActions.actionGetRepositoryPermissionsPolicy,
+		CodeArtifactActions.ReadFromRepository,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeArtifactActions.ASSOCIATE_EXTERNAL_CONNECTION,
-		CodeArtifactActions.ASSOCIATE_WITH_DOWNSTREAM_REPOSITORY,
-		CodeArtifactActions.COPY_PACKAGE_VERSIONS,
-		CodeArtifactActions.CREATE_DOMAIN,
-		CodeArtifactActions.CREATE_PACKAGE_GROUP,
-		CodeArtifactActions.CREATE_REPOSITORY,
-		CodeArtifactActions.DELETE_DOMAIN,
-		CodeArtifactActions.DELETE_PACKAGE,
-		CodeArtifactActions.DELETE_PACKAGE_GROUP,
-		CodeArtifactActions.DELETE_PACKAGE_VERSIONS,
-		CodeArtifactActions.DELETE_REPOSITORY,
-		CodeArtifactActions.DISASSOCIATE_EXTERNAL_CONNECTION,
-		CodeArtifactActions.DISPOSE_PACKAGE_VERSIONS,
-		CodeArtifactActions.PUBLISH_PACKAGE_VERSION,
-		CodeArtifactActions.PUT_DOMAIN_PERMISSIONS_POLICY,
-		CodeArtifactActions.PUT_PACKAGE_METADATA,
-		CodeArtifactActions.PUT_PACKAGE_ORIGIN_CONFIGURATION,
-		CodeArtifactActions.PUT_REPOSITORY_PERMISSIONS_POLICY,
-		CodeArtifactActions.UPDATE_PACKAGE_GROUP,
-		CodeArtifactActions.UPDATE_PACKAGE_GROUP_ORIGIN_CONFIGURATION,
-		CodeArtifactActions.UPDATE_PACKAGE_VERSIONS_STATUS,
-		CodeArtifactActions.UPDATE_REPOSITORY,
+	static readonly AllWriteActions: string[] = [
+		CodeArtifactActions.AssociateExternalConnection,
+		CodeArtifactActions.AssociateWithDownstreamRepository,
+		CodeArtifactActions.CopyPackageVersions,
+		CodeArtifactActions.CreateDomain,
+		CodeArtifactActions.CreatePackageGroup,
+		CodeArtifactActions.CreateRepository,
+		CodeArtifactActions.DeleteDomain,
+		CodeArtifactActions.DeletePackage,
+		CodeArtifactActions.DeletePackageGroup,
+		CodeArtifactActions.DeletePackageVersions,
+		CodeArtifactActions.DeleteRepository,
+		CodeArtifactActions.DisassociateExternalConnection,
+		CodeArtifactActions.DisposePackageVersions,
+		CodeArtifactActions.PublishPackageVersion,
+		CodeArtifactActions.PutDomainPermissionsPolicy,
+		CodeArtifactActions.PutPackageMetadata,
+		CodeArtifactActions.PutPackageOriginConfiguration,
+		CodeArtifactActions.PutRepositoryPermissionsPolicy,
+		CodeArtifactActions.UpdatePackageGroup,
+		CodeArtifactActions.UpdatePackageGroupOriginConfiguration,
+		CodeArtifactActions.UpdatePackageVersionsStatus,
+		CodeArtifactActions.UpdateRepository,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeArtifactActions.LIST_ALLOWED_REPOSITORIES_FOR_GROUP,
-		CodeArtifactActions.LIST_ASSOCIATED_PACKAGES,
-		CodeArtifactActions.LIST_DOMAINS,
-		CodeArtifactActions.LIST_PACKAGE_GROUPS,
-		CodeArtifactActions.LIST_PACKAGE_VERSION_ASSETS,
-		CodeArtifactActions.LIST_PACKAGE_VERSION_DEPENDENCIES,
-		CodeArtifactActions.LIST_PACKAGE_VERSIONS,
-		CodeArtifactActions.LIST_PACKAGES,
-		CodeArtifactActions.LIST_REPOSITORIES,
-		CodeArtifactActions.LIST_REPOSITORIES_IN_DOMAIN,
-		CodeArtifactActions.LIST_SUB_PACKAGE_GROUPS,
-		CodeArtifactActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CodeArtifactActions.ListAllowedRepositoriesForGroup,
+		CodeArtifactActions.ListAssociatedPackages,
+		CodeArtifactActions.ListDomains,
+		CodeArtifactActions.ListPackageGroups,
+		CodeArtifactActions.ListPackageVersionAssets,
+		CodeArtifactActions.ListPackageVersionDependencies,
+		CodeArtifactActions.ListPackageVersions,
+		CodeArtifactActions.ListPackages,
+		CodeArtifactActions.ListRepositories,
+		CodeArtifactActions.ListRepositoriesInDomain,
+		CodeArtifactActions.ListSubPackageGroups,
+		CodeArtifactActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CodeArtifactActions.DELETE_DOMAIN_PERMISSIONS_POLICY,
-		CodeArtifactActions.DELETE_REPOSITORY_PERMISSIONS_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		CodeArtifactActions.DeleteDomainPermissionsPolicy,
+		CodeArtifactActions.DeleteRepositoryPermissionsPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodeArtifactActions.TAG_RESOURCE,
-		CodeArtifactActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodeArtifactActions.TagResource,
+		CodeArtifactActions.UntagResource,
 	];
 }
 
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainName>[^:/?]+)$",
-);
-const PackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):package/(?<domainName>[^:/?]+)/(?<repositoryName>[^:/?]+)/(?<packageFormat>[^:/?]+)/(?<packageNamespace>[^:/?]+)/(?<packageName>[^:/?]+)$",
-);
-const PackageGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):package-group/(?<domainName>[^:/?]+)(?<encodedPackageGroupPattern>[^:/?]+)$",
-);
-const RepositoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):repository/(?<domainName>[^:/?]+)/(?<repositoryName>[^:/?]+)$",
-);
+/**
+ * Properties for building a domain ARN.
+ */
+export interface CodeArtifactDomainArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain ARN.
+ */
+export interface CodeArtifactDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a package ARN.
+ */
+export interface CodeArtifactPackageArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RepositoryName component of the ARN. */
+	readonly repositoryName: string;
+	/** The PackageFormat component of the ARN. */
+	readonly packageFormat: string;
+	/** The PackageNamespace component of the ARN. */
+	readonly packageNamespace: string;
+	/** The PackageName component of the ARN. */
+	readonly packageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a package ARN.
+ */
+export interface CodeArtifactPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RepositoryName component. */
+	readonly repositoryName: string;
+	/** The PackageFormat component. */
+	readonly packageFormat: string;
+	/** The PackageNamespace component. */
+	readonly packageNamespace: string;
+	/** The PackageName component. */
+	readonly packageName: string;
+}
+
+/**
+ * Properties for building a package-group ARN.
+ */
+export interface CodeArtifactPackageGroupArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The EncodedPackageGroupPattern component of the ARN. */
+	readonly encodedPackageGroupPattern: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a package-group ARN.
+ */
+export interface CodeArtifactPackageGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The EncodedPackageGroupPattern component. */
+	readonly encodedPackageGroupPattern: string;
+}
+
+/**
+ * Properties for building a repository ARN.
+ */
+export interface CodeArtifactRepositoryArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The RepositoryName component of the ARN. */
+	readonly repositoryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a repository ARN.
+ */
+export interface CodeArtifactRepositoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The RepositoryName component. */
+	readonly repositoryName: string;
+}
+
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainName>[^:/?]+)$/;
+const PackageArnRegex =
+	/^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):package\/(?<domainName>[^:/?]+)\/(?<repositoryName>[^:/?]+)\/(?<packageFormat>[^:/?]+)\/(?<packageNamespace>[^:/?]+)\/(?<packageName>[^:/?]+)$/;
+const PackageGroupArnRegex =
+	/^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):package-group\/(?<domainName>[^:/?]+)(?<encodedPackageGroupPattern>[^:/?]+)$/;
+const RepositoryArnRegex =
+	/^arn:(?<partition>[^:]+):codeartifact:(?<region>[^:]*):(?<account>[^:]*):repository\/(?<domainName>[^:/?]+)\/(?<repositoryName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codeartifact resources.
@@ -229,16 +359,7 @@ export class CodeArtifactResources {
 	/**
 	 * Builds an ARN for the domain resource.
 	 */
-	static domain(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: CodeArtifactDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codeartifact:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainName}`;
 	}
 
@@ -253,12 +374,7 @@ export class CodeArtifactResources {
 	 * Parses a domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainArn(arn: string): CodeArtifactDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain ARN: ${arn}`);
@@ -274,24 +390,7 @@ export class CodeArtifactResources {
 	/**
 	 * Builds an ARN for the package resource.
 	 */
-	static package(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RepositoryName component of the ARN. */
-		readonly repositoryName: string;
-		/** The PackageFormat component of the ARN. */
-		readonly packageFormat: string;
-		/** The PackageNamespace component of the ARN. */
-		readonly packageNamespace: string;
-		/** The PackageName component of the ARN. */
-		readonly packageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static package(props: CodeArtifactPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codeartifact:${props.region ?? "*"}:${props.account ?? "*"}:package/${props.domainName}/${props.repositoryName}/${props.packageFormat}/${props.packageNamespace}/${props.packageName}`;
 	}
 
@@ -306,16 +405,7 @@ export class CodeArtifactResources {
 	 * Parses a package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		repositoryName: string;
-		packageFormat: string;
-		packageNamespace: string;
-		packageName: string;
-	} {
+	static parsePackageArn(arn: string): CodeArtifactPackageArnComponents {
 		const match = PackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid package ARN: ${arn}`);
@@ -335,18 +425,7 @@ export class CodeArtifactResources {
 	/**
 	 * Builds an ARN for the package-group resource.
 	 */
-	static packageGroup(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The EncodedPackageGroupPattern component of the ARN. */
-		readonly encodedPackageGroupPattern: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static packageGroup(props: CodeArtifactPackageGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codeartifact:${props.region ?? "*"}:${props.account ?? "*"}:package-group/${props.domainName}${props.encodedPackageGroupPattern}`;
 	}
 
@@ -361,13 +440,9 @@ export class CodeArtifactResources {
 	 * Parses a package-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePackageGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		encodedPackageGroupPattern: string;
-	} {
+	static parsePackageGroupArn(
+		arn: string,
+	): CodeArtifactPackageGroupArnComponents {
 		const match = PackageGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid package-group ARN: ${arn}`);
@@ -384,18 +459,7 @@ export class CodeArtifactResources {
 	/**
 	 * Builds an ARN for the repository resource.
 	 */
-	static repository(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The RepositoryName component of the ARN. */
-		readonly repositoryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static repository(props: CodeArtifactRepositoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codeartifact:${props.region ?? "*"}:${props.account ?? "*"}:repository/${props.domainName}/${props.repositoryName}`;
 	}
 
@@ -410,13 +474,7 @@ export class CodeArtifactResources {
 	 * Parses a repository ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRepositoryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		repositoryName: string;
-	} {
+	static parseRepositoryArn(arn: string): CodeArtifactRepositoryArnComponents {
 		const match = RepositoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid repository ARN: ${arn}`);
@@ -436,101 +494,101 @@ export class CodeArtifactResources {
  */
 export class CodeArtifactOperations {
 	/** IAM actions required for the AssociateExternalConnection API call. */
-	static readonly ASSOCIATE_EXTERNAL_CONNECTION: string[] = [];
+	static readonly AssociateExternalConnection: string[] = [];
 	/** IAM actions required for the CopyPackageVersions API call. */
-	static readonly COPY_PACKAGE_VERSIONS: string[] = [];
+	static readonly CopyPackageVersions: string[] = [];
 	/** IAM actions required for the CreateDomain API call. */
-	static readonly CREATE_DOMAIN: string[] = [];
+	static readonly CreateDomain: string[] = [];
 	/** IAM actions required for the CreatePackageGroup API call. */
-	static readonly CREATE_PACKAGE_GROUP: string[] = [];
+	static readonly CreatePackageGroup: string[] = [];
 	/** IAM actions required for the CreateRepository API call. */
-	static readonly CREATE_REPOSITORY: string[] = [];
+	static readonly CreateRepository: string[] = [];
 	/** IAM actions required for the DeleteDomain API call. */
-	static readonly DELETE_DOMAIN: string[] = [];
+	static readonly DeleteDomain: string[] = [];
 	/** IAM actions required for the DeleteDomainPermissionsPolicy API call. */
-	static readonly DELETE_DOMAIN_PERMISSIONS_POLICY: string[] = [];
+	static readonly DeleteDomainPermissionsPolicy: string[] = [];
 	/** IAM actions required for the DeletePackage API call. */
-	static readonly DELETE_PACKAGE: string[] = [];
+	static readonly DeletePackage: string[] = [];
 	/** IAM actions required for the DeletePackageGroup API call. */
-	static readonly DELETE_PACKAGE_GROUP: string[] = [];
+	static readonly DeletePackageGroup: string[] = [];
 	/** IAM actions required for the DeletePackageVersions API call. */
-	static readonly DELETE_PACKAGE_VERSIONS: string[] = [];
+	static readonly DeletePackageVersions: string[] = [];
 	/** IAM actions required for the DeleteRepository API call. */
-	static readonly DELETE_REPOSITORY: string[] = [];
+	static readonly DeleteRepository: string[] = [];
 	/** IAM actions required for the DeleteRepositoryPermissionsPolicy API call. */
-	static readonly DELETE_REPOSITORY_PERMISSIONS_POLICY: string[] = [];
+	static readonly DeleteRepositoryPermissionsPolicy: string[] = [];
 	/** IAM actions required for the DescribeDomain API call. */
-	static readonly DESCRIBE_DOMAIN: string[] = [];
+	static readonly DescribeDomain: string[] = [];
 	/** IAM actions required for the DescribePackage API call. */
-	static readonly DESCRIBE_PACKAGE: string[] = [];
+	static readonly DescribePackage: string[] = [];
 	/** IAM actions required for the DescribePackageGroup API call. */
-	static readonly DESCRIBE_PACKAGE_GROUP: string[] = [];
+	static readonly DescribePackageGroup: string[] = [];
 	/** IAM actions required for the DescribePackageVersion API call. */
-	static readonly DESCRIBE_PACKAGE_VERSION: string[] = [];
+	static readonly DescribePackageVersion: string[] = [];
 	/** IAM actions required for the DescribeRepository API call. */
-	static readonly DESCRIBE_REPOSITORY: string[] = [];
+	static readonly DescribeRepository: string[] = [];
 	/** IAM actions required for the DisassociateExternalConnection API call. */
-	static readonly DISASSOCIATE_EXTERNAL_CONNECTION: string[] = [];
+	static readonly DisassociateExternalConnection: string[] = [];
 	/** IAM actions required for the DisposePackageVersions API call. */
-	static readonly DISPOSE_PACKAGE_VERSIONS: string[] = [];
+	static readonly DisposePackageVersions: string[] = [];
 	/** IAM actions required for the GetAssociatedPackageGroup API call. */
-	static readonly GET_ASSOCIATED_PACKAGE_GROUP: string[] = [];
+	static readonly opGetAssociatedPackageGroup: string[] = [];
 	/** IAM actions required for the GetAuthorizationToken API call. */
-	static readonly GET_AUTHORIZATION_TOKEN: string[] = [];
+	static readonly opGetAuthorizationToken: string[] = [];
 	/** IAM actions required for the GetDomainPermissionsPolicy API call. */
-	static readonly GET_DOMAIN_PERMISSIONS_POLICY: string[] = [];
+	static readonly opGetDomainPermissionsPolicy: string[] = [];
 	/** IAM actions required for the GetPackageVersionAsset API call. */
-	static readonly GET_PACKAGE_VERSION_ASSET: string[] = [];
+	static readonly opGetPackageVersionAsset: string[] = [];
 	/** IAM actions required for the GetPackageVersionReadme API call. */
-	static readonly GET_PACKAGE_VERSION_README: string[] = [];
+	static readonly opGetPackageVersionReadme: string[] = [];
 	/** IAM actions required for the GetRepositoryEndpoint API call. */
-	static readonly GET_REPOSITORY_ENDPOINT: string[] = [];
+	static readonly opGetRepositoryEndpoint: string[] = [];
 	/** IAM actions required for the GetRepositoryPermissionsPolicy API call. */
-	static readonly GET_REPOSITORY_PERMISSIONS_POLICY: string[] = [];
+	static readonly opGetRepositoryPermissionsPolicy: string[] = [];
 	/** IAM actions required for the ListAllowedRepositoriesForGroup API call. */
-	static readonly LIST_ALLOWED_REPOSITORIES_FOR_GROUP: string[] = [];
+	static readonly ListAllowedRepositoriesForGroup: string[] = [];
 	/** IAM actions required for the ListAssociatedPackages API call. */
-	static readonly LIST_ASSOCIATED_PACKAGES: string[] = [];
+	static readonly ListAssociatedPackages: string[] = [];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = [];
+	static readonly ListDomains: string[] = [];
 	/** IAM actions required for the ListPackageGroups API call. */
-	static readonly LIST_PACKAGE_GROUPS: string[] = [];
+	static readonly ListPackageGroups: string[] = [];
 	/** IAM actions required for the ListPackageVersionAssets API call. */
-	static readonly LIST_PACKAGE_VERSION_ASSETS: string[] = [];
+	static readonly ListPackageVersionAssets: string[] = [];
 	/** IAM actions required for the ListPackageVersionDependencies API call. */
-	static readonly LIST_PACKAGE_VERSION_DEPENDENCIES: string[] = [];
+	static readonly ListPackageVersionDependencies: string[] = [];
 	/** IAM actions required for the ListPackageVersions API call. */
-	static readonly LIST_PACKAGE_VERSIONS: string[] = [];
+	static readonly ListPackageVersions: string[] = [];
 	/** IAM actions required for the ListPackages API call. */
-	static readonly LIST_PACKAGES: string[] = [];
+	static readonly ListPackages: string[] = [];
 	/** IAM actions required for the ListRepositories API call. */
-	static readonly LIST_REPOSITORIES: string[] = [];
+	static readonly ListRepositories: string[] = [];
 	/** IAM actions required for the ListRepositoriesInDomain API call. */
-	static readonly LIST_REPOSITORIES_IN_DOMAIN: string[] = [];
+	static readonly ListRepositoriesInDomain: string[] = [];
 	/** IAM actions required for the ListSubPackageGroups API call. */
-	static readonly LIST_SUB_PACKAGE_GROUPS: string[] = [];
+	static readonly ListSubPackageGroups: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the PublishPackageVersion API call. */
-	static readonly PUBLISH_PACKAGE_VERSION: string[] = [];
+	static readonly PublishPackageVersion: string[] = [];
 	/** IAM actions required for the PutDomainPermissionsPolicy API call. */
-	static readonly PUT_DOMAIN_PERMISSIONS_POLICY: string[] = [];
+	static readonly PutDomainPermissionsPolicy: string[] = [];
 	/** IAM actions required for the PutPackageOriginConfiguration API call. */
-	static readonly PUT_PACKAGE_ORIGIN_CONFIGURATION: string[] = [];
+	static readonly PutPackageOriginConfiguration: string[] = [];
 	/** IAM actions required for the PutRepositoryPermissionsPolicy API call. */
-	static readonly PUT_REPOSITORY_PERMISSIONS_POLICY: string[] = [];
+	static readonly PutRepositoryPermissionsPolicy: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [];
+	static readonly TagResource: string[] = [];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [];
+	static readonly UntagResource: string[] = [];
 	/** IAM actions required for the UpdatePackageGroup API call. */
-	static readonly UPDATE_PACKAGE_GROUP: string[] = [];
+	static readonly UpdatePackageGroup: string[] = [];
 	/** IAM actions required for the UpdatePackageGroupOriginConfiguration API call. */
-	static readonly UPDATE_PACKAGE_GROUP_ORIGIN_CONFIGURATION: string[] = [];
+	static readonly UpdatePackageGroupOriginConfiguration: string[] = [];
 	/** IAM actions required for the UpdatePackageVersionsStatus API call. */
-	static readonly UPDATE_PACKAGE_VERSIONS_STATUS: string[] = [];
+	static readonly UpdatePackageVersionsStatus: string[] = [];
 	/** IAM actions required for the UpdateRepository API call. */
-	static readonly UPDATE_REPOSITORY: string[] = [];
+	static readonly UpdateRepository: string[] = [];
 }
 
 /**
@@ -538,34 +596,34 @@ export class CodeArtifactOperations {
  */
 export class CodeArtifactConditions {
 	/** Condition keys applicable to the CreateDomain action. */
-	static readonly CREATE_DOMAIN_CONDITION_KEYS: string[] = [
+	static readonly CreateDomainConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePackageGroup action. */
-	static readonly CREATE_PACKAGE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreatePackageGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRepository action. */
-	static readonly CREATE_REPOSITORY_CONDITION_KEYS: string[] = [
+	static readonly CreateRepositoryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

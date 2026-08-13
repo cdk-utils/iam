@@ -13,78 +13,136 @@ export class NovaActActions {
 	static readonly SERVICE_PREFIX = "nova-act";
 
 	/** [Write] nova-act:CreateAct */
-	static readonly CREATE_ACT = "nova-act:CreateAct";
+	static readonly CreateAct = "nova-act:CreateAct";
 	/** [Write] nova-act:CreateSession */
-	static readonly CREATE_SESSION = "nova-act:CreateSession";
+	static readonly CreateSession = "nova-act:CreateSession";
 	/** [Write] nova-act:CreateWorkflowDefinition */
-	static readonly CREATE_WORKFLOW_DEFINITION =
+	static readonly CreateWorkflowDefinition =
 		"nova-act:CreateWorkflowDefinition";
 	/** [Write] nova-act:CreateWorkflowRun */
-	static readonly CREATE_WORKFLOW_RUN = "nova-act:CreateWorkflowRun";
+	static readonly CreateWorkflowRun = "nova-act:CreateWorkflowRun";
 	/** [Write] nova-act:DeleteWorkflowDefinition */
-	static readonly DELETE_WORKFLOW_DEFINITION =
+	static readonly DeleteWorkflowDefinition =
 		"nova-act:DeleteWorkflowDefinition";
 	/** [Write] nova-act:DeleteWorkflowRun */
-	static readonly DELETE_WORKFLOW_RUN = "nova-act:DeleteWorkflowRun";
+	static readonly DeleteWorkflowRun = "nova-act:DeleteWorkflowRun";
 	/** [Read] nova-act:GetWorkflowDefinition */
-	static readonly GET_WORKFLOW_DEFINITION = "nova-act:GetWorkflowDefinition";
+	static readonly actionGetWorkflowDefinition =
+		"nova-act:GetWorkflowDefinition";
 	/** [Read] nova-act:GetWorkflowRun */
-	static readonly GET_WORKFLOW_RUN = "nova-act:GetWorkflowRun";
+	static readonly actionGetWorkflowRun = "nova-act:GetWorkflowRun";
 	/** [Write] nova-act:InvokeActStep */
-	static readonly INVOKE_ACT_STEP = "nova-act:InvokeActStep";
+	static readonly InvokeActStep = "nova-act:InvokeActStep";
 	/** [Read] nova-act:ListActs */
-	static readonly LIST_ACTS = "nova-act:ListActs";
+	static readonly ListActs = "nova-act:ListActs";
 	/** [Read] nova-act:ListModels */
-	static readonly LIST_MODELS = "nova-act:ListModels";
+	static readonly ListModels = "nova-act:ListModels";
 	/** [Read] nova-act:ListSessions */
-	static readonly LIST_SESSIONS = "nova-act:ListSessions";
+	static readonly ListSessions = "nova-act:ListSessions";
 	/** [List] nova-act:ListWorkflowDefinitions */
-	static readonly LIST_WORKFLOW_DEFINITIONS =
-		"nova-act:ListWorkflowDefinitions";
+	static readonly ListWorkflowDefinitions = "nova-act:ListWorkflowDefinitions";
 	/** [List] nova-act:ListWorkflowRuns */
-	static readonly LIST_WORKFLOW_RUNS = "nova-act:ListWorkflowRuns";
+	static readonly ListWorkflowRuns = "nova-act:ListWorkflowRuns";
 	/** [Write] nova-act:UpdateAct */
-	static readonly UPDATE_ACT = "nova-act:UpdateAct";
+	static readonly UpdateAct = "nova-act:UpdateAct";
 	/** [Write] nova-act:UpdateWorkflowRun */
-	static readonly UPDATE_WORKFLOW_RUN = "nova-act:UpdateWorkflowRun";
+	static readonly UpdateWorkflowRun = "nova-act:UpdateWorkflowRun";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NovaActActions.GET_WORKFLOW_DEFINITION,
-		NovaActActions.GET_WORKFLOW_RUN,
-		NovaActActions.LIST_ACTS,
-		NovaActActions.LIST_MODELS,
-		NovaActActions.LIST_SESSIONS,
+	static readonly AllReadActions: string[] = [
+		NovaActActions.actionGetWorkflowDefinition,
+		NovaActActions.actionGetWorkflowRun,
+		NovaActActions.ListActs,
+		NovaActActions.ListModels,
+		NovaActActions.ListSessions,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NovaActActions.CREATE_ACT,
-		NovaActActions.CREATE_SESSION,
-		NovaActActions.CREATE_WORKFLOW_DEFINITION,
-		NovaActActions.CREATE_WORKFLOW_RUN,
-		NovaActActions.DELETE_WORKFLOW_DEFINITION,
-		NovaActActions.DELETE_WORKFLOW_RUN,
-		NovaActActions.INVOKE_ACT_STEP,
-		NovaActActions.UPDATE_ACT,
-		NovaActActions.UPDATE_WORKFLOW_RUN,
+	static readonly AllWriteActions: string[] = [
+		NovaActActions.CreateAct,
+		NovaActActions.CreateSession,
+		NovaActActions.CreateWorkflowDefinition,
+		NovaActActions.CreateWorkflowRun,
+		NovaActActions.DeleteWorkflowDefinition,
+		NovaActActions.DeleteWorkflowRun,
+		NovaActActions.InvokeActStep,
+		NovaActActions.UpdateAct,
+		NovaActActions.UpdateWorkflowRun,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NovaActActions.LIST_WORKFLOW_DEFINITIONS,
-		NovaActActions.LIST_WORKFLOW_RUNS,
+	static readonly AllListActions: string[] = [
+		NovaActActions.ListWorkflowDefinitions,
+		NovaActActions.ListWorkflowRuns,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const WorkflowDefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nova-act:(?<region>[^:]*):(?<account>[^:]*):workflow-definition/(?<workflowDefinitionName>[^:/?]+)$",
-);
-const WorkflowRunArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):nova-act:(?<region>[^:]*):(?<account>[^:]*):workflow-definition/(?<workflowDefinitionName>[^:/?]+)/workflow-run/(?<workflowRunId>[^:/?]+)$",
-);
+/**
+ * Properties for building a workflow-definition ARN.
+ */
+export interface NovaActWorkflowDefinitionArnProps {
+	/** The WorkflowDefinitionName component of the ARN. */
+	readonly workflowDefinitionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workflow-definition ARN.
+ */
+export interface NovaActWorkflowDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkflowDefinitionName component. */
+	readonly workflowDefinitionName: string;
+}
+
+/**
+ * Properties for building a workflow-run ARN.
+ */
+export interface NovaActWorkflowRunArnProps {
+	/** The WorkflowDefinitionName component of the ARN. */
+	readonly workflowDefinitionName: string;
+	/** The WorkflowRunId component of the ARN. */
+	readonly workflowRunId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workflow-run ARN.
+ */
+export interface NovaActWorkflowRunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkflowDefinitionName component. */
+	readonly workflowDefinitionName: string;
+	/** The WorkflowRunId component. */
+	readonly workflowRunId: string;
+}
+
+const WorkflowDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):nova-act:(?<region>[^:]*):(?<account>[^:]*):workflow-definition\/(?<workflowDefinitionName>[^:/?]+)$/;
+const WorkflowRunArnRegex =
+	/^arn:(?<partition>[^:]+):nova-act:(?<region>[^:]*):(?<account>[^:]*):workflow-definition\/(?<workflowDefinitionName>[^:/?]+)\/workflow-run\/(?<workflowRunId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for nova-act resources.
@@ -93,16 +151,7 @@ export class NovaActResources {
 	/**
 	 * Builds an ARN for the workflow-definition resource.
 	 */
-	static workflowDefinition(props: {
-		/** The WorkflowDefinitionName component of the ARN. */
-		readonly workflowDefinitionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workflowDefinition(props: NovaActWorkflowDefinitionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nova-act:${props.region ?? "*"}:${props.account ?? "*"}:workflow-definition/${props.workflowDefinitionName}`;
 	}
 
@@ -117,12 +166,9 @@ export class NovaActResources {
 	 * Parses a workflow-definition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkflowDefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workflowDefinitionName: string;
-	} {
+	static parseWorkflowDefinitionArn(
+		arn: string,
+	): NovaActWorkflowDefinitionArnComponents {
 		const match = WorkflowDefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workflow-definition ARN: ${arn}`);
@@ -138,18 +184,7 @@ export class NovaActResources {
 	/**
 	 * Builds an ARN for the workflow-run resource.
 	 */
-	static workflowRun(props: {
-		/** The WorkflowDefinitionName component of the ARN. */
-		readonly workflowDefinitionName: string;
-		/** The WorkflowRunId component of the ARN. */
-		readonly workflowRunId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workflowRun(props: NovaActWorkflowRunArnProps): string {
 		return `arn:${props.partition ?? "aws"}:nova-act:${props.region ?? "*"}:${props.account ?? "*"}:workflow-definition/${props.workflowDefinitionName}/workflow-run/${props.workflowRunId}`;
 	}
 
@@ -164,13 +199,7 @@ export class NovaActResources {
 	 * Parses a workflow-run ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkflowRunArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workflowDefinitionName: string;
-		workflowRunId: string;
-	} {
+	static parseWorkflowRunArn(arn: string): NovaActWorkflowRunArnComponents {
 		const match = WorkflowRunArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workflow-run ARN: ${arn}`);
@@ -190,49 +219,43 @@ export class NovaActResources {
  */
 export class NovaActOperations {
 	/** IAM actions required for the CreateAct API call. */
-	static readonly CREATE_ACT: string[] = ["nova-act:CreateAct"];
+	static readonly CreateAct: string[] = ["nova-act:CreateAct"];
 	/** IAM actions required for the CreateSession API call. */
-	static readonly CREATE_SESSION: string[] = ["nova-act:CreateSession"];
+	static readonly CreateSession: string[] = ["nova-act:CreateSession"];
 	/** IAM actions required for the CreateWorkflowDefinition API call. */
-	static readonly CREATE_WORKFLOW_DEFINITION: string[] = [
+	static readonly CreateWorkflowDefinition: string[] = [
 		"nova-act:CreateWorkflowDefinition",
 	];
 	/** IAM actions required for the CreateWorkflowRun API call. */
-	static readonly CREATE_WORKFLOW_RUN: string[] = [
-		"nova-act:CreateWorkflowRun",
-	];
+	static readonly CreateWorkflowRun: string[] = ["nova-act:CreateWorkflowRun"];
 	/** IAM actions required for the DeleteWorkflowDefinition API call. */
-	static readonly DELETE_WORKFLOW_DEFINITION: string[] = [
+	static readonly DeleteWorkflowDefinition: string[] = [
 		"nova-act:DeleteWorkflowDefinition",
 	];
 	/** IAM actions required for the DeleteWorkflowRun API call. */
-	static readonly DELETE_WORKFLOW_RUN: string[] = [
-		"nova-act:DeleteWorkflowRun",
-	];
+	static readonly DeleteWorkflowRun: string[] = ["nova-act:DeleteWorkflowRun"];
 	/** IAM actions required for the GetWorkflowDefinition API call. */
-	static readonly GET_WORKFLOW_DEFINITION: string[] = [
+	static readonly opGetWorkflowDefinition: string[] = [
 		"nova-act:GetWorkflowDefinition",
 	];
 	/** IAM actions required for the GetWorkflowRun API call. */
-	static readonly GET_WORKFLOW_RUN: string[] = ["nova-act:GetWorkflowRun"];
+	static readonly opGetWorkflowRun: string[] = ["nova-act:GetWorkflowRun"];
 	/** IAM actions required for the InvokeActStep API call. */
-	static readonly INVOKE_ACT_STEP: string[] = ["nova-act:InvokeActStep"];
+	static readonly InvokeActStep: string[] = ["nova-act:InvokeActStep"];
 	/** IAM actions required for the ListActs API call. */
-	static readonly LIST_ACTS: string[] = ["nova-act:ListActs"];
+	static readonly ListActs: string[] = ["nova-act:ListActs"];
 	/** IAM actions required for the ListModels API call. */
-	static readonly LIST_MODELS: string[] = ["nova-act:ListModels"];
+	static readonly ListModels: string[] = ["nova-act:ListModels"];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["nova-act:ListSessions"];
+	static readonly ListSessions: string[] = ["nova-act:ListSessions"];
 	/** IAM actions required for the ListWorkflowDefinitions API call. */
-	static readonly LIST_WORKFLOW_DEFINITIONS: string[] = [
+	static readonly ListWorkflowDefinitions: string[] = [
 		"nova-act:ListWorkflowDefinitions",
 	];
 	/** IAM actions required for the ListWorkflowRuns API call. */
-	static readonly LIST_WORKFLOW_RUNS: string[] = ["nova-act:ListWorkflowRuns"];
+	static readonly ListWorkflowRuns: string[] = ["nova-act:ListWorkflowRuns"];
 	/** IAM actions required for the UpdateAct API call. */
-	static readonly UPDATE_ACT: string[] = ["nova-act:UpdateAct"];
+	static readonly UpdateAct: string[] = ["nova-act:UpdateAct"];
 	/** IAM actions required for the UpdateWorkflowRun API call. */
-	static readonly UPDATE_WORKFLOW_RUN: string[] = [
-		"nova-act:UpdateWorkflowRun",
-	];
+	static readonly UpdateWorkflowRun: string[] = ["nova-act:UpdateWorkflowRun"];
 }

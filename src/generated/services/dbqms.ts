@@ -13,54 +13,56 @@ export class DbqmsActions {
 	static readonly SERVICE_PREFIX = "dbqms";
 
 	/** [Write] dbqms:CreateFavoriteQuery */
-	static readonly CREATE_FAVORITE_QUERY = "dbqms:CreateFavoriteQuery";
+	static readonly CreateFavoriteQuery = "dbqms:CreateFavoriteQuery";
 	/** [Write] dbqms:CreateQueryHistory */
-	static readonly CREATE_QUERY_HISTORY = "dbqms:CreateQueryHistory";
+	static readonly CreateQueryHistory = "dbqms:CreateQueryHistory";
 	/** [Write] dbqms:CreateTab */
-	static readonly CREATE_TAB = "dbqms:CreateTab";
+	static readonly CreateTab = "dbqms:CreateTab";
 	/** [Write] dbqms:DeleteFavoriteQueries */
-	static readonly DELETE_FAVORITE_QUERIES = "dbqms:DeleteFavoriteQueries";
+	static readonly DeleteFavoriteQueries = "dbqms:DeleteFavoriteQueries";
 	/** [Write] dbqms:DeleteQueryHistory */
-	static readonly DELETE_QUERY_HISTORY = "dbqms:DeleteQueryHistory";
+	static readonly DeleteQueryHistory = "dbqms:DeleteQueryHistory";
 	/** [Write] dbqms:DeleteTab */
-	static readonly DELETE_TAB = "dbqms:DeleteTab";
+	static readonly DeleteTab = "dbqms:DeleteTab";
 	/** [List] dbqms:DescribeFavoriteQueries */
-	static readonly DESCRIBE_FAVORITE_QUERIES = "dbqms:DescribeFavoriteQueries";
+	static readonly DescribeFavoriteQueries = "dbqms:DescribeFavoriteQueries";
 	/** [List] dbqms:DescribeQueryHistory */
-	static readonly DESCRIBE_QUERY_HISTORY = "dbqms:DescribeQueryHistory";
+	static readonly DescribeQueryHistory = "dbqms:DescribeQueryHistory";
 	/** [List] dbqms:DescribeTabs */
-	static readonly DESCRIBE_TABS = "dbqms:DescribeTabs";
+	static readonly DescribeTabs = "dbqms:DescribeTabs";
 	/** [Read] dbqms:GetQueryString */
-	static readonly GET_QUERY_STRING = "dbqms:GetQueryString";
+	static readonly actionGetQueryString = "dbqms:GetQueryString";
 	/** [Write] dbqms:UpdateFavoriteQuery */
-	static readonly UPDATE_FAVORITE_QUERY = "dbqms:UpdateFavoriteQuery";
+	static readonly UpdateFavoriteQuery = "dbqms:UpdateFavoriteQuery";
 	/** [Write] dbqms:UpdateQueryHistory */
-	static readonly UPDATE_QUERY_HISTORY = "dbqms:UpdateQueryHistory";
+	static readonly UpdateQueryHistory = "dbqms:UpdateQueryHistory";
 	/** [Write] dbqms:UpdateTab */
-	static readonly UPDATE_TAB = "dbqms:UpdateTab";
+	static readonly UpdateTab = "dbqms:UpdateTab";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [DbqmsActions.GET_QUERY_STRING];
+	static readonly AllReadActions: string[] = [
+		DbqmsActions.actionGetQueryString,
+	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DbqmsActions.CREATE_FAVORITE_QUERY,
-		DbqmsActions.CREATE_QUERY_HISTORY,
-		DbqmsActions.CREATE_TAB,
-		DbqmsActions.DELETE_FAVORITE_QUERIES,
-		DbqmsActions.DELETE_QUERY_HISTORY,
-		DbqmsActions.DELETE_TAB,
-		DbqmsActions.UPDATE_FAVORITE_QUERY,
-		DbqmsActions.UPDATE_QUERY_HISTORY,
-		DbqmsActions.UPDATE_TAB,
+	static readonly AllWriteActions: string[] = [
+		DbqmsActions.CreateFavoriteQuery,
+		DbqmsActions.CreateQueryHistory,
+		DbqmsActions.CreateTab,
+		DbqmsActions.DeleteFavoriteQueries,
+		DbqmsActions.DeleteQueryHistory,
+		DbqmsActions.DeleteTab,
+		DbqmsActions.UpdateFavoriteQuery,
+		DbqmsActions.UpdateQueryHistory,
+		DbqmsActions.UpdateTab,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DbqmsActions.DESCRIBE_FAVORITE_QUERIES,
-		DbqmsActions.DESCRIBE_QUERY_HISTORY,
-		DbqmsActions.DESCRIBE_TABS,
+	static readonly AllListActions: string[] = [
+		DbqmsActions.DescribeFavoriteQueries,
+		DbqmsActions.DescribeQueryHistory,
+		DbqmsActions.DescribeTabs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

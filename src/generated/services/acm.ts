@@ -13,166 +13,277 @@ export class ACMActions {
 	static readonly SERVICE_PREFIX = "acm";
 
 	/** [Tagging] acm:AddTagsToCertificate */
-	static readonly ADD_TAGS_TO_CERTIFICATE = "acm:AddTagsToCertificate";
+	static readonly AddTagsToCertificate = "acm:AddTagsToCertificate";
 	/** [Write] acm:CreateAcmeDomainValidation */
-	static readonly CREATE_ACME_DOMAIN_VALIDATION =
-		"acm:CreateAcmeDomainValidation";
+	static readonly CreateAcmeDomainValidation = "acm:CreateAcmeDomainValidation";
 	/** [Write] acm:CreateAcmeEndpoint */
-	static readonly CREATE_ACME_ENDPOINT = "acm:CreateAcmeEndpoint";
+	static readonly CreateAcmeEndpoint = "acm:CreateAcmeEndpoint";
 	/** [Write] acm:CreateAcmeExternalAccountBinding */
-	static readonly CREATE_ACME_EXTERNAL_ACCOUNT_BINDING =
+	static readonly CreateAcmeExternalAccountBinding =
 		"acm:CreateAcmeExternalAccountBinding";
 	/** [Write] acm:DeleteAcmeDomainValidation */
-	static readonly DELETE_ACME_DOMAIN_VALIDATION =
-		"acm:DeleteAcmeDomainValidation";
+	static readonly DeleteAcmeDomainValidation = "acm:DeleteAcmeDomainValidation";
 	/** [Write] acm:DeleteAcmeEndpoint */
-	static readonly DELETE_ACME_ENDPOINT = "acm:DeleteAcmeEndpoint";
+	static readonly DeleteAcmeEndpoint = "acm:DeleteAcmeEndpoint";
 	/** [Write] acm:DeleteAcmeExternalAccountBinding */
-	static readonly DELETE_ACME_EXTERNAL_ACCOUNT_BINDING =
+	static readonly DeleteAcmeExternalAccountBinding =
 		"acm:DeleteAcmeExternalAccountBinding";
 	/** [Write] acm:DeleteCertificate */
-	static readonly DELETE_CERTIFICATE = "acm:DeleteCertificate";
+	static readonly DeleteCertificate = "acm:DeleteCertificate";
 	/** [Read] acm:DescribeAcmeAccount */
-	static readonly DESCRIBE_ACME_ACCOUNT = "acm:DescribeAcmeAccount";
+	static readonly DescribeAcmeAccount = "acm:DescribeAcmeAccount";
 	/** [Read] acm:DescribeAcmeDomainValidation */
-	static readonly DESCRIBE_ACME_DOMAIN_VALIDATION =
+	static readonly DescribeAcmeDomainValidation =
 		"acm:DescribeAcmeDomainValidation";
 	/** [Read] acm:DescribeAcmeEndpoint */
-	static readonly DESCRIBE_ACME_ENDPOINT = "acm:DescribeAcmeEndpoint";
+	static readonly DescribeAcmeEndpoint = "acm:DescribeAcmeEndpoint";
 	/** [Read] acm:DescribeAcmeExternalAccountBinding */
-	static readonly DESCRIBE_ACME_EXTERNAL_ACCOUNT_BINDING =
+	static readonly DescribeAcmeExternalAccountBinding =
 		"acm:DescribeAcmeExternalAccountBinding";
 	/** [Read] acm:DescribeCertificate */
-	static readonly DESCRIBE_CERTIFICATE = "acm:DescribeCertificate";
+	static readonly DescribeCertificate = "acm:DescribeCertificate";
 	/** [Read] acm:ExportCertificate */
-	static readonly EXPORT_CERTIFICATE = "acm:ExportCertificate";
+	static readonly ExportCertificate = "acm:ExportCertificate";
 	/** [Read] acm:GetAccountConfiguration */
-	static readonly GET_ACCOUNT_CONFIGURATION = "acm:GetAccountConfiguration";
+	static readonly actionGetAccountConfiguration = "acm:GetAccountConfiguration";
 	/** [Read] acm:GetAcmeExternalAccountBindingCredentials */
-	static readonly GET_ACME_EXTERNAL_ACCOUNT_BINDING_CREDENTIALS =
+	static readonly actionGetAcmeExternalAccountBindingCredentials =
 		"acm:GetAcmeExternalAccountBindingCredentials";
 	/** [Read] acm:GetCertificate */
-	static readonly GET_CERTIFICATE = "acm:GetCertificate";
+	static readonly actionGetCertificate = "acm:GetCertificate";
 	/** [Write] acm:ImportCertificate */
-	static readonly IMPORT_CERTIFICATE = "acm:ImportCertificate";
+	static readonly ImportCertificate = "acm:ImportCertificate";
 	/** [List] acm:ListAcmeAccounts */
-	static readonly LIST_ACME_ACCOUNTS = "acm:ListAcmeAccounts";
+	static readonly ListAcmeAccounts = "acm:ListAcmeAccounts";
 	/** [List] acm:ListAcmeDomainValidations */
-	static readonly LIST_ACME_DOMAIN_VALIDATIONS =
-		"acm:ListAcmeDomainValidations";
+	static readonly ListAcmeDomainValidations = "acm:ListAcmeDomainValidations";
 	/** [List] acm:ListAcmeEndpoints */
-	static readonly LIST_ACME_ENDPOINTS = "acm:ListAcmeEndpoints";
+	static readonly ListAcmeEndpoints = "acm:ListAcmeEndpoints";
 	/** [List] acm:ListAcmeExternalAccountBindings */
-	static readonly LIST_ACME_EXTERNAL_ACCOUNT_BINDINGS =
+	static readonly ListAcmeExternalAccountBindings =
 		"acm:ListAcmeExternalAccountBindings";
 	/** [List] acm:ListCertificates */
-	static readonly LIST_CERTIFICATES = "acm:ListCertificates";
+	static readonly ListCertificates = "acm:ListCertificates";
 	/** [Read] acm:ListTagsForCertificate */
-	static readonly LIST_TAGS_FOR_CERTIFICATE = "acm:ListTagsForCertificate";
+	static readonly ListTagsForCertificate = "acm:ListTagsForCertificate";
 	/** [Read] acm:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "acm:ListTagsForResource";
+	static readonly ListTagsForResource = "acm:ListTagsForResource";
 	/** [Write] acm:PutAccountConfiguration */
-	static readonly PUT_ACCOUNT_CONFIGURATION = "acm:PutAccountConfiguration";
+	static readonly PutAccountConfiguration = "acm:PutAccountConfiguration";
 	/** [Tagging] acm:RemoveTagsFromCertificate */
-	static readonly REMOVE_TAGS_FROM_CERTIFICATE =
-		"acm:RemoveTagsFromCertificate";
+	static readonly RemoveTagsFromCertificate = "acm:RemoveTagsFromCertificate";
 	/** [Write] acm:RenewCertificate */
-	static readonly RENEW_CERTIFICATE = "acm:RenewCertificate";
+	static readonly RenewCertificate = "acm:RenewCertificate";
 	/** [Write] acm:RequestCertificate */
-	static readonly REQUEST_CERTIFICATE = "acm:RequestCertificate";
+	static readonly RequestCertificate = "acm:RequestCertificate";
 	/** [Write] acm:ResendValidationEmail */
-	static readonly RESEND_VALIDATION_EMAIL = "acm:ResendValidationEmail";
+	static readonly ResendValidationEmail = "acm:ResendValidationEmail";
 	/** [Write] acm:RevokeAcmeAccount */
-	static readonly REVOKE_ACME_ACCOUNT = "acm:RevokeAcmeAccount";
+	static readonly RevokeAcmeAccount = "acm:RevokeAcmeAccount";
 	/** [Write] acm:RevokeAcmeExternalAccountBinding */
-	static readonly REVOKE_ACME_EXTERNAL_ACCOUNT_BINDING =
+	static readonly RevokeAcmeExternalAccountBinding =
 		"acm:RevokeAcmeExternalAccountBinding";
 	/** [Write] acm:RevokeCertificate */
-	static readonly REVOKE_CERTIFICATE = "acm:RevokeCertificate";
+	static readonly RevokeCertificate = "acm:RevokeCertificate";
 	/** [List] acm:SearchCertificates */
-	static readonly SEARCH_CERTIFICATES = "acm:SearchCertificates";
+	static readonly SearchCertificates = "acm:SearchCertificates";
 	/** [Tagging] acm:TagResource */
-	static readonly TAG_RESOURCE = "acm:TagResource";
+	static readonly TagResource = "acm:TagResource";
 	/** [Tagging] acm:UntagResource */
-	static readonly UNTAG_RESOURCE = "acm:UntagResource";
+	static readonly UntagResource = "acm:UntagResource";
 	/** [Write] acm:UpdateAcmeDomainValidation */
-	static readonly UPDATE_ACME_DOMAIN_VALIDATION =
-		"acm:UpdateAcmeDomainValidation";
+	static readonly UpdateAcmeDomainValidation = "acm:UpdateAcmeDomainValidation";
 	/** [Write] acm:UpdateAcmeEndpoint */
-	static readonly UPDATE_ACME_ENDPOINT = "acm:UpdateAcmeEndpoint";
+	static readonly UpdateAcmeEndpoint = "acm:UpdateAcmeEndpoint";
 	/** [Write] acm:UpdateCertificate */
-	static readonly UPDATE_CERTIFICATE = "acm:UpdateCertificate";
+	static readonly UpdateCertificate = "acm:UpdateCertificate";
 	/** [Write] acm:UpdateCertificateOptions */
-	static readonly UPDATE_CERTIFICATE_OPTIONS = "acm:UpdateCertificateOptions";
+	static readonly UpdateCertificateOptions = "acm:UpdateCertificateOptions";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ACMActions.DESCRIBE_ACME_ACCOUNT,
-		ACMActions.DESCRIBE_ACME_DOMAIN_VALIDATION,
-		ACMActions.DESCRIBE_ACME_ENDPOINT,
-		ACMActions.DESCRIBE_ACME_EXTERNAL_ACCOUNT_BINDING,
-		ACMActions.DESCRIBE_CERTIFICATE,
-		ACMActions.EXPORT_CERTIFICATE,
-		ACMActions.GET_ACCOUNT_CONFIGURATION,
-		ACMActions.GET_ACME_EXTERNAL_ACCOUNT_BINDING_CREDENTIALS,
-		ACMActions.GET_CERTIFICATE,
-		ACMActions.LIST_TAGS_FOR_CERTIFICATE,
-		ACMActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ACMActions.DescribeAcmeAccount,
+		ACMActions.DescribeAcmeDomainValidation,
+		ACMActions.DescribeAcmeEndpoint,
+		ACMActions.DescribeAcmeExternalAccountBinding,
+		ACMActions.DescribeCertificate,
+		ACMActions.ExportCertificate,
+		ACMActions.actionGetAccountConfiguration,
+		ACMActions.actionGetAcmeExternalAccountBindingCredentials,
+		ACMActions.actionGetCertificate,
+		ACMActions.ListTagsForCertificate,
+		ACMActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ACMActions.CREATE_ACME_DOMAIN_VALIDATION,
-		ACMActions.CREATE_ACME_ENDPOINT,
-		ACMActions.CREATE_ACME_EXTERNAL_ACCOUNT_BINDING,
-		ACMActions.DELETE_ACME_DOMAIN_VALIDATION,
-		ACMActions.DELETE_ACME_ENDPOINT,
-		ACMActions.DELETE_ACME_EXTERNAL_ACCOUNT_BINDING,
-		ACMActions.DELETE_CERTIFICATE,
-		ACMActions.IMPORT_CERTIFICATE,
-		ACMActions.PUT_ACCOUNT_CONFIGURATION,
-		ACMActions.RENEW_CERTIFICATE,
-		ACMActions.REQUEST_CERTIFICATE,
-		ACMActions.RESEND_VALIDATION_EMAIL,
-		ACMActions.REVOKE_ACME_ACCOUNT,
-		ACMActions.REVOKE_ACME_EXTERNAL_ACCOUNT_BINDING,
-		ACMActions.REVOKE_CERTIFICATE,
-		ACMActions.UPDATE_ACME_DOMAIN_VALIDATION,
-		ACMActions.UPDATE_ACME_ENDPOINT,
-		ACMActions.UPDATE_CERTIFICATE,
-		ACMActions.UPDATE_CERTIFICATE_OPTIONS,
+	static readonly AllWriteActions: string[] = [
+		ACMActions.CreateAcmeDomainValidation,
+		ACMActions.CreateAcmeEndpoint,
+		ACMActions.CreateAcmeExternalAccountBinding,
+		ACMActions.DeleteAcmeDomainValidation,
+		ACMActions.DeleteAcmeEndpoint,
+		ACMActions.DeleteAcmeExternalAccountBinding,
+		ACMActions.DeleteCertificate,
+		ACMActions.ImportCertificate,
+		ACMActions.PutAccountConfiguration,
+		ACMActions.RenewCertificate,
+		ACMActions.RequestCertificate,
+		ACMActions.ResendValidationEmail,
+		ACMActions.RevokeAcmeAccount,
+		ACMActions.RevokeAcmeExternalAccountBinding,
+		ACMActions.RevokeCertificate,
+		ACMActions.UpdateAcmeDomainValidation,
+		ACMActions.UpdateAcmeEndpoint,
+		ACMActions.UpdateCertificate,
+		ACMActions.UpdateCertificateOptions,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ACMActions.LIST_ACME_ACCOUNTS,
-		ACMActions.LIST_ACME_DOMAIN_VALIDATIONS,
-		ACMActions.LIST_ACME_ENDPOINTS,
-		ACMActions.LIST_ACME_EXTERNAL_ACCOUNT_BINDINGS,
-		ACMActions.LIST_CERTIFICATES,
-		ACMActions.SEARCH_CERTIFICATES,
+	static readonly AllListActions: string[] = [
+		ACMActions.ListAcmeAccounts,
+		ACMActions.ListAcmeDomainValidations,
+		ACMActions.ListAcmeEndpoints,
+		ACMActions.ListAcmeExternalAccountBindings,
+		ACMActions.ListCertificates,
+		ACMActions.SearchCertificates,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ACMActions.ADD_TAGS_TO_CERTIFICATE,
-		ACMActions.REMOVE_TAGS_FROM_CERTIFICATE,
-		ACMActions.TAG_RESOURCE,
-		ACMActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ACMActions.AddTagsToCertificate,
+		ACMActions.RemoveTagsFromCertificate,
+		ACMActions.TagResource,
+		ACMActions.UntagResource,
 	];
 }
 
-const AcmeDomainValidationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint/(?<acmeEndpointId>[^:/?]+)/acme-domain-validation/(?<acmeDomainValidationId>[^:/?]+)$",
-);
-const AcmeEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint/(?<acmeEndpointId>[^:/?]+)$",
-);
-const AcmeExternalAccountBindingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint/(?<acmeEndpointId>[^:/?]+)/acme-external-account-binding/(?<externalAccountBindingId>[^:/?]+)$",
-);
-const CertificateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):certificate/(?<certificateId>[^:/?]+)$",
-);
+/**
+ * Properties for building a acme-domain-validation ARN.
+ */
+export interface ACMAcmeDomainValidationArnProps {
+	/** The AcmeEndpointId component of the ARN. */
+	readonly acmeEndpointId: string;
+	/** The AcmeDomainValidationId component of the ARN. */
+	readonly acmeDomainValidationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a acme-domain-validation ARN.
+ */
+export interface ACMAcmeDomainValidationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AcmeEndpointId component. */
+	readonly acmeEndpointId: string;
+	/** The AcmeDomainValidationId component. */
+	readonly acmeDomainValidationId: string;
+}
+
+/**
+ * Properties for building a acme-endpoint ARN.
+ */
+export interface ACMAcmeEndpointArnProps {
+	/** The AcmeEndpointId component of the ARN. */
+	readonly acmeEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a acme-endpoint ARN.
+ */
+export interface ACMAcmeEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AcmeEndpointId component. */
+	readonly acmeEndpointId: string;
+}
+
+/**
+ * Properties for building a acme-external-account-binding ARN.
+ */
+export interface ACMAcmeExternalAccountBindingArnProps {
+	/** The AcmeEndpointId component of the ARN. */
+	readonly acmeEndpointId: string;
+	/** The ExternalAccountBindingId component of the ARN. */
+	readonly externalAccountBindingId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a acme-external-account-binding ARN.
+ */
+export interface ACMAcmeExternalAccountBindingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AcmeEndpointId component. */
+	readonly acmeEndpointId: string;
+	/** The ExternalAccountBindingId component. */
+	readonly externalAccountBindingId: string;
+}
+
+/**
+ * Properties for building a certificate ARN.
+ */
+export interface ACMCertificateArnProps {
+	/** The CertificateId component of the ARN. */
+	readonly certificateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a certificate ARN.
+ */
+export interface ACMCertificateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CertificateId component. */
+	readonly certificateId: string;
+}
+
+const AcmeDomainValidationArnRegex =
+	/^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint\/(?<acmeEndpointId>[^:/?]+)\/acme-domain-validation\/(?<acmeDomainValidationId>[^:/?]+)$/;
+const AcmeEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint\/(?<acmeEndpointId>[^:/?]+)$/;
+const AcmeExternalAccountBindingArnRegex =
+	/^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):acme-endpoint\/(?<acmeEndpointId>[^:/?]+)\/acme-external-account-binding\/(?<externalAccountBindingId>[^:/?]+)$/;
+const CertificateArnRegex =
+	/^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):certificate\/(?<certificateId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for acm resources.
@@ -181,18 +292,7 @@ export class ACMResources {
 	/**
 	 * Builds an ARN for the acme-domain-validation resource.
 	 */
-	static acmeDomainValidation(props: {
-		/** The AcmeEndpointId component of the ARN. */
-		readonly acmeEndpointId: string;
-		/** The AcmeDomainValidationId component of the ARN. */
-		readonly acmeDomainValidationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static acmeDomainValidation(props: ACMAcmeDomainValidationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:acm:${props.region ?? "*"}:${props.account ?? "*"}:acme-endpoint/${props.acmeEndpointId}/acme-domain-validation/${props.acmeDomainValidationId}`;
 	}
 
@@ -207,13 +307,9 @@ export class ACMResources {
 	 * Parses a acme-domain-validation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAcmeDomainValidationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		acmeEndpointId: string;
-		acmeDomainValidationId: string;
-	} {
+	static parseAcmeDomainValidationArn(
+		arn: string,
+	): ACMAcmeDomainValidationArnComponents {
 		const match = AcmeDomainValidationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid acme-domain-validation ARN: ${arn}`);
@@ -230,16 +326,7 @@ export class ACMResources {
 	/**
 	 * Builds an ARN for the acme-endpoint resource.
 	 */
-	static acmeEndpoint(props: {
-		/** The AcmeEndpointId component of the ARN. */
-		readonly acmeEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static acmeEndpoint(props: ACMAcmeEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:acm:${props.region ?? "*"}:${props.account ?? "*"}:acme-endpoint/${props.acmeEndpointId}`;
 	}
 
@@ -254,12 +341,7 @@ export class ACMResources {
 	 * Parses a acme-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAcmeEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		acmeEndpointId: string;
-	} {
+	static parseAcmeEndpointArn(arn: string): ACMAcmeEndpointArnComponents {
 		const match = AcmeEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid acme-endpoint ARN: ${arn}`);
@@ -275,18 +357,9 @@ export class ACMResources {
 	/**
 	 * Builds an ARN for the acme-external-account-binding resource.
 	 */
-	static acmeExternalAccountBinding(props: {
-		/** The AcmeEndpointId component of the ARN. */
-		readonly acmeEndpointId: string;
-		/** The ExternalAccountBindingId component of the ARN. */
-		readonly externalAccountBindingId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static acmeExternalAccountBinding(
+		props: ACMAcmeExternalAccountBindingArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:acm:${props.region ?? "*"}:${props.account ?? "*"}:acme-endpoint/${props.acmeEndpointId}/acme-external-account-binding/${props.externalAccountBindingId}`;
 	}
 
@@ -301,13 +374,9 @@ export class ACMResources {
 	 * Parses a acme-external-account-binding ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAcmeExternalAccountBindingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		acmeEndpointId: string;
-		externalAccountBindingId: string;
-	} {
+	static parseAcmeExternalAccountBindingArn(
+		arn: string,
+	): ACMAcmeExternalAccountBindingArnComponents {
 		const match = AcmeExternalAccountBindingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid acme-external-account-binding ARN: ${arn}`);
@@ -324,16 +393,7 @@ export class ACMResources {
 	/**
 	 * Builds an ARN for the certificate resource.
 	 */
-	static certificate(props: {
-		/** The CertificateId component of the ARN. */
-		readonly certificateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static certificate(props: ACMCertificateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:acm:${props.region ?? "*"}:${props.account ?? "*"}:certificate/${props.certificateId}`;
 	}
 
@@ -348,12 +408,7 @@ export class ACMResources {
 	 * Parses a certificate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCertificateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		certificateId: string;
-	} {
+	static parseCertificateArn(arn: string): ACMCertificateArnComponents {
 		const match = CertificateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid certificate ARN: ${arn}`);
@@ -372,103 +427,99 @@ export class ACMResources {
  */
 export class ACMOperations {
 	/** IAM actions required for the AddTagsToCertificate API call. */
-	static readonly ADD_TAGS_TO_CERTIFICATE: string[] = [
-		"acm:AddTagsToCertificate",
-	];
+	static readonly AddTagsToCertificate: string[] = ["acm:AddTagsToCertificate"];
 	/** IAM actions required for the CreateAcmeDomainValidation API call. */
-	static readonly CREATE_ACME_DOMAIN_VALIDATION: string[] = [];
+	static readonly CreateAcmeDomainValidation: string[] = [];
 	/** IAM actions required for the CreateAcmeEndpoint API call. */
-	static readonly CREATE_ACME_ENDPOINT: string[] = [];
+	static readonly CreateAcmeEndpoint: string[] = [];
 	/** IAM actions required for the CreateAcmeExternalAccountBinding API call. */
-	static readonly CREATE_ACME_EXTERNAL_ACCOUNT_BINDING: string[] = [];
+	static readonly CreateAcmeExternalAccountBinding: string[] = [];
 	/** IAM actions required for the DeleteAcmeDomainValidation API call. */
-	static readonly DELETE_ACME_DOMAIN_VALIDATION: string[] = [];
+	static readonly DeleteAcmeDomainValidation: string[] = [];
 	/** IAM actions required for the DeleteAcmeEndpoint API call. */
-	static readonly DELETE_ACME_ENDPOINT: string[] = [];
+	static readonly DeleteAcmeEndpoint: string[] = [];
 	/** IAM actions required for the DeleteAcmeExternalAccountBinding API call. */
-	static readonly DELETE_ACME_EXTERNAL_ACCOUNT_BINDING: string[] = [];
+	static readonly DeleteAcmeExternalAccountBinding: string[] = [];
 	/** IAM actions required for the DeleteCertificate API call. */
-	static readonly DELETE_CERTIFICATE: string[] = ["acm:DeleteCertificate"];
+	static readonly DeleteCertificate: string[] = ["acm:DeleteCertificate"];
 	/** IAM actions required for the DescribeAcmeAccount API call. */
-	static readonly DESCRIBE_ACME_ACCOUNT: string[] = [];
+	static readonly DescribeAcmeAccount: string[] = [];
 	/** IAM actions required for the DescribeAcmeDomainValidation API call. */
-	static readonly DESCRIBE_ACME_DOMAIN_VALIDATION: string[] = [];
+	static readonly DescribeAcmeDomainValidation: string[] = [];
 	/** IAM actions required for the DescribeAcmeEndpoint API call. */
-	static readonly DESCRIBE_ACME_ENDPOINT: string[] = [];
+	static readonly DescribeAcmeEndpoint: string[] = [];
 	/** IAM actions required for the DescribeAcmeExternalAccountBinding API call. */
-	static readonly DESCRIBE_ACME_EXTERNAL_ACCOUNT_BINDING: string[] = [];
+	static readonly DescribeAcmeExternalAccountBinding: string[] = [];
 	/** IAM actions required for the DescribeCertificate API call. */
-	static readonly DESCRIBE_CERTIFICATE: string[] = ["acm:DescribeCertificate"];
+	static readonly DescribeCertificate: string[] = ["acm:DescribeCertificate"];
 	/** IAM actions required for the ExportCertificate API call. */
-	static readonly EXPORT_CERTIFICATE: string[] = ["acm:ExportCertificate"];
+	static readonly ExportCertificate: string[] = ["acm:ExportCertificate"];
 	/** IAM actions required for the GetAccountConfiguration API call. */
-	static readonly GET_ACCOUNT_CONFIGURATION: string[] = [
+	static readonly opGetAccountConfiguration: string[] = [
 		"acm:GetAccountConfiguration",
 	];
 	/** IAM actions required for the GetAcmeExternalAccountBindingCredentials API call. */
-	static readonly GET_ACME_EXTERNAL_ACCOUNT_BINDING_CREDENTIALS: string[] = [];
+	static readonly opGetAcmeExternalAccountBindingCredentials: string[] = [];
 	/** IAM actions required for the GetCertificate API call. */
-	static readonly GET_CERTIFICATE: string[] = ["acm:GetCertificate"];
+	static readonly opGetCertificate: string[] = ["acm:GetCertificate"];
 	/** IAM actions required for the ImportCertificate API call. */
-	static readonly IMPORT_CERTIFICATE: string[] = [
+	static readonly ImportCertificate: string[] = [
 		"acm:AddTagsToCertificate",
 		"acm:ImportCertificate",
 	];
 	/** IAM actions required for the ListAcmeAccounts API call. */
-	static readonly LIST_ACME_ACCOUNTS: string[] = [];
+	static readonly ListAcmeAccounts: string[] = [];
 	/** IAM actions required for the ListAcmeDomainValidations API call. */
-	static readonly LIST_ACME_DOMAIN_VALIDATIONS: string[] = [];
+	static readonly ListAcmeDomainValidations: string[] = [];
 	/** IAM actions required for the ListAcmeEndpoints API call. */
-	static readonly LIST_ACME_ENDPOINTS: string[] = [];
+	static readonly ListAcmeEndpoints: string[] = [];
 	/** IAM actions required for the ListAcmeExternalAccountBindings API call. */
-	static readonly LIST_ACME_EXTERNAL_ACCOUNT_BINDINGS: string[] = [];
+	static readonly ListAcmeExternalAccountBindings: string[] = [];
 	/** IAM actions required for the ListCertificates API call. */
-	static readonly LIST_CERTIFICATES: string[] = ["acm:ListCertificates"];
+	static readonly ListCertificates: string[] = ["acm:ListCertificates"];
 	/** IAM actions required for the ListTagsForCertificate API call. */
-	static readonly LIST_TAGS_FOR_CERTIFICATE: string[] = [
+	static readonly ListTagsForCertificate: string[] = [
 		"acm:ListTagsForCertificate",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"acm:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["acm:ListTagsForResource"];
 	/** IAM actions required for the PutAccountConfiguration API call. */
-	static readonly PUT_ACCOUNT_CONFIGURATION: string[] = [
+	static readonly PutAccountConfiguration: string[] = [
 		"acm:PutAccountConfiguration",
 	];
 	/** IAM actions required for the RemoveTagsFromCertificate API call. */
-	static readonly REMOVE_TAGS_FROM_CERTIFICATE: string[] = [
+	static readonly RemoveTagsFromCertificate: string[] = [
 		"acm:RemoveTagsFromCertificate",
 	];
 	/** IAM actions required for the RenewCertificate API call. */
-	static readonly RENEW_CERTIFICATE: string[] = ["acm:RenewCertificate"];
+	static readonly RenewCertificate: string[] = ["acm:RenewCertificate"];
 	/** IAM actions required for the RequestCertificate API call. */
-	static readonly REQUEST_CERTIFICATE: string[] = [
+	static readonly RequestCertificate: string[] = [
 		"acm:AddTagsToCertificate",
 		"acm:RequestCertificate",
 	];
 	/** IAM actions required for the ResendValidationEmail API call. */
-	static readonly RESEND_VALIDATION_EMAIL: string[] = [
+	static readonly ResendValidationEmail: string[] = [
 		"acm:ResendValidationEmail",
 	];
 	/** IAM actions required for the RevokeAcmeAccount API call. */
-	static readonly REVOKE_ACME_ACCOUNT: string[] = [];
+	static readonly RevokeAcmeAccount: string[] = [];
 	/** IAM actions required for the RevokeAcmeExternalAccountBinding API call. */
-	static readonly REVOKE_ACME_EXTERNAL_ACCOUNT_BINDING: string[] = [];
+	static readonly RevokeAcmeExternalAccountBinding: string[] = [];
 	/** IAM actions required for the RevokeCertificate API call. */
-	static readonly REVOKE_CERTIFICATE: string[] = ["acm:RevokeCertificate"];
+	static readonly RevokeCertificate: string[] = ["acm:RevokeCertificate"];
 	/** IAM actions required for the SearchCertificates API call. */
-	static readonly SEARCH_CERTIFICATES: string[] = ["acm:SearchCertificates"];
+	static readonly SearchCertificates: string[] = ["acm:SearchCertificates"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["acm:TagResource"];
+	static readonly TagResource: string[] = ["acm:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["acm:UntagResource"];
+	static readonly UntagResource: string[] = ["acm:UntagResource"];
 	/** IAM actions required for the UpdateAcmeDomainValidation API call. */
-	static readonly UPDATE_ACME_DOMAIN_VALIDATION: string[] = [];
+	static readonly UpdateAcmeDomainValidation: string[] = [];
 	/** IAM actions required for the UpdateAcmeEndpoint API call. */
-	static readonly UPDATE_ACME_ENDPOINT: string[] = [];
+	static readonly UpdateAcmeEndpoint: string[] = [];
 	/** IAM actions required for the UpdateCertificateOptions API call. */
-	static readonly UPDATE_CERTIFICATE_OPTIONS: string[] = [
+	static readonly UpdateCertificateOptions: string[] = [
 		"acm:UpdateCertificateOptions",
 	];
 }
@@ -478,44 +529,46 @@ export class ACMOperations {
  */
 export class ACMConditions {
 	/** Condition keys applicable to the AddTagsToCertificate action. */
-	static readonly ADD_TAGS_TO_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly AddTagsToCertificateConditionKeys: string[] = [
 		"acm:CertificateKeyPairOrigin",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAcmeDomainValidation action. */
-	static readonly CREATE_ACME_DOMAIN_VALIDATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAcmeDomainValidationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAcmeEndpoint action. */
-	static readonly CREATE_ACME_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateAcmeEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAcmeExternalAccountBinding action. */
-	static readonly CREATE_ACME_EXTERNAL_ACCOUNT_BINDING_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateAcmeExternalAccountBindingConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DeleteCertificate action. */
-	static readonly DELETE_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly DeleteCertificateConditionKeys: string[] = [
 		"acm:CertificateKeyPairOrigin",
 	];
 	/** Condition keys applicable to the ExportCertificate action. */
-	static readonly EXPORT_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly ExportCertificateConditionKeys: string[] = [
 		"acm:DomainNames",
 	];
 	/** Condition keys applicable to the ImportCertificate action. */
-	static readonly IMPORT_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly ImportCertificateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RemoveTagsFromCertificate action. */
-	static readonly REMOVE_TAGS_FROM_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly RemoveTagsFromCertificateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RequestCertificate action. */
-	static readonly REQUEST_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly RequestCertificateConditionKeys: string[] = [
 		"acm:CertificateAuthority",
 		"acm:CertificateKeyPairOrigin",
 		"acm:CertificateTransparencyLogging",
@@ -527,19 +580,19 @@ export class ACMConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RevokeCertificate action. */
-	static readonly REVOKE_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly RevokeCertificateConditionKeys: string[] = [
 		"acm:CertificateKeyPairOrigin",
 		"acm:DomainNames",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateCertificate action. */
-	static readonly UPDATE_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly UpdateCertificateConditionKeys: string[] = [
 		"acm:CertificateKeyPairOrigin",
 	];
 
@@ -559,11 +612,11 @@ export class ACMConditions {
 	/** Condition key: acm:ValidationMethod (String) */
 	static readonly VALIDATION_METHOD = "acm:ValidationMethod";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `acm:CertificateAuthority`.

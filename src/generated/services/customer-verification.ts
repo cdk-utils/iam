@@ -13,35 +13,35 @@ export class CustomerVerificationActions {
 	static readonly SERVICE_PREFIX = "customer-verification";
 
 	/** [Write] customer-verification:CreateCustomerVerificationDetails */
-	static readonly CREATE_CUSTOMER_VERIFICATION_DETAILS =
+	static readonly CreateCustomerVerificationDetails =
 		"customer-verification:CreateCustomerVerificationDetails";
 	/** [Write] customer-verification:CreateUploadUrls */
-	static readonly CREATE_UPLOAD_URLS = "customer-verification:CreateUploadUrls";
+	static readonly CreateUploadUrls = "customer-verification:CreateUploadUrls";
 	/** [Read] customer-verification:GetCustomerVerificationDetails */
-	static readonly GET_CUSTOMER_VERIFICATION_DETAILS =
+	static readonly actionGetCustomerVerificationDetails =
 		"customer-verification:GetCustomerVerificationDetails";
 	/** [Read] customer-verification:GetCustomerVerificationEligibility */
-	static readonly GET_CUSTOMER_VERIFICATION_ELIGIBILITY =
+	static readonly actionGetCustomerVerificationEligibility =
 		"customer-verification:GetCustomerVerificationEligibility";
 	/** [Write] customer-verification:UpdateCustomerVerificationDetails */
-	static readonly UPDATE_CUSTOMER_VERIFICATION_DETAILS =
+	static readonly UpdateCustomerVerificationDetails =
 		"customer-verification:UpdateCustomerVerificationDetails";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CustomerVerificationActions.GET_CUSTOMER_VERIFICATION_DETAILS,
-		CustomerVerificationActions.GET_CUSTOMER_VERIFICATION_ELIGIBILITY,
+	static readonly AllReadActions: string[] = [
+		CustomerVerificationActions.actionGetCustomerVerificationDetails,
+		CustomerVerificationActions.actionGetCustomerVerificationEligibility,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CustomerVerificationActions.CREATE_CUSTOMER_VERIFICATION_DETAILS,
-		CustomerVerificationActions.CREATE_UPLOAD_URLS,
-		CustomerVerificationActions.UPDATE_CUSTOMER_VERIFICATION_DETAILS,
+	static readonly AllWriteActions: string[] = [
+		CustomerVerificationActions.CreateCustomerVerificationDetails,
+		CustomerVerificationActions.CreateUploadUrls,
+		CustomerVerificationActions.UpdateCustomerVerificationDetails,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

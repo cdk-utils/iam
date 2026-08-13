@@ -13,1054 +13,1943 @@ export class IotActions {
 	static readonly SERVICE_PREFIX = "iot";
 
 	/** [Write] iot:AcceptCertificateTransfer */
-	static readonly ACCEPT_CERTIFICATE_TRANSFER = "iot:AcceptCertificateTransfer";
+	static readonly AcceptCertificateTransfer = "iot:AcceptCertificateTransfer";
 	/** [Write] iot:AddThingToBillingGroup */
-	static readonly ADD_THING_TO_BILLING_GROUP = "iot:AddThingToBillingGroup";
+	static readonly AddThingToBillingGroup = "iot:AddThingToBillingGroup";
 	/** [Write] iot:AddThingToThingGroup */
-	static readonly ADD_THING_TO_THING_GROUP = "iot:AddThingToThingGroup";
+	static readonly AddThingToThingGroup = "iot:AddThingToThingGroup";
 	/** [Write] iot:AssociateSbomWithPackageVersion */
-	static readonly ASSOCIATE_SBOM_WITH_PACKAGE_VERSION =
+	static readonly AssociateSbomWithPackageVersion =
 		"iot:AssociateSbomWithPackageVersion";
 	/** [Write] iot:AssociateTargetsWithJob */
-	static readonly ASSOCIATE_TARGETS_WITH_JOB = "iot:AssociateTargetsWithJob";
+	static readonly AssociateTargetsWithJob = "iot:AssociateTargetsWithJob";
 	/** [PermissionManagement] iot:AttachPolicy */
-	static readonly ATTACH_POLICY = "iot:AttachPolicy";
+	static readonly AttachPolicy = "iot:AttachPolicy";
 	/** [PermissionManagement] iot:AttachPrincipalPolicy */
-	static readonly ATTACH_PRINCIPAL_POLICY = "iot:AttachPrincipalPolicy";
+	static readonly AttachPrincipalPolicy = "iot:AttachPrincipalPolicy";
 	/** [Write] iot:AttachSecurityProfile */
-	static readonly ATTACH_SECURITY_PROFILE = "iot:AttachSecurityProfile";
+	static readonly AttachSecurityProfile = "iot:AttachSecurityProfile";
 	/** [Write] iot:AttachThingPrincipal */
-	static readonly ATTACH_THING_PRINCIPAL = "iot:AttachThingPrincipal";
+	static readonly AttachThingPrincipal = "iot:AttachThingPrincipal";
 	/** [Write] iot:CancelAuditMitigationActionsTask */
-	static readonly CANCEL_AUDIT_MITIGATION_ACTIONS_TASK =
+	static readonly CancelAuditMitigationActionsTask =
 		"iot:CancelAuditMitigationActionsTask";
 	/** [Write] iot:CancelAuditTask */
-	static readonly CANCEL_AUDIT_TASK = "iot:CancelAuditTask";
+	static readonly CancelAuditTask = "iot:CancelAuditTask";
 	/** [Write] iot:CancelCertificateTransfer */
-	static readonly CANCEL_CERTIFICATE_TRANSFER = "iot:CancelCertificateTransfer";
+	static readonly CancelCertificateTransfer = "iot:CancelCertificateTransfer";
 	/** [Write] iot:CancelDetectMitigationActionsTask */
-	static readonly CANCEL_DETECT_MITIGATION_ACTIONS_TASK =
+	static readonly CancelDetectMitigationActionsTask =
 		"iot:CancelDetectMitigationActionsTask";
 	/** [Write] iot:CancelJob */
-	static readonly CANCEL_JOB = "iot:CancelJob";
+	static readonly CancelJob = "iot:CancelJob";
 	/** [Write] iot:CancelJobExecution */
-	static readonly CANCEL_JOB_EXECUTION = "iot:CancelJobExecution";
+	static readonly CancelJobExecution = "iot:CancelJobExecution";
 	/** [Write] iot:ClearDefaultAuthorizer */
-	static readonly CLEAR_DEFAULT_AUTHORIZER = "iot:ClearDefaultAuthorizer";
+	static readonly ClearDefaultAuthorizer = "iot:ClearDefaultAuthorizer";
 	/** [Write] iot:CloseTunnel */
-	static readonly CLOSE_TUNNEL = "iot:CloseTunnel";
+	static readonly CloseTunnel = "iot:CloseTunnel";
 	/** [Write] iot:ConfirmTopicRuleDestination */
-	static readonly CONFIRM_TOPIC_RULE_DESTINATION =
+	static readonly ConfirmTopicRuleDestination =
 		"iot:ConfirmTopicRuleDestination";
 	/** [Write] iot:Connect */
-	static readonly CONNECT = "iot:Connect";
+	static readonly Connect = "iot:Connect";
 	/** [Write] iot:CreateAuditSuppression */
-	static readonly CREATE_AUDIT_SUPPRESSION = "iot:CreateAuditSuppression";
+	static readonly CreateAuditSuppression = "iot:CreateAuditSuppression";
 	/** [Write] iot:CreateAuthorizer */
-	static readonly CREATE_AUTHORIZER = "iot:CreateAuthorizer";
+	static readonly CreateAuthorizer = "iot:CreateAuthorizer";
 	/** [Write] iot:CreateBillingGroup */
-	static readonly CREATE_BILLING_GROUP = "iot:CreateBillingGroup";
+	static readonly CreateBillingGroup = "iot:CreateBillingGroup";
 	/** [Write] iot:CreateCertificateFromCsr */
-	static readonly CREATE_CERTIFICATE_FROM_CSR = "iot:CreateCertificateFromCsr";
+	static readonly CreateCertificateFromCsr = "iot:CreateCertificateFromCsr";
 	/** [Write] iot:CreateCertificateProvider */
-	static readonly CREATE_CERTIFICATE_PROVIDER = "iot:CreateCertificateProvider";
+	static readonly CreateCertificateProvider = "iot:CreateCertificateProvider";
 	/** [Write] iot:CreateCommand */
-	static readonly CREATE_COMMAND = "iot:CreateCommand";
+	static readonly CreateCommand = "iot:CreateCommand";
 	/** [Write] iot:CreateCustomMetric */
-	static readonly CREATE_CUSTOM_METRIC = "iot:CreateCustomMetric";
+	static readonly CreateCustomMetric = "iot:CreateCustomMetric";
 	/** [Write] iot:CreateDimension */
-	static readonly CREATE_DIMENSION = "iot:CreateDimension";
+	static readonly CreateDimension = "iot:CreateDimension";
 	/** [Write] iot:CreateDomainConfiguration */
-	static readonly CREATE_DOMAIN_CONFIGURATION = "iot:CreateDomainConfiguration";
+	static readonly CreateDomainConfiguration = "iot:CreateDomainConfiguration";
 	/** [Write] iot:CreateDynamicThingGroup */
-	static readonly CREATE_DYNAMIC_THING_GROUP = "iot:CreateDynamicThingGroup";
+	static readonly CreateDynamicThingGroup = "iot:CreateDynamicThingGroup";
 	/** [Write] iot:CreateFleetMetric */
-	static readonly CREATE_FLEET_METRIC = "iot:CreateFleetMetric";
+	static readonly CreateFleetMetric = "iot:CreateFleetMetric";
 	/** [Write] iot:CreateJob */
-	static readonly CREATE_JOB = "iot:CreateJob";
+	static readonly CreateJob = "iot:CreateJob";
 	/** [Write] iot:CreateJobTemplate */
-	static readonly CREATE_JOB_TEMPLATE = "iot:CreateJobTemplate";
+	static readonly CreateJobTemplate = "iot:CreateJobTemplate";
 	/** [Write] iot:CreateKeysAndCertificate */
-	static readonly CREATE_KEYS_AND_CERTIFICATE = "iot:CreateKeysAndCertificate";
+	static readonly CreateKeysAndCertificate = "iot:CreateKeysAndCertificate";
 	/** [Write] iot:CreateMitigationAction */
-	static readonly CREATE_MITIGATION_ACTION = "iot:CreateMitigationAction";
+	static readonly CreateMitigationAction = "iot:CreateMitigationAction";
 	/** [Write] iot:CreateOTAUpdate */
-	static readonly CREATE_OTA_UPDATE = "iot:CreateOTAUpdate";
+	static readonly CreateOTAUpdate = "iot:CreateOTAUpdate";
 	/** [Write] iot:CreatePackage */
-	static readonly CREATE_PACKAGE = "iot:CreatePackage";
+	static readonly CreatePackage = "iot:CreatePackage";
 	/** [Write] iot:CreatePackageVersion */
-	static readonly CREATE_PACKAGE_VERSION = "iot:CreatePackageVersion";
+	static readonly CreatePackageVersion = "iot:CreatePackageVersion";
 	/** [PermissionManagement] iot:CreatePolicy */
-	static readonly CREATE_POLICY = "iot:CreatePolicy";
+	static readonly CreatePolicy = "iot:CreatePolicy";
 	/** [PermissionManagement] iot:CreatePolicyVersion */
-	static readonly CREATE_POLICY_VERSION = "iot:CreatePolicyVersion";
+	static readonly CreatePolicyVersion = "iot:CreatePolicyVersion";
 	/** [Write] iot:CreateProvisioningClaim */
-	static readonly CREATE_PROVISIONING_CLAIM = "iot:CreateProvisioningClaim";
+	static readonly CreateProvisioningClaim = "iot:CreateProvisioningClaim";
 	/** [Write] iot:CreateProvisioningTemplate */
-	static readonly CREATE_PROVISIONING_TEMPLATE =
-		"iot:CreateProvisioningTemplate";
+	static readonly CreateProvisioningTemplate = "iot:CreateProvisioningTemplate";
 	/** [Write] iot:CreateProvisioningTemplateVersion */
-	static readonly CREATE_PROVISIONING_TEMPLATE_VERSION =
+	static readonly CreateProvisioningTemplateVersion =
 		"iot:CreateProvisioningTemplateVersion";
 	/** [Write] iot:CreateRoleAlias */
-	static readonly CREATE_ROLE_ALIAS = "iot:CreateRoleAlias";
+	static readonly CreateRoleAlias = "iot:CreateRoleAlias";
 	/** [Write] iot:CreateScheduledAudit */
-	static readonly CREATE_SCHEDULED_AUDIT = "iot:CreateScheduledAudit";
+	static readonly CreateScheduledAudit = "iot:CreateScheduledAudit";
 	/** [Write] iot:CreateSecurityProfile */
-	static readonly CREATE_SECURITY_PROFILE = "iot:CreateSecurityProfile";
+	static readonly CreateSecurityProfile = "iot:CreateSecurityProfile";
 	/** [Write] iot:CreateStream */
-	static readonly CREATE_STREAM = "iot:CreateStream";
+	static readonly CreateStream = "iot:CreateStream";
 	/** [Write] iot:CreateThing */
-	static readonly CREATE_THING = "iot:CreateThing";
+	static readonly CreateThing = "iot:CreateThing";
 	/** [Write] iot:CreateThingGroup */
-	static readonly CREATE_THING_GROUP = "iot:CreateThingGroup";
+	static readonly CreateThingGroup = "iot:CreateThingGroup";
 	/** [Write] iot:CreateThingType */
-	static readonly CREATE_THING_TYPE = "iot:CreateThingType";
+	static readonly CreateThingType = "iot:CreateThingType";
 	/** [Write] iot:CreateTopicRule */
-	static readonly CREATE_TOPIC_RULE = "iot:CreateTopicRule";
+	static readonly CreateTopicRule = "iot:CreateTopicRule";
 	/** [Write] iot:CreateTopicRuleDestination */
-	static readonly CREATE_TOPIC_RULE_DESTINATION =
-		"iot:CreateTopicRuleDestination";
+	static readonly CreateTopicRuleDestination = "iot:CreateTopicRuleDestination";
 	/** [Write] iot:DeleteAccountAuditConfiguration */
-	static readonly DELETE_ACCOUNT_AUDIT_CONFIGURATION =
+	static readonly DeleteAccountAuditConfiguration =
 		"iot:DeleteAccountAuditConfiguration";
 	/** [Write] iot:DeleteAuditSuppression */
-	static readonly DELETE_AUDIT_SUPPRESSION = "iot:DeleteAuditSuppression";
+	static readonly DeleteAuditSuppression = "iot:DeleteAuditSuppression";
 	/** [Write] iot:DeleteAuthorizer */
-	static readonly DELETE_AUTHORIZER = "iot:DeleteAuthorizer";
+	static readonly DeleteAuthorizer = "iot:DeleteAuthorizer";
 	/** [Write] iot:DeleteBillingGroup */
-	static readonly DELETE_BILLING_GROUP = "iot:DeleteBillingGroup";
+	static readonly DeleteBillingGroup = "iot:DeleteBillingGroup";
 	/** [Write] iot:DeleteCACertificate */
-	static readonly DELETE_CA_CERTIFICATE = "iot:DeleteCACertificate";
+	static readonly DeleteCACertificate = "iot:DeleteCACertificate";
 	/** [Write] iot:DeleteCertificate */
-	static readonly DELETE_CERTIFICATE = "iot:DeleteCertificate";
+	static readonly DeleteCertificate = "iot:DeleteCertificate";
 	/** [Write] iot:DeleteCertificateProvider */
-	static readonly DELETE_CERTIFICATE_PROVIDER = "iot:DeleteCertificateProvider";
+	static readonly DeleteCertificateProvider = "iot:DeleteCertificateProvider";
 	/** [Write] iot:DeleteCommand */
-	static readonly DELETE_COMMAND = "iot:DeleteCommand";
+	static readonly DeleteCommand = "iot:DeleteCommand";
 	/** [Write] iot:DeleteCommandExecution */
-	static readonly DELETE_COMMAND_EXECUTION = "iot:DeleteCommandExecution";
+	static readonly DeleteCommandExecution = "iot:DeleteCommandExecution";
 	/** [Write] iot:DeleteConnection */
-	static readonly DELETE_CONNECTION = "iot:DeleteConnection";
+	static readonly DeleteConnection = "iot:DeleteConnection";
 	/** [Write] iot:DeleteCustomMetric */
-	static readonly DELETE_CUSTOM_METRIC = "iot:DeleteCustomMetric";
+	static readonly DeleteCustomMetric = "iot:DeleteCustomMetric";
 	/** [Write] iot:DeleteDimension */
-	static readonly DELETE_DIMENSION = "iot:DeleteDimension";
+	static readonly DeleteDimension = "iot:DeleteDimension";
 	/** [Write] iot:DeleteDomainConfiguration */
-	static readonly DELETE_DOMAIN_CONFIGURATION = "iot:DeleteDomainConfiguration";
+	static readonly DeleteDomainConfiguration = "iot:DeleteDomainConfiguration";
 	/** [Write] iot:DeleteDynamicThingGroup */
-	static readonly DELETE_DYNAMIC_THING_GROUP = "iot:DeleteDynamicThingGroup";
+	static readonly DeleteDynamicThingGroup = "iot:DeleteDynamicThingGroup";
 	/** [Write] iot:DeleteFleetMetric */
-	static readonly DELETE_FLEET_METRIC = "iot:DeleteFleetMetric";
+	static readonly DeleteFleetMetric = "iot:DeleteFleetMetric";
 	/** [Write] iot:DeleteJob */
-	static readonly DELETE_JOB = "iot:DeleteJob";
+	static readonly DeleteJob = "iot:DeleteJob";
 	/** [Write] iot:DeleteJobExecution */
-	static readonly DELETE_JOB_EXECUTION = "iot:DeleteJobExecution";
+	static readonly DeleteJobExecution = "iot:DeleteJobExecution";
 	/** [Write] iot:DeleteJobTemplate */
-	static readonly DELETE_JOB_TEMPLATE = "iot:DeleteJobTemplate";
+	static readonly DeleteJobTemplate = "iot:DeleteJobTemplate";
 	/** [Write] iot:DeleteMitigationAction */
-	static readonly DELETE_MITIGATION_ACTION = "iot:DeleteMitigationAction";
+	static readonly DeleteMitigationAction = "iot:DeleteMitigationAction";
 	/** [Write] iot:DeleteOTAUpdate */
-	static readonly DELETE_OTA_UPDATE = "iot:DeleteOTAUpdate";
+	static readonly DeleteOTAUpdate = "iot:DeleteOTAUpdate";
 	/** [Write] iot:DeletePackage */
-	static readonly DELETE_PACKAGE = "iot:DeletePackage";
+	static readonly DeletePackage = "iot:DeletePackage";
 	/** [Write] iot:DeletePackageVersion */
-	static readonly DELETE_PACKAGE_VERSION = "iot:DeletePackageVersion";
+	static readonly DeletePackageVersion = "iot:DeletePackageVersion";
 	/** [PermissionManagement] iot:DeletePolicy */
-	static readonly DELETE_POLICY = "iot:DeletePolicy";
+	static readonly DeletePolicy = "iot:DeletePolicy";
 	/** [PermissionManagement] iot:DeletePolicyVersion */
-	static readonly DELETE_POLICY_VERSION = "iot:DeletePolicyVersion";
+	static readonly DeletePolicyVersion = "iot:DeletePolicyVersion";
 	/** [Write] iot:DeleteProvisioningTemplate */
-	static readonly DELETE_PROVISIONING_TEMPLATE =
-		"iot:DeleteProvisioningTemplate";
+	static readonly DeleteProvisioningTemplate = "iot:DeleteProvisioningTemplate";
 	/** [Write] iot:DeleteProvisioningTemplateVersion */
-	static readonly DELETE_PROVISIONING_TEMPLATE_VERSION =
+	static readonly DeleteProvisioningTemplateVersion =
 		"iot:DeleteProvisioningTemplateVersion";
 	/** [Write] iot:DeleteRegistrationCode */
-	static readonly DELETE_REGISTRATION_CODE = "iot:DeleteRegistrationCode";
+	static readonly DeleteRegistrationCode = "iot:DeleteRegistrationCode";
 	/** [Write] iot:DeleteRoleAlias */
-	static readonly DELETE_ROLE_ALIAS = "iot:DeleteRoleAlias";
+	static readonly DeleteRoleAlias = "iot:DeleteRoleAlias";
 	/** [Write] iot:DeleteScheduledAudit */
-	static readonly DELETE_SCHEDULED_AUDIT = "iot:DeleteScheduledAudit";
+	static readonly DeleteScheduledAudit = "iot:DeleteScheduledAudit";
 	/** [Write] iot:DeleteSecurityProfile */
-	static readonly DELETE_SECURITY_PROFILE = "iot:DeleteSecurityProfile";
+	static readonly DeleteSecurityProfile = "iot:DeleteSecurityProfile";
 	/** [Write] iot:DeleteStream */
-	static readonly DELETE_STREAM = "iot:DeleteStream";
+	static readonly DeleteStream = "iot:DeleteStream";
 	/** [Write] iot:DeleteThing */
-	static readonly DELETE_THING = "iot:DeleteThing";
+	static readonly DeleteThing = "iot:DeleteThing";
 	/** [Write] iot:DeleteThingGroup */
-	static readonly DELETE_THING_GROUP = "iot:DeleteThingGroup";
+	static readonly DeleteThingGroup = "iot:DeleteThingGroup";
 	/** [Write] iot:DeleteThingShadow */
-	static readonly DELETE_THING_SHADOW = "iot:DeleteThingShadow";
+	static readonly DeleteThingShadow = "iot:DeleteThingShadow";
 	/** [Write] iot:DeleteThingType */
-	static readonly DELETE_THING_TYPE = "iot:DeleteThingType";
+	static readonly DeleteThingType = "iot:DeleteThingType";
 	/** [Write] iot:DeleteTopicRule */
-	static readonly DELETE_TOPIC_RULE = "iot:DeleteTopicRule";
+	static readonly DeleteTopicRule = "iot:DeleteTopicRule";
 	/** [Write] iot:DeleteTopicRuleDestination */
-	static readonly DELETE_TOPIC_RULE_DESTINATION =
-		"iot:DeleteTopicRuleDestination";
+	static readonly DeleteTopicRuleDestination = "iot:DeleteTopicRuleDestination";
 	/** [Write] iot:DeleteV2LoggingLevel */
-	static readonly DELETE_V2_LOGGING_LEVEL = "iot:DeleteV2LoggingLevel";
+	static readonly DeleteV2LoggingLevel = "iot:DeleteV2LoggingLevel";
 	/** [Write] iot:DeprecateThingType */
-	static readonly DEPRECATE_THING_TYPE = "iot:DeprecateThingType";
+	static readonly DeprecateThingType = "iot:DeprecateThingType";
 	/** [Read] iot:DescribeAccountAuditConfiguration */
-	static readonly DESCRIBE_ACCOUNT_AUDIT_CONFIGURATION =
+	static readonly DescribeAccountAuditConfiguration =
 		"iot:DescribeAccountAuditConfiguration";
 	/** [Read] iot:DescribeAuditFinding */
-	static readonly DESCRIBE_AUDIT_FINDING = "iot:DescribeAuditFinding";
+	static readonly DescribeAuditFinding = "iot:DescribeAuditFinding";
 	/** [Read] iot:DescribeAuditMitigationActionsTask */
-	static readonly DESCRIBE_AUDIT_MITIGATION_ACTIONS_TASK =
+	static readonly DescribeAuditMitigationActionsTask =
 		"iot:DescribeAuditMitigationActionsTask";
 	/** [Read] iot:DescribeAuditSuppression */
-	static readonly DESCRIBE_AUDIT_SUPPRESSION = "iot:DescribeAuditSuppression";
+	static readonly DescribeAuditSuppression = "iot:DescribeAuditSuppression";
 	/** [Read] iot:DescribeAuditTask */
-	static readonly DESCRIBE_AUDIT_TASK = "iot:DescribeAuditTask";
+	static readonly DescribeAuditTask = "iot:DescribeAuditTask";
 	/** [Read] iot:DescribeAuthorizer */
-	static readonly DESCRIBE_AUTHORIZER = "iot:DescribeAuthorizer";
+	static readonly DescribeAuthorizer = "iot:DescribeAuthorizer";
 	/** [Read] iot:DescribeBillingGroup */
-	static readonly DESCRIBE_BILLING_GROUP = "iot:DescribeBillingGroup";
+	static readonly DescribeBillingGroup = "iot:DescribeBillingGroup";
 	/** [Read] iot:DescribeCACertificate */
-	static readonly DESCRIBE_CA_CERTIFICATE = "iot:DescribeCACertificate";
+	static readonly DescribeCACertificate = "iot:DescribeCACertificate";
 	/** [Read] iot:DescribeCertificate */
-	static readonly DESCRIBE_CERTIFICATE = "iot:DescribeCertificate";
+	static readonly DescribeCertificate = "iot:DescribeCertificate";
 	/** [Read] iot:DescribeCertificateProvider */
-	static readonly DESCRIBE_CERTIFICATE_PROVIDER =
+	static readonly DescribeCertificateProvider =
 		"iot:DescribeCertificateProvider";
 	/** [Read] iot:DescribeCustomMetric */
-	static readonly DESCRIBE_CUSTOM_METRIC = "iot:DescribeCustomMetric";
+	static readonly DescribeCustomMetric = "iot:DescribeCustomMetric";
 	/** [Read] iot:DescribeDefaultAuthorizer */
-	static readonly DESCRIBE_DEFAULT_AUTHORIZER = "iot:DescribeDefaultAuthorizer";
+	static readonly DescribeDefaultAuthorizer = "iot:DescribeDefaultAuthorizer";
 	/** [Read] iot:DescribeDetectMitigationActionsTask */
-	static readonly DESCRIBE_DETECT_MITIGATION_ACTIONS_TASK =
+	static readonly DescribeDetectMitigationActionsTask =
 		"iot:DescribeDetectMitigationActionsTask";
 	/** [Read] iot:DescribeDimension */
-	static readonly DESCRIBE_DIMENSION = "iot:DescribeDimension";
+	static readonly DescribeDimension = "iot:DescribeDimension";
 	/** [Read] iot:DescribeDomainConfiguration */
-	static readonly DESCRIBE_DOMAIN_CONFIGURATION =
+	static readonly DescribeDomainConfiguration =
 		"iot:DescribeDomainConfiguration";
 	/** [Read] iot:DescribeEncryptionConfiguration */
-	static readonly DESCRIBE_ENCRYPTION_CONFIGURATION =
+	static readonly DescribeEncryptionConfiguration =
 		"iot:DescribeEncryptionConfiguration";
 	/** [Read] iot:DescribeEndpoint */
-	static readonly DESCRIBE_ENDPOINT = "iot:DescribeEndpoint";
+	static readonly DescribeEndpoint = "iot:DescribeEndpoint";
 	/** [Read] iot:DescribeEventConfigurations */
-	static readonly DESCRIBE_EVENT_CONFIGURATIONS =
+	static readonly DescribeEventConfigurations =
 		"iot:DescribeEventConfigurations";
 	/** [Read] iot:DescribeFleetMetric */
-	static readonly DESCRIBE_FLEET_METRIC = "iot:DescribeFleetMetric";
+	static readonly DescribeFleetMetric = "iot:DescribeFleetMetric";
 	/** [Read] iot:DescribeIndex */
-	static readonly DESCRIBE_INDEX = "iot:DescribeIndex";
+	static readonly DescribeIndex = "iot:DescribeIndex";
 	/** [Read] iot:DescribeJob */
-	static readonly DESCRIBE_JOB = "iot:DescribeJob";
+	static readonly DescribeJob = "iot:DescribeJob";
 	/** [Read] iot:DescribeJobExecution */
-	static readonly DESCRIBE_JOB_EXECUTION = "iot:DescribeJobExecution";
+	static readonly DescribeJobExecution = "iot:DescribeJobExecution";
 	/** [Read] iot:DescribeJobTemplate */
-	static readonly DESCRIBE_JOB_TEMPLATE = "iot:DescribeJobTemplate";
+	static readonly DescribeJobTemplate = "iot:DescribeJobTemplate";
 	/** [Read] iot:DescribeManagedJobTemplate */
-	static readonly DESCRIBE_MANAGED_JOB_TEMPLATE =
-		"iot:DescribeManagedJobTemplate";
+	static readonly DescribeManagedJobTemplate = "iot:DescribeManagedJobTemplate";
 	/** [Read] iot:DescribeMitigationAction */
-	static readonly DESCRIBE_MITIGATION_ACTION = "iot:DescribeMitigationAction";
+	static readonly DescribeMitigationAction = "iot:DescribeMitigationAction";
 	/** [Read] iot:DescribeProvisioningTemplate */
-	static readonly DESCRIBE_PROVISIONING_TEMPLATE =
+	static readonly DescribeProvisioningTemplate =
 		"iot:DescribeProvisioningTemplate";
 	/** [Read] iot:DescribeProvisioningTemplateVersion */
-	static readonly DESCRIBE_PROVISIONING_TEMPLATE_VERSION =
+	static readonly DescribeProvisioningTemplateVersion =
 		"iot:DescribeProvisioningTemplateVersion";
 	/** [Read] iot:DescribeRoleAlias */
-	static readonly DESCRIBE_ROLE_ALIAS = "iot:DescribeRoleAlias";
+	static readonly DescribeRoleAlias = "iot:DescribeRoleAlias";
 	/** [Read] iot:DescribeScheduledAudit */
-	static readonly DESCRIBE_SCHEDULED_AUDIT = "iot:DescribeScheduledAudit";
+	static readonly DescribeScheduledAudit = "iot:DescribeScheduledAudit";
 	/** [Read] iot:DescribeSecurityProfile */
-	static readonly DESCRIBE_SECURITY_PROFILE = "iot:DescribeSecurityProfile";
+	static readonly DescribeSecurityProfile = "iot:DescribeSecurityProfile";
 	/** [Read] iot:DescribeStream */
-	static readonly DESCRIBE_STREAM = "iot:DescribeStream";
+	static readonly DescribeStream = "iot:DescribeStream";
 	/** [Read] iot:DescribeThing */
-	static readonly DESCRIBE_THING = "iot:DescribeThing";
+	static readonly DescribeThing = "iot:DescribeThing";
 	/** [Read] iot:DescribeThingGroup */
-	static readonly DESCRIBE_THING_GROUP = "iot:DescribeThingGroup";
+	static readonly DescribeThingGroup = "iot:DescribeThingGroup";
 	/** [Read] iot:DescribeThingRegistrationTask */
-	static readonly DESCRIBE_THING_REGISTRATION_TASK =
+	static readonly DescribeThingRegistrationTask =
 		"iot:DescribeThingRegistrationTask";
 	/** [Read] iot:DescribeThingType */
-	static readonly DESCRIBE_THING_TYPE = "iot:DescribeThingType";
+	static readonly DescribeThingType = "iot:DescribeThingType";
 	/** [Read] iot:DescribeTunnel */
-	static readonly DESCRIBE_TUNNEL = "iot:DescribeTunnel";
+	static readonly DescribeTunnel = "iot:DescribeTunnel";
 	/** [PermissionManagement] iot:DetachPolicy */
-	static readonly DETACH_POLICY = "iot:DetachPolicy";
+	static readonly DetachPolicy = "iot:DetachPolicy";
 	/** [PermissionManagement] iot:DetachPrincipalPolicy */
-	static readonly DETACH_PRINCIPAL_POLICY = "iot:DetachPrincipalPolicy";
+	static readonly DetachPrincipalPolicy = "iot:DetachPrincipalPolicy";
 	/** [Write] iot:DetachSecurityProfile */
-	static readonly DETACH_SECURITY_PROFILE = "iot:DetachSecurityProfile";
+	static readonly DetachSecurityProfile = "iot:DetachSecurityProfile";
 	/** [Write] iot:DetachThingPrincipal */
-	static readonly DETACH_THING_PRINCIPAL = "iot:DetachThingPrincipal";
+	static readonly DetachThingPrincipal = "iot:DetachThingPrincipal";
 	/** [Write] iot:DisableTopicRule */
-	static readonly DISABLE_TOPIC_RULE = "iot:DisableTopicRule";
+	static readonly DisableTopicRule = "iot:DisableTopicRule";
 	/** [Write] iot:DisassociateSbomFromPackageVersion */
-	static readonly DISASSOCIATE_SBOM_FROM_PACKAGE_VERSION =
+	static readonly DisassociateSbomFromPackageVersion =
 		"iot:DisassociateSbomFromPackageVersion";
 	/** [Write] iot:EnableTopicRule */
-	static readonly ENABLE_TOPIC_RULE = "iot:EnableTopicRule";
+	static readonly EnableTopicRule = "iot:EnableTopicRule";
 	/** [List] iot:GetBehaviorModelTrainingSummaries */
-	static readonly GET_BEHAVIOR_MODEL_TRAINING_SUMMARIES =
+	static readonly actionGetBehaviorModelTrainingSummaries =
 		"iot:GetBehaviorModelTrainingSummaries";
 	/** [Read] iot:GetBucketsAggregation */
-	static readonly GET_BUCKETS_AGGREGATION = "iot:GetBucketsAggregation";
+	static readonly actionGetBucketsAggregation = "iot:GetBucketsAggregation";
 	/** [Read] iot:GetCardinality */
-	static readonly GET_CARDINALITY = "iot:GetCardinality";
+	static readonly actionGetCardinality = "iot:GetCardinality";
 	/** [Read] iot:GetCommand */
-	static readonly GET_COMMAND = "iot:GetCommand";
+	static readonly actionGetCommand = "iot:GetCommand";
 	/** [Read] iot:GetCommandExecution */
-	static readonly GET_COMMAND_EXECUTION = "iot:GetCommandExecution";
+	static readonly actionGetCommandExecution = "iot:GetCommandExecution";
 	/** [Write] iot:GetConnection */
-	static readonly GET_CONNECTION = "iot:GetConnection";
+	static readonly actionGetConnection = "iot:GetConnection";
 	/** [Read] iot:GetEffectivePolicies */
-	static readonly GET_EFFECTIVE_POLICIES = "iot:GetEffectivePolicies";
+	static readonly actionGetEffectivePolicies = "iot:GetEffectivePolicies";
 	/** [Read] iot:GetIndexingConfiguration */
-	static readonly GET_INDEXING_CONFIGURATION = "iot:GetIndexingConfiguration";
+	static readonly actionGetIndexingConfiguration =
+		"iot:GetIndexingConfiguration";
 	/** [Read] iot:GetJobDocument */
-	static readonly GET_JOB_DOCUMENT = "iot:GetJobDocument";
+	static readonly actionGetJobDocument = "iot:GetJobDocument";
 	/** [Read] iot:GetLoggingOptions */
-	static readonly GET_LOGGING_OPTIONS = "iot:GetLoggingOptions";
+	static readonly actionGetLoggingOptions = "iot:GetLoggingOptions";
 	/** [Read] iot:GetOTAUpdate */
-	static readonly GET_OTA_UPDATE = "iot:GetOTAUpdate";
+	static readonly actionGetOTAUpdate = "iot:GetOTAUpdate";
 	/** [Read] iot:GetPackage */
-	static readonly GET_PACKAGE = "iot:GetPackage";
+	static readonly actionGetPackage = "iot:GetPackage";
 	/** [Read] iot:GetPackageConfiguration */
-	static readonly GET_PACKAGE_CONFIGURATION = "iot:GetPackageConfiguration";
+	static readonly actionGetPackageConfiguration = "iot:GetPackageConfiguration";
 	/** [Read] iot:GetPackageVersion */
-	static readonly GET_PACKAGE_VERSION = "iot:GetPackageVersion";
+	static readonly actionGetPackageVersion = "iot:GetPackageVersion";
 	/** [Read] iot:GetPercentiles */
-	static readonly GET_PERCENTILES = "iot:GetPercentiles";
+	static readonly actionGetPercentiles = "iot:GetPercentiles";
 	/** [Read] iot:GetPolicy */
-	static readonly GET_POLICY = "iot:GetPolicy";
+	static readonly actionGetPolicy = "iot:GetPolicy";
 	/** [Read] iot:GetPolicyVersion */
-	static readonly GET_POLICY_VERSION = "iot:GetPolicyVersion";
+	static readonly actionGetPolicyVersion = "iot:GetPolicyVersion";
 	/** [Read] iot:GetRegistrationCode */
-	static readonly GET_REGISTRATION_CODE = "iot:GetRegistrationCode";
+	static readonly actionGetRegistrationCode = "iot:GetRegistrationCode";
 	/** [Read] iot:GetRetainedMessage */
-	static readonly GET_RETAINED_MESSAGE = "iot:GetRetainedMessage";
+	static readonly actionGetRetainedMessage = "iot:GetRetainedMessage";
 	/** [Read] iot:GetStatistics */
-	static readonly GET_STATISTICS = "iot:GetStatistics";
+	static readonly actionGetStatistics = "iot:GetStatistics";
 	/** [Read] iot:GetThingConnectivityData */
-	static readonly GET_THING_CONNECTIVITY_DATA = "iot:GetThingConnectivityData";
+	static readonly actionGetThingConnectivityData =
+		"iot:GetThingConnectivityData";
 	/** [Read] iot:GetThingShadow */
-	static readonly GET_THING_SHADOW = "iot:GetThingShadow";
+	static readonly actionGetThingShadow = "iot:GetThingShadow";
 	/** [Read] iot:GetTopicRule */
-	static readonly GET_TOPIC_RULE = "iot:GetTopicRule";
+	static readonly actionGetTopicRule = "iot:GetTopicRule";
 	/** [Read] iot:GetTopicRuleDestination */
-	static readonly GET_TOPIC_RULE_DESTINATION = "iot:GetTopicRuleDestination";
+	static readonly actionGetTopicRuleDestination = "iot:GetTopicRuleDestination";
 	/** [Read] iot:GetV2LoggingOptions */
-	static readonly GET_V2_LOGGING_OPTIONS = "iot:GetV2LoggingOptions";
+	static readonly actionGetV2LoggingOptions = "iot:GetV2LoggingOptions";
 	/** [List] iot:ListActiveViolations */
-	static readonly LIST_ACTIVE_VIOLATIONS = "iot:ListActiveViolations";
+	static readonly ListActiveViolations = "iot:ListActiveViolations";
 	/** [List] iot:ListAttachedPolicies */
-	static readonly LIST_ATTACHED_POLICIES = "iot:ListAttachedPolicies";
+	static readonly ListAttachedPolicies = "iot:ListAttachedPolicies";
 	/** [List] iot:ListAuditFindings */
-	static readonly LIST_AUDIT_FINDINGS = "iot:ListAuditFindings";
+	static readonly ListAuditFindings = "iot:ListAuditFindings";
 	/** [List] iot:ListAuditMitigationActionsExecutions */
-	static readonly LIST_AUDIT_MITIGATION_ACTIONS_EXECUTIONS =
+	static readonly ListAuditMitigationActionsExecutions =
 		"iot:ListAuditMitigationActionsExecutions";
 	/** [List] iot:ListAuditMitigationActionsTasks */
-	static readonly LIST_AUDIT_MITIGATION_ACTIONS_TASKS =
+	static readonly ListAuditMitigationActionsTasks =
 		"iot:ListAuditMitigationActionsTasks";
 	/** [List] iot:ListAuditSuppressions */
-	static readonly LIST_AUDIT_SUPPRESSIONS = "iot:ListAuditSuppressions";
+	static readonly ListAuditSuppressions = "iot:ListAuditSuppressions";
 	/** [List] iot:ListAuditTasks */
-	static readonly LIST_AUDIT_TASKS = "iot:ListAuditTasks";
+	static readonly ListAuditTasks = "iot:ListAuditTasks";
 	/** [List] iot:ListAuthorizers */
-	static readonly LIST_AUTHORIZERS = "iot:ListAuthorizers";
+	static readonly ListAuthorizers = "iot:ListAuthorizers";
 	/** [List] iot:ListBillingGroups */
-	static readonly LIST_BILLING_GROUPS = "iot:ListBillingGroups";
+	static readonly ListBillingGroups = "iot:ListBillingGroups";
 	/** [List] iot:ListCACertificates */
-	static readonly LIST_CA_CERTIFICATES = "iot:ListCACertificates";
+	static readonly ListCACertificates = "iot:ListCACertificates";
 	/** [List] iot:ListCertificateProviders */
-	static readonly LIST_CERTIFICATE_PROVIDERS = "iot:ListCertificateProviders";
+	static readonly ListCertificateProviders = "iot:ListCertificateProviders";
 	/** [List] iot:ListCertificates */
-	static readonly LIST_CERTIFICATES = "iot:ListCertificates";
+	static readonly ListCertificates = "iot:ListCertificates";
 	/** [List] iot:ListCertificatesByCA */
-	static readonly LIST_CERTIFICATES_BY_CA = "iot:ListCertificatesByCA";
+	static readonly ListCertificatesByCA = "iot:ListCertificatesByCA";
 	/** [List] iot:ListCommandExecutions */
-	static readonly LIST_COMMAND_EXECUTIONS = "iot:ListCommandExecutions";
+	static readonly ListCommandExecutions = "iot:ListCommandExecutions";
 	/** [List] iot:ListCommands */
-	static readonly LIST_COMMANDS = "iot:ListCommands";
+	static readonly ListCommands = "iot:ListCommands";
 	/** [List] iot:ListCustomMetrics */
-	static readonly LIST_CUSTOM_METRICS = "iot:ListCustomMetrics";
+	static readonly ListCustomMetrics = "iot:ListCustomMetrics";
 	/** [List] iot:ListDetectMitigationActionsExecutions */
-	static readonly LIST_DETECT_MITIGATION_ACTIONS_EXECUTIONS =
+	static readonly ListDetectMitigationActionsExecutions =
 		"iot:ListDetectMitigationActionsExecutions";
 	/** [List] iot:ListDetectMitigationActionsTasks */
-	static readonly LIST_DETECT_MITIGATION_ACTIONS_TASKS =
+	static readonly ListDetectMitigationActionsTasks =
 		"iot:ListDetectMitigationActionsTasks";
 	/** [List] iot:ListDimensions */
-	static readonly LIST_DIMENSIONS = "iot:ListDimensions";
+	static readonly ListDimensions = "iot:ListDimensions";
 	/** [List] iot:ListDomainConfigurations */
-	static readonly LIST_DOMAIN_CONFIGURATIONS = "iot:ListDomainConfigurations";
+	static readonly ListDomainConfigurations = "iot:ListDomainConfigurations";
 	/** [List] iot:ListFleetMetrics */
-	static readonly LIST_FLEET_METRICS = "iot:ListFleetMetrics";
+	static readonly ListFleetMetrics = "iot:ListFleetMetrics";
 	/** [List] iot:ListIndices */
-	static readonly LIST_INDICES = "iot:ListIndices";
+	static readonly ListIndices = "iot:ListIndices";
 	/** [List] iot:ListJobExecutionsForJob */
-	static readonly LIST_JOB_EXECUTIONS_FOR_JOB = "iot:ListJobExecutionsForJob";
+	static readonly ListJobExecutionsForJob = "iot:ListJobExecutionsForJob";
 	/** [List] iot:ListJobExecutionsForThing */
-	static readonly LIST_JOB_EXECUTIONS_FOR_THING =
-		"iot:ListJobExecutionsForThing";
+	static readonly ListJobExecutionsForThing = "iot:ListJobExecutionsForThing";
 	/** [List] iot:ListJobTemplates */
-	static readonly LIST_JOB_TEMPLATES = "iot:ListJobTemplates";
+	static readonly ListJobTemplates = "iot:ListJobTemplates";
 	/** [List] iot:ListJobs */
-	static readonly LIST_JOBS = "iot:ListJobs";
+	static readonly ListJobs = "iot:ListJobs";
 	/** [List] iot:ListManagedJobTemplates */
-	static readonly LIST_MANAGED_JOB_TEMPLATES = "iot:ListManagedJobTemplates";
+	static readonly ListManagedJobTemplates = "iot:ListManagedJobTemplates";
 	/** [List] iot:ListMetricValues */
-	static readonly LIST_METRIC_VALUES = "iot:ListMetricValues";
+	static readonly ListMetricValues = "iot:ListMetricValues";
 	/** [List] iot:ListMitigationActions */
-	static readonly LIST_MITIGATION_ACTIONS = "iot:ListMitigationActions";
+	static readonly ListMitigationActions = "iot:ListMitigationActions";
 	/** [List] iot:ListNamedShadowsForThing */
-	static readonly LIST_NAMED_SHADOWS_FOR_THING = "iot:ListNamedShadowsForThing";
+	static readonly ListNamedShadowsForThing = "iot:ListNamedShadowsForThing";
 	/** [List] iot:ListOTAUpdates */
-	static readonly LIST_OTA_UPDATES = "iot:ListOTAUpdates";
+	static readonly ListOTAUpdates = "iot:ListOTAUpdates";
 	/** [List] iot:ListOutgoingCertificates */
-	static readonly LIST_OUTGOING_CERTIFICATES = "iot:ListOutgoingCertificates";
+	static readonly ListOutgoingCertificates = "iot:ListOutgoingCertificates";
 	/** [List] iot:ListPackageVersions */
-	static readonly LIST_PACKAGE_VERSIONS = "iot:ListPackageVersions";
+	static readonly ListPackageVersions = "iot:ListPackageVersions";
 	/** [List] iot:ListPackages */
-	static readonly LIST_PACKAGES = "iot:ListPackages";
+	static readonly ListPackages = "iot:ListPackages";
 	/** [List] iot:ListPolicies */
-	static readonly LIST_POLICIES = "iot:ListPolicies";
+	static readonly ListPolicies = "iot:ListPolicies";
 	/** [List] iot:ListPolicyPrincipals */
-	static readonly LIST_POLICY_PRINCIPALS = "iot:ListPolicyPrincipals";
+	static readonly ListPolicyPrincipals = "iot:ListPolicyPrincipals";
 	/** [List] iot:ListPolicyVersions */
-	static readonly LIST_POLICY_VERSIONS = "iot:ListPolicyVersions";
+	static readonly ListPolicyVersions = "iot:ListPolicyVersions";
 	/** [List] iot:ListPrincipalPolicies */
-	static readonly LIST_PRINCIPAL_POLICIES = "iot:ListPrincipalPolicies";
+	static readonly ListPrincipalPolicies = "iot:ListPrincipalPolicies";
 	/** [List] iot:ListPrincipalThings */
-	static readonly LIST_PRINCIPAL_THINGS = "iot:ListPrincipalThings";
+	static readonly ListPrincipalThings = "iot:ListPrincipalThings";
 	/** [List] iot:ListPrincipalThingsV2 */
-	static readonly LIST_PRINCIPAL_THINGS_V2 = "iot:ListPrincipalThingsV2";
+	static readonly ListPrincipalThingsV2 = "iot:ListPrincipalThingsV2";
 	/** [List] iot:ListProvisioningTemplateVersions */
-	static readonly LIST_PROVISIONING_TEMPLATE_VERSIONS =
+	static readonly ListProvisioningTemplateVersions =
 		"iot:ListProvisioningTemplateVersions";
 	/** [List] iot:ListProvisioningTemplates */
-	static readonly LIST_PROVISIONING_TEMPLATES = "iot:ListProvisioningTemplates";
+	static readonly ListProvisioningTemplates = "iot:ListProvisioningTemplates";
 	/** [List] iot:ListRelatedResourcesForAuditFinding */
-	static readonly LIST_RELATED_RESOURCES_FOR_AUDIT_FINDING =
+	static readonly ListRelatedResourcesForAuditFinding =
 		"iot:ListRelatedResourcesForAuditFinding";
 	/** [List] iot:ListRetainedMessages */
-	static readonly LIST_RETAINED_MESSAGES = "iot:ListRetainedMessages";
+	static readonly ListRetainedMessages = "iot:ListRetainedMessages";
 	/** [List] iot:ListRoleAliases */
-	static readonly LIST_ROLE_ALIASES = "iot:ListRoleAliases";
+	static readonly ListRoleAliases = "iot:ListRoleAliases";
 	/** [List] iot:ListSbomValidationResults */
-	static readonly LIST_SBOM_VALIDATION_RESULTS =
-		"iot:ListSbomValidationResults";
+	static readonly ListSbomValidationResults = "iot:ListSbomValidationResults";
 	/** [List] iot:ListScheduledAudits */
-	static readonly LIST_SCHEDULED_AUDITS = "iot:ListScheduledAudits";
+	static readonly ListScheduledAudits = "iot:ListScheduledAudits";
 	/** [List] iot:ListSecurityProfiles */
-	static readonly LIST_SECURITY_PROFILES = "iot:ListSecurityProfiles";
+	static readonly ListSecurityProfiles = "iot:ListSecurityProfiles";
 	/** [List] iot:ListSecurityProfilesForTarget */
-	static readonly LIST_SECURITY_PROFILES_FOR_TARGET =
+	static readonly ListSecurityProfilesForTarget =
 		"iot:ListSecurityProfilesForTarget";
 	/** [List] iot:ListStreams */
-	static readonly LIST_STREAMS = "iot:ListStreams";
+	static readonly ListStreams = "iot:ListStreams";
 	/** [Write] iot:ListSubscriptions */
-	static readonly LIST_SUBSCRIPTIONS = "iot:ListSubscriptions";
+	static readonly ListSubscriptions = "iot:ListSubscriptions";
 	/** [Read] iot:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "iot:ListTagsForResource";
+	static readonly ListTagsForResource = "iot:ListTagsForResource";
 	/** [List] iot:ListTargetsForPolicy */
-	static readonly LIST_TARGETS_FOR_POLICY = "iot:ListTargetsForPolicy";
+	static readonly ListTargetsForPolicy = "iot:ListTargetsForPolicy";
 	/** [List] iot:ListTargetsForSecurityProfile */
-	static readonly LIST_TARGETS_FOR_SECURITY_PROFILE =
+	static readonly ListTargetsForSecurityProfile =
 		"iot:ListTargetsForSecurityProfile";
 	/** [List] iot:ListThingGroups */
-	static readonly LIST_THING_GROUPS = "iot:ListThingGroups";
+	static readonly ListThingGroups = "iot:ListThingGroups";
 	/** [List] iot:ListThingGroupsForThing */
-	static readonly LIST_THING_GROUPS_FOR_THING = "iot:ListThingGroupsForThing";
+	static readonly ListThingGroupsForThing = "iot:ListThingGroupsForThing";
 	/** [List] iot:ListThingPrincipals */
-	static readonly LIST_THING_PRINCIPALS = "iot:ListThingPrincipals";
+	static readonly ListThingPrincipals = "iot:ListThingPrincipals";
 	/** [List] iot:ListThingPrincipalsV2 */
-	static readonly LIST_THING_PRINCIPALS_V2 = "iot:ListThingPrincipalsV2";
+	static readonly ListThingPrincipalsV2 = "iot:ListThingPrincipalsV2";
 	/** [List] iot:ListThingRegistrationTaskReports */
-	static readonly LIST_THING_REGISTRATION_TASK_REPORTS =
+	static readonly ListThingRegistrationTaskReports =
 		"iot:ListThingRegistrationTaskReports";
 	/** [List] iot:ListThingRegistrationTasks */
-	static readonly LIST_THING_REGISTRATION_TASKS =
-		"iot:ListThingRegistrationTasks";
+	static readonly ListThingRegistrationTasks = "iot:ListThingRegistrationTasks";
 	/** [List] iot:ListThingTypes */
-	static readonly LIST_THING_TYPES = "iot:ListThingTypes";
+	static readonly ListThingTypes = "iot:ListThingTypes";
 	/** [List] iot:ListThings */
-	static readonly LIST_THINGS = "iot:ListThings";
+	static readonly ListThings = "iot:ListThings";
 	/** [List] iot:ListThingsInBillingGroup */
-	static readonly LIST_THINGS_IN_BILLING_GROUP = "iot:ListThingsInBillingGroup";
+	static readonly ListThingsInBillingGroup = "iot:ListThingsInBillingGroup";
 	/** [List] iot:ListThingsInThingGroup */
-	static readonly LIST_THINGS_IN_THING_GROUP = "iot:ListThingsInThingGroup";
+	static readonly ListThingsInThingGroup = "iot:ListThingsInThingGroup";
 	/** [List] iot:ListTopicRuleDestinations */
-	static readonly LIST_TOPIC_RULE_DESTINATIONS =
-		"iot:ListTopicRuleDestinations";
+	static readonly ListTopicRuleDestinations = "iot:ListTopicRuleDestinations";
 	/** [List] iot:ListTopicRules */
-	static readonly LIST_TOPIC_RULES = "iot:ListTopicRules";
+	static readonly ListTopicRules = "iot:ListTopicRules";
 	/** [List] iot:ListTunnels */
-	static readonly LIST_TUNNELS = "iot:ListTunnels";
+	static readonly ListTunnels = "iot:ListTunnels";
 	/** [List] iot:ListV2LoggingLevels */
-	static readonly LIST_V2_LOGGING_LEVELS = "iot:ListV2LoggingLevels";
+	static readonly ListV2LoggingLevels = "iot:ListV2LoggingLevels";
 	/** [List] iot:ListViolationEvents */
-	static readonly LIST_VIOLATION_EVENTS = "iot:ListViolationEvents";
+	static readonly ListViolationEvents = "iot:ListViolationEvents";
 	/** [Write] iot:OpenTunnel */
-	static readonly OPEN_TUNNEL = "iot:OpenTunnel";
+	static readonly OpenTunnel = "iot:OpenTunnel";
 	/** [Write] iot:Publish */
-	static readonly PUBLISH = "iot:Publish";
+	static readonly Publish = "iot:Publish";
 	/** [Write] iot:PutVerificationStateOnViolation */
-	static readonly PUT_VERIFICATION_STATE_ON_VIOLATION =
+	static readonly PutVerificationStateOnViolation =
 		"iot:PutVerificationStateOnViolation";
 	/** [Write] iot:Receive */
-	static readonly RECEIVE = "iot:Receive";
+	static readonly Receive = "iot:Receive";
 	/** [Write] iot:RegisterCACertificate */
-	static readonly REGISTER_CA_CERTIFICATE = "iot:RegisterCACertificate";
+	static readonly RegisterCACertificate = "iot:RegisterCACertificate";
 	/** [Write] iot:RegisterCertificate */
-	static readonly REGISTER_CERTIFICATE = "iot:RegisterCertificate";
+	static readonly RegisterCertificate = "iot:RegisterCertificate";
 	/** [Write] iot:RegisterCertificateWithoutCA */
-	static readonly REGISTER_CERTIFICATE_WITHOUT_CA =
+	static readonly RegisterCertificateWithoutCA =
 		"iot:RegisterCertificateWithoutCA";
 	/** [Write] iot:RegisterThing */
-	static readonly REGISTER_THING = "iot:RegisterThing";
+	static readonly RegisterThing = "iot:RegisterThing";
 	/** [Write] iot:RejectCertificateTransfer */
-	static readonly REJECT_CERTIFICATE_TRANSFER = "iot:RejectCertificateTransfer";
+	static readonly RejectCertificateTransfer = "iot:RejectCertificateTransfer";
 	/** [Write] iot:RemoveThingFromBillingGroup */
-	static readonly REMOVE_THING_FROM_BILLING_GROUP =
+	static readonly RemoveThingFromBillingGroup =
 		"iot:RemoveThingFromBillingGroup";
 	/** [Write] iot:RemoveThingFromThingGroup */
-	static readonly REMOVE_THING_FROM_THING_GROUP =
-		"iot:RemoveThingFromThingGroup";
+	static readonly RemoveThingFromThingGroup = "iot:RemoveThingFromThingGroup";
 	/** [Write] iot:ReplaceTopicRule */
-	static readonly REPLACE_TOPIC_RULE = "iot:ReplaceTopicRule";
+	static readonly ReplaceTopicRule = "iot:ReplaceTopicRule";
 	/** [Write] iot:RetainPublish */
-	static readonly RETAIN_PUBLISH = "iot:RetainPublish";
+	static readonly RetainPublish = "iot:RetainPublish";
 	/** [Write] iot:RotateTunnelAccessToken */
-	static readonly ROTATE_TUNNEL_ACCESS_TOKEN = "iot:RotateTunnelAccessToken";
+	static readonly RotateTunnelAccessToken = "iot:RotateTunnelAccessToken";
 	/** [Read] iot:SearchIndex */
-	static readonly SEARCH_INDEX = "iot:SearchIndex";
+	static readonly SearchIndex = "iot:SearchIndex";
 	/** [Write] iot:SendDirectMessage */
-	static readonly SEND_DIRECT_MESSAGE = "iot:SendDirectMessage";
+	static readonly SendDirectMessage = "iot:SendDirectMessage";
 	/** [PermissionManagement] iot:SetDefaultAuthorizer */
-	static readonly SET_DEFAULT_AUTHORIZER = "iot:SetDefaultAuthorizer";
+	static readonly actionSetDefaultAuthorizer = "iot:SetDefaultAuthorizer";
 	/** [PermissionManagement] iot:SetDefaultPolicyVersion */
-	static readonly SET_DEFAULT_POLICY_VERSION = "iot:SetDefaultPolicyVersion";
+	static readonly actionSetDefaultPolicyVersion = "iot:SetDefaultPolicyVersion";
 	/** [Write] iot:SetLoggingOptions */
-	static readonly SET_LOGGING_OPTIONS = "iot:SetLoggingOptions";
+	static readonly actionSetLoggingOptions = "iot:SetLoggingOptions";
 	/** [Write] iot:SetV2LoggingLevel */
-	static readonly SET_V2_LOGGING_LEVEL = "iot:SetV2LoggingLevel";
+	static readonly actionSetV2LoggingLevel = "iot:SetV2LoggingLevel";
 	/** [Write] iot:SetV2LoggingOptions */
-	static readonly SET_V2_LOGGING_OPTIONS = "iot:SetV2LoggingOptions";
+	static readonly actionSetV2LoggingOptions = "iot:SetV2LoggingOptions";
 	/** [Write] iot:StartAuditMitigationActionsTask */
-	static readonly START_AUDIT_MITIGATION_ACTIONS_TASK =
+	static readonly StartAuditMitigationActionsTask =
 		"iot:StartAuditMitigationActionsTask";
 	/** [Write] iot:StartCommandExecution */
-	static readonly START_COMMAND_EXECUTION = "iot:StartCommandExecution";
+	static readonly StartCommandExecution = "iot:StartCommandExecution";
 	/** [Write] iot:StartDetectMitigationActionsTask */
-	static readonly START_DETECT_MITIGATION_ACTIONS_TASK =
+	static readonly StartDetectMitigationActionsTask =
 		"iot:StartDetectMitigationActionsTask";
 	/** [Write] iot:StartOnDemandAuditTask */
-	static readonly START_ON_DEMAND_AUDIT_TASK = "iot:StartOnDemandAuditTask";
+	static readonly StartOnDemandAuditTask = "iot:StartOnDemandAuditTask";
 	/** [Write] iot:StartThingRegistrationTask */
-	static readonly START_THING_REGISTRATION_TASK =
-		"iot:StartThingRegistrationTask";
+	static readonly StartThingRegistrationTask = "iot:StartThingRegistrationTask";
 	/** [Write] iot:StopThingRegistrationTask */
-	static readonly STOP_THING_REGISTRATION_TASK =
-		"iot:StopThingRegistrationTask";
+	static readonly StopThingRegistrationTask = "iot:StopThingRegistrationTask";
 	/** [Write] iot:Subscribe */
-	static readonly SUBSCRIBE = "iot:Subscribe";
+	static readonly Subscribe = "iot:Subscribe";
 	/** [Tagging] iot:TagResource */
-	static readonly TAG_RESOURCE = "iot:TagResource";
+	static readonly TagResource = "iot:TagResource";
 	/** [Read] iot:TestAuthorization */
-	static readonly TEST_AUTHORIZATION = "iot:TestAuthorization";
+	static readonly TestAuthorization = "iot:TestAuthorization";
 	/** [Read] iot:TestInvokeAuthorizer */
-	static readonly TEST_INVOKE_AUTHORIZER = "iot:TestInvokeAuthorizer";
+	static readonly TestInvokeAuthorizer = "iot:TestInvokeAuthorizer";
 	/** [Write] iot:TransferCertificate */
-	static readonly TRANSFER_CERTIFICATE = "iot:TransferCertificate";
+	static readonly TransferCertificate = "iot:TransferCertificate";
 	/** [Tagging] iot:UntagResource */
-	static readonly UNTAG_RESOURCE = "iot:UntagResource";
+	static readonly UntagResource = "iot:UntagResource";
 	/** [Write] iot:UpdateAccountAuditConfiguration */
-	static readonly UPDATE_ACCOUNT_AUDIT_CONFIGURATION =
+	static readonly UpdateAccountAuditConfiguration =
 		"iot:UpdateAccountAuditConfiguration";
 	/** [Write] iot:UpdateAuditSuppression */
-	static readonly UPDATE_AUDIT_SUPPRESSION = "iot:UpdateAuditSuppression";
+	static readonly UpdateAuditSuppression = "iot:UpdateAuditSuppression";
 	/** [Write] iot:UpdateAuthorizer */
-	static readonly UPDATE_AUTHORIZER = "iot:UpdateAuthorizer";
+	static readonly UpdateAuthorizer = "iot:UpdateAuthorizer";
 	/** [Write] iot:UpdateBillingGroup */
-	static readonly UPDATE_BILLING_GROUP = "iot:UpdateBillingGroup";
+	static readonly UpdateBillingGroup = "iot:UpdateBillingGroup";
 	/** [Write] iot:UpdateCACertificate */
-	static readonly UPDATE_CA_CERTIFICATE = "iot:UpdateCACertificate";
+	static readonly UpdateCACertificate = "iot:UpdateCACertificate";
 	/** [Write] iot:UpdateCertificate */
-	static readonly UPDATE_CERTIFICATE = "iot:UpdateCertificate";
+	static readonly UpdateCertificate = "iot:UpdateCertificate";
 	/** [Write] iot:UpdateCertificateProvider */
-	static readonly UPDATE_CERTIFICATE_PROVIDER = "iot:UpdateCertificateProvider";
+	static readonly UpdateCertificateProvider = "iot:UpdateCertificateProvider";
 	/** [Write] iot:UpdateCommand */
-	static readonly UPDATE_COMMAND = "iot:UpdateCommand";
+	static readonly UpdateCommand = "iot:UpdateCommand";
 	/** [Write] iot:UpdateCustomMetric */
-	static readonly UPDATE_CUSTOM_METRIC = "iot:UpdateCustomMetric";
+	static readonly UpdateCustomMetric = "iot:UpdateCustomMetric";
 	/** [Write] iot:UpdateDimension */
-	static readonly UPDATE_DIMENSION = "iot:UpdateDimension";
+	static readonly UpdateDimension = "iot:UpdateDimension";
 	/** [Write] iot:UpdateDomainConfiguration */
-	static readonly UPDATE_DOMAIN_CONFIGURATION = "iot:UpdateDomainConfiguration";
+	static readonly UpdateDomainConfiguration = "iot:UpdateDomainConfiguration";
 	/** [Write] iot:UpdateDynamicThingGroup */
-	static readonly UPDATE_DYNAMIC_THING_GROUP = "iot:UpdateDynamicThingGroup";
+	static readonly UpdateDynamicThingGroup = "iot:UpdateDynamicThingGroup";
 	/** [Write] iot:UpdateEncryptionConfiguration */
-	static readonly UPDATE_ENCRYPTION_CONFIGURATION =
+	static readonly UpdateEncryptionConfiguration =
 		"iot:UpdateEncryptionConfiguration";
 	/** [Write] iot:UpdateEventConfigurations */
-	static readonly UPDATE_EVENT_CONFIGURATIONS = "iot:UpdateEventConfigurations";
+	static readonly UpdateEventConfigurations = "iot:UpdateEventConfigurations";
 	/** [Write] iot:UpdateFleetMetric */
-	static readonly UPDATE_FLEET_METRIC = "iot:UpdateFleetMetric";
+	static readonly UpdateFleetMetric = "iot:UpdateFleetMetric";
 	/** [Write] iot:UpdateIndexingConfiguration */
-	static readonly UPDATE_INDEXING_CONFIGURATION =
+	static readonly UpdateIndexingConfiguration =
 		"iot:UpdateIndexingConfiguration";
 	/** [Write] iot:UpdateJob */
-	static readonly UPDATE_JOB = "iot:UpdateJob";
+	static readonly UpdateJob = "iot:UpdateJob";
 	/** [Write] iot:UpdateMitigationAction */
-	static readonly UPDATE_MITIGATION_ACTION = "iot:UpdateMitigationAction";
+	static readonly UpdateMitigationAction = "iot:UpdateMitigationAction";
 	/** [Write] iot:UpdatePackage */
-	static readonly UPDATE_PACKAGE = "iot:UpdatePackage";
+	static readonly UpdatePackage = "iot:UpdatePackage";
 	/** [Write] iot:UpdatePackageConfiguration */
-	static readonly UPDATE_PACKAGE_CONFIGURATION =
-		"iot:UpdatePackageConfiguration";
+	static readonly UpdatePackageConfiguration = "iot:UpdatePackageConfiguration";
 	/** [Write] iot:UpdatePackageVersion */
-	static readonly UPDATE_PACKAGE_VERSION = "iot:UpdatePackageVersion";
+	static readonly UpdatePackageVersion = "iot:UpdatePackageVersion";
 	/** [Write] iot:UpdateProvisioningTemplate */
-	static readonly UPDATE_PROVISIONING_TEMPLATE =
-		"iot:UpdateProvisioningTemplate";
+	static readonly UpdateProvisioningTemplate = "iot:UpdateProvisioningTemplate";
 	/** [Write] iot:UpdateRoleAlias */
-	static readonly UPDATE_ROLE_ALIAS = "iot:UpdateRoleAlias";
+	static readonly UpdateRoleAlias = "iot:UpdateRoleAlias";
 	/** [Write] iot:UpdateScheduledAudit */
-	static readonly UPDATE_SCHEDULED_AUDIT = "iot:UpdateScheduledAudit";
+	static readonly UpdateScheduledAudit = "iot:UpdateScheduledAudit";
 	/** [Write] iot:UpdateSecurityProfile */
-	static readonly UPDATE_SECURITY_PROFILE = "iot:UpdateSecurityProfile";
+	static readonly UpdateSecurityProfile = "iot:UpdateSecurityProfile";
 	/** [Write] iot:UpdateStream */
-	static readonly UPDATE_STREAM = "iot:UpdateStream";
+	static readonly UpdateStream = "iot:UpdateStream";
 	/** [Write] iot:UpdateThing */
-	static readonly UPDATE_THING = "iot:UpdateThing";
+	static readonly UpdateThing = "iot:UpdateThing";
 	/** [Write] iot:UpdateThingGroup */
-	static readonly UPDATE_THING_GROUP = "iot:UpdateThingGroup";
+	static readonly UpdateThingGroup = "iot:UpdateThingGroup";
 	/** [Write] iot:UpdateThingGroupsForThing */
-	static readonly UPDATE_THING_GROUPS_FOR_THING =
-		"iot:UpdateThingGroupsForThing";
+	static readonly UpdateThingGroupsForThing = "iot:UpdateThingGroupsForThing";
 	/** [Write] iot:UpdateThingShadow */
-	static readonly UPDATE_THING_SHADOW = "iot:UpdateThingShadow";
+	static readonly UpdateThingShadow = "iot:UpdateThingShadow";
 	/** [Write] iot:UpdateThingType */
-	static readonly UPDATE_THING_TYPE = "iot:UpdateThingType";
+	static readonly UpdateThingType = "iot:UpdateThingType";
 	/** [Write] iot:UpdateTopicRuleDestination */
-	static readonly UPDATE_TOPIC_RULE_DESTINATION =
-		"iot:UpdateTopicRuleDestination";
+	static readonly UpdateTopicRuleDestination = "iot:UpdateTopicRuleDestination";
 	/** [Read] iot:ValidateSecurityProfileBehaviors */
-	static readonly VALIDATE_SECURITY_PROFILE_BEHAVIORS =
+	static readonly ValidateSecurityProfileBehaviors =
 		"iot:ValidateSecurityProfileBehaviors";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotActions.DESCRIBE_ACCOUNT_AUDIT_CONFIGURATION,
-		IotActions.DESCRIBE_AUDIT_FINDING,
-		IotActions.DESCRIBE_AUDIT_MITIGATION_ACTIONS_TASK,
-		IotActions.DESCRIBE_AUDIT_SUPPRESSION,
-		IotActions.DESCRIBE_AUDIT_TASK,
-		IotActions.DESCRIBE_AUTHORIZER,
-		IotActions.DESCRIBE_BILLING_GROUP,
-		IotActions.DESCRIBE_CA_CERTIFICATE,
-		IotActions.DESCRIBE_CERTIFICATE,
-		IotActions.DESCRIBE_CERTIFICATE_PROVIDER,
-		IotActions.DESCRIBE_CUSTOM_METRIC,
-		IotActions.DESCRIBE_DEFAULT_AUTHORIZER,
-		IotActions.DESCRIBE_DETECT_MITIGATION_ACTIONS_TASK,
-		IotActions.DESCRIBE_DIMENSION,
-		IotActions.DESCRIBE_DOMAIN_CONFIGURATION,
-		IotActions.DESCRIBE_ENCRYPTION_CONFIGURATION,
-		IotActions.DESCRIBE_ENDPOINT,
-		IotActions.DESCRIBE_EVENT_CONFIGURATIONS,
-		IotActions.DESCRIBE_FLEET_METRIC,
-		IotActions.DESCRIBE_INDEX,
-		IotActions.DESCRIBE_JOB,
-		IotActions.DESCRIBE_JOB_EXECUTION,
-		IotActions.DESCRIBE_JOB_TEMPLATE,
-		IotActions.DESCRIBE_MANAGED_JOB_TEMPLATE,
-		IotActions.DESCRIBE_MITIGATION_ACTION,
-		IotActions.DESCRIBE_PROVISIONING_TEMPLATE,
-		IotActions.DESCRIBE_PROVISIONING_TEMPLATE_VERSION,
-		IotActions.DESCRIBE_ROLE_ALIAS,
-		IotActions.DESCRIBE_SCHEDULED_AUDIT,
-		IotActions.DESCRIBE_SECURITY_PROFILE,
-		IotActions.DESCRIBE_STREAM,
-		IotActions.DESCRIBE_THING,
-		IotActions.DESCRIBE_THING_GROUP,
-		IotActions.DESCRIBE_THING_REGISTRATION_TASK,
-		IotActions.DESCRIBE_THING_TYPE,
-		IotActions.DESCRIBE_TUNNEL,
-		IotActions.GET_BUCKETS_AGGREGATION,
-		IotActions.GET_CARDINALITY,
-		IotActions.GET_COMMAND,
-		IotActions.GET_COMMAND_EXECUTION,
-		IotActions.GET_EFFECTIVE_POLICIES,
-		IotActions.GET_INDEXING_CONFIGURATION,
-		IotActions.GET_JOB_DOCUMENT,
-		IotActions.GET_LOGGING_OPTIONS,
-		IotActions.GET_OTA_UPDATE,
-		IotActions.GET_PACKAGE,
-		IotActions.GET_PACKAGE_CONFIGURATION,
-		IotActions.GET_PACKAGE_VERSION,
-		IotActions.GET_PERCENTILES,
-		IotActions.GET_POLICY,
-		IotActions.GET_POLICY_VERSION,
-		IotActions.GET_REGISTRATION_CODE,
-		IotActions.GET_RETAINED_MESSAGE,
-		IotActions.GET_STATISTICS,
-		IotActions.GET_THING_CONNECTIVITY_DATA,
-		IotActions.GET_THING_SHADOW,
-		IotActions.GET_TOPIC_RULE,
-		IotActions.GET_TOPIC_RULE_DESTINATION,
-		IotActions.GET_V2_LOGGING_OPTIONS,
-		IotActions.LIST_TAGS_FOR_RESOURCE,
-		IotActions.SEARCH_INDEX,
-		IotActions.TEST_AUTHORIZATION,
-		IotActions.TEST_INVOKE_AUTHORIZER,
-		IotActions.VALIDATE_SECURITY_PROFILE_BEHAVIORS,
+	static readonly AllReadActions: string[] = [
+		IotActions.DescribeAccountAuditConfiguration,
+		IotActions.DescribeAuditFinding,
+		IotActions.DescribeAuditMitigationActionsTask,
+		IotActions.DescribeAuditSuppression,
+		IotActions.DescribeAuditTask,
+		IotActions.DescribeAuthorizer,
+		IotActions.DescribeBillingGroup,
+		IotActions.DescribeCACertificate,
+		IotActions.DescribeCertificate,
+		IotActions.DescribeCertificateProvider,
+		IotActions.DescribeCustomMetric,
+		IotActions.DescribeDefaultAuthorizer,
+		IotActions.DescribeDetectMitigationActionsTask,
+		IotActions.DescribeDimension,
+		IotActions.DescribeDomainConfiguration,
+		IotActions.DescribeEncryptionConfiguration,
+		IotActions.DescribeEndpoint,
+		IotActions.DescribeEventConfigurations,
+		IotActions.DescribeFleetMetric,
+		IotActions.DescribeIndex,
+		IotActions.DescribeJob,
+		IotActions.DescribeJobExecution,
+		IotActions.DescribeJobTemplate,
+		IotActions.DescribeManagedJobTemplate,
+		IotActions.DescribeMitigationAction,
+		IotActions.DescribeProvisioningTemplate,
+		IotActions.DescribeProvisioningTemplateVersion,
+		IotActions.DescribeRoleAlias,
+		IotActions.DescribeScheduledAudit,
+		IotActions.DescribeSecurityProfile,
+		IotActions.DescribeStream,
+		IotActions.DescribeThing,
+		IotActions.DescribeThingGroup,
+		IotActions.DescribeThingRegistrationTask,
+		IotActions.DescribeThingType,
+		IotActions.DescribeTunnel,
+		IotActions.actionGetBucketsAggregation,
+		IotActions.actionGetCardinality,
+		IotActions.actionGetCommand,
+		IotActions.actionGetCommandExecution,
+		IotActions.actionGetEffectivePolicies,
+		IotActions.actionGetIndexingConfiguration,
+		IotActions.actionGetJobDocument,
+		IotActions.actionGetLoggingOptions,
+		IotActions.actionGetOTAUpdate,
+		IotActions.actionGetPackage,
+		IotActions.actionGetPackageConfiguration,
+		IotActions.actionGetPackageVersion,
+		IotActions.actionGetPercentiles,
+		IotActions.actionGetPolicy,
+		IotActions.actionGetPolicyVersion,
+		IotActions.actionGetRegistrationCode,
+		IotActions.actionGetRetainedMessage,
+		IotActions.actionGetStatistics,
+		IotActions.actionGetThingConnectivityData,
+		IotActions.actionGetThingShadow,
+		IotActions.actionGetTopicRule,
+		IotActions.actionGetTopicRuleDestination,
+		IotActions.actionGetV2LoggingOptions,
+		IotActions.ListTagsForResource,
+		IotActions.SearchIndex,
+		IotActions.TestAuthorization,
+		IotActions.TestInvokeAuthorizer,
+		IotActions.ValidateSecurityProfileBehaviors,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotActions.ACCEPT_CERTIFICATE_TRANSFER,
-		IotActions.ADD_THING_TO_BILLING_GROUP,
-		IotActions.ADD_THING_TO_THING_GROUP,
-		IotActions.ASSOCIATE_SBOM_WITH_PACKAGE_VERSION,
-		IotActions.ASSOCIATE_TARGETS_WITH_JOB,
-		IotActions.ATTACH_SECURITY_PROFILE,
-		IotActions.ATTACH_THING_PRINCIPAL,
-		IotActions.CANCEL_AUDIT_MITIGATION_ACTIONS_TASK,
-		IotActions.CANCEL_AUDIT_TASK,
-		IotActions.CANCEL_CERTIFICATE_TRANSFER,
-		IotActions.CANCEL_DETECT_MITIGATION_ACTIONS_TASK,
-		IotActions.CANCEL_JOB,
-		IotActions.CANCEL_JOB_EXECUTION,
-		IotActions.CLEAR_DEFAULT_AUTHORIZER,
-		IotActions.CLOSE_TUNNEL,
-		IotActions.CONFIRM_TOPIC_RULE_DESTINATION,
-		IotActions.CONNECT,
-		IotActions.CREATE_AUDIT_SUPPRESSION,
-		IotActions.CREATE_AUTHORIZER,
-		IotActions.CREATE_BILLING_GROUP,
-		IotActions.CREATE_CERTIFICATE_FROM_CSR,
-		IotActions.CREATE_CERTIFICATE_PROVIDER,
-		IotActions.CREATE_COMMAND,
-		IotActions.CREATE_CUSTOM_METRIC,
-		IotActions.CREATE_DIMENSION,
-		IotActions.CREATE_DOMAIN_CONFIGURATION,
-		IotActions.CREATE_DYNAMIC_THING_GROUP,
-		IotActions.CREATE_FLEET_METRIC,
-		IotActions.CREATE_JOB,
-		IotActions.CREATE_JOB_TEMPLATE,
-		IotActions.CREATE_KEYS_AND_CERTIFICATE,
-		IotActions.CREATE_MITIGATION_ACTION,
-		IotActions.CREATE_OTA_UPDATE,
-		IotActions.CREATE_PACKAGE,
-		IotActions.CREATE_PACKAGE_VERSION,
-		IotActions.CREATE_PROVISIONING_CLAIM,
-		IotActions.CREATE_PROVISIONING_TEMPLATE,
-		IotActions.CREATE_PROVISIONING_TEMPLATE_VERSION,
-		IotActions.CREATE_ROLE_ALIAS,
-		IotActions.CREATE_SCHEDULED_AUDIT,
-		IotActions.CREATE_SECURITY_PROFILE,
-		IotActions.CREATE_STREAM,
-		IotActions.CREATE_THING,
-		IotActions.CREATE_THING_GROUP,
-		IotActions.CREATE_THING_TYPE,
-		IotActions.CREATE_TOPIC_RULE,
-		IotActions.CREATE_TOPIC_RULE_DESTINATION,
-		IotActions.DELETE_ACCOUNT_AUDIT_CONFIGURATION,
-		IotActions.DELETE_AUDIT_SUPPRESSION,
-		IotActions.DELETE_AUTHORIZER,
-		IotActions.DELETE_BILLING_GROUP,
-		IotActions.DELETE_CA_CERTIFICATE,
-		IotActions.DELETE_CERTIFICATE,
-		IotActions.DELETE_CERTIFICATE_PROVIDER,
-		IotActions.DELETE_COMMAND,
-		IotActions.DELETE_COMMAND_EXECUTION,
-		IotActions.DELETE_CONNECTION,
-		IotActions.DELETE_CUSTOM_METRIC,
-		IotActions.DELETE_DIMENSION,
-		IotActions.DELETE_DOMAIN_CONFIGURATION,
-		IotActions.DELETE_DYNAMIC_THING_GROUP,
-		IotActions.DELETE_FLEET_METRIC,
-		IotActions.DELETE_JOB,
-		IotActions.DELETE_JOB_EXECUTION,
-		IotActions.DELETE_JOB_TEMPLATE,
-		IotActions.DELETE_MITIGATION_ACTION,
-		IotActions.DELETE_OTA_UPDATE,
-		IotActions.DELETE_PACKAGE,
-		IotActions.DELETE_PACKAGE_VERSION,
-		IotActions.DELETE_PROVISIONING_TEMPLATE,
-		IotActions.DELETE_PROVISIONING_TEMPLATE_VERSION,
-		IotActions.DELETE_REGISTRATION_CODE,
-		IotActions.DELETE_ROLE_ALIAS,
-		IotActions.DELETE_SCHEDULED_AUDIT,
-		IotActions.DELETE_SECURITY_PROFILE,
-		IotActions.DELETE_STREAM,
-		IotActions.DELETE_THING,
-		IotActions.DELETE_THING_GROUP,
-		IotActions.DELETE_THING_SHADOW,
-		IotActions.DELETE_THING_TYPE,
-		IotActions.DELETE_TOPIC_RULE,
-		IotActions.DELETE_TOPIC_RULE_DESTINATION,
-		IotActions.DELETE_V2_LOGGING_LEVEL,
-		IotActions.DEPRECATE_THING_TYPE,
-		IotActions.DETACH_SECURITY_PROFILE,
-		IotActions.DETACH_THING_PRINCIPAL,
-		IotActions.DISABLE_TOPIC_RULE,
-		IotActions.DISASSOCIATE_SBOM_FROM_PACKAGE_VERSION,
-		IotActions.ENABLE_TOPIC_RULE,
-		IotActions.GET_CONNECTION,
-		IotActions.LIST_SUBSCRIPTIONS,
-		IotActions.OPEN_TUNNEL,
-		IotActions.PUBLISH,
-		IotActions.PUT_VERIFICATION_STATE_ON_VIOLATION,
-		IotActions.RECEIVE,
-		IotActions.REGISTER_CA_CERTIFICATE,
-		IotActions.REGISTER_CERTIFICATE,
-		IotActions.REGISTER_CERTIFICATE_WITHOUT_CA,
-		IotActions.REGISTER_THING,
-		IotActions.REJECT_CERTIFICATE_TRANSFER,
-		IotActions.REMOVE_THING_FROM_BILLING_GROUP,
-		IotActions.REMOVE_THING_FROM_THING_GROUP,
-		IotActions.REPLACE_TOPIC_RULE,
-		IotActions.RETAIN_PUBLISH,
-		IotActions.ROTATE_TUNNEL_ACCESS_TOKEN,
-		IotActions.SEND_DIRECT_MESSAGE,
-		IotActions.SET_LOGGING_OPTIONS,
-		IotActions.SET_V2_LOGGING_LEVEL,
-		IotActions.SET_V2_LOGGING_OPTIONS,
-		IotActions.START_AUDIT_MITIGATION_ACTIONS_TASK,
-		IotActions.START_COMMAND_EXECUTION,
-		IotActions.START_DETECT_MITIGATION_ACTIONS_TASK,
-		IotActions.START_ON_DEMAND_AUDIT_TASK,
-		IotActions.START_THING_REGISTRATION_TASK,
-		IotActions.STOP_THING_REGISTRATION_TASK,
-		IotActions.SUBSCRIBE,
-		IotActions.TRANSFER_CERTIFICATE,
-		IotActions.UPDATE_ACCOUNT_AUDIT_CONFIGURATION,
-		IotActions.UPDATE_AUDIT_SUPPRESSION,
-		IotActions.UPDATE_AUTHORIZER,
-		IotActions.UPDATE_BILLING_GROUP,
-		IotActions.UPDATE_CA_CERTIFICATE,
-		IotActions.UPDATE_CERTIFICATE,
-		IotActions.UPDATE_CERTIFICATE_PROVIDER,
-		IotActions.UPDATE_COMMAND,
-		IotActions.UPDATE_CUSTOM_METRIC,
-		IotActions.UPDATE_DIMENSION,
-		IotActions.UPDATE_DOMAIN_CONFIGURATION,
-		IotActions.UPDATE_DYNAMIC_THING_GROUP,
-		IotActions.UPDATE_ENCRYPTION_CONFIGURATION,
-		IotActions.UPDATE_EVENT_CONFIGURATIONS,
-		IotActions.UPDATE_FLEET_METRIC,
-		IotActions.UPDATE_INDEXING_CONFIGURATION,
-		IotActions.UPDATE_JOB,
-		IotActions.UPDATE_MITIGATION_ACTION,
-		IotActions.UPDATE_PACKAGE,
-		IotActions.UPDATE_PACKAGE_CONFIGURATION,
-		IotActions.UPDATE_PACKAGE_VERSION,
-		IotActions.UPDATE_PROVISIONING_TEMPLATE,
-		IotActions.UPDATE_ROLE_ALIAS,
-		IotActions.UPDATE_SCHEDULED_AUDIT,
-		IotActions.UPDATE_SECURITY_PROFILE,
-		IotActions.UPDATE_STREAM,
-		IotActions.UPDATE_THING,
-		IotActions.UPDATE_THING_GROUP,
-		IotActions.UPDATE_THING_GROUPS_FOR_THING,
-		IotActions.UPDATE_THING_SHADOW,
-		IotActions.UPDATE_THING_TYPE,
-		IotActions.UPDATE_TOPIC_RULE_DESTINATION,
+	static readonly AllWriteActions: string[] = [
+		IotActions.AcceptCertificateTransfer,
+		IotActions.AddThingToBillingGroup,
+		IotActions.AddThingToThingGroup,
+		IotActions.AssociateSbomWithPackageVersion,
+		IotActions.AssociateTargetsWithJob,
+		IotActions.AttachSecurityProfile,
+		IotActions.AttachThingPrincipal,
+		IotActions.CancelAuditMitigationActionsTask,
+		IotActions.CancelAuditTask,
+		IotActions.CancelCertificateTransfer,
+		IotActions.CancelDetectMitigationActionsTask,
+		IotActions.CancelJob,
+		IotActions.CancelJobExecution,
+		IotActions.ClearDefaultAuthorizer,
+		IotActions.CloseTunnel,
+		IotActions.ConfirmTopicRuleDestination,
+		IotActions.Connect,
+		IotActions.CreateAuditSuppression,
+		IotActions.CreateAuthorizer,
+		IotActions.CreateBillingGroup,
+		IotActions.CreateCertificateFromCsr,
+		IotActions.CreateCertificateProvider,
+		IotActions.CreateCommand,
+		IotActions.CreateCustomMetric,
+		IotActions.CreateDimension,
+		IotActions.CreateDomainConfiguration,
+		IotActions.CreateDynamicThingGroup,
+		IotActions.CreateFleetMetric,
+		IotActions.CreateJob,
+		IotActions.CreateJobTemplate,
+		IotActions.CreateKeysAndCertificate,
+		IotActions.CreateMitigationAction,
+		IotActions.CreateOTAUpdate,
+		IotActions.CreatePackage,
+		IotActions.CreatePackageVersion,
+		IotActions.CreateProvisioningClaim,
+		IotActions.CreateProvisioningTemplate,
+		IotActions.CreateProvisioningTemplateVersion,
+		IotActions.CreateRoleAlias,
+		IotActions.CreateScheduledAudit,
+		IotActions.CreateSecurityProfile,
+		IotActions.CreateStream,
+		IotActions.CreateThing,
+		IotActions.CreateThingGroup,
+		IotActions.CreateThingType,
+		IotActions.CreateTopicRule,
+		IotActions.CreateTopicRuleDestination,
+		IotActions.DeleteAccountAuditConfiguration,
+		IotActions.DeleteAuditSuppression,
+		IotActions.DeleteAuthorizer,
+		IotActions.DeleteBillingGroup,
+		IotActions.DeleteCACertificate,
+		IotActions.DeleteCertificate,
+		IotActions.DeleteCertificateProvider,
+		IotActions.DeleteCommand,
+		IotActions.DeleteCommandExecution,
+		IotActions.DeleteConnection,
+		IotActions.DeleteCustomMetric,
+		IotActions.DeleteDimension,
+		IotActions.DeleteDomainConfiguration,
+		IotActions.DeleteDynamicThingGroup,
+		IotActions.DeleteFleetMetric,
+		IotActions.DeleteJob,
+		IotActions.DeleteJobExecution,
+		IotActions.DeleteJobTemplate,
+		IotActions.DeleteMitigationAction,
+		IotActions.DeleteOTAUpdate,
+		IotActions.DeletePackage,
+		IotActions.DeletePackageVersion,
+		IotActions.DeleteProvisioningTemplate,
+		IotActions.DeleteProvisioningTemplateVersion,
+		IotActions.DeleteRegistrationCode,
+		IotActions.DeleteRoleAlias,
+		IotActions.DeleteScheduledAudit,
+		IotActions.DeleteSecurityProfile,
+		IotActions.DeleteStream,
+		IotActions.DeleteThing,
+		IotActions.DeleteThingGroup,
+		IotActions.DeleteThingShadow,
+		IotActions.DeleteThingType,
+		IotActions.DeleteTopicRule,
+		IotActions.DeleteTopicRuleDestination,
+		IotActions.DeleteV2LoggingLevel,
+		IotActions.DeprecateThingType,
+		IotActions.DetachSecurityProfile,
+		IotActions.DetachThingPrincipal,
+		IotActions.DisableTopicRule,
+		IotActions.DisassociateSbomFromPackageVersion,
+		IotActions.EnableTopicRule,
+		IotActions.actionGetConnection,
+		IotActions.ListSubscriptions,
+		IotActions.OpenTunnel,
+		IotActions.Publish,
+		IotActions.PutVerificationStateOnViolation,
+		IotActions.Receive,
+		IotActions.RegisterCACertificate,
+		IotActions.RegisterCertificate,
+		IotActions.RegisterCertificateWithoutCA,
+		IotActions.RegisterThing,
+		IotActions.RejectCertificateTransfer,
+		IotActions.RemoveThingFromBillingGroup,
+		IotActions.RemoveThingFromThingGroup,
+		IotActions.ReplaceTopicRule,
+		IotActions.RetainPublish,
+		IotActions.RotateTunnelAccessToken,
+		IotActions.SendDirectMessage,
+		IotActions.actionSetLoggingOptions,
+		IotActions.actionSetV2LoggingLevel,
+		IotActions.actionSetV2LoggingOptions,
+		IotActions.StartAuditMitigationActionsTask,
+		IotActions.StartCommandExecution,
+		IotActions.StartDetectMitigationActionsTask,
+		IotActions.StartOnDemandAuditTask,
+		IotActions.StartThingRegistrationTask,
+		IotActions.StopThingRegistrationTask,
+		IotActions.Subscribe,
+		IotActions.TransferCertificate,
+		IotActions.UpdateAccountAuditConfiguration,
+		IotActions.UpdateAuditSuppression,
+		IotActions.UpdateAuthorizer,
+		IotActions.UpdateBillingGroup,
+		IotActions.UpdateCACertificate,
+		IotActions.UpdateCertificate,
+		IotActions.UpdateCertificateProvider,
+		IotActions.UpdateCommand,
+		IotActions.UpdateCustomMetric,
+		IotActions.UpdateDimension,
+		IotActions.UpdateDomainConfiguration,
+		IotActions.UpdateDynamicThingGroup,
+		IotActions.UpdateEncryptionConfiguration,
+		IotActions.UpdateEventConfigurations,
+		IotActions.UpdateFleetMetric,
+		IotActions.UpdateIndexingConfiguration,
+		IotActions.UpdateJob,
+		IotActions.UpdateMitigationAction,
+		IotActions.UpdatePackage,
+		IotActions.UpdatePackageConfiguration,
+		IotActions.UpdatePackageVersion,
+		IotActions.UpdateProvisioningTemplate,
+		IotActions.UpdateRoleAlias,
+		IotActions.UpdateScheduledAudit,
+		IotActions.UpdateSecurityProfile,
+		IotActions.UpdateStream,
+		IotActions.UpdateThing,
+		IotActions.UpdateThingGroup,
+		IotActions.UpdateThingGroupsForThing,
+		IotActions.UpdateThingShadow,
+		IotActions.UpdateThingType,
+		IotActions.UpdateTopicRuleDestination,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IotActions.GET_BEHAVIOR_MODEL_TRAINING_SUMMARIES,
-		IotActions.LIST_ACTIVE_VIOLATIONS,
-		IotActions.LIST_ATTACHED_POLICIES,
-		IotActions.LIST_AUDIT_FINDINGS,
-		IotActions.LIST_AUDIT_MITIGATION_ACTIONS_EXECUTIONS,
-		IotActions.LIST_AUDIT_MITIGATION_ACTIONS_TASKS,
-		IotActions.LIST_AUDIT_SUPPRESSIONS,
-		IotActions.LIST_AUDIT_TASKS,
-		IotActions.LIST_AUTHORIZERS,
-		IotActions.LIST_BILLING_GROUPS,
-		IotActions.LIST_CA_CERTIFICATES,
-		IotActions.LIST_CERTIFICATE_PROVIDERS,
-		IotActions.LIST_CERTIFICATES,
-		IotActions.LIST_CERTIFICATES_BY_CA,
-		IotActions.LIST_COMMAND_EXECUTIONS,
-		IotActions.LIST_COMMANDS,
-		IotActions.LIST_CUSTOM_METRICS,
-		IotActions.LIST_DETECT_MITIGATION_ACTIONS_EXECUTIONS,
-		IotActions.LIST_DETECT_MITIGATION_ACTIONS_TASKS,
-		IotActions.LIST_DIMENSIONS,
-		IotActions.LIST_DOMAIN_CONFIGURATIONS,
-		IotActions.LIST_FLEET_METRICS,
-		IotActions.LIST_INDICES,
-		IotActions.LIST_JOB_EXECUTIONS_FOR_JOB,
-		IotActions.LIST_JOB_EXECUTIONS_FOR_THING,
-		IotActions.LIST_JOB_TEMPLATES,
-		IotActions.LIST_JOBS,
-		IotActions.LIST_MANAGED_JOB_TEMPLATES,
-		IotActions.LIST_METRIC_VALUES,
-		IotActions.LIST_MITIGATION_ACTIONS,
-		IotActions.LIST_NAMED_SHADOWS_FOR_THING,
-		IotActions.LIST_OTA_UPDATES,
-		IotActions.LIST_OUTGOING_CERTIFICATES,
-		IotActions.LIST_PACKAGE_VERSIONS,
-		IotActions.LIST_PACKAGES,
-		IotActions.LIST_POLICIES,
-		IotActions.LIST_POLICY_PRINCIPALS,
-		IotActions.LIST_POLICY_VERSIONS,
-		IotActions.LIST_PRINCIPAL_POLICIES,
-		IotActions.LIST_PRINCIPAL_THINGS,
-		IotActions.LIST_PRINCIPAL_THINGS_V2,
-		IotActions.LIST_PROVISIONING_TEMPLATE_VERSIONS,
-		IotActions.LIST_PROVISIONING_TEMPLATES,
-		IotActions.LIST_RELATED_RESOURCES_FOR_AUDIT_FINDING,
-		IotActions.LIST_RETAINED_MESSAGES,
-		IotActions.LIST_ROLE_ALIASES,
-		IotActions.LIST_SBOM_VALIDATION_RESULTS,
-		IotActions.LIST_SCHEDULED_AUDITS,
-		IotActions.LIST_SECURITY_PROFILES,
-		IotActions.LIST_SECURITY_PROFILES_FOR_TARGET,
-		IotActions.LIST_STREAMS,
-		IotActions.LIST_TARGETS_FOR_POLICY,
-		IotActions.LIST_TARGETS_FOR_SECURITY_PROFILE,
-		IotActions.LIST_THING_GROUPS,
-		IotActions.LIST_THING_GROUPS_FOR_THING,
-		IotActions.LIST_THING_PRINCIPALS,
-		IotActions.LIST_THING_PRINCIPALS_V2,
-		IotActions.LIST_THING_REGISTRATION_TASK_REPORTS,
-		IotActions.LIST_THING_REGISTRATION_TASKS,
-		IotActions.LIST_THING_TYPES,
-		IotActions.LIST_THINGS,
-		IotActions.LIST_THINGS_IN_BILLING_GROUP,
-		IotActions.LIST_THINGS_IN_THING_GROUP,
-		IotActions.LIST_TOPIC_RULE_DESTINATIONS,
-		IotActions.LIST_TOPIC_RULES,
-		IotActions.LIST_TUNNELS,
-		IotActions.LIST_V2_LOGGING_LEVELS,
-		IotActions.LIST_VIOLATION_EVENTS,
+	static readonly AllListActions: string[] = [
+		IotActions.actionGetBehaviorModelTrainingSummaries,
+		IotActions.ListActiveViolations,
+		IotActions.ListAttachedPolicies,
+		IotActions.ListAuditFindings,
+		IotActions.ListAuditMitigationActionsExecutions,
+		IotActions.ListAuditMitigationActionsTasks,
+		IotActions.ListAuditSuppressions,
+		IotActions.ListAuditTasks,
+		IotActions.ListAuthorizers,
+		IotActions.ListBillingGroups,
+		IotActions.ListCACertificates,
+		IotActions.ListCertificateProviders,
+		IotActions.ListCertificates,
+		IotActions.ListCertificatesByCA,
+		IotActions.ListCommandExecutions,
+		IotActions.ListCommands,
+		IotActions.ListCustomMetrics,
+		IotActions.ListDetectMitigationActionsExecutions,
+		IotActions.ListDetectMitigationActionsTasks,
+		IotActions.ListDimensions,
+		IotActions.ListDomainConfigurations,
+		IotActions.ListFleetMetrics,
+		IotActions.ListIndices,
+		IotActions.ListJobExecutionsForJob,
+		IotActions.ListJobExecutionsForThing,
+		IotActions.ListJobTemplates,
+		IotActions.ListJobs,
+		IotActions.ListManagedJobTemplates,
+		IotActions.ListMetricValues,
+		IotActions.ListMitigationActions,
+		IotActions.ListNamedShadowsForThing,
+		IotActions.ListOTAUpdates,
+		IotActions.ListOutgoingCertificates,
+		IotActions.ListPackageVersions,
+		IotActions.ListPackages,
+		IotActions.ListPolicies,
+		IotActions.ListPolicyPrincipals,
+		IotActions.ListPolicyVersions,
+		IotActions.ListPrincipalPolicies,
+		IotActions.ListPrincipalThings,
+		IotActions.ListPrincipalThingsV2,
+		IotActions.ListProvisioningTemplateVersions,
+		IotActions.ListProvisioningTemplates,
+		IotActions.ListRelatedResourcesForAuditFinding,
+		IotActions.ListRetainedMessages,
+		IotActions.ListRoleAliases,
+		IotActions.ListSbomValidationResults,
+		IotActions.ListScheduledAudits,
+		IotActions.ListSecurityProfiles,
+		IotActions.ListSecurityProfilesForTarget,
+		IotActions.ListStreams,
+		IotActions.ListTargetsForPolicy,
+		IotActions.ListTargetsForSecurityProfile,
+		IotActions.ListThingGroups,
+		IotActions.ListThingGroupsForThing,
+		IotActions.ListThingPrincipals,
+		IotActions.ListThingPrincipalsV2,
+		IotActions.ListThingRegistrationTaskReports,
+		IotActions.ListThingRegistrationTasks,
+		IotActions.ListThingTypes,
+		IotActions.ListThings,
+		IotActions.ListThingsInBillingGroup,
+		IotActions.ListThingsInThingGroup,
+		IotActions.ListTopicRuleDestinations,
+		IotActions.ListTopicRules,
+		IotActions.ListTunnels,
+		IotActions.ListV2LoggingLevels,
+		IotActions.ListViolationEvents,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		IotActions.ATTACH_POLICY,
-		IotActions.ATTACH_PRINCIPAL_POLICY,
-		IotActions.CREATE_POLICY,
-		IotActions.CREATE_POLICY_VERSION,
-		IotActions.DELETE_POLICY,
-		IotActions.DELETE_POLICY_VERSION,
-		IotActions.DETACH_POLICY,
-		IotActions.DETACH_PRINCIPAL_POLICY,
-		IotActions.SET_DEFAULT_AUTHORIZER,
-		IotActions.SET_DEFAULT_POLICY_VERSION,
+	static readonly AllPermissionManagementActions: string[] = [
+		IotActions.AttachPolicy,
+		IotActions.AttachPrincipalPolicy,
+		IotActions.CreatePolicy,
+		IotActions.CreatePolicyVersion,
+		IotActions.DeletePolicy,
+		IotActions.DeletePolicyVersion,
+		IotActions.DetachPolicy,
+		IotActions.DetachPrincipalPolicy,
+		IotActions.actionSetDefaultAuthorizer,
+		IotActions.actionSetDefaultPolicyVersion,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IotActions.TAG_RESOURCE,
-		IotActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IotActions.TagResource,
+		IotActions.UntagResource,
 	];
 }
 
-const AuthorizerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):authorizer/(?<authorizerName>[^:/?]+)$",
-);
-const BillinggroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):billinggroup/(?<billingGroupName>[^:/?]+)$",
-);
-const CacertArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):cacert/(?<caCertificate>[^:/?]+)$",
-);
-const CertArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):cert/(?<certificate>[^:/?]+)$",
-);
-const CertificateproviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):certificateprovider/(?<certificateProviderName>[^:/?]+)$",
-);
-const ClientArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):client/(?<clientId>[^:/?]+)$",
-);
-const CommandArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):command/(?<commandId>[^:/?]+)$",
-);
-const CustommetricArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):custommetric/(?<metricName>[^:/?]+)$",
-);
-const DestinationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):ruledestination/(?<destinationType>[^:/?]+)/(?<uuid>[^:/?]+)$",
-);
-const DimensionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):dimension/(?<dimensionName>[^:/?]+)$",
-);
-const DomainconfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):domainconfiguration/(?<domainConfigurationName>[^:/?]+)/(?<id>[^:/?]+)$",
-);
-const DynamicthinggroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thinggroup/(?<thingGroupName>[^:/?]+)$",
-);
-const FleetmetricArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):fleetmetric/(?<fleetMetricName>[^:/?]+)$",
-);
-const IndexArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):index/(?<indexName>[^:/?]+)$",
-);
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobId>[^:/?]+)$",
-);
-const JobtemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):jobtemplate/(?<jobTemplateId>[^:/?]+)$",
-);
-const MitigationactionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):mitigationaction/(?<mitigationActionName>[^:/?]+)$",
-);
-const OtaupdateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):otaupdate/(?<otaUpdateId>[^:/?]+)$",
-);
-const PackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):package/(?<packageName>[^:/?]+)$",
-);
-const PackageversionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):package/(?<packageName>[^:/?]+)/version/(?<versionName>[^:/?]+)$",
-);
-const PolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):policy/(?<policyName>[^:/?]+)$",
-);
-const ProvisioningtemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):provisioningtemplate/(?<provisioningTemplate>[^:/?]+)$",
-);
-const RolealiasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):rolealias/(?<roleAlias>[^:/?]+)$",
-);
-const RuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):rule/(?<ruleName>[^:/?]+)$",
-);
-const ScheduledauditArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):scheduledaudit/(?<scheduleName>[^:/?]+)$",
-);
-const SecurityprofileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):securityprofile/(?<securityProfileName>[^:/?]+)$",
-);
-const StreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):stream/(?<streamId>[^:/?]+)$",
-);
-const ThingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thing/(?<thingName>[^:/?]+)$",
-);
-const ThinggroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thinggroup/(?<thingGroupName>[^:/?]+)$",
-);
-const ThingtypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thingtype/(?<thingTypeName>[^:/?]+)$",
-);
-const TopicArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):topic/(?<topicName>[^:/?]+)$",
-);
-const TopicfilterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):topicfilter/(?<topicFilter>[^:/?]+)$",
-);
-const TunnelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):tunnel/(?<tunnelId>[^:/?]+)$",
-);
+/**
+ * Properties for building a authorizer ARN.
+ */
+export interface IotAuthorizerArnProps {
+	/** The AuthorizerName component of the ARN. */
+	readonly authorizerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a authorizer ARN.
+ */
+export interface IotAuthorizerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AuthorizerName component. */
+	readonly authorizerName: string;
+}
+
+/**
+ * Properties for building a billinggroup ARN.
+ */
+export interface IotBillinggroupArnProps {
+	/** The BillingGroupName component of the ARN. */
+	readonly billingGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a billinggroup ARN.
+ */
+export interface IotBillinggroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BillingGroupName component. */
+	readonly billingGroupName: string;
+}
+
+/**
+ * Properties for building a cacert ARN.
+ */
+export interface IotCacertArnProps {
+	/** The CACertificate component of the ARN. */
+	readonly caCertificate: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cacert ARN.
+ */
+export interface IotCacertArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CACertificate component. */
+	readonly caCertificate: string;
+}
+
+/**
+ * Properties for building a cert ARN.
+ */
+export interface IotCertArnProps {
+	/** The Certificate component of the ARN. */
+	readonly certificate: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cert ARN.
+ */
+export interface IotCertArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Certificate component. */
+	readonly certificate: string;
+}
+
+/**
+ * Properties for building a certificateprovider ARN.
+ */
+export interface IotCertificateproviderArnProps {
+	/** The CertificateProviderName component of the ARN. */
+	readonly certificateProviderName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a certificateprovider ARN.
+ */
+export interface IotCertificateproviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CertificateProviderName component. */
+	readonly certificateProviderName: string;
+}
+
+/**
+ * Properties for building a client ARN.
+ */
+export interface IotClientArnProps {
+	/** The ClientId component of the ARN. */
+	readonly clientId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a client ARN.
+ */
+export interface IotClientArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClientId component. */
+	readonly clientId: string;
+}
+
+/**
+ * Properties for building a command ARN.
+ */
+export interface IotCommandArnProps {
+	/** The CommandId component of the ARN. */
+	readonly commandId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a command ARN.
+ */
+export interface IotCommandArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CommandId component. */
+	readonly commandId: string;
+}
+
+/**
+ * Properties for building a custommetric ARN.
+ */
+export interface IotCustommetricArnProps {
+	/** The MetricName component of the ARN. */
+	readonly metricName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custommetric ARN.
+ */
+export interface IotCustommetricArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MetricName component. */
+	readonly metricName: string;
+}
+
+/**
+ * Properties for building a destination ARN.
+ */
+export interface IotDestinationArnProps {
+	/** The DestinationType component of the ARN. */
+	readonly destinationType: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a destination ARN.
+ */
+export interface IotDestinationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DestinationType component. */
+	readonly destinationType: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a dimension ARN.
+ */
+export interface IotDimensionArnProps {
+	/** The DimensionName component of the ARN. */
+	readonly dimensionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dimension ARN.
+ */
+export interface IotDimensionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DimensionName component. */
+	readonly dimensionName: string;
+}
+
+/**
+ * Properties for building a domainconfiguration ARN.
+ */
+export interface IotDomainconfigurationArnProps {
+	/** The DomainConfigurationName component of the ARN. */
+	readonly domainConfigurationName: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domainconfiguration ARN.
+ */
+export interface IotDomainconfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainConfigurationName component. */
+	readonly domainConfigurationName: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a dynamicthinggroup ARN.
+ */
+export interface IotDynamicthinggroupArnProps {
+	/** The ThingGroupName component of the ARN. */
+	readonly thingGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dynamicthinggroup ARN.
+ */
+export interface IotDynamicthinggroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ThingGroupName component. */
+	readonly thingGroupName: string;
+}
+
+/**
+ * Properties for building a fleetmetric ARN.
+ */
+export interface IotFleetmetricArnProps {
+	/** The FleetMetricName component of the ARN. */
+	readonly fleetMetricName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fleetmetric ARN.
+ */
+export interface IotFleetmetricArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FleetMetricName component. */
+	readonly fleetMetricName: string;
+}
+
+/**
+ * Properties for building a index ARN.
+ */
+export interface IotIndexArnProps {
+	/** The IndexName component of the ARN. */
+	readonly indexName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a index ARN.
+ */
+export interface IotIndexArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IndexName component. */
+	readonly indexName: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface IotJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface IotJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a jobtemplate ARN.
+ */
+export interface IotJobtemplateArnProps {
+	/** The JobTemplateId component of the ARN. */
+	readonly jobTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a jobtemplate ARN.
+ */
+export interface IotJobtemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobTemplateId component. */
+	readonly jobTemplateId: string;
+}
+
+/**
+ * Properties for building a mitigationaction ARN.
+ */
+export interface IotMitigationactionArnProps {
+	/** The MitigationActionName component of the ARN. */
+	readonly mitigationActionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mitigationaction ARN.
+ */
+export interface IotMitigationactionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MitigationActionName component. */
+	readonly mitigationActionName: string;
+}
+
+/**
+ * Properties for building a otaupdate ARN.
+ */
+export interface IotOtaupdateArnProps {
+	/** The OtaUpdateId component of the ARN. */
+	readonly otaUpdateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a otaupdate ARN.
+ */
+export interface IotOtaupdateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OtaUpdateId component. */
+	readonly otaUpdateId: string;
+}
+
+/**
+ * Properties for building a package ARN.
+ */
+export interface IotPackageArnProps {
+	/** The PackageName component of the ARN. */
+	readonly packageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a package ARN.
+ */
+export interface IotPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PackageName component. */
+	readonly packageName: string;
+}
+
+/**
+ * Properties for building a packageversion ARN.
+ */
+export interface IotPackageversionArnProps {
+	/** The PackageName component of the ARN. */
+	readonly packageName: string;
+	/** The VersionName component of the ARN. */
+	readonly versionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a packageversion ARN.
+ */
+export interface IotPackageversionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PackageName component. */
+	readonly packageName: string;
+	/** The VersionName component. */
+	readonly versionName: string;
+}
+
+/**
+ * Properties for building a policy ARN.
+ */
+export interface IotPolicyArnProps {
+	/** The PolicyName component of the ARN. */
+	readonly policyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a policy ARN.
+ */
+export interface IotPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PolicyName component. */
+	readonly policyName: string;
+}
+
+/**
+ * Properties for building a provisioningtemplate ARN.
+ */
+export interface IotProvisioningtemplateArnProps {
+	/** The ProvisioningTemplate component of the ARN. */
+	readonly provisioningTemplate: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a provisioningtemplate ARN.
+ */
+export interface IotProvisioningtemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProvisioningTemplate component. */
+	readonly provisioningTemplate: string;
+}
+
+/**
+ * Properties for building a rolealias ARN.
+ */
+export interface IotRolealiasArnProps {
+	/** The RoleAlias component of the ARN. */
+	readonly roleAlias: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rolealias ARN.
+ */
+export interface IotRolealiasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RoleAlias component. */
+	readonly roleAlias: string;
+}
+
+/**
+ * Properties for building a rule ARN.
+ */
+export interface IotRuleArnProps {
+	/** The RuleName component of the ARN. */
+	readonly ruleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rule ARN.
+ */
+export interface IotRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuleName component. */
+	readonly ruleName: string;
+}
+
+/**
+ * Properties for building a scheduledaudit ARN.
+ */
+export interface IotScheduledauditArnProps {
+	/** The ScheduleName component of the ARN. */
+	readonly scheduleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a scheduledaudit ARN.
+ */
+export interface IotScheduledauditArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ScheduleName component. */
+	readonly scheduleName: string;
+}
+
+/**
+ * Properties for building a securityprofile ARN.
+ */
+export interface IotSecurityprofileArnProps {
+	/** The SecurityProfileName component of the ARN. */
+	readonly securityProfileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a securityprofile ARN.
+ */
+export interface IotSecurityprofileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityProfileName component. */
+	readonly securityProfileName: string;
+}
+
+/**
+ * Properties for building a stream ARN.
+ */
+export interface IotStreamArnProps {
+	/** The StreamId component of the ARN. */
+	readonly streamId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a stream ARN.
+ */
+export interface IotStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The StreamId component. */
+	readonly streamId: string;
+}
+
+/**
+ * Properties for building a thing ARN.
+ */
+export interface IotThingArnProps {
+	/** The ThingName component of the ARN. */
+	readonly thingName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a thing ARN.
+ */
+export interface IotThingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ThingName component. */
+	readonly thingName: string;
+}
+
+/**
+ * Properties for building a thinggroup ARN.
+ */
+export interface IotThinggroupArnProps {
+	/** The ThingGroupName component of the ARN. */
+	readonly thingGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a thinggroup ARN.
+ */
+export interface IotThinggroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ThingGroupName component. */
+	readonly thingGroupName: string;
+}
+
+/**
+ * Properties for building a thingtype ARN.
+ */
+export interface IotThingtypeArnProps {
+	/** The ThingTypeName component of the ARN. */
+	readonly thingTypeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a thingtype ARN.
+ */
+export interface IotThingtypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ThingTypeName component. */
+	readonly thingTypeName: string;
+}
+
+/**
+ * Properties for building a topic ARN.
+ */
+export interface IotTopicArnProps {
+	/** The TopicName component of the ARN. */
+	readonly topicName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a topic ARN.
+ */
+export interface IotTopicArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TopicName component. */
+	readonly topicName: string;
+}
+
+/**
+ * Properties for building a topicfilter ARN.
+ */
+export interface IotTopicfilterArnProps {
+	/** The TopicFilter component of the ARN. */
+	readonly topicFilter: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a topicfilter ARN.
+ */
+export interface IotTopicfilterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TopicFilter component. */
+	readonly topicFilter: string;
+}
+
+/**
+ * Properties for building a tunnel ARN.
+ */
+export interface IotTunnelArnProps {
+	/** The TunnelId component of the ARN. */
+	readonly tunnelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tunnel ARN.
+ */
+export interface IotTunnelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TunnelId component. */
+	readonly tunnelId: string;
+}
+
+const AuthorizerArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):authorizer\/(?<authorizerName>[^:/?]+)$/;
+const BillinggroupArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):billinggroup\/(?<billingGroupName>[^:/?]+)$/;
+const CacertArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):cacert\/(?<caCertificate>[^:/?]+)$/;
+const CertArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):cert\/(?<certificate>[^:/?]+)$/;
+const CertificateproviderArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):certificateprovider\/(?<certificateProviderName>[^:/?]+)$/;
+const ClientArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):client\/(?<clientId>[^:/?]+)$/;
+const CommandArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):command\/(?<commandId>[^:/?]+)$/;
+const CustommetricArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):custommetric\/(?<metricName>[^:/?]+)$/;
+const DestinationArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):ruledestination\/(?<destinationType>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
+const DimensionArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):dimension\/(?<dimensionName>[^:/?]+)$/;
+const DomainconfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):domainconfiguration\/(?<domainConfigurationName>[^:/?]+)\/(?<id>[^:/?]+)$/;
+const DynamicthinggroupArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thinggroup\/(?<thingGroupName>[^:/?]+)$/;
+const FleetmetricArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):fleetmetric\/(?<fleetMetricName>[^:/?]+)$/;
+const IndexArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):index\/(?<indexName>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobId>[^:/?]+)$/;
+const JobtemplateArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):jobtemplate\/(?<jobTemplateId>[^:/?]+)$/;
+const MitigationactionArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):mitigationaction\/(?<mitigationActionName>[^:/?]+)$/;
+const OtaupdateArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):otaupdate\/(?<otaUpdateId>[^:/?]+)$/;
+const PackageArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):package\/(?<packageName>[^:/?]+)$/;
+const PackageversionArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):package\/(?<packageName>[^:/?]+)\/version\/(?<versionName>[^:/?]+)$/;
+const PolicyArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):policy\/(?<policyName>[^:/?]+)$/;
+const ProvisioningtemplateArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):provisioningtemplate\/(?<provisioningTemplate>[^:/?]+)$/;
+const RolealiasArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):rolealias\/(?<roleAlias>[^:/?]+)$/;
+const RuleArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):rule\/(?<ruleName>[^:/?]+)$/;
+const ScheduledauditArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):scheduledaudit\/(?<scheduleName>[^:/?]+)$/;
+const SecurityprofileArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):securityprofile\/(?<securityProfileName>[^:/?]+)$/;
+const StreamArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):stream\/(?<streamId>[^:/?]+)$/;
+const ThingArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thing\/(?<thingName>[^:/?]+)$/;
+const ThinggroupArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thinggroup\/(?<thingGroupName>[^:/?]+)$/;
+const ThingtypeArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):thingtype\/(?<thingTypeName>[^:/?]+)$/;
+const TopicArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):topic\/(?<topicName>[^:/?]+)$/;
+const TopicfilterArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):topicfilter\/(?<topicFilter>[^:/?]+)$/;
+const TunnelArnRegex =
+	/^arn:(?<partition>[^:]+):iot:(?<region>[^:]*):(?<account>[^:]*):tunnel\/(?<tunnelId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iot resources.
@@ -1069,16 +1958,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the authorizer resource.
 	 */
-	static authorizer(props: {
-		/** The AuthorizerName component of the ARN. */
-		readonly authorizerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static authorizer(props: IotAuthorizerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:authorizer/${props.authorizerName}`;
 	}
 
@@ -1093,12 +1973,7 @@ export class IotResources {
 	 * Parses a authorizer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAuthorizerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		authorizerName: string;
-	} {
+	static parseAuthorizerArn(arn: string): IotAuthorizerArnComponents {
 		const match = AuthorizerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid authorizer ARN: ${arn}`);
@@ -1114,16 +1989,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the billinggroup resource.
 	 */
-	static billinggroup(props: {
-		/** The BillingGroupName component of the ARN. */
-		readonly billingGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billinggroup(props: IotBillinggroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:billinggroup/${props.billingGroupName}`;
 	}
 
@@ -1138,12 +2004,7 @@ export class IotResources {
 	 * Parses a billinggroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillinggroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		billingGroupName: string;
-	} {
+	static parseBillinggroupArn(arn: string): IotBillinggroupArnComponents {
 		const match = BillinggroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid billinggroup ARN: ${arn}`);
@@ -1159,16 +2020,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the cacert resource.
 	 */
-	static cacert(props: {
-		/** The CACertificate component of the ARN. */
-		readonly caCertificate: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cacert(props: IotCacertArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:cacert/${props.caCertificate}`;
 	}
 
@@ -1183,12 +2035,7 @@ export class IotResources {
 	 * Parses a cacert ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCacertArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		caCertificate: string;
-	} {
+	static parseCacertArn(arn: string): IotCacertArnComponents {
 		const match = CacertArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cacert ARN: ${arn}`);
@@ -1204,16 +2051,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the cert resource.
 	 */
-	static cert(props: {
-		/** The Certificate component of the ARN. */
-		readonly certificate: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cert(props: IotCertArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:cert/${props.certificate}`;
 	}
 
@@ -1228,12 +2066,7 @@ export class IotResources {
 	 * Parses a cert ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCertArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		certificate: string;
-	} {
+	static parseCertArn(arn: string): IotCertArnComponents {
 		const match = CertArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cert ARN: ${arn}`);
@@ -1249,16 +2082,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the certificateprovider resource.
 	 */
-	static certificateprovider(props: {
-		/** The CertificateProviderName component of the ARN. */
-		readonly certificateProviderName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static certificateprovider(props: IotCertificateproviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:certificateprovider/${props.certificateProviderName}`;
 	}
 
@@ -1273,12 +2097,9 @@ export class IotResources {
 	 * Parses a certificateprovider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCertificateproviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		certificateProviderName: string;
-	} {
+	static parseCertificateproviderArn(
+		arn: string,
+	): IotCertificateproviderArnComponents {
 		const match = CertificateproviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid certificateprovider ARN: ${arn}`);
@@ -1294,16 +2115,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the client resource.
 	 */
-	static client(props: {
-		/** The ClientId component of the ARN. */
-		readonly clientId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static client(props: IotClientArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:client/${props.clientId}`;
 	}
 
@@ -1318,12 +2130,7 @@ export class IotResources {
 	 * Parses a client ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clientId: string;
-	} {
+	static parseClientArn(arn: string): IotClientArnComponents {
 		const match = ClientArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid client ARN: ${arn}`);
@@ -1339,16 +2146,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the command resource.
 	 */
-	static command(props: {
-		/** The CommandId component of the ARN. */
-		readonly commandId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static command(props: IotCommandArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:command/${props.commandId}`;
 	}
 
@@ -1363,12 +2161,7 @@ export class IotResources {
 	 * Parses a command ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCommandArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		commandId: string;
-	} {
+	static parseCommandArn(arn: string): IotCommandArnComponents {
 		const match = CommandArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid command ARN: ${arn}`);
@@ -1384,16 +2177,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the custommetric resource.
 	 */
-	static custommetric(props: {
-		/** The MetricName component of the ARN. */
-		readonly metricName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static custommetric(props: IotCustommetricArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:custommetric/${props.metricName}`;
 	}
 
@@ -1408,12 +2192,7 @@ export class IotResources {
 	 * Parses a custommetric ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustommetricArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		metricName: string;
-	} {
+	static parseCustommetricArn(arn: string): IotCustommetricArnComponents {
 		const match = CustommetricArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custommetric ARN: ${arn}`);
@@ -1429,18 +2208,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the destination resource.
 	 */
-	static destination(props: {
-		/** The DestinationType component of the ARN. */
-		readonly destinationType: string;
-		/** The Uuid component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static destination(props: IotDestinationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:ruledestination/${props.destinationType}/${props.uuid}`;
 	}
 
@@ -1455,13 +2223,7 @@ export class IotResources {
 	 * Parses a destination ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDestinationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		destinationType: string;
-		uuid: string;
-	} {
+	static parseDestinationArn(arn: string): IotDestinationArnComponents {
 		const match = DestinationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid destination ARN: ${arn}`);
@@ -1478,16 +2240,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the dimension resource.
 	 */
-	static dimension(props: {
-		/** The DimensionName component of the ARN. */
-		readonly dimensionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dimension(props: IotDimensionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:dimension/${props.dimensionName}`;
 	}
 
@@ -1502,12 +2255,7 @@ export class IotResources {
 	 * Parses a dimension ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDimensionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dimensionName: string;
-	} {
+	static parseDimensionArn(arn: string): IotDimensionArnComponents {
 		const match = DimensionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dimension ARN: ${arn}`);
@@ -1523,18 +2271,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the domainconfiguration resource.
 	 */
-	static domainconfiguration(props: {
-		/** The DomainConfigurationName component of the ARN. */
-		readonly domainConfigurationName: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domainconfiguration(props: IotDomainconfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:domainconfiguration/${props.domainConfigurationName}/${props.id}`;
 	}
 
@@ -1549,13 +2286,9 @@ export class IotResources {
 	 * Parses a domainconfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainconfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainConfigurationName: string;
-		id: string;
-	} {
+	static parseDomainconfigurationArn(
+		arn: string,
+	): IotDomainconfigurationArnComponents {
 		const match = DomainconfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domainconfiguration ARN: ${arn}`);
@@ -1572,16 +2305,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the dynamicthinggroup resource.
 	 */
-	static dynamicthinggroup(props: {
-		/** The ThingGroupName component of the ARN. */
-		readonly thingGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dynamicthinggroup(props: IotDynamicthinggroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:thinggroup/${props.thingGroupName}`;
 	}
 
@@ -1596,12 +2320,9 @@ export class IotResources {
 	 * Parses a dynamicthinggroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDynamicthinggroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		thingGroupName: string;
-	} {
+	static parseDynamicthinggroupArn(
+		arn: string,
+	): IotDynamicthinggroupArnComponents {
 		const match = DynamicthinggroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dynamicthinggroup ARN: ${arn}`);
@@ -1617,16 +2338,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the fleetmetric resource.
 	 */
-	static fleetmetric(props: {
-		/** The FleetMetricName component of the ARN. */
-		readonly fleetMetricName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fleetmetric(props: IotFleetmetricArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:fleetmetric/${props.fleetMetricName}`;
 	}
 
@@ -1641,12 +2353,7 @@ export class IotResources {
 	 * Parses a fleetmetric ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFleetmetricArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fleetMetricName: string;
-	} {
+	static parseFleetmetricArn(arn: string): IotFleetmetricArnComponents {
 		const match = FleetmetricArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fleetmetric ARN: ${arn}`);
@@ -1662,16 +2369,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the index resource.
 	 */
-	static index(props: {
-		/** The IndexName component of the ARN. */
-		readonly indexName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static index(props: IotIndexArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:index/${props.indexName}`;
 	}
 
@@ -1686,12 +2384,7 @@ export class IotResources {
 	 * Parses a index ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIndexArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		indexName: string;
-	} {
+	static parseIndexArn(arn: string): IotIndexArnComponents {
 		const match = IndexArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid index ARN: ${arn}`);
@@ -1707,16 +2400,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: IotJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobId}`;
 	}
 
@@ -1731,12 +2415,7 @@ export class IotResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseJobArn(arn: string): IotJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -1752,16 +2431,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the jobtemplate resource.
 	 */
-	static jobtemplate(props: {
-		/** The JobTemplateId component of the ARN. */
-		readonly jobTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobtemplate(props: IotJobtemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:jobtemplate/${props.jobTemplateId}`;
 	}
 
@@ -1776,12 +2446,7 @@ export class IotResources {
 	 * Parses a jobtemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobtemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobTemplateId: string;
-	} {
+	static parseJobtemplateArn(arn: string): IotJobtemplateArnComponents {
 		const match = JobtemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid jobtemplate ARN: ${arn}`);
@@ -1797,16 +2462,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the mitigationaction resource.
 	 */
-	static mitigationaction(props: {
-		/** The MitigationActionName component of the ARN. */
-		readonly mitigationActionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mitigationaction(props: IotMitigationactionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:mitigationaction/${props.mitigationActionName}`;
 	}
 
@@ -1821,12 +2477,9 @@ export class IotResources {
 	 * Parses a mitigationaction ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMitigationactionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		mitigationActionName: string;
-	} {
+	static parseMitigationactionArn(
+		arn: string,
+	): IotMitigationactionArnComponents {
 		const match = MitigationactionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mitigationaction ARN: ${arn}`);
@@ -1842,16 +2495,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the otaupdate resource.
 	 */
-	static otaupdate(props: {
-		/** The OtaUpdateId component of the ARN. */
-		readonly otaUpdateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static otaupdate(props: IotOtaupdateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:otaupdate/${props.otaUpdateId}`;
 	}
 
@@ -1866,12 +2510,7 @@ export class IotResources {
 	 * Parses a otaupdate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOtaupdateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		otaUpdateId: string;
-	} {
+	static parseOtaupdateArn(arn: string): IotOtaupdateArnComponents {
 		const match = OtaupdateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid otaupdate ARN: ${arn}`);
@@ -1887,16 +2526,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the package resource.
 	 */
-	static package(props: {
-		/** The PackageName component of the ARN. */
-		readonly packageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static package(props: IotPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:package/${props.packageName}`;
 	}
 
@@ -1911,12 +2541,7 @@ export class IotResources {
 	 * Parses a package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		packageName: string;
-	} {
+	static parsePackageArn(arn: string): IotPackageArnComponents {
 		const match = PackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid package ARN: ${arn}`);
@@ -1932,18 +2557,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the packageversion resource.
 	 */
-	static packageversion(props: {
-		/** The PackageName component of the ARN. */
-		readonly packageName: string;
-		/** The VersionName component of the ARN. */
-		readonly versionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static packageversion(props: IotPackageversionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:package/${props.packageName}/version/${props.versionName}`;
 	}
 
@@ -1958,13 +2572,7 @@ export class IotResources {
 	 * Parses a packageversion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePackageversionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		packageName: string;
-		versionName: string;
-	} {
+	static parsePackageversionArn(arn: string): IotPackageversionArnComponents {
 		const match = PackageversionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid packageversion ARN: ${arn}`);
@@ -1981,16 +2589,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the policy resource.
 	 */
-	static policy(props: {
-		/** The PolicyName component of the ARN. */
-		readonly policyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static policy(props: IotPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:policy/${props.policyName}`;
 	}
 
@@ -2005,12 +2604,7 @@ export class IotResources {
 	 * Parses a policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		policyName: string;
-	} {
+	static parsePolicyArn(arn: string): IotPolicyArnComponents {
 		const match = PolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid policy ARN: ${arn}`);
@@ -2026,16 +2620,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the provisioningtemplate resource.
 	 */
-	static provisioningtemplate(props: {
-		/** The ProvisioningTemplate component of the ARN. */
-		readonly provisioningTemplate: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static provisioningtemplate(props: IotProvisioningtemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:provisioningtemplate/${props.provisioningTemplate}`;
 	}
 
@@ -2050,12 +2635,9 @@ export class IotResources {
 	 * Parses a provisioningtemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProvisioningtemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		provisioningTemplate: string;
-	} {
+	static parseProvisioningtemplateArn(
+		arn: string,
+	): IotProvisioningtemplateArnComponents {
 		const match = ProvisioningtemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid provisioningtemplate ARN: ${arn}`);
@@ -2071,16 +2653,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the rolealias resource.
 	 */
-	static rolealias(props: {
-		/** The RoleAlias component of the ARN. */
-		readonly roleAlias: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rolealias(props: IotRolealiasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:rolealias/${props.roleAlias}`;
 	}
 
@@ -2095,12 +2668,7 @@ export class IotResources {
 	 * Parses a rolealias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRolealiasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		roleAlias: string;
-	} {
+	static parseRolealiasArn(arn: string): IotRolealiasArnComponents {
 		const match = RolealiasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rolealias ARN: ${arn}`);
@@ -2116,16 +2684,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the rule resource.
 	 */
-	static rule(props: {
-		/** The RuleName component of the ARN. */
-		readonly ruleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rule(props: IotRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:rule/${props.ruleName}`;
 	}
 
@@ -2140,12 +2699,7 @@ export class IotResources {
 	 * Parses a rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ruleName: string;
-	} {
+	static parseRuleArn(arn: string): IotRuleArnComponents {
 		const match = RuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rule ARN: ${arn}`);
@@ -2161,16 +2715,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the scheduledaudit resource.
 	 */
-	static scheduledaudit(props: {
-		/** The ScheduleName component of the ARN. */
-		readonly scheduleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static scheduledaudit(props: IotScheduledauditArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:scheduledaudit/${props.scheduleName}`;
 	}
 
@@ -2185,12 +2730,7 @@ export class IotResources {
 	 * Parses a scheduledaudit ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScheduledauditArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		scheduleName: string;
-	} {
+	static parseScheduledauditArn(arn: string): IotScheduledauditArnComponents {
 		const match = ScheduledauditArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid scheduledaudit ARN: ${arn}`);
@@ -2206,16 +2746,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the securityprofile resource.
 	 */
-	static securityprofile(props: {
-		/** The SecurityProfileName component of the ARN. */
-		readonly securityProfileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityprofile(props: IotSecurityprofileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:securityprofile/${props.securityProfileName}`;
 	}
 
@@ -2230,12 +2761,7 @@ export class IotResources {
 	 * Parses a securityprofile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityprofileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityProfileName: string;
-	} {
+	static parseSecurityprofileArn(arn: string): IotSecurityprofileArnComponents {
 		const match = SecurityprofileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid securityprofile ARN: ${arn}`);
@@ -2251,16 +2777,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the stream resource.
 	 */
-	static stream(props: {
-		/** The StreamId component of the ARN. */
-		readonly streamId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static stream(props: IotStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:stream/${props.streamId}`;
 	}
 
@@ -2275,12 +2792,7 @@ export class IotResources {
 	 * Parses a stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		streamId: string;
-	} {
+	static parseStreamArn(arn: string): IotStreamArnComponents {
 		const match = StreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid stream ARN: ${arn}`);
@@ -2296,16 +2808,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the thing resource.
 	 */
-	static thing(props: {
-		/** The ThingName component of the ARN. */
-		readonly thingName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static thing(props: IotThingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:thing/${props.thingName}`;
 	}
 
@@ -2320,12 +2823,7 @@ export class IotResources {
 	 * Parses a thing ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		thingName: string;
-	} {
+	static parseThingArn(arn: string): IotThingArnComponents {
 		const match = ThingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid thing ARN: ${arn}`);
@@ -2341,16 +2839,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the thinggroup resource.
 	 */
-	static thinggroup(props: {
-		/** The ThingGroupName component of the ARN. */
-		readonly thingGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static thinggroup(props: IotThinggroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:thinggroup/${props.thingGroupName}`;
 	}
 
@@ -2365,12 +2854,7 @@ export class IotResources {
 	 * Parses a thinggroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThinggroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		thingGroupName: string;
-	} {
+	static parseThinggroupArn(arn: string): IotThinggroupArnComponents {
 		const match = ThinggroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid thinggroup ARN: ${arn}`);
@@ -2386,16 +2870,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the thingtype resource.
 	 */
-	static thingtype(props: {
-		/** The ThingTypeName component of the ARN. */
-		readonly thingTypeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static thingtype(props: IotThingtypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:thingtype/${props.thingTypeName}`;
 	}
 
@@ -2410,12 +2885,7 @@ export class IotResources {
 	 * Parses a thingtype ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseThingtypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		thingTypeName: string;
-	} {
+	static parseThingtypeArn(arn: string): IotThingtypeArnComponents {
 		const match = ThingtypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid thingtype ARN: ${arn}`);
@@ -2431,16 +2901,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the topic resource.
 	 */
-	static topic(props: {
-		/** The TopicName component of the ARN. */
-		readonly topicName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static topic(props: IotTopicArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:topic/${props.topicName}`;
 	}
 
@@ -2455,12 +2916,7 @@ export class IotResources {
 	 * Parses a topic ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTopicArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		topicName: string;
-	} {
+	static parseTopicArn(arn: string): IotTopicArnComponents {
 		const match = TopicArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid topic ARN: ${arn}`);
@@ -2476,16 +2932,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the topicfilter resource.
 	 */
-	static topicfilter(props: {
-		/** The TopicFilter component of the ARN. */
-		readonly topicFilter: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static topicfilter(props: IotTopicfilterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:topicfilter/${props.topicFilter}`;
 	}
 
@@ -2500,12 +2947,7 @@ export class IotResources {
 	 * Parses a topicfilter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTopicfilterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		topicFilter: string;
-	} {
+	static parseTopicfilterArn(arn: string): IotTopicfilterArnComponents {
 		const match = TopicfilterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid topicfilter ARN: ${arn}`);
@@ -2521,16 +2963,7 @@ export class IotResources {
 	/**
 	 * Builds an ARN for the tunnel resource.
 	 */
-	static tunnel(props: {
-		/** The TunnelId component of the ARN. */
-		readonly tunnelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tunnel(props: IotTunnelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iot:${props.region ?? "*"}:${props.account ?? "*"}:tunnel/${props.tunnelId}`;
 	}
 
@@ -2545,12 +2978,7 @@ export class IotResources {
 	 * Parses a tunnel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTunnelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tunnelId: string;
-	} {
+	static parseTunnelArn(arn: string): IotTunnelArnComponents {
 		const match = TunnelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tunnel ARN: ${arn}`);
@@ -2569,957 +2997,910 @@ export class IotResources {
  */
 export class IotOperations {
 	/** IAM actions required for the AcceptCertificateTransfer API call. */
-	static readonly ACCEPT_CERTIFICATE_TRANSFER: string[] = [
+	static readonly AcceptCertificateTransfer: string[] = [
 		"iot:AcceptCertificateTransfer",
 	];
 	/** IAM actions required for the AddThingToBillingGroup API call. */
-	static readonly ADD_THING_TO_BILLING_GROUP: string[] = [
+	static readonly AddThingToBillingGroup: string[] = [
 		"iot:AddThingToBillingGroup",
 	];
 	/** IAM actions required for the AddThingToThingGroup API call. */
-	static readonly ADD_THING_TO_THING_GROUP: string[] = [
-		"iot:AddThingToThingGroup",
-	];
+	static readonly AddThingToThingGroup: string[] = ["iot:AddThingToThingGroup"];
 	/** IAM actions required for the AssociateSbomWithPackageVersion API call. */
-	static readonly ASSOCIATE_SBOM_WITH_PACKAGE_VERSION: string[] = [
+	static readonly AssociateSbomWithPackageVersion: string[] = [
 		"iot:AssociateSbomWithPackageVersion",
 	];
 	/** IAM actions required for the AssociateTargetsWithJob API call. */
-	static readonly ASSOCIATE_TARGETS_WITH_JOB: string[] = [
+	static readonly AssociateTargetsWithJob: string[] = [
 		"iot:AssociateTargetsWithJob",
 	];
 	/** IAM actions required for the AttachPolicy API call. */
-	static readonly ATTACH_POLICY: string[] = ["iot:AttachPolicy"];
+	static readonly AttachPolicy: string[] = ["iot:AttachPolicy"];
 	/** IAM actions required for the AttachPrincipalPolicy API call. */
-	static readonly ATTACH_PRINCIPAL_POLICY: string[] = [
+	static readonly AttachPrincipalPolicy: string[] = [
 		"iot:AttachPrincipalPolicy",
 	];
 	/** IAM actions required for the AttachSecurityProfile API call. */
-	static readonly ATTACH_SECURITY_PROFILE: string[] = [
+	static readonly AttachSecurityProfile: string[] = [
 		"iot:AttachSecurityProfile",
 	];
 	/** IAM actions required for the AttachThingPrincipal API call. */
-	static readonly ATTACH_THING_PRINCIPAL: string[] = [
-		"iot:AttachThingPrincipal",
-	];
+	static readonly AttachThingPrincipal: string[] = ["iot:AttachThingPrincipal"];
 	/** IAM actions required for the CancelAuditMitigationActionsTask API call. */
-	static readonly CANCEL_AUDIT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly CancelAuditMitigationActionsTask: string[] = [
 		"iot:CancelAuditMitigationActionsTask",
 	];
 	/** IAM actions required for the CancelAuditTask API call. */
-	static readonly CANCEL_AUDIT_TASK: string[] = ["iot:CancelAuditTask"];
+	static readonly CancelAuditTask: string[] = ["iot:CancelAuditTask"];
 	/** IAM actions required for the CancelCertificateTransfer API call. */
-	static readonly CANCEL_CERTIFICATE_TRANSFER: string[] = [
+	static readonly CancelCertificateTransfer: string[] = [
 		"iot:CancelCertificateTransfer",
 	];
 	/** IAM actions required for the CancelDetectMitigationActionsTask API call. */
-	static readonly CANCEL_DETECT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly CancelDetectMitigationActionsTask: string[] = [
 		"iot:CancelDetectMitigationActionsTask",
 	];
 	/** IAM actions required for the CancelJob API call. */
-	static readonly CANCEL_JOB: string[] = ["iot:CancelJob"];
+	static readonly CancelJob: string[] = ["iot:CancelJob"];
 	/** IAM actions required for the CancelJobExecution API call. */
-	static readonly CANCEL_JOB_EXECUTION: string[] = ["iot:CancelJobExecution"];
+	static readonly CancelJobExecution: string[] = ["iot:CancelJobExecution"];
 	/** IAM actions required for the ClearDefaultAuthorizer API call. */
-	static readonly CLEAR_DEFAULT_AUTHORIZER: string[] = [
+	static readonly ClearDefaultAuthorizer: string[] = [
 		"iot:ClearDefaultAuthorizer",
 	];
 	/** IAM actions required for the CloseTunnel API call. */
-	static readonly CLOSE_TUNNEL: string[] = ["iot:CloseTunnel"];
+	static readonly CloseTunnel: string[] = ["iot:CloseTunnel"];
 	/** IAM actions required for the ConfirmTopicRuleDestination API call. */
-	static readonly CONFIRM_TOPIC_RULE_DESTINATION: string[] = [];
+	static readonly ConfirmTopicRuleDestination: string[] = [];
 	/** IAM actions required for the CreateAuditSuppression API call. */
-	static readonly CREATE_AUDIT_SUPPRESSION: string[] = [
+	static readonly CreateAuditSuppression: string[] = [
 		"iot:CreateAuditSuppression",
 	];
 	/** IAM actions required for the CreateAuthorizer API call. */
-	static readonly CREATE_AUTHORIZER: string[] = [
+	static readonly CreateAuthorizer: string[] = [
 		"iot:CreateAuthorizer",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateBillingGroup API call. */
-	static readonly CREATE_BILLING_GROUP: string[] = [
+	static readonly CreateBillingGroup: string[] = [
 		"iot:CreateBillingGroup",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateCertificateFromCsr API call. */
-	static readonly CREATE_CERTIFICATE_FROM_CSR: string[] = [
+	static readonly CreateCertificateFromCsr: string[] = [
 		"iot:CreateCertificateFromCsr",
 	];
 	/** IAM actions required for the CreateCertificateProvider API call. */
-	static readonly CREATE_CERTIFICATE_PROVIDER: string[] = [
+	static readonly CreateCertificateProvider: string[] = [
 		"iot:CreateCertificateProvider",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateCommand API call. */
-	static readonly CREATE_COMMAND: string[] = [
+	static readonly CreateCommand: string[] = [
 		"iot:CreateCommand",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateCustomMetric API call. */
-	static readonly CREATE_CUSTOM_METRIC: string[] = [
+	static readonly CreateCustomMetric: string[] = [
 		"iot:CreateCustomMetric",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateDimension API call. */
-	static readonly CREATE_DIMENSION: string[] = [
+	static readonly CreateDimension: string[] = [
 		"iot:CreateDimension",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateDomainConfiguration API call. */
-	static readonly CREATE_DOMAIN_CONFIGURATION: string[] = [
+	static readonly CreateDomainConfiguration: string[] = [
 		"iot:CreateDomainConfiguration",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateDynamicThingGroup API call. */
-	static readonly CREATE_DYNAMIC_THING_GROUP: string[] = [
+	static readonly CreateDynamicThingGroup: string[] = [
 		"iot:CreateDynamicThingGroup",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateFleetMetric API call. */
-	static readonly CREATE_FLEET_METRIC: string[] = [
+	static readonly CreateFleetMetric: string[] = [
 		"iot:CreateFleetMetric",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateJob API call. */
-	static readonly CREATE_JOB: string[] = [
+	static readonly CreateJob: string[] = [
 		"iot:CreateJob",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateJobTemplate API call. */
-	static readonly CREATE_JOB_TEMPLATE: string[] = [
+	static readonly CreateJobTemplate: string[] = [
 		"iot:CreateJobTemplate",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateKeysAndCertificate API call. */
-	static readonly CREATE_KEYS_AND_CERTIFICATE: string[] = [
+	static readonly CreateKeysAndCertificate: string[] = [
 		"iot:CreateKeysAndCertificate",
 	];
 	/** IAM actions required for the CreateMitigationAction API call. */
-	static readonly CREATE_MITIGATION_ACTION: string[] = [
+	static readonly CreateMitigationAction: string[] = [
 		"iot:CreateMitigationAction",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateOTAUpdate API call. */
-	static readonly CREATE_OTA_UPDATE: string[] = [
+	static readonly CreateOTAUpdate: string[] = [
 		"iot:CreateOTAUpdate",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreatePackage API call. */
-	static readonly CREATE_PACKAGE: string[] = [
+	static readonly CreatePackage: string[] = [
 		"iot:CreatePackage",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreatePackageVersion API call. */
-	static readonly CREATE_PACKAGE_VERSION: string[] = [
+	static readonly CreatePackageVersion: string[] = [
 		"iot:CreatePackageVersion",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreatePolicy API call. */
-	static readonly CREATE_POLICY: string[] = [
+	static readonly CreatePolicy: string[] = [
 		"iot:CreatePolicy",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreatePolicyVersion API call. */
-	static readonly CREATE_POLICY_VERSION: string[] = ["iot:CreatePolicyVersion"];
+	static readonly CreatePolicyVersion: string[] = ["iot:CreatePolicyVersion"];
 	/** IAM actions required for the CreateProvisioningClaim API call. */
-	static readonly CREATE_PROVISIONING_CLAIM: string[] = [
+	static readonly CreateProvisioningClaim: string[] = [
 		"iot:CreateProvisioningClaim",
 	];
 	/** IAM actions required for the CreateProvisioningTemplate API call. */
-	static readonly CREATE_PROVISIONING_TEMPLATE: string[] = [
+	static readonly CreateProvisioningTemplate: string[] = [
 		"iot:CreateProvisioningTemplate",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateProvisioningTemplateVersion API call. */
-	static readonly CREATE_PROVISIONING_TEMPLATE_VERSION: string[] = [
+	static readonly CreateProvisioningTemplateVersion: string[] = [
 		"iot:CreateProvisioningTemplateVersion",
 	];
 	/** IAM actions required for the CreateRoleAlias API call. */
-	static readonly CREATE_ROLE_ALIAS: string[] = [
+	static readonly CreateRoleAlias: string[] = [
 		"iot:CreateRoleAlias",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateScheduledAudit API call. */
-	static readonly CREATE_SCHEDULED_AUDIT: string[] = [
+	static readonly CreateScheduledAudit: string[] = [
 		"iot:CreateScheduledAudit",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateSecurityProfile API call. */
-	static readonly CREATE_SECURITY_PROFILE: string[] = [
+	static readonly CreateSecurityProfile: string[] = [
 		"iot:CreateSecurityProfile",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateStream API call. */
-	static readonly CREATE_STREAM: string[] = [
+	static readonly CreateStream: string[] = [
 		"iot:CreateStream",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateThing API call. */
-	static readonly CREATE_THING: string[] = ["iot:CreateThing"];
+	static readonly CreateThing: string[] = ["iot:CreateThing"];
 	/** IAM actions required for the CreateThingGroup API call. */
-	static readonly CREATE_THING_GROUP: string[] = [
+	static readonly CreateThingGroup: string[] = [
 		"iot:CreateThingGroup",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateThingType API call. */
-	static readonly CREATE_THING_TYPE: string[] = [
+	static readonly CreateThingType: string[] = [
 		"iot:CreateThingType",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateTopicRule API call. */
-	static readonly CREATE_TOPIC_RULE: string[] = [
+	static readonly CreateTopicRule: string[] = [
 		"iot:CreateTopicRule",
 		"iam:PassRole",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the CreateTopicRuleDestination API call. */
-	static readonly CREATE_TOPIC_RULE_DESTINATION: string[] = [
+	static readonly CreateTopicRuleDestination: string[] = [
 		"iot:CreateTopicRuleDestination",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteAccountAuditConfiguration API call. */
-	static readonly DELETE_ACCOUNT_AUDIT_CONFIGURATION: string[] = [
+	static readonly DeleteAccountAuditConfiguration: string[] = [
 		"iot:DeleteAccountAuditConfiguration",
 	];
 	/** IAM actions required for the DeleteAuditSuppression API call. */
-	static readonly DELETE_AUDIT_SUPPRESSION: string[] = [
+	static readonly DeleteAuditSuppression: string[] = [
 		"iot:DeleteAuditSuppression",
 	];
 	/** IAM actions required for the DeleteAuthorizer API call. */
-	static readonly DELETE_AUTHORIZER: string[] = ["iot:DeleteAuthorizer"];
+	static readonly DeleteAuthorizer: string[] = ["iot:DeleteAuthorizer"];
 	/** IAM actions required for the DeleteBillingGroup API call. */
-	static readonly DELETE_BILLING_GROUP: string[] = ["iot:DeleteBillingGroup"];
+	static readonly DeleteBillingGroup: string[] = ["iot:DeleteBillingGroup"];
 	/** IAM actions required for the DeleteCACertificate API call. */
-	static readonly DELETE_CA_CERTIFICATE: string[] = ["iot:DeleteCACertificate"];
+	static readonly DeleteCACertificate: string[] = ["iot:DeleteCACertificate"];
 	/** IAM actions required for the DeleteCertificate API call. */
-	static readonly DELETE_CERTIFICATE: string[] = ["iot:DeleteCertificate"];
+	static readonly DeleteCertificate: string[] = ["iot:DeleteCertificate"];
 	/** IAM actions required for the DeleteCertificateProvider API call. */
-	static readonly DELETE_CERTIFICATE_PROVIDER: string[] = [
+	static readonly DeleteCertificateProvider: string[] = [
 		"iot:DeleteCertificateProvider",
 	];
 	/** IAM actions required for the DeleteCommand API call. */
-	static readonly DELETE_COMMAND: string[] = ["iot:DeleteCommand"];
+	static readonly DeleteCommand: string[] = ["iot:DeleteCommand"];
 	/** IAM actions required for the DeleteCommandExecution API call. */
-	static readonly DELETE_COMMAND_EXECUTION: string[] = [
+	static readonly DeleteCommandExecution: string[] = [
 		"iot:DeleteCommandExecution",
 	];
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = [];
+	static readonly DeleteConnection: string[] = [];
 	/** IAM actions required for the DeleteCustomMetric API call. */
-	static readonly DELETE_CUSTOM_METRIC: string[] = ["iot:DeleteCustomMetric"];
+	static readonly DeleteCustomMetric: string[] = ["iot:DeleteCustomMetric"];
 	/** IAM actions required for the DeleteDimension API call. */
-	static readonly DELETE_DIMENSION: string[] = ["iot:DeleteDimension"];
+	static readonly DeleteDimension: string[] = ["iot:DeleteDimension"];
 	/** IAM actions required for the DeleteDomainConfiguration API call. */
-	static readonly DELETE_DOMAIN_CONFIGURATION: string[] = [
+	static readonly DeleteDomainConfiguration: string[] = [
 		"iot:DeleteDomainConfiguration",
 	];
 	/** IAM actions required for the DeleteDynamicThingGroup API call. */
-	static readonly DELETE_DYNAMIC_THING_GROUP: string[] = [
+	static readonly DeleteDynamicThingGroup: string[] = [
 		"iot:DeleteDynamicThingGroup",
 	];
 	/** IAM actions required for the DeleteFleetMetric API call. */
-	static readonly DELETE_FLEET_METRIC: string[] = ["iot:DeleteFleetMetric"];
+	static readonly DeleteFleetMetric: string[] = ["iot:DeleteFleetMetric"];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["iot:DeleteJob"];
+	static readonly DeleteJob: string[] = ["iot:DeleteJob"];
 	/** IAM actions required for the DeleteJobExecution API call. */
-	static readonly DELETE_JOB_EXECUTION: string[] = ["iot:DeleteJobExecution"];
+	static readonly DeleteJobExecution: string[] = ["iot:DeleteJobExecution"];
 	/** IAM actions required for the DeleteJobTemplate API call. */
-	static readonly DELETE_JOB_TEMPLATE: string[] = ["iot:DeleteJobTemplate"];
+	static readonly DeleteJobTemplate: string[] = ["iot:DeleteJobTemplate"];
 	/** IAM actions required for the DeleteMitigationAction API call. */
-	static readonly DELETE_MITIGATION_ACTION: string[] = [
+	static readonly DeleteMitigationAction: string[] = [
 		"iot:DeleteMitigationAction",
 	];
 	/** IAM actions required for the DeleteOTAUpdate API call. */
-	static readonly DELETE_OTA_UPDATE: string[] = ["iot:DeleteOTAUpdate"];
+	static readonly DeleteOTAUpdate: string[] = ["iot:DeleteOTAUpdate"];
 	/** IAM actions required for the DeletePackage API call. */
-	static readonly DELETE_PACKAGE: string[] = ["iot:DeletePackage"];
+	static readonly DeletePackage: string[] = ["iot:DeletePackage"];
 	/** IAM actions required for the DeletePackageVersion API call. */
-	static readonly DELETE_PACKAGE_VERSION: string[] = [
-		"iot:DeletePackageVersion",
-	];
+	static readonly DeletePackageVersion: string[] = ["iot:DeletePackageVersion"];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = ["iot:DeletePolicy"];
+	static readonly DeletePolicy: string[] = ["iot:DeletePolicy"];
 	/** IAM actions required for the DeletePolicyVersion API call. */
-	static readonly DELETE_POLICY_VERSION: string[] = ["iot:DeletePolicyVersion"];
+	static readonly DeletePolicyVersion: string[] = ["iot:DeletePolicyVersion"];
 	/** IAM actions required for the DeleteProvisioningTemplate API call. */
-	static readonly DELETE_PROVISIONING_TEMPLATE: string[] = [
+	static readonly DeleteProvisioningTemplate: string[] = [
 		"iot:DeleteProvisioningTemplate",
 	];
 	/** IAM actions required for the DeleteProvisioningTemplateVersion API call. */
-	static readonly DELETE_PROVISIONING_TEMPLATE_VERSION: string[] = [
+	static readonly DeleteProvisioningTemplateVersion: string[] = [
 		"iot:DeleteProvisioningTemplateVersion",
 	];
 	/** IAM actions required for the DeleteRegistrationCode API call. */
-	static readonly DELETE_REGISTRATION_CODE: string[] = [
+	static readonly DeleteRegistrationCode: string[] = [
 		"iot:DeleteRegistrationCode",
 	];
 	/** IAM actions required for the DeleteRoleAlias API call. */
-	static readonly DELETE_ROLE_ALIAS: string[] = ["iot:DeleteRoleAlias"];
+	static readonly DeleteRoleAlias: string[] = ["iot:DeleteRoleAlias"];
 	/** IAM actions required for the DeleteScheduledAudit API call. */
-	static readonly DELETE_SCHEDULED_AUDIT: string[] = [
-		"iot:DeleteScheduledAudit",
-	];
+	static readonly DeleteScheduledAudit: string[] = ["iot:DeleteScheduledAudit"];
 	/** IAM actions required for the DeleteSecurityProfile API call. */
-	static readonly DELETE_SECURITY_PROFILE: string[] = [
+	static readonly DeleteSecurityProfile: string[] = [
 		"iot:DeleteSecurityProfile",
 	];
 	/** IAM actions required for the DeleteStream API call. */
-	static readonly DELETE_STREAM: string[] = ["iot:DeleteStream"];
+	static readonly DeleteStream: string[] = ["iot:DeleteStream"];
 	/** IAM actions required for the DeleteThing API call. */
-	static readonly DELETE_THING: string[] = ["iot:DeleteThing"];
+	static readonly DeleteThing: string[] = ["iot:DeleteThing"];
 	/** IAM actions required for the DeleteThingGroup API call. */
-	static readonly DELETE_THING_GROUP: string[] = ["iot:DeleteThingGroup"];
+	static readonly DeleteThingGroup: string[] = ["iot:DeleteThingGroup"];
 	/** IAM actions required for the DeleteThingShadow API call. */
-	static readonly DELETE_THING_SHADOW: string[] = [];
+	static readonly DeleteThingShadow: string[] = [];
 	/** IAM actions required for the DeleteThingType API call. */
-	static readonly DELETE_THING_TYPE: string[] = ["iot:DeleteThingType"];
+	static readonly DeleteThingType: string[] = ["iot:DeleteThingType"];
 	/** IAM actions required for the DeleteTopicRule API call. */
-	static readonly DELETE_TOPIC_RULE: string[] = ["iot:DeleteTopicRule"];
+	static readonly DeleteTopicRule: string[] = ["iot:DeleteTopicRule"];
 	/** IAM actions required for the DeleteTopicRuleDestination API call. */
-	static readonly DELETE_TOPIC_RULE_DESTINATION: string[] = [
+	static readonly DeleteTopicRuleDestination: string[] = [
 		"iot:DeleteTopicRuleDestination",
 	];
 	/** IAM actions required for the DeleteV2LoggingLevel API call. */
-	static readonly DELETE_V2_LOGGING_LEVEL: string[] = [
-		"iot:DeleteV2LoggingLevel",
-	];
+	static readonly DeleteV2LoggingLevel: string[] = ["iot:DeleteV2LoggingLevel"];
 	/** IAM actions required for the DeprecateThingType API call. */
-	static readonly DEPRECATE_THING_TYPE: string[] = ["iot:DeprecateThingType"];
+	static readonly DeprecateThingType: string[] = ["iot:DeprecateThingType"];
 	/** IAM actions required for the DescribeAccountAuditConfiguration API call. */
-	static readonly DESCRIBE_ACCOUNT_AUDIT_CONFIGURATION: string[] = [
+	static readonly DescribeAccountAuditConfiguration: string[] = [
 		"iot:DescribeAccountAuditConfiguration",
 	];
 	/** IAM actions required for the DescribeAuditFinding API call. */
-	static readonly DESCRIBE_AUDIT_FINDING: string[] = [
-		"iot:DescribeAuditFinding",
-	];
+	static readonly DescribeAuditFinding: string[] = ["iot:DescribeAuditFinding"];
 	/** IAM actions required for the DescribeAuditMitigationActionsTask API call. */
-	static readonly DESCRIBE_AUDIT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly DescribeAuditMitigationActionsTask: string[] = [
 		"iot:DescribeAuditMitigationActionsTask",
 	];
 	/** IAM actions required for the DescribeAuditSuppression API call. */
-	static readonly DESCRIBE_AUDIT_SUPPRESSION: string[] = [
+	static readonly DescribeAuditSuppression: string[] = [
 		"iot:DescribeAuditSuppression",
 	];
 	/** IAM actions required for the DescribeAuditTask API call. */
-	static readonly DESCRIBE_AUDIT_TASK: string[] = ["iot:DescribeAuditTask"];
+	static readonly DescribeAuditTask: string[] = ["iot:DescribeAuditTask"];
 	/** IAM actions required for the DescribeAuthorizer API call. */
-	static readonly DESCRIBE_AUTHORIZER: string[] = ["iot:DescribeAuthorizer"];
+	static readonly DescribeAuthorizer: string[] = ["iot:DescribeAuthorizer"];
 	/** IAM actions required for the DescribeBillingGroup API call. */
-	static readonly DESCRIBE_BILLING_GROUP: string[] = [
-		"iot:DescribeBillingGroup",
-	];
+	static readonly DescribeBillingGroup: string[] = ["iot:DescribeBillingGroup"];
 	/** IAM actions required for the DescribeCACertificate API call. */
-	static readonly DESCRIBE_CA_CERTIFICATE: string[] = [
+	static readonly DescribeCACertificate: string[] = [
 		"iot:DescribeCACertificate",
 	];
 	/** IAM actions required for the DescribeCertificate API call. */
-	static readonly DESCRIBE_CERTIFICATE: string[] = ["iot:DescribeCertificate"];
+	static readonly DescribeCertificate: string[] = ["iot:DescribeCertificate"];
 	/** IAM actions required for the DescribeCertificateProvider API call. */
-	static readonly DESCRIBE_CERTIFICATE_PROVIDER: string[] = [
+	static readonly DescribeCertificateProvider: string[] = [
 		"iot:DescribeCertificateProvider",
 	];
 	/** IAM actions required for the DescribeCustomMetric API call. */
-	static readonly DESCRIBE_CUSTOM_METRIC: string[] = [
-		"iot:DescribeCustomMetric",
-	];
+	static readonly DescribeCustomMetric: string[] = ["iot:DescribeCustomMetric"];
 	/** IAM actions required for the DescribeDefaultAuthorizer API call. */
-	static readonly DESCRIBE_DEFAULT_AUTHORIZER: string[] = [
+	static readonly DescribeDefaultAuthorizer: string[] = [
 		"iot:DescribeDefaultAuthorizer",
 	];
 	/** IAM actions required for the DescribeDetectMitigationActionsTask API call. */
-	static readonly DESCRIBE_DETECT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly DescribeDetectMitigationActionsTask: string[] = [
 		"iot:DescribeDetectMitigationActionsTask",
 	];
 	/** IAM actions required for the DescribeDimension API call. */
-	static readonly DESCRIBE_DIMENSION: string[] = ["iot:DescribeDimension"];
+	static readonly DescribeDimension: string[] = ["iot:DescribeDimension"];
 	/** IAM actions required for the DescribeDomainConfiguration API call. */
-	static readonly DESCRIBE_DOMAIN_CONFIGURATION: string[] = [
+	static readonly DescribeDomainConfiguration: string[] = [
 		"iot:DescribeDomainConfiguration",
 	];
 	/** IAM actions required for the DescribeEncryptionConfiguration API call. */
-	static readonly DESCRIBE_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly DescribeEncryptionConfiguration: string[] = [
 		"iot:DescribeEncryptionConfiguration",
 	];
 	/** IAM actions required for the DescribeEndpoint API call. */
-	static readonly DESCRIBE_ENDPOINT: string[] = ["iot:DescribeEndpoint"];
+	static readonly DescribeEndpoint: string[] = ["iot:DescribeEndpoint"];
 	/** IAM actions required for the DescribeEventConfigurations API call. */
-	static readonly DESCRIBE_EVENT_CONFIGURATIONS: string[] = [
+	static readonly DescribeEventConfigurations: string[] = [
 		"iot:DescribeEventConfigurations",
 	];
 	/** IAM actions required for the DescribeFleetMetric API call. */
-	static readonly DESCRIBE_FLEET_METRIC: string[] = ["iot:DescribeFleetMetric"];
+	static readonly DescribeFleetMetric: string[] = ["iot:DescribeFleetMetric"];
 	/** IAM actions required for the DescribeIndex API call. */
-	static readonly DESCRIBE_INDEX: string[] = ["iot:DescribeIndex"];
+	static readonly DescribeIndex: string[] = ["iot:DescribeIndex"];
 	/** IAM actions required for the DescribeJob API call. */
-	static readonly DESCRIBE_JOB: string[] = ["iot:DescribeJob"];
+	static readonly DescribeJob: string[] = ["iot:DescribeJob"];
 	/** IAM actions required for the DescribeJobExecution API call. */
-	static readonly DESCRIBE_JOB_EXECUTION: string[] = [
-		"iot:DescribeJobExecution",
-	];
+	static readonly DescribeJobExecution: string[] = ["iot:DescribeJobExecution"];
 	/** IAM actions required for the DescribeJobTemplate API call. */
-	static readonly DESCRIBE_JOB_TEMPLATE: string[] = ["iot:DescribeJobTemplate"];
+	static readonly DescribeJobTemplate: string[] = ["iot:DescribeJobTemplate"];
 	/** IAM actions required for the DescribeManagedJobTemplate API call. */
-	static readonly DESCRIBE_MANAGED_JOB_TEMPLATE: string[] = [
+	static readonly DescribeManagedJobTemplate: string[] = [
 		"iot:DescribeManagedJobTemplate",
 	];
 	/** IAM actions required for the DescribeMitigationAction API call. */
-	static readonly DESCRIBE_MITIGATION_ACTION: string[] = [
+	static readonly DescribeMitigationAction: string[] = [
 		"iot:DescribeMitigationAction",
 	];
 	/** IAM actions required for the DescribeProvisioningTemplate API call. */
-	static readonly DESCRIBE_PROVISIONING_TEMPLATE: string[] = [
+	static readonly DescribeProvisioningTemplate: string[] = [
 		"iot:DescribeProvisioningTemplate",
 	];
 	/** IAM actions required for the DescribeProvisioningTemplateVersion API call. */
-	static readonly DESCRIBE_PROVISIONING_TEMPLATE_VERSION: string[] = [
+	static readonly DescribeProvisioningTemplateVersion: string[] = [
 		"iot:DescribeProvisioningTemplateVersion",
 	];
 	/** IAM actions required for the DescribeRoleAlias API call. */
-	static readonly DESCRIBE_ROLE_ALIAS: string[] = ["iot:DescribeRoleAlias"];
+	static readonly DescribeRoleAlias: string[] = ["iot:DescribeRoleAlias"];
 	/** IAM actions required for the DescribeScheduledAudit API call. */
-	static readonly DESCRIBE_SCHEDULED_AUDIT: string[] = [
+	static readonly DescribeScheduledAudit: string[] = [
 		"iot:DescribeScheduledAudit",
 	];
 	/** IAM actions required for the DescribeSecurityProfile API call. */
-	static readonly DESCRIBE_SECURITY_PROFILE: string[] = [
+	static readonly DescribeSecurityProfile: string[] = [
 		"iot:DescribeSecurityProfile",
 	];
 	/** IAM actions required for the DescribeStream API call. */
-	static readonly DESCRIBE_STREAM: string[] = ["iot:DescribeStream"];
+	static readonly DescribeStream: string[] = ["iot:DescribeStream"];
 	/** IAM actions required for the DescribeThing API call. */
-	static readonly DESCRIBE_THING: string[] = ["iot:DescribeThing"];
+	static readonly DescribeThing: string[] = ["iot:DescribeThing"];
 	/** IAM actions required for the DescribeThingGroup API call. */
-	static readonly DESCRIBE_THING_GROUP: string[] = ["iot:DescribeThingGroup"];
+	static readonly DescribeThingGroup: string[] = ["iot:DescribeThingGroup"];
 	/** IAM actions required for the DescribeThingRegistrationTask API call. */
-	static readonly DESCRIBE_THING_REGISTRATION_TASK: string[] = [
+	static readonly DescribeThingRegistrationTask: string[] = [
 		"iot:DescribeThingRegistrationTask",
 	];
 	/** IAM actions required for the DescribeThingType API call. */
-	static readonly DESCRIBE_THING_TYPE: string[] = ["iot:DescribeThingType"];
+	static readonly DescribeThingType: string[] = ["iot:DescribeThingType"];
 	/** IAM actions required for the DescribeTunnel API call. */
-	static readonly DESCRIBE_TUNNEL: string[] = ["iot:DescribeTunnel"];
+	static readonly DescribeTunnel: string[] = ["iot:DescribeTunnel"];
 	/** IAM actions required for the DetachPolicy API call. */
-	static readonly DETACH_POLICY: string[] = ["iot:DetachPolicy"];
+	static readonly DetachPolicy: string[] = ["iot:DetachPolicy"];
 	/** IAM actions required for the DetachPrincipalPolicy API call. */
-	static readonly DETACH_PRINCIPAL_POLICY: string[] = [
+	static readonly DetachPrincipalPolicy: string[] = [
 		"iot:DetachPrincipalPolicy",
 	];
 	/** IAM actions required for the DetachSecurityProfile API call. */
-	static readonly DETACH_SECURITY_PROFILE: string[] = [
+	static readonly DetachSecurityProfile: string[] = [
 		"iot:DetachSecurityProfile",
 	];
 	/** IAM actions required for the DetachThingPrincipal API call. */
-	static readonly DETACH_THING_PRINCIPAL: string[] = [
-		"iot:DetachThingPrincipal",
-	];
+	static readonly DetachThingPrincipal: string[] = ["iot:DetachThingPrincipal"];
 	/** IAM actions required for the DisableTopicRule API call. */
-	static readonly DISABLE_TOPIC_RULE: string[] = ["iot:DisableTopicRule"];
+	static readonly DisableTopicRule: string[] = ["iot:DisableTopicRule"];
 	/** IAM actions required for the DisassociateSbomFromPackageVersion API call. */
-	static readonly DISASSOCIATE_SBOM_FROM_PACKAGE_VERSION: string[] = [
+	static readonly DisassociateSbomFromPackageVersion: string[] = [
 		"iot:DisassociateSbomFromPackageVersion",
 	];
 	/** IAM actions required for the EnableTopicRule API call. */
-	static readonly ENABLE_TOPIC_RULE: string[] = ["iot:EnableTopicRule"];
+	static readonly EnableTopicRule: string[] = ["iot:EnableTopicRule"];
 	/** IAM actions required for the GetBehaviorModelTrainingSummaries API call. */
-	static readonly GET_BEHAVIOR_MODEL_TRAINING_SUMMARIES: string[] = [
+	static readonly opGetBehaviorModelTrainingSummaries: string[] = [
 		"iot:GetBehaviorModelTrainingSummaries",
 	];
 	/** IAM actions required for the GetBucketsAggregation API call. */
-	static readonly GET_BUCKETS_AGGREGATION: string[] = [
+	static readonly opGetBucketsAggregation: string[] = [
 		"iot:GetBucketsAggregation",
 	];
 	/** IAM actions required for the GetCardinality API call. */
-	static readonly GET_CARDINALITY: string[] = ["iot:GetCardinality"];
+	static readonly opGetCardinality: string[] = ["iot:GetCardinality"];
 	/** IAM actions required for the GetCommand API call. */
-	static readonly GET_COMMAND: string[] = ["iot:GetCommand"];
+	static readonly opGetCommand: string[] = ["iot:GetCommand"];
 	/** IAM actions required for the GetCommandExecution API call. */
-	static readonly GET_COMMAND_EXECUTION: string[] = ["iot:GetCommandExecution"];
+	static readonly opGetCommandExecution: string[] = ["iot:GetCommandExecution"];
 	/** IAM actions required for the GetConnection API call. */
-	static readonly GET_CONNECTION: string[] = [];
+	static readonly opGetConnection: string[] = [];
 	/** IAM actions required for the GetEffectivePolicies API call. */
-	static readonly GET_EFFECTIVE_POLICIES: string[] = [
+	static readonly opGetEffectivePolicies: string[] = [
 		"iot:GetEffectivePolicies",
 	];
 	/** IAM actions required for the GetIndexingConfiguration API call. */
-	static readonly GET_INDEXING_CONFIGURATION: string[] = [
+	static readonly opGetIndexingConfiguration: string[] = [
 		"iot:GetIndexingConfiguration",
 	];
 	/** IAM actions required for the GetJobDocument API call. */
-	static readonly GET_JOB_DOCUMENT: string[] = ["iot:GetJobDocument"];
+	static readonly opGetJobDocument: string[] = ["iot:GetJobDocument"];
 	/** IAM actions required for the GetLoggingOptions API call. */
-	static readonly GET_LOGGING_OPTIONS: string[] = ["iot:GetLoggingOptions"];
+	static readonly opGetLoggingOptions: string[] = ["iot:GetLoggingOptions"];
 	/** IAM actions required for the GetOTAUpdate API call. */
-	static readonly GET_OTA_UPDATE: string[] = ["iot:GetOTAUpdate"];
+	static readonly opGetOTAUpdate: string[] = ["iot:GetOTAUpdate"];
 	/** IAM actions required for the GetPackage API call. */
-	static readonly GET_PACKAGE: string[] = ["iot:GetPackage"];
+	static readonly opGetPackage: string[] = ["iot:GetPackage"];
 	/** IAM actions required for the GetPackageConfiguration API call. */
-	static readonly GET_PACKAGE_CONFIGURATION: string[] = [
+	static readonly opGetPackageConfiguration: string[] = [
 		"iot:GetPackageConfiguration",
 	];
 	/** IAM actions required for the GetPackageVersion API call. */
-	static readonly GET_PACKAGE_VERSION: string[] = ["iot:GetPackageVersion"];
+	static readonly opGetPackageVersion: string[] = ["iot:GetPackageVersion"];
 	/** IAM actions required for the GetPercentiles API call. */
-	static readonly GET_PERCENTILES: string[] = ["iot:GetPercentiles"];
+	static readonly opGetPercentiles: string[] = ["iot:GetPercentiles"];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = ["iot:GetPolicy"];
+	static readonly opGetPolicy: string[] = ["iot:GetPolicy"];
 	/** IAM actions required for the GetPolicyVersion API call. */
-	static readonly GET_POLICY_VERSION: string[] = ["iot:GetPolicyVersion"];
+	static readonly opGetPolicyVersion: string[] = ["iot:GetPolicyVersion"];
 	/** IAM actions required for the GetRegistrationCode API call. */
-	static readonly GET_REGISTRATION_CODE: string[] = ["iot:GetRegistrationCode"];
+	static readonly opGetRegistrationCode: string[] = ["iot:GetRegistrationCode"];
 	/** IAM actions required for the GetRetainedMessage API call. */
-	static readonly GET_RETAINED_MESSAGE: string[] = [];
+	static readonly opGetRetainedMessage: string[] = [];
 	/** IAM actions required for the GetStatistics API call. */
-	static readonly GET_STATISTICS: string[] = ["iot:GetStatistics"];
+	static readonly opGetStatistics: string[] = ["iot:GetStatistics"];
 	/** IAM actions required for the GetThingConnectivityData API call. */
-	static readonly GET_THING_CONNECTIVITY_DATA: string[] = [
+	static readonly opGetThingConnectivityData: string[] = [
 		"iot:GetThingConnectivityData",
 	];
 	/** IAM actions required for the GetThingShadow API call. */
-	static readonly GET_THING_SHADOW: string[] = [];
+	static readonly opGetThingShadow: string[] = [];
 	/** IAM actions required for the GetTopicRule API call. */
-	static readonly GET_TOPIC_RULE: string[] = ["iot:GetTopicRule"];
+	static readonly opGetTopicRule: string[] = ["iot:GetTopicRule"];
 	/** IAM actions required for the GetTopicRuleDestination API call. */
-	static readonly GET_TOPIC_RULE_DESTINATION: string[] = [
+	static readonly opGetTopicRuleDestination: string[] = [
 		"iot:GetTopicRuleDestination",
 	];
 	/** IAM actions required for the GetV2LoggingOptions API call. */
-	static readonly GET_V2_LOGGING_OPTIONS: string[] = [
-		"iot:GetV2LoggingOptions",
-	];
+	static readonly opGetV2LoggingOptions: string[] = ["iot:GetV2LoggingOptions"];
 	/** IAM actions required for the ListActiveViolations API call. */
-	static readonly LIST_ACTIVE_VIOLATIONS: string[] = [
-		"iot:ListActiveViolations",
-	];
+	static readonly ListActiveViolations: string[] = ["iot:ListActiveViolations"];
 	/** IAM actions required for the ListAttachedPolicies API call. */
-	static readonly LIST_ATTACHED_POLICIES: string[] = [
-		"iot:ListAttachedPolicies",
-	];
+	static readonly ListAttachedPolicies: string[] = ["iot:ListAttachedPolicies"];
 	/** IAM actions required for the ListAuditFindings API call. */
-	static readonly LIST_AUDIT_FINDINGS: string[] = ["iot:ListAuditFindings"];
+	static readonly ListAuditFindings: string[] = ["iot:ListAuditFindings"];
 	/** IAM actions required for the ListAuditMitigationActionsExecutions API call. */
-	static readonly LIST_AUDIT_MITIGATION_ACTIONS_EXECUTIONS: string[] = [
+	static readonly ListAuditMitigationActionsExecutions: string[] = [
 		"iot:ListAuditMitigationActionsExecutions",
 	];
 	/** IAM actions required for the ListAuditMitigationActionsTasks API call. */
-	static readonly LIST_AUDIT_MITIGATION_ACTIONS_TASKS: string[] = [
+	static readonly ListAuditMitigationActionsTasks: string[] = [
 		"iot:ListAuditMitigationActionsTasks",
 	];
 	/** IAM actions required for the ListAuditSuppressions API call. */
-	static readonly LIST_AUDIT_SUPPRESSIONS: string[] = [
+	static readonly ListAuditSuppressions: string[] = [
 		"iot:ListAuditSuppressions",
 	];
 	/** IAM actions required for the ListAuditTasks API call. */
-	static readonly LIST_AUDIT_TASKS: string[] = ["iot:ListAuditTasks"];
+	static readonly ListAuditTasks: string[] = ["iot:ListAuditTasks"];
 	/** IAM actions required for the ListAuthorizers API call. */
-	static readonly LIST_AUTHORIZERS: string[] = ["iot:ListAuthorizers"];
+	static readonly ListAuthorizers: string[] = ["iot:ListAuthorizers"];
 	/** IAM actions required for the ListBillingGroups API call. */
-	static readonly LIST_BILLING_GROUPS: string[] = ["iot:ListBillingGroups"];
+	static readonly ListBillingGroups: string[] = ["iot:ListBillingGroups"];
 	/** IAM actions required for the ListCACertificates API call. */
-	static readonly LIST_CA_CERTIFICATES: string[] = ["iot:ListCACertificates"];
+	static readonly ListCACertificates: string[] = ["iot:ListCACertificates"];
 	/** IAM actions required for the ListCertificateProviders API call. */
-	static readonly LIST_CERTIFICATE_PROVIDERS: string[] = [
+	static readonly ListCertificateProviders: string[] = [
 		"iot:ListCertificateProviders",
 	];
 	/** IAM actions required for the ListCertificates API call. */
-	static readonly LIST_CERTIFICATES: string[] = ["iot:ListCertificates"];
+	static readonly ListCertificates: string[] = ["iot:ListCertificates"];
 	/** IAM actions required for the ListCertificatesByCA API call. */
-	static readonly LIST_CERTIFICATES_BY_CA: string[] = [
-		"iot:ListCertificatesByCA",
-	];
+	static readonly ListCertificatesByCA: string[] = ["iot:ListCertificatesByCA"];
 	/** IAM actions required for the ListCommandExecutions API call. */
-	static readonly LIST_COMMAND_EXECUTIONS: string[] = [
+	static readonly ListCommandExecutions: string[] = [
 		"iot:ListCommandExecutions",
 	];
 	/** IAM actions required for the ListCommands API call. */
-	static readonly LIST_COMMANDS: string[] = ["iot:ListCommands"];
+	static readonly ListCommands: string[] = ["iot:ListCommands"];
 	/** IAM actions required for the ListCustomMetrics API call. */
-	static readonly LIST_CUSTOM_METRICS: string[] = ["iot:ListCustomMetrics"];
+	static readonly ListCustomMetrics: string[] = ["iot:ListCustomMetrics"];
 	/** IAM actions required for the ListDetectMitigationActionsExecutions API call. */
-	static readonly LIST_DETECT_MITIGATION_ACTIONS_EXECUTIONS: string[] = [
+	static readonly ListDetectMitigationActionsExecutions: string[] = [
 		"iot:ListDetectMitigationActionsExecutions",
 	];
 	/** IAM actions required for the ListDetectMitigationActionsTasks API call. */
-	static readonly LIST_DETECT_MITIGATION_ACTIONS_TASKS: string[] = [
+	static readonly ListDetectMitigationActionsTasks: string[] = [
 		"iot:ListDetectMitigationActionsTasks",
 	];
 	/** IAM actions required for the ListDimensions API call. */
-	static readonly LIST_DIMENSIONS: string[] = ["iot:ListDimensions"];
+	static readonly ListDimensions: string[] = ["iot:ListDimensions"];
 	/** IAM actions required for the ListDomainConfigurations API call. */
-	static readonly LIST_DOMAIN_CONFIGURATIONS: string[] = [
+	static readonly ListDomainConfigurations: string[] = [
 		"iot:ListDomainConfigurations",
 	];
 	/** IAM actions required for the ListFleetMetrics API call. */
-	static readonly LIST_FLEET_METRICS: string[] = ["iot:ListFleetMetrics"];
+	static readonly ListFleetMetrics: string[] = ["iot:ListFleetMetrics"];
 	/** IAM actions required for the ListIndices API call. */
-	static readonly LIST_INDICES: string[] = ["iot:ListIndices"];
+	static readonly ListIndices: string[] = ["iot:ListIndices"];
 	/** IAM actions required for the ListJobExecutionsForJob API call. */
-	static readonly LIST_JOB_EXECUTIONS_FOR_JOB: string[] = [
+	static readonly ListJobExecutionsForJob: string[] = [
 		"iot:ListJobExecutionsForJob",
 	];
 	/** IAM actions required for the ListJobExecutionsForThing API call. */
-	static readonly LIST_JOB_EXECUTIONS_FOR_THING: string[] = [
+	static readonly ListJobExecutionsForThing: string[] = [
 		"iot:ListJobExecutionsForThing",
 	];
 	/** IAM actions required for the ListJobTemplates API call. */
-	static readonly LIST_JOB_TEMPLATES: string[] = ["iot:ListJobTemplates"];
+	static readonly ListJobTemplates: string[] = ["iot:ListJobTemplates"];
 	/** IAM actions required for the ListJobs API call. */
-	static readonly LIST_JOBS: string[] = ["iot:ListJobs"];
+	static readonly ListJobs: string[] = ["iot:ListJobs"];
 	/** IAM actions required for the ListManagedJobTemplates API call. */
-	static readonly LIST_MANAGED_JOB_TEMPLATES: string[] = [
+	static readonly ListManagedJobTemplates: string[] = [
 		"iot:ListManagedJobTemplates",
 	];
 	/** IAM actions required for the ListMetricValues API call. */
-	static readonly LIST_METRIC_VALUES: string[] = ["iot:ListMetricValues"];
+	static readonly ListMetricValues: string[] = ["iot:ListMetricValues"];
 	/** IAM actions required for the ListMitigationActions API call. */
-	static readonly LIST_MITIGATION_ACTIONS: string[] = [
+	static readonly ListMitigationActions: string[] = [
 		"iot:ListMitigationActions",
 	];
 	/** IAM actions required for the ListNamedShadowsForThing API call. */
-	static readonly LIST_NAMED_SHADOWS_FOR_THING: string[] = [];
+	static readonly ListNamedShadowsForThing: string[] = [];
 	/** IAM actions required for the ListOTAUpdates API call. */
-	static readonly LIST_OTA_UPDATES: string[] = ["iot:ListOTAUpdates"];
+	static readonly ListOTAUpdates: string[] = ["iot:ListOTAUpdates"];
 	/** IAM actions required for the ListOutgoingCertificates API call. */
-	static readonly LIST_OUTGOING_CERTIFICATES: string[] = [
+	static readonly ListOutgoingCertificates: string[] = [
 		"iot:ListOutgoingCertificates",
 	];
 	/** IAM actions required for the ListPackageVersions API call. */
-	static readonly LIST_PACKAGE_VERSIONS: string[] = ["iot:ListPackageVersions"];
+	static readonly ListPackageVersions: string[] = ["iot:ListPackageVersions"];
 	/** IAM actions required for the ListPackages API call. */
-	static readonly LIST_PACKAGES: string[] = ["iot:ListPackages"];
+	static readonly ListPackages: string[] = ["iot:ListPackages"];
 	/** IAM actions required for the ListPolicies API call. */
-	static readonly LIST_POLICIES: string[] = ["iot:ListPolicies"];
+	static readonly ListPolicies: string[] = ["iot:ListPolicies"];
 	/** IAM actions required for the ListPolicyPrincipals API call. */
-	static readonly LIST_POLICY_PRINCIPALS: string[] = [
-		"iot:ListPolicyPrincipals",
-	];
+	static readonly ListPolicyPrincipals: string[] = ["iot:ListPolicyPrincipals"];
 	/** IAM actions required for the ListPolicyVersions API call. */
-	static readonly LIST_POLICY_VERSIONS: string[] = ["iot:ListPolicyVersions"];
+	static readonly ListPolicyVersions: string[] = ["iot:ListPolicyVersions"];
 	/** IAM actions required for the ListPrincipalPolicies API call. */
-	static readonly LIST_PRINCIPAL_POLICIES: string[] = [
+	static readonly ListPrincipalPolicies: string[] = [
 		"iot:ListPrincipalPolicies",
 	];
 	/** IAM actions required for the ListPrincipalThings API call. */
-	static readonly LIST_PRINCIPAL_THINGS: string[] = ["iot:ListPrincipalThings"];
+	static readonly ListPrincipalThings: string[] = ["iot:ListPrincipalThings"];
 	/** IAM actions required for the ListPrincipalThingsV2 API call. */
-	static readonly LIST_PRINCIPAL_THINGS_V2: string[] = [
+	static readonly ListPrincipalThingsV2: string[] = [
 		"iot:ListPrincipalThingsV2",
 	];
 	/** IAM actions required for the ListProvisioningTemplateVersions API call. */
-	static readonly LIST_PROVISIONING_TEMPLATE_VERSIONS: string[] = [
+	static readonly ListProvisioningTemplateVersions: string[] = [
 		"iot:ListProvisioningTemplateVersions",
 	];
 	/** IAM actions required for the ListProvisioningTemplates API call. */
-	static readonly LIST_PROVISIONING_TEMPLATES: string[] = [
+	static readonly ListProvisioningTemplates: string[] = [
 		"iot:ListProvisioningTemplates",
 	];
 	/** IAM actions required for the ListRelatedResourcesForAuditFinding API call. */
-	static readonly LIST_RELATED_RESOURCES_FOR_AUDIT_FINDING: string[] = [
+	static readonly ListRelatedResourcesForAuditFinding: string[] = [
 		"iot:ListRelatedResourcesForAuditFinding",
 	];
 	/** IAM actions required for the ListRetainedMessages API call. */
-	static readonly LIST_RETAINED_MESSAGES: string[] = [];
+	static readonly ListRetainedMessages: string[] = [];
 	/** IAM actions required for the ListRoleAliases API call. */
-	static readonly LIST_ROLE_ALIASES: string[] = ["iot:ListRoleAliases"];
+	static readonly ListRoleAliases: string[] = ["iot:ListRoleAliases"];
 	/** IAM actions required for the ListSbomValidationResults API call. */
-	static readonly LIST_SBOM_VALIDATION_RESULTS: string[] = [
+	static readonly ListSbomValidationResults: string[] = [
 		"iot:ListSbomValidationResults",
 	];
 	/** IAM actions required for the ListScheduledAudits API call. */
-	static readonly LIST_SCHEDULED_AUDITS: string[] = ["iot:ListScheduledAudits"];
+	static readonly ListScheduledAudits: string[] = ["iot:ListScheduledAudits"];
 	/** IAM actions required for the ListSecurityProfiles API call. */
-	static readonly LIST_SECURITY_PROFILES: string[] = [
-		"iot:ListSecurityProfiles",
-	];
+	static readonly ListSecurityProfiles: string[] = ["iot:ListSecurityProfiles"];
 	/** IAM actions required for the ListSecurityProfilesForTarget API call. */
-	static readonly LIST_SECURITY_PROFILES_FOR_TARGET: string[] = [
+	static readonly ListSecurityProfilesForTarget: string[] = [
 		"iot:ListSecurityProfilesForTarget",
 	];
 	/** IAM actions required for the ListStreams API call. */
-	static readonly LIST_STREAMS: string[] = ["iot:ListStreams"];
+	static readonly ListStreams: string[] = ["iot:ListStreams"];
 	/** IAM actions required for the ListSubscriptions API call. */
-	static readonly LIST_SUBSCRIPTIONS: string[] = [];
+	static readonly ListSubscriptions: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"iot:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["iot:ListTagsForResource"];
 	/** IAM actions required for the ListTargetsForPolicy API call. */
-	static readonly LIST_TARGETS_FOR_POLICY: string[] = [
-		"iot:ListTargetsForPolicy",
-	];
+	static readonly ListTargetsForPolicy: string[] = ["iot:ListTargetsForPolicy"];
 	/** IAM actions required for the ListTargetsForSecurityProfile API call. */
-	static readonly LIST_TARGETS_FOR_SECURITY_PROFILE: string[] = [
+	static readonly ListTargetsForSecurityProfile: string[] = [
 		"iot:ListTargetsForSecurityProfile",
 	];
 	/** IAM actions required for the ListThingGroups API call. */
-	static readonly LIST_THING_GROUPS: string[] = ["iot:ListThingGroups"];
+	static readonly ListThingGroups: string[] = ["iot:ListThingGroups"];
 	/** IAM actions required for the ListThingGroupsForThing API call. */
-	static readonly LIST_THING_GROUPS_FOR_THING: string[] = [
+	static readonly ListThingGroupsForThing: string[] = [
 		"iot:ListThingGroupsForThing",
 	];
 	/** IAM actions required for the ListThingPrincipals API call. */
-	static readonly LIST_THING_PRINCIPALS: string[] = ["iot:ListThingPrincipals"];
+	static readonly ListThingPrincipals: string[] = ["iot:ListThingPrincipals"];
 	/** IAM actions required for the ListThingPrincipalsV2 API call. */
-	static readonly LIST_THING_PRINCIPALS_V2: string[] = [
+	static readonly ListThingPrincipalsV2: string[] = [
 		"iot:ListThingPrincipalsV2",
 	];
 	/** IAM actions required for the ListThingRegistrationTaskReports API call. */
-	static readonly LIST_THING_REGISTRATION_TASK_REPORTS: string[] = [
+	static readonly ListThingRegistrationTaskReports: string[] = [
 		"iot:ListThingRegistrationTaskReports",
 	];
 	/** IAM actions required for the ListThingRegistrationTasks API call. */
-	static readonly LIST_THING_REGISTRATION_TASKS: string[] = [
+	static readonly ListThingRegistrationTasks: string[] = [
 		"iot:ListThingRegistrationTasks",
 	];
 	/** IAM actions required for the ListThingTypes API call. */
-	static readonly LIST_THING_TYPES: string[] = ["iot:ListThingTypes"];
+	static readonly ListThingTypes: string[] = ["iot:ListThingTypes"];
 	/** IAM actions required for the ListThings API call. */
-	static readonly LIST_THINGS: string[] = ["iot:ListThings"];
+	static readonly ListThings: string[] = ["iot:ListThings"];
 	/** IAM actions required for the ListThingsInBillingGroup API call. */
-	static readonly LIST_THINGS_IN_BILLING_GROUP: string[] = [
+	static readonly ListThingsInBillingGroup: string[] = [
 		"iot:ListThingsInBillingGroup",
 	];
 	/** IAM actions required for the ListThingsInThingGroup API call. */
-	static readonly LIST_THINGS_IN_THING_GROUP: string[] = [
+	static readonly ListThingsInThingGroup: string[] = [
 		"iot:ListThingsInThingGroup",
 	];
 	/** IAM actions required for the ListTopicRuleDestinations API call. */
-	static readonly LIST_TOPIC_RULE_DESTINATIONS: string[] = [
+	static readonly ListTopicRuleDestinations: string[] = [
 		"iot:ListTopicRuleDestinations",
 	];
 	/** IAM actions required for the ListTopicRules API call. */
-	static readonly LIST_TOPIC_RULES: string[] = ["iot:ListTopicRules"];
+	static readonly ListTopicRules: string[] = ["iot:ListTopicRules"];
 	/** IAM actions required for the ListTunnels API call. */
-	static readonly LIST_TUNNELS: string[] = ["iot:ListTunnels"];
+	static readonly ListTunnels: string[] = ["iot:ListTunnels"];
 	/** IAM actions required for the ListV2LoggingLevels API call. */
-	static readonly LIST_V2_LOGGING_LEVELS: string[] = [
-		"iot:ListV2LoggingLevels",
-	];
+	static readonly ListV2LoggingLevels: string[] = ["iot:ListV2LoggingLevels"];
 	/** IAM actions required for the ListViolationEvents API call. */
-	static readonly LIST_VIOLATION_EVENTS: string[] = ["iot:ListViolationEvents"];
+	static readonly ListViolationEvents: string[] = ["iot:ListViolationEvents"];
 	/** IAM actions required for the OpenTunnel API call. */
-	static readonly OPEN_TUNNEL: string[] = ["iot:OpenTunnel"];
+	static readonly OpenTunnel: string[] = ["iot:OpenTunnel"];
 	/** IAM actions required for the Publish API call. */
-	static readonly PUBLISH: string[] = [];
+	static readonly Publish: string[] = [];
 	/** IAM actions required for the PutVerificationStateOnViolation API call. */
-	static readonly PUT_VERIFICATION_STATE_ON_VIOLATION: string[] = [
+	static readonly PutVerificationStateOnViolation: string[] = [
 		"iot:PutVerificationStateOnViolation",
 	];
 	/** IAM actions required for the RegisterCACertificate API call. */
-	static readonly REGISTER_CA_CERTIFICATE: string[] = [
+	static readonly RegisterCACertificate: string[] = [
 		"iam:PassRole",
 		"iot:RegisterCACertificate",
 		"iot:TagResource",
 	];
 	/** IAM actions required for the RegisterCertificate API call. */
-	static readonly REGISTER_CERTIFICATE: string[] = ["iot:RegisterCertificate"];
+	static readonly RegisterCertificate: string[] = ["iot:RegisterCertificate"];
 	/** IAM actions required for the RegisterCertificateWithoutCA API call. */
-	static readonly REGISTER_CERTIFICATE_WITHOUT_CA: string[] = [
+	static readonly RegisterCertificateWithoutCA: string[] = [
 		"iot:RegisterCertificateWithoutCA",
 	];
 	/** IAM actions required for the RegisterThing API call. */
-	static readonly REGISTER_THING: string[] = ["iot:RegisterThing"];
+	static readonly RegisterThing: string[] = ["iot:RegisterThing"];
 	/** IAM actions required for the RejectCertificateTransfer API call. */
-	static readonly REJECT_CERTIFICATE_TRANSFER: string[] = [
+	static readonly RejectCertificateTransfer: string[] = [
 		"iot:RejectCertificateTransfer",
 	];
 	/** IAM actions required for the RemoveThingFromBillingGroup API call. */
-	static readonly REMOVE_THING_FROM_BILLING_GROUP: string[] = [
+	static readonly RemoveThingFromBillingGroup: string[] = [
 		"iot:RemoveThingFromBillingGroup",
 	];
 	/** IAM actions required for the RemoveThingFromThingGroup API call. */
-	static readonly REMOVE_THING_FROM_THING_GROUP: string[] = [
+	static readonly RemoveThingFromThingGroup: string[] = [
 		"iot:RemoveThingFromThingGroup",
 	];
 	/** IAM actions required for the ReplaceTopicRule API call. */
-	static readonly REPLACE_TOPIC_RULE: string[] = [
+	static readonly ReplaceTopicRule: string[] = [
 		"iam:PassRole",
 		"iot:ReplaceTopicRule",
 	];
 	/** IAM actions required for the RotateTunnelAccessToken API call. */
-	static readonly ROTATE_TUNNEL_ACCESS_TOKEN: string[] = [
+	static readonly RotateTunnelAccessToken: string[] = [
 		"iot:RotateTunnelAccessToken",
 	];
 	/** IAM actions required for the SearchIndex API call. */
-	static readonly SEARCH_INDEX: string[] = ["iot:SearchIndex"];
+	static readonly SearchIndex: string[] = ["iot:SearchIndex"];
 	/** IAM actions required for the SendDirectMessage API call. */
-	static readonly SEND_DIRECT_MESSAGE: string[] = [];
+	static readonly SendDirectMessage: string[] = [];
 	/** IAM actions required for the SetDefaultAuthorizer API call. */
-	static readonly SET_DEFAULT_AUTHORIZER: string[] = [
+	static readonly opSetDefaultAuthorizer: string[] = [
 		"iot:SetDefaultAuthorizer",
 	];
 	/** IAM actions required for the SetDefaultPolicyVersion API call. */
-	static readonly SET_DEFAULT_POLICY_VERSION: string[] = [
+	static readonly opSetDefaultPolicyVersion: string[] = [
 		"iot:SetDefaultPolicyVersion",
 	];
 	/** IAM actions required for the SetLoggingOptions API call. */
-	static readonly SET_LOGGING_OPTIONS: string[] = [
+	static readonly opSetLoggingOptions: string[] = [
 		"iam:PassRole",
 		"iot:SetLoggingOptions",
 	];
 	/** IAM actions required for the SetV2LoggingLevel API call. */
-	static readonly SET_V2_LOGGING_LEVEL: string[] = ["iot:SetV2LoggingLevel"];
+	static readonly opSetV2LoggingLevel: string[] = ["iot:SetV2LoggingLevel"];
 	/** IAM actions required for the SetV2LoggingOptions API call. */
-	static readonly SET_V2_LOGGING_OPTIONS: string[] = [
+	static readonly opSetV2LoggingOptions: string[] = [
 		"iam:PassRole",
 		"iot:SetV2LoggingOptions",
 	];
 	/** IAM actions required for the StartAuditMitigationActionsTask API call. */
-	static readonly START_AUDIT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly StartAuditMitigationActionsTask: string[] = [
 		"iot:StartAuditMitigationActionsTask",
 	];
 	/** IAM actions required for the StartDetectMitigationActionsTask API call. */
-	static readonly START_DETECT_MITIGATION_ACTIONS_TASK: string[] = [
+	static readonly StartDetectMitigationActionsTask: string[] = [
 		"iot:StartDetectMitigationActionsTask",
 	];
 	/** IAM actions required for the StartOnDemandAuditTask API call. */
-	static readonly START_ON_DEMAND_AUDIT_TASK: string[] = [
+	static readonly StartOnDemandAuditTask: string[] = [
 		"iot:StartOnDemandAuditTask",
 	];
 	/** IAM actions required for the StartThingRegistrationTask API call. */
-	static readonly START_THING_REGISTRATION_TASK: string[] = [
+	static readonly StartThingRegistrationTask: string[] = [
 		"iam:PassRole",
 		"iot:StartThingRegistrationTask",
 	];
 	/** IAM actions required for the StopThingRegistrationTask API call. */
-	static readonly STOP_THING_REGISTRATION_TASK: string[] = [
+	static readonly StopThingRegistrationTask: string[] = [
 		"iot:StopThingRegistrationTask",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["iot:TagResource"];
+	static readonly TagResource: string[] = ["iot:TagResource"];
 	/** IAM actions required for the TestAuthorization API call. */
-	static readonly TEST_AUTHORIZATION: string[] = ["iot:TestAuthorization"];
+	static readonly TestAuthorization: string[] = ["iot:TestAuthorization"];
 	/** IAM actions required for the TestInvokeAuthorizer API call. */
-	static readonly TEST_INVOKE_AUTHORIZER: string[] = [
-		"iot:TestInvokeAuthorizer",
-	];
+	static readonly TestInvokeAuthorizer: string[] = ["iot:TestInvokeAuthorizer"];
 	/** IAM actions required for the TransferCertificate API call. */
-	static readonly TRANSFER_CERTIFICATE: string[] = ["iot:TransferCertificate"];
+	static readonly TransferCertificate: string[] = ["iot:TransferCertificate"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["iot:UntagResource"];
+	static readonly UntagResource: string[] = ["iot:UntagResource"];
 	/** IAM actions required for the UpdateAccountAuditConfiguration API call. */
-	static readonly UPDATE_ACCOUNT_AUDIT_CONFIGURATION: string[] = [
+	static readonly UpdateAccountAuditConfiguration: string[] = [
 		"iam:PassRole",
 		"iot:UpdateAccountAuditConfiguration",
 	];
 	/** IAM actions required for the UpdateAuditSuppression API call. */
-	static readonly UPDATE_AUDIT_SUPPRESSION: string[] = [
+	static readonly UpdateAuditSuppression: string[] = [
 		"iot:UpdateAuditSuppression",
 	];
 	/** IAM actions required for the UpdateAuthorizer API call. */
-	static readonly UPDATE_AUTHORIZER: string[] = ["iot:UpdateAuthorizer"];
+	static readonly UpdateAuthorizer: string[] = ["iot:UpdateAuthorizer"];
 	/** IAM actions required for the UpdateBillingGroup API call. */
-	static readonly UPDATE_BILLING_GROUP: string[] = ["iot:UpdateBillingGroup"];
+	static readonly UpdateBillingGroup: string[] = ["iot:UpdateBillingGroup"];
 	/** IAM actions required for the UpdateCACertificate API call. */
-	static readonly UPDATE_CA_CERTIFICATE: string[] = [
+	static readonly UpdateCACertificate: string[] = [
 		"iam:PassRole",
 		"iot:UpdateCACertificate",
 	];
 	/** IAM actions required for the UpdateCertificate API call. */
-	static readonly UPDATE_CERTIFICATE: string[] = ["iot:UpdateCertificate"];
+	static readonly UpdateCertificate: string[] = ["iot:UpdateCertificate"];
 	/** IAM actions required for the UpdateCertificateProvider API call. */
-	static readonly UPDATE_CERTIFICATE_PROVIDER: string[] = [
+	static readonly UpdateCertificateProvider: string[] = [
 		"iot:UpdateCertificateProvider",
 	];
 	/** IAM actions required for the UpdateCommand API call. */
-	static readonly UPDATE_COMMAND: string[] = ["iot:UpdateCommand"];
+	static readonly UpdateCommand: string[] = ["iot:UpdateCommand"];
 	/** IAM actions required for the UpdateCustomMetric API call. */
-	static readonly UPDATE_CUSTOM_METRIC: string[] = ["iot:UpdateCustomMetric"];
+	static readonly UpdateCustomMetric: string[] = ["iot:UpdateCustomMetric"];
 	/** IAM actions required for the UpdateDimension API call. */
-	static readonly UPDATE_DIMENSION: string[] = ["iot:UpdateDimension"];
+	static readonly UpdateDimension: string[] = ["iot:UpdateDimension"];
 	/** IAM actions required for the UpdateDomainConfiguration API call. */
-	static readonly UPDATE_DOMAIN_CONFIGURATION: string[] = [
+	static readonly UpdateDomainConfiguration: string[] = [
 		"iot:UpdateDomainConfiguration",
 	];
 	/** IAM actions required for the UpdateDynamicThingGroup API call. */
-	static readonly UPDATE_DYNAMIC_THING_GROUP: string[] = [
+	static readonly UpdateDynamicThingGroup: string[] = [
 		"iot:UpdateDynamicThingGroup",
 	];
 	/** IAM actions required for the UpdateEncryptionConfiguration API call. */
-	static readonly UPDATE_ENCRYPTION_CONFIGURATION: string[] = [
+	static readonly UpdateEncryptionConfiguration: string[] = [
 		"iam:PassRole",
 		"iot:UpdateEncryptionConfiguration",
 	];
 	/** IAM actions required for the UpdateEventConfigurations API call. */
-	static readonly UPDATE_EVENT_CONFIGURATIONS: string[] = [
+	static readonly UpdateEventConfigurations: string[] = [
 		"iot:UpdateEventConfigurations",
 	];
 	/** IAM actions required for the UpdateFleetMetric API call. */
-	static readonly UPDATE_FLEET_METRIC: string[] = ["iot:UpdateFleetMetric"];
+	static readonly UpdateFleetMetric: string[] = ["iot:UpdateFleetMetric"];
 	/** IAM actions required for the UpdateIndexingConfiguration API call. */
-	static readonly UPDATE_INDEXING_CONFIGURATION: string[] = [
+	static readonly UpdateIndexingConfiguration: string[] = [
 		"iot:UpdateIndexingConfiguration",
 	];
 	/** IAM actions required for the UpdateJob API call. */
-	static readonly UPDATE_JOB: string[] = ["iam:PassRole", "iot:UpdateJob"];
+	static readonly UpdateJob: string[] = ["iam:PassRole", "iot:UpdateJob"];
 	/** IAM actions required for the UpdateMitigationAction API call. */
-	static readonly UPDATE_MITIGATION_ACTION: string[] = [
+	static readonly UpdateMitigationAction: string[] = [
 		"iam:PassRole",
 		"iot:UpdateMitigationAction",
 	];
 	/** IAM actions required for the UpdatePackage API call. */
-	static readonly UPDATE_PACKAGE: string[] = ["iot:UpdatePackage"];
+	static readonly UpdatePackage: string[] = ["iot:UpdatePackage"];
 	/** IAM actions required for the UpdatePackageConfiguration API call. */
-	static readonly UPDATE_PACKAGE_CONFIGURATION: string[] = [
+	static readonly UpdatePackageConfiguration: string[] = [
 		"iam:PassRole",
 		"iot:UpdatePackageConfiguration",
 	];
 	/** IAM actions required for the UpdatePackageVersion API call. */
-	static readonly UPDATE_PACKAGE_VERSION: string[] = [
-		"iot:UpdatePackageVersion",
-	];
+	static readonly UpdatePackageVersion: string[] = ["iot:UpdatePackageVersion"];
 	/** IAM actions required for the UpdateProvisioningTemplate API call. */
-	static readonly UPDATE_PROVISIONING_TEMPLATE: string[] = [
+	static readonly UpdateProvisioningTemplate: string[] = [
 		"iam:PassRole",
 		"iot:UpdateProvisioningTemplate",
 	];
 	/** IAM actions required for the UpdateRoleAlias API call. */
-	static readonly UPDATE_ROLE_ALIAS: string[] = [
+	static readonly UpdateRoleAlias: string[] = [
 		"iam:PassRole",
 		"iot:UpdateRoleAlias",
 	];
 	/** IAM actions required for the UpdateScheduledAudit API call. */
-	static readonly UPDATE_SCHEDULED_AUDIT: string[] = [
-		"iot:UpdateScheduledAudit",
-	];
+	static readonly UpdateScheduledAudit: string[] = ["iot:UpdateScheduledAudit"];
 	/** IAM actions required for the UpdateSecurityProfile API call. */
-	static readonly UPDATE_SECURITY_PROFILE: string[] = [
+	static readonly UpdateSecurityProfile: string[] = [
 		"iam:PassRole",
 		"iot:UpdateSecurityProfile",
 	];
 	/** IAM actions required for the UpdateStream API call. */
-	static readonly UPDATE_STREAM: string[] = [
-		"iam:PassRole",
-		"iot:UpdateStream",
-	];
+	static readonly UpdateStream: string[] = ["iam:PassRole", "iot:UpdateStream"];
 	/** IAM actions required for the UpdateThing API call. */
-	static readonly UPDATE_THING: string[] = ["iot:UpdateThing"];
+	static readonly UpdateThing: string[] = ["iot:UpdateThing"];
 	/** IAM actions required for the UpdateThingGroup API call. */
-	static readonly UPDATE_THING_GROUP: string[] = ["iot:UpdateThingGroup"];
+	static readonly UpdateThingGroup: string[] = ["iot:UpdateThingGroup"];
 	/** IAM actions required for the UpdateThingGroupsForThing API call. */
-	static readonly UPDATE_THING_GROUPS_FOR_THING: string[] = [
+	static readonly UpdateThingGroupsForThing: string[] = [
 		"iot:UpdateThingGroupsForThing",
 	];
 	/** IAM actions required for the UpdateThingShadow API call. */
-	static readonly UPDATE_THING_SHADOW: string[] = [];
+	static readonly UpdateThingShadow: string[] = [];
 	/** IAM actions required for the UpdateThingType API call. */
-	static readonly UPDATE_THING_TYPE: string[] = ["iot:UpdateThingType"];
+	static readonly UpdateThingType: string[] = ["iot:UpdateThingType"];
 	/** IAM actions required for the UpdateTopicRuleDestination API call. */
-	static readonly UPDATE_TOPIC_RULE_DESTINATION: string[] = [
+	static readonly UpdateTopicRuleDestination: string[] = [
 		"iot:UpdateTopicRuleDestination",
 	];
 	/** IAM actions required for the ValidateSecurityProfileBehaviors API call. */
-	static readonly VALIDATE_SECURITY_PROFILE_BEHAVIORS: string[] = [
+	static readonly ValidateSecurityProfileBehaviors: string[] = [
 		"iot:ValidateSecurityProfileBehaviors",
 	];
 }
@@ -3529,185 +3910,185 @@ export class IotOperations {
  */
 export class IotConditions {
 	/** Condition keys applicable to the AttachThingPrincipal action. */
-	static readonly ATTACH_THING_PRINCIPAL_CONDITION_KEYS: string[] = [
+	static readonly AttachThingPrincipalConditionKeys: string[] = [
 		"iot:thingArn",
 	];
 	/** Condition keys applicable to the CloseTunnel action. */
-	static readonly CLOSE_TUNNEL_CONDITION_KEYS: string[] = ["iot:Delete"];
+	static readonly CloseTunnelConditionKeys: string[] = ["iot:Delete"];
 	/** Condition keys applicable to the CreateAuthorizer action. */
-	static readonly CREATE_AUTHORIZER_CONDITION_KEYS: string[] = [
+	static readonly CreateAuthorizerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateBillingGroup action. */
-	static readonly CREATE_BILLING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateBillingGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCertificateProvider action. */
-	static readonly CREATE_CERTIFICATE_PROVIDER_CONDITION_KEYS: string[] = [
+	static readonly CreateCertificateProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCommand action. */
-	static readonly CREATE_COMMAND_CONDITION_KEYS: string[] = [
+	static readonly CreateCommandConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomMetric action. */
-	static readonly CREATE_CUSTOM_METRIC_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomMetricConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDimension action. */
-	static readonly CREATE_DIMENSION_CONDITION_KEYS: string[] = [
+	static readonly CreateDimensionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDomainConfiguration action. */
-	static readonly CREATE_DOMAIN_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateDomainConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"iot:DomainName",
 	];
 	/** Condition keys applicable to the CreateDynamicThingGroup action. */
-	static readonly CREATE_DYNAMIC_THING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDynamicThingGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFleetMetric action. */
-	static readonly CREATE_FLEET_METRIC_CONDITION_KEYS: string[] = [
+	static readonly CreateFleetMetricConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateJob action. */
-	static readonly CREATE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateJobTemplate action. */
-	static readonly CREATE_JOB_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateJobTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMitigationAction action. */
-	static readonly CREATE_MITIGATION_ACTION_CONDITION_KEYS: string[] = [
+	static readonly CreateMitigationActionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateOTAUpdate action. */
-	static readonly CREATE_OTA_UPDATE_CONDITION_KEYS: string[] = [
+	static readonly CreateOTAUpdateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePackage action. */
-	static readonly CREATE_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly CreatePackageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePackageVersion action. */
-	static readonly CREATE_PACKAGE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreatePackageVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePolicy action. */
-	static readonly CREATE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreatePolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProvisioningTemplate action. */
-	static readonly CREATE_PROVISIONING_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateProvisioningTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRoleAlias action. */
-	static readonly CREATE_ROLE_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly CreateRoleAliasConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateScheduledAudit action. */
-	static readonly CREATE_SCHEDULED_AUDIT_CONDITION_KEYS: string[] = [
+	static readonly CreateScheduledAuditConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSecurityProfile action. */
-	static readonly CREATE_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateSecurityProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateStream action. */
-	static readonly CREATE_STREAM_CONDITION_KEYS: string[] = [
+	static readonly CreateStreamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateThingGroup action. */
-	static readonly CREATE_THING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateThingGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateThingType action. */
-	static readonly CREATE_THING_TYPE_CONDITION_KEYS: string[] = [
+	static readonly CreateThingTypeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTopicRule action. */
-	static readonly CREATE_TOPIC_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateTopicRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DetachThingPrincipal action. */
-	static readonly DETACH_THING_PRINCIPAL_CONDITION_KEYS: string[] = [
+	static readonly DetachThingPrincipalConditionKeys: string[] = [
 		"iot:thingArn",
 	];
 	/** Condition keys applicable to the GetConnection action. */
-	static readonly GET_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionConditionKeys: string[] = [
 		"iot:IncludeSocketInformation",
 	];
 	/** Condition keys applicable to the GetThingConnectivityData action. */
-	static readonly GET_THING_CONNECTIVITY_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetThingConnectivityDataConditionKeys: string[] = [
 		"iot:IncludeSocketInformation",
 	];
 	/** Condition keys applicable to the OpenTunnel action. */
-	static readonly OPEN_TUNNEL_CONDITION_KEYS: string[] = [
+	static readonly OpenTunnelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"iot:ThingGroupArn",
 		"iot:TunnelDestinationService",
 	];
 	/** Condition keys applicable to the RegisterCACertificate action. */
-	static readonly REGISTER_CA_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly RegisterCACertificateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RotateTunnelAccessToken action. */
-	static readonly ROTATE_TUNNEL_ACCESS_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly RotateTunnelAccessTokenConditionKeys: string[] = [
 		"iot:ClientMode",
 		"iot:ThingGroupArn",
 		"iot:TunnelDestinationService",
 	];
 	/** Condition keys applicable to the SendDirectMessage action. */
-	static readonly SEND_DIRECT_MESSAGE_CONDITION_KEYS: string[] = ["iot:Topic"];
+	static readonly SendDirectMessageConditionKeys: string[] = ["iot:Topic"];
 	/** Condition keys applicable to the StartCommandExecution action. */
-	static readonly START_COMMAND_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly StartCommandExecutionConditionKeys: string[] = [
 		"iot:CommandExecutionParameterBoolean/${CommandParameterName}",
 		"iot:CommandExecutionParameterNumber/${CommandParameterName}",
 		"iot:CommandExecutionParameterString/${CommandParameterName}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: iot:ClientMode (String) */
 	static readonly CLIENT_MODE = "iot:ClientMode";
 	/** Condition key: iot:CommandExecutionParameterBoolean/${CommandParameterName} (Bool) */

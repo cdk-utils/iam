@@ -13,152 +13,233 @@ export class PanoramaActions {
 	static readonly SERVICE_PREFIX = "panorama";
 
 	/** [Write] panorama:CreateApplicationInstance */
-	static readonly CREATE_APPLICATION_INSTANCE =
+	static readonly CreateApplicationInstance =
 		"panorama:CreateApplicationInstance";
 	/** [Write] panorama:CreateJobForDevices */
-	static readonly CREATE_JOB_FOR_DEVICES = "panorama:CreateJobForDevices";
+	static readonly CreateJobForDevices = "panorama:CreateJobForDevices";
 	/** [Write] panorama:CreateNodeFromTemplateJob */
-	static readonly CREATE_NODE_FROM_TEMPLATE_JOB =
+	static readonly CreateNodeFromTemplateJob =
 		"panorama:CreateNodeFromTemplateJob";
 	/** [Write] panorama:CreatePackage */
-	static readonly CREATE_PACKAGE = "panorama:CreatePackage";
+	static readonly CreatePackage = "panorama:CreatePackage";
 	/** [Write] panorama:CreatePackageImportJob */
-	static readonly CREATE_PACKAGE_IMPORT_JOB = "panorama:CreatePackageImportJob";
+	static readonly CreatePackageImportJob = "panorama:CreatePackageImportJob";
 	/** [Write] panorama:DeleteDevice */
-	static readonly DELETE_DEVICE = "panorama:DeleteDevice";
+	static readonly DeleteDevice = "panorama:DeleteDevice";
 	/** [Write] panorama:DeletePackage */
-	static readonly DELETE_PACKAGE = "panorama:DeletePackage";
+	static readonly DeletePackage = "panorama:DeletePackage";
 	/** [Write] panorama:DeregisterPackageVersion */
-	static readonly DEREGISTER_PACKAGE_VERSION =
+	static readonly DeregisterPackageVersion =
 		"panorama:DeregisterPackageVersion";
 	/** [Read] panorama:DescribeApplicationInstance */
-	static readonly DESCRIBE_APPLICATION_INSTANCE =
+	static readonly DescribeApplicationInstance =
 		"panorama:DescribeApplicationInstance";
 	/** [Read] panorama:DescribeApplicationInstanceDetails */
-	static readonly DESCRIBE_APPLICATION_INSTANCE_DETAILS =
+	static readonly DescribeApplicationInstanceDetails =
 		"panorama:DescribeApplicationInstanceDetails";
 	/** [Read] panorama:DescribeDevice */
-	static readonly DESCRIBE_DEVICE = "panorama:DescribeDevice";
+	static readonly DescribeDevice = "panorama:DescribeDevice";
 	/** [Read] panorama:DescribeDeviceJob */
-	static readonly DESCRIBE_DEVICE_JOB = "panorama:DescribeDeviceJob";
+	static readonly DescribeDeviceJob = "panorama:DescribeDeviceJob";
 	/** [Read] panorama:DescribeNode */
-	static readonly DESCRIBE_NODE = "panorama:DescribeNode";
+	static readonly DescribeNode = "panorama:DescribeNode";
 	/** [Read] panorama:DescribeNodeFromTemplateJob */
-	static readonly DESCRIBE_NODE_FROM_TEMPLATE_JOB =
+	static readonly DescribeNodeFromTemplateJob =
 		"panorama:DescribeNodeFromTemplateJob";
 	/** [Read] panorama:DescribePackage */
-	static readonly DESCRIBE_PACKAGE = "panorama:DescribePackage";
+	static readonly DescribePackage = "panorama:DescribePackage";
 	/** [Read] panorama:DescribePackageImportJob */
-	static readonly DESCRIBE_PACKAGE_IMPORT_JOB =
+	static readonly DescribePackageImportJob =
 		"panorama:DescribePackageImportJob";
 	/** [Read] panorama:DescribePackageVersion */
-	static readonly DESCRIBE_PACKAGE_VERSION = "panorama:DescribePackageVersion";
+	static readonly DescribePackageVersion = "panorama:DescribePackageVersion";
 	/** [Read] panorama:DescribeSoftware */
-	static readonly DESCRIBE_SOFTWARE = "panorama:DescribeSoftware";
+	static readonly DescribeSoftware = "panorama:DescribeSoftware";
 	/** [Read] panorama:GetWebSocketURL */
-	static readonly GET_WEB_SOCKET_URL = "panorama:GetWebSocketURL";
+	static readonly actionGetWebSocketURL = "panorama:GetWebSocketURL";
 	/** [List] panorama:ListApplicationInstanceDependencies */
-	static readonly LIST_APPLICATION_INSTANCE_DEPENDENCIES =
+	static readonly ListApplicationInstanceDependencies =
 		"panorama:ListApplicationInstanceDependencies";
 	/** [List] panorama:ListApplicationInstanceNodeInstances */
-	static readonly LIST_APPLICATION_INSTANCE_NODE_INSTANCES =
+	static readonly ListApplicationInstanceNodeInstances =
 		"panorama:ListApplicationInstanceNodeInstances";
 	/** [List] panorama:ListApplicationInstances */
-	static readonly LIST_APPLICATION_INSTANCES =
+	static readonly ListApplicationInstances =
 		"panorama:ListApplicationInstances";
 	/** [List] panorama:ListDevices */
-	static readonly LIST_DEVICES = "panorama:ListDevices";
+	static readonly ListDevices = "panorama:ListDevices";
 	/** [List] panorama:ListDevicesJobs */
-	static readonly LIST_DEVICES_JOBS = "panorama:ListDevicesJobs";
+	static readonly ListDevicesJobs = "panorama:ListDevicesJobs";
 	/** [List] panorama:ListNodeFromTemplateJobs */
-	static readonly LIST_NODE_FROM_TEMPLATE_JOBS =
+	static readonly ListNodeFromTemplateJobs =
 		"panorama:ListNodeFromTemplateJobs";
 	/** [List] panorama:ListNodes */
-	static readonly LIST_NODES = "panorama:ListNodes";
+	static readonly ListNodes = "panorama:ListNodes";
 	/** [List] panorama:ListPackageImportJobs */
-	static readonly LIST_PACKAGE_IMPORT_JOBS = "panorama:ListPackageImportJobs";
+	static readonly ListPackageImportJobs = "panorama:ListPackageImportJobs";
 	/** [List] panorama:ListPackages */
-	static readonly LIST_PACKAGES = "panorama:ListPackages";
+	static readonly ListPackages = "panorama:ListPackages";
 	/** [Read] panorama:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "panorama:ListTagsForResource";
+	static readonly ListTagsForResource = "panorama:ListTagsForResource";
 	/** [Write] panorama:ProvisionDevice */
-	static readonly PROVISION_DEVICE = "panorama:ProvisionDevice";
+	static readonly ProvisionDevice = "panorama:ProvisionDevice";
 	/** [Write] panorama:RegisterPackageVersion */
-	static readonly REGISTER_PACKAGE_VERSION = "panorama:RegisterPackageVersion";
+	static readonly RegisterPackageVersion = "panorama:RegisterPackageVersion";
 	/** [Write] panorama:RemoveApplicationInstance */
-	static readonly REMOVE_APPLICATION_INSTANCE =
+	static readonly RemoveApplicationInstance =
 		"panorama:RemoveApplicationInstance";
 	/** [Write] panorama:SignalApplicationInstanceNodeInstances */
-	static readonly SIGNAL_APPLICATION_INSTANCE_NODE_INSTANCES =
+	static readonly SignalApplicationInstanceNodeInstances =
 		"panorama:SignalApplicationInstanceNodeInstances";
 	/** [Tagging] panorama:TagResource */
-	static readonly TAG_RESOURCE = "panorama:TagResource";
+	static readonly TagResource = "panorama:TagResource";
 	/** [Tagging] panorama:UntagResource */
-	static readonly UNTAG_RESOURCE = "panorama:UntagResource";
+	static readonly UntagResource = "panorama:UntagResource";
 	/** [Write] panorama:UpdateDeviceMetadata */
-	static readonly UPDATE_DEVICE_METADATA = "panorama:UpdateDeviceMetadata";
+	static readonly UpdateDeviceMetadata = "panorama:UpdateDeviceMetadata";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PanoramaActions.DESCRIBE_APPLICATION_INSTANCE,
-		PanoramaActions.DESCRIBE_APPLICATION_INSTANCE_DETAILS,
-		PanoramaActions.DESCRIBE_DEVICE,
-		PanoramaActions.DESCRIBE_DEVICE_JOB,
-		PanoramaActions.DESCRIBE_NODE,
-		PanoramaActions.DESCRIBE_NODE_FROM_TEMPLATE_JOB,
-		PanoramaActions.DESCRIBE_PACKAGE,
-		PanoramaActions.DESCRIBE_PACKAGE_IMPORT_JOB,
-		PanoramaActions.DESCRIBE_PACKAGE_VERSION,
-		PanoramaActions.DESCRIBE_SOFTWARE,
-		PanoramaActions.GET_WEB_SOCKET_URL,
-		PanoramaActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		PanoramaActions.DescribeApplicationInstance,
+		PanoramaActions.DescribeApplicationInstanceDetails,
+		PanoramaActions.DescribeDevice,
+		PanoramaActions.DescribeDeviceJob,
+		PanoramaActions.DescribeNode,
+		PanoramaActions.DescribeNodeFromTemplateJob,
+		PanoramaActions.DescribePackage,
+		PanoramaActions.DescribePackageImportJob,
+		PanoramaActions.DescribePackageVersion,
+		PanoramaActions.DescribeSoftware,
+		PanoramaActions.actionGetWebSocketURL,
+		PanoramaActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PanoramaActions.CREATE_APPLICATION_INSTANCE,
-		PanoramaActions.CREATE_JOB_FOR_DEVICES,
-		PanoramaActions.CREATE_NODE_FROM_TEMPLATE_JOB,
-		PanoramaActions.CREATE_PACKAGE,
-		PanoramaActions.CREATE_PACKAGE_IMPORT_JOB,
-		PanoramaActions.DELETE_DEVICE,
-		PanoramaActions.DELETE_PACKAGE,
-		PanoramaActions.DEREGISTER_PACKAGE_VERSION,
-		PanoramaActions.PROVISION_DEVICE,
-		PanoramaActions.REGISTER_PACKAGE_VERSION,
-		PanoramaActions.REMOVE_APPLICATION_INSTANCE,
-		PanoramaActions.SIGNAL_APPLICATION_INSTANCE_NODE_INSTANCES,
-		PanoramaActions.UPDATE_DEVICE_METADATA,
+	static readonly AllWriteActions: string[] = [
+		PanoramaActions.CreateApplicationInstance,
+		PanoramaActions.CreateJobForDevices,
+		PanoramaActions.CreateNodeFromTemplateJob,
+		PanoramaActions.CreatePackage,
+		PanoramaActions.CreatePackageImportJob,
+		PanoramaActions.DeleteDevice,
+		PanoramaActions.DeletePackage,
+		PanoramaActions.DeregisterPackageVersion,
+		PanoramaActions.ProvisionDevice,
+		PanoramaActions.RegisterPackageVersion,
+		PanoramaActions.RemoveApplicationInstance,
+		PanoramaActions.SignalApplicationInstanceNodeInstances,
+		PanoramaActions.UpdateDeviceMetadata,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PanoramaActions.LIST_APPLICATION_INSTANCE_DEPENDENCIES,
-		PanoramaActions.LIST_APPLICATION_INSTANCE_NODE_INSTANCES,
-		PanoramaActions.LIST_APPLICATION_INSTANCES,
-		PanoramaActions.LIST_DEVICES,
-		PanoramaActions.LIST_DEVICES_JOBS,
-		PanoramaActions.LIST_NODE_FROM_TEMPLATE_JOBS,
-		PanoramaActions.LIST_NODES,
-		PanoramaActions.LIST_PACKAGE_IMPORT_JOBS,
-		PanoramaActions.LIST_PACKAGES,
+	static readonly AllListActions: string[] = [
+		PanoramaActions.ListApplicationInstanceDependencies,
+		PanoramaActions.ListApplicationInstanceNodeInstances,
+		PanoramaActions.ListApplicationInstances,
+		PanoramaActions.ListDevices,
+		PanoramaActions.ListDevicesJobs,
+		PanoramaActions.ListNodeFromTemplateJobs,
+		PanoramaActions.ListNodes,
+		PanoramaActions.ListPackageImportJobs,
+		PanoramaActions.ListPackages,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PanoramaActions.TAG_RESOURCE,
-		PanoramaActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PanoramaActions.TagResource,
+		PanoramaActions.UntagResource,
 	];
 }
 
-const ApplicationInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):applicationInstance/(?<applicationInstanceId>[^:/?]+)$",
-);
-const DeviceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):device/(?<deviceId>[^:/?]+)$",
-);
-const PackageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):package/(?<packageId>[^:/?]+)$",
-);
+/**
+ * Properties for building a applicationInstance ARN.
+ */
+export interface PanoramaApplicationInstanceArnProps {
+	/** The ApplicationInstanceId component of the ARN. */
+	readonly applicationInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a applicationInstance ARN.
+ */
+export interface PanoramaApplicationInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationInstanceId component. */
+	readonly applicationInstanceId: string;
+}
+
+/**
+ * Properties for building a device ARN.
+ */
+export interface PanoramaDeviceArnProps {
+	/** The DeviceId component of the ARN. */
+	readonly deviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device ARN.
+ */
+export interface PanoramaDeviceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceId component. */
+	readonly deviceId: string;
+}
+
+/**
+ * Properties for building a package ARN.
+ */
+export interface PanoramaPackageArnProps {
+	/** The PackageId component of the ARN. */
+	readonly packageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a package ARN.
+ */
+export interface PanoramaPackageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PackageId component. */
+	readonly packageId: string;
+}
+
+const ApplicationInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):applicationInstance\/(?<applicationInstanceId>[^:/?]+)$/;
+const DeviceArnRegex =
+	/^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):device\/(?<deviceId>[^:/?]+)$/;
+const PackageArnRegex =
+	/^arn:(?<partition>[^:]+):panorama:(?<region>[^:]*):(?<account>[^:]*):package\/(?<packageId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for panorama resources.
@@ -167,16 +248,9 @@ export class PanoramaResources {
 	/**
 	 * Builds an ARN for the applicationInstance resource.
 	 */
-	static applicationInstance(props: {
-		/** The ApplicationInstanceId component of the ARN. */
-		readonly applicationInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationInstance(
+		props: PanoramaApplicationInstanceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:panorama:${props.region ?? "*"}:${props.account ?? "*"}:applicationInstance/${props.applicationInstanceId}`;
 	}
 
@@ -191,12 +265,9 @@ export class PanoramaResources {
 	 * Parses a applicationInstance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationInstanceId: string;
-	} {
+	static parseApplicationInstanceArn(
+		arn: string,
+	): PanoramaApplicationInstanceArnComponents {
 		const match = ApplicationInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid applicationInstance ARN: ${arn}`);
@@ -212,16 +283,7 @@ export class PanoramaResources {
 	/**
 	 * Builds an ARN for the device resource.
 	 */
-	static device(props: {
-		/** The DeviceId component of the ARN. */
-		readonly deviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static device(props: PanoramaDeviceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:panorama:${props.region ?? "*"}:${props.account ?? "*"}:device/${props.deviceId}`;
 	}
 
@@ -236,12 +298,7 @@ export class PanoramaResources {
 	 * Parses a device ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceId: string;
-	} {
+	static parseDeviceArn(arn: string): PanoramaDeviceArnComponents {
 		const match = DeviceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device ARN: ${arn}`);
@@ -257,16 +314,7 @@ export class PanoramaResources {
 	/**
 	 * Builds an ARN for the package resource.
 	 */
-	static package(props: {
-		/** The PackageId component of the ARN. */
-		readonly packageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static package(props: PanoramaPackageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:panorama:${props.region ?? "*"}:${props.account ?? "*"}:package/${props.packageId}`;
 	}
 
@@ -281,12 +329,7 @@ export class PanoramaResources {
 	 * Parses a package ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePackageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		packageId: string;
-	} {
+	static parsePackageArn(arn: string): PanoramaPackageArnComponents {
 		const match = PackageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid package ARN: ${arn}`);
@@ -305,34 +348,34 @@ export class PanoramaResources {
  */
 export class PanoramaConditions {
 	/** Condition keys applicable to the CreateApplicationInstance action. */
-	static readonly CREATE_APPLICATION_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePackage action. */
-	static readonly CREATE_PACKAGE_CONDITION_KEYS: string[] = [
+	static readonly CreatePackageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ProvisionDevice action. */
-	static readonly PROVISION_DEVICE_CONDITION_KEYS: string[] = [
+	static readonly ProvisionDeviceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

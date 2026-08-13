@@ -13,135 +13,162 @@ export class NeptuneDBActions {
 	static readonly SERVICE_PREFIX = "neptune-db";
 
 	/** [Write] neptune-db:CancelLoaderJob */
-	static readonly CANCEL_LOADER_JOB = "neptune-db:CancelLoaderJob";
+	static readonly CancelLoaderJob = "neptune-db:CancelLoaderJob";
 	/** [Write] neptune-db:CancelMLDataProcessingJob */
-	static readonly CANCEL_ML_DATA_PROCESSING_JOB =
+	static readonly CancelMLDataProcessingJob =
 		"neptune-db:CancelMLDataProcessingJob";
 	/** [Write] neptune-db:CancelMLModelTrainingJob */
-	static readonly CANCEL_ML_MODEL_TRAINING_JOB =
+	static readonly CancelMLModelTrainingJob =
 		"neptune-db:CancelMLModelTrainingJob";
 	/** [Write] neptune-db:CancelMLModelTransformJob */
-	static readonly CANCEL_ML_MODEL_TRANSFORM_JOB =
+	static readonly CancelMLModelTransformJob =
 		"neptune-db:CancelMLModelTransformJob";
 	/** [Write] neptune-db:CancelQuery */
-	static readonly CANCEL_QUERY = "neptune-db:CancelQuery";
+	static readonly CancelQuery = "neptune-db:CancelQuery";
 	/** [Write] neptune-db:CreateMLEndpoint */
-	static readonly CREATE_ML_ENDPOINT = "neptune-db:CreateMLEndpoint";
+	static readonly CreateMLEndpoint = "neptune-db:CreateMLEndpoint";
 	/** [Write] neptune-db:DeleteDataViaQuery */
-	static readonly DELETE_DATA_VIA_QUERY = "neptune-db:DeleteDataViaQuery";
+	static readonly DeleteDataViaQuery = "neptune-db:DeleteDataViaQuery";
 	/** [Write] neptune-db:DeleteMLEndpoint */
-	static readonly DELETE_ML_ENDPOINT = "neptune-db:DeleteMLEndpoint";
+	static readonly DeleteMLEndpoint = "neptune-db:DeleteMLEndpoint";
 	/** [Write] neptune-db:DeleteStatistics */
-	static readonly DELETE_STATISTICS = "neptune-db:DeleteStatistics";
+	static readonly DeleteStatistics = "neptune-db:DeleteStatistics";
 	/** [Read] neptune-db:GetEngineStatus */
-	static readonly GET_ENGINE_STATUS = "neptune-db:GetEngineStatus";
+	static readonly actionGetEngineStatus = "neptune-db:GetEngineStatus";
 	/** [Read] neptune-db:GetGraphSummary */
-	static readonly GET_GRAPH_SUMMARY = "neptune-db:GetGraphSummary";
+	static readonly actionGetGraphSummary = "neptune-db:GetGraphSummary";
 	/** [Read] neptune-db:GetLoaderJobStatus */
-	static readonly GET_LOADER_JOB_STATUS = "neptune-db:GetLoaderJobStatus";
+	static readonly actionGetLoaderJobStatus = "neptune-db:GetLoaderJobStatus";
 	/** [Read] neptune-db:GetMLDataProcessingJobStatus */
-	static readonly GET_ML_DATA_PROCESSING_JOB_STATUS =
+	static readonly actionGetMLDataProcessingJobStatus =
 		"neptune-db:GetMLDataProcessingJobStatus";
 	/** [Read] neptune-db:GetMLEndpointStatus */
-	static readonly GET_ML_ENDPOINT_STATUS = "neptune-db:GetMLEndpointStatus";
+	static readonly actionGetMLEndpointStatus = "neptune-db:GetMLEndpointStatus";
 	/** [Read] neptune-db:GetMLModelTrainingJobStatus */
-	static readonly GET_ML_MODEL_TRAINING_JOB_STATUS =
+	static readonly actionGetMLModelTrainingJobStatus =
 		"neptune-db:GetMLModelTrainingJobStatus";
 	/** [Read] neptune-db:GetMLModelTransformJobStatus */
-	static readonly GET_ML_MODEL_TRANSFORM_JOB_STATUS =
+	static readonly actionGetMLModelTransformJobStatus =
 		"neptune-db:GetMLModelTransformJobStatus";
 	/** [Read] neptune-db:GetQueryStatus */
-	static readonly GET_QUERY_STATUS = "neptune-db:GetQueryStatus";
+	static readonly actionGetQueryStatus = "neptune-db:GetQueryStatus";
 	/** [Read] neptune-db:GetStatisticsStatus */
-	static readonly GET_STATISTICS_STATUS = "neptune-db:GetStatisticsStatus";
+	static readonly actionGetStatisticsStatus = "neptune-db:GetStatisticsStatus";
 	/** [Read] neptune-db:GetStreamRecords */
-	static readonly GET_STREAM_RECORDS = "neptune-db:GetStreamRecords";
+	static readonly actionGetStreamRecords = "neptune-db:GetStreamRecords";
 	/** [List] neptune-db:ListLoaderJobs */
-	static readonly LIST_LOADER_JOBS = "neptune-db:ListLoaderJobs";
+	static readonly ListLoaderJobs = "neptune-db:ListLoaderJobs";
 	/** [List] neptune-db:ListMLDataProcessingJobs */
-	static readonly LIST_ML_DATA_PROCESSING_JOBS =
+	static readonly ListMLDataProcessingJobs =
 		"neptune-db:ListMLDataProcessingJobs";
 	/** [List] neptune-db:ListMLEndpoints */
-	static readonly LIST_ML_ENDPOINTS = "neptune-db:ListMLEndpoints";
+	static readonly ListMLEndpoints = "neptune-db:ListMLEndpoints";
 	/** [List] neptune-db:ListMLModelTrainingJobs */
-	static readonly LIST_ML_MODEL_TRAINING_JOBS =
+	static readonly ListMLModelTrainingJobs =
 		"neptune-db:ListMLModelTrainingJobs";
 	/** [List] neptune-db:ListMLModelTransformJobs */
-	static readonly LIST_ML_MODEL_TRANSFORM_JOBS =
+	static readonly ListMLModelTransformJobs =
 		"neptune-db:ListMLModelTransformJobs";
 	/** [Write] neptune-db:ManageStatistics */
-	static readonly MANAGE_STATISTICS = "neptune-db:ManageStatistics";
+	static readonly ManageStatistics = "neptune-db:ManageStatistics";
 	/** [Read] neptune-db:ReadDataViaQuery */
-	static readonly READ_DATA_VIA_QUERY = "neptune-db:ReadDataViaQuery";
+	static readonly ReadDataViaQuery = "neptune-db:ReadDataViaQuery";
 	/** [Write] neptune-db:ResetDatabase */
-	static readonly RESET_DATABASE = "neptune-db:ResetDatabase";
+	static readonly ResetDatabase = "neptune-db:ResetDatabase";
 	/** [Write] neptune-db:StartLoaderJob */
-	static readonly START_LOADER_JOB = "neptune-db:StartLoaderJob";
+	static readonly StartLoaderJob = "neptune-db:StartLoaderJob";
 	/** [Write] neptune-db:StartMLDataProcessingJob */
-	static readonly START_ML_DATA_PROCESSING_JOB =
+	static readonly StartMLDataProcessingJob =
 		"neptune-db:StartMLDataProcessingJob";
 	/** [Write] neptune-db:StartMLModelTrainingJob */
-	static readonly START_ML_MODEL_TRAINING_JOB =
+	static readonly StartMLModelTrainingJob =
 		"neptune-db:StartMLModelTrainingJob";
 	/** [Write] neptune-db:StartMLModelTransformJob */
-	static readonly START_ML_MODEL_TRANSFORM_JOB =
+	static readonly StartMLModelTransformJob =
 		"neptune-db:StartMLModelTransformJob";
 	/** [Write] neptune-db:WriteDataViaQuery */
-	static readonly WRITE_DATA_VIA_QUERY = "neptune-db:WriteDataViaQuery";
+	static readonly WriteDataViaQuery = "neptune-db:WriteDataViaQuery";
 	/** [Write] neptune-db:connect */
-	static readonly CONNECT = "neptune-db:connect";
+	static readonly connect = "neptune-db:connect";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NeptuneDBActions.GET_ENGINE_STATUS,
-		NeptuneDBActions.GET_GRAPH_SUMMARY,
-		NeptuneDBActions.GET_LOADER_JOB_STATUS,
-		NeptuneDBActions.GET_ML_DATA_PROCESSING_JOB_STATUS,
-		NeptuneDBActions.GET_ML_ENDPOINT_STATUS,
-		NeptuneDBActions.GET_ML_MODEL_TRAINING_JOB_STATUS,
-		NeptuneDBActions.GET_ML_MODEL_TRANSFORM_JOB_STATUS,
-		NeptuneDBActions.GET_QUERY_STATUS,
-		NeptuneDBActions.GET_STATISTICS_STATUS,
-		NeptuneDBActions.GET_STREAM_RECORDS,
-		NeptuneDBActions.READ_DATA_VIA_QUERY,
+	static readonly AllReadActions: string[] = [
+		NeptuneDBActions.actionGetEngineStatus,
+		NeptuneDBActions.actionGetGraphSummary,
+		NeptuneDBActions.actionGetLoaderJobStatus,
+		NeptuneDBActions.actionGetMLDataProcessingJobStatus,
+		NeptuneDBActions.actionGetMLEndpointStatus,
+		NeptuneDBActions.actionGetMLModelTrainingJobStatus,
+		NeptuneDBActions.actionGetMLModelTransformJobStatus,
+		NeptuneDBActions.actionGetQueryStatus,
+		NeptuneDBActions.actionGetStatisticsStatus,
+		NeptuneDBActions.actionGetStreamRecords,
+		NeptuneDBActions.ReadDataViaQuery,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NeptuneDBActions.CANCEL_LOADER_JOB,
-		NeptuneDBActions.CANCEL_ML_DATA_PROCESSING_JOB,
-		NeptuneDBActions.CANCEL_ML_MODEL_TRAINING_JOB,
-		NeptuneDBActions.CANCEL_ML_MODEL_TRANSFORM_JOB,
-		NeptuneDBActions.CANCEL_QUERY,
-		NeptuneDBActions.CREATE_ML_ENDPOINT,
-		NeptuneDBActions.DELETE_DATA_VIA_QUERY,
-		NeptuneDBActions.DELETE_ML_ENDPOINT,
-		NeptuneDBActions.DELETE_STATISTICS,
-		NeptuneDBActions.MANAGE_STATISTICS,
-		NeptuneDBActions.RESET_DATABASE,
-		NeptuneDBActions.START_LOADER_JOB,
-		NeptuneDBActions.START_ML_DATA_PROCESSING_JOB,
-		NeptuneDBActions.START_ML_MODEL_TRAINING_JOB,
-		NeptuneDBActions.START_ML_MODEL_TRANSFORM_JOB,
-		NeptuneDBActions.WRITE_DATA_VIA_QUERY,
-		NeptuneDBActions.CONNECT,
+	static readonly AllWriteActions: string[] = [
+		NeptuneDBActions.CancelLoaderJob,
+		NeptuneDBActions.CancelMLDataProcessingJob,
+		NeptuneDBActions.CancelMLModelTrainingJob,
+		NeptuneDBActions.CancelMLModelTransformJob,
+		NeptuneDBActions.CancelQuery,
+		NeptuneDBActions.CreateMLEndpoint,
+		NeptuneDBActions.DeleteDataViaQuery,
+		NeptuneDBActions.DeleteMLEndpoint,
+		NeptuneDBActions.DeleteStatistics,
+		NeptuneDBActions.ManageStatistics,
+		NeptuneDBActions.ResetDatabase,
+		NeptuneDBActions.StartLoaderJob,
+		NeptuneDBActions.StartMLDataProcessingJob,
+		NeptuneDBActions.StartMLModelTrainingJob,
+		NeptuneDBActions.StartMLModelTransformJob,
+		NeptuneDBActions.WriteDataViaQuery,
+		NeptuneDBActions.connect,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NeptuneDBActions.LIST_LOADER_JOBS,
-		NeptuneDBActions.LIST_ML_DATA_PROCESSING_JOBS,
-		NeptuneDBActions.LIST_ML_ENDPOINTS,
-		NeptuneDBActions.LIST_ML_MODEL_TRAINING_JOBS,
-		NeptuneDBActions.LIST_ML_MODEL_TRANSFORM_JOBS,
+	static readonly AllListActions: string[] = [
+		NeptuneDBActions.ListLoaderJobs,
+		NeptuneDBActions.ListMLDataProcessingJobs,
+		NeptuneDBActions.ListMLEndpoints,
+		NeptuneDBActions.ListMLModelTrainingJobs,
+		NeptuneDBActions.ListMLModelTransformJobs,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const DatabaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):neptune-db:(?<region>[^:]*):(?<account>[^:]*):(?<clusterResourceId>[^:/?]+)/.*$",
-);
+/**
+ * Properties for building a database ARN.
+ */
+export interface NeptuneDBDatabaseArnProps {
+	/** The ClusterResourceId component of the ARN. */
+	readonly clusterResourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a database ARN.
+ */
+export interface NeptuneDBDatabaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterResourceId component. */
+	readonly clusterResourceId: string;
+}
+
+const DatabaseArnRegex =
+	/^arn:(?<partition>[^:]+):neptune-db:(?<region>[^:]*):(?<account>[^:]*):(?<clusterResourceId>[^:/?]+)\/.*$/;
 
 /**
  * ARN builders, validators, and parsers for neptune-db resources.
@@ -150,16 +177,7 @@ export class NeptuneDBResources {
 	/**
 	 * Builds an ARN for the database resource.
 	 */
-	static database(props: {
-		/** The ClusterResourceId component of the ARN. */
-		readonly clusterResourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static database(props: NeptuneDBDatabaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:neptune-db:${props.region ?? "*"}:${props.account ?? "*"}:${props.clusterResourceId}/*`;
 	}
 
@@ -174,12 +192,7 @@ export class NeptuneDBResources {
 	 * Parses a database ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatabaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterResourceId: string;
-	} {
+	static parseDatabaseArn(arn: string): NeptuneDBDatabaseArnComponents {
 		const match = DatabaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid database ARN: ${arn}`);
@@ -198,91 +211,91 @@ export class NeptuneDBResources {
  */
 export class NeptuneDBOperations {
 	/** IAM actions required for the CancelGremlinQuery API call. */
-	static readonly CANCEL_GREMLIN_QUERY: string[] = [];
+	static readonly CancelGremlinQuery: string[] = [];
 	/** IAM actions required for the CancelLoaderJob API call. */
-	static readonly CANCEL_LOADER_JOB: string[] = [];
+	static readonly CancelLoaderJob: string[] = [];
 	/** IAM actions required for the CancelMLDataProcessingJob API call. */
-	static readonly CANCEL_ML_DATA_PROCESSING_JOB: string[] = [];
+	static readonly CancelMLDataProcessingJob: string[] = [];
 	/** IAM actions required for the CancelMLModelTrainingJob API call. */
-	static readonly CANCEL_ML_MODEL_TRAINING_JOB: string[] = [];
+	static readonly CancelMLModelTrainingJob: string[] = [];
 	/** IAM actions required for the CancelMLModelTransformJob API call. */
-	static readonly CANCEL_ML_MODEL_TRANSFORM_JOB: string[] = [];
+	static readonly CancelMLModelTransformJob: string[] = [];
 	/** IAM actions required for the CancelOpenCypherQuery API call. */
-	static readonly CANCEL_OPEN_CYPHER_QUERY: string[] = [];
+	static readonly CancelOpenCypherQuery: string[] = [];
 	/** IAM actions required for the CreateMLEndpoint API call. */
-	static readonly CREATE_ML_ENDPOINT: string[] = [];
+	static readonly CreateMLEndpoint: string[] = [];
 	/** IAM actions required for the DeleteMLEndpoint API call. */
-	static readonly DELETE_ML_ENDPOINT: string[] = [];
+	static readonly DeleteMLEndpoint: string[] = [];
 	/** IAM actions required for the DeletePropertygraphStatistics API call. */
-	static readonly DELETE_PROPERTYGRAPH_STATISTICS: string[] = [];
+	static readonly DeletePropertygraphStatistics: string[] = [];
 	/** IAM actions required for the DeleteSparqlStatistics API call. */
-	static readonly DELETE_SPARQL_STATISTICS: string[] = [];
+	static readonly DeleteSparqlStatistics: string[] = [];
 	/** IAM actions required for the ExecuteFastReset API call. */
-	static readonly EXECUTE_FAST_RESET: string[] = [];
+	static readonly ExecuteFastReset: string[] = [];
 	/** IAM actions required for the ExecuteGremlinExplainQuery API call. */
-	static readonly EXECUTE_GREMLIN_EXPLAIN_QUERY: string[] = [];
+	static readonly ExecuteGremlinExplainQuery: string[] = [];
 	/** IAM actions required for the ExecuteGremlinProfileQuery API call. */
-	static readonly EXECUTE_GREMLIN_PROFILE_QUERY: string[] = [];
+	static readonly ExecuteGremlinProfileQuery: string[] = [];
 	/** IAM actions required for the ExecuteGremlinQuery API call. */
-	static readonly EXECUTE_GREMLIN_QUERY: string[] = [];
+	static readonly ExecuteGremlinQuery: string[] = [];
 	/** IAM actions required for the ExecuteOpenCypherExplainQuery API call. */
-	static readonly EXECUTE_OPEN_CYPHER_EXPLAIN_QUERY: string[] = [];
+	static readonly ExecuteOpenCypherExplainQuery: string[] = [];
 	/** IAM actions required for the ExecuteOpenCypherQuery API call. */
-	static readonly EXECUTE_OPEN_CYPHER_QUERY: string[] = [];
+	static readonly ExecuteOpenCypherQuery: string[] = [];
 	/** IAM actions required for the GetEngineStatus API call. */
-	static readonly GET_ENGINE_STATUS: string[] = [];
+	static readonly opGetEngineStatus: string[] = [];
 	/** IAM actions required for the GetGremlinQueryStatus API call. */
-	static readonly GET_GREMLIN_QUERY_STATUS: string[] = [];
+	static readonly opGetGremlinQueryStatus: string[] = [];
 	/** IAM actions required for the GetLoaderJobStatus API call. */
-	static readonly GET_LOADER_JOB_STATUS: string[] = [];
+	static readonly opGetLoaderJobStatus: string[] = [];
 	/** IAM actions required for the GetMLDataProcessingJob API call. */
-	static readonly GET_ML_DATA_PROCESSING_JOB: string[] = [];
+	static readonly opGetMLDataProcessingJob: string[] = [];
 	/** IAM actions required for the GetMLEndpoint API call. */
-	static readonly GET_ML_ENDPOINT: string[] = [];
+	static readonly opGetMLEndpoint: string[] = [];
 	/** IAM actions required for the GetMLModelTrainingJob API call. */
-	static readonly GET_ML_MODEL_TRAINING_JOB: string[] = [];
+	static readonly opGetMLModelTrainingJob: string[] = [];
 	/** IAM actions required for the GetMLModelTransformJob API call. */
-	static readonly GET_ML_MODEL_TRANSFORM_JOB: string[] = [];
+	static readonly opGetMLModelTransformJob: string[] = [];
 	/** IAM actions required for the GetOpenCypherQueryStatus API call. */
-	static readonly GET_OPEN_CYPHER_QUERY_STATUS: string[] = [];
+	static readonly opGetOpenCypherQueryStatus: string[] = [];
 	/** IAM actions required for the GetPropertygraphStatistics API call. */
-	static readonly GET_PROPERTYGRAPH_STATISTICS: string[] = [];
+	static readonly opGetPropertygraphStatistics: string[] = [];
 	/** IAM actions required for the GetPropertygraphStream API call. */
-	static readonly GET_PROPERTYGRAPH_STREAM: string[] = [];
+	static readonly opGetPropertygraphStream: string[] = [];
 	/** IAM actions required for the GetPropertygraphSummary API call. */
-	static readonly GET_PROPERTYGRAPH_SUMMARY: string[] = [];
+	static readonly opGetPropertygraphSummary: string[] = [];
 	/** IAM actions required for the GetRDFGraphSummary API call. */
-	static readonly GET_RDF_GRAPH_SUMMARY: string[] = [];
+	static readonly opGetRDFGraphSummary: string[] = [];
 	/** IAM actions required for the GetSparqlStatistics API call. */
-	static readonly GET_SPARQL_STATISTICS: string[] = [];
+	static readonly opGetSparqlStatistics: string[] = [];
 	/** IAM actions required for the GetSparqlStream API call. */
-	static readonly GET_SPARQL_STREAM: string[] = [];
+	static readonly opGetSparqlStream: string[] = [];
 	/** IAM actions required for the ListGremlinQueries API call. */
-	static readonly LIST_GREMLIN_QUERIES: string[] = [];
+	static readonly ListGremlinQueries: string[] = [];
 	/** IAM actions required for the ListLoaderJobs API call. */
-	static readonly LIST_LOADER_JOBS: string[] = [];
+	static readonly ListLoaderJobs: string[] = [];
 	/** IAM actions required for the ListMLDataProcessingJobs API call. */
-	static readonly LIST_ML_DATA_PROCESSING_JOBS: string[] = [];
+	static readonly ListMLDataProcessingJobs: string[] = [];
 	/** IAM actions required for the ListMLEndpoints API call. */
-	static readonly LIST_ML_ENDPOINTS: string[] = [];
+	static readonly ListMLEndpoints: string[] = [];
 	/** IAM actions required for the ListMLModelTrainingJobs API call. */
-	static readonly LIST_ML_MODEL_TRAINING_JOBS: string[] = [];
+	static readonly ListMLModelTrainingJobs: string[] = [];
 	/** IAM actions required for the ListMLModelTransformJobs API call. */
-	static readonly LIST_ML_MODEL_TRANSFORM_JOBS: string[] = [];
+	static readonly ListMLModelTransformJobs: string[] = [];
 	/** IAM actions required for the ListOpenCypherQueries API call. */
-	static readonly LIST_OPEN_CYPHER_QUERIES: string[] = [];
+	static readonly ListOpenCypherQueries: string[] = [];
 	/** IAM actions required for the ManagePropertygraphStatistics API call. */
-	static readonly MANAGE_PROPERTYGRAPH_STATISTICS: string[] = [];
+	static readonly ManagePropertygraphStatistics: string[] = [];
 	/** IAM actions required for the ManageSparqlStatistics API call. */
-	static readonly MANAGE_SPARQL_STATISTICS: string[] = [];
+	static readonly ManageSparqlStatistics: string[] = [];
 	/** IAM actions required for the StartLoaderJob API call. */
-	static readonly START_LOADER_JOB: string[] = [];
+	static readonly StartLoaderJob: string[] = [];
 	/** IAM actions required for the StartMLDataProcessingJob API call. */
-	static readonly START_ML_DATA_PROCESSING_JOB: string[] = [];
+	static readonly StartMLDataProcessingJob: string[] = [];
 	/** IAM actions required for the StartMLModelTrainingJob API call. */
-	static readonly START_ML_MODEL_TRAINING_JOB: string[] = [];
+	static readonly StartMLModelTrainingJob: string[] = [];
 	/** IAM actions required for the StartMLModelTransformJob API call. */
-	static readonly START_ML_MODEL_TRANSFORM_JOB: string[] = [];
+	static readonly StartMLModelTransformJob: string[] = [];
 }
 
 /**
@@ -290,23 +303,23 @@ export class NeptuneDBOperations {
  */
 export class NeptuneDBConditions {
 	/** Condition keys applicable to the DeleteDataViaQuery action. */
-	static readonly DELETE_DATA_VIA_QUERY_CONDITION_KEYS: string[] = [
+	static readonly DeleteDataViaQueryConditionKeys: string[] = [
 		"neptune-db:QueryLanguage",
 	];
 	/** Condition keys applicable to the GetQueryStatus action. */
-	static readonly GET_QUERY_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetQueryStatusConditionKeys: string[] = [
 		"neptune-db:QueryLanguage",
 	];
 	/** Condition keys applicable to the GetStreamRecords action. */
-	static readonly GET_STREAM_RECORDS_CONDITION_KEYS: string[] = [
+	static readonly actionGetStreamRecordsConditionKeys: string[] = [
 		"neptune-db:QueryLanguage",
 	];
 	/** Condition keys applicable to the ReadDataViaQuery action. */
-	static readonly READ_DATA_VIA_QUERY_CONDITION_KEYS: string[] = [
+	static readonly ReadDataViaQueryConditionKeys: string[] = [
 		"neptune-db:QueryLanguage",
 	];
 	/** Condition keys applicable to the WriteDataViaQuery action. */
-	static readonly WRITE_DATA_VIA_QUERY_CONDITION_KEYS: string[] = [
+	static readonly WriteDataViaQueryConditionKeys: string[] = [
 		"neptune-db:QueryLanguage",
 	];
 

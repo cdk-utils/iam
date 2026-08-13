@@ -13,118 +13,163 @@ export class InvoicingActions {
 	static readonly SERVICE_PREFIX = "invoicing";
 
 	/** [Read] invoicing:BatchGetInvoiceProfile */
-	static readonly BATCH_GET_INVOICE_PROFILE =
-		"invoicing:BatchGetInvoiceProfile";
+	static readonly BatchGetInvoiceProfile = "invoicing:BatchGetInvoiceProfile";
 	/** [Write] invoicing:CreateInvoiceUnit */
-	static readonly CREATE_INVOICE_UNIT = "invoicing:CreateInvoiceUnit";
+	static readonly CreateInvoiceUnit = "invoicing:CreateInvoiceUnit";
 	/** [Write] invoicing:CreateProcurementPortalPreference */
-	static readonly CREATE_PROCUREMENT_PORTAL_PREFERENCE =
+	static readonly CreateProcurementPortalPreference =
 		"invoicing:CreateProcurementPortalPreference";
 	/** [Write] invoicing:DeleteInvoiceUnit */
-	static readonly DELETE_INVOICE_UNIT = "invoicing:DeleteInvoiceUnit";
+	static readonly DeleteInvoiceUnit = "invoicing:DeleteInvoiceUnit";
 	/** [Write] invoicing:DeleteProcurementPortalPreference */
-	static readonly DELETE_PROCUREMENT_PORTAL_PREFERENCE =
+	static readonly DeleteProcurementPortalPreference =
 		"invoicing:DeleteProcurementPortalPreference";
 	/** [Read] invoicing:GetInvoiceCorrection */
-	static readonly GET_INVOICE_CORRECTION = "invoicing:GetInvoiceCorrection";
+	static readonly actionGetInvoiceCorrection = "invoicing:GetInvoiceCorrection";
 	/** [Read] invoicing:GetInvoiceEmailDeliveryPreferences */
-	static readonly GET_INVOICE_EMAIL_DELIVERY_PREFERENCES =
+	static readonly actionGetInvoiceEmailDeliveryPreferences =
 		"invoicing:GetInvoiceEmailDeliveryPreferences";
 	/** [Read] invoicing:GetInvoicePDF */
-	static readonly GET_INVOICE_PDF = "invoicing:GetInvoicePDF";
+	static readonly actionGetInvoicePDF = "invoicing:GetInvoicePDF";
 	/** [Read] invoicing:GetInvoiceUnit */
-	static readonly GET_INVOICE_UNIT = "invoicing:GetInvoiceUnit";
+	static readonly actionGetInvoiceUnit = "invoicing:GetInvoiceUnit";
 	/** [Read] invoicing:GetProcurementPortalPreference */
-	static readonly GET_PROCUREMENT_PORTAL_PREFERENCE =
+	static readonly actionGetProcurementPortalPreference =
 		"invoicing:GetProcurementPortalPreference";
 	/** [List] invoicing:ListInvoiceCorrections */
-	static readonly LIST_INVOICE_CORRECTIONS = "invoicing:ListInvoiceCorrections";
+	static readonly ListInvoiceCorrections = "invoicing:ListInvoiceCorrections";
 	/** [Read] invoicing:ListInvoiceSummaries */
-	static readonly LIST_INVOICE_SUMMARIES = "invoicing:ListInvoiceSummaries";
+	static readonly ListInvoiceSummaries = "invoicing:ListInvoiceSummaries";
 	/** [List] invoicing:ListInvoiceUnits */
-	static readonly LIST_INVOICE_UNITS = "invoicing:ListInvoiceUnits";
+	static readonly ListInvoiceUnits = "invoicing:ListInvoiceUnits";
 	/** [List] invoicing:ListProcurementPortalPreferences */
-	static readonly LIST_PROCUREMENT_PORTAL_PREFERENCES =
+	static readonly ListProcurementPortalPreferences =
 		"invoicing:ListProcurementPortalPreferences";
 	/** [List] invoicing:ListProcurementPortalSuppliers */
-	static readonly LIST_PROCUREMENT_PORTAL_SUPPLIERS =
+	static readonly ListProcurementPortalSuppliers =
 		"invoicing:ListProcurementPortalSuppliers";
 	/** [List] invoicing:ListProcurementPortals */
-	static readonly LIST_PROCUREMENT_PORTALS = "invoicing:ListProcurementPortals";
+	static readonly ListProcurementPortals = "invoicing:ListProcurementPortals";
 	/** [Read] invoicing:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "invoicing:ListTagsForResource";
+	static readonly ListTagsForResource = "invoicing:ListTagsForResource";
 	/** [Write] invoicing:PutInvoiceEmailDeliveryPreferences */
-	static readonly PUT_INVOICE_EMAIL_DELIVERY_PREFERENCES =
+	static readonly PutInvoiceEmailDeliveryPreferences =
 		"invoicing:PutInvoiceEmailDeliveryPreferences";
 	/** [Write] invoicing:PutProcurementPortalPreference */
-	static readonly PUT_PROCUREMENT_PORTAL_PREFERENCE =
+	static readonly PutProcurementPortalPreference =
 		"invoicing:PutProcurementPortalPreference";
 	/** [Write] invoicing:SendProcurementPortalValidation */
-	static readonly SEND_PROCUREMENT_PORTAL_VALIDATION =
+	static readonly SendProcurementPortalValidation =
 		"invoicing:SendProcurementPortalValidation";
 	/** [Write] invoicing:StartInvoiceCorrection */
-	static readonly START_INVOICE_CORRECTION = "invoicing:StartInvoiceCorrection";
+	static readonly StartInvoiceCorrection = "invoicing:StartInvoiceCorrection";
 	/** [Tagging] invoicing:TagResource */
-	static readonly TAG_RESOURCE = "invoicing:TagResource";
+	static readonly TagResource = "invoicing:TagResource";
 	/** [Tagging] invoicing:UntagResource */
-	static readonly UNTAG_RESOURCE = "invoicing:UntagResource";
+	static readonly UntagResource = "invoicing:UntagResource";
 	/** [Write] invoicing:UpdateInvoiceUnit */
-	static readonly UPDATE_INVOICE_UNIT = "invoicing:UpdateInvoiceUnit";
+	static readonly UpdateInvoiceUnit = "invoicing:UpdateInvoiceUnit";
 	/** [Write] invoicing:UpdateProcurementPortalPreferenceStatus */
-	static readonly UPDATE_PROCUREMENT_PORTAL_PREFERENCE_STATUS =
+	static readonly UpdateProcurementPortalPreferenceStatus =
 		"invoicing:UpdateProcurementPortalPreferenceStatus";
 	/** [Write] invoicing:VerifyProcurementPortalValidation */
-	static readonly VERIFY_PROCUREMENT_PORTAL_VALIDATION =
+	static readonly VerifyProcurementPortalValidation =
 		"invoicing:VerifyProcurementPortalValidation";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		InvoicingActions.BATCH_GET_INVOICE_PROFILE,
-		InvoicingActions.GET_INVOICE_CORRECTION,
-		InvoicingActions.GET_INVOICE_EMAIL_DELIVERY_PREFERENCES,
-		InvoicingActions.GET_INVOICE_PDF,
-		InvoicingActions.GET_INVOICE_UNIT,
-		InvoicingActions.GET_PROCUREMENT_PORTAL_PREFERENCE,
-		InvoicingActions.LIST_INVOICE_SUMMARIES,
-		InvoicingActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		InvoicingActions.BatchGetInvoiceProfile,
+		InvoicingActions.actionGetInvoiceCorrection,
+		InvoicingActions.actionGetInvoiceEmailDeliveryPreferences,
+		InvoicingActions.actionGetInvoicePDF,
+		InvoicingActions.actionGetInvoiceUnit,
+		InvoicingActions.actionGetProcurementPortalPreference,
+		InvoicingActions.ListInvoiceSummaries,
+		InvoicingActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		InvoicingActions.CREATE_INVOICE_UNIT,
-		InvoicingActions.CREATE_PROCUREMENT_PORTAL_PREFERENCE,
-		InvoicingActions.DELETE_INVOICE_UNIT,
-		InvoicingActions.DELETE_PROCUREMENT_PORTAL_PREFERENCE,
-		InvoicingActions.PUT_INVOICE_EMAIL_DELIVERY_PREFERENCES,
-		InvoicingActions.PUT_PROCUREMENT_PORTAL_PREFERENCE,
-		InvoicingActions.SEND_PROCUREMENT_PORTAL_VALIDATION,
-		InvoicingActions.START_INVOICE_CORRECTION,
-		InvoicingActions.UPDATE_INVOICE_UNIT,
-		InvoicingActions.UPDATE_PROCUREMENT_PORTAL_PREFERENCE_STATUS,
-		InvoicingActions.VERIFY_PROCUREMENT_PORTAL_VALIDATION,
+	static readonly AllWriteActions: string[] = [
+		InvoicingActions.CreateInvoiceUnit,
+		InvoicingActions.CreateProcurementPortalPreference,
+		InvoicingActions.DeleteInvoiceUnit,
+		InvoicingActions.DeleteProcurementPortalPreference,
+		InvoicingActions.PutInvoiceEmailDeliveryPreferences,
+		InvoicingActions.PutProcurementPortalPreference,
+		InvoicingActions.SendProcurementPortalValidation,
+		InvoicingActions.StartInvoiceCorrection,
+		InvoicingActions.UpdateInvoiceUnit,
+		InvoicingActions.UpdateProcurementPortalPreferenceStatus,
+		InvoicingActions.VerifyProcurementPortalValidation,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		InvoicingActions.LIST_INVOICE_CORRECTIONS,
-		InvoicingActions.LIST_INVOICE_UNITS,
-		InvoicingActions.LIST_PROCUREMENT_PORTAL_PREFERENCES,
-		InvoicingActions.LIST_PROCUREMENT_PORTAL_SUPPLIERS,
-		InvoicingActions.LIST_PROCUREMENT_PORTALS,
+	static readonly AllListActions: string[] = [
+		InvoicingActions.ListInvoiceCorrections,
+		InvoicingActions.ListInvoiceUnits,
+		InvoicingActions.ListProcurementPortalPreferences,
+		InvoicingActions.ListProcurementPortalSuppliers,
+		InvoicingActions.ListProcurementPortals,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		InvoicingActions.TAG_RESOURCE,
-		InvoicingActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		InvoicingActions.TagResource,
+		InvoicingActions.UntagResource,
 	];
 }
 
-const InvoiceUnitArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):invoicing::(?<account>[^:]*):invoice-unit/(?<identifier>[^:/?]+)$",
-);
-const ProcurementPortalPreferenceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):invoicing::(?<account>[^:]*):procurement-portal-preference/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a invoice-unit ARN.
+ */
+export interface InvoicingInvoiceUnitArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a invoice-unit ARN.
+ */
+export interface InvoicingInvoiceUnitArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a procurement-portal-preference ARN.
+ */
+export interface InvoicingProcurementPortalPreferenceArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a procurement-portal-preference ARN.
+ */
+export interface InvoicingProcurementPortalPreferenceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const InvoiceUnitArnRegex =
+	/^arn:(?<partition>[^:]+):invoicing::(?<account>[^:]*):invoice-unit\/(?<identifier>[^:/?]+)$/;
+const ProcurementPortalPreferenceArnRegex =
+	/^arn:(?<partition>[^:]+):invoicing::(?<account>[^:]*):procurement-portal-preference\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for invoicing resources.
@@ -133,14 +178,7 @@ export class InvoicingResources {
 	/**
 	 * Builds an ARN for the invoice-unit resource.
 	 */
-	static invoiceUnit(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static invoiceUnit(props: InvoicingInvoiceUnitArnProps): string {
 		return `arn:${props.partition ?? "aws"}:invoicing::${props.account ?? "*"}:invoice-unit/${props.identifier}`;
 	}
 
@@ -155,11 +193,7 @@ export class InvoicingResources {
 	 * Parses a invoice-unit ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInvoiceUnitArn(arn: string): {
-		partition: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseInvoiceUnitArn(arn: string): InvoicingInvoiceUnitArnComponents {
 		const match = InvoiceUnitArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid invoice-unit ARN: ${arn}`);
@@ -174,14 +208,9 @@ export class InvoicingResources {
 	/**
 	 * Builds an ARN for the procurement-portal-preference resource.
 	 */
-	static procurementPortalPreference(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static procurementPortalPreference(
+		props: InvoicingProcurementPortalPreferenceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:invoicing::${props.account ?? "*"}:procurement-portal-preference/${props.identifier}`;
 	}
 
@@ -196,11 +225,9 @@ export class InvoicingResources {
 	 * Parses a procurement-portal-preference ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProcurementPortalPreferenceArn(arn: string): {
-		partition: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseProcurementPortalPreferenceArn(
+		arn: string,
+	): InvoicingProcurementPortalPreferenceArnComponents {
 		const match = ProcurementPortalPreferenceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid procurement-portal-preference ARN: ${arn}`);
@@ -218,98 +245,98 @@ export class InvoicingResources {
  */
 export class InvoicingOperations {
 	/** IAM actions required for the BatchGetInvoiceProfile API call. */
-	static readonly BATCH_GET_INVOICE_PROFILE: string[] = [
+	static readonly BatchGetInvoiceProfile: string[] = [
 		"invoicing:BatchGetInvoiceProfile",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the CreateInvoiceUnit API call. */
-	static readonly CREATE_INVOICE_UNIT: string[] = [
+	static readonly CreateInvoiceUnit: string[] = [
 		"invoicing:CreateInvoiceUnit",
 		"invoicing:TagResource",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the CreateProcurementPortalPreference API call. */
-	static readonly CREATE_PROCUREMENT_PORTAL_PREFERENCE: string[] = [
+	static readonly CreateProcurementPortalPreference: string[] = [
 		"invoicing:CreateProcurementPortalPreference",
 		"aws-portal:ModifyBilling",
 		"invoicing:TagResource",
 	];
 	/** IAM actions required for the DeleteInvoiceUnit API call. */
-	static readonly DELETE_INVOICE_UNIT: string[] = [
+	static readonly DeleteInvoiceUnit: string[] = [
 		"invoicing:DeleteInvoiceUnit",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the DeleteProcurementPortalPreference API call. */
-	static readonly DELETE_PROCUREMENT_PORTAL_PREFERENCE: string[] = [
+	static readonly DeleteProcurementPortalPreference: string[] = [
 		"invoicing:DeleteProcurementPortalPreference",
 		"aws-portal:ModifyBilling",
 	];
 	/** IAM actions required for the GetInvoicePDF API call. */
-	static readonly GET_INVOICE_PDF: string[] = [
+	static readonly opGetInvoicePDF: string[] = [
 		"invoicing:GetInvoicePDF",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetInvoiceUnit API call. */
-	static readonly GET_INVOICE_UNIT: string[] = [
+	static readonly opGetInvoiceUnit: string[] = [
 		"invoicing:GetInvoiceUnit",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetProcurementPortalPreference API call. */
-	static readonly GET_PROCUREMENT_PORTAL_PREFERENCE: string[] = [
+	static readonly opGetProcurementPortalPreference: string[] = [
 		"invoicing:GetProcurementPortalPreference",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListInvoiceSummaries API call. */
-	static readonly LIST_INVOICE_SUMMARIES: string[] = [
+	static readonly ListInvoiceSummaries: string[] = [
 		"invoicing:ListInvoiceSummaries",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListInvoiceUnits API call. */
-	static readonly LIST_INVOICE_UNITS: string[] = [
+	static readonly ListInvoiceUnits: string[] = [
 		"invoicing:ListInvoiceUnits",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListProcurementPortalPreferences API call. */
-	static readonly LIST_PROCUREMENT_PORTAL_PREFERENCES: string[] = [
+	static readonly ListProcurementPortalPreferences: string[] = [
 		"invoicing:ListProcurementPortalPreferences",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"invoicing:ListTagsForResource",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the PutProcurementPortalPreference API call. */
-	static readonly PUT_PROCUREMENT_PORTAL_PREFERENCE: string[] = [
+	static readonly PutProcurementPortalPreference: string[] = [
 		"aws-portal:ModifyBilling",
 		"invoicing:PutProcurementPortalPreference",
 	];
 	/** IAM actions required for the SendProcurementPortalValidation API call. */
-	static readonly SEND_PROCUREMENT_PORTAL_VALIDATION: string[] = [
+	static readonly SendProcurementPortalValidation: string[] = [
 		"invoicing:SendProcurementPortalValidation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"aws-portal:ModifyBilling",
 		"invoicing:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"aws-portal:ModifyBilling",
 		"invoicing:UntagResource",
 	];
 	/** IAM actions required for the UpdateInvoiceUnit API call. */
-	static readonly UPDATE_INVOICE_UNIT: string[] = [
+	static readonly UpdateInvoiceUnit: string[] = [
 		"invoicing:UpdateInvoiceUnit",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the UpdateProcurementPortalPreferenceStatus API call. */
-	static readonly UPDATE_PROCUREMENT_PORTAL_PREFERENCE_STATUS: string[] = [
+	static readonly UpdateProcurementPortalPreferenceStatus: string[] = [
 		"aws-portal:ModifyBilling",
 		"invoicing:UpdateProcurementPortalPreferenceStatus",
 	];
 	/** IAM actions required for the VerifyProcurementPortalValidation API call. */
-	static readonly VERIFY_PROCUREMENT_PORTAL_VALIDATION: string[] = [
+	static readonly VerifyProcurementPortalValidation: string[] = [
 		"invoicing:VerifyProcurementPortalValidation",
 	];
 }
@@ -319,59 +346,63 @@ export class InvoicingOperations {
  */
 export class InvoicingConditions {
 	/** Condition keys applicable to the CreateInvoiceUnit action. */
-	static readonly CREATE_INVOICE_UNIT_CONDITION_KEYS: string[] = [
+	static readonly CreateInvoiceUnitConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProcurementPortalPreference action. */
-	static readonly CREATE_PROCUREMENT_PORTAL_PREFERENCE_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly CreateProcurementPortalPreferenceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteInvoiceUnit action. */
-	static readonly DELETE_INVOICE_UNIT_CONDITION_KEYS: string[] = [
+	static readonly DeleteInvoiceUnitConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteProcurementPortalPreference action. */
-	static readonly DELETE_PROCUREMENT_PORTAL_PREFERENCE_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteProcurementPortalPreferenceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutProcurementPortalPreference action. */
-	static readonly PUT_PROCUREMENT_PORTAL_PREFERENCE_CONDITION_KEYS: string[] = [
+	static readonly PutProcurementPortalPreferenceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the SendProcurementPortalValidation action. */
-	static readonly SEND_PROCUREMENT_PORTAL_VALIDATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly SendProcurementPortalValidationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateInvoiceUnit action. */
-	static readonly UPDATE_INVOICE_UNIT_CONDITION_KEYS: string[] = [
+	static readonly UpdateInvoiceUnitConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateProcurementPortalPreferenceStatus action. */
-	static readonly UPDATE_PROCUREMENT_PORTAL_PREFERENCE_STATUS_CONDITION_KEYS: string[] =
+	static readonly UpdateProcurementPortalPreferenceStatusConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the VerifyProcurementPortalValidation action. */
-	static readonly VERIFY_PROCUREMENT_PORTAL_VALIDATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly VerifyProcurementPortalValidationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

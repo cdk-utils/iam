@@ -13,96 +13,150 @@ export class SyntheticsActions {
 	static readonly SERVICE_PREFIX = "synthetics";
 
 	/** [Write] synthetics:AssociateResource */
-	static readonly ASSOCIATE_RESOURCE = "synthetics:AssociateResource";
+	static readonly AssociateResource = "synthetics:AssociateResource";
 	/** [Write] synthetics:CreateCanary */
-	static readonly CREATE_CANARY = "synthetics:CreateCanary";
+	static readonly CreateCanary = "synthetics:CreateCanary";
 	/** [Write] synthetics:CreateGroup */
-	static readonly CREATE_GROUP = "synthetics:CreateGroup";
+	static readonly CreateGroup = "synthetics:CreateGroup";
 	/** [Write] synthetics:DeleteCanary */
-	static readonly DELETE_CANARY = "synthetics:DeleteCanary";
+	static readonly DeleteCanary = "synthetics:DeleteCanary";
 	/** [Write] synthetics:DeleteGroup */
-	static readonly DELETE_GROUP = "synthetics:DeleteGroup";
+	static readonly DeleteGroup = "synthetics:DeleteGroup";
 	/** [Read] synthetics:DescribeCanaries */
-	static readonly DESCRIBE_CANARIES = "synthetics:DescribeCanaries";
+	static readonly DescribeCanaries = "synthetics:DescribeCanaries";
 	/** [Read] synthetics:DescribeCanariesLastRun */
-	static readonly DESCRIBE_CANARIES_LAST_RUN =
+	static readonly DescribeCanariesLastRun =
 		"synthetics:DescribeCanariesLastRun";
 	/** [Read] synthetics:DescribeRuntimeVersions */
-	static readonly DESCRIBE_RUNTIME_VERSIONS =
+	static readonly DescribeRuntimeVersions =
 		"synthetics:DescribeRuntimeVersions";
 	/** [Write] synthetics:DisassociateResource */
-	static readonly DISASSOCIATE_RESOURCE = "synthetics:DisassociateResource";
+	static readonly DisassociateResource = "synthetics:DisassociateResource";
 	/** [Read] synthetics:GetCanary */
-	static readonly GET_CANARY = "synthetics:GetCanary";
+	static readonly actionGetCanary = "synthetics:GetCanary";
 	/** [Read] synthetics:GetCanaryRuns */
-	static readonly GET_CANARY_RUNS = "synthetics:GetCanaryRuns";
+	static readonly actionGetCanaryRuns = "synthetics:GetCanaryRuns";
 	/** [Read] synthetics:GetGroup */
-	static readonly GET_GROUP = "synthetics:GetGroup";
+	static readonly actionGetGroup = "synthetics:GetGroup";
 	/** [List] synthetics:ListAssociatedGroups */
-	static readonly LIST_ASSOCIATED_GROUPS = "synthetics:ListAssociatedGroups";
+	static readonly ListAssociatedGroups = "synthetics:ListAssociatedGroups";
 	/** [List] synthetics:ListGroupResources */
-	static readonly LIST_GROUP_RESOURCES = "synthetics:ListGroupResources";
+	static readonly ListGroupResources = "synthetics:ListGroupResources";
 	/** [List] synthetics:ListGroups */
-	static readonly LIST_GROUPS = "synthetics:ListGroups";
+	static readonly ListGroups = "synthetics:ListGroups";
 	/** [Read] synthetics:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "synthetics:ListTagsForResource";
+	static readonly ListTagsForResource = "synthetics:ListTagsForResource";
 	/** [Write] synthetics:StartCanary */
-	static readonly START_CANARY = "synthetics:StartCanary";
+	static readonly StartCanary = "synthetics:StartCanary";
 	/** [Write] synthetics:StartCanaryDryRun */
-	static readonly START_CANARY_DRY_RUN = "synthetics:StartCanaryDryRun";
+	static readonly StartCanaryDryRun = "synthetics:StartCanaryDryRun";
 	/** [Write] synthetics:StopCanary */
-	static readonly STOP_CANARY = "synthetics:StopCanary";
+	static readonly StopCanary = "synthetics:StopCanary";
 	/** [Tagging] synthetics:TagResource */
-	static readonly TAG_RESOURCE = "synthetics:TagResource";
+	static readonly TagResource = "synthetics:TagResource";
 	/** [Tagging] synthetics:UntagResource */
-	static readonly UNTAG_RESOURCE = "synthetics:UntagResource";
+	static readonly UntagResource = "synthetics:UntagResource";
 	/** [Write] synthetics:UpdateCanary */
-	static readonly UPDATE_CANARY = "synthetics:UpdateCanary";
+	static readonly UpdateCanary = "synthetics:UpdateCanary";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SyntheticsActions.DESCRIBE_CANARIES,
-		SyntheticsActions.DESCRIBE_CANARIES_LAST_RUN,
-		SyntheticsActions.DESCRIBE_RUNTIME_VERSIONS,
-		SyntheticsActions.GET_CANARY,
-		SyntheticsActions.GET_CANARY_RUNS,
-		SyntheticsActions.GET_GROUP,
-		SyntheticsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SyntheticsActions.DescribeCanaries,
+		SyntheticsActions.DescribeCanariesLastRun,
+		SyntheticsActions.DescribeRuntimeVersions,
+		SyntheticsActions.actionGetCanary,
+		SyntheticsActions.actionGetCanaryRuns,
+		SyntheticsActions.actionGetGroup,
+		SyntheticsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SyntheticsActions.ASSOCIATE_RESOURCE,
-		SyntheticsActions.CREATE_CANARY,
-		SyntheticsActions.CREATE_GROUP,
-		SyntheticsActions.DELETE_CANARY,
-		SyntheticsActions.DELETE_GROUP,
-		SyntheticsActions.DISASSOCIATE_RESOURCE,
-		SyntheticsActions.START_CANARY,
-		SyntheticsActions.START_CANARY_DRY_RUN,
-		SyntheticsActions.STOP_CANARY,
-		SyntheticsActions.UPDATE_CANARY,
+	static readonly AllWriteActions: string[] = [
+		SyntheticsActions.AssociateResource,
+		SyntheticsActions.CreateCanary,
+		SyntheticsActions.CreateGroup,
+		SyntheticsActions.DeleteCanary,
+		SyntheticsActions.DeleteGroup,
+		SyntheticsActions.DisassociateResource,
+		SyntheticsActions.StartCanary,
+		SyntheticsActions.StartCanaryDryRun,
+		SyntheticsActions.StopCanary,
+		SyntheticsActions.UpdateCanary,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SyntheticsActions.LIST_ASSOCIATED_GROUPS,
-		SyntheticsActions.LIST_GROUP_RESOURCES,
-		SyntheticsActions.LIST_GROUPS,
+	static readonly AllListActions: string[] = [
+		SyntheticsActions.ListAssociatedGroups,
+		SyntheticsActions.ListGroupResources,
+		SyntheticsActions.ListGroups,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SyntheticsActions.TAG_RESOURCE,
-		SyntheticsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SyntheticsActions.TagResource,
+		SyntheticsActions.UntagResource,
 	];
 }
 
-const CanaryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):synthetics:(?<region>[^:]*):(?<account>[^:]*):canary:(?<canaryName>[^:/?]+)$",
-);
-const GroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):synthetics:(?<region>[^:]*):(?<account>[^:]*):group:(?<groupId>[^:/?]+)$",
-);
+/**
+ * Properties for building a canary ARN.
+ */
+export interface SyntheticsCanaryArnProps {
+	/** The CanaryName component of the ARN. */
+	readonly canaryName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a canary ARN.
+ */
+export interface SyntheticsCanaryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CanaryName component. */
+	readonly canaryName: string;
+}
+
+/**
+ * Properties for building a group ARN.
+ */
+export interface SyntheticsGroupArnProps {
+	/** The GroupId component of the ARN. */
+	readonly groupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a group ARN.
+ */
+export interface SyntheticsGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GroupId component. */
+	readonly groupId: string;
+}
+
+const CanaryArnRegex =
+	/^arn:(?<partition>[^:]+):synthetics:(?<region>[^:]*):(?<account>[^:]*):canary:(?<canaryName>[^:/?]+)$/;
+const GroupArnRegex =
+	/^arn:(?<partition>[^:]+):synthetics:(?<region>[^:]*):(?<account>[^:]*):group:(?<groupId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for synthetics resources.
@@ -111,16 +165,7 @@ export class SyntheticsResources {
 	/**
 	 * Builds an ARN for the canary resource.
 	 */
-	static canary(props: {
-		/** The CanaryName component of the ARN. */
-		readonly canaryName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static canary(props: SyntheticsCanaryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:synthetics:${props.region ?? "*"}:${props.account ?? "*"}:canary:${props.canaryName}`;
 	}
 
@@ -135,12 +180,7 @@ export class SyntheticsResources {
 	 * Parses a canary ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCanaryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		canaryName: string;
-	} {
+	static parseCanaryArn(arn: string): SyntheticsCanaryArnComponents {
 		const match = CanaryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid canary ARN: ${arn}`);
@@ -156,16 +196,7 @@ export class SyntheticsResources {
 	/**
 	 * Builds an ARN for the group resource.
 	 */
-	static group(props: {
-		/** The GroupId component of the ARN. */
-		readonly groupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static group(props: SyntheticsGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:synthetics:${props.region ?? "*"}:${props.account ?? "*"}:group:${props.groupId}`;
 	}
 
@@ -180,12 +211,7 @@ export class SyntheticsResources {
 	 * Parses a group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		groupId: string;
-	} {
+	static parseGroupArn(arn: string): SyntheticsGroupArnComponents {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
@@ -204,79 +230,79 @@ export class SyntheticsResources {
  */
 export class SyntheticsOperations {
 	/** IAM actions required for the AssociateResource API call. */
-	static readonly ASSOCIATE_RESOURCE: string[] = [
+	static readonly AssociateResource: string[] = [
 		"synthetics:AssociateResource",
 	];
 	/** IAM actions required for the CreateCanary API call. */
-	static readonly CREATE_CANARY: string[] = [
+	static readonly CreateCanary: string[] = [
 		"synthetics:CreateCanary",
 		"iam:PassRole",
 		"synthetics:TagResource",
 	];
 	/** IAM actions required for the CreateGroup API call. */
-	static readonly CREATE_GROUP: string[] = [
+	static readonly CreateGroup: string[] = [
 		"synthetics:CreateGroup",
 		"synthetics:TagResource",
 	];
 	/** IAM actions required for the DeleteCanary API call. */
-	static readonly DELETE_CANARY: string[] = ["synthetics:DeleteCanary"];
+	static readonly DeleteCanary: string[] = ["synthetics:DeleteCanary"];
 	/** IAM actions required for the DeleteGroup API call. */
-	static readonly DELETE_GROUP: string[] = ["synthetics:DeleteGroup"];
+	static readonly DeleteGroup: string[] = ["synthetics:DeleteGroup"];
 	/** IAM actions required for the DescribeCanaries API call. */
-	static readonly DESCRIBE_CANARIES: string[] = [
+	static readonly DescribeCanaries: string[] = [
 		"synthetics:DescribeCanaries",
 		"synthetics:ListTagsForResource",
 	];
 	/** IAM actions required for the DescribeCanariesLastRun API call. */
-	static readonly DESCRIBE_CANARIES_LAST_RUN: string[] = [
+	static readonly DescribeCanariesLastRun: string[] = [
 		"synthetics:DescribeCanariesLastRun",
 	];
 	/** IAM actions required for the DescribeRuntimeVersions API call. */
-	static readonly DESCRIBE_RUNTIME_VERSIONS: string[] = [
+	static readonly DescribeRuntimeVersions: string[] = [
 		"synthetics:DescribeRuntimeVersions",
 	];
 	/** IAM actions required for the DisassociateResource API call. */
-	static readonly DISASSOCIATE_RESOURCE: string[] = [
+	static readonly DisassociateResource: string[] = [
 		"synthetics:DisassociateResource",
 	];
 	/** IAM actions required for the GetCanary API call. */
-	static readonly GET_CANARY: string[] = ["synthetics:GetCanary"];
+	static readonly opGetCanary: string[] = ["synthetics:GetCanary"];
 	/** IAM actions required for the GetCanaryRuns API call. */
-	static readonly GET_CANARY_RUNS: string[] = ["synthetics:GetCanaryRuns"];
+	static readonly opGetCanaryRuns: string[] = ["synthetics:GetCanaryRuns"];
 	/** IAM actions required for the GetGroup API call. */
-	static readonly GET_GROUP: string[] = [
+	static readonly opGetGroup: string[] = [
 		"synthetics:GetGroup",
 		"synthetics:ListTagsForResource",
 	];
 	/** IAM actions required for the ListAssociatedGroups API call. */
-	static readonly LIST_ASSOCIATED_GROUPS: string[] = [
+	static readonly ListAssociatedGroups: string[] = [
 		"synthetics:ListAssociatedGroups",
 	];
 	/** IAM actions required for the ListGroupResources API call. */
-	static readonly LIST_GROUP_RESOURCES: string[] = [
+	static readonly ListGroupResources: string[] = [
 		"synthetics:ListGroupResources",
 	];
 	/** IAM actions required for the ListGroups API call. */
-	static readonly LIST_GROUPS: string[] = ["synthetics:ListGroups"];
+	static readonly ListGroups: string[] = ["synthetics:ListGroups"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"synthetics:ListTagsForResource",
 	];
 	/** IAM actions required for the StartCanary API call. */
-	static readonly START_CANARY: string[] = ["synthetics:StartCanary"];
+	static readonly StartCanary: string[] = ["synthetics:StartCanary"];
 	/** IAM actions required for the StartCanaryDryRun API call. */
-	static readonly START_CANARY_DRY_RUN: string[] = [
+	static readonly StartCanaryDryRun: string[] = [
 		"iam:PassRole",
 		"synthetics:StartCanaryDryRun",
 	];
 	/** IAM actions required for the StopCanary API call. */
-	static readonly STOP_CANARY: string[] = ["synthetics:StopCanary"];
+	static readonly StopCanary: string[] = ["synthetics:StopCanary"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["synthetics:TagResource"];
+	static readonly TagResource: string[] = ["synthetics:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["synthetics:UntagResource"];
+	static readonly UntagResource: string[] = ["synthetics:UntagResource"];
 	/** IAM actions required for the UpdateCanary API call. */
-	static readonly UPDATE_CANARY: string[] = [
+	static readonly UpdateCanary: string[] = [
 		"iam:PassRole",
 		"synthetics:UpdateCanary",
 	];
@@ -287,105 +313,105 @@ export class SyntheticsOperations {
  */
 export class SyntheticsConditions {
 	/** Condition keys applicable to the AssociateResource action. */
-	static readonly ASSOCIATE_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AssociateResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCanary action. */
-	static readonly CREATE_CANARY_CONDITION_KEYS: string[] = [
+	static readonly CreateCanaryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGroup action. */
-	static readonly CREATE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteCanary action. */
-	static readonly DELETE_CANARY_CONDITION_KEYS: string[] = [
+	static readonly DeleteCanaryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteGroup action. */
-	static readonly DELETE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeCanaries action. */
-	static readonly DESCRIBE_CANARIES_CONDITION_KEYS: string[] = [
+	static readonly DescribeCanariesConditionKeys: string[] = [
 		"synthetics:Names",
 	];
 	/** Condition keys applicable to the DescribeCanariesLastRun action. */
-	static readonly DESCRIBE_CANARIES_LAST_RUN_CONDITION_KEYS: string[] = [
+	static readonly DescribeCanariesLastRunConditionKeys: string[] = [
 		"synthetics:Names",
 	];
 	/** Condition keys applicable to the DisassociateResource action. */
-	static readonly DISASSOCIATE_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetCanary action. */
-	static readonly GET_CANARY_CONDITION_KEYS: string[] = [
+	static readonly actionGetCanaryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetCanaryRuns action. */
-	static readonly GET_CANARY_RUNS_CONDITION_KEYS: string[] = [
+	static readonly actionGetCanaryRunsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetGroup action. */
-	static readonly GET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly actionGetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListAssociatedGroups action. */
-	static readonly LIST_ASSOCIATED_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly ListAssociatedGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListGroupResources action. */
-	static readonly LIST_GROUP_RESOURCES_CONDITION_KEYS: string[] = [
+	static readonly ListGroupResourcesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCanary action. */
-	static readonly START_CANARY_CONDITION_KEYS: string[] = [
+	static readonly StartCanaryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCanaryDryRun action. */
-	static readonly START_CANARY_DRY_RUN_CONDITION_KEYS: string[] = [
+	static readonly StartCanaryDryRunConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StopCanary action. */
-	static readonly STOP_CANARY_CONDITION_KEYS: string[] = [
+	static readonly StopCanaryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateCanary action. */
-	static readonly UPDATE_CANARY_CONDITION_KEYS: string[] = [
+	static readonly UpdateCanaryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: synthetics:Names (ArrayOfString) */
 	static readonly NAMES = "synthetics:Names";
 

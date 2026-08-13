@@ -13,839 +13,1376 @@ export class SesActions {
 	static readonly SERVICE_PREFIX = "ses";
 
 	/** [PermissionManagement] ses:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"ses:AllowVendedLogDeliveryForResource";
 	/** [Read] ses:BatchGetMetricData */
-	static readonly BATCH_GET_METRIC_DATA = "ses:BatchGetMetricData";
+	static readonly BatchGetMetricData = "ses:BatchGetMetricData";
 	/** [Write] ses:CancelExportJob */
-	static readonly CANCEL_EXPORT_JOB = "ses:CancelExportJob";
+	static readonly CancelExportJob = "ses:CancelExportJob";
 	/** [Write] ses:CloneReceiptRuleSet */
-	static readonly CLONE_RECEIPT_RULE_SET = "ses:CloneReceiptRuleSet";
+	static readonly CloneReceiptRuleSet = "ses:CloneReceiptRuleSet";
 	/** [Write] ses:CreateAddonInstance */
-	static readonly CREATE_ADDON_INSTANCE = "ses:CreateAddonInstance";
+	static readonly CreateAddonInstance = "ses:CreateAddonInstance";
 	/** [Write] ses:CreateAddonSubscription */
-	static readonly CREATE_ADDON_SUBSCRIPTION = "ses:CreateAddonSubscription";
+	static readonly CreateAddonSubscription = "ses:CreateAddonSubscription";
 	/** [Write] ses:CreateAddressList */
-	static readonly CREATE_ADDRESS_LIST = "ses:CreateAddressList";
+	static readonly CreateAddressList = "ses:CreateAddressList";
 	/** [Write] ses:CreateAddressListImportJob */
-	static readonly CREATE_ADDRESS_LIST_IMPORT_JOB =
-		"ses:CreateAddressListImportJob";
+	static readonly CreateAddressListImportJob = "ses:CreateAddressListImportJob";
 	/** [Write] ses:CreateArchive */
-	static readonly CREATE_ARCHIVE = "ses:CreateArchive";
+	static readonly CreateArchive = "ses:CreateArchive";
 	/** [Write] ses:CreateConfigurationSet */
-	static readonly CREATE_CONFIGURATION_SET = "ses:CreateConfigurationSet";
+	static readonly CreateConfigurationSet = "ses:CreateConfigurationSet";
 	/** [Write] ses:CreateConfigurationSetEventDestination */
-	static readonly CREATE_CONFIGURATION_SET_EVENT_DESTINATION =
+	static readonly CreateConfigurationSetEventDestination =
 		"ses:CreateConfigurationSetEventDestination";
 	/** [Write] ses:CreateConfigurationSetTrackingOptions */
-	static readonly CREATE_CONFIGURATION_SET_TRACKING_OPTIONS =
+	static readonly CreateConfigurationSetTrackingOptions =
 		"ses:CreateConfigurationSetTrackingOptions";
 	/** [Write] ses:CreateContact */
-	static readonly CREATE_CONTACT = "ses:CreateContact";
+	static readonly CreateContact = "ses:CreateContact";
 	/** [Write] ses:CreateContactList */
-	static readonly CREATE_CONTACT_LIST = "ses:CreateContactList";
+	static readonly CreateContactList = "ses:CreateContactList";
 	/** [Write] ses:CreateCustomVerificationEmailTemplate */
-	static readonly CREATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE =
+	static readonly CreateCustomVerificationEmailTemplate =
 		"ses:CreateCustomVerificationEmailTemplate";
 	/** [Write] ses:CreateDedicatedIpPool */
-	static readonly CREATE_DEDICATED_IP_POOL = "ses:CreateDedicatedIpPool";
+	static readonly CreateDedicatedIpPool = "ses:CreateDedicatedIpPool";
 	/** [Write] ses:CreateDeliverabilityTestReport */
-	static readonly CREATE_DELIVERABILITY_TEST_REPORT =
+	static readonly CreateDeliverabilityTestReport =
 		"ses:CreateDeliverabilityTestReport";
 	/** [Write] ses:CreateEmailIdentity */
-	static readonly CREATE_EMAIL_IDENTITY = "ses:CreateEmailIdentity";
+	static readonly CreateEmailIdentity = "ses:CreateEmailIdentity";
 	/** [PermissionManagement] ses:CreateEmailIdentityPolicy */
-	static readonly CREATE_EMAIL_IDENTITY_POLICY =
-		"ses:CreateEmailIdentityPolicy";
+	static readonly CreateEmailIdentityPolicy = "ses:CreateEmailIdentityPolicy";
 	/** [Write] ses:CreateEmailTemplate */
-	static readonly CREATE_EMAIL_TEMPLATE = "ses:CreateEmailTemplate";
+	static readonly CreateEmailTemplate = "ses:CreateEmailTemplate";
 	/** [Write] ses:CreateExportJob */
-	static readonly CREATE_EXPORT_JOB = "ses:CreateExportJob";
+	static readonly CreateExportJob = "ses:CreateExportJob";
 	/** [Write] ses:CreateImportJob */
-	static readonly CREATE_IMPORT_JOB = "ses:CreateImportJob";
+	static readonly CreateImportJob = "ses:CreateImportJob";
 	/** [Write] ses:CreateIngressPoint */
-	static readonly CREATE_INGRESS_POINT = "ses:CreateIngressPoint";
+	static readonly CreateIngressPoint = "ses:CreateIngressPoint";
 	/** [Write] ses:CreateMultiRegionEndpoint */
-	static readonly CREATE_MULTI_REGION_ENDPOINT =
-		"ses:CreateMultiRegionEndpoint";
+	static readonly CreateMultiRegionEndpoint = "ses:CreateMultiRegionEndpoint";
 	/** [Write] ses:CreateReceiptFilter */
-	static readonly CREATE_RECEIPT_FILTER = "ses:CreateReceiptFilter";
+	static readonly CreateReceiptFilter = "ses:CreateReceiptFilter";
 	/** [Write] ses:CreateReceiptRule */
-	static readonly CREATE_RECEIPT_RULE = "ses:CreateReceiptRule";
+	static readonly CreateReceiptRule = "ses:CreateReceiptRule";
 	/** [Write] ses:CreateReceiptRuleSet */
-	static readonly CREATE_RECEIPT_RULE_SET = "ses:CreateReceiptRuleSet";
+	static readonly CreateReceiptRuleSet = "ses:CreateReceiptRuleSet";
 	/** [Write] ses:CreateRelay */
-	static readonly CREATE_RELAY = "ses:CreateRelay";
+	static readonly CreateRelay = "ses:CreateRelay";
 	/** [Write] ses:CreateRuleSet */
-	static readonly CREATE_RULE_SET = "ses:CreateRuleSet";
+	static readonly CreateRuleSet = "ses:CreateRuleSet";
 	/** [Write] ses:CreateTemplate */
-	static readonly CREATE_TEMPLATE = "ses:CreateTemplate";
+	static readonly CreateTemplate = "ses:CreateTemplate";
 	/** [Write] ses:CreateTenant */
-	static readonly CREATE_TENANT = "ses:CreateTenant";
+	static readonly CreateTenant = "ses:CreateTenant";
 	/** [Write] ses:CreateTenantResourceAssociation */
-	static readonly CREATE_TENANT_RESOURCE_ASSOCIATION =
+	static readonly CreateTenantResourceAssociation =
 		"ses:CreateTenantResourceAssociation";
 	/** [Write] ses:CreateTrafficPolicy */
-	static readonly CREATE_TRAFFIC_POLICY = "ses:CreateTrafficPolicy";
+	static readonly CreateTrafficPolicy = "ses:CreateTrafficPolicy";
 	/** [Write] ses:DeleteAddonInstance */
-	static readonly DELETE_ADDON_INSTANCE = "ses:DeleteAddonInstance";
+	static readonly DeleteAddonInstance = "ses:DeleteAddonInstance";
 	/** [Write] ses:DeleteAddonSubscription */
-	static readonly DELETE_ADDON_SUBSCRIPTION = "ses:DeleteAddonSubscription";
+	static readonly DeleteAddonSubscription = "ses:DeleteAddonSubscription";
 	/** [Write] ses:DeleteAddressList */
-	static readonly DELETE_ADDRESS_LIST = "ses:DeleteAddressList";
+	static readonly DeleteAddressList = "ses:DeleteAddressList";
 	/** [Write] ses:DeleteArchive */
-	static readonly DELETE_ARCHIVE = "ses:DeleteArchive";
+	static readonly DeleteArchive = "ses:DeleteArchive";
 	/** [Write] ses:DeleteConfigurationSet */
-	static readonly DELETE_CONFIGURATION_SET = "ses:DeleteConfigurationSet";
+	static readonly DeleteConfigurationSet = "ses:DeleteConfigurationSet";
 	/** [Write] ses:DeleteConfigurationSetEventDestination */
-	static readonly DELETE_CONFIGURATION_SET_EVENT_DESTINATION =
+	static readonly DeleteConfigurationSetEventDestination =
 		"ses:DeleteConfigurationSetEventDestination";
 	/** [Write] ses:DeleteConfigurationSetTrackingOptions */
-	static readonly DELETE_CONFIGURATION_SET_TRACKING_OPTIONS =
+	static readonly DeleteConfigurationSetTrackingOptions =
 		"ses:DeleteConfigurationSetTrackingOptions";
 	/** [Write] ses:DeleteContact */
-	static readonly DELETE_CONTACT = "ses:DeleteContact";
+	static readonly DeleteContact = "ses:DeleteContact";
 	/** [Write] ses:DeleteContactList */
-	static readonly DELETE_CONTACT_LIST = "ses:DeleteContactList";
+	static readonly DeleteContactList = "ses:DeleteContactList";
 	/** [Write] ses:DeleteCustomVerificationEmailTemplate */
-	static readonly DELETE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE =
+	static readonly DeleteCustomVerificationEmailTemplate =
 		"ses:DeleteCustomVerificationEmailTemplate";
 	/** [Write] ses:DeleteDedicatedIpPool */
-	static readonly DELETE_DEDICATED_IP_POOL = "ses:DeleteDedicatedIpPool";
+	static readonly DeleteDedicatedIpPool = "ses:DeleteDedicatedIpPool";
 	/** [Write] ses:DeleteEmailIdentity */
-	static readonly DELETE_EMAIL_IDENTITY = "ses:DeleteEmailIdentity";
+	static readonly DeleteEmailIdentity = "ses:DeleteEmailIdentity";
 	/** [PermissionManagement] ses:DeleteEmailIdentityPolicy */
-	static readonly DELETE_EMAIL_IDENTITY_POLICY =
-		"ses:DeleteEmailIdentityPolicy";
+	static readonly DeleteEmailIdentityPolicy = "ses:DeleteEmailIdentityPolicy";
 	/** [Write] ses:DeleteEmailTemplate */
-	static readonly DELETE_EMAIL_TEMPLATE = "ses:DeleteEmailTemplate";
+	static readonly DeleteEmailTemplate = "ses:DeleteEmailTemplate";
 	/** [Write] ses:DeleteIdentity */
-	static readonly DELETE_IDENTITY = "ses:DeleteIdentity";
+	static readonly DeleteIdentity = "ses:DeleteIdentity";
 	/** [PermissionManagement] ses:DeleteIdentityPolicy */
-	static readonly DELETE_IDENTITY_POLICY = "ses:DeleteIdentityPolicy";
+	static readonly DeleteIdentityPolicy = "ses:DeleteIdentityPolicy";
 	/** [Write] ses:DeleteIngressPoint */
-	static readonly DELETE_INGRESS_POINT = "ses:DeleteIngressPoint";
+	static readonly DeleteIngressPoint = "ses:DeleteIngressPoint";
 	/** [Write] ses:DeleteMultiRegionEndpoint */
-	static readonly DELETE_MULTI_REGION_ENDPOINT =
-		"ses:DeleteMultiRegionEndpoint";
+	static readonly DeleteMultiRegionEndpoint = "ses:DeleteMultiRegionEndpoint";
 	/** [Write] ses:DeleteReceiptFilter */
-	static readonly DELETE_RECEIPT_FILTER = "ses:DeleteReceiptFilter";
+	static readonly DeleteReceiptFilter = "ses:DeleteReceiptFilter";
 	/** [Write] ses:DeleteReceiptRule */
-	static readonly DELETE_RECEIPT_RULE = "ses:DeleteReceiptRule";
+	static readonly DeleteReceiptRule = "ses:DeleteReceiptRule";
 	/** [Write] ses:DeleteReceiptRuleSet */
-	static readonly DELETE_RECEIPT_RULE_SET = "ses:DeleteReceiptRuleSet";
+	static readonly DeleteReceiptRuleSet = "ses:DeleteReceiptRuleSet";
 	/** [Write] ses:DeleteRelay */
-	static readonly DELETE_RELAY = "ses:DeleteRelay";
+	static readonly DeleteRelay = "ses:DeleteRelay";
 	/** [Write] ses:DeleteRuleSet */
-	static readonly DELETE_RULE_SET = "ses:DeleteRuleSet";
+	static readonly DeleteRuleSet = "ses:DeleteRuleSet";
 	/** [Write] ses:DeleteSuppressedDestination */
-	static readonly DELETE_SUPPRESSED_DESTINATION =
+	static readonly DeleteSuppressedDestination =
 		"ses:DeleteSuppressedDestination";
 	/** [Write] ses:DeleteTemplate */
-	static readonly DELETE_TEMPLATE = "ses:DeleteTemplate";
+	static readonly DeleteTemplate = "ses:DeleteTemplate";
 	/** [Write] ses:DeleteTenant */
-	static readonly DELETE_TENANT = "ses:DeleteTenant";
+	static readonly DeleteTenant = "ses:DeleteTenant";
 	/** [Write] ses:DeleteTenantResourceAssociation */
-	static readonly DELETE_TENANT_RESOURCE_ASSOCIATION =
+	static readonly DeleteTenantResourceAssociation =
 		"ses:DeleteTenantResourceAssociation";
 	/** [Write] ses:DeleteTrafficPolicy */
-	static readonly DELETE_TRAFFIC_POLICY = "ses:DeleteTrafficPolicy";
+	static readonly DeleteTrafficPolicy = "ses:DeleteTrafficPolicy";
 	/** [Write] ses:DeleteVerifiedEmailAddress */
-	static readonly DELETE_VERIFIED_EMAIL_ADDRESS =
-		"ses:DeleteVerifiedEmailAddress";
+	static readonly DeleteVerifiedEmailAddress = "ses:DeleteVerifiedEmailAddress";
 	/** [Write] ses:DeregisterMemberFromAddressList */
-	static readonly DEREGISTER_MEMBER_FROM_ADDRESS_LIST =
+	static readonly DeregisterMemberFromAddressList =
 		"ses:DeregisterMemberFromAddressList";
 	/** [Read] ses:DescribeActiveReceiptRuleSet */
-	static readonly DESCRIBE_ACTIVE_RECEIPT_RULE_SET =
+	static readonly DescribeActiveReceiptRuleSet =
 		"ses:DescribeActiveReceiptRuleSet";
 	/** [Read] ses:DescribeConfigurationSet */
-	static readonly DESCRIBE_CONFIGURATION_SET = "ses:DescribeConfigurationSet";
+	static readonly DescribeConfigurationSet = "ses:DescribeConfigurationSet";
 	/** [Read] ses:DescribeReceiptRule */
-	static readonly DESCRIBE_RECEIPT_RULE = "ses:DescribeReceiptRule";
+	static readonly DescribeReceiptRule = "ses:DescribeReceiptRule";
 	/** [Read] ses:DescribeReceiptRuleSet */
-	static readonly DESCRIBE_RECEIPT_RULE_SET = "ses:DescribeReceiptRuleSet";
+	static readonly DescribeReceiptRuleSet = "ses:DescribeReceiptRuleSet";
 	/** [Read] ses:GetAccount */
-	static readonly GET_ACCOUNT = "ses:GetAccount";
+	static readonly actionGetAccount = "ses:GetAccount";
 	/** [Read] ses:GetAccountSendingEnabled */
-	static readonly GET_ACCOUNT_SENDING_ENABLED = "ses:GetAccountSendingEnabled";
+	static readonly actionGetAccountSendingEnabled =
+		"ses:GetAccountSendingEnabled";
 	/** [Read] ses:GetAddonInstance */
-	static readonly GET_ADDON_INSTANCE = "ses:GetAddonInstance";
+	static readonly actionGetAddonInstance = "ses:GetAddonInstance";
 	/** [Read] ses:GetAddonSubscription */
-	static readonly GET_ADDON_SUBSCRIPTION = "ses:GetAddonSubscription";
+	static readonly actionGetAddonSubscription = "ses:GetAddonSubscription";
 	/** [Read] ses:GetAddressList */
-	static readonly GET_ADDRESS_LIST = "ses:GetAddressList";
+	static readonly actionGetAddressList = "ses:GetAddressList";
 	/** [Read] ses:GetAddressListImportJob */
-	static readonly GET_ADDRESS_LIST_IMPORT_JOB = "ses:GetAddressListImportJob";
+	static readonly actionGetAddressListImportJob = "ses:GetAddressListImportJob";
 	/** [Read] ses:GetArchive */
-	static readonly GET_ARCHIVE = "ses:GetArchive";
+	static readonly actionGetArchive = "ses:GetArchive";
 	/** [Read] ses:GetArchiveExport */
-	static readonly GET_ARCHIVE_EXPORT = "ses:GetArchiveExport";
+	static readonly actionGetArchiveExport = "ses:GetArchiveExport";
 	/** [Read] ses:GetArchiveMessage */
-	static readonly GET_ARCHIVE_MESSAGE = "ses:GetArchiveMessage";
+	static readonly actionGetArchiveMessage = "ses:GetArchiveMessage";
 	/** [Read] ses:GetArchiveMessageContent */
-	static readonly GET_ARCHIVE_MESSAGE_CONTENT = "ses:GetArchiveMessageContent";
+	static readonly actionGetArchiveMessageContent =
+		"ses:GetArchiveMessageContent";
 	/** [Read] ses:GetArchiveSearch */
-	static readonly GET_ARCHIVE_SEARCH = "ses:GetArchiveSearch";
+	static readonly actionGetArchiveSearch = "ses:GetArchiveSearch";
 	/** [Read] ses:GetArchiveSearchResults */
-	static readonly GET_ARCHIVE_SEARCH_RESULTS = "ses:GetArchiveSearchResults";
+	static readonly actionGetArchiveSearchResults = "ses:GetArchiveSearchResults";
 	/** [Read] ses:GetBlacklistReports */
-	static readonly GET_BLACKLIST_REPORTS = "ses:GetBlacklistReports";
+	static readonly actionGetBlacklistReports = "ses:GetBlacklistReports";
 	/** [Read] ses:GetConfigurationSet */
-	static readonly GET_CONFIGURATION_SET = "ses:GetConfigurationSet";
+	static readonly actionGetConfigurationSet = "ses:GetConfigurationSet";
 	/** [Read] ses:GetConfigurationSetEventDestinations */
-	static readonly GET_CONFIGURATION_SET_EVENT_DESTINATIONS =
+	static readonly actionGetConfigurationSetEventDestinations =
 		"ses:GetConfigurationSetEventDestinations";
 	/** [Read] ses:GetContact */
-	static readonly GET_CONTACT = "ses:GetContact";
+	static readonly actionGetContact = "ses:GetContact";
 	/** [Read] ses:GetContactList */
-	static readonly GET_CONTACT_LIST = "ses:GetContactList";
+	static readonly actionGetContactList = "ses:GetContactList";
 	/** [Read] ses:GetCustomVerificationEmailTemplate */
-	static readonly GET_CUSTOM_VERIFICATION_EMAIL_TEMPLATE =
+	static readonly actionGetCustomVerificationEmailTemplate =
 		"ses:GetCustomVerificationEmailTemplate";
 	/** [Read] ses:GetDedicatedIp */
-	static readonly GET_DEDICATED_IP = "ses:GetDedicatedIp";
+	static readonly actionGetDedicatedIp = "ses:GetDedicatedIp";
 	/** [Read] ses:GetDedicatedIpPool */
-	static readonly GET_DEDICATED_IP_POOL = "ses:GetDedicatedIpPool";
+	static readonly actionGetDedicatedIpPool = "ses:GetDedicatedIpPool";
 	/** [Read] ses:GetDedicatedIps */
-	static readonly GET_DEDICATED_IPS = "ses:GetDedicatedIps";
+	static readonly actionGetDedicatedIps = "ses:GetDedicatedIps";
 	/** [Read] ses:GetDeliverabilityDashboardOptions */
-	static readonly GET_DELIVERABILITY_DASHBOARD_OPTIONS =
+	static readonly actionGetDeliverabilityDashboardOptions =
 		"ses:GetDeliverabilityDashboardOptions";
 	/** [Read] ses:GetDeliverabilityTestReport */
-	static readonly GET_DELIVERABILITY_TEST_REPORT =
+	static readonly actionGetDeliverabilityTestReport =
 		"ses:GetDeliverabilityTestReport";
 	/** [Read] ses:GetDomainDeliverabilityCampaign */
-	static readonly GET_DOMAIN_DELIVERABILITY_CAMPAIGN =
+	static readonly actionGetDomainDeliverabilityCampaign =
 		"ses:GetDomainDeliverabilityCampaign";
 	/** [Read] ses:GetDomainStatisticsReport */
-	static readonly GET_DOMAIN_STATISTICS_REPORT =
+	static readonly actionGetDomainStatisticsReport =
 		"ses:GetDomainStatisticsReport";
 	/** [Read] ses:GetEmailAddressInsights */
-	static readonly GET_EMAIL_ADDRESS_INSIGHTS = "ses:GetEmailAddressInsights";
+	static readonly actionGetEmailAddressInsights = "ses:GetEmailAddressInsights";
 	/** [Read] ses:GetEmailIdentity */
-	static readonly GET_EMAIL_IDENTITY = "ses:GetEmailIdentity";
+	static readonly actionGetEmailIdentity = "ses:GetEmailIdentity";
 	/** [Read] ses:GetEmailIdentityPolicies */
-	static readonly GET_EMAIL_IDENTITY_POLICIES = "ses:GetEmailIdentityPolicies";
+	static readonly actionGetEmailIdentityPolicies =
+		"ses:GetEmailIdentityPolicies";
 	/** [Read] ses:GetEmailTemplate */
-	static readonly GET_EMAIL_TEMPLATE = "ses:GetEmailTemplate";
+	static readonly actionGetEmailTemplate = "ses:GetEmailTemplate";
 	/** [Read] ses:GetExportJob */
-	static readonly GET_EXPORT_JOB = "ses:GetExportJob";
+	static readonly actionGetExportJob = "ses:GetExportJob";
 	/** [Read] ses:GetIdentityDkimAttributes */
-	static readonly GET_IDENTITY_DKIM_ATTRIBUTES =
+	static readonly actionGetIdentityDkimAttributes =
 		"ses:GetIdentityDkimAttributes";
 	/** [Read] ses:GetIdentityMailFromDomainAttributes */
-	static readonly GET_IDENTITY_MAIL_FROM_DOMAIN_ATTRIBUTES =
+	static readonly actionGetIdentityMailFromDomainAttributes =
 		"ses:GetIdentityMailFromDomainAttributes";
 	/** [Read] ses:GetIdentityNotificationAttributes */
-	static readonly GET_IDENTITY_NOTIFICATION_ATTRIBUTES =
+	static readonly actionGetIdentityNotificationAttributes =
 		"ses:GetIdentityNotificationAttributes";
 	/** [Read] ses:GetIdentityPolicies */
-	static readonly GET_IDENTITY_POLICIES = "ses:GetIdentityPolicies";
+	static readonly actionGetIdentityPolicies = "ses:GetIdentityPolicies";
 	/** [Read] ses:GetIdentityVerificationAttributes */
-	static readonly GET_IDENTITY_VERIFICATION_ATTRIBUTES =
+	static readonly actionGetIdentityVerificationAttributes =
 		"ses:GetIdentityVerificationAttributes";
 	/** [Read] ses:GetImportJob */
-	static readonly GET_IMPORT_JOB = "ses:GetImportJob";
+	static readonly actionGetImportJob = "ses:GetImportJob";
 	/** [Read] ses:GetIngressPoint */
-	static readonly GET_INGRESS_POINT = "ses:GetIngressPoint";
+	static readonly actionGetIngressPoint = "ses:GetIngressPoint";
 	/** [Read] ses:GetMemberOfAddressList */
-	static readonly GET_MEMBER_OF_ADDRESS_LIST = "ses:GetMemberOfAddressList";
+	static readonly actionGetMemberOfAddressList = "ses:GetMemberOfAddressList";
 	/** [Read] ses:GetMessageInsights */
-	static readonly GET_MESSAGE_INSIGHTS = "ses:GetMessageInsights";
+	static readonly actionGetMessageInsights = "ses:GetMessageInsights";
 	/** [Read] ses:GetMultiRegionEndpoint */
-	static readonly GET_MULTI_REGION_ENDPOINT = "ses:GetMultiRegionEndpoint";
+	static readonly actionGetMultiRegionEndpoint = "ses:GetMultiRegionEndpoint";
 	/** [Read] ses:GetRelay */
-	static readonly GET_RELAY = "ses:GetRelay";
+	static readonly actionGetRelay = "ses:GetRelay";
 	/** [Read] ses:GetReputationEntity */
-	static readonly GET_REPUTATION_ENTITY = "ses:GetReputationEntity";
+	static readonly actionGetReputationEntity = "ses:GetReputationEntity";
 	/** [Read] ses:GetRuleSet */
-	static readonly GET_RULE_SET = "ses:GetRuleSet";
+	static readonly actionGetRuleSet = "ses:GetRuleSet";
 	/** [Read] ses:GetSendQuota */
-	static readonly GET_SEND_QUOTA = "ses:GetSendQuota";
+	static readonly actionGetSendQuota = "ses:GetSendQuota";
 	/** [Read] ses:GetSendStatistics */
-	static readonly GET_SEND_STATISTICS = "ses:GetSendStatistics";
+	static readonly actionGetSendStatistics = "ses:GetSendStatistics";
 	/** [Read] ses:GetSuppressedDestination */
-	static readonly GET_SUPPRESSED_DESTINATION = "ses:GetSuppressedDestination";
+	static readonly actionGetSuppressedDestination =
+		"ses:GetSuppressedDestination";
 	/** [Read] ses:GetTemplate */
-	static readonly GET_TEMPLATE = "ses:GetTemplate";
+	static readonly actionGetTemplate = "ses:GetTemplate";
 	/** [Read] ses:GetTenant */
-	static readonly GET_TENANT = "ses:GetTenant";
+	static readonly actionGetTenant = "ses:GetTenant";
 	/** [Read] ses:GetTrafficPolicy */
-	static readonly GET_TRAFFIC_POLICY = "ses:GetTrafficPolicy";
+	static readonly actionGetTrafficPolicy = "ses:GetTrafficPolicy";
 	/** [List] ses:ListAddonInstances */
-	static readonly LIST_ADDON_INSTANCES = "ses:ListAddonInstances";
+	static readonly ListAddonInstances = "ses:ListAddonInstances";
 	/** [List] ses:ListAddonSubscriptions */
-	static readonly LIST_ADDON_SUBSCRIPTIONS = "ses:ListAddonSubscriptions";
+	static readonly ListAddonSubscriptions = "ses:ListAddonSubscriptions";
 	/** [List] ses:ListAddressListImportJobs */
-	static readonly LIST_ADDRESS_LIST_IMPORT_JOBS =
-		"ses:ListAddressListImportJobs";
+	static readonly ListAddressListImportJobs = "ses:ListAddressListImportJobs";
 	/** [List] ses:ListAddressLists */
-	static readonly LIST_ADDRESS_LISTS = "ses:ListAddressLists";
+	static readonly ListAddressLists = "ses:ListAddressLists";
 	/** [List] ses:ListArchiveExports */
-	static readonly LIST_ARCHIVE_EXPORTS = "ses:ListArchiveExports";
+	static readonly ListArchiveExports = "ses:ListArchiveExports";
 	/** [List] ses:ListArchiveSearches */
-	static readonly LIST_ARCHIVE_SEARCHES = "ses:ListArchiveSearches";
+	static readonly ListArchiveSearches = "ses:ListArchiveSearches";
 	/** [List] ses:ListArchives */
-	static readonly LIST_ARCHIVES = "ses:ListArchives";
+	static readonly ListArchives = "ses:ListArchives";
 	/** [List] ses:ListConfigurationSets */
-	static readonly LIST_CONFIGURATION_SETS = "ses:ListConfigurationSets";
+	static readonly ListConfigurationSets = "ses:ListConfigurationSets";
 	/** [List] ses:ListContactLists */
-	static readonly LIST_CONTACT_LISTS = "ses:ListContactLists";
+	static readonly ListContactLists = "ses:ListContactLists";
 	/** [List] ses:ListContacts */
-	static readonly LIST_CONTACTS = "ses:ListContacts";
+	static readonly ListContacts = "ses:ListContacts";
 	/** [List] ses:ListCustomVerificationEmailTemplates */
-	static readonly LIST_CUSTOM_VERIFICATION_EMAIL_TEMPLATES =
+	static readonly ListCustomVerificationEmailTemplates =
 		"ses:ListCustomVerificationEmailTemplates";
 	/** [List] ses:ListDedicatedIpPools */
-	static readonly LIST_DEDICATED_IP_POOLS = "ses:ListDedicatedIpPools";
+	static readonly ListDedicatedIpPools = "ses:ListDedicatedIpPools";
 	/** [List] ses:ListDeliverabilityTestReports */
-	static readonly LIST_DELIVERABILITY_TEST_REPORTS =
+	static readonly ListDeliverabilityTestReports =
 		"ses:ListDeliverabilityTestReports";
 	/** [Read] ses:ListDomainDeliverabilityCampaigns */
-	static readonly LIST_DOMAIN_DELIVERABILITY_CAMPAIGNS =
+	static readonly ListDomainDeliverabilityCampaigns =
 		"ses:ListDomainDeliverabilityCampaigns";
 	/** [List] ses:ListEmailIdentities */
-	static readonly LIST_EMAIL_IDENTITIES = "ses:ListEmailIdentities";
+	static readonly ListEmailIdentities = "ses:ListEmailIdentities";
 	/** [List] ses:ListEmailTemplates */
-	static readonly LIST_EMAIL_TEMPLATES = "ses:ListEmailTemplates";
+	static readonly ListEmailTemplates = "ses:ListEmailTemplates";
 	/** [List] ses:ListExportJobs */
-	static readonly LIST_EXPORT_JOBS = "ses:ListExportJobs";
+	static readonly ListExportJobs = "ses:ListExportJobs";
 	/** [List] ses:ListIdentities */
-	static readonly LIST_IDENTITIES = "ses:ListIdentities";
+	static readonly ListIdentities = "ses:ListIdentities";
 	/** [List] ses:ListIdentityPolicies */
-	static readonly LIST_IDENTITY_POLICIES = "ses:ListIdentityPolicies";
+	static readonly ListIdentityPolicies = "ses:ListIdentityPolicies";
 	/** [List] ses:ListImportJobs */
-	static readonly LIST_IMPORT_JOBS = "ses:ListImportJobs";
+	static readonly ListImportJobs = "ses:ListImportJobs";
 	/** [List] ses:ListIngressPoints */
-	static readonly LIST_INGRESS_POINTS = "ses:ListIngressPoints";
+	static readonly ListIngressPoints = "ses:ListIngressPoints";
 	/** [List] ses:ListMembersOfAddressList */
-	static readonly LIST_MEMBERS_OF_ADDRESS_LIST = "ses:ListMembersOfAddressList";
+	static readonly ListMembersOfAddressList = "ses:ListMembersOfAddressList";
 	/** [List] ses:ListMultiRegionEndpoints */
-	static readonly LIST_MULTI_REGION_ENDPOINTS = "ses:ListMultiRegionEndpoints";
+	static readonly ListMultiRegionEndpoints = "ses:ListMultiRegionEndpoints";
 	/** [Read] ses:ListReceiptFilters */
-	static readonly LIST_RECEIPT_FILTERS = "ses:ListReceiptFilters";
+	static readonly ListReceiptFilters = "ses:ListReceiptFilters";
 	/** [Read] ses:ListReceiptRuleSets */
-	static readonly LIST_RECEIPT_RULE_SETS = "ses:ListReceiptRuleSets";
+	static readonly ListReceiptRuleSets = "ses:ListReceiptRuleSets";
 	/** [Read] ses:ListRecommendations */
-	static readonly LIST_RECOMMENDATIONS = "ses:ListRecommendations";
+	static readonly ListRecommendations = "ses:ListRecommendations";
 	/** [List] ses:ListRelays */
-	static readonly LIST_RELAYS = "ses:ListRelays";
+	static readonly ListRelays = "ses:ListRelays";
 	/** [List] ses:ListReputationEntities */
-	static readonly LIST_REPUTATION_ENTITIES = "ses:ListReputationEntities";
+	static readonly ListReputationEntities = "ses:ListReputationEntities";
 	/** [List] ses:ListResourceTenants */
-	static readonly LIST_RESOURCE_TENANTS = "ses:ListResourceTenants";
+	static readonly ListResourceTenants = "ses:ListResourceTenants";
 	/** [List] ses:ListRuleSets */
-	static readonly LIST_RULE_SETS = "ses:ListRuleSets";
+	static readonly ListRuleSets = "ses:ListRuleSets";
 	/** [Read] ses:ListSuppressedDestinations */
-	static readonly LIST_SUPPRESSED_DESTINATIONS =
-		"ses:ListSuppressedDestinations";
+	static readonly ListSuppressedDestinations = "ses:ListSuppressedDestinations";
 	/** [Read] ses:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "ses:ListTagsForResource";
+	static readonly ListTagsForResource = "ses:ListTagsForResource";
 	/** [List] ses:ListTemplates */
-	static readonly LIST_TEMPLATES = "ses:ListTemplates";
+	static readonly ListTemplates = "ses:ListTemplates";
 	/** [List] ses:ListTenantResources */
-	static readonly LIST_TENANT_RESOURCES = "ses:ListTenantResources";
+	static readonly ListTenantResources = "ses:ListTenantResources";
 	/** [List] ses:ListTenants */
-	static readonly LIST_TENANTS = "ses:ListTenants";
+	static readonly ListTenants = "ses:ListTenants";
 	/** [List] ses:ListTrafficPolicies */
-	static readonly LIST_TRAFFIC_POLICIES = "ses:ListTrafficPolicies";
+	static readonly ListTrafficPolicies = "ses:ListTrafficPolicies";
 	/** [Read] ses:ListVerifiedEmailAddresses */
-	static readonly LIST_VERIFIED_EMAIL_ADDRESSES =
-		"ses:ListVerifiedEmailAddresses";
+	static readonly ListVerifiedEmailAddresses = "ses:ListVerifiedEmailAddresses";
 	/** [Write] ses:PutAccountDedicatedIpWarmupAttributes */
-	static readonly PUT_ACCOUNT_DEDICATED_IP_WARMUP_ATTRIBUTES =
+	static readonly PutAccountDedicatedIpWarmupAttributes =
 		"ses:PutAccountDedicatedIpWarmupAttributes";
 	/** [Write] ses:PutAccountDetails */
-	static readonly PUT_ACCOUNT_DETAILS = "ses:PutAccountDetails";
+	static readonly PutAccountDetails = "ses:PutAccountDetails";
 	/** [Write] ses:PutAccountPricingAttributes */
-	static readonly PUT_ACCOUNT_PRICING_ATTRIBUTES =
+	static readonly PutAccountPricingAttributes =
 		"ses:PutAccountPricingAttributes";
 	/** [Write] ses:PutAccountSendingAttributes */
-	static readonly PUT_ACCOUNT_SENDING_ATTRIBUTES =
+	static readonly PutAccountSendingAttributes =
 		"ses:PutAccountSendingAttributes";
 	/** [Write] ses:PutAccountSuppressionAttributes */
-	static readonly PUT_ACCOUNT_SUPPRESSION_ATTRIBUTES =
+	static readonly PutAccountSuppressionAttributes =
 		"ses:PutAccountSuppressionAttributes";
 	/** [Write] ses:PutAccountVdmAttributes */
-	static readonly PUT_ACCOUNT_VDM_ATTRIBUTES = "ses:PutAccountVdmAttributes";
+	static readonly PutAccountVdmAttributes = "ses:PutAccountVdmAttributes";
 	/** [Write] ses:PutConfigurationSetArchivingOptions */
-	static readonly PUT_CONFIGURATION_SET_ARCHIVING_OPTIONS =
+	static readonly PutConfigurationSetArchivingOptions =
 		"ses:PutConfigurationSetArchivingOptions";
 	/** [Write] ses:PutConfigurationSetDeliveryOptions */
-	static readonly PUT_CONFIGURATION_SET_DELIVERY_OPTIONS =
+	static readonly PutConfigurationSetDeliveryOptions =
 		"ses:PutConfigurationSetDeliveryOptions";
 	/** [Write] ses:PutConfigurationSetReputationOptions */
-	static readonly PUT_CONFIGURATION_SET_REPUTATION_OPTIONS =
+	static readonly PutConfigurationSetReputationOptions =
 		"ses:PutConfigurationSetReputationOptions";
 	/** [Write] ses:PutConfigurationSetSendingOptions */
-	static readonly PUT_CONFIGURATION_SET_SENDING_OPTIONS =
+	static readonly PutConfigurationSetSendingOptions =
 		"ses:PutConfigurationSetSendingOptions";
 	/** [Write] ses:PutConfigurationSetSuppressionOptions */
-	static readonly PUT_CONFIGURATION_SET_SUPPRESSION_OPTIONS =
+	static readonly PutConfigurationSetSuppressionOptions =
 		"ses:PutConfigurationSetSuppressionOptions";
 	/** [Write] ses:PutConfigurationSetTrackingOptions */
-	static readonly PUT_CONFIGURATION_SET_TRACKING_OPTIONS =
+	static readonly PutConfigurationSetTrackingOptions =
 		"ses:PutConfigurationSetTrackingOptions";
 	/** [Write] ses:PutConfigurationSetVdmOptions */
-	static readonly PUT_CONFIGURATION_SET_VDM_OPTIONS =
+	static readonly PutConfigurationSetVdmOptions =
 		"ses:PutConfigurationSetVdmOptions";
 	/** [Write] ses:PutDedicatedIpInPool */
-	static readonly PUT_DEDICATED_IP_IN_POOL = "ses:PutDedicatedIpInPool";
+	static readonly PutDedicatedIpInPool = "ses:PutDedicatedIpInPool";
 	/** [Write] ses:PutDedicatedIpPoolScalingAttributes */
-	static readonly PUT_DEDICATED_IP_POOL_SCALING_ATTRIBUTES =
+	static readonly PutDedicatedIpPoolScalingAttributes =
 		"ses:PutDedicatedIpPoolScalingAttributes";
 	/** [Write] ses:PutDedicatedIpWarmupAttributes */
-	static readonly PUT_DEDICATED_IP_WARMUP_ATTRIBUTES =
+	static readonly PutDedicatedIpWarmupAttributes =
 		"ses:PutDedicatedIpWarmupAttributes";
 	/** [Write] ses:PutDeliverabilityDashboardOption */
-	static readonly PUT_DELIVERABILITY_DASHBOARD_OPTION =
+	static readonly PutDeliverabilityDashboardOption =
 		"ses:PutDeliverabilityDashboardOption";
 	/** [Write] ses:PutEmailIdentityConfigurationSetAttributes */
-	static readonly PUT_EMAIL_IDENTITY_CONFIGURATION_SET_ATTRIBUTES =
+	static readonly PutEmailIdentityConfigurationSetAttributes =
 		"ses:PutEmailIdentityConfigurationSetAttributes";
 	/** [Write] ses:PutEmailIdentityDkimAttributes */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_ATTRIBUTES =
+	static readonly PutEmailIdentityDkimAttributes =
 		"ses:PutEmailIdentityDkimAttributes";
 	/** [Write] ses:PutEmailIdentityDkimSigningAttributes */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_SIGNING_ATTRIBUTES =
+	static readonly PutEmailIdentityDkimSigningAttributes =
 		"ses:PutEmailIdentityDkimSigningAttributes";
 	/** [Write] ses:PutEmailIdentityFeedbackAttributes */
-	static readonly PUT_EMAIL_IDENTITY_FEEDBACK_ATTRIBUTES =
+	static readonly PutEmailIdentityFeedbackAttributes =
 		"ses:PutEmailIdentityFeedbackAttributes";
 	/** [Write] ses:PutEmailIdentityMailFromAttributes */
-	static readonly PUT_EMAIL_IDENTITY_MAIL_FROM_ATTRIBUTES =
+	static readonly PutEmailIdentityMailFromAttributes =
 		"ses:PutEmailIdentityMailFromAttributes";
 	/** [PermissionManagement] ses:PutIdentityPolicy */
-	static readonly PUT_IDENTITY_POLICY = "ses:PutIdentityPolicy";
+	static readonly PutIdentityPolicy = "ses:PutIdentityPolicy";
 	/** [Write] ses:PutSuppressedDestination */
-	static readonly PUT_SUPPRESSED_DESTINATION = "ses:PutSuppressedDestination";
+	static readonly PutSuppressedDestination = "ses:PutSuppressedDestination";
 	/** [Write] ses:PutTenantSuppressionAttributes */
-	static readonly PUT_TENANT_SUPPRESSION_ATTRIBUTES =
+	static readonly PutTenantSuppressionAttributes =
 		"ses:PutTenantSuppressionAttributes";
 	/** [Write] ses:RegisterMemberToAddressList */
-	static readonly REGISTER_MEMBER_TO_ADDRESS_LIST =
+	static readonly RegisterMemberToAddressList =
 		"ses:RegisterMemberToAddressList";
 	/** [Write] ses:ReorderReceiptRuleSet */
-	static readonly REORDER_RECEIPT_RULE_SET = "ses:ReorderReceiptRuleSet";
+	static readonly ReorderReceiptRuleSet = "ses:ReorderReceiptRuleSet";
 	/** [PermissionManagement] ses:ReplicateEmailIdentityDkimSigningKey */
-	static readonly REPLICATE_EMAIL_IDENTITY_DKIM_SIGNING_KEY =
+	static readonly ReplicateEmailIdentityDkimSigningKey =
 		"ses:ReplicateEmailIdentityDkimSigningKey";
 	/** [Write] ses:SendBounce */
-	static readonly SEND_BOUNCE = "ses:SendBounce";
+	static readonly SendBounce = "ses:SendBounce";
 	/** [Write] ses:SendBulkEmail */
-	static readonly SEND_BULK_EMAIL = "ses:SendBulkEmail";
+	static readonly SendBulkEmail = "ses:SendBulkEmail";
 	/** [Write] ses:SendBulkTemplatedEmail */
-	static readonly SEND_BULK_TEMPLATED_EMAIL = "ses:SendBulkTemplatedEmail";
+	static readonly SendBulkTemplatedEmail = "ses:SendBulkTemplatedEmail";
 	/** [Write] ses:SendCustomVerificationEmail */
-	static readonly SEND_CUSTOM_VERIFICATION_EMAIL =
+	static readonly SendCustomVerificationEmail =
 		"ses:SendCustomVerificationEmail";
 	/** [Write] ses:SendEmail */
-	static readonly SEND_EMAIL = "ses:SendEmail";
+	static readonly SendEmail = "ses:SendEmail";
 	/** [Write] ses:SendRawEmail */
-	static readonly SEND_RAW_EMAIL = "ses:SendRawEmail";
+	static readonly SendRawEmail = "ses:SendRawEmail";
 	/** [Write] ses:SendTemplatedEmail */
-	static readonly SEND_TEMPLATED_EMAIL = "ses:SendTemplatedEmail";
+	static readonly SendTemplatedEmail = "ses:SendTemplatedEmail";
 	/** [Write] ses:SetActiveReceiptRuleSet */
-	static readonly SET_ACTIVE_RECEIPT_RULE_SET = "ses:SetActiveReceiptRuleSet";
+	static readonly actionSetActiveReceiptRuleSet = "ses:SetActiveReceiptRuleSet";
 	/** [Write] ses:SetIdentityDkimEnabled */
-	static readonly SET_IDENTITY_DKIM_ENABLED = "ses:SetIdentityDkimEnabled";
+	static readonly actionSetIdentityDkimEnabled = "ses:SetIdentityDkimEnabled";
 	/** [Write] ses:SetIdentityFeedbackForwardingEnabled */
-	static readonly SET_IDENTITY_FEEDBACK_FORWARDING_ENABLED =
+	static readonly actionSetIdentityFeedbackForwardingEnabled =
 		"ses:SetIdentityFeedbackForwardingEnabled";
 	/** [Write] ses:SetIdentityHeadersInNotificationsEnabled */
-	static readonly SET_IDENTITY_HEADERS_IN_NOTIFICATIONS_ENABLED =
+	static readonly actionSetIdentityHeadersInNotificationsEnabled =
 		"ses:SetIdentityHeadersInNotificationsEnabled";
 	/** [Write] ses:SetIdentityMailFromDomain */
-	static readonly SET_IDENTITY_MAIL_FROM_DOMAIN =
+	static readonly actionSetIdentityMailFromDomain =
 		"ses:SetIdentityMailFromDomain";
 	/** [Write] ses:SetIdentityNotificationTopic */
-	static readonly SET_IDENTITY_NOTIFICATION_TOPIC =
+	static readonly actionSetIdentityNotificationTopic =
 		"ses:SetIdentityNotificationTopic";
 	/** [Write] ses:SetReceiptRulePosition */
-	static readonly SET_RECEIPT_RULE_POSITION = "ses:SetReceiptRulePosition";
+	static readonly actionSetReceiptRulePosition = "ses:SetReceiptRulePosition";
 	/** [Write] ses:StartAddressListImportJob */
-	static readonly START_ADDRESS_LIST_IMPORT_JOB =
-		"ses:StartAddressListImportJob";
+	static readonly StartAddressListImportJob = "ses:StartAddressListImportJob";
 	/** [Write] ses:StartArchiveExport */
-	static readonly START_ARCHIVE_EXPORT = "ses:StartArchiveExport";
+	static readonly StartArchiveExport = "ses:StartArchiveExport";
 	/** [Write] ses:StartArchiveSearch */
-	static readonly START_ARCHIVE_SEARCH = "ses:StartArchiveSearch";
+	static readonly StartArchiveSearch = "ses:StartArchiveSearch";
 	/** [Write] ses:StopAddressListImportJob */
-	static readonly STOP_ADDRESS_LIST_IMPORT_JOB = "ses:StopAddressListImportJob";
+	static readonly StopAddressListImportJob = "ses:StopAddressListImportJob";
 	/** [Write] ses:StopArchiveExport */
-	static readonly STOP_ARCHIVE_EXPORT = "ses:StopArchiveExport";
+	static readonly StopArchiveExport = "ses:StopArchiveExport";
 	/** [Write] ses:StopArchiveSearch */
-	static readonly STOP_ARCHIVE_SEARCH = "ses:StopArchiveSearch";
+	static readonly StopArchiveSearch = "ses:StopArchiveSearch";
 	/** [Tagging] ses:TagResource */
-	static readonly TAG_RESOURCE = "ses:TagResource";
+	static readonly TagResource = "ses:TagResource";
 	/** [Write] ses:TestRenderEmailTemplate */
-	static readonly TEST_RENDER_EMAIL_TEMPLATE = "ses:TestRenderEmailTemplate";
+	static readonly TestRenderEmailTemplate = "ses:TestRenderEmailTemplate";
 	/** [Write] ses:TestRenderTemplate */
-	static readonly TEST_RENDER_TEMPLATE = "ses:TestRenderTemplate";
+	static readonly TestRenderTemplate = "ses:TestRenderTemplate";
 	/** [Tagging] ses:UntagResource */
-	static readonly UNTAG_RESOURCE = "ses:UntagResource";
+	static readonly UntagResource = "ses:UntagResource";
 	/** [Write] ses:UpdateAccountSendingEnabled */
-	static readonly UPDATE_ACCOUNT_SENDING_ENABLED =
+	static readonly UpdateAccountSendingEnabled =
 		"ses:UpdateAccountSendingEnabled";
 	/** [Write] ses:UpdateArchive */
-	static readonly UPDATE_ARCHIVE = "ses:UpdateArchive";
+	static readonly UpdateArchive = "ses:UpdateArchive";
 	/** [Write] ses:UpdateConfigurationSetEventDestination */
-	static readonly UPDATE_CONFIGURATION_SET_EVENT_DESTINATION =
+	static readonly UpdateConfigurationSetEventDestination =
 		"ses:UpdateConfigurationSetEventDestination";
 	/** [Write] ses:UpdateConfigurationSetReputationMetricsEnabled */
-	static readonly UPDATE_CONFIGURATION_SET_REPUTATION_METRICS_ENABLED =
+	static readonly UpdateConfigurationSetReputationMetricsEnabled =
 		"ses:UpdateConfigurationSetReputationMetricsEnabled";
 	/** [Write] ses:UpdateConfigurationSetSendingEnabled */
-	static readonly UPDATE_CONFIGURATION_SET_SENDING_ENABLED =
+	static readonly UpdateConfigurationSetSendingEnabled =
 		"ses:UpdateConfigurationSetSendingEnabled";
 	/** [Write] ses:UpdateConfigurationSetTrackingOptions */
-	static readonly UPDATE_CONFIGURATION_SET_TRACKING_OPTIONS =
+	static readonly UpdateConfigurationSetTrackingOptions =
 		"ses:UpdateConfigurationSetTrackingOptions";
 	/** [Write] ses:UpdateContact */
-	static readonly UPDATE_CONTACT = "ses:UpdateContact";
+	static readonly UpdateContact = "ses:UpdateContact";
 	/** [Write] ses:UpdateContactList */
-	static readonly UPDATE_CONTACT_LIST = "ses:UpdateContactList";
+	static readonly UpdateContactList = "ses:UpdateContactList";
 	/** [Write] ses:UpdateCustomVerificationEmailTemplate */
-	static readonly UPDATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE =
+	static readonly UpdateCustomVerificationEmailTemplate =
 		"ses:UpdateCustomVerificationEmailTemplate";
 	/** [PermissionManagement] ses:UpdateEmailIdentityPolicy */
-	static readonly UPDATE_EMAIL_IDENTITY_POLICY =
-		"ses:UpdateEmailIdentityPolicy";
+	static readonly UpdateEmailIdentityPolicy = "ses:UpdateEmailIdentityPolicy";
 	/** [Write] ses:UpdateEmailTemplate */
-	static readonly UPDATE_EMAIL_TEMPLATE = "ses:UpdateEmailTemplate";
+	static readonly UpdateEmailTemplate = "ses:UpdateEmailTemplate";
 	/** [Write] ses:UpdateIngressPoint */
-	static readonly UPDATE_INGRESS_POINT = "ses:UpdateIngressPoint";
+	static readonly UpdateIngressPoint = "ses:UpdateIngressPoint";
 	/** [Write] ses:UpdateReceiptRule */
-	static readonly UPDATE_RECEIPT_RULE = "ses:UpdateReceiptRule";
+	static readonly UpdateReceiptRule = "ses:UpdateReceiptRule";
 	/** [Write] ses:UpdateRelay */
-	static readonly UPDATE_RELAY = "ses:UpdateRelay";
+	static readonly UpdateRelay = "ses:UpdateRelay";
 	/** [Write] ses:UpdateReputationEntityCustomerManagedStatus */
-	static readonly UPDATE_REPUTATION_ENTITY_CUSTOMER_MANAGED_STATUS =
+	static readonly UpdateReputationEntityCustomerManagedStatus =
 		"ses:UpdateReputationEntityCustomerManagedStatus";
 	/** [Write] ses:UpdateReputationEntityPolicy */
-	static readonly UPDATE_REPUTATION_ENTITY_POLICY =
+	static readonly UpdateReputationEntityPolicy =
 		"ses:UpdateReputationEntityPolicy";
 	/** [Write] ses:UpdateRuleSet */
-	static readonly UPDATE_RULE_SET = "ses:UpdateRuleSet";
+	static readonly UpdateRuleSet = "ses:UpdateRuleSet";
 	/** [Write] ses:UpdateTemplate */
-	static readonly UPDATE_TEMPLATE = "ses:UpdateTemplate";
+	static readonly UpdateTemplate = "ses:UpdateTemplate";
 	/** [Write] ses:UpdateTrafficPolicy */
-	static readonly UPDATE_TRAFFIC_POLICY = "ses:UpdateTrafficPolicy";
+	static readonly UpdateTrafficPolicy = "ses:UpdateTrafficPolicy";
 	/** [Write] ses:VerifyDomainDkim */
-	static readonly VERIFY_DOMAIN_DKIM = "ses:VerifyDomainDkim";
+	static readonly VerifyDomainDkim = "ses:VerifyDomainDkim";
 	/** [Write] ses:VerifyDomainIdentity */
-	static readonly VERIFY_DOMAIN_IDENTITY = "ses:VerifyDomainIdentity";
+	static readonly VerifyDomainIdentity = "ses:VerifyDomainIdentity";
 	/** [Write] ses:VerifyEmailAddress */
-	static readonly VERIFY_EMAIL_ADDRESS = "ses:VerifyEmailAddress";
+	static readonly VerifyEmailAddress = "ses:VerifyEmailAddress";
 	/** [Write] ses:VerifyEmailIdentity */
-	static readonly VERIFY_EMAIL_IDENTITY = "ses:VerifyEmailIdentity";
+	static readonly VerifyEmailIdentity = "ses:VerifyEmailIdentity";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SesActions.BATCH_GET_METRIC_DATA,
-		SesActions.DESCRIBE_ACTIVE_RECEIPT_RULE_SET,
-		SesActions.DESCRIBE_CONFIGURATION_SET,
-		SesActions.DESCRIBE_RECEIPT_RULE,
-		SesActions.DESCRIBE_RECEIPT_RULE_SET,
-		SesActions.GET_ACCOUNT,
-		SesActions.GET_ACCOUNT_SENDING_ENABLED,
-		SesActions.GET_ADDON_INSTANCE,
-		SesActions.GET_ADDON_SUBSCRIPTION,
-		SesActions.GET_ADDRESS_LIST,
-		SesActions.GET_ADDRESS_LIST_IMPORT_JOB,
-		SesActions.GET_ARCHIVE,
-		SesActions.GET_ARCHIVE_EXPORT,
-		SesActions.GET_ARCHIVE_MESSAGE,
-		SesActions.GET_ARCHIVE_MESSAGE_CONTENT,
-		SesActions.GET_ARCHIVE_SEARCH,
-		SesActions.GET_ARCHIVE_SEARCH_RESULTS,
-		SesActions.GET_BLACKLIST_REPORTS,
-		SesActions.GET_CONFIGURATION_SET,
-		SesActions.GET_CONFIGURATION_SET_EVENT_DESTINATIONS,
-		SesActions.GET_CONTACT,
-		SesActions.GET_CONTACT_LIST,
-		SesActions.GET_CUSTOM_VERIFICATION_EMAIL_TEMPLATE,
-		SesActions.GET_DEDICATED_IP,
-		SesActions.GET_DEDICATED_IP_POOL,
-		SesActions.GET_DEDICATED_IPS,
-		SesActions.GET_DELIVERABILITY_DASHBOARD_OPTIONS,
-		SesActions.GET_DELIVERABILITY_TEST_REPORT,
-		SesActions.GET_DOMAIN_DELIVERABILITY_CAMPAIGN,
-		SesActions.GET_DOMAIN_STATISTICS_REPORT,
-		SesActions.GET_EMAIL_ADDRESS_INSIGHTS,
-		SesActions.GET_EMAIL_IDENTITY,
-		SesActions.GET_EMAIL_IDENTITY_POLICIES,
-		SesActions.GET_EMAIL_TEMPLATE,
-		SesActions.GET_EXPORT_JOB,
-		SesActions.GET_IDENTITY_DKIM_ATTRIBUTES,
-		SesActions.GET_IDENTITY_MAIL_FROM_DOMAIN_ATTRIBUTES,
-		SesActions.GET_IDENTITY_NOTIFICATION_ATTRIBUTES,
-		SesActions.GET_IDENTITY_POLICIES,
-		SesActions.GET_IDENTITY_VERIFICATION_ATTRIBUTES,
-		SesActions.GET_IMPORT_JOB,
-		SesActions.GET_INGRESS_POINT,
-		SesActions.GET_MEMBER_OF_ADDRESS_LIST,
-		SesActions.GET_MESSAGE_INSIGHTS,
-		SesActions.GET_MULTI_REGION_ENDPOINT,
-		SesActions.GET_RELAY,
-		SesActions.GET_REPUTATION_ENTITY,
-		SesActions.GET_RULE_SET,
-		SesActions.GET_SEND_QUOTA,
-		SesActions.GET_SEND_STATISTICS,
-		SesActions.GET_SUPPRESSED_DESTINATION,
-		SesActions.GET_TEMPLATE,
-		SesActions.GET_TENANT,
-		SesActions.GET_TRAFFIC_POLICY,
-		SesActions.LIST_DOMAIN_DELIVERABILITY_CAMPAIGNS,
-		SesActions.LIST_RECEIPT_FILTERS,
-		SesActions.LIST_RECEIPT_RULE_SETS,
-		SesActions.LIST_RECOMMENDATIONS,
-		SesActions.LIST_SUPPRESSED_DESTINATIONS,
-		SesActions.LIST_TAGS_FOR_RESOURCE,
-		SesActions.LIST_VERIFIED_EMAIL_ADDRESSES,
+	static readonly AllReadActions: string[] = [
+		SesActions.BatchGetMetricData,
+		SesActions.DescribeActiveReceiptRuleSet,
+		SesActions.DescribeConfigurationSet,
+		SesActions.DescribeReceiptRule,
+		SesActions.DescribeReceiptRuleSet,
+		SesActions.actionGetAccount,
+		SesActions.actionGetAccountSendingEnabled,
+		SesActions.actionGetAddonInstance,
+		SesActions.actionGetAddonSubscription,
+		SesActions.actionGetAddressList,
+		SesActions.actionGetAddressListImportJob,
+		SesActions.actionGetArchive,
+		SesActions.actionGetArchiveExport,
+		SesActions.actionGetArchiveMessage,
+		SesActions.actionGetArchiveMessageContent,
+		SesActions.actionGetArchiveSearch,
+		SesActions.actionGetArchiveSearchResults,
+		SesActions.actionGetBlacklistReports,
+		SesActions.actionGetConfigurationSet,
+		SesActions.actionGetConfigurationSetEventDestinations,
+		SesActions.actionGetContact,
+		SesActions.actionGetContactList,
+		SesActions.actionGetCustomVerificationEmailTemplate,
+		SesActions.actionGetDedicatedIp,
+		SesActions.actionGetDedicatedIpPool,
+		SesActions.actionGetDedicatedIps,
+		SesActions.actionGetDeliverabilityDashboardOptions,
+		SesActions.actionGetDeliverabilityTestReport,
+		SesActions.actionGetDomainDeliverabilityCampaign,
+		SesActions.actionGetDomainStatisticsReport,
+		SesActions.actionGetEmailAddressInsights,
+		SesActions.actionGetEmailIdentity,
+		SesActions.actionGetEmailIdentityPolicies,
+		SesActions.actionGetEmailTemplate,
+		SesActions.actionGetExportJob,
+		SesActions.actionGetIdentityDkimAttributes,
+		SesActions.actionGetIdentityMailFromDomainAttributes,
+		SesActions.actionGetIdentityNotificationAttributes,
+		SesActions.actionGetIdentityPolicies,
+		SesActions.actionGetIdentityVerificationAttributes,
+		SesActions.actionGetImportJob,
+		SesActions.actionGetIngressPoint,
+		SesActions.actionGetMemberOfAddressList,
+		SesActions.actionGetMessageInsights,
+		SesActions.actionGetMultiRegionEndpoint,
+		SesActions.actionGetRelay,
+		SesActions.actionGetReputationEntity,
+		SesActions.actionGetRuleSet,
+		SesActions.actionGetSendQuota,
+		SesActions.actionGetSendStatistics,
+		SesActions.actionGetSuppressedDestination,
+		SesActions.actionGetTemplate,
+		SesActions.actionGetTenant,
+		SesActions.actionGetTrafficPolicy,
+		SesActions.ListDomainDeliverabilityCampaigns,
+		SesActions.ListReceiptFilters,
+		SesActions.ListReceiptRuleSets,
+		SesActions.ListRecommendations,
+		SesActions.ListSuppressedDestinations,
+		SesActions.ListTagsForResource,
+		SesActions.ListVerifiedEmailAddresses,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SesActions.CANCEL_EXPORT_JOB,
-		SesActions.CLONE_RECEIPT_RULE_SET,
-		SesActions.CREATE_ADDON_INSTANCE,
-		SesActions.CREATE_ADDON_SUBSCRIPTION,
-		SesActions.CREATE_ADDRESS_LIST,
-		SesActions.CREATE_ADDRESS_LIST_IMPORT_JOB,
-		SesActions.CREATE_ARCHIVE,
-		SesActions.CREATE_CONFIGURATION_SET,
-		SesActions.CREATE_CONFIGURATION_SET_EVENT_DESTINATION,
-		SesActions.CREATE_CONFIGURATION_SET_TRACKING_OPTIONS,
-		SesActions.CREATE_CONTACT,
-		SesActions.CREATE_CONTACT_LIST,
-		SesActions.CREATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE,
-		SesActions.CREATE_DEDICATED_IP_POOL,
-		SesActions.CREATE_DELIVERABILITY_TEST_REPORT,
-		SesActions.CREATE_EMAIL_IDENTITY,
-		SesActions.CREATE_EMAIL_TEMPLATE,
-		SesActions.CREATE_EXPORT_JOB,
-		SesActions.CREATE_IMPORT_JOB,
-		SesActions.CREATE_INGRESS_POINT,
-		SesActions.CREATE_MULTI_REGION_ENDPOINT,
-		SesActions.CREATE_RECEIPT_FILTER,
-		SesActions.CREATE_RECEIPT_RULE,
-		SesActions.CREATE_RECEIPT_RULE_SET,
-		SesActions.CREATE_RELAY,
-		SesActions.CREATE_RULE_SET,
-		SesActions.CREATE_TEMPLATE,
-		SesActions.CREATE_TENANT,
-		SesActions.CREATE_TENANT_RESOURCE_ASSOCIATION,
-		SesActions.CREATE_TRAFFIC_POLICY,
-		SesActions.DELETE_ADDON_INSTANCE,
-		SesActions.DELETE_ADDON_SUBSCRIPTION,
-		SesActions.DELETE_ADDRESS_LIST,
-		SesActions.DELETE_ARCHIVE,
-		SesActions.DELETE_CONFIGURATION_SET,
-		SesActions.DELETE_CONFIGURATION_SET_EVENT_DESTINATION,
-		SesActions.DELETE_CONFIGURATION_SET_TRACKING_OPTIONS,
-		SesActions.DELETE_CONTACT,
-		SesActions.DELETE_CONTACT_LIST,
-		SesActions.DELETE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE,
-		SesActions.DELETE_DEDICATED_IP_POOL,
-		SesActions.DELETE_EMAIL_IDENTITY,
-		SesActions.DELETE_EMAIL_TEMPLATE,
-		SesActions.DELETE_IDENTITY,
-		SesActions.DELETE_INGRESS_POINT,
-		SesActions.DELETE_MULTI_REGION_ENDPOINT,
-		SesActions.DELETE_RECEIPT_FILTER,
-		SesActions.DELETE_RECEIPT_RULE,
-		SesActions.DELETE_RECEIPT_RULE_SET,
-		SesActions.DELETE_RELAY,
-		SesActions.DELETE_RULE_SET,
-		SesActions.DELETE_SUPPRESSED_DESTINATION,
-		SesActions.DELETE_TEMPLATE,
-		SesActions.DELETE_TENANT,
-		SesActions.DELETE_TENANT_RESOURCE_ASSOCIATION,
-		SesActions.DELETE_TRAFFIC_POLICY,
-		SesActions.DELETE_VERIFIED_EMAIL_ADDRESS,
-		SesActions.DEREGISTER_MEMBER_FROM_ADDRESS_LIST,
-		SesActions.PUT_ACCOUNT_DEDICATED_IP_WARMUP_ATTRIBUTES,
-		SesActions.PUT_ACCOUNT_DETAILS,
-		SesActions.PUT_ACCOUNT_PRICING_ATTRIBUTES,
-		SesActions.PUT_ACCOUNT_SENDING_ATTRIBUTES,
-		SesActions.PUT_ACCOUNT_SUPPRESSION_ATTRIBUTES,
-		SesActions.PUT_ACCOUNT_VDM_ATTRIBUTES,
-		SesActions.PUT_CONFIGURATION_SET_ARCHIVING_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_DELIVERY_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_REPUTATION_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_SENDING_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_SUPPRESSION_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_TRACKING_OPTIONS,
-		SesActions.PUT_CONFIGURATION_SET_VDM_OPTIONS,
-		SesActions.PUT_DEDICATED_IP_IN_POOL,
-		SesActions.PUT_DEDICATED_IP_POOL_SCALING_ATTRIBUTES,
-		SesActions.PUT_DEDICATED_IP_WARMUP_ATTRIBUTES,
-		SesActions.PUT_DELIVERABILITY_DASHBOARD_OPTION,
-		SesActions.PUT_EMAIL_IDENTITY_CONFIGURATION_SET_ATTRIBUTES,
-		SesActions.PUT_EMAIL_IDENTITY_DKIM_ATTRIBUTES,
-		SesActions.PUT_EMAIL_IDENTITY_DKIM_SIGNING_ATTRIBUTES,
-		SesActions.PUT_EMAIL_IDENTITY_FEEDBACK_ATTRIBUTES,
-		SesActions.PUT_EMAIL_IDENTITY_MAIL_FROM_ATTRIBUTES,
-		SesActions.PUT_SUPPRESSED_DESTINATION,
-		SesActions.PUT_TENANT_SUPPRESSION_ATTRIBUTES,
-		SesActions.REGISTER_MEMBER_TO_ADDRESS_LIST,
-		SesActions.REORDER_RECEIPT_RULE_SET,
-		SesActions.SEND_BOUNCE,
-		SesActions.SEND_BULK_EMAIL,
-		SesActions.SEND_BULK_TEMPLATED_EMAIL,
-		SesActions.SEND_CUSTOM_VERIFICATION_EMAIL,
-		SesActions.SEND_EMAIL,
-		SesActions.SEND_RAW_EMAIL,
-		SesActions.SEND_TEMPLATED_EMAIL,
-		SesActions.SET_ACTIVE_RECEIPT_RULE_SET,
-		SesActions.SET_IDENTITY_DKIM_ENABLED,
-		SesActions.SET_IDENTITY_FEEDBACK_FORWARDING_ENABLED,
-		SesActions.SET_IDENTITY_HEADERS_IN_NOTIFICATIONS_ENABLED,
-		SesActions.SET_IDENTITY_MAIL_FROM_DOMAIN,
-		SesActions.SET_IDENTITY_NOTIFICATION_TOPIC,
-		SesActions.SET_RECEIPT_RULE_POSITION,
-		SesActions.START_ADDRESS_LIST_IMPORT_JOB,
-		SesActions.START_ARCHIVE_EXPORT,
-		SesActions.START_ARCHIVE_SEARCH,
-		SesActions.STOP_ADDRESS_LIST_IMPORT_JOB,
-		SesActions.STOP_ARCHIVE_EXPORT,
-		SesActions.STOP_ARCHIVE_SEARCH,
-		SesActions.TEST_RENDER_EMAIL_TEMPLATE,
-		SesActions.TEST_RENDER_TEMPLATE,
-		SesActions.UPDATE_ACCOUNT_SENDING_ENABLED,
-		SesActions.UPDATE_ARCHIVE,
-		SesActions.UPDATE_CONFIGURATION_SET_EVENT_DESTINATION,
-		SesActions.UPDATE_CONFIGURATION_SET_REPUTATION_METRICS_ENABLED,
-		SesActions.UPDATE_CONFIGURATION_SET_SENDING_ENABLED,
-		SesActions.UPDATE_CONFIGURATION_SET_TRACKING_OPTIONS,
-		SesActions.UPDATE_CONTACT,
-		SesActions.UPDATE_CONTACT_LIST,
-		SesActions.UPDATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE,
-		SesActions.UPDATE_EMAIL_TEMPLATE,
-		SesActions.UPDATE_INGRESS_POINT,
-		SesActions.UPDATE_RECEIPT_RULE,
-		SesActions.UPDATE_RELAY,
-		SesActions.UPDATE_REPUTATION_ENTITY_CUSTOMER_MANAGED_STATUS,
-		SesActions.UPDATE_REPUTATION_ENTITY_POLICY,
-		SesActions.UPDATE_RULE_SET,
-		SesActions.UPDATE_TEMPLATE,
-		SesActions.UPDATE_TRAFFIC_POLICY,
-		SesActions.VERIFY_DOMAIN_DKIM,
-		SesActions.VERIFY_DOMAIN_IDENTITY,
-		SesActions.VERIFY_EMAIL_ADDRESS,
-		SesActions.VERIFY_EMAIL_IDENTITY,
+	static readonly AllWriteActions: string[] = [
+		SesActions.CancelExportJob,
+		SesActions.CloneReceiptRuleSet,
+		SesActions.CreateAddonInstance,
+		SesActions.CreateAddonSubscription,
+		SesActions.CreateAddressList,
+		SesActions.CreateAddressListImportJob,
+		SesActions.CreateArchive,
+		SesActions.CreateConfigurationSet,
+		SesActions.CreateConfigurationSetEventDestination,
+		SesActions.CreateConfigurationSetTrackingOptions,
+		SesActions.CreateContact,
+		SesActions.CreateContactList,
+		SesActions.CreateCustomVerificationEmailTemplate,
+		SesActions.CreateDedicatedIpPool,
+		SesActions.CreateDeliverabilityTestReport,
+		SesActions.CreateEmailIdentity,
+		SesActions.CreateEmailTemplate,
+		SesActions.CreateExportJob,
+		SesActions.CreateImportJob,
+		SesActions.CreateIngressPoint,
+		SesActions.CreateMultiRegionEndpoint,
+		SesActions.CreateReceiptFilter,
+		SesActions.CreateReceiptRule,
+		SesActions.CreateReceiptRuleSet,
+		SesActions.CreateRelay,
+		SesActions.CreateRuleSet,
+		SesActions.CreateTemplate,
+		SesActions.CreateTenant,
+		SesActions.CreateTenantResourceAssociation,
+		SesActions.CreateTrafficPolicy,
+		SesActions.DeleteAddonInstance,
+		SesActions.DeleteAddonSubscription,
+		SesActions.DeleteAddressList,
+		SesActions.DeleteArchive,
+		SesActions.DeleteConfigurationSet,
+		SesActions.DeleteConfigurationSetEventDestination,
+		SesActions.DeleteConfigurationSetTrackingOptions,
+		SesActions.DeleteContact,
+		SesActions.DeleteContactList,
+		SesActions.DeleteCustomVerificationEmailTemplate,
+		SesActions.DeleteDedicatedIpPool,
+		SesActions.DeleteEmailIdentity,
+		SesActions.DeleteEmailTemplate,
+		SesActions.DeleteIdentity,
+		SesActions.DeleteIngressPoint,
+		SesActions.DeleteMultiRegionEndpoint,
+		SesActions.DeleteReceiptFilter,
+		SesActions.DeleteReceiptRule,
+		SesActions.DeleteReceiptRuleSet,
+		SesActions.DeleteRelay,
+		SesActions.DeleteRuleSet,
+		SesActions.DeleteSuppressedDestination,
+		SesActions.DeleteTemplate,
+		SesActions.DeleteTenant,
+		SesActions.DeleteTenantResourceAssociation,
+		SesActions.DeleteTrafficPolicy,
+		SesActions.DeleteVerifiedEmailAddress,
+		SesActions.DeregisterMemberFromAddressList,
+		SesActions.PutAccountDedicatedIpWarmupAttributes,
+		SesActions.PutAccountDetails,
+		SesActions.PutAccountPricingAttributes,
+		SesActions.PutAccountSendingAttributes,
+		SesActions.PutAccountSuppressionAttributes,
+		SesActions.PutAccountVdmAttributes,
+		SesActions.PutConfigurationSetArchivingOptions,
+		SesActions.PutConfigurationSetDeliveryOptions,
+		SesActions.PutConfigurationSetReputationOptions,
+		SesActions.PutConfigurationSetSendingOptions,
+		SesActions.PutConfigurationSetSuppressionOptions,
+		SesActions.PutConfigurationSetTrackingOptions,
+		SesActions.PutConfigurationSetVdmOptions,
+		SesActions.PutDedicatedIpInPool,
+		SesActions.PutDedicatedIpPoolScalingAttributes,
+		SesActions.PutDedicatedIpWarmupAttributes,
+		SesActions.PutDeliverabilityDashboardOption,
+		SesActions.PutEmailIdentityConfigurationSetAttributes,
+		SesActions.PutEmailIdentityDkimAttributes,
+		SesActions.PutEmailIdentityDkimSigningAttributes,
+		SesActions.PutEmailIdentityFeedbackAttributes,
+		SesActions.PutEmailIdentityMailFromAttributes,
+		SesActions.PutSuppressedDestination,
+		SesActions.PutTenantSuppressionAttributes,
+		SesActions.RegisterMemberToAddressList,
+		SesActions.ReorderReceiptRuleSet,
+		SesActions.SendBounce,
+		SesActions.SendBulkEmail,
+		SesActions.SendBulkTemplatedEmail,
+		SesActions.SendCustomVerificationEmail,
+		SesActions.SendEmail,
+		SesActions.SendRawEmail,
+		SesActions.SendTemplatedEmail,
+		SesActions.actionSetActiveReceiptRuleSet,
+		SesActions.actionSetIdentityDkimEnabled,
+		SesActions.actionSetIdentityFeedbackForwardingEnabled,
+		SesActions.actionSetIdentityHeadersInNotificationsEnabled,
+		SesActions.actionSetIdentityMailFromDomain,
+		SesActions.actionSetIdentityNotificationTopic,
+		SesActions.actionSetReceiptRulePosition,
+		SesActions.StartAddressListImportJob,
+		SesActions.StartArchiveExport,
+		SesActions.StartArchiveSearch,
+		SesActions.StopAddressListImportJob,
+		SesActions.StopArchiveExport,
+		SesActions.StopArchiveSearch,
+		SesActions.TestRenderEmailTemplate,
+		SesActions.TestRenderTemplate,
+		SesActions.UpdateAccountSendingEnabled,
+		SesActions.UpdateArchive,
+		SesActions.UpdateConfigurationSetEventDestination,
+		SesActions.UpdateConfigurationSetReputationMetricsEnabled,
+		SesActions.UpdateConfigurationSetSendingEnabled,
+		SesActions.UpdateConfigurationSetTrackingOptions,
+		SesActions.UpdateContact,
+		SesActions.UpdateContactList,
+		SesActions.UpdateCustomVerificationEmailTemplate,
+		SesActions.UpdateEmailTemplate,
+		SesActions.UpdateIngressPoint,
+		SesActions.UpdateReceiptRule,
+		SesActions.UpdateRelay,
+		SesActions.UpdateReputationEntityCustomerManagedStatus,
+		SesActions.UpdateReputationEntityPolicy,
+		SesActions.UpdateRuleSet,
+		SesActions.UpdateTemplate,
+		SesActions.UpdateTrafficPolicy,
+		SesActions.VerifyDomainDkim,
+		SesActions.VerifyDomainIdentity,
+		SesActions.VerifyEmailAddress,
+		SesActions.VerifyEmailIdentity,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SesActions.LIST_ADDON_INSTANCES,
-		SesActions.LIST_ADDON_SUBSCRIPTIONS,
-		SesActions.LIST_ADDRESS_LIST_IMPORT_JOBS,
-		SesActions.LIST_ADDRESS_LISTS,
-		SesActions.LIST_ARCHIVE_EXPORTS,
-		SesActions.LIST_ARCHIVE_SEARCHES,
-		SesActions.LIST_ARCHIVES,
-		SesActions.LIST_CONFIGURATION_SETS,
-		SesActions.LIST_CONTACT_LISTS,
-		SesActions.LIST_CONTACTS,
-		SesActions.LIST_CUSTOM_VERIFICATION_EMAIL_TEMPLATES,
-		SesActions.LIST_DEDICATED_IP_POOLS,
-		SesActions.LIST_DELIVERABILITY_TEST_REPORTS,
-		SesActions.LIST_EMAIL_IDENTITIES,
-		SesActions.LIST_EMAIL_TEMPLATES,
-		SesActions.LIST_EXPORT_JOBS,
-		SesActions.LIST_IDENTITIES,
-		SesActions.LIST_IDENTITY_POLICIES,
-		SesActions.LIST_IMPORT_JOBS,
-		SesActions.LIST_INGRESS_POINTS,
-		SesActions.LIST_MEMBERS_OF_ADDRESS_LIST,
-		SesActions.LIST_MULTI_REGION_ENDPOINTS,
-		SesActions.LIST_RELAYS,
-		SesActions.LIST_REPUTATION_ENTITIES,
-		SesActions.LIST_RESOURCE_TENANTS,
-		SesActions.LIST_RULE_SETS,
-		SesActions.LIST_TEMPLATES,
-		SesActions.LIST_TENANT_RESOURCES,
-		SesActions.LIST_TENANTS,
-		SesActions.LIST_TRAFFIC_POLICIES,
+	static readonly AllListActions: string[] = [
+		SesActions.ListAddonInstances,
+		SesActions.ListAddonSubscriptions,
+		SesActions.ListAddressListImportJobs,
+		SesActions.ListAddressLists,
+		SesActions.ListArchiveExports,
+		SesActions.ListArchiveSearches,
+		SesActions.ListArchives,
+		SesActions.ListConfigurationSets,
+		SesActions.ListContactLists,
+		SesActions.ListContacts,
+		SesActions.ListCustomVerificationEmailTemplates,
+		SesActions.ListDedicatedIpPools,
+		SesActions.ListDeliverabilityTestReports,
+		SesActions.ListEmailIdentities,
+		SesActions.ListEmailTemplates,
+		SesActions.ListExportJobs,
+		SesActions.ListIdentities,
+		SesActions.ListIdentityPolicies,
+		SesActions.ListImportJobs,
+		SesActions.ListIngressPoints,
+		SesActions.ListMembersOfAddressList,
+		SesActions.ListMultiRegionEndpoints,
+		SesActions.ListRelays,
+		SesActions.ListReputationEntities,
+		SesActions.ListResourceTenants,
+		SesActions.ListRuleSets,
+		SesActions.ListTemplates,
+		SesActions.ListTenantResources,
+		SesActions.ListTenants,
+		SesActions.ListTrafficPolicies,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		SesActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
-		SesActions.CREATE_EMAIL_IDENTITY_POLICY,
-		SesActions.DELETE_EMAIL_IDENTITY_POLICY,
-		SesActions.DELETE_IDENTITY_POLICY,
-		SesActions.PUT_IDENTITY_POLICY,
-		SesActions.REPLICATE_EMAIL_IDENTITY_DKIM_SIGNING_KEY,
-		SesActions.UPDATE_EMAIL_IDENTITY_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		SesActions.AllowVendedLogDeliveryForResource,
+		SesActions.CreateEmailIdentityPolicy,
+		SesActions.DeleteEmailIdentityPolicy,
+		SesActions.DeleteIdentityPolicy,
+		SesActions.PutIdentityPolicy,
+		SesActions.ReplicateEmailIdentityDkimSigningKey,
+		SesActions.UpdateEmailIdentityPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SesActions.TAG_RESOURCE,
-		SesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SesActions.TagResource,
+		SesActions.UntagResource,
 	];
 }
 
-const AddonInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):addon-instance/(?<addonInstanceId>[^:/?]+)$",
-);
-const AddonSubscriptionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):addon-subscription/(?<addonSubscriptionId>[^:/?]+)$",
-);
-const ConfigurationSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):configuration-set/(?<configurationSetName>[^:/?]+)$",
-);
-const ContactListArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):contact-list/(?<contactListName>[^:/?]+)$",
-);
-const CustomVerificationEmailTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):custom-verification-email-template/(?<templateName>[^:/?]+)$",
-);
-const DedicatedIPPoolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):dedicated-ip-pool/(?<dedicatedIPPool>[^:/?]+)$",
-);
-const DeliverabilityTestReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):deliverability-test-report/(?<reportId>[^:/?]+)$",
-);
-const ExportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):export-job/(?<exportJobId>[^:/?]+)$",
-);
-const IdentityArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):identity/(?<identityName>[^:/?]+)$",
-);
-const ImportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):import-job/(?<importJobId>[^:/?]+)$",
-);
-const MailmanagerAddressListArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-address-list/(?<addressListId>[^:/?]+)$",
-);
-const MailmanagerArchiveArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-archive/(?<archiveId>[^:/?]+)$",
-);
-const MailmanagerIngressPointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-ingress-point/(?<ingressPointId>[^:/?]+)$",
-);
-const MailmanagerRuleSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-rule-set/(?<ruleSetId>[^:/?]+)$",
-);
-const MailmanagerSmtpRelayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-smtp-relay/(?<relayId>[^:/?]+)$",
-);
-const MailmanagerTrafficPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-traffic-policy/(?<trafficPolicyId>[^:/?]+)$",
-);
-const MultiRegionEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):multi-region-endpoint/(?<endpointName>[^:/?]+)$",
-);
-const ReputationPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):aws:reputation-policy/(?<reputationPolicyName>[^:/?]+)$",
-);
-const TemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):template/(?<templateName>[^:/?]+)$",
-);
-const TenantArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):tenant/(?<tenantName>[^:/?]+)/(?<tenantId>[^:/?]+)$",
-);
+/**
+ * Properties for building a addon-instance ARN.
+ */
+export interface SesAddonInstanceArnProps {
+	/** The AddonInstanceId component of the ARN. */
+	readonly addonInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a addon-instance ARN.
+ */
+export interface SesAddonInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AddonInstanceId component. */
+	readonly addonInstanceId: string;
+}
+
+/**
+ * Properties for building a addon-subscription ARN.
+ */
+export interface SesAddonSubscriptionArnProps {
+	/** The AddonSubscriptionId component of the ARN. */
+	readonly addonSubscriptionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a addon-subscription ARN.
+ */
+export interface SesAddonSubscriptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AddonSubscriptionId component. */
+	readonly addonSubscriptionId: string;
+}
+
+/**
+ * Properties for building a configuration-set ARN.
+ */
+export interface SesConfigurationSetArnProps {
+	/** The ConfigurationSetName component of the ARN. */
+	readonly configurationSetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration-set ARN.
+ */
+export interface SesConfigurationSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationSetName component. */
+	readonly configurationSetName: string;
+}
+
+/**
+ * Properties for building a contact-list ARN.
+ */
+export interface SesContactListArnProps {
+	/** The ContactListName component of the ARN. */
+	readonly contactListName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a contact-list ARN.
+ */
+export interface SesContactListArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ContactListName component. */
+	readonly contactListName: string;
+}
+
+/**
+ * Properties for building a custom-verification-email-template ARN.
+ */
+export interface SesCustomVerificationEmailTemplateArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custom-verification-email-template ARN.
+ */
+export interface SesCustomVerificationEmailTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+}
+
+/**
+ * Properties for building a dedicated-ip-pool ARN.
+ */
+export interface SesDedicatedIPPoolArnProps {
+	/** The DedicatedIPPool component of the ARN. */
+	readonly dedicatedIPPool: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dedicated-ip-pool ARN.
+ */
+export interface SesDedicatedIPPoolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DedicatedIPPool component. */
+	readonly dedicatedIPPool: string;
+}
+
+/**
+ * Properties for building a deliverability-test-report ARN.
+ */
+export interface SesDeliverabilityTestReportArnProps {
+	/** The ReportId component of the ARN. */
+	readonly reportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deliverability-test-report ARN.
+ */
+export interface SesDeliverabilityTestReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportId component. */
+	readonly reportId: string;
+}
+
+/**
+ * Properties for building a export-job ARN.
+ */
+export interface SesExportJobArnProps {
+	/** The ExportJobId component of the ARN. */
+	readonly exportJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export-job ARN.
+ */
+export interface SesExportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExportJobId component. */
+	readonly exportJobId: string;
+}
+
+/**
+ * Properties for building a identity ARN.
+ */
+export interface SesIdentityArnProps {
+	/** The IdentityName component of the ARN. */
+	readonly identityName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identity ARN.
+ */
+export interface SesIdentityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IdentityName component. */
+	readonly identityName: string;
+}
+
+/**
+ * Properties for building a import-job ARN.
+ */
+export interface SesImportJobArnProps {
+	/** The ImportJobId component of the ARN. */
+	readonly importJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a import-job ARN.
+ */
+export interface SesImportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImportJobId component. */
+	readonly importJobId: string;
+}
+
+/**
+ * Properties for building a mailmanager-address-list ARN.
+ */
+export interface SesMailmanagerAddressListArnProps {
+	/** The AddressListId component of the ARN. */
+	readonly addressListId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-address-list ARN.
+ */
+export interface SesMailmanagerAddressListArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AddressListId component. */
+	readonly addressListId: string;
+}
+
+/**
+ * Properties for building a mailmanager-archive ARN.
+ */
+export interface SesMailmanagerArchiveArnProps {
+	/** The ArchiveId component of the ARN. */
+	readonly archiveId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-archive ARN.
+ */
+export interface SesMailmanagerArchiveArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ArchiveId component. */
+	readonly archiveId: string;
+}
+
+/**
+ * Properties for building a mailmanager-ingress-point ARN.
+ */
+export interface SesMailmanagerIngressPointArnProps {
+	/** The IngressPointId component of the ARN. */
+	readonly ingressPointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-ingress-point ARN.
+ */
+export interface SesMailmanagerIngressPointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IngressPointId component. */
+	readonly ingressPointId: string;
+}
+
+/**
+ * Properties for building a mailmanager-rule-set ARN.
+ */
+export interface SesMailmanagerRuleSetArnProps {
+	/** The RuleSetId component of the ARN. */
+	readonly ruleSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-rule-set ARN.
+ */
+export interface SesMailmanagerRuleSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RuleSetId component. */
+	readonly ruleSetId: string;
+}
+
+/**
+ * Properties for building a mailmanager-smtp-relay ARN.
+ */
+export interface SesMailmanagerSmtpRelayArnProps {
+	/** The RelayId component of the ARN. */
+	readonly relayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-smtp-relay ARN.
+ */
+export interface SesMailmanagerSmtpRelayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RelayId component. */
+	readonly relayId: string;
+}
+
+/**
+ * Properties for building a mailmanager-traffic-policy ARN.
+ */
+export interface SesMailmanagerTrafficPolicyArnProps {
+	/** The TrafficPolicyId component of the ARN. */
+	readonly trafficPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mailmanager-traffic-policy ARN.
+ */
+export interface SesMailmanagerTrafficPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrafficPolicyId component. */
+	readonly trafficPolicyId: string;
+}
+
+/**
+ * Properties for building a multi-region-endpoint ARN.
+ */
+export interface SesMultiRegionEndpointArnProps {
+	/** The EndpointName component of the ARN. */
+	readonly endpointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a multi-region-endpoint ARN.
+ */
+export interface SesMultiRegionEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EndpointName component. */
+	readonly endpointName: string;
+}
+
+/**
+ * Properties for building a reputation-policy ARN.
+ */
+export interface SesReputationPolicyArnProps {
+	/** The ReputationPolicyName component of the ARN. */
+	readonly reputationPolicyName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reputation-policy ARN.
+ */
+export interface SesReputationPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReputationPolicyName component. */
+	readonly reputationPolicyName: string;
+}
+
+/**
+ * Properties for building a template ARN.
+ */
+export interface SesTemplateArnProps {
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a template ARN.
+ */
+export interface SesTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+}
+
+/**
+ * Properties for building a tenant ARN.
+ */
+export interface SesTenantArnProps {
+	/** The TenantName component of the ARN. */
+	readonly tenantName: string;
+	/** The TenantId component of the ARN. */
+	readonly tenantId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a tenant ARN.
+ */
+export interface SesTenantArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TenantName component. */
+	readonly tenantName: string;
+	/** The TenantId component. */
+	readonly tenantId: string;
+}
+
+const AddonInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):addon-instance\/(?<addonInstanceId>[^:/?]+)$/;
+const AddonSubscriptionArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):addon-subscription\/(?<addonSubscriptionId>[^:/?]+)$/;
+const ConfigurationSetArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):configuration-set\/(?<configurationSetName>[^:/?]+)$/;
+const ContactListArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):contact-list\/(?<contactListName>[^:/?]+)$/;
+const CustomVerificationEmailTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):custom-verification-email-template\/(?<templateName>[^:/?]+)$/;
+const DedicatedIPPoolArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):dedicated-ip-pool\/(?<dedicatedIPPool>[^:/?]+)$/;
+const DeliverabilityTestReportArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):deliverability-test-report\/(?<reportId>[^:/?]+)$/;
+const ExportJobArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):export-job\/(?<exportJobId>[^:/?]+)$/;
+const IdentityArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):identity\/(?<identityName>[^:/?]+)$/;
+const ImportJobArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):import-job\/(?<importJobId>[^:/?]+)$/;
+const MailmanagerAddressListArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-address-list\/(?<addressListId>[^:/?]+)$/;
+const MailmanagerArchiveArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-archive\/(?<archiveId>[^:/?]+)$/;
+const MailmanagerIngressPointArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-ingress-point\/(?<ingressPointId>[^:/?]+)$/;
+const MailmanagerRuleSetArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-rule-set\/(?<ruleSetId>[^:/?]+)$/;
+const MailmanagerSmtpRelayArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-smtp-relay\/(?<relayId>[^:/?]+)$/;
+const MailmanagerTrafficPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):mailmanager-traffic-policy\/(?<trafficPolicyId>[^:/?]+)$/;
+const MultiRegionEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):multi-region-endpoint\/(?<endpointName>[^:/?]+)$/;
+const ReputationPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):aws:reputation-policy\/(?<reputationPolicyName>[^:/?]+)$/;
+const TemplateArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):template\/(?<templateName>[^:/?]+)$/;
+const TenantArnRegex =
+	/^arn:(?<partition>[^:]+):ses:(?<region>[^:]*):(?<account>[^:]*):tenant\/(?<tenantName>[^:/?]+)\/(?<tenantId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ses resources.
@@ -854,16 +1391,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the addon-instance resource.
 	 */
-	static addonInstance(props: {
-		/** The AddonInstanceId component of the ARN. */
-		readonly addonInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static addonInstance(props: SesAddonInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:addon-instance/${props.addonInstanceId}`;
 	}
 
@@ -878,12 +1406,7 @@ export class SesResources {
 	 * Parses a addon-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAddonInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		addonInstanceId: string;
-	} {
+	static parseAddonInstanceArn(arn: string): SesAddonInstanceArnComponents {
 		const match = AddonInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid addon-instance ARN: ${arn}`);
@@ -899,16 +1422,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the addon-subscription resource.
 	 */
-	static addonSubscription(props: {
-		/** The AddonSubscriptionId component of the ARN. */
-		readonly addonSubscriptionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static addonSubscription(props: SesAddonSubscriptionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:addon-subscription/${props.addonSubscriptionId}`;
 	}
 
@@ -923,12 +1437,9 @@ export class SesResources {
 	 * Parses a addon-subscription ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAddonSubscriptionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		addonSubscriptionId: string;
-	} {
+	static parseAddonSubscriptionArn(
+		arn: string,
+	): SesAddonSubscriptionArnComponents {
 		const match = AddonSubscriptionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid addon-subscription ARN: ${arn}`);
@@ -944,16 +1455,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the configuration-set resource.
 	 */
-	static configurationSet(props: {
-		/** The ConfigurationSetName component of the ARN. */
-		readonly configurationSetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configurationSet(props: SesConfigurationSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:configuration-set/${props.configurationSetName}`;
 	}
 
@@ -968,12 +1470,9 @@ export class SesResources {
 	 * Parses a configuration-set ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configurationSetName: string;
-	} {
+	static parseConfigurationSetArn(
+		arn: string,
+	): SesConfigurationSetArnComponents {
 		const match = ConfigurationSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration-set ARN: ${arn}`);
@@ -989,16 +1488,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the contact-list resource.
 	 */
-	static contactList(props: {
-		/** The ContactListName component of the ARN. */
-		readonly contactListName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static contactList(props: SesContactListArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:contact-list/${props.contactListName}`;
 	}
 
@@ -1013,12 +1503,7 @@ export class SesResources {
 	 * Parses a contact-list ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContactListArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		contactListName: string;
-	} {
+	static parseContactListArn(arn: string): SesContactListArnComponents {
 		const match = ContactListArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid contact-list ARN: ${arn}`);
@@ -1034,16 +1519,9 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the custom-verification-email-template resource.
 	 */
-	static customVerificationEmailTemplate(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customVerificationEmailTemplate(
+		props: SesCustomVerificationEmailTemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:custom-verification-email-template/${props.templateName}`;
 	}
 
@@ -1058,12 +1536,9 @@ export class SesResources {
 	 * Parses a custom-verification-email-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomVerificationEmailTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-	} {
+	static parseCustomVerificationEmailTemplateArn(
+		arn: string,
+	): SesCustomVerificationEmailTemplateArnComponents {
 		const match = CustomVerificationEmailTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custom-verification-email-template ARN: ${arn}`);
@@ -1079,16 +1554,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the dedicated-ip-pool resource.
 	 */
-	static dedicatedIPPool(props: {
-		/** The DedicatedIPPool component of the ARN. */
-		readonly dedicatedIPPool: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dedicatedIPPool(props: SesDedicatedIPPoolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:dedicated-ip-pool/${props.dedicatedIPPool}`;
 	}
 
@@ -1103,12 +1569,7 @@ export class SesResources {
 	 * Parses a dedicated-ip-pool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDedicatedIPPoolArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dedicatedIPPool: string;
-	} {
+	static parseDedicatedIPPoolArn(arn: string): SesDedicatedIPPoolArnComponents {
 		const match = DedicatedIPPoolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dedicated-ip-pool ARN: ${arn}`);
@@ -1124,16 +1585,9 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the deliverability-test-report resource.
 	 */
-	static deliverabilityTestReport(props: {
-		/** The ReportId component of the ARN. */
-		readonly reportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deliverabilityTestReport(
+		props: SesDeliverabilityTestReportArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:deliverability-test-report/${props.reportId}`;
 	}
 
@@ -1148,12 +1602,9 @@ export class SesResources {
 	 * Parses a deliverability-test-report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeliverabilityTestReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportId: string;
-	} {
+	static parseDeliverabilityTestReportArn(
+		arn: string,
+	): SesDeliverabilityTestReportArnComponents {
 		const match = DeliverabilityTestReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deliverability-test-report ARN: ${arn}`);
@@ -1169,16 +1620,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the export-job resource.
 	 */
-	static exportJob(props: {
-		/** The ExportJobId component of the ARN. */
-		readonly exportJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static exportJob(props: SesExportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:export-job/${props.exportJobId}`;
 	}
 
@@ -1193,12 +1635,7 @@ export class SesResources {
 	 * Parses a export-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		exportJobId: string;
-	} {
+	static parseExportJobArn(arn: string): SesExportJobArnComponents {
 		const match = ExportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export-job ARN: ${arn}`);
@@ -1214,16 +1651,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the identity resource.
 	 */
-	static identity(props: {
-		/** The IdentityName component of the ARN. */
-		readonly identityName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identity(props: SesIdentityArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:identity/${props.identityName}`;
 	}
 
@@ -1238,12 +1666,7 @@ export class SesResources {
 	 * Parses a identity ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentityArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identityName: string;
-	} {
+	static parseIdentityArn(arn: string): SesIdentityArnComponents {
 		const match = IdentityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identity ARN: ${arn}`);
@@ -1259,16 +1682,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the import-job resource.
 	 */
-	static importJob(props: {
-		/** The ImportJobId component of the ARN. */
-		readonly importJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static importJob(props: SesImportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:import-job/${props.importJobId}`;
 	}
 
@@ -1283,12 +1697,7 @@ export class SesResources {
 	 * Parses a import-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		importJobId: string;
-	} {
+	static parseImportJobArn(arn: string): SesImportJobArnComponents {
 		const match = ImportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid import-job ARN: ${arn}`);
@@ -1304,16 +1713,9 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-address-list resource.
 	 */
-	static mailmanagerAddressList(props: {
-		/** The AddressListId component of the ARN. */
-		readonly addressListId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerAddressList(
+		props: SesMailmanagerAddressListArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-address-list/${props.addressListId}`;
 	}
 
@@ -1328,12 +1730,9 @@ export class SesResources {
 	 * Parses a mailmanager-address-list ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerAddressListArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		addressListId: string;
-	} {
+	static parseMailmanagerAddressListArn(
+		arn: string,
+	): SesMailmanagerAddressListArnComponents {
 		const match = MailmanagerAddressListArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-address-list ARN: ${arn}`);
@@ -1349,16 +1748,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-archive resource.
 	 */
-	static mailmanagerArchive(props: {
-		/** The ArchiveId component of the ARN. */
-		readonly archiveId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerArchive(props: SesMailmanagerArchiveArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-archive/${props.archiveId}`;
 	}
 
@@ -1373,12 +1763,9 @@ export class SesResources {
 	 * Parses a mailmanager-archive ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerArchiveArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		archiveId: string;
-	} {
+	static parseMailmanagerArchiveArn(
+		arn: string,
+	): SesMailmanagerArchiveArnComponents {
 		const match = MailmanagerArchiveArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-archive ARN: ${arn}`);
@@ -1394,16 +1781,9 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-ingress-point resource.
 	 */
-	static mailmanagerIngressPoint(props: {
-		/** The IngressPointId component of the ARN. */
-		readonly ingressPointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerIngressPoint(
+		props: SesMailmanagerIngressPointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-ingress-point/${props.ingressPointId}`;
 	}
 
@@ -1418,12 +1798,9 @@ export class SesResources {
 	 * Parses a mailmanager-ingress-point ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerIngressPointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ingressPointId: string;
-	} {
+	static parseMailmanagerIngressPointArn(
+		arn: string,
+	): SesMailmanagerIngressPointArnComponents {
 		const match = MailmanagerIngressPointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-ingress-point ARN: ${arn}`);
@@ -1439,16 +1816,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-rule-set resource.
 	 */
-	static mailmanagerRuleSet(props: {
-		/** The RuleSetId component of the ARN. */
-		readonly ruleSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerRuleSet(props: SesMailmanagerRuleSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-rule-set/${props.ruleSetId}`;
 	}
 
@@ -1463,12 +1831,9 @@ export class SesResources {
 	 * Parses a mailmanager-rule-set ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerRuleSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ruleSetId: string;
-	} {
+	static parseMailmanagerRuleSetArn(
+		arn: string,
+	): SesMailmanagerRuleSetArnComponents {
 		const match = MailmanagerRuleSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-rule-set ARN: ${arn}`);
@@ -1484,16 +1849,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-smtp-relay resource.
 	 */
-	static mailmanagerSmtpRelay(props: {
-		/** The RelayId component of the ARN. */
-		readonly relayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerSmtpRelay(props: SesMailmanagerSmtpRelayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-smtp-relay/${props.relayId}`;
 	}
 
@@ -1508,12 +1864,9 @@ export class SesResources {
 	 * Parses a mailmanager-smtp-relay ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerSmtpRelayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		relayId: string;
-	} {
+	static parseMailmanagerSmtpRelayArn(
+		arn: string,
+	): SesMailmanagerSmtpRelayArnComponents {
 		const match = MailmanagerSmtpRelayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-smtp-relay ARN: ${arn}`);
@@ -1529,16 +1882,9 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the mailmanager-traffic-policy resource.
 	 */
-	static mailmanagerTrafficPolicy(props: {
-		/** The TrafficPolicyId component of the ARN. */
-		readonly trafficPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mailmanagerTrafficPolicy(
+		props: SesMailmanagerTrafficPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:mailmanager-traffic-policy/${props.trafficPolicyId}`;
 	}
 
@@ -1553,12 +1899,9 @@ export class SesResources {
 	 * Parses a mailmanager-traffic-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMailmanagerTrafficPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trafficPolicyId: string;
-	} {
+	static parseMailmanagerTrafficPolicyArn(
+		arn: string,
+	): SesMailmanagerTrafficPolicyArnComponents {
 		const match = MailmanagerTrafficPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mailmanager-traffic-policy ARN: ${arn}`);
@@ -1574,16 +1917,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the multi-region-endpoint resource.
 	 */
-	static multiRegionEndpoint(props: {
-		/** The EndpointName component of the ARN. */
-		readonly endpointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static multiRegionEndpoint(props: SesMultiRegionEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:multi-region-endpoint/${props.endpointName}`;
 	}
 
@@ -1598,12 +1932,9 @@ export class SesResources {
 	 * Parses a multi-region-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMultiRegionEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		endpointName: string;
-	} {
+	static parseMultiRegionEndpointArn(
+		arn: string,
+	): SesMultiRegionEndpointArnComponents {
 		const match = MultiRegionEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid multi-region-endpoint ARN: ${arn}`);
@@ -1619,16 +1950,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the reputation-policy resource.
 	 */
-	static reputationPolicy(props: {
-		/** The ReputationPolicyName component of the ARN. */
-		readonly reputationPolicyName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reputationPolicy(props: SesReputationPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:aws:reputation-policy/${props.reputationPolicyName}`;
 	}
 
@@ -1643,12 +1965,9 @@ export class SesResources {
 	 * Parses a reputation-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReputationPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reputationPolicyName: string;
-	} {
+	static parseReputationPolicyArn(
+		arn: string,
+	): SesReputationPolicyArnComponents {
 		const match = ReputationPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reputation-policy ARN: ${arn}`);
@@ -1664,16 +1983,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the template resource.
 	 */
-	static template(props: {
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static template(props: SesTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:template/${props.templateName}`;
 	}
 
@@ -1688,12 +1998,7 @@ export class SesResources {
 	 * Parses a template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateName: string;
-	} {
+	static parseTemplateArn(arn: string): SesTemplateArnComponents {
 		const match = TemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid template ARN: ${arn}`);
@@ -1709,18 +2014,7 @@ export class SesResources {
 	/**
 	 * Builds an ARN for the tenant resource.
 	 */
-	static tenant(props: {
-		/** The TenantName component of the ARN. */
-		readonly tenantName: string;
-		/** The TenantId component of the ARN. */
-		readonly tenantId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static tenant(props: SesTenantArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ses:${props.region ?? "*"}:${props.account ?? "*"}:tenant/${props.tenantName}/${props.tenantId}`;
 	}
 
@@ -1735,13 +2029,7 @@ export class SesResources {
 	 * Parses a tenant ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTenantArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		tenantName: string;
-		tenantId: string;
-	} {
+	static parseTenantArn(arn: string): SesTenantArnComponents {
 		const match = TenantArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid tenant ARN: ${arn}`);
@@ -1761,729 +2049,710 @@ export class SesResources {
  */
 export class SesOperations {
 	/** IAM actions required for the BatchGetMetricData API call. */
-	static readonly BATCH_GET_METRIC_DATA: string[] = ["ses:BatchGetMetricData"];
+	static readonly BatchGetMetricData: string[] = ["ses:BatchGetMetricData"];
 	/** IAM actions required for the CancelExportJob API call. */
-	static readonly CANCEL_EXPORT_JOB: string[] = ["ses:CancelExportJob"];
+	static readonly CancelExportJob: string[] = ["ses:CancelExportJob"];
 	/** IAM actions required for the CloneReceiptRuleSet API call. */
-	static readonly CLONE_RECEIPT_RULE_SET: string[] = [
-		"ses:CloneReceiptRuleSet",
-	];
+	static readonly CloneReceiptRuleSet: string[] = ["ses:CloneReceiptRuleSet"];
 	/** IAM actions required for the CreateAddonInstance API call. */
-	static readonly CREATE_ADDON_INSTANCE: string[] = [
+	static readonly CreateAddonInstance: string[] = [
 		"ses:CreateAddonInstance",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateAddonSubscription API call. */
-	static readonly CREATE_ADDON_SUBSCRIPTION: string[] = [
+	static readonly CreateAddonSubscription: string[] = [
 		"ses:CreateAddonSubscription",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateAddressList API call. */
-	static readonly CREATE_ADDRESS_LIST: string[] = [
+	static readonly CreateAddressList: string[] = [
 		"ses:CreateAddressList",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateAddressListImportJob API call. */
-	static readonly CREATE_ADDRESS_LIST_IMPORT_JOB: string[] = [
+	static readonly CreateAddressListImportJob: string[] = [
 		"ses:CreateAddressListImportJob",
 	];
 	/** IAM actions required for the CreateArchive API call. */
-	static readonly CREATE_ARCHIVE: string[] = [
+	static readonly CreateArchive: string[] = [
 		"ses:CreateArchive",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateConfigurationSet API call. */
-	static readonly CREATE_CONFIGURATION_SET: string[] = [
+	static readonly CreateConfigurationSet: string[] = [
 		"ses:CreateConfigurationSet",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateConfigurationSetEventDestination API call. */
-	static readonly CREATE_CONFIGURATION_SET_EVENT_DESTINATION: string[] = [
+	static readonly CreateConfigurationSetEventDestination: string[] = [
 		"ses:CreateConfigurationSetEventDestination",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateConfigurationSetTrackingOptions API call. */
-	static readonly CREATE_CONFIGURATION_SET_TRACKING_OPTIONS: string[] = [
+	static readonly CreateConfigurationSetTrackingOptions: string[] = [
 		"ses:CreateConfigurationSetTrackingOptions",
 	];
 	/** IAM actions required for the CreateContact API call. */
-	static readonly CREATE_CONTACT: string[] = ["ses:CreateContact"];
+	static readonly CreateContact: string[] = ["ses:CreateContact"];
 	/** IAM actions required for the CreateContactList API call. */
-	static readonly CREATE_CONTACT_LIST: string[] = [
+	static readonly CreateContactList: string[] = [
 		"ses:CreateContactList",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateCustomVerificationEmailTemplate API call. */
-	static readonly CREATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE: string[] = [
+	static readonly CreateCustomVerificationEmailTemplate: string[] = [
 		"ses:CreateCustomVerificationEmailTemplate",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateDedicatedIpPool API call. */
-	static readonly CREATE_DEDICATED_IP_POOL: string[] = [
+	static readonly CreateDedicatedIpPool: string[] = [
 		"ses:CreateDedicatedIpPool",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateDeliverabilityTestReport API call. */
-	static readonly CREATE_DELIVERABILITY_TEST_REPORT: string[] = [
+	static readonly CreateDeliverabilityTestReport: string[] = [
 		"ses:CreateDeliverabilityTestReport",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateEmailIdentity API call. */
-	static readonly CREATE_EMAIL_IDENTITY: string[] = [
+	static readonly CreateEmailIdentity: string[] = [
 		"ses:CreateEmailIdentity",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateEmailIdentityPolicy API call. */
-	static readonly CREATE_EMAIL_IDENTITY_POLICY: string[] = [
+	static readonly CreateEmailIdentityPolicy: string[] = [
 		"ses:CreateEmailIdentityPolicy",
 	];
 	/** IAM actions required for the CreateEmailTemplate API call. */
-	static readonly CREATE_EMAIL_TEMPLATE: string[] = [
+	static readonly CreateEmailTemplate: string[] = [
 		"ses:CreateEmailTemplate",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateExportJob API call. */
-	static readonly CREATE_EXPORT_JOB: string[] = ["ses:CreateExportJob"];
+	static readonly CreateExportJob: string[] = ["ses:CreateExportJob"];
 	/** IAM actions required for the CreateImportJob API call. */
-	static readonly CREATE_IMPORT_JOB: string[] = ["ses:CreateImportJob"];
+	static readonly CreateImportJob: string[] = ["ses:CreateImportJob"];
 	/** IAM actions required for the CreateIngressPoint API call. */
-	static readonly CREATE_INGRESS_POINT: string[] = [
+	static readonly CreateIngressPoint: string[] = [
 		"ses:CreateIngressPoint",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateMultiRegionEndpoint API call. */
-	static readonly CREATE_MULTI_REGION_ENDPOINT: string[] = [
+	static readonly CreateMultiRegionEndpoint: string[] = [
 		"ses:CreateMultiRegionEndpoint",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateReceiptFilter API call. */
-	static readonly CREATE_RECEIPT_FILTER: string[] = ["ses:CreateReceiptFilter"];
+	static readonly CreateReceiptFilter: string[] = ["ses:CreateReceiptFilter"];
 	/** IAM actions required for the CreateReceiptRule API call. */
-	static readonly CREATE_RECEIPT_RULE: string[] = [
+	static readonly CreateReceiptRule: string[] = [
 		"ses:CreateReceiptRule",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateReceiptRuleSet API call. */
-	static readonly CREATE_RECEIPT_RULE_SET: string[] = [
-		"ses:CreateReceiptRuleSet",
-	];
+	static readonly CreateReceiptRuleSet: string[] = ["ses:CreateReceiptRuleSet"];
 	/** IAM actions required for the CreateRelay API call. */
-	static readonly CREATE_RELAY: string[] = [
+	static readonly CreateRelay: string[] = [
 		"ses:CreateRelay",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateRuleSet API call. */
-	static readonly CREATE_RULE_SET: string[] = [
+	static readonly CreateRuleSet: string[] = [
 		"ses:CreateRuleSet",
 		"iam:PassRole",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateTemplate API call. */
-	static readonly CREATE_TEMPLATE: string[] = ["ses:CreateTemplate"];
+	static readonly CreateTemplate: string[] = ["ses:CreateTemplate"];
 	/** IAM actions required for the CreateTenant API call. */
-	static readonly CREATE_TENANT: string[] = [
+	static readonly CreateTenant: string[] = [
 		"ses:CreateTenant",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the CreateTenantResourceAssociation API call. */
-	static readonly CREATE_TENANT_RESOURCE_ASSOCIATION: string[] = [
+	static readonly CreateTenantResourceAssociation: string[] = [
 		"ses:CreateTenantResourceAssociation",
 	];
 	/** IAM actions required for the CreateTrafficPolicy API call. */
-	static readonly CREATE_TRAFFIC_POLICY: string[] = [
+	static readonly CreateTrafficPolicy: string[] = [
 		"ses:CreateTrafficPolicy",
 		"ses:TagResource",
 	];
 	/** IAM actions required for the DeleteAddonInstance API call. */
-	static readonly DELETE_ADDON_INSTANCE: string[] = ["ses:DeleteAddonInstance"];
+	static readonly DeleteAddonInstance: string[] = ["ses:DeleteAddonInstance"];
 	/** IAM actions required for the DeleteAddonSubscription API call. */
-	static readonly DELETE_ADDON_SUBSCRIPTION: string[] = [
+	static readonly DeleteAddonSubscription: string[] = [
 		"ses:DeleteAddonSubscription",
 	];
 	/** IAM actions required for the DeleteAddressList API call. */
-	static readonly DELETE_ADDRESS_LIST: string[] = ["ses:DeleteAddressList"];
+	static readonly DeleteAddressList: string[] = ["ses:DeleteAddressList"];
 	/** IAM actions required for the DeleteArchive API call. */
-	static readonly DELETE_ARCHIVE: string[] = ["ses:DeleteArchive"];
+	static readonly DeleteArchive: string[] = ["ses:DeleteArchive"];
 	/** IAM actions required for the DeleteConfigurationSet API call. */
-	static readonly DELETE_CONFIGURATION_SET: string[] = [
+	static readonly DeleteConfigurationSet: string[] = [
 		"ses:DeleteConfigurationSet",
 	];
 	/** IAM actions required for the DeleteConfigurationSetEventDestination API call. */
-	static readonly DELETE_CONFIGURATION_SET_EVENT_DESTINATION: string[] = [
+	static readonly DeleteConfigurationSetEventDestination: string[] = [
 		"ses:DeleteConfigurationSetEventDestination",
 	];
 	/** IAM actions required for the DeleteConfigurationSetTrackingOptions API call. */
-	static readonly DELETE_CONFIGURATION_SET_TRACKING_OPTIONS: string[] = [
+	static readonly DeleteConfigurationSetTrackingOptions: string[] = [
 		"ses:DeleteConfigurationSetTrackingOptions",
 	];
 	/** IAM actions required for the DeleteContact API call. */
-	static readonly DELETE_CONTACT: string[] = ["ses:DeleteContact"];
+	static readonly DeleteContact: string[] = ["ses:DeleteContact"];
 	/** IAM actions required for the DeleteContactList API call. */
-	static readonly DELETE_CONTACT_LIST: string[] = ["ses:DeleteContactList"];
+	static readonly DeleteContactList: string[] = ["ses:DeleteContactList"];
 	/** IAM actions required for the DeleteCustomVerificationEmailTemplate API call. */
-	static readonly DELETE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE: string[] = [
+	static readonly DeleteCustomVerificationEmailTemplate: string[] = [
 		"ses:DeleteCustomVerificationEmailTemplate",
 	];
 	/** IAM actions required for the DeleteDedicatedIpPool API call. */
-	static readonly DELETE_DEDICATED_IP_POOL: string[] = [
+	static readonly DeleteDedicatedIpPool: string[] = [
 		"ses:DeleteDedicatedIpPool",
 	];
 	/** IAM actions required for the DeleteEmailIdentity API call. */
-	static readonly DELETE_EMAIL_IDENTITY: string[] = ["ses:DeleteEmailIdentity"];
+	static readonly DeleteEmailIdentity: string[] = ["ses:DeleteEmailIdentity"];
 	/** IAM actions required for the DeleteEmailIdentityPolicy API call. */
-	static readonly DELETE_EMAIL_IDENTITY_POLICY: string[] = [
+	static readonly DeleteEmailIdentityPolicy: string[] = [
 		"ses:DeleteEmailIdentityPolicy",
 	];
 	/** IAM actions required for the DeleteEmailTemplate API call. */
-	static readonly DELETE_EMAIL_TEMPLATE: string[] = ["ses:DeleteEmailTemplate"];
+	static readonly DeleteEmailTemplate: string[] = ["ses:DeleteEmailTemplate"];
 	/** IAM actions required for the DeleteIdentity API call. */
-	static readonly DELETE_IDENTITY: string[] = ["ses:DeleteIdentity"];
+	static readonly DeleteIdentity: string[] = ["ses:DeleteIdentity"];
 	/** IAM actions required for the DeleteIdentityPolicy API call. */
-	static readonly DELETE_IDENTITY_POLICY: string[] = [
-		"ses:DeleteIdentityPolicy",
-	];
+	static readonly DeleteIdentityPolicy: string[] = ["ses:DeleteIdentityPolicy"];
 	/** IAM actions required for the DeleteIngressPoint API call. */
-	static readonly DELETE_INGRESS_POINT: string[] = ["ses:DeleteIngressPoint"];
+	static readonly DeleteIngressPoint: string[] = ["ses:DeleteIngressPoint"];
 	/** IAM actions required for the DeleteMultiRegionEndpoint API call. */
-	static readonly DELETE_MULTI_REGION_ENDPOINT: string[] = [
+	static readonly DeleteMultiRegionEndpoint: string[] = [
 		"ses:DeleteMultiRegionEndpoint",
 	];
 	/** IAM actions required for the DeleteReceiptFilter API call. */
-	static readonly DELETE_RECEIPT_FILTER: string[] = ["ses:DeleteReceiptFilter"];
+	static readonly DeleteReceiptFilter: string[] = ["ses:DeleteReceiptFilter"];
 	/** IAM actions required for the DeleteReceiptRule API call. */
-	static readonly DELETE_RECEIPT_RULE: string[] = ["ses:DeleteReceiptRule"];
+	static readonly DeleteReceiptRule: string[] = ["ses:DeleteReceiptRule"];
 	/** IAM actions required for the DeleteReceiptRuleSet API call. */
-	static readonly DELETE_RECEIPT_RULE_SET: string[] = [
-		"ses:DeleteReceiptRuleSet",
-	];
+	static readonly DeleteReceiptRuleSet: string[] = ["ses:DeleteReceiptRuleSet"];
 	/** IAM actions required for the DeleteRelay API call. */
-	static readonly DELETE_RELAY: string[] = ["ses:DeleteRelay"];
+	static readonly DeleteRelay: string[] = ["ses:DeleteRelay"];
 	/** IAM actions required for the DeleteRuleSet API call. */
-	static readonly DELETE_RULE_SET: string[] = ["ses:DeleteRuleSet"];
+	static readonly DeleteRuleSet: string[] = ["ses:DeleteRuleSet"];
 	/** IAM actions required for the DeleteSuppressedDestination API call. */
-	static readonly DELETE_SUPPRESSED_DESTINATION: string[] = [
+	static readonly DeleteSuppressedDestination: string[] = [
 		"ses:DeleteSuppressedDestination",
 	];
 	/** IAM actions required for the DeleteTemplate API call. */
-	static readonly DELETE_TEMPLATE: string[] = ["ses:DeleteTemplate"];
+	static readonly DeleteTemplate: string[] = ["ses:DeleteTemplate"];
 	/** IAM actions required for the DeleteTenant API call. */
-	static readonly DELETE_TENANT: string[] = ["ses:DeleteTenant"];
+	static readonly DeleteTenant: string[] = ["ses:DeleteTenant"];
 	/** IAM actions required for the DeleteTenantResourceAssociation API call. */
-	static readonly DELETE_TENANT_RESOURCE_ASSOCIATION: string[] = [
+	static readonly DeleteTenantResourceAssociation: string[] = [
 		"ses:DeleteTenantResourceAssociation",
 	];
 	/** IAM actions required for the DeleteTrafficPolicy API call. */
-	static readonly DELETE_TRAFFIC_POLICY: string[] = ["ses:DeleteTrafficPolicy"];
+	static readonly DeleteTrafficPolicy: string[] = ["ses:DeleteTrafficPolicy"];
 	/** IAM actions required for the DeleteVerifiedEmailAddress API call. */
-	static readonly DELETE_VERIFIED_EMAIL_ADDRESS: string[] = [
+	static readonly DeleteVerifiedEmailAddress: string[] = [
 		"ses:DeleteVerifiedEmailAddress",
 	];
 	/** IAM actions required for the DeregisterMemberFromAddressList API call. */
-	static readonly DEREGISTER_MEMBER_FROM_ADDRESS_LIST: string[] = [
+	static readonly DeregisterMemberFromAddressList: string[] = [
 		"ses:DeregisterMemberFromAddressList",
 	];
 	/** IAM actions required for the DescribeActiveReceiptRuleSet API call. */
-	static readonly DESCRIBE_ACTIVE_RECEIPT_RULE_SET: string[] = [
+	static readonly DescribeActiveReceiptRuleSet: string[] = [
 		"ses:DescribeActiveReceiptRuleSet",
 	];
 	/** IAM actions required for the DescribeConfigurationSet API call. */
-	static readonly DESCRIBE_CONFIGURATION_SET: string[] = [
+	static readonly DescribeConfigurationSet: string[] = [
 		"ses:DescribeConfigurationSet",
 	];
 	/** IAM actions required for the DescribeReceiptRule API call. */
-	static readonly DESCRIBE_RECEIPT_RULE: string[] = ["ses:DescribeReceiptRule"];
+	static readonly DescribeReceiptRule: string[] = ["ses:DescribeReceiptRule"];
 	/** IAM actions required for the DescribeReceiptRuleSet API call. */
-	static readonly DESCRIBE_RECEIPT_RULE_SET: string[] = [
+	static readonly DescribeReceiptRuleSet: string[] = [
 		"ses:DescribeReceiptRuleSet",
 	];
 	/** IAM actions required for the GetAccount API call. */
-	static readonly GET_ACCOUNT: string[] = ["ses:GetAccount"];
+	static readonly opGetAccount: string[] = ["ses:GetAccount"];
 	/** IAM actions required for the GetAccountSendingEnabled API call. */
-	static readonly GET_ACCOUNT_SENDING_ENABLED: string[] = [
+	static readonly opGetAccountSendingEnabled: string[] = [
 		"ses:GetAccountSendingEnabled",
 	];
 	/** IAM actions required for the GetAddonInstance API call. */
-	static readonly GET_ADDON_INSTANCE: string[] = ["ses:GetAddonInstance"];
+	static readonly opGetAddonInstance: string[] = ["ses:GetAddonInstance"];
 	/** IAM actions required for the GetAddonSubscription API call. */
-	static readonly GET_ADDON_SUBSCRIPTION: string[] = [
+	static readonly opGetAddonSubscription: string[] = [
 		"ses:GetAddonSubscription",
 	];
 	/** IAM actions required for the GetAddressList API call. */
-	static readonly GET_ADDRESS_LIST: string[] = ["ses:GetAddressList"];
+	static readonly opGetAddressList: string[] = ["ses:GetAddressList"];
 	/** IAM actions required for the GetAddressListImportJob API call. */
-	static readonly GET_ADDRESS_LIST_IMPORT_JOB: string[] = [
+	static readonly opGetAddressListImportJob: string[] = [
 		"ses:GetAddressListImportJob",
 	];
 	/** IAM actions required for the GetArchive API call. */
-	static readonly GET_ARCHIVE: string[] = ["ses:GetArchive"];
+	static readonly opGetArchive: string[] = ["ses:GetArchive"];
 	/** IAM actions required for the GetArchiveExport API call. */
-	static readonly GET_ARCHIVE_EXPORT: string[] = ["ses:GetArchiveExport"];
+	static readonly opGetArchiveExport: string[] = ["ses:GetArchiveExport"];
 	/** IAM actions required for the GetArchiveMessage API call. */
-	static readonly GET_ARCHIVE_MESSAGE: string[] = ["ses:GetArchiveMessage"];
+	static readonly opGetArchiveMessage: string[] = ["ses:GetArchiveMessage"];
 	/** IAM actions required for the GetArchiveMessageContent API call. */
-	static readonly GET_ARCHIVE_MESSAGE_CONTENT: string[] = [
+	static readonly opGetArchiveMessageContent: string[] = [
 		"ses:GetArchiveMessageContent",
 	];
 	/** IAM actions required for the GetArchiveSearch API call. */
-	static readonly GET_ARCHIVE_SEARCH: string[] = ["ses:GetArchiveSearch"];
+	static readonly opGetArchiveSearch: string[] = ["ses:GetArchiveSearch"];
 	/** IAM actions required for the GetArchiveSearchResults API call. */
-	static readonly GET_ARCHIVE_SEARCH_RESULTS: string[] = [
+	static readonly opGetArchiveSearchResults: string[] = [
 		"ses:GetArchiveSearchResults",
 	];
 	/** IAM actions required for the GetBlacklistReports API call. */
-	static readonly GET_BLACKLIST_REPORTS: string[] = ["ses:GetBlacklistReports"];
+	static readonly opGetBlacklistReports: string[] = ["ses:GetBlacklistReports"];
 	/** IAM actions required for the GetConfigurationSet API call. */
-	static readonly GET_CONFIGURATION_SET: string[] = ["ses:GetConfigurationSet"];
+	static readonly opGetConfigurationSet: string[] = ["ses:GetConfigurationSet"];
 	/** IAM actions required for the GetConfigurationSetEventDestinations API call. */
-	static readonly GET_CONFIGURATION_SET_EVENT_DESTINATIONS: string[] = [
+	static readonly opGetConfigurationSetEventDestinations: string[] = [
 		"ses:GetConfigurationSetEventDestinations",
 	];
 	/** IAM actions required for the GetContact API call. */
-	static readonly GET_CONTACT: string[] = ["ses:GetContact"];
+	static readonly opGetContact: string[] = ["ses:GetContact"];
 	/** IAM actions required for the GetContactList API call. */
-	static readonly GET_CONTACT_LIST: string[] = ["ses:GetContactList"];
+	static readonly opGetContactList: string[] = ["ses:GetContactList"];
 	/** IAM actions required for the GetCustomVerificationEmailTemplate API call. */
-	static readonly GET_CUSTOM_VERIFICATION_EMAIL_TEMPLATE: string[] = [
+	static readonly opGetCustomVerificationEmailTemplate: string[] = [
 		"ses:GetCustomVerificationEmailTemplate",
 	];
 	/** IAM actions required for the GetDedicatedIp API call. */
-	static readonly GET_DEDICATED_IP: string[] = ["ses:GetDedicatedIp"];
+	static readonly opGetDedicatedIp: string[] = ["ses:GetDedicatedIp"];
 	/** IAM actions required for the GetDedicatedIpPool API call. */
-	static readonly GET_DEDICATED_IP_POOL: string[] = ["ses:GetDedicatedIpPool"];
+	static readonly opGetDedicatedIpPool: string[] = ["ses:GetDedicatedIpPool"];
 	/** IAM actions required for the GetDedicatedIps API call. */
-	static readonly GET_DEDICATED_IPS: string[] = ["ses:GetDedicatedIps"];
+	static readonly opGetDedicatedIps: string[] = ["ses:GetDedicatedIps"];
 	/** IAM actions required for the GetDeliverabilityDashboardOptions API call. */
-	static readonly GET_DELIVERABILITY_DASHBOARD_OPTIONS: string[] = [
+	static readonly opGetDeliverabilityDashboardOptions: string[] = [
 		"ses:GetDeliverabilityDashboardOptions",
 	];
 	/** IAM actions required for the GetDeliverabilityTestReport API call. */
-	static readonly GET_DELIVERABILITY_TEST_REPORT: string[] = [
+	static readonly opGetDeliverabilityTestReport: string[] = [
 		"ses:GetDeliverabilityTestReport",
 	];
 	/** IAM actions required for the GetDomainDeliverabilityCampaign API call. */
-	static readonly GET_DOMAIN_DELIVERABILITY_CAMPAIGN: string[] = [
+	static readonly opGetDomainDeliverabilityCampaign: string[] = [
 		"ses:GetDomainDeliverabilityCampaign",
 	];
 	/** IAM actions required for the GetDomainStatisticsReport API call. */
-	static readonly GET_DOMAIN_STATISTICS_REPORT: string[] = [
+	static readonly opGetDomainStatisticsReport: string[] = [
 		"ses:GetDomainStatisticsReport",
 	];
 	/** IAM actions required for the GetEmailAddressInsights API call. */
-	static readonly GET_EMAIL_ADDRESS_INSIGHTS: string[] = [
+	static readonly opGetEmailAddressInsights: string[] = [
 		"ses:GetEmailAddressInsights",
 	];
 	/** IAM actions required for the GetEmailIdentity API call. */
-	static readonly GET_EMAIL_IDENTITY: string[] = ["ses:GetEmailIdentity"];
+	static readonly opGetEmailIdentity: string[] = ["ses:GetEmailIdentity"];
 	/** IAM actions required for the GetEmailIdentityPolicies API call. */
-	static readonly GET_EMAIL_IDENTITY_POLICIES: string[] = [
+	static readonly opGetEmailIdentityPolicies: string[] = [
 		"ses:GetEmailIdentityPolicies",
 	];
 	/** IAM actions required for the GetEmailTemplate API call. */
-	static readonly GET_EMAIL_TEMPLATE: string[] = ["ses:GetEmailTemplate"];
+	static readonly opGetEmailTemplate: string[] = ["ses:GetEmailTemplate"];
 	/** IAM actions required for the GetExportJob API call. */
-	static readonly GET_EXPORT_JOB: string[] = ["ses:GetExportJob"];
+	static readonly opGetExportJob: string[] = ["ses:GetExportJob"];
 	/** IAM actions required for the GetIdentityDkimAttributes API call. */
-	static readonly GET_IDENTITY_DKIM_ATTRIBUTES: string[] = [
+	static readonly opGetIdentityDkimAttributes: string[] = [
 		"ses:GetIdentityDkimAttributes",
 	];
 	/** IAM actions required for the GetIdentityMailFromDomainAttributes API call. */
-	static readonly GET_IDENTITY_MAIL_FROM_DOMAIN_ATTRIBUTES: string[] = [
+	static readonly opGetIdentityMailFromDomainAttributes: string[] = [
 		"ses:GetIdentityMailFromDomainAttributes",
 	];
 	/** IAM actions required for the GetIdentityNotificationAttributes API call. */
-	static readonly GET_IDENTITY_NOTIFICATION_ATTRIBUTES: string[] = [
+	static readonly opGetIdentityNotificationAttributes: string[] = [
 		"ses:GetIdentityNotificationAttributes",
 	];
 	/** IAM actions required for the GetIdentityPolicies API call. */
-	static readonly GET_IDENTITY_POLICIES: string[] = ["ses:GetIdentityPolicies"];
+	static readonly opGetIdentityPolicies: string[] = ["ses:GetIdentityPolicies"];
 	/** IAM actions required for the GetIdentityVerificationAttributes API call. */
-	static readonly GET_IDENTITY_VERIFICATION_ATTRIBUTES: string[] = [
+	static readonly opGetIdentityVerificationAttributes: string[] = [
 		"ses:GetIdentityVerificationAttributes",
 	];
 	/** IAM actions required for the GetImportJob API call. */
-	static readonly GET_IMPORT_JOB: string[] = ["ses:GetImportJob"];
+	static readonly opGetImportJob: string[] = ["ses:GetImportJob"];
 	/** IAM actions required for the GetIngressPoint API call. */
-	static readonly GET_INGRESS_POINT: string[] = ["ses:GetIngressPoint"];
+	static readonly opGetIngressPoint: string[] = ["ses:GetIngressPoint"];
 	/** IAM actions required for the GetMemberOfAddressList API call. */
-	static readonly GET_MEMBER_OF_ADDRESS_LIST: string[] = [
+	static readonly opGetMemberOfAddressList: string[] = [
 		"ses:GetMemberOfAddressList",
 	];
 	/** IAM actions required for the GetMessageInsights API call. */
-	static readonly GET_MESSAGE_INSIGHTS: string[] = ["ses:GetMessageInsights"];
+	static readonly opGetMessageInsights: string[] = ["ses:GetMessageInsights"];
 	/** IAM actions required for the GetMultiRegionEndpoint API call. */
-	static readonly GET_MULTI_REGION_ENDPOINT: string[] = [
+	static readonly opGetMultiRegionEndpoint: string[] = [
 		"ses:GetMultiRegionEndpoint",
 	];
 	/** IAM actions required for the GetRelay API call. */
-	static readonly GET_RELAY: string[] = ["ses:GetRelay"];
+	static readonly opGetRelay: string[] = ["ses:GetRelay"];
 	/** IAM actions required for the GetReputationEntity API call. */
-	static readonly GET_REPUTATION_ENTITY: string[] = ["ses:GetReputationEntity"];
+	static readonly opGetReputationEntity: string[] = ["ses:GetReputationEntity"];
 	/** IAM actions required for the GetRuleSet API call. */
-	static readonly GET_RULE_SET: string[] = ["ses:GetRuleSet"];
+	static readonly opGetRuleSet: string[] = ["ses:GetRuleSet"];
 	/** IAM actions required for the GetSendQuota API call. */
-	static readonly GET_SEND_QUOTA: string[] = ["ses:GetSendQuota"];
+	static readonly opGetSendQuota: string[] = ["ses:GetSendQuota"];
 	/** IAM actions required for the GetSendStatistics API call. */
-	static readonly GET_SEND_STATISTICS: string[] = ["ses:GetSendStatistics"];
+	static readonly opGetSendStatistics: string[] = ["ses:GetSendStatistics"];
 	/** IAM actions required for the GetSuppressedDestination API call. */
-	static readonly GET_SUPPRESSED_DESTINATION: string[] = [
+	static readonly opGetSuppressedDestination: string[] = [
 		"ses:GetSuppressedDestination",
 	];
 	/** IAM actions required for the GetTemplate API call. */
-	static readonly GET_TEMPLATE: string[] = ["ses:GetTemplate"];
+	static readonly opGetTemplate: string[] = ["ses:GetTemplate"];
 	/** IAM actions required for the GetTenant API call. */
-	static readonly GET_TENANT: string[] = ["ses:GetTenant"];
+	static readonly opGetTenant: string[] = ["ses:GetTenant"];
 	/** IAM actions required for the GetTrafficPolicy API call. */
-	static readonly GET_TRAFFIC_POLICY: string[] = ["ses:GetTrafficPolicy"];
+	static readonly opGetTrafficPolicy: string[] = ["ses:GetTrafficPolicy"];
 	/** IAM actions required for the ListAddonInstances API call. */
-	static readonly LIST_ADDON_INSTANCES: string[] = ["ses:ListAddonInstances"];
+	static readonly ListAddonInstances: string[] = ["ses:ListAddonInstances"];
 	/** IAM actions required for the ListAddonSubscriptions API call. */
-	static readonly LIST_ADDON_SUBSCRIPTIONS: string[] = [
+	static readonly ListAddonSubscriptions: string[] = [
 		"ses:ListAddonSubscriptions",
 	];
 	/** IAM actions required for the ListAddressListImportJobs API call. */
-	static readonly LIST_ADDRESS_LIST_IMPORT_JOBS: string[] = [
+	static readonly ListAddressListImportJobs: string[] = [
 		"ses:ListAddressListImportJobs",
 	];
 	/** IAM actions required for the ListAddressLists API call. */
-	static readonly LIST_ADDRESS_LISTS: string[] = ["ses:ListAddressLists"];
+	static readonly ListAddressLists: string[] = ["ses:ListAddressLists"];
 	/** IAM actions required for the ListArchiveExports API call. */
-	static readonly LIST_ARCHIVE_EXPORTS: string[] = ["ses:ListArchiveExports"];
+	static readonly ListArchiveExports: string[] = ["ses:ListArchiveExports"];
 	/** IAM actions required for the ListArchiveSearches API call. */
-	static readonly LIST_ARCHIVE_SEARCHES: string[] = ["ses:ListArchiveSearches"];
+	static readonly ListArchiveSearches: string[] = ["ses:ListArchiveSearches"];
 	/** IAM actions required for the ListArchives API call. */
-	static readonly LIST_ARCHIVES: string[] = ["ses:ListArchives"];
+	static readonly ListArchives: string[] = ["ses:ListArchives"];
 	/** IAM actions required for the ListConfigurationSets API call. */
-	static readonly LIST_CONFIGURATION_SETS: string[] = [
+	static readonly ListConfigurationSets: string[] = [
 		"ses:ListConfigurationSets",
 	];
 	/** IAM actions required for the ListContactLists API call. */
-	static readonly LIST_CONTACT_LISTS: string[] = ["ses:ListContactLists"];
+	static readonly ListContactLists: string[] = ["ses:ListContactLists"];
 	/** IAM actions required for the ListContacts API call. */
-	static readonly LIST_CONTACTS: string[] = ["ses:ListContacts"];
+	static readonly ListContacts: string[] = ["ses:ListContacts"];
 	/** IAM actions required for the ListCustomVerificationEmailTemplates API call. */
-	static readonly LIST_CUSTOM_VERIFICATION_EMAIL_TEMPLATES: string[] = [
+	static readonly ListCustomVerificationEmailTemplates: string[] = [
 		"ses:ListCustomVerificationEmailTemplates",
 	];
 	/** IAM actions required for the ListDedicatedIpPools API call. */
-	static readonly LIST_DEDICATED_IP_POOLS: string[] = [
-		"ses:ListDedicatedIpPools",
-	];
+	static readonly ListDedicatedIpPools: string[] = ["ses:ListDedicatedIpPools"];
 	/** IAM actions required for the ListDeliverabilityTestReports API call. */
-	static readonly LIST_DELIVERABILITY_TEST_REPORTS: string[] = [
+	static readonly ListDeliverabilityTestReports: string[] = [
 		"ses:ListDeliverabilityTestReports",
 	];
 	/** IAM actions required for the ListDomainDeliverabilityCampaigns API call. */
-	static readonly LIST_DOMAIN_DELIVERABILITY_CAMPAIGNS: string[] = [
+	static readonly ListDomainDeliverabilityCampaigns: string[] = [
 		"ses:ListDomainDeliverabilityCampaigns",
 	];
 	/** IAM actions required for the ListEmailIdentities API call. */
-	static readonly LIST_EMAIL_IDENTITIES: string[] = ["ses:ListEmailIdentities"];
+	static readonly ListEmailIdentities: string[] = ["ses:ListEmailIdentities"];
 	/** IAM actions required for the ListEmailTemplates API call. */
-	static readonly LIST_EMAIL_TEMPLATES: string[] = ["ses:ListEmailTemplates"];
+	static readonly ListEmailTemplates: string[] = ["ses:ListEmailTemplates"];
 	/** IAM actions required for the ListExportJobs API call. */
-	static readonly LIST_EXPORT_JOBS: string[] = ["ses:ListExportJobs"];
+	static readonly ListExportJobs: string[] = ["ses:ListExportJobs"];
 	/** IAM actions required for the ListIdentities API call. */
-	static readonly LIST_IDENTITIES: string[] = ["ses:ListIdentities"];
+	static readonly ListIdentities: string[] = ["ses:ListIdentities"];
 	/** IAM actions required for the ListIdentityPolicies API call. */
-	static readonly LIST_IDENTITY_POLICIES: string[] = [
-		"ses:ListIdentityPolicies",
-	];
+	static readonly ListIdentityPolicies: string[] = ["ses:ListIdentityPolicies"];
 	/** IAM actions required for the ListImportJobs API call. */
-	static readonly LIST_IMPORT_JOBS: string[] = ["ses:ListImportJobs"];
+	static readonly ListImportJobs: string[] = ["ses:ListImportJobs"];
 	/** IAM actions required for the ListIngressPoints API call. */
-	static readonly LIST_INGRESS_POINTS: string[] = ["ses:ListIngressPoints"];
+	static readonly ListIngressPoints: string[] = ["ses:ListIngressPoints"];
 	/** IAM actions required for the ListMembersOfAddressList API call. */
-	static readonly LIST_MEMBERS_OF_ADDRESS_LIST: string[] = [
+	static readonly ListMembersOfAddressList: string[] = [
 		"ses:ListMembersOfAddressList",
 	];
 	/** IAM actions required for the ListMultiRegionEndpoints API call. */
-	static readonly LIST_MULTI_REGION_ENDPOINTS: string[] = [
+	static readonly ListMultiRegionEndpoints: string[] = [
 		"ses:ListMultiRegionEndpoints",
 	];
 	/** IAM actions required for the ListReceiptFilters API call. */
-	static readonly LIST_RECEIPT_FILTERS: string[] = ["ses:ListReceiptFilters"];
+	static readonly ListReceiptFilters: string[] = ["ses:ListReceiptFilters"];
 	/** IAM actions required for the ListReceiptRuleSets API call. */
-	static readonly LIST_RECEIPT_RULE_SETS: string[] = [
-		"ses:ListReceiptRuleSets",
-	];
+	static readonly ListReceiptRuleSets: string[] = ["ses:ListReceiptRuleSets"];
 	/** IAM actions required for the ListRecommendations API call. */
-	static readonly LIST_RECOMMENDATIONS: string[] = ["ses:ListRecommendations"];
+	static readonly ListRecommendations: string[] = ["ses:ListRecommendations"];
 	/** IAM actions required for the ListRelays API call. */
-	static readonly LIST_RELAYS: string[] = ["ses:ListRelays"];
+	static readonly ListRelays: string[] = ["ses:ListRelays"];
 	/** IAM actions required for the ListReputationEntities API call. */
-	static readonly LIST_REPUTATION_ENTITIES: string[] = [
+	static readonly ListReputationEntities: string[] = [
 		"ses:ListReputationEntities",
 	];
 	/** IAM actions required for the ListResourceTenants API call. */
-	static readonly LIST_RESOURCE_TENANTS: string[] = ["ses:ListResourceTenants"];
+	static readonly ListResourceTenants: string[] = ["ses:ListResourceTenants"];
 	/** IAM actions required for the ListRuleSets API call. */
-	static readonly LIST_RULE_SETS: string[] = ["ses:ListRuleSets"];
+	static readonly ListRuleSets: string[] = ["ses:ListRuleSets"];
 	/** IAM actions required for the ListSuppressedDestinations API call. */
-	static readonly LIST_SUPPRESSED_DESTINATIONS: string[] = [
+	static readonly ListSuppressedDestinations: string[] = [
 		"ses:ListSuppressedDestinations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"ses:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["ses:ListTagsForResource"];
 	/** IAM actions required for the ListTemplates API call. */
-	static readonly LIST_TEMPLATES: string[] = ["ses:ListTemplates"];
+	static readonly ListTemplates: string[] = ["ses:ListTemplates"];
 	/** IAM actions required for the ListTenantResources API call. */
-	static readonly LIST_TENANT_RESOURCES: string[] = ["ses:ListTenantResources"];
+	static readonly ListTenantResources: string[] = ["ses:ListTenantResources"];
 	/** IAM actions required for the ListTenants API call. */
-	static readonly LIST_TENANTS: string[] = ["ses:ListTenants"];
+	static readonly ListTenants: string[] = ["ses:ListTenants"];
 	/** IAM actions required for the ListTrafficPolicies API call. */
-	static readonly LIST_TRAFFIC_POLICIES: string[] = ["ses:ListTrafficPolicies"];
+	static readonly ListTrafficPolicies: string[] = ["ses:ListTrafficPolicies"];
 	/** IAM actions required for the ListVerifiedEmailAddresses API call. */
-	static readonly LIST_VERIFIED_EMAIL_ADDRESSES: string[] = [
+	static readonly ListVerifiedEmailAddresses: string[] = [
 		"ses:ListVerifiedEmailAddresses",
 	];
 	/** IAM actions required for the PutAccountDedicatedIpWarmupAttributes API call. */
-	static readonly PUT_ACCOUNT_DEDICATED_IP_WARMUP_ATTRIBUTES: string[] = [
+	static readonly PutAccountDedicatedIpWarmupAttributes: string[] = [
 		"ses:PutAccountDedicatedIpWarmupAttributes",
 	];
 	/** IAM actions required for the PutAccountDetails API call. */
-	static readonly PUT_ACCOUNT_DETAILS: string[] = ["ses:PutAccountDetails"];
+	static readonly PutAccountDetails: string[] = ["ses:PutAccountDetails"];
 	/** IAM actions required for the PutAccountPricingAttributes API call. */
-	static readonly PUT_ACCOUNT_PRICING_ATTRIBUTES: string[] = [
+	static readonly PutAccountPricingAttributes: string[] = [
 		"ses:PutAccountPricingAttributes",
 	];
 	/** IAM actions required for the PutAccountSendingAttributes API call. */
-	static readonly PUT_ACCOUNT_SENDING_ATTRIBUTES: string[] = [
+	static readonly PutAccountSendingAttributes: string[] = [
 		"ses:PutAccountSendingAttributes",
 	];
 	/** IAM actions required for the PutAccountSuppressionAttributes API call. */
-	static readonly PUT_ACCOUNT_SUPPRESSION_ATTRIBUTES: string[] = [
+	static readonly PutAccountSuppressionAttributes: string[] = [
 		"ses:PutAccountSuppressionAttributes",
 	];
 	/** IAM actions required for the PutAccountVdmAttributes API call. */
-	static readonly PUT_ACCOUNT_VDM_ATTRIBUTES: string[] = [
+	static readonly PutAccountVdmAttributes: string[] = [
 		"ses:PutAccountVdmAttributes",
 	];
 	/** IAM actions required for the PutConfigurationSetArchivingOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_ARCHIVING_OPTIONS: string[] = [
+	static readonly PutConfigurationSetArchivingOptions: string[] = [
 		"ses:PutConfigurationSetArchivingOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetDeliveryOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_DELIVERY_OPTIONS: string[] = [
+	static readonly PutConfigurationSetDeliveryOptions: string[] = [
 		"ses:PutConfigurationSetDeliveryOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetReputationOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_REPUTATION_OPTIONS: string[] = [
+	static readonly PutConfigurationSetReputationOptions: string[] = [
 		"ses:PutConfigurationSetReputationOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetSendingOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_SENDING_OPTIONS: string[] = [
+	static readonly PutConfigurationSetSendingOptions: string[] = [
 		"ses:PutConfigurationSetSendingOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetSuppressionOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_SUPPRESSION_OPTIONS: string[] = [
+	static readonly PutConfigurationSetSuppressionOptions: string[] = [
 		"ses:PutConfigurationSetSuppressionOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetTrackingOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_TRACKING_OPTIONS: string[] = [
+	static readonly PutConfigurationSetTrackingOptions: string[] = [
 		"ses:PutConfigurationSetTrackingOptions",
 	];
 	/** IAM actions required for the PutConfigurationSetVdmOptions API call. */
-	static readonly PUT_CONFIGURATION_SET_VDM_OPTIONS: string[] = [
+	static readonly PutConfigurationSetVdmOptions: string[] = [
 		"ses:PutConfigurationSetVdmOptions",
 	];
 	/** IAM actions required for the PutDedicatedIpInPool API call. */
-	static readonly PUT_DEDICATED_IP_IN_POOL: string[] = [
-		"ses:PutDedicatedIpInPool",
-	];
+	static readonly PutDedicatedIpInPool: string[] = ["ses:PutDedicatedIpInPool"];
 	/** IAM actions required for the PutDedicatedIpPoolScalingAttributes API call. */
-	static readonly PUT_DEDICATED_IP_POOL_SCALING_ATTRIBUTES: string[] = [
+	static readonly PutDedicatedIpPoolScalingAttributes: string[] = [
 		"ses:PutDedicatedIpPoolScalingAttributes",
 	];
 	/** IAM actions required for the PutDedicatedIpWarmupAttributes API call. */
-	static readonly PUT_DEDICATED_IP_WARMUP_ATTRIBUTES: string[] = [
+	static readonly PutDedicatedIpWarmupAttributes: string[] = [
 		"ses:PutDedicatedIpWarmupAttributes",
 	];
 	/** IAM actions required for the PutDeliverabilityDashboardOption API call. */
-	static readonly PUT_DELIVERABILITY_DASHBOARD_OPTION: string[] = [
+	static readonly PutDeliverabilityDashboardOption: string[] = [
 		"ses:PutDeliverabilityDashboardOption",
 	];
 	/** IAM actions required for the PutEmailIdentityConfigurationSetAttributes API call. */
-	static readonly PUT_EMAIL_IDENTITY_CONFIGURATION_SET_ATTRIBUTES: string[] = [
+	static readonly PutEmailIdentityConfigurationSetAttributes: string[] = [
 		"ses:PutEmailIdentityConfigurationSetAttributes",
 	];
 	/** IAM actions required for the PutEmailIdentityDkimAttributes API call. */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_ATTRIBUTES: string[] = [
+	static readonly PutEmailIdentityDkimAttributes: string[] = [
 		"ses:PutEmailIdentityDkimAttributes",
 	];
 	/** IAM actions required for the PutEmailIdentityDkimSigningAttributes API call. */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_SIGNING_ATTRIBUTES: string[] = [
+	static readonly PutEmailIdentityDkimSigningAttributes: string[] = [
 		"ses:PutEmailIdentityDkimSigningAttributes",
 	];
 	/** IAM actions required for the PutEmailIdentityFeedbackAttributes API call. */
-	static readonly PUT_EMAIL_IDENTITY_FEEDBACK_ATTRIBUTES: string[] = [
+	static readonly PutEmailIdentityFeedbackAttributes: string[] = [
 		"ses:PutEmailIdentityFeedbackAttributes",
 	];
 	/** IAM actions required for the PutEmailIdentityMailFromAttributes API call. */
-	static readonly PUT_EMAIL_IDENTITY_MAIL_FROM_ATTRIBUTES: string[] = [
+	static readonly PutEmailIdentityMailFromAttributes: string[] = [
 		"ses:PutEmailIdentityMailFromAttributes",
 	];
 	/** IAM actions required for the PutIdentityPolicy API call. */
-	static readonly PUT_IDENTITY_POLICY: string[] = ["ses:PutIdentityPolicy"];
+	static readonly PutIdentityPolicy: string[] = ["ses:PutIdentityPolicy"];
 	/** IAM actions required for the PutSuppressedDestination API call. */
-	static readonly PUT_SUPPRESSED_DESTINATION: string[] = [
+	static readonly PutSuppressedDestination: string[] = [
 		"ses:PutSuppressedDestination",
 	];
 	/** IAM actions required for the PutTenantSuppressionAttributes API call. */
-	static readonly PUT_TENANT_SUPPRESSION_ATTRIBUTES: string[] = [
+	static readonly PutTenantSuppressionAttributes: string[] = [
 		"ses:PutTenantSuppressionAttributes",
 	];
 	/** IAM actions required for the RegisterMemberToAddressList API call. */
-	static readonly REGISTER_MEMBER_TO_ADDRESS_LIST: string[] = [
+	static readonly RegisterMemberToAddressList: string[] = [
 		"ses:RegisterMemberToAddressList",
 	];
 	/** IAM actions required for the ReorderReceiptRuleSet API call. */
-	static readonly REORDER_RECEIPT_RULE_SET: string[] = [
+	static readonly ReorderReceiptRuleSet: string[] = [
 		"ses:ReorderReceiptRuleSet",
 	];
 	/** IAM actions required for the SendBounce API call. */
-	static readonly SEND_BOUNCE: string[] = [];
+	static readonly SendBounce: string[] = [];
 	/** IAM actions required for the SendBulkEmail API call. */
-	static readonly SEND_BULK_EMAIL: string[] = ["ses:SendBulkEmail"];
+	static readonly SendBulkEmail: string[] = ["ses:SendBulkEmail"];
 	/** IAM actions required for the SendBulkTemplatedEmail API call. */
-	static readonly SEND_BULK_TEMPLATED_EMAIL: string[] = [];
+	static readonly SendBulkTemplatedEmail: string[] = [];
 	/** IAM actions required for the SendCustomVerificationEmail API call. */
-	static readonly SEND_CUSTOM_VERIFICATION_EMAIL: string[] = [
+	static readonly SendCustomVerificationEmail: string[] = [
 		"ses:SendCustomVerificationEmail",
 	];
 	/** IAM actions required for the SendEmail API call. */
-	static readonly SEND_EMAIL: string[] = [];
+	static readonly SendEmail: string[] = [];
 	/** IAM actions required for the SendRawEmail API call. */
-	static readonly SEND_RAW_EMAIL: string[] = [];
+	static readonly SendRawEmail: string[] = [];
 	/** IAM actions required for the SendTemplatedEmail API call. */
-	static readonly SEND_TEMPLATED_EMAIL: string[] = [];
+	static readonly SendTemplatedEmail: string[] = [];
 	/** IAM actions required for the SetActiveReceiptRuleSet API call. */
-	static readonly SET_ACTIVE_RECEIPT_RULE_SET: string[] = [
+	static readonly opSetActiveReceiptRuleSet: string[] = [
 		"ses:SetActiveReceiptRuleSet",
 	];
 	/** IAM actions required for the SetIdentityDkimEnabled API call. */
-	static readonly SET_IDENTITY_DKIM_ENABLED: string[] = [
+	static readonly opSetIdentityDkimEnabled: string[] = [
 		"ses:SetIdentityDkimEnabled",
 	];
 	/** IAM actions required for the SetIdentityFeedbackForwardingEnabled API call. */
-	static readonly SET_IDENTITY_FEEDBACK_FORWARDING_ENABLED: string[] = [
+	static readonly opSetIdentityFeedbackForwardingEnabled: string[] = [
 		"ses:SetIdentityFeedbackForwardingEnabled",
 	];
 	/** IAM actions required for the SetIdentityHeadersInNotificationsEnabled API call. */
-	static readonly SET_IDENTITY_HEADERS_IN_NOTIFICATIONS_ENABLED: string[] = [
+	static readonly opSetIdentityHeadersInNotificationsEnabled: string[] = [
 		"ses:SetIdentityHeadersInNotificationsEnabled",
 	];
 	/** IAM actions required for the SetIdentityMailFromDomain API call. */
-	static readonly SET_IDENTITY_MAIL_FROM_DOMAIN: string[] = [
+	static readonly opSetIdentityMailFromDomain: string[] = [
 		"ses:SetIdentityMailFromDomain",
 	];
 	/** IAM actions required for the SetIdentityNotificationTopic API call. */
-	static readonly SET_IDENTITY_NOTIFICATION_TOPIC: string[] = [
+	static readonly opSetIdentityNotificationTopic: string[] = [
 		"ses:SetIdentityNotificationTopic",
 	];
 	/** IAM actions required for the SetReceiptRulePosition API call. */
-	static readonly SET_RECEIPT_RULE_POSITION: string[] = [
+	static readonly opSetReceiptRulePosition: string[] = [
 		"ses:SetReceiptRulePosition",
 	];
 	/** IAM actions required for the StartAddressListImportJob API call. */
-	static readonly START_ADDRESS_LIST_IMPORT_JOB: string[] = [
+	static readonly StartAddressListImportJob: string[] = [
 		"ses:StartAddressListImportJob",
 	];
 	/** IAM actions required for the StartArchiveExport API call. */
-	static readonly START_ARCHIVE_EXPORT: string[] = ["ses:StartArchiveExport"];
+	static readonly StartArchiveExport: string[] = ["ses:StartArchiveExport"];
 	/** IAM actions required for the StartArchiveSearch API call. */
-	static readonly START_ARCHIVE_SEARCH: string[] = ["ses:StartArchiveSearch"];
+	static readonly StartArchiveSearch: string[] = ["ses:StartArchiveSearch"];
 	/** IAM actions required for the StopAddressListImportJob API call. */
-	static readonly STOP_ADDRESS_LIST_IMPORT_JOB: string[] = [
+	static readonly StopAddressListImportJob: string[] = [
 		"ses:StopAddressListImportJob",
 	];
 	/** IAM actions required for the StopArchiveExport API call. */
-	static readonly STOP_ARCHIVE_EXPORT: string[] = ["ses:StopArchiveExport"];
+	static readonly StopArchiveExport: string[] = ["ses:StopArchiveExport"];
 	/** IAM actions required for the StopArchiveSearch API call. */
-	static readonly STOP_ARCHIVE_SEARCH: string[] = ["ses:StopArchiveSearch"];
+	static readonly StopArchiveSearch: string[] = ["ses:StopArchiveSearch"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["ses:TagResource"];
+	static readonly TagResource: string[] = ["ses:TagResource"];
 	/** IAM actions required for the TestRenderEmailTemplate API call. */
-	static readonly TEST_RENDER_EMAIL_TEMPLATE: string[] = [
+	static readonly TestRenderEmailTemplate: string[] = [
 		"ses:TestRenderEmailTemplate",
 	];
 	/** IAM actions required for the TestRenderTemplate API call. */
-	static readonly TEST_RENDER_TEMPLATE: string[] = ["ses:TestRenderTemplate"];
+	static readonly TestRenderTemplate: string[] = ["ses:TestRenderTemplate"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["ses:UntagResource"];
+	static readonly UntagResource: string[] = ["ses:UntagResource"];
 	/** IAM actions required for the UpdateAccountSendingEnabled API call. */
-	static readonly UPDATE_ACCOUNT_SENDING_ENABLED: string[] = [
+	static readonly UpdateAccountSendingEnabled: string[] = [
 		"ses:UpdateAccountSendingEnabled",
 	];
 	/** IAM actions required for the UpdateArchive API call. */
-	static readonly UPDATE_ARCHIVE: string[] = ["ses:UpdateArchive"];
+	static readonly UpdateArchive: string[] = ["ses:UpdateArchive"];
 	/** IAM actions required for the UpdateConfigurationSetEventDestination API call. */
-	static readonly UPDATE_CONFIGURATION_SET_EVENT_DESTINATION: string[] = [
+	static readonly UpdateConfigurationSetEventDestination: string[] = [
 		"iam:PassRole",
 		"ses:UpdateConfigurationSetEventDestination",
 	];
 	/** IAM actions required for the UpdateConfigurationSetReputationMetricsEnabled API call. */
-	static readonly UPDATE_CONFIGURATION_SET_REPUTATION_METRICS_ENABLED: string[] =
-		["ses:UpdateConfigurationSetReputationMetricsEnabled"];
+	static readonly UpdateConfigurationSetReputationMetricsEnabled: string[] = [
+		"ses:UpdateConfigurationSetReputationMetricsEnabled",
+	];
 	/** IAM actions required for the UpdateConfigurationSetSendingEnabled API call. */
-	static readonly UPDATE_CONFIGURATION_SET_SENDING_ENABLED: string[] = [
+	static readonly UpdateConfigurationSetSendingEnabled: string[] = [
 		"ses:UpdateConfigurationSetSendingEnabled",
 	];
 	/** IAM actions required for the UpdateConfigurationSetTrackingOptions API call. */
-	static readonly UPDATE_CONFIGURATION_SET_TRACKING_OPTIONS: string[] = [
+	static readonly UpdateConfigurationSetTrackingOptions: string[] = [
 		"ses:UpdateConfigurationSetTrackingOptions",
 	];
 	/** IAM actions required for the UpdateContact API call. */
-	static readonly UPDATE_CONTACT: string[] = ["ses:UpdateContact"];
+	static readonly UpdateContact: string[] = ["ses:UpdateContact"];
 	/** IAM actions required for the UpdateContactList API call. */
-	static readonly UPDATE_CONTACT_LIST: string[] = ["ses:UpdateContactList"];
+	static readonly UpdateContactList: string[] = ["ses:UpdateContactList"];
 	/** IAM actions required for the UpdateCustomVerificationEmailTemplate API call. */
-	static readonly UPDATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE: string[] = [
+	static readonly UpdateCustomVerificationEmailTemplate: string[] = [
 		"ses:UpdateCustomVerificationEmailTemplate",
 	];
 	/** IAM actions required for the UpdateEmailIdentityPolicy API call. */
-	static readonly UPDATE_EMAIL_IDENTITY_POLICY: string[] = [
+	static readonly UpdateEmailIdentityPolicy: string[] = [
 		"ses:UpdateEmailIdentityPolicy",
 	];
 	/** IAM actions required for the UpdateEmailTemplate API call. */
-	static readonly UPDATE_EMAIL_TEMPLATE: string[] = ["ses:UpdateEmailTemplate"];
+	static readonly UpdateEmailTemplate: string[] = ["ses:UpdateEmailTemplate"];
 	/** IAM actions required for the UpdateIngressPoint API call. */
-	static readonly UPDATE_INGRESS_POINT: string[] = ["ses:UpdateIngressPoint"];
+	static readonly UpdateIngressPoint: string[] = ["ses:UpdateIngressPoint"];
 	/** IAM actions required for the UpdateReceiptRule API call. */
-	static readonly UPDATE_RECEIPT_RULE: string[] = [
+	static readonly UpdateReceiptRule: string[] = [
 		"iam:PassRole",
 		"ses:UpdateReceiptRule",
 	];
 	/** IAM actions required for the UpdateRelay API call. */
-	static readonly UPDATE_RELAY: string[] = ["ses:UpdateRelay"];
+	static readonly UpdateRelay: string[] = ["ses:UpdateRelay"];
 	/** IAM actions required for the UpdateReputationEntityCustomerManagedStatus API call. */
-	static readonly UPDATE_REPUTATION_ENTITY_CUSTOMER_MANAGED_STATUS: string[] = [
+	static readonly UpdateReputationEntityCustomerManagedStatus: string[] = [
 		"ses:UpdateReputationEntityCustomerManagedStatus",
 	];
 	/** IAM actions required for the UpdateReputationEntityPolicy API call. */
-	static readonly UPDATE_REPUTATION_ENTITY_POLICY: string[] = [
+	static readonly UpdateReputationEntityPolicy: string[] = [
 		"ses:UpdateReputationEntityPolicy",
 	];
 	/** IAM actions required for the UpdateRuleSet API call. */
-	static readonly UPDATE_RULE_SET: string[] = [
+	static readonly UpdateRuleSet: string[] = [
 		"iam:PassRole",
 		"ses:UpdateRuleSet",
 	];
 	/** IAM actions required for the UpdateTemplate API call. */
-	static readonly UPDATE_TEMPLATE: string[] = ["ses:UpdateTemplate"];
+	static readonly UpdateTemplate: string[] = ["ses:UpdateTemplate"];
 	/** IAM actions required for the UpdateTrafficPolicy API call. */
-	static readonly UPDATE_TRAFFIC_POLICY: string[] = ["ses:UpdateTrafficPolicy"];
+	static readonly UpdateTrafficPolicy: string[] = ["ses:UpdateTrafficPolicy"];
 	/** IAM actions required for the VerifyDomainDkim API call. */
-	static readonly VERIFY_DOMAIN_DKIM: string[] = ["ses:VerifyDomainDkim"];
+	static readonly VerifyDomainDkim: string[] = ["ses:VerifyDomainDkim"];
 	/** IAM actions required for the VerifyDomainIdentity API call. */
-	static readonly VERIFY_DOMAIN_IDENTITY: string[] = [
-		"ses:VerifyDomainIdentity",
-	];
+	static readonly VerifyDomainIdentity: string[] = ["ses:VerifyDomainIdentity"];
 	/** IAM actions required for the VerifyEmailAddress API call. */
-	static readonly VERIFY_EMAIL_ADDRESS: string[] = ["ses:VerifyEmailAddress"];
+	static readonly VerifyEmailAddress: string[] = ["ses:VerifyEmailAddress"];
 	/** IAM actions required for the VerifyEmailIdentity API call. */
-	static readonly VERIFY_EMAIL_IDENTITY: string[] = ["ses:VerifyEmailIdentity"];
+	static readonly VerifyEmailIdentity: string[] = ["ses:VerifyEmailIdentity"];
 }
 
 /**
@@ -2491,596 +2760,611 @@ export class SesOperations {
  */
 export class SesConditions {
 	/** Condition keys applicable to the BatchGetMetricData action. */
-	static readonly BATCH_GET_METRIC_DATA_CONDITION_KEYS: string[] = [
+	static readonly BatchGetMetricDataConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CancelExportJob action. */
-	static readonly CANCEL_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CancelExportJobConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:ExportSourceType",
 	];
 	/** Condition keys applicable to the CloneReceiptRuleSet action. */
-	static readonly CLONE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly CloneReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateAddonInstance action. */
-	static readonly CREATE_ADDON_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateAddonInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:AddonSubscriptionArn",
 	];
 	/** Condition keys applicable to the CreateAddonSubscription action. */
-	static readonly CREATE_ADDON_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateAddonSubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAddressList action. */
-	static readonly CREATE_ADDRESS_LIST_CONDITION_KEYS: string[] = [
+	static readonly CreateAddressListConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateArchive action. */
-	static readonly CREATE_ARCHIVE_CONDITION_KEYS: string[] = [
+	static readonly CreateArchiveConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfigurationSet action. */
-	static readonly CREATE_CONFIGURATION_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigurationSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateConfigurationSetEventDestination action. */
-	static readonly CREATE_CONFIGURATION_SET_EVENT_DESTINATION_CONDITION_KEYS: string[] =
+	static readonly CreateConfigurationSetEventDestinationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the CreateConfigurationSetTrackingOptions action. */
-	static readonly CREATE_CONFIGURATION_SET_TRACKING_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly CreateConfigurationSetTrackingOptionsConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the CreateContact action. */
-	static readonly CREATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly CreateContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateContactList action. */
-	static readonly CREATE_CONTACT_LIST_CONDITION_KEYS: string[] = [
+	static readonly CreateContactListConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateCustomVerificationEmailTemplate action. */
-	static readonly CREATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly CreateCustomVerificationEmailTemplateConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys", "ses:ApiVersion"];
 	/** Condition keys applicable to the CreateDedicatedIpPool action. */
-	static readonly CREATE_DEDICATED_IP_POOL_CONDITION_KEYS: string[] = [
+	static readonly CreateDedicatedIpPoolConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateDeliverabilityTestReport action. */
-	static readonly CREATE_DELIVERABILITY_TEST_REPORT_CONDITION_KEYS: string[] = [
+	static readonly CreateDeliverabilityTestReportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateEmailIdentity action. */
-	static readonly CREATE_EMAIL_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly CreateEmailIdentityConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateEmailIdentityPolicy action. */
-	static readonly CREATE_EMAIL_IDENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateEmailIdentityPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateEmailTemplate action. */
-	static readonly CREATE_EMAIL_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateEmailTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateExportJob action. */
-	static readonly CREATE_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateExportJobConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:ExportSourceType",
 	];
 	/** Condition keys applicable to the CreateImportJob action. */
-	static readonly CREATE_IMPORT_JOB_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly CreateImportJobConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the CreateIngressPoint action. */
-	static readonly CREATE_INGRESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly CreateIngressPointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:MailManagerRuleSetArn",
 		"ses:MailManagerTrafficPolicyArn",
 	];
 	/** Condition keys applicable to the CreateMultiRegionEndpoint action. */
-	static readonly CREATE_MULTI_REGION_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateMultiRegionEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateReceiptFilter action. */
-	static readonly CREATE_RECEIPT_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateReceiptFilterConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateReceiptRule action. */
-	static readonly CREATE_RECEIPT_RULE_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly CreateReceiptRuleConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the CreateReceiptRuleSet action. */
-	static readonly CREATE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateRelay action. */
-	static readonly CREATE_RELAY_CONDITION_KEYS: string[] = [
+	static readonly CreateRelayConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRuleSet action. */
-	static readonly CREATE_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateRuleSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTemplate action. */
-	static readonly CREATE_TEMPLATE_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly CreateTemplateConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the CreateTenant action. */
-	static readonly CREATE_TENANT_CONDITION_KEYS: string[] = [
+	static readonly CreateTenantConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the CreateTenantResourceAssociation action. */
-	static readonly CREATE_TENANT_RESOURCE_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys", "ses:ApiVersion"];
+	static readonly CreateTenantResourceAssociationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the CreateTrafficPolicy action. */
-	static readonly CREATE_TRAFFIC_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateTrafficPolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteConfigurationSet action. */
-	static readonly DELETE_CONFIGURATION_SET_CONDITION_KEYS: string[] = [
+	static readonly DeleteConfigurationSetConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteConfigurationSetEventDestination action. */
-	static readonly DELETE_CONFIGURATION_SET_EVENT_DESTINATION_CONDITION_KEYS: string[] =
+	static readonly DeleteConfigurationSetEventDestinationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteConfigurationSetTrackingOptions action. */
-	static readonly DELETE_CONFIGURATION_SET_TRACKING_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly DeleteConfigurationSetTrackingOptionsConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteContact action. */
-	static readonly DELETE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly DeleteContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteContactList action. */
-	static readonly DELETE_CONTACT_LIST_CONDITION_KEYS: string[] = [
+	static readonly DeleteContactListConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteCustomVerificationEmailTemplate action. */
-	static readonly DELETE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly DeleteCustomVerificationEmailTemplateConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteDedicatedIpPool action. */
-	static readonly DELETE_DEDICATED_IP_POOL_CONDITION_KEYS: string[] = [
+	static readonly DeleteDedicatedIpPoolConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteEmailIdentity action. */
-	static readonly DELETE_EMAIL_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly DeleteEmailIdentityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteEmailIdentityPolicy action. */
-	static readonly DELETE_EMAIL_IDENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteEmailIdentityPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteEmailTemplate action. */
-	static readonly DELETE_EMAIL_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly DeleteEmailTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteIdentity action. */
-	static readonly DELETE_IDENTITY_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly DeleteIdentityConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteIdentityPolicy action. */
-	static readonly DELETE_IDENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteIdentityPolicyConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteMultiRegionEndpoint action. */
-	static readonly DELETE_MULTI_REGION_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteMultiRegionEndpointConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteReceiptFilter action. */
-	static readonly DELETE_RECEIPT_FILTER_CONDITION_KEYS: string[] = [
+	static readonly DeleteReceiptFilterConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteReceiptRule action. */
-	static readonly DELETE_RECEIPT_RULE_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly DeleteReceiptRuleConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteReceiptRuleSet action. */
-	static readonly DELETE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly DeleteReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteSuppressedDestination action. */
-	static readonly DELETE_SUPPRESSED_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteSuppressedDestinationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteTemplate action. */
-	static readonly DELETE_TEMPLATE_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly DeleteTemplateConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the DeleteTenant action. */
-	static readonly DELETE_TENANT_CONDITION_KEYS: string[] = [
+	static readonly DeleteTenantConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DeleteTenantResourceAssociation action. */
-	static readonly DELETE_TENANT_RESOURCE_ASSOCIATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	static readonly DeleteTenantResourceAssociationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the DeleteVerifiedEmailAddress action. */
-	static readonly DELETE_VERIFIED_EMAIL_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly DeleteVerifiedEmailAddressConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DescribeActiveReceiptRuleSet action. */
-	static readonly DESCRIBE_ACTIVE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly DescribeActiveReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DescribeConfigurationSet action. */
-	static readonly DESCRIBE_CONFIGURATION_SET_CONDITION_KEYS: string[] = [
+	static readonly DescribeConfigurationSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DescribeReceiptRule action. */
-	static readonly DESCRIBE_RECEIPT_RULE_CONDITION_KEYS: string[] = [
+	static readonly DescribeReceiptRuleConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the DescribeReceiptRuleSet action. */
-	static readonly DESCRIBE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly DescribeReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetAccount action. */
-	static readonly GET_ACCOUNT_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly actionGetAccountConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the GetAccountSendingEnabled action. */
-	static readonly GET_ACCOUNT_SENDING_ENABLED_CONDITION_KEYS: string[] = [
+	static readonly actionGetAccountSendingEnabledConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetBlacklistReports action. */
-	static readonly GET_BLACKLIST_REPORTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetBlacklistReportsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetConfigurationSet action. */
-	static readonly GET_CONFIGURATION_SET_CONDITION_KEYS: string[] = [
+	static readonly actionGetConfigurationSetConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetConfigurationSetEventDestinations action. */
-	static readonly GET_CONFIGURATION_SET_EVENT_DESTINATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetConfigurationSetEventDestinationsConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the GetContact action. */
-	static readonly GET_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly actionGetContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetContactList action. */
-	static readonly GET_CONTACT_LIST_CONDITION_KEYS: string[] = [
+	static readonly actionGetContactListConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetCustomVerificationEmailTemplate action. */
-	static readonly GET_CUSTOM_VERIFICATION_EMAIL_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly actionGetCustomVerificationEmailTemplateConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the GetDedicatedIp action. */
-	static readonly GET_DEDICATED_IP_CONDITION_KEYS: string[] = [
+	static readonly actionGetDedicatedIpConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetDedicatedIpPool action. */
-	static readonly GET_DEDICATED_IP_POOL_CONDITION_KEYS: string[] = [
+	static readonly actionGetDedicatedIpPoolConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetDedicatedIps action. */
-	static readonly GET_DEDICATED_IPS_CONDITION_KEYS: string[] = [
+	static readonly actionGetDedicatedIpsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetDeliverabilityDashboardOptions action. */
-	static readonly GET_DELIVERABILITY_DASHBOARD_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetDeliverabilityDashboardOptionsConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the GetDeliverabilityTestReport action. */
-	static readonly GET_DELIVERABILITY_TEST_REPORT_CONDITION_KEYS: string[] = [
+	static readonly actionGetDeliverabilityTestReportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetDomainDeliverabilityCampaign action. */
-	static readonly GET_DOMAIN_DELIVERABILITY_CAMPAIGN_CONDITION_KEYS: string[] =
+	static readonly actionGetDomainDeliverabilityCampaignConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the GetDomainStatisticsReport action. */
-	static readonly GET_DOMAIN_STATISTICS_REPORT_CONDITION_KEYS: string[] = [
+	static readonly actionGetDomainStatisticsReportConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetEmailAddressInsights action. */
-	static readonly GET_EMAIL_ADDRESS_INSIGHTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetEmailAddressInsightsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetEmailIdentity action. */
-	static readonly GET_EMAIL_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetEmailIdentityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetEmailIdentityPolicies action. */
-	static readonly GET_EMAIL_IDENTITY_POLICIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetEmailIdentityPoliciesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetEmailTemplate action. */
-	static readonly GET_EMAIL_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly actionGetEmailTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetExportJob action. */
-	static readonly GET_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly actionGetExportJobConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:ExportSourceType",
 	];
 	/** Condition keys applicable to the GetIdentityDkimAttributes action. */
-	static readonly GET_IDENTITY_DKIM_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly actionGetIdentityDkimAttributesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetIdentityMailFromDomainAttributes action. */
-	static readonly GET_IDENTITY_MAIL_FROM_DOMAIN_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly actionGetIdentityMailFromDomainAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the GetIdentityNotificationAttributes action. */
-	static readonly GET_IDENTITY_NOTIFICATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly actionGetIdentityNotificationAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the GetIdentityPolicies action. */
-	static readonly GET_IDENTITY_POLICIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetIdentityPoliciesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetIdentityVerificationAttributes action. */
-	static readonly GET_IDENTITY_VERIFICATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly actionGetIdentityVerificationAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the GetImportJob action. */
-	static readonly GET_IMPORT_JOB_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly actionGetImportJobConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the GetMessageInsights action. */
-	static readonly GET_MESSAGE_INSIGHTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetMessageInsightsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetMultiRegionEndpoint action. */
-	static readonly GET_MULTI_REGION_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly actionGetMultiRegionEndpointConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetReputationEntity action. */
-	static readonly GET_REPUTATION_ENTITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetReputationEntityConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetSendQuota action. */
-	static readonly GET_SEND_QUOTA_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly actionGetSendQuotaConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the GetSendStatistics action. */
-	static readonly GET_SEND_STATISTICS_CONDITION_KEYS: string[] = [
+	static readonly actionGetSendStatisticsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetSuppressedDestination action. */
-	static readonly GET_SUPPRESSED_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetSuppressedDestinationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the GetTemplate action. */
-	static readonly GET_TEMPLATE_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly actionGetTemplateConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the GetTenant action. */
-	static readonly GET_TENANT_CONDITION_KEYS: string[] = [
+	static readonly actionGetTenantConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListConfigurationSets action. */
-	static readonly LIST_CONFIGURATION_SETS_CONDITION_KEYS: string[] = [
+	static readonly ListConfigurationSetsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListContactLists action. */
-	static readonly LIST_CONTACT_LISTS_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly ListContactListsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListContacts action. */
-	static readonly LIST_CONTACTS_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly ListContactsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListCustomVerificationEmailTemplates action. */
-	static readonly LIST_CUSTOM_VERIFICATION_EMAIL_TEMPLATES_CONDITION_KEYS: string[] =
+	static readonly ListCustomVerificationEmailTemplatesConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the ListDedicatedIpPools action. */
-	static readonly LIST_DEDICATED_IP_POOLS_CONDITION_KEYS: string[] = [
+	static readonly ListDedicatedIpPoolsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListDeliverabilityTestReports action. */
-	static readonly LIST_DELIVERABILITY_TEST_REPORTS_CONDITION_KEYS: string[] = [
+	static readonly ListDeliverabilityTestReportsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListDomainDeliverabilityCampaigns action. */
-	static readonly LIST_DOMAIN_DELIVERABILITY_CAMPAIGNS_CONDITION_KEYS: string[] =
-		["ses:ApiVersion"];
+	static readonly ListDomainDeliverabilityCampaignsConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the ListEmailIdentities action. */
-	static readonly LIST_EMAIL_IDENTITIES_CONDITION_KEYS: string[] = [
+	static readonly ListEmailIdentitiesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListEmailTemplates action. */
-	static readonly LIST_EMAIL_TEMPLATES_CONDITION_KEYS: string[] = [
+	static readonly ListEmailTemplatesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListExportJobs action. */
-	static readonly LIST_EXPORT_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListExportJobsConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:ExportSourceType",
 	];
 	/** Condition keys applicable to the ListIdentities action. */
-	static readonly LIST_IDENTITIES_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly ListIdentitiesConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListIdentityPolicies action. */
-	static readonly LIST_IDENTITY_POLICIES_CONDITION_KEYS: string[] = [
+	static readonly ListIdentityPoliciesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListImportJobs action. */
-	static readonly LIST_IMPORT_JOBS_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly ListImportJobsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListMultiRegionEndpoints action. */
-	static readonly LIST_MULTI_REGION_ENDPOINTS_CONDITION_KEYS: string[] = [
+	static readonly ListMultiRegionEndpointsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListReceiptFilters action. */
-	static readonly LIST_RECEIPT_FILTERS_CONDITION_KEYS: string[] = [
+	static readonly ListReceiptFiltersConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListReceiptRuleSets action. */
-	static readonly LIST_RECEIPT_RULE_SETS_CONDITION_KEYS: string[] = [
+	static readonly ListReceiptRuleSetsConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListRecommendations action. */
-	static readonly LIST_RECOMMENDATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListRecommendationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListReputationEntities action. */
-	static readonly LIST_REPUTATION_ENTITIES_CONDITION_KEYS: string[] = [
+	static readonly ListReputationEntitiesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListResourceTenants action. */
-	static readonly LIST_RESOURCE_TENANTS_CONDITION_KEYS: string[] = [
+	static readonly ListResourceTenantsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListSuppressedDestinations action. */
-	static readonly LIST_SUPPRESSED_DESTINATIONS_CONDITION_KEYS: string[] = [
+	static readonly ListSuppressedDestinationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListTemplates action. */
-	static readonly LIST_TEMPLATES_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly ListTemplatesConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListTenantResources action. */
-	static readonly LIST_TENANT_RESOURCES_CONDITION_KEYS: string[] = [
+	static readonly ListTenantResourcesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ListTenants action. */
-	static readonly LIST_TENANTS_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly ListTenantsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the ListVerifiedEmailAddresses action. */
-	static readonly LIST_VERIFIED_EMAIL_ADDRESSES_CONDITION_KEYS: string[] = [
+	static readonly ListVerifiedEmailAddressesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action. */
-	static readonly PUT_ACCOUNT_DEDICATED_IP_WARMUP_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly PutAccountDedicatedIpWarmupAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the PutAccountDetails action. */
-	static readonly PUT_ACCOUNT_DETAILS_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly PutAccountDetailsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the PutAccountPricingAttributes action. */
-	static readonly PUT_ACCOUNT_PRICING_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly PutAccountPricingAttributesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutAccountSendingAttributes action. */
-	static readonly PUT_ACCOUNT_SENDING_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly PutAccountSendingAttributesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutAccountSuppressionAttributes action. */
-	static readonly PUT_ACCOUNT_SUPPRESSION_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["ses:ApiVersion"];
+	static readonly PutAccountSuppressionAttributesConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutAccountVdmAttributes action. */
-	static readonly PUT_ACCOUNT_VDM_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly PutAccountVdmAttributesConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutConfigurationSetArchivingOptions action. */
-	static readonly PUT_CONFIGURATION_SET_ARCHIVING_OPTIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	static readonly PutConfigurationSetArchivingOptionsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutConfigurationSetDeliveryOptions action. */
-	static readonly PUT_CONFIGURATION_SET_DELIVERY_OPTIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	static readonly PutConfigurationSetDeliveryOptionsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutConfigurationSetReputationOptions action. */
-	static readonly PUT_CONFIGURATION_SET_REPUTATION_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly PutConfigurationSetReputationOptionsConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the PutConfigurationSetSendingOptions action. */
-	static readonly PUT_CONFIGURATION_SET_SENDING_OPTIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	static readonly PutConfigurationSetSendingOptionsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutConfigurationSetSuppressionOptions action. */
-	static readonly PUT_CONFIGURATION_SET_SUPPRESSION_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly PutConfigurationSetSuppressionOptionsConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the PutConfigurationSetTrackingOptions action. */
-	static readonly PUT_CONFIGURATION_SET_TRACKING_OPTIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	static readonly PutConfigurationSetTrackingOptionsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutConfigurationSetVdmOptions action. */
-	static readonly PUT_CONFIGURATION_SET_VDM_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly PutConfigurationSetVdmOptionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutDedicatedIpInPool action. */
-	static readonly PUT_DEDICATED_IP_IN_POOL_CONDITION_KEYS: string[] = [
+	static readonly PutDedicatedIpInPoolConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutDedicatedIpPoolScalingAttributes action. */
-	static readonly PUT_DEDICATED_IP_POOL_SCALING_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutDedicatedIpWarmupAttributes action. */
-	static readonly PUT_DEDICATED_IP_WARMUP_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["ses:ApiVersion"];
-	/** Condition keys applicable to the PutDeliverabilityDashboardOption action. */
-	static readonly PUT_DELIVERABILITY_DASHBOARD_OPTION_CONDITION_KEYS: string[] =
-		["ses:ApiVersion"];
-	/** Condition keys applicable to the PutEmailIdentityConfigurationSetAttributes action. */
-	static readonly PUT_EMAIL_IDENTITY_CONFIGURATION_SET_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutEmailIdentityDkimAttributes action. */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutEmailIdentityDkimSigningAttributes action. */
-	static readonly PUT_EMAIL_IDENTITY_DKIM_SIGNING_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutEmailIdentityFeedbackAttributes action. */
-	static readonly PUT_EMAIL_IDENTITY_FEEDBACK_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutEmailIdentityMailFromAttributes action. */
-	static readonly PUT_EMAIL_IDENTITY_MAIL_FROM_ATTRIBUTES_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
-	/** Condition keys applicable to the PutIdentityPolicy action. */
-	static readonly PUT_IDENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutDedicatedIpPoolScalingAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
+	/** Condition keys applicable to the PutDedicatedIpWarmupAttributes action. */
+	static readonly PutDedicatedIpWarmupAttributesConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the PutDeliverabilityDashboardOption action. */
+	static readonly PutDeliverabilityDashboardOptionConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the PutEmailIdentityConfigurationSetAttributes action. */
+	static readonly PutEmailIdentityConfigurationSetAttributesConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	/** Condition keys applicable to the PutEmailIdentityDkimAttributes action. */
+	static readonly PutEmailIdentityDkimAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the PutEmailIdentityDkimSigningAttributes action. */
+	static readonly PutEmailIdentityDkimSigningAttributesConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
+	/** Condition keys applicable to the PutEmailIdentityFeedbackAttributes action. */
+	static readonly PutEmailIdentityFeedbackAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the PutEmailIdentityMailFromAttributes action. */
+	static readonly PutEmailIdentityMailFromAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"ses:ApiVersion",
+	];
+	/** Condition keys applicable to the PutIdentityPolicy action. */
+	static readonly PutIdentityPolicyConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the PutSuppressedDestination action. */
-	static readonly PUT_SUPPRESSED_DESTINATION_CONDITION_KEYS: string[] = [
+	static readonly PutSuppressedDestinationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the PutTenantSuppressionAttributes action. */
-	static readonly PUT_TENANT_SUPPRESSION_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly PutTenantSuppressionAttributesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ReorderReceiptRuleSet action. */
-	static readonly REORDER_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly ReorderReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the ReplicateEmailIdentityDkimSigningKey action. */
-	static readonly REPLICATE_EMAIL_IDENTITY_DKIM_SIGNING_KEY_CONDITION_KEYS: string[] =
+	static readonly ReplicateEmailIdentityDkimSigningKeyConditionKeys: string[] =
 		["ses:ReplicaRegion"];
 	/** Condition keys applicable to the SendBounce action. */
-	static readonly SEND_BOUNCE_CONDITION_KEYS: string[] = [
+	static readonly SendBounceConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FromAddress",
 	];
 	/** Condition keys applicable to the SendBulkEmail action. */
-	static readonly SEND_BULK_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendBulkEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:MultiRegionEndpointId",
 		"ses:TenantName",
 	];
 	/** Condition keys applicable to the SendBulkTemplatedEmail action. */
-	static readonly SEND_BULK_TEMPLATED_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendBulkTemplatedEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FeedbackAddress",
 		"ses:FromAddress",
@@ -3088,7 +3372,7 @@ export class SesConditions {
 		"ses:Recipients",
 	];
 	/** Condition keys applicable to the SendCustomVerificationEmail action. */
-	static readonly SEND_CUSTOM_VERIFICATION_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendCustomVerificationEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FeedbackAddress",
 		"ses:FromAddress",
@@ -3096,7 +3380,7 @@ export class SesConditions {
 		"ses:Recipients",
 	];
 	/** Condition keys applicable to the SendEmail action. */
-	static readonly SEND_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FeedbackAddress",
 		"ses:FromAddress",
@@ -3106,7 +3390,7 @@ export class SesConditions {
 		"ses:TenantName",
 	];
 	/** Condition keys applicable to the SendRawEmail action. */
-	static readonly SEND_RAW_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendRawEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FeedbackAddress",
 		"ses:FromAddress",
@@ -3114,7 +3398,7 @@ export class SesConditions {
 		"ses:Recipients",
 	];
 	/** Condition keys applicable to the SendTemplatedEmail action. */
-	static readonly SEND_TEMPLATED_EMAIL_CONDITION_KEYS: string[] = [
+	static readonly SendTemplatedEmailConditionKeys: string[] = [
 		"ses:ApiVersion",
 		"ses:FeedbackAddress",
 		"ses:FromAddress",
@@ -3122,131 +3406,127 @@ export class SesConditions {
 		"ses:Recipients",
 	];
 	/** Condition keys applicable to the SetActiveReceiptRuleSet action. */
-	static readonly SET_ACTIVE_RECEIPT_RULE_SET_CONDITION_KEYS: string[] = [
+	static readonly actionSetActiveReceiptRuleSetConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the SetIdentityDkimEnabled action. */
-	static readonly SET_IDENTITY_DKIM_ENABLED_CONDITION_KEYS: string[] = [
+	static readonly actionSetIdentityDkimEnabledConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the SetIdentityFeedbackForwardingEnabled action. */
-	static readonly SET_IDENTITY_FEEDBACK_FORWARDING_ENABLED_CONDITION_KEYS: string[] =
+	static readonly actionSetIdentityFeedbackForwardingEnabledConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the SetIdentityHeadersInNotificationsEnabled action. */
-	static readonly SET_IDENTITY_HEADERS_IN_NOTIFICATIONS_ENABLED_CONDITION_KEYS: string[] =
+	static readonly actionSetIdentityHeadersInNotificationsEnabledConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the SetIdentityMailFromDomain action. */
-	static readonly SET_IDENTITY_MAIL_FROM_DOMAIN_CONDITION_KEYS: string[] = [
+	static readonly actionSetIdentityMailFromDomainConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the SetIdentityNotificationTopic action. */
-	static readonly SET_IDENTITY_NOTIFICATION_TOPIC_CONDITION_KEYS: string[] = [
+	static readonly actionSetIdentityNotificationTopicConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the SetReceiptRulePosition action. */
-	static readonly SET_RECEIPT_RULE_POSITION_CONDITION_KEYS: string[] = [
+	static readonly actionSetReceiptRulePositionConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the TestRenderEmailTemplate action. */
-	static readonly TEST_RENDER_EMAIL_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly TestRenderEmailTemplateConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the TestRenderTemplate action. */
-	static readonly TEST_RENDER_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly TestRenderTemplateConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:TagKeys",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateAccountSendingEnabled action. */
-	static readonly UPDATE_ACCOUNT_SENDING_ENABLED_CONDITION_KEYS: string[] = [
+	static readonly UpdateAccountSendingEnabledConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateConfigurationSetEventDestination action. */
-	static readonly UPDATE_CONFIGURATION_SET_EVENT_DESTINATION_CONDITION_KEYS: string[] =
+	static readonly UpdateConfigurationSetEventDestinationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateConfigurationSetReputationMetricsEnabled action. */
-	static readonly UPDATE_CONFIGURATION_SET_REPUTATION_METRICS_ENABLED_CONDITION_KEYS: string[] =
+	static readonly UpdateConfigurationSetReputationMetricsEnabledConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateConfigurationSetSendingEnabled action. */
-	static readonly UPDATE_CONFIGURATION_SET_SENDING_ENABLED_CONDITION_KEYS: string[] =
+	static readonly UpdateConfigurationSetSendingEnabledConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateConfigurationSetTrackingOptions action. */
-	static readonly UPDATE_CONFIGURATION_SET_TRACKING_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly UpdateConfigurationSetTrackingOptionsConditionKeys: string[] =
 		["ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateContact action. */
-	static readonly UPDATE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly UpdateContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateContactList action. */
-	static readonly UPDATE_CONTACT_LIST_CONDITION_KEYS: string[] = [
+	static readonly UpdateContactListConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateCustomVerificationEmailTemplate action. */
-	static readonly UPDATE_CUSTOM_VERIFICATION_EMAIL_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly UpdateCustomVerificationEmailTemplateConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateEmailIdentityPolicy action. */
-	static readonly UPDATE_EMAIL_IDENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly UpdateEmailIdentityPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateEmailTemplate action. */
-	static readonly UPDATE_EMAIL_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly UpdateEmailTemplateConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateIngressPoint action. */
-	static readonly UPDATE_INGRESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly UpdateIngressPointConditionKeys: string[] = [
 		"ses:MailManagerRuleSetArn",
 		"ses:MailManagerTrafficPolicyArn",
 	];
 	/** Condition keys applicable to the UpdateReceiptRule action. */
-	static readonly UPDATE_RECEIPT_RULE_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly UpdateReceiptRuleConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateReputationEntityCustomerManagedStatus action. */
-	static readonly UPDATE_REPUTATION_ENTITY_CUSTOMER_MANAGED_STATUS_CONDITION_KEYS: string[] =
+	static readonly UpdateReputationEntityCustomerManagedStatusConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "ses:ApiVersion"];
 	/** Condition keys applicable to the UpdateReputationEntityPolicy action. */
-	static readonly UPDATE_REPUTATION_ENTITY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly UpdateReputationEntityPolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the UpdateTemplate action. */
-	static readonly UPDATE_TEMPLATE_CONDITION_KEYS: string[] = ["ses:ApiVersion"];
+	static readonly UpdateTemplateConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the VerifyDomainDkim action. */
-	static readonly VERIFY_DOMAIN_DKIM_CONDITION_KEYS: string[] = [
-		"ses:ApiVersion",
-	];
+	static readonly VerifyDomainDkimConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the VerifyDomainIdentity action. */
-	static readonly VERIFY_DOMAIN_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly VerifyDomainIdentityConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the VerifyEmailAddress action. */
-	static readonly VERIFY_EMAIL_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly VerifyEmailAddressConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 	/** Condition keys applicable to the VerifyEmailIdentity action. */
-	static readonly VERIFY_EMAIL_IDENTITY_CONDITION_KEYS: string[] = [
+	static readonly VerifyEmailIdentityConditionKeys: string[] = [
 		"ses:ApiVersion",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: ses:AddonSubscriptionArn (ARN) */
 	static readonly ADDON_SUBSCRIPTION_ARN = "ses:AddonSubscriptionArn";
 	/** Condition key: ses:ApiVersion (String) */

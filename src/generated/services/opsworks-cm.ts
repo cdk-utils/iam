@@ -13,89 +13,139 @@ export class OpsworksCmActions {
 	static readonly SERVICE_PREFIX = "opsworks-cm";
 
 	/** [Write] opsworks-cm:AssociateNode */
-	static readonly ASSOCIATE_NODE = "opsworks-cm:AssociateNode";
+	static readonly AssociateNode = "opsworks-cm:AssociateNode";
 	/** [Write] opsworks-cm:CreateBackup */
-	static readonly CREATE_BACKUP = "opsworks-cm:CreateBackup";
+	static readonly CreateBackup = "opsworks-cm:CreateBackup";
 	/** [Write] opsworks-cm:CreateServer */
-	static readonly CREATE_SERVER = "opsworks-cm:CreateServer";
+	static readonly CreateServer = "opsworks-cm:CreateServer";
 	/** [Write] opsworks-cm:DeleteBackup */
-	static readonly DELETE_BACKUP = "opsworks-cm:DeleteBackup";
+	static readonly DeleteBackup = "opsworks-cm:DeleteBackup";
 	/** [Write] opsworks-cm:DeleteServer */
-	static readonly DELETE_SERVER = "opsworks-cm:DeleteServer";
+	static readonly DeleteServer = "opsworks-cm:DeleteServer";
 	/** [List] opsworks-cm:DescribeAccountAttributes */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES =
+	static readonly DescribeAccountAttributes =
 		"opsworks-cm:DescribeAccountAttributes";
 	/** [List] opsworks-cm:DescribeBackups */
-	static readonly DESCRIBE_BACKUPS = "opsworks-cm:DescribeBackups";
+	static readonly DescribeBackups = "opsworks-cm:DescribeBackups";
 	/** [List] opsworks-cm:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "opsworks-cm:DescribeEvents";
+	static readonly DescribeEvents = "opsworks-cm:DescribeEvents";
 	/** [List] opsworks-cm:DescribeNodeAssociationStatus */
-	static readonly DESCRIBE_NODE_ASSOCIATION_STATUS =
+	static readonly DescribeNodeAssociationStatus =
 		"opsworks-cm:DescribeNodeAssociationStatus";
 	/** [List] opsworks-cm:DescribeServers */
-	static readonly DESCRIBE_SERVERS = "opsworks-cm:DescribeServers";
+	static readonly DescribeServers = "opsworks-cm:DescribeServers";
 	/** [Write] opsworks-cm:DisassociateNode */
-	static readonly DISASSOCIATE_NODE = "opsworks-cm:DisassociateNode";
+	static readonly DisassociateNode = "opsworks-cm:DisassociateNode";
 	/** [Read] opsworks-cm:ExportServerEngineAttribute */
-	static readonly EXPORT_SERVER_ENGINE_ATTRIBUTE =
+	static readonly ExportServerEngineAttribute =
 		"opsworks-cm:ExportServerEngineAttribute";
 	/** [Read] opsworks-cm:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "opsworks-cm:ListTagsForResource";
+	static readonly ListTagsForResource = "opsworks-cm:ListTagsForResource";
 	/** [Write] opsworks-cm:RestoreServer */
-	static readonly RESTORE_SERVER = "opsworks-cm:RestoreServer";
+	static readonly RestoreServer = "opsworks-cm:RestoreServer";
 	/** [Write] opsworks-cm:StartMaintenance */
-	static readonly START_MAINTENANCE = "opsworks-cm:StartMaintenance";
+	static readonly StartMaintenance = "opsworks-cm:StartMaintenance";
 	/** [Tagging] opsworks-cm:TagResource */
-	static readonly TAG_RESOURCE = "opsworks-cm:TagResource";
+	static readonly TagResource = "opsworks-cm:TagResource";
 	/** [Tagging] opsworks-cm:UntagResource */
-	static readonly UNTAG_RESOURCE = "opsworks-cm:UntagResource";
+	static readonly UntagResource = "opsworks-cm:UntagResource";
 	/** [Write] opsworks-cm:UpdateServer */
-	static readonly UPDATE_SERVER = "opsworks-cm:UpdateServer";
+	static readonly UpdateServer = "opsworks-cm:UpdateServer";
 	/** [Write] opsworks-cm:UpdateServerEngineAttributes */
-	static readonly UPDATE_SERVER_ENGINE_ATTRIBUTES =
+	static readonly UpdateServerEngineAttributes =
 		"opsworks-cm:UpdateServerEngineAttributes";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OpsworksCmActions.EXPORT_SERVER_ENGINE_ATTRIBUTE,
-		OpsworksCmActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		OpsworksCmActions.ExportServerEngineAttribute,
+		OpsworksCmActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OpsworksCmActions.ASSOCIATE_NODE,
-		OpsworksCmActions.CREATE_BACKUP,
-		OpsworksCmActions.CREATE_SERVER,
-		OpsworksCmActions.DELETE_BACKUP,
-		OpsworksCmActions.DELETE_SERVER,
-		OpsworksCmActions.DISASSOCIATE_NODE,
-		OpsworksCmActions.RESTORE_SERVER,
-		OpsworksCmActions.START_MAINTENANCE,
-		OpsworksCmActions.UPDATE_SERVER,
-		OpsworksCmActions.UPDATE_SERVER_ENGINE_ATTRIBUTES,
+	static readonly AllWriteActions: string[] = [
+		OpsworksCmActions.AssociateNode,
+		OpsworksCmActions.CreateBackup,
+		OpsworksCmActions.CreateServer,
+		OpsworksCmActions.DeleteBackup,
+		OpsworksCmActions.DeleteServer,
+		OpsworksCmActions.DisassociateNode,
+		OpsworksCmActions.RestoreServer,
+		OpsworksCmActions.StartMaintenance,
+		OpsworksCmActions.UpdateServer,
+		OpsworksCmActions.UpdateServerEngineAttributes,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OpsworksCmActions.DESCRIBE_ACCOUNT_ATTRIBUTES,
-		OpsworksCmActions.DESCRIBE_BACKUPS,
-		OpsworksCmActions.DESCRIBE_EVENTS,
-		OpsworksCmActions.DESCRIBE_NODE_ASSOCIATION_STATUS,
-		OpsworksCmActions.DESCRIBE_SERVERS,
+	static readonly AllListActions: string[] = [
+		OpsworksCmActions.DescribeAccountAttributes,
+		OpsworksCmActions.DescribeBackups,
+		OpsworksCmActions.DescribeEvents,
+		OpsworksCmActions.DescribeNodeAssociationStatus,
+		OpsworksCmActions.DescribeServers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OpsworksCmActions.TAG_RESOURCE,
-		OpsworksCmActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OpsworksCmActions.TagResource,
+		OpsworksCmActions.UntagResource,
 	];
 }
 
-const BackupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):opsworks-cm::(?<account>[^:]*):backup/(?<serverName>[^:/?]+)-\\{Date-and-Time-Stamp-of-Backup\\}$",
-);
-const ServerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):opsworks-cm::(?<account>[^:]*):server/(?<serverName>[^:/?]+)/(?<uniqueId>[^:/?]+)$",
-);
+/**
+ * Properties for building a backup ARN.
+ */
+export interface OpsworksCmBackupArnProps {
+	/** The ServerName component of the ARN. */
+	readonly serverName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a backup ARN.
+ */
+export interface OpsworksCmBackupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServerName component. */
+	readonly serverName: string;
+}
+
+/**
+ * Properties for building a server ARN.
+ */
+export interface OpsworksCmServerArnProps {
+	/** The ServerName component of the ARN. */
+	readonly serverName: string;
+	/** The UniqueId component of the ARN. */
+	readonly uniqueId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a server ARN.
+ */
+export interface OpsworksCmServerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServerName component. */
+	readonly serverName: string;
+	/** The UniqueId component. */
+	readonly uniqueId: string;
+}
+
+const BackupArnRegex =
+	/^arn:(?<partition>[^:]+):opsworks-cm::(?<account>[^:]*):backup\/(?<serverName>[^:/?]+)-\{Date-and-Time-Stamp-of-Backup\}$/;
+const ServerArnRegex =
+	/^arn:(?<partition>[^:]+):opsworks-cm::(?<account>[^:]*):server\/(?<serverName>[^:/?]+)\/(?<uniqueId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for opsworks-cm resources.
@@ -104,14 +154,7 @@ export class OpsworksCmResources {
 	/**
 	 * Builds an ARN for the backup resource.
 	 */
-	static backup(props: {
-		/** The ServerName component of the ARN. */
-		readonly serverName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static backup(props: OpsworksCmBackupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:opsworks-cm::${props.account ?? "*"}:backup/${props.serverName}-{Date-and-Time-Stamp-of-Backup}`;
 	}
 
@@ -126,11 +169,7 @@ export class OpsworksCmResources {
 	 * Parses a backup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBackupArn(arn: string): {
-		partition: string;
-		account: string;
-		serverName: string;
-	} {
+	static parseBackupArn(arn: string): OpsworksCmBackupArnComponents {
 		const match = BackupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid backup ARN: ${arn}`);
@@ -145,16 +184,7 @@ export class OpsworksCmResources {
 	/**
 	 * Builds an ARN for the server resource.
 	 */
-	static server(props: {
-		/** The ServerName component of the ARN. */
-		readonly serverName: string;
-		/** The UniqueId component of the ARN. */
-		readonly uniqueId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static server(props: OpsworksCmServerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:opsworks-cm::${props.account ?? "*"}:server/${props.serverName}/${props.uniqueId}`;
 	}
 
@@ -169,12 +199,7 @@ export class OpsworksCmResources {
 	 * Parses a server ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServerArn(arn: string): {
-		partition: string;
-		account: string;
-		serverName: string;
-		uniqueId: string;
-	} {
+	static parseServerArn(arn: string): OpsworksCmServerArnComponents {
 		const match = ServerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid server ARN: ${arn}`);

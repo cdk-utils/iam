@@ -13,267 +13,419 @@ export class LicenseManagerActions {
 	static readonly SERVICE_PREFIX = "license-manager";
 
 	/** [Write] license-manager:AcceptGrant */
-	static readonly ACCEPT_GRANT = "license-manager:AcceptGrant";
+	static readonly AcceptGrant = "license-manager:AcceptGrant";
 	/** [Write] license-manager:CheckInLicense */
-	static readonly CHECK_IN_LICENSE = "license-manager:CheckInLicense";
+	static readonly CheckInLicense = "license-manager:CheckInLicense";
 	/** [Write] license-manager:CheckoutBorrowLicense */
-	static readonly CHECKOUT_BORROW_LICENSE =
+	static readonly CheckoutBorrowLicense =
 		"license-manager:CheckoutBorrowLicense";
 	/** [Write] license-manager:CheckoutLicense */
-	static readonly CHECKOUT_LICENSE = "license-manager:CheckoutLicense";
+	static readonly CheckoutLicense = "license-manager:CheckoutLicense";
 	/** [Write] license-manager:CreateGrant */
-	static readonly CREATE_GRANT = "license-manager:CreateGrant";
+	static readonly CreateGrant = "license-manager:CreateGrant";
 	/** [Write] license-manager:CreateGrantVersion */
-	static readonly CREATE_GRANT_VERSION = "license-manager:CreateGrantVersion";
+	static readonly CreateGrantVersion = "license-manager:CreateGrantVersion";
 	/** [Write] license-manager:CreateLicense */
-	static readonly CREATE_LICENSE = "license-manager:CreateLicense";
+	static readonly CreateLicense = "license-manager:CreateLicense";
 	/** [Write] license-manager:CreateLicenseAssetGroup */
-	static readonly CREATE_LICENSE_ASSET_GROUP =
+	static readonly CreateLicenseAssetGroup =
 		"license-manager:CreateLicenseAssetGroup";
 	/** [Write] license-manager:CreateLicenseAssetRuleset */
-	static readonly CREATE_LICENSE_ASSET_RULESET =
+	static readonly CreateLicenseAssetRuleset =
 		"license-manager:CreateLicenseAssetRuleset";
 	/** [Write] license-manager:CreateLicenseConfiguration */
-	static readonly CREATE_LICENSE_CONFIGURATION =
+	static readonly CreateLicenseConfiguration =
 		"license-manager:CreateLicenseConfiguration";
 	/** [Write] license-manager:CreateLicenseConversionTaskForResource */
-	static readonly CREATE_LICENSE_CONVERSION_TASK_FOR_RESOURCE =
+	static readonly CreateLicenseConversionTaskForResource =
 		"license-manager:CreateLicenseConversionTaskForResource";
 	/** [Write] license-manager:CreateLicenseManagerReportGenerator */
-	static readonly CREATE_LICENSE_MANAGER_REPORT_GENERATOR =
+	static readonly CreateLicenseManagerReportGenerator =
 		"license-manager:CreateLicenseManagerReportGenerator";
 	/** [Write] license-manager:CreateLicenseVersion */
-	static readonly CREATE_LICENSE_VERSION =
-		"license-manager:CreateLicenseVersion";
+	static readonly CreateLicenseVersion = "license-manager:CreateLicenseVersion";
 	/** [Write] license-manager:CreateToken */
-	static readonly CREATE_TOKEN = "license-manager:CreateToken";
+	static readonly CreateToken = "license-manager:CreateToken";
 	/** [Write] license-manager:DeleteGrant */
-	static readonly DELETE_GRANT = "license-manager:DeleteGrant";
+	static readonly DeleteGrant = "license-manager:DeleteGrant";
 	/** [Write] license-manager:DeleteLicense */
-	static readonly DELETE_LICENSE = "license-manager:DeleteLicense";
+	static readonly DeleteLicense = "license-manager:DeleteLicense";
 	/** [Write] license-manager:DeleteLicenseAssetGroup */
-	static readonly DELETE_LICENSE_ASSET_GROUP =
+	static readonly DeleteLicenseAssetGroup =
 		"license-manager:DeleteLicenseAssetGroup";
 	/** [Write] license-manager:DeleteLicenseAssetRuleset */
-	static readonly DELETE_LICENSE_ASSET_RULESET =
+	static readonly DeleteLicenseAssetRuleset =
 		"license-manager:DeleteLicenseAssetRuleset";
 	/** [Write] license-manager:DeleteLicenseConfiguration */
-	static readonly DELETE_LICENSE_CONFIGURATION =
+	static readonly DeleteLicenseConfiguration =
 		"license-manager:DeleteLicenseConfiguration";
 	/** [Write] license-manager:DeleteLicenseManagerReportGenerator */
-	static readonly DELETE_LICENSE_MANAGER_REPORT_GENERATOR =
+	static readonly DeleteLicenseManagerReportGenerator =
 		"license-manager:DeleteLicenseManagerReportGenerator";
 	/** [Write] license-manager:DeleteToken */
-	static readonly DELETE_TOKEN = "license-manager:DeleteToken";
+	static readonly DeleteToken = "license-manager:DeleteToken";
 	/** [Write] license-manager:ExtendLicenseConsumption */
-	static readonly EXTEND_LICENSE_CONSUMPTION =
+	static readonly ExtendLicenseConsumption =
 		"license-manager:ExtendLicenseConsumption";
 	/** [Read] license-manager:GetAccessToken */
-	static readonly GET_ACCESS_TOKEN = "license-manager:GetAccessToken";
+	static readonly actionGetAccessToken = "license-manager:GetAccessToken";
 	/** [Read] license-manager:GetGrant */
-	static readonly GET_GRANT = "license-manager:GetGrant";
+	static readonly actionGetGrant = "license-manager:GetGrant";
 	/** [Read] license-manager:GetLicense */
-	static readonly GET_LICENSE = "license-manager:GetLicense";
+	static readonly actionGetLicense = "license-manager:GetLicense";
 	/** [Read] license-manager:GetLicenseAssetGroup */
-	static readonly GET_LICENSE_ASSET_GROUP =
+	static readonly actionGetLicenseAssetGroup =
 		"license-manager:GetLicenseAssetGroup";
 	/** [Read] license-manager:GetLicenseAssetRuleset */
-	static readonly GET_LICENSE_ASSET_RULESET =
+	static readonly actionGetLicenseAssetRuleset =
 		"license-manager:GetLicenseAssetRuleset";
 	/** [Read] license-manager:GetLicenseConfiguration */
-	static readonly GET_LICENSE_CONFIGURATION =
+	static readonly actionGetLicenseConfiguration =
 		"license-manager:GetLicenseConfiguration";
 	/** [Read] license-manager:GetLicenseConversionTask */
-	static readonly GET_LICENSE_CONVERSION_TASK =
+	static readonly actionGetLicenseConversionTask =
 		"license-manager:GetLicenseConversionTask";
 	/** [Read] license-manager:GetLicenseManagerReportGenerator */
-	static readonly GET_LICENSE_MANAGER_REPORT_GENERATOR =
+	static readonly actionGetLicenseManagerReportGenerator =
 		"license-manager:GetLicenseManagerReportGenerator";
 	/** [Read] license-manager:GetLicenseUsage */
-	static readonly GET_LICENSE_USAGE = "license-manager:GetLicenseUsage";
+	static readonly actionGetLicenseUsage = "license-manager:GetLicenseUsage";
 	/** [List] license-manager:GetServiceSettings */
-	static readonly GET_SERVICE_SETTINGS = "license-manager:GetServiceSettings";
+	static readonly actionGetServiceSettings =
+		"license-manager:GetServiceSettings";
 	/** [List] license-manager:ListAssetsForLicenseAssetGroup */
-	static readonly LIST_ASSETS_FOR_LICENSE_ASSET_GROUP =
+	static readonly ListAssetsForLicenseAssetGroup =
 		"license-manager:ListAssetsForLicenseAssetGroup";
 	/** [List] license-manager:ListAssociationsForLicenseConfiguration */
-	static readonly LIST_ASSOCIATIONS_FOR_LICENSE_CONFIGURATION =
+	static readonly ListAssociationsForLicenseConfiguration =
 		"license-manager:ListAssociationsForLicenseConfiguration";
 	/** [List] license-manager:ListDistributedGrants */
-	static readonly LIST_DISTRIBUTED_GRANTS =
+	static readonly ListDistributedGrants =
 		"license-manager:ListDistributedGrants";
 	/** [List] license-manager:ListFailuresForLicenseConfigurationOperations */
-	static readonly LIST_FAILURES_FOR_LICENSE_CONFIGURATION_OPERATIONS =
+	static readonly ListFailuresForLicenseConfigurationOperations =
 		"license-manager:ListFailuresForLicenseConfigurationOperations";
 	/** [List] license-manager:ListLicenseAssetGroups */
-	static readonly LIST_LICENSE_ASSET_GROUPS =
+	static readonly ListLicenseAssetGroups =
 		"license-manager:ListLicenseAssetGroups";
 	/** [List] license-manager:ListLicenseAssetRulesets */
-	static readonly LIST_LICENSE_ASSET_RULESETS =
+	static readonly ListLicenseAssetRulesets =
 		"license-manager:ListLicenseAssetRulesets";
 	/** [List] license-manager:ListLicenseConfigurations */
-	static readonly LIST_LICENSE_CONFIGURATIONS =
+	static readonly ListLicenseConfigurations =
 		"license-manager:ListLicenseConfigurations";
 	/** [List] license-manager:ListLicenseConfigurationsForOrganization */
-	static readonly LIST_LICENSE_CONFIGURATIONS_FOR_ORGANIZATION =
+	static readonly ListLicenseConfigurationsForOrganization =
 		"license-manager:ListLicenseConfigurationsForOrganization";
 	/** [List] license-manager:ListLicenseConversionTasks */
-	static readonly LIST_LICENSE_CONVERSION_TASKS =
+	static readonly ListLicenseConversionTasks =
 		"license-manager:ListLicenseConversionTasks";
 	/** [List] license-manager:ListLicenseManagerReportGenerators */
-	static readonly LIST_LICENSE_MANAGER_REPORT_GENERATORS =
+	static readonly ListLicenseManagerReportGenerators =
 		"license-manager:ListLicenseManagerReportGenerators";
 	/** [List] license-manager:ListLicenseSpecificationsForResource */
-	static readonly LIST_LICENSE_SPECIFICATIONS_FOR_RESOURCE =
+	static readonly ListLicenseSpecificationsForResource =
 		"license-manager:ListLicenseSpecificationsForResource";
 	/** [List] license-manager:ListLicenseVersions */
-	static readonly LIST_LICENSE_VERSIONS = "license-manager:ListLicenseVersions";
+	static readonly ListLicenseVersions = "license-manager:ListLicenseVersions";
 	/** [Read] license-manager:ListLicenses */
-	static readonly LIST_LICENSES = "license-manager:ListLicenses";
+	static readonly ListLicenses = "license-manager:ListLicenses";
 	/** [List] license-manager:ListReceivedGrants */
-	static readonly LIST_RECEIVED_GRANTS = "license-manager:ListReceivedGrants";
+	static readonly ListReceivedGrants = "license-manager:ListReceivedGrants";
 	/** [List] license-manager:ListReceivedGrantsForOrganization */
-	static readonly LIST_RECEIVED_GRANTS_FOR_ORGANIZATION =
+	static readonly ListReceivedGrantsForOrganization =
 		"license-manager:ListReceivedGrantsForOrganization";
 	/** [List] license-manager:ListReceivedLicenses */
-	static readonly LIST_RECEIVED_LICENSES =
-		"license-manager:ListReceivedLicenses";
+	static readonly ListReceivedLicenses = "license-manager:ListReceivedLicenses";
 	/** [List] license-manager:ListReceivedLicensesForOrganization */
-	static readonly LIST_RECEIVED_LICENSES_FOR_ORGANIZATION =
+	static readonly ListReceivedLicensesForOrganization =
 		"license-manager:ListReceivedLicensesForOrganization";
 	/** [List] license-manager:ListResourceInventory */
-	static readonly LIST_RESOURCE_INVENTORY =
+	static readonly ListResourceInventory =
 		"license-manager:ListResourceInventory";
 	/** [Read] license-manager:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"license-manager:ListTagsForResource";
+	static readonly ListTagsForResource = "license-manager:ListTagsForResource";
 	/** [List] license-manager:ListTokens */
-	static readonly LIST_TOKENS = "license-manager:ListTokens";
+	static readonly ListTokens = "license-manager:ListTokens";
 	/** [List] license-manager:ListUsageForLicenseConfiguration */
-	static readonly LIST_USAGE_FOR_LICENSE_CONFIGURATION =
+	static readonly ListUsageForLicenseConfiguration =
 		"license-manager:ListUsageForLicenseConfiguration";
 	/** [Write] license-manager:RejectGrant */
-	static readonly REJECT_GRANT = "license-manager:RejectGrant";
+	static readonly RejectGrant = "license-manager:RejectGrant";
 	/** [Tagging] license-manager:TagResource */
-	static readonly TAG_RESOURCE = "license-manager:TagResource";
+	static readonly TagResource = "license-manager:TagResource";
 	/** [Tagging] license-manager:UntagResource */
-	static readonly UNTAG_RESOURCE = "license-manager:UntagResource";
+	static readonly UntagResource = "license-manager:UntagResource";
 	/** [Write] license-manager:UpdateLicenseAssetGroup */
-	static readonly UPDATE_LICENSE_ASSET_GROUP =
+	static readonly UpdateLicenseAssetGroup =
 		"license-manager:UpdateLicenseAssetGroup";
 	/** [Write] license-manager:UpdateLicenseAssetRuleset */
-	static readonly UPDATE_LICENSE_ASSET_RULESET =
+	static readonly UpdateLicenseAssetRuleset =
 		"license-manager:UpdateLicenseAssetRuleset";
 	/** [Write] license-manager:UpdateLicenseConfiguration */
-	static readonly UPDATE_LICENSE_CONFIGURATION =
+	static readonly UpdateLicenseConfiguration =
 		"license-manager:UpdateLicenseConfiguration";
 	/** [Write] license-manager:UpdateLicenseManagerReportGenerator */
-	static readonly UPDATE_LICENSE_MANAGER_REPORT_GENERATOR =
+	static readonly UpdateLicenseManagerReportGenerator =
 		"license-manager:UpdateLicenseManagerReportGenerator";
 	/** [Write] license-manager:UpdateLicenseSpecificationsForResource */
-	static readonly UPDATE_LICENSE_SPECIFICATIONS_FOR_RESOURCE =
+	static readonly UpdateLicenseSpecificationsForResource =
 		"license-manager:UpdateLicenseSpecificationsForResource";
 	/** [PermissionManagement] license-manager:UpdateServiceSettings */
-	static readonly UPDATE_SERVICE_SETTINGS =
+	static readonly UpdateServiceSettings =
 		"license-manager:UpdateServiceSettings";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LicenseManagerActions.GET_ACCESS_TOKEN,
-		LicenseManagerActions.GET_GRANT,
-		LicenseManagerActions.GET_LICENSE,
-		LicenseManagerActions.GET_LICENSE_ASSET_GROUP,
-		LicenseManagerActions.GET_LICENSE_ASSET_RULESET,
-		LicenseManagerActions.GET_LICENSE_CONFIGURATION,
-		LicenseManagerActions.GET_LICENSE_CONVERSION_TASK,
-		LicenseManagerActions.GET_LICENSE_MANAGER_REPORT_GENERATOR,
-		LicenseManagerActions.GET_LICENSE_USAGE,
-		LicenseManagerActions.LIST_LICENSES,
-		LicenseManagerActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		LicenseManagerActions.actionGetAccessToken,
+		LicenseManagerActions.actionGetGrant,
+		LicenseManagerActions.actionGetLicense,
+		LicenseManagerActions.actionGetLicenseAssetGroup,
+		LicenseManagerActions.actionGetLicenseAssetRuleset,
+		LicenseManagerActions.actionGetLicenseConfiguration,
+		LicenseManagerActions.actionGetLicenseConversionTask,
+		LicenseManagerActions.actionGetLicenseManagerReportGenerator,
+		LicenseManagerActions.actionGetLicenseUsage,
+		LicenseManagerActions.ListLicenses,
+		LicenseManagerActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LicenseManagerActions.ACCEPT_GRANT,
-		LicenseManagerActions.CHECK_IN_LICENSE,
-		LicenseManagerActions.CHECKOUT_BORROW_LICENSE,
-		LicenseManagerActions.CHECKOUT_LICENSE,
-		LicenseManagerActions.CREATE_GRANT,
-		LicenseManagerActions.CREATE_GRANT_VERSION,
-		LicenseManagerActions.CREATE_LICENSE,
-		LicenseManagerActions.CREATE_LICENSE_ASSET_GROUP,
-		LicenseManagerActions.CREATE_LICENSE_ASSET_RULESET,
-		LicenseManagerActions.CREATE_LICENSE_CONFIGURATION,
-		LicenseManagerActions.CREATE_LICENSE_CONVERSION_TASK_FOR_RESOURCE,
-		LicenseManagerActions.CREATE_LICENSE_MANAGER_REPORT_GENERATOR,
-		LicenseManagerActions.CREATE_LICENSE_VERSION,
-		LicenseManagerActions.CREATE_TOKEN,
-		LicenseManagerActions.DELETE_GRANT,
-		LicenseManagerActions.DELETE_LICENSE,
-		LicenseManagerActions.DELETE_LICENSE_ASSET_GROUP,
-		LicenseManagerActions.DELETE_LICENSE_ASSET_RULESET,
-		LicenseManagerActions.DELETE_LICENSE_CONFIGURATION,
-		LicenseManagerActions.DELETE_LICENSE_MANAGER_REPORT_GENERATOR,
-		LicenseManagerActions.DELETE_TOKEN,
-		LicenseManagerActions.EXTEND_LICENSE_CONSUMPTION,
-		LicenseManagerActions.REJECT_GRANT,
-		LicenseManagerActions.UPDATE_LICENSE_ASSET_GROUP,
-		LicenseManagerActions.UPDATE_LICENSE_ASSET_RULESET,
-		LicenseManagerActions.UPDATE_LICENSE_CONFIGURATION,
-		LicenseManagerActions.UPDATE_LICENSE_MANAGER_REPORT_GENERATOR,
-		LicenseManagerActions.UPDATE_LICENSE_SPECIFICATIONS_FOR_RESOURCE,
+	static readonly AllWriteActions: string[] = [
+		LicenseManagerActions.AcceptGrant,
+		LicenseManagerActions.CheckInLicense,
+		LicenseManagerActions.CheckoutBorrowLicense,
+		LicenseManagerActions.CheckoutLicense,
+		LicenseManagerActions.CreateGrant,
+		LicenseManagerActions.CreateGrantVersion,
+		LicenseManagerActions.CreateLicense,
+		LicenseManagerActions.CreateLicenseAssetGroup,
+		LicenseManagerActions.CreateLicenseAssetRuleset,
+		LicenseManagerActions.CreateLicenseConfiguration,
+		LicenseManagerActions.CreateLicenseConversionTaskForResource,
+		LicenseManagerActions.CreateLicenseManagerReportGenerator,
+		LicenseManagerActions.CreateLicenseVersion,
+		LicenseManagerActions.CreateToken,
+		LicenseManagerActions.DeleteGrant,
+		LicenseManagerActions.DeleteLicense,
+		LicenseManagerActions.DeleteLicenseAssetGroup,
+		LicenseManagerActions.DeleteLicenseAssetRuleset,
+		LicenseManagerActions.DeleteLicenseConfiguration,
+		LicenseManagerActions.DeleteLicenseManagerReportGenerator,
+		LicenseManagerActions.DeleteToken,
+		LicenseManagerActions.ExtendLicenseConsumption,
+		LicenseManagerActions.RejectGrant,
+		LicenseManagerActions.UpdateLicenseAssetGroup,
+		LicenseManagerActions.UpdateLicenseAssetRuleset,
+		LicenseManagerActions.UpdateLicenseConfiguration,
+		LicenseManagerActions.UpdateLicenseManagerReportGenerator,
+		LicenseManagerActions.UpdateLicenseSpecificationsForResource,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LicenseManagerActions.GET_SERVICE_SETTINGS,
-		LicenseManagerActions.LIST_ASSETS_FOR_LICENSE_ASSET_GROUP,
-		LicenseManagerActions.LIST_ASSOCIATIONS_FOR_LICENSE_CONFIGURATION,
-		LicenseManagerActions.LIST_DISTRIBUTED_GRANTS,
-		LicenseManagerActions.LIST_FAILURES_FOR_LICENSE_CONFIGURATION_OPERATIONS,
-		LicenseManagerActions.LIST_LICENSE_ASSET_GROUPS,
-		LicenseManagerActions.LIST_LICENSE_ASSET_RULESETS,
-		LicenseManagerActions.LIST_LICENSE_CONFIGURATIONS,
-		LicenseManagerActions.LIST_LICENSE_CONFIGURATIONS_FOR_ORGANIZATION,
-		LicenseManagerActions.LIST_LICENSE_CONVERSION_TASKS,
-		LicenseManagerActions.LIST_LICENSE_MANAGER_REPORT_GENERATORS,
-		LicenseManagerActions.LIST_LICENSE_SPECIFICATIONS_FOR_RESOURCE,
-		LicenseManagerActions.LIST_LICENSE_VERSIONS,
-		LicenseManagerActions.LIST_RECEIVED_GRANTS,
-		LicenseManagerActions.LIST_RECEIVED_GRANTS_FOR_ORGANIZATION,
-		LicenseManagerActions.LIST_RECEIVED_LICENSES,
-		LicenseManagerActions.LIST_RECEIVED_LICENSES_FOR_ORGANIZATION,
-		LicenseManagerActions.LIST_RESOURCE_INVENTORY,
-		LicenseManagerActions.LIST_TOKENS,
-		LicenseManagerActions.LIST_USAGE_FOR_LICENSE_CONFIGURATION,
+	static readonly AllListActions: string[] = [
+		LicenseManagerActions.actionGetServiceSettings,
+		LicenseManagerActions.ListAssetsForLicenseAssetGroup,
+		LicenseManagerActions.ListAssociationsForLicenseConfiguration,
+		LicenseManagerActions.ListDistributedGrants,
+		LicenseManagerActions.ListFailuresForLicenseConfigurationOperations,
+		LicenseManagerActions.ListLicenseAssetGroups,
+		LicenseManagerActions.ListLicenseAssetRulesets,
+		LicenseManagerActions.ListLicenseConfigurations,
+		LicenseManagerActions.ListLicenseConfigurationsForOrganization,
+		LicenseManagerActions.ListLicenseConversionTasks,
+		LicenseManagerActions.ListLicenseManagerReportGenerators,
+		LicenseManagerActions.ListLicenseSpecificationsForResource,
+		LicenseManagerActions.ListLicenseVersions,
+		LicenseManagerActions.ListReceivedGrants,
+		LicenseManagerActions.ListReceivedGrantsForOrganization,
+		LicenseManagerActions.ListReceivedLicenses,
+		LicenseManagerActions.ListReceivedLicensesForOrganization,
+		LicenseManagerActions.ListResourceInventory,
+		LicenseManagerActions.ListTokens,
+		LicenseManagerActions.ListUsageForLicenseConfiguration,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		LicenseManagerActions.UPDATE_SERVICE_SETTINGS,
+	static readonly AllPermissionManagementActions: string[] = [
+		LicenseManagerActions.UpdateServiceSettings,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LicenseManagerActions.TAG_RESOURCE,
-		LicenseManagerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LicenseManagerActions.TagResource,
+		LicenseManagerActions.UntagResource,
 	];
 }
 
-const GrantArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager::(?<account>[^:]*):grant:(?<grantId>[^:/?]+)$",
-);
-const LicenseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager::(?<account>[^:]*):license:(?<licenseId>[^:/?]+)$",
-);
-const LicenseAssetGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-asset-group:(?<licenseAssetGroupId>[^:/?]+)$",
-);
-const LicenseAssetRulesetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-asset-ruleset:(?<licenseAssetRulesetId>[^:/?]+)$",
-);
-const LicenseConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-configuration:(?<licenseConfigurationId>[^:/?]+)$",
-);
-const ReportGeneratorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):report-generator:(?<reportGeneratorId>[^:/?]+)$",
-);
+/**
+ * Properties for building a grant ARN.
+ */
+export interface LicenseManagerGrantArnProps {
+	/** The GrantId component of the ARN. */
+	readonly grantId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a grant ARN.
+ */
+export interface LicenseManagerGrantArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GrantId component. */
+	readonly grantId: string;
+}
+
+/**
+ * Properties for building a license ARN.
+ */
+export interface LicenseManagerLicenseArnProps {
+	/** The LicenseId component of the ARN. */
+	readonly licenseId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license ARN.
+ */
+export interface LicenseManagerLicenseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseId component. */
+	readonly licenseId: string;
+}
+
+/**
+ * Properties for building a license-asset-group ARN.
+ */
+export interface LicenseManagerLicenseAssetGroupArnProps {
+	/** The LicenseAssetGroupId component of the ARN. */
+	readonly licenseAssetGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license-asset-group ARN.
+ */
+export interface LicenseManagerLicenseAssetGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseAssetGroupId component. */
+	readonly licenseAssetGroupId: string;
+}
+
+/**
+ * Properties for building a license-asset-ruleset ARN.
+ */
+export interface LicenseManagerLicenseAssetRulesetArnProps {
+	/** The LicenseAssetRulesetId component of the ARN. */
+	readonly licenseAssetRulesetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license-asset-ruleset ARN.
+ */
+export interface LicenseManagerLicenseAssetRulesetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseAssetRulesetId component. */
+	readonly licenseAssetRulesetId: string;
+}
+
+/**
+ * Properties for building a license-configuration ARN.
+ */
+export interface LicenseManagerLicenseConfigurationArnProps {
+	/** The LicenseConfigurationId component of the ARN. */
+	readonly licenseConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license-configuration ARN.
+ */
+export interface LicenseManagerLicenseConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseConfigurationId component. */
+	readonly licenseConfigurationId: string;
+}
+
+/**
+ * Properties for building a report-generator ARN.
+ */
+export interface LicenseManagerReportGeneratorArnProps {
+	/** The ReportGeneratorId component of the ARN. */
+	readonly reportGeneratorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a report-generator ARN.
+ */
+export interface LicenseManagerReportGeneratorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReportGeneratorId component. */
+	readonly reportGeneratorId: string;
+}
+
+const GrantArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager::(?<account>[^:]*):grant:(?<grantId>[^:/?]+)$/;
+const LicenseArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager::(?<account>[^:]*):license:(?<licenseId>[^:/?]+)$/;
+const LicenseAssetGroupArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-asset-group:(?<licenseAssetGroupId>[^:/?]+)$/;
+const LicenseAssetRulesetArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-asset-ruleset:(?<licenseAssetRulesetId>[^:/?]+)$/;
+const LicenseConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-configuration:(?<licenseConfigurationId>[^:/?]+)$/;
+const ReportGeneratorArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):report-generator:(?<reportGeneratorId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for license-manager resources.
@@ -282,14 +434,7 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the grant resource.
 	 */
-	static grant(props: {
-		/** The GrantId component of the ARN. */
-		readonly grantId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static grant(props: LicenseManagerGrantArnProps): string {
 		return `arn:${props.partition ?? "aws"}:license-manager::${props.account ?? "*"}:grant:${props.grantId}`;
 	}
 
@@ -304,11 +449,7 @@ export class LicenseManagerResources {
 	 * Parses a grant ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGrantArn(arn: string): {
-		partition: string;
-		account: string;
-		grantId: string;
-	} {
+	static parseGrantArn(arn: string): LicenseManagerGrantArnComponents {
 		const match = GrantArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid grant ARN: ${arn}`);
@@ -323,14 +464,7 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the license resource.
 	 */
-	static license(props: {
-		/** The LicenseId component of the ARN. */
-		readonly licenseId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static license(props: LicenseManagerLicenseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:license-manager::${props.account ?? "*"}:license:${props.licenseId}`;
 	}
 
@@ -345,11 +479,7 @@ export class LicenseManagerResources {
 	 * Parses a license ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseArn(arn: string): {
-		partition: string;
-		account: string;
-		licenseId: string;
-	} {
+	static parseLicenseArn(arn: string): LicenseManagerLicenseArnComponents {
 		const match = LicenseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license ARN: ${arn}`);
@@ -364,16 +494,9 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the license-asset-group resource.
 	 */
-	static licenseAssetGroup(props: {
-		/** The LicenseAssetGroupId component of the ARN. */
-		readonly licenseAssetGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static licenseAssetGroup(
+		props: LicenseManagerLicenseAssetGroupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:license-manager:${props.region ?? "*"}:${props.account ?? "*"}:license-asset-group:${props.licenseAssetGroupId}`;
 	}
 
@@ -388,12 +511,9 @@ export class LicenseManagerResources {
 	 * Parses a license-asset-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseAssetGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		licenseAssetGroupId: string;
-	} {
+	static parseLicenseAssetGroupArn(
+		arn: string,
+	): LicenseManagerLicenseAssetGroupArnComponents {
 		const match = LicenseAssetGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license-asset-group ARN: ${arn}`);
@@ -409,16 +529,9 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the license-asset-ruleset resource.
 	 */
-	static licenseAssetRuleset(props: {
-		/** The LicenseAssetRulesetId component of the ARN. */
-		readonly licenseAssetRulesetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static licenseAssetRuleset(
+		props: LicenseManagerLicenseAssetRulesetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:license-manager:${props.region ?? "*"}:${props.account ?? "*"}:license-asset-ruleset:${props.licenseAssetRulesetId}`;
 	}
 
@@ -433,12 +546,9 @@ export class LicenseManagerResources {
 	 * Parses a license-asset-ruleset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseAssetRulesetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		licenseAssetRulesetId: string;
-	} {
+	static parseLicenseAssetRulesetArn(
+		arn: string,
+	): LicenseManagerLicenseAssetRulesetArnComponents {
 		const match = LicenseAssetRulesetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license-asset-ruleset ARN: ${arn}`);
@@ -454,16 +564,9 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the license-configuration resource.
 	 */
-	static licenseConfiguration(props: {
-		/** The LicenseConfigurationId component of the ARN. */
-		readonly licenseConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static licenseConfiguration(
+		props: LicenseManagerLicenseConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:license-manager:${props.region ?? "*"}:${props.account ?? "*"}:license-configuration:${props.licenseConfigurationId}`;
 	}
 
@@ -478,12 +581,9 @@ export class LicenseManagerResources {
 	 * Parses a license-configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		licenseConfigurationId: string;
-	} {
+	static parseLicenseConfigurationArn(
+		arn: string,
+	): LicenseManagerLicenseConfigurationArnComponents {
 		const match = LicenseConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license-configuration ARN: ${arn}`);
@@ -499,16 +599,7 @@ export class LicenseManagerResources {
 	/**
 	 * Builds an ARN for the report-generator resource.
 	 */
-	static reportGenerator(props: {
-		/** The ReportGeneratorId component of the ARN. */
-		readonly reportGeneratorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reportGenerator(props: LicenseManagerReportGeneratorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:license-manager:${props.region ?? "*"}:${props.account ?? "*"}:report-generator:${props.reportGeneratorId}`;
 	}
 
@@ -523,12 +614,9 @@ export class LicenseManagerResources {
 	 * Parses a report-generator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReportGeneratorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reportGeneratorId: string;
-	} {
+	static parseReportGeneratorArn(
+		arn: string,
+	): LicenseManagerReportGeneratorArnComponents {
 		const match = ReportGeneratorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid report-generator ARN: ${arn}`);
@@ -547,232 +635,231 @@ export class LicenseManagerResources {
  */
 export class LicenseManagerOperations {
 	/** IAM actions required for the AcceptGrant API call. */
-	static readonly ACCEPT_GRANT: string[] = ["license-manager:AcceptGrant"];
+	static readonly AcceptGrant: string[] = ["license-manager:AcceptGrant"];
 	/** IAM actions required for the CheckInLicense API call. */
-	static readonly CHECK_IN_LICENSE: string[] = [
-		"license-manager:CheckInLicense",
-	];
+	static readonly CheckInLicense: string[] = ["license-manager:CheckInLicense"];
 	/** IAM actions required for the CheckoutBorrowLicense API call. */
-	static readonly CHECKOUT_BORROW_LICENSE: string[] = [
+	static readonly CheckoutBorrowLicense: string[] = [
 		"license-manager:CheckoutBorrowLicense",
 	];
 	/** IAM actions required for the CheckoutLicense API call. */
-	static readonly CHECKOUT_LICENSE: string[] = [
+	static readonly CheckoutLicense: string[] = [
 		"license-manager:CheckoutLicense",
 	];
 	/** IAM actions required for the CreateGrant API call. */
-	static readonly CREATE_GRANT: string[] = [
+	static readonly CreateGrant: string[] = [
 		"license-manager:CreateGrant",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateGrantVersion API call. */
-	static readonly CREATE_GRANT_VERSION: string[] = [
+	static readonly CreateGrantVersion: string[] = [
 		"license-manager:CreateGrantVersion",
 	];
 	/** IAM actions required for the CreateLicense API call. */
-	static readonly CREATE_LICENSE: string[] = [
+	static readonly CreateLicense: string[] = [
 		"license-manager:CreateLicense",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseAssetGroup API call. */
-	static readonly CREATE_LICENSE_ASSET_GROUP: string[] = [
+	static readonly CreateLicenseAssetGroup: string[] = [
 		"license-manager:CreateLicenseAssetGroup",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseAssetRuleset API call. */
-	static readonly CREATE_LICENSE_ASSET_RULESET: string[] = [
+	static readonly CreateLicenseAssetRuleset: string[] = [
 		"license-manager:CreateLicenseAssetRuleset",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseConfiguration API call. */
-	static readonly CREATE_LICENSE_CONFIGURATION: string[] = [
+	static readonly CreateLicenseConfiguration: string[] = [
 		"license-manager:CreateLicenseConfiguration",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseConversionTaskForResource API call. */
-	static readonly CREATE_LICENSE_CONVERSION_TASK_FOR_RESOURCE: string[] = [
+	static readonly CreateLicenseConversionTaskForResource: string[] = [
 		"license-manager:CreateLicenseConversionTaskForResource",
 	];
 	/** IAM actions required for the CreateLicenseManagerReportGenerator API call. */
-	static readonly CREATE_LICENSE_MANAGER_REPORT_GENERATOR: string[] = [
+	static readonly CreateLicenseManagerReportGenerator: string[] = [
 		"license-manager:CreateLicenseManagerReportGenerator",
 		"license-manager:TagResource",
 	];
 	/** IAM actions required for the CreateLicenseVersion API call. */
-	static readonly CREATE_LICENSE_VERSION: string[] = [
+	static readonly CreateLicenseVersion: string[] = [
 		"license-manager:CreateLicenseVersion",
 	];
 	/** IAM actions required for the CreateToken API call. */
-	static readonly CREATE_TOKEN: string[] = ["license-manager:CreateToken"];
+	static readonly CreateToken: string[] = ["license-manager:CreateToken"];
 	/** IAM actions required for the DeleteGrant API call. */
-	static readonly DELETE_GRANT: string[] = ["license-manager:DeleteGrant"];
+	static readonly DeleteGrant: string[] = ["license-manager:DeleteGrant"];
 	/** IAM actions required for the DeleteLicense API call. */
-	static readonly DELETE_LICENSE: string[] = ["license-manager:DeleteLicense"];
+	static readonly DeleteLicense: string[] = ["license-manager:DeleteLicense"];
 	/** IAM actions required for the DeleteLicenseAssetGroup API call. */
-	static readonly DELETE_LICENSE_ASSET_GROUP: string[] = [
+	static readonly DeleteLicenseAssetGroup: string[] = [
 		"license-manager:DeleteLicenseAssetGroup",
 	];
 	/** IAM actions required for the DeleteLicenseAssetRuleset API call. */
-	static readonly DELETE_LICENSE_ASSET_RULESET: string[] = [
+	static readonly DeleteLicenseAssetRuleset: string[] = [
 		"license-manager:DeleteLicenseAssetRuleset",
 	];
 	/** IAM actions required for the DeleteLicenseConfiguration API call. */
-	static readonly DELETE_LICENSE_CONFIGURATION: string[] = [
+	static readonly DeleteLicenseConfiguration: string[] = [
 		"license-manager:DeleteLicenseConfiguration",
 	];
 	/** IAM actions required for the DeleteLicenseManagerReportGenerator API call. */
-	static readonly DELETE_LICENSE_MANAGER_REPORT_GENERATOR: string[] = [
+	static readonly DeleteLicenseManagerReportGenerator: string[] = [
 		"license-manager:DeleteLicenseManagerReportGenerator",
 	];
 	/** IAM actions required for the DeleteToken API call. */
-	static readonly DELETE_TOKEN: string[] = ["license-manager:DeleteToken"];
+	static readonly DeleteToken: string[] = ["license-manager:DeleteToken"];
 	/** IAM actions required for the ExtendLicenseConsumption API call. */
-	static readonly EXTEND_LICENSE_CONSUMPTION: string[] = [
+	static readonly ExtendLicenseConsumption: string[] = [
 		"license-manager:ExtendLicenseConsumption",
 	];
 	/** IAM actions required for the GetAccessToken API call. */
-	static readonly GET_ACCESS_TOKEN: string[] = [
+	static readonly opGetAccessToken: string[] = [
 		"license-manager:GetAccessToken",
 	];
 	/** IAM actions required for the GetGrant API call. */
-	static readonly GET_GRANT: string[] = ["license-manager:GetGrant"];
+	static readonly opGetGrant: string[] = ["license-manager:GetGrant"];
 	/** IAM actions required for the GetLicense API call. */
-	static readonly GET_LICENSE: string[] = ["license-manager:GetLicense"];
+	static readonly opGetLicense: string[] = ["license-manager:GetLicense"];
 	/** IAM actions required for the GetLicenseAssetGroup API call. */
-	static readonly GET_LICENSE_ASSET_GROUP: string[] = [
+	static readonly opGetLicenseAssetGroup: string[] = [
 		"license-manager:GetLicenseAssetGroup",
 	];
 	/** IAM actions required for the GetLicenseAssetRuleset API call. */
-	static readonly GET_LICENSE_ASSET_RULESET: string[] = [
+	static readonly opGetLicenseAssetRuleset: string[] = [
 		"license-manager:GetLicenseAssetRuleset",
 	];
 	/** IAM actions required for the GetLicenseConfiguration API call. */
-	static readonly GET_LICENSE_CONFIGURATION: string[] = [
+	static readonly opGetLicenseConfiguration: string[] = [
 		"license-manager:GetLicenseConfiguration",
 	];
 	/** IAM actions required for the GetLicenseConversionTask API call. */
-	static readonly GET_LICENSE_CONVERSION_TASK: string[] = [
+	static readonly opGetLicenseConversionTask: string[] = [
 		"license-manager:GetLicenseConversionTask",
 	];
 	/** IAM actions required for the GetLicenseManagerReportGenerator API call. */
-	static readonly GET_LICENSE_MANAGER_REPORT_GENERATOR: string[] = [
+	static readonly opGetLicenseManagerReportGenerator: string[] = [
 		"license-manager:GetLicenseManagerReportGenerator",
 	];
 	/** IAM actions required for the GetLicenseUsage API call. */
-	static readonly GET_LICENSE_USAGE: string[] = [
+	static readonly opGetLicenseUsage: string[] = [
 		"license-manager:GetLicenseUsage",
 	];
 	/** IAM actions required for the GetServiceSettings API call. */
-	static readonly GET_SERVICE_SETTINGS: string[] = [
+	static readonly opGetServiceSettings: string[] = [
 		"license-manager:GetServiceSettings",
 	];
 	/** IAM actions required for the ListAssetsForLicenseAssetGroup API call. */
-	static readonly LIST_ASSETS_FOR_LICENSE_ASSET_GROUP: string[] = [
+	static readonly ListAssetsForLicenseAssetGroup: string[] = [
 		"license-manager:ListAssetsForLicenseAssetGroup",
 	];
 	/** IAM actions required for the ListAssociationsForLicenseConfiguration API call. */
-	static readonly LIST_ASSOCIATIONS_FOR_LICENSE_CONFIGURATION: string[] = [
+	static readonly ListAssociationsForLicenseConfiguration: string[] = [
 		"license-manager:ListAssociationsForLicenseConfiguration",
 	];
 	/** IAM actions required for the ListDistributedGrants API call. */
-	static readonly LIST_DISTRIBUTED_GRANTS: string[] = [
+	static readonly ListDistributedGrants: string[] = [
 		"license-manager:ListDistributedGrants",
 	];
 	/** IAM actions required for the ListFailuresForLicenseConfigurationOperations API call. */
-	static readonly LIST_FAILURES_FOR_LICENSE_CONFIGURATION_OPERATIONS: string[] =
-		["license-manager:ListFailuresForLicenseConfigurationOperations"];
+	static readonly ListFailuresForLicenseConfigurationOperations: string[] = [
+		"license-manager:ListFailuresForLicenseConfigurationOperations",
+	];
 	/** IAM actions required for the ListLicenseAssetGroups API call. */
-	static readonly LIST_LICENSE_ASSET_GROUPS: string[] = [
+	static readonly ListLicenseAssetGroups: string[] = [
 		"license-manager:ListLicenseAssetGroups",
 	];
 	/** IAM actions required for the ListLicenseAssetRulesets API call. */
-	static readonly LIST_LICENSE_ASSET_RULESETS: string[] = [
+	static readonly ListLicenseAssetRulesets: string[] = [
 		"license-manager:ListLicenseAssetRulesets",
 	];
 	/** IAM actions required for the ListLicenseConfigurations API call. */
-	static readonly LIST_LICENSE_CONFIGURATIONS: string[] = [
+	static readonly ListLicenseConfigurations: string[] = [
 		"license-manager:ListLicenseConfigurations",
 	];
 	/** IAM actions required for the ListLicenseConfigurationsForOrganization API call. */
-	static readonly LIST_LICENSE_CONFIGURATIONS_FOR_ORGANIZATION: string[] = [
+	static readonly ListLicenseConfigurationsForOrganization: string[] = [
 		"license-manager:ListLicenseConfigurationsForOrganization",
 	];
 	/** IAM actions required for the ListLicenseConversionTasks API call. */
-	static readonly LIST_LICENSE_CONVERSION_TASKS: string[] = [
+	static readonly ListLicenseConversionTasks: string[] = [
 		"license-manager:ListLicenseConversionTasks",
 	];
 	/** IAM actions required for the ListLicenseManagerReportGenerators API call. */
-	static readonly LIST_LICENSE_MANAGER_REPORT_GENERATORS: string[] = [
+	static readonly ListLicenseManagerReportGenerators: string[] = [
 		"license-manager:ListLicenseManagerReportGenerators",
 	];
 	/** IAM actions required for the ListLicenseSpecificationsForResource API call. */
-	static readonly LIST_LICENSE_SPECIFICATIONS_FOR_RESOURCE: string[] = [
+	static readonly ListLicenseSpecificationsForResource: string[] = [
 		"license-manager:ListLicenseSpecificationsForResource",
 	];
 	/** IAM actions required for the ListLicenseVersions API call. */
-	static readonly LIST_LICENSE_VERSIONS: string[] = [
+	static readonly ListLicenseVersions: string[] = [
 		"license-manager:ListLicenseVersions",
 	];
 	/** IAM actions required for the ListLicenses API call. */
-	static readonly LIST_LICENSES: string[] = ["license-manager:ListLicenses"];
+	static readonly ListLicenses: string[] = ["license-manager:ListLicenses"];
 	/** IAM actions required for the ListReceivedGrants API call. */
-	static readonly LIST_RECEIVED_GRANTS: string[] = [
+	static readonly ListReceivedGrants: string[] = [
 		"license-manager:ListReceivedGrants",
 	];
 	/** IAM actions required for the ListReceivedGrantsForOrganization API call. */
-	static readonly LIST_RECEIVED_GRANTS_FOR_ORGANIZATION: string[] = [
+	static readonly ListReceivedGrantsForOrganization: string[] = [
 		"license-manager:ListReceivedGrantsForOrganization",
 	];
 	/** IAM actions required for the ListReceivedLicenses API call. */
-	static readonly LIST_RECEIVED_LICENSES: string[] = [
+	static readonly ListReceivedLicenses: string[] = [
 		"license-manager:ListReceivedLicenses",
 	];
 	/** IAM actions required for the ListReceivedLicensesForOrganization API call. */
-	static readonly LIST_RECEIVED_LICENSES_FOR_ORGANIZATION: string[] = [
+	static readonly ListReceivedLicensesForOrganization: string[] = [
 		"license-manager:ListReceivedLicensesForOrganization",
 	];
 	/** IAM actions required for the ListResourceInventory API call. */
-	static readonly LIST_RESOURCE_INVENTORY: string[] = [
+	static readonly ListResourceInventory: string[] = [
 		"license-manager:ListResourceInventory",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"license-manager:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTokens API call. */
-	static readonly LIST_TOKENS: string[] = ["license-manager:ListTokens"];
+	static readonly ListTokens: string[] = ["license-manager:ListTokens"];
 	/** IAM actions required for the ListUsageForLicenseConfiguration API call. */
-	static readonly LIST_USAGE_FOR_LICENSE_CONFIGURATION: string[] = [
+	static readonly ListUsageForLicenseConfiguration: string[] = [
 		"license-manager:ListUsageForLicenseConfiguration",
 	];
 	/** IAM actions required for the RejectGrant API call. */
-	static readonly REJECT_GRANT: string[] = ["license-manager:RejectGrant"];
+	static readonly RejectGrant: string[] = ["license-manager:RejectGrant"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["license-manager:TagResource"];
+	static readonly TagResource: string[] = ["license-manager:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["license-manager:UntagResource"];
+	static readonly UntagResource: string[] = ["license-manager:UntagResource"];
 	/** IAM actions required for the UpdateLicenseAssetGroup API call. */
-	static readonly UPDATE_LICENSE_ASSET_GROUP: string[] = [
+	static readonly UpdateLicenseAssetGroup: string[] = [
 		"license-manager:UpdateLicenseAssetGroup",
 	];
 	/** IAM actions required for the UpdateLicenseAssetRuleset API call. */
-	static readonly UPDATE_LICENSE_ASSET_RULESET: string[] = [
+	static readonly UpdateLicenseAssetRuleset: string[] = [
 		"license-manager:UpdateLicenseAssetRuleset",
 	];
 	/** IAM actions required for the UpdateLicenseConfiguration API call. */
-	static readonly UPDATE_LICENSE_CONFIGURATION: string[] = [
+	static readonly UpdateLicenseConfiguration: string[] = [
 		"license-manager:UpdateLicenseConfiguration",
 	];
 	/** IAM actions required for the UpdateLicenseManagerReportGenerator API call. */
-	static readonly UPDATE_LICENSE_MANAGER_REPORT_GENERATOR: string[] = [
+	static readonly UpdateLicenseManagerReportGenerator: string[] = [
 		"license-manager:UpdateLicenseManagerReportGenerator",
 	];
 	/** IAM actions required for the UpdateLicenseSpecificationsForResource API call. */
-	static readonly UPDATE_LICENSE_SPECIFICATIONS_FOR_RESOURCE: string[] = [
+	static readonly UpdateLicenseSpecificationsForResource: string[] = [
 		"license-manager:UpdateLicenseSpecificationsForResource",
 	];
 	/** IAM actions required for the UpdateServiceSettings API call. */
-	static readonly UPDATE_SERVICE_SETTINGS: string[] = [
+	static readonly UpdateServiceSettings: string[] = [
 		"license-manager:UpdateServiceSettings",
 	];
 }
@@ -782,47 +869,49 @@ export class LicenseManagerOperations {
  */
 export class LicenseManagerConditions {
 	/** Condition keys applicable to the CreateGrant action. */
-	static readonly CREATE_GRANT_CONDITION_KEYS: string[] = [
+	static readonly CreateGrantConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicense action. */
-	static readonly CREATE_LICENSE_CONDITION_KEYS: string[] = [
+	static readonly CreateLicenseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicenseAssetGroup action. */
-	static readonly CREATE_LICENSE_ASSET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateLicenseAssetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicenseAssetRuleset action. */
-	static readonly CREATE_LICENSE_ASSET_RULESET_CONDITION_KEYS: string[] = [
+	static readonly CreateLicenseAssetRulesetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicenseConfiguration action. */
-	static readonly CREATE_LICENSE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateLicenseConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLicenseManagerReportGenerator action. */
-	static readonly CREATE_LICENSE_MANAGER_REPORT_GENERATOR_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateLicenseManagerReportGeneratorConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: license-manager:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "license-manager:ResourceTag/${TagKey}";
 
@@ -845,12 +934,5 @@ export class LicenseManagerConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
-	}
-
-	/**
-	 * Generates a condition block for `license-manager:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "license-manager:ResourceTag/${TagKey}": value } };
 	}
 }

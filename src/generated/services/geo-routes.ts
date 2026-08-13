@@ -13,37 +13,60 @@ export class GeoRoutesActions {
 	static readonly SERVICE_PREFIX = "geo-routes";
 
 	/** [Read] geo-routes:CalculateIsolines */
-	static readonly CALCULATE_ISOLINES = "geo-routes:CalculateIsolines";
+	static readonly CalculateIsolines = "geo-routes:CalculateIsolines";
 	/** [Read] geo-routes:CalculateRouteMatrix */
-	static readonly CALCULATE_ROUTE_MATRIX = "geo-routes:CalculateRouteMatrix";
+	static readonly CalculateRouteMatrix = "geo-routes:CalculateRouteMatrix";
 	/** [Read] geo-routes:CalculateRoutes */
-	static readonly CALCULATE_ROUTES = "geo-routes:CalculateRoutes";
+	static readonly CalculateRoutes = "geo-routes:CalculateRoutes";
 	/** [Read] geo-routes:OptimizeWaypoints */
-	static readonly OPTIMIZE_WAYPOINTS = "geo-routes:OptimizeWaypoints";
+	static readonly OptimizeWaypoints = "geo-routes:OptimizeWaypoints";
 	/** [Read] geo-routes:SnapToRoads */
-	static readonly SNAP_TO_ROADS = "geo-routes:SnapToRoads";
+	static readonly SnapToRoads = "geo-routes:SnapToRoads";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GeoRoutesActions.CALCULATE_ISOLINES,
-		GeoRoutesActions.CALCULATE_ROUTE_MATRIX,
-		GeoRoutesActions.CALCULATE_ROUTES,
-		GeoRoutesActions.OPTIMIZE_WAYPOINTS,
-		GeoRoutesActions.SNAP_TO_ROADS,
+	static readonly AllReadActions: string[] = [
+		GeoRoutesActions.CalculateIsolines,
+		GeoRoutesActions.CalculateRouteMatrix,
+		GeoRoutesActions.CalculateRoutes,
+		GeoRoutesActions.OptimizeWaypoints,
+		GeoRoutesActions.SnapToRoads,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):geo-routes:(?<region>[^:]*)::provider/default$",
-);
+/**
+ * Properties for building a provider ARN.
+ */
+export interface GeoRoutesProviderArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a provider ARN.
+ */
+export interface GeoRoutesProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const ProviderArnRegex =
+	/^arn:(?<partition>[^:]+):geo-routes:(?<region>[^:]*)::provider\/default$/;
 
 /**
  * ARN builders, validators, and parsers for geo-routes resources.
@@ -52,14 +75,7 @@ export class GeoRoutesResources {
 	/**
 	 * Builds an ARN for the provider resource.
 	 */
-	static provider(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static provider(props: GeoRoutesProviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:geo-routes:${props.region ?? "*"}::provider/default`;
 	}
 
@@ -74,11 +90,7 @@ export class GeoRoutesResources {
 	 * Parses a provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseProviderArn(arn: string): GeoRoutesProviderArnComponents {
 		const match = ProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid provider ARN: ${arn}`);
@@ -96,19 +108,19 @@ export class GeoRoutesResources {
  */
 export class GeoRoutesOperations {
 	/** IAM actions required for the CalculateIsolines API call. */
-	static readonly CALCULATE_ISOLINES: string[] = [
+	static readonly CalculateIsolines: string[] = [
 		"geo-routes:CalculateIsolines",
 	];
 	/** IAM actions required for the CalculateRouteMatrix API call. */
-	static readonly CALCULATE_ROUTE_MATRIX: string[] = [
+	static readonly CalculateRouteMatrix: string[] = [
 		"geo-routes:CalculateRouteMatrix",
 	];
 	/** IAM actions required for the CalculateRoutes API call. */
-	static readonly CALCULATE_ROUTES: string[] = ["geo-routes:CalculateRoutes"];
+	static readonly CalculateRoutes: string[] = ["geo-routes:CalculateRoutes"];
 	/** IAM actions required for the OptimizeWaypoints API call. */
-	static readonly OPTIMIZE_WAYPOINTS: string[] = [
+	static readonly OptimizeWaypoints: string[] = [
 		"geo-routes:OptimizeWaypoints",
 	];
 	/** IAM actions required for the SnapToRoads API call. */
-	static readonly SNAP_TO_ROADS: string[] = ["geo-routes:SnapToRoads"];
+	static readonly SnapToRoads: string[] = ["geo-routes:SnapToRoads"];
 }

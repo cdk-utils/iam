@@ -13,127 +13,235 @@ export class RolesanywhereActions {
 	static readonly SERVICE_PREFIX = "rolesanywhere";
 
 	/** [Write] rolesanywhere:CreateProfile */
-	static readonly CREATE_PROFILE = "rolesanywhere:CreateProfile";
+	static readonly CreateProfile = "rolesanywhere:CreateProfile";
 	/** [Write] rolesanywhere:CreateTrustAnchor */
-	static readonly CREATE_TRUST_ANCHOR = "rolesanywhere:CreateTrustAnchor";
+	static readonly CreateTrustAnchor = "rolesanywhere:CreateTrustAnchor";
 	/** [Write] rolesanywhere:DeleteAttributeMapping */
-	static readonly DELETE_ATTRIBUTE_MAPPING =
+	static readonly DeleteAttributeMapping =
 		"rolesanywhere:DeleteAttributeMapping";
 	/** [Write] rolesanywhere:DeleteCrl */
-	static readonly DELETE_CRL = "rolesanywhere:DeleteCrl";
+	static readonly DeleteCrl = "rolesanywhere:DeleteCrl";
 	/** [Write] rolesanywhere:DeleteProfile */
-	static readonly DELETE_PROFILE = "rolesanywhere:DeleteProfile";
+	static readonly DeleteProfile = "rolesanywhere:DeleteProfile";
 	/** [Write] rolesanywhere:DeleteTrustAnchor */
-	static readonly DELETE_TRUST_ANCHOR = "rolesanywhere:DeleteTrustAnchor";
+	static readonly DeleteTrustAnchor = "rolesanywhere:DeleteTrustAnchor";
 	/** [Write] rolesanywhere:DisableCrl */
-	static readonly DISABLE_CRL = "rolesanywhere:DisableCrl";
+	static readonly DisableCrl = "rolesanywhere:DisableCrl";
 	/** [Write] rolesanywhere:DisableProfile */
-	static readonly DISABLE_PROFILE = "rolesanywhere:DisableProfile";
+	static readonly DisableProfile = "rolesanywhere:DisableProfile";
 	/** [Write] rolesanywhere:DisableTrustAnchor */
-	static readonly DISABLE_TRUST_ANCHOR = "rolesanywhere:DisableTrustAnchor";
+	static readonly DisableTrustAnchor = "rolesanywhere:DisableTrustAnchor";
 	/** [Write] rolesanywhere:EnableCrl */
-	static readonly ENABLE_CRL = "rolesanywhere:EnableCrl";
+	static readonly EnableCrl = "rolesanywhere:EnableCrl";
 	/** [Write] rolesanywhere:EnableProfile */
-	static readonly ENABLE_PROFILE = "rolesanywhere:EnableProfile";
+	static readonly EnableProfile = "rolesanywhere:EnableProfile";
 	/** [Write] rolesanywhere:EnableTrustAnchor */
-	static readonly ENABLE_TRUST_ANCHOR = "rolesanywhere:EnableTrustAnchor";
+	static readonly EnableTrustAnchor = "rolesanywhere:EnableTrustAnchor";
 	/** [Read] rolesanywhere:GetCrl */
-	static readonly GET_CRL = "rolesanywhere:GetCrl";
+	static readonly actionGetCrl = "rolesanywhere:GetCrl";
 	/** [Read] rolesanywhere:GetProfile */
-	static readonly GET_PROFILE = "rolesanywhere:GetProfile";
+	static readonly actionGetProfile = "rolesanywhere:GetProfile";
 	/** [Read] rolesanywhere:GetSubject */
-	static readonly GET_SUBJECT = "rolesanywhere:GetSubject";
+	static readonly actionGetSubject = "rolesanywhere:GetSubject";
 	/** [Read] rolesanywhere:GetTrustAnchor */
-	static readonly GET_TRUST_ANCHOR = "rolesanywhere:GetTrustAnchor";
+	static readonly actionGetTrustAnchor = "rolesanywhere:GetTrustAnchor";
 	/** [Write] rolesanywhere:ImportCrl */
-	static readonly IMPORT_CRL = "rolesanywhere:ImportCrl";
+	static readonly ImportCrl = "rolesanywhere:ImportCrl";
 	/** [List] rolesanywhere:ListCrls */
-	static readonly LIST_CRLS = "rolesanywhere:ListCrls";
+	static readonly ListCrls = "rolesanywhere:ListCrls";
 	/** [List] rolesanywhere:ListProfiles */
-	static readonly LIST_PROFILES = "rolesanywhere:ListProfiles";
+	static readonly ListProfiles = "rolesanywhere:ListProfiles";
 	/** [List] rolesanywhere:ListSubjects */
-	static readonly LIST_SUBJECTS = "rolesanywhere:ListSubjects";
+	static readonly ListSubjects = "rolesanywhere:ListSubjects";
 	/** [List] rolesanywhere:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "rolesanywhere:ListTagsForResource";
+	static readonly ListTagsForResource = "rolesanywhere:ListTagsForResource";
 	/** [List] rolesanywhere:ListTrustAnchors */
-	static readonly LIST_TRUST_ANCHORS = "rolesanywhere:ListTrustAnchors";
+	static readonly ListTrustAnchors = "rolesanywhere:ListTrustAnchors";
 	/** [Write] rolesanywhere:PutAttributeMapping */
-	static readonly PUT_ATTRIBUTE_MAPPING = "rolesanywhere:PutAttributeMapping";
+	static readonly PutAttributeMapping = "rolesanywhere:PutAttributeMapping";
 	/** [Write] rolesanywhere:PutNotificationSettings */
-	static readonly PUT_NOTIFICATION_SETTINGS =
+	static readonly PutNotificationSettings =
 		"rolesanywhere:PutNotificationSettings";
 	/** [Write] rolesanywhere:ResetNotificationSettings */
-	static readonly RESET_NOTIFICATION_SETTINGS =
+	static readonly ResetNotificationSettings =
 		"rolesanywhere:ResetNotificationSettings";
 	/** [Tagging] rolesanywhere:TagResource */
-	static readonly TAG_RESOURCE = "rolesanywhere:TagResource";
+	static readonly TagResource = "rolesanywhere:TagResource";
 	/** [Tagging] rolesanywhere:UntagResource */
-	static readonly UNTAG_RESOURCE = "rolesanywhere:UntagResource";
+	static readonly UntagResource = "rolesanywhere:UntagResource";
 	/** [Write] rolesanywhere:UpdateCrl */
-	static readonly UPDATE_CRL = "rolesanywhere:UpdateCrl";
+	static readonly UpdateCrl = "rolesanywhere:UpdateCrl";
 	/** [Write] rolesanywhere:UpdateProfile */
-	static readonly UPDATE_PROFILE = "rolesanywhere:UpdateProfile";
+	static readonly UpdateProfile = "rolesanywhere:UpdateProfile";
 	/** [Write] rolesanywhere:UpdateTrustAnchor */
-	static readonly UPDATE_TRUST_ANCHOR = "rolesanywhere:UpdateTrustAnchor";
+	static readonly UpdateTrustAnchor = "rolesanywhere:UpdateTrustAnchor";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RolesanywhereActions.GET_CRL,
-		RolesanywhereActions.GET_PROFILE,
-		RolesanywhereActions.GET_SUBJECT,
-		RolesanywhereActions.GET_TRUST_ANCHOR,
+	static readonly AllReadActions: string[] = [
+		RolesanywhereActions.actionGetCrl,
+		RolesanywhereActions.actionGetProfile,
+		RolesanywhereActions.actionGetSubject,
+		RolesanywhereActions.actionGetTrustAnchor,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RolesanywhereActions.CREATE_PROFILE,
-		RolesanywhereActions.CREATE_TRUST_ANCHOR,
-		RolesanywhereActions.DELETE_ATTRIBUTE_MAPPING,
-		RolesanywhereActions.DELETE_CRL,
-		RolesanywhereActions.DELETE_PROFILE,
-		RolesanywhereActions.DELETE_TRUST_ANCHOR,
-		RolesanywhereActions.DISABLE_CRL,
-		RolesanywhereActions.DISABLE_PROFILE,
-		RolesanywhereActions.DISABLE_TRUST_ANCHOR,
-		RolesanywhereActions.ENABLE_CRL,
-		RolesanywhereActions.ENABLE_PROFILE,
-		RolesanywhereActions.ENABLE_TRUST_ANCHOR,
-		RolesanywhereActions.IMPORT_CRL,
-		RolesanywhereActions.PUT_ATTRIBUTE_MAPPING,
-		RolesanywhereActions.PUT_NOTIFICATION_SETTINGS,
-		RolesanywhereActions.RESET_NOTIFICATION_SETTINGS,
-		RolesanywhereActions.UPDATE_CRL,
-		RolesanywhereActions.UPDATE_PROFILE,
-		RolesanywhereActions.UPDATE_TRUST_ANCHOR,
+	static readonly AllWriteActions: string[] = [
+		RolesanywhereActions.CreateProfile,
+		RolesanywhereActions.CreateTrustAnchor,
+		RolesanywhereActions.DeleteAttributeMapping,
+		RolesanywhereActions.DeleteCrl,
+		RolesanywhereActions.DeleteProfile,
+		RolesanywhereActions.DeleteTrustAnchor,
+		RolesanywhereActions.DisableCrl,
+		RolesanywhereActions.DisableProfile,
+		RolesanywhereActions.DisableTrustAnchor,
+		RolesanywhereActions.EnableCrl,
+		RolesanywhereActions.EnableProfile,
+		RolesanywhereActions.EnableTrustAnchor,
+		RolesanywhereActions.ImportCrl,
+		RolesanywhereActions.PutAttributeMapping,
+		RolesanywhereActions.PutNotificationSettings,
+		RolesanywhereActions.ResetNotificationSettings,
+		RolesanywhereActions.UpdateCrl,
+		RolesanywhereActions.UpdateProfile,
+		RolesanywhereActions.UpdateTrustAnchor,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		RolesanywhereActions.LIST_CRLS,
-		RolesanywhereActions.LIST_PROFILES,
-		RolesanywhereActions.LIST_SUBJECTS,
-		RolesanywhereActions.LIST_TAGS_FOR_RESOURCE,
-		RolesanywhereActions.LIST_TRUST_ANCHORS,
+	static readonly AllListActions: string[] = [
+		RolesanywhereActions.ListCrls,
+		RolesanywhereActions.ListProfiles,
+		RolesanywhereActions.ListSubjects,
+		RolesanywhereActions.ListTagsForResource,
+		RolesanywhereActions.ListTrustAnchors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RolesanywhereActions.TAG_RESOURCE,
-		RolesanywhereActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RolesanywhereActions.TagResource,
+		RolesanywhereActions.UntagResource,
 	];
 }
 
-const CrlArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):crl/(?<crlId>[^:/?]+)$",
-);
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):profile/(?<profileId>[^:/?]+)$",
-);
-const SubjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):subject/(?<subjectId>[^:/?]+)$",
-);
-const TrustAnchorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):trust-anchor/(?<trustAnchorId>[^:/?]+)$",
-);
+/**
+ * Properties for building a crl ARN.
+ */
+export interface RolesanywhereCrlArnProps {
+	/** The CrlId component of the ARN. */
+	readonly crlId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a crl ARN.
+ */
+export interface RolesanywhereCrlArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CrlId component. */
+	readonly crlId: string;
+}
+
+/**
+ * Properties for building a profile ARN.
+ */
+export interface RolesanywhereProfileArnProps {
+	/** The ProfileId component of the ARN. */
+	readonly profileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface RolesanywhereProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfileId component. */
+	readonly profileId: string;
+}
+
+/**
+ * Properties for building a subject ARN.
+ */
+export interface RolesanywhereSubjectArnProps {
+	/** The SubjectId component of the ARN. */
+	readonly subjectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subject ARN.
+ */
+export interface RolesanywhereSubjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubjectId component. */
+	readonly subjectId: string;
+}
+
+/**
+ * Properties for building a trust-anchor ARN.
+ */
+export interface RolesanywhereTrustAnchorArnProps {
+	/** The TrustAnchorId component of the ARN. */
+	readonly trustAnchorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trust-anchor ARN.
+ */
+export interface RolesanywhereTrustAnchorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrustAnchorId component. */
+	readonly trustAnchorId: string;
+}
+
+const CrlArnRegex =
+	/^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):crl\/(?<crlId>[^:/?]+)$/;
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<profileId>[^:/?]+)$/;
+const SubjectArnRegex =
+	/^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):subject\/(?<subjectId>[^:/?]+)$/;
+const TrustAnchorArnRegex =
+	/^arn:(?<partition>[^:]+):rolesanywhere:(?<region>[^:]*):(?<account>[^:]*):trust-anchor\/(?<trustAnchorId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rolesanywhere resources.
@@ -142,16 +250,7 @@ export class RolesanywhereResources {
 	/**
 	 * Builds an ARN for the crl resource.
 	 */
-	static crl(props: {
-		/** The CrlId component of the ARN. */
-		readonly crlId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static crl(props: RolesanywhereCrlArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rolesanywhere:${props.region ?? "*"}:${props.account ?? "*"}:crl/${props.crlId}`;
 	}
 
@@ -166,12 +265,7 @@ export class RolesanywhereResources {
 	 * Parses a crl ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCrlArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		crlId: string;
-	} {
+	static parseCrlArn(arn: string): RolesanywhereCrlArnComponents {
 		const match = CrlArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid crl ARN: ${arn}`);
@@ -187,16 +281,7 @@ export class RolesanywhereResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The ProfileId component of the ARN. */
-		readonly profileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: RolesanywhereProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rolesanywhere:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.profileId}`;
 	}
 
@@ -211,12 +296,7 @@ export class RolesanywhereResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profileId: string;
-	} {
+	static parseProfileArn(arn: string): RolesanywhereProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -232,16 +312,7 @@ export class RolesanywhereResources {
 	/**
 	 * Builds an ARN for the subject resource.
 	 */
-	static subject(props: {
-		/** The SubjectId component of the ARN. */
-		readonly subjectId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subject(props: RolesanywhereSubjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rolesanywhere:${props.region ?? "*"}:${props.account ?? "*"}:subject/${props.subjectId}`;
 	}
 
@@ -256,12 +327,7 @@ export class RolesanywhereResources {
 	 * Parses a subject ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subjectId: string;
-	} {
+	static parseSubjectArn(arn: string): RolesanywhereSubjectArnComponents {
 		const match = SubjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subject ARN: ${arn}`);
@@ -277,16 +343,7 @@ export class RolesanywhereResources {
 	/**
 	 * Builds an ARN for the trust-anchor resource.
 	 */
-	static trustAnchor(props: {
-		/** The TrustAnchorId component of the ARN. */
-		readonly trustAnchorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trustAnchor(props: RolesanywhereTrustAnchorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rolesanywhere:${props.region ?? "*"}:${props.account ?? "*"}:trust-anchor/${props.trustAnchorId}`;
 	}
 
@@ -301,12 +358,9 @@ export class RolesanywhereResources {
 	 * Parses a trust-anchor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrustAnchorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trustAnchorId: string;
-	} {
+	static parseTrustAnchorArn(
+		arn: string,
+	): RolesanywhereTrustAnchorArnComponents {
 		const match = TrustAnchorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trust-anchor ARN: ${arn}`);
@@ -325,99 +379,99 @@ export class RolesanywhereResources {
  */
 export class RolesanywhereOperations {
 	/** IAM actions required for the CreateProfile API call. */
-	static readonly CREATE_PROFILE: string[] = [
+	static readonly CreateProfile: string[] = [
 		"rolesanywhere:CreateProfile",
 		"iam:PassRole",
 		"rolesanywhere:TagResource",
 	];
 	/** IAM actions required for the CreateTrustAnchor API call. */
-	static readonly CREATE_TRUST_ANCHOR: string[] = [
+	static readonly CreateTrustAnchor: string[] = [
 		"rolesanywhere:CreateTrustAnchor",
 		"rolesanywhere:TagResource",
 	];
 	/** IAM actions required for the DeleteAttributeMapping API call. */
-	static readonly DELETE_ATTRIBUTE_MAPPING: string[] = [
+	static readonly DeleteAttributeMapping: string[] = [
 		"rolesanywhere:DeleteAttributeMapping",
 	];
 	/** IAM actions required for the DeleteCrl API call. */
-	static readonly DELETE_CRL: string[] = ["rolesanywhere:DeleteCrl"];
+	static readonly DeleteCrl: string[] = ["rolesanywhere:DeleteCrl"];
 	/** IAM actions required for the DeleteProfile API call. */
-	static readonly DELETE_PROFILE: string[] = ["rolesanywhere:DeleteProfile"];
+	static readonly DeleteProfile: string[] = ["rolesanywhere:DeleteProfile"];
 	/** IAM actions required for the DeleteTrustAnchor API call. */
-	static readonly DELETE_TRUST_ANCHOR: string[] = [
+	static readonly DeleteTrustAnchor: string[] = [
 		"rolesanywhere:DeleteTrustAnchor",
 	];
 	/** IAM actions required for the DisableCrl API call. */
-	static readonly DISABLE_CRL: string[] = ["rolesanywhere:DisableCrl"];
+	static readonly DisableCrl: string[] = ["rolesanywhere:DisableCrl"];
 	/** IAM actions required for the DisableProfile API call. */
-	static readonly DISABLE_PROFILE: string[] = ["rolesanywhere:DisableProfile"];
+	static readonly DisableProfile: string[] = ["rolesanywhere:DisableProfile"];
 	/** IAM actions required for the DisableTrustAnchor API call. */
-	static readonly DISABLE_TRUST_ANCHOR: string[] = [
+	static readonly DisableTrustAnchor: string[] = [
 		"rolesanywhere:DisableTrustAnchor",
 	];
 	/** IAM actions required for the EnableCrl API call. */
-	static readonly ENABLE_CRL: string[] = ["rolesanywhere:EnableCrl"];
+	static readonly EnableCrl: string[] = ["rolesanywhere:EnableCrl"];
 	/** IAM actions required for the EnableProfile API call. */
-	static readonly ENABLE_PROFILE: string[] = [
+	static readonly EnableProfile: string[] = [
 		"rolesanywhere:EnableProfile",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the EnableTrustAnchor API call. */
-	static readonly ENABLE_TRUST_ANCHOR: string[] = [
+	static readonly EnableTrustAnchor: string[] = [
 		"rolesanywhere:EnableTrustAnchor",
 	];
 	/** IAM actions required for the GetCrl API call. */
-	static readonly GET_CRL: string[] = ["rolesanywhere:GetCrl"];
+	static readonly opGetCrl: string[] = ["rolesanywhere:GetCrl"];
 	/** IAM actions required for the GetProfile API call. */
-	static readonly GET_PROFILE: string[] = ["rolesanywhere:GetProfile"];
+	static readonly opGetProfile: string[] = ["rolesanywhere:GetProfile"];
 	/** IAM actions required for the GetSubject API call. */
-	static readonly GET_SUBJECT: string[] = ["rolesanywhere:GetSubject"];
+	static readonly opGetSubject: string[] = ["rolesanywhere:GetSubject"];
 	/** IAM actions required for the GetTrustAnchor API call. */
-	static readonly GET_TRUST_ANCHOR: string[] = ["rolesanywhere:GetTrustAnchor"];
+	static readonly opGetTrustAnchor: string[] = ["rolesanywhere:GetTrustAnchor"];
 	/** IAM actions required for the ImportCrl API call. */
-	static readonly IMPORT_CRL: string[] = [
+	static readonly ImportCrl: string[] = [
 		"rolesanywhere:ImportCrl",
 		"rolesanywhere:TagResource",
 	];
 	/** IAM actions required for the ListCrls API call. */
-	static readonly LIST_CRLS: string[] = ["rolesanywhere:ListCrls"];
+	static readonly ListCrls: string[] = ["rolesanywhere:ListCrls"];
 	/** IAM actions required for the ListProfiles API call. */
-	static readonly LIST_PROFILES: string[] = ["rolesanywhere:ListProfiles"];
+	static readonly ListProfiles: string[] = ["rolesanywhere:ListProfiles"];
 	/** IAM actions required for the ListSubjects API call. */
-	static readonly LIST_SUBJECTS: string[] = ["rolesanywhere:ListSubjects"];
+	static readonly ListSubjects: string[] = ["rolesanywhere:ListSubjects"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"rolesanywhere:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTrustAnchors API call. */
-	static readonly LIST_TRUST_ANCHORS: string[] = [
+	static readonly ListTrustAnchors: string[] = [
 		"rolesanywhere:ListTrustAnchors",
 	];
 	/** IAM actions required for the PutAttributeMapping API call. */
-	static readonly PUT_ATTRIBUTE_MAPPING: string[] = [
+	static readonly PutAttributeMapping: string[] = [
 		"rolesanywhere:PutAttributeMapping",
 	];
 	/** IAM actions required for the PutNotificationSettings API call. */
-	static readonly PUT_NOTIFICATION_SETTINGS: string[] = [
+	static readonly PutNotificationSettings: string[] = [
 		"rolesanywhere:PutNotificationSettings",
 	];
 	/** IAM actions required for the ResetNotificationSettings API call. */
-	static readonly RESET_NOTIFICATION_SETTINGS: string[] = [
+	static readonly ResetNotificationSettings: string[] = [
 		"rolesanywhere:ResetNotificationSettings",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["rolesanywhere:TagResource"];
+	static readonly TagResource: string[] = ["rolesanywhere:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["rolesanywhere:UntagResource"];
+	static readonly UntagResource: string[] = ["rolesanywhere:UntagResource"];
 	/** IAM actions required for the UpdateCrl API call. */
-	static readonly UPDATE_CRL: string[] = ["rolesanywhere:UpdateCrl"];
+	static readonly UpdateCrl: string[] = ["rolesanywhere:UpdateCrl"];
 	/** IAM actions required for the UpdateProfile API call. */
-	static readonly UPDATE_PROFILE: string[] = [
+	static readonly UpdateProfile: string[] = [
 		"iam:PassRole",
 		"rolesanywhere:UpdateProfile",
 	];
 	/** IAM actions required for the UpdateTrustAnchor API call. */
-	static readonly UPDATE_TRUST_ANCHOR: string[] = [
+	static readonly UpdateTrustAnchor: string[] = [
 		"rolesanywhere:UpdateTrustAnchor",
 	];
 }
@@ -427,34 +481,34 @@ export class RolesanywhereOperations {
  */
 export class RolesanywhereConditions {
 	/** Condition keys applicable to the CreateProfile action. */
-	static readonly CREATE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrustAnchor action. */
-	static readonly CREATE_TRUST_ANCHOR_CONDITION_KEYS: string[] = [
+	static readonly CreateTrustAnchorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ImportCrl action. */
-	static readonly IMPORT_CRL_CONDITION_KEYS: string[] = [
+	static readonly ImportCrlConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

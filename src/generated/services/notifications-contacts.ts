@@ -13,58 +13,82 @@ export class NotificationsContactsActions {
 	static readonly SERVICE_PREFIX = "notifications-contacts";
 
 	/** [Write] notifications-contacts:ActivateEmailContact */
-	static readonly ACTIVATE_EMAIL_CONTACT =
+	static readonly ActivateEmailContact =
 		"notifications-contacts:ActivateEmailContact";
 	/** [Write] notifications-contacts:CreateEmailContact */
-	static readonly CREATE_EMAIL_CONTACT =
+	static readonly CreateEmailContact =
 		"notifications-contacts:CreateEmailContact";
 	/** [Write] notifications-contacts:DeleteEmailContact */
-	static readonly DELETE_EMAIL_CONTACT =
+	static readonly DeleteEmailContact =
 		"notifications-contacts:DeleteEmailContact";
 	/** [Read] notifications-contacts:GetEmailContact */
-	static readonly GET_EMAIL_CONTACT = "notifications-contacts:GetEmailContact";
+	static readonly actionGetEmailContact =
+		"notifications-contacts:GetEmailContact";
 	/** [List] notifications-contacts:ListEmailContacts */
-	static readonly LIST_EMAIL_CONTACTS =
+	static readonly ListEmailContacts =
 		"notifications-contacts:ListEmailContacts";
 	/** [Read] notifications-contacts:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"notifications-contacts:ListTagsForResource";
 	/** [Write] notifications-contacts:SendActivationCode */
-	static readonly SEND_ACTIVATION_CODE =
+	static readonly SendActivationCode =
 		"notifications-contacts:SendActivationCode";
 	/** [Tagging] notifications-contacts:TagResource */
-	static readonly TAG_RESOURCE = "notifications-contacts:TagResource";
+	static readonly TagResource = "notifications-contacts:TagResource";
 	/** [Tagging] notifications-contacts:UntagResource */
-	static readonly UNTAG_RESOURCE = "notifications-contacts:UntagResource";
+	static readonly UntagResource = "notifications-contacts:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NotificationsContactsActions.GET_EMAIL_CONTACT,
-		NotificationsContactsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		NotificationsContactsActions.actionGetEmailContact,
+		NotificationsContactsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NotificationsContactsActions.ACTIVATE_EMAIL_CONTACT,
-		NotificationsContactsActions.CREATE_EMAIL_CONTACT,
-		NotificationsContactsActions.DELETE_EMAIL_CONTACT,
-		NotificationsContactsActions.SEND_ACTIVATION_CODE,
+	static readonly AllWriteActions: string[] = [
+		NotificationsContactsActions.ActivateEmailContact,
+		NotificationsContactsActions.CreateEmailContact,
+		NotificationsContactsActions.DeleteEmailContact,
+		NotificationsContactsActions.SendActivationCode,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NotificationsContactsActions.LIST_EMAIL_CONTACTS,
+	static readonly AllListActions: string[] = [
+		NotificationsContactsActions.ListEmailContacts,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		NotificationsContactsActions.TAG_RESOURCE,
-		NotificationsContactsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		NotificationsContactsActions.TagResource,
+		NotificationsContactsActions.UntagResource,
 	];
 }
 
-const EmailContactResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):notifications-contacts::(?<account>[^:]*):emailcontact/(?<emailContactId>[^:/?]+)$",
-);
+/**
+ * Properties for building a EmailContactResource ARN.
+ */
+export interface NotificationsContactsEmailContactResourceArnProps {
+	/** The EmailContactId component of the ARN. */
+	readonly emailContactId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a EmailContactResource ARN.
+ */
+export interface NotificationsContactsEmailContactResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EmailContactId component. */
+	readonly emailContactId: string;
+}
+
+const EmailContactResourceArnRegex =
+	/^arn:(?<partition>[^:]+):notifications-contacts::(?<account>[^:]*):emailcontact\/(?<emailContactId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for notifications-contacts resources.
@@ -73,14 +97,9 @@ export class NotificationsContactsResources {
 	/**
 	 * Builds an ARN for the EmailContactResource resource.
 	 */
-	static emailContactResource(props: {
-		/** The EmailContactId component of the ARN. */
-		readonly emailContactId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static emailContactResource(
+		props: NotificationsContactsEmailContactResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:notifications-contacts::${props.account ?? "*"}:emailcontact/${props.emailContactId}`;
 	}
 
@@ -95,11 +114,9 @@ export class NotificationsContactsResources {
 	 * Parses a EmailContactResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEmailContactResourceArn(arn: string): {
-		partition: string;
-		account: string;
-		emailContactId: string;
-	} {
+	static parseEmailContactResourceArn(
+		arn: string,
+	): NotificationsContactsEmailContactResourceArnComponents {
 		const match = EmailContactResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid EmailContactResource ARN: ${arn}`);
@@ -117,40 +134,40 @@ export class NotificationsContactsResources {
  */
 export class NotificationsContactsOperations {
 	/** IAM actions required for the ActivateEmailContact API call. */
-	static readonly ACTIVATE_EMAIL_CONTACT: string[] = [
+	static readonly ActivateEmailContact: string[] = [
 		"notifications-contacts:ActivateEmailContact",
 	];
 	/** IAM actions required for the CreateEmailContact API call. */
-	static readonly CREATE_EMAIL_CONTACT: string[] = [
+	static readonly CreateEmailContact: string[] = [
 		"notifications-contacts:CreateEmailContact",
 		"notifications-contacts:TagResource",
 	];
 	/** IAM actions required for the DeleteEmailContact API call. */
-	static readonly DELETE_EMAIL_CONTACT: string[] = [
+	static readonly DeleteEmailContact: string[] = [
 		"notifications-contacts:DeleteEmailContact",
 	];
 	/** IAM actions required for the GetEmailContact API call. */
-	static readonly GET_EMAIL_CONTACT: string[] = [
+	static readonly opGetEmailContact: string[] = [
 		"notifications-contacts:GetEmailContact",
 	];
 	/** IAM actions required for the ListEmailContacts API call. */
-	static readonly LIST_EMAIL_CONTACTS: string[] = [
+	static readonly ListEmailContacts: string[] = [
 		"notifications-contacts:ListEmailContacts",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"notifications-contacts:ListTagsForResource",
 	];
 	/** IAM actions required for the SendActivationCode API call. */
-	static readonly SEND_ACTIVATION_CODE: string[] = [
+	static readonly SendActivationCode: string[] = [
 		"notifications-contacts:SendActivationCode",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"notifications-contacts:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"notifications-contacts:UntagResource",
 	];
 }
@@ -160,25 +177,25 @@ export class NotificationsContactsOperations {
  */
 export class NotificationsContactsConditions {
 	/** Condition keys applicable to the CreateEmailContact action. */
-	static readonly CREATE_EMAIL_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly CreateEmailContactConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

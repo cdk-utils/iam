@@ -13,73 +13,94 @@ export class PurchaseOrdersActions {
 	static readonly SERVICE_PREFIX = "purchase-orders";
 
 	/** [Write] purchase-orders:AddPurchaseOrder */
-	static readonly ADD_PURCHASE_ORDER = "purchase-orders:AddPurchaseOrder";
+	static readonly AddPurchaseOrder = "purchase-orders:AddPurchaseOrder";
 	/** [Write] purchase-orders:DeletePurchaseOrder */
-	static readonly DELETE_PURCHASE_ORDER = "purchase-orders:DeletePurchaseOrder";
+	static readonly DeletePurchaseOrder = "purchase-orders:DeletePurchaseOrder";
 	/** [Read] purchase-orders:GetConsoleActionSetEnforced */
-	static readonly GET_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly actionGetConsoleActionSetEnforced =
 		"purchase-orders:GetConsoleActionSetEnforced";
 	/** [Read] purchase-orders:GetPurchaseOrder */
-	static readonly GET_PURCHASE_ORDER = "purchase-orders:GetPurchaseOrder";
+	static readonly actionGetPurchaseOrder = "purchase-orders:GetPurchaseOrder";
 	/** [List] purchase-orders:ListPurchaseOrderInvoices */
-	static readonly LIST_PURCHASE_ORDER_INVOICES =
+	static readonly ListPurchaseOrderInvoices =
 		"purchase-orders:ListPurchaseOrderInvoices";
 	/** [List] purchase-orders:ListPurchaseOrders */
-	static readonly LIST_PURCHASE_ORDERS = "purchase-orders:ListPurchaseOrders";
+	static readonly ListPurchaseOrders = "purchase-orders:ListPurchaseOrders";
 	/** [Read] purchase-orders:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"purchase-orders:ListTagsForResource";
+	static readonly ListTagsForResource = "purchase-orders:ListTagsForResource";
 	/** [Write] purchase-orders:ModifyPurchaseOrders */
-	static readonly MODIFY_PURCHASE_ORDERS =
-		"purchase-orders:ModifyPurchaseOrders";
+	static readonly ModifyPurchaseOrders = "purchase-orders:ModifyPurchaseOrders";
 	/** [Tagging] purchase-orders:TagResource */
-	static readonly TAG_RESOURCE = "purchase-orders:TagResource";
+	static readonly TagResource = "purchase-orders:TagResource";
 	/** [Tagging] purchase-orders:UntagResource */
-	static readonly UNTAG_RESOURCE = "purchase-orders:UntagResource";
+	static readonly UntagResource = "purchase-orders:UntagResource";
 	/** [Write] purchase-orders:UpdateConsoleActionSetEnforced */
-	static readonly UPDATE_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly UpdateConsoleActionSetEnforced =
 		"purchase-orders:UpdateConsoleActionSetEnforced";
 	/** [Write] purchase-orders:UpdatePurchaseOrder */
-	static readonly UPDATE_PURCHASE_ORDER = "purchase-orders:UpdatePurchaseOrder";
+	static readonly UpdatePurchaseOrder = "purchase-orders:UpdatePurchaseOrder";
 	/** [Write] purchase-orders:UpdatePurchaseOrderStatus */
-	static readonly UPDATE_PURCHASE_ORDER_STATUS =
+	static readonly UpdatePurchaseOrderStatus =
 		"purchase-orders:UpdatePurchaseOrderStatus";
 	/** [Read] purchase-orders:ViewPurchaseOrders */
-	static readonly VIEW_PURCHASE_ORDERS = "purchase-orders:ViewPurchaseOrders";
+	static readonly ViewPurchaseOrders = "purchase-orders:ViewPurchaseOrders";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PurchaseOrdersActions.GET_CONSOLE_ACTION_SET_ENFORCED,
-		PurchaseOrdersActions.GET_PURCHASE_ORDER,
-		PurchaseOrdersActions.LIST_TAGS_FOR_RESOURCE,
-		PurchaseOrdersActions.VIEW_PURCHASE_ORDERS,
+	static readonly AllReadActions: string[] = [
+		PurchaseOrdersActions.actionGetConsoleActionSetEnforced,
+		PurchaseOrdersActions.actionGetPurchaseOrder,
+		PurchaseOrdersActions.ListTagsForResource,
+		PurchaseOrdersActions.ViewPurchaseOrders,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PurchaseOrdersActions.ADD_PURCHASE_ORDER,
-		PurchaseOrdersActions.DELETE_PURCHASE_ORDER,
-		PurchaseOrdersActions.MODIFY_PURCHASE_ORDERS,
-		PurchaseOrdersActions.UPDATE_CONSOLE_ACTION_SET_ENFORCED,
-		PurchaseOrdersActions.UPDATE_PURCHASE_ORDER,
-		PurchaseOrdersActions.UPDATE_PURCHASE_ORDER_STATUS,
+	static readonly AllWriteActions: string[] = [
+		PurchaseOrdersActions.AddPurchaseOrder,
+		PurchaseOrdersActions.DeletePurchaseOrder,
+		PurchaseOrdersActions.ModifyPurchaseOrders,
+		PurchaseOrdersActions.UpdateConsoleActionSetEnforced,
+		PurchaseOrdersActions.UpdatePurchaseOrder,
+		PurchaseOrdersActions.UpdatePurchaseOrderStatus,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PurchaseOrdersActions.LIST_PURCHASE_ORDER_INVOICES,
-		PurchaseOrdersActions.LIST_PURCHASE_ORDERS,
+	static readonly AllListActions: string[] = [
+		PurchaseOrdersActions.ListPurchaseOrderInvoices,
+		PurchaseOrdersActions.ListPurchaseOrders,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PurchaseOrdersActions.TAG_RESOURCE,
-		PurchaseOrdersActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PurchaseOrdersActions.TagResource,
+		PurchaseOrdersActions.UntagResource,
 	];
 }
 
-const PurchaseOrderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):purchase-orders::(?<account>[^:]*):purchase-order/(?<resourceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a purchase-order ARN.
+ */
+export interface PurchaseOrdersPurchaseOrderArnProps {
+	/** The ResourceName component of the ARN. */
+	readonly resourceName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a purchase-order ARN.
+ */
+export interface PurchaseOrdersPurchaseOrderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceName component. */
+	readonly resourceName: string;
+}
+
+const PurchaseOrderArnRegex =
+	/^arn:(?<partition>[^:]+):purchase-orders::(?<account>[^:]*):purchase-order\/(?<resourceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for purchase-orders resources.
@@ -88,14 +109,7 @@ export class PurchaseOrdersResources {
 	/**
 	 * Builds an ARN for the purchase-order resource.
 	 */
-	static purchaseOrder(props: {
-		/** The ResourceName component of the ARN. */
-		readonly resourceName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static purchaseOrder(props: PurchaseOrdersPurchaseOrderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:purchase-orders::${props.account ?? "*"}:purchase-order/${props.resourceName}`;
 	}
 
@@ -110,11 +124,9 @@ export class PurchaseOrdersResources {
 	 * Parses a purchase-order ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePurchaseOrderArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceName: string;
-	} {
+	static parsePurchaseOrderArn(
+		arn: string,
+	): PurchaseOrdersPurchaseOrderArnComponents {
 		const match = PurchaseOrderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid purchase-order ARN: ${arn}`);
@@ -132,64 +144,64 @@ export class PurchaseOrdersResources {
  */
 export class PurchaseOrdersConditions {
 	/** Condition keys applicable to the AddPurchaseOrder action. */
-	static readonly ADD_PURCHASE_ORDER_CONDITION_KEYS: string[] = [
+	static readonly AddPurchaseOrderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeletePurchaseOrder action. */
-	static readonly DELETE_PURCHASE_ORDER_CONDITION_KEYS: string[] = [
+	static readonly DeletePurchaseOrderConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetPurchaseOrder action. */
-	static readonly GET_PURCHASE_ORDER_CONDITION_KEYS: string[] = [
+	static readonly actionGetPurchaseOrderConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListPurchaseOrderInvoices action. */
-	static readonly LIST_PURCHASE_ORDER_INVOICES_CONDITION_KEYS: string[] = [
+	static readonly ListPurchaseOrderInvoicesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyPurchaseOrders action. */
-	static readonly MODIFY_PURCHASE_ORDERS_CONDITION_KEYS: string[] = [
+	static readonly ModifyPurchaseOrdersConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePurchaseOrder action. */
-	static readonly UPDATE_PURCHASE_ORDER_CONDITION_KEYS: string[] = [
+	static readonly UpdatePurchaseOrderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePurchaseOrderStatus action. */
-	static readonly UPDATE_PURCHASE_ORDER_STATUS_CONDITION_KEYS: string[] = [
+	static readonly UpdatePurchaseOrderStatusConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ViewPurchaseOrders action. */
-	static readonly VIEW_PURCHASE_ORDERS_CONDITION_KEYS: string[] = [
+	static readonly ViewPurchaseOrdersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

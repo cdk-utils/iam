@@ -13,72 +13,98 @@ export class ElementalAppliancesSoftwareActions {
 	static readonly SERVICE_PREFIX = "elemental-appliances-software";
 
 	/** [Write] elemental-appliances-software:CompleteUpload */
-	static readonly COMPLETE_UPLOAD =
+	static readonly CompleteUpload =
 		"elemental-appliances-software:CompleteUpload";
 	/** [Write] elemental-appliances-software:CreateOrderV1 */
-	static readonly CREATE_ORDER_V1 =
-		"elemental-appliances-software:CreateOrderV1";
+	static readonly CreateOrderV1 = "elemental-appliances-software:CreateOrderV1";
 	/** [Write] elemental-appliances-software:CreateQuote */
-	static readonly CREATE_QUOTE = "elemental-appliances-software:CreateQuote";
+	static readonly CreateQuote = "elemental-appliances-software:CreateQuote";
 	/** [Read] elemental-appliances-software:GetAvsCorrectAddress */
-	static readonly GET_AVS_CORRECT_ADDRESS =
+	static readonly actionGetAvsCorrectAddress =
 		"elemental-appliances-software:GetAvsCorrectAddress";
 	/** [Read] elemental-appliances-software:GetBillingAddresses */
-	static readonly GET_BILLING_ADDRESSES =
+	static readonly actionGetBillingAddresses =
 		"elemental-appliances-software:GetBillingAddresses";
 	/** [Read] elemental-appliances-software:GetDeliveryAddressesV2 */
-	static readonly GET_DELIVERY_ADDRESSES_V2 =
+	static readonly actionGetDeliveryAddressesV2 =
 		"elemental-appliances-software:GetDeliveryAddressesV2";
 	/** [Read] elemental-appliances-software:GetOrder */
-	static readonly GET_ORDER = "elemental-appliances-software:GetOrder";
+	static readonly actionGetOrder = "elemental-appliances-software:GetOrder";
 	/** [Read] elemental-appliances-software:GetOrdersV2 */
-	static readonly GET_ORDERS_V2 = "elemental-appliances-software:GetOrdersV2";
+	static readonly actionGetOrdersV2 =
+		"elemental-appliances-software:GetOrdersV2";
 	/** [Read] elemental-appliances-software:GetQuote */
-	static readonly GET_QUOTE = "elemental-appliances-software:GetQuote";
+	static readonly actionGetQuote = "elemental-appliances-software:GetQuote";
 	/** [Read] elemental-appliances-software:GetTaxes */
-	static readonly GET_TAXES = "elemental-appliances-software:GetTaxes";
+	static readonly actionGetTaxes = "elemental-appliances-software:GetTaxes";
 	/** [List] elemental-appliances-software:ListQuotes */
-	static readonly LIST_QUOTES = "elemental-appliances-software:ListQuotes";
+	static readonly ListQuotes = "elemental-appliances-software:ListQuotes";
 	/** [Write] elemental-appliances-software:StartUpload */
-	static readonly START_UPLOAD = "elemental-appliances-software:StartUpload";
+	static readonly StartUpload = "elemental-appliances-software:StartUpload";
 	/** [Write] elemental-appliances-software:SubmitOrderV1 */
-	static readonly SUBMIT_ORDER_V1 =
-		"elemental-appliances-software:SubmitOrderV1";
+	static readonly SubmitOrderV1 = "elemental-appliances-software:SubmitOrderV1";
 	/** [Write] elemental-appliances-software:UpdateQuote */
-	static readonly UPDATE_QUOTE = "elemental-appliances-software:UpdateQuote";
+	static readonly UpdateQuote = "elemental-appliances-software:UpdateQuote";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElementalAppliancesSoftwareActions.GET_AVS_CORRECT_ADDRESS,
-		ElementalAppliancesSoftwareActions.GET_BILLING_ADDRESSES,
-		ElementalAppliancesSoftwareActions.GET_DELIVERY_ADDRESSES_V2,
-		ElementalAppliancesSoftwareActions.GET_ORDER,
-		ElementalAppliancesSoftwareActions.GET_ORDERS_V2,
-		ElementalAppliancesSoftwareActions.GET_QUOTE,
-		ElementalAppliancesSoftwareActions.GET_TAXES,
+	static readonly AllReadActions: string[] = [
+		ElementalAppliancesSoftwareActions.actionGetAvsCorrectAddress,
+		ElementalAppliancesSoftwareActions.actionGetBillingAddresses,
+		ElementalAppliancesSoftwareActions.actionGetDeliveryAddressesV2,
+		ElementalAppliancesSoftwareActions.actionGetOrder,
+		ElementalAppliancesSoftwareActions.actionGetOrdersV2,
+		ElementalAppliancesSoftwareActions.actionGetQuote,
+		ElementalAppliancesSoftwareActions.actionGetTaxes,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElementalAppliancesSoftwareActions.COMPLETE_UPLOAD,
-		ElementalAppliancesSoftwareActions.CREATE_ORDER_V1,
-		ElementalAppliancesSoftwareActions.CREATE_QUOTE,
-		ElementalAppliancesSoftwareActions.START_UPLOAD,
-		ElementalAppliancesSoftwareActions.SUBMIT_ORDER_V1,
-		ElementalAppliancesSoftwareActions.UPDATE_QUOTE,
+	static readonly AllWriteActions: string[] = [
+		ElementalAppliancesSoftwareActions.CompleteUpload,
+		ElementalAppliancesSoftwareActions.CreateOrderV1,
+		ElementalAppliancesSoftwareActions.CreateQuote,
+		ElementalAppliancesSoftwareActions.StartUpload,
+		ElementalAppliancesSoftwareActions.SubmitOrderV1,
+		ElementalAppliancesSoftwareActions.UpdateQuote,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElementalAppliancesSoftwareActions.LIST_QUOTES,
+	static readonly AllListActions: string[] = [
+		ElementalAppliancesSoftwareActions.ListQuotes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const QuoteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elemental-appliances-software:(?<region>[^:]*):(?<account>[^:]*):quote/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a quote ARN.
+ */
+export interface ElementalAppliancesSoftwareQuoteArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a quote ARN.
+ */
+export interface ElementalAppliancesSoftwareQuoteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const QuoteArnRegex =
+	/^arn:(?<partition>[^:]+):elemental-appliances-software:(?<region>[^:]*):(?<account>[^:]*):quote\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elemental-appliances-software resources.
@@ -87,16 +113,7 @@ export class ElementalAppliancesSoftwareResources {
 	/**
 	 * Builds an ARN for the quote resource.
 	 */
-	static quote(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static quote(props: ElementalAppliancesSoftwareQuoteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elemental-appliances-software:${props.region ?? "*"}:${props.account ?? "*"}:quote/${props.resourceId}`;
 	}
 
@@ -111,12 +128,9 @@ export class ElementalAppliancesSoftwareResources {
 	 * Parses a quote ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQuoteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseQuoteArn(
+		arn: string,
+	): ElementalAppliancesSoftwareQuoteArnComponents {
 		const match = QuoteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid quote ARN: ${arn}`);

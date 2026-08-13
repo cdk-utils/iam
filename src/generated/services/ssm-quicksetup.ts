@@ -13,74 +13,102 @@ export class SSMQuicksetupActions {
 	static readonly SERVICE_PREFIX = "ssm-quicksetup";
 
 	/** [Write] ssm-quicksetup:CreateConfigurationManager */
-	static readonly CREATE_CONFIGURATION_MANAGER =
+	static readonly CreateConfigurationManager =
 		"ssm-quicksetup:CreateConfigurationManager";
 	/** [Write] ssm-quicksetup:DeleteConfigurationManager */
-	static readonly DELETE_CONFIGURATION_MANAGER =
+	static readonly DeleteConfigurationManager =
 		"ssm-quicksetup:DeleteConfigurationManager";
 	/** [Read] ssm-quicksetup:GetConfiguration */
-	static readonly GET_CONFIGURATION = "ssm-quicksetup:GetConfiguration";
+	static readonly actionGetConfiguration = "ssm-quicksetup:GetConfiguration";
 	/** [Read] ssm-quicksetup:GetConfigurationManager */
-	static readonly GET_CONFIGURATION_MANAGER =
+	static readonly actionGetConfigurationManager =
 		"ssm-quicksetup:GetConfigurationManager";
 	/** [Read] ssm-quicksetup:GetServiceSettings */
-	static readonly GET_SERVICE_SETTINGS = "ssm-quicksetup:GetServiceSettings";
+	static readonly actionGetServiceSettings =
+		"ssm-quicksetup:GetServiceSettings";
 	/** [List] ssm-quicksetup:ListConfigurationManagers */
-	static readonly LIST_CONFIGURATION_MANAGERS =
+	static readonly ListConfigurationManagers =
 		"ssm-quicksetup:ListConfigurationManagers";
 	/** [List] ssm-quicksetup:ListConfigurations */
-	static readonly LIST_CONFIGURATIONS = "ssm-quicksetup:ListConfigurations";
+	static readonly ListConfigurations = "ssm-quicksetup:ListConfigurations";
 	/** [Read] ssm-quicksetup:ListQuickSetupTypes */
-	static readonly LIST_QUICK_SETUP_TYPES = "ssm-quicksetup:ListQuickSetupTypes";
+	static readonly ListQuickSetupTypes = "ssm-quicksetup:ListQuickSetupTypes";
 	/** [Read] ssm-quicksetup:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "ssm-quicksetup:ListTagsForResource";
+	static readonly ListTagsForResource = "ssm-quicksetup:ListTagsForResource";
 	/** [Tagging] ssm-quicksetup:TagResource */
-	static readonly TAG_RESOURCE = "ssm-quicksetup:TagResource";
+	static readonly TagResource = "ssm-quicksetup:TagResource";
 	/** [Tagging] ssm-quicksetup:UntagResource */
-	static readonly UNTAG_RESOURCE = "ssm-quicksetup:UntagResource";
+	static readonly UntagResource = "ssm-quicksetup:UntagResource";
 	/** [Write] ssm-quicksetup:UpdateConfigurationDefinition */
-	static readonly UPDATE_CONFIGURATION_DEFINITION =
+	static readonly UpdateConfigurationDefinition =
 		"ssm-quicksetup:UpdateConfigurationDefinition";
 	/** [Write] ssm-quicksetup:UpdateConfigurationManager */
-	static readonly UPDATE_CONFIGURATION_MANAGER =
+	static readonly UpdateConfigurationManager =
 		"ssm-quicksetup:UpdateConfigurationManager";
 	/** [Write] ssm-quicksetup:UpdateServiceSettings */
-	static readonly UPDATE_SERVICE_SETTINGS =
+	static readonly UpdateServiceSettings =
 		"ssm-quicksetup:UpdateServiceSettings";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SSMQuicksetupActions.GET_CONFIGURATION,
-		SSMQuicksetupActions.GET_CONFIGURATION_MANAGER,
-		SSMQuicksetupActions.GET_SERVICE_SETTINGS,
-		SSMQuicksetupActions.LIST_QUICK_SETUP_TYPES,
-		SSMQuicksetupActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SSMQuicksetupActions.actionGetConfiguration,
+		SSMQuicksetupActions.actionGetConfigurationManager,
+		SSMQuicksetupActions.actionGetServiceSettings,
+		SSMQuicksetupActions.ListQuickSetupTypes,
+		SSMQuicksetupActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SSMQuicksetupActions.CREATE_CONFIGURATION_MANAGER,
-		SSMQuicksetupActions.DELETE_CONFIGURATION_MANAGER,
-		SSMQuicksetupActions.UPDATE_CONFIGURATION_DEFINITION,
-		SSMQuicksetupActions.UPDATE_CONFIGURATION_MANAGER,
-		SSMQuicksetupActions.UPDATE_SERVICE_SETTINGS,
+	static readonly AllWriteActions: string[] = [
+		SSMQuicksetupActions.CreateConfigurationManager,
+		SSMQuicksetupActions.DeleteConfigurationManager,
+		SSMQuicksetupActions.UpdateConfigurationDefinition,
+		SSMQuicksetupActions.UpdateConfigurationManager,
+		SSMQuicksetupActions.UpdateServiceSettings,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SSMQuicksetupActions.LIST_CONFIGURATION_MANAGERS,
-		SSMQuicksetupActions.LIST_CONFIGURATIONS,
+	static readonly AllListActions: string[] = [
+		SSMQuicksetupActions.ListConfigurationManagers,
+		SSMQuicksetupActions.ListConfigurations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SSMQuicksetupActions.TAG_RESOURCE,
-		SSMQuicksetupActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SSMQuicksetupActions.TagResource,
+		SSMQuicksetupActions.UntagResource,
 	];
 }
 
-const ConfigurationManagerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ssm-quicksetup:(?<region>[^:]*):(?<account>[^:]*):configuration-manager/(?<configurationManagerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a configuration-manager ARN.
+ */
+export interface SSMQuicksetupConfigurationManagerArnProps {
+	/** The ConfigurationManagerId component of the ARN. */
+	readonly configurationManagerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration-manager ARN.
+ */
+export interface SSMQuicksetupConfigurationManagerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationManagerId component. */
+	readonly configurationManagerId: string;
+}
+
+const ConfigurationManagerArnRegex =
+	/^arn:(?<partition>[^:]+):ssm-quicksetup:(?<region>[^:]*):(?<account>[^:]*):configuration-manager\/(?<configurationManagerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ssm-quicksetup resources.
@@ -89,16 +117,9 @@ export class SSMQuicksetupResources {
 	/**
 	 * Builds an ARN for the configuration-manager resource.
 	 */
-	static configurationManager(props: {
-		/** The ConfigurationManagerId component of the ARN. */
-		readonly configurationManagerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configurationManager(
+		props: SSMQuicksetupConfigurationManagerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ssm-quicksetup:${props.region ?? "*"}:${props.account ?? "*"}:configuration-manager/${props.configurationManagerId}`;
 	}
 
@@ -113,12 +134,9 @@ export class SSMQuicksetupResources {
 	 * Parses a configuration-manager ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationManagerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configurationManagerId: string;
-	} {
+	static parseConfigurationManagerArn(
+		arn: string,
+	): SSMQuicksetupConfigurationManagerArnComponents {
 		const match = ConfigurationManagerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration-manager ARN: ${arn}`);
@@ -137,65 +155,65 @@ export class SSMQuicksetupResources {
  */
 export class SSMQuicksetupOperations {
 	/** IAM actions required for the CreateConfigurationManager API call. */
-	static readonly CREATE_CONFIGURATION_MANAGER: string[] = [
+	static readonly CreateConfigurationManager: string[] = [
 		"ssm-quicksetup:CreateConfigurationManager",
 		"iam:PassRole",
 		"ssm-quicksetup:TagResource",
 	];
 	/** IAM actions required for the DeleteConfigurationManager API call. */
-	static readonly DELETE_CONFIGURATION_MANAGER: string[] = [
+	static readonly DeleteConfigurationManager: string[] = [
 		"ssm-quicksetup:DeleteConfigurationManager",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the GetConfiguration API call. */
-	static readonly GET_CONFIGURATION: string[] = [
+	static readonly opGetConfiguration: string[] = [
 		"ssm-quicksetup:GetConfiguration",
 	];
 	/** IAM actions required for the GetConfigurationManager API call. */
-	static readonly GET_CONFIGURATION_MANAGER: string[] = [
+	static readonly opGetConfigurationManager: string[] = [
 		"ssm-quicksetup:GetConfigurationManager",
 	];
 	/** IAM actions required for the GetServiceSettings API call. */
-	static readonly GET_SERVICE_SETTINGS: string[] = [
+	static readonly opGetServiceSettings: string[] = [
 		"ssm-quicksetup:GetServiceSettings",
 	];
 	/** IAM actions required for the ListConfigurationManagers API call. */
-	static readonly LIST_CONFIGURATION_MANAGERS: string[] = [
+	static readonly ListConfigurationManagers: string[] = [
 		"ssm-quicksetup:ListConfigurationManagers",
 	];
 	/** IAM actions required for the ListConfigurations API call. */
-	static readonly LIST_CONFIGURATIONS: string[] = [
+	static readonly ListConfigurations: string[] = [
 		"ssm-quicksetup:ListConfigurations",
 	];
 	/** IAM actions required for the ListQuickSetupTypes API call. */
-	static readonly LIST_QUICK_SETUP_TYPES: string[] = [
+	static readonly ListQuickSetupTypes: string[] = [
 		"ssm-quicksetup:ListQuickSetupTypes",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"ssm-quicksetup:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"iam:PassRole",
 		"ssm-quicksetup:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"iam:PassRole",
 		"ssm-quicksetup:UntagResource",
 	];
 	/** IAM actions required for the UpdateConfigurationDefinition API call. */
-	static readonly UPDATE_CONFIGURATION_DEFINITION: string[] = [
+	static readonly UpdateConfigurationDefinition: string[] = [
 		"iam:PassRole",
 		"ssm-quicksetup:UpdateConfigurationDefinition",
 	];
 	/** IAM actions required for the UpdateConfigurationManager API call. */
-	static readonly UPDATE_CONFIGURATION_MANAGER: string[] = [
+	static readonly UpdateConfigurationManager: string[] = [
 		"ssm-quicksetup:UpdateConfigurationManager",
 	];
 	/** IAM actions required for the UpdateServiceSettings API call. */
-	static readonly UPDATE_SERVICE_SETTINGS: string[] = [
+	static readonly UpdateServiceSettings: string[] = [
 		"iam:PassRole",
 		"ssm-quicksetup:UpdateServiceSettings",
 	];
@@ -206,19 +224,19 @@ export class SSMQuicksetupOperations {
  */
 export class SSMQuicksetupConditions {
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,6 +13,8 @@ import { execSync } from "node:child_process";
 import {
 	generateBuilderCode,
 	generateParserCode,
+	generateParserResultInterface,
+	generatePropsInterface,
 	generateRegexConstant,
 	generateValidatorCode,
 	parseArnTemplate,
@@ -22,7 +24,7 @@ import {
 	generateConditionBuilder,
 	shouldGenerateBuilder,
 } from "./condition-codegen";
-import { toFileName, toPascalCase, toServiceClassName, toUpperSnakeCase } from "./naming";
+import { toFileName, toPascalCase, toServiceClassName } from "./naming";
 import type { ServiceDetail } from "./types";
 
 const OUTPUT_DIR = path.resolve(__dirname, "../src/generated/services");
@@ -74,7 +76,12 @@ function generateActionsClass(data: ServiceDetail, classPrefix: string): string 
 	const tagActions: string[] = [];
 
 	for (const action of data.Actions) {
-		const constName = toUpperSnakeCase(action.Name);
+		// Sanitize: remove hyphens/dots by converting to PascalCase segments
+		// Prefix with 'action' if starts with Get/Set to avoid JSII5000 Java getter conflicts
+		let constName = action.Name.replace(/[-. ]+(.)/g, (_: string, c: string) => c.toUpperCase()).replace(/[-. ]+/g, "");
+		if (/^(Get|Set)[A-Z]/.test(constName)) {
+			constName = `action${constName}`;
+		}
 		const fullAction = `${serviceName}:${action.Name}`;
 		const level = getAccessLevel(action);
 
@@ -92,15 +99,15 @@ function generateActionsClass(data: ServiceDetail, classPrefix: string): string 
 
 	lines.push("");
 	lines.push(`\t/** All read-level actions. */`);
-	lines.push(`\tstatic readonly READ_ACTIONS: string[] = [${readActions.join(", ")}];`);
+	lines.push(`\tstatic readonly AllReadActions: string[] = [${readActions.join(", ")}];`);
 	lines.push(`\t/** All write-level actions. */`);
-	lines.push(`\tstatic readonly WRITE_ACTIONS: string[] = [${writeActions.join(", ")}];`);
+	lines.push(`\tstatic readonly AllWriteActions: string[] = [${writeActions.join(", ")}];`);
 	lines.push(`\t/** All list-level actions. */`);
-	lines.push(`\tstatic readonly LIST_ACTIONS: string[] = [${listActions.join(", ")}];`);
+	lines.push(`\tstatic readonly AllListActions: string[] = [${listActions.join(", ")}];`);
 	lines.push(`\t/** All permission-management-level actions. */`);
-	lines.push(`\tstatic readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [${permActions.join(", ")}];`);
+	lines.push(`\tstatic readonly AllPermissionManagementActions: string[] = [${permActions.join(", ")}];`);
 	lines.push(`\t/** All tagging-level actions. */`);
-	lines.push(`\tstatic readonly TAGGING_ACTIONS: string[] = [${tagActions.join(", ")}];`);
+	lines.push(`\tstatic readonly AllTaggingActions: string[] = [${tagActions.join(", ")}];`);
 
 	lines.push("}");
 	return lines.join("\n");
@@ -113,30 +120,40 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 	const resources = data.Resources ?? [];
 	if (resources.length === 0) return null;
 
+	const interfaces: string[] = [];
 	const lines: string[] = [];
 	const regexConstants: string[] = [];
 
-	// Generate regex constants (placed before the class)
+	// Generate interfaces and regex constants
 	for (const resource of resources) {
 		const arnFormats = resource.ARNFormats ?? [];
 		if (arnFormats.length === 0) continue;
 
-		// For multi-ARN resources, generate one regex per variant
 		if (arnFormats.length === 1) {
 			const parsed = parseArnTemplate(arnFormats[0]);
+			interfaces.push(generatePropsInterface(resource.Name, parsed, classPrefix));
+			interfaces.push(generateParserResultInterface(resource.Name, parsed, classPrefix));
 			regexConstants.push(generateRegexConstant(resource.Name, parsed));
 		} else {
-			// Multi-ARN: generate combined regex for validation (strip named groups to avoid duplicates)
+			// Multi-ARN: generate interfaces for each variant's props
+			for (let i = 0; i < arnFormats.length; i++) {
+				const parsed = parseArnTemplate(arnFormats[i]);
+				const variantName = `${resource.Name}Variant${i + 1}`;
+				interfaces.push(generatePropsInterface(variantName, parsed, classPrefix));
+			}
+			// Parser result uses first variant's shape
+			const firstParsed = parseArnTemplate(arnFormats[0]);
+			interfaces.push(generateParserResultInterface(resource.Name, firstParsed, classPrefix));
+
+			// Combined regex for validation (strip named groups to avoid duplicates)
 			const patterns = arnFormats.map((arn) => {
-				const p = parseArnTemplate(arn).regexPattern.slice(1, -1); // strip ^$
-				// Replace named groups with non-capturing groups for the combined validator
+				const p = parseArnTemplate(arn).regexPattern.slice(1, -1);
 				return p.replace(/\(\?<\w+>/g, "(?:");
 			});
 			const combined = `^(?:${patterns.join("|")})$`;
 			const pascalName = toPascalCase(resource.Name);
 			regexConstants.push(`const ${pascalName}ArnRegex = new RegExp("${combined.replace(/\\/g, "\\\\")}");`);
-			// Also generate individual regexes for parsing (first variant only)
-			const firstParsed = parseArnTemplate(arnFormats[0]);
+			// Individual regex for parsing (first variant only)
 			regexConstants.push(`const ${pascalName}ParseRegex = new RegExp("${firstParsed.regexPattern.replace(/\\/g, "\\\\")}");`);
 		}
 	}
@@ -152,11 +169,11 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 
 		if (arnFormats.length === 1) {
 			const parsed = parseArnTemplate(arnFormats[0]);
-			lines.push(generateBuilderCode(resource.Name, parsed, data.Name));
+			lines.push(generateBuilderCode(resource.Name, parsed, data.Name, classPrefix));
 			lines.push("");
 			lines.push(generateValidatorCode(resource.Name, parsed));
 			lines.push("");
-			lines.push(generateParserCode(resource.Name, parsed));
+			lines.push(generateParserCode(resource.Name, parsed, classPrefix));
 			lines.push("");
 		} else {
 			// Multi-ARN: generate one builder per variant with suffix
@@ -164,7 +181,7 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 				const parsed = parseArnTemplate(arnFormats[i]);
 				const suffix = `Variant${i + 1}`;
 				const variantName = `${resource.Name}${suffix}`;
-				lines.push(generateBuilderCode(variantName, parsed, data.Name));
+				lines.push(generateBuilderCode(variantName, parsed, data.Name, classPrefix));
 				lines.push("");
 			}
 			// Validator uses the combined regex (no named groups, just matching)
@@ -173,17 +190,11 @@ function generateResourcesClass(data: ServiceDetail, classPrefix: string): strin
 			lines.push("");
 			// Parser uses the first variant's regex (with named groups)
 			const pascalName = toPascalCase(resource.Name);
-			const returnFields = [
-				"partition: string",
-				...(firstParsed.isGlobal ? [] : ["region: string"]),
-				"account: string",
-				...firstParsed.resourceVariables.map((v) => `${v.paramName}: string`),
-			];
 			lines.push(`\t/**
 \t * Parses a ${resource.Name} ARN into its components (uses first ARN variant format).
 \t * @throws Error if the ARN does not match the expected format.
 \t */
-\tstatic parse${pascalName}Arn(arn: string): { ${returnFields.join("; ")} } {
+\tstatic parse${pascalName}Arn(arn: string): ${classPrefix}${pascalName}ArnComponents {
 \t\tconst match = ${pascalName}ParseRegex.exec(arn);
 \t\tif (!match?.groups) {
 \t\t\tthrow new Error(\`Invalid ${resource.Name} ARN: \${arn}\`);
@@ -200,7 +211,7 @@ ${firstParsed.resourceVariables.map((v) => `\t\t\t${v.paramName}: match.groups!.
 
 	lines.push("}");
 
-	return regexConstants.join("\n") + "\n\n" + lines.join("\n");
+	return interfaces.join("\n\n") + "\n\n" + regexConstants.join("\n") + "\n\n" + lines.join("\n");
 }
 
 /**
@@ -217,7 +228,10 @@ function generateOperationsClass(data: ServiceDetail, classPrefix: string): stri
 	lines.push(`export class ${classPrefix}Operations {`);
 
 	for (const op of operations) {
-		const constName = toUpperSnakeCase(op.Name);
+		let constName = op.Name.replace(/[-. ]+(.)/g, (_: string, c: string) => c.toUpperCase()).replace(/[-. ]+/g, "");
+		if (/^(Get|Set)[A-Z]/.test(constName)) {
+			constName = `op${constName}`;
+		}
 		const actions = (op.AuthorizedActions ?? []).map(
 			(a) => `"${a.Service}:${a.Name}"`,
 		);
@@ -247,7 +261,10 @@ function generateConditionsClass(data: ServiceDetail, classPrefix: string): stri
 	for (const action of data.Actions) {
 		const actionCks = action.ActionConditionKeys ?? [];
 		if (actionCks.length > 0) {
-			const constName = `${toUpperSnakeCase(action.Name)}_CONDITION_KEYS`;
+			let constName = `${action.Name.replace(/[-. ]+(.)/g, (_: string, c: string) => c.toUpperCase()).replace(/[-. ]+/g, "")}ConditionKeys`;
+			if (/^(Get|Set)[A-Z]/.test(constName)) {
+				constName = `action${constName}`;
+			}
 			lines.push(`\t/** Condition keys applicable to the ${action.Name} action. */`);
 			lines.push(`\tstatic readonly ${constName}: string[] = [${actionCks.map((k) => `"${k}"`).join(", ")}];`);
 		}
@@ -255,19 +272,29 @@ function generateConditionsClass(data: ServiceDetail, classPrefix: string): stri
 
 	lines.push("");
 
-	// Condition key constants
+	// Condition key constants (deduplicate by constant name)
+	const seenConstants = new Set<string>();
 	for (const ck of conditionKeys) {
 		const constName = conditionKeyToConstant(ck.Name);
+		if (seenConstants.has(constName)) continue;
+		seenConstants.add(constName);
 		lines.push(`\t/** Condition key: ${ck.Name} (${ck.Types.join(", ")}) */`);
 		lines.push(`\tstatic readonly ${constName} = "${ck.Name}";`);
 	}
 
 	lines.push("");
 
-	// Builder methods (only for service-specific and aws: keys)
+	// Builder methods (only for service-specific and aws: keys, deduplicate by method name)
+	const seenMethods = new Set<string>();
 	for (const ck of conditionKeys) {
 		if (shouldGenerateBuilder(ck.Name, data.Name)) {
-			lines.push(generateConditionBuilder(ck.Name, ck.Types, data.Name));
+			const code = generateConditionBuilder(ck.Name, ck.Types, data.Name);
+			// Extract method name from the generated code
+			const methodMatch = code.match(/static (\w+)\(/);
+			const methodName = methodMatch?.[1];
+			if (methodName && seenMethods.has(methodName)) continue;
+			if (methodName) seenMethods.add(methodName);
+			lines.push(code);
 			lines.push("");
 		}
 	}

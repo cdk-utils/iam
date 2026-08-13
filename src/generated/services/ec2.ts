@@ -13,3181 +13,6105 @@ export class EC2Actions {
 	static readonly SERVICE_PREFIX = "ec2";
 
 	/** [Write] ec2:AcceptAddressTransfer */
-	static readonly ACCEPT_ADDRESS_TRANSFER = "ec2:AcceptAddressTransfer";
+	static readonly AcceptAddressTransfer = "ec2:AcceptAddressTransfer";
 	/** [Write] ec2:AcceptCapacityReservationBillingOwnership */
-	static readonly ACCEPT_CAPACITY_RESERVATION_BILLING_OWNERSHIP =
+	static readonly AcceptCapacityReservationBillingOwnership =
 		"ec2:AcceptCapacityReservationBillingOwnership";
 	/** [Write] ec2:AcceptReservedInstancesExchangeQuote */
-	static readonly ACCEPT_RESERVED_INSTANCES_EXCHANGE_QUOTE =
+	static readonly AcceptReservedInstancesExchangeQuote =
 		"ec2:AcceptReservedInstancesExchangeQuote";
 	/** [Write] ec2:AcceptTransitGatewayClientVpnAttachment */
-	static readonly ACCEPT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT =
+	static readonly AcceptTransitGatewayClientVpnAttachment =
 		"ec2:AcceptTransitGatewayClientVpnAttachment";
 	/** [Write] ec2:AcceptTransitGatewayMulticastDomainAssociations */
-	static readonly ACCEPT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS =
+	static readonly AcceptTransitGatewayMulticastDomainAssociations =
 		"ec2:AcceptTransitGatewayMulticastDomainAssociations";
 	/** [Write] ec2:AcceptTransitGatewayPeeringAttachment */
-	static readonly ACCEPT_TRANSIT_GATEWAY_PEERING_ATTACHMENT =
+	static readonly AcceptTransitGatewayPeeringAttachment =
 		"ec2:AcceptTransitGatewayPeeringAttachment";
 	/** [Write] ec2:AcceptTransitGatewayVpcAttachment */
-	static readonly ACCEPT_TRANSIT_GATEWAY_VPC_ATTACHMENT =
+	static readonly AcceptTransitGatewayVpcAttachment =
 		"ec2:AcceptTransitGatewayVpcAttachment";
 	/** [Write] ec2:AcceptVpcEndpointConnections */
-	static readonly ACCEPT_VPC_ENDPOINT_CONNECTIONS =
+	static readonly AcceptVpcEndpointConnections =
 		"ec2:AcceptVpcEndpointConnections";
 	/** [Write] ec2:AcceptVpcPeeringConnection */
-	static readonly ACCEPT_VPC_PEERING_CONNECTION =
-		"ec2:AcceptVpcPeeringConnection";
+	static readonly AcceptVpcPeeringConnection = "ec2:AcceptVpcPeeringConnection";
 	/** [Write] ec2:AdvertiseByoipCidr */
-	static readonly ADVERTISE_BYOIP_CIDR = "ec2:AdvertiseByoipCidr";
+	static readonly AdvertiseByoipCidr = "ec2:AdvertiseByoipCidr";
 	/** [Write] ec2:AllocateAddress */
-	static readonly ALLOCATE_ADDRESS = "ec2:AllocateAddress";
+	static readonly AllocateAddress = "ec2:AllocateAddress";
 	/** [Write] ec2:AllocateHosts */
-	static readonly ALLOCATE_HOSTS = "ec2:AllocateHosts";
+	static readonly AllocateHosts = "ec2:AllocateHosts";
 	/** [Write] ec2:AllocateIpamPoolCidr */
-	static readonly ALLOCATE_IPAM_POOL_CIDR = "ec2:AllocateIpamPoolCidr";
+	static readonly AllocateIpamPoolCidr = "ec2:AllocateIpamPoolCidr";
 	/** [Write] ec2:ApplySecurityGroupsToClientVpnTargetNetwork */
-	static readonly APPLY_SECURITY_GROUPS_TO_CLIENT_VPN_TARGET_NETWORK =
+	static readonly ApplySecurityGroupsToClientVpnTargetNetwork =
 		"ec2:ApplySecurityGroupsToClientVpnTargetNetwork";
 	/** [Write] ec2:AssignIpv6Addresses */
-	static readonly ASSIGN_IPV6_ADDRESSES = "ec2:AssignIpv6Addresses";
+	static readonly AssignIpv6Addresses = "ec2:AssignIpv6Addresses";
 	/** [Write] ec2:AssignPrivateIpAddresses */
-	static readonly ASSIGN_PRIVATE_IP_ADDRESSES = "ec2:AssignPrivateIpAddresses";
+	static readonly AssignPrivateIpAddresses = "ec2:AssignPrivateIpAddresses";
 	/** [Write] ec2:AssignPrivateNatGatewayAddress */
-	static readonly ASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS =
+	static readonly AssignPrivateNatGatewayAddress =
 		"ec2:AssignPrivateNatGatewayAddress";
 	/** [Write] ec2:AssociateAddress */
-	static readonly ASSOCIATE_ADDRESS = "ec2:AssociateAddress";
+	static readonly AssociateAddress = "ec2:AssociateAddress";
 	/** [Write] ec2:AssociateCapacityReservationBillingOwner */
-	static readonly ASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER =
+	static readonly AssociateCapacityReservationBillingOwner =
 		"ec2:AssociateCapacityReservationBillingOwner";
 	/** [Write] ec2:AssociateClientVpnTargetNetwork */
-	static readonly ASSOCIATE_CLIENT_VPN_TARGET_NETWORK =
+	static readonly AssociateClientVpnTargetNetwork =
 		"ec2:AssociateClientVpnTargetNetwork";
 	/** [Write] ec2:AssociateDhcpOptions */
-	static readonly ASSOCIATE_DHCP_OPTIONS = "ec2:AssociateDhcpOptions";
+	static readonly AssociateDhcpOptions = "ec2:AssociateDhcpOptions";
 	/** [Write] ec2:AssociateEnclaveCertificateIamRole */
-	static readonly ASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE =
+	static readonly AssociateEnclaveCertificateIamRole =
 		"ec2:AssociateEnclaveCertificateIamRole";
 	/** [Write] ec2:AssociateIamInstanceProfile */
-	static readonly ASSOCIATE_IAM_INSTANCE_PROFILE =
+	static readonly AssociateIamInstanceProfile =
 		"ec2:AssociateIamInstanceProfile";
 	/** [Write] ec2:AssociateInstanceEventWindow */
-	static readonly ASSOCIATE_INSTANCE_EVENT_WINDOW =
+	static readonly AssociateInstanceEventWindow =
 		"ec2:AssociateInstanceEventWindow";
 	/** [Write] ec2:AssociateIpamByoasn */
-	static readonly ASSOCIATE_IPAM_BYOASN = "ec2:AssociateIpamByoasn";
+	static readonly AssociateIpamByoasn = "ec2:AssociateIpamByoasn";
 	/** [Write] ec2:AssociateIpamResourceDiscovery */
-	static readonly ASSOCIATE_IPAM_RESOURCE_DISCOVERY =
+	static readonly AssociateIpamResourceDiscovery =
 		"ec2:AssociateIpamResourceDiscovery";
 	/** [Write] ec2:AssociateNatGatewayAddress */
-	static readonly ASSOCIATE_NAT_GATEWAY_ADDRESS =
-		"ec2:AssociateNatGatewayAddress";
+	static readonly AssociateNatGatewayAddress = "ec2:AssociateNatGatewayAddress";
 	/** [Write] ec2:AssociateRouteServer */
-	static readonly ASSOCIATE_ROUTE_SERVER = "ec2:AssociateRouteServer";
+	static readonly AssociateRouteServer = "ec2:AssociateRouteServer";
 	/** [Write] ec2:AssociateRouteTable */
-	static readonly ASSOCIATE_ROUTE_TABLE = "ec2:AssociateRouteTable";
+	static readonly AssociateRouteTable = "ec2:AssociateRouteTable";
 	/** [Write] ec2:AssociateSecurityGroupVpc */
-	static readonly ASSOCIATE_SECURITY_GROUP_VPC =
-		"ec2:AssociateSecurityGroupVpc";
+	static readonly AssociateSecurityGroupVpc = "ec2:AssociateSecurityGroupVpc";
 	/** [Write] ec2:AssociateSubnetCidrBlock */
-	static readonly ASSOCIATE_SUBNET_CIDR_BLOCK = "ec2:AssociateSubnetCidrBlock";
+	static readonly AssociateSubnetCidrBlock = "ec2:AssociateSubnetCidrBlock";
 	/** [Write] ec2:AssociateTransitGatewayMulticastDomain */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN =
+	static readonly AssociateTransitGatewayMulticastDomain =
 		"ec2:AssociateTransitGatewayMulticastDomain";
 	/** [Write] ec2:AssociateTransitGatewayPolicyTable */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE =
+	static readonly AssociateTransitGatewayPolicyTable =
 		"ec2:AssociateTransitGatewayPolicyTable";
 	/** [Write] ec2:AssociateTransitGatewayRouteTable */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE =
+	static readonly AssociateTransitGatewayRouteTable =
 		"ec2:AssociateTransitGatewayRouteTable";
 	/** [Write] ec2:AssociateTrunkInterface */
-	static readonly ASSOCIATE_TRUNK_INTERFACE = "ec2:AssociateTrunkInterface";
+	static readonly AssociateTrunkInterface = "ec2:AssociateTrunkInterface";
 	/** [Write] ec2:AssociateVerifiedAccessInstanceWebAcl */
-	static readonly ASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL =
+	static readonly AssociateVerifiedAccessInstanceWebAcl =
 		"ec2:AssociateVerifiedAccessInstanceWebAcl";
 	/** [Write] ec2:AssociateVpcCidrBlock */
-	static readonly ASSOCIATE_VPC_CIDR_BLOCK = "ec2:AssociateVpcCidrBlock";
+	static readonly AssociateVpcCidrBlock = "ec2:AssociateVpcCidrBlock";
 	/** [PermissionManagement] ec2:AttachApplianceToNatGateway */
-	static readonly ATTACH_APPLIANCE_TO_NAT_GATEWAY =
+	static readonly AttachApplianceToNatGateway =
 		"ec2:AttachApplianceToNatGateway";
 	/** [Write] ec2:AttachClassicLinkVpc */
-	static readonly ATTACH_CLASSIC_LINK_VPC = "ec2:AttachClassicLinkVpc";
+	static readonly AttachClassicLinkVpc = "ec2:AttachClassicLinkVpc";
 	/** [Write] ec2:AttachImageWatermark */
-	static readonly ATTACH_IMAGE_WATERMARK = "ec2:AttachImageWatermark";
+	static readonly AttachImageWatermark = "ec2:AttachImageWatermark";
 	/** [Write] ec2:AttachInternetGateway */
-	static readonly ATTACH_INTERNET_GATEWAY = "ec2:AttachInternetGateway";
+	static readonly AttachInternetGateway = "ec2:AttachInternetGateway";
 	/** [Write] ec2:AttachNetworkInterface */
-	static readonly ATTACH_NETWORK_INTERFACE = "ec2:AttachNetworkInterface";
+	static readonly AttachNetworkInterface = "ec2:AttachNetworkInterface";
 	/** [PermissionManagement] ec2:AttachResourcesToPlacementGroup */
-	static readonly ATTACH_RESOURCES_TO_PLACEMENT_GROUP =
+	static readonly AttachResourcesToPlacementGroup =
 		"ec2:AttachResourcesToPlacementGroup";
 	/** [Write] ec2:AttachVerifiedAccessTrustProvider */
-	static readonly ATTACH_VERIFIED_ACCESS_TRUST_PROVIDER =
+	static readonly AttachVerifiedAccessTrustProvider =
 		"ec2:AttachVerifiedAccessTrustProvider";
 	/** [Write] ec2:AttachVolume */
-	static readonly ATTACH_VOLUME = "ec2:AttachVolume";
+	static readonly AttachVolume = "ec2:AttachVolume";
 	/** [Write] ec2:AttachVpnGateway */
-	static readonly ATTACH_VPN_GATEWAY = "ec2:AttachVpnGateway";
+	static readonly AttachVpnGateway = "ec2:AttachVpnGateway";
 	/** [Write] ec2:AuthorizeClientVpnIngress */
-	static readonly AUTHORIZE_CLIENT_VPN_INGRESS =
-		"ec2:AuthorizeClientVpnIngress";
+	static readonly AuthorizeClientVpnIngress = "ec2:AuthorizeClientVpnIngress";
 	/** [Write] ec2:AuthorizeSecurityGroupEgress */
-	static readonly AUTHORIZE_SECURITY_GROUP_EGRESS =
+	static readonly AuthorizeSecurityGroupEgress =
 		"ec2:AuthorizeSecurityGroupEgress";
 	/** [Write] ec2:AuthorizeSecurityGroupIngress */
-	static readonly AUTHORIZE_SECURITY_GROUP_INGRESS =
+	static readonly AuthorizeSecurityGroupIngress =
 		"ec2:AuthorizeSecurityGroupIngress";
 	/** [Write] ec2:BundleInstance */
-	static readonly BUNDLE_INSTANCE = "ec2:BundleInstance";
+	static readonly BundleInstance = "ec2:BundleInstance";
 	/** [Write] ec2:CancelBundleTask */
-	static readonly CANCEL_BUNDLE_TASK = "ec2:CancelBundleTask";
+	static readonly CancelBundleTask = "ec2:CancelBundleTask";
 	/** [Write] ec2:CancelCapacityReservation */
-	static readonly CANCEL_CAPACITY_RESERVATION = "ec2:CancelCapacityReservation";
+	static readonly CancelCapacityReservation = "ec2:CancelCapacityReservation";
 	/** [Write] ec2:CancelCapacityReservationFleets */
-	static readonly CANCEL_CAPACITY_RESERVATION_FLEETS =
+	static readonly CancelCapacityReservationFleets =
 		"ec2:CancelCapacityReservationFleets";
 	/** [Write] ec2:CancelConversionTask */
-	static readonly CANCEL_CONVERSION_TASK = "ec2:CancelConversionTask";
+	static readonly CancelConversionTask = "ec2:CancelConversionTask";
 	/** [Write] ec2:CancelDeclarativePoliciesReport */
-	static readonly CANCEL_DECLARATIVE_POLICIES_REPORT =
+	static readonly CancelDeclarativePoliciesReport =
 		"ec2:CancelDeclarativePoliciesReport";
 	/** [Write] ec2:CancelExportTask */
-	static readonly CANCEL_EXPORT_TASK = "ec2:CancelExportTask";
+	static readonly CancelExportTask = "ec2:CancelExportTask";
 	/** [PermissionManagement] ec2:CancelImageLaunchPermission */
-	static readonly CANCEL_IMAGE_LAUNCH_PERMISSION =
+	static readonly CancelImageLaunchPermission =
 		"ec2:CancelImageLaunchPermission";
 	/** [Write] ec2:CancelImportTask */
-	static readonly CANCEL_IMPORT_TASK = "ec2:CancelImportTask";
+	static readonly CancelImportTask = "ec2:CancelImportTask";
 	/** [Write] ec2:CancelReservedInstancesListing */
-	static readonly CANCEL_RESERVED_INSTANCES_LISTING =
+	static readonly CancelReservedInstancesListing =
 		"ec2:CancelReservedInstancesListing";
 	/** [Write] ec2:CancelSpotFleetRequests */
-	static readonly CANCEL_SPOT_FLEET_REQUESTS = "ec2:CancelSpotFleetRequests";
+	static readonly CancelSpotFleetRequests = "ec2:CancelSpotFleetRequests";
 	/** [Write] ec2:CancelSpotInstanceRequests */
-	static readonly CANCEL_SPOT_INSTANCE_REQUESTS =
-		"ec2:CancelSpotInstanceRequests";
+	static readonly CancelSpotInstanceRequests = "ec2:CancelSpotInstanceRequests";
 	/** [Write] ec2:ConfirmProductInstance */
-	static readonly CONFIRM_PRODUCT_INSTANCE = "ec2:ConfirmProductInstance";
+	static readonly ConfirmProductInstance = "ec2:ConfirmProductInstance";
 	/** [Write] ec2:CopyFpgaImage */
-	static readonly COPY_FPGA_IMAGE = "ec2:CopyFpgaImage";
+	static readonly CopyFpgaImage = "ec2:CopyFpgaImage";
 	/** [Write] ec2:CopyImage */
-	static readonly COPY_IMAGE = "ec2:CopyImage";
+	static readonly CopyImage = "ec2:CopyImage";
 	/** [Write] ec2:CopySnapshot */
-	static readonly COPY_SNAPSHOT = "ec2:CopySnapshot";
+	static readonly CopySnapshot = "ec2:CopySnapshot";
 	/** [Write] ec2:CopyVolumes */
-	static readonly COPY_VOLUMES = "ec2:CopyVolumes";
+	static readonly CopyVolumes = "ec2:CopyVolumes";
 	/** [Write] ec2:CreateCapacityManagerDataExport */
-	static readonly CREATE_CAPACITY_MANAGER_DATA_EXPORT =
+	static readonly CreateCapacityManagerDataExport =
 		"ec2:CreateCapacityManagerDataExport";
 	/** [Write] ec2:CreateCapacityReservation */
-	static readonly CREATE_CAPACITY_RESERVATION = "ec2:CreateCapacityReservation";
+	static readonly CreateCapacityReservation = "ec2:CreateCapacityReservation";
 	/** [Write] ec2:CreateCapacityReservationBySplitting */
-	static readonly CREATE_CAPACITY_RESERVATION_BY_SPLITTING =
+	static readonly CreateCapacityReservationBySplitting =
 		"ec2:CreateCapacityReservationBySplitting";
 	/** [Write] ec2:CreateCapacityReservationCancellationQuote */
-	static readonly CREATE_CAPACITY_RESERVATION_CANCELLATION_QUOTE =
+	static readonly CreateCapacityReservationCancellationQuote =
 		"ec2:CreateCapacityReservationCancellationQuote";
 	/** [Write] ec2:CreateCapacityReservationFleet */
-	static readonly CREATE_CAPACITY_RESERVATION_FLEET =
+	static readonly CreateCapacityReservationFleet =
 		"ec2:CreateCapacityReservationFleet";
 	/** [Write] ec2:CreateCarrierGateway */
-	static readonly CREATE_CARRIER_GATEWAY = "ec2:CreateCarrierGateway";
+	static readonly CreateCarrierGateway = "ec2:CreateCarrierGateway";
 	/** [Write] ec2:CreateClientVpnEndpoint */
-	static readonly CREATE_CLIENT_VPN_ENDPOINT = "ec2:CreateClientVpnEndpoint";
+	static readonly CreateClientVpnEndpoint = "ec2:CreateClientVpnEndpoint";
 	/** [Write] ec2:CreateClientVpnRoute */
-	static readonly CREATE_CLIENT_VPN_ROUTE = "ec2:CreateClientVpnRoute";
+	static readonly CreateClientVpnRoute = "ec2:CreateClientVpnRoute";
 	/** [Write] ec2:CreateCoipCidr */
-	static readonly CREATE_COIP_CIDR = "ec2:CreateCoipCidr";
+	static readonly CreateCoipCidr = "ec2:CreateCoipCidr";
 	/** [Write] ec2:CreateCoipPool */
-	static readonly CREATE_COIP_POOL = "ec2:CreateCoipPool";
+	static readonly CreateCoipPool = "ec2:CreateCoipPool";
 	/** [PermissionManagement] ec2:CreateCoipPoolPermission */
-	static readonly CREATE_COIP_POOL_PERMISSION = "ec2:CreateCoipPoolPermission";
+	static readonly CreateCoipPoolPermission = "ec2:CreateCoipPoolPermission";
 	/** [Write] ec2:CreateCustomerGateway */
-	static readonly CREATE_CUSTOMER_GATEWAY = "ec2:CreateCustomerGateway";
+	static readonly CreateCustomerGateway = "ec2:CreateCustomerGateway";
 	/** [Write] ec2:CreateDefaultSubnet */
-	static readonly CREATE_DEFAULT_SUBNET = "ec2:CreateDefaultSubnet";
+	static readonly CreateDefaultSubnet = "ec2:CreateDefaultSubnet";
 	/** [Write] ec2:CreateDefaultVpc */
-	static readonly CREATE_DEFAULT_VPC = "ec2:CreateDefaultVpc";
+	static readonly CreateDefaultVpc = "ec2:CreateDefaultVpc";
 	/** [Write] ec2:CreateDelegateMacVolumeOwnershipTask */
-	static readonly CREATE_DELEGATE_MAC_VOLUME_OWNERSHIP_TASK =
+	static readonly CreateDelegateMacVolumeOwnershipTask =
 		"ec2:CreateDelegateMacVolumeOwnershipTask";
 	/** [Write] ec2:CreateDhcpOptions */
-	static readonly CREATE_DHCP_OPTIONS = "ec2:CreateDhcpOptions";
+	static readonly CreateDhcpOptions = "ec2:CreateDhcpOptions";
 	/** [Write] ec2:CreateEgressOnlyInternetGateway */
-	static readonly CREATE_EGRESS_ONLY_INTERNET_GATEWAY =
+	static readonly CreateEgressOnlyInternetGateway =
 		"ec2:CreateEgressOnlyInternetGateway";
 	/** [Write] ec2:CreateFleet */
-	static readonly CREATE_FLEET = "ec2:CreateFleet";
+	static readonly CreateFleet = "ec2:CreateFleet";
 	/** [Write] ec2:CreateFlowLogs */
-	static readonly CREATE_FLOW_LOGS = "ec2:CreateFlowLogs";
+	static readonly CreateFlowLogs = "ec2:CreateFlowLogs";
 	/** [Write] ec2:CreateFpgaImage */
-	static readonly CREATE_FPGA_IMAGE = "ec2:CreateFpgaImage";
+	static readonly CreateFpgaImage = "ec2:CreateFpgaImage";
 	/** [Write] ec2:CreateImage */
-	static readonly CREATE_IMAGE = "ec2:CreateImage";
+	static readonly CreateImage = "ec2:CreateImage";
 	/** [Write] ec2:CreateImageUsageReport */
-	static readonly CREATE_IMAGE_USAGE_REPORT = "ec2:CreateImageUsageReport";
+	static readonly CreateImageUsageReport = "ec2:CreateImageUsageReport";
 	/** [Write] ec2:CreateInstanceConnectEndpoint */
-	static readonly CREATE_INSTANCE_CONNECT_ENDPOINT =
+	static readonly CreateInstanceConnectEndpoint =
 		"ec2:CreateInstanceConnectEndpoint";
 	/** [Write] ec2:CreateInstanceEventWindow */
-	static readonly CREATE_INSTANCE_EVENT_WINDOW =
-		"ec2:CreateInstanceEventWindow";
+	static readonly CreateInstanceEventWindow = "ec2:CreateInstanceEventWindow";
 	/** [Write] ec2:CreateInstanceExportTask */
-	static readonly CREATE_INSTANCE_EXPORT_TASK = "ec2:CreateInstanceExportTask";
+	static readonly CreateInstanceExportTask = "ec2:CreateInstanceExportTask";
 	/** [Write] ec2:CreateInternetGateway */
-	static readonly CREATE_INTERNET_GATEWAY = "ec2:CreateInternetGateway";
+	static readonly CreateInternetGateway = "ec2:CreateInternetGateway";
 	/** [Write] ec2:CreateInterruptibleCapacityReservationAllocation */
-	static readonly CREATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION =
+	static readonly CreateInterruptibleCapacityReservationAllocation =
 		"ec2:CreateInterruptibleCapacityReservationAllocation";
 	/** [Write] ec2:CreateIpam */
-	static readonly CREATE_IPAM = "ec2:CreateIpam";
+	static readonly CreateIpam = "ec2:CreateIpam";
 	/** [Write] ec2:CreateIpamExternalResourceVerificationToken */
-	static readonly CREATE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN =
+	static readonly CreateIpamExternalResourceVerificationToken =
 		"ec2:CreateIpamExternalResourceVerificationToken";
 	/** [Write] ec2:CreateIpamPolicy */
-	static readonly CREATE_IPAM_POLICY = "ec2:CreateIpamPolicy";
+	static readonly CreateIpamPolicy = "ec2:CreateIpamPolicy";
 	/** [Write] ec2:CreateIpamPool */
-	static readonly CREATE_IPAM_POOL = "ec2:CreateIpamPool";
+	static readonly CreateIpamPool = "ec2:CreateIpamPool";
 	/** [Write] ec2:CreateIpamPrefixListResolver */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER =
+	static readonly CreateIpamPrefixListResolver =
 		"ec2:CreateIpamPrefixListResolver";
 	/** [Write] ec2:CreateIpamPrefixListResolverTarget */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER_TARGET =
+	static readonly CreateIpamPrefixListResolverTarget =
 		"ec2:CreateIpamPrefixListResolverTarget";
 	/** [Write] ec2:CreateIpamResourceDiscovery */
-	static readonly CREATE_IPAM_RESOURCE_DISCOVERY =
+	static readonly CreateIpamResourceDiscovery =
 		"ec2:CreateIpamResourceDiscovery";
 	/** [Write] ec2:CreateIpamScope */
-	static readonly CREATE_IPAM_SCOPE = "ec2:CreateIpamScope";
+	static readonly CreateIpamScope = "ec2:CreateIpamScope";
 	/** [Write] ec2:CreateKeyPair */
-	static readonly CREATE_KEY_PAIR = "ec2:CreateKeyPair";
+	static readonly CreateKeyPair = "ec2:CreateKeyPair";
 	/** [Write] ec2:CreateLaunchTemplate */
-	static readonly CREATE_LAUNCH_TEMPLATE = "ec2:CreateLaunchTemplate";
+	static readonly CreateLaunchTemplate = "ec2:CreateLaunchTemplate";
 	/** [Write] ec2:CreateLaunchTemplateVersion */
-	static readonly CREATE_LAUNCH_TEMPLATE_VERSION =
+	static readonly CreateLaunchTemplateVersion =
 		"ec2:CreateLaunchTemplateVersion";
 	/** [Write] ec2:CreateLocalGatewayRoute */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE = "ec2:CreateLocalGatewayRoute";
+	static readonly CreateLocalGatewayRoute = "ec2:CreateLocalGatewayRoute";
 	/** [Write] ec2:CreateLocalGatewayRouteTable */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE =
+	static readonly CreateLocalGatewayRouteTable =
 		"ec2:CreateLocalGatewayRouteTable";
 	/** [PermissionManagement] ec2:CreateLocalGatewayRouteTablePermission */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION =
+	static readonly CreateLocalGatewayRouteTablePermission =
 		"ec2:CreateLocalGatewayRouteTablePermission";
 	/** [Write] ec2:CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION =
+	static readonly CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation =
 		"ec2:CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation";
 	/** [Write] ec2:CreateLocalGatewayRouteTableVpcAssociation */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION =
+	static readonly CreateLocalGatewayRouteTableVpcAssociation =
 		"ec2:CreateLocalGatewayRouteTableVpcAssociation";
 	/** [Write] ec2:CreateLocalGatewayVirtualInterface */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE =
+	static readonly CreateLocalGatewayVirtualInterface =
 		"ec2:CreateLocalGatewayVirtualInterface";
 	/** [Write] ec2:CreateLocalGatewayVirtualInterfaceGroup */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP =
+	static readonly CreateLocalGatewayVirtualInterfaceGroup =
 		"ec2:CreateLocalGatewayVirtualInterfaceGroup";
 	/** [Write] ec2:CreateMacSystemIntegrityProtectionModificationTask */
-	static readonly CREATE_MAC_SYSTEM_INTEGRITY_PROTECTION_MODIFICATION_TASK =
+	static readonly CreateMacSystemIntegrityProtectionModificationTask =
 		"ec2:CreateMacSystemIntegrityProtectionModificationTask";
 	/** [Write] ec2:CreateManagedPrefixList */
-	static readonly CREATE_MANAGED_PREFIX_LIST = "ec2:CreateManagedPrefixList";
+	static readonly CreateManagedPrefixList = "ec2:CreateManagedPrefixList";
 	/** [Write] ec2:CreateNatGateway */
-	static readonly CREATE_NAT_GATEWAY = "ec2:CreateNatGateway";
+	static readonly CreateNatGateway = "ec2:CreateNatGateway";
 	/** [Write] ec2:CreateNetworkAcl */
-	static readonly CREATE_NETWORK_ACL = "ec2:CreateNetworkAcl";
+	static readonly CreateNetworkAcl = "ec2:CreateNetworkAcl";
 	/** [Write] ec2:CreateNetworkAclEntry */
-	static readonly CREATE_NETWORK_ACL_ENTRY = "ec2:CreateNetworkAclEntry";
+	static readonly CreateNetworkAclEntry = "ec2:CreateNetworkAclEntry";
 	/** [Write] ec2:CreateNetworkInsightsAccessScope */
-	static readonly CREATE_NETWORK_INSIGHTS_ACCESS_SCOPE =
+	static readonly CreateNetworkInsightsAccessScope =
 		"ec2:CreateNetworkInsightsAccessScope";
 	/** [Write] ec2:CreateNetworkInsightsPath */
-	static readonly CREATE_NETWORK_INSIGHTS_PATH =
-		"ec2:CreateNetworkInsightsPath";
+	static readonly CreateNetworkInsightsPath = "ec2:CreateNetworkInsightsPath";
 	/** [Write] ec2:CreateNetworkInterface */
-	static readonly CREATE_NETWORK_INTERFACE = "ec2:CreateNetworkInterface";
+	static readonly CreateNetworkInterface = "ec2:CreateNetworkInterface";
 	/** [PermissionManagement] ec2:CreateNetworkInterfacePermission */
-	static readonly CREATE_NETWORK_INTERFACE_PERMISSION =
+	static readonly CreateNetworkInterfacePermission =
 		"ec2:CreateNetworkInterfacePermission";
 	/** [PermissionManagement] ec2:CreateOdbNetworkPeering */
-	static readonly CREATE_ODB_NETWORK_PEERING = "ec2:CreateOdbNetworkPeering";
+	static readonly CreateOdbNetworkPeering = "ec2:CreateOdbNetworkPeering";
 	/** [Write] ec2:CreatePlacementGroup */
-	static readonly CREATE_PLACEMENT_GROUP = "ec2:CreatePlacementGroup";
+	static readonly CreatePlacementGroup = "ec2:CreatePlacementGroup";
 	/** [Write] ec2:CreatePublicIpv4Pool */
-	static readonly CREATE_PUBLIC_IPV4_POOL = "ec2:CreatePublicIpv4Pool";
+	static readonly CreatePublicIpv4Pool = "ec2:CreatePublicIpv4Pool";
 	/** [Write] ec2:CreateReplaceRootVolumeTask */
-	static readonly CREATE_REPLACE_ROOT_VOLUME_TASK =
+	static readonly CreateReplaceRootVolumeTask =
 		"ec2:CreateReplaceRootVolumeTask";
 	/** [Write] ec2:CreateReservedInstancesListing */
-	static readonly CREATE_RESERVED_INSTANCES_LISTING =
+	static readonly CreateReservedInstancesListing =
 		"ec2:CreateReservedInstancesListing";
 	/** [Write] ec2:CreateRestoreImageTask */
-	static readonly CREATE_RESTORE_IMAGE_TASK = "ec2:CreateRestoreImageTask";
+	static readonly CreateRestoreImageTask = "ec2:CreateRestoreImageTask";
 	/** [Write] ec2:CreateRoute */
-	static readonly CREATE_ROUTE = "ec2:CreateRoute";
+	static readonly CreateRoute = "ec2:CreateRoute";
 	/** [Write] ec2:CreateRouteServer */
-	static readonly CREATE_ROUTE_SERVER = "ec2:CreateRouteServer";
+	static readonly CreateRouteServer = "ec2:CreateRouteServer";
 	/** [Write] ec2:CreateRouteServerEndpoint */
-	static readonly CREATE_ROUTE_SERVER_ENDPOINT =
-		"ec2:CreateRouteServerEndpoint";
+	static readonly CreateRouteServerEndpoint = "ec2:CreateRouteServerEndpoint";
 	/** [Write] ec2:CreateRouteServerPeer */
-	static readonly CREATE_ROUTE_SERVER_PEER = "ec2:CreateRouteServerPeer";
+	static readonly CreateRouteServerPeer = "ec2:CreateRouteServerPeer";
 	/** [Write] ec2:CreateRouteTable */
-	static readonly CREATE_ROUTE_TABLE = "ec2:CreateRouteTable";
+	static readonly CreateRouteTable = "ec2:CreateRouteTable";
 	/** [Write] ec2:CreateSecondaryNetwork */
-	static readonly CREATE_SECONDARY_NETWORK = "ec2:CreateSecondaryNetwork";
+	static readonly CreateSecondaryNetwork = "ec2:CreateSecondaryNetwork";
 	/** [Write] ec2:CreateSecondarySubnet */
-	static readonly CREATE_SECONDARY_SUBNET = "ec2:CreateSecondarySubnet";
+	static readonly CreateSecondarySubnet = "ec2:CreateSecondarySubnet";
 	/** [Write] ec2:CreateSecurityGroup */
-	static readonly CREATE_SECURITY_GROUP = "ec2:CreateSecurityGroup";
+	static readonly CreateSecurityGroup = "ec2:CreateSecurityGroup";
 	/** [Write] ec2:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "ec2:CreateSnapshot";
+	static readonly CreateSnapshot = "ec2:CreateSnapshot";
 	/** [Write] ec2:CreateSnapshots */
-	static readonly CREATE_SNAPSHOTS = "ec2:CreateSnapshots";
+	static readonly CreateSnapshots = "ec2:CreateSnapshots";
 	/** [Write] ec2:CreateSpotDatafeedSubscription */
-	static readonly CREATE_SPOT_DATAFEED_SUBSCRIPTION =
+	static readonly CreateSpotDatafeedSubscription =
 		"ec2:CreateSpotDatafeedSubscription";
 	/** [Write] ec2:CreateStoreImageTask */
-	static readonly CREATE_STORE_IMAGE_TASK = "ec2:CreateStoreImageTask";
+	static readonly CreateStoreImageTask = "ec2:CreateStoreImageTask";
 	/** [Write] ec2:CreateSubnet */
-	static readonly CREATE_SUBNET = "ec2:CreateSubnet";
+	static readonly CreateSubnet = "ec2:CreateSubnet";
 	/** [Write] ec2:CreateSubnetCidrReservation */
-	static readonly CREATE_SUBNET_CIDR_RESERVATION =
+	static readonly CreateSubnetCidrReservation =
 		"ec2:CreateSubnetCidrReservation";
 	/** [Tagging] ec2:CreateTags */
-	static readonly CREATE_TAGS = "ec2:CreateTags";
+	static readonly CreateTags = "ec2:CreateTags";
 	/** [Write] ec2:CreateTrafficMirrorFilter */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER =
-		"ec2:CreateTrafficMirrorFilter";
+	static readonly CreateTrafficMirrorFilter = "ec2:CreateTrafficMirrorFilter";
 	/** [Write] ec2:CreateTrafficMirrorFilterRule */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER_RULE =
+	static readonly CreateTrafficMirrorFilterRule =
 		"ec2:CreateTrafficMirrorFilterRule";
 	/** [Write] ec2:CreateTrafficMirrorSession */
-	static readonly CREATE_TRAFFIC_MIRROR_SESSION =
-		"ec2:CreateTrafficMirrorSession";
+	static readonly CreateTrafficMirrorSession = "ec2:CreateTrafficMirrorSession";
 	/** [Write] ec2:CreateTrafficMirrorTarget */
-	static readonly CREATE_TRAFFIC_MIRROR_TARGET =
-		"ec2:CreateTrafficMirrorTarget";
+	static readonly CreateTrafficMirrorTarget = "ec2:CreateTrafficMirrorTarget";
 	/** [Write] ec2:CreateTransitGateway */
-	static readonly CREATE_TRANSIT_GATEWAY = "ec2:CreateTransitGateway";
+	static readonly CreateTransitGateway = "ec2:CreateTransitGateway";
 	/** [Write] ec2:CreateTransitGatewayConnect */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT =
+	static readonly CreateTransitGatewayConnect =
 		"ec2:CreateTransitGatewayConnect";
 	/** [Write] ec2:CreateTransitGatewayConnectPeer */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT_PEER =
+	static readonly CreateTransitGatewayConnectPeer =
 		"ec2:CreateTransitGatewayConnectPeer";
 	/** [Write] ec2:CreateTransitGatewayMeteringPolicy */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY =
+	static readonly CreateTransitGatewayMeteringPolicy =
 		"ec2:CreateTransitGatewayMeteringPolicy";
 	/** [Write] ec2:CreateTransitGatewayMeteringPolicyEntry */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY =
+	static readonly CreateTransitGatewayMeteringPolicyEntry =
 		"ec2:CreateTransitGatewayMeteringPolicyEntry";
 	/** [Write] ec2:CreateTransitGatewayMulticastDomain */
-	static readonly CREATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN =
+	static readonly CreateTransitGatewayMulticastDomain =
 		"ec2:CreateTransitGatewayMulticastDomain";
 	/** [Write] ec2:CreateTransitGatewayPeeringAttachment */
-	static readonly CREATE_TRANSIT_GATEWAY_PEERING_ATTACHMENT =
+	static readonly CreateTransitGatewayPeeringAttachment =
 		"ec2:CreateTransitGatewayPeeringAttachment";
 	/** [Write] ec2:CreateTransitGatewayPolicyTable */
-	static readonly CREATE_TRANSIT_GATEWAY_POLICY_TABLE =
+	static readonly CreateTransitGatewayPolicyTable =
 		"ec2:CreateTransitGatewayPolicyTable";
 	/** [Write] ec2:CreateTransitGatewayPrefixListReference */
-	static readonly CREATE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE =
+	static readonly CreateTransitGatewayPrefixListReference =
 		"ec2:CreateTransitGatewayPrefixListReference";
 	/** [Write] ec2:CreateTransitGatewayRoute */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE =
-		"ec2:CreateTransitGatewayRoute";
+	static readonly CreateTransitGatewayRoute = "ec2:CreateTransitGatewayRoute";
 	/** [Write] ec2:CreateTransitGatewayRouteTable */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE =
+	static readonly CreateTransitGatewayRouteTable =
 		"ec2:CreateTransitGatewayRouteTable";
 	/** [Write] ec2:CreateTransitGatewayRouteTableAnnouncement */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT =
+	static readonly CreateTransitGatewayRouteTableAnnouncement =
 		"ec2:CreateTransitGatewayRouteTableAnnouncement";
 	/** [Write] ec2:CreateTransitGatewayVpcAttachment */
-	static readonly CREATE_TRANSIT_GATEWAY_VPC_ATTACHMENT =
+	static readonly CreateTransitGatewayVpcAttachment =
 		"ec2:CreateTransitGatewayVpcAttachment";
 	/** [Write] ec2:CreateVerifiedAccessEndpoint */
-	static readonly CREATE_VERIFIED_ACCESS_ENDPOINT =
+	static readonly CreateVerifiedAccessEndpoint =
 		"ec2:CreateVerifiedAccessEndpoint";
 	/** [Write] ec2:CreateVerifiedAccessGroup */
-	static readonly CREATE_VERIFIED_ACCESS_GROUP =
-		"ec2:CreateVerifiedAccessGroup";
+	static readonly CreateVerifiedAccessGroup = "ec2:CreateVerifiedAccessGroup";
 	/** [Write] ec2:CreateVerifiedAccessInstance */
-	static readonly CREATE_VERIFIED_ACCESS_INSTANCE =
+	static readonly CreateVerifiedAccessInstance =
 		"ec2:CreateVerifiedAccessInstance";
 	/** [Write] ec2:CreateVerifiedAccessTrustProvider */
-	static readonly CREATE_VERIFIED_ACCESS_TRUST_PROVIDER =
+	static readonly CreateVerifiedAccessTrustProvider =
 		"ec2:CreateVerifiedAccessTrustProvider";
 	/** [Write] ec2:CreateVolume */
-	static readonly CREATE_VOLUME = "ec2:CreateVolume";
+	static readonly CreateVolume = "ec2:CreateVolume";
 	/** [Write] ec2:CreateVpc */
-	static readonly CREATE_VPC = "ec2:CreateVpc";
+	static readonly CreateVpc = "ec2:CreateVpc";
 	/** [Write] ec2:CreateVpcBlockPublicAccessExclusion */
-	static readonly CREATE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION =
+	static readonly CreateVpcBlockPublicAccessExclusion =
 		"ec2:CreateVpcBlockPublicAccessExclusion";
 	/** [Write] ec2:CreateVpcEncryptionControl */
-	static readonly CREATE_VPC_ENCRYPTION_CONTROL =
-		"ec2:CreateVpcEncryptionControl";
+	static readonly CreateVpcEncryptionControl = "ec2:CreateVpcEncryptionControl";
 	/** [Write] ec2:CreateVpcEndpoint */
-	static readonly CREATE_VPC_ENDPOINT = "ec2:CreateVpcEndpoint";
+	static readonly CreateVpcEndpoint = "ec2:CreateVpcEndpoint";
 	/** [Write] ec2:CreateVpcEndpointConnectionNotification */
-	static readonly CREATE_VPC_ENDPOINT_CONNECTION_NOTIFICATION =
+	static readonly CreateVpcEndpointConnectionNotification =
 		"ec2:CreateVpcEndpointConnectionNotification";
 	/** [Write] ec2:CreateVpcEndpointServiceConfiguration */
-	static readonly CREATE_VPC_ENDPOINT_SERVICE_CONFIGURATION =
+	static readonly CreateVpcEndpointServiceConfiguration =
 		"ec2:CreateVpcEndpointServiceConfiguration";
 	/** [Write] ec2:CreateVpcPeeringConnection */
-	static readonly CREATE_VPC_PEERING_CONNECTION =
-		"ec2:CreateVpcPeeringConnection";
+	static readonly CreateVpcPeeringConnection = "ec2:CreateVpcPeeringConnection";
 	/** [Write] ec2:CreateVpnConcentrator */
-	static readonly CREATE_VPN_CONCENTRATOR = "ec2:CreateVpnConcentrator";
+	static readonly CreateVpnConcentrator = "ec2:CreateVpnConcentrator";
 	/** [Write] ec2:CreateVpnConnection */
-	static readonly CREATE_VPN_CONNECTION = "ec2:CreateVpnConnection";
+	static readonly CreateVpnConnection = "ec2:CreateVpnConnection";
 	/** [Write] ec2:CreateVpnConnectionRoute */
-	static readonly CREATE_VPN_CONNECTION_ROUTE = "ec2:CreateVpnConnectionRoute";
+	static readonly CreateVpnConnectionRoute = "ec2:CreateVpnConnectionRoute";
 	/** [Write] ec2:CreateVpnGateway */
-	static readonly CREATE_VPN_GATEWAY = "ec2:CreateVpnGateway";
+	static readonly CreateVpnGateway = "ec2:CreateVpnGateway";
 	/** [Write] ec2:DeleteCapacityManagerDataExport */
-	static readonly DELETE_CAPACITY_MANAGER_DATA_EXPORT =
+	static readonly DeleteCapacityManagerDataExport =
 		"ec2:DeleteCapacityManagerDataExport";
 	/** [Write] ec2:DeleteCarrierGateway */
-	static readonly DELETE_CARRIER_GATEWAY = "ec2:DeleteCarrierGateway";
+	static readonly DeleteCarrierGateway = "ec2:DeleteCarrierGateway";
 	/** [Write] ec2:DeleteClientVpnEndpoint */
-	static readonly DELETE_CLIENT_VPN_ENDPOINT = "ec2:DeleteClientVpnEndpoint";
+	static readonly DeleteClientVpnEndpoint = "ec2:DeleteClientVpnEndpoint";
 	/** [Write] ec2:DeleteClientVpnRoute */
-	static readonly DELETE_CLIENT_VPN_ROUTE = "ec2:DeleteClientVpnRoute";
+	static readonly DeleteClientVpnRoute = "ec2:DeleteClientVpnRoute";
 	/** [Write] ec2:DeleteCoipCidr */
-	static readonly DELETE_COIP_CIDR = "ec2:DeleteCoipCidr";
+	static readonly DeleteCoipCidr = "ec2:DeleteCoipCidr";
 	/** [Write] ec2:DeleteCoipPool */
-	static readonly DELETE_COIP_POOL = "ec2:DeleteCoipPool";
+	static readonly DeleteCoipPool = "ec2:DeleteCoipPool";
 	/** [PermissionManagement] ec2:DeleteCoipPoolPermission */
-	static readonly DELETE_COIP_POOL_PERMISSION = "ec2:DeleteCoipPoolPermission";
+	static readonly DeleteCoipPoolPermission = "ec2:DeleteCoipPoolPermission";
 	/** [Write] ec2:DeleteCustomerGateway */
-	static readonly DELETE_CUSTOMER_GATEWAY = "ec2:DeleteCustomerGateway";
+	static readonly DeleteCustomerGateway = "ec2:DeleteCustomerGateway";
 	/** [Write] ec2:DeleteDhcpOptions */
-	static readonly DELETE_DHCP_OPTIONS = "ec2:DeleteDhcpOptions";
+	static readonly DeleteDhcpOptions = "ec2:DeleteDhcpOptions";
 	/** [Write] ec2:DeleteEgressOnlyInternetGateway */
-	static readonly DELETE_EGRESS_ONLY_INTERNET_GATEWAY =
+	static readonly DeleteEgressOnlyInternetGateway =
 		"ec2:DeleteEgressOnlyInternetGateway";
 	/** [Write] ec2:DeleteFleets */
-	static readonly DELETE_FLEETS = "ec2:DeleteFleets";
+	static readonly DeleteFleets = "ec2:DeleteFleets";
 	/** [Write] ec2:DeleteFlowLogs */
-	static readonly DELETE_FLOW_LOGS = "ec2:DeleteFlowLogs";
+	static readonly DeleteFlowLogs = "ec2:DeleteFlowLogs";
 	/** [Write] ec2:DeleteFpgaImage */
-	static readonly DELETE_FPGA_IMAGE = "ec2:DeleteFpgaImage";
+	static readonly DeleteFpgaImage = "ec2:DeleteFpgaImage";
 	/** [Write] ec2:DeleteImageUsageReport */
-	static readonly DELETE_IMAGE_USAGE_REPORT = "ec2:DeleteImageUsageReport";
+	static readonly DeleteImageUsageReport = "ec2:DeleteImageUsageReport";
 	/** [Write] ec2:DeleteInstanceConnectEndpoint */
-	static readonly DELETE_INSTANCE_CONNECT_ENDPOINT =
+	static readonly DeleteInstanceConnectEndpoint =
 		"ec2:DeleteInstanceConnectEndpoint";
 	/** [Write] ec2:DeleteInstanceEventWindow */
-	static readonly DELETE_INSTANCE_EVENT_WINDOW =
-		"ec2:DeleteInstanceEventWindow";
+	static readonly DeleteInstanceEventWindow = "ec2:DeleteInstanceEventWindow";
 	/** [Write] ec2:DeleteInternetGateway */
-	static readonly DELETE_INTERNET_GATEWAY = "ec2:DeleteInternetGateway";
+	static readonly DeleteInternetGateway = "ec2:DeleteInternetGateway";
 	/** [Write] ec2:DeleteIpam */
-	static readonly DELETE_IPAM = "ec2:DeleteIpam";
+	static readonly DeleteIpam = "ec2:DeleteIpam";
 	/** [Write] ec2:DeleteIpamExternalResourceVerificationToken */
-	static readonly DELETE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN =
+	static readonly DeleteIpamExternalResourceVerificationToken =
 		"ec2:DeleteIpamExternalResourceVerificationToken";
 	/** [Write] ec2:DeleteIpamPolicy */
-	static readonly DELETE_IPAM_POLICY = "ec2:DeleteIpamPolicy";
+	static readonly DeleteIpamPolicy = "ec2:DeleteIpamPolicy";
 	/** [Write] ec2:DeleteIpamPool */
-	static readonly DELETE_IPAM_POOL = "ec2:DeleteIpamPool";
+	static readonly DeleteIpamPool = "ec2:DeleteIpamPool";
 	/** [Write] ec2:DeleteIpamPrefixListResolver */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER =
+	static readonly DeleteIpamPrefixListResolver =
 		"ec2:DeleteIpamPrefixListResolver";
 	/** [Write] ec2:DeleteIpamPrefixListResolverTarget */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER_TARGET =
+	static readonly DeleteIpamPrefixListResolverTarget =
 		"ec2:DeleteIpamPrefixListResolverTarget";
 	/** [Write] ec2:DeleteIpamResourceDiscovery */
-	static readonly DELETE_IPAM_RESOURCE_DISCOVERY =
+	static readonly DeleteIpamResourceDiscovery =
 		"ec2:DeleteIpamResourceDiscovery";
 	/** [Write] ec2:DeleteIpamScope */
-	static readonly DELETE_IPAM_SCOPE = "ec2:DeleteIpamScope";
+	static readonly DeleteIpamScope = "ec2:DeleteIpamScope";
 	/** [Write] ec2:DeleteKeyPair */
-	static readonly DELETE_KEY_PAIR = "ec2:DeleteKeyPair";
+	static readonly DeleteKeyPair = "ec2:DeleteKeyPair";
 	/** [Write] ec2:DeleteLaunchTemplate */
-	static readonly DELETE_LAUNCH_TEMPLATE = "ec2:DeleteLaunchTemplate";
+	static readonly DeleteLaunchTemplate = "ec2:DeleteLaunchTemplate";
 	/** [Write] ec2:DeleteLaunchTemplateVersions */
-	static readonly DELETE_LAUNCH_TEMPLATE_VERSIONS =
+	static readonly DeleteLaunchTemplateVersions =
 		"ec2:DeleteLaunchTemplateVersions";
 	/** [Write] ec2:DeleteLocalGatewayRoute */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE = "ec2:DeleteLocalGatewayRoute";
+	static readonly DeleteLocalGatewayRoute = "ec2:DeleteLocalGatewayRoute";
 	/** [Write] ec2:DeleteLocalGatewayRouteTable */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE =
+	static readonly DeleteLocalGatewayRouteTable =
 		"ec2:DeleteLocalGatewayRouteTable";
 	/** [PermissionManagement] ec2:DeleteLocalGatewayRouteTablePermission */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION =
+	static readonly DeleteLocalGatewayRouteTablePermission =
 		"ec2:DeleteLocalGatewayRouteTablePermission";
 	/** [Write] ec2:DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION =
+	static readonly DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation =
 		"ec2:DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation";
 	/** [Write] ec2:DeleteLocalGatewayRouteTableVpcAssociation */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION =
+	static readonly DeleteLocalGatewayRouteTableVpcAssociation =
 		"ec2:DeleteLocalGatewayRouteTableVpcAssociation";
 	/** [Write] ec2:DeleteLocalGatewayVirtualInterface */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE =
+	static readonly DeleteLocalGatewayVirtualInterface =
 		"ec2:DeleteLocalGatewayVirtualInterface";
 	/** [Write] ec2:DeleteLocalGatewayVirtualInterfaceGroup */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP =
+	static readonly DeleteLocalGatewayVirtualInterfaceGroup =
 		"ec2:DeleteLocalGatewayVirtualInterfaceGroup";
 	/** [Write] ec2:DeleteManagedPrefixList */
-	static readonly DELETE_MANAGED_PREFIX_LIST = "ec2:DeleteManagedPrefixList";
+	static readonly DeleteManagedPrefixList = "ec2:DeleteManagedPrefixList";
 	/** [Write] ec2:DeleteNatGateway */
-	static readonly DELETE_NAT_GATEWAY = "ec2:DeleteNatGateway";
+	static readonly DeleteNatGateway = "ec2:DeleteNatGateway";
 	/** [Write] ec2:DeleteNetworkAcl */
-	static readonly DELETE_NETWORK_ACL = "ec2:DeleteNetworkAcl";
+	static readonly DeleteNetworkAcl = "ec2:DeleteNetworkAcl";
 	/** [Write] ec2:DeleteNetworkAclEntry */
-	static readonly DELETE_NETWORK_ACL_ENTRY = "ec2:DeleteNetworkAclEntry";
+	static readonly DeleteNetworkAclEntry = "ec2:DeleteNetworkAclEntry";
 	/** [Write] ec2:DeleteNetworkInsightsAccessScope */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE =
+	static readonly DeleteNetworkInsightsAccessScope =
 		"ec2:DeleteNetworkInsightsAccessScope";
 	/** [Write] ec2:DeleteNetworkInsightsAccessScopeAnalysis */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS =
+	static readonly DeleteNetworkInsightsAccessScopeAnalysis =
 		"ec2:DeleteNetworkInsightsAccessScopeAnalysis";
 	/** [Write] ec2:DeleteNetworkInsightsAnalysis */
-	static readonly DELETE_NETWORK_INSIGHTS_ANALYSIS =
+	static readonly DeleteNetworkInsightsAnalysis =
 		"ec2:DeleteNetworkInsightsAnalysis";
 	/** [Write] ec2:DeleteNetworkInsightsPath */
-	static readonly DELETE_NETWORK_INSIGHTS_PATH =
-		"ec2:DeleteNetworkInsightsPath";
+	static readonly DeleteNetworkInsightsPath = "ec2:DeleteNetworkInsightsPath";
 	/** [Write] ec2:DeleteNetworkInterface */
-	static readonly DELETE_NETWORK_INTERFACE = "ec2:DeleteNetworkInterface";
+	static readonly DeleteNetworkInterface = "ec2:DeleteNetworkInterface";
 	/** [PermissionManagement] ec2:DeleteNetworkInterfacePermission */
-	static readonly DELETE_NETWORK_INTERFACE_PERMISSION =
+	static readonly DeleteNetworkInterfacePermission =
 		"ec2:DeleteNetworkInterfacePermission";
 	/** [PermissionManagement] ec2:DeleteOdbNetworkPeering */
-	static readonly DELETE_ODB_NETWORK_PEERING = "ec2:DeleteOdbNetworkPeering";
+	static readonly DeleteOdbNetworkPeering = "ec2:DeleteOdbNetworkPeering";
 	/** [Write] ec2:DeletePlacementGroup */
-	static readonly DELETE_PLACEMENT_GROUP = "ec2:DeletePlacementGroup";
+	static readonly DeletePlacementGroup = "ec2:DeletePlacementGroup";
 	/** [Write] ec2:DeletePublicIpv4Pool */
-	static readonly DELETE_PUBLIC_IPV4_POOL = "ec2:DeletePublicIpv4Pool";
+	static readonly DeletePublicIpv4Pool = "ec2:DeletePublicIpv4Pool";
 	/** [Write] ec2:DeleteQueuedReservedInstances */
-	static readonly DELETE_QUEUED_RESERVED_INSTANCES =
+	static readonly DeleteQueuedReservedInstances =
 		"ec2:DeleteQueuedReservedInstances";
 	/** [PermissionManagement] ec2:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "ec2:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "ec2:DeleteResourcePolicy";
 	/** [Write] ec2:DeleteRoute */
-	static readonly DELETE_ROUTE = "ec2:DeleteRoute";
+	static readonly DeleteRoute = "ec2:DeleteRoute";
 	/** [Write] ec2:DeleteRouteServer */
-	static readonly DELETE_ROUTE_SERVER = "ec2:DeleteRouteServer";
+	static readonly DeleteRouteServer = "ec2:DeleteRouteServer";
 	/** [Write] ec2:DeleteRouteServerEndpoint */
-	static readonly DELETE_ROUTE_SERVER_ENDPOINT =
-		"ec2:DeleteRouteServerEndpoint";
+	static readonly DeleteRouteServerEndpoint = "ec2:DeleteRouteServerEndpoint";
 	/** [Write] ec2:DeleteRouteServerPeer */
-	static readonly DELETE_ROUTE_SERVER_PEER = "ec2:DeleteRouteServerPeer";
+	static readonly DeleteRouteServerPeer = "ec2:DeleteRouteServerPeer";
 	/** [Write] ec2:DeleteRouteTable */
-	static readonly DELETE_ROUTE_TABLE = "ec2:DeleteRouteTable";
+	static readonly DeleteRouteTable = "ec2:DeleteRouteTable";
 	/** [Write] ec2:DeleteSecondaryNetwork */
-	static readonly DELETE_SECONDARY_NETWORK = "ec2:DeleteSecondaryNetwork";
+	static readonly DeleteSecondaryNetwork = "ec2:DeleteSecondaryNetwork";
 	/** [Write] ec2:DeleteSecondarySubnet */
-	static readonly DELETE_SECONDARY_SUBNET = "ec2:DeleteSecondarySubnet";
+	static readonly DeleteSecondarySubnet = "ec2:DeleteSecondarySubnet";
 	/** [Write] ec2:DeleteSecurityGroup */
-	static readonly DELETE_SECURITY_GROUP = "ec2:DeleteSecurityGroup";
+	static readonly DeleteSecurityGroup = "ec2:DeleteSecurityGroup";
 	/** [Write] ec2:DeleteSnapshot */
-	static readonly DELETE_SNAPSHOT = "ec2:DeleteSnapshot";
+	static readonly DeleteSnapshot = "ec2:DeleteSnapshot";
 	/** [Write] ec2:DeleteSpotDatafeedSubscription */
-	static readonly DELETE_SPOT_DATAFEED_SUBSCRIPTION =
+	static readonly DeleteSpotDatafeedSubscription =
 		"ec2:DeleteSpotDatafeedSubscription";
 	/** [Write] ec2:DeleteSubnet */
-	static readonly DELETE_SUBNET = "ec2:DeleteSubnet";
+	static readonly DeleteSubnet = "ec2:DeleteSubnet";
 	/** [Write] ec2:DeleteSubnetCidrReservation */
-	static readonly DELETE_SUBNET_CIDR_RESERVATION =
+	static readonly DeleteSubnetCidrReservation =
 		"ec2:DeleteSubnetCidrReservation";
 	/** [Tagging] ec2:DeleteTags */
-	static readonly DELETE_TAGS = "ec2:DeleteTags";
+	static readonly DeleteTags = "ec2:DeleteTags";
 	/** [Write] ec2:DeleteTrafficMirrorFilter */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER =
-		"ec2:DeleteTrafficMirrorFilter";
+	static readonly DeleteTrafficMirrorFilter = "ec2:DeleteTrafficMirrorFilter";
 	/** [Write] ec2:DeleteTrafficMirrorFilterRule */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER_RULE =
+	static readonly DeleteTrafficMirrorFilterRule =
 		"ec2:DeleteTrafficMirrorFilterRule";
 	/** [Write] ec2:DeleteTrafficMirrorSession */
-	static readonly DELETE_TRAFFIC_MIRROR_SESSION =
-		"ec2:DeleteTrafficMirrorSession";
+	static readonly DeleteTrafficMirrorSession = "ec2:DeleteTrafficMirrorSession";
 	/** [Write] ec2:DeleteTrafficMirrorTarget */
-	static readonly DELETE_TRAFFIC_MIRROR_TARGET =
-		"ec2:DeleteTrafficMirrorTarget";
+	static readonly DeleteTrafficMirrorTarget = "ec2:DeleteTrafficMirrorTarget";
 	/** [Write] ec2:DeleteTransitGateway */
-	static readonly DELETE_TRANSIT_GATEWAY = "ec2:DeleteTransitGateway";
+	static readonly DeleteTransitGateway = "ec2:DeleteTransitGateway";
 	/** [Write] ec2:DeleteTransitGatewayClientVpnAttachment */
-	static readonly DELETE_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT =
+	static readonly DeleteTransitGatewayClientVpnAttachment =
 		"ec2:DeleteTransitGatewayClientVpnAttachment";
 	/** [Write] ec2:DeleteTransitGatewayConnect */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT =
+	static readonly DeleteTransitGatewayConnect =
 		"ec2:DeleteTransitGatewayConnect";
 	/** [Write] ec2:DeleteTransitGatewayConnectPeer */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT_PEER =
+	static readonly DeleteTransitGatewayConnectPeer =
 		"ec2:DeleteTransitGatewayConnectPeer";
 	/** [Write] ec2:DeleteTransitGatewayMeteringPolicy */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY =
+	static readonly DeleteTransitGatewayMeteringPolicy =
 		"ec2:DeleteTransitGatewayMeteringPolicy";
 	/** [Write] ec2:DeleteTransitGatewayMeteringPolicyEntry */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY =
+	static readonly DeleteTransitGatewayMeteringPolicyEntry =
 		"ec2:DeleteTransitGatewayMeteringPolicyEntry";
 	/** [Write] ec2:DeleteTransitGatewayMulticastDomain */
-	static readonly DELETE_TRANSIT_GATEWAY_MULTICAST_DOMAIN =
+	static readonly DeleteTransitGatewayMulticastDomain =
 		"ec2:DeleteTransitGatewayMulticastDomain";
 	/** [Write] ec2:DeleteTransitGatewayPeeringAttachment */
-	static readonly DELETE_TRANSIT_GATEWAY_PEERING_ATTACHMENT =
+	static readonly DeleteTransitGatewayPeeringAttachment =
 		"ec2:DeleteTransitGatewayPeeringAttachment";
 	/** [Write] ec2:DeleteTransitGatewayPolicyTable */
-	static readonly DELETE_TRANSIT_GATEWAY_POLICY_TABLE =
+	static readonly DeleteTransitGatewayPolicyTable =
 		"ec2:DeleteTransitGatewayPolicyTable";
 	/** [Write] ec2:DeleteTransitGatewayPrefixListReference */
-	static readonly DELETE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE =
+	static readonly DeleteTransitGatewayPrefixListReference =
 		"ec2:DeleteTransitGatewayPrefixListReference";
 	/** [Write] ec2:DeleteTransitGatewayRoute */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE =
-		"ec2:DeleteTransitGatewayRoute";
+	static readonly DeleteTransitGatewayRoute = "ec2:DeleteTransitGatewayRoute";
 	/** [Write] ec2:DeleteTransitGatewayRouteTable */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE =
+	static readonly DeleteTransitGatewayRouteTable =
 		"ec2:DeleteTransitGatewayRouteTable";
 	/** [Write] ec2:DeleteTransitGatewayRouteTableAnnouncement */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT =
+	static readonly DeleteTransitGatewayRouteTableAnnouncement =
 		"ec2:DeleteTransitGatewayRouteTableAnnouncement";
 	/** [Write] ec2:DeleteTransitGatewayVpcAttachment */
-	static readonly DELETE_TRANSIT_GATEWAY_VPC_ATTACHMENT =
+	static readonly DeleteTransitGatewayVpcAttachment =
 		"ec2:DeleteTransitGatewayVpcAttachment";
 	/** [Write] ec2:DeleteVerifiedAccessEndpoint */
-	static readonly DELETE_VERIFIED_ACCESS_ENDPOINT =
+	static readonly DeleteVerifiedAccessEndpoint =
 		"ec2:DeleteVerifiedAccessEndpoint";
 	/** [Write] ec2:DeleteVerifiedAccessGroup */
-	static readonly DELETE_VERIFIED_ACCESS_GROUP =
-		"ec2:DeleteVerifiedAccessGroup";
+	static readonly DeleteVerifiedAccessGroup = "ec2:DeleteVerifiedAccessGroup";
 	/** [Write] ec2:DeleteVerifiedAccessInstance */
-	static readonly DELETE_VERIFIED_ACCESS_INSTANCE =
+	static readonly DeleteVerifiedAccessInstance =
 		"ec2:DeleteVerifiedAccessInstance";
 	/** [Write] ec2:DeleteVerifiedAccessTrustProvider */
-	static readonly DELETE_VERIFIED_ACCESS_TRUST_PROVIDER =
+	static readonly DeleteVerifiedAccessTrustProvider =
 		"ec2:DeleteVerifiedAccessTrustProvider";
 	/** [Write] ec2:DeleteVolume */
-	static readonly DELETE_VOLUME = "ec2:DeleteVolume";
+	static readonly DeleteVolume = "ec2:DeleteVolume";
 	/** [Write] ec2:DeleteVpc */
-	static readonly DELETE_VPC = "ec2:DeleteVpc";
+	static readonly DeleteVpc = "ec2:DeleteVpc";
 	/** [Write] ec2:DeleteVpcBlockPublicAccessExclusion */
-	static readonly DELETE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION =
+	static readonly DeleteVpcBlockPublicAccessExclusion =
 		"ec2:DeleteVpcBlockPublicAccessExclusion";
 	/** [Write] ec2:DeleteVpcEncryptionControl */
-	static readonly DELETE_VPC_ENCRYPTION_CONTROL =
-		"ec2:DeleteVpcEncryptionControl";
+	static readonly DeleteVpcEncryptionControl = "ec2:DeleteVpcEncryptionControl";
 	/** [Write] ec2:DeleteVpcEndpointConnectionNotifications */
-	static readonly DELETE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS =
+	static readonly DeleteVpcEndpointConnectionNotifications =
 		"ec2:DeleteVpcEndpointConnectionNotifications";
 	/** [Write] ec2:DeleteVpcEndpointServiceConfigurations */
-	static readonly DELETE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS =
+	static readonly DeleteVpcEndpointServiceConfigurations =
 		"ec2:DeleteVpcEndpointServiceConfigurations";
 	/** [Write] ec2:DeleteVpcEndpoints */
-	static readonly DELETE_VPC_ENDPOINTS = "ec2:DeleteVpcEndpoints";
+	static readonly DeleteVpcEndpoints = "ec2:DeleteVpcEndpoints";
 	/** [Write] ec2:DeleteVpcPeeringConnection */
-	static readonly DELETE_VPC_PEERING_CONNECTION =
-		"ec2:DeleteVpcPeeringConnection";
+	static readonly DeleteVpcPeeringConnection = "ec2:DeleteVpcPeeringConnection";
 	/** [Write] ec2:DeleteVpnConcentrator */
-	static readonly DELETE_VPN_CONCENTRATOR = "ec2:DeleteVpnConcentrator";
+	static readonly DeleteVpnConcentrator = "ec2:DeleteVpnConcentrator";
 	/** [Write] ec2:DeleteVpnConnection */
-	static readonly DELETE_VPN_CONNECTION = "ec2:DeleteVpnConnection";
+	static readonly DeleteVpnConnection = "ec2:DeleteVpnConnection";
 	/** [Write] ec2:DeleteVpnConnectionRoute */
-	static readonly DELETE_VPN_CONNECTION_ROUTE = "ec2:DeleteVpnConnectionRoute";
+	static readonly DeleteVpnConnectionRoute = "ec2:DeleteVpnConnectionRoute";
 	/** [Write] ec2:DeleteVpnGateway */
-	static readonly DELETE_VPN_GATEWAY = "ec2:DeleteVpnGateway";
+	static readonly DeleteVpnGateway = "ec2:DeleteVpnGateway";
 	/** [Write] ec2:DeprovisionByoipCidr */
-	static readonly DEPROVISION_BYOIP_CIDR = "ec2:DeprovisionByoipCidr";
+	static readonly DeprovisionByoipCidr = "ec2:DeprovisionByoipCidr";
 	/** [Write] ec2:DeprovisionIpamByoasn */
-	static readonly DEPROVISION_IPAM_BYOASN = "ec2:DeprovisionIpamByoasn";
+	static readonly DeprovisionIpamByoasn = "ec2:DeprovisionIpamByoasn";
 	/** [Write] ec2:DeprovisionIpamPoolCidr */
-	static readonly DEPROVISION_IPAM_POOL_CIDR = "ec2:DeprovisionIpamPoolCidr";
+	static readonly DeprovisionIpamPoolCidr = "ec2:DeprovisionIpamPoolCidr";
 	/** [Write] ec2:DeprovisionPublicIpv4PoolCidr */
-	static readonly DEPROVISION_PUBLIC_IPV4_POOL_CIDR =
+	static readonly DeprovisionPublicIpv4PoolCidr =
 		"ec2:DeprovisionPublicIpv4PoolCidr";
 	/** [Write] ec2:DeregisterImage */
-	static readonly DEREGISTER_IMAGE = "ec2:DeregisterImage";
+	static readonly DeregisterImage = "ec2:DeregisterImage";
 	/** [Write] ec2:DeregisterInstanceEventNotificationAttributes */
-	static readonly DEREGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES =
+	static readonly DeregisterInstanceEventNotificationAttributes =
 		"ec2:DeregisterInstanceEventNotificationAttributes";
 	/** [Write] ec2:DeregisterTransitGatewayMulticastGroupMembers */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS =
+	static readonly DeregisterTransitGatewayMulticastGroupMembers =
 		"ec2:DeregisterTransitGatewayMulticastGroupMembers";
 	/** [Write] ec2:DeregisterTransitGatewayMulticastGroupSources */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES =
+	static readonly DeregisterTransitGatewayMulticastGroupSources =
 		"ec2:DeregisterTransitGatewayMulticastGroupSources";
 	/** [List] ec2:DescribeAccountAttributes */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES = "ec2:DescribeAccountAttributes";
+	static readonly DescribeAccountAttributes = "ec2:DescribeAccountAttributes";
 	/** [List] ec2:DescribeAddressTransfers */
-	static readonly DESCRIBE_ADDRESS_TRANSFERS = "ec2:DescribeAddressTransfers";
+	static readonly DescribeAddressTransfers = "ec2:DescribeAddressTransfers";
 	/** [List] ec2:DescribeAddresses */
-	static readonly DESCRIBE_ADDRESSES = "ec2:DescribeAddresses";
+	static readonly DescribeAddresses = "ec2:DescribeAddresses";
 	/** [List] ec2:DescribeAddressesAttribute */
-	static readonly DESCRIBE_ADDRESSES_ATTRIBUTE =
-		"ec2:DescribeAddressesAttribute";
+	static readonly DescribeAddressesAttribute = "ec2:DescribeAddressesAttribute";
 	/** [List] ec2:DescribeAggregateIdFormat */
-	static readonly DESCRIBE_AGGREGATE_ID_FORMAT =
-		"ec2:DescribeAggregateIdFormat";
+	static readonly DescribeAggregateIdFormat = "ec2:DescribeAggregateIdFormat";
 	/** [List] ec2:DescribeAvailabilityZones */
-	static readonly DESCRIBE_AVAILABILITY_ZONES = "ec2:DescribeAvailabilityZones";
+	static readonly DescribeAvailabilityZones = "ec2:DescribeAvailabilityZones";
 	/** [List] ec2:DescribeAwsNetworkPerformanceMetricSubscriptions */
-	static readonly DESCRIBE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTIONS =
+	static readonly DescribeAwsNetworkPerformanceMetricSubscriptions =
 		"ec2:DescribeAwsNetworkPerformanceMetricSubscriptions";
 	/** [List] ec2:DescribeBundleTasks */
-	static readonly DESCRIBE_BUNDLE_TASKS = "ec2:DescribeBundleTasks";
+	static readonly DescribeBundleTasks = "ec2:DescribeBundleTasks";
 	/** [List] ec2:DescribeByoipCidrs */
-	static readonly DESCRIBE_BYOIP_CIDRS = "ec2:DescribeByoipCidrs";
+	static readonly DescribeByoipCidrs = "ec2:DescribeByoipCidrs";
 	/** [List] ec2:DescribeCapacityBlockExtensionHistory */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_HISTORY =
+	static readonly DescribeCapacityBlockExtensionHistory =
 		"ec2:DescribeCapacityBlockExtensionHistory";
 	/** [List] ec2:DescribeCapacityBlockExtensionOfferings */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_OFFERINGS =
+	static readonly DescribeCapacityBlockExtensionOfferings =
 		"ec2:DescribeCapacityBlockExtensionOfferings";
 	/** [List] ec2:DescribeCapacityBlockOfferings */
-	static readonly DESCRIBE_CAPACITY_BLOCK_OFFERINGS =
+	static readonly DescribeCapacityBlockOfferings =
 		"ec2:DescribeCapacityBlockOfferings";
 	/** [List] ec2:DescribeCapacityBlockStatus */
-	static readonly DESCRIBE_CAPACITY_BLOCK_STATUS =
+	static readonly DescribeCapacityBlockStatus =
 		"ec2:DescribeCapacityBlockStatus";
 	/** [List] ec2:DescribeCapacityBlocks */
-	static readonly DESCRIBE_CAPACITY_BLOCKS = "ec2:DescribeCapacityBlocks";
+	static readonly DescribeCapacityBlocks = "ec2:DescribeCapacityBlocks";
 	/** [List] ec2:DescribeCapacityManagerDataExports */
-	static readonly DESCRIBE_CAPACITY_MANAGER_DATA_EXPORTS =
+	static readonly DescribeCapacityManagerDataExports =
 		"ec2:DescribeCapacityManagerDataExports";
 	/** [List] ec2:DescribeCapacityReservationBillingRequests */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_BILLING_REQUESTS =
+	static readonly DescribeCapacityReservationBillingRequests =
 		"ec2:DescribeCapacityReservationBillingRequests";
 	/** [List] ec2:DescribeCapacityReservationCancellationQuotes */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_CANCELLATION_QUOTES =
+	static readonly DescribeCapacityReservationCancellationQuotes =
 		"ec2:DescribeCapacityReservationCancellationQuotes";
 	/** [List] ec2:DescribeCapacityReservationFleets */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_FLEETS =
+	static readonly DescribeCapacityReservationFleets =
 		"ec2:DescribeCapacityReservationFleets";
 	/** [List] ec2:DescribeCapacityReservationTopology */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_TOPOLOGY =
+	static readonly DescribeCapacityReservationTopology =
 		"ec2:DescribeCapacityReservationTopology";
 	/** [List] ec2:DescribeCapacityReservations */
-	static readonly DESCRIBE_CAPACITY_RESERVATIONS =
+	static readonly DescribeCapacityReservations =
 		"ec2:DescribeCapacityReservations";
 	/** [List] ec2:DescribeCarrierGateways */
-	static readonly DESCRIBE_CARRIER_GATEWAYS = "ec2:DescribeCarrierGateways";
+	static readonly DescribeCarrierGateways = "ec2:DescribeCarrierGateways";
 	/** [List] ec2:DescribeClassicLinkInstances */
-	static readonly DESCRIBE_CLASSIC_LINK_INSTANCES =
+	static readonly DescribeClassicLinkInstances =
 		"ec2:DescribeClassicLinkInstances";
 	/** [List] ec2:DescribeClientVpnAuthorizationRules */
-	static readonly DESCRIBE_CLIENT_VPN_AUTHORIZATION_RULES =
+	static readonly DescribeClientVpnAuthorizationRules =
 		"ec2:DescribeClientVpnAuthorizationRules";
 	/** [List] ec2:DescribeClientVpnConnections */
-	static readonly DESCRIBE_CLIENT_VPN_CONNECTIONS =
+	static readonly DescribeClientVpnConnections =
 		"ec2:DescribeClientVpnConnections";
 	/** [List] ec2:DescribeClientVpnEndpoints */
-	static readonly DESCRIBE_CLIENT_VPN_ENDPOINTS =
-		"ec2:DescribeClientVpnEndpoints";
+	static readonly DescribeClientVpnEndpoints = "ec2:DescribeClientVpnEndpoints";
 	/** [List] ec2:DescribeClientVpnRoutes */
-	static readonly DESCRIBE_CLIENT_VPN_ROUTES = "ec2:DescribeClientVpnRoutes";
+	static readonly DescribeClientVpnRoutes = "ec2:DescribeClientVpnRoutes";
 	/** [List] ec2:DescribeClientVpnTargetNetworks */
-	static readonly DESCRIBE_CLIENT_VPN_TARGET_NETWORKS =
+	static readonly DescribeClientVpnTargetNetworks =
 		"ec2:DescribeClientVpnTargetNetworks";
 	/** [List] ec2:DescribeCoipPools */
-	static readonly DESCRIBE_COIP_POOLS = "ec2:DescribeCoipPools";
+	static readonly DescribeCoipPools = "ec2:DescribeCoipPools";
 	/** [List] ec2:DescribeConversionTasks */
-	static readonly DESCRIBE_CONVERSION_TASKS = "ec2:DescribeConversionTasks";
+	static readonly DescribeConversionTasks = "ec2:DescribeConversionTasks";
 	/** [List] ec2:DescribeCustomerGateways */
-	static readonly DESCRIBE_CUSTOMER_GATEWAYS = "ec2:DescribeCustomerGateways";
+	static readonly DescribeCustomerGateways = "ec2:DescribeCustomerGateways";
 	/** [List] ec2:DescribeDeclarativePoliciesReports */
-	static readonly DESCRIBE_DECLARATIVE_POLICIES_REPORTS =
+	static readonly DescribeDeclarativePoliciesReports =
 		"ec2:DescribeDeclarativePoliciesReports";
 	/** [List] ec2:DescribeDhcpOptions */
-	static readonly DESCRIBE_DHCP_OPTIONS = "ec2:DescribeDhcpOptions";
+	static readonly DescribeDhcpOptions = "ec2:DescribeDhcpOptions";
 	/** [List] ec2:DescribeEgressOnlyInternetGateways */
-	static readonly DESCRIBE_EGRESS_ONLY_INTERNET_GATEWAYS =
+	static readonly DescribeEgressOnlyInternetGateways =
 		"ec2:DescribeEgressOnlyInternetGateways";
 	/** [List] ec2:DescribeElasticGpus */
-	static readonly DESCRIBE_ELASTIC_GPUS = "ec2:DescribeElasticGpus";
+	static readonly DescribeElasticGpus = "ec2:DescribeElasticGpus";
 	/** [List] ec2:DescribeExportImageTasks */
-	static readonly DESCRIBE_EXPORT_IMAGE_TASKS = "ec2:DescribeExportImageTasks";
+	static readonly DescribeExportImageTasks = "ec2:DescribeExportImageTasks";
 	/** [List] ec2:DescribeExportTasks */
-	static readonly DESCRIBE_EXPORT_TASKS = "ec2:DescribeExportTasks";
+	static readonly DescribeExportTasks = "ec2:DescribeExportTasks";
 	/** [List] ec2:DescribeFastLaunchImages */
-	static readonly DESCRIBE_FAST_LAUNCH_IMAGES = "ec2:DescribeFastLaunchImages";
+	static readonly DescribeFastLaunchImages = "ec2:DescribeFastLaunchImages";
 	/** [List] ec2:DescribeFastSnapshotRestores */
-	static readonly DESCRIBE_FAST_SNAPSHOT_RESTORES =
+	static readonly DescribeFastSnapshotRestores =
 		"ec2:DescribeFastSnapshotRestores";
 	/** [List] ec2:DescribeFleetHistory */
-	static readonly DESCRIBE_FLEET_HISTORY = "ec2:DescribeFleetHistory";
+	static readonly DescribeFleetHistory = "ec2:DescribeFleetHistory";
 	/** [List] ec2:DescribeFleetInstances */
-	static readonly DESCRIBE_FLEET_INSTANCES = "ec2:DescribeFleetInstances";
+	static readonly DescribeFleetInstances = "ec2:DescribeFleetInstances";
 	/** [List] ec2:DescribeFleets */
-	static readonly DESCRIBE_FLEETS = "ec2:DescribeFleets";
+	static readonly DescribeFleets = "ec2:DescribeFleets";
 	/** [List] ec2:DescribeFlowLogs */
-	static readonly DESCRIBE_FLOW_LOGS = "ec2:DescribeFlowLogs";
+	static readonly DescribeFlowLogs = "ec2:DescribeFlowLogs";
 	/** [List] ec2:DescribeFpgaImageAttribute */
-	static readonly DESCRIBE_FPGA_IMAGE_ATTRIBUTE =
-		"ec2:DescribeFpgaImageAttribute";
+	static readonly DescribeFpgaImageAttribute = "ec2:DescribeFpgaImageAttribute";
 	/** [List] ec2:DescribeFpgaImages */
-	static readonly DESCRIBE_FPGA_IMAGES = "ec2:DescribeFpgaImages";
+	static readonly DescribeFpgaImages = "ec2:DescribeFpgaImages";
 	/** [List] ec2:DescribeHostReservationOfferings */
-	static readonly DESCRIBE_HOST_RESERVATION_OFFERINGS =
+	static readonly DescribeHostReservationOfferings =
 		"ec2:DescribeHostReservationOfferings";
 	/** [List] ec2:DescribeHostReservations */
-	static readonly DESCRIBE_HOST_RESERVATIONS = "ec2:DescribeHostReservations";
+	static readonly DescribeHostReservations = "ec2:DescribeHostReservations";
 	/** [List] ec2:DescribeHosts */
-	static readonly DESCRIBE_HOSTS = "ec2:DescribeHosts";
+	static readonly DescribeHosts = "ec2:DescribeHosts";
 	/** [List] ec2:DescribeIamInstanceProfileAssociations */
-	static readonly DESCRIBE_IAM_INSTANCE_PROFILE_ASSOCIATIONS =
+	static readonly DescribeIamInstanceProfileAssociations =
 		"ec2:DescribeIamInstanceProfileAssociations";
 	/** [List] ec2:DescribeIdFormat */
-	static readonly DESCRIBE_ID_FORMAT = "ec2:DescribeIdFormat";
+	static readonly DescribeIdFormat = "ec2:DescribeIdFormat";
 	/** [List] ec2:DescribeIdentityIdFormat */
-	static readonly DESCRIBE_IDENTITY_ID_FORMAT = "ec2:DescribeIdentityIdFormat";
+	static readonly DescribeIdentityIdFormat = "ec2:DescribeIdentityIdFormat";
 	/** [List] ec2:DescribeImageAttribute */
-	static readonly DESCRIBE_IMAGE_ATTRIBUTE = "ec2:DescribeImageAttribute";
+	static readonly DescribeImageAttribute = "ec2:DescribeImageAttribute";
 	/** [List] ec2:DescribeImageReferences */
-	static readonly DESCRIBE_IMAGE_REFERENCES = "ec2:DescribeImageReferences";
+	static readonly DescribeImageReferences = "ec2:DescribeImageReferences";
 	/** [List] ec2:DescribeImageUsageReportEntries */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORT_ENTRIES =
+	static readonly DescribeImageUsageReportEntries =
 		"ec2:DescribeImageUsageReportEntries";
 	/** [List] ec2:DescribeImageUsageReports */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORTS =
-		"ec2:DescribeImageUsageReports";
+	static readonly DescribeImageUsageReports = "ec2:DescribeImageUsageReports";
 	/** [List] ec2:DescribeImages */
-	static readonly DESCRIBE_IMAGES = "ec2:DescribeImages";
+	static readonly DescribeImages = "ec2:DescribeImages";
 	/** [List] ec2:DescribeImportImageTasks */
-	static readonly DESCRIBE_IMPORT_IMAGE_TASKS = "ec2:DescribeImportImageTasks";
+	static readonly DescribeImportImageTasks = "ec2:DescribeImportImageTasks";
 	/** [List] ec2:DescribeImportSnapshotTasks */
-	static readonly DESCRIBE_IMPORT_SNAPSHOT_TASKS =
+	static readonly DescribeImportSnapshotTasks =
 		"ec2:DescribeImportSnapshotTasks";
 	/** [List] ec2:DescribeInstanceAttribute */
-	static readonly DESCRIBE_INSTANCE_ATTRIBUTE = "ec2:DescribeInstanceAttribute";
+	static readonly DescribeInstanceAttribute = "ec2:DescribeInstanceAttribute";
 	/** [List] ec2:DescribeInstanceConnectEndpoints */
-	static readonly DESCRIBE_INSTANCE_CONNECT_ENDPOINTS =
+	static readonly DescribeInstanceConnectEndpoints =
 		"ec2:DescribeInstanceConnectEndpoints";
 	/** [List] ec2:DescribeInstanceCreditSpecifications */
-	static readonly DESCRIBE_INSTANCE_CREDIT_SPECIFICATIONS =
+	static readonly DescribeInstanceCreditSpecifications =
 		"ec2:DescribeInstanceCreditSpecifications";
 	/** [List] ec2:DescribeInstanceEventNotificationAttributes */
-	static readonly DESCRIBE_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES =
+	static readonly DescribeInstanceEventNotificationAttributes =
 		"ec2:DescribeInstanceEventNotificationAttributes";
 	/** [List] ec2:DescribeInstanceEventWindows */
-	static readonly DESCRIBE_INSTANCE_EVENT_WINDOWS =
+	static readonly DescribeInstanceEventWindows =
 		"ec2:DescribeInstanceEventWindows";
 	/** [List] ec2:DescribeInstanceImageMetadata */
-	static readonly DESCRIBE_INSTANCE_IMAGE_METADATA =
+	static readonly DescribeInstanceImageMetadata =
 		"ec2:DescribeInstanceImageMetadata";
 	/** [List] ec2:DescribeInstanceSqlHaHistoryStates */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_HISTORY_STATES =
+	static readonly DescribeInstanceSqlHaHistoryStates =
 		"ec2:DescribeInstanceSqlHaHistoryStates";
 	/** [List] ec2:DescribeInstanceSqlHaStates */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_STATES =
+	static readonly DescribeInstanceSqlHaStates =
 		"ec2:DescribeInstanceSqlHaStates";
 	/** [List] ec2:DescribeInstanceStatus */
-	static readonly DESCRIBE_INSTANCE_STATUS = "ec2:DescribeInstanceStatus";
+	static readonly DescribeInstanceStatus = "ec2:DescribeInstanceStatus";
 	/** [List] ec2:DescribeInstanceTopology */
-	static readonly DESCRIBE_INSTANCE_TOPOLOGY = "ec2:DescribeInstanceTopology";
+	static readonly DescribeInstanceTopology = "ec2:DescribeInstanceTopology";
 	/** [List] ec2:DescribeInstanceTypeOfferings */
-	static readonly DESCRIBE_INSTANCE_TYPE_OFFERINGS =
+	static readonly DescribeInstanceTypeOfferings =
 		"ec2:DescribeInstanceTypeOfferings";
 	/** [List] ec2:DescribeInstanceTypes */
-	static readonly DESCRIBE_INSTANCE_TYPES = "ec2:DescribeInstanceTypes";
+	static readonly DescribeInstanceTypes = "ec2:DescribeInstanceTypes";
 	/** [List] ec2:DescribeInstances */
-	static readonly DESCRIBE_INSTANCES = "ec2:DescribeInstances";
+	static readonly DescribeInstances = "ec2:DescribeInstances";
 	/** [List] ec2:DescribeInternetGateways */
-	static readonly DESCRIBE_INTERNET_GATEWAYS = "ec2:DescribeInternetGateways";
+	static readonly DescribeInternetGateways = "ec2:DescribeInternetGateways";
 	/** [List] ec2:DescribeIpamByoasn */
-	static readonly DESCRIBE_IPAM_BYOASN = "ec2:DescribeIpamByoasn";
+	static readonly DescribeIpamByoasn = "ec2:DescribeIpamByoasn";
 	/** [List] ec2:DescribeIpamExternalResourceVerificationTokens */
-	static readonly DESCRIBE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKENS =
+	static readonly DescribeIpamExternalResourceVerificationTokens =
 		"ec2:DescribeIpamExternalResourceVerificationTokens";
 	/** [List] ec2:DescribeIpamPolicies */
-	static readonly DESCRIBE_IPAM_POLICIES = "ec2:DescribeIpamPolicies";
+	static readonly DescribeIpamPolicies = "ec2:DescribeIpamPolicies";
 	/** [List] ec2:DescribeIpamPoolAllocations */
-	static readonly DESCRIBE_IPAM_POOL_ALLOCATIONS =
+	static readonly DescribeIpamPoolAllocations =
 		"ec2:DescribeIpamPoolAllocations";
 	/** [List] ec2:DescribeIpamPools */
-	static readonly DESCRIBE_IPAM_POOLS = "ec2:DescribeIpamPools";
+	static readonly DescribeIpamPools = "ec2:DescribeIpamPools";
 	/** [List] ec2:DescribeIpamPrefixListResolverTargets */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVER_TARGETS =
+	static readonly DescribeIpamPrefixListResolverTargets =
 		"ec2:DescribeIpamPrefixListResolverTargets";
 	/** [List] ec2:DescribeIpamPrefixListResolvers */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVERS =
+	static readonly DescribeIpamPrefixListResolvers =
 		"ec2:DescribeIpamPrefixListResolvers";
 	/** [List] ec2:DescribeIpamResourceDiscoveries */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERIES =
+	static readonly DescribeIpamResourceDiscoveries =
 		"ec2:DescribeIpamResourceDiscoveries";
 	/** [List] ec2:DescribeIpamResourceDiscoveryAssociations */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERY_ASSOCIATIONS =
+	static readonly DescribeIpamResourceDiscoveryAssociations =
 		"ec2:DescribeIpamResourceDiscoveryAssociations";
 	/** [List] ec2:DescribeIpamScopes */
-	static readonly DESCRIBE_IPAM_SCOPES = "ec2:DescribeIpamScopes";
+	static readonly DescribeIpamScopes = "ec2:DescribeIpamScopes";
 	/** [List] ec2:DescribeIpams */
-	static readonly DESCRIBE_IPAMS = "ec2:DescribeIpams";
+	static readonly DescribeIpams = "ec2:DescribeIpams";
 	/** [List] ec2:DescribeIpv6Pools */
-	static readonly DESCRIBE_IPV6_POOLS = "ec2:DescribeIpv6Pools";
+	static readonly DescribeIpv6Pools = "ec2:DescribeIpv6Pools";
 	/** [List] ec2:DescribeKeyPairs */
-	static readonly DESCRIBE_KEY_PAIRS = "ec2:DescribeKeyPairs";
+	static readonly DescribeKeyPairs = "ec2:DescribeKeyPairs";
 	/** [List] ec2:DescribeLaunchTemplateVersions */
-	static readonly DESCRIBE_LAUNCH_TEMPLATE_VERSIONS =
+	static readonly DescribeLaunchTemplateVersions =
 		"ec2:DescribeLaunchTemplateVersions";
 	/** [List] ec2:DescribeLaunchTemplates */
-	static readonly DESCRIBE_LAUNCH_TEMPLATES = "ec2:DescribeLaunchTemplates";
+	static readonly DescribeLaunchTemplates = "ec2:DescribeLaunchTemplates";
 	/** [List] ec2:DescribeLocalGatewayRouteTablePermissions */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSIONS =
+	static readonly DescribeLocalGatewayRouteTablePermissions =
 		"ec2:DescribeLocalGatewayRouteTablePermissions";
 	/** [List] ec2:DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATIONS =
+	static readonly DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations =
 		"ec2:DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations";
 	/** [List] ec2:DescribeLocalGatewayRouteTableVpcAssociations */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATIONS =
+	static readonly DescribeLocalGatewayRouteTableVpcAssociations =
 		"ec2:DescribeLocalGatewayRouteTableVpcAssociations";
 	/** [List] ec2:DescribeLocalGatewayRouteTables */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLES =
+	static readonly DescribeLocalGatewayRouteTables =
 		"ec2:DescribeLocalGatewayRouteTables";
 	/** [List] ec2:DescribeLocalGatewayVirtualInterfaceGroups */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUPS =
+	static readonly DescribeLocalGatewayVirtualInterfaceGroups =
 		"ec2:DescribeLocalGatewayVirtualInterfaceGroups";
 	/** [List] ec2:DescribeLocalGatewayVirtualInterfaces */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACES =
+	static readonly DescribeLocalGatewayVirtualInterfaces =
 		"ec2:DescribeLocalGatewayVirtualInterfaces";
 	/** [List] ec2:DescribeLocalGateways */
-	static readonly DESCRIBE_LOCAL_GATEWAYS = "ec2:DescribeLocalGateways";
+	static readonly DescribeLocalGateways = "ec2:DescribeLocalGateways";
 	/** [List] ec2:DescribeLockedSnapshots */
-	static readonly DESCRIBE_LOCKED_SNAPSHOTS = "ec2:DescribeLockedSnapshots";
+	static readonly DescribeLockedSnapshots = "ec2:DescribeLockedSnapshots";
 	/** [List] ec2:DescribeMacHosts */
-	static readonly DESCRIBE_MAC_HOSTS = "ec2:DescribeMacHosts";
+	static readonly DescribeMacHosts = "ec2:DescribeMacHosts";
 	/** [List] ec2:DescribeMacModificationTasks */
-	static readonly DESCRIBE_MAC_MODIFICATION_TASKS =
+	static readonly DescribeMacModificationTasks =
 		"ec2:DescribeMacModificationTasks";
 	/** [List] ec2:DescribeManagedPrefixLists */
-	static readonly DESCRIBE_MANAGED_PREFIX_LISTS =
-		"ec2:DescribeManagedPrefixLists";
+	static readonly DescribeManagedPrefixLists = "ec2:DescribeManagedPrefixLists";
 	/** [List] ec2:DescribeMovingAddresses */
-	static readonly DESCRIBE_MOVING_ADDRESSES = "ec2:DescribeMovingAddresses";
+	static readonly DescribeMovingAddresses = "ec2:DescribeMovingAddresses";
 	/** [List] ec2:DescribeNatGateways */
-	static readonly DESCRIBE_NAT_GATEWAYS = "ec2:DescribeNatGateways";
+	static readonly DescribeNatGateways = "ec2:DescribeNatGateways";
 	/** [List] ec2:DescribeNetworkAcls */
-	static readonly DESCRIBE_NETWORK_ACLS = "ec2:DescribeNetworkAcls";
+	static readonly DescribeNetworkAcls = "ec2:DescribeNetworkAcls";
 	/** [List] ec2:DescribeNetworkInsightsAccessScopeAnalyses */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSES =
+	static readonly DescribeNetworkInsightsAccessScopeAnalyses =
 		"ec2:DescribeNetworkInsightsAccessScopeAnalyses";
 	/** [List] ec2:DescribeNetworkInsightsAccessScopes */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPES =
+	static readonly DescribeNetworkInsightsAccessScopes =
 		"ec2:DescribeNetworkInsightsAccessScopes";
 	/** [List] ec2:DescribeNetworkInsightsAnalyses */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ANALYSES =
+	static readonly DescribeNetworkInsightsAnalyses =
 		"ec2:DescribeNetworkInsightsAnalyses";
 	/** [List] ec2:DescribeNetworkInsightsPaths */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_PATHS =
+	static readonly DescribeNetworkInsightsPaths =
 		"ec2:DescribeNetworkInsightsPaths";
 	/** [List] ec2:DescribeNetworkInterfaceAttribute */
-	static readonly DESCRIBE_NETWORK_INTERFACE_ATTRIBUTE =
+	static readonly DescribeNetworkInterfaceAttribute =
 		"ec2:DescribeNetworkInterfaceAttribute";
 	/** [List] ec2:DescribeNetworkInterfacePermissions */
-	static readonly DESCRIBE_NETWORK_INTERFACE_PERMISSIONS =
+	static readonly DescribeNetworkInterfacePermissions =
 		"ec2:DescribeNetworkInterfacePermissions";
 	/** [List] ec2:DescribeNetworkInterfaces */
-	static readonly DESCRIBE_NETWORK_INTERFACES = "ec2:DescribeNetworkInterfaces";
+	static readonly DescribeNetworkInterfaces = "ec2:DescribeNetworkInterfaces";
 	/** [List] ec2:DescribeOutpostLags */
-	static readonly DESCRIBE_OUTPOST_LAGS = "ec2:DescribeOutpostLags";
+	static readonly DescribeOutpostLags = "ec2:DescribeOutpostLags";
 	/** [List] ec2:DescribePlacementGroups */
-	static readonly DESCRIBE_PLACEMENT_GROUPS = "ec2:DescribePlacementGroups";
+	static readonly DescribePlacementGroups = "ec2:DescribePlacementGroups";
 	/** [List] ec2:DescribePrefixLists */
-	static readonly DESCRIBE_PREFIX_LISTS = "ec2:DescribePrefixLists";
+	static readonly DescribePrefixLists = "ec2:DescribePrefixLists";
 	/** [List] ec2:DescribePrincipalIdFormat */
-	static readonly DESCRIBE_PRINCIPAL_ID_FORMAT =
-		"ec2:DescribePrincipalIdFormat";
+	static readonly DescribePrincipalIdFormat = "ec2:DescribePrincipalIdFormat";
 	/** [List] ec2:DescribePublicIpv4Pools */
-	static readonly DESCRIBE_PUBLIC_IPV4_POOLS = "ec2:DescribePublicIpv4Pools";
+	static readonly DescribePublicIpv4Pools = "ec2:DescribePublicIpv4Pools";
 	/** [List] ec2:DescribeRegions */
-	static readonly DESCRIBE_REGIONS = "ec2:DescribeRegions";
+	static readonly DescribeRegions = "ec2:DescribeRegions";
 	/** [List] ec2:DescribeReplaceRootVolumeTasks */
-	static readonly DESCRIBE_REPLACE_ROOT_VOLUME_TASKS =
+	static readonly DescribeReplaceRootVolumeTasks =
 		"ec2:DescribeReplaceRootVolumeTasks";
 	/** [List] ec2:DescribeReservedInstances */
-	static readonly DESCRIBE_RESERVED_INSTANCES = "ec2:DescribeReservedInstances";
+	static readonly DescribeReservedInstances = "ec2:DescribeReservedInstances";
 	/** [List] ec2:DescribeReservedInstancesListings */
-	static readonly DESCRIBE_RESERVED_INSTANCES_LISTINGS =
+	static readonly DescribeReservedInstancesListings =
 		"ec2:DescribeReservedInstancesListings";
 	/** [List] ec2:DescribeReservedInstancesModifications */
-	static readonly DESCRIBE_RESERVED_INSTANCES_MODIFICATIONS =
+	static readonly DescribeReservedInstancesModifications =
 		"ec2:DescribeReservedInstancesModifications";
 	/** [List] ec2:DescribeReservedInstancesOfferings */
-	static readonly DESCRIBE_RESERVED_INSTANCES_OFFERINGS =
+	static readonly DescribeReservedInstancesOfferings =
 		"ec2:DescribeReservedInstancesOfferings";
 	/** [List] ec2:DescribeRouteServerEndpoints */
-	static readonly DESCRIBE_ROUTE_SERVER_ENDPOINTS =
+	static readonly DescribeRouteServerEndpoints =
 		"ec2:DescribeRouteServerEndpoints";
 	/** [List] ec2:DescribeRouteServerPeers */
-	static readonly DESCRIBE_ROUTE_SERVER_PEERS = "ec2:DescribeRouteServerPeers";
+	static readonly DescribeRouteServerPeers = "ec2:DescribeRouteServerPeers";
 	/** [List] ec2:DescribeRouteServers */
-	static readonly DESCRIBE_ROUTE_SERVERS = "ec2:DescribeRouteServers";
+	static readonly DescribeRouteServers = "ec2:DescribeRouteServers";
 	/** [List] ec2:DescribeRouteTables */
-	static readonly DESCRIBE_ROUTE_TABLES = "ec2:DescribeRouteTables";
+	static readonly DescribeRouteTables = "ec2:DescribeRouteTables";
 	/** [List] ec2:DescribeScheduledInstanceAvailability */
-	static readonly DESCRIBE_SCHEDULED_INSTANCE_AVAILABILITY =
+	static readonly DescribeScheduledInstanceAvailability =
 		"ec2:DescribeScheduledInstanceAvailability";
 	/** [List] ec2:DescribeScheduledInstances */
-	static readonly DESCRIBE_SCHEDULED_INSTANCES =
-		"ec2:DescribeScheduledInstances";
+	static readonly DescribeScheduledInstances = "ec2:DescribeScheduledInstances";
 	/** [List] ec2:DescribeSecondaryInterfaces */
-	static readonly DESCRIBE_SECONDARY_INTERFACES =
+	static readonly DescribeSecondaryInterfaces =
 		"ec2:DescribeSecondaryInterfaces";
 	/** [List] ec2:DescribeSecondaryNetworks */
-	static readonly DESCRIBE_SECONDARY_NETWORKS = "ec2:DescribeSecondaryNetworks";
+	static readonly DescribeSecondaryNetworks = "ec2:DescribeSecondaryNetworks";
 	/** [List] ec2:DescribeSecondarySubnets */
-	static readonly DESCRIBE_SECONDARY_SUBNETS = "ec2:DescribeSecondarySubnets";
+	static readonly DescribeSecondarySubnets = "ec2:DescribeSecondarySubnets";
 	/** [List] ec2:DescribeSecurityGroupReferences */
-	static readonly DESCRIBE_SECURITY_GROUP_REFERENCES =
+	static readonly DescribeSecurityGroupReferences =
 		"ec2:DescribeSecurityGroupReferences";
 	/** [List] ec2:DescribeSecurityGroupRules */
-	static readonly DESCRIBE_SECURITY_GROUP_RULES =
-		"ec2:DescribeSecurityGroupRules";
+	static readonly DescribeSecurityGroupRules = "ec2:DescribeSecurityGroupRules";
 	/** [List] ec2:DescribeSecurityGroupVpcAssociations */
-	static readonly DESCRIBE_SECURITY_GROUP_VPC_ASSOCIATIONS =
+	static readonly DescribeSecurityGroupVpcAssociations =
 		"ec2:DescribeSecurityGroupVpcAssociations";
 	/** [List] ec2:DescribeSecurityGroups */
-	static readonly DESCRIBE_SECURITY_GROUPS = "ec2:DescribeSecurityGroups";
+	static readonly DescribeSecurityGroups = "ec2:DescribeSecurityGroups";
 	/** [List] ec2:DescribeServiceLinkVirtualInterfaces */
-	static readonly DESCRIBE_SERVICE_LINK_VIRTUAL_INTERFACES =
+	static readonly DescribeServiceLinkVirtualInterfaces =
 		"ec2:DescribeServiceLinkVirtualInterfaces";
 	/** [List] ec2:DescribeSnapshotAttribute */
-	static readonly DESCRIBE_SNAPSHOT_ATTRIBUTE = "ec2:DescribeSnapshotAttribute";
+	static readonly DescribeSnapshotAttribute = "ec2:DescribeSnapshotAttribute";
 	/** [List] ec2:DescribeSnapshotTierStatus */
-	static readonly DESCRIBE_SNAPSHOT_TIER_STATUS =
-		"ec2:DescribeSnapshotTierStatus";
+	static readonly DescribeSnapshotTierStatus = "ec2:DescribeSnapshotTierStatus";
 	/** [List] ec2:DescribeSnapshots */
-	static readonly DESCRIBE_SNAPSHOTS = "ec2:DescribeSnapshots";
+	static readonly DescribeSnapshots = "ec2:DescribeSnapshots";
 	/** [List] ec2:DescribeSpotDatafeedSubscription */
-	static readonly DESCRIBE_SPOT_DATAFEED_SUBSCRIPTION =
+	static readonly DescribeSpotDatafeedSubscription =
 		"ec2:DescribeSpotDatafeedSubscription";
 	/** [List] ec2:DescribeSpotFleetInstances */
-	static readonly DESCRIBE_SPOT_FLEET_INSTANCES =
-		"ec2:DescribeSpotFleetInstances";
+	static readonly DescribeSpotFleetInstances = "ec2:DescribeSpotFleetInstances";
 	/** [List] ec2:DescribeSpotFleetRequestHistory */
-	static readonly DESCRIBE_SPOT_FLEET_REQUEST_HISTORY =
+	static readonly DescribeSpotFleetRequestHistory =
 		"ec2:DescribeSpotFleetRequestHistory";
 	/** [List] ec2:DescribeSpotFleetRequests */
-	static readonly DESCRIBE_SPOT_FLEET_REQUESTS =
-		"ec2:DescribeSpotFleetRequests";
+	static readonly DescribeSpotFleetRequests = "ec2:DescribeSpotFleetRequests";
 	/** [List] ec2:DescribeSpotInstanceRequests */
-	static readonly DESCRIBE_SPOT_INSTANCE_REQUESTS =
+	static readonly DescribeSpotInstanceRequests =
 		"ec2:DescribeSpotInstanceRequests";
 	/** [List] ec2:DescribeSpotPriceHistory */
-	static readonly DESCRIBE_SPOT_PRICE_HISTORY = "ec2:DescribeSpotPriceHistory";
+	static readonly DescribeSpotPriceHistory = "ec2:DescribeSpotPriceHistory";
 	/** [List] ec2:DescribeStaleSecurityGroups */
-	static readonly DESCRIBE_STALE_SECURITY_GROUPS =
+	static readonly DescribeStaleSecurityGroups =
 		"ec2:DescribeStaleSecurityGroups";
 	/** [List] ec2:DescribeStoreImageTasks */
-	static readonly DESCRIBE_STORE_IMAGE_TASKS = "ec2:DescribeStoreImageTasks";
+	static readonly DescribeStoreImageTasks = "ec2:DescribeStoreImageTasks";
 	/** [List] ec2:DescribeSubnets */
-	static readonly DESCRIBE_SUBNETS = "ec2:DescribeSubnets";
+	static readonly DescribeSubnets = "ec2:DescribeSubnets";
 	/** [List] ec2:DescribeTags */
-	static readonly DESCRIBE_TAGS = "ec2:DescribeTags";
+	static readonly DescribeTags = "ec2:DescribeTags";
 	/** [List] ec2:DescribeTrafficMirrorFilterRules */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTER_RULES =
+	static readonly DescribeTrafficMirrorFilterRules =
 		"ec2:DescribeTrafficMirrorFilterRules";
 	/** [List] ec2:DescribeTrafficMirrorFilters */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTERS =
+	static readonly DescribeTrafficMirrorFilters =
 		"ec2:DescribeTrafficMirrorFilters";
 	/** [List] ec2:DescribeTrafficMirrorSessions */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_SESSIONS =
+	static readonly DescribeTrafficMirrorSessions =
 		"ec2:DescribeTrafficMirrorSessions";
 	/** [List] ec2:DescribeTrafficMirrorTargets */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_TARGETS =
+	static readonly DescribeTrafficMirrorTargets =
 		"ec2:DescribeTrafficMirrorTargets";
 	/** [List] ec2:DescribeTransitGatewayAttachments */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ATTACHMENTS =
+	static readonly DescribeTransitGatewayAttachments =
 		"ec2:DescribeTransitGatewayAttachments";
 	/** [List] ec2:DescribeTransitGatewayConnectPeers */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECT_PEERS =
+	static readonly DescribeTransitGatewayConnectPeers =
 		"ec2:DescribeTransitGatewayConnectPeers";
 	/** [List] ec2:DescribeTransitGatewayConnects */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECTS =
+	static readonly DescribeTransitGatewayConnects =
 		"ec2:DescribeTransitGatewayConnects";
 	/** [List] ec2:DescribeTransitGatewayMeteringPolicies */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_METERING_POLICIES =
+	static readonly DescribeTransitGatewayMeteringPolicies =
 		"ec2:DescribeTransitGatewayMeteringPolicies";
 	/** [List] ec2:DescribeTransitGatewayMulticastDomains */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_MULTICAST_DOMAINS =
+	static readonly DescribeTransitGatewayMulticastDomains =
 		"ec2:DescribeTransitGatewayMulticastDomains";
 	/** [List] ec2:DescribeTransitGatewayPeeringAttachments */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_PEERING_ATTACHMENTS =
+	static readonly DescribeTransitGatewayPeeringAttachments =
 		"ec2:DescribeTransitGatewayPeeringAttachments";
 	/** [List] ec2:DescribeTransitGatewayPolicyTables */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_POLICY_TABLES =
+	static readonly DescribeTransitGatewayPolicyTables =
 		"ec2:DescribeTransitGatewayPolicyTables";
 	/** [List] ec2:DescribeTransitGatewayRouteTableAnnouncements */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENTS =
+	static readonly DescribeTransitGatewayRouteTableAnnouncements =
 		"ec2:DescribeTransitGatewayRouteTableAnnouncements";
 	/** [List] ec2:DescribeTransitGatewayRouteTables */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLES =
+	static readonly DescribeTransitGatewayRouteTables =
 		"ec2:DescribeTransitGatewayRouteTables";
 	/** [List] ec2:DescribeTransitGatewayVpcAttachments */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_VPC_ATTACHMENTS =
+	static readonly DescribeTransitGatewayVpcAttachments =
 		"ec2:DescribeTransitGatewayVpcAttachments";
 	/** [List] ec2:DescribeTransitGateways */
-	static readonly DESCRIBE_TRANSIT_GATEWAYS = "ec2:DescribeTransitGateways";
+	static readonly DescribeTransitGateways = "ec2:DescribeTransitGateways";
 	/** [List] ec2:DescribeTrunkInterfaceAssociations */
-	static readonly DESCRIBE_TRUNK_INTERFACE_ASSOCIATIONS =
+	static readonly DescribeTrunkInterfaceAssociations =
 		"ec2:DescribeTrunkInterfaceAssociations";
 	/** [List] ec2:DescribeVerifiedAccessEndpoints */
-	static readonly DESCRIBE_VERIFIED_ACCESS_ENDPOINTS =
+	static readonly DescribeVerifiedAccessEndpoints =
 		"ec2:DescribeVerifiedAccessEndpoints";
 	/** [List] ec2:DescribeVerifiedAccessGroups */
-	static readonly DESCRIBE_VERIFIED_ACCESS_GROUPS =
+	static readonly DescribeVerifiedAccessGroups =
 		"ec2:DescribeVerifiedAccessGroups";
 	/** [List] ec2:DescribeVerifiedAccessInstanceLoggingConfigurations */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATIONS =
+	static readonly DescribeVerifiedAccessInstanceLoggingConfigurations =
 		"ec2:DescribeVerifiedAccessInstanceLoggingConfigurations";
 	/** [List] ec2:DescribeVerifiedAccessInstanceWebAclAssociations */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCE_WEB_ACL_ASSOCIATIONS =
+	static readonly DescribeVerifiedAccessInstanceWebAclAssociations =
 		"ec2:DescribeVerifiedAccessInstanceWebAclAssociations";
 	/** [List] ec2:DescribeVerifiedAccessInstances */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCES =
+	static readonly DescribeVerifiedAccessInstances =
 		"ec2:DescribeVerifiedAccessInstances";
 	/** [List] ec2:DescribeVerifiedAccessTrustProviders */
-	static readonly DESCRIBE_VERIFIED_ACCESS_TRUST_PROVIDERS =
+	static readonly DescribeVerifiedAccessTrustProviders =
 		"ec2:DescribeVerifiedAccessTrustProviders";
 	/** [List] ec2:DescribeVolumeAttribute */
-	static readonly DESCRIBE_VOLUME_ATTRIBUTE = "ec2:DescribeVolumeAttribute";
+	static readonly DescribeVolumeAttribute = "ec2:DescribeVolumeAttribute";
 	/** [List] ec2:DescribeVolumeStatus */
-	static readonly DESCRIBE_VOLUME_STATUS = "ec2:DescribeVolumeStatus";
+	static readonly DescribeVolumeStatus = "ec2:DescribeVolumeStatus";
 	/** [List] ec2:DescribeVolumes */
-	static readonly DESCRIBE_VOLUMES = "ec2:DescribeVolumes";
+	static readonly DescribeVolumes = "ec2:DescribeVolumes";
 	/** [List] ec2:DescribeVolumesModifications */
-	static readonly DESCRIBE_VOLUMES_MODIFICATIONS =
+	static readonly DescribeVolumesModifications =
 		"ec2:DescribeVolumesModifications";
 	/** [List] ec2:DescribeVpcAttribute */
-	static readonly DESCRIBE_VPC_ATTRIBUTE = "ec2:DescribeVpcAttribute";
+	static readonly DescribeVpcAttribute = "ec2:DescribeVpcAttribute";
 	/** [List] ec2:DescribeVpcBlockPublicAccessExclusions */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSIONS =
+	static readonly DescribeVpcBlockPublicAccessExclusions =
 		"ec2:DescribeVpcBlockPublicAccessExclusions";
 	/** [List] ec2:DescribeVpcBlockPublicAccessOptions */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS =
+	static readonly DescribeVpcBlockPublicAccessOptions =
 		"ec2:DescribeVpcBlockPublicAccessOptions";
 	/** [List] ec2:DescribeVpcClassicLink */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK = "ec2:DescribeVpcClassicLink";
+	static readonly DescribeVpcClassicLink = "ec2:DescribeVpcClassicLink";
 	/** [List] ec2:DescribeVpcClassicLinkDnsSupport */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK_DNS_SUPPORT =
+	static readonly DescribeVpcClassicLinkDnsSupport =
 		"ec2:DescribeVpcClassicLinkDnsSupport";
 	/** [List] ec2:DescribeVpcEncryptionControls */
-	static readonly DESCRIBE_VPC_ENCRYPTION_CONTROLS =
+	static readonly DescribeVpcEncryptionControls =
 		"ec2:DescribeVpcEncryptionControls";
 	/** [List] ec2:DescribeVpcEndpointAssociations */
-	static readonly DESCRIBE_VPC_ENDPOINT_ASSOCIATIONS =
+	static readonly DescribeVpcEndpointAssociations =
 		"ec2:DescribeVpcEndpointAssociations";
 	/** [List] ec2:DescribeVpcEndpointConnectionNotifications */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS =
+	static readonly DescribeVpcEndpointConnectionNotifications =
 		"ec2:DescribeVpcEndpointConnectionNotifications";
 	/** [List] ec2:DescribeVpcEndpointConnections */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTIONS =
+	static readonly DescribeVpcEndpointConnections =
 		"ec2:DescribeVpcEndpointConnections";
 	/** [List] ec2:DescribeVpcEndpointServiceConfigurations */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS =
+	static readonly DescribeVpcEndpointServiceConfigurations =
 		"ec2:DescribeVpcEndpointServiceConfigurations";
 	/** [List] ec2:DescribeVpcEndpointServicePermissions */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_PERMISSIONS =
+	static readonly DescribeVpcEndpointServicePermissions =
 		"ec2:DescribeVpcEndpointServicePermissions";
 	/** [List] ec2:DescribeVpcEndpointServices */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICES =
+	static readonly DescribeVpcEndpointServices =
 		"ec2:DescribeVpcEndpointServices";
 	/** [List] ec2:DescribeVpcEndpoints */
-	static readonly DESCRIBE_VPC_ENDPOINTS = "ec2:DescribeVpcEndpoints";
+	static readonly DescribeVpcEndpoints = "ec2:DescribeVpcEndpoints";
 	/** [List] ec2:DescribeVpcPeeringConnections */
-	static readonly DESCRIBE_VPC_PEERING_CONNECTIONS =
+	static readonly DescribeVpcPeeringConnections =
 		"ec2:DescribeVpcPeeringConnections";
 	/** [List] ec2:DescribeVpcs */
-	static readonly DESCRIBE_VPCS = "ec2:DescribeVpcs";
+	static readonly DescribeVpcs = "ec2:DescribeVpcs";
 	/** [List] ec2:DescribeVpnConcentrators */
-	static readonly DESCRIBE_VPN_CONCENTRATORS = "ec2:DescribeVpnConcentrators";
+	static readonly DescribeVpnConcentrators = "ec2:DescribeVpnConcentrators";
 	/** [List] ec2:DescribeVpnConnections */
-	static readonly DESCRIBE_VPN_CONNECTIONS = "ec2:DescribeVpnConnections";
+	static readonly DescribeVpnConnections = "ec2:DescribeVpnConnections";
 	/** [List] ec2:DescribeVpnGateways */
-	static readonly DESCRIBE_VPN_GATEWAYS = "ec2:DescribeVpnGateways";
+	static readonly DescribeVpnGateways = "ec2:DescribeVpnGateways";
 	/** [PermissionManagement] ec2:DetachApplianceFromNatGateway */
-	static readonly DETACH_APPLIANCE_FROM_NAT_GATEWAY =
+	static readonly DetachApplianceFromNatGateway =
 		"ec2:DetachApplianceFromNatGateway";
 	/** [Write] ec2:DetachClassicLinkVpc */
-	static readonly DETACH_CLASSIC_LINK_VPC = "ec2:DetachClassicLinkVpc";
+	static readonly DetachClassicLinkVpc = "ec2:DetachClassicLinkVpc";
 	/** [Write] ec2:DetachImageWatermark */
-	static readonly DETACH_IMAGE_WATERMARK = "ec2:DetachImageWatermark";
+	static readonly DetachImageWatermark = "ec2:DetachImageWatermark";
 	/** [Write] ec2:DetachInternetGateway */
-	static readonly DETACH_INTERNET_GATEWAY = "ec2:DetachInternetGateway";
+	static readonly DetachInternetGateway = "ec2:DetachInternetGateway";
 	/** [Write] ec2:DetachNetworkInterface */
-	static readonly DETACH_NETWORK_INTERFACE = "ec2:DetachNetworkInterface";
+	static readonly DetachNetworkInterface = "ec2:DetachNetworkInterface";
 	/** [PermissionManagement] ec2:DetachResourcesFromPlacementGroup */
-	static readonly DETACH_RESOURCES_FROM_PLACEMENT_GROUP =
+	static readonly DetachResourcesFromPlacementGroup =
 		"ec2:DetachResourcesFromPlacementGroup";
 	/** [Write] ec2:DetachVerifiedAccessTrustProvider */
-	static readonly DETACH_VERIFIED_ACCESS_TRUST_PROVIDER =
+	static readonly DetachVerifiedAccessTrustProvider =
 		"ec2:DetachVerifiedAccessTrustProvider";
 	/** [Write] ec2:DetachVolume */
-	static readonly DETACH_VOLUME = "ec2:DetachVolume";
+	static readonly DetachVolume = "ec2:DetachVolume";
 	/** [Write] ec2:DetachVpnGateway */
-	static readonly DETACH_VPN_GATEWAY = "ec2:DetachVpnGateway";
+	static readonly DetachVpnGateway = "ec2:DetachVpnGateway";
 	/** [Write] ec2:DisableAddressTransfer */
-	static readonly DISABLE_ADDRESS_TRANSFER = "ec2:DisableAddressTransfer";
+	static readonly DisableAddressTransfer = "ec2:DisableAddressTransfer";
 	/** [Write] ec2:DisableAllowedImagesSettings */
-	static readonly DISABLE_ALLOWED_IMAGES_SETTINGS =
+	static readonly DisableAllowedImagesSettings =
 		"ec2:DisableAllowedImagesSettings";
 	/** [Write] ec2:DisableAwsNetworkPerformanceMetricSubscription */
-	static readonly DISABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION =
+	static readonly DisableAwsNetworkPerformanceMetricSubscription =
 		"ec2:DisableAwsNetworkPerformanceMetricSubscription";
 	/** [Write] ec2:DisableCapacityManager */
-	static readonly DISABLE_CAPACITY_MANAGER = "ec2:DisableCapacityManager";
+	static readonly DisableCapacityManager = "ec2:DisableCapacityManager";
 	/** [Write] ec2:DisableEbsEncryptionByDefault */
-	static readonly DISABLE_EBS_ENCRYPTION_BY_DEFAULT =
+	static readonly DisableEbsEncryptionByDefault =
 		"ec2:DisableEbsEncryptionByDefault";
 	/** [Write] ec2:DisableFastLaunch */
-	static readonly DISABLE_FAST_LAUNCH = "ec2:DisableFastLaunch";
+	static readonly DisableFastLaunch = "ec2:DisableFastLaunch";
 	/** [Write] ec2:DisableFastSnapshotRestores */
-	static readonly DISABLE_FAST_SNAPSHOT_RESTORES =
+	static readonly DisableFastSnapshotRestores =
 		"ec2:DisableFastSnapshotRestores";
 	/** [Write] ec2:DisableImage */
-	static readonly DISABLE_IMAGE = "ec2:DisableImage";
+	static readonly DisableImage = "ec2:DisableImage";
 	/** [PermissionManagement] ec2:DisableImageBlockPublicAccess */
-	static readonly DISABLE_IMAGE_BLOCK_PUBLIC_ACCESS =
+	static readonly DisableImageBlockPublicAccess =
 		"ec2:DisableImageBlockPublicAccess";
 	/** [Write] ec2:DisableImageDeprecation */
-	static readonly DISABLE_IMAGE_DEPRECATION = "ec2:DisableImageDeprecation";
+	static readonly DisableImageDeprecation = "ec2:DisableImageDeprecation";
 	/** [Write] ec2:DisableImageDeregistrationProtection */
-	static readonly DISABLE_IMAGE_DEREGISTRATION_PROTECTION =
+	static readonly DisableImageDeregistrationProtection =
 		"ec2:DisableImageDeregistrationProtection";
 	/** [Write] ec2:DisableInstanceSqlHaStandbyDetections */
-	static readonly DISABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS =
+	static readonly DisableInstanceSqlHaStandbyDetections =
 		"ec2:DisableInstanceSqlHaStandbyDetections";
 	/** [Write] ec2:DisableIpamOrganizationAdminAccount */
-	static readonly DISABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly DisableIpamOrganizationAdminAccount =
 		"ec2:DisableIpamOrganizationAdminAccount";
 	/** [Write] ec2:DisableIpamPolicy */
-	static readonly DISABLE_IPAM_POLICY = "ec2:DisableIpamPolicy";
+	static readonly DisableIpamPolicy = "ec2:DisableIpamPolicy";
 	/** [Write] ec2:DisableRouteServerPropagation */
-	static readonly DISABLE_ROUTE_SERVER_PROPAGATION =
+	static readonly DisableRouteServerPropagation =
 		"ec2:DisableRouteServerPropagation";
 	/** [Write] ec2:DisableSerialConsoleAccess */
-	static readonly DISABLE_SERIAL_CONSOLE_ACCESS =
-		"ec2:DisableSerialConsoleAccess";
+	static readonly DisableSerialConsoleAccess = "ec2:DisableSerialConsoleAccess";
 	/** [PermissionManagement] ec2:DisableSnapshotBlockPublicAccess */
-	static readonly DISABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS =
+	static readonly DisableSnapshotBlockPublicAccess =
 		"ec2:DisableSnapshotBlockPublicAccess";
 	/** [Write] ec2:DisableTransitGatewayRouteTablePropagation */
-	static readonly DISABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION =
+	static readonly DisableTransitGatewayRouteTablePropagation =
 		"ec2:DisableTransitGatewayRouteTablePropagation";
 	/** [Write] ec2:DisableVgwRoutePropagation */
-	static readonly DISABLE_VGW_ROUTE_PROPAGATION =
-		"ec2:DisableVgwRoutePropagation";
+	static readonly DisableVgwRoutePropagation = "ec2:DisableVgwRoutePropagation";
 	/** [Write] ec2:DisableVpcClassicLink */
-	static readonly DISABLE_VPC_CLASSIC_LINK = "ec2:DisableVpcClassicLink";
+	static readonly DisableVpcClassicLink = "ec2:DisableVpcClassicLink";
 	/** [Write] ec2:DisableVpcClassicLinkDnsSupport */
-	static readonly DISABLE_VPC_CLASSIC_LINK_DNS_SUPPORT =
+	static readonly DisableVpcClassicLinkDnsSupport =
 		"ec2:DisableVpcClassicLinkDnsSupport";
 	/** [Write] ec2:DisassociateAddress */
-	static readonly DISASSOCIATE_ADDRESS = "ec2:DisassociateAddress";
+	static readonly DisassociateAddress = "ec2:DisassociateAddress";
 	/** [Write] ec2:DisassociateCapacityReservationBillingOwner */
-	static readonly DISASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER =
+	static readonly DisassociateCapacityReservationBillingOwner =
 		"ec2:DisassociateCapacityReservationBillingOwner";
 	/** [Write] ec2:DisassociateClientVpnTargetNetwork */
-	static readonly DISASSOCIATE_CLIENT_VPN_TARGET_NETWORK =
+	static readonly DisassociateClientVpnTargetNetwork =
 		"ec2:DisassociateClientVpnTargetNetwork";
 	/** [Write] ec2:DisassociateEnclaveCertificateIamRole */
-	static readonly DISASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE =
+	static readonly DisassociateEnclaveCertificateIamRole =
 		"ec2:DisassociateEnclaveCertificateIamRole";
 	/** [Write] ec2:DisassociateIamInstanceProfile */
-	static readonly DISASSOCIATE_IAM_INSTANCE_PROFILE =
+	static readonly DisassociateIamInstanceProfile =
 		"ec2:DisassociateIamInstanceProfile";
 	/** [Write] ec2:DisassociateInstanceEventWindow */
-	static readonly DISASSOCIATE_INSTANCE_EVENT_WINDOW =
+	static readonly DisassociateInstanceEventWindow =
 		"ec2:DisassociateInstanceEventWindow";
 	/** [Write] ec2:DisassociateIpamByoasn */
-	static readonly DISASSOCIATE_IPAM_BYOASN = "ec2:DisassociateIpamByoasn";
+	static readonly DisassociateIpamByoasn = "ec2:DisassociateIpamByoasn";
 	/** [Write] ec2:DisassociateIpamResourceDiscovery */
-	static readonly DISASSOCIATE_IPAM_RESOURCE_DISCOVERY =
+	static readonly DisassociateIpamResourceDiscovery =
 		"ec2:DisassociateIpamResourceDiscovery";
 	/** [Write] ec2:DisassociateNatGatewayAddress */
-	static readonly DISASSOCIATE_NAT_GATEWAY_ADDRESS =
+	static readonly DisassociateNatGatewayAddress =
 		"ec2:DisassociateNatGatewayAddress";
 	/** [Write] ec2:DisassociateRouteServer */
-	static readonly DISASSOCIATE_ROUTE_SERVER = "ec2:DisassociateRouteServer";
+	static readonly DisassociateRouteServer = "ec2:DisassociateRouteServer";
 	/** [Write] ec2:DisassociateRouteTable */
-	static readonly DISASSOCIATE_ROUTE_TABLE = "ec2:DisassociateRouteTable";
+	static readonly DisassociateRouteTable = "ec2:DisassociateRouteTable";
 	/** [Write] ec2:DisassociateSecurityGroupVpc */
-	static readonly DISASSOCIATE_SECURITY_GROUP_VPC =
+	static readonly DisassociateSecurityGroupVpc =
 		"ec2:DisassociateSecurityGroupVpc";
 	/** [Write] ec2:DisassociateSubnetCidrBlock */
-	static readonly DISASSOCIATE_SUBNET_CIDR_BLOCK =
+	static readonly DisassociateSubnetCidrBlock =
 		"ec2:DisassociateSubnetCidrBlock";
 	/** [Write] ec2:DisassociateTransitGatewayMulticastDomain */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN =
+	static readonly DisassociateTransitGatewayMulticastDomain =
 		"ec2:DisassociateTransitGatewayMulticastDomain";
 	/** [Write] ec2:DisassociateTransitGatewayPolicyTable */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE =
+	static readonly DisassociateTransitGatewayPolicyTable =
 		"ec2:DisassociateTransitGatewayPolicyTable";
 	/** [Write] ec2:DisassociateTransitGatewayRouteTable */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE =
+	static readonly DisassociateTransitGatewayRouteTable =
 		"ec2:DisassociateTransitGatewayRouteTable";
 	/** [Write] ec2:DisassociateTrunkInterface */
-	static readonly DISASSOCIATE_TRUNK_INTERFACE =
-		"ec2:DisassociateTrunkInterface";
+	static readonly DisassociateTrunkInterface = "ec2:DisassociateTrunkInterface";
 	/** [Write] ec2:DisassociateVerifiedAccessInstanceWebAcl */
-	static readonly DISASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL =
+	static readonly DisassociateVerifiedAccessInstanceWebAcl =
 		"ec2:DisassociateVerifiedAccessInstanceWebAcl";
 	/** [Write] ec2:DisassociateVpcCidrBlock */
-	static readonly DISASSOCIATE_VPC_CIDR_BLOCK = "ec2:DisassociateVpcCidrBlock";
+	static readonly DisassociateVpcCidrBlock = "ec2:DisassociateVpcCidrBlock";
 	/** [Write] ec2:EnableAddressTransfer */
-	static readonly ENABLE_ADDRESS_TRANSFER = "ec2:EnableAddressTransfer";
+	static readonly EnableAddressTransfer = "ec2:EnableAddressTransfer";
 	/** [Write] ec2:EnableAllowedImagesSettings */
-	static readonly ENABLE_ALLOWED_IMAGES_SETTINGS =
+	static readonly EnableAllowedImagesSettings =
 		"ec2:EnableAllowedImagesSettings";
 	/** [Write] ec2:EnableAwsNetworkPerformanceMetricSubscription */
-	static readonly ENABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION =
+	static readonly EnableAwsNetworkPerformanceMetricSubscription =
 		"ec2:EnableAwsNetworkPerformanceMetricSubscription";
 	/** [Write] ec2:EnableCapacityManager */
-	static readonly ENABLE_CAPACITY_MANAGER = "ec2:EnableCapacityManager";
+	static readonly EnableCapacityManager = "ec2:EnableCapacityManager";
 	/** [Write] ec2:EnableEbsEncryptionByDefault */
-	static readonly ENABLE_EBS_ENCRYPTION_BY_DEFAULT =
+	static readonly EnableEbsEncryptionByDefault =
 		"ec2:EnableEbsEncryptionByDefault";
 	/** [Write] ec2:EnableFastLaunch */
-	static readonly ENABLE_FAST_LAUNCH = "ec2:EnableFastLaunch";
+	static readonly EnableFastLaunch = "ec2:EnableFastLaunch";
 	/** [Write] ec2:EnableFastSnapshotRestores */
-	static readonly ENABLE_FAST_SNAPSHOT_RESTORES =
-		"ec2:EnableFastSnapshotRestores";
+	static readonly EnableFastSnapshotRestores = "ec2:EnableFastSnapshotRestores";
 	/** [Write] ec2:EnableImage */
-	static readonly ENABLE_IMAGE = "ec2:EnableImage";
+	static readonly EnableImage = "ec2:EnableImage";
 	/** [PermissionManagement] ec2:EnableImageBlockPublicAccess */
-	static readonly ENABLE_IMAGE_BLOCK_PUBLIC_ACCESS =
+	static readonly EnableImageBlockPublicAccess =
 		"ec2:EnableImageBlockPublicAccess";
 	/** [Write] ec2:EnableImageDeprecation */
-	static readonly ENABLE_IMAGE_DEPRECATION = "ec2:EnableImageDeprecation";
+	static readonly EnableImageDeprecation = "ec2:EnableImageDeprecation";
 	/** [Write] ec2:EnableImageDeregistrationProtection */
-	static readonly ENABLE_IMAGE_DEREGISTRATION_PROTECTION =
+	static readonly EnableImageDeregistrationProtection =
 		"ec2:EnableImageDeregistrationProtection";
 	/** [Write] ec2:EnableInstanceSqlHaStandbyDetections */
-	static readonly ENABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS =
+	static readonly EnableInstanceSqlHaStandbyDetections =
 		"ec2:EnableInstanceSqlHaStandbyDetections";
 	/** [Write] ec2:EnableIpamOrganizationAdminAccount */
-	static readonly ENABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT =
+	static readonly EnableIpamOrganizationAdminAccount =
 		"ec2:EnableIpamOrganizationAdminAccount";
 	/** [Write] ec2:EnableIpamPolicy */
-	static readonly ENABLE_IPAM_POLICY = "ec2:EnableIpamPolicy";
+	static readonly EnableIpamPolicy = "ec2:EnableIpamPolicy";
 	/** [Write] ec2:EnableReachabilityAnalyzerOrganizationSharing */
-	static readonly ENABLE_REACHABILITY_ANALYZER_ORGANIZATION_SHARING =
+	static readonly EnableReachabilityAnalyzerOrganizationSharing =
 		"ec2:EnableReachabilityAnalyzerOrganizationSharing";
 	/** [Write] ec2:EnableRouteServerPropagation */
-	static readonly ENABLE_ROUTE_SERVER_PROPAGATION =
+	static readonly EnableRouteServerPropagation =
 		"ec2:EnableRouteServerPropagation";
 	/** [Write] ec2:EnableSerialConsoleAccess */
-	static readonly ENABLE_SERIAL_CONSOLE_ACCESS =
-		"ec2:EnableSerialConsoleAccess";
+	static readonly EnableSerialConsoleAccess = "ec2:EnableSerialConsoleAccess";
 	/** [PermissionManagement] ec2:EnableSnapshotBlockPublicAccess */
-	static readonly ENABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS =
+	static readonly EnableSnapshotBlockPublicAccess =
 		"ec2:EnableSnapshotBlockPublicAccess";
 	/** [Write] ec2:EnableTransitGatewayRouteTablePropagation */
-	static readonly ENABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION =
+	static readonly EnableTransitGatewayRouteTablePropagation =
 		"ec2:EnableTransitGatewayRouteTablePropagation";
 	/** [Write] ec2:EnableVgwRoutePropagation */
-	static readonly ENABLE_VGW_ROUTE_PROPAGATION =
-		"ec2:EnableVgwRoutePropagation";
+	static readonly EnableVgwRoutePropagation = "ec2:EnableVgwRoutePropagation";
 	/** [Write] ec2:EnableVolumeIO */
-	static readonly ENABLE_VOLUME_IO = "ec2:EnableVolumeIO";
+	static readonly EnableVolumeIO = "ec2:EnableVolumeIO";
 	/** [Write] ec2:EnableVpcClassicLink */
-	static readonly ENABLE_VPC_CLASSIC_LINK = "ec2:EnableVpcClassicLink";
+	static readonly EnableVpcClassicLink = "ec2:EnableVpcClassicLink";
 	/** [Write] ec2:EnableVpcClassicLinkDnsSupport */
-	static readonly ENABLE_VPC_CLASSIC_LINK_DNS_SUPPORT =
+	static readonly EnableVpcClassicLinkDnsSupport =
 		"ec2:EnableVpcClassicLinkDnsSupport";
 	/** [Read] ec2:ExportClientVpnClientCertificateRevocationList */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST =
+	static readonly ExportClientVpnClientCertificateRevocationList =
 		"ec2:ExportClientVpnClientCertificateRevocationList";
 	/** [Read] ec2:ExportClientVpnClientConfiguration */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CONFIGURATION =
+	static readonly ExportClientVpnClientConfiguration =
 		"ec2:ExportClientVpnClientConfiguration";
 	/** [Write] ec2:ExportImage */
-	static readonly EXPORT_IMAGE = "ec2:ExportImage";
+	static readonly ExportImage = "ec2:ExportImage";
 	/** [Write] ec2:ExportTransitGatewayRoutes */
-	static readonly EXPORT_TRANSIT_GATEWAY_ROUTES =
-		"ec2:ExportTransitGatewayRoutes";
+	static readonly ExportTransitGatewayRoutes = "ec2:ExportTransitGatewayRoutes";
 	/** [Read] ec2:ExportVerifiedAccessInstanceClientConfiguration */
-	static readonly EXPORT_VERIFIED_ACCESS_INSTANCE_CLIENT_CONFIGURATION =
+	static readonly ExportVerifiedAccessInstanceClientConfiguration =
 		"ec2:ExportVerifiedAccessInstanceClientConfiguration";
 	/** [Read] ec2:GetActiveVpnTunnelStatus */
-	static readonly GET_ACTIVE_VPN_TUNNEL_STATUS = "ec2:GetActiveVpnTunnelStatus";
+	static readonly actionGetActiveVpnTunnelStatus =
+		"ec2:GetActiveVpnTunnelStatus";
 	/** [Read] ec2:GetAllowedImagesSettings */
-	static readonly GET_ALLOWED_IMAGES_SETTINGS = "ec2:GetAllowedImagesSettings";
+	static readonly actionGetAllowedImagesSettings =
+		"ec2:GetAllowedImagesSettings";
 	/** [Read] ec2:GetAssociatedEnclaveCertificateIamRoles */
-	static readonly GET_ASSOCIATED_ENCLAVE_CERTIFICATE_IAM_ROLES =
+	static readonly actionGetAssociatedEnclaveCertificateIamRoles =
 		"ec2:GetAssociatedEnclaveCertificateIamRoles";
 	/** [Read] ec2:GetAssociatedIpv6PoolCidrs */
-	static readonly GET_ASSOCIATED_IPV6_POOL_CIDRS =
+	static readonly actionGetAssociatedIpv6PoolCidrs =
 		"ec2:GetAssociatedIpv6PoolCidrs";
 	/** [Read] ec2:GetAwsNetworkPerformanceData */
-	static readonly GET_AWS_NETWORK_PERFORMANCE_DATA =
+	static readonly actionGetAwsNetworkPerformanceData =
 		"ec2:GetAwsNetworkPerformanceData";
 	/** [Read] ec2:GetCapacityManagerAttributes */
-	static readonly GET_CAPACITY_MANAGER_ATTRIBUTES =
+	static readonly actionGetCapacityManagerAttributes =
 		"ec2:GetCapacityManagerAttributes";
 	/** [Read] ec2:GetCapacityManagerMetricData */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DATA =
+	static readonly actionGetCapacityManagerMetricData =
 		"ec2:GetCapacityManagerMetricData";
 	/** [Read] ec2:GetCapacityManagerMetricDimensions */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DIMENSIONS =
+	static readonly actionGetCapacityManagerMetricDimensions =
 		"ec2:GetCapacityManagerMetricDimensions";
 	/** [List] ec2:GetCapacityManagerMonitoredTagKeys */
-	static readonly GET_CAPACITY_MANAGER_MONITORED_TAG_KEYS =
+	static readonly actionGetCapacityManagerMonitoredTagKeys =
 		"ec2:GetCapacityManagerMonitoredTagKeys";
 	/** [Read] ec2:GetCapacityReservationUsage */
-	static readonly GET_CAPACITY_RESERVATION_USAGE =
+	static readonly actionGetCapacityReservationUsage =
 		"ec2:GetCapacityReservationUsage";
 	/** [Read] ec2:GetCoipPoolUsage */
-	static readonly GET_COIP_POOL_USAGE = "ec2:GetCoipPoolUsage";
+	static readonly actionGetCoipPoolUsage = "ec2:GetCoipPoolUsage";
 	/** [Read] ec2:GetConsoleOutput */
-	static readonly GET_CONSOLE_OUTPUT = "ec2:GetConsoleOutput";
+	static readonly actionGetConsoleOutput = "ec2:GetConsoleOutput";
 	/** [Read] ec2:GetConsoleScreenshot */
-	static readonly GET_CONSOLE_SCREENSHOT = "ec2:GetConsoleScreenshot";
+	static readonly actionGetConsoleScreenshot = "ec2:GetConsoleScreenshot";
 	/** [Read] ec2:GetDeclarativePoliciesReportSummary */
-	static readonly GET_DECLARATIVE_POLICIES_REPORT_SUMMARY =
+	static readonly actionGetDeclarativePoliciesReportSummary =
 		"ec2:GetDeclarativePoliciesReportSummary";
 	/** [Read] ec2:GetDefaultCreditSpecification */
-	static readonly GET_DEFAULT_CREDIT_SPECIFICATION =
+	static readonly actionGetDefaultCreditSpecification =
 		"ec2:GetDefaultCreditSpecification";
 	/** [Read] ec2:GetEbsDefaultKmsKeyId */
-	static readonly GET_EBS_DEFAULT_KMS_KEY_ID = "ec2:GetEbsDefaultKmsKeyId";
+	static readonly actionGetEbsDefaultKmsKeyId = "ec2:GetEbsDefaultKmsKeyId";
 	/** [Read] ec2:GetEbsEncryptionByDefault */
-	static readonly GET_EBS_ENCRYPTION_BY_DEFAULT =
+	static readonly actionGetEbsEncryptionByDefault =
 		"ec2:GetEbsEncryptionByDefault";
 	/** [Read] ec2:GetEnabledIpamPolicy */
-	static readonly GET_ENABLED_IPAM_POLICY = "ec2:GetEnabledIpamPolicy";
+	static readonly actionGetEnabledIpamPolicy = "ec2:GetEnabledIpamPolicy";
 	/** [Read] ec2:GetFlowLogsIntegrationTemplate */
-	static readonly GET_FLOW_LOGS_INTEGRATION_TEMPLATE =
+	static readonly actionGetFlowLogsIntegrationTemplate =
 		"ec2:GetFlowLogsIntegrationTemplate";
 	/** [List] ec2:GetGroupsForCapacityReservation */
-	static readonly GET_GROUPS_FOR_CAPACITY_RESERVATION =
+	static readonly actionGetGroupsForCapacityReservation =
 		"ec2:GetGroupsForCapacityReservation";
 	/** [Read] ec2:GetHostReservationPurchasePreview */
-	static readonly GET_HOST_RESERVATION_PURCHASE_PREVIEW =
+	static readonly actionGetHostReservationPurchasePreview =
 		"ec2:GetHostReservationPurchasePreview";
 	/** [Read] ec2:GetImageAncestry */
-	static readonly GET_IMAGE_ANCESTRY = "ec2:GetImageAncestry";
+	static readonly actionGetImageAncestry = "ec2:GetImageAncestry";
 	/** [Read] ec2:GetImageBlockPublicAccessState */
-	static readonly GET_IMAGE_BLOCK_PUBLIC_ACCESS_STATE =
+	static readonly actionGetImageBlockPublicAccessState =
 		"ec2:GetImageBlockPublicAccessState";
 	/** [List] ec2:GetInstanceMetadataDefaults */
-	static readonly GET_INSTANCE_METADATA_DEFAULTS =
+	static readonly actionGetInstanceMetadataDefaults =
 		"ec2:GetInstanceMetadataDefaults";
 	/** [Read] ec2:GetInstanceTpmEkPub */
-	static readonly GET_INSTANCE_TPM_EK_PUB = "ec2:GetInstanceTpmEkPub";
+	static readonly actionGetInstanceTpmEkPub = "ec2:GetInstanceTpmEkPub";
 	/** [List] ec2:GetInstanceTypesFromInstanceRequirements */
-	static readonly GET_INSTANCE_TYPES_FROM_INSTANCE_REQUIREMENTS =
+	static readonly actionGetInstanceTypesFromInstanceRequirements =
 		"ec2:GetInstanceTypesFromInstanceRequirements";
 	/** [Read] ec2:GetInstanceUefiData */
-	static readonly GET_INSTANCE_UEFI_DATA = "ec2:GetInstanceUefiData";
+	static readonly actionGetInstanceUefiData = "ec2:GetInstanceUefiData";
 	/** [Read] ec2:GetIpamAddressHistory */
-	static readonly GET_IPAM_ADDRESS_HISTORY = "ec2:GetIpamAddressHistory";
+	static readonly actionGetIpamAddressHistory = "ec2:GetIpamAddressHistory";
 	/** [Read] ec2:GetIpamDiscoveredAccounts */
-	static readonly GET_IPAM_DISCOVERED_ACCOUNTS =
+	static readonly actionGetIpamDiscoveredAccounts =
 		"ec2:GetIpamDiscoveredAccounts";
 	/** [Read] ec2:GetIpamDiscoveredPublicAddresses */
-	static readonly GET_IPAM_DISCOVERED_PUBLIC_ADDRESSES =
+	static readonly actionGetIpamDiscoveredPublicAddresses =
 		"ec2:GetIpamDiscoveredPublicAddresses";
 	/** [Read] ec2:GetIpamDiscoveredResourceCidrs */
-	static readonly GET_IPAM_DISCOVERED_RESOURCE_CIDRS =
+	static readonly actionGetIpamDiscoveredResourceCidrs =
 		"ec2:GetIpamDiscoveredResourceCidrs";
 	/** [List] ec2:GetIpamPolicyAllocationRules */
-	static readonly GET_IPAM_POLICY_ALLOCATION_RULES =
+	static readonly actionGetIpamPolicyAllocationRules =
 		"ec2:GetIpamPolicyAllocationRules";
 	/** [List] ec2:GetIpamPolicyOrganizationTargets */
-	static readonly GET_IPAM_POLICY_ORGANIZATION_TARGETS =
+	static readonly actionGetIpamPolicyOrganizationTargets =
 		"ec2:GetIpamPolicyOrganizationTargets";
 	/** [List] ec2:GetIpamPoolAllocations */
-	static readonly GET_IPAM_POOL_ALLOCATIONS = "ec2:GetIpamPoolAllocations";
+	static readonly actionGetIpamPoolAllocations = "ec2:GetIpamPoolAllocations";
 	/** [Read] ec2:GetIpamPoolCidrs */
-	static readonly GET_IPAM_POOL_CIDRS = "ec2:GetIpamPoolCidrs";
+	static readonly actionGetIpamPoolCidrs = "ec2:GetIpamPoolCidrs";
 	/** [Read] ec2:GetIpamPrefixListResolverRules */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_RULES =
+	static readonly actionGetIpamPrefixListResolverRules =
 		"ec2:GetIpamPrefixListResolverRules";
 	/** [Read] ec2:GetIpamPrefixListResolverVersionEntries */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSION_ENTRIES =
+	static readonly actionGetIpamPrefixListResolverVersionEntries =
 		"ec2:GetIpamPrefixListResolverVersionEntries";
 	/** [Read] ec2:GetIpamPrefixListResolverVersions */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSIONS =
+	static readonly actionGetIpamPrefixListResolverVersions =
 		"ec2:GetIpamPrefixListResolverVersions";
 	/** [Read] ec2:GetIpamResourceCidrs */
-	static readonly GET_IPAM_RESOURCE_CIDRS = "ec2:GetIpamResourceCidrs";
+	static readonly actionGetIpamResourceCidrs = "ec2:GetIpamResourceCidrs";
 	/** [Read] ec2:GetLaunchTemplateData */
-	static readonly GET_LAUNCH_TEMPLATE_DATA = "ec2:GetLaunchTemplateData";
+	static readonly actionGetLaunchTemplateData = "ec2:GetLaunchTemplateData";
 	/** [Read] ec2:GetManagedPrefixListAssociations */
-	static readonly GET_MANAGED_PREFIX_LIST_ASSOCIATIONS =
+	static readonly actionGetManagedPrefixListAssociations =
 		"ec2:GetManagedPrefixListAssociations";
 	/** [Read] ec2:GetManagedPrefixListEntries */
-	static readonly GET_MANAGED_PREFIX_LIST_ENTRIES =
+	static readonly actionGetManagedPrefixListEntries =
 		"ec2:GetManagedPrefixListEntries";
 	/** [List] ec2:GetManagedResourceVisibility */
-	static readonly GET_MANAGED_RESOURCE_VISIBILITY =
+	static readonly actionGetManagedResourceVisibility =
 		"ec2:GetManagedResourceVisibility";
 	/** [Read] ec2:GetNetworkInsightsAccessScopeAnalysisFindings */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_FINDINGS =
+	static readonly actionGetNetworkInsightsAccessScopeAnalysisFindings =
 		"ec2:GetNetworkInsightsAccessScopeAnalysisFindings";
 	/** [Read] ec2:GetNetworkInsightsAccessScopeContent */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_CONTENT =
+	static readonly actionGetNetworkInsightsAccessScopeContent =
 		"ec2:GetNetworkInsightsAccessScopeContent";
 	/** [Read] ec2:GetPasswordData */
-	static readonly GET_PASSWORD_DATA = "ec2:GetPasswordData";
+	static readonly actionGetPasswordData = "ec2:GetPasswordData";
 	/** [Read] ec2:GetReservedInstancesExchangeQuote */
-	static readonly GET_RESERVED_INSTANCES_EXCHANGE_QUOTE =
+	static readonly actionGetReservedInstancesExchangeQuote =
 		"ec2:GetReservedInstancesExchangeQuote";
 	/** [Read] ec2:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "ec2:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "ec2:GetResourcePolicy";
 	/** [Read] ec2:GetRouteServerAssociations */
-	static readonly GET_ROUTE_SERVER_ASSOCIATIONS =
+	static readonly actionGetRouteServerAssociations =
 		"ec2:GetRouteServerAssociations";
 	/** [Read] ec2:GetRouteServerPropagations */
-	static readonly GET_ROUTE_SERVER_PROPAGATIONS =
+	static readonly actionGetRouteServerPropagations =
 		"ec2:GetRouteServerPropagations";
 	/** [Read] ec2:GetRouteServerRoutingDatabase */
-	static readonly GET_ROUTE_SERVER_ROUTING_DATABASE =
+	static readonly actionGetRouteServerRoutingDatabase =
 		"ec2:GetRouteServerRoutingDatabase";
 	/** [Read] ec2:GetSecurityGroupsForVpc */
-	static readonly GET_SECURITY_GROUPS_FOR_VPC = "ec2:GetSecurityGroupsForVpc";
+	static readonly actionGetSecurityGroupsForVpc = "ec2:GetSecurityGroupsForVpc";
 	/** [Read] ec2:GetSerialConsoleAccessStatus */
-	static readonly GET_SERIAL_CONSOLE_ACCESS_STATUS =
+	static readonly actionGetSerialConsoleAccessStatus =
 		"ec2:GetSerialConsoleAccessStatus";
 	/** [Read] ec2:GetSnapshotBlockPublicAccessState */
-	static readonly GET_SNAPSHOT_BLOCK_PUBLIC_ACCESS_STATE =
+	static readonly actionGetSnapshotBlockPublicAccessState =
 		"ec2:GetSnapshotBlockPublicAccessState";
 	/** [Read] ec2:GetSpotPlacementScores */
-	static readonly GET_SPOT_PLACEMENT_SCORES = "ec2:GetSpotPlacementScores";
+	static readonly actionGetSpotPlacementScores = "ec2:GetSpotPlacementScores";
 	/** [Read] ec2:GetSubnetCidrReservations */
-	static readonly GET_SUBNET_CIDR_RESERVATIONS =
+	static readonly actionGetSubnetCidrReservations =
 		"ec2:GetSubnetCidrReservations";
 	/** [List] ec2:GetTransitGatewayAttachmentPropagations */
-	static readonly GET_TRANSIT_GATEWAY_ATTACHMENT_PROPAGATIONS =
+	static readonly actionGetTransitGatewayAttachmentPropagations =
 		"ec2:GetTransitGatewayAttachmentPropagations";
 	/** [List] ec2:GetTransitGatewayMeteringPolicyEntries */
-	static readonly GET_TRANSIT_GATEWAY_METERING_POLICY_ENTRIES =
+	static readonly actionGetTransitGatewayMeteringPolicyEntries =
 		"ec2:GetTransitGatewayMeteringPolicyEntries";
 	/** [List] ec2:GetTransitGatewayMulticastDomainAssociations */
-	static readonly GET_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS =
+	static readonly actionGetTransitGatewayMulticastDomainAssociations =
 		"ec2:GetTransitGatewayMulticastDomainAssociations";
 	/** [List] ec2:GetTransitGatewayPolicyTableAssociations */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ASSOCIATIONS =
+	static readonly actionGetTransitGatewayPolicyTableAssociations =
 		"ec2:GetTransitGatewayPolicyTableAssociations";
 	/** [List] ec2:GetTransitGatewayPolicyTableEntries */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ENTRIES =
+	static readonly actionGetTransitGatewayPolicyTableEntries =
 		"ec2:GetTransitGatewayPolicyTableEntries";
 	/** [List] ec2:GetTransitGatewayPrefixListReferences */
-	static readonly GET_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCES =
+	static readonly actionGetTransitGatewayPrefixListReferences =
 		"ec2:GetTransitGatewayPrefixListReferences";
 	/** [List] ec2:GetTransitGatewayRouteTableAssociations */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_ASSOCIATIONS =
+	static readonly actionGetTransitGatewayRouteTableAssociations =
 		"ec2:GetTransitGatewayRouteTableAssociations";
 	/** [List] ec2:GetTransitGatewayRouteTablePropagations */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATIONS =
+	static readonly actionGetTransitGatewayRouteTablePropagations =
 		"ec2:GetTransitGatewayRouteTablePropagations";
 	/** [List] ec2:GetVerifiedAccessEndpointPolicy */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_POLICY =
+	static readonly actionGetVerifiedAccessEndpointPolicy =
 		"ec2:GetVerifiedAccessEndpointPolicy";
 	/** [List] ec2:GetVerifiedAccessEndpointTargets */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_TARGETS =
+	static readonly actionGetVerifiedAccessEndpointTargets =
 		"ec2:GetVerifiedAccessEndpointTargets";
 	/** [List] ec2:GetVerifiedAccessGroupPolicy */
-	static readonly GET_VERIFIED_ACCESS_GROUP_POLICY =
+	static readonly actionGetVerifiedAccessGroupPolicy =
 		"ec2:GetVerifiedAccessGroupPolicy";
 	/** [List] ec2:GetVerifiedAccessInstanceWebAcl */
-	static readonly GET_VERIFIED_ACCESS_INSTANCE_WEB_ACL =
+	static readonly actionGetVerifiedAccessInstanceWebAcl =
 		"ec2:GetVerifiedAccessInstanceWebAcl";
 	/** [List] ec2:GetVpcResourcesBlockingEncryptionEnforcement */
-	static readonly GET_VPC_RESOURCES_BLOCKING_ENCRYPTION_ENFORCEMENT =
+	static readonly actionGetVpcResourcesBlockingEncryptionEnforcement =
 		"ec2:GetVpcResourcesBlockingEncryptionEnforcement";
 	/** [List] ec2:GetVpnConnectionDeviceSampleConfiguration */
-	static readonly GET_VPN_CONNECTION_DEVICE_SAMPLE_CONFIGURATION =
+	static readonly actionGetVpnConnectionDeviceSampleConfiguration =
 		"ec2:GetVpnConnectionDeviceSampleConfiguration";
 	/** [List] ec2:GetVpnConnectionDeviceTypes */
-	static readonly GET_VPN_CONNECTION_DEVICE_TYPES =
+	static readonly actionGetVpnConnectionDeviceTypes =
 		"ec2:GetVpnConnectionDeviceTypes";
 	/** [List] ec2:GetVpnTunnelReplacementStatus */
-	static readonly GET_VPN_TUNNEL_REPLACEMENT_STATUS =
+	static readonly actionGetVpnTunnelReplacementStatus =
 		"ec2:GetVpnTunnelReplacementStatus";
 	/** [Write] ec2:ImportByoipCidrToIpam */
-	static readonly IMPORT_BYOIP_CIDR_TO_IPAM = "ec2:ImportByoipCidrToIpam";
+	static readonly ImportByoipCidrToIpam = "ec2:ImportByoipCidrToIpam";
 	/** [Write] ec2:ImportClientVpnClientCertificateRevocationList */
-	static readonly IMPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST =
+	static readonly ImportClientVpnClientCertificateRevocationList =
 		"ec2:ImportClientVpnClientCertificateRevocationList";
 	/** [Write] ec2:ImportImage */
-	static readonly IMPORT_IMAGE = "ec2:ImportImage";
+	static readonly ImportImage = "ec2:ImportImage";
 	/** [Write] ec2:ImportInstance */
-	static readonly IMPORT_INSTANCE = "ec2:ImportInstance";
+	static readonly ImportInstance = "ec2:ImportInstance";
 	/** [Write] ec2:ImportKeyPair */
-	static readonly IMPORT_KEY_PAIR = "ec2:ImportKeyPair";
+	static readonly ImportKeyPair = "ec2:ImportKeyPair";
 	/** [Write] ec2:ImportSnapshot */
-	static readonly IMPORT_SNAPSHOT = "ec2:ImportSnapshot";
+	static readonly ImportSnapshot = "ec2:ImportSnapshot";
 	/** [Write] ec2:ImportVolume */
-	static readonly IMPORT_VOLUME = "ec2:ImportVolume";
+	static readonly ImportVolume = "ec2:ImportVolume";
 	/** [Write] ec2:InjectApiError */
-	static readonly INJECT_API_ERROR = "ec2:InjectApiError";
+	static readonly InjectApiError = "ec2:InjectApiError";
 	/** [Write] ec2:InjectVolumeIOLatency */
-	static readonly INJECT_VOLUME_IO_LATENCY = "ec2:InjectVolumeIOLatency";
+	static readonly InjectVolumeIOLatency = "ec2:InjectVolumeIOLatency";
 	/** [List] ec2:ListImagesInRecycleBin */
-	static readonly LIST_IMAGES_IN_RECYCLE_BIN = "ec2:ListImagesInRecycleBin";
+	static readonly ListImagesInRecycleBin = "ec2:ListImagesInRecycleBin";
 	/** [List] ec2:ListSnapshotsInRecycleBin */
-	static readonly LIST_SNAPSHOTS_IN_RECYCLE_BIN =
-		"ec2:ListSnapshotsInRecycleBin";
+	static readonly ListSnapshotsInRecycleBin = "ec2:ListSnapshotsInRecycleBin";
 	/** [List] ec2:ListVolumesInRecycleBin */
-	static readonly LIST_VOLUMES_IN_RECYCLE_BIN = "ec2:ListVolumesInRecycleBin";
+	static readonly ListVolumesInRecycleBin = "ec2:ListVolumesInRecycleBin";
 	/** [Write] ec2:LockSnapshot */
-	static readonly LOCK_SNAPSHOT = "ec2:LockSnapshot";
+	static readonly LockSnapshot = "ec2:LockSnapshot";
 	/** [Write] ec2:ModifyAddressAttribute */
-	static readonly MODIFY_ADDRESS_ATTRIBUTE = "ec2:ModifyAddressAttribute";
+	static readonly ModifyAddressAttribute = "ec2:ModifyAddressAttribute";
 	/** [Write] ec2:ModifyAvailabilityZoneGroup */
-	static readonly MODIFY_AVAILABILITY_ZONE_GROUP =
+	static readonly ModifyAvailabilityZoneGroup =
 		"ec2:ModifyAvailabilityZoneGroup";
 	/** [Write] ec2:ModifyCapacityReservation */
-	static readonly MODIFY_CAPACITY_RESERVATION = "ec2:ModifyCapacityReservation";
+	static readonly ModifyCapacityReservation = "ec2:ModifyCapacityReservation";
 	/** [Write] ec2:ModifyCapacityReservationFleet */
-	static readonly MODIFY_CAPACITY_RESERVATION_FLEET =
+	static readonly ModifyCapacityReservationFleet =
 		"ec2:ModifyCapacityReservationFleet";
 	/** [Write] ec2:ModifyClientVpnEndpoint */
-	static readonly MODIFY_CLIENT_VPN_ENDPOINT = "ec2:ModifyClientVpnEndpoint";
+	static readonly ModifyClientVpnEndpoint = "ec2:ModifyClientVpnEndpoint";
 	/** [Write] ec2:ModifyDefaultCreditSpecification */
-	static readonly MODIFY_DEFAULT_CREDIT_SPECIFICATION =
+	static readonly ModifyDefaultCreditSpecification =
 		"ec2:ModifyDefaultCreditSpecification";
 	/** [Write] ec2:ModifyEbsDefaultKmsKeyId */
-	static readonly MODIFY_EBS_DEFAULT_KMS_KEY_ID =
-		"ec2:ModifyEbsDefaultKmsKeyId";
+	static readonly ModifyEbsDefaultKmsKeyId = "ec2:ModifyEbsDefaultKmsKeyId";
 	/** [Write] ec2:ModifyFleet */
-	static readonly MODIFY_FLEET = "ec2:ModifyFleet";
+	static readonly ModifyFleet = "ec2:ModifyFleet";
 	/** [Write] ec2:ModifyFpgaImageAttribute */
-	static readonly MODIFY_FPGA_IMAGE_ATTRIBUTE = "ec2:ModifyFpgaImageAttribute";
+	static readonly ModifyFpgaImageAttribute = "ec2:ModifyFpgaImageAttribute";
 	/** [Write] ec2:ModifyHosts */
-	static readonly MODIFY_HOSTS = "ec2:ModifyHosts";
+	static readonly ModifyHosts = "ec2:ModifyHosts";
 	/** [Write] ec2:ModifyIdFormat */
-	static readonly MODIFY_ID_FORMAT = "ec2:ModifyIdFormat";
+	static readonly ModifyIdFormat = "ec2:ModifyIdFormat";
 	/** [Write] ec2:ModifyIdentityIdFormat */
-	static readonly MODIFY_IDENTITY_ID_FORMAT = "ec2:ModifyIdentityIdFormat";
+	static readonly ModifyIdentityIdFormat = "ec2:ModifyIdentityIdFormat";
 	/** [Write] ec2:ModifyImageAttribute */
-	static readonly MODIFY_IMAGE_ATTRIBUTE = "ec2:ModifyImageAttribute";
+	static readonly ModifyImageAttribute = "ec2:ModifyImageAttribute";
 	/** [Write] ec2:ModifyInstanceAttribute */
-	static readonly MODIFY_INSTANCE_ATTRIBUTE = "ec2:ModifyInstanceAttribute";
+	static readonly ModifyInstanceAttribute = "ec2:ModifyInstanceAttribute";
 	/** [Write] ec2:ModifyInstanceCapacityReservationAttributes */
-	static readonly MODIFY_INSTANCE_CAPACITY_RESERVATION_ATTRIBUTES =
+	static readonly ModifyInstanceCapacityReservationAttributes =
 		"ec2:ModifyInstanceCapacityReservationAttributes";
 	/** [Write] ec2:ModifyInstanceConnectEndpoint */
-	static readonly MODIFY_INSTANCE_CONNECT_ENDPOINT =
+	static readonly ModifyInstanceConnectEndpoint =
 		"ec2:ModifyInstanceConnectEndpoint";
 	/** [Write] ec2:ModifyInstanceCpuOptions */
-	static readonly MODIFY_INSTANCE_CPU_OPTIONS = "ec2:ModifyInstanceCpuOptions";
+	static readonly ModifyInstanceCpuOptions = "ec2:ModifyInstanceCpuOptions";
 	/** [Write] ec2:ModifyInstanceCreditSpecification */
-	static readonly MODIFY_INSTANCE_CREDIT_SPECIFICATION =
+	static readonly ModifyInstanceCreditSpecification =
 		"ec2:ModifyInstanceCreditSpecification";
 	/** [Write] ec2:ModifyInstanceEventStartTime */
-	static readonly MODIFY_INSTANCE_EVENT_START_TIME =
+	static readonly ModifyInstanceEventStartTime =
 		"ec2:ModifyInstanceEventStartTime";
 	/** [Write] ec2:ModifyInstanceEventWindow */
-	static readonly MODIFY_INSTANCE_EVENT_WINDOW =
-		"ec2:ModifyInstanceEventWindow";
+	static readonly ModifyInstanceEventWindow = "ec2:ModifyInstanceEventWindow";
 	/** [Write] ec2:ModifyInstanceMaintenanceOptions */
-	static readonly MODIFY_INSTANCE_MAINTENANCE_OPTIONS =
+	static readonly ModifyInstanceMaintenanceOptions =
 		"ec2:ModifyInstanceMaintenanceOptions";
 	/** [Write] ec2:ModifyInstanceMetadataDefaults */
-	static readonly MODIFY_INSTANCE_METADATA_DEFAULTS =
+	static readonly ModifyInstanceMetadataDefaults =
 		"ec2:ModifyInstanceMetadataDefaults";
 	/** [Write] ec2:ModifyInstanceMetadataOptions */
-	static readonly MODIFY_INSTANCE_METADATA_OPTIONS =
+	static readonly ModifyInstanceMetadataOptions =
 		"ec2:ModifyInstanceMetadataOptions";
 	/** [Write] ec2:ModifyInstanceNetworkPerformanceOptions */
-	static readonly MODIFY_INSTANCE_NETWORK_PERFORMANCE_OPTIONS =
+	static readonly ModifyInstanceNetworkPerformanceOptions =
 		"ec2:ModifyInstanceNetworkPerformanceOptions";
 	/** [Write] ec2:ModifyInstancePlacement */
-	static readonly MODIFY_INSTANCE_PLACEMENT = "ec2:ModifyInstancePlacement";
+	static readonly ModifyInstancePlacement = "ec2:ModifyInstancePlacement";
 	/** [Write] ec2:ModifyIpam */
-	static readonly MODIFY_IPAM = "ec2:ModifyIpam";
+	static readonly ModifyIpam = "ec2:ModifyIpam";
 	/** [Write] ec2:ModifyIpamPolicyAllocationRules */
-	static readonly MODIFY_IPAM_POLICY_ALLOCATION_RULES =
+	static readonly ModifyIpamPolicyAllocationRules =
 		"ec2:ModifyIpamPolicyAllocationRules";
 	/** [Write] ec2:ModifyIpamPool */
-	static readonly MODIFY_IPAM_POOL = "ec2:ModifyIpamPool";
+	static readonly ModifyIpamPool = "ec2:ModifyIpamPool";
 	/** [Write] ec2:ModifyIpamPoolAllocation */
-	static readonly MODIFY_IPAM_POOL_ALLOCATION = "ec2:ModifyIpamPoolAllocation";
+	static readonly ModifyIpamPoolAllocation = "ec2:ModifyIpamPoolAllocation";
 	/** [Write] ec2:ModifyIpamPrefixListResolver */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER =
+	static readonly ModifyIpamPrefixListResolver =
 		"ec2:ModifyIpamPrefixListResolver";
 	/** [Write] ec2:ModifyIpamPrefixListResolverTarget */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER_TARGET =
+	static readonly ModifyIpamPrefixListResolverTarget =
 		"ec2:ModifyIpamPrefixListResolverTarget";
 	/** [Write] ec2:ModifyIpamResourceCidr */
-	static readonly MODIFY_IPAM_RESOURCE_CIDR = "ec2:ModifyIpamResourceCidr";
+	static readonly ModifyIpamResourceCidr = "ec2:ModifyIpamResourceCidr";
 	/** [Write] ec2:ModifyIpamResourceDiscovery */
-	static readonly MODIFY_IPAM_RESOURCE_DISCOVERY =
+	static readonly ModifyIpamResourceDiscovery =
 		"ec2:ModifyIpamResourceDiscovery";
 	/** [Write] ec2:ModifyIpamScope */
-	static readonly MODIFY_IPAM_SCOPE = "ec2:ModifyIpamScope";
+	static readonly ModifyIpamScope = "ec2:ModifyIpamScope";
 	/** [Write] ec2:ModifyLaunchTemplate */
-	static readonly MODIFY_LAUNCH_TEMPLATE = "ec2:ModifyLaunchTemplate";
+	static readonly ModifyLaunchTemplate = "ec2:ModifyLaunchTemplate";
 	/** [Write] ec2:ModifyLocalGatewayRoute */
-	static readonly MODIFY_LOCAL_GATEWAY_ROUTE = "ec2:ModifyLocalGatewayRoute";
+	static readonly ModifyLocalGatewayRoute = "ec2:ModifyLocalGatewayRoute";
 	/** [Write] ec2:ModifyManagedPrefixList */
-	static readonly MODIFY_MANAGED_PREFIX_LIST = "ec2:ModifyManagedPrefixList";
+	static readonly ModifyManagedPrefixList = "ec2:ModifyManagedPrefixList";
 	/** [Write] ec2:ModifyManagedResourceVisibility */
-	static readonly MODIFY_MANAGED_RESOURCE_VISIBILITY =
+	static readonly ModifyManagedResourceVisibility =
 		"ec2:ModifyManagedResourceVisibility";
 	/** [Write] ec2:ModifyNetworkInterfaceAttribute */
-	static readonly MODIFY_NETWORK_INTERFACE_ATTRIBUTE =
+	static readonly ModifyNetworkInterfaceAttribute =
 		"ec2:ModifyNetworkInterfaceAttribute";
 	/** [PermissionManagement] ec2:ModifyOdbNetworkPeering */
-	static readonly MODIFY_ODB_NETWORK_PEERING = "ec2:ModifyOdbNetworkPeering";
+	static readonly ModifyOdbNetworkPeering = "ec2:ModifyOdbNetworkPeering";
 	/** [Write] ec2:ModifyPrivateDnsNameOptions */
-	static readonly MODIFY_PRIVATE_DNS_NAME_OPTIONS =
+	static readonly ModifyPrivateDnsNameOptions =
 		"ec2:ModifyPrivateDnsNameOptions";
 	/** [Write] ec2:ModifyPublicIpDnsNameOptions */
-	static readonly MODIFY_PUBLIC_IP_DNS_NAME_OPTIONS =
+	static readonly ModifyPublicIpDnsNameOptions =
 		"ec2:ModifyPublicIpDnsNameOptions";
 	/** [Write] ec2:ModifyReservedInstances */
-	static readonly MODIFY_RESERVED_INSTANCES = "ec2:ModifyReservedInstances";
+	static readonly ModifyReservedInstances = "ec2:ModifyReservedInstances";
 	/** [Write] ec2:ModifyRouteServer */
-	static readonly MODIFY_ROUTE_SERVER = "ec2:ModifyRouteServer";
+	static readonly ModifyRouteServer = "ec2:ModifyRouteServer";
 	/** [Write] ec2:ModifySecurityGroupRules */
-	static readonly MODIFY_SECURITY_GROUP_RULES = "ec2:ModifySecurityGroupRules";
+	static readonly ModifySecurityGroupRules = "ec2:ModifySecurityGroupRules";
 	/** [PermissionManagement] ec2:ModifySnapshotAttribute */
-	static readonly MODIFY_SNAPSHOT_ATTRIBUTE = "ec2:ModifySnapshotAttribute";
+	static readonly ModifySnapshotAttribute = "ec2:ModifySnapshotAttribute";
 	/** [Write] ec2:ModifySnapshotTier */
-	static readonly MODIFY_SNAPSHOT_TIER = "ec2:ModifySnapshotTier";
+	static readonly ModifySnapshotTier = "ec2:ModifySnapshotTier";
 	/** [Write] ec2:ModifySpotFleetRequest */
-	static readonly MODIFY_SPOT_FLEET_REQUEST = "ec2:ModifySpotFleetRequest";
+	static readonly ModifySpotFleetRequest = "ec2:ModifySpotFleetRequest";
 	/** [Write] ec2:ModifySubnetAttribute */
-	static readonly MODIFY_SUBNET_ATTRIBUTE = "ec2:ModifySubnetAttribute";
+	static readonly ModifySubnetAttribute = "ec2:ModifySubnetAttribute";
 	/** [Write] ec2:ModifyTrafficMirrorFilterNetworkServices */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_NETWORK_SERVICES =
+	static readonly ModifyTrafficMirrorFilterNetworkServices =
 		"ec2:ModifyTrafficMirrorFilterNetworkServices";
 	/** [Write] ec2:ModifyTrafficMirrorFilterRule */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_RULE =
+	static readonly ModifyTrafficMirrorFilterRule =
 		"ec2:ModifyTrafficMirrorFilterRule";
 	/** [Write] ec2:ModifyTrafficMirrorSession */
-	static readonly MODIFY_TRAFFIC_MIRROR_SESSION =
-		"ec2:ModifyTrafficMirrorSession";
+	static readonly ModifyTrafficMirrorSession = "ec2:ModifyTrafficMirrorSession";
 	/** [Write] ec2:ModifyTransitGateway */
-	static readonly MODIFY_TRANSIT_GATEWAY = "ec2:ModifyTransitGateway";
+	static readonly ModifyTransitGateway = "ec2:ModifyTransitGateway";
 	/** [Write] ec2:ModifyTransitGatewayMeteringPolicy */
-	static readonly MODIFY_TRANSIT_GATEWAY_METERING_POLICY =
+	static readonly ModifyTransitGatewayMeteringPolicy =
 		"ec2:ModifyTransitGatewayMeteringPolicy";
 	/** [Write] ec2:ModifyTransitGatewayPrefixListReference */
-	static readonly MODIFY_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE =
+	static readonly ModifyTransitGatewayPrefixListReference =
 		"ec2:ModifyTransitGatewayPrefixListReference";
 	/** [Write] ec2:ModifyTransitGatewayVpcAttachment */
-	static readonly MODIFY_TRANSIT_GATEWAY_VPC_ATTACHMENT =
+	static readonly ModifyTransitGatewayVpcAttachment =
 		"ec2:ModifyTransitGatewayVpcAttachment";
 	/** [Write] ec2:ModifyVerifiedAccessEndpoint */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT =
+	static readonly ModifyVerifiedAccessEndpoint =
 		"ec2:ModifyVerifiedAccessEndpoint";
 	/** [Write] ec2:ModifyVerifiedAccessEndpointPolicy */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT_POLICY =
+	static readonly ModifyVerifiedAccessEndpointPolicy =
 		"ec2:ModifyVerifiedAccessEndpointPolicy";
 	/** [Write] ec2:ModifyVerifiedAccessGroup */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP =
-		"ec2:ModifyVerifiedAccessGroup";
+	static readonly ModifyVerifiedAccessGroup = "ec2:ModifyVerifiedAccessGroup";
 	/** [Write] ec2:ModifyVerifiedAccessGroupPolicy */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP_POLICY =
+	static readonly ModifyVerifiedAccessGroupPolicy =
 		"ec2:ModifyVerifiedAccessGroupPolicy";
 	/** [Write] ec2:ModifyVerifiedAccessInstance */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE =
+	static readonly ModifyVerifiedAccessInstance =
 		"ec2:ModifyVerifiedAccessInstance";
 	/** [Write] ec2:ModifyVerifiedAccessInstanceLoggingConfiguration */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATION =
+	static readonly ModifyVerifiedAccessInstanceLoggingConfiguration =
 		"ec2:ModifyVerifiedAccessInstanceLoggingConfiguration";
 	/** [Write] ec2:ModifyVerifiedAccessTrustProvider */
-	static readonly MODIFY_VERIFIED_ACCESS_TRUST_PROVIDER =
+	static readonly ModifyVerifiedAccessTrustProvider =
 		"ec2:ModifyVerifiedAccessTrustProvider";
 	/** [Write] ec2:ModifyVolume */
-	static readonly MODIFY_VOLUME = "ec2:ModifyVolume";
+	static readonly ModifyVolume = "ec2:ModifyVolume";
 	/** [Write] ec2:ModifyVolumeAttribute */
-	static readonly MODIFY_VOLUME_ATTRIBUTE = "ec2:ModifyVolumeAttribute";
+	static readonly ModifyVolumeAttribute = "ec2:ModifyVolumeAttribute";
 	/** [Write] ec2:ModifyVpcAttribute */
-	static readonly MODIFY_VPC_ATTRIBUTE = "ec2:ModifyVpcAttribute";
+	static readonly ModifyVpcAttribute = "ec2:ModifyVpcAttribute";
 	/** [Write] ec2:ModifyVpcBlockPublicAccessExclusion */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION =
+	static readonly ModifyVpcBlockPublicAccessExclusion =
 		"ec2:ModifyVpcBlockPublicAccessExclusion";
 	/** [Write] ec2:ModifyVpcBlockPublicAccessOptions */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS =
+	static readonly ModifyVpcBlockPublicAccessOptions =
 		"ec2:ModifyVpcBlockPublicAccessOptions";
 	/** [Write] ec2:ModifyVpcEncryptionControl */
-	static readonly MODIFY_VPC_ENCRYPTION_CONTROL =
-		"ec2:ModifyVpcEncryptionControl";
+	static readonly ModifyVpcEncryptionControl = "ec2:ModifyVpcEncryptionControl";
 	/** [Write] ec2:ModifyVpcEndpoint */
-	static readonly MODIFY_VPC_ENDPOINT = "ec2:ModifyVpcEndpoint";
+	static readonly ModifyVpcEndpoint = "ec2:ModifyVpcEndpoint";
 	/** [Write] ec2:ModifyVpcEndpointConnectionNotification */
-	static readonly MODIFY_VPC_ENDPOINT_CONNECTION_NOTIFICATION =
+	static readonly ModifyVpcEndpointConnectionNotification =
 		"ec2:ModifyVpcEndpointConnectionNotification";
 	/** [Write] ec2:ModifyVpcEndpointServiceConfiguration */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_CONFIGURATION =
+	static readonly ModifyVpcEndpointServiceConfiguration =
 		"ec2:ModifyVpcEndpointServiceConfiguration";
 	/** [Write] ec2:ModifyVpcEndpointServicePayerResponsibility */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PAYER_RESPONSIBILITY =
+	static readonly ModifyVpcEndpointServicePayerResponsibility =
 		"ec2:ModifyVpcEndpointServicePayerResponsibility";
 	/** [PermissionManagement] ec2:ModifyVpcEndpointServicePermissions */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PERMISSIONS =
+	static readonly ModifyVpcEndpointServicePermissions =
 		"ec2:ModifyVpcEndpointServicePermissions";
 	/** [Write] ec2:ModifyVpcPeeringConnectionOptions */
-	static readonly MODIFY_VPC_PEERING_CONNECTION_OPTIONS =
+	static readonly ModifyVpcPeeringConnectionOptions =
 		"ec2:ModifyVpcPeeringConnectionOptions";
 	/** [Write] ec2:ModifyVpcTenancy */
-	static readonly MODIFY_VPC_TENANCY = "ec2:ModifyVpcTenancy";
+	static readonly ModifyVpcTenancy = "ec2:ModifyVpcTenancy";
 	/** [Write] ec2:ModifyVpnConnection */
-	static readonly MODIFY_VPN_CONNECTION = "ec2:ModifyVpnConnection";
+	static readonly ModifyVpnConnection = "ec2:ModifyVpnConnection";
 	/** [Write] ec2:ModifyVpnConnectionOptions */
-	static readonly MODIFY_VPN_CONNECTION_OPTIONS =
-		"ec2:ModifyVpnConnectionOptions";
+	static readonly ModifyVpnConnectionOptions = "ec2:ModifyVpnConnectionOptions";
 	/** [Write] ec2:ModifyVpnTunnelCertificate */
-	static readonly MODIFY_VPN_TUNNEL_CERTIFICATE =
-		"ec2:ModifyVpnTunnelCertificate";
+	static readonly ModifyVpnTunnelCertificate = "ec2:ModifyVpnTunnelCertificate";
 	/** [Write] ec2:ModifyVpnTunnelOptions */
-	static readonly MODIFY_VPN_TUNNEL_OPTIONS = "ec2:ModifyVpnTunnelOptions";
+	static readonly ModifyVpnTunnelOptions = "ec2:ModifyVpnTunnelOptions";
 	/** [Write] ec2:MonitorInstances */
-	static readonly MONITOR_INSTANCES = "ec2:MonitorInstances";
+	static readonly MonitorInstances = "ec2:MonitorInstances";
 	/** [Write] ec2:MoveAddressToVpc */
-	static readonly MOVE_ADDRESS_TO_VPC = "ec2:MoveAddressToVpc";
+	static readonly MoveAddressToVpc = "ec2:MoveAddressToVpc";
 	/** [Write] ec2:MoveByoipCidrToIpam */
-	static readonly MOVE_BYOIP_CIDR_TO_IPAM = "ec2:MoveByoipCidrToIpam";
+	static readonly MoveByoipCidrToIpam = "ec2:MoveByoipCidrToIpam";
 	/** [Write] ec2:MoveCapacityReservationInstances */
-	static readonly MOVE_CAPACITY_RESERVATION_INSTANCES =
+	static readonly MoveCapacityReservationInstances =
 		"ec2:MoveCapacityReservationInstances";
 	/** [Write] ec2:PauseVolumeIO */
-	static readonly PAUSE_VOLUME_IO = "ec2:PauseVolumeIO";
+	static readonly PauseVolumeIO = "ec2:PauseVolumeIO";
 	/** [Write] ec2:ProvisionByoipCidr */
-	static readonly PROVISION_BYOIP_CIDR = "ec2:ProvisionByoipCidr";
+	static readonly ProvisionByoipCidr = "ec2:ProvisionByoipCidr";
 	/** [Write] ec2:ProvisionIpamByoasn */
-	static readonly PROVISION_IPAM_BYOASN = "ec2:ProvisionIpamByoasn";
+	static readonly ProvisionIpamByoasn = "ec2:ProvisionIpamByoasn";
 	/** [Write] ec2:ProvisionIpamPoolCidr */
-	static readonly PROVISION_IPAM_POOL_CIDR = "ec2:ProvisionIpamPoolCidr";
+	static readonly ProvisionIpamPoolCidr = "ec2:ProvisionIpamPoolCidr";
 	/** [Write] ec2:ProvisionPublicIpv4PoolCidr */
-	static readonly PROVISION_PUBLIC_IPV4_POOL_CIDR =
+	static readonly ProvisionPublicIpv4PoolCidr =
 		"ec2:ProvisionPublicIpv4PoolCidr";
 	/** [Write] ec2:PurchaseCapacityBlock */
-	static readonly PURCHASE_CAPACITY_BLOCK = "ec2:PurchaseCapacityBlock";
+	static readonly PurchaseCapacityBlock = "ec2:PurchaseCapacityBlock";
 	/** [Write] ec2:PurchaseCapacityBlockExtension */
-	static readonly PURCHASE_CAPACITY_BLOCK_EXTENSION =
+	static readonly PurchaseCapacityBlockExtension =
 		"ec2:PurchaseCapacityBlockExtension";
 	/** [Write] ec2:PurchaseHostReservation */
-	static readonly PURCHASE_HOST_RESERVATION = "ec2:PurchaseHostReservation";
+	static readonly PurchaseHostReservation = "ec2:PurchaseHostReservation";
 	/** [Write] ec2:PurchaseReservedInstancesOffering */
-	static readonly PURCHASE_RESERVED_INSTANCES_OFFERING =
+	static readonly PurchaseReservedInstancesOffering =
 		"ec2:PurchaseReservedInstancesOffering";
 	/** [Write] ec2:PurchaseScheduledInstances */
-	static readonly PURCHASE_SCHEDULED_INSTANCES =
-		"ec2:PurchaseScheduledInstances";
+	static readonly PurchaseScheduledInstances = "ec2:PurchaseScheduledInstances";
 	/** [PermissionManagement] ec2:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "ec2:PutResourcePolicy";
+	static readonly PutResourcePolicy = "ec2:PutResourcePolicy";
 	/** [Write] ec2:RebootInstances */
-	static readonly REBOOT_INSTANCES = "ec2:RebootInstances";
+	static readonly RebootInstances = "ec2:RebootInstances";
 	/** [Write] ec2:RegisterImage */
-	static readonly REGISTER_IMAGE = "ec2:RegisterImage";
+	static readonly RegisterImage = "ec2:RegisterImage";
 	/** [Write] ec2:RegisterInstanceEventNotificationAttributes */
-	static readonly REGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES =
+	static readonly RegisterInstanceEventNotificationAttributes =
 		"ec2:RegisterInstanceEventNotificationAttributes";
 	/** [Write] ec2:RegisterTransitGatewayMulticastGroupMembers */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS =
+	static readonly RegisterTransitGatewayMulticastGroupMembers =
 		"ec2:RegisterTransitGatewayMulticastGroupMembers";
 	/** [Write] ec2:RegisterTransitGatewayMulticastGroupSources */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES =
+	static readonly RegisterTransitGatewayMulticastGroupSources =
 		"ec2:RegisterTransitGatewayMulticastGroupSources";
 	/** [Write] ec2:RejectCapacityReservationBillingOwnership */
-	static readonly REJECT_CAPACITY_RESERVATION_BILLING_OWNERSHIP =
+	static readonly RejectCapacityReservationBillingOwnership =
 		"ec2:RejectCapacityReservationBillingOwnership";
 	/** [Write] ec2:RejectTransitGatewayClientVpnAttachment */
-	static readonly REJECT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT =
+	static readonly RejectTransitGatewayClientVpnAttachment =
 		"ec2:RejectTransitGatewayClientVpnAttachment";
 	/** [Write] ec2:RejectTransitGatewayMulticastDomainAssociations */
-	static readonly REJECT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS =
+	static readonly RejectTransitGatewayMulticastDomainAssociations =
 		"ec2:RejectTransitGatewayMulticastDomainAssociations";
 	/** [Write] ec2:RejectTransitGatewayPeeringAttachment */
-	static readonly REJECT_TRANSIT_GATEWAY_PEERING_ATTACHMENT =
+	static readonly RejectTransitGatewayPeeringAttachment =
 		"ec2:RejectTransitGatewayPeeringAttachment";
 	/** [Write] ec2:RejectTransitGatewayVpcAttachment */
-	static readonly REJECT_TRANSIT_GATEWAY_VPC_ATTACHMENT =
+	static readonly RejectTransitGatewayVpcAttachment =
 		"ec2:RejectTransitGatewayVpcAttachment";
 	/** [Write] ec2:RejectVpcEndpointConnections */
-	static readonly REJECT_VPC_ENDPOINT_CONNECTIONS =
+	static readonly RejectVpcEndpointConnections =
 		"ec2:RejectVpcEndpointConnections";
 	/** [Write] ec2:RejectVpcPeeringConnection */
-	static readonly REJECT_VPC_PEERING_CONNECTION =
-		"ec2:RejectVpcPeeringConnection";
+	static readonly RejectVpcPeeringConnection = "ec2:RejectVpcPeeringConnection";
 	/** [Write] ec2:ReleaseAddress */
-	static readonly RELEASE_ADDRESS = "ec2:ReleaseAddress";
+	static readonly ReleaseAddress = "ec2:ReleaseAddress";
 	/** [Write] ec2:ReleaseHosts */
-	static readonly RELEASE_HOSTS = "ec2:ReleaseHosts";
+	static readonly ReleaseHosts = "ec2:ReleaseHosts";
 	/** [Write] ec2:ReleaseIpamPoolAllocation */
-	static readonly RELEASE_IPAM_POOL_ALLOCATION =
-		"ec2:ReleaseIpamPoolAllocation";
+	static readonly ReleaseIpamPoolAllocation = "ec2:ReleaseIpamPoolAllocation";
 	/** [Write] ec2:ReplaceIamInstanceProfileAssociation */
-	static readonly REPLACE_IAM_INSTANCE_PROFILE_ASSOCIATION =
+	static readonly ReplaceIamInstanceProfileAssociation =
 		"ec2:ReplaceIamInstanceProfileAssociation";
 	/** [Write] ec2:ReplaceImageCriteriaInAllowedImagesSettings */
-	static readonly REPLACE_IMAGE_CRITERIA_IN_ALLOWED_IMAGES_SETTINGS =
+	static readonly ReplaceImageCriteriaInAllowedImagesSettings =
 		"ec2:ReplaceImageCriteriaInAllowedImagesSettings";
 	/** [Write] ec2:ReplaceNetworkAclAssociation */
-	static readonly REPLACE_NETWORK_ACL_ASSOCIATION =
+	static readonly ReplaceNetworkAclAssociation =
 		"ec2:ReplaceNetworkAclAssociation";
 	/** [Write] ec2:ReplaceNetworkAclEntry */
-	static readonly REPLACE_NETWORK_ACL_ENTRY = "ec2:ReplaceNetworkAclEntry";
+	static readonly ReplaceNetworkAclEntry = "ec2:ReplaceNetworkAclEntry";
 	/** [Write] ec2:ReplaceRoute */
-	static readonly REPLACE_ROUTE = "ec2:ReplaceRoute";
+	static readonly ReplaceRoute = "ec2:ReplaceRoute";
 	/** [Write] ec2:ReplaceRouteTableAssociation */
-	static readonly REPLACE_ROUTE_TABLE_ASSOCIATION =
+	static readonly ReplaceRouteTableAssociation =
 		"ec2:ReplaceRouteTableAssociation";
 	/** [Write] ec2:ReplaceTransitGatewayRoute */
-	static readonly REPLACE_TRANSIT_GATEWAY_ROUTE =
-		"ec2:ReplaceTransitGatewayRoute";
+	static readonly ReplaceTransitGatewayRoute = "ec2:ReplaceTransitGatewayRoute";
 	/** [Write] ec2:ReplaceVpnTunnel */
-	static readonly REPLACE_VPN_TUNNEL = "ec2:ReplaceVpnTunnel";
+	static readonly ReplaceVpnTunnel = "ec2:ReplaceVpnTunnel";
 	/** [Write] ec2:ReportInstanceStatus */
-	static readonly REPORT_INSTANCE_STATUS = "ec2:ReportInstanceStatus";
+	static readonly ReportInstanceStatus = "ec2:ReportInstanceStatus";
 	/** [Write] ec2:RequestSpotFleet */
-	static readonly REQUEST_SPOT_FLEET = "ec2:RequestSpotFleet";
+	static readonly RequestSpotFleet = "ec2:RequestSpotFleet";
 	/** [Write] ec2:RequestSpotInstances */
-	static readonly REQUEST_SPOT_INSTANCES = "ec2:RequestSpotInstances";
+	static readonly RequestSpotInstances = "ec2:RequestSpotInstances";
 	/** [Write] ec2:ResetAddressAttribute */
-	static readonly RESET_ADDRESS_ATTRIBUTE = "ec2:ResetAddressAttribute";
+	static readonly ResetAddressAttribute = "ec2:ResetAddressAttribute";
 	/** [Write] ec2:ResetEbsDefaultKmsKeyId */
-	static readonly RESET_EBS_DEFAULT_KMS_KEY_ID = "ec2:ResetEbsDefaultKmsKeyId";
+	static readonly ResetEbsDefaultKmsKeyId = "ec2:ResetEbsDefaultKmsKeyId";
 	/** [Write] ec2:ResetFpgaImageAttribute */
-	static readonly RESET_FPGA_IMAGE_ATTRIBUTE = "ec2:ResetFpgaImageAttribute";
+	static readonly ResetFpgaImageAttribute = "ec2:ResetFpgaImageAttribute";
 	/** [Write] ec2:ResetImageAttribute */
-	static readonly RESET_IMAGE_ATTRIBUTE = "ec2:ResetImageAttribute";
+	static readonly ResetImageAttribute = "ec2:ResetImageAttribute";
 	/** [Write] ec2:ResetInstanceAttribute */
-	static readonly RESET_INSTANCE_ATTRIBUTE = "ec2:ResetInstanceAttribute";
+	static readonly ResetInstanceAttribute = "ec2:ResetInstanceAttribute";
 	/** [Write] ec2:ResetNetworkInterfaceAttribute */
-	static readonly RESET_NETWORK_INTERFACE_ATTRIBUTE =
+	static readonly ResetNetworkInterfaceAttribute =
 		"ec2:ResetNetworkInterfaceAttribute";
 	/** [PermissionManagement] ec2:ResetSnapshotAttribute */
-	static readonly RESET_SNAPSHOT_ATTRIBUTE = "ec2:ResetSnapshotAttribute";
+	static readonly ResetSnapshotAttribute = "ec2:ResetSnapshotAttribute";
 	/** [Write] ec2:RestoreAddressToClassic */
-	static readonly RESTORE_ADDRESS_TO_CLASSIC = "ec2:RestoreAddressToClassic";
+	static readonly RestoreAddressToClassic = "ec2:RestoreAddressToClassic";
 	/** [Write] ec2:RestoreImageFromRecycleBin */
-	static readonly RESTORE_IMAGE_FROM_RECYCLE_BIN =
-		"ec2:RestoreImageFromRecycleBin";
+	static readonly RestoreImageFromRecycleBin = "ec2:RestoreImageFromRecycleBin";
 	/** [Write] ec2:RestoreManagedPrefixListVersion */
-	static readonly RESTORE_MANAGED_PREFIX_LIST_VERSION =
+	static readonly RestoreManagedPrefixListVersion =
 		"ec2:RestoreManagedPrefixListVersion";
 	/** [Write] ec2:RestoreSnapshotFromRecycleBin */
-	static readonly RESTORE_SNAPSHOT_FROM_RECYCLE_BIN =
+	static readonly RestoreSnapshotFromRecycleBin =
 		"ec2:RestoreSnapshotFromRecycleBin";
 	/** [Write] ec2:RestoreSnapshotTier */
-	static readonly RESTORE_SNAPSHOT_TIER = "ec2:RestoreSnapshotTier";
+	static readonly RestoreSnapshotTier = "ec2:RestoreSnapshotTier";
 	/** [Write] ec2:RestoreVolumeFromRecycleBin */
-	static readonly RESTORE_VOLUME_FROM_RECYCLE_BIN =
+	static readonly RestoreVolumeFromRecycleBin =
 		"ec2:RestoreVolumeFromRecycleBin";
 	/** [Write] ec2:RevokeClientVpnIngress */
-	static readonly REVOKE_CLIENT_VPN_INGRESS = "ec2:RevokeClientVpnIngress";
+	static readonly RevokeClientVpnIngress = "ec2:RevokeClientVpnIngress";
 	/** [Write] ec2:RevokeSecurityGroupEgress */
-	static readonly REVOKE_SECURITY_GROUP_EGRESS =
-		"ec2:RevokeSecurityGroupEgress";
+	static readonly RevokeSecurityGroupEgress = "ec2:RevokeSecurityGroupEgress";
 	/** [Write] ec2:RevokeSecurityGroupIngress */
-	static readonly REVOKE_SECURITY_GROUP_INGRESS =
-		"ec2:RevokeSecurityGroupIngress";
+	static readonly RevokeSecurityGroupIngress = "ec2:RevokeSecurityGroupIngress";
 	/** [Write] ec2:RunInstances */
-	static readonly RUN_INSTANCES = "ec2:RunInstances";
+	static readonly RunInstances = "ec2:RunInstances";
 	/** [Write] ec2:RunScheduledInstances */
-	static readonly RUN_SCHEDULED_INSTANCES = "ec2:RunScheduledInstances";
+	static readonly RunScheduledInstances = "ec2:RunScheduledInstances";
 	/** [List] ec2:SearchLocalGatewayRoutes */
-	static readonly SEARCH_LOCAL_GATEWAY_ROUTES = "ec2:SearchLocalGatewayRoutes";
+	static readonly SearchLocalGatewayRoutes = "ec2:SearchLocalGatewayRoutes";
 	/** [List] ec2:SearchTransitGatewayMulticastGroups */
-	static readonly SEARCH_TRANSIT_GATEWAY_MULTICAST_GROUPS =
+	static readonly SearchTransitGatewayMulticastGroups =
 		"ec2:SearchTransitGatewayMulticastGroups";
 	/** [List] ec2:SearchTransitGatewayRoutes */
-	static readonly SEARCH_TRANSIT_GATEWAY_ROUTES =
-		"ec2:SearchTransitGatewayRoutes";
+	static readonly SearchTransitGatewayRoutes = "ec2:SearchTransitGatewayRoutes";
 	/** [Write] ec2:SendDiagnosticInterrupt */
-	static readonly SEND_DIAGNOSTIC_INTERRUPT = "ec2:SendDiagnosticInterrupt";
+	static readonly SendDiagnosticInterrupt = "ec2:SendDiagnosticInterrupt";
 	/** [Write] ec2:SendSpotInstanceInterruptions */
-	static readonly SEND_SPOT_INSTANCE_INTERRUPTIONS =
+	static readonly SendSpotInstanceInterruptions =
 		"ec2:SendSpotInstanceInterruptions";
 	/** [Read] ec2:StartDeclarativePoliciesReport */
-	static readonly START_DECLARATIVE_POLICIES_REPORT =
+	static readonly StartDeclarativePoliciesReport =
 		"ec2:StartDeclarativePoliciesReport";
 	/** [Write] ec2:StartInstances */
-	static readonly START_INSTANCES = "ec2:StartInstances";
+	static readonly StartInstances = "ec2:StartInstances";
 	/** [Write] ec2:StartNetworkInsightsAccessScopeAnalysis */
-	static readonly START_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS =
+	static readonly StartNetworkInsightsAccessScopeAnalysis =
 		"ec2:StartNetworkInsightsAccessScopeAnalysis";
 	/** [Write] ec2:StartNetworkInsightsAnalysis */
-	static readonly START_NETWORK_INSIGHTS_ANALYSIS =
+	static readonly StartNetworkInsightsAnalysis =
 		"ec2:StartNetworkInsightsAnalysis";
 	/** [Write] ec2:StartVpcEndpointServicePrivateDnsVerification */
-	static readonly START_VPC_ENDPOINT_SERVICE_PRIVATE_DNS_VERIFICATION =
+	static readonly StartVpcEndpointServicePrivateDnsVerification =
 		"ec2:StartVpcEndpointServicePrivateDnsVerification";
 	/** [Write] ec2:StopInstances */
-	static readonly STOP_INSTANCES = "ec2:StopInstances";
+	static readonly StopInstances = "ec2:StopInstances";
 	/** [Write] ec2:TerminateClientVpnConnections */
-	static readonly TERMINATE_CLIENT_VPN_CONNECTIONS =
+	static readonly TerminateClientVpnConnections =
 		"ec2:TerminateClientVpnConnections";
 	/** [Write] ec2:TerminateInstances */
-	static readonly TERMINATE_INSTANCES = "ec2:TerminateInstances";
+	static readonly TerminateInstances = "ec2:TerminateInstances";
 	/** [Write] ec2:UnassignIpv6Addresses */
-	static readonly UNASSIGN_IPV6_ADDRESSES = "ec2:UnassignIpv6Addresses";
+	static readonly UnassignIpv6Addresses = "ec2:UnassignIpv6Addresses";
 	/** [Write] ec2:UnassignPrivateIpAddresses */
-	static readonly UNASSIGN_PRIVATE_IP_ADDRESSES =
-		"ec2:UnassignPrivateIpAddresses";
+	static readonly UnassignPrivateIpAddresses = "ec2:UnassignPrivateIpAddresses";
 	/** [Write] ec2:UnassignPrivateNatGatewayAddress */
-	static readonly UNASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS =
+	static readonly UnassignPrivateNatGatewayAddress =
 		"ec2:UnassignPrivateNatGatewayAddress";
 	/** [Write] ec2:UnlockSnapshot */
-	static readonly UNLOCK_SNAPSHOT = "ec2:UnlockSnapshot";
+	static readonly UnlockSnapshot = "ec2:UnlockSnapshot";
 	/** [Write] ec2:UnmonitorInstances */
-	static readonly UNMONITOR_INSTANCES = "ec2:UnmonitorInstances";
+	static readonly UnmonitorInstances = "ec2:UnmonitorInstances";
 	/** [Write] ec2:UpdateCapacityManagerMonitoredTagKeys */
-	static readonly UPDATE_CAPACITY_MANAGER_MONITORED_TAG_KEYS =
+	static readonly UpdateCapacityManagerMonitoredTagKeys =
 		"ec2:UpdateCapacityManagerMonitoredTagKeys";
 	/** [Write] ec2:UpdateCapacityManagerOrganizationsAccess */
-	static readonly UPDATE_CAPACITY_MANAGER_ORGANIZATIONS_ACCESS =
+	static readonly UpdateCapacityManagerOrganizationsAccess =
 		"ec2:UpdateCapacityManagerOrganizationsAccess";
 	/** [Write] ec2:UpdateInterruptibleCapacityReservationAllocation */
-	static readonly UPDATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION =
+	static readonly UpdateInterruptibleCapacityReservationAllocation =
 		"ec2:UpdateInterruptibleCapacityReservationAllocation";
 	/** [Write] ec2:UpdateSecurityGroupRuleDescriptionsEgress */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_EGRESS =
+	static readonly UpdateSecurityGroupRuleDescriptionsEgress =
 		"ec2:UpdateSecurityGroupRuleDescriptionsEgress";
 	/** [Write] ec2:UpdateSecurityGroupRuleDescriptionsIngress */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_INGRESS =
+	static readonly UpdateSecurityGroupRuleDescriptionsIngress =
 		"ec2:UpdateSecurityGroupRuleDescriptionsIngress";
 	/** [Write] ec2:WithdrawByoipCidr */
-	static readonly WITHDRAW_BYOIP_CIDR = "ec2:WithdrawByoipCidr";
+	static readonly WithdrawByoipCidr = "ec2:WithdrawByoipCidr";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		EC2Actions.EXPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST,
-		EC2Actions.EXPORT_CLIENT_VPN_CLIENT_CONFIGURATION,
-		EC2Actions.EXPORT_VERIFIED_ACCESS_INSTANCE_CLIENT_CONFIGURATION,
-		EC2Actions.GET_ACTIVE_VPN_TUNNEL_STATUS,
-		EC2Actions.GET_ALLOWED_IMAGES_SETTINGS,
-		EC2Actions.GET_ASSOCIATED_ENCLAVE_CERTIFICATE_IAM_ROLES,
-		EC2Actions.GET_ASSOCIATED_IPV6_POOL_CIDRS,
-		EC2Actions.GET_AWS_NETWORK_PERFORMANCE_DATA,
-		EC2Actions.GET_CAPACITY_MANAGER_ATTRIBUTES,
-		EC2Actions.GET_CAPACITY_MANAGER_METRIC_DATA,
-		EC2Actions.GET_CAPACITY_MANAGER_METRIC_DIMENSIONS,
-		EC2Actions.GET_CAPACITY_RESERVATION_USAGE,
-		EC2Actions.GET_COIP_POOL_USAGE,
-		EC2Actions.GET_CONSOLE_OUTPUT,
-		EC2Actions.GET_CONSOLE_SCREENSHOT,
-		EC2Actions.GET_DECLARATIVE_POLICIES_REPORT_SUMMARY,
-		EC2Actions.GET_DEFAULT_CREDIT_SPECIFICATION,
-		EC2Actions.GET_EBS_DEFAULT_KMS_KEY_ID,
-		EC2Actions.GET_EBS_ENCRYPTION_BY_DEFAULT,
-		EC2Actions.GET_ENABLED_IPAM_POLICY,
-		EC2Actions.GET_FLOW_LOGS_INTEGRATION_TEMPLATE,
-		EC2Actions.GET_HOST_RESERVATION_PURCHASE_PREVIEW,
-		EC2Actions.GET_IMAGE_ANCESTRY,
-		EC2Actions.GET_IMAGE_BLOCK_PUBLIC_ACCESS_STATE,
-		EC2Actions.GET_INSTANCE_TPM_EK_PUB,
-		EC2Actions.GET_INSTANCE_UEFI_DATA,
-		EC2Actions.GET_IPAM_ADDRESS_HISTORY,
-		EC2Actions.GET_IPAM_DISCOVERED_ACCOUNTS,
-		EC2Actions.GET_IPAM_DISCOVERED_PUBLIC_ADDRESSES,
-		EC2Actions.GET_IPAM_DISCOVERED_RESOURCE_CIDRS,
-		EC2Actions.GET_IPAM_POOL_CIDRS,
-		EC2Actions.GET_IPAM_PREFIX_LIST_RESOLVER_RULES,
-		EC2Actions.GET_IPAM_PREFIX_LIST_RESOLVER_VERSION_ENTRIES,
-		EC2Actions.GET_IPAM_PREFIX_LIST_RESOLVER_VERSIONS,
-		EC2Actions.GET_IPAM_RESOURCE_CIDRS,
-		EC2Actions.GET_LAUNCH_TEMPLATE_DATA,
-		EC2Actions.GET_MANAGED_PREFIX_LIST_ASSOCIATIONS,
-		EC2Actions.GET_MANAGED_PREFIX_LIST_ENTRIES,
-		EC2Actions.GET_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_FINDINGS,
-		EC2Actions.GET_NETWORK_INSIGHTS_ACCESS_SCOPE_CONTENT,
-		EC2Actions.GET_PASSWORD_DATA,
-		EC2Actions.GET_RESERVED_INSTANCES_EXCHANGE_QUOTE,
-		EC2Actions.GET_RESOURCE_POLICY,
-		EC2Actions.GET_ROUTE_SERVER_ASSOCIATIONS,
-		EC2Actions.GET_ROUTE_SERVER_PROPAGATIONS,
-		EC2Actions.GET_ROUTE_SERVER_ROUTING_DATABASE,
-		EC2Actions.GET_SECURITY_GROUPS_FOR_VPC,
-		EC2Actions.GET_SERIAL_CONSOLE_ACCESS_STATUS,
-		EC2Actions.GET_SNAPSHOT_BLOCK_PUBLIC_ACCESS_STATE,
-		EC2Actions.GET_SPOT_PLACEMENT_SCORES,
-		EC2Actions.GET_SUBNET_CIDR_RESERVATIONS,
-		EC2Actions.START_DECLARATIVE_POLICIES_REPORT,
+	static readonly AllReadActions: string[] = [
+		EC2Actions.ExportClientVpnClientCertificateRevocationList,
+		EC2Actions.ExportClientVpnClientConfiguration,
+		EC2Actions.ExportVerifiedAccessInstanceClientConfiguration,
+		EC2Actions.actionGetActiveVpnTunnelStatus,
+		EC2Actions.actionGetAllowedImagesSettings,
+		EC2Actions.actionGetAssociatedEnclaveCertificateIamRoles,
+		EC2Actions.actionGetAssociatedIpv6PoolCidrs,
+		EC2Actions.actionGetAwsNetworkPerformanceData,
+		EC2Actions.actionGetCapacityManagerAttributes,
+		EC2Actions.actionGetCapacityManagerMetricData,
+		EC2Actions.actionGetCapacityManagerMetricDimensions,
+		EC2Actions.actionGetCapacityReservationUsage,
+		EC2Actions.actionGetCoipPoolUsage,
+		EC2Actions.actionGetConsoleOutput,
+		EC2Actions.actionGetConsoleScreenshot,
+		EC2Actions.actionGetDeclarativePoliciesReportSummary,
+		EC2Actions.actionGetDefaultCreditSpecification,
+		EC2Actions.actionGetEbsDefaultKmsKeyId,
+		EC2Actions.actionGetEbsEncryptionByDefault,
+		EC2Actions.actionGetEnabledIpamPolicy,
+		EC2Actions.actionGetFlowLogsIntegrationTemplate,
+		EC2Actions.actionGetHostReservationPurchasePreview,
+		EC2Actions.actionGetImageAncestry,
+		EC2Actions.actionGetImageBlockPublicAccessState,
+		EC2Actions.actionGetInstanceTpmEkPub,
+		EC2Actions.actionGetInstanceUefiData,
+		EC2Actions.actionGetIpamAddressHistory,
+		EC2Actions.actionGetIpamDiscoveredAccounts,
+		EC2Actions.actionGetIpamDiscoveredPublicAddresses,
+		EC2Actions.actionGetIpamDiscoveredResourceCidrs,
+		EC2Actions.actionGetIpamPoolCidrs,
+		EC2Actions.actionGetIpamPrefixListResolverRules,
+		EC2Actions.actionGetIpamPrefixListResolverVersionEntries,
+		EC2Actions.actionGetIpamPrefixListResolverVersions,
+		EC2Actions.actionGetIpamResourceCidrs,
+		EC2Actions.actionGetLaunchTemplateData,
+		EC2Actions.actionGetManagedPrefixListAssociations,
+		EC2Actions.actionGetManagedPrefixListEntries,
+		EC2Actions.actionGetNetworkInsightsAccessScopeAnalysisFindings,
+		EC2Actions.actionGetNetworkInsightsAccessScopeContent,
+		EC2Actions.actionGetPasswordData,
+		EC2Actions.actionGetReservedInstancesExchangeQuote,
+		EC2Actions.actionGetResourcePolicy,
+		EC2Actions.actionGetRouteServerAssociations,
+		EC2Actions.actionGetRouteServerPropagations,
+		EC2Actions.actionGetRouteServerRoutingDatabase,
+		EC2Actions.actionGetSecurityGroupsForVpc,
+		EC2Actions.actionGetSerialConsoleAccessStatus,
+		EC2Actions.actionGetSnapshotBlockPublicAccessState,
+		EC2Actions.actionGetSpotPlacementScores,
+		EC2Actions.actionGetSubnetCidrReservations,
+		EC2Actions.StartDeclarativePoliciesReport,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		EC2Actions.ACCEPT_ADDRESS_TRANSFER,
-		EC2Actions.ACCEPT_CAPACITY_RESERVATION_BILLING_OWNERSHIP,
-		EC2Actions.ACCEPT_RESERVED_INSTANCES_EXCHANGE_QUOTE,
-		EC2Actions.ACCEPT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT,
-		EC2Actions.ACCEPT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS,
-		EC2Actions.ACCEPT_TRANSIT_GATEWAY_PEERING_ATTACHMENT,
-		EC2Actions.ACCEPT_TRANSIT_GATEWAY_VPC_ATTACHMENT,
-		EC2Actions.ACCEPT_VPC_ENDPOINT_CONNECTIONS,
-		EC2Actions.ACCEPT_VPC_PEERING_CONNECTION,
-		EC2Actions.ADVERTISE_BYOIP_CIDR,
-		EC2Actions.ALLOCATE_ADDRESS,
-		EC2Actions.ALLOCATE_HOSTS,
-		EC2Actions.ALLOCATE_IPAM_POOL_CIDR,
-		EC2Actions.APPLY_SECURITY_GROUPS_TO_CLIENT_VPN_TARGET_NETWORK,
-		EC2Actions.ASSIGN_IPV6_ADDRESSES,
-		EC2Actions.ASSIGN_PRIVATE_IP_ADDRESSES,
-		EC2Actions.ASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS,
-		EC2Actions.ASSOCIATE_ADDRESS,
-		EC2Actions.ASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER,
-		EC2Actions.ASSOCIATE_CLIENT_VPN_TARGET_NETWORK,
-		EC2Actions.ASSOCIATE_DHCP_OPTIONS,
-		EC2Actions.ASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE,
-		EC2Actions.ASSOCIATE_IAM_INSTANCE_PROFILE,
-		EC2Actions.ASSOCIATE_INSTANCE_EVENT_WINDOW,
-		EC2Actions.ASSOCIATE_IPAM_BYOASN,
-		EC2Actions.ASSOCIATE_IPAM_RESOURCE_DISCOVERY,
-		EC2Actions.ASSOCIATE_NAT_GATEWAY_ADDRESS,
-		EC2Actions.ASSOCIATE_ROUTE_SERVER,
-		EC2Actions.ASSOCIATE_ROUTE_TABLE,
-		EC2Actions.ASSOCIATE_SECURITY_GROUP_VPC,
-		EC2Actions.ASSOCIATE_SUBNET_CIDR_BLOCK,
-		EC2Actions.ASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN,
-		EC2Actions.ASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE,
-		EC2Actions.ASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE,
-		EC2Actions.ASSOCIATE_TRUNK_INTERFACE,
-		EC2Actions.ASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL,
-		EC2Actions.ASSOCIATE_VPC_CIDR_BLOCK,
-		EC2Actions.ATTACH_CLASSIC_LINK_VPC,
-		EC2Actions.ATTACH_IMAGE_WATERMARK,
-		EC2Actions.ATTACH_INTERNET_GATEWAY,
-		EC2Actions.ATTACH_NETWORK_INTERFACE,
-		EC2Actions.ATTACH_VERIFIED_ACCESS_TRUST_PROVIDER,
-		EC2Actions.ATTACH_VOLUME,
-		EC2Actions.ATTACH_VPN_GATEWAY,
-		EC2Actions.AUTHORIZE_CLIENT_VPN_INGRESS,
-		EC2Actions.AUTHORIZE_SECURITY_GROUP_EGRESS,
-		EC2Actions.AUTHORIZE_SECURITY_GROUP_INGRESS,
-		EC2Actions.BUNDLE_INSTANCE,
-		EC2Actions.CANCEL_BUNDLE_TASK,
-		EC2Actions.CANCEL_CAPACITY_RESERVATION,
-		EC2Actions.CANCEL_CAPACITY_RESERVATION_FLEETS,
-		EC2Actions.CANCEL_CONVERSION_TASK,
-		EC2Actions.CANCEL_DECLARATIVE_POLICIES_REPORT,
-		EC2Actions.CANCEL_EXPORT_TASK,
-		EC2Actions.CANCEL_IMPORT_TASK,
-		EC2Actions.CANCEL_RESERVED_INSTANCES_LISTING,
-		EC2Actions.CANCEL_SPOT_FLEET_REQUESTS,
-		EC2Actions.CANCEL_SPOT_INSTANCE_REQUESTS,
-		EC2Actions.CONFIRM_PRODUCT_INSTANCE,
-		EC2Actions.COPY_FPGA_IMAGE,
-		EC2Actions.COPY_IMAGE,
-		EC2Actions.COPY_SNAPSHOT,
-		EC2Actions.COPY_VOLUMES,
-		EC2Actions.CREATE_CAPACITY_MANAGER_DATA_EXPORT,
-		EC2Actions.CREATE_CAPACITY_RESERVATION,
-		EC2Actions.CREATE_CAPACITY_RESERVATION_BY_SPLITTING,
-		EC2Actions.CREATE_CAPACITY_RESERVATION_CANCELLATION_QUOTE,
-		EC2Actions.CREATE_CAPACITY_RESERVATION_FLEET,
-		EC2Actions.CREATE_CARRIER_GATEWAY,
-		EC2Actions.CREATE_CLIENT_VPN_ENDPOINT,
-		EC2Actions.CREATE_CLIENT_VPN_ROUTE,
-		EC2Actions.CREATE_COIP_CIDR,
-		EC2Actions.CREATE_COIP_POOL,
-		EC2Actions.CREATE_CUSTOMER_GATEWAY,
-		EC2Actions.CREATE_DEFAULT_SUBNET,
-		EC2Actions.CREATE_DEFAULT_VPC,
-		EC2Actions.CREATE_DELEGATE_MAC_VOLUME_OWNERSHIP_TASK,
-		EC2Actions.CREATE_DHCP_OPTIONS,
-		EC2Actions.CREATE_EGRESS_ONLY_INTERNET_GATEWAY,
-		EC2Actions.CREATE_FLEET,
-		EC2Actions.CREATE_FLOW_LOGS,
-		EC2Actions.CREATE_FPGA_IMAGE,
-		EC2Actions.CREATE_IMAGE,
-		EC2Actions.CREATE_IMAGE_USAGE_REPORT,
-		EC2Actions.CREATE_INSTANCE_CONNECT_ENDPOINT,
-		EC2Actions.CREATE_INSTANCE_EVENT_WINDOW,
-		EC2Actions.CREATE_INSTANCE_EXPORT_TASK,
-		EC2Actions.CREATE_INTERNET_GATEWAY,
-		EC2Actions.CREATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION,
-		EC2Actions.CREATE_IPAM,
-		EC2Actions.CREATE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN,
-		EC2Actions.CREATE_IPAM_POLICY,
-		EC2Actions.CREATE_IPAM_POOL,
-		EC2Actions.CREATE_IPAM_PREFIX_LIST_RESOLVER,
-		EC2Actions.CREATE_IPAM_PREFIX_LIST_RESOLVER_TARGET,
-		EC2Actions.CREATE_IPAM_RESOURCE_DISCOVERY,
-		EC2Actions.CREATE_IPAM_SCOPE,
-		EC2Actions.CREATE_KEY_PAIR,
-		EC2Actions.CREATE_LAUNCH_TEMPLATE,
-		EC2Actions.CREATE_LAUNCH_TEMPLATE_VERSION,
-		EC2Actions.CREATE_LOCAL_GATEWAY_ROUTE,
-		EC2Actions.CREATE_LOCAL_GATEWAY_ROUTE_TABLE,
-		EC2Actions.CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION,
-		EC2Actions.CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION,
-		EC2Actions.CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE,
-		EC2Actions.CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP,
-		EC2Actions.CREATE_MAC_SYSTEM_INTEGRITY_PROTECTION_MODIFICATION_TASK,
-		EC2Actions.CREATE_MANAGED_PREFIX_LIST,
-		EC2Actions.CREATE_NAT_GATEWAY,
-		EC2Actions.CREATE_NETWORK_ACL,
-		EC2Actions.CREATE_NETWORK_ACL_ENTRY,
-		EC2Actions.CREATE_NETWORK_INSIGHTS_ACCESS_SCOPE,
-		EC2Actions.CREATE_NETWORK_INSIGHTS_PATH,
-		EC2Actions.CREATE_NETWORK_INTERFACE,
-		EC2Actions.CREATE_PLACEMENT_GROUP,
-		EC2Actions.CREATE_PUBLIC_IPV4_POOL,
-		EC2Actions.CREATE_REPLACE_ROOT_VOLUME_TASK,
-		EC2Actions.CREATE_RESERVED_INSTANCES_LISTING,
-		EC2Actions.CREATE_RESTORE_IMAGE_TASK,
-		EC2Actions.CREATE_ROUTE,
-		EC2Actions.CREATE_ROUTE_SERVER,
-		EC2Actions.CREATE_ROUTE_SERVER_ENDPOINT,
-		EC2Actions.CREATE_ROUTE_SERVER_PEER,
-		EC2Actions.CREATE_ROUTE_TABLE,
-		EC2Actions.CREATE_SECONDARY_NETWORK,
-		EC2Actions.CREATE_SECONDARY_SUBNET,
-		EC2Actions.CREATE_SECURITY_GROUP,
-		EC2Actions.CREATE_SNAPSHOT,
-		EC2Actions.CREATE_SNAPSHOTS,
-		EC2Actions.CREATE_SPOT_DATAFEED_SUBSCRIPTION,
-		EC2Actions.CREATE_STORE_IMAGE_TASK,
-		EC2Actions.CREATE_SUBNET,
-		EC2Actions.CREATE_SUBNET_CIDR_RESERVATION,
-		EC2Actions.CREATE_TRAFFIC_MIRROR_FILTER,
-		EC2Actions.CREATE_TRAFFIC_MIRROR_FILTER_RULE,
-		EC2Actions.CREATE_TRAFFIC_MIRROR_SESSION,
-		EC2Actions.CREATE_TRAFFIC_MIRROR_TARGET,
-		EC2Actions.CREATE_TRANSIT_GATEWAY,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_CONNECT,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_CONNECT_PEER,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_METERING_POLICY,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_PEERING_ATTACHMENT,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_POLICY_TABLE,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_ROUTE,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_ROUTE_TABLE,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT,
-		EC2Actions.CREATE_TRANSIT_GATEWAY_VPC_ATTACHMENT,
-		EC2Actions.CREATE_VERIFIED_ACCESS_ENDPOINT,
-		EC2Actions.CREATE_VERIFIED_ACCESS_GROUP,
-		EC2Actions.CREATE_VERIFIED_ACCESS_INSTANCE,
-		EC2Actions.CREATE_VERIFIED_ACCESS_TRUST_PROVIDER,
-		EC2Actions.CREATE_VOLUME,
-		EC2Actions.CREATE_VPC,
-		EC2Actions.CREATE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION,
-		EC2Actions.CREATE_VPC_ENCRYPTION_CONTROL,
-		EC2Actions.CREATE_VPC_ENDPOINT,
-		EC2Actions.CREATE_VPC_ENDPOINT_CONNECTION_NOTIFICATION,
-		EC2Actions.CREATE_VPC_ENDPOINT_SERVICE_CONFIGURATION,
-		EC2Actions.CREATE_VPC_PEERING_CONNECTION,
-		EC2Actions.CREATE_VPN_CONCENTRATOR,
-		EC2Actions.CREATE_VPN_CONNECTION,
-		EC2Actions.CREATE_VPN_CONNECTION_ROUTE,
-		EC2Actions.CREATE_VPN_GATEWAY,
-		EC2Actions.DELETE_CAPACITY_MANAGER_DATA_EXPORT,
-		EC2Actions.DELETE_CARRIER_GATEWAY,
-		EC2Actions.DELETE_CLIENT_VPN_ENDPOINT,
-		EC2Actions.DELETE_CLIENT_VPN_ROUTE,
-		EC2Actions.DELETE_COIP_CIDR,
-		EC2Actions.DELETE_COIP_POOL,
-		EC2Actions.DELETE_CUSTOMER_GATEWAY,
-		EC2Actions.DELETE_DHCP_OPTIONS,
-		EC2Actions.DELETE_EGRESS_ONLY_INTERNET_GATEWAY,
-		EC2Actions.DELETE_FLEETS,
-		EC2Actions.DELETE_FLOW_LOGS,
-		EC2Actions.DELETE_FPGA_IMAGE,
-		EC2Actions.DELETE_IMAGE_USAGE_REPORT,
-		EC2Actions.DELETE_INSTANCE_CONNECT_ENDPOINT,
-		EC2Actions.DELETE_INSTANCE_EVENT_WINDOW,
-		EC2Actions.DELETE_INTERNET_GATEWAY,
-		EC2Actions.DELETE_IPAM,
-		EC2Actions.DELETE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN,
-		EC2Actions.DELETE_IPAM_POLICY,
-		EC2Actions.DELETE_IPAM_POOL,
-		EC2Actions.DELETE_IPAM_PREFIX_LIST_RESOLVER,
-		EC2Actions.DELETE_IPAM_PREFIX_LIST_RESOLVER_TARGET,
-		EC2Actions.DELETE_IPAM_RESOURCE_DISCOVERY,
-		EC2Actions.DELETE_IPAM_SCOPE,
-		EC2Actions.DELETE_KEY_PAIR,
-		EC2Actions.DELETE_LAUNCH_TEMPLATE,
-		EC2Actions.DELETE_LAUNCH_TEMPLATE_VERSIONS,
-		EC2Actions.DELETE_LOCAL_GATEWAY_ROUTE,
-		EC2Actions.DELETE_LOCAL_GATEWAY_ROUTE_TABLE,
-		EC2Actions.DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION,
-		EC2Actions.DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION,
-		EC2Actions.DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE,
-		EC2Actions.DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP,
-		EC2Actions.DELETE_MANAGED_PREFIX_LIST,
-		EC2Actions.DELETE_NAT_GATEWAY,
-		EC2Actions.DELETE_NETWORK_ACL,
-		EC2Actions.DELETE_NETWORK_ACL_ENTRY,
-		EC2Actions.DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE,
-		EC2Actions.DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS,
-		EC2Actions.DELETE_NETWORK_INSIGHTS_ANALYSIS,
-		EC2Actions.DELETE_NETWORK_INSIGHTS_PATH,
-		EC2Actions.DELETE_NETWORK_INTERFACE,
-		EC2Actions.DELETE_PLACEMENT_GROUP,
-		EC2Actions.DELETE_PUBLIC_IPV4_POOL,
-		EC2Actions.DELETE_QUEUED_RESERVED_INSTANCES,
-		EC2Actions.DELETE_ROUTE,
-		EC2Actions.DELETE_ROUTE_SERVER,
-		EC2Actions.DELETE_ROUTE_SERVER_ENDPOINT,
-		EC2Actions.DELETE_ROUTE_SERVER_PEER,
-		EC2Actions.DELETE_ROUTE_TABLE,
-		EC2Actions.DELETE_SECONDARY_NETWORK,
-		EC2Actions.DELETE_SECONDARY_SUBNET,
-		EC2Actions.DELETE_SECURITY_GROUP,
-		EC2Actions.DELETE_SNAPSHOT,
-		EC2Actions.DELETE_SPOT_DATAFEED_SUBSCRIPTION,
-		EC2Actions.DELETE_SUBNET,
-		EC2Actions.DELETE_SUBNET_CIDR_RESERVATION,
-		EC2Actions.DELETE_TRAFFIC_MIRROR_FILTER,
-		EC2Actions.DELETE_TRAFFIC_MIRROR_FILTER_RULE,
-		EC2Actions.DELETE_TRAFFIC_MIRROR_SESSION,
-		EC2Actions.DELETE_TRAFFIC_MIRROR_TARGET,
-		EC2Actions.DELETE_TRANSIT_GATEWAY,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_CONNECT,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_CONNECT_PEER,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_METERING_POLICY,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_MULTICAST_DOMAIN,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_PEERING_ATTACHMENT,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_POLICY_TABLE,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_ROUTE,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_ROUTE_TABLE,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT,
-		EC2Actions.DELETE_TRANSIT_GATEWAY_VPC_ATTACHMENT,
-		EC2Actions.DELETE_VERIFIED_ACCESS_ENDPOINT,
-		EC2Actions.DELETE_VERIFIED_ACCESS_GROUP,
-		EC2Actions.DELETE_VERIFIED_ACCESS_INSTANCE,
-		EC2Actions.DELETE_VERIFIED_ACCESS_TRUST_PROVIDER,
-		EC2Actions.DELETE_VOLUME,
-		EC2Actions.DELETE_VPC,
-		EC2Actions.DELETE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION,
-		EC2Actions.DELETE_VPC_ENCRYPTION_CONTROL,
-		EC2Actions.DELETE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS,
-		EC2Actions.DELETE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS,
-		EC2Actions.DELETE_VPC_ENDPOINTS,
-		EC2Actions.DELETE_VPC_PEERING_CONNECTION,
-		EC2Actions.DELETE_VPN_CONCENTRATOR,
-		EC2Actions.DELETE_VPN_CONNECTION,
-		EC2Actions.DELETE_VPN_CONNECTION_ROUTE,
-		EC2Actions.DELETE_VPN_GATEWAY,
-		EC2Actions.DEPROVISION_BYOIP_CIDR,
-		EC2Actions.DEPROVISION_IPAM_BYOASN,
-		EC2Actions.DEPROVISION_IPAM_POOL_CIDR,
-		EC2Actions.DEPROVISION_PUBLIC_IPV4_POOL_CIDR,
-		EC2Actions.DEREGISTER_IMAGE,
-		EC2Actions.DEREGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES,
-		EC2Actions.DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS,
-		EC2Actions.DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES,
-		EC2Actions.DETACH_CLASSIC_LINK_VPC,
-		EC2Actions.DETACH_IMAGE_WATERMARK,
-		EC2Actions.DETACH_INTERNET_GATEWAY,
-		EC2Actions.DETACH_NETWORK_INTERFACE,
-		EC2Actions.DETACH_VERIFIED_ACCESS_TRUST_PROVIDER,
-		EC2Actions.DETACH_VOLUME,
-		EC2Actions.DETACH_VPN_GATEWAY,
-		EC2Actions.DISABLE_ADDRESS_TRANSFER,
-		EC2Actions.DISABLE_ALLOWED_IMAGES_SETTINGS,
-		EC2Actions.DISABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION,
-		EC2Actions.DISABLE_CAPACITY_MANAGER,
-		EC2Actions.DISABLE_EBS_ENCRYPTION_BY_DEFAULT,
-		EC2Actions.DISABLE_FAST_LAUNCH,
-		EC2Actions.DISABLE_FAST_SNAPSHOT_RESTORES,
-		EC2Actions.DISABLE_IMAGE,
-		EC2Actions.DISABLE_IMAGE_DEPRECATION,
-		EC2Actions.DISABLE_IMAGE_DEREGISTRATION_PROTECTION,
-		EC2Actions.DISABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS,
-		EC2Actions.DISABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT,
-		EC2Actions.DISABLE_IPAM_POLICY,
-		EC2Actions.DISABLE_ROUTE_SERVER_PROPAGATION,
-		EC2Actions.DISABLE_SERIAL_CONSOLE_ACCESS,
-		EC2Actions.DISABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION,
-		EC2Actions.DISABLE_VGW_ROUTE_PROPAGATION,
-		EC2Actions.DISABLE_VPC_CLASSIC_LINK,
-		EC2Actions.DISABLE_VPC_CLASSIC_LINK_DNS_SUPPORT,
-		EC2Actions.DISASSOCIATE_ADDRESS,
-		EC2Actions.DISASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER,
-		EC2Actions.DISASSOCIATE_CLIENT_VPN_TARGET_NETWORK,
-		EC2Actions.DISASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE,
-		EC2Actions.DISASSOCIATE_IAM_INSTANCE_PROFILE,
-		EC2Actions.DISASSOCIATE_INSTANCE_EVENT_WINDOW,
-		EC2Actions.DISASSOCIATE_IPAM_BYOASN,
-		EC2Actions.DISASSOCIATE_IPAM_RESOURCE_DISCOVERY,
-		EC2Actions.DISASSOCIATE_NAT_GATEWAY_ADDRESS,
-		EC2Actions.DISASSOCIATE_ROUTE_SERVER,
-		EC2Actions.DISASSOCIATE_ROUTE_TABLE,
-		EC2Actions.DISASSOCIATE_SECURITY_GROUP_VPC,
-		EC2Actions.DISASSOCIATE_SUBNET_CIDR_BLOCK,
-		EC2Actions.DISASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN,
-		EC2Actions.DISASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE,
-		EC2Actions.DISASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE,
-		EC2Actions.DISASSOCIATE_TRUNK_INTERFACE,
-		EC2Actions.DISASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL,
-		EC2Actions.DISASSOCIATE_VPC_CIDR_BLOCK,
-		EC2Actions.ENABLE_ADDRESS_TRANSFER,
-		EC2Actions.ENABLE_ALLOWED_IMAGES_SETTINGS,
-		EC2Actions.ENABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION,
-		EC2Actions.ENABLE_CAPACITY_MANAGER,
-		EC2Actions.ENABLE_EBS_ENCRYPTION_BY_DEFAULT,
-		EC2Actions.ENABLE_FAST_LAUNCH,
-		EC2Actions.ENABLE_FAST_SNAPSHOT_RESTORES,
-		EC2Actions.ENABLE_IMAGE,
-		EC2Actions.ENABLE_IMAGE_DEPRECATION,
-		EC2Actions.ENABLE_IMAGE_DEREGISTRATION_PROTECTION,
-		EC2Actions.ENABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS,
-		EC2Actions.ENABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT,
-		EC2Actions.ENABLE_IPAM_POLICY,
-		EC2Actions.ENABLE_REACHABILITY_ANALYZER_ORGANIZATION_SHARING,
-		EC2Actions.ENABLE_ROUTE_SERVER_PROPAGATION,
-		EC2Actions.ENABLE_SERIAL_CONSOLE_ACCESS,
-		EC2Actions.ENABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION,
-		EC2Actions.ENABLE_VGW_ROUTE_PROPAGATION,
-		EC2Actions.ENABLE_VOLUME_IO,
-		EC2Actions.ENABLE_VPC_CLASSIC_LINK,
-		EC2Actions.ENABLE_VPC_CLASSIC_LINK_DNS_SUPPORT,
-		EC2Actions.EXPORT_IMAGE,
-		EC2Actions.EXPORT_TRANSIT_GATEWAY_ROUTES,
-		EC2Actions.IMPORT_BYOIP_CIDR_TO_IPAM,
-		EC2Actions.IMPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST,
-		EC2Actions.IMPORT_IMAGE,
-		EC2Actions.IMPORT_INSTANCE,
-		EC2Actions.IMPORT_KEY_PAIR,
-		EC2Actions.IMPORT_SNAPSHOT,
-		EC2Actions.IMPORT_VOLUME,
-		EC2Actions.INJECT_API_ERROR,
-		EC2Actions.INJECT_VOLUME_IO_LATENCY,
-		EC2Actions.LOCK_SNAPSHOT,
-		EC2Actions.MODIFY_ADDRESS_ATTRIBUTE,
-		EC2Actions.MODIFY_AVAILABILITY_ZONE_GROUP,
-		EC2Actions.MODIFY_CAPACITY_RESERVATION,
-		EC2Actions.MODIFY_CAPACITY_RESERVATION_FLEET,
-		EC2Actions.MODIFY_CLIENT_VPN_ENDPOINT,
-		EC2Actions.MODIFY_DEFAULT_CREDIT_SPECIFICATION,
-		EC2Actions.MODIFY_EBS_DEFAULT_KMS_KEY_ID,
-		EC2Actions.MODIFY_FLEET,
-		EC2Actions.MODIFY_FPGA_IMAGE_ATTRIBUTE,
-		EC2Actions.MODIFY_HOSTS,
-		EC2Actions.MODIFY_ID_FORMAT,
-		EC2Actions.MODIFY_IDENTITY_ID_FORMAT,
-		EC2Actions.MODIFY_IMAGE_ATTRIBUTE,
-		EC2Actions.MODIFY_INSTANCE_ATTRIBUTE,
-		EC2Actions.MODIFY_INSTANCE_CAPACITY_RESERVATION_ATTRIBUTES,
-		EC2Actions.MODIFY_INSTANCE_CONNECT_ENDPOINT,
-		EC2Actions.MODIFY_INSTANCE_CPU_OPTIONS,
-		EC2Actions.MODIFY_INSTANCE_CREDIT_SPECIFICATION,
-		EC2Actions.MODIFY_INSTANCE_EVENT_START_TIME,
-		EC2Actions.MODIFY_INSTANCE_EVENT_WINDOW,
-		EC2Actions.MODIFY_INSTANCE_MAINTENANCE_OPTIONS,
-		EC2Actions.MODIFY_INSTANCE_METADATA_DEFAULTS,
-		EC2Actions.MODIFY_INSTANCE_METADATA_OPTIONS,
-		EC2Actions.MODIFY_INSTANCE_NETWORK_PERFORMANCE_OPTIONS,
-		EC2Actions.MODIFY_INSTANCE_PLACEMENT,
-		EC2Actions.MODIFY_IPAM,
-		EC2Actions.MODIFY_IPAM_POLICY_ALLOCATION_RULES,
-		EC2Actions.MODIFY_IPAM_POOL,
-		EC2Actions.MODIFY_IPAM_POOL_ALLOCATION,
-		EC2Actions.MODIFY_IPAM_PREFIX_LIST_RESOLVER,
-		EC2Actions.MODIFY_IPAM_PREFIX_LIST_RESOLVER_TARGET,
-		EC2Actions.MODIFY_IPAM_RESOURCE_CIDR,
-		EC2Actions.MODIFY_IPAM_RESOURCE_DISCOVERY,
-		EC2Actions.MODIFY_IPAM_SCOPE,
-		EC2Actions.MODIFY_LAUNCH_TEMPLATE,
-		EC2Actions.MODIFY_LOCAL_GATEWAY_ROUTE,
-		EC2Actions.MODIFY_MANAGED_PREFIX_LIST,
-		EC2Actions.MODIFY_MANAGED_RESOURCE_VISIBILITY,
-		EC2Actions.MODIFY_NETWORK_INTERFACE_ATTRIBUTE,
-		EC2Actions.MODIFY_PRIVATE_DNS_NAME_OPTIONS,
-		EC2Actions.MODIFY_PUBLIC_IP_DNS_NAME_OPTIONS,
-		EC2Actions.MODIFY_RESERVED_INSTANCES,
-		EC2Actions.MODIFY_ROUTE_SERVER,
-		EC2Actions.MODIFY_SECURITY_GROUP_RULES,
-		EC2Actions.MODIFY_SNAPSHOT_TIER,
-		EC2Actions.MODIFY_SPOT_FLEET_REQUEST,
-		EC2Actions.MODIFY_SUBNET_ATTRIBUTE,
-		EC2Actions.MODIFY_TRAFFIC_MIRROR_FILTER_NETWORK_SERVICES,
-		EC2Actions.MODIFY_TRAFFIC_MIRROR_FILTER_RULE,
-		EC2Actions.MODIFY_TRAFFIC_MIRROR_SESSION,
-		EC2Actions.MODIFY_TRANSIT_GATEWAY,
-		EC2Actions.MODIFY_TRANSIT_GATEWAY_METERING_POLICY,
-		EC2Actions.MODIFY_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE,
-		EC2Actions.MODIFY_TRANSIT_GATEWAY_VPC_ATTACHMENT,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_ENDPOINT,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_ENDPOINT_POLICY,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_GROUP,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_GROUP_POLICY,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_INSTANCE,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATION,
-		EC2Actions.MODIFY_VERIFIED_ACCESS_TRUST_PROVIDER,
-		EC2Actions.MODIFY_VOLUME,
-		EC2Actions.MODIFY_VOLUME_ATTRIBUTE,
-		EC2Actions.MODIFY_VPC_ATTRIBUTE,
-		EC2Actions.MODIFY_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION,
-		EC2Actions.MODIFY_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS,
-		EC2Actions.MODIFY_VPC_ENCRYPTION_CONTROL,
-		EC2Actions.MODIFY_VPC_ENDPOINT,
-		EC2Actions.MODIFY_VPC_ENDPOINT_CONNECTION_NOTIFICATION,
-		EC2Actions.MODIFY_VPC_ENDPOINT_SERVICE_CONFIGURATION,
-		EC2Actions.MODIFY_VPC_ENDPOINT_SERVICE_PAYER_RESPONSIBILITY,
-		EC2Actions.MODIFY_VPC_PEERING_CONNECTION_OPTIONS,
-		EC2Actions.MODIFY_VPC_TENANCY,
-		EC2Actions.MODIFY_VPN_CONNECTION,
-		EC2Actions.MODIFY_VPN_CONNECTION_OPTIONS,
-		EC2Actions.MODIFY_VPN_TUNNEL_CERTIFICATE,
-		EC2Actions.MODIFY_VPN_TUNNEL_OPTIONS,
-		EC2Actions.MONITOR_INSTANCES,
-		EC2Actions.MOVE_ADDRESS_TO_VPC,
-		EC2Actions.MOVE_BYOIP_CIDR_TO_IPAM,
-		EC2Actions.MOVE_CAPACITY_RESERVATION_INSTANCES,
-		EC2Actions.PAUSE_VOLUME_IO,
-		EC2Actions.PROVISION_BYOIP_CIDR,
-		EC2Actions.PROVISION_IPAM_BYOASN,
-		EC2Actions.PROVISION_IPAM_POOL_CIDR,
-		EC2Actions.PROVISION_PUBLIC_IPV4_POOL_CIDR,
-		EC2Actions.PURCHASE_CAPACITY_BLOCK,
-		EC2Actions.PURCHASE_CAPACITY_BLOCK_EXTENSION,
-		EC2Actions.PURCHASE_HOST_RESERVATION,
-		EC2Actions.PURCHASE_RESERVED_INSTANCES_OFFERING,
-		EC2Actions.PURCHASE_SCHEDULED_INSTANCES,
-		EC2Actions.REBOOT_INSTANCES,
-		EC2Actions.REGISTER_IMAGE,
-		EC2Actions.REGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES,
-		EC2Actions.REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS,
-		EC2Actions.REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES,
-		EC2Actions.REJECT_CAPACITY_RESERVATION_BILLING_OWNERSHIP,
-		EC2Actions.REJECT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT,
-		EC2Actions.REJECT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS,
-		EC2Actions.REJECT_TRANSIT_GATEWAY_PEERING_ATTACHMENT,
-		EC2Actions.REJECT_TRANSIT_GATEWAY_VPC_ATTACHMENT,
-		EC2Actions.REJECT_VPC_ENDPOINT_CONNECTIONS,
-		EC2Actions.REJECT_VPC_PEERING_CONNECTION,
-		EC2Actions.RELEASE_ADDRESS,
-		EC2Actions.RELEASE_HOSTS,
-		EC2Actions.RELEASE_IPAM_POOL_ALLOCATION,
-		EC2Actions.REPLACE_IAM_INSTANCE_PROFILE_ASSOCIATION,
-		EC2Actions.REPLACE_IMAGE_CRITERIA_IN_ALLOWED_IMAGES_SETTINGS,
-		EC2Actions.REPLACE_NETWORK_ACL_ASSOCIATION,
-		EC2Actions.REPLACE_NETWORK_ACL_ENTRY,
-		EC2Actions.REPLACE_ROUTE,
-		EC2Actions.REPLACE_ROUTE_TABLE_ASSOCIATION,
-		EC2Actions.REPLACE_TRANSIT_GATEWAY_ROUTE,
-		EC2Actions.REPLACE_VPN_TUNNEL,
-		EC2Actions.REPORT_INSTANCE_STATUS,
-		EC2Actions.REQUEST_SPOT_FLEET,
-		EC2Actions.REQUEST_SPOT_INSTANCES,
-		EC2Actions.RESET_ADDRESS_ATTRIBUTE,
-		EC2Actions.RESET_EBS_DEFAULT_KMS_KEY_ID,
-		EC2Actions.RESET_FPGA_IMAGE_ATTRIBUTE,
-		EC2Actions.RESET_IMAGE_ATTRIBUTE,
-		EC2Actions.RESET_INSTANCE_ATTRIBUTE,
-		EC2Actions.RESET_NETWORK_INTERFACE_ATTRIBUTE,
-		EC2Actions.RESTORE_ADDRESS_TO_CLASSIC,
-		EC2Actions.RESTORE_IMAGE_FROM_RECYCLE_BIN,
-		EC2Actions.RESTORE_MANAGED_PREFIX_LIST_VERSION,
-		EC2Actions.RESTORE_SNAPSHOT_FROM_RECYCLE_BIN,
-		EC2Actions.RESTORE_SNAPSHOT_TIER,
-		EC2Actions.RESTORE_VOLUME_FROM_RECYCLE_BIN,
-		EC2Actions.REVOKE_CLIENT_VPN_INGRESS,
-		EC2Actions.REVOKE_SECURITY_GROUP_EGRESS,
-		EC2Actions.REVOKE_SECURITY_GROUP_INGRESS,
-		EC2Actions.RUN_INSTANCES,
-		EC2Actions.RUN_SCHEDULED_INSTANCES,
-		EC2Actions.SEND_DIAGNOSTIC_INTERRUPT,
-		EC2Actions.SEND_SPOT_INSTANCE_INTERRUPTIONS,
-		EC2Actions.START_INSTANCES,
-		EC2Actions.START_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS,
-		EC2Actions.START_NETWORK_INSIGHTS_ANALYSIS,
-		EC2Actions.START_VPC_ENDPOINT_SERVICE_PRIVATE_DNS_VERIFICATION,
-		EC2Actions.STOP_INSTANCES,
-		EC2Actions.TERMINATE_CLIENT_VPN_CONNECTIONS,
-		EC2Actions.TERMINATE_INSTANCES,
-		EC2Actions.UNASSIGN_IPV6_ADDRESSES,
-		EC2Actions.UNASSIGN_PRIVATE_IP_ADDRESSES,
-		EC2Actions.UNASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS,
-		EC2Actions.UNLOCK_SNAPSHOT,
-		EC2Actions.UNMONITOR_INSTANCES,
-		EC2Actions.UPDATE_CAPACITY_MANAGER_MONITORED_TAG_KEYS,
-		EC2Actions.UPDATE_CAPACITY_MANAGER_ORGANIZATIONS_ACCESS,
-		EC2Actions.UPDATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION,
-		EC2Actions.UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_EGRESS,
-		EC2Actions.UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_INGRESS,
-		EC2Actions.WITHDRAW_BYOIP_CIDR,
+	static readonly AllWriteActions: string[] = [
+		EC2Actions.AcceptAddressTransfer,
+		EC2Actions.AcceptCapacityReservationBillingOwnership,
+		EC2Actions.AcceptReservedInstancesExchangeQuote,
+		EC2Actions.AcceptTransitGatewayClientVpnAttachment,
+		EC2Actions.AcceptTransitGatewayMulticastDomainAssociations,
+		EC2Actions.AcceptTransitGatewayPeeringAttachment,
+		EC2Actions.AcceptTransitGatewayVpcAttachment,
+		EC2Actions.AcceptVpcEndpointConnections,
+		EC2Actions.AcceptVpcPeeringConnection,
+		EC2Actions.AdvertiseByoipCidr,
+		EC2Actions.AllocateAddress,
+		EC2Actions.AllocateHosts,
+		EC2Actions.AllocateIpamPoolCidr,
+		EC2Actions.ApplySecurityGroupsToClientVpnTargetNetwork,
+		EC2Actions.AssignIpv6Addresses,
+		EC2Actions.AssignPrivateIpAddresses,
+		EC2Actions.AssignPrivateNatGatewayAddress,
+		EC2Actions.AssociateAddress,
+		EC2Actions.AssociateCapacityReservationBillingOwner,
+		EC2Actions.AssociateClientVpnTargetNetwork,
+		EC2Actions.AssociateDhcpOptions,
+		EC2Actions.AssociateEnclaveCertificateIamRole,
+		EC2Actions.AssociateIamInstanceProfile,
+		EC2Actions.AssociateInstanceEventWindow,
+		EC2Actions.AssociateIpamByoasn,
+		EC2Actions.AssociateIpamResourceDiscovery,
+		EC2Actions.AssociateNatGatewayAddress,
+		EC2Actions.AssociateRouteServer,
+		EC2Actions.AssociateRouteTable,
+		EC2Actions.AssociateSecurityGroupVpc,
+		EC2Actions.AssociateSubnetCidrBlock,
+		EC2Actions.AssociateTransitGatewayMulticastDomain,
+		EC2Actions.AssociateTransitGatewayPolicyTable,
+		EC2Actions.AssociateTransitGatewayRouteTable,
+		EC2Actions.AssociateTrunkInterface,
+		EC2Actions.AssociateVerifiedAccessInstanceWebAcl,
+		EC2Actions.AssociateVpcCidrBlock,
+		EC2Actions.AttachClassicLinkVpc,
+		EC2Actions.AttachImageWatermark,
+		EC2Actions.AttachInternetGateway,
+		EC2Actions.AttachNetworkInterface,
+		EC2Actions.AttachVerifiedAccessTrustProvider,
+		EC2Actions.AttachVolume,
+		EC2Actions.AttachVpnGateway,
+		EC2Actions.AuthorizeClientVpnIngress,
+		EC2Actions.AuthorizeSecurityGroupEgress,
+		EC2Actions.AuthorizeSecurityGroupIngress,
+		EC2Actions.BundleInstance,
+		EC2Actions.CancelBundleTask,
+		EC2Actions.CancelCapacityReservation,
+		EC2Actions.CancelCapacityReservationFleets,
+		EC2Actions.CancelConversionTask,
+		EC2Actions.CancelDeclarativePoliciesReport,
+		EC2Actions.CancelExportTask,
+		EC2Actions.CancelImportTask,
+		EC2Actions.CancelReservedInstancesListing,
+		EC2Actions.CancelSpotFleetRequests,
+		EC2Actions.CancelSpotInstanceRequests,
+		EC2Actions.ConfirmProductInstance,
+		EC2Actions.CopyFpgaImage,
+		EC2Actions.CopyImage,
+		EC2Actions.CopySnapshot,
+		EC2Actions.CopyVolumes,
+		EC2Actions.CreateCapacityManagerDataExport,
+		EC2Actions.CreateCapacityReservation,
+		EC2Actions.CreateCapacityReservationBySplitting,
+		EC2Actions.CreateCapacityReservationCancellationQuote,
+		EC2Actions.CreateCapacityReservationFleet,
+		EC2Actions.CreateCarrierGateway,
+		EC2Actions.CreateClientVpnEndpoint,
+		EC2Actions.CreateClientVpnRoute,
+		EC2Actions.CreateCoipCidr,
+		EC2Actions.CreateCoipPool,
+		EC2Actions.CreateCustomerGateway,
+		EC2Actions.CreateDefaultSubnet,
+		EC2Actions.CreateDefaultVpc,
+		EC2Actions.CreateDelegateMacVolumeOwnershipTask,
+		EC2Actions.CreateDhcpOptions,
+		EC2Actions.CreateEgressOnlyInternetGateway,
+		EC2Actions.CreateFleet,
+		EC2Actions.CreateFlowLogs,
+		EC2Actions.CreateFpgaImage,
+		EC2Actions.CreateImage,
+		EC2Actions.CreateImageUsageReport,
+		EC2Actions.CreateInstanceConnectEndpoint,
+		EC2Actions.CreateInstanceEventWindow,
+		EC2Actions.CreateInstanceExportTask,
+		EC2Actions.CreateInternetGateway,
+		EC2Actions.CreateInterruptibleCapacityReservationAllocation,
+		EC2Actions.CreateIpam,
+		EC2Actions.CreateIpamExternalResourceVerificationToken,
+		EC2Actions.CreateIpamPolicy,
+		EC2Actions.CreateIpamPool,
+		EC2Actions.CreateIpamPrefixListResolver,
+		EC2Actions.CreateIpamPrefixListResolverTarget,
+		EC2Actions.CreateIpamResourceDiscovery,
+		EC2Actions.CreateIpamScope,
+		EC2Actions.CreateKeyPair,
+		EC2Actions.CreateLaunchTemplate,
+		EC2Actions.CreateLaunchTemplateVersion,
+		EC2Actions.CreateLocalGatewayRoute,
+		EC2Actions.CreateLocalGatewayRouteTable,
+		EC2Actions.CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation,
+		EC2Actions.CreateLocalGatewayRouteTableVpcAssociation,
+		EC2Actions.CreateLocalGatewayVirtualInterface,
+		EC2Actions.CreateLocalGatewayVirtualInterfaceGroup,
+		EC2Actions.CreateMacSystemIntegrityProtectionModificationTask,
+		EC2Actions.CreateManagedPrefixList,
+		EC2Actions.CreateNatGateway,
+		EC2Actions.CreateNetworkAcl,
+		EC2Actions.CreateNetworkAclEntry,
+		EC2Actions.CreateNetworkInsightsAccessScope,
+		EC2Actions.CreateNetworkInsightsPath,
+		EC2Actions.CreateNetworkInterface,
+		EC2Actions.CreatePlacementGroup,
+		EC2Actions.CreatePublicIpv4Pool,
+		EC2Actions.CreateReplaceRootVolumeTask,
+		EC2Actions.CreateReservedInstancesListing,
+		EC2Actions.CreateRestoreImageTask,
+		EC2Actions.CreateRoute,
+		EC2Actions.CreateRouteServer,
+		EC2Actions.CreateRouteServerEndpoint,
+		EC2Actions.CreateRouteServerPeer,
+		EC2Actions.CreateRouteTable,
+		EC2Actions.CreateSecondaryNetwork,
+		EC2Actions.CreateSecondarySubnet,
+		EC2Actions.CreateSecurityGroup,
+		EC2Actions.CreateSnapshot,
+		EC2Actions.CreateSnapshots,
+		EC2Actions.CreateSpotDatafeedSubscription,
+		EC2Actions.CreateStoreImageTask,
+		EC2Actions.CreateSubnet,
+		EC2Actions.CreateSubnetCidrReservation,
+		EC2Actions.CreateTrafficMirrorFilter,
+		EC2Actions.CreateTrafficMirrorFilterRule,
+		EC2Actions.CreateTrafficMirrorSession,
+		EC2Actions.CreateTrafficMirrorTarget,
+		EC2Actions.CreateTransitGateway,
+		EC2Actions.CreateTransitGatewayConnect,
+		EC2Actions.CreateTransitGatewayConnectPeer,
+		EC2Actions.CreateTransitGatewayMeteringPolicy,
+		EC2Actions.CreateTransitGatewayMeteringPolicyEntry,
+		EC2Actions.CreateTransitGatewayMulticastDomain,
+		EC2Actions.CreateTransitGatewayPeeringAttachment,
+		EC2Actions.CreateTransitGatewayPolicyTable,
+		EC2Actions.CreateTransitGatewayPrefixListReference,
+		EC2Actions.CreateTransitGatewayRoute,
+		EC2Actions.CreateTransitGatewayRouteTable,
+		EC2Actions.CreateTransitGatewayRouteTableAnnouncement,
+		EC2Actions.CreateTransitGatewayVpcAttachment,
+		EC2Actions.CreateVerifiedAccessEndpoint,
+		EC2Actions.CreateVerifiedAccessGroup,
+		EC2Actions.CreateVerifiedAccessInstance,
+		EC2Actions.CreateVerifiedAccessTrustProvider,
+		EC2Actions.CreateVolume,
+		EC2Actions.CreateVpc,
+		EC2Actions.CreateVpcBlockPublicAccessExclusion,
+		EC2Actions.CreateVpcEncryptionControl,
+		EC2Actions.CreateVpcEndpoint,
+		EC2Actions.CreateVpcEndpointConnectionNotification,
+		EC2Actions.CreateVpcEndpointServiceConfiguration,
+		EC2Actions.CreateVpcPeeringConnection,
+		EC2Actions.CreateVpnConcentrator,
+		EC2Actions.CreateVpnConnection,
+		EC2Actions.CreateVpnConnectionRoute,
+		EC2Actions.CreateVpnGateway,
+		EC2Actions.DeleteCapacityManagerDataExport,
+		EC2Actions.DeleteCarrierGateway,
+		EC2Actions.DeleteClientVpnEndpoint,
+		EC2Actions.DeleteClientVpnRoute,
+		EC2Actions.DeleteCoipCidr,
+		EC2Actions.DeleteCoipPool,
+		EC2Actions.DeleteCustomerGateway,
+		EC2Actions.DeleteDhcpOptions,
+		EC2Actions.DeleteEgressOnlyInternetGateway,
+		EC2Actions.DeleteFleets,
+		EC2Actions.DeleteFlowLogs,
+		EC2Actions.DeleteFpgaImage,
+		EC2Actions.DeleteImageUsageReport,
+		EC2Actions.DeleteInstanceConnectEndpoint,
+		EC2Actions.DeleteInstanceEventWindow,
+		EC2Actions.DeleteInternetGateway,
+		EC2Actions.DeleteIpam,
+		EC2Actions.DeleteIpamExternalResourceVerificationToken,
+		EC2Actions.DeleteIpamPolicy,
+		EC2Actions.DeleteIpamPool,
+		EC2Actions.DeleteIpamPrefixListResolver,
+		EC2Actions.DeleteIpamPrefixListResolverTarget,
+		EC2Actions.DeleteIpamResourceDiscovery,
+		EC2Actions.DeleteIpamScope,
+		EC2Actions.DeleteKeyPair,
+		EC2Actions.DeleteLaunchTemplate,
+		EC2Actions.DeleteLaunchTemplateVersions,
+		EC2Actions.DeleteLocalGatewayRoute,
+		EC2Actions.DeleteLocalGatewayRouteTable,
+		EC2Actions.DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation,
+		EC2Actions.DeleteLocalGatewayRouteTableVpcAssociation,
+		EC2Actions.DeleteLocalGatewayVirtualInterface,
+		EC2Actions.DeleteLocalGatewayVirtualInterfaceGroup,
+		EC2Actions.DeleteManagedPrefixList,
+		EC2Actions.DeleteNatGateway,
+		EC2Actions.DeleteNetworkAcl,
+		EC2Actions.DeleteNetworkAclEntry,
+		EC2Actions.DeleteNetworkInsightsAccessScope,
+		EC2Actions.DeleteNetworkInsightsAccessScopeAnalysis,
+		EC2Actions.DeleteNetworkInsightsAnalysis,
+		EC2Actions.DeleteNetworkInsightsPath,
+		EC2Actions.DeleteNetworkInterface,
+		EC2Actions.DeletePlacementGroup,
+		EC2Actions.DeletePublicIpv4Pool,
+		EC2Actions.DeleteQueuedReservedInstances,
+		EC2Actions.DeleteRoute,
+		EC2Actions.DeleteRouteServer,
+		EC2Actions.DeleteRouteServerEndpoint,
+		EC2Actions.DeleteRouteServerPeer,
+		EC2Actions.DeleteRouteTable,
+		EC2Actions.DeleteSecondaryNetwork,
+		EC2Actions.DeleteSecondarySubnet,
+		EC2Actions.DeleteSecurityGroup,
+		EC2Actions.DeleteSnapshot,
+		EC2Actions.DeleteSpotDatafeedSubscription,
+		EC2Actions.DeleteSubnet,
+		EC2Actions.DeleteSubnetCidrReservation,
+		EC2Actions.DeleteTrafficMirrorFilter,
+		EC2Actions.DeleteTrafficMirrorFilterRule,
+		EC2Actions.DeleteTrafficMirrorSession,
+		EC2Actions.DeleteTrafficMirrorTarget,
+		EC2Actions.DeleteTransitGateway,
+		EC2Actions.DeleteTransitGatewayClientVpnAttachment,
+		EC2Actions.DeleteTransitGatewayConnect,
+		EC2Actions.DeleteTransitGatewayConnectPeer,
+		EC2Actions.DeleteTransitGatewayMeteringPolicy,
+		EC2Actions.DeleteTransitGatewayMeteringPolicyEntry,
+		EC2Actions.DeleteTransitGatewayMulticastDomain,
+		EC2Actions.DeleteTransitGatewayPeeringAttachment,
+		EC2Actions.DeleteTransitGatewayPolicyTable,
+		EC2Actions.DeleteTransitGatewayPrefixListReference,
+		EC2Actions.DeleteTransitGatewayRoute,
+		EC2Actions.DeleteTransitGatewayRouteTable,
+		EC2Actions.DeleteTransitGatewayRouteTableAnnouncement,
+		EC2Actions.DeleteTransitGatewayVpcAttachment,
+		EC2Actions.DeleteVerifiedAccessEndpoint,
+		EC2Actions.DeleteVerifiedAccessGroup,
+		EC2Actions.DeleteVerifiedAccessInstance,
+		EC2Actions.DeleteVerifiedAccessTrustProvider,
+		EC2Actions.DeleteVolume,
+		EC2Actions.DeleteVpc,
+		EC2Actions.DeleteVpcBlockPublicAccessExclusion,
+		EC2Actions.DeleteVpcEncryptionControl,
+		EC2Actions.DeleteVpcEndpointConnectionNotifications,
+		EC2Actions.DeleteVpcEndpointServiceConfigurations,
+		EC2Actions.DeleteVpcEndpoints,
+		EC2Actions.DeleteVpcPeeringConnection,
+		EC2Actions.DeleteVpnConcentrator,
+		EC2Actions.DeleteVpnConnection,
+		EC2Actions.DeleteVpnConnectionRoute,
+		EC2Actions.DeleteVpnGateway,
+		EC2Actions.DeprovisionByoipCidr,
+		EC2Actions.DeprovisionIpamByoasn,
+		EC2Actions.DeprovisionIpamPoolCidr,
+		EC2Actions.DeprovisionPublicIpv4PoolCidr,
+		EC2Actions.DeregisterImage,
+		EC2Actions.DeregisterInstanceEventNotificationAttributes,
+		EC2Actions.DeregisterTransitGatewayMulticastGroupMembers,
+		EC2Actions.DeregisterTransitGatewayMulticastGroupSources,
+		EC2Actions.DetachClassicLinkVpc,
+		EC2Actions.DetachImageWatermark,
+		EC2Actions.DetachInternetGateway,
+		EC2Actions.DetachNetworkInterface,
+		EC2Actions.DetachVerifiedAccessTrustProvider,
+		EC2Actions.DetachVolume,
+		EC2Actions.DetachVpnGateway,
+		EC2Actions.DisableAddressTransfer,
+		EC2Actions.DisableAllowedImagesSettings,
+		EC2Actions.DisableAwsNetworkPerformanceMetricSubscription,
+		EC2Actions.DisableCapacityManager,
+		EC2Actions.DisableEbsEncryptionByDefault,
+		EC2Actions.DisableFastLaunch,
+		EC2Actions.DisableFastSnapshotRestores,
+		EC2Actions.DisableImage,
+		EC2Actions.DisableImageDeprecation,
+		EC2Actions.DisableImageDeregistrationProtection,
+		EC2Actions.DisableInstanceSqlHaStandbyDetections,
+		EC2Actions.DisableIpamOrganizationAdminAccount,
+		EC2Actions.DisableIpamPolicy,
+		EC2Actions.DisableRouteServerPropagation,
+		EC2Actions.DisableSerialConsoleAccess,
+		EC2Actions.DisableTransitGatewayRouteTablePropagation,
+		EC2Actions.DisableVgwRoutePropagation,
+		EC2Actions.DisableVpcClassicLink,
+		EC2Actions.DisableVpcClassicLinkDnsSupport,
+		EC2Actions.DisassociateAddress,
+		EC2Actions.DisassociateCapacityReservationBillingOwner,
+		EC2Actions.DisassociateClientVpnTargetNetwork,
+		EC2Actions.DisassociateEnclaveCertificateIamRole,
+		EC2Actions.DisassociateIamInstanceProfile,
+		EC2Actions.DisassociateInstanceEventWindow,
+		EC2Actions.DisassociateIpamByoasn,
+		EC2Actions.DisassociateIpamResourceDiscovery,
+		EC2Actions.DisassociateNatGatewayAddress,
+		EC2Actions.DisassociateRouteServer,
+		EC2Actions.DisassociateRouteTable,
+		EC2Actions.DisassociateSecurityGroupVpc,
+		EC2Actions.DisassociateSubnetCidrBlock,
+		EC2Actions.DisassociateTransitGatewayMulticastDomain,
+		EC2Actions.DisassociateTransitGatewayPolicyTable,
+		EC2Actions.DisassociateTransitGatewayRouteTable,
+		EC2Actions.DisassociateTrunkInterface,
+		EC2Actions.DisassociateVerifiedAccessInstanceWebAcl,
+		EC2Actions.DisassociateVpcCidrBlock,
+		EC2Actions.EnableAddressTransfer,
+		EC2Actions.EnableAllowedImagesSettings,
+		EC2Actions.EnableAwsNetworkPerformanceMetricSubscription,
+		EC2Actions.EnableCapacityManager,
+		EC2Actions.EnableEbsEncryptionByDefault,
+		EC2Actions.EnableFastLaunch,
+		EC2Actions.EnableFastSnapshotRestores,
+		EC2Actions.EnableImage,
+		EC2Actions.EnableImageDeprecation,
+		EC2Actions.EnableImageDeregistrationProtection,
+		EC2Actions.EnableInstanceSqlHaStandbyDetections,
+		EC2Actions.EnableIpamOrganizationAdminAccount,
+		EC2Actions.EnableIpamPolicy,
+		EC2Actions.EnableReachabilityAnalyzerOrganizationSharing,
+		EC2Actions.EnableRouteServerPropagation,
+		EC2Actions.EnableSerialConsoleAccess,
+		EC2Actions.EnableTransitGatewayRouteTablePropagation,
+		EC2Actions.EnableVgwRoutePropagation,
+		EC2Actions.EnableVolumeIO,
+		EC2Actions.EnableVpcClassicLink,
+		EC2Actions.EnableVpcClassicLinkDnsSupport,
+		EC2Actions.ExportImage,
+		EC2Actions.ExportTransitGatewayRoutes,
+		EC2Actions.ImportByoipCidrToIpam,
+		EC2Actions.ImportClientVpnClientCertificateRevocationList,
+		EC2Actions.ImportImage,
+		EC2Actions.ImportInstance,
+		EC2Actions.ImportKeyPair,
+		EC2Actions.ImportSnapshot,
+		EC2Actions.ImportVolume,
+		EC2Actions.InjectApiError,
+		EC2Actions.InjectVolumeIOLatency,
+		EC2Actions.LockSnapshot,
+		EC2Actions.ModifyAddressAttribute,
+		EC2Actions.ModifyAvailabilityZoneGroup,
+		EC2Actions.ModifyCapacityReservation,
+		EC2Actions.ModifyCapacityReservationFleet,
+		EC2Actions.ModifyClientVpnEndpoint,
+		EC2Actions.ModifyDefaultCreditSpecification,
+		EC2Actions.ModifyEbsDefaultKmsKeyId,
+		EC2Actions.ModifyFleet,
+		EC2Actions.ModifyFpgaImageAttribute,
+		EC2Actions.ModifyHosts,
+		EC2Actions.ModifyIdFormat,
+		EC2Actions.ModifyIdentityIdFormat,
+		EC2Actions.ModifyImageAttribute,
+		EC2Actions.ModifyInstanceAttribute,
+		EC2Actions.ModifyInstanceCapacityReservationAttributes,
+		EC2Actions.ModifyInstanceConnectEndpoint,
+		EC2Actions.ModifyInstanceCpuOptions,
+		EC2Actions.ModifyInstanceCreditSpecification,
+		EC2Actions.ModifyInstanceEventStartTime,
+		EC2Actions.ModifyInstanceEventWindow,
+		EC2Actions.ModifyInstanceMaintenanceOptions,
+		EC2Actions.ModifyInstanceMetadataDefaults,
+		EC2Actions.ModifyInstanceMetadataOptions,
+		EC2Actions.ModifyInstanceNetworkPerformanceOptions,
+		EC2Actions.ModifyInstancePlacement,
+		EC2Actions.ModifyIpam,
+		EC2Actions.ModifyIpamPolicyAllocationRules,
+		EC2Actions.ModifyIpamPool,
+		EC2Actions.ModifyIpamPoolAllocation,
+		EC2Actions.ModifyIpamPrefixListResolver,
+		EC2Actions.ModifyIpamPrefixListResolverTarget,
+		EC2Actions.ModifyIpamResourceCidr,
+		EC2Actions.ModifyIpamResourceDiscovery,
+		EC2Actions.ModifyIpamScope,
+		EC2Actions.ModifyLaunchTemplate,
+		EC2Actions.ModifyLocalGatewayRoute,
+		EC2Actions.ModifyManagedPrefixList,
+		EC2Actions.ModifyManagedResourceVisibility,
+		EC2Actions.ModifyNetworkInterfaceAttribute,
+		EC2Actions.ModifyPrivateDnsNameOptions,
+		EC2Actions.ModifyPublicIpDnsNameOptions,
+		EC2Actions.ModifyReservedInstances,
+		EC2Actions.ModifyRouteServer,
+		EC2Actions.ModifySecurityGroupRules,
+		EC2Actions.ModifySnapshotTier,
+		EC2Actions.ModifySpotFleetRequest,
+		EC2Actions.ModifySubnetAttribute,
+		EC2Actions.ModifyTrafficMirrorFilterNetworkServices,
+		EC2Actions.ModifyTrafficMirrorFilterRule,
+		EC2Actions.ModifyTrafficMirrorSession,
+		EC2Actions.ModifyTransitGateway,
+		EC2Actions.ModifyTransitGatewayMeteringPolicy,
+		EC2Actions.ModifyTransitGatewayPrefixListReference,
+		EC2Actions.ModifyTransitGatewayVpcAttachment,
+		EC2Actions.ModifyVerifiedAccessEndpoint,
+		EC2Actions.ModifyVerifiedAccessEndpointPolicy,
+		EC2Actions.ModifyVerifiedAccessGroup,
+		EC2Actions.ModifyVerifiedAccessGroupPolicy,
+		EC2Actions.ModifyVerifiedAccessInstance,
+		EC2Actions.ModifyVerifiedAccessInstanceLoggingConfiguration,
+		EC2Actions.ModifyVerifiedAccessTrustProvider,
+		EC2Actions.ModifyVolume,
+		EC2Actions.ModifyVolumeAttribute,
+		EC2Actions.ModifyVpcAttribute,
+		EC2Actions.ModifyVpcBlockPublicAccessExclusion,
+		EC2Actions.ModifyVpcBlockPublicAccessOptions,
+		EC2Actions.ModifyVpcEncryptionControl,
+		EC2Actions.ModifyVpcEndpoint,
+		EC2Actions.ModifyVpcEndpointConnectionNotification,
+		EC2Actions.ModifyVpcEndpointServiceConfiguration,
+		EC2Actions.ModifyVpcEndpointServicePayerResponsibility,
+		EC2Actions.ModifyVpcPeeringConnectionOptions,
+		EC2Actions.ModifyVpcTenancy,
+		EC2Actions.ModifyVpnConnection,
+		EC2Actions.ModifyVpnConnectionOptions,
+		EC2Actions.ModifyVpnTunnelCertificate,
+		EC2Actions.ModifyVpnTunnelOptions,
+		EC2Actions.MonitorInstances,
+		EC2Actions.MoveAddressToVpc,
+		EC2Actions.MoveByoipCidrToIpam,
+		EC2Actions.MoveCapacityReservationInstances,
+		EC2Actions.PauseVolumeIO,
+		EC2Actions.ProvisionByoipCidr,
+		EC2Actions.ProvisionIpamByoasn,
+		EC2Actions.ProvisionIpamPoolCidr,
+		EC2Actions.ProvisionPublicIpv4PoolCidr,
+		EC2Actions.PurchaseCapacityBlock,
+		EC2Actions.PurchaseCapacityBlockExtension,
+		EC2Actions.PurchaseHostReservation,
+		EC2Actions.PurchaseReservedInstancesOffering,
+		EC2Actions.PurchaseScheduledInstances,
+		EC2Actions.RebootInstances,
+		EC2Actions.RegisterImage,
+		EC2Actions.RegisterInstanceEventNotificationAttributes,
+		EC2Actions.RegisterTransitGatewayMulticastGroupMembers,
+		EC2Actions.RegisterTransitGatewayMulticastGroupSources,
+		EC2Actions.RejectCapacityReservationBillingOwnership,
+		EC2Actions.RejectTransitGatewayClientVpnAttachment,
+		EC2Actions.RejectTransitGatewayMulticastDomainAssociations,
+		EC2Actions.RejectTransitGatewayPeeringAttachment,
+		EC2Actions.RejectTransitGatewayVpcAttachment,
+		EC2Actions.RejectVpcEndpointConnections,
+		EC2Actions.RejectVpcPeeringConnection,
+		EC2Actions.ReleaseAddress,
+		EC2Actions.ReleaseHosts,
+		EC2Actions.ReleaseIpamPoolAllocation,
+		EC2Actions.ReplaceIamInstanceProfileAssociation,
+		EC2Actions.ReplaceImageCriteriaInAllowedImagesSettings,
+		EC2Actions.ReplaceNetworkAclAssociation,
+		EC2Actions.ReplaceNetworkAclEntry,
+		EC2Actions.ReplaceRoute,
+		EC2Actions.ReplaceRouteTableAssociation,
+		EC2Actions.ReplaceTransitGatewayRoute,
+		EC2Actions.ReplaceVpnTunnel,
+		EC2Actions.ReportInstanceStatus,
+		EC2Actions.RequestSpotFleet,
+		EC2Actions.RequestSpotInstances,
+		EC2Actions.ResetAddressAttribute,
+		EC2Actions.ResetEbsDefaultKmsKeyId,
+		EC2Actions.ResetFpgaImageAttribute,
+		EC2Actions.ResetImageAttribute,
+		EC2Actions.ResetInstanceAttribute,
+		EC2Actions.ResetNetworkInterfaceAttribute,
+		EC2Actions.RestoreAddressToClassic,
+		EC2Actions.RestoreImageFromRecycleBin,
+		EC2Actions.RestoreManagedPrefixListVersion,
+		EC2Actions.RestoreSnapshotFromRecycleBin,
+		EC2Actions.RestoreSnapshotTier,
+		EC2Actions.RestoreVolumeFromRecycleBin,
+		EC2Actions.RevokeClientVpnIngress,
+		EC2Actions.RevokeSecurityGroupEgress,
+		EC2Actions.RevokeSecurityGroupIngress,
+		EC2Actions.RunInstances,
+		EC2Actions.RunScheduledInstances,
+		EC2Actions.SendDiagnosticInterrupt,
+		EC2Actions.SendSpotInstanceInterruptions,
+		EC2Actions.StartInstances,
+		EC2Actions.StartNetworkInsightsAccessScopeAnalysis,
+		EC2Actions.StartNetworkInsightsAnalysis,
+		EC2Actions.StartVpcEndpointServicePrivateDnsVerification,
+		EC2Actions.StopInstances,
+		EC2Actions.TerminateClientVpnConnections,
+		EC2Actions.TerminateInstances,
+		EC2Actions.UnassignIpv6Addresses,
+		EC2Actions.UnassignPrivateIpAddresses,
+		EC2Actions.UnassignPrivateNatGatewayAddress,
+		EC2Actions.UnlockSnapshot,
+		EC2Actions.UnmonitorInstances,
+		EC2Actions.UpdateCapacityManagerMonitoredTagKeys,
+		EC2Actions.UpdateCapacityManagerOrganizationsAccess,
+		EC2Actions.UpdateInterruptibleCapacityReservationAllocation,
+		EC2Actions.UpdateSecurityGroupRuleDescriptionsEgress,
+		EC2Actions.UpdateSecurityGroupRuleDescriptionsIngress,
+		EC2Actions.WithdrawByoipCidr,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		EC2Actions.DESCRIBE_ACCOUNT_ATTRIBUTES,
-		EC2Actions.DESCRIBE_ADDRESS_TRANSFERS,
-		EC2Actions.DESCRIBE_ADDRESSES,
-		EC2Actions.DESCRIBE_ADDRESSES_ATTRIBUTE,
-		EC2Actions.DESCRIBE_AGGREGATE_ID_FORMAT,
-		EC2Actions.DESCRIBE_AVAILABILITY_ZONES,
-		EC2Actions.DESCRIBE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTIONS,
-		EC2Actions.DESCRIBE_BUNDLE_TASKS,
-		EC2Actions.DESCRIBE_BYOIP_CIDRS,
-		EC2Actions.DESCRIBE_CAPACITY_BLOCK_EXTENSION_HISTORY,
-		EC2Actions.DESCRIBE_CAPACITY_BLOCK_EXTENSION_OFFERINGS,
-		EC2Actions.DESCRIBE_CAPACITY_BLOCK_OFFERINGS,
-		EC2Actions.DESCRIBE_CAPACITY_BLOCK_STATUS,
-		EC2Actions.DESCRIBE_CAPACITY_BLOCKS,
-		EC2Actions.DESCRIBE_CAPACITY_MANAGER_DATA_EXPORTS,
-		EC2Actions.DESCRIBE_CAPACITY_RESERVATION_BILLING_REQUESTS,
-		EC2Actions.DESCRIBE_CAPACITY_RESERVATION_CANCELLATION_QUOTES,
-		EC2Actions.DESCRIBE_CAPACITY_RESERVATION_FLEETS,
-		EC2Actions.DESCRIBE_CAPACITY_RESERVATION_TOPOLOGY,
-		EC2Actions.DESCRIBE_CAPACITY_RESERVATIONS,
-		EC2Actions.DESCRIBE_CARRIER_GATEWAYS,
-		EC2Actions.DESCRIBE_CLASSIC_LINK_INSTANCES,
-		EC2Actions.DESCRIBE_CLIENT_VPN_AUTHORIZATION_RULES,
-		EC2Actions.DESCRIBE_CLIENT_VPN_CONNECTIONS,
-		EC2Actions.DESCRIBE_CLIENT_VPN_ENDPOINTS,
-		EC2Actions.DESCRIBE_CLIENT_VPN_ROUTES,
-		EC2Actions.DESCRIBE_CLIENT_VPN_TARGET_NETWORKS,
-		EC2Actions.DESCRIBE_COIP_POOLS,
-		EC2Actions.DESCRIBE_CONVERSION_TASKS,
-		EC2Actions.DESCRIBE_CUSTOMER_GATEWAYS,
-		EC2Actions.DESCRIBE_DECLARATIVE_POLICIES_REPORTS,
-		EC2Actions.DESCRIBE_DHCP_OPTIONS,
-		EC2Actions.DESCRIBE_EGRESS_ONLY_INTERNET_GATEWAYS,
-		EC2Actions.DESCRIBE_ELASTIC_GPUS,
-		EC2Actions.DESCRIBE_EXPORT_IMAGE_TASKS,
-		EC2Actions.DESCRIBE_EXPORT_TASKS,
-		EC2Actions.DESCRIBE_FAST_LAUNCH_IMAGES,
-		EC2Actions.DESCRIBE_FAST_SNAPSHOT_RESTORES,
-		EC2Actions.DESCRIBE_FLEET_HISTORY,
-		EC2Actions.DESCRIBE_FLEET_INSTANCES,
-		EC2Actions.DESCRIBE_FLEETS,
-		EC2Actions.DESCRIBE_FLOW_LOGS,
-		EC2Actions.DESCRIBE_FPGA_IMAGE_ATTRIBUTE,
-		EC2Actions.DESCRIBE_FPGA_IMAGES,
-		EC2Actions.DESCRIBE_HOST_RESERVATION_OFFERINGS,
-		EC2Actions.DESCRIBE_HOST_RESERVATIONS,
-		EC2Actions.DESCRIBE_HOSTS,
-		EC2Actions.DESCRIBE_IAM_INSTANCE_PROFILE_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_ID_FORMAT,
-		EC2Actions.DESCRIBE_IDENTITY_ID_FORMAT,
-		EC2Actions.DESCRIBE_IMAGE_ATTRIBUTE,
-		EC2Actions.DESCRIBE_IMAGE_REFERENCES,
-		EC2Actions.DESCRIBE_IMAGE_USAGE_REPORT_ENTRIES,
-		EC2Actions.DESCRIBE_IMAGE_USAGE_REPORTS,
-		EC2Actions.DESCRIBE_IMAGES,
-		EC2Actions.DESCRIBE_IMPORT_IMAGE_TASKS,
-		EC2Actions.DESCRIBE_IMPORT_SNAPSHOT_TASKS,
-		EC2Actions.DESCRIBE_INSTANCE_ATTRIBUTE,
-		EC2Actions.DESCRIBE_INSTANCE_CONNECT_ENDPOINTS,
-		EC2Actions.DESCRIBE_INSTANCE_CREDIT_SPECIFICATIONS,
-		EC2Actions.DESCRIBE_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES,
-		EC2Actions.DESCRIBE_INSTANCE_EVENT_WINDOWS,
-		EC2Actions.DESCRIBE_INSTANCE_IMAGE_METADATA,
-		EC2Actions.DESCRIBE_INSTANCE_SQL_HA_HISTORY_STATES,
-		EC2Actions.DESCRIBE_INSTANCE_SQL_HA_STATES,
-		EC2Actions.DESCRIBE_INSTANCE_STATUS,
-		EC2Actions.DESCRIBE_INSTANCE_TOPOLOGY,
-		EC2Actions.DESCRIBE_INSTANCE_TYPE_OFFERINGS,
-		EC2Actions.DESCRIBE_INSTANCE_TYPES,
-		EC2Actions.DESCRIBE_INSTANCES,
-		EC2Actions.DESCRIBE_INTERNET_GATEWAYS,
-		EC2Actions.DESCRIBE_IPAM_BYOASN,
-		EC2Actions.DESCRIBE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKENS,
-		EC2Actions.DESCRIBE_IPAM_POLICIES,
-		EC2Actions.DESCRIBE_IPAM_POOL_ALLOCATIONS,
-		EC2Actions.DESCRIBE_IPAM_POOLS,
-		EC2Actions.DESCRIBE_IPAM_PREFIX_LIST_RESOLVER_TARGETS,
-		EC2Actions.DESCRIBE_IPAM_PREFIX_LIST_RESOLVERS,
-		EC2Actions.DESCRIBE_IPAM_RESOURCE_DISCOVERIES,
-		EC2Actions.DESCRIBE_IPAM_RESOURCE_DISCOVERY_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_IPAM_SCOPES,
-		EC2Actions.DESCRIBE_IPAMS,
-		EC2Actions.DESCRIBE_IPV6_POOLS,
-		EC2Actions.DESCRIBE_KEY_PAIRS,
-		EC2Actions.DESCRIBE_LAUNCH_TEMPLATE_VERSIONS,
-		EC2Actions.DESCRIBE_LAUNCH_TEMPLATES,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSIONS,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLES,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUPS,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACES,
-		EC2Actions.DESCRIBE_LOCAL_GATEWAYS,
-		EC2Actions.DESCRIBE_LOCKED_SNAPSHOTS,
-		EC2Actions.DESCRIBE_MAC_HOSTS,
-		EC2Actions.DESCRIBE_MAC_MODIFICATION_TASKS,
-		EC2Actions.DESCRIBE_MANAGED_PREFIX_LISTS,
-		EC2Actions.DESCRIBE_MOVING_ADDRESSES,
-		EC2Actions.DESCRIBE_NAT_GATEWAYS,
-		EC2Actions.DESCRIBE_NETWORK_ACLS,
-		EC2Actions.DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSES,
-		EC2Actions.DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPES,
-		EC2Actions.DESCRIBE_NETWORK_INSIGHTS_ANALYSES,
-		EC2Actions.DESCRIBE_NETWORK_INSIGHTS_PATHS,
-		EC2Actions.DESCRIBE_NETWORK_INTERFACE_ATTRIBUTE,
-		EC2Actions.DESCRIBE_NETWORK_INTERFACE_PERMISSIONS,
-		EC2Actions.DESCRIBE_NETWORK_INTERFACES,
-		EC2Actions.DESCRIBE_OUTPOST_LAGS,
-		EC2Actions.DESCRIBE_PLACEMENT_GROUPS,
-		EC2Actions.DESCRIBE_PREFIX_LISTS,
-		EC2Actions.DESCRIBE_PRINCIPAL_ID_FORMAT,
-		EC2Actions.DESCRIBE_PUBLIC_IPV4_POOLS,
-		EC2Actions.DESCRIBE_REGIONS,
-		EC2Actions.DESCRIBE_REPLACE_ROOT_VOLUME_TASKS,
-		EC2Actions.DESCRIBE_RESERVED_INSTANCES,
-		EC2Actions.DESCRIBE_RESERVED_INSTANCES_LISTINGS,
-		EC2Actions.DESCRIBE_RESERVED_INSTANCES_MODIFICATIONS,
-		EC2Actions.DESCRIBE_RESERVED_INSTANCES_OFFERINGS,
-		EC2Actions.DESCRIBE_ROUTE_SERVER_ENDPOINTS,
-		EC2Actions.DESCRIBE_ROUTE_SERVER_PEERS,
-		EC2Actions.DESCRIBE_ROUTE_SERVERS,
-		EC2Actions.DESCRIBE_ROUTE_TABLES,
-		EC2Actions.DESCRIBE_SCHEDULED_INSTANCE_AVAILABILITY,
-		EC2Actions.DESCRIBE_SCHEDULED_INSTANCES,
-		EC2Actions.DESCRIBE_SECONDARY_INTERFACES,
-		EC2Actions.DESCRIBE_SECONDARY_NETWORKS,
-		EC2Actions.DESCRIBE_SECONDARY_SUBNETS,
-		EC2Actions.DESCRIBE_SECURITY_GROUP_REFERENCES,
-		EC2Actions.DESCRIBE_SECURITY_GROUP_RULES,
-		EC2Actions.DESCRIBE_SECURITY_GROUP_VPC_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_SECURITY_GROUPS,
-		EC2Actions.DESCRIBE_SERVICE_LINK_VIRTUAL_INTERFACES,
-		EC2Actions.DESCRIBE_SNAPSHOT_ATTRIBUTE,
-		EC2Actions.DESCRIBE_SNAPSHOT_TIER_STATUS,
-		EC2Actions.DESCRIBE_SNAPSHOTS,
-		EC2Actions.DESCRIBE_SPOT_DATAFEED_SUBSCRIPTION,
-		EC2Actions.DESCRIBE_SPOT_FLEET_INSTANCES,
-		EC2Actions.DESCRIBE_SPOT_FLEET_REQUEST_HISTORY,
-		EC2Actions.DESCRIBE_SPOT_FLEET_REQUESTS,
-		EC2Actions.DESCRIBE_SPOT_INSTANCE_REQUESTS,
-		EC2Actions.DESCRIBE_SPOT_PRICE_HISTORY,
-		EC2Actions.DESCRIBE_STALE_SECURITY_GROUPS,
-		EC2Actions.DESCRIBE_STORE_IMAGE_TASKS,
-		EC2Actions.DESCRIBE_SUBNETS,
-		EC2Actions.DESCRIBE_TAGS,
-		EC2Actions.DESCRIBE_TRAFFIC_MIRROR_FILTER_RULES,
-		EC2Actions.DESCRIBE_TRAFFIC_MIRROR_FILTERS,
-		EC2Actions.DESCRIBE_TRAFFIC_MIRROR_SESSIONS,
-		EC2Actions.DESCRIBE_TRAFFIC_MIRROR_TARGETS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_ATTACHMENTS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_CONNECT_PEERS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_CONNECTS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_METERING_POLICIES,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_MULTICAST_DOMAINS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_PEERING_ATTACHMENTS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_POLICY_TABLES,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENTS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLES,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAY_VPC_ATTACHMENTS,
-		EC2Actions.DESCRIBE_TRANSIT_GATEWAYS,
-		EC2Actions.DESCRIBE_TRUNK_INTERFACE_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_ENDPOINTS,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_GROUPS,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATIONS,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_INSTANCE_WEB_ACL_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_INSTANCES,
-		EC2Actions.DESCRIBE_VERIFIED_ACCESS_TRUST_PROVIDERS,
-		EC2Actions.DESCRIBE_VOLUME_ATTRIBUTE,
-		EC2Actions.DESCRIBE_VOLUME_STATUS,
-		EC2Actions.DESCRIBE_VOLUMES,
-		EC2Actions.DESCRIBE_VOLUMES_MODIFICATIONS,
-		EC2Actions.DESCRIBE_VPC_ATTRIBUTE,
-		EC2Actions.DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSIONS,
-		EC2Actions.DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS,
-		EC2Actions.DESCRIBE_VPC_CLASSIC_LINK,
-		EC2Actions.DESCRIBE_VPC_CLASSIC_LINK_DNS_SUPPORT,
-		EC2Actions.DESCRIBE_VPC_ENCRYPTION_CONTROLS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_ASSOCIATIONS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_CONNECTIONS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_SERVICE_PERMISSIONS,
-		EC2Actions.DESCRIBE_VPC_ENDPOINT_SERVICES,
-		EC2Actions.DESCRIBE_VPC_ENDPOINTS,
-		EC2Actions.DESCRIBE_VPC_PEERING_CONNECTIONS,
-		EC2Actions.DESCRIBE_VPCS,
-		EC2Actions.DESCRIBE_VPN_CONCENTRATORS,
-		EC2Actions.DESCRIBE_VPN_CONNECTIONS,
-		EC2Actions.DESCRIBE_VPN_GATEWAYS,
-		EC2Actions.GET_CAPACITY_MANAGER_MONITORED_TAG_KEYS,
-		EC2Actions.GET_GROUPS_FOR_CAPACITY_RESERVATION,
-		EC2Actions.GET_INSTANCE_METADATA_DEFAULTS,
-		EC2Actions.GET_INSTANCE_TYPES_FROM_INSTANCE_REQUIREMENTS,
-		EC2Actions.GET_IPAM_POLICY_ALLOCATION_RULES,
-		EC2Actions.GET_IPAM_POLICY_ORGANIZATION_TARGETS,
-		EC2Actions.GET_IPAM_POOL_ALLOCATIONS,
-		EC2Actions.GET_MANAGED_RESOURCE_VISIBILITY,
-		EC2Actions.GET_TRANSIT_GATEWAY_ATTACHMENT_PROPAGATIONS,
-		EC2Actions.GET_TRANSIT_GATEWAY_METERING_POLICY_ENTRIES,
-		EC2Actions.GET_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS,
-		EC2Actions.GET_TRANSIT_GATEWAY_POLICY_TABLE_ASSOCIATIONS,
-		EC2Actions.GET_TRANSIT_GATEWAY_POLICY_TABLE_ENTRIES,
-		EC2Actions.GET_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCES,
-		EC2Actions.GET_TRANSIT_GATEWAY_ROUTE_TABLE_ASSOCIATIONS,
-		EC2Actions.GET_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATIONS,
-		EC2Actions.GET_VERIFIED_ACCESS_ENDPOINT_POLICY,
-		EC2Actions.GET_VERIFIED_ACCESS_ENDPOINT_TARGETS,
-		EC2Actions.GET_VERIFIED_ACCESS_GROUP_POLICY,
-		EC2Actions.GET_VERIFIED_ACCESS_INSTANCE_WEB_ACL,
-		EC2Actions.GET_VPC_RESOURCES_BLOCKING_ENCRYPTION_ENFORCEMENT,
-		EC2Actions.GET_VPN_CONNECTION_DEVICE_SAMPLE_CONFIGURATION,
-		EC2Actions.GET_VPN_CONNECTION_DEVICE_TYPES,
-		EC2Actions.GET_VPN_TUNNEL_REPLACEMENT_STATUS,
-		EC2Actions.LIST_IMAGES_IN_RECYCLE_BIN,
-		EC2Actions.LIST_SNAPSHOTS_IN_RECYCLE_BIN,
-		EC2Actions.LIST_VOLUMES_IN_RECYCLE_BIN,
-		EC2Actions.SEARCH_LOCAL_GATEWAY_ROUTES,
-		EC2Actions.SEARCH_TRANSIT_GATEWAY_MULTICAST_GROUPS,
-		EC2Actions.SEARCH_TRANSIT_GATEWAY_ROUTES,
+	static readonly AllListActions: string[] = [
+		EC2Actions.DescribeAccountAttributes,
+		EC2Actions.DescribeAddressTransfers,
+		EC2Actions.DescribeAddresses,
+		EC2Actions.DescribeAddressesAttribute,
+		EC2Actions.DescribeAggregateIdFormat,
+		EC2Actions.DescribeAvailabilityZones,
+		EC2Actions.DescribeAwsNetworkPerformanceMetricSubscriptions,
+		EC2Actions.DescribeBundleTasks,
+		EC2Actions.DescribeByoipCidrs,
+		EC2Actions.DescribeCapacityBlockExtensionHistory,
+		EC2Actions.DescribeCapacityBlockExtensionOfferings,
+		EC2Actions.DescribeCapacityBlockOfferings,
+		EC2Actions.DescribeCapacityBlockStatus,
+		EC2Actions.DescribeCapacityBlocks,
+		EC2Actions.DescribeCapacityManagerDataExports,
+		EC2Actions.DescribeCapacityReservationBillingRequests,
+		EC2Actions.DescribeCapacityReservationCancellationQuotes,
+		EC2Actions.DescribeCapacityReservationFleets,
+		EC2Actions.DescribeCapacityReservationTopology,
+		EC2Actions.DescribeCapacityReservations,
+		EC2Actions.DescribeCarrierGateways,
+		EC2Actions.DescribeClassicLinkInstances,
+		EC2Actions.DescribeClientVpnAuthorizationRules,
+		EC2Actions.DescribeClientVpnConnections,
+		EC2Actions.DescribeClientVpnEndpoints,
+		EC2Actions.DescribeClientVpnRoutes,
+		EC2Actions.DescribeClientVpnTargetNetworks,
+		EC2Actions.DescribeCoipPools,
+		EC2Actions.DescribeConversionTasks,
+		EC2Actions.DescribeCustomerGateways,
+		EC2Actions.DescribeDeclarativePoliciesReports,
+		EC2Actions.DescribeDhcpOptions,
+		EC2Actions.DescribeEgressOnlyInternetGateways,
+		EC2Actions.DescribeElasticGpus,
+		EC2Actions.DescribeExportImageTasks,
+		EC2Actions.DescribeExportTasks,
+		EC2Actions.DescribeFastLaunchImages,
+		EC2Actions.DescribeFastSnapshotRestores,
+		EC2Actions.DescribeFleetHistory,
+		EC2Actions.DescribeFleetInstances,
+		EC2Actions.DescribeFleets,
+		EC2Actions.DescribeFlowLogs,
+		EC2Actions.DescribeFpgaImageAttribute,
+		EC2Actions.DescribeFpgaImages,
+		EC2Actions.DescribeHostReservationOfferings,
+		EC2Actions.DescribeHostReservations,
+		EC2Actions.DescribeHosts,
+		EC2Actions.DescribeIamInstanceProfileAssociations,
+		EC2Actions.DescribeIdFormat,
+		EC2Actions.DescribeIdentityIdFormat,
+		EC2Actions.DescribeImageAttribute,
+		EC2Actions.DescribeImageReferences,
+		EC2Actions.DescribeImageUsageReportEntries,
+		EC2Actions.DescribeImageUsageReports,
+		EC2Actions.DescribeImages,
+		EC2Actions.DescribeImportImageTasks,
+		EC2Actions.DescribeImportSnapshotTasks,
+		EC2Actions.DescribeInstanceAttribute,
+		EC2Actions.DescribeInstanceConnectEndpoints,
+		EC2Actions.DescribeInstanceCreditSpecifications,
+		EC2Actions.DescribeInstanceEventNotificationAttributes,
+		EC2Actions.DescribeInstanceEventWindows,
+		EC2Actions.DescribeInstanceImageMetadata,
+		EC2Actions.DescribeInstanceSqlHaHistoryStates,
+		EC2Actions.DescribeInstanceSqlHaStates,
+		EC2Actions.DescribeInstanceStatus,
+		EC2Actions.DescribeInstanceTopology,
+		EC2Actions.DescribeInstanceTypeOfferings,
+		EC2Actions.DescribeInstanceTypes,
+		EC2Actions.DescribeInstances,
+		EC2Actions.DescribeInternetGateways,
+		EC2Actions.DescribeIpamByoasn,
+		EC2Actions.DescribeIpamExternalResourceVerificationTokens,
+		EC2Actions.DescribeIpamPolicies,
+		EC2Actions.DescribeIpamPoolAllocations,
+		EC2Actions.DescribeIpamPools,
+		EC2Actions.DescribeIpamPrefixListResolverTargets,
+		EC2Actions.DescribeIpamPrefixListResolvers,
+		EC2Actions.DescribeIpamResourceDiscoveries,
+		EC2Actions.DescribeIpamResourceDiscoveryAssociations,
+		EC2Actions.DescribeIpamScopes,
+		EC2Actions.DescribeIpams,
+		EC2Actions.DescribeIpv6Pools,
+		EC2Actions.DescribeKeyPairs,
+		EC2Actions.DescribeLaunchTemplateVersions,
+		EC2Actions.DescribeLaunchTemplates,
+		EC2Actions.DescribeLocalGatewayRouteTablePermissions,
+		EC2Actions.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations,
+		EC2Actions.DescribeLocalGatewayRouteTableVpcAssociations,
+		EC2Actions.DescribeLocalGatewayRouteTables,
+		EC2Actions.DescribeLocalGatewayVirtualInterfaceGroups,
+		EC2Actions.DescribeLocalGatewayVirtualInterfaces,
+		EC2Actions.DescribeLocalGateways,
+		EC2Actions.DescribeLockedSnapshots,
+		EC2Actions.DescribeMacHosts,
+		EC2Actions.DescribeMacModificationTasks,
+		EC2Actions.DescribeManagedPrefixLists,
+		EC2Actions.DescribeMovingAddresses,
+		EC2Actions.DescribeNatGateways,
+		EC2Actions.DescribeNetworkAcls,
+		EC2Actions.DescribeNetworkInsightsAccessScopeAnalyses,
+		EC2Actions.DescribeNetworkInsightsAccessScopes,
+		EC2Actions.DescribeNetworkInsightsAnalyses,
+		EC2Actions.DescribeNetworkInsightsPaths,
+		EC2Actions.DescribeNetworkInterfaceAttribute,
+		EC2Actions.DescribeNetworkInterfacePermissions,
+		EC2Actions.DescribeNetworkInterfaces,
+		EC2Actions.DescribeOutpostLags,
+		EC2Actions.DescribePlacementGroups,
+		EC2Actions.DescribePrefixLists,
+		EC2Actions.DescribePrincipalIdFormat,
+		EC2Actions.DescribePublicIpv4Pools,
+		EC2Actions.DescribeRegions,
+		EC2Actions.DescribeReplaceRootVolumeTasks,
+		EC2Actions.DescribeReservedInstances,
+		EC2Actions.DescribeReservedInstancesListings,
+		EC2Actions.DescribeReservedInstancesModifications,
+		EC2Actions.DescribeReservedInstancesOfferings,
+		EC2Actions.DescribeRouteServerEndpoints,
+		EC2Actions.DescribeRouteServerPeers,
+		EC2Actions.DescribeRouteServers,
+		EC2Actions.DescribeRouteTables,
+		EC2Actions.DescribeScheduledInstanceAvailability,
+		EC2Actions.DescribeScheduledInstances,
+		EC2Actions.DescribeSecondaryInterfaces,
+		EC2Actions.DescribeSecondaryNetworks,
+		EC2Actions.DescribeSecondarySubnets,
+		EC2Actions.DescribeSecurityGroupReferences,
+		EC2Actions.DescribeSecurityGroupRules,
+		EC2Actions.DescribeSecurityGroupVpcAssociations,
+		EC2Actions.DescribeSecurityGroups,
+		EC2Actions.DescribeServiceLinkVirtualInterfaces,
+		EC2Actions.DescribeSnapshotAttribute,
+		EC2Actions.DescribeSnapshotTierStatus,
+		EC2Actions.DescribeSnapshots,
+		EC2Actions.DescribeSpotDatafeedSubscription,
+		EC2Actions.DescribeSpotFleetInstances,
+		EC2Actions.DescribeSpotFleetRequestHistory,
+		EC2Actions.DescribeSpotFleetRequests,
+		EC2Actions.DescribeSpotInstanceRequests,
+		EC2Actions.DescribeSpotPriceHistory,
+		EC2Actions.DescribeStaleSecurityGroups,
+		EC2Actions.DescribeStoreImageTasks,
+		EC2Actions.DescribeSubnets,
+		EC2Actions.DescribeTags,
+		EC2Actions.DescribeTrafficMirrorFilterRules,
+		EC2Actions.DescribeTrafficMirrorFilters,
+		EC2Actions.DescribeTrafficMirrorSessions,
+		EC2Actions.DescribeTrafficMirrorTargets,
+		EC2Actions.DescribeTransitGatewayAttachments,
+		EC2Actions.DescribeTransitGatewayConnectPeers,
+		EC2Actions.DescribeTransitGatewayConnects,
+		EC2Actions.DescribeTransitGatewayMeteringPolicies,
+		EC2Actions.DescribeTransitGatewayMulticastDomains,
+		EC2Actions.DescribeTransitGatewayPeeringAttachments,
+		EC2Actions.DescribeTransitGatewayPolicyTables,
+		EC2Actions.DescribeTransitGatewayRouteTableAnnouncements,
+		EC2Actions.DescribeTransitGatewayRouteTables,
+		EC2Actions.DescribeTransitGatewayVpcAttachments,
+		EC2Actions.DescribeTransitGateways,
+		EC2Actions.DescribeTrunkInterfaceAssociations,
+		EC2Actions.DescribeVerifiedAccessEndpoints,
+		EC2Actions.DescribeVerifiedAccessGroups,
+		EC2Actions.DescribeVerifiedAccessInstanceLoggingConfigurations,
+		EC2Actions.DescribeVerifiedAccessInstanceWebAclAssociations,
+		EC2Actions.DescribeVerifiedAccessInstances,
+		EC2Actions.DescribeVerifiedAccessTrustProviders,
+		EC2Actions.DescribeVolumeAttribute,
+		EC2Actions.DescribeVolumeStatus,
+		EC2Actions.DescribeVolumes,
+		EC2Actions.DescribeVolumesModifications,
+		EC2Actions.DescribeVpcAttribute,
+		EC2Actions.DescribeVpcBlockPublicAccessExclusions,
+		EC2Actions.DescribeVpcBlockPublicAccessOptions,
+		EC2Actions.DescribeVpcClassicLink,
+		EC2Actions.DescribeVpcClassicLinkDnsSupport,
+		EC2Actions.DescribeVpcEncryptionControls,
+		EC2Actions.DescribeVpcEndpointAssociations,
+		EC2Actions.DescribeVpcEndpointConnectionNotifications,
+		EC2Actions.DescribeVpcEndpointConnections,
+		EC2Actions.DescribeVpcEndpointServiceConfigurations,
+		EC2Actions.DescribeVpcEndpointServicePermissions,
+		EC2Actions.DescribeVpcEndpointServices,
+		EC2Actions.DescribeVpcEndpoints,
+		EC2Actions.DescribeVpcPeeringConnections,
+		EC2Actions.DescribeVpcs,
+		EC2Actions.DescribeVpnConcentrators,
+		EC2Actions.DescribeVpnConnections,
+		EC2Actions.DescribeVpnGateways,
+		EC2Actions.actionGetCapacityManagerMonitoredTagKeys,
+		EC2Actions.actionGetGroupsForCapacityReservation,
+		EC2Actions.actionGetInstanceMetadataDefaults,
+		EC2Actions.actionGetInstanceTypesFromInstanceRequirements,
+		EC2Actions.actionGetIpamPolicyAllocationRules,
+		EC2Actions.actionGetIpamPolicyOrganizationTargets,
+		EC2Actions.actionGetIpamPoolAllocations,
+		EC2Actions.actionGetManagedResourceVisibility,
+		EC2Actions.actionGetTransitGatewayAttachmentPropagations,
+		EC2Actions.actionGetTransitGatewayMeteringPolicyEntries,
+		EC2Actions.actionGetTransitGatewayMulticastDomainAssociations,
+		EC2Actions.actionGetTransitGatewayPolicyTableAssociations,
+		EC2Actions.actionGetTransitGatewayPolicyTableEntries,
+		EC2Actions.actionGetTransitGatewayPrefixListReferences,
+		EC2Actions.actionGetTransitGatewayRouteTableAssociations,
+		EC2Actions.actionGetTransitGatewayRouteTablePropagations,
+		EC2Actions.actionGetVerifiedAccessEndpointPolicy,
+		EC2Actions.actionGetVerifiedAccessEndpointTargets,
+		EC2Actions.actionGetVerifiedAccessGroupPolicy,
+		EC2Actions.actionGetVerifiedAccessInstanceWebAcl,
+		EC2Actions.actionGetVpcResourcesBlockingEncryptionEnforcement,
+		EC2Actions.actionGetVpnConnectionDeviceSampleConfiguration,
+		EC2Actions.actionGetVpnConnectionDeviceTypes,
+		EC2Actions.actionGetVpnTunnelReplacementStatus,
+		EC2Actions.ListImagesInRecycleBin,
+		EC2Actions.ListSnapshotsInRecycleBin,
+		EC2Actions.ListVolumesInRecycleBin,
+		EC2Actions.SearchLocalGatewayRoutes,
+		EC2Actions.SearchTransitGatewayMulticastGroups,
+		EC2Actions.SearchTransitGatewayRoutes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		EC2Actions.ATTACH_APPLIANCE_TO_NAT_GATEWAY,
-		EC2Actions.ATTACH_RESOURCES_TO_PLACEMENT_GROUP,
-		EC2Actions.CANCEL_IMAGE_LAUNCH_PERMISSION,
-		EC2Actions.CREATE_COIP_POOL_PERMISSION,
-		EC2Actions.CREATE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION,
-		EC2Actions.CREATE_NETWORK_INTERFACE_PERMISSION,
-		EC2Actions.CREATE_ODB_NETWORK_PEERING,
-		EC2Actions.DELETE_COIP_POOL_PERMISSION,
-		EC2Actions.DELETE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION,
-		EC2Actions.DELETE_NETWORK_INTERFACE_PERMISSION,
-		EC2Actions.DELETE_ODB_NETWORK_PEERING,
-		EC2Actions.DELETE_RESOURCE_POLICY,
-		EC2Actions.DETACH_APPLIANCE_FROM_NAT_GATEWAY,
-		EC2Actions.DETACH_RESOURCES_FROM_PLACEMENT_GROUP,
-		EC2Actions.DISABLE_IMAGE_BLOCK_PUBLIC_ACCESS,
-		EC2Actions.DISABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS,
-		EC2Actions.ENABLE_IMAGE_BLOCK_PUBLIC_ACCESS,
-		EC2Actions.ENABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS,
-		EC2Actions.MODIFY_ODB_NETWORK_PEERING,
-		EC2Actions.MODIFY_SNAPSHOT_ATTRIBUTE,
-		EC2Actions.MODIFY_VPC_ENDPOINT_SERVICE_PERMISSIONS,
-		EC2Actions.PUT_RESOURCE_POLICY,
-		EC2Actions.RESET_SNAPSHOT_ATTRIBUTE,
+	static readonly AllPermissionManagementActions: string[] = [
+		EC2Actions.AttachApplianceToNatGateway,
+		EC2Actions.AttachResourcesToPlacementGroup,
+		EC2Actions.CancelImageLaunchPermission,
+		EC2Actions.CreateCoipPoolPermission,
+		EC2Actions.CreateLocalGatewayRouteTablePermission,
+		EC2Actions.CreateNetworkInterfacePermission,
+		EC2Actions.CreateOdbNetworkPeering,
+		EC2Actions.DeleteCoipPoolPermission,
+		EC2Actions.DeleteLocalGatewayRouteTablePermission,
+		EC2Actions.DeleteNetworkInterfacePermission,
+		EC2Actions.DeleteOdbNetworkPeering,
+		EC2Actions.DeleteResourcePolicy,
+		EC2Actions.DetachApplianceFromNatGateway,
+		EC2Actions.DetachResourcesFromPlacementGroup,
+		EC2Actions.DisableImageBlockPublicAccess,
+		EC2Actions.DisableSnapshotBlockPublicAccess,
+		EC2Actions.EnableImageBlockPublicAccess,
+		EC2Actions.EnableSnapshotBlockPublicAccess,
+		EC2Actions.ModifyOdbNetworkPeering,
+		EC2Actions.ModifySnapshotAttribute,
+		EC2Actions.ModifyVpcEndpointServicePermissions,
+		EC2Actions.PutResourcePolicy,
+		EC2Actions.ResetSnapshotAttribute,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		EC2Actions.CREATE_TAGS,
-		EC2Actions.DELETE_TAGS,
+	static readonly AllTaggingActions: string[] = [
+		EC2Actions.CreateTags,
+		EC2Actions.DeleteTags,
 	];
 }
 
-const CapacityBlockArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-block/(?<capacityBlockId>[^:/?]+)$",
-);
-const CapacityManagerDataExportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-manager-data-export/(?<capacityManagerDataExportId>[^:/?]+)$",
-);
-const CapacityReservationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation/(?<capacityReservationId>[^:/?]+)$",
-);
-const CapacityReservationCancellationQuoteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-cancellation-quote/(?<capacityReservationCancellationQuoteId>[^:/?]+)$",
-);
-const CapacityReservationFleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-fleet/(?<capacityReservationFleetId>[^:/?]+)$",
-);
-const CarrierGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):carrier-gateway/(?<carrierGatewayId>[^:/?]+)$",
-);
-const CertificateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):certificate/(?<certificateId>[^:/?]+)$",
-);
-const ClientVPNEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):client-vpn-endpoint/(?<clientVPNEndpointId>[^:/?]+)$",
-);
-const CoipPoolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):coip-pool/(?<ipv4PoolCoipId>[^:/?]+)$",
-);
-const CustomerGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):customer-gateway/(?<customerGatewayId>[^:/?]+)$",
-);
-const DeclarativePoliciesReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):declarative-policies-report/(?<declarativePoliciesReportId>[^:/?]+)$",
-);
-const DedicatedHostArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):dedicated-host/(?<dedicatedHostId>[^:/?]+)$",
-);
-const DhcpOptionsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):dhcp-options/(?<dhcpOptionsId>[^:/?]+)$",
-);
-const EgressOnlyInternetGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):egress-only-internet-gateway/(?<egressOnlyInternetGatewayId>[^:/?]+)$",
-);
-const ElasticGpuArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):elastic-gpu/(?<elasticGpuId>[^:/?]+)$",
-);
-const ElasticInferenceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elastic-inference:(?<region>[^:]*):(?<account>[^:]*):elastic-inference-accelerator/(?<acceleratorId>[^:/?]+)$",
-);
-const ElasticIPArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):elastic-ip/(?<allocationId>[^:/?]+)$",
-);
-const ExportImageTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):export-image-task/(?<exportImageTaskId>[^:/?]+)$",
-);
-const ExportInstanceTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):export-instance-task/(?<exportTaskId>[^:/?]+)$",
-);
-const FleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):fleet/(?<fleetId>[^:/?]+)$",
-);
-const FpgaImageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):fpga-image/(?<fpgaImageId>[^:/?]+)$",
-);
-const GroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resource-groups:(?<region>[^:]*):(?<account>[^:]*):group/(?<groupName>[^:/?]+)$",
-);
-const HostReservationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):host-reservation/(?<hostReservationId>[^:/?]+)$",
-);
-const ImageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*)::image/(?<imageId>[^:/?]+)$",
-);
-const ImageUsageReportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):image-usage-report/(?<imageUsageReportId>[^:/?]+)$",
-);
-const ImportImageTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):import-image-task/(?<importImageTaskId>[^:/?]+)$",
-);
-const ImportSnapshotTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):import-snapshot-task/(?<importSnapshotTaskId>[^:/?]+)$",
-);
-const InstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance/(?<instanceId>[^:/?]+)$",
-);
-const InstanceConnectEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-connect-endpoint/(?<instanceConnectEndpointId>[^:/?]+)$",
-);
-const InstanceEventWindowArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-event-window/(?<instanceEventWindowId>[^:/?]+)$",
-);
-const InternetGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):internet-gateway/(?<internetGatewayId>[^:/?]+)$",
-);
-const IpamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam/(?<ipamId>[^:/?]+)$",
-);
-const IpamExternalResourceVerificationTokenArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-external-resource-verification-token/(?<ipamExternalResourceVerificationTokenId>[^:/?]+)$",
-);
-const IpamPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-policy/(?<ipamPolicyId>[^:/?]+)$",
-);
-const IpamPoolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-pool/(?<ipamPoolId>[^:/?]+)$",
-);
-const IpamPoolAllocationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipam-pool-allocation/(?<ipamPoolAllocationId>[^:/?]+)$",
-);
-const IpamPrefixListResolverArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-prefix-list-resolver/(?<ipamPrefixListResolverId>[^:/?]+)$",
-);
-const IpamPrefixListResolverTargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-prefix-list-resolver-target/(?<ipamPrefixListResolverTargetId>[^:/?]+)$",
-);
-const IpamResourceDiscoveryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-resource-discovery/(?<ipamResourceDiscoveryId>[^:/?]+)$",
-);
-const IpamResourceDiscoveryAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-resource-discovery-association/(?<ipamResourceDiscoveryAssociationId>[^:/?]+)$",
-);
-const IpamScopeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-scope/(?<ipamScopeId>[^:/?]+)$",
-);
-const Ipv4poolEC2ArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipv4pool-ec2/(?<ipv4PoolEC2Id>[^:/?]+)$",
-);
-const Ipv6poolEC2ArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipv6pool-ec2/(?<ipv6PoolEC2Id>[^:/?]+)$",
-);
-const KeyPairArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):key-pair/(?<keyPairName>[^:/?]+)$",
-);
-const LaunchTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):launch-template/(?<launchTemplateId>[^:/?]+)$",
-);
-const LicenseConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-configuration:(?<licenseConfigurationId>[^:/?]+)$",
-);
-const LocalGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway/(?<localGatewayId>[^:/?]+)$",
-);
-const LocalGatewayRouteTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table/(?<localGatewayRoutetableId>[^:/?]+)$",
-);
+/**
+ * Properties for building a capacity-block ARN.
+ */
+export interface EC2CapacityBlockArnProps {
+	/** The CapacityBlockId component of the ARN. */
+	readonly capacityBlockId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-block ARN.
+ */
+export interface EC2CapacityBlockArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityBlockId component. */
+	readonly capacityBlockId: string;
+}
+
+/**
+ * Properties for building a capacity-manager-data-export ARN.
+ */
+export interface EC2CapacityManagerDataExportArnProps {
+	/** The CapacityManagerDataExportId component of the ARN. */
+	readonly capacityManagerDataExportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-manager-data-export ARN.
+ */
+export interface EC2CapacityManagerDataExportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityManagerDataExportId component. */
+	readonly capacityManagerDataExportId: string;
+}
+
+/**
+ * Properties for building a capacity-reservation ARN.
+ */
+export interface EC2CapacityReservationArnProps {
+	/** The CapacityReservationId component of the ARN. */
+	readonly capacityReservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-reservation ARN.
+ */
+export interface EC2CapacityReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationId component. */
+	readonly capacityReservationId: string;
+}
+
+/**
+ * Properties for building a capacity-reservation-cancellation-quote ARN.
+ */
+export interface EC2CapacityReservationCancellationQuoteArnProps {
+	/** The CapacityReservationCancellationQuoteId component of the ARN. */
+	readonly capacityReservationCancellationQuoteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-reservation-cancellation-quote ARN.
+ */
+export interface EC2CapacityReservationCancellationQuoteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationCancellationQuoteId component. */
+	readonly capacityReservationCancellationQuoteId: string;
+}
+
+/**
+ * Properties for building a capacity-reservation-fleet ARN.
+ */
+export interface EC2CapacityReservationFleetArnProps {
+	/** The CapacityReservationFleetId component of the ARN. */
+	readonly capacityReservationFleetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacity-reservation-fleet ARN.
+ */
+export interface EC2CapacityReservationFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationFleetId component. */
+	readonly capacityReservationFleetId: string;
+}
+
+/**
+ * Properties for building a carrier-gateway ARN.
+ */
+export interface EC2CarrierGatewayArnProps {
+	/** The CarrierGatewayId component of the ARN. */
+	readonly carrierGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a carrier-gateway ARN.
+ */
+export interface EC2CarrierGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CarrierGatewayId component. */
+	readonly carrierGatewayId: string;
+}
+
+/**
+ * Properties for building a certificate ARN.
+ */
+export interface EC2CertificateArnProps {
+	/** The CertificateId component of the ARN. */
+	readonly certificateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a certificate ARN.
+ */
+export interface EC2CertificateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CertificateId component. */
+	readonly certificateId: string;
+}
+
+/**
+ * Properties for building a client-vpn-endpoint ARN.
+ */
+export interface EC2ClientVPNEndpointArnProps {
+	/** The ClientVpnEndpointId component of the ARN. */
+	readonly clientVPNEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a client-vpn-endpoint ARN.
+ */
+export interface EC2ClientVPNEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClientVpnEndpointId component. */
+	readonly clientVPNEndpointId: string;
+}
+
+/**
+ * Properties for building a coip-pool ARN.
+ */
+export interface EC2CoipPoolArnProps {
+	/** The Ipv4PoolCoipId component of the ARN. */
+	readonly ipv4PoolCoipId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a coip-pool ARN.
+ */
+export interface EC2CoipPoolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Ipv4PoolCoipId component. */
+	readonly ipv4PoolCoipId: string;
+}
+
+/**
+ * Properties for building a customer-gateway ARN.
+ */
+export interface EC2CustomerGatewayArnProps {
+	/** The CustomerGatewayId component of the ARN. */
+	readonly customerGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customer-gateway ARN.
+ */
+export interface EC2CustomerGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CustomerGatewayId component. */
+	readonly customerGatewayId: string;
+}
+
+/**
+ * Properties for building a declarative-policies-report ARN.
+ */
+export interface EC2DeclarativePoliciesReportArnProps {
+	/** The DeclarativePoliciesReportId component of the ARN. */
+	readonly declarativePoliciesReportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a declarative-policies-report ARN.
+ */
+export interface EC2DeclarativePoliciesReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeclarativePoliciesReportId component. */
+	readonly declarativePoliciesReportId: string;
+}
+
+/**
+ * Properties for building a dedicated-host ARN.
+ */
+export interface EC2DedicatedHostArnProps {
+	/** The DedicatedHostId component of the ARN. */
+	readonly dedicatedHostId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dedicated-host ARN.
+ */
+export interface EC2DedicatedHostArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DedicatedHostId component. */
+	readonly dedicatedHostId: string;
+}
+
+/**
+ * Properties for building a dhcp-options ARN.
+ */
+export interface EC2DhcpOptionsArnProps {
+	/** The DhcpOptionsId component of the ARN. */
+	readonly dhcpOptionsId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dhcp-options ARN.
+ */
+export interface EC2DhcpOptionsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DhcpOptionsId component. */
+	readonly dhcpOptionsId: string;
+}
+
+/**
+ * Properties for building a egress-only-internet-gateway ARN.
+ */
+export interface EC2EgressOnlyInternetGatewayArnProps {
+	/** The EgressOnlyInternetGatewayId component of the ARN. */
+	readonly egressOnlyInternetGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a egress-only-internet-gateway ARN.
+ */
+export interface EC2EgressOnlyInternetGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EgressOnlyInternetGatewayId component. */
+	readonly egressOnlyInternetGatewayId: string;
+}
+
+/**
+ * Properties for building a elastic-gpu ARN.
+ */
+export interface EC2ElasticGpuArnProps {
+	/** The ElasticGpuId component of the ARN. */
+	readonly elasticGpuId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a elastic-gpu ARN.
+ */
+export interface EC2ElasticGpuArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ElasticGpuId component. */
+	readonly elasticGpuId: string;
+}
+
+/**
+ * Properties for building a elastic-inference ARN.
+ */
+export interface EC2ElasticInferenceArnProps {
+	/** The AcceleratorId component of the ARN. */
+	readonly acceleratorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a elastic-inference ARN.
+ */
+export interface EC2ElasticInferenceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AcceleratorId component. */
+	readonly acceleratorId: string;
+}
+
+/**
+ * Properties for building a elastic-ip ARN.
+ */
+export interface EC2ElasticIPArnProps {
+	/** The AllocationId component of the ARN. */
+	readonly allocationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a elastic-ip ARN.
+ */
+export interface EC2ElasticIPArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AllocationId component. */
+	readonly allocationId: string;
+}
+
+/**
+ * Properties for building a export-image-task ARN.
+ */
+export interface EC2ExportImageTaskArnProps {
+	/** The ExportImageTaskId component of the ARN. */
+	readonly exportImageTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export-image-task ARN.
+ */
+export interface EC2ExportImageTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExportImageTaskId component. */
+	readonly exportImageTaskId: string;
+}
+
+/**
+ * Properties for building a export-instance-task ARN.
+ */
+export interface EC2ExportInstanceTaskArnProps {
+	/** The ExportTaskId component of the ARN. */
+	readonly exportTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export-instance-task ARN.
+ */
+export interface EC2ExportInstanceTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExportTaskId component. */
+	readonly exportTaskId: string;
+}
+
+/**
+ * Properties for building a fleet ARN.
+ */
+export interface EC2FleetArnProps {
+	/** The FleetId component of the ARN. */
+	readonly fleetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fleet ARN.
+ */
+export interface EC2FleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FleetId component. */
+	readonly fleetId: string;
+}
+
+/**
+ * Properties for building a fpga-image ARN.
+ */
+export interface EC2FpgaImageArnProps {
+	/** The FpgaImageId component of the ARN. */
+	readonly fpgaImageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a fpga-image ARN.
+ */
+export interface EC2FpgaImageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FpgaImageId component. */
+	readonly fpgaImageId: string;
+}
+
+/**
+ * Properties for building a group ARN.
+ */
+export interface EC2GroupArnProps {
+	/** The GroupName component of the ARN. */
+	readonly groupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a group ARN.
+ */
+export interface EC2GroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GroupName component. */
+	readonly groupName: string;
+}
+
+/**
+ * Properties for building a host-reservation ARN.
+ */
+export interface EC2HostReservationArnProps {
+	/** The HostReservationId component of the ARN. */
+	readonly hostReservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a host-reservation ARN.
+ */
+export interface EC2HostReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The HostReservationId component. */
+	readonly hostReservationId: string;
+}
+
+/**
+ * Properties for building a image ARN.
+ */
+export interface EC2ImageArnProps {
+	/** The ImageId component of the ARN. */
+	readonly imageId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a image ARN.
+ */
+export interface EC2ImageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImageId component. */
+	readonly imageId: string;
+}
+
+/**
+ * Properties for building a image-usage-report ARN.
+ */
+export interface EC2ImageUsageReportArnProps {
+	/** The ImageUsageReportId component of the ARN. */
+	readonly imageUsageReportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a image-usage-report ARN.
+ */
+export interface EC2ImageUsageReportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImageUsageReportId component. */
+	readonly imageUsageReportId: string;
+}
+
+/**
+ * Properties for building a import-image-task ARN.
+ */
+export interface EC2ImportImageTaskArnProps {
+	/** The ImportImageTaskId component of the ARN. */
+	readonly importImageTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a import-image-task ARN.
+ */
+export interface EC2ImportImageTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImportImageTaskId component. */
+	readonly importImageTaskId: string;
+}
+
+/**
+ * Properties for building a import-snapshot-task ARN.
+ */
+export interface EC2ImportSnapshotTaskArnProps {
+	/** The ImportSnapshotTaskId component of the ARN. */
+	readonly importSnapshotTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a import-snapshot-task ARN.
+ */
+export interface EC2ImportSnapshotTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImportSnapshotTaskId component. */
+	readonly importSnapshotTaskId: string;
+}
+
+/**
+ * Properties for building a instance ARN.
+ */
+export interface EC2InstanceArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance ARN.
+ */
+export interface EC2InstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+}
+
+/**
+ * Properties for building a instance-connect-endpoint ARN.
+ */
+export interface EC2InstanceConnectEndpointArnProps {
+	/** The InstanceConnectEndpointId component of the ARN. */
+	readonly instanceConnectEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance-connect-endpoint ARN.
+ */
+export interface EC2InstanceConnectEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceConnectEndpointId component. */
+	readonly instanceConnectEndpointId: string;
+}
+
+/**
+ * Properties for building a instance-event-window ARN.
+ */
+export interface EC2InstanceEventWindowArnProps {
+	/** The InstanceEventWindowId component of the ARN. */
+	readonly instanceEventWindowId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance-event-window ARN.
+ */
+export interface EC2InstanceEventWindowArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceEventWindowId component. */
+	readonly instanceEventWindowId: string;
+}
+
+/**
+ * Properties for building a internet-gateway ARN.
+ */
+export interface EC2InternetGatewayArnProps {
+	/** The InternetGatewayId component of the ARN. */
+	readonly internetGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a internet-gateway ARN.
+ */
+export interface EC2InternetGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InternetGatewayId component. */
+	readonly internetGatewayId: string;
+}
+
+/**
+ * Properties for building a ipam ARN.
+ */
+export interface EC2IpamArnProps {
+	/** The IpamId component of the ARN. */
+	readonly ipamId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam ARN.
+ */
+export interface EC2IpamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamId component. */
+	readonly ipamId: string;
+}
+
+/**
+ * Properties for building a ipam-external-resource-verification-token ARN.
+ */
+export interface EC2IpamExternalResourceVerificationTokenArnProps {
+	/** The IpamExternalResourceVerificationTokenId component of the ARN. */
+	readonly ipamExternalResourceVerificationTokenId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-external-resource-verification-token ARN.
+ */
+export interface EC2IpamExternalResourceVerificationTokenArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamExternalResourceVerificationTokenId component. */
+	readonly ipamExternalResourceVerificationTokenId: string;
+}
+
+/**
+ * Properties for building a ipam-policy ARN.
+ */
+export interface EC2IpamPolicyArnProps {
+	/** The IpamPolicyId component of the ARN. */
+	readonly ipamPolicyId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-policy ARN.
+ */
+export interface EC2IpamPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamPolicyId component. */
+	readonly ipamPolicyId: string;
+}
+
+/**
+ * Properties for building a ipam-pool ARN.
+ */
+export interface EC2IpamPoolArnProps {
+	/** The IpamPoolId component of the ARN. */
+	readonly ipamPoolId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-pool ARN.
+ */
+export interface EC2IpamPoolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamPoolId component. */
+	readonly ipamPoolId: string;
+}
+
+/**
+ * Properties for building a ipam-pool-allocation ARN.
+ */
+export interface EC2IpamPoolAllocationArnProps {
+	/** The IpamPoolAllocationId component of the ARN. */
+	readonly ipamPoolAllocationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-pool-allocation ARN.
+ */
+export interface EC2IpamPoolAllocationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamPoolAllocationId component. */
+	readonly ipamPoolAllocationId: string;
+}
+
+/**
+ * Properties for building a ipam-prefix-list-resolver ARN.
+ */
+export interface EC2IpamPrefixListResolverArnProps {
+	/** The IpamPrefixListResolverId component of the ARN. */
+	readonly ipamPrefixListResolverId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-prefix-list-resolver ARN.
+ */
+export interface EC2IpamPrefixListResolverArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamPrefixListResolverId component. */
+	readonly ipamPrefixListResolverId: string;
+}
+
+/**
+ * Properties for building a ipam-prefix-list-resolver-target ARN.
+ */
+export interface EC2IpamPrefixListResolverTargetArnProps {
+	/** The IpamPrefixListResolverTargetId component of the ARN. */
+	readonly ipamPrefixListResolverTargetId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-prefix-list-resolver-target ARN.
+ */
+export interface EC2IpamPrefixListResolverTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamPrefixListResolverTargetId component. */
+	readonly ipamPrefixListResolverTargetId: string;
+}
+
+/**
+ * Properties for building a ipam-resource-discovery ARN.
+ */
+export interface EC2IpamResourceDiscoveryArnProps {
+	/** The IpamResourceDiscoveryId component of the ARN. */
+	readonly ipamResourceDiscoveryId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-resource-discovery ARN.
+ */
+export interface EC2IpamResourceDiscoveryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamResourceDiscoveryId component. */
+	readonly ipamResourceDiscoveryId: string;
+}
+
+/**
+ * Properties for building a ipam-resource-discovery-association ARN.
+ */
+export interface EC2IpamResourceDiscoveryAssociationArnProps {
+	/** The IpamResourceDiscoveryAssociationId component of the ARN. */
+	readonly ipamResourceDiscoveryAssociationId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-resource-discovery-association ARN.
+ */
+export interface EC2IpamResourceDiscoveryAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamResourceDiscoveryAssociationId component. */
+	readonly ipamResourceDiscoveryAssociationId: string;
+}
+
+/**
+ * Properties for building a ipam-scope ARN.
+ */
+export interface EC2IpamScopeArnProps {
+	/** The IpamScopeId component of the ARN. */
+	readonly ipamScopeId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipam-scope ARN.
+ */
+export interface EC2IpamScopeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IpamScopeId component. */
+	readonly ipamScopeId: string;
+}
+
+/**
+ * Properties for building a ipv4pool-ec2 ARN.
+ */
+export interface EC2Ipv4poolEC2ArnProps {
+	/** The Ipv4PoolEc2Id component of the ARN. */
+	readonly ipv4PoolEC2Id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipv4pool-ec2 ARN.
+ */
+export interface EC2Ipv4poolEC2ArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Ipv4PoolEc2Id component. */
+	readonly ipv4PoolEC2Id: string;
+}
+
+/**
+ * Properties for building a ipv6pool-ec2 ARN.
+ */
+export interface EC2Ipv6poolEC2ArnProps {
+	/** The Ipv6PoolEc2Id component of the ARN. */
+	readonly ipv6PoolEC2Id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipv6pool-ec2 ARN.
+ */
+export interface EC2Ipv6poolEC2ArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Ipv6PoolEc2Id component. */
+	readonly ipv6PoolEC2Id: string;
+}
+
+/**
+ * Properties for building a key-pair ARN.
+ */
+export interface EC2KeyPairArnProps {
+	/** The KeyPairName component of the ARN. */
+	readonly keyPairName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a key-pair ARN.
+ */
+export interface EC2KeyPairArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KeyPairName component. */
+	readonly keyPairName: string;
+}
+
+/**
+ * Properties for building a launch-template ARN.
+ */
+export interface EC2LaunchTemplateArnProps {
+	/** The LaunchTemplateId component of the ARN. */
+	readonly launchTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a launch-template ARN.
+ */
+export interface EC2LaunchTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LaunchTemplateId component. */
+	readonly launchTemplateId: string;
+}
+
+/**
+ * Properties for building a license-configuration ARN.
+ */
+export interface EC2LicenseConfigurationArnProps {
+	/** The LicenseConfigurationId component of the ARN. */
+	readonly licenseConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a license-configuration ARN.
+ */
+export interface EC2LicenseConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LicenseConfigurationId component. */
+	readonly licenseConfigurationId: string;
+}
+
+/**
+ * Properties for building a local-gateway ARN.
+ */
+export interface EC2LocalGatewayArnProps {
+	/** The LocalGatewayId component of the ARN. */
+	readonly localGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway ARN.
+ */
+export interface EC2LocalGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayId component. */
+	readonly localGatewayId: string;
+}
+
+/**
+ * Properties for building a local-gateway-route-table ARN.
+ */
+export interface EC2LocalGatewayRouteTableArnProps {
+	/** The LocalGatewayRoutetableId component of the ARN. */
+	readonly localGatewayRoutetableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway-route-table ARN.
+ */
+export interface EC2LocalGatewayRouteTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayRoutetableId component. */
+	readonly localGatewayRoutetableId: string;
+}
+
+/**
+ * Properties for building a local-gateway-route-table-virtual-interface-group-association ARN.
+ */
+export interface EC2LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnProps {
+	/** The LocalGatewayRouteTableVirtualInterfaceGroupAssociationId component of the ARN. */
+	readonly localGatewayRouteTableVirtualInterfaceGroupAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway-route-table-virtual-interface-group-association ARN.
+ */
+export interface EC2LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayRouteTableVirtualInterfaceGroupAssociationId component. */
+	readonly localGatewayRouteTableVirtualInterfaceGroupAssociationId: string;
+}
+
+/**
+ * Properties for building a local-gateway-route-table-vpc-association ARN.
+ */
+export interface EC2LocalGatewayRouteTableVPCAssociationArnProps {
+	/** The LocalGatewayRouteTableVpcAssociationId component of the ARN. */
+	readonly localGatewayRouteTableVPCAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway-route-table-vpc-association ARN.
+ */
+export interface EC2LocalGatewayRouteTableVPCAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayRouteTableVpcAssociationId component. */
+	readonly localGatewayRouteTableVPCAssociationId: string;
+}
+
+/**
+ * Properties for building a local-gateway-virtual-interface ARN.
+ */
+export interface EC2LocalGatewayVirtualInterfaceArnProps {
+	/** The LocalGatewayVirtualInterfaceId component of the ARN. */
+	readonly localGatewayVirtualInterfaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway-virtual-interface ARN.
+ */
+export interface EC2LocalGatewayVirtualInterfaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayVirtualInterfaceId component. */
+	readonly localGatewayVirtualInterfaceId: string;
+}
+
+/**
+ * Properties for building a local-gateway-virtual-interface-group ARN.
+ */
+export interface EC2LocalGatewayVirtualInterfaceGroupArnProps {
+	/** The LocalGatewayVirtualInterfaceGroupId component of the ARN. */
+	readonly localGatewayVirtualInterfaceGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a local-gateway-virtual-interface-group ARN.
+ */
+export interface EC2LocalGatewayVirtualInterfaceGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LocalGatewayVirtualInterfaceGroupId component. */
+	readonly localGatewayVirtualInterfaceGroupId: string;
+}
+
+/**
+ * Properties for building a mac-modification-task ARN.
+ */
+export interface EC2MacModificationTaskArnProps {
+	/** The MacModificationTaskId component of the ARN. */
+	readonly macModificationTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mac-modification-task ARN.
+ */
+export interface EC2MacModificationTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MacModificationTaskId component. */
+	readonly macModificationTaskId: string;
+}
+
+/**
+ * Properties for building a natgateway ARN.
+ */
+export interface EC2NatgatewayArnProps {
+	/** The NatGatewayId component of the ARN. */
+	readonly natGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a natgateway ARN.
+ */
+export interface EC2NatgatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NatGatewayId component. */
+	readonly natGatewayId: string;
+}
+
+/**
+ * Properties for building a network-acl ARN.
+ */
+export interface EC2NetworkAclArnProps {
+	/** The NaclId component of the ARN. */
+	readonly naclId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-acl ARN.
+ */
+export interface EC2NetworkAclArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NaclId component. */
+	readonly naclId: string;
+}
+
+/**
+ * Properties for building a network-insights-access-scope ARN.
+ */
+export interface EC2NetworkInsightsAccessScopeArnProps {
+	/** The NetworkInsightsAccessScopeId component of the ARN. */
+	readonly networkInsightsAccessScopeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-insights-access-scope ARN.
+ */
+export interface EC2NetworkInsightsAccessScopeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInsightsAccessScopeId component. */
+	readonly networkInsightsAccessScopeId: string;
+}
+
+/**
+ * Properties for building a network-insights-access-scope-analysis ARN.
+ */
+export interface EC2NetworkInsightsAccessScopeAnalysisArnProps {
+	/** The NetworkInsightsAccessScopeAnalysisId component of the ARN. */
+	readonly networkInsightsAccessScopeAnalysisId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-insights-access-scope-analysis ARN.
+ */
+export interface EC2NetworkInsightsAccessScopeAnalysisArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInsightsAccessScopeAnalysisId component. */
+	readonly networkInsightsAccessScopeAnalysisId: string;
+}
+
+/**
+ * Properties for building a network-insights-analysis ARN.
+ */
+export interface EC2NetworkInsightsAnalysisArnProps {
+	/** The NetworkInsightsAnalysisId component of the ARN. */
+	readonly networkInsightsAnalysisId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-insights-analysis ARN.
+ */
+export interface EC2NetworkInsightsAnalysisArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInsightsAnalysisId component. */
+	readonly networkInsightsAnalysisId: string;
+}
+
+/**
+ * Properties for building a network-insights-path ARN.
+ */
+export interface EC2NetworkInsightsPathArnProps {
+	/** The NetworkInsightsPathId component of the ARN. */
+	readonly networkInsightsPathId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-insights-path ARN.
+ */
+export interface EC2NetworkInsightsPathArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInsightsPathId component. */
+	readonly networkInsightsPathId: string;
+}
+
+/**
+ * Properties for building a network-interface ARN.
+ */
+export interface EC2NetworkInterfaceArnProps {
+	/** The NetworkInterfaceId component of the ARN. */
+	readonly networkInterfaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-interface ARN.
+ */
+export interface EC2NetworkInterfaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkInterfaceId component. */
+	readonly networkInterfaceId: string;
+}
+
+/**
+ * Properties for building a outpost-lag ARN.
+ */
+export interface EC2OutpostLagArnProps {
+	/** The OutpostLagId component of the ARN. */
+	readonly outpostLagId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a outpost-lag ARN.
+ */
+export interface EC2OutpostLagArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The OutpostLagId component. */
+	readonly outpostLagId: string;
+}
+
+/**
+ * Properties for building a placement-group ARN.
+ */
+export interface EC2PlacementGroupArnProps {
+	/** The PlacementGroupName component of the ARN. */
+	readonly placementGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a placement-group ARN.
+ */
+export interface EC2PlacementGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PlacementGroupName component. */
+	readonly placementGroupName: string;
+}
+
+/**
+ * Properties for building a prefix-list ARN.
+ */
+export interface EC2PrefixListArnProps {
+	/** The PrefixListId component of the ARN. */
+	readonly prefixListId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a prefix-list ARN.
+ */
+export interface EC2PrefixListArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PrefixListId component. */
+	readonly prefixListId: string;
+}
+
+/**
+ * Properties for building a replace-root-volume-task ARN.
+ */
+export interface EC2ReplaceRootVolumeTaskArnProps {
+	/** The ReplaceRootVolumeTaskId component of the ARN. */
+	readonly replaceRootVolumeTaskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a replace-root-volume-task ARN.
+ */
+export interface EC2ReplaceRootVolumeTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReplaceRootVolumeTaskId component. */
+	readonly replaceRootVolumeTaskId: string;
+}
+
+/**
+ * Properties for building a reserved-instances ARN.
+ */
+export interface EC2ReservedInstancesArnProps {
+	/** The ReservationId component of the ARN. */
+	readonly reservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reserved-instances ARN.
+ */
+export interface EC2ReservedInstancesArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReservationId component. */
+	readonly reservationId: string;
+}
+
+/**
+ * Properties for building a role ARN.
+ */
+export interface EC2RoleArnProps {
+	/** The RoleNameWithPath component of the ARN. */
+	readonly roleNameWithPath: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a role ARN.
+ */
+export interface EC2RoleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RoleNameWithPath component. */
+	readonly roleNameWithPath: string;
+}
+
+/**
+ * Properties for building a route-server ARN.
+ */
+export interface EC2RouteServerArnProps {
+	/** The RouteServerId component of the ARN. */
+	readonly routeServerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a route-server ARN.
+ */
+export interface EC2RouteServerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RouteServerId component. */
+	readonly routeServerId: string;
+}
+
+/**
+ * Properties for building a route-server-endpoint ARN.
+ */
+export interface EC2RouteServerEndpointArnProps {
+	/** The RouteServerEndpointId component of the ARN. */
+	readonly routeServerEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a route-server-endpoint ARN.
+ */
+export interface EC2RouteServerEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RouteServerEndpointId component. */
+	readonly routeServerEndpointId: string;
+}
+
+/**
+ * Properties for building a route-server-peer ARN.
+ */
+export interface EC2RouteServerPeerArnProps {
+	/** The RouteServerPeerId component of the ARN. */
+	readonly routeServerPeerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a route-server-peer ARN.
+ */
+export interface EC2RouteServerPeerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RouteServerPeerId component. */
+	readonly routeServerPeerId: string;
+}
+
+/**
+ * Properties for building a route-table ARN.
+ */
+export interface EC2RouteTableArnProps {
+	/** The RouteTableId component of the ARN. */
+	readonly routeTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a route-table ARN.
+ */
+export interface EC2RouteTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RouteTableId component. */
+	readonly routeTableId: string;
+}
+
+/**
+ * Properties for building a secondary-interface ARN.
+ */
+export interface EC2SecondaryInterfaceArnProps {
+	/** The SecondaryInterfaceId component of the ARN. */
+	readonly secondaryInterfaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a secondary-interface ARN.
+ */
+export interface EC2SecondaryInterfaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecondaryInterfaceId component. */
+	readonly secondaryInterfaceId: string;
+}
+
+/**
+ * Properties for building a secondary-network ARN.
+ */
+export interface EC2SecondaryNetworkArnProps {
+	/** The SecondaryNetworkId component of the ARN. */
+	readonly secondaryNetworkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a secondary-network ARN.
+ */
+export interface EC2SecondaryNetworkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecondaryNetworkId component. */
+	readonly secondaryNetworkId: string;
+}
+
+/**
+ * Properties for building a secondary-subnet ARN.
+ */
+export interface EC2SecondarySubnetArnProps {
+	/** The SecondarySubnetId component of the ARN. */
+	readonly secondarySubnetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a secondary-subnet ARN.
+ */
+export interface EC2SecondarySubnetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecondarySubnetId component. */
+	readonly secondarySubnetId: string;
+}
+
+/**
+ * Properties for building a security-group ARN.
+ */
+export interface EC2SecurityGroupArnProps {
+	/** The SecurityGroupId component of the ARN. */
+	readonly securityGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a security-group ARN.
+ */
+export interface EC2SecurityGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityGroupId component. */
+	readonly securityGroupId: string;
+}
+
+/**
+ * Properties for building a security-group-rule ARN.
+ */
+export interface EC2SecurityGroupRuleArnProps {
+	/** The SecurityGroupRuleId component of the ARN. */
+	readonly securityGroupRuleId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a security-group-rule ARN.
+ */
+export interface EC2SecurityGroupRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityGroupRuleId component. */
+	readonly securityGroupRuleId: string;
+}
+
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface EC2SnapshotArnProps {
+	/** The SnapshotId component of the ARN. */
+	readonly snapshotId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface EC2SnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotId component. */
+	readonly snapshotId: string;
+}
+
+/**
+ * Properties for building a spot-fleet-request ARN.
+ */
+export interface EC2SpotFleetRequestArnProps {
+	/** The SpotFleetRequestId component of the ARN. */
+	readonly spotFleetRequestId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a spot-fleet-request ARN.
+ */
+export interface EC2SpotFleetRequestArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SpotFleetRequestId component. */
+	readonly spotFleetRequestId: string;
+}
+
+/**
+ * Properties for building a spot-instances-request ARN.
+ */
+export interface EC2SpotInstancesRequestArnProps {
+	/** The SpotInstanceRequestId component of the ARN. */
+	readonly spotInstanceRequestId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a spot-instances-request ARN.
+ */
+export interface EC2SpotInstancesRequestArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SpotInstanceRequestId component. */
+	readonly spotInstanceRequestId: string;
+}
+
+/**
+ * Properties for building a subnet ARN.
+ */
+export interface EC2SubnetArnProps {
+	/** The SubnetId component of the ARN. */
+	readonly subnetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subnet ARN.
+ */
+export interface EC2SubnetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubnetId component. */
+	readonly subnetId: string;
+}
+
+/**
+ * Properties for building a subnet-cidr-reservation ARN.
+ */
+export interface EC2SubnetCidrReservationArnProps {
+	/** The SubnetCidrReservationId component of the ARN. */
+	readonly subnetCidrReservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subnet-cidr-reservation ARN.
+ */
+export interface EC2SubnetCidrReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubnetCidrReservationId component. */
+	readonly subnetCidrReservationId: string;
+}
+
+/**
+ * Properties for building a traffic-mirror-filter ARN.
+ */
+export interface EC2TrafficMirrorFilterArnProps {
+	/** The TrafficMirrorFilterId component of the ARN. */
+	readonly trafficMirrorFilterId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a traffic-mirror-filter ARN.
+ */
+export interface EC2TrafficMirrorFilterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrafficMirrorFilterId component. */
+	readonly trafficMirrorFilterId: string;
+}
+
+/**
+ * Properties for building a traffic-mirror-filter-rule ARN.
+ */
+export interface EC2TrafficMirrorFilterRuleArnProps {
+	/** The TrafficMirrorFilterRuleId component of the ARN. */
+	readonly trafficMirrorFilterRuleId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a traffic-mirror-filter-rule ARN.
+ */
+export interface EC2TrafficMirrorFilterRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrafficMirrorFilterRuleId component. */
+	readonly trafficMirrorFilterRuleId: string;
+}
+
+/**
+ * Properties for building a traffic-mirror-session ARN.
+ */
+export interface EC2TrafficMirrorSessionArnProps {
+	/** The TrafficMirrorSessionId component of the ARN. */
+	readonly trafficMirrorSessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a traffic-mirror-session ARN.
+ */
+export interface EC2TrafficMirrorSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrafficMirrorSessionId component. */
+	readonly trafficMirrorSessionId: string;
+}
+
+/**
+ * Properties for building a traffic-mirror-target ARN.
+ */
+export interface EC2TrafficMirrorTargetArnProps {
+	/** The TrafficMirrorTargetId component of the ARN. */
+	readonly trafficMirrorTargetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a traffic-mirror-target ARN.
+ */
+export interface EC2TrafficMirrorTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TrafficMirrorTargetId component. */
+	readonly trafficMirrorTargetId: string;
+}
+
+/**
+ * Properties for building a transit-gateway ARN.
+ */
+export interface EC2TransitGatewayArnProps {
+	/** The TransitGatewayId component of the ARN. */
+	readonly transitGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway ARN.
+ */
+export interface EC2TransitGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayId component. */
+	readonly transitGatewayId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-attachment ARN.
+ */
+export interface EC2TransitGatewayAttachmentArnProps {
+	/** The TransitGatewayAttachmentId component of the ARN. */
+	readonly transitGatewayAttachmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-attachment ARN.
+ */
+export interface EC2TransitGatewayAttachmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayAttachmentId component. */
+	readonly transitGatewayAttachmentId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-connect-peer ARN.
+ */
+export interface EC2TransitGatewayConnectPeerArnProps {
+	/** The TransitGatewayConnectPeerId component of the ARN. */
+	readonly transitGatewayConnectPeerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-connect-peer ARN.
+ */
+export interface EC2TransitGatewayConnectPeerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayConnectPeerId component. */
+	readonly transitGatewayConnectPeerId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-metering-policy ARN.
+ */
+export interface EC2TransitGatewayMeteringPolicyArnProps {
+	/** The TransitGatewayMeteringPolicyId component of the ARN. */
+	readonly transitGatewayMeteringPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-metering-policy ARN.
+ */
+export interface EC2TransitGatewayMeteringPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayMeteringPolicyId component. */
+	readonly transitGatewayMeteringPolicyId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-multicast-domain ARN.
+ */
+export interface EC2TransitGatewayMulticastDomainArnProps {
+	/** The TransitGatewayMulticastDomainId component of the ARN. */
+	readonly transitGatewayMulticastDomainId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-multicast-domain ARN.
+ */
+export interface EC2TransitGatewayMulticastDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayMulticastDomainId component. */
+	readonly transitGatewayMulticastDomainId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-policy-table ARN.
+ */
+export interface EC2TransitGatewayPolicyTableArnProps {
+	/** The TransitGatewayPolicyTableId component of the ARN. */
+	readonly transitGatewayPolicyTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-policy-table ARN.
+ */
+export interface EC2TransitGatewayPolicyTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayPolicyTableId component. */
+	readonly transitGatewayPolicyTableId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-route-table ARN.
+ */
+export interface EC2TransitGatewayRouteTableArnProps {
+	/** The TransitGatewayRouteTableId component of the ARN. */
+	readonly transitGatewayRouteTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-route-table ARN.
+ */
+export interface EC2TransitGatewayRouteTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayRouteTableId component. */
+	readonly transitGatewayRouteTableId: string;
+}
+
+/**
+ * Properties for building a transit-gateway-route-table-announcement ARN.
+ */
+export interface EC2TransitGatewayRouteTableAnnouncementArnProps {
+	/** The TransitGatewayRouteTableAnnouncementId component of the ARN. */
+	readonly transitGatewayRouteTableAnnouncementId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a transit-gateway-route-table-announcement ARN.
+ */
+export interface EC2TransitGatewayRouteTableAnnouncementArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TransitGatewayRouteTableAnnouncementId component. */
+	readonly transitGatewayRouteTableAnnouncementId: string;
+}
+
+/**
+ * Properties for building a verified-access-endpoint ARN.
+ */
+export interface EC2VerifiedAccessEndpointArnProps {
+	/** The VerifiedAccessEndpointId component of the ARN. */
+	readonly verifiedAccessEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-endpoint ARN.
+ */
+export interface EC2VerifiedAccessEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessEndpointId component. */
+	readonly verifiedAccessEndpointId: string;
+}
+
+/**
+ * Properties for building a verified-access-endpoint-target ARN.
+ */
+export interface EC2VerifiedAccessEndpointTargetArnProps {
+	/** The VerifiedAccessEndpointTargetId component of the ARN. */
+	readonly verifiedAccessEndpointTargetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-endpoint-target ARN.
+ */
+export interface EC2VerifiedAccessEndpointTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessEndpointTargetId component. */
+	readonly verifiedAccessEndpointTargetId: string;
+}
+
+/**
+ * Properties for building a verified-access-group ARN.
+ */
+export interface EC2VerifiedAccessGroupArnProps {
+	/** The VerifiedAccessGroupId component of the ARN. */
+	readonly verifiedAccessGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-group ARN.
+ */
+export interface EC2VerifiedAccessGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessGroupId component. */
+	readonly verifiedAccessGroupId: string;
+}
+
+/**
+ * Properties for building a verified-access-instance ARN.
+ */
+export interface EC2VerifiedAccessInstanceArnProps {
+	/** The VerifiedAccessInstanceId component of the ARN. */
+	readonly verifiedAccessInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-instance ARN.
+ */
+export interface EC2VerifiedAccessInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessInstanceId component. */
+	readonly verifiedAccessInstanceId: string;
+}
+
+/**
+ * Properties for building a verified-access-policy ARN.
+ */
+export interface EC2VerifiedAccessPolicyArnProps {
+	/** The VerifiedAccessPolicyId component of the ARN. */
+	readonly verifiedAccessPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-policy ARN.
+ */
+export interface EC2VerifiedAccessPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessPolicyId component. */
+	readonly verifiedAccessPolicyId: string;
+}
+
+/**
+ * Properties for building a verified-access-trust-provider ARN.
+ */
+export interface EC2VerifiedAccessTrustProviderArnProps {
+	/** The VerifiedAccessTrustProviderId component of the ARN. */
+	readonly verifiedAccessTrustProviderId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a verified-access-trust-provider ARN.
+ */
+export interface EC2VerifiedAccessTrustProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VerifiedAccessTrustProviderId component. */
+	readonly verifiedAccessTrustProviderId: string;
+}
+
+/**
+ * Properties for building a volume ARN.
+ */
+export interface EC2VolumeArnProps {
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a volume ARN.
+ */
+export interface EC2VolumeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+}
+
+/**
+ * Properties for building a vpc ARN.
+ */
+export interface EC2VPCArnProps {
+	/** The VpcId component of the ARN. */
+	readonly vpcId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc ARN.
+ */
+export interface EC2VPCArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcId component. */
+	readonly vpcId: string;
+}
+
+/**
+ * Properties for building a vpc-block-public-access-exclusion ARN.
+ */
+export interface EC2VPCBlockPublicAccessExclusionArnProps {
+	/** The VpcBlockPublicAccessExclusionId component of the ARN. */
+	readonly vpcBlockPublicAccessExclusionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-block-public-access-exclusion ARN.
+ */
+export interface EC2VPCBlockPublicAccessExclusionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcBlockPublicAccessExclusionId component. */
+	readonly vpcBlockPublicAccessExclusionId: string;
+}
+
+/**
+ * Properties for building a vpc-encryption-control ARN.
+ */
+export interface EC2VPCEncryptionControlArnProps {
+	/** The VpcEncryptionControlId component of the ARN. */
+	readonly vpcEncryptionControlId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-encryption-control ARN.
+ */
+export interface EC2VPCEncryptionControlArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcEncryptionControlId component. */
+	readonly vpcEncryptionControlId: string;
+}
+
+/**
+ * Properties for building a vpc-endpoint ARN.
+ */
+export interface EC2VPCEndpointArnProps {
+	/** The VpcEndpointId component of the ARN. */
+	readonly vpcEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-endpoint ARN.
+ */
+export interface EC2VPCEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcEndpointId component. */
+	readonly vpcEndpointId: string;
+}
+
+/**
+ * Properties for building a vpc-endpoint-connection ARN.
+ */
+export interface EC2VPCEndpointConnectionArnProps {
+	/** The VpcEndpointConnectionId component of the ARN. */
+	readonly vpcEndpointConnectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-endpoint-connection ARN.
+ */
+export interface EC2VPCEndpointConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcEndpointConnectionId component. */
+	readonly vpcEndpointConnectionId: string;
+}
+
+/**
+ * Properties for building a vpc-endpoint-service ARN.
+ */
+export interface EC2VPCEndpointServiceArnProps {
+	/** The VpcEndpointServiceId component of the ARN. */
+	readonly vpcEndpointServiceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-endpoint-service ARN.
+ */
+export interface EC2VPCEndpointServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcEndpointServiceId component. */
+	readonly vpcEndpointServiceId: string;
+}
+
+/**
+ * Properties for building a vpc-endpoint-service-permission ARN.
+ */
+export interface EC2VPCEndpointServicePermissionArnProps {
+	/** The VpcEndpointServicePermissionId component of the ARN. */
+	readonly vpcEndpointServicePermissionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-endpoint-service-permission ARN.
+ */
+export interface EC2VPCEndpointServicePermissionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcEndpointServicePermissionId component. */
+	readonly vpcEndpointServicePermissionId: string;
+}
+
+/**
+ * Properties for building a vpc-flow-log ARN.
+ */
+export interface EC2VPCFlowLogArnProps {
+	/** The VpcFlowLogId component of the ARN. */
+	readonly vpcFlowLogId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-flow-log ARN.
+ */
+export interface EC2VPCFlowLogArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcFlowLogId component. */
+	readonly vpcFlowLogId: string;
+}
+
+/**
+ * Properties for building a vpc-peering-connection ARN.
+ */
+export interface EC2VPCPeeringConnectionArnProps {
+	/** The VpcPeeringConnectionId component of the ARN. */
+	readonly vpcPeeringConnectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpc-peering-connection ARN.
+ */
+export interface EC2VPCPeeringConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcPeeringConnectionId component. */
+	readonly vpcPeeringConnectionId: string;
+}
+
+/**
+ * Properties for building a vpn-concentrator ARN.
+ */
+export interface EC2VPNConcentratorArnProps {
+	/** The VpnConcentratorId component of the ARN. */
+	readonly vpnConcentratorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpn-concentrator ARN.
+ */
+export interface EC2VPNConcentratorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpnConcentratorId component. */
+	readonly vpnConcentratorId: string;
+}
+
+/**
+ * Properties for building a vpn-connection ARN.
+ */
+export interface EC2VPNConnectionArnProps {
+	/** The VpnConnectionId component of the ARN. */
+	readonly vpnConnectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpn-connection ARN.
+ */
+export interface EC2VPNConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpnConnectionId component. */
+	readonly vpnConnectionId: string;
+}
+
+/**
+ * Properties for building a vpn-connection-device-type ARN.
+ */
+export interface EC2VPNConnectionDeviceTypeArnProps {
+	/** The VpnConnectionDeviceTypeId component of the ARN. */
+	readonly vpnConnectionDeviceTypeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpn-connection-device-type ARN.
+ */
+export interface EC2VPNConnectionDeviceTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpnConnectionDeviceTypeId component. */
+	readonly vpnConnectionDeviceTypeId: string;
+}
+
+/**
+ * Properties for building a vpn-gateway ARN.
+ */
+export interface EC2VPNGatewayArnProps {
+	/** The VpnGatewayId component of the ARN. */
+	readonly vpnGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpn-gateway ARN.
+ */
+export interface EC2VPNGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpnGatewayId component. */
+	readonly vpnGatewayId: string;
+}
+
+const CapacityBlockArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-block\/(?<capacityBlockId>[^:/?]+)$/;
+const CapacityManagerDataExportArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-manager-data-export\/(?<capacityManagerDataExportId>[^:/?]+)$/;
+const CapacityReservationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation\/(?<capacityReservationId>[^:/?]+)$/;
+const CapacityReservationCancellationQuoteArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-cancellation-quote\/(?<capacityReservationCancellationQuoteId>[^:/?]+)$/;
+const CapacityReservationFleetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):capacity-reservation-fleet\/(?<capacityReservationFleetId>[^:/?]+)$/;
+const CarrierGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):carrier-gateway\/(?<carrierGatewayId>[^:/?]+)$/;
+const CertificateArnRegex =
+	/^arn:(?<partition>[^:]+):acm:(?<region>[^:]*):(?<account>[^:]*):certificate\/(?<certificateId>[^:/?]+)$/;
+const ClientVPNEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):client-vpn-endpoint\/(?<clientVPNEndpointId>[^:/?]+)$/;
+const CoipPoolArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):coip-pool\/(?<ipv4PoolCoipId>[^:/?]+)$/;
+const CustomerGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):customer-gateway\/(?<customerGatewayId>[^:/?]+)$/;
+const DeclarativePoliciesReportArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):declarative-policies-report\/(?<declarativePoliciesReportId>[^:/?]+)$/;
+const DedicatedHostArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):dedicated-host\/(?<dedicatedHostId>[^:/?]+)$/;
+const DhcpOptionsArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):dhcp-options\/(?<dhcpOptionsId>[^:/?]+)$/;
+const EgressOnlyInternetGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):egress-only-internet-gateway\/(?<egressOnlyInternetGatewayId>[^:/?]+)$/;
+const ElasticGpuArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):elastic-gpu\/(?<elasticGpuId>[^:/?]+)$/;
+const ElasticInferenceArnRegex =
+	/^arn:(?<partition>[^:]+):elastic-inference:(?<region>[^:]*):(?<account>[^:]*):elastic-inference-accelerator\/(?<acceleratorId>[^:/?]+)$/;
+const ElasticIPArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):elastic-ip\/(?<allocationId>[^:/?]+)$/;
+const ExportImageTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):export-image-task\/(?<exportImageTaskId>[^:/?]+)$/;
+const ExportInstanceTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):export-instance-task\/(?<exportTaskId>[^:/?]+)$/;
+const FleetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):fleet\/(?<fleetId>[^:/?]+)$/;
+const FpgaImageArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):fpga-image\/(?<fpgaImageId>[^:/?]+)$/;
+const GroupArnRegex =
+	/^arn:(?<partition>[^:]+):resource-groups:(?<region>[^:]*):(?<account>[^:]*):group\/(?<groupName>[^:/?]+)$/;
+const HostReservationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):host-reservation\/(?<hostReservationId>[^:/?]+)$/;
+const ImageArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*)::image\/(?<imageId>[^:/?]+)$/;
+const ImageUsageReportArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):image-usage-report\/(?<imageUsageReportId>[^:/?]+)$/;
+const ImportImageTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):import-image-task\/(?<importImageTaskId>[^:/?]+)$/;
+const ImportSnapshotTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):import-snapshot-task\/(?<importSnapshotTaskId>[^:/?]+)$/;
+const InstanceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)$/;
+const InstanceConnectEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-connect-endpoint\/(?<instanceConnectEndpointId>[^:/?]+)$/;
+const InstanceEventWindowArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-event-window\/(?<instanceEventWindowId>[^:/?]+)$/;
+const InternetGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):internet-gateway\/(?<internetGatewayId>[^:/?]+)$/;
+const IpamArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam\/(?<ipamId>[^:/?]+)$/;
+const IpamExternalResourceVerificationTokenArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-external-resource-verification-token\/(?<ipamExternalResourceVerificationTokenId>[^:/?]+)$/;
+const IpamPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-policy\/(?<ipamPolicyId>[^:/?]+)$/;
+const IpamPoolArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-pool\/(?<ipamPoolId>[^:/?]+)$/;
+const IpamPoolAllocationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipam-pool-allocation\/(?<ipamPoolAllocationId>[^:/?]+)$/;
+const IpamPrefixListResolverArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-prefix-list-resolver\/(?<ipamPrefixListResolverId>[^:/?]+)$/;
+const IpamPrefixListResolverTargetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-prefix-list-resolver-target\/(?<ipamPrefixListResolverTargetId>[^:/?]+)$/;
+const IpamResourceDiscoveryArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-resource-discovery\/(?<ipamResourceDiscoveryId>[^:/?]+)$/;
+const IpamResourceDiscoveryAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-resource-discovery-association\/(?<ipamResourceDiscoveryAssociationId>[^:/?]+)$/;
+const IpamScopeArnRegex =
+	/^arn:(?<partition>[^:]+):ec2::(?<account>[^:]*):ipam-scope\/(?<ipamScopeId>[^:/?]+)$/;
+const Ipv4poolEC2ArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipv4pool-ec2\/(?<ipv4PoolEC2Id>[^:/?]+)$/;
+const Ipv6poolEC2ArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):ipv6pool-ec2\/(?<ipv6PoolEC2Id>[^:/?]+)$/;
+const KeyPairArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):key-pair\/(?<keyPairName>[^:/?]+)$/;
+const LaunchTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):launch-template\/(?<launchTemplateId>[^:/?]+)$/;
+const LicenseConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):license-manager:(?<region>[^:]*):(?<account>[^:]*):license-configuration:(?<licenseConfigurationId>[^:/?]+)$/;
+const LocalGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway\/(?<localGatewayId>[^:/?]+)$/;
+const LocalGatewayRouteTableArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table\/(?<localGatewayRoutetableId>[^:/?]+)$/;
 const LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnRegex =
-	new RegExp(
-		"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table-virtual-interface-group-association/(?<localGatewayRouteTableVirtualInterfaceGroupAssociationId>[^:/?]+)$",
-	);
-const LocalGatewayRouteTableVPCAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table-vpc-association/(?<localGatewayRouteTableVPCAssociationId>[^:/?]+)$",
-);
-const LocalGatewayVirtualInterfaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-virtual-interface/(?<localGatewayVirtualInterfaceId>[^:/?]+)$",
-);
-const LocalGatewayVirtualInterfaceGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-virtual-interface-group/(?<localGatewayVirtualInterfaceGroupId>[^:/?]+)$",
-);
-const MacModificationTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):mac-modification-task/(?<macModificationTaskId>[^:/?]+)$",
-);
-const NatgatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):natgateway/(?<natGatewayId>[^:/?]+)$",
-);
-const NetworkAclArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-acl/(?<naclId>[^:/?]+)$",
-);
-const NetworkInsightsAccessScopeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-access-scope/(?<networkInsightsAccessScopeId>[^:/?]+)$",
-);
-const NetworkInsightsAccessScopeAnalysisArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-access-scope-analysis/(?<networkInsightsAccessScopeAnalysisId>[^:/?]+)$",
-);
-const NetworkInsightsAnalysisArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-analysis/(?<networkInsightsAnalysisId>[^:/?]+)$",
-);
-const NetworkInsightsPathArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-path/(?<networkInsightsPathId>[^:/?]+)$",
-);
-const NetworkInterfaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-interface/(?<networkInterfaceId>[^:/?]+)$",
-);
-const OutpostLagArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):outpost-lag/(?<outpostLagId>[^:/?]+)$",
-);
-const PlacementGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):placement-group/(?<placementGroupName>[^:/?]+)$",
-);
-const PrefixListArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):prefix-list/(?<prefixListId>[^:/?]+)$",
-);
-const ReplaceRootVolumeTaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):replace-root-volume-task/(?<replaceRootVolumeTaskId>[^:/?]+)$",
-);
-const ReservedInstancesArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):reserved-instances/(?<reservationId>[^:/?]+)$",
-);
-const RoleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role/(?<roleNameWithPath>[^:/?]+)$",
-);
-const RouteServerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server/(?<routeServerId>[^:/?]+)$",
-);
-const RouteServerEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server-endpoint/(?<routeServerEndpointId>[^:/?]+)$",
-);
-const RouteServerPeerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server-peer/(?<routeServerPeerId>[^:/?]+)$",
-);
-const RouteTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-table/(?<routeTableId>[^:/?]+)$",
-);
-const SecondaryInterfaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-interface/(?<secondaryInterfaceId>[^:/?]+)$",
-);
-const SecondaryNetworkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-network/(?<secondaryNetworkId>[^:/?]+)$",
-);
-const SecondarySubnetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-subnet/(?<secondarySubnetId>[^:/?]+)$",
-);
-const SecurityGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):security-group/(?<securityGroupId>[^:/?]+)$",
-);
-const SecurityGroupRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):security-group-rule/(?<securityGroupRuleId>[^:/?]+)$",
-);
-const SnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*)::snapshot/(?<snapshotId>[^:/?]+)$",
-);
-const SpotFleetRequestArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):spot-fleet-request/(?<spotFleetRequestId>[^:/?]+)$",
-);
-const SpotInstancesRequestArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):spot-instances-request/(?<spotInstanceRequestId>[^:/?]+)$",
-);
-const SubnetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):subnet/(?<subnetId>[^:/?]+)$",
-);
-const SubnetCidrReservationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):subnet-cidr-reservation/(?<subnetCidrReservationId>[^:/?]+)$",
-);
-const TrafficMirrorFilterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-filter/(?<trafficMirrorFilterId>[^:/?]+)$",
-);
-const TrafficMirrorFilterRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-filter-rule/(?<trafficMirrorFilterRuleId>[^:/?]+)$",
-);
-const TrafficMirrorSessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-session/(?<trafficMirrorSessionId>[^:/?]+)$",
-);
-const TrafficMirrorTargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-target/(?<trafficMirrorTargetId>[^:/?]+)$",
-);
-const TransitGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway/(?<transitGatewayId>[^:/?]+)$",
-);
-const TransitGatewayAttachmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-attachment/(?<transitGatewayAttachmentId>[^:/?]+)$",
-);
-const TransitGatewayConnectPeerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-connect-peer/(?<transitGatewayConnectPeerId>[^:/?]+)$",
-);
-const TransitGatewayMeteringPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-metering-policy/(?<transitGatewayMeteringPolicyId>[^:/?]+)$",
-);
-const TransitGatewayMulticastDomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-multicast-domain/(?<transitGatewayMulticastDomainId>[^:/?]+)$",
-);
-const TransitGatewayPolicyTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-policy-table/(?<transitGatewayPolicyTableId>[^:/?]+)$",
-);
-const TransitGatewayRouteTableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-route-table/(?<transitGatewayRouteTableId>[^:/?]+)$",
-);
-const TransitGatewayRouteTableAnnouncementArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-route-table-announcement/(?<transitGatewayRouteTableAnnouncementId>[^:/?]+)$",
-);
-const VerifiedAccessEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-endpoint/(?<verifiedAccessEndpointId>[^:/?]+)$",
-);
-const VerifiedAccessEndpointTargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-endpoint-target/(?<verifiedAccessEndpointTargetId>[^:/?]+)$",
-);
-const VerifiedAccessGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-group/(?<verifiedAccessGroupId>[^:/?]+)$",
-);
-const VerifiedAccessInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-instance/(?<verifiedAccessInstanceId>[^:/?]+)$",
-);
-const VerifiedAccessPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-policy/(?<verifiedAccessPolicyId>[^:/?]+)$",
-);
-const VerifiedAccessTrustProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-trust-provider/(?<verifiedAccessTrustProviderId>[^:/?]+)$",
-);
-const VolumeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):volume/(?<volumeId>[^:/?]+)$",
-);
-const VPCArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc/(?<vpcId>[^:/?]+)$",
-);
-const VPCBlockPublicAccessExclusionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-block-public-access-exclusion/(?<vpcBlockPublicAccessExclusionId>[^:/?]+)$",
-);
-const VPCEncryptionControlArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-encryption-control/(?<vpcEncryptionControlId>[^:/?]+)$",
-);
-const VPCEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint/(?<vpcEndpointId>[^:/?]+)$",
-);
-const VPCEndpointConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-connection/(?<vpcEndpointConnectionId>[^:/?]+)$",
-);
-const VPCEndpointServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-service/(?<vpcEndpointServiceId>[^:/?]+)$",
-);
-const VPCEndpointServicePermissionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-service-permission/(?<vpcEndpointServicePermissionId>[^:/?]+)$",
-);
-const VPCFlowLogArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-flow-log/(?<vpcFlowLogId>[^:/?]+)$",
-);
-const VPCPeeringConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-peering-connection/(?<vpcPeeringConnectionId>[^:/?]+)$",
-);
-const VPNConcentratorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-concentrator/(?<vpnConcentratorId>[^:/?]+)$",
-);
-const VPNConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-connection/(?<vpnConnectionId>[^:/?]+)$",
-);
-const VPNConnectionDeviceTypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-connection-device-type/(?<vpnConnectionDeviceTypeId>[^:/?]+)$",
-);
-const VPNGatewayArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-gateway/(?<vpnGatewayId>[^:/?]+)$",
-);
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table-virtual-interface-group-association\/(?<localGatewayRouteTableVirtualInterfaceGroupAssociationId>[^:/?]+)$/;
+const LocalGatewayRouteTableVPCAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-route-table-vpc-association\/(?<localGatewayRouteTableVPCAssociationId>[^:/?]+)$/;
+const LocalGatewayVirtualInterfaceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-virtual-interface\/(?<localGatewayVirtualInterfaceId>[^:/?]+)$/;
+const LocalGatewayVirtualInterfaceGroupArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):local-gateway-virtual-interface-group\/(?<localGatewayVirtualInterfaceGroupId>[^:/?]+)$/;
+const MacModificationTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):mac-modification-task\/(?<macModificationTaskId>[^:/?]+)$/;
+const NatgatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):natgateway\/(?<natGatewayId>[^:/?]+)$/;
+const NetworkAclArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-acl\/(?<naclId>[^:/?]+)$/;
+const NetworkInsightsAccessScopeArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-access-scope\/(?<networkInsightsAccessScopeId>[^:/?]+)$/;
+const NetworkInsightsAccessScopeAnalysisArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-access-scope-analysis\/(?<networkInsightsAccessScopeAnalysisId>[^:/?]+)$/;
+const NetworkInsightsAnalysisArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-analysis\/(?<networkInsightsAnalysisId>[^:/?]+)$/;
+const NetworkInsightsPathArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-insights-path\/(?<networkInsightsPathId>[^:/?]+)$/;
+const NetworkInterfaceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):network-interface\/(?<networkInterfaceId>[^:/?]+)$/;
+const OutpostLagArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):outpost-lag\/(?<outpostLagId>[^:/?]+)$/;
+const PlacementGroupArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):placement-group\/(?<placementGroupName>[^:/?]+)$/;
+const PrefixListArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):prefix-list\/(?<prefixListId>[^:/?]+)$/;
+const ReplaceRootVolumeTaskArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):replace-root-volume-task\/(?<replaceRootVolumeTaskId>[^:/?]+)$/;
+const ReservedInstancesArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):reserved-instances\/(?<reservationId>[^:/?]+)$/;
+const RoleArnRegex =
+	/^arn:(?<partition>[^:]+):iam::(?<account>[^:]*):role\/(?<roleNameWithPath>[^:/?]+)$/;
+const RouteServerArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server\/(?<routeServerId>[^:/?]+)$/;
+const RouteServerEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server-endpoint\/(?<routeServerEndpointId>[^:/?]+)$/;
+const RouteServerPeerArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-server-peer\/(?<routeServerPeerId>[^:/?]+)$/;
+const RouteTableArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):route-table\/(?<routeTableId>[^:/?]+)$/;
+const SecondaryInterfaceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-interface\/(?<secondaryInterfaceId>[^:/?]+)$/;
+const SecondaryNetworkArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-network\/(?<secondaryNetworkId>[^:/?]+)$/;
+const SecondarySubnetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):secondary-subnet\/(?<secondarySubnetId>[^:/?]+)$/;
+const SecurityGroupArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):security-group\/(?<securityGroupId>[^:/?]+)$/;
+const SecurityGroupRuleArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):security-group-rule\/(?<securityGroupRuleId>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*)::snapshot\/(?<snapshotId>[^:/?]+)$/;
+const SpotFleetRequestArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):spot-fleet-request\/(?<spotFleetRequestId>[^:/?]+)$/;
+const SpotInstancesRequestArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):spot-instances-request\/(?<spotInstanceRequestId>[^:/?]+)$/;
+const SubnetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):subnet\/(?<subnetId>[^:/?]+)$/;
+const SubnetCidrReservationArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):subnet-cidr-reservation\/(?<subnetCidrReservationId>[^:/?]+)$/;
+const TrafficMirrorFilterArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-filter\/(?<trafficMirrorFilterId>[^:/?]+)$/;
+const TrafficMirrorFilterRuleArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-filter-rule\/(?<trafficMirrorFilterRuleId>[^:/?]+)$/;
+const TrafficMirrorSessionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-session\/(?<trafficMirrorSessionId>[^:/?]+)$/;
+const TrafficMirrorTargetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):traffic-mirror-target\/(?<trafficMirrorTargetId>[^:/?]+)$/;
+const TransitGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway\/(?<transitGatewayId>[^:/?]+)$/;
+const TransitGatewayAttachmentArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-attachment\/(?<transitGatewayAttachmentId>[^:/?]+)$/;
+const TransitGatewayConnectPeerArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-connect-peer\/(?<transitGatewayConnectPeerId>[^:/?]+)$/;
+const TransitGatewayMeteringPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-metering-policy\/(?<transitGatewayMeteringPolicyId>[^:/?]+)$/;
+const TransitGatewayMulticastDomainArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-multicast-domain\/(?<transitGatewayMulticastDomainId>[^:/?]+)$/;
+const TransitGatewayPolicyTableArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-policy-table\/(?<transitGatewayPolicyTableId>[^:/?]+)$/;
+const TransitGatewayRouteTableArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-route-table\/(?<transitGatewayRouteTableId>[^:/?]+)$/;
+const TransitGatewayRouteTableAnnouncementArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):transit-gateway-route-table-announcement\/(?<transitGatewayRouteTableAnnouncementId>[^:/?]+)$/;
+const VerifiedAccessEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-endpoint\/(?<verifiedAccessEndpointId>[^:/?]+)$/;
+const VerifiedAccessEndpointTargetArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-endpoint-target\/(?<verifiedAccessEndpointTargetId>[^:/?]+)$/;
+const VerifiedAccessGroupArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-group\/(?<verifiedAccessGroupId>[^:/?]+)$/;
+const VerifiedAccessInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-instance\/(?<verifiedAccessInstanceId>[^:/?]+)$/;
+const VerifiedAccessPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-policy\/(?<verifiedAccessPolicyId>[^:/?]+)$/;
+const VerifiedAccessTrustProviderArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):verified-access-trust-provider\/(?<verifiedAccessTrustProviderId>[^:/?]+)$/;
+const VolumeArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):volume\/(?<volumeId>[^:/?]+)$/;
+const VPCArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc\/(?<vpcId>[^:/?]+)$/;
+const VPCBlockPublicAccessExclusionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-block-public-access-exclusion\/(?<vpcBlockPublicAccessExclusionId>[^:/?]+)$/;
+const VPCEncryptionControlArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-encryption-control\/(?<vpcEncryptionControlId>[^:/?]+)$/;
+const VPCEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint\/(?<vpcEndpointId>[^:/?]+)$/;
+const VPCEndpointConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-connection\/(?<vpcEndpointConnectionId>[^:/?]+)$/;
+const VPCEndpointServiceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-service\/(?<vpcEndpointServiceId>[^:/?]+)$/;
+const VPCEndpointServicePermissionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-endpoint-service-permission\/(?<vpcEndpointServicePermissionId>[^:/?]+)$/;
+const VPCFlowLogArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-flow-log\/(?<vpcFlowLogId>[^:/?]+)$/;
+const VPCPeeringConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpc-peering-connection\/(?<vpcPeeringConnectionId>[^:/?]+)$/;
+const VPNConcentratorArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-concentrator\/(?<vpnConcentratorId>[^:/?]+)$/;
+const VPNConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-connection\/(?<vpnConnectionId>[^:/?]+)$/;
+const VPNConnectionDeviceTypeArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-connection-device-type\/(?<vpnConnectionDeviceTypeId>[^:/?]+)$/;
+const VPNGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):vpn-gateway\/(?<vpnGatewayId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ec2 resources.
@@ -3196,16 +6120,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the capacity-block resource.
 	 */
-	static capacityBlock(props: {
-		/** The CapacityBlockId component of the ARN. */
-		readonly capacityBlockId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityBlock(props: EC2CapacityBlockArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-block/${props.capacityBlockId}`;
 	}
 
@@ -3220,12 +6135,7 @@ export class EC2Resources {
 	 * Parses a capacity-block ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityBlockArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityBlockId: string;
-	} {
+	static parseCapacityBlockArn(arn: string): EC2CapacityBlockArnComponents {
 		const match = CapacityBlockArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacity-block ARN: ${arn}`);
@@ -3241,16 +6151,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the capacity-manager-data-export resource.
 	 */
-	static capacityManagerDataExport(props: {
-		/** The CapacityManagerDataExportId component of the ARN. */
-		readonly capacityManagerDataExportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityManagerDataExport(
+		props: EC2CapacityManagerDataExportArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-manager-data-export/${props.capacityManagerDataExportId}`;
 	}
 
@@ -3265,12 +6168,9 @@ export class EC2Resources {
 	 * Parses a capacity-manager-data-export ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityManagerDataExportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityManagerDataExportId: string;
-	} {
+	static parseCapacityManagerDataExportArn(
+		arn: string,
+	): EC2CapacityManagerDataExportArnComponents {
 		const match = CapacityManagerDataExportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacity-manager-data-export ARN: ${arn}`);
@@ -3286,16 +6186,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the capacity-reservation resource.
 	 */
-	static capacityReservation(props: {
-		/** The CapacityReservationId component of the ARN. */
-		readonly capacityReservationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityReservation(props: EC2CapacityReservationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-reservation/${props.capacityReservationId}`;
 	}
 
@@ -3310,12 +6201,9 @@ export class EC2Resources {
 	 * Parses a capacity-reservation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityReservationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityReservationId: string;
-	} {
+	static parseCapacityReservationArn(
+		arn: string,
+	): EC2CapacityReservationArnComponents {
 		const match = CapacityReservationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacity-reservation ARN: ${arn}`);
@@ -3331,16 +6219,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the capacity-reservation-cancellation-quote resource.
 	 */
-	static capacityReservationCancellationQuote(props: {
-		/** The CapacityReservationCancellationQuoteId component of the ARN. */
-		readonly capacityReservationCancellationQuoteId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityReservationCancellationQuote(
+		props: EC2CapacityReservationCancellationQuoteArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-reservation-cancellation-quote/${props.capacityReservationCancellationQuoteId}`;
 	}
 
@@ -3355,12 +6236,9 @@ export class EC2Resources {
 	 * Parses a capacity-reservation-cancellation-quote ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityReservationCancellationQuoteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityReservationCancellationQuoteId: string;
-	} {
+	static parseCapacityReservationCancellationQuoteArn(
+		arn: string,
+	): EC2CapacityReservationCancellationQuoteArnComponents {
 		const match = CapacityReservationCancellationQuoteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -3379,16 +6257,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the capacity-reservation-fleet resource.
 	 */
-	static capacityReservationFleet(props: {
-		/** The CapacityReservationFleetId component of the ARN. */
-		readonly capacityReservationFleetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityReservationFleet(
+		props: EC2CapacityReservationFleetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:capacity-reservation-fleet/${props.capacityReservationFleetId}`;
 	}
 
@@ -3403,12 +6274,9 @@ export class EC2Resources {
 	 * Parses a capacity-reservation-fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityReservationFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityReservationFleetId: string;
-	} {
+	static parseCapacityReservationFleetArn(
+		arn: string,
+	): EC2CapacityReservationFleetArnComponents {
 		const match = CapacityReservationFleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacity-reservation-fleet ARN: ${arn}`);
@@ -3424,16 +6292,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the carrier-gateway resource.
 	 */
-	static carrierGateway(props: {
-		/** The CarrierGatewayId component of the ARN. */
-		readonly carrierGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static carrierGateway(props: EC2CarrierGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:carrier-gateway/${props.carrierGatewayId}`;
 	}
 
@@ -3448,12 +6307,7 @@ export class EC2Resources {
 	 * Parses a carrier-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCarrierGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		carrierGatewayId: string;
-	} {
+	static parseCarrierGatewayArn(arn: string): EC2CarrierGatewayArnComponents {
 		const match = CarrierGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid carrier-gateway ARN: ${arn}`);
@@ -3469,16 +6323,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the certificate resource.
 	 */
-	static certificate(props: {
-		/** The CertificateId component of the ARN. */
-		readonly certificateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static certificate(props: EC2CertificateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:acm:${props.region ?? "*"}:${props.account ?? "*"}:certificate/${props.certificateId}`;
 	}
 
@@ -3493,12 +6338,7 @@ export class EC2Resources {
 	 * Parses a certificate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCertificateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		certificateId: string;
-	} {
+	static parseCertificateArn(arn: string): EC2CertificateArnComponents {
 		const match = CertificateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid certificate ARN: ${arn}`);
@@ -3514,16 +6354,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the client-vpn-endpoint resource.
 	 */
-	static clientVPNEndpoint(props: {
-		/** The ClientVpnEndpointId component of the ARN. */
-		readonly clientVPNEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static clientVPNEndpoint(props: EC2ClientVPNEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:client-vpn-endpoint/${props.clientVPNEndpointId}`;
 	}
 
@@ -3538,12 +6369,9 @@ export class EC2Resources {
 	 * Parses a client-vpn-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClientVPNEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clientVPNEndpointId: string;
-	} {
+	static parseClientVPNEndpointArn(
+		arn: string,
+	): EC2ClientVPNEndpointArnComponents {
 		const match = ClientVPNEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid client-vpn-endpoint ARN: ${arn}`);
@@ -3559,16 +6387,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the coip-pool resource.
 	 */
-	static coipPool(props: {
-		/** The Ipv4PoolCoipId component of the ARN. */
-		readonly ipv4PoolCoipId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static coipPool(props: EC2CoipPoolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:coip-pool/${props.ipv4PoolCoipId}`;
 	}
 
@@ -3583,12 +6402,7 @@ export class EC2Resources {
 	 * Parses a coip-pool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCoipPoolArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ipv4PoolCoipId: string;
-	} {
+	static parseCoipPoolArn(arn: string): EC2CoipPoolArnComponents {
 		const match = CoipPoolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid coip-pool ARN: ${arn}`);
@@ -3604,16 +6418,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the customer-gateway resource.
 	 */
-	static customerGateway(props: {
-		/** The CustomerGatewayId component of the ARN. */
-		readonly customerGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customerGateway(props: EC2CustomerGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:customer-gateway/${props.customerGatewayId}`;
 	}
 
@@ -3628,12 +6433,7 @@ export class EC2Resources {
 	 * Parses a customer-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomerGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		customerGatewayId: string;
-	} {
+	static parseCustomerGatewayArn(arn: string): EC2CustomerGatewayArnComponents {
 		const match = CustomerGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid customer-gateway ARN: ${arn}`);
@@ -3649,16 +6449,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the declarative-policies-report resource.
 	 */
-	static declarativePoliciesReport(props: {
-		/** The DeclarativePoliciesReportId component of the ARN. */
-		readonly declarativePoliciesReportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static declarativePoliciesReport(
+		props: EC2DeclarativePoliciesReportArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:declarative-policies-report/${props.declarativePoliciesReportId}`;
 	}
 
@@ -3673,12 +6466,9 @@ export class EC2Resources {
 	 * Parses a declarative-policies-report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeclarativePoliciesReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		declarativePoliciesReportId: string;
-	} {
+	static parseDeclarativePoliciesReportArn(
+		arn: string,
+	): EC2DeclarativePoliciesReportArnComponents {
 		const match = DeclarativePoliciesReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid declarative-policies-report ARN: ${arn}`);
@@ -3694,16 +6484,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the dedicated-host resource.
 	 */
-	static dedicatedHost(props: {
-		/** The DedicatedHostId component of the ARN. */
-		readonly dedicatedHostId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dedicatedHost(props: EC2DedicatedHostArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:dedicated-host/${props.dedicatedHostId}`;
 	}
 
@@ -3718,12 +6499,7 @@ export class EC2Resources {
 	 * Parses a dedicated-host ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDedicatedHostArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dedicatedHostId: string;
-	} {
+	static parseDedicatedHostArn(arn: string): EC2DedicatedHostArnComponents {
 		const match = DedicatedHostArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dedicated-host ARN: ${arn}`);
@@ -3739,16 +6515,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the dhcp-options resource.
 	 */
-	static dhcpOptions(props: {
-		/** The DhcpOptionsId component of the ARN. */
-		readonly dhcpOptionsId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dhcpOptions(props: EC2DhcpOptionsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:dhcp-options/${props.dhcpOptionsId}`;
 	}
 
@@ -3763,12 +6530,7 @@ export class EC2Resources {
 	 * Parses a dhcp-options ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDhcpOptionsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dhcpOptionsId: string;
-	} {
+	static parseDhcpOptionsArn(arn: string): EC2DhcpOptionsArnComponents {
 		const match = DhcpOptionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dhcp-options ARN: ${arn}`);
@@ -3784,16 +6546,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the egress-only-internet-gateway resource.
 	 */
-	static egressOnlyInternetGateway(props: {
-		/** The EgressOnlyInternetGatewayId component of the ARN. */
-		readonly egressOnlyInternetGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static egressOnlyInternetGateway(
+		props: EC2EgressOnlyInternetGatewayArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:egress-only-internet-gateway/${props.egressOnlyInternetGatewayId}`;
 	}
 
@@ -3808,12 +6563,9 @@ export class EC2Resources {
 	 * Parses a egress-only-internet-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEgressOnlyInternetGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		egressOnlyInternetGatewayId: string;
-	} {
+	static parseEgressOnlyInternetGatewayArn(
+		arn: string,
+	): EC2EgressOnlyInternetGatewayArnComponents {
 		const match = EgressOnlyInternetGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid egress-only-internet-gateway ARN: ${arn}`);
@@ -3829,16 +6581,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the elastic-gpu resource.
 	 */
-	static elasticGpu(props: {
-		/** The ElasticGpuId component of the ARN. */
-		readonly elasticGpuId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static elasticGpu(props: EC2ElasticGpuArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:elastic-gpu/${props.elasticGpuId}`;
 	}
 
@@ -3853,12 +6596,7 @@ export class EC2Resources {
 	 * Parses a elastic-gpu ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseElasticGpuArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		elasticGpuId: string;
-	} {
+	static parseElasticGpuArn(arn: string): EC2ElasticGpuArnComponents {
 		const match = ElasticGpuArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid elastic-gpu ARN: ${arn}`);
@@ -3874,16 +6612,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the elastic-inference resource.
 	 */
-	static elasticInference(props: {
-		/** The AcceleratorId component of the ARN. */
-		readonly acceleratorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static elasticInference(props: EC2ElasticInferenceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elastic-inference:${props.region ?? "*"}:${props.account ?? "*"}:elastic-inference-accelerator/${props.acceleratorId}`;
 	}
 
@@ -3898,12 +6627,9 @@ export class EC2Resources {
 	 * Parses a elastic-inference ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseElasticInferenceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		acceleratorId: string;
-	} {
+	static parseElasticInferenceArn(
+		arn: string,
+	): EC2ElasticInferenceArnComponents {
 		const match = ElasticInferenceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid elastic-inference ARN: ${arn}`);
@@ -3919,16 +6645,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the elastic-ip resource.
 	 */
-	static elasticIP(props: {
-		/** The AllocationId component of the ARN. */
-		readonly allocationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static elasticIP(props: EC2ElasticIPArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:elastic-ip/${props.allocationId}`;
 	}
 
@@ -3943,12 +6660,7 @@ export class EC2Resources {
 	 * Parses a elastic-ip ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseElasticIPArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		allocationId: string;
-	} {
+	static parseElasticIPArn(arn: string): EC2ElasticIPArnComponents {
 		const match = ElasticIPArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid elastic-ip ARN: ${arn}`);
@@ -3964,16 +6676,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the export-image-task resource.
 	 */
-	static exportImageTask(props: {
-		/** The ExportImageTaskId component of the ARN. */
-		readonly exportImageTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static exportImageTask(props: EC2ExportImageTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:export-image-task/${props.exportImageTaskId}`;
 	}
 
@@ -3988,12 +6691,7 @@ export class EC2Resources {
 	 * Parses a export-image-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportImageTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		exportImageTaskId: string;
-	} {
+	static parseExportImageTaskArn(arn: string): EC2ExportImageTaskArnComponents {
 		const match = ExportImageTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export-image-task ARN: ${arn}`);
@@ -4009,16 +6707,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the export-instance-task resource.
 	 */
-	static exportInstanceTask(props: {
-		/** The ExportTaskId component of the ARN. */
-		readonly exportTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static exportInstanceTask(props: EC2ExportInstanceTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:export-instance-task/${props.exportTaskId}`;
 	}
 
@@ -4033,12 +6722,9 @@ export class EC2Resources {
 	 * Parses a export-instance-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportInstanceTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		exportTaskId: string;
-	} {
+	static parseExportInstanceTaskArn(
+		arn: string,
+	): EC2ExportInstanceTaskArnComponents {
 		const match = ExportInstanceTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export-instance-task ARN: ${arn}`);
@@ -4054,16 +6740,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the fleet resource.
 	 */
-	static fleet(props: {
-		/** The FleetId component of the ARN. */
-		readonly fleetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fleet(props: EC2FleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:fleet/${props.fleetId}`;
 	}
 
@@ -4078,12 +6755,7 @@ export class EC2Resources {
 	 * Parses a fleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fleetId: string;
-	} {
+	static parseFleetArn(arn: string): EC2FleetArnComponents {
 		const match = FleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fleet ARN: ${arn}`);
@@ -4099,16 +6771,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the fpga-image resource.
 	 */
-	static fpgaImage(props: {
-		/** The FpgaImageId component of the ARN. */
-		readonly fpgaImageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fpgaImage(props: EC2FpgaImageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:fpga-image/${props.fpgaImageId}`;
 	}
 
@@ -4123,12 +6786,7 @@ export class EC2Resources {
 	 * Parses a fpga-image ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFpgaImageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fpgaImageId: string;
-	} {
+	static parseFpgaImageArn(arn: string): EC2FpgaImageArnComponents {
 		const match = FpgaImageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid fpga-image ARN: ${arn}`);
@@ -4144,16 +6802,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the group resource.
 	 */
-	static group(props: {
-		/** The GroupName component of the ARN. */
-		readonly groupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static group(props: EC2GroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resource-groups:${props.region ?? "*"}:${props.account ?? "*"}:group/${props.groupName}`;
 	}
 
@@ -4168,12 +6817,7 @@ export class EC2Resources {
 	 * Parses a group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		groupName: string;
-	} {
+	static parseGroupArn(arn: string): EC2GroupArnComponents {
 		const match = GroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid group ARN: ${arn}`);
@@ -4189,16 +6833,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the host-reservation resource.
 	 */
-	static hostReservation(props: {
-		/** The HostReservationId component of the ARN. */
-		readonly hostReservationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static hostReservation(props: EC2HostReservationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:host-reservation/${props.hostReservationId}`;
 	}
 
@@ -4213,12 +6848,7 @@ export class EC2Resources {
 	 * Parses a host-reservation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseHostReservationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		hostReservationId: string;
-	} {
+	static parseHostReservationArn(arn: string): EC2HostReservationArnComponents {
 		const match = HostReservationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid host-reservation ARN: ${arn}`);
@@ -4234,16 +6864,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the image resource.
 	 */
-	static image(props: {
-		/** The ImageId component of the ARN. */
-		readonly imageId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static image(props: EC2ImageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}::image/${props.imageId}`;
 	}
 
@@ -4258,12 +6879,7 @@ export class EC2Resources {
 	 * Parses a image ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		imageId: string;
-	} {
+	static parseImageArn(arn: string): EC2ImageArnComponents {
 		const match = ImageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid image ARN: ${arn}`);
@@ -4279,16 +6895,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the image-usage-report resource.
 	 */
-	static imageUsageReport(props: {
-		/** The ImageUsageReportId component of the ARN. */
-		readonly imageUsageReportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static imageUsageReport(props: EC2ImageUsageReportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:image-usage-report/${props.imageUsageReportId}`;
 	}
 
@@ -4303,12 +6910,9 @@ export class EC2Resources {
 	 * Parses a image-usage-report ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImageUsageReportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		imageUsageReportId: string;
-	} {
+	static parseImageUsageReportArn(
+		arn: string,
+	): EC2ImageUsageReportArnComponents {
 		const match = ImageUsageReportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid image-usage-report ARN: ${arn}`);
@@ -4324,16 +6928,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the import-image-task resource.
 	 */
-	static importImageTask(props: {
-		/** The ImportImageTaskId component of the ARN. */
-		readonly importImageTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static importImageTask(props: EC2ImportImageTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:import-image-task/${props.importImageTaskId}`;
 	}
 
@@ -4348,12 +6943,7 @@ export class EC2Resources {
 	 * Parses a import-image-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportImageTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		importImageTaskId: string;
-	} {
+	static parseImportImageTaskArn(arn: string): EC2ImportImageTaskArnComponents {
 		const match = ImportImageTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid import-image-task ARN: ${arn}`);
@@ -4369,16 +6959,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the import-snapshot-task resource.
 	 */
-	static importSnapshotTask(props: {
-		/** The ImportSnapshotTaskId component of the ARN. */
-		readonly importSnapshotTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static importSnapshotTask(props: EC2ImportSnapshotTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:import-snapshot-task/${props.importSnapshotTaskId}`;
 	}
 
@@ -4393,12 +6974,9 @@ export class EC2Resources {
 	 * Parses a import-snapshot-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportSnapshotTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		importSnapshotTaskId: string;
-	} {
+	static parseImportSnapshotTaskArn(
+		arn: string,
+	): EC2ImportSnapshotTaskArnComponents {
 		const match = ImportSnapshotTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid import-snapshot-task ARN: ${arn}`);
@@ -4414,16 +6992,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the instance resource.
 	 */
-	static instance(props: {
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instance(props: EC2InstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:instance/${props.instanceId}`;
 	}
 
@@ -4438,12 +7007,7 @@ export class EC2Resources {
 	 * Parses a instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceId: string;
-	} {
+	static parseInstanceArn(arn: string): EC2InstanceArnComponents {
 		const match = InstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance ARN: ${arn}`);
@@ -4459,16 +7023,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the instance-connect-endpoint resource.
 	 */
-	static instanceConnectEndpoint(props: {
-		/** The InstanceConnectEndpointId component of the ARN. */
-		readonly instanceConnectEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instanceConnectEndpoint(
+		props: EC2InstanceConnectEndpointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:instance-connect-endpoint/${props.instanceConnectEndpointId}`;
 	}
 
@@ -4483,12 +7040,9 @@ export class EC2Resources {
 	 * Parses a instance-connect-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceConnectEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceConnectEndpointId: string;
-	} {
+	static parseInstanceConnectEndpointArn(
+		arn: string,
+	): EC2InstanceConnectEndpointArnComponents {
 		const match = InstanceConnectEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance-connect-endpoint ARN: ${arn}`);
@@ -4504,16 +7058,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the instance-event-window resource.
 	 */
-	static instanceEventWindow(props: {
-		/** The InstanceEventWindowId component of the ARN. */
-		readonly instanceEventWindowId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instanceEventWindow(props: EC2InstanceEventWindowArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:instance-event-window/${props.instanceEventWindowId}`;
 	}
 
@@ -4528,12 +7073,9 @@ export class EC2Resources {
 	 * Parses a instance-event-window ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceEventWindowArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceEventWindowId: string;
-	} {
+	static parseInstanceEventWindowArn(
+		arn: string,
+	): EC2InstanceEventWindowArnComponents {
 		const match = InstanceEventWindowArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance-event-window ARN: ${arn}`);
@@ -4549,16 +7091,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the internet-gateway resource.
 	 */
-	static internetGateway(props: {
-		/** The InternetGatewayId component of the ARN. */
-		readonly internetGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static internetGateway(props: EC2InternetGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:internet-gateway/${props.internetGatewayId}`;
 	}
 
@@ -4573,12 +7106,7 @@ export class EC2Resources {
 	 * Parses a internet-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInternetGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		internetGatewayId: string;
-	} {
+	static parseInternetGatewayArn(arn: string): EC2InternetGatewayArnComponents {
 		const match = InternetGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid internet-gateway ARN: ${arn}`);
@@ -4594,14 +7122,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam resource.
 	 */
-	static ipam(props: {
-		/** The IpamId component of the ARN. */
-		readonly ipamId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipam(props: EC2IpamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam/${props.ipamId}`;
 	}
 
@@ -4616,11 +7137,7 @@ export class EC2Resources {
 	 * Parses a ipam ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamId: string;
-	} {
+	static parseIpamArn(arn: string): EC2IpamArnComponents {
 		const match = IpamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam ARN: ${arn}`);
@@ -4635,14 +7152,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-external-resource-verification-token resource.
 	 */
-	static ipamExternalResourceVerificationToken(props: {
-		/** The IpamExternalResourceVerificationTokenId component of the ARN. */
-		readonly ipamExternalResourceVerificationTokenId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamExternalResourceVerificationToken(
+		props: EC2IpamExternalResourceVerificationTokenArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-external-resource-verification-token/${props.ipamExternalResourceVerificationTokenId}`;
 	}
 
@@ -4657,11 +7169,9 @@ export class EC2Resources {
 	 * Parses a ipam-external-resource-verification-token ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamExternalResourceVerificationTokenArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamExternalResourceVerificationTokenId: string;
-	} {
+	static parseIpamExternalResourceVerificationTokenArn(
+		arn: string,
+	): EC2IpamExternalResourceVerificationTokenArnComponents {
 		const match = IpamExternalResourceVerificationTokenArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -4679,14 +7189,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-policy resource.
 	 */
-	static ipamPolicy(props: {
-		/** The IpamPolicyId component of the ARN. */
-		readonly ipamPolicyId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamPolicy(props: EC2IpamPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-policy/${props.ipamPolicyId}`;
 	}
 
@@ -4701,11 +7204,7 @@ export class EC2Resources {
 	 * Parses a ipam-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamPolicyArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamPolicyId: string;
-	} {
+	static parseIpamPolicyArn(arn: string): EC2IpamPolicyArnComponents {
 		const match = IpamPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-policy ARN: ${arn}`);
@@ -4720,14 +7219,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-pool resource.
 	 */
-	static ipamPool(props: {
-		/** The IpamPoolId component of the ARN. */
-		readonly ipamPoolId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamPool(props: EC2IpamPoolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-pool/${props.ipamPoolId}`;
 	}
 
@@ -4742,11 +7234,7 @@ export class EC2Resources {
 	 * Parses a ipam-pool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamPoolArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamPoolId: string;
-	} {
+	static parseIpamPoolArn(arn: string): EC2IpamPoolArnComponents {
 		const match = IpamPoolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-pool ARN: ${arn}`);
@@ -4761,16 +7249,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-pool-allocation resource.
 	 */
-	static ipamPoolAllocation(props: {
-		/** The IpamPoolAllocationId component of the ARN. */
-		readonly ipamPoolAllocationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamPoolAllocation(props: EC2IpamPoolAllocationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:ipam-pool-allocation/${props.ipamPoolAllocationId}`;
 	}
 
@@ -4785,12 +7264,9 @@ export class EC2Resources {
 	 * Parses a ipam-pool-allocation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamPoolAllocationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ipamPoolAllocationId: string;
-	} {
+	static parseIpamPoolAllocationArn(
+		arn: string,
+	): EC2IpamPoolAllocationArnComponents {
 		const match = IpamPoolAllocationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-pool-allocation ARN: ${arn}`);
@@ -4806,14 +7282,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-prefix-list-resolver resource.
 	 */
-	static ipamPrefixListResolver(props: {
-		/** The IpamPrefixListResolverId component of the ARN. */
-		readonly ipamPrefixListResolverId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamPrefixListResolver(
+		props: EC2IpamPrefixListResolverArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-prefix-list-resolver/${props.ipamPrefixListResolverId}`;
 	}
 
@@ -4828,11 +7299,9 @@ export class EC2Resources {
 	 * Parses a ipam-prefix-list-resolver ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamPrefixListResolverArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamPrefixListResolverId: string;
-	} {
+	static parseIpamPrefixListResolverArn(
+		arn: string,
+	): EC2IpamPrefixListResolverArnComponents {
 		const match = IpamPrefixListResolverArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-prefix-list-resolver ARN: ${arn}`);
@@ -4847,14 +7316,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-prefix-list-resolver-target resource.
 	 */
-	static ipamPrefixListResolverTarget(props: {
-		/** The IpamPrefixListResolverTargetId component of the ARN. */
-		readonly ipamPrefixListResolverTargetId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamPrefixListResolverTarget(
+		props: EC2IpamPrefixListResolverTargetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-prefix-list-resolver-target/${props.ipamPrefixListResolverTargetId}`;
 	}
 
@@ -4869,11 +7333,9 @@ export class EC2Resources {
 	 * Parses a ipam-prefix-list-resolver-target ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamPrefixListResolverTargetArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamPrefixListResolverTargetId: string;
-	} {
+	static parseIpamPrefixListResolverTargetArn(
+		arn: string,
+	): EC2IpamPrefixListResolverTargetArnComponents {
 		const match = IpamPrefixListResolverTargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-prefix-list-resolver-target ARN: ${arn}`);
@@ -4889,14 +7351,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-resource-discovery resource.
 	 */
-	static ipamResourceDiscovery(props: {
-		/** The IpamResourceDiscoveryId component of the ARN. */
-		readonly ipamResourceDiscoveryId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamResourceDiscovery(
+		props: EC2IpamResourceDiscoveryArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-resource-discovery/${props.ipamResourceDiscoveryId}`;
 	}
 
@@ -4911,11 +7368,9 @@ export class EC2Resources {
 	 * Parses a ipam-resource-discovery ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamResourceDiscoveryArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamResourceDiscoveryId: string;
-	} {
+	static parseIpamResourceDiscoveryArn(
+		arn: string,
+	): EC2IpamResourceDiscoveryArnComponents {
 		const match = IpamResourceDiscoveryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-resource-discovery ARN: ${arn}`);
@@ -4930,14 +7385,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-resource-discovery-association resource.
 	 */
-	static ipamResourceDiscoveryAssociation(props: {
-		/** The IpamResourceDiscoveryAssociationId component of the ARN. */
-		readonly ipamResourceDiscoveryAssociationId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamResourceDiscoveryAssociation(
+		props: EC2IpamResourceDiscoveryAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-resource-discovery-association/${props.ipamResourceDiscoveryAssociationId}`;
 	}
 
@@ -4952,11 +7402,9 @@ export class EC2Resources {
 	 * Parses a ipam-resource-discovery-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamResourceDiscoveryAssociationArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamResourceDiscoveryAssociationId: string;
-	} {
+	static parseIpamResourceDiscoveryAssociationArn(
+		arn: string,
+	): EC2IpamResourceDiscoveryAssociationArnComponents {
 		const match = IpamResourceDiscoveryAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -4974,14 +7422,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipam-scope resource.
 	 */
-	static ipamScope(props: {
-		/** The IpamScopeId component of the ARN. */
-		readonly ipamScopeId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipamScope(props: EC2IpamScopeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2::${props.account ?? "*"}:ipam-scope/${props.ipamScopeId}`;
 	}
 
@@ -4996,11 +7437,7 @@ export class EC2Resources {
 	 * Parses a ipam-scope ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpamScopeArn(arn: string): {
-		partition: string;
-		account: string;
-		ipamScopeId: string;
-	} {
+	static parseIpamScopeArn(arn: string): EC2IpamScopeArnComponents {
 		const match = IpamScopeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipam-scope ARN: ${arn}`);
@@ -5015,16 +7452,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipv4pool-ec2 resource.
 	 */
-	static ipv4poolEC2(props: {
-		/** The Ipv4PoolEc2Id component of the ARN. */
-		readonly ipv4PoolEC2Id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipv4poolEC2(props: EC2Ipv4poolEC2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:ipv4pool-ec2/${props.ipv4PoolEC2Id}`;
 	}
 
@@ -5039,12 +7467,7 @@ export class EC2Resources {
 	 * Parses a ipv4pool-ec2 ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpv4poolEC2Arn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ipv4PoolEC2Id: string;
-	} {
+	static parseIpv4poolEC2Arn(arn: string): EC2Ipv4poolEC2ArnComponents {
 		const match = Ipv4poolEC2ArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipv4pool-ec2 ARN: ${arn}`);
@@ -5060,16 +7483,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the ipv6pool-ec2 resource.
 	 */
-	static ipv6poolEC2(props: {
-		/** The Ipv6PoolEc2Id component of the ARN. */
-		readonly ipv6PoolEC2Id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipv6poolEC2(props: EC2Ipv6poolEC2ArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:ipv6pool-ec2/${props.ipv6PoolEC2Id}`;
 	}
 
@@ -5084,12 +7498,7 @@ export class EC2Resources {
 	 * Parses a ipv6pool-ec2 ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpv6poolEC2Arn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ipv6PoolEC2Id: string;
-	} {
+	static parseIpv6poolEC2Arn(arn: string): EC2Ipv6poolEC2ArnComponents {
 		const match = Ipv6poolEC2ArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipv6pool-ec2 ARN: ${arn}`);
@@ -5105,16 +7514,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the key-pair resource.
 	 */
-	static keyPair(props: {
-		/** The KeyPairName component of the ARN. */
-		readonly keyPairName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static keyPair(props: EC2KeyPairArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:key-pair/${props.keyPairName}`;
 	}
 
@@ -5129,12 +7529,7 @@ export class EC2Resources {
 	 * Parses a key-pair ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKeyPairArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		keyPairName: string;
-	} {
+	static parseKeyPairArn(arn: string): EC2KeyPairArnComponents {
 		const match = KeyPairArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid key-pair ARN: ${arn}`);
@@ -5150,16 +7545,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the launch-template resource.
 	 */
-	static launchTemplate(props: {
-		/** The LaunchTemplateId component of the ARN. */
-		readonly launchTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static launchTemplate(props: EC2LaunchTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:launch-template/${props.launchTemplateId}`;
 	}
 
@@ -5174,12 +7560,7 @@ export class EC2Resources {
 	 * Parses a launch-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLaunchTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		launchTemplateId: string;
-	} {
+	static parseLaunchTemplateArn(arn: string): EC2LaunchTemplateArnComponents {
 		const match = LaunchTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid launch-template ARN: ${arn}`);
@@ -5195,16 +7576,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the license-configuration resource.
 	 */
-	static licenseConfiguration(props: {
-		/** The LicenseConfigurationId component of the ARN. */
-		readonly licenseConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static licenseConfiguration(props: EC2LicenseConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:license-manager:${props.region ?? "*"}:${props.account ?? "*"}:license-configuration:${props.licenseConfigurationId}`;
 	}
 
@@ -5219,12 +7591,9 @@ export class EC2Resources {
 	 * Parses a license-configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLicenseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		licenseConfigurationId: string;
-	} {
+	static parseLicenseConfigurationArn(
+		arn: string,
+	): EC2LicenseConfigurationArnComponents {
 		const match = LicenseConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid license-configuration ARN: ${arn}`);
@@ -5240,16 +7609,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway resource.
 	 */
-	static localGateway(props: {
-		/** The LocalGatewayId component of the ARN. */
-		readonly localGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGateway(props: EC2LocalGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway/${props.localGatewayId}`;
 	}
 
@@ -5264,12 +7624,7 @@ export class EC2Resources {
 	 * Parses a local-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocalGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayId: string;
-	} {
+	static parseLocalGatewayArn(arn: string): EC2LocalGatewayArnComponents {
 		const match = LocalGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid local-gateway ARN: ${arn}`);
@@ -5285,16 +7640,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway-route-table resource.
 	 */
-	static localGatewayRouteTable(props: {
-		/** The LocalGatewayRoutetableId component of the ARN. */
-		readonly localGatewayRoutetableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGatewayRouteTable(
+		props: EC2LocalGatewayRouteTableArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway-route-table/${props.localGatewayRoutetableId}`;
 	}
 
@@ -5309,12 +7657,9 @@ export class EC2Resources {
 	 * Parses a local-gateway-route-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocalGatewayRouteTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayRoutetableId: string;
-	} {
+	static parseLocalGatewayRouteTableArn(
+		arn: string,
+	): EC2LocalGatewayRouteTableArnComponents {
 		const match = LocalGatewayRouteTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid local-gateway-route-table ARN: ${arn}`);
@@ -5330,16 +7675,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway-route-table-virtual-interface-group-association resource.
 	 */
-	static localGatewayRouteTableVirtualInterfaceGroupAssociation(props: {
-		/** The LocalGatewayRouteTableVirtualInterfaceGroupAssociationId component of the ARN. */
-		readonly localGatewayRouteTableVirtualInterfaceGroupAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGatewayRouteTableVirtualInterfaceGroupAssociation(
+		props: EC2LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway-route-table-virtual-interface-group-association/${props.localGatewayRouteTableVirtualInterfaceGroupAssociationId}`;
 	}
 
@@ -5360,12 +7698,7 @@ export class EC2Resources {
 	 */
 	static parseLocalGatewayRouteTableVirtualInterfaceGroupAssociationArn(
 		arn: string,
-	): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayRouteTableVirtualInterfaceGroupAssociationId: string;
-	} {
+	): EC2LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnComponents {
 		const match =
 			LocalGatewayRouteTableVirtualInterfaceGroupAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
@@ -5385,16 +7718,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway-route-table-vpc-association resource.
 	 */
-	static localGatewayRouteTableVPCAssociation(props: {
-		/** The LocalGatewayRouteTableVpcAssociationId component of the ARN. */
-		readonly localGatewayRouteTableVPCAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGatewayRouteTableVPCAssociation(
+		props: EC2LocalGatewayRouteTableVPCAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway-route-table-vpc-association/${props.localGatewayRouteTableVPCAssociationId}`;
 	}
 
@@ -5409,12 +7735,9 @@ export class EC2Resources {
 	 * Parses a local-gateway-route-table-vpc-association ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocalGatewayRouteTableVPCAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayRouteTableVPCAssociationId: string;
-	} {
+	static parseLocalGatewayRouteTableVPCAssociationArn(
+		arn: string,
+	): EC2LocalGatewayRouteTableVPCAssociationArnComponents {
 		const match = LocalGatewayRouteTableVPCAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -5433,16 +7756,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway-virtual-interface resource.
 	 */
-	static localGatewayVirtualInterface(props: {
-		/** The LocalGatewayVirtualInterfaceId component of the ARN. */
-		readonly localGatewayVirtualInterfaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGatewayVirtualInterface(
+		props: EC2LocalGatewayVirtualInterfaceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway-virtual-interface/${props.localGatewayVirtualInterfaceId}`;
 	}
 
@@ -5457,12 +7773,9 @@ export class EC2Resources {
 	 * Parses a local-gateway-virtual-interface ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocalGatewayVirtualInterfaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayVirtualInterfaceId: string;
-	} {
+	static parseLocalGatewayVirtualInterfaceArn(
+		arn: string,
+	): EC2LocalGatewayVirtualInterfaceArnComponents {
 		const match = LocalGatewayVirtualInterfaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid local-gateway-virtual-interface ARN: ${arn}`);
@@ -5479,16 +7792,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the local-gateway-virtual-interface-group resource.
 	 */
-	static localGatewayVirtualInterfaceGroup(props: {
-		/** The LocalGatewayVirtualInterfaceGroupId component of the ARN. */
-		readonly localGatewayVirtualInterfaceGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static localGatewayVirtualInterfaceGroup(
+		props: EC2LocalGatewayVirtualInterfaceGroupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:local-gateway-virtual-interface-group/${props.localGatewayVirtualInterfaceGroupId}`;
 	}
 
@@ -5503,12 +7809,9 @@ export class EC2Resources {
 	 * Parses a local-gateway-virtual-interface-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocalGatewayVirtualInterfaceGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		localGatewayVirtualInterfaceGroupId: string;
-	} {
+	static parseLocalGatewayVirtualInterfaceGroupArn(
+		arn: string,
+	): EC2LocalGatewayVirtualInterfaceGroupArnComponents {
 		const match = LocalGatewayVirtualInterfaceGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -5527,16 +7830,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the mac-modification-task resource.
 	 */
-	static macModificationTask(props: {
-		/** The MacModificationTaskId component of the ARN. */
-		readonly macModificationTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static macModificationTask(props: EC2MacModificationTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:mac-modification-task/${props.macModificationTaskId}`;
 	}
 
@@ -5551,12 +7845,9 @@ export class EC2Resources {
 	 * Parses a mac-modification-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMacModificationTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		macModificationTaskId: string;
-	} {
+	static parseMacModificationTaskArn(
+		arn: string,
+	): EC2MacModificationTaskArnComponents {
 		const match = MacModificationTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mac-modification-task ARN: ${arn}`);
@@ -5572,16 +7863,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the natgateway resource.
 	 */
-	static natgateway(props: {
-		/** The NatGatewayId component of the ARN. */
-		readonly natGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static natgateway(props: EC2NatgatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:natgateway/${props.natGatewayId}`;
 	}
 
@@ -5596,12 +7878,7 @@ export class EC2Resources {
 	 * Parses a natgateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNatgatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		natGatewayId: string;
-	} {
+	static parseNatgatewayArn(arn: string): EC2NatgatewayArnComponents {
 		const match = NatgatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid natgateway ARN: ${arn}`);
@@ -5617,16 +7894,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-acl resource.
 	 */
-	static networkAcl(props: {
-		/** The NaclId component of the ARN. */
-		readonly naclId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkAcl(props: EC2NetworkAclArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-acl/${props.naclId}`;
 	}
 
@@ -5641,12 +7909,7 @@ export class EC2Resources {
 	 * Parses a network-acl ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkAclArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		naclId: string;
-	} {
+	static parseNetworkAclArn(arn: string): EC2NetworkAclArnComponents {
 		const match = NetworkAclArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-acl ARN: ${arn}`);
@@ -5662,16 +7925,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-insights-access-scope resource.
 	 */
-	static networkInsightsAccessScope(props: {
-		/** The NetworkInsightsAccessScopeId component of the ARN. */
-		readonly networkInsightsAccessScopeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInsightsAccessScope(
+		props: EC2NetworkInsightsAccessScopeArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-insights-access-scope/${props.networkInsightsAccessScopeId}`;
 	}
 
@@ -5686,12 +7942,9 @@ export class EC2Resources {
 	 * Parses a network-insights-access-scope ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInsightsAccessScopeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInsightsAccessScopeId: string;
-	} {
+	static parseNetworkInsightsAccessScopeArn(
+		arn: string,
+	): EC2NetworkInsightsAccessScopeArnComponents {
 		const match = NetworkInsightsAccessScopeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-insights-access-scope ARN: ${arn}`);
@@ -5707,16 +7960,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-insights-access-scope-analysis resource.
 	 */
-	static networkInsightsAccessScopeAnalysis(props: {
-		/** The NetworkInsightsAccessScopeAnalysisId component of the ARN. */
-		readonly networkInsightsAccessScopeAnalysisId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInsightsAccessScopeAnalysis(
+		props: EC2NetworkInsightsAccessScopeAnalysisArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-insights-access-scope-analysis/${props.networkInsightsAccessScopeAnalysisId}`;
 	}
 
@@ -5731,12 +7977,9 @@ export class EC2Resources {
 	 * Parses a network-insights-access-scope-analysis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInsightsAccessScopeAnalysisArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInsightsAccessScopeAnalysisId: string;
-	} {
+	static parseNetworkInsightsAccessScopeAnalysisArn(
+		arn: string,
+	): EC2NetworkInsightsAccessScopeAnalysisArnComponents {
 		const match = NetworkInsightsAccessScopeAnalysisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -5755,16 +7998,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-insights-analysis resource.
 	 */
-	static networkInsightsAnalysis(props: {
-		/** The NetworkInsightsAnalysisId component of the ARN. */
-		readonly networkInsightsAnalysisId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInsightsAnalysis(
+		props: EC2NetworkInsightsAnalysisArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-insights-analysis/${props.networkInsightsAnalysisId}`;
 	}
 
@@ -5779,12 +8015,9 @@ export class EC2Resources {
 	 * Parses a network-insights-analysis ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInsightsAnalysisArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInsightsAnalysisId: string;
-	} {
+	static parseNetworkInsightsAnalysisArn(
+		arn: string,
+	): EC2NetworkInsightsAnalysisArnComponents {
 		const match = NetworkInsightsAnalysisArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-insights-analysis ARN: ${arn}`);
@@ -5800,16 +8033,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-insights-path resource.
 	 */
-	static networkInsightsPath(props: {
-		/** The NetworkInsightsPathId component of the ARN. */
-		readonly networkInsightsPathId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInsightsPath(props: EC2NetworkInsightsPathArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-insights-path/${props.networkInsightsPathId}`;
 	}
 
@@ -5824,12 +8048,9 @@ export class EC2Resources {
 	 * Parses a network-insights-path ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInsightsPathArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInsightsPathId: string;
-	} {
+	static parseNetworkInsightsPathArn(
+		arn: string,
+	): EC2NetworkInsightsPathArnComponents {
 		const match = NetworkInsightsPathArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-insights-path ARN: ${arn}`);
@@ -5845,16 +8066,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the network-interface resource.
 	 */
-	static networkInterface(props: {
-		/** The NetworkInterfaceId component of the ARN. */
-		readonly networkInterfaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkInterface(props: EC2NetworkInterfaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:network-interface/${props.networkInterfaceId}`;
 	}
 
@@ -5869,12 +8081,9 @@ export class EC2Resources {
 	 * Parses a network-interface ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkInterfaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkInterfaceId: string;
-	} {
+	static parseNetworkInterfaceArn(
+		arn: string,
+	): EC2NetworkInterfaceArnComponents {
 		const match = NetworkInterfaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-interface ARN: ${arn}`);
@@ -5890,16 +8099,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the outpost-lag resource.
 	 */
-	static outpostLag(props: {
-		/** The OutpostLagId component of the ARN. */
-		readonly outpostLagId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static outpostLag(props: EC2OutpostLagArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:outpost-lag/${props.outpostLagId}`;
 	}
 
@@ -5914,12 +8114,7 @@ export class EC2Resources {
 	 * Parses a outpost-lag ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOutpostLagArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		outpostLagId: string;
-	} {
+	static parseOutpostLagArn(arn: string): EC2OutpostLagArnComponents {
 		const match = OutpostLagArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid outpost-lag ARN: ${arn}`);
@@ -5935,16 +8130,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the placement-group resource.
 	 */
-	static placementGroup(props: {
-		/** The PlacementGroupName component of the ARN. */
-		readonly placementGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static placementGroup(props: EC2PlacementGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:placement-group/${props.placementGroupName}`;
 	}
 
@@ -5959,12 +8145,7 @@ export class EC2Resources {
 	 * Parses a placement-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePlacementGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		placementGroupName: string;
-	} {
+	static parsePlacementGroupArn(arn: string): EC2PlacementGroupArnComponents {
 		const match = PlacementGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid placement-group ARN: ${arn}`);
@@ -5980,16 +8161,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the prefix-list resource.
 	 */
-	static prefixList(props: {
-		/** The PrefixListId component of the ARN. */
-		readonly prefixListId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static prefixList(props: EC2PrefixListArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:prefix-list/${props.prefixListId}`;
 	}
 
@@ -6004,12 +8176,7 @@ export class EC2Resources {
 	 * Parses a prefix-list ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrefixListArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		prefixListId: string;
-	} {
+	static parsePrefixListArn(arn: string): EC2PrefixListArnComponents {
 		const match = PrefixListArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid prefix-list ARN: ${arn}`);
@@ -6025,16 +8192,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the replace-root-volume-task resource.
 	 */
-	static replaceRootVolumeTask(props: {
-		/** The ReplaceRootVolumeTaskId component of the ARN. */
-		readonly replaceRootVolumeTaskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static replaceRootVolumeTask(
+		props: EC2ReplaceRootVolumeTaskArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:replace-root-volume-task/${props.replaceRootVolumeTaskId}`;
 	}
 
@@ -6049,12 +8209,9 @@ export class EC2Resources {
 	 * Parses a replace-root-volume-task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReplaceRootVolumeTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		replaceRootVolumeTaskId: string;
-	} {
+	static parseReplaceRootVolumeTaskArn(
+		arn: string,
+	): EC2ReplaceRootVolumeTaskArnComponents {
 		const match = ReplaceRootVolumeTaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid replace-root-volume-task ARN: ${arn}`);
@@ -6070,16 +8227,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the reserved-instances resource.
 	 */
-	static reservedInstances(props: {
-		/** The ReservationId component of the ARN. */
-		readonly reservationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reservedInstances(props: EC2ReservedInstancesArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:reserved-instances/${props.reservationId}`;
 	}
 
@@ -6094,12 +8242,9 @@ export class EC2Resources {
 	 * Parses a reserved-instances ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReservedInstancesArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reservationId: string;
-	} {
+	static parseReservedInstancesArn(
+		arn: string,
+	): EC2ReservedInstancesArnComponents {
 		const match = ReservedInstancesArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reserved-instances ARN: ${arn}`);
@@ -6115,14 +8260,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the role resource.
 	 */
-	static role(props: {
-		/** The RoleNameWithPath component of the ARN. */
-		readonly roleNameWithPath: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static role(props: EC2RoleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iam::${props.account ?? "*"}:role/${props.roleNameWithPath}`;
 	}
 
@@ -6137,11 +8275,7 @@ export class EC2Resources {
 	 * Parses a role ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoleArn(arn: string): {
-		partition: string;
-		account: string;
-		roleNameWithPath: string;
-	} {
+	static parseRoleArn(arn: string): EC2RoleArnComponents {
 		const match = RoleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid role ARN: ${arn}`);
@@ -6156,16 +8290,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the route-server resource.
 	 */
-	static routeServer(props: {
-		/** The RouteServerId component of the ARN. */
-		readonly routeServerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeServer(props: EC2RouteServerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:route-server/${props.routeServerId}`;
 	}
 
@@ -6180,12 +8305,7 @@ export class EC2Resources {
 	 * Parses a route-server ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteServerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		routeServerId: string;
-	} {
+	static parseRouteServerArn(arn: string): EC2RouteServerArnComponents {
 		const match = RouteServerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid route-server ARN: ${arn}`);
@@ -6201,16 +8321,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the route-server-endpoint resource.
 	 */
-	static routeServerEndpoint(props: {
-		/** The RouteServerEndpointId component of the ARN. */
-		readonly routeServerEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeServerEndpoint(props: EC2RouteServerEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:route-server-endpoint/${props.routeServerEndpointId}`;
 	}
 
@@ -6225,12 +8336,9 @@ export class EC2Resources {
 	 * Parses a route-server-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteServerEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		routeServerEndpointId: string;
-	} {
+	static parseRouteServerEndpointArn(
+		arn: string,
+	): EC2RouteServerEndpointArnComponents {
 		const match = RouteServerEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid route-server-endpoint ARN: ${arn}`);
@@ -6246,16 +8354,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the route-server-peer resource.
 	 */
-	static routeServerPeer(props: {
-		/** The RouteServerPeerId component of the ARN. */
-		readonly routeServerPeerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeServerPeer(props: EC2RouteServerPeerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:route-server-peer/${props.routeServerPeerId}`;
 	}
 
@@ -6270,12 +8369,7 @@ export class EC2Resources {
 	 * Parses a route-server-peer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteServerPeerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		routeServerPeerId: string;
-	} {
+	static parseRouteServerPeerArn(arn: string): EC2RouteServerPeerArnComponents {
 		const match = RouteServerPeerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid route-server-peer ARN: ${arn}`);
@@ -6291,16 +8385,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the route-table resource.
 	 */
-	static routeTable(props: {
-		/** The RouteTableId component of the ARN. */
-		readonly routeTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routeTable(props: EC2RouteTableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:route-table/${props.routeTableId}`;
 	}
 
@@ -6315,12 +8400,7 @@ export class EC2Resources {
 	 * Parses a route-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRouteTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		routeTableId: string;
-	} {
+	static parseRouteTableArn(arn: string): EC2RouteTableArnComponents {
 		const match = RouteTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid route-table ARN: ${arn}`);
@@ -6336,16 +8416,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the secondary-interface resource.
 	 */
-	static secondaryInterface(props: {
-		/** The SecondaryInterfaceId component of the ARN. */
-		readonly secondaryInterfaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static secondaryInterface(props: EC2SecondaryInterfaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:secondary-interface/${props.secondaryInterfaceId}`;
 	}
 
@@ -6360,12 +8431,9 @@ export class EC2Resources {
 	 * Parses a secondary-interface ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecondaryInterfaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		secondaryInterfaceId: string;
-	} {
+	static parseSecondaryInterfaceArn(
+		arn: string,
+	): EC2SecondaryInterfaceArnComponents {
 		const match = SecondaryInterfaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid secondary-interface ARN: ${arn}`);
@@ -6381,16 +8449,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the secondary-network resource.
 	 */
-	static secondaryNetwork(props: {
-		/** The SecondaryNetworkId component of the ARN. */
-		readonly secondaryNetworkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static secondaryNetwork(props: EC2SecondaryNetworkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:secondary-network/${props.secondaryNetworkId}`;
 	}
 
@@ -6405,12 +8464,9 @@ export class EC2Resources {
 	 * Parses a secondary-network ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecondaryNetworkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		secondaryNetworkId: string;
-	} {
+	static parseSecondaryNetworkArn(
+		arn: string,
+	): EC2SecondaryNetworkArnComponents {
 		const match = SecondaryNetworkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid secondary-network ARN: ${arn}`);
@@ -6426,16 +8482,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the secondary-subnet resource.
 	 */
-	static secondarySubnet(props: {
-		/** The SecondarySubnetId component of the ARN. */
-		readonly secondarySubnetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static secondarySubnet(props: EC2SecondarySubnetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:secondary-subnet/${props.secondarySubnetId}`;
 	}
 
@@ -6450,12 +8497,7 @@ export class EC2Resources {
 	 * Parses a secondary-subnet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecondarySubnetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		secondarySubnetId: string;
-	} {
+	static parseSecondarySubnetArn(arn: string): EC2SecondarySubnetArnComponents {
 		const match = SecondarySubnetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid secondary-subnet ARN: ${arn}`);
@@ -6471,16 +8513,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the security-group resource.
 	 */
-	static securityGroup(props: {
-		/** The SecurityGroupId component of the ARN. */
-		readonly securityGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityGroup(props: EC2SecurityGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:security-group/${props.securityGroupId}`;
 	}
 
@@ -6495,12 +8528,7 @@ export class EC2Resources {
 	 * Parses a security-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityGroupId: string;
-	} {
+	static parseSecurityGroupArn(arn: string): EC2SecurityGroupArnComponents {
 		const match = SecurityGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid security-group ARN: ${arn}`);
@@ -6516,16 +8544,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the security-group-rule resource.
 	 */
-	static securityGroupRule(props: {
-		/** The SecurityGroupRuleId component of the ARN. */
-		readonly securityGroupRuleId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityGroupRule(props: EC2SecurityGroupRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:security-group-rule/${props.securityGroupRuleId}`;
 	}
 
@@ -6540,12 +8559,9 @@ export class EC2Resources {
 	 * Parses a security-group-rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityGroupRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityGroupRuleId: string;
-	} {
+	static parseSecurityGroupRuleArn(
+		arn: string,
+	): EC2SecurityGroupRuleArnComponents {
 		const match = SecurityGroupRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid security-group-rule ARN: ${arn}`);
@@ -6561,16 +8577,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
-	static snapshot(props: {
-		/** The SnapshotId component of the ARN. */
-		readonly snapshotId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshot(props: EC2SnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}::snapshot/${props.snapshotId}`;
 	}
 
@@ -6585,12 +8592,7 @@ export class EC2Resources {
 	 * Parses a snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		snapshotId: string;
-	} {
+	static parseSnapshotArn(arn: string): EC2SnapshotArnComponents {
 		const match = SnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot ARN: ${arn}`);
@@ -6606,16 +8608,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the spot-fleet-request resource.
 	 */
-	static spotFleetRequest(props: {
-		/** The SpotFleetRequestId component of the ARN. */
-		readonly spotFleetRequestId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static spotFleetRequest(props: EC2SpotFleetRequestArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:spot-fleet-request/${props.spotFleetRequestId}`;
 	}
 
@@ -6630,12 +8623,9 @@ export class EC2Resources {
 	 * Parses a spot-fleet-request ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSpotFleetRequestArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		spotFleetRequestId: string;
-	} {
+	static parseSpotFleetRequestArn(
+		arn: string,
+	): EC2SpotFleetRequestArnComponents {
 		const match = SpotFleetRequestArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid spot-fleet-request ARN: ${arn}`);
@@ -6651,16 +8641,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the spot-instances-request resource.
 	 */
-	static spotInstancesRequest(props: {
-		/** The SpotInstanceRequestId component of the ARN. */
-		readonly spotInstanceRequestId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static spotInstancesRequest(props: EC2SpotInstancesRequestArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:spot-instances-request/${props.spotInstanceRequestId}`;
 	}
 
@@ -6675,12 +8656,9 @@ export class EC2Resources {
 	 * Parses a spot-instances-request ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSpotInstancesRequestArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		spotInstanceRequestId: string;
-	} {
+	static parseSpotInstancesRequestArn(
+		arn: string,
+	): EC2SpotInstancesRequestArnComponents {
 		const match = SpotInstancesRequestArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid spot-instances-request ARN: ${arn}`);
@@ -6696,16 +8674,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the subnet resource.
 	 */
-	static subnet(props: {
-		/** The SubnetId component of the ARN. */
-		readonly subnetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subnet(props: EC2SubnetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:subnet/${props.subnetId}`;
 	}
 
@@ -6720,12 +8689,7 @@ export class EC2Resources {
 	 * Parses a subnet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubnetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subnetId: string;
-	} {
+	static parseSubnetArn(arn: string): EC2SubnetArnComponents {
 		const match = SubnetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subnet ARN: ${arn}`);
@@ -6741,16 +8705,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the subnet-cidr-reservation resource.
 	 */
-	static subnetCidrReservation(props: {
-		/** The SubnetCidrReservationId component of the ARN. */
-		readonly subnetCidrReservationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subnetCidrReservation(
+		props: EC2SubnetCidrReservationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:subnet-cidr-reservation/${props.subnetCidrReservationId}`;
 	}
 
@@ -6765,12 +8722,9 @@ export class EC2Resources {
 	 * Parses a subnet-cidr-reservation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubnetCidrReservationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subnetCidrReservationId: string;
-	} {
+	static parseSubnetCidrReservationArn(
+		arn: string,
+	): EC2SubnetCidrReservationArnComponents {
 		const match = SubnetCidrReservationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subnet-cidr-reservation ARN: ${arn}`);
@@ -6786,16 +8740,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the traffic-mirror-filter resource.
 	 */
-	static trafficMirrorFilter(props: {
-		/** The TrafficMirrorFilterId component of the ARN. */
-		readonly trafficMirrorFilterId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trafficMirrorFilter(props: EC2TrafficMirrorFilterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:traffic-mirror-filter/${props.trafficMirrorFilterId}`;
 	}
 
@@ -6810,12 +8755,9 @@ export class EC2Resources {
 	 * Parses a traffic-mirror-filter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrafficMirrorFilterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trafficMirrorFilterId: string;
-	} {
+	static parseTrafficMirrorFilterArn(
+		arn: string,
+	): EC2TrafficMirrorFilterArnComponents {
 		const match = TrafficMirrorFilterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid traffic-mirror-filter ARN: ${arn}`);
@@ -6831,16 +8773,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the traffic-mirror-filter-rule resource.
 	 */
-	static trafficMirrorFilterRule(props: {
-		/** The TrafficMirrorFilterRuleId component of the ARN. */
-		readonly trafficMirrorFilterRuleId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trafficMirrorFilterRule(
+		props: EC2TrafficMirrorFilterRuleArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:traffic-mirror-filter-rule/${props.trafficMirrorFilterRuleId}`;
 	}
 
@@ -6855,12 +8790,9 @@ export class EC2Resources {
 	 * Parses a traffic-mirror-filter-rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrafficMirrorFilterRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trafficMirrorFilterRuleId: string;
-	} {
+	static parseTrafficMirrorFilterRuleArn(
+		arn: string,
+	): EC2TrafficMirrorFilterRuleArnComponents {
 		const match = TrafficMirrorFilterRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid traffic-mirror-filter-rule ARN: ${arn}`);
@@ -6876,16 +8808,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the traffic-mirror-session resource.
 	 */
-	static trafficMirrorSession(props: {
-		/** The TrafficMirrorSessionId component of the ARN. */
-		readonly trafficMirrorSessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trafficMirrorSession(props: EC2TrafficMirrorSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:traffic-mirror-session/${props.trafficMirrorSessionId}`;
 	}
 
@@ -6900,12 +8823,9 @@ export class EC2Resources {
 	 * Parses a traffic-mirror-session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrafficMirrorSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trafficMirrorSessionId: string;
-	} {
+	static parseTrafficMirrorSessionArn(
+		arn: string,
+	): EC2TrafficMirrorSessionArnComponents {
 		const match = TrafficMirrorSessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid traffic-mirror-session ARN: ${arn}`);
@@ -6921,16 +8841,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the traffic-mirror-target resource.
 	 */
-	static trafficMirrorTarget(props: {
-		/** The TrafficMirrorTargetId component of the ARN. */
-		readonly trafficMirrorTargetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trafficMirrorTarget(props: EC2TrafficMirrorTargetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:traffic-mirror-target/${props.trafficMirrorTargetId}`;
 	}
 
@@ -6945,12 +8856,9 @@ export class EC2Resources {
 	 * Parses a traffic-mirror-target ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrafficMirrorTargetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		trafficMirrorTargetId: string;
-	} {
+	static parseTrafficMirrorTargetArn(
+		arn: string,
+	): EC2TrafficMirrorTargetArnComponents {
 		const match = TrafficMirrorTargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid traffic-mirror-target ARN: ${arn}`);
@@ -6966,16 +8874,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway resource.
 	 */
-	static transitGateway(props: {
-		/** The TransitGatewayId component of the ARN. */
-		readonly transitGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGateway(props: EC2TransitGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway/${props.transitGatewayId}`;
 	}
 
@@ -6990,12 +8889,7 @@ export class EC2Resources {
 	 * Parses a transit-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayId: string;
-	} {
+	static parseTransitGatewayArn(arn: string): EC2TransitGatewayArnComponents {
 		const match = TransitGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway ARN: ${arn}`);
@@ -7011,16 +8905,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-attachment resource.
 	 */
-	static transitGatewayAttachment(props: {
-		/** The TransitGatewayAttachmentId component of the ARN. */
-		readonly transitGatewayAttachmentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayAttachment(
+		props: EC2TransitGatewayAttachmentArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-attachment/${props.transitGatewayAttachmentId}`;
 	}
 
@@ -7035,12 +8922,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-attachment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayAttachmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayAttachmentId: string;
-	} {
+	static parseTransitGatewayAttachmentArn(
+		arn: string,
+	): EC2TransitGatewayAttachmentArnComponents {
 		const match = TransitGatewayAttachmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-attachment ARN: ${arn}`);
@@ -7056,16 +8940,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-connect-peer resource.
 	 */
-	static transitGatewayConnectPeer(props: {
-		/** The TransitGatewayConnectPeerId component of the ARN. */
-		readonly transitGatewayConnectPeerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayConnectPeer(
+		props: EC2TransitGatewayConnectPeerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-connect-peer/${props.transitGatewayConnectPeerId}`;
 	}
 
@@ -7080,12 +8957,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-connect-peer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayConnectPeerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayConnectPeerId: string;
-	} {
+	static parseTransitGatewayConnectPeerArn(
+		arn: string,
+	): EC2TransitGatewayConnectPeerArnComponents {
 		const match = TransitGatewayConnectPeerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-connect-peer ARN: ${arn}`);
@@ -7101,16 +8975,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-metering-policy resource.
 	 */
-	static transitGatewayMeteringPolicy(props: {
-		/** The TransitGatewayMeteringPolicyId component of the ARN. */
-		readonly transitGatewayMeteringPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayMeteringPolicy(
+		props: EC2TransitGatewayMeteringPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-metering-policy/${props.transitGatewayMeteringPolicyId}`;
 	}
 
@@ -7125,12 +8992,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-metering-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayMeteringPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayMeteringPolicyId: string;
-	} {
+	static parseTransitGatewayMeteringPolicyArn(
+		arn: string,
+	): EC2TransitGatewayMeteringPolicyArnComponents {
 		const match = TransitGatewayMeteringPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-metering-policy ARN: ${arn}`);
@@ -7147,16 +9011,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-multicast-domain resource.
 	 */
-	static transitGatewayMulticastDomain(props: {
-		/** The TransitGatewayMulticastDomainId component of the ARN. */
-		readonly transitGatewayMulticastDomainId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayMulticastDomain(
+		props: EC2TransitGatewayMulticastDomainArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-multicast-domain/${props.transitGatewayMulticastDomainId}`;
 	}
 
@@ -7171,12 +9028,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-multicast-domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayMulticastDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayMulticastDomainId: string;
-	} {
+	static parseTransitGatewayMulticastDomainArn(
+		arn: string,
+	): EC2TransitGatewayMulticastDomainArnComponents {
 		const match = TransitGatewayMulticastDomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-multicast-domain ARN: ${arn}`);
@@ -7193,16 +9047,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-policy-table resource.
 	 */
-	static transitGatewayPolicyTable(props: {
-		/** The TransitGatewayPolicyTableId component of the ARN. */
-		readonly transitGatewayPolicyTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayPolicyTable(
+		props: EC2TransitGatewayPolicyTableArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-policy-table/${props.transitGatewayPolicyTableId}`;
 	}
 
@@ -7217,12 +9064,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-policy-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayPolicyTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayPolicyTableId: string;
-	} {
+	static parseTransitGatewayPolicyTableArn(
+		arn: string,
+	): EC2TransitGatewayPolicyTableArnComponents {
 		const match = TransitGatewayPolicyTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-policy-table ARN: ${arn}`);
@@ -7238,16 +9082,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-route-table resource.
 	 */
-	static transitGatewayRouteTable(props: {
-		/** The TransitGatewayRouteTableId component of the ARN. */
-		readonly transitGatewayRouteTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayRouteTable(
+		props: EC2TransitGatewayRouteTableArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-route-table/${props.transitGatewayRouteTableId}`;
 	}
 
@@ -7262,12 +9099,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-route-table ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayRouteTableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayRouteTableId: string;
-	} {
+	static parseTransitGatewayRouteTableArn(
+		arn: string,
+	): EC2TransitGatewayRouteTableArnComponents {
 		const match = TransitGatewayRouteTableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid transit-gateway-route-table ARN: ${arn}`);
@@ -7283,16 +9117,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the transit-gateway-route-table-announcement resource.
 	 */
-	static transitGatewayRouteTableAnnouncement(props: {
-		/** The TransitGatewayRouteTableAnnouncementId component of the ARN. */
-		readonly transitGatewayRouteTableAnnouncementId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static transitGatewayRouteTableAnnouncement(
+		props: EC2TransitGatewayRouteTableAnnouncementArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:transit-gateway-route-table-announcement/${props.transitGatewayRouteTableAnnouncementId}`;
 	}
 
@@ -7307,12 +9134,9 @@ export class EC2Resources {
 	 * Parses a transit-gateway-route-table-announcement ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTransitGatewayRouteTableAnnouncementArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		transitGatewayRouteTableAnnouncementId: string;
-	} {
+	static parseTransitGatewayRouteTableAnnouncementArn(
+		arn: string,
+	): EC2TransitGatewayRouteTableAnnouncementArnComponents {
 		const match = TransitGatewayRouteTableAnnouncementArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -7331,16 +9155,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-endpoint resource.
 	 */
-	static verifiedAccessEndpoint(props: {
-		/** The VerifiedAccessEndpointId component of the ARN. */
-		readonly verifiedAccessEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessEndpoint(
+		props: EC2VerifiedAccessEndpointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-endpoint/${props.verifiedAccessEndpointId}`;
 	}
 
@@ -7355,12 +9172,9 @@ export class EC2Resources {
 	 * Parses a verified-access-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessEndpointId: string;
-	} {
+	static parseVerifiedAccessEndpointArn(
+		arn: string,
+	): EC2VerifiedAccessEndpointArnComponents {
 		const match = VerifiedAccessEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-endpoint ARN: ${arn}`);
@@ -7376,16 +9190,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-endpoint-target resource.
 	 */
-	static verifiedAccessEndpointTarget(props: {
-		/** The VerifiedAccessEndpointTargetId component of the ARN. */
-		readonly verifiedAccessEndpointTargetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessEndpointTarget(
+		props: EC2VerifiedAccessEndpointTargetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-endpoint-target/${props.verifiedAccessEndpointTargetId}`;
 	}
 
@@ -7400,12 +9207,9 @@ export class EC2Resources {
 	 * Parses a verified-access-endpoint-target ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessEndpointTargetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessEndpointTargetId: string;
-	} {
+	static parseVerifiedAccessEndpointTargetArn(
+		arn: string,
+	): EC2VerifiedAccessEndpointTargetArnComponents {
 		const match = VerifiedAccessEndpointTargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-endpoint-target ARN: ${arn}`);
@@ -7422,16 +9226,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-group resource.
 	 */
-	static verifiedAccessGroup(props: {
-		/** The VerifiedAccessGroupId component of the ARN. */
-		readonly verifiedAccessGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessGroup(props: EC2VerifiedAccessGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-group/${props.verifiedAccessGroupId}`;
 	}
 
@@ -7446,12 +9241,9 @@ export class EC2Resources {
 	 * Parses a verified-access-group ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessGroupId: string;
-	} {
+	static parseVerifiedAccessGroupArn(
+		arn: string,
+	): EC2VerifiedAccessGroupArnComponents {
 		const match = VerifiedAccessGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-group ARN: ${arn}`);
@@ -7467,16 +9259,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-instance resource.
 	 */
-	static verifiedAccessInstance(props: {
-		/** The VerifiedAccessInstanceId component of the ARN. */
-		readonly verifiedAccessInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessInstance(
+		props: EC2VerifiedAccessInstanceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-instance/${props.verifiedAccessInstanceId}`;
 	}
 
@@ -7491,12 +9276,9 @@ export class EC2Resources {
 	 * Parses a verified-access-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessInstanceId: string;
-	} {
+	static parseVerifiedAccessInstanceArn(
+		arn: string,
+	): EC2VerifiedAccessInstanceArnComponents {
 		const match = VerifiedAccessInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-instance ARN: ${arn}`);
@@ -7512,16 +9294,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-policy resource.
 	 */
-	static verifiedAccessPolicy(props: {
-		/** The VerifiedAccessPolicyId component of the ARN. */
-		readonly verifiedAccessPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessPolicy(props: EC2VerifiedAccessPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-policy/${props.verifiedAccessPolicyId}`;
 	}
 
@@ -7536,12 +9309,9 @@ export class EC2Resources {
 	 * Parses a verified-access-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessPolicyId: string;
-	} {
+	static parseVerifiedAccessPolicyArn(
+		arn: string,
+	): EC2VerifiedAccessPolicyArnComponents {
 		const match = VerifiedAccessPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-policy ARN: ${arn}`);
@@ -7557,16 +9327,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the verified-access-trust-provider resource.
 	 */
-	static verifiedAccessTrustProvider(props: {
-		/** The VerifiedAccessTrustProviderId component of the ARN. */
-		readonly verifiedAccessTrustProviderId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static verifiedAccessTrustProvider(
+		props: EC2VerifiedAccessTrustProviderArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:verified-access-trust-provider/${props.verifiedAccessTrustProviderId}`;
 	}
 
@@ -7581,12 +9344,9 @@ export class EC2Resources {
 	 * Parses a verified-access-trust-provider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVerifiedAccessTrustProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		verifiedAccessTrustProviderId: string;
-	} {
+	static parseVerifiedAccessTrustProviderArn(
+		arn: string,
+	): EC2VerifiedAccessTrustProviderArnComponents {
 		const match = VerifiedAccessTrustProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid verified-access-trust-provider ARN: ${arn}`);
@@ -7603,16 +9363,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the volume resource.
 	 */
-	static volume(props: {
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static volume(props: EC2VolumeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:volume/${props.volumeId}`;
 	}
 
@@ -7627,12 +9378,7 @@ export class EC2Resources {
 	 * Parses a volume ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVolumeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		volumeId: string;
-	} {
+	static parseVolumeArn(arn: string): EC2VolumeArnComponents {
 		const match = VolumeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid volume ARN: ${arn}`);
@@ -7648,16 +9394,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc resource.
 	 */
-	static vpc(props: {
-		/** The VpcId component of the ARN. */
-		readonly vpcId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpc(props: EC2VPCArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc/${props.vpcId}`;
 	}
 
@@ -7672,12 +9409,7 @@ export class EC2Resources {
 	 * Parses a vpc ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcId: string;
-	} {
+	static parseVPCArn(arn: string): EC2VPCArnComponents {
 		const match = VPCArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc ARN: ${arn}`);
@@ -7693,16 +9425,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-block-public-access-exclusion resource.
 	 */
-	static vpcBlockPublicAccessExclusion(props: {
-		/** The VpcBlockPublicAccessExclusionId component of the ARN. */
-		readonly vpcBlockPublicAccessExclusionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcBlockPublicAccessExclusion(
+		props: EC2VPCBlockPublicAccessExclusionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-block-public-access-exclusion/${props.vpcBlockPublicAccessExclusionId}`;
 	}
 
@@ -7717,12 +9442,9 @@ export class EC2Resources {
 	 * Parses a vpc-block-public-access-exclusion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCBlockPublicAccessExclusionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcBlockPublicAccessExclusionId: string;
-	} {
+	static parseVPCBlockPublicAccessExclusionArn(
+		arn: string,
+	): EC2VPCBlockPublicAccessExclusionArnComponents {
 		const match = VPCBlockPublicAccessExclusionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-block-public-access-exclusion ARN: ${arn}`);
@@ -7739,16 +9461,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-encryption-control resource.
 	 */
-	static vpcEncryptionControl(props: {
-		/** The VpcEncryptionControlId component of the ARN. */
-		readonly vpcEncryptionControlId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcEncryptionControl(props: EC2VPCEncryptionControlArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-encryption-control/${props.vpcEncryptionControlId}`;
 	}
 
@@ -7763,12 +9476,9 @@ export class EC2Resources {
 	 * Parses a vpc-encryption-control ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCEncryptionControlArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcEncryptionControlId: string;
-	} {
+	static parseVPCEncryptionControlArn(
+		arn: string,
+	): EC2VPCEncryptionControlArnComponents {
 		const match = VPCEncryptionControlArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-encryption-control ARN: ${arn}`);
@@ -7784,16 +9494,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-endpoint resource.
 	 */
-	static vpcEndpoint(props: {
-		/** The VpcEndpointId component of the ARN. */
-		readonly vpcEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcEndpoint(props: EC2VPCEndpointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-endpoint/${props.vpcEndpointId}`;
 	}
 
@@ -7808,12 +9509,7 @@ export class EC2Resources {
 	 * Parses a vpc-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcEndpointId: string;
-	} {
+	static parseVPCEndpointArn(arn: string): EC2VPCEndpointArnComponents {
 		const match = VPCEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-endpoint ARN: ${arn}`);
@@ -7829,16 +9525,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-endpoint-connection resource.
 	 */
-	static vpcEndpointConnection(props: {
-		/** The VpcEndpointConnectionId component of the ARN. */
-		readonly vpcEndpointConnectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcEndpointConnection(
+		props: EC2VPCEndpointConnectionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-endpoint-connection/${props.vpcEndpointConnectionId}`;
 	}
 
@@ -7853,12 +9542,9 @@ export class EC2Resources {
 	 * Parses a vpc-endpoint-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCEndpointConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcEndpointConnectionId: string;
-	} {
+	static parseVPCEndpointConnectionArn(
+		arn: string,
+	): EC2VPCEndpointConnectionArnComponents {
 		const match = VPCEndpointConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-endpoint-connection ARN: ${arn}`);
@@ -7874,16 +9560,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-endpoint-service resource.
 	 */
-	static vpcEndpointService(props: {
-		/** The VpcEndpointServiceId component of the ARN. */
-		readonly vpcEndpointServiceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcEndpointService(props: EC2VPCEndpointServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-endpoint-service/${props.vpcEndpointServiceId}`;
 	}
 
@@ -7898,12 +9575,9 @@ export class EC2Resources {
 	 * Parses a vpc-endpoint-service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCEndpointServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcEndpointServiceId: string;
-	} {
+	static parseVPCEndpointServiceArn(
+		arn: string,
+	): EC2VPCEndpointServiceArnComponents {
 		const match = VPCEndpointServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-endpoint-service ARN: ${arn}`);
@@ -7919,16 +9593,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-endpoint-service-permission resource.
 	 */
-	static vpcEndpointServicePermission(props: {
-		/** The VpcEndpointServicePermissionId component of the ARN. */
-		readonly vpcEndpointServicePermissionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcEndpointServicePermission(
+		props: EC2VPCEndpointServicePermissionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-endpoint-service-permission/${props.vpcEndpointServicePermissionId}`;
 	}
 
@@ -7943,12 +9610,9 @@ export class EC2Resources {
 	 * Parses a vpc-endpoint-service-permission ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCEndpointServicePermissionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcEndpointServicePermissionId: string;
-	} {
+	static parseVPCEndpointServicePermissionArn(
+		arn: string,
+	): EC2VPCEndpointServicePermissionArnComponents {
 		const match = VPCEndpointServicePermissionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-endpoint-service-permission ARN: ${arn}`);
@@ -7965,16 +9629,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-flow-log resource.
 	 */
-	static vpcFlowLog(props: {
-		/** The VpcFlowLogId component of the ARN. */
-		readonly vpcFlowLogId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcFlowLog(props: EC2VPCFlowLogArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-flow-log/${props.vpcFlowLogId}`;
 	}
 
@@ -7989,12 +9644,7 @@ export class EC2Resources {
 	 * Parses a vpc-flow-log ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCFlowLogArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcFlowLogId: string;
-	} {
+	static parseVPCFlowLogArn(arn: string): EC2VPCFlowLogArnComponents {
 		const match = VPCFlowLogArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-flow-log ARN: ${arn}`);
@@ -8010,16 +9660,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpc-peering-connection resource.
 	 */
-	static vpcPeeringConnection(props: {
-		/** The VpcPeeringConnectionId component of the ARN. */
-		readonly vpcPeeringConnectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcPeeringConnection(props: EC2VPCPeeringConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpc-peering-connection/${props.vpcPeeringConnectionId}`;
 	}
 
@@ -8034,12 +9675,9 @@ export class EC2Resources {
 	 * Parses a vpc-peering-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPCPeeringConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcPeeringConnectionId: string;
-	} {
+	static parseVPCPeeringConnectionArn(
+		arn: string,
+	): EC2VPCPeeringConnectionArnComponents {
 		const match = VPCPeeringConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpc-peering-connection ARN: ${arn}`);
@@ -8055,16 +9693,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpn-concentrator resource.
 	 */
-	static vpnConcentrator(props: {
-		/** The VpnConcentratorId component of the ARN. */
-		readonly vpnConcentratorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpnConcentrator(props: EC2VPNConcentratorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpn-concentrator/${props.vpnConcentratorId}`;
 	}
 
@@ -8079,12 +9708,7 @@ export class EC2Resources {
 	 * Parses a vpn-concentrator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPNConcentratorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpnConcentratorId: string;
-	} {
+	static parseVPNConcentratorArn(arn: string): EC2VPNConcentratorArnComponents {
 		const match = VPNConcentratorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpn-concentrator ARN: ${arn}`);
@@ -8100,16 +9724,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpn-connection resource.
 	 */
-	static vpnConnection(props: {
-		/** The VpnConnectionId component of the ARN. */
-		readonly vpnConnectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpnConnection(props: EC2VPNConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpn-connection/${props.vpnConnectionId}`;
 	}
 
@@ -8124,12 +9739,7 @@ export class EC2Resources {
 	 * Parses a vpn-connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPNConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpnConnectionId: string;
-	} {
+	static parseVPNConnectionArn(arn: string): EC2VPNConnectionArnComponents {
 		const match = VPNConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpn-connection ARN: ${arn}`);
@@ -8145,16 +9755,9 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpn-connection-device-type resource.
 	 */
-	static vpnConnectionDeviceType(props: {
-		/** The VpnConnectionDeviceTypeId component of the ARN. */
-		readonly vpnConnectionDeviceTypeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpnConnectionDeviceType(
+		props: EC2VPNConnectionDeviceTypeArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpn-connection-device-type/${props.vpnConnectionDeviceTypeId}`;
 	}
 
@@ -8169,12 +9772,9 @@ export class EC2Resources {
 	 * Parses a vpn-connection-device-type ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPNConnectionDeviceTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpnConnectionDeviceTypeId: string;
-	} {
+	static parseVPNConnectionDeviceTypeArn(
+		arn: string,
+	): EC2VPNConnectionDeviceTypeArnComponents {
 		const match = VPNConnectionDeviceTypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpn-connection-device-type ARN: ${arn}`);
@@ -8190,16 +9790,7 @@ export class EC2Resources {
 	/**
 	 * Builds an ARN for the vpn-gateway resource.
 	 */
-	static vpnGateway(props: {
-		/** The VpnGatewayId component of the ARN. */
-		readonly vpnGatewayId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpnGateway(props: EC2VPNGatewayArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:vpn-gateway/${props.vpnGatewayId}`;
 	}
 
@@ -8214,12 +9805,7 @@ export class EC2Resources {
 	 * Parses a vpn-gateway ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVPNGatewayArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpnGatewayId: string;
-	} {
+	static parseVPNGatewayArn(arn: string): EC2VPNGatewayArnComponents {
 		const match = VPNGatewayArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpn-gateway ARN: ${arn}`);
@@ -8238,2977 +9824,2926 @@ export class EC2Resources {
  */
 export class EC2Operations {
 	/** IAM actions required for the AcceptAddressTransfer API call. */
-	static readonly ACCEPT_ADDRESS_TRANSFER: string[] = [
+	static readonly AcceptAddressTransfer: string[] = [
 		"ec2:AcceptAddressTransfer",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the AcceptCapacityReservationBillingOwnership API call. */
-	static readonly ACCEPT_CAPACITY_RESERVATION_BILLING_OWNERSHIP: string[] = [
+	static readonly AcceptCapacityReservationBillingOwnership: string[] = [
 		"ec2:AcceptCapacityReservationBillingOwnership",
 	];
 	/** IAM actions required for the AcceptReservedInstancesExchangeQuote API call. */
-	static readonly ACCEPT_RESERVED_INSTANCES_EXCHANGE_QUOTE: string[] = [
+	static readonly AcceptReservedInstancesExchangeQuote: string[] = [
 		"ec2:AcceptReservedInstancesExchangeQuote",
 	];
 	/** IAM actions required for the AcceptTransitGatewayClientVpnAttachment API call. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT: string[] = [
+	static readonly AcceptTransitGatewayClientVpnAttachment: string[] = [
 		"ec2:AcceptTransitGatewayClientVpnAttachment",
 	];
 	/** IAM actions required for the AcceptTransitGatewayMulticastDomainAssociations API call. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS: string[] =
-		["ec2:AcceptTransitGatewayMulticastDomainAssociations"];
+	static readonly AcceptTransitGatewayMulticastDomainAssociations: string[] = [
+		"ec2:AcceptTransitGatewayMulticastDomainAssociations",
+	];
 	/** IAM actions required for the AcceptTransitGatewayPeeringAttachment API call. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_PEERING_ATTACHMENT: string[] = [
+	static readonly AcceptTransitGatewayPeeringAttachment: string[] = [
 		"ec2:AcceptTransitGatewayPeeringAttachment",
 	];
 	/** IAM actions required for the AcceptTransitGatewayVpcAttachment API call. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_VPC_ATTACHMENT: string[] = [
+	static readonly AcceptTransitGatewayVpcAttachment: string[] = [
 		"ec2:AcceptTransitGatewayVpcAttachment",
 	];
 	/** IAM actions required for the AcceptVpcEndpointConnections API call. */
-	static readonly ACCEPT_VPC_ENDPOINT_CONNECTIONS: string[] = [
+	static readonly AcceptVpcEndpointConnections: string[] = [
 		"ec2:AcceptVpcEndpointConnections",
 	];
 	/** IAM actions required for the AcceptVpcPeeringConnection API call. */
-	static readonly ACCEPT_VPC_PEERING_CONNECTION: string[] = [
+	static readonly AcceptVpcPeeringConnection: string[] = [
 		"ec2:AcceptVpcPeeringConnection",
 	];
 	/** IAM actions required for the AdvertiseByoipCidr API call. */
-	static readonly ADVERTISE_BYOIP_CIDR: string[] = ["ec2:AdvertiseByoipCidr"];
+	static readonly AdvertiseByoipCidr: string[] = ["ec2:AdvertiseByoipCidr"];
 	/** IAM actions required for the AllocateAddress API call. */
-	static readonly ALLOCATE_ADDRESS: string[] = [
+	static readonly AllocateAddress: string[] = [
 		"ec2:AllocateAddress",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the AllocateHosts API call. */
-	static readonly ALLOCATE_HOSTS: string[] = [
+	static readonly AllocateHosts: string[] = [
 		"ec2:AllocateHosts",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the AllocateIpamPoolCidr API call. */
-	static readonly ALLOCATE_IPAM_POOL_CIDR: string[] = [
+	static readonly AllocateIpamPoolCidr: string[] = [
 		"ec2:AllocateIpamPoolCidr",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the ApplySecurityGroupsToClientVpnTargetNetwork API call. */
-	static readonly APPLY_SECURITY_GROUPS_TO_CLIENT_VPN_TARGET_NETWORK: string[] =
-		["ec2:ApplySecurityGroupsToClientVpnTargetNetwork"];
+	static readonly ApplySecurityGroupsToClientVpnTargetNetwork: string[] = [
+		"ec2:ApplySecurityGroupsToClientVpnTargetNetwork",
+	];
 	/** IAM actions required for the AssignIpv6Addresses API call. */
-	static readonly ASSIGN_IPV6_ADDRESSES: string[] = ["ec2:AssignIpv6Addresses"];
+	static readonly AssignIpv6Addresses: string[] = ["ec2:AssignIpv6Addresses"];
 	/** IAM actions required for the AssignPrivateIpAddresses API call. */
-	static readonly ASSIGN_PRIVATE_IP_ADDRESSES: string[] = [
+	static readonly AssignPrivateIpAddresses: string[] = [
 		"ec2:AssignPrivateIpAddresses",
 	];
 	/** IAM actions required for the AssignPrivateNatGatewayAddress API call. */
-	static readonly ASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS: string[] = [
+	static readonly AssignPrivateNatGatewayAddress: string[] = [
 		"ec2:AssignPrivateNatGatewayAddress",
 	];
 	/** IAM actions required for the AssociateAddress API call. */
-	static readonly ASSOCIATE_ADDRESS: string[] = ["ec2:AssociateAddress"];
+	static readonly AssociateAddress: string[] = ["ec2:AssociateAddress"];
 	/** IAM actions required for the AssociateApplicationStatusCheck API call. */
-	static readonly ASSOCIATE_APPLICATION_STATUS_CHECK: string[] = [];
+	static readonly AssociateApplicationStatusCheck: string[] = [];
 	/** IAM actions required for the AssociateCapacityReservationBillingOwner API call. */
-	static readonly ASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER: string[] = [
+	static readonly AssociateCapacityReservationBillingOwner: string[] = [
 		"ec2:AssociateCapacityReservationBillingOwner",
 	];
 	/** IAM actions required for the AssociateClientVpnTargetNetwork API call. */
-	static readonly ASSOCIATE_CLIENT_VPN_TARGET_NETWORK: string[] = [
+	static readonly AssociateClientVpnTargetNetwork: string[] = [
 		"ec2:AssociateClientVpnTargetNetwork",
 	];
 	/** IAM actions required for the AssociateDhcpOptions API call. */
-	static readonly ASSOCIATE_DHCP_OPTIONS: string[] = [
-		"ec2:AssociateDhcpOptions",
-	];
+	static readonly AssociateDhcpOptions: string[] = ["ec2:AssociateDhcpOptions"];
 	/** IAM actions required for the AssociateEnclaveCertificateIamRole API call. */
-	static readonly ASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE: string[] = [
+	static readonly AssociateEnclaveCertificateIamRole: string[] = [
 		"ec2:AssociateEnclaveCertificateIamRole",
 	];
 	/** IAM actions required for the AssociateIamInstanceProfile API call. */
-	static readonly ASSOCIATE_IAM_INSTANCE_PROFILE: string[] = [
+	static readonly AssociateIamInstanceProfile: string[] = [
 		"ec2:AssociateIamInstanceProfile",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AssociateInstanceEventWindow API call. */
-	static readonly ASSOCIATE_INSTANCE_EVENT_WINDOW: string[] = [
+	static readonly AssociateInstanceEventWindow: string[] = [
 		"ec2:AssociateInstanceEventWindow",
 	];
 	/** IAM actions required for the AssociateIpamByoasn API call. */
-	static readonly ASSOCIATE_IPAM_BYOASN: string[] = ["ec2:AssociateIpamByoasn"];
+	static readonly AssociateIpamByoasn: string[] = ["ec2:AssociateIpamByoasn"];
 	/** IAM actions required for the AssociateIpamResourceDiscovery API call. */
-	static readonly ASSOCIATE_IPAM_RESOURCE_DISCOVERY: string[] = [
+	static readonly AssociateIpamResourceDiscovery: string[] = [
 		"ec2:AssociateIpamResourceDiscovery",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the AssociateNatGatewayAddress API call. */
-	static readonly ASSOCIATE_NAT_GATEWAY_ADDRESS: string[] = [
+	static readonly AssociateNatGatewayAddress: string[] = [
 		"ec2:AssociateNatGatewayAddress",
 	];
 	/** IAM actions required for the AssociateRouteServer API call. */
-	static readonly ASSOCIATE_ROUTE_SERVER: string[] = [
-		"ec2:AssociateRouteServer",
-	];
+	static readonly AssociateRouteServer: string[] = ["ec2:AssociateRouteServer"];
 	/** IAM actions required for the AssociateRouteTable API call. */
-	static readonly ASSOCIATE_ROUTE_TABLE: string[] = ["ec2:AssociateRouteTable"];
+	static readonly AssociateRouteTable: string[] = ["ec2:AssociateRouteTable"];
 	/** IAM actions required for the AssociateSecurityGroupVpc API call. */
-	static readonly ASSOCIATE_SECURITY_GROUP_VPC: string[] = [
+	static readonly AssociateSecurityGroupVpc: string[] = [
 		"ec2:AssociateSecurityGroupVpc",
 	];
 	/** IAM actions required for the AssociateSubnetCidrBlock API call. */
-	static readonly ASSOCIATE_SUBNET_CIDR_BLOCK: string[] = [
+	static readonly AssociateSubnetCidrBlock: string[] = [
 		"ec2:AssociateSubnetCidrBlock",
 	];
 	/** IAM actions required for the AssociateTransitGatewayMulticastDomain API call. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN: string[] = [
+	static readonly AssociateTransitGatewayMulticastDomain: string[] = [
 		"ec2:AssociateTransitGatewayMulticastDomain",
 	];
 	/** IAM actions required for the AssociateTransitGatewayPolicyTable API call. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE: string[] = [
+	static readonly AssociateTransitGatewayPolicyTable: string[] = [
 		"ec2:AssociateTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the AssociateTransitGatewayRouteTable API call. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly AssociateTransitGatewayRouteTable: string[] = [
 		"ec2:AssociateTransitGatewayRouteTable",
 	];
 	/** IAM actions required for the AssociateTrunkInterface API call. */
-	static readonly ASSOCIATE_TRUNK_INTERFACE: string[] = [
+	static readonly AssociateTrunkInterface: string[] = [
 		"ec2:AssociateTrunkInterface",
 	];
 	/** IAM actions required for the AssociateVpcCidrBlock API call. */
-	static readonly ASSOCIATE_VPC_CIDR_BLOCK: string[] = [
+	static readonly AssociateVpcCidrBlock: string[] = [
 		"ec2:AssociateVpcCidrBlock",
 	];
 	/** IAM actions required for the AttachClassicLinkVpc API call. */
-	static readonly ATTACH_CLASSIC_LINK_VPC: string[] = [
-		"ec2:AttachClassicLinkVpc",
-	];
+	static readonly AttachClassicLinkVpc: string[] = ["ec2:AttachClassicLinkVpc"];
 	/** IAM actions required for the AttachImageWatermark API call. */
-	static readonly ATTACH_IMAGE_WATERMARK: string[] = [
-		"ec2:AttachImageWatermark",
-	];
+	static readonly AttachImageWatermark: string[] = ["ec2:AttachImageWatermark"];
 	/** IAM actions required for the AttachInternetGateway API call. */
-	static readonly ATTACH_INTERNET_GATEWAY: string[] = [
+	static readonly AttachInternetGateway: string[] = [
 		"ec2:AttachInternetGateway",
 	];
 	/** IAM actions required for the AttachNetworkInterface API call. */
-	static readonly ATTACH_NETWORK_INTERFACE: string[] = [
+	static readonly AttachNetworkInterface: string[] = [
 		"ec2:AttachNetworkInterface",
 	];
 	/** IAM actions required for the AttachVerifiedAccessTrustProvider API call. */
-	static readonly ATTACH_VERIFIED_ACCESS_TRUST_PROVIDER: string[] = [
+	static readonly AttachVerifiedAccessTrustProvider: string[] = [
 		"ec2:AttachVerifiedAccessTrustProvider",
 	];
 	/** IAM actions required for the AttachVolume API call. */
-	static readonly ATTACH_VOLUME: string[] = ["ec2:AttachVolume"];
+	static readonly AttachVolume: string[] = ["ec2:AttachVolume"];
 	/** IAM actions required for the AttachVpnGateway API call. */
-	static readonly ATTACH_VPN_GATEWAY: string[] = ["ec2:AttachVpnGateway"];
+	static readonly AttachVpnGateway: string[] = ["ec2:AttachVpnGateway"];
 	/** IAM actions required for the AuthorizeClientVpnIngress API call. */
-	static readonly AUTHORIZE_CLIENT_VPN_INGRESS: string[] = [
+	static readonly AuthorizeClientVpnIngress: string[] = [
 		"ec2:AuthorizeClientVpnIngress",
 	];
 	/** IAM actions required for the AuthorizeSecurityGroupEgress API call. */
-	static readonly AUTHORIZE_SECURITY_GROUP_EGRESS: string[] = [
+	static readonly AuthorizeSecurityGroupEgress: string[] = [
 		"ec2:AuthorizeSecurityGroupEgress",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the AuthorizeSecurityGroupIngress API call. */
-	static readonly AUTHORIZE_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly AuthorizeSecurityGroupIngress: string[] = [
 		"ec2:AuthorizeSecurityGroupIngress",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the BatchModifyIpamRoutingPolicyRegistrations API call. */
-	static readonly BATCH_MODIFY_IPAM_ROUTING_POLICY_REGISTRATIONS: string[] = [];
+	static readonly BatchModifyIpamRoutingPolicyRegistrations: string[] = [];
 	/** IAM actions required for the BundleInstance API call. */
-	static readonly BUNDLE_INSTANCE: string[] = ["ec2:BundleInstance"];
+	static readonly BundleInstance: string[] = ["ec2:BundleInstance"];
 	/** IAM actions required for the CancelBundleTask API call. */
-	static readonly CANCEL_BUNDLE_TASK: string[] = ["ec2:CancelBundleTask"];
+	static readonly CancelBundleTask: string[] = ["ec2:CancelBundleTask"];
 	/** IAM actions required for the CancelCapacityReservation API call. */
-	static readonly CANCEL_CAPACITY_RESERVATION: string[] = [
+	static readonly CancelCapacityReservation: string[] = [
 		"ec2:CancelCapacityReservation",
 	];
 	/** IAM actions required for the CancelCapacityReservationFleets API call. */
-	static readonly CANCEL_CAPACITY_RESERVATION_FLEETS: string[] = [
+	static readonly CancelCapacityReservationFleets: string[] = [
 		"ec2:CancelCapacityReservationFleets",
 	];
 	/** IAM actions required for the CancelConversionTask API call. */
-	static readonly CANCEL_CONVERSION_TASK: string[] = [
-		"ec2:CancelConversionTask",
-	];
+	static readonly CancelConversionTask: string[] = ["ec2:CancelConversionTask"];
 	/** IAM actions required for the CancelDeclarativePoliciesReport API call. */
-	static readonly CANCEL_DECLARATIVE_POLICIES_REPORT: string[] = [
+	static readonly CancelDeclarativePoliciesReport: string[] = [
 		"ec2:CancelDeclarativePoliciesReport",
 	];
 	/** IAM actions required for the CancelExportTask API call. */
-	static readonly CANCEL_EXPORT_TASK: string[] = ["ec2:CancelExportTask"];
+	static readonly CancelExportTask: string[] = ["ec2:CancelExportTask"];
 	/** IAM actions required for the CancelImageLaunchPermission API call. */
-	static readonly CANCEL_IMAGE_LAUNCH_PERMISSION: string[] = [
+	static readonly CancelImageLaunchPermission: string[] = [
 		"ec2:CancelImageLaunchPermission",
 	];
 	/** IAM actions required for the CancelImportTask API call. */
-	static readonly CANCEL_IMPORT_TASK: string[] = ["ec2:CancelImportTask"];
+	static readonly CancelImportTask: string[] = ["ec2:CancelImportTask"];
 	/** IAM actions required for the CancelReservedInstancesListing API call. */
-	static readonly CANCEL_RESERVED_INSTANCES_LISTING: string[] = [
+	static readonly CancelReservedInstancesListing: string[] = [
 		"ec2:CancelReservedInstancesListing",
 	];
 	/** IAM actions required for the CancelSpotFleetRequests API call. */
-	static readonly CANCEL_SPOT_FLEET_REQUESTS: string[] = [
+	static readonly CancelSpotFleetRequests: string[] = [
 		"ec2:CancelSpotFleetRequests",
 	];
 	/** IAM actions required for the CancelSpotInstanceRequests API call. */
-	static readonly CANCEL_SPOT_INSTANCE_REQUESTS: string[] = [
+	static readonly CancelSpotInstanceRequests: string[] = [
 		"ec2:CancelSpotInstanceRequests",
 	];
 	/** IAM actions required for the ConfirmProductInstance API call. */
-	static readonly CONFIRM_PRODUCT_INSTANCE: string[] = [
+	static readonly ConfirmProductInstance: string[] = [
 		"ec2:ConfirmProductInstance",
 	];
 	/** IAM actions required for the CopyFpgaImage API call. */
-	static readonly COPY_FPGA_IMAGE: string[] = ["ec2:CopyFpgaImage"];
+	static readonly CopyFpgaImage: string[] = ["ec2:CopyFpgaImage"];
 	/** IAM actions required for the CopyImage API call. */
-	static readonly COPY_IMAGE: string[] = ["ec2:CopyImage", "ec2:CreateTags"];
+	static readonly CopyImage: string[] = ["ec2:CopyImage", "ec2:CreateTags"];
 	/** IAM actions required for the CopySnapshot API call. */
-	static readonly COPY_SNAPSHOT: string[] = [
+	static readonly CopySnapshot: string[] = [
 		"ec2:CopySnapshot",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CopyVolumes API call. */
-	static readonly COPY_VOLUMES: string[] = [
-		"ec2:CopyVolumes",
-		"ec2:CreateTags",
-	];
+	static readonly CopyVolumes: string[] = ["ec2:CopyVolumes", "ec2:CreateTags"];
 	/** IAM actions required for the CreateApplicationStatusCheck API call. */
-	static readonly CREATE_APPLICATION_STATUS_CHECK: string[] = [
-		"ec2:CreateTags",
-	];
+	static readonly CreateApplicationStatusCheck: string[] = ["ec2:CreateTags"];
 	/** IAM actions required for the CreateCapacityManagerDataExport API call. */
-	static readonly CREATE_CAPACITY_MANAGER_DATA_EXPORT: string[] = [
+	static readonly CreateCapacityManagerDataExport: string[] = [
 		"ec2:CreateCapacityManagerDataExport",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCapacityReservation API call. */
-	static readonly CREATE_CAPACITY_RESERVATION: string[] = [
+	static readonly CreateCapacityReservation: string[] = [
 		"ec2:CreateCapacityReservation",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCapacityReservationBySplitting API call. */
-	static readonly CREATE_CAPACITY_RESERVATION_BY_SPLITTING: string[] = [
+	static readonly CreateCapacityReservationBySplitting: string[] = [
 		"ec2:CreateCapacityReservationBySplitting",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCapacityReservationCancellationQuote API call. */
-	static readonly CREATE_CAPACITY_RESERVATION_CANCELLATION_QUOTE: string[] = [
+	static readonly CreateCapacityReservationCancellationQuote: string[] = [
 		"ec2:CreateCapacityReservationCancellationQuote",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCapacityReservationFleet API call. */
-	static readonly CREATE_CAPACITY_RESERVATION_FLEET: string[] = [
+	static readonly CreateCapacityReservationFleet: string[] = [
 		"ec2:CreateCapacityReservationFleet",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCarrierGateway API call. */
-	static readonly CREATE_CARRIER_GATEWAY: string[] = [
+	static readonly CreateCarrierGateway: string[] = [
 		"ec2:CreateCarrierGateway",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateClientVpnEndpoint API call. */
-	static readonly CREATE_CLIENT_VPN_ENDPOINT: string[] = [
+	static readonly CreateClientVpnEndpoint: string[] = [
 		"ec2:CreateClientVpnEndpoint",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateClientVpnRoute API call. */
-	static readonly CREATE_CLIENT_VPN_ROUTE: string[] = [
-		"ec2:CreateClientVpnRoute",
-	];
+	static readonly CreateClientVpnRoute: string[] = ["ec2:CreateClientVpnRoute"];
 	/** IAM actions required for the CreateCoipCidr API call. */
-	static readonly CREATE_COIP_CIDR: string[] = ["ec2:CreateCoipCidr"];
+	static readonly CreateCoipCidr: string[] = ["ec2:CreateCoipCidr"];
 	/** IAM actions required for the CreateCoipPool API call. */
-	static readonly CREATE_COIP_POOL: string[] = [
+	static readonly CreateCoipPool: string[] = [
 		"ec2:CreateCoipPool",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateCustomerGateway API call. */
-	static readonly CREATE_CUSTOMER_GATEWAY: string[] = [
+	static readonly CreateCustomerGateway: string[] = [
 		"ec2:CreateCustomerGateway",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateDefaultSubnet API call. */
-	static readonly CREATE_DEFAULT_SUBNET: string[] = ["ec2:CreateDefaultSubnet"];
+	static readonly CreateDefaultSubnet: string[] = ["ec2:CreateDefaultSubnet"];
 	/** IAM actions required for the CreateDefaultVpc API call. */
-	static readonly CREATE_DEFAULT_VPC: string[] = ["ec2:CreateDefaultVpc"];
+	static readonly CreateDefaultVpc: string[] = ["ec2:CreateDefaultVpc"];
 	/** IAM actions required for the CreateDelegateMacVolumeOwnershipTask API call. */
-	static readonly CREATE_DELEGATE_MAC_VOLUME_OWNERSHIP_TASK: string[] = [
+	static readonly CreateDelegateMacVolumeOwnershipTask: string[] = [
 		"ec2:CreateDelegateMacVolumeOwnershipTask",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateDhcpOptions API call. */
-	static readonly CREATE_DHCP_OPTIONS: string[] = [
+	static readonly CreateDhcpOptions: string[] = [
 		"ec2:CreateDhcpOptions",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateEgressOnlyInternetGateway API call. */
-	static readonly CREATE_EGRESS_ONLY_INTERNET_GATEWAY: string[] = [
+	static readonly CreateEgressOnlyInternetGateway: string[] = [
 		"ec2:CreateEgressOnlyInternetGateway",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateFleet API call. */
-	static readonly CREATE_FLEET: string[] = [
-		"ec2:CreateFleet",
-		"ec2:CreateTags",
-	];
+	static readonly CreateFleet: string[] = ["ec2:CreateFleet", "ec2:CreateTags"];
 	/** IAM actions required for the CreateFlowLogs API call. */
-	static readonly CREATE_FLOW_LOGS: string[] = [
+	static readonly CreateFlowLogs: string[] = [
 		"ec2:CreateFlowLogs",
 		"ec2:CreateTags",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateFpgaImage API call. */
-	static readonly CREATE_FPGA_IMAGE: string[] = [
+	static readonly CreateFpgaImage: string[] = [
 		"ec2:CreateFpgaImage",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateImage API call. */
-	static readonly CREATE_IMAGE: string[] = [
-		"ec2:CreateImage",
-		"ec2:CreateTags",
-	];
+	static readonly CreateImage: string[] = ["ec2:CreateImage", "ec2:CreateTags"];
 	/** IAM actions required for the CreateImageUsageReport API call. */
-	static readonly CREATE_IMAGE_USAGE_REPORT: string[] = [
+	static readonly CreateImageUsageReport: string[] = [
 		"ec2:CreateImageUsageReport",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateInstanceConnectEndpoint API call. */
-	static readonly CREATE_INSTANCE_CONNECT_ENDPOINT: string[] = [
+	static readonly CreateInstanceConnectEndpoint: string[] = [
 		"ec2:CreateInstanceConnectEndpoint",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateInstanceEventWindow API call. */
-	static readonly CREATE_INSTANCE_EVENT_WINDOW: string[] = [
+	static readonly CreateInstanceEventWindow: string[] = [
 		"ec2:CreateInstanceEventWindow",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateInstanceExportTask API call. */
-	static readonly CREATE_INSTANCE_EXPORT_TASK: string[] = [
+	static readonly CreateInstanceExportTask: string[] = [
 		"ec2:CreateInstanceExportTask",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateInternetGateway API call. */
-	static readonly CREATE_INTERNET_GATEWAY: string[] = [
+	static readonly CreateInternetGateway: string[] = [
 		"ec2:CreateInternetGateway",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateInterruptibleCapacityReservationAllocation API call. */
-	static readonly CREATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION: string[] =
-		["ec2:CreateInterruptibleCapacityReservationAllocation", "ec2:CreateTags"];
+	static readonly CreateInterruptibleCapacityReservationAllocation: string[] = [
+		"ec2:CreateInterruptibleCapacityReservationAllocation",
+		"ec2:CreateTags",
+	];
 	/** IAM actions required for the CreateIpam API call. */
-	static readonly CREATE_IPAM: string[] = ["ec2:CreateIpam", "ec2:CreateTags"];
+	static readonly CreateIpam: string[] = ["ec2:CreateIpam", "ec2:CreateTags"];
 	/** IAM actions required for the CreateIpamExternalResourceVerificationToken API call. */
-	static readonly CREATE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN: string[] = [
+	static readonly CreateIpamExternalResourceVerificationToken: string[] = [
 		"ec2:CreateIpamExternalResourceVerificationToken",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamInternetRegistryAssociation API call. */
-	static readonly CREATE_IPAM_INTERNET_REGISTRY_ASSOCIATION: string[] = [
+	static readonly CreateIpamInternetRegistryAssociation: string[] = [
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamPolicy API call. */
-	static readonly CREATE_IPAM_POLICY: string[] = [
+	static readonly CreateIpamPolicy: string[] = [
 		"ec2:CreateIpamPolicy",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamPool API call. */
-	static readonly CREATE_IPAM_POOL: string[] = [
+	static readonly CreateIpamPool: string[] = [
 		"ec2:CreateIpamPool",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamPrefixListResolver API call. */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER: string[] = [
+	static readonly CreateIpamPrefixListResolver: string[] = [
 		"ec2:CreateIpamPrefixListResolver",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamPrefixListResolverTarget API call. */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER_TARGET: string[] = [
+	static readonly CreateIpamPrefixListResolverTarget: string[] = [
 		"ec2:CreateIpamPrefixListResolverTarget",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamResourceDiscovery API call. */
-	static readonly CREATE_IPAM_RESOURCE_DISCOVERY: string[] = [
+	static readonly CreateIpamResourceDiscovery: string[] = [
 		"ec2:CreateIpamResourceDiscovery",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateIpamRoutingPolicyRegistration API call. */
-	static readonly CREATE_IPAM_ROUTING_POLICY_REGISTRATION: string[] = [];
+	static readonly CreateIpamRoutingPolicyRegistration: string[] = [];
 	/** IAM actions required for the CreateIpamScope API call. */
-	static readonly CREATE_IPAM_SCOPE: string[] = [
+	static readonly CreateIpamScope: string[] = [
 		"ec2:CreateIpamScope",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateKeyPair API call. */
-	static readonly CREATE_KEY_PAIR: string[] = [
+	static readonly CreateKeyPair: string[] = [
 		"ec2:CreateKeyPair",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateLaunchTemplate API call. */
-	static readonly CREATE_LAUNCH_TEMPLATE: string[] = [
+	static readonly CreateLaunchTemplate: string[] = [
 		"ec2:CreateLaunchTemplate",
 		"ec2:CreateTags",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateLaunchTemplateVersion API call. */
-	static readonly CREATE_LAUNCH_TEMPLATE_VERSION: string[] = [
+	static readonly CreateLaunchTemplateVersion: string[] = [
 		"ec2:CreateLaunchTemplateVersion",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateLocalGatewayRoute API call. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE: string[] = [
+	static readonly CreateLocalGatewayRoute: string[] = [
 		"ec2:CreateLocalGatewayRoute",
 	];
 	/** IAM actions required for the CreateLocalGatewayRouteTable API call. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly CreateLocalGatewayRouteTable: string[] = [
 		"ec2:CreateLocalGatewayRouteTable",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation API call. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION: string[] =
+	static readonly CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation: string[] =
 		[
 			"ec2:CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation",
 			"ec2:CreateTags",
 		];
 	/** IAM actions required for the CreateLocalGatewayRouteTableVpcAssociation API call. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION: string[] = [
+	static readonly CreateLocalGatewayRouteTableVpcAssociation: string[] = [
 		"ec2:CreateLocalGatewayRouteTableVpcAssociation",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateLocalGatewayVirtualInterface API call. */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE: string[] = [
+	static readonly CreateLocalGatewayVirtualInterface: string[] = [
 		"ec2:CreateLocalGatewayVirtualInterface",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateLocalGatewayVirtualInterfaceGroup API call. */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP: string[] = [
+	static readonly CreateLocalGatewayVirtualInterfaceGroup: string[] = [
 		"ec2:CreateLocalGatewayVirtualInterfaceGroup",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateMacSystemIntegrityProtectionModificationTask API call. */
-	static readonly CREATE_MAC_SYSTEM_INTEGRITY_PROTECTION_MODIFICATION_TASK: string[] =
+	static readonly CreateMacSystemIntegrityProtectionModificationTask: string[] =
 		[
 			"ec2:CreateMacSystemIntegrityProtectionModificationTask",
 			"ec2:CreateTags",
 		];
 	/** IAM actions required for the CreateManagedPrefixList API call. */
-	static readonly CREATE_MANAGED_PREFIX_LIST: string[] = [
+	static readonly CreateManagedPrefixList: string[] = [
 		"ec2:CreateManagedPrefixList",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNatGateway API call. */
-	static readonly CREATE_NAT_GATEWAY: string[] = [
+	static readonly CreateNatGateway: string[] = [
 		"ec2:CreateNatGateway",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNetworkAcl API call. */
-	static readonly CREATE_NETWORK_ACL: string[] = [
+	static readonly CreateNetworkAcl: string[] = [
 		"ec2:CreateNetworkAcl",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNetworkAclEntry API call. */
-	static readonly CREATE_NETWORK_ACL_ENTRY: string[] = [
+	static readonly CreateNetworkAclEntry: string[] = [
 		"ec2:CreateNetworkAclEntry",
 	];
 	/** IAM actions required for the CreateNetworkInsightsAccessScope API call. */
-	static readonly CREATE_NETWORK_INSIGHTS_ACCESS_SCOPE: string[] = [
+	static readonly CreateNetworkInsightsAccessScope: string[] = [
 		"ec2:CreateNetworkInsightsAccessScope",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNetworkInsightsPath API call. */
-	static readonly CREATE_NETWORK_INSIGHTS_PATH: string[] = [
+	static readonly CreateNetworkInsightsPath: string[] = [
 		"ec2:CreateNetworkInsightsPath",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNetworkInterface API call. */
-	static readonly CREATE_NETWORK_INTERFACE: string[] = [
+	static readonly CreateNetworkInterface: string[] = [
 		"ec2:CreateNetworkInterface",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateNetworkInterfacePermission API call. */
-	static readonly CREATE_NETWORK_INTERFACE_PERMISSION: string[] = [
+	static readonly CreateNetworkInterfacePermission: string[] = [
 		"ec2:CreateNetworkInterfacePermission",
 	];
 	/** IAM actions required for the CreatePlacementGroup API call. */
-	static readonly CREATE_PLACEMENT_GROUP: string[] = [
+	static readonly CreatePlacementGroup: string[] = [
 		"ec2:CreatePlacementGroup",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreatePublicIpv4Pool API call. */
-	static readonly CREATE_PUBLIC_IPV4_POOL: string[] = [
+	static readonly CreatePublicIpv4Pool: string[] = [
 		"ec2:CreatePublicIpv4Pool",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateReplaceRootVolumeTask API call. */
-	static readonly CREATE_REPLACE_ROOT_VOLUME_TASK: string[] = [
+	static readonly CreateReplaceRootVolumeTask: string[] = [
 		"ec2:CreateReplaceRootVolumeTask",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateReservedInstancesListing API call. */
-	static readonly CREATE_RESERVED_INSTANCES_LISTING: string[] = [
+	static readonly CreateReservedInstancesListing: string[] = [
 		"ec2:CreateReservedInstancesListing",
 	];
 	/** IAM actions required for the CreateRestoreImageTask API call. */
-	static readonly CREATE_RESTORE_IMAGE_TASK: string[] = [
+	static readonly CreateRestoreImageTask: string[] = [
 		"ec2:CreateRestoreImageTask",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateRoute API call. */
-	static readonly CREATE_ROUTE: string[] = ["ec2:CreateRoute"];
+	static readonly CreateRoute: string[] = ["ec2:CreateRoute"];
 	/** IAM actions required for the CreateRouteServer API call. */
-	static readonly CREATE_ROUTE_SERVER: string[] = [
+	static readonly CreateRouteServer: string[] = [
 		"ec2:CreateRouteServer",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateRouteServerEndpoint API call. */
-	static readonly CREATE_ROUTE_SERVER_ENDPOINT: string[] = [
+	static readonly CreateRouteServerEndpoint: string[] = [
 		"ec2:CreateRouteServerEndpoint",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateRouteServerPeer API call. */
-	static readonly CREATE_ROUTE_SERVER_PEER: string[] = [
+	static readonly CreateRouteServerPeer: string[] = [
 		"ec2:CreateRouteServerPeer",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateRouteTable API call. */
-	static readonly CREATE_ROUTE_TABLE: string[] = [
+	static readonly CreateRouteTable: string[] = [
 		"ec2:CreateRouteTable",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSecondaryNetwork API call. */
-	static readonly CREATE_SECONDARY_NETWORK: string[] = [
+	static readonly CreateSecondaryNetwork: string[] = [
 		"ec2:CreateSecondaryNetwork",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSecondarySubnet API call. */
-	static readonly CREATE_SECONDARY_SUBNET: string[] = [
+	static readonly CreateSecondarySubnet: string[] = [
 		"ec2:CreateSecondarySubnet",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSecurityGroup API call. */
-	static readonly CREATE_SECURITY_GROUP: string[] = [
+	static readonly CreateSecurityGroup: string[] = [
 		"ec2:CreateSecurityGroup",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSnapshot API call. */
-	static readonly CREATE_SNAPSHOT: string[] = [
+	static readonly CreateSnapshot: string[] = [
 		"ec2:CreateSnapshot",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSnapshots API call. */
-	static readonly CREATE_SNAPSHOTS: string[] = [
+	static readonly CreateSnapshots: string[] = [
 		"ec2:CreateSnapshots",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSpotDatafeedSubscription API call. */
-	static readonly CREATE_SPOT_DATAFEED_SUBSCRIPTION: string[] = [
+	static readonly CreateSpotDatafeedSubscription: string[] = [
 		"ec2:CreateSpotDatafeedSubscription",
 	];
 	/** IAM actions required for the CreateStoreImageTask API call. */
-	static readonly CREATE_STORE_IMAGE_TASK: string[] = [
-		"ec2:CreateStoreImageTask",
-	];
+	static readonly CreateStoreImageTask: string[] = ["ec2:CreateStoreImageTask"];
 	/** IAM actions required for the CreateSubnet API call. */
-	static readonly CREATE_SUBNET: string[] = [
+	static readonly CreateSubnet: string[] = [
 		"ec2:CreateSubnet",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateSubnetCidrReservation API call. */
-	static readonly CREATE_SUBNET_CIDR_RESERVATION: string[] = [
+	static readonly CreateSubnetCidrReservation: string[] = [
 		"ec2:CreateSubnetCidrReservation",
 		"ec2:CreateTags",
 	];
 	/** IAM actions required for the CreateTags API call. */
-	static readonly CREATE_TAGS: string[] = ["ec2:CreateTags"];
+	static readonly CreateTags: string[] = ["ec2:CreateTags"];
 	/** IAM actions required for the CreateTrafficMirrorFilter API call. */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER: string[] = [
+	static readonly CreateTrafficMirrorFilter: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTrafficMirrorFilter",
 	];
 	/** IAM actions required for the CreateTrafficMirrorFilterRule API call. */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER_RULE: string[] = [
+	static readonly CreateTrafficMirrorFilterRule: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTrafficMirrorFilterRule",
 	];
 	/** IAM actions required for the CreateTrafficMirrorSession API call. */
-	static readonly CREATE_TRAFFIC_MIRROR_SESSION: string[] = [
+	static readonly CreateTrafficMirrorSession: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTrafficMirrorSession",
 	];
 	/** IAM actions required for the CreateTrafficMirrorTarget API call. */
-	static readonly CREATE_TRAFFIC_MIRROR_TARGET: string[] = [
+	static readonly CreateTrafficMirrorTarget: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTrafficMirrorTarget",
 	];
 	/** IAM actions required for the CreateTransitGateway API call. */
-	static readonly CREATE_TRANSIT_GATEWAY: string[] = [
+	static readonly CreateTransitGateway: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGateway",
 	];
 	/** IAM actions required for the CreateTransitGatewayConnect API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT: string[] = [
+	static readonly CreateTransitGatewayConnect: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayConnect",
 	];
 	/** IAM actions required for the CreateTransitGatewayConnectPeer API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT_PEER: string[] = [
+	static readonly CreateTransitGatewayConnectPeer: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayConnectPeer",
 	];
 	/** IAM actions required for the CreateTransitGatewayMeteringPolicy API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY: string[] = [
+	static readonly CreateTransitGatewayMeteringPolicy: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayMeteringPolicy",
 	];
 	/** IAM actions required for the CreateTransitGatewayMeteringPolicyEntry API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY: string[] = [
+	static readonly CreateTransitGatewayMeteringPolicyEntry: string[] = [
 		"ec2:CreateTransitGatewayMeteringPolicyEntry",
 	];
 	/** IAM actions required for the CreateTransitGatewayMulticastDomain API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN: string[] = [
+	static readonly CreateTransitGatewayMulticastDomain: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayMulticastDomain",
 	];
 	/** IAM actions required for the CreateTransitGatewayPeeringAttachment API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_PEERING_ATTACHMENT: string[] = [
+	static readonly CreateTransitGatewayPeeringAttachment: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayPeeringAttachment",
 	];
 	/** IAM actions required for the CreateTransitGatewayPolicyTable API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_POLICY_TABLE: string[] = [
+	static readonly CreateTransitGatewayPolicyTable: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the CreateTransitGatewayPolicyTableEntry API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_POLICY_TABLE_ENTRY: string[] = [];
+	static readonly CreateTransitGatewayPolicyTableEntry: string[] = [];
 	/** IAM actions required for the CreateTransitGatewayPrefixListReference API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE: string[] = [
+	static readonly CreateTransitGatewayPrefixListReference: string[] = [
 		"ec2:CreateTransitGatewayPrefixListReference",
 	];
 	/** IAM actions required for the CreateTransitGatewayRoute API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE: string[] = [
+	static readonly CreateTransitGatewayRoute: string[] = [
 		"ec2:CreateTransitGatewayRoute",
 	];
 	/** IAM actions required for the CreateTransitGatewayRouteTable API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly CreateTransitGatewayRouteTable: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayRouteTable",
 	];
 	/** IAM actions required for the CreateTransitGatewayRouteTableAnnouncement API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT: string[] = [
+	static readonly CreateTransitGatewayRouteTableAnnouncement: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayRouteTableAnnouncement",
 	];
 	/** IAM actions required for the CreateTransitGatewayVpcAttachment API call. */
-	static readonly CREATE_TRANSIT_GATEWAY_VPC_ATTACHMENT: string[] = [
+	static readonly CreateTransitGatewayVpcAttachment: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateTransitGatewayVpcAttachment",
 	];
 	/** IAM actions required for the CreateVerifiedAccessEndpoint API call. */
-	static readonly CREATE_VERIFIED_ACCESS_ENDPOINT: string[] = [
+	static readonly CreateVerifiedAccessEndpoint: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVerifiedAccessEndpoint",
 	];
 	/** IAM actions required for the CreateVerifiedAccessGroup API call. */
-	static readonly CREATE_VERIFIED_ACCESS_GROUP: string[] = [
+	static readonly CreateVerifiedAccessGroup: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVerifiedAccessGroup",
 	];
 	/** IAM actions required for the CreateVerifiedAccessInstance API call. */
-	static readonly CREATE_VERIFIED_ACCESS_INSTANCE: string[] = [
+	static readonly CreateVerifiedAccessInstance: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVerifiedAccessInstance",
 	];
 	/** IAM actions required for the CreateVerifiedAccessTrustProvider API call. */
-	static readonly CREATE_VERIFIED_ACCESS_TRUST_PROVIDER: string[] = [
+	static readonly CreateVerifiedAccessTrustProvider: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVerifiedAccessTrustProvider",
 	];
 	/** IAM actions required for the CreateVolume API call. */
-	static readonly CREATE_VOLUME: string[] = [
+	static readonly CreateVolume: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVolume",
 	];
 	/** IAM actions required for the CreateVpc API call. */
-	static readonly CREATE_VPC: string[] = ["ec2:CreateTags", "ec2:CreateVpc"];
+	static readonly CreateVpc: string[] = ["ec2:CreateTags", "ec2:CreateVpc"];
 	/** IAM actions required for the CreateVpcBlockPublicAccessExclusion API call. */
-	static readonly CREATE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION: string[] = [
+	static readonly CreateVpcBlockPublicAccessExclusion: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpcBlockPublicAccessExclusion",
 	];
 	/** IAM actions required for the CreateVpcEncryptionControl API call. */
-	static readonly CREATE_VPC_ENCRYPTION_CONTROL: string[] = [
+	static readonly CreateVpcEncryptionControl: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpcEncryptionControl",
 	];
 	/** IAM actions required for the CreateVpcEndpoint API call. */
-	static readonly CREATE_VPC_ENDPOINT: string[] = [
+	static readonly CreateVpcEndpoint: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpcEndpoint",
 	];
 	/** IAM actions required for the CreateVpcEndpointConnectionNotification API call. */
-	static readonly CREATE_VPC_ENDPOINT_CONNECTION_NOTIFICATION: string[] = [
+	static readonly CreateVpcEndpointConnectionNotification: string[] = [
 		"ec2:CreateVpcEndpointConnectionNotification",
 	];
 	/** IAM actions required for the CreateVpcEndpointServiceConfiguration API call. */
-	static readonly CREATE_VPC_ENDPOINT_SERVICE_CONFIGURATION: string[] = [
+	static readonly CreateVpcEndpointServiceConfiguration: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpcEndpointServiceConfiguration",
 	];
 	/** IAM actions required for the CreateVpcPeeringConnection API call. */
-	static readonly CREATE_VPC_PEERING_CONNECTION: string[] = [
+	static readonly CreateVpcPeeringConnection: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpcPeeringConnection",
 	];
 	/** IAM actions required for the CreateVpnConcentrator API call. */
-	static readonly CREATE_VPN_CONCENTRATOR: string[] = [
+	static readonly CreateVpnConcentrator: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpnConcentrator",
 	];
 	/** IAM actions required for the CreateVpnConnection API call. */
-	static readonly CREATE_VPN_CONNECTION: string[] = [
+	static readonly CreateVpnConnection: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpnConnection",
 	];
 	/** IAM actions required for the CreateVpnConnectionRoute API call. */
-	static readonly CREATE_VPN_CONNECTION_ROUTE: string[] = [
+	static readonly CreateVpnConnectionRoute: string[] = [
 		"ec2:CreateVpnConnectionRoute",
 	];
 	/** IAM actions required for the CreateVpnGateway API call. */
-	static readonly CREATE_VPN_GATEWAY: string[] = [
+	static readonly CreateVpnGateway: string[] = [
 		"ec2:CreateTags",
 		"ec2:CreateVpnGateway",
 	];
 	/** IAM actions required for the DeleteApplicationStatusCheck API call. */
-	static readonly DELETE_APPLICATION_STATUS_CHECK: string[] = [];
+	static readonly DeleteApplicationStatusCheck: string[] = [];
 	/** IAM actions required for the DeleteCapacityManagerDataExport API call. */
-	static readonly DELETE_CAPACITY_MANAGER_DATA_EXPORT: string[] = [
+	static readonly DeleteCapacityManagerDataExport: string[] = [
 		"ec2:DeleteCapacityManagerDataExport",
 	];
 	/** IAM actions required for the DeleteCarrierGateway API call. */
-	static readonly DELETE_CARRIER_GATEWAY: string[] = [
-		"ec2:DeleteCarrierGateway",
-	];
+	static readonly DeleteCarrierGateway: string[] = ["ec2:DeleteCarrierGateway"];
 	/** IAM actions required for the DeleteClientVpnEndpoint API call. */
-	static readonly DELETE_CLIENT_VPN_ENDPOINT: string[] = [
+	static readonly DeleteClientVpnEndpoint: string[] = [
 		"ec2:DeleteClientVpnEndpoint",
 	];
 	/** IAM actions required for the DeleteClientVpnRoute API call. */
-	static readonly DELETE_CLIENT_VPN_ROUTE: string[] = [
-		"ec2:DeleteClientVpnRoute",
-	];
+	static readonly DeleteClientVpnRoute: string[] = ["ec2:DeleteClientVpnRoute"];
 	/** IAM actions required for the DeleteCoipCidr API call. */
-	static readonly DELETE_COIP_CIDR: string[] = ["ec2:DeleteCoipCidr"];
+	static readonly DeleteCoipCidr: string[] = ["ec2:DeleteCoipCidr"];
 	/** IAM actions required for the DeleteCoipPool API call. */
-	static readonly DELETE_COIP_POOL: string[] = ["ec2:DeleteCoipPool"];
+	static readonly DeleteCoipPool: string[] = ["ec2:DeleteCoipPool"];
 	/** IAM actions required for the DeleteCustomerGateway API call. */
-	static readonly DELETE_CUSTOMER_GATEWAY: string[] = [
+	static readonly DeleteCustomerGateway: string[] = [
 		"ec2:DeleteCustomerGateway",
 	];
 	/** IAM actions required for the DeleteDhcpOptions API call. */
-	static readonly DELETE_DHCP_OPTIONS: string[] = ["ec2:DeleteDhcpOptions"];
+	static readonly DeleteDhcpOptions: string[] = ["ec2:DeleteDhcpOptions"];
 	/** IAM actions required for the DeleteEgressOnlyInternetGateway API call. */
-	static readonly DELETE_EGRESS_ONLY_INTERNET_GATEWAY: string[] = [
+	static readonly DeleteEgressOnlyInternetGateway: string[] = [
 		"ec2:DeleteEgressOnlyInternetGateway",
 	];
 	/** IAM actions required for the DeleteFleets API call. */
-	static readonly DELETE_FLEETS: string[] = ["ec2:DeleteFleets"];
+	static readonly DeleteFleets: string[] = ["ec2:DeleteFleets"];
 	/** IAM actions required for the DeleteFlowLogs API call. */
-	static readonly DELETE_FLOW_LOGS: string[] = ["ec2:DeleteFlowLogs"];
+	static readonly DeleteFlowLogs: string[] = ["ec2:DeleteFlowLogs"];
 	/** IAM actions required for the DeleteFpgaImage API call. */
-	static readonly DELETE_FPGA_IMAGE: string[] = ["ec2:DeleteFpgaImage"];
+	static readonly DeleteFpgaImage: string[] = ["ec2:DeleteFpgaImage"];
 	/** IAM actions required for the DeleteImageUsageReport API call. */
-	static readonly DELETE_IMAGE_USAGE_REPORT: string[] = [
+	static readonly DeleteImageUsageReport: string[] = [
 		"ec2:DeleteImageUsageReport",
 	];
 	/** IAM actions required for the DeleteInstanceConnectEndpoint API call. */
-	static readonly DELETE_INSTANCE_CONNECT_ENDPOINT: string[] = [
+	static readonly DeleteInstanceConnectEndpoint: string[] = [
 		"ec2:DeleteInstanceConnectEndpoint",
 	];
 	/** IAM actions required for the DeleteInstanceEventWindow API call. */
-	static readonly DELETE_INSTANCE_EVENT_WINDOW: string[] = [
+	static readonly DeleteInstanceEventWindow: string[] = [
 		"ec2:DeleteInstanceEventWindow",
 	];
 	/** IAM actions required for the DeleteInternetGateway API call. */
-	static readonly DELETE_INTERNET_GATEWAY: string[] = [
+	static readonly DeleteInternetGateway: string[] = [
 		"ec2:DeleteInternetGateway",
 	];
 	/** IAM actions required for the DeleteIpam API call. */
-	static readonly DELETE_IPAM: string[] = ["ec2:DeleteIpam"];
+	static readonly DeleteIpam: string[] = ["ec2:DeleteIpam"];
 	/** IAM actions required for the DeleteIpamExternalResourceVerificationToken API call. */
-	static readonly DELETE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN: string[] = [
+	static readonly DeleteIpamExternalResourceVerificationToken: string[] = [
 		"ec2:DeleteIpamExternalResourceVerificationToken",
 	];
 	/** IAM actions required for the DeleteIpamInternetRegistryAssociation API call. */
-	static readonly DELETE_IPAM_INTERNET_REGISTRY_ASSOCIATION: string[] = [];
+	static readonly DeleteIpamInternetRegistryAssociation: string[] = [];
 	/** IAM actions required for the DeleteIpamPolicy API call. */
-	static readonly DELETE_IPAM_POLICY: string[] = ["ec2:DeleteIpamPolicy"];
+	static readonly DeleteIpamPolicy: string[] = ["ec2:DeleteIpamPolicy"];
 	/** IAM actions required for the DeleteIpamPool API call. */
-	static readonly DELETE_IPAM_POOL: string[] = ["ec2:DeleteIpamPool"];
+	static readonly DeleteIpamPool: string[] = ["ec2:DeleteIpamPool"];
 	/** IAM actions required for the DeleteIpamPrefixListResolver API call. */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER: string[] = [
+	static readonly DeleteIpamPrefixListResolver: string[] = [
 		"ec2:DeleteIpamPrefixListResolver",
 	];
 	/** IAM actions required for the DeleteIpamPrefixListResolverTarget API call. */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER_TARGET: string[] = [
+	static readonly DeleteIpamPrefixListResolverTarget: string[] = [
 		"ec2:DeleteIpamPrefixListResolverTarget",
 	];
 	/** IAM actions required for the DeleteIpamResourceDiscovery API call. */
-	static readonly DELETE_IPAM_RESOURCE_DISCOVERY: string[] = [
+	static readonly DeleteIpamResourceDiscovery: string[] = [
 		"ec2:DeleteIpamResourceDiscovery",
 	];
 	/** IAM actions required for the DeleteIpamRoutingPolicyRegistration API call. */
-	static readonly DELETE_IPAM_ROUTING_POLICY_REGISTRATION: string[] = [];
+	static readonly DeleteIpamRoutingPolicyRegistration: string[] = [];
 	/** IAM actions required for the DeleteIpamScope API call. */
-	static readonly DELETE_IPAM_SCOPE: string[] = ["ec2:DeleteIpamScope"];
+	static readonly DeleteIpamScope: string[] = ["ec2:DeleteIpamScope"];
 	/** IAM actions required for the DeleteKeyPair API call. */
-	static readonly DELETE_KEY_PAIR: string[] = ["ec2:DeleteKeyPair"];
+	static readonly DeleteKeyPair: string[] = ["ec2:DeleteKeyPair"];
 	/** IAM actions required for the DeleteLaunchTemplate API call. */
-	static readonly DELETE_LAUNCH_TEMPLATE: string[] = [
-		"ec2:DeleteLaunchTemplate",
-	];
+	static readonly DeleteLaunchTemplate: string[] = ["ec2:DeleteLaunchTemplate"];
 	/** IAM actions required for the DeleteLaunchTemplateVersions API call. */
-	static readonly DELETE_LAUNCH_TEMPLATE_VERSIONS: string[] = [
+	static readonly DeleteLaunchTemplateVersions: string[] = [
 		"ec2:DeleteLaunchTemplateVersions",
 	];
 	/** IAM actions required for the DeleteLocalGatewayRoute API call. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE: string[] = [
+	static readonly DeleteLocalGatewayRoute: string[] = [
 		"ec2:DeleteLocalGatewayRoute",
 	];
 	/** IAM actions required for the DeleteLocalGatewayRouteTable API call. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly DeleteLocalGatewayRouteTable: string[] = [
 		"ec2:DeleteLocalGatewayRouteTable",
 	];
 	/** IAM actions required for the DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation API call. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION: string[] =
+	static readonly DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation: string[] =
 		["ec2:DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation"];
 	/** IAM actions required for the DeleteLocalGatewayRouteTableVpcAssociation API call. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION: string[] = [
+	static readonly DeleteLocalGatewayRouteTableVpcAssociation: string[] = [
 		"ec2:DeleteLocalGatewayRouteTableVpcAssociation",
 	];
 	/** IAM actions required for the DeleteLocalGatewayVirtualInterface API call. */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE: string[] = [
+	static readonly DeleteLocalGatewayVirtualInterface: string[] = [
 		"ec2:DeleteLocalGatewayVirtualInterface",
 	];
 	/** IAM actions required for the DeleteLocalGatewayVirtualInterfaceGroup API call. */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP: string[] = [
+	static readonly DeleteLocalGatewayVirtualInterfaceGroup: string[] = [
 		"ec2:DeleteLocalGatewayVirtualInterfaceGroup",
 	];
 	/** IAM actions required for the DeleteManagedPrefixList API call. */
-	static readonly DELETE_MANAGED_PREFIX_LIST: string[] = [
+	static readonly DeleteManagedPrefixList: string[] = [
 		"ec2:DeleteManagedPrefixList",
 	];
 	/** IAM actions required for the DeleteNatGateway API call. */
-	static readonly DELETE_NAT_GATEWAY: string[] = ["ec2:DeleteNatGateway"];
+	static readonly DeleteNatGateway: string[] = ["ec2:DeleteNatGateway"];
 	/** IAM actions required for the DeleteNetworkAcl API call. */
-	static readonly DELETE_NETWORK_ACL: string[] = ["ec2:DeleteNetworkAcl"];
+	static readonly DeleteNetworkAcl: string[] = ["ec2:DeleteNetworkAcl"];
 	/** IAM actions required for the DeleteNetworkAclEntry API call. */
-	static readonly DELETE_NETWORK_ACL_ENTRY: string[] = [
+	static readonly DeleteNetworkAclEntry: string[] = [
 		"ec2:DeleteNetworkAclEntry",
 	];
 	/** IAM actions required for the DeleteNetworkInsightsAccessScope API call. */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE: string[] = [
+	static readonly DeleteNetworkInsightsAccessScope: string[] = [
 		"ec2:DeleteNetworkInsightsAccessScope",
 	];
 	/** IAM actions required for the DeleteNetworkInsightsAccessScopeAnalysis API call. */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS: string[] = [
+	static readonly DeleteNetworkInsightsAccessScopeAnalysis: string[] = [
 		"ec2:DeleteNetworkInsightsAccessScopeAnalysis",
 	];
 	/** IAM actions required for the DeleteNetworkInsightsAnalysis API call. */
-	static readonly DELETE_NETWORK_INSIGHTS_ANALYSIS: string[] = [
+	static readonly DeleteNetworkInsightsAnalysis: string[] = [
 		"ec2:DeleteNetworkInsightsAnalysis",
 	];
 	/** IAM actions required for the DeleteNetworkInsightsPath API call. */
-	static readonly DELETE_NETWORK_INSIGHTS_PATH: string[] = [
+	static readonly DeleteNetworkInsightsPath: string[] = [
 		"ec2:DeleteNetworkInsightsPath",
 	];
 	/** IAM actions required for the DeleteNetworkInterface API call. */
-	static readonly DELETE_NETWORK_INTERFACE: string[] = [
+	static readonly DeleteNetworkInterface: string[] = [
 		"ec2:DeleteNetworkInterface",
 	];
 	/** IAM actions required for the DeleteNetworkInterfacePermission API call. */
-	static readonly DELETE_NETWORK_INTERFACE_PERMISSION: string[] = [
+	static readonly DeleteNetworkInterfacePermission: string[] = [
 		"ec2:DeleteNetworkInterfacePermission",
 	];
 	/** IAM actions required for the DeletePlacementGroup API call. */
-	static readonly DELETE_PLACEMENT_GROUP: string[] = [
-		"ec2:DeletePlacementGroup",
-	];
+	static readonly DeletePlacementGroup: string[] = ["ec2:DeletePlacementGroup"];
 	/** IAM actions required for the DeletePublicIpv4Pool API call. */
-	static readonly DELETE_PUBLIC_IPV4_POOL: string[] = [
-		"ec2:DeletePublicIpv4Pool",
-	];
+	static readonly DeletePublicIpv4Pool: string[] = ["ec2:DeletePublicIpv4Pool"];
 	/** IAM actions required for the DeleteQueuedReservedInstances API call. */
-	static readonly DELETE_QUEUED_RESERVED_INSTANCES: string[] = [
+	static readonly DeleteQueuedReservedInstances: string[] = [
 		"ec2:DeleteQueuedReservedInstances",
 	];
 	/** IAM actions required for the DeleteRoute API call. */
-	static readonly DELETE_ROUTE: string[] = ["ec2:DeleteRoute"];
+	static readonly DeleteRoute: string[] = ["ec2:DeleteRoute"];
 	/** IAM actions required for the DeleteRouteServer API call. */
-	static readonly DELETE_ROUTE_SERVER: string[] = ["ec2:DeleteRouteServer"];
+	static readonly DeleteRouteServer: string[] = ["ec2:DeleteRouteServer"];
 	/** IAM actions required for the DeleteRouteServerEndpoint API call. */
-	static readonly DELETE_ROUTE_SERVER_ENDPOINT: string[] = [
+	static readonly DeleteRouteServerEndpoint: string[] = [
 		"ec2:DeleteRouteServerEndpoint",
 	];
 	/** IAM actions required for the DeleteRouteServerPeer API call. */
-	static readonly DELETE_ROUTE_SERVER_PEER: string[] = [
+	static readonly DeleteRouteServerPeer: string[] = [
 		"ec2:DeleteRouteServerPeer",
 	];
 	/** IAM actions required for the DeleteRouteTable API call. */
-	static readonly DELETE_ROUTE_TABLE: string[] = ["ec2:DeleteRouteTable"];
+	static readonly DeleteRouteTable: string[] = ["ec2:DeleteRouteTable"];
 	/** IAM actions required for the DeleteSecondaryNetwork API call. */
-	static readonly DELETE_SECONDARY_NETWORK: string[] = [
+	static readonly DeleteSecondaryNetwork: string[] = [
 		"ec2:DeleteSecondaryNetwork",
 	];
 	/** IAM actions required for the DeleteSecondarySubnet API call. */
-	static readonly DELETE_SECONDARY_SUBNET: string[] = [
+	static readonly DeleteSecondarySubnet: string[] = [
 		"ec2:DeleteSecondarySubnet",
 	];
 	/** IAM actions required for the DeleteSecurityGroup API call. */
-	static readonly DELETE_SECURITY_GROUP: string[] = ["ec2:DeleteSecurityGroup"];
+	static readonly DeleteSecurityGroup: string[] = ["ec2:DeleteSecurityGroup"];
 	/** IAM actions required for the DeleteSnapshot API call. */
-	static readonly DELETE_SNAPSHOT: string[] = ["ec2:DeleteSnapshot"];
+	static readonly DeleteSnapshot: string[] = ["ec2:DeleteSnapshot"];
 	/** IAM actions required for the DeleteSpotDatafeedSubscription API call. */
-	static readonly DELETE_SPOT_DATAFEED_SUBSCRIPTION: string[] = [
+	static readonly DeleteSpotDatafeedSubscription: string[] = [
 		"ec2:DeleteSpotDatafeedSubscription",
 	];
 	/** IAM actions required for the DeleteSubnet API call. */
-	static readonly DELETE_SUBNET: string[] = ["ec2:DeleteSubnet"];
+	static readonly DeleteSubnet: string[] = ["ec2:DeleteSubnet"];
 	/** IAM actions required for the DeleteSubnetCidrReservation API call. */
-	static readonly DELETE_SUBNET_CIDR_RESERVATION: string[] = [
+	static readonly DeleteSubnetCidrReservation: string[] = [
 		"ec2:DeleteSubnetCidrReservation",
 	];
 	/** IAM actions required for the DeleteTags API call. */
-	static readonly DELETE_TAGS: string[] = ["ec2:DeleteTags"];
+	static readonly DeleteTags: string[] = ["ec2:DeleteTags"];
 	/** IAM actions required for the DeleteTrafficMirrorFilter API call. */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER: string[] = [
+	static readonly DeleteTrafficMirrorFilter: string[] = [
 		"ec2:DeleteTrafficMirrorFilter",
 	];
 	/** IAM actions required for the DeleteTrafficMirrorFilterRule API call. */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER_RULE: string[] = [
+	static readonly DeleteTrafficMirrorFilterRule: string[] = [
 		"ec2:DeleteTrafficMirrorFilterRule",
 	];
 	/** IAM actions required for the DeleteTrafficMirrorSession API call. */
-	static readonly DELETE_TRAFFIC_MIRROR_SESSION: string[] = [
+	static readonly DeleteTrafficMirrorSession: string[] = [
 		"ec2:DeleteTrafficMirrorSession",
 	];
 	/** IAM actions required for the DeleteTrafficMirrorTarget API call. */
-	static readonly DELETE_TRAFFIC_MIRROR_TARGET: string[] = [
+	static readonly DeleteTrafficMirrorTarget: string[] = [
 		"ec2:DeleteTrafficMirrorTarget",
 	];
 	/** IAM actions required for the DeleteTransitGateway API call. */
-	static readonly DELETE_TRANSIT_GATEWAY: string[] = [
-		"ec2:DeleteTransitGateway",
-	];
+	static readonly DeleteTransitGateway: string[] = ["ec2:DeleteTransitGateway"];
 	/** IAM actions required for the DeleteTransitGatewayClientVpnAttachment API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT: string[] = [
+	static readonly DeleteTransitGatewayClientVpnAttachment: string[] = [
 		"ec2:DeleteTransitGatewayClientVpnAttachment",
 	];
 	/** IAM actions required for the DeleteTransitGatewayConnect API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT: string[] = [
+	static readonly DeleteTransitGatewayConnect: string[] = [
 		"ec2:DeleteTransitGatewayConnect",
 	];
 	/** IAM actions required for the DeleteTransitGatewayConnectPeer API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT_PEER: string[] = [
+	static readonly DeleteTransitGatewayConnectPeer: string[] = [
 		"ec2:DeleteTransitGatewayConnectPeer",
 	];
 	/** IAM actions required for the DeleteTransitGatewayMeteringPolicy API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY: string[] = [
+	static readonly DeleteTransitGatewayMeteringPolicy: string[] = [
 		"ec2:DeleteTransitGatewayMeteringPolicy",
 	];
 	/** IAM actions required for the DeleteTransitGatewayMeteringPolicyEntry API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY: string[] = [
+	static readonly DeleteTransitGatewayMeteringPolicyEntry: string[] = [
 		"ec2:DeleteTransitGatewayMeteringPolicyEntry",
 	];
 	/** IAM actions required for the DeleteTransitGatewayMulticastDomain API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_MULTICAST_DOMAIN: string[] = [
+	static readonly DeleteTransitGatewayMulticastDomain: string[] = [
 		"ec2:DeleteTransitGatewayMulticastDomain",
 	];
 	/** IAM actions required for the DeleteTransitGatewayPeeringAttachment API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_PEERING_ATTACHMENT: string[] = [
+	static readonly DeleteTransitGatewayPeeringAttachment: string[] = [
 		"ec2:DeleteTransitGatewayPeeringAttachment",
 	];
 	/** IAM actions required for the DeleteTransitGatewayPolicyTable API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_POLICY_TABLE: string[] = [
+	static readonly DeleteTransitGatewayPolicyTable: string[] = [
 		"ec2:DeleteTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the DeleteTransitGatewayPolicyTableEntry API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_POLICY_TABLE_ENTRY: string[] = [];
+	static readonly DeleteTransitGatewayPolicyTableEntry: string[] = [];
 	/** IAM actions required for the DeleteTransitGatewayPrefixListReference API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE: string[] = [
+	static readonly DeleteTransitGatewayPrefixListReference: string[] = [
 		"ec2:DeleteTransitGatewayPrefixListReference",
 	];
 	/** IAM actions required for the DeleteTransitGatewayRoute API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE: string[] = [
+	static readonly DeleteTransitGatewayRoute: string[] = [
 		"ec2:DeleteTransitGatewayRoute",
 	];
 	/** IAM actions required for the DeleteTransitGatewayRouteTable API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly DeleteTransitGatewayRouteTable: string[] = [
 		"ec2:DeleteTransitGatewayRouteTable",
 	];
 	/** IAM actions required for the DeleteTransitGatewayRouteTableAnnouncement API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT: string[] = [
+	static readonly DeleteTransitGatewayRouteTableAnnouncement: string[] = [
 		"ec2:DeleteTransitGatewayRouteTableAnnouncement",
 	];
 	/** IAM actions required for the DeleteTransitGatewayVpcAttachment API call. */
-	static readonly DELETE_TRANSIT_GATEWAY_VPC_ATTACHMENT: string[] = [
+	static readonly DeleteTransitGatewayVpcAttachment: string[] = [
 		"ec2:DeleteTransitGatewayVpcAttachment",
 	];
 	/** IAM actions required for the DeleteVerifiedAccessEndpoint API call. */
-	static readonly DELETE_VERIFIED_ACCESS_ENDPOINT: string[] = [
+	static readonly DeleteVerifiedAccessEndpoint: string[] = [
 		"ec2:DeleteVerifiedAccessEndpoint",
 	];
 	/** IAM actions required for the DeleteVerifiedAccessGroup API call. */
-	static readonly DELETE_VERIFIED_ACCESS_GROUP: string[] = [
+	static readonly DeleteVerifiedAccessGroup: string[] = [
 		"ec2:DeleteVerifiedAccessGroup",
 	];
 	/** IAM actions required for the DeleteVerifiedAccessInstance API call. */
-	static readonly DELETE_VERIFIED_ACCESS_INSTANCE: string[] = [
+	static readonly DeleteVerifiedAccessInstance: string[] = [
 		"ec2:DeleteVerifiedAccessInstance",
 	];
 	/** IAM actions required for the DeleteVerifiedAccessTrustProvider API call. */
-	static readonly DELETE_VERIFIED_ACCESS_TRUST_PROVIDER: string[] = [
+	static readonly DeleteVerifiedAccessTrustProvider: string[] = [
 		"ec2:DeleteVerifiedAccessTrustProvider",
 	];
 	/** IAM actions required for the DeleteVolume API call. */
-	static readonly DELETE_VOLUME: string[] = ["ec2:DeleteVolume"];
+	static readonly DeleteVolume: string[] = ["ec2:DeleteVolume"];
 	/** IAM actions required for the DeleteVpc API call. */
-	static readonly DELETE_VPC: string[] = ["ec2:DeleteVpc"];
+	static readonly DeleteVpc: string[] = ["ec2:DeleteVpc"];
 	/** IAM actions required for the DeleteVpcBlockPublicAccessExclusion API call. */
-	static readonly DELETE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION: string[] = [
+	static readonly DeleteVpcBlockPublicAccessExclusion: string[] = [
 		"ec2:DeleteVpcBlockPublicAccessExclusion",
 	];
 	/** IAM actions required for the DeleteVpcEncryptionControl API call. */
-	static readonly DELETE_VPC_ENCRYPTION_CONTROL: string[] = [
+	static readonly DeleteVpcEncryptionControl: string[] = [
 		"ec2:DeleteVpcEncryptionControl",
 	];
 	/** IAM actions required for the DeleteVpcEndpointConnectionNotifications API call. */
-	static readonly DELETE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS: string[] = [
+	static readonly DeleteVpcEndpointConnectionNotifications: string[] = [
 		"ec2:DeleteVpcEndpointConnectionNotifications",
 	];
 	/** IAM actions required for the DeleteVpcEndpointServiceConfigurations API call. */
-	static readonly DELETE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS: string[] = [
+	static readonly DeleteVpcEndpointServiceConfigurations: string[] = [
 		"ec2:DeleteVpcEndpointServiceConfigurations",
 	];
 	/** IAM actions required for the DeleteVpcEndpoints API call. */
-	static readonly DELETE_VPC_ENDPOINTS: string[] = ["ec2:DeleteVpcEndpoints"];
+	static readonly DeleteVpcEndpoints: string[] = ["ec2:DeleteVpcEndpoints"];
 	/** IAM actions required for the DeleteVpcPeeringConnection API call. */
-	static readonly DELETE_VPC_PEERING_CONNECTION: string[] = [
+	static readonly DeleteVpcPeeringConnection: string[] = [
 		"ec2:DeleteVpcPeeringConnection",
 	];
 	/** IAM actions required for the DeleteVpnConcentrator API call. */
-	static readonly DELETE_VPN_CONCENTRATOR: string[] = [
+	static readonly DeleteVpnConcentrator: string[] = [
 		"ec2:DeleteVpnConcentrator",
 	];
 	/** IAM actions required for the DeleteVpnConnection API call. */
-	static readonly DELETE_VPN_CONNECTION: string[] = ["ec2:DeleteVpnConnection"];
+	static readonly DeleteVpnConnection: string[] = ["ec2:DeleteVpnConnection"];
 	/** IAM actions required for the DeleteVpnConnectionRoute API call. */
-	static readonly DELETE_VPN_CONNECTION_ROUTE: string[] = [
+	static readonly DeleteVpnConnectionRoute: string[] = [
 		"ec2:DeleteVpnConnectionRoute",
 	];
 	/** IAM actions required for the DeleteVpnGateway API call. */
-	static readonly DELETE_VPN_GATEWAY: string[] = ["ec2:DeleteVpnGateway"];
+	static readonly DeleteVpnGateway: string[] = ["ec2:DeleteVpnGateway"];
 	/** IAM actions required for the DeprovisionByoipCidr API call. */
-	static readonly DEPROVISION_BYOIP_CIDR: string[] = [
-		"ec2:DeprovisionByoipCidr",
-	];
+	static readonly DeprovisionByoipCidr: string[] = ["ec2:DeprovisionByoipCidr"];
 	/** IAM actions required for the DeprovisionIpamByoasn API call. */
-	static readonly DEPROVISION_IPAM_BYOASN: string[] = [
+	static readonly DeprovisionIpamByoasn: string[] = [
 		"ec2:DeprovisionIpamByoasn",
 	];
 	/** IAM actions required for the DeprovisionIpamPoolCidr API call. */
-	static readonly DEPROVISION_IPAM_POOL_CIDR: string[] = [
+	static readonly DeprovisionIpamPoolCidr: string[] = [
 		"ec2:DeprovisionIpamPoolCidr",
 	];
 	/** IAM actions required for the DeprovisionPublicIpv4PoolCidr API call. */
-	static readonly DEPROVISION_PUBLIC_IPV4_POOL_CIDR: string[] = [
+	static readonly DeprovisionPublicIpv4PoolCidr: string[] = [
 		"ec2:DeprovisionPublicIpv4PoolCidr",
 	];
 	/** IAM actions required for the DeregisterImage API call. */
-	static readonly DEREGISTER_IMAGE: string[] = ["ec2:DeregisterImage"];
+	static readonly DeregisterImage: string[] = ["ec2:DeregisterImage"];
 	/** IAM actions required for the DeregisterInstanceEventNotificationAttributes API call. */
-	static readonly DEREGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES: string[] =
-		["ec2:DeregisterInstanceEventNotificationAttributes"];
+	static readonly DeregisterInstanceEventNotificationAttributes: string[] = [
+		"ec2:DeregisterInstanceEventNotificationAttributes",
+	];
 	/** IAM actions required for the DeregisterTransitGatewayMulticastGroupMembers API call. */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS: string[] =
-		["ec2:DeregisterTransitGatewayMulticastGroupMembers"];
+	static readonly DeregisterTransitGatewayMulticastGroupMembers: string[] = [
+		"ec2:DeregisterTransitGatewayMulticastGroupMembers",
+	];
 	/** IAM actions required for the DeregisterTransitGatewayMulticastGroupSources API call. */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES: string[] =
-		["ec2:DeregisterTransitGatewayMulticastGroupSources"];
+	static readonly DeregisterTransitGatewayMulticastGroupSources: string[] = [
+		"ec2:DeregisterTransitGatewayMulticastGroupSources",
+	];
 	/** IAM actions required for the DescribeAccountAttributes API call. */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES: string[] = [
+	static readonly DescribeAccountAttributes: string[] = [
 		"ec2:DescribeAccountAttributes",
 	];
 	/** IAM actions required for the DescribeAccountVpcEncryptionControl API call. */
-	static readonly DESCRIBE_ACCOUNT_VPC_ENCRYPTION_CONTROL: string[] = [];
+	static readonly DescribeAccountVpcEncryptionControl: string[] = [];
 	/** IAM actions required for the DescribeAddressTransfers API call. */
-	static readonly DESCRIBE_ADDRESS_TRANSFERS: string[] = [
+	static readonly DescribeAddressTransfers: string[] = [
 		"ec2:DescribeAddressTransfers",
 	];
 	/** IAM actions required for the DescribeAddresses API call. */
-	static readonly DESCRIBE_ADDRESSES: string[] = ["ec2:DescribeAddresses"];
+	static readonly DescribeAddresses: string[] = ["ec2:DescribeAddresses"];
 	/** IAM actions required for the DescribeAddressesAttribute API call. */
-	static readonly DESCRIBE_ADDRESSES_ATTRIBUTE: string[] = [
+	static readonly DescribeAddressesAttribute: string[] = [
 		"ec2:DescribeAddressesAttribute",
 	];
 	/** IAM actions required for the DescribeAggregateIdFormat API call. */
-	static readonly DESCRIBE_AGGREGATE_ID_FORMAT: string[] = [
+	static readonly DescribeAggregateIdFormat: string[] = [
 		"ec2:DescribeAggregateIdFormat",
 	];
 	/** IAM actions required for the DescribeApplicationStatus API call. */
-	static readonly DESCRIBE_APPLICATION_STATUS: string[] = [];
+	static readonly DescribeApplicationStatus: string[] = [];
 	/** IAM actions required for the DescribeApplicationStatusCheckAssociations API call. */
-	static readonly DESCRIBE_APPLICATION_STATUS_CHECK_ASSOCIATIONS: string[] = [];
+	static readonly DescribeApplicationStatusCheckAssociations: string[] = [];
 	/** IAM actions required for the DescribeApplicationStatusChecks API call. */
-	static readonly DESCRIBE_APPLICATION_STATUS_CHECKS: string[] = [];
+	static readonly DescribeApplicationStatusChecks: string[] = [];
 	/** IAM actions required for the DescribeAvailabilityZones API call. */
-	static readonly DESCRIBE_AVAILABILITY_ZONES: string[] = [
+	static readonly DescribeAvailabilityZones: string[] = [
 		"ec2:DescribeAvailabilityZones",
 	];
 	/** IAM actions required for the DescribeAwsNetworkPerformanceMetricSubscriptions API call. */
-	static readonly DESCRIBE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTIONS: string[] =
-		["ec2:DescribeAwsNetworkPerformanceMetricSubscriptions"];
+	static readonly DescribeAwsNetworkPerformanceMetricSubscriptions: string[] = [
+		"ec2:DescribeAwsNetworkPerformanceMetricSubscriptions",
+	];
 	/** IAM actions required for the DescribeBundleTasks API call. */
-	static readonly DESCRIBE_BUNDLE_TASKS: string[] = ["ec2:DescribeBundleTasks"];
+	static readonly DescribeBundleTasks: string[] = ["ec2:DescribeBundleTasks"];
 	/** IAM actions required for the DescribeByoipCidrs API call. */
-	static readonly DESCRIBE_BYOIP_CIDRS: string[] = ["ec2:DescribeByoipCidrs"];
+	static readonly DescribeByoipCidrs: string[] = ["ec2:DescribeByoipCidrs"];
 	/** IAM actions required for the DescribeCapacityBlockExtensionHistory API call. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_HISTORY: string[] = [
+	static readonly DescribeCapacityBlockExtensionHistory: string[] = [
 		"ec2:DescribeCapacityBlockExtensionHistory",
 	];
 	/** IAM actions required for the DescribeCapacityBlockExtensionOfferings API call. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_OFFERINGS: string[] = [
+	static readonly DescribeCapacityBlockExtensionOfferings: string[] = [
 		"ec2:DescribeCapacityBlockExtensionOfferings",
 	];
 	/** IAM actions required for the DescribeCapacityBlockOfferings API call. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_OFFERINGS: string[] = [
+	static readonly DescribeCapacityBlockOfferings: string[] = [
 		"ec2:DescribeCapacityBlockOfferings",
 	];
 	/** IAM actions required for the DescribeCapacityBlockStatus API call. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_STATUS: string[] = [
+	static readonly DescribeCapacityBlockStatus: string[] = [
 		"ec2:DescribeCapacityBlockStatus",
 	];
 	/** IAM actions required for the DescribeCapacityBlocks API call. */
-	static readonly DESCRIBE_CAPACITY_BLOCKS: string[] = [
+	static readonly DescribeCapacityBlocks: string[] = [
 		"ec2:DescribeCapacityBlocks",
 	];
 	/** IAM actions required for the DescribeCapacityManagerDataExports API call. */
-	static readonly DESCRIBE_CAPACITY_MANAGER_DATA_EXPORTS: string[] = [
+	static readonly DescribeCapacityManagerDataExports: string[] = [
 		"ec2:DescribeCapacityManagerDataExports",
 	];
 	/** IAM actions required for the DescribeCapacityReservationBillingRequests API call. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_BILLING_REQUESTS: string[] = [
+	static readonly DescribeCapacityReservationBillingRequests: string[] = [
 		"ec2:DescribeCapacityReservationBillingRequests",
 	];
 	/** IAM actions required for the DescribeCapacityReservationCancellationQuotes API call. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_CANCELLATION_QUOTES: string[] =
-		["ec2:DescribeCapacityReservationCancellationQuotes"];
+	static readonly DescribeCapacityReservationCancellationQuotes: string[] = [
+		"ec2:DescribeCapacityReservationCancellationQuotes",
+	];
 	/** IAM actions required for the DescribeCapacityReservationFleets API call. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_FLEETS: string[] = [
+	static readonly DescribeCapacityReservationFleets: string[] = [
 		"ec2:DescribeCapacityReservationFleets",
 	];
 	/** IAM actions required for the DescribeCapacityReservationTopology API call. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_TOPOLOGY: string[] = [
+	static readonly DescribeCapacityReservationTopology: string[] = [
 		"ec2:DescribeCapacityReservationTopology",
 	];
 	/** IAM actions required for the DescribeCapacityReservations API call. */
-	static readonly DESCRIBE_CAPACITY_RESERVATIONS: string[] = [
+	static readonly DescribeCapacityReservations: string[] = [
 		"ec2:DescribeCapacityReservations",
 	];
 	/** IAM actions required for the DescribeCarrierGateways API call. */
-	static readonly DESCRIBE_CARRIER_GATEWAYS: string[] = [
+	static readonly DescribeCarrierGateways: string[] = [
 		"ec2:DescribeCarrierGateways",
 	];
 	/** IAM actions required for the DescribeClassicLinkInstances API call. */
-	static readonly DESCRIBE_CLASSIC_LINK_INSTANCES: string[] = [
+	static readonly DescribeClassicLinkInstances: string[] = [
 		"ec2:DescribeClassicLinkInstances",
 	];
 	/** IAM actions required for the DescribeClientVpnAuthorizationRules API call. */
-	static readonly DESCRIBE_CLIENT_VPN_AUTHORIZATION_RULES: string[] = [
+	static readonly DescribeClientVpnAuthorizationRules: string[] = [
 		"ec2:DescribeClientVpnAuthorizationRules",
 	];
 	/** IAM actions required for the DescribeClientVpnConnections API call. */
-	static readonly DESCRIBE_CLIENT_VPN_CONNECTIONS: string[] = [
+	static readonly DescribeClientVpnConnections: string[] = [
 		"ec2:DescribeClientVpnConnections",
 	];
 	/** IAM actions required for the DescribeClientVpnEndpoints API call. */
-	static readonly DESCRIBE_CLIENT_VPN_ENDPOINTS: string[] = [
+	static readonly DescribeClientVpnEndpoints: string[] = [
 		"ec2:DescribeClientVpnEndpoints",
 	];
 	/** IAM actions required for the DescribeClientVpnRoutes API call. */
-	static readonly DESCRIBE_CLIENT_VPN_ROUTES: string[] = [
+	static readonly DescribeClientVpnRoutes: string[] = [
 		"ec2:DescribeClientVpnRoutes",
 	];
 	/** IAM actions required for the DescribeClientVpnTargetNetworks API call. */
-	static readonly DESCRIBE_CLIENT_VPN_TARGET_NETWORKS: string[] = [
+	static readonly DescribeClientVpnTargetNetworks: string[] = [
 		"ec2:DescribeClientVpnTargetNetworks",
 	];
 	/** IAM actions required for the DescribeCoipPools API call. */
-	static readonly DESCRIBE_COIP_POOLS: string[] = ["ec2:DescribeCoipPools"];
+	static readonly DescribeCoipPools: string[] = ["ec2:DescribeCoipPools"];
 	/** IAM actions required for the DescribeConversionTasks API call. */
-	static readonly DESCRIBE_CONVERSION_TASKS: string[] = [
+	static readonly DescribeConversionTasks: string[] = [
 		"ec2:DescribeConversionTasks",
 	];
 	/** IAM actions required for the DescribeCustomerGateways API call. */
-	static readonly DESCRIBE_CUSTOMER_GATEWAYS: string[] = [
+	static readonly DescribeCustomerGateways: string[] = [
 		"ec2:DescribeCustomerGateways",
 	];
 	/** IAM actions required for the DescribeDeclarativePoliciesReports API call. */
-	static readonly DESCRIBE_DECLARATIVE_POLICIES_REPORTS: string[] = [
+	static readonly DescribeDeclarativePoliciesReports: string[] = [
 		"ec2:DescribeDeclarativePoliciesReports",
 	];
 	/** IAM actions required for the DescribeDhcpOptions API call. */
-	static readonly DESCRIBE_DHCP_OPTIONS: string[] = ["ec2:DescribeDhcpOptions"];
+	static readonly DescribeDhcpOptions: string[] = ["ec2:DescribeDhcpOptions"];
 	/** IAM actions required for the DescribeEgressOnlyInternetGateways API call. */
-	static readonly DESCRIBE_EGRESS_ONLY_INTERNET_GATEWAYS: string[] = [
+	static readonly DescribeEgressOnlyInternetGateways: string[] = [
 		"ec2:DescribeEgressOnlyInternetGateways",
 	];
 	/** IAM actions required for the DescribeElasticGpus API call. */
-	static readonly DESCRIBE_ELASTIC_GPUS: string[] = [];
+	static readonly DescribeElasticGpus: string[] = [];
 	/** IAM actions required for the DescribeExportImageTasks API call. */
-	static readonly DESCRIBE_EXPORT_IMAGE_TASKS: string[] = [
+	static readonly DescribeExportImageTasks: string[] = [
 		"ec2:DescribeExportImageTasks",
 	];
 	/** IAM actions required for the DescribeExportTasks API call. */
-	static readonly DESCRIBE_EXPORT_TASKS: string[] = ["ec2:DescribeExportTasks"];
+	static readonly DescribeExportTasks: string[] = ["ec2:DescribeExportTasks"];
 	/** IAM actions required for the DescribeFastLaunchImages API call. */
-	static readonly DESCRIBE_FAST_LAUNCH_IMAGES: string[] = [
+	static readonly DescribeFastLaunchImages: string[] = [
 		"ec2:DescribeFastLaunchImages",
 	];
 	/** IAM actions required for the DescribeFastSnapshotRestores API call. */
-	static readonly DESCRIBE_FAST_SNAPSHOT_RESTORES: string[] = [
+	static readonly DescribeFastSnapshotRestores: string[] = [
 		"ec2:DescribeFastSnapshotRestores",
 	];
 	/** IAM actions required for the DescribeFleetHistory API call. */
-	static readonly DESCRIBE_FLEET_HISTORY: string[] = [
-		"ec2:DescribeFleetHistory",
-	];
+	static readonly DescribeFleetHistory: string[] = ["ec2:DescribeFleetHistory"];
 	/** IAM actions required for the DescribeFleetInstances API call. */
-	static readonly DESCRIBE_FLEET_INSTANCES: string[] = [
+	static readonly DescribeFleetInstances: string[] = [
 		"ec2:DescribeFleetInstances",
 	];
 	/** IAM actions required for the DescribeFleets API call. */
-	static readonly DESCRIBE_FLEETS: string[] = ["ec2:DescribeFleets"];
+	static readonly DescribeFleets: string[] = ["ec2:DescribeFleets"];
 	/** IAM actions required for the DescribeFlowLogs API call. */
-	static readonly DESCRIBE_FLOW_LOGS: string[] = ["ec2:DescribeFlowLogs"];
+	static readonly DescribeFlowLogs: string[] = ["ec2:DescribeFlowLogs"];
 	/** IAM actions required for the DescribeFpgaImageAttribute API call. */
-	static readonly DESCRIBE_FPGA_IMAGE_ATTRIBUTE: string[] = [
+	static readonly DescribeFpgaImageAttribute: string[] = [
 		"ec2:DescribeFpgaImageAttribute",
 	];
 	/** IAM actions required for the DescribeFpgaImages API call. */
-	static readonly DESCRIBE_FPGA_IMAGES: string[] = ["ec2:DescribeFpgaImages"];
+	static readonly DescribeFpgaImages: string[] = ["ec2:DescribeFpgaImages"];
 	/** IAM actions required for the DescribeHostReservationOfferings API call. */
-	static readonly DESCRIBE_HOST_RESERVATION_OFFERINGS: string[] = [
+	static readonly DescribeHostReservationOfferings: string[] = [
 		"ec2:DescribeHostReservationOfferings",
 	];
 	/** IAM actions required for the DescribeHostReservations API call. */
-	static readonly DESCRIBE_HOST_RESERVATIONS: string[] = [
+	static readonly DescribeHostReservations: string[] = [
 		"ec2:DescribeHostReservations",
 	];
 	/** IAM actions required for the DescribeHosts API call. */
-	static readonly DESCRIBE_HOSTS: string[] = ["ec2:DescribeHosts"];
+	static readonly DescribeHosts: string[] = ["ec2:DescribeHosts"];
 	/** IAM actions required for the DescribeIamInstanceProfileAssociations API call. */
-	static readonly DESCRIBE_IAM_INSTANCE_PROFILE_ASSOCIATIONS: string[] = [
+	static readonly DescribeIamInstanceProfileAssociations: string[] = [
 		"ec2:DescribeIamInstanceProfileAssociations",
 	];
 	/** IAM actions required for the DescribeIdFormat API call. */
-	static readonly DESCRIBE_ID_FORMAT: string[] = ["ec2:DescribeIdFormat"];
+	static readonly DescribeIdFormat: string[] = ["ec2:DescribeIdFormat"];
 	/** IAM actions required for the DescribeIdentityIdFormat API call. */
-	static readonly DESCRIBE_IDENTITY_ID_FORMAT: string[] = [
+	static readonly DescribeIdentityIdFormat: string[] = [
 		"ec2:DescribeIdentityIdFormat",
 	];
 	/** IAM actions required for the DescribeImageAttribute API call. */
-	static readonly DESCRIBE_IMAGE_ATTRIBUTE: string[] = [
+	static readonly DescribeImageAttribute: string[] = [
 		"ec2:DescribeImageAttribute",
 	];
 	/** IAM actions required for the DescribeImageReferences API call. */
-	static readonly DESCRIBE_IMAGE_REFERENCES: string[] = [
+	static readonly DescribeImageReferences: string[] = [
 		"ec2:DescribeImageReferences",
 	];
 	/** IAM actions required for the DescribeImageUsageReportEntries API call. */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORT_ENTRIES: string[] = [
+	static readonly DescribeImageUsageReportEntries: string[] = [
 		"ec2:DescribeImageUsageReportEntries",
 	];
 	/** IAM actions required for the DescribeImageUsageReports API call. */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORTS: string[] = [
+	static readonly DescribeImageUsageReports: string[] = [
 		"ec2:DescribeImageUsageReports",
 	];
 	/** IAM actions required for the DescribeImages API call. */
-	static readonly DESCRIBE_IMAGES: string[] = ["ec2:DescribeImages"];
+	static readonly DescribeImages: string[] = ["ec2:DescribeImages"];
 	/** IAM actions required for the DescribeImportImageTasks API call. */
-	static readonly DESCRIBE_IMPORT_IMAGE_TASKS: string[] = [
+	static readonly DescribeImportImageTasks: string[] = [
 		"ec2:DescribeImportImageTasks",
 	];
 	/** IAM actions required for the DescribeImportSnapshotTasks API call. */
-	static readonly DESCRIBE_IMPORT_SNAPSHOT_TASKS: string[] = [
+	static readonly DescribeImportSnapshotTasks: string[] = [
 		"ec2:DescribeImportSnapshotTasks",
 	];
 	/** IAM actions required for the DescribeInstanceAttribute API call. */
-	static readonly DESCRIBE_INSTANCE_ATTRIBUTE: string[] = [
+	static readonly DescribeInstanceAttribute: string[] = [
 		"ec2:DescribeInstanceAttribute",
 	];
 	/** IAM actions required for the DescribeInstanceConnectEndpoints API call. */
-	static readonly DESCRIBE_INSTANCE_CONNECT_ENDPOINTS: string[] = [
+	static readonly DescribeInstanceConnectEndpoints: string[] = [
 		"ec2:DescribeInstanceConnectEndpoints",
 	];
 	/** IAM actions required for the DescribeInstanceCreditSpecifications API call. */
-	static readonly DESCRIBE_INSTANCE_CREDIT_SPECIFICATIONS: string[] = [
+	static readonly DescribeInstanceCreditSpecifications: string[] = [
 		"ec2:DescribeInstanceCreditSpecifications",
 	];
 	/** IAM actions required for the DescribeInstanceEventNotificationAttributes API call. */
-	static readonly DESCRIBE_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES: string[] = [
+	static readonly DescribeInstanceEventNotificationAttributes: string[] = [
 		"ec2:DescribeInstanceEventNotificationAttributes",
 	];
 	/** IAM actions required for the DescribeInstanceEventWindows API call. */
-	static readonly DESCRIBE_INSTANCE_EVENT_WINDOWS: string[] = [
+	static readonly DescribeInstanceEventWindows: string[] = [
 		"ec2:DescribeInstanceEventWindows",
 	];
 	/** IAM actions required for the DescribeInstanceImageMetadata API call. */
-	static readonly DESCRIBE_INSTANCE_IMAGE_METADATA: string[] = [
+	static readonly DescribeInstanceImageMetadata: string[] = [
 		"ec2:DescribeInstanceImageMetadata",
 	];
 	/** IAM actions required for the DescribeInstanceSqlHaHistoryStates API call. */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_HISTORY_STATES: string[] = [
+	static readonly DescribeInstanceSqlHaHistoryStates: string[] = [
 		"ec2:DescribeInstanceSqlHaHistoryStates",
 	];
 	/** IAM actions required for the DescribeInstanceSqlHaStates API call. */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_STATES: string[] = [
+	static readonly DescribeInstanceSqlHaStates: string[] = [
 		"ec2:DescribeInstanceSqlHaStates",
 	];
 	/** IAM actions required for the DescribeInstanceStatus API call. */
-	static readonly DESCRIBE_INSTANCE_STATUS: string[] = [
+	static readonly DescribeInstanceStatus: string[] = [
 		"ec2:DescribeInstanceStatus",
 	];
 	/** IAM actions required for the DescribeInstanceTopology API call. */
-	static readonly DESCRIBE_INSTANCE_TOPOLOGY: string[] = [
+	static readonly DescribeInstanceTopology: string[] = [
 		"ec2:DescribeInstanceTopology",
 	];
 	/** IAM actions required for the DescribeInstanceTypeOfferings API call. */
-	static readonly DESCRIBE_INSTANCE_TYPE_OFFERINGS: string[] = [
+	static readonly DescribeInstanceTypeOfferings: string[] = [
 		"ec2:DescribeInstanceTypeOfferings",
 	];
 	/** IAM actions required for the DescribeInstanceTypes API call. */
-	static readonly DESCRIBE_INSTANCE_TYPES: string[] = [
+	static readonly DescribeInstanceTypes: string[] = [
 		"ec2:DescribeInstanceTypes",
 	];
 	/** IAM actions required for the DescribeInstances API call. */
-	static readonly DESCRIBE_INSTANCES: string[] = ["ec2:DescribeInstances"];
+	static readonly DescribeInstances: string[] = ["ec2:DescribeInstances"];
 	/** IAM actions required for the DescribeInternetGateways API call. */
-	static readonly DESCRIBE_INTERNET_GATEWAYS: string[] = [
+	static readonly DescribeInternetGateways: string[] = [
 		"ec2:DescribeInternetGateways",
 	];
 	/** IAM actions required for the DescribeIpamByoasn API call. */
-	static readonly DESCRIBE_IPAM_BYOASN: string[] = ["ec2:DescribeIpamByoasn"];
+	static readonly DescribeIpamByoasn: string[] = ["ec2:DescribeIpamByoasn"];
 	/** IAM actions required for the DescribeIpamExternalResourceVerificationTokens API call. */
-	static readonly DESCRIBE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKENS: string[] =
-		["ec2:DescribeIpamExternalResourceVerificationTokens"];
-	/** IAM actions required for the DescribeIpamInternetRegistryAssociations API call. */
-	static readonly DESCRIBE_IPAM_INTERNET_REGISTRY_ASSOCIATIONS: string[] = [];
-	/** IAM actions required for the DescribeIpamPolicies API call. */
-	static readonly DESCRIBE_IPAM_POLICIES: string[] = [
-		"ec2:DescribeIpamPolicies",
+	static readonly DescribeIpamExternalResourceVerificationTokens: string[] = [
+		"ec2:DescribeIpamExternalResourceVerificationTokens",
 	];
+	/** IAM actions required for the DescribeIpamInternetRegistryAssociations API call. */
+	static readonly DescribeIpamInternetRegistryAssociations: string[] = [];
+	/** IAM actions required for the DescribeIpamPolicies API call. */
+	static readonly DescribeIpamPolicies: string[] = ["ec2:DescribeIpamPolicies"];
 	/** IAM actions required for the DescribeIpamPoolAllocations API call. */
-	static readonly DESCRIBE_IPAM_POOL_ALLOCATIONS: string[] = [
+	static readonly DescribeIpamPoolAllocations: string[] = [
 		"ec2:DescribeIpamPoolAllocations",
 	];
 	/** IAM actions required for the DescribeIpamPools API call. */
-	static readonly DESCRIBE_IPAM_POOLS: string[] = ["ec2:DescribeIpamPools"];
+	static readonly DescribeIpamPools: string[] = ["ec2:DescribeIpamPools"];
 	/** IAM actions required for the DescribeIpamPrefixListResolverTargets API call. */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVER_TARGETS: string[] = [
+	static readonly DescribeIpamPrefixListResolverTargets: string[] = [
 		"ec2:DescribeIpamPrefixListResolverTargets",
 	];
 	/** IAM actions required for the DescribeIpamPrefixListResolvers API call. */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVERS: string[] = [
+	static readonly DescribeIpamPrefixListResolvers: string[] = [
 		"ec2:DescribeIpamPrefixListResolvers",
 	];
 	/** IAM actions required for the DescribeIpamResourceDiscoveries API call. */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERIES: string[] = [
+	static readonly DescribeIpamResourceDiscoveries: string[] = [
 		"ec2:DescribeIpamResourceDiscoveries",
 	];
 	/** IAM actions required for the DescribeIpamResourceDiscoveryAssociations API call. */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERY_ASSOCIATIONS: string[] = [
+	static readonly DescribeIpamResourceDiscoveryAssociations: string[] = [
 		"ec2:DescribeIpamResourceDiscoveryAssociations",
 	];
 	/** IAM actions required for the DescribeIpamScopes API call. */
-	static readonly DESCRIBE_IPAM_SCOPES: string[] = ["ec2:DescribeIpamScopes"];
+	static readonly DescribeIpamScopes: string[] = ["ec2:DescribeIpamScopes"];
 	/** IAM actions required for the DescribeIpams API call. */
-	static readonly DESCRIBE_IPAMS: string[] = ["ec2:DescribeIpams"];
+	static readonly DescribeIpams: string[] = ["ec2:DescribeIpams"];
 	/** IAM actions required for the DescribeIpv6Pools API call. */
-	static readonly DESCRIBE_IPV6_POOLS: string[] = ["ec2:DescribeIpv6Pools"];
+	static readonly DescribeIpv6Pools: string[] = ["ec2:DescribeIpv6Pools"];
 	/** IAM actions required for the DescribeKeyPairs API call. */
-	static readonly DESCRIBE_KEY_PAIRS: string[] = ["ec2:DescribeKeyPairs"];
+	static readonly DescribeKeyPairs: string[] = ["ec2:DescribeKeyPairs"];
 	/** IAM actions required for the DescribeLaunchTemplateVersions API call. */
-	static readonly DESCRIBE_LAUNCH_TEMPLATE_VERSIONS: string[] = [
+	static readonly DescribeLaunchTemplateVersions: string[] = [
 		"ec2:DescribeLaunchTemplateVersions",
 	];
 	/** IAM actions required for the DescribeLaunchTemplates API call. */
-	static readonly DESCRIBE_LAUNCH_TEMPLATES: string[] = [
+	static readonly DescribeLaunchTemplates: string[] = [
 		"ec2:DescribeLaunchTemplates",
 	];
 	/** IAM actions required for the DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATIONS: string[] =
+	static readonly DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations: string[] =
 		["ec2:DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations"];
 	/** IAM actions required for the DescribeLocalGatewayRouteTableVpcAssociations API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATIONS: string[] =
-		["ec2:DescribeLocalGatewayRouteTableVpcAssociations"];
+	static readonly DescribeLocalGatewayRouteTableVpcAssociations: string[] = [
+		"ec2:DescribeLocalGatewayRouteTableVpcAssociations",
+	];
 	/** IAM actions required for the DescribeLocalGatewayRouteTables API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLES: string[] = [
+	static readonly DescribeLocalGatewayRouteTables: string[] = [
 		"ec2:DescribeLocalGatewayRouteTables",
 	];
 	/** IAM actions required for the DescribeLocalGatewayVirtualInterfaceGroups API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUPS: string[] = [
+	static readonly DescribeLocalGatewayVirtualInterfaceGroups: string[] = [
 		"ec2:DescribeLocalGatewayVirtualInterfaceGroups",
 	];
 	/** IAM actions required for the DescribeLocalGatewayVirtualInterfaces API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACES: string[] = [
+	static readonly DescribeLocalGatewayVirtualInterfaces: string[] = [
 		"ec2:DescribeLocalGatewayVirtualInterfaces",
 	];
 	/** IAM actions required for the DescribeLocalGateways API call. */
-	static readonly DESCRIBE_LOCAL_GATEWAYS: string[] = [
+	static readonly DescribeLocalGateways: string[] = [
 		"ec2:DescribeLocalGateways",
 	];
 	/** IAM actions required for the DescribeLockedSnapshots API call. */
-	static readonly DESCRIBE_LOCKED_SNAPSHOTS: string[] = [
+	static readonly DescribeLockedSnapshots: string[] = [
 		"ec2:DescribeLockedSnapshots",
 	];
 	/** IAM actions required for the DescribeMacHosts API call. */
-	static readonly DESCRIBE_MAC_HOSTS: string[] = ["ec2:DescribeMacHosts"];
+	static readonly DescribeMacHosts: string[] = ["ec2:DescribeMacHosts"];
 	/** IAM actions required for the DescribeMacModificationTasks API call. */
-	static readonly DESCRIBE_MAC_MODIFICATION_TASKS: string[] = [
+	static readonly DescribeMacModificationTasks: string[] = [
 		"ec2:DescribeMacModificationTasks",
 	];
 	/** IAM actions required for the DescribeManagedPrefixLists API call. */
-	static readonly DESCRIBE_MANAGED_PREFIX_LISTS: string[] = [
+	static readonly DescribeManagedPrefixLists: string[] = [
 		"ec2:DescribeManagedPrefixLists",
 	];
 	/** IAM actions required for the DescribeMovingAddresses API call. */
-	static readonly DESCRIBE_MOVING_ADDRESSES: string[] = [];
+	static readonly DescribeMovingAddresses: string[] = [];
 	/** IAM actions required for the DescribeNatGateways API call. */
-	static readonly DESCRIBE_NAT_GATEWAYS: string[] = ["ec2:DescribeNatGateways"];
+	static readonly DescribeNatGateways: string[] = ["ec2:DescribeNatGateways"];
 	/** IAM actions required for the DescribeNetworkAcls API call. */
-	static readonly DESCRIBE_NETWORK_ACLS: string[] = ["ec2:DescribeNetworkAcls"];
+	static readonly DescribeNetworkAcls: string[] = ["ec2:DescribeNetworkAcls"];
 	/** IAM actions required for the DescribeNetworkInsightsAccessScopeAnalyses API call. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSES: string[] = [
+	static readonly DescribeNetworkInsightsAccessScopeAnalyses: string[] = [
 		"ec2:DescribeNetworkInsightsAccessScopeAnalyses",
 	];
 	/** IAM actions required for the DescribeNetworkInsightsAccessScopes API call. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPES: string[] = [
+	static readonly DescribeNetworkInsightsAccessScopes: string[] = [
 		"ec2:DescribeNetworkInsightsAccessScopes",
 	];
 	/** IAM actions required for the DescribeNetworkInsightsAnalyses API call. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ANALYSES: string[] = [
+	static readonly DescribeNetworkInsightsAnalyses: string[] = [
 		"ec2:DescribeNetworkInsightsAnalyses",
 	];
 	/** IAM actions required for the DescribeNetworkInsightsPaths API call. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_PATHS: string[] = [
+	static readonly DescribeNetworkInsightsPaths: string[] = [
 		"ec2:DescribeNetworkInsightsPaths",
 	];
 	/** IAM actions required for the DescribeNetworkInterfaceAttribute API call. */
-	static readonly DESCRIBE_NETWORK_INTERFACE_ATTRIBUTE: string[] = [
+	static readonly DescribeNetworkInterfaceAttribute: string[] = [
 		"ec2:DescribeNetworkInterfaceAttribute",
 	];
 	/** IAM actions required for the DescribeNetworkInterfacePermissions API call. */
-	static readonly DESCRIBE_NETWORK_INTERFACE_PERMISSIONS: string[] = [
+	static readonly DescribeNetworkInterfacePermissions: string[] = [
 		"ec2:DescribeNetworkInterfacePermissions",
 	];
 	/** IAM actions required for the DescribeNetworkInterfaces API call. */
-	static readonly DESCRIBE_NETWORK_INTERFACES: string[] = [
+	static readonly DescribeNetworkInterfaces: string[] = [
 		"ec2:DescribeNetworkInterfaces",
 	];
 	/** IAM actions required for the DescribeOutpostLags API call. */
-	static readonly DESCRIBE_OUTPOST_LAGS: string[] = ["ec2:DescribeOutpostLags"];
+	static readonly DescribeOutpostLags: string[] = ["ec2:DescribeOutpostLags"];
 	/** IAM actions required for the DescribePlacementGroups API call. */
-	static readonly DESCRIBE_PLACEMENT_GROUPS: string[] = [
+	static readonly DescribePlacementGroups: string[] = [
 		"ec2:DescribePlacementGroups",
 	];
 	/** IAM actions required for the DescribePrefixLists API call. */
-	static readonly DESCRIBE_PREFIX_LISTS: string[] = ["ec2:DescribePrefixLists"];
+	static readonly DescribePrefixLists: string[] = ["ec2:DescribePrefixLists"];
 	/** IAM actions required for the DescribePrincipalIdFormat API call. */
-	static readonly DESCRIBE_PRINCIPAL_ID_FORMAT: string[] = [
+	static readonly DescribePrincipalIdFormat: string[] = [
 		"ec2:DescribePrincipalIdFormat",
 	];
 	/** IAM actions required for the DescribePublicIpv4Pools API call. */
-	static readonly DESCRIBE_PUBLIC_IPV4_POOLS: string[] = [
+	static readonly DescribePublicIpv4Pools: string[] = [
 		"ec2:DescribePublicIpv4Pools",
 	];
 	/** IAM actions required for the DescribeRegions API call. */
-	static readonly DESCRIBE_REGIONS: string[] = ["ec2:DescribeRegions"];
+	static readonly DescribeRegions: string[] = ["ec2:DescribeRegions"];
 	/** IAM actions required for the DescribeReplaceRootVolumeTasks API call. */
-	static readonly DESCRIBE_REPLACE_ROOT_VOLUME_TASKS: string[] = [
+	static readonly DescribeReplaceRootVolumeTasks: string[] = [
 		"ec2:DescribeReplaceRootVolumeTasks",
 	];
 	/** IAM actions required for the DescribeReservedInstances API call. */
-	static readonly DESCRIBE_RESERVED_INSTANCES: string[] = [
+	static readonly DescribeReservedInstances: string[] = [
 		"ec2:DescribeReservedInstances",
 	];
 	/** IAM actions required for the DescribeReservedInstancesListings API call. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_LISTINGS: string[] = [
+	static readonly DescribeReservedInstancesListings: string[] = [
 		"ec2:DescribeReservedInstancesListings",
 	];
 	/** IAM actions required for the DescribeReservedInstancesModifications API call. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_MODIFICATIONS: string[] = [
+	static readonly DescribeReservedInstancesModifications: string[] = [
 		"ec2:DescribeReservedInstancesModifications",
 	];
 	/** IAM actions required for the DescribeReservedInstancesOfferings API call. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_OFFERINGS: string[] = [
+	static readonly DescribeReservedInstancesOfferings: string[] = [
 		"ec2:DescribeReservedInstancesOfferings",
 	];
 	/** IAM actions required for the DescribeRouteServerEndpoints API call. */
-	static readonly DESCRIBE_ROUTE_SERVER_ENDPOINTS: string[] = [
+	static readonly DescribeRouteServerEndpoints: string[] = [
 		"ec2:DescribeRouteServerEndpoints",
 	];
 	/** IAM actions required for the DescribeRouteServerPeers API call. */
-	static readonly DESCRIBE_ROUTE_SERVER_PEERS: string[] = [
+	static readonly DescribeRouteServerPeers: string[] = [
 		"ec2:DescribeRouteServerPeers",
 	];
 	/** IAM actions required for the DescribeRouteServers API call. */
-	static readonly DESCRIBE_ROUTE_SERVERS: string[] = [
-		"ec2:DescribeRouteServers",
-	];
+	static readonly DescribeRouteServers: string[] = ["ec2:DescribeRouteServers"];
 	/** IAM actions required for the DescribeRouteTables API call. */
-	static readonly DESCRIBE_ROUTE_TABLES: string[] = ["ec2:DescribeRouteTables"];
+	static readonly DescribeRouteTables: string[] = ["ec2:DescribeRouteTables"];
 	/** IAM actions required for the DescribeScheduledInstanceAvailability API call. */
-	static readonly DESCRIBE_SCHEDULED_INSTANCE_AVAILABILITY: string[] = [
+	static readonly DescribeScheduledInstanceAvailability: string[] = [
 		"ec2:DescribeScheduledInstanceAvailability",
 	];
 	/** IAM actions required for the DescribeScheduledInstances API call. */
-	static readonly DESCRIBE_SCHEDULED_INSTANCES: string[] = [
+	static readonly DescribeScheduledInstances: string[] = [
 		"ec2:DescribeScheduledInstances",
 	];
 	/** IAM actions required for the DescribeSecondaryInterfaces API call. */
-	static readonly DESCRIBE_SECONDARY_INTERFACES: string[] = [
+	static readonly DescribeSecondaryInterfaces: string[] = [
 		"ec2:DescribeSecondaryInterfaces",
 	];
 	/** IAM actions required for the DescribeSecondaryNetworks API call. */
-	static readonly DESCRIBE_SECONDARY_NETWORKS: string[] = [
+	static readonly DescribeSecondaryNetworks: string[] = [
 		"ec2:DescribeSecondaryNetworks",
 	];
 	/** IAM actions required for the DescribeSecondarySubnets API call. */
-	static readonly DESCRIBE_SECONDARY_SUBNETS: string[] = [
+	static readonly DescribeSecondarySubnets: string[] = [
 		"ec2:DescribeSecondarySubnets",
 	];
 	/** IAM actions required for the DescribeSecurityGroupReferences API call. */
-	static readonly DESCRIBE_SECURITY_GROUP_REFERENCES: string[] = [
+	static readonly DescribeSecurityGroupReferences: string[] = [
 		"ec2:DescribeSecurityGroupReferences",
 	];
 	/** IAM actions required for the DescribeSecurityGroupRules API call. */
-	static readonly DESCRIBE_SECURITY_GROUP_RULES: string[] = [
+	static readonly DescribeSecurityGroupRules: string[] = [
 		"ec2:DescribeSecurityGroupRules",
 	];
 	/** IAM actions required for the DescribeSecurityGroupVpcAssociations API call. */
-	static readonly DESCRIBE_SECURITY_GROUP_VPC_ASSOCIATIONS: string[] = [
+	static readonly DescribeSecurityGroupVpcAssociations: string[] = [
 		"ec2:DescribeSecurityGroupVpcAssociations",
 	];
 	/** IAM actions required for the DescribeSecurityGroups API call. */
-	static readonly DESCRIBE_SECURITY_GROUPS: string[] = [
+	static readonly DescribeSecurityGroups: string[] = [
 		"ec2:DescribeSecurityGroups",
 	];
 	/** IAM actions required for the DescribeServiceLinkVirtualInterfaces API call. */
-	static readonly DESCRIBE_SERVICE_LINK_VIRTUAL_INTERFACES: string[] = [
+	static readonly DescribeServiceLinkVirtualInterfaces: string[] = [
 		"ec2:DescribeServiceLinkVirtualInterfaces",
 	];
 	/** IAM actions required for the DescribeSnapshotAttribute API call. */
-	static readonly DESCRIBE_SNAPSHOT_ATTRIBUTE: string[] = [
+	static readonly DescribeSnapshotAttribute: string[] = [
 		"ec2:DescribeSnapshotAttribute",
 	];
 	/** IAM actions required for the DescribeSnapshotTierStatus API call. */
-	static readonly DESCRIBE_SNAPSHOT_TIER_STATUS: string[] = [
+	static readonly DescribeSnapshotTierStatus: string[] = [
 		"ec2:DescribeSnapshotTierStatus",
 	];
 	/** IAM actions required for the DescribeSnapshots API call. */
-	static readonly DESCRIBE_SNAPSHOTS: string[] = ["ec2:DescribeSnapshots"];
+	static readonly DescribeSnapshots: string[] = ["ec2:DescribeSnapshots"];
 	/** IAM actions required for the DescribeSpotDatafeedSubscription API call. */
-	static readonly DESCRIBE_SPOT_DATAFEED_SUBSCRIPTION: string[] = [
+	static readonly DescribeSpotDatafeedSubscription: string[] = [
 		"ec2:DescribeSpotDatafeedSubscription",
 	];
 	/** IAM actions required for the DescribeSpotFleetInstances API call. */
-	static readonly DESCRIBE_SPOT_FLEET_INSTANCES: string[] = [
+	static readonly DescribeSpotFleetInstances: string[] = [
 		"ec2:DescribeSpotFleetInstances",
 	];
 	/** IAM actions required for the DescribeSpotFleetRequestHistory API call. */
-	static readonly DESCRIBE_SPOT_FLEET_REQUEST_HISTORY: string[] = [
+	static readonly DescribeSpotFleetRequestHistory: string[] = [
 		"ec2:DescribeSpotFleetRequestHistory",
 	];
 	/** IAM actions required for the DescribeSpotFleetRequests API call. */
-	static readonly DESCRIBE_SPOT_FLEET_REQUESTS: string[] = [
+	static readonly DescribeSpotFleetRequests: string[] = [
 		"ec2:DescribeSpotFleetRequests",
 	];
 	/** IAM actions required for the DescribeSpotInstanceRequests API call. */
-	static readonly DESCRIBE_SPOT_INSTANCE_REQUESTS: string[] = [
+	static readonly DescribeSpotInstanceRequests: string[] = [
 		"ec2:DescribeSpotInstanceRequests",
 	];
 	/** IAM actions required for the DescribeSpotPriceHistory API call. */
-	static readonly DESCRIBE_SPOT_PRICE_HISTORY: string[] = [
+	static readonly DescribeSpotPriceHistory: string[] = [
 		"ec2:DescribeSpotPriceHistory",
 	];
 	/** IAM actions required for the DescribeStaleSecurityGroups API call. */
-	static readonly DESCRIBE_STALE_SECURITY_GROUPS: string[] = [
+	static readonly DescribeStaleSecurityGroups: string[] = [
 		"ec2:DescribeStaleSecurityGroups",
 	];
 	/** IAM actions required for the DescribeStoreImageTasks API call. */
-	static readonly DESCRIBE_STORE_IMAGE_TASKS: string[] = [
+	static readonly DescribeStoreImageTasks: string[] = [
 		"ec2:DescribeStoreImageTasks",
 	];
 	/** IAM actions required for the DescribeSubnets API call. */
-	static readonly DESCRIBE_SUBNETS: string[] = ["ec2:DescribeSubnets"];
+	static readonly DescribeSubnets: string[] = ["ec2:DescribeSubnets"];
 	/** IAM actions required for the DescribeTags API call. */
-	static readonly DESCRIBE_TAGS: string[] = ["ec2:DescribeTags"];
+	static readonly DescribeTags: string[] = ["ec2:DescribeTags"];
 	/** IAM actions required for the DescribeTrafficMirrorFilterRules API call. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTER_RULES: string[] = [
+	static readonly DescribeTrafficMirrorFilterRules: string[] = [
 		"ec2:DescribeTrafficMirrorFilterRules",
 	];
 	/** IAM actions required for the DescribeTrafficMirrorFilters API call. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTERS: string[] = [
+	static readonly DescribeTrafficMirrorFilters: string[] = [
 		"ec2:DescribeTrafficMirrorFilters",
 	];
 	/** IAM actions required for the DescribeTrafficMirrorSessions API call. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_SESSIONS: string[] = [
+	static readonly DescribeTrafficMirrorSessions: string[] = [
 		"ec2:DescribeTrafficMirrorSessions",
 	];
 	/** IAM actions required for the DescribeTrafficMirrorTargets API call. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_TARGETS: string[] = [
+	static readonly DescribeTrafficMirrorTargets: string[] = [
 		"ec2:DescribeTrafficMirrorTargets",
 	];
 	/** IAM actions required for the DescribeTransitGatewayAttachments API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ATTACHMENTS: string[] = [
+	static readonly DescribeTransitGatewayAttachments: string[] = [
 		"ec2:DescribeTransitGatewayAttachments",
 	];
 	/** IAM actions required for the DescribeTransitGatewayConnectPeers API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECT_PEERS: string[] = [
+	static readonly DescribeTransitGatewayConnectPeers: string[] = [
 		"ec2:DescribeTransitGatewayConnectPeers",
 	];
 	/** IAM actions required for the DescribeTransitGatewayConnects API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECTS: string[] = [
+	static readonly DescribeTransitGatewayConnects: string[] = [
 		"ec2:DescribeTransitGatewayConnects",
 	];
 	/** IAM actions required for the DescribeTransitGatewayMeteringPolicies API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_METERING_POLICIES: string[] = [
+	static readonly DescribeTransitGatewayMeteringPolicies: string[] = [
 		"ec2:DescribeTransitGatewayMeteringPolicies",
 	];
 	/** IAM actions required for the DescribeTransitGatewayMulticastDomains API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_MULTICAST_DOMAINS: string[] = [
+	static readonly DescribeTransitGatewayMulticastDomains: string[] = [
 		"ec2:DescribeTransitGatewayMulticastDomains",
 	];
 	/** IAM actions required for the DescribeTransitGatewayPeeringAttachments API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_PEERING_ATTACHMENTS: string[] = [
+	static readonly DescribeTransitGatewayPeeringAttachments: string[] = [
 		"ec2:DescribeTransitGatewayPeeringAttachments",
 	];
 	/** IAM actions required for the DescribeTransitGatewayPolicyTables API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_POLICY_TABLES: string[] = [
+	static readonly DescribeTransitGatewayPolicyTables: string[] = [
 		"ec2:DescribeTransitGatewayPolicyTables",
 	];
 	/** IAM actions required for the DescribeTransitGatewayRouteTableAnnouncements API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENTS: string[] =
-		["ec2:DescribeTransitGatewayRouteTableAnnouncements"];
+	static readonly DescribeTransitGatewayRouteTableAnnouncements: string[] = [
+		"ec2:DescribeTransitGatewayRouteTableAnnouncements",
+	];
 	/** IAM actions required for the DescribeTransitGatewayRouteTables API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLES: string[] = [
+	static readonly DescribeTransitGatewayRouteTables: string[] = [
 		"ec2:DescribeTransitGatewayRouteTables",
 	];
 	/** IAM actions required for the DescribeTransitGatewayVpcAttachments API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_VPC_ATTACHMENTS: string[] = [
+	static readonly DescribeTransitGatewayVpcAttachments: string[] = [
 		"ec2:DescribeTransitGatewayVpcAttachments",
 	];
 	/** IAM actions required for the DescribeTransitGateways API call. */
-	static readonly DESCRIBE_TRANSIT_GATEWAYS: string[] = [
+	static readonly DescribeTransitGateways: string[] = [
 		"ec2:DescribeTransitGateways",
 	];
 	/** IAM actions required for the DescribeTrunkInterfaceAssociations API call. */
-	static readonly DESCRIBE_TRUNK_INTERFACE_ASSOCIATIONS: string[] = [
+	static readonly DescribeTrunkInterfaceAssociations: string[] = [
 		"ec2:DescribeTrunkInterfaceAssociations",
 	];
 	/** IAM actions required for the DescribeVerifiedAccessEndpoints API call. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_ENDPOINTS: string[] = [
+	static readonly DescribeVerifiedAccessEndpoints: string[] = [
 		"ec2:DescribeVerifiedAccessEndpoints",
 	];
 	/** IAM actions required for the DescribeVerifiedAccessGroups API call. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_GROUPS: string[] = [
+	static readonly DescribeVerifiedAccessGroups: string[] = [
 		"ec2:DescribeVerifiedAccessGroups",
 	];
 	/** IAM actions required for the DescribeVerifiedAccessInstanceLoggingConfigurations API call. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATIONS: string[] =
+	static readonly DescribeVerifiedAccessInstanceLoggingConfigurations: string[] =
 		["ec2:DescribeVerifiedAccessInstanceLoggingConfigurations"];
 	/** IAM actions required for the DescribeVerifiedAccessInstances API call. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCES: string[] = [
+	static readonly DescribeVerifiedAccessInstances: string[] = [
 		"ec2:DescribeVerifiedAccessInstances",
 	];
 	/** IAM actions required for the DescribeVerifiedAccessTrustProviders API call. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_TRUST_PROVIDERS: string[] = [
+	static readonly DescribeVerifiedAccessTrustProviders: string[] = [
 		"ec2:DescribeVerifiedAccessTrustProviders",
 	];
 	/** IAM actions required for the DescribeVolumeAttribute API call. */
-	static readonly DESCRIBE_VOLUME_ATTRIBUTE: string[] = [
+	static readonly DescribeVolumeAttribute: string[] = [
 		"ec2:DescribeVolumeAttribute",
 	];
 	/** IAM actions required for the DescribeVolumeStatus API call. */
-	static readonly DESCRIBE_VOLUME_STATUS: string[] = [
-		"ec2:DescribeVolumeStatus",
-	];
+	static readonly DescribeVolumeStatus: string[] = ["ec2:DescribeVolumeStatus"];
 	/** IAM actions required for the DescribeVolumes API call. */
-	static readonly DESCRIBE_VOLUMES: string[] = ["ec2:DescribeVolumes"];
+	static readonly DescribeVolumes: string[] = ["ec2:DescribeVolumes"];
 	/** IAM actions required for the DescribeVolumesModifications API call. */
-	static readonly DESCRIBE_VOLUMES_MODIFICATIONS: string[] = [
+	static readonly DescribeVolumesModifications: string[] = [
 		"ec2:DescribeVolumesModifications",
 	];
 	/** IAM actions required for the DescribeVpcAttribute API call. */
-	static readonly DESCRIBE_VPC_ATTRIBUTE: string[] = [
-		"ec2:DescribeVpcAttribute",
-	];
+	static readonly DescribeVpcAttribute: string[] = ["ec2:DescribeVpcAttribute"];
 	/** IAM actions required for the DescribeVpcBlockPublicAccessExclusions API call. */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSIONS: string[] = [
+	static readonly DescribeVpcBlockPublicAccessExclusions: string[] = [
 		"ec2:DescribeVpcBlockPublicAccessExclusions",
 	];
 	/** IAM actions required for the DescribeVpcBlockPublicAccessOptions API call. */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS: string[] = [
+	static readonly DescribeVpcBlockPublicAccessOptions: string[] = [
 		"ec2:DescribeVpcBlockPublicAccessOptions",
 	];
 	/** IAM actions required for the DescribeVpcClassicLink API call. */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK: string[] = [
+	static readonly DescribeVpcClassicLink: string[] = [
 		"ec2:DescribeVpcClassicLink",
 	];
 	/** IAM actions required for the DescribeVpcClassicLinkDnsSupport API call. */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK_DNS_SUPPORT: string[] = [
+	static readonly DescribeVpcClassicLinkDnsSupport: string[] = [
 		"ec2:DescribeVpcClassicLinkDnsSupport",
 	];
 	/** IAM actions required for the DescribeVpcEncryptionControls API call. */
-	static readonly DESCRIBE_VPC_ENCRYPTION_CONTROLS: string[] = [
+	static readonly DescribeVpcEncryptionControls: string[] = [
 		"ec2:DescribeVpcEncryptionControls",
 	];
 	/** IAM actions required for the DescribeVpcEndpointAssociations API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_ASSOCIATIONS: string[] = [
+	static readonly DescribeVpcEndpointAssociations: string[] = [
 		"ec2:DescribeVpcEndpointAssociations",
 	];
 	/** IAM actions required for the DescribeVpcEndpointConnectionNotifications API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS: string[] = [
+	static readonly DescribeVpcEndpointConnectionNotifications: string[] = [
 		"ec2:DescribeVpcEndpointConnectionNotifications",
 	];
 	/** IAM actions required for the DescribeVpcEndpointConnections API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTIONS: string[] = [
+	static readonly DescribeVpcEndpointConnections: string[] = [
 		"ec2:DescribeVpcEndpointConnections",
 	];
 	/** IAM actions required for the DescribeVpcEndpointServiceConfigurations API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS: string[] = [
+	static readonly DescribeVpcEndpointServiceConfigurations: string[] = [
 		"ec2:DescribeVpcEndpointServiceConfigurations",
 	];
 	/** IAM actions required for the DescribeVpcEndpointServicePermissions API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_PERMISSIONS: string[] = [
+	static readonly DescribeVpcEndpointServicePermissions: string[] = [
 		"ec2:DescribeVpcEndpointServicePermissions",
 	];
 	/** IAM actions required for the DescribeVpcEndpointServices API call. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICES: string[] = [
+	static readonly DescribeVpcEndpointServices: string[] = [
 		"ec2:DescribeVpcEndpointServices",
 	];
 	/** IAM actions required for the DescribeVpcEndpoints API call. */
-	static readonly DESCRIBE_VPC_ENDPOINTS: string[] = [
-		"ec2:DescribeVpcEndpoints",
-	];
+	static readonly DescribeVpcEndpoints: string[] = ["ec2:DescribeVpcEndpoints"];
 	/** IAM actions required for the DescribeVpcPeeringConnections API call. */
-	static readonly DESCRIBE_VPC_PEERING_CONNECTIONS: string[] = [
+	static readonly DescribeVpcPeeringConnections: string[] = [
 		"ec2:DescribeVpcPeeringConnections",
 	];
 	/** IAM actions required for the DescribeVpcs API call. */
-	static readonly DESCRIBE_VPCS: string[] = ["ec2:DescribeVpcs"];
+	static readonly DescribeVpcs: string[] = ["ec2:DescribeVpcs"];
 	/** IAM actions required for the DescribeVpnConcentrators API call. */
-	static readonly DESCRIBE_VPN_CONCENTRATORS: string[] = [
+	static readonly DescribeVpnConcentrators: string[] = [
 		"ec2:DescribeVpnConcentrators",
 	];
 	/** IAM actions required for the DescribeVpnConnections API call. */
-	static readonly DESCRIBE_VPN_CONNECTIONS: string[] = [
+	static readonly DescribeVpnConnections: string[] = [
 		"ec2:DescribeVpnConnections",
 	];
 	/** IAM actions required for the DescribeVpnGateways API call. */
-	static readonly DESCRIBE_VPN_GATEWAYS: string[] = ["ec2:DescribeVpnGateways"];
+	static readonly DescribeVpnGateways: string[] = ["ec2:DescribeVpnGateways"];
 	/** IAM actions required for the DetachClassicLinkVpc API call. */
-	static readonly DETACH_CLASSIC_LINK_VPC: string[] = [
-		"ec2:DetachClassicLinkVpc",
-	];
+	static readonly DetachClassicLinkVpc: string[] = ["ec2:DetachClassicLinkVpc"];
 	/** IAM actions required for the DetachImageWatermark API call. */
-	static readonly DETACH_IMAGE_WATERMARK: string[] = [
-		"ec2:DetachImageWatermark",
-	];
+	static readonly DetachImageWatermark: string[] = ["ec2:DetachImageWatermark"];
 	/** IAM actions required for the DetachInternetGateway API call. */
-	static readonly DETACH_INTERNET_GATEWAY: string[] = [
+	static readonly DetachInternetGateway: string[] = [
 		"ec2:DetachInternetGateway",
 	];
 	/** IAM actions required for the DetachNetworkInterface API call. */
-	static readonly DETACH_NETWORK_INTERFACE: string[] = [
+	static readonly DetachNetworkInterface: string[] = [
 		"ec2:DetachNetworkInterface",
 	];
 	/** IAM actions required for the DetachVerifiedAccessTrustProvider API call. */
-	static readonly DETACH_VERIFIED_ACCESS_TRUST_PROVIDER: string[] = [
+	static readonly DetachVerifiedAccessTrustProvider: string[] = [
 		"ec2:DetachVerifiedAccessTrustProvider",
 	];
 	/** IAM actions required for the DetachVolume API call. */
-	static readonly DETACH_VOLUME: string[] = ["ec2:DetachVolume"];
+	static readonly DetachVolume: string[] = ["ec2:DetachVolume"];
 	/** IAM actions required for the DetachVpnGateway API call. */
-	static readonly DETACH_VPN_GATEWAY: string[] = ["ec2:DetachVpnGateway"];
+	static readonly DetachVpnGateway: string[] = ["ec2:DetachVpnGateway"];
 	/** IAM actions required for the DisableAddressTransfer API call. */
-	static readonly DISABLE_ADDRESS_TRANSFER: string[] = [
+	static readonly DisableAddressTransfer: string[] = [
 		"ec2:DisableAddressTransfer",
 	];
 	/** IAM actions required for the DisableAllowedImagesSettings API call. */
-	static readonly DISABLE_ALLOWED_IMAGES_SETTINGS: string[] = [
+	static readonly DisableAllowedImagesSettings: string[] = [
 		"ec2:DisableAllowedImagesSettings",
 	];
 	/** IAM actions required for the DisableApplicationStatusCheckSuppression API call. */
-	static readonly DISABLE_APPLICATION_STATUS_CHECK_SUPPRESSION: string[] = [];
+	static readonly DisableApplicationStatusCheckSuppression: string[] = [];
 	/** IAM actions required for the DisableAwsNetworkPerformanceMetricSubscription API call. */
-	static readonly DISABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION: string[] =
-		["ec2:DisableAwsNetworkPerformanceMetricSubscription"];
+	static readonly DisableAwsNetworkPerformanceMetricSubscription: string[] = [
+		"ec2:DisableAwsNetworkPerformanceMetricSubscription",
+	];
 	/** IAM actions required for the DisableCapacityManager API call. */
-	static readonly DISABLE_CAPACITY_MANAGER: string[] = [
+	static readonly DisableCapacityManager: string[] = [
 		"ec2:DisableCapacityManager",
 	];
 	/** IAM actions required for the DisableEbsEncryptionByDefault API call. */
-	static readonly DISABLE_EBS_ENCRYPTION_BY_DEFAULT: string[] = [
+	static readonly DisableEbsEncryptionByDefault: string[] = [
 		"ec2:DisableEbsEncryptionByDefault",
 	];
 	/** IAM actions required for the DisableFastLaunch API call. */
-	static readonly DISABLE_FAST_LAUNCH: string[] = ["ec2:DisableFastLaunch"];
+	static readonly DisableFastLaunch: string[] = ["ec2:DisableFastLaunch"];
 	/** IAM actions required for the DisableFastSnapshotRestores API call. */
-	static readonly DISABLE_FAST_SNAPSHOT_RESTORES: string[] = [
+	static readonly DisableFastSnapshotRestores: string[] = [
 		"ec2:DisableFastSnapshotRestores",
 	];
 	/** IAM actions required for the DisableImage API call. */
-	static readonly DISABLE_IMAGE: string[] = ["ec2:DisableImage"];
+	static readonly DisableImage: string[] = ["ec2:DisableImage"];
 	/** IAM actions required for the DisableImageBlockPublicAccess API call. */
-	static readonly DISABLE_IMAGE_BLOCK_PUBLIC_ACCESS: string[] = [
+	static readonly DisableImageBlockPublicAccess: string[] = [
 		"ec2:DisableImageBlockPublicAccess",
 	];
 	/** IAM actions required for the DisableImageDeprecation API call. */
-	static readonly DISABLE_IMAGE_DEPRECATION: string[] = [
+	static readonly DisableImageDeprecation: string[] = [
 		"ec2:DisableImageDeprecation",
 	];
 	/** IAM actions required for the DisableImageDeregistrationProtection API call. */
-	static readonly DISABLE_IMAGE_DEREGISTRATION_PROTECTION: string[] = [
+	static readonly DisableImageDeregistrationProtection: string[] = [
 		"ec2:DisableImageDeregistrationProtection",
 	];
 	/** IAM actions required for the DisableInstanceSqlHaStandbyDetections API call. */
-	static readonly DISABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS: string[] = [
+	static readonly DisableInstanceSqlHaStandbyDetections: string[] = [
 		"ec2:DisableInstanceSqlHaStandbyDetections",
 	];
 	/** IAM actions required for the DisableIpamOrganizationAdminAccount API call. */
-	static readonly DISABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly DisableIpamOrganizationAdminAccount: string[] = [
 		"ec2:DisableIpamOrganizationAdminAccount",
 	];
 	/** IAM actions required for the DisableIpamPolicy API call. */
-	static readonly DISABLE_IPAM_POLICY: string[] = ["ec2:DisableIpamPolicy"];
+	static readonly DisableIpamPolicy: string[] = ["ec2:DisableIpamPolicy"];
 	/** IAM actions required for the DisableRouteServerPropagation API call. */
-	static readonly DISABLE_ROUTE_SERVER_PROPAGATION: string[] = [
+	static readonly DisableRouteServerPropagation: string[] = [
 		"ec2:DisableRouteServerPropagation",
 	];
 	/** IAM actions required for the DisableSerialConsoleAccess API call. */
-	static readonly DISABLE_SERIAL_CONSOLE_ACCESS: string[] = [
+	static readonly DisableSerialConsoleAccess: string[] = [
 		"ec2:DisableSerialConsoleAccess",
 	];
 	/** IAM actions required for the DisableSnapshotBlockPublicAccess API call. */
-	static readonly DISABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS: string[] = [
+	static readonly DisableSnapshotBlockPublicAccess: string[] = [
 		"ec2:DisableSnapshotBlockPublicAccess",
 	];
 	/** IAM actions required for the DisableTransitGatewayRouteTablePropagation API call. */
-	static readonly DISABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION: string[] = [
+	static readonly DisableTransitGatewayRouteTablePropagation: string[] = [
 		"ec2:DisableTransitGatewayRouteTablePropagation",
 	];
 	/** IAM actions required for the DisableVgwRoutePropagation API call. */
-	static readonly DISABLE_VGW_ROUTE_PROPAGATION: string[] = [
+	static readonly DisableVgwRoutePropagation: string[] = [
 		"ec2:DisableVgwRoutePropagation",
 	];
 	/** IAM actions required for the DisableVpcClassicLink API call. */
-	static readonly DISABLE_VPC_CLASSIC_LINK: string[] = [
+	static readonly DisableVpcClassicLink: string[] = [
 		"ec2:DisableVpcClassicLink",
 	];
 	/** IAM actions required for the DisableVpcClassicLinkDnsSupport API call. */
-	static readonly DISABLE_VPC_CLASSIC_LINK_DNS_SUPPORT: string[] = [
+	static readonly DisableVpcClassicLinkDnsSupport: string[] = [
 		"ec2:DisableVpcClassicLinkDnsSupport",
 	];
 	/** IAM actions required for the DisassociateAddress API call. */
-	static readonly DISASSOCIATE_ADDRESS: string[] = ["ec2:DisassociateAddress"];
+	static readonly DisassociateAddress: string[] = ["ec2:DisassociateAddress"];
 	/** IAM actions required for the DisassociateApplicationStatusCheck API call. */
-	static readonly DISASSOCIATE_APPLICATION_STATUS_CHECK: string[] = [];
+	static readonly DisassociateApplicationStatusCheck: string[] = [];
 	/** IAM actions required for the DisassociateCapacityReservationBillingOwner API call. */
-	static readonly DISASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER: string[] = [
+	static readonly DisassociateCapacityReservationBillingOwner: string[] = [
 		"ec2:DisassociateCapacityReservationBillingOwner",
 	];
 	/** IAM actions required for the DisassociateClientVpnTargetNetwork API call. */
-	static readonly DISASSOCIATE_CLIENT_VPN_TARGET_NETWORK: string[] = [
+	static readonly DisassociateClientVpnTargetNetwork: string[] = [
 		"ec2:DisassociateClientVpnTargetNetwork",
 	];
 	/** IAM actions required for the DisassociateEnclaveCertificateIamRole API call. */
-	static readonly DISASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE: string[] = [
+	static readonly DisassociateEnclaveCertificateIamRole: string[] = [
 		"ec2:DisassociateEnclaveCertificateIamRole",
 	];
 	/** IAM actions required for the DisassociateIamInstanceProfile API call. */
-	static readonly DISASSOCIATE_IAM_INSTANCE_PROFILE: string[] = [
+	static readonly DisassociateIamInstanceProfile: string[] = [
 		"ec2:DisassociateIamInstanceProfile",
 	];
 	/** IAM actions required for the DisassociateInstanceEventWindow API call. */
-	static readonly DISASSOCIATE_INSTANCE_EVENT_WINDOW: string[] = [
+	static readonly DisassociateInstanceEventWindow: string[] = [
 		"ec2:DisassociateInstanceEventWindow",
 	];
 	/** IAM actions required for the DisassociateIpamByoasn API call. */
-	static readonly DISASSOCIATE_IPAM_BYOASN: string[] = [
+	static readonly DisassociateIpamByoasn: string[] = [
 		"ec2:DisassociateIpamByoasn",
 	];
 	/** IAM actions required for the DisassociateIpamResourceDiscovery API call. */
-	static readonly DISASSOCIATE_IPAM_RESOURCE_DISCOVERY: string[] = [
+	static readonly DisassociateIpamResourceDiscovery: string[] = [
 		"ec2:DisassociateIpamResourceDiscovery",
 	];
 	/** IAM actions required for the DisassociateNatGatewayAddress API call. */
-	static readonly DISASSOCIATE_NAT_GATEWAY_ADDRESS: string[] = [
+	static readonly DisassociateNatGatewayAddress: string[] = [
 		"ec2:DisassociateNatGatewayAddress",
 	];
 	/** IAM actions required for the DisassociateRouteServer API call. */
-	static readonly DISASSOCIATE_ROUTE_SERVER: string[] = [
+	static readonly DisassociateRouteServer: string[] = [
 		"ec2:DisassociateRouteServer",
 	];
 	/** IAM actions required for the DisassociateRouteTable API call. */
-	static readonly DISASSOCIATE_ROUTE_TABLE: string[] = [
+	static readonly DisassociateRouteTable: string[] = [
 		"ec2:DisassociateRouteTable",
 	];
 	/** IAM actions required for the DisassociateSecurityGroupVpc API call. */
-	static readonly DISASSOCIATE_SECURITY_GROUP_VPC: string[] = [
+	static readonly DisassociateSecurityGroupVpc: string[] = [
 		"ec2:DisassociateSecurityGroupVpc",
 	];
 	/** IAM actions required for the DisassociateSubnetCidrBlock API call. */
-	static readonly DISASSOCIATE_SUBNET_CIDR_BLOCK: string[] = [
+	static readonly DisassociateSubnetCidrBlock: string[] = [
 		"ec2:DisassociateSubnetCidrBlock",
 	];
 	/** IAM actions required for the DisassociateTransitGatewayMulticastDomain API call. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN: string[] = [
+	static readonly DisassociateTransitGatewayMulticastDomain: string[] = [
 		"ec2:DisassociateTransitGatewayMulticastDomain",
 	];
 	/** IAM actions required for the DisassociateTransitGatewayPolicyTable API call. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE: string[] = [
+	static readonly DisassociateTransitGatewayPolicyTable: string[] = [
 		"ec2:DisassociateTransitGatewayPolicyTable",
 	];
 	/** IAM actions required for the DisassociateTransitGatewayRouteTable API call. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE: string[] = [
+	static readonly DisassociateTransitGatewayRouteTable: string[] = [
 		"ec2:DisassociateTransitGatewayRouteTable",
 	];
 	/** IAM actions required for the DisassociateTrunkInterface API call. */
-	static readonly DISASSOCIATE_TRUNK_INTERFACE: string[] = [
+	static readonly DisassociateTrunkInterface: string[] = [
 		"ec2:DisassociateTrunkInterface",
 	];
 	/** IAM actions required for the DisassociateVpcCidrBlock API call. */
-	static readonly DISASSOCIATE_VPC_CIDR_BLOCK: string[] = [
+	static readonly DisassociateVpcCidrBlock: string[] = [
 		"ec2:DisassociateVpcCidrBlock",
 	];
 	/** IAM actions required for the EnableAddressTransfer API call. */
-	static readonly ENABLE_ADDRESS_TRANSFER: string[] = [
+	static readonly EnableAddressTransfer: string[] = [
 		"ec2:EnableAddressTransfer",
 	];
 	/** IAM actions required for the EnableAllowedImagesSettings API call. */
-	static readonly ENABLE_ALLOWED_IMAGES_SETTINGS: string[] = [
+	static readonly EnableAllowedImagesSettings: string[] = [
 		"ec2:EnableAllowedImagesSettings",
 	];
 	/** IAM actions required for the EnableApplicationStatusCheckSuppression API call. */
-	static readonly ENABLE_APPLICATION_STATUS_CHECK_SUPPRESSION: string[] = [];
+	static readonly EnableApplicationStatusCheckSuppression: string[] = [];
 	/** IAM actions required for the EnableAwsNetworkPerformanceMetricSubscription API call. */
-	static readonly ENABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION: string[] =
-		["ec2:EnableAwsNetworkPerformanceMetricSubscription"];
+	static readonly EnableAwsNetworkPerformanceMetricSubscription: string[] = [
+		"ec2:EnableAwsNetworkPerformanceMetricSubscription",
+	];
 	/** IAM actions required for the EnableCapacityManager API call. */
-	static readonly ENABLE_CAPACITY_MANAGER: string[] = [
+	static readonly EnableCapacityManager: string[] = [
 		"ec2:EnableCapacityManager",
 	];
 	/** IAM actions required for the EnableEbsEncryptionByDefault API call. */
-	static readonly ENABLE_EBS_ENCRYPTION_BY_DEFAULT: string[] = [
+	static readonly EnableEbsEncryptionByDefault: string[] = [
 		"ec2:EnableEbsEncryptionByDefault",
 	];
 	/** IAM actions required for the EnableFastLaunch API call. */
-	static readonly ENABLE_FAST_LAUNCH: string[] = ["ec2:EnableFastLaunch"];
+	static readonly EnableFastLaunch: string[] = ["ec2:EnableFastLaunch"];
 	/** IAM actions required for the EnableFastSnapshotRestores API call. */
-	static readonly ENABLE_FAST_SNAPSHOT_RESTORES: string[] = [
+	static readonly EnableFastSnapshotRestores: string[] = [
 		"ec2:EnableFastSnapshotRestores",
 	];
 	/** IAM actions required for the EnableImage API call. */
-	static readonly ENABLE_IMAGE: string[] = ["ec2:EnableImage"];
+	static readonly EnableImage: string[] = ["ec2:EnableImage"];
 	/** IAM actions required for the EnableImageBlockPublicAccess API call. */
-	static readonly ENABLE_IMAGE_BLOCK_PUBLIC_ACCESS: string[] = [
+	static readonly EnableImageBlockPublicAccess: string[] = [
 		"ec2:EnableImageBlockPublicAccess",
 	];
 	/** IAM actions required for the EnableImageDeprecation API call. */
-	static readonly ENABLE_IMAGE_DEPRECATION: string[] = [
+	static readonly EnableImageDeprecation: string[] = [
 		"ec2:EnableImageDeprecation",
 	];
 	/** IAM actions required for the EnableImageDeregistrationProtection API call. */
-	static readonly ENABLE_IMAGE_DEREGISTRATION_PROTECTION: string[] = [
+	static readonly EnableImageDeregistrationProtection: string[] = [
 		"ec2:EnableImageDeregistrationProtection",
 	];
 	/** IAM actions required for the EnableInstanceSqlHaStandbyDetections API call. */
-	static readonly ENABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS: string[] = [
+	static readonly EnableInstanceSqlHaStandbyDetections: string[] = [
 		"ec2:EnableInstanceSqlHaStandbyDetections",
 	];
 	/** IAM actions required for the EnableIpamInternetRegistryAssociation API call. */
-	static readonly ENABLE_IPAM_INTERNET_REGISTRY_ASSOCIATION: string[] = [];
+	static readonly EnableIpamInternetRegistryAssociation: string[] = [];
 	/** IAM actions required for the EnableIpamOrganizationAdminAccount API call. */
-	static readonly ENABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT: string[] = [
+	static readonly EnableIpamOrganizationAdminAccount: string[] = [
 		"ec2:EnableIpamOrganizationAdminAccount",
 	];
 	/** IAM actions required for the EnableIpamPolicy API call. */
-	static readonly ENABLE_IPAM_POLICY: string[] = ["ec2:EnableIpamPolicy"];
+	static readonly EnableIpamPolicy: string[] = ["ec2:EnableIpamPolicy"];
 	/** IAM actions required for the EnableReachabilityAnalyzerOrganizationSharing API call. */
-	static readonly ENABLE_REACHABILITY_ANALYZER_ORGANIZATION_SHARING: string[] =
-		["ec2:EnableReachabilityAnalyzerOrganizationSharing"];
+	static readonly EnableReachabilityAnalyzerOrganizationSharing: string[] = [
+		"ec2:EnableReachabilityAnalyzerOrganizationSharing",
+	];
 	/** IAM actions required for the EnableRouteServerPropagation API call. */
-	static readonly ENABLE_ROUTE_SERVER_PROPAGATION: string[] = [
+	static readonly EnableRouteServerPropagation: string[] = [
 		"ec2:EnableRouteServerPropagation",
 	];
 	/** IAM actions required for the EnableSerialConsoleAccess API call. */
-	static readonly ENABLE_SERIAL_CONSOLE_ACCESS: string[] = [
+	static readonly EnableSerialConsoleAccess: string[] = [
 		"ec2:EnableSerialConsoleAccess",
 	];
 	/** IAM actions required for the EnableSnapshotBlockPublicAccess API call. */
-	static readonly ENABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS: string[] = [
+	static readonly EnableSnapshotBlockPublicAccess: string[] = [
 		"ec2:EnableSnapshotBlockPublicAccess",
 	];
 	/** IAM actions required for the EnableTransitGatewayRouteTablePropagation API call. */
-	static readonly ENABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION: string[] = [
+	static readonly EnableTransitGatewayRouteTablePropagation: string[] = [
 		"ec2:EnableTransitGatewayRouteTablePropagation",
 	];
 	/** IAM actions required for the EnableVgwRoutePropagation API call. */
-	static readonly ENABLE_VGW_ROUTE_PROPAGATION: string[] = [
+	static readonly EnableVgwRoutePropagation: string[] = [
 		"ec2:EnableVgwRoutePropagation",
 	];
 	/** IAM actions required for the EnableVolumeIO API call. */
-	static readonly ENABLE_VOLUME_IO: string[] = ["ec2:EnableVolumeIO"];
+	static readonly EnableVolumeIO: string[] = ["ec2:EnableVolumeIO"];
 	/** IAM actions required for the EnableVpcClassicLink API call. */
-	static readonly ENABLE_VPC_CLASSIC_LINK: string[] = [
-		"ec2:EnableVpcClassicLink",
-	];
+	static readonly EnableVpcClassicLink: string[] = ["ec2:EnableVpcClassicLink"];
 	/** IAM actions required for the EnableVpcClassicLinkDnsSupport API call. */
-	static readonly ENABLE_VPC_CLASSIC_LINK_DNS_SUPPORT: string[] = [
+	static readonly EnableVpcClassicLinkDnsSupport: string[] = [
 		"ec2:EnableVpcClassicLinkDnsSupport",
 	];
 	/** IAM actions required for the ExportClientVpnClientCertificateRevocationList API call. */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST: string[] =
-		["ec2:ExportClientVpnClientCertificateRevocationList"];
+	static readonly ExportClientVpnClientCertificateRevocationList: string[] = [
+		"ec2:ExportClientVpnClientCertificateRevocationList",
+	];
 	/** IAM actions required for the ExportClientVpnClientConfiguration API call. */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CONFIGURATION: string[] = [
+	static readonly ExportClientVpnClientConfiguration: string[] = [
 		"ec2:ExportClientVpnClientConfiguration",
 	];
 	/** IAM actions required for the ExportImage API call. */
-	static readonly EXPORT_IMAGE: string[] = [
-		"ec2:CreateTags",
-		"ec2:ExportImage",
-	];
+	static readonly ExportImage: string[] = ["ec2:CreateTags", "ec2:ExportImage"];
 	/** IAM actions required for the ExportTransitGatewayRoutes API call. */
-	static readonly EXPORT_TRANSIT_GATEWAY_ROUTES: string[] = [
+	static readonly ExportTransitGatewayRoutes: string[] = [
 		"ec2:ExportTransitGatewayRoutes",
 	];
 	/** IAM actions required for the ExportVerifiedAccessInstanceClientConfiguration API call. */
-	static readonly EXPORT_VERIFIED_ACCESS_INSTANCE_CLIENT_CONFIGURATION: string[] =
-		["ec2:ExportVerifiedAccessInstanceClientConfiguration"];
+	static readonly ExportVerifiedAccessInstanceClientConfiguration: string[] = [
+		"ec2:ExportVerifiedAccessInstanceClientConfiguration",
+	];
 	/** IAM actions required for the GetActiveVpnTunnelStatus API call. */
-	static readonly GET_ACTIVE_VPN_TUNNEL_STATUS: string[] = [
+	static readonly opGetActiveVpnTunnelStatus: string[] = [
 		"ec2:GetActiveVpnTunnelStatus",
 	];
 	/** IAM actions required for the GetAllowedImagesSettings API call. */
-	static readonly GET_ALLOWED_IMAGES_SETTINGS: string[] = [
+	static readonly opGetAllowedImagesSettings: string[] = [
 		"ec2:GetAllowedImagesSettings",
 	];
 	/** IAM actions required for the GetAssociatedEnclaveCertificateIamRoles API call. */
-	static readonly GET_ASSOCIATED_ENCLAVE_CERTIFICATE_IAM_ROLES: string[] = [
+	static readonly opGetAssociatedEnclaveCertificateIamRoles: string[] = [
 		"ec2:GetAssociatedEnclaveCertificateIamRoles",
 	];
 	/** IAM actions required for the GetAssociatedIpv6PoolCidrs API call. */
-	static readonly GET_ASSOCIATED_IPV6_POOL_CIDRS: string[] = [
+	static readonly opGetAssociatedIpv6PoolCidrs: string[] = [
 		"ec2:GetAssociatedIpv6PoolCidrs",
 	];
 	/** IAM actions required for the GetAwsNetworkPerformanceData API call. */
-	static readonly GET_AWS_NETWORK_PERFORMANCE_DATA: string[] = [
+	static readonly opGetAwsNetworkPerformanceData: string[] = [
 		"ec2:GetAwsNetworkPerformanceData",
 	];
 	/** IAM actions required for the GetCapacityManagerAttributes API call. */
-	static readonly GET_CAPACITY_MANAGER_ATTRIBUTES: string[] = [
+	static readonly opGetCapacityManagerAttributes: string[] = [
 		"ec2:GetCapacityManagerAttributes",
 	];
 	/** IAM actions required for the GetCapacityManagerMetricData API call. */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DATA: string[] = [
+	static readonly opGetCapacityManagerMetricData: string[] = [
 		"ec2:GetCapacityManagerMetricData",
 	];
 	/** IAM actions required for the GetCapacityManagerMetricDimensions API call. */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DIMENSIONS: string[] = [
+	static readonly opGetCapacityManagerMetricDimensions: string[] = [
 		"ec2:GetCapacityManagerMetricDimensions",
 	];
 	/** IAM actions required for the GetCapacityManagerMonitoredTagKeys API call. */
-	static readonly GET_CAPACITY_MANAGER_MONITORED_TAG_KEYS: string[] = [
+	static readonly opGetCapacityManagerMonitoredTagKeys: string[] = [
 		"ec2:GetCapacityManagerMonitoredTagKeys",
 	];
 	/** IAM actions required for the GetCapacityReservationUsage API call. */
-	static readonly GET_CAPACITY_RESERVATION_USAGE: string[] = [
+	static readonly opGetCapacityReservationUsage: string[] = [
 		"ec2:GetCapacityReservationUsage",
 	];
 	/** IAM actions required for the GetCoipPoolUsage API call. */
-	static readonly GET_COIP_POOL_USAGE: string[] = ["ec2:GetCoipPoolUsage"];
+	static readonly opGetCoipPoolUsage: string[] = ["ec2:GetCoipPoolUsage"];
 	/** IAM actions required for the GetConsoleOutput API call. */
-	static readonly GET_CONSOLE_OUTPUT: string[] = ["ec2:GetConsoleOutput"];
+	static readonly opGetConsoleOutput: string[] = ["ec2:GetConsoleOutput"];
 	/** IAM actions required for the GetConsoleScreenshot API call. */
-	static readonly GET_CONSOLE_SCREENSHOT: string[] = [
+	static readonly opGetConsoleScreenshot: string[] = [
 		"ec2:GetConsoleScreenshot",
 	];
 	/** IAM actions required for the GetDeclarativePoliciesReportSummary API call. */
-	static readonly GET_DECLARATIVE_POLICIES_REPORT_SUMMARY: string[] = [
+	static readonly opGetDeclarativePoliciesReportSummary: string[] = [
 		"ec2:GetDeclarativePoliciesReportSummary",
 	];
 	/** IAM actions required for the GetDefaultCreditSpecification API call. */
-	static readonly GET_DEFAULT_CREDIT_SPECIFICATION: string[] = [
+	static readonly opGetDefaultCreditSpecification: string[] = [
 		"ec2:GetDefaultCreditSpecification",
 	];
 	/** IAM actions required for the GetEbsDefaultKmsKeyId API call. */
-	static readonly GET_EBS_DEFAULT_KMS_KEY_ID: string[] = [
+	static readonly opGetEbsDefaultKmsKeyId: string[] = [
 		"ec2:GetEbsDefaultKmsKeyId",
 	];
 	/** IAM actions required for the GetEbsEncryptionByDefault API call. */
-	static readonly GET_EBS_ENCRYPTION_BY_DEFAULT: string[] = [
+	static readonly opGetEbsEncryptionByDefault: string[] = [
 		"ec2:GetEbsEncryptionByDefault",
 	];
 	/** IAM actions required for the GetEnabledIpamPolicy API call. */
-	static readonly GET_ENABLED_IPAM_POLICY: string[] = [
+	static readonly opGetEnabledIpamPolicy: string[] = [
 		"ec2:GetEnabledIpamPolicy",
 	];
 	/** IAM actions required for the GetFlowLogsIntegrationTemplate API call. */
-	static readonly GET_FLOW_LOGS_INTEGRATION_TEMPLATE: string[] = [
+	static readonly opGetFlowLogsIntegrationTemplate: string[] = [
 		"ec2:GetFlowLogsIntegrationTemplate",
 	];
 	/** IAM actions required for the GetGroupsForCapacityReservation API call. */
-	static readonly GET_GROUPS_FOR_CAPACITY_RESERVATION: string[] = [
+	static readonly opGetGroupsForCapacityReservation: string[] = [
 		"ec2:GetGroupsForCapacityReservation",
 	];
 	/** IAM actions required for the GetHostReservationPurchasePreview API call. */
-	static readonly GET_HOST_RESERVATION_PURCHASE_PREVIEW: string[] = [
+	static readonly opGetHostReservationPurchasePreview: string[] = [
 		"ec2:GetHostReservationPurchasePreview",
 	];
 	/** IAM actions required for the GetImageAncestry API call. */
-	static readonly GET_IMAGE_ANCESTRY: string[] = ["ec2:GetImageAncestry"];
+	static readonly opGetImageAncestry: string[] = ["ec2:GetImageAncestry"];
 	/** IAM actions required for the GetImageBlockPublicAccessState API call. */
-	static readonly GET_IMAGE_BLOCK_PUBLIC_ACCESS_STATE: string[] = [
+	static readonly opGetImageBlockPublicAccessState: string[] = [
 		"ec2:GetImageBlockPublicAccessState",
 	];
 	/** IAM actions required for the GetInstanceMetadataDefaults API call. */
-	static readonly GET_INSTANCE_METADATA_DEFAULTS: string[] = [
+	static readonly opGetInstanceMetadataDefaults: string[] = [
 		"ec2:GetInstanceMetadataDefaults",
 	];
 	/** IAM actions required for the GetInstanceTpmEkPub API call. */
-	static readonly GET_INSTANCE_TPM_EK_PUB: string[] = [
-		"ec2:GetInstanceTpmEkPub",
-	];
+	static readonly opGetInstanceTpmEkPub: string[] = ["ec2:GetInstanceTpmEkPub"];
 	/** IAM actions required for the GetInstanceTypesFromInstanceRequirements API call. */
-	static readonly GET_INSTANCE_TYPES_FROM_INSTANCE_REQUIREMENTS: string[] = [
+	static readonly opGetInstanceTypesFromInstanceRequirements: string[] = [
 		"ec2:GetInstanceTypesFromInstanceRequirements",
 	];
 	/** IAM actions required for the GetInstanceUefiData API call. */
-	static readonly GET_INSTANCE_UEFI_DATA: string[] = [
-		"ec2:GetInstanceUefiData",
-	];
+	static readonly opGetInstanceUefiData: string[] = ["ec2:GetInstanceUefiData"];
 	/** IAM actions required for the GetIpamAddressHistory API call. */
-	static readonly GET_IPAM_ADDRESS_HISTORY: string[] = [
+	static readonly opGetIpamAddressHistory: string[] = [
 		"ec2:GetIpamAddressHistory",
 	];
 	/** IAM actions required for the GetIpamDiscoveredAccounts API call. */
-	static readonly GET_IPAM_DISCOVERED_ACCOUNTS: string[] = [
+	static readonly opGetIpamDiscoveredAccounts: string[] = [
 		"ec2:GetIpamDiscoveredAccounts",
 	];
 	/** IAM actions required for the GetIpamDiscoveredPublicAddresses API call. */
-	static readonly GET_IPAM_DISCOVERED_PUBLIC_ADDRESSES: string[] = [
+	static readonly opGetIpamDiscoveredPublicAddresses: string[] = [
 		"ec2:GetIpamDiscoveredPublicAddresses",
 	];
 	/** IAM actions required for the GetIpamDiscoveredResourceCidrs API call. */
-	static readonly GET_IPAM_DISCOVERED_RESOURCE_CIDRS: string[] = [
+	static readonly opGetIpamDiscoveredResourceCidrs: string[] = [
 		"ec2:GetIpamDiscoveredResourceCidrs",
 	];
 	/** IAM actions required for the GetIpamDiscoveredRoutes API call. */
-	static readonly GET_IPAM_DISCOVERED_ROUTES: string[] = [];
+	static readonly opGetIpamDiscoveredRoutes: string[] = [];
 	/** IAM actions required for the GetIpamInternetRegistryAssociationAsns API call. */
-	static readonly GET_IPAM_INTERNET_REGISTRY_ASSOCIATION_ASNS: string[] = [];
+	static readonly opGetIpamInternetRegistryAssociationAsns: string[] = [];
 	/** IAM actions required for the GetIpamInternetRegistryAssociationCidrs API call. */
-	static readonly GET_IPAM_INTERNET_REGISTRY_ASSOCIATION_CIDRS: string[] = [];
+	static readonly opGetIpamInternetRegistryAssociationCidrs: string[] = [];
 	/** IAM actions required for the GetIpamPolicyAllocationRules API call. */
-	static readonly GET_IPAM_POLICY_ALLOCATION_RULES: string[] = [
+	static readonly opGetIpamPolicyAllocationRules: string[] = [
 		"ec2:GetIpamPolicyAllocationRules",
 	];
 	/** IAM actions required for the GetIpamPolicyOrganizationTargets API call. */
-	static readonly GET_IPAM_POLICY_ORGANIZATION_TARGETS: string[] = [
+	static readonly opGetIpamPolicyOrganizationTargets: string[] = [
 		"ec2:GetIpamPolicyOrganizationTargets",
 	];
 	/** IAM actions required for the GetIpamPoolAllocations API call. */
-	static readonly GET_IPAM_POOL_ALLOCATIONS: string[] = [
+	static readonly opGetIpamPoolAllocations: string[] = [
 		"ec2:GetIpamPoolAllocations",
 	];
 	/** IAM actions required for the GetIpamPoolCidrs API call. */
-	static readonly GET_IPAM_POOL_CIDRS: string[] = ["ec2:GetIpamPoolCidrs"];
+	static readonly opGetIpamPoolCidrs: string[] = ["ec2:GetIpamPoolCidrs"];
 	/** IAM actions required for the GetIpamPrefixListResolverRules API call. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_RULES: string[] = [
+	static readonly opGetIpamPrefixListResolverRules: string[] = [
 		"ec2:GetIpamPrefixListResolverRules",
 	];
 	/** IAM actions required for the GetIpamPrefixListResolverVersionEntries API call. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSION_ENTRIES: string[] = [
+	static readonly opGetIpamPrefixListResolverVersionEntries: string[] = [
 		"ec2:GetIpamPrefixListResolverVersionEntries",
 	];
 	/** IAM actions required for the GetIpamPrefixListResolverVersions API call. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSIONS: string[] = [
+	static readonly opGetIpamPrefixListResolverVersions: string[] = [
 		"ec2:GetIpamPrefixListResolverVersions",
 	];
 	/** IAM actions required for the GetIpamResourceCidrs API call. */
-	static readonly GET_IPAM_RESOURCE_CIDRS: string[] = [
+	static readonly opGetIpamResourceCidrs: string[] = [
 		"ec2:GetIpamResourceCidrs",
 	];
 	/** IAM actions required for the GetIpamRouteOriginAuthorizations API call. */
-	static readonly GET_IPAM_ROUTE_ORIGIN_AUTHORIZATIONS: string[] = [];
+	static readonly opGetIpamRouteOriginAuthorizations: string[] = [];
 	/** IAM actions required for the GetIpamRouteProtectionFindings API call. */
-	static readonly GET_IPAM_ROUTE_PROTECTION_FINDINGS: string[] = [];
+	static readonly opGetIpamRouteProtectionFindings: string[] = [];
 	/** IAM actions required for the GetIpamRoutingPolicyRegistrationDeltas API call. */
-	static readonly GET_IPAM_ROUTING_POLICY_REGISTRATION_DELTAS: string[] = [];
+	static readonly opGetIpamRoutingPolicyRegistrationDeltas: string[] = [];
 	/** IAM actions required for the GetIpamRoutingPolicyRegistrations API call. */
-	static readonly GET_IPAM_ROUTING_POLICY_REGISTRATIONS: string[] = [];
+	static readonly opGetIpamRoutingPolicyRegistrations: string[] = [];
 	/** IAM actions required for the GetLaunchTemplateData API call. */
-	static readonly GET_LAUNCH_TEMPLATE_DATA: string[] = [
+	static readonly opGetLaunchTemplateData: string[] = [
 		"ec2:GetLaunchTemplateData",
 	];
 	/** IAM actions required for the GetManagedPrefixListAssociations API call. */
-	static readonly GET_MANAGED_PREFIX_LIST_ASSOCIATIONS: string[] = [
+	static readonly opGetManagedPrefixListAssociations: string[] = [
 		"ec2:GetManagedPrefixListAssociations",
 	];
 	/** IAM actions required for the GetManagedPrefixListEntries API call. */
-	static readonly GET_MANAGED_PREFIX_LIST_ENTRIES: string[] = [
+	static readonly opGetManagedPrefixListEntries: string[] = [
 		"ec2:GetManagedPrefixListEntries",
 	];
 	/** IAM actions required for the GetManagedResourceVisibility API call. */
-	static readonly GET_MANAGED_RESOURCE_VISIBILITY: string[] = [
+	static readonly opGetManagedResourceVisibility: string[] = [
 		"ec2:GetManagedResourceVisibility",
 	];
 	/** IAM actions required for the GetNetworkInsightsAccessScopeAnalysisFindings API call. */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_FINDINGS: string[] =
-		["ec2:GetNetworkInsightsAccessScopeAnalysisFindings"];
+	static readonly opGetNetworkInsightsAccessScopeAnalysisFindings: string[] = [
+		"ec2:GetNetworkInsightsAccessScopeAnalysisFindings",
+	];
 	/** IAM actions required for the GetNetworkInsightsAccessScopeContent API call. */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_CONTENT: string[] = [
+	static readonly opGetNetworkInsightsAccessScopeContent: string[] = [
 		"ec2:GetNetworkInsightsAccessScopeContent",
 	];
 	/** IAM actions required for the GetPasswordData API call. */
-	static readonly GET_PASSWORD_DATA: string[] = ["ec2:GetPasswordData"];
+	static readonly opGetPasswordData: string[] = ["ec2:GetPasswordData"];
 	/** IAM actions required for the GetReservedInstancesExchangeQuote API call. */
-	static readonly GET_RESERVED_INSTANCES_EXCHANGE_QUOTE: string[] = [
+	static readonly opGetReservedInstancesExchangeQuote: string[] = [
 		"ec2:GetReservedInstancesExchangeQuote",
 	];
 	/** IAM actions required for the GetRouteServerAssociations API call. */
-	static readonly GET_ROUTE_SERVER_ASSOCIATIONS: string[] = [
+	static readonly opGetRouteServerAssociations: string[] = [
 		"ec2:GetRouteServerAssociations",
 	];
 	/** IAM actions required for the GetRouteServerPropagations API call. */
-	static readonly GET_ROUTE_SERVER_PROPAGATIONS: string[] = [
+	static readonly opGetRouteServerPropagations: string[] = [
 		"ec2:GetRouteServerPropagations",
 	];
 	/** IAM actions required for the GetRouteServerRoutingDatabase API call. */
-	static readonly GET_ROUTE_SERVER_ROUTING_DATABASE: string[] = [
+	static readonly opGetRouteServerRoutingDatabase: string[] = [
 		"ec2:GetRouteServerRoutingDatabase",
 	];
 	/** IAM actions required for the GetSecurityGroupsForVpc API call. */
-	static readonly GET_SECURITY_GROUPS_FOR_VPC: string[] = [
+	static readonly opGetSecurityGroupsForVpc: string[] = [
 		"ec2:GetSecurityGroupsForVpc",
 	];
 	/** IAM actions required for the GetSerialConsoleAccessStatus API call. */
-	static readonly GET_SERIAL_CONSOLE_ACCESS_STATUS: string[] = [
+	static readonly opGetSerialConsoleAccessStatus: string[] = [
 		"ec2:GetSerialConsoleAccessStatus",
 	];
 	/** IAM actions required for the GetSnapshotBlockPublicAccessState API call. */
-	static readonly GET_SNAPSHOT_BLOCK_PUBLIC_ACCESS_STATE: string[] = [
+	static readonly opGetSnapshotBlockPublicAccessState: string[] = [
 		"ec2:GetSnapshotBlockPublicAccessState",
 	];
 	/** IAM actions required for the GetSpotPlacementScores API call. */
-	static readonly GET_SPOT_PLACEMENT_SCORES: string[] = [
+	static readonly opGetSpotPlacementScores: string[] = [
 		"ec2:GetSpotPlacementScores",
 	];
 	/** IAM actions required for the GetSubnetCidrReservations API call. */
-	static readonly GET_SUBNET_CIDR_RESERVATIONS: string[] = [
+	static readonly opGetSubnetCidrReservations: string[] = [
 		"ec2:GetSubnetCidrReservations",
 	];
 	/** IAM actions required for the GetTransitGatewayAttachmentPropagations API call. */
-	static readonly GET_TRANSIT_GATEWAY_ATTACHMENT_PROPAGATIONS: string[] = [
+	static readonly opGetTransitGatewayAttachmentPropagations: string[] = [
 		"ec2:GetTransitGatewayAttachmentPropagations",
 	];
 	/** IAM actions required for the GetTransitGatewayMeteringPolicyEntries API call. */
-	static readonly GET_TRANSIT_GATEWAY_METERING_POLICY_ENTRIES: string[] = [
+	static readonly opGetTransitGatewayMeteringPolicyEntries: string[] = [
 		"ec2:GetTransitGatewayMeteringPolicyEntries",
 	];
 	/** IAM actions required for the GetTransitGatewayMulticastDomainAssociations API call. */
-	static readonly GET_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS: string[] =
-		["ec2:GetTransitGatewayMulticastDomainAssociations"];
+	static readonly opGetTransitGatewayMulticastDomainAssociations: string[] = [
+		"ec2:GetTransitGatewayMulticastDomainAssociations",
+	];
 	/** IAM actions required for the GetTransitGatewayPolicyTableAssociations API call. */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ASSOCIATIONS: string[] = [
+	static readonly opGetTransitGatewayPolicyTableAssociations: string[] = [
 		"ec2:GetTransitGatewayPolicyTableAssociations",
 	];
 	/** IAM actions required for the GetTransitGatewayPolicyTableEntries API call. */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ENTRIES: string[] = [
+	static readonly opGetTransitGatewayPolicyTableEntries: string[] = [
 		"ec2:GetTransitGatewayPolicyTableEntries",
 	];
 	/** IAM actions required for the GetTransitGatewayPrefixListReferences API call. */
-	static readonly GET_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCES: string[] = [
+	static readonly opGetTransitGatewayPrefixListReferences: string[] = [
 		"ec2:GetTransitGatewayPrefixListReferences",
 	];
 	/** IAM actions required for the GetTransitGatewayRouteTableAssociations API call. */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_ASSOCIATIONS: string[] = [
+	static readonly opGetTransitGatewayRouteTableAssociations: string[] = [
 		"ec2:GetTransitGatewayRouteTableAssociations",
 	];
 	/** IAM actions required for the GetTransitGatewayRouteTablePropagations API call. */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATIONS: string[] = [
+	static readonly opGetTransitGatewayRouteTablePropagations: string[] = [
 		"ec2:GetTransitGatewayRouteTablePropagations",
 	];
 	/** IAM actions required for the GetVerifiedAccessEndpointPolicy API call. */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_POLICY: string[] = [
+	static readonly opGetVerifiedAccessEndpointPolicy: string[] = [
 		"ec2:GetVerifiedAccessEndpointPolicy",
 	];
 	/** IAM actions required for the GetVerifiedAccessEndpointTargets API call. */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_TARGETS: string[] = [
+	static readonly opGetVerifiedAccessEndpointTargets: string[] = [
 		"ec2:GetVerifiedAccessEndpointTargets",
 	];
 	/** IAM actions required for the GetVerifiedAccessGroupPolicy API call. */
-	static readonly GET_VERIFIED_ACCESS_GROUP_POLICY: string[] = [
+	static readonly opGetVerifiedAccessGroupPolicy: string[] = [
 		"ec2:GetVerifiedAccessGroupPolicy",
 	];
 	/** IAM actions required for the GetVpcResourcesBlockingEncryptionEnforcement API call. */
-	static readonly GET_VPC_RESOURCES_BLOCKING_ENCRYPTION_ENFORCEMENT: string[] =
-		["ec2:GetVpcResourcesBlockingEncryptionEnforcement"];
+	static readonly opGetVpcResourcesBlockingEncryptionEnforcement: string[] = [
+		"ec2:GetVpcResourcesBlockingEncryptionEnforcement",
+	];
 	/** IAM actions required for the GetVpnConnectionDeviceSampleConfiguration API call. */
-	static readonly GET_VPN_CONNECTION_DEVICE_SAMPLE_CONFIGURATION: string[] = [
+	static readonly opGetVpnConnectionDeviceSampleConfiguration: string[] = [
 		"ec2:GetVpnConnectionDeviceSampleConfiguration",
 	];
 	/** IAM actions required for the GetVpnConnectionDeviceTypes API call. */
-	static readonly GET_VPN_CONNECTION_DEVICE_TYPES: string[] = [
+	static readonly opGetVpnConnectionDeviceTypes: string[] = [
 		"ec2:GetVpnConnectionDeviceTypes",
 	];
 	/** IAM actions required for the GetVpnTunnelReplacementStatus API call. */
-	static readonly GET_VPN_TUNNEL_REPLACEMENT_STATUS: string[] = [
+	static readonly opGetVpnTunnelReplacementStatus: string[] = [
 		"ec2:GetVpnTunnelReplacementStatus",
 	];
 	/** IAM actions required for the ImportClientVpnClientCertificateRevocationList API call. */
-	static readonly IMPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST: string[] =
-		["ec2:ImportClientVpnClientCertificateRevocationList"];
-	/** IAM actions required for the ImportImage API call. */
-	static readonly IMPORT_IMAGE: string[] = [
-		"ec2:CreateTags",
-		"ec2:ImportImage",
+	static readonly ImportClientVpnClientCertificateRevocationList: string[] = [
+		"ec2:ImportClientVpnClientCertificateRevocationList",
 	];
+	/** IAM actions required for the ImportImage API call. */
+	static readonly ImportImage: string[] = ["ec2:CreateTags", "ec2:ImportImage"];
 	/** IAM actions required for the ImportInstance API call. */
-	static readonly IMPORT_INSTANCE: string[] = ["ec2:ImportInstance"];
+	static readonly ImportInstance: string[] = ["ec2:ImportInstance"];
 	/** IAM actions required for the ImportKeyPair API call. */
-	static readonly IMPORT_KEY_PAIR: string[] = [
+	static readonly ImportKeyPair: string[] = [
 		"ec2:CreateTags",
 		"ec2:ImportKeyPair",
 	];
 	/** IAM actions required for the ImportSnapshot API call. */
-	static readonly IMPORT_SNAPSHOT: string[] = [
+	static readonly ImportSnapshot: string[] = [
 		"ec2:CreateTags",
 		"ec2:ImportSnapshot",
 	];
 	/** IAM actions required for the ImportVolume API call. */
-	static readonly IMPORT_VOLUME: string[] = ["ec2:ImportVolume"];
+	static readonly ImportVolume: string[] = ["ec2:ImportVolume"];
 	/** IAM actions required for the ListImagesInRecycleBin API call. */
-	static readonly LIST_IMAGES_IN_RECYCLE_BIN: string[] = [
+	static readonly ListImagesInRecycleBin: string[] = [
 		"ec2:ListImagesInRecycleBin",
 	];
 	/** IAM actions required for the ListSnapshotsInRecycleBin API call. */
-	static readonly LIST_SNAPSHOTS_IN_RECYCLE_BIN: string[] = [
+	static readonly ListSnapshotsInRecycleBin: string[] = [
 		"ec2:ListSnapshotsInRecycleBin",
 	];
 	/** IAM actions required for the ListVolumesInRecycleBin API call. */
-	static readonly LIST_VOLUMES_IN_RECYCLE_BIN: string[] = [
+	static readonly ListVolumesInRecycleBin: string[] = [
 		"ec2:ListVolumesInRecycleBin",
 	];
 	/** IAM actions required for the LockSnapshot API call. */
-	static readonly LOCK_SNAPSHOT: string[] = ["ec2:LockSnapshot"];
+	static readonly LockSnapshot: string[] = ["ec2:LockSnapshot"];
 	/** IAM actions required for the ModifyAccountVpcEncryptionControl API call. */
-	static readonly MODIFY_ACCOUNT_VPC_ENCRYPTION_CONTROL: string[] = [];
+	static readonly ModifyAccountVpcEncryptionControl: string[] = [];
 	/** IAM actions required for the ModifyAddressAttribute API call. */
-	static readonly MODIFY_ADDRESS_ATTRIBUTE: string[] = [
+	static readonly ModifyAddressAttribute: string[] = [
 		"ec2:ModifyAddressAttribute",
 	];
 	/** IAM actions required for the ModifyApplicationStatusCheck API call. */
-	static readonly MODIFY_APPLICATION_STATUS_CHECK: string[] = [];
+	static readonly ModifyApplicationStatusCheck: string[] = [];
 	/** IAM actions required for the ModifyAvailabilityZoneGroup API call. */
-	static readonly MODIFY_AVAILABILITY_ZONE_GROUP: string[] = [
+	static readonly ModifyAvailabilityZoneGroup: string[] = [
 		"ec2:ModifyAvailabilityZoneGroup",
 	];
 	/** IAM actions required for the ModifyCapacityReservation API call. */
-	static readonly MODIFY_CAPACITY_RESERVATION: string[] = [
+	static readonly ModifyCapacityReservation: string[] = [
 		"ec2:ModifyCapacityReservation",
 	];
 	/** IAM actions required for the ModifyCapacityReservationFleet API call. */
-	static readonly MODIFY_CAPACITY_RESERVATION_FLEET: string[] = [
+	static readonly ModifyCapacityReservationFleet: string[] = [
 		"ec2:ModifyCapacityReservationFleet",
 	];
 	/** IAM actions required for the ModifyClientVpnEndpoint API call. */
-	static readonly MODIFY_CLIENT_VPN_ENDPOINT: string[] = [
+	static readonly ModifyClientVpnEndpoint: string[] = [
 		"ec2:ModifyClientVpnEndpoint",
 	];
 	/** IAM actions required for the ModifyDefaultCreditSpecification API call. */
-	static readonly MODIFY_DEFAULT_CREDIT_SPECIFICATION: string[] = [
+	static readonly ModifyDefaultCreditSpecification: string[] = [
 		"ec2:ModifyDefaultCreditSpecification",
 	];
 	/** IAM actions required for the ModifyEbsDefaultKmsKeyId API call. */
-	static readonly MODIFY_EBS_DEFAULT_KMS_KEY_ID: string[] = [
+	static readonly ModifyEbsDefaultKmsKeyId: string[] = [
 		"ec2:ModifyEbsDefaultKmsKeyId",
 	];
 	/** IAM actions required for the ModifyFleet API call. */
-	static readonly MODIFY_FLEET: string[] = ["ec2:ModifyFleet"];
+	static readonly ModifyFleet: string[] = ["ec2:ModifyFleet"];
 	/** IAM actions required for the ModifyFpgaImageAttribute API call. */
-	static readonly MODIFY_FPGA_IMAGE_ATTRIBUTE: string[] = [
+	static readonly ModifyFpgaImageAttribute: string[] = [
 		"ec2:ModifyFpgaImageAttribute",
 	];
 	/** IAM actions required for the ModifyHosts API call. */
-	static readonly MODIFY_HOSTS: string[] = ["ec2:ModifyHosts"];
+	static readonly ModifyHosts: string[] = ["ec2:ModifyHosts"];
 	/** IAM actions required for the ModifyIdFormat API call. */
-	static readonly MODIFY_ID_FORMAT: string[] = ["ec2:ModifyIdFormat"];
+	static readonly ModifyIdFormat: string[] = ["ec2:ModifyIdFormat"];
 	/** IAM actions required for the ModifyIdentityIdFormat API call. */
-	static readonly MODIFY_IDENTITY_ID_FORMAT: string[] = [
+	static readonly ModifyIdentityIdFormat: string[] = [
 		"ec2:ModifyIdentityIdFormat",
 	];
 	/** IAM actions required for the ModifyImageAttribute API call. */
-	static readonly MODIFY_IMAGE_ATTRIBUTE: string[] = [
-		"ec2:ModifyImageAttribute",
-	];
+	static readonly ModifyImageAttribute: string[] = ["ec2:ModifyImageAttribute"];
 	/** IAM actions required for the ModifyInstanceAttribute API call. */
-	static readonly MODIFY_INSTANCE_ATTRIBUTE: string[] = [
+	static readonly ModifyInstanceAttribute: string[] = [
 		"ec2:ModifyInstanceAttribute",
 	];
 	/** IAM actions required for the ModifyInstanceCapacityReservationAttributes API call. */
-	static readonly MODIFY_INSTANCE_CAPACITY_RESERVATION_ATTRIBUTES: string[] = [
+	static readonly ModifyInstanceCapacityReservationAttributes: string[] = [
 		"ec2:ModifyInstanceCapacityReservationAttributes",
 	];
 	/** IAM actions required for the ModifyInstanceConnectEndpoint API call. */
-	static readonly MODIFY_INSTANCE_CONNECT_ENDPOINT: string[] = [
+	static readonly ModifyInstanceConnectEndpoint: string[] = [
 		"ec2:ModifyInstanceConnectEndpoint",
 	];
 	/** IAM actions required for the ModifyInstanceCpuOptions API call. */
-	static readonly MODIFY_INSTANCE_CPU_OPTIONS: string[] = [
+	static readonly ModifyInstanceCpuOptions: string[] = [
 		"ec2:ModifyInstanceCpuOptions",
 	];
 	/** IAM actions required for the ModifyInstanceCreditSpecification API call. */
-	static readonly MODIFY_INSTANCE_CREDIT_SPECIFICATION: string[] = [
+	static readonly ModifyInstanceCreditSpecification: string[] = [
 		"ec2:ModifyInstanceCreditSpecification",
 	];
 	/** IAM actions required for the ModifyInstanceEventStartTime API call. */
-	static readonly MODIFY_INSTANCE_EVENT_START_TIME: string[] = [
+	static readonly ModifyInstanceEventStartTime: string[] = [
 		"ec2:ModifyInstanceEventStartTime",
 	];
 	/** IAM actions required for the ModifyInstanceEventWindow API call. */
-	static readonly MODIFY_INSTANCE_EVENT_WINDOW: string[] = [
+	static readonly ModifyInstanceEventWindow: string[] = [
 		"ec2:ModifyInstanceEventWindow",
 	];
 	/** IAM actions required for the ModifyInstanceMaintenanceOptions API call. */
-	static readonly MODIFY_INSTANCE_MAINTENANCE_OPTIONS: string[] = [
+	static readonly ModifyInstanceMaintenanceOptions: string[] = [
 		"ec2:ModifyInstanceMaintenanceOptions",
 	];
 	/** IAM actions required for the ModifyInstanceMetadataDefaults API call. */
-	static readonly MODIFY_INSTANCE_METADATA_DEFAULTS: string[] = [
+	static readonly ModifyInstanceMetadataDefaults: string[] = [
 		"ec2:ModifyInstanceMetadataDefaults",
 	];
 	/** IAM actions required for the ModifyInstanceMetadataOptions API call. */
-	static readonly MODIFY_INSTANCE_METADATA_OPTIONS: string[] = [
+	static readonly ModifyInstanceMetadataOptions: string[] = [
 		"ec2:ModifyInstanceMetadataOptions",
 	];
 	/** IAM actions required for the ModifyInstanceNetworkPerformanceOptions API call. */
-	static readonly MODIFY_INSTANCE_NETWORK_PERFORMANCE_OPTIONS: string[] = [
+	static readonly ModifyInstanceNetworkPerformanceOptions: string[] = [
 		"ec2:ModifyInstanceNetworkPerformanceOptions",
 	];
 	/** IAM actions required for the ModifyInstancePlacement API call. */
-	static readonly MODIFY_INSTANCE_PLACEMENT: string[] = [
+	static readonly ModifyInstancePlacement: string[] = [
 		"ec2:ModifyInstancePlacement",
 	];
 	/** IAM actions required for the ModifyIpam API call. */
-	static readonly MODIFY_IPAM: string[] = ["ec2:ModifyIpam"];
+	static readonly ModifyIpam: string[] = ["ec2:ModifyIpam"];
 	/** IAM actions required for the ModifyIpamPolicyAllocationRules API call. */
-	static readonly MODIFY_IPAM_POLICY_ALLOCATION_RULES: string[] = [
+	static readonly ModifyIpamPolicyAllocationRules: string[] = [
 		"ec2:ModifyIpamPolicyAllocationRules",
 	];
 	/** IAM actions required for the ModifyIpamPool API call. */
-	static readonly MODIFY_IPAM_POOL: string[] = ["ec2:ModifyIpamPool"];
+	static readonly ModifyIpamPool: string[] = ["ec2:ModifyIpamPool"];
 	/** IAM actions required for the ModifyIpamPoolAllocation API call. */
-	static readonly MODIFY_IPAM_POOL_ALLOCATION: string[] = [
+	static readonly ModifyIpamPoolAllocation: string[] = [
 		"ec2:ModifyIpamPoolAllocation",
 	];
 	/** IAM actions required for the ModifyIpamPrefixListResolver API call. */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER: string[] = [
+	static readonly ModifyIpamPrefixListResolver: string[] = [
 		"ec2:ModifyIpamPrefixListResolver",
 	];
 	/** IAM actions required for the ModifyIpamPrefixListResolverTarget API call. */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER_TARGET: string[] = [
+	static readonly ModifyIpamPrefixListResolverTarget: string[] = [
 		"ec2:ModifyIpamPrefixListResolverTarget",
 	];
 	/** IAM actions required for the ModifyIpamResourceCidr API call. */
-	static readonly MODIFY_IPAM_RESOURCE_CIDR: string[] = [
+	static readonly ModifyIpamResourceCidr: string[] = [
 		"ec2:ModifyIpamResourceCidr",
 	];
 	/** IAM actions required for the ModifyIpamResourceDiscovery API call. */
-	static readonly MODIFY_IPAM_RESOURCE_DISCOVERY: string[] = [
+	static readonly ModifyIpamResourceDiscovery: string[] = [
 		"ec2:ModifyIpamResourceDiscovery",
 	];
 	/** IAM actions required for the ModifyIpamRoutingPolicyRegistration API call. */
-	static readonly MODIFY_IPAM_ROUTING_POLICY_REGISTRATION: string[] = [];
+	static readonly ModifyIpamRoutingPolicyRegistration: string[] = [];
 	/** IAM actions required for the ModifyIpamScope API call. */
-	static readonly MODIFY_IPAM_SCOPE: string[] = ["ec2:ModifyIpamScope"];
+	static readonly ModifyIpamScope: string[] = ["ec2:ModifyIpamScope"];
 	/** IAM actions required for the ModifyLaunchTemplate API call. */
-	static readonly MODIFY_LAUNCH_TEMPLATE: string[] = [
-		"ec2:ModifyLaunchTemplate",
-	];
+	static readonly ModifyLaunchTemplate: string[] = ["ec2:ModifyLaunchTemplate"];
 	/** IAM actions required for the ModifyLocalGatewayRoute API call. */
-	static readonly MODIFY_LOCAL_GATEWAY_ROUTE: string[] = [
+	static readonly ModifyLocalGatewayRoute: string[] = [
 		"ec2:ModifyLocalGatewayRoute",
 	];
 	/** IAM actions required for the ModifyManagedPrefixList API call. */
-	static readonly MODIFY_MANAGED_PREFIX_LIST: string[] = [
+	static readonly ModifyManagedPrefixList: string[] = [
 		"ec2:ModifyManagedPrefixList",
 	];
 	/** IAM actions required for the ModifyManagedResourceVisibility API call. */
-	static readonly MODIFY_MANAGED_RESOURCE_VISIBILITY: string[] = [
+	static readonly ModifyManagedResourceVisibility: string[] = [
 		"ec2:ModifyManagedResourceVisibility",
 	];
 	/** IAM actions required for the ModifyNetworkInterfaceAttribute API call. */
-	static readonly MODIFY_NETWORK_INTERFACE_ATTRIBUTE: string[] = [
+	static readonly ModifyNetworkInterfaceAttribute: string[] = [
 		"ec2:ModifyNetworkInterfaceAttribute",
 	];
 	/** IAM actions required for the ModifyPrivateDnsNameOptions API call. */
-	static readonly MODIFY_PRIVATE_DNS_NAME_OPTIONS: string[] = [
+	static readonly ModifyPrivateDnsNameOptions: string[] = [
 		"ec2:ModifyPrivateDnsNameOptions",
 	];
 	/** IAM actions required for the ModifyPublicIpDnsNameOptions API call. */
-	static readonly MODIFY_PUBLIC_IP_DNS_NAME_OPTIONS: string[] = [
+	static readonly ModifyPublicIpDnsNameOptions: string[] = [
 		"ec2:ModifyPublicIpDnsNameOptions",
 	];
 	/** IAM actions required for the ModifyReservedInstances API call. */
-	static readonly MODIFY_RESERVED_INSTANCES: string[] = [
+	static readonly ModifyReservedInstances: string[] = [
 		"ec2:ModifyReservedInstances",
 	];
 	/** IAM actions required for the ModifyRouteServer API call. */
-	static readonly MODIFY_ROUTE_SERVER: string[] = ["ec2:ModifyRouteServer"];
+	static readonly ModifyRouteServer: string[] = ["ec2:ModifyRouteServer"];
 	/** IAM actions required for the ModifySecurityGroupRules API call. */
-	static readonly MODIFY_SECURITY_GROUP_RULES: string[] = [
+	static readonly ModifySecurityGroupRules: string[] = [
 		"ec2:ModifySecurityGroupRules",
 	];
 	/** IAM actions required for the ModifySnapshotAttribute API call. */
-	static readonly MODIFY_SNAPSHOT_ATTRIBUTE: string[] = [
+	static readonly ModifySnapshotAttribute: string[] = [
 		"ec2:ModifySnapshotAttribute",
 	];
 	/** IAM actions required for the ModifySnapshotTier API call. */
-	static readonly MODIFY_SNAPSHOT_TIER: string[] = ["ec2:ModifySnapshotTier"];
+	static readonly ModifySnapshotTier: string[] = ["ec2:ModifySnapshotTier"];
 	/** IAM actions required for the ModifySpotFleetRequest API call. */
-	static readonly MODIFY_SPOT_FLEET_REQUEST: string[] = [
+	static readonly ModifySpotFleetRequest: string[] = [
 		"ec2:ModifySpotFleetRequest",
 	];
 	/** IAM actions required for the ModifySubnetAttribute API call. */
-	static readonly MODIFY_SUBNET_ATTRIBUTE: string[] = [
+	static readonly ModifySubnetAttribute: string[] = [
 		"ec2:ModifySubnetAttribute",
 	];
 	/** IAM actions required for the ModifyTrafficMirrorFilterNetworkServices API call. */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_NETWORK_SERVICES: string[] = [
+	static readonly ModifyTrafficMirrorFilterNetworkServices: string[] = [
 		"ec2:ModifyTrafficMirrorFilterNetworkServices",
 	];
 	/** IAM actions required for the ModifyTrafficMirrorFilterRule API call. */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_RULE: string[] = [
+	static readonly ModifyTrafficMirrorFilterRule: string[] = [
 		"ec2:ModifyTrafficMirrorFilterRule",
 	];
 	/** IAM actions required for the ModifyTrafficMirrorSession API call. */
-	static readonly MODIFY_TRAFFIC_MIRROR_SESSION: string[] = [
+	static readonly ModifyTrafficMirrorSession: string[] = [
 		"ec2:ModifyTrafficMirrorSession",
 	];
 	/** IAM actions required for the ModifyTransitGateway API call. */
-	static readonly MODIFY_TRANSIT_GATEWAY: string[] = [
-		"ec2:ModifyTransitGateway",
-	];
+	static readonly ModifyTransitGateway: string[] = ["ec2:ModifyTransitGateway"];
 	/** IAM actions required for the ModifyTransitGatewayMeteringPolicy API call. */
-	static readonly MODIFY_TRANSIT_GATEWAY_METERING_POLICY: string[] = [
+	static readonly ModifyTransitGatewayMeteringPolicy: string[] = [
 		"ec2:ModifyTransitGatewayMeteringPolicy",
 	];
 	/** IAM actions required for the ModifyTransitGatewayPolicyTableEntry API call. */
-	static readonly MODIFY_TRANSIT_GATEWAY_POLICY_TABLE_ENTRY: string[] = [];
+	static readonly ModifyTransitGatewayPolicyTableEntry: string[] = [];
 	/** IAM actions required for the ModifyTransitGatewayPrefixListReference API call. */
-	static readonly MODIFY_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE: string[] = [
+	static readonly ModifyTransitGatewayPrefixListReference: string[] = [
 		"ec2:ModifyTransitGatewayPrefixListReference",
 	];
 	/** IAM actions required for the ModifyTransitGatewayVpcAttachment API call. */
-	static readonly MODIFY_TRANSIT_GATEWAY_VPC_ATTACHMENT: string[] = [
+	static readonly ModifyTransitGatewayVpcAttachment: string[] = [
 		"ec2:ModifyTransitGatewayVpcAttachment",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessEndpoint API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT: string[] = [
+	static readonly ModifyVerifiedAccessEndpoint: string[] = [
 		"ec2:ModifyVerifiedAccessEndpoint",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessEndpointPolicy API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT_POLICY: string[] = [
+	static readonly ModifyVerifiedAccessEndpointPolicy: string[] = [
 		"ec2:ModifyVerifiedAccessEndpointPolicy",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessGroup API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP: string[] = [
+	static readonly ModifyVerifiedAccessGroup: string[] = [
 		"ec2:ModifyVerifiedAccessGroup",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessGroupPolicy API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP_POLICY: string[] = [
+	static readonly ModifyVerifiedAccessGroupPolicy: string[] = [
 		"ec2:ModifyVerifiedAccessGroupPolicy",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessInstance API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE: string[] = [
+	static readonly ModifyVerifiedAccessInstance: string[] = [
 		"ec2:ModifyVerifiedAccessInstance",
 	];
 	/** IAM actions required for the ModifyVerifiedAccessInstanceLoggingConfiguration API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATION: string[] =
-		["ec2:ModifyVerifiedAccessInstanceLoggingConfiguration"];
+	static readonly ModifyVerifiedAccessInstanceLoggingConfiguration: string[] = [
+		"ec2:ModifyVerifiedAccessInstanceLoggingConfiguration",
+	];
 	/** IAM actions required for the ModifyVerifiedAccessTrustProvider API call. */
-	static readonly MODIFY_VERIFIED_ACCESS_TRUST_PROVIDER: string[] = [
+	static readonly ModifyVerifiedAccessTrustProvider: string[] = [
 		"ec2:ModifyVerifiedAccessTrustProvider",
 	];
 	/** IAM actions required for the ModifyVolume API call. */
-	static readonly MODIFY_VOLUME: string[] = ["ec2:ModifyVolume"];
+	static readonly ModifyVolume: string[] = ["ec2:ModifyVolume"];
 	/** IAM actions required for the ModifyVolumeAttribute API call. */
-	static readonly MODIFY_VOLUME_ATTRIBUTE: string[] = [
+	static readonly ModifyVolumeAttribute: string[] = [
 		"ec2:ModifyVolumeAttribute",
 	];
 	/** IAM actions required for the ModifyVpcAttribute API call. */
-	static readonly MODIFY_VPC_ATTRIBUTE: string[] = ["ec2:ModifyVpcAttribute"];
+	static readonly ModifyVpcAttribute: string[] = ["ec2:ModifyVpcAttribute"];
 	/** IAM actions required for the ModifyVpcBlockPublicAccessExclusion API call. */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION: string[] = [
+	static readonly ModifyVpcBlockPublicAccessExclusion: string[] = [
 		"ec2:ModifyVpcBlockPublicAccessExclusion",
 	];
 	/** IAM actions required for the ModifyVpcBlockPublicAccessOptions API call. */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS: string[] = [
+	static readonly ModifyVpcBlockPublicAccessOptions: string[] = [
 		"ec2:ModifyVpcBlockPublicAccessOptions",
 	];
 	/** IAM actions required for the ModifyVpcEncryptionControl API call. */
-	static readonly MODIFY_VPC_ENCRYPTION_CONTROL: string[] = [
+	static readonly ModifyVpcEncryptionControl: string[] = [
 		"ec2:ModifyVpcEncryptionControl",
 	];
 	/** IAM actions required for the ModifyVpcEndpoint API call. */
-	static readonly MODIFY_VPC_ENDPOINT: string[] = ["ec2:ModifyVpcEndpoint"];
+	static readonly ModifyVpcEndpoint: string[] = ["ec2:ModifyVpcEndpoint"];
 	/** IAM actions required for the ModifyVpcEndpointConnectionNotification API call. */
-	static readonly MODIFY_VPC_ENDPOINT_CONNECTION_NOTIFICATION: string[] = [
+	static readonly ModifyVpcEndpointConnectionNotification: string[] = [
 		"ec2:ModifyVpcEndpointConnectionNotification",
 	];
 	/** IAM actions required for the ModifyVpcEndpointPayerResponsibility API call. */
-	static readonly MODIFY_VPC_ENDPOINT_PAYER_RESPONSIBILITY: string[] = [];
+	static readonly ModifyVpcEndpointPayerResponsibility: string[] = [];
 	/** IAM actions required for the ModifyVpcEndpointServiceConfiguration API call. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_CONFIGURATION: string[] = [
+	static readonly ModifyVpcEndpointServiceConfiguration: string[] = [
 		"ec2:ModifyVpcEndpointServiceConfiguration",
 	];
 	/** IAM actions required for the ModifyVpcEndpointServicePayerResponsibility API call. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PAYER_RESPONSIBILITY: string[] = [
+	static readonly ModifyVpcEndpointServicePayerResponsibility: string[] = [
 		"ec2:ModifyVpcEndpointServicePayerResponsibility",
 	];
 	/** IAM actions required for the ModifyVpcEndpointServicePermissions API call. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PERMISSIONS: string[] = [
+	static readonly ModifyVpcEndpointServicePermissions: string[] = [
 		"ec2:ModifyVpcEndpointServicePermissions",
 	];
 	/** IAM actions required for the ModifyVpcPeeringConnectionOptions API call. */
-	static readonly MODIFY_VPC_PEERING_CONNECTION_OPTIONS: string[] = [
+	static readonly ModifyVpcPeeringConnectionOptions: string[] = [
 		"ec2:ModifyVpcPeeringConnectionOptions",
 	];
 	/** IAM actions required for the ModifyVpcTenancy API call. */
-	static readonly MODIFY_VPC_TENANCY: string[] = ["ec2:ModifyVpcTenancy"];
+	static readonly ModifyVpcTenancy: string[] = ["ec2:ModifyVpcTenancy"];
 	/** IAM actions required for the ModifyVpnConnection API call. */
-	static readonly MODIFY_VPN_CONNECTION: string[] = ["ec2:ModifyVpnConnection"];
+	static readonly ModifyVpnConnection: string[] = ["ec2:ModifyVpnConnection"];
 	/** IAM actions required for the ModifyVpnConnectionOptions API call. */
-	static readonly MODIFY_VPN_CONNECTION_OPTIONS: string[] = [
+	static readonly ModifyVpnConnectionOptions: string[] = [
 		"ec2:ModifyVpnConnectionOptions",
 	];
 	/** IAM actions required for the ModifyVpnTunnelCertificate API call. */
-	static readonly MODIFY_VPN_TUNNEL_CERTIFICATE: string[] = [
+	static readonly ModifyVpnTunnelCertificate: string[] = [
 		"ec2:ModifyVpnTunnelCertificate",
 	];
 	/** IAM actions required for the ModifyVpnTunnelOptions API call. */
-	static readonly MODIFY_VPN_TUNNEL_OPTIONS: string[] = [
+	static readonly ModifyVpnTunnelOptions: string[] = [
 		"ec2:ModifyVpnTunnelOptions",
 	];
 	/** IAM actions required for the MonitorInstances API call. */
-	static readonly MONITOR_INSTANCES: string[] = ["ec2:MonitorInstances"];
+	static readonly MonitorInstances: string[] = ["ec2:MonitorInstances"];
 	/** IAM actions required for the MoveAddressToVpc API call. */
-	static readonly MOVE_ADDRESS_TO_VPC: string[] = [];
+	static readonly MoveAddressToVpc: string[] = [];
 	/** IAM actions required for the MoveByoipCidrToIpam API call. */
-	static readonly MOVE_BYOIP_CIDR_TO_IPAM: string[] = [
-		"ec2:MoveByoipCidrToIpam",
-	];
+	static readonly MoveByoipCidrToIpam: string[] = ["ec2:MoveByoipCidrToIpam"];
 	/** IAM actions required for the MoveCapacityReservationInstances API call. */
-	static readonly MOVE_CAPACITY_RESERVATION_INSTANCES: string[] = [
+	static readonly MoveCapacityReservationInstances: string[] = [
 		"ec2:MoveCapacityReservationInstances",
 	];
 	/** IAM actions required for the ProvisionByoipCidr API call. */
-	static readonly PROVISION_BYOIP_CIDR: string[] = ["ec2:ProvisionByoipCidr"];
+	static readonly ProvisionByoipCidr: string[] = ["ec2:ProvisionByoipCidr"];
 	/** IAM actions required for the ProvisionIpamByoasn API call. */
-	static readonly PROVISION_IPAM_BYOASN: string[] = ["ec2:ProvisionIpamByoasn"];
+	static readonly ProvisionIpamByoasn: string[] = ["ec2:ProvisionIpamByoasn"];
 	/** IAM actions required for the ProvisionIpamPoolCidr API call. */
-	static readonly PROVISION_IPAM_POOL_CIDR: string[] = [
+	static readonly ProvisionIpamPoolCidr: string[] = [
 		"ec2:ProvisionIpamPoolCidr",
 	];
 	/** IAM actions required for the ProvisionPublicIpv4PoolCidr API call. */
-	static readonly PROVISION_PUBLIC_IPV4_POOL_CIDR: string[] = [
+	static readonly ProvisionPublicIpv4PoolCidr: string[] = [
 		"ec2:ProvisionPublicIpv4PoolCidr",
 	];
 	/** IAM actions required for the PurchaseCapacityBlock API call. */
-	static readonly PURCHASE_CAPACITY_BLOCK: string[] = [
+	static readonly PurchaseCapacityBlock: string[] = [
 		"ec2:CreateTags",
 		"ec2:PurchaseCapacityBlock",
 	];
 	/** IAM actions required for the PurchaseCapacityBlockExtension API call. */
-	static readonly PURCHASE_CAPACITY_BLOCK_EXTENSION: string[] = [
+	static readonly PurchaseCapacityBlockExtension: string[] = [
 		"ec2:PurchaseCapacityBlockExtension",
 	];
 	/** IAM actions required for the PurchaseHostReservation API call. */
-	static readonly PURCHASE_HOST_RESERVATION: string[] = [
+	static readonly PurchaseHostReservation: string[] = [
 		"ec2:CreateTags",
 		"ec2:PurchaseHostReservation",
 	];
 	/** IAM actions required for the PurchaseReservedInstancesOffering API call. */
-	static readonly PURCHASE_RESERVED_INSTANCES_OFFERING: string[] = [
+	static readonly PurchaseReservedInstancesOffering: string[] = [
 		"ec2:PurchaseReservedInstancesOffering",
 	];
 	/** IAM actions required for the PurchaseScheduledInstances API call. */
-	static readonly PURCHASE_SCHEDULED_INSTANCES: string[] = [
+	static readonly PurchaseScheduledInstances: string[] = [
 		"ec2:PurchaseScheduledInstances",
 	];
 	/** IAM actions required for the RebootInstances API call. */
-	static readonly REBOOT_INSTANCES: string[] = ["ec2:RebootInstances"];
+	static readonly RebootInstances: string[] = ["ec2:RebootInstances"];
 	/** IAM actions required for the RegisterImage API call. */
-	static readonly REGISTER_IMAGE: string[] = [
+	static readonly RegisterImage: string[] = [
 		"ec2:CreateTags",
 		"ec2:RegisterImage",
 	];
 	/** IAM actions required for the RegisterInstanceEventNotificationAttributes API call. */
-	static readonly REGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES: string[] = [
+	static readonly RegisterInstanceEventNotificationAttributes: string[] = [
 		"ec2:RegisterInstanceEventNotificationAttributes",
 	];
 	/** IAM actions required for the RegisterTransitGatewayMulticastGroupMembers API call. */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS: string[] = [
+	static readonly RegisterTransitGatewayMulticastGroupMembers: string[] = [
 		"ec2:RegisterTransitGatewayMulticastGroupMembers",
 	];
 	/** IAM actions required for the RegisterTransitGatewayMulticastGroupSources API call. */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES: string[] = [
+	static readonly RegisterTransitGatewayMulticastGroupSources: string[] = [
 		"ec2:RegisterTransitGatewayMulticastGroupSources",
 	];
 	/** IAM actions required for the RejectCapacityReservationBillingOwnership API call. */
-	static readonly REJECT_CAPACITY_RESERVATION_BILLING_OWNERSHIP: string[] = [
+	static readonly RejectCapacityReservationBillingOwnership: string[] = [
 		"ec2:RejectCapacityReservationBillingOwnership",
 	];
 	/** IAM actions required for the RejectTransitGatewayClientVpnAttachment API call. */
-	static readonly REJECT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT: string[] = [
+	static readonly RejectTransitGatewayClientVpnAttachment: string[] = [
 		"ec2:RejectTransitGatewayClientVpnAttachment",
 	];
 	/** IAM actions required for the RejectTransitGatewayMulticastDomainAssociations API call. */
-	static readonly REJECT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS: string[] =
-		["ec2:RejectTransitGatewayMulticastDomainAssociations"];
+	static readonly RejectTransitGatewayMulticastDomainAssociations: string[] = [
+		"ec2:RejectTransitGatewayMulticastDomainAssociations",
+	];
 	/** IAM actions required for the RejectTransitGatewayPeeringAttachment API call. */
-	static readonly REJECT_TRANSIT_GATEWAY_PEERING_ATTACHMENT: string[] = [
+	static readonly RejectTransitGatewayPeeringAttachment: string[] = [
 		"ec2:RejectTransitGatewayPeeringAttachment",
 	];
 	/** IAM actions required for the RejectTransitGatewayVpcAttachment API call. */
-	static readonly REJECT_TRANSIT_GATEWAY_VPC_ATTACHMENT: string[] = [
+	static readonly RejectTransitGatewayVpcAttachment: string[] = [
 		"ec2:RejectTransitGatewayVpcAttachment",
 	];
 	/** IAM actions required for the RejectVpcEndpointConnections API call. */
-	static readonly REJECT_VPC_ENDPOINT_CONNECTIONS: string[] = [
+	static readonly RejectVpcEndpointConnections: string[] = [
 		"ec2:RejectVpcEndpointConnections",
 	];
 	/** IAM actions required for the RejectVpcPeeringConnection API call. */
-	static readonly REJECT_VPC_PEERING_CONNECTION: string[] = [
+	static readonly RejectVpcPeeringConnection: string[] = [
 		"ec2:RejectVpcPeeringConnection",
 	];
 	/** IAM actions required for the ReleaseAddress API call. */
-	static readonly RELEASE_ADDRESS: string[] = ["ec2:ReleaseAddress"];
+	static readonly ReleaseAddress: string[] = ["ec2:ReleaseAddress"];
 	/** IAM actions required for the ReleaseHosts API call. */
-	static readonly RELEASE_HOSTS: string[] = ["ec2:ReleaseHosts"];
+	static readonly ReleaseHosts: string[] = ["ec2:ReleaseHosts"];
 	/** IAM actions required for the ReleaseIpamPoolAllocation API call. */
-	static readonly RELEASE_IPAM_POOL_ALLOCATION: string[] = [
+	static readonly ReleaseIpamPoolAllocation: string[] = [
 		"ec2:ReleaseIpamPoolAllocation",
 	];
 	/** IAM actions required for the ReplaceIamInstanceProfileAssociation API call. */
-	static readonly REPLACE_IAM_INSTANCE_PROFILE_ASSOCIATION: string[] = [
+	static readonly ReplaceIamInstanceProfileAssociation: string[] = [
 		"iam:PassRole",
 		"ec2:ReplaceIamInstanceProfileAssociation",
 	];
 	/** IAM actions required for the ReplaceImageCriteriaInAllowedImagesSettings API call. */
-	static readonly REPLACE_IMAGE_CRITERIA_IN_ALLOWED_IMAGES_SETTINGS: string[] =
-		["ec2:ReplaceImageCriteriaInAllowedImagesSettings"];
+	static readonly ReplaceImageCriteriaInAllowedImagesSettings: string[] = [
+		"ec2:ReplaceImageCriteriaInAllowedImagesSettings",
+	];
 	/** IAM actions required for the ReplaceNetworkAclAssociation API call. */
-	static readonly REPLACE_NETWORK_ACL_ASSOCIATION: string[] = [
+	static readonly ReplaceNetworkAclAssociation: string[] = [
 		"ec2:ReplaceNetworkAclAssociation",
 	];
 	/** IAM actions required for the ReplaceNetworkAclEntry API call. */
-	static readonly REPLACE_NETWORK_ACL_ENTRY: string[] = [
+	static readonly ReplaceNetworkAclEntry: string[] = [
 		"ec2:ReplaceNetworkAclEntry",
 	];
 	/** IAM actions required for the ReplaceRoute API call. */
-	static readonly REPLACE_ROUTE: string[] = ["ec2:ReplaceRoute"];
+	static readonly ReplaceRoute: string[] = ["ec2:ReplaceRoute"];
 	/** IAM actions required for the ReplaceRouteTableAssociation API call. */
-	static readonly REPLACE_ROUTE_TABLE_ASSOCIATION: string[] = [
+	static readonly ReplaceRouteTableAssociation: string[] = [
 		"ec2:ReplaceRouteTableAssociation",
 	];
 	/** IAM actions required for the ReplaceTransitGatewayRoute API call. */
-	static readonly REPLACE_TRANSIT_GATEWAY_ROUTE: string[] = [
+	static readonly ReplaceTransitGatewayRoute: string[] = [
 		"ec2:ReplaceTransitGatewayRoute",
 	];
 	/** IAM actions required for the ReplaceVpnTunnel API call. */
-	static readonly REPLACE_VPN_TUNNEL: string[] = ["ec2:ReplaceVpnTunnel"];
+	static readonly ReplaceVpnTunnel: string[] = ["ec2:ReplaceVpnTunnel"];
 	/** IAM actions required for the ReportInstanceStatus API call. */
-	static readonly REPORT_INSTANCE_STATUS: string[] = [
-		"ec2:ReportInstanceStatus",
-	];
+	static readonly ReportInstanceStatus: string[] = ["ec2:ReportInstanceStatus"];
 	/** IAM actions required for the RequestSpotFleet API call. */
-	static readonly REQUEST_SPOT_FLEET: string[] = [
+	static readonly RequestSpotFleet: string[] = [
 		"ec2:CreateTags",
 		"iam:PassRole",
 		"ec2:RequestSpotFleet",
 	];
 	/** IAM actions required for the RequestSpotInstances API call. */
-	static readonly REQUEST_SPOT_INSTANCES: string[] = [
+	static readonly RequestSpotInstances: string[] = [
 		"ec2:CreateTags",
 		"iam:PassRole",
 		"ec2:RequestSpotInstances",
 	];
 	/** IAM actions required for the ResetAddressAttribute API call. */
-	static readonly RESET_ADDRESS_ATTRIBUTE: string[] = [
+	static readonly ResetAddressAttribute: string[] = [
 		"ec2:ResetAddressAttribute",
 	];
 	/** IAM actions required for the ResetEbsDefaultKmsKeyId API call. */
-	static readonly RESET_EBS_DEFAULT_KMS_KEY_ID: string[] = [
+	static readonly ResetEbsDefaultKmsKeyId: string[] = [
 		"ec2:ResetEbsDefaultKmsKeyId",
 	];
 	/** IAM actions required for the ResetFpgaImageAttribute API call. */
-	static readonly RESET_FPGA_IMAGE_ATTRIBUTE: string[] = [
+	static readonly ResetFpgaImageAttribute: string[] = [
 		"ec2:ResetFpgaImageAttribute",
 	];
 	/** IAM actions required for the ResetImageAttribute API call. */
-	static readonly RESET_IMAGE_ATTRIBUTE: string[] = ["ec2:ResetImageAttribute"];
+	static readonly ResetImageAttribute: string[] = ["ec2:ResetImageAttribute"];
 	/** IAM actions required for the ResetInstanceAttribute API call. */
-	static readonly RESET_INSTANCE_ATTRIBUTE: string[] = [
+	static readonly ResetInstanceAttribute: string[] = [
 		"ec2:ResetInstanceAttribute",
 	];
 	/** IAM actions required for the ResetNetworkInterfaceAttribute API call. */
-	static readonly RESET_NETWORK_INTERFACE_ATTRIBUTE: string[] = [
+	static readonly ResetNetworkInterfaceAttribute: string[] = [
 		"ec2:ResetNetworkInterfaceAttribute",
 	];
 	/** IAM actions required for the ResetSnapshotAttribute API call. */
-	static readonly RESET_SNAPSHOT_ATTRIBUTE: string[] = [
+	static readonly ResetSnapshotAttribute: string[] = [
 		"ec2:ResetSnapshotAttribute",
 	];
 	/** IAM actions required for the RestoreAddressToClassic API call. */
-	static readonly RESTORE_ADDRESS_TO_CLASSIC: string[] = [];
+	static readonly RestoreAddressToClassic: string[] = [];
 	/** IAM actions required for the RestoreImageFromRecycleBin API call. */
-	static readonly RESTORE_IMAGE_FROM_RECYCLE_BIN: string[] = [
+	static readonly RestoreImageFromRecycleBin: string[] = [
 		"ec2:RestoreImageFromRecycleBin",
 	];
 	/** IAM actions required for the RestoreManagedPrefixListVersion API call. */
-	static readonly RESTORE_MANAGED_PREFIX_LIST_VERSION: string[] = [
+	static readonly RestoreManagedPrefixListVersion: string[] = [
 		"ec2:RestoreManagedPrefixListVersion",
 	];
 	/** IAM actions required for the RestoreSnapshotFromRecycleBin API call. */
-	static readonly RESTORE_SNAPSHOT_FROM_RECYCLE_BIN: string[] = [
+	static readonly RestoreSnapshotFromRecycleBin: string[] = [
 		"ec2:RestoreSnapshotFromRecycleBin",
 	];
 	/** IAM actions required for the RestoreSnapshotTier API call. */
-	static readonly RESTORE_SNAPSHOT_TIER: string[] = ["ec2:RestoreSnapshotTier"];
+	static readonly RestoreSnapshotTier: string[] = ["ec2:RestoreSnapshotTier"];
 	/** IAM actions required for the RestoreVolumeFromRecycleBin API call. */
-	static readonly RESTORE_VOLUME_FROM_RECYCLE_BIN: string[] = [
+	static readonly RestoreVolumeFromRecycleBin: string[] = [
 		"ec2:RestoreVolumeFromRecycleBin",
 	];
 	/** IAM actions required for the RevokeClientVpnIngress API call. */
-	static readonly REVOKE_CLIENT_VPN_INGRESS: string[] = [
+	static readonly RevokeClientVpnIngress: string[] = [
 		"ec2:RevokeClientVpnIngress",
 	];
 	/** IAM actions required for the RevokeSecurityGroupEgress API call. */
-	static readonly REVOKE_SECURITY_GROUP_EGRESS: string[] = [
+	static readonly RevokeSecurityGroupEgress: string[] = [
 		"ec2:RevokeSecurityGroupEgress",
 	];
 	/** IAM actions required for the RevokeSecurityGroupIngress API call. */
-	static readonly REVOKE_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly RevokeSecurityGroupIngress: string[] = [
 		"ec2:RevokeSecurityGroupIngress",
 	];
 	/** IAM actions required for the RunInstances API call. */
-	static readonly RUN_INSTANCES: string[] = [
+	static readonly RunInstances: string[] = [
 		"ec2:CreateTags",
 		"iam:PassRole",
 		"ec2:RunInstances",
 	];
 	/** IAM actions required for the RunScheduledInstances API call. */
-	static readonly RUN_SCHEDULED_INSTANCES: string[] = [
+	static readonly RunScheduledInstances: string[] = [
 		"ec2:RunScheduledInstances",
 	];
 	/** IAM actions required for the SearchLocalGatewayRoutes API call. */
-	static readonly SEARCH_LOCAL_GATEWAY_ROUTES: string[] = [
+	static readonly SearchLocalGatewayRoutes: string[] = [
 		"ec2:SearchLocalGatewayRoutes",
 	];
 	/** IAM actions required for the SearchTransitGatewayMulticastGroups API call. */
-	static readonly SEARCH_TRANSIT_GATEWAY_MULTICAST_GROUPS: string[] = [
+	static readonly SearchTransitGatewayMulticastGroups: string[] = [
 		"ec2:SearchTransitGatewayMulticastGroups",
 	];
 	/** IAM actions required for the SearchTransitGatewayRoutes API call. */
-	static readonly SEARCH_TRANSIT_GATEWAY_ROUTES: string[] = [
+	static readonly SearchTransitGatewayRoutes: string[] = [
 		"ec2:SearchTransitGatewayRoutes",
 	];
 	/** IAM actions required for the SendDiagnosticInterrupt API call. */
-	static readonly SEND_DIAGNOSTIC_INTERRUPT: string[] = [
+	static readonly SendDiagnosticInterrupt: string[] = [
 		"ec2:SendDiagnosticInterrupt",
 	];
 	/** IAM actions required for the StartDeclarativePoliciesReport API call. */
-	static readonly START_DECLARATIVE_POLICIES_REPORT: string[] = [
+	static readonly StartDeclarativePoliciesReport: string[] = [
 		"ec2:CreateTags",
 		"ec2:StartDeclarativePoliciesReport",
 	];
 	/** IAM actions required for the StartInstances API call. */
-	static readonly START_INSTANCES: string[] = ["ec2:StartInstances"];
+	static readonly StartInstances: string[] = ["ec2:StartInstances"];
 	/** IAM actions required for the StartNetworkInsightsAccessScopeAnalysis API call. */
-	static readonly START_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS: string[] = [
+	static readonly StartNetworkInsightsAccessScopeAnalysis: string[] = [
 		"ec2:CreateTags",
 		"ec2:StartNetworkInsightsAccessScopeAnalysis",
 	];
 	/** IAM actions required for the StartNetworkInsightsAnalysis API call. */
-	static readonly START_NETWORK_INSIGHTS_ANALYSIS: string[] = [
+	static readonly StartNetworkInsightsAnalysis: string[] = [
 		"ec2:CreateTags",
 		"ec2:StartNetworkInsightsAnalysis",
 	];
 	/** IAM actions required for the StartVpcEndpointServicePrivateDnsVerification API call. */
-	static readonly START_VPC_ENDPOINT_SERVICE_PRIVATE_DNS_VERIFICATION: string[] =
-		["ec2:StartVpcEndpointServicePrivateDnsVerification"];
+	static readonly StartVpcEndpointServicePrivateDnsVerification: string[] = [
+		"ec2:StartVpcEndpointServicePrivateDnsVerification",
+	];
 	/** IAM actions required for the StopInstances API call. */
-	static readonly STOP_INSTANCES: string[] = ["ec2:StopInstances"];
+	static readonly StopInstances: string[] = ["ec2:StopInstances"];
 	/** IAM actions required for the TerminateClientVpnConnections API call. */
-	static readonly TERMINATE_CLIENT_VPN_CONNECTIONS: string[] = [
+	static readonly TerminateClientVpnConnections: string[] = [
 		"ec2:TerminateClientVpnConnections",
 	];
 	/** IAM actions required for the TerminateInstances API call. */
-	static readonly TERMINATE_INSTANCES: string[] = ["ec2:TerminateInstances"];
+	static readonly TerminateInstances: string[] = ["ec2:TerminateInstances"];
 	/** IAM actions required for the UnassignIpv6Addresses API call. */
-	static readonly UNASSIGN_IPV6_ADDRESSES: string[] = [
+	static readonly UnassignIpv6Addresses: string[] = [
 		"ec2:UnassignIpv6Addresses",
 	];
 	/** IAM actions required for the UnassignPrivateIpAddresses API call. */
-	static readonly UNASSIGN_PRIVATE_IP_ADDRESSES: string[] = [
+	static readonly UnassignPrivateIpAddresses: string[] = [
 		"ec2:UnassignPrivateIpAddresses",
 	];
 	/** IAM actions required for the UnassignPrivateNatGatewayAddress API call. */
-	static readonly UNASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS: string[] = [
+	static readonly UnassignPrivateNatGatewayAddress: string[] = [
 		"ec2:UnassignPrivateNatGatewayAddress",
 	];
 	/** IAM actions required for the UnlockSnapshot API call. */
-	static readonly UNLOCK_SNAPSHOT: string[] = ["ec2:UnlockSnapshot"];
+	static readonly UnlockSnapshot: string[] = ["ec2:UnlockSnapshot"];
 	/** IAM actions required for the UnmonitorInstances API call. */
-	static readonly UNMONITOR_INSTANCES: string[] = ["ec2:UnmonitorInstances"];
+	static readonly UnmonitorInstances: string[] = ["ec2:UnmonitorInstances"];
 	/** IAM actions required for the UpdateCapacityManagerMonitoredTagKeys API call. */
-	static readonly UPDATE_CAPACITY_MANAGER_MONITORED_TAG_KEYS: string[] = [
+	static readonly UpdateCapacityManagerMonitoredTagKeys: string[] = [
 		"ec2:UpdateCapacityManagerMonitoredTagKeys",
 	];
 	/** IAM actions required for the UpdateCapacityManagerOrganizationsAccess API call. */
-	static readonly UPDATE_CAPACITY_MANAGER_ORGANIZATIONS_ACCESS: string[] = [
+	static readonly UpdateCapacityManagerOrganizationsAccess: string[] = [
 		"ec2:UpdateCapacityManagerOrganizationsAccess",
 	];
 	/** IAM actions required for the UpdateInterruptibleCapacityReservationAllocation API call. */
-	static readonly UPDATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION: string[] =
-		["ec2:UpdateInterruptibleCapacityReservationAllocation"];
+	static readonly UpdateInterruptibleCapacityReservationAllocation: string[] = [
+		"ec2:UpdateInterruptibleCapacityReservationAllocation",
+	];
 	/** IAM actions required for the UpdateSecurityGroupRuleDescriptionsEgress API call. */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_EGRESS: string[] = [
+	static readonly UpdateSecurityGroupRuleDescriptionsEgress: string[] = [
 		"ec2:UpdateSecurityGroupRuleDescriptionsEgress",
 	];
 	/** IAM actions required for the UpdateSecurityGroupRuleDescriptionsIngress API call. */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_INGRESS: string[] = [
+	static readonly UpdateSecurityGroupRuleDescriptionsIngress: string[] = [
 		"ec2:UpdateSecurityGroupRuleDescriptionsIngress",
 	];
 	/** IAM actions required for the WithdrawByoipCidr API call. */
-	static readonly WITHDRAW_BYOIP_CIDR: string[] = ["ec2:WithdrawByoipCidr"];
+	static readonly WithdrawByoipCidr: string[] = ["ec2:WithdrawByoipCidr"];
 }
 
 /**
@@ -11216,2675 +12751,2595 @@ export class EC2Operations {
  */
 export class EC2Conditions {
 	/** Condition keys applicable to the AcceptAddressTransfer action. */
-	static readonly ACCEPT_ADDRESS_TRANSFER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AcceptAddressTransferConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AcceptCapacityReservationBillingOwnership action. */
-	static readonly ACCEPT_CAPACITY_RESERVATION_BILLING_OWNERSHIP_CONDITION_KEYS: string[] =
+	static readonly AcceptCapacityReservationBillingOwnershipConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AcceptReservedInstancesExchangeQuote action. */
-	static readonly ACCEPT_RESERVED_INSTANCES_EXCHANGE_QUOTE_CONDITION_KEYS: string[] =
+	static readonly AcceptReservedInstancesExchangeQuoteConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AcceptTransitGatewayClientVpnAttachment action. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly AcceptTransitGatewayClientVpnAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AcceptTransitGatewayMulticastDomainAssociations action. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly AcceptTransitGatewayMulticastDomainAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AcceptTransitGatewayPeeringAttachment action. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_PEERING_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly AcceptTransitGatewayPeeringAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AcceptTransitGatewayVpcAttachment action. */
-	static readonly ACCEPT_TRANSIT_GATEWAY_VPC_ATTACHMENT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly AcceptTransitGatewayVpcAttachmentConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AcceptVpcEndpointConnections action. */
-	static readonly ACCEPT_VPC_ENDPOINT_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly AcceptVpcEndpointConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AcceptVpcPeeringConnection action. */
-	static readonly ACCEPT_VPC_PEERING_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly AcceptVpcPeeringConnectionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AdvertiseByoipCidr action. */
-	static readonly ADVERTISE_BYOIP_CIDR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AdvertiseByoipCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AllocateAddress action. */
-	static readonly ALLOCATE_ADDRESS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly AllocateAddressConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AllocateHosts action. */
-	static readonly ALLOCATE_HOSTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly AllocateHostsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AllocateIpamPoolCidr action. */
-	static readonly ALLOCATE_IPAM_POOL_CIDR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AllocateIpamPoolCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ApplySecurityGroupsToClientVpnTargetNetwork action. */
-	static readonly APPLY_SECURITY_GROUPS_TO_CLIENT_VPN_TARGET_NETWORK_CONDITION_KEYS: string[] =
+	static readonly ApplySecurityGroupsToClientVpnTargetNetworkConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AssignIpv6Addresses action. */
-	static readonly ASSIGN_IPV6_ADDRESSES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AssignIpv6AddressesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AssignPrivateIpAddresses action. */
-	static readonly ASSIGN_PRIVATE_IP_ADDRESSES_CONDITION_KEYS: string[] = [
+	static readonly AssignPrivateIpAddressesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssignPrivateNatGatewayAddress action. */
-	static readonly ASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the AssociateAddress action. */
-	static readonly ASSOCIATE_ADDRESS_CONDITION_KEYS: string[] = ["ec2:Region"];
-	/** Condition keys applicable to the AssociateCapacityReservationBillingOwner action. */
-	static readonly ASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the AssociateClientVpnTargetNetwork action. */
-	static readonly ASSOCIATE_CLIENT_VPN_TARGET_NETWORK_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the AssociateDhcpOptions action. */
-	static readonly ASSOCIATE_DHCP_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly AssignPrivateNatGatewayAddressConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the AssociateEnclaveCertificateIamRole action. */
-	static readonly ASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE_CONDITION_KEYS: string[] =
+	/** Condition keys applicable to the AssociateAddress action. */
+	static readonly AssociateAddressConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the AssociateCapacityReservationBillingOwner action. */
+	static readonly AssociateCapacityReservationBillingOwnerConditionKeys: string[] =
 		["ec2:Region"];
+	/** Condition keys applicable to the AssociateClientVpnTargetNetwork action. */
+	static readonly AssociateClientVpnTargetNetworkConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the AssociateDhcpOptions action. */
+	static readonly AssociateDhcpOptionsConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the AssociateEnclaveCertificateIamRole action. */
+	static readonly AssociateEnclaveCertificateIamRoleConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AssociateIamInstanceProfile action. */
-	static readonly ASSOCIATE_IAM_INSTANCE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly AssociateIamInstanceProfileConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateInstanceEventWindow action. */
-	static readonly ASSOCIATE_INSTANCE_EVENT_WINDOW_CONDITION_KEYS: string[] = [
+	static readonly AssociateInstanceEventWindowConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateIpamByoasn action. */
-	static readonly ASSOCIATE_IPAM_BYOASN_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AssociateIpamByoasnConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AssociateIpamResourceDiscovery action. */
-	static readonly ASSOCIATE_IPAM_RESOURCE_DISCOVERY_CONDITION_KEYS: string[] = [
+	static readonly AssociateIpamResourceDiscoveryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateNatGatewayAddress action. */
-	static readonly ASSOCIATE_NAT_GATEWAY_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly AssociateNatGatewayAddressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateRouteServer action. */
-	static readonly ASSOCIATE_ROUTE_SERVER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AssociateRouteServerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AssociateRouteTable action. */
-	static readonly ASSOCIATE_ROUTE_TABLE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AssociateRouteTableConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AssociateSecurityGroupVpc action. */
-	static readonly ASSOCIATE_SECURITY_GROUP_VPC_CONDITION_KEYS: string[] = [
+	static readonly AssociateSecurityGroupVpcConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateSubnetCidrBlock action. */
-	static readonly ASSOCIATE_SUBNET_CIDR_BLOCK_CONDITION_KEYS: string[] = [
+	static readonly AssociateSubnetCidrBlockConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateTransitGatewayMulticastDomain action. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN_CONDITION_KEYS: string[] =
+	static readonly AssociateTransitGatewayMulticastDomainConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AssociateTransitGatewayPolicyTable action. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly AssociateTransitGatewayPolicyTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AssociateTransitGatewayRouteTable action. */
-	static readonly ASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly AssociateTransitGatewayRouteTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AssociateTrunkInterface action. */
-	static readonly ASSOCIATE_TRUNK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly AssociateTrunkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AssociateVerifiedAccessInstanceWebAcl action. */
-	static readonly ASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL_CONDITION_KEYS: string[] =
+	static readonly AssociateVerifiedAccessInstanceWebAclConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the AssociateVpcCidrBlock action. */
-	static readonly ASSOCIATE_VPC_CIDR_BLOCK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AssociateVpcCidrBlockConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AttachApplianceToNatGateway action. */
-	static readonly ATTACH_APPLIANCE_TO_NAT_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly AttachApplianceToNatGatewayConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AttachClassicLinkVpc action. */
-	static readonly ATTACH_CLASSIC_LINK_VPC_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AttachClassicLinkVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AttachImageWatermark action. */
-	static readonly ATTACH_IMAGE_WATERMARK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AttachImageWatermarkConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AttachInternetGateway action. */
-	static readonly ATTACH_INTERNET_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly AttachInternetGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AttachNetworkInterface action. */
-	static readonly ATTACH_NETWORK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly AttachNetworkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AttachResourcesToPlacementGroup action. */
-	static readonly ATTACH_RESOURCES_TO_PLACEMENT_GROUP_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly AttachResourcesToPlacementGroupConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AttachVerifiedAccessTrustProvider action. */
-	static readonly ATTACH_VERIFIED_ACCESS_TRUST_PROVIDER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly AttachVerifiedAccessTrustProviderConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the AttachVolume action. */
-	static readonly ATTACH_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly AttachVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AttachVpnGateway action. */
-	static readonly ATTACH_VPN_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly AttachVpnGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the AuthorizeClientVpnIngress action. */
-	static readonly AUTHORIZE_CLIENT_VPN_INGRESS_CONDITION_KEYS: string[] = [
+	static readonly AuthorizeClientVpnIngressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AuthorizeSecurityGroupEgress action. */
-	static readonly AUTHORIZE_SECURITY_GROUP_EGRESS_CONDITION_KEYS: string[] = [
+	static readonly AuthorizeSecurityGroupEgressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the AuthorizeSecurityGroupIngress action. */
-	static readonly AUTHORIZE_SECURITY_GROUP_INGRESS_CONDITION_KEYS: string[] = [
+	static readonly AuthorizeSecurityGroupIngressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the BundleInstance action. */
-	static readonly BUNDLE_INSTANCE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly BundleInstanceConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelBundleTask action. */
-	static readonly CANCEL_BUNDLE_TASK_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CancelBundleTaskConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelCapacityReservation action. */
-	static readonly CANCEL_CAPACITY_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly CancelCapacityReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CancelCapacityReservationFleets action. */
-	static readonly CANCEL_CAPACITY_RESERVATION_FLEETS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the CancelConversionTask action. */
-	static readonly CANCEL_CONVERSION_TASK_CONDITION_KEYS: string[] = [
+	static readonly CancelCapacityReservationFleetsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the CancelConversionTask action. */
+	static readonly CancelConversionTaskConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelDeclarativePoliciesReport action. */
-	static readonly CANCEL_DECLARATIVE_POLICIES_REPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CancelDeclarativePoliciesReportConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CancelExportTask action. */
-	static readonly CANCEL_EXPORT_TASK_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CancelExportTaskConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelImageLaunchPermission action. */
-	static readonly CANCEL_IMAGE_LAUNCH_PERMISSION_CONDITION_KEYS: string[] = [
+	static readonly CancelImageLaunchPermissionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CancelImportTask action. */
-	static readonly CANCEL_IMPORT_TASK_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CancelImportTaskConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CancelReservedInstancesListing action. */
-	static readonly CANCEL_RESERVED_INSTANCES_LISTING_CONDITION_KEYS: string[] = [
+	static readonly CancelReservedInstancesListingConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CancelSpotFleetRequests action. */
-	static readonly CANCEL_SPOT_FLEET_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly CancelSpotFleetRequestsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CancelSpotInstanceRequests action. */
-	static readonly CANCEL_SPOT_INSTANCE_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly CancelSpotInstanceRequestsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ConfirmProductInstance action. */
-	static readonly CONFIRM_PRODUCT_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly ConfirmProductInstanceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CopyFpgaImage action. */
-	static readonly COPY_FPGA_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CopyFpgaImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CopyImage action. */
-	static readonly COPY_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CopyImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CopySnapshot action. */
-	static readonly COPY_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CopySnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CopyVolumes action. */
-	static readonly COPY_VOLUMES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CopyVolumesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateCapacityManagerDataExport action. */
-	static readonly CREATE_CAPACITY_MANAGER_DATA_EXPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateCapacityManagerDataExportConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateCapacityReservation action. */
-	static readonly CREATE_CAPACITY_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly CreateCapacityReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateCapacityReservationBySplitting action. */
-	static readonly CREATE_CAPACITY_RESERVATION_BY_SPLITTING_CONDITION_KEYS: string[] =
+	static readonly CreateCapacityReservationBySplittingConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateCapacityReservationCancellationQuote action. */
-	static readonly CREATE_CAPACITY_RESERVATION_CANCELLATION_QUOTE_CONDITION_KEYS: string[] =
+	static readonly CreateCapacityReservationCancellationQuoteConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateCapacityReservationFleet action. */
-	static readonly CREATE_CAPACITY_RESERVATION_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateCapacityReservationFleetConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateCarrierGateway action. */
-	static readonly CREATE_CARRIER_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateCarrierGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateClientVpnEndpoint action. */
-	static readonly CREATE_CLIENT_VPN_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateClientVpnEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateClientVpnRoute action. */
-	static readonly CREATE_CLIENT_VPN_ROUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateClientVpnRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateCoipCidr action. */
-	static readonly CREATE_COIP_CIDR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateCoipCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateCoipPool action. */
-	static readonly CREATE_COIP_POOL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateCoipPoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateCoipPoolPermission action. */
-	static readonly CREATE_COIP_POOL_PERMISSION_CONDITION_KEYS: string[] = [
+	static readonly CreateCoipPoolPermissionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateCustomerGateway action. */
-	static readonly CREATE_CUSTOMER_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateCustomerGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateDefaultSubnet action. */
-	static readonly CREATE_DEFAULT_SUBNET_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateDefaultSubnetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateDefaultVpc action. */
-	static readonly CREATE_DEFAULT_VPC_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateDefaultVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateDelegateMacVolumeOwnershipTask action. */
-	static readonly CREATE_DELEGATE_MAC_VOLUME_OWNERSHIP_TASK_CONDITION_KEYS: string[] =
+	static readonly CreateDelegateMacVolumeOwnershipTaskConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateDhcpOptions action. */
-	static readonly CREATE_DHCP_OPTIONS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateDhcpOptionsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateEgressOnlyInternetGateway action. */
-	static readonly CREATE_EGRESS_ONLY_INTERNET_GATEWAY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateEgressOnlyInternetGatewayConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateFleet action. */
-	static readonly CREATE_FLEET_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateFleetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateFlowLogs action. */
-	static readonly CREATE_FLOW_LOGS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateFlowLogsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateFpgaImage action. */
-	static readonly CREATE_FPGA_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateFpgaImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateImage action. */
-	static readonly CREATE_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateImageUsageReport action. */
-	static readonly CREATE_IMAGE_USAGE_REPORT_CONDITION_KEYS: string[] = [
+	static readonly CreateImageUsageReportConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateInstanceConnectEndpoint action. */
-	static readonly CREATE_INSTANCE_CONNECT_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateInstanceConnectEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateInstanceEventWindow action. */
-	static readonly CREATE_INSTANCE_EVENT_WINDOW_CONDITION_KEYS: string[] = [
+	static readonly CreateInstanceEventWindowConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateInstanceExportTask action. */
-	static readonly CREATE_INSTANCE_EXPORT_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateInstanceExportTaskConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateInternetGateway action. */
-	static readonly CREATE_INTERNET_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateInternetGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateInterruptibleCapacityReservationAllocation action. */
-	static readonly CREATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly CreateInterruptibleCapacityReservationAllocationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateIpam action. */
-	static readonly CREATE_IPAM_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateIpamConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamExternalResourceVerificationToken action. */
-	static readonly CREATE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN_CONDITION_KEYS: string[] =
+	static readonly CreateIpamExternalResourceVerificationTokenConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamPolicy action. */
-	static readonly CREATE_IPAM_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamPool action. */
-	static readonly CREATE_IPAM_POOL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateIpamPoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateIpamPrefixListResolver action. */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER_CONDITION_KEYS: string[] = [
+	static readonly CreateIpamPrefixListResolverConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateIpamPrefixListResolverTarget action. */
-	static readonly CREATE_IPAM_PREFIX_LIST_RESOLVER_TARGET_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateIpamPrefixListResolverTargetConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateIpamResourceDiscovery action. */
-	static readonly CREATE_IPAM_RESOURCE_DISCOVERY_CONDITION_KEYS: string[] = [
+	static readonly CreateIpamResourceDiscoveryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateIpamScope action. */
-	static readonly CREATE_IPAM_SCOPE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateIpamScopeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateKeyPair action. */
-	static readonly CREATE_KEY_PAIR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateKeyPairConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateLaunchTemplate action. */
-	static readonly CREATE_LAUNCH_TEMPLATE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateLaunchTemplateConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateLaunchTemplateVersion action. */
-	static readonly CREATE_LAUNCH_TEMPLATE_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateLaunchTemplateVersionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateLocalGatewayRoute action. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly CreateLocalGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateLocalGatewayRouteTable action. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly CreateLocalGatewayRouteTableConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateLocalGatewayRouteTablePermission action. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION_CONDITION_KEYS: string[] =
+	static readonly CreateLocalGatewayRouteTablePermissionConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation action. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateLocalGatewayRouteTableVpcAssociation action. */
-	static readonly CREATE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly CreateLocalGatewayRouteTableVpcAssociationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateLocalGatewayVirtualInterface action. */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateLocalGatewayVirtualInterfaceConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateLocalGatewayVirtualInterfaceGroup action. */
-	static readonly CREATE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP_CONDITION_KEYS: string[] =
+	static readonly CreateLocalGatewayVirtualInterfaceGroupConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateMacSystemIntegrityProtectionModificationTask action. */
-	static readonly CREATE_MAC_SYSTEM_INTEGRITY_PROTECTION_MODIFICATION_TASK_CONDITION_KEYS: string[] =
+	static readonly CreateMacSystemIntegrityProtectionModificationTaskConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateManagedPrefixList action. */
-	static readonly CREATE_MANAGED_PREFIX_LIST_CONDITION_KEYS: string[] = [
+	static readonly CreateManagedPrefixListConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateNatGateway action. */
-	static readonly CREATE_NAT_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateNatGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateNetworkAcl action. */
-	static readonly CREATE_NETWORK_ACL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateNetworkAclConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateNetworkAclEntry action. */
-	static readonly CREATE_NETWORK_ACL_ENTRY_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkAclEntryConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the CreateNetworkInsightsAccessScope action. */
+	static readonly CreateNetworkInsightsAccessScopeConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the CreateNetworkInsightsAccessScope action. */
-	static readonly CREATE_NETWORK_INSIGHTS_ACCESS_SCOPE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the CreateNetworkInsightsPath action. */
-	static readonly CREATE_NETWORK_INSIGHTS_PATH_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkInsightsPathConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateNetworkInterface action. */
-	static readonly CREATE_NETWORK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateNetworkInterfacePermission action. */
-	static readonly CREATE_NETWORK_INTERFACE_PERMISSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateNetworkInterfacePermissionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateOdbNetworkPeering action. */
-	static readonly CREATE_ODB_NETWORK_PEERING_CONDITION_KEYS: string[] = [
+	static readonly CreateOdbNetworkPeeringConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreatePlacementGroup action. */
-	static readonly CREATE_PLACEMENT_GROUP_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreatePlacementGroupConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreatePublicIpv4Pool action. */
-	static readonly CREATE_PUBLIC_IPV4_POOL_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreatePublicIpv4PoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateReplaceRootVolumeTask action. */
-	static readonly CREATE_REPLACE_ROOT_VOLUME_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateReplaceRootVolumeTaskConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateReservedInstancesListing action. */
-	static readonly CREATE_RESERVED_INSTANCES_LISTING_CONDITION_KEYS: string[] = [
+	static readonly CreateReservedInstancesListingConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateRestoreImageTask action. */
-	static readonly CREATE_RESTORE_IMAGE_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateRestoreImageTaskConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateRoute action. */
-	static readonly CREATE_ROUTE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateRouteServer action. */
-	static readonly CREATE_ROUTE_SERVER_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateRouteServerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateRouteServerEndpoint action. */
-	static readonly CREATE_ROUTE_SERVER_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateRouteServerEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateRouteServerPeer action. */
-	static readonly CREATE_ROUTE_SERVER_PEER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateRouteServerPeerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateRouteTable action. */
-	static readonly CREATE_ROUTE_TABLE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateRouteTableConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSecondaryNetwork action. */
-	static readonly CREATE_SECONDARY_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateSecondaryNetworkConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateSecondarySubnet action. */
-	static readonly CREATE_SECONDARY_SUBNET_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateSecondarySubnetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSecurityGroup action. */
-	static readonly CREATE_SECURITY_GROUP_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateSecurityGroupConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSnapshot action. */
-	static readonly CREATE_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateSnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSnapshots action. */
-	static readonly CREATE_SNAPSHOTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateSnapshotsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSpotDatafeedSubscription action. */
-	static readonly CREATE_SPOT_DATAFEED_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateSpotDatafeedSubscriptionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateStoreImageTask action. */
-	static readonly CREATE_STORE_IMAGE_TASK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateStoreImageTaskConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSubnet action. */
-	static readonly CREATE_SUBNET_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateSubnetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateSubnetCidrReservation action. */
-	static readonly CREATE_SUBNET_CIDR_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly CreateSubnetCidrReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTags action. */
-	static readonly CREATE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly CreateTagsConditionKeys: string[] = [
 		"ec2:CreateAction",
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTrafficMirrorFilter action. */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateTrafficMirrorFilterConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTrafficMirrorFilterRule action. */
-	static readonly CREATE_TRAFFIC_MIRROR_FILTER_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateTrafficMirrorFilterRuleConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTrafficMirrorSession action. */
-	static readonly CREATE_TRAFFIC_MIRROR_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateTrafficMirrorSessionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTrafficMirrorTarget action. */
-	static readonly CREATE_TRAFFIC_MIRROR_TARGET_CONDITION_KEYS: string[] = [
+	static readonly CreateTrafficMirrorTargetConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTransitGateway action. */
-	static readonly CREATE_TRANSIT_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateTransitGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayConnect action. */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT_CONDITION_KEYS: string[] = [
+	static readonly CreateTransitGatewayConnectConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTransitGatewayConnectPeer action. */
-	static readonly CREATE_TRANSIT_GATEWAY_CONNECT_PEER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayConnectPeerConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateTransitGatewayMeteringPolicy action. */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayMeteringPolicyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateTransitGatewayMeteringPolicyEntry action. */
-	static readonly CREATE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY_CONDITION_KEYS: string[] =
+	static readonly CreateTransitGatewayMeteringPolicyEntryConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayMulticastDomain action. */
-	static readonly CREATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayMulticastDomainConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateTransitGatewayPeeringAttachment action. */
-	static readonly CREATE_TRANSIT_GATEWAY_PEERING_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly CreateTransitGatewayPeeringAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayPolicyTable action. */
-	static readonly CREATE_TRANSIT_GATEWAY_POLICY_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayPolicyTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateTransitGatewayPrefixListReference action. */
-	static readonly CREATE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE_CONDITION_KEYS: string[] =
+	static readonly CreateTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayRoute action. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly CreateTransitGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateTransitGatewayRouteTable action. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayRouteTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateTransitGatewayRouteTableAnnouncement action. */
-	static readonly CREATE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT_CONDITION_KEYS: string[] =
+	static readonly CreateTransitGatewayRouteTableAnnouncementConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateTransitGatewayVpcAttachment action. */
-	static readonly CREATE_TRANSIT_GATEWAY_VPC_ATTACHMENT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateTransitGatewayVpcAttachmentConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateVerifiedAccessEndpoint action. */
-	static readonly CREATE_VERIFIED_ACCESS_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly CreateVerifiedAccessEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVerifiedAccessGroup action. */
-	static readonly CREATE_VERIFIED_ACCESS_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateVerifiedAccessGroupConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVerifiedAccessInstance action. */
-	static readonly CREATE_VERIFIED_ACCESS_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateVerifiedAccessInstanceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVerifiedAccessTrustProvider action. */
-	static readonly CREATE_VERIFIED_ACCESS_TRUST_PROVIDER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateVerifiedAccessTrustProviderConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateVolume action. */
-	static readonly CREATE_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateVpc action. */
-	static readonly CREATE_VPC_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateVpcBlockPublicAccessExclusion action. */
-	static readonly CREATE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly CreateVpcBlockPublicAccessExclusionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the CreateVpcEncryptionControl action. */
-	static readonly CREATE_VPC_ENCRYPTION_CONTROL_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcEncryptionControlConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVpcEndpoint action. */
-	static readonly CREATE_VPC_ENDPOINT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateVpcEndpointConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateVpcEndpointConnectionNotification action. */
-	static readonly CREATE_VPC_ENDPOINT_CONNECTION_NOTIFICATION_CONDITION_KEYS: string[] =
+	static readonly CreateVpcEndpointConnectionNotificationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateVpcEndpointServiceConfiguration action. */
-	static readonly CREATE_VPC_ENDPOINT_SERVICE_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly CreateVpcEndpointServiceConfigurationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the CreateVpcPeeringConnection action. */
-	static readonly CREATE_VPC_PEERING_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcPeeringConnectionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVpnConcentrator action. */
-	static readonly CREATE_VPN_CONCENTRATOR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateVpnConcentratorConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateVpnConnection action. */
-	static readonly CREATE_VPN_CONNECTION_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly CreateVpnConnectionConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the CreateVpnConnectionRoute action. */
-	static readonly CREATE_VPN_CONNECTION_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly CreateVpnConnectionRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the CreateVpnGateway action. */
-	static readonly CREATE_VPN_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly CreateVpnGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteCapacityManagerDataExport action. */
-	static readonly DELETE_CAPACITY_MANAGER_DATA_EXPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DeleteCarrierGateway action. */
-	static readonly DELETE_CARRIER_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly DeleteCapacityManagerDataExportConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DeleteCarrierGateway action. */
+	static readonly DeleteCarrierGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteClientVpnEndpoint action. */
-	static readonly DELETE_CLIENT_VPN_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteClientVpnEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteClientVpnRoute action. */
-	static readonly DELETE_CLIENT_VPN_ROUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteClientVpnRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteCoipCidr action. */
-	static readonly DELETE_COIP_CIDR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteCoipCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteCoipPool action. */
-	static readonly DELETE_COIP_POOL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteCoipPoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteCoipPoolPermission action. */
-	static readonly DELETE_COIP_POOL_PERMISSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteCoipPoolPermissionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteCustomerGateway action. */
-	static readonly DELETE_CUSTOMER_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly DeleteCustomerGatewayConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DeleteDhcpOptions action. */
+	static readonly DeleteDhcpOptionsConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DeleteEgressOnlyInternetGateway action. */
+	static readonly DeleteEgressOnlyInternetGatewayConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the DeleteDhcpOptions action. */
-	static readonly DELETE_DHCP_OPTIONS_CONDITION_KEYS: string[] = ["ec2:Region"];
-	/** Condition keys applicable to the DeleteEgressOnlyInternetGateway action. */
-	static readonly DELETE_EGRESS_ONLY_INTERNET_GATEWAY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the DeleteFleets action. */
-	static readonly DELETE_FLEETS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteFleetsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteFlowLogs action. */
-	static readonly DELETE_FLOW_LOGS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteFlowLogsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteFpgaImage action. */
-	static readonly DELETE_FPGA_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteFpgaImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteImageUsageReport action. */
-	static readonly DELETE_IMAGE_USAGE_REPORT_CONDITION_KEYS: string[] = [
+	static readonly DeleteImageUsageReportConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteInstanceConnectEndpoint action. */
-	static readonly DELETE_INSTANCE_CONNECT_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteInstanceConnectEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteInstanceEventWindow action. */
-	static readonly DELETE_INSTANCE_EVENT_WINDOW_CONDITION_KEYS: string[] = [
+	static readonly DeleteInstanceEventWindowConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteInternetGateway action. */
-	static readonly DELETE_INTERNET_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteInternetGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpam action. */
-	static readonly DELETE_IPAM_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteIpamConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamExternalResourceVerificationToken action. */
-	static readonly DELETE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKEN_CONDITION_KEYS: string[] =
+	static readonly DeleteIpamExternalResourceVerificationTokenConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamPolicy action. */
-	static readonly DELETE_IPAM_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamPool action. */
-	static readonly DELETE_IPAM_POOL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteIpamPoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteIpamPrefixListResolver action. */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER_CONDITION_KEYS: string[] = [
+	static readonly DeleteIpamPrefixListResolverConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteIpamPrefixListResolverTarget action. */
-	static readonly DELETE_IPAM_PREFIX_LIST_RESOLVER_TARGET_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteIpamPrefixListResolverTargetConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteIpamResourceDiscovery action. */
-	static readonly DELETE_IPAM_RESOURCE_DISCOVERY_CONDITION_KEYS: string[] = [
+	static readonly DeleteIpamResourceDiscoveryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteIpamScope action. */
-	static readonly DELETE_IPAM_SCOPE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteIpamScopeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteKeyPair action. */
-	static readonly DELETE_KEY_PAIR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteKeyPairConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteLaunchTemplate action. */
-	static readonly DELETE_LAUNCH_TEMPLATE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteLaunchTemplateConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteLaunchTemplateVersions action. */
-	static readonly DELETE_LAUNCH_TEMPLATE_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly DeleteLaunchTemplateVersionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteLocalGatewayRoute action. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly DeleteLocalGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteLocalGatewayRouteTable action. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly DeleteLocalGatewayRouteTableConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteLocalGatewayRouteTablePermission action. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSION_CONDITION_KEYS: string[] =
+	static readonly DeleteLocalGatewayRouteTablePermissionConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation action. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteLocalGatewayRouteTableVpcAssociation action. */
-	static readonly DELETE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly DeleteLocalGatewayRouteTableVpcAssociationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteLocalGatewayVirtualInterface action. */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteLocalGatewayVirtualInterfaceConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteLocalGatewayVirtualInterfaceGroup action. */
-	static readonly DELETE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUP_CONDITION_KEYS: string[] =
+	static readonly DeleteLocalGatewayVirtualInterfaceGroupConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteManagedPrefixList action. */
-	static readonly DELETE_MANAGED_PREFIX_LIST_CONDITION_KEYS: string[] = [
+	static readonly DeleteManagedPrefixListConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteNatGateway action. */
-	static readonly DELETE_NAT_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteNatGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteNetworkAcl action. */
-	static readonly DELETE_NETWORK_ACL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteNetworkAclConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteNetworkAclEntry action. */
-	static readonly DELETE_NETWORK_ACL_ENTRY_CONDITION_KEYS: string[] = [
+	static readonly DeleteNetworkAclEntryConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DeleteNetworkInsightsAccessScope action. */
+	static readonly DeleteNetworkInsightsAccessScopeConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the DeleteNetworkInsightsAccessScope action. */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the DeleteNetworkInsightsAccessScopeAnalysis action. */
-	static readonly DELETE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_CONDITION_KEYS: string[] =
+	static readonly DeleteNetworkInsightsAccessScopeAnalysisConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteNetworkInsightsAnalysis action. */
-	static readonly DELETE_NETWORK_INSIGHTS_ANALYSIS_CONDITION_KEYS: string[] = [
+	static readonly DeleteNetworkInsightsAnalysisConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteNetworkInsightsPath action. */
-	static readonly DELETE_NETWORK_INSIGHTS_PATH_CONDITION_KEYS: string[] = [
+	static readonly DeleteNetworkInsightsPathConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteNetworkInterface action. */
-	static readonly DELETE_NETWORK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteNetworkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteNetworkInterfacePermission action. */
-	static readonly DELETE_NETWORK_INTERFACE_PERMISSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteNetworkInterfacePermissionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteOdbNetworkPeering action. */
-	static readonly DELETE_ODB_NETWORK_PEERING_CONDITION_KEYS: string[] = [
+	static readonly DeleteOdbNetworkPeeringConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeletePlacementGroup action. */
-	static readonly DELETE_PLACEMENT_GROUP_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeletePlacementGroupConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeletePublicIpv4Pool action. */
-	static readonly DELETE_PUBLIC_IPV4_POOL_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeletePublicIpv4PoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteQueuedReservedInstances action. */
-	static readonly DELETE_QUEUED_RESERVED_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DeleteQueuedReservedInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
-	static readonly DELETE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteResourcePolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteRoute action. */
-	static readonly DELETE_ROUTE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteRouteServer action. */
-	static readonly DELETE_ROUTE_SERVER_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteRouteServerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteRouteServerEndpoint action. */
-	static readonly DELETE_ROUTE_SERVER_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteRouteServerEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteRouteServerPeer action. */
-	static readonly DELETE_ROUTE_SERVER_PEER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteRouteServerPeerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteRouteTable action. */
-	static readonly DELETE_ROUTE_TABLE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteRouteTableConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteSecondaryNetwork action. */
-	static readonly DELETE_SECONDARY_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly DeleteSecondaryNetworkConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteSecondarySubnet action. */
-	static readonly DELETE_SECONDARY_SUBNET_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteSecondarySubnetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteSecurityGroup action. */
-	static readonly DELETE_SECURITY_GROUP_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteSecurityGroupConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteSnapshot action. */
-	static readonly DELETE_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteSnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteSpotDatafeedSubscription action. */
-	static readonly DELETE_SPOT_DATAFEED_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteSpotDatafeedSubscriptionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteSubnet action. */
-	static readonly DELETE_SUBNET_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteSubnetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteSubnetCidrReservation action. */
-	static readonly DELETE_SUBNET_CIDR_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteSubnetCidrReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTags action. */
-	static readonly DELETE_TAGS_CONDITION_KEYS: string[] = [
+	static readonly DeleteTagsConditionKeys: string[] = [
 		"aws:TagKeys",
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTrafficMirrorFilter action. */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrafficMirrorFilterConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTrafficMirrorFilterRule action. */
-	static readonly DELETE_TRAFFIC_MIRROR_FILTER_RULE_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrafficMirrorFilterRuleConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTrafficMirrorSession action. */
-	static readonly DELETE_TRAFFIC_MIRROR_SESSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrafficMirrorSessionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTrafficMirrorTarget action. */
-	static readonly DELETE_TRAFFIC_MIRROR_TARGET_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrafficMirrorTargetConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTransitGateway action. */
-	static readonly DELETE_TRANSIT_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteTransitGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayClientVpnAttachment action. */
-	static readonly DELETE_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly DeleteTransitGatewayClientVpnAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayConnect action. */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT_CONDITION_KEYS: string[] = [
+	static readonly DeleteTransitGatewayConnectConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTransitGatewayConnectPeer action. */
-	static readonly DELETE_TRANSIT_GATEWAY_CONNECT_PEER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayConnectPeerConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteTransitGatewayMeteringPolicy action. */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayMeteringPolicyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteTransitGatewayMeteringPolicyEntry action. */
-	static readonly DELETE_TRANSIT_GATEWAY_METERING_POLICY_ENTRY_CONDITION_KEYS: string[] =
+	static readonly DeleteTransitGatewayMeteringPolicyEntryConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayMulticastDomain action. */
-	static readonly DELETE_TRANSIT_GATEWAY_MULTICAST_DOMAIN_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayMulticastDomainConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteTransitGatewayPeeringAttachment action. */
-	static readonly DELETE_TRANSIT_GATEWAY_PEERING_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly DeleteTransitGatewayPeeringAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayPolicyTable action. */
-	static readonly DELETE_TRANSIT_GATEWAY_POLICY_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayPolicyTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteTransitGatewayPrefixListReference action. */
-	static readonly DELETE_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE_CONDITION_KEYS: string[] =
+	static readonly DeleteTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayRoute action. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly DeleteTransitGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteTransitGatewayRouteTable action. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayRouteTableConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteTransitGatewayRouteTableAnnouncement action. */
-	static readonly DELETE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENT_CONDITION_KEYS: string[] =
+	static readonly DeleteTransitGatewayRouteTableAnnouncementConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteTransitGatewayVpcAttachment action. */
-	static readonly DELETE_TRANSIT_GATEWAY_VPC_ATTACHMENT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteTransitGatewayVpcAttachmentConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteVerifiedAccessEndpoint action. */
-	static readonly DELETE_VERIFIED_ACCESS_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly DeleteVerifiedAccessEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVerifiedAccessGroup action. */
-	static readonly DELETE_VERIFIED_ACCESS_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteVerifiedAccessGroupConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVerifiedAccessInstance action. */
-	static readonly DELETE_VERIFIED_ACCESS_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly DeleteVerifiedAccessInstanceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVerifiedAccessTrustProvider action. */
-	static readonly DELETE_VERIFIED_ACCESS_TRUST_PROVIDER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteVerifiedAccessTrustProviderConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteVolume action. */
-	static readonly DELETE_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpc action. */
-	static readonly DELETE_VPC_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpcBlockPublicAccessExclusion action. */
-	static readonly DELETE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DeleteVpcBlockPublicAccessExclusionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DeleteVpcEncryptionControl action. */
-	static readonly DELETE_VPC_ENCRYPTION_CONTROL_CONDITION_KEYS: string[] = [
+	static readonly DeleteVpcEncryptionControlConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVpcEndpointConnectionNotifications action. */
-	static readonly DELETE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS_CONDITION_KEYS: string[] =
+	static readonly DeleteVpcEndpointConnectionNotificationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpcEndpointServiceConfigurations action. */
-	static readonly DELETE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS_CONDITION_KEYS: string[] =
+	static readonly DeleteVpcEndpointServiceConfigurationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpcEndpoints action. */
-	static readonly DELETE_VPC_ENDPOINTS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteVpcEndpointsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpcPeeringConnection action. */
-	static readonly DELETE_VPC_PEERING_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteVpcPeeringConnectionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVpnConcentrator action. */
-	static readonly DELETE_VPN_CONCENTRATOR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteVpnConcentratorConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpnConnection action. */
-	static readonly DELETE_VPN_CONNECTION_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeleteVpnConnectionConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeleteVpnConnectionRoute action. */
-	static readonly DELETE_VPN_CONNECTION_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly DeleteVpnConnectionRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeleteVpnGateway action. */
-	static readonly DELETE_VPN_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeleteVpnGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeprovisionByoipCidr action. */
-	static readonly DEPROVISION_BYOIP_CIDR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeprovisionByoipCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeprovisionIpamByoasn action. */
-	static readonly DEPROVISION_IPAM_BYOASN_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DeprovisionIpamByoasnConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeprovisionIpamPoolCidr action. */
-	static readonly DEPROVISION_IPAM_POOL_CIDR_CONDITION_KEYS: string[] = [
+	static readonly DeprovisionIpamPoolCidrConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeprovisionPublicIpv4PoolCidr action. */
-	static readonly DEPROVISION_PUBLIC_IPV4_POOL_CIDR_CONDITION_KEYS: string[] = [
+	static readonly DeprovisionPublicIpv4PoolCidrConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DeregisterImage action. */
-	static readonly DEREGISTER_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DeregisterImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DeregisterInstanceEventNotificationAttributes action. */
-	static readonly DEREGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly DeregisterInstanceEventNotificationAttributesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeregisterTransitGatewayMulticastGroupMembers action. */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS_CONDITION_KEYS: string[] =
+	static readonly DeregisterTransitGatewayMulticastGroupMembersConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DeregisterTransitGatewayMulticastGroupSources action. */
-	static readonly DEREGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES_CONDITION_KEYS: string[] =
+	static readonly DeregisterTransitGatewayMulticastGroupSourcesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeAccountAttributes action. */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly DescribeAccountAttributesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAddressTransfers action. */
-	static readonly DESCRIBE_ADDRESS_TRANSFERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeAddressTransfersConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAddresses action. */
-	static readonly DESCRIBE_ADDRESSES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeAddressesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeAddressesAttribute action. */
-	static readonly DESCRIBE_ADDRESSES_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeAddressesAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAggregateIdFormat action. */
-	static readonly DESCRIBE_AGGREGATE_ID_FORMAT_CONDITION_KEYS: string[] = [
+	static readonly DescribeAggregateIdFormatConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAvailabilityZones action. */
-	static readonly DESCRIBE_AVAILABILITY_ZONES_CONDITION_KEYS: string[] = [
+	static readonly DescribeAvailabilityZonesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeAwsNetworkPerformanceMetricSubscriptions action. */
-	static readonly DESCRIBE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeAwsNetworkPerformanceMetricSubscriptionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeBundleTasks action. */
-	static readonly DESCRIBE_BUNDLE_TASKS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeBundleTasksConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeByoipCidrs action. */
-	static readonly DESCRIBE_BYOIP_CIDRS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeByoipCidrsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityBlockExtensionHistory action. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_HISTORY_CONDITION_KEYS: string[] =
+	static readonly DescribeCapacityBlockExtensionHistoryConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityBlockExtensionOfferings action. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_EXTENSION_OFFERINGS_CONDITION_KEYS: string[] =
+	static readonly DescribeCapacityBlockExtensionOfferingsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityBlockOfferings action. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_OFFERINGS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCapacityBlockOfferingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeCapacityBlockStatus action. */
-	static readonly DESCRIBE_CAPACITY_BLOCK_STATUS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCapacityBlockStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeCapacityBlocks action. */
-	static readonly DESCRIBE_CAPACITY_BLOCKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCapacityBlocksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeCapacityManagerDataExports action. */
-	static readonly DESCRIBE_CAPACITY_MANAGER_DATA_EXPORTS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeCapacityManagerDataExportsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeCapacityReservationBillingRequests action. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_BILLING_REQUESTS_CONDITION_KEYS: string[] =
+	static readonly DescribeCapacityReservationBillingRequestsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityReservationCancellationQuotes action. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_CANCELLATION_QUOTES_CONDITION_KEYS: string[] =
+	static readonly DescribeCapacityReservationCancellationQuotesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeCapacityReservationFleets action. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_FLEETS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeCapacityReservationFleetsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeCapacityReservationTopology action. */
-	static readonly DESCRIBE_CAPACITY_RESERVATION_TOPOLOGY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeCapacityReservationTopologyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeCapacityReservations action. */
-	static readonly DESCRIBE_CAPACITY_RESERVATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCapacityReservationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeCarrierGateways action. */
-	static readonly DESCRIBE_CARRIER_GATEWAYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCarrierGatewaysConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeClassicLinkInstances action. */
-	static readonly DESCRIBE_CLASSIC_LINK_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeClassicLinkInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeClientVpnAuthorizationRules action. */
-	static readonly DESCRIBE_CLIENT_VPN_AUTHORIZATION_RULES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeClientVpnAuthorizationRulesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeClientVpnConnections action. */
-	static readonly DESCRIBE_CLIENT_VPN_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeClientVpnConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeClientVpnEndpoints action. */
-	static readonly DESCRIBE_CLIENT_VPN_ENDPOINTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeClientVpnEndpointsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeClientVpnRoutes action. */
-	static readonly DESCRIBE_CLIENT_VPN_ROUTES_CONDITION_KEYS: string[] = [
+	static readonly DescribeClientVpnRoutesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeClientVpnTargetNetworks action. */
-	static readonly DESCRIBE_CLIENT_VPN_TARGET_NETWORKS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeClientVpnTargetNetworksConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeCoipPools action. */
-	static readonly DESCRIBE_COIP_POOLS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeCoipPoolsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeConversionTasks action. */
-	static readonly DESCRIBE_CONVERSION_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeConversionTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeCustomerGateways action. */
-	static readonly DESCRIBE_CUSTOMER_GATEWAYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCustomerGatewaysConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeDeclarativePoliciesReports action. */
-	static readonly DESCRIBE_DECLARATIVE_POLICIES_REPORTS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeDeclarativePoliciesReportsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeDhcpOptions action. */
-	static readonly DESCRIBE_DHCP_OPTIONS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeDhcpOptionsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeEgressOnlyInternetGateways action. */
-	static readonly DESCRIBE_EGRESS_ONLY_INTERNET_GATEWAYS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeElasticGpus action. */
-	static readonly DESCRIBE_ELASTIC_GPUS_CONDITION_KEYS: string[] = [
+	static readonly DescribeEgressOnlyInternetGatewaysConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DescribeElasticGpus action. */
+	static readonly DescribeElasticGpusConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeExportImageTasks action. */
-	static readonly DESCRIBE_EXPORT_IMAGE_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeExportImageTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeExportTasks action. */
-	static readonly DESCRIBE_EXPORT_TASKS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeExportTasksConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeFastLaunchImages action. */
-	static readonly DESCRIBE_FAST_LAUNCH_IMAGES_CONDITION_KEYS: string[] = [
+	static readonly DescribeFastLaunchImagesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeFastSnapshotRestores action. */
-	static readonly DESCRIBE_FAST_SNAPSHOT_RESTORES_CONDITION_KEYS: string[] = [
+	static readonly DescribeFastSnapshotRestoresConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeFleetHistory action. */
-	static readonly DESCRIBE_FLEET_HISTORY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeFleetHistoryConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeFleetInstances action. */
-	static readonly DESCRIBE_FLEET_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeFleetInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeFleets action. */
-	static readonly DESCRIBE_FLEETS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeFleetsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeFlowLogs action. */
-	static readonly DESCRIBE_FLOW_LOGS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeFlowLogsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeFpgaImageAttribute action. */
-	static readonly DESCRIBE_FPGA_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeFpgaImageAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeFpgaImages action. */
-	static readonly DESCRIBE_FPGA_IMAGES_CONDITION_KEYS: string[] = [
+	static readonly DescribeFpgaImagesConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the DescribeHostReservationOfferings action. */
+	static readonly DescribeHostReservationOfferingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the DescribeHostReservationOfferings action. */
-	static readonly DESCRIBE_HOST_RESERVATION_OFFERINGS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the DescribeHostReservations action. */
-	static readonly DESCRIBE_HOST_RESERVATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeHostReservationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeHosts action. */
-	static readonly DESCRIBE_HOSTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeHostsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIamInstanceProfileAssociations action. */
-	static readonly DESCRIBE_IAM_INSTANCE_PROFILE_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeIamInstanceProfileAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeIdFormat action. */
-	static readonly DESCRIBE_ID_FORMAT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeIdFormatConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIdentityIdFormat action. */
-	static readonly DESCRIBE_IDENTITY_ID_FORMAT_CONDITION_KEYS: string[] = [
+	static readonly DescribeIdentityIdFormatConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeImageAttribute action. */
-	static readonly DESCRIBE_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeImageAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeImageReferences action. */
-	static readonly DESCRIBE_IMAGE_REFERENCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeImageReferencesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeImageUsageReportEntries action. */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORT_ENTRIES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeImageUsageReportEntriesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeImageUsageReports action. */
-	static readonly DESCRIBE_IMAGE_USAGE_REPORTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeImageUsageReportsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeImages action. */
-	static readonly DESCRIBE_IMAGES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeImagesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeImportImageTasks action. */
-	static readonly DESCRIBE_IMPORT_IMAGE_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeImportImageTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeImportSnapshotTasks action. */
-	static readonly DESCRIBE_IMPORT_SNAPSHOT_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeImportSnapshotTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceAttribute action. */
-	static readonly DESCRIBE_INSTANCE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceConnectEndpoints action. */
-	static readonly DESCRIBE_INSTANCE_CONNECT_ENDPOINTS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeInstanceConnectEndpointsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeInstanceCreditSpecifications action. */
-	static readonly DESCRIBE_INSTANCE_CREDIT_SPECIFICATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeInstanceCreditSpecificationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeInstanceEventNotificationAttributes action. */
-	static readonly DESCRIBE_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly DescribeInstanceEventNotificationAttributesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeInstanceEventWindows action. */
-	static readonly DESCRIBE_INSTANCE_EVENT_WINDOWS_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceEventWindowsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceImageMetadata action. */
-	static readonly DESCRIBE_INSTANCE_IMAGE_METADATA_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceImageMetadataConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceSqlHaHistoryStates action. */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_HISTORY_STATES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeInstanceSqlHaHistoryStatesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeInstanceSqlHaStates action. */
-	static readonly DESCRIBE_INSTANCE_SQL_HA_STATES_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceSqlHaStatesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceStatus action. */
-	static readonly DESCRIBE_INSTANCE_STATUS_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceTopology action. */
-	static readonly DESCRIBE_INSTANCE_TOPOLOGY_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceTopologyConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceTypeOfferings action. */
-	static readonly DESCRIBE_INSTANCE_TYPE_OFFERINGS_CONDITION_KEYS: string[] = [
+	static readonly DescribeInstanceTypeOfferingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeInstanceTypes action. */
-	static readonly DESCRIBE_INSTANCE_TYPES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeInstanceTypesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeInstances action. */
-	static readonly DESCRIBE_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeInternetGateways action. */
-	static readonly DESCRIBE_INTERNET_GATEWAYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeInternetGatewaysConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeIpamByoasn action. */
-	static readonly DESCRIBE_IPAM_BYOASN_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeIpamByoasnConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamExternalResourceVerificationTokens action. */
-	static readonly DESCRIBE_IPAM_EXTERNAL_RESOURCE_VERIFICATION_TOKENS_CONDITION_KEYS: string[] =
+	static readonly DescribeIpamExternalResourceVerificationTokensConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamPolicies action. */
-	static readonly DESCRIBE_IPAM_POLICIES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeIpamPoliciesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamPoolAllocations action. */
-	static readonly DESCRIBE_IPAM_POOL_ALLOCATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeIpamPoolAllocationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeIpamPools action. */
-	static readonly DESCRIBE_IPAM_POOLS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeIpamPoolsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamPrefixListResolverTargets action. */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVER_TARGETS_CONDITION_KEYS: string[] =
+	static readonly DescribeIpamPrefixListResolverTargetsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpamPrefixListResolvers action. */
-	static readonly DESCRIBE_IPAM_PREFIX_LIST_RESOLVERS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeIpamResourceDiscoveries action. */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERIES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeIpamResourceDiscoveryAssociations action. */
-	static readonly DESCRIBE_IPAM_RESOURCE_DISCOVERY_ASSOCIATIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeIpamScopes action. */
-	static readonly DESCRIBE_IPAM_SCOPES_CONDITION_KEYS: string[] = [
+	static readonly DescribeIpamPrefixListResolversConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DescribeIpamResourceDiscoveries action. */
+	static readonly DescribeIpamResourceDiscoveriesConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the DescribeIpamResourceDiscoveryAssociations action. */
+	static readonly DescribeIpamResourceDiscoveryAssociationsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeIpamScopes action. */
+	static readonly DescribeIpamScopesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpams action. */
-	static readonly DESCRIBE_IPAMS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeIpamsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeIpv6Pools action. */
-	static readonly DESCRIBE_IPV6_POOLS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeIpv6PoolsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeKeyPairs action. */
-	static readonly DESCRIBE_KEY_PAIRS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeKeyPairsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeLaunchTemplateVersions action. */
-	static readonly DESCRIBE_LAUNCH_TEMPLATE_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeLaunchTemplateVersionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeLaunchTemplates action. */
-	static readonly DESCRIBE_LAUNCH_TEMPLATES_CONDITION_KEYS: string[] = [
+	static readonly DescribeLaunchTemplatesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeLocalGatewayRouteTablePermissions action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_PERMISSIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeLocalGatewayRouteTablePermissionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VIRTUAL_INTERFACE_GROUP_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeLocalGatewayRouteTableVpcAssociations action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLE_VPC_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeLocalGatewayRouteTableVpcAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeLocalGatewayRouteTables action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_ROUTE_TABLES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeLocalGatewayVirtualInterfaceGroups action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACE_GROUPS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeLocalGatewayVirtualInterfaces action. */
-	static readonly DESCRIBE_LOCAL_GATEWAY_VIRTUAL_INTERFACES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DescribeLocalGateways action. */
-	static readonly DESCRIBE_LOCAL_GATEWAYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeLocalGatewayRouteTablesConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DescribeLocalGatewayVirtualInterfaceGroups action. */
+	static readonly DescribeLocalGatewayVirtualInterfaceGroupsConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeLocalGatewayVirtualInterfaces action. */
+	static readonly DescribeLocalGatewayVirtualInterfacesConditionKeys: string[] =
+		["ec2:Region"];
+	/** Condition keys applicable to the DescribeLocalGateways action. */
+	static readonly DescribeLocalGatewaysConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeLockedSnapshots action. */
-	static readonly DESCRIBE_LOCKED_SNAPSHOTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeLockedSnapshotsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeMacHosts action. */
-	static readonly DESCRIBE_MAC_HOSTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeMacHostsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeMacModificationTasks action. */
-	static readonly DESCRIBE_MAC_MODIFICATION_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeMacModificationTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeManagedPrefixLists action. */
-	static readonly DESCRIBE_MANAGED_PREFIX_LISTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeManagedPrefixListsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeMovingAddresses action. */
-	static readonly DESCRIBE_MOVING_ADDRESSES_CONDITION_KEYS: string[] = [
+	static readonly DescribeMovingAddressesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeNatGateways action. */
-	static readonly DESCRIBE_NAT_GATEWAYS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeNatGatewaysConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeNetworkAcls action. */
-	static readonly DESCRIBE_NETWORK_ACLS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeNetworkAclsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeNetworkInsightsAccessScopeAnalyses action. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSES_CONDITION_KEYS: string[] =
+	static readonly DescribeNetworkInsightsAccessScopeAnalysesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeNetworkInsightsAccessScopes action. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ACCESS_SCOPES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeNetworkInsightsAccessScopesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeNetworkInsightsAnalyses action. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_ANALYSES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeNetworkInsightsAnalysesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeNetworkInsightsPaths action. */
-	static readonly DESCRIBE_NETWORK_INSIGHTS_PATHS_CONDITION_KEYS: string[] = [
+	static readonly DescribeNetworkInsightsPathsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeNetworkInterfaceAttribute action. */
-	static readonly DESCRIBE_NETWORK_INTERFACE_ATTRIBUTE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeNetworkInterfaceAttributeConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeNetworkInterfacePermissions action. */
-	static readonly DESCRIBE_NETWORK_INTERFACE_PERMISSIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeNetworkInterfacePermissionsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeNetworkInterfaces action. */
-	static readonly DESCRIBE_NETWORK_INTERFACES_CONDITION_KEYS: string[] = [
+	static readonly DescribeNetworkInterfacesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeOutpostLags action. */
-	static readonly DESCRIBE_OUTPOST_LAGS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeOutpostLagsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribePlacementGroups action. */
-	static readonly DESCRIBE_PLACEMENT_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribePlacementGroupsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribePrefixLists action. */
-	static readonly DESCRIBE_PREFIX_LISTS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribePrefixListsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribePrincipalIdFormat action. */
-	static readonly DESCRIBE_PRINCIPAL_ID_FORMAT_CONDITION_KEYS: string[] = [
+	static readonly DescribePrincipalIdFormatConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribePublicIpv4Pools action. */
-	static readonly DESCRIBE_PUBLIC_IPV4_POOLS_CONDITION_KEYS: string[] = [
+	static readonly DescribePublicIpv4PoolsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeRegions action. */
-	static readonly DESCRIBE_REGIONS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeRegionsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeReplaceRootVolumeTasks action. */
-	static readonly DESCRIBE_REPLACE_ROOT_VOLUME_TASKS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeReplaceRootVolumeTasksConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeReservedInstances action. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeReservedInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeReservedInstancesListings action. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_LISTINGS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeReservedInstancesListingsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeReservedInstancesModifications action. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_MODIFICATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeReservedInstancesModificationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeReservedInstancesOfferings action. */
-	static readonly DESCRIBE_RESERVED_INSTANCES_OFFERINGS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeReservedInstancesOfferingsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeRouteServerEndpoints action. */
-	static readonly DESCRIBE_ROUTE_SERVER_ENDPOINTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeRouteServerEndpointsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeRouteServerPeers action. */
-	static readonly DESCRIBE_ROUTE_SERVER_PEERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeRouteServerPeersConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeRouteServers action. */
-	static readonly DESCRIBE_ROUTE_SERVERS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeRouteServersConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeRouteTables action. */
-	static readonly DESCRIBE_ROUTE_TABLES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeRouteTablesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeScheduledInstanceAvailability action. */
-	static readonly DESCRIBE_SCHEDULED_INSTANCE_AVAILABILITY_CONDITION_KEYS: string[] =
+	static readonly DescribeScheduledInstanceAvailabilityConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeScheduledInstances action. */
-	static readonly DESCRIBE_SCHEDULED_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeScheduledInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSecondaryInterfaces action. */
-	static readonly DESCRIBE_SECONDARY_INTERFACES_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecondaryInterfacesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSecondaryNetworks action. */
-	static readonly DESCRIBE_SECONDARY_NETWORKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecondaryNetworksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSecondarySubnets action. */
-	static readonly DESCRIBE_SECONDARY_SUBNETS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecondarySubnetsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSecurityGroupReferences action. */
-	static readonly DESCRIBE_SECURITY_GROUP_REFERENCES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeSecurityGroupReferencesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeSecurityGroupRules action. */
-	static readonly DESCRIBE_SECURITY_GROUP_RULES_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecurityGroupRulesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSecurityGroupVpcAssociations action. */
-	static readonly DESCRIBE_SECURITY_GROUP_VPC_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeSecurityGroupVpcAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeSecurityGroups action. */
-	static readonly DESCRIBE_SECURITY_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSecurityGroupsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeServiceLinkVirtualInterfaces action. */
-	static readonly DESCRIBE_SERVICE_LINK_VIRTUAL_INTERFACES_CONDITION_KEYS: string[] =
+	static readonly DescribeServiceLinkVirtualInterfacesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeSnapshotAttribute action. */
-	static readonly DESCRIBE_SNAPSHOT_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeSnapshotAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSnapshotTierStatus action. */
-	static readonly DESCRIBE_SNAPSHOT_TIER_STATUS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSnapshotTierStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSnapshots action. */
-	static readonly DESCRIBE_SNAPSHOTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeSnapshotsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeSpotDatafeedSubscription action. */
-	static readonly DESCRIBE_SPOT_DATAFEED_SUBSCRIPTION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeSpotDatafeedSubscriptionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeSpotFleetInstances action. */
-	static readonly DESCRIBE_SPOT_FLEET_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly DescribeSpotFleetInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSpotFleetRequestHistory action. */
-	static readonly DESCRIBE_SPOT_FLEET_REQUEST_HISTORY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeSpotFleetRequestHistoryConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeSpotFleetRequests action. */
-	static readonly DESCRIBE_SPOT_FLEET_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSpotFleetRequestsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSpotInstanceRequests action. */
-	static readonly DESCRIBE_SPOT_INSTANCE_REQUESTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSpotInstanceRequestsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSpotPriceHistory action. */
-	static readonly DESCRIBE_SPOT_PRICE_HISTORY_CONDITION_KEYS: string[] = [
+	static readonly DescribeSpotPriceHistoryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeStaleSecurityGroups action. */
-	static readonly DESCRIBE_STALE_SECURITY_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeStaleSecurityGroupsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeStoreImageTasks action. */
-	static readonly DESCRIBE_STORE_IMAGE_TASKS_CONDITION_KEYS: string[] = [
+	static readonly DescribeStoreImageTasksConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeSubnets action. */
-	static readonly DESCRIBE_SUBNETS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeSubnetsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeTags action. */
-	static readonly DESCRIBE_TAGS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeTagsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeTrafficMirrorFilterRules action. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTER_RULES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTrafficMirrorFilterRulesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeTrafficMirrorFilters action. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_FILTERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeTrafficMirrorFiltersConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeTrafficMirrorSessions action. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_SESSIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeTrafficMirrorSessionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeTrafficMirrorTargets action. */
-	static readonly DESCRIBE_TRAFFIC_MIRROR_TARGETS_CONDITION_KEYS: string[] = [
+	static readonly DescribeTrafficMirrorTargetsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeTransitGatewayAttachments action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ATTACHMENTS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTransitGatewayAttachmentsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeTransitGatewayConnectPeers action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECT_PEERS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTransitGatewayConnectPeersConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeTransitGatewayConnects action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_CONNECTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeTransitGatewayConnectsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeTransitGatewayMeteringPolicies action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_METERING_POLICIES_CONDITION_KEYS: string[] =
+	static readonly DescribeTransitGatewayMeteringPoliciesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeTransitGatewayMulticastDomains action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_MULTICAST_DOMAINS_CONDITION_KEYS: string[] =
+	static readonly DescribeTransitGatewayMulticastDomainsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeTransitGatewayPeeringAttachments action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_PEERING_ATTACHMENTS_CONDITION_KEYS: string[] =
+	static readonly DescribeTransitGatewayPeeringAttachmentsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeTransitGatewayPolicyTables action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_POLICY_TABLES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTransitGatewayPolicyTablesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeTransitGatewayRouteTableAnnouncements action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLE_ANNOUNCEMENTS_CONDITION_KEYS: string[] =
+	static readonly DescribeTransitGatewayRouteTableAnnouncementsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeTransitGatewayRouteTables action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_ROUTE_TABLES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTransitGatewayRouteTablesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeTransitGatewayVpcAttachments action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAY_VPC_ATTACHMENTS_CONDITION_KEYS: string[] =
+	static readonly DescribeTransitGatewayVpcAttachmentsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeTransitGateways action. */
-	static readonly DESCRIBE_TRANSIT_GATEWAYS_CONDITION_KEYS: string[] = [
+	static readonly DescribeTransitGatewaysConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeTrunkInterfaceAssociations action. */
-	static readonly DESCRIBE_TRUNK_INTERFACE_ASSOCIATIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeTrunkInterfaceAssociationsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVerifiedAccessEndpoints action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_ENDPOINTS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeVerifiedAccessEndpointsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVerifiedAccessGroups action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVerifiedAccessGroupsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVerifiedAccessInstanceLoggingConfigurations action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVerifiedAccessInstanceLoggingConfigurationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVerifiedAccessInstanceWebAclAssociations action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCE_WEB_ACL_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVerifiedAccessInstanceWebAclAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVerifiedAccessInstances action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_INSTANCES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeVerifiedAccessInstancesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVerifiedAccessTrustProviders action. */
-	static readonly DESCRIBE_VERIFIED_ACCESS_TRUST_PROVIDERS_CONDITION_KEYS: string[] =
+	static readonly DescribeVerifiedAccessTrustProvidersConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVolumeAttribute action. */
-	static readonly DESCRIBE_VOLUME_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly DescribeVolumeAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVolumeStatus action. */
-	static readonly DESCRIBE_VOLUME_STATUS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeVolumeStatusConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeVolumes action. */
-	static readonly DESCRIBE_VOLUMES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeVolumesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeVolumesModifications action. */
-	static readonly DESCRIBE_VOLUMES_MODIFICATIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVolumesModificationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcAttribute action. */
-	static readonly DESCRIBE_VPC_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeVpcAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcBlockPublicAccessExclusions action. */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVpcBlockPublicAccessExclusionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcBlockPublicAccessOptions action. */
-	static readonly DESCRIBE_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeVpcBlockPublicAccessOptionsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVpcClassicLink action. */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpcClassicLinkConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcClassicLinkDnsSupport action. */
-	static readonly DESCRIBE_VPC_CLASSIC_LINK_DNS_SUPPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeVpcClassicLinkDnsSupportConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVpcEncryptionControls action. */
-	static readonly DESCRIBE_VPC_ENCRYPTION_CONTROLS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpcEncryptionControlsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcEndpointAssociations action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_ASSOCIATIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DescribeVpcEndpointAssociationsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DescribeVpcEndpointConnectionNotifications action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTION_NOTIFICATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVpcEndpointConnectionNotificationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcEndpointConnections action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpcEndpointConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcEndpointServiceConfigurations action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_CONFIGURATIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVpcEndpointServiceConfigurationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcEndpointServicePermissions action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICE_PERMISSIONS_CONDITION_KEYS: string[] =
+	static readonly DescribeVpcEndpointServicePermissionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcEndpointServices action. */
-	static readonly DESCRIBE_VPC_ENDPOINT_SERVICES_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpcEndpointServicesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcEndpoints action. */
-	static readonly DESCRIBE_VPC_ENDPOINTS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeVpcEndpointsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpcPeeringConnections action. */
-	static readonly DESCRIBE_VPC_PEERING_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpcPeeringConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpcs action. */
-	static readonly DESCRIBE_VPCS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DescribeVpcsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DescribeVpnConcentrators action. */
-	static readonly DESCRIBE_VPN_CONCENTRATORS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpnConcentratorsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpnConnections action. */
-	static readonly DESCRIBE_VPN_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeVpnConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DescribeVpnGateways action. */
-	static readonly DESCRIBE_VPN_GATEWAYS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DescribeVpnGatewaysConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DetachApplianceFromNatGateway action. */
-	static readonly DETACH_APPLIANCE_FROM_NAT_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly DetachApplianceFromNatGatewayConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DetachClassicLinkVpc action. */
-	static readonly DETACH_CLASSIC_LINK_VPC_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DetachClassicLinkVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DetachImageWatermark action. */
-	static readonly DETACH_IMAGE_WATERMARK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DetachImageWatermarkConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DetachInternetGateway action. */
-	static readonly DETACH_INTERNET_GATEWAY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DetachInternetGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DetachNetworkInterface action. */
-	static readonly DETACH_NETWORK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly DetachNetworkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DetachResourcesFromPlacementGroup action. */
-	static readonly DETACH_RESOURCES_FROM_PLACEMENT_GROUP_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DetachResourcesFromPlacementGroupConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DetachVerifiedAccessTrustProvider action. */
-	static readonly DETACH_VERIFIED_ACCESS_TRUST_PROVIDER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DetachVerifiedAccessTrustProviderConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DetachVolume action. */
-	static readonly DETACH_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DetachVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DetachVpnGateway action. */
-	static readonly DETACH_VPN_GATEWAY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DetachVpnGatewayConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisableAddressTransfer action. */
-	static readonly DISABLE_ADDRESS_TRANSFER_CONDITION_KEYS: string[] = [
+	static readonly DisableAddressTransferConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableAllowedImagesSettings action. */
-	static readonly DISABLE_ALLOWED_IMAGES_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly DisableAllowedImagesSettingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableAwsNetworkPerformanceMetricSubscription action. */
-	static readonly DISABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION_CONDITION_KEYS: string[] =
+	static readonly DisableAwsNetworkPerformanceMetricSubscriptionConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisableCapacityManager action. */
-	static readonly DISABLE_CAPACITY_MANAGER_CONDITION_KEYS: string[] = [
+	static readonly DisableCapacityManagerConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableEbsEncryptionByDefault action. */
-	static readonly DISABLE_EBS_ENCRYPTION_BY_DEFAULT_CONDITION_KEYS: string[] = [
+	static readonly DisableEbsEncryptionByDefaultConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableFastLaunch action. */
-	static readonly DISABLE_FAST_LAUNCH_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DisableFastLaunchConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisableFastSnapshotRestores action. */
-	static readonly DISABLE_FAST_SNAPSHOT_RESTORES_CONDITION_KEYS: string[] = [
+	static readonly DisableFastSnapshotRestoresConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableImage action. */
-	static readonly DISABLE_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DisableImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisableImageBlockPublicAccess action. */
-	static readonly DISABLE_IMAGE_BLOCK_PUBLIC_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly DisableImageBlockPublicAccessConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableImageDeprecation action. */
-	static readonly DISABLE_IMAGE_DEPRECATION_CONDITION_KEYS: string[] = [
+	static readonly DisableImageDeprecationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableImageDeregistrationProtection action. */
-	static readonly DISABLE_IMAGE_DEREGISTRATION_PROTECTION_CONDITION_KEYS: string[] =
+	static readonly DisableImageDeregistrationProtectionConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisableInstanceSqlHaStandbyDetections action. */
-	static readonly DISABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS_CONDITION_KEYS: string[] =
+	static readonly DisableInstanceSqlHaStandbyDetectionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisableIpamOrganizationAdminAccount action. */
-	static readonly DISABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DisableIpamOrganizationAdminAccountConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisableIpamPolicy action. */
-	static readonly DISABLE_IPAM_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly DisableIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisableRouteServerPropagation action. */
-	static readonly DISABLE_ROUTE_SERVER_PROPAGATION_CONDITION_KEYS: string[] = [
+	static readonly DisableRouteServerPropagationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableSerialConsoleAccess action. */
-	static readonly DISABLE_SERIAL_CONSOLE_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly DisableSerialConsoleAccessConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableSnapshotBlockPublicAccess action. */
-	static readonly DISABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DisableSnapshotBlockPublicAccessConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisableTransitGatewayRouteTablePropagation action. */
-	static readonly DISABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION_CONDITION_KEYS: string[] =
+	static readonly DisableTransitGatewayRouteTablePropagationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisableVgwRoutePropagation action. */
-	static readonly DISABLE_VGW_ROUTE_PROPAGATION_CONDITION_KEYS: string[] = [
+	static readonly DisableVgwRoutePropagationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisableVpcClassicLink action. */
-	static readonly DISABLE_VPC_CLASSIC_LINK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly DisableVpcClassicLinkConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisableVpcClassicLinkDnsSupport action. */
-	static readonly DISABLE_VPC_CLASSIC_LINK_DNS_SUPPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the DisassociateAddress action. */
-	static readonly DISASSOCIATE_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly DisableVpcClassicLinkDnsSupportConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the DisassociateAddress action. */
+	static readonly DisassociateAddressConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the DisassociateCapacityReservationBillingOwner action. */
-	static readonly DISASSOCIATE_CAPACITY_RESERVATION_BILLING_OWNER_CONDITION_KEYS: string[] =
+	static readonly DisassociateCapacityReservationBillingOwnerConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateClientVpnTargetNetwork action. */
-	static readonly DISASSOCIATE_CLIENT_VPN_TARGET_NETWORK_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DisassociateClientVpnTargetNetworkConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisassociateEnclaveCertificateIamRole action. */
-	static readonly DISASSOCIATE_ENCLAVE_CERTIFICATE_IAM_ROLE_CONDITION_KEYS: string[] =
+	static readonly DisassociateEnclaveCertificateIamRoleConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateIamInstanceProfile action. */
-	static readonly DISASSOCIATE_IAM_INSTANCE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateIamInstanceProfileConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateInstanceEventWindow action. */
-	static readonly DISASSOCIATE_INSTANCE_EVENT_WINDOW_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DisassociateInstanceEventWindowConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisassociateIpamByoasn action. */
-	static readonly DISASSOCIATE_IPAM_BYOASN_CONDITION_KEYS: string[] = [
+	static readonly DisassociateIpamByoasnConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateIpamResourceDiscovery action. */
-	static readonly DISASSOCIATE_IPAM_RESOURCE_DISCOVERY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly DisassociateIpamResourceDiscoveryConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the DisassociateNatGatewayAddress action. */
-	static readonly DISASSOCIATE_NAT_GATEWAY_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly DisassociateNatGatewayAddressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateRouteServer action. */
-	static readonly DISASSOCIATE_ROUTE_SERVER_CONDITION_KEYS: string[] = [
+	static readonly DisassociateRouteServerConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateRouteTable action. */
-	static readonly DISASSOCIATE_ROUTE_TABLE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateRouteTableConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateSecurityGroupVpc action. */
-	static readonly DISASSOCIATE_SECURITY_GROUP_VPC_CONDITION_KEYS: string[] = [
+	static readonly DisassociateSecurityGroupVpcConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateSubnetCidrBlock action. */
-	static readonly DISASSOCIATE_SUBNET_CIDR_BLOCK_CONDITION_KEYS: string[] = [
+	static readonly DisassociateSubnetCidrBlockConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateTransitGatewayMulticastDomain action. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_MULTICAST_DOMAIN_CONDITION_KEYS: string[] =
+	static readonly DisassociateTransitGatewayMulticastDomainConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateTransitGatewayPolicyTable action. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_POLICY_TABLE_CONDITION_KEYS: string[] =
+	static readonly DisassociateTransitGatewayPolicyTableConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateTransitGatewayRouteTable action. */
-	static readonly DISASSOCIATE_TRANSIT_GATEWAY_ROUTE_TABLE_CONDITION_KEYS: string[] =
+	static readonly DisassociateTransitGatewayRouteTableConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateTrunkInterface action. */
-	static readonly DISASSOCIATE_TRUNK_INTERFACE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateTrunkInterfaceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the DisassociateVerifiedAccessInstanceWebAcl action. */
-	static readonly DISASSOCIATE_VERIFIED_ACCESS_INSTANCE_WEB_ACL_CONDITION_KEYS: string[] =
+	static readonly DisassociateVerifiedAccessInstanceWebAclConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the DisassociateVpcCidrBlock action. */
-	static readonly DISASSOCIATE_VPC_CIDR_BLOCK_CONDITION_KEYS: string[] = [
+	static readonly DisassociateVpcCidrBlockConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableAddressTransfer action. */
-	static readonly ENABLE_ADDRESS_TRANSFER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly EnableAddressTransferConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableAllowedImagesSettings action. */
-	static readonly ENABLE_ALLOWED_IMAGES_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly EnableAllowedImagesSettingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableAwsNetworkPerformanceMetricSubscription action. */
-	static readonly ENABLE_AWS_NETWORK_PERFORMANCE_METRIC_SUBSCRIPTION_CONDITION_KEYS: string[] =
+	static readonly EnableAwsNetworkPerformanceMetricSubscriptionConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the EnableCapacityManager action. */
-	static readonly ENABLE_CAPACITY_MANAGER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly EnableCapacityManagerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableEbsEncryptionByDefault action. */
-	static readonly ENABLE_EBS_ENCRYPTION_BY_DEFAULT_CONDITION_KEYS: string[] = [
+	static readonly EnableEbsEncryptionByDefaultConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableFastLaunch action. */
-	static readonly ENABLE_FAST_LAUNCH_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly EnableFastLaunchConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableFastSnapshotRestores action. */
-	static readonly ENABLE_FAST_SNAPSHOT_RESTORES_CONDITION_KEYS: string[] = [
+	static readonly EnableFastSnapshotRestoresConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableImage action. */
-	static readonly ENABLE_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly EnableImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableImageBlockPublicAccess action. */
-	static readonly ENABLE_IMAGE_BLOCK_PUBLIC_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly EnableImageBlockPublicAccessConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableImageDeprecation action. */
-	static readonly ENABLE_IMAGE_DEPRECATION_CONDITION_KEYS: string[] = [
+	static readonly EnableImageDeprecationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableImageDeregistrationProtection action. */
-	static readonly ENABLE_IMAGE_DEREGISTRATION_PROTECTION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly EnableImageDeregistrationProtectionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the EnableInstanceSqlHaStandbyDetections action. */
-	static readonly ENABLE_INSTANCE_SQL_HA_STANDBY_DETECTIONS_CONDITION_KEYS: string[] =
+	static readonly EnableInstanceSqlHaStandbyDetectionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the EnableIpamOrganizationAdminAccount action. */
-	static readonly ENABLE_IPAM_ORGANIZATION_ADMIN_ACCOUNT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly EnableIpamOrganizationAdminAccountConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the EnableIpamPolicy action. */
-	static readonly ENABLE_IPAM_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly EnableIpamPolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableReachabilityAnalyzerOrganizationSharing action. */
-	static readonly ENABLE_REACHABILITY_ANALYZER_ORGANIZATION_SHARING_CONDITION_KEYS: string[] =
+	static readonly EnableReachabilityAnalyzerOrganizationSharingConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the EnableRouteServerPropagation action. */
-	static readonly ENABLE_ROUTE_SERVER_PROPAGATION_CONDITION_KEYS: string[] = [
+	static readonly EnableRouteServerPropagationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableSerialConsoleAccess action. */
-	static readonly ENABLE_SERIAL_CONSOLE_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly EnableSerialConsoleAccessConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableSnapshotBlockPublicAccess action. */
-	static readonly ENABLE_SNAPSHOT_BLOCK_PUBLIC_ACCESS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly EnableSnapshotBlockPublicAccessConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the EnableTransitGatewayRouteTablePropagation action. */
-	static readonly ENABLE_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATION_CONDITION_KEYS: string[] =
+	static readonly EnableTransitGatewayRouteTablePropagationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the EnableVgwRoutePropagation action. */
-	static readonly ENABLE_VGW_ROUTE_PROPAGATION_CONDITION_KEYS: string[] = [
+	static readonly EnableVgwRoutePropagationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the EnableVolumeIO action. */
-	static readonly ENABLE_VOLUME_IO_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly EnableVolumeIOConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the EnableVpcClassicLink action. */
-	static readonly ENABLE_VPC_CLASSIC_LINK_CONDITION_KEYS: string[] = [
+	static readonly EnableVpcClassicLinkConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the EnableVpcClassicLinkDnsSupport action. */
+	static readonly EnableVpcClassicLinkDnsSupportConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the EnableVpcClassicLinkDnsSupport action. */
-	static readonly ENABLE_VPC_CLASSIC_LINK_DNS_SUPPORT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the ExportClientVpnClientCertificateRevocationList action. */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST_CONDITION_KEYS: string[] =
+	static readonly ExportClientVpnClientCertificateRevocationListConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ExportClientVpnClientConfiguration action. */
-	static readonly EXPORT_CLIENT_VPN_CLIENT_CONFIGURATION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ExportClientVpnClientConfigurationConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ExportImage action. */
-	static readonly EXPORT_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ExportImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ExportTransitGatewayRoutes action. */
-	static readonly EXPORT_TRANSIT_GATEWAY_ROUTES_CONDITION_KEYS: string[] = [
+	static readonly ExportTransitGatewayRoutesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ExportVerifiedAccessInstanceClientConfiguration action. */
-	static readonly EXPORT_VERIFIED_ACCESS_INSTANCE_CLIENT_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly ExportVerifiedAccessInstanceClientConfigurationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetActiveVpnTunnelStatus action. */
-	static readonly GET_ACTIVE_VPN_TUNNEL_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetActiveVpnTunnelStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetAllowedImagesSettings action. */
-	static readonly GET_ALLOWED_IMAGES_SETTINGS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAllowedImagesSettingsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetAssociatedEnclaveCertificateIamRoles action. */
-	static readonly GET_ASSOCIATED_ENCLAVE_CERTIFICATE_IAM_ROLES_CONDITION_KEYS: string[] =
+	static readonly actionGetAssociatedEnclaveCertificateIamRolesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetAssociatedIpv6PoolCidrs action. */
-	static readonly GET_ASSOCIATED_IPV6_POOL_CIDRS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAssociatedIpv6PoolCidrsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetAwsNetworkPerformanceData action. */
-	static readonly GET_AWS_NETWORK_PERFORMANCE_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetAwsNetworkPerformanceDataConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetCapacityManagerAttributes action. */
-	static readonly GET_CAPACITY_MANAGER_ATTRIBUTES_CONDITION_KEYS: string[] = [
+	static readonly actionGetCapacityManagerAttributesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetCapacityManagerMetricData action. */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetCapacityManagerMetricDataConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetCapacityManagerMetricDimensions action. */
-	static readonly GET_CAPACITY_MANAGER_METRIC_DIMENSIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetCapacityManagerMetricDimensionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetCapacityManagerMonitoredTagKeys action. */
-	static readonly GET_CAPACITY_MANAGER_MONITORED_TAG_KEYS_CONDITION_KEYS: string[] =
+	static readonly actionGetCapacityManagerMonitoredTagKeysConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetCapacityReservationUsage action. */
-	static readonly GET_CAPACITY_RESERVATION_USAGE_CONDITION_KEYS: string[] = [
+	static readonly actionGetCapacityReservationUsageConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetCoipPoolUsage action. */
-	static readonly GET_COIP_POOL_USAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetCoipPoolUsageConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetConsoleOutput action. */
-	static readonly GET_CONSOLE_OUTPUT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetConsoleOutputConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetConsoleScreenshot action. */
-	static readonly GET_CONSOLE_SCREENSHOT_CONDITION_KEYS: string[] = [
+	static readonly actionGetConsoleScreenshotConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetDeclarativePoliciesReportSummary action. */
-	static readonly GET_DECLARATIVE_POLICIES_REPORT_SUMMARY_CONDITION_KEYS: string[] =
+	static readonly actionGetDeclarativePoliciesReportSummaryConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetDefaultCreditSpecification action. */
-	static readonly GET_DEFAULT_CREDIT_SPECIFICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetDefaultCreditSpecificationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetEbsDefaultKmsKeyId action. */
-	static readonly GET_EBS_DEFAULT_KMS_KEY_ID_CONDITION_KEYS: string[] = [
+	static readonly actionGetEbsDefaultKmsKeyIdConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetEbsEncryptionByDefault action. */
-	static readonly GET_EBS_ENCRYPTION_BY_DEFAULT_CONDITION_KEYS: string[] = [
+	static readonly actionGetEbsEncryptionByDefaultConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetEnabledIpamPolicy action. */
-	static readonly GET_ENABLED_IPAM_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetEnabledIpamPolicyConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetFlowLogsIntegrationTemplate action. */
-	static readonly GET_FLOW_LOGS_INTEGRATION_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly actionGetFlowLogsIntegrationTemplateConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetGroupsForCapacityReservation action. */
-	static readonly GET_GROUPS_FOR_CAPACITY_RESERVATION_CONDITION_KEYS: string[] =
+	static readonly actionGetGroupsForCapacityReservationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetHostReservationPurchasePreview action. */
-	static readonly GET_HOST_RESERVATION_PURCHASE_PREVIEW_CONDITION_KEYS: string[] =
+	static readonly actionGetHostReservationPurchasePreviewConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetImageAncestry action. */
-	static readonly GET_IMAGE_ANCESTRY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetImageAncestryConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetImageBlockPublicAccessState action. */
-	static readonly GET_IMAGE_BLOCK_PUBLIC_ACCESS_STATE_CONDITION_KEYS: string[] =
+	static readonly actionGetImageBlockPublicAccessStateConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetInstanceMetadataDefaults action. */
-	static readonly GET_INSTANCE_METADATA_DEFAULTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstanceMetadataDefaultsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetInstanceTpmEkPub action. */
-	static readonly GET_INSTANCE_TPM_EK_PUB_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstanceTpmEkPubConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetInstanceTypesFromInstanceRequirements action. */
-	static readonly GET_INSTANCE_TYPES_FROM_INSTANCE_REQUIREMENTS_CONDITION_KEYS: string[] =
+	static readonly actionGetInstanceTypesFromInstanceRequirementsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetInstanceUefiData action. */
-	static readonly GET_INSTANCE_UEFI_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetInstanceUefiDataConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetIpamAddressHistory action. */
-	static readonly GET_IPAM_ADDRESS_HISTORY_CONDITION_KEYS: string[] = [
+	static readonly actionGetIpamAddressHistoryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetIpamDiscoveredAccounts action. */
-	static readonly GET_IPAM_DISCOVERED_ACCOUNTS_CONDITION_KEYS: string[] = [
+	static readonly actionGetIpamDiscoveredAccountsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetIpamDiscoveredPublicAddresses action. */
-	static readonly GET_IPAM_DISCOVERED_PUBLIC_ADDRESSES_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamDiscoveredPublicAddressesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamDiscoveredResourceCidrs action. */
-	static readonly GET_IPAM_DISCOVERED_RESOURCE_CIDRS_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamDiscoveredResourceCidrsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamPolicyAllocationRules action. */
-	static readonly GET_IPAM_POLICY_ALLOCATION_RULES_CONDITION_KEYS: string[] = [
+	static readonly actionGetIpamPolicyAllocationRulesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetIpamPolicyOrganizationTargets action. */
-	static readonly GET_IPAM_POLICY_ORGANIZATION_TARGETS_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamPolicyOrganizationTargetsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamPoolAllocations action. */
-	static readonly GET_IPAM_POOL_ALLOCATIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetIpamPoolAllocationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetIpamPoolCidrs action. */
-	static readonly GET_IPAM_POOL_CIDRS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetIpamPoolCidrsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetIpamPrefixListResolverRules action. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_RULES_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamPrefixListResolverRulesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamPrefixListResolverVersionEntries action. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSION_ENTRIES_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamPrefixListResolverVersionEntriesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamPrefixListResolverVersions action. */
-	static readonly GET_IPAM_PREFIX_LIST_RESOLVER_VERSIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetIpamPrefixListResolverVersionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetIpamResourceCidrs action. */
-	static readonly GET_IPAM_RESOURCE_CIDRS_CONDITION_KEYS: string[] = [
+	static readonly actionGetIpamResourceCidrsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetLaunchTemplateData action. */
-	static readonly GET_LAUNCH_TEMPLATE_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetLaunchTemplateDataConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetManagedPrefixListAssociations action. */
-	static readonly GET_MANAGED_PREFIX_LIST_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetManagedPrefixListAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetManagedPrefixListEntries action. */
-	static readonly GET_MANAGED_PREFIX_LIST_ENTRIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetManagedPrefixListEntriesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetManagedResourceVisibility action. */
-	static readonly GET_MANAGED_RESOURCE_VISIBILITY_CONDITION_KEYS: string[] = [
+	static readonly actionGetManagedResourceVisibilityConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetNetworkInsightsAccessScopeAnalysisFindings action. */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_FINDINGS_CONDITION_KEYS: string[] =
+	static readonly actionGetNetworkInsightsAccessScopeAnalysisFindingsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetNetworkInsightsAccessScopeContent action. */
-	static readonly GET_NETWORK_INSIGHTS_ACCESS_SCOPE_CONTENT_CONDITION_KEYS: string[] =
+	static readonly actionGetNetworkInsightsAccessScopeContentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetPasswordData action. */
-	static readonly GET_PASSWORD_DATA_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetPasswordDataConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the GetReservedInstancesExchangeQuote action. */
-	static readonly GET_RESERVED_INSTANCES_EXCHANGE_QUOTE_CONDITION_KEYS: string[] =
+	static readonly actionGetReservedInstancesExchangeQuoteConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetResourcePolicy action. */
-	static readonly GET_RESOURCE_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the GetRouteServerAssociations action. */
-	static readonly GET_ROUTE_SERVER_ASSOCIATIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetRouteServerAssociationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetRouteServerPropagations action. */
-	static readonly GET_ROUTE_SERVER_PROPAGATIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetRouteServerPropagationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetRouteServerRoutingDatabase action. */
-	static readonly GET_ROUTE_SERVER_ROUTING_DATABASE_CONDITION_KEYS: string[] = [
+	static readonly actionGetRouteServerRoutingDatabaseConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetSecurityGroupsForVpc action. */
-	static readonly GET_SECURITY_GROUPS_FOR_VPC_CONDITION_KEYS: string[] = [
+	static readonly actionGetSecurityGroupsForVpcConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetSerialConsoleAccessStatus action. */
-	static readonly GET_SERIAL_CONSOLE_ACCESS_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetSerialConsoleAccessStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetSnapshotBlockPublicAccessState action. */
-	static readonly GET_SNAPSHOT_BLOCK_PUBLIC_ACCESS_STATE_CONDITION_KEYS: string[] =
+	static readonly actionGetSnapshotBlockPublicAccessStateConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetSpotPlacementScores action. */
-	static readonly GET_SPOT_PLACEMENT_SCORES_CONDITION_KEYS: string[] = [
+	static readonly actionGetSpotPlacementScoresConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetSubnetCidrReservations action. */
-	static readonly GET_SUBNET_CIDR_RESERVATIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetSubnetCidrReservationsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetTransitGatewayAttachmentPropagations action. */
-	static readonly GET_TRANSIT_GATEWAY_ATTACHMENT_PROPAGATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayAttachmentPropagationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayMeteringPolicyEntries action. */
-	static readonly GET_TRANSIT_GATEWAY_METERING_POLICY_ENTRIES_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayMeteringPolicyEntriesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayMulticastDomainAssociations action. */
-	static readonly GET_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayMulticastDomainAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayPolicyTableAssociations action. */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayPolicyTableAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayPolicyTableEntries action. */
-	static readonly GET_TRANSIT_GATEWAY_POLICY_TABLE_ENTRIES_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayPolicyTableEntriesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayPrefixListReferences action. */
-	static readonly GET_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCES_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayPrefixListReferencesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayRouteTableAssociations action. */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayRouteTableAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetTransitGatewayRouteTablePropagations action. */
-	static readonly GET_TRANSIT_GATEWAY_ROUTE_TABLE_PROPAGATIONS_CONDITION_KEYS: string[] =
+	static readonly actionGetTransitGatewayRouteTablePropagationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVerifiedAccessEndpointPolicy action. */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_POLICY_CONDITION_KEYS: string[] =
+	static readonly actionGetVerifiedAccessEndpointPolicyConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVerifiedAccessEndpointTargets action. */
-	static readonly GET_VERIFIED_ACCESS_ENDPOINT_TARGETS_CONDITION_KEYS: string[] =
+	static readonly actionGetVerifiedAccessEndpointTargetsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVerifiedAccessGroupPolicy action. */
-	static readonly GET_VERIFIED_ACCESS_GROUP_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetVerifiedAccessGroupPolicyConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetVerifiedAccessInstanceWebAcl action. */
-	static readonly GET_VERIFIED_ACCESS_INSTANCE_WEB_ACL_CONDITION_KEYS: string[] =
+	static readonly actionGetVerifiedAccessInstanceWebAclConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVpcResourcesBlockingEncryptionEnforcement action. */
-	static readonly GET_VPC_RESOURCES_BLOCKING_ENCRYPTION_ENFORCEMENT_CONDITION_KEYS: string[] =
+	static readonly actionGetVpcResourcesBlockingEncryptionEnforcementConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVpnConnectionDeviceSampleConfiguration action. */
-	static readonly GET_VPN_CONNECTION_DEVICE_SAMPLE_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly actionGetVpnConnectionDeviceSampleConfigurationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the GetVpnConnectionDeviceTypes action. */
-	static readonly GET_VPN_CONNECTION_DEVICE_TYPES_CONDITION_KEYS: string[] = [
+	static readonly actionGetVpnConnectionDeviceTypesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the GetVpnTunnelReplacementStatus action. */
-	static readonly GET_VPN_TUNNEL_REPLACEMENT_STATUS_CONDITION_KEYS: string[] = [
+	static readonly actionGetVpnTunnelReplacementStatusConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ImportByoipCidrToIpam action. */
-	static readonly IMPORT_BYOIP_CIDR_TO_IPAM_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ImportByoipCidrToIpamConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ImportClientVpnClientCertificateRevocationList action. */
-	static readonly IMPORT_CLIENT_VPN_CLIENT_CERTIFICATE_REVOCATION_LIST_CONDITION_KEYS: string[] =
+	static readonly ImportClientVpnClientCertificateRevocationListConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ImportImage action. */
-	static readonly IMPORT_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ImportImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ImportInstance action. */
-	static readonly IMPORT_INSTANCE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ImportInstanceConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ImportKeyPair action. */
-	static readonly IMPORT_KEY_PAIR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ImportKeyPairConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ImportSnapshot action. */
-	static readonly IMPORT_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ImportSnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ImportVolume action. */
-	static readonly IMPORT_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ImportVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the InjectApiError action. */
-	static readonly INJECT_API_ERROR_CONDITION_KEYS: string[] = [
+	static readonly InjectApiErrorConditionKeys: string[] = [
 		"ec2:FisActionId",
 		"ec2:FisTargetArns",
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the InjectVolumeIOLatency action. */
-	static readonly INJECT_VOLUME_IO_LATENCY_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly InjectVolumeIOLatencyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ListImagesInRecycleBin action. */
-	static readonly LIST_IMAGES_IN_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly ListImagesInRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ListSnapshotsInRecycleBin action. */
-	static readonly LIST_SNAPSHOTS_IN_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly ListSnapshotsInRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ListVolumesInRecycleBin action. */
-	static readonly LIST_VOLUMES_IN_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly ListVolumesInRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the LockSnapshot action. */
-	static readonly LOCK_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly LockSnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyAddressAttribute action. */
-	static readonly MODIFY_ADDRESS_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifyAddressAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyAvailabilityZoneGroup action. */
-	static readonly MODIFY_AVAILABILITY_ZONE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyAvailabilityZoneGroupConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyCapacityReservation action. */
-	static readonly MODIFY_CAPACITY_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly ModifyCapacityReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyCapacityReservationFleet action. */
-	static readonly MODIFY_CAPACITY_RESERVATION_FLEET_CONDITION_KEYS: string[] = [
+	static readonly ModifyCapacityReservationFleetConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyClientVpnEndpoint action. */
-	static readonly MODIFY_CLIENT_VPN_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly ModifyClientVpnEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyDefaultCreditSpecification action. */
-	static readonly MODIFY_DEFAULT_CREDIT_SPECIFICATION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyDefaultCreditSpecificationConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyEbsDefaultKmsKeyId action. */
-	static readonly MODIFY_EBS_DEFAULT_KMS_KEY_ID_CONDITION_KEYS: string[] = [
+	static readonly ModifyEbsDefaultKmsKeyIdConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyFleet action. */
-	static readonly MODIFY_FLEET_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyFleetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyFpgaImageAttribute action. */
-	static readonly MODIFY_FPGA_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifyFpgaImageAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyHosts action. */
-	static readonly MODIFY_HOSTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyHostsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyIdFormat action. */
-	static readonly MODIFY_ID_FORMAT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyIdFormatConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyIdentityIdFormat action. */
-	static readonly MODIFY_IDENTITY_ID_FORMAT_CONDITION_KEYS: string[] = [
+	static readonly ModifyIdentityIdFormatConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyImageAttribute action. */
-	static readonly MODIFY_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ModifyImageAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyInstanceAttribute action. */
-	static readonly MODIFY_INSTANCE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceCapacityReservationAttributes action. */
-	static readonly MODIFY_INSTANCE_CAPACITY_RESERVATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly ModifyInstanceCapacityReservationAttributesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyInstanceConnectEndpoint action. */
-	static readonly MODIFY_INSTANCE_CONNECT_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceConnectEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceCpuOptions action. */
-	static readonly MODIFY_INSTANCE_CPU_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceCpuOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceCreditSpecification action. */
-	static readonly MODIFY_INSTANCE_CREDIT_SPECIFICATION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyInstanceCreditSpecificationConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyInstanceEventStartTime action. */
-	static readonly MODIFY_INSTANCE_EVENT_START_TIME_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceEventStartTimeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceEventWindow action. */
-	static readonly MODIFY_INSTANCE_EVENT_WINDOW_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceEventWindowConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceMaintenanceOptions action. */
-	static readonly MODIFY_INSTANCE_MAINTENANCE_OPTIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyInstanceMaintenanceOptionsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyInstanceMetadataDefaults action. */
-	static readonly MODIFY_INSTANCE_METADATA_DEFAULTS_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceMetadataDefaultsConditionKeys: string[] = [
 		"ec2:Attribute/${AttributeName}",
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceMetadataOptions action. */
-	static readonly MODIFY_INSTANCE_METADATA_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstanceMetadataOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyInstanceNetworkPerformanceOptions action. */
-	static readonly MODIFY_INSTANCE_NETWORK_PERFORMANCE_OPTIONS_CONDITION_KEYS: string[] =
+	static readonly ModifyInstanceNetworkPerformanceOptionsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyInstancePlacement action. */
-	static readonly MODIFY_INSTANCE_PLACEMENT_CONDITION_KEYS: string[] = [
+	static readonly ModifyInstancePlacementConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpam action. */
-	static readonly MODIFY_IPAM_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyIpamConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyIpamPolicyAllocationRules action. */
-	static readonly MODIFY_IPAM_POLICY_ALLOCATION_RULES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyIpamPolicyAllocationRulesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyIpamPool action. */
-	static readonly MODIFY_IPAM_POOL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyIpamPoolConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyIpamPoolAllocation action. */
-	static readonly MODIFY_IPAM_POOL_ALLOCATION_CONDITION_KEYS: string[] = [
+	static readonly ModifyIpamPoolAllocationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpamPrefixListResolver action. */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER_CONDITION_KEYS: string[] = [
+	static readonly ModifyIpamPrefixListResolverConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpamPrefixListResolverTarget action. */
-	static readonly MODIFY_IPAM_PREFIX_LIST_RESOLVER_TARGET_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyIpamPrefixListResolverTargetConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyIpamResourceCidr action. */
-	static readonly MODIFY_IPAM_RESOURCE_CIDR_CONDITION_KEYS: string[] = [
+	static readonly ModifyIpamResourceCidrConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpamResourceDiscovery action. */
-	static readonly MODIFY_IPAM_RESOURCE_DISCOVERY_CONDITION_KEYS: string[] = [
+	static readonly ModifyIpamResourceDiscoveryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyIpamScope action. */
-	static readonly MODIFY_IPAM_SCOPE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyIpamScopeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyLaunchTemplate action. */
-	static readonly MODIFY_LAUNCH_TEMPLATE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ModifyLaunchTemplateConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyLocalGatewayRoute action. */
-	static readonly MODIFY_LOCAL_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifyLocalGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyManagedPrefixList action. */
-	static readonly MODIFY_MANAGED_PREFIX_LIST_CONDITION_KEYS: string[] = [
+	static readonly ModifyManagedPrefixListConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyManagedResourceVisibility action. */
-	static readonly MODIFY_MANAGED_RESOURCE_VISIBILITY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyManagedResourceVisibilityConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyNetworkInterfaceAttribute action. */
-	static readonly MODIFY_NETWORK_INTERFACE_ATTRIBUTE_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyNetworkInterfaceAttributeConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyOdbNetworkPeering action. */
-	static readonly MODIFY_ODB_NETWORK_PEERING_CONDITION_KEYS: string[] = [
+	static readonly ModifyOdbNetworkPeeringConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyPrivateDnsNameOptions action. */
-	static readonly MODIFY_PRIVATE_DNS_NAME_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyPrivateDnsNameOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyPublicIpDnsNameOptions action. */
-	static readonly MODIFY_PUBLIC_IP_DNS_NAME_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyPublicIpDnsNameOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyReservedInstances action. */
-	static readonly MODIFY_RESERVED_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly ModifyReservedInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyRouteServer action. */
-	static readonly MODIFY_ROUTE_SERVER_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyRouteServerConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifySecurityGroupRules action. */
-	static readonly MODIFY_SECURITY_GROUP_RULES_CONDITION_KEYS: string[] = [
+	static readonly ModifySecurityGroupRulesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifySnapshotAttribute action. */
-	static readonly MODIFY_SNAPSHOT_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifySnapshotAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifySnapshotTier action. */
-	static readonly MODIFY_SNAPSHOT_TIER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ModifySnapshotTierConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifySpotFleetRequest action. */
-	static readonly MODIFY_SPOT_FLEET_REQUEST_CONDITION_KEYS: string[] = [
+	static readonly ModifySpotFleetRequestConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifySubnetAttribute action. */
-	static readonly MODIFY_SUBNET_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ModifySubnetAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyTrafficMirrorFilterNetworkServices action. */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_NETWORK_SERVICES_CONDITION_KEYS: string[] =
+	static readonly ModifyTrafficMirrorFilterNetworkServicesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyTrafficMirrorFilterRule action. */
-	static readonly MODIFY_TRAFFIC_MIRROR_FILTER_RULE_CONDITION_KEYS: string[] = [
+	static readonly ModifyTrafficMirrorFilterRuleConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyTrafficMirrorSession action. */
-	static readonly MODIFY_TRAFFIC_MIRROR_SESSION_CONDITION_KEYS: string[] = [
+	static readonly ModifyTrafficMirrorSessionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyTransitGateway action. */
-	static readonly MODIFY_TRANSIT_GATEWAY_CONDITION_KEYS: string[] = [
+	static readonly ModifyTransitGatewayConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the ModifyTransitGatewayMeteringPolicy action. */
+	static readonly ModifyTransitGatewayMeteringPolicyConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the ModifyTransitGatewayMeteringPolicy action. */
-	static readonly MODIFY_TRANSIT_GATEWAY_METERING_POLICY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the ModifyTransitGatewayPrefixListReference action. */
-	static readonly MODIFY_TRANSIT_GATEWAY_PREFIX_LIST_REFERENCE_CONDITION_KEYS: string[] =
+	static readonly ModifyTransitGatewayPrefixListReferenceConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyTransitGatewayVpcAttachment action. */
-	static readonly MODIFY_TRANSIT_GATEWAY_VPC_ATTACHMENT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyTransitGatewayVpcAttachmentConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyVerifiedAccessEndpoint action. */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT_CONDITION_KEYS: string[] = [
+	static readonly ModifyVerifiedAccessEndpointConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVerifiedAccessEndpointPolicy action. */
-	static readonly MODIFY_VERIFIED_ACCESS_ENDPOINT_POLICY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyVerifiedAccessEndpointPolicyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyVerifiedAccessGroup action. */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyVerifiedAccessGroupConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVerifiedAccessGroupPolicy action. */
-	static readonly MODIFY_VERIFIED_ACCESS_GROUP_POLICY_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyVerifiedAccessGroupPolicyConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyVerifiedAccessInstance action. */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly ModifyVerifiedAccessInstanceConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVerifiedAccessInstanceLoggingConfiguration action. */
-	static readonly MODIFY_VERIFIED_ACCESS_INSTANCE_LOGGING_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly ModifyVerifiedAccessInstanceLoggingConfigurationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVerifiedAccessTrustProvider action. */
-	static readonly MODIFY_VERIFIED_ACCESS_TRUST_PROVIDER_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyVerifiedAccessTrustProviderConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyVolume action. */
-	static readonly MODIFY_VOLUME_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyVolumeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyVolumeAttribute action. */
-	static readonly MODIFY_VOLUME_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ModifyVolumeAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcAttribute action. */
-	static readonly MODIFY_VPC_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpcAttributeConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the ModifyVpcBlockPublicAccessExclusion action. */
+	static readonly ModifyVpcBlockPublicAccessExclusionConditionKeys: string[] = [
 		"ec2:Region",
 	];
-	/** Condition keys applicable to the ModifyVpcBlockPublicAccessExclusion action. */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_EXCLUSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcBlockPublicAccessOptions action. */
-	static readonly MODIFY_VPC_BLOCK_PUBLIC_ACCESS_OPTIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly ModifyVpcBlockPublicAccessOptionsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the ModifyVpcEncryptionControl action. */
-	static readonly MODIFY_VPC_ENCRYPTION_CONTROL_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpcEncryptionControlConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVpcEndpoint action. */
-	static readonly MODIFY_VPC_ENDPOINT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ModifyVpcEndpointConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointConnectionNotification action. */
-	static readonly MODIFY_VPC_ENDPOINT_CONNECTION_NOTIFICATION_CONDITION_KEYS: string[] =
+	static readonly ModifyVpcEndpointConnectionNotificationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointServiceConfiguration action. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly ModifyVpcEndpointServiceConfigurationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointServicePayerResponsibility action. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PAYER_RESPONSIBILITY_CONDITION_KEYS: string[] =
+	static readonly ModifyVpcEndpointServicePayerResponsibilityConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpcEndpointServicePermissions action. */
-	static readonly MODIFY_VPC_ENDPOINT_SERVICE_PERMISSIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the ModifyVpcPeeringConnectionOptions action. */
-	static readonly MODIFY_VPC_PEERING_CONNECTION_OPTIONS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
-	/** Condition keys applicable to the ModifyVpcTenancy action. */
-	static readonly MODIFY_VPC_TENANCY_CONDITION_KEYS: string[] = ["ec2:Region"];
-	/** Condition keys applicable to the ModifyVpnConnection action. */
-	static readonly MODIFY_VPN_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpcEndpointServicePermissionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
+	/** Condition keys applicable to the ModifyVpcPeeringConnectionOptions action. */
+	static readonly ModifyVpcPeeringConnectionOptionsConditionKeys: string[] = [
+		"ec2:Region",
+	];
+	/** Condition keys applicable to the ModifyVpcTenancy action. */
+	static readonly ModifyVpcTenancyConditionKeys: string[] = ["ec2:Region"];
+	/** Condition keys applicable to the ModifyVpnConnection action. */
+	static readonly ModifyVpnConnectionConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ModifyVpnConnectionOptions action. */
-	static readonly MODIFY_VPN_CONNECTION_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpnConnectionOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVpnTunnelCertificate action. */
-	static readonly MODIFY_VPN_TUNNEL_CERTIFICATE_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpnTunnelCertificateConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ModifyVpnTunnelOptions action. */
-	static readonly MODIFY_VPN_TUNNEL_OPTIONS_CONDITION_KEYS: string[] = [
+	static readonly ModifyVpnTunnelOptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the MonitorInstances action. */
-	static readonly MONITOR_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly MonitorInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the MoveAddressToVpc action. */
-	static readonly MOVE_ADDRESS_TO_VPC_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly MoveAddressToVpcConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the MoveByoipCidrToIpam action. */
-	static readonly MOVE_BYOIP_CIDR_TO_IPAM_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly MoveByoipCidrToIpamConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the MoveCapacityReservationInstances action. */
-	static readonly MOVE_CAPACITY_RESERVATION_INSTANCES_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly MoveCapacityReservationInstancesConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the PauseVolumeIO action. */
-	static readonly PAUSE_VOLUME_IO_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly PauseVolumeIOConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ProvisionByoipCidr action. */
-	static readonly PROVISION_BYOIP_CIDR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ProvisionByoipCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ProvisionIpamByoasn action. */
-	static readonly PROVISION_IPAM_BYOASN_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ProvisionIpamByoasnConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ProvisionIpamPoolCidr action. */
-	static readonly PROVISION_IPAM_POOL_CIDR_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ProvisionIpamPoolCidrConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ProvisionPublicIpv4PoolCidr action. */
-	static readonly PROVISION_PUBLIC_IPV4_POOL_CIDR_CONDITION_KEYS: string[] = [
+	static readonly ProvisionPublicIpv4PoolCidrConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the PurchaseCapacityBlock action. */
-	static readonly PURCHASE_CAPACITY_BLOCK_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly PurchaseCapacityBlockConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the PurchaseCapacityBlockExtension action. */
-	static readonly PURCHASE_CAPACITY_BLOCK_EXTENSION_CONDITION_KEYS: string[] = [
+	static readonly PurchaseCapacityBlockExtensionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the PurchaseHostReservation action. */
-	static readonly PURCHASE_HOST_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly PurchaseHostReservationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the PurchaseReservedInstancesOffering action. */
-	static readonly PURCHASE_RESERVED_INSTANCES_OFFERING_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly PurchaseReservedInstancesOfferingConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the PurchaseScheduledInstances action. */
-	static readonly PURCHASE_SCHEDULED_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly PurchaseScheduledInstancesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly PutResourcePolicyConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RebootInstances action. */
-	static readonly REBOOT_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly RebootInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RegisterImage action. */
-	static readonly REGISTER_IMAGE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly RegisterImageConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RegisterInstanceEventNotificationAttributes action. */
-	static readonly REGISTER_INSTANCE_EVENT_NOTIFICATION_ATTRIBUTES_CONDITION_KEYS: string[] =
+	static readonly RegisterInstanceEventNotificationAttributesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RegisterTransitGatewayMulticastGroupMembers action. */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_MEMBERS_CONDITION_KEYS: string[] =
+	static readonly RegisterTransitGatewayMulticastGroupMembersConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RegisterTransitGatewayMulticastGroupSources action. */
-	static readonly REGISTER_TRANSIT_GATEWAY_MULTICAST_GROUP_SOURCES_CONDITION_KEYS: string[] =
+	static readonly RegisterTransitGatewayMulticastGroupSourcesConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RejectCapacityReservationBillingOwnership action. */
-	static readonly REJECT_CAPACITY_RESERVATION_BILLING_OWNERSHIP_CONDITION_KEYS: string[] =
+	static readonly RejectCapacityReservationBillingOwnershipConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RejectTransitGatewayClientVpnAttachment action. */
-	static readonly REJECT_TRANSIT_GATEWAY_CLIENT_VPN_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly RejectTransitGatewayClientVpnAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RejectTransitGatewayMulticastDomainAssociations action. */
-	static readonly REJECT_TRANSIT_GATEWAY_MULTICAST_DOMAIN_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly RejectTransitGatewayMulticastDomainAssociationsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RejectTransitGatewayPeeringAttachment action. */
-	static readonly REJECT_TRANSIT_GATEWAY_PEERING_ATTACHMENT_CONDITION_KEYS: string[] =
+	static readonly RejectTransitGatewayPeeringAttachmentConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the RejectTransitGatewayVpcAttachment action. */
-	static readonly REJECT_TRANSIT_GATEWAY_VPC_ATTACHMENT_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly RejectTransitGatewayVpcAttachmentConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the RejectVpcEndpointConnections action. */
-	static readonly REJECT_VPC_ENDPOINT_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly RejectVpcEndpointConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RejectVpcPeeringConnection action. */
-	static readonly REJECT_VPC_PEERING_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly RejectVpcPeeringConnectionConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReleaseAddress action. */
-	static readonly RELEASE_ADDRESS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ReleaseAddressConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ReleaseHosts action. */
-	static readonly RELEASE_HOSTS_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ReleaseHostsConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ReleaseIpamPoolAllocation action. */
-	static readonly RELEASE_IPAM_POOL_ALLOCATION_CONDITION_KEYS: string[] = [
+	static readonly ReleaseIpamPoolAllocationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReplaceIamInstanceProfileAssociation action. */
-	static readonly REPLACE_IAM_INSTANCE_PROFILE_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly ReplaceIamInstanceProfileAssociationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ReplaceImageCriteriaInAllowedImagesSettings action. */
-	static readonly REPLACE_IMAGE_CRITERIA_IN_ALLOWED_IMAGES_SETTINGS_CONDITION_KEYS: string[] =
+	static readonly ReplaceImageCriteriaInAllowedImagesSettingsConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the ReplaceNetworkAclAssociation action. */
-	static readonly REPLACE_NETWORK_ACL_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly ReplaceNetworkAclAssociationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReplaceNetworkAclEntry action. */
-	static readonly REPLACE_NETWORK_ACL_ENTRY_CONDITION_KEYS: string[] = [
+	static readonly ReplaceNetworkAclEntryConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReplaceRoute action. */
-	static readonly REPLACE_ROUTE_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ReplaceRouteConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ReplaceRouteTableAssociation action. */
-	static readonly REPLACE_ROUTE_TABLE_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly ReplaceRouteTableAssociationConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReplaceTransitGatewayRoute action. */
-	static readonly REPLACE_TRANSIT_GATEWAY_ROUTE_CONDITION_KEYS: string[] = [
+	static readonly ReplaceTransitGatewayRouteConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ReplaceVpnTunnel action. */
-	static readonly REPLACE_VPN_TUNNEL_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly ReplaceVpnTunnelConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ReportInstanceStatus action. */
-	static readonly REPORT_INSTANCE_STATUS_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ReportInstanceStatusConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RequestSpotFleet action. */
-	static readonly REQUEST_SPOT_FLEET_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly RequestSpotFleetConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RequestSpotInstances action. */
-	static readonly REQUEST_SPOT_INSTANCES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly RequestSpotInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ResetAddressAttribute action. */
-	static readonly RESET_ADDRESS_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ResetAddressAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ResetEbsDefaultKmsKeyId action. */
-	static readonly RESET_EBS_DEFAULT_KMS_KEY_ID_CONDITION_KEYS: string[] = [
+	static readonly ResetEbsDefaultKmsKeyIdConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ResetFpgaImageAttribute action. */
-	static readonly RESET_FPGA_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ResetFpgaImageAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ResetImageAttribute action. */
-	static readonly RESET_IMAGE_ATTRIBUTE_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly ResetImageAttributeConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the ResetInstanceAttribute action. */
-	static readonly RESET_INSTANCE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ResetInstanceAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ResetNetworkInterfaceAttribute action. */
-	static readonly RESET_NETWORK_INTERFACE_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ResetNetworkInterfaceAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the ResetSnapshotAttribute action. */
-	static readonly RESET_SNAPSHOT_ATTRIBUTE_CONDITION_KEYS: string[] = [
+	static readonly ResetSnapshotAttributeConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RestoreAddressToClassic action. */
-	static readonly RESTORE_ADDRESS_TO_CLASSIC_CONDITION_KEYS: string[] = [
+	static readonly RestoreAddressToClassicConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RestoreImageFromRecycleBin action. */
-	static readonly RESTORE_IMAGE_FROM_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly RestoreImageFromRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RestoreManagedPrefixListVersion action. */
-	static readonly RESTORE_MANAGED_PREFIX_LIST_VERSION_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly RestoreManagedPrefixListVersionConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the RestoreSnapshotFromRecycleBin action. */
-	static readonly RESTORE_SNAPSHOT_FROM_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly RestoreSnapshotFromRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RestoreSnapshotTier action. */
-	static readonly RESTORE_SNAPSHOT_TIER_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly RestoreSnapshotTierConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RestoreVolumeFromRecycleBin action. */
-	static readonly RESTORE_VOLUME_FROM_RECYCLE_BIN_CONDITION_KEYS: string[] = [
+	static readonly RestoreVolumeFromRecycleBinConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RevokeClientVpnIngress action. */
-	static readonly REVOKE_CLIENT_VPN_INGRESS_CONDITION_KEYS: string[] = [
+	static readonly RevokeClientVpnIngressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RevokeSecurityGroupEgress action. */
-	static readonly REVOKE_SECURITY_GROUP_EGRESS_CONDITION_KEYS: string[] = [
+	static readonly RevokeSecurityGroupEgressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RevokeSecurityGroupIngress action. */
-	static readonly REVOKE_SECURITY_GROUP_INGRESS_CONDITION_KEYS: string[] = [
+	static readonly RevokeSecurityGroupIngressConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the RunInstances action. */
-	static readonly RUN_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly RunInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the RunScheduledInstances action. */
-	static readonly RUN_SCHEDULED_INSTANCES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly RunScheduledInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the SearchLocalGatewayRoutes action. */
-	static readonly SEARCH_LOCAL_GATEWAY_ROUTES_CONDITION_KEYS: string[] = [
+	static readonly SearchLocalGatewayRoutesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the SearchTransitGatewayMulticastGroups action. */
-	static readonly SEARCH_TRANSIT_GATEWAY_MULTICAST_GROUPS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly SearchTransitGatewayMulticastGroupsConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the SearchTransitGatewayRoutes action. */
-	static readonly SEARCH_TRANSIT_GATEWAY_ROUTES_CONDITION_KEYS: string[] = [
+	static readonly SearchTransitGatewayRoutesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the SendDiagnosticInterrupt action. */
-	static readonly SEND_DIAGNOSTIC_INTERRUPT_CONDITION_KEYS: string[] = [
+	static readonly SendDiagnosticInterruptConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the SendSpotInstanceInterruptions action. */
-	static readonly SEND_SPOT_INSTANCE_INTERRUPTIONS_CONDITION_KEYS: string[] = [
+	static readonly SendSpotInstanceInterruptionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the StartDeclarativePoliciesReport action. */
-	static readonly START_DECLARATIVE_POLICIES_REPORT_CONDITION_KEYS: string[] = [
+	static readonly StartDeclarativePoliciesReportConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the StartInstances action. */
-	static readonly START_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly StartInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the StartNetworkInsightsAccessScopeAnalysis action. */
-	static readonly START_NETWORK_INSIGHTS_ACCESS_SCOPE_ANALYSIS_CONDITION_KEYS: string[] =
+	static readonly StartNetworkInsightsAccessScopeAnalysisConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the StartNetworkInsightsAnalysis action. */
-	static readonly START_NETWORK_INSIGHTS_ANALYSIS_CONDITION_KEYS: string[] = [
+	static readonly StartNetworkInsightsAnalysisConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the StartVpcEndpointServicePrivateDnsVerification action. */
-	static readonly START_VPC_ENDPOINT_SERVICE_PRIVATE_DNS_VERIFICATION_CONDITION_KEYS: string[] =
+	static readonly StartVpcEndpointServicePrivateDnsVerificationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the StopInstances action. */
-	static readonly STOP_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly StopInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the TerminateClientVpnConnections action. */
-	static readonly TERMINATE_CLIENT_VPN_CONNECTIONS_CONDITION_KEYS: string[] = [
+	static readonly TerminateClientVpnConnectionsConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the TerminateInstances action. */
-	static readonly TERMINATE_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly TerminateInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the UnassignIpv6Addresses action. */
-	static readonly UNASSIGN_IPV6_ADDRESSES_CONDITION_KEYS: string[] = [
-		"ec2:Region",
-	];
+	static readonly UnassignIpv6AddressesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the UnassignPrivateIpAddresses action. */
-	static readonly UNASSIGN_PRIVATE_IP_ADDRESSES_CONDITION_KEYS: string[] = [
+	static readonly UnassignPrivateIpAddressesConditionKeys: string[] = [
 		"ec2:Region",
 	];
 	/** Condition keys applicable to the UnassignPrivateNatGatewayAddress action. */
-	static readonly UNASSIGN_PRIVATE_NAT_GATEWAY_ADDRESS_CONDITION_KEYS: string[] =
-		["ec2:Region"];
+	static readonly UnassignPrivateNatGatewayAddressConditionKeys: string[] = [
+		"ec2:Region",
+	];
 	/** Condition keys applicable to the UnlockSnapshot action. */
-	static readonly UNLOCK_SNAPSHOT_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly UnlockSnapshotConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the UnmonitorInstances action. */
-	static readonly UNMONITOR_INSTANCES_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly UnmonitorInstancesConditionKeys: string[] = ["ec2:Region"];
 	/** Condition keys applicable to the UpdateCapacityManagerMonitoredTagKeys action. */
-	static readonly UPDATE_CAPACITY_MANAGER_MONITORED_TAG_KEYS_CONDITION_KEYS: string[] =
+	static readonly UpdateCapacityManagerMonitoredTagKeysConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the UpdateCapacityManagerOrganizationsAccess action. */
-	static readonly UPDATE_CAPACITY_MANAGER_ORGANIZATIONS_ACCESS_CONDITION_KEYS: string[] =
+	static readonly UpdateCapacityManagerOrganizationsAccessConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the UpdateInterruptibleCapacityReservationAllocation action. */
-	static readonly UPDATE_INTERRUPTIBLE_CAPACITY_RESERVATION_ALLOCATION_CONDITION_KEYS: string[] =
+	static readonly UpdateInterruptibleCapacityReservationAllocationConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsEgress action. */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_EGRESS_CONDITION_KEYS: string[] =
+	static readonly UpdateSecurityGroupRuleDescriptionsEgressConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the UpdateSecurityGroupRuleDescriptionsIngress action. */
-	static readonly UPDATE_SECURITY_GROUP_RULE_DESCRIPTIONS_INGRESS_CONDITION_KEYS: string[] =
+	static readonly UpdateSecurityGroupRuleDescriptionsIngressConditionKeys: string[] =
 		["ec2:Region"];
 	/** Condition keys applicable to the WithdrawByoipCidr action. */
-	static readonly WITHDRAW_BYOIP_CIDR_CONDITION_KEYS: string[] = ["ec2:Region"];
+	static readonly WithdrawByoipCidrConditionKeys: string[] = ["ec2:Region"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: ec2:AccepterVpc (ARN) */
 	static readonly ACCEPTER_VPC = "ec2:AccepterVpc";
 	/** Condition key: ec2:Add/group (String) */
@@ -13897,8 +15352,6 @@ export class EC2Conditions {
 	static readonly ASSOCIATE_PUBLIC_IP_ADDRESS = "ec2:AssociatePublicIpAddress";
 	/** Condition key: ec2:Attribute (String) */
 	static readonly ATTRIBUTE = "ec2:Attribute";
-	/** Condition key: ec2:Attribute/${AttributeName} (String) */
-	static readonly ATTRIBUTE = "ec2:Attribute/${AttributeName}";
 	/** Condition key: ec2:AuthenticationType (String) */
 	static readonly AUTHENTICATION_TYPE = "ec2:AuthenticationType";
 	/** Condition key: ec2:AuthorizedService (String) */
@@ -14256,13 +15709,6 @@ export class EC2Conditions {
 	 */
 	static attribute(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "ec2:Attribute": value } };
-	}
-
-	/**
-	 * Generates a condition block for `ec2:Attribute/${AttributeName}`.
-	 */
-	static attribute(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "ec2:Attribute/${AttributeName}": value } };
 	}
 
 	/**
@@ -15019,13 +16465,6 @@ export class EC2Conditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "ec2:ReservedInstancesOfferingType": value } };
-	}
-
-	/**
-	 * Generates a condition block for `ec2:ResourceTag/${TagKey}`.
-	 */
-	static resourceTag(value: string): Record<string, Record<string, string>> {
-		return { StringEquals: { "ec2:ResourceTag/${TagKey}": value } };
 	}
 
 	/**

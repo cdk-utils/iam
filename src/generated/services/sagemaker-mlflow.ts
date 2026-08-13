@@ -13,227 +13,255 @@ export class SagemakerMlflowActions {
 	static readonly SERVICE_PREFIX = "sagemaker-mlflow";
 
 	/** [Read] sagemaker-mlflow:AccessUI */
-	static readonly ACCESS_UI = "sagemaker-mlflow:AccessUI";
+	static readonly AccessUI = "sagemaker-mlflow:AccessUI";
 	/** [Write] sagemaker-mlflow:CreateExperiment */
-	static readonly CREATE_EXPERIMENT = "sagemaker-mlflow:CreateExperiment";
+	static readonly CreateExperiment = "sagemaker-mlflow:CreateExperiment";
 	/** [Write] sagemaker-mlflow:CreateModelVersion */
-	static readonly CREATE_MODEL_VERSION = "sagemaker-mlflow:CreateModelVersion";
+	static readonly CreateModelVersion = "sagemaker-mlflow:CreateModelVersion";
 	/** [Write] sagemaker-mlflow:CreateRegisteredModel */
-	static readonly CREATE_REGISTERED_MODEL =
+	static readonly CreateRegisteredModel =
 		"sagemaker-mlflow:CreateRegisteredModel";
 	/** [Write] sagemaker-mlflow:CreateRun */
-	static readonly CREATE_RUN = "sagemaker-mlflow:CreateRun";
+	static readonly CreateRun = "sagemaker-mlflow:CreateRun";
 	/** [Write] sagemaker-mlflow:DeleteExperiment */
-	static readonly DELETE_EXPERIMENT = "sagemaker-mlflow:DeleteExperiment";
+	static readonly DeleteExperiment = "sagemaker-mlflow:DeleteExperiment";
 	/** [Write] sagemaker-mlflow:DeleteLoggedModel */
-	static readonly DELETE_LOGGED_MODEL = "sagemaker-mlflow:DeleteLoggedModel";
+	static readonly DeleteLoggedModel = "sagemaker-mlflow:DeleteLoggedModel";
 	/** [Write] sagemaker-mlflow:DeleteLoggedModelTag */
-	static readonly DELETE_LOGGED_MODEL_TAG =
+	static readonly DeleteLoggedModelTag =
 		"sagemaker-mlflow:DeleteLoggedModelTag";
 	/** [Write] sagemaker-mlflow:DeleteModelVersion */
-	static readonly DELETE_MODEL_VERSION = "sagemaker-mlflow:DeleteModelVersion";
+	static readonly DeleteModelVersion = "sagemaker-mlflow:DeleteModelVersion";
 	/** [Write] sagemaker-mlflow:DeleteModelVersionTag */
-	static readonly DELETE_MODEL_VERSION_TAG =
+	static readonly DeleteModelVersionTag =
 		"sagemaker-mlflow:DeleteModelVersionTag";
 	/** [Write] sagemaker-mlflow:DeleteRegisteredModel */
-	static readonly DELETE_REGISTERED_MODEL =
+	static readonly DeleteRegisteredModel =
 		"sagemaker-mlflow:DeleteRegisteredModel";
 	/** [Write] sagemaker-mlflow:DeleteRegisteredModelAlias */
-	static readonly DELETE_REGISTERED_MODEL_ALIAS =
+	static readonly DeleteRegisteredModelAlias =
 		"sagemaker-mlflow:DeleteRegisteredModelAlias";
 	/** [Write] sagemaker-mlflow:DeleteRegisteredModelTag */
-	static readonly DELETE_REGISTERED_MODEL_TAG =
+	static readonly DeleteRegisteredModelTag =
 		"sagemaker-mlflow:DeleteRegisteredModelTag";
 	/** [Write] sagemaker-mlflow:DeleteRun */
-	static readonly DELETE_RUN = "sagemaker-mlflow:DeleteRun";
+	static readonly DeleteRun = "sagemaker-mlflow:DeleteRun";
 	/** [Write] sagemaker-mlflow:DeleteTag */
-	static readonly DELETE_TAG = "sagemaker-mlflow:DeleteTag";
+	static readonly DeleteTag = "sagemaker-mlflow:DeleteTag";
 	/** [Write] sagemaker-mlflow:DeleteTraceTag */
-	static readonly DELETE_TRACE_TAG = "sagemaker-mlflow:DeleteTraceTag";
+	static readonly DeleteTraceTag = "sagemaker-mlflow:DeleteTraceTag";
 	/** [Write] sagemaker-mlflow:DeleteTraces */
-	static readonly DELETE_TRACES = "sagemaker-mlflow:DeleteTraces";
+	static readonly DeleteTraces = "sagemaker-mlflow:DeleteTraces";
 	/** [Write] sagemaker-mlflow:EndTrace */
-	static readonly END_TRACE = "sagemaker-mlflow:EndTrace";
+	static readonly EndTrace = "sagemaker-mlflow:EndTrace";
 	/** [Write] sagemaker-mlflow:FinalizeLoggedModel */
-	static readonly FINALIZE_LOGGED_MODEL =
-		"sagemaker-mlflow:FinalizeLoggedModel";
+	static readonly FinalizeLoggedModel = "sagemaker-mlflow:FinalizeLoggedModel";
 	/** [Read] sagemaker-mlflow:GetDownloadURIForModelVersionArtifacts */
-	static readonly GET_DOWNLOAD_URI_FOR_MODEL_VERSION_ARTIFACTS =
+	static readonly actionGetDownloadURIForModelVersionArtifacts =
 		"sagemaker-mlflow:GetDownloadURIForModelVersionArtifacts";
 	/** [Read] sagemaker-mlflow:GetExperiment */
-	static readonly GET_EXPERIMENT = "sagemaker-mlflow:GetExperiment";
+	static readonly actionGetExperiment = "sagemaker-mlflow:GetExperiment";
 	/** [Read] sagemaker-mlflow:GetExperimentByName */
-	static readonly GET_EXPERIMENT_BY_NAME =
+	static readonly actionGetExperimentByName =
 		"sagemaker-mlflow:GetExperimentByName";
 	/** [List] sagemaker-mlflow:GetLatestModelVersions */
-	static readonly GET_LATEST_MODEL_VERSIONS =
+	static readonly actionGetLatestModelVersions =
 		"sagemaker-mlflow:GetLatestModelVersions";
 	/** [Read] sagemaker-mlflow:GetLoggedModel */
-	static readonly GET_LOGGED_MODEL = "sagemaker-mlflow:GetLoggedModel";
+	static readonly actionGetLoggedModel = "sagemaker-mlflow:GetLoggedModel";
 	/** [Read] sagemaker-mlflow:GetMetricHistory */
-	static readonly GET_METRIC_HISTORY = "sagemaker-mlflow:GetMetricHistory";
+	static readonly actionGetMetricHistory = "sagemaker-mlflow:GetMetricHistory";
 	/** [Read] sagemaker-mlflow:GetModelVersion */
-	static readonly GET_MODEL_VERSION = "sagemaker-mlflow:GetModelVersion";
+	static readonly actionGetModelVersion = "sagemaker-mlflow:GetModelVersion";
 	/** [Read] sagemaker-mlflow:GetModelVersionByAlias */
-	static readonly GET_MODEL_VERSION_BY_ALIAS =
+	static readonly actionGetModelVersionByAlias =
 		"sagemaker-mlflow:GetModelVersionByAlias";
 	/** [Read] sagemaker-mlflow:GetRegisteredModel */
-	static readonly GET_REGISTERED_MODEL = "sagemaker-mlflow:GetRegisteredModel";
+	static readonly actionGetRegisteredModel =
+		"sagemaker-mlflow:GetRegisteredModel";
 	/** [Read] sagemaker-mlflow:GetRun */
-	static readonly GET_RUN = "sagemaker-mlflow:GetRun";
+	static readonly actionGetRun = "sagemaker-mlflow:GetRun";
 	/** [Read] sagemaker-mlflow:GetTraceInfo */
-	static readonly GET_TRACE_INFO = "sagemaker-mlflow:GetTraceInfo";
+	static readonly actionGetTraceInfo = "sagemaker-mlflow:GetTraceInfo";
 	/** [List] sagemaker-mlflow:ListArtifacts */
-	static readonly LIST_ARTIFACTS = "sagemaker-mlflow:ListArtifacts";
+	static readonly ListArtifacts = "sagemaker-mlflow:ListArtifacts";
 	/** [List] sagemaker-mlflow:ListLoggedModelArtifacts */
-	static readonly LIST_LOGGED_MODEL_ARTIFACTS =
+	static readonly ListLoggedModelArtifacts =
 		"sagemaker-mlflow:ListLoggedModelArtifacts";
 	/** [Write] sagemaker-mlflow:LogBatch */
-	static readonly LOG_BATCH = "sagemaker-mlflow:LogBatch";
+	static readonly LogBatch = "sagemaker-mlflow:LogBatch";
 	/** [Write] sagemaker-mlflow:LogInputs */
-	static readonly LOG_INPUTS = "sagemaker-mlflow:LogInputs";
+	static readonly LogInputs = "sagemaker-mlflow:LogInputs";
 	/** [Write] sagemaker-mlflow:LogLoggedModelParams */
-	static readonly LOG_LOGGED_MODEL_PARAMS =
+	static readonly LogLoggedModelParams =
 		"sagemaker-mlflow:LogLoggedModelParams";
 	/** [Write] sagemaker-mlflow:LogMetric */
-	static readonly LOG_METRIC = "sagemaker-mlflow:LogMetric";
+	static readonly LogMetric = "sagemaker-mlflow:LogMetric";
 	/** [Write] sagemaker-mlflow:LogModel */
-	static readonly LOG_MODEL = "sagemaker-mlflow:LogModel";
+	static readonly LogModel = "sagemaker-mlflow:LogModel";
 	/** [Write] sagemaker-mlflow:LogOutputs */
-	static readonly LOG_OUTPUTS = "sagemaker-mlflow:LogOutputs";
+	static readonly LogOutputs = "sagemaker-mlflow:LogOutputs";
 	/** [Write] sagemaker-mlflow:LogParam */
-	static readonly LOG_PARAM = "sagemaker-mlflow:LogParam";
+	static readonly LogParam = "sagemaker-mlflow:LogParam";
 	/** [Write] sagemaker-mlflow:RenameRegisteredModel */
-	static readonly RENAME_REGISTERED_MODEL =
+	static readonly RenameRegisteredModel =
 		"sagemaker-mlflow:RenameRegisteredModel";
 	/** [Write] sagemaker-mlflow:RestoreExperiment */
-	static readonly RESTORE_EXPERIMENT = "sagemaker-mlflow:RestoreExperiment";
+	static readonly RestoreExperiment = "sagemaker-mlflow:RestoreExperiment";
 	/** [Write] sagemaker-mlflow:RestoreRun */
-	static readonly RESTORE_RUN = "sagemaker-mlflow:RestoreRun";
+	static readonly RestoreRun = "sagemaker-mlflow:RestoreRun";
 	/** [Read] sagemaker-mlflow:SearchExperiments */
-	static readonly SEARCH_EXPERIMENTS = "sagemaker-mlflow:SearchExperiments";
+	static readonly SearchExperiments = "sagemaker-mlflow:SearchExperiments";
 	/** [Read] sagemaker-mlflow:SearchLoggedModels */
-	static readonly SEARCH_LOGGED_MODELS = "sagemaker-mlflow:SearchLoggedModels";
+	static readonly SearchLoggedModels = "sagemaker-mlflow:SearchLoggedModels";
 	/** [Read] sagemaker-mlflow:SearchModelVersions */
-	static readonly SEARCH_MODEL_VERSIONS =
-		"sagemaker-mlflow:SearchModelVersions";
+	static readonly SearchModelVersions = "sagemaker-mlflow:SearchModelVersions";
 	/** [Read] sagemaker-mlflow:SearchRegisteredModels */
-	static readonly SEARCH_REGISTERED_MODELS =
+	static readonly SearchRegisteredModels =
 		"sagemaker-mlflow:SearchRegisteredModels";
 	/** [Read] sagemaker-mlflow:SearchRuns */
-	static readonly SEARCH_RUNS = "sagemaker-mlflow:SearchRuns";
+	static readonly SearchRuns = "sagemaker-mlflow:SearchRuns";
 	/** [Read] sagemaker-mlflow:SearchTraces */
-	static readonly SEARCH_TRACES = "sagemaker-mlflow:SearchTraces";
+	static readonly SearchTraces = "sagemaker-mlflow:SearchTraces";
 	/** [Write] sagemaker-mlflow:SetExperimentTag */
-	static readonly SET_EXPERIMENT_TAG = "sagemaker-mlflow:SetExperimentTag";
+	static readonly actionSetExperimentTag = "sagemaker-mlflow:SetExperimentTag";
 	/** [Write] sagemaker-mlflow:SetLoggedModelTags */
-	static readonly SET_LOGGED_MODEL_TAGS = "sagemaker-mlflow:SetLoggedModelTags";
+	static readonly actionSetLoggedModelTags =
+		"sagemaker-mlflow:SetLoggedModelTags";
 	/** [Write] sagemaker-mlflow:SetModelVersionTag */
-	static readonly SET_MODEL_VERSION_TAG = "sagemaker-mlflow:SetModelVersionTag";
+	static readonly actionSetModelVersionTag =
+		"sagemaker-mlflow:SetModelVersionTag";
 	/** [Write] sagemaker-mlflow:SetRegisteredModelAlias */
-	static readonly SET_REGISTERED_MODEL_ALIAS =
+	static readonly actionSetRegisteredModelAlias =
 		"sagemaker-mlflow:SetRegisteredModelAlias";
 	/** [Write] sagemaker-mlflow:SetRegisteredModelTag */
-	static readonly SET_REGISTERED_MODEL_TAG =
+	static readonly actionSetRegisteredModelTag =
 		"sagemaker-mlflow:SetRegisteredModelTag";
 	/** [Write] sagemaker-mlflow:SetTag */
-	static readonly SET_TAG = "sagemaker-mlflow:SetTag";
+	static readonly actionSetTag = "sagemaker-mlflow:SetTag";
 	/** [Write] sagemaker-mlflow:SetTraceTag */
-	static readonly SET_TRACE_TAG = "sagemaker-mlflow:SetTraceTag";
+	static readonly actionSetTraceTag = "sagemaker-mlflow:SetTraceTag";
 	/** [Write] sagemaker-mlflow:StartTrace */
-	static readonly START_TRACE = "sagemaker-mlflow:StartTrace";
+	static readonly StartTrace = "sagemaker-mlflow:StartTrace";
 	/** [Write] sagemaker-mlflow:TransitionModelVersionStage */
-	static readonly TRANSITION_MODEL_VERSION_STAGE =
+	static readonly TransitionModelVersionStage =
 		"sagemaker-mlflow:TransitionModelVersionStage";
 	/** [Write] sagemaker-mlflow:UpdateExperiment */
-	static readonly UPDATE_EXPERIMENT = "sagemaker-mlflow:UpdateExperiment";
+	static readonly UpdateExperiment = "sagemaker-mlflow:UpdateExperiment";
 	/** [Write] sagemaker-mlflow:UpdateModelVersion */
-	static readonly UPDATE_MODEL_VERSION = "sagemaker-mlflow:UpdateModelVersion";
+	static readonly UpdateModelVersion = "sagemaker-mlflow:UpdateModelVersion";
 	/** [Write] sagemaker-mlflow:UpdateRegisteredModel */
-	static readonly UPDATE_REGISTERED_MODEL =
+	static readonly UpdateRegisteredModel =
 		"sagemaker-mlflow:UpdateRegisteredModel";
 	/** [Write] sagemaker-mlflow:UpdateRun */
-	static readonly UPDATE_RUN = "sagemaker-mlflow:UpdateRun";
+	static readonly UpdateRun = "sagemaker-mlflow:UpdateRun";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SagemakerMlflowActions.ACCESS_UI,
-		SagemakerMlflowActions.GET_DOWNLOAD_URI_FOR_MODEL_VERSION_ARTIFACTS,
-		SagemakerMlflowActions.GET_EXPERIMENT,
-		SagemakerMlflowActions.GET_EXPERIMENT_BY_NAME,
-		SagemakerMlflowActions.GET_LOGGED_MODEL,
-		SagemakerMlflowActions.GET_METRIC_HISTORY,
-		SagemakerMlflowActions.GET_MODEL_VERSION,
-		SagemakerMlflowActions.GET_MODEL_VERSION_BY_ALIAS,
-		SagemakerMlflowActions.GET_REGISTERED_MODEL,
-		SagemakerMlflowActions.GET_RUN,
-		SagemakerMlflowActions.GET_TRACE_INFO,
-		SagemakerMlflowActions.SEARCH_EXPERIMENTS,
-		SagemakerMlflowActions.SEARCH_LOGGED_MODELS,
-		SagemakerMlflowActions.SEARCH_MODEL_VERSIONS,
-		SagemakerMlflowActions.SEARCH_REGISTERED_MODELS,
-		SagemakerMlflowActions.SEARCH_RUNS,
-		SagemakerMlflowActions.SEARCH_TRACES,
+	static readonly AllReadActions: string[] = [
+		SagemakerMlflowActions.AccessUI,
+		SagemakerMlflowActions.actionGetDownloadURIForModelVersionArtifacts,
+		SagemakerMlflowActions.actionGetExperiment,
+		SagemakerMlflowActions.actionGetExperimentByName,
+		SagemakerMlflowActions.actionGetLoggedModel,
+		SagemakerMlflowActions.actionGetMetricHistory,
+		SagemakerMlflowActions.actionGetModelVersion,
+		SagemakerMlflowActions.actionGetModelVersionByAlias,
+		SagemakerMlflowActions.actionGetRegisteredModel,
+		SagemakerMlflowActions.actionGetRun,
+		SagemakerMlflowActions.actionGetTraceInfo,
+		SagemakerMlflowActions.SearchExperiments,
+		SagemakerMlflowActions.SearchLoggedModels,
+		SagemakerMlflowActions.SearchModelVersions,
+		SagemakerMlflowActions.SearchRegisteredModels,
+		SagemakerMlflowActions.SearchRuns,
+		SagemakerMlflowActions.SearchTraces,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SagemakerMlflowActions.CREATE_EXPERIMENT,
-		SagemakerMlflowActions.CREATE_MODEL_VERSION,
-		SagemakerMlflowActions.CREATE_REGISTERED_MODEL,
-		SagemakerMlflowActions.CREATE_RUN,
-		SagemakerMlflowActions.DELETE_EXPERIMENT,
-		SagemakerMlflowActions.DELETE_LOGGED_MODEL,
-		SagemakerMlflowActions.DELETE_LOGGED_MODEL_TAG,
-		SagemakerMlflowActions.DELETE_MODEL_VERSION,
-		SagemakerMlflowActions.DELETE_MODEL_VERSION_TAG,
-		SagemakerMlflowActions.DELETE_REGISTERED_MODEL,
-		SagemakerMlflowActions.DELETE_REGISTERED_MODEL_ALIAS,
-		SagemakerMlflowActions.DELETE_REGISTERED_MODEL_TAG,
-		SagemakerMlflowActions.DELETE_RUN,
-		SagemakerMlflowActions.DELETE_TAG,
-		SagemakerMlflowActions.DELETE_TRACE_TAG,
-		SagemakerMlflowActions.DELETE_TRACES,
-		SagemakerMlflowActions.END_TRACE,
-		SagemakerMlflowActions.FINALIZE_LOGGED_MODEL,
-		SagemakerMlflowActions.LOG_BATCH,
-		SagemakerMlflowActions.LOG_INPUTS,
-		SagemakerMlflowActions.LOG_LOGGED_MODEL_PARAMS,
-		SagemakerMlflowActions.LOG_METRIC,
-		SagemakerMlflowActions.LOG_MODEL,
-		SagemakerMlflowActions.LOG_OUTPUTS,
-		SagemakerMlflowActions.LOG_PARAM,
-		SagemakerMlflowActions.RENAME_REGISTERED_MODEL,
-		SagemakerMlflowActions.RESTORE_EXPERIMENT,
-		SagemakerMlflowActions.RESTORE_RUN,
-		SagemakerMlflowActions.SET_EXPERIMENT_TAG,
-		SagemakerMlflowActions.SET_LOGGED_MODEL_TAGS,
-		SagemakerMlflowActions.SET_MODEL_VERSION_TAG,
-		SagemakerMlflowActions.SET_REGISTERED_MODEL_ALIAS,
-		SagemakerMlflowActions.SET_REGISTERED_MODEL_TAG,
-		SagemakerMlflowActions.SET_TAG,
-		SagemakerMlflowActions.SET_TRACE_TAG,
-		SagemakerMlflowActions.START_TRACE,
-		SagemakerMlflowActions.TRANSITION_MODEL_VERSION_STAGE,
-		SagemakerMlflowActions.UPDATE_EXPERIMENT,
-		SagemakerMlflowActions.UPDATE_MODEL_VERSION,
-		SagemakerMlflowActions.UPDATE_REGISTERED_MODEL,
-		SagemakerMlflowActions.UPDATE_RUN,
+	static readonly AllWriteActions: string[] = [
+		SagemakerMlflowActions.CreateExperiment,
+		SagemakerMlflowActions.CreateModelVersion,
+		SagemakerMlflowActions.CreateRegisteredModel,
+		SagemakerMlflowActions.CreateRun,
+		SagemakerMlflowActions.DeleteExperiment,
+		SagemakerMlflowActions.DeleteLoggedModel,
+		SagemakerMlflowActions.DeleteLoggedModelTag,
+		SagemakerMlflowActions.DeleteModelVersion,
+		SagemakerMlflowActions.DeleteModelVersionTag,
+		SagemakerMlflowActions.DeleteRegisteredModel,
+		SagemakerMlflowActions.DeleteRegisteredModelAlias,
+		SagemakerMlflowActions.DeleteRegisteredModelTag,
+		SagemakerMlflowActions.DeleteRun,
+		SagemakerMlflowActions.DeleteTag,
+		SagemakerMlflowActions.DeleteTraceTag,
+		SagemakerMlflowActions.DeleteTraces,
+		SagemakerMlflowActions.EndTrace,
+		SagemakerMlflowActions.FinalizeLoggedModel,
+		SagemakerMlflowActions.LogBatch,
+		SagemakerMlflowActions.LogInputs,
+		SagemakerMlflowActions.LogLoggedModelParams,
+		SagemakerMlflowActions.LogMetric,
+		SagemakerMlflowActions.LogModel,
+		SagemakerMlflowActions.LogOutputs,
+		SagemakerMlflowActions.LogParam,
+		SagemakerMlflowActions.RenameRegisteredModel,
+		SagemakerMlflowActions.RestoreExperiment,
+		SagemakerMlflowActions.RestoreRun,
+		SagemakerMlflowActions.actionSetExperimentTag,
+		SagemakerMlflowActions.actionSetLoggedModelTags,
+		SagemakerMlflowActions.actionSetModelVersionTag,
+		SagemakerMlflowActions.actionSetRegisteredModelAlias,
+		SagemakerMlflowActions.actionSetRegisteredModelTag,
+		SagemakerMlflowActions.actionSetTag,
+		SagemakerMlflowActions.actionSetTraceTag,
+		SagemakerMlflowActions.StartTrace,
+		SagemakerMlflowActions.TransitionModelVersionStage,
+		SagemakerMlflowActions.UpdateExperiment,
+		SagemakerMlflowActions.UpdateModelVersion,
+		SagemakerMlflowActions.UpdateRegisteredModel,
+		SagemakerMlflowActions.UpdateRun,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SagemakerMlflowActions.GET_LATEST_MODEL_VERSIONS,
-		SagemakerMlflowActions.LIST_ARTIFACTS,
-		SagemakerMlflowActions.LIST_LOGGED_MODEL_ARTIFACTS,
+	static readonly AllListActions: string[] = [
+		SagemakerMlflowActions.actionGetLatestModelVersions,
+		SagemakerMlflowActions.ListArtifacts,
+		SagemakerMlflowActions.ListLoggedModelArtifacts,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const MlflowTrackingServerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-tracking-server/(?<mlflowTrackingServerName>[^:/?]+)$",
-);
+/**
+ * Properties for building a mlflow-tracking-server ARN.
+ */
+export interface SagemakerMlflowMlflowTrackingServerArnProps {
+	/** The MlflowTrackingServerName component of the ARN. */
+	readonly mlflowTrackingServerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mlflow-tracking-server ARN.
+ */
+export interface SagemakerMlflowMlflowTrackingServerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MlflowTrackingServerName component. */
+	readonly mlflowTrackingServerName: string;
+}
+
+const MlflowTrackingServerArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):mlflow-tracking-server\/(?<mlflowTrackingServerName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for sagemaker-mlflow resources.
@@ -242,16 +270,9 @@ export class SagemakerMlflowResources {
 	/**
 	 * Builds an ARN for the mlflow-tracking-server resource.
 	 */
-	static mlflowTrackingServer(props: {
-		/** The MlflowTrackingServerName component of the ARN. */
-		readonly mlflowTrackingServerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mlflowTrackingServer(
+		props: SagemakerMlflowMlflowTrackingServerArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:mlflow-tracking-server/${props.mlflowTrackingServerName}`;
 	}
 
@@ -266,12 +287,9 @@ export class SagemakerMlflowResources {
 	 * Parses a mlflow-tracking-server ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMlflowTrackingServerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		mlflowTrackingServerName: string;
-	} {
+	static parseMlflowTrackingServerArn(
+		arn: string,
+	): SagemakerMlflowMlflowTrackingServerArnComponents {
 		const match = MlflowTrackingServerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mlflow-tracking-server ARN: ${arn}`);
@@ -290,7 +308,7 @@ export class SagemakerMlflowResources {
  */
 export class SagemakerMlflowConditions {
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.

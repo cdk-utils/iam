@@ -13,155 +13,245 @@ export class QappsActions {
 	static readonly SERVICE_PREFIX = "qapps";
 
 	/** [Write] qapps:AssociateLibraryItemReview */
-	static readonly ASSOCIATE_LIBRARY_ITEM_REVIEW =
+	static readonly AssociateLibraryItemReview =
 		"qapps:AssociateLibraryItemReview";
 	/** [Write] qapps:AssociateQAppWithUser */
-	static readonly ASSOCIATE_Q_APP_WITH_USER = "qapps:AssociateQAppWithUser";
+	static readonly AssociateQAppWithUser = "qapps:AssociateQAppWithUser";
 	/** [Write] qapps:BatchCreateCategory */
-	static readonly BATCH_CREATE_CATEGORY = "qapps:BatchCreateCategory";
+	static readonly BatchCreateCategory = "qapps:BatchCreateCategory";
 	/** [Write] qapps:BatchDeleteCategory */
-	static readonly BATCH_DELETE_CATEGORY = "qapps:BatchDeleteCategory";
+	static readonly BatchDeleteCategory = "qapps:BatchDeleteCategory";
 	/** [Write] qapps:BatchUpdateCategory */
-	static readonly BATCH_UPDATE_CATEGORY = "qapps:BatchUpdateCategory";
+	static readonly BatchUpdateCategory = "qapps:BatchUpdateCategory";
 	/** [Write] qapps:CopyQApp */
-	static readonly COPY_Q_APP = "qapps:CopyQApp";
+	static readonly CopyQApp = "qapps:CopyQApp";
 	/** [Write] qapps:CreateLibraryItem */
-	static readonly CREATE_LIBRARY_ITEM = "qapps:CreateLibraryItem";
+	static readonly CreateLibraryItem = "qapps:CreateLibraryItem";
 	/** [Write] qapps:CreateLibraryItemReview */
-	static readonly CREATE_LIBRARY_ITEM_REVIEW = "qapps:CreateLibraryItemReview";
+	static readonly CreateLibraryItemReview = "qapps:CreateLibraryItemReview";
 	/** [Write] qapps:CreateQApp */
-	static readonly CREATE_Q_APP = "qapps:CreateQApp";
+	static readonly CreateQApp = "qapps:CreateQApp";
 	/** [Write] qapps:CreateSubscriptionToken */
-	static readonly CREATE_SUBSCRIPTION_TOKEN = "qapps:CreateSubscriptionToken";
+	static readonly CreateSubscriptionToken = "qapps:CreateSubscriptionToken";
 	/** [Write] qapps:DeleteLibraryItem */
-	static readonly DELETE_LIBRARY_ITEM = "qapps:DeleteLibraryItem";
+	static readonly DeleteLibraryItem = "qapps:DeleteLibraryItem";
 	/** [Write] qapps:DeleteQApp */
-	static readonly DELETE_Q_APP = "qapps:DeleteQApp";
+	static readonly DeleteQApp = "qapps:DeleteQApp";
 	/** [Read] qapps:DescribeQAppPermissions */
-	static readonly DESCRIBE_Q_APP_PERMISSIONS = "qapps:DescribeQAppPermissions";
+	static readonly DescribeQAppPermissions = "qapps:DescribeQAppPermissions";
 	/** [Write] qapps:DisassociateLibraryItemReview */
-	static readonly DISASSOCIATE_LIBRARY_ITEM_REVIEW =
+	static readonly DisassociateLibraryItemReview =
 		"qapps:DisassociateLibraryItemReview";
 	/** [Write] qapps:DisassociateQAppFromUser */
-	static readonly DISASSOCIATE_Q_APP_FROM_USER =
-		"qapps:DisassociateQAppFromUser";
+	static readonly DisassociateQAppFromUser = "qapps:DisassociateQAppFromUser";
 	/** [Write] qapps:ExportQAppSessionData */
-	static readonly EXPORT_Q_APP_SESSION_DATA = "qapps:ExportQAppSessionData";
+	static readonly ExportQAppSessionData = "qapps:ExportQAppSessionData";
 	/** [Read] qapps:GetLibraryItem */
-	static readonly GET_LIBRARY_ITEM = "qapps:GetLibraryItem";
+	static readonly actionGetLibraryItem = "qapps:GetLibraryItem";
 	/** [Read] qapps:GetQApp */
-	static readonly GET_Q_APP = "qapps:GetQApp";
+	static readonly actionGetQApp = "qapps:GetQApp";
 	/** [Read] qapps:GetQAppSession */
-	static readonly GET_Q_APP_SESSION = "qapps:GetQAppSession";
+	static readonly actionGetQAppSession = "qapps:GetQAppSession";
 	/** [Read] qapps:GetQAppSessionMetadata */
-	static readonly GET_Q_APP_SESSION_METADATA = "qapps:GetQAppSessionMetadata";
+	static readonly actionGetQAppSessionMetadata = "qapps:GetQAppSessionMetadata";
 	/** [Write] qapps:ImportDocument */
-	static readonly IMPORT_DOCUMENT = "qapps:ImportDocument";
+	static readonly ImportDocument = "qapps:ImportDocument";
 	/** [List] qapps:ListCategories */
-	static readonly LIST_CATEGORIES = "qapps:ListCategories";
+	static readonly ListCategories = "qapps:ListCategories";
 	/** [List] qapps:ListLibraryItems */
-	static readonly LIST_LIBRARY_ITEMS = "qapps:ListLibraryItems";
+	static readonly ListLibraryItems = "qapps:ListLibraryItems";
 	/** [Read] qapps:ListQAppSessionData */
-	static readonly LIST_Q_APP_SESSION_DATA = "qapps:ListQAppSessionData";
+	static readonly ListQAppSessionData = "qapps:ListQAppSessionData";
 	/** [List] qapps:ListQApps */
-	static readonly LIST_Q_APPS = "qapps:ListQApps";
+	static readonly ListQApps = "qapps:ListQApps";
 	/** [Read] qapps:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "qapps:ListTagsForResource";
+	static readonly ListTagsForResource = "qapps:ListTagsForResource";
 	/** [Write] qapps:PredictProblemStatementFromConversation */
-	static readonly PREDICT_PROBLEM_STATEMENT_FROM_CONVERSATION =
+	static readonly PredictProblemStatementFromConversation =
 		"qapps:PredictProblemStatementFromConversation";
 	/** [Write] qapps:PredictQApp */
-	static readonly PREDICT_Q_APP = "qapps:PredictQApp";
+	static readonly PredictQApp = "qapps:PredictQApp";
 	/** [Write] qapps:PredictQAppFromProblemStatement */
-	static readonly PREDICT_Q_APP_FROM_PROBLEM_STATEMENT =
+	static readonly PredictQAppFromProblemStatement =
 		"qapps:PredictQAppFromProblemStatement";
 	/** [Write] qapps:StartQAppSession */
-	static readonly START_Q_APP_SESSION = "qapps:StartQAppSession";
+	static readonly StartQAppSession = "qapps:StartQAppSession";
 	/** [Write] qapps:StopQAppSession */
-	static readonly STOP_Q_APP_SESSION = "qapps:StopQAppSession";
+	static readonly StopQAppSession = "qapps:StopQAppSession";
 	/** [Tagging] qapps:TagResource */
-	static readonly TAG_RESOURCE = "qapps:TagResource";
+	static readonly TagResource = "qapps:TagResource";
 	/** [Tagging] qapps:UntagResource */
-	static readonly UNTAG_RESOURCE = "qapps:UntagResource";
+	static readonly UntagResource = "qapps:UntagResource";
 	/** [Write] qapps:UpdateLibraryItem */
-	static readonly UPDATE_LIBRARY_ITEM = "qapps:UpdateLibraryItem";
+	static readonly UpdateLibraryItem = "qapps:UpdateLibraryItem";
 	/** [Write] qapps:UpdateLibraryItemMetadata */
-	static readonly UPDATE_LIBRARY_ITEM_METADATA =
-		"qapps:UpdateLibraryItemMetadata";
+	static readonly UpdateLibraryItemMetadata = "qapps:UpdateLibraryItemMetadata";
 	/** [Write] qapps:UpdateQApp */
-	static readonly UPDATE_Q_APP = "qapps:UpdateQApp";
+	static readonly UpdateQApp = "qapps:UpdateQApp";
 	/** [Write] qapps:UpdateQAppPermissions */
-	static readonly UPDATE_Q_APP_PERMISSIONS = "qapps:UpdateQAppPermissions";
+	static readonly UpdateQAppPermissions = "qapps:UpdateQAppPermissions";
 	/** [Write] qapps:UpdateQAppSession */
-	static readonly UPDATE_Q_APP_SESSION = "qapps:UpdateQAppSession";
+	static readonly UpdateQAppSession = "qapps:UpdateQAppSession";
 	/** [Write] qapps:UpdateQAppSessionMetadata */
-	static readonly UPDATE_Q_APP_SESSION_METADATA =
-		"qapps:UpdateQAppSessionMetadata";
+	static readonly UpdateQAppSessionMetadata = "qapps:UpdateQAppSessionMetadata";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		QappsActions.DESCRIBE_Q_APP_PERMISSIONS,
-		QappsActions.GET_LIBRARY_ITEM,
-		QappsActions.GET_Q_APP,
-		QappsActions.GET_Q_APP_SESSION,
-		QappsActions.GET_Q_APP_SESSION_METADATA,
-		QappsActions.LIST_Q_APP_SESSION_DATA,
-		QappsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		QappsActions.DescribeQAppPermissions,
+		QappsActions.actionGetLibraryItem,
+		QappsActions.actionGetQApp,
+		QappsActions.actionGetQAppSession,
+		QappsActions.actionGetQAppSessionMetadata,
+		QappsActions.ListQAppSessionData,
+		QappsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		QappsActions.ASSOCIATE_LIBRARY_ITEM_REVIEW,
-		QappsActions.ASSOCIATE_Q_APP_WITH_USER,
-		QappsActions.BATCH_CREATE_CATEGORY,
-		QappsActions.BATCH_DELETE_CATEGORY,
-		QappsActions.BATCH_UPDATE_CATEGORY,
-		QappsActions.COPY_Q_APP,
-		QappsActions.CREATE_LIBRARY_ITEM,
-		QappsActions.CREATE_LIBRARY_ITEM_REVIEW,
-		QappsActions.CREATE_Q_APP,
-		QappsActions.CREATE_SUBSCRIPTION_TOKEN,
-		QappsActions.DELETE_LIBRARY_ITEM,
-		QappsActions.DELETE_Q_APP,
-		QappsActions.DISASSOCIATE_LIBRARY_ITEM_REVIEW,
-		QappsActions.DISASSOCIATE_Q_APP_FROM_USER,
-		QappsActions.EXPORT_Q_APP_SESSION_DATA,
-		QappsActions.IMPORT_DOCUMENT,
-		QappsActions.PREDICT_PROBLEM_STATEMENT_FROM_CONVERSATION,
-		QappsActions.PREDICT_Q_APP,
-		QappsActions.PREDICT_Q_APP_FROM_PROBLEM_STATEMENT,
-		QappsActions.START_Q_APP_SESSION,
-		QappsActions.STOP_Q_APP_SESSION,
-		QappsActions.UPDATE_LIBRARY_ITEM,
-		QappsActions.UPDATE_LIBRARY_ITEM_METADATA,
-		QappsActions.UPDATE_Q_APP,
-		QappsActions.UPDATE_Q_APP_PERMISSIONS,
-		QappsActions.UPDATE_Q_APP_SESSION,
-		QappsActions.UPDATE_Q_APP_SESSION_METADATA,
+	static readonly AllWriteActions: string[] = [
+		QappsActions.AssociateLibraryItemReview,
+		QappsActions.AssociateQAppWithUser,
+		QappsActions.BatchCreateCategory,
+		QappsActions.BatchDeleteCategory,
+		QappsActions.BatchUpdateCategory,
+		QappsActions.CopyQApp,
+		QappsActions.CreateLibraryItem,
+		QappsActions.CreateLibraryItemReview,
+		QappsActions.CreateQApp,
+		QappsActions.CreateSubscriptionToken,
+		QappsActions.DeleteLibraryItem,
+		QappsActions.DeleteQApp,
+		QappsActions.DisassociateLibraryItemReview,
+		QappsActions.DisassociateQAppFromUser,
+		QappsActions.ExportQAppSessionData,
+		QappsActions.ImportDocument,
+		QappsActions.PredictProblemStatementFromConversation,
+		QappsActions.PredictQApp,
+		QappsActions.PredictQAppFromProblemStatement,
+		QappsActions.StartQAppSession,
+		QappsActions.StopQAppSession,
+		QappsActions.UpdateLibraryItem,
+		QappsActions.UpdateLibraryItemMetadata,
+		QappsActions.UpdateQApp,
+		QappsActions.UpdateQAppPermissions,
+		QappsActions.UpdateQAppSession,
+		QappsActions.UpdateQAppSessionMetadata,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		QappsActions.LIST_CATEGORIES,
-		QappsActions.LIST_LIBRARY_ITEMS,
-		QappsActions.LIST_Q_APPS,
+	static readonly AllListActions: string[] = [
+		QappsActions.ListCategories,
+		QappsActions.ListLibraryItems,
+		QappsActions.ListQApps,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		QappsActions.TAG_RESOURCE,
-		QappsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		QappsActions.TagResource,
+		QappsActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qbusiness:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const QappArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qapps:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/qapp/(?<appId>[^:/?]+)$",
-);
-const QappSessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):qapps:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)/qapp/(?<appId>[^:/?]+)/session/(?<sessionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface QappsApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface QappsApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a qapp ARN.
+ */
+export interface QappsQappArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a qapp ARN.
+ */
+export interface QappsQappArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a qapp-session ARN.
+ */
+export interface QappsQappSessionArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a qapp-session ARN.
+ */
+export interface QappsQappSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+	/** The AppId component. */
+	readonly appId: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):qbusiness:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const QappArnRegex =
+	/^arn:(?<partition>[^:]+):qapps:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/qapp\/(?<appId>[^:/?]+)$/;
+const QappSessionArnRegex =
+	/^arn:(?<partition>[^:]+):qapps:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)\/qapp\/(?<appId>[^:/?]+)\/session\/(?<sessionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for qapps resources.
@@ -170,16 +260,7 @@ export class QappsResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: QappsApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qbusiness:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -194,12 +275,7 @@ export class QappsResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): QappsApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -215,18 +291,7 @@ export class QappsResources {
 	/**
 	 * Builds an ARN for the qapp resource.
 	 */
-	static qapp(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static qapp(props: QappsQappArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qapps:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/qapp/${props.appId}`;
 	}
 
@@ -241,13 +306,7 @@ export class QappsResources {
 	 * Parses a qapp ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQappArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		appId: string;
-	} {
+	static parseQappArn(arn: string): QappsQappArnComponents {
 		const match = QappArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid qapp ARN: ${arn}`);
@@ -264,20 +323,7 @@ export class QappsResources {
 	/**
 	 * Builds an ARN for the qapp-session resource.
 	 */
-	static qappSession(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static qappSession(props: QappsQappSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:qapps:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}/qapp/${props.appId}/session/${props.sessionId}`;
 	}
 
@@ -292,14 +338,7 @@ export class QappsResources {
 	 * Parses a qapp-session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQappSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-		appId: string;
-		sessionId: string;
-	} {
+	static parseQappSessionArn(arn: string): QappsQappSessionArnComponents {
 		const match = QappSessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid qapp-session ARN: ${arn}`);
@@ -320,103 +359,93 @@ export class QappsResources {
  */
 export class QappsOperations {
 	/** IAM actions required for the AssociateLibraryItemReview API call. */
-	static readonly ASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [
+	static readonly AssociateLibraryItemReview: string[] = [
 		"qapps:AssociateLibraryItemReview",
 	];
 	/** IAM actions required for the AssociateQAppWithUser API call. */
-	static readonly ASSOCIATE_Q_APP_WITH_USER: string[] = [
+	static readonly AssociateQAppWithUser: string[] = [
 		"qapps:AssociateQAppWithUser",
 	];
 	/** IAM actions required for the BatchCreateCategory API call. */
-	static readonly BATCH_CREATE_CATEGORY: string[] = [
-		"qapps:BatchCreateCategory",
-	];
+	static readonly BatchCreateCategory: string[] = ["qapps:BatchCreateCategory"];
 	/** IAM actions required for the BatchDeleteCategory API call. */
-	static readonly BATCH_DELETE_CATEGORY: string[] = [
-		"qapps:BatchDeleteCategory",
-	];
+	static readonly BatchDeleteCategory: string[] = ["qapps:BatchDeleteCategory"];
 	/** IAM actions required for the BatchUpdateCategory API call. */
-	static readonly BATCH_UPDATE_CATEGORY: string[] = [
-		"qapps:BatchUpdateCategory",
-	];
+	static readonly BatchUpdateCategory: string[] = ["qapps:BatchUpdateCategory"];
 	/** IAM actions required for the CreateLibraryItem API call. */
-	static readonly CREATE_LIBRARY_ITEM: string[] = ["qapps:CreateLibraryItem"];
+	static readonly CreateLibraryItem: string[] = ["qapps:CreateLibraryItem"];
 	/** IAM actions required for the CreatePresignedUrl API call. */
-	static readonly CREATE_PRESIGNED_URL: string[] = ["qapps:ImportDocument"];
+	static readonly CreatePresignedUrl: string[] = ["qapps:ImportDocument"];
 	/** IAM actions required for the CreateQApp API call. */
-	static readonly CREATE_Q_APP: string[] = ["qapps:CreateQApp"];
+	static readonly CreateQApp: string[] = ["qapps:CreateQApp"];
 	/** IAM actions required for the DeleteLibraryItem API call. */
-	static readonly DELETE_LIBRARY_ITEM: string[] = ["qapps:DeleteLibraryItem"];
+	static readonly DeleteLibraryItem: string[] = ["qapps:DeleteLibraryItem"];
 	/** IAM actions required for the DeleteQApp API call. */
-	static readonly DELETE_Q_APP: string[] = ["qapps:DeleteQApp"];
+	static readonly DeleteQApp: string[] = ["qapps:DeleteQApp"];
 	/** IAM actions required for the DescribeQAppPermissions API call. */
-	static readonly DESCRIBE_Q_APP_PERMISSIONS: string[] = [
+	static readonly DescribeQAppPermissions: string[] = [
 		"qapps:DescribeQAppPermissions",
 	];
 	/** IAM actions required for the DisassociateLibraryItemReview API call. */
-	static readonly DISASSOCIATE_LIBRARY_ITEM_REVIEW: string[] = [
+	static readonly DisassociateLibraryItemReview: string[] = [
 		"qapps:DisassociateLibraryItemReview",
 	];
 	/** IAM actions required for the DisassociateQAppFromUser API call. */
-	static readonly DISASSOCIATE_Q_APP_FROM_USER: string[] = [
+	static readonly DisassociateQAppFromUser: string[] = [
 		"qapps:DisassociateQAppFromUser",
 	];
 	/** IAM actions required for the ExportQAppSessionData API call. */
-	static readonly EXPORT_Q_APP_SESSION_DATA: string[] = [
+	static readonly ExportQAppSessionData: string[] = [
 		"qapps:ExportQAppSessionData",
 	];
 	/** IAM actions required for the GetLibraryItem API call. */
-	static readonly GET_LIBRARY_ITEM: string[] = ["qapps:GetLibraryItem"];
+	static readonly opGetLibraryItem: string[] = ["qapps:GetLibraryItem"];
 	/** IAM actions required for the GetQApp API call. */
-	static readonly GET_Q_APP: string[] = ["qapps:GetQApp"];
+	static readonly opGetQApp: string[] = ["qapps:GetQApp"];
 	/** IAM actions required for the GetQAppSession API call. */
-	static readonly GET_Q_APP_SESSION: string[] = ["qapps:GetQAppSession"];
+	static readonly opGetQAppSession: string[] = ["qapps:GetQAppSession"];
 	/** IAM actions required for the GetQAppSessionMetadata API call. */
-	static readonly GET_Q_APP_SESSION_METADATA: string[] = [
+	static readonly opGetQAppSessionMetadata: string[] = [
 		"qapps:GetQAppSessionMetadata",
 	];
 	/** IAM actions required for the ImportDocument API call. */
-	static readonly IMPORT_DOCUMENT: string[] = ["qapps:ImportDocument"];
+	static readonly ImportDocument: string[] = ["qapps:ImportDocument"];
 	/** IAM actions required for the ListCategories API call. */
-	static readonly LIST_CATEGORIES: string[] = ["qapps:ListCategories"];
+	static readonly ListCategories: string[] = ["qapps:ListCategories"];
 	/** IAM actions required for the ListLibraryItems API call. */
-	static readonly LIST_LIBRARY_ITEMS: string[] = ["qapps:ListLibraryItems"];
+	static readonly ListLibraryItems: string[] = ["qapps:ListLibraryItems"];
 	/** IAM actions required for the ListQAppSessionData API call. */
-	static readonly LIST_Q_APP_SESSION_DATA: string[] = [
-		"qapps:ListQAppSessionData",
-	];
+	static readonly ListQAppSessionData: string[] = ["qapps:ListQAppSessionData"];
 	/** IAM actions required for the ListQApps API call. */
-	static readonly LIST_Q_APPS: string[] = ["qapps:ListQApps"];
+	static readonly ListQApps: string[] = ["qapps:ListQApps"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"qapps:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["qapps:ListTagsForResource"];
 	/** IAM actions required for the PredictQApp API call. */
-	static readonly PREDICT_Q_APP: string[] = [];
+	static readonly PredictQApp: string[] = [];
 	/** IAM actions required for the StartQAppSession API call. */
-	static readonly START_Q_APP_SESSION: string[] = ["qapps:StartQAppSession"];
+	static readonly StartQAppSession: string[] = ["qapps:StartQAppSession"];
 	/** IAM actions required for the StopQAppSession API call. */
-	static readonly STOP_Q_APP_SESSION: string[] = ["qapps:StopQAppSession"];
+	static readonly StopQAppSession: string[] = ["qapps:StopQAppSession"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["qapps:TagResource"];
+	static readonly TagResource: string[] = ["qapps:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["qapps:UntagResource"];
+	static readonly UntagResource: string[] = ["qapps:UntagResource"];
 	/** IAM actions required for the UpdateLibraryItem API call. */
-	static readonly UPDATE_LIBRARY_ITEM: string[] = ["qapps:UpdateLibraryItem"];
+	static readonly UpdateLibraryItem: string[] = ["qapps:UpdateLibraryItem"];
 	/** IAM actions required for the UpdateLibraryItemMetadata API call. */
-	static readonly UPDATE_LIBRARY_ITEM_METADATA: string[] = [
+	static readonly UpdateLibraryItemMetadata: string[] = [
 		"qapps:UpdateLibraryItemMetadata",
 	];
 	/** IAM actions required for the UpdateQApp API call. */
-	static readonly UPDATE_Q_APP: string[] = ["qapps:UpdateQApp"];
+	static readonly UpdateQApp: string[] = ["qapps:UpdateQApp"];
 	/** IAM actions required for the UpdateQAppPermissions API call. */
-	static readonly UPDATE_Q_APP_PERMISSIONS: string[] = [
+	static readonly UpdateQAppPermissions: string[] = [
 		"qapps:UpdateQAppPermissions",
 	];
 	/** IAM actions required for the UpdateQAppSession API call. */
-	static readonly UPDATE_Q_APP_SESSION: string[] = ["qapps:UpdateQAppSession"];
+	static readonly UpdateQAppSession: string[] = ["qapps:UpdateQAppSession"];
 	/** IAM actions required for the UpdateQAppSessionMetadata API call. */
-	static readonly UPDATE_Q_APP_SESSION_METADATA: string[] = [
+	static readonly UpdateQAppSessionMetadata: string[] = [
 		"qapps:UpdateQAppSessionMetadata",
 	];
 }
@@ -426,126 +455,126 @@ export class QappsOperations {
  */
 export class QappsConditions {
 	/** Condition keys applicable to the AssociateLibraryItemReview action. */
-	static readonly ASSOCIATE_LIBRARY_ITEM_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly AssociateLibraryItemReviewConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the AssociateQAppWithUser action. */
-	static readonly ASSOCIATE_Q_APP_WITH_USER_CONDITION_KEYS: string[] = [
+	static readonly AssociateQAppWithUserConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the CopyQApp action. */
-	static readonly COPY_Q_APP_CONDITION_KEYS: string[] = [
+	static readonly CopyQAppConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the CreateLibraryItem action. */
-	static readonly CREATE_LIBRARY_ITEM_CONDITION_KEYS: string[] = [
+	static readonly CreateLibraryItemConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the CreateLibraryItemReview action. */
-	static readonly CREATE_LIBRARY_ITEM_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly CreateLibraryItemReviewConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the CreateQApp action. */
-	static readonly CREATE_Q_APP_CONDITION_KEYS: string[] = [
+	static readonly CreateQAppConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteLibraryItem action. */
-	static readonly DELETE_LIBRARY_ITEM_CONDITION_KEYS: string[] = [
+	static readonly DeleteLibraryItemConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the DeleteQApp action. */
-	static readonly DELETE_Q_APP_CONDITION_KEYS: string[] = [
+	static readonly DeleteQAppConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the DescribeQAppPermissions action. */
-	static readonly DESCRIBE_Q_APP_PERMISSIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeQAppPermissionsConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the DisassociateLibraryItemReview action. */
-	static readonly DISASSOCIATE_LIBRARY_ITEM_REVIEW_CONDITION_KEYS: string[] = [
+	static readonly DisassociateLibraryItemReviewConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the DisassociateQAppFromUser action. */
-	static readonly DISASSOCIATE_Q_APP_FROM_USER_CONDITION_KEYS: string[] = [
+	static readonly DisassociateQAppFromUserConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the GetLibraryItem action. */
-	static readonly GET_LIBRARY_ITEM_CONDITION_KEYS: string[] = [
+	static readonly actionGetLibraryItemConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the GetQApp action. */
-	static readonly GET_Q_APP_CONDITION_KEYS: string[] = [
+	static readonly actionGetQAppConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the GetQAppSession action. */
-	static readonly GET_Q_APP_SESSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetQAppSessionConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:SessionIsShared",
 		"qapps:UserIsAppOwner",
 		"qapps:UserIsSessionModerator",
 	];
 	/** Condition keys applicable to the ImportDocument action. */
-	static readonly IMPORT_DOCUMENT_CONDITION_KEYS: string[] = [
+	static readonly ImportDocumentConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:SessionIsShared",
 		"qapps:UserIsAppOwner",
 		"qapps:UserIsSessionModerator",
 	];
 	/** Condition keys applicable to the StartQAppSession action. */
-	static readonly START_Q_APP_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartQAppSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the StopQAppSession action. */
-	static readonly STOP_Q_APP_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StopQAppSessionConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:SessionIsShared",
 		"qapps:UserIsAppOwner",
 		"qapps:UserIsSessionModerator",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateLibraryItem action. */
-	static readonly UPDATE_LIBRARY_ITEM_CONDITION_KEYS: string[] = [
+	static readonly UpdateLibraryItemConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the UpdateLibraryItemMetadata action. */
-	static readonly UPDATE_LIBRARY_ITEM_METADATA_CONDITION_KEYS: string[] = [
+	static readonly UpdateLibraryItemMetadataConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 	];
 	/** Condition keys applicable to the UpdateQApp action. */
-	static readonly UPDATE_Q_APP_CONDITION_KEYS: string[] = [
+	static readonly UpdateQAppConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the UpdateQAppPermissions action. */
-	static readonly UPDATE_Q_APP_PERMISSIONS_CONDITION_KEYS: string[] = [
+	static readonly UpdateQAppPermissionsConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:UserIsAppOwner",
 	];
 	/** Condition keys applicable to the UpdateQAppSession action. */
-	static readonly UPDATE_Q_APP_SESSION_CONDITION_KEYS: string[] = [
+	static readonly UpdateQAppSessionConditionKeys: string[] = [
 		"qapps:AppIsPublished",
 		"qapps:SessionIsShared",
 		"qapps:UserIsAppOwner",
@@ -553,11 +582,11 @@ export class QappsConditions {
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: qapps:AppIsPublished (String) */
 	static readonly APP_IS_PUBLISHED = "qapps:AppIsPublished";
 	/** Condition key: qapps:SessionIsShared (String) */

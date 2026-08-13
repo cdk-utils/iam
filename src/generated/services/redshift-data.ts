@@ -13,68 +13,148 @@ export class RedshiftDataActions {
 	static readonly SERVICE_PREFIX = "redshift-data";
 
 	/** [Write] redshift-data:BatchExecuteStatement */
-	static readonly BATCH_EXECUTE_STATEMENT =
-		"redshift-data:BatchExecuteStatement";
+	static readonly BatchExecuteStatement = "redshift-data:BatchExecuteStatement";
 	/** [Write] redshift-data:CancelStatement */
-	static readonly CANCEL_STATEMENT = "redshift-data:CancelStatement";
+	static readonly CancelStatement = "redshift-data:CancelStatement";
 	/** [Read] redshift-data:DescribeStatement */
-	static readonly DESCRIBE_STATEMENT = "redshift-data:DescribeStatement";
+	static readonly DescribeStatement = "redshift-data:DescribeStatement";
 	/** [Read] redshift-data:DescribeTable */
-	static readonly DESCRIBE_TABLE = "redshift-data:DescribeTable";
+	static readonly DescribeTable = "redshift-data:DescribeTable";
 	/** [Write] redshift-data:ExecuteStatement */
-	static readonly EXECUTE_STATEMENT = "redshift-data:ExecuteStatement";
+	static readonly ExecuteStatement = "redshift-data:ExecuteStatement";
 	/** [Read] redshift-data:GetStagingBucketLocation */
-	static readonly GET_STAGING_BUCKET_LOCATION =
+	static readonly actionGetStagingBucketLocation =
 		"redshift-data:GetStagingBucketLocation";
 	/** [Read] redshift-data:GetStatementResult */
-	static readonly GET_STATEMENT_RESULT = "redshift-data:GetStatementResult";
+	static readonly actionGetStatementResult = "redshift-data:GetStatementResult";
 	/** [Read] redshift-data:ListDatabases */
-	static readonly LIST_DATABASES = "redshift-data:ListDatabases";
+	static readonly ListDatabases = "redshift-data:ListDatabases";
 	/** [Read] redshift-data:ListSchemas */
-	static readonly LIST_SCHEMAS = "redshift-data:ListSchemas";
+	static readonly ListSchemas = "redshift-data:ListSchemas";
 	/** [List] redshift-data:ListSessions */
-	static readonly LIST_SESSIONS = "redshift-data:ListSessions";
+	static readonly ListSessions = "redshift-data:ListSessions";
 	/** [List] redshift-data:ListStatements */
-	static readonly LIST_STATEMENTS = "redshift-data:ListStatements";
+	static readonly ListStatements = "redshift-data:ListStatements";
 	/** [List] redshift-data:ListTables */
-	static readonly LIST_TABLES = "redshift-data:ListTables";
+	static readonly ListTables = "redshift-data:ListTables";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RedshiftDataActions.DESCRIBE_STATEMENT,
-		RedshiftDataActions.DESCRIBE_TABLE,
-		RedshiftDataActions.GET_STAGING_BUCKET_LOCATION,
-		RedshiftDataActions.GET_STATEMENT_RESULT,
-		RedshiftDataActions.LIST_DATABASES,
-		RedshiftDataActions.LIST_SCHEMAS,
+	static readonly AllReadActions: string[] = [
+		RedshiftDataActions.DescribeStatement,
+		RedshiftDataActions.DescribeTable,
+		RedshiftDataActions.actionGetStagingBucketLocation,
+		RedshiftDataActions.actionGetStatementResult,
+		RedshiftDataActions.ListDatabases,
+		RedshiftDataActions.ListSchemas,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RedshiftDataActions.BATCH_EXECUTE_STATEMENT,
-		RedshiftDataActions.CANCEL_STATEMENT,
-		RedshiftDataActions.EXECUTE_STATEMENT,
+	static readonly AllWriteActions: string[] = [
+		RedshiftDataActions.BatchExecuteStatement,
+		RedshiftDataActions.CancelStatement,
+		RedshiftDataActions.ExecuteStatement,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		RedshiftDataActions.LIST_SESSIONS,
-		RedshiftDataActions.LIST_STATEMENTS,
-		RedshiftDataActions.LIST_TABLES,
+	static readonly AllListActions: string[] = [
+		RedshiftDataActions.ListSessions,
+		RedshiftDataActions.ListStatements,
+		RedshiftDataActions.ListTables,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):redshift:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<clusterName>[^:/?]+)$",
-);
-const ManagedWorkgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):redshift-serverless:(?<region>[^:]*):(?<account>[^:]*):managed-workgroup/(?<managedWorkgroupId>[^:/?]+)$",
-);
-const WorkgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):redshift-serverless:(?<region>[^:]*):(?<account>[^:]*):workgroup/(?<workgroupId>[^:/?]+)$",
-);
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface RedshiftDataClusterArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface RedshiftDataClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+}
+
+/**
+ * Properties for building a managed-workgroup ARN.
+ */
+export interface RedshiftDataManagedWorkgroupArnProps {
+	/** The ManagedWorkgroupId component of the ARN. */
+	readonly managedWorkgroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a managed-workgroup ARN.
+ */
+export interface RedshiftDataManagedWorkgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ManagedWorkgroupId component. */
+	readonly managedWorkgroupId: string;
+}
+
+/**
+ * Properties for building a workgroup ARN.
+ */
+export interface RedshiftDataWorkgroupArnProps {
+	/** The WorkgroupId component of the ARN. */
+	readonly workgroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a workgroup ARN.
+ */
+export interface RedshiftDataWorkgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkgroupId component. */
+	readonly workgroupId: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):redshift:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<clusterName>[^:/?]+)$/;
+const ManagedWorkgroupArnRegex =
+	/^arn:(?<partition>[^:]+):redshift-serverless:(?<region>[^:]*):(?<account>[^:]*):managed-workgroup\/(?<managedWorkgroupId>[^:/?]+)$/;
+const WorkgroupArnRegex =
+	/^arn:(?<partition>[^:]+):redshift-serverless:(?<region>[^:]*):(?<account>[^:]*):workgroup\/(?<workgroupId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for redshift-data resources.
@@ -83,16 +163,7 @@ export class RedshiftDataResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The ClusterName component of the ARN. */
-		readonly clusterName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: RedshiftDataClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:redshift:${props.region ?? "*"}:${props.account ?? "*"}:cluster:${props.clusterName}`;
 	}
 
@@ -107,12 +178,7 @@ export class RedshiftDataResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		clusterName: string;
-	} {
+	static parseClusterArn(arn: string): RedshiftDataClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -128,16 +194,7 @@ export class RedshiftDataResources {
 	/**
 	 * Builds an ARN for the managed-workgroup resource.
 	 */
-	static managedWorkgroup(props: {
-		/** The ManagedWorkgroupId component of the ARN. */
-		readonly managedWorkgroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static managedWorkgroup(props: RedshiftDataManagedWorkgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:redshift-serverless:${props.region ?? "*"}:${props.account ?? "*"}:managed-workgroup/${props.managedWorkgroupId}`;
 	}
 
@@ -152,12 +209,9 @@ export class RedshiftDataResources {
 	 * Parses a managed-workgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseManagedWorkgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		managedWorkgroupId: string;
-	} {
+	static parseManagedWorkgroupArn(
+		arn: string,
+	): RedshiftDataManagedWorkgroupArnComponents {
 		const match = ManagedWorkgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid managed-workgroup ARN: ${arn}`);
@@ -173,16 +227,7 @@ export class RedshiftDataResources {
 	/**
 	 * Builds an ARN for the workgroup resource.
 	 */
-	static workgroup(props: {
-		/** The WorkgroupId component of the ARN. */
-		readonly workgroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workgroup(props: RedshiftDataWorkgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:redshift-serverless:${props.region ?? "*"}:${props.account ?? "*"}:workgroup/${props.workgroupId}`;
 	}
 
@@ -197,12 +242,7 @@ export class RedshiftDataResources {
 	 * Parses a workgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workgroupId: string;
-	} {
+	static parseWorkgroupArn(arn: string): RedshiftDataWorkgroupArnComponents {
 		const match = WorkgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid workgroup ARN: ${arn}`);
@@ -221,41 +261,39 @@ export class RedshiftDataResources {
  */
 export class RedshiftDataOperations {
 	/** IAM actions required for the BatchExecuteStatement API call. */
-	static readonly BATCH_EXECUTE_STATEMENT: string[] = [
+	static readonly BatchExecuteStatement: string[] = [
 		"redshift-data:BatchExecuteStatement",
 	];
 	/** IAM actions required for the CancelStatement API call. */
-	static readonly CANCEL_STATEMENT: string[] = [
-		"redshift-data:CancelStatement",
-	];
+	static readonly CancelStatement: string[] = ["redshift-data:CancelStatement"];
 	/** IAM actions required for the DescribeStatement API call. */
-	static readonly DESCRIBE_STATEMENT: string[] = [
+	static readonly DescribeStatement: string[] = [
 		"redshift-data:DescribeStatement",
 	];
 	/** IAM actions required for the DescribeTable API call. */
-	static readonly DESCRIBE_TABLE: string[] = ["redshift-data:DescribeTable"];
+	static readonly DescribeTable: string[] = ["redshift-data:DescribeTable"];
 	/** IAM actions required for the ExecuteStatement API call. */
-	static readonly EXECUTE_STATEMENT: string[] = [
+	static readonly ExecuteStatement: string[] = [
 		"redshift-data:ExecuteStatement",
 	];
 	/** IAM actions required for the GetStatementResult API call. */
-	static readonly GET_STATEMENT_RESULT: string[] = [
+	static readonly opGetStatementResult: string[] = [
 		"redshift-data:GetStatementResult",
 	];
 	/** IAM actions required for the GetStatementResultV2 API call. */
-	static readonly GET_STATEMENT_RESULT_V2: string[] = [
+	static readonly opGetStatementResultV2: string[] = [
 		"redshift-data:GetStatementResult",
 	];
 	/** IAM actions required for the ListDatabases API call. */
-	static readonly LIST_DATABASES: string[] = ["redshift-data:ListDatabases"];
+	static readonly ListDatabases: string[] = ["redshift-data:ListDatabases"];
 	/** IAM actions required for the ListSchemas API call. */
-	static readonly LIST_SCHEMAS: string[] = ["redshift-data:ListSchemas"];
+	static readonly ListSchemas: string[] = ["redshift-data:ListSchemas"];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["redshift-data:ListSessions"];
+	static readonly ListSessions: string[] = ["redshift-data:ListSessions"];
 	/** IAM actions required for the ListStatements API call. */
-	static readonly LIST_STATEMENTS: string[] = ["redshift-data:ListStatements"];
+	static readonly ListStatements: string[] = ["redshift-data:ListStatements"];
 	/** IAM actions required for the ListTables API call. */
-	static readonly LIST_TABLES: string[] = ["redshift-data:ListTables"];
+	static readonly ListTables: string[] = ["redshift-data:ListTables"];
 }
 
 /**
@@ -263,38 +301,38 @@ export class RedshiftDataOperations {
  */
 export class RedshiftDataConditions {
 	/** Condition keys applicable to the BatchExecuteStatement action. */
-	static readonly BATCH_EXECUTE_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly BatchExecuteStatementConditionKeys: string[] = [
 		"redshift-data:glue-catalog-arn",
 		"redshift-data:session-owner-iam-userid",
 	];
 	/** Condition keys applicable to the CancelStatement action. */
-	static readonly CANCEL_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly CancelStatementConditionKeys: string[] = [
 		"redshift-data:statement-owner-iam-userid",
 	];
 	/** Condition keys applicable to the DescribeStatement action. */
-	static readonly DESCRIBE_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly DescribeStatementConditionKeys: string[] = [
 		"redshift-data:statement-owner-iam-userid",
 	];
 	/** Condition keys applicable to the ExecuteStatement action. */
-	static readonly EXECUTE_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly ExecuteStatementConditionKeys: string[] = [
 		"redshift-data:glue-catalog-arn",
 		"redshift-data:session-owner-iam-userid",
 	];
 	/** Condition keys applicable to the GetStatementResult action. */
-	static readonly GET_STATEMENT_RESULT_CONDITION_KEYS: string[] = [
+	static readonly actionGetStatementResultConditionKeys: string[] = [
 		"redshift-data:statement-owner-iam-userid",
 	];
 	/** Condition keys applicable to the ListSessions action. */
-	static readonly LIST_SESSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListSessionsConditionKeys: string[] = [
 		"redshift-data:session-owner-iam-userid",
 	];
 	/** Condition keys applicable to the ListStatements action. */
-	static readonly LIST_STATEMENTS_CONDITION_KEYS: string[] = [
+	static readonly ListStatementsConditionKeys: string[] = [
 		"redshift-data:statement-owner-iam-userid",
 	];
 
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: redshift-data:glue-catalog-arn (ARN) */
 	static readonly GLUE_CATALOG_ARN = "redshift-data:glue-catalog-arn";
 	/** Condition key: redshift-data:session-owner-iam-userid (String) */

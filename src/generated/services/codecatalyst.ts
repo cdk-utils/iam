@@ -13,144 +13,257 @@ export class CodeCatalystActions {
 	static readonly SERVICE_PREFIX = "codecatalyst";
 
 	/** [Write] codecatalyst:AcceptConnection */
-	static readonly ACCEPT_CONNECTION = "codecatalyst:AcceptConnection";
+	static readonly AcceptConnection = "codecatalyst:AcceptConnection";
 	/** [Write] codecatalyst:AssociateIamRoleToConnection */
-	static readonly ASSOCIATE_IAM_ROLE_TO_CONNECTION =
+	static readonly AssociateIamRoleToConnection =
 		"codecatalyst:AssociateIamRoleToConnection";
 	/** [Write] codecatalyst:AssociateIdentityCenterApplicationToSpace */
-	static readonly ASSOCIATE_IDENTITY_CENTER_APPLICATION_TO_SPACE =
+	static readonly AssociateIdentityCenterApplicationToSpace =
 		"codecatalyst:AssociateIdentityCenterApplicationToSpace";
 	/** [Write] codecatalyst:AssociateIdentityToIdentityCenterApplication */
-	static readonly ASSOCIATE_IDENTITY_TO_IDENTITY_CENTER_APPLICATION =
+	static readonly AssociateIdentityToIdentityCenterApplication =
 		"codecatalyst:AssociateIdentityToIdentityCenterApplication";
 	/** [Write] codecatalyst:BatchAssociateIdentitiesToIdentityCenterApplication */
-	static readonly BATCH_ASSOCIATE_IDENTITIES_TO_IDENTITY_CENTER_APPLICATION =
+	static readonly BatchAssociateIdentitiesToIdentityCenterApplication =
 		"codecatalyst:BatchAssociateIdentitiesToIdentityCenterApplication";
 	/** [Write] codecatalyst:BatchDisassociateIdentitiesFromIdentityCenterApplication */
-	static readonly BATCH_DISASSOCIATE_IDENTITIES_FROM_IDENTITY_CENTER_APPLICATION =
+	static readonly BatchDisassociateIdentitiesFromIdentityCenterApplication =
 		"codecatalyst:BatchDisassociateIdentitiesFromIdentityCenterApplication";
 	/** [Write] codecatalyst:CreateIdentityCenterApplication */
-	static readonly CREATE_IDENTITY_CENTER_APPLICATION =
+	static readonly CreateIdentityCenterApplication =
 		"codecatalyst:CreateIdentityCenterApplication";
 	/** [Write] codecatalyst:CreateSpace */
-	static readonly CREATE_SPACE = "codecatalyst:CreateSpace";
+	static readonly CreateSpace = "codecatalyst:CreateSpace";
 	/** [Write] codecatalyst:CreateSpaceAdminRoleAssignment */
-	static readonly CREATE_SPACE_ADMIN_ROLE_ASSIGNMENT =
+	static readonly CreateSpaceAdminRoleAssignment =
 		"codecatalyst:CreateSpaceAdminRoleAssignment";
 	/** [Write] codecatalyst:DeleteConnection */
-	static readonly DELETE_CONNECTION = "codecatalyst:DeleteConnection";
+	static readonly DeleteConnection = "codecatalyst:DeleteConnection";
 	/** [Write] codecatalyst:DeleteIdentityCenterApplication */
-	static readonly DELETE_IDENTITY_CENTER_APPLICATION =
+	static readonly DeleteIdentityCenterApplication =
 		"codecatalyst:DeleteIdentityCenterApplication";
 	/** [Write] codecatalyst:DisassociateIamRoleFromConnection */
-	static readonly DISASSOCIATE_IAM_ROLE_FROM_CONNECTION =
+	static readonly DisassociateIamRoleFromConnection =
 		"codecatalyst:DisassociateIamRoleFromConnection";
 	/** [Write] codecatalyst:DisassociateIdentityCenterApplicationFromSpace */
-	static readonly DISASSOCIATE_IDENTITY_CENTER_APPLICATION_FROM_SPACE =
+	static readonly DisassociateIdentityCenterApplicationFromSpace =
 		"codecatalyst:DisassociateIdentityCenterApplicationFromSpace";
 	/** [Write] codecatalyst:DisassociateIdentityFromIdentityCenterApplication */
-	static readonly DISASSOCIATE_IDENTITY_FROM_IDENTITY_CENTER_APPLICATION =
+	static readonly DisassociateIdentityFromIdentityCenterApplication =
 		"codecatalyst:DisassociateIdentityFromIdentityCenterApplication";
 	/** [Read] codecatalyst:GetBillingAuthorization */
-	static readonly GET_BILLING_AUTHORIZATION =
+	static readonly actionGetBillingAuthorization =
 		"codecatalyst:GetBillingAuthorization";
 	/** [Read] codecatalyst:GetConnection */
-	static readonly GET_CONNECTION = "codecatalyst:GetConnection";
+	static readonly actionGetConnection = "codecatalyst:GetConnection";
 	/** [Read] codecatalyst:GetIdentityCenterApplication */
-	static readonly GET_IDENTITY_CENTER_APPLICATION =
+	static readonly actionGetIdentityCenterApplication =
 		"codecatalyst:GetIdentityCenterApplication";
 	/** [Read] codecatalyst:GetPendingConnection */
-	static readonly GET_PENDING_CONNECTION = "codecatalyst:GetPendingConnection";
+	static readonly actionGetPendingConnection =
+		"codecatalyst:GetPendingConnection";
 	/** [List] codecatalyst:ListConnections */
-	static readonly LIST_CONNECTIONS = "codecatalyst:ListConnections";
+	static readonly ListConnections = "codecatalyst:ListConnections";
 	/** [List] codecatalyst:ListIamRolesForConnection */
-	static readonly LIST_IAM_ROLES_FOR_CONNECTION =
+	static readonly ListIamRolesForConnection =
 		"codecatalyst:ListIamRolesForConnection";
 	/** [List] codecatalyst:ListIdentityCenterApplications */
-	static readonly LIST_IDENTITY_CENTER_APPLICATIONS =
+	static readonly ListIdentityCenterApplications =
 		"codecatalyst:ListIdentityCenterApplications";
 	/** [List] codecatalyst:ListIdentityCenterApplicationsForSpace */
-	static readonly LIST_IDENTITY_CENTER_APPLICATIONS_FOR_SPACE =
+	static readonly ListIdentityCenterApplicationsForSpace =
 		"codecatalyst:ListIdentityCenterApplicationsForSpace";
 	/** [List] codecatalyst:ListSpacesForIdentityCenterApplication */
-	static readonly LIST_SPACES_FOR_IDENTITY_CENTER_APPLICATION =
+	static readonly ListSpacesForIdentityCenterApplication =
 		"codecatalyst:ListSpacesForIdentityCenterApplication";
 	/** [Read] codecatalyst:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "codecatalyst:ListTagsForResource";
+	static readonly ListTagsForResource = "codecatalyst:ListTagsForResource";
 	/** [Write] codecatalyst:PutBillingAuthorization */
-	static readonly PUT_BILLING_AUTHORIZATION =
+	static readonly PutBillingAuthorization =
 		"codecatalyst:PutBillingAuthorization";
 	/** [Write] codecatalyst:RejectConnection */
-	static readonly REJECT_CONNECTION = "codecatalyst:RejectConnection";
+	static readonly RejectConnection = "codecatalyst:RejectConnection";
 	/** [Write] codecatalyst:SynchronizeIdentityCenterApplication */
-	static readonly SYNCHRONIZE_IDENTITY_CENTER_APPLICATION =
+	static readonly SynchronizeIdentityCenterApplication =
 		"codecatalyst:SynchronizeIdentityCenterApplication";
 	/** [Tagging] codecatalyst:TagResource */
-	static readonly TAG_RESOURCE = "codecatalyst:TagResource";
+	static readonly TagResource = "codecatalyst:TagResource";
 	/** [Tagging] codecatalyst:UntagResource */
-	static readonly UNTAG_RESOURCE = "codecatalyst:UntagResource";
+	static readonly UntagResource = "codecatalyst:UntagResource";
 	/** [Write] codecatalyst:UpdateIdentityCenterApplication */
-	static readonly UPDATE_IDENTITY_CENTER_APPLICATION =
+	static readonly UpdateIdentityCenterApplication =
 		"codecatalyst:UpdateIdentityCenterApplication";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeCatalystActions.GET_BILLING_AUTHORIZATION,
-		CodeCatalystActions.GET_CONNECTION,
-		CodeCatalystActions.GET_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.GET_PENDING_CONNECTION,
-		CodeCatalystActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		CodeCatalystActions.actionGetBillingAuthorization,
+		CodeCatalystActions.actionGetConnection,
+		CodeCatalystActions.actionGetIdentityCenterApplication,
+		CodeCatalystActions.actionGetPendingConnection,
+		CodeCatalystActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeCatalystActions.ACCEPT_CONNECTION,
-		CodeCatalystActions.ASSOCIATE_IAM_ROLE_TO_CONNECTION,
-		CodeCatalystActions.ASSOCIATE_IDENTITY_CENTER_APPLICATION_TO_SPACE,
-		CodeCatalystActions.ASSOCIATE_IDENTITY_TO_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.BATCH_ASSOCIATE_IDENTITIES_TO_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.BATCH_DISASSOCIATE_IDENTITIES_FROM_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.CREATE_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.CREATE_SPACE,
-		CodeCatalystActions.CREATE_SPACE_ADMIN_ROLE_ASSIGNMENT,
-		CodeCatalystActions.DELETE_CONNECTION,
-		CodeCatalystActions.DELETE_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.DISASSOCIATE_IAM_ROLE_FROM_CONNECTION,
-		CodeCatalystActions.DISASSOCIATE_IDENTITY_CENTER_APPLICATION_FROM_SPACE,
-		CodeCatalystActions.DISASSOCIATE_IDENTITY_FROM_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.PUT_BILLING_AUTHORIZATION,
-		CodeCatalystActions.REJECT_CONNECTION,
-		CodeCatalystActions.SYNCHRONIZE_IDENTITY_CENTER_APPLICATION,
-		CodeCatalystActions.UPDATE_IDENTITY_CENTER_APPLICATION,
+	static readonly AllWriteActions: string[] = [
+		CodeCatalystActions.AcceptConnection,
+		CodeCatalystActions.AssociateIamRoleToConnection,
+		CodeCatalystActions.AssociateIdentityCenterApplicationToSpace,
+		CodeCatalystActions.AssociateIdentityToIdentityCenterApplication,
+		CodeCatalystActions.BatchAssociateIdentitiesToIdentityCenterApplication,
+		CodeCatalystActions.BatchDisassociateIdentitiesFromIdentityCenterApplication,
+		CodeCatalystActions.CreateIdentityCenterApplication,
+		CodeCatalystActions.CreateSpace,
+		CodeCatalystActions.CreateSpaceAdminRoleAssignment,
+		CodeCatalystActions.DeleteConnection,
+		CodeCatalystActions.DeleteIdentityCenterApplication,
+		CodeCatalystActions.DisassociateIamRoleFromConnection,
+		CodeCatalystActions.DisassociateIdentityCenterApplicationFromSpace,
+		CodeCatalystActions.DisassociateIdentityFromIdentityCenterApplication,
+		CodeCatalystActions.PutBillingAuthorization,
+		CodeCatalystActions.RejectConnection,
+		CodeCatalystActions.SynchronizeIdentityCenterApplication,
+		CodeCatalystActions.UpdateIdentityCenterApplication,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeCatalystActions.LIST_CONNECTIONS,
-		CodeCatalystActions.LIST_IAM_ROLES_FOR_CONNECTION,
-		CodeCatalystActions.LIST_IDENTITY_CENTER_APPLICATIONS,
-		CodeCatalystActions.LIST_IDENTITY_CENTER_APPLICATIONS_FOR_SPACE,
-		CodeCatalystActions.LIST_SPACES_FOR_IDENTITY_CENTER_APPLICATION,
+	static readonly AllListActions: string[] = [
+		CodeCatalystActions.ListConnections,
+		CodeCatalystActions.ListIamRolesForConnection,
+		CodeCatalystActions.ListIdentityCenterApplications,
+		CodeCatalystActions.ListIdentityCenterApplicationsForSpace,
+		CodeCatalystActions.ListSpacesForIdentityCenterApplication,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodeCatalystActions.TAG_RESOURCE,
-		CodeCatalystActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodeCatalystActions.TagResource,
+		CodeCatalystActions.UntagResource,
 	];
 }
 
-const ConnectionsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codecatalyst:(?<region>[^:]*):(?<account>[^:]*):/connections/(?<connectionId>[^:/?]+)$",
-);
-const IdentityCenterApplicationsArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codecatalyst:(?<region>[^:]*):(?<account>[^:]*):/identity-center-applications/(?<identityCenterApplicationId>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codecatalyst:::space/(?<spaceId>[^:/?]+)/project/(?<projectId>[^:/?]+)$",
-);
-const SpaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codecatalyst:::space/(?<spaceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a connections ARN.
+ */
+export interface CodeCatalystConnectionsArnProps {
+	/** The ConnectionId component of the ARN. */
+	readonly connectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connections ARN.
+ */
+export interface CodeCatalystConnectionsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionId component. */
+	readonly connectionId: string;
+}
+
+/**
+ * Properties for building a identity-center-applications ARN.
+ */
+export interface CodeCatalystIdentityCenterApplicationsArnProps {
+	/** The IdentityCenterApplicationId component of the ARN. */
+	readonly identityCenterApplicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identity-center-applications ARN.
+ */
+export interface CodeCatalystIdentityCenterApplicationsArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IdentityCenterApplicationId component. */
+	readonly identityCenterApplicationId: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface CodeCatalystProjectArnProps {
+	/** The SpaceId component of the ARN. */
+	readonly spaceId: string;
+	/** The ProjectId component of the ARN. */
+	readonly projectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface CodeCatalystProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SpaceId component. */
+	readonly spaceId: string;
+	/** The ProjectId component. */
+	readonly projectId: string;
+}
+
+/**
+ * Properties for building a space ARN.
+ */
+export interface CodeCatalystSpaceArnProps {
+	/** The SpaceId component of the ARN. */
+	readonly spaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a space ARN.
+ */
+export interface CodeCatalystSpaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SpaceId component. */
+	readonly spaceId: string;
+}
+
+const ConnectionsArnRegex =
+	/^arn:(?<partition>[^:]+):codecatalyst:(?<region>[^:]*):(?<account>[^:]*):\/connections\/(?<connectionId>[^:/?]+)$/;
+const IdentityCenterApplicationsArnRegex =
+	/^arn:(?<partition>[^:]+):codecatalyst:(?<region>[^:]*):(?<account>[^:]*):\/identity-center-applications\/(?<identityCenterApplicationId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):codecatalyst:::space\/(?<spaceId>[^:/?]+)\/project\/(?<projectId>[^:/?]+)$/;
+const SpaceArnRegex =
+	/^arn:(?<partition>[^:]+):codecatalyst:::space\/(?<spaceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codecatalyst resources.
@@ -159,16 +272,7 @@ export class CodeCatalystResources {
 	/**
 	 * Builds an ARN for the connections resource.
 	 */
-	static connections(props: {
-		/** The ConnectionId component of the ARN. */
-		readonly connectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connections(props: CodeCatalystConnectionsArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codecatalyst:${props.region ?? "*"}:${props.account ?? "*"}:/connections/${props.connectionId}`;
 	}
 
@@ -183,12 +287,9 @@ export class CodeCatalystResources {
 	 * Parses a connections ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionId: string;
-	} {
+	static parseConnectionsArn(
+		arn: string,
+	): CodeCatalystConnectionsArnComponents {
 		const match = ConnectionsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connections ARN: ${arn}`);
@@ -204,16 +305,9 @@ export class CodeCatalystResources {
 	/**
 	 * Builds an ARN for the identity-center-applications resource.
 	 */
-	static identityCenterApplications(props: {
-		/** The IdentityCenterApplicationId component of the ARN. */
-		readonly identityCenterApplicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identityCenterApplications(
+		props: CodeCatalystIdentityCenterApplicationsArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:codecatalyst:${props.region ?? "*"}:${props.account ?? "*"}:/identity-center-applications/${props.identityCenterApplicationId}`;
 	}
 
@@ -228,12 +322,9 @@ export class CodeCatalystResources {
 	 * Parses a identity-center-applications ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentityCenterApplicationsArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identityCenterApplicationId: string;
-	} {
+	static parseIdentityCenterApplicationsArn(
+		arn: string,
+	): CodeCatalystIdentityCenterApplicationsArnComponents {
 		const match = IdentityCenterApplicationsArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identity-center-applications ARN: ${arn}`);
@@ -249,18 +340,7 @@ export class CodeCatalystResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The SpaceId component of the ARN. */
-		readonly spaceId: string;
-		/** The ProjectId component of the ARN. */
-		readonly projectId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: CodeCatalystProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codecatalyst:::space/${props.spaceId}/project/${props.projectId}`;
 	}
 
@@ -275,13 +355,7 @@ export class CodeCatalystResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		spaceId: string;
-		projectId: string;
-	} {
+	static parseProjectArn(arn: string): CodeCatalystProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -298,16 +372,7 @@ export class CodeCatalystResources {
 	/**
 	 * Builds an ARN for the space resource.
 	 */
-	static space(props: {
-		/** The SpaceId component of the ARN. */
-		readonly spaceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static space(props: CodeCatalystSpaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codecatalyst:::space/${props.spaceId}`;
 	}
 
@@ -322,12 +387,7 @@ export class CodeCatalystResources {
 	 * Parses a space ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSpaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		spaceId: string;
-	} {
+	static parseSpaceArn(arn: string): CodeCatalystSpaceArnComponents {
 		const match = SpaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid space ARN: ${arn}`);
@@ -346,81 +406,81 @@ export class CodeCatalystResources {
  */
 export class CodeCatalystOperations {
 	/** IAM actions required for the CreateAccessToken API call. */
-	static readonly CREATE_ACCESS_TOKEN: string[] = [];
+	static readonly CreateAccessToken: string[] = [];
 	/** IAM actions required for the CreateDevEnvironment API call. */
-	static readonly CREATE_DEV_ENVIRONMENT: string[] = [];
+	static readonly CreateDevEnvironment: string[] = [];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CREATE_PROJECT: string[] = [];
+	static readonly CreateProject: string[] = [];
 	/** IAM actions required for the CreateSourceRepository API call. */
-	static readonly CREATE_SOURCE_REPOSITORY: string[] = [];
+	static readonly CreateSourceRepository: string[] = [];
 	/** IAM actions required for the CreateSourceRepositoryBranch API call. */
-	static readonly CREATE_SOURCE_REPOSITORY_BRANCH: string[] = [];
+	static readonly CreateSourceRepositoryBranch: string[] = [];
 	/** IAM actions required for the DeleteAccessToken API call. */
-	static readonly DELETE_ACCESS_TOKEN: string[] = [];
+	static readonly DeleteAccessToken: string[] = [];
 	/** IAM actions required for the DeleteDevEnvironment API call. */
-	static readonly DELETE_DEV_ENVIRONMENT: string[] = [];
+	static readonly DeleteDevEnvironment: string[] = [];
 	/** IAM actions required for the DeleteProject API call. */
-	static readonly DELETE_PROJECT: string[] = [];
+	static readonly DeleteProject: string[] = [];
 	/** IAM actions required for the DeleteSourceRepository API call. */
-	static readonly DELETE_SOURCE_REPOSITORY: string[] = [];
+	static readonly DeleteSourceRepository: string[] = [];
 	/** IAM actions required for the DeleteSpace API call. */
-	static readonly DELETE_SPACE: string[] = [];
+	static readonly DeleteSpace: string[] = [];
 	/** IAM actions required for the GetDevEnvironment API call. */
-	static readonly GET_DEV_ENVIRONMENT: string[] = [];
+	static readonly opGetDevEnvironment: string[] = [];
 	/** IAM actions required for the GetProject API call. */
-	static readonly GET_PROJECT: string[] = [];
+	static readonly opGetProject: string[] = [];
 	/** IAM actions required for the GetSourceRepository API call. */
-	static readonly GET_SOURCE_REPOSITORY: string[] = [];
+	static readonly opGetSourceRepository: string[] = [];
 	/** IAM actions required for the GetSourceRepositoryCloneUrls API call. */
-	static readonly GET_SOURCE_REPOSITORY_CLONE_URLS: string[] = [];
+	static readonly opGetSourceRepositoryCloneUrls: string[] = [];
 	/** IAM actions required for the GetSpace API call. */
-	static readonly GET_SPACE: string[] = [];
+	static readonly opGetSpace: string[] = [];
 	/** IAM actions required for the GetSubscription API call. */
-	static readonly GET_SUBSCRIPTION: string[] = [];
+	static readonly opGetSubscription: string[] = [];
 	/** IAM actions required for the GetUserDetails API call. */
-	static readonly GET_USER_DETAILS: string[] = [];
+	static readonly opGetUserDetails: string[] = [];
 	/** IAM actions required for the GetWorkflow API call. */
-	static readonly GET_WORKFLOW: string[] = [];
+	static readonly opGetWorkflow: string[] = [];
 	/** IAM actions required for the GetWorkflowRun API call. */
-	static readonly GET_WORKFLOW_RUN: string[] = [];
+	static readonly opGetWorkflowRun: string[] = [];
 	/** IAM actions required for the ListAccessTokens API call. */
-	static readonly LIST_ACCESS_TOKENS: string[] = [];
+	static readonly ListAccessTokens: string[] = [];
 	/** IAM actions required for the ListDevEnvironmentSessions API call. */
-	static readonly LIST_DEV_ENVIRONMENT_SESSIONS: string[] = [];
+	static readonly ListDevEnvironmentSessions: string[] = [];
 	/** IAM actions required for the ListDevEnvironments API call. */
-	static readonly LIST_DEV_ENVIRONMENTS: string[] = [];
+	static readonly ListDevEnvironments: string[] = [];
 	/** IAM actions required for the ListEventLogs API call. */
-	static readonly LIST_EVENT_LOGS: string[] = [];
+	static readonly ListEventLogs: string[] = [];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly LIST_PROJECTS: string[] = [];
+	static readonly ListProjects: string[] = [];
 	/** IAM actions required for the ListSourceRepositories API call. */
-	static readonly LIST_SOURCE_REPOSITORIES: string[] = [];
+	static readonly ListSourceRepositories: string[] = [];
 	/** IAM actions required for the ListSourceRepositoryBranches API call. */
-	static readonly LIST_SOURCE_REPOSITORY_BRANCHES: string[] = [];
+	static readonly ListSourceRepositoryBranches: string[] = [];
 	/** IAM actions required for the ListSpaces API call. */
-	static readonly LIST_SPACES: string[] = [];
+	static readonly ListSpaces: string[] = [];
 	/** IAM actions required for the ListWorkflowRuns API call. */
-	static readonly LIST_WORKFLOW_RUNS: string[] = [];
+	static readonly ListWorkflowRuns: string[] = [];
 	/** IAM actions required for the ListWorkflows API call. */
-	static readonly LIST_WORKFLOWS: string[] = [];
+	static readonly ListWorkflows: string[] = [];
 	/** IAM actions required for the StartDevEnvironment API call. */
-	static readonly START_DEV_ENVIRONMENT: string[] = [];
+	static readonly StartDevEnvironment: string[] = [];
 	/** IAM actions required for the StartDevEnvironmentSession API call. */
-	static readonly START_DEV_ENVIRONMENT_SESSION: string[] = [];
+	static readonly StartDevEnvironmentSession: string[] = [];
 	/** IAM actions required for the StartWorkflowRun API call. */
-	static readonly START_WORKFLOW_RUN: string[] = [];
+	static readonly StartWorkflowRun: string[] = [];
 	/** IAM actions required for the StopDevEnvironment API call. */
-	static readonly STOP_DEV_ENVIRONMENT: string[] = [];
+	static readonly StopDevEnvironment: string[] = [];
 	/** IAM actions required for the StopDevEnvironmentSession API call. */
-	static readonly STOP_DEV_ENVIRONMENT_SESSION: string[] = [];
+	static readonly StopDevEnvironmentSession: string[] = [];
 	/** IAM actions required for the UpdateDevEnvironment API call. */
-	static readonly UPDATE_DEV_ENVIRONMENT: string[] = [];
+	static readonly UpdateDevEnvironment: string[] = [];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UPDATE_PROJECT: string[] = [];
+	static readonly UpdateProject: string[] = [];
 	/** IAM actions required for the UpdateSpace API call. */
-	static readonly UPDATE_SPACE: string[] = [];
+	static readonly UpdateSpace: string[] = [];
 	/** IAM actions required for the VerifySession API call. */
-	static readonly VERIFY_SESSION: string[] = [];
+	static readonly VerifySession: string[] = [];
 }
 
 /**
@@ -428,104 +488,110 @@ export class CodeCatalystOperations {
  */
 export class CodeCatalystConditions {
 	/** Condition keys applicable to the AcceptConnection action. */
-	static readonly ACCEPT_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly AcceptConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the AssociateIamRoleToConnection action. */
-	static readonly ASSOCIATE_IAM_ROLE_TO_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly AssociateIamRoleToConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the AssociateIdentityCenterApplicationToSpace action. */
-	static readonly ASSOCIATE_IDENTITY_CENTER_APPLICATION_TO_SPACE_CONDITION_KEYS: string[] =
+	static readonly AssociateIdentityCenterApplicationToSpaceConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the AssociateIdentityToIdentityCenterApplication action. */
-	static readonly ASSOCIATE_IDENTITY_TO_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly AssociateIdentityToIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the BatchAssociateIdentitiesToIdentityCenterApplication action. */
-	static readonly BATCH_ASSOCIATE_IDENTITIES_TO_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly BatchAssociateIdentitiesToIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the BatchDisassociateIdentitiesFromIdentityCenterApplication action. */
-	static readonly BATCH_DISASSOCIATE_IDENTITIES_FROM_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly BatchDisassociateIdentitiesFromIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the CreateIdentityCenterApplication action. */
-	static readonly CREATE_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateIdentityCenterApplicationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateSpace action. */
-	static readonly CREATE_SPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateSpaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSpaceAdminRoleAssignment action. */
-	static readonly CREATE_SPACE_ADMIN_ROLE_ASSIGNMENT_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly CreateSpaceAdminRoleAssignmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteConnection action. */
-	static readonly DELETE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteIdentityCenterApplication action. */
-	static readonly DELETE_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteIdentityCenterApplicationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DisassociateIamRoleFromConnection action. */
-	static readonly DISASSOCIATE_IAM_ROLE_FROM_CONNECTION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DisassociateIamRoleFromConnectionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DisassociateIdentityCenterApplicationFromSpace action. */
-	static readonly DISASSOCIATE_IDENTITY_CENTER_APPLICATION_FROM_SPACE_CONDITION_KEYS: string[] =
+	static readonly DisassociateIdentityCenterApplicationFromSpaceConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the DisassociateIdentityFromIdentityCenterApplication action. */
-	static readonly DISASSOCIATE_IDENTITY_FROM_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly DisassociateIdentityFromIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetBillingAuthorization action. */
-	static readonly GET_BILLING_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetBillingAuthorizationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetConnection action. */
-	static readonly GET_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetIdentityCenterApplication action. */
-	static readonly GET_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetIdentityCenterApplicationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListIamRolesForConnection action. */
-	static readonly LIST_IAM_ROLES_FOR_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly ListIamRolesForConnectionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSpacesForIdentityCenterApplication action. */
-	static readonly LIST_SPACES_FOR_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly ListSpacesForIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutBillingAuthorization action. */
-	static readonly PUT_BILLING_AUTHORIZATION_CONDITION_KEYS: string[] = [
+	static readonly PutBillingAuthorizationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the SynchronizeIdentityCenterApplication action. */
-	static readonly SYNCHRONIZE_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
+	static readonly SynchronizeIdentityCenterApplicationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateIdentityCenterApplication action. */
-	static readonly UPDATE_IDENTITY_CENTER_APPLICATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateIdentityCenterApplicationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

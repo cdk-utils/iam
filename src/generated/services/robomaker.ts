@@ -13,251 +13,561 @@ export class RoboMakerActions {
 	static readonly SERVICE_PREFIX = "robomaker";
 
 	/** [Write] robomaker:BatchDeleteWorlds */
-	static readonly BATCH_DELETE_WORLDS = "robomaker:BatchDeleteWorlds";
+	static readonly BatchDeleteWorlds = "robomaker:BatchDeleteWorlds";
 	/** [Read] robomaker:BatchDescribeSimulationJob */
-	static readonly BATCH_DESCRIBE_SIMULATION_JOB =
+	static readonly BatchDescribeSimulationJob =
 		"robomaker:BatchDescribeSimulationJob";
 	/** [Write] robomaker:CancelDeploymentJob */
-	static readonly CANCEL_DEPLOYMENT_JOB = "robomaker:CancelDeploymentJob";
+	static readonly CancelDeploymentJob = "robomaker:CancelDeploymentJob";
 	/** [Write] robomaker:CancelSimulationJob */
-	static readonly CANCEL_SIMULATION_JOB = "robomaker:CancelSimulationJob";
+	static readonly CancelSimulationJob = "robomaker:CancelSimulationJob";
 	/** [Write] robomaker:CancelSimulationJobBatch */
-	static readonly CANCEL_SIMULATION_JOB_BATCH =
+	static readonly CancelSimulationJobBatch =
 		"robomaker:CancelSimulationJobBatch";
 	/** [Write] robomaker:CancelWorldExportJob */
-	static readonly CANCEL_WORLD_EXPORT_JOB = "robomaker:CancelWorldExportJob";
+	static readonly CancelWorldExportJob = "robomaker:CancelWorldExportJob";
 	/** [Write] robomaker:CancelWorldGenerationJob */
-	static readonly CANCEL_WORLD_GENERATION_JOB =
+	static readonly CancelWorldGenerationJob =
 		"robomaker:CancelWorldGenerationJob";
 	/** [Write] robomaker:CreateDeploymentJob */
-	static readonly CREATE_DEPLOYMENT_JOB = "robomaker:CreateDeploymentJob";
+	static readonly CreateDeploymentJob = "robomaker:CreateDeploymentJob";
 	/** [Write] robomaker:CreateFleet */
-	static readonly CREATE_FLEET = "robomaker:CreateFleet";
+	static readonly CreateFleet = "robomaker:CreateFleet";
 	/** [Write] robomaker:CreateRobot */
-	static readonly CREATE_ROBOT = "robomaker:CreateRobot";
+	static readonly CreateRobot = "robomaker:CreateRobot";
 	/** [Write] robomaker:CreateRobotApplication */
-	static readonly CREATE_ROBOT_APPLICATION = "robomaker:CreateRobotApplication";
+	static readonly CreateRobotApplication = "robomaker:CreateRobotApplication";
 	/** [Write] robomaker:CreateRobotApplicationVersion */
-	static readonly CREATE_ROBOT_APPLICATION_VERSION =
+	static readonly CreateRobotApplicationVersion =
 		"robomaker:CreateRobotApplicationVersion";
 	/** [Write] robomaker:CreateSimulationApplication */
-	static readonly CREATE_SIMULATION_APPLICATION =
+	static readonly CreateSimulationApplication =
 		"robomaker:CreateSimulationApplication";
 	/** [Write] robomaker:CreateSimulationApplicationVersion */
-	static readonly CREATE_SIMULATION_APPLICATION_VERSION =
+	static readonly CreateSimulationApplicationVersion =
 		"robomaker:CreateSimulationApplicationVersion";
 	/** [Write] robomaker:CreateSimulationJob */
-	static readonly CREATE_SIMULATION_JOB = "robomaker:CreateSimulationJob";
+	static readonly CreateSimulationJob = "robomaker:CreateSimulationJob";
 	/** [Write] robomaker:CreateWorldExportJob */
-	static readonly CREATE_WORLD_EXPORT_JOB = "robomaker:CreateWorldExportJob";
+	static readonly CreateWorldExportJob = "robomaker:CreateWorldExportJob";
 	/** [Write] robomaker:CreateWorldGenerationJob */
-	static readonly CREATE_WORLD_GENERATION_JOB =
+	static readonly CreateWorldGenerationJob =
 		"robomaker:CreateWorldGenerationJob";
 	/** [Write] robomaker:CreateWorldTemplate */
-	static readonly CREATE_WORLD_TEMPLATE = "robomaker:CreateWorldTemplate";
+	static readonly CreateWorldTemplate = "robomaker:CreateWorldTemplate";
 	/** [Write] robomaker:DeleteFleet */
-	static readonly DELETE_FLEET = "robomaker:DeleteFleet";
+	static readonly DeleteFleet = "robomaker:DeleteFleet";
 	/** [Write] robomaker:DeleteRobot */
-	static readonly DELETE_ROBOT = "robomaker:DeleteRobot";
+	static readonly DeleteRobot = "robomaker:DeleteRobot";
 	/** [Write] robomaker:DeleteRobotApplication */
-	static readonly DELETE_ROBOT_APPLICATION = "robomaker:DeleteRobotApplication";
+	static readonly DeleteRobotApplication = "robomaker:DeleteRobotApplication";
 	/** [Write] robomaker:DeleteSimulationApplication */
-	static readonly DELETE_SIMULATION_APPLICATION =
+	static readonly DeleteSimulationApplication =
 		"robomaker:DeleteSimulationApplication";
 	/** [Write] robomaker:DeleteWorldTemplate */
-	static readonly DELETE_WORLD_TEMPLATE = "robomaker:DeleteWorldTemplate";
+	static readonly DeleteWorldTemplate = "robomaker:DeleteWorldTemplate";
 	/** [Write] robomaker:DeregisterRobot */
-	static readonly DEREGISTER_ROBOT = "robomaker:DeregisterRobot";
+	static readonly DeregisterRobot = "robomaker:DeregisterRobot";
 	/** [Read] robomaker:DescribeDeploymentJob */
-	static readonly DESCRIBE_DEPLOYMENT_JOB = "robomaker:DescribeDeploymentJob";
+	static readonly DescribeDeploymentJob = "robomaker:DescribeDeploymentJob";
 	/** [Read] robomaker:DescribeFleet */
-	static readonly DESCRIBE_FLEET = "robomaker:DescribeFleet";
+	static readonly DescribeFleet = "robomaker:DescribeFleet";
 	/** [Read] robomaker:DescribeRobot */
-	static readonly DESCRIBE_ROBOT = "robomaker:DescribeRobot";
+	static readonly DescribeRobot = "robomaker:DescribeRobot";
 	/** [Read] robomaker:DescribeRobotApplication */
-	static readonly DESCRIBE_ROBOT_APPLICATION =
+	static readonly DescribeRobotApplication =
 		"robomaker:DescribeRobotApplication";
 	/** [Read] robomaker:DescribeSimulationApplication */
-	static readonly DESCRIBE_SIMULATION_APPLICATION =
+	static readonly DescribeSimulationApplication =
 		"robomaker:DescribeSimulationApplication";
 	/** [Read] robomaker:DescribeSimulationJob */
-	static readonly DESCRIBE_SIMULATION_JOB = "robomaker:DescribeSimulationJob";
+	static readonly DescribeSimulationJob = "robomaker:DescribeSimulationJob";
 	/** [Read] robomaker:DescribeSimulationJobBatch */
-	static readonly DESCRIBE_SIMULATION_JOB_BATCH =
+	static readonly DescribeSimulationJobBatch =
 		"robomaker:DescribeSimulationJobBatch";
 	/** [Read] robomaker:DescribeWorld */
-	static readonly DESCRIBE_WORLD = "robomaker:DescribeWorld";
+	static readonly DescribeWorld = "robomaker:DescribeWorld";
 	/** [Read] robomaker:DescribeWorldExportJob */
-	static readonly DESCRIBE_WORLD_EXPORT_JOB =
-		"robomaker:DescribeWorldExportJob";
+	static readonly DescribeWorldExportJob = "robomaker:DescribeWorldExportJob";
 	/** [Read] robomaker:DescribeWorldGenerationJob */
-	static readonly DESCRIBE_WORLD_GENERATION_JOB =
+	static readonly DescribeWorldGenerationJob =
 		"robomaker:DescribeWorldGenerationJob";
 	/** [Read] robomaker:DescribeWorldTemplate */
-	static readonly DESCRIBE_WORLD_TEMPLATE = "robomaker:DescribeWorldTemplate";
+	static readonly DescribeWorldTemplate = "robomaker:DescribeWorldTemplate";
 	/** [Read] robomaker:GetWorldTemplateBody */
-	static readonly GET_WORLD_TEMPLATE_BODY = "robomaker:GetWorldTemplateBody";
+	static readonly actionGetWorldTemplateBody = "robomaker:GetWorldTemplateBody";
 	/** [List] robomaker:ListDeploymentJobs */
-	static readonly LIST_DEPLOYMENT_JOBS = "robomaker:ListDeploymentJobs";
+	static readonly ListDeploymentJobs = "robomaker:ListDeploymentJobs";
 	/** [List] robomaker:ListFleets */
-	static readonly LIST_FLEETS = "robomaker:ListFleets";
+	static readonly ListFleets = "robomaker:ListFleets";
 	/** [List] robomaker:ListRobotApplications */
-	static readonly LIST_ROBOT_APPLICATIONS = "robomaker:ListRobotApplications";
+	static readonly ListRobotApplications = "robomaker:ListRobotApplications";
 	/** [List] robomaker:ListRobots */
-	static readonly LIST_ROBOTS = "robomaker:ListRobots";
+	static readonly ListRobots = "robomaker:ListRobots";
 	/** [List] robomaker:ListSimulationApplications */
-	static readonly LIST_SIMULATION_APPLICATIONS =
+	static readonly ListSimulationApplications =
 		"robomaker:ListSimulationApplications";
 	/** [List] robomaker:ListSimulationJobBatches */
-	static readonly LIST_SIMULATION_JOB_BATCHES =
+	static readonly ListSimulationJobBatches =
 		"robomaker:ListSimulationJobBatches";
 	/** [List] robomaker:ListSimulationJobs */
-	static readonly LIST_SIMULATION_JOBS = "robomaker:ListSimulationJobs";
+	static readonly ListSimulationJobs = "robomaker:ListSimulationJobs";
 	/** [List] robomaker:ListSupportedAvailabilityZones */
-	static readonly LIST_SUPPORTED_AVAILABILITY_ZONES =
+	static readonly ListSupportedAvailabilityZones =
 		"robomaker:ListSupportedAvailabilityZones";
 	/** [List] robomaker:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "robomaker:ListTagsForResource";
+	static readonly ListTagsForResource = "robomaker:ListTagsForResource";
 	/** [List] robomaker:ListWorldExportJobs */
-	static readonly LIST_WORLD_EXPORT_JOBS = "robomaker:ListWorldExportJobs";
+	static readonly ListWorldExportJobs = "robomaker:ListWorldExportJobs";
 	/** [List] robomaker:ListWorldGenerationJobs */
-	static readonly LIST_WORLD_GENERATION_JOBS =
-		"robomaker:ListWorldGenerationJobs";
+	static readonly ListWorldGenerationJobs = "robomaker:ListWorldGenerationJobs";
 	/** [List] robomaker:ListWorldTemplates */
-	static readonly LIST_WORLD_TEMPLATES = "robomaker:ListWorldTemplates";
+	static readonly ListWorldTemplates = "robomaker:ListWorldTemplates";
 	/** [List] robomaker:ListWorlds */
-	static readonly LIST_WORLDS = "robomaker:ListWorlds";
+	static readonly ListWorlds = "robomaker:ListWorlds";
 	/** [Write] robomaker:RegisterRobot */
-	static readonly REGISTER_ROBOT = "robomaker:RegisterRobot";
+	static readonly RegisterRobot = "robomaker:RegisterRobot";
 	/** [Write] robomaker:RestartSimulationJob */
-	static readonly RESTART_SIMULATION_JOB = "robomaker:RestartSimulationJob";
+	static readonly RestartSimulationJob = "robomaker:RestartSimulationJob";
 	/** [Write] robomaker:StartSimulationJobBatch */
-	static readonly START_SIMULATION_JOB_BATCH =
-		"robomaker:StartSimulationJobBatch";
+	static readonly StartSimulationJobBatch = "robomaker:StartSimulationJobBatch";
 	/** [Write] robomaker:SyncDeploymentJob */
-	static readonly SYNC_DEPLOYMENT_JOB = "robomaker:SyncDeploymentJob";
+	static readonly SyncDeploymentJob = "robomaker:SyncDeploymentJob";
 	/** [Tagging] robomaker:TagResource */
-	static readonly TAG_RESOURCE = "robomaker:TagResource";
+	static readonly TagResource = "robomaker:TagResource";
 	/** [Tagging] robomaker:UntagResource */
-	static readonly UNTAG_RESOURCE = "robomaker:UntagResource";
+	static readonly UntagResource = "robomaker:UntagResource";
 	/** [Write] robomaker:UpdateRobotApplication */
-	static readonly UPDATE_ROBOT_APPLICATION = "robomaker:UpdateRobotApplication";
+	static readonly UpdateRobotApplication = "robomaker:UpdateRobotApplication";
 	/** [Write] robomaker:UpdateRobotDeployment */
-	static readonly UPDATE_ROBOT_DEPLOYMENT = "robomaker:UpdateRobotDeployment";
+	static readonly UpdateRobotDeployment = "robomaker:UpdateRobotDeployment";
 	/** [Write] robomaker:UpdateSimulationApplication */
-	static readonly UPDATE_SIMULATION_APPLICATION =
+	static readonly UpdateSimulationApplication =
 		"robomaker:UpdateSimulationApplication";
 	/** [Write] robomaker:UpdateWorldTemplate */
-	static readonly UPDATE_WORLD_TEMPLATE = "robomaker:UpdateWorldTemplate";
+	static readonly UpdateWorldTemplate = "robomaker:UpdateWorldTemplate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RoboMakerActions.BATCH_DESCRIBE_SIMULATION_JOB,
-		RoboMakerActions.DESCRIBE_DEPLOYMENT_JOB,
-		RoboMakerActions.DESCRIBE_FLEET,
-		RoboMakerActions.DESCRIBE_ROBOT,
-		RoboMakerActions.DESCRIBE_ROBOT_APPLICATION,
-		RoboMakerActions.DESCRIBE_SIMULATION_APPLICATION,
-		RoboMakerActions.DESCRIBE_SIMULATION_JOB,
-		RoboMakerActions.DESCRIBE_SIMULATION_JOB_BATCH,
-		RoboMakerActions.DESCRIBE_WORLD,
-		RoboMakerActions.DESCRIBE_WORLD_EXPORT_JOB,
-		RoboMakerActions.DESCRIBE_WORLD_GENERATION_JOB,
-		RoboMakerActions.DESCRIBE_WORLD_TEMPLATE,
-		RoboMakerActions.GET_WORLD_TEMPLATE_BODY,
+	static readonly AllReadActions: string[] = [
+		RoboMakerActions.BatchDescribeSimulationJob,
+		RoboMakerActions.DescribeDeploymentJob,
+		RoboMakerActions.DescribeFleet,
+		RoboMakerActions.DescribeRobot,
+		RoboMakerActions.DescribeRobotApplication,
+		RoboMakerActions.DescribeSimulationApplication,
+		RoboMakerActions.DescribeSimulationJob,
+		RoboMakerActions.DescribeSimulationJobBatch,
+		RoboMakerActions.DescribeWorld,
+		RoboMakerActions.DescribeWorldExportJob,
+		RoboMakerActions.DescribeWorldGenerationJob,
+		RoboMakerActions.DescribeWorldTemplate,
+		RoboMakerActions.actionGetWorldTemplateBody,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RoboMakerActions.BATCH_DELETE_WORLDS,
-		RoboMakerActions.CANCEL_DEPLOYMENT_JOB,
-		RoboMakerActions.CANCEL_SIMULATION_JOB,
-		RoboMakerActions.CANCEL_SIMULATION_JOB_BATCH,
-		RoboMakerActions.CANCEL_WORLD_EXPORT_JOB,
-		RoboMakerActions.CANCEL_WORLD_GENERATION_JOB,
-		RoboMakerActions.CREATE_DEPLOYMENT_JOB,
-		RoboMakerActions.CREATE_FLEET,
-		RoboMakerActions.CREATE_ROBOT,
-		RoboMakerActions.CREATE_ROBOT_APPLICATION,
-		RoboMakerActions.CREATE_ROBOT_APPLICATION_VERSION,
-		RoboMakerActions.CREATE_SIMULATION_APPLICATION,
-		RoboMakerActions.CREATE_SIMULATION_APPLICATION_VERSION,
-		RoboMakerActions.CREATE_SIMULATION_JOB,
-		RoboMakerActions.CREATE_WORLD_EXPORT_JOB,
-		RoboMakerActions.CREATE_WORLD_GENERATION_JOB,
-		RoboMakerActions.CREATE_WORLD_TEMPLATE,
-		RoboMakerActions.DELETE_FLEET,
-		RoboMakerActions.DELETE_ROBOT,
-		RoboMakerActions.DELETE_ROBOT_APPLICATION,
-		RoboMakerActions.DELETE_SIMULATION_APPLICATION,
-		RoboMakerActions.DELETE_WORLD_TEMPLATE,
-		RoboMakerActions.DEREGISTER_ROBOT,
-		RoboMakerActions.REGISTER_ROBOT,
-		RoboMakerActions.RESTART_SIMULATION_JOB,
-		RoboMakerActions.START_SIMULATION_JOB_BATCH,
-		RoboMakerActions.SYNC_DEPLOYMENT_JOB,
-		RoboMakerActions.UPDATE_ROBOT_APPLICATION,
-		RoboMakerActions.UPDATE_ROBOT_DEPLOYMENT,
-		RoboMakerActions.UPDATE_SIMULATION_APPLICATION,
-		RoboMakerActions.UPDATE_WORLD_TEMPLATE,
+	static readonly AllWriteActions: string[] = [
+		RoboMakerActions.BatchDeleteWorlds,
+		RoboMakerActions.CancelDeploymentJob,
+		RoboMakerActions.CancelSimulationJob,
+		RoboMakerActions.CancelSimulationJobBatch,
+		RoboMakerActions.CancelWorldExportJob,
+		RoboMakerActions.CancelWorldGenerationJob,
+		RoboMakerActions.CreateDeploymentJob,
+		RoboMakerActions.CreateFleet,
+		RoboMakerActions.CreateRobot,
+		RoboMakerActions.CreateRobotApplication,
+		RoboMakerActions.CreateRobotApplicationVersion,
+		RoboMakerActions.CreateSimulationApplication,
+		RoboMakerActions.CreateSimulationApplicationVersion,
+		RoboMakerActions.CreateSimulationJob,
+		RoboMakerActions.CreateWorldExportJob,
+		RoboMakerActions.CreateWorldGenerationJob,
+		RoboMakerActions.CreateWorldTemplate,
+		RoboMakerActions.DeleteFleet,
+		RoboMakerActions.DeleteRobot,
+		RoboMakerActions.DeleteRobotApplication,
+		RoboMakerActions.DeleteSimulationApplication,
+		RoboMakerActions.DeleteWorldTemplate,
+		RoboMakerActions.DeregisterRobot,
+		RoboMakerActions.RegisterRobot,
+		RoboMakerActions.RestartSimulationJob,
+		RoboMakerActions.StartSimulationJobBatch,
+		RoboMakerActions.SyncDeploymentJob,
+		RoboMakerActions.UpdateRobotApplication,
+		RoboMakerActions.UpdateRobotDeployment,
+		RoboMakerActions.UpdateSimulationApplication,
+		RoboMakerActions.UpdateWorldTemplate,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		RoboMakerActions.LIST_DEPLOYMENT_JOBS,
-		RoboMakerActions.LIST_FLEETS,
-		RoboMakerActions.LIST_ROBOT_APPLICATIONS,
-		RoboMakerActions.LIST_ROBOTS,
-		RoboMakerActions.LIST_SIMULATION_APPLICATIONS,
-		RoboMakerActions.LIST_SIMULATION_JOB_BATCHES,
-		RoboMakerActions.LIST_SIMULATION_JOBS,
-		RoboMakerActions.LIST_SUPPORTED_AVAILABILITY_ZONES,
-		RoboMakerActions.LIST_TAGS_FOR_RESOURCE,
-		RoboMakerActions.LIST_WORLD_EXPORT_JOBS,
-		RoboMakerActions.LIST_WORLD_GENERATION_JOBS,
-		RoboMakerActions.LIST_WORLD_TEMPLATES,
-		RoboMakerActions.LIST_WORLDS,
+	static readonly AllListActions: string[] = [
+		RoboMakerActions.ListDeploymentJobs,
+		RoboMakerActions.ListFleets,
+		RoboMakerActions.ListRobotApplications,
+		RoboMakerActions.ListRobots,
+		RoboMakerActions.ListSimulationApplications,
+		RoboMakerActions.ListSimulationJobBatches,
+		RoboMakerActions.ListSimulationJobs,
+		RoboMakerActions.ListSupportedAvailabilityZones,
+		RoboMakerActions.ListTagsForResource,
+		RoboMakerActions.ListWorldExportJobs,
+		RoboMakerActions.ListWorldGenerationJobs,
+		RoboMakerActions.ListWorldTemplates,
+		RoboMakerActions.ListWorlds,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RoboMakerActions.TAG_RESOURCE,
-		RoboMakerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RoboMakerActions.TagResource,
+		RoboMakerActions.UntagResource,
 	];
 }
 
-const DeploymentFleetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):deployment-fleet/(?<fleetName>[^:/?]+)/(?<createdOnEpoch>[^:/?]+)$",
-);
-const DeploymentJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):deployment-job/(?<deploymentJobId>[^:/?]+)$",
-);
-const RobotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):robot/(?<robotName>[^:/?]+)/(?<createdOnEpoch>[^:/?]+)$",
-);
-const RobotApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):robot-application/(?<applicationName>[^:/?]+)/(?<createdOnEpoch>[^:/?]+)$",
-);
-const SimulationApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-application/(?<applicationName>[^:/?]+)/(?<createdOnEpoch>[^:/?]+)$",
-);
-const SimulationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-job/(?<simulationJobId>[^:/?]+)$",
-);
-const SimulationJobBatchArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-job-batch/(?<simulationJobBatchId>[^:/?]+)$",
-);
-const WorldArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world/(?<worldId>[^:/?]+)$",
-);
-const WorldExportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-export-job/(?<worldExportJobId>[^:/?]+)$",
-);
-const WorldGenerationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-generation-job/(?<worldGenerationJobId>[^:/?]+)$",
-);
-const WorldTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-template/(?<worldTemplateJobId>[^:/?]+)$",
-);
+/**
+ * Properties for building a deploymentFleet ARN.
+ */
+export interface RoboMakerDeploymentFleetArnProps {
+	/** The FleetName component of the ARN. */
+	readonly fleetName: string;
+	/** The CreatedOnEpoch component of the ARN. */
+	readonly createdOnEpoch: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deploymentFleet ARN.
+ */
+export interface RoboMakerDeploymentFleetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FleetName component. */
+	readonly fleetName: string;
+	/** The CreatedOnEpoch component. */
+	readonly createdOnEpoch: string;
+}
+
+/**
+ * Properties for building a deploymentJob ARN.
+ */
+export interface RoboMakerDeploymentJobArnProps {
+	/** The DeploymentJobId component of the ARN. */
+	readonly deploymentJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a deploymentJob ARN.
+ */
+export interface RoboMakerDeploymentJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeploymentJobId component. */
+	readonly deploymentJobId: string;
+}
+
+/**
+ * Properties for building a robot ARN.
+ */
+export interface RoboMakerRobotArnProps {
+	/** The RobotName component of the ARN. */
+	readonly robotName: string;
+	/** The CreatedOnEpoch component of the ARN. */
+	readonly createdOnEpoch: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a robot ARN.
+ */
+export interface RoboMakerRobotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RobotName component. */
+	readonly robotName: string;
+	/** The CreatedOnEpoch component. */
+	readonly createdOnEpoch: string;
+}
+
+/**
+ * Properties for building a robotApplication ARN.
+ */
+export interface RoboMakerRobotApplicationArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** The CreatedOnEpoch component of the ARN. */
+	readonly createdOnEpoch: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a robotApplication ARN.
+ */
+export interface RoboMakerRobotApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+	/** The CreatedOnEpoch component. */
+	readonly createdOnEpoch: string;
+}
+
+/**
+ * Properties for building a simulationApplication ARN.
+ */
+export interface RoboMakerSimulationApplicationArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** The CreatedOnEpoch component of the ARN. */
+	readonly createdOnEpoch: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a simulationApplication ARN.
+ */
+export interface RoboMakerSimulationApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+	/** The CreatedOnEpoch component. */
+	readonly createdOnEpoch: string;
+}
+
+/**
+ * Properties for building a simulationJob ARN.
+ */
+export interface RoboMakerSimulationJobArnProps {
+	/** The SimulationJobId component of the ARN. */
+	readonly simulationJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a simulationJob ARN.
+ */
+export interface RoboMakerSimulationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SimulationJobId component. */
+	readonly simulationJobId: string;
+}
+
+/**
+ * Properties for building a simulationJobBatch ARN.
+ */
+export interface RoboMakerSimulationJobBatchArnProps {
+	/** The SimulationJobBatchId component of the ARN. */
+	readonly simulationJobBatchId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a simulationJobBatch ARN.
+ */
+export interface RoboMakerSimulationJobBatchArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SimulationJobBatchId component. */
+	readonly simulationJobBatchId: string;
+}
+
+/**
+ * Properties for building a world ARN.
+ */
+export interface RoboMakerWorldArnProps {
+	/** The WorldId component of the ARN. */
+	readonly worldId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a world ARN.
+ */
+export interface RoboMakerWorldArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorldId component. */
+	readonly worldId: string;
+}
+
+/**
+ * Properties for building a worldExportJob ARN.
+ */
+export interface RoboMakerWorldExportJobArnProps {
+	/** The WorldExportJobId component of the ARN. */
+	readonly worldExportJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a worldExportJob ARN.
+ */
+export interface RoboMakerWorldExportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorldExportJobId component. */
+	readonly worldExportJobId: string;
+}
+
+/**
+ * Properties for building a worldGenerationJob ARN.
+ */
+export interface RoboMakerWorldGenerationJobArnProps {
+	/** The WorldGenerationJobId component of the ARN. */
+	readonly worldGenerationJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a worldGenerationJob ARN.
+ */
+export interface RoboMakerWorldGenerationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorldGenerationJobId component. */
+	readonly worldGenerationJobId: string;
+}
+
+/**
+ * Properties for building a worldTemplate ARN.
+ */
+export interface RoboMakerWorldTemplateArnProps {
+	/** The WorldTemplateJobId component of the ARN. */
+	readonly worldTemplateJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a worldTemplate ARN.
+ */
+export interface RoboMakerWorldTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorldTemplateJobId component. */
+	readonly worldTemplateJobId: string;
+}
+
+const DeploymentFleetArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):deployment-fleet\/(?<fleetName>[^:/?]+)\/(?<createdOnEpoch>[^:/?]+)$/;
+const DeploymentJobArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):deployment-job\/(?<deploymentJobId>[^:/?]+)$/;
+const RobotArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):robot\/(?<robotName>[^:/?]+)\/(?<createdOnEpoch>[^:/?]+)$/;
+const RobotApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):robot-application\/(?<applicationName>[^:/?]+)\/(?<createdOnEpoch>[^:/?]+)$/;
+const SimulationApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-application\/(?<applicationName>[^:/?]+)\/(?<createdOnEpoch>[^:/?]+)$/;
+const SimulationJobArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-job\/(?<simulationJobId>[^:/?]+)$/;
+const SimulationJobBatchArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):simulation-job-batch\/(?<simulationJobBatchId>[^:/?]+)$/;
+const WorldArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world\/(?<worldId>[^:/?]+)$/;
+const WorldExportJobArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-export-job\/(?<worldExportJobId>[^:/?]+)$/;
+const WorldGenerationJobArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-generation-job\/(?<worldGenerationJobId>[^:/?]+)$/;
+const WorldTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):robomaker:(?<region>[^:]*):(?<account>[^:]*):world-template\/(?<worldTemplateJobId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for robomaker resources.
@@ -266,18 +576,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the deploymentFleet resource.
 	 */
-	static deploymentFleet(props: {
-		/** The FleetName component of the ARN. */
-		readonly fleetName: string;
-		/** The CreatedOnEpoch component of the ARN. */
-		readonly createdOnEpoch: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentFleet(props: RoboMakerDeploymentFleetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:deployment-fleet/${props.fleetName}/${props.createdOnEpoch}`;
 	}
 
@@ -292,13 +591,9 @@ export class RoboMakerResources {
 	 * Parses a deploymentFleet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentFleetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fleetName: string;
-		createdOnEpoch: string;
-	} {
+	static parseDeploymentFleetArn(
+		arn: string,
+	): RoboMakerDeploymentFleetArnComponents {
 		const match = DeploymentFleetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deploymentFleet ARN: ${arn}`);
@@ -315,16 +610,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the deploymentJob resource.
 	 */
-	static deploymentJob(props: {
-		/** The DeploymentJobId component of the ARN. */
-		readonly deploymentJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deploymentJob(props: RoboMakerDeploymentJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:deployment-job/${props.deploymentJobId}`;
 	}
 
@@ -339,12 +625,9 @@ export class RoboMakerResources {
 	 * Parses a deploymentJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeploymentJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deploymentJobId: string;
-	} {
+	static parseDeploymentJobArn(
+		arn: string,
+	): RoboMakerDeploymentJobArnComponents {
 		const match = DeploymentJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid deploymentJob ARN: ${arn}`);
@@ -360,18 +643,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the robot resource.
 	 */
-	static robot(props: {
-		/** The RobotName component of the ARN. */
-		readonly robotName: string;
-		/** The CreatedOnEpoch component of the ARN. */
-		readonly createdOnEpoch: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static robot(props: RoboMakerRobotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:robot/${props.robotName}/${props.createdOnEpoch}`;
 	}
 
@@ -386,13 +658,7 @@ export class RoboMakerResources {
 	 * Parses a robot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRobotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		robotName: string;
-		createdOnEpoch: string;
-	} {
+	static parseRobotArn(arn: string): RoboMakerRobotArnComponents {
 		const match = RobotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid robot ARN: ${arn}`);
@@ -409,18 +675,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the robotApplication resource.
 	 */
-	static robotApplication(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** The CreatedOnEpoch component of the ARN. */
-		readonly createdOnEpoch: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static robotApplication(props: RoboMakerRobotApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:robot-application/${props.applicationName}/${props.createdOnEpoch}`;
 	}
 
@@ -435,13 +690,9 @@ export class RoboMakerResources {
 	 * Parses a robotApplication ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRobotApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-		createdOnEpoch: string;
-	} {
+	static parseRobotApplicationArn(
+		arn: string,
+	): RoboMakerRobotApplicationArnComponents {
 		const match = RobotApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid robotApplication ARN: ${arn}`);
@@ -458,18 +709,9 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the simulationApplication resource.
 	 */
-	static simulationApplication(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** The CreatedOnEpoch component of the ARN. */
-		readonly createdOnEpoch: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static simulationApplication(
+		props: RoboMakerSimulationApplicationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:simulation-application/${props.applicationName}/${props.createdOnEpoch}`;
 	}
 
@@ -484,13 +726,9 @@ export class RoboMakerResources {
 	 * Parses a simulationApplication ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSimulationApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-		createdOnEpoch: string;
-	} {
+	static parseSimulationApplicationArn(
+		arn: string,
+	): RoboMakerSimulationApplicationArnComponents {
 		const match = SimulationApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid simulationApplication ARN: ${arn}`);
@@ -507,16 +745,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the simulationJob resource.
 	 */
-	static simulationJob(props: {
-		/** The SimulationJobId component of the ARN. */
-		readonly simulationJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static simulationJob(props: RoboMakerSimulationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:simulation-job/${props.simulationJobId}`;
 	}
 
@@ -531,12 +760,9 @@ export class RoboMakerResources {
 	 * Parses a simulationJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSimulationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		simulationJobId: string;
-	} {
+	static parseSimulationJobArn(
+		arn: string,
+	): RoboMakerSimulationJobArnComponents {
 		const match = SimulationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid simulationJob ARN: ${arn}`);
@@ -552,16 +778,9 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the simulationJobBatch resource.
 	 */
-	static simulationJobBatch(props: {
-		/** The SimulationJobBatchId component of the ARN. */
-		readonly simulationJobBatchId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static simulationJobBatch(
+		props: RoboMakerSimulationJobBatchArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:simulation-job-batch/${props.simulationJobBatchId}`;
 	}
 
@@ -576,12 +795,9 @@ export class RoboMakerResources {
 	 * Parses a simulationJobBatch ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSimulationJobBatchArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		simulationJobBatchId: string;
-	} {
+	static parseSimulationJobBatchArn(
+		arn: string,
+	): RoboMakerSimulationJobBatchArnComponents {
 		const match = SimulationJobBatchArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid simulationJobBatch ARN: ${arn}`);
@@ -597,16 +813,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the world resource.
 	 */
-	static world(props: {
-		/** The WorldId component of the ARN. */
-		readonly worldId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static world(props: RoboMakerWorldArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:world/${props.worldId}`;
 	}
 
@@ -621,12 +828,7 @@ export class RoboMakerResources {
 	 * Parses a world ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorldArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		worldId: string;
-	} {
+	static parseWorldArn(arn: string): RoboMakerWorldArnComponents {
 		const match = WorldArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid world ARN: ${arn}`);
@@ -642,16 +844,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the worldExportJob resource.
 	 */
-	static worldExportJob(props: {
-		/** The WorldExportJobId component of the ARN. */
-		readonly worldExportJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static worldExportJob(props: RoboMakerWorldExportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:world-export-job/${props.worldExportJobId}`;
 	}
 
@@ -666,12 +859,9 @@ export class RoboMakerResources {
 	 * Parses a worldExportJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorldExportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		worldExportJobId: string;
-	} {
+	static parseWorldExportJobArn(
+		arn: string,
+	): RoboMakerWorldExportJobArnComponents {
 		const match = WorldExportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid worldExportJob ARN: ${arn}`);
@@ -687,16 +877,9 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the worldGenerationJob resource.
 	 */
-	static worldGenerationJob(props: {
-		/** The WorldGenerationJobId component of the ARN. */
-		readonly worldGenerationJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static worldGenerationJob(
+		props: RoboMakerWorldGenerationJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:world-generation-job/${props.worldGenerationJobId}`;
 	}
 
@@ -711,12 +894,9 @@ export class RoboMakerResources {
 	 * Parses a worldGenerationJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorldGenerationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		worldGenerationJobId: string;
-	} {
+	static parseWorldGenerationJobArn(
+		arn: string,
+	): RoboMakerWorldGenerationJobArnComponents {
 		const match = WorldGenerationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid worldGenerationJob ARN: ${arn}`);
@@ -732,16 +912,7 @@ export class RoboMakerResources {
 	/**
 	 * Builds an ARN for the worldTemplate resource.
 	 */
-	static worldTemplate(props: {
-		/** The WorldTemplateJobId component of the ARN. */
-		readonly worldTemplateJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static worldTemplate(props: RoboMakerWorldTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:robomaker:${props.region ?? "*"}:${props.account ?? "*"}:world-template/${props.worldTemplateJobId}`;
 	}
 
@@ -756,12 +927,9 @@ export class RoboMakerResources {
 	 * Parses a worldTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorldTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		worldTemplateJobId: string;
-	} {
+	static parseWorldTemplateArn(
+		arn: string,
+	): RoboMakerWorldTemplateArnComponents {
 		const match = WorldTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid worldTemplate ARN: ${arn}`);
@@ -780,69 +948,69 @@ export class RoboMakerResources {
  */
 export class RoboMakerConditions {
 	/** Condition keys applicable to the CreateDeploymentJob action. */
-	static readonly CREATE_DEPLOYMENT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateDeploymentJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFleet action. */
-	static readonly CREATE_FLEET_CONDITION_KEYS: string[] = [
+	static readonly CreateFleetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRobot action. */
-	static readonly CREATE_ROBOT_CONDITION_KEYS: string[] = [
+	static readonly CreateRobotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRobotApplication action. */
-	static readonly CREATE_ROBOT_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateRobotApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSimulationApplication action. */
-	static readonly CREATE_SIMULATION_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateSimulationApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSimulationJob action. */
-	static readonly CREATE_SIMULATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateSimulationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorldExportJob action. */
-	static readonly CREATE_WORLD_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateWorldExportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorldGenerationJob action. */
-	static readonly CREATE_WORLD_GENERATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateWorldGenerationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWorldTemplate action. */
-	static readonly CREATE_WORLD_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorldTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartSimulationJobBatch action. */
-	static readonly START_SIMULATION_JOB_BATCH_CONDITION_KEYS: string[] = [
+	static readonly StartSimulationJobBatchConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

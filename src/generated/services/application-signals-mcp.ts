@@ -13,29 +13,51 @@ export class ApplicationSignalsMcpActions {
 	static readonly SERVICE_PREFIX = "application-signals-mcp";
 
 	/** [Read] application-signals-mcp:CallReadOnlyTool */
-	static readonly CALL_READ_ONLY_TOOL =
-		"application-signals-mcp:CallReadOnlyTool";
+	static readonly CallReadOnlyTool = "application-signals-mcp:CallReadOnlyTool";
 	/** [Read] application-signals-mcp:InvokeMcp */
-	static readonly INVOKE_MCP = "application-signals-mcp:InvokeMcp";
+	static readonly InvokeMcp = "application-signals-mcp:InvokeMcp";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApplicationSignalsMcpActions.CALL_READ_ONLY_TOOL,
-		ApplicationSignalsMcpActions.INVOKE_MCP,
+	static readonly AllReadActions: string[] = [
+		ApplicationSignalsMcpActions.CallReadOnlyTool,
+		ApplicationSignalsMcpActions.InvokeMcp,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const McpServerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):application-signals-mcp:(?<region>[^:]*):(?<account>[^:]*):mcp-server/.*$",
-);
+/**
+ * Properties for building a mcp-server ARN.
+ */
+export interface ApplicationSignalsMcpMcpServerArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mcp-server ARN.
+ */
+export interface ApplicationSignalsMcpMcpServerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+const McpServerArnRegex =
+	/^arn:(?<partition>[^:]+):application-signals-mcp:(?<region>[^:]*):(?<account>[^:]*):mcp-server\/.*$/;
 
 /**
  * ARN builders, validators, and parsers for application-signals-mcp resources.
@@ -44,14 +66,7 @@ export class ApplicationSignalsMcpResources {
 	/**
 	 * Builds an ARN for the mcp-server resource.
 	 */
-	static mcpServer(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mcpServer(props: ApplicationSignalsMcpMcpServerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:application-signals-mcp:${props.region ?? "*"}:${props.account ?? "*"}:mcp-server/*`;
 	}
 
@@ -66,11 +81,9 @@ export class ApplicationSignalsMcpResources {
 	 * Parses a mcp-server ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMcpServerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseMcpServerArn(
+		arn: string,
+	): ApplicationSignalsMcpMcpServerArnComponents {
 		const match = McpServerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mcp-server ARN: ${arn}`);
@@ -88,7 +101,7 @@ export class ApplicationSignalsMcpResources {
  */
 export class ApplicationSignalsMcpConditions {
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.

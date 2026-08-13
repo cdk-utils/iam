@@ -13,256 +13,446 @@ export class DatasyncActions {
 	static readonly SERVICE_PREFIX = "datasync";
 
 	/** [Write] datasync:AddStorageSystem */
-	static readonly ADD_STORAGE_SYSTEM = "datasync:AddStorageSystem";
+	static readonly AddStorageSystem = "datasync:AddStorageSystem";
 	/** [Write] datasync:CancelTaskExecution */
-	static readonly CANCEL_TASK_EXECUTION = "datasync:CancelTaskExecution";
+	static readonly CancelTaskExecution = "datasync:CancelTaskExecution";
 	/** [Write] datasync:CreateAgent */
-	static readonly CREATE_AGENT = "datasync:CreateAgent";
+	static readonly CreateAgent = "datasync:CreateAgent";
 	/** [Write] datasync:CreateLocationAzureBlob */
-	static readonly CREATE_LOCATION_AZURE_BLOB =
-		"datasync:CreateLocationAzureBlob";
+	static readonly CreateLocationAzureBlob = "datasync:CreateLocationAzureBlob";
 	/** [Write] datasync:CreateLocationEfs */
-	static readonly CREATE_LOCATION_EFS = "datasync:CreateLocationEfs";
+	static readonly CreateLocationEfs = "datasync:CreateLocationEfs";
 	/** [Write] datasync:CreateLocationFsxLustre */
-	static readonly CREATE_LOCATION_FSX_LUSTRE =
-		"datasync:CreateLocationFsxLustre";
+	static readonly CreateLocationFsxLustre = "datasync:CreateLocationFsxLustre";
 	/** [Write] datasync:CreateLocationFsxOntap */
-	static readonly CREATE_LOCATION_FSX_ONTAP = "datasync:CreateLocationFsxOntap";
+	static readonly CreateLocationFsxOntap = "datasync:CreateLocationFsxOntap";
 	/** [Write] datasync:CreateLocationFsxOpenZfs */
-	static readonly CREATE_LOCATION_FSX_OPEN_ZFS =
+	static readonly CreateLocationFsxOpenZfs =
 		"datasync:CreateLocationFsxOpenZfs";
 	/** [Write] datasync:CreateLocationFsxWindows */
-	static readonly CREATE_LOCATION_FSX_WINDOWS =
+	static readonly CreateLocationFsxWindows =
 		"datasync:CreateLocationFsxWindows";
 	/** [Write] datasync:CreateLocationHdfs */
-	static readonly CREATE_LOCATION_HDFS = "datasync:CreateLocationHdfs";
+	static readonly CreateLocationHdfs = "datasync:CreateLocationHdfs";
 	/** [Write] datasync:CreateLocationNfs */
-	static readonly CREATE_LOCATION_NFS = "datasync:CreateLocationNfs";
+	static readonly CreateLocationNfs = "datasync:CreateLocationNfs";
 	/** [Write] datasync:CreateLocationObjectStorage */
-	static readonly CREATE_LOCATION_OBJECT_STORAGE =
+	static readonly CreateLocationObjectStorage =
 		"datasync:CreateLocationObjectStorage";
 	/** [Write] datasync:CreateLocationS3 */
-	static readonly CREATE_LOCATION_S3 = "datasync:CreateLocationS3";
+	static readonly CreateLocationS3 = "datasync:CreateLocationS3";
 	/** [Write] datasync:CreateLocationSmb */
-	static readonly CREATE_LOCATION_SMB = "datasync:CreateLocationSmb";
+	static readonly CreateLocationSmb = "datasync:CreateLocationSmb";
 	/** [Write] datasync:CreateTask */
-	static readonly CREATE_TASK = "datasync:CreateTask";
+	static readonly CreateTask = "datasync:CreateTask";
 	/** [Write] datasync:DeleteAgent */
-	static readonly DELETE_AGENT = "datasync:DeleteAgent";
+	static readonly DeleteAgent = "datasync:DeleteAgent";
 	/** [Write] datasync:DeleteLocation */
-	static readonly DELETE_LOCATION = "datasync:DeleteLocation";
+	static readonly DeleteLocation = "datasync:DeleteLocation";
 	/** [Write] datasync:DeleteTask */
-	static readonly DELETE_TASK = "datasync:DeleteTask";
+	static readonly DeleteTask = "datasync:DeleteTask";
 	/** [Read] datasync:DescribeAgent */
-	static readonly DESCRIBE_AGENT = "datasync:DescribeAgent";
+	static readonly DescribeAgent = "datasync:DescribeAgent";
 	/** [Read] datasync:DescribeDiscoveryJob */
-	static readonly DESCRIBE_DISCOVERY_JOB = "datasync:DescribeDiscoveryJob";
+	static readonly DescribeDiscoveryJob = "datasync:DescribeDiscoveryJob";
 	/** [Read] datasync:DescribeLocationAzureBlob */
-	static readonly DESCRIBE_LOCATION_AZURE_BLOB =
+	static readonly DescribeLocationAzureBlob =
 		"datasync:DescribeLocationAzureBlob";
 	/** [Read] datasync:DescribeLocationEfs */
-	static readonly DESCRIBE_LOCATION_EFS = "datasync:DescribeLocationEfs";
+	static readonly DescribeLocationEfs = "datasync:DescribeLocationEfs";
 	/** [Read] datasync:DescribeLocationFsxLustre */
-	static readonly DESCRIBE_LOCATION_FSX_LUSTRE =
+	static readonly DescribeLocationFsxLustre =
 		"datasync:DescribeLocationFsxLustre";
 	/** [Read] datasync:DescribeLocationFsxOntap */
-	static readonly DESCRIBE_LOCATION_FSX_ONTAP =
+	static readonly DescribeLocationFsxOntap =
 		"datasync:DescribeLocationFsxOntap";
 	/** [Read] datasync:DescribeLocationFsxOpenZfs */
-	static readonly DESCRIBE_LOCATION_FSX_OPEN_ZFS =
+	static readonly DescribeLocationFsxOpenZfs =
 		"datasync:DescribeLocationFsxOpenZfs";
 	/** [Read] datasync:DescribeLocationFsxWindows */
-	static readonly DESCRIBE_LOCATION_FSX_WINDOWS =
+	static readonly DescribeLocationFsxWindows =
 		"datasync:DescribeLocationFsxWindows";
 	/** [Read] datasync:DescribeLocationHdfs */
-	static readonly DESCRIBE_LOCATION_HDFS = "datasync:DescribeLocationHdfs";
+	static readonly DescribeLocationHdfs = "datasync:DescribeLocationHdfs";
 	/** [Read] datasync:DescribeLocationNfs */
-	static readonly DESCRIBE_LOCATION_NFS = "datasync:DescribeLocationNfs";
+	static readonly DescribeLocationNfs = "datasync:DescribeLocationNfs";
 	/** [Read] datasync:DescribeLocationObjectStorage */
-	static readonly DESCRIBE_LOCATION_OBJECT_STORAGE =
+	static readonly DescribeLocationObjectStorage =
 		"datasync:DescribeLocationObjectStorage";
 	/** [Read] datasync:DescribeLocationS3 */
-	static readonly DESCRIBE_LOCATION_S3 = "datasync:DescribeLocationS3";
+	static readonly DescribeLocationS3 = "datasync:DescribeLocationS3";
 	/** [Read] datasync:DescribeLocationSmb */
-	static readonly DESCRIBE_LOCATION_SMB = "datasync:DescribeLocationSmb";
+	static readonly DescribeLocationSmb = "datasync:DescribeLocationSmb";
 	/** [Read] datasync:DescribeStorageSystem */
-	static readonly DESCRIBE_STORAGE_SYSTEM = "datasync:DescribeStorageSystem";
+	static readonly DescribeStorageSystem = "datasync:DescribeStorageSystem";
 	/** [List] datasync:DescribeStorageSystemResourceMetrics */
-	static readonly DESCRIBE_STORAGE_SYSTEM_RESOURCE_METRICS =
+	static readonly DescribeStorageSystemResourceMetrics =
 		"datasync:DescribeStorageSystemResourceMetrics";
 	/** [List] datasync:DescribeStorageSystemResources */
-	static readonly DESCRIBE_STORAGE_SYSTEM_RESOURCES =
+	static readonly DescribeStorageSystemResources =
 		"datasync:DescribeStorageSystemResources";
 	/** [Read] datasync:DescribeTask */
-	static readonly DESCRIBE_TASK = "datasync:DescribeTask";
+	static readonly DescribeTask = "datasync:DescribeTask";
 	/** [Read] datasync:DescribeTaskExecution */
-	static readonly DESCRIBE_TASK_EXECUTION = "datasync:DescribeTaskExecution";
+	static readonly DescribeTaskExecution = "datasync:DescribeTaskExecution";
 	/** [Write] datasync:GenerateRecommendations */
-	static readonly GENERATE_RECOMMENDATIONS = "datasync:GenerateRecommendations";
+	static readonly GenerateRecommendations = "datasync:GenerateRecommendations";
 	/** [List] datasync:ListAgents */
-	static readonly LIST_AGENTS = "datasync:ListAgents";
+	static readonly ListAgents = "datasync:ListAgents";
 	/** [List] datasync:ListDiscoveryJobs */
-	static readonly LIST_DISCOVERY_JOBS = "datasync:ListDiscoveryJobs";
+	static readonly ListDiscoveryJobs = "datasync:ListDiscoveryJobs";
 	/** [List] datasync:ListLocations */
-	static readonly LIST_LOCATIONS = "datasync:ListLocations";
+	static readonly ListLocations = "datasync:ListLocations";
 	/** [List] datasync:ListStorageSystems */
-	static readonly LIST_STORAGE_SYSTEMS = "datasync:ListStorageSystems";
+	static readonly ListStorageSystems = "datasync:ListStorageSystems";
 	/** [Read] datasync:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "datasync:ListTagsForResource";
+	static readonly ListTagsForResource = "datasync:ListTagsForResource";
 	/** [List] datasync:ListTaskExecutions */
-	static readonly LIST_TASK_EXECUTIONS = "datasync:ListTaskExecutions";
+	static readonly ListTaskExecutions = "datasync:ListTaskExecutions";
 	/** [List] datasync:ListTasks */
-	static readonly LIST_TASKS = "datasync:ListTasks";
+	static readonly ListTasks = "datasync:ListTasks";
 	/** [Write] datasync:RemoveStorageSystem */
-	static readonly REMOVE_STORAGE_SYSTEM = "datasync:RemoveStorageSystem";
+	static readonly RemoveStorageSystem = "datasync:RemoveStorageSystem";
 	/** [Write] datasync:StartDiscoveryJob */
-	static readonly START_DISCOVERY_JOB = "datasync:StartDiscoveryJob";
+	static readonly StartDiscoveryJob = "datasync:StartDiscoveryJob";
 	/** [Write] datasync:StartTaskExecution */
-	static readonly START_TASK_EXECUTION = "datasync:StartTaskExecution";
+	static readonly StartTaskExecution = "datasync:StartTaskExecution";
 	/** [Write] datasync:StopDiscoveryJob */
-	static readonly STOP_DISCOVERY_JOB = "datasync:StopDiscoveryJob";
+	static readonly StopDiscoveryJob = "datasync:StopDiscoveryJob";
 	/** [Tagging] datasync:TagResource */
-	static readonly TAG_RESOURCE = "datasync:TagResource";
+	static readonly TagResource = "datasync:TagResource";
 	/** [Tagging] datasync:UntagResource */
-	static readonly UNTAG_RESOURCE = "datasync:UntagResource";
+	static readonly UntagResource = "datasync:UntagResource";
 	/** [Write] datasync:UpdateAgent */
-	static readonly UPDATE_AGENT = "datasync:UpdateAgent";
+	static readonly UpdateAgent = "datasync:UpdateAgent";
 	/** [Write] datasync:UpdateDiscoveryJob */
-	static readonly UPDATE_DISCOVERY_JOB = "datasync:UpdateDiscoveryJob";
+	static readonly UpdateDiscoveryJob = "datasync:UpdateDiscoveryJob";
 	/** [Write] datasync:UpdateLocationAzureBlob */
-	static readonly UPDATE_LOCATION_AZURE_BLOB =
-		"datasync:UpdateLocationAzureBlob";
+	static readonly UpdateLocationAzureBlob = "datasync:UpdateLocationAzureBlob";
 	/** [Write] datasync:UpdateLocationEfs */
-	static readonly UPDATE_LOCATION_EFS = "datasync:UpdateLocationEfs";
+	static readonly UpdateLocationEfs = "datasync:UpdateLocationEfs";
 	/** [Write] datasync:UpdateLocationFsxLustre */
-	static readonly UPDATE_LOCATION_FSX_LUSTRE =
-		"datasync:UpdateLocationFsxLustre";
+	static readonly UpdateLocationFsxLustre = "datasync:UpdateLocationFsxLustre";
 	/** [Write] datasync:UpdateLocationFsxOntap */
-	static readonly UPDATE_LOCATION_FSX_ONTAP = "datasync:UpdateLocationFsxOntap";
+	static readonly UpdateLocationFsxOntap = "datasync:UpdateLocationFsxOntap";
 	/** [Write] datasync:UpdateLocationFsxOpenZfs */
-	static readonly UPDATE_LOCATION_FSX_OPEN_ZFS =
+	static readonly UpdateLocationFsxOpenZfs =
 		"datasync:UpdateLocationFsxOpenZfs";
 	/** [Write] datasync:UpdateLocationFsxWindows */
-	static readonly UPDATE_LOCATION_FSX_WINDOWS =
+	static readonly UpdateLocationFsxWindows =
 		"datasync:UpdateLocationFsxWindows";
 	/** [Write] datasync:UpdateLocationHdfs */
-	static readonly UPDATE_LOCATION_HDFS = "datasync:UpdateLocationHdfs";
+	static readonly UpdateLocationHdfs = "datasync:UpdateLocationHdfs";
 	/** [Write] datasync:UpdateLocationNfs */
-	static readonly UPDATE_LOCATION_NFS = "datasync:UpdateLocationNfs";
+	static readonly UpdateLocationNfs = "datasync:UpdateLocationNfs";
 	/** [Write] datasync:UpdateLocationObjectStorage */
-	static readonly UPDATE_LOCATION_OBJECT_STORAGE =
+	static readonly UpdateLocationObjectStorage =
 		"datasync:UpdateLocationObjectStorage";
 	/** [Write] datasync:UpdateLocationS3 */
-	static readonly UPDATE_LOCATION_S3 = "datasync:UpdateLocationS3";
+	static readonly UpdateLocationS3 = "datasync:UpdateLocationS3";
 	/** [Write] datasync:UpdateLocationSmb */
-	static readonly UPDATE_LOCATION_SMB = "datasync:UpdateLocationSmb";
+	static readonly UpdateLocationSmb = "datasync:UpdateLocationSmb";
 	/** [Write] datasync:UpdateStorageSystem */
-	static readonly UPDATE_STORAGE_SYSTEM = "datasync:UpdateStorageSystem";
+	static readonly UpdateStorageSystem = "datasync:UpdateStorageSystem";
 	/** [Write] datasync:UpdateTask */
-	static readonly UPDATE_TASK = "datasync:UpdateTask";
+	static readonly UpdateTask = "datasync:UpdateTask";
 	/** [Write] datasync:UpdateTaskExecution */
-	static readonly UPDATE_TASK_EXECUTION = "datasync:UpdateTaskExecution";
+	static readonly UpdateTaskExecution = "datasync:UpdateTaskExecution";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		DatasyncActions.DESCRIBE_AGENT,
-		DatasyncActions.DESCRIBE_DISCOVERY_JOB,
-		DatasyncActions.DESCRIBE_LOCATION_AZURE_BLOB,
-		DatasyncActions.DESCRIBE_LOCATION_EFS,
-		DatasyncActions.DESCRIBE_LOCATION_FSX_LUSTRE,
-		DatasyncActions.DESCRIBE_LOCATION_FSX_ONTAP,
-		DatasyncActions.DESCRIBE_LOCATION_FSX_OPEN_ZFS,
-		DatasyncActions.DESCRIBE_LOCATION_FSX_WINDOWS,
-		DatasyncActions.DESCRIBE_LOCATION_HDFS,
-		DatasyncActions.DESCRIBE_LOCATION_NFS,
-		DatasyncActions.DESCRIBE_LOCATION_OBJECT_STORAGE,
-		DatasyncActions.DESCRIBE_LOCATION_S3,
-		DatasyncActions.DESCRIBE_LOCATION_SMB,
-		DatasyncActions.DESCRIBE_STORAGE_SYSTEM,
-		DatasyncActions.DESCRIBE_TASK,
-		DatasyncActions.DESCRIBE_TASK_EXECUTION,
-		DatasyncActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		DatasyncActions.DescribeAgent,
+		DatasyncActions.DescribeDiscoveryJob,
+		DatasyncActions.DescribeLocationAzureBlob,
+		DatasyncActions.DescribeLocationEfs,
+		DatasyncActions.DescribeLocationFsxLustre,
+		DatasyncActions.DescribeLocationFsxOntap,
+		DatasyncActions.DescribeLocationFsxOpenZfs,
+		DatasyncActions.DescribeLocationFsxWindows,
+		DatasyncActions.DescribeLocationHdfs,
+		DatasyncActions.DescribeLocationNfs,
+		DatasyncActions.DescribeLocationObjectStorage,
+		DatasyncActions.DescribeLocationS3,
+		DatasyncActions.DescribeLocationSmb,
+		DatasyncActions.DescribeStorageSystem,
+		DatasyncActions.DescribeTask,
+		DatasyncActions.DescribeTaskExecution,
+		DatasyncActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		DatasyncActions.ADD_STORAGE_SYSTEM,
-		DatasyncActions.CANCEL_TASK_EXECUTION,
-		DatasyncActions.CREATE_AGENT,
-		DatasyncActions.CREATE_LOCATION_AZURE_BLOB,
-		DatasyncActions.CREATE_LOCATION_EFS,
-		DatasyncActions.CREATE_LOCATION_FSX_LUSTRE,
-		DatasyncActions.CREATE_LOCATION_FSX_ONTAP,
-		DatasyncActions.CREATE_LOCATION_FSX_OPEN_ZFS,
-		DatasyncActions.CREATE_LOCATION_FSX_WINDOWS,
-		DatasyncActions.CREATE_LOCATION_HDFS,
-		DatasyncActions.CREATE_LOCATION_NFS,
-		DatasyncActions.CREATE_LOCATION_OBJECT_STORAGE,
-		DatasyncActions.CREATE_LOCATION_S3,
-		DatasyncActions.CREATE_LOCATION_SMB,
-		DatasyncActions.CREATE_TASK,
-		DatasyncActions.DELETE_AGENT,
-		DatasyncActions.DELETE_LOCATION,
-		DatasyncActions.DELETE_TASK,
-		DatasyncActions.GENERATE_RECOMMENDATIONS,
-		DatasyncActions.REMOVE_STORAGE_SYSTEM,
-		DatasyncActions.START_DISCOVERY_JOB,
-		DatasyncActions.START_TASK_EXECUTION,
-		DatasyncActions.STOP_DISCOVERY_JOB,
-		DatasyncActions.UPDATE_AGENT,
-		DatasyncActions.UPDATE_DISCOVERY_JOB,
-		DatasyncActions.UPDATE_LOCATION_AZURE_BLOB,
-		DatasyncActions.UPDATE_LOCATION_EFS,
-		DatasyncActions.UPDATE_LOCATION_FSX_LUSTRE,
-		DatasyncActions.UPDATE_LOCATION_FSX_ONTAP,
-		DatasyncActions.UPDATE_LOCATION_FSX_OPEN_ZFS,
-		DatasyncActions.UPDATE_LOCATION_FSX_WINDOWS,
-		DatasyncActions.UPDATE_LOCATION_HDFS,
-		DatasyncActions.UPDATE_LOCATION_NFS,
-		DatasyncActions.UPDATE_LOCATION_OBJECT_STORAGE,
-		DatasyncActions.UPDATE_LOCATION_S3,
-		DatasyncActions.UPDATE_LOCATION_SMB,
-		DatasyncActions.UPDATE_STORAGE_SYSTEM,
-		DatasyncActions.UPDATE_TASK,
-		DatasyncActions.UPDATE_TASK_EXECUTION,
+	static readonly AllWriteActions: string[] = [
+		DatasyncActions.AddStorageSystem,
+		DatasyncActions.CancelTaskExecution,
+		DatasyncActions.CreateAgent,
+		DatasyncActions.CreateLocationAzureBlob,
+		DatasyncActions.CreateLocationEfs,
+		DatasyncActions.CreateLocationFsxLustre,
+		DatasyncActions.CreateLocationFsxOntap,
+		DatasyncActions.CreateLocationFsxOpenZfs,
+		DatasyncActions.CreateLocationFsxWindows,
+		DatasyncActions.CreateLocationHdfs,
+		DatasyncActions.CreateLocationNfs,
+		DatasyncActions.CreateLocationObjectStorage,
+		DatasyncActions.CreateLocationS3,
+		DatasyncActions.CreateLocationSmb,
+		DatasyncActions.CreateTask,
+		DatasyncActions.DeleteAgent,
+		DatasyncActions.DeleteLocation,
+		DatasyncActions.DeleteTask,
+		DatasyncActions.GenerateRecommendations,
+		DatasyncActions.RemoveStorageSystem,
+		DatasyncActions.StartDiscoveryJob,
+		DatasyncActions.StartTaskExecution,
+		DatasyncActions.StopDiscoveryJob,
+		DatasyncActions.UpdateAgent,
+		DatasyncActions.UpdateDiscoveryJob,
+		DatasyncActions.UpdateLocationAzureBlob,
+		DatasyncActions.UpdateLocationEfs,
+		DatasyncActions.UpdateLocationFsxLustre,
+		DatasyncActions.UpdateLocationFsxOntap,
+		DatasyncActions.UpdateLocationFsxOpenZfs,
+		DatasyncActions.UpdateLocationFsxWindows,
+		DatasyncActions.UpdateLocationHdfs,
+		DatasyncActions.UpdateLocationNfs,
+		DatasyncActions.UpdateLocationObjectStorage,
+		DatasyncActions.UpdateLocationS3,
+		DatasyncActions.UpdateLocationSmb,
+		DatasyncActions.UpdateStorageSystem,
+		DatasyncActions.UpdateTask,
+		DatasyncActions.UpdateTaskExecution,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		DatasyncActions.DESCRIBE_STORAGE_SYSTEM_RESOURCE_METRICS,
-		DatasyncActions.DESCRIBE_STORAGE_SYSTEM_RESOURCES,
-		DatasyncActions.LIST_AGENTS,
-		DatasyncActions.LIST_DISCOVERY_JOBS,
-		DatasyncActions.LIST_LOCATIONS,
-		DatasyncActions.LIST_STORAGE_SYSTEMS,
-		DatasyncActions.LIST_TASK_EXECUTIONS,
-		DatasyncActions.LIST_TASKS,
+	static readonly AllListActions: string[] = [
+		DatasyncActions.DescribeStorageSystemResourceMetrics,
+		DatasyncActions.DescribeStorageSystemResources,
+		DatasyncActions.ListAgents,
+		DatasyncActions.ListDiscoveryJobs,
+		DatasyncActions.ListLocations,
+		DatasyncActions.ListStorageSystems,
+		DatasyncActions.ListTaskExecutions,
+		DatasyncActions.ListTasks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		DatasyncActions.TAG_RESOURCE,
-		DatasyncActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		DatasyncActions.TagResource,
+		DatasyncActions.UntagResource,
 	];
 }
 
-const AgentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):agent/(?<agentId>[^:/?]+)$",
-);
-const DiscoveryjobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):system/(?<storageSystemId>[^:/?]+)/job/(?<discoveryJobId>[^:/?]+)$",
-);
-const LocationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):location/(?<locationId>[^:/?]+)$",
-);
-const StoragesystemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):system/(?<storageSystemId>[^:/?]+)$",
-);
-const TaskArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):task/(?<taskId>[^:/?]+)$",
-);
-const TaskexecutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):task/(?<taskId>[^:/?]+)/execution/(?<executionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a agent ARN.
+ */
+export interface DatasyncAgentArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The AgentId component of the ARN. */
+	readonly agentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent ARN.
+ */
+export interface DatasyncAgentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The AgentId component. */
+	readonly agentId: string;
+}
+
+/**
+ * Properties for building a discoveryjob ARN.
+ */
+export interface DatasyncDiscoveryjobArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The StorageSystemId component of the ARN. */
+	readonly storageSystemId: string;
+	/** The DiscoveryJobId component of the ARN. */
+	readonly discoveryJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a discoveryjob ARN.
+ */
+export interface DatasyncDiscoveryjobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The StorageSystemId component. */
+	readonly storageSystemId: string;
+	/** The DiscoveryJobId component. */
+	readonly discoveryJobId: string;
+}
+
+/**
+ * Properties for building a location ARN.
+ */
+export interface DatasyncLocationArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The LocationId component of the ARN. */
+	readonly locationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a location ARN.
+ */
+export interface DatasyncLocationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The LocationId component. */
+	readonly locationId: string;
+}
+
+/**
+ * Properties for building a storagesystem ARN.
+ */
+export interface DatasyncStoragesystemArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The StorageSystemId component of the ARN. */
+	readonly storageSystemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a storagesystem ARN.
+ */
+export interface DatasyncStoragesystemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The StorageSystemId component. */
+	readonly storageSystemId: string;
+}
+
+/**
+ * Properties for building a task ARN.
+ */
+export interface DatasyncTaskArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a task ARN.
+ */
+export interface DatasyncTaskArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+}
+
+/**
+ * Properties for building a taskexecution ARN.
+ */
+export interface DatasyncTaskexecutionArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The TaskId component of the ARN. */
+	readonly taskId: string;
+	/** The ExecutionId component of the ARN. */
+	readonly executionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a taskexecution ARN.
+ */
+export interface DatasyncTaskexecutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The TaskId component. */
+	readonly taskId: string;
+	/** The ExecutionId component. */
+	readonly executionId: string;
+}
+
+const AgentArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):agent\/(?<agentId>[^:/?]+)$/;
+const DiscoveryjobArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):system\/(?<storageSystemId>[^:/?]+)\/job\/(?<discoveryJobId>[^:/?]+)$/;
+const LocationArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):location\/(?<locationId>[^:/?]+)$/;
+const StoragesystemArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):system\/(?<storageSystemId>[^:/?]+)$/;
+const TaskArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):task\/(?<taskId>[^:/?]+)$/;
+const TaskexecutionArnRegex =
+	/^arn:(?<partition>[^:]+):datasync:(?<region>[^:]*):(?<accountId>[^:/?]+):task\/(?<taskId>[^:/?]+)\/execution\/(?<executionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for datasync resources.
@@ -271,18 +461,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the agent resource.
 	 */
-	static agent(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The AgentId component of the ARN. */
-		readonly agentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agent(props: DatasyncAgentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:agent/${props.agentId}`;
 	}
 
@@ -297,13 +476,7 @@ export class DatasyncResources {
 	 * Parses a agent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		agentId: string;
-	} {
+	static parseAgentArn(arn: string): DatasyncAgentArnComponents {
 		const match = AgentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agent ARN: ${arn}`);
@@ -320,20 +493,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the discoveryjob resource.
 	 */
-	static discoveryjob(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The StorageSystemId component of the ARN. */
-		readonly storageSystemId: string;
-		/** The DiscoveryJobId component of the ARN. */
-		readonly discoveryJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static discoveryjob(props: DatasyncDiscoveryjobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:system/${props.storageSystemId}/job/${props.discoveryJobId}`;
 	}
 
@@ -348,14 +508,7 @@ export class DatasyncResources {
 	 * Parses a discoveryjob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDiscoveryjobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		storageSystemId: string;
-		discoveryJobId: string;
-	} {
+	static parseDiscoveryjobArn(arn: string): DatasyncDiscoveryjobArnComponents {
 		const match = DiscoveryjobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid discoveryjob ARN: ${arn}`);
@@ -373,18 +526,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the location resource.
 	 */
-	static location(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The LocationId component of the ARN. */
-		readonly locationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static location(props: DatasyncLocationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:location/${props.locationId}`;
 	}
 
@@ -399,13 +541,7 @@ export class DatasyncResources {
 	 * Parses a location ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLocationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		locationId: string;
-	} {
+	static parseLocationArn(arn: string): DatasyncLocationArnComponents {
 		const match = LocationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid location ARN: ${arn}`);
@@ -422,18 +558,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the storagesystem resource.
 	 */
-	static storagesystem(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The StorageSystemId component of the ARN. */
-		readonly storageSystemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static storagesystem(props: DatasyncStoragesystemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:system/${props.storageSystemId}`;
 	}
 
@@ -448,13 +573,9 @@ export class DatasyncResources {
 	 * Parses a storagesystem ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseStoragesystemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		storageSystemId: string;
-	} {
+	static parseStoragesystemArn(
+		arn: string,
+	): DatasyncStoragesystemArnComponents {
 		const match = StoragesystemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid storagesystem ARN: ${arn}`);
@@ -471,18 +592,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the task resource.
 	 */
-	static task(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static task(props: DatasyncTaskArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:task/${props.taskId}`;
 	}
 
@@ -497,13 +607,7 @@ export class DatasyncResources {
 	 * Parses a task ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		taskId: string;
-	} {
+	static parseTaskArn(arn: string): DatasyncTaskArnComponents {
 		const match = TaskArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid task ARN: ${arn}`);
@@ -520,20 +624,7 @@ export class DatasyncResources {
 	/**
 	 * Builds an ARN for the taskexecution resource.
 	 */
-	static taskexecution(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The TaskId component of the ARN. */
-		readonly taskId: string;
-		/** The ExecutionId component of the ARN. */
-		readonly executionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static taskexecution(props: DatasyncTaskexecutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:datasync:${props.region ?? "*"}:${props.accountId}:task/${props.taskId}/execution/${props.executionId}`;
 	}
 
@@ -548,14 +639,9 @@ export class DatasyncResources {
 	 * Parses a taskexecution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTaskexecutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		taskId: string;
-		executionId: string;
-	} {
+	static parseTaskexecutionArn(
+		arn: string,
+	): DatasyncTaskexecutionArnComponents {
 		const match = TaskexecutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid taskexecution ARN: ${arn}`);
@@ -576,226 +662,224 @@ export class DatasyncResources {
  */
 export class DatasyncOperations {
 	/** IAM actions required for the CancelTaskExecution API call. */
-	static readonly CANCEL_TASK_EXECUTION: string[] = [
+	static readonly CancelTaskExecution: string[] = [
 		"datasync:CancelTaskExecution",
 	];
 	/** IAM actions required for the CreateAgent API call. */
-	static readonly CREATE_AGENT: string[] = [
+	static readonly CreateAgent: string[] = [
 		"datasync:CreateAgent",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationAzureBlob API call. */
-	static readonly CREATE_LOCATION_AZURE_BLOB: string[] = [
+	static readonly CreateLocationAzureBlob: string[] = [
 		"datasync:CreateLocationAzureBlob",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationEfs API call. */
-	static readonly CREATE_LOCATION_EFS: string[] = [
+	static readonly CreateLocationEfs: string[] = [
 		"datasync:CreateLocationEfs",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationFsxLustre API call. */
-	static readonly CREATE_LOCATION_FSX_LUSTRE: string[] = [
+	static readonly CreateLocationFsxLustre: string[] = [
 		"datasync:CreateLocationFsxLustre",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationFsxOntap API call. */
-	static readonly CREATE_LOCATION_FSX_ONTAP: string[] = [
+	static readonly CreateLocationFsxOntap: string[] = [
 		"datasync:CreateLocationFsxOntap",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationFsxOpenZfs API call. */
-	static readonly CREATE_LOCATION_FSX_OPEN_ZFS: string[] = [
+	static readonly CreateLocationFsxOpenZfs: string[] = [
 		"datasync:CreateLocationFsxOpenZfs",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationFsxWindows API call. */
-	static readonly CREATE_LOCATION_FSX_WINDOWS: string[] = [
+	static readonly CreateLocationFsxWindows: string[] = [
 		"datasync:CreateLocationFsxWindows",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationHdfs API call. */
-	static readonly CREATE_LOCATION_HDFS: string[] = [
+	static readonly CreateLocationHdfs: string[] = [
 		"datasync:CreateLocationHdfs",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationNfs API call. */
-	static readonly CREATE_LOCATION_NFS: string[] = [
+	static readonly CreateLocationNfs: string[] = [
 		"datasync:CreateLocationNfs",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationObjectStorage API call. */
-	static readonly CREATE_LOCATION_OBJECT_STORAGE: string[] = [
+	static readonly CreateLocationObjectStorage: string[] = [
 		"datasync:CreateLocationObjectStorage",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationS3 API call. */
-	static readonly CREATE_LOCATION_S3: string[] = [
+	static readonly CreateLocationS3: string[] = [
 		"datasync:CreateLocationS3",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateLocationSmb API call. */
-	static readonly CREATE_LOCATION_SMB: string[] = [
+	static readonly CreateLocationSmb: string[] = [
 		"datasync:CreateLocationSmb",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the CreateTask API call. */
-	static readonly CREATE_TASK: string[] = [
+	static readonly CreateTask: string[] = [
 		"datasync:CreateTask",
 		"iam:PassRole",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the DeleteAgent API call. */
-	static readonly DELETE_AGENT: string[] = ["datasync:DeleteAgent"];
+	static readonly DeleteAgent: string[] = ["datasync:DeleteAgent"];
 	/** IAM actions required for the DeleteLocation API call. */
-	static readonly DELETE_LOCATION: string[] = ["datasync:DeleteLocation"];
+	static readonly DeleteLocation: string[] = ["datasync:DeleteLocation"];
 	/** IAM actions required for the DeleteTask API call. */
-	static readonly DELETE_TASK: string[] = ["datasync:DeleteTask"];
+	static readonly DeleteTask: string[] = ["datasync:DeleteTask"];
 	/** IAM actions required for the DescribeAgent API call. */
-	static readonly DESCRIBE_AGENT: string[] = ["datasync:DescribeAgent"];
+	static readonly DescribeAgent: string[] = ["datasync:DescribeAgent"];
 	/** IAM actions required for the DescribeLocationAzureBlob API call. */
-	static readonly DESCRIBE_LOCATION_AZURE_BLOB: string[] = [
+	static readonly DescribeLocationAzureBlob: string[] = [
 		"datasync:DescribeLocationAzureBlob",
 	];
 	/** IAM actions required for the DescribeLocationEfs API call. */
-	static readonly DESCRIBE_LOCATION_EFS: string[] = [
+	static readonly DescribeLocationEfs: string[] = [
 		"datasync:DescribeLocationEfs",
 	];
 	/** IAM actions required for the DescribeLocationFsxLustre API call. */
-	static readonly DESCRIBE_LOCATION_FSX_LUSTRE: string[] = [
+	static readonly DescribeLocationFsxLustre: string[] = [
 		"datasync:DescribeLocationFsxLustre",
 	];
 	/** IAM actions required for the DescribeLocationFsxOntap API call. */
-	static readonly DESCRIBE_LOCATION_FSX_ONTAP: string[] = [
+	static readonly DescribeLocationFsxOntap: string[] = [
 		"datasync:DescribeLocationFsxOntap",
 	];
 	/** IAM actions required for the DescribeLocationFsxOpenZfs API call. */
-	static readonly DESCRIBE_LOCATION_FSX_OPEN_ZFS: string[] = [
+	static readonly DescribeLocationFsxOpenZfs: string[] = [
 		"datasync:DescribeLocationFsxOpenZfs",
 	];
 	/** IAM actions required for the DescribeLocationFsxWindows API call. */
-	static readonly DESCRIBE_LOCATION_FSX_WINDOWS: string[] = [
+	static readonly DescribeLocationFsxWindows: string[] = [
 		"datasync:DescribeLocationFsxWindows",
 	];
 	/** IAM actions required for the DescribeLocationHdfs API call. */
-	static readonly DESCRIBE_LOCATION_HDFS: string[] = [
+	static readonly DescribeLocationHdfs: string[] = [
 		"datasync:DescribeLocationHdfs",
 	];
 	/** IAM actions required for the DescribeLocationNfs API call. */
-	static readonly DESCRIBE_LOCATION_NFS: string[] = [
+	static readonly DescribeLocationNfs: string[] = [
 		"datasync:DescribeLocationNfs",
 	];
 	/** IAM actions required for the DescribeLocationObjectStorage API call. */
-	static readonly DESCRIBE_LOCATION_OBJECT_STORAGE: string[] = [
+	static readonly DescribeLocationObjectStorage: string[] = [
 		"datasync:DescribeLocationObjectStorage",
 	];
 	/** IAM actions required for the DescribeLocationS3 API call. */
-	static readonly DESCRIBE_LOCATION_S3: string[] = [
+	static readonly DescribeLocationS3: string[] = [
 		"datasync:DescribeLocationS3",
 	];
 	/** IAM actions required for the DescribeLocationSmb API call. */
-	static readonly DESCRIBE_LOCATION_SMB: string[] = [
+	static readonly DescribeLocationSmb: string[] = [
 		"datasync:DescribeLocationSmb",
 	];
 	/** IAM actions required for the DescribeTask API call. */
-	static readonly DESCRIBE_TASK: string[] = ["datasync:DescribeTask"];
+	static readonly DescribeTask: string[] = ["datasync:DescribeTask"];
 	/** IAM actions required for the DescribeTaskExecution API call. */
-	static readonly DESCRIBE_TASK_EXECUTION: string[] = [
+	static readonly DescribeTaskExecution: string[] = [
 		"datasync:DescribeTaskExecution",
 	];
 	/** IAM actions required for the ListAgents API call. */
-	static readonly LIST_AGENTS: string[] = ["datasync:ListAgents"];
+	static readonly ListAgents: string[] = ["datasync:ListAgents"];
 	/** IAM actions required for the ListLocations API call. */
-	static readonly LIST_LOCATIONS: string[] = ["datasync:ListLocations"];
+	static readonly ListLocations: string[] = ["datasync:ListLocations"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"datasync:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTaskExecutions API call. */
-	static readonly LIST_TASK_EXECUTIONS: string[] = [
+	static readonly ListTaskExecutions: string[] = [
 		"datasync:ListTaskExecutions",
 	];
 	/** IAM actions required for the ListTasks API call. */
-	static readonly LIST_TASKS: string[] = ["datasync:ListTasks"];
+	static readonly ListTasks: string[] = ["datasync:ListTasks"];
 	/** IAM actions required for the StartTaskExecution API call. */
-	static readonly START_TASK_EXECUTION: string[] = [
+	static readonly StartTaskExecution: string[] = [
 		"iam:PassRole",
 		"datasync:StartTaskExecution",
 		"datasync:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["datasync:TagResource"];
+	static readonly TagResource: string[] = ["datasync:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["datasync:UntagResource"];
+	static readonly UntagResource: string[] = ["datasync:UntagResource"];
 	/** IAM actions required for the UpdateAgent API call. */
-	static readonly UPDATE_AGENT: string[] = ["datasync:UpdateAgent"];
+	static readonly UpdateAgent: string[] = ["datasync:UpdateAgent"];
 	/** IAM actions required for the UpdateLocationAzureBlob API call. */
-	static readonly UPDATE_LOCATION_AZURE_BLOB: string[] = [
+	static readonly UpdateLocationAzureBlob: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationAzureBlob",
 	];
 	/** IAM actions required for the UpdateLocationEfs API call. */
-	static readonly UPDATE_LOCATION_EFS: string[] = [
+	static readonly UpdateLocationEfs: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationEfs",
 	];
 	/** IAM actions required for the UpdateLocationFsxLustre API call. */
-	static readonly UPDATE_LOCATION_FSX_LUSTRE: string[] = [
+	static readonly UpdateLocationFsxLustre: string[] = [
 		"datasync:UpdateLocationFsxLustre",
 	];
 	/** IAM actions required for the UpdateLocationFsxOntap API call. */
-	static readonly UPDATE_LOCATION_FSX_ONTAP: string[] = [
+	static readonly UpdateLocationFsxOntap: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationFsxOntap",
 	];
 	/** IAM actions required for the UpdateLocationFsxOpenZfs API call. */
-	static readonly UPDATE_LOCATION_FSX_OPEN_ZFS: string[] = [
+	static readonly UpdateLocationFsxOpenZfs: string[] = [
 		"datasync:UpdateLocationFsxOpenZfs",
 	];
 	/** IAM actions required for the UpdateLocationFsxWindows API call. */
-	static readonly UPDATE_LOCATION_FSX_WINDOWS: string[] = [
+	static readonly UpdateLocationFsxWindows: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationFsxWindows",
 	];
 	/** IAM actions required for the UpdateLocationHdfs API call. */
-	static readonly UPDATE_LOCATION_HDFS: string[] = [
+	static readonly UpdateLocationHdfs: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationHdfs",
 	];
 	/** IAM actions required for the UpdateLocationNfs API call. */
-	static readonly UPDATE_LOCATION_NFS: string[] = [
-		"datasync:UpdateLocationNfs",
-	];
+	static readonly UpdateLocationNfs: string[] = ["datasync:UpdateLocationNfs"];
 	/** IAM actions required for the UpdateLocationObjectStorage API call. */
-	static readonly UPDATE_LOCATION_OBJECT_STORAGE: string[] = [
+	static readonly UpdateLocationObjectStorage: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationObjectStorage",
 	];
 	/** IAM actions required for the UpdateLocationS3 API call. */
-	static readonly UPDATE_LOCATION_S3: string[] = [
+	static readonly UpdateLocationS3: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationS3",
 	];
 	/** IAM actions required for the UpdateLocationSmb API call. */
-	static readonly UPDATE_LOCATION_SMB: string[] = [
+	static readonly UpdateLocationSmb: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateLocationSmb",
 	];
 	/** IAM actions required for the UpdateTask API call. */
-	static readonly UPDATE_TASK: string[] = [
+	static readonly UpdateTask: string[] = [
 		"iam:PassRole",
 		"datasync:UpdateTask",
 	];
 	/** IAM actions required for the UpdateTaskExecution API call. */
-	static readonly UPDATE_TASK_EXECUTION: string[] = [
+	static readonly UpdateTaskExecution: string[] = [
 		"datasync:UpdateTaskExecution",
 	];
 }
@@ -805,112 +889,112 @@ export class DatasyncOperations {
  */
 export class DatasyncConditions {
 	/** Condition keys applicable to the AddStorageSystem action. */
-	static readonly ADD_STORAGE_SYSTEM_CONDITION_KEYS: string[] = [
+	static readonly AddStorageSystemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CancelTaskExecution action. */
-	static readonly CANCEL_TASK_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly CancelTaskExecutionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAgent action. */
-	static readonly CREATE_AGENT_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationAzureBlob action. */
-	static readonly CREATE_LOCATION_AZURE_BLOB_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationAzureBlobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationEfs action. */
-	static readonly CREATE_LOCATION_EFS_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationEfsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationFsxLustre action. */
-	static readonly CREATE_LOCATION_FSX_LUSTRE_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationFsxLustreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationFsxOntap action. */
-	static readonly CREATE_LOCATION_FSX_ONTAP_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationFsxOntapConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationFsxOpenZfs action. */
-	static readonly CREATE_LOCATION_FSX_OPEN_ZFS_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationFsxOpenZfsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationFsxWindows action. */
-	static readonly CREATE_LOCATION_FSX_WINDOWS_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationFsxWindowsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationHdfs action. */
-	static readonly CREATE_LOCATION_HDFS_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationHdfsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationNfs action. */
-	static readonly CREATE_LOCATION_NFS_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationNfsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationObjectStorage action. */
-	static readonly CREATE_LOCATION_OBJECT_STORAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationObjectStorageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationS3 action. */
-	static readonly CREATE_LOCATION_S3_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationS3ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLocationSmb action. */
-	static readonly CREATE_LOCATION_SMB_CONDITION_KEYS: string[] = [
+	static readonly CreateLocationSmbConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTask action. */
-	static readonly CREATE_TASK_CONDITION_KEYS: string[] = [
+	static readonly CreateTaskConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeTaskExecution action. */
-	static readonly DESCRIBE_TASK_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly DescribeTaskExecutionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTaskExecutions action. */
-	static readonly LIST_TASK_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListTaskExecutionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartTaskExecution action. */
-	static readonly START_TASK_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly StartTaskExecutionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateTaskExecution action. */
-	static readonly UPDATE_TASK_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateTaskExecutionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,25 +13,56 @@ export class RDSDBActions {
 	static readonly SERVICE_PREFIX = "rds-db";
 
 	/** [PermissionManagement] rds-db:connect */
-	static readonly CONNECT = "rds-db:connect";
+	static readonly connect = "rds-db:connect";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		RDSDBActions.CONNECT,
+	static readonly AllPermissionManagementActions: string[] = [
+		RDSDBActions.connect,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const DBUserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds-db:(?<region>[^:]*):(?<account>[^:]*):dbuser:(?<dbiResourceId>[^:/?]+)/(?<dbUserName>[^:/?]+)$",
-);
+/**
+ * Properties for building a db-user ARN.
+ */
+export interface RDSDBDBUserArnProps {
+	/** The DbiResourceId component of the ARN. */
+	readonly dbiResourceId: string;
+	/** The DbUserName component of the ARN. */
+	readonly dbUserName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a db-user ARN.
+ */
+export interface RDSDBDBUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbiResourceId component. */
+	readonly dbiResourceId: string;
+	/** The DbUserName component. */
+	readonly dbUserName: string;
+}
+
+const DBUserArnRegex =
+	/^arn:(?<partition>[^:]+):rds-db:(?<region>[^:]*):(?<account>[^:]*):dbuser:(?<dbiResourceId>[^:/?]+)\/(?<dbUserName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rds-db resources.
@@ -40,18 +71,7 @@ export class RDSDBResources {
 	/**
 	 * Builds an ARN for the db-user resource.
 	 */
-	static dbUser(props: {
-		/** The DbiResourceId component of the ARN. */
-		readonly dbiResourceId: string;
-		/** The DbUserName component of the ARN. */
-		readonly dbUserName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dbUser(props: RDSDBDBUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds-db:${props.region ?? "*"}:${props.account ?? "*"}:dbuser:${props.dbiResourceId}/${props.dbUserName}`;
 	}
 
@@ -66,13 +86,7 @@ export class RDSDBResources {
 	 * Parses a db-user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDBUserArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbiResourceId: string;
-		dbUserName: string;
-	} {
+	static parseDBUserArn(arn: string): RDSDBDBUserArnComponents {
 		const match = DBUserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid db-user ARN: ${arn}`);

@@ -13,446 +13,763 @@ export class LambdaActions {
 	static readonly SERVICE_PREFIX = "lambda";
 
 	/** [PermissionManagement] lambda:AddLayerVersionPermission */
-	static readonly ADD_LAYER_VERSION_PERMISSION =
+	static readonly AddLayerVersionPermission =
 		"lambda:AddLayerVersionPermission";
 	/** [PermissionManagement] lambda:AddPermission */
-	static readonly ADD_PERMISSION = "lambda:AddPermission";
+	static readonly AddPermission = "lambda:AddPermission";
 	/** [Write] lambda:CheckpointDurableExecution */
-	static readonly CHECKPOINT_DURABLE_EXECUTION =
+	static readonly CheckpointDurableExecution =
 		"lambda:CheckpointDurableExecution";
 	/** [Write] lambda:ConnectMicrovm */
-	static readonly CONNECT_MICROVM = "lambda:ConnectMicrovm";
+	static readonly ConnectMicrovm = "lambda:ConnectMicrovm";
 	/** [Write] lambda:CreateAlias */
-	static readonly CREATE_ALIAS = "lambda:CreateAlias";
+	static readonly CreateAlias = "lambda:CreateAlias";
 	/** [Write] lambda:CreateCapacityProvider */
-	static readonly CREATE_CAPACITY_PROVIDER = "lambda:CreateCapacityProvider";
+	static readonly CreateCapacityProvider = "lambda:CreateCapacityProvider";
 	/** [Write] lambda:CreateCodeSigningConfig */
-	static readonly CREATE_CODE_SIGNING_CONFIG = "lambda:CreateCodeSigningConfig";
+	static readonly CreateCodeSigningConfig = "lambda:CreateCodeSigningConfig";
 	/** [Write] lambda:CreateEventSourceMapping */
-	static readonly CREATE_EVENT_SOURCE_MAPPING =
-		"lambda:CreateEventSourceMapping";
+	static readonly CreateEventSourceMapping = "lambda:CreateEventSourceMapping";
 	/** [Write] lambda:CreateFunction */
-	static readonly CREATE_FUNCTION = "lambda:CreateFunction";
+	static readonly CreateFunction = "lambda:CreateFunction";
 	/** [Write] lambda:CreateFunctionUrlConfig */
-	static readonly CREATE_FUNCTION_URL_CONFIG = "lambda:CreateFunctionUrlConfig";
+	static readonly CreateFunctionUrlConfig = "lambda:CreateFunctionUrlConfig";
 	/** [Write] lambda:CreateMicrovmAuthToken */
-	static readonly CREATE_MICROVM_AUTH_TOKEN = "lambda:CreateMicrovmAuthToken";
+	static readonly CreateMicrovmAuthToken = "lambda:CreateMicrovmAuthToken";
 	/** [Write] lambda:CreateMicrovmImage */
-	static readonly CREATE_MICROVM_IMAGE = "lambda:CreateMicrovmImage";
+	static readonly CreateMicrovmImage = "lambda:CreateMicrovmImage";
 	/** [Write] lambda:CreateMicrovmShellAuthToken */
-	static readonly CREATE_MICROVM_SHELL_AUTH_TOKEN =
+	static readonly CreateMicrovmShellAuthToken =
 		"lambda:CreateMicrovmShellAuthToken";
 	/** [Write] lambda:CreateNetworkConnector */
-	static readonly CREATE_NETWORK_CONNECTOR = "lambda:CreateNetworkConnector";
+	static readonly CreateNetworkConnector = "lambda:CreateNetworkConnector";
 	/** [Write] lambda:DeleteAlias */
-	static readonly DELETE_ALIAS = "lambda:DeleteAlias";
+	static readonly DeleteAlias = "lambda:DeleteAlias";
 	/** [Write] lambda:DeleteCapacityProvider */
-	static readonly DELETE_CAPACITY_PROVIDER = "lambda:DeleteCapacityProvider";
+	static readonly DeleteCapacityProvider = "lambda:DeleteCapacityProvider";
 	/** [Write] lambda:DeleteCodeSigningConfig */
-	static readonly DELETE_CODE_SIGNING_CONFIG = "lambda:DeleteCodeSigningConfig";
+	static readonly DeleteCodeSigningConfig = "lambda:DeleteCodeSigningConfig";
 	/** [Write] lambda:DeleteEventSourceMapping */
-	static readonly DELETE_EVENT_SOURCE_MAPPING =
-		"lambda:DeleteEventSourceMapping";
+	static readonly DeleteEventSourceMapping = "lambda:DeleteEventSourceMapping";
 	/** [Write] lambda:DeleteFunction */
-	static readonly DELETE_FUNCTION = "lambda:DeleteFunction";
+	static readonly DeleteFunction = "lambda:DeleteFunction";
 	/** [Write] lambda:DeleteFunctionCodeSigningConfig */
-	static readonly DELETE_FUNCTION_CODE_SIGNING_CONFIG =
+	static readonly DeleteFunctionCodeSigningConfig =
 		"lambda:DeleteFunctionCodeSigningConfig";
 	/** [Write] lambda:DeleteFunctionConcurrency */
-	static readonly DELETE_FUNCTION_CONCURRENCY =
+	static readonly DeleteFunctionConcurrency =
 		"lambda:DeleteFunctionConcurrency";
 	/** [Write] lambda:DeleteFunctionEventInvokeConfig */
-	static readonly DELETE_FUNCTION_EVENT_INVOKE_CONFIG =
+	static readonly DeleteFunctionEventInvokeConfig =
 		"lambda:DeleteFunctionEventInvokeConfig";
 	/** [Write] lambda:DeleteFunctionUrlConfig */
-	static readonly DELETE_FUNCTION_URL_CONFIG = "lambda:DeleteFunctionUrlConfig";
+	static readonly DeleteFunctionUrlConfig = "lambda:DeleteFunctionUrlConfig";
 	/** [Write] lambda:DeleteLayerVersion */
-	static readonly DELETE_LAYER_VERSION = "lambda:DeleteLayerVersion";
+	static readonly DeleteLayerVersion = "lambda:DeleteLayerVersion";
 	/** [Write] lambda:DeleteMicrovmImage */
-	static readonly DELETE_MICROVM_IMAGE = "lambda:DeleteMicrovmImage";
+	static readonly DeleteMicrovmImage = "lambda:DeleteMicrovmImage";
 	/** [Write] lambda:DeleteMicrovmImageVersion */
-	static readonly DELETE_MICROVM_IMAGE_VERSION =
+	static readonly DeleteMicrovmImageVersion =
 		"lambda:DeleteMicrovmImageVersion";
 	/** [Write] lambda:DeleteNetworkConnector */
-	static readonly DELETE_NETWORK_CONNECTOR = "lambda:DeleteNetworkConnector";
+	static readonly DeleteNetworkConnector = "lambda:DeleteNetworkConnector";
 	/** [Write] lambda:DeleteProvisionedConcurrencyConfig */
-	static readonly DELETE_PROVISIONED_CONCURRENCY_CONFIG =
+	static readonly DeleteProvisionedConcurrencyConfig =
 		"lambda:DeleteProvisionedConcurrencyConfig";
 	/** [PermissionManagement] lambda:DisableReplication */
-	static readonly DISABLE_REPLICATION = "lambda:DisableReplication";
+	static readonly DisableReplication = "lambda:DisableReplication";
 	/** [PermissionManagement] lambda:EnableReplication */
-	static readonly ENABLE_REPLICATION = "lambda:EnableReplication";
+	static readonly EnableReplication = "lambda:EnableReplication";
 	/** [Read] lambda:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "lambda:GetAccountSettings";
+	static readonly actionGetAccountSettings = "lambda:GetAccountSettings";
 	/** [Read] lambda:GetAlias */
-	static readonly GET_ALIAS = "lambda:GetAlias";
+	static readonly actionGetAlias = "lambda:GetAlias";
 	/** [Read] lambda:GetCapacityProvider */
-	static readonly GET_CAPACITY_PROVIDER = "lambda:GetCapacityProvider";
+	static readonly actionGetCapacityProvider = "lambda:GetCapacityProvider";
 	/** [Read] lambda:GetCodeSigningConfig */
-	static readonly GET_CODE_SIGNING_CONFIG = "lambda:GetCodeSigningConfig";
+	static readonly actionGetCodeSigningConfig = "lambda:GetCodeSigningConfig";
 	/** [Read] lambda:GetDurableExecution */
-	static readonly GET_DURABLE_EXECUTION = "lambda:GetDurableExecution";
+	static readonly actionGetDurableExecution = "lambda:GetDurableExecution";
 	/** [Read] lambda:GetDurableExecutionHistory */
-	static readonly GET_DURABLE_EXECUTION_HISTORY =
+	static readonly actionGetDurableExecutionHistory =
 		"lambda:GetDurableExecutionHistory";
 	/** [Read] lambda:GetDurableExecutionState */
-	static readonly GET_DURABLE_EXECUTION_STATE =
+	static readonly actionGetDurableExecutionState =
 		"lambda:GetDurableExecutionState";
 	/** [Read] lambda:GetEventSourceMapping */
-	static readonly GET_EVENT_SOURCE_MAPPING = "lambda:GetEventSourceMapping";
+	static readonly actionGetEventSourceMapping = "lambda:GetEventSourceMapping";
 	/** [Read] lambda:GetFunction */
-	static readonly GET_FUNCTION = "lambda:GetFunction";
+	static readonly actionGetFunction = "lambda:GetFunction";
 	/** [Read] lambda:GetFunctionCodeSigningConfig */
-	static readonly GET_FUNCTION_CODE_SIGNING_CONFIG =
+	static readonly actionGetFunctionCodeSigningConfig =
 		"lambda:GetFunctionCodeSigningConfig";
 	/** [Read] lambda:GetFunctionConcurrency */
-	static readonly GET_FUNCTION_CONCURRENCY = "lambda:GetFunctionConcurrency";
+	static readonly actionGetFunctionConcurrency =
+		"lambda:GetFunctionConcurrency";
 	/** [Read] lambda:GetFunctionConfiguration */
-	static readonly GET_FUNCTION_CONFIGURATION =
+	static readonly actionGetFunctionConfiguration =
 		"lambda:GetFunctionConfiguration";
 	/** [Read] lambda:GetFunctionEventInvokeConfig */
-	static readonly GET_FUNCTION_EVENT_INVOKE_CONFIG =
+	static readonly actionGetFunctionEventInvokeConfig =
 		"lambda:GetFunctionEventInvokeConfig";
 	/** [Read] lambda:GetFunctionRecursionConfig */
-	static readonly GET_FUNCTION_RECURSION_CONFIG =
+	static readonly actionGetFunctionRecursionConfig =
 		"lambda:GetFunctionRecursionConfig";
 	/** [Read] lambda:GetFunctionScalingConfig */
-	static readonly GET_FUNCTION_SCALING_CONFIG =
+	static readonly actionGetFunctionScalingConfig =
 		"lambda:GetFunctionScalingConfig";
 	/** [Read] lambda:GetFunctionUrlConfig */
-	static readonly GET_FUNCTION_URL_CONFIG = "lambda:GetFunctionUrlConfig";
+	static readonly actionGetFunctionUrlConfig = "lambda:GetFunctionUrlConfig";
 	/** [Read] lambda:GetLayerVersion */
-	static readonly GET_LAYER_VERSION = "lambda:GetLayerVersion";
+	static readonly actionGetLayerVersion = "lambda:GetLayerVersion";
 	/** [Read] lambda:GetLayerVersionPolicy */
-	static readonly GET_LAYER_VERSION_POLICY = "lambda:GetLayerVersionPolicy";
+	static readonly actionGetLayerVersionPolicy = "lambda:GetLayerVersionPolicy";
 	/** [Read] lambda:GetMicrovm */
-	static readonly GET_MICROVM = "lambda:GetMicrovm";
+	static readonly actionGetMicrovm = "lambda:GetMicrovm";
 	/** [Read] lambda:GetMicrovmImage */
-	static readonly GET_MICROVM_IMAGE = "lambda:GetMicrovmImage";
+	static readonly actionGetMicrovmImage = "lambda:GetMicrovmImage";
 	/** [Read] lambda:GetMicrovmImageBuild */
-	static readonly GET_MICROVM_IMAGE_BUILD = "lambda:GetMicrovmImageBuild";
+	static readonly actionGetMicrovmImageBuild = "lambda:GetMicrovmImageBuild";
 	/** [Read] lambda:GetMicrovmImageVersion */
-	static readonly GET_MICROVM_IMAGE_VERSION = "lambda:GetMicrovmImageVersion";
+	static readonly actionGetMicrovmImageVersion =
+		"lambda:GetMicrovmImageVersion";
 	/** [Read] lambda:GetNetworkConnector */
-	static readonly GET_NETWORK_CONNECTOR = "lambda:GetNetworkConnector";
+	static readonly actionGetNetworkConnector = "lambda:GetNetworkConnector";
 	/** [Read] lambda:GetPolicy */
-	static readonly GET_POLICY = "lambda:GetPolicy";
+	static readonly actionGetPolicy = "lambda:GetPolicy";
 	/** [Read] lambda:GetProvisionedConcurrencyConfig */
-	static readonly GET_PROVISIONED_CONCURRENCY_CONFIG =
+	static readonly actionGetProvisionedConcurrencyConfig =
 		"lambda:GetProvisionedConcurrencyConfig";
 	/** [Read] lambda:GetRuntimeManagementConfig */
-	static readonly GET_RUNTIME_MANAGEMENT_CONFIG =
+	static readonly actionGetRuntimeManagementConfig =
 		"lambda:GetRuntimeManagementConfig";
 	/** [Write] lambda:InvokeAsync */
-	static readonly INVOKE_ASYNC = "lambda:InvokeAsync";
+	static readonly InvokeAsync = "lambda:InvokeAsync";
 	/** [Write] lambda:InvokeFunction */
-	static readonly INVOKE_FUNCTION = "lambda:InvokeFunction";
+	static readonly InvokeFunction = "lambda:InvokeFunction";
 	/** [Write] lambda:InvokeFunctionUrl */
-	static readonly INVOKE_FUNCTION_URL = "lambda:InvokeFunctionUrl";
+	static readonly InvokeFunctionUrl = "lambda:InvokeFunctionUrl";
 	/** [List] lambda:ListAliases */
-	static readonly LIST_ALIASES = "lambda:ListAliases";
+	static readonly ListAliases = "lambda:ListAliases";
 	/** [List] lambda:ListCapacityProviders */
-	static readonly LIST_CAPACITY_PROVIDERS = "lambda:ListCapacityProviders";
+	static readonly ListCapacityProviders = "lambda:ListCapacityProviders";
 	/** [List] lambda:ListCodeSigningConfigs */
-	static readonly LIST_CODE_SIGNING_CONFIGS = "lambda:ListCodeSigningConfigs";
+	static readonly ListCodeSigningConfigs = "lambda:ListCodeSigningConfigs";
 	/** [List] lambda:ListDurableExecutionsByFunction */
-	static readonly LIST_DURABLE_EXECUTIONS_BY_FUNCTION =
+	static readonly ListDurableExecutionsByFunction =
 		"lambda:ListDurableExecutionsByFunction";
 	/** [List] lambda:ListEventSourceMappings */
-	static readonly LIST_EVENT_SOURCE_MAPPINGS = "lambda:ListEventSourceMappings";
+	static readonly ListEventSourceMappings = "lambda:ListEventSourceMappings";
 	/** [List] lambda:ListFunctionEventInvokeConfigs */
-	static readonly LIST_FUNCTION_EVENT_INVOKE_CONFIGS =
+	static readonly ListFunctionEventInvokeConfigs =
 		"lambda:ListFunctionEventInvokeConfigs";
 	/** [List] lambda:ListFunctionUrlConfigs */
-	static readonly LIST_FUNCTION_URL_CONFIGS = "lambda:ListFunctionUrlConfigs";
+	static readonly ListFunctionUrlConfigs = "lambda:ListFunctionUrlConfigs";
 	/** [List] lambda:ListFunctionVersionsByCapacityProvider */
-	static readonly LIST_FUNCTION_VERSIONS_BY_CAPACITY_PROVIDER =
+	static readonly ListFunctionVersionsByCapacityProvider =
 		"lambda:ListFunctionVersionsByCapacityProvider";
 	/** [List] lambda:ListFunctions */
-	static readonly LIST_FUNCTIONS = "lambda:ListFunctions";
+	static readonly ListFunctions = "lambda:ListFunctions";
 	/** [List] lambda:ListFunctionsByCodeSigningConfig */
-	static readonly LIST_FUNCTIONS_BY_CODE_SIGNING_CONFIG =
+	static readonly ListFunctionsByCodeSigningConfig =
 		"lambda:ListFunctionsByCodeSigningConfig";
 	/** [List] lambda:ListLayerVersions */
-	static readonly LIST_LAYER_VERSIONS = "lambda:ListLayerVersions";
+	static readonly ListLayerVersions = "lambda:ListLayerVersions";
 	/** [List] lambda:ListLayers */
-	static readonly LIST_LAYERS = "lambda:ListLayers";
+	static readonly ListLayers = "lambda:ListLayers";
 	/** [List] lambda:ListManagedMicrovmImageVersions */
-	static readonly LIST_MANAGED_MICROVM_IMAGE_VERSIONS =
+	static readonly ListManagedMicrovmImageVersions =
 		"lambda:ListManagedMicrovmImageVersions";
 	/** [List] lambda:ListManagedMicrovmImages */
-	static readonly LIST_MANAGED_MICROVM_IMAGES =
-		"lambda:ListManagedMicrovmImages";
+	static readonly ListManagedMicrovmImages = "lambda:ListManagedMicrovmImages";
 	/** [List] lambda:ListMicrovmImageBuilds */
-	static readonly LIST_MICROVM_IMAGE_BUILDS = "lambda:ListMicrovmImageBuilds";
+	static readonly ListMicrovmImageBuilds = "lambda:ListMicrovmImageBuilds";
 	/** [List] lambda:ListMicrovmImageVersions */
-	static readonly LIST_MICROVM_IMAGE_VERSIONS =
-		"lambda:ListMicrovmImageVersions";
+	static readonly ListMicrovmImageVersions = "lambda:ListMicrovmImageVersions";
 	/** [List] lambda:ListMicrovmImages */
-	static readonly LIST_MICROVM_IMAGES = "lambda:ListMicrovmImages";
+	static readonly ListMicrovmImages = "lambda:ListMicrovmImages";
 	/** [List] lambda:ListMicrovms */
-	static readonly LIST_MICROVMS = "lambda:ListMicrovms";
+	static readonly ListMicrovms = "lambda:ListMicrovms";
 	/** [List] lambda:ListNetworkConnectors */
-	static readonly LIST_NETWORK_CONNECTORS = "lambda:ListNetworkConnectors";
+	static readonly ListNetworkConnectors = "lambda:ListNetworkConnectors";
 	/** [List] lambda:ListProvisionedConcurrencyConfigs */
-	static readonly LIST_PROVISIONED_CONCURRENCY_CONFIGS =
+	static readonly ListProvisionedConcurrencyConfigs =
 		"lambda:ListProvisionedConcurrencyConfigs";
 	/** [Read] lambda:ListTags */
-	static readonly LIST_TAGS = "lambda:ListTags";
+	static readonly ListTags = "lambda:ListTags";
 	/** [List] lambda:ListVersionsByFunction */
-	static readonly LIST_VERSIONS_BY_FUNCTION = "lambda:ListVersionsByFunction";
+	static readonly ListVersionsByFunction = "lambda:ListVersionsByFunction";
 	/** [Write] lambda:PassCapacityProvider */
-	static readonly PASS_CAPACITY_PROVIDER = "lambda:PassCapacityProvider";
+	static readonly PassCapacityProvider = "lambda:PassCapacityProvider";
 	/** [Write] lambda:PassNetworkConnector */
-	static readonly PASS_NETWORK_CONNECTOR = "lambda:PassNetworkConnector";
+	static readonly PassNetworkConnector = "lambda:PassNetworkConnector";
 	/** [Write] lambda:PublishLayerVersion */
-	static readonly PUBLISH_LAYER_VERSION = "lambda:PublishLayerVersion";
+	static readonly PublishLayerVersion = "lambda:PublishLayerVersion";
 	/** [Write] lambda:PublishVersion */
-	static readonly PUBLISH_VERSION = "lambda:PublishVersion";
+	static readonly PublishVersion = "lambda:PublishVersion";
 	/** [Write] lambda:PutFunctionCodeSigningConfig */
-	static readonly PUT_FUNCTION_CODE_SIGNING_CONFIG =
+	static readonly PutFunctionCodeSigningConfig =
 		"lambda:PutFunctionCodeSigningConfig";
 	/** [Write] lambda:PutFunctionConcurrency */
-	static readonly PUT_FUNCTION_CONCURRENCY = "lambda:PutFunctionConcurrency";
+	static readonly PutFunctionConcurrency = "lambda:PutFunctionConcurrency";
 	/** [Write] lambda:PutFunctionEventInvokeConfig */
-	static readonly PUT_FUNCTION_EVENT_INVOKE_CONFIG =
+	static readonly PutFunctionEventInvokeConfig =
 		"lambda:PutFunctionEventInvokeConfig";
 	/** [Write] lambda:PutFunctionRecursionConfig */
-	static readonly PUT_FUNCTION_RECURSION_CONFIG =
+	static readonly PutFunctionRecursionConfig =
 		"lambda:PutFunctionRecursionConfig";
 	/** [Write] lambda:PutFunctionScalingConfig */
-	static readonly PUT_FUNCTION_SCALING_CONFIG =
-		"lambda:PutFunctionScalingConfig";
+	static readonly PutFunctionScalingConfig = "lambda:PutFunctionScalingConfig";
 	/** [Write] lambda:PutProvisionedConcurrencyConfig */
-	static readonly PUT_PROVISIONED_CONCURRENCY_CONFIG =
+	static readonly PutProvisionedConcurrencyConfig =
 		"lambda:PutProvisionedConcurrencyConfig";
 	/** [Write] lambda:PutRuntimeManagementConfig */
-	static readonly PUT_RUNTIME_MANAGEMENT_CONFIG =
+	static readonly PutRuntimeManagementConfig =
 		"lambda:PutRuntimeManagementConfig";
 	/** [PermissionManagement] lambda:RemoveLayerVersionPermission */
-	static readonly REMOVE_LAYER_VERSION_PERMISSION =
+	static readonly RemoveLayerVersionPermission =
 		"lambda:RemoveLayerVersionPermission";
 	/** [PermissionManagement] lambda:RemovePermission */
-	static readonly REMOVE_PERMISSION = "lambda:RemovePermission";
+	static readonly RemovePermission = "lambda:RemovePermission";
 	/** [Write] lambda:ResumeMicrovm */
-	static readonly RESUME_MICROVM = "lambda:ResumeMicrovm";
+	static readonly ResumeMicrovm = "lambda:ResumeMicrovm";
 	/** [Write] lambda:RunMicrovm */
-	static readonly RUN_MICROVM = "lambda:RunMicrovm";
+	static readonly RunMicrovm = "lambda:RunMicrovm";
 	/** [Write] lambda:SendDurableExecutionCallbackFailure */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_FAILURE =
+	static readonly SendDurableExecutionCallbackFailure =
 		"lambda:SendDurableExecutionCallbackFailure";
 	/** [Write] lambda:SendDurableExecutionCallbackHeartbeat */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_HEARTBEAT =
+	static readonly SendDurableExecutionCallbackHeartbeat =
 		"lambda:SendDurableExecutionCallbackHeartbeat";
 	/** [Write] lambda:SendDurableExecutionCallbackSuccess */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_SUCCESS =
+	static readonly SendDurableExecutionCallbackSuccess =
 		"lambda:SendDurableExecutionCallbackSuccess";
 	/** [Write] lambda:StopDurableExecution */
-	static readonly STOP_DURABLE_EXECUTION = "lambda:StopDurableExecution";
+	static readonly StopDurableExecution = "lambda:StopDurableExecution";
 	/** [Write] lambda:SuspendMicrovm */
-	static readonly SUSPEND_MICROVM = "lambda:SuspendMicrovm";
+	static readonly SuspendMicrovm = "lambda:SuspendMicrovm";
 	/** [Tagging] lambda:TagResource */
-	static readonly TAG_RESOURCE = "lambda:TagResource";
+	static readonly TagResource = "lambda:TagResource";
 	/** [Write] lambda:TerminateMicrovm */
-	static readonly TERMINATE_MICROVM = "lambda:TerminateMicrovm";
+	static readonly TerminateMicrovm = "lambda:TerminateMicrovm";
 	/** [Tagging] lambda:UntagResource */
-	static readonly UNTAG_RESOURCE = "lambda:UntagResource";
+	static readonly UntagResource = "lambda:UntagResource";
 	/** [Write] lambda:UpdateAlias */
-	static readonly UPDATE_ALIAS = "lambda:UpdateAlias";
+	static readonly UpdateAlias = "lambda:UpdateAlias";
 	/** [Write] lambda:UpdateCapacityProvider */
-	static readonly UPDATE_CAPACITY_PROVIDER = "lambda:UpdateCapacityProvider";
+	static readonly UpdateCapacityProvider = "lambda:UpdateCapacityProvider";
 	/** [Write] lambda:UpdateCodeSigningConfig */
-	static readonly UPDATE_CODE_SIGNING_CONFIG = "lambda:UpdateCodeSigningConfig";
+	static readonly UpdateCodeSigningConfig = "lambda:UpdateCodeSigningConfig";
 	/** [Write] lambda:UpdateEventSourceMapping */
-	static readonly UPDATE_EVENT_SOURCE_MAPPING =
-		"lambda:UpdateEventSourceMapping";
+	static readonly UpdateEventSourceMapping = "lambda:UpdateEventSourceMapping";
 	/** [Write] lambda:UpdateFunctionCode */
-	static readonly UPDATE_FUNCTION_CODE = "lambda:UpdateFunctionCode";
+	static readonly UpdateFunctionCode = "lambda:UpdateFunctionCode";
 	/** [Write] lambda:UpdateFunctionCodeSigningConfig */
-	static readonly UPDATE_FUNCTION_CODE_SIGNING_CONFIG =
+	static readonly UpdateFunctionCodeSigningConfig =
 		"lambda:UpdateFunctionCodeSigningConfig";
 	/** [Write] lambda:UpdateFunctionConfiguration */
-	static readonly UPDATE_FUNCTION_CONFIGURATION =
+	static readonly UpdateFunctionConfiguration =
 		"lambda:UpdateFunctionConfiguration";
 	/** [Write] lambda:UpdateFunctionEventInvokeConfig */
-	static readonly UPDATE_FUNCTION_EVENT_INVOKE_CONFIG =
+	static readonly UpdateFunctionEventInvokeConfig =
 		"lambda:UpdateFunctionEventInvokeConfig";
 	/** [Write] lambda:UpdateFunctionUrlConfig */
-	static readonly UPDATE_FUNCTION_URL_CONFIG = "lambda:UpdateFunctionUrlConfig";
+	static readonly UpdateFunctionUrlConfig = "lambda:UpdateFunctionUrlConfig";
 	/** [Write] lambda:UpdateMicrovmImage */
-	static readonly UPDATE_MICROVM_IMAGE = "lambda:UpdateMicrovmImage";
+	static readonly UpdateMicrovmImage = "lambda:UpdateMicrovmImage";
 	/** [Write] lambda:UpdateMicrovmImageVersion */
-	static readonly UPDATE_MICROVM_IMAGE_VERSION =
+	static readonly UpdateMicrovmImageVersion =
 		"lambda:UpdateMicrovmImageVersion";
 	/** [Write] lambda:UpdateNetworkConnector */
-	static readonly UPDATE_NETWORK_CONNECTOR = "lambda:UpdateNetworkConnector";
+	static readonly UpdateNetworkConnector = "lambda:UpdateNetworkConnector";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LambdaActions.GET_ACCOUNT_SETTINGS,
-		LambdaActions.GET_ALIAS,
-		LambdaActions.GET_CAPACITY_PROVIDER,
-		LambdaActions.GET_CODE_SIGNING_CONFIG,
-		LambdaActions.GET_DURABLE_EXECUTION,
-		LambdaActions.GET_DURABLE_EXECUTION_HISTORY,
-		LambdaActions.GET_DURABLE_EXECUTION_STATE,
-		LambdaActions.GET_EVENT_SOURCE_MAPPING,
-		LambdaActions.GET_FUNCTION,
-		LambdaActions.GET_FUNCTION_CODE_SIGNING_CONFIG,
-		LambdaActions.GET_FUNCTION_CONCURRENCY,
-		LambdaActions.GET_FUNCTION_CONFIGURATION,
-		LambdaActions.GET_FUNCTION_EVENT_INVOKE_CONFIG,
-		LambdaActions.GET_FUNCTION_RECURSION_CONFIG,
-		LambdaActions.GET_FUNCTION_SCALING_CONFIG,
-		LambdaActions.GET_FUNCTION_URL_CONFIG,
-		LambdaActions.GET_LAYER_VERSION,
-		LambdaActions.GET_LAYER_VERSION_POLICY,
-		LambdaActions.GET_MICROVM,
-		LambdaActions.GET_MICROVM_IMAGE,
-		LambdaActions.GET_MICROVM_IMAGE_BUILD,
-		LambdaActions.GET_MICROVM_IMAGE_VERSION,
-		LambdaActions.GET_NETWORK_CONNECTOR,
-		LambdaActions.GET_POLICY,
-		LambdaActions.GET_PROVISIONED_CONCURRENCY_CONFIG,
-		LambdaActions.GET_RUNTIME_MANAGEMENT_CONFIG,
-		LambdaActions.LIST_TAGS,
+	static readonly AllReadActions: string[] = [
+		LambdaActions.actionGetAccountSettings,
+		LambdaActions.actionGetAlias,
+		LambdaActions.actionGetCapacityProvider,
+		LambdaActions.actionGetCodeSigningConfig,
+		LambdaActions.actionGetDurableExecution,
+		LambdaActions.actionGetDurableExecutionHistory,
+		LambdaActions.actionGetDurableExecutionState,
+		LambdaActions.actionGetEventSourceMapping,
+		LambdaActions.actionGetFunction,
+		LambdaActions.actionGetFunctionCodeSigningConfig,
+		LambdaActions.actionGetFunctionConcurrency,
+		LambdaActions.actionGetFunctionConfiguration,
+		LambdaActions.actionGetFunctionEventInvokeConfig,
+		LambdaActions.actionGetFunctionRecursionConfig,
+		LambdaActions.actionGetFunctionScalingConfig,
+		LambdaActions.actionGetFunctionUrlConfig,
+		LambdaActions.actionGetLayerVersion,
+		LambdaActions.actionGetLayerVersionPolicy,
+		LambdaActions.actionGetMicrovm,
+		LambdaActions.actionGetMicrovmImage,
+		LambdaActions.actionGetMicrovmImageBuild,
+		LambdaActions.actionGetMicrovmImageVersion,
+		LambdaActions.actionGetNetworkConnector,
+		LambdaActions.actionGetPolicy,
+		LambdaActions.actionGetProvisionedConcurrencyConfig,
+		LambdaActions.actionGetRuntimeManagementConfig,
+		LambdaActions.ListTags,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LambdaActions.CHECKPOINT_DURABLE_EXECUTION,
-		LambdaActions.CONNECT_MICROVM,
-		LambdaActions.CREATE_ALIAS,
-		LambdaActions.CREATE_CAPACITY_PROVIDER,
-		LambdaActions.CREATE_CODE_SIGNING_CONFIG,
-		LambdaActions.CREATE_EVENT_SOURCE_MAPPING,
-		LambdaActions.CREATE_FUNCTION,
-		LambdaActions.CREATE_FUNCTION_URL_CONFIG,
-		LambdaActions.CREATE_MICROVM_AUTH_TOKEN,
-		LambdaActions.CREATE_MICROVM_IMAGE,
-		LambdaActions.CREATE_MICROVM_SHELL_AUTH_TOKEN,
-		LambdaActions.CREATE_NETWORK_CONNECTOR,
-		LambdaActions.DELETE_ALIAS,
-		LambdaActions.DELETE_CAPACITY_PROVIDER,
-		LambdaActions.DELETE_CODE_SIGNING_CONFIG,
-		LambdaActions.DELETE_EVENT_SOURCE_MAPPING,
-		LambdaActions.DELETE_FUNCTION,
-		LambdaActions.DELETE_FUNCTION_CODE_SIGNING_CONFIG,
-		LambdaActions.DELETE_FUNCTION_CONCURRENCY,
-		LambdaActions.DELETE_FUNCTION_EVENT_INVOKE_CONFIG,
-		LambdaActions.DELETE_FUNCTION_URL_CONFIG,
-		LambdaActions.DELETE_LAYER_VERSION,
-		LambdaActions.DELETE_MICROVM_IMAGE,
-		LambdaActions.DELETE_MICROVM_IMAGE_VERSION,
-		LambdaActions.DELETE_NETWORK_CONNECTOR,
-		LambdaActions.DELETE_PROVISIONED_CONCURRENCY_CONFIG,
-		LambdaActions.INVOKE_ASYNC,
-		LambdaActions.INVOKE_FUNCTION,
-		LambdaActions.INVOKE_FUNCTION_URL,
-		LambdaActions.PASS_CAPACITY_PROVIDER,
-		LambdaActions.PASS_NETWORK_CONNECTOR,
-		LambdaActions.PUBLISH_LAYER_VERSION,
-		LambdaActions.PUBLISH_VERSION,
-		LambdaActions.PUT_FUNCTION_CODE_SIGNING_CONFIG,
-		LambdaActions.PUT_FUNCTION_CONCURRENCY,
-		LambdaActions.PUT_FUNCTION_EVENT_INVOKE_CONFIG,
-		LambdaActions.PUT_FUNCTION_RECURSION_CONFIG,
-		LambdaActions.PUT_FUNCTION_SCALING_CONFIG,
-		LambdaActions.PUT_PROVISIONED_CONCURRENCY_CONFIG,
-		LambdaActions.PUT_RUNTIME_MANAGEMENT_CONFIG,
-		LambdaActions.RESUME_MICROVM,
-		LambdaActions.RUN_MICROVM,
-		LambdaActions.SEND_DURABLE_EXECUTION_CALLBACK_FAILURE,
-		LambdaActions.SEND_DURABLE_EXECUTION_CALLBACK_HEARTBEAT,
-		LambdaActions.SEND_DURABLE_EXECUTION_CALLBACK_SUCCESS,
-		LambdaActions.STOP_DURABLE_EXECUTION,
-		LambdaActions.SUSPEND_MICROVM,
-		LambdaActions.TERMINATE_MICROVM,
-		LambdaActions.UPDATE_ALIAS,
-		LambdaActions.UPDATE_CAPACITY_PROVIDER,
-		LambdaActions.UPDATE_CODE_SIGNING_CONFIG,
-		LambdaActions.UPDATE_EVENT_SOURCE_MAPPING,
-		LambdaActions.UPDATE_FUNCTION_CODE,
-		LambdaActions.UPDATE_FUNCTION_CODE_SIGNING_CONFIG,
-		LambdaActions.UPDATE_FUNCTION_CONFIGURATION,
-		LambdaActions.UPDATE_FUNCTION_EVENT_INVOKE_CONFIG,
-		LambdaActions.UPDATE_FUNCTION_URL_CONFIG,
-		LambdaActions.UPDATE_MICROVM_IMAGE,
-		LambdaActions.UPDATE_MICROVM_IMAGE_VERSION,
-		LambdaActions.UPDATE_NETWORK_CONNECTOR,
+	static readonly AllWriteActions: string[] = [
+		LambdaActions.CheckpointDurableExecution,
+		LambdaActions.ConnectMicrovm,
+		LambdaActions.CreateAlias,
+		LambdaActions.CreateCapacityProvider,
+		LambdaActions.CreateCodeSigningConfig,
+		LambdaActions.CreateEventSourceMapping,
+		LambdaActions.CreateFunction,
+		LambdaActions.CreateFunctionUrlConfig,
+		LambdaActions.CreateMicrovmAuthToken,
+		LambdaActions.CreateMicrovmImage,
+		LambdaActions.CreateMicrovmShellAuthToken,
+		LambdaActions.CreateNetworkConnector,
+		LambdaActions.DeleteAlias,
+		LambdaActions.DeleteCapacityProvider,
+		LambdaActions.DeleteCodeSigningConfig,
+		LambdaActions.DeleteEventSourceMapping,
+		LambdaActions.DeleteFunction,
+		LambdaActions.DeleteFunctionCodeSigningConfig,
+		LambdaActions.DeleteFunctionConcurrency,
+		LambdaActions.DeleteFunctionEventInvokeConfig,
+		LambdaActions.DeleteFunctionUrlConfig,
+		LambdaActions.DeleteLayerVersion,
+		LambdaActions.DeleteMicrovmImage,
+		LambdaActions.DeleteMicrovmImageVersion,
+		LambdaActions.DeleteNetworkConnector,
+		LambdaActions.DeleteProvisionedConcurrencyConfig,
+		LambdaActions.InvokeAsync,
+		LambdaActions.InvokeFunction,
+		LambdaActions.InvokeFunctionUrl,
+		LambdaActions.PassCapacityProvider,
+		LambdaActions.PassNetworkConnector,
+		LambdaActions.PublishLayerVersion,
+		LambdaActions.PublishVersion,
+		LambdaActions.PutFunctionCodeSigningConfig,
+		LambdaActions.PutFunctionConcurrency,
+		LambdaActions.PutFunctionEventInvokeConfig,
+		LambdaActions.PutFunctionRecursionConfig,
+		LambdaActions.PutFunctionScalingConfig,
+		LambdaActions.PutProvisionedConcurrencyConfig,
+		LambdaActions.PutRuntimeManagementConfig,
+		LambdaActions.ResumeMicrovm,
+		LambdaActions.RunMicrovm,
+		LambdaActions.SendDurableExecutionCallbackFailure,
+		LambdaActions.SendDurableExecutionCallbackHeartbeat,
+		LambdaActions.SendDurableExecutionCallbackSuccess,
+		LambdaActions.StopDurableExecution,
+		LambdaActions.SuspendMicrovm,
+		LambdaActions.TerminateMicrovm,
+		LambdaActions.UpdateAlias,
+		LambdaActions.UpdateCapacityProvider,
+		LambdaActions.UpdateCodeSigningConfig,
+		LambdaActions.UpdateEventSourceMapping,
+		LambdaActions.UpdateFunctionCode,
+		LambdaActions.UpdateFunctionCodeSigningConfig,
+		LambdaActions.UpdateFunctionConfiguration,
+		LambdaActions.UpdateFunctionEventInvokeConfig,
+		LambdaActions.UpdateFunctionUrlConfig,
+		LambdaActions.UpdateMicrovmImage,
+		LambdaActions.UpdateMicrovmImageVersion,
+		LambdaActions.UpdateNetworkConnector,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LambdaActions.LIST_ALIASES,
-		LambdaActions.LIST_CAPACITY_PROVIDERS,
-		LambdaActions.LIST_CODE_SIGNING_CONFIGS,
-		LambdaActions.LIST_DURABLE_EXECUTIONS_BY_FUNCTION,
-		LambdaActions.LIST_EVENT_SOURCE_MAPPINGS,
-		LambdaActions.LIST_FUNCTION_EVENT_INVOKE_CONFIGS,
-		LambdaActions.LIST_FUNCTION_URL_CONFIGS,
-		LambdaActions.LIST_FUNCTION_VERSIONS_BY_CAPACITY_PROVIDER,
-		LambdaActions.LIST_FUNCTIONS,
-		LambdaActions.LIST_FUNCTIONS_BY_CODE_SIGNING_CONFIG,
-		LambdaActions.LIST_LAYER_VERSIONS,
-		LambdaActions.LIST_LAYERS,
-		LambdaActions.LIST_MANAGED_MICROVM_IMAGE_VERSIONS,
-		LambdaActions.LIST_MANAGED_MICROVM_IMAGES,
-		LambdaActions.LIST_MICROVM_IMAGE_BUILDS,
-		LambdaActions.LIST_MICROVM_IMAGE_VERSIONS,
-		LambdaActions.LIST_MICROVM_IMAGES,
-		LambdaActions.LIST_MICROVMS,
-		LambdaActions.LIST_NETWORK_CONNECTORS,
-		LambdaActions.LIST_PROVISIONED_CONCURRENCY_CONFIGS,
-		LambdaActions.LIST_VERSIONS_BY_FUNCTION,
+	static readonly AllListActions: string[] = [
+		LambdaActions.ListAliases,
+		LambdaActions.ListCapacityProviders,
+		LambdaActions.ListCodeSigningConfigs,
+		LambdaActions.ListDurableExecutionsByFunction,
+		LambdaActions.ListEventSourceMappings,
+		LambdaActions.ListFunctionEventInvokeConfigs,
+		LambdaActions.ListFunctionUrlConfigs,
+		LambdaActions.ListFunctionVersionsByCapacityProvider,
+		LambdaActions.ListFunctions,
+		LambdaActions.ListFunctionsByCodeSigningConfig,
+		LambdaActions.ListLayerVersions,
+		LambdaActions.ListLayers,
+		LambdaActions.ListManagedMicrovmImageVersions,
+		LambdaActions.ListManagedMicrovmImages,
+		LambdaActions.ListMicrovmImageBuilds,
+		LambdaActions.ListMicrovmImageVersions,
+		LambdaActions.ListMicrovmImages,
+		LambdaActions.ListMicrovms,
+		LambdaActions.ListNetworkConnectors,
+		LambdaActions.ListProvisionedConcurrencyConfigs,
+		LambdaActions.ListVersionsByFunction,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		LambdaActions.ADD_LAYER_VERSION_PERMISSION,
-		LambdaActions.ADD_PERMISSION,
-		LambdaActions.DISABLE_REPLICATION,
-		LambdaActions.ENABLE_REPLICATION,
-		LambdaActions.REMOVE_LAYER_VERSION_PERMISSION,
-		LambdaActions.REMOVE_PERMISSION,
+	static readonly AllPermissionManagementActions: string[] = [
+		LambdaActions.AddLayerVersionPermission,
+		LambdaActions.AddPermission,
+		LambdaActions.DisableReplication,
+		LambdaActions.EnableReplication,
+		LambdaActions.RemoveLayerVersionPermission,
+		LambdaActions.RemovePermission,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LambdaActions.TAG_RESOURCE,
-		LambdaActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LambdaActions.TagResource,
+		LambdaActions.UntagResource,
 	];
 }
 
-const CapacityProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):capacity-provider:(?<capacityProviderName>[^:/?]+)$",
-);
-const CodeSigningConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):code-signing-config:(?<codeSigningConfigId>[^:/?]+)$",
-);
-const DurableExecutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<version>[^:/?]+)/durable-execution/(?<executionName>[^:/?]+)/(?<executionId>[^:/?]+)$",
-);
-const EventSourceMappingArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):event-source-mapping:(?<uuid>[^:/?]+)$",
-);
-const FunctionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+)$",
-);
-const FunctionAliasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<alias>[^:/?]+)$",
-);
-const FunctionVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<version>[^:/?]+)$",
-);
-const LayerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):layer:(?<layerName>[^:/?]+)$",
-);
-const LayerVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):layer:(?<layerName>[^:/?]+):(?<layerVersion>[^:/?]+)$",
-);
-const MicrovmImageArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):microvm-image:(?<microvmImageName>[^:/?]+)$",
-);
-const NetworkConnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):network-connector:(?<networkConnectorId>[^:/?]+)$",
-);
+/**
+ * Properties for building a capacityProvider ARN.
+ */
+export interface LambdaCapacityProviderArnProps {
+	/** The CapacityProviderName component of the ARN. */
+	readonly capacityProviderName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a capacityProvider ARN.
+ */
+export interface LambdaCapacityProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityProviderName component. */
+	readonly capacityProviderName: string;
+}
+
+/**
+ * Properties for building a code signing config ARN.
+ */
+export interface LambdaCodeSigningConfigArnProps {
+	/** The CodeSigningConfigId component of the ARN. */
+	readonly codeSigningConfigId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a code signing config ARN.
+ */
+export interface LambdaCodeSigningConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CodeSigningConfigId component. */
+	readonly codeSigningConfigId: string;
+}
+
+/**
+ * Properties for building a durable execution ARN.
+ */
+export interface LambdaDurableExecutionArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** The ExecutionName component of the ARN. */
+	readonly executionName: string;
+	/** The ExecutionId component of the ARN. */
+	readonly executionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a durable execution ARN.
+ */
+export interface LambdaDurableExecutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+	/** The Version component. */
+	readonly version: string;
+	/** The ExecutionName component. */
+	readonly executionName: string;
+	/** The ExecutionId component. */
+	readonly executionId: string;
+}
+
+/**
+ * Properties for building a eventSourceMapping ARN.
+ */
+export interface LambdaEventSourceMappingArnProps {
+	/** The UUID component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a eventSourceMapping ARN.
+ */
+export interface LambdaEventSourceMappingArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UUID component. */
+	readonly uuid: string;
+}
+
+/**
+ * Properties for building a function ARN.
+ */
+export interface LambdaFunctionArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function ARN.
+ */
+export interface LambdaFunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+}
+
+/**
+ * Properties for building a function alias ARN.
+ */
+export interface LambdaFunctionAliasArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** The Alias component of the ARN. */
+	readonly alias: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function alias ARN.
+ */
+export interface LambdaFunctionAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+	/** The Alias component. */
+	readonly alias: string;
+}
+
+/**
+ * Properties for building a function version ARN.
+ */
+export interface LambdaFunctionVersionArnProps {
+	/** The FunctionName component of the ARN. */
+	readonly functionName: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function version ARN.
+ */
+export interface LambdaFunctionVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FunctionName component. */
+	readonly functionName: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+/**
+ * Properties for building a layer ARN.
+ */
+export interface LambdaLayerArnProps {
+	/** The LayerName component of the ARN. */
+	readonly layerName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a layer ARN.
+ */
+export interface LambdaLayerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LayerName component. */
+	readonly layerName: string;
+}
+
+/**
+ * Properties for building a layerVersion ARN.
+ */
+export interface LambdaLayerVersionArnProps {
+	/** The LayerName component of the ARN. */
+	readonly layerName: string;
+	/** The LayerVersion component of the ARN. */
+	readonly layerVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a layerVersion ARN.
+ */
+export interface LambdaLayerVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LayerName component. */
+	readonly layerName: string;
+	/** The LayerVersion component. */
+	readonly layerVersion: string;
+}
+
+/**
+ * Properties for building a microvmImage ARN.
+ */
+export interface LambdaMicrovmImageArnProps {
+	/** The MicrovmImageName component of the ARN. */
+	readonly microvmImageName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a microvmImage ARN.
+ */
+export interface LambdaMicrovmImageArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MicrovmImageName component. */
+	readonly microvmImageName: string;
+}
+
+/**
+ * Properties for building a networkConnector ARN.
+ */
+export interface LambdaNetworkConnectorArnProps {
+	/** The NetworkConnectorId component of the ARN. */
+	readonly networkConnectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a networkConnector ARN.
+ */
+export interface LambdaNetworkConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkConnectorId component. */
+	readonly networkConnectorId: string;
+}
+
+const CapacityProviderArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):capacity-provider:(?<capacityProviderName>[^:/?]+)$/;
+const CodeSigningConfigArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):code-signing-config:(?<codeSigningConfigId>[^:/?]+)$/;
+const DurableExecutionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<version>[^:/?]+)\/durable-execution\/(?<executionName>[^:/?]+)\/(?<executionId>[^:/?]+)$/;
+const EventSourceMappingArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):event-source-mapping:(?<uuid>[^:/?]+)$/;
+const FunctionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+)$/;
+const FunctionAliasArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<alias>[^:/?]+)$/;
+const FunctionVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):function:(?<functionName>[^:/?]+):(?<version>[^:/?]+)$/;
+const LayerArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):layer:(?<layerName>[^:/?]+)$/;
+const LayerVersionArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):layer:(?<layerName>[^:/?]+):(?<layerVersion>[^:/?]+)$/;
+const MicrovmImageArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):microvm-image:(?<microvmImageName>[^:/?]+)$/;
+const NetworkConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):lambda:(?<region>[^:]*):(?<account>[^:]*):network-connector:(?<networkConnectorId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for lambda resources.
@@ -461,16 +778,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the capacityProvider resource.
 	 */
-	static capacityProvider(props: {
-		/** The CapacityProviderName component of the ARN. */
-		readonly capacityProviderName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static capacityProvider(props: LambdaCapacityProviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:capacity-provider:${props.capacityProviderName}`;
 	}
 
@@ -485,12 +793,9 @@ export class LambdaResources {
 	 * Parses a capacityProvider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCapacityProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		capacityProviderName: string;
-	} {
+	static parseCapacityProviderArn(
+		arn: string,
+	): LambdaCapacityProviderArnComponents {
 		const match = CapacityProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid capacityProvider ARN: ${arn}`);
@@ -506,16 +811,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the code signing config resource.
 	 */
-	static codeSigningConfig(props: {
-		/** The CodeSigningConfigId component of the ARN. */
-		readonly codeSigningConfigId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static codeSigningConfig(props: LambdaCodeSigningConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:code-signing-config:${props.codeSigningConfigId}`;
 	}
 
@@ -530,12 +826,9 @@ export class LambdaResources {
 	 * Parses a code signing config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCodeSigningConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		codeSigningConfigId: string;
-	} {
+	static parseCodeSigningConfigArn(
+		arn: string,
+	): LambdaCodeSigningConfigArnComponents {
 		const match = CodeSigningConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid code signing config ARN: ${arn}`);
@@ -551,22 +844,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the durable execution resource.
 	 */
-	static durableExecution(props: {
-		/** The FunctionName component of the ARN. */
-		readonly functionName: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** The ExecutionName component of the ARN. */
-		readonly executionName: string;
-		/** The ExecutionId component of the ARN. */
-		readonly executionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static durableExecution(props: LambdaDurableExecutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:function:${props.functionName}:${props.version}/durable-execution/${props.executionName}/${props.executionId}`;
 	}
 
@@ -581,15 +859,9 @@ export class LambdaResources {
 	 * Parses a durable execution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDurableExecutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionName: string;
-		version: string;
-		executionName: string;
-		executionId: string;
-	} {
+	static parseDurableExecutionArn(
+		arn: string,
+	): LambdaDurableExecutionArnComponents {
 		const match = DurableExecutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid durable execution ARN: ${arn}`);
@@ -608,16 +880,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the eventSourceMapping resource.
 	 */
-	static eventSourceMapping(props: {
-		/** The UUID component of the ARN. */
-		readonly uuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventSourceMapping(props: LambdaEventSourceMappingArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:event-source-mapping:${props.uuid}`;
 	}
 
@@ -632,12 +895,9 @@ export class LambdaResources {
 	 * Parses a eventSourceMapping ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventSourceMappingArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		uuid: string;
-	} {
+	static parseEventSourceMappingArn(
+		arn: string,
+	): LambdaEventSourceMappingArnComponents {
 		const match = EventSourceMappingArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid eventSourceMapping ARN: ${arn}`);
@@ -653,16 +913,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the function resource.
 	 */
-	static function(props: {
-		/** The FunctionName component of the ARN. */
-		readonly functionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static function(props: LambdaFunctionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:function:${props.functionName}`;
 	}
 
@@ -677,12 +928,7 @@ export class LambdaResources {
 	 * Parses a function ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionName: string;
-	} {
+	static parseFunctionArn(arn: string): LambdaFunctionArnComponents {
 		const match = FunctionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function ARN: ${arn}`);
@@ -698,18 +944,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the function alias resource.
 	 */
-	static functionAlias(props: {
-		/** The FunctionName component of the ARN. */
-		readonly functionName: string;
-		/** The Alias component of the ARN. */
-		readonly alias: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static functionAlias(props: LambdaFunctionAliasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:function:${props.functionName}:${props.alias}`;
 	}
 
@@ -724,13 +959,7 @@ export class LambdaResources {
 	 * Parses a function alias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionName: string;
-		alias: string;
-	} {
+	static parseFunctionAliasArn(arn: string): LambdaFunctionAliasArnComponents {
 		const match = FunctionAliasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function alias ARN: ${arn}`);
@@ -747,18 +976,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the function version resource.
 	 */
-	static functionVersion(props: {
-		/** The FunctionName component of the ARN. */
-		readonly functionName: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static functionVersion(props: LambdaFunctionVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:function:${props.functionName}:${props.version}`;
 	}
 
@@ -773,13 +991,9 @@ export class LambdaResources {
 	 * Parses a function version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		functionName: string;
-		version: string;
-	} {
+	static parseFunctionVersionArn(
+		arn: string,
+	): LambdaFunctionVersionArnComponents {
 		const match = FunctionVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function version ARN: ${arn}`);
@@ -796,16 +1010,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the layer resource.
 	 */
-	static layer(props: {
-		/** The LayerName component of the ARN. */
-		readonly layerName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static layer(props: LambdaLayerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:layer:${props.layerName}`;
 	}
 
@@ -820,12 +1025,7 @@ export class LambdaResources {
 	 * Parses a layer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLayerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		layerName: string;
-	} {
+	static parseLayerArn(arn: string): LambdaLayerArnComponents {
 		const match = LayerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid layer ARN: ${arn}`);
@@ -841,18 +1041,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the layerVersion resource.
 	 */
-	static layerVersion(props: {
-		/** The LayerName component of the ARN. */
-		readonly layerName: string;
-		/** The LayerVersion component of the ARN. */
-		readonly layerVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static layerVersion(props: LambdaLayerVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:layer:${props.layerName}:${props.layerVersion}`;
 	}
 
@@ -867,13 +1056,7 @@ export class LambdaResources {
 	 * Parses a layerVersion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLayerVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		layerName: string;
-		layerVersion: string;
-	} {
+	static parseLayerVersionArn(arn: string): LambdaLayerVersionArnComponents {
 		const match = LayerVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid layerVersion ARN: ${arn}`);
@@ -890,16 +1073,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the microvmImage resource.
 	 */
-	static microvmImage(props: {
-		/** The MicrovmImageName component of the ARN. */
-		readonly microvmImageName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static microvmImage(props: LambdaMicrovmImageArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:microvm-image:${props.microvmImageName}`;
 	}
 
@@ -914,12 +1088,7 @@ export class LambdaResources {
 	 * Parses a microvmImage ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMicrovmImageArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		microvmImageName: string;
-	} {
+	static parseMicrovmImageArn(arn: string): LambdaMicrovmImageArnComponents {
 		const match = MicrovmImageArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid microvmImage ARN: ${arn}`);
@@ -935,16 +1104,7 @@ export class LambdaResources {
 	/**
 	 * Builds an ARN for the networkConnector resource.
 	 */
-	static networkConnector(props: {
-		/** The NetworkConnectorId component of the ARN. */
-		readonly networkConnectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkConnector(props: LambdaNetworkConnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lambda:${props.region ?? "*"}:${props.account ?? "*"}:network-connector:${props.networkConnectorId}`;
 	}
 
@@ -959,12 +1119,9 @@ export class LambdaResources {
 	 * Parses a networkConnector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkConnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkConnectorId: string;
-	} {
+	static parseNetworkConnectorArn(
+		arn: string,
+	): LambdaNetworkConnectorArnComponents {
 		const match = NetworkConnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid networkConnector ARN: ${arn}`);
@@ -983,37 +1140,37 @@ export class LambdaResources {
  */
 export class LambdaOperations {
 	/** IAM actions required for the AddEventSource API call. */
-	static readonly ADD_EVENT_SOURCE: string[] = ["iam:PassRole"];
+	static readonly AddEventSource: string[] = ["iam:PassRole"];
 	/** IAM actions required for the AddLayerVersionPermission API call. */
-	static readonly ADD_LAYER_VERSION_PERMISSION: string[] = [
+	static readonly AddLayerVersionPermission: string[] = [
 		"lambda:AddLayerVersionPermission",
 	];
 	/** IAM actions required for the AddPermission API call. */
-	static readonly ADD_PERMISSION: string[] = ["lambda:AddPermission"];
+	static readonly AddPermission: string[] = ["lambda:AddPermission"];
 	/** IAM actions required for the CheckpointDurableExecution API call. */
-	static readonly CHECKPOINT_DURABLE_EXECUTION: string[] = [
+	static readonly CheckpointDurableExecution: string[] = [
 		"lambda:CheckpointDurableExecution",
 	];
 	/** IAM actions required for the CreateAlias API call. */
-	static readonly CREATE_ALIAS: string[] = ["lambda:CreateAlias"];
+	static readonly CreateAlias: string[] = ["lambda:CreateAlias"];
 	/** IAM actions required for the CreateCapacityProvider API call. */
-	static readonly CREATE_CAPACITY_PROVIDER: string[] = [
+	static readonly CreateCapacityProvider: string[] = [
 		"lambda:CreateCapacityProvider",
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the CreateCodeSigningConfig API call. */
-	static readonly CREATE_CODE_SIGNING_CONFIG: string[] = [
+	static readonly CreateCodeSigningConfig: string[] = [
 		"lambda:CreateCodeSigningConfig",
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the CreateEventSourceMapping API call. */
-	static readonly CREATE_EVENT_SOURCE_MAPPING: string[] = [
+	static readonly CreateEventSourceMapping: string[] = [
 		"lambda:CreateEventSourceMapping",
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the CreateFunction API call. */
-	static readonly CREATE_FUNCTION: string[] = [
+	static readonly CreateFunction: string[] = [
 		"lambda:CreateFunction",
 		"lambda:GetLayerVersion",
 		"lambda:PassCapacityProvider",
@@ -1021,391 +1178,383 @@ export class LambdaOperations {
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the CreateFunctionUrlConfig API call. */
-	static readonly CREATE_FUNCTION_URL_CONFIG: string[] = [
+	static readonly CreateFunctionUrlConfig: string[] = [
 		"lambda:CreateFunctionUrlConfig",
 	];
 	/** IAM actions required for the CreateMicrovmAuthToken API call. */
-	static readonly CREATE_MICROVM_AUTH_TOKEN: string[] = [
+	static readonly CreateMicrovmAuthToken: string[] = [
 		"lambda:CreateMicrovmAuthToken",
 	];
 	/** IAM actions required for the CreateMicrovmImage API call. */
-	static readonly CREATE_MICROVM_IMAGE: string[] = [
+	static readonly CreateMicrovmImage: string[] = [
 		"lambda:CreateMicrovmImage",
 		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the CreateMicrovmShellAuthToken API call. */
-	static readonly CREATE_MICROVM_SHELL_AUTH_TOKEN: string[] = [
+	static readonly CreateMicrovmShellAuthToken: string[] = [
 		"lambda:CreateMicrovmShellAuthToken",
 	];
 	/** IAM actions required for the CreateNetworkConnector API call. */
-	static readonly CREATE_NETWORK_CONNECTOR: string[] = [
+	static readonly CreateNetworkConnector: string[] = [
 		"lambda:CreateNetworkConnector",
 		"iam:PassRole",
 		"lambda:TagResource",
 	];
 	/** IAM actions required for the DeleteAlias API call. */
-	static readonly DELETE_ALIAS: string[] = ["lambda:DeleteAlias"];
+	static readonly DeleteAlias: string[] = ["lambda:DeleteAlias"];
 	/** IAM actions required for the DeleteCapacityProvider API call. */
-	static readonly DELETE_CAPACITY_PROVIDER: string[] = [
+	static readonly DeleteCapacityProvider: string[] = [
 		"lambda:DeleteCapacityProvider",
 	];
 	/** IAM actions required for the DeleteCodeSigningConfig API call. */
-	static readonly DELETE_CODE_SIGNING_CONFIG: string[] = [
+	static readonly DeleteCodeSigningConfig: string[] = [
 		"lambda:DeleteCodeSigningConfig",
 	];
 	/** IAM actions required for the DeleteEventSourceMapping API call. */
-	static readonly DELETE_EVENT_SOURCE_MAPPING: string[] = [
+	static readonly DeleteEventSourceMapping: string[] = [
 		"lambda:DeleteEventSourceMapping",
 	];
 	/** IAM actions required for the DeleteFunction API call. */
-	static readonly DELETE_FUNCTION: string[] = ["lambda:DeleteFunction"];
+	static readonly DeleteFunction: string[] = ["lambda:DeleteFunction"];
 	/** IAM actions required for the DeleteFunctionCodeSigningConfig API call. */
-	static readonly DELETE_FUNCTION_CODE_SIGNING_CONFIG: string[] = [
+	static readonly DeleteFunctionCodeSigningConfig: string[] = [
 		"lambda:DeleteFunctionCodeSigningConfig",
 	];
 	/** IAM actions required for the DeleteFunctionConcurrency API call. */
-	static readonly DELETE_FUNCTION_CONCURRENCY: string[] = [
+	static readonly DeleteFunctionConcurrency: string[] = [
 		"lambda:DeleteFunctionConcurrency",
 	];
 	/** IAM actions required for the DeleteFunctionEventInvokeConfig API call. */
-	static readonly DELETE_FUNCTION_EVENT_INVOKE_CONFIG: string[] = [
+	static readonly DeleteFunctionEventInvokeConfig: string[] = [
 		"lambda:DeleteFunctionEventInvokeConfig",
 	];
 	/** IAM actions required for the DeleteFunctionUrlConfig API call. */
-	static readonly DELETE_FUNCTION_URL_CONFIG: string[] = [
+	static readonly DeleteFunctionUrlConfig: string[] = [
 		"lambda:DeleteFunctionUrlConfig",
 	];
 	/** IAM actions required for the DeleteLayerVersion API call. */
-	static readonly DELETE_LAYER_VERSION: string[] = [
-		"lambda:DeleteLayerVersion",
-	];
+	static readonly DeleteLayerVersion: string[] = ["lambda:DeleteLayerVersion"];
 	/** IAM actions required for the DeleteMicrovmImage API call. */
-	static readonly DELETE_MICROVM_IMAGE: string[] = [
-		"lambda:DeleteMicrovmImage",
-	];
+	static readonly DeleteMicrovmImage: string[] = ["lambda:DeleteMicrovmImage"];
 	/** IAM actions required for the DeleteMicrovmImageVersion API call. */
-	static readonly DELETE_MICROVM_IMAGE_VERSION: string[] = [
+	static readonly DeleteMicrovmImageVersion: string[] = [
 		"lambda:DeleteMicrovmImageVersion",
 	];
 	/** IAM actions required for the DeleteNetworkConnector API call. */
-	static readonly DELETE_NETWORK_CONNECTOR: string[] = [
+	static readonly DeleteNetworkConnector: string[] = [
 		"lambda:DeleteNetworkConnector",
 	];
 	/** IAM actions required for the DeleteProvisionedConcurrencyConfig API call. */
-	static readonly DELETE_PROVISIONED_CONCURRENCY_CONFIG: string[] = [
+	static readonly DeleteProvisionedConcurrencyConfig: string[] = [
 		"lambda:DeleteProvisionedConcurrencyConfig",
 	];
 	/** IAM actions required for the GetAccountSettings API call. */
-	static readonly GET_ACCOUNT_SETTINGS: string[] = [
+	static readonly opGetAccountSettings: string[] = [
 		"lambda:GetAccountSettings",
 	];
 	/** IAM actions required for the GetAlias API call. */
-	static readonly GET_ALIAS: string[] = ["lambda:GetAlias"];
+	static readonly opGetAlias: string[] = ["lambda:GetAlias"];
 	/** IAM actions required for the GetCapacityProvider API call. */
-	static readonly GET_CAPACITY_PROVIDER: string[] = [
+	static readonly opGetCapacityProvider: string[] = [
 		"lambda:GetCapacityProvider",
 	];
 	/** IAM actions required for the GetCodeSigningConfig API call. */
-	static readonly GET_CODE_SIGNING_CONFIG: string[] = [
+	static readonly opGetCodeSigningConfig: string[] = [
 		"lambda:GetCodeSigningConfig",
 	];
 	/** IAM actions required for the GetDurableExecution API call. */
-	static readonly GET_DURABLE_EXECUTION: string[] = [
+	static readonly opGetDurableExecution: string[] = [
 		"lambda:GetDurableExecution",
 	];
 	/** IAM actions required for the GetDurableExecutionHistory API call. */
-	static readonly GET_DURABLE_EXECUTION_HISTORY: string[] = [
+	static readonly opGetDurableExecutionHistory: string[] = [
 		"lambda:GetDurableExecutionHistory",
 	];
 	/** IAM actions required for the GetDurableExecutionState API call. */
-	static readonly GET_DURABLE_EXECUTION_STATE: string[] = [
+	static readonly opGetDurableExecutionState: string[] = [
 		"lambda:GetDurableExecutionState",
 	];
 	/** IAM actions required for the GetEventSource API call. */
-	static readonly GET_EVENT_SOURCE: string[] = [];
+	static readonly opGetEventSource: string[] = [];
 	/** IAM actions required for the GetEventSourceMapping API call. */
-	static readonly GET_EVENT_SOURCE_MAPPING: string[] = [
+	static readonly opGetEventSourceMapping: string[] = [
 		"lambda:GetEventSourceMapping",
 	];
 	/** IAM actions required for the GetFunction API call. */
-	static readonly GET_FUNCTION: string[] = [
+	static readonly opGetFunction: string[] = [
 		"lambda:GetFunction",
 		"lambda:ListTags",
 	];
 	/** IAM actions required for the GetFunctionCodeSigningConfig API call. */
-	static readonly GET_FUNCTION_CODE_SIGNING_CONFIG: string[] = [
+	static readonly opGetFunctionCodeSigningConfig: string[] = [
 		"lambda:GetFunctionCodeSigningConfig",
 	];
 	/** IAM actions required for the GetFunctionConcurrency API call. */
-	static readonly GET_FUNCTION_CONCURRENCY: string[] = [
+	static readonly opGetFunctionConcurrency: string[] = [
 		"lambda:GetFunctionConcurrency",
 	];
 	/** IAM actions required for the GetFunctionConfiguration API call. */
-	static readonly GET_FUNCTION_CONFIGURATION: string[] = [
+	static readonly opGetFunctionConfiguration: string[] = [
 		"lambda:GetFunctionConfiguration",
 	];
 	/** IAM actions required for the GetFunctionEventInvokeConfig API call. */
-	static readonly GET_FUNCTION_EVENT_INVOKE_CONFIG: string[] = [
+	static readonly opGetFunctionEventInvokeConfig: string[] = [
 		"lambda:GetFunctionEventInvokeConfig",
 	];
 	/** IAM actions required for the GetFunctionRecursionConfig API call. */
-	static readonly GET_FUNCTION_RECURSION_CONFIG: string[] = [
+	static readonly opGetFunctionRecursionConfig: string[] = [
 		"lambda:GetFunctionRecursionConfig",
 	];
 	/** IAM actions required for the GetFunctionScalingConfig API call. */
-	static readonly GET_FUNCTION_SCALING_CONFIG: string[] = [
+	static readonly opGetFunctionScalingConfig: string[] = [
 		"lambda:GetFunctionScalingConfig",
 	];
 	/** IAM actions required for the GetFunctionUrlConfig API call. */
-	static readonly GET_FUNCTION_URL_CONFIG: string[] = [
+	static readonly opGetFunctionUrlConfig: string[] = [
 		"lambda:GetFunctionUrlConfig",
 	];
 	/** IAM actions required for the GetLayerVersion API call. */
-	static readonly GET_LAYER_VERSION: string[] = ["lambda:GetLayerVersion"];
+	static readonly opGetLayerVersion: string[] = ["lambda:GetLayerVersion"];
 	/** IAM actions required for the GetLayerVersionByArn API call. */
-	static readonly GET_LAYER_VERSION_BY_ARN: string[] = [
-		"lambda:GetLayerVersion",
-	];
+	static readonly opGetLayerVersionByArn: string[] = ["lambda:GetLayerVersion"];
 	/** IAM actions required for the GetLayerVersionPolicy API call. */
-	static readonly GET_LAYER_VERSION_POLICY: string[] = [
+	static readonly opGetLayerVersionPolicy: string[] = [
 		"lambda:GetLayerVersionPolicy",
 	];
 	/** IAM actions required for the GetMicrovm API call. */
-	static readonly GET_MICROVM: string[] = ["lambda:GetMicrovm"];
+	static readonly opGetMicrovm: string[] = ["lambda:GetMicrovm"];
 	/** IAM actions required for the GetMicrovmImage API call. */
-	static readonly GET_MICROVM_IMAGE: string[] = ["lambda:GetMicrovmImage"];
+	static readonly opGetMicrovmImage: string[] = ["lambda:GetMicrovmImage"];
 	/** IAM actions required for the GetMicrovmImageBuild API call. */
-	static readonly GET_MICROVM_IMAGE_BUILD: string[] = [
+	static readonly opGetMicrovmImageBuild: string[] = [
 		"lambda:GetMicrovmImageBuild",
 	];
 	/** IAM actions required for the GetMicrovmImageVersion API call. */
-	static readonly GET_MICROVM_IMAGE_VERSION: string[] = [
+	static readonly opGetMicrovmImageVersion: string[] = [
 		"lambda:GetMicrovmImageVersion",
 	];
 	/** IAM actions required for the GetNetworkConnector API call. */
-	static readonly GET_NETWORK_CONNECTOR: string[] = [
+	static readonly opGetNetworkConnector: string[] = [
 		"lambda:GetNetworkConnector",
 	];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = ["lambda:GetPolicy"];
+	static readonly opGetPolicy: string[] = ["lambda:GetPolicy"];
 	/** IAM actions required for the GetProvisionedConcurrencyConfig API call. */
-	static readonly GET_PROVISIONED_CONCURRENCY_CONFIG: string[] = [
+	static readonly opGetProvisionedConcurrencyConfig: string[] = [
 		"lambda:GetProvisionedConcurrencyConfig",
 	];
 	/** IAM actions required for the GetRuntimeManagementConfig API call. */
-	static readonly GET_RUNTIME_MANAGEMENT_CONFIG: string[] = [
+	static readonly opGetRuntimeManagementConfig: string[] = [
 		"lambda:GetRuntimeManagementConfig",
 	];
 	/** IAM actions required for the Invoke API call. */
-	static readonly INVOKE: string[] = ["lambda:InvokeFunction"];
+	static readonly Invoke: string[] = ["lambda:InvokeFunction"];
 	/** IAM actions required for the InvokeAsync API call. */
-	static readonly INVOKE_ASYNC: string[] = ["lambda:InvokeAsync"];
+	static readonly InvokeAsync: string[] = ["lambda:InvokeAsync"];
 	/** IAM actions required for the InvokeWithResponseStream API call. */
-	static readonly INVOKE_WITH_RESPONSE_STREAM: string[] = [
+	static readonly InvokeWithResponseStream: string[] = [
 		"lambda:InvokeFunction",
 	];
 	/** IAM actions required for the ListAliases API call. */
-	static readonly LIST_ALIASES: string[] = ["lambda:ListAliases"];
+	static readonly ListAliases: string[] = ["lambda:ListAliases"];
 	/** IAM actions required for the ListCapacityProviders API call. */
-	static readonly LIST_CAPACITY_PROVIDERS: string[] = [
+	static readonly ListCapacityProviders: string[] = [
 		"lambda:ListCapacityProviders",
 	];
 	/** IAM actions required for the ListCodeSigningConfigs API call. */
-	static readonly LIST_CODE_SIGNING_CONFIGS: string[] = [
+	static readonly ListCodeSigningConfigs: string[] = [
 		"lambda:ListCodeSigningConfigs",
 	];
 	/** IAM actions required for the ListDurableExecutionsByFunction API call. */
-	static readonly LIST_DURABLE_EXECUTIONS_BY_FUNCTION: string[] = [
+	static readonly ListDurableExecutionsByFunction: string[] = [
 		"lambda:ListDurableExecutionsByFunction",
 	];
 	/** IAM actions required for the ListEventSourceMappings API call. */
-	static readonly LIST_EVENT_SOURCE_MAPPINGS: string[] = [
+	static readonly ListEventSourceMappings: string[] = [
 		"lambda:ListEventSourceMappings",
 	];
 	/** IAM actions required for the ListEventSources API call. */
-	static readonly LIST_EVENT_SOURCES: string[] = [];
+	static readonly ListEventSources: string[] = [];
 	/** IAM actions required for the ListFunctionEventInvokeConfigs API call. */
-	static readonly LIST_FUNCTION_EVENT_INVOKE_CONFIGS: string[] = [
+	static readonly ListFunctionEventInvokeConfigs: string[] = [
 		"lambda:ListFunctionEventInvokeConfigs",
 	];
 	/** IAM actions required for the ListFunctionUrlConfigs API call. */
-	static readonly LIST_FUNCTION_URL_CONFIGS: string[] = [
+	static readonly ListFunctionUrlConfigs: string[] = [
 		"lambda:ListFunctionUrlConfigs",
 	];
 	/** IAM actions required for the ListFunctionVersionsByCapacityProvider API call. */
-	static readonly LIST_FUNCTION_VERSIONS_BY_CAPACITY_PROVIDER: string[] = [
+	static readonly ListFunctionVersionsByCapacityProvider: string[] = [
 		"lambda:ListFunctionVersionsByCapacityProvider",
 	];
 	/** IAM actions required for the ListFunctions API call. */
-	static readonly LIST_FUNCTIONS: string[] = ["lambda:ListFunctions"];
+	static readonly ListFunctions: string[] = ["lambda:ListFunctions"];
 	/** IAM actions required for the ListFunctionsByCodeSigningConfig API call. */
-	static readonly LIST_FUNCTIONS_BY_CODE_SIGNING_CONFIG: string[] = [
+	static readonly ListFunctionsByCodeSigningConfig: string[] = [
 		"lambda:ListFunctionsByCodeSigningConfig",
 	];
 	/** IAM actions required for the ListLayerVersions API call. */
-	static readonly LIST_LAYER_VERSIONS: string[] = ["lambda:ListLayerVersions"];
+	static readonly ListLayerVersions: string[] = ["lambda:ListLayerVersions"];
 	/** IAM actions required for the ListLayers API call. */
-	static readonly LIST_LAYERS: string[] = ["lambda:ListLayers"];
+	static readonly ListLayers: string[] = ["lambda:ListLayers"];
 	/** IAM actions required for the ListManagedMicrovmImageVersions API call. */
-	static readonly LIST_MANAGED_MICROVM_IMAGE_VERSIONS: string[] = [
+	static readonly ListManagedMicrovmImageVersions: string[] = [
 		"lambda:ListManagedMicrovmImageVersions",
 	];
 	/** IAM actions required for the ListManagedMicrovmImages API call. */
-	static readonly LIST_MANAGED_MICROVM_IMAGES: string[] = [
+	static readonly ListManagedMicrovmImages: string[] = [
 		"lambda:ListManagedMicrovmImages",
 	];
 	/** IAM actions required for the ListMicrovmImageBuilds API call. */
-	static readonly LIST_MICROVM_IMAGE_BUILDS: string[] = [
+	static readonly ListMicrovmImageBuilds: string[] = [
 		"lambda:ListMicrovmImageBuilds",
 	];
 	/** IAM actions required for the ListMicrovmImageVersions API call. */
-	static readonly LIST_MICROVM_IMAGE_VERSIONS: string[] = [
+	static readonly ListMicrovmImageVersions: string[] = [
 		"lambda:ListMicrovmImageVersions",
 	];
 	/** IAM actions required for the ListMicrovmImages API call. */
-	static readonly LIST_MICROVM_IMAGES: string[] = ["lambda:ListMicrovmImages"];
+	static readonly ListMicrovmImages: string[] = ["lambda:ListMicrovmImages"];
 	/** IAM actions required for the ListMicrovms API call. */
-	static readonly LIST_MICROVMS: string[] = ["lambda:ListMicrovms"];
+	static readonly ListMicrovms: string[] = ["lambda:ListMicrovms"];
 	/** IAM actions required for the ListNetworkConnectors API call. */
-	static readonly LIST_NETWORK_CONNECTORS: string[] = [
+	static readonly ListNetworkConnectors: string[] = [
 		"lambda:ListNetworkConnectors",
 	];
 	/** IAM actions required for the ListProvisionedConcurrencyConfigs API call. */
-	static readonly LIST_PROVISIONED_CONCURRENCY_CONFIGS: string[] = [
+	static readonly ListProvisionedConcurrencyConfigs: string[] = [
 		"lambda:ListProvisionedConcurrencyConfigs",
 	];
 	/** IAM actions required for the ListTags API call. */
-	static readonly LIST_TAGS: string[] = ["lambda:ListTags"];
+	static readonly ListTags: string[] = ["lambda:ListTags"];
 	/** IAM actions required for the ListVersionsByFunction API call. */
-	static readonly LIST_VERSIONS_BY_FUNCTION: string[] = [
+	static readonly ListVersionsByFunction: string[] = [
 		"lambda:ListVersionsByFunction",
 	];
 	/** IAM actions required for the PublishLayerVersion API call. */
-	static readonly PUBLISH_LAYER_VERSION: string[] = [
+	static readonly PublishLayerVersion: string[] = [
 		"lambda:PublishLayerVersion",
 	];
 	/** IAM actions required for the PublishVersion API call. */
-	static readonly PUBLISH_VERSION: string[] = ["lambda:PublishVersion"];
+	static readonly PublishVersion: string[] = ["lambda:PublishVersion"];
 	/** IAM actions required for the PutFunctionCodeSigningConfig API call. */
-	static readonly PUT_FUNCTION_CODE_SIGNING_CONFIG: string[] = [
+	static readonly PutFunctionCodeSigningConfig: string[] = [
 		"lambda:PutFunctionCodeSigningConfig",
 	];
 	/** IAM actions required for the PutFunctionConcurrency API call. */
-	static readonly PUT_FUNCTION_CONCURRENCY: string[] = [
+	static readonly PutFunctionConcurrency: string[] = [
 		"lambda:PutFunctionConcurrency",
 	];
 	/** IAM actions required for the PutFunctionEventInvokeConfig API call. */
-	static readonly PUT_FUNCTION_EVENT_INVOKE_CONFIG: string[] = [
+	static readonly PutFunctionEventInvokeConfig: string[] = [
 		"lambda:PutFunctionEventInvokeConfig",
 	];
 	/** IAM actions required for the PutFunctionRecursionConfig API call. */
-	static readonly PUT_FUNCTION_RECURSION_CONFIG: string[] = [
+	static readonly PutFunctionRecursionConfig: string[] = [
 		"lambda:PutFunctionRecursionConfig",
 	];
 	/** IAM actions required for the PutFunctionScalingConfig API call. */
-	static readonly PUT_FUNCTION_SCALING_CONFIG: string[] = [
+	static readonly PutFunctionScalingConfig: string[] = [
 		"lambda:PutFunctionScalingConfig",
 	];
 	/** IAM actions required for the PutProvisionedConcurrencyConfig API call. */
-	static readonly PUT_PROVISIONED_CONCURRENCY_CONFIG: string[] = [
+	static readonly PutProvisionedConcurrencyConfig: string[] = [
 		"lambda:PutProvisionedConcurrencyConfig",
 	];
 	/** IAM actions required for the PutRuntimeManagementConfig API call. */
-	static readonly PUT_RUNTIME_MANAGEMENT_CONFIG: string[] = [
+	static readonly PutRuntimeManagementConfig: string[] = [
 		"lambda:PutRuntimeManagementConfig",
 	];
 	/** IAM actions required for the RemoveEventSource API call. */
-	static readonly REMOVE_EVENT_SOURCE: string[] = [];
+	static readonly RemoveEventSource: string[] = [];
 	/** IAM actions required for the RemoveLayerVersionPermission API call. */
-	static readonly REMOVE_LAYER_VERSION_PERMISSION: string[] = [
+	static readonly RemoveLayerVersionPermission: string[] = [
 		"lambda:RemoveLayerVersionPermission",
 	];
 	/** IAM actions required for the RemovePermission API call. */
-	static readonly REMOVE_PERMISSION: string[] = ["lambda:RemovePermission"];
+	static readonly RemovePermission: string[] = ["lambda:RemovePermission"];
 	/** IAM actions required for the ResumeMicrovm API call. */
-	static readonly RESUME_MICROVM: string[] = ["lambda:ResumeMicrovm"];
+	static readonly ResumeMicrovm: string[] = ["lambda:ResumeMicrovm"];
 	/** IAM actions required for the RunMicrovm API call. */
-	static readonly RUN_MICROVM: string[] = [
+	static readonly RunMicrovm: string[] = [
 		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 		"lambda:RunMicrovm",
 	];
 	/** IAM actions required for the SendDurableExecutionCallbackFailure API call. */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_FAILURE: string[] = [
+	static readonly SendDurableExecutionCallbackFailure: string[] = [
 		"lambda:SendDurableExecutionCallbackFailure",
 	];
 	/** IAM actions required for the SendDurableExecutionCallbackHeartbeat API call. */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_HEARTBEAT: string[] = [
+	static readonly SendDurableExecutionCallbackHeartbeat: string[] = [
 		"lambda:SendDurableExecutionCallbackHeartbeat",
 	];
 	/** IAM actions required for the SendDurableExecutionCallbackSuccess API call. */
-	static readonly SEND_DURABLE_EXECUTION_CALLBACK_SUCCESS: string[] = [
+	static readonly SendDurableExecutionCallbackSuccess: string[] = [
 		"lambda:SendDurableExecutionCallbackSuccess",
 	];
 	/** IAM actions required for the StopDurableExecution API call. */
-	static readonly STOP_DURABLE_EXECUTION: string[] = [
+	static readonly StopDurableExecution: string[] = [
 		"lambda:StopDurableExecution",
 	];
 	/** IAM actions required for the SuspendMicrovm API call. */
-	static readonly SUSPEND_MICROVM: string[] = ["lambda:SuspendMicrovm"];
+	static readonly SuspendMicrovm: string[] = ["lambda:SuspendMicrovm"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["lambda:TagResource"];
+	static readonly TagResource: string[] = ["lambda:TagResource"];
 	/** IAM actions required for the TerminateMicrovm API call. */
-	static readonly TERMINATE_MICROVM: string[] = ["lambda:TerminateMicrovm"];
+	static readonly TerminateMicrovm: string[] = ["lambda:TerminateMicrovm"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["lambda:UntagResource"];
+	static readonly UntagResource: string[] = ["lambda:UntagResource"];
 	/** IAM actions required for the UpdateAlias API call. */
-	static readonly UPDATE_ALIAS: string[] = ["lambda:UpdateAlias"];
+	static readonly UpdateAlias: string[] = ["lambda:UpdateAlias"];
 	/** IAM actions required for the UpdateCapacityProvider API call. */
-	static readonly UPDATE_CAPACITY_PROVIDER: string[] = [
+	static readonly UpdateCapacityProvider: string[] = [
 		"lambda:UpdateCapacityProvider",
 	];
 	/** IAM actions required for the UpdateCodeSigningConfig API call. */
-	static readonly UPDATE_CODE_SIGNING_CONFIG: string[] = [
+	static readonly UpdateCodeSigningConfig: string[] = [
 		"lambda:UpdateCodeSigningConfig",
 	];
 	/** IAM actions required for the UpdateEventSourceMapping API call. */
-	static readonly UPDATE_EVENT_SOURCE_MAPPING: string[] = [
+	static readonly UpdateEventSourceMapping: string[] = [
 		"lambda:UpdateEventSourceMapping",
 	];
 	/** IAM actions required for the UpdateFunctionCode API call. */
-	static readonly UPDATE_FUNCTION_CODE: string[] = [
-		"lambda:UpdateFunctionCode",
-	];
+	static readonly UpdateFunctionCode: string[] = ["lambda:UpdateFunctionCode"];
 	/** IAM actions required for the UpdateFunctionConfiguration API call. */
-	static readonly UPDATE_FUNCTION_CONFIGURATION: string[] = [
+	static readonly UpdateFunctionConfiguration: string[] = [
 		"lambda:GetLayerVersion",
 		"lambda:PassCapacityProvider",
 		"iam:PassRole",
 		"lambda:UpdateFunctionConfiguration",
 	];
 	/** IAM actions required for the UpdateFunctionEventInvokeConfig API call. */
-	static readonly UPDATE_FUNCTION_EVENT_INVOKE_CONFIG: string[] = [
+	static readonly UpdateFunctionEventInvokeConfig: string[] = [
 		"lambda:UpdateFunctionEventInvokeConfig",
 	];
 	/** IAM actions required for the UpdateFunctionUrlConfig API call. */
-	static readonly UPDATE_FUNCTION_URL_CONFIG: string[] = [
+	static readonly UpdateFunctionUrlConfig: string[] = [
 		"lambda:UpdateFunctionUrlConfig",
 	];
 	/** IAM actions required for the UpdateMicrovmImage API call. */
-	static readonly UPDATE_MICROVM_IMAGE: string[] = [
+	static readonly UpdateMicrovmImage: string[] = [
 		"lambda:PassNetworkConnector",
 		"iam:PassRole",
 		"lambda:UpdateMicrovmImage",
 	];
 	/** IAM actions required for the UpdateMicrovmImageVersion API call. */
-	static readonly UPDATE_MICROVM_IMAGE_VERSION: string[] = [
+	static readonly UpdateMicrovmImageVersion: string[] = [
 		"lambda:UpdateMicrovmImageVersion",
 	];
 	/** IAM actions required for the UpdateNetworkConnector API call. */
-	static readonly UPDATE_NETWORK_CONNECTOR: string[] = [
+	static readonly UpdateNetworkConnector: string[] = [
 		"iam:PassRole",
 		"lambda:UpdateNetworkConnector",
 	];
 	/** IAM actions required for the UploadFunction API call. */
-	static readonly UPLOAD_FUNCTION: string[] = [];
+	static readonly UploadFunction: string[] = [];
 }
 
 /**
@@ -1413,30 +1562,30 @@ export class LambdaOperations {
  */
 export class LambdaConditions {
 	/** Condition keys applicable to the AddPermission action. */
-	static readonly ADD_PERMISSION_CONDITION_KEYS: string[] = [
+	static readonly AddPermissionConditionKeys: string[] = [
 		"lambda:FunctionUrlAuthType",
 		"lambda:Principal",
 	];
 	/** Condition keys applicable to the CreateCapacityProvider action. */
-	static readonly CREATE_CAPACITY_PROVIDER_CONDITION_KEYS: string[] = [
+	static readonly CreateCapacityProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"lambda:SecurityGroupIds",
 		"lambda:SubnetIds",
 	];
 	/** Condition keys applicable to the CreateCodeSigningConfig action. */
-	static readonly CREATE_CODE_SIGNING_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateCodeSigningConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEventSourceMapping action. */
-	static readonly CREATE_EVENT_SOURCE_MAPPING_CONDITION_KEYS: string[] = [
+	static readonly CreateEventSourceMappingConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"lambda:FunctionArn",
 	];
 	/** Condition keys applicable to the CreateFunction action. */
-	static readonly CREATE_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly CreateFunctionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"lambda:CodeSigningConfigArn",
@@ -1446,94 +1595,94 @@ export class LambdaConditions {
 		"lambda:VpcIds",
 	];
 	/** Condition keys applicable to the CreateFunctionUrlConfig action. */
-	static readonly CREATE_FUNCTION_URL_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateFunctionUrlConfigConditionKeys: string[] = [
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
 	/** Condition keys applicable to the CreateMicrovmImage action. */
-	static readonly CREATE_MICROVM_IMAGE_CONDITION_KEYS: string[] = [
+	static readonly CreateMicrovmImageConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetworkConnector action. */
-	static readonly CREATE_NETWORK_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"lambda:SecurityGroupIds",
 		"lambda:SubnetIds",
 	];
 	/** Condition keys applicable to the DeleteEventSourceMapping action. */
-	static readonly DELETE_EVENT_SOURCE_MAPPING_CONDITION_KEYS: string[] = [
+	static readonly DeleteEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
 	];
 	/** Condition keys applicable to the DeleteFunctionUrlConfig action. */
-	static readonly DELETE_FUNCTION_URL_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly DeleteFunctionUrlConfigConditionKeys: string[] = [
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
 	/** Condition keys applicable to the GetEventSourceMapping action. */
-	static readonly GET_EVENT_SOURCE_MAPPING_CONDITION_KEYS: string[] = [
+	static readonly actionGetEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
 	];
 	/** Condition keys applicable to the GetFunctionUrlConfig action. */
-	static readonly GET_FUNCTION_URL_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly actionGetFunctionUrlConfigConditionKeys: string[] = [
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
 	/** Condition keys applicable to the InvokeFunction action. */
-	static readonly INVOKE_FUNCTION_CONDITION_KEYS: string[] = [
+	static readonly InvokeFunctionConditionKeys: string[] = [
 		"lambda:EventSourceToken",
 		"lambda:InvokedViaFunctionUrl",
 	];
 	/** Condition keys applicable to the InvokeFunctionUrl action. */
-	static readonly INVOKE_FUNCTION_URL_CONDITION_KEYS: string[] = [
+	static readonly InvokeFunctionUrlConditionKeys: string[] = [
 		"lambda:EventSourceToken",
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
 	/** Condition keys applicable to the ListFunctionUrlConfigs action. */
-	static readonly LIST_FUNCTION_URL_CONFIGS_CONDITION_KEYS: string[] = [
+	static readonly ListFunctionUrlConfigsConditionKeys: string[] = [
 		"lambda:FunctionUrlAuthType",
 	];
 	/** Condition keys applicable to the PutFunctionCodeSigningConfig action. */
-	static readonly PUT_FUNCTION_CODE_SIGNING_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly PutFunctionCodeSigningConfigConditionKeys: string[] = [
 		"lambda:CodeSigningConfigArn",
 	];
 	/** Condition keys applicable to the RemovePermission action. */
-	static readonly REMOVE_PERMISSION_CONDITION_KEYS: string[] = [
+	static readonly RemovePermissionConditionKeys: string[] = [
 		"lambda:FunctionUrlAuthType",
 		"lambda:Principal",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateEventSourceMapping action. */
-	static readonly UPDATE_EVENT_SOURCE_MAPPING_CONDITION_KEYS: string[] = [
+	static readonly UpdateEventSourceMappingConditionKeys: string[] = [
 		"lambda:FunctionArn",
 	];
 	/** Condition keys applicable to the UpdateFunctionConfiguration action. */
-	static readonly UPDATE_FUNCTION_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateFunctionConfigurationConditionKeys: string[] = [
 		"lambda:Layer",
 		"lambda:SecurityGroupIds",
 		"lambda:SubnetIds",
 		"lambda:VpcIds",
 	];
 	/** Condition keys applicable to the UpdateFunctionUrlConfig action. */
-	static readonly UPDATE_FUNCTION_URL_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly UpdateFunctionUrlConfigConditionKeys: string[] = [
 		"lambda:FunctionArn",
 		"lambda:FunctionUrlAuthType",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: lambda:CodeSigningConfigArn (ARN) */
 	static readonly CODE_SIGNING_CONFIG_ARN = "lambda:CodeSigningConfigArn";
 	/** Condition key: lambda:EventSourceToken (String) */

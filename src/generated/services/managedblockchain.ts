@@ -13,148 +13,309 @@ export class ManagedblockchainActions {
 	static readonly SERVICE_PREFIX = "managedblockchain";
 
 	/** [Write] managedblockchain:CreateAccessor */
-	static readonly CREATE_ACCESSOR = "managedblockchain:CreateAccessor";
+	static readonly CreateAccessor = "managedblockchain:CreateAccessor";
 	/** [Write] managedblockchain:CreateMember */
-	static readonly CREATE_MEMBER = "managedblockchain:CreateMember";
+	static readonly CreateMember = "managedblockchain:CreateMember";
 	/** [Write] managedblockchain:CreateNetwork */
-	static readonly CREATE_NETWORK = "managedblockchain:CreateNetwork";
+	static readonly CreateNetwork = "managedblockchain:CreateNetwork";
 	/** [Write] managedblockchain:CreateNode */
-	static readonly CREATE_NODE = "managedblockchain:CreateNode";
+	static readonly CreateNode = "managedblockchain:CreateNode";
 	/** [Write] managedblockchain:CreateProposal */
-	static readonly CREATE_PROPOSAL = "managedblockchain:CreateProposal";
+	static readonly CreateProposal = "managedblockchain:CreateProposal";
 	/** [Write] managedblockchain:DeleteAccessor */
-	static readonly DELETE_ACCESSOR = "managedblockchain:DeleteAccessor";
+	static readonly DeleteAccessor = "managedblockchain:DeleteAccessor";
 	/** [Write] managedblockchain:DeleteMember */
-	static readonly DELETE_MEMBER = "managedblockchain:DeleteMember";
+	static readonly DeleteMember = "managedblockchain:DeleteMember";
 	/** [Write] managedblockchain:DeleteNode */
-	static readonly DELETE_NODE = "managedblockchain:DeleteNode";
+	static readonly DeleteNode = "managedblockchain:DeleteNode";
 	/** [PermissionManagement] managedblockchain:GET */
 	static readonly GET = "managedblockchain:GET";
 	/** [Read] managedblockchain:GetAccessor */
-	static readonly GET_ACCESSOR = "managedblockchain:GetAccessor";
+	static readonly actionGetAccessor = "managedblockchain:GetAccessor";
 	/** [Read] managedblockchain:GetMember */
-	static readonly GET_MEMBER = "managedblockchain:GetMember";
+	static readonly actionGetMember = "managedblockchain:GetMember";
 	/** [Read] managedblockchain:GetNetwork */
-	static readonly GET_NETWORK = "managedblockchain:GetNetwork";
+	static readonly actionGetNetwork = "managedblockchain:GetNetwork";
 	/** [Read] managedblockchain:GetNode */
-	static readonly GET_NODE = "managedblockchain:GetNode";
+	static readonly actionGetNode = "managedblockchain:GetNode";
 	/** [Read] managedblockchain:GetProposal */
-	static readonly GET_PROPOSAL = "managedblockchain:GetProposal";
+	static readonly actionGetProposal = "managedblockchain:GetProposal";
 	/** [PermissionManagement] managedblockchain:Invoke */
-	static readonly INVOKE = "managedblockchain:Invoke";
+	static readonly Invoke = "managedblockchain:Invoke";
 	/** [Read] managedblockchain:InvokeRpcBitcoinMainnet */
-	static readonly INVOKE_RPC_BITCOIN_MAINNET =
+	static readonly InvokeRpcBitcoinMainnet =
 		"managedblockchain:InvokeRpcBitcoinMainnet";
 	/** [Read] managedblockchain:InvokeRpcBitcoinTestnet */
-	static readonly INVOKE_RPC_BITCOIN_TESTNET =
+	static readonly InvokeRpcBitcoinTestnet =
 		"managedblockchain:InvokeRpcBitcoinTestnet";
 	/** [Read] managedblockchain:InvokeRpcPolygonMainnet */
-	static readonly INVOKE_RPC_POLYGON_MAINNET =
+	static readonly InvokeRpcPolygonMainnet =
 		"managedblockchain:InvokeRpcPolygonMainnet";
 	/** [Read] managedblockchain:InvokeRpcPolygonMumbaiTestnet */
-	static readonly INVOKE_RPC_POLYGON_MUMBAI_TESTNET =
+	static readonly InvokeRpcPolygonMumbaiTestnet =
 		"managedblockchain:InvokeRpcPolygonMumbaiTestnet";
 	/** [List] managedblockchain:ListAccessors */
-	static readonly LIST_ACCESSORS = "managedblockchain:ListAccessors";
+	static readonly ListAccessors = "managedblockchain:ListAccessors";
 	/** [List] managedblockchain:ListInvitations */
-	static readonly LIST_INVITATIONS = "managedblockchain:ListInvitations";
+	static readonly ListInvitations = "managedblockchain:ListInvitations";
 	/** [List] managedblockchain:ListMembers */
-	static readonly LIST_MEMBERS = "managedblockchain:ListMembers";
+	static readonly ListMembers = "managedblockchain:ListMembers";
 	/** [List] managedblockchain:ListNetworks */
-	static readonly LIST_NETWORKS = "managedblockchain:ListNetworks";
+	static readonly ListNetworks = "managedblockchain:ListNetworks";
 	/** [List] managedblockchain:ListNodes */
-	static readonly LIST_NODES = "managedblockchain:ListNodes";
+	static readonly ListNodes = "managedblockchain:ListNodes";
 	/** [Read] managedblockchain:ListProposalVotes */
-	static readonly LIST_PROPOSAL_VOTES = "managedblockchain:ListProposalVotes";
+	static readonly ListProposalVotes = "managedblockchain:ListProposalVotes";
 	/** [List] managedblockchain:ListProposals */
-	static readonly LIST_PROPOSALS = "managedblockchain:ListProposals";
+	static readonly ListProposals = "managedblockchain:ListProposals";
 	/** [Read] managedblockchain:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"managedblockchain:ListTagsForResource";
+	static readonly ListTagsForResource = "managedblockchain:ListTagsForResource";
 	/** [PermissionManagement] managedblockchain:POST */
 	static readonly POST = "managedblockchain:POST";
 	/** [Write] managedblockchain:RejectInvitation */
-	static readonly REJECT_INVITATION = "managedblockchain:RejectInvitation";
+	static readonly RejectInvitation = "managedblockchain:RejectInvitation";
 	/** [Tagging] managedblockchain:TagResource */
-	static readonly TAG_RESOURCE = "managedblockchain:TagResource";
+	static readonly TagResource = "managedblockchain:TagResource";
 	/** [Tagging] managedblockchain:UntagResource */
-	static readonly UNTAG_RESOURCE = "managedblockchain:UntagResource";
+	static readonly UntagResource = "managedblockchain:UntagResource";
 	/** [Write] managedblockchain:UpdateMember */
-	static readonly UPDATE_MEMBER = "managedblockchain:UpdateMember";
+	static readonly UpdateMember = "managedblockchain:UpdateMember";
 	/** [Write] managedblockchain:UpdateNode */
-	static readonly UPDATE_NODE = "managedblockchain:UpdateNode";
+	static readonly UpdateNode = "managedblockchain:UpdateNode";
 	/** [Write] managedblockchain:VoteOnProposal */
-	static readonly VOTE_ON_PROPOSAL = "managedblockchain:VoteOnProposal";
+	static readonly VoteOnProposal = "managedblockchain:VoteOnProposal";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ManagedblockchainActions.GET_ACCESSOR,
-		ManagedblockchainActions.GET_MEMBER,
-		ManagedblockchainActions.GET_NETWORK,
-		ManagedblockchainActions.GET_NODE,
-		ManagedblockchainActions.GET_PROPOSAL,
-		ManagedblockchainActions.INVOKE_RPC_BITCOIN_MAINNET,
-		ManagedblockchainActions.INVOKE_RPC_BITCOIN_TESTNET,
-		ManagedblockchainActions.INVOKE_RPC_POLYGON_MAINNET,
-		ManagedblockchainActions.INVOKE_RPC_POLYGON_MUMBAI_TESTNET,
-		ManagedblockchainActions.LIST_PROPOSAL_VOTES,
-		ManagedblockchainActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ManagedblockchainActions.actionGetAccessor,
+		ManagedblockchainActions.actionGetMember,
+		ManagedblockchainActions.actionGetNetwork,
+		ManagedblockchainActions.actionGetNode,
+		ManagedblockchainActions.actionGetProposal,
+		ManagedblockchainActions.InvokeRpcBitcoinMainnet,
+		ManagedblockchainActions.InvokeRpcBitcoinTestnet,
+		ManagedblockchainActions.InvokeRpcPolygonMainnet,
+		ManagedblockchainActions.InvokeRpcPolygonMumbaiTestnet,
+		ManagedblockchainActions.ListProposalVotes,
+		ManagedblockchainActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ManagedblockchainActions.CREATE_ACCESSOR,
-		ManagedblockchainActions.CREATE_MEMBER,
-		ManagedblockchainActions.CREATE_NETWORK,
-		ManagedblockchainActions.CREATE_NODE,
-		ManagedblockchainActions.CREATE_PROPOSAL,
-		ManagedblockchainActions.DELETE_ACCESSOR,
-		ManagedblockchainActions.DELETE_MEMBER,
-		ManagedblockchainActions.DELETE_NODE,
-		ManagedblockchainActions.REJECT_INVITATION,
-		ManagedblockchainActions.UPDATE_MEMBER,
-		ManagedblockchainActions.UPDATE_NODE,
-		ManagedblockchainActions.VOTE_ON_PROPOSAL,
+	static readonly AllWriteActions: string[] = [
+		ManagedblockchainActions.CreateAccessor,
+		ManagedblockchainActions.CreateMember,
+		ManagedblockchainActions.CreateNetwork,
+		ManagedblockchainActions.CreateNode,
+		ManagedblockchainActions.CreateProposal,
+		ManagedblockchainActions.DeleteAccessor,
+		ManagedblockchainActions.DeleteMember,
+		ManagedblockchainActions.DeleteNode,
+		ManagedblockchainActions.RejectInvitation,
+		ManagedblockchainActions.UpdateMember,
+		ManagedblockchainActions.UpdateNode,
+		ManagedblockchainActions.VoteOnProposal,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ManagedblockchainActions.LIST_ACCESSORS,
-		ManagedblockchainActions.LIST_INVITATIONS,
-		ManagedblockchainActions.LIST_MEMBERS,
-		ManagedblockchainActions.LIST_NETWORKS,
-		ManagedblockchainActions.LIST_NODES,
-		ManagedblockchainActions.LIST_PROPOSALS,
+	static readonly AllListActions: string[] = [
+		ManagedblockchainActions.ListAccessors,
+		ManagedblockchainActions.ListInvitations,
+		ManagedblockchainActions.ListMembers,
+		ManagedblockchainActions.ListNetworks,
+		ManagedblockchainActions.ListNodes,
+		ManagedblockchainActions.ListProposals,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
+	static readonly AllPermissionManagementActions: string[] = [
 		ManagedblockchainActions.GET,
-		ManagedblockchainActions.INVOKE,
+		ManagedblockchainActions.Invoke,
 		ManagedblockchainActions.POST,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ManagedblockchainActions.TAG_RESOURCE,
-		ManagedblockchainActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ManagedblockchainActions.TagResource,
+		ManagedblockchainActions.UntagResource,
 	];
 }
 
-const AccessorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):accessors/(?<accessorId>[^:/?]+)$",
-);
-const InvitationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):invitations/(?<invitationId>[^:/?]+)$",
-);
-const MemberArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):members/(?<memberId>[^:/?]+)$",
-);
-const NetworkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*)::networks/(?<networkId>[^:/?]+)$",
-);
-const NodeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):nodes/(?<nodeId>[^:/?]+)$",
-);
-const ProposalArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*)::proposals/(?<proposalId>[^:/?]+)$",
-);
+/**
+ * Properties for building a accessor ARN.
+ */
+export interface ManagedblockchainAccessorArnProps {
+	/** The AccessorId component of the ARN. */
+	readonly accessorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accessor ARN.
+ */
+export interface ManagedblockchainAccessorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessorId component. */
+	readonly accessorId: string;
+}
+
+/**
+ * Properties for building a invitation ARN.
+ */
+export interface ManagedblockchainInvitationArnProps {
+	/** The InvitationId component of the ARN. */
+	readonly invitationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a invitation ARN.
+ */
+export interface ManagedblockchainInvitationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InvitationId component. */
+	readonly invitationId: string;
+}
+
+/**
+ * Properties for building a member ARN.
+ */
+export interface ManagedblockchainMemberArnProps {
+	/** The MemberId component of the ARN. */
+	readonly memberId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a member ARN.
+ */
+export interface ManagedblockchainMemberArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MemberId component. */
+	readonly memberId: string;
+}
+
+/**
+ * Properties for building a network ARN.
+ */
+export interface ManagedblockchainNetworkArnProps {
+	/** The NetworkId component of the ARN. */
+	readonly networkId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network ARN.
+ */
+export interface ManagedblockchainNetworkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkId component. */
+	readonly networkId: string;
+}
+
+/**
+ * Properties for building a node ARN.
+ */
+export interface ManagedblockchainNodeArnProps {
+	/** The NodeId component of the ARN. */
+	readonly nodeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a node ARN.
+ */
+export interface ManagedblockchainNodeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NodeId component. */
+	readonly nodeId: string;
+}
+
+/**
+ * Properties for building a proposal ARN.
+ */
+export interface ManagedblockchainProposalArnProps {
+	/** The ProposalId component of the ARN. */
+	readonly proposalId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a proposal ARN.
+ */
+export interface ManagedblockchainProposalArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProposalId component. */
+	readonly proposalId: string;
+}
+
+const AccessorArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):accessors\/(?<accessorId>[^:/?]+)$/;
+const InvitationArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):invitations\/(?<invitationId>[^:/?]+)$/;
+const MemberArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):members\/(?<memberId>[^:/?]+)$/;
+const NetworkArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*)::networks\/(?<networkId>[^:/?]+)$/;
+const NodeArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*):(?<account>[^:]*):nodes\/(?<nodeId>[^:/?]+)$/;
+const ProposalArnRegex =
+	/^arn:(?<partition>[^:]+):managedblockchain:(?<region>[^:]*)::proposals\/(?<proposalId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for managedblockchain resources.
@@ -163,16 +324,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the accessor resource.
 	 */
-	static accessor(props: {
-		/** The AccessorId component of the ARN. */
-		readonly accessorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessor(props: ManagedblockchainAccessorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}:${props.account ?? "*"}:accessors/${props.accessorId}`;
 	}
 
@@ -187,12 +339,7 @@ export class ManagedblockchainResources {
 	 * Parses a accessor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessorId: string;
-	} {
+	static parseAccessorArn(arn: string): ManagedblockchainAccessorArnComponents {
 		const match = AccessorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid accessor ARN: ${arn}`);
@@ -208,16 +355,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the invitation resource.
 	 */
-	static invitation(props: {
-		/** The InvitationId component of the ARN. */
-		readonly invitationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static invitation(props: ManagedblockchainInvitationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}:${props.account ?? "*"}:invitations/${props.invitationId}`;
 	}
 
@@ -232,12 +370,9 @@ export class ManagedblockchainResources {
 	 * Parses a invitation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInvitationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		invitationId: string;
-	} {
+	static parseInvitationArn(
+		arn: string,
+	): ManagedblockchainInvitationArnComponents {
 		const match = InvitationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid invitation ARN: ${arn}`);
@@ -253,16 +388,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the member resource.
 	 */
-	static member(props: {
-		/** The MemberId component of the ARN. */
-		readonly memberId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static member(props: ManagedblockchainMemberArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}:${props.account ?? "*"}:members/${props.memberId}`;
 	}
 
@@ -277,12 +403,7 @@ export class ManagedblockchainResources {
 	 * Parses a member ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMemberArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		memberId: string;
-	} {
+	static parseMemberArn(arn: string): ManagedblockchainMemberArnComponents {
 		const match = MemberArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid member ARN: ${arn}`);
@@ -298,16 +419,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the network resource.
 	 */
-	static network(props: {
-		/** The NetworkId component of the ARN. */
-		readonly networkId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static network(props: ManagedblockchainNetworkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}::networks/${props.networkId}`;
 	}
 
@@ -322,12 +434,7 @@ export class ManagedblockchainResources {
 	 * Parses a network ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkId: string;
-	} {
+	static parseNetworkArn(arn: string): ManagedblockchainNetworkArnComponents {
 		const match = NetworkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network ARN: ${arn}`);
@@ -343,16 +450,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the node resource.
 	 */
-	static node(props: {
-		/** The NodeId component of the ARN. */
-		readonly nodeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static node(props: ManagedblockchainNodeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}:${props.account ?? "*"}:nodes/${props.nodeId}`;
 	}
 
@@ -367,12 +465,7 @@ export class ManagedblockchainResources {
 	 * Parses a node ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNodeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		nodeId: string;
-	} {
+	static parseNodeArn(arn: string): ManagedblockchainNodeArnComponents {
 		const match = NodeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid node ARN: ${arn}`);
@@ -388,16 +481,7 @@ export class ManagedblockchainResources {
 	/**
 	 * Builds an ARN for the proposal resource.
 	 */
-	static proposal(props: {
-		/** The ProposalId component of the ARN. */
-		readonly proposalId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static proposal(props: ManagedblockchainProposalArnProps): string {
 		return `arn:${props.partition ?? "aws"}:managedblockchain:${props.region ?? "*"}::proposals/${props.proposalId}`;
 	}
 
@@ -412,12 +496,7 @@ export class ManagedblockchainResources {
 	 * Parses a proposal ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProposalArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		proposalId: string;
-	} {
+	static parseProposalArn(arn: string): ManagedblockchainProposalArnComponents {
 		const match = ProposalArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid proposal ARN: ${arn}`);
@@ -436,90 +515,84 @@ export class ManagedblockchainResources {
  */
 export class ManagedblockchainOperations {
 	/** IAM actions required for the CreateAccessor API call. */
-	static readonly CREATE_ACCESSOR: string[] = [
+	static readonly CreateAccessor: string[] = [
 		"managedblockchain:CreateAccessor",
 		"managedblockchain:TagResource",
 	];
 	/** IAM actions required for the CreateMember API call. */
-	static readonly CREATE_MEMBER: string[] = [
+	static readonly CreateMember: string[] = [
 		"managedblockchain:CreateMember",
 		"managedblockchain:TagResource",
 	];
 	/** IAM actions required for the CreateNetwork API call. */
-	static readonly CREATE_NETWORK: string[] = [
+	static readonly CreateNetwork: string[] = [
 		"managedblockchain:CreateNetwork",
 		"managedblockchain:TagResource",
 	];
 	/** IAM actions required for the CreateNode API call. */
-	static readonly CREATE_NODE: string[] = [
+	static readonly CreateNode: string[] = [
 		"managedblockchain:CreateNode",
 		"managedblockchain:TagResource",
 	];
 	/** IAM actions required for the CreateProposal API call. */
-	static readonly CREATE_PROPOSAL: string[] = [
+	static readonly CreateProposal: string[] = [
 		"managedblockchain:CreateProposal",
 		"managedblockchain:TagResource",
 	];
 	/** IAM actions required for the DeleteAccessor API call. */
-	static readonly DELETE_ACCESSOR: string[] = [
+	static readonly DeleteAccessor: string[] = [
 		"managedblockchain:DeleteAccessor",
 	];
 	/** IAM actions required for the DeleteMember API call. */
-	static readonly DELETE_MEMBER: string[] = ["managedblockchain:DeleteMember"];
+	static readonly DeleteMember: string[] = ["managedblockchain:DeleteMember"];
 	/** IAM actions required for the DeleteNode API call. */
-	static readonly DELETE_NODE: string[] = ["managedblockchain:DeleteNode"];
+	static readonly DeleteNode: string[] = ["managedblockchain:DeleteNode"];
 	/** IAM actions required for the GetAccessor API call. */
-	static readonly GET_ACCESSOR: string[] = ["managedblockchain:GetAccessor"];
+	static readonly opGetAccessor: string[] = ["managedblockchain:GetAccessor"];
 	/** IAM actions required for the GetMember API call. */
-	static readonly GET_MEMBER: string[] = ["managedblockchain:GetMember"];
+	static readonly opGetMember: string[] = ["managedblockchain:GetMember"];
 	/** IAM actions required for the GetNetwork API call. */
-	static readonly GET_NETWORK: string[] = ["managedblockchain:GetNetwork"];
+	static readonly opGetNetwork: string[] = ["managedblockchain:GetNetwork"];
 	/** IAM actions required for the GetNode API call. */
-	static readonly GET_NODE: string[] = ["managedblockchain:GetNode"];
+	static readonly opGetNode: string[] = ["managedblockchain:GetNode"];
 	/** IAM actions required for the GetProposal API call. */
-	static readonly GET_PROPOSAL: string[] = ["managedblockchain:GetProposal"];
+	static readonly opGetProposal: string[] = ["managedblockchain:GetProposal"];
 	/** IAM actions required for the ListAccessors API call. */
-	static readonly LIST_ACCESSORS: string[] = [
-		"managedblockchain:ListAccessors",
-	];
+	static readonly ListAccessors: string[] = ["managedblockchain:ListAccessors"];
 	/** IAM actions required for the ListInvitations API call. */
-	static readonly LIST_INVITATIONS: string[] = [
+	static readonly ListInvitations: string[] = [
 		"managedblockchain:ListInvitations",
 	];
 	/** IAM actions required for the ListMembers API call. */
-	static readonly LIST_MEMBERS: string[] = ["managedblockchain:ListMembers"];
+	static readonly ListMembers: string[] = ["managedblockchain:ListMembers"];
 	/** IAM actions required for the ListNetworks API call. */
-	static readonly LIST_NETWORKS: string[] = ["managedblockchain:ListNetworks"];
+	static readonly ListNetworks: string[] = ["managedblockchain:ListNetworks"];
 	/** IAM actions required for the ListNodes API call. */
-	static readonly LIST_NODES: string[] = ["managedblockchain:ListNodes"];
+	static readonly ListNodes: string[] = ["managedblockchain:ListNodes"];
 	/** IAM actions required for the ListProposalVotes API call. */
-	static readonly LIST_PROPOSAL_VOTES: string[] = [
+	static readonly ListProposalVotes: string[] = [
 		"managedblockchain:ListProposalVotes",
 	];
 	/** IAM actions required for the ListProposals API call. */
-	static readonly LIST_PROPOSALS: string[] = [
-		"managedblockchain:ListProposals",
-	];
+	static readonly ListProposals: string[] = ["managedblockchain:ListProposals"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"managedblockchain:ListTagsForResource",
 	];
 	/** IAM actions required for the RejectInvitation API call. */
-	static readonly REJECT_INVITATION: string[] = [
+	static readonly RejectInvitation: string[] = [
 		"managedblockchain:RejectInvitation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["managedblockchain:TagResource"];
+	static readonly TagResource: string[] = ["managedblockchain:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
-		"managedblockchain:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["managedblockchain:UntagResource"];
 	/** IAM actions required for the UpdateMember API call. */
-	static readonly UPDATE_MEMBER: string[] = ["managedblockchain:UpdateMember"];
+	static readonly UpdateMember: string[] = ["managedblockchain:UpdateMember"];
 	/** IAM actions required for the UpdateNode API call. */
-	static readonly UPDATE_NODE: string[] = ["managedblockchain:UpdateNode"];
+	static readonly UpdateNode: string[] = ["managedblockchain:UpdateNode"];
 	/** IAM actions required for the VoteOnProposal API call. */
-	static readonly VOTE_ON_PROPOSAL: string[] = [
+	static readonly VoteOnProposal: string[] = [
 		"managedblockchain:VoteOnProposal",
 	];
 }
@@ -529,44 +602,44 @@ export class ManagedblockchainOperations {
  */
 export class ManagedblockchainConditions {
 	/** Condition keys applicable to the CreateAccessor action. */
-	static readonly CREATE_ACCESSOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMember action. */
-	static readonly CREATE_MEMBER_CONDITION_KEYS: string[] = [
+	static readonly CreateMemberConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetwork action. */
-	static readonly CREATE_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNode action. */
-	static readonly CREATE_NODE_CONDITION_KEYS: string[] = [
+	static readonly CreateNodeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProposal action. */
-	static readonly CREATE_PROPOSAL_CONDITION_KEYS: string[] = [
+	static readonly CreateProposalConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

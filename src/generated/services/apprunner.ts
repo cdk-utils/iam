@@ -13,187 +13,420 @@ export class ApprunnerActions {
 	static readonly SERVICE_PREFIX = "apprunner";
 
 	/** [Write] apprunner:AssociateCustomDomain */
-	static readonly ASSOCIATE_CUSTOM_DOMAIN = "apprunner:AssociateCustomDomain";
+	static readonly AssociateCustomDomain = "apprunner:AssociateCustomDomain";
 	/** [Write] apprunner:AssociateWebAcl */
-	static readonly ASSOCIATE_WEB_ACL = "apprunner:AssociateWebAcl";
+	static readonly AssociateWebAcl = "apprunner:AssociateWebAcl";
 	/** [Write] apprunner:CreateAutoScalingConfiguration */
-	static readonly CREATE_AUTO_SCALING_CONFIGURATION =
+	static readonly CreateAutoScalingConfiguration =
 		"apprunner:CreateAutoScalingConfiguration";
 	/** [Write] apprunner:CreateConnection */
-	static readonly CREATE_CONNECTION = "apprunner:CreateConnection";
+	static readonly CreateConnection = "apprunner:CreateConnection";
 	/** [Write] apprunner:CreateObservabilityConfiguration */
-	static readonly CREATE_OBSERVABILITY_CONFIGURATION =
+	static readonly CreateObservabilityConfiguration =
 		"apprunner:CreateObservabilityConfiguration";
 	/** [Write] apprunner:CreateService */
-	static readonly CREATE_SERVICE = "apprunner:CreateService";
+	static readonly CreateService = "apprunner:CreateService";
 	/** [Write] apprunner:CreateVpcConnector */
-	static readonly CREATE_VPC_CONNECTOR = "apprunner:CreateVpcConnector";
+	static readonly CreateVpcConnector = "apprunner:CreateVpcConnector";
 	/** [Write] apprunner:CreateVpcIngressConnection */
-	static readonly CREATE_VPC_INGRESS_CONNECTION =
+	static readonly CreateVpcIngressConnection =
 		"apprunner:CreateVpcIngressConnection";
 	/** [Write] apprunner:DeleteAutoScalingConfiguration */
-	static readonly DELETE_AUTO_SCALING_CONFIGURATION =
+	static readonly DeleteAutoScalingConfiguration =
 		"apprunner:DeleteAutoScalingConfiguration";
 	/** [Write] apprunner:DeleteConnection */
-	static readonly DELETE_CONNECTION = "apprunner:DeleteConnection";
+	static readonly DeleteConnection = "apprunner:DeleteConnection";
 	/** [Write] apprunner:DeleteObservabilityConfiguration */
-	static readonly DELETE_OBSERVABILITY_CONFIGURATION =
+	static readonly DeleteObservabilityConfiguration =
 		"apprunner:DeleteObservabilityConfiguration";
 	/** [Write] apprunner:DeleteService */
-	static readonly DELETE_SERVICE = "apprunner:DeleteService";
+	static readonly DeleteService = "apprunner:DeleteService";
 	/** [Write] apprunner:DeleteVpcConnector */
-	static readonly DELETE_VPC_CONNECTOR = "apprunner:DeleteVpcConnector";
+	static readonly DeleteVpcConnector = "apprunner:DeleteVpcConnector";
 	/** [Write] apprunner:DeleteVpcIngressConnection */
-	static readonly DELETE_VPC_INGRESS_CONNECTION =
+	static readonly DeleteVpcIngressConnection =
 		"apprunner:DeleteVpcIngressConnection";
 	/** [Read] apprunner:DescribeAutoScalingConfiguration */
-	static readonly DESCRIBE_AUTO_SCALING_CONFIGURATION =
+	static readonly DescribeAutoScalingConfiguration =
 		"apprunner:DescribeAutoScalingConfiguration";
 	/** [Read] apprunner:DescribeCustomDomains */
-	static readonly DESCRIBE_CUSTOM_DOMAINS = "apprunner:DescribeCustomDomains";
+	static readonly DescribeCustomDomains = "apprunner:DescribeCustomDomains";
 	/** [Read] apprunner:DescribeObservabilityConfiguration */
-	static readonly DESCRIBE_OBSERVABILITY_CONFIGURATION =
+	static readonly DescribeObservabilityConfiguration =
 		"apprunner:DescribeObservabilityConfiguration";
 	/** [Read] apprunner:DescribeOperation */
-	static readonly DESCRIBE_OPERATION = "apprunner:DescribeOperation";
+	static readonly DescribeOperation = "apprunner:DescribeOperation";
 	/** [Read] apprunner:DescribeService */
-	static readonly DESCRIBE_SERVICE = "apprunner:DescribeService";
+	static readonly DescribeService = "apprunner:DescribeService";
 	/** [Read] apprunner:DescribeVpcConnector */
-	static readonly DESCRIBE_VPC_CONNECTOR = "apprunner:DescribeVpcConnector";
+	static readonly DescribeVpcConnector = "apprunner:DescribeVpcConnector";
 	/** [Read] apprunner:DescribeVpcIngressConnection */
-	static readonly DESCRIBE_VPC_INGRESS_CONNECTION =
+	static readonly DescribeVpcIngressConnection =
 		"apprunner:DescribeVpcIngressConnection";
 	/** [Read] apprunner:DescribeWebAclForService */
-	static readonly DESCRIBE_WEB_ACL_FOR_SERVICE =
+	static readonly DescribeWebAclForService =
 		"apprunner:DescribeWebAclForService";
 	/** [Write] apprunner:DisassociateCustomDomain */
-	static readonly DISASSOCIATE_CUSTOM_DOMAIN =
+	static readonly DisassociateCustomDomain =
 		"apprunner:DisassociateCustomDomain";
 	/** [Write] apprunner:DisassociateWebAcl */
-	static readonly DISASSOCIATE_WEB_ACL = "apprunner:DisassociateWebAcl";
+	static readonly DisassociateWebAcl = "apprunner:DisassociateWebAcl";
 	/** [List] apprunner:ListAssociatedServicesForWebAcl */
-	static readonly LIST_ASSOCIATED_SERVICES_FOR_WEB_ACL =
+	static readonly ListAssociatedServicesForWebAcl =
 		"apprunner:ListAssociatedServicesForWebAcl";
 	/** [List] apprunner:ListAutoScalingConfigurations */
-	static readonly LIST_AUTO_SCALING_CONFIGURATIONS =
+	static readonly ListAutoScalingConfigurations =
 		"apprunner:ListAutoScalingConfigurations";
 	/** [List] apprunner:ListConnections */
-	static readonly LIST_CONNECTIONS = "apprunner:ListConnections";
+	static readonly ListConnections = "apprunner:ListConnections";
 	/** [List] apprunner:ListObservabilityConfigurations */
-	static readonly LIST_OBSERVABILITY_CONFIGURATIONS =
+	static readonly ListObservabilityConfigurations =
 		"apprunner:ListObservabilityConfigurations";
 	/** [List] apprunner:ListOperations */
-	static readonly LIST_OPERATIONS = "apprunner:ListOperations";
+	static readonly ListOperations = "apprunner:ListOperations";
 	/** [List] apprunner:ListServices */
-	static readonly LIST_SERVICES = "apprunner:ListServices";
+	static readonly ListServices = "apprunner:ListServices";
 	/** [List] apprunner:ListServicesForAutoScalingConfiguration */
-	static readonly LIST_SERVICES_FOR_AUTO_SCALING_CONFIGURATION =
+	static readonly ListServicesForAutoScalingConfiguration =
 		"apprunner:ListServicesForAutoScalingConfiguration";
 	/** [Read] apprunner:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "apprunner:ListTagsForResource";
+	static readonly ListTagsForResource = "apprunner:ListTagsForResource";
 	/** [List] apprunner:ListVpcConnectors */
-	static readonly LIST_VPC_CONNECTORS = "apprunner:ListVpcConnectors";
+	static readonly ListVpcConnectors = "apprunner:ListVpcConnectors";
 	/** [List] apprunner:ListVpcIngressConnections */
-	static readonly LIST_VPC_INGRESS_CONNECTIONS =
+	static readonly ListVpcIngressConnections =
 		"apprunner:ListVpcIngressConnections";
 	/** [Write] apprunner:PauseService */
-	static readonly PAUSE_SERVICE = "apprunner:PauseService";
+	static readonly PauseService = "apprunner:PauseService";
 	/** [Write] apprunner:ResumeService */
-	static readonly RESUME_SERVICE = "apprunner:ResumeService";
+	static readonly ResumeService = "apprunner:ResumeService";
 	/** [Write] apprunner:StartDeployment */
-	static readonly START_DEPLOYMENT = "apprunner:StartDeployment";
+	static readonly StartDeployment = "apprunner:StartDeployment";
 	/** [Tagging] apprunner:TagResource */
-	static readonly TAG_RESOURCE = "apprunner:TagResource";
+	static readonly TagResource = "apprunner:TagResource";
 	/** [Tagging] apprunner:UntagResource */
-	static readonly UNTAG_RESOURCE = "apprunner:UntagResource";
+	static readonly UntagResource = "apprunner:UntagResource";
 	/** [Write] apprunner:UpdateDefaultAutoScalingConfiguration */
-	static readonly UPDATE_DEFAULT_AUTO_SCALING_CONFIGURATION =
+	static readonly UpdateDefaultAutoScalingConfiguration =
 		"apprunner:UpdateDefaultAutoScalingConfiguration";
 	/** [Write] apprunner:UpdateService */
-	static readonly UPDATE_SERVICE = "apprunner:UpdateService";
+	static readonly UpdateService = "apprunner:UpdateService";
 	/** [Write] apprunner:UpdateVpcIngressConnection */
-	static readonly UPDATE_VPC_INGRESS_CONNECTION =
+	static readonly UpdateVpcIngressConnection =
 		"apprunner:UpdateVpcIngressConnection";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApprunnerActions.DESCRIBE_AUTO_SCALING_CONFIGURATION,
-		ApprunnerActions.DESCRIBE_CUSTOM_DOMAINS,
-		ApprunnerActions.DESCRIBE_OBSERVABILITY_CONFIGURATION,
-		ApprunnerActions.DESCRIBE_OPERATION,
-		ApprunnerActions.DESCRIBE_SERVICE,
-		ApprunnerActions.DESCRIBE_VPC_CONNECTOR,
-		ApprunnerActions.DESCRIBE_VPC_INGRESS_CONNECTION,
-		ApprunnerActions.DESCRIBE_WEB_ACL_FOR_SERVICE,
-		ApprunnerActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ApprunnerActions.DescribeAutoScalingConfiguration,
+		ApprunnerActions.DescribeCustomDomains,
+		ApprunnerActions.DescribeObservabilityConfiguration,
+		ApprunnerActions.DescribeOperation,
+		ApprunnerActions.DescribeService,
+		ApprunnerActions.DescribeVpcConnector,
+		ApprunnerActions.DescribeVpcIngressConnection,
+		ApprunnerActions.DescribeWebAclForService,
+		ApprunnerActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApprunnerActions.ASSOCIATE_CUSTOM_DOMAIN,
-		ApprunnerActions.ASSOCIATE_WEB_ACL,
-		ApprunnerActions.CREATE_AUTO_SCALING_CONFIGURATION,
-		ApprunnerActions.CREATE_CONNECTION,
-		ApprunnerActions.CREATE_OBSERVABILITY_CONFIGURATION,
-		ApprunnerActions.CREATE_SERVICE,
-		ApprunnerActions.CREATE_VPC_CONNECTOR,
-		ApprunnerActions.CREATE_VPC_INGRESS_CONNECTION,
-		ApprunnerActions.DELETE_AUTO_SCALING_CONFIGURATION,
-		ApprunnerActions.DELETE_CONNECTION,
-		ApprunnerActions.DELETE_OBSERVABILITY_CONFIGURATION,
-		ApprunnerActions.DELETE_SERVICE,
-		ApprunnerActions.DELETE_VPC_CONNECTOR,
-		ApprunnerActions.DELETE_VPC_INGRESS_CONNECTION,
-		ApprunnerActions.DISASSOCIATE_CUSTOM_DOMAIN,
-		ApprunnerActions.DISASSOCIATE_WEB_ACL,
-		ApprunnerActions.PAUSE_SERVICE,
-		ApprunnerActions.RESUME_SERVICE,
-		ApprunnerActions.START_DEPLOYMENT,
-		ApprunnerActions.UPDATE_DEFAULT_AUTO_SCALING_CONFIGURATION,
-		ApprunnerActions.UPDATE_SERVICE,
-		ApprunnerActions.UPDATE_VPC_INGRESS_CONNECTION,
+	static readonly AllWriteActions: string[] = [
+		ApprunnerActions.AssociateCustomDomain,
+		ApprunnerActions.AssociateWebAcl,
+		ApprunnerActions.CreateAutoScalingConfiguration,
+		ApprunnerActions.CreateConnection,
+		ApprunnerActions.CreateObservabilityConfiguration,
+		ApprunnerActions.CreateService,
+		ApprunnerActions.CreateVpcConnector,
+		ApprunnerActions.CreateVpcIngressConnection,
+		ApprunnerActions.DeleteAutoScalingConfiguration,
+		ApprunnerActions.DeleteConnection,
+		ApprunnerActions.DeleteObservabilityConfiguration,
+		ApprunnerActions.DeleteService,
+		ApprunnerActions.DeleteVpcConnector,
+		ApprunnerActions.DeleteVpcIngressConnection,
+		ApprunnerActions.DisassociateCustomDomain,
+		ApprunnerActions.DisassociateWebAcl,
+		ApprunnerActions.PauseService,
+		ApprunnerActions.ResumeService,
+		ApprunnerActions.StartDeployment,
+		ApprunnerActions.UpdateDefaultAutoScalingConfiguration,
+		ApprunnerActions.UpdateService,
+		ApprunnerActions.UpdateVpcIngressConnection,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ApprunnerActions.LIST_ASSOCIATED_SERVICES_FOR_WEB_ACL,
-		ApprunnerActions.LIST_AUTO_SCALING_CONFIGURATIONS,
-		ApprunnerActions.LIST_CONNECTIONS,
-		ApprunnerActions.LIST_OBSERVABILITY_CONFIGURATIONS,
-		ApprunnerActions.LIST_OPERATIONS,
-		ApprunnerActions.LIST_SERVICES,
-		ApprunnerActions.LIST_SERVICES_FOR_AUTO_SCALING_CONFIGURATION,
-		ApprunnerActions.LIST_VPC_CONNECTORS,
-		ApprunnerActions.LIST_VPC_INGRESS_CONNECTIONS,
+	static readonly AllListActions: string[] = [
+		ApprunnerActions.ListAssociatedServicesForWebAcl,
+		ApprunnerActions.ListAutoScalingConfigurations,
+		ApprunnerActions.ListConnections,
+		ApprunnerActions.ListObservabilityConfigurations,
+		ApprunnerActions.ListOperations,
+		ApprunnerActions.ListServices,
+		ApprunnerActions.ListServicesForAutoScalingConfiguration,
+		ApprunnerActions.ListVpcConnectors,
+		ApprunnerActions.ListVpcIngressConnections,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ApprunnerActions.TAG_RESOURCE,
-		ApprunnerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ApprunnerActions.TagResource,
+		ApprunnerActions.UntagResource,
 	];
 }
 
-const AutoscalingconfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):autoscalingconfiguration/(?<autoscalingConfigurationName>[^:/?]+)/(?<autoscalingConfigurationVersion>[^:/?]+)/(?<autoscalingConfigurationId>[^:/?]+)$",
-);
-const ConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):connection/(?<connectionName>[^:/?]+)/(?<connectionId>[^:/?]+)$",
-);
-const ObservabilityconfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):observabilityconfiguration/(?<observabilityConfigurationName>[^:/?]+)/(?<observabilityConfigurationVersion>[^:/?]+)/(?<observabilityConfigurationId>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceName>[^:/?]+)/(?<serviceId>[^:/?]+)$",
-);
-const VpcconnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):vpcconnector/(?<vpcConnectorName>[^:/?]+)/(?<vpcConnectorVersion>[^:/?]+)/(?<vpcConnectorId>[^:/?]+)$",
-);
-const VpcingressconnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):vpcingressconnection/(?<vpcIngressConnectionName>[^:/?]+)/(?<vpcIngressConnectionId>[^:/?]+)$",
-);
-const WebaclArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wafv2:(?<region>[^:]*):(?<account>[^:]*):(?<scope>[^:/?]+)/webacl/(?<name>[^:/?]+)/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a autoscalingconfiguration ARN.
+ */
+export interface ApprunnerAutoscalingconfigurationArnProps {
+	/** The AutoscalingConfigurationName component of the ARN. */
+	readonly autoscalingConfigurationName: string;
+	/** The AutoscalingConfigurationVersion component of the ARN. */
+	readonly autoscalingConfigurationVersion: string;
+	/** The AutoscalingConfigurationId component of the ARN. */
+	readonly autoscalingConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a autoscalingconfiguration ARN.
+ */
+export interface ApprunnerAutoscalingconfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AutoscalingConfigurationName component. */
+	readonly autoscalingConfigurationName: string;
+	/** The AutoscalingConfigurationVersion component. */
+	readonly autoscalingConfigurationVersion: string;
+	/** The AutoscalingConfigurationId component. */
+	readonly autoscalingConfigurationId: string;
+}
+
+/**
+ * Properties for building a connection ARN.
+ */
+export interface ApprunnerConnectionArnProps {
+	/** The ConnectionName component of the ARN. */
+	readonly connectionName: string;
+	/** The ConnectionId component of the ARN. */
+	readonly connectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection ARN.
+ */
+export interface ApprunnerConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionName component. */
+	readonly connectionName: string;
+	/** The ConnectionId component. */
+	readonly connectionId: string;
+}
+
+/**
+ * Properties for building a observabilityconfiguration ARN.
+ */
+export interface ApprunnerObservabilityconfigurationArnProps {
+	/** The ObservabilityConfigurationName component of the ARN. */
+	readonly observabilityConfigurationName: string;
+	/** The ObservabilityConfigurationVersion component of the ARN. */
+	readonly observabilityConfigurationVersion: string;
+	/** The ObservabilityConfigurationId component of the ARN. */
+	readonly observabilityConfigurationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a observabilityconfiguration ARN.
+ */
+export interface ApprunnerObservabilityconfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ObservabilityConfigurationName component. */
+	readonly observabilityConfigurationName: string;
+	/** The ObservabilityConfigurationVersion component. */
+	readonly observabilityConfigurationVersion: string;
+	/** The ObservabilityConfigurationId component. */
+	readonly observabilityConfigurationId: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface ApprunnerServiceArnProps {
+	/** The ServiceName component of the ARN. */
+	readonly serviceName: string;
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface ApprunnerServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceName component. */
+	readonly serviceName: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+}
+
+/**
+ * Properties for building a vpcconnector ARN.
+ */
+export interface ApprunnerVpcconnectorArnProps {
+	/** The VpcConnectorName component of the ARN. */
+	readonly vpcConnectorName: string;
+	/** The VpcConnectorVersion component of the ARN. */
+	readonly vpcConnectorVersion: string;
+	/** The VpcConnectorId component of the ARN. */
+	readonly vpcConnectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpcconnector ARN.
+ */
+export interface ApprunnerVpcconnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcConnectorName component. */
+	readonly vpcConnectorName: string;
+	/** The VpcConnectorVersion component. */
+	readonly vpcConnectorVersion: string;
+	/** The VpcConnectorId component. */
+	readonly vpcConnectorId: string;
+}
+
+/**
+ * Properties for building a vpcingressconnection ARN.
+ */
+export interface ApprunnerVpcingressconnectionArnProps {
+	/** The VpcIngressConnectionName component of the ARN. */
+	readonly vpcIngressConnectionName: string;
+	/** The VpcIngressConnectionId component of the ARN. */
+	readonly vpcIngressConnectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a vpcingressconnection ARN.
+ */
+export interface ApprunnerVpcingressconnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VpcIngressConnectionName component. */
+	readonly vpcIngressConnectionName: string;
+	/** The VpcIngressConnectionId component. */
+	readonly vpcIngressConnectionId: string;
+}
+
+/**
+ * Properties for building a webacl ARN.
+ */
+export interface ApprunnerWebaclArnProps {
+	/** The Scope component of the ARN. */
+	readonly scope: string;
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webacl ARN.
+ */
+export interface ApprunnerWebaclArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Scope component. */
+	readonly scope: string;
+	/** The Name component. */
+	readonly name: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const AutoscalingconfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):autoscalingconfiguration\/(?<autoscalingConfigurationName>[^:/?]+)\/(?<autoscalingConfigurationVersion>[^:/?]+)\/(?<autoscalingConfigurationId>[^:/?]+)$/;
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):connection\/(?<connectionName>[^:/?]+)\/(?<connectionId>[^:/?]+)$/;
+const ObservabilityconfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):observabilityconfiguration\/(?<observabilityConfigurationName>[^:/?]+)\/(?<observabilityConfigurationVersion>[^:/?]+)\/(?<observabilityConfigurationId>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceName>[^:/?]+)\/(?<serviceId>[^:/?]+)$/;
+const VpcconnectorArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):vpcconnector\/(?<vpcConnectorName>[^:/?]+)\/(?<vpcConnectorVersion>[^:/?]+)\/(?<vpcConnectorId>[^:/?]+)$/;
+const VpcingressconnectionArnRegex =
+	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):vpcingressconnection\/(?<vpcIngressConnectionName>[^:/?]+)\/(?<vpcIngressConnectionId>[^:/?]+)$/;
+const WebaclArnRegex =
+	/^arn:(?<partition>[^:]+):wafv2:(?<region>[^:]*):(?<account>[^:]*):(?<scope>[^:/?]+)\/webacl\/(?<name>[^:/?]+)\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for apprunner resources.
@@ -202,20 +435,9 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the autoscalingconfiguration resource.
 	 */
-	static autoscalingconfiguration(props: {
-		/** The AutoscalingConfigurationName component of the ARN. */
-		readonly autoscalingConfigurationName: string;
-		/** The AutoscalingConfigurationVersion component of the ARN. */
-		readonly autoscalingConfigurationVersion: string;
-		/** The AutoscalingConfigurationId component of the ARN. */
-		readonly autoscalingConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static autoscalingconfiguration(
+		props: ApprunnerAutoscalingconfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:autoscalingconfiguration/${props.autoscalingConfigurationName}/${props.autoscalingConfigurationVersion}/${props.autoscalingConfigurationId}`;
 	}
 
@@ -230,14 +452,9 @@ export class ApprunnerResources {
 	 * Parses a autoscalingconfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutoscalingconfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		autoscalingConfigurationName: string;
-		autoscalingConfigurationVersion: string;
-		autoscalingConfigurationId: string;
-	} {
+	static parseAutoscalingconfigurationArn(
+		arn: string,
+	): ApprunnerAutoscalingconfigurationArnComponents {
 		const match = AutoscalingconfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid autoscalingconfiguration ARN: ${arn}`);
@@ -256,18 +473,7 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the connection resource.
 	 */
-	static connection(props: {
-		/** The ConnectionName component of the ARN. */
-		readonly connectionName: string;
-		/** The ConnectionId component of the ARN. */
-		readonly connectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connection(props: ApprunnerConnectionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:connection/${props.connectionName}/${props.connectionId}`;
 	}
 
@@ -282,13 +488,7 @@ export class ApprunnerResources {
 	 * Parses a connection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionName: string;
-		connectionId: string;
-	} {
+	static parseConnectionArn(arn: string): ApprunnerConnectionArnComponents {
 		const match = ConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connection ARN: ${arn}`);
@@ -305,20 +505,9 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the observabilityconfiguration resource.
 	 */
-	static observabilityconfiguration(props: {
-		/** The ObservabilityConfigurationName component of the ARN. */
-		readonly observabilityConfigurationName: string;
-		/** The ObservabilityConfigurationVersion component of the ARN. */
-		readonly observabilityConfigurationVersion: string;
-		/** The ObservabilityConfigurationId component of the ARN. */
-		readonly observabilityConfigurationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static observabilityconfiguration(
+		props: ApprunnerObservabilityconfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:observabilityconfiguration/${props.observabilityConfigurationName}/${props.observabilityConfigurationVersion}/${props.observabilityConfigurationId}`;
 	}
 
@@ -333,14 +522,9 @@ export class ApprunnerResources {
 	 * Parses a observabilityconfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseObservabilityconfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		observabilityConfigurationName: string;
-		observabilityConfigurationVersion: string;
-		observabilityConfigurationId: string;
-	} {
+	static parseObservabilityconfigurationArn(
+		arn: string,
+	): ApprunnerObservabilityconfigurationArnComponents {
 		const match = ObservabilityconfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid observabilityconfiguration ARN: ${arn}`);
@@ -360,18 +544,7 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The ServiceName component of the ARN. */
-		readonly serviceName: string;
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: ApprunnerServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceName}/${props.serviceId}`;
 	}
 
@@ -386,13 +559,7 @@ export class ApprunnerResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceName: string;
-		serviceId: string;
-	} {
+	static parseServiceArn(arn: string): ApprunnerServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -409,20 +576,7 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the vpcconnector resource.
 	 */
-	static vpcconnector(props: {
-		/** The VpcConnectorName component of the ARN. */
-		readonly vpcConnectorName: string;
-		/** The VpcConnectorVersion component of the ARN. */
-		readonly vpcConnectorVersion: string;
-		/** The VpcConnectorId component of the ARN. */
-		readonly vpcConnectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcconnector(props: ApprunnerVpcconnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:vpcconnector/${props.vpcConnectorName}/${props.vpcConnectorVersion}/${props.vpcConnectorId}`;
 	}
 
@@ -437,14 +591,7 @@ export class ApprunnerResources {
 	 * Parses a vpcconnector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVpcconnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcConnectorName: string;
-		vpcConnectorVersion: string;
-		vpcConnectorId: string;
-	} {
+	static parseVpcconnectorArn(arn: string): ApprunnerVpcconnectorArnComponents {
 		const match = VpcconnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpcconnector ARN: ${arn}`);
@@ -462,18 +609,9 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the vpcingressconnection resource.
 	 */
-	static vpcingressconnection(props: {
-		/** The VpcIngressConnectionName component of the ARN. */
-		readonly vpcIngressConnectionName: string;
-		/** The VpcIngressConnectionId component of the ARN. */
-		readonly vpcIngressConnectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vpcingressconnection(
+		props: ApprunnerVpcingressconnectionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:apprunner:${props.region ?? "*"}:${props.account ?? "*"}:vpcingressconnection/${props.vpcIngressConnectionName}/${props.vpcIngressConnectionId}`;
 	}
 
@@ -488,13 +626,9 @@ export class ApprunnerResources {
 	 * Parses a vpcingressconnection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVpcingressconnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vpcIngressConnectionName: string;
-		vpcIngressConnectionId: string;
-	} {
+	static parseVpcingressconnectionArn(
+		arn: string,
+	): ApprunnerVpcingressconnectionArnComponents {
 		const match = VpcingressconnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid vpcingressconnection ARN: ${arn}`);
@@ -511,20 +645,7 @@ export class ApprunnerResources {
 	/**
 	 * Builds an ARN for the webacl resource.
 	 */
-	static webacl(props: {
-		/** The Scope component of the ARN. */
-		readonly scope: string;
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static webacl(props: ApprunnerWebaclArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wafv2:${props.region ?? "*"}:${props.account ?? "*"}:${props.scope}/webacl/${props.name}/${props.id}`;
 	}
 
@@ -539,14 +660,7 @@ export class ApprunnerResources {
 	 * Parses a webacl ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWebaclArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		scope: string;
-		name: string;
-		id: string;
-	} {
+	static parseWebaclArn(arn: string): ApprunnerWebaclArnComponents {
 		const match = WebaclArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid webacl ARN: ${arn}`);
@@ -567,140 +681,138 @@ export class ApprunnerResources {
  */
 export class ApprunnerOperations {
 	/** IAM actions required for the AssociateCustomDomain API call. */
-	static readonly ASSOCIATE_CUSTOM_DOMAIN: string[] = [
+	static readonly AssociateCustomDomain: string[] = [
 		"apprunner:AssociateCustomDomain",
 	];
 	/** IAM actions required for the CreateAutoScalingConfiguration API call. */
-	static readonly CREATE_AUTO_SCALING_CONFIGURATION: string[] = [
+	static readonly CreateAutoScalingConfiguration: string[] = [
 		"apprunner:CreateAutoScalingConfiguration",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the CreateConnection API call. */
-	static readonly CREATE_CONNECTION: string[] = [
+	static readonly CreateConnection: string[] = [
 		"apprunner:CreateConnection",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the CreateObservabilityConfiguration API call. */
-	static readonly CREATE_OBSERVABILITY_CONFIGURATION: string[] = [
+	static readonly CreateObservabilityConfiguration: string[] = [
 		"apprunner:CreateObservabilityConfiguration",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the CreateService API call. */
-	static readonly CREATE_SERVICE: string[] = [
+	static readonly CreateService: string[] = [
 		"apprunner:CreateService",
 		"iam:PassRole",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the CreateVpcConnector API call. */
-	static readonly CREATE_VPC_CONNECTOR: string[] = [
+	static readonly CreateVpcConnector: string[] = [
 		"apprunner:CreateVpcConnector",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the CreateVpcIngressConnection API call. */
-	static readonly CREATE_VPC_INGRESS_CONNECTION: string[] = [
+	static readonly CreateVpcIngressConnection: string[] = [
 		"apprunner:CreateVpcIngressConnection",
 		"apprunner:TagResource",
 	];
 	/** IAM actions required for the DeleteAutoScalingConfiguration API call. */
-	static readonly DELETE_AUTO_SCALING_CONFIGURATION: string[] = [
+	static readonly DeleteAutoScalingConfiguration: string[] = [
 		"apprunner:DeleteAutoScalingConfiguration",
 	];
 	/** IAM actions required for the DeleteConnection API call. */
-	static readonly DELETE_CONNECTION: string[] = ["apprunner:DeleteConnection"];
+	static readonly DeleteConnection: string[] = ["apprunner:DeleteConnection"];
 	/** IAM actions required for the DeleteObservabilityConfiguration API call. */
-	static readonly DELETE_OBSERVABILITY_CONFIGURATION: string[] = [
+	static readonly DeleteObservabilityConfiguration: string[] = [
 		"apprunner:DeleteObservabilityConfiguration",
 	];
 	/** IAM actions required for the DeleteService API call. */
-	static readonly DELETE_SERVICE: string[] = [
+	static readonly DeleteService: string[] = [
 		"apprunner:DeleteService",
 		"apprunner:DisassociateCustomDomain",
 	];
 	/** IAM actions required for the DeleteVpcConnector API call. */
-	static readonly DELETE_VPC_CONNECTOR: string[] = [
+	static readonly DeleteVpcConnector: string[] = [
 		"apprunner:DeleteVpcConnector",
 	];
 	/** IAM actions required for the DeleteVpcIngressConnection API call. */
-	static readonly DELETE_VPC_INGRESS_CONNECTION: string[] = [
+	static readonly DeleteVpcIngressConnection: string[] = [
 		"apprunner:DeleteVpcIngressConnection",
 	];
 	/** IAM actions required for the DescribeAutoScalingConfiguration API call. */
-	static readonly DESCRIBE_AUTO_SCALING_CONFIGURATION: string[] = [
+	static readonly DescribeAutoScalingConfiguration: string[] = [
 		"apprunner:DescribeAutoScalingConfiguration",
 	];
 	/** IAM actions required for the DescribeCustomDomains API call. */
-	static readonly DESCRIBE_CUSTOM_DOMAINS: string[] = [
+	static readonly DescribeCustomDomains: string[] = [
 		"apprunner:DescribeCustomDomains",
 	];
 	/** IAM actions required for the DescribeObservabilityConfiguration API call. */
-	static readonly DESCRIBE_OBSERVABILITY_CONFIGURATION: string[] = [
+	static readonly DescribeObservabilityConfiguration: string[] = [
 		"apprunner:DescribeObservabilityConfiguration",
 	];
 	/** IAM actions required for the DescribeService API call. */
-	static readonly DESCRIBE_SERVICE: string[] = ["apprunner:DescribeService"];
+	static readonly DescribeService: string[] = ["apprunner:DescribeService"];
 	/** IAM actions required for the DescribeVpcConnector API call. */
-	static readonly DESCRIBE_VPC_CONNECTOR: string[] = [
+	static readonly DescribeVpcConnector: string[] = [
 		"apprunner:DescribeVpcConnector",
 	];
 	/** IAM actions required for the DescribeVpcIngressConnection API call. */
-	static readonly DESCRIBE_VPC_INGRESS_CONNECTION: string[] = [
+	static readonly DescribeVpcIngressConnection: string[] = [
 		"apprunner:DescribeVpcIngressConnection",
 	];
 	/** IAM actions required for the DisassociateCustomDomain API call. */
-	static readonly DISASSOCIATE_CUSTOM_DOMAIN: string[] = [
+	static readonly DisassociateCustomDomain: string[] = [
 		"apprunner:DisassociateCustomDomain",
 	];
 	/** IAM actions required for the ListAutoScalingConfigurations API call. */
-	static readonly LIST_AUTO_SCALING_CONFIGURATIONS: string[] = [
+	static readonly ListAutoScalingConfigurations: string[] = [
 		"apprunner:ListAutoScalingConfigurations",
 	];
 	/** IAM actions required for the ListConnections API call. */
-	static readonly LIST_CONNECTIONS: string[] = ["apprunner:ListConnections"];
+	static readonly ListConnections: string[] = ["apprunner:ListConnections"];
 	/** IAM actions required for the ListObservabilityConfigurations API call. */
-	static readonly LIST_OBSERVABILITY_CONFIGURATIONS: string[] = [
+	static readonly ListObservabilityConfigurations: string[] = [
 		"apprunner:ListObservabilityConfigurations",
 	];
 	/** IAM actions required for the ListOperations API call. */
-	static readonly LIST_OPERATIONS: string[] = ["apprunner:ListOperations"];
+	static readonly ListOperations: string[] = ["apprunner:ListOperations"];
 	/** IAM actions required for the ListServices API call. */
-	static readonly LIST_SERVICES: string[] = ["apprunner:ListServices"];
+	static readonly ListServices: string[] = ["apprunner:ListServices"];
 	/** IAM actions required for the ListServicesForAutoScalingConfiguration API call. */
-	static readonly LIST_SERVICES_FOR_AUTO_SCALING_CONFIGURATION: string[] = [
+	static readonly ListServicesForAutoScalingConfiguration: string[] = [
 		"apprunner:ListServicesForAutoScalingConfiguration",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"apprunner:ListTagsForResource",
 	];
 	/** IAM actions required for the ListVpcConnectors API call. */
-	static readonly LIST_VPC_CONNECTORS: string[] = [
-		"apprunner:ListVpcConnectors",
-	];
+	static readonly ListVpcConnectors: string[] = ["apprunner:ListVpcConnectors"];
 	/** IAM actions required for the ListVpcIngressConnections API call. */
-	static readonly LIST_VPC_INGRESS_CONNECTIONS: string[] = [
+	static readonly ListVpcIngressConnections: string[] = [
 		"apprunner:ListVpcIngressConnections",
 	];
 	/** IAM actions required for the PauseService API call. */
-	static readonly PAUSE_SERVICE: string[] = ["apprunner:PauseService"];
+	static readonly PauseService: string[] = ["apprunner:PauseService"];
 	/** IAM actions required for the ResumeService API call. */
-	static readonly RESUME_SERVICE: string[] = ["apprunner:ResumeService"];
+	static readonly ResumeService: string[] = ["apprunner:ResumeService"];
 	/** IAM actions required for the StartDeployment API call. */
-	static readonly START_DEPLOYMENT: string[] = ["apprunner:StartDeployment"];
+	static readonly StartDeployment: string[] = ["apprunner:StartDeployment"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["apprunner:TagResource"];
+	static readonly TagResource: string[] = ["apprunner:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["apprunner:UntagResource"];
+	static readonly UntagResource: string[] = ["apprunner:UntagResource"];
 	/** IAM actions required for the UpdateDefaultAutoScalingConfiguration API call. */
-	static readonly UPDATE_DEFAULT_AUTO_SCALING_CONFIGURATION: string[] = [
+	static readonly UpdateDefaultAutoScalingConfiguration: string[] = [
 		"apprunner:UpdateDefaultAutoScalingConfiguration",
 	];
 	/** IAM actions required for the UpdateService API call. */
-	static readonly UPDATE_SERVICE: string[] = [
+	static readonly UpdateService: string[] = [
 		"iam:PassRole",
 		"apprunner:UpdateService",
 	];
 	/** IAM actions required for the UpdateVpcIngressConnection API call. */
-	static readonly UPDATE_VPC_INGRESS_CONNECTION: string[] = [
+	static readonly UpdateVpcIngressConnection: string[] = [
 		"apprunner:UpdateVpcIngressConnection",
 	];
 }
@@ -710,20 +822,22 @@ export class ApprunnerOperations {
  */
 export class ApprunnerConditions {
 	/** Condition keys applicable to the CreateAutoScalingConfiguration action. */
-	static readonly CREATE_AUTO_SCALING_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAutoScalingConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnection action. */
-	static readonly CREATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateObservabilityConfiguration action. */
-	static readonly CREATE_OBSERVABILITY_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateObservabilityConfigurationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateService action. */
-	static readonly CREATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceConditionKeys: string[] = [
 		"apprunner:AutoScalingConfigurationArn",
 		"apprunner:ConnectionArn",
 		"apprunner:ObservabilityConfigurationArn",
@@ -732,12 +846,12 @@ export class ApprunnerConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVpcConnector action. */
-	static readonly CREATE_VPC_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateVpcIngressConnection action. */
-	static readonly CREATE_VPC_INGRESS_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreateVpcIngressConnectionConditionKeys: string[] = [
 		"apprunner:ServiceArn",
 		"apprunner:VpcEndpointId",
 		"apprunner:VpcId",
@@ -745,21 +859,21 @@ export class ApprunnerConditions {
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateService action. */
-	static readonly UPDATE_SERVICE_CONDITION_KEYS: string[] = [
+	static readonly UpdateServiceConditionKeys: string[] = [
 		"apprunner:AutoScalingConfigurationArn",
 		"apprunner:ConnectionArn",
 		"apprunner:ObservabilityConfigurationArn",
 		"apprunner:VpcConnectorArn",
 	];
 	/** Condition keys applicable to the UpdateVpcIngressConnection action. */
-	static readonly UPDATE_VPC_INGRESS_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateVpcIngressConnectionConditionKeys: string[] = [
 		"apprunner:VpcEndpointId",
 		"apprunner:VpcId",
 	];
@@ -781,11 +895,11 @@ export class ApprunnerConditions {
 	/** Condition key: apprunner:VpcId (String) */
 	static readonly VPC_ID = "apprunner:VpcId";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `apprunner:AutoScalingConfigurationArn`.

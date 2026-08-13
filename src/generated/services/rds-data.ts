@@ -13,40 +13,67 @@ export class RDSDataActions {
 	static readonly SERVICE_PREFIX = "rds-data";
 
 	/** [Write] rds-data:BatchExecuteStatement */
-	static readonly BATCH_EXECUTE_STATEMENT = "rds-data:BatchExecuteStatement";
+	static readonly BatchExecuteStatement = "rds-data:BatchExecuteStatement";
 	/** [Write] rds-data:BeginTransaction */
-	static readonly BEGIN_TRANSACTION = "rds-data:BeginTransaction";
+	static readonly BeginTransaction = "rds-data:BeginTransaction";
 	/** [Write] rds-data:CommitTransaction */
-	static readonly COMMIT_TRANSACTION = "rds-data:CommitTransaction";
+	static readonly CommitTransaction = "rds-data:CommitTransaction";
 	/** [Write] rds-data:ExecuteSql */
-	static readonly EXECUTE_SQL = "rds-data:ExecuteSql";
+	static readonly ExecuteSql = "rds-data:ExecuteSql";
 	/** [Write] rds-data:ExecuteStatement */
-	static readonly EXECUTE_STATEMENT = "rds-data:ExecuteStatement";
+	static readonly ExecuteStatement = "rds-data:ExecuteStatement";
 	/** [Write] rds-data:RollbackTransaction */
-	static readonly ROLLBACK_TRANSACTION = "rds-data:RollbackTransaction";
+	static readonly RollbackTransaction = "rds-data:RollbackTransaction";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RDSDataActions.BATCH_EXECUTE_STATEMENT,
-		RDSDataActions.BEGIN_TRANSACTION,
-		RDSDataActions.COMMIT_TRANSACTION,
-		RDSDataActions.EXECUTE_SQL,
-		RDSDataActions.EXECUTE_STATEMENT,
-		RDSDataActions.ROLLBACK_TRANSACTION,
+	static readonly AllWriteActions: string[] = [
+		RDSDataActions.BatchExecuteStatement,
+		RDSDataActions.BeginTransaction,
+		RDSDataActions.CommitTransaction,
+		RDSDataActions.ExecuteSql,
+		RDSDataActions.ExecuteStatement,
+		RDSDataActions.RollbackTransaction,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<dbClusterInstanceName>[^:/?]+)$",
-);
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface RDSDataClusterArnProps {
+	/** The DbClusterInstanceName component of the ARN. */
+	readonly dbClusterInstanceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface RDSDataClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DbClusterInstanceName component. */
+	readonly dbClusterInstanceName: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):rds:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<dbClusterInstanceName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rds-data resources.
@@ -55,16 +82,7 @@ export class RDSDataResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The DbClusterInstanceName component of the ARN. */
-		readonly dbClusterInstanceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: RDSDataClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rds:${props.region ?? "*"}:${props.account ?? "*"}:cluster:${props.dbClusterInstanceName}`;
 	}
 
@@ -79,12 +97,7 @@ export class RDSDataResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dbClusterInstanceName: string;
-	} {
+	static parseClusterArn(arn: string): RDSDataClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -103,19 +116,19 @@ export class RDSDataResources {
  */
 export class RDSDataOperations {
 	/** IAM actions required for the BatchExecuteStatement API call. */
-	static readonly BATCH_EXECUTE_STATEMENT: string[] = [
+	static readonly BatchExecuteStatement: string[] = [
 		"rds-data:BatchExecuteStatement",
 	];
 	/** IAM actions required for the BeginTransaction API call. */
-	static readonly BEGIN_TRANSACTION: string[] = ["rds-data:BeginTransaction"];
+	static readonly BeginTransaction: string[] = ["rds-data:BeginTransaction"];
 	/** IAM actions required for the CommitTransaction API call. */
-	static readonly COMMIT_TRANSACTION: string[] = ["rds-data:CommitTransaction"];
+	static readonly CommitTransaction: string[] = ["rds-data:CommitTransaction"];
 	/** IAM actions required for the ExecuteSql API call. */
-	static readonly EXECUTE_SQL: string[] = ["rds-data:ExecuteSql"];
+	static readonly ExecuteSql: string[] = ["rds-data:ExecuteSql"];
 	/** IAM actions required for the ExecuteStatement API call. */
-	static readonly EXECUTE_STATEMENT: string[] = ["rds-data:ExecuteStatement"];
+	static readonly ExecuteStatement: string[] = ["rds-data:ExecuteStatement"];
 	/** IAM actions required for the RollbackTransaction API call. */
-	static readonly ROLLBACK_TRANSACTION: string[] = [
+	static readonly RollbackTransaction: string[] = [
 		"rds-data:RollbackTransaction",
 	];
 }
@@ -125,40 +138,40 @@ export class RDSDataOperations {
  */
 export class RDSDataConditions {
 	/** Condition keys applicable to the BatchExecuteStatement action. */
-	static readonly BATCH_EXECUTE_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly BatchExecuteStatementConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the BeginTransaction action. */
-	static readonly BEGIN_TRANSACTION_CONDITION_KEYS: string[] = [
+	static readonly BeginTransactionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CommitTransaction action. */
-	static readonly COMMIT_TRANSACTION_CONDITION_KEYS: string[] = [
+	static readonly CommitTransactionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ExecuteSql action. */
-	static readonly EXECUTE_SQL_CONDITION_KEYS: string[] = [
+	static readonly ExecuteSqlConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ExecuteStatement action. */
-	static readonly EXECUTE_STATEMENT_CONDITION_KEYS: string[] = [
+	static readonly ExecuteStatementConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RollbackTransaction action. */
-	static readonly ROLLBACK_TRANSACTION_CONDITION_KEYS: string[] = [
+	static readonly RollbackTransactionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.

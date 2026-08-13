@@ -13,240 +13,339 @@ export class GlobalAcceleratorActions {
 	static readonly SERVICE_PREFIX = "globalaccelerator";
 
 	/** [Write] globalaccelerator:AddCustomRoutingEndpoints */
-	static readonly ADD_CUSTOM_ROUTING_ENDPOINTS =
+	static readonly AddCustomRoutingEndpoints =
 		"globalaccelerator:AddCustomRoutingEndpoints";
 	/** [Write] globalaccelerator:AddEndpoints */
-	static readonly ADD_ENDPOINTS = "globalaccelerator:AddEndpoints";
+	static readonly AddEndpoints = "globalaccelerator:AddEndpoints";
 	/** [Write] globalaccelerator:AdvertiseByoipCidr */
-	static readonly ADVERTISE_BYOIP_CIDR = "globalaccelerator:AdvertiseByoipCidr";
+	static readonly AdvertiseByoipCidr = "globalaccelerator:AdvertiseByoipCidr";
 	/** [Write] globalaccelerator:AllowCustomRoutingTraffic */
-	static readonly ALLOW_CUSTOM_ROUTING_TRAFFIC =
+	static readonly AllowCustomRoutingTraffic =
 		"globalaccelerator:AllowCustomRoutingTraffic";
 	/** [Write] globalaccelerator:CreateAccelerator */
-	static readonly CREATE_ACCELERATOR = "globalaccelerator:CreateAccelerator";
+	static readonly CreateAccelerator = "globalaccelerator:CreateAccelerator";
 	/** [Write] globalaccelerator:CreateCrossAccountAttachment */
-	static readonly CREATE_CROSS_ACCOUNT_ATTACHMENT =
+	static readonly CreateCrossAccountAttachment =
 		"globalaccelerator:CreateCrossAccountAttachment";
 	/** [Write] globalaccelerator:CreateCustomRoutingAccelerator */
-	static readonly CREATE_CUSTOM_ROUTING_ACCELERATOR =
+	static readonly CreateCustomRoutingAccelerator =
 		"globalaccelerator:CreateCustomRoutingAccelerator";
 	/** [Write] globalaccelerator:CreateCustomRoutingEndpointGroup */
-	static readonly CREATE_CUSTOM_ROUTING_ENDPOINT_GROUP =
+	static readonly CreateCustomRoutingEndpointGroup =
 		"globalaccelerator:CreateCustomRoutingEndpointGroup";
 	/** [Write] globalaccelerator:CreateCustomRoutingListener */
-	static readonly CREATE_CUSTOM_ROUTING_LISTENER =
+	static readonly CreateCustomRoutingListener =
 		"globalaccelerator:CreateCustomRoutingListener";
 	/** [Write] globalaccelerator:CreateEndpointGroup */
-	static readonly CREATE_ENDPOINT_GROUP =
-		"globalaccelerator:CreateEndpointGroup";
+	static readonly CreateEndpointGroup = "globalaccelerator:CreateEndpointGroup";
 	/** [Write] globalaccelerator:CreateListener */
-	static readonly CREATE_LISTENER = "globalaccelerator:CreateListener";
+	static readonly CreateListener = "globalaccelerator:CreateListener";
 	/** [Write] globalaccelerator:DeleteAccelerator */
-	static readonly DELETE_ACCELERATOR = "globalaccelerator:DeleteAccelerator";
+	static readonly DeleteAccelerator = "globalaccelerator:DeleteAccelerator";
 	/** [Write] globalaccelerator:DeleteCrossAccountAttachment */
-	static readonly DELETE_CROSS_ACCOUNT_ATTACHMENT =
+	static readonly DeleteCrossAccountAttachment =
 		"globalaccelerator:DeleteCrossAccountAttachment";
 	/** [Write] globalaccelerator:DeleteCustomRoutingAccelerator */
-	static readonly DELETE_CUSTOM_ROUTING_ACCELERATOR =
+	static readonly DeleteCustomRoutingAccelerator =
 		"globalaccelerator:DeleteCustomRoutingAccelerator";
 	/** [Write] globalaccelerator:DeleteCustomRoutingEndpointGroup */
-	static readonly DELETE_CUSTOM_ROUTING_ENDPOINT_GROUP =
+	static readonly DeleteCustomRoutingEndpointGroup =
 		"globalaccelerator:DeleteCustomRoutingEndpointGroup";
 	/** [Write] globalaccelerator:DeleteCustomRoutingListener */
-	static readonly DELETE_CUSTOM_ROUTING_LISTENER =
+	static readonly DeleteCustomRoutingListener =
 		"globalaccelerator:DeleteCustomRoutingListener";
 	/** [Write] globalaccelerator:DeleteEndpointGroup */
-	static readonly DELETE_ENDPOINT_GROUP =
-		"globalaccelerator:DeleteEndpointGroup";
+	static readonly DeleteEndpointGroup = "globalaccelerator:DeleteEndpointGroup";
 	/** [Write] globalaccelerator:DeleteListener */
-	static readonly DELETE_LISTENER = "globalaccelerator:DeleteListener";
+	static readonly DeleteListener = "globalaccelerator:DeleteListener";
 	/** [Write] globalaccelerator:DenyCustomRoutingTraffic */
-	static readonly DENY_CUSTOM_ROUTING_TRAFFIC =
+	static readonly DenyCustomRoutingTraffic =
 		"globalaccelerator:DenyCustomRoutingTraffic";
 	/** [Write] globalaccelerator:DeprovisionByoipCidr */
-	static readonly DEPROVISION_BYOIP_CIDR =
+	static readonly DeprovisionByoipCidr =
 		"globalaccelerator:DeprovisionByoipCidr";
 	/** [Read] globalaccelerator:DescribeAccelerator */
-	static readonly DESCRIBE_ACCELERATOR =
-		"globalaccelerator:DescribeAccelerator";
+	static readonly DescribeAccelerator = "globalaccelerator:DescribeAccelerator";
 	/** [Read] globalaccelerator:DescribeAcceleratorAttributes */
-	static readonly DESCRIBE_ACCELERATOR_ATTRIBUTES =
+	static readonly DescribeAcceleratorAttributes =
 		"globalaccelerator:DescribeAcceleratorAttributes";
 	/** [Read] globalaccelerator:DescribeCrossAccountAttachment */
-	static readonly DESCRIBE_CROSS_ACCOUNT_ATTACHMENT =
+	static readonly DescribeCrossAccountAttachment =
 		"globalaccelerator:DescribeCrossAccountAttachment";
 	/** [Read] globalaccelerator:DescribeCustomRoutingAccelerator */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ACCELERATOR =
+	static readonly DescribeCustomRoutingAccelerator =
 		"globalaccelerator:DescribeCustomRoutingAccelerator";
 	/** [Read] globalaccelerator:DescribeCustomRoutingAcceleratorAttributes */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES =
+	static readonly DescribeCustomRoutingAcceleratorAttributes =
 		"globalaccelerator:DescribeCustomRoutingAcceleratorAttributes";
 	/** [Read] globalaccelerator:DescribeCustomRoutingEndpointGroup */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ENDPOINT_GROUP =
+	static readonly DescribeCustomRoutingEndpointGroup =
 		"globalaccelerator:DescribeCustomRoutingEndpointGroup";
 	/** [Read] globalaccelerator:DescribeCustomRoutingListener */
-	static readonly DESCRIBE_CUSTOM_ROUTING_LISTENER =
+	static readonly DescribeCustomRoutingListener =
 		"globalaccelerator:DescribeCustomRoutingListener";
 	/** [Read] globalaccelerator:DescribeEndpointGroup */
-	static readonly DESCRIBE_ENDPOINT_GROUP =
+	static readonly DescribeEndpointGroup =
 		"globalaccelerator:DescribeEndpointGroup";
 	/** [Read] globalaccelerator:DescribeListener */
-	static readonly DESCRIBE_LISTENER = "globalaccelerator:DescribeListener";
+	static readonly DescribeListener = "globalaccelerator:DescribeListener";
 	/** [List] globalaccelerator:ListAccelerators */
-	static readonly LIST_ACCELERATORS = "globalaccelerator:ListAccelerators";
+	static readonly ListAccelerators = "globalaccelerator:ListAccelerators";
 	/** [List] globalaccelerator:ListByoipCidrs */
-	static readonly LIST_BYOIP_CIDRS = "globalaccelerator:ListByoipCidrs";
+	static readonly ListByoipCidrs = "globalaccelerator:ListByoipCidrs";
 	/** [List] globalaccelerator:ListCrossAccountAttachments */
-	static readonly LIST_CROSS_ACCOUNT_ATTACHMENTS =
+	static readonly ListCrossAccountAttachments =
 		"globalaccelerator:ListCrossAccountAttachments";
 	/** [List] globalaccelerator:ListCrossAccountResourceAccounts */
-	static readonly LIST_CROSS_ACCOUNT_RESOURCE_ACCOUNTS =
+	static readonly ListCrossAccountResourceAccounts =
 		"globalaccelerator:ListCrossAccountResourceAccounts";
 	/** [List] globalaccelerator:ListCrossAccountResources */
-	static readonly LIST_CROSS_ACCOUNT_RESOURCES =
+	static readonly ListCrossAccountResources =
 		"globalaccelerator:ListCrossAccountResources";
 	/** [List] globalaccelerator:ListCustomRoutingAccelerators */
-	static readonly LIST_CUSTOM_ROUTING_ACCELERATORS =
+	static readonly ListCustomRoutingAccelerators =
 		"globalaccelerator:ListCustomRoutingAccelerators";
 	/** [List] globalaccelerator:ListCustomRoutingEndpointGroups */
-	static readonly LIST_CUSTOM_ROUTING_ENDPOINT_GROUPS =
+	static readonly ListCustomRoutingEndpointGroups =
 		"globalaccelerator:ListCustomRoutingEndpointGroups";
 	/** [List] globalaccelerator:ListCustomRoutingListeners */
-	static readonly LIST_CUSTOM_ROUTING_LISTENERS =
+	static readonly ListCustomRoutingListeners =
 		"globalaccelerator:ListCustomRoutingListeners";
 	/** [List] globalaccelerator:ListCustomRoutingPortMappings */
-	static readonly LIST_CUSTOM_ROUTING_PORT_MAPPINGS =
+	static readonly ListCustomRoutingPortMappings =
 		"globalaccelerator:ListCustomRoutingPortMappings";
 	/** [List] globalaccelerator:ListCustomRoutingPortMappingsByDestination */
-	static readonly LIST_CUSTOM_ROUTING_PORT_MAPPINGS_BY_DESTINATION =
+	static readonly ListCustomRoutingPortMappingsByDestination =
 		"globalaccelerator:ListCustomRoutingPortMappingsByDestination";
 	/** [List] globalaccelerator:ListEndpointGroups */
-	static readonly LIST_ENDPOINT_GROUPS = "globalaccelerator:ListEndpointGroups";
+	static readonly ListEndpointGroups = "globalaccelerator:ListEndpointGroups";
 	/** [List] globalaccelerator:ListListeners */
-	static readonly LIST_LISTENERS = "globalaccelerator:ListListeners";
+	static readonly ListListeners = "globalaccelerator:ListListeners";
 	/** [Read] globalaccelerator:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"globalaccelerator:ListTagsForResource";
+	static readonly ListTagsForResource = "globalaccelerator:ListTagsForResource";
 	/** [Write] globalaccelerator:ProvisionByoipCidr */
-	static readonly PROVISION_BYOIP_CIDR = "globalaccelerator:ProvisionByoipCidr";
+	static readonly ProvisionByoipCidr = "globalaccelerator:ProvisionByoipCidr";
 	/** [Write] globalaccelerator:RemoveCustomRoutingEndpoints */
-	static readonly REMOVE_CUSTOM_ROUTING_ENDPOINTS =
+	static readonly RemoveCustomRoutingEndpoints =
 		"globalaccelerator:RemoveCustomRoutingEndpoints";
 	/** [Write] globalaccelerator:RemoveEndpoints */
-	static readonly REMOVE_ENDPOINTS = "globalaccelerator:RemoveEndpoints";
+	static readonly RemoveEndpoints = "globalaccelerator:RemoveEndpoints";
 	/** [Tagging] globalaccelerator:TagResource */
-	static readonly TAG_RESOURCE = "globalaccelerator:TagResource";
+	static readonly TagResource = "globalaccelerator:TagResource";
 	/** [Tagging] globalaccelerator:UntagResource */
-	static readonly UNTAG_RESOURCE = "globalaccelerator:UntagResource";
+	static readonly UntagResource = "globalaccelerator:UntagResource";
 	/** [Write] globalaccelerator:UpdateAccelerator */
-	static readonly UPDATE_ACCELERATOR = "globalaccelerator:UpdateAccelerator";
+	static readonly UpdateAccelerator = "globalaccelerator:UpdateAccelerator";
 	/** [Write] globalaccelerator:UpdateAcceleratorAttributes */
-	static readonly UPDATE_ACCELERATOR_ATTRIBUTES =
+	static readonly UpdateAcceleratorAttributes =
 		"globalaccelerator:UpdateAcceleratorAttributes";
 	/** [Write] globalaccelerator:UpdateCrossAccountAttachment */
-	static readonly UPDATE_CROSS_ACCOUNT_ATTACHMENT =
+	static readonly UpdateCrossAccountAttachment =
 		"globalaccelerator:UpdateCrossAccountAttachment";
 	/** [Write] globalaccelerator:UpdateCustomRoutingAccelerator */
-	static readonly UPDATE_CUSTOM_ROUTING_ACCELERATOR =
+	static readonly UpdateCustomRoutingAccelerator =
 		"globalaccelerator:UpdateCustomRoutingAccelerator";
 	/** [Write] globalaccelerator:UpdateCustomRoutingAcceleratorAttributes */
-	static readonly UPDATE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES =
+	static readonly UpdateCustomRoutingAcceleratorAttributes =
 		"globalaccelerator:UpdateCustomRoutingAcceleratorAttributes";
 	/** [Write] globalaccelerator:UpdateCustomRoutingListener */
-	static readonly UPDATE_CUSTOM_ROUTING_LISTENER =
+	static readonly UpdateCustomRoutingListener =
 		"globalaccelerator:UpdateCustomRoutingListener";
 	/** [Write] globalaccelerator:UpdateEndpointGroup */
-	static readonly UPDATE_ENDPOINT_GROUP =
-		"globalaccelerator:UpdateEndpointGroup";
+	static readonly UpdateEndpointGroup = "globalaccelerator:UpdateEndpointGroup";
 	/** [Write] globalaccelerator:UpdateListener */
-	static readonly UPDATE_LISTENER = "globalaccelerator:UpdateListener";
+	static readonly UpdateListener = "globalaccelerator:UpdateListener";
 	/** [Write] globalaccelerator:WithdrawByoipCidr */
-	static readonly WITHDRAW_BYOIP_CIDR = "globalaccelerator:WithdrawByoipCidr";
+	static readonly WithdrawByoipCidr = "globalaccelerator:WithdrawByoipCidr";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GlobalAcceleratorActions.DESCRIBE_ACCELERATOR,
-		GlobalAcceleratorActions.DESCRIBE_ACCELERATOR_ATTRIBUTES,
-		GlobalAcceleratorActions.DESCRIBE_CROSS_ACCOUNT_ATTACHMENT,
-		GlobalAcceleratorActions.DESCRIBE_CUSTOM_ROUTING_ACCELERATOR,
-		GlobalAcceleratorActions.DESCRIBE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES,
-		GlobalAcceleratorActions.DESCRIBE_CUSTOM_ROUTING_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.DESCRIBE_CUSTOM_ROUTING_LISTENER,
-		GlobalAcceleratorActions.DESCRIBE_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.DESCRIBE_LISTENER,
-		GlobalAcceleratorActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		GlobalAcceleratorActions.DescribeAccelerator,
+		GlobalAcceleratorActions.DescribeAcceleratorAttributes,
+		GlobalAcceleratorActions.DescribeCrossAccountAttachment,
+		GlobalAcceleratorActions.DescribeCustomRoutingAccelerator,
+		GlobalAcceleratorActions.DescribeCustomRoutingAcceleratorAttributes,
+		GlobalAcceleratorActions.DescribeCustomRoutingEndpointGroup,
+		GlobalAcceleratorActions.DescribeCustomRoutingListener,
+		GlobalAcceleratorActions.DescribeEndpointGroup,
+		GlobalAcceleratorActions.DescribeListener,
+		GlobalAcceleratorActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GlobalAcceleratorActions.ADD_CUSTOM_ROUTING_ENDPOINTS,
-		GlobalAcceleratorActions.ADD_ENDPOINTS,
-		GlobalAcceleratorActions.ADVERTISE_BYOIP_CIDR,
-		GlobalAcceleratorActions.ALLOW_CUSTOM_ROUTING_TRAFFIC,
-		GlobalAcceleratorActions.CREATE_ACCELERATOR,
-		GlobalAcceleratorActions.CREATE_CROSS_ACCOUNT_ATTACHMENT,
-		GlobalAcceleratorActions.CREATE_CUSTOM_ROUTING_ACCELERATOR,
-		GlobalAcceleratorActions.CREATE_CUSTOM_ROUTING_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.CREATE_CUSTOM_ROUTING_LISTENER,
-		GlobalAcceleratorActions.CREATE_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.CREATE_LISTENER,
-		GlobalAcceleratorActions.DELETE_ACCELERATOR,
-		GlobalAcceleratorActions.DELETE_CROSS_ACCOUNT_ATTACHMENT,
-		GlobalAcceleratorActions.DELETE_CUSTOM_ROUTING_ACCELERATOR,
-		GlobalAcceleratorActions.DELETE_CUSTOM_ROUTING_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.DELETE_CUSTOM_ROUTING_LISTENER,
-		GlobalAcceleratorActions.DELETE_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.DELETE_LISTENER,
-		GlobalAcceleratorActions.DENY_CUSTOM_ROUTING_TRAFFIC,
-		GlobalAcceleratorActions.DEPROVISION_BYOIP_CIDR,
-		GlobalAcceleratorActions.PROVISION_BYOIP_CIDR,
-		GlobalAcceleratorActions.REMOVE_CUSTOM_ROUTING_ENDPOINTS,
-		GlobalAcceleratorActions.REMOVE_ENDPOINTS,
-		GlobalAcceleratorActions.UPDATE_ACCELERATOR,
-		GlobalAcceleratorActions.UPDATE_ACCELERATOR_ATTRIBUTES,
-		GlobalAcceleratorActions.UPDATE_CROSS_ACCOUNT_ATTACHMENT,
-		GlobalAcceleratorActions.UPDATE_CUSTOM_ROUTING_ACCELERATOR,
-		GlobalAcceleratorActions.UPDATE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES,
-		GlobalAcceleratorActions.UPDATE_CUSTOM_ROUTING_LISTENER,
-		GlobalAcceleratorActions.UPDATE_ENDPOINT_GROUP,
-		GlobalAcceleratorActions.UPDATE_LISTENER,
-		GlobalAcceleratorActions.WITHDRAW_BYOIP_CIDR,
+	static readonly AllWriteActions: string[] = [
+		GlobalAcceleratorActions.AddCustomRoutingEndpoints,
+		GlobalAcceleratorActions.AddEndpoints,
+		GlobalAcceleratorActions.AdvertiseByoipCidr,
+		GlobalAcceleratorActions.AllowCustomRoutingTraffic,
+		GlobalAcceleratorActions.CreateAccelerator,
+		GlobalAcceleratorActions.CreateCrossAccountAttachment,
+		GlobalAcceleratorActions.CreateCustomRoutingAccelerator,
+		GlobalAcceleratorActions.CreateCustomRoutingEndpointGroup,
+		GlobalAcceleratorActions.CreateCustomRoutingListener,
+		GlobalAcceleratorActions.CreateEndpointGroup,
+		GlobalAcceleratorActions.CreateListener,
+		GlobalAcceleratorActions.DeleteAccelerator,
+		GlobalAcceleratorActions.DeleteCrossAccountAttachment,
+		GlobalAcceleratorActions.DeleteCustomRoutingAccelerator,
+		GlobalAcceleratorActions.DeleteCustomRoutingEndpointGroup,
+		GlobalAcceleratorActions.DeleteCustomRoutingListener,
+		GlobalAcceleratorActions.DeleteEndpointGroup,
+		GlobalAcceleratorActions.DeleteListener,
+		GlobalAcceleratorActions.DenyCustomRoutingTraffic,
+		GlobalAcceleratorActions.DeprovisionByoipCidr,
+		GlobalAcceleratorActions.ProvisionByoipCidr,
+		GlobalAcceleratorActions.RemoveCustomRoutingEndpoints,
+		GlobalAcceleratorActions.RemoveEndpoints,
+		GlobalAcceleratorActions.UpdateAccelerator,
+		GlobalAcceleratorActions.UpdateAcceleratorAttributes,
+		GlobalAcceleratorActions.UpdateCrossAccountAttachment,
+		GlobalAcceleratorActions.UpdateCustomRoutingAccelerator,
+		GlobalAcceleratorActions.UpdateCustomRoutingAcceleratorAttributes,
+		GlobalAcceleratorActions.UpdateCustomRoutingListener,
+		GlobalAcceleratorActions.UpdateEndpointGroup,
+		GlobalAcceleratorActions.UpdateListener,
+		GlobalAcceleratorActions.WithdrawByoipCidr,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GlobalAcceleratorActions.LIST_ACCELERATORS,
-		GlobalAcceleratorActions.LIST_BYOIP_CIDRS,
-		GlobalAcceleratorActions.LIST_CROSS_ACCOUNT_ATTACHMENTS,
-		GlobalAcceleratorActions.LIST_CROSS_ACCOUNT_RESOURCE_ACCOUNTS,
-		GlobalAcceleratorActions.LIST_CROSS_ACCOUNT_RESOURCES,
-		GlobalAcceleratorActions.LIST_CUSTOM_ROUTING_ACCELERATORS,
-		GlobalAcceleratorActions.LIST_CUSTOM_ROUTING_ENDPOINT_GROUPS,
-		GlobalAcceleratorActions.LIST_CUSTOM_ROUTING_LISTENERS,
-		GlobalAcceleratorActions.LIST_CUSTOM_ROUTING_PORT_MAPPINGS,
-		GlobalAcceleratorActions.LIST_CUSTOM_ROUTING_PORT_MAPPINGS_BY_DESTINATION,
-		GlobalAcceleratorActions.LIST_ENDPOINT_GROUPS,
-		GlobalAcceleratorActions.LIST_LISTENERS,
+	static readonly AllListActions: string[] = [
+		GlobalAcceleratorActions.ListAccelerators,
+		GlobalAcceleratorActions.ListByoipCidrs,
+		GlobalAcceleratorActions.ListCrossAccountAttachments,
+		GlobalAcceleratorActions.ListCrossAccountResourceAccounts,
+		GlobalAcceleratorActions.ListCrossAccountResources,
+		GlobalAcceleratorActions.ListCustomRoutingAccelerators,
+		GlobalAcceleratorActions.ListCustomRoutingEndpointGroups,
+		GlobalAcceleratorActions.ListCustomRoutingListeners,
+		GlobalAcceleratorActions.ListCustomRoutingPortMappings,
+		GlobalAcceleratorActions.ListCustomRoutingPortMappingsByDestination,
+		GlobalAcceleratorActions.ListEndpointGroups,
+		GlobalAcceleratorActions.ListListeners,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GlobalAcceleratorActions.TAG_RESOURCE,
-		GlobalAcceleratorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		GlobalAcceleratorActions.TagResource,
+		GlobalAcceleratorActions.UntagResource,
 	];
 }
 
-const AcceleratorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator/(?<resourceId>[^:/?]+)$",
-);
-const AttachmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):attachment/(?<resourceId>[^:/?]+)$",
-);
-const EndpointgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator/(?<resourceId>[^:/?]+)/listener/(?<listenerId>[^:/?]+)/endpoint-group/(?<endpointGroupId>[^:/?]+)$",
-);
-const ListenerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator/(?<resourceId>[^:/?]+)/listener/(?<listenerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a accelerator ARN.
+ */
+export interface GlobalAcceleratorAcceleratorArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a accelerator ARN.
+ */
+export interface GlobalAcceleratorAcceleratorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a attachment ARN.
+ */
+export interface GlobalAcceleratorAttachmentArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a attachment ARN.
+ */
+export interface GlobalAcceleratorAttachmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a endpointgroup ARN.
+ */
+export interface GlobalAcceleratorEndpointgroupArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The ListenerId component of the ARN. */
+	readonly listenerId: string;
+	/** The EndpointGroupId component of the ARN. */
+	readonly endpointGroupId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a endpointgroup ARN.
+ */
+export interface GlobalAcceleratorEndpointgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+	/** The ListenerId component. */
+	readonly listenerId: string;
+	/** The EndpointGroupId component. */
+	readonly endpointGroupId: string;
+}
+
+/**
+ * Properties for building a listener ARN.
+ */
+export interface GlobalAcceleratorListenerArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** The ListenerId component of the ARN. */
+	readonly listenerId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a listener ARN.
+ */
+export interface GlobalAcceleratorListenerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+	/** The ListenerId component. */
+	readonly listenerId: string;
+}
+
+const AcceleratorArnRegex =
+	/^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator\/(?<resourceId>[^:/?]+)$/;
+const AttachmentArnRegex =
+	/^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):attachment\/(?<resourceId>[^:/?]+)$/;
+const EndpointgroupArnRegex =
+	/^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator\/(?<resourceId>[^:/?]+)\/listener\/(?<listenerId>[^:/?]+)\/endpoint-group\/(?<endpointGroupId>[^:/?]+)$/;
+const ListenerArnRegex =
+	/^arn:(?<partition>[^:]+):globalaccelerator::(?<account>[^:]*):accelerator\/(?<resourceId>[^:/?]+)\/listener\/(?<listenerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for globalaccelerator resources.
@@ -255,14 +354,7 @@ export class GlobalAcceleratorResources {
 	/**
 	 * Builds an ARN for the accelerator resource.
 	 */
-	static accelerator(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accelerator(props: GlobalAcceleratorAcceleratorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:globalaccelerator::${props.account ?? "*"}:accelerator/${props.resourceId}`;
 	}
 
@@ -277,11 +369,9 @@ export class GlobalAcceleratorResources {
 	 * Parses a accelerator ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAcceleratorArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAcceleratorArn(
+		arn: string,
+	): GlobalAcceleratorAcceleratorArnComponents {
 		const match = AcceleratorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid accelerator ARN: ${arn}`);
@@ -296,14 +386,7 @@ export class GlobalAcceleratorResources {
 	/**
 	 * Builds an ARN for the attachment resource.
 	 */
-	static attachment(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static attachment(props: GlobalAcceleratorAttachmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:globalaccelerator::${props.account ?? "*"}:attachment/${props.resourceId}`;
 	}
 
@@ -318,11 +401,9 @@ export class GlobalAcceleratorResources {
 	 * Parses a attachment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAttachmentArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAttachmentArn(
+		arn: string,
+	): GlobalAcceleratorAttachmentArnComponents {
 		const match = AttachmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid attachment ARN: ${arn}`);
@@ -337,18 +418,7 @@ export class GlobalAcceleratorResources {
 	/**
 	 * Builds an ARN for the endpointgroup resource.
 	 */
-	static endpointgroup(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The ListenerId component of the ARN. */
-		readonly listenerId: string;
-		/** The EndpointGroupId component of the ARN. */
-		readonly endpointGroupId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static endpointgroup(props: GlobalAcceleratorEndpointgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:globalaccelerator::${props.account ?? "*"}:accelerator/${props.resourceId}/listener/${props.listenerId}/endpoint-group/${props.endpointGroupId}`;
 	}
 
@@ -363,13 +433,9 @@ export class GlobalAcceleratorResources {
 	 * Parses a endpointgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEndpointgroupArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-		listenerId: string;
-		endpointGroupId: string;
-	} {
+	static parseEndpointgroupArn(
+		arn: string,
+	): GlobalAcceleratorEndpointgroupArnComponents {
 		const match = EndpointgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid endpointgroup ARN: ${arn}`);
@@ -386,16 +452,7 @@ export class GlobalAcceleratorResources {
 	/**
 	 * Builds an ARN for the listener resource.
 	 */
-	static listener(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** The ListenerId component of the ARN. */
-		readonly listenerId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static listener(props: GlobalAcceleratorListenerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:globalaccelerator::${props.account ?? "*"}:accelerator/${props.resourceId}/listener/${props.listenerId}`;
 	}
 
@@ -410,12 +467,7 @@ export class GlobalAcceleratorResources {
 	 * Parses a listener ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseListenerArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-		listenerId: string;
-	} {
+	static parseListenerArn(arn: string): GlobalAcceleratorListenerArnComponents {
 		const match = ListenerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid listener ARN: ${arn}`);
@@ -434,230 +486,226 @@ export class GlobalAcceleratorResources {
  */
 export class GlobalAcceleratorOperations {
 	/** IAM actions required for the AddCustomRoutingEndpoints API call. */
-	static readonly ADD_CUSTOM_ROUTING_ENDPOINTS: string[] = [
+	static readonly AddCustomRoutingEndpoints: string[] = [
 		"globalaccelerator:AddCustomRoutingEndpoints",
 	];
 	/** IAM actions required for the AddEndpoints API call. */
-	static readonly ADD_ENDPOINTS: string[] = [
+	static readonly AddEndpoints: string[] = [
 		"globalaccelerator:AddEndpoints",
 		"globalaccelerator:UpdateEndpointGroup",
 	];
 	/** IAM actions required for the AdvertiseByoipCidr API call. */
-	static readonly ADVERTISE_BYOIP_CIDR: string[] = [
+	static readonly AdvertiseByoipCidr: string[] = [
 		"globalaccelerator:AdvertiseByoipCidr",
 	];
 	/** IAM actions required for the AllowCustomRoutingTraffic API call. */
-	static readonly ALLOW_CUSTOM_ROUTING_TRAFFIC: string[] = [
+	static readonly AllowCustomRoutingTraffic: string[] = [
 		"globalaccelerator:AllowCustomRoutingTraffic",
 	];
 	/** IAM actions required for the CreateAccelerator API call. */
-	static readonly CREATE_ACCELERATOR: string[] = [
+	static readonly CreateAccelerator: string[] = [
 		"globalaccelerator:CreateAccelerator",
 		"globalaccelerator:TagResource",
 	];
 	/** IAM actions required for the CreateCrossAccountAttachment API call. */
-	static readonly CREATE_CROSS_ACCOUNT_ATTACHMENT: string[] = [
+	static readonly CreateCrossAccountAttachment: string[] = [
 		"globalaccelerator:CreateCrossAccountAttachment",
 		"globalaccelerator:TagResource",
 	];
 	/** IAM actions required for the CreateCustomRoutingAccelerator API call. */
-	static readonly CREATE_CUSTOM_ROUTING_ACCELERATOR: string[] = [
+	static readonly CreateCustomRoutingAccelerator: string[] = [
 		"globalaccelerator:CreateCustomRoutingAccelerator",
 		"globalaccelerator:TagResource",
 	];
 	/** IAM actions required for the CreateCustomRoutingEndpointGroup API call. */
-	static readonly CREATE_CUSTOM_ROUTING_ENDPOINT_GROUP: string[] = [
+	static readonly CreateCustomRoutingEndpointGroup: string[] = [
 		"globalaccelerator:CreateCustomRoutingEndpointGroup",
 	];
 	/** IAM actions required for the CreateCustomRoutingListener API call. */
-	static readonly CREATE_CUSTOM_ROUTING_LISTENER: string[] = [
+	static readonly CreateCustomRoutingListener: string[] = [
 		"globalaccelerator:CreateCustomRoutingListener",
 	];
 	/** IAM actions required for the CreateEndpointGroup API call. */
-	static readonly CREATE_ENDPOINT_GROUP: string[] = [
+	static readonly CreateEndpointGroup: string[] = [
 		"globalaccelerator:CreateEndpointGroup",
 	];
 	/** IAM actions required for the CreateListener API call. */
-	static readonly CREATE_LISTENER: string[] = [
+	static readonly CreateListener: string[] = [
 		"globalaccelerator:CreateListener",
 	];
 	/** IAM actions required for the DeleteAccelerator API call. */
-	static readonly DELETE_ACCELERATOR: string[] = [
+	static readonly DeleteAccelerator: string[] = [
 		"globalaccelerator:DeleteAccelerator",
 	];
 	/** IAM actions required for the DeleteCrossAccountAttachment API call. */
-	static readonly DELETE_CROSS_ACCOUNT_ATTACHMENT: string[] = [
+	static readonly DeleteCrossAccountAttachment: string[] = [
 		"globalaccelerator:DeleteCrossAccountAttachment",
 	];
 	/** IAM actions required for the DeleteCustomRoutingAccelerator API call. */
-	static readonly DELETE_CUSTOM_ROUTING_ACCELERATOR: string[] = [
+	static readonly DeleteCustomRoutingAccelerator: string[] = [
 		"globalaccelerator:DeleteCustomRoutingAccelerator",
 	];
 	/** IAM actions required for the DeleteCustomRoutingEndpointGroup API call. */
-	static readonly DELETE_CUSTOM_ROUTING_ENDPOINT_GROUP: string[] = [
+	static readonly DeleteCustomRoutingEndpointGroup: string[] = [
 		"globalaccelerator:DeleteCustomRoutingEndpointGroup",
 	];
 	/** IAM actions required for the DeleteCustomRoutingListener API call. */
-	static readonly DELETE_CUSTOM_ROUTING_LISTENER: string[] = [
+	static readonly DeleteCustomRoutingListener: string[] = [
 		"globalaccelerator:DeleteCustomRoutingListener",
 	];
 	/** IAM actions required for the DeleteEndpointGroup API call. */
-	static readonly DELETE_ENDPOINT_GROUP: string[] = [
+	static readonly DeleteEndpointGroup: string[] = [
 		"globalaccelerator:DeleteEndpointGroup",
 	];
 	/** IAM actions required for the DeleteListener API call. */
-	static readonly DELETE_LISTENER: string[] = [
+	static readonly DeleteListener: string[] = [
 		"globalaccelerator:DeleteListener",
 	];
 	/** IAM actions required for the DenyCustomRoutingTraffic API call. */
-	static readonly DENY_CUSTOM_ROUTING_TRAFFIC: string[] = [
+	static readonly DenyCustomRoutingTraffic: string[] = [
 		"globalaccelerator:DenyCustomRoutingTraffic",
 	];
 	/** IAM actions required for the DeprovisionByoipCidr API call. */
-	static readonly DEPROVISION_BYOIP_CIDR: string[] = [
+	static readonly DeprovisionByoipCidr: string[] = [
 		"globalaccelerator:DeprovisionByoipCidr",
 	];
 	/** IAM actions required for the DescribeAccelerator API call. */
-	static readonly DESCRIBE_ACCELERATOR: string[] = [
+	static readonly DescribeAccelerator: string[] = [
 		"globalaccelerator:DescribeAccelerator",
 	];
 	/** IAM actions required for the DescribeAcceleratorAttributes API call. */
-	static readonly DESCRIBE_ACCELERATOR_ATTRIBUTES: string[] = [
+	static readonly DescribeAcceleratorAttributes: string[] = [
 		"globalaccelerator:DescribeAcceleratorAttributes",
 	];
 	/** IAM actions required for the DescribeCrossAccountAttachment API call. */
-	static readonly DESCRIBE_CROSS_ACCOUNT_ATTACHMENT: string[] = [
+	static readonly DescribeCrossAccountAttachment: string[] = [
 		"globalaccelerator:DescribeCrossAccountAttachment",
 	];
 	/** IAM actions required for the DescribeCustomRoutingAccelerator API call. */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ACCELERATOR: string[] = [
+	static readonly DescribeCustomRoutingAccelerator: string[] = [
 		"globalaccelerator:DescribeCustomRoutingAccelerator",
 	];
 	/** IAM actions required for the DescribeCustomRoutingAcceleratorAttributes API call. */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES: string[] = [
+	static readonly DescribeCustomRoutingAcceleratorAttributes: string[] = [
 		"globalaccelerator:DescribeCustomRoutingAcceleratorAttributes",
 	];
 	/** IAM actions required for the DescribeCustomRoutingEndpointGroup API call. */
-	static readonly DESCRIBE_CUSTOM_ROUTING_ENDPOINT_GROUP: string[] = [
+	static readonly DescribeCustomRoutingEndpointGroup: string[] = [
 		"globalaccelerator:DescribeCustomRoutingEndpointGroup",
 	];
 	/** IAM actions required for the DescribeCustomRoutingListener API call. */
-	static readonly DESCRIBE_CUSTOM_ROUTING_LISTENER: string[] = [
+	static readonly DescribeCustomRoutingListener: string[] = [
 		"globalaccelerator:DescribeCustomRoutingListener",
 	];
 	/** IAM actions required for the DescribeEndpointGroup API call. */
-	static readonly DESCRIBE_ENDPOINT_GROUP: string[] = [
+	static readonly DescribeEndpointGroup: string[] = [
 		"globalaccelerator:DescribeEndpointGroup",
 	];
 	/** IAM actions required for the DescribeListener API call. */
-	static readonly DESCRIBE_LISTENER: string[] = [
+	static readonly DescribeListener: string[] = [
 		"globalaccelerator:DescribeListener",
 	];
 	/** IAM actions required for the ListAccelerators API call. */
-	static readonly LIST_ACCELERATORS: string[] = [
+	static readonly ListAccelerators: string[] = [
 		"globalaccelerator:ListAccelerators",
 	];
 	/** IAM actions required for the ListByoipCidrs API call. */
-	static readonly LIST_BYOIP_CIDRS: string[] = [
+	static readonly ListByoipCidrs: string[] = [
 		"globalaccelerator:ListByoipCidrs",
 	];
 	/** IAM actions required for the ListCrossAccountAttachments API call. */
-	static readonly LIST_CROSS_ACCOUNT_ATTACHMENTS: string[] = [
+	static readonly ListCrossAccountAttachments: string[] = [
 		"globalaccelerator:ListCrossAccountAttachments",
 	];
 	/** IAM actions required for the ListCrossAccountResourceAccounts API call. */
-	static readonly LIST_CROSS_ACCOUNT_RESOURCE_ACCOUNTS: string[] = [
+	static readonly ListCrossAccountResourceAccounts: string[] = [
 		"globalaccelerator:ListCrossAccountResourceAccounts",
 	];
 	/** IAM actions required for the ListCrossAccountResources API call. */
-	static readonly LIST_CROSS_ACCOUNT_RESOURCES: string[] = [
+	static readonly ListCrossAccountResources: string[] = [
 		"globalaccelerator:ListCrossAccountResources",
 	];
 	/** IAM actions required for the ListCustomRoutingAccelerators API call. */
-	static readonly LIST_CUSTOM_ROUTING_ACCELERATORS: string[] = [
+	static readonly ListCustomRoutingAccelerators: string[] = [
 		"globalaccelerator:ListCustomRoutingAccelerators",
 	];
 	/** IAM actions required for the ListCustomRoutingEndpointGroups API call. */
-	static readonly LIST_CUSTOM_ROUTING_ENDPOINT_GROUPS: string[] = [
+	static readonly ListCustomRoutingEndpointGroups: string[] = [
 		"globalaccelerator:ListCustomRoutingEndpointGroups",
 	];
 	/** IAM actions required for the ListCustomRoutingListeners API call. */
-	static readonly LIST_CUSTOM_ROUTING_LISTENERS: string[] = [
+	static readonly ListCustomRoutingListeners: string[] = [
 		"globalaccelerator:ListCustomRoutingListeners",
 	];
 	/** IAM actions required for the ListCustomRoutingPortMappings API call. */
-	static readonly LIST_CUSTOM_ROUTING_PORT_MAPPINGS: string[] = [
+	static readonly ListCustomRoutingPortMappings: string[] = [
 		"globalaccelerator:ListCustomRoutingPortMappings",
 	];
 	/** IAM actions required for the ListCustomRoutingPortMappingsByDestination API call. */
-	static readonly LIST_CUSTOM_ROUTING_PORT_MAPPINGS_BY_DESTINATION: string[] = [
+	static readonly ListCustomRoutingPortMappingsByDestination: string[] = [
 		"globalaccelerator:ListCustomRoutingPortMappingsByDestination",
 	];
 	/** IAM actions required for the ListEndpointGroups API call. */
-	static readonly LIST_ENDPOINT_GROUPS: string[] = [
+	static readonly ListEndpointGroups: string[] = [
 		"globalaccelerator:ListEndpointGroups",
 	];
 	/** IAM actions required for the ListListeners API call. */
-	static readonly LIST_LISTENERS: string[] = [
-		"globalaccelerator:ListListeners",
-	];
+	static readonly ListListeners: string[] = ["globalaccelerator:ListListeners"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"globalaccelerator:ListTagsForResource",
 	];
 	/** IAM actions required for the ProvisionByoipCidr API call. */
-	static readonly PROVISION_BYOIP_CIDR: string[] = [
+	static readonly ProvisionByoipCidr: string[] = [
 		"globalaccelerator:ProvisionByoipCidr",
 	];
 	/** IAM actions required for the RemoveCustomRoutingEndpoints API call. */
-	static readonly REMOVE_CUSTOM_ROUTING_ENDPOINTS: string[] = [
+	static readonly RemoveCustomRoutingEndpoints: string[] = [
 		"globalaccelerator:RemoveCustomRoutingEndpoints",
 	];
 	/** IAM actions required for the RemoveEndpoints API call. */
-	static readonly REMOVE_ENDPOINTS: string[] = [
+	static readonly RemoveEndpoints: string[] = [
 		"globalaccelerator:RemoveEndpoints",
 		"globalaccelerator:UpdateEndpointGroup",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["globalaccelerator:TagResource"];
+	static readonly TagResource: string[] = ["globalaccelerator:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
-		"globalaccelerator:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["globalaccelerator:UntagResource"];
 	/** IAM actions required for the UpdateAccelerator API call. */
-	static readonly UPDATE_ACCELERATOR: string[] = [
+	static readonly UpdateAccelerator: string[] = [
 		"globalaccelerator:UpdateAccelerator",
 	];
 	/** IAM actions required for the UpdateAcceleratorAttributes API call. */
-	static readonly UPDATE_ACCELERATOR_ATTRIBUTES: string[] = [
+	static readonly UpdateAcceleratorAttributes: string[] = [
 		"globalaccelerator:UpdateAcceleratorAttributes",
 	];
 	/** IAM actions required for the UpdateCrossAccountAttachment API call. */
-	static readonly UPDATE_CROSS_ACCOUNT_ATTACHMENT: string[] = [
+	static readonly UpdateCrossAccountAttachment: string[] = [
 		"globalaccelerator:UpdateCrossAccountAttachment",
 	];
 	/** IAM actions required for the UpdateCustomRoutingAccelerator API call. */
-	static readonly UPDATE_CUSTOM_ROUTING_ACCELERATOR: string[] = [
+	static readonly UpdateCustomRoutingAccelerator: string[] = [
 		"globalaccelerator:UpdateCustomRoutingAccelerator",
 	];
 	/** IAM actions required for the UpdateCustomRoutingAcceleratorAttributes API call. */
-	static readonly UPDATE_CUSTOM_ROUTING_ACCELERATOR_ATTRIBUTES: string[] = [
+	static readonly UpdateCustomRoutingAcceleratorAttributes: string[] = [
 		"globalaccelerator:UpdateCustomRoutingAcceleratorAttributes",
 	];
 	/** IAM actions required for the UpdateCustomRoutingListener API call. */
-	static readonly UPDATE_CUSTOM_ROUTING_LISTENER: string[] = [
+	static readonly UpdateCustomRoutingListener: string[] = [
 		"globalaccelerator:UpdateCustomRoutingListener",
 	];
 	/** IAM actions required for the UpdateEndpointGroup API call. */
-	static readonly UPDATE_ENDPOINT_GROUP: string[] = [
+	static readonly UpdateEndpointGroup: string[] = [
 		"globalaccelerator:UpdateEndpointGroup",
 	];
 	/** IAM actions required for the UpdateListener API call. */
-	static readonly UPDATE_LISTENER: string[] = [
+	static readonly UpdateListener: string[] = [
 		"globalaccelerator:UpdateListener",
 	];
 	/** IAM actions required for the WithdrawByoipCidr API call. */
-	static readonly WITHDRAW_BYOIP_CIDR: string[] = [
+	static readonly WithdrawByoipCidr: string[] = [
 		"globalaccelerator:WithdrawByoipCidr",
 	];
 }
@@ -667,34 +715,34 @@ export class GlobalAcceleratorOperations {
  */
 export class GlobalAcceleratorConditions {
 	/** Condition keys applicable to the CreateAccelerator action. */
-	static readonly CREATE_ACCELERATOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAcceleratorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCrossAccountAttachment action. */
-	static readonly CREATE_CROSS_ACCOUNT_ATTACHMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateCrossAccountAttachmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomRoutingAccelerator action. */
-	static readonly CREATE_CUSTOM_ROUTING_ACCELERATOR_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomRoutingAcceleratorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

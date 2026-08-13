@@ -13,129 +13,268 @@ export class OneActions {
 	static readonly SERVICE_PREFIX = "one";
 
 	/** [Write] one:CreateDeviceActivationQrCode */
-	static readonly CREATE_DEVICE_ACTIVATION_QR_CODE =
+	static readonly CreateDeviceActivationQrCode =
 		"one:CreateDeviceActivationQrCode";
 	/** [Write] one:CreateDeviceConfigurationTemplate */
-	static readonly CREATE_DEVICE_CONFIGURATION_TEMPLATE =
+	static readonly CreateDeviceConfigurationTemplate =
 		"one:CreateDeviceConfigurationTemplate";
 	/** [Write] one:CreateDeviceInstance */
-	static readonly CREATE_DEVICE_INSTANCE = "one:CreateDeviceInstance";
+	static readonly CreateDeviceInstance = "one:CreateDeviceInstance";
 	/** [Write] one:CreateDeviceInstanceConfiguration */
-	static readonly CREATE_DEVICE_INSTANCE_CONFIGURATION =
+	static readonly CreateDeviceInstanceConfiguration =
 		"one:CreateDeviceInstanceConfiguration";
 	/** [Write] one:CreateSite */
-	static readonly CREATE_SITE = "one:CreateSite";
+	static readonly CreateSite = "one:CreateSite";
 	/** [Write] one:DeleteAssociatedDevice */
-	static readonly DELETE_ASSOCIATED_DEVICE = "one:DeleteAssociatedDevice";
+	static readonly DeleteAssociatedDevice = "one:DeleteAssociatedDevice";
 	/** [Write] one:DeleteDeviceConfigurationTemplate */
-	static readonly DELETE_DEVICE_CONFIGURATION_TEMPLATE =
+	static readonly DeleteDeviceConfigurationTemplate =
 		"one:DeleteDeviceConfigurationTemplate";
 	/** [Write] one:DeleteDeviceInstance */
-	static readonly DELETE_DEVICE_INSTANCE = "one:DeleteDeviceInstance";
+	static readonly DeleteDeviceInstance = "one:DeleteDeviceInstance";
 	/** [Write] one:DeleteSite */
-	static readonly DELETE_SITE = "one:DeleteSite";
+	static readonly DeleteSite = "one:DeleteSite";
 	/** [Write] one:DeleteUserV1 */
-	static readonly DELETE_USER_V1 = "one:DeleteUserV1";
+	static readonly DeleteUserV1 = "one:DeleteUserV1";
 	/** [Read] one:GetDeviceConfigurationTemplate */
-	static readonly GET_DEVICE_CONFIGURATION_TEMPLATE =
+	static readonly actionGetDeviceConfigurationTemplate =
 		"one:GetDeviceConfigurationTemplate";
 	/** [Read] one:GetDeviceInstance */
-	static readonly GET_DEVICE_INSTANCE = "one:GetDeviceInstance";
+	static readonly actionGetDeviceInstance = "one:GetDeviceInstance";
 	/** [Read] one:GetDeviceInstanceConfiguration */
-	static readonly GET_DEVICE_INSTANCE_CONFIGURATION =
+	static readonly actionGetDeviceInstanceConfiguration =
 		"one:GetDeviceInstanceConfiguration";
 	/** [Read] one:GetSite */
-	static readonly GET_SITE = "one:GetSite";
+	static readonly actionGetSite = "one:GetSite";
 	/** [Read] one:GetSiteAddress */
-	static readonly GET_SITE_ADDRESS = "one:GetSiteAddress";
+	static readonly actionGetSiteAddress = "one:GetSiteAddress";
 	/** [List] one:ListDeviceConfigurationTemplates */
-	static readonly LIST_DEVICE_CONFIGURATION_TEMPLATES =
+	static readonly ListDeviceConfigurationTemplates =
 		"one:ListDeviceConfigurationTemplates";
 	/** [List] one:ListDeviceInstances */
-	static readonly LIST_DEVICE_INSTANCES = "one:ListDeviceInstances";
+	static readonly ListDeviceInstances = "one:ListDeviceInstances";
 	/** [List] one:ListSites */
-	static readonly LIST_SITES = "one:ListSites";
+	static readonly ListSites = "one:ListSites";
 	/** [Read] one:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "one:ListTagsForResource";
+	static readonly ListTagsForResource = "one:ListTagsForResource";
 	/** [List] one:ListUsers */
-	static readonly LIST_USERS = "one:ListUsers";
+	static readonly ListUsers = "one:ListUsers";
 	/** [List] one:ListUsersV1 */
-	static readonly LIST_USERS_V1 = "one:ListUsersV1";
+	static readonly ListUsersV1 = "one:ListUsersV1";
 	/** [Write] one:RebootDevice */
-	static readonly REBOOT_DEVICE = "one:RebootDevice";
+	static readonly RebootDevice = "one:RebootDevice";
 	/** [Tagging] one:TagResource */
-	static readonly TAG_RESOURCE = "one:TagResource";
+	static readonly TagResource = "one:TagResource";
 	/** [Tagging] one:UntagResource */
-	static readonly UNTAG_RESOURCE = "one:UntagResource";
+	static readonly UntagResource = "one:UntagResource";
 	/** [Write] one:UpdateDeviceConfigurationTemplate */
-	static readonly UPDATE_DEVICE_CONFIGURATION_TEMPLATE =
+	static readonly UpdateDeviceConfigurationTemplate =
 		"one:UpdateDeviceConfigurationTemplate";
 	/** [Write] one:UpdateDeviceInstance */
-	static readonly UPDATE_DEVICE_INSTANCE = "one:UpdateDeviceInstance";
+	static readonly UpdateDeviceInstance = "one:UpdateDeviceInstance";
 	/** [Write] one:UpdateSite */
-	static readonly UPDATE_SITE = "one:UpdateSite";
+	static readonly UpdateSite = "one:UpdateSite";
 	/** [Write] one:UpdateSiteAddress */
-	static readonly UPDATE_SITE_ADDRESS = "one:UpdateSiteAddress";
+	static readonly UpdateSiteAddress = "one:UpdateSiteAddress";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		OneActions.GET_DEVICE_CONFIGURATION_TEMPLATE,
-		OneActions.GET_DEVICE_INSTANCE,
-		OneActions.GET_DEVICE_INSTANCE_CONFIGURATION,
-		OneActions.GET_SITE,
-		OneActions.GET_SITE_ADDRESS,
-		OneActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		OneActions.actionGetDeviceConfigurationTemplate,
+		OneActions.actionGetDeviceInstance,
+		OneActions.actionGetDeviceInstanceConfiguration,
+		OneActions.actionGetSite,
+		OneActions.actionGetSiteAddress,
+		OneActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		OneActions.CREATE_DEVICE_ACTIVATION_QR_CODE,
-		OneActions.CREATE_DEVICE_CONFIGURATION_TEMPLATE,
-		OneActions.CREATE_DEVICE_INSTANCE,
-		OneActions.CREATE_DEVICE_INSTANCE_CONFIGURATION,
-		OneActions.CREATE_SITE,
-		OneActions.DELETE_ASSOCIATED_DEVICE,
-		OneActions.DELETE_DEVICE_CONFIGURATION_TEMPLATE,
-		OneActions.DELETE_DEVICE_INSTANCE,
-		OneActions.DELETE_SITE,
-		OneActions.DELETE_USER_V1,
-		OneActions.REBOOT_DEVICE,
-		OneActions.UPDATE_DEVICE_CONFIGURATION_TEMPLATE,
-		OneActions.UPDATE_DEVICE_INSTANCE,
-		OneActions.UPDATE_SITE,
-		OneActions.UPDATE_SITE_ADDRESS,
+	static readonly AllWriteActions: string[] = [
+		OneActions.CreateDeviceActivationQrCode,
+		OneActions.CreateDeviceConfigurationTemplate,
+		OneActions.CreateDeviceInstance,
+		OneActions.CreateDeviceInstanceConfiguration,
+		OneActions.CreateSite,
+		OneActions.DeleteAssociatedDevice,
+		OneActions.DeleteDeviceConfigurationTemplate,
+		OneActions.DeleteDeviceInstance,
+		OneActions.DeleteSite,
+		OneActions.DeleteUserV1,
+		OneActions.RebootDevice,
+		OneActions.UpdateDeviceConfigurationTemplate,
+		OneActions.UpdateDeviceInstance,
+		OneActions.UpdateSite,
+		OneActions.UpdateSiteAddress,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		OneActions.LIST_DEVICE_CONFIGURATION_TEMPLATES,
-		OneActions.LIST_DEVICE_INSTANCES,
-		OneActions.LIST_SITES,
-		OneActions.LIST_USERS,
-		OneActions.LIST_USERS_V1,
+	static readonly AllListActions: string[] = [
+		OneActions.ListDeviceConfigurationTemplates,
+		OneActions.ListDeviceInstances,
+		OneActions.ListSites,
+		OneActions.ListUsers,
+		OneActions.ListUsersV1,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		OneActions.TAG_RESOURCE,
-		OneActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		OneActions.TagResource,
+		OneActions.UntagResource,
 	];
 }
 
-const ConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-instance/(?<deviceInstanceId>[^:/?]+)/configuration/(?<version>[^:/?]+)$",
-);
-const DeviceConfigurationTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-configuration-template/(?<templateId>[^:/?]+)$",
-);
-const DeviceInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-instance/(?<deviceInstanceId>[^:/?]+)$",
-);
-const SiteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):site/(?<siteId>[^:/?]+)$",
-);
-const UserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):user/(?<userId>[^:/?]+)$",
-);
+/**
+ * Properties for building a configuration ARN.
+ */
+export interface OneConfigurationArnProps {
+	/** The DeviceInstanceId component of the ARN. */
+	readonly deviceInstanceId: string;
+	/** The Version component of the ARN. */
+	readonly version: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration ARN.
+ */
+export interface OneConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceInstanceId component. */
+	readonly deviceInstanceId: string;
+	/** The Version component. */
+	readonly version: string;
+}
+
+/**
+ * Properties for building a device-configuration-template ARN.
+ */
+export interface OneDeviceConfigurationTemplateArnProps {
+	/** The TemplateId component of the ARN. */
+	readonly templateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device-configuration-template ARN.
+ */
+export interface OneDeviceConfigurationTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TemplateId component. */
+	readonly templateId: string;
+}
+
+/**
+ * Properties for building a device-instance ARN.
+ */
+export interface OneDeviceInstanceArnProps {
+	/** The DeviceInstanceId component of the ARN. */
+	readonly deviceInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device-instance ARN.
+ */
+export interface OneDeviceInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DeviceInstanceId component. */
+	readonly deviceInstanceId: string;
+}
+
+/**
+ * Properties for building a site ARN.
+ */
+export interface OneSiteArnProps {
+	/** The SiteId component of the ARN. */
+	readonly siteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a site ARN.
+ */
+export interface OneSiteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SiteId component. */
+	readonly siteId: string;
+}
+
+/**
+ * Properties for building a user ARN.
+ */
+export interface OneUserArnProps {
+	/** The UserId component of the ARN. */
+	readonly userId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user ARN.
+ */
+export interface OneUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserId component. */
+	readonly userId: string;
+}
+
+const ConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-instance\/(?<deviceInstanceId>[^:/?]+)\/configuration\/(?<version>[^:/?]+)$/;
+const DeviceConfigurationTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-configuration-template\/(?<templateId>[^:/?]+)$/;
+const DeviceInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):device-instance\/(?<deviceInstanceId>[^:/?]+)$/;
+const SiteArnRegex =
+	/^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):site\/(?<siteId>[^:/?]+)$/;
+const UserArnRegex =
+	/^arn:(?<partition>[^:]+):one:(?<region>[^:]*):(?<account>[^:]*):user\/(?<userId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for one resources.
@@ -144,18 +283,7 @@ export class OneResources {
 	/**
 	 * Builds an ARN for the configuration resource.
 	 */
-	static configuration(props: {
-		/** The DeviceInstanceId component of the ARN. */
-		readonly deviceInstanceId: string;
-		/** The Version component of the ARN. */
-		readonly version: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuration(props: OneConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:one:${props.region ?? "*"}:${props.account ?? "*"}:device-instance/${props.deviceInstanceId}/configuration/${props.version}`;
 	}
 
@@ -170,13 +298,7 @@ export class OneResources {
 	 * Parses a configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceInstanceId: string;
-		version: string;
-	} {
+	static parseConfigurationArn(arn: string): OneConfigurationArnComponents {
 		const match = ConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration ARN: ${arn}`);
@@ -193,16 +315,9 @@ export class OneResources {
 	/**
 	 * Builds an ARN for the device-configuration-template resource.
 	 */
-	static deviceConfigurationTemplate(props: {
-		/** The TemplateId component of the ARN. */
-		readonly templateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deviceConfigurationTemplate(
+		props: OneDeviceConfigurationTemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:one:${props.region ?? "*"}:${props.account ?? "*"}:device-configuration-template/${props.templateId}`;
 	}
 
@@ -217,12 +332,9 @@ export class OneResources {
 	 * Parses a device-configuration-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceConfigurationTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		templateId: string;
-	} {
+	static parseDeviceConfigurationTemplateArn(
+		arn: string,
+	): OneDeviceConfigurationTemplateArnComponents {
 		const match = DeviceConfigurationTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device-configuration-template ARN: ${arn}`);
@@ -238,16 +350,7 @@ export class OneResources {
 	/**
 	 * Builds an ARN for the device-instance resource.
 	 */
-	static deviceInstance(props: {
-		/** The DeviceInstanceId component of the ARN. */
-		readonly deviceInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deviceInstance(props: OneDeviceInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:one:${props.region ?? "*"}:${props.account ?? "*"}:device-instance/${props.deviceInstanceId}`;
 	}
 
@@ -262,12 +365,7 @@ export class OneResources {
 	 * Parses a device-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		deviceInstanceId: string;
-	} {
+	static parseDeviceInstanceArn(arn: string): OneDeviceInstanceArnComponents {
 		const match = DeviceInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device-instance ARN: ${arn}`);
@@ -283,16 +381,7 @@ export class OneResources {
 	/**
 	 * Builds an ARN for the site resource.
 	 */
-	static site(props: {
-		/** The SiteId component of the ARN. */
-		readonly siteId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static site(props: OneSiteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:one:${props.region ?? "*"}:${props.account ?? "*"}:site/${props.siteId}`;
 	}
 
@@ -307,12 +396,7 @@ export class OneResources {
 	 * Parses a site ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSiteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		siteId: string;
-	} {
+	static parseSiteArn(arn: string): OneSiteArnComponents {
 		const match = SiteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid site ARN: ${arn}`);
@@ -328,16 +412,7 @@ export class OneResources {
 	/**
 	 * Builds an ARN for the user resource.
 	 */
-	static user(props: {
-		/** The UserId component of the ARN. */
-		readonly userId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static user(props: OneUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:one:${props.region ?? "*"}:${props.account ?? "*"}:user/${props.userId}`;
 	}
 
@@ -352,12 +427,7 @@ export class OneResources {
 	 * Parses a user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userId: string;
-	} {
+	static parseUserArn(arn: string): OneUserArnComponents {
 		const match = UserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user ARN: ${arn}`);
@@ -376,97 +446,100 @@ export class OneResources {
  */
 export class OneConditions {
 	/** Condition keys applicable to the CreateDeviceActivationQrCode action. */
-	static readonly CREATE_DEVICE_ACTIVATION_QR_CODE_CONDITION_KEYS: string[] = [
+	static readonly CreateDeviceActivationQrCodeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDeviceConfigurationTemplate action. */
-	static readonly CREATE_DEVICE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateDeviceConfigurationTemplateConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateDeviceInstance action. */
-	static readonly CREATE_DEVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateDeviceInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDeviceInstanceConfiguration action. */
-	static readonly CREATE_DEVICE_INSTANCE_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly CreateDeviceInstanceConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the CreateSite action. */
-	static readonly CREATE_SITE_CONDITION_KEYS: string[] = [
+	static readonly CreateSiteConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAssociatedDevice action. */
-	static readonly DELETE_ASSOCIATED_DEVICE_CONDITION_KEYS: string[] = [
+	static readonly DeleteAssociatedDeviceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteDeviceConfigurationTemplate action. */
-	static readonly DELETE_DEVICE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteDeviceConfigurationTemplateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteDeviceInstance action. */
-	static readonly DELETE_DEVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly DeleteDeviceInstanceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSite action. */
-	static readonly DELETE_SITE_CONDITION_KEYS: string[] = [
+	static readonly DeleteSiteConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDeviceConfigurationTemplate action. */
-	static readonly GET_DEVICE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] = [
-		"aws:ResourceTag/${TagKey}",
-	];
+	static readonly actionGetDeviceConfigurationTemplateConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetDeviceInstance action. */
-	static readonly GET_DEVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetDeviceInstanceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDeviceInstanceConfiguration action. */
-	static readonly GET_DEVICE_INSTANCE_CONFIGURATION_CONDITION_KEYS: string[] = [
-		"aws:ResourceTag/${TagKey}",
-	];
+	static readonly actionGetDeviceInstanceConfigurationConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the GetSite action. */
-	static readonly GET_SITE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSiteConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSiteAddress action. */
-	static readonly GET_SITE_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly actionGetSiteAddressConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RebootDevice action. */
-	static readonly REBOOT_DEVICE_CONDITION_KEYS: string[] = [
+	static readonly RebootDeviceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateDeviceConfigurationTemplate action. */
-	static readonly UPDATE_DEVICE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateDeviceConfigurationTemplateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateDeviceInstance action. */
-	static readonly UPDATE_DEVICE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateDeviceInstanceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSite action. */
-	static readonly UPDATE_SITE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSiteConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSiteAddress action. */
-	static readonly UPDATE_SITE_ADDRESS_CONDITION_KEYS: string[] = [
+	static readonly UpdateSiteAddressConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

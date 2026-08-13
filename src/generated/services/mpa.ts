@@ -13,110 +13,190 @@ export class MpaActions {
 	static readonly SERVICE_PREFIX = "mpa";
 
 	/** [Write] mpa:CancelSession */
-	static readonly CANCEL_SESSION = "mpa:CancelSession";
+	static readonly CancelSession = "mpa:CancelSession";
 	/** [Write] mpa:CreateApprovalTeam */
-	static readonly CREATE_APPROVAL_TEAM = "mpa:CreateApprovalTeam";
+	static readonly CreateApprovalTeam = "mpa:CreateApprovalTeam";
 	/** [Write] mpa:CreateIdentitySource */
-	static readonly CREATE_IDENTITY_SOURCE = "mpa:CreateIdentitySource";
+	static readonly CreateIdentitySource = "mpa:CreateIdentitySource";
 	/** [Write] mpa:DeleteIdentitySource */
-	static readonly DELETE_IDENTITY_SOURCE = "mpa:DeleteIdentitySource";
+	static readonly DeleteIdentitySource = "mpa:DeleteIdentitySource";
 	/** [Write] mpa:DeleteInactiveApprovalTeamVersion */
-	static readonly DELETE_INACTIVE_APPROVAL_TEAM_VERSION =
+	static readonly DeleteInactiveApprovalTeamVersion =
 		"mpa:DeleteInactiveApprovalTeamVersion";
 	/** [PermissionManagement] mpa:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "mpa:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "mpa:DeleteResourcePolicy";
 	/** [Read] mpa:GetApprovalTeam */
-	static readonly GET_APPROVAL_TEAM = "mpa:GetApprovalTeam";
+	static readonly actionGetApprovalTeam = "mpa:GetApprovalTeam";
 	/** [Read] mpa:GetIdentitySource */
-	static readonly GET_IDENTITY_SOURCE = "mpa:GetIdentitySource";
+	static readonly actionGetIdentitySource = "mpa:GetIdentitySource";
 	/** [Read] mpa:GetPolicyVersion */
-	static readonly GET_POLICY_VERSION = "mpa:GetPolicyVersion";
+	static readonly actionGetPolicyVersion = "mpa:GetPolicyVersion";
 	/** [Read] mpa:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "mpa:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "mpa:GetResourcePolicy";
 	/** [Read] mpa:GetSession */
-	static readonly GET_SESSION = "mpa:GetSession";
+	static readonly actionGetSession = "mpa:GetSession";
 	/** [List] mpa:ListApprovalTeams */
-	static readonly LIST_APPROVAL_TEAMS = "mpa:ListApprovalTeams";
+	static readonly ListApprovalTeams = "mpa:ListApprovalTeams";
 	/** [List] mpa:ListIdentitySources */
-	static readonly LIST_IDENTITY_SOURCES = "mpa:ListIdentitySources";
+	static readonly ListIdentitySources = "mpa:ListIdentitySources";
 	/** [List] mpa:ListPolicies */
-	static readonly LIST_POLICIES = "mpa:ListPolicies";
+	static readonly ListPolicies = "mpa:ListPolicies";
 	/** [List] mpa:ListPolicyVersions */
-	static readonly LIST_POLICY_VERSIONS = "mpa:ListPolicyVersions";
+	static readonly ListPolicyVersions = "mpa:ListPolicyVersions";
 	/** [List] mpa:ListResourcePolicies */
-	static readonly LIST_RESOURCE_POLICIES = "mpa:ListResourcePolicies";
+	static readonly ListResourcePolicies = "mpa:ListResourcePolicies";
 	/** [List] mpa:ListSessions */
-	static readonly LIST_SESSIONS = "mpa:ListSessions";
+	static readonly ListSessions = "mpa:ListSessions";
 	/** [List] mpa:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "mpa:ListTagsForResource";
+	static readonly ListTagsForResource = "mpa:ListTagsForResource";
 	/** [PermissionManagement] mpa:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "mpa:PutResourcePolicy";
+	static readonly PutResourcePolicy = "mpa:PutResourcePolicy";
 	/** [Write] mpa:StartActiveApprovalTeamDeletion */
-	static readonly START_ACTIVE_APPROVAL_TEAM_DELETION =
+	static readonly StartActiveApprovalTeamDeletion =
 		"mpa:StartActiveApprovalTeamDeletion";
 	/** [Write] mpa:StartApprovalTeamBaseline */
-	static readonly START_APPROVAL_TEAM_BASELINE =
-		"mpa:StartApprovalTeamBaseline";
+	static readonly StartApprovalTeamBaseline = "mpa:StartApprovalTeamBaseline";
 	/** [Write] mpa:StartSession */
-	static readonly START_SESSION = "mpa:StartSession";
+	static readonly StartSession = "mpa:StartSession";
 	/** [Tagging] mpa:TagResource */
-	static readonly TAG_RESOURCE = "mpa:TagResource";
+	static readonly TagResource = "mpa:TagResource";
 	/** [Tagging] mpa:UntagResource */
-	static readonly UNTAG_RESOURCE = "mpa:UntagResource";
+	static readonly UntagResource = "mpa:UntagResource";
 	/** [Write] mpa:UpdateApprovalTeam */
-	static readonly UPDATE_APPROVAL_TEAM = "mpa:UpdateApprovalTeam";
+	static readonly UpdateApprovalTeam = "mpa:UpdateApprovalTeam";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MpaActions.GET_APPROVAL_TEAM,
-		MpaActions.GET_IDENTITY_SOURCE,
-		MpaActions.GET_POLICY_VERSION,
-		MpaActions.GET_RESOURCE_POLICY,
-		MpaActions.GET_SESSION,
+	static readonly AllReadActions: string[] = [
+		MpaActions.actionGetApprovalTeam,
+		MpaActions.actionGetIdentitySource,
+		MpaActions.actionGetPolicyVersion,
+		MpaActions.actionGetResourcePolicy,
+		MpaActions.actionGetSession,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MpaActions.CANCEL_SESSION,
-		MpaActions.CREATE_APPROVAL_TEAM,
-		MpaActions.CREATE_IDENTITY_SOURCE,
-		MpaActions.DELETE_IDENTITY_SOURCE,
-		MpaActions.DELETE_INACTIVE_APPROVAL_TEAM_VERSION,
-		MpaActions.START_ACTIVE_APPROVAL_TEAM_DELETION,
-		MpaActions.START_APPROVAL_TEAM_BASELINE,
-		MpaActions.START_SESSION,
-		MpaActions.UPDATE_APPROVAL_TEAM,
+	static readonly AllWriteActions: string[] = [
+		MpaActions.CancelSession,
+		MpaActions.CreateApprovalTeam,
+		MpaActions.CreateIdentitySource,
+		MpaActions.DeleteIdentitySource,
+		MpaActions.DeleteInactiveApprovalTeamVersion,
+		MpaActions.StartActiveApprovalTeamDeletion,
+		MpaActions.StartApprovalTeamBaseline,
+		MpaActions.StartSession,
+		MpaActions.UpdateApprovalTeam,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MpaActions.LIST_APPROVAL_TEAMS,
-		MpaActions.LIST_IDENTITY_SOURCES,
-		MpaActions.LIST_POLICIES,
-		MpaActions.LIST_POLICY_VERSIONS,
-		MpaActions.LIST_RESOURCE_POLICIES,
-		MpaActions.LIST_SESSIONS,
-		MpaActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		MpaActions.ListApprovalTeams,
+		MpaActions.ListIdentitySources,
+		MpaActions.ListPolicies,
+		MpaActions.ListPolicyVersions,
+		MpaActions.ListResourcePolicies,
+		MpaActions.ListSessions,
+		MpaActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		MpaActions.DELETE_RESOURCE_POLICY,
-		MpaActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		MpaActions.DeleteResourcePolicy,
+		MpaActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		MpaActions.TAG_RESOURCE,
-		MpaActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		MpaActions.TagResource,
+		MpaActions.UntagResource,
 	];
 }
 
-const ApprovalTeamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):approval-team/(?<approvalTeamId>[^:/?]+)$",
-);
-const IdentitySourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):identity-source/(?<identitySourceId>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):session/(?<sessionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a approval-team ARN.
+ */
+export interface MpaApprovalTeamArnProps {
+	/** The ApprovalTeamId component of the ARN. */
+	readonly approvalTeamId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a approval-team ARN.
+ */
+export interface MpaApprovalTeamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApprovalTeamId component. */
+	readonly approvalTeamId: string;
+}
+
+/**
+ * Properties for building a identity-source ARN.
+ */
+export interface MpaIdentitySourceArnProps {
+	/** The IdentitySourceId component of the ARN. */
+	readonly identitySourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a identity-source ARN.
+ */
+export interface MpaIdentitySourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IdentitySourceId component. */
+	readonly identitySourceId: string;
+}
+
+/**
+ * Properties for building a session ARN.
+ */
+export interface MpaSessionArnProps {
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a session ARN.
+ */
+export interface MpaSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+const ApprovalTeamArnRegex =
+	/^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):approval-team\/(?<approvalTeamId>[^:/?]+)$/;
+const IdentitySourceArnRegex =
+	/^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):identity-source\/(?<identitySourceId>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):mpa:(?<region>[^:]*):(?<account>[^:]*):session\/(?<sessionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for mpa resources.
@@ -125,16 +205,7 @@ export class MpaResources {
 	/**
 	 * Builds an ARN for the approval-team resource.
 	 */
-	static approvalTeam(props: {
-		/** The ApprovalTeamId component of the ARN. */
-		readonly approvalTeamId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static approvalTeam(props: MpaApprovalTeamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mpa:${props.region ?? "*"}:${props.account ?? "*"}:approval-team/${props.approvalTeamId}`;
 	}
 
@@ -149,12 +220,7 @@ export class MpaResources {
 	 * Parses a approval-team ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApprovalTeamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		approvalTeamId: string;
-	} {
+	static parseApprovalTeamArn(arn: string): MpaApprovalTeamArnComponents {
 		const match = ApprovalTeamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid approval-team ARN: ${arn}`);
@@ -170,16 +236,7 @@ export class MpaResources {
 	/**
 	 * Builds an ARN for the identity-source resource.
 	 */
-	static identitySource(props: {
-		/** The IdentitySourceId component of the ARN. */
-		readonly identitySourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static identitySource(props: MpaIdentitySourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mpa:${props.region ?? "*"}:${props.account ?? "*"}:identity-source/${props.identitySourceId}`;
 	}
 
@@ -194,12 +251,7 @@ export class MpaResources {
 	 * Parses a identity-source ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdentitySourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identitySourceId: string;
-	} {
+	static parseIdentitySourceArn(arn: string): MpaIdentitySourceArnComponents {
 		const match = IdentitySourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid identity-source ARN: ${arn}`);
@@ -215,16 +267,7 @@ export class MpaResources {
 	/**
 	 * Builds an ARN for the session resource.
 	 */
-	static session(props: {
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: MpaSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mpa:${props.region ?? "*"}:${props.account ?? "*"}:session/${props.sessionId}`;
 	}
 
@@ -239,12 +282,7 @@ export class MpaResources {
 	 * Parses a session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): MpaSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid session ARN: ${arn}`);
@@ -263,67 +301,61 @@ export class MpaResources {
  */
 export class MpaOperations {
 	/** IAM actions required for the CancelSession API call. */
-	static readonly CANCEL_SESSION: string[] = ["mpa:CancelSession"];
+	static readonly CancelSession: string[] = ["mpa:CancelSession"];
 	/** IAM actions required for the CreateApprovalTeam API call. */
-	static readonly CREATE_APPROVAL_TEAM: string[] = [
+	static readonly CreateApprovalTeam: string[] = [
 		"mpa:CreateApprovalTeam",
 		"mpa:TagResource",
 	];
 	/** IAM actions required for the CreateIdentitySource API call. */
-	static readonly CREATE_IDENTITY_SOURCE: string[] = [
+	static readonly CreateIdentitySource: string[] = [
 		"mpa:CreateIdentitySource",
 		"mpa:TagResource",
 	];
 	/** IAM actions required for the DeleteIdentitySource API call. */
-	static readonly DELETE_IDENTITY_SOURCE: string[] = [
-		"mpa:DeleteIdentitySource",
-	];
+	static readonly DeleteIdentitySource: string[] = ["mpa:DeleteIdentitySource"];
 	/** IAM actions required for the DeleteInactiveApprovalTeamVersion API call. */
-	static readonly DELETE_INACTIVE_APPROVAL_TEAM_VERSION: string[] = [
+	static readonly DeleteInactiveApprovalTeamVersion: string[] = [
 		"mpa:DeleteInactiveApprovalTeamVersion",
 	];
 	/** IAM actions required for the GetApprovalTeam API call. */
-	static readonly GET_APPROVAL_TEAM: string[] = ["mpa:GetApprovalTeam"];
+	static readonly opGetApprovalTeam: string[] = ["mpa:GetApprovalTeam"];
 	/** IAM actions required for the GetIdentitySource API call. */
-	static readonly GET_IDENTITY_SOURCE: string[] = ["mpa:GetIdentitySource"];
+	static readonly opGetIdentitySource: string[] = ["mpa:GetIdentitySource"];
 	/** IAM actions required for the GetPolicyVersion API call. */
-	static readonly GET_POLICY_VERSION: string[] = ["mpa:GetPolicyVersion"];
+	static readonly opGetPolicyVersion: string[] = ["mpa:GetPolicyVersion"];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = ["mpa:GetResourcePolicy"];
+	static readonly opGetResourcePolicy: string[] = ["mpa:GetResourcePolicy"];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["mpa:GetSession"];
+	static readonly opGetSession: string[] = ["mpa:GetSession"];
 	/** IAM actions required for the ListApprovalTeams API call. */
-	static readonly LIST_APPROVAL_TEAMS: string[] = ["mpa:ListApprovalTeams"];
+	static readonly ListApprovalTeams: string[] = ["mpa:ListApprovalTeams"];
 	/** IAM actions required for the ListIdentitySources API call. */
-	static readonly LIST_IDENTITY_SOURCES: string[] = ["mpa:ListIdentitySources"];
+	static readonly ListIdentitySources: string[] = ["mpa:ListIdentitySources"];
 	/** IAM actions required for the ListPolicies API call. */
-	static readonly LIST_POLICIES: string[] = ["mpa:ListPolicies"];
+	static readonly ListPolicies: string[] = ["mpa:ListPolicies"];
 	/** IAM actions required for the ListPolicyVersions API call. */
-	static readonly LIST_POLICY_VERSIONS: string[] = ["mpa:ListPolicyVersions"];
+	static readonly ListPolicyVersions: string[] = ["mpa:ListPolicyVersions"];
 	/** IAM actions required for the ListResourcePolicies API call. */
-	static readonly LIST_RESOURCE_POLICIES: string[] = [
-		"mpa:ListResourcePolicies",
-	];
+	static readonly ListResourcePolicies: string[] = ["mpa:ListResourcePolicies"];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["mpa:ListSessions"];
+	static readonly ListSessions: string[] = ["mpa:ListSessions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"mpa:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["mpa:ListTagsForResource"];
 	/** IAM actions required for the StartActiveApprovalTeamDeletion API call. */
-	static readonly START_ACTIVE_APPROVAL_TEAM_DELETION: string[] = [
+	static readonly StartActiveApprovalTeamDeletion: string[] = [
 		"mpa:StartActiveApprovalTeamDeletion",
 	];
 	/** IAM actions required for the StartApprovalTeamBaseline API call. */
-	static readonly START_APPROVAL_TEAM_BASELINE: string[] = [
+	static readonly StartApprovalTeamBaseline: string[] = [
 		"mpa:StartApprovalTeamBaseline",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["mpa:TagResource"];
+	static readonly TagResource: string[] = ["mpa:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["mpa:UntagResource"];
+	static readonly UntagResource: string[] = ["mpa:UntagResource"];
 	/** IAM actions required for the UpdateApprovalTeam API call. */
-	static readonly UPDATE_APPROVAL_TEAM: string[] = ["mpa:UpdateApprovalTeam"];
+	static readonly UpdateApprovalTeam: string[] = ["mpa:UpdateApprovalTeam"];
 }
 
 /**
@@ -331,79 +363,81 @@ export class MpaOperations {
  */
 export class MpaConditions {
 	/** Condition keys applicable to the CancelSession action. */
-	static readonly CANCEL_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CancelSessionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"mpa:ProtectedResourceAccount",
 		"mpa:RequestedOperation",
 	];
 	/** Condition keys applicable to the CreateApprovalTeam action. */
-	static readonly CREATE_APPROVAL_TEAM_CONDITION_KEYS: string[] = [
+	static readonly CreateApprovalTeamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIdentitySource action. */
-	static readonly CREATE_IDENTITY_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly CreateIdentitySourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteIdentitySource action. */
-	static readonly DELETE_IDENTITY_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly DeleteIdentitySourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteInactiveApprovalTeamVersion action. */
-	static readonly DELETE_INACTIVE_APPROVAL_TEAM_VERSION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteInactiveApprovalTeamVersionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetApprovalTeam action. */
-	static readonly GET_APPROVAL_TEAM_CONDITION_KEYS: string[] = [
+	static readonly actionGetApprovalTeamConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetIdentitySource action. */
-	static readonly GET_IDENTITY_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetIdentitySourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSession action. */
-	static readonly GET_SESSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetSessionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"mpa:ProtectedResourceAccount",
 		"mpa:RequestedOperation",
 	];
 	/** Condition keys applicable to the StartActiveApprovalTeamDeletion action. */
-	static readonly START_ACTIVE_APPROVAL_TEAM_DELETION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly StartActiveApprovalTeamDeletionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the StartApprovalTeamBaseline action. */
-	static readonly START_APPROVAL_TEAM_BASELINE_CONDITION_KEYS: string[] = [
+	static readonly StartApprovalTeamBaselineConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartSession action. */
-	static readonly START_SESSION_CONDITION_KEYS: string[] = [
+	static readonly StartSessionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"mpa:ProtectedResourceAccount",
 		"mpa:RequestedOperation",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateApprovalTeam action. */
-	static readonly UPDATE_APPROVAL_TEAM_CONDITION_KEYS: string[] = [
+	static readonly UpdateApprovalTeamConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: mpa:ProtectedResourceAccount (String) */
 	static readonly PROTECTED_RESOURCE_ACCOUNT = "mpa:ProtectedResourceAccount";
 	/** Condition key: mpa:RequestedOperation (String) */

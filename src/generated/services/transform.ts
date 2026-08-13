@@ -13,98 +13,156 @@ export class TransformActions {
 	static readonly SERVICE_PREFIX = "transform";
 
 	/** [Write] transform:AccessTransformProfile */
-	static readonly ACCESS_TRANSFORM_PROFILE = "transform:AccessTransformProfile";
+	static readonly AccessTransformProfile = "transform:AccessTransformProfile";
 	/** [Write] transform:AssociateConnectorResource */
-	static readonly ASSOCIATE_CONNECTOR_RESOURCE =
+	static readonly AssociateConnectorResource =
 		"transform:AssociateConnectorResource";
 	/** [Write] transform:CreateProfile */
-	static readonly CREATE_PROFILE = "transform:CreateProfile";
+	static readonly CreateProfile = "transform:CreateProfile";
 	/** [Write] transform:DeleteAgentRuntimeConfiguration */
-	static readonly DELETE_AGENT_RUNTIME_CONFIGURATION =
+	static readonly DeleteAgentRuntimeConfiguration =
 		"transform:DeleteAgentRuntimeConfiguration";
 	/** [Write] transform:DeleteConnector */
-	static readonly DELETE_CONNECTOR = "transform:DeleteConnector";
+	static readonly DeleteConnector = "transform:DeleteConnector";
 	/** [Write] transform:DeleteProfile */
-	static readonly DELETE_PROFILE = "transform:DeleteProfile";
+	static readonly DeleteProfile = "transform:DeleteProfile";
 	/** [Read] transform:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "transform:GetAccountSettings";
+	static readonly actionGetAccountSettings = "transform:GetAccountSettings";
 	/** [Read] transform:GetAgent */
-	static readonly GET_AGENT = "transform:GetAgent";
+	static readonly actionGetAgent = "transform:GetAgent";
 	/** [Read] transform:GetAgentRuntimeConfiguration */
-	static readonly GET_AGENT_RUNTIME_CONFIGURATION =
+	static readonly actionGetAgentRuntimeConfiguration =
 		"transform:GetAgentRuntimeConfiguration";
 	/** [Read] transform:GetConnector */
-	static readonly GET_CONNECTOR = "transform:GetConnector";
+	static readonly actionGetConnector = "transform:GetConnector";
 	/** [Read] transform:GetWebAppUrl */
-	static readonly GET_WEB_APP_URL = "transform:GetWebAppUrl";
+	static readonly actionGetWebAppUrl = "transform:GetWebAppUrl";
 	/** [Read] transform:ListAgents */
-	static readonly LIST_AGENTS = "transform:ListAgents";
+	static readonly ListAgents = "transform:ListAgents";
 	/** [List] transform:ListConnectors */
-	static readonly LIST_CONNECTORS = "transform:ListConnectors";
+	static readonly ListConnectors = "transform:ListConnectors";
 	/** [List] transform:ListProfiles */
-	static readonly LIST_PROFILES = "transform:ListProfiles";
+	static readonly ListProfiles = "transform:ListProfiles";
 	/** [Read] transform:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "transform:ListTagsForResource";
+	static readonly ListTagsForResource = "transform:ListTagsForResource";
 	/** [Write] transform:PutAgentRuntimeConfiguration */
-	static readonly PUT_AGENT_RUNTIME_CONFIGURATION =
+	static readonly PutAgentRuntimeConfiguration =
 		"transform:PutAgentRuntimeConfiguration";
 	/** [Write] transform:RejectConnector */
-	static readonly REJECT_CONNECTOR = "transform:RejectConnector";
+	static readonly RejectConnector = "transform:RejectConnector";
 	/** [Tagging] transform:TagResource */
-	static readonly TAG_RESOURCE = "transform:TagResource";
+	static readonly TagResource = "transform:TagResource";
 	/** [Tagging] transform:UntagResource */
-	static readonly UNTAG_RESOURCE = "transform:UntagResource";
+	static readonly UntagResource = "transform:UntagResource";
 	/** [Write] transform:UpdateAccountSettings */
-	static readonly UPDATE_ACCOUNT_SETTINGS = "transform:UpdateAccountSettings";
+	static readonly UpdateAccountSettings = "transform:UpdateAccountSettings";
 	/** [Write] transform:UpdateAgentAccess */
-	static readonly UPDATE_AGENT_ACCESS = "transform:UpdateAgentAccess";
+	static readonly UpdateAgentAccess = "transform:UpdateAgentAccess";
 	/** [Write] transform:UpdateProfile */
-	static readonly UPDATE_PROFILE = "transform:UpdateProfile";
+	static readonly UpdateProfile = "transform:UpdateProfile";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		TransformActions.GET_ACCOUNT_SETTINGS,
-		TransformActions.GET_AGENT,
-		TransformActions.GET_AGENT_RUNTIME_CONFIGURATION,
-		TransformActions.GET_CONNECTOR,
-		TransformActions.GET_WEB_APP_URL,
-		TransformActions.LIST_AGENTS,
-		TransformActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		TransformActions.actionGetAccountSettings,
+		TransformActions.actionGetAgent,
+		TransformActions.actionGetAgentRuntimeConfiguration,
+		TransformActions.actionGetConnector,
+		TransformActions.actionGetWebAppUrl,
+		TransformActions.ListAgents,
+		TransformActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		TransformActions.ACCESS_TRANSFORM_PROFILE,
-		TransformActions.ASSOCIATE_CONNECTOR_RESOURCE,
-		TransformActions.CREATE_PROFILE,
-		TransformActions.DELETE_AGENT_RUNTIME_CONFIGURATION,
-		TransformActions.DELETE_CONNECTOR,
-		TransformActions.DELETE_PROFILE,
-		TransformActions.PUT_AGENT_RUNTIME_CONFIGURATION,
-		TransformActions.REJECT_CONNECTOR,
-		TransformActions.UPDATE_ACCOUNT_SETTINGS,
-		TransformActions.UPDATE_AGENT_ACCESS,
-		TransformActions.UPDATE_PROFILE,
+	static readonly AllWriteActions: string[] = [
+		TransformActions.AccessTransformProfile,
+		TransformActions.AssociateConnectorResource,
+		TransformActions.CreateProfile,
+		TransformActions.DeleteAgentRuntimeConfiguration,
+		TransformActions.DeleteConnector,
+		TransformActions.DeleteProfile,
+		TransformActions.PutAgentRuntimeConfiguration,
+		TransformActions.RejectConnector,
+		TransformActions.UpdateAccountSettings,
+		TransformActions.UpdateAgentAccess,
+		TransformActions.UpdateProfile,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		TransformActions.LIST_CONNECTORS,
-		TransformActions.LIST_PROFILES,
+	static readonly AllListActions: string[] = [
+		TransformActions.ListConnectors,
+		TransformActions.ListProfiles,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		TransformActions.TAG_RESOURCE,
-		TransformActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		TransformActions.TagResource,
+		TransformActions.UntagResource,
 	];
 }
 
-const ConnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transform:(?<region>[^:]*):(?<account>[^:]*):connector/(?<workspaceId>[^:/?]+)/(?<connectorId>[^:/?]+)$",
-);
-const ProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):transform:(?<region>[^:]*):(?<account>[^:]*):profile/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a connector ARN.
+ */
+export interface TransformConnectorArnProps {
+	/** The WorkspaceId component of the ARN. */
+	readonly workspaceId: string;
+	/** The ConnectorId component of the ARN. */
+	readonly connectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector ARN.
+ */
+export interface TransformConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceId component. */
+	readonly workspaceId: string;
+	/** The ConnectorId component. */
+	readonly connectorId: string;
+}
+
+/**
+ * Properties for building a profile ARN.
+ */
+export interface TransformProfileArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a profile ARN.
+ */
+export interface TransformProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const ConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):transform:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<workspaceId>[^:/?]+)\/(?<connectorId>[^:/?]+)$/;
+const ProfileArnRegex =
+	/^arn:(?<partition>[^:]+):transform:(?<region>[^:]*):(?<account>[^:]*):profile\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for transform resources.
@@ -113,18 +171,7 @@ export class TransformResources {
 	/**
 	 * Builds an ARN for the connector resource.
 	 */
-	static connector(props: {
-		/** The WorkspaceId component of the ARN. */
-		readonly workspaceId: string;
-		/** The ConnectorId component of the ARN. */
-		readonly connectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connector(props: TransformConnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transform:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.workspaceId}/${props.connectorId}`;
 	}
 
@@ -139,13 +186,7 @@ export class TransformResources {
 	 * Parses a connector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceId: string;
-		connectorId: string;
-	} {
+	static parseConnectorArn(arn: string): TransformConnectorArnComponents {
 		const match = ConnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connector ARN: ${arn}`);
@@ -162,16 +203,7 @@ export class TransformResources {
 	/**
 	 * Builds an ARN for the profile resource.
 	 */
-	static profile(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profile(props: TransformProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:transform:${props.region ?? "*"}:${props.account ?? "*"}:profile/${props.identifier}`;
 	}
 
@@ -186,12 +218,7 @@ export class TransformResources {
 	 * Parses a profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseProfileArn(arn: string): TransformProfileArnComponents {
 		const match = ProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid profile ARN: ${arn}`);
@@ -210,39 +237,39 @@ export class TransformResources {
  */
 export class TransformConditions {
 	/** Condition keys applicable to the AssociateConnectorResource action. */
-	static readonly ASSOCIATE_CONNECTOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AssociateConnectorResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteConnector action. */
-	static readonly DELETE_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly DeleteConnectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetConnector action. */
-	static readonly GET_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly actionGetConnectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListConnectors action. */
-	static readonly LIST_CONNECTORS_CONDITION_KEYS: string[] = [
+	static readonly ListConnectorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RejectConnector action. */
-	static readonly REJECT_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly RejectConnectorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

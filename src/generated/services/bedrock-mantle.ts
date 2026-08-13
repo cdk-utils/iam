@@ -13,150 +13,231 @@ export class BedrockMantleActions {
 	static readonly SERVICE_PREFIX = "bedrock-mantle";
 
 	/** [Write] bedrock-mantle:ArchiveProject */
-	static readonly ARCHIVE_PROJECT = "bedrock-mantle:ArchiveProject";
+	static readonly ArchiveProject = "bedrock-mantle:ArchiveProject";
 	/** [Write] bedrock-mantle:AssociateCustomizedModel */
-	static readonly ASSOCIATE_CUSTOMIZED_MODEL =
+	static readonly AssociateCustomizedModel =
 		"bedrock-mantle:AssociateCustomizedModel";
 	/** [List] bedrock-mantle:CallWithBearerToken */
-	static readonly CALL_WITH_BEARER_TOKEN = "bedrock-mantle:CallWithBearerToken";
+	static readonly CallWithBearerToken = "bedrock-mantle:CallWithBearerToken";
 	/** [Write] bedrock-mantle:CancelFineTuningJob */
-	static readonly CANCEL_FINE_TUNING_JOB = "bedrock-mantle:CancelFineTuningJob";
+	static readonly CancelFineTuningJob = "bedrock-mantle:CancelFineTuningJob";
 	/** [Write] bedrock-mantle:CancelInference */
-	static readonly CANCEL_INFERENCE = "bedrock-mantle:CancelInference";
+	static readonly CancelInference = "bedrock-mantle:CancelInference";
 	/** [Write] bedrock-mantle:CreateCustomizedModel */
-	static readonly CREATE_CUSTOMIZED_MODEL =
+	static readonly CreateCustomizedModel =
 		"bedrock-mantle:CreateCustomizedModel";
 	/** [Write] bedrock-mantle:CreateFile */
-	static readonly CREATE_FILE = "bedrock-mantle:CreateFile";
+	static readonly CreateFile = "bedrock-mantle:CreateFile";
 	/** [Write] bedrock-mantle:CreateFineTuningJob */
-	static readonly CREATE_FINE_TUNING_JOB = "bedrock-mantle:CreateFineTuningJob";
+	static readonly CreateFineTuningJob = "bedrock-mantle:CreateFineTuningJob";
 	/** [Write] bedrock-mantle:CreateInference */
-	static readonly CREATE_INFERENCE = "bedrock-mantle:CreateInference";
+	static readonly CreateInference = "bedrock-mantle:CreateInference";
 	/** [Write] bedrock-mantle:CreateProject */
-	static readonly CREATE_PROJECT = "bedrock-mantle:CreateProject";
+	static readonly CreateProject = "bedrock-mantle:CreateProject";
 	/** [Write] bedrock-mantle:CreateReservation */
-	static readonly CREATE_RESERVATION = "bedrock-mantle:CreateReservation";
+	static readonly CreateReservation = "bedrock-mantle:CreateReservation";
 	/** [Write] bedrock-mantle:DeleteCustomizedModel */
-	static readonly DELETE_CUSTOMIZED_MODEL =
+	static readonly DeleteCustomizedModel =
 		"bedrock-mantle:DeleteCustomizedModel";
 	/** [Write] bedrock-mantle:DeleteFile */
-	static readonly DELETE_FILE = "bedrock-mantle:DeleteFile";
+	static readonly DeleteFile = "bedrock-mantle:DeleteFile";
 	/** [Write] bedrock-mantle:DeleteInference */
-	static readonly DELETE_INFERENCE = "bedrock-mantle:DeleteInference";
+	static readonly DeleteInference = "bedrock-mantle:DeleteInference";
 	/** [Write] bedrock-mantle:DeleteReservation */
-	static readonly DELETE_RESERVATION = "bedrock-mantle:DeleteReservation";
+	static readonly DeleteReservation = "bedrock-mantle:DeleteReservation";
 	/** [Write] bedrock-mantle:DisassociateCustomizedModel */
-	static readonly DISASSOCIATE_CUSTOMIZED_MODEL =
+	static readonly DisassociateCustomizedModel =
 		"bedrock-mantle:DisassociateCustomizedModel";
 	/** [Read] bedrock-mantle:GetAccountDataRetention */
-	static readonly GET_ACCOUNT_DATA_RETENTION =
+	static readonly actionGetAccountDataRetention =
 		"bedrock-mantle:GetAccountDataRetention";
 	/** [Read] bedrock-mantle:GetCustomizedModel */
-	static readonly GET_CUSTOMIZED_MODEL = "bedrock-mantle:GetCustomizedModel";
+	static readonly actionGetCustomizedModel =
+		"bedrock-mantle:GetCustomizedModel";
 	/** [Read] bedrock-mantle:GetFile */
-	static readonly GET_FILE = "bedrock-mantle:GetFile";
+	static readonly actionGetFile = "bedrock-mantle:GetFile";
 	/** [Read] bedrock-mantle:GetFineTuningJob */
-	static readonly GET_FINE_TUNING_JOB = "bedrock-mantle:GetFineTuningJob";
+	static readonly actionGetFineTuningJob = "bedrock-mantle:GetFineTuningJob";
 	/** [Read] bedrock-mantle:GetInference */
-	static readonly GET_INFERENCE = "bedrock-mantle:GetInference";
+	static readonly actionGetInference = "bedrock-mantle:GetInference";
 	/** [Read] bedrock-mantle:GetModel */
-	static readonly GET_MODEL = "bedrock-mantle:GetModel";
+	static readonly actionGetModel = "bedrock-mantle:GetModel";
 	/** [Read] bedrock-mantle:GetProject */
-	static readonly GET_PROJECT = "bedrock-mantle:GetProject";
+	static readonly actionGetProject = "bedrock-mantle:GetProject";
 	/** [Read] bedrock-mantle:GetReservation */
-	static readonly GET_RESERVATION = "bedrock-mantle:GetReservation";
+	static readonly actionGetReservation = "bedrock-mantle:GetReservation";
 	/** [List] bedrock-mantle:ListCustomizedModelAssociations */
-	static readonly LIST_CUSTOMIZED_MODEL_ASSOCIATIONS =
+	static readonly ListCustomizedModelAssociations =
 		"bedrock-mantle:ListCustomizedModelAssociations";
 	/** [List] bedrock-mantle:ListCustomizedModels */
-	static readonly LIST_CUSTOMIZED_MODELS =
-		"bedrock-mantle:ListCustomizedModels";
+	static readonly ListCustomizedModels = "bedrock-mantle:ListCustomizedModels";
 	/** [List] bedrock-mantle:ListFiles */
-	static readonly LIST_FILES = "bedrock-mantle:ListFiles";
+	static readonly ListFiles = "bedrock-mantle:ListFiles";
 	/** [List] bedrock-mantle:ListFineTuningJobs */
-	static readonly LIST_FINE_TUNING_JOBS = "bedrock-mantle:ListFineTuningJobs";
+	static readonly ListFineTuningJobs = "bedrock-mantle:ListFineTuningJobs";
 	/** [List] bedrock-mantle:ListModels */
-	static readonly LIST_MODELS = "bedrock-mantle:ListModels";
+	static readonly ListModels = "bedrock-mantle:ListModels";
 	/** [List] bedrock-mantle:ListProjects */
-	static readonly LIST_PROJECTS = "bedrock-mantle:ListProjects";
+	static readonly ListProjects = "bedrock-mantle:ListProjects";
 	/** [List] bedrock-mantle:ListReservations */
-	static readonly LIST_RESERVATIONS = "bedrock-mantle:ListReservations";
+	static readonly ListReservations = "bedrock-mantle:ListReservations";
 	/** [Read] bedrock-mantle:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "bedrock-mantle:ListTagsForResource";
+	static readonly ListTagsForResource = "bedrock-mantle:ListTagsForResource";
 	/** [Write] bedrock-mantle:PutAccountDataRetention */
-	static readonly PUT_ACCOUNT_DATA_RETENTION =
+	static readonly PutAccountDataRetention =
 		"bedrock-mantle:PutAccountDataRetention";
 	/** [Tagging] bedrock-mantle:TagResource */
-	static readonly TAG_RESOURCE = "bedrock-mantle:TagResource";
+	static readonly TagResource = "bedrock-mantle:TagResource";
 	/** [Tagging] bedrock-mantle:UntagResource */
-	static readonly UNTAG_RESOURCE = "bedrock-mantle:UntagResource";
+	static readonly UntagResource = "bedrock-mantle:UntagResource";
 	/** [Write] bedrock-mantle:UpdateProject */
-	static readonly UPDATE_PROJECT = "bedrock-mantle:UpdateProject";
+	static readonly UpdateProject = "bedrock-mantle:UpdateProject";
 	/** [Write] bedrock-mantle:UpdateReservation */
-	static readonly UPDATE_RESERVATION = "bedrock-mantle:UpdateReservation";
+	static readonly UpdateReservation = "bedrock-mantle:UpdateReservation";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BedrockMantleActions.GET_ACCOUNT_DATA_RETENTION,
-		BedrockMantleActions.GET_CUSTOMIZED_MODEL,
-		BedrockMantleActions.GET_FILE,
-		BedrockMantleActions.GET_FINE_TUNING_JOB,
-		BedrockMantleActions.GET_INFERENCE,
-		BedrockMantleActions.GET_MODEL,
-		BedrockMantleActions.GET_PROJECT,
-		BedrockMantleActions.GET_RESERVATION,
-		BedrockMantleActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		BedrockMantleActions.actionGetAccountDataRetention,
+		BedrockMantleActions.actionGetCustomizedModel,
+		BedrockMantleActions.actionGetFile,
+		BedrockMantleActions.actionGetFineTuningJob,
+		BedrockMantleActions.actionGetInference,
+		BedrockMantleActions.actionGetModel,
+		BedrockMantleActions.actionGetProject,
+		BedrockMantleActions.actionGetReservation,
+		BedrockMantleActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BedrockMantleActions.ARCHIVE_PROJECT,
-		BedrockMantleActions.ASSOCIATE_CUSTOMIZED_MODEL,
-		BedrockMantleActions.CANCEL_FINE_TUNING_JOB,
-		BedrockMantleActions.CANCEL_INFERENCE,
-		BedrockMantleActions.CREATE_CUSTOMIZED_MODEL,
-		BedrockMantleActions.CREATE_FILE,
-		BedrockMantleActions.CREATE_FINE_TUNING_JOB,
-		BedrockMantleActions.CREATE_INFERENCE,
-		BedrockMantleActions.CREATE_PROJECT,
-		BedrockMantleActions.CREATE_RESERVATION,
-		BedrockMantleActions.DELETE_CUSTOMIZED_MODEL,
-		BedrockMantleActions.DELETE_FILE,
-		BedrockMantleActions.DELETE_INFERENCE,
-		BedrockMantleActions.DELETE_RESERVATION,
-		BedrockMantleActions.DISASSOCIATE_CUSTOMIZED_MODEL,
-		BedrockMantleActions.PUT_ACCOUNT_DATA_RETENTION,
-		BedrockMantleActions.UPDATE_PROJECT,
-		BedrockMantleActions.UPDATE_RESERVATION,
+	static readonly AllWriteActions: string[] = [
+		BedrockMantleActions.ArchiveProject,
+		BedrockMantleActions.AssociateCustomizedModel,
+		BedrockMantleActions.CancelFineTuningJob,
+		BedrockMantleActions.CancelInference,
+		BedrockMantleActions.CreateCustomizedModel,
+		BedrockMantleActions.CreateFile,
+		BedrockMantleActions.CreateFineTuningJob,
+		BedrockMantleActions.CreateInference,
+		BedrockMantleActions.CreateProject,
+		BedrockMantleActions.CreateReservation,
+		BedrockMantleActions.DeleteCustomizedModel,
+		BedrockMantleActions.DeleteFile,
+		BedrockMantleActions.DeleteInference,
+		BedrockMantleActions.DeleteReservation,
+		BedrockMantleActions.DisassociateCustomizedModel,
+		BedrockMantleActions.PutAccountDataRetention,
+		BedrockMantleActions.UpdateProject,
+		BedrockMantleActions.UpdateReservation,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BedrockMantleActions.CALL_WITH_BEARER_TOKEN,
-		BedrockMantleActions.LIST_CUSTOMIZED_MODEL_ASSOCIATIONS,
-		BedrockMantleActions.LIST_CUSTOMIZED_MODELS,
-		BedrockMantleActions.LIST_FILES,
-		BedrockMantleActions.LIST_FINE_TUNING_JOBS,
-		BedrockMantleActions.LIST_MODELS,
-		BedrockMantleActions.LIST_PROJECTS,
-		BedrockMantleActions.LIST_RESERVATIONS,
+	static readonly AllListActions: string[] = [
+		BedrockMantleActions.CallWithBearerToken,
+		BedrockMantleActions.ListCustomizedModelAssociations,
+		BedrockMantleActions.ListCustomizedModels,
+		BedrockMantleActions.ListFiles,
+		BedrockMantleActions.ListFineTuningJobs,
+		BedrockMantleActions.ListModels,
+		BedrockMantleActions.ListProjects,
+		BedrockMantleActions.ListReservations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BedrockMantleActions.TAG_RESOURCE,
-		BedrockMantleActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BedrockMantleActions.TagResource,
+		BedrockMantleActions.UntagResource,
 	];
 }
 
-const CustomizedModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):customized-model/(?<resourceId>[^:/?]+)$",
-);
-const ProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):project/(?<resourceId>[^:/?]+)$",
-);
-const ReservationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):reservation/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a customized-model ARN.
+ */
+export interface BedrockMantleCustomizedModelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a customized-model ARN.
+ */
+export interface BedrockMantleCustomizedModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface BedrockMantleProjectArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface BedrockMantleProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a reservation ARN.
+ */
+export interface BedrockMantleReservationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reservation ARN.
+ */
+export interface BedrockMantleReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const CustomizedModelArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):customized-model\/(?<resourceId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):project\/(?<resourceId>[^:/?]+)$/;
+const ReservationArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-mantle:(?<region>[^:]*):(?<account>[^:]*):reservation\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bedrock-mantle resources.
@@ -165,16 +246,7 @@ export class BedrockMantleResources {
 	/**
 	 * Builds an ARN for the customized-model resource.
 	 */
-	static customizedModel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customizedModel(props: BedrockMantleCustomizedModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock-mantle:${props.region ?? "*"}:${props.account ?? "*"}:customized-model/${props.resourceId}`;
 	}
 
@@ -189,12 +261,9 @@ export class BedrockMantleResources {
 	 * Parses a customized-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomizedModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseCustomizedModelArn(
+		arn: string,
+	): BedrockMantleCustomizedModelArnComponents {
 		const match = CustomizedModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid customized-model ARN: ${arn}`);
@@ -210,16 +279,7 @@ export class BedrockMantleResources {
 	/**
 	 * Builds an ARN for the project resource.
 	 */
-	static project(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static project(props: BedrockMantleProjectArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock-mantle:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.resourceId}`;
 	}
 
@@ -234,12 +294,7 @@ export class BedrockMantleResources {
 	 * Parses a project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProjectArn(arn: string): BedrockMantleProjectArnComponents {
 		const match = ProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid project ARN: ${arn}`);
@@ -255,16 +310,7 @@ export class BedrockMantleResources {
 	/**
 	 * Builds an ARN for the reservation resource.
 	 */
-	static reservation(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reservation(props: BedrockMantleReservationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock-mantle:${props.region ?? "*"}:${props.account ?? "*"}:reservation/${props.resourceId}`;
 	}
 
@@ -279,12 +325,9 @@ export class BedrockMantleResources {
 	 * Parses a reservation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReservationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseReservationArn(
+		arn: string,
+	): BedrockMantleReservationArnComponents {
 		const match = ReservationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reservation ARN: ${arn}`);
@@ -303,93 +346,93 @@ export class BedrockMantleResources {
  */
 export class BedrockMantleConditions {
 	/** Condition keys applicable to the AssociateCustomizedModel action. */
-	static readonly ASSOCIATE_CUSTOMIZED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly AssociateCustomizedModelConditionKeys: string[] = [
 		"bedrock-mantle:CustomizedModelArn",
 		"bedrock-mantle:ProjectArn",
 	];
 	/** Condition keys applicable to the CallWithBearerToken action. */
-	static readonly CALL_WITH_BEARER_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly CallWithBearerTokenConditionKeys: string[] = [
 		"bedrock-mantle:BearerTokenType",
 	];
 	/** Condition keys applicable to the CancelFineTuningJob action. */
-	static readonly CANCEL_FINE_TUNING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CancelFineTuningJobConditionKeys: string[] = [
 		"bedrock-mantle:FineTuningJob",
 	];
 	/** Condition keys applicable to the CreateCustomizedModel action. */
-	static readonly CREATE_CUSTOMIZED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomizedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFineTuningJob action. */
-	static readonly CREATE_FINE_TUNING_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateFineTuningJobConditionKeys: string[] = [
 		"bedrock-mantle:Files",
 		"bedrock-mantle:Model",
 	];
 	/** Condition keys applicable to the CreateInference action. */
-	static readonly CREATE_INFERENCE_CONDITION_KEYS: string[] = [
+	static readonly CreateInferenceConditionKeys: string[] = [
 		"bedrock-mantle:Model",
 		"bedrock-mantle:ServiceTier",
 	];
 	/** Condition keys applicable to the CreateProject action. */
-	static readonly CREATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"bedrock-mantle:DataRetentionMode",
 	];
 	/** Condition keys applicable to the CreateReservation action. */
-	static readonly CREATE_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly CreateReservationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"bedrock-mantle:ProjectArn",
 		"bedrock-mantle:ReservationArn",
 	];
 	/** Condition keys applicable to the DeleteFile action. */
-	static readonly DELETE_FILE_CONDITION_KEYS: string[] = [
-		"bedrock-mantle:Files",
-	];
+	static readonly DeleteFileConditionKeys: string[] = ["bedrock-mantle:Files"];
 	/** Condition keys applicable to the DeleteReservation action. */
-	static readonly DELETE_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteReservationConditionKeys: string[] = [
 		"bedrock-mantle:ProjectArn",
 		"bedrock-mantle:ReservationArn",
 	];
 	/** Condition keys applicable to the DisassociateCustomizedModel action. */
-	static readonly DISASSOCIATE_CUSTOMIZED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly DisassociateCustomizedModelConditionKeys: string[] = [
 		"bedrock-mantle:CustomizedModelArn",
 		"bedrock-mantle:ProjectArn",
 	];
 	/** Condition keys applicable to the GetFile action. */
-	static readonly GET_FILE_CONDITION_KEYS: string[] = ["bedrock-mantle:Files"];
+	static readonly actionGetFileConditionKeys: string[] = [
+		"bedrock-mantle:Files",
+	];
 	/** Condition keys applicable to the GetFineTuningJob action. */
-	static readonly GET_FINE_TUNING_JOB_CONDITION_KEYS: string[] = [
+	static readonly actionGetFineTuningJobConditionKeys: string[] = [
 		"bedrock-mantle:FineTuningJob",
 	];
 	/** Condition keys applicable to the PutAccountDataRetention action. */
-	static readonly PUT_ACCOUNT_DATA_RETENTION_CONDITION_KEYS: string[] = [
+	static readonly PutAccountDataRetentionConditionKeys: string[] = [
 		"bedrock-mantle:DataRetentionMode",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateProject action. */
-	static readonly UPDATE_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly UpdateProjectConditionKeys: string[] = [
 		"bedrock-mantle:DataRetentionMode",
 	];
 	/** Condition keys applicable to the UpdateReservation action. */
-	static readonly UPDATE_RESERVATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateReservationConditionKeys: string[] = [
 		"bedrock-mantle:ProjectArn",
 		"bedrock-mantle:ReservationArn",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: bedrock-mantle:BearerTokenType (String) */
 	static readonly BEARER_TOKEN_TYPE = "bedrock-mantle:BearerTokenType";
 	/** Condition key: bedrock-mantle:CustomizedModelArn (String) */

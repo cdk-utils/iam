@@ -13,358 +13,692 @@ export class WisdomActions {
 	static readonly SERVICE_PREFIX = "wisdom";
 
 	/** [Write] wisdom:ActivateMessageTemplate */
-	static readonly ACTIVATE_MESSAGE_TEMPLATE = "wisdom:ActivateMessageTemplate";
+	static readonly ActivateMessageTemplate = "wisdom:ActivateMessageTemplate";
 	/** [PermissionManagement] wisdom:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"wisdom:AllowVendedLogDeliveryForResource";
 	/** [Write] wisdom:CreateAIAgent */
-	static readonly CREATE_AI_AGENT = "wisdom:CreateAIAgent";
+	static readonly CreateAIAgent = "wisdom:CreateAIAgent";
 	/** [Write] wisdom:CreateAIAgentVersion */
-	static readonly CREATE_AI_AGENT_VERSION = "wisdom:CreateAIAgentVersion";
+	static readonly CreateAIAgentVersion = "wisdom:CreateAIAgentVersion";
 	/** [Write] wisdom:CreateAIGuardrail */
-	static readonly CREATE_AI_GUARDRAIL = "wisdom:CreateAIGuardrail";
+	static readonly CreateAIGuardrail = "wisdom:CreateAIGuardrail";
 	/** [Write] wisdom:CreateAIGuardrailVersion */
-	static readonly CREATE_AI_GUARDRAIL_VERSION =
-		"wisdom:CreateAIGuardrailVersion";
+	static readonly CreateAIGuardrailVersion = "wisdom:CreateAIGuardrailVersion";
 	/** [Write] wisdom:CreateAIPrompt */
-	static readonly CREATE_AI_PROMPT = "wisdom:CreateAIPrompt";
+	static readonly CreateAIPrompt = "wisdom:CreateAIPrompt";
 	/** [Write] wisdom:CreateAIPromptVersion */
-	static readonly CREATE_AI_PROMPT_VERSION = "wisdom:CreateAIPromptVersion";
+	static readonly CreateAIPromptVersion = "wisdom:CreateAIPromptVersion";
 	/** [Write] wisdom:CreateAssistant */
-	static readonly CREATE_ASSISTANT = "wisdom:CreateAssistant";
+	static readonly CreateAssistant = "wisdom:CreateAssistant";
 	/** [Write] wisdom:CreateAssistantAssociation */
-	static readonly CREATE_ASSISTANT_ASSOCIATION =
+	static readonly CreateAssistantAssociation =
 		"wisdom:CreateAssistantAssociation";
 	/** [Write] wisdom:CreateContent */
-	static readonly CREATE_CONTENT = "wisdom:CreateContent";
+	static readonly CreateContent = "wisdom:CreateContent";
 	/** [Write] wisdom:CreateContentAssociation */
-	static readonly CREATE_CONTENT_ASSOCIATION =
-		"wisdom:CreateContentAssociation";
+	static readonly CreateContentAssociation = "wisdom:CreateContentAssociation";
 	/** [Write] wisdom:CreateKnowledgeBase */
-	static readonly CREATE_KNOWLEDGE_BASE = "wisdom:CreateKnowledgeBase";
+	static readonly CreateKnowledgeBase = "wisdom:CreateKnowledgeBase";
 	/** [Write] wisdom:CreateMessageTemplate */
-	static readonly CREATE_MESSAGE_TEMPLATE = "wisdom:CreateMessageTemplate";
+	static readonly CreateMessageTemplate = "wisdom:CreateMessageTemplate";
 	/** [Write] wisdom:CreateMessageTemplateAttachment */
-	static readonly CREATE_MESSAGE_TEMPLATE_ATTACHMENT =
+	static readonly CreateMessageTemplateAttachment =
 		"wisdom:CreateMessageTemplateAttachment";
 	/** [Write] wisdom:CreateMessageTemplateVersion */
-	static readonly CREATE_MESSAGE_TEMPLATE_VERSION =
+	static readonly CreateMessageTemplateVersion =
 		"wisdom:CreateMessageTemplateVersion";
 	/** [Write] wisdom:CreateQuickResponse */
-	static readonly CREATE_QUICK_RESPONSE = "wisdom:CreateQuickResponse";
+	static readonly CreateQuickResponse = "wisdom:CreateQuickResponse";
 	/** [Write] wisdom:CreateSession */
-	static readonly CREATE_SESSION = "wisdom:CreateSession";
+	static readonly CreateSession = "wisdom:CreateSession";
 	/** [Write] wisdom:DeactivateMessageTemplate */
-	static readonly DEACTIVATE_MESSAGE_TEMPLATE =
+	static readonly DeactivateMessageTemplate =
 		"wisdom:DeactivateMessageTemplate";
 	/** [Write] wisdom:DeleteAIAgent */
-	static readonly DELETE_AI_AGENT = "wisdom:DeleteAIAgent";
+	static readonly DeleteAIAgent = "wisdom:DeleteAIAgent";
 	/** [Write] wisdom:DeleteAIAgentVersion */
-	static readonly DELETE_AI_AGENT_VERSION = "wisdom:DeleteAIAgentVersion";
+	static readonly DeleteAIAgentVersion = "wisdom:DeleteAIAgentVersion";
 	/** [Write] wisdom:DeleteAIGuardrail */
-	static readonly DELETE_AI_GUARDRAIL = "wisdom:DeleteAIGuardrail";
+	static readonly DeleteAIGuardrail = "wisdom:DeleteAIGuardrail";
 	/** [Write] wisdom:DeleteAIGuardrailVersion */
-	static readonly DELETE_AI_GUARDRAIL_VERSION =
-		"wisdom:DeleteAIGuardrailVersion";
+	static readonly DeleteAIGuardrailVersion = "wisdom:DeleteAIGuardrailVersion";
 	/** [Write] wisdom:DeleteAIPrompt */
-	static readonly DELETE_AI_PROMPT = "wisdom:DeleteAIPrompt";
+	static readonly DeleteAIPrompt = "wisdom:DeleteAIPrompt";
 	/** [Write] wisdom:DeleteAIPromptVersion */
-	static readonly DELETE_AI_PROMPT_VERSION = "wisdom:DeleteAIPromptVersion";
+	static readonly DeleteAIPromptVersion = "wisdom:DeleteAIPromptVersion";
 	/** [Write] wisdom:DeleteAssistant */
-	static readonly DELETE_ASSISTANT = "wisdom:DeleteAssistant";
+	static readonly DeleteAssistant = "wisdom:DeleteAssistant";
 	/** [Write] wisdom:DeleteAssistantAssociation */
-	static readonly DELETE_ASSISTANT_ASSOCIATION =
+	static readonly DeleteAssistantAssociation =
 		"wisdom:DeleteAssistantAssociation";
 	/** [Write] wisdom:DeleteContent */
-	static readonly DELETE_CONTENT = "wisdom:DeleteContent";
+	static readonly DeleteContent = "wisdom:DeleteContent";
 	/** [Write] wisdom:DeleteContentAssociation */
-	static readonly DELETE_CONTENT_ASSOCIATION =
-		"wisdom:DeleteContentAssociation";
+	static readonly DeleteContentAssociation = "wisdom:DeleteContentAssociation";
 	/** [Write] wisdom:DeleteImportJob */
-	static readonly DELETE_IMPORT_JOB = "wisdom:DeleteImportJob";
+	static readonly DeleteImportJob = "wisdom:DeleteImportJob";
 	/** [Write] wisdom:DeleteKnowledgeBase */
-	static readonly DELETE_KNOWLEDGE_BASE = "wisdom:DeleteKnowledgeBase";
+	static readonly DeleteKnowledgeBase = "wisdom:DeleteKnowledgeBase";
 	/** [Write] wisdom:DeleteMessageTemplate */
-	static readonly DELETE_MESSAGE_TEMPLATE = "wisdom:DeleteMessageTemplate";
+	static readonly DeleteMessageTemplate = "wisdom:DeleteMessageTemplate";
 	/** [Write] wisdom:DeleteMessageTemplateAttachment */
-	static readonly DELETE_MESSAGE_TEMPLATE_ATTACHMENT =
+	static readonly DeleteMessageTemplateAttachment =
 		"wisdom:DeleteMessageTemplateAttachment";
 	/** [Write] wisdom:DeleteQuickResponse */
-	static readonly DELETE_QUICK_RESPONSE = "wisdom:DeleteQuickResponse";
+	static readonly DeleteQuickResponse = "wisdom:DeleteQuickResponse";
 	/** [Read] wisdom:GetAIAgent */
-	static readonly GET_AI_AGENT = "wisdom:GetAIAgent";
+	static readonly actionGetAIAgent = "wisdom:GetAIAgent";
 	/** [Read] wisdom:GetAIGuardrail */
-	static readonly GET_AI_GUARDRAIL = "wisdom:GetAIGuardrail";
+	static readonly actionGetAIGuardrail = "wisdom:GetAIGuardrail";
 	/** [Read] wisdom:GetAIPrompt */
-	static readonly GET_AI_PROMPT = "wisdom:GetAIPrompt";
+	static readonly actionGetAIPrompt = "wisdom:GetAIPrompt";
 	/** [Read] wisdom:GetAssistant */
-	static readonly GET_ASSISTANT = "wisdom:GetAssistant";
+	static readonly actionGetAssistant = "wisdom:GetAssistant";
 	/** [Read] wisdom:GetAssistantAssociation */
-	static readonly GET_ASSISTANT_ASSOCIATION = "wisdom:GetAssistantAssociation";
+	static readonly actionGetAssistantAssociation =
+		"wisdom:GetAssistantAssociation";
 	/** [Read] wisdom:GetContent */
-	static readonly GET_CONTENT = "wisdom:GetContent";
+	static readonly actionGetContent = "wisdom:GetContent";
 	/** [Read] wisdom:GetContentAssociation */
-	static readonly GET_CONTENT_ASSOCIATION = "wisdom:GetContentAssociation";
+	static readonly actionGetContentAssociation = "wisdom:GetContentAssociation";
 	/** [Read] wisdom:GetContentSummary */
-	static readonly GET_CONTENT_SUMMARY = "wisdom:GetContentSummary";
+	static readonly actionGetContentSummary = "wisdom:GetContentSummary";
 	/** [Read] wisdom:GetImportJob */
-	static readonly GET_IMPORT_JOB = "wisdom:GetImportJob";
+	static readonly actionGetImportJob = "wisdom:GetImportJob";
 	/** [Read] wisdom:GetKnowledgeBase */
-	static readonly GET_KNOWLEDGE_BASE = "wisdom:GetKnowledgeBase";
+	static readonly actionGetKnowledgeBase = "wisdom:GetKnowledgeBase";
 	/** [Read] wisdom:GetMessageTemplate */
-	static readonly GET_MESSAGE_TEMPLATE = "wisdom:GetMessageTemplate";
+	static readonly actionGetMessageTemplate = "wisdom:GetMessageTemplate";
 	/** [Read] wisdom:GetNextMessage */
-	static readonly GET_NEXT_MESSAGE = "wisdom:GetNextMessage";
+	static readonly actionGetNextMessage = "wisdom:GetNextMessage";
 	/** [Read] wisdom:GetQuickResponse */
-	static readonly GET_QUICK_RESPONSE = "wisdom:GetQuickResponse";
+	static readonly actionGetQuickResponse = "wisdom:GetQuickResponse";
 	/** [Read] wisdom:GetRecommendations */
-	static readonly GET_RECOMMENDATIONS = "wisdom:GetRecommendations";
+	static readonly actionGetRecommendations = "wisdom:GetRecommendations";
 	/** [Read] wisdom:GetSession */
-	static readonly GET_SESSION = "wisdom:GetSession";
+	static readonly actionGetSession = "wisdom:GetSession";
 	/** [List] wisdom:ListAIAgentVersions */
-	static readonly LIST_AI_AGENT_VERSIONS = "wisdom:ListAIAgentVersions";
+	static readonly ListAIAgentVersions = "wisdom:ListAIAgentVersions";
 	/** [List] wisdom:ListAIAgents */
-	static readonly LIST_AI_AGENTS = "wisdom:ListAIAgents";
+	static readonly ListAIAgents = "wisdom:ListAIAgents";
 	/** [List] wisdom:ListAIGuardrailVersions */
-	static readonly LIST_AI_GUARDRAIL_VERSIONS = "wisdom:ListAIGuardrailVersions";
+	static readonly ListAIGuardrailVersions = "wisdom:ListAIGuardrailVersions";
 	/** [List] wisdom:ListAIGuardrails */
-	static readonly LIST_AI_GUARDRAILS = "wisdom:ListAIGuardrails";
+	static readonly ListAIGuardrails = "wisdom:ListAIGuardrails";
 	/** [List] wisdom:ListAIPromptVersions */
-	static readonly LIST_AI_PROMPT_VERSIONS = "wisdom:ListAIPromptVersions";
+	static readonly ListAIPromptVersions = "wisdom:ListAIPromptVersions";
 	/** [List] wisdom:ListAIPrompts */
-	static readonly LIST_AI_PROMPTS = "wisdom:ListAIPrompts";
+	static readonly ListAIPrompts = "wisdom:ListAIPrompts";
 	/** [List] wisdom:ListAssistantAssociations */
-	static readonly LIST_ASSISTANT_ASSOCIATIONS =
+	static readonly ListAssistantAssociations =
 		"wisdom:ListAssistantAssociations";
 	/** [List] wisdom:ListAssistants */
-	static readonly LIST_ASSISTANTS = "wisdom:ListAssistants";
+	static readonly ListAssistants = "wisdom:ListAssistants";
 	/** [List] wisdom:ListContentAssociations */
-	static readonly LIST_CONTENT_ASSOCIATIONS = "wisdom:ListContentAssociations";
+	static readonly ListContentAssociations = "wisdom:ListContentAssociations";
 	/** [List] wisdom:ListContents */
-	static readonly LIST_CONTENTS = "wisdom:ListContents";
+	static readonly ListContents = "wisdom:ListContents";
 	/** [List] wisdom:ListImportJobs */
-	static readonly LIST_IMPORT_JOBS = "wisdom:ListImportJobs";
+	static readonly ListImportJobs = "wisdom:ListImportJobs";
 	/** [List] wisdom:ListKnowledgeBases */
-	static readonly LIST_KNOWLEDGE_BASES = "wisdom:ListKnowledgeBases";
+	static readonly ListKnowledgeBases = "wisdom:ListKnowledgeBases";
 	/** [List] wisdom:ListMessageTemplateVersions */
-	static readonly LIST_MESSAGE_TEMPLATE_VERSIONS =
+	static readonly ListMessageTemplateVersions =
 		"wisdom:ListMessageTemplateVersions";
 	/** [List] wisdom:ListMessageTemplates */
-	static readonly LIST_MESSAGE_TEMPLATES = "wisdom:ListMessageTemplates";
+	static readonly ListMessageTemplates = "wisdom:ListMessageTemplates";
 	/** [List] wisdom:ListMessages */
-	static readonly LIST_MESSAGES = "wisdom:ListMessages";
+	static readonly ListMessages = "wisdom:ListMessages";
 	/** [List] wisdom:ListModels */
-	static readonly LIST_MODELS = "wisdom:ListModels";
+	static readonly ListModels = "wisdom:ListModels";
 	/** [List] wisdom:ListQuickResponses */
-	static readonly LIST_QUICK_RESPONSES = "wisdom:ListQuickResponses";
+	static readonly ListQuickResponses = "wisdom:ListQuickResponses";
 	/** [List] wisdom:ListSpans */
-	static readonly LIST_SPANS = "wisdom:ListSpans";
+	static readonly ListSpans = "wisdom:ListSpans";
 	/** [Read] wisdom:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "wisdom:ListTagsForResource";
+	static readonly ListTagsForResource = "wisdom:ListTagsForResource";
 	/** [Write] wisdom:NotifyRecommendationsReceived */
-	static readonly NOTIFY_RECOMMENDATIONS_RECEIVED =
+	static readonly NotifyRecommendationsReceived =
 		"wisdom:NotifyRecommendationsReceived";
 	/** [Write] wisdom:PutFeedback */
-	static readonly PUT_FEEDBACK = "wisdom:PutFeedback";
+	static readonly PutFeedback = "wisdom:PutFeedback";
 	/** [Read] wisdom:QueryAssistant */
-	static readonly QUERY_ASSISTANT = "wisdom:QueryAssistant";
+	static readonly QueryAssistant = "wisdom:QueryAssistant";
 	/** [Write] wisdom:RemoveAssistantAIAgent */
-	static readonly REMOVE_ASSISTANT_AI_AGENT = "wisdom:RemoveAssistantAIAgent";
+	static readonly RemoveAssistantAIAgent = "wisdom:RemoveAssistantAIAgent";
 	/** [Write] wisdom:RemoveKnowledgeBaseTemplateUri */
-	static readonly REMOVE_KNOWLEDGE_BASE_TEMPLATE_URI =
+	static readonly RemoveKnowledgeBaseTemplateUri =
 		"wisdom:RemoveKnowledgeBaseTemplateUri";
 	/** [Read] wisdom:RenderMessageTemplate */
-	static readonly RENDER_MESSAGE_TEMPLATE = "wisdom:RenderMessageTemplate";
+	static readonly RenderMessageTemplate = "wisdom:RenderMessageTemplate";
 	/** [Read] wisdom:Retrieve */
-	static readonly RETRIEVE = "wisdom:Retrieve";
+	static readonly Retrieve = "wisdom:Retrieve";
 	/** [Read] wisdom:SearchContent */
-	static readonly SEARCH_CONTENT = "wisdom:SearchContent";
+	static readonly SearchContent = "wisdom:SearchContent";
 	/** [Read] wisdom:SearchMessageTemplates */
-	static readonly SEARCH_MESSAGE_TEMPLATES = "wisdom:SearchMessageTemplates";
+	static readonly SearchMessageTemplates = "wisdom:SearchMessageTemplates";
 	/** [Read] wisdom:SearchQuickResponses */
-	static readonly SEARCH_QUICK_RESPONSES = "wisdom:SearchQuickResponses";
+	static readonly SearchQuickResponses = "wisdom:SearchQuickResponses";
 	/** [Read] wisdom:SearchSessions */
-	static readonly SEARCH_SESSIONS = "wisdom:SearchSessions";
+	static readonly SearchSessions = "wisdom:SearchSessions";
 	/** [Write] wisdom:SendMessage */
-	static readonly SEND_MESSAGE = "wisdom:SendMessage";
+	static readonly SendMessage = "wisdom:SendMessage";
 	/** [Write] wisdom:StartContentUpload */
-	static readonly START_CONTENT_UPLOAD = "wisdom:StartContentUpload";
+	static readonly StartContentUpload = "wisdom:StartContentUpload";
 	/** [Write] wisdom:StartImportJob */
-	static readonly START_IMPORT_JOB = "wisdom:StartImportJob";
+	static readonly StartImportJob = "wisdom:StartImportJob";
 	/** [Tagging] wisdom:TagResource */
-	static readonly TAG_RESOURCE = "wisdom:TagResource";
+	static readonly TagResource = "wisdom:TagResource";
 	/** [Tagging] wisdom:UntagResource */
-	static readonly UNTAG_RESOURCE = "wisdom:UntagResource";
+	static readonly UntagResource = "wisdom:UntagResource";
 	/** [Write] wisdom:UpdateAIAgent */
-	static readonly UPDATE_AI_AGENT = "wisdom:UpdateAIAgent";
+	static readonly UpdateAIAgent = "wisdom:UpdateAIAgent";
 	/** [Write] wisdom:UpdateAIGuardrail */
-	static readonly UPDATE_AI_GUARDRAIL = "wisdom:UpdateAIGuardrail";
+	static readonly UpdateAIGuardrail = "wisdom:UpdateAIGuardrail";
 	/** [Write] wisdom:UpdateAIPrompt */
-	static readonly UPDATE_AI_PROMPT = "wisdom:UpdateAIPrompt";
+	static readonly UpdateAIPrompt = "wisdom:UpdateAIPrompt";
 	/** [Write] wisdom:UpdateAssistantAIAgent */
-	static readonly UPDATE_ASSISTANT_AI_AGENT = "wisdom:UpdateAssistantAIAgent";
+	static readonly UpdateAssistantAIAgent = "wisdom:UpdateAssistantAIAgent";
 	/** [Write] wisdom:UpdateContent */
-	static readonly UPDATE_CONTENT = "wisdom:UpdateContent";
+	static readonly UpdateContent = "wisdom:UpdateContent";
 	/** [Write] wisdom:UpdateKnowledgeBaseTemplateUri */
-	static readonly UPDATE_KNOWLEDGE_BASE_TEMPLATE_URI =
+	static readonly UpdateKnowledgeBaseTemplateUri =
 		"wisdom:UpdateKnowledgeBaseTemplateUri";
 	/** [Write] wisdom:UpdateMessageTemplate */
-	static readonly UPDATE_MESSAGE_TEMPLATE = "wisdom:UpdateMessageTemplate";
+	static readonly UpdateMessageTemplate = "wisdom:UpdateMessageTemplate";
 	/** [Write] wisdom:UpdateMessageTemplateMetadata */
-	static readonly UPDATE_MESSAGE_TEMPLATE_METADATA =
+	static readonly UpdateMessageTemplateMetadata =
 		"wisdom:UpdateMessageTemplateMetadata";
 	/** [Write] wisdom:UpdateQuickResponse */
-	static readonly UPDATE_QUICK_RESPONSE = "wisdom:UpdateQuickResponse";
+	static readonly UpdateQuickResponse = "wisdom:UpdateQuickResponse";
 	/** [Write] wisdom:UpdateSession */
-	static readonly UPDATE_SESSION = "wisdom:UpdateSession";
+	static readonly UpdateSession = "wisdom:UpdateSession";
 	/** [Write] wisdom:UpdateSessionData */
-	static readonly UPDATE_SESSION_DATA = "wisdom:UpdateSessionData";
+	static readonly UpdateSessionData = "wisdom:UpdateSessionData";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WisdomActions.GET_AI_AGENT,
-		WisdomActions.GET_AI_GUARDRAIL,
-		WisdomActions.GET_AI_PROMPT,
-		WisdomActions.GET_ASSISTANT,
-		WisdomActions.GET_ASSISTANT_ASSOCIATION,
-		WisdomActions.GET_CONTENT,
-		WisdomActions.GET_CONTENT_ASSOCIATION,
-		WisdomActions.GET_CONTENT_SUMMARY,
-		WisdomActions.GET_IMPORT_JOB,
-		WisdomActions.GET_KNOWLEDGE_BASE,
-		WisdomActions.GET_MESSAGE_TEMPLATE,
-		WisdomActions.GET_NEXT_MESSAGE,
-		WisdomActions.GET_QUICK_RESPONSE,
-		WisdomActions.GET_RECOMMENDATIONS,
-		WisdomActions.GET_SESSION,
-		WisdomActions.LIST_TAGS_FOR_RESOURCE,
-		WisdomActions.QUERY_ASSISTANT,
-		WisdomActions.RENDER_MESSAGE_TEMPLATE,
-		WisdomActions.RETRIEVE,
-		WisdomActions.SEARCH_CONTENT,
-		WisdomActions.SEARCH_MESSAGE_TEMPLATES,
-		WisdomActions.SEARCH_QUICK_RESPONSES,
-		WisdomActions.SEARCH_SESSIONS,
+	static readonly AllReadActions: string[] = [
+		WisdomActions.actionGetAIAgent,
+		WisdomActions.actionGetAIGuardrail,
+		WisdomActions.actionGetAIPrompt,
+		WisdomActions.actionGetAssistant,
+		WisdomActions.actionGetAssistantAssociation,
+		WisdomActions.actionGetContent,
+		WisdomActions.actionGetContentAssociation,
+		WisdomActions.actionGetContentSummary,
+		WisdomActions.actionGetImportJob,
+		WisdomActions.actionGetKnowledgeBase,
+		WisdomActions.actionGetMessageTemplate,
+		WisdomActions.actionGetNextMessage,
+		WisdomActions.actionGetQuickResponse,
+		WisdomActions.actionGetRecommendations,
+		WisdomActions.actionGetSession,
+		WisdomActions.ListTagsForResource,
+		WisdomActions.QueryAssistant,
+		WisdomActions.RenderMessageTemplate,
+		WisdomActions.Retrieve,
+		WisdomActions.SearchContent,
+		WisdomActions.SearchMessageTemplates,
+		WisdomActions.SearchQuickResponses,
+		WisdomActions.SearchSessions,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WisdomActions.ACTIVATE_MESSAGE_TEMPLATE,
-		WisdomActions.CREATE_AI_AGENT,
-		WisdomActions.CREATE_AI_AGENT_VERSION,
-		WisdomActions.CREATE_AI_GUARDRAIL,
-		WisdomActions.CREATE_AI_GUARDRAIL_VERSION,
-		WisdomActions.CREATE_AI_PROMPT,
-		WisdomActions.CREATE_AI_PROMPT_VERSION,
-		WisdomActions.CREATE_ASSISTANT,
-		WisdomActions.CREATE_ASSISTANT_ASSOCIATION,
-		WisdomActions.CREATE_CONTENT,
-		WisdomActions.CREATE_CONTENT_ASSOCIATION,
-		WisdomActions.CREATE_KNOWLEDGE_BASE,
-		WisdomActions.CREATE_MESSAGE_TEMPLATE,
-		WisdomActions.CREATE_MESSAGE_TEMPLATE_ATTACHMENT,
-		WisdomActions.CREATE_MESSAGE_TEMPLATE_VERSION,
-		WisdomActions.CREATE_QUICK_RESPONSE,
-		WisdomActions.CREATE_SESSION,
-		WisdomActions.DEACTIVATE_MESSAGE_TEMPLATE,
-		WisdomActions.DELETE_AI_AGENT,
-		WisdomActions.DELETE_AI_AGENT_VERSION,
-		WisdomActions.DELETE_AI_GUARDRAIL,
-		WisdomActions.DELETE_AI_GUARDRAIL_VERSION,
-		WisdomActions.DELETE_AI_PROMPT,
-		WisdomActions.DELETE_AI_PROMPT_VERSION,
-		WisdomActions.DELETE_ASSISTANT,
-		WisdomActions.DELETE_ASSISTANT_ASSOCIATION,
-		WisdomActions.DELETE_CONTENT,
-		WisdomActions.DELETE_CONTENT_ASSOCIATION,
-		WisdomActions.DELETE_IMPORT_JOB,
-		WisdomActions.DELETE_KNOWLEDGE_BASE,
-		WisdomActions.DELETE_MESSAGE_TEMPLATE,
-		WisdomActions.DELETE_MESSAGE_TEMPLATE_ATTACHMENT,
-		WisdomActions.DELETE_QUICK_RESPONSE,
-		WisdomActions.NOTIFY_RECOMMENDATIONS_RECEIVED,
-		WisdomActions.PUT_FEEDBACK,
-		WisdomActions.REMOVE_ASSISTANT_AI_AGENT,
-		WisdomActions.REMOVE_KNOWLEDGE_BASE_TEMPLATE_URI,
-		WisdomActions.SEND_MESSAGE,
-		WisdomActions.START_CONTENT_UPLOAD,
-		WisdomActions.START_IMPORT_JOB,
-		WisdomActions.UPDATE_AI_AGENT,
-		WisdomActions.UPDATE_AI_GUARDRAIL,
-		WisdomActions.UPDATE_AI_PROMPT,
-		WisdomActions.UPDATE_ASSISTANT_AI_AGENT,
-		WisdomActions.UPDATE_CONTENT,
-		WisdomActions.UPDATE_KNOWLEDGE_BASE_TEMPLATE_URI,
-		WisdomActions.UPDATE_MESSAGE_TEMPLATE,
-		WisdomActions.UPDATE_MESSAGE_TEMPLATE_METADATA,
-		WisdomActions.UPDATE_QUICK_RESPONSE,
-		WisdomActions.UPDATE_SESSION,
-		WisdomActions.UPDATE_SESSION_DATA,
+	static readonly AllWriteActions: string[] = [
+		WisdomActions.ActivateMessageTemplate,
+		WisdomActions.CreateAIAgent,
+		WisdomActions.CreateAIAgentVersion,
+		WisdomActions.CreateAIGuardrail,
+		WisdomActions.CreateAIGuardrailVersion,
+		WisdomActions.CreateAIPrompt,
+		WisdomActions.CreateAIPromptVersion,
+		WisdomActions.CreateAssistant,
+		WisdomActions.CreateAssistantAssociation,
+		WisdomActions.CreateContent,
+		WisdomActions.CreateContentAssociation,
+		WisdomActions.CreateKnowledgeBase,
+		WisdomActions.CreateMessageTemplate,
+		WisdomActions.CreateMessageTemplateAttachment,
+		WisdomActions.CreateMessageTemplateVersion,
+		WisdomActions.CreateQuickResponse,
+		WisdomActions.CreateSession,
+		WisdomActions.DeactivateMessageTemplate,
+		WisdomActions.DeleteAIAgent,
+		WisdomActions.DeleteAIAgentVersion,
+		WisdomActions.DeleteAIGuardrail,
+		WisdomActions.DeleteAIGuardrailVersion,
+		WisdomActions.DeleteAIPrompt,
+		WisdomActions.DeleteAIPromptVersion,
+		WisdomActions.DeleteAssistant,
+		WisdomActions.DeleteAssistantAssociation,
+		WisdomActions.DeleteContent,
+		WisdomActions.DeleteContentAssociation,
+		WisdomActions.DeleteImportJob,
+		WisdomActions.DeleteKnowledgeBase,
+		WisdomActions.DeleteMessageTemplate,
+		WisdomActions.DeleteMessageTemplateAttachment,
+		WisdomActions.DeleteQuickResponse,
+		WisdomActions.NotifyRecommendationsReceived,
+		WisdomActions.PutFeedback,
+		WisdomActions.RemoveAssistantAIAgent,
+		WisdomActions.RemoveKnowledgeBaseTemplateUri,
+		WisdomActions.SendMessage,
+		WisdomActions.StartContentUpload,
+		WisdomActions.StartImportJob,
+		WisdomActions.UpdateAIAgent,
+		WisdomActions.UpdateAIGuardrail,
+		WisdomActions.UpdateAIPrompt,
+		WisdomActions.UpdateAssistantAIAgent,
+		WisdomActions.UpdateContent,
+		WisdomActions.UpdateKnowledgeBaseTemplateUri,
+		WisdomActions.UpdateMessageTemplate,
+		WisdomActions.UpdateMessageTemplateMetadata,
+		WisdomActions.UpdateQuickResponse,
+		WisdomActions.UpdateSession,
+		WisdomActions.UpdateSessionData,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WisdomActions.LIST_AI_AGENT_VERSIONS,
-		WisdomActions.LIST_AI_AGENTS,
-		WisdomActions.LIST_AI_GUARDRAIL_VERSIONS,
-		WisdomActions.LIST_AI_GUARDRAILS,
-		WisdomActions.LIST_AI_PROMPT_VERSIONS,
-		WisdomActions.LIST_AI_PROMPTS,
-		WisdomActions.LIST_ASSISTANT_ASSOCIATIONS,
-		WisdomActions.LIST_ASSISTANTS,
-		WisdomActions.LIST_CONTENT_ASSOCIATIONS,
-		WisdomActions.LIST_CONTENTS,
-		WisdomActions.LIST_IMPORT_JOBS,
-		WisdomActions.LIST_KNOWLEDGE_BASES,
-		WisdomActions.LIST_MESSAGE_TEMPLATE_VERSIONS,
-		WisdomActions.LIST_MESSAGE_TEMPLATES,
-		WisdomActions.LIST_MESSAGES,
-		WisdomActions.LIST_MODELS,
-		WisdomActions.LIST_QUICK_RESPONSES,
-		WisdomActions.LIST_SPANS,
+	static readonly AllListActions: string[] = [
+		WisdomActions.ListAIAgentVersions,
+		WisdomActions.ListAIAgents,
+		WisdomActions.ListAIGuardrailVersions,
+		WisdomActions.ListAIGuardrails,
+		WisdomActions.ListAIPromptVersions,
+		WisdomActions.ListAIPrompts,
+		WisdomActions.ListAssistantAssociations,
+		WisdomActions.ListAssistants,
+		WisdomActions.ListContentAssociations,
+		WisdomActions.ListContents,
+		WisdomActions.ListImportJobs,
+		WisdomActions.ListKnowledgeBases,
+		WisdomActions.ListMessageTemplateVersions,
+		WisdomActions.ListMessageTemplates,
+		WisdomActions.ListMessages,
+		WisdomActions.ListModels,
+		WisdomActions.ListQuickResponses,
+		WisdomActions.ListSpans,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		WisdomActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
+	static readonly AllPermissionManagementActions: string[] = [
+		WisdomActions.AllowVendedLogDeliveryForResource,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WisdomActions.TAG_RESOURCE,
-		WisdomActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WisdomActions.TagResource,
+		WisdomActions.UntagResource,
 	];
 }
 
-const AiAgentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-agent/(?<assistantId>[^:/?]+)/(?<aiAgentId>[^:/?]+)$",
-);
-const AiGuardrailArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-guardrail/(?<assistantId>[^:/?]+)/(?<aiGuardrailId>[^:/?]+)$",
-);
-const AiPromptArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-prompt/(?<assistantId>[^:/?]+)/(?<aiPromptId>[^:/?]+)$",
-);
-const AssistantArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):assistant/(?<assistantId>[^:/?]+)$",
-);
-const AssistantAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):association/(?<assistantId>[^:/?]+)/(?<assistantAssociationId>[^:/?]+)$",
-);
-const ContentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):content/(?<knowledgeBaseId>[^:/?]+)/(?<contentId>[^:/?]+)$",
-);
-const ContentAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):content-association/(?<knowledgeBaseId>[^:/?]+)/(?<contentId>[^:/?]+)/(?<contentAssociationId>[^:/?]+)$",
-);
-const KnowledgeBaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):knowledge-base/(?<knowledgeBaseId>[^:/?]+)$",
-);
-const MessageTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):message-template/(?<knowledgeBaseId>[^:/?]+)/(?<messageTemplateId>[^:/?]+)$",
-);
-const QuickResponseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):quick-response/(?<knowledgeBaseId>[^:/?]+)/(?<quickResponseId>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):session/(?<assistantId>[^:/?]+)/(?<sessionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a AIAgent ARN.
+ */
+export interface WisdomAiAgentArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** The AIAgentId component of the ARN. */
+	readonly aiAgentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AIAgent ARN.
+ */
+export interface WisdomAiAgentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+	/** The AIAgentId component. */
+	readonly aiAgentId: string;
+}
+
+/**
+ * Properties for building a AIGuardrail ARN.
+ */
+export interface WisdomAiGuardrailArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** The AIGuardrailId component of the ARN. */
+	readonly aiGuardrailId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AIGuardrail ARN.
+ */
+export interface WisdomAiGuardrailArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+	/** The AIGuardrailId component. */
+	readonly aiGuardrailId: string;
+}
+
+/**
+ * Properties for building a AIPrompt ARN.
+ */
+export interface WisdomAiPromptArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** The AIPromptId component of the ARN. */
+	readonly aiPromptId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AIPrompt ARN.
+ */
+export interface WisdomAiPromptArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+	/** The AIPromptId component. */
+	readonly aiPromptId: string;
+}
+
+/**
+ * Properties for building a Assistant ARN.
+ */
+export interface WisdomAssistantArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Assistant ARN.
+ */
+export interface WisdomAssistantArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+}
+
+/**
+ * Properties for building a AssistantAssociation ARN.
+ */
+export interface WisdomAssistantAssociationArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** The AssistantAssociationId component of the ARN. */
+	readonly assistantAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AssistantAssociation ARN.
+ */
+export interface WisdomAssistantAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+	/** The AssistantAssociationId component. */
+	readonly assistantAssociationId: string;
+}
+
+/**
+ * Properties for building a Content ARN.
+ */
+export interface WisdomContentArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** The ContentId component of the ARN. */
+	readonly contentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Content ARN.
+ */
+export interface WisdomContentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+	/** The ContentId component. */
+	readonly contentId: string;
+}
+
+/**
+ * Properties for building a ContentAssociation ARN.
+ */
+export interface WisdomContentAssociationArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** The ContentId component of the ARN. */
+	readonly contentId: string;
+	/** The ContentAssociationId component of the ARN. */
+	readonly contentAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ContentAssociation ARN.
+ */
+export interface WisdomContentAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+	/** The ContentId component. */
+	readonly contentId: string;
+	/** The ContentAssociationId component. */
+	readonly contentAssociationId: string;
+}
+
+/**
+ * Properties for building a KnowledgeBase ARN.
+ */
+export interface WisdomKnowledgeBaseArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a KnowledgeBase ARN.
+ */
+export interface WisdomKnowledgeBaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+}
+
+/**
+ * Properties for building a MessageTemplate ARN.
+ */
+export interface WisdomMessageTemplateArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** The MessageTemplateId component of the ARN. */
+	readonly messageTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MessageTemplate ARN.
+ */
+export interface WisdomMessageTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+	/** The MessageTemplateId component. */
+	readonly messageTemplateId: string;
+}
+
+/**
+ * Properties for building a QuickResponse ARN.
+ */
+export interface WisdomQuickResponseArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** The QuickResponseId component of the ARN. */
+	readonly quickResponseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a QuickResponse ARN.
+ */
+export interface WisdomQuickResponseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+	/** The QuickResponseId component. */
+	readonly quickResponseId: string;
+}
+
+/**
+ * Properties for building a Session ARN.
+ */
+export interface WisdomSessionArnProps {
+	/** The AssistantId component of the ARN. */
+	readonly assistantId: string;
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Session ARN.
+ */
+export interface WisdomSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssistantId component. */
+	readonly assistantId: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+const AiAgentArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-agent\/(?<assistantId>[^:/?]+)\/(?<aiAgentId>[^:/?]+)$/;
+const AiGuardrailArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-guardrail\/(?<assistantId>[^:/?]+)\/(?<aiGuardrailId>[^:/?]+)$/;
+const AiPromptArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):ai-prompt\/(?<assistantId>[^:/?]+)\/(?<aiPromptId>[^:/?]+)$/;
+const AssistantArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):assistant\/(?<assistantId>[^:/?]+)$/;
+const AssistantAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):association\/(?<assistantId>[^:/?]+)\/(?<assistantAssociationId>[^:/?]+)$/;
+const ContentArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):content\/(?<knowledgeBaseId>[^:/?]+)\/(?<contentId>[^:/?]+)$/;
+const ContentAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):content-association\/(?<knowledgeBaseId>[^:/?]+)\/(?<contentId>[^:/?]+)\/(?<contentAssociationId>[^:/?]+)$/;
+const KnowledgeBaseArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):knowledge-base\/(?<knowledgeBaseId>[^:/?]+)$/;
+const MessageTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):message-template\/(?<knowledgeBaseId>[^:/?]+)\/(?<messageTemplateId>[^:/?]+)$/;
+const QuickResponseArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):quick-response\/(?<knowledgeBaseId>[^:/?]+)\/(?<quickResponseId>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):wisdom:(?<region>[^:]*):(?<account>[^:]*):session\/(?<assistantId>[^:/?]+)\/(?<sessionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for wisdom resources.
@@ -373,18 +707,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the AIAgent resource.
 	 */
-	static aiAgent(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** The AIAgentId component of the ARN. */
-		readonly aiAgentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiAgent(props: WisdomAiAgentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:ai-agent/${props.assistantId}/${props.aiAgentId}`;
 	}
 
@@ -399,13 +722,7 @@ export class WisdomResources {
 	 * Parses a AIAgent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiAgentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-		aiAgentId: string;
-	} {
+	static parseAiAgentArn(arn: string): WisdomAiAgentArnComponents {
 		const match = AiAgentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AIAgent ARN: ${arn}`);
@@ -422,18 +739,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the AIGuardrail resource.
 	 */
-	static aiGuardrail(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** The AIGuardrailId component of the ARN. */
-		readonly aiGuardrailId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiGuardrail(props: WisdomAiGuardrailArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:ai-guardrail/${props.assistantId}/${props.aiGuardrailId}`;
 	}
 
@@ -448,13 +754,7 @@ export class WisdomResources {
 	 * Parses a AIGuardrail ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiGuardrailArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-		aiGuardrailId: string;
-	} {
+	static parseAiGuardrailArn(arn: string): WisdomAiGuardrailArnComponents {
 		const match = AiGuardrailArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AIGuardrail ARN: ${arn}`);
@@ -471,18 +771,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the AIPrompt resource.
 	 */
-	static aiPrompt(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** The AIPromptId component of the ARN. */
-		readonly aiPromptId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static aiPrompt(props: WisdomAiPromptArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:ai-prompt/${props.assistantId}/${props.aiPromptId}`;
 	}
 
@@ -497,13 +786,7 @@ export class WisdomResources {
 	 * Parses a AIPrompt ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAiPromptArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-		aiPromptId: string;
-	} {
+	static parseAiPromptArn(arn: string): WisdomAiPromptArnComponents {
 		const match = AiPromptArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AIPrompt ARN: ${arn}`);
@@ -520,16 +803,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the Assistant resource.
 	 */
-	static assistant(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assistant(props: WisdomAssistantArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:assistant/${props.assistantId}`;
 	}
 
@@ -544,12 +818,7 @@ export class WisdomResources {
 	 * Parses a Assistant ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssistantArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-	} {
+	static parseAssistantArn(arn: string): WisdomAssistantArnComponents {
 		const match = AssistantArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Assistant ARN: ${arn}`);
@@ -565,18 +834,9 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the AssistantAssociation resource.
 	 */
-	static assistantAssociation(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** The AssistantAssociationId component of the ARN. */
-		readonly assistantAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static assistantAssociation(
+		props: WisdomAssistantAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:association/${props.assistantId}/${props.assistantAssociationId}`;
 	}
 
@@ -591,13 +851,9 @@ export class WisdomResources {
 	 * Parses a AssistantAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAssistantAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-		assistantAssociationId: string;
-	} {
+	static parseAssistantAssociationArn(
+		arn: string,
+	): WisdomAssistantAssociationArnComponents {
 		const match = AssistantAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AssistantAssociation ARN: ${arn}`);
@@ -614,18 +870,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the Content resource.
 	 */
-	static content(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** The ContentId component of the ARN. */
-		readonly contentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static content(props: WisdomContentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:content/${props.knowledgeBaseId}/${props.contentId}`;
 	}
 
@@ -640,13 +885,7 @@ export class WisdomResources {
 	 * Parses a Content ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-		contentId: string;
-	} {
+	static parseContentArn(arn: string): WisdomContentArnComponents {
 		const match = ContentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Content ARN: ${arn}`);
@@ -663,20 +902,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the ContentAssociation resource.
 	 */
-	static contentAssociation(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** The ContentId component of the ARN. */
-		readonly contentId: string;
-		/** The ContentAssociationId component of the ARN. */
-		readonly contentAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static contentAssociation(props: WisdomContentAssociationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:content-association/${props.knowledgeBaseId}/${props.contentId}/${props.contentAssociationId}`;
 	}
 
@@ -691,14 +917,9 @@ export class WisdomResources {
 	 * Parses a ContentAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContentAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-		contentId: string;
-		contentAssociationId: string;
-	} {
+	static parseContentAssociationArn(
+		arn: string,
+	): WisdomContentAssociationArnComponents {
 		const match = ContentAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ContentAssociation ARN: ${arn}`);
@@ -716,16 +937,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the KnowledgeBase resource.
 	 */
-	static knowledgeBase(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static knowledgeBase(props: WisdomKnowledgeBaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:knowledge-base/${props.knowledgeBaseId}`;
 	}
 
@@ -740,12 +952,7 @@ export class WisdomResources {
 	 * Parses a KnowledgeBase ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKnowledgeBaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-	} {
+	static parseKnowledgeBaseArn(arn: string): WisdomKnowledgeBaseArnComponents {
 		const match = KnowledgeBaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid KnowledgeBase ARN: ${arn}`);
@@ -761,18 +968,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the MessageTemplate resource.
 	 */
-	static messageTemplate(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** The MessageTemplateId component of the ARN. */
-		readonly messageTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static messageTemplate(props: WisdomMessageTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:message-template/${props.knowledgeBaseId}/${props.messageTemplateId}`;
 	}
 
@@ -787,13 +983,9 @@ export class WisdomResources {
 	 * Parses a MessageTemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMessageTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-		messageTemplateId: string;
-	} {
+	static parseMessageTemplateArn(
+		arn: string,
+	): WisdomMessageTemplateArnComponents {
 		const match = MessageTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MessageTemplate ARN: ${arn}`);
@@ -810,18 +1002,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the QuickResponse resource.
 	 */
-	static quickResponse(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** The QuickResponseId component of the ARN. */
-		readonly quickResponseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static quickResponse(props: WisdomQuickResponseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:quick-response/${props.knowledgeBaseId}/${props.quickResponseId}`;
 	}
 
@@ -836,13 +1017,7 @@ export class WisdomResources {
 	 * Parses a QuickResponse ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseQuickResponseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-		quickResponseId: string;
-	} {
+	static parseQuickResponseArn(arn: string): WisdomQuickResponseArnComponents {
 		const match = QuickResponseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid QuickResponse ARN: ${arn}`);
@@ -859,18 +1034,7 @@ export class WisdomResources {
 	/**
 	 * Builds an ARN for the Session resource.
 	 */
-	static session(props: {
-		/** The AssistantId component of the ARN. */
-		readonly assistantId: string;
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: WisdomSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:wisdom:${props.region ?? "*"}:${props.account ?? "*"}:session/${props.assistantId}/${props.sessionId}`;
 	}
 
@@ -885,13 +1049,7 @@ export class WisdomResources {
 	 * Parses a Session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		assistantId: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): WisdomSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Session ARN: ${arn}`);
@@ -911,311 +1069,307 @@ export class WisdomResources {
  */
 export class WisdomOperations {
 	/** IAM actions required for the ActivateMessageTemplate API call. */
-	static readonly ACTIVATE_MESSAGE_TEMPLATE: string[] = [
+	static readonly ActivateMessageTemplate: string[] = [
 		"wisdom:ActivateMessageTemplate",
 	];
 	/** IAM actions required for the CreateAIAgent API call. */
-	static readonly CREATE_AI_AGENT: string[] = [
+	static readonly CreateAIAgent: string[] = [
 		"wisdom:CreateAIAgent",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateAIAgentVersion API call. */
-	static readonly CREATE_AI_AGENT_VERSION: string[] = [
+	static readonly CreateAIAgentVersion: string[] = [
 		"wisdom:CreateAIAgentVersion",
 	];
 	/** IAM actions required for the CreateAIGuardrail API call. */
-	static readonly CREATE_AI_GUARDRAIL: string[] = [
+	static readonly CreateAIGuardrail: string[] = [
 		"wisdom:CreateAIGuardrail",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateAIGuardrailVersion API call. */
-	static readonly CREATE_AI_GUARDRAIL_VERSION: string[] = [
+	static readonly CreateAIGuardrailVersion: string[] = [
 		"wisdom:CreateAIGuardrailVersion",
 	];
 	/** IAM actions required for the CreateAIPrompt API call. */
-	static readonly CREATE_AI_PROMPT: string[] = [
+	static readonly CreateAIPrompt: string[] = [
 		"wisdom:CreateAIPrompt",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateAIPromptVersion API call. */
-	static readonly CREATE_AI_PROMPT_VERSION: string[] = [
+	static readonly CreateAIPromptVersion: string[] = [
 		"wisdom:CreateAIPromptVersion",
 	];
 	/** IAM actions required for the CreateAssistant API call. */
-	static readonly CREATE_ASSISTANT: string[] = [
+	static readonly CreateAssistant: string[] = [
 		"wisdom:CreateAssistant",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateAssistantAssociation API call. */
-	static readonly CREATE_ASSISTANT_ASSOCIATION: string[] = [
+	static readonly CreateAssistantAssociation: string[] = [
 		"wisdom:CreateAssistantAssociation",
 		"iam:PassRole",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateContent API call. */
-	static readonly CREATE_CONTENT: string[] = [
+	static readonly CreateContent: string[] = [
 		"wisdom:CreateContent",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateContentAssociation API call. */
-	static readonly CREATE_CONTENT_ASSOCIATION: string[] = [
+	static readonly CreateContentAssociation: string[] = [
 		"wisdom:CreateContentAssociation",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateKnowledgeBase API call. */
-	static readonly CREATE_KNOWLEDGE_BASE: string[] = [
+	static readonly CreateKnowledgeBase: string[] = [
 		"wisdom:CreateKnowledgeBase",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateMessageTemplate API call. */
-	static readonly CREATE_MESSAGE_TEMPLATE: string[] = [
+	static readonly CreateMessageTemplate: string[] = [
 		"wisdom:CreateMessageTemplate",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateMessageTemplateAttachment API call. */
-	static readonly CREATE_MESSAGE_TEMPLATE_ATTACHMENT: string[] = [
+	static readonly CreateMessageTemplateAttachment: string[] = [
 		"wisdom:CreateMessageTemplateAttachment",
 	];
 	/** IAM actions required for the CreateMessageTemplateVersion API call. */
-	static readonly CREATE_MESSAGE_TEMPLATE_VERSION: string[] = [
+	static readonly CreateMessageTemplateVersion: string[] = [
 		"wisdom:CreateMessageTemplateVersion",
 	];
 	/** IAM actions required for the CreateQuickResponse API call. */
-	static readonly CREATE_QUICK_RESPONSE: string[] = [
+	static readonly CreateQuickResponse: string[] = [
 		"wisdom:CreateQuickResponse",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the CreateSession API call. */
-	static readonly CREATE_SESSION: string[] = [
+	static readonly CreateSession: string[] = [
 		"wisdom:CreateSession",
 		"wisdom:TagResource",
 	];
 	/** IAM actions required for the DeactivateMessageTemplate API call. */
-	static readonly DEACTIVATE_MESSAGE_TEMPLATE: string[] = [
+	static readonly DeactivateMessageTemplate: string[] = [
 		"wisdom:DeactivateMessageTemplate",
 	];
 	/** IAM actions required for the DeleteAIAgent API call. */
-	static readonly DELETE_AI_AGENT: string[] = ["wisdom:DeleteAIAgent"];
+	static readonly DeleteAIAgent: string[] = ["wisdom:DeleteAIAgent"];
 	/** IAM actions required for the DeleteAIAgentVersion API call. */
-	static readonly DELETE_AI_AGENT_VERSION: string[] = [
+	static readonly DeleteAIAgentVersion: string[] = [
 		"wisdom:DeleteAIAgentVersion",
 	];
 	/** IAM actions required for the DeleteAIGuardrail API call. */
-	static readonly DELETE_AI_GUARDRAIL: string[] = ["wisdom:DeleteAIGuardrail"];
+	static readonly DeleteAIGuardrail: string[] = ["wisdom:DeleteAIGuardrail"];
 	/** IAM actions required for the DeleteAIGuardrailVersion API call. */
-	static readonly DELETE_AI_GUARDRAIL_VERSION: string[] = [
+	static readonly DeleteAIGuardrailVersion: string[] = [
 		"wisdom:DeleteAIGuardrailVersion",
 	];
 	/** IAM actions required for the DeleteAIPrompt API call. */
-	static readonly DELETE_AI_PROMPT: string[] = ["wisdom:DeleteAIPrompt"];
+	static readonly DeleteAIPrompt: string[] = ["wisdom:DeleteAIPrompt"];
 	/** IAM actions required for the DeleteAIPromptVersion API call. */
-	static readonly DELETE_AI_PROMPT_VERSION: string[] = [
+	static readonly DeleteAIPromptVersion: string[] = [
 		"wisdom:DeleteAIPromptVersion",
 	];
 	/** IAM actions required for the DeleteAssistant API call. */
-	static readonly DELETE_ASSISTANT: string[] = ["wisdom:DeleteAssistant"];
+	static readonly DeleteAssistant: string[] = ["wisdom:DeleteAssistant"];
 	/** IAM actions required for the DeleteAssistantAssociation API call. */
-	static readonly DELETE_ASSISTANT_ASSOCIATION: string[] = [
+	static readonly DeleteAssistantAssociation: string[] = [
 		"wisdom:DeleteAssistantAssociation",
 	];
 	/** IAM actions required for the DeleteContent API call. */
-	static readonly DELETE_CONTENT: string[] = ["wisdom:DeleteContent"];
+	static readonly DeleteContent: string[] = ["wisdom:DeleteContent"];
 	/** IAM actions required for the DeleteContentAssociation API call. */
-	static readonly DELETE_CONTENT_ASSOCIATION: string[] = [
+	static readonly DeleteContentAssociation: string[] = [
 		"wisdom:DeleteContentAssociation",
 	];
 	/** IAM actions required for the DeleteImportJob API call. */
-	static readonly DELETE_IMPORT_JOB: string[] = ["wisdom:DeleteImportJob"];
+	static readonly DeleteImportJob: string[] = ["wisdom:DeleteImportJob"];
 	/** IAM actions required for the DeleteKnowledgeBase API call. */
-	static readonly DELETE_KNOWLEDGE_BASE: string[] = [
+	static readonly DeleteKnowledgeBase: string[] = [
 		"wisdom:DeleteKnowledgeBase",
 	];
 	/** IAM actions required for the DeleteMessageTemplate API call. */
-	static readonly DELETE_MESSAGE_TEMPLATE: string[] = [
+	static readonly DeleteMessageTemplate: string[] = [
 		"wisdom:DeleteMessageTemplate",
 	];
 	/** IAM actions required for the DeleteMessageTemplateAttachment API call. */
-	static readonly DELETE_MESSAGE_TEMPLATE_ATTACHMENT: string[] = [
+	static readonly DeleteMessageTemplateAttachment: string[] = [
 		"wisdom:DeleteMessageTemplateAttachment",
 	];
 	/** IAM actions required for the DeleteQuickResponse API call. */
-	static readonly DELETE_QUICK_RESPONSE: string[] = [
+	static readonly DeleteQuickResponse: string[] = [
 		"wisdom:DeleteQuickResponse",
 	];
 	/** IAM actions required for the GetAIAgent API call. */
-	static readonly GET_AI_AGENT: string[] = ["wisdom:GetAIAgent"];
+	static readonly opGetAIAgent: string[] = ["wisdom:GetAIAgent"];
 	/** IAM actions required for the GetAIGuardrail API call. */
-	static readonly GET_AI_GUARDRAIL: string[] = ["wisdom:GetAIGuardrail"];
+	static readonly opGetAIGuardrail: string[] = ["wisdom:GetAIGuardrail"];
 	/** IAM actions required for the GetAIPrompt API call. */
-	static readonly GET_AI_PROMPT: string[] = ["wisdom:GetAIPrompt"];
+	static readonly opGetAIPrompt: string[] = ["wisdom:GetAIPrompt"];
 	/** IAM actions required for the GetAssistant API call. */
-	static readonly GET_ASSISTANT: string[] = ["wisdom:GetAssistant"];
+	static readonly opGetAssistant: string[] = ["wisdom:GetAssistant"];
 	/** IAM actions required for the GetAssistantAssociation API call. */
-	static readonly GET_ASSISTANT_ASSOCIATION: string[] = [
+	static readonly opGetAssistantAssociation: string[] = [
 		"wisdom:GetAssistantAssociation",
 	];
 	/** IAM actions required for the GetContent API call. */
-	static readonly GET_CONTENT: string[] = ["wisdom:GetContent"];
+	static readonly opGetContent: string[] = ["wisdom:GetContent"];
 	/** IAM actions required for the GetContentAssociation API call. */
-	static readonly GET_CONTENT_ASSOCIATION: string[] = [
+	static readonly opGetContentAssociation: string[] = [
 		"wisdom:GetContentAssociation",
 	];
 	/** IAM actions required for the GetContentSummary API call. */
-	static readonly GET_CONTENT_SUMMARY: string[] = ["wisdom:GetContentSummary"];
+	static readonly opGetContentSummary: string[] = ["wisdom:GetContentSummary"];
 	/** IAM actions required for the GetImportJob API call. */
-	static readonly GET_IMPORT_JOB: string[] = ["wisdom:GetImportJob"];
+	static readonly opGetImportJob: string[] = ["wisdom:GetImportJob"];
 	/** IAM actions required for the GetKnowledgeBase API call. */
-	static readonly GET_KNOWLEDGE_BASE: string[] = ["wisdom:GetKnowledgeBase"];
+	static readonly opGetKnowledgeBase: string[] = ["wisdom:GetKnowledgeBase"];
 	/** IAM actions required for the GetMessageTemplate API call. */
-	static readonly GET_MESSAGE_TEMPLATE: string[] = [
+	static readonly opGetMessageTemplate: string[] = [
 		"wisdom:GetMessageTemplate",
 	];
 	/** IAM actions required for the GetNextMessage API call. */
-	static readonly GET_NEXT_MESSAGE: string[] = ["wisdom:GetNextMessage"];
+	static readonly opGetNextMessage: string[] = ["wisdom:GetNextMessage"];
 	/** IAM actions required for the GetQuickResponse API call. */
-	static readonly GET_QUICK_RESPONSE: string[] = ["wisdom:GetQuickResponse"];
+	static readonly opGetQuickResponse: string[] = ["wisdom:GetQuickResponse"];
 	/** IAM actions required for the GetRecommendations API call. */
-	static readonly GET_RECOMMENDATIONS: string[] = ["wisdom:GetRecommendations"];
+	static readonly opGetRecommendations: string[] = [
+		"wisdom:GetRecommendations",
+	];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["wisdom:GetSession"];
+	static readonly opGetSession: string[] = ["wisdom:GetSession"];
 	/** IAM actions required for the ListAIAgentVersions API call. */
-	static readonly LIST_AI_AGENT_VERSIONS: string[] = [
+	static readonly ListAIAgentVersions: string[] = [
 		"wisdom:ListAIAgentVersions",
 	];
 	/** IAM actions required for the ListAIAgents API call. */
-	static readonly LIST_AI_AGENTS: string[] = ["wisdom:ListAIAgents"];
+	static readonly ListAIAgents: string[] = ["wisdom:ListAIAgents"];
 	/** IAM actions required for the ListAIGuardrailVersions API call. */
-	static readonly LIST_AI_GUARDRAIL_VERSIONS: string[] = [
+	static readonly ListAIGuardrailVersions: string[] = [
 		"wisdom:ListAIGuardrailVersions",
 	];
 	/** IAM actions required for the ListAIGuardrails API call. */
-	static readonly LIST_AI_GUARDRAILS: string[] = ["wisdom:ListAIGuardrails"];
+	static readonly ListAIGuardrails: string[] = ["wisdom:ListAIGuardrails"];
 	/** IAM actions required for the ListAIPromptVersions API call. */
-	static readonly LIST_AI_PROMPT_VERSIONS: string[] = [
+	static readonly ListAIPromptVersions: string[] = [
 		"wisdom:ListAIPromptVersions",
 	];
 	/** IAM actions required for the ListAIPrompts API call. */
-	static readonly LIST_AI_PROMPTS: string[] = ["wisdom:ListAIPrompts"];
+	static readonly ListAIPrompts: string[] = ["wisdom:ListAIPrompts"];
 	/** IAM actions required for the ListAssistantAssociations API call. */
-	static readonly LIST_ASSISTANT_ASSOCIATIONS: string[] = [
+	static readonly ListAssistantAssociations: string[] = [
 		"wisdom:ListAssistantAssociations",
 	];
 	/** IAM actions required for the ListAssistants API call. */
-	static readonly LIST_ASSISTANTS: string[] = ["wisdom:ListAssistants"];
+	static readonly ListAssistants: string[] = ["wisdom:ListAssistants"];
 	/** IAM actions required for the ListContentAssociations API call. */
-	static readonly LIST_CONTENT_ASSOCIATIONS: string[] = [
+	static readonly ListContentAssociations: string[] = [
 		"wisdom:ListContentAssociations",
 	];
 	/** IAM actions required for the ListContents API call. */
-	static readonly LIST_CONTENTS: string[] = ["wisdom:ListContents"];
+	static readonly ListContents: string[] = ["wisdom:ListContents"];
 	/** IAM actions required for the ListImportJobs API call. */
-	static readonly LIST_IMPORT_JOBS: string[] = ["wisdom:ListImportJobs"];
+	static readonly ListImportJobs: string[] = ["wisdom:ListImportJobs"];
 	/** IAM actions required for the ListKnowledgeBases API call. */
-	static readonly LIST_KNOWLEDGE_BASES: string[] = [
-		"wisdom:ListKnowledgeBases",
-	];
+	static readonly ListKnowledgeBases: string[] = ["wisdom:ListKnowledgeBases"];
 	/** IAM actions required for the ListMessageTemplateVersions API call. */
-	static readonly LIST_MESSAGE_TEMPLATE_VERSIONS: string[] = [
+	static readonly ListMessageTemplateVersions: string[] = [
 		"wisdom:ListMessageTemplateVersions",
 	];
 	/** IAM actions required for the ListMessageTemplates API call. */
-	static readonly LIST_MESSAGE_TEMPLATES: string[] = [
+	static readonly ListMessageTemplates: string[] = [
 		"wisdom:ListMessageTemplates",
 	];
 	/** IAM actions required for the ListMessages API call. */
-	static readonly LIST_MESSAGES: string[] = ["wisdom:ListMessages"];
+	static readonly ListMessages: string[] = ["wisdom:ListMessages"];
 	/** IAM actions required for the ListModels API call. */
-	static readonly LIST_MODELS: string[] = ["wisdom:ListModels"];
+	static readonly ListModels: string[] = ["wisdom:ListModels"];
 	/** IAM actions required for the ListQuickResponses API call. */
-	static readonly LIST_QUICK_RESPONSES: string[] = [
-		"wisdom:ListQuickResponses",
-	];
+	static readonly ListQuickResponses: string[] = ["wisdom:ListQuickResponses"];
 	/** IAM actions required for the ListSpans API call. */
-	static readonly LIST_SPANS: string[] = ["wisdom:ListSpans"];
+	static readonly ListSpans: string[] = ["wisdom:ListSpans"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"wisdom:ListTagsForResource",
 	];
 	/** IAM actions required for the NotifyRecommendationsReceived API call. */
-	static readonly NOTIFY_RECOMMENDATIONS_RECEIVED: string[] = [
+	static readonly NotifyRecommendationsReceived: string[] = [
 		"wisdom:NotifyRecommendationsReceived",
 	];
 	/** IAM actions required for the PutFeedback API call. */
-	static readonly PUT_FEEDBACK: string[] = ["wisdom:PutFeedback"];
+	static readonly PutFeedback: string[] = ["wisdom:PutFeedback"];
 	/** IAM actions required for the QueryAssistant API call. */
-	static readonly QUERY_ASSISTANT: string[] = ["wisdom:QueryAssistant"];
+	static readonly QueryAssistant: string[] = ["wisdom:QueryAssistant"];
 	/** IAM actions required for the RemoveAssistantAIAgent API call. */
-	static readonly REMOVE_ASSISTANT_AI_AGENT: string[] = [
+	static readonly RemoveAssistantAIAgent: string[] = [
 		"wisdom:RemoveAssistantAIAgent",
 	];
 	/** IAM actions required for the RemoveKnowledgeBaseTemplateUri API call. */
-	static readonly REMOVE_KNOWLEDGE_BASE_TEMPLATE_URI: string[] = [
+	static readonly RemoveKnowledgeBaseTemplateUri: string[] = [
 		"wisdom:RemoveKnowledgeBaseTemplateUri",
 	];
 	/** IAM actions required for the RenderMessageTemplate API call. */
-	static readonly RENDER_MESSAGE_TEMPLATE: string[] = [
+	static readonly RenderMessageTemplate: string[] = [
 		"wisdom:GetMessageTemplate",
 		"wisdom:RenderMessageTemplate",
 	];
 	/** IAM actions required for the Retrieve API call. */
-	static readonly RETRIEVE: string[] = ["wisdom:Retrieve"];
+	static readonly Retrieve: string[] = ["wisdom:Retrieve"];
 	/** IAM actions required for the SearchContent API call. */
-	static readonly SEARCH_CONTENT: string[] = ["wisdom:SearchContent"];
+	static readonly SearchContent: string[] = ["wisdom:SearchContent"];
 	/** IAM actions required for the SearchMessageTemplates API call. */
-	static readonly SEARCH_MESSAGE_TEMPLATES: string[] = [
+	static readonly SearchMessageTemplates: string[] = [
 		"wisdom:SearchMessageTemplates",
 	];
 	/** IAM actions required for the SearchQuickResponses API call. */
-	static readonly SEARCH_QUICK_RESPONSES: string[] = [
+	static readonly SearchQuickResponses: string[] = [
 		"wisdom:GetQuickResponse",
 		"wisdom:SearchQuickResponses",
 	];
 	/** IAM actions required for the SearchSessions API call. */
-	static readonly SEARCH_SESSIONS: string[] = ["wisdom:SearchSessions"];
+	static readonly SearchSessions: string[] = ["wisdom:SearchSessions"];
 	/** IAM actions required for the SendMessage API call. */
-	static readonly SEND_MESSAGE: string[] = ["wisdom:SendMessage"];
+	static readonly SendMessage: string[] = ["wisdom:SendMessage"];
 	/** IAM actions required for the StartContentUpload API call. */
-	static readonly START_CONTENT_UPLOAD: string[] = [
-		"wisdom:StartContentUpload",
-	];
+	static readonly StartContentUpload: string[] = ["wisdom:StartContentUpload"];
 	/** IAM actions required for the StartImportJob API call. */
-	static readonly START_IMPORT_JOB: string[] = ["wisdom:StartImportJob"];
+	static readonly StartImportJob: string[] = ["wisdom:StartImportJob"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["wisdom:TagResource"];
+	static readonly TagResource: string[] = ["wisdom:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["wisdom:UntagResource"];
+	static readonly UntagResource: string[] = ["wisdom:UntagResource"];
 	/** IAM actions required for the UpdateAIAgent API call. */
-	static readonly UPDATE_AI_AGENT: string[] = ["wisdom:UpdateAIAgent"];
+	static readonly UpdateAIAgent: string[] = ["wisdom:UpdateAIAgent"];
 	/** IAM actions required for the UpdateAIGuardrail API call. */
-	static readonly UPDATE_AI_GUARDRAIL: string[] = ["wisdom:UpdateAIGuardrail"];
+	static readonly UpdateAIGuardrail: string[] = ["wisdom:UpdateAIGuardrail"];
 	/** IAM actions required for the UpdateAIPrompt API call. */
-	static readonly UPDATE_AI_PROMPT: string[] = ["wisdom:UpdateAIPrompt"];
+	static readonly UpdateAIPrompt: string[] = ["wisdom:UpdateAIPrompt"];
 	/** IAM actions required for the UpdateAssistantAIAgent API call. */
-	static readonly UPDATE_ASSISTANT_AI_AGENT: string[] = [
+	static readonly UpdateAssistantAIAgent: string[] = [
 		"wisdom:UpdateAssistantAIAgent",
 	];
 	/** IAM actions required for the UpdateContent API call. */
-	static readonly UPDATE_CONTENT: string[] = ["wisdom:UpdateContent"];
+	static readonly UpdateContent: string[] = ["wisdom:UpdateContent"];
 	/** IAM actions required for the UpdateKnowledgeBaseTemplateUri API call. */
-	static readonly UPDATE_KNOWLEDGE_BASE_TEMPLATE_URI: string[] = [
+	static readonly UpdateKnowledgeBaseTemplateUri: string[] = [
 		"wisdom:UpdateKnowledgeBaseTemplateUri",
 	];
 	/** IAM actions required for the UpdateMessageTemplate API call. */
-	static readonly UPDATE_MESSAGE_TEMPLATE: string[] = [
+	static readonly UpdateMessageTemplate: string[] = [
 		"wisdom:UpdateMessageTemplate",
 	];
 	/** IAM actions required for the UpdateMessageTemplateMetadata API call. */
-	static readonly UPDATE_MESSAGE_TEMPLATE_METADATA: string[] = [
+	static readonly UpdateMessageTemplateMetadata: string[] = [
 		"wisdom:UpdateMessageTemplateMetadata",
 	];
 	/** IAM actions required for the UpdateQuickResponse API call. */
-	static readonly UPDATE_QUICK_RESPONSE: string[] = [
+	static readonly UpdateQuickResponse: string[] = [
 		"wisdom:UpdateQuickResponse",
 	];
 	/** IAM actions required for the UpdateSession API call. */
-	static readonly UPDATE_SESSION: string[] = ["wisdom:UpdateSession"];
+	static readonly UpdateSession: string[] = ["wisdom:UpdateSession"];
 	/** IAM actions required for the UpdateSessionData API call. */
-	static readonly UPDATE_SESSION_DATA: string[] = ["wisdom:UpdateSessionData"];
+	static readonly UpdateSessionData: string[] = ["wisdom:UpdateSessionData"];
 }
 
 /**
@@ -1223,115 +1377,115 @@ export class WisdomOperations {
  */
 export class WisdomConditions {
 	/** Condition keys applicable to the CreateAIAgent action. */
-	static readonly CREATE_AI_AGENT_CONDITION_KEYS: string[] = [
+	static readonly CreateAIAgentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIAgentVersion action. */
-	static readonly CREATE_AI_AGENT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateAIAgentVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIGuardrail action. */
-	static readonly CREATE_AI_GUARDRAIL_CONDITION_KEYS: string[] = [
+	static readonly CreateAIGuardrailConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIGuardrailVersion action. */
-	static readonly CREATE_AI_GUARDRAIL_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateAIGuardrailVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIPrompt action. */
-	static readonly CREATE_AI_PROMPT_CONDITION_KEYS: string[] = [
+	static readonly CreateAIPromptConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAIPromptVersion action. */
-	static readonly CREATE_AI_PROMPT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateAIPromptVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAssistant action. */
-	static readonly CREATE_ASSISTANT_CONDITION_KEYS: string[] = [
+	static readonly CreateAssistantConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAssistantAssociation action. */
-	static readonly CREATE_ASSISTANT_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreateAssistantAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateContent action. */
-	static readonly CREATE_CONTENT_CONDITION_KEYS: string[] = [
+	static readonly CreateContentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateContentAssociation action. */
-	static readonly CREATE_CONTENT_ASSOCIATION_CONDITION_KEYS: string[] = [
+	static readonly CreateContentAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateKnowledgeBase action. */
-	static readonly CREATE_KNOWLEDGE_BASE_CONDITION_KEYS: string[] = [
+	static readonly CreateKnowledgeBaseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMessageTemplate action. */
-	static readonly CREATE_MESSAGE_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateMessageTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateQuickResponse action. */
-	static readonly CREATE_QUICK_RESPONSE_CONDITION_KEYS: string[] = [
+	static readonly CreateQuickResponseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSession action. */
-	static readonly CREATE_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetMessageTemplate action. */
-	static readonly GET_MESSAGE_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly actionGetMessageTemplateConditionKeys: string[] = [
 		"wisdom:MessageTemplate/RoutingProfileArn",
 	];
 	/** Condition keys applicable to the RenderMessageTemplate action. */
-	static readonly RENDER_MESSAGE_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly RenderMessageTemplateConditionKeys: string[] = [
 		"wisdom:MessageTemplate/RoutingProfileArn",
 	];
 	/** Condition keys applicable to the SearchMessageTemplates action. */
-	static readonly SEARCH_MESSAGE_TEMPLATES_CONDITION_KEYS: string[] = [
+	static readonly SearchMessageTemplatesConditionKeys: string[] = [
 		"wisdom:SearchFilter/Qualifier",
 		"wisdom:SearchFilter/RoutingProfileArn",
 	];
 	/** Condition keys applicable to the SearchQuickResponses action. */
-	static readonly SEARCH_QUICK_RESPONSES_CONDITION_KEYS: string[] = [
+	static readonly SearchQuickResponsesConditionKeys: string[] = [
 		"wisdom:SearchFilter/RoutingProfileArn",
 	];
 	/** Condition keys applicable to the StartImportJob action. */
-	static readonly START_IMPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartImportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: wisdom:MessageTemplate/RoutingProfileArn (ArrayOfARN) */
 	static readonly MESSAGE_TEMPLATE_ROUTING_PROFILE_ARN =
 		"wisdom:MessageTemplate/RoutingProfileArn";

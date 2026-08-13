@@ -13,19 +13,19 @@ export class SagemakerDataScienceAssistantActions {
 	static readonly SERVICE_PREFIX = "sagemaker-data-science-assistant";
 
 	/** [Write] sagemaker-data-science-assistant:SendConversation */
-	static readonly SEND_CONVERSATION =
+	static readonly SendConversation =
 		"sagemaker-data-science-assistant:SendConversation";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SagemakerDataScienceAssistantActions.SEND_CONVERSATION,
+	static readonly AllWriteActions: string[] = [
+		SagemakerDataScienceAssistantActions.SendConversation,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

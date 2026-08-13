@@ -13,29 +13,29 @@ export class SsmmessagesActions {
 	static readonly SERVICE_PREFIX = "ssmmessages";
 
 	/** [Write] ssmmessages:CreateControlChannel */
-	static readonly CREATE_CONTROL_CHANNEL = "ssmmessages:CreateControlChannel";
+	static readonly CreateControlChannel = "ssmmessages:CreateControlChannel";
 	/** [Write] ssmmessages:CreateDataChannel */
-	static readonly CREATE_DATA_CHANNEL = "ssmmessages:CreateDataChannel";
+	static readonly CreateDataChannel = "ssmmessages:CreateDataChannel";
 	/** [Write] ssmmessages:OpenControlChannel */
-	static readonly OPEN_CONTROL_CHANNEL = "ssmmessages:OpenControlChannel";
+	static readonly OpenControlChannel = "ssmmessages:OpenControlChannel";
 	/** [Write] ssmmessages:OpenDataChannel */
-	static readonly OPEN_DATA_CHANNEL = "ssmmessages:OpenDataChannel";
+	static readonly OpenDataChannel = "ssmmessages:OpenDataChannel";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SsmmessagesActions.CREATE_CONTROL_CHANNEL,
-		SsmmessagesActions.CREATE_DATA_CHANNEL,
-		SsmmessagesActions.OPEN_CONTROL_CHANNEL,
-		SsmmessagesActions.OPEN_DATA_CHANNEL,
+	static readonly AllWriteActions: string[] = [
+		SsmmessagesActions.CreateControlChannel,
+		SsmmessagesActions.CreateDataChannel,
+		SsmmessagesActions.OpenControlChannel,
+		SsmmessagesActions.OpenDataChannel,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -43,13 +43,11 @@ export class SsmmessagesActions {
  */
 export class SsmmessagesConditions {
 	/** Condition keys applicable to the CreateControlChannel action. */
-	static readonly CREATE_CONTROL_CHANNEL_CONDITION_KEYS: string[] = [
+	static readonly CreateControlChannelConditionKeys: string[] = [
 		"ec2:SourceInstanceARN",
 		"ssm:SourceInstanceARN",
 	];
 
 	/** Condition key: ec2:SourceInstanceARN (ARN) */
 	static readonly SOURCE_INSTANCE_ARN = "ec2:SourceInstanceARN";
-	/** Condition key: ssm:SourceInstanceARN (ARN) */
-	static readonly SOURCE_INSTANCE_ARN = "ssm:SourceInstanceARN";
 }

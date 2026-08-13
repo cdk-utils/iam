@@ -13,43 +13,41 @@ export class NetworkmanagerChatActions {
 	static readonly SERVICE_PREFIX = "networkmanager-chat";
 
 	/** [Write] networkmanager-chat:CancelMessageResponse */
-	static readonly CANCEL_MESSAGE_RESPONSE =
+	static readonly CancelMessageResponse =
 		"networkmanager-chat:CancelMessageResponse";
 	/** [Write] networkmanager-chat:CreateConversation */
-	static readonly CREATE_CONVERSATION =
-		"networkmanager-chat:CreateConversation";
+	static readonly CreateConversation = "networkmanager-chat:CreateConversation";
 	/** [Write] networkmanager-chat:DeleteConversation */
-	static readonly DELETE_CONVERSATION =
-		"networkmanager-chat:DeleteConversation";
+	static readonly DeleteConversation = "networkmanager-chat:DeleteConversation";
 	/** [List] networkmanager-chat:ListConversationMessages */
-	static readonly LIST_CONVERSATION_MESSAGES =
+	static readonly ListConversationMessages =
 		"networkmanager-chat:ListConversationMessages";
 	/** [List] networkmanager-chat:ListConversations */
-	static readonly LIST_CONVERSATIONS = "networkmanager-chat:ListConversations";
+	static readonly ListConversations = "networkmanager-chat:ListConversations";
 	/** [Write] networkmanager-chat:NotifyConversationIsActive */
-	static readonly NOTIFY_CONVERSATION_IS_ACTIVE =
+	static readonly NotifyConversationIsActive =
 		"networkmanager-chat:NotifyConversationIsActive";
 	/** [Write] networkmanager-chat:SendConversationMessage */
-	static readonly SEND_CONVERSATION_MESSAGE =
+	static readonly SendConversationMessage =
 		"networkmanager-chat:SendConversationMessage";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NetworkmanagerChatActions.CANCEL_MESSAGE_RESPONSE,
-		NetworkmanagerChatActions.CREATE_CONVERSATION,
-		NetworkmanagerChatActions.DELETE_CONVERSATION,
-		NetworkmanagerChatActions.NOTIFY_CONVERSATION_IS_ACTIVE,
-		NetworkmanagerChatActions.SEND_CONVERSATION_MESSAGE,
+	static readonly AllWriteActions: string[] = [
+		NetworkmanagerChatActions.CancelMessageResponse,
+		NetworkmanagerChatActions.CreateConversation,
+		NetworkmanagerChatActions.DeleteConversation,
+		NetworkmanagerChatActions.NotifyConversationIsActive,
+		NetworkmanagerChatActions.SendConversationMessage,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NetworkmanagerChatActions.LIST_CONVERSATION_MESSAGES,
-		NetworkmanagerChatActions.LIST_CONVERSATIONS,
+	static readonly AllListActions: string[] = [
+		NetworkmanagerChatActions.ListConversationMessages,
+		NetworkmanagerChatActions.ListConversations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

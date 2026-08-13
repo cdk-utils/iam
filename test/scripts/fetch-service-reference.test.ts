@@ -1,8 +1,8 @@
 import {
-	fetchServiceReferenceList,
 	fetchServiceDetail,
-	validateServiceReferenceList,
+	fetchServiceReferenceList,
 	validateServiceDetail,
+	validateServiceReferenceList,
 } from "../../scripts/fetch-service-reference";
 import type { ServiceDetail, ServiceReferenceList } from "../../scripts/types";
 
@@ -62,9 +62,7 @@ const validServiceDetail: ServiceDetail = {
 	Operations: [
 		{
 			Name: "BatchExecuteStatement",
-			AuthorizedActions: [
-				{ Name: "PartiQLDelete", Service: "dynamodb" },
-			],
+			AuthorizedActions: [{ Name: "PartiQLDelete", Service: "dynamodb" }],
 			SDK: [
 				{
 					Name: "dynamodb",
@@ -106,9 +104,7 @@ describe("validateServiceReferenceList", () => {
 		expect(() => validateServiceReferenceList(123)).toThrow(
 			"expected an array",
 		);
-		expect(() => validateServiceReferenceList({})).toThrow(
-			"expected an array",
-		);
+		expect(() => validateServiceReferenceList({})).toThrow("expected an array");
 	});
 
 	it("rejects empty array", () => {
@@ -212,9 +208,7 @@ describe("validateServiceDetail", () => {
 
 	it("rejects non-object input", () => {
 		expect(() => validateServiceDetail(null)).toThrow("expected an object");
-		expect(() => validateServiceDetail("string")).toThrow(
-			"expected an object",
-		);
+		expect(() => validateServiceDetail("string")).toThrow("expected an object");
 		expect(() => validateServiceDetail([])).toThrow(
 			"'Name' must be a non-empty string",
 		);
@@ -500,9 +494,9 @@ describe("fetchServiceDetail", () => {
 	});
 
 	it("throws when serviceUrl is not a string", async () => {
-		await expect(
-			fetchServiceDetail(null as unknown as string),
-		).rejects.toThrow("serviceUrl must be a non-empty string");
+		await expect(fetchServiceDetail(null as unknown as string)).rejects.toThrow(
+			"serviceUrl must be a non-empty string",
+		);
 	});
 
 	it("throws on network error", async () => {

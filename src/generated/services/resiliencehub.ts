@@ -13,487 +13,697 @@ export class ResiliencehubActions {
 	static readonly SERVICE_PREFIX = "resiliencehub";
 
 	/** [Write] resiliencehub:AcceptResourceGroupingRecommendations */
-	static readonly ACCEPT_RESOURCE_GROUPING_RECOMMENDATIONS =
+	static readonly AcceptResourceGroupingRecommendations =
 		"resiliencehub:AcceptResourceGroupingRecommendations";
 	/** [Write] resiliencehub:AddDraftAppVersionResourceMappings */
-	static readonly ADD_DRAFT_APP_VERSION_RESOURCE_MAPPINGS =
+	static readonly AddDraftAppVersionResourceMappings =
 		"resiliencehub:AddDraftAppVersionResourceMappings";
 	/** [Write] resiliencehub:BatchUpdateRecommendationStatus */
-	static readonly BATCH_UPDATE_RECOMMENDATION_STATUS =
+	static readonly BatchUpdateRecommendationStatus =
 		"resiliencehub:BatchUpdateRecommendationStatus";
 	/** [Write] resiliencehub:CreateApp */
-	static readonly CREATE_APP = "resiliencehub:CreateApp";
+	static readonly CreateApp = "resiliencehub:CreateApp";
 	/** [Write] resiliencehub:CreateAppVersionAppComponent */
-	static readonly CREATE_APP_VERSION_APP_COMPONENT =
+	static readonly CreateAppVersionAppComponent =
 		"resiliencehub:CreateAppVersionAppComponent";
 	/** [Write] resiliencehub:CreateAppVersionResource */
-	static readonly CREATE_APP_VERSION_RESOURCE =
+	static readonly CreateAppVersionResource =
 		"resiliencehub:CreateAppVersionResource";
 	/** [Write] resiliencehub:CreateAssertion */
-	static readonly CREATE_ASSERTION = "resiliencehub:CreateAssertion";
+	static readonly CreateAssertion = "resiliencehub:CreateAssertion";
 	/** [Write] resiliencehub:CreateInputSource */
-	static readonly CREATE_INPUT_SOURCE = "resiliencehub:CreateInputSource";
+	static readonly CreateInputSource = "resiliencehub:CreateInputSource";
 	/** [Write] resiliencehub:CreatePolicy */
-	static readonly CREATE_POLICY = "resiliencehub:CreatePolicy";
+	static readonly CreatePolicy = "resiliencehub:CreatePolicy";
 	/** [Write] resiliencehub:CreateRecommendationTemplate */
-	static readonly CREATE_RECOMMENDATION_TEMPLATE =
+	static readonly CreateRecommendationTemplate =
 		"resiliencehub:CreateRecommendationTemplate";
 	/** [Write] resiliencehub:CreateReport */
-	static readonly CREATE_REPORT = "resiliencehub:CreateReport";
+	static readonly CreateReport = "resiliencehub:CreateReport";
 	/** [Write] resiliencehub:CreateResiliencyPolicy */
-	static readonly CREATE_RESILIENCY_POLICY =
+	static readonly CreateResiliencyPolicy =
 		"resiliencehub:CreateResiliencyPolicy";
 	/** [Write] resiliencehub:CreateService */
-	static readonly CREATE_SERVICE = "resiliencehub:CreateService";
+	static readonly CreateService = "resiliencehub:CreateService";
 	/** [Write] resiliencehub:CreateServiceFunction */
-	static readonly CREATE_SERVICE_FUNCTION =
-		"resiliencehub:CreateServiceFunction";
+	static readonly CreateServiceFunction = "resiliencehub:CreateServiceFunction";
 	/** [Write] resiliencehub:CreateServiceFunctionResources */
-	static readonly CREATE_SERVICE_FUNCTION_RESOURCES =
+	static readonly CreateServiceFunctionResources =
 		"resiliencehub:CreateServiceFunctionResources";
 	/** [Write] resiliencehub:CreateSystem */
-	static readonly CREATE_SYSTEM = "resiliencehub:CreateSystem";
+	static readonly CreateSystem = "resiliencehub:CreateSystem";
 	/** [Write] resiliencehub:CreateTest */
-	static readonly CREATE_TEST = "resiliencehub:CreateTest";
+	static readonly CreateTest = "resiliencehub:CreateTest";
 	/** [Write] resiliencehub:CreateUserJourney */
-	static readonly CREATE_USER_JOURNEY = "resiliencehub:CreateUserJourney";
+	static readonly CreateUserJourney = "resiliencehub:CreateUserJourney";
 	/** [Write] resiliencehub:DeleteApp */
-	static readonly DELETE_APP = "resiliencehub:DeleteApp";
+	static readonly DeleteApp = "resiliencehub:DeleteApp";
 	/** [Write] resiliencehub:DeleteAppAssessment */
-	static readonly DELETE_APP_ASSESSMENT = "resiliencehub:DeleteAppAssessment";
+	static readonly DeleteAppAssessment = "resiliencehub:DeleteAppAssessment";
 	/** [Write] resiliencehub:DeleteAppInputSource */
-	static readonly DELETE_APP_INPUT_SOURCE =
-		"resiliencehub:DeleteAppInputSource";
+	static readonly DeleteAppInputSource = "resiliencehub:DeleteAppInputSource";
 	/** [Write] resiliencehub:DeleteAppVersionAppComponent */
-	static readonly DELETE_APP_VERSION_APP_COMPONENT =
+	static readonly DeleteAppVersionAppComponent =
 		"resiliencehub:DeleteAppVersionAppComponent";
 	/** [Write] resiliencehub:DeleteAppVersionResource */
-	static readonly DELETE_APP_VERSION_RESOURCE =
+	static readonly DeleteAppVersionResource =
 		"resiliencehub:DeleteAppVersionResource";
 	/** [Write] resiliencehub:DeleteAssertion */
-	static readonly DELETE_ASSERTION = "resiliencehub:DeleteAssertion";
+	static readonly DeleteAssertion = "resiliencehub:DeleteAssertion";
 	/** [Write] resiliencehub:DeleteInputSource */
-	static readonly DELETE_INPUT_SOURCE = "resiliencehub:DeleteInputSource";
+	static readonly DeleteInputSource = "resiliencehub:DeleteInputSource";
 	/** [Write] resiliencehub:DeletePolicy */
-	static readonly DELETE_POLICY = "resiliencehub:DeletePolicy";
+	static readonly DeletePolicy = "resiliencehub:DeletePolicy";
 	/** [Write] resiliencehub:DeleteRecommendationTemplate */
-	static readonly DELETE_RECOMMENDATION_TEMPLATE =
+	static readonly DeleteRecommendationTemplate =
 		"resiliencehub:DeleteRecommendationTemplate";
 	/** [Write] resiliencehub:DeleteResiliencyPolicy */
-	static readonly DELETE_RESILIENCY_POLICY =
+	static readonly DeleteResiliencyPolicy =
 		"resiliencehub:DeleteResiliencyPolicy";
 	/** [Write] resiliencehub:DeleteService */
-	static readonly DELETE_SERVICE = "resiliencehub:DeleteService";
+	static readonly DeleteService = "resiliencehub:DeleteService";
 	/** [Write] resiliencehub:DeleteServiceFunction */
-	static readonly DELETE_SERVICE_FUNCTION =
-		"resiliencehub:DeleteServiceFunction";
+	static readonly DeleteServiceFunction = "resiliencehub:DeleteServiceFunction";
 	/** [Write] resiliencehub:DeleteServiceFunctionResources */
-	static readonly DELETE_SERVICE_FUNCTION_RESOURCES =
+	static readonly DeleteServiceFunctionResources =
 		"resiliencehub:DeleteServiceFunctionResources";
 	/** [Write] resiliencehub:DeleteSystem */
-	static readonly DELETE_SYSTEM = "resiliencehub:DeleteSystem";
+	static readonly DeleteSystem = "resiliencehub:DeleteSystem";
 	/** [Write] resiliencehub:DeleteTest */
-	static readonly DELETE_TEST = "resiliencehub:DeleteTest";
+	static readonly DeleteTest = "resiliencehub:DeleteTest";
 	/** [Write] resiliencehub:DeleteTestSources */
-	static readonly DELETE_TEST_SOURCES = "resiliencehub:DeleteTestSources";
+	static readonly DeleteTestSources = "resiliencehub:DeleteTestSources";
 	/** [Write] resiliencehub:DeleteUserJourney */
-	static readonly DELETE_USER_JOURNEY = "resiliencehub:DeleteUserJourney";
+	static readonly DeleteUserJourney = "resiliencehub:DeleteUserJourney";
 	/** [Read] resiliencehub:DescribeApp */
-	static readonly DESCRIBE_APP = "resiliencehub:DescribeApp";
+	static readonly DescribeApp = "resiliencehub:DescribeApp";
 	/** [Read] resiliencehub:DescribeAppAssessment */
-	static readonly DESCRIBE_APP_ASSESSMENT =
-		"resiliencehub:DescribeAppAssessment";
+	static readonly DescribeAppAssessment = "resiliencehub:DescribeAppAssessment";
 	/** [Read] resiliencehub:DescribeAppVersion */
-	static readonly DESCRIBE_APP_VERSION = "resiliencehub:DescribeAppVersion";
+	static readonly DescribeAppVersion = "resiliencehub:DescribeAppVersion";
 	/** [Read] resiliencehub:DescribeAppVersionAppComponent */
-	static readonly DESCRIBE_APP_VERSION_APP_COMPONENT =
+	static readonly DescribeAppVersionAppComponent =
 		"resiliencehub:DescribeAppVersionAppComponent";
 	/** [Read] resiliencehub:DescribeAppVersionResource */
-	static readonly DESCRIBE_APP_VERSION_RESOURCE =
+	static readonly DescribeAppVersionResource =
 		"resiliencehub:DescribeAppVersionResource";
 	/** [Read] resiliencehub:DescribeAppVersionResourcesResolutionStatus */
-	static readonly DESCRIBE_APP_VERSION_RESOURCES_RESOLUTION_STATUS =
+	static readonly DescribeAppVersionResourcesResolutionStatus =
 		"resiliencehub:DescribeAppVersionResourcesResolutionStatus";
 	/** [Read] resiliencehub:DescribeAppVersionTemplate */
-	static readonly DESCRIBE_APP_VERSION_TEMPLATE =
+	static readonly DescribeAppVersionTemplate =
 		"resiliencehub:DescribeAppVersionTemplate";
 	/** [Read] resiliencehub:DescribeDraftAppVersionResourcesImportStatus */
-	static readonly DESCRIBE_DRAFT_APP_VERSION_RESOURCES_IMPORT_STATUS =
+	static readonly DescribeDraftAppVersionResourcesImportStatus =
 		"resiliencehub:DescribeDraftAppVersionResourcesImportStatus";
 	/** [Read] resiliencehub:DescribeMetricsExport */
-	static readonly DESCRIBE_METRICS_EXPORT =
-		"resiliencehub:DescribeMetricsExport";
+	static readonly DescribeMetricsExport = "resiliencehub:DescribeMetricsExport";
 	/** [Read] resiliencehub:DescribeResiliencyPolicy */
-	static readonly DESCRIBE_RESILIENCY_POLICY =
+	static readonly DescribeResiliencyPolicy =
 		"resiliencehub:DescribeResiliencyPolicy";
 	/** [Read] resiliencehub:DescribeResourceGroupingRecommendationTask */
-	static readonly DESCRIBE_RESOURCE_GROUPING_RECOMMENDATION_TASK =
+	static readonly DescribeResourceGroupingRecommendationTask =
 		"resiliencehub:DescribeResourceGroupingRecommendationTask";
 	/** [Read] resiliencehub:GetFailureModeFinding */
-	static readonly GET_FAILURE_MODE_FINDING =
+	static readonly actionGetFailureModeFinding =
 		"resiliencehub:GetFailureModeFinding";
 	/** [Read] resiliencehub:GetPolicy */
-	static readonly GET_POLICY = "resiliencehub:GetPolicy";
+	static readonly actionGetPolicy = "resiliencehub:GetPolicy";
 	/** [Read] resiliencehub:GetService */
-	static readonly GET_SERVICE = "resiliencehub:GetService";
+	static readonly actionGetService = "resiliencehub:GetService";
 	/** [Read] resiliencehub:GetSystem */
-	static readonly GET_SYSTEM = "resiliencehub:GetSystem";
+	static readonly actionGetSystem = "resiliencehub:GetSystem";
 	/** [Read] resiliencehub:GetTest */
-	static readonly GET_TEST = "resiliencehub:GetTest";
+	static readonly actionGetTest = "resiliencehub:GetTest";
 	/** [Read] resiliencehub:GetTestRun */
-	static readonly GET_TEST_RUN = "resiliencehub:GetTestRun";
+	static readonly actionGetTestRun = "resiliencehub:GetTestRun";
 	/** [Read] resiliencehub:GetTestTemplate */
-	static readonly GET_TEST_TEMPLATE = "resiliencehub:GetTestTemplate";
+	static readonly actionGetTestTemplate = "resiliencehub:GetTestTemplate";
 	/** [Read] resiliencehub:GetUserJourney */
-	static readonly GET_USER_JOURNEY = "resiliencehub:GetUserJourney";
+	static readonly actionGetUserJourney = "resiliencehub:GetUserJourney";
 	/** [Write] resiliencehub:ImportApp */
-	static readonly IMPORT_APP = "resiliencehub:ImportApp";
+	static readonly ImportApp = "resiliencehub:ImportApp";
 	/** [Write] resiliencehub:ImportPolicy */
-	static readonly IMPORT_POLICY = "resiliencehub:ImportPolicy";
+	static readonly ImportPolicy = "resiliencehub:ImportPolicy";
 	/** [Write] resiliencehub:ImportResourcesToDraftAppVersion */
-	static readonly IMPORT_RESOURCES_TO_DRAFT_APP_VERSION =
+	static readonly ImportResourcesToDraftAppVersion =
 		"resiliencehub:ImportResourcesToDraftAppVersion";
 	/** [List] resiliencehub:ListAlarmRecommendations */
-	static readonly LIST_ALARM_RECOMMENDATIONS =
+	static readonly ListAlarmRecommendations =
 		"resiliencehub:ListAlarmRecommendations";
 	/** [List] resiliencehub:ListAppAssessmentComplianceDrifts */
-	static readonly LIST_APP_ASSESSMENT_COMPLIANCE_DRIFTS =
+	static readonly ListAppAssessmentComplianceDrifts =
 		"resiliencehub:ListAppAssessmentComplianceDrifts";
 	/** [List] resiliencehub:ListAppAssessmentResourceDrifts */
-	static readonly LIST_APP_ASSESSMENT_RESOURCE_DRIFTS =
+	static readonly ListAppAssessmentResourceDrifts =
 		"resiliencehub:ListAppAssessmentResourceDrifts";
 	/** [List] resiliencehub:ListAppAssessments */
-	static readonly LIST_APP_ASSESSMENTS = "resiliencehub:ListAppAssessments";
+	static readonly ListAppAssessments = "resiliencehub:ListAppAssessments";
 	/** [List] resiliencehub:ListAppComponentCompliances */
-	static readonly LIST_APP_COMPONENT_COMPLIANCES =
+	static readonly ListAppComponentCompliances =
 		"resiliencehub:ListAppComponentCompliances";
 	/** [List] resiliencehub:ListAppComponentRecommendations */
-	static readonly LIST_APP_COMPONENT_RECOMMENDATIONS =
+	static readonly ListAppComponentRecommendations =
 		"resiliencehub:ListAppComponentRecommendations";
 	/** [List] resiliencehub:ListAppInputSources */
-	static readonly LIST_APP_INPUT_SOURCES = "resiliencehub:ListAppInputSources";
+	static readonly ListAppInputSources = "resiliencehub:ListAppInputSources";
 	/** [List] resiliencehub:ListAppVersionAppComponents */
-	static readonly LIST_APP_VERSION_APP_COMPONENTS =
+	static readonly ListAppVersionAppComponents =
 		"resiliencehub:ListAppVersionAppComponents";
 	/** [List] resiliencehub:ListAppVersionResourceMappings */
-	static readonly LIST_APP_VERSION_RESOURCE_MAPPINGS =
+	static readonly ListAppVersionResourceMappings =
 		"resiliencehub:ListAppVersionResourceMappings";
 	/** [List] resiliencehub:ListAppVersionResources */
-	static readonly LIST_APP_VERSION_RESOURCES =
+	static readonly ListAppVersionResources =
 		"resiliencehub:ListAppVersionResources";
 	/** [List] resiliencehub:ListAppVersions */
-	static readonly LIST_APP_VERSIONS = "resiliencehub:ListAppVersions";
+	static readonly ListAppVersions = "resiliencehub:ListAppVersions";
 	/** [List] resiliencehub:ListApps */
-	static readonly LIST_APPS = "resiliencehub:ListApps";
+	static readonly ListApps = "resiliencehub:ListApps";
 	/** [Read] resiliencehub:ListAssertions */
-	static readonly LIST_ASSERTIONS = "resiliencehub:ListAssertions";
+	static readonly ListAssertions = "resiliencehub:ListAssertions";
 	/** [Read] resiliencehub:ListDependencies */
-	static readonly LIST_DEPENDENCIES = "resiliencehub:ListDependencies";
+	static readonly ListDependencies = "resiliencehub:ListDependencies";
 	/** [Read] resiliencehub:ListFailureModeAssessments */
-	static readonly LIST_FAILURE_MODE_ASSESSMENTS =
+	static readonly ListFailureModeAssessments =
 		"resiliencehub:ListFailureModeAssessments";
 	/** [Read] resiliencehub:ListFailureModeFindings */
-	static readonly LIST_FAILURE_MODE_FINDINGS =
+	static readonly ListFailureModeFindings =
 		"resiliencehub:ListFailureModeFindings";
 	/** [Read] resiliencehub:ListInputSources */
-	static readonly LIST_INPUT_SOURCES = "resiliencehub:ListInputSources";
+	static readonly ListInputSources = "resiliencehub:ListInputSources";
 	/** [List] resiliencehub:ListMetrics */
-	static readonly LIST_METRICS = "resiliencehub:ListMetrics";
+	static readonly ListMetrics = "resiliencehub:ListMetrics";
 	/** [Read] resiliencehub:ListPolicies */
-	static readonly LIST_POLICIES = "resiliencehub:ListPolicies";
+	static readonly ListPolicies = "resiliencehub:ListPolicies";
 	/** [List] resiliencehub:ListRecommendationTemplates */
-	static readonly LIST_RECOMMENDATION_TEMPLATES =
+	static readonly ListRecommendationTemplates =
 		"resiliencehub:ListRecommendationTemplates";
 	/** [Read] resiliencehub:ListReports */
-	static readonly LIST_REPORTS = "resiliencehub:ListReports";
+	static readonly ListReports = "resiliencehub:ListReports";
 	/** [List] resiliencehub:ListResiliencyPolicies */
-	static readonly LIST_RESILIENCY_POLICIES =
+	static readonly ListResiliencyPolicies =
 		"resiliencehub:ListResiliencyPolicies";
 	/** [Read] resiliencehub:ListResolvedTestRunTargetResources */
-	static readonly LIST_RESOLVED_TEST_RUN_TARGET_RESOURCES =
+	static readonly ListResolvedTestRunTargetResources =
 		"resiliencehub:ListResolvedTestRunTargetResources";
 	/** [List] resiliencehub:ListResourceGroupingRecommendations */
-	static readonly LIST_RESOURCE_GROUPING_RECOMMENDATIONS =
+	static readonly ListResourceGroupingRecommendations =
 		"resiliencehub:ListResourceGroupingRecommendations";
 	/** [Read] resiliencehub:ListResources */
-	static readonly LIST_RESOURCES = "resiliencehub:ListResources";
+	static readonly ListResources = "resiliencehub:ListResources";
 	/** [Read] resiliencehub:ListServiceEvents */
-	static readonly LIST_SERVICE_EVENTS = "resiliencehub:ListServiceEvents";
+	static readonly ListServiceEvents = "resiliencehub:ListServiceEvents";
 	/** [Read] resiliencehub:ListServiceFunctions */
-	static readonly LIST_SERVICE_FUNCTIONS = "resiliencehub:ListServiceFunctions";
+	static readonly ListServiceFunctions = "resiliencehub:ListServiceFunctions";
 	/** [Read] resiliencehub:ListServiceTopologyEdges */
-	static readonly LIST_SERVICE_TOPOLOGY_EDGES =
+	static readonly ListServiceTopologyEdges =
 		"resiliencehub:ListServiceTopologyEdges";
 	/** [Read] resiliencehub:ListServices */
-	static readonly LIST_SERVICES = "resiliencehub:ListServices";
+	static readonly ListServices = "resiliencehub:ListServices";
 	/** [List] resiliencehub:ListSopRecommendations */
-	static readonly LIST_SOP_RECOMMENDATIONS =
+	static readonly ListSopRecommendations =
 		"resiliencehub:ListSopRecommendations";
 	/** [List] resiliencehub:ListSuggestedResiliencyPolicies */
-	static readonly LIST_SUGGESTED_RESILIENCY_POLICIES =
+	static readonly ListSuggestedResiliencyPolicies =
 		"resiliencehub:ListSuggestedResiliencyPolicies";
 	/** [Read] resiliencehub:ListSystemEvents */
-	static readonly LIST_SYSTEM_EVENTS = "resiliencehub:ListSystemEvents";
+	static readonly ListSystemEvents = "resiliencehub:ListSystemEvents";
 	/** [Read] resiliencehub:ListSystems */
-	static readonly LIST_SYSTEMS = "resiliencehub:ListSystems";
+	static readonly ListSystems = "resiliencehub:ListSystems";
 	/** [Read] resiliencehub:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "resiliencehub:ListTagsForResource";
+	static readonly ListTagsForResource = "resiliencehub:ListTagsForResource";
 	/** [List] resiliencehub:ListTestRecommendations */
-	static readonly LIST_TEST_RECOMMENDATIONS =
+	static readonly ListTestRecommendations =
 		"resiliencehub:ListTestRecommendations";
 	/** [Read] resiliencehub:ListTestRunEvents */
-	static readonly LIST_TEST_RUN_EVENTS = "resiliencehub:ListTestRunEvents";
+	static readonly ListTestRunEvents = "resiliencehub:ListTestRunEvents";
 	/** [Read] resiliencehub:ListTestRunSources */
-	static readonly LIST_TEST_RUN_SOURCES = "resiliencehub:ListTestRunSources";
+	static readonly ListTestRunSources = "resiliencehub:ListTestRunSources";
 	/** [Read] resiliencehub:ListTestRuns */
-	static readonly LIST_TEST_RUNS = "resiliencehub:ListTestRuns";
+	static readonly ListTestRuns = "resiliencehub:ListTestRuns";
 	/** [Read] resiliencehub:ListTestSources */
-	static readonly LIST_TEST_SOURCES = "resiliencehub:ListTestSources";
+	static readonly ListTestSources = "resiliencehub:ListTestSources";
 	/** [Read] resiliencehub:ListTestTemplates */
-	static readonly LIST_TEST_TEMPLATES = "resiliencehub:ListTestTemplates";
+	static readonly ListTestTemplates = "resiliencehub:ListTestTemplates";
 	/** [Read] resiliencehub:ListTests */
-	static readonly LIST_TESTS = "resiliencehub:ListTests";
+	static readonly ListTests = "resiliencehub:ListTests";
 	/** [List] resiliencehub:ListUnsupportedAppVersionResources */
-	static readonly LIST_UNSUPPORTED_APP_VERSION_RESOURCES =
+	static readonly ListUnsupportedAppVersionResources =
 		"resiliencehub:ListUnsupportedAppVersionResources";
 	/** [Read] resiliencehub:ListUserJourneys */
-	static readonly LIST_USER_JOURNEYS = "resiliencehub:ListUserJourneys";
+	static readonly ListUserJourneys = "resiliencehub:ListUserJourneys";
 	/** [Write] resiliencehub:PublishAppVersion */
-	static readonly PUBLISH_APP_VERSION = "resiliencehub:PublishAppVersion";
+	static readonly PublishAppVersion = "resiliencehub:PublishAppVersion";
 	/** [Write] resiliencehub:PutDraftAppVersionTemplate */
-	static readonly PUT_DRAFT_APP_VERSION_TEMPLATE =
+	static readonly PutDraftAppVersionTemplate =
 		"resiliencehub:PutDraftAppVersionTemplate";
 	/** [Write] resiliencehub:PutTestSources */
-	static readonly PUT_TEST_SOURCES = "resiliencehub:PutTestSources";
+	static readonly PutTestSources = "resiliencehub:PutTestSources";
 	/** [Write] resiliencehub:RejectResourceGroupingRecommendations */
-	static readonly REJECT_RESOURCE_GROUPING_RECOMMENDATIONS =
+	static readonly RejectResourceGroupingRecommendations =
 		"resiliencehub:RejectResourceGroupingRecommendations";
 	/** [Write] resiliencehub:RemoveDraftAppVersionResourceMappings */
-	static readonly REMOVE_DRAFT_APP_VERSION_RESOURCE_MAPPINGS =
+	static readonly RemoveDraftAppVersionResourceMappings =
 		"resiliencehub:RemoveDraftAppVersionResourceMappings";
 	/** [Write] resiliencehub:ResolveAppVersionResources */
-	static readonly RESOLVE_APP_VERSION_RESOURCES =
+	static readonly ResolveAppVersionResources =
 		"resiliencehub:ResolveAppVersionResources";
 	/** [Write] resiliencehub:StartAppAssessment */
-	static readonly START_APP_ASSESSMENT = "resiliencehub:StartAppAssessment";
+	static readonly StartAppAssessment = "resiliencehub:StartAppAssessment";
 	/** [Write] resiliencehub:StartFailureModeAssessment */
-	static readonly START_FAILURE_MODE_ASSESSMENT =
+	static readonly StartFailureModeAssessment =
 		"resiliencehub:StartFailureModeAssessment";
 	/** [Write] resiliencehub:StartMetricsExport */
-	static readonly START_METRICS_EXPORT = "resiliencehub:StartMetricsExport";
+	static readonly StartMetricsExport = "resiliencehub:StartMetricsExport";
 	/** [Write] resiliencehub:StartResourceGroupingRecommendationTask */
-	static readonly START_RESOURCE_GROUPING_RECOMMENDATION_TASK =
+	static readonly StartResourceGroupingRecommendationTask =
 		"resiliencehub:StartResourceGroupingRecommendationTask";
 	/** [Write] resiliencehub:StartTestRun */
-	static readonly START_TEST_RUN = "resiliencehub:StartTestRun";
+	static readonly StartTestRun = "resiliencehub:StartTestRun";
 	/** [Write] resiliencehub:StopTestRun */
-	static readonly STOP_TEST_RUN = "resiliencehub:StopTestRun";
+	static readonly StopTestRun = "resiliencehub:StopTestRun";
 	/** [Tagging] resiliencehub:TagResource */
-	static readonly TAG_RESOURCE = "resiliencehub:TagResource";
+	static readonly TagResource = "resiliencehub:TagResource";
 	/** [Tagging] resiliencehub:UntagResource */
-	static readonly UNTAG_RESOURCE = "resiliencehub:UntagResource";
+	static readonly UntagResource = "resiliencehub:UntagResource";
 	/** [Write] resiliencehub:UpdateApp */
-	static readonly UPDATE_APP = "resiliencehub:UpdateApp";
+	static readonly UpdateApp = "resiliencehub:UpdateApp";
 	/** [Write] resiliencehub:UpdateAppVersion */
-	static readonly UPDATE_APP_VERSION = "resiliencehub:UpdateAppVersion";
+	static readonly UpdateAppVersion = "resiliencehub:UpdateAppVersion";
 	/** [Write] resiliencehub:UpdateAppVersionAppComponent */
-	static readonly UPDATE_APP_VERSION_APP_COMPONENT =
+	static readonly UpdateAppVersionAppComponent =
 		"resiliencehub:UpdateAppVersionAppComponent";
 	/** [Write] resiliencehub:UpdateAppVersionResource */
-	static readonly UPDATE_APP_VERSION_RESOURCE =
+	static readonly UpdateAppVersionResource =
 		"resiliencehub:UpdateAppVersionResource";
 	/** [Write] resiliencehub:UpdateAssertion */
-	static readonly UPDATE_ASSERTION = "resiliencehub:UpdateAssertion";
+	static readonly UpdateAssertion = "resiliencehub:UpdateAssertion";
 	/** [Write] resiliencehub:UpdateDependency */
-	static readonly UPDATE_DEPENDENCY = "resiliencehub:UpdateDependency";
+	static readonly UpdateDependency = "resiliencehub:UpdateDependency";
 	/** [Write] resiliencehub:UpdateFailureModeFinding */
-	static readonly UPDATE_FAILURE_MODE_FINDING =
+	static readonly UpdateFailureModeFinding =
 		"resiliencehub:UpdateFailureModeFinding";
 	/** [Write] resiliencehub:UpdatePolicy */
-	static readonly UPDATE_POLICY = "resiliencehub:UpdatePolicy";
+	static readonly UpdatePolicy = "resiliencehub:UpdatePolicy";
 	/** [Write] resiliencehub:UpdateResiliencyPolicy */
-	static readonly UPDATE_RESILIENCY_POLICY =
+	static readonly UpdateResiliencyPolicy =
 		"resiliencehub:UpdateResiliencyPolicy";
 	/** [Write] resiliencehub:UpdateService */
-	static readonly UPDATE_SERVICE = "resiliencehub:UpdateService";
+	static readonly UpdateService = "resiliencehub:UpdateService";
 	/** [Write] resiliencehub:UpdateServiceFunction */
-	static readonly UPDATE_SERVICE_FUNCTION =
-		"resiliencehub:UpdateServiceFunction";
+	static readonly UpdateServiceFunction = "resiliencehub:UpdateServiceFunction";
 	/** [Write] resiliencehub:UpdateSystem */
-	static readonly UPDATE_SYSTEM = "resiliencehub:UpdateSystem";
+	static readonly UpdateSystem = "resiliencehub:UpdateSystem";
 	/** [Write] resiliencehub:UpdateTest */
-	static readonly UPDATE_TEST = "resiliencehub:UpdateTest";
+	static readonly UpdateTest = "resiliencehub:UpdateTest";
 	/** [Write] resiliencehub:UpdateUserJourney */
-	static readonly UPDATE_USER_JOURNEY = "resiliencehub:UpdateUserJourney";
+	static readonly UpdateUserJourney = "resiliencehub:UpdateUserJourney";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ResiliencehubActions.DESCRIBE_APP,
-		ResiliencehubActions.DESCRIBE_APP_ASSESSMENT,
-		ResiliencehubActions.DESCRIBE_APP_VERSION,
-		ResiliencehubActions.DESCRIBE_APP_VERSION_APP_COMPONENT,
-		ResiliencehubActions.DESCRIBE_APP_VERSION_RESOURCE,
-		ResiliencehubActions.DESCRIBE_APP_VERSION_RESOURCES_RESOLUTION_STATUS,
-		ResiliencehubActions.DESCRIBE_APP_VERSION_TEMPLATE,
-		ResiliencehubActions.DESCRIBE_DRAFT_APP_VERSION_RESOURCES_IMPORT_STATUS,
-		ResiliencehubActions.DESCRIBE_METRICS_EXPORT,
-		ResiliencehubActions.DESCRIBE_RESILIENCY_POLICY,
-		ResiliencehubActions.DESCRIBE_RESOURCE_GROUPING_RECOMMENDATION_TASK,
-		ResiliencehubActions.GET_FAILURE_MODE_FINDING,
-		ResiliencehubActions.GET_POLICY,
-		ResiliencehubActions.GET_SERVICE,
-		ResiliencehubActions.GET_SYSTEM,
-		ResiliencehubActions.GET_TEST,
-		ResiliencehubActions.GET_TEST_RUN,
-		ResiliencehubActions.GET_TEST_TEMPLATE,
-		ResiliencehubActions.GET_USER_JOURNEY,
-		ResiliencehubActions.LIST_ASSERTIONS,
-		ResiliencehubActions.LIST_DEPENDENCIES,
-		ResiliencehubActions.LIST_FAILURE_MODE_ASSESSMENTS,
-		ResiliencehubActions.LIST_FAILURE_MODE_FINDINGS,
-		ResiliencehubActions.LIST_INPUT_SOURCES,
-		ResiliencehubActions.LIST_POLICIES,
-		ResiliencehubActions.LIST_REPORTS,
-		ResiliencehubActions.LIST_RESOLVED_TEST_RUN_TARGET_RESOURCES,
-		ResiliencehubActions.LIST_RESOURCES,
-		ResiliencehubActions.LIST_SERVICE_EVENTS,
-		ResiliencehubActions.LIST_SERVICE_FUNCTIONS,
-		ResiliencehubActions.LIST_SERVICE_TOPOLOGY_EDGES,
-		ResiliencehubActions.LIST_SERVICES,
-		ResiliencehubActions.LIST_SYSTEM_EVENTS,
-		ResiliencehubActions.LIST_SYSTEMS,
-		ResiliencehubActions.LIST_TAGS_FOR_RESOURCE,
-		ResiliencehubActions.LIST_TEST_RUN_EVENTS,
-		ResiliencehubActions.LIST_TEST_RUN_SOURCES,
-		ResiliencehubActions.LIST_TEST_RUNS,
-		ResiliencehubActions.LIST_TEST_SOURCES,
-		ResiliencehubActions.LIST_TEST_TEMPLATES,
-		ResiliencehubActions.LIST_TESTS,
-		ResiliencehubActions.LIST_USER_JOURNEYS,
+	static readonly AllReadActions: string[] = [
+		ResiliencehubActions.DescribeApp,
+		ResiliencehubActions.DescribeAppAssessment,
+		ResiliencehubActions.DescribeAppVersion,
+		ResiliencehubActions.DescribeAppVersionAppComponent,
+		ResiliencehubActions.DescribeAppVersionResource,
+		ResiliencehubActions.DescribeAppVersionResourcesResolutionStatus,
+		ResiliencehubActions.DescribeAppVersionTemplate,
+		ResiliencehubActions.DescribeDraftAppVersionResourcesImportStatus,
+		ResiliencehubActions.DescribeMetricsExport,
+		ResiliencehubActions.DescribeResiliencyPolicy,
+		ResiliencehubActions.DescribeResourceGroupingRecommendationTask,
+		ResiliencehubActions.actionGetFailureModeFinding,
+		ResiliencehubActions.actionGetPolicy,
+		ResiliencehubActions.actionGetService,
+		ResiliencehubActions.actionGetSystem,
+		ResiliencehubActions.actionGetTest,
+		ResiliencehubActions.actionGetTestRun,
+		ResiliencehubActions.actionGetTestTemplate,
+		ResiliencehubActions.actionGetUserJourney,
+		ResiliencehubActions.ListAssertions,
+		ResiliencehubActions.ListDependencies,
+		ResiliencehubActions.ListFailureModeAssessments,
+		ResiliencehubActions.ListFailureModeFindings,
+		ResiliencehubActions.ListInputSources,
+		ResiliencehubActions.ListPolicies,
+		ResiliencehubActions.ListReports,
+		ResiliencehubActions.ListResolvedTestRunTargetResources,
+		ResiliencehubActions.ListResources,
+		ResiliencehubActions.ListServiceEvents,
+		ResiliencehubActions.ListServiceFunctions,
+		ResiliencehubActions.ListServiceTopologyEdges,
+		ResiliencehubActions.ListServices,
+		ResiliencehubActions.ListSystemEvents,
+		ResiliencehubActions.ListSystems,
+		ResiliencehubActions.ListTagsForResource,
+		ResiliencehubActions.ListTestRunEvents,
+		ResiliencehubActions.ListTestRunSources,
+		ResiliencehubActions.ListTestRuns,
+		ResiliencehubActions.ListTestSources,
+		ResiliencehubActions.ListTestTemplates,
+		ResiliencehubActions.ListTests,
+		ResiliencehubActions.ListUserJourneys,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ResiliencehubActions.ACCEPT_RESOURCE_GROUPING_RECOMMENDATIONS,
-		ResiliencehubActions.ADD_DRAFT_APP_VERSION_RESOURCE_MAPPINGS,
-		ResiliencehubActions.BATCH_UPDATE_RECOMMENDATION_STATUS,
-		ResiliencehubActions.CREATE_APP,
-		ResiliencehubActions.CREATE_APP_VERSION_APP_COMPONENT,
-		ResiliencehubActions.CREATE_APP_VERSION_RESOURCE,
-		ResiliencehubActions.CREATE_ASSERTION,
-		ResiliencehubActions.CREATE_INPUT_SOURCE,
-		ResiliencehubActions.CREATE_POLICY,
-		ResiliencehubActions.CREATE_RECOMMENDATION_TEMPLATE,
-		ResiliencehubActions.CREATE_REPORT,
-		ResiliencehubActions.CREATE_RESILIENCY_POLICY,
-		ResiliencehubActions.CREATE_SERVICE,
-		ResiliencehubActions.CREATE_SERVICE_FUNCTION,
-		ResiliencehubActions.CREATE_SERVICE_FUNCTION_RESOURCES,
-		ResiliencehubActions.CREATE_SYSTEM,
-		ResiliencehubActions.CREATE_TEST,
-		ResiliencehubActions.CREATE_USER_JOURNEY,
-		ResiliencehubActions.DELETE_APP,
-		ResiliencehubActions.DELETE_APP_ASSESSMENT,
-		ResiliencehubActions.DELETE_APP_INPUT_SOURCE,
-		ResiliencehubActions.DELETE_APP_VERSION_APP_COMPONENT,
-		ResiliencehubActions.DELETE_APP_VERSION_RESOURCE,
-		ResiliencehubActions.DELETE_ASSERTION,
-		ResiliencehubActions.DELETE_INPUT_SOURCE,
-		ResiliencehubActions.DELETE_POLICY,
-		ResiliencehubActions.DELETE_RECOMMENDATION_TEMPLATE,
-		ResiliencehubActions.DELETE_RESILIENCY_POLICY,
-		ResiliencehubActions.DELETE_SERVICE,
-		ResiliencehubActions.DELETE_SERVICE_FUNCTION,
-		ResiliencehubActions.DELETE_SERVICE_FUNCTION_RESOURCES,
-		ResiliencehubActions.DELETE_SYSTEM,
-		ResiliencehubActions.DELETE_TEST,
-		ResiliencehubActions.DELETE_TEST_SOURCES,
-		ResiliencehubActions.DELETE_USER_JOURNEY,
-		ResiliencehubActions.IMPORT_APP,
-		ResiliencehubActions.IMPORT_POLICY,
-		ResiliencehubActions.IMPORT_RESOURCES_TO_DRAFT_APP_VERSION,
-		ResiliencehubActions.PUBLISH_APP_VERSION,
-		ResiliencehubActions.PUT_DRAFT_APP_VERSION_TEMPLATE,
-		ResiliencehubActions.PUT_TEST_SOURCES,
-		ResiliencehubActions.REJECT_RESOURCE_GROUPING_RECOMMENDATIONS,
-		ResiliencehubActions.REMOVE_DRAFT_APP_VERSION_RESOURCE_MAPPINGS,
-		ResiliencehubActions.RESOLVE_APP_VERSION_RESOURCES,
-		ResiliencehubActions.START_APP_ASSESSMENT,
-		ResiliencehubActions.START_FAILURE_MODE_ASSESSMENT,
-		ResiliencehubActions.START_METRICS_EXPORT,
-		ResiliencehubActions.START_RESOURCE_GROUPING_RECOMMENDATION_TASK,
-		ResiliencehubActions.START_TEST_RUN,
-		ResiliencehubActions.STOP_TEST_RUN,
-		ResiliencehubActions.UPDATE_APP,
-		ResiliencehubActions.UPDATE_APP_VERSION,
-		ResiliencehubActions.UPDATE_APP_VERSION_APP_COMPONENT,
-		ResiliencehubActions.UPDATE_APP_VERSION_RESOURCE,
-		ResiliencehubActions.UPDATE_ASSERTION,
-		ResiliencehubActions.UPDATE_DEPENDENCY,
-		ResiliencehubActions.UPDATE_FAILURE_MODE_FINDING,
-		ResiliencehubActions.UPDATE_POLICY,
-		ResiliencehubActions.UPDATE_RESILIENCY_POLICY,
-		ResiliencehubActions.UPDATE_SERVICE,
-		ResiliencehubActions.UPDATE_SERVICE_FUNCTION,
-		ResiliencehubActions.UPDATE_SYSTEM,
-		ResiliencehubActions.UPDATE_TEST,
-		ResiliencehubActions.UPDATE_USER_JOURNEY,
+	static readonly AllWriteActions: string[] = [
+		ResiliencehubActions.AcceptResourceGroupingRecommendations,
+		ResiliencehubActions.AddDraftAppVersionResourceMappings,
+		ResiliencehubActions.BatchUpdateRecommendationStatus,
+		ResiliencehubActions.CreateApp,
+		ResiliencehubActions.CreateAppVersionAppComponent,
+		ResiliencehubActions.CreateAppVersionResource,
+		ResiliencehubActions.CreateAssertion,
+		ResiliencehubActions.CreateInputSource,
+		ResiliencehubActions.CreatePolicy,
+		ResiliencehubActions.CreateRecommendationTemplate,
+		ResiliencehubActions.CreateReport,
+		ResiliencehubActions.CreateResiliencyPolicy,
+		ResiliencehubActions.CreateService,
+		ResiliencehubActions.CreateServiceFunction,
+		ResiliencehubActions.CreateServiceFunctionResources,
+		ResiliencehubActions.CreateSystem,
+		ResiliencehubActions.CreateTest,
+		ResiliencehubActions.CreateUserJourney,
+		ResiliencehubActions.DeleteApp,
+		ResiliencehubActions.DeleteAppAssessment,
+		ResiliencehubActions.DeleteAppInputSource,
+		ResiliencehubActions.DeleteAppVersionAppComponent,
+		ResiliencehubActions.DeleteAppVersionResource,
+		ResiliencehubActions.DeleteAssertion,
+		ResiliencehubActions.DeleteInputSource,
+		ResiliencehubActions.DeletePolicy,
+		ResiliencehubActions.DeleteRecommendationTemplate,
+		ResiliencehubActions.DeleteResiliencyPolicy,
+		ResiliencehubActions.DeleteService,
+		ResiliencehubActions.DeleteServiceFunction,
+		ResiliencehubActions.DeleteServiceFunctionResources,
+		ResiliencehubActions.DeleteSystem,
+		ResiliencehubActions.DeleteTest,
+		ResiliencehubActions.DeleteTestSources,
+		ResiliencehubActions.DeleteUserJourney,
+		ResiliencehubActions.ImportApp,
+		ResiliencehubActions.ImportPolicy,
+		ResiliencehubActions.ImportResourcesToDraftAppVersion,
+		ResiliencehubActions.PublishAppVersion,
+		ResiliencehubActions.PutDraftAppVersionTemplate,
+		ResiliencehubActions.PutTestSources,
+		ResiliencehubActions.RejectResourceGroupingRecommendations,
+		ResiliencehubActions.RemoveDraftAppVersionResourceMappings,
+		ResiliencehubActions.ResolveAppVersionResources,
+		ResiliencehubActions.StartAppAssessment,
+		ResiliencehubActions.StartFailureModeAssessment,
+		ResiliencehubActions.StartMetricsExport,
+		ResiliencehubActions.StartResourceGroupingRecommendationTask,
+		ResiliencehubActions.StartTestRun,
+		ResiliencehubActions.StopTestRun,
+		ResiliencehubActions.UpdateApp,
+		ResiliencehubActions.UpdateAppVersion,
+		ResiliencehubActions.UpdateAppVersionAppComponent,
+		ResiliencehubActions.UpdateAppVersionResource,
+		ResiliencehubActions.UpdateAssertion,
+		ResiliencehubActions.UpdateDependency,
+		ResiliencehubActions.UpdateFailureModeFinding,
+		ResiliencehubActions.UpdatePolicy,
+		ResiliencehubActions.UpdateResiliencyPolicy,
+		ResiliencehubActions.UpdateService,
+		ResiliencehubActions.UpdateServiceFunction,
+		ResiliencehubActions.UpdateSystem,
+		ResiliencehubActions.UpdateTest,
+		ResiliencehubActions.UpdateUserJourney,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ResiliencehubActions.LIST_ALARM_RECOMMENDATIONS,
-		ResiliencehubActions.LIST_APP_ASSESSMENT_COMPLIANCE_DRIFTS,
-		ResiliencehubActions.LIST_APP_ASSESSMENT_RESOURCE_DRIFTS,
-		ResiliencehubActions.LIST_APP_ASSESSMENTS,
-		ResiliencehubActions.LIST_APP_COMPONENT_COMPLIANCES,
-		ResiliencehubActions.LIST_APP_COMPONENT_RECOMMENDATIONS,
-		ResiliencehubActions.LIST_APP_INPUT_SOURCES,
-		ResiliencehubActions.LIST_APP_VERSION_APP_COMPONENTS,
-		ResiliencehubActions.LIST_APP_VERSION_RESOURCE_MAPPINGS,
-		ResiliencehubActions.LIST_APP_VERSION_RESOURCES,
-		ResiliencehubActions.LIST_APP_VERSIONS,
-		ResiliencehubActions.LIST_APPS,
-		ResiliencehubActions.LIST_METRICS,
-		ResiliencehubActions.LIST_RECOMMENDATION_TEMPLATES,
-		ResiliencehubActions.LIST_RESILIENCY_POLICIES,
-		ResiliencehubActions.LIST_RESOURCE_GROUPING_RECOMMENDATIONS,
-		ResiliencehubActions.LIST_SOP_RECOMMENDATIONS,
-		ResiliencehubActions.LIST_SUGGESTED_RESILIENCY_POLICIES,
-		ResiliencehubActions.LIST_TEST_RECOMMENDATIONS,
-		ResiliencehubActions.LIST_UNSUPPORTED_APP_VERSION_RESOURCES,
+	static readonly AllListActions: string[] = [
+		ResiliencehubActions.ListAlarmRecommendations,
+		ResiliencehubActions.ListAppAssessmentComplianceDrifts,
+		ResiliencehubActions.ListAppAssessmentResourceDrifts,
+		ResiliencehubActions.ListAppAssessments,
+		ResiliencehubActions.ListAppComponentCompliances,
+		ResiliencehubActions.ListAppComponentRecommendations,
+		ResiliencehubActions.ListAppInputSources,
+		ResiliencehubActions.ListAppVersionAppComponents,
+		ResiliencehubActions.ListAppVersionResourceMappings,
+		ResiliencehubActions.ListAppVersionResources,
+		ResiliencehubActions.ListAppVersions,
+		ResiliencehubActions.ListApps,
+		ResiliencehubActions.ListMetrics,
+		ResiliencehubActions.ListRecommendationTemplates,
+		ResiliencehubActions.ListResiliencyPolicies,
+		ResiliencehubActions.ListResourceGroupingRecommendations,
+		ResiliencehubActions.ListSopRecommendations,
+		ResiliencehubActions.ListSuggestedResiliencyPolicies,
+		ResiliencehubActions.ListTestRecommendations,
+		ResiliencehubActions.ListUnsupportedAppVersionResources,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ResiliencehubActions.TAG_RESOURCE,
-		ResiliencehubActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ResiliencehubActions.TagResource,
+		ResiliencehubActions.UntagResource,
 	];
 }
 
-const AppAssessmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):app-assessment/(?<appAssessmentId>[^:/?]+)$",
-);
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):app/(?<appId>[^:/?]+)$",
-);
-const PolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):policy/(?<policyId>[^:/?]+)$",
-);
-const RecommendationTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):recommendation-template/(?<recommendationTemplateId>[^:/?]+)$",
-);
-const ResiliencyPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):resiliency-policy/(?<resiliencyPolicyId>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceId>[^:/?]+)$",
-);
-const SystemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):system/(?<systemId>[^:/?]+)$",
-);
-const TestTemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):test-template/(?<testTemplateId>[^:/?]+)$",
-);
+/**
+ * Properties for building a app-assessment ARN.
+ */
+export interface ResiliencehubAppAssessmentArnProps {
+	/** The AppAssessmentId component of the ARN. */
+	readonly appAssessmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a app-assessment ARN.
+ */
+export interface ResiliencehubAppAssessmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppAssessmentId component. */
+	readonly appAssessmentId: string;
+}
+
+/**
+ * Properties for building a application ARN.
+ */
+export interface ResiliencehubApplicationArnProps {
+	/** The AppId component of the ARN. */
+	readonly appId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface ResiliencehubApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppId component. */
+	readonly appId: string;
+}
+
+/**
+ * Properties for building a policy ARN.
+ */
+export interface ResiliencehubPolicyArnProps {
+	/** The PolicyId component of the ARN. */
+	readonly policyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a policy ARN.
+ */
+export interface ResiliencehubPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PolicyId component. */
+	readonly policyId: string;
+}
+
+/**
+ * Properties for building a recommendation-template ARN.
+ */
+export interface ResiliencehubRecommendationTemplateArnProps {
+	/** The RecommendationTemplateId component of the ARN. */
+	readonly recommendationTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recommendation-template ARN.
+ */
+export interface ResiliencehubRecommendationTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RecommendationTemplateId component. */
+	readonly recommendationTemplateId: string;
+}
+
+/**
+ * Properties for building a resiliency-policy ARN.
+ */
+export interface ResiliencehubResiliencyPolicyArnProps {
+	/** The ResiliencyPolicyId component of the ARN. */
+	readonly resiliencyPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a resiliency-policy ARN.
+ */
+export interface ResiliencehubResiliencyPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResiliencyPolicyId component. */
+	readonly resiliencyPolicyId: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface ResiliencehubServiceArnProps {
+	/** The ServiceId component of the ARN. */
+	readonly serviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface ResiliencehubServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceId component. */
+	readonly serviceId: string;
+}
+
+/**
+ * Properties for building a system ARN.
+ */
+export interface ResiliencehubSystemArnProps {
+	/** The SystemId component of the ARN. */
+	readonly systemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a system ARN.
+ */
+export interface ResiliencehubSystemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SystemId component. */
+	readonly systemId: string;
+}
+
+/**
+ * Properties for building a test-template ARN.
+ */
+export interface ResiliencehubTestTemplateArnProps {
+	/** The TestTemplateId component of the ARN. */
+	readonly testTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a test-template ARN.
+ */
+export interface ResiliencehubTestTemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TestTemplateId component. */
+	readonly testTemplateId: string;
+}
+
+const AppAssessmentArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):app-assessment\/(?<appAssessmentId>[^:/?]+)$/;
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appId>[^:/?]+)$/;
+const PolicyArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):policy\/(?<policyId>[^:/?]+)$/;
+const RecommendationTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):recommendation-template\/(?<recommendationTemplateId>[^:/?]+)$/;
+const ResiliencyPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):resiliency-policy\/(?<resiliencyPolicyId>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceId>[^:/?]+)$/;
+const SystemArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):system\/(?<systemId>[^:/?]+)$/;
+const TestTemplateArnRegex =
+	/^arn:(?<partition>[^:]+):resiliencehub:(?<region>[^:]*):(?<account>[^:]*):test-template\/(?<testTemplateId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for resiliencehub resources.
@@ -502,16 +712,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the app-assessment resource.
 	 */
-	static appAssessment(props: {
-		/** The AppAssessmentId component of the ARN. */
-		readonly appAssessmentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appAssessment(props: ResiliencehubAppAssessmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:app-assessment/${props.appAssessmentId}`;
 	}
 
@@ -526,12 +727,9 @@ export class ResiliencehubResources {
 	 * Parses a app-assessment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppAssessmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appAssessmentId: string;
-	} {
+	static parseAppAssessmentArn(
+		arn: string,
+	): ResiliencehubAppAssessmentArnComponents {
 		const match = AppAssessmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid app-assessment ARN: ${arn}`);
@@ -547,16 +745,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The AppId component of the ARN. */
-		readonly appId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: ResiliencehubApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appId}`;
 	}
 
@@ -571,12 +760,9 @@ export class ResiliencehubResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		appId: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): ResiliencehubApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -592,16 +778,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the policy resource.
 	 */
-	static policy(props: {
-		/** The PolicyId component of the ARN. */
-		readonly policyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static policy(props: ResiliencehubPolicyArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:policy/${props.policyId}`;
 	}
 
@@ -616,12 +793,7 @@ export class ResiliencehubResources {
 	 * Parses a policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		policyId: string;
-	} {
+	static parsePolicyArn(arn: string): ResiliencehubPolicyArnComponents {
 		const match = PolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid policy ARN: ${arn}`);
@@ -637,16 +809,9 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the recommendation-template resource.
 	 */
-	static recommendationTemplate(props: {
-		/** The RecommendationTemplateId component of the ARN. */
-		readonly recommendationTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recommendationTemplate(
+		props: ResiliencehubRecommendationTemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:recommendation-template/${props.recommendationTemplateId}`;
 	}
 
@@ -661,12 +826,9 @@ export class ResiliencehubResources {
 	 * Parses a recommendation-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecommendationTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		recommendationTemplateId: string;
-	} {
+	static parseRecommendationTemplateArn(
+		arn: string,
+	): ResiliencehubRecommendationTemplateArnComponents {
 		const match = RecommendationTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recommendation-template ARN: ${arn}`);
@@ -682,16 +844,9 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the resiliency-policy resource.
 	 */
-	static resiliencyPolicy(props: {
-		/** The ResiliencyPolicyId component of the ARN. */
-		readonly resiliencyPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static resiliencyPolicy(
+		props: ResiliencehubResiliencyPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:resiliency-policy/${props.resiliencyPolicyId}`;
 	}
 
@@ -706,12 +861,9 @@ export class ResiliencehubResources {
 	 * Parses a resiliency-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseResiliencyPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resiliencyPolicyId: string;
-	} {
+	static parseResiliencyPolicyArn(
+		arn: string,
+	): ResiliencehubResiliencyPolicyArnComponents {
 		const match = ResiliencyPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid resiliency-policy ARN: ${arn}`);
@@ -727,16 +879,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The ServiceId component of the ARN. */
-		readonly serviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: ResiliencehubServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceId}`;
 	}
 
@@ -751,12 +894,7 @@ export class ResiliencehubResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceId: string;
-	} {
+	static parseServiceArn(arn: string): ResiliencehubServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -772,16 +910,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the system resource.
 	 */
-	static system(props: {
-		/** The SystemId component of the ARN. */
-		readonly systemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static system(props: ResiliencehubSystemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:system/${props.systemId}`;
 	}
 
@@ -796,12 +925,7 @@ export class ResiliencehubResources {
 	 * Parses a system ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSystemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		systemId: string;
-	} {
+	static parseSystemArn(arn: string): ResiliencehubSystemArnComponents {
 		const match = SystemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid system ARN: ${arn}`);
@@ -817,16 +941,7 @@ export class ResiliencehubResources {
 	/**
 	 * Builds an ARN for the test-template resource.
 	 */
-	static testTemplate(props: {
-		/** The TestTemplateId component of the ARN. */
-		readonly testTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static testTemplate(props: ResiliencehubTestTemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:resiliencehub:${props.region ?? "*"}:${props.account ?? "*"}:test-template/${props.testTemplateId}`;
 	}
 
@@ -841,12 +956,9 @@ export class ResiliencehubResources {
 	 * Parses a test-template ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTestTemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		testTemplateId: string;
-	} {
+	static parseTestTemplateArn(
+		arn: string,
+	): ResiliencehubTestTemplateArnComponents {
 		const match = TestTemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid test-template ARN: ${arn}`);
@@ -865,457 +977,448 @@ export class ResiliencehubResources {
  */
 export class ResiliencehubOperations {
 	/** IAM actions required for the AcceptResourceGroupingRecommendations API call. */
-	static readonly ACCEPT_RESOURCE_GROUPING_RECOMMENDATIONS: string[] = [
+	static readonly AcceptResourceGroupingRecommendations: string[] = [
 		"resiliencehub:AcceptResourceGroupingRecommendations",
 	];
 	/** IAM actions required for the AddDraftAppVersionResourceMappings API call. */
-	static readonly ADD_DRAFT_APP_VERSION_RESOURCE_MAPPINGS: string[] = [
+	static readonly AddDraftAppVersionResourceMappings: string[] = [
 		"resiliencehub:AddDraftAppVersionResourceMappings",
 	];
 	/** IAM actions required for the BatchUpdateRecommendationStatus API call. */
-	static readonly BATCH_UPDATE_RECOMMENDATION_STATUS: string[] = [
+	static readonly BatchUpdateRecommendationStatus: string[] = [
 		"resiliencehub:BatchUpdateRecommendationStatus",
 	];
 	/** IAM actions required for the CreateApp API call. */
-	static readonly CREATE_APP: string[] = [
+	static readonly CreateApp: string[] = [
 		"resiliencehub:CreateApp",
 		"iam:PassRole",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateAppVersionAppComponent API call. */
-	static readonly CREATE_APP_VERSION_APP_COMPONENT: string[] = [
+	static readonly CreateAppVersionAppComponent: string[] = [
 		"resiliencehub:CreateAppVersionAppComponent",
 	];
 	/** IAM actions required for the CreateAppVersionResource API call. */
-	static readonly CREATE_APP_VERSION_RESOURCE: string[] = [
+	static readonly CreateAppVersionResource: string[] = [
 		"resiliencehub:CreateAppVersionResource",
 	];
 	/** IAM actions required for the CreateAssertion API call. */
-	static readonly CREATE_ASSERTION: string[] = [
-		"resiliencehub:CreateAssertion",
-	];
+	static readonly CreateAssertion: string[] = ["resiliencehub:CreateAssertion"];
 	/** IAM actions required for the CreateInputSource API call. */
-	static readonly CREATE_INPUT_SOURCE: string[] = [
+	static readonly CreateInputSource: string[] = [
 		"resiliencehub:CreateInputSource",
 	];
 	/** IAM actions required for the CreatePolicy API call. */
-	static readonly CREATE_POLICY: string[] = [
+	static readonly CreatePolicy: string[] = [
 		"resiliencehub:CreatePolicy",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateRecommendationTemplate API call. */
-	static readonly CREATE_RECOMMENDATION_TEMPLATE: string[] = [
+	static readonly CreateRecommendationTemplate: string[] = [
 		"resiliencehub:CreateRecommendationTemplate",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateReport API call. */
-	static readonly CREATE_REPORT: string[] = ["resiliencehub:CreateReport"];
+	static readonly CreateReport: string[] = ["resiliencehub:CreateReport"];
 	/** IAM actions required for the CreateResiliencyPolicy API call. */
-	static readonly CREATE_RESILIENCY_POLICY: string[] = [
+	static readonly CreateResiliencyPolicy: string[] = [
 		"resiliencehub:CreateResiliencyPolicy",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateService API call. */
-	static readonly CREATE_SERVICE: string[] = [
+	static readonly CreateService: string[] = [
 		"resiliencehub:CreateService",
 		"iam:PassRole",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateServiceFunction API call. */
-	static readonly CREATE_SERVICE_FUNCTION: string[] = [
+	static readonly CreateServiceFunction: string[] = [
 		"resiliencehub:CreateServiceFunction",
 	];
 	/** IAM actions required for the CreateServiceFunctionResources API call. */
-	static readonly CREATE_SERVICE_FUNCTION_RESOURCES: string[] = [
+	static readonly CreateServiceFunctionResources: string[] = [
 		"resiliencehub:CreateServiceFunctionResources",
 	];
 	/** IAM actions required for the CreateSystem API call. */
-	static readonly CREATE_SYSTEM: string[] = [
+	static readonly CreateSystem: string[] = [
 		"resiliencehub:CreateSystem",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the CreateTest API call. */
-	static readonly CREATE_TEST: string[] = ["resiliencehub:CreateTest"];
+	static readonly CreateTest: string[] = ["resiliencehub:CreateTest"];
 	/** IAM actions required for the CreateUserJourney API call. */
-	static readonly CREATE_USER_JOURNEY: string[] = [
+	static readonly CreateUserJourney: string[] = [
 		"resiliencehub:CreateUserJourney",
 	];
 	/** IAM actions required for the DeleteApp API call. */
-	static readonly DELETE_APP: string[] = ["resiliencehub:DeleteApp"];
+	static readonly DeleteApp: string[] = ["resiliencehub:DeleteApp"];
 	/** IAM actions required for the DeleteAppAssessment API call. */
-	static readonly DELETE_APP_ASSESSMENT: string[] = [
+	static readonly DeleteAppAssessment: string[] = [
 		"resiliencehub:DeleteAppAssessment",
 	];
 	/** IAM actions required for the DeleteAppInputSource API call. */
-	static readonly DELETE_APP_INPUT_SOURCE: string[] = [
+	static readonly DeleteAppInputSource: string[] = [
 		"resiliencehub:DeleteAppInputSource",
 	];
 	/** IAM actions required for the DeleteAppVersionAppComponent API call. */
-	static readonly DELETE_APP_VERSION_APP_COMPONENT: string[] = [
+	static readonly DeleteAppVersionAppComponent: string[] = [
 		"resiliencehub:DeleteAppVersionAppComponent",
 	];
 	/** IAM actions required for the DeleteAppVersionResource API call. */
-	static readonly DELETE_APP_VERSION_RESOURCE: string[] = [
+	static readonly DeleteAppVersionResource: string[] = [
 		"resiliencehub:DeleteAppVersionResource",
 	];
 	/** IAM actions required for the DeleteAssertion API call. */
-	static readonly DELETE_ASSERTION: string[] = [
-		"resiliencehub:DeleteAssertion",
-	];
+	static readonly DeleteAssertion: string[] = ["resiliencehub:DeleteAssertion"];
 	/** IAM actions required for the DeleteInputSource API call. */
-	static readonly DELETE_INPUT_SOURCE: string[] = [
+	static readonly DeleteInputSource: string[] = [
 		"resiliencehub:DeleteInputSource",
 	];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = ["resiliencehub:DeletePolicy"];
+	static readonly DeletePolicy: string[] = ["resiliencehub:DeletePolicy"];
 	/** IAM actions required for the DeleteRecommendationTemplate API call. */
-	static readonly DELETE_RECOMMENDATION_TEMPLATE: string[] = [
+	static readonly DeleteRecommendationTemplate: string[] = [
 		"resiliencehub:DeleteRecommendationTemplate",
 	];
 	/** IAM actions required for the DeleteResiliencyPolicy API call. */
-	static readonly DELETE_RESILIENCY_POLICY: string[] = [
+	static readonly DeleteResiliencyPolicy: string[] = [
 		"resiliencehub:DeleteResiliencyPolicy",
 	];
 	/** IAM actions required for the DeleteService API call. */
-	static readonly DELETE_SERVICE: string[] = ["resiliencehub:DeleteService"];
+	static readonly DeleteService: string[] = ["resiliencehub:DeleteService"];
 	/** IAM actions required for the DeleteServiceFunction API call. */
-	static readonly DELETE_SERVICE_FUNCTION: string[] = [
+	static readonly DeleteServiceFunction: string[] = [
 		"resiliencehub:DeleteServiceFunction",
 	];
 	/** IAM actions required for the DeleteServiceFunctionResources API call. */
-	static readonly DELETE_SERVICE_FUNCTION_RESOURCES: string[] = [
+	static readonly DeleteServiceFunctionResources: string[] = [
 		"resiliencehub:DeleteServiceFunctionResources",
 	];
 	/** IAM actions required for the DeleteSystem API call. */
-	static readonly DELETE_SYSTEM: string[] = ["resiliencehub:DeleteSystem"];
+	static readonly DeleteSystem: string[] = ["resiliencehub:DeleteSystem"];
 	/** IAM actions required for the DeleteTest API call. */
-	static readonly DELETE_TEST: string[] = ["resiliencehub:DeleteTest"];
+	static readonly DeleteTest: string[] = ["resiliencehub:DeleteTest"];
 	/** IAM actions required for the DeleteTestSources API call. */
-	static readonly DELETE_TEST_SOURCES: string[] = [
+	static readonly DeleteTestSources: string[] = [
 		"resiliencehub:DeleteTestSources",
 	];
 	/** IAM actions required for the DeleteUserJourney API call. */
-	static readonly DELETE_USER_JOURNEY: string[] = [
+	static readonly DeleteUserJourney: string[] = [
 		"resiliencehub:DeleteUserJourney",
 	];
 	/** IAM actions required for the DescribeApp API call. */
-	static readonly DESCRIBE_APP: string[] = ["resiliencehub:DescribeApp"];
+	static readonly DescribeApp: string[] = ["resiliencehub:DescribeApp"];
 	/** IAM actions required for the DescribeAppAssessment API call. */
-	static readonly DESCRIBE_APP_ASSESSMENT: string[] = [
+	static readonly DescribeAppAssessment: string[] = [
 		"resiliencehub:DescribeAppAssessment",
 	];
 	/** IAM actions required for the DescribeAppVersion API call. */
-	static readonly DESCRIBE_APP_VERSION: string[] = [
+	static readonly DescribeAppVersion: string[] = [
 		"resiliencehub:DescribeAppVersion",
 	];
 	/** IAM actions required for the DescribeAppVersionAppComponent API call. */
-	static readonly DESCRIBE_APP_VERSION_APP_COMPONENT: string[] = [
+	static readonly DescribeAppVersionAppComponent: string[] = [
 		"resiliencehub:DescribeAppVersionAppComponent",
 	];
 	/** IAM actions required for the DescribeAppVersionResource API call. */
-	static readonly DESCRIBE_APP_VERSION_RESOURCE: string[] = [
+	static readonly DescribeAppVersionResource: string[] = [
 		"resiliencehub:DescribeAppVersionResource",
 	];
 	/** IAM actions required for the DescribeAppVersionResourcesResolutionStatus API call. */
-	static readonly DESCRIBE_APP_VERSION_RESOURCES_RESOLUTION_STATUS: string[] = [
+	static readonly DescribeAppVersionResourcesResolutionStatus: string[] = [
 		"resiliencehub:DescribeAppVersionResourcesResolutionStatus",
 	];
 	/** IAM actions required for the DescribeAppVersionTemplate API call. */
-	static readonly DESCRIBE_APP_VERSION_TEMPLATE: string[] = [
+	static readonly DescribeAppVersionTemplate: string[] = [
 		"resiliencehub:DescribeAppVersionTemplate",
 	];
 	/** IAM actions required for the DescribeDraftAppVersionResourcesImportStatus API call. */
-	static readonly DESCRIBE_DRAFT_APP_VERSION_RESOURCES_IMPORT_STATUS: string[] =
-		["resiliencehub:DescribeDraftAppVersionResourcesImportStatus"];
+	static readonly DescribeDraftAppVersionResourcesImportStatus: string[] = [
+		"resiliencehub:DescribeDraftAppVersionResourcesImportStatus",
+	];
 	/** IAM actions required for the DescribeMetricsExport API call. */
-	static readonly DESCRIBE_METRICS_EXPORT: string[] = [
+	static readonly DescribeMetricsExport: string[] = [
 		"resiliencehub:DescribeMetricsExport",
 	];
 	/** IAM actions required for the DescribeResiliencyPolicy API call. */
-	static readonly DESCRIBE_RESILIENCY_POLICY: string[] = [
+	static readonly DescribeResiliencyPolicy: string[] = [
 		"resiliencehub:DescribeResiliencyPolicy",
 	];
 	/** IAM actions required for the DescribeResourceGroupingRecommendationTask API call. */
-	static readonly DESCRIBE_RESOURCE_GROUPING_RECOMMENDATION_TASK: string[] = [
+	static readonly DescribeResourceGroupingRecommendationTask: string[] = [
 		"resiliencehub:DescribeResourceGroupingRecommendationTask",
 	];
 	/** IAM actions required for the GetFailureModeFinding API call. */
-	static readonly GET_FAILURE_MODE_FINDING: string[] = [
+	static readonly opGetFailureModeFinding: string[] = [
 		"resiliencehub:GetFailureModeFinding",
 	];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = ["resiliencehub:GetPolicy"];
+	static readonly opGetPolicy: string[] = ["resiliencehub:GetPolicy"];
 	/** IAM actions required for the GetService API call. */
-	static readonly GET_SERVICE: string[] = ["resiliencehub:GetService"];
+	static readonly opGetService: string[] = ["resiliencehub:GetService"];
 	/** IAM actions required for the GetSystem API call. */
-	static readonly GET_SYSTEM: string[] = ["resiliencehub:GetSystem"];
+	static readonly opGetSystem: string[] = ["resiliencehub:GetSystem"];
 	/** IAM actions required for the GetTest API call. */
-	static readonly GET_TEST: string[] = ["resiliencehub:GetTest"];
+	static readonly opGetTest: string[] = ["resiliencehub:GetTest"];
 	/** IAM actions required for the GetTestRun API call. */
-	static readonly GET_TEST_RUN: string[] = ["resiliencehub:GetTestRun"];
+	static readonly opGetTestRun: string[] = ["resiliencehub:GetTestRun"];
 	/** IAM actions required for the GetTestTemplate API call. */
-	static readonly GET_TEST_TEMPLATE: string[] = [
+	static readonly opGetTestTemplate: string[] = [
 		"resiliencehub:GetTestTemplate",
 	];
 	/** IAM actions required for the GetUserJourney API call. */
-	static readonly GET_USER_JOURNEY: string[] = ["resiliencehub:GetUserJourney"];
+	static readonly opGetUserJourney: string[] = ["resiliencehub:GetUserJourney"];
 	/** IAM actions required for the ImportApp API call. */
-	static readonly IMPORT_APP: string[] = ["resiliencehub:ImportApp"];
+	static readonly ImportApp: string[] = ["resiliencehub:ImportApp"];
 	/** IAM actions required for the ImportPolicy API call. */
-	static readonly IMPORT_POLICY: string[] = ["resiliencehub:ImportPolicy"];
+	static readonly ImportPolicy: string[] = ["resiliencehub:ImportPolicy"];
 	/** IAM actions required for the ImportResourcesToDraftAppVersion API call. */
-	static readonly IMPORT_RESOURCES_TO_DRAFT_APP_VERSION: string[] = [
+	static readonly ImportResourcesToDraftAppVersion: string[] = [
 		"resiliencehub:ImportResourcesToDraftAppVersion",
 	];
 	/** IAM actions required for the ListAlarmRecommendations API call. */
-	static readonly LIST_ALARM_RECOMMENDATIONS: string[] = [
+	static readonly ListAlarmRecommendations: string[] = [
 		"resiliencehub:ListAlarmRecommendations",
 	];
 	/** IAM actions required for the ListAppAssessmentComplianceDrifts API call. */
-	static readonly LIST_APP_ASSESSMENT_COMPLIANCE_DRIFTS: string[] = [
+	static readonly ListAppAssessmentComplianceDrifts: string[] = [
 		"resiliencehub:ListAppAssessmentComplianceDrifts",
 	];
 	/** IAM actions required for the ListAppAssessmentResourceDrifts API call. */
-	static readonly LIST_APP_ASSESSMENT_RESOURCE_DRIFTS: string[] = [
+	static readonly ListAppAssessmentResourceDrifts: string[] = [
 		"resiliencehub:ListAppAssessmentResourceDrifts",
 	];
 	/** IAM actions required for the ListAppAssessments API call. */
-	static readonly LIST_APP_ASSESSMENTS: string[] = [
+	static readonly ListAppAssessments: string[] = [
 		"resiliencehub:ListAppAssessments",
 	];
 	/** IAM actions required for the ListAppComponentCompliances API call. */
-	static readonly LIST_APP_COMPONENT_COMPLIANCES: string[] = [
+	static readonly ListAppComponentCompliances: string[] = [
 		"resiliencehub:ListAppComponentCompliances",
 	];
 	/** IAM actions required for the ListAppComponentRecommendations API call. */
-	static readonly LIST_APP_COMPONENT_RECOMMENDATIONS: string[] = [
+	static readonly ListAppComponentRecommendations: string[] = [
 		"resiliencehub:ListAppComponentRecommendations",
 	];
 	/** IAM actions required for the ListAppInputSources API call. */
-	static readonly LIST_APP_INPUT_SOURCES: string[] = [
+	static readonly ListAppInputSources: string[] = [
 		"resiliencehub:ListAppInputSources",
 	];
 	/** IAM actions required for the ListAppVersionAppComponents API call. */
-	static readonly LIST_APP_VERSION_APP_COMPONENTS: string[] = [
+	static readonly ListAppVersionAppComponents: string[] = [
 		"resiliencehub:ListAppVersionAppComponents",
 	];
 	/** IAM actions required for the ListAppVersionResourceMappings API call. */
-	static readonly LIST_APP_VERSION_RESOURCE_MAPPINGS: string[] = [
+	static readonly ListAppVersionResourceMappings: string[] = [
 		"resiliencehub:ListAppVersionResourceMappings",
 	];
 	/** IAM actions required for the ListAppVersionResources API call. */
-	static readonly LIST_APP_VERSION_RESOURCES: string[] = [
+	static readonly ListAppVersionResources: string[] = [
 		"resiliencehub:ListAppVersionResources",
 	];
 	/** IAM actions required for the ListAppVersions API call. */
-	static readonly LIST_APP_VERSIONS: string[] = [
-		"resiliencehub:ListAppVersions",
-	];
+	static readonly ListAppVersions: string[] = ["resiliencehub:ListAppVersions"];
 	/** IAM actions required for the ListApps API call. */
-	static readonly LIST_APPS: string[] = ["resiliencehub:ListApps"];
+	static readonly ListApps: string[] = ["resiliencehub:ListApps"];
 	/** IAM actions required for the ListAssertions API call. */
-	static readonly LIST_ASSERTIONS: string[] = ["resiliencehub:ListAssertions"];
+	static readonly ListAssertions: string[] = ["resiliencehub:ListAssertions"];
 	/** IAM actions required for the ListDependencies API call. */
-	static readonly LIST_DEPENDENCIES: string[] = [
+	static readonly ListDependencies: string[] = [
 		"resiliencehub:ListDependencies",
 	];
 	/** IAM actions required for the ListFailureModeAssessments API call. */
-	static readonly LIST_FAILURE_MODE_ASSESSMENTS: string[] = [
+	static readonly ListFailureModeAssessments: string[] = [
 		"resiliencehub:ListFailureModeAssessments",
 	];
 	/** IAM actions required for the ListFailureModeFindings API call. */
-	static readonly LIST_FAILURE_MODE_FINDINGS: string[] = [
+	static readonly ListFailureModeFindings: string[] = [
 		"resiliencehub:ListFailureModeFindings",
 	];
 	/** IAM actions required for the ListInputSources API call. */
-	static readonly LIST_INPUT_SOURCES: string[] = [
+	static readonly ListInputSources: string[] = [
 		"resiliencehub:ListInputSources",
 	];
 	/** IAM actions required for the ListMetrics API call. */
-	static readonly LIST_METRICS: string[] = ["resiliencehub:ListMetrics"];
+	static readonly ListMetrics: string[] = ["resiliencehub:ListMetrics"];
 	/** IAM actions required for the ListPolicies API call. */
-	static readonly LIST_POLICIES: string[] = ["resiliencehub:ListPolicies"];
+	static readonly ListPolicies: string[] = ["resiliencehub:ListPolicies"];
 	/** IAM actions required for the ListRecommendationTemplates API call. */
-	static readonly LIST_RECOMMENDATION_TEMPLATES: string[] = [
+	static readonly ListRecommendationTemplates: string[] = [
 		"resiliencehub:ListRecommendationTemplates",
 	];
 	/** IAM actions required for the ListReports API call. */
-	static readonly LIST_REPORTS: string[] = ["resiliencehub:ListReports"];
+	static readonly ListReports: string[] = ["resiliencehub:ListReports"];
 	/** IAM actions required for the ListResiliencyPolicies API call. */
-	static readonly LIST_RESILIENCY_POLICIES: string[] = [
+	static readonly ListResiliencyPolicies: string[] = [
 		"resiliencehub:ListResiliencyPolicies",
 	];
 	/** IAM actions required for the ListResolvedTestRunTargetResources API call. */
-	static readonly LIST_RESOLVED_TEST_RUN_TARGET_RESOURCES: string[] = [
+	static readonly ListResolvedTestRunTargetResources: string[] = [
 		"resiliencehub:ListResolvedTestRunTargetResources",
 	];
 	/** IAM actions required for the ListResourceGroupingRecommendations API call. */
-	static readonly LIST_RESOURCE_GROUPING_RECOMMENDATIONS: string[] = [
+	static readonly ListResourceGroupingRecommendations: string[] = [
 		"resiliencehub:ListResourceGroupingRecommendations",
 	];
 	/** IAM actions required for the ListResources API call. */
-	static readonly LIST_RESOURCES: string[] = ["resiliencehub:ListResources"];
+	static readonly ListResources: string[] = ["resiliencehub:ListResources"];
 	/** IAM actions required for the ListServiceEvents API call. */
-	static readonly LIST_SERVICE_EVENTS: string[] = [
+	static readonly ListServiceEvents: string[] = [
 		"resiliencehub:ListServiceEvents",
 	];
 	/** IAM actions required for the ListServiceFunctions API call. */
-	static readonly LIST_SERVICE_FUNCTIONS: string[] = [
+	static readonly ListServiceFunctions: string[] = [
 		"resiliencehub:ListServiceFunctions",
 	];
 	/** IAM actions required for the ListServiceTopologyEdges API call. */
-	static readonly LIST_SERVICE_TOPOLOGY_EDGES: string[] = [
+	static readonly ListServiceTopologyEdges: string[] = [
 		"resiliencehub:ListServiceTopologyEdges",
 	];
 	/** IAM actions required for the ListServices API call. */
-	static readonly LIST_SERVICES: string[] = ["resiliencehub:ListServices"];
+	static readonly ListServices: string[] = ["resiliencehub:ListServices"];
 	/** IAM actions required for the ListSopRecommendations API call. */
-	static readonly LIST_SOP_RECOMMENDATIONS: string[] = [
+	static readonly ListSopRecommendations: string[] = [
 		"resiliencehub:ListSopRecommendations",
 	];
 	/** IAM actions required for the ListSuggestedResiliencyPolicies API call. */
-	static readonly LIST_SUGGESTED_RESILIENCY_POLICIES: string[] = [
+	static readonly ListSuggestedResiliencyPolicies: string[] = [
 		"resiliencehub:ListSuggestedResiliencyPolicies",
 	];
 	/** IAM actions required for the ListSystemEvents API call. */
-	static readonly LIST_SYSTEM_EVENTS: string[] = [
+	static readonly ListSystemEvents: string[] = [
 		"resiliencehub:ListSystemEvents",
 	];
 	/** IAM actions required for the ListSystems API call. */
-	static readonly LIST_SYSTEMS: string[] = ["resiliencehub:ListSystems"];
+	static readonly ListSystems: string[] = ["resiliencehub:ListSystems"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"resiliencehub:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTestRecommendations API call. */
-	static readonly LIST_TEST_RECOMMENDATIONS: string[] = [
+	static readonly ListTestRecommendations: string[] = [
 		"resiliencehub:ListTestRecommendations",
 	];
 	/** IAM actions required for the ListTestRunEvents API call. */
-	static readonly LIST_TEST_RUN_EVENTS: string[] = [
+	static readonly ListTestRunEvents: string[] = [
 		"resiliencehub:ListTestRunEvents",
 	];
 	/** IAM actions required for the ListTestRunSources API call. */
-	static readonly LIST_TEST_RUN_SOURCES: string[] = [
+	static readonly ListTestRunSources: string[] = [
 		"resiliencehub:ListTestRunSources",
 	];
 	/** IAM actions required for the ListTestRuns API call. */
-	static readonly LIST_TEST_RUNS: string[] = ["resiliencehub:ListTestRuns"];
+	static readonly ListTestRuns: string[] = ["resiliencehub:ListTestRuns"];
 	/** IAM actions required for the ListTestSources API call. */
-	static readonly LIST_TEST_SOURCES: string[] = [
-		"resiliencehub:ListTestSources",
-	];
+	static readonly ListTestSources: string[] = ["resiliencehub:ListTestSources"];
 	/** IAM actions required for the ListTestTemplates API call. */
-	static readonly LIST_TEST_TEMPLATES: string[] = [
+	static readonly ListTestTemplates: string[] = [
 		"resiliencehub:ListTestTemplates",
 	];
 	/** IAM actions required for the ListTests API call. */
-	static readonly LIST_TESTS: string[] = ["resiliencehub:ListTests"];
+	static readonly ListTests: string[] = ["resiliencehub:ListTests"];
 	/** IAM actions required for the ListUnsupportedAppVersionResources API call. */
-	static readonly LIST_UNSUPPORTED_APP_VERSION_RESOURCES: string[] = [
+	static readonly ListUnsupportedAppVersionResources: string[] = [
 		"resiliencehub:ListUnsupportedAppVersionResources",
 	];
 	/** IAM actions required for the ListUserJourneys API call. */
-	static readonly LIST_USER_JOURNEYS: string[] = [
+	static readonly ListUserJourneys: string[] = [
 		"resiliencehub:ListUserJourneys",
 	];
 	/** IAM actions required for the PublishAppVersion API call. */
-	static readonly PUBLISH_APP_VERSION: string[] = [
+	static readonly PublishAppVersion: string[] = [
 		"resiliencehub:PublishAppVersion",
 	];
 	/** IAM actions required for the PutDraftAppVersionTemplate API call. */
-	static readonly PUT_DRAFT_APP_VERSION_TEMPLATE: string[] = [
+	static readonly PutDraftAppVersionTemplate: string[] = [
 		"resiliencehub:PutDraftAppVersionTemplate",
 	];
 	/** IAM actions required for the PutTestSources API call. */
-	static readonly PUT_TEST_SOURCES: string[] = ["resiliencehub:PutTestSources"];
+	static readonly PutTestSources: string[] = ["resiliencehub:PutTestSources"];
 	/** IAM actions required for the RejectResourceGroupingRecommendations API call. */
-	static readonly REJECT_RESOURCE_GROUPING_RECOMMENDATIONS: string[] = [
+	static readonly RejectResourceGroupingRecommendations: string[] = [
 		"resiliencehub:RejectResourceGroupingRecommendations",
 	];
 	/** IAM actions required for the RemoveDraftAppVersionResourceMappings API call. */
-	static readonly REMOVE_DRAFT_APP_VERSION_RESOURCE_MAPPINGS: string[] = [
+	static readonly RemoveDraftAppVersionResourceMappings: string[] = [
 		"resiliencehub:RemoveDraftAppVersionResourceMappings",
 	];
 	/** IAM actions required for the ResolveAppVersionResources API call. */
-	static readonly RESOLVE_APP_VERSION_RESOURCES: string[] = [
+	static readonly ResolveAppVersionResources: string[] = [
 		"resiliencehub:ResolveAppVersionResources",
 	];
 	/** IAM actions required for the StartAppAssessment API call. */
-	static readonly START_APP_ASSESSMENT: string[] = [
+	static readonly StartAppAssessment: string[] = [
 		"resiliencehub:StartAppAssessment",
 		"resiliencehub:TagResource",
 	];
 	/** IAM actions required for the StartFailureModeAssessment API call. */
-	static readonly START_FAILURE_MODE_ASSESSMENT: string[] = [
+	static readonly StartFailureModeAssessment: string[] = [
 		"resiliencehub:StartFailureModeAssessment",
 	];
 	/** IAM actions required for the StartMetricsExport API call. */
-	static readonly START_METRICS_EXPORT: string[] = [
+	static readonly StartMetricsExport: string[] = [
 		"resiliencehub:StartMetricsExport",
 	];
 	/** IAM actions required for the StartResourceGroupingRecommendationTask API call. */
-	static readonly START_RESOURCE_GROUPING_RECOMMENDATION_TASK: string[] = [
+	static readonly StartResourceGroupingRecommendationTask: string[] = [
 		"resiliencehub:StartResourceGroupingRecommendationTask",
 	];
 	/** IAM actions required for the StartTestRun API call. */
-	static readonly START_TEST_RUN: string[] = ["resiliencehub:StartTestRun"];
+	static readonly StartTestRun: string[] = ["resiliencehub:StartTestRun"];
 	/** IAM actions required for the StopTestRun API call. */
-	static readonly STOP_TEST_RUN: string[] = ["resiliencehub:StopTestRun"];
+	static readonly StopTestRun: string[] = ["resiliencehub:StopTestRun"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["resiliencehub:TagResource"];
+	static readonly TagResource: string[] = ["resiliencehub:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["resiliencehub:UntagResource"];
+	static readonly UntagResource: string[] = ["resiliencehub:UntagResource"];
 	/** IAM actions required for the UpdateApp API call. */
-	static readonly UPDATE_APP: string[] = [
+	static readonly UpdateApp: string[] = [
 		"iam:PassRole",
 		"resiliencehub:UpdateApp",
 	];
 	/** IAM actions required for the UpdateAppVersion API call. */
-	static readonly UPDATE_APP_VERSION: string[] = [
+	static readonly UpdateAppVersion: string[] = [
 		"resiliencehub:UpdateAppVersion",
 	];
 	/** IAM actions required for the UpdateAppVersionAppComponent API call. */
-	static readonly UPDATE_APP_VERSION_APP_COMPONENT: string[] = [
+	static readonly UpdateAppVersionAppComponent: string[] = [
 		"resiliencehub:UpdateAppVersionAppComponent",
 	];
 	/** IAM actions required for the UpdateAppVersionResource API call. */
-	static readonly UPDATE_APP_VERSION_RESOURCE: string[] = [
+	static readonly UpdateAppVersionResource: string[] = [
 		"resiliencehub:UpdateAppVersionResource",
 	];
 	/** IAM actions required for the UpdateAssertion API call. */
-	static readonly UPDATE_ASSERTION: string[] = [
-		"resiliencehub:UpdateAssertion",
-	];
+	static readonly UpdateAssertion: string[] = ["resiliencehub:UpdateAssertion"];
 	/** IAM actions required for the UpdateDependency API call. */
-	static readonly UPDATE_DEPENDENCY: string[] = [
+	static readonly UpdateDependency: string[] = [
 		"resiliencehub:UpdateDependency",
 	];
 	/** IAM actions required for the UpdateFailureModeFinding API call. */
-	static readonly UPDATE_FAILURE_MODE_FINDING: string[] = [
+	static readonly UpdateFailureModeFinding: string[] = [
 		"resiliencehub:UpdateFailureModeFinding",
 	];
 	/** IAM actions required for the UpdatePolicy API call. */
-	static readonly UPDATE_POLICY: string[] = ["resiliencehub:UpdatePolicy"];
+	static readonly UpdatePolicy: string[] = ["resiliencehub:UpdatePolicy"];
 	/** IAM actions required for the UpdateResiliencyPolicy API call. */
-	static readonly UPDATE_RESILIENCY_POLICY: string[] = [
+	static readonly UpdateResiliencyPolicy: string[] = [
 		"resiliencehub:UpdateResiliencyPolicy",
 	];
 	/** IAM actions required for the UpdateService API call. */
-	static readonly UPDATE_SERVICE: string[] = [
+	static readonly UpdateService: string[] = [
 		"iam:PassRole",
 		"resiliencehub:UpdateService",
 	];
 	/** IAM actions required for the UpdateServiceFunction API call. */
-	static readonly UPDATE_SERVICE_FUNCTION: string[] = [
+	static readonly UpdateServiceFunction: string[] = [
 		"resiliencehub:UpdateServiceFunction",
 	];
 	/** IAM actions required for the UpdateSystem API call. */
-	static readonly UPDATE_SYSTEM: string[] = ["resiliencehub:UpdateSystem"];
+	static readonly UpdateSystem: string[] = ["resiliencehub:UpdateSystem"];
 	/** IAM actions required for the UpdateTest API call. */
-	static readonly UPDATE_TEST: string[] = ["resiliencehub:UpdateTest"];
+	static readonly UpdateTest: string[] = ["resiliencehub:UpdateTest"];
 	/** IAM actions required for the UpdateUserJourney API call. */
-	static readonly UPDATE_USER_JOURNEY: string[] = [
+	static readonly UpdateUserJourney: string[] = [
 		"resiliencehub:UpdateUserJourney",
 	];
 }
@@ -1325,39 +1428,39 @@ export class ResiliencehubOperations {
  */
 export class ResiliencehubConditions {
 	/** Condition keys applicable to the CreateApp action. */
-	static readonly CREATE_APP_CONDITION_KEYS: string[] = [
+	static readonly CreateAppConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRecommendationTemplate action. */
-	static readonly CREATE_RECOMMENDATION_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateRecommendationTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateResiliencyPolicy action. */
-	static readonly CREATE_RESILIENCY_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateResiliencyPolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartAppAssessment action. */
-	static readonly START_APP_ASSESSMENT_CONDITION_KEYS: string[] = [
+	static readonly StartAppAssessmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,107 +13,132 @@ export class CodeguruProfilerActions {
 	static readonly SERVICE_PREFIX = "codeguru-profiler";
 
 	/** [Write] codeguru-profiler:AddNotificationChannels */
-	static readonly ADD_NOTIFICATION_CHANNELS =
+	static readonly AddNotificationChannels =
 		"codeguru-profiler:AddNotificationChannels";
 	/** [List] codeguru-profiler:BatchGetFrameMetricData */
-	static readonly BATCH_GET_FRAME_METRIC_DATA =
+	static readonly BatchGetFrameMetricData =
 		"codeguru-profiler:BatchGetFrameMetricData";
 	/** [Write] codeguru-profiler:ConfigureAgent */
-	static readonly CONFIGURE_AGENT = "codeguru-profiler:ConfigureAgent";
+	static readonly ConfigureAgent = "codeguru-profiler:ConfigureAgent";
 	/** [Write] codeguru-profiler:CreateProfilingGroup */
-	static readonly CREATE_PROFILING_GROUP =
+	static readonly CreateProfilingGroup =
 		"codeguru-profiler:CreateProfilingGroup";
 	/** [Write] codeguru-profiler:DeleteProfilingGroup */
-	static readonly DELETE_PROFILING_GROUP =
+	static readonly DeleteProfilingGroup =
 		"codeguru-profiler:DeleteProfilingGroup";
 	/** [Read] codeguru-profiler:DescribeProfilingGroup */
-	static readonly DESCRIBE_PROFILING_GROUP =
+	static readonly DescribeProfilingGroup =
 		"codeguru-profiler:DescribeProfilingGroup";
 	/** [Read] codeguru-profiler:GetFindingsReportAccountSummary */
-	static readonly GET_FINDINGS_REPORT_ACCOUNT_SUMMARY =
+	static readonly actionGetFindingsReportAccountSummary =
 		"codeguru-profiler:GetFindingsReportAccountSummary";
 	/** [Read] codeguru-profiler:GetNotificationConfiguration */
-	static readonly GET_NOTIFICATION_CONFIGURATION =
+	static readonly actionGetNotificationConfiguration =
 		"codeguru-profiler:GetNotificationConfiguration";
 	/** [Read] codeguru-profiler:GetPolicy */
-	static readonly GET_POLICY = "codeguru-profiler:GetPolicy";
+	static readonly actionGetPolicy = "codeguru-profiler:GetPolicy";
 	/** [Read] codeguru-profiler:GetProfile */
-	static readonly GET_PROFILE = "codeguru-profiler:GetProfile";
+	static readonly actionGetProfile = "codeguru-profiler:GetProfile";
 	/** [Read] codeguru-profiler:GetRecommendations */
-	static readonly GET_RECOMMENDATIONS = "codeguru-profiler:GetRecommendations";
+	static readonly actionGetRecommendations =
+		"codeguru-profiler:GetRecommendations";
 	/** [List] codeguru-profiler:ListFindingsReports */
-	static readonly LIST_FINDINGS_REPORTS =
-		"codeguru-profiler:ListFindingsReports";
+	static readonly ListFindingsReports = "codeguru-profiler:ListFindingsReports";
 	/** [List] codeguru-profiler:ListProfileTimes */
-	static readonly LIST_PROFILE_TIMES = "codeguru-profiler:ListProfileTimes";
+	static readonly ListProfileTimes = "codeguru-profiler:ListProfileTimes";
 	/** [List] codeguru-profiler:ListProfilingGroups */
-	static readonly LIST_PROFILING_GROUPS =
-		"codeguru-profiler:ListProfilingGroups";
+	static readonly ListProfilingGroups = "codeguru-profiler:ListProfilingGroups";
 	/** [List] codeguru-profiler:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"codeguru-profiler:ListTagsForResource";
+	static readonly ListTagsForResource = "codeguru-profiler:ListTagsForResource";
 	/** [Write] codeguru-profiler:PostAgentProfile */
-	static readonly POST_AGENT_PROFILE = "codeguru-profiler:PostAgentProfile";
+	static readonly PostAgentProfile = "codeguru-profiler:PostAgentProfile";
 	/** [PermissionManagement] codeguru-profiler:PutPermission */
-	static readonly PUT_PERMISSION = "codeguru-profiler:PutPermission";
+	static readonly PutPermission = "codeguru-profiler:PutPermission";
 	/** [Write] codeguru-profiler:RemoveNotificationChannel */
-	static readonly REMOVE_NOTIFICATION_CHANNEL =
+	static readonly RemoveNotificationChannel =
 		"codeguru-profiler:RemoveNotificationChannel";
 	/** [PermissionManagement] codeguru-profiler:RemovePermission */
-	static readonly REMOVE_PERMISSION = "codeguru-profiler:RemovePermission";
+	static readonly RemovePermission = "codeguru-profiler:RemovePermission";
 	/** [Write] codeguru-profiler:SubmitFeedback */
-	static readonly SUBMIT_FEEDBACK = "codeguru-profiler:SubmitFeedback";
+	static readonly SubmitFeedback = "codeguru-profiler:SubmitFeedback";
 	/** [Tagging] codeguru-profiler:TagResource */
-	static readonly TAG_RESOURCE = "codeguru-profiler:TagResource";
+	static readonly TagResource = "codeguru-profiler:TagResource";
 	/** [Tagging] codeguru-profiler:UntagResource */
-	static readonly UNTAG_RESOURCE = "codeguru-profiler:UntagResource";
+	static readonly UntagResource = "codeguru-profiler:UntagResource";
 	/** [Write] codeguru-profiler:UpdateProfilingGroup */
-	static readonly UPDATE_PROFILING_GROUP =
+	static readonly UpdateProfilingGroup =
 		"codeguru-profiler:UpdateProfilingGroup";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CodeguruProfilerActions.DESCRIBE_PROFILING_GROUP,
-		CodeguruProfilerActions.GET_FINDINGS_REPORT_ACCOUNT_SUMMARY,
-		CodeguruProfilerActions.GET_NOTIFICATION_CONFIGURATION,
-		CodeguruProfilerActions.GET_POLICY,
-		CodeguruProfilerActions.GET_PROFILE,
-		CodeguruProfilerActions.GET_RECOMMENDATIONS,
+	static readonly AllReadActions: string[] = [
+		CodeguruProfilerActions.DescribeProfilingGroup,
+		CodeguruProfilerActions.actionGetFindingsReportAccountSummary,
+		CodeguruProfilerActions.actionGetNotificationConfiguration,
+		CodeguruProfilerActions.actionGetPolicy,
+		CodeguruProfilerActions.actionGetProfile,
+		CodeguruProfilerActions.actionGetRecommendations,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CodeguruProfilerActions.ADD_NOTIFICATION_CHANNELS,
-		CodeguruProfilerActions.CONFIGURE_AGENT,
-		CodeguruProfilerActions.CREATE_PROFILING_GROUP,
-		CodeguruProfilerActions.DELETE_PROFILING_GROUP,
-		CodeguruProfilerActions.POST_AGENT_PROFILE,
-		CodeguruProfilerActions.REMOVE_NOTIFICATION_CHANNEL,
-		CodeguruProfilerActions.SUBMIT_FEEDBACK,
-		CodeguruProfilerActions.UPDATE_PROFILING_GROUP,
+	static readonly AllWriteActions: string[] = [
+		CodeguruProfilerActions.AddNotificationChannels,
+		CodeguruProfilerActions.ConfigureAgent,
+		CodeguruProfilerActions.CreateProfilingGroup,
+		CodeguruProfilerActions.DeleteProfilingGroup,
+		CodeguruProfilerActions.PostAgentProfile,
+		CodeguruProfilerActions.RemoveNotificationChannel,
+		CodeguruProfilerActions.SubmitFeedback,
+		CodeguruProfilerActions.UpdateProfilingGroup,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CodeguruProfilerActions.BATCH_GET_FRAME_METRIC_DATA,
-		CodeguruProfilerActions.LIST_FINDINGS_REPORTS,
-		CodeguruProfilerActions.LIST_PROFILE_TIMES,
-		CodeguruProfilerActions.LIST_PROFILING_GROUPS,
-		CodeguruProfilerActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CodeguruProfilerActions.BatchGetFrameMetricData,
+		CodeguruProfilerActions.ListFindingsReports,
+		CodeguruProfilerActions.ListProfileTimes,
+		CodeguruProfilerActions.ListProfilingGroups,
+		CodeguruProfilerActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CodeguruProfilerActions.PUT_PERMISSION,
-		CodeguruProfilerActions.REMOVE_PERMISSION,
+	static readonly AllPermissionManagementActions: string[] = [
+		CodeguruProfilerActions.PutPermission,
+		CodeguruProfilerActions.RemovePermission,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CodeguruProfilerActions.TAG_RESOURCE,
-		CodeguruProfilerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CodeguruProfilerActions.TagResource,
+		CodeguruProfilerActions.UntagResource,
 	];
 }
 
-const ProfilingGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):codeguru-profiler:(?<region>[^:]*):(?<account>[^:]*):profilingGroup/(?<profilingGroupName>[^:/?]+)$",
-);
+/**
+ * Properties for building a ProfilingGroup ARN.
+ */
+export interface CodeguruProfilerProfilingGroupArnProps {
+	/** The ProfilingGroupName component of the ARN. */
+	readonly profilingGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ProfilingGroup ARN.
+ */
+export interface CodeguruProfilerProfilingGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfilingGroupName component. */
+	readonly profilingGroupName: string;
+}
+
+const ProfilingGroupArnRegex =
+	/^arn:(?<partition>[^:]+):codeguru-profiler:(?<region>[^:]*):(?<account>[^:]*):profilingGroup\/(?<profilingGroupName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for codeguru-profiler resources.
@@ -122,16 +147,7 @@ export class CodeguruProfilerResources {
 	/**
 	 * Builds an ARN for the ProfilingGroup resource.
 	 */
-	static profilingGroup(props: {
-		/** The ProfilingGroupName component of the ARN. */
-		readonly profilingGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static profilingGroup(props: CodeguruProfilerProfilingGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:codeguru-profiler:${props.region ?? "*"}:${props.account ?? "*"}:profilingGroup/${props.profilingGroupName}`;
 	}
 
@@ -146,12 +162,9 @@ export class CodeguruProfilerResources {
 	 * Parses a ProfilingGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProfilingGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profilingGroupName: string;
-	} {
+	static parseProfilingGroupArn(
+		arn: string,
+	): CodeguruProfilerProfilingGroupArnComponents {
 		const match = ProfilingGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ProfilingGroup ARN: ${arn}`);
@@ -170,90 +183,86 @@ export class CodeguruProfilerResources {
  */
 export class CodeguruProfilerOperations {
 	/** IAM actions required for the AddNotificationChannels API call. */
-	static readonly ADD_NOTIFICATION_CHANNELS: string[] = [
+	static readonly AddNotificationChannels: string[] = [
 		"codeguru-profiler:AddNotificationChannels",
 	];
 	/** IAM actions required for the BatchGetFrameMetricData API call. */
-	static readonly BATCH_GET_FRAME_METRIC_DATA: string[] = [
+	static readonly BatchGetFrameMetricData: string[] = [
 		"codeguru-profiler:BatchGetFrameMetricData",
 	];
 	/** IAM actions required for the ConfigureAgent API call. */
-	static readonly CONFIGURE_AGENT: string[] = [
+	static readonly ConfigureAgent: string[] = [
 		"codeguru-profiler:ConfigureAgent",
 	];
 	/** IAM actions required for the CreateProfilingGroup API call. */
-	static readonly CREATE_PROFILING_GROUP: string[] = [
+	static readonly CreateProfilingGroup: string[] = [
 		"codeguru-profiler:CreateProfilingGroup",
 		"codeguru-profiler:TagResource",
 	];
 	/** IAM actions required for the DeleteProfilingGroup API call. */
-	static readonly DELETE_PROFILING_GROUP: string[] = [
+	static readonly DeleteProfilingGroup: string[] = [
 		"codeguru-profiler:DeleteProfilingGroup",
 	];
 	/** IAM actions required for the DescribeProfilingGroup API call. */
-	static readonly DESCRIBE_PROFILING_GROUP: string[] = [
+	static readonly DescribeProfilingGroup: string[] = [
 		"codeguru-profiler:DescribeProfilingGroup",
 	];
 	/** IAM actions required for the GetFindingsReportAccountSummary API call. */
-	static readonly GET_FINDINGS_REPORT_ACCOUNT_SUMMARY: string[] = [
+	static readonly opGetFindingsReportAccountSummary: string[] = [
 		"codeguru-profiler:GetFindingsReportAccountSummary",
 	];
 	/** IAM actions required for the GetNotificationConfiguration API call. */
-	static readonly GET_NOTIFICATION_CONFIGURATION: string[] = [
+	static readonly opGetNotificationConfiguration: string[] = [
 		"codeguru-profiler:GetNotificationConfiguration",
 	];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = ["codeguru-profiler:GetPolicy"];
+	static readonly opGetPolicy: string[] = ["codeguru-profiler:GetPolicy"];
 	/** IAM actions required for the GetProfile API call. */
-	static readonly GET_PROFILE: string[] = ["codeguru-profiler:GetProfile"];
+	static readonly opGetProfile: string[] = ["codeguru-profiler:GetProfile"];
 	/** IAM actions required for the GetRecommendations API call. */
-	static readonly GET_RECOMMENDATIONS: string[] = [
+	static readonly opGetRecommendations: string[] = [
 		"codeguru-profiler:GetRecommendations",
 	];
 	/** IAM actions required for the ListFindingsReports API call. */
-	static readonly LIST_FINDINGS_REPORTS: string[] = [
+	static readonly ListFindingsReports: string[] = [
 		"codeguru-profiler:ListFindingsReports",
 	];
 	/** IAM actions required for the ListProfileTimes API call. */
-	static readonly LIST_PROFILE_TIMES: string[] = [
+	static readonly ListProfileTimes: string[] = [
 		"codeguru-profiler:ListProfileTimes",
 	];
 	/** IAM actions required for the ListProfilingGroups API call. */
-	static readonly LIST_PROFILING_GROUPS: string[] = [
+	static readonly ListProfilingGroups: string[] = [
 		"codeguru-profiler:ListProfilingGroups",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"codeguru-profiler:ListTagsForResource",
 	];
 	/** IAM actions required for the PostAgentProfile API call. */
-	static readonly POST_AGENT_PROFILE: string[] = [
+	static readonly PostAgentProfile: string[] = [
 		"codeguru-profiler:PostAgentProfile",
 	];
 	/** IAM actions required for the PutPermission API call. */
-	static readonly PUT_PERMISSION: string[] = [
-		"codeguru-profiler:PutPermission",
-	];
+	static readonly PutPermission: string[] = ["codeguru-profiler:PutPermission"];
 	/** IAM actions required for the RemoveNotificationChannel API call. */
-	static readonly REMOVE_NOTIFICATION_CHANNEL: string[] = [
+	static readonly RemoveNotificationChannel: string[] = [
 		"codeguru-profiler:RemoveNotificationChannel",
 	];
 	/** IAM actions required for the RemovePermission API call. */
-	static readonly REMOVE_PERMISSION: string[] = [
+	static readonly RemovePermission: string[] = [
 		"codeguru-profiler:RemovePermission",
 	];
 	/** IAM actions required for the SubmitFeedback API call. */
-	static readonly SUBMIT_FEEDBACK: string[] = [
+	static readonly SubmitFeedback: string[] = [
 		"codeguru-profiler:SubmitFeedback",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["codeguru-profiler:TagResource"];
+	static readonly TagResource: string[] = ["codeguru-profiler:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
-		"codeguru-profiler:UntagResource",
-	];
+	static readonly UntagResource: string[] = ["codeguru-profiler:UntagResource"];
 	/** IAM actions required for the UpdateProfilingGroup API call. */
-	static readonly UPDATE_PROFILING_GROUP: string[] = [
+	static readonly UpdateProfilingGroup: string[] = [
 		"codeguru-profiler:UpdateProfilingGroup",
 	];
 }
@@ -263,24 +272,24 @@ export class CodeguruProfilerOperations {
  */
 export class CodeguruProfilerConditions {
 	/** Condition keys applicable to the CreateProfilingGroup action. */
-	static readonly CREATE_PROFILING_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateProfilingGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

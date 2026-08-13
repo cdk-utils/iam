@@ -13,197 +13,214 @@ export class SwfActions {
 	static readonly SERVICE_PREFIX = "swf";
 
 	/** [Write] swf:CancelTimer */
-	static readonly CANCEL_TIMER = "swf:CancelTimer";
+	static readonly CancelTimer = "swf:CancelTimer";
 	/** [Write] swf:CancelWorkflowExecution */
-	static readonly CANCEL_WORKFLOW_EXECUTION = "swf:CancelWorkflowExecution";
+	static readonly CancelWorkflowExecution = "swf:CancelWorkflowExecution";
 	/** [Write] swf:CompleteWorkflowExecution */
-	static readonly COMPLETE_WORKFLOW_EXECUTION = "swf:CompleteWorkflowExecution";
+	static readonly CompleteWorkflowExecution = "swf:CompleteWorkflowExecution";
 	/** [Write] swf:ContinueAsNewWorkflowExecution */
-	static readonly CONTINUE_AS_NEW_WORKFLOW_EXECUTION =
+	static readonly ContinueAsNewWorkflowExecution =
 		"swf:ContinueAsNewWorkflowExecution";
 	/** [Read] swf:CountClosedWorkflowExecutions */
-	static readonly COUNT_CLOSED_WORKFLOW_EXECUTIONS =
+	static readonly CountClosedWorkflowExecutions =
 		"swf:CountClosedWorkflowExecutions";
 	/** [Read] swf:CountOpenWorkflowExecutions */
-	static readonly COUNT_OPEN_WORKFLOW_EXECUTIONS =
+	static readonly CountOpenWorkflowExecutions =
 		"swf:CountOpenWorkflowExecutions";
 	/** [Read] swf:CountPendingActivityTasks */
-	static readonly COUNT_PENDING_ACTIVITY_TASKS =
-		"swf:CountPendingActivityTasks";
+	static readonly CountPendingActivityTasks = "swf:CountPendingActivityTasks";
 	/** [Read] swf:CountPendingDecisionTasks */
-	static readonly COUNT_PENDING_DECISION_TASKS =
-		"swf:CountPendingDecisionTasks";
+	static readonly CountPendingDecisionTasks = "swf:CountPendingDecisionTasks";
 	/** [Write] swf:DeleteActivityType */
-	static readonly DELETE_ACTIVITY_TYPE = "swf:DeleteActivityType";
+	static readonly DeleteActivityType = "swf:DeleteActivityType";
 	/** [Write] swf:DeleteWorkflowType */
-	static readonly DELETE_WORKFLOW_TYPE = "swf:DeleteWorkflowType";
+	static readonly DeleteWorkflowType = "swf:DeleteWorkflowType";
 	/** [Write] swf:DeprecateActivityType */
-	static readonly DEPRECATE_ACTIVITY_TYPE = "swf:DeprecateActivityType";
+	static readonly DeprecateActivityType = "swf:DeprecateActivityType";
 	/** [Write] swf:DeprecateDomain */
-	static readonly DEPRECATE_DOMAIN = "swf:DeprecateDomain";
+	static readonly DeprecateDomain = "swf:DeprecateDomain";
 	/** [Write] swf:DeprecateWorkflowType */
-	static readonly DEPRECATE_WORKFLOW_TYPE = "swf:DeprecateWorkflowType";
+	static readonly DeprecateWorkflowType = "swf:DeprecateWorkflowType";
 	/** [Read] swf:DescribeActivityType */
-	static readonly DESCRIBE_ACTIVITY_TYPE = "swf:DescribeActivityType";
+	static readonly DescribeActivityType = "swf:DescribeActivityType";
 	/** [Read] swf:DescribeDomain */
-	static readonly DESCRIBE_DOMAIN = "swf:DescribeDomain";
+	static readonly DescribeDomain = "swf:DescribeDomain";
 	/** [Read] swf:DescribeWorkflowExecution */
-	static readonly DESCRIBE_WORKFLOW_EXECUTION = "swf:DescribeWorkflowExecution";
+	static readonly DescribeWorkflowExecution = "swf:DescribeWorkflowExecution";
 	/** [Read] swf:DescribeWorkflowType */
-	static readonly DESCRIBE_WORKFLOW_TYPE = "swf:DescribeWorkflowType";
+	static readonly DescribeWorkflowType = "swf:DescribeWorkflowType";
 	/** [Write] swf:FailWorkflowExecution */
-	static readonly FAIL_WORKFLOW_EXECUTION = "swf:FailWorkflowExecution";
+	static readonly FailWorkflowExecution = "swf:FailWorkflowExecution";
 	/** [Read] swf:GetWorkflowExecutionHistory */
-	static readonly GET_WORKFLOW_EXECUTION_HISTORY =
+	static readonly actionGetWorkflowExecutionHistory =
 		"swf:GetWorkflowExecutionHistory";
 	/** [List] swf:ListActivityTypes */
-	static readonly LIST_ACTIVITY_TYPES = "swf:ListActivityTypes";
+	static readonly ListActivityTypes = "swf:ListActivityTypes";
 	/** [List] swf:ListClosedWorkflowExecutions */
-	static readonly LIST_CLOSED_WORKFLOW_EXECUTIONS =
+	static readonly ListClosedWorkflowExecutions =
 		"swf:ListClosedWorkflowExecutions";
 	/** [List] swf:ListDomains */
-	static readonly LIST_DOMAINS = "swf:ListDomains";
+	static readonly ListDomains = "swf:ListDomains";
 	/** [List] swf:ListOpenWorkflowExecutions */
-	static readonly LIST_OPEN_WORKFLOW_EXECUTIONS =
-		"swf:ListOpenWorkflowExecutions";
+	static readonly ListOpenWorkflowExecutions = "swf:ListOpenWorkflowExecutions";
 	/** [List] swf:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "swf:ListTagsForResource";
+	static readonly ListTagsForResource = "swf:ListTagsForResource";
 	/** [List] swf:ListWorkflowTypes */
-	static readonly LIST_WORKFLOW_TYPES = "swf:ListWorkflowTypes";
+	static readonly ListWorkflowTypes = "swf:ListWorkflowTypes";
 	/** [Write] swf:PollForActivityTask */
-	static readonly POLL_FOR_ACTIVITY_TASK = "swf:PollForActivityTask";
+	static readonly PollForActivityTask = "swf:PollForActivityTask";
 	/** [Write] swf:PollForDecisionTask */
-	static readonly POLL_FOR_DECISION_TASK = "swf:PollForDecisionTask";
+	static readonly PollForDecisionTask = "swf:PollForDecisionTask";
 	/** [Write] swf:RecordActivityTaskHeartbeat */
-	static readonly RECORD_ACTIVITY_TASK_HEARTBEAT =
+	static readonly RecordActivityTaskHeartbeat =
 		"swf:RecordActivityTaskHeartbeat";
 	/** [Write] swf:RecordMarker */
-	static readonly RECORD_MARKER = "swf:RecordMarker";
+	static readonly RecordMarker = "swf:RecordMarker";
 	/** [Write] swf:RegisterActivityType */
-	static readonly REGISTER_ACTIVITY_TYPE = "swf:RegisterActivityType";
+	static readonly RegisterActivityType = "swf:RegisterActivityType";
 	/** [Write] swf:RegisterDomain */
-	static readonly REGISTER_DOMAIN = "swf:RegisterDomain";
+	static readonly RegisterDomain = "swf:RegisterDomain";
 	/** [Write] swf:RegisterWorkflowType */
-	static readonly REGISTER_WORKFLOW_TYPE = "swf:RegisterWorkflowType";
+	static readonly RegisterWorkflowType = "swf:RegisterWorkflowType";
 	/** [Write] swf:RequestCancelActivityTask */
-	static readonly REQUEST_CANCEL_ACTIVITY_TASK =
-		"swf:RequestCancelActivityTask";
+	static readonly RequestCancelActivityTask = "swf:RequestCancelActivityTask";
 	/** [Write] swf:RequestCancelExternalWorkflowExecution */
-	static readonly REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION =
+	static readonly RequestCancelExternalWorkflowExecution =
 		"swf:RequestCancelExternalWorkflowExecution";
 	/** [Write] swf:RequestCancelWorkflowExecution */
-	static readonly REQUEST_CANCEL_WORKFLOW_EXECUTION =
+	static readonly RequestCancelWorkflowExecution =
 		"swf:RequestCancelWorkflowExecution";
 	/** [Write] swf:RespondActivityTaskCanceled */
-	static readonly RESPOND_ACTIVITY_TASK_CANCELED =
+	static readonly RespondActivityTaskCanceled =
 		"swf:RespondActivityTaskCanceled";
 	/** [Write] swf:RespondActivityTaskCompleted */
-	static readonly RESPOND_ACTIVITY_TASK_COMPLETED =
+	static readonly RespondActivityTaskCompleted =
 		"swf:RespondActivityTaskCompleted";
 	/** [Write] swf:RespondActivityTaskFailed */
-	static readonly RESPOND_ACTIVITY_TASK_FAILED =
-		"swf:RespondActivityTaskFailed";
+	static readonly RespondActivityTaskFailed = "swf:RespondActivityTaskFailed";
 	/** [Write] swf:RespondDecisionTaskCompleted */
-	static readonly RESPOND_DECISION_TASK_COMPLETED =
+	static readonly RespondDecisionTaskCompleted =
 		"swf:RespondDecisionTaskCompleted";
 	/** [Write] swf:ScheduleActivityTask */
-	static readonly SCHEDULE_ACTIVITY_TASK = "swf:ScheduleActivityTask";
+	static readonly ScheduleActivityTask = "swf:ScheduleActivityTask";
 	/** [Write] swf:SignalExternalWorkflowExecution */
-	static readonly SIGNAL_EXTERNAL_WORKFLOW_EXECUTION =
+	static readonly SignalExternalWorkflowExecution =
 		"swf:SignalExternalWorkflowExecution";
 	/** [Write] swf:SignalWorkflowExecution */
-	static readonly SIGNAL_WORKFLOW_EXECUTION = "swf:SignalWorkflowExecution";
+	static readonly SignalWorkflowExecution = "swf:SignalWorkflowExecution";
 	/** [Write] swf:StartChildWorkflowExecution */
-	static readonly START_CHILD_WORKFLOW_EXECUTION =
+	static readonly StartChildWorkflowExecution =
 		"swf:StartChildWorkflowExecution";
 	/** [Write] swf:StartTimer */
-	static readonly START_TIMER = "swf:StartTimer";
+	static readonly StartTimer = "swf:StartTimer";
 	/** [Write] swf:StartWorkflowExecution */
-	static readonly START_WORKFLOW_EXECUTION = "swf:StartWorkflowExecution";
+	static readonly StartWorkflowExecution = "swf:StartWorkflowExecution";
 	/** [Tagging] swf:TagResource */
-	static readonly TAG_RESOURCE = "swf:TagResource";
+	static readonly TagResource = "swf:TagResource";
 	/** [Write] swf:TerminateWorkflowExecution */
-	static readonly TERMINATE_WORKFLOW_EXECUTION =
-		"swf:TerminateWorkflowExecution";
+	static readonly TerminateWorkflowExecution = "swf:TerminateWorkflowExecution";
 	/** [Write] swf:UndeprecateActivityType */
-	static readonly UNDEPRECATE_ACTIVITY_TYPE = "swf:UndeprecateActivityType";
+	static readonly UndeprecateActivityType = "swf:UndeprecateActivityType";
 	/** [Write] swf:UndeprecateDomain */
-	static readonly UNDEPRECATE_DOMAIN = "swf:UndeprecateDomain";
+	static readonly UndeprecateDomain = "swf:UndeprecateDomain";
 	/** [Write] swf:UndeprecateWorkflowType */
-	static readonly UNDEPRECATE_WORKFLOW_TYPE = "swf:UndeprecateWorkflowType";
+	static readonly UndeprecateWorkflowType = "swf:UndeprecateWorkflowType";
 	/** [Tagging] swf:UntagResource */
-	static readonly UNTAG_RESOURCE = "swf:UntagResource";
+	static readonly UntagResource = "swf:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SwfActions.COUNT_CLOSED_WORKFLOW_EXECUTIONS,
-		SwfActions.COUNT_OPEN_WORKFLOW_EXECUTIONS,
-		SwfActions.COUNT_PENDING_ACTIVITY_TASKS,
-		SwfActions.COUNT_PENDING_DECISION_TASKS,
-		SwfActions.DESCRIBE_ACTIVITY_TYPE,
-		SwfActions.DESCRIBE_DOMAIN,
-		SwfActions.DESCRIBE_WORKFLOW_EXECUTION,
-		SwfActions.DESCRIBE_WORKFLOW_TYPE,
-		SwfActions.GET_WORKFLOW_EXECUTION_HISTORY,
+	static readonly AllReadActions: string[] = [
+		SwfActions.CountClosedWorkflowExecutions,
+		SwfActions.CountOpenWorkflowExecutions,
+		SwfActions.CountPendingActivityTasks,
+		SwfActions.CountPendingDecisionTasks,
+		SwfActions.DescribeActivityType,
+		SwfActions.DescribeDomain,
+		SwfActions.DescribeWorkflowExecution,
+		SwfActions.DescribeWorkflowType,
+		SwfActions.actionGetWorkflowExecutionHistory,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SwfActions.CANCEL_TIMER,
-		SwfActions.CANCEL_WORKFLOW_EXECUTION,
-		SwfActions.COMPLETE_WORKFLOW_EXECUTION,
-		SwfActions.CONTINUE_AS_NEW_WORKFLOW_EXECUTION,
-		SwfActions.DELETE_ACTIVITY_TYPE,
-		SwfActions.DELETE_WORKFLOW_TYPE,
-		SwfActions.DEPRECATE_ACTIVITY_TYPE,
-		SwfActions.DEPRECATE_DOMAIN,
-		SwfActions.DEPRECATE_WORKFLOW_TYPE,
-		SwfActions.FAIL_WORKFLOW_EXECUTION,
-		SwfActions.POLL_FOR_ACTIVITY_TASK,
-		SwfActions.POLL_FOR_DECISION_TASK,
-		SwfActions.RECORD_ACTIVITY_TASK_HEARTBEAT,
-		SwfActions.RECORD_MARKER,
-		SwfActions.REGISTER_ACTIVITY_TYPE,
-		SwfActions.REGISTER_DOMAIN,
-		SwfActions.REGISTER_WORKFLOW_TYPE,
-		SwfActions.REQUEST_CANCEL_ACTIVITY_TASK,
-		SwfActions.REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION,
-		SwfActions.REQUEST_CANCEL_WORKFLOW_EXECUTION,
-		SwfActions.RESPOND_ACTIVITY_TASK_CANCELED,
-		SwfActions.RESPOND_ACTIVITY_TASK_COMPLETED,
-		SwfActions.RESPOND_ACTIVITY_TASK_FAILED,
-		SwfActions.RESPOND_DECISION_TASK_COMPLETED,
-		SwfActions.SCHEDULE_ACTIVITY_TASK,
-		SwfActions.SIGNAL_EXTERNAL_WORKFLOW_EXECUTION,
-		SwfActions.SIGNAL_WORKFLOW_EXECUTION,
-		SwfActions.START_CHILD_WORKFLOW_EXECUTION,
-		SwfActions.START_TIMER,
-		SwfActions.START_WORKFLOW_EXECUTION,
-		SwfActions.TERMINATE_WORKFLOW_EXECUTION,
-		SwfActions.UNDEPRECATE_ACTIVITY_TYPE,
-		SwfActions.UNDEPRECATE_DOMAIN,
-		SwfActions.UNDEPRECATE_WORKFLOW_TYPE,
+	static readonly AllWriteActions: string[] = [
+		SwfActions.CancelTimer,
+		SwfActions.CancelWorkflowExecution,
+		SwfActions.CompleteWorkflowExecution,
+		SwfActions.ContinueAsNewWorkflowExecution,
+		SwfActions.DeleteActivityType,
+		SwfActions.DeleteWorkflowType,
+		SwfActions.DeprecateActivityType,
+		SwfActions.DeprecateDomain,
+		SwfActions.DeprecateWorkflowType,
+		SwfActions.FailWorkflowExecution,
+		SwfActions.PollForActivityTask,
+		SwfActions.PollForDecisionTask,
+		SwfActions.RecordActivityTaskHeartbeat,
+		SwfActions.RecordMarker,
+		SwfActions.RegisterActivityType,
+		SwfActions.RegisterDomain,
+		SwfActions.RegisterWorkflowType,
+		SwfActions.RequestCancelActivityTask,
+		SwfActions.RequestCancelExternalWorkflowExecution,
+		SwfActions.RequestCancelWorkflowExecution,
+		SwfActions.RespondActivityTaskCanceled,
+		SwfActions.RespondActivityTaskCompleted,
+		SwfActions.RespondActivityTaskFailed,
+		SwfActions.RespondDecisionTaskCompleted,
+		SwfActions.ScheduleActivityTask,
+		SwfActions.SignalExternalWorkflowExecution,
+		SwfActions.SignalWorkflowExecution,
+		SwfActions.StartChildWorkflowExecution,
+		SwfActions.StartTimer,
+		SwfActions.StartWorkflowExecution,
+		SwfActions.TerminateWorkflowExecution,
+		SwfActions.UndeprecateActivityType,
+		SwfActions.UndeprecateDomain,
+		SwfActions.UndeprecateWorkflowType,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SwfActions.LIST_ACTIVITY_TYPES,
-		SwfActions.LIST_CLOSED_WORKFLOW_EXECUTIONS,
-		SwfActions.LIST_DOMAINS,
-		SwfActions.LIST_OPEN_WORKFLOW_EXECUTIONS,
-		SwfActions.LIST_TAGS_FOR_RESOURCE,
-		SwfActions.LIST_WORKFLOW_TYPES,
+	static readonly AllListActions: string[] = [
+		SwfActions.ListActivityTypes,
+		SwfActions.ListClosedWorkflowExecutions,
+		SwfActions.ListDomains,
+		SwfActions.ListOpenWorkflowExecutions,
+		SwfActions.ListTagsForResource,
+		SwfActions.ListWorkflowTypes,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SwfActions.TAG_RESOURCE,
-		SwfActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SwfActions.TagResource,
+		SwfActions.UntagResource,
 	];
 }
 
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):swf::(?<account>[^:]*):/domain/(?<domainName>[^:/?]+)$",
-);
+/**
+ * Properties for building a domain ARN.
+ */
+export interface SwfDomainArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain ARN.
+ */
+export interface SwfDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):swf::(?<account>[^:]*):\/domain\/(?<domainName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for swf resources.
@@ -212,14 +229,7 @@ export class SwfResources {
 	/**
 	 * Builds an ARN for the domain resource.
 	 */
-	static domain(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: SwfDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:swf::${props.account ?? "*"}:/domain/${props.domainName}`;
 	}
 
@@ -234,11 +244,7 @@ export class SwfResources {
 	 * Parses a domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainArn(arn: string): SwfDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain ARN: ${arn}`);
@@ -256,145 +262,133 @@ export class SwfResources {
  */
 export class SwfOperations {
 	/** IAM actions required for the CountClosedWorkflowExecutions API call. */
-	static readonly COUNT_CLOSED_WORKFLOW_EXECUTIONS: string[] = [
+	static readonly CountClosedWorkflowExecutions: string[] = [
 		"swf:CountClosedWorkflowExecutions",
 	];
 	/** IAM actions required for the CountOpenWorkflowExecutions API call. */
-	static readonly COUNT_OPEN_WORKFLOW_EXECUTIONS: string[] = [
+	static readonly CountOpenWorkflowExecutions: string[] = [
 		"swf:CountOpenWorkflowExecutions",
 	];
 	/** IAM actions required for the CountPendingActivityTasks API call. */
-	static readonly COUNT_PENDING_ACTIVITY_TASKS: string[] = [
+	static readonly CountPendingActivityTasks: string[] = [
 		"swf:CountPendingActivityTasks",
 	];
 	/** IAM actions required for the CountPendingDecisionTasks API call. */
-	static readonly COUNT_PENDING_DECISION_TASKS: string[] = [
+	static readonly CountPendingDecisionTasks: string[] = [
 		"swf:CountPendingDecisionTasks",
 	];
 	/** IAM actions required for the DeleteActivityType API call. */
-	static readonly DELETE_ACTIVITY_TYPE: string[] = ["swf:DeleteActivityType"];
+	static readonly DeleteActivityType: string[] = ["swf:DeleteActivityType"];
 	/** IAM actions required for the DeleteWorkflowType API call. */
-	static readonly DELETE_WORKFLOW_TYPE: string[] = ["swf:DeleteWorkflowType"];
+	static readonly DeleteWorkflowType: string[] = ["swf:DeleteWorkflowType"];
 	/** IAM actions required for the DeprecateActivityType API call. */
-	static readonly DEPRECATE_ACTIVITY_TYPE: string[] = [
+	static readonly DeprecateActivityType: string[] = [
 		"swf:DeprecateActivityType",
 	];
 	/** IAM actions required for the DeprecateDomain API call. */
-	static readonly DEPRECATE_DOMAIN: string[] = ["swf:DeprecateDomain"];
+	static readonly DeprecateDomain: string[] = ["swf:DeprecateDomain"];
 	/** IAM actions required for the DeprecateWorkflowType API call. */
-	static readonly DEPRECATE_WORKFLOW_TYPE: string[] = [
+	static readonly DeprecateWorkflowType: string[] = [
 		"swf:DeprecateWorkflowType",
 	];
 	/** IAM actions required for the DescribeActivityType API call. */
-	static readonly DESCRIBE_ACTIVITY_TYPE: string[] = [
-		"swf:DescribeActivityType",
-	];
+	static readonly DescribeActivityType: string[] = ["swf:DescribeActivityType"];
 	/** IAM actions required for the DescribeDomain API call. */
-	static readonly DESCRIBE_DOMAIN: string[] = ["swf:DescribeDomain"];
+	static readonly DescribeDomain: string[] = ["swf:DescribeDomain"];
 	/** IAM actions required for the DescribeWorkflowExecution API call. */
-	static readonly DESCRIBE_WORKFLOW_EXECUTION: string[] = [
+	static readonly DescribeWorkflowExecution: string[] = [
 		"swf:DescribeWorkflowExecution",
 	];
 	/** IAM actions required for the DescribeWorkflowType API call. */
-	static readonly DESCRIBE_WORKFLOW_TYPE: string[] = [
-		"swf:DescribeWorkflowType",
-	];
+	static readonly DescribeWorkflowType: string[] = ["swf:DescribeWorkflowType"];
 	/** IAM actions required for the GetWorkflowExecutionHistory API call. */
-	static readonly GET_WORKFLOW_EXECUTION_HISTORY: string[] = [
+	static readonly opGetWorkflowExecutionHistory: string[] = [
 		"swf:GetWorkflowExecutionHistory",
 	];
 	/** IAM actions required for the ListActivityTypes API call. */
-	static readonly LIST_ACTIVITY_TYPES: string[] = ["swf:ListActivityTypes"];
+	static readonly ListActivityTypes: string[] = ["swf:ListActivityTypes"];
 	/** IAM actions required for the ListClosedWorkflowExecutions API call. */
-	static readonly LIST_CLOSED_WORKFLOW_EXECUTIONS: string[] = [
+	static readonly ListClosedWorkflowExecutions: string[] = [
 		"swf:ListClosedWorkflowExecutions",
 	];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = ["swf:ListDomains"];
+	static readonly ListDomains: string[] = ["swf:ListDomains"];
 	/** IAM actions required for the ListOpenWorkflowExecutions API call. */
-	static readonly LIST_OPEN_WORKFLOW_EXECUTIONS: string[] = [
+	static readonly ListOpenWorkflowExecutions: string[] = [
 		"swf:ListOpenWorkflowExecutions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"swf:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["swf:ListTagsForResource"];
 	/** IAM actions required for the ListWorkflowTypes API call. */
-	static readonly LIST_WORKFLOW_TYPES: string[] = ["swf:ListWorkflowTypes"];
+	static readonly ListWorkflowTypes: string[] = ["swf:ListWorkflowTypes"];
 	/** IAM actions required for the PollForActivityTask API call. */
-	static readonly POLL_FOR_ACTIVITY_TASK: string[] = [
-		"swf:PollForActivityTask",
-	];
+	static readonly PollForActivityTask: string[] = ["swf:PollForActivityTask"];
 	/** IAM actions required for the PollForDecisionTask API call. */
-	static readonly POLL_FOR_DECISION_TASK: string[] = [
-		"swf:PollForDecisionTask",
-	];
+	static readonly PollForDecisionTask: string[] = ["swf:PollForDecisionTask"];
 	/** IAM actions required for the RecordActivityTaskHeartbeat API call. */
-	static readonly RECORD_ACTIVITY_TASK_HEARTBEAT: string[] = [
+	static readonly RecordActivityTaskHeartbeat: string[] = [
 		"swf:RecordActivityTaskHeartbeat",
 	];
 	/** IAM actions required for the RegisterActivityType API call. */
-	static readonly REGISTER_ACTIVITY_TYPE: string[] = [
-		"swf:RegisterActivityType",
-	];
+	static readonly RegisterActivityType: string[] = ["swf:RegisterActivityType"];
 	/** IAM actions required for the RegisterDomain API call. */
-	static readonly REGISTER_DOMAIN: string[] = [
+	static readonly RegisterDomain: string[] = [
 		"swf:RegisterDomain",
 		"swf:TagResource",
 	];
 	/** IAM actions required for the RegisterWorkflowType API call. */
-	static readonly REGISTER_WORKFLOW_TYPE: string[] = [
+	static readonly RegisterWorkflowType: string[] = [
 		"iam:PassRole",
 		"swf:RegisterWorkflowType",
 	];
 	/** IAM actions required for the RequestCancelWorkflowExecution API call. */
-	static readonly REQUEST_CANCEL_WORKFLOW_EXECUTION: string[] = [
+	static readonly RequestCancelWorkflowExecution: string[] = [
 		"swf:RequestCancelWorkflowExecution",
 	];
 	/** IAM actions required for the RespondActivityTaskCanceled API call. */
-	static readonly RESPOND_ACTIVITY_TASK_CANCELED: string[] = [
+	static readonly RespondActivityTaskCanceled: string[] = [
 		"swf:RespondActivityTaskCanceled",
 	];
 	/** IAM actions required for the RespondActivityTaskCompleted API call. */
-	static readonly RESPOND_ACTIVITY_TASK_COMPLETED: string[] = [
+	static readonly RespondActivityTaskCompleted: string[] = [
 		"swf:RespondActivityTaskCompleted",
 	];
 	/** IAM actions required for the RespondActivityTaskFailed API call. */
-	static readonly RESPOND_ACTIVITY_TASK_FAILED: string[] = [
+	static readonly RespondActivityTaskFailed: string[] = [
 		"swf:RespondActivityTaskFailed",
 	];
 	/** IAM actions required for the RespondDecisionTaskCompleted API call. */
-	static readonly RESPOND_DECISION_TASK_COMPLETED: string[] = [
+	static readonly RespondDecisionTaskCompleted: string[] = [
 		"iam:PassRole",
 		"swf:RespondDecisionTaskCompleted",
 	];
 	/** IAM actions required for the SignalWorkflowExecution API call. */
-	static readonly SIGNAL_WORKFLOW_EXECUTION: string[] = [
+	static readonly SignalWorkflowExecution: string[] = [
 		"swf:SignalWorkflowExecution",
 	];
 	/** IAM actions required for the StartWorkflowExecution API call. */
-	static readonly START_WORKFLOW_EXECUTION: string[] = [
+	static readonly StartWorkflowExecution: string[] = [
 		"iam:PassRole",
 		"swf:StartWorkflowExecution",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["swf:TagResource"];
+	static readonly TagResource: string[] = ["swf:TagResource"];
 	/** IAM actions required for the TerminateWorkflowExecution API call. */
-	static readonly TERMINATE_WORKFLOW_EXECUTION: string[] = [
+	static readonly TerminateWorkflowExecution: string[] = [
 		"swf:TerminateWorkflowExecution",
 	];
 	/** IAM actions required for the UndeprecateActivityType API call. */
-	static readonly UNDEPRECATE_ACTIVITY_TYPE: string[] = [
+	static readonly UndeprecateActivityType: string[] = [
 		"swf:UndeprecateActivityType",
 	];
 	/** IAM actions required for the UndeprecateDomain API call. */
-	static readonly UNDEPRECATE_DOMAIN: string[] = ["swf:UndeprecateDomain"];
+	static readonly UndeprecateDomain: string[] = ["swf:UndeprecateDomain"];
 	/** IAM actions required for the UndeprecateWorkflowType API call. */
-	static readonly UNDEPRECATE_WORKFLOW_TYPE: string[] = [
+	static readonly UndeprecateWorkflowType: string[] = [
 		"swf:UndeprecateWorkflowType",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["swf:UntagResource"];
+	static readonly UntagResource: string[] = ["swf:UntagResource"];
 }
 
 /**
@@ -402,94 +396,94 @@ export class SwfOperations {
  */
 export class SwfConditions {
 	/** Condition keys applicable to the CountClosedWorkflowExecutions action. */
-	static readonly COUNT_CLOSED_WORKFLOW_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly CountClosedWorkflowExecutionsConditionKeys: string[] = [
 		"swf:tagFilter.tag",
 		"swf:typeFilter.name",
 		"swf:typeFilter.version",
 	];
 	/** Condition keys applicable to the CountOpenWorkflowExecutions action. */
-	static readonly COUNT_OPEN_WORKFLOW_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly CountOpenWorkflowExecutionsConditionKeys: string[] = [
 		"swf:tagFilter.tag",
 		"swf:typeFilter.name",
 		"swf:typeFilter.version",
 	];
 	/** Condition keys applicable to the CountPendingActivityTasks action. */
-	static readonly COUNT_PENDING_ACTIVITY_TASKS_CONDITION_KEYS: string[] = [
+	static readonly CountPendingActivityTasksConditionKeys: string[] = [
 		"swf:taskList.name",
 	];
 	/** Condition keys applicable to the CountPendingDecisionTasks action. */
-	static readonly COUNT_PENDING_DECISION_TASKS_CONDITION_KEYS: string[] = [
+	static readonly CountPendingDecisionTasksConditionKeys: string[] = [
 		"swf:taskList.name",
 	];
 	/** Condition keys applicable to the DeleteActivityType action. */
-	static readonly DELETE_ACTIVITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DeleteActivityTypeConditionKeys: string[] = [
 		"swf:activityType.name",
 		"swf:activityType.version",
 	];
 	/** Condition keys applicable to the DeleteWorkflowType action. */
-	static readonly DELETE_WORKFLOW_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DeleteWorkflowTypeConditionKeys: string[] = [
 		"swf:workflowType.name",
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the DeprecateActivityType action. */
-	static readonly DEPRECATE_ACTIVITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DeprecateActivityTypeConditionKeys: string[] = [
 		"swf:activityType.name",
 		"swf:activityType.version",
 	];
 	/** Condition keys applicable to the DeprecateWorkflowType action. */
-	static readonly DEPRECATE_WORKFLOW_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DeprecateWorkflowTypeConditionKeys: string[] = [
 		"swf:workflowType.name",
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the DescribeActivityType action. */
-	static readonly DESCRIBE_ACTIVITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DescribeActivityTypeConditionKeys: string[] = [
 		"swf:activityType.name",
 		"swf:activityType.version",
 	];
 	/** Condition keys applicable to the DescribeWorkflowType action. */
-	static readonly DESCRIBE_WORKFLOW_TYPE_CONDITION_KEYS: string[] = [
+	static readonly DescribeWorkflowTypeConditionKeys: string[] = [
 		"swf:workflowType.name",
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the ListClosedWorkflowExecutions action. */
-	static readonly LIST_CLOSED_WORKFLOW_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListClosedWorkflowExecutionsConditionKeys: string[] = [
 		"swf:tagFilter.tag",
 		"swf:typeFilter.name",
 		"swf:typeFilter.version",
 	];
 	/** Condition keys applicable to the ListOpenWorkflowExecutions action. */
-	static readonly LIST_OPEN_WORKFLOW_EXECUTIONS_CONDITION_KEYS: string[] = [
+	static readonly ListOpenWorkflowExecutionsConditionKeys: string[] = [
 		"swf:tagFilter.tag",
 		"swf:typeFilter.name",
 		"swf:typeFilter.version",
 	];
 	/** Condition keys applicable to the PollForActivityTask action. */
-	static readonly POLL_FOR_ACTIVITY_TASK_CONDITION_KEYS: string[] = [
+	static readonly PollForActivityTaskConditionKeys: string[] = [
 		"swf:taskList.name",
 	];
 	/** Condition keys applicable to the PollForDecisionTask action. */
-	static readonly POLL_FOR_DECISION_TASK_CONDITION_KEYS: string[] = [
+	static readonly PollForDecisionTaskConditionKeys: string[] = [
 		"swf:taskList.name",
 	];
 	/** Condition keys applicable to the RegisterActivityType action. */
-	static readonly REGISTER_ACTIVITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly RegisterActivityTypeConditionKeys: string[] = [
 		"swf:defaultTaskList.name",
 		"swf:name",
 		"swf:version",
 	];
 	/** Condition keys applicable to the RegisterDomain action. */
-	static readonly REGISTER_DOMAIN_CONDITION_KEYS: string[] = [
+	static readonly RegisterDomainConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RegisterWorkflowType action. */
-	static readonly REGISTER_WORKFLOW_TYPE_CONDITION_KEYS: string[] = [
+	static readonly RegisterWorkflowTypeConditionKeys: string[] = [
 		"swf:defaultTaskList.name",
 		"swf:name",
 		"swf:version",
 	];
 	/** Condition keys applicable to the RespondActivityTaskCompleted action. */
-	static readonly RESPOND_ACTIVITY_TASK_COMPLETED_CONDITION_KEYS: string[] = [
+	static readonly RespondActivityTaskCompletedConditionKeys: string[] = [
 		"swf:activityType.name",
 		"swf:activityType.version",
 		"swf:tagList.member.0",
@@ -502,7 +496,7 @@ export class SwfConditions {
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the StartWorkflowExecution action. */
-	static readonly START_WORKFLOW_EXECUTION_CONDITION_KEYS: string[] = [
+	static readonly StartWorkflowExecutionConditionKeys: string[] = [
 		"swf:tagList.member.0",
 		"swf:tagList.member.1",
 		"swf:tagList.member.2",
@@ -513,29 +507,29 @@ export class SwfConditions {
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UndeprecateActivityType action. */
-	static readonly UNDEPRECATE_ACTIVITY_TYPE_CONDITION_KEYS: string[] = [
+	static readonly UndeprecateActivityTypeConditionKeys: string[] = [
 		"swf:activityType.name",
 		"swf:activityType.version",
 	];
 	/** Condition keys applicable to the UndeprecateWorkflowType action. */
-	static readonly UNDEPRECATE_WORKFLOW_TYPE_CONDITION_KEYS: string[] = [
+	static readonly UndeprecateWorkflowTypeConditionKeys: string[] = [
 		"swf:workflowType.name",
 		"swf:workflowType.version",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: swf:activityType.name (String) */
 	static readonly ACTIVITY_TYPE_NAME = "swf:activityType.name";
 	/** Condition key: swf:activityType.version (String) */
@@ -620,7 +614,7 @@ export class SwfConditions {
 	/**
 	 * Generates a condition block for `swf:name`.
 	 */
-	static name(value: string): Record<string, Record<string, string>> {
+	static conditionName(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "swf:name": value } };
 	}
 

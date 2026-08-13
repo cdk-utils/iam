@@ -13,135 +13,219 @@ export class LookoutMetricsActions {
 	static readonly SERVICE_PREFIX = "lookoutmetrics";
 
 	/** [Write] lookoutmetrics:ActivateAnomalyDetector */
-	static readonly ACTIVATE_ANOMALY_DETECTOR =
+	static readonly ActivateAnomalyDetector =
 		"lookoutmetrics:ActivateAnomalyDetector";
 	/** [Write] lookoutmetrics:BackTestAnomalyDetector */
-	static readonly BACK_TEST_ANOMALY_DETECTOR =
+	static readonly BackTestAnomalyDetector =
 		"lookoutmetrics:BackTestAnomalyDetector";
 	/** [Write] lookoutmetrics:CreateAlert */
-	static readonly CREATE_ALERT = "lookoutmetrics:CreateAlert";
+	static readonly CreateAlert = "lookoutmetrics:CreateAlert";
 	/** [Write] lookoutmetrics:CreateAnomalyDetector */
-	static readonly CREATE_ANOMALY_DETECTOR =
+	static readonly CreateAnomalyDetector =
 		"lookoutmetrics:CreateAnomalyDetector";
 	/** [Write] lookoutmetrics:CreateMetricSet */
-	static readonly CREATE_METRIC_SET = "lookoutmetrics:CreateMetricSet";
+	static readonly CreateMetricSet = "lookoutmetrics:CreateMetricSet";
 	/** [Write] lookoutmetrics:DeactivateAnomalyDetector */
-	static readonly DEACTIVATE_ANOMALY_DETECTOR =
+	static readonly DeactivateAnomalyDetector =
 		"lookoutmetrics:DeactivateAnomalyDetector";
 	/** [Write] lookoutmetrics:DeleteAlert */
-	static readonly DELETE_ALERT = "lookoutmetrics:DeleteAlert";
+	static readonly DeleteAlert = "lookoutmetrics:DeleteAlert";
 	/** [Write] lookoutmetrics:DeleteAnomalyDetector */
-	static readonly DELETE_ANOMALY_DETECTOR =
+	static readonly DeleteAnomalyDetector =
 		"lookoutmetrics:DeleteAnomalyDetector";
 	/** [Read] lookoutmetrics:DescribeAlert */
-	static readonly DESCRIBE_ALERT = "lookoutmetrics:DescribeAlert";
+	static readonly DescribeAlert = "lookoutmetrics:DescribeAlert";
 	/** [Read] lookoutmetrics:DescribeAnomalyDetectionExecutions */
-	static readonly DESCRIBE_ANOMALY_DETECTION_EXECUTIONS =
+	static readonly DescribeAnomalyDetectionExecutions =
 		"lookoutmetrics:DescribeAnomalyDetectionExecutions";
 	/** [Read] lookoutmetrics:DescribeAnomalyDetector */
-	static readonly DESCRIBE_ANOMALY_DETECTOR =
+	static readonly DescribeAnomalyDetector =
 		"lookoutmetrics:DescribeAnomalyDetector";
 	/** [Read] lookoutmetrics:DescribeMetricSet */
-	static readonly DESCRIBE_METRIC_SET = "lookoutmetrics:DescribeMetricSet";
+	static readonly DescribeMetricSet = "lookoutmetrics:DescribeMetricSet";
 	/** [Write] lookoutmetrics:DetectMetricSetConfig */
-	static readonly DETECT_METRIC_SET_CONFIG =
+	static readonly DetectMetricSetConfig =
 		"lookoutmetrics:DetectMetricSetConfig";
 	/** [Read] lookoutmetrics:GetAnomalyGroup */
-	static readonly GET_ANOMALY_GROUP = "lookoutmetrics:GetAnomalyGroup";
+	static readonly actionGetAnomalyGroup = "lookoutmetrics:GetAnomalyGroup";
 	/** [Read] lookoutmetrics:GetDataQualityMetrics */
-	static readonly GET_DATA_QUALITY_METRICS =
+	static readonly actionGetDataQualityMetrics =
 		"lookoutmetrics:GetDataQualityMetrics";
 	/** [Read] lookoutmetrics:GetFeedback */
-	static readonly GET_FEEDBACK = "lookoutmetrics:GetFeedback";
+	static readonly actionGetFeedback = "lookoutmetrics:GetFeedback";
 	/** [Read] lookoutmetrics:GetSampleData */
-	static readonly GET_SAMPLE_DATA = "lookoutmetrics:GetSampleData";
+	static readonly actionGetSampleData = "lookoutmetrics:GetSampleData";
 	/** [List] lookoutmetrics:ListAlerts */
-	static readonly LIST_ALERTS = "lookoutmetrics:ListAlerts";
+	static readonly ListAlerts = "lookoutmetrics:ListAlerts";
 	/** [List] lookoutmetrics:ListAnomalyDetectors */
-	static readonly LIST_ANOMALY_DETECTORS =
-		"lookoutmetrics:ListAnomalyDetectors";
+	static readonly ListAnomalyDetectors = "lookoutmetrics:ListAnomalyDetectors";
 	/** [List] lookoutmetrics:ListAnomalyGroupRelatedMetrics */
-	static readonly LIST_ANOMALY_GROUP_RELATED_METRICS =
+	static readonly ListAnomalyGroupRelatedMetrics =
 		"lookoutmetrics:ListAnomalyGroupRelatedMetrics";
 	/** [List] lookoutmetrics:ListAnomalyGroupSummaries */
-	static readonly LIST_ANOMALY_GROUP_SUMMARIES =
+	static readonly ListAnomalyGroupSummaries =
 		"lookoutmetrics:ListAnomalyGroupSummaries";
 	/** [List] lookoutmetrics:ListAnomalyGroupTimeSeries */
-	static readonly LIST_ANOMALY_GROUP_TIME_SERIES =
+	static readonly ListAnomalyGroupTimeSeries =
 		"lookoutmetrics:ListAnomalyGroupTimeSeries";
 	/** [List] lookoutmetrics:ListMetricSets */
-	static readonly LIST_METRIC_SETS = "lookoutmetrics:ListMetricSets";
+	static readonly ListMetricSets = "lookoutmetrics:ListMetricSets";
 	/** [Read] lookoutmetrics:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "lookoutmetrics:ListTagsForResource";
+	static readonly ListTagsForResource = "lookoutmetrics:ListTagsForResource";
 	/** [Write] lookoutmetrics:PutFeedback */
-	static readonly PUT_FEEDBACK = "lookoutmetrics:PutFeedback";
+	static readonly PutFeedback = "lookoutmetrics:PutFeedback";
 	/** [Tagging] lookoutmetrics:TagResource */
-	static readonly TAG_RESOURCE = "lookoutmetrics:TagResource";
+	static readonly TagResource = "lookoutmetrics:TagResource";
 	/** [Tagging] lookoutmetrics:UntagResource */
-	static readonly UNTAG_RESOURCE = "lookoutmetrics:UntagResource";
+	static readonly UntagResource = "lookoutmetrics:UntagResource";
 	/** [Write] lookoutmetrics:UpdateAlert */
-	static readonly UPDATE_ALERT = "lookoutmetrics:UpdateAlert";
+	static readonly UpdateAlert = "lookoutmetrics:UpdateAlert";
 	/** [Write] lookoutmetrics:UpdateAnomalyDetector */
-	static readonly UPDATE_ANOMALY_DETECTOR =
+	static readonly UpdateAnomalyDetector =
 		"lookoutmetrics:UpdateAnomalyDetector";
 	/** [Write] lookoutmetrics:UpdateMetricSet */
-	static readonly UPDATE_METRIC_SET = "lookoutmetrics:UpdateMetricSet";
+	static readonly UpdateMetricSet = "lookoutmetrics:UpdateMetricSet";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		LookoutMetricsActions.DESCRIBE_ALERT,
-		LookoutMetricsActions.DESCRIBE_ANOMALY_DETECTION_EXECUTIONS,
-		LookoutMetricsActions.DESCRIBE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.DESCRIBE_METRIC_SET,
-		LookoutMetricsActions.GET_ANOMALY_GROUP,
-		LookoutMetricsActions.GET_DATA_QUALITY_METRICS,
-		LookoutMetricsActions.GET_FEEDBACK,
-		LookoutMetricsActions.GET_SAMPLE_DATA,
-		LookoutMetricsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		LookoutMetricsActions.DescribeAlert,
+		LookoutMetricsActions.DescribeAnomalyDetectionExecutions,
+		LookoutMetricsActions.DescribeAnomalyDetector,
+		LookoutMetricsActions.DescribeMetricSet,
+		LookoutMetricsActions.actionGetAnomalyGroup,
+		LookoutMetricsActions.actionGetDataQualityMetrics,
+		LookoutMetricsActions.actionGetFeedback,
+		LookoutMetricsActions.actionGetSampleData,
+		LookoutMetricsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		LookoutMetricsActions.ACTIVATE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.BACK_TEST_ANOMALY_DETECTOR,
-		LookoutMetricsActions.CREATE_ALERT,
-		LookoutMetricsActions.CREATE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.CREATE_METRIC_SET,
-		LookoutMetricsActions.DEACTIVATE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.DELETE_ALERT,
-		LookoutMetricsActions.DELETE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.DETECT_METRIC_SET_CONFIG,
-		LookoutMetricsActions.PUT_FEEDBACK,
-		LookoutMetricsActions.UPDATE_ALERT,
-		LookoutMetricsActions.UPDATE_ANOMALY_DETECTOR,
-		LookoutMetricsActions.UPDATE_METRIC_SET,
+	static readonly AllWriteActions: string[] = [
+		LookoutMetricsActions.ActivateAnomalyDetector,
+		LookoutMetricsActions.BackTestAnomalyDetector,
+		LookoutMetricsActions.CreateAlert,
+		LookoutMetricsActions.CreateAnomalyDetector,
+		LookoutMetricsActions.CreateMetricSet,
+		LookoutMetricsActions.DeactivateAnomalyDetector,
+		LookoutMetricsActions.DeleteAlert,
+		LookoutMetricsActions.DeleteAnomalyDetector,
+		LookoutMetricsActions.DetectMetricSetConfig,
+		LookoutMetricsActions.PutFeedback,
+		LookoutMetricsActions.UpdateAlert,
+		LookoutMetricsActions.UpdateAnomalyDetector,
+		LookoutMetricsActions.UpdateMetricSet,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		LookoutMetricsActions.LIST_ALERTS,
-		LookoutMetricsActions.LIST_ANOMALY_DETECTORS,
-		LookoutMetricsActions.LIST_ANOMALY_GROUP_RELATED_METRICS,
-		LookoutMetricsActions.LIST_ANOMALY_GROUP_SUMMARIES,
-		LookoutMetricsActions.LIST_ANOMALY_GROUP_TIME_SERIES,
-		LookoutMetricsActions.LIST_METRIC_SETS,
+	static readonly AllListActions: string[] = [
+		LookoutMetricsActions.ListAlerts,
+		LookoutMetricsActions.ListAnomalyDetectors,
+		LookoutMetricsActions.ListAnomalyGroupRelatedMetrics,
+		LookoutMetricsActions.ListAnomalyGroupSummaries,
+		LookoutMetricsActions.ListAnomalyGroupTimeSeries,
+		LookoutMetricsActions.ListMetricSets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		LookoutMetricsActions.TAG_RESOURCE,
-		LookoutMetricsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		LookoutMetricsActions.TagResource,
+		LookoutMetricsActions.UntagResource,
 	];
 }
 
-const AlertArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):Alert:(?<alertName>[^:/?]+)$",
-);
-const AnomalyDetectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):AnomalyDetector:(?<anomalyDetectorName>[^:/?]+)$",
-);
-const MetricSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):MetricSet/(?<anomalyDetectorName>[^:/?]+)/(?<metricSetName>[^:/?]+)$",
-);
+/**
+ * Properties for building a Alert ARN.
+ */
+export interface LookoutMetricsAlertArnProps {
+	/** The AlertName component of the ARN. */
+	readonly alertName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Alert ARN.
+ */
+export interface LookoutMetricsAlertArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AlertName component. */
+	readonly alertName: string;
+}
+
+/**
+ * Properties for building a AnomalyDetector ARN.
+ */
+export interface LookoutMetricsAnomalyDetectorArnProps {
+	/** The AnomalyDetectorName component of the ARN. */
+	readonly anomalyDetectorName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AnomalyDetector ARN.
+ */
+export interface LookoutMetricsAnomalyDetectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnomalyDetectorName component. */
+	readonly anomalyDetectorName: string;
+}
+
+/**
+ * Properties for building a MetricSet ARN.
+ */
+export interface LookoutMetricsMetricSetArnProps {
+	/** The AnomalyDetectorName component of the ARN. */
+	readonly anomalyDetectorName: string;
+	/** The MetricSetName component of the ARN. */
+	readonly metricSetName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MetricSet ARN.
+ */
+export interface LookoutMetricsMetricSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AnomalyDetectorName component. */
+	readonly anomalyDetectorName: string;
+	/** The MetricSetName component. */
+	readonly metricSetName: string;
+}
+
+const AlertArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):Alert:(?<alertName>[^:/?]+)$/;
+const AnomalyDetectorArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):AnomalyDetector:(?<anomalyDetectorName>[^:/?]+)$/;
+const MetricSetArnRegex =
+	/^arn:(?<partition>[^:]+):lookoutmetrics:(?<region>[^:]*):(?<account>[^:]*):MetricSet\/(?<anomalyDetectorName>[^:/?]+)\/(?<metricSetName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for lookoutmetrics resources.
@@ -150,16 +234,7 @@ export class LookoutMetricsResources {
 	/**
 	 * Builds an ARN for the Alert resource.
 	 */
-	static alert(props: {
-		/** The AlertName component of the ARN. */
-		readonly alertName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static alert(props: LookoutMetricsAlertArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutmetrics:${props.region ?? "*"}:${props.account ?? "*"}:Alert:${props.alertName}`;
 	}
 
@@ -174,12 +249,7 @@ export class LookoutMetricsResources {
 	 * Parses a Alert ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAlertArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		alertName: string;
-	} {
+	static parseAlertArn(arn: string): LookoutMetricsAlertArnComponents {
 		const match = AlertArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Alert ARN: ${arn}`);
@@ -195,16 +265,7 @@ export class LookoutMetricsResources {
 	/**
 	 * Builds an ARN for the AnomalyDetector resource.
 	 */
-	static anomalyDetector(props: {
-		/** The AnomalyDetectorName component of the ARN. */
-		readonly anomalyDetectorName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anomalyDetector(props: LookoutMetricsAnomalyDetectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutmetrics:${props.region ?? "*"}:${props.account ?? "*"}:AnomalyDetector:${props.anomalyDetectorName}`;
 	}
 
@@ -219,12 +280,9 @@ export class LookoutMetricsResources {
 	 * Parses a AnomalyDetector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnomalyDetectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		anomalyDetectorName: string;
-	} {
+	static parseAnomalyDetectorArn(
+		arn: string,
+	): LookoutMetricsAnomalyDetectorArnComponents {
 		const match = AnomalyDetectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AnomalyDetector ARN: ${arn}`);
@@ -240,18 +298,7 @@ export class LookoutMetricsResources {
 	/**
 	 * Builds an ARN for the MetricSet resource.
 	 */
-	static metricSet(props: {
-		/** The AnomalyDetectorName component of the ARN. */
-		readonly anomalyDetectorName: string;
-		/** The MetricSetName component of the ARN. */
-		readonly metricSetName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static metricSet(props: LookoutMetricsMetricSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:lookoutmetrics:${props.region ?? "*"}:${props.account ?? "*"}:MetricSet/${props.anomalyDetectorName}/${props.metricSetName}`;
 	}
 
@@ -266,13 +313,7 @@ export class LookoutMetricsResources {
 	 * Parses a MetricSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMetricSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		anomalyDetectorName: string;
-		metricSetName: string;
-	} {
+	static parseMetricSetArn(arn: string): LookoutMetricsMetricSetArnComponents {
 		const match = MetricSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MetricSet ARN: ${arn}`);
@@ -292,35 +333,35 @@ export class LookoutMetricsResources {
  */
 export class LookoutMetricsConditions {
 	/** Condition keys applicable to the CreateAlert action. */
-	static readonly CREATE_ALERT_CONDITION_KEYS: string[] = [
+	static readonly CreateAlertConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAnomalyDetector action. */
-	static readonly CREATE_ANOMALY_DETECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAnomalyDetectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMetricSet action. */
-	static readonly CREATE_METRIC_SET_CONDITION_KEYS: string[] = [
+	static readonly CreateMetricSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

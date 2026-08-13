@@ -13,240 +13,334 @@ export class CeActions {
 	static readonly SERVICE_PREFIX = "ce";
 
 	/** [Write] ce:CreateAnomalyMonitor */
-	static readonly CREATE_ANOMALY_MONITOR = "ce:CreateAnomalyMonitor";
+	static readonly CreateAnomalyMonitor = "ce:CreateAnomalyMonitor";
 	/** [Write] ce:CreateAnomalySubscription */
-	static readonly CREATE_ANOMALY_SUBSCRIPTION = "ce:CreateAnomalySubscription";
+	static readonly CreateAnomalySubscription = "ce:CreateAnomalySubscription";
 	/** [Write] ce:CreateCostCategoryDefinition */
-	static readonly CREATE_COST_CATEGORY_DEFINITION =
+	static readonly CreateCostCategoryDefinition =
 		"ce:CreateCostCategoryDefinition";
 	/** [Write] ce:CreateNotificationSubscription */
-	static readonly CREATE_NOTIFICATION_SUBSCRIPTION =
+	static readonly CreateNotificationSubscription =
 		"ce:CreateNotificationSubscription";
 	/** [Write] ce:CreateReport */
-	static readonly CREATE_REPORT = "ce:CreateReport";
+	static readonly CreateReport = "ce:CreateReport";
 	/** [Write] ce:DeleteAnomalyMonitor */
-	static readonly DELETE_ANOMALY_MONITOR = "ce:DeleteAnomalyMonitor";
+	static readonly DeleteAnomalyMonitor = "ce:DeleteAnomalyMonitor";
 	/** [Write] ce:DeleteAnomalySubscription */
-	static readonly DELETE_ANOMALY_SUBSCRIPTION = "ce:DeleteAnomalySubscription";
+	static readonly DeleteAnomalySubscription = "ce:DeleteAnomalySubscription";
 	/** [Write] ce:DeleteCostCategoryDefinition */
-	static readonly DELETE_COST_CATEGORY_DEFINITION =
+	static readonly DeleteCostCategoryDefinition =
 		"ce:DeleteCostCategoryDefinition";
 	/** [Write] ce:DeleteNotificationSubscription */
-	static readonly DELETE_NOTIFICATION_SUBSCRIPTION =
+	static readonly DeleteNotificationSubscription =
 		"ce:DeleteNotificationSubscription";
 	/** [Write] ce:DeleteReport */
-	static readonly DELETE_REPORT = "ce:DeleteReport";
+	static readonly DeleteReport = "ce:DeleteReport";
 	/** [Read] ce:DescribeCostCategoryDefinition */
-	static readonly DESCRIBE_COST_CATEGORY_DEFINITION =
+	static readonly DescribeCostCategoryDefinition =
 		"ce:DescribeCostCategoryDefinition";
 	/** [Read] ce:DescribeNotificationSubscription */
-	static readonly DESCRIBE_NOTIFICATION_SUBSCRIPTION =
+	static readonly DescribeNotificationSubscription =
 		"ce:DescribeNotificationSubscription";
 	/** [Read] ce:DescribeReport */
-	static readonly DESCRIBE_REPORT = "ce:DescribeReport";
+	static readonly DescribeReport = "ce:DescribeReport";
 	/** [Read] ce:GetAnomalies */
-	static readonly GET_ANOMALIES = "ce:GetAnomalies";
+	static readonly actionGetAnomalies = "ce:GetAnomalies";
 	/** [Read] ce:GetAnomalyMonitors */
-	static readonly GET_ANOMALY_MONITORS = "ce:GetAnomalyMonitors";
+	static readonly actionGetAnomalyMonitors = "ce:GetAnomalyMonitors";
 	/** [Read] ce:GetAnomalySubscriptions */
-	static readonly GET_ANOMALY_SUBSCRIPTIONS = "ce:GetAnomalySubscriptions";
+	static readonly actionGetAnomalySubscriptions = "ce:GetAnomalySubscriptions";
 	/** [Read] ce:GetApproximateUsageRecords */
-	static readonly GET_APPROXIMATE_USAGE_RECORDS =
+	static readonly actionGetApproximateUsageRecords =
 		"ce:GetApproximateUsageRecords";
 	/** [Read] ce:GetCommitmentPurchaseAnalysis */
-	static readonly GET_COMMITMENT_PURCHASE_ANALYSIS =
+	static readonly actionGetCommitmentPurchaseAnalysis =
 		"ce:GetCommitmentPurchaseAnalysis";
 	/** [Read] ce:GetConsoleActionSetEnforced */
-	static readonly GET_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly actionGetConsoleActionSetEnforced =
 		"ce:GetConsoleActionSetEnforced";
 	/** [Read] ce:GetCostAndUsage */
-	static readonly GET_COST_AND_USAGE = "ce:GetCostAndUsage";
+	static readonly actionGetCostAndUsage = "ce:GetCostAndUsage";
 	/** [Read] ce:GetCostAndUsageComparisons */
-	static readonly GET_COST_AND_USAGE_COMPARISONS =
+	static readonly actionGetCostAndUsageComparisons =
 		"ce:GetCostAndUsageComparisons";
 	/** [Read] ce:GetCostAndUsageWithResources */
-	static readonly GET_COST_AND_USAGE_WITH_RESOURCES =
+	static readonly actionGetCostAndUsageWithResources =
 		"ce:GetCostAndUsageWithResources";
 	/** [Read] ce:GetCostCategories */
-	static readonly GET_COST_CATEGORIES = "ce:GetCostCategories";
+	static readonly actionGetCostCategories = "ce:GetCostCategories";
 	/** [Read] ce:GetCostComparisonDrivers */
-	static readonly GET_COST_COMPARISON_DRIVERS = "ce:GetCostComparisonDrivers";
+	static readonly actionGetCostComparisonDrivers =
+		"ce:GetCostComparisonDrivers";
 	/** [Read] ce:GetCostForecast */
-	static readonly GET_COST_FORECAST = "ce:GetCostForecast";
+	static readonly actionGetCostForecast = "ce:GetCostForecast";
 	/** [Read] ce:GetDimensionValues */
-	static readonly GET_DIMENSION_VALUES = "ce:GetDimensionValues";
+	static readonly actionGetDimensionValues = "ce:GetDimensionValues";
 	/** [Read] ce:GetPreferences */
-	static readonly GET_PREFERENCES = "ce:GetPreferences";
+	static readonly actionGetPreferences = "ce:GetPreferences";
 	/** [Read] ce:GetReservationCoverage */
-	static readonly GET_RESERVATION_COVERAGE = "ce:GetReservationCoverage";
+	static readonly actionGetReservationCoverage = "ce:GetReservationCoverage";
 	/** [Read] ce:GetReservationPurchaseRecommendation */
-	static readonly GET_RESERVATION_PURCHASE_RECOMMENDATION =
+	static readonly actionGetReservationPurchaseRecommendation =
 		"ce:GetReservationPurchaseRecommendation";
 	/** [Read] ce:GetReservationUtilization */
-	static readonly GET_RESERVATION_UTILIZATION = "ce:GetReservationUtilization";
+	static readonly actionGetReservationUtilization =
+		"ce:GetReservationUtilization";
 	/** [Read] ce:GetRightsizingRecommendation */
-	static readonly GET_RIGHTSIZING_RECOMMENDATION =
+	static readonly actionGetRightsizingRecommendation =
 		"ce:GetRightsizingRecommendation";
 	/** [Read] ce:GetSavingsPlanPurchaseRecommendationDetails */
-	static readonly GET_SAVINGS_PLAN_PURCHASE_RECOMMENDATION_DETAILS =
+	static readonly actionGetSavingsPlanPurchaseRecommendationDetails =
 		"ce:GetSavingsPlanPurchaseRecommendationDetails";
 	/** [Read] ce:GetSavingsPlansCoverage */
-	static readonly GET_SAVINGS_PLANS_COVERAGE = "ce:GetSavingsPlansCoverage";
+	static readonly actionGetSavingsPlansCoverage = "ce:GetSavingsPlansCoverage";
 	/** [Read] ce:GetSavingsPlansPurchaseRecommendation */
-	static readonly GET_SAVINGS_PLANS_PURCHASE_RECOMMENDATION =
+	static readonly actionGetSavingsPlansPurchaseRecommendation =
 		"ce:GetSavingsPlansPurchaseRecommendation";
 	/** [Read] ce:GetSavingsPlansUtilization */
-	static readonly GET_SAVINGS_PLANS_UTILIZATION =
+	static readonly actionGetSavingsPlansUtilization =
 		"ce:GetSavingsPlansUtilization";
 	/** [Read] ce:GetSavingsPlansUtilizationDetails */
-	static readonly GET_SAVINGS_PLANS_UTILIZATION_DETAILS =
+	static readonly actionGetSavingsPlansUtilizationDetails =
 		"ce:GetSavingsPlansUtilizationDetails";
 	/** [Read] ce:GetTags */
-	static readonly GET_TAGS = "ce:GetTags";
+	static readonly actionGetTags = "ce:GetTags";
 	/** [Read] ce:GetUsageForecast */
-	static readonly GET_USAGE_FORECAST = "ce:GetUsageForecast";
+	static readonly actionGetUsageForecast = "ce:GetUsageForecast";
 	/** [List] ce:ListCommitmentPurchaseAnalyses */
-	static readonly LIST_COMMITMENT_PURCHASE_ANALYSES =
+	static readonly ListCommitmentPurchaseAnalyses =
 		"ce:ListCommitmentPurchaseAnalyses";
 	/** [List] ce:ListCostAllocationTagBackfillHistory */
-	static readonly LIST_COST_ALLOCATION_TAG_BACKFILL_HISTORY =
+	static readonly ListCostAllocationTagBackfillHistory =
 		"ce:ListCostAllocationTagBackfillHistory";
 	/** [List] ce:ListCostAllocationTags */
-	static readonly LIST_COST_ALLOCATION_TAGS = "ce:ListCostAllocationTags";
+	static readonly ListCostAllocationTags = "ce:ListCostAllocationTags";
 	/** [List] ce:ListCostCategoryDefinitions */
-	static readonly LIST_COST_CATEGORY_DEFINITIONS =
+	static readonly ListCostCategoryDefinitions =
 		"ce:ListCostCategoryDefinitions";
 	/** [List] ce:ListCostCategoryResourceAssociations */
-	static readonly LIST_COST_CATEGORY_RESOURCE_ASSOCIATIONS =
+	static readonly ListCostCategoryResourceAssociations =
 		"ce:ListCostCategoryResourceAssociations";
 	/** [List] ce:ListSavingsPlansPurchaseRecommendationGeneration */
-	static readonly LIST_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION =
+	static readonly ListSavingsPlansPurchaseRecommendationGeneration =
 		"ce:ListSavingsPlansPurchaseRecommendationGeneration";
 	/** [Read] ce:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "ce:ListTagsForResource";
+	static readonly ListTagsForResource = "ce:ListTagsForResource";
 	/** [Write] ce:ProvideAnomalyFeedback */
-	static readonly PROVIDE_ANOMALY_FEEDBACK = "ce:ProvideAnomalyFeedback";
+	static readonly ProvideAnomalyFeedback = "ce:ProvideAnomalyFeedback";
 	/** [Write] ce:StartCommitmentPurchaseAnalysis */
-	static readonly START_COMMITMENT_PURCHASE_ANALYSIS =
+	static readonly StartCommitmentPurchaseAnalysis =
 		"ce:StartCommitmentPurchaseAnalysis";
 	/** [Write] ce:StartCostAllocationTagBackfill */
-	static readonly START_COST_ALLOCATION_TAG_BACKFILL =
+	static readonly StartCostAllocationTagBackfill =
 		"ce:StartCostAllocationTagBackfill";
 	/** [Write] ce:StartSavingsPlansPurchaseRecommendationGeneration */
-	static readonly START_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION =
+	static readonly StartSavingsPlansPurchaseRecommendationGeneration =
 		"ce:StartSavingsPlansPurchaseRecommendationGeneration";
 	/** [Tagging] ce:TagResource */
-	static readonly TAG_RESOURCE = "ce:TagResource";
+	static readonly TagResource = "ce:TagResource";
 	/** [Tagging] ce:UntagResource */
-	static readonly UNTAG_RESOURCE = "ce:UntagResource";
+	static readonly UntagResource = "ce:UntagResource";
 	/** [Write] ce:UpdateAnomalyMonitor */
-	static readonly UPDATE_ANOMALY_MONITOR = "ce:UpdateAnomalyMonitor";
+	static readonly UpdateAnomalyMonitor = "ce:UpdateAnomalyMonitor";
 	/** [Write] ce:UpdateAnomalySubscription */
-	static readonly UPDATE_ANOMALY_SUBSCRIPTION = "ce:UpdateAnomalySubscription";
+	static readonly UpdateAnomalySubscription = "ce:UpdateAnomalySubscription";
 	/** [Write] ce:UpdateConsoleActionSetEnforced */
-	static readonly UPDATE_CONSOLE_ACTION_SET_ENFORCED =
+	static readonly UpdateConsoleActionSetEnforced =
 		"ce:UpdateConsoleActionSetEnforced";
 	/** [Write] ce:UpdateCostAllocationTagsStatus */
-	static readonly UPDATE_COST_ALLOCATION_TAGS_STATUS =
+	static readonly UpdateCostAllocationTagsStatus =
 		"ce:UpdateCostAllocationTagsStatus";
 	/** [Write] ce:UpdateCostCategoryDefinition */
-	static readonly UPDATE_COST_CATEGORY_DEFINITION =
+	static readonly UpdateCostCategoryDefinition =
 		"ce:UpdateCostCategoryDefinition";
 	/** [Write] ce:UpdateNotificationSubscription */
-	static readonly UPDATE_NOTIFICATION_SUBSCRIPTION =
+	static readonly UpdateNotificationSubscription =
 		"ce:UpdateNotificationSubscription";
 	/** [Write] ce:UpdatePreferences */
-	static readonly UPDATE_PREFERENCES = "ce:UpdatePreferences";
+	static readonly UpdatePreferences = "ce:UpdatePreferences";
 	/** [Write] ce:UpdateReport */
-	static readonly UPDATE_REPORT = "ce:UpdateReport";
+	static readonly UpdateReport = "ce:UpdateReport";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CeActions.DESCRIBE_COST_CATEGORY_DEFINITION,
-		CeActions.DESCRIBE_NOTIFICATION_SUBSCRIPTION,
-		CeActions.DESCRIBE_REPORT,
-		CeActions.GET_ANOMALIES,
-		CeActions.GET_ANOMALY_MONITORS,
-		CeActions.GET_ANOMALY_SUBSCRIPTIONS,
-		CeActions.GET_APPROXIMATE_USAGE_RECORDS,
-		CeActions.GET_COMMITMENT_PURCHASE_ANALYSIS,
-		CeActions.GET_CONSOLE_ACTION_SET_ENFORCED,
-		CeActions.GET_COST_AND_USAGE,
-		CeActions.GET_COST_AND_USAGE_COMPARISONS,
-		CeActions.GET_COST_AND_USAGE_WITH_RESOURCES,
-		CeActions.GET_COST_CATEGORIES,
-		CeActions.GET_COST_COMPARISON_DRIVERS,
-		CeActions.GET_COST_FORECAST,
-		CeActions.GET_DIMENSION_VALUES,
-		CeActions.GET_PREFERENCES,
-		CeActions.GET_RESERVATION_COVERAGE,
-		CeActions.GET_RESERVATION_PURCHASE_RECOMMENDATION,
-		CeActions.GET_RESERVATION_UTILIZATION,
-		CeActions.GET_RIGHTSIZING_RECOMMENDATION,
-		CeActions.GET_SAVINGS_PLAN_PURCHASE_RECOMMENDATION_DETAILS,
-		CeActions.GET_SAVINGS_PLANS_COVERAGE,
-		CeActions.GET_SAVINGS_PLANS_PURCHASE_RECOMMENDATION,
-		CeActions.GET_SAVINGS_PLANS_UTILIZATION,
-		CeActions.GET_SAVINGS_PLANS_UTILIZATION_DETAILS,
-		CeActions.GET_TAGS,
-		CeActions.GET_USAGE_FORECAST,
-		CeActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		CeActions.DescribeCostCategoryDefinition,
+		CeActions.DescribeNotificationSubscription,
+		CeActions.DescribeReport,
+		CeActions.actionGetAnomalies,
+		CeActions.actionGetAnomalyMonitors,
+		CeActions.actionGetAnomalySubscriptions,
+		CeActions.actionGetApproximateUsageRecords,
+		CeActions.actionGetCommitmentPurchaseAnalysis,
+		CeActions.actionGetConsoleActionSetEnforced,
+		CeActions.actionGetCostAndUsage,
+		CeActions.actionGetCostAndUsageComparisons,
+		CeActions.actionGetCostAndUsageWithResources,
+		CeActions.actionGetCostCategories,
+		CeActions.actionGetCostComparisonDrivers,
+		CeActions.actionGetCostForecast,
+		CeActions.actionGetDimensionValues,
+		CeActions.actionGetPreferences,
+		CeActions.actionGetReservationCoverage,
+		CeActions.actionGetReservationPurchaseRecommendation,
+		CeActions.actionGetReservationUtilization,
+		CeActions.actionGetRightsizingRecommendation,
+		CeActions.actionGetSavingsPlanPurchaseRecommendationDetails,
+		CeActions.actionGetSavingsPlansCoverage,
+		CeActions.actionGetSavingsPlansPurchaseRecommendation,
+		CeActions.actionGetSavingsPlansUtilization,
+		CeActions.actionGetSavingsPlansUtilizationDetails,
+		CeActions.actionGetTags,
+		CeActions.actionGetUsageForecast,
+		CeActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CeActions.CREATE_ANOMALY_MONITOR,
-		CeActions.CREATE_ANOMALY_SUBSCRIPTION,
-		CeActions.CREATE_COST_CATEGORY_DEFINITION,
-		CeActions.CREATE_NOTIFICATION_SUBSCRIPTION,
-		CeActions.CREATE_REPORT,
-		CeActions.DELETE_ANOMALY_MONITOR,
-		CeActions.DELETE_ANOMALY_SUBSCRIPTION,
-		CeActions.DELETE_COST_CATEGORY_DEFINITION,
-		CeActions.DELETE_NOTIFICATION_SUBSCRIPTION,
-		CeActions.DELETE_REPORT,
-		CeActions.PROVIDE_ANOMALY_FEEDBACK,
-		CeActions.START_COMMITMENT_PURCHASE_ANALYSIS,
-		CeActions.START_COST_ALLOCATION_TAG_BACKFILL,
-		CeActions.START_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION,
-		CeActions.UPDATE_ANOMALY_MONITOR,
-		CeActions.UPDATE_ANOMALY_SUBSCRIPTION,
-		CeActions.UPDATE_CONSOLE_ACTION_SET_ENFORCED,
-		CeActions.UPDATE_COST_ALLOCATION_TAGS_STATUS,
-		CeActions.UPDATE_COST_CATEGORY_DEFINITION,
-		CeActions.UPDATE_NOTIFICATION_SUBSCRIPTION,
-		CeActions.UPDATE_PREFERENCES,
-		CeActions.UPDATE_REPORT,
+	static readonly AllWriteActions: string[] = [
+		CeActions.CreateAnomalyMonitor,
+		CeActions.CreateAnomalySubscription,
+		CeActions.CreateCostCategoryDefinition,
+		CeActions.CreateNotificationSubscription,
+		CeActions.CreateReport,
+		CeActions.DeleteAnomalyMonitor,
+		CeActions.DeleteAnomalySubscription,
+		CeActions.DeleteCostCategoryDefinition,
+		CeActions.DeleteNotificationSubscription,
+		CeActions.DeleteReport,
+		CeActions.ProvideAnomalyFeedback,
+		CeActions.StartCommitmentPurchaseAnalysis,
+		CeActions.StartCostAllocationTagBackfill,
+		CeActions.StartSavingsPlansPurchaseRecommendationGeneration,
+		CeActions.UpdateAnomalyMonitor,
+		CeActions.UpdateAnomalySubscription,
+		CeActions.UpdateConsoleActionSetEnforced,
+		CeActions.UpdateCostAllocationTagsStatus,
+		CeActions.UpdateCostCategoryDefinition,
+		CeActions.UpdateNotificationSubscription,
+		CeActions.UpdatePreferences,
+		CeActions.UpdateReport,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CeActions.LIST_COMMITMENT_PURCHASE_ANALYSES,
-		CeActions.LIST_COST_ALLOCATION_TAG_BACKFILL_HISTORY,
-		CeActions.LIST_COST_ALLOCATION_TAGS,
-		CeActions.LIST_COST_CATEGORY_DEFINITIONS,
-		CeActions.LIST_COST_CATEGORY_RESOURCE_ASSOCIATIONS,
-		CeActions.LIST_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION,
+	static readonly AllListActions: string[] = [
+		CeActions.ListCommitmentPurchaseAnalyses,
+		CeActions.ListCostAllocationTagBackfillHistory,
+		CeActions.ListCostAllocationTags,
+		CeActions.ListCostCategoryDefinitions,
+		CeActions.ListCostCategoryResourceAssociations,
+		CeActions.ListSavingsPlansPurchaseRecommendationGeneration,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CeActions.TAG_RESOURCE,
-		CeActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CeActions.TagResource,
+		CeActions.UntagResource,
 	];
 }
 
-const AnomalymonitorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):anomalymonitor/(?<identifier>[^:/?]+)$",
-);
-const AnomalysubscriptionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):anomalysubscription/(?<identifier>[^:/?]+)$",
-);
-const BillingviewArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview/(?<resourceId>[^:/?]+)$",
-);
-const CostcategoryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):costcategory/(?<identifier>[^:/?]+)$",
-);
+/**
+ * Properties for building a anomalymonitor ARN.
+ */
+export interface CeAnomalymonitorArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a anomalymonitor ARN.
+ */
+export interface CeAnomalymonitorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a anomalysubscription ARN.
+ */
+export interface CeAnomalysubscriptionArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a anomalysubscription ARN.
+ */
+export interface CeAnomalysubscriptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a billingview ARN.
+ */
+export interface CeBillingviewArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a billingview ARN.
+ */
+export interface CeBillingviewArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a costcategory ARN.
+ */
+export interface CeCostcategoryArnProps {
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a costcategory ARN.
+ */
+export interface CeCostcategoryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+const AnomalymonitorArnRegex =
+	/^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):anomalymonitor\/(?<identifier>[^:/?]+)$/;
+const AnomalysubscriptionArnRegex =
+	/^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):anomalysubscription\/(?<identifier>[^:/?]+)$/;
+const BillingviewArnRegex =
+	/^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview\/(?<resourceId>[^:/?]+)$/;
+const CostcategoryArnRegex =
+	/^arn:(?<partition>[^:]+):ce::(?<account>[^:]*):costcategory\/(?<identifier>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ce resources.
@@ -255,14 +349,7 @@ export class CeResources {
 	/**
 	 * Builds an ARN for the anomalymonitor resource.
 	 */
-	static anomalymonitor(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anomalymonitor(props: CeAnomalymonitorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ce::${props.account ?? "*"}:anomalymonitor/${props.identifier}`;
 	}
 
@@ -277,11 +364,7 @@ export class CeResources {
 	 * Parses a anomalymonitor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnomalymonitorArn(arn: string): {
-		partition: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseAnomalymonitorArn(arn: string): CeAnomalymonitorArnComponents {
 		const match = AnomalymonitorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid anomalymonitor ARN: ${arn}`);
@@ -296,14 +379,7 @@ export class CeResources {
 	/**
 	 * Builds an ARN for the anomalysubscription resource.
 	 */
-	static anomalysubscription(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static anomalysubscription(props: CeAnomalysubscriptionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ce::${props.account ?? "*"}:anomalysubscription/${props.identifier}`;
 	}
 
@@ -318,11 +394,9 @@ export class CeResources {
 	 * Parses a anomalysubscription ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnomalysubscriptionArn(arn: string): {
-		partition: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseAnomalysubscriptionArn(
+		arn: string,
+	): CeAnomalysubscriptionArnComponents {
 		const match = AnomalysubscriptionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid anomalysubscription ARN: ${arn}`);
@@ -337,14 +411,7 @@ export class CeResources {
 	/**
 	 * Builds an ARN for the billingview resource.
 	 */
-	static billingview(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billingview(props: CeBillingviewArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billing::${props.account ?? "*"}:billingview/${props.resourceId}`;
 	}
 
@@ -359,11 +426,7 @@ export class CeResources {
 	 * Parses a billingview ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillingviewArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBillingviewArn(arn: string): CeBillingviewArnComponents {
 		const match = BillingviewArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid billingview ARN: ${arn}`);
@@ -378,14 +441,7 @@ export class CeResources {
 	/**
 	 * Builds an ARN for the costcategory resource.
 	 */
-	static costcategory(props: {
-		/** The Identifier component of the ARN. */
-		readonly identifier: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static costcategory(props: CeCostcategoryArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ce::${props.account ?? "*"}:costcategory/${props.identifier}`;
 	}
 
@@ -400,11 +456,7 @@ export class CeResources {
 	 * Parses a costcategory ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCostcategoryArn(arn: string): {
-		partition: string;
-		account: string;
-		identifier: string;
-	} {
+	static parseCostcategoryArn(arn: string): CeCostcategoryArnComponents {
 		const match = CostcategoryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid costcategory ARN: ${arn}`);
@@ -422,197 +474,197 @@ export class CeResources {
  */
 export class CeOperations {
 	/** IAM actions required for the CreateAnomalyMonitor API call. */
-	static readonly CREATE_ANOMALY_MONITOR: string[] = [
+	static readonly CreateAnomalyMonitor: string[] = [
 		"ce:CreateAnomalyMonitor",
 		"ce:TagResource",
 	];
 	/** IAM actions required for the CreateAnomalySubscription API call. */
-	static readonly CREATE_ANOMALY_SUBSCRIPTION: string[] = [
+	static readonly CreateAnomalySubscription: string[] = [
 		"ce:CreateAnomalySubscription",
 		"ce:TagResource",
 	];
 	/** IAM actions required for the CreateCostCategoryDefinition API call. */
-	static readonly CREATE_COST_CATEGORY_DEFINITION: string[] = [
+	static readonly CreateCostCategoryDefinition: string[] = [
 		"ce:CreateCostCategoryDefinition",
 		"ce:TagResource",
 	];
 	/** IAM actions required for the DeleteAnomalyMonitor API call. */
-	static readonly DELETE_ANOMALY_MONITOR: string[] = [
-		"ce:DeleteAnomalyMonitor",
-	];
+	static readonly DeleteAnomalyMonitor: string[] = ["ce:DeleteAnomalyMonitor"];
 	/** IAM actions required for the DeleteAnomalySubscription API call. */
-	static readonly DELETE_ANOMALY_SUBSCRIPTION: string[] = [
+	static readonly DeleteAnomalySubscription: string[] = [
 		"ce:DeleteAnomalySubscription",
 	];
 	/** IAM actions required for the DeleteCostCategoryDefinition API call. */
-	static readonly DELETE_COST_CATEGORY_DEFINITION: string[] = [
+	static readonly DeleteCostCategoryDefinition: string[] = [
 		"ce:DeleteCostCategoryDefinition",
 	];
 	/** IAM actions required for the DescribeCostCategoryDefinition API call. */
-	static readonly DESCRIBE_COST_CATEGORY_DEFINITION: string[] = [
+	static readonly DescribeCostCategoryDefinition: string[] = [
 		"ce:DescribeCostCategoryDefinition",
 	];
 	/** IAM actions required for the GetAnomalies API call. */
-	static readonly GET_ANOMALIES: string[] = ["ce:GetAnomalies"];
+	static readonly opGetAnomalies: string[] = ["ce:GetAnomalies"];
 	/** IAM actions required for the GetAnomalyMonitors API call. */
-	static readonly GET_ANOMALY_MONITORS: string[] = ["ce:GetAnomalyMonitors"];
+	static readonly opGetAnomalyMonitors: string[] = ["ce:GetAnomalyMonitors"];
 	/** IAM actions required for the GetAnomalySubscriptions API call. */
-	static readonly GET_ANOMALY_SUBSCRIPTIONS: string[] = [
+	static readonly opGetAnomalySubscriptions: string[] = [
 		"ce:GetAnomalySubscriptions",
 	];
 	/** IAM actions required for the GetApproximateUsageRecords API call. */
-	static readonly GET_APPROXIMATE_USAGE_RECORDS: string[] = [
+	static readonly opGetApproximateUsageRecords: string[] = [
 		"ce:GetApproximateUsageRecords",
 	];
 	/** IAM actions required for the GetCommitmentPurchaseAnalysis API call. */
-	static readonly GET_COMMITMENT_PURCHASE_ANALYSIS: string[] = [
+	static readonly opGetCommitmentPurchaseAnalysis: string[] = [
 		"ce:GetCommitmentPurchaseAnalysis",
 	];
 	/** IAM actions required for the GetCostAndUsage API call. */
-	static readonly GET_COST_AND_USAGE: string[] = [
+	static readonly opGetCostAndUsage: string[] = [
 		"ce:GetCostAndUsage",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetCostAndUsageComparisons API call. */
-	static readonly GET_COST_AND_USAGE_COMPARISONS: string[] = [
+	static readonly opGetCostAndUsageComparisons: string[] = [
 		"ce:GetCostAndUsageComparisons",
 	];
 	/** IAM actions required for the GetCostAndUsageWithResources API call. */
-	static readonly GET_COST_AND_USAGE_WITH_RESOURCES: string[] = [
+	static readonly opGetCostAndUsageWithResources: string[] = [
 		"ce:GetCostAndUsageWithResources",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetCostCategories API call. */
-	static readonly GET_COST_CATEGORIES: string[] = [
+	static readonly opGetCostCategories: string[] = [
 		"ce:GetCostCategories",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetCostComparisonDrivers API call. */
-	static readonly GET_COST_COMPARISON_DRIVERS: string[] = [
+	static readonly opGetCostComparisonDrivers: string[] = [
 		"ce:GetCostComparisonDrivers",
 	];
 	/** IAM actions required for the GetCostForecast API call. */
-	static readonly GET_COST_FORECAST: string[] = [
+	static readonly opGetCostForecast: string[] = [
 		"ce:GetCostForecast",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetDimensionValues API call. */
-	static readonly GET_DIMENSION_VALUES: string[] = [
+	static readonly opGetDimensionValues: string[] = [
 		"ce:GetDimensionValues",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetReservationCoverage API call. */
-	static readonly GET_RESERVATION_COVERAGE: string[] = [
+	static readonly opGetReservationCoverage: string[] = [
 		"ce:GetReservationCoverage",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetReservationPurchaseRecommendation API call. */
-	static readonly GET_RESERVATION_PURCHASE_RECOMMENDATION: string[] = [
+	static readonly opGetReservationPurchaseRecommendation: string[] = [
 		"ce:GetReservationPurchaseRecommendation",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetReservationUtilization API call. */
-	static readonly GET_RESERVATION_UTILIZATION: string[] = [
+	static readonly opGetReservationUtilization: string[] = [
 		"ce:GetReservationUtilization",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetRightsizingRecommendation API call. */
-	static readonly GET_RIGHTSIZING_RECOMMENDATION: string[] = [
+	static readonly opGetRightsizingRecommendation: string[] = [
 		"ce:GetRightsizingRecommendation",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetSavingsPlanPurchaseRecommendationDetails API call. */
-	static readonly GET_SAVINGS_PLAN_PURCHASE_RECOMMENDATION_DETAILS: string[] = [
+	static readonly opGetSavingsPlanPurchaseRecommendationDetails: string[] = [
 		"ce:GetSavingsPlanPurchaseRecommendationDetails",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetSavingsPlansCoverage API call. */
-	static readonly GET_SAVINGS_PLANS_COVERAGE: string[] = [
+	static readonly opGetSavingsPlansCoverage: string[] = [
 		"ce:GetSavingsPlansCoverage",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetSavingsPlansPurchaseRecommendation API call. */
-	static readonly GET_SAVINGS_PLANS_PURCHASE_RECOMMENDATION: string[] = [
+	static readonly opGetSavingsPlansPurchaseRecommendation: string[] = [
 		"ce:GetSavingsPlansPurchaseRecommendation",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetSavingsPlansUtilization API call. */
-	static readonly GET_SAVINGS_PLANS_UTILIZATION: string[] = [
+	static readonly opGetSavingsPlansUtilization: string[] = [
 		"ce:GetSavingsPlansUtilization",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetSavingsPlansUtilizationDetails API call. */
-	static readonly GET_SAVINGS_PLANS_UTILIZATION_DETAILS: string[] = [
+	static readonly opGetSavingsPlansUtilizationDetails: string[] = [
 		"ce:GetSavingsPlansUtilizationDetails",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetTags API call. */
-	static readonly GET_TAGS: string[] = ["ce:GetTags", "aws-portal:ViewBilling"];
+	static readonly opGetTags: string[] = [
+		"ce:GetTags",
+		"aws-portal:ViewBilling",
+	];
 	/** IAM actions required for the GetUsageForecast API call. */
-	static readonly GET_USAGE_FORECAST: string[] = [
+	static readonly opGetUsageForecast: string[] = [
 		"ce:GetUsageForecast",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListCommitmentPurchaseAnalyses API call. */
-	static readonly LIST_COMMITMENT_PURCHASE_ANALYSES: string[] = [
+	static readonly ListCommitmentPurchaseAnalyses: string[] = [
 		"ce:ListCommitmentPurchaseAnalyses",
 	];
 	/** IAM actions required for the ListCostAllocationTagBackfillHistory API call. */
-	static readonly LIST_COST_ALLOCATION_TAG_BACKFILL_HISTORY: string[] = [
+	static readonly ListCostAllocationTagBackfillHistory: string[] = [
 		"ce:ListCostAllocationTagBackfillHistory",
 	];
 	/** IAM actions required for the ListCostAllocationTags API call. */
-	static readonly LIST_COST_ALLOCATION_TAGS: string[] = [
+	static readonly ListCostAllocationTags: string[] = [
 		"ce:ListCostAllocationTags",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListCostCategoryDefinitions API call. */
-	static readonly LIST_COST_CATEGORY_DEFINITIONS: string[] = [
+	static readonly ListCostCategoryDefinitions: string[] = [
 		"ce:ListCostCategoryDefinitions",
 	];
 	/** IAM actions required for the ListCostCategoryResourceAssociations API call. */
-	static readonly LIST_COST_CATEGORY_RESOURCE_ASSOCIATIONS: string[] = [
+	static readonly ListCostCategoryResourceAssociations: string[] = [
 		"ce:ListCostCategoryResourceAssociations",
 	];
 	/** IAM actions required for the ListSavingsPlansPurchaseRecommendationGeneration API call. */
-	static readonly LIST_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION: string[] =
-		["ce:ListSavingsPlansPurchaseRecommendationGeneration"];
+	static readonly ListSavingsPlansPurchaseRecommendationGeneration: string[] = [
+		"ce:ListSavingsPlansPurchaseRecommendationGeneration",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = ["ce:ListTagsForResource"];
+	static readonly ListTagsForResource: string[] = ["ce:ListTagsForResource"];
 	/** IAM actions required for the ProvideAnomalyFeedback API call. */
-	static readonly PROVIDE_ANOMALY_FEEDBACK: string[] = [
+	static readonly ProvideAnomalyFeedback: string[] = [
 		"ce:ProvideAnomalyFeedback",
 	];
 	/** IAM actions required for the StartCommitmentPurchaseAnalysis API call. */
-	static readonly START_COMMITMENT_PURCHASE_ANALYSIS: string[] = [
+	static readonly StartCommitmentPurchaseAnalysis: string[] = [
 		"ce:StartCommitmentPurchaseAnalysis",
 	];
 	/** IAM actions required for the StartCostAllocationTagBackfill API call. */
-	static readonly START_COST_ALLOCATION_TAG_BACKFILL: string[] = [
+	static readonly StartCostAllocationTagBackfill: string[] = [
 		"ce:StartCostAllocationTagBackfill",
 	];
 	/** IAM actions required for the StartSavingsPlansPurchaseRecommendationGeneration API call. */
-	static readonly START_SAVINGS_PLANS_PURCHASE_RECOMMENDATION_GENERATION: string[] =
+	static readonly StartSavingsPlansPurchaseRecommendationGeneration: string[] =
 		["ce:StartSavingsPlansPurchaseRecommendationGeneration"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["ce:TagResource"];
+	static readonly TagResource: string[] = ["ce:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["ce:UntagResource"];
+	static readonly UntagResource: string[] = ["ce:UntagResource"];
 	/** IAM actions required for the UpdateAnomalyMonitor API call. */
-	static readonly UPDATE_ANOMALY_MONITOR: string[] = [
-		"ce:UpdateAnomalyMonitor",
-	];
+	static readonly UpdateAnomalyMonitor: string[] = ["ce:UpdateAnomalyMonitor"];
 	/** IAM actions required for the UpdateAnomalySubscription API call. */
-	static readonly UPDATE_ANOMALY_SUBSCRIPTION: string[] = [
+	static readonly UpdateAnomalySubscription: string[] = [
 		"ce:UpdateAnomalySubscription",
 	];
 	/** IAM actions required for the UpdateCostAllocationTagsStatus API call. */
-	static readonly UPDATE_COST_ALLOCATION_TAGS_STATUS: string[] = [
+	static readonly UpdateCostAllocationTagsStatus: string[] = [
 		"aws-portal:ModifyBilling",
 		"ce:UpdateCostAllocationTagsStatus",
 	];
 	/** IAM actions required for the UpdateCostCategoryDefinition API call. */
-	static readonly UPDATE_COST_CATEGORY_DEFINITION: string[] = [
+	static readonly UpdateCostCategoryDefinition: string[] = [
 		"ce:UpdateCostCategoryDefinition",
 	];
 }
@@ -622,118 +674,118 @@ export class CeOperations {
  */
 export class CeConditions {
 	/** Condition keys applicable to the CreateAnomalyMonitor action. */
-	static readonly CREATE_ANOMALY_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAnomalyMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAnomalySubscription action. */
-	static readonly CREATE_ANOMALY_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateAnomalySubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCostCategoryDefinition action. */
-	static readonly CREATE_COST_CATEGORY_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly CreateCostCategoryDefinitionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAnomalyMonitor action. */
-	static readonly DELETE_ANOMALY_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly DeleteAnomalyMonitorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteAnomalySubscription action. */
-	static readonly DELETE_ANOMALY_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteAnomalySubscriptionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteCostCategoryDefinition action. */
-	static readonly DELETE_COST_CATEGORY_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly DeleteCostCategoryDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCostCategoryDefinition action. */
-	static readonly DESCRIBE_COST_CATEGORY_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly DescribeCostCategoryDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAnomalies action. */
-	static readonly GET_ANOMALIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetAnomaliesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAnomalyMonitors action. */
-	static readonly GET_ANOMALY_MONITORS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAnomalyMonitorsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetAnomalySubscriptions action. */
-	static readonly GET_ANOMALY_SUBSCRIPTIONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetAnomalySubscriptionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostAndUsage action. */
-	static readonly GET_COST_AND_USAGE_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostAndUsageConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostAndUsageComparisons action. */
-	static readonly GET_COST_AND_USAGE_COMPARISONS_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostAndUsageComparisonsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostAndUsageWithResources action. */
-	static readonly GET_COST_AND_USAGE_WITH_RESOURCES_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostAndUsageWithResourcesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostCategories action. */
-	static readonly GET_COST_CATEGORIES_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostCategoriesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostComparisonDrivers action. */
-	static readonly GET_COST_COMPARISON_DRIVERS_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostComparisonDriversConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCostForecast action. */
-	static readonly GET_COST_FORECAST_CONDITION_KEYS: string[] = [
+	static readonly actionGetCostForecastConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDimensionValues action. */
-	static readonly GET_DIMENSION_VALUES_CONDITION_KEYS: string[] = [
+	static readonly actionGetDimensionValuesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetTags action. */
-	static readonly GET_TAGS_CONDITION_KEYS: string[] = [
+	static readonly actionGetTagsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetUsageForecast action. */
-	static readonly GET_USAGE_FORECAST_CONDITION_KEYS: string[] = [
+	static readonly actionGetUsageForecastConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateAnomalyMonitor action. */
-	static readonly UPDATE_ANOMALY_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly UpdateAnomalyMonitorConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateAnomalySubscription action. */
-	static readonly UPDATE_ANOMALY_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateAnomalySubscriptionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateCostCategoryDefinition action. */
-	static readonly UPDATE_COST_CATEGORY_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly UpdateCostCategoryDefinitionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

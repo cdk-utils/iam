@@ -13,115 +13,168 @@ export class VendorInsightsActions {
 	static readonly SERVICE_PREFIX = "vendor-insights";
 
 	/** [Write] vendor-insights:ActivateSecurityProfile */
-	static readonly ACTIVATE_SECURITY_PROFILE =
+	static readonly ActivateSecurityProfile =
 		"vendor-insights:ActivateSecurityProfile";
 	/** [Write] vendor-insights:AssociateDataSource */
-	static readonly ASSOCIATE_DATA_SOURCE = "vendor-insights:AssociateDataSource";
+	static readonly AssociateDataSource = "vendor-insights:AssociateDataSource";
 	/** [Write] vendor-insights:CreateDataSource */
-	static readonly CREATE_DATA_SOURCE = "vendor-insights:CreateDataSource";
+	static readonly CreateDataSource = "vendor-insights:CreateDataSource";
 	/** [Write] vendor-insights:CreateSecurityProfile */
-	static readonly CREATE_SECURITY_PROFILE =
+	static readonly CreateSecurityProfile =
 		"vendor-insights:CreateSecurityProfile";
 	/** [Write] vendor-insights:DeactivateSecurityProfile */
-	static readonly DEACTIVATE_SECURITY_PROFILE =
+	static readonly DeactivateSecurityProfile =
 		"vendor-insights:DeactivateSecurityProfile";
 	/** [Write] vendor-insights:DeleteDataSource */
-	static readonly DELETE_DATA_SOURCE = "vendor-insights:DeleteDataSource";
+	static readonly DeleteDataSource = "vendor-insights:DeleteDataSource";
 	/** [Write] vendor-insights:DisassociateDataSource */
-	static readonly DISASSOCIATE_DATA_SOURCE =
+	static readonly DisassociateDataSource =
 		"vendor-insights:DisassociateDataSource";
 	/** [Read] vendor-insights:GetDataSource */
-	static readonly GET_DATA_SOURCE = "vendor-insights:GetDataSource";
+	static readonly actionGetDataSource = "vendor-insights:GetDataSource";
 	/** [Read] vendor-insights:GetEntitledSecurityProfileSnapshot */
-	static readonly GET_ENTITLED_SECURITY_PROFILE_SNAPSHOT =
+	static readonly actionGetEntitledSecurityProfileSnapshot =
 		"vendor-insights:GetEntitledSecurityProfileSnapshot";
 	/** [Read] vendor-insights:GetProfileAccessTerms */
-	static readonly GET_PROFILE_ACCESS_TERMS =
+	static readonly actionGetProfileAccessTerms =
 		"vendor-insights:GetProfileAccessTerms";
 	/** [Read] vendor-insights:GetSecurityProfile */
-	static readonly GET_SECURITY_PROFILE = "vendor-insights:GetSecurityProfile";
+	static readonly actionGetSecurityProfile =
+		"vendor-insights:GetSecurityProfile";
 	/** [Read] vendor-insights:GetSecurityProfileSnapshot */
-	static readonly GET_SECURITY_PROFILE_SNAPSHOT =
+	static readonly actionGetSecurityProfileSnapshot =
 		"vendor-insights:GetSecurityProfileSnapshot";
 	/** [List] vendor-insights:ListDataSources */
-	static readonly LIST_DATA_SOURCES = "vendor-insights:ListDataSources";
+	static readonly ListDataSources = "vendor-insights:ListDataSources";
 	/** [List] vendor-insights:ListEntitledSecurityProfileSnapshots */
-	static readonly LIST_ENTITLED_SECURITY_PROFILE_SNAPSHOTS =
+	static readonly ListEntitledSecurityProfileSnapshots =
 		"vendor-insights:ListEntitledSecurityProfileSnapshots";
 	/** [List] vendor-insights:ListEntitledSecurityProfiles */
-	static readonly LIST_ENTITLED_SECURITY_PROFILES =
+	static readonly ListEntitledSecurityProfiles =
 		"vendor-insights:ListEntitledSecurityProfiles";
 	/** [List] vendor-insights:ListSecurityProfileSnapshots */
-	static readonly LIST_SECURITY_PROFILE_SNAPSHOTS =
+	static readonly ListSecurityProfileSnapshots =
 		"vendor-insights:ListSecurityProfileSnapshots";
 	/** [List] vendor-insights:ListSecurityProfiles */
-	static readonly LIST_SECURITY_PROFILES =
-		"vendor-insights:ListSecurityProfiles";
+	static readonly ListSecurityProfiles = "vendor-insights:ListSecurityProfiles";
 	/** [Read] vendor-insights:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"vendor-insights:ListTagsForResource";
+	static readonly ListTagsForResource = "vendor-insights:ListTagsForResource";
 	/** [Tagging] vendor-insights:TagResource */
-	static readonly TAG_RESOURCE = "vendor-insights:TagResource";
+	static readonly TagResource = "vendor-insights:TagResource";
 	/** [Tagging] vendor-insights:UntagResource */
-	static readonly UNTAG_RESOURCE = "vendor-insights:UntagResource";
+	static readonly UntagResource = "vendor-insights:UntagResource";
 	/** [Write] vendor-insights:UpdateDataSource */
-	static readonly UPDATE_DATA_SOURCE = "vendor-insights:UpdateDataSource";
+	static readonly UpdateDataSource = "vendor-insights:UpdateDataSource";
 	/** [Write] vendor-insights:UpdateSecurityProfile */
-	static readonly UPDATE_SECURITY_PROFILE =
+	static readonly UpdateSecurityProfile =
 		"vendor-insights:UpdateSecurityProfile";
 	/** [Write] vendor-insights:UpdateSecurityProfileSnapshotCreationConfiguration */
-	static readonly UPDATE_SECURITY_PROFILE_SNAPSHOT_CREATION_CONFIGURATION =
+	static readonly UpdateSecurityProfileSnapshotCreationConfiguration =
 		"vendor-insights:UpdateSecurityProfileSnapshotCreationConfiguration";
 	/** [Write] vendor-insights:UpdateSecurityProfileSnapshotReleaseConfiguration */
-	static readonly UPDATE_SECURITY_PROFILE_SNAPSHOT_RELEASE_CONFIGURATION =
+	static readonly UpdateSecurityProfileSnapshotReleaseConfiguration =
 		"vendor-insights:UpdateSecurityProfileSnapshotReleaseConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		VendorInsightsActions.GET_DATA_SOURCE,
-		VendorInsightsActions.GET_ENTITLED_SECURITY_PROFILE_SNAPSHOT,
-		VendorInsightsActions.GET_PROFILE_ACCESS_TERMS,
-		VendorInsightsActions.GET_SECURITY_PROFILE,
-		VendorInsightsActions.GET_SECURITY_PROFILE_SNAPSHOT,
-		VendorInsightsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		VendorInsightsActions.actionGetDataSource,
+		VendorInsightsActions.actionGetEntitledSecurityProfileSnapshot,
+		VendorInsightsActions.actionGetProfileAccessTerms,
+		VendorInsightsActions.actionGetSecurityProfile,
+		VendorInsightsActions.actionGetSecurityProfileSnapshot,
+		VendorInsightsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		VendorInsightsActions.ACTIVATE_SECURITY_PROFILE,
-		VendorInsightsActions.ASSOCIATE_DATA_SOURCE,
-		VendorInsightsActions.CREATE_DATA_SOURCE,
-		VendorInsightsActions.CREATE_SECURITY_PROFILE,
-		VendorInsightsActions.DEACTIVATE_SECURITY_PROFILE,
-		VendorInsightsActions.DELETE_DATA_SOURCE,
-		VendorInsightsActions.DISASSOCIATE_DATA_SOURCE,
-		VendorInsightsActions.UPDATE_DATA_SOURCE,
-		VendorInsightsActions.UPDATE_SECURITY_PROFILE,
-		VendorInsightsActions.UPDATE_SECURITY_PROFILE_SNAPSHOT_CREATION_CONFIGURATION,
-		VendorInsightsActions.UPDATE_SECURITY_PROFILE_SNAPSHOT_RELEASE_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		VendorInsightsActions.ActivateSecurityProfile,
+		VendorInsightsActions.AssociateDataSource,
+		VendorInsightsActions.CreateDataSource,
+		VendorInsightsActions.CreateSecurityProfile,
+		VendorInsightsActions.DeactivateSecurityProfile,
+		VendorInsightsActions.DeleteDataSource,
+		VendorInsightsActions.DisassociateDataSource,
+		VendorInsightsActions.UpdateDataSource,
+		VendorInsightsActions.UpdateSecurityProfile,
+		VendorInsightsActions.UpdateSecurityProfileSnapshotCreationConfiguration,
+		VendorInsightsActions.UpdateSecurityProfileSnapshotReleaseConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		VendorInsightsActions.LIST_DATA_SOURCES,
-		VendorInsightsActions.LIST_ENTITLED_SECURITY_PROFILE_SNAPSHOTS,
-		VendorInsightsActions.LIST_ENTITLED_SECURITY_PROFILES,
-		VendorInsightsActions.LIST_SECURITY_PROFILE_SNAPSHOTS,
-		VendorInsightsActions.LIST_SECURITY_PROFILES,
+	static readonly AllListActions: string[] = [
+		VendorInsightsActions.ListDataSources,
+		VendorInsightsActions.ListEntitledSecurityProfileSnapshots,
+		VendorInsightsActions.ListEntitledSecurityProfiles,
+		VendorInsightsActions.ListSecurityProfileSnapshots,
+		VendorInsightsActions.ListSecurityProfiles,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		VendorInsightsActions.TAG_RESOURCE,
-		VendorInsightsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		VendorInsightsActions.TagResource,
+		VendorInsightsActions.UntagResource,
 	];
 }
 
-const DataSourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):vendor-insights:::data-source:(?<resourceId>[^:/?]+)$",
-);
-const SecurityProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):vendor-insights:::security-profile:(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a DataSource ARN.
+ */
+export interface VendorInsightsDataSourceArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DataSource ARN.
+ */
+export interface VendorInsightsDataSourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a SecurityProfile ARN.
+ */
+export interface VendorInsightsSecurityProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SecurityProfile ARN.
+ */
+export interface VendorInsightsSecurityProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const DataSourceArnRegex =
+	/^arn:(?<partition>[^:]+):vendor-insights:::data-source:(?<resourceId>[^:/?]+)$/;
+const SecurityProfileArnRegex =
+	/^arn:(?<partition>[^:]+):vendor-insights:::security-profile:(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for vendor-insights resources.
@@ -130,16 +183,7 @@ export class VendorInsightsResources {
 	/**
 	 * Builds an ARN for the DataSource resource.
 	 */
-	static dataSource(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataSource(props: VendorInsightsDataSourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:vendor-insights:::data-source:${props.resourceId}`;
 	}
 
@@ -154,12 +198,9 @@ export class VendorInsightsResources {
 	 * Parses a DataSource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataSourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDataSourceArn(
+		arn: string,
+	): VendorInsightsDataSourceArnComponents {
 		const match = DataSourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DataSource ARN: ${arn}`);
@@ -175,16 +216,7 @@ export class VendorInsightsResources {
 	/**
 	 * Builds an ARN for the SecurityProfile resource.
 	 */
-	static securityProfile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityProfile(props: VendorInsightsSecurityProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:vendor-insights:::security-profile:${props.resourceId}`;
 	}
 
@@ -199,12 +231,9 @@ export class VendorInsightsResources {
 	 * Parses a SecurityProfile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSecurityProfileArn(
+		arn: string,
+	): VendorInsightsSecurityProfileArnComponents {
 		const match = SecurityProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SecurityProfile ARN: ${arn}`);
@@ -223,89 +252,89 @@ export class VendorInsightsResources {
  */
 export class VendorInsightsConditions {
 	/** Condition keys applicable to the ActivateSecurityProfile action. */
-	static readonly ACTIVATE_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly ActivateSecurityProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the AssociateDataSource action. */
-	static readonly ASSOCIATE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly AssociateDataSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDataSource action. */
-	static readonly CREATE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly CreateDataSourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSecurityProfile action. */
-	static readonly CREATE_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateSecurityProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeactivateSecurityProfile action. */
-	static readonly DEACTIVATE_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly DeactivateSecurityProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteDataSource action. */
-	static readonly DELETE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly DeleteDataSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DisassociateDataSource action. */
-	static readonly DISASSOCIATE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly DisassociateDataSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDataSource action. */
-	static readonly GET_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetDataSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSecurityProfile action. */
-	static readonly GET_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSecurityProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSecurityProfileSnapshot action. */
-	static readonly GET_SECURITY_PROFILE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly actionGetSecurityProfileSnapshotConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSecurityProfileSnapshots action. */
-	static readonly LIST_SECURITY_PROFILE_SNAPSHOTS_CONDITION_KEYS: string[] = [
+	static readonly ListSecurityProfileSnapshotsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateDataSource action. */
-	static readonly UPDATE_DATA_SOURCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateDataSourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSecurityProfile action. */
-	static readonly UPDATE_SECURITY_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly UpdateSecurityProfileConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateSecurityProfileSnapshotCreationConfiguration action. */
-	static readonly UPDATE_SECURITY_PROFILE_SNAPSHOT_CREATION_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly UpdateSecurityProfileSnapshotCreationConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the UpdateSecurityProfileSnapshotReleaseConfiguration action. */
-	static readonly UPDATE_SECURITY_PROFILE_SNAPSHOT_RELEASE_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly UpdateSecurityProfileSnapshotReleaseConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

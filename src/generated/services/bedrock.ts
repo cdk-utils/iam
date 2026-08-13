@@ -13,1013 +13,2072 @@ export class BedrockActions {
 	static readonly SERVICE_PREFIX = "bedrock";
 
 	/** [Read] bedrock:AgenticRetrieveStream */
-	static readonly AGENTIC_RETRIEVE_STREAM = "bedrock:AgenticRetrieveStream";
+	static readonly AgenticRetrieveStream = "bedrock:AgenticRetrieveStream";
 	/** [PermissionManagement] bedrock:AllowVendedLogDeliveryForResource */
-	static readonly ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE =
+	static readonly AllowVendedLogDeliveryForResource =
 		"bedrock:AllowVendedLogDeliveryForResource";
 	/** [Read] bedrock:ApplyGuardrail */
-	static readonly APPLY_GUARDRAIL = "bedrock:ApplyGuardrail";
+	static readonly ApplyGuardrail = "bedrock:ApplyGuardrail";
 	/** [Write] bedrock:AssociateAgentCollaborator */
-	static readonly ASSOCIATE_AGENT_COLLABORATOR =
+	static readonly AssociateAgentCollaborator =
 		"bedrock:AssociateAgentCollaborator";
 	/** [Write] bedrock:AssociateAgentKnowledgeBase */
-	static readonly ASSOCIATE_AGENT_KNOWLEDGE_BASE =
+	static readonly AssociateAgentKnowledgeBase =
 		"bedrock:AssociateAgentKnowledgeBase";
 	/** [Write] bedrock:AssociateThirdPartyKnowledgeBase */
-	static readonly ASSOCIATE_THIRD_PARTY_KNOWLEDGE_BASE =
+	static readonly AssociateThirdPartyKnowledgeBase =
 		"bedrock:AssociateThirdPartyKnowledgeBase";
 	/** [Write] bedrock:BatchDeleteAdvancedPromptOptimizationJob */
-	static readonly BATCH_DELETE_ADVANCED_PROMPT_OPTIMIZATION_JOB =
+	static readonly BatchDeleteAdvancedPromptOptimizationJob =
 		"bedrock:BatchDeleteAdvancedPromptOptimizationJob";
 	/** [Write] bedrock:BatchDeleteEvaluationJob */
-	static readonly BATCH_DELETE_EVALUATION_JOB =
-		"bedrock:BatchDeleteEvaluationJob";
+	static readonly BatchDeleteEvaluationJob = "bedrock:BatchDeleteEvaluationJob";
 	/** [Read] bedrock:CallWithBearerToken */
-	static readonly CALL_WITH_BEARER_TOKEN = "bedrock:CallWithBearerToken";
+	static readonly CallWithBearerToken = "bedrock:CallWithBearerToken";
 	/** [Write] bedrock:CancelAutomatedReasoningPolicyBuildWorkflow */
-	static readonly CANCEL_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW =
+	static readonly CancelAutomatedReasoningPolicyBuildWorkflow =
 		"bedrock:CancelAutomatedReasoningPolicyBuildWorkflow";
 	/** [Write] bedrock:CopyBlueprintStage */
-	static readonly COPY_BLUEPRINT_STAGE = "bedrock:CopyBlueprintStage";
+	static readonly CopyBlueprintStage = "bedrock:CopyBlueprintStage";
 	/** [Read] bedrock:CountTokens */
-	static readonly COUNT_TOKENS = "bedrock:CountTokens";
+	static readonly CountTokens = "bedrock:CountTokens";
 	/** [Write] bedrock:CreateAdvancedPromptOptimizationJob */
-	static readonly CREATE_ADVANCED_PROMPT_OPTIMIZATION_JOB =
+	static readonly CreateAdvancedPromptOptimizationJob =
 		"bedrock:CreateAdvancedPromptOptimizationJob";
 	/** [Write] bedrock:CreateAgent */
-	static readonly CREATE_AGENT = "bedrock:CreateAgent";
+	static readonly CreateAgent = "bedrock:CreateAgent";
 	/** [Write] bedrock:CreateAgentActionGroup */
-	static readonly CREATE_AGENT_ACTION_GROUP = "bedrock:CreateAgentActionGroup";
+	static readonly CreateAgentActionGroup = "bedrock:CreateAgentActionGroup";
 	/** [Write] bedrock:CreateAgentAlias */
-	static readonly CREATE_AGENT_ALIAS = "bedrock:CreateAgentAlias";
+	static readonly CreateAgentAlias = "bedrock:CreateAgentAlias";
 	/** [Write] bedrock:CreateAutomatedReasoningPolicy */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY =
+	static readonly CreateAutomatedReasoningPolicy =
 		"bedrock:CreateAutomatedReasoningPolicy";
 	/** [Write] bedrock:CreateAutomatedReasoningPolicyTestCase */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_TEST_CASE =
+	static readonly CreateAutomatedReasoningPolicyTestCase =
 		"bedrock:CreateAutomatedReasoningPolicyTestCase";
 	/** [Write] bedrock:CreateAutomatedReasoningPolicyVersion */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_VERSION =
+	static readonly CreateAutomatedReasoningPolicyVersion =
 		"bedrock:CreateAutomatedReasoningPolicyVersion";
 	/** [Write] bedrock:CreateBlueprint */
-	static readonly CREATE_BLUEPRINT = "bedrock:CreateBlueprint";
+	static readonly CreateBlueprint = "bedrock:CreateBlueprint";
 	/** [Write] bedrock:CreateBlueprintVersion */
-	static readonly CREATE_BLUEPRINT_VERSION = "bedrock:CreateBlueprintVersion";
+	static readonly CreateBlueprintVersion = "bedrock:CreateBlueprintVersion";
 	/** [Write] bedrock:CreateCustomModel */
-	static readonly CREATE_CUSTOM_MODEL = "bedrock:CreateCustomModel";
+	static readonly CreateCustomModel = "bedrock:CreateCustomModel";
 	/** [Write] bedrock:CreateCustomModelDeployment */
-	static readonly CREATE_CUSTOM_MODEL_DEPLOYMENT =
+	static readonly CreateCustomModelDeployment =
 		"bedrock:CreateCustomModelDeployment";
 	/** [Write] bedrock:CreateDataAutomationLibrary */
-	static readonly CREATE_DATA_AUTOMATION_LIBRARY =
+	static readonly CreateDataAutomationLibrary =
 		"bedrock:CreateDataAutomationLibrary";
 	/** [Write] bedrock:CreateDataAutomationProject */
-	static readonly CREATE_DATA_AUTOMATION_PROJECT =
+	static readonly CreateDataAutomationProject =
 		"bedrock:CreateDataAutomationProject";
 	/** [Write] bedrock:CreateDataSource */
-	static readonly CREATE_DATA_SOURCE = "bedrock:CreateDataSource";
+	static readonly CreateDataSource = "bedrock:CreateDataSource";
 	/** [Write] bedrock:CreateEvaluationJob */
-	static readonly CREATE_EVALUATION_JOB = "bedrock:CreateEvaluationJob";
+	static readonly CreateEvaluationJob = "bedrock:CreateEvaluationJob";
 	/** [Write] bedrock:CreateFlow */
-	static readonly CREATE_FLOW = "bedrock:CreateFlow";
+	static readonly CreateFlow = "bedrock:CreateFlow";
 	/** [Write] bedrock:CreateFlowAlias */
-	static readonly CREATE_FLOW_ALIAS = "bedrock:CreateFlowAlias";
+	static readonly CreateFlowAlias = "bedrock:CreateFlowAlias";
 	/** [Write] bedrock:CreateFlowVersion */
-	static readonly CREATE_FLOW_VERSION = "bedrock:CreateFlowVersion";
+	static readonly CreateFlowVersion = "bedrock:CreateFlowVersion";
 	/** [Write] bedrock:CreateFoundationModelAgreement */
-	static readonly CREATE_FOUNDATION_MODEL_AGREEMENT =
+	static readonly CreateFoundationModelAgreement =
 		"bedrock:CreateFoundationModelAgreement";
 	/** [Write] bedrock:CreateGuardrail */
-	static readonly CREATE_GUARDRAIL = "bedrock:CreateGuardrail";
+	static readonly CreateGuardrail = "bedrock:CreateGuardrail";
 	/** [Write] bedrock:CreateGuardrailVersion */
-	static readonly CREATE_GUARDRAIL_VERSION = "bedrock:CreateGuardrailVersion";
+	static readonly CreateGuardrailVersion = "bedrock:CreateGuardrailVersion";
 	/** [Write] bedrock:CreateInferenceProfile */
-	static readonly CREATE_INFERENCE_PROFILE = "bedrock:CreateInferenceProfile";
+	static readonly CreateInferenceProfile = "bedrock:CreateInferenceProfile";
 	/** [Write] bedrock:CreateInvocation */
-	static readonly CREATE_INVOCATION = "bedrock:CreateInvocation";
+	static readonly CreateInvocation = "bedrock:CreateInvocation";
 	/** [Write] bedrock:CreateKnowledgeBase */
-	static readonly CREATE_KNOWLEDGE_BASE = "bedrock:CreateKnowledgeBase";
+	static readonly CreateKnowledgeBase = "bedrock:CreateKnowledgeBase";
 	/** [Write] bedrock:CreateMarketplaceModelEndpoint */
-	static readonly CREATE_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly CreateMarketplaceModelEndpoint =
 		"bedrock:CreateMarketplaceModelEndpoint";
 	/** [Write] bedrock:CreateModelCopyJob */
-	static readonly CREATE_MODEL_COPY_JOB = "bedrock:CreateModelCopyJob";
+	static readonly CreateModelCopyJob = "bedrock:CreateModelCopyJob";
 	/** [Write] bedrock:CreateModelCustomizationJob */
-	static readonly CREATE_MODEL_CUSTOMIZATION_JOB =
+	static readonly CreateModelCustomizationJob =
 		"bedrock:CreateModelCustomizationJob";
 	/** [Write] bedrock:CreateModelEvaluationJob */
-	static readonly CREATE_MODEL_EVALUATION_JOB =
-		"bedrock:CreateModelEvaluationJob";
+	static readonly CreateModelEvaluationJob = "bedrock:CreateModelEvaluationJob";
 	/** [Write] bedrock:CreateModelImportJob */
-	static readonly CREATE_MODEL_IMPORT_JOB = "bedrock:CreateModelImportJob";
+	static readonly CreateModelImportJob = "bedrock:CreateModelImportJob";
 	/** [Write] bedrock:CreateModelInvocationJob */
-	static readonly CREATE_MODEL_INVOCATION_JOB =
-		"bedrock:CreateModelInvocationJob";
+	static readonly CreateModelInvocationJob = "bedrock:CreateModelInvocationJob";
 	/** [Write] bedrock:CreatePrompt */
-	static readonly CREATE_PROMPT = "bedrock:CreatePrompt";
+	static readonly CreatePrompt = "bedrock:CreatePrompt";
 	/** [Write] bedrock:CreatePromptRouter */
-	static readonly CREATE_PROMPT_ROUTER = "bedrock:CreatePromptRouter";
+	static readonly CreatePromptRouter = "bedrock:CreatePromptRouter";
 	/** [Write] bedrock:CreatePromptVersion */
-	static readonly CREATE_PROMPT_VERSION = "bedrock:CreatePromptVersion";
+	static readonly CreatePromptVersion = "bedrock:CreatePromptVersion";
 	/** [Write] bedrock:CreateProvisionedModelThroughput */
-	static readonly CREATE_PROVISIONED_MODEL_THROUGHPUT =
+	static readonly CreateProvisionedModelThroughput =
 		"bedrock:CreateProvisionedModelThroughput";
 	/** [Write] bedrock:CreateSession */
-	static readonly CREATE_SESSION = "bedrock:CreateSession";
+	static readonly CreateSession = "bedrock:CreateSession";
 	/** [Write] bedrock:DeleteAgent */
-	static readonly DELETE_AGENT = "bedrock:DeleteAgent";
+	static readonly DeleteAgent = "bedrock:DeleteAgent";
 	/** [Write] bedrock:DeleteAgentActionGroup */
-	static readonly DELETE_AGENT_ACTION_GROUP = "bedrock:DeleteAgentActionGroup";
+	static readonly DeleteAgentActionGroup = "bedrock:DeleteAgentActionGroup";
 	/** [Write] bedrock:DeleteAgentAlias */
-	static readonly DELETE_AGENT_ALIAS = "bedrock:DeleteAgentAlias";
+	static readonly DeleteAgentAlias = "bedrock:DeleteAgentAlias";
 	/** [Write] bedrock:DeleteAgentMemory */
-	static readonly DELETE_AGENT_MEMORY = "bedrock:DeleteAgentMemory";
+	static readonly DeleteAgentMemory = "bedrock:DeleteAgentMemory";
 	/** [Write] bedrock:DeleteAgentVersion */
-	static readonly DELETE_AGENT_VERSION = "bedrock:DeleteAgentVersion";
+	static readonly DeleteAgentVersion = "bedrock:DeleteAgentVersion";
 	/** [Write] bedrock:DeleteAutomatedReasoningPolicy */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY =
+	static readonly DeleteAutomatedReasoningPolicy =
 		"bedrock:DeleteAutomatedReasoningPolicy";
 	/** [Write] bedrock:DeleteAutomatedReasoningPolicyBuildWorkflow */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW =
+	static readonly DeleteAutomatedReasoningPolicyBuildWorkflow =
 		"bedrock:DeleteAutomatedReasoningPolicyBuildWorkflow";
 	/** [Write] bedrock:DeleteAutomatedReasoningPolicyTestCase */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY_TEST_CASE =
+	static readonly DeleteAutomatedReasoningPolicyTestCase =
 		"bedrock:DeleteAutomatedReasoningPolicyTestCase";
 	/** [Write] bedrock:DeleteBlueprint */
-	static readonly DELETE_BLUEPRINT = "bedrock:DeleteBlueprint";
+	static readonly DeleteBlueprint = "bedrock:DeleteBlueprint";
 	/** [Write] bedrock:DeleteCustomModel */
-	static readonly DELETE_CUSTOM_MODEL = "bedrock:DeleteCustomModel";
+	static readonly DeleteCustomModel = "bedrock:DeleteCustomModel";
 	/** [Write] bedrock:DeleteCustomModelDeployment */
-	static readonly DELETE_CUSTOM_MODEL_DEPLOYMENT =
+	static readonly DeleteCustomModelDeployment =
 		"bedrock:DeleteCustomModelDeployment";
 	/** [Write] bedrock:DeleteDataAutomationLibrary */
-	static readonly DELETE_DATA_AUTOMATION_LIBRARY =
+	static readonly DeleteDataAutomationLibrary =
 		"bedrock:DeleteDataAutomationLibrary";
 	/** [Write] bedrock:DeleteDataAutomationProject */
-	static readonly DELETE_DATA_AUTOMATION_PROJECT =
+	static readonly DeleteDataAutomationProject =
 		"bedrock:DeleteDataAutomationProject";
 	/** [Write] bedrock:DeleteDataSource */
-	static readonly DELETE_DATA_SOURCE = "bedrock:DeleteDataSource";
+	static readonly DeleteDataSource = "bedrock:DeleteDataSource";
 	/** [Write] bedrock:DeleteEnforcedGuardrailConfiguration */
-	static readonly DELETE_ENFORCED_GUARDRAIL_CONFIGURATION =
+	static readonly DeleteEnforcedGuardrailConfiguration =
 		"bedrock:DeleteEnforcedGuardrailConfiguration";
 	/** [Write] bedrock:DeleteFlow */
-	static readonly DELETE_FLOW = "bedrock:DeleteFlow";
+	static readonly DeleteFlow = "bedrock:DeleteFlow";
 	/** [Write] bedrock:DeleteFlowAlias */
-	static readonly DELETE_FLOW_ALIAS = "bedrock:DeleteFlowAlias";
+	static readonly DeleteFlowAlias = "bedrock:DeleteFlowAlias";
 	/** [Write] bedrock:DeleteFlowVersion */
-	static readonly DELETE_FLOW_VERSION = "bedrock:DeleteFlowVersion";
+	static readonly DeleteFlowVersion = "bedrock:DeleteFlowVersion";
 	/** [Write] bedrock:DeleteFoundationModelAgreement */
-	static readonly DELETE_FOUNDATION_MODEL_AGREEMENT =
+	static readonly DeleteFoundationModelAgreement =
 		"bedrock:DeleteFoundationModelAgreement";
 	/** [Write] bedrock:DeleteGuardrail */
-	static readonly DELETE_GUARDRAIL = "bedrock:DeleteGuardrail";
+	static readonly DeleteGuardrail = "bedrock:DeleteGuardrail";
 	/** [Write] bedrock:DeleteImportedModel */
-	static readonly DELETE_IMPORTED_MODEL = "bedrock:DeleteImportedModel";
+	static readonly DeleteImportedModel = "bedrock:DeleteImportedModel";
 	/** [Write] bedrock:DeleteInferenceProfile */
-	static readonly DELETE_INFERENCE_PROFILE = "bedrock:DeleteInferenceProfile";
+	static readonly DeleteInferenceProfile = "bedrock:DeleteInferenceProfile";
 	/** [Write] bedrock:DeleteKnowledgeBase */
-	static readonly DELETE_KNOWLEDGE_BASE = "bedrock:DeleteKnowledgeBase";
+	static readonly DeleteKnowledgeBase = "bedrock:DeleteKnowledgeBase";
 	/** [Write] bedrock:DeleteKnowledgeBaseDocuments */
-	static readonly DELETE_KNOWLEDGE_BASE_DOCUMENTS =
+	static readonly DeleteKnowledgeBaseDocuments =
 		"bedrock:DeleteKnowledgeBaseDocuments";
 	/** [Write] bedrock:DeleteMarketplaceModelAgreement */
-	static readonly DELETE_MARKETPLACE_MODEL_AGREEMENT =
+	static readonly DeleteMarketplaceModelAgreement =
 		"bedrock:DeleteMarketplaceModelAgreement";
 	/** [Write] bedrock:DeleteMarketplaceModelEndpoint */
-	static readonly DELETE_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly DeleteMarketplaceModelEndpoint =
 		"bedrock:DeleteMarketplaceModelEndpoint";
 	/** [Write] bedrock:DeleteModelInvocationLoggingConfiguration */
-	static readonly DELETE_MODEL_INVOCATION_LOGGING_CONFIGURATION =
+	static readonly DeleteModelInvocationLoggingConfiguration =
 		"bedrock:DeleteModelInvocationLoggingConfiguration";
 	/** [Write] bedrock:DeletePrompt */
-	static readonly DELETE_PROMPT = "bedrock:DeletePrompt";
+	static readonly DeletePrompt = "bedrock:DeletePrompt";
 	/** [Write] bedrock:DeletePromptRouter */
-	static readonly DELETE_PROMPT_ROUTER = "bedrock:DeletePromptRouter";
+	static readonly DeletePromptRouter = "bedrock:DeletePromptRouter";
 	/** [Write] bedrock:DeleteProvisionedModelThroughput */
-	static readonly DELETE_PROVISIONED_MODEL_THROUGHPUT =
+	static readonly DeleteProvisionedModelThroughput =
 		"bedrock:DeleteProvisionedModelThroughput";
 	/** [Write] bedrock:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "bedrock:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "bedrock:DeleteResourcePolicy";
 	/** [Write] bedrock:DeleteSession */
-	static readonly DELETE_SESSION = "bedrock:DeleteSession";
+	static readonly DeleteSession = "bedrock:DeleteSession";
 	/** [Write] bedrock:DeregisterMarketplaceModelEndpoint */
-	static readonly DEREGISTER_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly DeregisterMarketplaceModelEndpoint =
 		"bedrock:DeregisterMarketplaceModelEndpoint";
 	/** [Read] bedrock:DetectGeneratedContent */
-	static readonly DETECT_GENERATED_CONTENT = "bedrock:DetectGeneratedContent";
+	static readonly DetectGeneratedContent = "bedrock:DetectGeneratedContent";
 	/** [Write] bedrock:DisassociateAgentCollaborator */
-	static readonly DISASSOCIATE_AGENT_COLLABORATOR =
+	static readonly DisassociateAgentCollaborator =
 		"bedrock:DisassociateAgentCollaborator";
 	/** [Write] bedrock:DisassociateAgentKnowledgeBase */
-	static readonly DISASSOCIATE_AGENT_KNOWLEDGE_BASE =
+	static readonly DisassociateAgentKnowledgeBase =
 		"bedrock:DisassociateAgentKnowledgeBase";
 	/** [Write] bedrock:EndSession */
-	static readonly END_SESSION = "bedrock:EndSession";
+	static readonly EndSession = "bedrock:EndSession";
 	/** [Read] bedrock:ExportAutomatedReasoningPolicyVersion */
-	static readonly EXPORT_AUTOMATED_REASONING_POLICY_VERSION =
+	static readonly ExportAutomatedReasoningPolicyVersion =
 		"bedrock:ExportAutomatedReasoningPolicyVersion";
 	/** [Read] bedrock:GenerateQuery */
-	static readonly GENERATE_QUERY = "bedrock:GenerateQuery";
+	static readonly GenerateQuery = "bedrock:GenerateQuery";
 	/** [Read] bedrock:GetAccountDataRetention */
-	static readonly GET_ACCOUNT_DATA_RETENTION =
+	static readonly actionGetAccountDataRetention =
 		"bedrock:GetAccountDataRetention";
 	/** [Read] bedrock:GetAdvancedPromptOptimizationJob */
-	static readonly GET_ADVANCED_PROMPT_OPTIMIZATION_JOB =
+	static readonly actionGetAdvancedPromptOptimizationJob =
 		"bedrock:GetAdvancedPromptOptimizationJob";
 	/** [Read] bedrock:GetAgent */
-	static readonly GET_AGENT = "bedrock:GetAgent";
+	static readonly actionGetAgent = "bedrock:GetAgent";
 	/** [Read] bedrock:GetAgentActionGroup */
-	static readonly GET_AGENT_ACTION_GROUP = "bedrock:GetAgentActionGroup";
+	static readonly actionGetAgentActionGroup = "bedrock:GetAgentActionGroup";
 	/** [Read] bedrock:GetAgentAlias */
-	static readonly GET_AGENT_ALIAS = "bedrock:GetAgentAlias";
+	static readonly actionGetAgentAlias = "bedrock:GetAgentAlias";
 	/** [Read] bedrock:GetAgentCollaborator */
-	static readonly GET_AGENT_COLLABORATOR = "bedrock:GetAgentCollaborator";
+	static readonly actionGetAgentCollaborator = "bedrock:GetAgentCollaborator";
 	/** [Read] bedrock:GetAgentKnowledgeBase */
-	static readonly GET_AGENT_KNOWLEDGE_BASE = "bedrock:GetAgentKnowledgeBase";
+	static readonly actionGetAgentKnowledgeBase = "bedrock:GetAgentKnowledgeBase";
 	/** [Read] bedrock:GetAgentMemory */
-	static readonly GET_AGENT_MEMORY = "bedrock:GetAgentMemory";
+	static readonly actionGetAgentMemory = "bedrock:GetAgentMemory";
 	/** [Read] bedrock:GetAgentVersion */
-	static readonly GET_AGENT_VERSION = "bedrock:GetAgentVersion";
+	static readonly actionGetAgentVersion = "bedrock:GetAgentVersion";
 	/** [Read] bedrock:GetAsyncInvoke */
-	static readonly GET_ASYNC_INVOKE = "bedrock:GetAsyncInvoke";
+	static readonly actionGetAsyncInvoke = "bedrock:GetAsyncInvoke";
 	/** [Read] bedrock:GetAutomatedReasoningPolicy */
-	static readonly GET_AUTOMATED_REASONING_POLICY =
+	static readonly actionGetAutomatedReasoningPolicy =
 		"bedrock:GetAutomatedReasoningPolicy";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyAnnotations */
-	static readonly GET_AUTOMATED_REASONING_POLICY_ANNOTATIONS =
+	static readonly actionGetAutomatedReasoningPolicyAnnotations =
 		"bedrock:GetAutomatedReasoningPolicyAnnotations";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyBuildWorkflow */
-	static readonly GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW =
+	static readonly actionGetAutomatedReasoningPolicyBuildWorkflow =
 		"bedrock:GetAutomatedReasoningPolicyBuildWorkflow";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyBuildWorkflowResultAssets */
-	static readonly GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW_RESULT_ASSETS =
+	static readonly actionGetAutomatedReasoningPolicyBuildWorkflowResultAssets =
 		"bedrock:GetAutomatedReasoningPolicyBuildWorkflowResultAssets";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyNextScenario */
-	static readonly GET_AUTOMATED_REASONING_POLICY_NEXT_SCENARIO =
+	static readonly actionGetAutomatedReasoningPolicyNextScenario =
 		"bedrock:GetAutomatedReasoningPolicyNextScenario";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyTestCase */
-	static readonly GET_AUTOMATED_REASONING_POLICY_TEST_CASE =
+	static readonly actionGetAutomatedReasoningPolicyTestCase =
 		"bedrock:GetAutomatedReasoningPolicyTestCase";
 	/** [Read] bedrock:GetAutomatedReasoningPolicyTestResult */
-	static readonly GET_AUTOMATED_REASONING_POLICY_TEST_RESULT =
+	static readonly actionGetAutomatedReasoningPolicyTestResult =
 		"bedrock:GetAutomatedReasoningPolicyTestResult";
 	/** [Read] bedrock:GetBlueprint */
-	static readonly GET_BLUEPRINT = "bedrock:GetBlueprint";
+	static readonly actionGetBlueprint = "bedrock:GetBlueprint";
 	/** [Read] bedrock:GetBlueprintOptimizationStatus */
-	static readonly GET_BLUEPRINT_OPTIMIZATION_STATUS =
+	static readonly actionGetBlueprintOptimizationStatus =
 		"bedrock:GetBlueprintOptimizationStatus";
 	/** [Read] bedrock:GetBlueprintRecommendation */
-	static readonly GET_BLUEPRINT_RECOMMENDATION =
+	static readonly actionGetBlueprintRecommendation =
 		"bedrock:GetBlueprintRecommendation";
 	/** [Read] bedrock:GetCustomModel */
-	static readonly GET_CUSTOM_MODEL = "bedrock:GetCustomModel";
+	static readonly actionGetCustomModel = "bedrock:GetCustomModel";
 	/** [Read] bedrock:GetCustomModelDeployment */
-	static readonly GET_CUSTOM_MODEL_DEPLOYMENT =
+	static readonly actionGetCustomModelDeployment =
 		"bedrock:GetCustomModelDeployment";
 	/** [Read] bedrock:GetDataAutomationLibrary */
-	static readonly GET_DATA_AUTOMATION_LIBRARY =
+	static readonly actionGetDataAutomationLibrary =
 		"bedrock:GetDataAutomationLibrary";
 	/** [Read] bedrock:GetDataAutomationLibraryEntity */
-	static readonly GET_DATA_AUTOMATION_LIBRARY_ENTITY =
+	static readonly actionGetDataAutomationLibraryEntity =
 		"bedrock:GetDataAutomationLibraryEntity";
 	/** [Read] bedrock:GetDataAutomationLibraryIngestionJob */
-	static readonly GET_DATA_AUTOMATION_LIBRARY_INGESTION_JOB =
+	static readonly actionGetDataAutomationLibraryIngestionJob =
 		"bedrock:GetDataAutomationLibraryIngestionJob";
 	/** [Read] bedrock:GetDataAutomationProject */
-	static readonly GET_DATA_AUTOMATION_PROJECT =
+	static readonly actionGetDataAutomationProject =
 		"bedrock:GetDataAutomationProject";
 	/** [Read] bedrock:GetDataAutomationStatus */
-	static readonly GET_DATA_AUTOMATION_STATUS =
+	static readonly actionGetDataAutomationStatus =
 		"bedrock:GetDataAutomationStatus";
 	/** [Read] bedrock:GetDataSource */
-	static readonly GET_DATA_SOURCE = "bedrock:GetDataSource";
+	static readonly actionGetDataSource = "bedrock:GetDataSource";
 	/** [Read] bedrock:GetDocumentContent */
-	static readonly GET_DOCUMENT_CONTENT = "bedrock:GetDocumentContent";
+	static readonly actionGetDocumentContent = "bedrock:GetDocumentContent";
 	/** [Read] bedrock:GetEvaluationJob */
-	static readonly GET_EVALUATION_JOB = "bedrock:GetEvaluationJob";
+	static readonly actionGetEvaluationJob = "bedrock:GetEvaluationJob";
 	/** [Read] bedrock:GetExecutionFlowSnapshot */
-	static readonly GET_EXECUTION_FLOW_SNAPSHOT =
+	static readonly actionGetExecutionFlowSnapshot =
 		"bedrock:GetExecutionFlowSnapshot";
 	/** [Read] bedrock:GetFlow */
-	static readonly GET_FLOW = "bedrock:GetFlow";
+	static readonly actionGetFlow = "bedrock:GetFlow";
 	/** [Read] bedrock:GetFlowAlias */
-	static readonly GET_FLOW_ALIAS = "bedrock:GetFlowAlias";
+	static readonly actionGetFlowAlias = "bedrock:GetFlowAlias";
 	/** [Read] bedrock:GetFlowExecution */
-	static readonly GET_FLOW_EXECUTION = "bedrock:GetFlowExecution";
+	static readonly actionGetFlowExecution = "bedrock:GetFlowExecution";
 	/** [Read] bedrock:GetFlowVersion */
-	static readonly GET_FLOW_VERSION = "bedrock:GetFlowVersion";
+	static readonly actionGetFlowVersion = "bedrock:GetFlowVersion";
 	/** [Read] bedrock:GetFoundationModel */
-	static readonly GET_FOUNDATION_MODEL = "bedrock:GetFoundationModel";
+	static readonly actionGetFoundationModel = "bedrock:GetFoundationModel";
 	/** [Read] bedrock:GetFoundationModelAvailability */
-	static readonly GET_FOUNDATION_MODEL_AVAILABILITY =
+	static readonly actionGetFoundationModelAvailability =
 		"bedrock:GetFoundationModelAvailability";
 	/** [Read] bedrock:GetGuardrail */
-	static readonly GET_GUARDRAIL = "bedrock:GetGuardrail";
+	static readonly actionGetGuardrail = "bedrock:GetGuardrail";
 	/** [Read] bedrock:GetImportedModel */
-	static readonly GET_IMPORTED_MODEL = "bedrock:GetImportedModel";
+	static readonly actionGetImportedModel = "bedrock:GetImportedModel";
 	/** [Read] bedrock:GetInferenceProfile */
-	static readonly GET_INFERENCE_PROFILE = "bedrock:GetInferenceProfile";
+	static readonly actionGetInferenceProfile = "bedrock:GetInferenceProfile";
 	/** [Read] bedrock:GetIngestionJob */
-	static readonly GET_INGESTION_JOB = "bedrock:GetIngestionJob";
+	static readonly actionGetIngestionJob = "bedrock:GetIngestionJob";
 	/** [Read] bedrock:GetInvocationStep */
-	static readonly GET_INVOCATION_STEP = "bedrock:GetInvocationStep";
+	static readonly actionGetInvocationStep = "bedrock:GetInvocationStep";
 	/** [Read] bedrock:GetKnowledgeBase */
-	static readonly GET_KNOWLEDGE_BASE = "bedrock:GetKnowledgeBase";
+	static readonly actionGetKnowledgeBase = "bedrock:GetKnowledgeBase";
 	/** [Read] bedrock:GetKnowledgeBaseDocuments */
-	static readonly GET_KNOWLEDGE_BASE_DOCUMENTS =
+	static readonly actionGetKnowledgeBaseDocuments =
 		"bedrock:GetKnowledgeBaseDocuments";
 	/** [Read] bedrock:GetMarketplaceModelEndpoint */
-	static readonly GET_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly actionGetMarketplaceModelEndpoint =
 		"bedrock:GetMarketplaceModelEndpoint";
 	/** [Read] bedrock:GetModelCopyJob */
-	static readonly GET_MODEL_COPY_JOB = "bedrock:GetModelCopyJob";
+	static readonly actionGetModelCopyJob = "bedrock:GetModelCopyJob";
 	/** [Read] bedrock:GetModelCustomizationJob */
-	static readonly GET_MODEL_CUSTOMIZATION_JOB =
+	static readonly actionGetModelCustomizationJob =
 		"bedrock:GetModelCustomizationJob";
 	/** [Read] bedrock:GetModelEvaluationJob */
-	static readonly GET_MODEL_EVALUATION_JOB = "bedrock:GetModelEvaluationJob";
+	static readonly actionGetModelEvaluationJob = "bedrock:GetModelEvaluationJob";
 	/** [Read] bedrock:GetModelImportJob */
-	static readonly GET_MODEL_IMPORT_JOB = "bedrock:GetModelImportJob";
+	static readonly actionGetModelImportJob = "bedrock:GetModelImportJob";
 	/** [Read] bedrock:GetModelInvocationJob */
-	static readonly GET_MODEL_INVOCATION_JOB = "bedrock:GetModelInvocationJob";
+	static readonly actionGetModelInvocationJob = "bedrock:GetModelInvocationJob";
 	/** [Read] bedrock:GetModelInvocationLoggingConfiguration */
-	static readonly GET_MODEL_INVOCATION_LOGGING_CONFIGURATION =
+	static readonly actionGetModelInvocationLoggingConfiguration =
 		"bedrock:GetModelInvocationLoggingConfiguration";
 	/** [Read] bedrock:GetPrompt */
-	static readonly GET_PROMPT = "bedrock:GetPrompt";
+	static readonly actionGetPrompt = "bedrock:GetPrompt";
 	/** [Read] bedrock:GetPromptRouter */
-	static readonly GET_PROMPT_ROUTER = "bedrock:GetPromptRouter";
+	static readonly actionGetPromptRouter = "bedrock:GetPromptRouter";
 	/** [Read] bedrock:GetProvisionedModelThroughput */
-	static readonly GET_PROVISIONED_MODEL_THROUGHPUT =
+	static readonly actionGetProvisionedModelThroughput =
 		"bedrock:GetProvisionedModelThroughput";
 	/** [Read] bedrock:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "bedrock:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "bedrock:GetResourcePolicy";
 	/** [Read] bedrock:GetSession */
-	static readonly GET_SESSION = "bedrock:GetSession";
+	static readonly actionGetSession = "bedrock:GetSession";
 	/** [Read] bedrock:GetUseCaseForModelAccess */
-	static readonly GET_USE_CASE_FOR_MODEL_ACCESS =
+	static readonly actionGetUseCaseForModelAccess =
 		"bedrock:GetUseCaseForModelAccess";
 	/** [Write] bedrock:IngestKnowledgeBaseDocuments */
-	static readonly INGEST_KNOWLEDGE_BASE_DOCUMENTS =
+	static readonly IngestKnowledgeBaseDocuments =
 		"bedrock:IngestKnowledgeBaseDocuments";
 	/** [Read] bedrock:InvokeAgent */
-	static readonly INVOKE_AGENT = "bedrock:InvokeAgent";
+	static readonly InvokeAgent = "bedrock:InvokeAgent";
 	/** [Read] bedrock:InvokeAutomatedReasoningPolicy */
-	static readonly INVOKE_AUTOMATED_REASONING_POLICY =
+	static readonly InvokeAutomatedReasoningPolicy =
 		"bedrock:InvokeAutomatedReasoningPolicy";
 	/** [Write] bedrock:InvokeBlueprintOptimizationAsync */
-	static readonly INVOKE_BLUEPRINT_OPTIMIZATION_ASYNC =
+	static readonly InvokeBlueprintOptimizationAsync =
 		"bedrock:InvokeBlueprintOptimizationAsync";
 	/** [Write] bedrock:InvokeBlueprintRecommendationAsync */
-	static readonly INVOKE_BLUEPRINT_RECOMMENDATION_ASYNC =
+	static readonly InvokeBlueprintRecommendationAsync =
 		"bedrock:InvokeBlueprintRecommendationAsync";
 	/** [Write] bedrock:InvokeBuilder */
-	static readonly INVOKE_BUILDER = "bedrock:InvokeBuilder";
+	static readonly InvokeBuilder = "bedrock:InvokeBuilder";
 	/** [Write] bedrock:InvokeDataAutomation */
-	static readonly INVOKE_DATA_AUTOMATION = "bedrock:InvokeDataAutomation";
+	static readonly InvokeDataAutomation = "bedrock:InvokeDataAutomation";
 	/** [Write] bedrock:InvokeDataAutomationAsync */
-	static readonly INVOKE_DATA_AUTOMATION_ASYNC =
+	static readonly InvokeDataAutomationAsync =
 		"bedrock:InvokeDataAutomationAsync";
 	/** [Write] bedrock:InvokeDataAutomationLibraryIngestionJob */
-	static readonly INVOKE_DATA_AUTOMATION_LIBRARY_INGESTION_JOB =
+	static readonly InvokeDataAutomationLibraryIngestionJob =
 		"bedrock:InvokeDataAutomationLibraryIngestionJob";
 	/** [Read] bedrock:InvokeFlow */
-	static readonly INVOKE_FLOW = "bedrock:InvokeFlow";
+	static readonly InvokeFlow = "bedrock:InvokeFlow";
 	/** [Read] bedrock:InvokeGuardrailChecks */
-	static readonly INVOKE_GUARDRAIL_CHECKS = "bedrock:InvokeGuardrailChecks";
+	static readonly InvokeGuardrailChecks = "bedrock:InvokeGuardrailChecks";
 	/** [Read] bedrock:InvokeInlineAgent */
-	static readonly INVOKE_INLINE_AGENT = "bedrock:InvokeInlineAgent";
+	static readonly InvokeInlineAgent = "bedrock:InvokeInlineAgent";
 	/** [Read] bedrock:InvokeModel */
-	static readonly INVOKE_MODEL = "bedrock:InvokeModel";
+	static readonly InvokeModel = "bedrock:InvokeModel";
 	/** [Read] bedrock:InvokeModelWithResponseStream */
-	static readonly INVOKE_MODEL_WITH_RESPONSE_STREAM =
+	static readonly InvokeModelWithResponseStream =
 		"bedrock:InvokeModelWithResponseStream";
 	/** [Read] bedrock:InvokeTool */
-	static readonly INVOKE_TOOL = "bedrock:InvokeTool";
+	static readonly InvokeTool = "bedrock:InvokeTool";
 	/** [List] bedrock:ListAdvancedPromptOptimizationJobs */
-	static readonly LIST_ADVANCED_PROMPT_OPTIMIZATION_JOBS =
+	static readonly ListAdvancedPromptOptimizationJobs =
 		"bedrock:ListAdvancedPromptOptimizationJobs";
 	/** [List] bedrock:ListAgentActionGroups */
-	static readonly LIST_AGENT_ACTION_GROUPS = "bedrock:ListAgentActionGroups";
+	static readonly ListAgentActionGroups = "bedrock:ListAgentActionGroups";
 	/** [List] bedrock:ListAgentAliases */
-	static readonly LIST_AGENT_ALIASES = "bedrock:ListAgentAliases";
+	static readonly ListAgentAliases = "bedrock:ListAgentAliases";
 	/** [List] bedrock:ListAgentCollaborators */
-	static readonly LIST_AGENT_COLLABORATORS = "bedrock:ListAgentCollaborators";
+	static readonly ListAgentCollaborators = "bedrock:ListAgentCollaborators";
 	/** [List] bedrock:ListAgentKnowledgeBases */
-	static readonly LIST_AGENT_KNOWLEDGE_BASES =
-		"bedrock:ListAgentKnowledgeBases";
+	static readonly ListAgentKnowledgeBases = "bedrock:ListAgentKnowledgeBases";
 	/** [List] bedrock:ListAgentVersions */
-	static readonly LIST_AGENT_VERSIONS = "bedrock:ListAgentVersions";
+	static readonly ListAgentVersions = "bedrock:ListAgentVersions";
 	/** [List] bedrock:ListAgents */
-	static readonly LIST_AGENTS = "bedrock:ListAgents";
+	static readonly ListAgents = "bedrock:ListAgents";
 	/** [List] bedrock:ListAsyncInvokes */
-	static readonly LIST_ASYNC_INVOKES = "bedrock:ListAsyncInvokes";
+	static readonly ListAsyncInvokes = "bedrock:ListAsyncInvokes";
 	/** [List] bedrock:ListAutomatedReasoningPolicies */
-	static readonly LIST_AUTOMATED_REASONING_POLICIES =
+	static readonly ListAutomatedReasoningPolicies =
 		"bedrock:ListAutomatedReasoningPolicies";
 	/** [List] bedrock:ListAutomatedReasoningPolicyBuildWorkflows */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOWS =
+	static readonly ListAutomatedReasoningPolicyBuildWorkflows =
 		"bedrock:ListAutomatedReasoningPolicyBuildWorkflows";
 	/** [List] bedrock:ListAutomatedReasoningPolicyTestCases */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_TEST_CASES =
+	static readonly ListAutomatedReasoningPolicyTestCases =
 		"bedrock:ListAutomatedReasoningPolicyTestCases";
 	/** [List] bedrock:ListAutomatedReasoningPolicyTestResults */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_TEST_RESULTS =
+	static readonly ListAutomatedReasoningPolicyTestResults =
 		"bedrock:ListAutomatedReasoningPolicyTestResults";
 	/** [List] bedrock:ListBlueprints */
-	static readonly LIST_BLUEPRINTS = "bedrock:ListBlueprints";
+	static readonly ListBlueprints = "bedrock:ListBlueprints";
 	/** [List] bedrock:ListCustomModelDeployments */
-	static readonly LIST_CUSTOM_MODEL_DEPLOYMENTS =
+	static readonly ListCustomModelDeployments =
 		"bedrock:ListCustomModelDeployments";
 	/** [List] bedrock:ListCustomModels */
-	static readonly LIST_CUSTOM_MODELS = "bedrock:ListCustomModels";
+	static readonly ListCustomModels = "bedrock:ListCustomModels";
 	/** [List] bedrock:ListDataAutomationLibraries */
-	static readonly LIST_DATA_AUTOMATION_LIBRARIES =
+	static readonly ListDataAutomationLibraries =
 		"bedrock:ListDataAutomationLibraries";
 	/** [List] bedrock:ListDataAutomationLibraryEntities */
-	static readonly LIST_DATA_AUTOMATION_LIBRARY_ENTITIES =
+	static readonly ListDataAutomationLibraryEntities =
 		"bedrock:ListDataAutomationLibraryEntities";
 	/** [List] bedrock:ListDataAutomationLibraryIngestionJobs */
-	static readonly LIST_DATA_AUTOMATION_LIBRARY_INGESTION_JOBS =
+	static readonly ListDataAutomationLibraryIngestionJobs =
 		"bedrock:ListDataAutomationLibraryIngestionJobs";
 	/** [List] bedrock:ListDataAutomationProjects */
-	static readonly LIST_DATA_AUTOMATION_PROJECTS =
+	static readonly ListDataAutomationProjects =
 		"bedrock:ListDataAutomationProjects";
 	/** [List] bedrock:ListDataSources */
-	static readonly LIST_DATA_SOURCES = "bedrock:ListDataSources";
+	static readonly ListDataSources = "bedrock:ListDataSources";
 	/** [List] bedrock:ListEnforcedGuardrailsConfiguration */
-	static readonly LIST_ENFORCED_GUARDRAILS_CONFIGURATION =
+	static readonly ListEnforcedGuardrailsConfiguration =
 		"bedrock:ListEnforcedGuardrailsConfiguration";
 	/** [List] bedrock:ListEvaluationJobs */
-	static readonly LIST_EVALUATION_JOBS = "bedrock:ListEvaluationJobs";
+	static readonly ListEvaluationJobs = "bedrock:ListEvaluationJobs";
 	/** [List] bedrock:ListFlowAliases */
-	static readonly LIST_FLOW_ALIASES = "bedrock:ListFlowAliases";
+	static readonly ListFlowAliases = "bedrock:ListFlowAliases";
 	/** [List] bedrock:ListFlowExecutionEvents */
-	static readonly LIST_FLOW_EXECUTION_EVENTS =
-		"bedrock:ListFlowExecutionEvents";
+	static readonly ListFlowExecutionEvents = "bedrock:ListFlowExecutionEvents";
 	/** [List] bedrock:ListFlowExecutions */
-	static readonly LIST_FLOW_EXECUTIONS = "bedrock:ListFlowExecutions";
+	static readonly ListFlowExecutions = "bedrock:ListFlowExecutions";
 	/** [List] bedrock:ListFlowVersions */
-	static readonly LIST_FLOW_VERSIONS = "bedrock:ListFlowVersions";
+	static readonly ListFlowVersions = "bedrock:ListFlowVersions";
 	/** [List] bedrock:ListFlows */
-	static readonly LIST_FLOWS = "bedrock:ListFlows";
+	static readonly ListFlows = "bedrock:ListFlows";
 	/** [List] bedrock:ListFoundationModelAgreementOffers */
-	static readonly LIST_FOUNDATION_MODEL_AGREEMENT_OFFERS =
+	static readonly ListFoundationModelAgreementOffers =
 		"bedrock:ListFoundationModelAgreementOffers";
 	/** [List] bedrock:ListFoundationModels */
-	static readonly LIST_FOUNDATION_MODELS = "bedrock:ListFoundationModels";
+	static readonly ListFoundationModels = "bedrock:ListFoundationModels";
 	/** [List] bedrock:ListGuardrails */
-	static readonly LIST_GUARDRAILS = "bedrock:ListGuardrails";
+	static readonly ListGuardrails = "bedrock:ListGuardrails";
 	/** [List] bedrock:ListImportedModels */
-	static readonly LIST_IMPORTED_MODELS = "bedrock:ListImportedModels";
+	static readonly ListImportedModels = "bedrock:ListImportedModels";
 	/** [List] bedrock:ListInferenceProfiles */
-	static readonly LIST_INFERENCE_PROFILES = "bedrock:ListInferenceProfiles";
+	static readonly ListInferenceProfiles = "bedrock:ListInferenceProfiles";
 	/** [List] bedrock:ListIngestionJobs */
-	static readonly LIST_INGESTION_JOBS = "bedrock:ListIngestionJobs";
+	static readonly ListIngestionJobs = "bedrock:ListIngestionJobs";
 	/** [List] bedrock:ListInvocationSteps */
-	static readonly LIST_INVOCATION_STEPS = "bedrock:ListInvocationSteps";
+	static readonly ListInvocationSteps = "bedrock:ListInvocationSteps";
 	/** [List] bedrock:ListInvocations */
-	static readonly LIST_INVOCATIONS = "bedrock:ListInvocations";
+	static readonly ListInvocations = "bedrock:ListInvocations";
 	/** [List] bedrock:ListKnowledgeBaseDocuments */
-	static readonly LIST_KNOWLEDGE_BASE_DOCUMENTS =
+	static readonly ListKnowledgeBaseDocuments =
 		"bedrock:ListKnowledgeBaseDocuments";
 	/** [List] bedrock:ListKnowledgeBases */
-	static readonly LIST_KNOWLEDGE_BASES = "bedrock:ListKnowledgeBases";
+	static readonly ListKnowledgeBases = "bedrock:ListKnowledgeBases";
 	/** [Read] bedrock:ListMarketplaceModelEndpoints */
-	static readonly LIST_MARKETPLACE_MODEL_ENDPOINTS =
+	static readonly ListMarketplaceModelEndpoints =
 		"bedrock:ListMarketplaceModelEndpoints";
 	/** [List] bedrock:ListModelCopyJobs */
-	static readonly LIST_MODEL_COPY_JOBS = "bedrock:ListModelCopyJobs";
+	static readonly ListModelCopyJobs = "bedrock:ListModelCopyJobs";
 	/** [List] bedrock:ListModelCustomizationJobs */
-	static readonly LIST_MODEL_CUSTOMIZATION_JOBS =
+	static readonly ListModelCustomizationJobs =
 		"bedrock:ListModelCustomizationJobs";
 	/** [List] bedrock:ListModelEvaluationJobs */
-	static readonly LIST_MODEL_EVALUATION_JOBS =
-		"bedrock:ListModelEvaluationJobs";
+	static readonly ListModelEvaluationJobs = "bedrock:ListModelEvaluationJobs";
 	/** [List] bedrock:ListModelImportJobs */
-	static readonly LIST_MODEL_IMPORT_JOBS = "bedrock:ListModelImportJobs";
+	static readonly ListModelImportJobs = "bedrock:ListModelImportJobs";
 	/** [List] bedrock:ListModelInvocationJobs */
-	static readonly LIST_MODEL_INVOCATION_JOBS =
-		"bedrock:ListModelInvocationJobs";
+	static readonly ListModelInvocationJobs = "bedrock:ListModelInvocationJobs";
 	/** [List] bedrock:ListPromptRouters */
-	static readonly LIST_PROMPT_ROUTERS = "bedrock:ListPromptRouters";
+	static readonly ListPromptRouters = "bedrock:ListPromptRouters";
 	/** [List] bedrock:ListPrompts */
-	static readonly LIST_PROMPTS = "bedrock:ListPrompts";
+	static readonly ListPrompts = "bedrock:ListPrompts";
 	/** [List] bedrock:ListProvisionedModelThroughputs */
-	static readonly LIST_PROVISIONED_MODEL_THROUGHPUTS =
+	static readonly ListProvisionedModelThroughputs =
 		"bedrock:ListProvisionedModelThroughputs";
 	/** [List] bedrock:ListSessions */
-	static readonly LIST_SESSIONS = "bedrock:ListSessions";
+	static readonly ListSessions = "bedrock:ListSessions";
 	/** [Read] bedrock:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "bedrock:ListTagsForResource";
+	static readonly ListTagsForResource = "bedrock:ListTagsForResource";
 	/** [Read] bedrock:OptimizePrompt */
-	static readonly OPTIMIZE_PROMPT = "bedrock:OptimizePrompt";
+	static readonly OptimizePrompt = "bedrock:OptimizePrompt";
 	/** [Write] bedrock:PrepareAgent */
-	static readonly PREPARE_AGENT = "bedrock:PrepareAgent";
+	static readonly PrepareAgent = "bedrock:PrepareAgent";
 	/** [Write] bedrock:PrepareFlow */
-	static readonly PREPARE_FLOW = "bedrock:PrepareFlow";
+	static readonly PrepareFlow = "bedrock:PrepareFlow";
 	/** [Write] bedrock:PutAccountDataRetention */
-	static readonly PUT_ACCOUNT_DATA_RETENTION =
-		"bedrock:PutAccountDataRetention";
+	static readonly PutAccountDataRetention = "bedrock:PutAccountDataRetention";
 	/** [Write] bedrock:PutEnforcedGuardrailConfiguration */
-	static readonly PUT_ENFORCED_GUARDRAIL_CONFIGURATION =
+	static readonly PutEnforcedGuardrailConfiguration =
 		"bedrock:PutEnforcedGuardrailConfiguration";
 	/** [Write] bedrock:PutFoundationModelEntitlement */
-	static readonly PUT_FOUNDATION_MODEL_ENTITLEMENT =
+	static readonly PutFoundationModelEntitlement =
 		"bedrock:PutFoundationModelEntitlement";
 	/** [Write] bedrock:PutInvocationStep */
-	static readonly PUT_INVOCATION_STEP = "bedrock:PutInvocationStep";
+	static readonly PutInvocationStep = "bedrock:PutInvocationStep";
 	/** [Write] bedrock:PutModelInvocationLoggingConfiguration */
-	static readonly PUT_MODEL_INVOCATION_LOGGING_CONFIGURATION =
+	static readonly PutModelInvocationLoggingConfiguration =
 		"bedrock:PutModelInvocationLoggingConfiguration";
 	/** [Write] bedrock:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "bedrock:PutResourcePolicy";
+	static readonly PutResourcePolicy = "bedrock:PutResourcePolicy";
 	/** [Write] bedrock:PutUseCaseForModelAccess */
-	static readonly PUT_USE_CASE_FOR_MODEL_ACCESS =
-		"bedrock:PutUseCaseForModelAccess";
+	static readonly PutUseCaseForModelAccess = "bedrock:PutUseCaseForModelAccess";
 	/** [Write] bedrock:RegisterMarketplaceModelEndpoint */
-	static readonly REGISTER_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly RegisterMarketplaceModelEndpoint =
 		"bedrock:RegisterMarketplaceModelEndpoint";
 	/** [Read] bedrock:RenderPrompt */
-	static readonly RENDER_PROMPT = "bedrock:RenderPrompt";
+	static readonly RenderPrompt = "bedrock:RenderPrompt";
 	/** [Write] bedrock:Rerank */
-	static readonly RERANK = "bedrock:Rerank";
+	static readonly Rerank = "bedrock:Rerank";
 	/** [Read] bedrock:Retrieve */
-	static readonly RETRIEVE = "bedrock:Retrieve";
+	static readonly Retrieve = "bedrock:Retrieve";
 	/** [Write] bedrock:RetrieveAndGenerate */
-	static readonly RETRIEVE_AND_GENERATE = "bedrock:RetrieveAndGenerate";
+	static readonly RetrieveAndGenerate = "bedrock:RetrieveAndGenerate";
 	/** [Write] bedrock:StartAutomatedReasoningPolicyBuildWorkflow */
-	static readonly START_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW =
+	static readonly StartAutomatedReasoningPolicyBuildWorkflow =
 		"bedrock:StartAutomatedReasoningPolicyBuildWorkflow";
 	/** [Write] bedrock:StartAutomatedReasoningPolicyTestWorkflow */
-	static readonly START_AUTOMATED_REASONING_POLICY_TEST_WORKFLOW =
+	static readonly StartAutomatedReasoningPolicyTestWorkflow =
 		"bedrock:StartAutomatedReasoningPolicyTestWorkflow";
 	/** [Write] bedrock:StartFlowExecution */
-	static readonly START_FLOW_EXECUTION = "bedrock:StartFlowExecution";
+	static readonly StartFlowExecution = "bedrock:StartFlowExecution";
 	/** [Write] bedrock:StartIngestionJob */
-	static readonly START_INGESTION_JOB = "bedrock:StartIngestionJob";
+	static readonly StartIngestionJob = "bedrock:StartIngestionJob";
 	/** [Write] bedrock:StopAdvancedPromptOptimizationJob */
-	static readonly STOP_ADVANCED_PROMPT_OPTIMIZATION_JOB =
+	static readonly StopAdvancedPromptOptimizationJob =
 		"bedrock:StopAdvancedPromptOptimizationJob";
 	/** [Write] bedrock:StopEvaluationJob */
-	static readonly STOP_EVALUATION_JOB = "bedrock:StopEvaluationJob";
+	static readonly StopEvaluationJob = "bedrock:StopEvaluationJob";
 	/** [Write] bedrock:StopFlowExecution */
-	static readonly STOP_FLOW_EXECUTION = "bedrock:StopFlowExecution";
+	static readonly StopFlowExecution = "bedrock:StopFlowExecution";
 	/** [Write] bedrock:StopIngestionJob */
-	static readonly STOP_INGESTION_JOB = "bedrock:StopIngestionJob";
+	static readonly StopIngestionJob = "bedrock:StopIngestionJob";
 	/** [Write] bedrock:StopModelCustomizationJob */
-	static readonly STOP_MODEL_CUSTOMIZATION_JOB =
+	static readonly StopModelCustomizationJob =
 		"bedrock:StopModelCustomizationJob";
 	/** [Write] bedrock:StopModelInvocationJob */
-	static readonly STOP_MODEL_INVOCATION_JOB = "bedrock:StopModelInvocationJob";
+	static readonly StopModelInvocationJob = "bedrock:StopModelInvocationJob";
 	/** [Tagging] bedrock:TagResource */
-	static readonly TAG_RESOURCE = "bedrock:TagResource";
+	static readonly TagResource = "bedrock:TagResource";
 	/** [Tagging] bedrock:UntagResource */
-	static readonly UNTAG_RESOURCE = "bedrock:UntagResource";
+	static readonly UntagResource = "bedrock:UntagResource";
 	/** [Write] bedrock:UpdateAgent */
-	static readonly UPDATE_AGENT = "bedrock:UpdateAgent";
+	static readonly UpdateAgent = "bedrock:UpdateAgent";
 	/** [Write] bedrock:UpdateAgentActionGroup */
-	static readonly UPDATE_AGENT_ACTION_GROUP = "bedrock:UpdateAgentActionGroup";
+	static readonly UpdateAgentActionGroup = "bedrock:UpdateAgentActionGroup";
 	/** [Write] bedrock:UpdateAgentAlias */
-	static readonly UPDATE_AGENT_ALIAS = "bedrock:UpdateAgentAlias";
+	static readonly UpdateAgentAlias = "bedrock:UpdateAgentAlias";
 	/** [Write] bedrock:UpdateAgentCollaborator */
-	static readonly UPDATE_AGENT_COLLABORATOR = "bedrock:UpdateAgentCollaborator";
+	static readonly UpdateAgentCollaborator = "bedrock:UpdateAgentCollaborator";
 	/** [Write] bedrock:UpdateAgentKnowledgeBase */
-	static readonly UPDATE_AGENT_KNOWLEDGE_BASE =
-		"bedrock:UpdateAgentKnowledgeBase";
+	static readonly UpdateAgentKnowledgeBase = "bedrock:UpdateAgentKnowledgeBase";
 	/** [Write] bedrock:UpdateAutomatedReasoningPolicy */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY =
+	static readonly UpdateAutomatedReasoningPolicy =
 		"bedrock:UpdateAutomatedReasoningPolicy";
 	/** [Write] bedrock:UpdateAutomatedReasoningPolicyAnnotations */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY_ANNOTATIONS =
+	static readonly UpdateAutomatedReasoningPolicyAnnotations =
 		"bedrock:UpdateAutomatedReasoningPolicyAnnotations";
 	/** [Write] bedrock:UpdateAutomatedReasoningPolicyTestCase */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY_TEST_CASE =
+	static readonly UpdateAutomatedReasoningPolicyTestCase =
 		"bedrock:UpdateAutomatedReasoningPolicyTestCase";
 	/** [Write] bedrock:UpdateBlueprint */
-	static readonly UPDATE_BLUEPRINT = "bedrock:UpdateBlueprint";
+	static readonly UpdateBlueprint = "bedrock:UpdateBlueprint";
 	/** [Write] bedrock:UpdateCustomModelDeployment */
-	static readonly UPDATE_CUSTOM_MODEL_DEPLOYMENT =
+	static readonly UpdateCustomModelDeployment =
 		"bedrock:UpdateCustomModelDeployment";
 	/** [Write] bedrock:UpdateDataAutomationLibrary */
-	static readonly UPDATE_DATA_AUTOMATION_LIBRARY =
+	static readonly UpdateDataAutomationLibrary =
 		"bedrock:UpdateDataAutomationLibrary";
 	/** [Write] bedrock:UpdateDataAutomationProject */
-	static readonly UPDATE_DATA_AUTOMATION_PROJECT =
+	static readonly UpdateDataAutomationProject =
 		"bedrock:UpdateDataAutomationProject";
 	/** [Write] bedrock:UpdateDataSource */
-	static readonly UPDATE_DATA_SOURCE = "bedrock:UpdateDataSource";
+	static readonly UpdateDataSource = "bedrock:UpdateDataSource";
 	/** [Write] bedrock:UpdateFlow */
-	static readonly UPDATE_FLOW = "bedrock:UpdateFlow";
+	static readonly UpdateFlow = "bedrock:UpdateFlow";
 	/** [Write] bedrock:UpdateFlowAlias */
-	static readonly UPDATE_FLOW_ALIAS = "bedrock:UpdateFlowAlias";
+	static readonly UpdateFlowAlias = "bedrock:UpdateFlowAlias";
 	/** [Write] bedrock:UpdateGuardrail */
-	static readonly UPDATE_GUARDRAIL = "bedrock:UpdateGuardrail";
+	static readonly UpdateGuardrail = "bedrock:UpdateGuardrail";
 	/** [Write] bedrock:UpdateKnowledgeBase */
-	static readonly UPDATE_KNOWLEDGE_BASE = "bedrock:UpdateKnowledgeBase";
+	static readonly UpdateKnowledgeBase = "bedrock:UpdateKnowledgeBase";
 	/** [Write] bedrock:UpdateMarketplaceModelEndpoint */
-	static readonly UPDATE_MARKETPLACE_MODEL_ENDPOINT =
+	static readonly UpdateMarketplaceModelEndpoint =
 		"bedrock:UpdateMarketplaceModelEndpoint";
 	/** [Write] bedrock:UpdatePrompt */
-	static readonly UPDATE_PROMPT = "bedrock:UpdatePrompt";
+	static readonly UpdatePrompt = "bedrock:UpdatePrompt";
 	/** [Write] bedrock:UpdateProvisionedModelThroughput */
-	static readonly UPDATE_PROVISIONED_MODEL_THROUGHPUT =
+	static readonly UpdateProvisionedModelThroughput =
 		"bedrock:UpdateProvisionedModelThroughput";
 	/** [Write] bedrock:UpdateSession */
-	static readonly UPDATE_SESSION = "bedrock:UpdateSession";
+	static readonly UpdateSession = "bedrock:UpdateSession";
 	/** [Read] bedrock:ValidateFlowDefinition */
-	static readonly VALIDATE_FLOW_DEFINITION = "bedrock:ValidateFlowDefinition";
+	static readonly ValidateFlowDefinition = "bedrock:ValidateFlowDefinition";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BedrockActions.AGENTIC_RETRIEVE_STREAM,
-		BedrockActions.APPLY_GUARDRAIL,
-		BedrockActions.CALL_WITH_BEARER_TOKEN,
-		BedrockActions.COUNT_TOKENS,
-		BedrockActions.DETECT_GENERATED_CONTENT,
-		BedrockActions.EXPORT_AUTOMATED_REASONING_POLICY_VERSION,
-		BedrockActions.GENERATE_QUERY,
-		BedrockActions.GET_ACCOUNT_DATA_RETENTION,
-		BedrockActions.GET_ADVANCED_PROMPT_OPTIMIZATION_JOB,
-		BedrockActions.GET_AGENT,
-		BedrockActions.GET_AGENT_ACTION_GROUP,
-		BedrockActions.GET_AGENT_ALIAS,
-		BedrockActions.GET_AGENT_COLLABORATOR,
-		BedrockActions.GET_AGENT_KNOWLEDGE_BASE,
-		BedrockActions.GET_AGENT_MEMORY,
-		BedrockActions.GET_AGENT_VERSION,
-		BedrockActions.GET_ASYNC_INVOKE,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_ANNOTATIONS,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW_RESULT_ASSETS,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_NEXT_SCENARIO,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_TEST_CASE,
-		BedrockActions.GET_AUTOMATED_REASONING_POLICY_TEST_RESULT,
-		BedrockActions.GET_BLUEPRINT,
-		BedrockActions.GET_BLUEPRINT_OPTIMIZATION_STATUS,
-		BedrockActions.GET_BLUEPRINT_RECOMMENDATION,
-		BedrockActions.GET_CUSTOM_MODEL,
-		BedrockActions.GET_CUSTOM_MODEL_DEPLOYMENT,
-		BedrockActions.GET_DATA_AUTOMATION_LIBRARY,
-		BedrockActions.GET_DATA_AUTOMATION_LIBRARY_ENTITY,
-		BedrockActions.GET_DATA_AUTOMATION_LIBRARY_INGESTION_JOB,
-		BedrockActions.GET_DATA_AUTOMATION_PROJECT,
-		BedrockActions.GET_DATA_AUTOMATION_STATUS,
-		BedrockActions.GET_DATA_SOURCE,
-		BedrockActions.GET_DOCUMENT_CONTENT,
-		BedrockActions.GET_EVALUATION_JOB,
-		BedrockActions.GET_EXECUTION_FLOW_SNAPSHOT,
-		BedrockActions.GET_FLOW,
-		BedrockActions.GET_FLOW_ALIAS,
-		BedrockActions.GET_FLOW_EXECUTION,
-		BedrockActions.GET_FLOW_VERSION,
-		BedrockActions.GET_FOUNDATION_MODEL,
-		BedrockActions.GET_FOUNDATION_MODEL_AVAILABILITY,
-		BedrockActions.GET_GUARDRAIL,
-		BedrockActions.GET_IMPORTED_MODEL,
-		BedrockActions.GET_INFERENCE_PROFILE,
-		BedrockActions.GET_INGESTION_JOB,
-		BedrockActions.GET_INVOCATION_STEP,
-		BedrockActions.GET_KNOWLEDGE_BASE,
-		BedrockActions.GET_KNOWLEDGE_BASE_DOCUMENTS,
-		BedrockActions.GET_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.GET_MODEL_COPY_JOB,
-		BedrockActions.GET_MODEL_CUSTOMIZATION_JOB,
-		BedrockActions.GET_MODEL_EVALUATION_JOB,
-		BedrockActions.GET_MODEL_IMPORT_JOB,
-		BedrockActions.GET_MODEL_INVOCATION_JOB,
-		BedrockActions.GET_MODEL_INVOCATION_LOGGING_CONFIGURATION,
-		BedrockActions.GET_PROMPT,
-		BedrockActions.GET_PROMPT_ROUTER,
-		BedrockActions.GET_PROVISIONED_MODEL_THROUGHPUT,
-		BedrockActions.GET_RESOURCE_POLICY,
-		BedrockActions.GET_SESSION,
-		BedrockActions.GET_USE_CASE_FOR_MODEL_ACCESS,
-		BedrockActions.INVOKE_AGENT,
-		BedrockActions.INVOKE_AUTOMATED_REASONING_POLICY,
-		BedrockActions.INVOKE_FLOW,
-		BedrockActions.INVOKE_GUARDRAIL_CHECKS,
-		BedrockActions.INVOKE_INLINE_AGENT,
-		BedrockActions.INVOKE_MODEL,
-		BedrockActions.INVOKE_MODEL_WITH_RESPONSE_STREAM,
-		BedrockActions.INVOKE_TOOL,
-		BedrockActions.LIST_MARKETPLACE_MODEL_ENDPOINTS,
-		BedrockActions.LIST_TAGS_FOR_RESOURCE,
-		BedrockActions.OPTIMIZE_PROMPT,
-		BedrockActions.RENDER_PROMPT,
-		BedrockActions.RETRIEVE,
-		BedrockActions.VALIDATE_FLOW_DEFINITION,
+	static readonly AllReadActions: string[] = [
+		BedrockActions.AgenticRetrieveStream,
+		BedrockActions.ApplyGuardrail,
+		BedrockActions.CallWithBearerToken,
+		BedrockActions.CountTokens,
+		BedrockActions.DetectGeneratedContent,
+		BedrockActions.ExportAutomatedReasoningPolicyVersion,
+		BedrockActions.GenerateQuery,
+		BedrockActions.actionGetAccountDataRetention,
+		BedrockActions.actionGetAdvancedPromptOptimizationJob,
+		BedrockActions.actionGetAgent,
+		BedrockActions.actionGetAgentActionGroup,
+		BedrockActions.actionGetAgentAlias,
+		BedrockActions.actionGetAgentCollaborator,
+		BedrockActions.actionGetAgentKnowledgeBase,
+		BedrockActions.actionGetAgentMemory,
+		BedrockActions.actionGetAgentVersion,
+		BedrockActions.actionGetAsyncInvoke,
+		BedrockActions.actionGetAutomatedReasoningPolicy,
+		BedrockActions.actionGetAutomatedReasoningPolicyAnnotations,
+		BedrockActions.actionGetAutomatedReasoningPolicyBuildWorkflow,
+		BedrockActions.actionGetAutomatedReasoningPolicyBuildWorkflowResultAssets,
+		BedrockActions.actionGetAutomatedReasoningPolicyNextScenario,
+		BedrockActions.actionGetAutomatedReasoningPolicyTestCase,
+		BedrockActions.actionGetAutomatedReasoningPolicyTestResult,
+		BedrockActions.actionGetBlueprint,
+		BedrockActions.actionGetBlueprintOptimizationStatus,
+		BedrockActions.actionGetBlueprintRecommendation,
+		BedrockActions.actionGetCustomModel,
+		BedrockActions.actionGetCustomModelDeployment,
+		BedrockActions.actionGetDataAutomationLibrary,
+		BedrockActions.actionGetDataAutomationLibraryEntity,
+		BedrockActions.actionGetDataAutomationLibraryIngestionJob,
+		BedrockActions.actionGetDataAutomationProject,
+		BedrockActions.actionGetDataAutomationStatus,
+		BedrockActions.actionGetDataSource,
+		BedrockActions.actionGetDocumentContent,
+		BedrockActions.actionGetEvaluationJob,
+		BedrockActions.actionGetExecutionFlowSnapshot,
+		BedrockActions.actionGetFlow,
+		BedrockActions.actionGetFlowAlias,
+		BedrockActions.actionGetFlowExecution,
+		BedrockActions.actionGetFlowVersion,
+		BedrockActions.actionGetFoundationModel,
+		BedrockActions.actionGetFoundationModelAvailability,
+		BedrockActions.actionGetGuardrail,
+		BedrockActions.actionGetImportedModel,
+		BedrockActions.actionGetInferenceProfile,
+		BedrockActions.actionGetIngestionJob,
+		BedrockActions.actionGetInvocationStep,
+		BedrockActions.actionGetKnowledgeBase,
+		BedrockActions.actionGetKnowledgeBaseDocuments,
+		BedrockActions.actionGetMarketplaceModelEndpoint,
+		BedrockActions.actionGetModelCopyJob,
+		BedrockActions.actionGetModelCustomizationJob,
+		BedrockActions.actionGetModelEvaluationJob,
+		BedrockActions.actionGetModelImportJob,
+		BedrockActions.actionGetModelInvocationJob,
+		BedrockActions.actionGetModelInvocationLoggingConfiguration,
+		BedrockActions.actionGetPrompt,
+		BedrockActions.actionGetPromptRouter,
+		BedrockActions.actionGetProvisionedModelThroughput,
+		BedrockActions.actionGetResourcePolicy,
+		BedrockActions.actionGetSession,
+		BedrockActions.actionGetUseCaseForModelAccess,
+		BedrockActions.InvokeAgent,
+		BedrockActions.InvokeAutomatedReasoningPolicy,
+		BedrockActions.InvokeFlow,
+		BedrockActions.InvokeGuardrailChecks,
+		BedrockActions.InvokeInlineAgent,
+		BedrockActions.InvokeModel,
+		BedrockActions.InvokeModelWithResponseStream,
+		BedrockActions.InvokeTool,
+		BedrockActions.ListMarketplaceModelEndpoints,
+		BedrockActions.ListTagsForResource,
+		BedrockActions.OptimizePrompt,
+		BedrockActions.RenderPrompt,
+		BedrockActions.Retrieve,
+		BedrockActions.ValidateFlowDefinition,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BedrockActions.ASSOCIATE_AGENT_COLLABORATOR,
-		BedrockActions.ASSOCIATE_AGENT_KNOWLEDGE_BASE,
-		BedrockActions.ASSOCIATE_THIRD_PARTY_KNOWLEDGE_BASE,
-		BedrockActions.BATCH_DELETE_ADVANCED_PROMPT_OPTIMIZATION_JOB,
-		BedrockActions.BATCH_DELETE_EVALUATION_JOB,
-		BedrockActions.CANCEL_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW,
-		BedrockActions.COPY_BLUEPRINT_STAGE,
-		BedrockActions.CREATE_ADVANCED_PROMPT_OPTIMIZATION_JOB,
-		BedrockActions.CREATE_AGENT,
-		BedrockActions.CREATE_AGENT_ACTION_GROUP,
-		BedrockActions.CREATE_AGENT_ALIAS,
-		BedrockActions.CREATE_AUTOMATED_REASONING_POLICY,
-		BedrockActions.CREATE_AUTOMATED_REASONING_POLICY_TEST_CASE,
-		BedrockActions.CREATE_AUTOMATED_REASONING_POLICY_VERSION,
-		BedrockActions.CREATE_BLUEPRINT,
-		BedrockActions.CREATE_BLUEPRINT_VERSION,
-		BedrockActions.CREATE_CUSTOM_MODEL,
-		BedrockActions.CREATE_CUSTOM_MODEL_DEPLOYMENT,
-		BedrockActions.CREATE_DATA_AUTOMATION_LIBRARY,
-		BedrockActions.CREATE_DATA_AUTOMATION_PROJECT,
-		BedrockActions.CREATE_DATA_SOURCE,
-		BedrockActions.CREATE_EVALUATION_JOB,
-		BedrockActions.CREATE_FLOW,
-		BedrockActions.CREATE_FLOW_ALIAS,
-		BedrockActions.CREATE_FLOW_VERSION,
-		BedrockActions.CREATE_FOUNDATION_MODEL_AGREEMENT,
-		BedrockActions.CREATE_GUARDRAIL,
-		BedrockActions.CREATE_GUARDRAIL_VERSION,
-		BedrockActions.CREATE_INFERENCE_PROFILE,
-		BedrockActions.CREATE_INVOCATION,
-		BedrockActions.CREATE_KNOWLEDGE_BASE,
-		BedrockActions.CREATE_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.CREATE_MODEL_COPY_JOB,
-		BedrockActions.CREATE_MODEL_CUSTOMIZATION_JOB,
-		BedrockActions.CREATE_MODEL_EVALUATION_JOB,
-		BedrockActions.CREATE_MODEL_IMPORT_JOB,
-		BedrockActions.CREATE_MODEL_INVOCATION_JOB,
-		BedrockActions.CREATE_PROMPT,
-		BedrockActions.CREATE_PROMPT_ROUTER,
-		BedrockActions.CREATE_PROMPT_VERSION,
-		BedrockActions.CREATE_PROVISIONED_MODEL_THROUGHPUT,
-		BedrockActions.CREATE_SESSION,
-		BedrockActions.DELETE_AGENT,
-		BedrockActions.DELETE_AGENT_ACTION_GROUP,
-		BedrockActions.DELETE_AGENT_ALIAS,
-		BedrockActions.DELETE_AGENT_MEMORY,
-		BedrockActions.DELETE_AGENT_VERSION,
-		BedrockActions.DELETE_AUTOMATED_REASONING_POLICY,
-		BedrockActions.DELETE_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW,
-		BedrockActions.DELETE_AUTOMATED_REASONING_POLICY_TEST_CASE,
-		BedrockActions.DELETE_BLUEPRINT,
-		BedrockActions.DELETE_CUSTOM_MODEL,
-		BedrockActions.DELETE_CUSTOM_MODEL_DEPLOYMENT,
-		BedrockActions.DELETE_DATA_AUTOMATION_LIBRARY,
-		BedrockActions.DELETE_DATA_AUTOMATION_PROJECT,
-		BedrockActions.DELETE_DATA_SOURCE,
-		BedrockActions.DELETE_ENFORCED_GUARDRAIL_CONFIGURATION,
-		BedrockActions.DELETE_FLOW,
-		BedrockActions.DELETE_FLOW_ALIAS,
-		BedrockActions.DELETE_FLOW_VERSION,
-		BedrockActions.DELETE_FOUNDATION_MODEL_AGREEMENT,
-		BedrockActions.DELETE_GUARDRAIL,
-		BedrockActions.DELETE_IMPORTED_MODEL,
-		BedrockActions.DELETE_INFERENCE_PROFILE,
-		BedrockActions.DELETE_KNOWLEDGE_BASE,
-		BedrockActions.DELETE_KNOWLEDGE_BASE_DOCUMENTS,
-		BedrockActions.DELETE_MARKETPLACE_MODEL_AGREEMENT,
-		BedrockActions.DELETE_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.DELETE_MODEL_INVOCATION_LOGGING_CONFIGURATION,
-		BedrockActions.DELETE_PROMPT,
-		BedrockActions.DELETE_PROMPT_ROUTER,
-		BedrockActions.DELETE_PROVISIONED_MODEL_THROUGHPUT,
-		BedrockActions.DELETE_RESOURCE_POLICY,
-		BedrockActions.DELETE_SESSION,
-		BedrockActions.DEREGISTER_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.DISASSOCIATE_AGENT_COLLABORATOR,
-		BedrockActions.DISASSOCIATE_AGENT_KNOWLEDGE_BASE,
-		BedrockActions.END_SESSION,
-		BedrockActions.INGEST_KNOWLEDGE_BASE_DOCUMENTS,
-		BedrockActions.INVOKE_BLUEPRINT_OPTIMIZATION_ASYNC,
-		BedrockActions.INVOKE_BLUEPRINT_RECOMMENDATION_ASYNC,
-		BedrockActions.INVOKE_BUILDER,
-		BedrockActions.INVOKE_DATA_AUTOMATION,
-		BedrockActions.INVOKE_DATA_AUTOMATION_ASYNC,
-		BedrockActions.INVOKE_DATA_AUTOMATION_LIBRARY_INGESTION_JOB,
-		BedrockActions.PREPARE_AGENT,
-		BedrockActions.PREPARE_FLOW,
-		BedrockActions.PUT_ACCOUNT_DATA_RETENTION,
-		BedrockActions.PUT_ENFORCED_GUARDRAIL_CONFIGURATION,
-		BedrockActions.PUT_FOUNDATION_MODEL_ENTITLEMENT,
-		BedrockActions.PUT_INVOCATION_STEP,
-		BedrockActions.PUT_MODEL_INVOCATION_LOGGING_CONFIGURATION,
-		BedrockActions.PUT_RESOURCE_POLICY,
-		BedrockActions.PUT_USE_CASE_FOR_MODEL_ACCESS,
-		BedrockActions.REGISTER_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.RERANK,
-		BedrockActions.RETRIEVE_AND_GENERATE,
-		BedrockActions.START_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW,
-		BedrockActions.START_AUTOMATED_REASONING_POLICY_TEST_WORKFLOW,
-		BedrockActions.START_FLOW_EXECUTION,
-		BedrockActions.START_INGESTION_JOB,
-		BedrockActions.STOP_ADVANCED_PROMPT_OPTIMIZATION_JOB,
-		BedrockActions.STOP_EVALUATION_JOB,
-		BedrockActions.STOP_FLOW_EXECUTION,
-		BedrockActions.STOP_INGESTION_JOB,
-		BedrockActions.STOP_MODEL_CUSTOMIZATION_JOB,
-		BedrockActions.STOP_MODEL_INVOCATION_JOB,
-		BedrockActions.UPDATE_AGENT,
-		BedrockActions.UPDATE_AGENT_ACTION_GROUP,
-		BedrockActions.UPDATE_AGENT_ALIAS,
-		BedrockActions.UPDATE_AGENT_COLLABORATOR,
-		BedrockActions.UPDATE_AGENT_KNOWLEDGE_BASE,
-		BedrockActions.UPDATE_AUTOMATED_REASONING_POLICY,
-		BedrockActions.UPDATE_AUTOMATED_REASONING_POLICY_ANNOTATIONS,
-		BedrockActions.UPDATE_AUTOMATED_REASONING_POLICY_TEST_CASE,
-		BedrockActions.UPDATE_BLUEPRINT,
-		BedrockActions.UPDATE_CUSTOM_MODEL_DEPLOYMENT,
-		BedrockActions.UPDATE_DATA_AUTOMATION_LIBRARY,
-		BedrockActions.UPDATE_DATA_AUTOMATION_PROJECT,
-		BedrockActions.UPDATE_DATA_SOURCE,
-		BedrockActions.UPDATE_FLOW,
-		BedrockActions.UPDATE_FLOW_ALIAS,
-		BedrockActions.UPDATE_GUARDRAIL,
-		BedrockActions.UPDATE_KNOWLEDGE_BASE,
-		BedrockActions.UPDATE_MARKETPLACE_MODEL_ENDPOINT,
-		BedrockActions.UPDATE_PROMPT,
-		BedrockActions.UPDATE_PROVISIONED_MODEL_THROUGHPUT,
-		BedrockActions.UPDATE_SESSION,
+	static readonly AllWriteActions: string[] = [
+		BedrockActions.AssociateAgentCollaborator,
+		BedrockActions.AssociateAgentKnowledgeBase,
+		BedrockActions.AssociateThirdPartyKnowledgeBase,
+		BedrockActions.BatchDeleteAdvancedPromptOptimizationJob,
+		BedrockActions.BatchDeleteEvaluationJob,
+		BedrockActions.CancelAutomatedReasoningPolicyBuildWorkflow,
+		BedrockActions.CopyBlueprintStage,
+		BedrockActions.CreateAdvancedPromptOptimizationJob,
+		BedrockActions.CreateAgent,
+		BedrockActions.CreateAgentActionGroup,
+		BedrockActions.CreateAgentAlias,
+		BedrockActions.CreateAutomatedReasoningPolicy,
+		BedrockActions.CreateAutomatedReasoningPolicyTestCase,
+		BedrockActions.CreateAutomatedReasoningPolicyVersion,
+		BedrockActions.CreateBlueprint,
+		BedrockActions.CreateBlueprintVersion,
+		BedrockActions.CreateCustomModel,
+		BedrockActions.CreateCustomModelDeployment,
+		BedrockActions.CreateDataAutomationLibrary,
+		BedrockActions.CreateDataAutomationProject,
+		BedrockActions.CreateDataSource,
+		BedrockActions.CreateEvaluationJob,
+		BedrockActions.CreateFlow,
+		BedrockActions.CreateFlowAlias,
+		BedrockActions.CreateFlowVersion,
+		BedrockActions.CreateFoundationModelAgreement,
+		BedrockActions.CreateGuardrail,
+		BedrockActions.CreateGuardrailVersion,
+		BedrockActions.CreateInferenceProfile,
+		BedrockActions.CreateInvocation,
+		BedrockActions.CreateKnowledgeBase,
+		BedrockActions.CreateMarketplaceModelEndpoint,
+		BedrockActions.CreateModelCopyJob,
+		BedrockActions.CreateModelCustomizationJob,
+		BedrockActions.CreateModelEvaluationJob,
+		BedrockActions.CreateModelImportJob,
+		BedrockActions.CreateModelInvocationJob,
+		BedrockActions.CreatePrompt,
+		BedrockActions.CreatePromptRouter,
+		BedrockActions.CreatePromptVersion,
+		BedrockActions.CreateProvisionedModelThroughput,
+		BedrockActions.CreateSession,
+		BedrockActions.DeleteAgent,
+		BedrockActions.DeleteAgentActionGroup,
+		BedrockActions.DeleteAgentAlias,
+		BedrockActions.DeleteAgentMemory,
+		BedrockActions.DeleteAgentVersion,
+		BedrockActions.DeleteAutomatedReasoningPolicy,
+		BedrockActions.DeleteAutomatedReasoningPolicyBuildWorkflow,
+		BedrockActions.DeleteAutomatedReasoningPolicyTestCase,
+		BedrockActions.DeleteBlueprint,
+		BedrockActions.DeleteCustomModel,
+		BedrockActions.DeleteCustomModelDeployment,
+		BedrockActions.DeleteDataAutomationLibrary,
+		BedrockActions.DeleteDataAutomationProject,
+		BedrockActions.DeleteDataSource,
+		BedrockActions.DeleteEnforcedGuardrailConfiguration,
+		BedrockActions.DeleteFlow,
+		BedrockActions.DeleteFlowAlias,
+		BedrockActions.DeleteFlowVersion,
+		BedrockActions.DeleteFoundationModelAgreement,
+		BedrockActions.DeleteGuardrail,
+		BedrockActions.DeleteImportedModel,
+		BedrockActions.DeleteInferenceProfile,
+		BedrockActions.DeleteKnowledgeBase,
+		BedrockActions.DeleteKnowledgeBaseDocuments,
+		BedrockActions.DeleteMarketplaceModelAgreement,
+		BedrockActions.DeleteMarketplaceModelEndpoint,
+		BedrockActions.DeleteModelInvocationLoggingConfiguration,
+		BedrockActions.DeletePrompt,
+		BedrockActions.DeletePromptRouter,
+		BedrockActions.DeleteProvisionedModelThroughput,
+		BedrockActions.DeleteResourcePolicy,
+		BedrockActions.DeleteSession,
+		BedrockActions.DeregisterMarketplaceModelEndpoint,
+		BedrockActions.DisassociateAgentCollaborator,
+		BedrockActions.DisassociateAgentKnowledgeBase,
+		BedrockActions.EndSession,
+		BedrockActions.IngestKnowledgeBaseDocuments,
+		BedrockActions.InvokeBlueprintOptimizationAsync,
+		BedrockActions.InvokeBlueprintRecommendationAsync,
+		BedrockActions.InvokeBuilder,
+		BedrockActions.InvokeDataAutomation,
+		BedrockActions.InvokeDataAutomationAsync,
+		BedrockActions.InvokeDataAutomationLibraryIngestionJob,
+		BedrockActions.PrepareAgent,
+		BedrockActions.PrepareFlow,
+		BedrockActions.PutAccountDataRetention,
+		BedrockActions.PutEnforcedGuardrailConfiguration,
+		BedrockActions.PutFoundationModelEntitlement,
+		BedrockActions.PutInvocationStep,
+		BedrockActions.PutModelInvocationLoggingConfiguration,
+		BedrockActions.PutResourcePolicy,
+		BedrockActions.PutUseCaseForModelAccess,
+		BedrockActions.RegisterMarketplaceModelEndpoint,
+		BedrockActions.Rerank,
+		BedrockActions.RetrieveAndGenerate,
+		BedrockActions.StartAutomatedReasoningPolicyBuildWorkflow,
+		BedrockActions.StartAutomatedReasoningPolicyTestWorkflow,
+		BedrockActions.StartFlowExecution,
+		BedrockActions.StartIngestionJob,
+		BedrockActions.StopAdvancedPromptOptimizationJob,
+		BedrockActions.StopEvaluationJob,
+		BedrockActions.StopFlowExecution,
+		BedrockActions.StopIngestionJob,
+		BedrockActions.StopModelCustomizationJob,
+		BedrockActions.StopModelInvocationJob,
+		BedrockActions.UpdateAgent,
+		BedrockActions.UpdateAgentActionGroup,
+		BedrockActions.UpdateAgentAlias,
+		BedrockActions.UpdateAgentCollaborator,
+		BedrockActions.UpdateAgentKnowledgeBase,
+		BedrockActions.UpdateAutomatedReasoningPolicy,
+		BedrockActions.UpdateAutomatedReasoningPolicyAnnotations,
+		BedrockActions.UpdateAutomatedReasoningPolicyTestCase,
+		BedrockActions.UpdateBlueprint,
+		BedrockActions.UpdateCustomModelDeployment,
+		BedrockActions.UpdateDataAutomationLibrary,
+		BedrockActions.UpdateDataAutomationProject,
+		BedrockActions.UpdateDataSource,
+		BedrockActions.UpdateFlow,
+		BedrockActions.UpdateFlowAlias,
+		BedrockActions.UpdateGuardrail,
+		BedrockActions.UpdateKnowledgeBase,
+		BedrockActions.UpdateMarketplaceModelEndpoint,
+		BedrockActions.UpdatePrompt,
+		BedrockActions.UpdateProvisionedModelThroughput,
+		BedrockActions.UpdateSession,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BedrockActions.LIST_ADVANCED_PROMPT_OPTIMIZATION_JOBS,
-		BedrockActions.LIST_AGENT_ACTION_GROUPS,
-		BedrockActions.LIST_AGENT_ALIASES,
-		BedrockActions.LIST_AGENT_COLLABORATORS,
-		BedrockActions.LIST_AGENT_KNOWLEDGE_BASES,
-		BedrockActions.LIST_AGENT_VERSIONS,
-		BedrockActions.LIST_AGENTS,
-		BedrockActions.LIST_ASYNC_INVOKES,
-		BedrockActions.LIST_AUTOMATED_REASONING_POLICIES,
-		BedrockActions.LIST_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOWS,
-		BedrockActions.LIST_AUTOMATED_REASONING_POLICY_TEST_CASES,
-		BedrockActions.LIST_AUTOMATED_REASONING_POLICY_TEST_RESULTS,
-		BedrockActions.LIST_BLUEPRINTS,
-		BedrockActions.LIST_CUSTOM_MODEL_DEPLOYMENTS,
-		BedrockActions.LIST_CUSTOM_MODELS,
-		BedrockActions.LIST_DATA_AUTOMATION_LIBRARIES,
-		BedrockActions.LIST_DATA_AUTOMATION_LIBRARY_ENTITIES,
-		BedrockActions.LIST_DATA_AUTOMATION_LIBRARY_INGESTION_JOBS,
-		BedrockActions.LIST_DATA_AUTOMATION_PROJECTS,
-		BedrockActions.LIST_DATA_SOURCES,
-		BedrockActions.LIST_ENFORCED_GUARDRAILS_CONFIGURATION,
-		BedrockActions.LIST_EVALUATION_JOBS,
-		BedrockActions.LIST_FLOW_ALIASES,
-		BedrockActions.LIST_FLOW_EXECUTION_EVENTS,
-		BedrockActions.LIST_FLOW_EXECUTIONS,
-		BedrockActions.LIST_FLOW_VERSIONS,
-		BedrockActions.LIST_FLOWS,
-		BedrockActions.LIST_FOUNDATION_MODEL_AGREEMENT_OFFERS,
-		BedrockActions.LIST_FOUNDATION_MODELS,
-		BedrockActions.LIST_GUARDRAILS,
-		BedrockActions.LIST_IMPORTED_MODELS,
-		BedrockActions.LIST_INFERENCE_PROFILES,
-		BedrockActions.LIST_INGESTION_JOBS,
-		BedrockActions.LIST_INVOCATION_STEPS,
-		BedrockActions.LIST_INVOCATIONS,
-		BedrockActions.LIST_KNOWLEDGE_BASE_DOCUMENTS,
-		BedrockActions.LIST_KNOWLEDGE_BASES,
-		BedrockActions.LIST_MODEL_COPY_JOBS,
-		BedrockActions.LIST_MODEL_CUSTOMIZATION_JOBS,
-		BedrockActions.LIST_MODEL_EVALUATION_JOBS,
-		BedrockActions.LIST_MODEL_IMPORT_JOBS,
-		BedrockActions.LIST_MODEL_INVOCATION_JOBS,
-		BedrockActions.LIST_PROMPT_ROUTERS,
-		BedrockActions.LIST_PROMPTS,
-		BedrockActions.LIST_PROVISIONED_MODEL_THROUGHPUTS,
-		BedrockActions.LIST_SESSIONS,
+	static readonly AllListActions: string[] = [
+		BedrockActions.ListAdvancedPromptOptimizationJobs,
+		BedrockActions.ListAgentActionGroups,
+		BedrockActions.ListAgentAliases,
+		BedrockActions.ListAgentCollaborators,
+		BedrockActions.ListAgentKnowledgeBases,
+		BedrockActions.ListAgentVersions,
+		BedrockActions.ListAgents,
+		BedrockActions.ListAsyncInvokes,
+		BedrockActions.ListAutomatedReasoningPolicies,
+		BedrockActions.ListAutomatedReasoningPolicyBuildWorkflows,
+		BedrockActions.ListAutomatedReasoningPolicyTestCases,
+		BedrockActions.ListAutomatedReasoningPolicyTestResults,
+		BedrockActions.ListBlueprints,
+		BedrockActions.ListCustomModelDeployments,
+		BedrockActions.ListCustomModels,
+		BedrockActions.ListDataAutomationLibraries,
+		BedrockActions.ListDataAutomationLibraryEntities,
+		BedrockActions.ListDataAutomationLibraryIngestionJobs,
+		BedrockActions.ListDataAutomationProjects,
+		BedrockActions.ListDataSources,
+		BedrockActions.ListEnforcedGuardrailsConfiguration,
+		BedrockActions.ListEvaluationJobs,
+		BedrockActions.ListFlowAliases,
+		BedrockActions.ListFlowExecutionEvents,
+		BedrockActions.ListFlowExecutions,
+		BedrockActions.ListFlowVersions,
+		BedrockActions.ListFlows,
+		BedrockActions.ListFoundationModelAgreementOffers,
+		BedrockActions.ListFoundationModels,
+		BedrockActions.ListGuardrails,
+		BedrockActions.ListImportedModels,
+		BedrockActions.ListInferenceProfiles,
+		BedrockActions.ListIngestionJobs,
+		BedrockActions.ListInvocationSteps,
+		BedrockActions.ListInvocations,
+		BedrockActions.ListKnowledgeBaseDocuments,
+		BedrockActions.ListKnowledgeBases,
+		BedrockActions.ListModelCopyJobs,
+		BedrockActions.ListModelCustomizationJobs,
+		BedrockActions.ListModelEvaluationJobs,
+		BedrockActions.ListModelImportJobs,
+		BedrockActions.ListModelInvocationJobs,
+		BedrockActions.ListPromptRouters,
+		BedrockActions.ListPrompts,
+		BedrockActions.ListProvisionedModelThroughputs,
+		BedrockActions.ListSessions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		BedrockActions.ALLOW_VENDED_LOG_DELIVERY_FOR_RESOURCE,
+	static readonly AllPermissionManagementActions: string[] = [
+		BedrockActions.AllowVendedLogDeliveryForResource,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BedrockActions.TAG_RESOURCE,
-		BedrockActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BedrockActions.TagResource,
+		BedrockActions.UntagResource,
 	];
 }
 
-const AdvancedPromptOptimizationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):advanced-prompt-optimization-job/(?<resourceId>[^:/?]+)$",
-);
-const AgentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):agent/(?<agentId>[^:/?]+)$",
-);
-const AgentAliasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):agent-alias/(?<agentId>[^:/?]+)/(?<agentAliasId>[^:/?]+)$",
-);
-const ApplicationInferenceProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):application-inference-profile/(?<resourceId>[^:/?]+)$",
-);
-const AsyncInvokeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):async-invoke/(?<resourceId>[^:/?]+)$",
-);
-const AutomatedReasoningPolicyArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):automated-reasoning-policy/(?<automatedReasoningPolicyId>[^:/?]+)$",
-);
-const AutomatedReasoningPolicyVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):automated-reasoning-policy/(?<automatedReasoningPolicyId>[^:/?]+):(?<automatedReasoningPolicyVersion>[^:/?]+)$",
-);
-const BedrockMarketplaceModelEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):marketplace/model-endpoint/all-access$",
-);
-const BlueprintArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):blueprint/(?<blueprintId>[^:/?]+)$",
-);
-const BlueprintOptimizationInvocationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):blueprint-optimization-invocation/(?<resourceId>[^:/?]+)$",
-);
-const CustomModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):custom-model/(?<resourceId>[^:/?]+)$",
-);
-const CustomModelDeploymentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):custom-model-deployment/(?<resourceId>[^:/?]+)$",
-);
-const DataAutomationInvocationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-invocation/(?<jobId>[^:/?]+)$",
-);
-const DataAutomationLibraryArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-library/(?<dataAutomationLibraryId>[^:/?]+)$",
-);
-const DataAutomationLibraryIngestionJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-library-ingestion-job/(?<ingestionJobId>[^:/?]+)$",
-);
-const DataAutomationProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-profile/(?<profileId>[^:/?]+)$",
-);
-const DataAutomationProjectArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-project/(?<projectId>[^:/?]+)$",
-);
-const DefaultPromptRouterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):default-prompt-router/(?<resourceId>[^:/?]+)$",
-);
-const EvaluationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):evaluation-job/(?<resourceId>[^:/?]+)$",
-);
-const FlowArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow/(?<flowId>[^:/?]+)$",
-);
-const FlowAliasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow/(?<flowId>[^:/?]+)/alias/(?<flowAliasId>[^:/?]+)$",
-);
-const FlowExecutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow/(?<flowId>[^:/?]+)/alias/(?<flowAliasId>[^:/?]+)/execution/(?<flowExecutionId>[^:/?]+)$",
-);
-const FoundationModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*)::foundation-model/(?<resourceId>[^:/?]+)$",
-);
-const GuardrailArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):guardrail/(?<guardrailId>[^:/?]+)$",
-);
-const GuardrailProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):guardrail-profile/(?<resourceId>[^:/?]+)$",
-);
-const ImportedModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):imported-model/(?<resourceId>[^:/?]+)$",
-);
-const InferenceProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):inference-profile/(?<resourceId>[^:/?]+)$",
-);
-const KnowledgeBaseArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):knowledge-base/(?<knowledgeBaseId>[^:/?]+)$",
-);
-const ModelCopyJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-copy-job/(?<resourceId>[^:/?]+)$",
-);
-const ModelCustomizationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-customization-job/(?<resourceId>[^:/?]+)$",
-);
-const ModelEvaluationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-evaluation-job/(?<resourceId>[^:/?]+)$",
-);
-const ModelImportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-import-job/(?<resourceId>[^:/?]+)$",
-);
-const ModelInvocationJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-invocation-job/(?<jobIdentifier>[^:/?]+)$",
-);
-const PromptArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt/(?<promptId>[^:/?]+)$",
-);
-const PromptRouterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt-router/(?<resourceId>[^:/?]+)$",
-);
-const PromptVersionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt/(?<promptId>[^:/?]+):(?<promptVersion>[^:/?]+)$",
-);
-const ProvisionedModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):provisioned-model/(?<resourceId>[^:/?]+)$",
-);
-const SessionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):session/(?<sessionId>[^:/?]+)$",
-);
-const SystemToolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):bedrock::(?<account>[^:]*):system-tool/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a advanced-prompt-optimization-job ARN.
+ */
+export interface BedrockAdvancedPromptOptimizationJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a advanced-prompt-optimization-job ARN.
+ */
+export interface BedrockAdvancedPromptOptimizationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a agent ARN.
+ */
+export interface BedrockAgentArnProps {
+	/** The AgentId component of the ARN. */
+	readonly agentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent ARN.
+ */
+export interface BedrockAgentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentId component. */
+	readonly agentId: string;
+}
+
+/**
+ * Properties for building a agent-alias ARN.
+ */
+export interface BedrockAgentAliasArnProps {
+	/** The AgentId component of the ARN. */
+	readonly agentId: string;
+	/** The AgentAliasId component of the ARN. */
+	readonly agentAliasId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent-alias ARN.
+ */
+export interface BedrockAgentAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentId component. */
+	readonly agentId: string;
+	/** The AgentAliasId component. */
+	readonly agentAliasId: string;
+}
+
+/**
+ * Properties for building a application-inference-profile ARN.
+ */
+export interface BedrockApplicationInferenceProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application-inference-profile ARN.
+ */
+export interface BedrockApplicationInferenceProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a async-invoke ARN.
+ */
+export interface BedrockAsyncInvokeArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a async-invoke ARN.
+ */
+export interface BedrockAsyncInvokeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a automated-reasoning-policy ARN.
+ */
+export interface BedrockAutomatedReasoningPolicyArnProps {
+	/** The AutomatedReasoningPolicyId component of the ARN. */
+	readonly automatedReasoningPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a automated-reasoning-policy ARN.
+ */
+export interface BedrockAutomatedReasoningPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AutomatedReasoningPolicyId component. */
+	readonly automatedReasoningPolicyId: string;
+}
+
+/**
+ * Properties for building a automated-reasoning-policy-version ARN.
+ */
+export interface BedrockAutomatedReasoningPolicyVersionArnProps {
+	/** The AutomatedReasoningPolicyId component of the ARN. */
+	readonly automatedReasoningPolicyId: string;
+	/** The AutomatedReasoningPolicyVersion component of the ARN. */
+	readonly automatedReasoningPolicyVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a automated-reasoning-policy-version ARN.
+ */
+export interface BedrockAutomatedReasoningPolicyVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AutomatedReasoningPolicyId component. */
+	readonly automatedReasoningPolicyId: string;
+	/** The AutomatedReasoningPolicyVersion component. */
+	readonly automatedReasoningPolicyVersion: string;
+}
+
+/**
+ * Properties for building a bedrock-marketplace-model-endpoint ARN.
+ */
+export interface BedrockBedrockMarketplaceModelEndpointArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bedrock-marketplace-model-endpoint ARN.
+ */
+export interface BedrockBedrockMarketplaceModelEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
+ * Properties for building a blueprint ARN.
+ */
+export interface BedrockBlueprintArnProps {
+	/** The BlueprintId component of the ARN. */
+	readonly blueprintId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a blueprint ARN.
+ */
+export interface BedrockBlueprintArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BlueprintId component. */
+	readonly blueprintId: string;
+}
+
+/**
+ * Properties for building a blueprint-optimization-invocation ARN.
+ */
+export interface BedrockBlueprintOptimizationInvocationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a blueprint-optimization-invocation ARN.
+ */
+export interface BedrockBlueprintOptimizationInvocationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a custom-model ARN.
+ */
+export interface BedrockCustomModelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custom-model ARN.
+ */
+export interface BedrockCustomModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a custom-model-deployment ARN.
+ */
+export interface BedrockCustomModelDeploymentArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custom-model-deployment ARN.
+ */
+export interface BedrockCustomModelDeploymentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a data-automation-invocation-job ARN.
+ */
+export interface BedrockDataAutomationInvocationJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-automation-invocation-job ARN.
+ */
+export interface BedrockDataAutomationInvocationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a data-automation-library ARN.
+ */
+export interface BedrockDataAutomationLibraryArnProps {
+	/** The DataAutomationLibraryId component of the ARN. */
+	readonly dataAutomationLibraryId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-automation-library ARN.
+ */
+export interface BedrockDataAutomationLibraryArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataAutomationLibraryId component. */
+	readonly dataAutomationLibraryId: string;
+}
+
+/**
+ * Properties for building a data-automation-library-ingestion-job ARN.
+ */
+export interface BedrockDataAutomationLibraryIngestionJobArnProps {
+	/** The IngestionJobId component of the ARN. */
+	readonly ingestionJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-automation-library-ingestion-job ARN.
+ */
+export interface BedrockDataAutomationLibraryIngestionJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IngestionJobId component. */
+	readonly ingestionJobId: string;
+}
+
+/**
+ * Properties for building a data-automation-profile ARN.
+ */
+export interface BedrockDataAutomationProfileArnProps {
+	/** The ProfileId component of the ARN. */
+	readonly profileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-automation-profile ARN.
+ */
+export interface BedrockDataAutomationProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfileId component. */
+	readonly profileId: string;
+}
+
+/**
+ * Properties for building a data-automation-project ARN.
+ */
+export interface BedrockDataAutomationProjectArnProps {
+	/** The ProjectId component of the ARN. */
+	readonly projectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a data-automation-project ARN.
+ */
+export interface BedrockDataAutomationProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectId component. */
+	readonly projectId: string;
+}
+
+/**
+ * Properties for building a default-prompt-router ARN.
+ */
+export interface BedrockDefaultPromptRouterArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a default-prompt-router ARN.
+ */
+export interface BedrockDefaultPromptRouterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a evaluation-job ARN.
+ */
+export interface BedrockEvaluationJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a evaluation-job ARN.
+ */
+export interface BedrockEvaluationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a flow ARN.
+ */
+export interface BedrockFlowArnProps {
+	/** The FlowId component of the ARN. */
+	readonly flowId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a flow ARN.
+ */
+export interface BedrockFlowArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FlowId component. */
+	readonly flowId: string;
+}
+
+/**
+ * Properties for building a flow-alias ARN.
+ */
+export interface BedrockFlowAliasArnProps {
+	/** The FlowId component of the ARN. */
+	readonly flowId: string;
+	/** The FlowAliasId component of the ARN. */
+	readonly flowAliasId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a flow-alias ARN.
+ */
+export interface BedrockFlowAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FlowId component. */
+	readonly flowId: string;
+	/** The FlowAliasId component. */
+	readonly flowAliasId: string;
+}
+
+/**
+ * Properties for building a flow-execution ARN.
+ */
+export interface BedrockFlowExecutionArnProps {
+	/** The FlowId component of the ARN. */
+	readonly flowId: string;
+	/** The FlowAliasId component of the ARN. */
+	readonly flowAliasId: string;
+	/** The FlowExecutionId component of the ARN. */
+	readonly flowExecutionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a flow-execution ARN.
+ */
+export interface BedrockFlowExecutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FlowId component. */
+	readonly flowId: string;
+	/** The FlowAliasId component. */
+	readonly flowAliasId: string;
+	/** The FlowExecutionId component. */
+	readonly flowExecutionId: string;
+}
+
+/**
+ * Properties for building a foundation-model ARN.
+ */
+export interface BedrockFoundationModelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a foundation-model ARN.
+ */
+export interface BedrockFoundationModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a guardrail ARN.
+ */
+export interface BedrockGuardrailArnProps {
+	/** The GuardrailId component of the ARN. */
+	readonly guardrailId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a guardrail ARN.
+ */
+export interface BedrockGuardrailArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GuardrailId component. */
+	readonly guardrailId: string;
+}
+
+/**
+ * Properties for building a guardrail-profile ARN.
+ */
+export interface BedrockGuardrailProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a guardrail-profile ARN.
+ */
+export interface BedrockGuardrailProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a imported-model ARN.
+ */
+export interface BedrockImportedModelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a imported-model ARN.
+ */
+export interface BedrockImportedModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a inference-profile ARN.
+ */
+export interface BedrockInferenceProfileArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-profile ARN.
+ */
+export interface BedrockInferenceProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a knowledge-base ARN.
+ */
+export interface BedrockKnowledgeBaseArnProps {
+	/** The KnowledgeBaseId component of the ARN. */
+	readonly knowledgeBaseId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a knowledge-base ARN.
+ */
+export interface BedrockKnowledgeBaseArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The KnowledgeBaseId component. */
+	readonly knowledgeBaseId: string;
+}
+
+/**
+ * Properties for building a model-copy-job ARN.
+ */
+export interface BedrockModelCopyJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-copy-job ARN.
+ */
+export interface BedrockModelCopyJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a model-customization-job ARN.
+ */
+export interface BedrockModelCustomizationJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-customization-job ARN.
+ */
+export interface BedrockModelCustomizationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a model-evaluation-job ARN.
+ */
+export interface BedrockModelEvaluationJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-evaluation-job ARN.
+ */
+export interface BedrockModelEvaluationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a model-import-job ARN.
+ */
+export interface BedrockModelImportJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-import-job ARN.
+ */
+export interface BedrockModelImportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a model-invocation-job ARN.
+ */
+export interface BedrockModelInvocationJobArnProps {
+	/** The JobIdentifier component of the ARN. */
+	readonly jobIdentifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a model-invocation-job ARN.
+ */
+export interface BedrockModelInvocationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobIdentifier component. */
+	readonly jobIdentifier: string;
+}
+
+/**
+ * Properties for building a prompt ARN.
+ */
+export interface BedrockPromptArnProps {
+	/** The PromptId component of the ARN. */
+	readonly promptId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a prompt ARN.
+ */
+export interface BedrockPromptArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PromptId component. */
+	readonly promptId: string;
+}
+
+/**
+ * Properties for building a prompt-router ARN.
+ */
+export interface BedrockPromptRouterArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a prompt-router ARN.
+ */
+export interface BedrockPromptRouterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a prompt-version ARN.
+ */
+export interface BedrockPromptVersionArnProps {
+	/** The PromptId component of the ARN. */
+	readonly promptId: string;
+	/** The PromptVersion component of the ARN. */
+	readonly promptVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a prompt-version ARN.
+ */
+export interface BedrockPromptVersionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PromptId component. */
+	readonly promptId: string;
+	/** The PromptVersion component. */
+	readonly promptVersion: string;
+}
+
+/**
+ * Properties for building a provisioned-model ARN.
+ */
+export interface BedrockProvisionedModelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a provisioned-model ARN.
+ */
+export interface BedrockProvisionedModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a session ARN.
+ */
+export interface BedrockSessionArnProps {
+	/** The SessionId component of the ARN. */
+	readonly sessionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a session ARN.
+ */
+export interface BedrockSessionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SessionId component. */
+	readonly sessionId: string;
+}
+
+/**
+ * Properties for building a system-tool ARN.
+ */
+export interface BedrockSystemToolArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a system-tool ARN.
+ */
+export interface BedrockSystemToolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AdvancedPromptOptimizationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):advanced-prompt-optimization-job\/(?<resourceId>[^:/?]+)$/;
+const AgentArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):agent\/(?<agentId>[^:/?]+)$/;
+const AgentAliasArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):agent-alias\/(?<agentId>[^:/?]+)\/(?<agentAliasId>[^:/?]+)$/;
+const ApplicationInferenceProfileArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):application-inference-profile\/(?<resourceId>[^:/?]+)$/;
+const AsyncInvokeArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):async-invoke\/(?<resourceId>[^:/?]+)$/;
+const AutomatedReasoningPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):automated-reasoning-policy\/(?<automatedReasoningPolicyId>[^:/?]+)$/;
+const AutomatedReasoningPolicyVersionArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):automated-reasoning-policy\/(?<automatedReasoningPolicyId>[^:/?]+):(?<automatedReasoningPolicyVersion>[^:/?]+)$/;
+const BedrockMarketplaceModelEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):marketplace\/model-endpoint\/all-access$/;
+const BlueprintArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):blueprint\/(?<blueprintId>[^:/?]+)$/;
+const BlueprintOptimizationInvocationArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):blueprint-optimization-invocation\/(?<resourceId>[^:/?]+)$/;
+const CustomModelArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):custom-model\/(?<resourceId>[^:/?]+)$/;
+const CustomModelDeploymentArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):custom-model-deployment\/(?<resourceId>[^:/?]+)$/;
+const DataAutomationInvocationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-invocation\/(?<jobId>[^:/?]+)$/;
+const DataAutomationLibraryArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-library\/(?<dataAutomationLibraryId>[^:/?]+)$/;
+const DataAutomationLibraryIngestionJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-library-ingestion-job\/(?<ingestionJobId>[^:/?]+)$/;
+const DataAutomationProfileArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-profile\/(?<profileId>[^:/?]+)$/;
+const DataAutomationProjectArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):data-automation-project\/(?<projectId>[^:/?]+)$/;
+const DefaultPromptRouterArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):default-prompt-router\/(?<resourceId>[^:/?]+)$/;
+const EvaluationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):evaluation-job\/(?<resourceId>[^:/?]+)$/;
+const FlowArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow\/(?<flowId>[^:/?]+)$/;
+const FlowAliasArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow\/(?<flowId>[^:/?]+)\/alias\/(?<flowAliasId>[^:/?]+)$/;
+const FlowExecutionArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):flow\/(?<flowId>[^:/?]+)\/alias\/(?<flowAliasId>[^:/?]+)\/execution\/(?<flowExecutionId>[^:/?]+)$/;
+const FoundationModelArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*)::foundation-model\/(?<resourceId>[^:/?]+)$/;
+const GuardrailArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):guardrail\/(?<guardrailId>[^:/?]+)$/;
+const GuardrailProfileArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):guardrail-profile\/(?<resourceId>[^:/?]+)$/;
+const ImportedModelArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):imported-model\/(?<resourceId>[^:/?]+)$/;
+const InferenceProfileArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):inference-profile\/(?<resourceId>[^:/?]+)$/;
+const KnowledgeBaseArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):knowledge-base\/(?<knowledgeBaseId>[^:/?]+)$/;
+const ModelCopyJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-copy-job\/(?<resourceId>[^:/?]+)$/;
+const ModelCustomizationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-customization-job\/(?<resourceId>[^:/?]+)$/;
+const ModelEvaluationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-evaluation-job\/(?<resourceId>[^:/?]+)$/;
+const ModelImportJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-import-job\/(?<resourceId>[^:/?]+)$/;
+const ModelInvocationJobArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):model-invocation-job\/(?<jobIdentifier>[^:/?]+)$/;
+const PromptArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt\/(?<promptId>[^:/?]+)$/;
+const PromptRouterArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt-router\/(?<resourceId>[^:/?]+)$/;
+const PromptVersionArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):prompt\/(?<promptId>[^:/?]+):(?<promptVersion>[^:/?]+)$/;
+const ProvisionedModelArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):provisioned-model\/(?<resourceId>[^:/?]+)$/;
+const SessionArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):session\/(?<sessionId>[^:/?]+)$/;
+const SystemToolArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock::(?<account>[^:]*):system-tool\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bedrock resources.
@@ -1028,16 +2087,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the advanced-prompt-optimization-job resource.
 	 */
-	static advancedPromptOptimizationJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static advancedPromptOptimizationJob(
+		props: BedrockAdvancedPromptOptimizationJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:advanced-prompt-optimization-job/${props.resourceId}`;
 	}
 
@@ -1052,12 +2104,9 @@ export class BedrockResources {
 	 * Parses a advanced-prompt-optimization-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAdvancedPromptOptimizationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAdvancedPromptOptimizationJobArn(
+		arn: string,
+	): BedrockAdvancedPromptOptimizationJobArnComponents {
 		const match = AdvancedPromptOptimizationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid advanced-prompt-optimization-job ARN: ${arn}`);
@@ -1073,16 +2122,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the agent resource.
 	 */
-	static agent(props: {
-		/** The AgentId component of the ARN. */
-		readonly agentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agent(props: BedrockAgentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:agent/${props.agentId}`;
 	}
 
@@ -1097,12 +2137,7 @@ export class BedrockResources {
 	 * Parses a agent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentId: string;
-	} {
+	static parseAgentArn(arn: string): BedrockAgentArnComponents {
 		const match = AgentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agent ARN: ${arn}`);
@@ -1118,18 +2153,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the agent-alias resource.
 	 */
-	static agentAlias(props: {
-		/** The AgentId component of the ARN. */
-		readonly agentId: string;
-		/** The AgentAliasId component of the ARN. */
-		readonly agentAliasId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agentAlias(props: BedrockAgentAliasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:agent-alias/${props.agentId}/${props.agentAliasId}`;
 	}
 
@@ -1144,13 +2168,7 @@ export class BedrockResources {
 	 * Parses a agent-alias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentId: string;
-		agentAliasId: string;
-	} {
+	static parseAgentAliasArn(arn: string): BedrockAgentAliasArnComponents {
 		const match = AgentAliasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agent-alias ARN: ${arn}`);
@@ -1167,16 +2185,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the application-inference-profile resource.
 	 */
-	static applicationInferenceProfile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationInferenceProfile(
+		props: BedrockApplicationInferenceProfileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:application-inference-profile/${props.resourceId}`;
 	}
 
@@ -1191,12 +2202,9 @@ export class BedrockResources {
 	 * Parses a application-inference-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationInferenceProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseApplicationInferenceProfileArn(
+		arn: string,
+	): BedrockApplicationInferenceProfileArnComponents {
 		const match = ApplicationInferenceProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application-inference-profile ARN: ${arn}`);
@@ -1212,16 +2220,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the async-invoke resource.
 	 */
-	static asyncInvoke(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static asyncInvoke(props: BedrockAsyncInvokeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:async-invoke/${props.resourceId}`;
 	}
 
@@ -1236,12 +2235,7 @@ export class BedrockResources {
 	 * Parses a async-invoke ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAsyncInvokeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAsyncInvokeArn(arn: string): BedrockAsyncInvokeArnComponents {
 		const match = AsyncInvokeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid async-invoke ARN: ${arn}`);
@@ -1257,16 +2251,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the automated-reasoning-policy resource.
 	 */
-	static automatedReasoningPolicy(props: {
-		/** The AutomatedReasoningPolicyId component of the ARN. */
-		readonly automatedReasoningPolicyId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static automatedReasoningPolicy(
+		props: BedrockAutomatedReasoningPolicyArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:automated-reasoning-policy/${props.automatedReasoningPolicyId}`;
 	}
 
@@ -1281,12 +2268,9 @@ export class BedrockResources {
 	 * Parses a automated-reasoning-policy ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutomatedReasoningPolicyArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		automatedReasoningPolicyId: string;
-	} {
+	static parseAutomatedReasoningPolicyArn(
+		arn: string,
+	): BedrockAutomatedReasoningPolicyArnComponents {
 		const match = AutomatedReasoningPolicyArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid automated-reasoning-policy ARN: ${arn}`);
@@ -1302,18 +2286,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the automated-reasoning-policy-version resource.
 	 */
-	static automatedReasoningPolicyVersion(props: {
-		/** The AutomatedReasoningPolicyId component of the ARN. */
-		readonly automatedReasoningPolicyId: string;
-		/** The AutomatedReasoningPolicyVersion component of the ARN. */
-		readonly automatedReasoningPolicyVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static automatedReasoningPolicyVersion(
+		props: BedrockAutomatedReasoningPolicyVersionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:automated-reasoning-policy/${props.automatedReasoningPolicyId}:${props.automatedReasoningPolicyVersion}`;
 	}
 
@@ -1328,13 +2303,9 @@ export class BedrockResources {
 	 * Parses a automated-reasoning-policy-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAutomatedReasoningPolicyVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		automatedReasoningPolicyId: string;
-		automatedReasoningPolicyVersion: string;
-	} {
+	static parseAutomatedReasoningPolicyVersionArn(
+		arn: string,
+	): BedrockAutomatedReasoningPolicyVersionArnComponents {
 		const match = AutomatedReasoningPolicyVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid automated-reasoning-policy-version ARN: ${arn}`);
@@ -1352,14 +2323,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the bedrock-marketplace-model-endpoint resource.
 	 */
-	static bedrockMarketplaceModelEndpoint(props: {
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static bedrockMarketplaceModelEndpoint(
+		props: BedrockBedrockMarketplaceModelEndpointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:marketplace/model-endpoint/all-access`;
 	}
 
@@ -1374,11 +2340,9 @@ export class BedrockResources {
 	 * Parses a bedrock-marketplace-model-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBedrockMarketplaceModelEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-	} {
+	static parseBedrockMarketplaceModelEndpointArn(
+		arn: string,
+	): BedrockBedrockMarketplaceModelEndpointArnComponents {
 		const match = BedrockMarketplaceModelEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bedrock-marketplace-model-endpoint ARN: ${arn}`);
@@ -1393,16 +2357,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the blueprint resource.
 	 */
-	static blueprint(props: {
-		/** The BlueprintId component of the ARN. */
-		readonly blueprintId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static blueprint(props: BedrockBlueprintArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:blueprint/${props.blueprintId}`;
 	}
 
@@ -1417,12 +2372,7 @@ export class BedrockResources {
 	 * Parses a blueprint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBlueprintArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		blueprintId: string;
-	} {
+	static parseBlueprintArn(arn: string): BedrockBlueprintArnComponents {
 		const match = BlueprintArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid blueprint ARN: ${arn}`);
@@ -1438,16 +2388,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the blueprint-optimization-invocation resource.
 	 */
-	static blueprintOptimizationInvocation(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static blueprintOptimizationInvocation(
+		props: BedrockBlueprintOptimizationInvocationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:blueprint-optimization-invocation/${props.resourceId}`;
 	}
 
@@ -1462,12 +2405,9 @@ export class BedrockResources {
 	 * Parses a blueprint-optimization-invocation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBlueprintOptimizationInvocationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBlueprintOptimizationInvocationArn(
+		arn: string,
+	): BedrockBlueprintOptimizationInvocationArnComponents {
 		const match = BlueprintOptimizationInvocationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid blueprint-optimization-invocation ARN: ${arn}`);
@@ -1483,16 +2423,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the custom-model resource.
 	 */
-	static customModel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customModel(props: BedrockCustomModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:custom-model/${props.resourceId}`;
 	}
 
@@ -1507,12 +2438,7 @@ export class BedrockResources {
 	 * Parses a custom-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseCustomModelArn(arn: string): BedrockCustomModelArnComponents {
 		const match = CustomModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custom-model ARN: ${arn}`);
@@ -1528,16 +2454,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the custom-model-deployment resource.
 	 */
-	static customModelDeployment(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customModelDeployment(
+		props: BedrockCustomModelDeploymentArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:custom-model-deployment/${props.resourceId}`;
 	}
 
@@ -1552,12 +2471,9 @@ export class BedrockResources {
 	 * Parses a custom-model-deployment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomModelDeploymentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseCustomModelDeploymentArn(
+		arn: string,
+	): BedrockCustomModelDeploymentArnComponents {
 		const match = CustomModelDeploymentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custom-model-deployment ARN: ${arn}`);
@@ -1573,16 +2489,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the data-automation-invocation-job resource.
 	 */
-	static dataAutomationInvocationJob(props: {
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataAutomationInvocationJob(
+		props: BedrockDataAutomationInvocationJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:data-automation-invocation/${props.jobId}`;
 	}
 
@@ -1597,12 +2506,9 @@ export class BedrockResources {
 	 * Parses a data-automation-invocation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataAutomationInvocationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseDataAutomationInvocationJobArn(
+		arn: string,
+	): BedrockDataAutomationInvocationJobArnComponents {
 		const match = DataAutomationInvocationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-automation-invocation-job ARN: ${arn}`);
@@ -1618,16 +2524,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the data-automation-library resource.
 	 */
-	static dataAutomationLibrary(props: {
-		/** The DataAutomationLibraryId component of the ARN. */
-		readonly dataAutomationLibraryId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataAutomationLibrary(
+		props: BedrockDataAutomationLibraryArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:data-automation-library/${props.dataAutomationLibraryId}`;
 	}
 
@@ -1642,12 +2541,9 @@ export class BedrockResources {
 	 * Parses a data-automation-library ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataAutomationLibraryArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataAutomationLibraryId: string;
-	} {
+	static parseDataAutomationLibraryArn(
+		arn: string,
+	): BedrockDataAutomationLibraryArnComponents {
 		const match = DataAutomationLibraryArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-automation-library ARN: ${arn}`);
@@ -1663,16 +2559,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the data-automation-library-ingestion-job resource.
 	 */
-	static dataAutomationLibraryIngestionJob(props: {
-		/** The IngestionJobId component of the ARN. */
-		readonly ingestionJobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataAutomationLibraryIngestionJob(
+		props: BedrockDataAutomationLibraryIngestionJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:data-automation-library-ingestion-job/${props.ingestionJobId}`;
 	}
 
@@ -1687,12 +2576,9 @@ export class BedrockResources {
 	 * Parses a data-automation-library-ingestion-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataAutomationLibraryIngestionJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ingestionJobId: string;
-	} {
+	static parseDataAutomationLibraryIngestionJobArn(
+		arn: string,
+	): BedrockDataAutomationLibraryIngestionJobArnComponents {
 		const match = DataAutomationLibraryIngestionJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -1710,16 +2596,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the data-automation-profile resource.
 	 */
-	static dataAutomationProfile(props: {
-		/** The ProfileId component of the ARN. */
-		readonly profileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataAutomationProfile(
+		props: BedrockDataAutomationProfileArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:data-automation-profile/${props.profileId}`;
 	}
 
@@ -1734,12 +2613,9 @@ export class BedrockResources {
 	 * Parses a data-automation-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataAutomationProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profileId: string;
-	} {
+	static parseDataAutomationProfileArn(
+		arn: string,
+	): BedrockDataAutomationProfileArnComponents {
 		const match = DataAutomationProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-automation-profile ARN: ${arn}`);
@@ -1755,16 +2631,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the data-automation-project resource.
 	 */
-	static dataAutomationProject(props: {
-		/** The ProjectId component of the ARN. */
-		readonly projectId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataAutomationProject(
+		props: BedrockDataAutomationProjectArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:data-automation-project/${props.projectId}`;
 	}
 
@@ -1779,12 +2648,9 @@ export class BedrockResources {
 	 * Parses a data-automation-project ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataAutomationProjectArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		projectId: string;
-	} {
+	static parseDataAutomationProjectArn(
+		arn: string,
+	): BedrockDataAutomationProjectArnComponents {
 		const match = DataAutomationProjectArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid data-automation-project ARN: ${arn}`);
@@ -1800,16 +2666,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the default-prompt-router resource.
 	 */
-	static defaultPromptRouter(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static defaultPromptRouter(
+		props: BedrockDefaultPromptRouterArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:default-prompt-router/${props.resourceId}`;
 	}
 
@@ -1824,12 +2683,9 @@ export class BedrockResources {
 	 * Parses a default-prompt-router ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDefaultPromptRouterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDefaultPromptRouterArn(
+		arn: string,
+	): BedrockDefaultPromptRouterArnComponents {
 		const match = DefaultPromptRouterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid default-prompt-router ARN: ${arn}`);
@@ -1845,16 +2701,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the evaluation-job resource.
 	 */
-	static evaluationJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static evaluationJob(props: BedrockEvaluationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:evaluation-job/${props.resourceId}`;
 	}
 
@@ -1869,12 +2716,7 @@ export class BedrockResources {
 	 * Parses a evaluation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEvaluationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseEvaluationJobArn(arn: string): BedrockEvaluationJobArnComponents {
 		const match = EvaluationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid evaluation-job ARN: ${arn}`);
@@ -1890,16 +2732,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the flow resource.
 	 */
-	static flow(props: {
-		/** The FlowId component of the ARN. */
-		readonly flowId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static flow(props: BedrockFlowArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:flow/${props.flowId}`;
 	}
 
@@ -1914,12 +2747,7 @@ export class BedrockResources {
 	 * Parses a flow ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFlowArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		flowId: string;
-	} {
+	static parseFlowArn(arn: string): BedrockFlowArnComponents {
 		const match = FlowArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid flow ARN: ${arn}`);
@@ -1935,18 +2763,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the flow-alias resource.
 	 */
-	static flowAlias(props: {
-		/** The FlowId component of the ARN. */
-		readonly flowId: string;
-		/** The FlowAliasId component of the ARN. */
-		readonly flowAliasId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static flowAlias(props: BedrockFlowAliasArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:flow/${props.flowId}/alias/${props.flowAliasId}`;
 	}
 
@@ -1961,13 +2778,7 @@ export class BedrockResources {
 	 * Parses a flow-alias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFlowAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		flowId: string;
-		flowAliasId: string;
-	} {
+	static parseFlowAliasArn(arn: string): BedrockFlowAliasArnComponents {
 		const match = FlowAliasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid flow-alias ARN: ${arn}`);
@@ -1984,20 +2795,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the flow-execution resource.
 	 */
-	static flowExecution(props: {
-		/** The FlowId component of the ARN. */
-		readonly flowId: string;
-		/** The FlowAliasId component of the ARN. */
-		readonly flowAliasId: string;
-		/** The FlowExecutionId component of the ARN. */
-		readonly flowExecutionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static flowExecution(props: BedrockFlowExecutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:flow/${props.flowId}/alias/${props.flowAliasId}/execution/${props.flowExecutionId}`;
 	}
 
@@ -2012,14 +2810,7 @@ export class BedrockResources {
 	 * Parses a flow-execution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFlowExecutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		flowId: string;
-		flowAliasId: string;
-		flowExecutionId: string;
-	} {
+	static parseFlowExecutionArn(arn: string): BedrockFlowExecutionArnComponents {
 		const match = FlowExecutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid flow-execution ARN: ${arn}`);
@@ -2037,16 +2828,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the foundation-model resource.
 	 */
-	static foundationModel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static foundationModel(props: BedrockFoundationModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}::foundation-model/${props.resourceId}`;
 	}
 
@@ -2061,12 +2843,9 @@ export class BedrockResources {
 	 * Parses a foundation-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFoundationModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseFoundationModelArn(
+		arn: string,
+	): BedrockFoundationModelArnComponents {
 		const match = FoundationModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid foundation-model ARN: ${arn}`);
@@ -2082,16 +2861,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the guardrail resource.
 	 */
-	static guardrail(props: {
-		/** The GuardrailId component of the ARN. */
-		readonly guardrailId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static guardrail(props: BedrockGuardrailArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:guardrail/${props.guardrailId}`;
 	}
 
@@ -2106,12 +2876,7 @@ export class BedrockResources {
 	 * Parses a guardrail ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGuardrailArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		guardrailId: string;
-	} {
+	static parseGuardrailArn(arn: string): BedrockGuardrailArnComponents {
 		const match = GuardrailArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid guardrail ARN: ${arn}`);
@@ -2127,16 +2892,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the guardrail-profile resource.
 	 */
-	static guardrailProfile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static guardrailProfile(props: BedrockGuardrailProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:guardrail-profile/${props.resourceId}`;
 	}
 
@@ -2151,12 +2907,9 @@ export class BedrockResources {
 	 * Parses a guardrail-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGuardrailProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseGuardrailProfileArn(
+		arn: string,
+	): BedrockGuardrailProfileArnComponents {
 		const match = GuardrailProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid guardrail-profile ARN: ${arn}`);
@@ -2172,16 +2925,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the imported-model resource.
 	 */
-	static importedModel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static importedModel(props: BedrockImportedModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:imported-model/${props.resourceId}`;
 	}
 
@@ -2196,12 +2940,7 @@ export class BedrockResources {
 	 * Parses a imported-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportedModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseImportedModelArn(arn: string): BedrockImportedModelArnComponents {
 		const match = ImportedModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid imported-model ARN: ${arn}`);
@@ -2217,16 +2956,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the inference-profile resource.
 	 */
-	static inferenceProfile(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static inferenceProfile(props: BedrockInferenceProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:inference-profile/${props.resourceId}`;
 	}
 
@@ -2241,12 +2971,9 @@ export class BedrockResources {
 	 * Parses a inference-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInferenceProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseInferenceProfileArn(
+		arn: string,
+	): BedrockInferenceProfileArnComponents {
 		const match = InferenceProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid inference-profile ARN: ${arn}`);
@@ -2262,16 +2989,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the knowledge-base resource.
 	 */
-	static knowledgeBase(props: {
-		/** The KnowledgeBaseId component of the ARN. */
-		readonly knowledgeBaseId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static knowledgeBase(props: BedrockKnowledgeBaseArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:knowledge-base/${props.knowledgeBaseId}`;
 	}
 
@@ -2286,12 +3004,7 @@ export class BedrockResources {
 	 * Parses a knowledge-base ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseKnowledgeBaseArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		knowledgeBaseId: string;
-	} {
+	static parseKnowledgeBaseArn(arn: string): BedrockKnowledgeBaseArnComponents {
 		const match = KnowledgeBaseArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid knowledge-base ARN: ${arn}`);
@@ -2307,16 +3020,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the model-copy-job resource.
 	 */
-	static modelCopyJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelCopyJob(props: BedrockModelCopyJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:model-copy-job/${props.resourceId}`;
 	}
 
@@ -2331,12 +3035,7 @@ export class BedrockResources {
 	 * Parses a model-copy-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelCopyJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseModelCopyJobArn(arn: string): BedrockModelCopyJobArnComponents {
 		const match = ModelCopyJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-copy-job ARN: ${arn}`);
@@ -2352,16 +3051,9 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the model-customization-job resource.
 	 */
-	static modelCustomizationJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelCustomizationJob(
+		props: BedrockModelCustomizationJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:model-customization-job/${props.resourceId}`;
 	}
 
@@ -2376,12 +3068,9 @@ export class BedrockResources {
 	 * Parses a model-customization-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelCustomizationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseModelCustomizationJobArn(
+		arn: string,
+	): BedrockModelCustomizationJobArnComponents {
 		const match = ModelCustomizationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-customization-job ARN: ${arn}`);
@@ -2397,16 +3086,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the model-evaluation-job resource.
 	 */
-	static modelEvaluationJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelEvaluationJob(props: BedrockModelEvaluationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:model-evaluation-job/${props.resourceId}`;
 	}
 
@@ -2421,12 +3101,9 @@ export class BedrockResources {
 	 * Parses a model-evaluation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelEvaluationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseModelEvaluationJobArn(
+		arn: string,
+	): BedrockModelEvaluationJobArnComponents {
 		const match = ModelEvaluationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-evaluation-job ARN: ${arn}`);
@@ -2442,16 +3119,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the model-import-job resource.
 	 */
-	static modelImportJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelImportJob(props: BedrockModelImportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:model-import-job/${props.resourceId}`;
 	}
 
@@ -2466,12 +3134,9 @@ export class BedrockResources {
 	 * Parses a model-import-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelImportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseModelImportJobArn(
+		arn: string,
+	): BedrockModelImportJobArnComponents {
 		const match = ModelImportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-import-job ARN: ${arn}`);
@@ -2487,16 +3152,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the model-invocation-job resource.
 	 */
-	static modelInvocationJob(props: {
-		/** The JobIdentifier component of the ARN. */
-		readonly jobIdentifier: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static modelInvocationJob(props: BedrockModelInvocationJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:model-invocation-job/${props.jobIdentifier}`;
 	}
 
@@ -2511,12 +3167,9 @@ export class BedrockResources {
 	 * Parses a model-invocation-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseModelInvocationJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobIdentifier: string;
-	} {
+	static parseModelInvocationJobArn(
+		arn: string,
+	): BedrockModelInvocationJobArnComponents {
 		const match = ModelInvocationJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid model-invocation-job ARN: ${arn}`);
@@ -2532,16 +3185,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the prompt resource.
 	 */
-	static prompt(props: {
-		/** The PromptId component of the ARN. */
-		readonly promptId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static prompt(props: BedrockPromptArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:prompt/${props.promptId}`;
 	}
 
@@ -2556,12 +3200,7 @@ export class BedrockResources {
 	 * Parses a prompt ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePromptArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		promptId: string;
-	} {
+	static parsePromptArn(arn: string): BedrockPromptArnComponents {
 		const match = PromptArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid prompt ARN: ${arn}`);
@@ -2577,16 +3216,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the prompt-router resource.
 	 */
-	static promptRouter(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static promptRouter(props: BedrockPromptRouterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:prompt-router/${props.resourceId}`;
 	}
 
@@ -2601,12 +3231,7 @@ export class BedrockResources {
 	 * Parses a prompt-router ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePromptRouterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parsePromptRouterArn(arn: string): BedrockPromptRouterArnComponents {
 		const match = PromptRouterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid prompt-router ARN: ${arn}`);
@@ -2622,18 +3247,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the prompt-version resource.
 	 */
-	static promptVersion(props: {
-		/** The PromptId component of the ARN. */
-		readonly promptId: string;
-		/** The PromptVersion component of the ARN. */
-		readonly promptVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static promptVersion(props: BedrockPromptVersionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:prompt/${props.promptId}:${props.promptVersion}`;
 	}
 
@@ -2648,13 +3262,7 @@ export class BedrockResources {
 	 * Parses a prompt-version ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePromptVersionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		promptId: string;
-		promptVersion: string;
-	} {
+	static parsePromptVersionArn(arn: string): BedrockPromptVersionArnComponents {
 		const match = PromptVersionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid prompt-version ARN: ${arn}`);
@@ -2671,16 +3279,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the provisioned-model resource.
 	 */
-	static provisionedModel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static provisionedModel(props: BedrockProvisionedModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:provisioned-model/${props.resourceId}`;
 	}
 
@@ -2695,12 +3294,9 @@ export class BedrockResources {
 	 * Parses a provisioned-model ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProvisionedModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseProvisionedModelArn(
+		arn: string,
+	): BedrockProvisionedModelArnComponents {
 		const match = ProvisionedModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid provisioned-model ARN: ${arn}`);
@@ -2716,16 +3312,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the session resource.
 	 */
-	static session(props: {
-		/** The SessionId component of the ARN. */
-		readonly sessionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static session(props: BedrockSessionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock:${props.region ?? "*"}:${props.account ?? "*"}:session/${props.sessionId}`;
 	}
 
@@ -2740,12 +3327,7 @@ export class BedrockResources {
 	 * Parses a session ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSessionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sessionId: string;
-	} {
+	static parseSessionArn(arn: string): BedrockSessionArnComponents {
 		const match = SessionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid session ARN: ${arn}`);
@@ -2761,14 +3343,7 @@ export class BedrockResources {
 	/**
 	 * Builds an ARN for the system-tool resource.
 	 */
-	static systemTool(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static systemTool(props: BedrockSystemToolArnProps): string {
 		return `arn:${props.partition ?? "aws"}:bedrock::${props.account ?? "*"}:system-tool/${props.resourceId}`;
 	}
 
@@ -2783,11 +3358,7 @@ export class BedrockResources {
 	 * Parses a system-tool ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSystemToolArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSystemToolArn(arn: string): BedrockSystemToolArnComponents {
 		const match = SystemToolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid system-tool ARN: ${arn}`);
@@ -2805,639 +3376,635 @@ export class BedrockResources {
  */
 export class BedrockOperations {
 	/** IAM actions required for the AgenticRetrieveStream API call. */
-	static readonly AGENTIC_RETRIEVE_STREAM: string[] = [
+	static readonly AgenticRetrieveStream: string[] = [
 		"bedrock:AgenticRetrieveStream",
 		"bedrock:Retrieve",
 	];
 	/** IAM actions required for the ApplyGuardrail API call. */
-	static readonly APPLY_GUARDRAIL: string[] = [
+	static readonly ApplyGuardrail: string[] = [
 		"bedrock:ApplyGuardrail",
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeAutomatedReasoningPolicy",
 	];
 	/** IAM actions required for the AssociateAgentCollaborator API call. */
-	static readonly ASSOCIATE_AGENT_COLLABORATOR: string[] = [
+	static readonly AssociateAgentCollaborator: string[] = [
 		"bedrock:AssociateAgentCollaborator",
 	];
 	/** IAM actions required for the AssociateAgentKnowledgeBase API call. */
-	static readonly ASSOCIATE_AGENT_KNOWLEDGE_BASE: string[] = [
+	static readonly AssociateAgentKnowledgeBase: string[] = [
 		"bedrock:AssociateAgentKnowledgeBase",
 	];
 	/** IAM actions required for the BatchDeleteAdvancedPromptOptimizationJob API call. */
-	static readonly BATCH_DELETE_ADVANCED_PROMPT_OPTIMIZATION_JOB: string[] = [
+	static readonly BatchDeleteAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:BatchDeleteAdvancedPromptOptimizationJob",
 	];
 	/** IAM actions required for the BatchDeleteEvaluationJob API call. */
-	static readonly BATCH_DELETE_EVALUATION_JOB: string[] = [
+	static readonly BatchDeleteEvaluationJob: string[] = [
 		"bedrock:BatchDeleteEvaluationJob",
 	];
 	/** IAM actions required for the CancelAutomatedReasoningPolicyBuildWorkflow API call. */
-	static readonly CANCEL_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW: string[] = [
+	static readonly CancelAutomatedReasoningPolicyBuildWorkflow: string[] = [
 		"bedrock:CancelAutomatedReasoningPolicyBuildWorkflow",
 	];
 	/** IAM actions required for the Converse API call. */
-	static readonly CONVERSE: string[] = [
+	static readonly Converse: string[] = [
 		"bedrock:ApplyGuardrail",
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModel",
 		"bedrock:InvokeTool",
 	];
 	/** IAM actions required for the ConverseStream API call. */
-	static readonly CONVERSE_STREAM: string[] = [
+	static readonly ConverseStream: string[] = [
 		"bedrock:ApplyGuardrail",
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModelWithResponseStream",
 		"bedrock:InvokeTool",
 	];
 	/** IAM actions required for the CopyBlueprintStage API call. */
-	static readonly COPY_BLUEPRINT_STAGE: string[] = [
-		"bedrock:CopyBlueprintStage",
-	];
+	static readonly CopyBlueprintStage: string[] = ["bedrock:CopyBlueprintStage"];
 	/** IAM actions required for the CountTokens API call. */
-	static readonly COUNT_TOKENS: string[] = [
+	static readonly CountTokens: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CountTokens",
 	];
 	/** IAM actions required for the CreateAdvancedPromptOptimizationJob API call. */
-	static readonly CREATE_ADVANCED_PROMPT_OPTIMIZATION_JOB: string[] = [
+	static readonly CreateAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateAdvancedPromptOptimizationJob",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateAgent API call. */
-	static readonly CREATE_AGENT: string[] = [
+	static readonly CreateAgent: string[] = [
 		"bedrock:CreateAgent",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateAgentActionGroup API call. */
-	static readonly CREATE_AGENT_ACTION_GROUP: string[] = [
+	static readonly CreateAgentActionGroup: string[] = [
 		"bedrock:CreateAgentActionGroup",
 	];
 	/** IAM actions required for the CreateAgentAlias API call. */
-	static readonly CREATE_AGENT_ALIAS: string[] = [
+	static readonly CreateAgentAlias: string[] = [
 		"bedrock:CreateAgentAlias",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateAutomatedReasoningPolicy API call. */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY: string[] = [
+	static readonly CreateAutomatedReasoningPolicy: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateAutomatedReasoningPolicy",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateAutomatedReasoningPolicyTestCase API call. */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_TEST_CASE: string[] = [
+	static readonly CreateAutomatedReasoningPolicyTestCase: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateAutomatedReasoningPolicyTestCase",
 	];
 	/** IAM actions required for the CreateAutomatedReasoningPolicyVersion API call. */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_VERSION: string[] = [
+	static readonly CreateAutomatedReasoningPolicyVersion: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateAutomatedReasoningPolicyVersion",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateBlueprint API call. */
-	static readonly CREATE_BLUEPRINT: string[] = [
+	static readonly CreateBlueprint: string[] = [
 		"bedrock:CreateBlueprint",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateBlueprintVersion API call. */
-	static readonly CREATE_BLUEPRINT_VERSION: string[] = [
+	static readonly CreateBlueprintVersion: string[] = [
 		"bedrock:CreateBlueprintVersion",
 	];
 	/** IAM actions required for the CreateCustomModel API call. */
-	static readonly CREATE_CUSTOM_MODEL: string[] = [
+	static readonly CreateCustomModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateCustomModel",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateCustomModelDeployment API call. */
-	static readonly CREATE_CUSTOM_MODEL_DEPLOYMENT: string[] = [
+	static readonly CreateCustomModelDeployment: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateCustomModelDeployment",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateDataAutomationLibrary API call. */
-	static readonly CREATE_DATA_AUTOMATION_LIBRARY: string[] = [
+	static readonly CreateDataAutomationLibrary: string[] = [
 		"bedrock:CreateDataAutomationLibrary",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateDataAutomationProject API call. */
-	static readonly CREATE_DATA_AUTOMATION_PROJECT: string[] = [
+	static readonly CreateDataAutomationProject: string[] = [
 		"bedrock:CreateDataAutomationProject",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateDataSource API call. */
-	static readonly CREATE_DATA_SOURCE: string[] = ["bedrock:CreateDataSource"];
+	static readonly CreateDataSource: string[] = ["bedrock:CreateDataSource"];
 	/** IAM actions required for the CreateEvaluationJob API call. */
-	static readonly CREATE_EVALUATION_JOB: string[] = [
+	static readonly CreateEvaluationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateEvaluationJob",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateFlow API call. */
-	static readonly CREATE_FLOW: string[] = [
+	static readonly CreateFlow: string[] = [
 		"bedrock:CreateFlow",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateFlowAlias API call. */
-	static readonly CREATE_FLOW_ALIAS: string[] = [
+	static readonly CreateFlowAlias: string[] = [
 		"bedrock:CreateFlowAlias",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateFlowVersion API call. */
-	static readonly CREATE_FLOW_VERSION: string[] = ["bedrock:CreateFlowVersion"];
+	static readonly CreateFlowVersion: string[] = ["bedrock:CreateFlowVersion"];
 	/** IAM actions required for the CreateFoundationModelAgreement API call. */
-	static readonly CREATE_FOUNDATION_MODEL_AGREEMENT: string[] = [
+	static readonly CreateFoundationModelAgreement: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateFoundationModelAgreement",
 	];
 	/** IAM actions required for the CreateGuardrail API call. */
-	static readonly CREATE_GUARDRAIL: string[] = [
+	static readonly CreateGuardrail: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateGuardrail",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateGuardrailVersion API call. */
-	static readonly CREATE_GUARDRAIL_VERSION: string[] = [
+	static readonly CreateGuardrailVersion: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateGuardrailVersion",
 	];
 	/** IAM actions required for the CreateInferenceProfile API call. */
-	static readonly CREATE_INFERENCE_PROFILE: string[] = [
+	static readonly CreateInferenceProfile: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateInferenceProfile",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateInvocation API call. */
-	static readonly CREATE_INVOCATION: string[] = ["bedrock:CreateInvocation"];
+	static readonly CreateInvocation: string[] = ["bedrock:CreateInvocation"];
 	/** IAM actions required for the CreateKnowledgeBase API call. */
-	static readonly CREATE_KNOWLEDGE_BASE: string[] = [
+	static readonly CreateKnowledgeBase: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"bedrock:CreateKnowledgeBase",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateMarketplaceModelEndpoint API call. */
-	static readonly CREATE_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly CreateMarketplaceModelEndpoint: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateMarketplaceModelEndpoint",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateModelCopyJob API call. */
-	static readonly CREATE_MODEL_COPY_JOB: string[] = [
+	static readonly CreateModelCopyJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateModelCopyJob",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateModelCustomizationJob API call. */
-	static readonly CREATE_MODEL_CUSTOMIZATION_JOB: string[] = [
+	static readonly CreateModelCustomizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateModelCustomizationJob",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateModelImportJob API call. */
-	static readonly CREATE_MODEL_IMPORT_JOB: string[] = [
+	static readonly CreateModelImportJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateModelImportJob",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateModelInvocationJob API call. */
-	static readonly CREATE_MODEL_INVOCATION_JOB: string[] = [
+	static readonly CreateModelInvocationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateModelInvocationJob",
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreatePrompt API call. */
-	static readonly CREATE_PROMPT: string[] = [
+	static readonly CreatePrompt: string[] = [
 		"bedrock:CreatePrompt",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreatePromptRouter API call. */
-	static readonly CREATE_PROMPT_ROUTER: string[] = [
+	static readonly CreatePromptRouter: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreatePromptRouter",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreatePromptVersion API call. */
-	static readonly CREATE_PROMPT_VERSION: string[] = [
+	static readonly CreatePromptVersion: string[] = [
 		"bedrock:CreatePromptVersion",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateProvisionedModelThroughput API call. */
-	static readonly CREATE_PROVISIONED_MODEL_THROUGHPUT: string[] = [
+	static readonly CreateProvisionedModelThroughput: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:CreateProvisionedModelThroughput",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateSession API call. */
-	static readonly CREATE_SESSION: string[] = [
+	static readonly CreateSession: string[] = [
 		"bedrock:CreateSession",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the DeleteAgent API call. */
-	static readonly DELETE_AGENT: string[] = ["bedrock:DeleteAgent"];
+	static readonly DeleteAgent: string[] = ["bedrock:DeleteAgent"];
 	/** IAM actions required for the DeleteAgentActionGroup API call. */
-	static readonly DELETE_AGENT_ACTION_GROUP: string[] = [
+	static readonly DeleteAgentActionGroup: string[] = [
 		"bedrock:DeleteAgentActionGroup",
 	];
 	/** IAM actions required for the DeleteAgentAlias API call. */
-	static readonly DELETE_AGENT_ALIAS: string[] = ["bedrock:DeleteAgentAlias"];
+	static readonly DeleteAgentAlias: string[] = ["bedrock:DeleteAgentAlias"];
 	/** IAM actions required for the DeleteAgentMemory API call. */
-	static readonly DELETE_AGENT_MEMORY: string[] = ["bedrock:DeleteAgentMemory"];
+	static readonly DeleteAgentMemory: string[] = ["bedrock:DeleteAgentMemory"];
 	/** IAM actions required for the DeleteAgentVersion API call. */
-	static readonly DELETE_AGENT_VERSION: string[] = [
-		"bedrock:DeleteAgentVersion",
-	];
+	static readonly DeleteAgentVersion: string[] = ["bedrock:DeleteAgentVersion"];
 	/** IAM actions required for the DeleteAutomatedReasoningPolicy API call. */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY: string[] = [
+	static readonly DeleteAutomatedReasoningPolicy: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteAutomatedReasoningPolicy",
 	];
 	/** IAM actions required for the DeleteAutomatedReasoningPolicyBuildWorkflow API call. */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW: string[] = [
+	static readonly DeleteAutomatedReasoningPolicyBuildWorkflow: string[] = [
 		"bedrock:DeleteAutomatedReasoningPolicyBuildWorkflow",
 	];
 	/** IAM actions required for the DeleteAutomatedReasoningPolicyTestCase API call. */
-	static readonly DELETE_AUTOMATED_REASONING_POLICY_TEST_CASE: string[] = [
+	static readonly DeleteAutomatedReasoningPolicyTestCase: string[] = [
 		"bedrock:DeleteAutomatedReasoningPolicyTestCase",
 	];
 	/** IAM actions required for the DeleteBlueprint API call. */
-	static readonly DELETE_BLUEPRINT: string[] = ["bedrock:DeleteBlueprint"];
+	static readonly DeleteBlueprint: string[] = ["bedrock:DeleteBlueprint"];
 	/** IAM actions required for the DeleteCustomModel API call. */
-	static readonly DELETE_CUSTOM_MODEL: string[] = [
+	static readonly DeleteCustomModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteCustomModel",
 	];
 	/** IAM actions required for the DeleteCustomModelDeployment API call. */
-	static readonly DELETE_CUSTOM_MODEL_DEPLOYMENT: string[] = [
+	static readonly DeleteCustomModelDeployment: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteCustomModelDeployment",
 	];
 	/** IAM actions required for the DeleteDataAutomationLibrary API call. */
-	static readonly DELETE_DATA_AUTOMATION_LIBRARY: string[] = [
+	static readonly DeleteDataAutomationLibrary: string[] = [
 		"bedrock:DeleteDataAutomationLibrary",
 	];
 	/** IAM actions required for the DeleteDataAutomationProject API call. */
-	static readonly DELETE_DATA_AUTOMATION_PROJECT: string[] = [
+	static readonly DeleteDataAutomationProject: string[] = [
 		"bedrock:DeleteDataAutomationProject",
 	];
 	/** IAM actions required for the DeleteDataSource API call. */
-	static readonly DELETE_DATA_SOURCE: string[] = ["bedrock:DeleteDataSource"];
+	static readonly DeleteDataSource: string[] = ["bedrock:DeleteDataSource"];
 	/** IAM actions required for the DeleteEnforcedGuardrailConfiguration API call. */
-	static readonly DELETE_ENFORCED_GUARDRAIL_CONFIGURATION: string[] = [
+	static readonly DeleteEnforcedGuardrailConfiguration: string[] = [
 		"bedrock:DeleteEnforcedGuardrailConfiguration",
 	];
 	/** IAM actions required for the DeleteFlow API call. */
-	static readonly DELETE_FLOW: string[] = ["bedrock:DeleteFlow"];
+	static readonly DeleteFlow: string[] = ["bedrock:DeleteFlow"];
 	/** IAM actions required for the DeleteFlowAlias API call. */
-	static readonly DELETE_FLOW_ALIAS: string[] = ["bedrock:DeleteFlowAlias"];
+	static readonly DeleteFlowAlias: string[] = ["bedrock:DeleteFlowAlias"];
 	/** IAM actions required for the DeleteFlowVersion API call. */
-	static readonly DELETE_FLOW_VERSION: string[] = ["bedrock:DeleteFlowVersion"];
+	static readonly DeleteFlowVersion: string[] = ["bedrock:DeleteFlowVersion"];
 	/** IAM actions required for the DeleteFoundationModelAgreement API call. */
-	static readonly DELETE_FOUNDATION_MODEL_AGREEMENT: string[] = [
+	static readonly DeleteFoundationModelAgreement: string[] = [
 		"bedrock:DeleteFoundationModelAgreement",
 	];
 	/** IAM actions required for the DeleteGuardrail API call. */
-	static readonly DELETE_GUARDRAIL: string[] = [
+	static readonly DeleteGuardrail: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteGuardrail",
 	];
 	/** IAM actions required for the DeleteImportedModel API call. */
-	static readonly DELETE_IMPORTED_MODEL: string[] = [
+	static readonly DeleteImportedModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteImportedModel",
 	];
 	/** IAM actions required for the DeleteInferenceProfile API call. */
-	static readonly DELETE_INFERENCE_PROFILE: string[] = [
+	static readonly DeleteInferenceProfile: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteInferenceProfile",
 	];
 	/** IAM actions required for the DeleteKnowledgeBase API call. */
-	static readonly DELETE_KNOWLEDGE_BASE: string[] = [
+	static readonly DeleteKnowledgeBase: string[] = [
 		"bedrock:DeleteKnowledgeBase",
 	];
 	/** IAM actions required for the DeleteKnowledgeBaseDocuments API call. */
-	static readonly DELETE_KNOWLEDGE_BASE_DOCUMENTS: string[] = [
+	static readonly DeleteKnowledgeBaseDocuments: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"bedrock:DeleteKnowledgeBaseDocuments",
 		"bedrock:StartIngestionJob",
 	];
 	/** IAM actions required for the DeleteMarketplaceModelEndpoint API call. */
-	static readonly DELETE_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly DeleteMarketplaceModelEndpoint: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the DeleteModelInvocationLoggingConfiguration API call. */
-	static readonly DELETE_MODEL_INVOCATION_LOGGING_CONFIGURATION: string[] = [
+	static readonly DeleteModelInvocationLoggingConfiguration: string[] = [
 		"bedrock:DeleteModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the DeletePrompt API call. */
-	static readonly DELETE_PROMPT: string[] = ["bedrock:DeletePrompt"];
+	static readonly DeletePrompt: string[] = ["bedrock:DeletePrompt"];
 	/** IAM actions required for the DeletePromptRouter API call. */
-	static readonly DELETE_PROMPT_ROUTER: string[] = [
+	static readonly DeletePromptRouter: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeletePromptRouter",
 	];
 	/** IAM actions required for the DeleteProvisionedModelThroughput API call. */
-	static readonly DELETE_PROVISIONED_MODEL_THROUGHPUT: string[] = [
+	static readonly DeleteProvisionedModelThroughput: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:DeleteProvisionedModelThroughput",
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
+	static readonly DeleteResourcePolicy: string[] = [
 		"bedrock:DeleteResourcePolicy",
 		"bedrock:PutResourcePolicy",
 	];
 	/** IAM actions required for the DeleteSession API call. */
-	static readonly DELETE_SESSION: string[] = ["bedrock:DeleteSession"];
+	static readonly DeleteSession: string[] = ["bedrock:DeleteSession"];
 	/** IAM actions required for the DeregisterMarketplaceModelEndpoint API call. */
-	static readonly DEREGISTER_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly DeregisterMarketplaceModelEndpoint: string[] = [
 		"bedrock:DeregisterMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the DisassociateAgentCollaborator API call. */
-	static readonly DISASSOCIATE_AGENT_COLLABORATOR: string[] = [
+	static readonly DisassociateAgentCollaborator: string[] = [
 		"bedrock:DisassociateAgentCollaborator",
 	];
 	/** IAM actions required for the DisassociateAgentKnowledgeBase API call. */
-	static readonly DISASSOCIATE_AGENT_KNOWLEDGE_BASE: string[] = [
+	static readonly DisassociateAgentKnowledgeBase: string[] = [
 		"bedrock:DisassociateAgentKnowledgeBase",
 	];
 	/** IAM actions required for the EndSession API call. */
-	static readonly END_SESSION: string[] = ["bedrock:EndSession"];
+	static readonly EndSession: string[] = ["bedrock:EndSession"];
 	/** IAM actions required for the ExportAutomatedReasoningPolicyVersion API call. */
-	static readonly EXPORT_AUTOMATED_REASONING_POLICY_VERSION: string[] = [
+	static readonly ExportAutomatedReasoningPolicyVersion: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ExportAutomatedReasoningPolicyVersion",
 	];
 	/** IAM actions required for the GenerateQuery API call. */
-	static readonly GENERATE_QUERY: string[] = [
+	static readonly GenerateQuery: string[] = [
 		"bedrock:GenerateQuery",
 		"bedrock:GetKnowledgeBase",
 	];
 	/** IAM actions required for the GetAccountDataRetention API call. */
-	static readonly GET_ACCOUNT_DATA_RETENTION: string[] = [
+	static readonly opGetAccountDataRetention: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetAccountDataRetention",
 	];
 	/** IAM actions required for the GetAdvancedPromptOptimizationJob API call. */
-	static readonly GET_ADVANCED_PROMPT_OPTIMIZATION_JOB: string[] = [
+	static readonly opGetAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:GetAdvancedPromptOptimizationJob",
 	];
 	/** IAM actions required for the GetAgent API call. */
-	static readonly GET_AGENT: string[] = ["bedrock:GetAgent"];
+	static readonly opGetAgent: string[] = ["bedrock:GetAgent"];
 	/** IAM actions required for the GetAgentActionGroup API call. */
-	static readonly GET_AGENT_ACTION_GROUP: string[] = [
+	static readonly opGetAgentActionGroup: string[] = [
 		"bedrock:GetAgentActionGroup",
 	];
 	/** IAM actions required for the GetAgentAlias API call. */
-	static readonly GET_AGENT_ALIAS: string[] = ["bedrock:GetAgentAlias"];
+	static readonly opGetAgentAlias: string[] = ["bedrock:GetAgentAlias"];
 	/** IAM actions required for the GetAgentCollaborator API call. */
-	static readonly GET_AGENT_COLLABORATOR: string[] = [
+	static readonly opGetAgentCollaborator: string[] = [
 		"bedrock:GetAgentCollaborator",
 	];
 	/** IAM actions required for the GetAgentKnowledgeBase API call. */
-	static readonly GET_AGENT_KNOWLEDGE_BASE: string[] = [
+	static readonly opGetAgentKnowledgeBase: string[] = [
 		"bedrock:GetAgentKnowledgeBase",
 	];
 	/** IAM actions required for the GetAgentMemory API call. */
-	static readonly GET_AGENT_MEMORY: string[] = ["bedrock:GetAgentMemory"];
+	static readonly opGetAgentMemory: string[] = ["bedrock:GetAgentMemory"];
 	/** IAM actions required for the GetAgentVersion API call. */
-	static readonly GET_AGENT_VERSION: string[] = ["bedrock:GetAgentVersion"];
+	static readonly opGetAgentVersion: string[] = ["bedrock:GetAgentVersion"];
 	/** IAM actions required for the GetAsyncInvoke API call. */
-	static readonly GET_ASYNC_INVOKE: string[] = [
+	static readonly opGetAsyncInvoke: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetAsyncInvoke",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicy API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY: string[] = [
+	static readonly opGetAutomatedReasoningPolicy: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetAutomatedReasoningPolicy",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicyAnnotations API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_ANNOTATIONS: string[] = [
+	static readonly opGetAutomatedReasoningPolicyAnnotations: string[] = [
 		"bedrock:GetAutomatedReasoningPolicyAnnotations",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicyBuildWorkflow API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW: string[] = [
+	static readonly opGetAutomatedReasoningPolicyBuildWorkflow: string[] = [
 		"bedrock:GetAutomatedReasoningPolicyBuildWorkflow",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicyBuildWorkflowResultAssets API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW_RESULT_ASSETS: string[] =
+	static readonly opGetAutomatedReasoningPolicyBuildWorkflowResultAssets: string[] =
 		["bedrock:GetAutomatedReasoningPolicyBuildWorkflowResultAssets"];
 	/** IAM actions required for the GetAutomatedReasoningPolicyNextScenario API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_NEXT_SCENARIO: string[] = [
+	static readonly opGetAutomatedReasoningPolicyNextScenario: string[] = [
 		"bedrock:GetAutomatedReasoningPolicyNextScenario",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicyTestCase API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_TEST_CASE: string[] = [
+	static readonly opGetAutomatedReasoningPolicyTestCase: string[] = [
 		"bedrock:GetAutomatedReasoningPolicyTestCase",
 	];
 	/** IAM actions required for the GetAutomatedReasoningPolicyTestResult API call. */
-	static readonly GET_AUTOMATED_REASONING_POLICY_TEST_RESULT: string[] = [
+	static readonly opGetAutomatedReasoningPolicyTestResult: string[] = [
 		"bedrock:GetAutomatedReasoningPolicyTestResult",
 	];
 	/** IAM actions required for the GetBlueprint API call. */
-	static readonly GET_BLUEPRINT: string[] = ["bedrock:GetBlueprint"];
+	static readonly opGetBlueprint: string[] = ["bedrock:GetBlueprint"];
 	/** IAM actions required for the GetBlueprintOptimizationStatus API call. */
-	static readonly GET_BLUEPRINT_OPTIMIZATION_STATUS: string[] = [
+	static readonly opGetBlueprintOptimizationStatus: string[] = [
 		"bedrock:GetBlueprintOptimizationStatus",
 	];
 	/** IAM actions required for the GetCustomModel API call. */
-	static readonly GET_CUSTOM_MODEL: string[] = [
+	static readonly opGetCustomModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetCustomModel",
 	];
 	/** IAM actions required for the GetCustomModelDeployment API call. */
-	static readonly GET_CUSTOM_MODEL_DEPLOYMENT: string[] = [
+	static readonly opGetCustomModelDeployment: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetCustomModelDeployment",
 	];
 	/** IAM actions required for the GetDataAutomationLibrary API call. */
-	static readonly GET_DATA_AUTOMATION_LIBRARY: string[] = [
+	static readonly opGetDataAutomationLibrary: string[] = [
 		"bedrock:GetDataAutomationLibrary",
 	];
 	/** IAM actions required for the GetDataAutomationLibraryEntity API call. */
-	static readonly GET_DATA_AUTOMATION_LIBRARY_ENTITY: string[] = [
+	static readonly opGetDataAutomationLibraryEntity: string[] = [
 		"bedrock:GetDataAutomationLibraryEntity",
 	];
 	/** IAM actions required for the GetDataAutomationLibraryIngestionJob API call. */
-	static readonly GET_DATA_AUTOMATION_LIBRARY_INGESTION_JOB: string[] = [
+	static readonly opGetDataAutomationLibraryIngestionJob: string[] = [
 		"bedrock:GetDataAutomationLibraryIngestionJob",
 	];
 	/** IAM actions required for the GetDataAutomationProject API call. */
-	static readonly GET_DATA_AUTOMATION_PROJECT: string[] = [
+	static readonly opGetDataAutomationProject: string[] = [
 		"bedrock:GetDataAutomationProject",
 	];
 	/** IAM actions required for the GetDataAutomationStatus API call. */
-	static readonly GET_DATA_AUTOMATION_STATUS: string[] = [
+	static readonly opGetDataAutomationStatus: string[] = [
 		"bedrock:GetDataAutomationStatus",
 	];
 	/** IAM actions required for the GetDataSource API call. */
-	static readonly GET_DATA_SOURCE: string[] = ["bedrock:GetDataSource"];
+	static readonly opGetDataSource: string[] = ["bedrock:GetDataSource"];
 	/** IAM actions required for the GetDocumentContent API call. */
-	static readonly GET_DOCUMENT_CONTENT: string[] = [
+	static readonly opGetDocumentContent: string[] = [
 		"bedrock:GetDocumentContent",
 		"bedrock:Retrieve",
 	];
 	/** IAM actions required for the GetEvaluationJob API call. */
-	static readonly GET_EVALUATION_JOB: string[] = [
+	static readonly opGetEvaluationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetEvaluationJob",
 	];
 	/** IAM actions required for the GetExecutionFlowSnapshot API call. */
-	static readonly GET_EXECUTION_FLOW_SNAPSHOT: string[] = [
+	static readonly opGetExecutionFlowSnapshot: string[] = [
 		"bedrock:GetExecutionFlowSnapshot",
 	];
 	/** IAM actions required for the GetFlow API call. */
-	static readonly GET_FLOW: string[] = ["bedrock:GetFlow"];
+	static readonly opGetFlow: string[] = ["bedrock:GetFlow"];
 	/** IAM actions required for the GetFlowAlias API call. */
-	static readonly GET_FLOW_ALIAS: string[] = ["bedrock:GetFlowAlias"];
+	static readonly opGetFlowAlias: string[] = ["bedrock:GetFlowAlias"];
 	/** IAM actions required for the GetFlowExecution API call. */
-	static readonly GET_FLOW_EXECUTION: string[] = ["bedrock:GetFlowExecution"];
+	static readonly opGetFlowExecution: string[] = ["bedrock:GetFlowExecution"];
 	/** IAM actions required for the GetFlowVersion API call. */
-	static readonly GET_FLOW_VERSION: string[] = ["bedrock:GetFlowVersion"];
+	static readonly opGetFlowVersion: string[] = ["bedrock:GetFlowVersion"];
 	/** IAM actions required for the GetFoundationModel API call. */
-	static readonly GET_FOUNDATION_MODEL: string[] = [
+	static readonly opGetFoundationModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetFoundationModel",
 	];
 	/** IAM actions required for the GetFoundationModelAvailability API call. */
-	static readonly GET_FOUNDATION_MODEL_AVAILABILITY: string[] = [
+	static readonly opGetFoundationModelAvailability: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetFoundationModelAvailability",
 	];
 	/** IAM actions required for the GetGuardrail API call. */
-	static readonly GET_GUARDRAIL: string[] = [
+	static readonly opGetGuardrail: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetGuardrail",
 	];
 	/** IAM actions required for the GetImportedModel API call. */
-	static readonly GET_IMPORTED_MODEL: string[] = [
+	static readonly opGetImportedModel: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetImportedModel",
 	];
 	/** IAM actions required for the GetInferenceProfile API call. */
-	static readonly GET_INFERENCE_PROFILE: string[] = [
+	static readonly opGetInferenceProfile: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetInferenceProfile",
 	];
 	/** IAM actions required for the GetIngestionJob API call. */
-	static readonly GET_INGESTION_JOB: string[] = ["bedrock:GetIngestionJob"];
+	static readonly opGetIngestionJob: string[] = ["bedrock:GetIngestionJob"];
 	/** IAM actions required for the GetInvocationStep API call. */
-	static readonly GET_INVOCATION_STEP: string[] = ["bedrock:GetInvocationStep"];
+	static readonly opGetInvocationStep: string[] = ["bedrock:GetInvocationStep"];
 	/** IAM actions required for the GetKnowledgeBase API call. */
-	static readonly GET_KNOWLEDGE_BASE: string[] = ["bedrock:GetKnowledgeBase"];
+	static readonly opGetKnowledgeBase: string[] = ["bedrock:GetKnowledgeBase"];
 	/** IAM actions required for the GetKnowledgeBaseDocuments API call. */
-	static readonly GET_KNOWLEDGE_BASE_DOCUMENTS: string[] = [
+	static readonly opGetKnowledgeBaseDocuments: string[] = [
 		"bedrock:GetKnowledgeBaseDocuments",
 	];
 	/** IAM actions required for the GetMarketplaceModelEndpoint API call. */
-	static readonly GET_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly opGetMarketplaceModelEndpoint: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the GetModelCopyJob API call. */
-	static readonly GET_MODEL_COPY_JOB: string[] = [
+	static readonly opGetModelCopyJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelCopyJob",
 	];
 	/** IAM actions required for the GetModelCustomizationJob API call. */
-	static readonly GET_MODEL_CUSTOMIZATION_JOB: string[] = [
+	static readonly opGetModelCustomizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelCustomizationJob",
 	];
 	/** IAM actions required for the GetModelImportJob API call. */
-	static readonly GET_MODEL_IMPORT_JOB: string[] = [
+	static readonly opGetModelImportJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelImportJob",
 	];
 	/** IAM actions required for the GetModelInvocationJob API call. */
-	static readonly GET_MODEL_INVOCATION_JOB: string[] = [
+	static readonly opGetModelInvocationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelInvocationJob",
 	];
 	/** IAM actions required for the GetModelInvocationLoggingConfiguration API call. */
-	static readonly GET_MODEL_INVOCATION_LOGGING_CONFIGURATION: string[] = [
+	static readonly opGetModelInvocationLoggingConfiguration: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the GetPrompt API call. */
-	static readonly GET_PROMPT: string[] = ["bedrock:GetPrompt"];
+	static readonly opGetPrompt: string[] = ["bedrock:GetPrompt"];
 	/** IAM actions required for the GetPromptRouter API call. */
-	static readonly GET_PROMPT_ROUTER: string[] = [
+	static readonly opGetPromptRouter: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetPromptRouter",
 	];
 	/** IAM actions required for the GetProvisionedModelThroughput API call. */
-	static readonly GET_PROVISIONED_MODEL_THROUGHPUT: string[] = [
+	static readonly opGetProvisionedModelThroughput: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetProvisionedModelThroughput",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = ["bedrock:GetResourcePolicy"];
+	static readonly opGetResourcePolicy: string[] = ["bedrock:GetResourcePolicy"];
 	/** IAM actions required for the GetSession API call. */
-	static readonly GET_SESSION: string[] = ["bedrock:GetSession"];
+	static readonly opGetSession: string[] = ["bedrock:GetSession"];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
-	static readonly GET_USE_CASE_FOR_MODEL_ACCESS: string[] = [
+	static readonly opGetUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetUseCaseForModelAccess",
 	];
 	/** IAM actions required for the IngestKnowledgeBaseDocuments API call. */
-	static readonly INGEST_KNOWLEDGE_BASE_DOCUMENTS: string[] = [
+	static readonly IngestKnowledgeBaseDocuments: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"bedrock:IngestKnowledgeBaseDocuments",
 		"bedrock:StartIngestionJob",
 	];
 	/** IAM actions required for the InvokeAgent API call. */
-	static readonly INVOKE_AGENT: string[] = ["bedrock:InvokeAgent"];
+	static readonly InvokeAgent: string[] = ["bedrock:InvokeAgent"];
 	/** IAM actions required for the InvokeBlueprintOptimizationAsync API call. */
-	static readonly INVOKE_BLUEPRINT_OPTIMIZATION_ASYNC: string[] = [
+	static readonly InvokeBlueprintOptimizationAsync: string[] = [
 		"bedrock:InvokeBlueprintOptimizationAsync",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the InvokeDataAutomation API call. */
-	static readonly INVOKE_DATA_AUTOMATION: string[] = [
+	static readonly InvokeDataAutomation: string[] = [
 		"bedrock:InvokeDataAutomation",
 	];
 	/** IAM actions required for the InvokeDataAutomationAsync API call. */
-	static readonly INVOKE_DATA_AUTOMATION_ASYNC: string[] = [
+	static readonly InvokeDataAutomationAsync: string[] = [
 		"bedrock:InvokeDataAutomationAsync",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the InvokeDataAutomationLibraryIngestionJob API call. */
-	static readonly INVOKE_DATA_AUTOMATION_LIBRARY_INGESTION_JOB: string[] = [
+	static readonly InvokeDataAutomationLibraryIngestionJob: string[] = [
 		"bedrock:InvokeDataAutomationLibraryIngestionJob",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the InvokeFlow API call. */
-	static readonly INVOKE_FLOW: string[] = ["bedrock:InvokeFlow"];
+	static readonly InvokeFlow: string[] = ["bedrock:InvokeFlow"];
 	/** IAM actions required for the InvokeGuardrailChecks API call. */
-	static readonly INVOKE_GUARDRAIL_CHECKS: string[] = [
+	static readonly InvokeGuardrailChecks: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeGuardrailChecks",
 	];
 	/** IAM actions required for the InvokeInlineAgent API call. */
-	static readonly INVOKE_INLINE_AGENT: string[] = ["bedrock:InvokeInlineAgent"];
+	static readonly InvokeInlineAgent: string[] = ["bedrock:InvokeInlineAgent"];
 	/** IAM actions required for the InvokeModel API call. */
-	static readonly INVOKE_MODEL: string[] = [
+	static readonly InvokeModel: string[] = [
 		"bedrock:ApplyGuardrail",
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModel",
 		"bedrock:InvokeTool",
 	];
 	/** IAM actions required for the InvokeModelWithBidirectionalStream API call. */
-	static readonly INVOKE_MODEL_WITH_BIDIRECTIONAL_STREAM: string[] = [
+	static readonly InvokeModelWithBidirectionalStream: string[] = [
 		"bedrock:InvokeModel",
 	];
 	/** IAM actions required for the InvokeModelWithResponseStream API call. */
-	static readonly INVOKE_MODEL_WITH_RESPONSE_STREAM: string[] = [
+	static readonly InvokeModelWithResponseStream: string[] = [
 		"bedrock:ApplyGuardrail",
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModel",
@@ -3445,372 +4012,359 @@ export class BedrockOperations {
 		"bedrock:InvokeTool",
 	];
 	/** IAM actions required for the ListAdvancedPromptOptimizationJobs API call. */
-	static readonly LIST_ADVANCED_PROMPT_OPTIMIZATION_JOBS: string[] = [
+	static readonly ListAdvancedPromptOptimizationJobs: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListAdvancedPromptOptimizationJobs",
 	];
 	/** IAM actions required for the ListAgentActionGroups API call. */
-	static readonly LIST_AGENT_ACTION_GROUPS: string[] = [
+	static readonly ListAgentActionGroups: string[] = [
 		"bedrock:ListAgentActionGroups",
 	];
 	/** IAM actions required for the ListAgentAliases API call. */
-	static readonly LIST_AGENT_ALIASES: string[] = ["bedrock:ListAgentAliases"];
+	static readonly ListAgentAliases: string[] = ["bedrock:ListAgentAliases"];
 	/** IAM actions required for the ListAgentCollaborators API call. */
-	static readonly LIST_AGENT_COLLABORATORS: string[] = [
+	static readonly ListAgentCollaborators: string[] = [
 		"bedrock:ListAgentCollaborators",
 	];
 	/** IAM actions required for the ListAgentKnowledgeBases API call. */
-	static readonly LIST_AGENT_KNOWLEDGE_BASES: string[] = [
+	static readonly ListAgentKnowledgeBases: string[] = [
 		"bedrock:ListAgentKnowledgeBases",
 	];
 	/** IAM actions required for the ListAgentVersions API call. */
-	static readonly LIST_AGENT_VERSIONS: string[] = ["bedrock:ListAgentVersions"];
+	static readonly ListAgentVersions: string[] = ["bedrock:ListAgentVersions"];
 	/** IAM actions required for the ListAgents API call. */
-	static readonly LIST_AGENTS: string[] = ["bedrock:ListAgents"];
+	static readonly ListAgents: string[] = ["bedrock:ListAgents"];
 	/** IAM actions required for the ListAsyncInvokes API call. */
-	static readonly LIST_ASYNC_INVOKES: string[] = [
+	static readonly ListAsyncInvokes: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListAsyncInvokes",
 	];
 	/** IAM actions required for the ListAutomatedReasoningPolicies API call. */
-	static readonly LIST_AUTOMATED_REASONING_POLICIES: string[] = [
+	static readonly ListAutomatedReasoningPolicies: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListAutomatedReasoningPolicies",
 	];
 	/** IAM actions required for the ListAutomatedReasoningPolicyBuildWorkflows API call. */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOWS: string[] = [
+	static readonly ListAutomatedReasoningPolicyBuildWorkflows: string[] = [
 		"bedrock:ListAutomatedReasoningPolicyBuildWorkflows",
 	];
 	/** IAM actions required for the ListAutomatedReasoningPolicyTestCases API call. */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_TEST_CASES: string[] = [
+	static readonly ListAutomatedReasoningPolicyTestCases: string[] = [
 		"bedrock:ListAutomatedReasoningPolicyTestCases",
 	];
 	/** IAM actions required for the ListAutomatedReasoningPolicyTestResults API call. */
-	static readonly LIST_AUTOMATED_REASONING_POLICY_TEST_RESULTS: string[] = [
+	static readonly ListAutomatedReasoningPolicyTestResults: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListAutomatedReasoningPolicyTestResults",
 	];
 	/** IAM actions required for the ListBlueprints API call. */
-	static readonly LIST_BLUEPRINTS: string[] = ["bedrock:ListBlueprints"];
+	static readonly ListBlueprints: string[] = ["bedrock:ListBlueprints"];
 	/** IAM actions required for the ListCustomModelDeployments API call. */
-	static readonly LIST_CUSTOM_MODEL_DEPLOYMENTS: string[] = [
+	static readonly ListCustomModelDeployments: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListCustomModelDeployments",
 	];
 	/** IAM actions required for the ListCustomModels API call. */
-	static readonly LIST_CUSTOM_MODELS: string[] = [
+	static readonly ListCustomModels: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListCustomModels",
 	];
 	/** IAM actions required for the ListDataAutomationLibraries API call. */
-	static readonly LIST_DATA_AUTOMATION_LIBRARIES: string[] = [
+	static readonly ListDataAutomationLibraries: string[] = [
 		"bedrock:ListDataAutomationLibraries",
 	];
 	/** IAM actions required for the ListDataAutomationLibraryEntities API call. */
-	static readonly LIST_DATA_AUTOMATION_LIBRARY_ENTITIES: string[] = [
+	static readonly ListDataAutomationLibraryEntities: string[] = [
 		"bedrock:ListDataAutomationLibraryEntities",
 	];
 	/** IAM actions required for the ListDataAutomationLibraryIngestionJobs API call. */
-	static readonly LIST_DATA_AUTOMATION_LIBRARY_INGESTION_JOBS: string[] = [
+	static readonly ListDataAutomationLibraryIngestionJobs: string[] = [
 		"bedrock:ListDataAutomationLibraryIngestionJobs",
 	];
 	/** IAM actions required for the ListDataAutomationProjects API call. */
-	static readonly LIST_DATA_AUTOMATION_PROJECTS: string[] = [
+	static readonly ListDataAutomationProjects: string[] = [
 		"bedrock:ListDataAutomationProjects",
 	];
 	/** IAM actions required for the ListDataSources API call. */
-	static readonly LIST_DATA_SOURCES: string[] = ["bedrock:ListDataSources"];
+	static readonly ListDataSources: string[] = ["bedrock:ListDataSources"];
 	/** IAM actions required for the ListEnforcedGuardrailsConfiguration API call. */
-	static readonly LIST_ENFORCED_GUARDRAILS_CONFIGURATION: string[] = [
+	static readonly ListEnforcedGuardrailsConfiguration: string[] = [
 		"bedrock:ListEnforcedGuardrailsConfiguration",
 	];
 	/** IAM actions required for the ListEvaluationJobs API call. */
-	static readonly LIST_EVALUATION_JOBS: string[] = [
-		"bedrock:ListEvaluationJobs",
-	];
+	static readonly ListEvaluationJobs: string[] = ["bedrock:ListEvaluationJobs"];
 	/** IAM actions required for the ListFlowAliases API call. */
-	static readonly LIST_FLOW_ALIASES: string[] = ["bedrock:ListFlowAliases"];
+	static readonly ListFlowAliases: string[] = ["bedrock:ListFlowAliases"];
 	/** IAM actions required for the ListFlowExecutionEvents API call. */
-	static readonly LIST_FLOW_EXECUTION_EVENTS: string[] = [
+	static readonly ListFlowExecutionEvents: string[] = [
 		"bedrock:ListFlowExecutionEvents",
 	];
 	/** IAM actions required for the ListFlowExecutions API call. */
-	static readonly LIST_FLOW_EXECUTIONS: string[] = [
-		"bedrock:ListFlowExecutions",
-	];
+	static readonly ListFlowExecutions: string[] = ["bedrock:ListFlowExecutions"];
 	/** IAM actions required for the ListFlowVersions API call. */
-	static readonly LIST_FLOW_VERSIONS: string[] = ["bedrock:ListFlowVersions"];
+	static readonly ListFlowVersions: string[] = ["bedrock:ListFlowVersions"];
 	/** IAM actions required for the ListFlows API call. */
-	static readonly LIST_FLOWS: string[] = ["bedrock:ListFlows"];
+	static readonly ListFlows: string[] = ["bedrock:ListFlows"];
 	/** IAM actions required for the ListFoundationModelAgreementOffers API call. */
-	static readonly LIST_FOUNDATION_MODEL_AGREEMENT_OFFERS: string[] = [
+	static readonly ListFoundationModelAgreementOffers: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListFoundationModelAgreementOffers",
 	];
 	/** IAM actions required for the ListFoundationModels API call. */
-	static readonly LIST_FOUNDATION_MODELS: string[] = [
+	static readonly ListFoundationModels: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListFoundationModels",
 	];
 	/** IAM actions required for the ListGuardrails API call. */
-	static readonly LIST_GUARDRAILS: string[] = [
+	static readonly ListGuardrails: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListGuardrails",
 	];
 	/** IAM actions required for the ListImportedModels API call. */
-	static readonly LIST_IMPORTED_MODELS: string[] = [
-		"bedrock:ListImportedModels",
-	];
+	static readonly ListImportedModels: string[] = ["bedrock:ListImportedModels"];
 	/** IAM actions required for the ListInferenceProfiles API call. */
-	static readonly LIST_INFERENCE_PROFILES: string[] = [
+	static readonly ListInferenceProfiles: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListInferenceProfiles",
 	];
 	/** IAM actions required for the ListIngestionJobs API call. */
-	static readonly LIST_INGESTION_JOBS: string[] = ["bedrock:ListIngestionJobs"];
+	static readonly ListIngestionJobs: string[] = ["bedrock:ListIngestionJobs"];
 	/** IAM actions required for the ListInvocationSteps API call. */
-	static readonly LIST_INVOCATION_STEPS: string[] = [
+	static readonly ListInvocationSteps: string[] = [
 		"bedrock:ListInvocationSteps",
 		"bedrock:ListInvocations",
 	];
 	/** IAM actions required for the ListInvocations API call. */
-	static readonly LIST_INVOCATIONS: string[] = ["bedrock:ListInvocations"];
+	static readonly ListInvocations: string[] = ["bedrock:ListInvocations"];
 	/** IAM actions required for the ListKnowledgeBaseDocuments API call. */
-	static readonly LIST_KNOWLEDGE_BASE_DOCUMENTS: string[] = [
+	static readonly ListKnowledgeBaseDocuments: string[] = [
 		"bedrock:ListKnowledgeBaseDocuments",
 	];
 	/** IAM actions required for the ListKnowledgeBases API call. */
-	static readonly LIST_KNOWLEDGE_BASES: string[] = [
-		"bedrock:ListKnowledgeBases",
-	];
+	static readonly ListKnowledgeBases: string[] = ["bedrock:ListKnowledgeBases"];
 	/** IAM actions required for the ListMarketplaceModelEndpoints API call. */
-	static readonly LIST_MARKETPLACE_MODEL_ENDPOINTS: string[] = [
+	static readonly ListMarketplaceModelEndpoints: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListMarketplaceModelEndpoints",
 	];
 	/** IAM actions required for the ListModelCopyJobs API call. */
-	static readonly LIST_MODEL_COPY_JOBS: string[] = [
+	static readonly ListModelCopyJobs: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListModelCopyJobs",
 	];
 	/** IAM actions required for the ListModelCustomizationJobs API call. */
-	static readonly LIST_MODEL_CUSTOMIZATION_JOBS: string[] = [
+	static readonly ListModelCustomizationJobs: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListModelCustomizationJobs",
 	];
 	/** IAM actions required for the ListModelImportJobs API call. */
-	static readonly LIST_MODEL_IMPORT_JOBS: string[] = [
+	static readonly ListModelImportJobs: string[] = [
 		"bedrock:ListModelImportJobs",
 	];
 	/** IAM actions required for the ListModelInvocationJobs API call. */
-	static readonly LIST_MODEL_INVOCATION_JOBS: string[] = [
+	static readonly ListModelInvocationJobs: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListModelInvocationJobs",
 	];
 	/** IAM actions required for the ListPromptRouters API call. */
-	static readonly LIST_PROMPT_ROUTERS: string[] = [
+	static readonly ListPromptRouters: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListPromptRouters",
 	];
 	/** IAM actions required for the ListPrompts API call. */
-	static readonly LIST_PROMPTS: string[] = ["bedrock:ListPrompts"];
+	static readonly ListPrompts: string[] = ["bedrock:ListPrompts"];
 	/** IAM actions required for the ListProvisionedModelThroughputs API call. */
-	static readonly LIST_PROVISIONED_MODEL_THROUGHPUTS: string[] = [
+	static readonly ListProvisionedModelThroughputs: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListProvisionedModelThroughputs",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly LIST_SESSIONS: string[] = ["bedrock:ListSessions"];
+	static readonly ListSessions: string[] = ["bedrock:ListSessions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListTagsForResource",
 	];
 	/** IAM actions required for the OptimizePrompt API call. */
-	static readonly OPTIMIZE_PROMPT: string[] = ["bedrock:OptimizePrompt"];
+	static readonly OptimizePrompt: string[] = ["bedrock:OptimizePrompt"];
 	/** IAM actions required for the PrepareAgent API call. */
-	static readonly PREPARE_AGENT: string[] = ["bedrock:PrepareAgent"];
+	static readonly PrepareAgent: string[] = ["bedrock:PrepareAgent"];
 	/** IAM actions required for the PrepareFlow API call. */
-	static readonly PREPARE_FLOW: string[] = ["bedrock:PrepareFlow"];
+	static readonly PrepareFlow: string[] = ["bedrock:PrepareFlow"];
 	/** IAM actions required for the PutAccountDataRetention API call. */
-	static readonly PUT_ACCOUNT_DATA_RETENTION: string[] = [
+	static readonly PutAccountDataRetention: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:PutAccountDataRetention",
 	];
 	/** IAM actions required for the PutEnforcedGuardrailConfiguration API call. */
-	static readonly PUT_ENFORCED_GUARDRAIL_CONFIGURATION: string[] = [
+	static readonly PutEnforcedGuardrailConfiguration: string[] = [
 		"bedrock:PutEnforcedGuardrailConfiguration",
 	];
 	/** IAM actions required for the PutInvocationStep API call. */
-	static readonly PUT_INVOCATION_STEP: string[] = ["bedrock:PutInvocationStep"];
+	static readonly PutInvocationStep: string[] = ["bedrock:PutInvocationStep"];
 	/** IAM actions required for the PutModelInvocationLoggingConfiguration API call. */
-	static readonly PUT_MODEL_INVOCATION_LOGGING_CONFIGURATION: string[] = [
+	static readonly PutModelInvocationLoggingConfiguration: string[] = [
 		"bedrock:CallWithBearerToken",
 		"iam:PassRole",
 		"bedrock:PutModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["bedrock:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["bedrock:PutResourcePolicy"];
 	/** IAM actions required for the PutUseCaseForModelAccess API call. */
-	static readonly PUT_USE_CASE_FOR_MODEL_ACCESS: string[] = [
+	static readonly PutUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:PutUseCaseForModelAccess",
 	];
 	/** IAM actions required for the RegisterMarketplaceModelEndpoint API call. */
-	static readonly REGISTER_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly RegisterMarketplaceModelEndpoint: string[] = [
 		"bedrock:RegisterMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the Rerank API call. */
-	static readonly RERANK: string[] = ["bedrock:Rerank"];
+	static readonly Rerank: string[] = ["bedrock:Rerank"];
 	/** IAM actions required for the Retrieve API call. */
-	static readonly RETRIEVE: string[] = ["bedrock:Retrieve"];
+	static readonly Retrieve: string[] = ["bedrock:Retrieve"];
 	/** IAM actions required for the RetrieveAndGenerate API call. */
-	static readonly RETRIEVE_AND_GENERATE: string[] = [
+	static readonly RetrieveAndGenerate: string[] = [
 		"bedrock:RetrieveAndGenerate",
 	];
 	/** IAM actions required for the RetrieveAndGenerateStream API call. */
-	static readonly RETRIEVE_AND_GENERATE_STREAM: string[] = [
+	static readonly RetrieveAndGenerateStream: string[] = [
 		"bedrock:RetrieveAndGenerate",
 	];
 	/** IAM actions required for the StartAsyncInvoke API call. */
-	static readonly START_ASYNC_INVOKE: string[] = [
+	static readonly StartAsyncInvoke: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeModel",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the StartAutomatedReasoningPolicyBuildWorkflow API call. */
-	static readonly START_AUTOMATED_REASONING_POLICY_BUILD_WORKFLOW: string[] = [
+	static readonly StartAutomatedReasoningPolicyBuildWorkflow: string[] = [
 		"bedrock:StartAutomatedReasoningPolicyBuildWorkflow",
 	];
 	/** IAM actions required for the StartAutomatedReasoningPolicyTestWorkflow API call. */
-	static readonly START_AUTOMATED_REASONING_POLICY_TEST_WORKFLOW: string[] = [
+	static readonly StartAutomatedReasoningPolicyTestWorkflow: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeAutomatedReasoningPolicy",
 		"bedrock:StartAutomatedReasoningPolicyTestWorkflow",
 	];
 	/** IAM actions required for the StartFlowExecution API call. */
-	static readonly START_FLOW_EXECUTION: string[] = [
-		"bedrock:StartFlowExecution",
-	];
+	static readonly StartFlowExecution: string[] = ["bedrock:StartFlowExecution"];
 	/** IAM actions required for the StartIngestionJob API call. */
-	static readonly START_INGESTION_JOB: string[] = [
+	static readonly StartIngestionJob: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"bedrock:StartIngestionJob",
 	];
 	/** IAM actions required for the StopAdvancedPromptOptimizationJob API call. */
-	static readonly STOP_ADVANCED_PROMPT_OPTIMIZATION_JOB: string[] = [
+	static readonly StopAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:StopAdvancedPromptOptimizationJob",
 	];
 	/** IAM actions required for the StopEvaluationJob API call. */
-	static readonly STOP_EVALUATION_JOB: string[] = ["bedrock:StopEvaluationJob"];
+	static readonly StopEvaluationJob: string[] = ["bedrock:StopEvaluationJob"];
 	/** IAM actions required for the StopFlowExecution API call. */
-	static readonly STOP_FLOW_EXECUTION: string[] = ["bedrock:StopFlowExecution"];
+	static readonly StopFlowExecution: string[] = ["bedrock:StopFlowExecution"];
 	/** IAM actions required for the StopIngestionJob API call. */
-	static readonly STOP_INGESTION_JOB: string[] = ["bedrock:StopIngestionJob"];
+	static readonly StopIngestionJob: string[] = ["bedrock:StopIngestionJob"];
 	/** IAM actions required for the StopModelCustomizationJob API call. */
-	static readonly STOP_MODEL_CUSTOMIZATION_JOB: string[] = [
+	static readonly StopModelCustomizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:StopModelCustomizationJob",
 	];
 	/** IAM actions required for the StopModelInvocationJob API call. */
-	static readonly STOP_MODEL_INVOCATION_JOB: string[] = [
+	static readonly StopModelInvocationJob: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:StopModelInvocationJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:UntagResource",
 	];
 	/** IAM actions required for the UpdateAgent API call. */
-	static readonly UPDATE_AGENT: string[] = [
+	static readonly UpdateAgent: string[] = [
 		"iam:PassRole",
 		"bedrock:UpdateAgent",
 	];
 	/** IAM actions required for the UpdateAgentActionGroup API call. */
-	static readonly UPDATE_AGENT_ACTION_GROUP: string[] = [
+	static readonly UpdateAgentActionGroup: string[] = [
 		"bedrock:UpdateAgentActionGroup",
 	];
 	/** IAM actions required for the UpdateAgentAlias API call. */
-	static readonly UPDATE_AGENT_ALIAS: string[] = ["bedrock:UpdateAgentAlias"];
+	static readonly UpdateAgentAlias: string[] = ["bedrock:UpdateAgentAlias"];
 	/** IAM actions required for the UpdateAgentCollaborator API call. */
-	static readonly UPDATE_AGENT_COLLABORATOR: string[] = [
+	static readonly UpdateAgentCollaborator: string[] = [
 		"bedrock:UpdateAgentCollaborator",
 	];
 	/** IAM actions required for the UpdateAgentKnowledgeBase API call. */
-	static readonly UPDATE_AGENT_KNOWLEDGE_BASE: string[] = [
+	static readonly UpdateAgentKnowledgeBase: string[] = [
 		"bedrock:UpdateAgentKnowledgeBase",
 	];
 	/** IAM actions required for the UpdateAutomatedReasoningPolicy API call. */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY: string[] = [
+	static readonly UpdateAutomatedReasoningPolicy: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:UpdateAutomatedReasoningPolicy",
 	];
 	/** IAM actions required for the UpdateAutomatedReasoningPolicyAnnotations API call. */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY_ANNOTATIONS: string[] = [
+	static readonly UpdateAutomatedReasoningPolicyAnnotations: string[] = [
 		"bedrock:UpdateAutomatedReasoningPolicyAnnotations",
 	];
 	/** IAM actions required for the UpdateAutomatedReasoningPolicyTestCase API call. */
-	static readonly UPDATE_AUTOMATED_REASONING_POLICY_TEST_CASE: string[] = [
+	static readonly UpdateAutomatedReasoningPolicyTestCase: string[] = [
 		"bedrock:UpdateAutomatedReasoningPolicyTestCase",
 	];
 	/** IAM actions required for the UpdateBlueprint API call. */
-	static readonly UPDATE_BLUEPRINT: string[] = ["bedrock:UpdateBlueprint"];
+	static readonly UpdateBlueprint: string[] = ["bedrock:UpdateBlueprint"];
 	/** IAM actions required for the UpdateCustomModelDeployment API call. */
-	static readonly UPDATE_CUSTOM_MODEL_DEPLOYMENT: string[] = [
+	static readonly UpdateCustomModelDeployment: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:UpdateCustomModelDeployment",
 	];
 	/** IAM actions required for the UpdateDataAutomationLibrary API call. */
-	static readonly UPDATE_DATA_AUTOMATION_LIBRARY: string[] = [
+	static readonly UpdateDataAutomationLibrary: string[] = [
 		"bedrock:UpdateDataAutomationLibrary",
 	];
 	/** IAM actions required for the UpdateDataAutomationProject API call. */
-	static readonly UPDATE_DATA_AUTOMATION_PROJECT: string[] = [
+	static readonly UpdateDataAutomationProject: string[] = [
 		"bedrock:UpdateDataAutomationProject",
 	];
 	/** IAM actions required for the UpdateDataSource API call. */
-	static readonly UPDATE_DATA_SOURCE: string[] = ["bedrock:UpdateDataSource"];
+	static readonly UpdateDataSource: string[] = ["bedrock:UpdateDataSource"];
 	/** IAM actions required for the UpdateFlow API call. */
-	static readonly UPDATE_FLOW: string[] = [
-		"iam:PassRole",
-		"bedrock:UpdateFlow",
-	];
+	static readonly UpdateFlow: string[] = ["iam:PassRole", "bedrock:UpdateFlow"];
 	/** IAM actions required for the UpdateFlowAlias API call. */
-	static readonly UPDATE_FLOW_ALIAS: string[] = ["bedrock:UpdateFlowAlias"];
+	static readonly UpdateFlowAlias: string[] = ["bedrock:UpdateFlowAlias"];
 	/** IAM actions required for the UpdateGuardrail API call. */
-	static readonly UPDATE_GUARDRAIL: string[] = [
+	static readonly UpdateGuardrail: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:UpdateGuardrail",
 	];
 	/** IAM actions required for the UpdateKnowledgeBase API call. */
-	static readonly UPDATE_KNOWLEDGE_BASE: string[] = [
+	static readonly UpdateKnowledgeBase: string[] = [
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"iam:PassRole",
 		"bedrock:UpdateKnowledgeBase",
 	];
 	/** IAM actions required for the UpdateMarketplaceModelEndpoint API call. */
-	static readonly UPDATE_MARKETPLACE_MODEL_ENDPOINT: string[] = [
+	static readonly UpdateMarketplaceModelEndpoint: string[] = [
 		"bedrock:CallWithBearerToken",
 		"iam:PassRole",
 		"bedrock:UpdateMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the UpdatePrompt API call. */
-	static readonly UPDATE_PROMPT: string[] = ["bedrock:UpdatePrompt"];
+	static readonly UpdatePrompt: string[] = ["bedrock:UpdatePrompt"];
 	/** IAM actions required for the UpdateProvisionedModelThroughput API call. */
-	static readonly UPDATE_PROVISIONED_MODEL_THROUGHPUT: string[] = [
+	static readonly UpdateProvisionedModelThroughput: string[] = [
 		"bedrock:CallWithBearerToken",
 		"bedrock:UpdateProvisionedModelThroughput",
 	];
 	/** IAM actions required for the UpdateSession API call. */
-	static readonly UPDATE_SESSION: string[] = ["bedrock:UpdateSession"];
+	static readonly UpdateSession: string[] = ["bedrock:UpdateSession"];
 	/** IAM actions required for the ValidateFlowDefinition API call. */
-	static readonly VALIDATE_FLOW_DEFINITION: string[] = [
+	static readonly ValidateFlowDefinition: string[] = [
 		"bedrock:ValidateFlowDefinition",
 	];
 }
@@ -3820,158 +4374,165 @@ export class BedrockOperations {
  */
 export class BedrockConditions {
 	/** Condition keys applicable to the AssociateThirdPartyKnowledgeBase action. */
-	static readonly ASSOCIATE_THIRD_PARTY_KNOWLEDGE_BASE_CONDITION_KEYS: string[] =
-		["bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn"];
+	static readonly AssociateThirdPartyKnowledgeBaseConditionKeys: string[] = [
+		"bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn",
+	];
 	/** Condition keys applicable to the CallWithBearerToken action. */
-	static readonly CALL_WITH_BEARER_TOKEN_CONDITION_KEYS: string[] = [
+	static readonly CallWithBearerTokenConditionKeys: string[] = [
 		"bedrock:BearerTokenType",
 	];
 	/** Condition keys applicable to the CreateAdvancedPromptOptimizationJob action. */
-	static readonly CREATE_ADVANCED_PROMPT_OPTIMIZATION_JOB_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateAdvancedPromptOptimizationJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateAgent action. */
-	static readonly CREATE_AGENT_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAgentActionGroup action. */
-	static readonly CREATE_AGENT_ACTION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentActionGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAgentAlias action. */
-	static readonly CREATE_AGENT_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentAliasConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAutomatedReasoningPolicy action. */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_CONDITION_KEYS: string[] = [
+	static readonly CreateAutomatedReasoningPolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateAutomatedReasoningPolicyVersion action. */
-	static readonly CREATE_AUTOMATED_REASONING_POLICY_VERSION_CONDITION_KEYS: string[] =
+	static readonly CreateAutomatedReasoningPolicyVersionConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateBlueprint action. */
-	static readonly CREATE_BLUEPRINT_CONDITION_KEYS: string[] = [
+	static readonly CreateBlueprintConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomModel action. */
-	static readonly CREATE_CUSTOM_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCustomModelDeployment action. */
-	static readonly CREATE_CUSTOM_MODEL_DEPLOYMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomModelDeploymentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataAutomationLibrary action. */
-	static readonly CREATE_DATA_AUTOMATION_LIBRARY_CONDITION_KEYS: string[] = [
+	static readonly CreateDataAutomationLibraryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataAutomationProject action. */
-	static readonly CREATE_DATA_AUTOMATION_PROJECT_CONDITION_KEYS: string[] = [
+	static readonly CreateDataAutomationProjectConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEvaluationJob action. */
-	static readonly CREATE_EVALUATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateEvaluationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFlow action. */
-	static readonly CREATE_FLOW_CONDITION_KEYS: string[] = [
+	static readonly CreateFlowConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFlowAlias action. */
-	static readonly CREATE_FLOW_ALIAS_CONDITION_KEYS: string[] = [
+	static readonly CreateFlowAliasConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGuardrail action. */
-	static readonly CREATE_GUARDRAIL_CONDITION_KEYS: string[] = [
+	static readonly CreateGuardrailConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateInferenceProfile action. */
-	static readonly CREATE_INFERENCE_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateInferenceProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateKnowledgeBase action. */
-	static readonly CREATE_KNOWLEDGE_BASE_CONDITION_KEYS: string[] = [
+	static readonly CreateKnowledgeBaseConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelCopyJob action. */
-	static readonly CREATE_MODEL_COPY_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateModelCopyJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelCustomizationJob action. */
-	static readonly CREATE_MODEL_CUSTOMIZATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateModelCustomizationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelEvaluationJob action. */
-	static readonly CREATE_MODEL_EVALUATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateModelEvaluationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelImportJob action. */
-	static readonly CREATE_MODEL_IMPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateModelImportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateModelInvocationJob action. */
-	static readonly CREATE_MODEL_INVOCATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateModelInvocationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePrompt action. */
-	static readonly CREATE_PROMPT_CONDITION_KEYS: string[] = [
+	static readonly CreatePromptConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePromptRouter action. */
-	static readonly CREATE_PROMPT_ROUTER_CONDITION_KEYS: string[] = [
+	static readonly CreatePromptRouterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePromptVersion action. */
-	static readonly CREATE_PROMPT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreatePromptVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProvisionedModelThroughput action. */
-	static readonly CREATE_PROVISIONED_MODEL_THROUGHPUT_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateProvisionedModelThroughputConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateSession action. */
-	static readonly CREATE_SESSION_CONDITION_KEYS: string[] = [
+	static readonly CreateSessionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the InvokeBlueprintOptimizationAsync action. */
-	static readonly INVOKE_BLUEPRINT_OPTIMIZATION_ASYNC_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly InvokeBlueprintOptimizationAsyncConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the InvokeDataAutomationAsync action. */
-	static readonly INVOKE_DATA_AUTOMATION_ASYNC_CONDITION_KEYS: string[] = [
+	static readonly InvokeDataAutomationAsyncConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the InvokeDataAutomationLibraryIngestionJob action. */
-	static readonly INVOKE_DATA_AUTOMATION_LIBRARY_INGESTION_JOB_CONDITION_KEYS: string[] =
+	static readonly InvokeDataAutomationLibraryIngestionJobConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the InvokeInlineAgent action. */
-	static readonly INVOKE_INLINE_AGENT_CONDITION_KEYS: string[] = [
+	static readonly InvokeInlineAgentConditionKeys: string[] = [
 		"bedrock:InlineAgentName",
 	];
 	/** Condition keys applicable to the InvokeModel action. */
-	static readonly INVOKE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly InvokeModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"bedrock:GuardrailIdentifier",
@@ -3980,35 +4541,35 @@ export class BedrockConditions {
 		"bedrock:ServiceTier",
 	];
 	/** Condition keys applicable to the InvokeModelWithResponseStream action. */
-	static readonly INVOKE_MODEL_WITH_RESPONSE_STREAM_CONDITION_KEYS: string[] = [
+	static readonly InvokeModelWithResponseStreamConditionKeys: string[] = [
 		"bedrock:GuardrailIdentifier",
 		"bedrock:InferenceProfileArn",
 		"bedrock:PromptRouterArn",
 		"bedrock:ServiceTier",
 	];
 	/** Condition keys applicable to the PutAccountDataRetention action. */
-	static readonly PUT_ACCOUNT_DATA_RETENTION_CONDITION_KEYS: string[] = [
+	static readonly PutAccountDataRetentionConditionKeys: string[] = [
 		"bedrock:DataRetentionMode",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: bedrock:BearerTokenType (String) */
 	static readonly BEARER_TOKEN_TYPE = "bedrock:BearerTokenType";
 	/** Condition key: bedrock:DataRetentionMode (String) */

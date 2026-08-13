@@ -13,50 +13,49 @@ export class CostOptimizationHubActions {
 	static readonly SERVICE_PREFIX = "cost-optimization-hub";
 
 	/** [Read] cost-optimization-hub:GetPreferences */
-	static readonly GET_PREFERENCES = "cost-optimization-hub:GetPreferences";
+	static readonly actionGetPreferences = "cost-optimization-hub:GetPreferences";
 	/** [Read] cost-optimization-hub:GetRecommendation */
-	static readonly GET_RECOMMENDATION =
+	static readonly actionGetRecommendation =
 		"cost-optimization-hub:GetRecommendation";
 	/** [List] cost-optimization-hub:ListEfficiencyMetrics */
-	static readonly LIST_EFFICIENCY_METRICS =
+	static readonly ListEfficiencyMetrics =
 		"cost-optimization-hub:ListEfficiencyMetrics";
 	/** [List] cost-optimization-hub:ListEnrollmentStatuses */
-	static readonly LIST_ENROLLMENT_STATUSES =
+	static readonly ListEnrollmentStatuses =
 		"cost-optimization-hub:ListEnrollmentStatuses";
 	/** [List] cost-optimization-hub:ListRecommendationSummaries */
-	static readonly LIST_RECOMMENDATION_SUMMARIES =
+	static readonly ListRecommendationSummaries =
 		"cost-optimization-hub:ListRecommendationSummaries";
 	/** [List] cost-optimization-hub:ListRecommendations */
-	static readonly LIST_RECOMMENDATIONS =
+	static readonly ListRecommendations =
 		"cost-optimization-hub:ListRecommendations";
 	/** [Write] cost-optimization-hub:UpdateEnrollmentStatus */
-	static readonly UPDATE_ENROLLMENT_STATUS =
+	static readonly UpdateEnrollmentStatus =
 		"cost-optimization-hub:UpdateEnrollmentStatus";
 	/** [Write] cost-optimization-hub:UpdatePreferences */
-	static readonly UPDATE_PREFERENCES =
-		"cost-optimization-hub:UpdatePreferences";
+	static readonly UpdatePreferences = "cost-optimization-hub:UpdatePreferences";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CostOptimizationHubActions.GET_PREFERENCES,
-		CostOptimizationHubActions.GET_RECOMMENDATION,
+	static readonly AllReadActions: string[] = [
+		CostOptimizationHubActions.actionGetPreferences,
+		CostOptimizationHubActions.actionGetRecommendation,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CostOptimizationHubActions.UPDATE_ENROLLMENT_STATUS,
-		CostOptimizationHubActions.UPDATE_PREFERENCES,
+	static readonly AllWriteActions: string[] = [
+		CostOptimizationHubActions.UpdateEnrollmentStatus,
+		CostOptimizationHubActions.UpdatePreferences,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CostOptimizationHubActions.LIST_EFFICIENCY_METRICS,
-		CostOptimizationHubActions.LIST_ENROLLMENT_STATUSES,
-		CostOptimizationHubActions.LIST_RECOMMENDATION_SUMMARIES,
-		CostOptimizationHubActions.LIST_RECOMMENDATIONS,
+	static readonly AllListActions: string[] = [
+		CostOptimizationHubActions.ListEfficiencyMetrics,
+		CostOptimizationHubActions.ListEnrollmentStatuses,
+		CostOptimizationHubActions.ListRecommendationSummaries,
+		CostOptimizationHubActions.ListRecommendations,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -64,35 +63,35 @@ export class CostOptimizationHubActions {
  */
 export class CostOptimizationHubOperations {
 	/** IAM actions required for the GetPreferences API call. */
-	static readonly GET_PREFERENCES: string[] = [
+	static readonly opGetPreferences: string[] = [
 		"cost-optimization-hub:GetPreferences",
 	];
 	/** IAM actions required for the GetRecommendation API call. */
-	static readonly GET_RECOMMENDATION: string[] = [
+	static readonly opGetRecommendation: string[] = [
 		"cost-optimization-hub:GetRecommendation",
 	];
 	/** IAM actions required for the ListEfficiencyMetrics API call. */
-	static readonly LIST_EFFICIENCY_METRICS: string[] = [
+	static readonly ListEfficiencyMetrics: string[] = [
 		"cost-optimization-hub:ListEfficiencyMetrics",
 	];
 	/** IAM actions required for the ListEnrollmentStatuses API call. */
-	static readonly LIST_ENROLLMENT_STATUSES: string[] = [
+	static readonly ListEnrollmentStatuses: string[] = [
 		"cost-optimization-hub:ListEnrollmentStatuses",
 	];
 	/** IAM actions required for the ListRecommendationSummaries API call. */
-	static readonly LIST_RECOMMENDATION_SUMMARIES: string[] = [
+	static readonly ListRecommendationSummaries: string[] = [
 		"cost-optimization-hub:ListRecommendationSummaries",
 	];
 	/** IAM actions required for the ListRecommendations API call. */
-	static readonly LIST_RECOMMENDATIONS: string[] = [
+	static readonly ListRecommendations: string[] = [
 		"cost-optimization-hub:ListRecommendations",
 	];
 	/** IAM actions required for the UpdateEnrollmentStatus API call. */
-	static readonly UPDATE_ENROLLMENT_STATUS: string[] = [
+	static readonly UpdateEnrollmentStatus: string[] = [
 		"cost-optimization-hub:UpdateEnrollmentStatus",
 	];
 	/** IAM actions required for the UpdatePreferences API call. */
-	static readonly UPDATE_PREFERENCES: string[] = [
+	static readonly UpdatePreferences: string[] = [
 		"cost-optimization-hub:UpdatePreferences",
 	];
 }

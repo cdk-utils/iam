@@ -13,39 +13,66 @@ export class Route53RecoveryClusterActions {
 	static readonly SERVICE_PREFIX = "route53-recovery-cluster";
 
 	/** [Read] route53-recovery-cluster:GetRoutingControlState */
-	static readonly GET_ROUTING_CONTROL_STATE =
+	static readonly actionGetRoutingControlState =
 		"route53-recovery-cluster:GetRoutingControlState";
 	/** [Read] route53-recovery-cluster:ListRoutingControls */
-	static readonly LIST_ROUTING_CONTROLS =
+	static readonly ListRoutingControls =
 		"route53-recovery-cluster:ListRoutingControls";
 	/** [Write] route53-recovery-cluster:UpdateRoutingControlState */
-	static readonly UPDATE_ROUTING_CONTROL_STATE =
+	static readonly UpdateRoutingControlState =
 		"route53-recovery-cluster:UpdateRoutingControlState";
 	/** [Write] route53-recovery-cluster:UpdateRoutingControlStates */
-	static readonly UPDATE_ROUTING_CONTROL_STATES =
+	static readonly UpdateRoutingControlStates =
 		"route53-recovery-cluster:UpdateRoutingControlStates";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		Route53RecoveryClusterActions.GET_ROUTING_CONTROL_STATE,
-		Route53RecoveryClusterActions.LIST_ROUTING_CONTROLS,
+	static readonly AllReadActions: string[] = [
+		Route53RecoveryClusterActions.actionGetRoutingControlState,
+		Route53RecoveryClusterActions.ListRoutingControls,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		Route53RecoveryClusterActions.UPDATE_ROUTING_CONTROL_STATE,
-		Route53RecoveryClusterActions.UPDATE_ROUTING_CONTROL_STATES,
+	static readonly AllWriteActions: string[] = [
+		Route53RecoveryClusterActions.UpdateRoutingControlState,
+		Route53RecoveryClusterActions.UpdateRoutingControlStates,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const RoutingcontrolArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):route53-recovery-control::(?<account>[^:]*):controlpanel/(?<controlPanelId>[^:/?]+)/routingcontrol/(?<routingControlId>[^:/?]+)$",
-);
+/**
+ * Properties for building a routingcontrol ARN.
+ */
+export interface Route53RecoveryClusterRoutingcontrolArnProps {
+	/** The ControlPanelId component of the ARN. */
+	readonly controlPanelId: string;
+	/** The RoutingControlId component of the ARN. */
+	readonly routingControlId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a routingcontrol ARN.
+ */
+export interface Route53RecoveryClusterRoutingcontrolArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ControlPanelId component. */
+	readonly controlPanelId: string;
+	/** The RoutingControlId component. */
+	readonly routingControlId: string;
+}
+
+const RoutingcontrolArnRegex =
+	/^arn:(?<partition>[^:]+):route53-recovery-control::(?<account>[^:]*):controlpanel\/(?<controlPanelId>[^:/?]+)\/routingcontrol\/(?<routingControlId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for route53-recovery-cluster resources.
@@ -54,16 +81,9 @@ export class Route53RecoveryClusterResources {
 	/**
 	 * Builds an ARN for the routingcontrol resource.
 	 */
-	static routingcontrol(props: {
-		/** The ControlPanelId component of the ARN. */
-		readonly controlPanelId: string;
-		/** The RoutingControlId component of the ARN. */
-		readonly routingControlId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static routingcontrol(
+		props: Route53RecoveryClusterRoutingcontrolArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:route53-recovery-control::${props.account ?? "*"}:controlpanel/${props.controlPanelId}/routingcontrol/${props.routingControlId}`;
 	}
 
@@ -78,12 +98,9 @@ export class Route53RecoveryClusterResources {
 	 * Parses a routingcontrol ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRoutingcontrolArn(arn: string): {
-		partition: string;
-		account: string;
-		controlPanelId: string;
-		routingControlId: string;
-	} {
+	static parseRoutingcontrolArn(
+		arn: string,
+	): Route53RecoveryClusterRoutingcontrolArnComponents {
 		const match = RoutingcontrolArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid routingcontrol ARN: ${arn}`);
@@ -102,19 +119,19 @@ export class Route53RecoveryClusterResources {
  */
 export class Route53RecoveryClusterOperations {
 	/** IAM actions required for the GetRoutingControlState API call. */
-	static readonly GET_ROUTING_CONTROL_STATE: string[] = [
+	static readonly opGetRoutingControlState: string[] = [
 		"route53-recovery-cluster:GetRoutingControlState",
 	];
 	/** IAM actions required for the ListRoutingControls API call. */
-	static readonly LIST_ROUTING_CONTROLS: string[] = [
+	static readonly ListRoutingControls: string[] = [
 		"route53-recovery-cluster:ListRoutingControls",
 	];
 	/** IAM actions required for the UpdateRoutingControlState API call. */
-	static readonly UPDATE_ROUTING_CONTROL_STATE: string[] = [
+	static readonly UpdateRoutingControlState: string[] = [
 		"route53-recovery-cluster:UpdateRoutingControlState",
 	];
 	/** IAM actions required for the UpdateRoutingControlStates API call. */
-	static readonly UPDATE_ROUTING_CONTROL_STATES: string[] = [
+	static readonly UpdateRoutingControlStates: string[] = [
 		"route53-recovery-cluster:UpdateRoutingControlStates",
 	];
 }
@@ -124,11 +141,11 @@ export class Route53RecoveryClusterOperations {
  */
 export class Route53RecoveryClusterConditions {
 	/** Condition keys applicable to the UpdateRoutingControlState action. */
-	static readonly UPDATE_ROUTING_CONTROL_STATE_CONDITION_KEYS: string[] = [
+	static readonly UpdateRoutingControlStateConditionKeys: string[] = [
 		"route53-recovery-cluster:AllowSafetyRulesOverrides",
 	];
 	/** Condition keys applicable to the UpdateRoutingControlStates action. */
-	static readonly UPDATE_ROUTING_CONTROL_STATES_CONDITION_KEYS: string[] = [
+	static readonly UpdateRoutingControlStatesConditionKeys: string[] = [
 		"route53-recovery-cluster:AllowSafetyRulesOverrides",
 	];
 

@@ -13,63 +13,61 @@ export class BackupStorageActions {
 	static readonly SERVICE_PREFIX = "backup-storage";
 
 	/** [Write] backup-storage:CommitBackupJob */
-	static readonly COMMIT_BACKUP_JOB = "backup-storage:CommitBackupJob";
+	static readonly CommitBackupJob = "backup-storage:CommitBackupJob";
 	/** [Write] backup-storage:DeleteObjects */
-	static readonly DELETE_OBJECTS = "backup-storage:DeleteObjects";
+	static readonly DeleteObjects = "backup-storage:DeleteObjects";
 	/** [Write] backup-storage:DescribeBackupJob */
-	static readonly DESCRIBE_BACKUP_JOB = "backup-storage:DescribeBackupJob";
+	static readonly DescribeBackupJob = "backup-storage:DescribeBackupJob";
 	/** [Write] backup-storage:GetBaseBackup */
-	static readonly GET_BASE_BACKUP = "backup-storage:GetBaseBackup";
+	static readonly actionGetBaseBackup = "backup-storage:GetBaseBackup";
 	/** [Write] backup-storage:GetChunk */
-	static readonly GET_CHUNK = "backup-storage:GetChunk";
+	static readonly actionGetChunk = "backup-storage:GetChunk";
 	/** [Write] backup-storage:GetIncrementalBaseBackup */
-	static readonly GET_INCREMENTAL_BASE_BACKUP =
+	static readonly actionGetIncrementalBaseBackup =
 		"backup-storage:GetIncrementalBaseBackup";
 	/** [Write] backup-storage:GetObjectMetadata */
-	static readonly GET_OBJECT_METADATA = "backup-storage:GetObjectMetadata";
+	static readonly actionGetObjectMetadata = "backup-storage:GetObjectMetadata";
 	/** [Write] backup-storage:ListChunks */
-	static readonly LIST_CHUNKS = "backup-storage:ListChunks";
+	static readonly ListChunks = "backup-storage:ListChunks";
 	/** [Write] backup-storage:ListObjects */
-	static readonly LIST_OBJECTS = "backup-storage:ListObjects";
+	static readonly ListObjects = "backup-storage:ListObjects";
 	/** [Write] backup-storage:MountCapsule */
-	static readonly MOUNT_CAPSULE = "backup-storage:MountCapsule";
+	static readonly MountCapsule = "backup-storage:MountCapsule";
 	/** [Write] backup-storage:NotifyObjectComplete */
-	static readonly NOTIFY_OBJECT_COMPLETE =
-		"backup-storage:NotifyObjectComplete";
+	static readonly NotifyObjectComplete = "backup-storage:NotifyObjectComplete";
 	/** [Write] backup-storage:PutChunk */
-	static readonly PUT_CHUNK = "backup-storage:PutChunk";
+	static readonly PutChunk = "backup-storage:PutChunk";
 	/** [Write] backup-storage:PutObject */
-	static readonly PUT_OBJECT = "backup-storage:PutObject";
+	static readonly PutObject = "backup-storage:PutObject";
 	/** [Write] backup-storage:StartObject */
-	static readonly START_OBJECT = "backup-storage:StartObject";
+	static readonly StartObject = "backup-storage:StartObject";
 	/** [Write] backup-storage:UpdateObjectComplete */
-	static readonly UPDATE_OBJECT_COMPLETE =
-		"backup-storage:UpdateObjectComplete";
+	static readonly UpdateObjectComplete = "backup-storage:UpdateObjectComplete";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BackupStorageActions.COMMIT_BACKUP_JOB,
-		BackupStorageActions.DELETE_OBJECTS,
-		BackupStorageActions.DESCRIBE_BACKUP_JOB,
-		BackupStorageActions.GET_BASE_BACKUP,
-		BackupStorageActions.GET_CHUNK,
-		BackupStorageActions.GET_INCREMENTAL_BASE_BACKUP,
-		BackupStorageActions.GET_OBJECT_METADATA,
-		BackupStorageActions.LIST_CHUNKS,
-		BackupStorageActions.LIST_OBJECTS,
-		BackupStorageActions.MOUNT_CAPSULE,
-		BackupStorageActions.NOTIFY_OBJECT_COMPLETE,
-		BackupStorageActions.PUT_CHUNK,
-		BackupStorageActions.PUT_OBJECT,
-		BackupStorageActions.START_OBJECT,
-		BackupStorageActions.UPDATE_OBJECT_COMPLETE,
+	static readonly AllWriteActions: string[] = [
+		BackupStorageActions.CommitBackupJob,
+		BackupStorageActions.DeleteObjects,
+		BackupStorageActions.DescribeBackupJob,
+		BackupStorageActions.actionGetBaseBackup,
+		BackupStorageActions.actionGetChunk,
+		BackupStorageActions.actionGetIncrementalBaseBackup,
+		BackupStorageActions.actionGetObjectMetadata,
+		BackupStorageActions.ListChunks,
+		BackupStorageActions.ListObjects,
+		BackupStorageActions.MountCapsule,
+		BackupStorageActions.NotifyObjectComplete,
+		BackupStorageActions.PutChunk,
+		BackupStorageActions.PutObject,
+		BackupStorageActions.StartObject,
+		BackupStorageActions.UpdateObjectComplete,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

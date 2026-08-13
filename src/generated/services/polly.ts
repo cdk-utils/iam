@@ -13,57 +13,82 @@ export class PollyActions {
 	static readonly SERVICE_PREFIX = "polly";
 
 	/** [Write] polly:DeleteLexicon */
-	static readonly DELETE_LEXICON = "polly:DeleteLexicon";
+	static readonly DeleteLexicon = "polly:DeleteLexicon";
 	/** [List] polly:DescribeVoices */
-	static readonly DESCRIBE_VOICES = "polly:DescribeVoices";
+	static readonly DescribeVoices = "polly:DescribeVoices";
 	/** [Read] polly:GetLexicon */
-	static readonly GET_LEXICON = "polly:GetLexicon";
+	static readonly actionGetLexicon = "polly:GetLexicon";
 	/** [Read] polly:GetSpeechSynthesisTask */
-	static readonly GET_SPEECH_SYNTHESIS_TASK = "polly:GetSpeechSynthesisTask";
+	static readonly actionGetSpeechSynthesisTask = "polly:GetSpeechSynthesisTask";
 	/** [List] polly:ListLexicons */
-	static readonly LIST_LEXICONS = "polly:ListLexicons";
+	static readonly ListLexicons = "polly:ListLexicons";
 	/** [List] polly:ListSpeechSynthesisTasks */
-	static readonly LIST_SPEECH_SYNTHESIS_TASKS =
-		"polly:ListSpeechSynthesisTasks";
+	static readonly ListSpeechSynthesisTasks = "polly:ListSpeechSynthesisTasks";
 	/** [Write] polly:PutLexicon */
-	static readonly PUT_LEXICON = "polly:PutLexicon";
+	static readonly PutLexicon = "polly:PutLexicon";
 	/** [Read] polly:StartSpeechSynthesisStream */
-	static readonly START_SPEECH_SYNTHESIS_STREAM =
+	static readonly StartSpeechSynthesisStream =
 		"polly:StartSpeechSynthesisStream";
 	/** [Write] polly:StartSpeechSynthesisTask */
-	static readonly START_SPEECH_SYNTHESIS_TASK =
-		"polly:StartSpeechSynthesisTask";
+	static readonly StartSpeechSynthesisTask = "polly:StartSpeechSynthesisTask";
 	/** [Read] polly:SynthesizeSpeech */
-	static readonly SYNTHESIZE_SPEECH = "polly:SynthesizeSpeech";
+	static readonly SynthesizeSpeech = "polly:SynthesizeSpeech";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PollyActions.GET_LEXICON,
-		PollyActions.GET_SPEECH_SYNTHESIS_TASK,
-		PollyActions.START_SPEECH_SYNTHESIS_STREAM,
-		PollyActions.SYNTHESIZE_SPEECH,
+	static readonly AllReadActions: string[] = [
+		PollyActions.actionGetLexicon,
+		PollyActions.actionGetSpeechSynthesisTask,
+		PollyActions.StartSpeechSynthesisStream,
+		PollyActions.SynthesizeSpeech,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PollyActions.DELETE_LEXICON,
-		PollyActions.PUT_LEXICON,
-		PollyActions.START_SPEECH_SYNTHESIS_TASK,
+	static readonly AllWriteActions: string[] = [
+		PollyActions.DeleteLexicon,
+		PollyActions.PutLexicon,
+		PollyActions.StartSpeechSynthesisTask,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PollyActions.DESCRIBE_VOICES,
-		PollyActions.LIST_LEXICONS,
-		PollyActions.LIST_SPEECH_SYNTHESIS_TASKS,
+	static readonly AllListActions: string[] = [
+		PollyActions.DescribeVoices,
+		PollyActions.ListLexicons,
+		PollyActions.ListSpeechSynthesisTasks,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const LexiconArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):polly:(?<region>[^:]*):(?<account>[^:]*):lexicon/(?<lexiconName>[^:/?]+)$",
-);
+/**
+ * Properties for building a lexicon ARN.
+ */
+export interface PollyLexiconArnProps {
+	/** The LexiconName component of the ARN. */
+	readonly lexiconName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a lexicon ARN.
+ */
+export interface PollyLexiconArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LexiconName component. */
+	readonly lexiconName: string;
+}
+
+const LexiconArnRegex =
+	/^arn:(?<partition>[^:]+):polly:(?<region>[^:]*):(?<account>[^:]*):lexicon\/(?<lexiconName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for polly resources.
@@ -72,16 +97,7 @@ export class PollyResources {
 	/**
 	 * Builds an ARN for the lexicon resource.
 	 */
-	static lexicon(props: {
-		/** The LexiconName component of the ARN. */
-		readonly lexiconName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static lexicon(props: PollyLexiconArnProps): string {
 		return `arn:${props.partition ?? "aws"}:polly:${props.region ?? "*"}:${props.account ?? "*"}:lexicon/${props.lexiconName}`;
 	}
 
@@ -96,12 +112,7 @@ export class PollyResources {
 	 * Parses a lexicon ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLexiconArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		lexiconName: string;
-	} {
+	static parseLexiconArn(arn: string): PollyLexiconArnComponents {
 		const match = LexiconArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid lexicon ARN: ${arn}`);
@@ -120,31 +131,31 @@ export class PollyResources {
  */
 export class PollyOperations {
 	/** IAM actions required for the DeleteLexicon API call. */
-	static readonly DELETE_LEXICON: string[] = ["polly:DeleteLexicon"];
+	static readonly DeleteLexicon: string[] = ["polly:DeleteLexicon"];
 	/** IAM actions required for the DescribeVoices API call. */
-	static readonly DESCRIBE_VOICES: string[] = ["polly:DescribeVoices"];
+	static readonly DescribeVoices: string[] = ["polly:DescribeVoices"];
 	/** IAM actions required for the GetLexicon API call. */
-	static readonly GET_LEXICON: string[] = ["polly:GetLexicon"];
+	static readonly opGetLexicon: string[] = ["polly:GetLexicon"];
 	/** IAM actions required for the GetSpeechSynthesisTask API call. */
-	static readonly GET_SPEECH_SYNTHESIS_TASK: string[] = [
+	static readonly opGetSpeechSynthesisTask: string[] = [
 		"polly:GetSpeechSynthesisTask",
 	];
 	/** IAM actions required for the ListLexicons API call. */
-	static readonly LIST_LEXICONS: string[] = ["polly:ListLexicons"];
+	static readonly ListLexicons: string[] = ["polly:ListLexicons"];
 	/** IAM actions required for the ListSpeechSynthesisTasks API call. */
-	static readonly LIST_SPEECH_SYNTHESIS_TASKS: string[] = [
+	static readonly ListSpeechSynthesisTasks: string[] = [
 		"polly:ListSpeechSynthesisTasks",
 	];
 	/** IAM actions required for the PutLexicon API call. */
-	static readonly PUT_LEXICON: string[] = ["polly:PutLexicon"];
+	static readonly PutLexicon: string[] = ["polly:PutLexicon"];
 	/** IAM actions required for the StartSpeechSynthesisStream API call. */
-	static readonly START_SPEECH_SYNTHESIS_STREAM: string[] = [
+	static readonly StartSpeechSynthesisStream: string[] = [
 		"polly:StartSpeechSynthesisStream",
 	];
 	/** IAM actions required for the StartSpeechSynthesisTask API call. */
-	static readonly START_SPEECH_SYNTHESIS_TASK: string[] = [
+	static readonly StartSpeechSynthesisTask: string[] = [
 		"polly:StartSpeechSynthesisTask",
 	];
 	/** IAM actions required for the SynthesizeSpeech API call. */
-	static readonly SYNTHESIZE_SPEECH: string[] = ["polly:SynthesizeSpeech"];
+	static readonly SynthesizeSpeech: string[] = ["polly:SynthesizeSpeech"];
 }

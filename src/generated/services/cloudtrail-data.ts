@@ -13,25 +13,52 @@ export class CloudtrailDataActions {
 	static readonly SERVICE_PREFIX = "cloudtrail-data";
 
 	/** [Write] cloudtrail-data:PutAuditEvents */
-	static readonly PUT_AUDIT_EVENTS = "cloudtrail-data:PutAuditEvents";
+	static readonly PutAuditEvents = "cloudtrail-data:PutAuditEvents";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudtrailDataActions.PUT_AUDIT_EVENTS,
+	static readonly AllWriteActions: string[] = [
+		CloudtrailDataActions.PutAuditEvents,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ChannelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudtrail:(?<region>[^:]*):(?<account>[^:]*):channel/(?<channelId>[^:/?]+)$",
-);
+/**
+ * Properties for building a channel ARN.
+ */
+export interface CloudtrailDataChannelArnProps {
+	/** The ChannelId component of the ARN. */
+	readonly channelId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a channel ARN.
+ */
+export interface CloudtrailDataChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ChannelId component. */
+	readonly channelId: string;
+}
+
+const ChannelArnRegex =
+	/^arn:(?<partition>[^:]+):cloudtrail:(?<region>[^:]*):(?<account>[^:]*):channel\/(?<channelId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudtrail-data resources.
@@ -40,16 +67,7 @@ export class CloudtrailDataResources {
 	/**
 	 * Builds an ARN for the channel resource.
 	 */
-	static channel(props: {
-		/** The ChannelId component of the ARN. */
-		readonly channelId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channel(props: CloudtrailDataChannelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudtrail:${props.region ?? "*"}:${props.account ?? "*"}:channel/${props.channelId}`;
 	}
 
@@ -64,12 +82,7 @@ export class CloudtrailDataResources {
 	 * Parses a channel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		channelId: string;
-	} {
+	static parseChannelArn(arn: string): CloudtrailDataChannelArnComponents {
 		const match = ChannelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid channel ARN: ${arn}`);
@@ -88,9 +101,7 @@ export class CloudtrailDataResources {
  */
 export class CloudtrailDataOperations {
 	/** IAM actions required for the PutAuditEvents API call. */
-	static readonly PUT_AUDIT_EVENTS: string[] = [
-		"cloudtrail-data:PutAuditEvents",
-	];
+	static readonly PutAuditEvents: string[] = ["cloudtrail-data:PutAuditEvents"];
 }
 
 /**
@@ -98,11 +109,11 @@ export class CloudtrailDataOperations {
  */
 export class CloudtrailDataConditions {
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

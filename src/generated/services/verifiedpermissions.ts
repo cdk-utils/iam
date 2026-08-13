@@ -13,135 +13,187 @@ export class VerifiedpermissionsActions {
 	static readonly SERVICE_PREFIX = "verifiedpermissions";
 
 	/** [Write] verifiedpermissions:CreateIdentitySource */
-	static readonly CREATE_IDENTITY_SOURCE =
+	static readonly CreateIdentitySource =
 		"verifiedpermissions:CreateIdentitySource";
 	/** [Write] verifiedpermissions:CreatePolicy */
-	static readonly CREATE_POLICY = "verifiedpermissions:CreatePolicy";
+	static readonly CreatePolicy = "verifiedpermissions:CreatePolicy";
 	/** [Write] verifiedpermissions:CreatePolicyStore */
-	static readonly CREATE_POLICY_STORE = "verifiedpermissions:CreatePolicyStore";
+	static readonly CreatePolicyStore = "verifiedpermissions:CreatePolicyStore";
 	/** [Write] verifiedpermissions:CreatePolicyStoreAlias */
-	static readonly CREATE_POLICY_STORE_ALIAS =
+	static readonly CreatePolicyStoreAlias =
 		"verifiedpermissions:CreatePolicyStoreAlias";
 	/** [Write] verifiedpermissions:CreatePolicyTemplate */
-	static readonly CREATE_POLICY_TEMPLATE =
+	static readonly CreatePolicyTemplate =
 		"verifiedpermissions:CreatePolicyTemplate";
 	/** [Write] verifiedpermissions:DeleteIdentitySource */
-	static readonly DELETE_IDENTITY_SOURCE =
+	static readonly DeleteIdentitySource =
 		"verifiedpermissions:DeleteIdentitySource";
 	/** [Write] verifiedpermissions:DeletePolicy */
-	static readonly DELETE_POLICY = "verifiedpermissions:DeletePolicy";
+	static readonly DeletePolicy = "verifiedpermissions:DeletePolicy";
 	/** [Write] verifiedpermissions:DeletePolicyStore */
-	static readonly DELETE_POLICY_STORE = "verifiedpermissions:DeletePolicyStore";
+	static readonly DeletePolicyStore = "verifiedpermissions:DeletePolicyStore";
 	/** [Write] verifiedpermissions:DeletePolicyStoreAlias */
-	static readonly DELETE_POLICY_STORE_ALIAS =
+	static readonly DeletePolicyStoreAlias =
 		"verifiedpermissions:DeletePolicyStoreAlias";
 	/** [Write] verifiedpermissions:DeletePolicyTemplate */
-	static readonly DELETE_POLICY_TEMPLATE =
+	static readonly DeletePolicyTemplate =
 		"verifiedpermissions:DeletePolicyTemplate";
 	/** [Read] verifiedpermissions:GetIdentitySource */
-	static readonly GET_IDENTITY_SOURCE = "verifiedpermissions:GetIdentitySource";
+	static readonly actionGetIdentitySource =
+		"verifiedpermissions:GetIdentitySource";
 	/** [Read] verifiedpermissions:GetPolicy */
-	static readonly GET_POLICY = "verifiedpermissions:GetPolicy";
+	static readonly actionGetPolicy = "verifiedpermissions:GetPolicy";
 	/** [Read] verifiedpermissions:GetPolicyStore */
-	static readonly GET_POLICY_STORE = "verifiedpermissions:GetPolicyStore";
+	static readonly actionGetPolicyStore = "verifiedpermissions:GetPolicyStore";
 	/** [Read] verifiedpermissions:GetPolicyStoreAlias */
-	static readonly GET_POLICY_STORE_ALIAS =
+	static readonly actionGetPolicyStoreAlias =
 		"verifiedpermissions:GetPolicyStoreAlias";
 	/** [Read] verifiedpermissions:GetPolicyTemplate */
-	static readonly GET_POLICY_TEMPLATE = "verifiedpermissions:GetPolicyTemplate";
+	static readonly actionGetPolicyTemplate =
+		"verifiedpermissions:GetPolicyTemplate";
 	/** [Read] verifiedpermissions:GetSchema */
-	static readonly GET_SCHEMA = "verifiedpermissions:GetSchema";
+	static readonly actionGetSchema = "verifiedpermissions:GetSchema";
 	/** [Read] verifiedpermissions:IsAuthorized */
-	static readonly IS_AUTHORIZED = "verifiedpermissions:IsAuthorized";
+	static readonly IsAuthorized = "verifiedpermissions:IsAuthorized";
 	/** [Read] verifiedpermissions:IsAuthorizedWithToken */
-	static readonly IS_AUTHORIZED_WITH_TOKEN =
+	static readonly IsAuthorizedWithToken =
 		"verifiedpermissions:IsAuthorizedWithToken";
 	/** [List] verifiedpermissions:ListIdentitySources */
-	static readonly LIST_IDENTITY_SOURCES =
+	static readonly ListIdentitySources =
 		"verifiedpermissions:ListIdentitySources";
 	/** [List] verifiedpermissions:ListPolicies */
-	static readonly LIST_POLICIES = "verifiedpermissions:ListPolicies";
+	static readonly ListPolicies = "verifiedpermissions:ListPolicies";
 	/** [List] verifiedpermissions:ListPolicyStoreAliases */
-	static readonly LIST_POLICY_STORE_ALIASES =
+	static readonly ListPolicyStoreAliases =
 		"verifiedpermissions:ListPolicyStoreAliases";
 	/** [List] verifiedpermissions:ListPolicyStores */
-	static readonly LIST_POLICY_STORES = "verifiedpermissions:ListPolicyStores";
+	static readonly ListPolicyStores = "verifiedpermissions:ListPolicyStores";
 	/** [List] verifiedpermissions:ListPolicyTemplates */
-	static readonly LIST_POLICY_TEMPLATES =
+	static readonly ListPolicyTemplates =
 		"verifiedpermissions:ListPolicyTemplates";
 	/** [Read] verifiedpermissions:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"verifiedpermissions:ListTagsForResource";
 	/** [Write] verifiedpermissions:PutSchema */
-	static readonly PUT_SCHEMA = "verifiedpermissions:PutSchema";
+	static readonly PutSchema = "verifiedpermissions:PutSchema";
 	/** [Tagging] verifiedpermissions:TagResource */
-	static readonly TAG_RESOURCE = "verifiedpermissions:TagResource";
+	static readonly TagResource = "verifiedpermissions:TagResource";
 	/** [Tagging] verifiedpermissions:UntagResource */
-	static readonly UNTAG_RESOURCE = "verifiedpermissions:UntagResource";
+	static readonly UntagResource = "verifiedpermissions:UntagResource";
 	/** [Write] verifiedpermissions:UpdateIdentitySource */
-	static readonly UPDATE_IDENTITY_SOURCE =
+	static readonly UpdateIdentitySource =
 		"verifiedpermissions:UpdateIdentitySource";
 	/** [Write] verifiedpermissions:UpdatePolicy */
-	static readonly UPDATE_POLICY = "verifiedpermissions:UpdatePolicy";
+	static readonly UpdatePolicy = "verifiedpermissions:UpdatePolicy";
 	/** [Write] verifiedpermissions:UpdatePolicyStore */
-	static readonly UPDATE_POLICY_STORE = "verifiedpermissions:UpdatePolicyStore";
+	static readonly UpdatePolicyStore = "verifiedpermissions:UpdatePolicyStore";
 	/** [Write] verifiedpermissions:UpdatePolicyTemplate */
-	static readonly UPDATE_POLICY_TEMPLATE =
+	static readonly UpdatePolicyTemplate =
 		"verifiedpermissions:UpdatePolicyTemplate";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		VerifiedpermissionsActions.GET_IDENTITY_SOURCE,
-		VerifiedpermissionsActions.GET_POLICY,
-		VerifiedpermissionsActions.GET_POLICY_STORE,
-		VerifiedpermissionsActions.GET_POLICY_STORE_ALIAS,
-		VerifiedpermissionsActions.GET_POLICY_TEMPLATE,
-		VerifiedpermissionsActions.GET_SCHEMA,
-		VerifiedpermissionsActions.IS_AUTHORIZED,
-		VerifiedpermissionsActions.IS_AUTHORIZED_WITH_TOKEN,
-		VerifiedpermissionsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		VerifiedpermissionsActions.actionGetIdentitySource,
+		VerifiedpermissionsActions.actionGetPolicy,
+		VerifiedpermissionsActions.actionGetPolicyStore,
+		VerifiedpermissionsActions.actionGetPolicyStoreAlias,
+		VerifiedpermissionsActions.actionGetPolicyTemplate,
+		VerifiedpermissionsActions.actionGetSchema,
+		VerifiedpermissionsActions.IsAuthorized,
+		VerifiedpermissionsActions.IsAuthorizedWithToken,
+		VerifiedpermissionsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		VerifiedpermissionsActions.CREATE_IDENTITY_SOURCE,
-		VerifiedpermissionsActions.CREATE_POLICY,
-		VerifiedpermissionsActions.CREATE_POLICY_STORE,
-		VerifiedpermissionsActions.CREATE_POLICY_STORE_ALIAS,
-		VerifiedpermissionsActions.CREATE_POLICY_TEMPLATE,
-		VerifiedpermissionsActions.DELETE_IDENTITY_SOURCE,
-		VerifiedpermissionsActions.DELETE_POLICY,
-		VerifiedpermissionsActions.DELETE_POLICY_STORE,
-		VerifiedpermissionsActions.DELETE_POLICY_STORE_ALIAS,
-		VerifiedpermissionsActions.DELETE_POLICY_TEMPLATE,
-		VerifiedpermissionsActions.PUT_SCHEMA,
-		VerifiedpermissionsActions.UPDATE_IDENTITY_SOURCE,
-		VerifiedpermissionsActions.UPDATE_POLICY,
-		VerifiedpermissionsActions.UPDATE_POLICY_STORE,
-		VerifiedpermissionsActions.UPDATE_POLICY_TEMPLATE,
+	static readonly AllWriteActions: string[] = [
+		VerifiedpermissionsActions.CreateIdentitySource,
+		VerifiedpermissionsActions.CreatePolicy,
+		VerifiedpermissionsActions.CreatePolicyStore,
+		VerifiedpermissionsActions.CreatePolicyStoreAlias,
+		VerifiedpermissionsActions.CreatePolicyTemplate,
+		VerifiedpermissionsActions.DeleteIdentitySource,
+		VerifiedpermissionsActions.DeletePolicy,
+		VerifiedpermissionsActions.DeletePolicyStore,
+		VerifiedpermissionsActions.DeletePolicyStoreAlias,
+		VerifiedpermissionsActions.DeletePolicyTemplate,
+		VerifiedpermissionsActions.PutSchema,
+		VerifiedpermissionsActions.UpdateIdentitySource,
+		VerifiedpermissionsActions.UpdatePolicy,
+		VerifiedpermissionsActions.UpdatePolicyStore,
+		VerifiedpermissionsActions.UpdatePolicyTemplate,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		VerifiedpermissionsActions.LIST_IDENTITY_SOURCES,
-		VerifiedpermissionsActions.LIST_POLICIES,
-		VerifiedpermissionsActions.LIST_POLICY_STORE_ALIASES,
-		VerifiedpermissionsActions.LIST_POLICY_STORES,
-		VerifiedpermissionsActions.LIST_POLICY_TEMPLATES,
+	static readonly AllListActions: string[] = [
+		VerifiedpermissionsActions.ListIdentitySources,
+		VerifiedpermissionsActions.ListPolicies,
+		VerifiedpermissionsActions.ListPolicyStoreAliases,
+		VerifiedpermissionsActions.ListPolicyStores,
+		VerifiedpermissionsActions.ListPolicyTemplates,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		VerifiedpermissionsActions.TAG_RESOURCE,
-		VerifiedpermissionsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		VerifiedpermissionsActions.TagResource,
+		VerifiedpermissionsActions.UntagResource,
 	];
 }
 
-const PolicyStoreArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):verifiedpermissions::(?<account>[^:]*):policy-store/(?<policyStoreId>[^:/?]+)$",
-);
-const PolicyStoreAliasArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):verifiedpermissions:(?<region>[^:]*):(?<account>[^:]*):policy-store-alias/(?<aliasName>[^:/?]+)$",
-);
+/**
+ * Properties for building a policy-store ARN.
+ */
+export interface VerifiedpermissionsPolicyStoreArnProps {
+	/** The PolicyStoreId component of the ARN. */
+	readonly policyStoreId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a policy-store ARN.
+ */
+export interface VerifiedpermissionsPolicyStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PolicyStoreId component. */
+	readonly policyStoreId: string;
+}
+
+/**
+ * Properties for building a policy-store-alias ARN.
+ */
+export interface VerifiedpermissionsPolicyStoreAliasArnProps {
+	/** The AliasName component of the ARN. */
+	readonly aliasName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a policy-store-alias ARN.
+ */
+export interface VerifiedpermissionsPolicyStoreAliasArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AliasName component. */
+	readonly aliasName: string;
+}
+
+const PolicyStoreArnRegex =
+	/^arn:(?<partition>[^:]+):verifiedpermissions::(?<account>[^:]*):policy-store\/(?<policyStoreId>[^:/?]+)$/;
+const PolicyStoreAliasArnRegex =
+	/^arn:(?<partition>[^:]+):verifiedpermissions:(?<region>[^:]*):(?<account>[^:]*):policy-store-alias\/(?<aliasName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for verifiedpermissions resources.
@@ -150,14 +202,7 @@ export class VerifiedpermissionsResources {
 	/**
 	 * Builds an ARN for the policy-store resource.
 	 */
-	static policyStore(props: {
-		/** The PolicyStoreId component of the ARN. */
-		readonly policyStoreId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static policyStore(props: VerifiedpermissionsPolicyStoreArnProps): string {
 		return `arn:${props.partition ?? "aws"}:verifiedpermissions::${props.account ?? "*"}:policy-store/${props.policyStoreId}`;
 	}
 
@@ -172,11 +217,9 @@ export class VerifiedpermissionsResources {
 	 * Parses a policy-store ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePolicyStoreArn(arn: string): {
-		partition: string;
-		account: string;
-		policyStoreId: string;
-	} {
+	static parsePolicyStoreArn(
+		arn: string,
+	): VerifiedpermissionsPolicyStoreArnComponents {
 		const match = PolicyStoreArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid policy-store ARN: ${arn}`);
@@ -191,16 +234,9 @@ export class VerifiedpermissionsResources {
 	/**
 	 * Builds an ARN for the policy-store-alias resource.
 	 */
-	static policyStoreAlias(props: {
-		/** The AliasName component of the ARN. */
-		readonly aliasName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static policyStoreAlias(
+		props: VerifiedpermissionsPolicyStoreAliasArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:verifiedpermissions:${props.region ?? "*"}:${props.account ?? "*"}:policy-store-alias/${props.aliasName}`;
 	}
 
@@ -215,12 +251,9 @@ export class VerifiedpermissionsResources {
 	 * Parses a policy-store-alias ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePolicyStoreAliasArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		aliasName: string;
-	} {
+	static parsePolicyStoreAliasArn(
+		arn: string,
+	): VerifiedpermissionsPolicyStoreAliasArnComponents {
 		const match = PolicyStoreAliasArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid policy-store-alias ARN: ${arn}`);
@@ -239,73 +272,73 @@ export class VerifiedpermissionsResources {
  */
 export class VerifiedpermissionsOperations {
 	/** IAM actions required for the BatchGetPolicy API call. */
-	static readonly BATCH_GET_POLICY: string[] = [];
+	static readonly BatchGetPolicy: string[] = [];
 	/** IAM actions required for the BatchIsAuthorized API call. */
-	static readonly BATCH_IS_AUTHORIZED: string[] = [];
+	static readonly BatchIsAuthorized: string[] = [];
 	/** IAM actions required for the BatchIsAuthorizedWithToken API call. */
-	static readonly BATCH_IS_AUTHORIZED_WITH_TOKEN: string[] = [];
+	static readonly BatchIsAuthorizedWithToken: string[] = [];
 	/** IAM actions required for the CreateIdentitySource API call. */
-	static readonly CREATE_IDENTITY_SOURCE: string[] = [];
+	static readonly CreateIdentitySource: string[] = [];
 	/** IAM actions required for the CreatePolicy API call. */
-	static readonly CREATE_POLICY: string[] = [];
+	static readonly CreatePolicy: string[] = [];
 	/** IAM actions required for the CreatePolicyStore API call. */
-	static readonly CREATE_POLICY_STORE: string[] = [];
+	static readonly CreatePolicyStore: string[] = [];
 	/** IAM actions required for the CreatePolicyStoreAlias API call. */
-	static readonly CREATE_POLICY_STORE_ALIAS: string[] = [];
+	static readonly CreatePolicyStoreAlias: string[] = [];
 	/** IAM actions required for the CreatePolicyTemplate API call. */
-	static readonly CREATE_POLICY_TEMPLATE: string[] = [];
+	static readonly CreatePolicyTemplate: string[] = [];
 	/** IAM actions required for the DeleteIdentitySource API call. */
-	static readonly DELETE_IDENTITY_SOURCE: string[] = [];
+	static readonly DeleteIdentitySource: string[] = [];
 	/** IAM actions required for the DeletePolicy API call. */
-	static readonly DELETE_POLICY: string[] = [];
+	static readonly DeletePolicy: string[] = [];
 	/** IAM actions required for the DeletePolicyStore API call. */
-	static readonly DELETE_POLICY_STORE: string[] = [];
+	static readonly DeletePolicyStore: string[] = [];
 	/** IAM actions required for the DeletePolicyStoreAlias API call. */
-	static readonly DELETE_POLICY_STORE_ALIAS: string[] = [];
+	static readonly DeletePolicyStoreAlias: string[] = [];
 	/** IAM actions required for the DeletePolicyTemplate API call. */
-	static readonly DELETE_POLICY_TEMPLATE: string[] = [];
+	static readonly DeletePolicyTemplate: string[] = [];
 	/** IAM actions required for the GetIdentitySource API call. */
-	static readonly GET_IDENTITY_SOURCE: string[] = [];
+	static readonly opGetIdentitySource: string[] = [];
 	/** IAM actions required for the GetPolicy API call. */
-	static readonly GET_POLICY: string[] = [];
+	static readonly opGetPolicy: string[] = [];
 	/** IAM actions required for the GetPolicyStore API call. */
-	static readonly GET_POLICY_STORE: string[] = [];
+	static readonly opGetPolicyStore: string[] = [];
 	/** IAM actions required for the GetPolicyStoreAlias API call. */
-	static readonly GET_POLICY_STORE_ALIAS: string[] = [];
+	static readonly opGetPolicyStoreAlias: string[] = [];
 	/** IAM actions required for the GetPolicyTemplate API call. */
-	static readonly GET_POLICY_TEMPLATE: string[] = [];
+	static readonly opGetPolicyTemplate: string[] = [];
 	/** IAM actions required for the GetSchema API call. */
-	static readonly GET_SCHEMA: string[] = [];
+	static readonly opGetSchema: string[] = [];
 	/** IAM actions required for the IsAuthorized API call. */
-	static readonly IS_AUTHORIZED: string[] = [];
+	static readonly IsAuthorized: string[] = [];
 	/** IAM actions required for the IsAuthorizedWithToken API call. */
-	static readonly IS_AUTHORIZED_WITH_TOKEN: string[] = [];
+	static readonly IsAuthorizedWithToken: string[] = [];
 	/** IAM actions required for the ListIdentitySources API call. */
-	static readonly LIST_IDENTITY_SOURCES: string[] = [];
+	static readonly ListIdentitySources: string[] = [];
 	/** IAM actions required for the ListPolicies API call. */
-	static readonly LIST_POLICIES: string[] = [];
+	static readonly ListPolicies: string[] = [];
 	/** IAM actions required for the ListPolicyStoreAliases API call. */
-	static readonly LIST_POLICY_STORE_ALIASES: string[] = [];
+	static readonly ListPolicyStoreAliases: string[] = [];
 	/** IAM actions required for the ListPolicyStores API call. */
-	static readonly LIST_POLICY_STORES: string[] = [];
+	static readonly ListPolicyStores: string[] = [];
 	/** IAM actions required for the ListPolicyTemplates API call. */
-	static readonly LIST_POLICY_TEMPLATES: string[] = [];
+	static readonly ListPolicyTemplates: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the PutSchema API call. */
-	static readonly PUT_SCHEMA: string[] = [];
+	static readonly PutSchema: string[] = [];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [];
+	static readonly TagResource: string[] = [];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [];
+	static readonly UntagResource: string[] = [];
 	/** IAM actions required for the UpdateIdentitySource API call. */
-	static readonly UPDATE_IDENTITY_SOURCE: string[] = [];
+	static readonly UpdateIdentitySource: string[] = [];
 	/** IAM actions required for the UpdatePolicy API call. */
-	static readonly UPDATE_POLICY: string[] = [];
+	static readonly UpdatePolicy: string[] = [];
 	/** IAM actions required for the UpdatePolicyStore API call. */
-	static readonly UPDATE_POLICY_STORE: string[] = [];
+	static readonly UpdatePolicyStore: string[] = [];
 	/** IAM actions required for the UpdatePolicyTemplate API call. */
-	static readonly UPDATE_POLICY_TEMPLATE: string[] = [];
+	static readonly UpdatePolicyTemplate: string[] = [];
 }
 
 /**
@@ -313,25 +346,25 @@ export class VerifiedpermissionsOperations {
  */
 export class VerifiedpermissionsConditions {
 	/** Condition keys applicable to the CreatePolicyStore action. */
-	static readonly CREATE_POLICY_STORE_CONDITION_KEYS: string[] = [
+	static readonly CreatePolicyStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

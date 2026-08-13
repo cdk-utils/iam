@@ -13,57 +13,85 @@ export class CloudShellActions {
 	static readonly SERVICE_PREFIX = "cloudshell";
 
 	/** [Read] cloudshell:ApproveCommand */
-	static readonly APPROVE_COMMAND = "cloudshell:ApproveCommand";
+	static readonly ApproveCommand = "cloudshell:ApproveCommand";
 	/** [Write] cloudshell:CreateEnvironment */
-	static readonly CREATE_ENVIRONMENT = "cloudshell:CreateEnvironment";
+	static readonly CreateEnvironment = "cloudshell:CreateEnvironment";
 	/** [Write] cloudshell:CreateSession */
-	static readonly CREATE_SESSION = "cloudshell:CreateSession";
+	static readonly CreateSession = "cloudshell:CreateSession";
 	/** [Write] cloudshell:DeleteEnvironment */
-	static readonly DELETE_ENVIRONMENT = "cloudshell:DeleteEnvironment";
+	static readonly DeleteEnvironment = "cloudshell:DeleteEnvironment";
 	/** [List] cloudshell:DescribeEnvironments */
-	static readonly DESCRIBE_ENVIRONMENTS = "cloudshell:DescribeEnvironments";
+	static readonly DescribeEnvironments = "cloudshell:DescribeEnvironments";
 	/** [Read] cloudshell:GetEnvironmentStatus */
-	static readonly GET_ENVIRONMENT_STATUS = "cloudshell:GetEnvironmentStatus";
+	static readonly actionGetEnvironmentStatus =
+		"cloudshell:GetEnvironmentStatus";
 	/** [Write] cloudshell:GetFileDownloadUrls */
-	static readonly GET_FILE_DOWNLOAD_URLS = "cloudshell:GetFileDownloadUrls";
+	static readonly actionGetFileDownloadUrls = "cloudshell:GetFileDownloadUrls";
 	/** [Write] cloudshell:GetFileUploadUrls */
-	static readonly GET_FILE_UPLOAD_URLS = "cloudshell:GetFileUploadUrls";
+	static readonly actionGetFileUploadUrls = "cloudshell:GetFileUploadUrls";
 	/** [Write] cloudshell:PutCredentials */
-	static readonly PUT_CREDENTIALS = "cloudshell:PutCredentials";
+	static readonly PutCredentials = "cloudshell:PutCredentials";
 	/** [Write] cloudshell:StartEnvironment */
-	static readonly START_ENVIRONMENT = "cloudshell:StartEnvironment";
+	static readonly StartEnvironment = "cloudshell:StartEnvironment";
 	/** [Write] cloudshell:StopEnvironment */
-	static readonly STOP_ENVIRONMENT = "cloudshell:StopEnvironment";
+	static readonly StopEnvironment = "cloudshell:StopEnvironment";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudShellActions.APPROVE_COMMAND,
-		CloudShellActions.GET_ENVIRONMENT_STATUS,
+	static readonly AllReadActions: string[] = [
+		CloudShellActions.ApproveCommand,
+		CloudShellActions.actionGetEnvironmentStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudShellActions.CREATE_ENVIRONMENT,
-		CloudShellActions.CREATE_SESSION,
-		CloudShellActions.DELETE_ENVIRONMENT,
-		CloudShellActions.GET_FILE_DOWNLOAD_URLS,
-		CloudShellActions.GET_FILE_UPLOAD_URLS,
-		CloudShellActions.PUT_CREDENTIALS,
-		CloudShellActions.START_ENVIRONMENT,
-		CloudShellActions.STOP_ENVIRONMENT,
+	static readonly AllWriteActions: string[] = [
+		CloudShellActions.CreateEnvironment,
+		CloudShellActions.CreateSession,
+		CloudShellActions.DeleteEnvironment,
+		CloudShellActions.actionGetFileDownloadUrls,
+		CloudShellActions.actionGetFileUploadUrls,
+		CloudShellActions.PutCredentials,
+		CloudShellActions.StartEnvironment,
+		CloudShellActions.StopEnvironment,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CloudShellActions.DESCRIBE_ENVIRONMENTS,
+	static readonly AllListActions: string[] = [
+		CloudShellActions.DescribeEnvironments,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudshell:(?<region>[^:]*):(?<account>[^:]*):environment/(?<environmentId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Environment ARN.
+ */
+export interface CloudShellEnvironmentArnProps {
+	/** The EnvironmentId component of the ARN. */
+	readonly environmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Environment ARN.
+ */
+export interface CloudShellEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EnvironmentId component. */
+	readonly environmentId: string;
+}
+
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):cloudshell:(?<region>[^:]*):(?<account>[^:]*):environment\/(?<environmentId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudshell resources.
@@ -72,16 +100,7 @@ export class CloudShellResources {
 	/**
 	 * Builds an ARN for the Environment resource.
 	 */
-	static environment(props: {
-		/** The EnvironmentId component of the ARN. */
-		readonly environmentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: CloudShellEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudshell:${props.region ?? "*"}:${props.account ?? "*"}:environment/${props.environmentId}`;
 	}
 
@@ -96,12 +115,7 @@ export class CloudShellResources {
 	 * Parses a Environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		environmentId: string;
-	} {
+	static parseEnvironmentArn(arn: string): CloudShellEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Environment ARN: ${arn}`);
@@ -120,7 +134,7 @@ export class CloudShellResources {
  */
 export class CloudShellConditions {
 	/** Condition keys applicable to the CreateEnvironment action. */
-	static readonly CREATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"cloudshell:SecurityGroupIds",
 		"cloudshell:SubnetIds",
 		"cloudshell:VpcIds",

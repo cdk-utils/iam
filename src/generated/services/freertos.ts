@@ -13,95 +13,149 @@ export class FreertosActions {
 	static readonly SERVICE_PREFIX = "freertos";
 
 	/** [Write] freertos:CreateSoftwareConfiguration */
-	static readonly CREATE_SOFTWARE_CONFIGURATION =
+	static readonly CreateSoftwareConfiguration =
 		"freertos:CreateSoftwareConfiguration";
 	/** [Write] freertos:CreateSubscription */
-	static readonly CREATE_SUBSCRIPTION = "freertos:CreateSubscription";
+	static readonly CreateSubscription = "freertos:CreateSubscription";
 	/** [Write] freertos:DeleteSoftwareConfiguration */
-	static readonly DELETE_SOFTWARE_CONFIGURATION =
+	static readonly DeleteSoftwareConfiguration =
 		"freertos:DeleteSoftwareConfiguration";
 	/** [Read] freertos:DescribeHardwarePlatform */
-	static readonly DESCRIBE_HARDWARE_PLATFORM =
+	static readonly DescribeHardwarePlatform =
 		"freertos:DescribeHardwarePlatform";
 	/** [Read] freertos:DescribeSoftwareConfiguration */
-	static readonly DESCRIBE_SOFTWARE_CONFIGURATION =
+	static readonly DescribeSoftwareConfiguration =
 		"freertos:DescribeSoftwareConfiguration";
 	/** [Read] freertos:DescribeSubscription */
-	static readonly DESCRIBE_SUBSCRIPTION = "freertos:DescribeSubscription";
+	static readonly DescribeSubscription = "freertos:DescribeSubscription";
 	/** [Read] freertos:GetEmpPatchUrl */
-	static readonly GET_EMP_PATCH_URL = "freertos:GetEmpPatchUrl";
+	static readonly actionGetEmpPatchUrl = "freertos:GetEmpPatchUrl";
 	/** [Read] freertos:GetSoftwareURL */
-	static readonly GET_SOFTWARE_URL = "freertos:GetSoftwareURL";
+	static readonly actionGetSoftwareURL = "freertos:GetSoftwareURL";
 	/** [Read] freertos:GetSoftwareURLForConfiguration */
-	static readonly GET_SOFTWARE_URL_FOR_CONFIGURATION =
+	static readonly actionGetSoftwareURLForConfiguration =
 		"freertos:GetSoftwareURLForConfiguration";
 	/** [Read] freertos:GetSubscriptionBillingAmount */
-	static readonly GET_SUBSCRIPTION_BILLING_AMOUNT =
+	static readonly actionGetSubscriptionBillingAmount =
 		"freertos:GetSubscriptionBillingAmount";
 	/** [List] freertos:ListFreeRTOSVersions */
-	static readonly LIST_FREE_RTOS_VERSIONS = "freertos:ListFreeRTOSVersions";
+	static readonly ListFreeRTOSVersions = "freertos:ListFreeRTOSVersions";
 	/** [List] freertos:ListHardwarePlatforms */
-	static readonly LIST_HARDWARE_PLATFORMS = "freertos:ListHardwarePlatforms";
+	static readonly ListHardwarePlatforms = "freertos:ListHardwarePlatforms";
 	/** [List] freertos:ListHardwareVendors */
-	static readonly LIST_HARDWARE_VENDORS = "freertos:ListHardwareVendors";
+	static readonly ListHardwareVendors = "freertos:ListHardwareVendors";
 	/** [List] freertos:ListSoftwareConfigurations */
-	static readonly LIST_SOFTWARE_CONFIGURATIONS =
+	static readonly ListSoftwareConfigurations =
 		"freertos:ListSoftwareConfigurations";
 	/** [List] freertos:ListSoftwarePatches */
-	static readonly LIST_SOFTWARE_PATCHES = "freertos:ListSoftwarePatches";
+	static readonly ListSoftwarePatches = "freertos:ListSoftwarePatches";
 	/** [List] freertos:ListSubscriptionEmails */
-	static readonly LIST_SUBSCRIPTION_EMAILS = "freertos:ListSubscriptionEmails";
+	static readonly ListSubscriptionEmails = "freertos:ListSubscriptionEmails";
 	/** [List] freertos:ListSubscriptions */
-	static readonly LIST_SUBSCRIPTIONS = "freertos:ListSubscriptions";
+	static readonly ListSubscriptions = "freertos:ListSubscriptions";
 	/** [Write] freertos:UpdateEmailRecipients */
-	static readonly UPDATE_EMAIL_RECIPIENTS = "freertos:UpdateEmailRecipients";
+	static readonly UpdateEmailRecipients = "freertos:UpdateEmailRecipients";
 	/** [Write] freertos:UpdateSoftwareConfiguration */
-	static readonly UPDATE_SOFTWARE_CONFIGURATION =
+	static readonly UpdateSoftwareConfiguration =
 		"freertos:UpdateSoftwareConfiguration";
 	/** [Write] freertos:VerifyEmail */
-	static readonly VERIFY_EMAIL = "freertos:VerifyEmail";
+	static readonly VerifyEmail = "freertos:VerifyEmail";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		FreertosActions.DESCRIBE_HARDWARE_PLATFORM,
-		FreertosActions.DESCRIBE_SOFTWARE_CONFIGURATION,
-		FreertosActions.DESCRIBE_SUBSCRIPTION,
-		FreertosActions.GET_EMP_PATCH_URL,
-		FreertosActions.GET_SOFTWARE_URL,
-		FreertosActions.GET_SOFTWARE_URL_FOR_CONFIGURATION,
-		FreertosActions.GET_SUBSCRIPTION_BILLING_AMOUNT,
+	static readonly AllReadActions: string[] = [
+		FreertosActions.DescribeHardwarePlatform,
+		FreertosActions.DescribeSoftwareConfiguration,
+		FreertosActions.DescribeSubscription,
+		FreertosActions.actionGetEmpPatchUrl,
+		FreertosActions.actionGetSoftwareURL,
+		FreertosActions.actionGetSoftwareURLForConfiguration,
+		FreertosActions.actionGetSubscriptionBillingAmount,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		FreertosActions.CREATE_SOFTWARE_CONFIGURATION,
-		FreertosActions.CREATE_SUBSCRIPTION,
-		FreertosActions.DELETE_SOFTWARE_CONFIGURATION,
-		FreertosActions.UPDATE_EMAIL_RECIPIENTS,
-		FreertosActions.UPDATE_SOFTWARE_CONFIGURATION,
-		FreertosActions.VERIFY_EMAIL,
+	static readonly AllWriteActions: string[] = [
+		FreertosActions.CreateSoftwareConfiguration,
+		FreertosActions.CreateSubscription,
+		FreertosActions.DeleteSoftwareConfiguration,
+		FreertosActions.UpdateEmailRecipients,
+		FreertosActions.UpdateSoftwareConfiguration,
+		FreertosActions.VerifyEmail,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		FreertosActions.LIST_FREE_RTOS_VERSIONS,
-		FreertosActions.LIST_HARDWARE_PLATFORMS,
-		FreertosActions.LIST_HARDWARE_VENDORS,
-		FreertosActions.LIST_SOFTWARE_CONFIGURATIONS,
-		FreertosActions.LIST_SOFTWARE_PATCHES,
-		FreertosActions.LIST_SUBSCRIPTION_EMAILS,
-		FreertosActions.LIST_SUBSCRIPTIONS,
+	static readonly AllListActions: string[] = [
+		FreertosActions.ListFreeRTOSVersions,
+		FreertosActions.ListHardwarePlatforms,
+		FreertosActions.ListHardwareVendors,
+		FreertosActions.ListSoftwareConfigurations,
+		FreertosActions.ListSoftwarePatches,
+		FreertosActions.ListSubscriptionEmails,
+		FreertosActions.ListSubscriptions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):freertos:(?<region>[^:]*):(?<account>[^:]*):configuration/(?<configurationName>[^:/?]+)$",
-);
-const SubscriptionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):freertos:(?<region>[^:]*):(?<account>[^:]*):subscription/(?<subscriptionId>[^:/?]+)$",
-);
+/**
+ * Properties for building a configuration ARN.
+ */
+export interface FreertosConfigurationArnProps {
+	/** The ConfigurationName component of the ARN. */
+	readonly configurationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuration ARN.
+ */
+export interface FreertosConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationName component. */
+	readonly configurationName: string;
+}
+
+/**
+ * Properties for building a subscription ARN.
+ */
+export interface FreertosSubscriptionArnProps {
+	/** The SubscriptionID component of the ARN. */
+	readonly subscriptionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subscription ARN.
+ */
+export interface FreertosSubscriptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SubscriptionID component. */
+	readonly subscriptionId: string;
+}
+
+const ConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):freertos:(?<region>[^:]*):(?<account>[^:]*):configuration\/(?<configurationName>[^:/?]+)$/;
+const SubscriptionArnRegex =
+	/^arn:(?<partition>[^:]+):freertos:(?<region>[^:]*):(?<account>[^:]*):subscription\/(?<subscriptionId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for freertos resources.
@@ -110,16 +164,7 @@ export class FreertosResources {
 	/**
 	 * Builds an ARN for the configuration resource.
 	 */
-	static configuration(props: {
-		/** The ConfigurationName component of the ARN. */
-		readonly configurationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuration(props: FreertosConfigurationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:freertos:${props.region ?? "*"}:${props.account ?? "*"}:configuration/${props.configurationName}`;
 	}
 
@@ -134,12 +179,9 @@ export class FreertosResources {
 	 * Parses a configuration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configurationName: string;
-	} {
+	static parseConfigurationArn(
+		arn: string,
+	): FreertosConfigurationArnComponents {
 		const match = ConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuration ARN: ${arn}`);
@@ -155,16 +197,7 @@ export class FreertosResources {
 	/**
 	 * Builds an ARN for the subscription resource.
 	 */
-	static subscription(props: {
-		/** The SubscriptionID component of the ARN. */
-		readonly subscriptionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subscription(props: FreertosSubscriptionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:freertos:${props.region ?? "*"}:${props.account ?? "*"}:subscription/${props.subscriptionId}`;
 	}
 
@@ -179,12 +212,7 @@ export class FreertosResources {
 	 * Parses a subscription ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubscriptionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		subscriptionId: string;
-	} {
+	static parseSubscriptionArn(arn: string): FreertosSubscriptionArnComponents {
 		const match = SubscriptionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subscription ARN: ${arn}`);
@@ -203,22 +231,22 @@ export class FreertosResources {
  */
 export class FreertosConditions {
 	/** Condition keys applicable to the CreateSoftwareConfiguration action. */
-	static readonly CREATE_SOFTWARE_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly CreateSoftwareConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSubscription action. */
-	static readonly CREATE_SUBSCRIPTION_CONDITION_KEYS: string[] = [
+	static readonly CreateSubscriptionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

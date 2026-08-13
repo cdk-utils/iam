@@ -13,74 +13,127 @@ export class WorkspacesInstancesActions {
 	static readonly SERVICE_PREFIX = "workspaces-instances";
 
 	/** [Write] workspaces-instances:AssociateVolume */
-	static readonly ASSOCIATE_VOLUME = "workspaces-instances:AssociateVolume";
+	static readonly AssociateVolume = "workspaces-instances:AssociateVolume";
 	/** [Write] workspaces-instances:CreateVolume */
-	static readonly CREATE_VOLUME = "workspaces-instances:CreateVolume";
+	static readonly CreateVolume = "workspaces-instances:CreateVolume";
 	/** [Write] workspaces-instances:CreateWorkspaceInstance */
-	static readonly CREATE_WORKSPACE_INSTANCE =
+	static readonly CreateWorkspaceInstance =
 		"workspaces-instances:CreateWorkspaceInstance";
 	/** [Write] workspaces-instances:DeleteVolume */
-	static readonly DELETE_VOLUME = "workspaces-instances:DeleteVolume";
+	static readonly DeleteVolume = "workspaces-instances:DeleteVolume";
 	/** [Write] workspaces-instances:DeleteWorkspaceInstance */
-	static readonly DELETE_WORKSPACE_INSTANCE =
+	static readonly DeleteWorkspaceInstance =
 		"workspaces-instances:DeleteWorkspaceInstance";
 	/** [Write] workspaces-instances:DisassociateVolume */
-	static readonly DISASSOCIATE_VOLUME =
+	static readonly DisassociateVolume =
 		"workspaces-instances:DisassociateVolume";
 	/** [Read] workspaces-instances:GetWorkspaceInstance */
-	static readonly GET_WORKSPACE_INSTANCE =
+	static readonly actionGetWorkspaceInstance =
 		"workspaces-instances:GetWorkspaceInstance";
 	/** [List] workspaces-instances:ListInstanceTypes */
-	static readonly LIST_INSTANCE_TYPES =
-		"workspaces-instances:ListInstanceTypes";
+	static readonly ListInstanceTypes = "workspaces-instances:ListInstanceTypes";
 	/** [List] workspaces-instances:ListRegions */
-	static readonly LIST_REGIONS = "workspaces-instances:ListRegions";
+	static readonly ListRegions = "workspaces-instances:ListRegions";
 	/** [List] workspaces-instances:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"workspaces-instances:ListTagsForResource";
 	/** [List] workspaces-instances:ListWorkspaceInstances */
-	static readonly LIST_WORKSPACE_INSTANCES =
+	static readonly ListWorkspaceInstances =
 		"workspaces-instances:ListWorkspaceInstances";
 	/** [Tagging] workspaces-instances:TagResource */
-	static readonly TAG_RESOURCE = "workspaces-instances:TagResource";
+	static readonly TagResource = "workspaces-instances:TagResource";
 	/** [Tagging] workspaces-instances:UntagResource */
-	static readonly UNTAG_RESOURCE = "workspaces-instances:UntagResource";
+	static readonly UntagResource = "workspaces-instances:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WorkspacesInstancesActions.GET_WORKSPACE_INSTANCE,
+	static readonly AllReadActions: string[] = [
+		WorkspacesInstancesActions.actionGetWorkspaceInstance,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WorkspacesInstancesActions.ASSOCIATE_VOLUME,
-		WorkspacesInstancesActions.CREATE_VOLUME,
-		WorkspacesInstancesActions.CREATE_WORKSPACE_INSTANCE,
-		WorkspacesInstancesActions.DELETE_VOLUME,
-		WorkspacesInstancesActions.DELETE_WORKSPACE_INSTANCE,
-		WorkspacesInstancesActions.DISASSOCIATE_VOLUME,
+	static readonly AllWriteActions: string[] = [
+		WorkspacesInstancesActions.AssociateVolume,
+		WorkspacesInstancesActions.CreateVolume,
+		WorkspacesInstancesActions.CreateWorkspaceInstance,
+		WorkspacesInstancesActions.DeleteVolume,
+		WorkspacesInstancesActions.DeleteWorkspaceInstance,
+		WorkspacesInstancesActions.DisassociateVolume,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WorkspacesInstancesActions.LIST_INSTANCE_TYPES,
-		WorkspacesInstancesActions.LIST_REGIONS,
-		WorkspacesInstancesActions.LIST_TAGS_FOR_RESOURCE,
-		WorkspacesInstancesActions.LIST_WORKSPACE_INSTANCES,
+	static readonly AllListActions: string[] = [
+		WorkspacesInstancesActions.ListInstanceTypes,
+		WorkspacesInstancesActions.ListRegions,
+		WorkspacesInstancesActions.ListTagsForResource,
+		WorkspacesInstancesActions.ListWorkspaceInstances,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WorkspacesInstancesActions.TAG_RESOURCE,
-		WorkspacesInstancesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WorkspacesInstancesActions.TagResource,
+		WorkspacesInstancesActions.UntagResource,
 	];
 }
 
-const VolumeIdArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):volume/(?<volumeId>[^:/?]+)$",
-);
-const WorkspaceInstanceIdArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):workspaces-instances:(?<region>[^:]*):(?<account>[^:]*):workspaceinstance/(?<workspaceInstanceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a VolumeId ARN.
+ */
+export interface WorkspacesInstancesVolumeIdArnProps {
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VolumeId ARN.
+ */
+export interface WorkspacesInstancesVolumeIdArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+}
+
+/**
+ * Properties for building a WorkspaceInstanceId ARN.
+ */
+export interface WorkspacesInstancesWorkspaceInstanceIdArnProps {
+	/** The WorkspaceInstanceId component of the ARN. */
+	readonly workspaceInstanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a WorkspaceInstanceId ARN.
+ */
+export interface WorkspacesInstancesWorkspaceInstanceIdArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WorkspaceInstanceId component. */
+	readonly workspaceInstanceId: string;
+}
+
+const VolumeIdArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):volume\/(?<volumeId>[^:/?]+)$/;
+const WorkspaceInstanceIdArnRegex =
+	/^arn:(?<partition>[^:]+):workspaces-instances:(?<region>[^:]*):(?<account>[^:]*):workspaceinstance\/(?<workspaceInstanceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for workspaces-instances resources.
@@ -89,16 +142,7 @@ export class WorkspacesInstancesResources {
 	/**
 	 * Builds an ARN for the VolumeId resource.
 	 */
-	static volumeId(props: {
-		/** The VolumeId component of the ARN. */
-		readonly volumeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static volumeId(props: WorkspacesInstancesVolumeIdArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:volume/${props.volumeId}`;
 	}
 
@@ -113,12 +157,9 @@ export class WorkspacesInstancesResources {
 	 * Parses a VolumeId ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVolumeIdArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		volumeId: string;
-	} {
+	static parseVolumeIdArn(
+		arn: string,
+	): WorkspacesInstancesVolumeIdArnComponents {
 		const match = VolumeIdArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VolumeId ARN: ${arn}`);
@@ -134,16 +175,9 @@ export class WorkspacesInstancesResources {
 	/**
 	 * Builds an ARN for the WorkspaceInstanceId resource.
 	 */
-	static workspaceInstanceId(props: {
-		/** The WorkspaceInstanceId component of the ARN. */
-		readonly workspaceInstanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static workspaceInstanceId(
+		props: WorkspacesInstancesWorkspaceInstanceIdArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:workspaces-instances:${props.region ?? "*"}:${props.account ?? "*"}:workspaceinstance/${props.workspaceInstanceId}`;
 	}
 
@@ -158,12 +192,9 @@ export class WorkspacesInstancesResources {
 	 * Parses a WorkspaceInstanceId ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWorkspaceInstanceIdArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		workspaceInstanceId: string;
-	} {
+	static parseWorkspaceInstanceIdArn(
+		arn: string,
+	): WorkspacesInstancesWorkspaceInstanceIdArnComponents {
 		const match = WorkspaceInstanceIdArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid WorkspaceInstanceId ARN: ${arn}`);
@@ -182,52 +213,52 @@ export class WorkspacesInstancesResources {
  */
 export class WorkspacesInstancesOperations {
 	/** IAM actions required for the AssociateVolume API call. */
-	static readonly ASSOCIATE_VOLUME: string[] = [
+	static readonly AssociateVolume: string[] = [
 		"workspaces-instances:AssociateVolume",
 	];
 	/** IAM actions required for the CreateVolume API call. */
-	static readonly CREATE_VOLUME: string[] = [
+	static readonly CreateVolume: string[] = [
 		"workspaces-instances:CreateVolume",
 	];
 	/** IAM actions required for the CreateWorkspaceInstance API call. */
-	static readonly CREATE_WORKSPACE_INSTANCE: string[] = [
+	static readonly CreateWorkspaceInstance: string[] = [
 		"workspaces-instances:CreateWorkspaceInstance",
 		"workspaces-instances:TagResource",
 	];
 	/** IAM actions required for the DeleteVolume API call. */
-	static readonly DELETE_VOLUME: string[] = [
+	static readonly DeleteVolume: string[] = [
 		"workspaces-instances:DeleteVolume",
 	];
 	/** IAM actions required for the DeleteWorkspaceInstance API call. */
-	static readonly DELETE_WORKSPACE_INSTANCE: string[] = [
+	static readonly DeleteWorkspaceInstance: string[] = [
 		"workspaces-instances:DeleteWorkspaceInstance",
 	];
 	/** IAM actions required for the DisassociateVolume API call. */
-	static readonly DISASSOCIATE_VOLUME: string[] = [
+	static readonly DisassociateVolume: string[] = [
 		"workspaces-instances:DisassociateVolume",
 	];
 	/** IAM actions required for the GetWorkspaceInstance API call. */
-	static readonly GET_WORKSPACE_INSTANCE: string[] = [
+	static readonly opGetWorkspaceInstance: string[] = [
 		"workspaces-instances:GetWorkspaceInstance",
 	];
 	/** IAM actions required for the ListInstanceTypes API call. */
-	static readonly LIST_INSTANCE_TYPES: string[] = [
+	static readonly ListInstanceTypes: string[] = [
 		"workspaces-instances:ListInstanceTypes",
 	];
 	/** IAM actions required for the ListRegions API call. */
-	static readonly LIST_REGIONS: string[] = ["workspaces-instances:ListRegions"];
+	static readonly ListRegions: string[] = ["workspaces-instances:ListRegions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"workspaces-instances:ListTagsForResource",
 	];
 	/** IAM actions required for the ListWorkspaceInstances API call. */
-	static readonly LIST_WORKSPACE_INSTANCES: string[] = [
+	static readonly ListWorkspaceInstances: string[] = [
 		"workspaces-instances:ListWorkspaceInstances",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["workspaces-instances:TagResource"];
+	static readonly TagResource: string[] = ["workspaces-instances:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"workspaces-instances:UntagResource",
 	];
 }
@@ -237,24 +268,24 @@ export class WorkspacesInstancesOperations {
  */
 export class WorkspacesInstancesConditions {
 	/** Condition keys applicable to the CreateWorkspaceInstance action. */
-	static readonly CREATE_WORKSPACE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateWorkspaceInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

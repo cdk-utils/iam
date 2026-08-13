@@ -13,75 +13,134 @@ export class IotdeviceadvisorActions {
 	static readonly SERVICE_PREFIX = "iotdeviceadvisor";
 
 	/** [Write] iotdeviceadvisor:CreateSuiteDefinition */
-	static readonly CREATE_SUITE_DEFINITION =
+	static readonly CreateSuiteDefinition =
 		"iotdeviceadvisor:CreateSuiteDefinition";
 	/** [Write] iotdeviceadvisor:DeleteSuiteDefinition */
-	static readonly DELETE_SUITE_DEFINITION =
+	static readonly DeleteSuiteDefinition =
 		"iotdeviceadvisor:DeleteSuiteDefinition";
 	/** [Read] iotdeviceadvisor:GetEndpoint */
-	static readonly GET_ENDPOINT = "iotdeviceadvisor:GetEndpoint";
+	static readonly actionGetEndpoint = "iotdeviceadvisor:GetEndpoint";
 	/** [Read] iotdeviceadvisor:GetSuiteDefinition */
-	static readonly GET_SUITE_DEFINITION = "iotdeviceadvisor:GetSuiteDefinition";
+	static readonly actionGetSuiteDefinition =
+		"iotdeviceadvisor:GetSuiteDefinition";
 	/** [Read] iotdeviceadvisor:GetSuiteRun */
-	static readonly GET_SUITE_RUN = "iotdeviceadvisor:GetSuiteRun";
+	static readonly actionGetSuiteRun = "iotdeviceadvisor:GetSuiteRun";
 	/** [Read] iotdeviceadvisor:GetSuiteRunReport */
-	static readonly GET_SUITE_RUN_REPORT = "iotdeviceadvisor:GetSuiteRunReport";
+	static readonly actionGetSuiteRunReport =
+		"iotdeviceadvisor:GetSuiteRunReport";
 	/** [List] iotdeviceadvisor:ListSuiteDefinitions */
-	static readonly LIST_SUITE_DEFINITIONS =
+	static readonly ListSuiteDefinitions =
 		"iotdeviceadvisor:ListSuiteDefinitions";
 	/** [List] iotdeviceadvisor:ListSuiteRuns */
-	static readonly LIST_SUITE_RUNS = "iotdeviceadvisor:ListSuiteRuns";
+	static readonly ListSuiteRuns = "iotdeviceadvisor:ListSuiteRuns";
 	/** [Read] iotdeviceadvisor:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"iotdeviceadvisor:ListTagsForResource";
+	static readonly ListTagsForResource = "iotdeviceadvisor:ListTagsForResource";
 	/** [Write] iotdeviceadvisor:StartSuiteRun */
-	static readonly START_SUITE_RUN = "iotdeviceadvisor:StartSuiteRun";
+	static readonly StartSuiteRun = "iotdeviceadvisor:StartSuiteRun";
 	/** [Write] iotdeviceadvisor:StopSuiteRun */
-	static readonly STOP_SUITE_RUN = "iotdeviceadvisor:StopSuiteRun";
+	static readonly StopSuiteRun = "iotdeviceadvisor:StopSuiteRun";
 	/** [Tagging] iotdeviceadvisor:TagResource */
-	static readonly TAG_RESOURCE = "iotdeviceadvisor:TagResource";
+	static readonly TagResource = "iotdeviceadvisor:TagResource";
 	/** [Tagging] iotdeviceadvisor:UntagResource */
-	static readonly UNTAG_RESOURCE = "iotdeviceadvisor:UntagResource";
+	static readonly UntagResource = "iotdeviceadvisor:UntagResource";
 	/** [Write] iotdeviceadvisor:UpdateSuiteDefinition */
-	static readonly UPDATE_SUITE_DEFINITION =
+	static readonly UpdateSuiteDefinition =
 		"iotdeviceadvisor:UpdateSuiteDefinition";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotdeviceadvisorActions.GET_ENDPOINT,
-		IotdeviceadvisorActions.GET_SUITE_DEFINITION,
-		IotdeviceadvisorActions.GET_SUITE_RUN,
-		IotdeviceadvisorActions.GET_SUITE_RUN_REPORT,
-		IotdeviceadvisorActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		IotdeviceadvisorActions.actionGetEndpoint,
+		IotdeviceadvisorActions.actionGetSuiteDefinition,
+		IotdeviceadvisorActions.actionGetSuiteRun,
+		IotdeviceadvisorActions.actionGetSuiteRunReport,
+		IotdeviceadvisorActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotdeviceadvisorActions.CREATE_SUITE_DEFINITION,
-		IotdeviceadvisorActions.DELETE_SUITE_DEFINITION,
-		IotdeviceadvisorActions.START_SUITE_RUN,
-		IotdeviceadvisorActions.STOP_SUITE_RUN,
-		IotdeviceadvisorActions.UPDATE_SUITE_DEFINITION,
+	static readonly AllWriteActions: string[] = [
+		IotdeviceadvisorActions.CreateSuiteDefinition,
+		IotdeviceadvisorActions.DeleteSuiteDefinition,
+		IotdeviceadvisorActions.StartSuiteRun,
+		IotdeviceadvisorActions.StopSuiteRun,
+		IotdeviceadvisorActions.UpdateSuiteDefinition,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IotdeviceadvisorActions.LIST_SUITE_DEFINITIONS,
-		IotdeviceadvisorActions.LIST_SUITE_RUNS,
+	static readonly AllListActions: string[] = [
+		IotdeviceadvisorActions.ListSuiteDefinitions,
+		IotdeviceadvisorActions.ListSuiteRuns,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IotdeviceadvisorActions.TAG_RESOURCE,
-		IotdeviceadvisorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IotdeviceadvisorActions.TagResource,
+		IotdeviceadvisorActions.UntagResource,
 	];
 }
 
-const SuitedefinitionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotdeviceadvisor:(?<region>[^:]*):(?<account>[^:]*):suitedefinition/(?<suiteDefinitionId>[^:/?]+)$",
-);
-const SuiterunArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotdeviceadvisor:(?<region>[^:]*):(?<account>[^:]*):suiterun/(?<suiteDefinitionId>[^:/?]+)/(?<suiteRunId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Suitedefinition ARN.
+ */
+export interface IotdeviceadvisorSuitedefinitionArnProps {
+	/** The SuiteDefinitionId component of the ARN. */
+	readonly suiteDefinitionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Suitedefinition ARN.
+ */
+export interface IotdeviceadvisorSuitedefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SuiteDefinitionId component. */
+	readonly suiteDefinitionId: string;
+}
+
+/**
+ * Properties for building a Suiterun ARN.
+ */
+export interface IotdeviceadvisorSuiterunArnProps {
+	/** The SuiteDefinitionId component of the ARN. */
+	readonly suiteDefinitionId: string;
+	/** The SuiteRunId component of the ARN. */
+	readonly suiteRunId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Suiterun ARN.
+ */
+export interface IotdeviceadvisorSuiterunArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SuiteDefinitionId component. */
+	readonly suiteDefinitionId: string;
+	/** The SuiteRunId component. */
+	readonly suiteRunId: string;
+}
+
+const SuitedefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):iotdeviceadvisor:(?<region>[^:]*):(?<account>[^:]*):suitedefinition\/(?<suiteDefinitionId>[^:/?]+)$/;
+const SuiterunArnRegex =
+	/^arn:(?<partition>[^:]+):iotdeviceadvisor:(?<region>[^:]*):(?<account>[^:]*):suiterun\/(?<suiteDefinitionId>[^:/?]+)\/(?<suiteRunId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iotdeviceadvisor resources.
@@ -90,16 +149,9 @@ export class IotdeviceadvisorResources {
 	/**
 	 * Builds an ARN for the Suitedefinition resource.
 	 */
-	static suitedefinition(props: {
-		/** The SuiteDefinitionId component of the ARN. */
-		readonly suiteDefinitionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static suitedefinition(
+		props: IotdeviceadvisorSuitedefinitionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:iotdeviceadvisor:${props.region ?? "*"}:${props.account ?? "*"}:suitedefinition/${props.suiteDefinitionId}`;
 	}
 
@@ -114,12 +166,9 @@ export class IotdeviceadvisorResources {
 	 * Parses a Suitedefinition ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSuitedefinitionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		suiteDefinitionId: string;
-	} {
+	static parseSuitedefinitionArn(
+		arn: string,
+	): IotdeviceadvisorSuitedefinitionArnComponents {
 		const match = SuitedefinitionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Suitedefinition ARN: ${arn}`);
@@ -135,18 +184,7 @@ export class IotdeviceadvisorResources {
 	/**
 	 * Builds an ARN for the Suiterun resource.
 	 */
-	static suiterun(props: {
-		/** The SuiteDefinitionId component of the ARN. */
-		readonly suiteDefinitionId: string;
-		/** The SuiteRunId component of the ARN. */
-		readonly suiteRunId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static suiterun(props: IotdeviceadvisorSuiterunArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotdeviceadvisor:${props.region ?? "*"}:${props.account ?? "*"}:suiterun/${props.suiteDefinitionId}/${props.suiteRunId}`;
 	}
 
@@ -161,13 +199,7 @@ export class IotdeviceadvisorResources {
 	 * Parses a Suiterun ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSuiterunArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		suiteDefinitionId: string;
-		suiteRunId: string;
-	} {
+	static parseSuiterunArn(arn: string): IotdeviceadvisorSuiterunArnComponents {
 		const match = SuiterunArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Suiterun ARN: ${arn}`);
@@ -187,56 +219,54 @@ export class IotdeviceadvisorResources {
  */
 export class IotdeviceadvisorOperations {
 	/** IAM actions required for the CreateSuiteDefinition API call. */
-	static readonly CREATE_SUITE_DEFINITION: string[] = [
+	static readonly CreateSuiteDefinition: string[] = [
 		"iotdeviceadvisor:CreateSuiteDefinition",
 		"iam:PassRole",
 		"iotdeviceadvisor:TagResource",
 	];
 	/** IAM actions required for the DeleteSuiteDefinition API call. */
-	static readonly DELETE_SUITE_DEFINITION: string[] = [
+	static readonly DeleteSuiteDefinition: string[] = [
 		"iotdeviceadvisor:DeleteSuiteDefinition",
 	];
 	/** IAM actions required for the GetEndpoint API call. */
-	static readonly GET_ENDPOINT: string[] = [
+	static readonly opGetEndpoint: string[] = [
 		"iotdeviceadvisor:GetEndpoint",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the GetSuiteDefinition API call. */
-	static readonly GET_SUITE_DEFINITION: string[] = [
+	static readonly opGetSuiteDefinition: string[] = [
 		"iotdeviceadvisor:GetSuiteDefinition",
 	];
 	/** IAM actions required for the GetSuiteRun API call. */
-	static readonly GET_SUITE_RUN: string[] = ["iotdeviceadvisor:GetSuiteRun"];
+	static readonly opGetSuiteRun: string[] = ["iotdeviceadvisor:GetSuiteRun"];
 	/** IAM actions required for the GetSuiteRunReport API call. */
-	static readonly GET_SUITE_RUN_REPORT: string[] = [
+	static readonly opGetSuiteRunReport: string[] = [
 		"iotdeviceadvisor:GetSuiteRunReport",
 	];
 	/** IAM actions required for the ListSuiteDefinitions API call. */
-	static readonly LIST_SUITE_DEFINITIONS: string[] = [
+	static readonly ListSuiteDefinitions: string[] = [
 		"iotdeviceadvisor:ListSuiteDefinitions",
 	];
 	/** IAM actions required for the ListSuiteRuns API call. */
-	static readonly LIST_SUITE_RUNS: string[] = [
-		"iotdeviceadvisor:ListSuiteRuns",
-	];
+	static readonly ListSuiteRuns: string[] = ["iotdeviceadvisor:ListSuiteRuns"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"iotdeviceadvisor:ListTagsForResource",
 	];
 	/** IAM actions required for the StartSuiteRun API call. */
-	static readonly START_SUITE_RUN: string[] = [
+	static readonly StartSuiteRun: string[] = [
 		"iam:PassRole",
 		"iotdeviceadvisor:StartSuiteRun",
 		"iotdeviceadvisor:TagResource",
 	];
 	/** IAM actions required for the StopSuiteRun API call. */
-	static readonly STOP_SUITE_RUN: string[] = ["iotdeviceadvisor:StopSuiteRun"];
+	static readonly StopSuiteRun: string[] = ["iotdeviceadvisor:StopSuiteRun"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["iotdeviceadvisor:TagResource"];
+	static readonly TagResource: string[] = ["iotdeviceadvisor:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["iotdeviceadvisor:UntagResource"];
+	static readonly UntagResource: string[] = ["iotdeviceadvisor:UntagResource"];
 	/** IAM actions required for the UpdateSuiteDefinition API call. */
-	static readonly UPDATE_SUITE_DEFINITION: string[] = [
+	static readonly UpdateSuiteDefinition: string[] = [
 		"iam:PassRole",
 		"iotdeviceadvisor:UpdateSuiteDefinition",
 	];
@@ -247,29 +277,29 @@ export class IotdeviceadvisorOperations {
  */
 export class IotdeviceadvisorConditions {
 	/** Condition keys applicable to the CreateSuiteDefinition action. */
-	static readonly CREATE_SUITE_DEFINITION_CONDITION_KEYS: string[] = [
+	static readonly CreateSuiteDefinitionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartSuiteRun action. */
-	static readonly START_SUITE_RUN_CONDITION_KEYS: string[] = [
+	static readonly StartSuiteRunConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

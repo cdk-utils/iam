@@ -13,53 +13,80 @@ export class PipesActions {
 	static readonly SERVICE_PREFIX = "pipes";
 
 	/** [Write] pipes:CreatePipe */
-	static readonly CREATE_PIPE = "pipes:CreatePipe";
+	static readonly CreatePipe = "pipes:CreatePipe";
 	/** [Write] pipes:DeletePipe */
-	static readonly DELETE_PIPE = "pipes:DeletePipe";
+	static readonly DeletePipe = "pipes:DeletePipe";
 	/** [Read] pipes:DescribePipe */
-	static readonly DESCRIBE_PIPE = "pipes:DescribePipe";
+	static readonly DescribePipe = "pipes:DescribePipe";
 	/** [List] pipes:ListPipes */
-	static readonly LIST_PIPES = "pipes:ListPipes";
+	static readonly ListPipes = "pipes:ListPipes";
 	/** [Read] pipes:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "pipes:ListTagsForResource";
+	static readonly ListTagsForResource = "pipes:ListTagsForResource";
 	/** [Write] pipes:StartPipe */
-	static readonly START_PIPE = "pipes:StartPipe";
+	static readonly StartPipe = "pipes:StartPipe";
 	/** [Write] pipes:StopPipe */
-	static readonly STOP_PIPE = "pipes:StopPipe";
+	static readonly StopPipe = "pipes:StopPipe";
 	/** [Tagging] pipes:TagResource */
-	static readonly TAG_RESOURCE = "pipes:TagResource";
+	static readonly TagResource = "pipes:TagResource";
 	/** [Tagging] pipes:UntagResource */
-	static readonly UNTAG_RESOURCE = "pipes:UntagResource";
+	static readonly UntagResource = "pipes:UntagResource";
 	/** [Write] pipes:UpdatePipe */
-	static readonly UPDATE_PIPE = "pipes:UpdatePipe";
+	static readonly UpdatePipe = "pipes:UpdatePipe";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PipesActions.DESCRIBE_PIPE,
-		PipesActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		PipesActions.DescribePipe,
+		PipesActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PipesActions.CREATE_PIPE,
-		PipesActions.DELETE_PIPE,
-		PipesActions.START_PIPE,
-		PipesActions.STOP_PIPE,
-		PipesActions.UPDATE_PIPE,
+	static readonly AllWriteActions: string[] = [
+		PipesActions.CreatePipe,
+		PipesActions.DeletePipe,
+		PipesActions.StartPipe,
+		PipesActions.StopPipe,
+		PipesActions.UpdatePipe,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [PipesActions.LIST_PIPES];
+	static readonly AllListActions: string[] = [PipesActions.ListPipes];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PipesActions.TAG_RESOURCE,
-		PipesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PipesActions.TagResource,
+		PipesActions.UntagResource,
 	];
 }
 
-const PipeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):pipes:(?<region>[^:]*):(?<account>[^:]*):pipe/(?<name>[^:/?]+)$",
-);
+/**
+ * Properties for building a pipe ARN.
+ */
+export interface PipesPipeArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipe ARN.
+ */
+export interface PipesPipeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+const PipeArnRegex =
+	/^arn:(?<partition>[^:]+):pipes:(?<region>[^:]*):(?<account>[^:]*):pipe\/(?<name>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for pipes resources.
@@ -68,16 +95,7 @@ export class PipesResources {
 	/**
 	 * Builds an ARN for the pipe resource.
 	 */
-	static pipe(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipe(props: PipesPipeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:pipes:${props.region ?? "*"}:${props.account ?? "*"}:pipe/${props.name}`;
 	}
 
@@ -92,12 +110,7 @@ export class PipesResources {
 	 * Parses a pipe ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parsePipeArn(arn: string): PipesPipeArnComponents {
 		const match = PipeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipe ARN: ${arn}`);
@@ -116,31 +129,29 @@ export class PipesResources {
  */
 export class PipesOperations {
 	/** IAM actions required for the CreatePipe API call. */
-	static readonly CREATE_PIPE: string[] = [
+	static readonly CreatePipe: string[] = [
 		"pipes:CreatePipe",
 		"iam:PassRole",
 		"pipes:TagResource",
 	];
 	/** IAM actions required for the DeletePipe API call. */
-	static readonly DELETE_PIPE: string[] = ["pipes:DeletePipe"];
+	static readonly DeletePipe: string[] = ["pipes:DeletePipe"];
 	/** IAM actions required for the DescribePipe API call. */
-	static readonly DESCRIBE_PIPE: string[] = ["pipes:DescribePipe"];
+	static readonly DescribePipe: string[] = ["pipes:DescribePipe"];
 	/** IAM actions required for the ListPipes API call. */
-	static readonly LIST_PIPES: string[] = ["pipes:ListPipes"];
+	static readonly ListPipes: string[] = ["pipes:ListPipes"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"pipes:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["pipes:ListTagsForResource"];
 	/** IAM actions required for the StartPipe API call. */
-	static readonly START_PIPE: string[] = ["pipes:StartPipe"];
+	static readonly StartPipe: string[] = ["pipes:StartPipe"];
 	/** IAM actions required for the StopPipe API call. */
-	static readonly STOP_PIPE: string[] = ["pipes:StopPipe"];
+	static readonly StopPipe: string[] = ["pipes:StopPipe"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["pipes:TagResource"];
+	static readonly TagResource: string[] = ["pipes:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["pipes:UntagResource"];
+	static readonly UntagResource: string[] = ["pipes:UntagResource"];
 	/** IAM actions required for the UpdatePipe API call. */
-	static readonly UPDATE_PIPE: string[] = ["iam:PassRole", "pipes:UpdatePipe"];
+	static readonly UpdatePipe: string[] = ["iam:PassRole", "pipes:UpdatePipe"];
 }
 
 /**
@@ -148,53 +159,53 @@ export class PipesOperations {
  */
 export class PipesConditions {
 	/** Condition keys applicable to the CreatePipe action. */
-	static readonly CREATE_PIPE_CONDITION_KEYS: string[] = [
+	static readonly CreatePipeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeletePipe action. */
-	static readonly DELETE_PIPE_CONDITION_KEYS: string[] = [
+	static readonly DeletePipeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribePipe action. */
-	static readonly DESCRIBE_PIPE_CONDITION_KEYS: string[] = [
+	static readonly DescribePipeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartPipe action. */
-	static readonly START_PIPE_CONDITION_KEYS: string[] = [
+	static readonly StartPipeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StopPipe action. */
-	static readonly STOP_PIPE_CONDITION_KEYS: string[] = [
+	static readonly StopPipeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdatePipe action. */
-	static readonly UPDATE_PIPE_CONDITION_KEYS: string[] = [
+	static readonly UpdatePipeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

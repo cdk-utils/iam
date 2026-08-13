@@ -13,86 +13,140 @@ export class SignerActions {
 	static readonly SERVICE_PREFIX = "signer";
 
 	/** [PermissionManagement] signer:AddProfilePermission */
-	static readonly ADD_PROFILE_PERMISSION = "signer:AddProfilePermission";
+	static readonly AddProfilePermission = "signer:AddProfilePermission";
 	/** [Write] signer:CancelSigningProfile */
-	static readonly CANCEL_SIGNING_PROFILE = "signer:CancelSigningProfile";
+	static readonly CancelSigningProfile = "signer:CancelSigningProfile";
 	/** [Read] signer:DescribeSigningJob */
-	static readonly DESCRIBE_SIGNING_JOB = "signer:DescribeSigningJob";
+	static readonly DescribeSigningJob = "signer:DescribeSigningJob";
 	/** [Read] signer:GetRevocationStatus */
-	static readonly GET_REVOCATION_STATUS = "signer:GetRevocationStatus";
+	static readonly actionGetRevocationStatus = "signer:GetRevocationStatus";
 	/** [Read] signer:GetSigningPlatform */
-	static readonly GET_SIGNING_PLATFORM = "signer:GetSigningPlatform";
+	static readonly actionGetSigningPlatform = "signer:GetSigningPlatform";
 	/** [Read] signer:GetSigningProfile */
-	static readonly GET_SIGNING_PROFILE = "signer:GetSigningProfile";
+	static readonly actionGetSigningProfile = "signer:GetSigningProfile";
 	/** [Read] signer:ListProfilePermissions */
-	static readonly LIST_PROFILE_PERMISSIONS = "signer:ListProfilePermissions";
+	static readonly ListProfilePermissions = "signer:ListProfilePermissions";
 	/** [List] signer:ListSigningJobs */
-	static readonly LIST_SIGNING_JOBS = "signer:ListSigningJobs";
+	static readonly ListSigningJobs = "signer:ListSigningJobs";
 	/** [List] signer:ListSigningPlatforms */
-	static readonly LIST_SIGNING_PLATFORMS = "signer:ListSigningPlatforms";
+	static readonly ListSigningPlatforms = "signer:ListSigningPlatforms";
 	/** [List] signer:ListSigningProfiles */
-	static readonly LIST_SIGNING_PROFILES = "signer:ListSigningProfiles";
+	static readonly ListSigningProfiles = "signer:ListSigningProfiles";
 	/** [Read] signer:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "signer:ListTagsForResource";
+	static readonly ListTagsForResource = "signer:ListTagsForResource";
 	/** [Write] signer:PutSigningProfile */
-	static readonly PUT_SIGNING_PROFILE = "signer:PutSigningProfile";
+	static readonly PutSigningProfile = "signer:PutSigningProfile";
 	/** [PermissionManagement] signer:RemoveProfilePermission */
-	static readonly REMOVE_PROFILE_PERMISSION = "signer:RemoveProfilePermission";
+	static readonly RemoveProfilePermission = "signer:RemoveProfilePermission";
 	/** [Write] signer:RevokeSignature */
-	static readonly REVOKE_SIGNATURE = "signer:RevokeSignature";
+	static readonly RevokeSignature = "signer:RevokeSignature";
 	/** [Write] signer:RevokeSigningProfile */
-	static readonly REVOKE_SIGNING_PROFILE = "signer:RevokeSigningProfile";
+	static readonly RevokeSigningProfile = "signer:RevokeSigningProfile";
 	/** [Write] signer:SignPayload */
-	static readonly SIGN_PAYLOAD = "signer:SignPayload";
+	static readonly SignPayload = "signer:SignPayload";
 	/** [Write] signer:StartSigningJob */
-	static readonly START_SIGNING_JOB = "signer:StartSigningJob";
+	static readonly StartSigningJob = "signer:StartSigningJob";
 	/** [Tagging] signer:TagResource */
-	static readonly TAG_RESOURCE = "signer:TagResource";
+	static readonly TagResource = "signer:TagResource";
 	/** [Tagging] signer:UntagResource */
-	static readonly UNTAG_RESOURCE = "signer:UntagResource";
+	static readonly UntagResource = "signer:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SignerActions.DESCRIBE_SIGNING_JOB,
-		SignerActions.GET_REVOCATION_STATUS,
-		SignerActions.GET_SIGNING_PLATFORM,
-		SignerActions.GET_SIGNING_PROFILE,
-		SignerActions.LIST_PROFILE_PERMISSIONS,
-		SignerActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SignerActions.DescribeSigningJob,
+		SignerActions.actionGetRevocationStatus,
+		SignerActions.actionGetSigningPlatform,
+		SignerActions.actionGetSigningProfile,
+		SignerActions.ListProfilePermissions,
+		SignerActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SignerActions.CANCEL_SIGNING_PROFILE,
-		SignerActions.PUT_SIGNING_PROFILE,
-		SignerActions.REVOKE_SIGNATURE,
-		SignerActions.REVOKE_SIGNING_PROFILE,
-		SignerActions.SIGN_PAYLOAD,
-		SignerActions.START_SIGNING_JOB,
+	static readonly AllWriteActions: string[] = [
+		SignerActions.CancelSigningProfile,
+		SignerActions.PutSigningProfile,
+		SignerActions.RevokeSignature,
+		SignerActions.RevokeSigningProfile,
+		SignerActions.SignPayload,
+		SignerActions.StartSigningJob,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SignerActions.LIST_SIGNING_JOBS,
-		SignerActions.LIST_SIGNING_PLATFORMS,
-		SignerActions.LIST_SIGNING_PROFILES,
+	static readonly AllListActions: string[] = [
+		SignerActions.ListSigningJobs,
+		SignerActions.ListSigningPlatforms,
+		SignerActions.ListSigningProfiles,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		SignerActions.ADD_PROFILE_PERMISSION,
-		SignerActions.REMOVE_PROFILE_PERMISSION,
+	static readonly AllPermissionManagementActions: string[] = [
+		SignerActions.AddProfilePermission,
+		SignerActions.RemoveProfilePermission,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SignerActions.TAG_RESOURCE,
-		SignerActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SignerActions.TagResource,
+		SignerActions.UntagResource,
 	];
 }
 
-const SigningJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):signer:(?<region>[^:]*):(?<account>[^:]*):/signing-jobs/(?<jobId>[^:/?]+)$",
-);
-const SigningProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):signer:(?<region>[^:]*):(?<account>[^:]*):/signing-profiles/(?<profileName>[^:/?]+)$",
-);
+/**
+ * Properties for building a signing-job ARN.
+ */
+export interface SignerSigningJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a signing-job ARN.
+ */
+export interface SignerSigningJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a signing-profile ARN.
+ */
+export interface SignerSigningProfileArnProps {
+	/** The ProfileName component of the ARN. */
+	readonly profileName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a signing-profile ARN.
+ */
+export interface SignerSigningProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProfileName component. */
+	readonly profileName: string;
+}
+
+const SigningJobArnRegex =
+	/^arn:(?<partition>[^:]+):signer:(?<region>[^:]*):(?<account>[^:]*):\/signing-jobs\/(?<jobId>[^:/?]+)$/;
+const SigningProfileArnRegex =
+	/^arn:(?<partition>[^:]+):signer:(?<region>[^:]*):(?<account>[^:]*):\/signing-profiles\/(?<profileName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for signer resources.
@@ -101,16 +155,7 @@ export class SignerResources {
 	/**
 	 * Builds an ARN for the signing-job resource.
 	 */
-	static signingJob(props: {
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static signingJob(props: SignerSigningJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:signer:${props.region ?? "*"}:${props.account ?? "*"}:/signing-jobs/${props.jobId}`;
 	}
 
@@ -125,12 +170,7 @@ export class SignerResources {
 	 * Parses a signing-job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSigningJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseSigningJobArn(arn: string): SignerSigningJobArnComponents {
 		const match = SigningJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid signing-job ARN: ${arn}`);
@@ -146,16 +186,7 @@ export class SignerResources {
 	/**
 	 * Builds an ARN for the signing-profile resource.
 	 */
-	static signingProfile(props: {
-		/** The ProfileName component of the ARN. */
-		readonly profileName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static signingProfile(props: SignerSigningProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:signer:${props.region ?? "*"}:${props.account ?? "*"}:/signing-profiles/${props.profileName}`;
 	}
 
@@ -170,12 +201,9 @@ export class SignerResources {
 	 * Parses a signing-profile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSigningProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		profileName: string;
-	} {
+	static parseSigningProfileArn(
+		arn: string,
+	): SignerSigningProfileArnComponents {
 		const match = SigningProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid signing-profile ARN: ${arn}`);
@@ -194,68 +222,66 @@ export class SignerResources {
  */
 export class SignerOperations {
 	/** IAM actions required for the AddProfilePermission API call. */
-	static readonly ADD_PROFILE_PERMISSION: string[] = [
+	static readonly AddProfilePermission: string[] = [
 		"signer:AddProfilePermission",
 	];
 	/** IAM actions required for the CancelSigningProfile API call. */
-	static readonly CANCEL_SIGNING_PROFILE: string[] = [
+	static readonly CancelSigningProfile: string[] = [
 		"signer:CancelSigningProfile",
 	];
 	/** IAM actions required for the DescribeSigningJob API call. */
-	static readonly DESCRIBE_SIGNING_JOB: string[] = [
-		"signer:DescribeSigningJob",
-	];
+	static readonly DescribeSigningJob: string[] = ["signer:DescribeSigningJob"];
 	/** IAM actions required for the GetRevocationStatus API call. */
-	static readonly GET_REVOCATION_STATUS: string[] = [
+	static readonly opGetRevocationStatus: string[] = [
 		"signer:GetRevocationStatus",
 	];
 	/** IAM actions required for the GetSigningPlatform API call. */
-	static readonly GET_SIGNING_PLATFORM: string[] = [
+	static readonly opGetSigningPlatform: string[] = [
 		"signer:GetSigningPlatform",
 	];
 	/** IAM actions required for the GetSigningProfile API call. */
-	static readonly GET_SIGNING_PROFILE: string[] = ["signer:GetSigningProfile"];
+	static readonly opGetSigningProfile: string[] = ["signer:GetSigningProfile"];
 	/** IAM actions required for the ListProfilePermissions API call. */
-	static readonly LIST_PROFILE_PERMISSIONS: string[] = [
+	static readonly ListProfilePermissions: string[] = [
 		"signer:ListProfilePermissions",
 	];
 	/** IAM actions required for the ListSigningJobs API call. */
-	static readonly LIST_SIGNING_JOBS: string[] = ["signer:ListSigningJobs"];
+	static readonly ListSigningJobs: string[] = ["signer:ListSigningJobs"];
 	/** IAM actions required for the ListSigningPlatforms API call. */
-	static readonly LIST_SIGNING_PLATFORMS: string[] = [
+	static readonly ListSigningPlatforms: string[] = [
 		"signer:ListSigningPlatforms",
 	];
 	/** IAM actions required for the ListSigningProfiles API call. */
-	static readonly LIST_SIGNING_PROFILES: string[] = [
+	static readonly ListSigningProfiles: string[] = [
 		"signer:ListSigningProfiles",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"signer:ListTagsForResource",
 	];
 	/** IAM actions required for the PutSigningProfile API call. */
-	static readonly PUT_SIGNING_PROFILE: string[] = [
+	static readonly PutSigningProfile: string[] = [
 		"signer:PutSigningProfile",
 		"signer:TagResource",
 	];
 	/** IAM actions required for the RemoveProfilePermission API call. */
-	static readonly REMOVE_PROFILE_PERMISSION: string[] = [
+	static readonly RemoveProfilePermission: string[] = [
 		"signer:RemoveProfilePermission",
 	];
 	/** IAM actions required for the RevokeSignature API call. */
-	static readonly REVOKE_SIGNATURE: string[] = ["signer:RevokeSignature"];
+	static readonly RevokeSignature: string[] = ["signer:RevokeSignature"];
 	/** IAM actions required for the RevokeSigningProfile API call. */
-	static readonly REVOKE_SIGNING_PROFILE: string[] = [
+	static readonly RevokeSigningProfile: string[] = [
 		"signer:RevokeSigningProfile",
 	];
 	/** IAM actions required for the SignPayload API call. */
-	static readonly SIGN_PAYLOAD: string[] = ["signer:SignPayload"];
+	static readonly SignPayload: string[] = ["signer:SignPayload"];
 	/** IAM actions required for the StartSigningJob API call. */
-	static readonly START_SIGNING_JOB: string[] = ["signer:StartSigningJob"];
+	static readonly StartSigningJob: string[] = ["signer:StartSigningJob"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["signer:TagResource"];
+	static readonly TagResource: string[] = ["signer:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["signer:UntagResource"];
+	static readonly UntagResource: string[] = ["signer:UntagResource"];
 }
 
 /**
@@ -263,51 +289,51 @@ export class SignerOperations {
  */
 export class SignerConditions {
 	/** Condition keys applicable to the CancelSigningProfile action. */
-	static readonly CANCEL_SIGNING_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CancelSigningProfileConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the GetSigningProfile action. */
-	static readonly GET_SIGNING_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly actionGetSigningProfileConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the PutSigningProfile action. */
-	static readonly PUT_SIGNING_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly PutSigningProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RevokeSignature action. */
-	static readonly REVOKE_SIGNATURE_CONDITION_KEYS: string[] = [
+	static readonly RevokeSignatureConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the RevokeSigningProfile action. */
-	static readonly REVOKE_SIGNING_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly RevokeSigningProfileConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the SignPayload action. */
-	static readonly SIGN_PAYLOAD_CONDITION_KEYS: string[] = [
+	static readonly SignPayloadConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the StartSigningJob action. */
-	static readonly START_SIGNING_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartSigningJobConditionKeys: string[] = [
 		"signer:ProfileVersion",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: signer:ProfileVersion (String) */
 	static readonly PROFILE_VERSION = "signer:ProfileVersion";
 

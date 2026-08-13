@@ -13,64 +13,64 @@ export class AWSMarketplaceManagementActions {
 	static readonly SERVICE_PREFIX = "aws-marketplace-management";
 
 	/** [Read] aws-marketplace-management:GetAdditionalSellerNotificationRecipients */
-	static readonly GET_ADDITIONAL_SELLER_NOTIFICATION_RECIPIENTS =
+	static readonly actionGetAdditionalSellerNotificationRecipients =
 		"aws-marketplace-management:GetAdditionalSellerNotificationRecipients";
 	/** [Read] aws-marketplace-management:GetBankAccountVerificationDetails */
-	static readonly GET_BANK_ACCOUNT_VERIFICATION_DETAILS =
+	static readonly actionGetBankAccountVerificationDetails =
 		"aws-marketplace-management:GetBankAccountVerificationDetails";
 	/** [Read] aws-marketplace-management:GetSecondaryUserVerificationDetails */
-	static readonly GET_SECONDARY_USER_VERIFICATION_DETAILS =
+	static readonly actionGetSecondaryUserVerificationDetails =
 		"aws-marketplace-management:GetSecondaryUserVerificationDetails";
 	/** [Read] aws-marketplace-management:GetSellerVerificationDetails */
-	static readonly GET_SELLER_VERIFICATION_DETAILS =
+	static readonly actionGetSellerVerificationDetails =
 		"aws-marketplace-management:GetSellerVerificationDetails";
 	/** [Write] aws-marketplace-management:PutAdditionalSellerNotificationRecipients */
-	static readonly PUT_ADDITIONAL_SELLER_NOTIFICATION_RECIPIENTS =
+	static readonly PutAdditionalSellerNotificationRecipients =
 		"aws-marketplace-management:PutAdditionalSellerNotificationRecipients";
 	/** [Write] aws-marketplace-management:PutBankAccountVerificationDetails */
-	static readonly PUT_BANK_ACCOUNT_VERIFICATION_DETAILS =
+	static readonly PutBankAccountVerificationDetails =
 		"aws-marketplace-management:PutBankAccountVerificationDetails";
 	/** [Write] aws-marketplace-management:PutSecondaryUserVerificationDetails */
-	static readonly PUT_SECONDARY_USER_VERIFICATION_DETAILS =
+	static readonly PutSecondaryUserVerificationDetails =
 		"aws-marketplace-management:PutSecondaryUserVerificationDetails";
 	/** [Write] aws-marketplace-management:PutSellerVerificationDetails */
-	static readonly PUT_SELLER_VERIFICATION_DETAILS =
+	static readonly PutSellerVerificationDetails =
 		"aws-marketplace-management:PutSellerVerificationDetails";
 	/** [Write] aws-marketplace-management:uploadFiles */
-	static readonly UPLOAD_FILES = "aws-marketplace-management:uploadFiles";
+	static readonly uploadFiles = "aws-marketplace-management:uploadFiles";
 	/** [List] aws-marketplace-management:viewMarketing */
-	static readonly VIEW_MARKETING = "aws-marketplace-management:viewMarketing";
+	static readonly viewMarketing = "aws-marketplace-management:viewMarketing";
 	/** [List] aws-marketplace-management:viewReports */
-	static readonly VIEW_REPORTS = "aws-marketplace-management:viewReports";
+	static readonly viewReports = "aws-marketplace-management:viewReports";
 	/** [List] aws-marketplace-management:viewSettings */
-	static readonly VIEW_SETTINGS = "aws-marketplace-management:viewSettings";
+	static readonly viewSettings = "aws-marketplace-management:viewSettings";
 	/** [List] aws-marketplace-management:viewSupport */
-	static readonly VIEW_SUPPORT = "aws-marketplace-management:viewSupport";
+	static readonly viewSupport = "aws-marketplace-management:viewSupport";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AWSMarketplaceManagementActions.GET_ADDITIONAL_SELLER_NOTIFICATION_RECIPIENTS,
-		AWSMarketplaceManagementActions.GET_BANK_ACCOUNT_VERIFICATION_DETAILS,
-		AWSMarketplaceManagementActions.GET_SECONDARY_USER_VERIFICATION_DETAILS,
-		AWSMarketplaceManagementActions.GET_SELLER_VERIFICATION_DETAILS,
+	static readonly AllReadActions: string[] = [
+		AWSMarketplaceManagementActions.actionGetAdditionalSellerNotificationRecipients,
+		AWSMarketplaceManagementActions.actionGetBankAccountVerificationDetails,
+		AWSMarketplaceManagementActions.actionGetSecondaryUserVerificationDetails,
+		AWSMarketplaceManagementActions.actionGetSellerVerificationDetails,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AWSMarketplaceManagementActions.PUT_ADDITIONAL_SELLER_NOTIFICATION_RECIPIENTS,
-		AWSMarketplaceManagementActions.PUT_BANK_ACCOUNT_VERIFICATION_DETAILS,
-		AWSMarketplaceManagementActions.PUT_SECONDARY_USER_VERIFICATION_DETAILS,
-		AWSMarketplaceManagementActions.PUT_SELLER_VERIFICATION_DETAILS,
-		AWSMarketplaceManagementActions.UPLOAD_FILES,
+	static readonly AllWriteActions: string[] = [
+		AWSMarketplaceManagementActions.PutAdditionalSellerNotificationRecipients,
+		AWSMarketplaceManagementActions.PutBankAccountVerificationDetails,
+		AWSMarketplaceManagementActions.PutSecondaryUserVerificationDetails,
+		AWSMarketplaceManagementActions.PutSellerVerificationDetails,
+		AWSMarketplaceManagementActions.uploadFiles,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AWSMarketplaceManagementActions.VIEW_MARKETING,
-		AWSMarketplaceManagementActions.VIEW_REPORTS,
-		AWSMarketplaceManagementActions.VIEW_SETTINGS,
-		AWSMarketplaceManagementActions.VIEW_SUPPORT,
+	static readonly AllListActions: string[] = [
+		AWSMarketplaceManagementActions.viewMarketing,
+		AWSMarketplaceManagementActions.viewReports,
+		AWSMarketplaceManagementActions.viewSettings,
+		AWSMarketplaceManagementActions.viewSupport,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

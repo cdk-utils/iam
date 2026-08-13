@@ -13,351 +13,828 @@ export class PersonalizeActions {
 	static readonly SERVICE_PREFIX = "personalize";
 
 	/** [Write] personalize:CreateBatchInferenceJob */
-	static readonly CREATE_BATCH_INFERENCE_JOB =
+	static readonly CreateBatchInferenceJob =
 		"personalize:CreateBatchInferenceJob";
 	/** [Write] personalize:CreateBatchSegmentJob */
-	static readonly CREATE_BATCH_SEGMENT_JOB =
-		"personalize:CreateBatchSegmentJob";
+	static readonly CreateBatchSegmentJob = "personalize:CreateBatchSegmentJob";
 	/** [Write] personalize:CreateCampaign */
-	static readonly CREATE_CAMPAIGN = "personalize:CreateCampaign";
+	static readonly CreateCampaign = "personalize:CreateCampaign";
 	/** [Write] personalize:CreateDataDeletionJob */
-	static readonly CREATE_DATA_DELETION_JOB =
-		"personalize:CreateDataDeletionJob";
+	static readonly CreateDataDeletionJob = "personalize:CreateDataDeletionJob";
 	/** [Write] personalize:CreateDataInsightsJob */
-	static readonly CREATE_DATA_INSIGHTS_JOB =
-		"personalize:CreateDataInsightsJob";
+	static readonly CreateDataInsightsJob = "personalize:CreateDataInsightsJob";
 	/** [Write] personalize:CreateDataset */
-	static readonly CREATE_DATASET = "personalize:CreateDataset";
+	static readonly CreateDataset = "personalize:CreateDataset";
 	/** [Write] personalize:CreateDatasetExportJob */
-	static readonly CREATE_DATASET_EXPORT_JOB =
-		"personalize:CreateDatasetExportJob";
+	static readonly CreateDatasetExportJob = "personalize:CreateDatasetExportJob";
 	/** [Write] personalize:CreateDatasetGroup */
-	static readonly CREATE_DATASET_GROUP = "personalize:CreateDatasetGroup";
+	static readonly CreateDatasetGroup = "personalize:CreateDatasetGroup";
 	/** [Write] personalize:CreateDatasetImportJob */
-	static readonly CREATE_DATASET_IMPORT_JOB =
-		"personalize:CreateDatasetImportJob";
+	static readonly CreateDatasetImportJob = "personalize:CreateDatasetImportJob";
 	/** [Write] personalize:CreateEventTracker */
-	static readonly CREATE_EVENT_TRACKER = "personalize:CreateEventTracker";
+	static readonly CreateEventTracker = "personalize:CreateEventTracker";
 	/** [Write] personalize:CreateFilter */
-	static readonly CREATE_FILTER = "personalize:CreateFilter";
+	static readonly CreateFilter = "personalize:CreateFilter";
 	/** [Write] personalize:CreateMetricAttribution */
-	static readonly CREATE_METRIC_ATTRIBUTION =
+	static readonly CreateMetricAttribution =
 		"personalize:CreateMetricAttribution";
 	/** [Write] personalize:CreateRecommender */
-	static readonly CREATE_RECOMMENDER = "personalize:CreateRecommender";
+	static readonly CreateRecommender = "personalize:CreateRecommender";
 	/** [Write] personalize:CreateSchema */
-	static readonly CREATE_SCHEMA = "personalize:CreateSchema";
+	static readonly CreateSchema = "personalize:CreateSchema";
 	/** [Write] personalize:CreateSolution */
-	static readonly CREATE_SOLUTION = "personalize:CreateSolution";
+	static readonly CreateSolution = "personalize:CreateSolution";
 	/** [Write] personalize:CreateSolutionVersion */
-	static readonly CREATE_SOLUTION_VERSION = "personalize:CreateSolutionVersion";
+	static readonly CreateSolutionVersion = "personalize:CreateSolutionVersion";
 	/** [Write] personalize:DeleteCampaign */
-	static readonly DELETE_CAMPAIGN = "personalize:DeleteCampaign";
+	static readonly DeleteCampaign = "personalize:DeleteCampaign";
 	/** [Write] personalize:DeleteDataset */
-	static readonly DELETE_DATASET = "personalize:DeleteDataset";
+	static readonly DeleteDataset = "personalize:DeleteDataset";
 	/** [Write] personalize:DeleteDatasetGroup */
-	static readonly DELETE_DATASET_GROUP = "personalize:DeleteDatasetGroup";
+	static readonly DeleteDatasetGroup = "personalize:DeleteDatasetGroup";
 	/** [Write] personalize:DeleteEventTracker */
-	static readonly DELETE_EVENT_TRACKER = "personalize:DeleteEventTracker";
+	static readonly DeleteEventTracker = "personalize:DeleteEventTracker";
 	/** [Write] personalize:DeleteFilter */
-	static readonly DELETE_FILTER = "personalize:DeleteFilter";
+	static readonly DeleteFilter = "personalize:DeleteFilter";
 	/** [Write] personalize:DeleteMetricAttribution */
-	static readonly DELETE_METRIC_ATTRIBUTION =
+	static readonly DeleteMetricAttribution =
 		"personalize:DeleteMetricAttribution";
 	/** [Write] personalize:DeleteRecommender */
-	static readonly DELETE_RECOMMENDER = "personalize:DeleteRecommender";
+	static readonly DeleteRecommender = "personalize:DeleteRecommender";
 	/** [Write] personalize:DeleteSchema */
-	static readonly DELETE_SCHEMA = "personalize:DeleteSchema";
+	static readonly DeleteSchema = "personalize:DeleteSchema";
 	/** [Write] personalize:DeleteSolution */
-	static readonly DELETE_SOLUTION = "personalize:DeleteSolution";
+	static readonly DeleteSolution = "personalize:DeleteSolution";
 	/** [Read] personalize:DescribeAlgorithm */
-	static readonly DESCRIBE_ALGORITHM = "personalize:DescribeAlgorithm";
+	static readonly DescribeAlgorithm = "personalize:DescribeAlgorithm";
 	/** [Read] personalize:DescribeBatchInferenceJob */
-	static readonly DESCRIBE_BATCH_INFERENCE_JOB =
+	static readonly DescribeBatchInferenceJob =
 		"personalize:DescribeBatchInferenceJob";
 	/** [Read] personalize:DescribeBatchSegmentJob */
-	static readonly DESCRIBE_BATCH_SEGMENT_JOB =
+	static readonly DescribeBatchSegmentJob =
 		"personalize:DescribeBatchSegmentJob";
 	/** [Read] personalize:DescribeCampaign */
-	static readonly DESCRIBE_CAMPAIGN = "personalize:DescribeCampaign";
+	static readonly DescribeCampaign = "personalize:DescribeCampaign";
 	/** [Read] personalize:DescribeDataDeletionJob */
-	static readonly DESCRIBE_DATA_DELETION_JOB =
+	static readonly DescribeDataDeletionJob =
 		"personalize:DescribeDataDeletionJob";
 	/** [Read] personalize:DescribeDataInsightsJob */
-	static readonly DESCRIBE_DATA_INSIGHTS_JOB =
+	static readonly DescribeDataInsightsJob =
 		"personalize:DescribeDataInsightsJob";
 	/** [Read] personalize:DescribeDataset */
-	static readonly DESCRIBE_DATASET = "personalize:DescribeDataset";
+	static readonly DescribeDataset = "personalize:DescribeDataset";
 	/** [Read] personalize:DescribeDatasetExportJob */
-	static readonly DESCRIBE_DATASET_EXPORT_JOB =
+	static readonly DescribeDatasetExportJob =
 		"personalize:DescribeDatasetExportJob";
 	/** [Read] personalize:DescribeDatasetGroup */
-	static readonly DESCRIBE_DATASET_GROUP = "personalize:DescribeDatasetGroup";
+	static readonly DescribeDatasetGroup = "personalize:DescribeDatasetGroup";
 	/** [Read] personalize:DescribeDatasetImportJob */
-	static readonly DESCRIBE_DATASET_IMPORT_JOB =
+	static readonly DescribeDatasetImportJob =
 		"personalize:DescribeDatasetImportJob";
 	/** [Read] personalize:DescribeEventTracker */
-	static readonly DESCRIBE_EVENT_TRACKER = "personalize:DescribeEventTracker";
+	static readonly DescribeEventTracker = "personalize:DescribeEventTracker";
 	/** [Read] personalize:DescribeFeatureTransformation */
-	static readonly DESCRIBE_FEATURE_TRANSFORMATION =
+	static readonly DescribeFeatureTransformation =
 		"personalize:DescribeFeatureTransformation";
 	/** [Read] personalize:DescribeFilter */
-	static readonly DESCRIBE_FILTER = "personalize:DescribeFilter";
+	static readonly DescribeFilter = "personalize:DescribeFilter";
 	/** [Read] personalize:DescribeMetricAttribution */
-	static readonly DESCRIBE_METRIC_ATTRIBUTION =
+	static readonly DescribeMetricAttribution =
 		"personalize:DescribeMetricAttribution";
 	/** [Read] personalize:DescribeRecipe */
-	static readonly DESCRIBE_RECIPE = "personalize:DescribeRecipe";
+	static readonly DescribeRecipe = "personalize:DescribeRecipe";
 	/** [Read] personalize:DescribeRecommender */
-	static readonly DESCRIBE_RECOMMENDER = "personalize:DescribeRecommender";
+	static readonly DescribeRecommender = "personalize:DescribeRecommender";
 	/** [Read] personalize:DescribeSchema */
-	static readonly DESCRIBE_SCHEMA = "personalize:DescribeSchema";
+	static readonly DescribeSchema = "personalize:DescribeSchema";
 	/** [Read] personalize:DescribeSolution */
-	static readonly DESCRIBE_SOLUTION = "personalize:DescribeSolution";
+	static readonly DescribeSolution = "personalize:DescribeSolution";
 	/** [Read] personalize:DescribeSolutionVersion */
-	static readonly DESCRIBE_SOLUTION_VERSION =
+	static readonly DescribeSolutionVersion =
 		"personalize:DescribeSolutionVersion";
 	/** [Read] personalize:GetActionRecommendations */
-	static readonly GET_ACTION_RECOMMENDATIONS =
+	static readonly actionGetActionRecommendations =
 		"personalize:GetActionRecommendations";
 	/** [Read] personalize:GetDataInsights */
-	static readonly GET_DATA_INSIGHTS = "personalize:GetDataInsights";
+	static readonly actionGetDataInsights = "personalize:GetDataInsights";
 	/** [Read] personalize:GetPersonalizedRanking */
-	static readonly GET_PERSONALIZED_RANKING =
+	static readonly actionGetPersonalizedRanking =
 		"personalize:GetPersonalizedRanking";
 	/** [Read] personalize:GetRecommendations */
-	static readonly GET_RECOMMENDATIONS = "personalize:GetRecommendations";
+	static readonly actionGetRecommendations = "personalize:GetRecommendations";
 	/** [Read] personalize:GetSolutionMetrics */
-	static readonly GET_SOLUTION_METRICS = "personalize:GetSolutionMetrics";
+	static readonly actionGetSolutionMetrics = "personalize:GetSolutionMetrics";
 	/** [List] personalize:ListBatchInferenceJobs */
-	static readonly LIST_BATCH_INFERENCE_JOBS =
-		"personalize:ListBatchInferenceJobs";
+	static readonly ListBatchInferenceJobs = "personalize:ListBatchInferenceJobs";
 	/** [List] personalize:ListBatchSegmentJobs */
-	static readonly LIST_BATCH_SEGMENT_JOBS = "personalize:ListBatchSegmentJobs";
+	static readonly ListBatchSegmentJobs = "personalize:ListBatchSegmentJobs";
 	/** [List] personalize:ListCampaigns */
-	static readonly LIST_CAMPAIGNS = "personalize:ListCampaigns";
+	static readonly ListCampaigns = "personalize:ListCampaigns";
 	/** [List] personalize:ListDataDeletionJobs */
-	static readonly LIST_DATA_DELETION_JOBS = "personalize:ListDataDeletionJobs";
+	static readonly ListDataDeletionJobs = "personalize:ListDataDeletionJobs";
 	/** [List] personalize:ListDataInsightsJobs */
-	static readonly LIST_DATA_INSIGHTS_JOBS = "personalize:ListDataInsightsJobs";
+	static readonly ListDataInsightsJobs = "personalize:ListDataInsightsJobs";
 	/** [List] personalize:ListDatasetExportJobs */
-	static readonly LIST_DATASET_EXPORT_JOBS =
-		"personalize:ListDatasetExportJobs";
+	static readonly ListDatasetExportJobs = "personalize:ListDatasetExportJobs";
 	/** [List] personalize:ListDatasetGroups */
-	static readonly LIST_DATASET_GROUPS = "personalize:ListDatasetGroups";
+	static readonly ListDatasetGroups = "personalize:ListDatasetGroups";
 	/** [List] personalize:ListDatasetImportJobs */
-	static readonly LIST_DATASET_IMPORT_JOBS =
-		"personalize:ListDatasetImportJobs";
+	static readonly ListDatasetImportJobs = "personalize:ListDatasetImportJobs";
 	/** [List] personalize:ListDatasets */
-	static readonly LIST_DATASETS = "personalize:ListDatasets";
+	static readonly ListDatasets = "personalize:ListDatasets";
 	/** [List] personalize:ListEventTrackers */
-	static readonly LIST_EVENT_TRACKERS = "personalize:ListEventTrackers";
+	static readonly ListEventTrackers = "personalize:ListEventTrackers";
 	/** [List] personalize:ListFilters */
-	static readonly LIST_FILTERS = "personalize:ListFilters";
+	static readonly ListFilters = "personalize:ListFilters";
 	/** [List] personalize:ListMetricAttributionMetrics */
-	static readonly LIST_METRIC_ATTRIBUTION_METRICS =
+	static readonly ListMetricAttributionMetrics =
 		"personalize:ListMetricAttributionMetrics";
 	/** [List] personalize:ListMetricAttributions */
-	static readonly LIST_METRIC_ATTRIBUTIONS =
-		"personalize:ListMetricAttributions";
+	static readonly ListMetricAttributions = "personalize:ListMetricAttributions";
 	/** [List] personalize:ListRecipes */
-	static readonly LIST_RECIPES = "personalize:ListRecipes";
+	static readonly ListRecipes = "personalize:ListRecipes";
 	/** [List] personalize:ListRecommenders */
-	static readonly LIST_RECOMMENDERS = "personalize:ListRecommenders";
+	static readonly ListRecommenders = "personalize:ListRecommenders";
 	/** [List] personalize:ListSchemas */
-	static readonly LIST_SCHEMAS = "personalize:ListSchemas";
+	static readonly ListSchemas = "personalize:ListSchemas";
 	/** [List] personalize:ListSolutionVersions */
-	static readonly LIST_SOLUTION_VERSIONS = "personalize:ListSolutionVersions";
+	static readonly ListSolutionVersions = "personalize:ListSolutionVersions";
 	/** [List] personalize:ListSolutions */
-	static readonly LIST_SOLUTIONS = "personalize:ListSolutions";
+	static readonly ListSolutions = "personalize:ListSolutions";
 	/** [List] personalize:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "personalize:ListTagsForResource";
+	static readonly ListTagsForResource = "personalize:ListTagsForResource";
 	/** [Write] personalize:PutActionInteractions */
-	static readonly PUT_ACTION_INTERACTIONS = "personalize:PutActionInteractions";
+	static readonly PutActionInteractions = "personalize:PutActionInteractions";
 	/** [Write] personalize:PutActions */
-	static readonly PUT_ACTIONS = "personalize:PutActions";
+	static readonly PutActions = "personalize:PutActions";
 	/** [Write] personalize:PutEvents */
-	static readonly PUT_EVENTS = "personalize:PutEvents";
+	static readonly PutEvents = "personalize:PutEvents";
 	/** [Write] personalize:PutItems */
-	static readonly PUT_ITEMS = "personalize:PutItems";
+	static readonly PutItems = "personalize:PutItems";
 	/** [Write] personalize:PutUsers */
-	static readonly PUT_USERS = "personalize:PutUsers";
+	static readonly PutUsers = "personalize:PutUsers";
 	/** [Write] personalize:StartRecommender */
-	static readonly START_RECOMMENDER = "personalize:StartRecommender";
+	static readonly StartRecommender = "personalize:StartRecommender";
 	/** [Write] personalize:StopRecommender */
-	static readonly STOP_RECOMMENDER = "personalize:StopRecommender";
+	static readonly StopRecommender = "personalize:StopRecommender";
 	/** [Write] personalize:StopSolutionVersionCreation */
-	static readonly STOP_SOLUTION_VERSION_CREATION =
+	static readonly StopSolutionVersionCreation =
 		"personalize:StopSolutionVersionCreation";
 	/** [Tagging] personalize:TagResource */
-	static readonly TAG_RESOURCE = "personalize:TagResource";
+	static readonly TagResource = "personalize:TagResource";
 	/** [Tagging] personalize:UntagResource */
-	static readonly UNTAG_RESOURCE = "personalize:UntagResource";
+	static readonly UntagResource = "personalize:UntagResource";
 	/** [Write] personalize:UpdateCampaign */
-	static readonly UPDATE_CAMPAIGN = "personalize:UpdateCampaign";
+	static readonly UpdateCampaign = "personalize:UpdateCampaign";
 	/** [Write] personalize:UpdateDataset */
-	static readonly UPDATE_DATASET = "personalize:UpdateDataset";
+	static readonly UpdateDataset = "personalize:UpdateDataset";
 	/** [Write] personalize:UpdateMetricAttribution */
-	static readonly UPDATE_METRIC_ATTRIBUTION =
+	static readonly UpdateMetricAttribution =
 		"personalize:UpdateMetricAttribution";
 	/** [Write] personalize:UpdateRecommender */
-	static readonly UPDATE_RECOMMENDER = "personalize:UpdateRecommender";
+	static readonly UpdateRecommender = "personalize:UpdateRecommender";
 	/** [Write] personalize:UpdateSolution */
-	static readonly UPDATE_SOLUTION = "personalize:UpdateSolution";
+	static readonly UpdateSolution = "personalize:UpdateSolution";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PersonalizeActions.DESCRIBE_ALGORITHM,
-		PersonalizeActions.DESCRIBE_BATCH_INFERENCE_JOB,
-		PersonalizeActions.DESCRIBE_BATCH_SEGMENT_JOB,
-		PersonalizeActions.DESCRIBE_CAMPAIGN,
-		PersonalizeActions.DESCRIBE_DATA_DELETION_JOB,
-		PersonalizeActions.DESCRIBE_DATA_INSIGHTS_JOB,
-		PersonalizeActions.DESCRIBE_DATASET,
-		PersonalizeActions.DESCRIBE_DATASET_EXPORT_JOB,
-		PersonalizeActions.DESCRIBE_DATASET_GROUP,
-		PersonalizeActions.DESCRIBE_DATASET_IMPORT_JOB,
-		PersonalizeActions.DESCRIBE_EVENT_TRACKER,
-		PersonalizeActions.DESCRIBE_FEATURE_TRANSFORMATION,
-		PersonalizeActions.DESCRIBE_FILTER,
-		PersonalizeActions.DESCRIBE_METRIC_ATTRIBUTION,
-		PersonalizeActions.DESCRIBE_RECIPE,
-		PersonalizeActions.DESCRIBE_RECOMMENDER,
-		PersonalizeActions.DESCRIBE_SCHEMA,
-		PersonalizeActions.DESCRIBE_SOLUTION,
-		PersonalizeActions.DESCRIBE_SOLUTION_VERSION,
-		PersonalizeActions.GET_ACTION_RECOMMENDATIONS,
-		PersonalizeActions.GET_DATA_INSIGHTS,
-		PersonalizeActions.GET_PERSONALIZED_RANKING,
-		PersonalizeActions.GET_RECOMMENDATIONS,
-		PersonalizeActions.GET_SOLUTION_METRICS,
+	static readonly AllReadActions: string[] = [
+		PersonalizeActions.DescribeAlgorithm,
+		PersonalizeActions.DescribeBatchInferenceJob,
+		PersonalizeActions.DescribeBatchSegmentJob,
+		PersonalizeActions.DescribeCampaign,
+		PersonalizeActions.DescribeDataDeletionJob,
+		PersonalizeActions.DescribeDataInsightsJob,
+		PersonalizeActions.DescribeDataset,
+		PersonalizeActions.DescribeDatasetExportJob,
+		PersonalizeActions.DescribeDatasetGroup,
+		PersonalizeActions.DescribeDatasetImportJob,
+		PersonalizeActions.DescribeEventTracker,
+		PersonalizeActions.DescribeFeatureTransformation,
+		PersonalizeActions.DescribeFilter,
+		PersonalizeActions.DescribeMetricAttribution,
+		PersonalizeActions.DescribeRecipe,
+		PersonalizeActions.DescribeRecommender,
+		PersonalizeActions.DescribeSchema,
+		PersonalizeActions.DescribeSolution,
+		PersonalizeActions.DescribeSolutionVersion,
+		PersonalizeActions.actionGetActionRecommendations,
+		PersonalizeActions.actionGetDataInsights,
+		PersonalizeActions.actionGetPersonalizedRanking,
+		PersonalizeActions.actionGetRecommendations,
+		PersonalizeActions.actionGetSolutionMetrics,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PersonalizeActions.CREATE_BATCH_INFERENCE_JOB,
-		PersonalizeActions.CREATE_BATCH_SEGMENT_JOB,
-		PersonalizeActions.CREATE_CAMPAIGN,
-		PersonalizeActions.CREATE_DATA_DELETION_JOB,
-		PersonalizeActions.CREATE_DATA_INSIGHTS_JOB,
-		PersonalizeActions.CREATE_DATASET,
-		PersonalizeActions.CREATE_DATASET_EXPORT_JOB,
-		PersonalizeActions.CREATE_DATASET_GROUP,
-		PersonalizeActions.CREATE_DATASET_IMPORT_JOB,
-		PersonalizeActions.CREATE_EVENT_TRACKER,
-		PersonalizeActions.CREATE_FILTER,
-		PersonalizeActions.CREATE_METRIC_ATTRIBUTION,
-		PersonalizeActions.CREATE_RECOMMENDER,
-		PersonalizeActions.CREATE_SCHEMA,
-		PersonalizeActions.CREATE_SOLUTION,
-		PersonalizeActions.CREATE_SOLUTION_VERSION,
-		PersonalizeActions.DELETE_CAMPAIGN,
-		PersonalizeActions.DELETE_DATASET,
-		PersonalizeActions.DELETE_DATASET_GROUP,
-		PersonalizeActions.DELETE_EVENT_TRACKER,
-		PersonalizeActions.DELETE_FILTER,
-		PersonalizeActions.DELETE_METRIC_ATTRIBUTION,
-		PersonalizeActions.DELETE_RECOMMENDER,
-		PersonalizeActions.DELETE_SCHEMA,
-		PersonalizeActions.DELETE_SOLUTION,
-		PersonalizeActions.PUT_ACTION_INTERACTIONS,
-		PersonalizeActions.PUT_ACTIONS,
-		PersonalizeActions.PUT_EVENTS,
-		PersonalizeActions.PUT_ITEMS,
-		PersonalizeActions.PUT_USERS,
-		PersonalizeActions.START_RECOMMENDER,
-		PersonalizeActions.STOP_RECOMMENDER,
-		PersonalizeActions.STOP_SOLUTION_VERSION_CREATION,
-		PersonalizeActions.UPDATE_CAMPAIGN,
-		PersonalizeActions.UPDATE_DATASET,
-		PersonalizeActions.UPDATE_METRIC_ATTRIBUTION,
-		PersonalizeActions.UPDATE_RECOMMENDER,
-		PersonalizeActions.UPDATE_SOLUTION,
+	static readonly AllWriteActions: string[] = [
+		PersonalizeActions.CreateBatchInferenceJob,
+		PersonalizeActions.CreateBatchSegmentJob,
+		PersonalizeActions.CreateCampaign,
+		PersonalizeActions.CreateDataDeletionJob,
+		PersonalizeActions.CreateDataInsightsJob,
+		PersonalizeActions.CreateDataset,
+		PersonalizeActions.CreateDatasetExportJob,
+		PersonalizeActions.CreateDatasetGroup,
+		PersonalizeActions.CreateDatasetImportJob,
+		PersonalizeActions.CreateEventTracker,
+		PersonalizeActions.CreateFilter,
+		PersonalizeActions.CreateMetricAttribution,
+		PersonalizeActions.CreateRecommender,
+		PersonalizeActions.CreateSchema,
+		PersonalizeActions.CreateSolution,
+		PersonalizeActions.CreateSolutionVersion,
+		PersonalizeActions.DeleteCampaign,
+		PersonalizeActions.DeleteDataset,
+		PersonalizeActions.DeleteDatasetGroup,
+		PersonalizeActions.DeleteEventTracker,
+		PersonalizeActions.DeleteFilter,
+		PersonalizeActions.DeleteMetricAttribution,
+		PersonalizeActions.DeleteRecommender,
+		PersonalizeActions.DeleteSchema,
+		PersonalizeActions.DeleteSolution,
+		PersonalizeActions.PutActionInteractions,
+		PersonalizeActions.PutActions,
+		PersonalizeActions.PutEvents,
+		PersonalizeActions.PutItems,
+		PersonalizeActions.PutUsers,
+		PersonalizeActions.StartRecommender,
+		PersonalizeActions.StopRecommender,
+		PersonalizeActions.StopSolutionVersionCreation,
+		PersonalizeActions.UpdateCampaign,
+		PersonalizeActions.UpdateDataset,
+		PersonalizeActions.UpdateMetricAttribution,
+		PersonalizeActions.UpdateRecommender,
+		PersonalizeActions.UpdateSolution,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PersonalizeActions.LIST_BATCH_INFERENCE_JOBS,
-		PersonalizeActions.LIST_BATCH_SEGMENT_JOBS,
-		PersonalizeActions.LIST_CAMPAIGNS,
-		PersonalizeActions.LIST_DATA_DELETION_JOBS,
-		PersonalizeActions.LIST_DATA_INSIGHTS_JOBS,
-		PersonalizeActions.LIST_DATASET_EXPORT_JOBS,
-		PersonalizeActions.LIST_DATASET_GROUPS,
-		PersonalizeActions.LIST_DATASET_IMPORT_JOBS,
-		PersonalizeActions.LIST_DATASETS,
-		PersonalizeActions.LIST_EVENT_TRACKERS,
-		PersonalizeActions.LIST_FILTERS,
-		PersonalizeActions.LIST_METRIC_ATTRIBUTION_METRICS,
-		PersonalizeActions.LIST_METRIC_ATTRIBUTIONS,
-		PersonalizeActions.LIST_RECIPES,
-		PersonalizeActions.LIST_RECOMMENDERS,
-		PersonalizeActions.LIST_SCHEMAS,
-		PersonalizeActions.LIST_SOLUTION_VERSIONS,
-		PersonalizeActions.LIST_SOLUTIONS,
-		PersonalizeActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		PersonalizeActions.ListBatchInferenceJobs,
+		PersonalizeActions.ListBatchSegmentJobs,
+		PersonalizeActions.ListCampaigns,
+		PersonalizeActions.ListDataDeletionJobs,
+		PersonalizeActions.ListDataInsightsJobs,
+		PersonalizeActions.ListDatasetExportJobs,
+		PersonalizeActions.ListDatasetGroups,
+		PersonalizeActions.ListDatasetImportJobs,
+		PersonalizeActions.ListDatasets,
+		PersonalizeActions.ListEventTrackers,
+		PersonalizeActions.ListFilters,
+		PersonalizeActions.ListMetricAttributionMetrics,
+		PersonalizeActions.ListMetricAttributions,
+		PersonalizeActions.ListRecipes,
+		PersonalizeActions.ListRecommenders,
+		PersonalizeActions.ListSchemas,
+		PersonalizeActions.ListSolutionVersions,
+		PersonalizeActions.ListSolutions,
+		PersonalizeActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PersonalizeActions.TAG_RESOURCE,
-		PersonalizeActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PersonalizeActions.TagResource,
+		PersonalizeActions.UntagResource,
 	];
 }
 
-const AlgorithmArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:::algorithm/(?<resourceId>[^:/?]+)$",
-);
-const BatchInferenceJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):batch-inference-job/(?<resourceId>[^:/?]+)$",
-);
-const BatchSegmentJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):batch-segment-job/(?<resourceId>[^:/?]+)$",
-);
-const CampaignArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):campaign/(?<resourceId>[^:/?]+)$",
-);
-const DataDeletionJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):data-deletion-job/(?<resourceId>[^:/?]+)$",
-);
-const DataInsightsJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):data-insights-job/(?<resourceId>[^:/?]+)$",
-);
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset/(?<resourceId>[^:/?]+)$",
-);
-const DatasetExportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-export-job/(?<resourceId>[^:/?]+)$",
-);
-const DatasetGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-group/(?<resourceId>[^:/?]+)$",
-);
-const DatasetImportJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-import-job/(?<resourceId>[^:/?]+)$",
-);
-const EventTrackerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):event-tracker/(?<resourceId>[^:/?]+)$",
-);
-const FeatureTransformationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:::feature-transformation/(?<resourceId>[^:/?]+)$",
-);
-const FilterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):filter/(?<resourceId>[^:/?]+)$",
-);
-const MetricAttributionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):metric-attribution/(?<resourceId>[^:/?]+)$",
-);
-const RecipeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:::recipe/(?<resourceId>[^:/?]+)$",
-);
-const RecommenderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):recommender/(?<resourceId>[^:/?]+)$",
-);
-const SchemaArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):schema/(?<resourceId>[^:/?]+)$",
-);
-const SolutionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):solution/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a algorithm ARN.
+ */
+export interface PersonalizeAlgorithmArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a algorithm ARN.
+ */
+export interface PersonalizeAlgorithmArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a batchInferenceJob ARN.
+ */
+export interface PersonalizeBatchInferenceJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a batchInferenceJob ARN.
+ */
+export interface PersonalizeBatchInferenceJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a batchSegmentJob ARN.
+ */
+export interface PersonalizeBatchSegmentJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a batchSegmentJob ARN.
+ */
+export interface PersonalizeBatchSegmentJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a campaign ARN.
+ */
+export interface PersonalizeCampaignArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a campaign ARN.
+ */
+export interface PersonalizeCampaignArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a dataDeletionJob ARN.
+ */
+export interface PersonalizeDataDeletionJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataDeletionJob ARN.
+ */
+export interface PersonalizeDataDeletionJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a dataInsightsJob ARN.
+ */
+export interface PersonalizeDataInsightsJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataInsightsJob ARN.
+ */
+export interface PersonalizeDataInsightsJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a dataset ARN.
+ */
+export interface PersonalizeDatasetArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset ARN.
+ */
+export interface PersonalizeDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a datasetExportJob ARN.
+ */
+export interface PersonalizeDatasetExportJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a datasetExportJob ARN.
+ */
+export interface PersonalizeDatasetExportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a datasetGroup ARN.
+ */
+export interface PersonalizeDatasetGroupArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a datasetGroup ARN.
+ */
+export interface PersonalizeDatasetGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a datasetImportJob ARN.
+ */
+export interface PersonalizeDatasetImportJobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a datasetImportJob ARN.
+ */
+export interface PersonalizeDatasetImportJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a eventTracker ARN.
+ */
+export interface PersonalizeEventTrackerArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a eventTracker ARN.
+ */
+export interface PersonalizeEventTrackerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a featureTransformation ARN.
+ */
+export interface PersonalizeFeatureTransformationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a featureTransformation ARN.
+ */
+export interface PersonalizeFeatureTransformationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a filter ARN.
+ */
+export interface PersonalizeFilterArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a filter ARN.
+ */
+export interface PersonalizeFilterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a metricAttribution ARN.
+ */
+export interface PersonalizeMetricAttributionArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a metricAttribution ARN.
+ */
+export interface PersonalizeMetricAttributionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a recipe ARN.
+ */
+export interface PersonalizeRecipeArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recipe ARN.
+ */
+export interface PersonalizeRecipeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a recommender ARN.
+ */
+export interface PersonalizeRecommenderArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a recommender ARN.
+ */
+export interface PersonalizeRecommenderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a schema ARN.
+ */
+export interface PersonalizeSchemaArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a schema ARN.
+ */
+export interface PersonalizeSchemaArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a solution ARN.
+ */
+export interface PersonalizeSolutionArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a solution ARN.
+ */
+export interface PersonalizeSolutionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const AlgorithmArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:::algorithm\/(?<resourceId>[^:/?]+)$/;
+const BatchInferenceJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):batch-inference-job\/(?<resourceId>[^:/?]+)$/;
+const BatchSegmentJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):batch-segment-job\/(?<resourceId>[^:/?]+)$/;
+const CampaignArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):campaign\/(?<resourceId>[^:/?]+)$/;
+const DataDeletionJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):data-deletion-job\/(?<resourceId>[^:/?]+)$/;
+const DataInsightsJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):data-insights-job\/(?<resourceId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<resourceId>[^:/?]+)$/;
+const DatasetExportJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-export-job\/(?<resourceId>[^:/?]+)$/;
+const DatasetGroupArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-group\/(?<resourceId>[^:/?]+)$/;
+const DatasetImportJobArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):dataset-import-job\/(?<resourceId>[^:/?]+)$/;
+const EventTrackerArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):event-tracker\/(?<resourceId>[^:/?]+)$/;
+const FeatureTransformationArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:::feature-transformation\/(?<resourceId>[^:/?]+)$/;
+const FilterArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):filter\/(?<resourceId>[^:/?]+)$/;
+const MetricAttributionArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):metric-attribution\/(?<resourceId>[^:/?]+)$/;
+const RecipeArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:::recipe\/(?<resourceId>[^:/?]+)$/;
+const RecommenderArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):recommender\/(?<resourceId>[^:/?]+)$/;
+const SchemaArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):schema\/(?<resourceId>[^:/?]+)$/;
+const SolutionArnRegex =
+	/^arn:(?<partition>[^:]+):personalize:(?<region>[^:]*):(?<account>[^:]*):solution\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for personalize resources.
@@ -366,16 +843,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the algorithm resource.
 	 */
-	static algorithm(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static algorithm(props: PersonalizeAlgorithmArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:::algorithm/${props.resourceId}`;
 	}
 
@@ -390,12 +858,7 @@ export class PersonalizeResources {
 	 * Parses a algorithm ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAlgorithmArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAlgorithmArn(arn: string): PersonalizeAlgorithmArnComponents {
 		const match = AlgorithmArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid algorithm ARN: ${arn}`);
@@ -411,16 +874,9 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the batchInferenceJob resource.
 	 */
-	static batchInferenceJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static batchInferenceJob(
+		props: PersonalizeBatchInferenceJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:batch-inference-job/${props.resourceId}`;
 	}
 
@@ -435,12 +891,9 @@ export class PersonalizeResources {
 	 * Parses a batchInferenceJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBatchInferenceJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBatchInferenceJobArn(
+		arn: string,
+	): PersonalizeBatchInferenceJobArnComponents {
 		const match = BatchInferenceJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid batchInferenceJob ARN: ${arn}`);
@@ -456,16 +909,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the batchSegmentJob resource.
 	 */
-	static batchSegmentJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static batchSegmentJob(props: PersonalizeBatchSegmentJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:batch-segment-job/${props.resourceId}`;
 	}
 
@@ -480,12 +924,9 @@ export class PersonalizeResources {
 	 * Parses a batchSegmentJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBatchSegmentJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBatchSegmentJobArn(
+		arn: string,
+	): PersonalizeBatchSegmentJobArnComponents {
 		const match = BatchSegmentJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid batchSegmentJob ARN: ${arn}`);
@@ -501,16 +942,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the campaign resource.
 	 */
-	static campaign(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static campaign(props: PersonalizeCampaignArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:campaign/${props.resourceId}`;
 	}
 
@@ -525,12 +957,7 @@ export class PersonalizeResources {
 	 * Parses a campaign ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCampaignArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseCampaignArn(arn: string): PersonalizeCampaignArnComponents {
 		const match = CampaignArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid campaign ARN: ${arn}`);
@@ -546,16 +973,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the dataDeletionJob resource.
 	 */
-	static dataDeletionJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataDeletionJob(props: PersonalizeDataDeletionJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:data-deletion-job/${props.resourceId}`;
 	}
 
@@ -570,12 +988,9 @@ export class PersonalizeResources {
 	 * Parses a dataDeletionJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataDeletionJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDataDeletionJobArn(
+		arn: string,
+	): PersonalizeDataDeletionJobArnComponents {
 		const match = DataDeletionJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataDeletionJob ARN: ${arn}`);
@@ -591,16 +1006,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the dataInsightsJob resource.
 	 */
-	static dataInsightsJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataInsightsJob(props: PersonalizeDataInsightsJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:data-insights-job/${props.resourceId}`;
 	}
 
@@ -615,12 +1021,9 @@ export class PersonalizeResources {
 	 * Parses a dataInsightsJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataInsightsJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDataInsightsJobArn(
+		arn: string,
+	): PersonalizeDataInsightsJobArnComponents {
 		const match = DataInsightsJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataInsightsJob ARN: ${arn}`);
@@ -636,16 +1039,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the dataset resource.
 	 */
-	static dataset(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: PersonalizeDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:dataset/${props.resourceId}`;
 	}
 
@@ -660,12 +1054,7 @@ export class PersonalizeResources {
 	 * Parses a dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDatasetArn(arn: string): PersonalizeDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataset ARN: ${arn}`);
@@ -681,16 +1070,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the datasetExportJob resource.
 	 */
-	static datasetExportJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static datasetExportJob(props: PersonalizeDatasetExportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:dataset-export-job/${props.resourceId}`;
 	}
 
@@ -705,12 +1085,9 @@ export class PersonalizeResources {
 	 * Parses a datasetExportJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetExportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDatasetExportJobArn(
+		arn: string,
+	): PersonalizeDatasetExportJobArnComponents {
 		const match = DatasetExportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid datasetExportJob ARN: ${arn}`);
@@ -726,16 +1103,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the datasetGroup resource.
 	 */
-	static datasetGroup(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static datasetGroup(props: PersonalizeDatasetGroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:dataset-group/${props.resourceId}`;
 	}
 
@@ -750,12 +1118,9 @@ export class PersonalizeResources {
 	 * Parses a datasetGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDatasetGroupArn(
+		arn: string,
+	): PersonalizeDatasetGroupArnComponents {
 		const match = DatasetGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid datasetGroup ARN: ${arn}`);
@@ -771,16 +1136,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the datasetImportJob resource.
 	 */
-	static datasetImportJob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static datasetImportJob(props: PersonalizeDatasetImportJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:dataset-import-job/${props.resourceId}`;
 	}
 
@@ -795,12 +1151,9 @@ export class PersonalizeResources {
 	 * Parses a datasetImportJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetImportJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseDatasetImportJobArn(
+		arn: string,
+	): PersonalizeDatasetImportJobArnComponents {
 		const match = DatasetImportJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid datasetImportJob ARN: ${arn}`);
@@ -816,16 +1169,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the eventTracker resource.
 	 */
-	static eventTracker(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static eventTracker(props: PersonalizeEventTrackerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:event-tracker/${props.resourceId}`;
 	}
 
@@ -840,12 +1184,9 @@ export class PersonalizeResources {
 	 * Parses a eventTracker ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEventTrackerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseEventTrackerArn(
+		arn: string,
+	): PersonalizeEventTrackerArnComponents {
 		const match = EventTrackerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid eventTracker ARN: ${arn}`);
@@ -861,16 +1202,9 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the featureTransformation resource.
 	 */
-	static featureTransformation(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static featureTransformation(
+		props: PersonalizeFeatureTransformationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:personalize:::feature-transformation/${props.resourceId}`;
 	}
 
@@ -885,12 +1219,9 @@ export class PersonalizeResources {
 	 * Parses a featureTransformation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFeatureTransformationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseFeatureTransformationArn(
+		arn: string,
+	): PersonalizeFeatureTransformationArnComponents {
 		const match = FeatureTransformationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid featureTransformation ARN: ${arn}`);
@@ -906,16 +1237,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the filter resource.
 	 */
-	static filter(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static filter(props: PersonalizeFilterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:filter/${props.resourceId}`;
 	}
 
@@ -930,12 +1252,7 @@ export class PersonalizeResources {
 	 * Parses a filter ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFilterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseFilterArn(arn: string): PersonalizeFilterArnComponents {
 		const match = FilterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid filter ARN: ${arn}`);
@@ -951,16 +1268,9 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the metricAttribution resource.
 	 */
-	static metricAttribution(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static metricAttribution(
+		props: PersonalizeMetricAttributionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:metric-attribution/${props.resourceId}`;
 	}
 
@@ -975,12 +1285,9 @@ export class PersonalizeResources {
 	 * Parses a metricAttribution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMetricAttributionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseMetricAttributionArn(
+		arn: string,
+	): PersonalizeMetricAttributionArnComponents {
 		const match = MetricAttributionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid metricAttribution ARN: ${arn}`);
@@ -996,16 +1303,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the recipe resource.
 	 */
-	static recipe(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recipe(props: PersonalizeRecipeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:::recipe/${props.resourceId}`;
 	}
 
@@ -1020,12 +1318,7 @@ export class PersonalizeResources {
 	 * Parses a recipe ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecipeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRecipeArn(arn: string): PersonalizeRecipeArnComponents {
 		const match = RecipeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recipe ARN: ${arn}`);
@@ -1041,16 +1334,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the recommender resource.
 	 */
-	static recommender(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static recommender(props: PersonalizeRecommenderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:recommender/${props.resourceId}`;
 	}
 
@@ -1065,12 +1349,7 @@ export class PersonalizeResources {
 	 * Parses a recommender ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRecommenderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseRecommenderArn(arn: string): PersonalizeRecommenderArnComponents {
 		const match = RecommenderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid recommender ARN: ${arn}`);
@@ -1086,16 +1365,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the schema resource.
 	 */
-	static schema(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static schema(props: PersonalizeSchemaArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:schema/${props.resourceId}`;
 	}
 
@@ -1110,12 +1380,7 @@ export class PersonalizeResources {
 	 * Parses a schema ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSchemaArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSchemaArn(arn: string): PersonalizeSchemaArnComponents {
 		const match = SchemaArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid schema ARN: ${arn}`);
@@ -1131,16 +1396,7 @@ export class PersonalizeResources {
 	/**
 	 * Builds an ARN for the solution resource.
 	 */
-	static solution(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static solution(props: PersonalizeSolutionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:personalize:${props.region ?? "*"}:${props.account ?? "*"}:solution/${props.resourceId}`;
 	}
 
@@ -1155,12 +1411,7 @@ export class PersonalizeResources {
 	 * Parses a solution ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSolutionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseSolutionArn(arn: string): PersonalizeSolutionArnComponents {
 		const match = SolutionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid solution ARN: ${arn}`);
@@ -1179,290 +1430,282 @@ export class PersonalizeResources {
  */
 export class PersonalizeOperations {
 	/** IAM actions required for the CreateBatchInferenceJob API call. */
-	static readonly CREATE_BATCH_INFERENCE_JOB: string[] = [
+	static readonly CreateBatchInferenceJob: string[] = [
 		"personalize:CreateBatchInferenceJob",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateBatchSegmentJob API call. */
-	static readonly CREATE_BATCH_SEGMENT_JOB: string[] = [
+	static readonly CreateBatchSegmentJob: string[] = [
 		"personalize:CreateBatchSegmentJob",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateCampaign API call. */
-	static readonly CREATE_CAMPAIGN: string[] = [
+	static readonly CreateCampaign: string[] = [
 		"personalize:CreateCampaign",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDataDeletionJob API call. */
-	static readonly CREATE_DATA_DELETION_JOB: string[] = [
+	static readonly CreateDataDeletionJob: string[] = [
 		"personalize:CreateDataDeletionJob",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDataset API call. */
-	static readonly CREATE_DATASET: string[] = [
+	static readonly CreateDataset: string[] = [
 		"personalize:CreateDataset",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDatasetExportJob API call. */
-	static readonly CREATE_DATASET_EXPORT_JOB: string[] = [
+	static readonly CreateDatasetExportJob: string[] = [
 		"personalize:CreateDatasetExportJob",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDatasetGroup API call. */
-	static readonly CREATE_DATASET_GROUP: string[] = [
+	static readonly CreateDatasetGroup: string[] = [
 		"personalize:CreateDatasetGroup",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateDatasetImportJob API call. */
-	static readonly CREATE_DATASET_IMPORT_JOB: string[] = [
+	static readonly CreateDatasetImportJob: string[] = [
 		"personalize:CreateDatasetImportJob",
 		"iam:PassRole",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateEventTracker API call. */
-	static readonly CREATE_EVENT_TRACKER: string[] = [
+	static readonly CreateEventTracker: string[] = [
 		"personalize:CreateEventTracker",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateFilter API call. */
-	static readonly CREATE_FILTER: string[] = [
+	static readonly CreateFilter: string[] = [
 		"personalize:CreateFilter",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateMetricAttribution API call. */
-	static readonly CREATE_METRIC_ATTRIBUTION: string[] = [
+	static readonly CreateMetricAttribution: string[] = [
 		"personalize:CreateMetricAttribution",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateRecommender API call. */
-	static readonly CREATE_RECOMMENDER: string[] = [
+	static readonly CreateRecommender: string[] = [
 		"personalize:CreateRecommender",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateSchema API call. */
-	static readonly CREATE_SCHEMA: string[] = ["personalize:CreateSchema"];
+	static readonly CreateSchema: string[] = ["personalize:CreateSchema"];
 	/** IAM actions required for the CreateSolution API call. */
-	static readonly CREATE_SOLUTION: string[] = [
+	static readonly CreateSolution: string[] = [
 		"personalize:CreateSolution",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the CreateSolutionVersion API call. */
-	static readonly CREATE_SOLUTION_VERSION: string[] = [
+	static readonly CreateSolutionVersion: string[] = [
 		"personalize:CreateSolutionVersion",
 		"personalize:TagResource",
 	];
 	/** IAM actions required for the DeleteCampaign API call. */
-	static readonly DELETE_CAMPAIGN: string[] = ["personalize:DeleteCampaign"];
+	static readonly DeleteCampaign: string[] = ["personalize:DeleteCampaign"];
 	/** IAM actions required for the DeleteDataset API call. */
-	static readonly DELETE_DATASET: string[] = ["personalize:DeleteDataset"];
+	static readonly DeleteDataset: string[] = ["personalize:DeleteDataset"];
 	/** IAM actions required for the DeleteDatasetGroup API call. */
-	static readonly DELETE_DATASET_GROUP: string[] = [
+	static readonly DeleteDatasetGroup: string[] = [
 		"personalize:DeleteDatasetGroup",
 	];
 	/** IAM actions required for the DeleteEventTracker API call. */
-	static readonly DELETE_EVENT_TRACKER: string[] = [
+	static readonly DeleteEventTracker: string[] = [
 		"personalize:DeleteEventTracker",
 	];
 	/** IAM actions required for the DeleteFilter API call. */
-	static readonly DELETE_FILTER: string[] = ["personalize:DeleteFilter"];
+	static readonly DeleteFilter: string[] = ["personalize:DeleteFilter"];
 	/** IAM actions required for the DeleteMetricAttribution API call. */
-	static readonly DELETE_METRIC_ATTRIBUTION: string[] = [
+	static readonly DeleteMetricAttribution: string[] = [
 		"personalize:DeleteMetricAttribution",
 	];
 	/** IAM actions required for the DeleteRecommender API call. */
-	static readonly DELETE_RECOMMENDER: string[] = [
+	static readonly DeleteRecommender: string[] = [
 		"personalize:DeleteRecommender",
 	];
 	/** IAM actions required for the DeleteSchema API call. */
-	static readonly DELETE_SCHEMA: string[] = ["personalize:DeleteSchema"];
+	static readonly DeleteSchema: string[] = ["personalize:DeleteSchema"];
 	/** IAM actions required for the DeleteSolution API call. */
-	static readonly DELETE_SOLUTION: string[] = ["personalize:DeleteSolution"];
+	static readonly DeleteSolution: string[] = ["personalize:DeleteSolution"];
 	/** IAM actions required for the DescribeAlgorithm API call. */
-	static readonly DESCRIBE_ALGORITHM: string[] = [
+	static readonly DescribeAlgorithm: string[] = [
 		"personalize:DescribeAlgorithm",
 	];
 	/** IAM actions required for the DescribeBatchInferenceJob API call. */
-	static readonly DESCRIBE_BATCH_INFERENCE_JOB: string[] = [
+	static readonly DescribeBatchInferenceJob: string[] = [
 		"personalize:DescribeBatchInferenceJob",
 	];
 	/** IAM actions required for the DescribeBatchSegmentJob API call. */
-	static readonly DESCRIBE_BATCH_SEGMENT_JOB: string[] = [
+	static readonly DescribeBatchSegmentJob: string[] = [
 		"personalize:DescribeBatchSegmentJob",
 	];
 	/** IAM actions required for the DescribeCampaign API call. */
-	static readonly DESCRIBE_CAMPAIGN: string[] = [
-		"personalize:DescribeCampaign",
-	];
+	static readonly DescribeCampaign: string[] = ["personalize:DescribeCampaign"];
 	/** IAM actions required for the DescribeDataDeletionJob API call. */
-	static readonly DESCRIBE_DATA_DELETION_JOB: string[] = [
+	static readonly DescribeDataDeletionJob: string[] = [
 		"personalize:DescribeDataDeletionJob",
 	];
 	/** IAM actions required for the DescribeDataset API call. */
-	static readonly DESCRIBE_DATASET: string[] = ["personalize:DescribeDataset"];
+	static readonly DescribeDataset: string[] = ["personalize:DescribeDataset"];
 	/** IAM actions required for the DescribeDatasetExportJob API call. */
-	static readonly DESCRIBE_DATASET_EXPORT_JOB: string[] = [
+	static readonly DescribeDatasetExportJob: string[] = [
 		"personalize:DescribeDatasetExportJob",
 	];
 	/** IAM actions required for the DescribeDatasetGroup API call. */
-	static readonly DESCRIBE_DATASET_GROUP: string[] = [
+	static readonly DescribeDatasetGroup: string[] = [
 		"personalize:DescribeDatasetGroup",
 	];
 	/** IAM actions required for the DescribeDatasetImportJob API call. */
-	static readonly DESCRIBE_DATASET_IMPORT_JOB: string[] = [
+	static readonly DescribeDatasetImportJob: string[] = [
 		"personalize:DescribeDatasetImportJob",
 	];
 	/** IAM actions required for the DescribeEventTracker API call. */
-	static readonly DESCRIBE_EVENT_TRACKER: string[] = [
+	static readonly DescribeEventTracker: string[] = [
 		"personalize:DescribeEventTracker",
 	];
 	/** IAM actions required for the DescribeFeatureTransformation API call. */
-	static readonly DESCRIBE_FEATURE_TRANSFORMATION: string[] = [
+	static readonly DescribeFeatureTransformation: string[] = [
 		"personalize:DescribeFeatureTransformation",
 	];
 	/** IAM actions required for the DescribeFilter API call. */
-	static readonly DESCRIBE_FILTER: string[] = ["personalize:DescribeFilter"];
+	static readonly DescribeFilter: string[] = ["personalize:DescribeFilter"];
 	/** IAM actions required for the DescribeMetricAttribution API call. */
-	static readonly DESCRIBE_METRIC_ATTRIBUTION: string[] = [
+	static readonly DescribeMetricAttribution: string[] = [
 		"personalize:DescribeMetricAttribution",
 	];
 	/** IAM actions required for the DescribeRecipe API call. */
-	static readonly DESCRIBE_RECIPE: string[] = ["personalize:DescribeRecipe"];
+	static readonly DescribeRecipe: string[] = ["personalize:DescribeRecipe"];
 	/** IAM actions required for the DescribeRecommender API call. */
-	static readonly DESCRIBE_RECOMMENDER: string[] = [
+	static readonly DescribeRecommender: string[] = [
 		"personalize:DescribeRecommender",
 	];
 	/** IAM actions required for the DescribeSchema API call. */
-	static readonly DESCRIBE_SCHEMA: string[] = ["personalize:DescribeSchema"];
+	static readonly DescribeSchema: string[] = ["personalize:DescribeSchema"];
 	/** IAM actions required for the DescribeSolution API call. */
-	static readonly DESCRIBE_SOLUTION: string[] = [
-		"personalize:DescribeSolution",
-	];
+	static readonly DescribeSolution: string[] = ["personalize:DescribeSolution"];
 	/** IAM actions required for the DescribeSolutionVersion API call. */
-	static readonly DESCRIBE_SOLUTION_VERSION: string[] = [
+	static readonly DescribeSolutionVersion: string[] = [
 		"personalize:DescribeSolutionVersion",
 	];
 	/** IAM actions required for the GetActionRecommendations API call. */
-	static readonly GET_ACTION_RECOMMENDATIONS: string[] = [
+	static readonly opGetActionRecommendations: string[] = [
 		"personalize:GetActionRecommendations",
 	];
 	/** IAM actions required for the GetPersonalizedRanking API call. */
-	static readonly GET_PERSONALIZED_RANKING: string[] = [
+	static readonly opGetPersonalizedRanking: string[] = [
 		"personalize:GetPersonalizedRanking",
 	];
 	/** IAM actions required for the GetRecommendations API call. */
-	static readonly GET_RECOMMENDATIONS: string[] = [
+	static readonly opGetRecommendations: string[] = [
 		"personalize:GetRecommendations",
 	];
 	/** IAM actions required for the GetSolutionMetrics API call. */
-	static readonly GET_SOLUTION_METRICS: string[] = [
+	static readonly opGetSolutionMetrics: string[] = [
 		"personalize:GetSolutionMetrics",
 	];
 	/** IAM actions required for the ListBatchInferenceJobs API call. */
-	static readonly LIST_BATCH_INFERENCE_JOBS: string[] = [
+	static readonly ListBatchInferenceJobs: string[] = [
 		"personalize:ListBatchInferenceJobs",
 	];
 	/** IAM actions required for the ListBatchSegmentJobs API call. */
-	static readonly LIST_BATCH_SEGMENT_JOBS: string[] = [
+	static readonly ListBatchSegmentJobs: string[] = [
 		"personalize:ListBatchSegmentJobs",
 	];
 	/** IAM actions required for the ListCampaigns API call. */
-	static readonly LIST_CAMPAIGNS: string[] = ["personalize:ListCampaigns"];
+	static readonly ListCampaigns: string[] = ["personalize:ListCampaigns"];
 	/** IAM actions required for the ListDataDeletionJobs API call. */
-	static readonly LIST_DATA_DELETION_JOBS: string[] = [
+	static readonly ListDataDeletionJobs: string[] = [
 		"personalize:ListDataDeletionJobs",
 	];
 	/** IAM actions required for the ListDatasetExportJobs API call. */
-	static readonly LIST_DATASET_EXPORT_JOBS: string[] = [
+	static readonly ListDatasetExportJobs: string[] = [
 		"personalize:ListDatasetExportJobs",
 	];
 	/** IAM actions required for the ListDatasetGroups API call. */
-	static readonly LIST_DATASET_GROUPS: string[] = [
+	static readonly ListDatasetGroups: string[] = [
 		"personalize:ListDatasetGroups",
 	];
 	/** IAM actions required for the ListDatasetImportJobs API call. */
-	static readonly LIST_DATASET_IMPORT_JOBS: string[] = [
+	static readonly ListDatasetImportJobs: string[] = [
 		"personalize:ListDatasetImportJobs",
 	];
 	/** IAM actions required for the ListDatasets API call. */
-	static readonly LIST_DATASETS: string[] = ["personalize:ListDatasets"];
+	static readonly ListDatasets: string[] = ["personalize:ListDatasets"];
 	/** IAM actions required for the ListEventTrackers API call. */
-	static readonly LIST_EVENT_TRACKERS: string[] = [
+	static readonly ListEventTrackers: string[] = [
 		"personalize:ListEventTrackers",
 	];
 	/** IAM actions required for the ListFilters API call. */
-	static readonly LIST_FILTERS: string[] = ["personalize:ListFilters"];
+	static readonly ListFilters: string[] = ["personalize:ListFilters"];
 	/** IAM actions required for the ListMetricAttributionMetrics API call. */
-	static readonly LIST_METRIC_ATTRIBUTION_METRICS: string[] = [
+	static readonly ListMetricAttributionMetrics: string[] = [
 		"personalize:ListMetricAttributionMetrics",
 	];
 	/** IAM actions required for the ListMetricAttributions API call. */
-	static readonly LIST_METRIC_ATTRIBUTIONS: string[] = [
+	static readonly ListMetricAttributions: string[] = [
 		"personalize:ListMetricAttributions",
 	];
 	/** IAM actions required for the ListRecipes API call. */
-	static readonly LIST_RECIPES: string[] = ["personalize:ListRecipes"];
+	static readonly ListRecipes: string[] = ["personalize:ListRecipes"];
 	/** IAM actions required for the ListRecommenders API call. */
-	static readonly LIST_RECOMMENDERS: string[] = [
-		"personalize:ListRecommenders",
-	];
+	static readonly ListRecommenders: string[] = ["personalize:ListRecommenders"];
 	/** IAM actions required for the ListSchemas API call. */
-	static readonly LIST_SCHEMAS: string[] = ["personalize:ListSchemas"];
+	static readonly ListSchemas: string[] = ["personalize:ListSchemas"];
 	/** IAM actions required for the ListSolutionVersions API call. */
-	static readonly LIST_SOLUTION_VERSIONS: string[] = [
+	static readonly ListSolutionVersions: string[] = [
 		"personalize:ListSolutionVersions",
 	];
 	/** IAM actions required for the ListSolutions API call. */
-	static readonly LIST_SOLUTIONS: string[] = ["personalize:ListSolutions"];
+	static readonly ListSolutions: string[] = ["personalize:ListSolutions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"personalize:ListTagsForResource",
 	];
 	/** IAM actions required for the PutActionInteractions API call. */
-	static readonly PUT_ACTION_INTERACTIONS: string[] = [
+	static readonly PutActionInteractions: string[] = [
 		"personalize:PutActionInteractions",
 	];
 	/** IAM actions required for the PutActions API call. */
-	static readonly PUT_ACTIONS: string[] = ["personalize:PutActions"];
+	static readonly PutActions: string[] = ["personalize:PutActions"];
 	/** IAM actions required for the PutEvents API call. */
-	static readonly PUT_EVENTS: string[] = ["personalize:PutEvents"];
+	static readonly PutEvents: string[] = ["personalize:PutEvents"];
 	/** IAM actions required for the PutItems API call. */
-	static readonly PUT_ITEMS: string[] = ["personalize:PutItems"];
+	static readonly PutItems: string[] = ["personalize:PutItems"];
 	/** IAM actions required for the PutUsers API call. */
-	static readonly PUT_USERS: string[] = ["personalize:PutUsers"];
+	static readonly PutUsers: string[] = ["personalize:PutUsers"];
 	/** IAM actions required for the StartRecommender API call. */
-	static readonly START_RECOMMENDER: string[] = [
-		"personalize:StartRecommender",
-	];
+	static readonly StartRecommender: string[] = ["personalize:StartRecommender"];
 	/** IAM actions required for the StopRecommender API call. */
-	static readonly STOP_RECOMMENDER: string[] = ["personalize:StopRecommender"];
+	static readonly StopRecommender: string[] = ["personalize:StopRecommender"];
 	/** IAM actions required for the StopSolutionVersionCreation API call. */
-	static readonly STOP_SOLUTION_VERSION_CREATION: string[] = [
+	static readonly StopSolutionVersionCreation: string[] = [
 		"personalize:StopSolutionVersionCreation",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["personalize:TagResource"];
+	static readonly TagResource: string[] = ["personalize:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["personalize:UntagResource"];
+	static readonly UntagResource: string[] = ["personalize:UntagResource"];
 	/** IAM actions required for the UpdateCampaign API call. */
-	static readonly UPDATE_CAMPAIGN: string[] = ["personalize:UpdateCampaign"];
+	static readonly UpdateCampaign: string[] = ["personalize:UpdateCampaign"];
 	/** IAM actions required for the UpdateDataset API call. */
-	static readonly UPDATE_DATASET: string[] = ["personalize:UpdateDataset"];
+	static readonly UpdateDataset: string[] = ["personalize:UpdateDataset"];
 	/** IAM actions required for the UpdateMetricAttribution API call. */
-	static readonly UPDATE_METRIC_ATTRIBUTION: string[] = [
+	static readonly UpdateMetricAttribution: string[] = [
 		"iam:PassRole",
 		"personalize:UpdateMetricAttribution",
 	];
 	/** IAM actions required for the UpdateRecommender API call. */
-	static readonly UPDATE_RECOMMENDER: string[] = [
+	static readonly UpdateRecommender: string[] = [
 		"personalize:UpdateRecommender",
 	];
 	/** IAM actions required for the UpdateSolution API call. */
-	static readonly UPDATE_SOLUTION: string[] = ["personalize:UpdateSolution"];
+	static readonly UpdateSolution: string[] = ["personalize:UpdateSolution"];
 }
 
 /**
@@ -1470,84 +1713,84 @@ export class PersonalizeOperations {
  */
 export class PersonalizeConditions {
 	/** Condition keys applicable to the CreateBatchInferenceJob action. */
-	static readonly CREATE_BATCH_INFERENCE_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateBatchInferenceJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateBatchSegmentJob action. */
-	static readonly CREATE_BATCH_SEGMENT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateBatchSegmentJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCampaign action. */
-	static readonly CREATE_CAMPAIGN_CONDITION_KEYS: string[] = [
+	static readonly CreateCampaignConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataDeletionJob action. */
-	static readonly CREATE_DATA_DELETION_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateDataDeletionJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataset action. */
-	static readonly CREATE_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDatasetExportJob action. */
-	static readonly CREATE_DATASET_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetExportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDatasetGroup action. */
-	static readonly CREATE_DATASET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDatasetImportJob action. */
-	static readonly CREATE_DATASET_IMPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly CreateDatasetImportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEventTracker action. */
-	static readonly CREATE_EVENT_TRACKER_CONDITION_KEYS: string[] = [
+	static readonly CreateEventTrackerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFilter action. */
-	static readonly CREATE_FILTER_CONDITION_KEYS: string[] = [
+	static readonly CreateFilterConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRecommender action. */
-	static readonly CREATE_RECOMMENDER_CONDITION_KEYS: string[] = [
+	static readonly CreateRecommenderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSolution action. */
-	static readonly CREATE_SOLUTION_CONDITION_KEYS: string[] = [
+	static readonly CreateSolutionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSolutionVersion action. */
-	static readonly CREATE_SOLUTION_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreateSolutionVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

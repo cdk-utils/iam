@@ -13,24 +13,23 @@ export class ConsolidatedbillingActions {
 	static readonly SERVICE_PREFIX = "consolidatedbilling";
 
 	/** [Read] consolidatedbilling:GetAccountBillingRole */
-	static readonly GET_ACCOUNT_BILLING_ROLE =
+	static readonly actionGetAccountBillingRole =
 		"consolidatedbilling:GetAccountBillingRole";
 	/** [List] consolidatedbilling:ListLinkedAccounts */
-	static readonly LIST_LINKED_ACCOUNTS =
-		"consolidatedbilling:ListLinkedAccounts";
+	static readonly ListLinkedAccounts = "consolidatedbilling:ListLinkedAccounts";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ConsolidatedbillingActions.GET_ACCOUNT_BILLING_ROLE,
+	static readonly AllReadActions: string[] = [
+		ConsolidatedbillingActions.actionGetAccountBillingRole,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ConsolidatedbillingActions.LIST_LINKED_ACCOUNTS,
+	static readonly AllListActions: string[] = [
+		ConsolidatedbillingActions.ListLinkedAccounts,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

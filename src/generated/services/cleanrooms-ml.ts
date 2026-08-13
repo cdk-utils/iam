@@ -13,269 +13,524 @@ export class CleanroomsMlActions {
 	static readonly SERVICE_PREFIX = "cleanrooms-ml";
 
 	/** [Write] cleanrooms-ml:CancelTrainedModel */
-	static readonly CANCEL_TRAINED_MODEL = "cleanrooms-ml:CancelTrainedModel";
+	static readonly CancelTrainedModel = "cleanrooms-ml:CancelTrainedModel";
 	/** [Write] cleanrooms-ml:CancelTrainedModelInferenceJob */
-	static readonly CANCEL_TRAINED_MODEL_INFERENCE_JOB =
+	static readonly CancelTrainedModelInferenceJob =
 		"cleanrooms-ml:CancelTrainedModelInferenceJob";
 	/** [Write] cleanrooms-ml:CreateAudienceModel */
-	static readonly CREATE_AUDIENCE_MODEL = "cleanrooms-ml:CreateAudienceModel";
+	static readonly CreateAudienceModel = "cleanrooms-ml:CreateAudienceModel";
 	/** [Write] cleanrooms-ml:CreateConfiguredAudienceModel */
-	static readonly CREATE_CONFIGURED_AUDIENCE_MODEL =
+	static readonly CreateConfiguredAudienceModel =
 		"cleanrooms-ml:CreateConfiguredAudienceModel";
 	/** [Write] cleanrooms-ml:CreateConfiguredModelAlgorithm */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM =
+	static readonly CreateConfiguredModelAlgorithm =
 		"cleanrooms-ml:CreateConfiguredModelAlgorithm";
 	/** [Write] cleanrooms-ml:CreateConfiguredModelAlgorithmAssociation */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION =
+	static readonly CreateConfiguredModelAlgorithmAssociation =
 		"cleanrooms-ml:CreateConfiguredModelAlgorithmAssociation";
 	/** [Write] cleanrooms-ml:CreateMLInputChannel */
-	static readonly CREATE_ML_INPUT_CHANNEL =
-		"cleanrooms-ml:CreateMLInputChannel";
+	static readonly CreateMLInputChannel = "cleanrooms-ml:CreateMLInputChannel";
 	/** [Write] cleanrooms-ml:CreateTrainedModel */
-	static readonly CREATE_TRAINED_MODEL = "cleanrooms-ml:CreateTrainedModel";
+	static readonly CreateTrainedModel = "cleanrooms-ml:CreateTrainedModel";
 	/** [Write] cleanrooms-ml:CreateTrainingDataset */
-	static readonly CREATE_TRAINING_DATASET =
-		"cleanrooms-ml:CreateTrainingDataset";
+	static readonly CreateTrainingDataset = "cleanrooms-ml:CreateTrainingDataset";
 	/** [Write] cleanrooms-ml:DeleteAudienceGenerationJob */
-	static readonly DELETE_AUDIENCE_GENERATION_JOB =
+	static readonly DeleteAudienceGenerationJob =
 		"cleanrooms-ml:DeleteAudienceGenerationJob";
 	/** [Write] cleanrooms-ml:DeleteAudienceModel */
-	static readonly DELETE_AUDIENCE_MODEL = "cleanrooms-ml:DeleteAudienceModel";
+	static readonly DeleteAudienceModel = "cleanrooms-ml:DeleteAudienceModel";
 	/** [Write] cleanrooms-ml:DeleteConfiguredAudienceModel */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL =
+	static readonly DeleteConfiguredAudienceModel =
 		"cleanrooms-ml:DeleteConfiguredAudienceModel";
 	/** [Write] cleanrooms-ml:DeleteConfiguredAudienceModelPolicy */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_POLICY =
+	static readonly DeleteConfiguredAudienceModelPolicy =
 		"cleanrooms-ml:DeleteConfiguredAudienceModelPolicy";
 	/** [Write] cleanrooms-ml:DeleteConfiguredModelAlgorithm */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM =
+	static readonly DeleteConfiguredModelAlgorithm =
 		"cleanrooms-ml:DeleteConfiguredModelAlgorithm";
 	/** [Write] cleanrooms-ml:DeleteConfiguredModelAlgorithmAssociation */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION =
+	static readonly DeleteConfiguredModelAlgorithmAssociation =
 		"cleanrooms-ml:DeleteConfiguredModelAlgorithmAssociation";
 	/** [Write] cleanrooms-ml:DeleteMLConfiguration */
-	static readonly DELETE_ML_CONFIGURATION =
-		"cleanrooms-ml:DeleteMLConfiguration";
+	static readonly DeleteMLConfiguration = "cleanrooms-ml:DeleteMLConfiguration";
 	/** [Write] cleanrooms-ml:DeleteMLInputChannelData */
-	static readonly DELETE_ML_INPUT_CHANNEL_DATA =
+	static readonly DeleteMLInputChannelData =
 		"cleanrooms-ml:DeleteMLInputChannelData";
 	/** [Write] cleanrooms-ml:DeleteTrainedModelOutput */
-	static readonly DELETE_TRAINED_MODEL_OUTPUT =
+	static readonly DeleteTrainedModelOutput =
 		"cleanrooms-ml:DeleteTrainedModelOutput";
 	/** [Write] cleanrooms-ml:DeleteTrainingDataset */
-	static readonly DELETE_TRAINING_DATASET =
-		"cleanrooms-ml:DeleteTrainingDataset";
+	static readonly DeleteTrainingDataset = "cleanrooms-ml:DeleteTrainingDataset";
 	/** [Read] cleanrooms-ml:GetAudienceGenerationJob */
-	static readonly GET_AUDIENCE_GENERATION_JOB =
+	static readonly actionGetAudienceGenerationJob =
 		"cleanrooms-ml:GetAudienceGenerationJob";
 	/** [Read] cleanrooms-ml:GetAudienceModel */
-	static readonly GET_AUDIENCE_MODEL = "cleanrooms-ml:GetAudienceModel";
+	static readonly actionGetAudienceModel = "cleanrooms-ml:GetAudienceModel";
 	/** [Read] cleanrooms-ml:GetCollaborationConfiguredModelAlgorithmAssociation */
-	static readonly GET_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION =
+	static readonly actionGetCollaborationConfiguredModelAlgorithmAssociation =
 		"cleanrooms-ml:GetCollaborationConfiguredModelAlgorithmAssociation";
 	/** [Read] cleanrooms-ml:GetCollaborationMLInputChannel */
-	static readonly GET_COLLABORATION_ML_INPUT_CHANNEL =
+	static readonly actionGetCollaborationMLInputChannel =
 		"cleanrooms-ml:GetCollaborationMLInputChannel";
 	/** [Read] cleanrooms-ml:GetCollaborationTrainedModel */
-	static readonly GET_COLLABORATION_TRAINED_MODEL =
+	static readonly actionGetCollaborationTrainedModel =
 		"cleanrooms-ml:GetCollaborationTrainedModel";
 	/** [Read] cleanrooms-ml:GetConfiguredAudienceModel */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL =
+	static readonly actionGetConfiguredAudienceModel =
 		"cleanrooms-ml:GetConfiguredAudienceModel";
 	/** [Read] cleanrooms-ml:GetConfiguredAudienceModelPolicy */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_POLICY =
+	static readonly actionGetConfiguredAudienceModelPolicy =
 		"cleanrooms-ml:GetConfiguredAudienceModelPolicy";
 	/** [Read] cleanrooms-ml:GetConfiguredModelAlgorithm */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM =
+	static readonly actionGetConfiguredModelAlgorithm =
 		"cleanrooms-ml:GetConfiguredModelAlgorithm";
 	/** [Read] cleanrooms-ml:GetConfiguredModelAlgorithmAssociation */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION =
+	static readonly actionGetConfiguredModelAlgorithmAssociation =
 		"cleanrooms-ml:GetConfiguredModelAlgorithmAssociation";
 	/** [Read] cleanrooms-ml:GetMLConfiguration */
-	static readonly GET_ML_CONFIGURATION = "cleanrooms-ml:GetMLConfiguration";
+	static readonly actionGetMLConfiguration = "cleanrooms-ml:GetMLConfiguration";
 	/** [Read] cleanrooms-ml:GetMLInputChannel */
-	static readonly GET_ML_INPUT_CHANNEL = "cleanrooms-ml:GetMLInputChannel";
+	static readonly actionGetMLInputChannel = "cleanrooms-ml:GetMLInputChannel";
 	/** [Read] cleanrooms-ml:GetTrainedModel */
-	static readonly GET_TRAINED_MODEL = "cleanrooms-ml:GetTrainedModel";
+	static readonly actionGetTrainedModel = "cleanrooms-ml:GetTrainedModel";
 	/** [Read] cleanrooms-ml:GetTrainedModelInferenceJob */
-	static readonly GET_TRAINED_MODEL_INFERENCE_JOB =
+	static readonly actionGetTrainedModelInferenceJob =
 		"cleanrooms-ml:GetTrainedModelInferenceJob";
 	/** [Read] cleanrooms-ml:GetTrainingDataset */
-	static readonly GET_TRAINING_DATASET = "cleanrooms-ml:GetTrainingDataset";
+	static readonly actionGetTrainingDataset = "cleanrooms-ml:GetTrainingDataset";
 	/** [List] cleanrooms-ml:ListAudienceExportJobs */
-	static readonly LIST_AUDIENCE_EXPORT_JOBS =
+	static readonly ListAudienceExportJobs =
 		"cleanrooms-ml:ListAudienceExportJobs";
 	/** [List] cleanrooms-ml:ListAudienceGenerationJobs */
-	static readonly LIST_AUDIENCE_GENERATION_JOBS =
+	static readonly ListAudienceGenerationJobs =
 		"cleanrooms-ml:ListAudienceGenerationJobs";
 	/** [List] cleanrooms-ml:ListAudienceModels */
-	static readonly LIST_AUDIENCE_MODELS = "cleanrooms-ml:ListAudienceModels";
+	static readonly ListAudienceModels = "cleanrooms-ml:ListAudienceModels";
 	/** [List] cleanrooms-ml:ListCollaborationConfiguredModelAlgorithmAssociations */
-	static readonly LIST_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS =
+	static readonly ListCollaborationConfiguredModelAlgorithmAssociations =
 		"cleanrooms-ml:ListCollaborationConfiguredModelAlgorithmAssociations";
 	/** [List] cleanrooms-ml:ListCollaborationMLInputChannels */
-	static readonly LIST_COLLABORATION_ML_INPUT_CHANNELS =
+	static readonly ListCollaborationMLInputChannels =
 		"cleanrooms-ml:ListCollaborationMLInputChannels";
 	/** [List] cleanrooms-ml:ListCollaborationTrainedModelExportJobs */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_EXPORT_JOBS =
+	static readonly ListCollaborationTrainedModelExportJobs =
 		"cleanrooms-ml:ListCollaborationTrainedModelExportJobs";
 	/** [List] cleanrooms-ml:ListCollaborationTrainedModelInferenceJobs */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_INFERENCE_JOBS =
+	static readonly ListCollaborationTrainedModelInferenceJobs =
 		"cleanrooms-ml:ListCollaborationTrainedModelInferenceJobs";
 	/** [List] cleanrooms-ml:ListCollaborationTrainedModels */
-	static readonly LIST_COLLABORATION_TRAINED_MODELS =
+	static readonly ListCollaborationTrainedModels =
 		"cleanrooms-ml:ListCollaborationTrainedModels";
 	/** [List] cleanrooms-ml:ListConfiguredAudienceModels */
-	static readonly LIST_CONFIGURED_AUDIENCE_MODELS =
+	static readonly ListConfiguredAudienceModels =
 		"cleanrooms-ml:ListConfiguredAudienceModels";
 	/** [List] cleanrooms-ml:ListConfiguredModelAlgorithmAssociations */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS =
+	static readonly ListConfiguredModelAlgorithmAssociations =
 		"cleanrooms-ml:ListConfiguredModelAlgorithmAssociations";
 	/** [List] cleanrooms-ml:ListConfiguredModelAlgorithms */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHMS =
+	static readonly ListConfiguredModelAlgorithms =
 		"cleanrooms-ml:ListConfiguredModelAlgorithms";
 	/** [List] cleanrooms-ml:ListMLInputChannels */
-	static readonly LIST_ML_INPUT_CHANNELS = "cleanrooms-ml:ListMLInputChannels";
+	static readonly ListMLInputChannels = "cleanrooms-ml:ListMLInputChannels";
 	/** [List] cleanrooms-ml:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cleanrooms-ml:ListTagsForResource";
+	static readonly ListTagsForResource = "cleanrooms-ml:ListTagsForResource";
 	/** [List] cleanrooms-ml:ListTrainedModelInferenceJobs */
-	static readonly LIST_TRAINED_MODEL_INFERENCE_JOBS =
+	static readonly ListTrainedModelInferenceJobs =
 		"cleanrooms-ml:ListTrainedModelInferenceJobs";
 	/** [List] cleanrooms-ml:ListTrainedModelVersions */
-	static readonly LIST_TRAINED_MODEL_VERSIONS =
+	static readonly ListTrainedModelVersions =
 		"cleanrooms-ml:ListTrainedModelVersions";
 	/** [List] cleanrooms-ml:ListTrainedModels */
-	static readonly LIST_TRAINED_MODELS = "cleanrooms-ml:ListTrainedModels";
+	static readonly ListTrainedModels = "cleanrooms-ml:ListTrainedModels";
 	/** [List] cleanrooms-ml:ListTrainingDatasets */
-	static readonly LIST_TRAINING_DATASETS = "cleanrooms-ml:ListTrainingDatasets";
+	static readonly ListTrainingDatasets = "cleanrooms-ml:ListTrainingDatasets";
 	/** [PermissionManagement] cleanrooms-ml:PutConfiguredAudienceModelPolicy */
-	static readonly PUT_CONFIGURED_AUDIENCE_MODEL_POLICY =
+	static readonly PutConfiguredAudienceModelPolicy =
 		"cleanrooms-ml:PutConfiguredAudienceModelPolicy";
 	/** [Write] cleanrooms-ml:PutMLConfiguration */
-	static readonly PUT_ML_CONFIGURATION = "cleanrooms-ml:PutMLConfiguration";
+	static readonly PutMLConfiguration = "cleanrooms-ml:PutMLConfiguration";
 	/** [Write] cleanrooms-ml:StartAudienceExportJob */
-	static readonly START_AUDIENCE_EXPORT_JOB =
+	static readonly StartAudienceExportJob =
 		"cleanrooms-ml:StartAudienceExportJob";
 	/** [Write] cleanrooms-ml:StartAudienceGenerationJob */
-	static readonly START_AUDIENCE_GENERATION_JOB =
+	static readonly StartAudienceGenerationJob =
 		"cleanrooms-ml:StartAudienceGenerationJob";
 	/** [Write] cleanrooms-ml:StartTrainedModelExportJob */
-	static readonly START_TRAINED_MODEL_EXPORT_JOB =
+	static readonly StartTrainedModelExportJob =
 		"cleanrooms-ml:StartTrainedModelExportJob";
 	/** [Write] cleanrooms-ml:StartTrainedModelInferenceJob */
-	static readonly START_TRAINED_MODEL_INFERENCE_JOB =
+	static readonly StartTrainedModelInferenceJob =
 		"cleanrooms-ml:StartTrainedModelInferenceJob";
 	/** [Tagging] cleanrooms-ml:TagResource */
-	static readonly TAG_RESOURCE = "cleanrooms-ml:TagResource";
+	static readonly TagResource = "cleanrooms-ml:TagResource";
 	/** [Tagging] cleanrooms-ml:UnTagResource */
-	static readonly UN_TAG_RESOURCE = "cleanrooms-ml:UnTagResource";
+	static readonly UnTagResource = "cleanrooms-ml:UnTagResource";
 	/** [Write] cleanrooms-ml:UpdateConfiguredAudienceModel */
-	static readonly UPDATE_CONFIGURED_AUDIENCE_MODEL =
+	static readonly UpdateConfiguredAudienceModel =
 		"cleanrooms-ml:UpdateConfiguredAudienceModel";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CleanroomsMlActions.GET_AUDIENCE_GENERATION_JOB,
-		CleanroomsMlActions.GET_AUDIENCE_MODEL,
-		CleanroomsMlActions.GET_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION,
-		CleanroomsMlActions.GET_COLLABORATION_ML_INPUT_CHANNEL,
-		CleanroomsMlActions.GET_COLLABORATION_TRAINED_MODEL,
-		CleanroomsMlActions.GET_CONFIGURED_AUDIENCE_MODEL,
-		CleanroomsMlActions.GET_CONFIGURED_AUDIENCE_MODEL_POLICY,
-		CleanroomsMlActions.GET_CONFIGURED_MODEL_ALGORITHM,
-		CleanroomsMlActions.GET_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION,
-		CleanroomsMlActions.GET_ML_CONFIGURATION,
-		CleanroomsMlActions.GET_ML_INPUT_CHANNEL,
-		CleanroomsMlActions.GET_TRAINED_MODEL,
-		CleanroomsMlActions.GET_TRAINED_MODEL_INFERENCE_JOB,
-		CleanroomsMlActions.GET_TRAINING_DATASET,
+	static readonly AllReadActions: string[] = [
+		CleanroomsMlActions.actionGetAudienceGenerationJob,
+		CleanroomsMlActions.actionGetAudienceModel,
+		CleanroomsMlActions.actionGetCollaborationConfiguredModelAlgorithmAssociation,
+		CleanroomsMlActions.actionGetCollaborationMLInputChannel,
+		CleanroomsMlActions.actionGetCollaborationTrainedModel,
+		CleanroomsMlActions.actionGetConfiguredAudienceModel,
+		CleanroomsMlActions.actionGetConfiguredAudienceModelPolicy,
+		CleanroomsMlActions.actionGetConfiguredModelAlgorithm,
+		CleanroomsMlActions.actionGetConfiguredModelAlgorithmAssociation,
+		CleanroomsMlActions.actionGetMLConfiguration,
+		CleanroomsMlActions.actionGetMLInputChannel,
+		CleanroomsMlActions.actionGetTrainedModel,
+		CleanroomsMlActions.actionGetTrainedModelInferenceJob,
+		CleanroomsMlActions.actionGetTrainingDataset,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CleanroomsMlActions.CANCEL_TRAINED_MODEL,
-		CleanroomsMlActions.CANCEL_TRAINED_MODEL_INFERENCE_JOB,
-		CleanroomsMlActions.CREATE_AUDIENCE_MODEL,
-		CleanroomsMlActions.CREATE_CONFIGURED_AUDIENCE_MODEL,
-		CleanroomsMlActions.CREATE_CONFIGURED_MODEL_ALGORITHM,
-		CleanroomsMlActions.CREATE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION,
-		CleanroomsMlActions.CREATE_ML_INPUT_CHANNEL,
-		CleanroomsMlActions.CREATE_TRAINED_MODEL,
-		CleanroomsMlActions.CREATE_TRAINING_DATASET,
-		CleanroomsMlActions.DELETE_AUDIENCE_GENERATION_JOB,
-		CleanroomsMlActions.DELETE_AUDIENCE_MODEL,
-		CleanroomsMlActions.DELETE_CONFIGURED_AUDIENCE_MODEL,
-		CleanroomsMlActions.DELETE_CONFIGURED_AUDIENCE_MODEL_POLICY,
-		CleanroomsMlActions.DELETE_CONFIGURED_MODEL_ALGORITHM,
-		CleanroomsMlActions.DELETE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION,
-		CleanroomsMlActions.DELETE_ML_CONFIGURATION,
-		CleanroomsMlActions.DELETE_ML_INPUT_CHANNEL_DATA,
-		CleanroomsMlActions.DELETE_TRAINED_MODEL_OUTPUT,
-		CleanroomsMlActions.DELETE_TRAINING_DATASET,
-		CleanroomsMlActions.PUT_ML_CONFIGURATION,
-		CleanroomsMlActions.START_AUDIENCE_EXPORT_JOB,
-		CleanroomsMlActions.START_AUDIENCE_GENERATION_JOB,
-		CleanroomsMlActions.START_TRAINED_MODEL_EXPORT_JOB,
-		CleanroomsMlActions.START_TRAINED_MODEL_INFERENCE_JOB,
-		CleanroomsMlActions.UPDATE_CONFIGURED_AUDIENCE_MODEL,
+	static readonly AllWriteActions: string[] = [
+		CleanroomsMlActions.CancelTrainedModel,
+		CleanroomsMlActions.CancelTrainedModelInferenceJob,
+		CleanroomsMlActions.CreateAudienceModel,
+		CleanroomsMlActions.CreateConfiguredAudienceModel,
+		CleanroomsMlActions.CreateConfiguredModelAlgorithm,
+		CleanroomsMlActions.CreateConfiguredModelAlgorithmAssociation,
+		CleanroomsMlActions.CreateMLInputChannel,
+		CleanroomsMlActions.CreateTrainedModel,
+		CleanroomsMlActions.CreateTrainingDataset,
+		CleanroomsMlActions.DeleteAudienceGenerationJob,
+		CleanroomsMlActions.DeleteAudienceModel,
+		CleanroomsMlActions.DeleteConfiguredAudienceModel,
+		CleanroomsMlActions.DeleteConfiguredAudienceModelPolicy,
+		CleanroomsMlActions.DeleteConfiguredModelAlgorithm,
+		CleanroomsMlActions.DeleteConfiguredModelAlgorithmAssociation,
+		CleanroomsMlActions.DeleteMLConfiguration,
+		CleanroomsMlActions.DeleteMLInputChannelData,
+		CleanroomsMlActions.DeleteTrainedModelOutput,
+		CleanroomsMlActions.DeleteTrainingDataset,
+		CleanroomsMlActions.PutMLConfiguration,
+		CleanroomsMlActions.StartAudienceExportJob,
+		CleanroomsMlActions.StartAudienceGenerationJob,
+		CleanroomsMlActions.StartTrainedModelExportJob,
+		CleanroomsMlActions.StartTrainedModelInferenceJob,
+		CleanroomsMlActions.UpdateConfiguredAudienceModel,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CleanroomsMlActions.LIST_AUDIENCE_EXPORT_JOBS,
-		CleanroomsMlActions.LIST_AUDIENCE_GENERATION_JOBS,
-		CleanroomsMlActions.LIST_AUDIENCE_MODELS,
-		CleanroomsMlActions.LIST_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS,
-		CleanroomsMlActions.LIST_COLLABORATION_ML_INPUT_CHANNELS,
-		CleanroomsMlActions.LIST_COLLABORATION_TRAINED_MODEL_EXPORT_JOBS,
-		CleanroomsMlActions.LIST_COLLABORATION_TRAINED_MODEL_INFERENCE_JOBS,
-		CleanroomsMlActions.LIST_COLLABORATION_TRAINED_MODELS,
-		CleanroomsMlActions.LIST_CONFIGURED_AUDIENCE_MODELS,
-		CleanroomsMlActions.LIST_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS,
-		CleanroomsMlActions.LIST_CONFIGURED_MODEL_ALGORITHMS,
-		CleanroomsMlActions.LIST_ML_INPUT_CHANNELS,
-		CleanroomsMlActions.LIST_TAGS_FOR_RESOURCE,
-		CleanroomsMlActions.LIST_TRAINED_MODEL_INFERENCE_JOBS,
-		CleanroomsMlActions.LIST_TRAINED_MODEL_VERSIONS,
-		CleanroomsMlActions.LIST_TRAINED_MODELS,
-		CleanroomsMlActions.LIST_TRAINING_DATASETS,
+	static readonly AllListActions: string[] = [
+		CleanroomsMlActions.ListAudienceExportJobs,
+		CleanroomsMlActions.ListAudienceGenerationJobs,
+		CleanroomsMlActions.ListAudienceModels,
+		CleanroomsMlActions.ListCollaborationConfiguredModelAlgorithmAssociations,
+		CleanroomsMlActions.ListCollaborationMLInputChannels,
+		CleanroomsMlActions.ListCollaborationTrainedModelExportJobs,
+		CleanroomsMlActions.ListCollaborationTrainedModelInferenceJobs,
+		CleanroomsMlActions.ListCollaborationTrainedModels,
+		CleanroomsMlActions.ListConfiguredAudienceModels,
+		CleanroomsMlActions.ListConfiguredModelAlgorithmAssociations,
+		CleanroomsMlActions.ListConfiguredModelAlgorithms,
+		CleanroomsMlActions.ListMLInputChannels,
+		CleanroomsMlActions.ListTagsForResource,
+		CleanroomsMlActions.ListTrainedModelInferenceJobs,
+		CleanroomsMlActions.ListTrainedModelVersions,
+		CleanroomsMlActions.ListTrainedModels,
+		CleanroomsMlActions.ListTrainingDatasets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		CleanroomsMlActions.PUT_CONFIGURED_AUDIENCE_MODEL_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		CleanroomsMlActions.PutConfiguredAudienceModelPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CleanroomsMlActions.TAG_RESOURCE,
-		CleanroomsMlActions.UN_TAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CleanroomsMlActions.TagResource,
+		CleanroomsMlActions.UnTagResource,
 	];
 }
 
-const ConfiguredModelAlgorithmArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):configured-model-algorithm/(?<resourceId>[^:/?]+)$",
-);
-const ConfiguredModelAlgorithmAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/configured-model-algorithm-association/(?<resourceId>[^:/?]+)$",
-);
-const MlInputChannelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/ml-input-channel/(?<resourceId>[^:/?]+)$",
-);
-const TrainedModelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/trained-model/(?<resourceId>[^:/?]+)$",
-);
-const TrainedModelInferenceJobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/trained-model-inference-job/(?<resourceId>[^:/?]+)$",
-);
-const AudiencegenerationjobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):audience-generation-job/(?<resourceId>[^:/?]+)$",
-);
-const AudiencemodelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):audience-model/(?<resourceId>[^:/?]+)$",
-);
-const ConfiguredaudiencemodelArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):configured-audience-model/(?<resourceId>[^:/?]+)$",
-);
-const TrainingdatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):training-dataset/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a ConfiguredModelAlgorithm ARN.
+ */
+export interface CleanroomsMlConfiguredModelAlgorithmArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ConfiguredModelAlgorithm ARN.
+ */
+export interface CleanroomsMlConfiguredModelAlgorithmArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a ConfiguredModelAlgorithmAssociation ARN.
+ */
+export interface CleanroomsMlConfiguredModelAlgorithmAssociationArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ConfiguredModelAlgorithmAssociation ARN.
+ */
+export interface CleanroomsMlConfiguredModelAlgorithmAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a MLInputChannel ARN.
+ */
+export interface CleanroomsMlMlInputChannelArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MLInputChannel ARN.
+ */
+export interface CleanroomsMlMlInputChannelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a TrainedModel ARN.
+ */
+export interface CleanroomsMlTrainedModelArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TrainedModel ARN.
+ */
+export interface CleanroomsMlTrainedModelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a TrainedModelInferenceJob ARN.
+ */
+export interface CleanroomsMlTrainedModelInferenceJobArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TrainedModelInferenceJob ARN.
+ */
+export interface CleanroomsMlTrainedModelInferenceJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a audiencegenerationjob ARN.
+ */
+export interface CleanroomsMlAudiencegenerationjobArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a audiencegenerationjob ARN.
+ */
+export interface CleanroomsMlAudiencegenerationjobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a audiencemodel ARN.
+ */
+export interface CleanroomsMlAudiencemodelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a audiencemodel ARN.
+ */
+export interface CleanroomsMlAudiencemodelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a configuredaudiencemodel ARN.
+ */
+export interface CleanroomsMlConfiguredaudiencemodelArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuredaudiencemodel ARN.
+ */
+export interface CleanroomsMlConfiguredaudiencemodelArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a trainingdataset ARN.
+ */
+export interface CleanroomsMlTrainingdatasetArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trainingdataset ARN.
+ */
+export interface CleanroomsMlTrainingdatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ConfiguredModelAlgorithmArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):configured-model-algorithm\/(?<resourceId>[^:/?]+)$/;
+const ConfiguredModelAlgorithmAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/configured-model-algorithm-association\/(?<resourceId>[^:/?]+)$/;
+const MlInputChannelArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/ml-input-channel\/(?<resourceId>[^:/?]+)$/;
+const TrainedModelArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/trained-model\/(?<resourceId>[^:/?]+)$/;
+const TrainedModelInferenceJobArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/trained-model-inference-job\/(?<resourceId>[^:/?]+)$/;
+const AudiencegenerationjobArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):audience-generation-job\/(?<resourceId>[^:/?]+)$/;
+const AudiencemodelArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):audience-model\/(?<resourceId>[^:/?]+)$/;
+const ConfiguredaudiencemodelArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):configured-audience-model\/(?<resourceId>[^:/?]+)$/;
+const TrainingdatasetArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms-ml:(?<region>[^:]*):(?<account>[^:]*):training-dataset\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cleanrooms-ml resources.
@@ -284,16 +539,9 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the ConfiguredModelAlgorithm resource.
 	 */
-	static configuredModelAlgorithm(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredModelAlgorithm(
+		props: CleanroomsMlConfiguredModelAlgorithmArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:configured-model-algorithm/${props.resourceId}`;
 	}
 
@@ -308,12 +556,9 @@ export class CleanroomsMlResources {
 	 * Parses a ConfiguredModelAlgorithm ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredModelAlgorithmArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseConfiguredModelAlgorithmArn(
+		arn: string,
+	): CleanroomsMlConfiguredModelAlgorithmArnComponents {
 		const match = ConfiguredModelAlgorithmArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ConfiguredModelAlgorithm ARN: ${arn}`);
@@ -329,18 +574,9 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the ConfiguredModelAlgorithmAssociation resource.
 	 */
-	static configuredModelAlgorithmAssociation(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredModelAlgorithmAssociation(
+		props: CleanroomsMlConfiguredModelAlgorithmAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/configured-model-algorithm-association/${props.resourceId}`;
 	}
 
@@ -355,13 +591,9 @@ export class CleanroomsMlResources {
 	 * Parses a ConfiguredModelAlgorithmAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredModelAlgorithmAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		resourceId: string;
-	} {
+	static parseConfiguredModelAlgorithmAssociationArn(
+		arn: string,
+	): CleanroomsMlConfiguredModelAlgorithmAssociationArnComponents {
 		const match = ConfiguredModelAlgorithmAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -380,18 +612,7 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the MLInputChannel resource.
 	 */
-	static mlInputChannel(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mlInputChannel(props: CleanroomsMlMlInputChannelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/ml-input-channel/${props.resourceId}`;
 	}
 
@@ -406,13 +627,9 @@ export class CleanroomsMlResources {
 	 * Parses a MLInputChannel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMlInputChannelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		resourceId: string;
-	} {
+	static parseMlInputChannelArn(
+		arn: string,
+	): CleanroomsMlMlInputChannelArnComponents {
 		const match = MlInputChannelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MLInputChannel ARN: ${arn}`);
@@ -429,18 +646,7 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the TrainedModel resource.
 	 */
-	static trainedModel(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trainedModel(props: CleanroomsMlTrainedModelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/trained-model/${props.resourceId}`;
 	}
 
@@ -455,13 +661,9 @@ export class CleanroomsMlResources {
 	 * Parses a TrainedModel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrainedModelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		resourceId: string;
-	} {
+	static parseTrainedModelArn(
+		arn: string,
+	): CleanroomsMlTrainedModelArnComponents {
 		const match = TrainedModelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TrainedModel ARN: ${arn}`);
@@ -478,18 +680,9 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the TrainedModelInferenceJob resource.
 	 */
-	static trainedModelInferenceJob(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trainedModelInferenceJob(
+		props: CleanroomsMlTrainedModelInferenceJobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/trained-model-inference-job/${props.resourceId}`;
 	}
 
@@ -504,13 +697,9 @@ export class CleanroomsMlResources {
 	 * Parses a TrainedModelInferenceJob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrainedModelInferenceJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		resourceId: string;
-	} {
+	static parseTrainedModelInferenceJobArn(
+		arn: string,
+	): CleanroomsMlTrainedModelInferenceJobArnComponents {
 		const match = TrainedModelInferenceJobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TrainedModelInferenceJob ARN: ${arn}`);
@@ -527,16 +716,9 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the audiencegenerationjob resource.
 	 */
-	static audiencegenerationjob(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static audiencegenerationjob(
+		props: CleanroomsMlAudiencegenerationjobArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:audience-generation-job/${props.resourceId}`;
 	}
 
@@ -551,12 +733,9 @@ export class CleanroomsMlResources {
 	 * Parses a audiencegenerationjob ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAudiencegenerationjobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAudiencegenerationjobArn(
+		arn: string,
+	): CleanroomsMlAudiencegenerationjobArnComponents {
 		const match = AudiencegenerationjobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid audiencegenerationjob ARN: ${arn}`);
@@ -572,16 +751,7 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the audiencemodel resource.
 	 */
-	static audiencemodel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static audiencemodel(props: CleanroomsMlAudiencemodelArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:audience-model/${props.resourceId}`;
 	}
 
@@ -596,12 +766,9 @@ export class CleanroomsMlResources {
 	 * Parses a audiencemodel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAudiencemodelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseAudiencemodelArn(
+		arn: string,
+	): CleanroomsMlAudiencemodelArnComponents {
 		const match = AudiencemodelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid audiencemodel ARN: ${arn}`);
@@ -617,16 +784,9 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the configuredaudiencemodel resource.
 	 */
-	static configuredaudiencemodel(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredaudiencemodel(
+		props: CleanroomsMlConfiguredaudiencemodelArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:configured-audience-model/${props.resourceId}`;
 	}
 
@@ -641,12 +801,9 @@ export class CleanroomsMlResources {
 	 * Parses a configuredaudiencemodel ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredaudiencemodelArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseConfiguredaudiencemodelArn(
+		arn: string,
+	): CleanroomsMlConfiguredaudiencemodelArnComponents {
 		const match = ConfiguredaudiencemodelArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuredaudiencemodel ARN: ${arn}`);
@@ -662,16 +819,7 @@ export class CleanroomsMlResources {
 	/**
 	 * Builds an ARN for the trainingdataset resource.
 	 */
-	static trainingdataset(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trainingdataset(props: CleanroomsMlTrainingdatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms-ml:${props.region ?? "*"}:${props.account ?? "*"}:training-dataset/${props.resourceId}`;
 	}
 
@@ -686,12 +834,9 @@ export class CleanroomsMlResources {
 	 * Parses a trainingdataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrainingdatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseTrainingdatasetArn(
+		arn: string,
+	): CleanroomsMlTrainingdatasetArnComponents {
 		const match = TrainingdatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid trainingdataset ARN: ${arn}`);
@@ -710,248 +855,248 @@ export class CleanroomsMlResources {
  */
 export class CleanroomsMlOperations {
 	/** IAM actions required for the CancelTrainedModel API call. */
-	static readonly CANCEL_TRAINED_MODEL: string[] = [
+	static readonly CancelTrainedModel: string[] = [
 		"cleanrooms-ml:CancelTrainedModel",
 	];
 	/** IAM actions required for the CancelTrainedModelInferenceJob API call. */
-	static readonly CANCEL_TRAINED_MODEL_INFERENCE_JOB: string[] = [
+	static readonly CancelTrainedModelInferenceJob: string[] = [
 		"cleanrooms-ml:CancelTrainedModelInferenceJob",
 	];
 	/** IAM actions required for the CreateAudienceModel API call. */
-	static readonly CREATE_AUDIENCE_MODEL: string[] = [
+	static readonly CreateAudienceModel: string[] = [
 		"cleanrooms-ml:CreateAudienceModel",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredAudienceModel API call. */
-	static readonly CREATE_CONFIGURED_AUDIENCE_MODEL: string[] = [
+	static readonly CreateConfiguredAudienceModel: string[] = [
 		"cleanrooms-ml:CreateConfiguredAudienceModel",
 		"iam:PassRole",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredModelAlgorithm API call. */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM: string[] = [
+	static readonly CreateConfiguredModelAlgorithm: string[] = [
 		"cleanrooms-ml:CreateConfiguredModelAlgorithm",
 		"iam:PassRole",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredModelAlgorithmAssociation API call. */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION: string[] = [
+	static readonly CreateConfiguredModelAlgorithmAssociation: string[] = [
 		"cleanrooms-ml:CreateConfiguredModelAlgorithmAssociation",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateMLInputChannel API call. */
-	static readonly CREATE_ML_INPUT_CHANNEL: string[] = [
+	static readonly CreateMLInputChannel: string[] = [
 		"cleanrooms-ml:CreateMLInputChannel",
 		"iam:PassRole",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateTrainedModel API call. */
-	static readonly CREATE_TRAINED_MODEL: string[] = [
+	static readonly CreateTrainedModel: string[] = [
 		"cleanrooms-ml:CreateTrainedModel",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the CreateTrainingDataset API call. */
-	static readonly CREATE_TRAINING_DATASET: string[] = [
+	static readonly CreateTrainingDataset: string[] = [
 		"cleanrooms-ml:CreateTrainingDataset",
 		"iam:PassRole",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the DeleteAudienceGenerationJob API call. */
-	static readonly DELETE_AUDIENCE_GENERATION_JOB: string[] = [
+	static readonly DeleteAudienceGenerationJob: string[] = [
 		"cleanrooms-ml:DeleteAudienceGenerationJob",
 	];
 	/** IAM actions required for the DeleteAudienceModel API call. */
-	static readonly DELETE_AUDIENCE_MODEL: string[] = [
+	static readonly DeleteAudienceModel: string[] = [
 		"cleanrooms-ml:DeleteAudienceModel",
 	];
 	/** IAM actions required for the DeleteConfiguredAudienceModel API call. */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL: string[] = [
+	static readonly DeleteConfiguredAudienceModel: string[] = [
 		"cleanrooms-ml:DeleteConfiguredAudienceModel",
 	];
 	/** IAM actions required for the DeleteConfiguredAudienceModelPolicy API call. */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_POLICY: string[] = [
+	static readonly DeleteConfiguredAudienceModelPolicy: string[] = [
 		"cleanrooms-ml:DeleteConfiguredAudienceModelPolicy",
 	];
 	/** IAM actions required for the DeleteConfiguredModelAlgorithm API call. */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM: string[] = [
+	static readonly DeleteConfiguredModelAlgorithm: string[] = [
 		"cleanrooms-ml:DeleteConfiguredModelAlgorithm",
 	];
 	/** IAM actions required for the DeleteConfiguredModelAlgorithmAssociation API call. */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION: string[] = [
+	static readonly DeleteConfiguredModelAlgorithmAssociation: string[] = [
 		"cleanrooms-ml:DeleteConfiguredModelAlgorithmAssociation",
 	];
 	/** IAM actions required for the DeleteMLConfiguration API call. */
-	static readonly DELETE_ML_CONFIGURATION: string[] = [
+	static readonly DeleteMLConfiguration: string[] = [
 		"cleanrooms-ml:DeleteMLConfiguration",
 	];
 	/** IAM actions required for the DeleteMLInputChannelData API call. */
-	static readonly DELETE_ML_INPUT_CHANNEL_DATA: string[] = [
+	static readonly DeleteMLInputChannelData: string[] = [
 		"cleanrooms-ml:DeleteMLInputChannelData",
 	];
 	/** IAM actions required for the DeleteTrainedModelOutput API call. */
-	static readonly DELETE_TRAINED_MODEL_OUTPUT: string[] = [
+	static readonly DeleteTrainedModelOutput: string[] = [
 		"cleanrooms-ml:DeleteTrainedModelOutput",
 	];
 	/** IAM actions required for the DeleteTrainingDataset API call. */
-	static readonly DELETE_TRAINING_DATASET: string[] = [
+	static readonly DeleteTrainingDataset: string[] = [
 		"cleanrooms-ml:DeleteTrainingDataset",
 	];
 	/** IAM actions required for the GetAudienceGenerationJob API call. */
-	static readonly GET_AUDIENCE_GENERATION_JOB: string[] = [
+	static readonly opGetAudienceGenerationJob: string[] = [
 		"cleanrooms-ml:GetAudienceGenerationJob",
 	];
 	/** IAM actions required for the GetAudienceModel API call. */
-	static readonly GET_AUDIENCE_MODEL: string[] = [
+	static readonly opGetAudienceModel: string[] = [
 		"cleanrooms-ml:GetAudienceModel",
 	];
 	/** IAM actions required for the GetCollaborationConfiguredModelAlgorithmAssociation API call. */
-	static readonly GET_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION: string[] =
+	static readonly opGetCollaborationConfiguredModelAlgorithmAssociation: string[] =
 		["cleanrooms-ml:GetCollaborationConfiguredModelAlgorithmAssociation"];
 	/** IAM actions required for the GetCollaborationMLInputChannel API call. */
-	static readonly GET_COLLABORATION_ML_INPUT_CHANNEL: string[] = [
+	static readonly opGetCollaborationMLInputChannel: string[] = [
 		"cleanrooms-ml:GetCollaborationMLInputChannel",
 	];
 	/** IAM actions required for the GetCollaborationTrainedModel API call. */
-	static readonly GET_COLLABORATION_TRAINED_MODEL: string[] = [
+	static readonly opGetCollaborationTrainedModel: string[] = [
 		"cleanrooms-ml:GetCollaborationTrainedModel",
 	];
 	/** IAM actions required for the GetConfiguredAudienceModel API call. */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL: string[] = [
+	static readonly opGetConfiguredAudienceModel: string[] = [
 		"cleanrooms-ml:GetConfiguredAudienceModel",
 	];
 	/** IAM actions required for the GetConfiguredAudienceModelPolicy API call. */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_POLICY: string[] = [
+	static readonly opGetConfiguredAudienceModelPolicy: string[] = [
 		"cleanrooms-ml:GetConfiguredAudienceModelPolicy",
 	];
 	/** IAM actions required for the GetConfiguredModelAlgorithm API call. */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM: string[] = [
+	static readonly opGetConfiguredModelAlgorithm: string[] = [
 		"cleanrooms-ml:GetConfiguredModelAlgorithm",
 	];
 	/** IAM actions required for the GetConfiguredModelAlgorithmAssociation API call. */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION: string[] = [
+	static readonly opGetConfiguredModelAlgorithmAssociation: string[] = [
 		"cleanrooms-ml:GetConfiguredModelAlgorithmAssociation",
 	];
 	/** IAM actions required for the GetMLConfiguration API call. */
-	static readonly GET_ML_CONFIGURATION: string[] = [
+	static readonly opGetMLConfiguration: string[] = [
 		"cleanrooms-ml:GetMLConfiguration",
 	];
 	/** IAM actions required for the GetMLInputChannel API call. */
-	static readonly GET_ML_INPUT_CHANNEL: string[] = [
+	static readonly opGetMLInputChannel: string[] = [
 		"cleanrooms-ml:GetMLInputChannel",
 	];
 	/** IAM actions required for the GetTrainedModel API call. */
-	static readonly GET_TRAINED_MODEL: string[] = [
+	static readonly opGetTrainedModel: string[] = [
 		"cleanrooms-ml:GetTrainedModel",
 	];
 	/** IAM actions required for the GetTrainedModelInferenceJob API call. */
-	static readonly GET_TRAINED_MODEL_INFERENCE_JOB: string[] = [
+	static readonly opGetTrainedModelInferenceJob: string[] = [
 		"cleanrooms-ml:GetTrainedModelInferenceJob",
 	];
 	/** IAM actions required for the GetTrainingDataset API call. */
-	static readonly GET_TRAINING_DATASET: string[] = [
+	static readonly opGetTrainingDataset: string[] = [
 		"cleanrooms-ml:GetTrainingDataset",
 	];
 	/** IAM actions required for the ListAudienceExportJobs API call. */
-	static readonly LIST_AUDIENCE_EXPORT_JOBS: string[] = [
+	static readonly ListAudienceExportJobs: string[] = [
 		"cleanrooms-ml:ListAudienceExportJobs",
 	];
 	/** IAM actions required for the ListAudienceGenerationJobs API call. */
-	static readonly LIST_AUDIENCE_GENERATION_JOBS: string[] = [
+	static readonly ListAudienceGenerationJobs: string[] = [
 		"cleanrooms-ml:ListAudienceGenerationJobs",
 	];
 	/** IAM actions required for the ListAudienceModels API call. */
-	static readonly LIST_AUDIENCE_MODELS: string[] = [
+	static readonly ListAudienceModels: string[] = [
 		"cleanrooms-ml:ListAudienceModels",
 	];
 	/** IAM actions required for the ListCollaborationConfiguredModelAlgorithmAssociations API call. */
-	static readonly LIST_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS: string[] =
+	static readonly ListCollaborationConfiguredModelAlgorithmAssociations: string[] =
 		["cleanrooms-ml:ListCollaborationConfiguredModelAlgorithmAssociations"];
 	/** IAM actions required for the ListCollaborationMLInputChannels API call. */
-	static readonly LIST_COLLABORATION_ML_INPUT_CHANNELS: string[] = [
+	static readonly ListCollaborationMLInputChannels: string[] = [
 		"cleanrooms-ml:ListCollaborationMLInputChannels",
 	];
 	/** IAM actions required for the ListCollaborationTrainedModelExportJobs API call. */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_EXPORT_JOBS: string[] = [
+	static readonly ListCollaborationTrainedModelExportJobs: string[] = [
 		"cleanrooms-ml:ListCollaborationTrainedModelExportJobs",
 	];
 	/** IAM actions required for the ListCollaborationTrainedModelInferenceJobs API call. */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_INFERENCE_JOBS: string[] = [
+	static readonly ListCollaborationTrainedModelInferenceJobs: string[] = [
 		"cleanrooms-ml:ListCollaborationTrainedModelInferenceJobs",
 	];
 	/** IAM actions required for the ListCollaborationTrainedModels API call. */
-	static readonly LIST_COLLABORATION_TRAINED_MODELS: string[] = [
+	static readonly ListCollaborationTrainedModels: string[] = [
 		"cleanrooms-ml:ListCollaborationTrainedModels",
 	];
 	/** IAM actions required for the ListConfiguredAudienceModels API call. */
-	static readonly LIST_CONFIGURED_AUDIENCE_MODELS: string[] = [
+	static readonly ListConfiguredAudienceModels: string[] = [
 		"cleanrooms-ml:ListConfiguredAudienceModels",
 	];
 	/** IAM actions required for the ListConfiguredModelAlgorithmAssociations API call. */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS: string[] = [
+	static readonly ListConfiguredModelAlgorithmAssociations: string[] = [
 		"cleanrooms-ml:ListConfiguredModelAlgorithmAssociations",
 	];
 	/** IAM actions required for the ListConfiguredModelAlgorithms API call. */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHMS: string[] = [
+	static readonly ListConfiguredModelAlgorithms: string[] = [
 		"cleanrooms-ml:ListConfiguredModelAlgorithms",
 	];
 	/** IAM actions required for the ListMLInputChannels API call. */
-	static readonly LIST_ML_INPUT_CHANNELS: string[] = [
+	static readonly ListMLInputChannels: string[] = [
 		"cleanrooms-ml:ListMLInputChannels",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"cleanrooms-ml:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTrainedModelInferenceJobs API call. */
-	static readonly LIST_TRAINED_MODEL_INFERENCE_JOBS: string[] = [
+	static readonly ListTrainedModelInferenceJobs: string[] = [
 		"cleanrooms-ml:ListTrainedModelInferenceJobs",
 	];
 	/** IAM actions required for the ListTrainedModelVersions API call. */
-	static readonly LIST_TRAINED_MODEL_VERSIONS: string[] = [
+	static readonly ListTrainedModelVersions: string[] = [
 		"cleanrooms-ml:ListTrainedModelVersions",
 	];
 	/** IAM actions required for the ListTrainedModels API call. */
-	static readonly LIST_TRAINED_MODELS: string[] = [
+	static readonly ListTrainedModels: string[] = [
 		"cleanrooms-ml:ListTrainedModels",
 	];
 	/** IAM actions required for the ListTrainingDatasets API call. */
-	static readonly LIST_TRAINING_DATASETS: string[] = [
+	static readonly ListTrainingDatasets: string[] = [
 		"cleanrooms-ml:ListTrainingDatasets",
 	];
 	/** IAM actions required for the PutConfiguredAudienceModelPolicy API call. */
-	static readonly PUT_CONFIGURED_AUDIENCE_MODEL_POLICY: string[] = [
+	static readonly PutConfiguredAudienceModelPolicy: string[] = [
 		"cleanrooms-ml:PutConfiguredAudienceModelPolicy",
 	];
 	/** IAM actions required for the PutMLConfiguration API call. */
-	static readonly PUT_ML_CONFIGURATION: string[] = [
+	static readonly PutMLConfiguration: string[] = [
 		"iam:PassRole",
 		"cleanrooms-ml:PutMLConfiguration",
 	];
 	/** IAM actions required for the StartAudienceExportJob API call. */
-	static readonly START_AUDIENCE_EXPORT_JOB: string[] = [
+	static readonly StartAudienceExportJob: string[] = [
 		"cleanrooms-ml:StartAudienceExportJob",
 	];
 	/** IAM actions required for the StartAudienceGenerationJob API call. */
-	static readonly START_AUDIENCE_GENERATION_JOB: string[] = [
+	static readonly StartAudienceGenerationJob: string[] = [
 		"iam:PassRole",
 		"cleanrooms-ml:StartAudienceGenerationJob",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the StartTrainedModelExportJob API call. */
-	static readonly START_TRAINED_MODEL_EXPORT_JOB: string[] = [
+	static readonly StartTrainedModelExportJob: string[] = [
 		"cleanrooms-ml:StartTrainedModelExportJob",
 	];
 	/** IAM actions required for the StartTrainedModelInferenceJob API call. */
-	static readonly START_TRAINED_MODEL_INFERENCE_JOB: string[] = [
+	static readonly StartTrainedModelInferenceJob: string[] = [
 		"cleanrooms-ml:StartTrainedModelInferenceJob",
 		"cleanrooms-ml:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cleanrooms-ml:TagResource"];
+	static readonly TagResource: string[] = ["cleanrooms-ml:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cleanrooms-ml:UnTagResource"];
+	static readonly UntagResource: string[] = ["cleanrooms-ml:UnTagResource"];
 	/** IAM actions required for the UpdateConfiguredAudienceModel API call. */
-	static readonly UPDATE_CONFIGURED_AUDIENCE_MODEL: string[] = [
+	static readonly UpdateConfiguredAudienceModel: string[] = [
 		"iam:PassRole",
 		"cleanrooms-ml:UpdateConfiguredAudienceModel",
 	];
@@ -962,289 +1107,292 @@ export class CleanroomsMlOperations {
  */
 export class CleanroomsMlConditions {
 	/** Condition keys applicable to the CancelTrainedModel action. */
-	static readonly CANCEL_TRAINED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CancelTrainedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CancelTrainedModelInferenceJob action. */
-	static readonly CANCEL_TRAINED_MODEL_INFERENCE_JOB_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CancelTrainedModelInferenceJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateAudienceModel action. */
-	static readonly CREATE_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfiguredAudienceModel action. */
-	static readonly CREATE_CONFIGURED_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateConfiguredAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfiguredModelAlgorithm action. */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM_CONDITION_KEYS: string[] = [
+	static readonly CreateConfiguredModelAlgorithmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfiguredModelAlgorithmAssociation action. */
-	static readonly CREATE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly CreateConfiguredModelAlgorithmAssociationConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateMLInputChannel action. */
-	static readonly CREATE_ML_INPUT_CHANNEL_CONDITION_KEYS: string[] = [
+	static readonly CreateMLInputChannelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrainedModel action. */
-	static readonly CREATE_TRAINED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly CreateTrainedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrainingDataset action. */
-	static readonly CREATE_TRAINING_DATASET_CONDITION_KEYS: string[] = [
+	static readonly CreateTrainingDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAudienceGenerationJob action. */
-	static readonly DELETE_AUDIENCE_GENERATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly DeleteAudienceGenerationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteAudienceModel action. */
-	static readonly DELETE_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly DeleteAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteConfiguredAudienceModel action. */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly DeleteConfiguredAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteConfiguredAudienceModelPolicy action. */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_POLICY_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly DeleteConfiguredAudienceModelPolicyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DeleteConfiguredModelAlgorithm action. */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM_CONDITION_KEYS: string[] = [
+	static readonly DeleteConfiguredModelAlgorithmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteConfiguredModelAlgorithmAssociation action. */
-	static readonly DELETE_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly DeleteConfiguredModelAlgorithmAssociationConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the DeleteMLConfiguration action. */
-	static readonly DELETE_ML_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteMLConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteMLInputChannelData action. */
-	static readonly DELETE_ML_INPUT_CHANNEL_DATA_CONDITION_KEYS: string[] = [
+	static readonly DeleteMLInputChannelDataConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteTrainedModelOutput action. */
-	static readonly DELETE_TRAINED_MODEL_OUTPUT_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrainedModelOutputConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteTrainingDataset action. */
-	static readonly DELETE_TRAINING_DATASET_CONDITION_KEYS: string[] = [
+	static readonly DeleteTrainingDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetAudienceGenerationJob action. */
-	static readonly GET_AUDIENCE_GENERATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly actionGetAudienceGenerationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetAudienceModel action. */
-	static readonly GET_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly actionGetAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetCollaborationConfiguredModelAlgorithmAssociation action. */
-	static readonly GET_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly actionGetCollaborationConfiguredModelAlgorithmAssociationConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
 			"cleanrooms-ml:CollaborationId",
 		];
 	/** Condition keys applicable to the GetCollaborationMLInputChannel action. */
-	static readonly GET_COLLABORATION_ML_INPUT_CHANNEL_CONDITION_KEYS: string[] =
+	static readonly actionGetCollaborationMLInputChannelConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
 			"cleanrooms-ml:CollaborationId",
 		];
 	/** Condition keys applicable to the GetCollaborationTrainedModel action. */
-	static readonly GET_COLLABORATION_TRAINED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly actionGetCollaborationTrainedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cleanrooms-ml:CollaborationId",
 	];
 	/** Condition keys applicable to the GetConfiguredAudienceModel action. */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly actionGetConfiguredAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetConfiguredAudienceModelPolicy action. */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_POLICY_CONDITION_KEYS: string[] =
+	static readonly actionGetConfiguredAudienceModelPolicyConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the GetConfiguredModelAlgorithm action. */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM_CONDITION_KEYS: string[] = [
+	static readonly actionGetConfiguredModelAlgorithmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetConfiguredModelAlgorithmAssociation action. */
-	static readonly GET_CONFIGURED_MODEL_ALGORITHM_ASSOCIATION_CONDITION_KEYS: string[] =
+	static readonly actionGetConfiguredModelAlgorithmAssociationConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the GetMLConfiguration action. */
-	static readonly GET_ML_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly actionGetMLConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetMLInputChannel action. */
-	static readonly GET_ML_INPUT_CHANNEL_CONDITION_KEYS: string[] = [
+	static readonly actionGetMLInputChannelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetTrainedModel action. */
-	static readonly GET_TRAINED_MODEL_CONDITION_KEYS: string[] = [
+	static readonly actionGetTrainedModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetTrainedModelInferenceJob action. */
-	static readonly GET_TRAINED_MODEL_INFERENCE_JOB_CONDITION_KEYS: string[] = [
+	static readonly actionGetTrainedModelInferenceJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetTrainingDataset action. */
-	static readonly GET_TRAINING_DATASET_CONDITION_KEYS: string[] = [
+	static readonly actionGetTrainingDatasetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListAudienceExportJobs action. */
-	static readonly LIST_AUDIENCE_EXPORT_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListAudienceExportJobsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListAudienceGenerationJobs action. */
-	static readonly LIST_AUDIENCE_GENERATION_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListAudienceGenerationJobsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListCollaborationConfiguredModelAlgorithmAssociations action. */
-	static readonly LIST_COLLABORATION_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly ListCollaborationConfiguredModelAlgorithmAssociationsConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
 			"cleanrooms-ml:CollaborationId",
 		];
 	/** Condition keys applicable to the ListCollaborationMLInputChannels action. */
-	static readonly LIST_COLLABORATION_ML_INPUT_CHANNELS_CONDITION_KEYS: string[] =
-		[
-			"aws:RequestTag/${TagKey}",
-			"aws:TagKeys",
-			"cleanrooms-ml:CollaborationId",
-		];
+	static readonly ListCollaborationMLInputChannelsConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"cleanrooms-ml:CollaborationId",
+	];
 	/** Condition keys applicable to the ListCollaborationTrainedModelExportJobs action. */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_EXPORT_JOBS_CONDITION_KEYS: string[] =
+	static readonly ListCollaborationTrainedModelExportJobsConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
 			"cleanrooms-ml:CollaborationId",
 		];
 	/** Condition keys applicable to the ListCollaborationTrainedModelInferenceJobs action. */
-	static readonly LIST_COLLABORATION_TRAINED_MODEL_INFERENCE_JOBS_CONDITION_KEYS: string[] =
+	static readonly ListCollaborationTrainedModelInferenceJobsConditionKeys: string[] =
 		[
 			"aws:RequestTag/${TagKey}",
 			"aws:TagKeys",
 			"cleanrooms-ml:CollaborationId",
 		];
 	/** Condition keys applicable to the ListCollaborationTrainedModels action. */
-	static readonly LIST_COLLABORATION_TRAINED_MODELS_CONDITION_KEYS: string[] = [
+	static readonly ListCollaborationTrainedModelsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cleanrooms-ml:CollaborationId",
 	];
 	/** Condition keys applicable to the ListConfiguredModelAlgorithmAssociations action. */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHM_ASSOCIATIONS_CONDITION_KEYS: string[] =
+	static readonly ListConfiguredModelAlgorithmAssociationsConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the ListConfiguredModelAlgorithms action. */
-	static readonly LIST_CONFIGURED_MODEL_ALGORITHMS_CONDITION_KEYS: string[] = [
+	static readonly ListConfiguredModelAlgorithmsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListMLInputChannels action. */
-	static readonly LIST_ML_INPUT_CHANNELS_CONDITION_KEYS: string[] = [
+	static readonly ListMLInputChannelsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTrainedModelInferenceJobs action. */
-	static readonly LIST_TRAINED_MODEL_INFERENCE_JOBS_CONDITION_KEYS: string[] = [
+	static readonly ListTrainedModelInferenceJobsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTrainedModelVersions action. */
-	static readonly LIST_TRAINED_MODEL_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListTrainedModelVersionsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTrainedModels action. */
-	static readonly LIST_TRAINED_MODELS_CONDITION_KEYS: string[] = [
+	static readonly ListTrainedModelsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutMLConfiguration action. */
-	static readonly PUT_ML_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly PutMLConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartAudienceExportJob action. */
-	static readonly START_AUDIENCE_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartAudienceExportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartAudienceGenerationJob action. */
-	static readonly START_AUDIENCE_GENERATION_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartAudienceGenerationJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cleanrooms-ml:CollaborationId",
 	];
 	/** Condition keys applicable to the StartTrainedModelExportJob action. */
-	static readonly START_TRAINED_MODEL_EXPORT_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartTrainedModelExportJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartTrainedModelInferenceJob action. */
-	static readonly START_TRAINED_MODEL_INFERENCE_JOB_CONDITION_KEYS: string[] = [
+	static readonly StartTrainedModelInferenceJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UnTagResource action. */
-	static readonly UN_TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UnTagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateConfiguredAudienceModel action. */
-	static readonly UPDATE_CONFIGURED_AUDIENCE_MODEL_CONDITION_KEYS: string[] = [
+	static readonly UpdateConfiguredAudienceModelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cleanrooms-ml:CollaborationId (String) */
 	static readonly COLLABORATION_ID = "cleanrooms-ml:CollaborationId";
 

@@ -13,421 +13,581 @@ export class SecurityagentActions {
 	static readonly SERVICE_PREFIX = "securityagent";
 
 	/** [Write] securityagent:AddArtifact */
-	static readonly ADD_ARTIFACT = "securityagent:AddArtifact";
+	static readonly AddArtifact = "securityagent:AddArtifact";
 	/** [Write] securityagent:BatchCreateSecurityRequirements */
-	static readonly BATCH_CREATE_SECURITY_REQUIREMENTS =
+	static readonly BatchCreateSecurityRequirements =
 		"securityagent:BatchCreateSecurityRequirements";
 	/** [Write] securityagent:BatchDeleteCodeReviews */
-	static readonly BATCH_DELETE_CODE_REVIEWS =
+	static readonly BatchDeleteCodeReviews =
 		"securityagent:BatchDeleteCodeReviews";
 	/** [Write] securityagent:BatchDeletePentests */
-	static readonly BATCH_DELETE_PENTESTS = "securityagent:BatchDeletePentests";
+	static readonly BatchDeletePentests = "securityagent:BatchDeletePentests";
 	/** [Write] securityagent:BatchDeleteSecurityRequirements */
-	static readonly BATCH_DELETE_SECURITY_REQUIREMENTS =
+	static readonly BatchDeleteSecurityRequirements =
 		"securityagent:BatchDeleteSecurityRequirements";
 	/** [Write] securityagent:BatchDeleteThreatModels */
-	static readonly BATCH_DELETE_THREAT_MODELS =
+	static readonly BatchDeleteThreatModels =
 		"securityagent:BatchDeleteThreatModels";
 	/** [Write] securityagent:BatchDeleteThreats */
-	static readonly BATCH_DELETE_THREATS = "securityagent:BatchDeleteThreats";
+	static readonly BatchDeleteThreats = "securityagent:BatchDeleteThreats";
 	/** [Read] securityagent:BatchGetAgentSpaces */
-	static readonly BATCH_GET_AGENT_SPACES = "securityagent:BatchGetAgentSpaces";
+	static readonly BatchGetAgentSpaces = "securityagent:BatchGetAgentSpaces";
 	/** [Read] securityagent:BatchGetArtifactMetadata */
-	static readonly BATCH_GET_ARTIFACT_METADATA =
+	static readonly BatchGetArtifactMetadata =
 		"securityagent:BatchGetArtifactMetadata";
 	/** [Read] securityagent:BatchGetCodeReviewJobTasks */
-	static readonly BATCH_GET_CODE_REVIEW_JOB_TASKS =
+	static readonly BatchGetCodeReviewJobTasks =
 		"securityagent:BatchGetCodeReviewJobTasks";
 	/** [Read] securityagent:BatchGetCodeReviewJobs */
-	static readonly BATCH_GET_CODE_REVIEW_JOBS =
+	static readonly BatchGetCodeReviewJobs =
 		"securityagent:BatchGetCodeReviewJobs";
 	/** [Read] securityagent:BatchGetCodeReviews */
-	static readonly BATCH_GET_CODE_REVIEWS = "securityagent:BatchGetCodeReviews";
+	static readonly BatchGetCodeReviews = "securityagent:BatchGetCodeReviews";
 	/** [Read] securityagent:BatchGetFindings */
-	static readonly BATCH_GET_FINDINGS = "securityagent:BatchGetFindings";
+	static readonly BatchGetFindings = "securityagent:BatchGetFindings";
 	/** [Read] securityagent:BatchGetPentestJobContentMetadata */
-	static readonly BATCH_GET_PENTEST_JOB_CONTENT_METADATA =
+	static readonly BatchGetPentestJobContentMetadata =
 		"securityagent:BatchGetPentestJobContentMetadata";
 	/** [Read] securityagent:BatchGetPentestJobTasks */
-	static readonly BATCH_GET_PENTEST_JOB_TASKS =
+	static readonly BatchGetPentestJobTasks =
 		"securityagent:BatchGetPentestJobTasks";
 	/** [Read] securityagent:BatchGetPentestJobs */
-	static readonly BATCH_GET_PENTEST_JOBS = "securityagent:BatchGetPentestJobs";
+	static readonly BatchGetPentestJobs = "securityagent:BatchGetPentestJobs";
 	/** [Read] securityagent:BatchGetPentests */
-	static readonly BATCH_GET_PENTESTS = "securityagent:BatchGetPentests";
+	static readonly BatchGetPentests = "securityagent:BatchGetPentests";
 	/** [Read] securityagent:BatchGetSecurityRequirements */
-	static readonly BATCH_GET_SECURITY_REQUIREMENTS =
+	static readonly BatchGetSecurityRequirements =
 		"securityagent:BatchGetSecurityRequirements";
 	/** [Read] securityagent:BatchGetTargetDomains */
-	static readonly BATCH_GET_TARGET_DOMAINS =
-		"securityagent:BatchGetTargetDomains";
+	static readonly BatchGetTargetDomains = "securityagent:BatchGetTargetDomains";
 	/** [Read] securityagent:BatchGetThreatModelJobTasks */
-	static readonly BATCH_GET_THREAT_MODEL_JOB_TASKS =
+	static readonly BatchGetThreatModelJobTasks =
 		"securityagent:BatchGetThreatModelJobTasks";
 	/** [Read] securityagent:BatchGetThreatModelJobs */
-	static readonly BATCH_GET_THREAT_MODEL_JOBS =
+	static readonly BatchGetThreatModelJobs =
 		"securityagent:BatchGetThreatModelJobs";
 	/** [Read] securityagent:BatchGetThreatModels */
-	static readonly BATCH_GET_THREAT_MODELS =
-		"securityagent:BatchGetThreatModels";
+	static readonly BatchGetThreatModels = "securityagent:BatchGetThreatModels";
 	/** [Read] securityagent:BatchGetThreats */
-	static readonly BATCH_GET_THREATS = "securityagent:BatchGetThreats";
+	static readonly BatchGetThreats = "securityagent:BatchGetThreats";
 	/** [Write] securityagent:BatchUpdateSecurityRequirements */
-	static readonly BATCH_UPDATE_SECURITY_REQUIREMENTS =
+	static readonly BatchUpdateSecurityRequirements =
 		"securityagent:BatchUpdateSecurityRequirements";
 	/** [Write] securityagent:CreateAgentSpace */
-	static readonly CREATE_AGENT_SPACE = "securityagent:CreateAgentSpace";
+	static readonly CreateAgentSpace = "securityagent:CreateAgentSpace";
 	/** [Write] securityagent:CreateApplication */
-	static readonly CREATE_APPLICATION = "securityagent:CreateApplication";
+	static readonly CreateApplication = "securityagent:CreateApplication";
 	/** [Write] securityagent:CreateCodeReview */
-	static readonly CREATE_CODE_REVIEW = "securityagent:CreateCodeReview";
+	static readonly CreateCodeReview = "securityagent:CreateCodeReview";
 	/** [Write] securityagent:CreateDesignReview */
-	static readonly CREATE_DESIGN_REVIEW = "securityagent:CreateDesignReview";
+	static readonly CreateDesignReview = "securityagent:CreateDesignReview";
 	/** [Write] securityagent:CreateIntegration */
-	static readonly CREATE_INTEGRATION = "securityagent:CreateIntegration";
+	static readonly CreateIntegration = "securityagent:CreateIntegration";
 	/** [Write] securityagent:CreateMembership */
-	static readonly CREATE_MEMBERSHIP = "securityagent:CreateMembership";
+	static readonly CreateMembership = "securityagent:CreateMembership";
 	/** [Write] securityagent:CreateOneTimeLoginSession */
-	static readonly CREATE_ONE_TIME_LOGIN_SESSION =
+	static readonly CreateOneTimeLoginSession =
 		"securityagent:CreateOneTimeLoginSession";
 	/** [Write] securityagent:CreatePentest */
-	static readonly CREATE_PENTEST = "securityagent:CreatePentest";
+	static readonly CreatePentest = "securityagent:CreatePentest";
 	/** [Write] securityagent:CreatePrivateConnection */
-	static readonly CREATE_PRIVATE_CONNECTION =
+	static readonly CreatePrivateConnection =
 		"securityagent:CreatePrivateConnection";
 	/** [Write] securityagent:CreateSecurityRequirement */
-	static readonly CREATE_SECURITY_REQUIREMENT =
+	static readonly CreateSecurityRequirement =
 		"securityagent:CreateSecurityRequirement";
 	/** [Write] securityagent:CreateSecurityRequirementPack */
-	static readonly CREATE_SECURITY_REQUIREMENT_PACK =
+	static readonly CreateSecurityRequirementPack =
 		"securityagent:CreateSecurityRequirementPack";
 	/** [Write] securityagent:CreateTargetDomain */
-	static readonly CREATE_TARGET_DOMAIN = "securityagent:CreateTargetDomain";
+	static readonly CreateTargetDomain = "securityagent:CreateTargetDomain";
 	/** [Write] securityagent:CreateThreat */
-	static readonly CREATE_THREAT = "securityagent:CreateThreat";
+	static readonly CreateThreat = "securityagent:CreateThreat";
 	/** [Write] securityagent:CreateThreatModel */
-	static readonly CREATE_THREAT_MODEL = "securityagent:CreateThreatModel";
+	static readonly CreateThreatModel = "securityagent:CreateThreatModel";
 	/** [Write] securityagent:DeleteAgentSpace */
-	static readonly DELETE_AGENT_SPACE = "securityagent:DeleteAgentSpace";
+	static readonly DeleteAgentSpace = "securityagent:DeleteAgentSpace";
 	/** [Write] securityagent:DeleteApplication */
-	static readonly DELETE_APPLICATION = "securityagent:DeleteApplication";
+	static readonly DeleteApplication = "securityagent:DeleteApplication";
 	/** [Write] securityagent:DeleteArtifact */
-	static readonly DELETE_ARTIFACT = "securityagent:DeleteArtifact";
+	static readonly DeleteArtifact = "securityagent:DeleteArtifact";
 	/** [Write] securityagent:DeleteDesignReview */
-	static readonly DELETE_DESIGN_REVIEW = "securityagent:DeleteDesignReview";
+	static readonly DeleteDesignReview = "securityagent:DeleteDesignReview";
 	/** [Write] securityagent:DeleteIntegration */
-	static readonly DELETE_INTEGRATION = "securityagent:DeleteIntegration";
+	static readonly DeleteIntegration = "securityagent:DeleteIntegration";
 	/** [Write] securityagent:DeleteMembership */
-	static readonly DELETE_MEMBERSHIP = "securityagent:DeleteMembership";
+	static readonly DeleteMembership = "securityagent:DeleteMembership";
 	/** [Write] securityagent:DeletePrivateConnection */
-	static readonly DELETE_PRIVATE_CONNECTION =
+	static readonly DeletePrivateConnection =
 		"securityagent:DeletePrivateConnection";
 	/** [Write] securityagent:DeleteSecurityRequirement */
-	static readonly DELETE_SECURITY_REQUIREMENT =
+	static readonly DeleteSecurityRequirement =
 		"securityagent:DeleteSecurityRequirement";
 	/** [Write] securityagent:DeleteSecurityRequirementPack */
-	static readonly DELETE_SECURITY_REQUIREMENT_PACK =
+	static readonly DeleteSecurityRequirementPack =
 		"securityagent:DeleteSecurityRequirementPack";
 	/** [Write] securityagent:DeleteTargetDomain */
-	static readonly DELETE_TARGET_DOMAIN = "securityagent:DeleteTargetDomain";
+	static readonly DeleteTargetDomain = "securityagent:DeleteTargetDomain";
 	/** [Read] securityagent:DescribePrivateConnection */
-	static readonly DESCRIBE_PRIVATE_CONNECTION =
+	static readonly DescribePrivateConnection =
 		"securityagent:DescribePrivateConnection";
 	/** [Read] securityagent:GetApplication */
-	static readonly GET_APPLICATION = "securityagent:GetApplication";
+	static readonly actionGetApplication = "securityagent:GetApplication";
 	/** [Read] securityagent:GetArtifact */
-	static readonly GET_ARTIFACT = "securityagent:GetArtifact";
+	static readonly actionGetArtifact = "securityagent:GetArtifact";
 	/** [Read] securityagent:GetDesignReview */
-	static readonly GET_DESIGN_REVIEW = "securityagent:GetDesignReview";
+	static readonly actionGetDesignReview = "securityagent:GetDesignReview";
 	/** [Read] securityagent:GetDesignReviewArtifact */
-	static readonly GET_DESIGN_REVIEW_ARTIFACT =
+	static readonly actionGetDesignReviewArtifact =
 		"securityagent:GetDesignReviewArtifact";
 	/** [Read] securityagent:GetDesignReviewFeedback */
-	static readonly GET_DESIGN_REVIEW_FEEDBACK =
+	static readonly actionGetDesignReviewFeedback =
 		"securityagent:GetDesignReviewFeedback";
 	/** [Read] securityagent:GetIntegration */
-	static readonly GET_INTEGRATION = "securityagent:GetIntegration";
+	static readonly actionGetIntegration = "securityagent:GetIntegration";
 	/** [Read] securityagent:GetProviderRegistrationManifest */
-	static readonly GET_PROVIDER_REGISTRATION_MANIFEST =
+	static readonly actionGetProviderRegistrationManifest =
 		"securityagent:GetProviderRegistrationManifest";
 	/** [Read] securityagent:GetSecurityRequirement */
-	static readonly GET_SECURITY_REQUIREMENT =
+	static readonly actionGetSecurityRequirement =
 		"securityagent:GetSecurityRequirement";
 	/** [Read] securityagent:GetSecurityRequirementPack */
-	static readonly GET_SECURITY_REQUIREMENT_PACK =
+	static readonly actionGetSecurityRequirementPack =
 		"securityagent:GetSecurityRequirementPack";
 	/** [Write] securityagent:HandleProviderRegistrationCallback */
-	static readonly HANDLE_PROVIDER_REGISTRATION_CALLBACK =
+	static readonly HandleProviderRegistrationCallback =
 		"securityagent:HandleProviderRegistrationCallback";
 	/** [Write] securityagent:ImportSecurityRequirements */
-	static readonly IMPORT_SECURITY_REQUIREMENTS =
+	static readonly ImportSecurityRequirements =
 		"securityagent:ImportSecurityRequirements";
 	/** [Write] securityagent:InitiateProviderRegistration */
-	static readonly INITIATE_PROVIDER_REGISTRATION =
+	static readonly InitiateProviderRegistration =
 		"securityagent:InitiateProviderRegistration";
 	/** [List] securityagent:ListAgentSpaces */
-	static readonly LIST_AGENT_SPACES = "securityagent:ListAgentSpaces";
+	static readonly ListAgentSpaces = "securityagent:ListAgentSpaces";
 	/** [List] securityagent:ListApplications */
-	static readonly LIST_APPLICATIONS = "securityagent:ListApplications";
+	static readonly ListApplications = "securityagent:ListApplications";
 	/** [List] securityagent:ListArtifacts */
-	static readonly LIST_ARTIFACTS = "securityagent:ListArtifacts";
+	static readonly ListArtifacts = "securityagent:ListArtifacts";
 	/** [List] securityagent:ListCodeReviewJobTasks */
-	static readonly LIST_CODE_REVIEW_JOB_TASKS =
+	static readonly ListCodeReviewJobTasks =
 		"securityagent:ListCodeReviewJobTasks";
 	/** [List] securityagent:ListCodeReviewJobsForCodeReview */
-	static readonly LIST_CODE_REVIEW_JOBS_FOR_CODE_REVIEW =
+	static readonly ListCodeReviewJobsForCodeReview =
 		"securityagent:ListCodeReviewJobsForCodeReview";
 	/** [List] securityagent:ListCodeReviews */
-	static readonly LIST_CODE_REVIEWS = "securityagent:ListCodeReviews";
+	static readonly ListCodeReviews = "securityagent:ListCodeReviews";
 	/** [List] securityagent:ListDesignReviewComments */
-	static readonly LIST_DESIGN_REVIEW_COMMENTS =
+	static readonly ListDesignReviewComments =
 		"securityagent:ListDesignReviewComments";
 	/** [List] securityagent:ListDesignReviews */
-	static readonly LIST_DESIGN_REVIEWS = "securityagent:ListDesignReviews";
+	static readonly ListDesignReviews = "securityagent:ListDesignReviews";
 	/** [List] securityagent:ListDiscoveredEndpoints */
-	static readonly LIST_DISCOVERED_ENDPOINTS =
+	static readonly ListDiscoveredEndpoints =
 		"securityagent:ListDiscoveredEndpoints";
 	/** [List] securityagent:ListFindings */
-	static readonly LIST_FINDINGS = "securityagent:ListFindings";
+	static readonly ListFindings = "securityagent:ListFindings";
 	/** [List] securityagent:ListIntegratedResources */
-	static readonly LIST_INTEGRATED_RESOURCES =
+	static readonly ListIntegratedResources =
 		"securityagent:ListIntegratedResources";
 	/** [List] securityagent:ListIntegrations */
-	static readonly LIST_INTEGRATIONS = "securityagent:ListIntegrations";
+	static readonly ListIntegrations = "securityagent:ListIntegrations";
 	/** [List] securityagent:ListMemberships */
-	static readonly LIST_MEMBERSHIPS = "securityagent:ListMemberships";
+	static readonly ListMemberships = "securityagent:ListMemberships";
 	/** [List] securityagent:ListPentestJobTasks */
-	static readonly LIST_PENTEST_JOB_TASKS = "securityagent:ListPentestJobTasks";
+	static readonly ListPentestJobTasks = "securityagent:ListPentestJobTasks";
 	/** [List] securityagent:ListPentestJobsForPentest */
-	static readonly LIST_PENTEST_JOBS_FOR_PENTEST =
+	static readonly ListPentestJobsForPentest =
 		"securityagent:ListPentestJobsForPentest";
 	/** [List] securityagent:ListPentests */
-	static readonly LIST_PENTESTS = "securityagent:ListPentests";
+	static readonly ListPentests = "securityagent:ListPentests";
 	/** [List] securityagent:ListPrivateConnections */
-	static readonly LIST_PRIVATE_CONNECTIONS =
+	static readonly ListPrivateConnections =
 		"securityagent:ListPrivateConnections";
 	/** [List] securityagent:ListResourcesFromIntegration */
-	static readonly LIST_RESOURCES_FROM_INTEGRATION =
+	static readonly ListResourcesFromIntegration =
 		"securityagent:ListResourcesFromIntegration";
 	/** [List] securityagent:ListSecurityRequirementPacks */
-	static readonly LIST_SECURITY_REQUIREMENT_PACKS =
+	static readonly ListSecurityRequirementPacks =
 		"securityagent:ListSecurityRequirementPacks";
 	/** [List] securityagent:ListSecurityRequirements */
-	static readonly LIST_SECURITY_REQUIREMENTS =
+	static readonly ListSecurityRequirements =
 		"securityagent:ListSecurityRequirements";
 	/** [Read] securityagent:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "securityagent:ListTagsForResource";
+	static readonly ListTagsForResource = "securityagent:ListTagsForResource";
 	/** [List] securityagent:ListTargetDomains */
-	static readonly LIST_TARGET_DOMAINS = "securityagent:ListTargetDomains";
+	static readonly ListTargetDomains = "securityagent:ListTargetDomains";
 	/** [List] securityagent:ListThreatModelJobTasks */
-	static readonly LIST_THREAT_MODEL_JOB_TASKS =
+	static readonly ListThreatModelJobTasks =
 		"securityagent:ListThreatModelJobTasks";
 	/** [List] securityagent:ListThreatModelJobs */
-	static readonly LIST_THREAT_MODEL_JOBS = "securityagent:ListThreatModelJobs";
+	static readonly ListThreatModelJobs = "securityagent:ListThreatModelJobs";
 	/** [List] securityagent:ListThreatModels */
-	static readonly LIST_THREAT_MODELS = "securityagent:ListThreatModels";
+	static readonly ListThreatModels = "securityagent:ListThreatModels";
 	/** [List] securityagent:ListThreats */
-	static readonly LIST_THREATS = "securityagent:ListThreats";
+	static readonly ListThreats = "securityagent:ListThreats";
 	/** [Write] securityagent:PutDesignReviewFeedback */
-	static readonly PUT_DESIGN_REVIEW_FEEDBACK =
+	static readonly PutDesignReviewFeedback =
 		"securityagent:PutDesignReviewFeedback";
 	/** [Write] securityagent:StartCodeRemediation */
-	static readonly START_CODE_REMEDIATION = "securityagent:StartCodeRemediation";
+	static readonly StartCodeRemediation = "securityagent:StartCodeRemediation";
 	/** [Write] securityagent:StartCodeReviewJob */
-	static readonly START_CODE_REVIEW_JOB = "securityagent:StartCodeReviewJob";
+	static readonly StartCodeReviewJob = "securityagent:StartCodeReviewJob";
 	/** [Write] securityagent:StartPentestJob */
-	static readonly START_PENTEST_JOB = "securityagent:StartPentestJob";
+	static readonly StartPentestJob = "securityagent:StartPentestJob";
 	/** [Write] securityagent:StartThreatModelJob */
-	static readonly START_THREAT_MODEL_JOB = "securityagent:StartThreatModelJob";
+	static readonly StartThreatModelJob = "securityagent:StartThreatModelJob";
 	/** [Write] securityagent:StopCodeReviewJob */
-	static readonly STOP_CODE_REVIEW_JOB = "securityagent:StopCodeReviewJob";
+	static readonly StopCodeReviewJob = "securityagent:StopCodeReviewJob";
 	/** [Write] securityagent:StopPentestJob */
-	static readonly STOP_PENTEST_JOB = "securityagent:StopPentestJob";
+	static readonly StopPentestJob = "securityagent:StopPentestJob";
 	/** [Write] securityagent:StopThreatModelJob */
-	static readonly STOP_THREAT_MODEL_JOB = "securityagent:StopThreatModelJob";
+	static readonly StopThreatModelJob = "securityagent:StopThreatModelJob";
 	/** [Tagging] securityagent:TagResource */
-	static readonly TAG_RESOURCE = "securityagent:TagResource";
+	static readonly TagResource = "securityagent:TagResource";
 	/** [Write] securityagent:ToggleManagedSecurityRequirement */
-	static readonly TOGGLE_MANAGED_SECURITY_REQUIREMENT =
+	static readonly ToggleManagedSecurityRequirement =
 		"securityagent:ToggleManagedSecurityRequirement";
 	/** [Tagging] securityagent:UntagResource */
-	static readonly UNTAG_RESOURCE = "securityagent:UntagResource";
+	static readonly UntagResource = "securityagent:UntagResource";
 	/** [Write] securityagent:UpdateAgentSpace */
-	static readonly UPDATE_AGENT_SPACE = "securityagent:UpdateAgentSpace";
+	static readonly UpdateAgentSpace = "securityagent:UpdateAgentSpace";
 	/** [Write] securityagent:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "securityagent:UpdateApplication";
+	static readonly UpdateApplication = "securityagent:UpdateApplication";
 	/** [Write] securityagent:UpdateCodeReview */
-	static readonly UPDATE_CODE_REVIEW = "securityagent:UpdateCodeReview";
+	static readonly UpdateCodeReview = "securityagent:UpdateCodeReview";
 	/** [Write] securityagent:UpdateFinding */
-	static readonly UPDATE_FINDING = "securityagent:UpdateFinding";
+	static readonly UpdateFinding = "securityagent:UpdateFinding";
 	/** [Write] securityagent:UpdateIntegratedResources */
-	static readonly UPDATE_INTEGRATED_RESOURCES =
+	static readonly UpdateIntegratedResources =
 		"securityagent:UpdateIntegratedResources";
 	/** [Write] securityagent:UpdatePentest */
-	static readonly UPDATE_PENTEST = "securityagent:UpdatePentest";
+	static readonly UpdatePentest = "securityagent:UpdatePentest";
 	/** [Write] securityagent:UpdatePrivateConnectionCertificate */
-	static readonly UPDATE_PRIVATE_CONNECTION_CERTIFICATE =
+	static readonly UpdatePrivateConnectionCertificate =
 		"securityagent:UpdatePrivateConnectionCertificate";
 	/** [Write] securityagent:UpdateSecurityRequirement */
-	static readonly UPDATE_SECURITY_REQUIREMENT =
+	static readonly UpdateSecurityRequirement =
 		"securityagent:UpdateSecurityRequirement";
 	/** [Write] securityagent:UpdateSecurityRequirementPack */
-	static readonly UPDATE_SECURITY_REQUIREMENT_PACK =
+	static readonly UpdateSecurityRequirementPack =
 		"securityagent:UpdateSecurityRequirementPack";
 	/** [Write] securityagent:UpdateTargetDomain */
-	static readonly UPDATE_TARGET_DOMAIN = "securityagent:UpdateTargetDomain";
+	static readonly UpdateTargetDomain = "securityagent:UpdateTargetDomain";
 	/** [Write] securityagent:UpdateThreat */
-	static readonly UPDATE_THREAT = "securityagent:UpdateThreat";
+	static readonly UpdateThreat = "securityagent:UpdateThreat";
 	/** [Write] securityagent:UpdateThreatModel */
-	static readonly UPDATE_THREAT_MODEL = "securityagent:UpdateThreatModel";
+	static readonly UpdateThreatModel = "securityagent:UpdateThreatModel";
 	/** [Write] securityagent:VerifyTargetDomain */
-	static readonly VERIFY_TARGET_DOMAIN = "securityagent:VerifyTargetDomain";
+	static readonly VerifyTargetDomain = "securityagent:VerifyTargetDomain";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SecurityagentActions.BATCH_GET_AGENT_SPACES,
-		SecurityagentActions.BATCH_GET_ARTIFACT_METADATA,
-		SecurityagentActions.BATCH_GET_CODE_REVIEW_JOB_TASKS,
-		SecurityagentActions.BATCH_GET_CODE_REVIEW_JOBS,
-		SecurityagentActions.BATCH_GET_CODE_REVIEWS,
-		SecurityagentActions.BATCH_GET_FINDINGS,
-		SecurityagentActions.BATCH_GET_PENTEST_JOB_CONTENT_METADATA,
-		SecurityagentActions.BATCH_GET_PENTEST_JOB_TASKS,
-		SecurityagentActions.BATCH_GET_PENTEST_JOBS,
-		SecurityagentActions.BATCH_GET_PENTESTS,
-		SecurityagentActions.BATCH_GET_SECURITY_REQUIREMENTS,
-		SecurityagentActions.BATCH_GET_TARGET_DOMAINS,
-		SecurityagentActions.BATCH_GET_THREAT_MODEL_JOB_TASKS,
-		SecurityagentActions.BATCH_GET_THREAT_MODEL_JOBS,
-		SecurityagentActions.BATCH_GET_THREAT_MODELS,
-		SecurityagentActions.BATCH_GET_THREATS,
-		SecurityagentActions.DESCRIBE_PRIVATE_CONNECTION,
-		SecurityagentActions.GET_APPLICATION,
-		SecurityagentActions.GET_ARTIFACT,
-		SecurityagentActions.GET_DESIGN_REVIEW,
-		SecurityagentActions.GET_DESIGN_REVIEW_ARTIFACT,
-		SecurityagentActions.GET_DESIGN_REVIEW_FEEDBACK,
-		SecurityagentActions.GET_INTEGRATION,
-		SecurityagentActions.GET_PROVIDER_REGISTRATION_MANIFEST,
-		SecurityagentActions.GET_SECURITY_REQUIREMENT,
-		SecurityagentActions.GET_SECURITY_REQUIREMENT_PACK,
-		SecurityagentActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		SecurityagentActions.BatchGetAgentSpaces,
+		SecurityagentActions.BatchGetArtifactMetadata,
+		SecurityagentActions.BatchGetCodeReviewJobTasks,
+		SecurityagentActions.BatchGetCodeReviewJobs,
+		SecurityagentActions.BatchGetCodeReviews,
+		SecurityagentActions.BatchGetFindings,
+		SecurityagentActions.BatchGetPentestJobContentMetadata,
+		SecurityagentActions.BatchGetPentestJobTasks,
+		SecurityagentActions.BatchGetPentestJobs,
+		SecurityagentActions.BatchGetPentests,
+		SecurityagentActions.BatchGetSecurityRequirements,
+		SecurityagentActions.BatchGetTargetDomains,
+		SecurityagentActions.BatchGetThreatModelJobTasks,
+		SecurityagentActions.BatchGetThreatModelJobs,
+		SecurityagentActions.BatchGetThreatModels,
+		SecurityagentActions.BatchGetThreats,
+		SecurityagentActions.DescribePrivateConnection,
+		SecurityagentActions.actionGetApplication,
+		SecurityagentActions.actionGetArtifact,
+		SecurityagentActions.actionGetDesignReview,
+		SecurityagentActions.actionGetDesignReviewArtifact,
+		SecurityagentActions.actionGetDesignReviewFeedback,
+		SecurityagentActions.actionGetIntegration,
+		SecurityagentActions.actionGetProviderRegistrationManifest,
+		SecurityagentActions.actionGetSecurityRequirement,
+		SecurityagentActions.actionGetSecurityRequirementPack,
+		SecurityagentActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SecurityagentActions.ADD_ARTIFACT,
-		SecurityagentActions.BATCH_CREATE_SECURITY_REQUIREMENTS,
-		SecurityagentActions.BATCH_DELETE_CODE_REVIEWS,
-		SecurityagentActions.BATCH_DELETE_PENTESTS,
-		SecurityagentActions.BATCH_DELETE_SECURITY_REQUIREMENTS,
-		SecurityagentActions.BATCH_DELETE_THREAT_MODELS,
-		SecurityagentActions.BATCH_DELETE_THREATS,
-		SecurityagentActions.BATCH_UPDATE_SECURITY_REQUIREMENTS,
-		SecurityagentActions.CREATE_AGENT_SPACE,
-		SecurityagentActions.CREATE_APPLICATION,
-		SecurityagentActions.CREATE_CODE_REVIEW,
-		SecurityagentActions.CREATE_DESIGN_REVIEW,
-		SecurityagentActions.CREATE_INTEGRATION,
-		SecurityagentActions.CREATE_MEMBERSHIP,
-		SecurityagentActions.CREATE_ONE_TIME_LOGIN_SESSION,
-		SecurityagentActions.CREATE_PENTEST,
-		SecurityagentActions.CREATE_PRIVATE_CONNECTION,
-		SecurityagentActions.CREATE_SECURITY_REQUIREMENT,
-		SecurityagentActions.CREATE_SECURITY_REQUIREMENT_PACK,
-		SecurityagentActions.CREATE_TARGET_DOMAIN,
-		SecurityagentActions.CREATE_THREAT,
-		SecurityagentActions.CREATE_THREAT_MODEL,
-		SecurityagentActions.DELETE_AGENT_SPACE,
-		SecurityagentActions.DELETE_APPLICATION,
-		SecurityagentActions.DELETE_ARTIFACT,
-		SecurityagentActions.DELETE_DESIGN_REVIEW,
-		SecurityagentActions.DELETE_INTEGRATION,
-		SecurityagentActions.DELETE_MEMBERSHIP,
-		SecurityagentActions.DELETE_PRIVATE_CONNECTION,
-		SecurityagentActions.DELETE_SECURITY_REQUIREMENT,
-		SecurityagentActions.DELETE_SECURITY_REQUIREMENT_PACK,
-		SecurityagentActions.DELETE_TARGET_DOMAIN,
-		SecurityagentActions.HANDLE_PROVIDER_REGISTRATION_CALLBACK,
-		SecurityagentActions.IMPORT_SECURITY_REQUIREMENTS,
-		SecurityagentActions.INITIATE_PROVIDER_REGISTRATION,
-		SecurityagentActions.PUT_DESIGN_REVIEW_FEEDBACK,
-		SecurityagentActions.START_CODE_REMEDIATION,
-		SecurityagentActions.START_CODE_REVIEW_JOB,
-		SecurityagentActions.START_PENTEST_JOB,
-		SecurityagentActions.START_THREAT_MODEL_JOB,
-		SecurityagentActions.STOP_CODE_REVIEW_JOB,
-		SecurityagentActions.STOP_PENTEST_JOB,
-		SecurityagentActions.STOP_THREAT_MODEL_JOB,
-		SecurityagentActions.TOGGLE_MANAGED_SECURITY_REQUIREMENT,
-		SecurityagentActions.UPDATE_AGENT_SPACE,
-		SecurityagentActions.UPDATE_APPLICATION,
-		SecurityagentActions.UPDATE_CODE_REVIEW,
-		SecurityagentActions.UPDATE_FINDING,
-		SecurityagentActions.UPDATE_INTEGRATED_RESOURCES,
-		SecurityagentActions.UPDATE_PENTEST,
-		SecurityagentActions.UPDATE_PRIVATE_CONNECTION_CERTIFICATE,
-		SecurityagentActions.UPDATE_SECURITY_REQUIREMENT,
-		SecurityagentActions.UPDATE_SECURITY_REQUIREMENT_PACK,
-		SecurityagentActions.UPDATE_TARGET_DOMAIN,
-		SecurityagentActions.UPDATE_THREAT,
-		SecurityagentActions.UPDATE_THREAT_MODEL,
-		SecurityagentActions.VERIFY_TARGET_DOMAIN,
+	static readonly AllWriteActions: string[] = [
+		SecurityagentActions.AddArtifact,
+		SecurityagentActions.BatchCreateSecurityRequirements,
+		SecurityagentActions.BatchDeleteCodeReviews,
+		SecurityagentActions.BatchDeletePentests,
+		SecurityagentActions.BatchDeleteSecurityRequirements,
+		SecurityagentActions.BatchDeleteThreatModels,
+		SecurityagentActions.BatchDeleteThreats,
+		SecurityagentActions.BatchUpdateSecurityRequirements,
+		SecurityagentActions.CreateAgentSpace,
+		SecurityagentActions.CreateApplication,
+		SecurityagentActions.CreateCodeReview,
+		SecurityagentActions.CreateDesignReview,
+		SecurityagentActions.CreateIntegration,
+		SecurityagentActions.CreateMembership,
+		SecurityagentActions.CreateOneTimeLoginSession,
+		SecurityagentActions.CreatePentest,
+		SecurityagentActions.CreatePrivateConnection,
+		SecurityagentActions.CreateSecurityRequirement,
+		SecurityagentActions.CreateSecurityRequirementPack,
+		SecurityagentActions.CreateTargetDomain,
+		SecurityagentActions.CreateThreat,
+		SecurityagentActions.CreateThreatModel,
+		SecurityagentActions.DeleteAgentSpace,
+		SecurityagentActions.DeleteApplication,
+		SecurityagentActions.DeleteArtifact,
+		SecurityagentActions.DeleteDesignReview,
+		SecurityagentActions.DeleteIntegration,
+		SecurityagentActions.DeleteMembership,
+		SecurityagentActions.DeletePrivateConnection,
+		SecurityagentActions.DeleteSecurityRequirement,
+		SecurityagentActions.DeleteSecurityRequirementPack,
+		SecurityagentActions.DeleteTargetDomain,
+		SecurityagentActions.HandleProviderRegistrationCallback,
+		SecurityagentActions.ImportSecurityRequirements,
+		SecurityagentActions.InitiateProviderRegistration,
+		SecurityagentActions.PutDesignReviewFeedback,
+		SecurityagentActions.StartCodeRemediation,
+		SecurityagentActions.StartCodeReviewJob,
+		SecurityagentActions.StartPentestJob,
+		SecurityagentActions.StartThreatModelJob,
+		SecurityagentActions.StopCodeReviewJob,
+		SecurityagentActions.StopPentestJob,
+		SecurityagentActions.StopThreatModelJob,
+		SecurityagentActions.ToggleManagedSecurityRequirement,
+		SecurityagentActions.UpdateAgentSpace,
+		SecurityagentActions.UpdateApplication,
+		SecurityagentActions.UpdateCodeReview,
+		SecurityagentActions.UpdateFinding,
+		SecurityagentActions.UpdateIntegratedResources,
+		SecurityagentActions.UpdatePentest,
+		SecurityagentActions.UpdatePrivateConnectionCertificate,
+		SecurityagentActions.UpdateSecurityRequirement,
+		SecurityagentActions.UpdateSecurityRequirementPack,
+		SecurityagentActions.UpdateTargetDomain,
+		SecurityagentActions.UpdateThreat,
+		SecurityagentActions.UpdateThreatModel,
+		SecurityagentActions.VerifyTargetDomain,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SecurityagentActions.LIST_AGENT_SPACES,
-		SecurityagentActions.LIST_APPLICATIONS,
-		SecurityagentActions.LIST_ARTIFACTS,
-		SecurityagentActions.LIST_CODE_REVIEW_JOB_TASKS,
-		SecurityagentActions.LIST_CODE_REVIEW_JOBS_FOR_CODE_REVIEW,
-		SecurityagentActions.LIST_CODE_REVIEWS,
-		SecurityagentActions.LIST_DESIGN_REVIEW_COMMENTS,
-		SecurityagentActions.LIST_DESIGN_REVIEWS,
-		SecurityagentActions.LIST_DISCOVERED_ENDPOINTS,
-		SecurityagentActions.LIST_FINDINGS,
-		SecurityagentActions.LIST_INTEGRATED_RESOURCES,
-		SecurityagentActions.LIST_INTEGRATIONS,
-		SecurityagentActions.LIST_MEMBERSHIPS,
-		SecurityagentActions.LIST_PENTEST_JOB_TASKS,
-		SecurityagentActions.LIST_PENTEST_JOBS_FOR_PENTEST,
-		SecurityagentActions.LIST_PENTESTS,
-		SecurityagentActions.LIST_PRIVATE_CONNECTIONS,
-		SecurityagentActions.LIST_RESOURCES_FROM_INTEGRATION,
-		SecurityagentActions.LIST_SECURITY_REQUIREMENT_PACKS,
-		SecurityagentActions.LIST_SECURITY_REQUIREMENTS,
-		SecurityagentActions.LIST_TARGET_DOMAINS,
-		SecurityagentActions.LIST_THREAT_MODEL_JOB_TASKS,
-		SecurityagentActions.LIST_THREAT_MODEL_JOBS,
-		SecurityagentActions.LIST_THREAT_MODELS,
-		SecurityagentActions.LIST_THREATS,
+	static readonly AllListActions: string[] = [
+		SecurityagentActions.ListAgentSpaces,
+		SecurityagentActions.ListApplications,
+		SecurityagentActions.ListArtifacts,
+		SecurityagentActions.ListCodeReviewJobTasks,
+		SecurityagentActions.ListCodeReviewJobsForCodeReview,
+		SecurityagentActions.ListCodeReviews,
+		SecurityagentActions.ListDesignReviewComments,
+		SecurityagentActions.ListDesignReviews,
+		SecurityagentActions.ListDiscoveredEndpoints,
+		SecurityagentActions.ListFindings,
+		SecurityagentActions.ListIntegratedResources,
+		SecurityagentActions.ListIntegrations,
+		SecurityagentActions.ListMemberships,
+		SecurityagentActions.ListPentestJobTasks,
+		SecurityagentActions.ListPentestJobsForPentest,
+		SecurityagentActions.ListPentests,
+		SecurityagentActions.ListPrivateConnections,
+		SecurityagentActions.ListResourcesFromIntegration,
+		SecurityagentActions.ListSecurityRequirementPacks,
+		SecurityagentActions.ListSecurityRequirements,
+		SecurityagentActions.ListTargetDomains,
+		SecurityagentActions.ListThreatModelJobTasks,
+		SecurityagentActions.ListThreatModelJobs,
+		SecurityagentActions.ListThreatModels,
+		SecurityagentActions.ListThreats,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SecurityagentActions.TAG_RESOURCE,
-		SecurityagentActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SecurityagentActions.TagResource,
+		SecurityagentActions.UntagResource,
 	];
 }
 
-const AgentSpaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):agent-space/(?<agentId>[^:/?]+)$",
-);
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const IntegrationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):integration/(?<integrationId>[^:/?]+)$",
-);
-const PrivateConnectionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):private-connection/(?<privateConnectionName>[^:/?]+)$",
-);
-const SecurityRequirementPackArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):security-requirement-pack/(?<securityRequirementPackId>[^:/?]+)$",
-);
-const TargetDomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):target-domain/(?<targetDomainId>[^:/?]+)$",
-);
+/**
+ * Properties for building a AgentSpace ARN.
+ */
+export interface SecurityagentAgentSpaceArnProps {
+	/** The AgentId component of the ARN. */
+	readonly agentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AgentSpace ARN.
+ */
+export interface SecurityagentAgentSpaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentId component. */
+	readonly agentId: string;
+}
+
+/**
+ * Properties for building a Application ARN.
+ */
+export interface SecurityagentApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Application ARN.
+ */
+export interface SecurityagentApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a Integration ARN.
+ */
+export interface SecurityagentIntegrationArnProps {
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Integration ARN.
+ */
+export interface SecurityagentIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a PrivateConnection ARN.
+ */
+export interface SecurityagentPrivateConnectionArnProps {
+	/** The PrivateConnectionName component of the ARN. */
+	readonly privateConnectionName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PrivateConnection ARN.
+ */
+export interface SecurityagentPrivateConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PrivateConnectionName component. */
+	readonly privateConnectionName: string;
+}
+
+/**
+ * Properties for building a SecurityRequirementPack ARN.
+ */
+export interface SecurityagentSecurityRequirementPackArnProps {
+	/** The SecurityRequirementPackId component of the ARN. */
+	readonly securityRequirementPackId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SecurityRequirementPack ARN.
+ */
+export interface SecurityagentSecurityRequirementPackArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SecurityRequirementPackId component. */
+	readonly securityRequirementPackId: string;
+}
+
+/**
+ * Properties for building a TargetDomain ARN.
+ */
+export interface SecurityagentTargetDomainArnProps {
+	/** The TargetDomainId component of the ARN. */
+	readonly targetDomainId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TargetDomain ARN.
+ */
+export interface SecurityagentTargetDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TargetDomainId component. */
+	readonly targetDomainId: string;
+}
+
+const AgentSpaceArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):agent-space\/(?<agentId>[^:/?]+)$/;
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const IntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):integration\/(?<integrationId>[^:/?]+)$/;
+const PrivateConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):private-connection\/(?<privateConnectionName>[^:/?]+)$/;
+const SecurityRequirementPackArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):security-requirement-pack\/(?<securityRequirementPackId>[^:/?]+)$/;
+const TargetDomainArnRegex =
+	/^arn:(?<partition>[^:]+):securityagent:(?<region>[^:]*):(?<account>[^:]*):target-domain\/(?<targetDomainId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for securityagent resources.
@@ -436,16 +596,7 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the AgentSpace resource.
 	 */
-	static agentSpace(props: {
-		/** The AgentId component of the ARN. */
-		readonly agentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agentSpace(props: SecurityagentAgentSpaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:agent-space/${props.agentId}`;
 	}
 
@@ -460,12 +611,7 @@ export class SecurityagentResources {
 	 * Parses a AgentSpace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentSpaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentId: string;
-	} {
+	static parseAgentSpaceArn(arn: string): SecurityagentAgentSpaceArnComponents {
 		const match = AgentSpaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AgentSpace ARN: ${arn}`);
@@ -481,16 +627,7 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the Application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: SecurityagentApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -505,12 +642,9 @@ export class SecurityagentResources {
 	 * Parses a Application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): SecurityagentApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Application ARN: ${arn}`);
@@ -526,16 +660,7 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the Integration resource.
 	 */
-	static integration(props: {
-		/** The IntegrationId component of the ARN. */
-		readonly integrationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static integration(props: SecurityagentIntegrationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:integration/${props.integrationId}`;
 	}
 
@@ -550,12 +675,9 @@ export class SecurityagentResources {
 	 * Parses a Integration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntegrationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		integrationId: string;
-	} {
+	static parseIntegrationArn(
+		arn: string,
+	): SecurityagentIntegrationArnComponents {
 		const match = IntegrationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Integration ARN: ${arn}`);
@@ -571,16 +693,9 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the PrivateConnection resource.
 	 */
-	static privateConnection(props: {
-		/** The PrivateConnectionName component of the ARN. */
-		readonly privateConnectionName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privateConnection(
+		props: SecurityagentPrivateConnectionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:private-connection/${props.privateConnectionName}`;
 	}
 
@@ -595,12 +710,9 @@ export class SecurityagentResources {
 	 * Parses a PrivateConnection ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivateConnectionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		privateConnectionName: string;
-	} {
+	static parsePrivateConnectionArn(
+		arn: string,
+	): SecurityagentPrivateConnectionArnComponents {
 		const match = PrivateConnectionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PrivateConnection ARN: ${arn}`);
@@ -616,16 +728,9 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the SecurityRequirementPack resource.
 	 */
-	static securityRequirementPack(props: {
-		/** The SecurityRequirementPackId component of the ARN. */
-		readonly securityRequirementPackId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securityRequirementPack(
+		props: SecurityagentSecurityRequirementPackArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:security-requirement-pack/${props.securityRequirementPackId}`;
 	}
 
@@ -640,12 +745,9 @@ export class SecurityagentResources {
 	 * Parses a SecurityRequirementPack ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecurityRequirementPackArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		securityRequirementPackId: string;
-	} {
+	static parseSecurityRequirementPackArn(
+		arn: string,
+	): SecurityagentSecurityRequirementPackArnComponents {
 		const match = SecurityRequirementPackArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SecurityRequirementPack ARN: ${arn}`);
@@ -661,16 +763,7 @@ export class SecurityagentResources {
 	/**
 	 * Builds an ARN for the TargetDomain resource.
 	 */
-	static targetDomain(props: {
-		/** The TargetDomainId component of the ARN. */
-		readonly targetDomainId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static targetDomain(props: SecurityagentTargetDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:securityagent:${props.region ?? "*"}:${props.account ?? "*"}:target-domain/${props.targetDomainId}`;
 	}
 
@@ -685,12 +778,9 @@ export class SecurityagentResources {
 	 * Parses a TargetDomain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTargetDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		targetDomainId: string;
-	} {
+	static parseTargetDomainArn(
+		arn: string,
+	): SecurityagentTargetDomainArnComponents {
 		const match = TargetDomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TargetDomain ARN: ${arn}`);
@@ -709,347 +799,337 @@ export class SecurityagentResources {
  */
 export class SecurityagentOperations {
 	/** IAM actions required for the AddArtifact API call. */
-	static readonly ADD_ARTIFACT: string[] = ["securityagent:AddArtifact"];
+	static readonly AddArtifact: string[] = ["securityagent:AddArtifact"];
 	/** IAM actions required for the BatchCreateSecurityRequirements API call. */
-	static readonly BATCH_CREATE_SECURITY_REQUIREMENTS: string[] = [
+	static readonly BatchCreateSecurityRequirements: string[] = [
 		"securityagent:BatchCreateSecurityRequirements",
 	];
 	/** IAM actions required for the BatchDeleteCodeReviews API call. */
-	static readonly BATCH_DELETE_CODE_REVIEWS: string[] = [
+	static readonly BatchDeleteCodeReviews: string[] = [
 		"securityagent:BatchDeleteCodeReviews",
 	];
 	/** IAM actions required for the BatchDeletePentests API call. */
-	static readonly BATCH_DELETE_PENTESTS: string[] = [
+	static readonly BatchDeletePentests: string[] = [
 		"securityagent:BatchDeletePentests",
 	];
 	/** IAM actions required for the BatchDeleteSecurityRequirements API call. */
-	static readonly BATCH_DELETE_SECURITY_REQUIREMENTS: string[] = [
+	static readonly BatchDeleteSecurityRequirements: string[] = [
 		"securityagent:BatchDeleteSecurityRequirements",
 	];
 	/** IAM actions required for the BatchDeleteThreatModels API call. */
-	static readonly BATCH_DELETE_THREAT_MODELS: string[] = [
+	static readonly BatchDeleteThreatModels: string[] = [
 		"securityagent:BatchDeleteThreatModels",
 	];
 	/** IAM actions required for the BatchGetAgentSpaces API call. */
-	static readonly BATCH_GET_AGENT_SPACES: string[] = [
+	static readonly BatchGetAgentSpaces: string[] = [
 		"securityagent:BatchGetAgentSpaces",
 	];
 	/** IAM actions required for the BatchGetArtifactMetadata API call. */
-	static readonly BATCH_GET_ARTIFACT_METADATA: string[] = [
+	static readonly BatchGetArtifactMetadata: string[] = [
 		"securityagent:BatchGetArtifactMetadata",
 	];
 	/** IAM actions required for the BatchGetCodeReviewJobTasks API call. */
-	static readonly BATCH_GET_CODE_REVIEW_JOB_TASKS: string[] = [
+	static readonly BatchGetCodeReviewJobTasks: string[] = [
 		"securityagent:BatchGetCodeReviewJobTasks",
 	];
 	/** IAM actions required for the BatchGetCodeReviewJobs API call. */
-	static readonly BATCH_GET_CODE_REVIEW_JOBS: string[] = [
+	static readonly BatchGetCodeReviewJobs: string[] = [
 		"securityagent:BatchGetCodeReviewJobs",
 	];
 	/** IAM actions required for the BatchGetCodeReviews API call. */
-	static readonly BATCH_GET_CODE_REVIEWS: string[] = [
+	static readonly BatchGetCodeReviews: string[] = [
 		"securityagent:BatchGetCodeReviews",
 	];
 	/** IAM actions required for the BatchGetFindings API call. */
-	static readonly BATCH_GET_FINDINGS: string[] = [
+	static readonly BatchGetFindings: string[] = [
 		"securityagent:BatchGetFindings",
 	];
 	/** IAM actions required for the BatchGetPentestJobTasks API call. */
-	static readonly BATCH_GET_PENTEST_JOB_TASKS: string[] = [
+	static readonly BatchGetPentestJobTasks: string[] = [
 		"securityagent:BatchGetPentestJobTasks",
 	];
 	/** IAM actions required for the BatchGetPentestJobs API call. */
-	static readonly BATCH_GET_PENTEST_JOBS: string[] = [
+	static readonly BatchGetPentestJobs: string[] = [
 		"securityagent:BatchGetPentestJobs",
 	];
 	/** IAM actions required for the BatchGetPentests API call. */
-	static readonly BATCH_GET_PENTESTS: string[] = [
+	static readonly BatchGetPentests: string[] = [
 		"securityagent:BatchGetPentests",
 	];
 	/** IAM actions required for the BatchGetSecurityRequirements API call. */
-	static readonly BATCH_GET_SECURITY_REQUIREMENTS: string[] = [
+	static readonly BatchGetSecurityRequirements: string[] = [
 		"securityagent:BatchGetSecurityRequirements",
 	];
 	/** IAM actions required for the BatchGetTargetDomains API call. */
-	static readonly BATCH_GET_TARGET_DOMAINS: string[] = [
+	static readonly BatchGetTargetDomains: string[] = [
 		"securityagent:BatchGetTargetDomains",
 	];
 	/** IAM actions required for the BatchGetThreatModelJobTasks API call. */
-	static readonly BATCH_GET_THREAT_MODEL_JOB_TASKS: string[] = [
+	static readonly BatchGetThreatModelJobTasks: string[] = [
 		"securityagent:BatchGetThreatModelJobTasks",
 	];
 	/** IAM actions required for the BatchGetThreatModelJobs API call. */
-	static readonly BATCH_GET_THREAT_MODEL_JOBS: string[] = [
+	static readonly BatchGetThreatModelJobs: string[] = [
 		"securityagent:BatchGetThreatModelJobs",
 	];
 	/** IAM actions required for the BatchGetThreatModels API call. */
-	static readonly BATCH_GET_THREAT_MODELS: string[] = [
+	static readonly BatchGetThreatModels: string[] = [
 		"securityagent:BatchGetThreatModels",
 	];
 	/** IAM actions required for the BatchGetThreats API call. */
-	static readonly BATCH_GET_THREATS: string[] = [
-		"securityagent:BatchGetThreats",
-	];
+	static readonly BatchGetThreats: string[] = ["securityagent:BatchGetThreats"];
 	/** IAM actions required for the BatchUpdateSecurityRequirements API call. */
-	static readonly BATCH_UPDATE_SECURITY_REQUIREMENTS: string[] = [
+	static readonly BatchUpdateSecurityRequirements: string[] = [
 		"securityagent:BatchUpdateSecurityRequirements",
 	];
 	/** IAM actions required for the CreateAgentSpace API call. */
-	static readonly CREATE_AGENT_SPACE: string[] = [
+	static readonly CreateAgentSpace: string[] = [
 		"securityagent:CreateAgentSpace",
 		"iam:PassRole",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"securityagent:CreateApplication",
 		"iam:PassRole",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateCodeReview API call. */
-	static readonly CREATE_CODE_REVIEW: string[] = [
+	static readonly CreateCodeReview: string[] = [
 		"securityagent:CreateCodeReview",
 	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CREATE_INTEGRATION: string[] = [
+	static readonly CreateIntegration: string[] = [
 		"securityagent:CreateIntegration",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateMembership API call. */
-	static readonly CREATE_MEMBERSHIP: string[] = [
+	static readonly CreateMembership: string[] = [
 		"securityagent:CreateMembership",
 	];
 	/** IAM actions required for the CreatePentest API call. */
-	static readonly CREATE_PENTEST: string[] = ["securityagent:CreatePentest"];
+	static readonly CreatePentest: string[] = ["securityagent:CreatePentest"];
 	/** IAM actions required for the CreatePrivateConnection API call. */
-	static readonly CREATE_PRIVATE_CONNECTION: string[] = [
+	static readonly CreatePrivateConnection: string[] = [
 		"securityagent:CreatePrivateConnection",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateSecurityRequirementPack API call. */
-	static readonly CREATE_SECURITY_REQUIREMENT_PACK: string[] = [
+	static readonly CreateSecurityRequirementPack: string[] = [
 		"securityagent:CreateSecurityRequirementPack",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateTargetDomain API call. */
-	static readonly CREATE_TARGET_DOMAIN: string[] = [
+	static readonly CreateTargetDomain: string[] = [
 		"securityagent:CreateTargetDomain",
 		"securityagent:TagResource",
 	];
 	/** IAM actions required for the CreateThreat API call. */
-	static readonly CREATE_THREAT: string[] = ["securityagent:CreateThreat"];
+	static readonly CreateThreat: string[] = ["securityagent:CreateThreat"];
 	/** IAM actions required for the CreateThreatModel API call. */
-	static readonly CREATE_THREAT_MODEL: string[] = [
+	static readonly CreateThreatModel: string[] = [
 		"securityagent:CreateThreatModel",
 	];
 	/** IAM actions required for the DeleteAgentSpace API call. */
-	static readonly DELETE_AGENT_SPACE: string[] = [
+	static readonly DeleteAgentSpace: string[] = [
 		"securityagent:DeleteAgentSpace",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"securityagent:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteArtifact API call. */
-	static readonly DELETE_ARTIFACT: string[] = ["securityagent:DeleteArtifact"];
+	static readonly DeleteArtifact: string[] = ["securityagent:DeleteArtifact"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DELETE_INTEGRATION: string[] = [
+	static readonly DeleteIntegration: string[] = [
 		"securityagent:DeleteIntegration",
 	];
 	/** IAM actions required for the DeleteMembership API call. */
-	static readonly DELETE_MEMBERSHIP: string[] = [
+	static readonly DeleteMembership: string[] = [
 		"securityagent:DeleteMembership",
 	];
 	/** IAM actions required for the DeletePrivateConnection API call. */
-	static readonly DELETE_PRIVATE_CONNECTION: string[] = [
+	static readonly DeletePrivateConnection: string[] = [
 		"securityagent:DeletePrivateConnection",
 	];
 	/** IAM actions required for the DeleteSecurityRequirementPack API call. */
-	static readonly DELETE_SECURITY_REQUIREMENT_PACK: string[] = [
+	static readonly DeleteSecurityRequirementPack: string[] = [
 		"securityagent:DeleteSecurityRequirementPack",
 	];
 	/** IAM actions required for the DeleteTargetDomain API call. */
-	static readonly DELETE_TARGET_DOMAIN: string[] = [
+	static readonly DeleteTargetDomain: string[] = [
 		"securityagent:DeleteTargetDomain",
 	];
 	/** IAM actions required for the DescribePrivateConnection API call. */
-	static readonly DESCRIBE_PRIVATE_CONNECTION: string[] = [
+	static readonly DescribePrivateConnection: string[] = [
 		"securityagent:DescribePrivateConnection",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = ["securityagent:GetApplication"];
+	static readonly opGetApplication: string[] = ["securityagent:GetApplication"];
 	/** IAM actions required for the GetArtifact API call. */
-	static readonly GET_ARTIFACT: string[] = ["securityagent:GetArtifact"];
+	static readonly opGetArtifact: string[] = ["securityagent:GetArtifact"];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly GET_INTEGRATION: string[] = ["securityagent:GetIntegration"];
+	static readonly opGetIntegration: string[] = ["securityagent:GetIntegration"];
 	/** IAM actions required for the GetSecurityRequirementPack API call. */
-	static readonly GET_SECURITY_REQUIREMENT_PACK: string[] = [
+	static readonly opGetSecurityRequirementPack: string[] = [
 		"securityagent:GetSecurityRequirementPack",
 	];
 	/** IAM actions required for the ImportSecurityRequirements API call. */
-	static readonly IMPORT_SECURITY_REQUIREMENTS: string[] = [
+	static readonly ImportSecurityRequirements: string[] = [
 		"securityagent:ImportSecurityRequirements",
 	];
 	/** IAM actions required for the InitiateProviderRegistration API call. */
-	static readonly INITIATE_PROVIDER_REGISTRATION: string[] = [
+	static readonly InitiateProviderRegistration: string[] = [
 		"securityagent:InitiateProviderRegistration",
 	];
 	/** IAM actions required for the ListAgentSpaces API call. */
-	static readonly LIST_AGENT_SPACES: string[] = [
-		"securityagent:ListAgentSpaces",
-	];
+	static readonly ListAgentSpaces: string[] = ["securityagent:ListAgentSpaces"];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"securityagent:ListApplications",
 	];
 	/** IAM actions required for the ListArtifacts API call. */
-	static readonly LIST_ARTIFACTS: string[] = ["securityagent:ListArtifacts"];
+	static readonly ListArtifacts: string[] = ["securityagent:ListArtifacts"];
 	/** IAM actions required for the ListCodeReviewJobTasks API call. */
-	static readonly LIST_CODE_REVIEW_JOB_TASKS: string[] = [
+	static readonly ListCodeReviewJobTasks: string[] = [
 		"securityagent:ListCodeReviewJobTasks",
 	];
 	/** IAM actions required for the ListCodeReviewJobsForCodeReview API call. */
-	static readonly LIST_CODE_REVIEW_JOBS_FOR_CODE_REVIEW: string[] = [
+	static readonly ListCodeReviewJobsForCodeReview: string[] = [
 		"securityagent:ListCodeReviewJobsForCodeReview",
 	];
 	/** IAM actions required for the ListCodeReviews API call. */
-	static readonly LIST_CODE_REVIEWS: string[] = [
-		"securityagent:ListCodeReviews",
-	];
+	static readonly ListCodeReviews: string[] = ["securityagent:ListCodeReviews"];
 	/** IAM actions required for the ListDiscoveredEndpoints API call. */
-	static readonly LIST_DISCOVERED_ENDPOINTS: string[] = [
+	static readonly ListDiscoveredEndpoints: string[] = [
 		"securityagent:ListDiscoveredEndpoints",
 	];
 	/** IAM actions required for the ListFindings API call. */
-	static readonly LIST_FINDINGS: string[] = ["securityagent:ListFindings"];
+	static readonly ListFindings: string[] = ["securityagent:ListFindings"];
 	/** IAM actions required for the ListIntegratedResources API call. */
-	static readonly LIST_INTEGRATED_RESOURCES: string[] = [
+	static readonly ListIntegratedResources: string[] = [
 		"securityagent:ListIntegratedResources",
 	];
 	/** IAM actions required for the ListIntegrations API call. */
-	static readonly LIST_INTEGRATIONS: string[] = [
+	static readonly ListIntegrations: string[] = [
 		"securityagent:ListIntegrations",
 	];
 	/** IAM actions required for the ListMemberships API call. */
-	static readonly LIST_MEMBERSHIPS: string[] = [
-		"securityagent:ListMemberships",
-	];
+	static readonly ListMemberships: string[] = ["securityagent:ListMemberships"];
 	/** IAM actions required for the ListPentestJobTasks API call. */
-	static readonly LIST_PENTEST_JOB_TASKS: string[] = [
+	static readonly ListPentestJobTasks: string[] = [
 		"securityagent:ListPentestJobTasks",
 	];
 	/** IAM actions required for the ListPentestJobsForPentest API call. */
-	static readonly LIST_PENTEST_JOBS_FOR_PENTEST: string[] = [
+	static readonly ListPentestJobsForPentest: string[] = [
 		"securityagent:ListPentestJobsForPentest",
 	];
 	/** IAM actions required for the ListPentests API call. */
-	static readonly LIST_PENTESTS: string[] = ["securityagent:ListPentests"];
+	static readonly ListPentests: string[] = ["securityagent:ListPentests"];
 	/** IAM actions required for the ListPrivateConnections API call. */
-	static readonly LIST_PRIVATE_CONNECTIONS: string[] = [
+	static readonly ListPrivateConnections: string[] = [
 		"securityagent:ListPrivateConnections",
 	];
 	/** IAM actions required for the ListSecurityRequirementPacks API call. */
-	static readonly LIST_SECURITY_REQUIREMENT_PACKS: string[] = [
+	static readonly ListSecurityRequirementPacks: string[] = [
 		"securityagent:ListSecurityRequirementPacks",
 	];
 	/** IAM actions required for the ListSecurityRequirements API call. */
-	static readonly LIST_SECURITY_REQUIREMENTS: string[] = [
+	static readonly ListSecurityRequirements: string[] = [
 		"securityagent:ListSecurityRequirements",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"securityagent:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTargetDomains API call. */
-	static readonly LIST_TARGET_DOMAINS: string[] = [
+	static readonly ListTargetDomains: string[] = [
 		"securityagent:ListTargetDomains",
 	];
 	/** IAM actions required for the ListThreatModelJobTasks API call. */
-	static readonly LIST_THREAT_MODEL_JOB_TASKS: string[] = [
+	static readonly ListThreatModelJobTasks: string[] = [
 		"securityagent:ListThreatModelJobTasks",
 	];
 	/** IAM actions required for the ListThreatModelJobs API call. */
-	static readonly LIST_THREAT_MODEL_JOBS: string[] = [
+	static readonly ListThreatModelJobs: string[] = [
 		"securityagent:ListThreatModelJobs",
 	];
 	/** IAM actions required for the ListThreatModels API call. */
-	static readonly LIST_THREAT_MODELS: string[] = [
+	static readonly ListThreatModels: string[] = [
 		"securityagent:ListThreatModels",
 	];
 	/** IAM actions required for the ListThreats API call. */
-	static readonly LIST_THREATS: string[] = ["securityagent:ListThreats"];
+	static readonly ListThreats: string[] = ["securityagent:ListThreats"];
 	/** IAM actions required for the StartCodeRemediation API call. */
-	static readonly START_CODE_REMEDIATION: string[] = [
+	static readonly StartCodeRemediation: string[] = [
 		"securityagent:StartCodeRemediation",
 	];
 	/** IAM actions required for the StartCodeReviewJob API call. */
-	static readonly START_CODE_REVIEW_JOB: string[] = [
+	static readonly StartCodeReviewJob: string[] = [
 		"securityagent:StartCodeReviewJob",
 	];
 	/** IAM actions required for the StartPentestJob API call. */
-	static readonly START_PENTEST_JOB: string[] = [
-		"securityagent:StartPentestJob",
-	];
+	static readonly StartPentestJob: string[] = ["securityagent:StartPentestJob"];
 	/** IAM actions required for the StartThreatModelJob API call. */
-	static readonly START_THREAT_MODEL_JOB: string[] = [
+	static readonly StartThreatModelJob: string[] = [
 		"securityagent:StartThreatModelJob",
 	];
 	/** IAM actions required for the StopCodeReviewJob API call. */
-	static readonly STOP_CODE_REVIEW_JOB: string[] = [
+	static readonly StopCodeReviewJob: string[] = [
 		"securityagent:StopCodeReviewJob",
 	];
 	/** IAM actions required for the StopPentestJob API call. */
-	static readonly STOP_PENTEST_JOB: string[] = ["securityagent:StopPentestJob"];
+	static readonly StopPentestJob: string[] = ["securityagent:StopPentestJob"];
 	/** IAM actions required for the StopThreatModelJob API call. */
-	static readonly STOP_THREAT_MODEL_JOB: string[] = [
+	static readonly StopThreatModelJob: string[] = [
 		"securityagent:StopThreatModelJob",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["securityagent:TagResource"];
+	static readonly TagResource: string[] = ["securityagent:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["securityagent:UntagResource"];
+	static readonly UntagResource: string[] = ["securityagent:UntagResource"];
 	/** IAM actions required for the UpdateAgentSpace API call. */
-	static readonly UPDATE_AGENT_SPACE: string[] = [
+	static readonly UpdateAgentSpace: string[] = [
 		"iam:PassRole",
 		"securityagent:UpdateAgentSpace",
 	];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"iam:PassRole",
 		"securityagent:UpdateApplication",
 	];
 	/** IAM actions required for the UpdateCodeReview API call. */
-	static readonly UPDATE_CODE_REVIEW: string[] = [
+	static readonly UpdateCodeReview: string[] = [
 		"securityagent:UpdateCodeReview",
 	];
 	/** IAM actions required for the UpdateFinding API call. */
-	static readonly UPDATE_FINDING: string[] = ["securityagent:UpdateFinding"];
+	static readonly UpdateFinding: string[] = ["securityagent:UpdateFinding"];
 	/** IAM actions required for the UpdateIntegratedResources API call. */
-	static readonly UPDATE_INTEGRATED_RESOURCES: string[] = [
+	static readonly UpdateIntegratedResources: string[] = [
 		"securityagent:UpdateIntegratedResources",
 	];
 	/** IAM actions required for the UpdatePentest API call. */
-	static readonly UPDATE_PENTEST: string[] = ["securityagent:UpdatePentest"];
+	static readonly UpdatePentest: string[] = ["securityagent:UpdatePentest"];
 	/** IAM actions required for the UpdatePrivateConnectionCertificate API call. */
-	static readonly UPDATE_PRIVATE_CONNECTION_CERTIFICATE: string[] = [
+	static readonly UpdatePrivateConnectionCertificate: string[] = [
 		"securityagent:UpdatePrivateConnectionCertificate",
 	];
 	/** IAM actions required for the UpdateSecurityRequirementPack API call. */
-	static readonly UPDATE_SECURITY_REQUIREMENT_PACK: string[] = [
+	static readonly UpdateSecurityRequirementPack: string[] = [
 		"securityagent:UpdateSecurityRequirementPack",
 	];
 	/** IAM actions required for the UpdateTargetDomain API call. */
-	static readonly UPDATE_TARGET_DOMAIN: string[] = [
+	static readonly UpdateTargetDomain: string[] = [
 		"securityagent:UpdateTargetDomain",
 	];
 	/** IAM actions required for the UpdateThreat API call. */
-	static readonly UPDATE_THREAT: string[] = ["securityagent:UpdateThreat"];
+	static readonly UpdateThreat: string[] = ["securityagent:UpdateThreat"];
 	/** IAM actions required for the UpdateThreatModel API call. */
-	static readonly UPDATE_THREAT_MODEL: string[] = [
+	static readonly UpdateThreatModel: string[] = [
 		"securityagent:UpdateThreatModel",
 	];
 	/** IAM actions required for the VerifyTargetDomain API call. */
-	static readonly VERIFY_TARGET_DOMAIN: string[] = [
+	static readonly VerifyTargetDomain: string[] = [
 		"securityagent:VerifyTargetDomain",
 	];
 }
@@ -1059,44 +1139,44 @@ export class SecurityagentOperations {
  */
 export class SecurityagentConditions {
 	/** Condition keys applicable to the CreateAgentSpace action. */
-	static readonly CREATE_AGENT_SPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateAgentSpaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateIntegration action. */
-	static readonly CREATE_INTEGRATION_CONDITION_KEYS: string[] = [
+	static readonly CreateIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePrivateConnection action. */
-	static readonly CREATE_PRIVATE_CONNECTION_CONDITION_KEYS: string[] = [
+	static readonly CreatePrivateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSecurityRequirementPack action. */
-	static readonly CREATE_SECURITY_REQUIREMENT_PACK_CONDITION_KEYS: string[] = [
+	static readonly CreateSecurityRequirementPackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

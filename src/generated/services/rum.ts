@@ -13,89 +13,114 @@ export class RumActions {
 	static readonly SERVICE_PREFIX = "rum";
 
 	/** [Write] rum:BatchCreateRumMetricDefinitions */
-	static readonly BATCH_CREATE_RUM_METRIC_DEFINITIONS =
+	static readonly BatchCreateRumMetricDefinitions =
 		"rum:BatchCreateRumMetricDefinitions";
 	/** [Write] rum:BatchDeleteRumMetricDefinitions */
-	static readonly BATCH_DELETE_RUM_METRIC_DEFINITIONS =
+	static readonly BatchDeleteRumMetricDefinitions =
 		"rum:BatchDeleteRumMetricDefinitions";
 	/** [Read] rum:BatchGetRumMetricDefinitions */
-	static readonly BATCH_GET_RUM_METRIC_DEFINITIONS =
+	static readonly BatchGetRumMetricDefinitions =
 		"rum:BatchGetRumMetricDefinitions";
 	/** [Write] rum:CreateAppMonitor */
-	static readonly CREATE_APP_MONITOR = "rum:CreateAppMonitor";
+	static readonly CreateAppMonitor = "rum:CreateAppMonitor";
 	/** [Write] rum:DeleteAppMonitor */
-	static readonly DELETE_APP_MONITOR = "rum:DeleteAppMonitor";
+	static readonly DeleteAppMonitor = "rum:DeleteAppMonitor";
 	/** [Write] rum:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "rum:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "rum:DeleteResourcePolicy";
 	/** [Write] rum:DeleteRumMetricsDestination */
-	static readonly DELETE_RUM_METRICS_DESTINATION =
+	static readonly DeleteRumMetricsDestination =
 		"rum:DeleteRumMetricsDestination";
 	/** [Read] rum:GetAppMonitor */
-	static readonly GET_APP_MONITOR = "rum:GetAppMonitor";
+	static readonly actionGetAppMonitor = "rum:GetAppMonitor";
 	/** [Read] rum:GetAppMonitorData */
-	static readonly GET_APP_MONITOR_DATA = "rum:GetAppMonitorData";
+	static readonly actionGetAppMonitorData = "rum:GetAppMonitorData";
 	/** [Read] rum:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "rum:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "rum:GetResourcePolicy";
 	/** [List] rum:ListAppMonitors */
-	static readonly LIST_APP_MONITORS = "rum:ListAppMonitors";
+	static readonly ListAppMonitors = "rum:ListAppMonitors";
 	/** [Read] rum:ListRumMetricsDestinations */
-	static readonly LIST_RUM_METRICS_DESTINATIONS =
-		"rum:ListRumMetricsDestinations";
+	static readonly ListRumMetricsDestinations = "rum:ListRumMetricsDestinations";
 	/** [Read] rum:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "rum:ListTagsForResource";
+	static readonly ListTagsForResource = "rum:ListTagsForResource";
 	/** [Write] rum:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "rum:PutResourcePolicy";
+	static readonly PutResourcePolicy = "rum:PutResourcePolicy";
 	/** [Write] rum:PutRumEvents */
-	static readonly PUT_RUM_EVENTS = "rum:PutRumEvents";
+	static readonly PutRumEvents = "rum:PutRumEvents";
 	/** [Write] rum:PutRumMetricsDestination */
-	static readonly PUT_RUM_METRICS_DESTINATION = "rum:PutRumMetricsDestination";
+	static readonly PutRumMetricsDestination = "rum:PutRumMetricsDestination";
 	/** [Tagging] rum:TagResource */
-	static readonly TAG_RESOURCE = "rum:TagResource";
+	static readonly TagResource = "rum:TagResource";
 	/** [Tagging] rum:UntagResource */
-	static readonly UNTAG_RESOURCE = "rum:UntagResource";
+	static readonly UntagResource = "rum:UntagResource";
 	/** [Write] rum:UpdateAppMonitor */
-	static readonly UPDATE_APP_MONITOR = "rum:UpdateAppMonitor";
+	static readonly UpdateAppMonitor = "rum:UpdateAppMonitor";
 	/** [Write] rum:UpdateRumMetricDefinition */
-	static readonly UPDATE_RUM_METRIC_DEFINITION =
-		"rum:UpdateRumMetricDefinition";
+	static readonly UpdateRumMetricDefinition = "rum:UpdateRumMetricDefinition";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		RumActions.BATCH_GET_RUM_METRIC_DEFINITIONS,
-		RumActions.GET_APP_MONITOR,
-		RumActions.GET_APP_MONITOR_DATA,
-		RumActions.GET_RESOURCE_POLICY,
-		RumActions.LIST_RUM_METRICS_DESTINATIONS,
-		RumActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		RumActions.BatchGetRumMetricDefinitions,
+		RumActions.actionGetAppMonitor,
+		RumActions.actionGetAppMonitorData,
+		RumActions.actionGetResourcePolicy,
+		RumActions.ListRumMetricsDestinations,
+		RumActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		RumActions.BATCH_CREATE_RUM_METRIC_DEFINITIONS,
-		RumActions.BATCH_DELETE_RUM_METRIC_DEFINITIONS,
-		RumActions.CREATE_APP_MONITOR,
-		RumActions.DELETE_APP_MONITOR,
-		RumActions.DELETE_RESOURCE_POLICY,
-		RumActions.DELETE_RUM_METRICS_DESTINATION,
-		RumActions.PUT_RESOURCE_POLICY,
-		RumActions.PUT_RUM_EVENTS,
-		RumActions.PUT_RUM_METRICS_DESTINATION,
-		RumActions.UPDATE_APP_MONITOR,
-		RumActions.UPDATE_RUM_METRIC_DEFINITION,
+	static readonly AllWriteActions: string[] = [
+		RumActions.BatchCreateRumMetricDefinitions,
+		RumActions.BatchDeleteRumMetricDefinitions,
+		RumActions.CreateAppMonitor,
+		RumActions.DeleteAppMonitor,
+		RumActions.DeleteResourcePolicy,
+		RumActions.DeleteRumMetricsDestination,
+		RumActions.PutResourcePolicy,
+		RumActions.PutRumEvents,
+		RumActions.PutRumMetricsDestination,
+		RumActions.UpdateAppMonitor,
+		RumActions.UpdateRumMetricDefinition,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [RumActions.LIST_APP_MONITORS];
+	static readonly AllListActions: string[] = [RumActions.ListAppMonitors];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		RumActions.TAG_RESOURCE,
-		RumActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		RumActions.TagResource,
+		RumActions.UntagResource,
 	];
 }
 
-const AppMonitorResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):rum:(?<region>[^:]*):(?<account>[^:]*):appmonitor/(?<name>[^:/?]+)$",
-);
+/**
+ * Properties for building a AppMonitorResource ARN.
+ */
+export interface RumAppMonitorResourceArnProps {
+	/** The Name component of the ARN. */
+	readonly name: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a AppMonitorResource ARN.
+ */
+export interface RumAppMonitorResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Name component. */
+	readonly name: string;
+}
+
+const AppMonitorResourceArnRegex =
+	/^arn:(?<partition>[^:]+):rum:(?<region>[^:]*):(?<account>[^:]*):appmonitor\/(?<name>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for rum resources.
@@ -104,16 +129,7 @@ export class RumResources {
 	/**
 	 * Builds an ARN for the AppMonitorResource resource.
 	 */
-	static appMonitorResource(props: {
-		/** The Name component of the ARN. */
-		readonly name: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static appMonitorResource(props: RumAppMonitorResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:rum:${props.region ?? "*"}:${props.account ?? "*"}:appmonitor/${props.name}`;
 	}
 
@@ -128,12 +144,9 @@ export class RumResources {
 	 * Parses a AppMonitorResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAppMonitorResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		name: string;
-	} {
+	static parseAppMonitorResourceArn(
+		arn: string,
+	): RumAppMonitorResourceArnComponents {
 		const match = AppMonitorResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid AppMonitorResource ARN: ${arn}`);
@@ -152,65 +165,61 @@ export class RumResources {
  */
 export class RumOperations {
 	/** IAM actions required for the BatchCreateRumMetricDefinitions API call. */
-	static readonly BATCH_CREATE_RUM_METRIC_DEFINITIONS: string[] = [
+	static readonly BatchCreateRumMetricDefinitions: string[] = [
 		"rum:BatchCreateRumMetricDefinitions",
 	];
 	/** IAM actions required for the BatchDeleteRumMetricDefinitions API call. */
-	static readonly BATCH_DELETE_RUM_METRIC_DEFINITIONS: string[] = [
+	static readonly BatchDeleteRumMetricDefinitions: string[] = [
 		"rum:BatchDeleteRumMetricDefinitions",
 	];
 	/** IAM actions required for the BatchGetRumMetricDefinitions API call. */
-	static readonly BATCH_GET_RUM_METRIC_DEFINITIONS: string[] = [
+	static readonly BatchGetRumMetricDefinitions: string[] = [
 		"rum:BatchGetRumMetricDefinitions",
 	];
 	/** IAM actions required for the CreateAppMonitor API call. */
-	static readonly CREATE_APP_MONITOR: string[] = [
+	static readonly CreateAppMonitor: string[] = [
 		"rum:CreateAppMonitor",
 		"rum:TagResource",
 	];
 	/** IAM actions required for the DeleteAppMonitor API call. */
-	static readonly DELETE_APP_MONITOR: string[] = ["rum:DeleteAppMonitor"];
+	static readonly DeleteAppMonitor: string[] = ["rum:DeleteAppMonitor"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
-	static readonly DELETE_RESOURCE_POLICY: string[] = [
-		"rum:DeleteResourcePolicy",
-	];
+	static readonly DeleteResourcePolicy: string[] = ["rum:DeleteResourcePolicy"];
 	/** IAM actions required for the DeleteRumMetricsDestination API call. */
-	static readonly DELETE_RUM_METRICS_DESTINATION: string[] = [
+	static readonly DeleteRumMetricsDestination: string[] = [
 		"rum:DeleteRumMetricsDestination",
 	];
 	/** IAM actions required for the GetAppMonitor API call. */
-	static readonly GET_APP_MONITOR: string[] = ["rum:GetAppMonitor"];
+	static readonly opGetAppMonitor: string[] = ["rum:GetAppMonitor"];
 	/** IAM actions required for the GetAppMonitorData API call. */
-	static readonly GET_APP_MONITOR_DATA: string[] = ["rum:GetAppMonitorData"];
+	static readonly opGetAppMonitorData: string[] = ["rum:GetAppMonitorData"];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = ["rum:GetResourcePolicy"];
+	static readonly opGetResourcePolicy: string[] = ["rum:GetResourcePolicy"];
 	/** IAM actions required for the ListAppMonitors API call. */
-	static readonly LIST_APP_MONITORS: string[] = ["rum:ListAppMonitors"];
+	static readonly ListAppMonitors: string[] = ["rum:ListAppMonitors"];
 	/** IAM actions required for the ListRumMetricsDestinations API call. */
-	static readonly LIST_RUM_METRICS_DESTINATIONS: string[] = [
+	static readonly ListRumMetricsDestinations: string[] = [
 		"rum:ListRumMetricsDestinations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"rum:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["rum:ListTagsForResource"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PUT_RESOURCE_POLICY: string[] = ["rum:PutResourcePolicy"];
+	static readonly PutResourcePolicy: string[] = ["rum:PutResourcePolicy"];
 	/** IAM actions required for the PutRumEvents API call. */
-	static readonly PUT_RUM_EVENTS: string[] = ["rum:PutRumEvents"];
+	static readonly PutRumEvents: string[] = ["rum:PutRumEvents"];
 	/** IAM actions required for the PutRumMetricsDestination API call. */
-	static readonly PUT_RUM_METRICS_DESTINATION: string[] = [
+	static readonly PutRumMetricsDestination: string[] = [
 		"iam:PassRole",
 		"rum:PutRumMetricsDestination",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["rum:TagResource"];
+	static readonly TagResource: string[] = ["rum:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["rum:UntagResource"];
+	static readonly UntagResource: string[] = ["rum:UntagResource"];
 	/** IAM actions required for the UpdateAppMonitor API call. */
-	static readonly UPDATE_APP_MONITOR: string[] = ["rum:UpdateAppMonitor"];
+	static readonly UpdateAppMonitor: string[] = ["rum:UpdateAppMonitor"];
 	/** IAM actions required for the UpdateRumMetricDefinition API call. */
-	static readonly UPDATE_RUM_METRIC_DEFINITION: string[] = [
+	static readonly UpdateRumMetricDefinition: string[] = [
 		"rum:UpdateRumMetricDefinition",
 	];
 }
@@ -220,24 +229,24 @@ export class RumOperations {
  */
 export class RumConditions {
 	/** Condition keys applicable to the CreateAppMonitor action. */
-	static readonly CREATE_APP_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateAppMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

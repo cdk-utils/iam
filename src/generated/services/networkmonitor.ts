@@ -13,64 +13,118 @@ export class NetworkmonitorActions {
 	static readonly SERVICE_PREFIX = "networkmonitor";
 
 	/** [Write] networkmonitor:CreateMonitor */
-	static readonly CREATE_MONITOR = "networkmonitor:CreateMonitor";
+	static readonly CreateMonitor = "networkmonitor:CreateMonitor";
 	/** [Write] networkmonitor:CreateProbe */
-	static readonly CREATE_PROBE = "networkmonitor:CreateProbe";
+	static readonly CreateProbe = "networkmonitor:CreateProbe";
 	/** [Write] networkmonitor:DeleteMonitor */
-	static readonly DELETE_MONITOR = "networkmonitor:DeleteMonitor";
+	static readonly DeleteMonitor = "networkmonitor:DeleteMonitor";
 	/** [Write] networkmonitor:DeleteProbe */
-	static readonly DELETE_PROBE = "networkmonitor:DeleteProbe";
+	static readonly DeleteProbe = "networkmonitor:DeleteProbe";
 	/** [Read] networkmonitor:GetMonitor */
-	static readonly GET_MONITOR = "networkmonitor:GetMonitor";
+	static readonly actionGetMonitor = "networkmonitor:GetMonitor";
 	/** [Read] networkmonitor:GetProbe */
-	static readonly GET_PROBE = "networkmonitor:GetProbe";
+	static readonly actionGetProbe = "networkmonitor:GetProbe";
 	/** [List] networkmonitor:ListMonitors */
-	static readonly LIST_MONITORS = "networkmonitor:ListMonitors";
+	static readonly ListMonitors = "networkmonitor:ListMonitors";
 	/** [Read] networkmonitor:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "networkmonitor:ListTagsForResource";
+	static readonly ListTagsForResource = "networkmonitor:ListTagsForResource";
 	/** [Tagging] networkmonitor:TagResource */
-	static readonly TAG_RESOURCE = "networkmonitor:TagResource";
+	static readonly TagResource = "networkmonitor:TagResource";
 	/** [Tagging] networkmonitor:UntagResource */
-	static readonly UNTAG_RESOURCE = "networkmonitor:UntagResource";
+	static readonly UntagResource = "networkmonitor:UntagResource";
 	/** [Write] networkmonitor:UpdateMonitor */
-	static readonly UPDATE_MONITOR = "networkmonitor:UpdateMonitor";
+	static readonly UpdateMonitor = "networkmonitor:UpdateMonitor";
 	/** [Write] networkmonitor:UpdateProbe */
-	static readonly UPDATE_PROBE = "networkmonitor:UpdateProbe";
+	static readonly UpdateProbe = "networkmonitor:UpdateProbe";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		NetworkmonitorActions.GET_MONITOR,
-		NetworkmonitorActions.GET_PROBE,
-		NetworkmonitorActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		NetworkmonitorActions.actionGetMonitor,
+		NetworkmonitorActions.actionGetProbe,
+		NetworkmonitorActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		NetworkmonitorActions.CREATE_MONITOR,
-		NetworkmonitorActions.CREATE_PROBE,
-		NetworkmonitorActions.DELETE_MONITOR,
-		NetworkmonitorActions.DELETE_PROBE,
-		NetworkmonitorActions.UPDATE_MONITOR,
-		NetworkmonitorActions.UPDATE_PROBE,
+	static readonly AllWriteActions: string[] = [
+		NetworkmonitorActions.CreateMonitor,
+		NetworkmonitorActions.CreateProbe,
+		NetworkmonitorActions.DeleteMonitor,
+		NetworkmonitorActions.DeleteProbe,
+		NetworkmonitorActions.UpdateMonitor,
+		NetworkmonitorActions.UpdateProbe,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		NetworkmonitorActions.LIST_MONITORS,
+	static readonly AllListActions: string[] = [
+		NetworkmonitorActions.ListMonitors,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		NetworkmonitorActions.TAG_RESOURCE,
-		NetworkmonitorActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		NetworkmonitorActions.TagResource,
+		NetworkmonitorActions.UntagResource,
 	];
 }
 
-const MonitorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):networkmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor/(?<monitorName>[^:/?]+)$",
-);
-const ProbeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):networkmonitor:(?<region>[^:]*):(?<account>[^:]*):probe/(?<probeId>[^:/?]+)$",
-);
+/**
+ * Properties for building a monitor ARN.
+ */
+export interface NetworkmonitorMonitorArnProps {
+	/** The MonitorName component of the ARN. */
+	readonly monitorName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a monitor ARN.
+ */
+export interface NetworkmonitorMonitorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitorName component. */
+	readonly monitorName: string;
+}
+
+/**
+ * Properties for building a probe ARN.
+ */
+export interface NetworkmonitorProbeArnProps {
+	/** The ProbeId component of the ARN. */
+	readonly probeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a probe ARN.
+ */
+export interface NetworkmonitorProbeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProbeId component. */
+	readonly probeId: string;
+}
+
+const MonitorArnRegex =
+	/^arn:(?<partition>[^:]+):networkmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor\/(?<monitorName>[^:/?]+)$/;
+const ProbeArnRegex =
+	/^arn:(?<partition>[^:]+):networkmonitor:(?<region>[^:]*):(?<account>[^:]*):probe\/(?<probeId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for networkmonitor resources.
@@ -79,16 +133,7 @@ export class NetworkmonitorResources {
 	/**
 	 * Builds an ARN for the monitor resource.
 	 */
-	static monitor(props: {
-		/** The MonitorName component of the ARN. */
-		readonly monitorName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static monitor(props: NetworkmonitorMonitorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:networkmonitor:${props.region ?? "*"}:${props.account ?? "*"}:monitor/${props.monitorName}`;
 	}
 
@@ -103,12 +148,7 @@ export class NetworkmonitorResources {
 	 * Parses a monitor ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMonitorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		monitorName: string;
-	} {
+	static parseMonitorArn(arn: string): NetworkmonitorMonitorArnComponents {
 		const match = MonitorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid monitor ARN: ${arn}`);
@@ -124,16 +164,7 @@ export class NetworkmonitorResources {
 	/**
 	 * Builds an ARN for the probe resource.
 	 */
-	static probe(props: {
-		/** The ProbeId component of the ARN. */
-		readonly probeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static probe(props: NetworkmonitorProbeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:networkmonitor:${props.region ?? "*"}:${props.account ?? "*"}:probe/${props.probeId}`;
 	}
 
@@ -148,12 +179,7 @@ export class NetworkmonitorResources {
 	 * Parses a probe ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseProbeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		probeId: string;
-	} {
+	static parseProbeArn(arn: string): NetworkmonitorProbeArnComponents {
 		const match = ProbeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid probe ARN: ${arn}`);
@@ -172,37 +198,37 @@ export class NetworkmonitorResources {
  */
 export class NetworkmonitorOperations {
 	/** IAM actions required for the CreateMonitor API call. */
-	static readonly CREATE_MONITOR: string[] = [
+	static readonly CreateMonitor: string[] = [
 		"networkmonitor:CreateMonitor",
 		"networkmonitor:TagResource",
 	];
 	/** IAM actions required for the CreateProbe API call. */
-	static readonly CREATE_PROBE: string[] = [
+	static readonly CreateProbe: string[] = [
 		"networkmonitor:CreateProbe",
 		"networkmonitor:TagResource",
 	];
 	/** IAM actions required for the DeleteMonitor API call. */
-	static readonly DELETE_MONITOR: string[] = ["networkmonitor:DeleteMonitor"];
+	static readonly DeleteMonitor: string[] = ["networkmonitor:DeleteMonitor"];
 	/** IAM actions required for the DeleteProbe API call. */
-	static readonly DELETE_PROBE: string[] = ["networkmonitor:DeleteProbe"];
+	static readonly DeleteProbe: string[] = ["networkmonitor:DeleteProbe"];
 	/** IAM actions required for the GetMonitor API call. */
-	static readonly GET_MONITOR: string[] = ["networkmonitor:GetMonitor"];
+	static readonly opGetMonitor: string[] = ["networkmonitor:GetMonitor"];
 	/** IAM actions required for the GetProbe API call. */
-	static readonly GET_PROBE: string[] = ["networkmonitor:GetProbe"];
+	static readonly opGetProbe: string[] = ["networkmonitor:GetProbe"];
 	/** IAM actions required for the ListMonitors API call. */
-	static readonly LIST_MONITORS: string[] = ["networkmonitor:ListMonitors"];
+	static readonly ListMonitors: string[] = ["networkmonitor:ListMonitors"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"networkmonitor:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["networkmonitor:TagResource"];
+	static readonly TagResource: string[] = ["networkmonitor:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["networkmonitor:UntagResource"];
+	static readonly UntagResource: string[] = ["networkmonitor:UntagResource"];
 	/** IAM actions required for the UpdateMonitor API call. */
-	static readonly UPDATE_MONITOR: string[] = ["networkmonitor:UpdateMonitor"];
+	static readonly UpdateMonitor: string[] = ["networkmonitor:UpdateMonitor"];
 	/** IAM actions required for the UpdateProbe API call. */
-	static readonly UPDATE_PROBE: string[] = ["networkmonitor:UpdateProbe"];
+	static readonly UpdateProbe: string[] = ["networkmonitor:UpdateProbe"];
 }
 
 /**
@@ -210,29 +236,29 @@ export class NetworkmonitorOperations {
  */
 export class NetworkmonitorConditions {
 	/** Condition keys applicable to the CreateMonitor action. */
-	static readonly CREATE_MONITOR_CONDITION_KEYS: string[] = [
+	static readonly CreateMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateProbe action. */
-	static readonly CREATE_PROBE_CONDITION_KEYS: string[] = [
+	static readonly CreateProbeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,169 +13,216 @@ export class ChatbotActions {
 	static readonly SERVICE_PREFIX = "chatbot";
 
 	/** [Write] chatbot:AssociateToConfiguration */
-	static readonly ASSOCIATE_TO_CONFIGURATION =
-		"chatbot:AssociateToConfiguration";
+	static readonly AssociateToConfiguration = "chatbot:AssociateToConfiguration";
 	/** [Write] chatbot:CreateChimeWebhookConfiguration */
-	static readonly CREATE_CHIME_WEBHOOK_CONFIGURATION =
+	static readonly CreateChimeWebhookConfiguration =
 		"chatbot:CreateChimeWebhookConfiguration";
 	/** [Write] chatbot:CreateCustomAction */
-	static readonly CREATE_CUSTOM_ACTION = "chatbot:CreateCustomAction";
+	static readonly CreateCustomAction = "chatbot:CreateCustomAction";
 	/** [Write] chatbot:CreateMicrosoftTeamsChannelConfiguration */
-	static readonly CREATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION =
+	static readonly CreateMicrosoftTeamsChannelConfiguration =
 		"chatbot:CreateMicrosoftTeamsChannelConfiguration";
 	/** [Write] chatbot:CreateSlackChannelConfiguration */
-	static readonly CREATE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly CreateSlackChannelConfiguration =
 		"chatbot:CreateSlackChannelConfiguration";
 	/** [Write] chatbot:DeleteChimeWebhookConfiguration */
-	static readonly DELETE_CHIME_WEBHOOK_CONFIGURATION =
+	static readonly DeleteChimeWebhookConfiguration =
 		"chatbot:DeleteChimeWebhookConfiguration";
 	/** [Write] chatbot:DeleteCustomAction */
-	static readonly DELETE_CUSTOM_ACTION = "chatbot:DeleteCustomAction";
+	static readonly DeleteCustomAction = "chatbot:DeleteCustomAction";
 	/** [Write] chatbot:DeleteMicrosoftTeamsChannelConfiguration */
-	static readonly DELETE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION =
+	static readonly DeleteMicrosoftTeamsChannelConfiguration =
 		"chatbot:DeleteMicrosoftTeamsChannelConfiguration";
 	/** [Write] chatbot:DeleteMicrosoftTeamsConfiguredTeam */
-	static readonly DELETE_MICROSOFT_TEAMS_CONFIGURED_TEAM =
+	static readonly DeleteMicrosoftTeamsConfiguredTeam =
 		"chatbot:DeleteMicrosoftTeamsConfiguredTeam";
 	/** [Write] chatbot:DeleteMicrosoftTeamsUserIdentity */
-	static readonly DELETE_MICROSOFT_TEAMS_USER_IDENTITY =
+	static readonly DeleteMicrosoftTeamsUserIdentity =
 		"chatbot:DeleteMicrosoftTeamsUserIdentity";
 	/** [Write] chatbot:DeleteSlackChannelConfiguration */
-	static readonly DELETE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly DeleteSlackChannelConfiguration =
 		"chatbot:DeleteSlackChannelConfiguration";
 	/** [Write] chatbot:DeleteSlackUserIdentity */
-	static readonly DELETE_SLACK_USER_IDENTITY =
-		"chatbot:DeleteSlackUserIdentity";
+	static readonly DeleteSlackUserIdentity = "chatbot:DeleteSlackUserIdentity";
 	/** [Write] chatbot:DeleteSlackWorkspaceAuthorization */
-	static readonly DELETE_SLACK_WORKSPACE_AUTHORIZATION =
+	static readonly DeleteSlackWorkspaceAuthorization =
 		"chatbot:DeleteSlackWorkspaceAuthorization";
 	/** [Read] chatbot:DescribeChimeWebhookConfigurations */
-	static readonly DESCRIBE_CHIME_WEBHOOK_CONFIGURATIONS =
+	static readonly DescribeChimeWebhookConfigurations =
 		"chatbot:DescribeChimeWebhookConfigurations";
 	/** [Read] chatbot:DescribeSlackChannelConfigurations */
-	static readonly DESCRIBE_SLACK_CHANNEL_CONFIGURATIONS =
+	static readonly DescribeSlackChannelConfigurations =
 		"chatbot:DescribeSlackChannelConfigurations";
 	/** [Read] chatbot:DescribeSlackChannels */
-	static readonly DESCRIBE_SLACK_CHANNELS = "chatbot:DescribeSlackChannels";
+	static readonly DescribeSlackChannels = "chatbot:DescribeSlackChannels";
 	/** [Read] chatbot:DescribeSlackUserIdentities */
-	static readonly DESCRIBE_SLACK_USER_IDENTITIES =
+	static readonly DescribeSlackUserIdentities =
 		"chatbot:DescribeSlackUserIdentities";
 	/** [Read] chatbot:DescribeSlackWorkspaces */
-	static readonly DESCRIBE_SLACK_WORKSPACES = "chatbot:DescribeSlackWorkspaces";
+	static readonly DescribeSlackWorkspaces = "chatbot:DescribeSlackWorkspaces";
 	/** [Write] chatbot:DisassociateFromConfiguration */
-	static readonly DISASSOCIATE_FROM_CONFIGURATION =
+	static readonly DisassociateFromConfiguration =
 		"chatbot:DisassociateFromConfiguration";
 	/** [Read] chatbot:GetAccountPreferences */
-	static readonly GET_ACCOUNT_PREFERENCES = "chatbot:GetAccountPreferences";
+	static readonly actionGetAccountPreferences = "chatbot:GetAccountPreferences";
 	/** [Read] chatbot:GetCustomAction */
-	static readonly GET_CUSTOM_ACTION = "chatbot:GetCustomAction";
+	static readonly actionGetCustomAction = "chatbot:GetCustomAction";
 	/** [Read] chatbot:GetMicrosoftTeamsChannelConfiguration */
-	static readonly GET_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION =
+	static readonly actionGetMicrosoftTeamsChannelConfiguration =
 		"chatbot:GetMicrosoftTeamsChannelConfiguration";
 	/** [Read] chatbot:GetMicrosoftTeamsOauthParameters */
-	static readonly GET_MICROSOFT_TEAMS_OAUTH_PARAMETERS =
+	static readonly actionGetMicrosoftTeamsOauthParameters =
 		"chatbot:GetMicrosoftTeamsOauthParameters";
 	/** [Read] chatbot:GetSlackOauthParameters */
-	static readonly GET_SLACK_OAUTH_PARAMETERS =
+	static readonly actionGetSlackOauthParameters =
 		"chatbot:GetSlackOauthParameters";
 	/** [Read] chatbot:ListAssociations */
-	static readonly LIST_ASSOCIATIONS = "chatbot:ListAssociations";
+	static readonly ListAssociations = "chatbot:ListAssociations";
 	/** [List] chatbot:ListCustomActions */
-	static readonly LIST_CUSTOM_ACTIONS = "chatbot:ListCustomActions";
+	static readonly ListCustomActions = "chatbot:ListCustomActions";
 	/** [Read] chatbot:ListMicrosoftTeamsChannelConfigurations */
-	static readonly LIST_MICROSOFT_TEAMS_CHANNEL_CONFIGURATIONS =
+	static readonly ListMicrosoftTeamsChannelConfigurations =
 		"chatbot:ListMicrosoftTeamsChannelConfigurations";
 	/** [Read] chatbot:ListMicrosoftTeamsConfiguredTeams */
-	static readonly LIST_MICROSOFT_TEAMS_CONFIGURED_TEAMS =
+	static readonly ListMicrosoftTeamsConfiguredTeams =
 		"chatbot:ListMicrosoftTeamsConfiguredTeams";
 	/** [Read] chatbot:ListMicrosoftTeamsUserIdentities */
-	static readonly LIST_MICROSOFT_TEAMS_USER_IDENTITIES =
+	static readonly ListMicrosoftTeamsUserIdentities =
 		"chatbot:ListMicrosoftTeamsUserIdentities";
 	/** [Read] chatbot:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "chatbot:ListTagsForResource";
+	static readonly ListTagsForResource = "chatbot:ListTagsForResource";
 	/** [Write] chatbot:RedeemMicrosoftTeamsOauthCode */
-	static readonly REDEEM_MICROSOFT_TEAMS_OAUTH_CODE =
+	static readonly RedeemMicrosoftTeamsOauthCode =
 		"chatbot:RedeemMicrosoftTeamsOauthCode";
 	/** [Write] chatbot:RedeemSlackOauthCode */
-	static readonly REDEEM_SLACK_OAUTH_CODE = "chatbot:RedeemSlackOauthCode";
+	static readonly RedeemSlackOauthCode = "chatbot:RedeemSlackOauthCode";
 	/** [Tagging] chatbot:TagResource */
-	static readonly TAG_RESOURCE = "chatbot:TagResource";
+	static readonly TagResource = "chatbot:TagResource";
 	/** [Tagging] chatbot:UntagResource */
-	static readonly UNTAG_RESOURCE = "chatbot:UntagResource";
+	static readonly UntagResource = "chatbot:UntagResource";
 	/** [Write] chatbot:UpdateAccountPreferences */
-	static readonly UPDATE_ACCOUNT_PREFERENCES =
-		"chatbot:UpdateAccountPreferences";
+	static readonly UpdateAccountPreferences = "chatbot:UpdateAccountPreferences";
 	/** [Write] chatbot:UpdateChimeWebhookConfiguration */
-	static readonly UPDATE_CHIME_WEBHOOK_CONFIGURATION =
+	static readonly UpdateChimeWebhookConfiguration =
 		"chatbot:UpdateChimeWebhookConfiguration";
 	/** [Write] chatbot:UpdateCustomAction */
-	static readonly UPDATE_CUSTOM_ACTION = "chatbot:UpdateCustomAction";
+	static readonly UpdateCustomAction = "chatbot:UpdateCustomAction";
 	/** [Write] chatbot:UpdateMicrosoftTeamsChannelConfiguration */
-	static readonly UPDATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION =
+	static readonly UpdateMicrosoftTeamsChannelConfiguration =
 		"chatbot:UpdateMicrosoftTeamsChannelConfiguration";
 	/** [Write] chatbot:UpdateSlackChannelConfiguration */
-	static readonly UPDATE_SLACK_CHANNEL_CONFIGURATION =
+	static readonly UpdateSlackChannelConfiguration =
 		"chatbot:UpdateSlackChannelConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ChatbotActions.DESCRIBE_CHIME_WEBHOOK_CONFIGURATIONS,
-		ChatbotActions.DESCRIBE_SLACK_CHANNEL_CONFIGURATIONS,
-		ChatbotActions.DESCRIBE_SLACK_CHANNELS,
-		ChatbotActions.DESCRIBE_SLACK_USER_IDENTITIES,
-		ChatbotActions.DESCRIBE_SLACK_WORKSPACES,
-		ChatbotActions.GET_ACCOUNT_PREFERENCES,
-		ChatbotActions.GET_CUSTOM_ACTION,
-		ChatbotActions.GET_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION,
-		ChatbotActions.GET_MICROSOFT_TEAMS_OAUTH_PARAMETERS,
-		ChatbotActions.GET_SLACK_OAUTH_PARAMETERS,
-		ChatbotActions.LIST_ASSOCIATIONS,
-		ChatbotActions.LIST_MICROSOFT_TEAMS_CHANNEL_CONFIGURATIONS,
-		ChatbotActions.LIST_MICROSOFT_TEAMS_CONFIGURED_TEAMS,
-		ChatbotActions.LIST_MICROSOFT_TEAMS_USER_IDENTITIES,
-		ChatbotActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ChatbotActions.DescribeChimeWebhookConfigurations,
+		ChatbotActions.DescribeSlackChannelConfigurations,
+		ChatbotActions.DescribeSlackChannels,
+		ChatbotActions.DescribeSlackUserIdentities,
+		ChatbotActions.DescribeSlackWorkspaces,
+		ChatbotActions.actionGetAccountPreferences,
+		ChatbotActions.actionGetCustomAction,
+		ChatbotActions.actionGetMicrosoftTeamsChannelConfiguration,
+		ChatbotActions.actionGetMicrosoftTeamsOauthParameters,
+		ChatbotActions.actionGetSlackOauthParameters,
+		ChatbotActions.ListAssociations,
+		ChatbotActions.ListMicrosoftTeamsChannelConfigurations,
+		ChatbotActions.ListMicrosoftTeamsConfiguredTeams,
+		ChatbotActions.ListMicrosoftTeamsUserIdentities,
+		ChatbotActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ChatbotActions.ASSOCIATE_TO_CONFIGURATION,
-		ChatbotActions.CREATE_CHIME_WEBHOOK_CONFIGURATION,
-		ChatbotActions.CREATE_CUSTOM_ACTION,
-		ChatbotActions.CREATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION,
-		ChatbotActions.CREATE_SLACK_CHANNEL_CONFIGURATION,
-		ChatbotActions.DELETE_CHIME_WEBHOOK_CONFIGURATION,
-		ChatbotActions.DELETE_CUSTOM_ACTION,
-		ChatbotActions.DELETE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION,
-		ChatbotActions.DELETE_MICROSOFT_TEAMS_CONFIGURED_TEAM,
-		ChatbotActions.DELETE_MICROSOFT_TEAMS_USER_IDENTITY,
-		ChatbotActions.DELETE_SLACK_CHANNEL_CONFIGURATION,
-		ChatbotActions.DELETE_SLACK_USER_IDENTITY,
-		ChatbotActions.DELETE_SLACK_WORKSPACE_AUTHORIZATION,
-		ChatbotActions.DISASSOCIATE_FROM_CONFIGURATION,
-		ChatbotActions.REDEEM_MICROSOFT_TEAMS_OAUTH_CODE,
-		ChatbotActions.REDEEM_SLACK_OAUTH_CODE,
-		ChatbotActions.UPDATE_ACCOUNT_PREFERENCES,
-		ChatbotActions.UPDATE_CHIME_WEBHOOK_CONFIGURATION,
-		ChatbotActions.UPDATE_CUSTOM_ACTION,
-		ChatbotActions.UPDATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION,
-		ChatbotActions.UPDATE_SLACK_CHANNEL_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		ChatbotActions.AssociateToConfiguration,
+		ChatbotActions.CreateChimeWebhookConfiguration,
+		ChatbotActions.CreateCustomAction,
+		ChatbotActions.CreateMicrosoftTeamsChannelConfiguration,
+		ChatbotActions.CreateSlackChannelConfiguration,
+		ChatbotActions.DeleteChimeWebhookConfiguration,
+		ChatbotActions.DeleteCustomAction,
+		ChatbotActions.DeleteMicrosoftTeamsChannelConfiguration,
+		ChatbotActions.DeleteMicrosoftTeamsConfiguredTeam,
+		ChatbotActions.DeleteMicrosoftTeamsUserIdentity,
+		ChatbotActions.DeleteSlackChannelConfiguration,
+		ChatbotActions.DeleteSlackUserIdentity,
+		ChatbotActions.DeleteSlackWorkspaceAuthorization,
+		ChatbotActions.DisassociateFromConfiguration,
+		ChatbotActions.RedeemMicrosoftTeamsOauthCode,
+		ChatbotActions.RedeemSlackOauthCode,
+		ChatbotActions.UpdateAccountPreferences,
+		ChatbotActions.UpdateChimeWebhookConfiguration,
+		ChatbotActions.UpdateCustomAction,
+		ChatbotActions.UpdateMicrosoftTeamsChannelConfiguration,
+		ChatbotActions.UpdateSlackChannelConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [ChatbotActions.LIST_CUSTOM_ACTIONS];
+	static readonly AllListActions: string[] = [ChatbotActions.ListCustomActions];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ChatbotActions.TAG_RESOURCE,
-		ChatbotActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ChatbotActions.TagResource,
+		ChatbotActions.UntagResource,
 	];
 }
 
-const ChatbotConfigurationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):chatbot::(?<account>[^:]*):chat-configuration/(?<configurationType>[^:/?]+)/(?<chatbotConfigurationName>[^:/?]+)$",
-);
-const CustomActionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):chatbot::(?<account>[^:]*):custom-action/(?<actionName>[^:/?]+)$",
-);
+/**
+ * Properties for building a ChatbotConfiguration ARN.
+ */
+export interface ChatbotChatbotConfigurationArnProps {
+	/** The ConfigurationType component of the ARN. */
+	readonly configurationType: string;
+	/** The ChatbotConfigurationName component of the ARN. */
+	readonly chatbotConfigurationName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ChatbotConfiguration ARN.
+ */
+export interface ChatbotChatbotConfigurationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigurationType component. */
+	readonly configurationType: string;
+	/** The ChatbotConfigurationName component. */
+	readonly chatbotConfigurationName: string;
+}
+
+/**
+ * Properties for building a custom-action ARN.
+ */
+export interface ChatbotCustomActionArnProps {
+	/** The ActionName component of the ARN. */
+	readonly actionName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a custom-action ARN.
+ */
+export interface ChatbotCustomActionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ActionName component. */
+	readonly actionName: string;
+}
+
+const ChatbotConfigurationArnRegex =
+	/^arn:(?<partition>[^:]+):chatbot::(?<account>[^:]*):chat-configuration\/(?<configurationType>[^:/?]+)\/(?<chatbotConfigurationName>[^:/?]+)$/;
+const CustomActionArnRegex =
+	/^arn:(?<partition>[^:]+):chatbot::(?<account>[^:]*):custom-action\/(?<actionName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for chatbot resources.
@@ -184,16 +231,9 @@ export class ChatbotResources {
 	/**
 	 * Builds an ARN for the ChatbotConfiguration resource.
 	 */
-	static chatbotConfiguration(props: {
-		/** The ConfigurationType component of the ARN. */
-		readonly configurationType: string;
-		/** The ChatbotConfigurationName component of the ARN. */
-		readonly chatbotConfigurationName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static chatbotConfiguration(
+		props: ChatbotChatbotConfigurationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:chatbot::${props.account ?? "*"}:chat-configuration/${props.configurationType}/${props.chatbotConfigurationName}`;
 	}
 
@@ -208,12 +248,9 @@ export class ChatbotResources {
 	 * Parses a ChatbotConfiguration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChatbotConfigurationArn(arn: string): {
-		partition: string;
-		account: string;
-		configurationType: string;
-		chatbotConfigurationName: string;
-	} {
+	static parseChatbotConfigurationArn(
+		arn: string,
+	): ChatbotChatbotConfigurationArnComponents {
 		const match = ChatbotConfigurationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ChatbotConfiguration ARN: ${arn}`);
@@ -229,14 +266,7 @@ export class ChatbotResources {
 	/**
 	 * Builds an ARN for the custom-action resource.
 	 */
-	static customAction(props: {
-		/** The ActionName component of the ARN. */
-		readonly actionName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static customAction(props: ChatbotCustomActionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:chatbot::${props.account ?? "*"}:custom-action/${props.actionName}`;
 	}
 
@@ -251,11 +281,7 @@ export class ChatbotResources {
 	 * Parses a custom-action ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCustomActionArn(arn: string): {
-		partition: string;
-		account: string;
-		actionName: string;
-	} {
+	static parseCustomActionArn(arn: string): ChatbotCustomActionArnComponents {
 		const match = CustomActionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid custom-action ARN: ${arn}`);
@@ -273,138 +299,134 @@ export class ChatbotResources {
  */
 export class ChatbotOperations {
 	/** IAM actions required for the AssociateToConfiguration API call. */
-	static readonly ASSOCIATE_TO_CONFIGURATION: string[] = [
+	static readonly AssociateToConfiguration: string[] = [
 		"chatbot:AssociateToConfiguration",
 	];
 	/** IAM actions required for the CreateChimeWebhookConfiguration API call. */
-	static readonly CREATE_CHIME_WEBHOOK_CONFIGURATION: string[] = [
+	static readonly CreateChimeWebhookConfiguration: string[] = [
 		"chatbot:CreateChimeWebhookConfiguration",
 		"iam:PassRole",
 		"chatbot:TagResource",
 	];
 	/** IAM actions required for the CreateCustomAction API call. */
-	static readonly CREATE_CUSTOM_ACTION: string[] = [
+	static readonly CreateCustomAction: string[] = [
 		"chatbot:CreateCustomAction",
 		"chatbot:TagResource",
 	];
 	/** IAM actions required for the CreateMicrosoftTeamsChannelConfiguration API call. */
-	static readonly CREATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION: string[] = [
+	static readonly CreateMicrosoftTeamsChannelConfiguration: string[] = [
 		"chatbot:CreateMicrosoftTeamsChannelConfiguration",
 		"iam:PassRole",
 		"chatbot:TagResource",
 	];
 	/** IAM actions required for the CreateSlackChannelConfiguration API call. */
-	static readonly CREATE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly CreateSlackChannelConfiguration: string[] = [
 		"chatbot:CreateSlackChannelConfiguration",
 		"iam:PassRole",
 		"chatbot:TagResource",
 	];
 	/** IAM actions required for the DeleteChimeWebhookConfiguration API call. */
-	static readonly DELETE_CHIME_WEBHOOK_CONFIGURATION: string[] = [
+	static readonly DeleteChimeWebhookConfiguration: string[] = [
 		"chatbot:DeleteChimeWebhookConfiguration",
 	];
 	/** IAM actions required for the DeleteCustomAction API call. */
-	static readonly DELETE_CUSTOM_ACTION: string[] = [
-		"chatbot:DeleteCustomAction",
-	];
+	static readonly DeleteCustomAction: string[] = ["chatbot:DeleteCustomAction"];
 	/** IAM actions required for the DeleteMicrosoftTeamsChannelConfiguration API call. */
-	static readonly DELETE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION: string[] = [
+	static readonly DeleteMicrosoftTeamsChannelConfiguration: string[] = [
 		"chatbot:DeleteMicrosoftTeamsChannelConfiguration",
 	];
 	/** IAM actions required for the DeleteMicrosoftTeamsConfiguredTeam API call. */
-	static readonly DELETE_MICROSOFT_TEAMS_CONFIGURED_TEAM: string[] = [
+	static readonly DeleteMicrosoftTeamsConfiguredTeam: string[] = [
 		"chatbot:DeleteMicrosoftTeamsConfiguredTeam",
 	];
 	/** IAM actions required for the DeleteMicrosoftTeamsUserIdentity API call. */
-	static readonly DELETE_MICROSOFT_TEAMS_USER_IDENTITY: string[] = [
+	static readonly DeleteMicrosoftTeamsUserIdentity: string[] = [
 		"chatbot:DeleteMicrosoftTeamsUserIdentity",
 	];
 	/** IAM actions required for the DeleteSlackChannelConfiguration API call. */
-	static readonly DELETE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly DeleteSlackChannelConfiguration: string[] = [
 		"chatbot:DeleteSlackChannelConfiguration",
 	];
 	/** IAM actions required for the DeleteSlackUserIdentity API call. */
-	static readonly DELETE_SLACK_USER_IDENTITY: string[] = [
+	static readonly DeleteSlackUserIdentity: string[] = [
 		"chatbot:DeleteSlackUserIdentity",
 	];
 	/** IAM actions required for the DeleteSlackWorkspaceAuthorization API call. */
-	static readonly DELETE_SLACK_WORKSPACE_AUTHORIZATION: string[] = [
+	static readonly DeleteSlackWorkspaceAuthorization: string[] = [
 		"chatbot:DeleteSlackWorkspaceAuthorization",
 	];
 	/** IAM actions required for the DescribeChimeWebhookConfigurations API call. */
-	static readonly DESCRIBE_CHIME_WEBHOOK_CONFIGURATIONS: string[] = [
+	static readonly DescribeChimeWebhookConfigurations: string[] = [
 		"chatbot:DescribeChimeWebhookConfigurations",
 	];
 	/** IAM actions required for the DescribeSlackChannelConfigurations API call. */
-	static readonly DESCRIBE_SLACK_CHANNEL_CONFIGURATIONS: string[] = [
+	static readonly DescribeSlackChannelConfigurations: string[] = [
 		"chatbot:DescribeSlackChannelConfigurations",
 	];
 	/** IAM actions required for the DescribeSlackUserIdentities API call. */
-	static readonly DESCRIBE_SLACK_USER_IDENTITIES: string[] = [
+	static readonly DescribeSlackUserIdentities: string[] = [
 		"chatbot:DescribeSlackUserIdentities",
 	];
 	/** IAM actions required for the DescribeSlackWorkspaces API call. */
-	static readonly DESCRIBE_SLACK_WORKSPACES: string[] = [
+	static readonly DescribeSlackWorkspaces: string[] = [
 		"chatbot:DescribeSlackWorkspaces",
 	];
 	/** IAM actions required for the DisassociateFromConfiguration API call. */
-	static readonly DISASSOCIATE_FROM_CONFIGURATION: string[] = [
+	static readonly DisassociateFromConfiguration: string[] = [
 		"chatbot:DisassociateFromConfiguration",
 	];
 	/** IAM actions required for the GetAccountPreferences API call. */
-	static readonly GET_ACCOUNT_PREFERENCES: string[] = [
+	static readonly opGetAccountPreferences: string[] = [
 		"chatbot:GetAccountPreferences",
 	];
 	/** IAM actions required for the GetCustomAction API call. */
-	static readonly GET_CUSTOM_ACTION: string[] = ["chatbot:GetCustomAction"];
+	static readonly opGetCustomAction: string[] = ["chatbot:GetCustomAction"];
 	/** IAM actions required for the GetMicrosoftTeamsChannelConfiguration API call. */
-	static readonly GET_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION: string[] = [
+	static readonly opGetMicrosoftTeamsChannelConfiguration: string[] = [
 		"chatbot:GetMicrosoftTeamsChannelConfiguration",
 	];
 	/** IAM actions required for the ListAssociations API call. */
-	static readonly LIST_ASSOCIATIONS: string[] = ["chatbot:ListAssociations"];
+	static readonly ListAssociations: string[] = ["chatbot:ListAssociations"];
 	/** IAM actions required for the ListCustomActions API call. */
-	static readonly LIST_CUSTOM_ACTIONS: string[] = ["chatbot:ListCustomActions"];
+	static readonly ListCustomActions: string[] = ["chatbot:ListCustomActions"];
 	/** IAM actions required for the ListMicrosoftTeamsChannelConfigurations API call. */
-	static readonly LIST_MICROSOFT_TEAMS_CHANNEL_CONFIGURATIONS: string[] = [
+	static readonly ListMicrosoftTeamsChannelConfigurations: string[] = [
 		"chatbot:ListMicrosoftTeamsChannelConfigurations",
 	];
 	/** IAM actions required for the ListMicrosoftTeamsConfiguredTeams API call. */
-	static readonly LIST_MICROSOFT_TEAMS_CONFIGURED_TEAMS: string[] = [
+	static readonly ListMicrosoftTeamsConfiguredTeams: string[] = [
 		"chatbot:ListMicrosoftTeamsConfiguredTeams",
 	];
 	/** IAM actions required for the ListMicrosoftTeamsUserIdentities API call. */
-	static readonly LIST_MICROSOFT_TEAMS_USER_IDENTITIES: string[] = [
+	static readonly ListMicrosoftTeamsUserIdentities: string[] = [
 		"chatbot:ListMicrosoftTeamsUserIdentities",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"chatbot:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["chatbot:TagResource"];
+	static readonly TagResource: string[] = ["chatbot:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["chatbot:UntagResource"];
+	static readonly UntagResource: string[] = ["chatbot:UntagResource"];
 	/** IAM actions required for the UpdateAccountPreferences API call. */
-	static readonly UPDATE_ACCOUNT_PREFERENCES: string[] = [
+	static readonly UpdateAccountPreferences: string[] = [
 		"chatbot:UpdateAccountPreferences",
 	];
 	/** IAM actions required for the UpdateChimeWebhookConfiguration API call. */
-	static readonly UPDATE_CHIME_WEBHOOK_CONFIGURATION: string[] = [
+	static readonly UpdateChimeWebhookConfiguration: string[] = [
 		"iam:PassRole",
 		"chatbot:UpdateChimeWebhookConfiguration",
 	];
 	/** IAM actions required for the UpdateCustomAction API call. */
-	static readonly UPDATE_CUSTOM_ACTION: string[] = [
-		"chatbot:UpdateCustomAction",
-	];
+	static readonly UpdateCustomAction: string[] = ["chatbot:UpdateCustomAction"];
 	/** IAM actions required for the UpdateMicrosoftTeamsChannelConfiguration API call. */
-	static readonly UPDATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION: string[] = [
+	static readonly UpdateMicrosoftTeamsChannelConfiguration: string[] = [
 		"iam:PassRole",
 		"chatbot:UpdateMicrosoftTeamsChannelConfiguration",
 	];
 	/** IAM actions required for the UpdateSlackChannelConfiguration API call. */
-	static readonly UPDATE_SLACK_CHANNEL_CONFIGURATION: string[] = [
+	static readonly UpdateSlackChannelConfiguration: string[] = [
 		"iam:PassRole",
 		"chatbot:UpdateSlackChannelConfiguration",
 	];
@@ -415,74 +437,82 @@ export class ChatbotOperations {
  */
 export class ChatbotConditions {
 	/** Condition keys applicable to the AssociateToConfiguration action. */
-	static readonly ASSOCIATE_TO_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly AssociateToConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateChimeWebhookConfiguration action. */
-	static readonly CREATE_CHIME_WEBHOOK_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateChimeWebhookConfigurationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateCustomAction action. */
-	static readonly CREATE_CUSTOM_ACTION_CONDITION_KEYS: string[] = [
+	static readonly CreateCustomActionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMicrosoftTeamsChannelConfiguration action. */
-	static readonly CREATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly CreateMicrosoftTeamsChannelConfigurationConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateSlackChannelConfiguration action. */
-	static readonly CREATE_SLACK_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateSlackChannelConfigurationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the DeleteChimeWebhookConfiguration action. */
-	static readonly DELETE_CHIME_WEBHOOK_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteChimeWebhookConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteCustomAction action. */
-	static readonly DELETE_CUSTOM_ACTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteCustomActionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteMicrosoftTeamsChannelConfiguration action. */
-	static readonly DELETE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly DeleteMicrosoftTeamsChannelConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the DeleteSlackChannelConfiguration action. */
-	static readonly DELETE_SLACK_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly DeleteSlackChannelConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DisassociateFromConfiguration action. */
-	static readonly DISASSOCIATE_FROM_CONFIGURATION_CONDITION_KEYS: string[] = [
+	static readonly DisassociateFromConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetCustomAction action. */
-	static readonly GET_CUSTOM_ACTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetCustomActionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetMicrosoftTeamsChannelConfiguration action. */
-	static readonly GET_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly actionGetMicrosoftTeamsChannelConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateChimeWebhookConfiguration action. */
-	static readonly UPDATE_CHIME_WEBHOOK_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateChimeWebhookConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateCustomAction action. */
-	static readonly UPDATE_CUSTOM_ACTION_CONDITION_KEYS: string[] = [
+	static readonly UpdateCustomActionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateMicrosoftTeamsChannelConfiguration action. */
-	static readonly UPDATE_MICROSOFT_TEAMS_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly UpdateMicrosoftTeamsChannelConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}"];
 	/** Condition keys applicable to the UpdateSlackChannelConfiguration action. */
-	static readonly UPDATE_SLACK_CHANNEL_CONFIGURATION_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly UpdateSlackChannelConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

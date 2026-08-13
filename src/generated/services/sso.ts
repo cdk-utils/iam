@@ -13,481 +13,660 @@ export class SSOActions {
 	static readonly SERVICE_PREFIX = "sso";
 
 	/** [Write] sso:AddRegion */
-	static readonly ADD_REGION = "sso:AddRegion";
+	static readonly AddRegion = "sso:AddRegion";
 	/** [Write] sso:AssociateDirectory */
-	static readonly ASSOCIATE_DIRECTORY = "sso:AssociateDirectory";
+	static readonly AssociateDirectory = "sso:AssociateDirectory";
 	/** [Write] sso:AssociateProfile */
-	static readonly ASSOCIATE_PROFILE = "sso:AssociateProfile";
+	static readonly AssociateProfile = "sso:AssociateProfile";
 	/** [PermissionManagement] sso:AttachCustomerManagedPolicyReferenceToPermissionSet */
-	static readonly ATTACH_CUSTOMER_MANAGED_POLICY_REFERENCE_TO_PERMISSION_SET =
+	static readonly AttachCustomerManagedPolicyReferenceToPermissionSet =
 		"sso:AttachCustomerManagedPolicyReferenceToPermissionSet";
 	/** [PermissionManagement] sso:AttachManagedPolicyToPermissionSet */
-	static readonly ATTACH_MANAGED_POLICY_TO_PERMISSION_SET =
+	static readonly AttachManagedPolicyToPermissionSet =
 		"sso:AttachManagedPolicyToPermissionSet";
 	/** [Write] sso:CreateAccountAssignment */
-	static readonly CREATE_ACCOUNT_ASSIGNMENT = "sso:CreateAccountAssignment";
+	static readonly CreateAccountAssignment = "sso:CreateAccountAssignment";
 	/** [Write] sso:CreateApplication */
-	static readonly CREATE_APPLICATION = "sso:CreateApplication";
+	static readonly CreateApplication = "sso:CreateApplication";
 	/** [Write] sso:CreateApplicationAssignment */
-	static readonly CREATE_APPLICATION_ASSIGNMENT =
+	static readonly CreateApplicationAssignment =
 		"sso:CreateApplicationAssignment";
 	/** [Write] sso:CreateApplicationInstance */
-	static readonly CREATE_APPLICATION_INSTANCE = "sso:CreateApplicationInstance";
+	static readonly CreateApplicationInstance = "sso:CreateApplicationInstance";
 	/** [Write] sso:CreateApplicationInstanceCertificate */
-	static readonly CREATE_APPLICATION_INSTANCE_CERTIFICATE =
+	static readonly CreateApplicationInstanceCertificate =
 		"sso:CreateApplicationInstanceCertificate";
 	/** [Write] sso:CreateInstance */
-	static readonly CREATE_INSTANCE = "sso:CreateInstance";
+	static readonly CreateInstance = "sso:CreateInstance";
 	/** [Write] sso:CreateInstanceAccessControlAttributeConfiguration */
-	static readonly CREATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION =
+	static readonly CreateInstanceAccessControlAttributeConfiguration =
 		"sso:CreateInstanceAccessControlAttributeConfiguration";
 	/** [Write] sso:CreateManagedApplicationInstance */
-	static readonly CREATE_MANAGED_APPLICATION_INSTANCE =
+	static readonly CreateManagedApplicationInstance =
 		"sso:CreateManagedApplicationInstance";
 	/** [Write] sso:CreatePermissionSet */
-	static readonly CREATE_PERMISSION_SET = "sso:CreatePermissionSet";
+	static readonly CreatePermissionSet = "sso:CreatePermissionSet";
 	/** [Write] sso:CreateProfile */
-	static readonly CREATE_PROFILE = "sso:CreateProfile";
+	static readonly CreateProfile = "sso:CreateProfile";
 	/** [Write] sso:CreateTrust */
-	static readonly CREATE_TRUST = "sso:CreateTrust";
+	static readonly CreateTrust = "sso:CreateTrust";
 	/** [Write] sso:CreateTrustedTokenIssuer */
-	static readonly CREATE_TRUSTED_TOKEN_ISSUER = "sso:CreateTrustedTokenIssuer";
+	static readonly CreateTrustedTokenIssuer = "sso:CreateTrustedTokenIssuer";
 	/** [Write] sso:DeleteAccountAssignment */
-	static readonly DELETE_ACCOUNT_ASSIGNMENT = "sso:DeleteAccountAssignment";
+	static readonly DeleteAccountAssignment = "sso:DeleteAccountAssignment";
 	/** [Write] sso:DeleteApplication */
-	static readonly DELETE_APPLICATION = "sso:DeleteApplication";
+	static readonly DeleteApplication = "sso:DeleteApplication";
 	/** [Write] sso:DeleteApplicationAccessScope */
-	static readonly DELETE_APPLICATION_ACCESS_SCOPE =
+	static readonly DeleteApplicationAccessScope =
 		"sso:DeleteApplicationAccessScope";
 	/** [Write] sso:DeleteApplicationAssignment */
-	static readonly DELETE_APPLICATION_ASSIGNMENT =
+	static readonly DeleteApplicationAssignment =
 		"sso:DeleteApplicationAssignment";
 	/** [Write] sso:DeleteApplicationAuthenticationMethod */
-	static readonly DELETE_APPLICATION_AUTHENTICATION_METHOD =
+	static readonly DeleteApplicationAuthenticationMethod =
 		"sso:DeleteApplicationAuthenticationMethod";
 	/** [Write] sso:DeleteApplicationGrant */
-	static readonly DELETE_APPLICATION_GRANT = "sso:DeleteApplicationGrant";
+	static readonly DeleteApplicationGrant = "sso:DeleteApplicationGrant";
 	/** [Write] sso:DeleteApplicationInstance */
-	static readonly DELETE_APPLICATION_INSTANCE = "sso:DeleteApplicationInstance";
+	static readonly DeleteApplicationInstance = "sso:DeleteApplicationInstance";
 	/** [Write] sso:DeleteApplicationInstanceCertificate */
-	static readonly DELETE_APPLICATION_INSTANCE_CERTIFICATE =
+	static readonly DeleteApplicationInstanceCertificate =
 		"sso:DeleteApplicationInstanceCertificate";
 	/** [Write] sso:DeleteInlinePolicyFromPermissionSet */
-	static readonly DELETE_INLINE_POLICY_FROM_PERMISSION_SET =
+	static readonly DeleteInlinePolicyFromPermissionSet =
 		"sso:DeleteInlinePolicyFromPermissionSet";
 	/** [Write] sso:DeleteInstance */
-	static readonly DELETE_INSTANCE = "sso:DeleteInstance";
+	static readonly DeleteInstance = "sso:DeleteInstance";
 	/** [Write] sso:DeleteInstanceAccessControlAttributeConfiguration */
-	static readonly DELETE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION =
+	static readonly DeleteInstanceAccessControlAttributeConfiguration =
 		"sso:DeleteInstanceAccessControlAttributeConfiguration";
 	/** [Write] sso:DeleteManagedApplicationInstance */
-	static readonly DELETE_MANAGED_APPLICATION_INSTANCE =
+	static readonly DeleteManagedApplicationInstance =
 		"sso:DeleteManagedApplicationInstance";
 	/** [Write] sso:DeletePermissionSet */
-	static readonly DELETE_PERMISSION_SET = "sso:DeletePermissionSet";
+	static readonly DeletePermissionSet = "sso:DeletePermissionSet";
 	/** [PermissionManagement] sso:DeletePermissionsBoundaryFromPermissionSet */
-	static readonly DELETE_PERMISSIONS_BOUNDARY_FROM_PERMISSION_SET =
+	static readonly DeletePermissionsBoundaryFromPermissionSet =
 		"sso:DeletePermissionsBoundaryFromPermissionSet";
 	/** [Write] sso:DeleteProfile */
-	static readonly DELETE_PROFILE = "sso:DeleteProfile";
+	static readonly DeleteProfile = "sso:DeleteProfile";
 	/** [Write] sso:DeleteTrustedTokenIssuer */
-	static readonly DELETE_TRUSTED_TOKEN_ISSUER = "sso:DeleteTrustedTokenIssuer";
+	static readonly DeleteTrustedTokenIssuer = "sso:DeleteTrustedTokenIssuer";
 	/** [Read] sso:DescribeAccountAssignmentCreationStatus */
-	static readonly DESCRIBE_ACCOUNT_ASSIGNMENT_CREATION_STATUS =
+	static readonly DescribeAccountAssignmentCreationStatus =
 		"sso:DescribeAccountAssignmentCreationStatus";
 	/** [Read] sso:DescribeAccountAssignmentDeletionStatus */
-	static readonly DESCRIBE_ACCOUNT_ASSIGNMENT_DELETION_STATUS =
+	static readonly DescribeAccountAssignmentDeletionStatus =
 		"sso:DescribeAccountAssignmentDeletionStatus";
 	/** [Read] sso:DescribeApplication */
-	static readonly DESCRIBE_APPLICATION = "sso:DescribeApplication";
+	static readonly DescribeApplication = "sso:DescribeApplication";
 	/** [Read] sso:DescribeApplicationAssignment */
-	static readonly DESCRIBE_APPLICATION_ASSIGNMENT =
+	static readonly DescribeApplicationAssignment =
 		"sso:DescribeApplicationAssignment";
 	/** [Read] sso:DescribeApplicationProvider */
-	static readonly DESCRIBE_APPLICATION_PROVIDER =
+	static readonly DescribeApplicationProvider =
 		"sso:DescribeApplicationProvider";
 	/** [Read] sso:DescribeInstance */
-	static readonly DESCRIBE_INSTANCE = "sso:DescribeInstance";
+	static readonly DescribeInstance = "sso:DescribeInstance";
 	/** [Read] sso:DescribeInstanceAccessControlAttributeConfiguration */
-	static readonly DESCRIBE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION =
+	static readonly DescribeInstanceAccessControlAttributeConfiguration =
 		"sso:DescribeInstanceAccessControlAttributeConfiguration";
 	/** [Read] sso:DescribePermissionSet */
-	static readonly DESCRIBE_PERMISSION_SET = "sso:DescribePermissionSet";
+	static readonly DescribePermissionSet = "sso:DescribePermissionSet";
 	/** [Read] sso:DescribePermissionSetProvisioningStatus */
-	static readonly DESCRIBE_PERMISSION_SET_PROVISIONING_STATUS =
+	static readonly DescribePermissionSetProvisioningStatus =
 		"sso:DescribePermissionSetProvisioningStatus";
 	/** [Read] sso:DescribeRegion */
-	static readonly DESCRIBE_REGION = "sso:DescribeRegion";
+	static readonly DescribeRegion = "sso:DescribeRegion";
 	/** [Read] sso:DescribeRegisteredRegions */
-	static readonly DESCRIBE_REGISTERED_REGIONS = "sso:DescribeRegisteredRegions";
+	static readonly DescribeRegisteredRegions = "sso:DescribeRegisteredRegions";
 	/** [Read] sso:DescribeTrustedTokenIssuer */
-	static readonly DESCRIBE_TRUSTED_TOKEN_ISSUER =
-		"sso:DescribeTrustedTokenIssuer";
+	static readonly DescribeTrustedTokenIssuer = "sso:DescribeTrustedTokenIssuer";
 	/** [PermissionManagement] sso:DetachCustomerManagedPolicyReferenceFromPermissionSet */
-	static readonly DETACH_CUSTOMER_MANAGED_POLICY_REFERENCE_FROM_PERMISSION_SET =
+	static readonly DetachCustomerManagedPolicyReferenceFromPermissionSet =
 		"sso:DetachCustomerManagedPolicyReferenceFromPermissionSet";
 	/** [PermissionManagement] sso:DetachManagedPolicyFromPermissionSet */
-	static readonly DETACH_MANAGED_POLICY_FROM_PERMISSION_SET =
+	static readonly DetachManagedPolicyFromPermissionSet =
 		"sso:DetachManagedPolicyFromPermissionSet";
 	/** [Write] sso:DisassociateDirectory */
-	static readonly DISASSOCIATE_DIRECTORY = "sso:DisassociateDirectory";
+	static readonly DisassociateDirectory = "sso:DisassociateDirectory";
 	/** [Write] sso:DisassociateProfile */
-	static readonly DISASSOCIATE_PROFILE = "sso:DisassociateProfile";
+	static readonly DisassociateProfile = "sso:DisassociateProfile";
 	/** [Read] sso:GetApplicationAccessScope */
-	static readonly GET_APPLICATION_ACCESS_SCOPE =
+	static readonly actionGetApplicationAccessScope =
 		"sso:GetApplicationAccessScope";
 	/** [Read] sso:GetApplicationAssignmentConfiguration */
-	static readonly GET_APPLICATION_ASSIGNMENT_CONFIGURATION =
+	static readonly actionGetApplicationAssignmentConfiguration =
 		"sso:GetApplicationAssignmentConfiguration";
 	/** [Read] sso:GetApplicationAuthenticationMethod */
-	static readonly GET_APPLICATION_AUTHENTICATION_METHOD =
+	static readonly actionGetApplicationAuthenticationMethod =
 		"sso:GetApplicationAuthenticationMethod";
 	/** [Read] sso:GetApplicationGrant */
-	static readonly GET_APPLICATION_GRANT = "sso:GetApplicationGrant";
+	static readonly actionGetApplicationGrant = "sso:GetApplicationGrant";
 	/** [Read] sso:GetApplicationInstance */
-	static readonly GET_APPLICATION_INSTANCE = "sso:GetApplicationInstance";
+	static readonly actionGetApplicationInstance = "sso:GetApplicationInstance";
 	/** [Read] sso:GetApplicationSessionConfiguration */
-	static readonly GET_APPLICATION_SESSION_CONFIGURATION =
+	static readonly actionGetApplicationSessionConfiguration =
 		"sso:GetApplicationSessionConfiguration";
 	/** [Read] sso:GetApplicationTemplate */
-	static readonly GET_APPLICATION_TEMPLATE = "sso:GetApplicationTemplate";
+	static readonly actionGetApplicationTemplate = "sso:GetApplicationTemplate";
 	/** [Read] sso:GetInlinePolicyForPermissionSet */
-	static readonly GET_INLINE_POLICY_FOR_PERMISSION_SET =
+	static readonly actionGetInlinePolicyForPermissionSet =
 		"sso:GetInlinePolicyForPermissionSet";
 	/** [Read] sso:GetManagedApplicationInstance */
-	static readonly GET_MANAGED_APPLICATION_INSTANCE =
+	static readonly actionGetManagedApplicationInstance =
 		"sso:GetManagedApplicationInstance";
 	/** [Read] sso:GetMfaDeviceManagementForDirectory */
-	static readonly GET_MFA_DEVICE_MANAGEMENT_FOR_DIRECTORY =
+	static readonly actionGetMfaDeviceManagementForDirectory =
 		"sso:GetMfaDeviceManagementForDirectory";
 	/** [Read] sso:GetPermissionSet */
-	static readonly GET_PERMISSION_SET = "sso:GetPermissionSet";
+	static readonly actionGetPermissionSet = "sso:GetPermissionSet";
 	/** [Read] sso:GetPermissionsBoundaryForPermissionSet */
-	static readonly GET_PERMISSIONS_BOUNDARY_FOR_PERMISSION_SET =
+	static readonly actionGetPermissionsBoundaryForPermissionSet =
 		"sso:GetPermissionsBoundaryForPermissionSet";
 	/** [Read] sso:GetProfile */
-	static readonly GET_PROFILE = "sso:GetProfile";
+	static readonly actionGetProfile = "sso:GetProfile";
 	/** [Read] sso:GetSSOStatus */
-	static readonly GET_SSO_STATUS = "sso:GetSSOStatus";
+	static readonly actionGetSSOStatus = "sso:GetSSOStatus";
 	/** [Read] sso:GetSharedSsoConfiguration */
-	static readonly GET_SHARED_SSO_CONFIGURATION =
+	static readonly actionGetSharedSsoConfiguration =
 		"sso:GetSharedSsoConfiguration";
 	/** [Read] sso:GetSsoConfiguration */
-	static readonly GET_SSO_CONFIGURATION = "sso:GetSsoConfiguration";
+	static readonly actionGetSsoConfiguration = "sso:GetSsoConfiguration";
 	/** [Read] sso:GetTrust */
-	static readonly GET_TRUST = "sso:GetTrust";
+	static readonly actionGetTrust = "sso:GetTrust";
 	/** [Write] sso:ImportApplicationInstanceServiceProviderMetadata */
-	static readonly IMPORT_APPLICATION_INSTANCE_SERVICE_PROVIDER_METADATA =
+	static readonly ImportApplicationInstanceServiceProviderMetadata =
 		"sso:ImportApplicationInstanceServiceProviderMetadata";
 	/** [List] sso:ListAccountAssignmentCreationStatus */
-	static readonly LIST_ACCOUNT_ASSIGNMENT_CREATION_STATUS =
+	static readonly ListAccountAssignmentCreationStatus =
 		"sso:ListAccountAssignmentCreationStatus";
 	/** [List] sso:ListAccountAssignmentDeletionStatus */
-	static readonly LIST_ACCOUNT_ASSIGNMENT_DELETION_STATUS =
+	static readonly ListAccountAssignmentDeletionStatus =
 		"sso:ListAccountAssignmentDeletionStatus";
 	/** [List] sso:ListAccountAssignments */
-	static readonly LIST_ACCOUNT_ASSIGNMENTS = "sso:ListAccountAssignments";
+	static readonly ListAccountAssignments = "sso:ListAccountAssignments";
 	/** [List] sso:ListAccountAssignmentsForPrincipal */
-	static readonly LIST_ACCOUNT_ASSIGNMENTS_FOR_PRINCIPAL =
+	static readonly ListAccountAssignmentsForPrincipal =
 		"sso:ListAccountAssignmentsForPrincipal";
 	/** [List] sso:ListAccountsForProvisionedPermissionSet */
-	static readonly LIST_ACCOUNTS_FOR_PROVISIONED_PERMISSION_SET =
+	static readonly ListAccountsForProvisionedPermissionSet =
 		"sso:ListAccountsForProvisionedPermissionSet";
 	/** [List] sso:ListApplicationAccessScopes */
-	static readonly LIST_APPLICATION_ACCESS_SCOPES =
+	static readonly ListApplicationAccessScopes =
 		"sso:ListApplicationAccessScopes";
 	/** [List] sso:ListApplicationAssignments */
-	static readonly LIST_APPLICATION_ASSIGNMENTS =
-		"sso:ListApplicationAssignments";
+	static readonly ListApplicationAssignments = "sso:ListApplicationAssignments";
 	/** [List] sso:ListApplicationAssignmentsForPrincipal */
-	static readonly LIST_APPLICATION_ASSIGNMENTS_FOR_PRINCIPAL =
+	static readonly ListApplicationAssignmentsForPrincipal =
 		"sso:ListApplicationAssignmentsForPrincipal";
 	/** [List] sso:ListApplicationAuthenticationMethods */
-	static readonly LIST_APPLICATION_AUTHENTICATION_METHODS =
+	static readonly ListApplicationAuthenticationMethods =
 		"sso:ListApplicationAuthenticationMethods";
 	/** [List] sso:ListApplicationGrants */
-	static readonly LIST_APPLICATION_GRANTS = "sso:ListApplicationGrants";
+	static readonly ListApplicationGrants = "sso:ListApplicationGrants";
 	/** [Read] sso:ListApplicationInstanceCertificates */
-	static readonly LIST_APPLICATION_INSTANCE_CERTIFICATES =
+	static readonly ListApplicationInstanceCertificates =
 		"sso:ListApplicationInstanceCertificates";
 	/** [List] sso:ListApplicationInstances */
-	static readonly LIST_APPLICATION_INSTANCES = "sso:ListApplicationInstances";
+	static readonly ListApplicationInstances = "sso:ListApplicationInstances";
 	/** [List] sso:ListApplicationProviders */
-	static readonly LIST_APPLICATION_PROVIDERS = "sso:ListApplicationProviders";
+	static readonly ListApplicationProviders = "sso:ListApplicationProviders";
 	/** [List] sso:ListApplicationTemplates */
-	static readonly LIST_APPLICATION_TEMPLATES = "sso:ListApplicationTemplates";
+	static readonly ListApplicationTemplates = "sso:ListApplicationTemplates";
 	/** [List] sso:ListApplications */
-	static readonly LIST_APPLICATIONS = "sso:ListApplications";
+	static readonly ListApplications = "sso:ListApplications";
 	/** [List] sso:ListCustomerManagedPolicyReferencesInPermissionSet */
-	static readonly LIST_CUSTOMER_MANAGED_POLICY_REFERENCES_IN_PERMISSION_SET =
+	static readonly ListCustomerManagedPolicyReferencesInPermissionSet =
 		"sso:ListCustomerManagedPolicyReferencesInPermissionSet";
 	/** [Read] sso:ListDirectoryAssociations */
-	static readonly LIST_DIRECTORY_ASSOCIATIONS = "sso:ListDirectoryAssociations";
+	static readonly ListDirectoryAssociations = "sso:ListDirectoryAssociations";
 	/** [List] sso:ListInstances */
-	static readonly LIST_INSTANCES = "sso:ListInstances";
+	static readonly ListInstances = "sso:ListInstances";
 	/** [List] sso:ListManagedPoliciesInPermissionSet */
-	static readonly LIST_MANAGED_POLICIES_IN_PERMISSION_SET =
+	static readonly ListManagedPoliciesInPermissionSet =
 		"sso:ListManagedPoliciesInPermissionSet";
 	/** [List] sso:ListPermissionSetProvisioningStatus */
-	static readonly LIST_PERMISSION_SET_PROVISIONING_STATUS =
+	static readonly ListPermissionSetProvisioningStatus =
 		"sso:ListPermissionSetProvisioningStatus";
 	/** [List] sso:ListPermissionSets */
-	static readonly LIST_PERMISSION_SETS = "sso:ListPermissionSets";
+	static readonly ListPermissionSets = "sso:ListPermissionSets";
 	/** [List] sso:ListPermissionSetsProvisionedToAccount */
-	static readonly LIST_PERMISSION_SETS_PROVISIONED_TO_ACCOUNT =
+	static readonly ListPermissionSetsProvisionedToAccount =
 		"sso:ListPermissionSetsProvisionedToAccount";
 	/** [Read] sso:ListProfileAssociations */
-	static readonly LIST_PROFILE_ASSOCIATIONS = "sso:ListProfileAssociations";
+	static readonly ListProfileAssociations = "sso:ListProfileAssociations";
 	/** [List] sso:ListProfiles */
-	static readonly LIST_PROFILES = "sso:ListProfiles";
+	static readonly ListProfiles = "sso:ListProfiles";
 	/** [List] sso:ListRegions */
-	static readonly LIST_REGIONS = "sso:ListRegions";
+	static readonly ListRegions = "sso:ListRegions";
 	/** [Read] sso:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "sso:ListTagsForResource";
+	static readonly ListTagsForResource = "sso:ListTagsForResource";
 	/** [List] sso:ListTrustedTokenIssuers */
-	static readonly LIST_TRUSTED_TOKEN_ISSUERS = "sso:ListTrustedTokenIssuers";
+	static readonly ListTrustedTokenIssuers = "sso:ListTrustedTokenIssuers";
 	/** [Write] sso:ProvisionPermissionSet */
-	static readonly PROVISION_PERMISSION_SET = "sso:ProvisionPermissionSet";
+	static readonly ProvisionPermissionSet = "sso:ProvisionPermissionSet";
 	/** [Write] sso:PutApplicationAccessScope */
-	static readonly PUT_APPLICATION_ACCESS_SCOPE =
-		"sso:PutApplicationAccessScope";
+	static readonly PutApplicationAccessScope = "sso:PutApplicationAccessScope";
 	/** [Write] sso:PutApplicationAssignmentConfiguration */
-	static readonly PUT_APPLICATION_ASSIGNMENT_CONFIGURATION =
+	static readonly PutApplicationAssignmentConfiguration =
 		"sso:PutApplicationAssignmentConfiguration";
 	/** [Write] sso:PutApplicationAuthenticationMethod */
-	static readonly PUT_APPLICATION_AUTHENTICATION_METHOD =
+	static readonly PutApplicationAuthenticationMethod =
 		"sso:PutApplicationAuthenticationMethod";
 	/** [Write] sso:PutApplicationGrant */
-	static readonly PUT_APPLICATION_GRANT = "sso:PutApplicationGrant";
+	static readonly PutApplicationGrant = "sso:PutApplicationGrant";
 	/** [Write] sso:PutApplicationSessionConfiguration */
-	static readonly PUT_APPLICATION_SESSION_CONFIGURATION =
+	static readonly PutApplicationSessionConfiguration =
 		"sso:PutApplicationSessionConfiguration";
 	/** [Write] sso:PutInlinePolicyToPermissionSet */
-	static readonly PUT_INLINE_POLICY_TO_PERMISSION_SET =
+	static readonly PutInlinePolicyToPermissionSet =
 		"sso:PutInlinePolicyToPermissionSet";
 	/** [Write] sso:PutMfaDeviceManagementForDirectory */
-	static readonly PUT_MFA_DEVICE_MANAGEMENT_FOR_DIRECTORY =
+	static readonly PutMfaDeviceManagementForDirectory =
 		"sso:PutMfaDeviceManagementForDirectory";
 	/** [PermissionManagement] sso:PutPermissionsBoundaryToPermissionSet */
-	static readonly PUT_PERMISSIONS_BOUNDARY_TO_PERMISSION_SET =
+	static readonly PutPermissionsBoundaryToPermissionSet =
 		"sso:PutPermissionsBoundaryToPermissionSet";
 	/** [PermissionManagement] sso:PutPermissionsPolicy */
-	static readonly PUT_PERMISSIONS_POLICY = "sso:PutPermissionsPolicy";
+	static readonly PutPermissionsPolicy = "sso:PutPermissionsPolicy";
 	/** [Write] sso:RemoveRegion */
-	static readonly REMOVE_REGION = "sso:RemoveRegion";
+	static readonly RemoveRegion = "sso:RemoveRegion";
 	/** [Read] sso:SearchGroups */
-	static readonly SEARCH_GROUPS = "sso:SearchGroups";
+	static readonly SearchGroups = "sso:SearchGroups";
 	/** [Read] sso:SearchUsers */
-	static readonly SEARCH_USERS = "sso:SearchUsers";
+	static readonly SearchUsers = "sso:SearchUsers";
 	/** [Write] sso:StartSSO */
-	static readonly START_SSO = "sso:StartSSO";
+	static readonly StartSSO = "sso:StartSSO";
 	/** [Tagging] sso:TagResource */
-	static readonly TAG_RESOURCE = "sso:TagResource";
+	static readonly TagResource = "sso:TagResource";
 	/** [Tagging] sso:UntagResource */
-	static readonly UNTAG_RESOURCE = "sso:UntagResource";
+	static readonly UntagResource = "sso:UntagResource";
 	/** [Write] sso:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "sso:UpdateApplication";
+	static readonly UpdateApplication = "sso:UpdateApplication";
 	/** [Write] sso:UpdateApplicationInstanceActiveCertificate */
-	static readonly UPDATE_APPLICATION_INSTANCE_ACTIVE_CERTIFICATE =
+	static readonly UpdateApplicationInstanceActiveCertificate =
 		"sso:UpdateApplicationInstanceActiveCertificate";
 	/** [Write] sso:UpdateApplicationInstanceDisplayData */
-	static readonly UPDATE_APPLICATION_INSTANCE_DISPLAY_DATA =
+	static readonly UpdateApplicationInstanceDisplayData =
 		"sso:UpdateApplicationInstanceDisplayData";
 	/** [Write] sso:UpdateApplicationInstanceResponseConfiguration */
-	static readonly UPDATE_APPLICATION_INSTANCE_RESPONSE_CONFIGURATION =
+	static readonly UpdateApplicationInstanceResponseConfiguration =
 		"sso:UpdateApplicationInstanceResponseConfiguration";
 	/** [Write] sso:UpdateApplicationInstanceResponseSchemaConfiguration */
-	static readonly UPDATE_APPLICATION_INSTANCE_RESPONSE_SCHEMA_CONFIGURATION =
+	static readonly UpdateApplicationInstanceResponseSchemaConfiguration =
 		"sso:UpdateApplicationInstanceResponseSchemaConfiguration";
 	/** [Write] sso:UpdateApplicationInstanceSecurityConfiguration */
-	static readonly UPDATE_APPLICATION_INSTANCE_SECURITY_CONFIGURATION =
+	static readonly UpdateApplicationInstanceSecurityConfiguration =
 		"sso:UpdateApplicationInstanceSecurityConfiguration";
 	/** [Write] sso:UpdateApplicationInstanceServiceProviderConfiguration */
-	static readonly UPDATE_APPLICATION_INSTANCE_SERVICE_PROVIDER_CONFIGURATION =
+	static readonly UpdateApplicationInstanceServiceProviderConfiguration =
 		"sso:UpdateApplicationInstanceServiceProviderConfiguration";
 	/** [Write] sso:UpdateApplicationInstanceStatus */
-	static readonly UPDATE_APPLICATION_INSTANCE_STATUS =
+	static readonly UpdateApplicationInstanceStatus =
 		"sso:UpdateApplicationInstanceStatus";
 	/** [Write] sso:UpdateInstance */
-	static readonly UPDATE_INSTANCE = "sso:UpdateInstance";
+	static readonly UpdateInstance = "sso:UpdateInstance";
 	/** [Write] sso:UpdateInstanceAccessControlAttributeConfiguration */
-	static readonly UPDATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION =
+	static readonly UpdateInstanceAccessControlAttributeConfiguration =
 		"sso:UpdateInstanceAccessControlAttributeConfiguration";
 	/** [Write] sso:UpdateManagedApplicationInstanceStatus */
-	static readonly UPDATE_MANAGED_APPLICATION_INSTANCE_STATUS =
+	static readonly UpdateManagedApplicationInstanceStatus =
 		"sso:UpdateManagedApplicationInstanceStatus";
 	/** [PermissionManagement] sso:UpdatePermissionSet */
-	static readonly UPDATE_PERMISSION_SET = "sso:UpdatePermissionSet";
+	static readonly UpdatePermissionSet = "sso:UpdatePermissionSet";
 	/** [Write] sso:UpdateProfile */
-	static readonly UPDATE_PROFILE = "sso:UpdateProfile";
+	static readonly UpdateProfile = "sso:UpdateProfile";
 	/** [Write] sso:UpdateSSOConfiguration */
-	static readonly UPDATE_SSO_CONFIGURATION = "sso:UpdateSSOConfiguration";
+	static readonly UpdateSSOConfiguration = "sso:UpdateSSOConfiguration";
 	/** [Write] sso:UpdateTrust */
-	static readonly UPDATE_TRUST = "sso:UpdateTrust";
+	static readonly UpdateTrust = "sso:UpdateTrust";
 	/** [Write] sso:UpdateTrustedTokenIssuer */
-	static readonly UPDATE_TRUSTED_TOKEN_ISSUER = "sso:UpdateTrustedTokenIssuer";
+	static readonly UpdateTrustedTokenIssuer = "sso:UpdateTrustedTokenIssuer";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SSOActions.DESCRIBE_ACCOUNT_ASSIGNMENT_CREATION_STATUS,
-		SSOActions.DESCRIBE_ACCOUNT_ASSIGNMENT_DELETION_STATUS,
-		SSOActions.DESCRIBE_APPLICATION,
-		SSOActions.DESCRIBE_APPLICATION_ASSIGNMENT,
-		SSOActions.DESCRIBE_APPLICATION_PROVIDER,
-		SSOActions.DESCRIBE_INSTANCE,
-		SSOActions.DESCRIBE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION,
-		SSOActions.DESCRIBE_PERMISSION_SET,
-		SSOActions.DESCRIBE_PERMISSION_SET_PROVISIONING_STATUS,
-		SSOActions.DESCRIBE_REGION,
-		SSOActions.DESCRIBE_REGISTERED_REGIONS,
-		SSOActions.DESCRIBE_TRUSTED_TOKEN_ISSUER,
-		SSOActions.GET_APPLICATION_ACCESS_SCOPE,
-		SSOActions.GET_APPLICATION_ASSIGNMENT_CONFIGURATION,
-		SSOActions.GET_APPLICATION_AUTHENTICATION_METHOD,
-		SSOActions.GET_APPLICATION_GRANT,
-		SSOActions.GET_APPLICATION_INSTANCE,
-		SSOActions.GET_APPLICATION_SESSION_CONFIGURATION,
-		SSOActions.GET_APPLICATION_TEMPLATE,
-		SSOActions.GET_INLINE_POLICY_FOR_PERMISSION_SET,
-		SSOActions.GET_MANAGED_APPLICATION_INSTANCE,
-		SSOActions.GET_MFA_DEVICE_MANAGEMENT_FOR_DIRECTORY,
-		SSOActions.GET_PERMISSION_SET,
-		SSOActions.GET_PERMISSIONS_BOUNDARY_FOR_PERMISSION_SET,
-		SSOActions.GET_PROFILE,
-		SSOActions.GET_SSO_STATUS,
-		SSOActions.GET_SHARED_SSO_CONFIGURATION,
-		SSOActions.GET_SSO_CONFIGURATION,
-		SSOActions.GET_TRUST,
-		SSOActions.LIST_APPLICATION_INSTANCE_CERTIFICATES,
-		SSOActions.LIST_DIRECTORY_ASSOCIATIONS,
-		SSOActions.LIST_PROFILE_ASSOCIATIONS,
-		SSOActions.LIST_TAGS_FOR_RESOURCE,
-		SSOActions.SEARCH_GROUPS,
-		SSOActions.SEARCH_USERS,
+	static readonly AllReadActions: string[] = [
+		SSOActions.DescribeAccountAssignmentCreationStatus,
+		SSOActions.DescribeAccountAssignmentDeletionStatus,
+		SSOActions.DescribeApplication,
+		SSOActions.DescribeApplicationAssignment,
+		SSOActions.DescribeApplicationProvider,
+		SSOActions.DescribeInstance,
+		SSOActions.DescribeInstanceAccessControlAttributeConfiguration,
+		SSOActions.DescribePermissionSet,
+		SSOActions.DescribePermissionSetProvisioningStatus,
+		SSOActions.DescribeRegion,
+		SSOActions.DescribeRegisteredRegions,
+		SSOActions.DescribeTrustedTokenIssuer,
+		SSOActions.actionGetApplicationAccessScope,
+		SSOActions.actionGetApplicationAssignmentConfiguration,
+		SSOActions.actionGetApplicationAuthenticationMethod,
+		SSOActions.actionGetApplicationGrant,
+		SSOActions.actionGetApplicationInstance,
+		SSOActions.actionGetApplicationSessionConfiguration,
+		SSOActions.actionGetApplicationTemplate,
+		SSOActions.actionGetInlinePolicyForPermissionSet,
+		SSOActions.actionGetManagedApplicationInstance,
+		SSOActions.actionGetMfaDeviceManagementForDirectory,
+		SSOActions.actionGetPermissionSet,
+		SSOActions.actionGetPermissionsBoundaryForPermissionSet,
+		SSOActions.actionGetProfile,
+		SSOActions.actionGetSSOStatus,
+		SSOActions.actionGetSharedSsoConfiguration,
+		SSOActions.actionGetSsoConfiguration,
+		SSOActions.actionGetTrust,
+		SSOActions.ListApplicationInstanceCertificates,
+		SSOActions.ListDirectoryAssociations,
+		SSOActions.ListProfileAssociations,
+		SSOActions.ListTagsForResource,
+		SSOActions.SearchGroups,
+		SSOActions.SearchUsers,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SSOActions.ADD_REGION,
-		SSOActions.ASSOCIATE_DIRECTORY,
-		SSOActions.ASSOCIATE_PROFILE,
-		SSOActions.CREATE_ACCOUNT_ASSIGNMENT,
-		SSOActions.CREATE_APPLICATION,
-		SSOActions.CREATE_APPLICATION_ASSIGNMENT,
-		SSOActions.CREATE_APPLICATION_INSTANCE,
-		SSOActions.CREATE_APPLICATION_INSTANCE_CERTIFICATE,
-		SSOActions.CREATE_INSTANCE,
-		SSOActions.CREATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION,
-		SSOActions.CREATE_MANAGED_APPLICATION_INSTANCE,
-		SSOActions.CREATE_PERMISSION_SET,
-		SSOActions.CREATE_PROFILE,
-		SSOActions.CREATE_TRUST,
-		SSOActions.CREATE_TRUSTED_TOKEN_ISSUER,
-		SSOActions.DELETE_ACCOUNT_ASSIGNMENT,
-		SSOActions.DELETE_APPLICATION,
-		SSOActions.DELETE_APPLICATION_ACCESS_SCOPE,
-		SSOActions.DELETE_APPLICATION_ASSIGNMENT,
-		SSOActions.DELETE_APPLICATION_AUTHENTICATION_METHOD,
-		SSOActions.DELETE_APPLICATION_GRANT,
-		SSOActions.DELETE_APPLICATION_INSTANCE,
-		SSOActions.DELETE_APPLICATION_INSTANCE_CERTIFICATE,
-		SSOActions.DELETE_INLINE_POLICY_FROM_PERMISSION_SET,
-		SSOActions.DELETE_INSTANCE,
-		SSOActions.DELETE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION,
-		SSOActions.DELETE_MANAGED_APPLICATION_INSTANCE,
-		SSOActions.DELETE_PERMISSION_SET,
-		SSOActions.DELETE_PROFILE,
-		SSOActions.DELETE_TRUSTED_TOKEN_ISSUER,
-		SSOActions.DISASSOCIATE_DIRECTORY,
-		SSOActions.DISASSOCIATE_PROFILE,
-		SSOActions.IMPORT_APPLICATION_INSTANCE_SERVICE_PROVIDER_METADATA,
-		SSOActions.PROVISION_PERMISSION_SET,
-		SSOActions.PUT_APPLICATION_ACCESS_SCOPE,
-		SSOActions.PUT_APPLICATION_ASSIGNMENT_CONFIGURATION,
-		SSOActions.PUT_APPLICATION_AUTHENTICATION_METHOD,
-		SSOActions.PUT_APPLICATION_GRANT,
-		SSOActions.PUT_APPLICATION_SESSION_CONFIGURATION,
-		SSOActions.PUT_INLINE_POLICY_TO_PERMISSION_SET,
-		SSOActions.PUT_MFA_DEVICE_MANAGEMENT_FOR_DIRECTORY,
-		SSOActions.REMOVE_REGION,
-		SSOActions.START_SSO,
-		SSOActions.UPDATE_APPLICATION,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_ACTIVE_CERTIFICATE,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_DISPLAY_DATA,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_RESPONSE_CONFIGURATION,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_RESPONSE_SCHEMA_CONFIGURATION,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_SECURITY_CONFIGURATION,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_SERVICE_PROVIDER_CONFIGURATION,
-		SSOActions.UPDATE_APPLICATION_INSTANCE_STATUS,
-		SSOActions.UPDATE_INSTANCE,
-		SSOActions.UPDATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION,
-		SSOActions.UPDATE_MANAGED_APPLICATION_INSTANCE_STATUS,
-		SSOActions.UPDATE_PROFILE,
-		SSOActions.UPDATE_SSO_CONFIGURATION,
-		SSOActions.UPDATE_TRUST,
-		SSOActions.UPDATE_TRUSTED_TOKEN_ISSUER,
+	static readonly AllWriteActions: string[] = [
+		SSOActions.AddRegion,
+		SSOActions.AssociateDirectory,
+		SSOActions.AssociateProfile,
+		SSOActions.CreateAccountAssignment,
+		SSOActions.CreateApplication,
+		SSOActions.CreateApplicationAssignment,
+		SSOActions.CreateApplicationInstance,
+		SSOActions.CreateApplicationInstanceCertificate,
+		SSOActions.CreateInstance,
+		SSOActions.CreateInstanceAccessControlAttributeConfiguration,
+		SSOActions.CreateManagedApplicationInstance,
+		SSOActions.CreatePermissionSet,
+		SSOActions.CreateProfile,
+		SSOActions.CreateTrust,
+		SSOActions.CreateTrustedTokenIssuer,
+		SSOActions.DeleteAccountAssignment,
+		SSOActions.DeleteApplication,
+		SSOActions.DeleteApplicationAccessScope,
+		SSOActions.DeleteApplicationAssignment,
+		SSOActions.DeleteApplicationAuthenticationMethod,
+		SSOActions.DeleteApplicationGrant,
+		SSOActions.DeleteApplicationInstance,
+		SSOActions.DeleteApplicationInstanceCertificate,
+		SSOActions.DeleteInlinePolicyFromPermissionSet,
+		SSOActions.DeleteInstance,
+		SSOActions.DeleteInstanceAccessControlAttributeConfiguration,
+		SSOActions.DeleteManagedApplicationInstance,
+		SSOActions.DeletePermissionSet,
+		SSOActions.DeleteProfile,
+		SSOActions.DeleteTrustedTokenIssuer,
+		SSOActions.DisassociateDirectory,
+		SSOActions.DisassociateProfile,
+		SSOActions.ImportApplicationInstanceServiceProviderMetadata,
+		SSOActions.ProvisionPermissionSet,
+		SSOActions.PutApplicationAccessScope,
+		SSOActions.PutApplicationAssignmentConfiguration,
+		SSOActions.PutApplicationAuthenticationMethod,
+		SSOActions.PutApplicationGrant,
+		SSOActions.PutApplicationSessionConfiguration,
+		SSOActions.PutInlinePolicyToPermissionSet,
+		SSOActions.PutMfaDeviceManagementForDirectory,
+		SSOActions.RemoveRegion,
+		SSOActions.StartSSO,
+		SSOActions.UpdateApplication,
+		SSOActions.UpdateApplicationInstanceActiveCertificate,
+		SSOActions.UpdateApplicationInstanceDisplayData,
+		SSOActions.UpdateApplicationInstanceResponseConfiguration,
+		SSOActions.UpdateApplicationInstanceResponseSchemaConfiguration,
+		SSOActions.UpdateApplicationInstanceSecurityConfiguration,
+		SSOActions.UpdateApplicationInstanceServiceProviderConfiguration,
+		SSOActions.UpdateApplicationInstanceStatus,
+		SSOActions.UpdateInstance,
+		SSOActions.UpdateInstanceAccessControlAttributeConfiguration,
+		SSOActions.UpdateManagedApplicationInstanceStatus,
+		SSOActions.UpdateProfile,
+		SSOActions.UpdateSSOConfiguration,
+		SSOActions.UpdateTrust,
+		SSOActions.UpdateTrustedTokenIssuer,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SSOActions.LIST_ACCOUNT_ASSIGNMENT_CREATION_STATUS,
-		SSOActions.LIST_ACCOUNT_ASSIGNMENT_DELETION_STATUS,
-		SSOActions.LIST_ACCOUNT_ASSIGNMENTS,
-		SSOActions.LIST_ACCOUNT_ASSIGNMENTS_FOR_PRINCIPAL,
-		SSOActions.LIST_ACCOUNTS_FOR_PROVISIONED_PERMISSION_SET,
-		SSOActions.LIST_APPLICATION_ACCESS_SCOPES,
-		SSOActions.LIST_APPLICATION_ASSIGNMENTS,
-		SSOActions.LIST_APPLICATION_ASSIGNMENTS_FOR_PRINCIPAL,
-		SSOActions.LIST_APPLICATION_AUTHENTICATION_METHODS,
-		SSOActions.LIST_APPLICATION_GRANTS,
-		SSOActions.LIST_APPLICATION_INSTANCES,
-		SSOActions.LIST_APPLICATION_PROVIDERS,
-		SSOActions.LIST_APPLICATION_TEMPLATES,
-		SSOActions.LIST_APPLICATIONS,
-		SSOActions.LIST_CUSTOMER_MANAGED_POLICY_REFERENCES_IN_PERMISSION_SET,
-		SSOActions.LIST_INSTANCES,
-		SSOActions.LIST_MANAGED_POLICIES_IN_PERMISSION_SET,
-		SSOActions.LIST_PERMISSION_SET_PROVISIONING_STATUS,
-		SSOActions.LIST_PERMISSION_SETS,
-		SSOActions.LIST_PERMISSION_SETS_PROVISIONED_TO_ACCOUNT,
-		SSOActions.LIST_PROFILES,
-		SSOActions.LIST_REGIONS,
-		SSOActions.LIST_TRUSTED_TOKEN_ISSUERS,
+	static readonly AllListActions: string[] = [
+		SSOActions.ListAccountAssignmentCreationStatus,
+		SSOActions.ListAccountAssignmentDeletionStatus,
+		SSOActions.ListAccountAssignments,
+		SSOActions.ListAccountAssignmentsForPrincipal,
+		SSOActions.ListAccountsForProvisionedPermissionSet,
+		SSOActions.ListApplicationAccessScopes,
+		SSOActions.ListApplicationAssignments,
+		SSOActions.ListApplicationAssignmentsForPrincipal,
+		SSOActions.ListApplicationAuthenticationMethods,
+		SSOActions.ListApplicationGrants,
+		SSOActions.ListApplicationInstances,
+		SSOActions.ListApplicationProviders,
+		SSOActions.ListApplicationTemplates,
+		SSOActions.ListApplications,
+		SSOActions.ListCustomerManagedPolicyReferencesInPermissionSet,
+		SSOActions.ListInstances,
+		SSOActions.ListManagedPoliciesInPermissionSet,
+		SSOActions.ListPermissionSetProvisioningStatus,
+		SSOActions.ListPermissionSets,
+		SSOActions.ListPermissionSetsProvisionedToAccount,
+		SSOActions.ListProfiles,
+		SSOActions.ListRegions,
+		SSOActions.ListTrustedTokenIssuers,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		SSOActions.ATTACH_CUSTOMER_MANAGED_POLICY_REFERENCE_TO_PERMISSION_SET,
-		SSOActions.ATTACH_MANAGED_POLICY_TO_PERMISSION_SET,
-		SSOActions.DELETE_PERMISSIONS_BOUNDARY_FROM_PERMISSION_SET,
-		SSOActions.DETACH_CUSTOMER_MANAGED_POLICY_REFERENCE_FROM_PERMISSION_SET,
-		SSOActions.DETACH_MANAGED_POLICY_FROM_PERMISSION_SET,
-		SSOActions.PUT_PERMISSIONS_BOUNDARY_TO_PERMISSION_SET,
-		SSOActions.PUT_PERMISSIONS_POLICY,
-		SSOActions.UPDATE_PERMISSION_SET,
+	static readonly AllPermissionManagementActions: string[] = [
+		SSOActions.AttachCustomerManagedPolicyReferenceToPermissionSet,
+		SSOActions.AttachManagedPolicyToPermissionSet,
+		SSOActions.DeletePermissionsBoundaryFromPermissionSet,
+		SSOActions.DetachCustomerManagedPolicyReferenceFromPermissionSet,
+		SSOActions.DetachManagedPolicyFromPermissionSet,
+		SSOActions.PutPermissionsBoundaryToPermissionSet,
+		SSOActions.PutPermissionsPolicy,
+		SSOActions.UpdatePermissionSet,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		SSOActions.TAG_RESOURCE,
-		SSOActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		SSOActions.TagResource,
+		SSOActions.UntagResource,
 	];
 }
 
-const AccountArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso:::account/(?<accountId>[^:/?]+)$",
-);
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso::(?<accountId>[^:/?]+):application/(?<instanceId>[^:/?]+)/(?<applicationId>[^:/?]+)$",
-);
-const ApplicationProviderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso::aws:applicationProvider/(?<applicationProviderId>[^:/?]+)$",
-);
-const InstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso:::instance/(?<instanceId>[^:/?]+)$",
-);
-const PermissionSetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso:::permissionSet/(?<instanceId>[^:/?]+)/(?<permissionSetId>[^:/?]+)$",
-);
-const TrustedTokenIssuerArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sso::(?<accountId>[^:/?]+):trustedTokenIssuer/(?<instanceId>[^:/?]+)/(?<trustedTokenIssuerId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Account ARN.
+ */
+export interface SSOAccountArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Account ARN.
+ */
+export interface SSOAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+}
+
+/**
+ * Properties for building a Application ARN.
+ */
+export interface SSOApplicationArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Application ARN.
+ */
+export interface SSOApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a ApplicationProvider ARN.
+ */
+export interface SSOApplicationProviderArnProps {
+	/** The ApplicationProviderId component of the ARN. */
+	readonly applicationProviderId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApplicationProvider ARN.
+ */
+export interface SSOApplicationProviderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationProviderId component. */
+	readonly applicationProviderId: string;
+}
+
+/**
+ * Properties for building a Instance ARN.
+ */
+export interface SSOInstanceArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Instance ARN.
+ */
+export interface SSOInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+}
+
+/**
+ * Properties for building a PermissionSet ARN.
+ */
+export interface SSOPermissionSetArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** The PermissionSetId component of the ARN. */
+	readonly permissionSetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a PermissionSet ARN.
+ */
+export interface SSOPermissionSetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+	/** The PermissionSetId component. */
+	readonly permissionSetId: string;
+}
+
+/**
+ * Properties for building a TrustedTokenIssuer ARN.
+ */
+export interface SSOTrustedTokenIssuerArnProps {
+	/** The AccountId component of the ARN. */
+	readonly accountId: string;
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** The TrustedTokenIssuerId component of the ARN. */
+	readonly trustedTokenIssuerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a TrustedTokenIssuer ARN.
+ */
+export interface SSOTrustedTokenIssuerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccountId component. */
+	readonly accountId: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+	/** The TrustedTokenIssuerId component. */
+	readonly trustedTokenIssuerId: string;
+}
+
+const AccountArnRegex =
+	/^arn:(?<partition>[^:]+):sso:::account\/(?<accountId>[^:/?]+)$/;
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):sso::(?<accountId>[^:/?]+):application\/(?<instanceId>[^:/?]+)\/(?<applicationId>[^:/?]+)$/;
+const ApplicationProviderArnRegex =
+	/^arn:(?<partition>[^:]+):sso::aws:applicationProvider\/(?<applicationProviderId>[^:/?]+)$/;
+const InstanceArnRegex =
+	/^arn:(?<partition>[^:]+):sso:::instance\/(?<instanceId>[^:/?]+)$/;
+const PermissionSetArnRegex =
+	/^arn:(?<partition>[^:]+):sso:::permissionSet\/(?<instanceId>[^:/?]+)\/(?<permissionSetId>[^:/?]+)$/;
+const TrustedTokenIssuerArnRegex =
+	/^arn:(?<partition>[^:]+):sso::(?<accountId>[^:/?]+):trustedTokenIssuer\/(?<instanceId>[^:/?]+)\/(?<trustedTokenIssuerId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for sso resources.
@@ -496,16 +675,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the Account resource.
 	 */
-	static account(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static account(props: SSOAccountArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso:::account/${props.accountId}`;
 	}
 
@@ -520,12 +690,7 @@ export class SSOResources {
 	 * Parses a Account ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccountArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-	} {
+	static parseAccountArn(arn: string): SSOAccountArnComponents {
 		const match = AccountArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Account ARN: ${arn}`);
@@ -541,20 +706,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the Application resource.
 	 */
-	static application(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: SSOApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso::${props.accountId}:application/${props.instanceId}/${props.applicationId}`;
 	}
 
@@ -569,14 +721,7 @@ export class SSOResources {
 	 * Parses a Application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		instanceId: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): SSOApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Application ARN: ${arn}`);
@@ -594,16 +739,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the ApplicationProvider resource.
 	 */
-	static applicationProvider(props: {
-		/** The ApplicationProviderId component of the ARN. */
-		readonly applicationProviderId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationProvider(props: SSOApplicationProviderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso::aws:applicationProvider/${props.applicationProviderId}`;
 	}
 
@@ -618,12 +754,9 @@ export class SSOResources {
 	 * Parses a ApplicationProvider ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationProviderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationProviderId: string;
-	} {
+	static parseApplicationProviderArn(
+		arn: string,
+	): SSOApplicationProviderArnComponents {
 		const match = ApplicationProviderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApplicationProvider ARN: ${arn}`);
@@ -639,16 +772,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the Instance resource.
 	 */
-	static instance(props: {
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instance(props: SSOInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso:::instance/${props.instanceId}`;
 	}
 
@@ -663,12 +787,7 @@ export class SSOResources {
 	 * Parses a Instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceId: string;
-	} {
+	static parseInstanceArn(arn: string): SSOInstanceArnComponents {
 		const match = InstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Instance ARN: ${arn}`);
@@ -684,18 +803,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the PermissionSet resource.
 	 */
-	static permissionSet(props: {
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** The PermissionSetId component of the ARN. */
-		readonly permissionSetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static permissionSet(props: SSOPermissionSetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso:::permissionSet/${props.instanceId}/${props.permissionSetId}`;
 	}
 
@@ -710,13 +818,7 @@ export class SSOResources {
 	 * Parses a PermissionSet ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePermissionSetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceId: string;
-		permissionSetId: string;
-	} {
+	static parsePermissionSetArn(arn: string): SSOPermissionSetArnComponents {
 		const match = PermissionSetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid PermissionSet ARN: ${arn}`);
@@ -733,20 +835,7 @@ export class SSOResources {
 	/**
 	 * Builds an ARN for the TrustedTokenIssuer resource.
 	 */
-	static trustedTokenIssuer(props: {
-		/** The AccountId component of the ARN. */
-		readonly accountId: string;
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** The TrustedTokenIssuerId component of the ARN. */
-		readonly trustedTokenIssuerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static trustedTokenIssuer(props: SSOTrustedTokenIssuerArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sso::${props.accountId}:trustedTokenIssuer/${props.instanceId}/${props.trustedTokenIssuerId}`;
 	}
 
@@ -761,14 +850,9 @@ export class SSOResources {
 	 * Parses a TrustedTokenIssuer ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTrustedTokenIssuerArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accountId: string;
-		instanceId: string;
-		trustedTokenIssuerId: string;
-	} {
+	static parseTrustedTokenIssuerArn(
+		arn: string,
+	): SSOTrustedTokenIssuerArnComponents {
 		const match = TrustedTokenIssuerArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid TrustedTokenIssuer ARN: ${arn}`);
@@ -789,17 +873,17 @@ export class SSOResources {
  */
 export class SSOOperations {
 	/** IAM actions required for the AddRegion API call. */
-	static readonly ADD_REGION: string[] = ["sso:AddRegion"];
+	static readonly AddRegion: string[] = ["sso:AddRegion"];
 	/** IAM actions required for the AttachCustomerManagedPolicyReferenceToPermissionSet API call. */
-	static readonly ATTACH_CUSTOMER_MANAGED_POLICY_REFERENCE_TO_PERMISSION_SET: string[] =
+	static readonly AttachCustomerManagedPolicyReferenceToPermissionSet: string[] =
 		["sso:AttachCustomerManagedPolicyReferenceToPermissionSet"];
 	/** IAM actions required for the AttachManagedPolicyToPermissionSet API call. */
-	static readonly ATTACH_MANAGED_POLICY_TO_PERMISSION_SET: string[] = [
+	static readonly AttachManagedPolicyToPermissionSet: string[] = [
 		"sso:AttachManagedPolicyToPermissionSet",
 		"sso:PutPermissionsPolicy",
 	];
 	/** IAM actions required for the CreateAccountAssignment API call. */
-	static readonly CREATE_ACCOUNT_ASSIGNMENT: string[] = [
+	static readonly CreateAccountAssignment: string[] = [
 		"sso:AssociateProfile",
 		"sso:CreateAccountAssignment",
 		"sso:CreateApplicationInstance",
@@ -812,7 +896,7 @@ export class SSOOperations {
 		"sso:UpdateTrust",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"sso:CreateApplication",
 		"sso:CreateApplicationInstance",
 		"sso:CreateManagedApplicationInstance",
@@ -820,297 +904,295 @@ export class SSOOperations {
 		"sso:TagResource",
 	];
 	/** IAM actions required for the CreateApplicationAssignment API call. */
-	static readonly CREATE_APPLICATION_ASSIGNMENT: string[] = [
+	static readonly CreateApplicationAssignment: string[] = [
 		"sso:AssociateProfile",
 		"sso:CreateApplicationAssignment",
 	];
 	/** IAM actions required for the CreateInstance API call. */
-	static readonly CREATE_INSTANCE: string[] = [
+	static readonly CreateInstance: string[] = [
 		"sso:CreateInstance",
 		"sso:TagResource",
 	];
 	/** IAM actions required for the CreateInstanceAccessControlAttributeConfiguration API call. */
-	static readonly CREATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION: string[] =
+	static readonly CreateInstanceAccessControlAttributeConfiguration: string[] =
 		["sso:CreateInstanceAccessControlAttributeConfiguration"];
 	/** IAM actions required for the CreatePermissionSet API call. */
-	static readonly CREATE_PERMISSION_SET: string[] = [
+	static readonly CreatePermissionSet: string[] = [
 		"sso:CreatePermissionSet",
 		"sso:TagResource",
 	];
 	/** IAM actions required for the CreateTrustedTokenIssuer API call. */
-	static readonly CREATE_TRUSTED_TOKEN_ISSUER: string[] = [
+	static readonly CreateTrustedTokenIssuer: string[] = [
 		"sso:CreateTrustedTokenIssuer",
 		"sso:TagResource",
 	];
 	/** IAM actions required for the DeleteAccountAssignment API call. */
-	static readonly DELETE_ACCOUNT_ASSIGNMENT: string[] = [
+	static readonly DeleteAccountAssignment: string[] = [
 		"sso:DeleteAccountAssignment",
 		"sso:DeleteProfile",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"sso:DeleteApplication",
 		"sso:DeleteApplicationInstance",
 		"sso:DeleteManagedApplicationInstance",
 	];
 	/** IAM actions required for the DeleteApplicationAccessScope API call. */
-	static readonly DELETE_APPLICATION_ACCESS_SCOPE: string[] = [
+	static readonly DeleteApplicationAccessScope: string[] = [
 		"sso:DeleteApplicationAccessScope",
 	];
 	/** IAM actions required for the DeleteApplicationAssignment API call. */
-	static readonly DELETE_APPLICATION_ASSIGNMENT: string[] = [
+	static readonly DeleteApplicationAssignment: string[] = [
 		"sso:DeleteApplicationAssignment",
 		"sso:DisassociateProfile",
 	];
 	/** IAM actions required for the DeleteApplicationAuthenticationMethod API call. */
-	static readonly DELETE_APPLICATION_AUTHENTICATION_METHOD: string[] = [
+	static readonly DeleteApplicationAuthenticationMethod: string[] = [
 		"sso:DeleteApplicationAuthenticationMethod",
 	];
 	/** IAM actions required for the DeleteApplicationGrant API call. */
-	static readonly DELETE_APPLICATION_GRANT: string[] = [
+	static readonly DeleteApplicationGrant: string[] = [
 		"sso:DeleteApplicationGrant",
 	];
 	/** IAM actions required for the DeleteInlinePolicyFromPermissionSet API call. */
-	static readonly DELETE_INLINE_POLICY_FROM_PERMISSION_SET: string[] = [
+	static readonly DeleteInlinePolicyFromPermissionSet: string[] = [
 		"sso:DeleteInlinePolicyFromPermissionSet",
 	];
 	/** IAM actions required for the DeleteInstance API call. */
-	static readonly DELETE_INSTANCE: string[] = [
+	static readonly DeleteInstance: string[] = [
 		"sso:DeleteInstance",
 		"sso:StartSSO",
 	];
 	/** IAM actions required for the DeleteInstanceAccessControlAttributeConfiguration API call. */
-	static readonly DELETE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION: string[] =
+	static readonly DeleteInstanceAccessControlAttributeConfiguration: string[] =
 		["sso:DeleteInstanceAccessControlAttributeConfiguration"];
 	/** IAM actions required for the DeletePermissionSet API call. */
-	static readonly DELETE_PERMISSION_SET: string[] = ["sso:DeletePermissionSet"];
+	static readonly DeletePermissionSet: string[] = ["sso:DeletePermissionSet"];
 	/** IAM actions required for the DeletePermissionsBoundaryFromPermissionSet API call. */
-	static readonly DELETE_PERMISSIONS_BOUNDARY_FROM_PERMISSION_SET: string[] = [
+	static readonly DeletePermissionsBoundaryFromPermissionSet: string[] = [
 		"sso:DeletePermissionsBoundaryFromPermissionSet",
 	];
 	/** IAM actions required for the DeleteTrustedTokenIssuer API call. */
-	static readonly DELETE_TRUSTED_TOKEN_ISSUER: string[] = [
+	static readonly DeleteTrustedTokenIssuer: string[] = [
 		"sso:DeleteTrustedTokenIssuer",
 	];
 	/** IAM actions required for the DescribeAccountAssignmentCreationStatus API call. */
-	static readonly DESCRIBE_ACCOUNT_ASSIGNMENT_CREATION_STATUS: string[] = [
+	static readonly DescribeAccountAssignmentCreationStatus: string[] = [
 		"sso:DescribeAccountAssignmentCreationStatus",
 	];
 	/** IAM actions required for the DescribeAccountAssignmentDeletionStatus API call. */
-	static readonly DESCRIBE_ACCOUNT_ASSIGNMENT_DELETION_STATUS: string[] = [
+	static readonly DescribeAccountAssignmentDeletionStatus: string[] = [
 		"sso:DescribeAccountAssignmentDeletionStatus",
 	];
 	/** IAM actions required for the DescribeApplication API call. */
-	static readonly DESCRIBE_APPLICATION: string[] = [
+	static readonly DescribeApplication: string[] = [
 		"sso:DescribeApplication",
 		"sso:GetApplicationInstance",
 		"sso:GetManagedApplicationInstance",
 	];
 	/** IAM actions required for the DescribeApplicationAssignment API call. */
-	static readonly DESCRIBE_APPLICATION_ASSIGNMENT: string[] = [
+	static readonly DescribeApplicationAssignment: string[] = [
 		"sso:DescribeApplicationAssignment",
 	];
 	/** IAM actions required for the DescribeApplicationProvider API call. */
-	static readonly DESCRIBE_APPLICATION_PROVIDER: string[] = [
+	static readonly DescribeApplicationProvider: string[] = [
 		"sso:DescribeApplicationProvider",
 		"sso:GetApplicationTemplate",
 	];
 	/** IAM actions required for the DescribeInstance API call. */
-	static readonly DESCRIBE_INSTANCE: string[] = [
+	static readonly DescribeInstance: string[] = [
 		"sso:DescribeInstance",
 		"sso:GetSharedSsoConfiguration",
 		"sso:ListDirectoryAssociations",
 	];
 	/** IAM actions required for the DescribeInstanceAccessControlAttributeConfiguration API call. */
-	static readonly DESCRIBE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION: string[] =
+	static readonly DescribeInstanceAccessControlAttributeConfiguration: string[] =
 		["sso:DescribeInstanceAccessControlAttributeConfiguration"];
 	/** IAM actions required for the DescribePermissionSet API call. */
-	static readonly DESCRIBE_PERMISSION_SET: string[] = [
+	static readonly DescribePermissionSet: string[] = [
 		"sso:DescribePermissionSet",
 		"sso:GetPermissionSet",
 	];
 	/** IAM actions required for the DescribePermissionSetProvisioningStatus API call. */
-	static readonly DESCRIBE_PERMISSION_SET_PROVISIONING_STATUS: string[] = [
+	static readonly DescribePermissionSetProvisioningStatus: string[] = [
 		"sso:DescribePermissionSetProvisioningStatus",
 	];
 	/** IAM actions required for the DescribeRegion API call. */
-	static readonly DESCRIBE_REGION: string[] = ["sso:DescribeRegion"];
+	static readonly DescribeRegion: string[] = ["sso:DescribeRegion"];
 	/** IAM actions required for the DescribeTrustedTokenIssuer API call. */
-	static readonly DESCRIBE_TRUSTED_TOKEN_ISSUER: string[] = [
+	static readonly DescribeTrustedTokenIssuer: string[] = [
 		"sso:DescribeTrustedTokenIssuer",
 	];
 	/** IAM actions required for the DetachCustomerManagedPolicyReferenceFromPermissionSet API call. */
-	static readonly DETACH_CUSTOMER_MANAGED_POLICY_REFERENCE_FROM_PERMISSION_SET: string[] =
+	static readonly DetachCustomerManagedPolicyReferenceFromPermissionSet: string[] =
 		["sso:DetachCustomerManagedPolicyReferenceFromPermissionSet"];
 	/** IAM actions required for the DetachManagedPolicyFromPermissionSet API call. */
-	static readonly DETACH_MANAGED_POLICY_FROM_PERMISSION_SET: string[] = [
+	static readonly DetachManagedPolicyFromPermissionSet: string[] = [
 		"sso:DetachManagedPolicyFromPermissionSet",
 	];
 	/** IAM actions required for the GetApplicationAccessScope API call. */
-	static readonly GET_APPLICATION_ACCESS_SCOPE: string[] = [
+	static readonly opGetApplicationAccessScope: string[] = [
 		"sso:GetApplicationAccessScope",
 	];
 	/** IAM actions required for the GetApplicationAssignmentConfiguration API call. */
-	static readonly GET_APPLICATION_ASSIGNMENT_CONFIGURATION: string[] = [
+	static readonly opGetApplicationAssignmentConfiguration: string[] = [
 		"sso:GetApplicationAssignmentConfiguration",
 	];
 	/** IAM actions required for the GetApplicationAuthenticationMethod API call. */
-	static readonly GET_APPLICATION_AUTHENTICATION_METHOD: string[] = [
+	static readonly opGetApplicationAuthenticationMethod: string[] = [
 		"sso:GetApplicationAuthenticationMethod",
 	];
 	/** IAM actions required for the GetApplicationGrant API call. */
-	static readonly GET_APPLICATION_GRANT: string[] = ["sso:GetApplicationGrant"];
+	static readonly opGetApplicationGrant: string[] = ["sso:GetApplicationGrant"];
 	/** IAM actions required for the GetApplicationSessionConfiguration API call. */
-	static readonly GET_APPLICATION_SESSION_CONFIGURATION: string[] = [
+	static readonly opGetApplicationSessionConfiguration: string[] = [
 		"sso:GetApplicationSessionConfiguration",
 	];
 	/** IAM actions required for the GetInlinePolicyForPermissionSet API call. */
-	static readonly GET_INLINE_POLICY_FOR_PERMISSION_SET: string[] = [
+	static readonly opGetInlinePolicyForPermissionSet: string[] = [
 		"sso:GetInlinePolicyForPermissionSet",
 	];
 	/** IAM actions required for the GetPermissionsBoundaryForPermissionSet API call. */
-	static readonly GET_PERMISSIONS_BOUNDARY_FOR_PERMISSION_SET: string[] = [
+	static readonly opGetPermissionsBoundaryForPermissionSet: string[] = [
 		"sso:GetPermissionsBoundaryForPermissionSet",
 	];
 	/** IAM actions required for the GetRoleCredentials API call. */
-	static readonly GET_ROLE_CREDENTIALS: string[] = [];
+	static readonly opGetRoleCredentials: string[] = [];
 	/** IAM actions required for the ListAccountAssignmentCreationStatus API call. */
-	static readonly LIST_ACCOUNT_ASSIGNMENT_CREATION_STATUS: string[] = [
+	static readonly ListAccountAssignmentCreationStatus: string[] = [
 		"sso:ListAccountAssignmentCreationStatus",
 	];
 	/** IAM actions required for the ListAccountAssignmentDeletionStatus API call. */
-	static readonly LIST_ACCOUNT_ASSIGNMENT_DELETION_STATUS: string[] = [
+	static readonly ListAccountAssignmentDeletionStatus: string[] = [
 		"sso:ListAccountAssignmentDeletionStatus",
 	];
 	/** IAM actions required for the ListAccountAssignments API call. */
-	static readonly LIST_ACCOUNT_ASSIGNMENTS: string[] = [
+	static readonly ListAccountAssignments: string[] = [
 		"sso:ListAccountAssignments",
 		"sso:ListProfileAssociations",
 	];
 	/** IAM actions required for the ListAccountAssignmentsForPrincipal API call. */
-	static readonly LIST_ACCOUNT_ASSIGNMENTS_FOR_PRINCIPAL: string[] = [
+	static readonly ListAccountAssignmentsForPrincipal: string[] = [
 		"sso:ListAccountAssignmentsForPrincipal",
 	];
 	/** IAM actions required for the ListAccountRoles API call. */
-	static readonly LIST_ACCOUNT_ROLES: string[] = [];
+	static readonly ListAccountRoles: string[] = [];
 	/** IAM actions required for the ListAccounts API call. */
-	static readonly LIST_ACCOUNTS: string[] = [];
+	static readonly ListAccounts: string[] = [];
 	/** IAM actions required for the ListAccountsForProvisionedPermissionSet API call. */
-	static readonly LIST_ACCOUNTS_FOR_PROVISIONED_PERMISSION_SET: string[] = [
+	static readonly ListAccountsForProvisionedPermissionSet: string[] = [
 		"sso:GetApplicationInstance",
 		"sso:ListAccountsForProvisionedPermissionSet",
 		"sso:ListApplicationInstances",
 	];
 	/** IAM actions required for the ListApplicationAccessScopes API call. */
-	static readonly LIST_APPLICATION_ACCESS_SCOPES: string[] = [
+	static readonly ListApplicationAccessScopes: string[] = [
 		"sso:ListApplicationAccessScopes",
 	];
 	/** IAM actions required for the ListApplicationAssignments API call. */
-	static readonly LIST_APPLICATION_ASSIGNMENTS: string[] = [
+	static readonly ListApplicationAssignments: string[] = [
 		"sso:ListApplicationAssignments",
 		"sso:ListProfileAssociations",
 	];
 	/** IAM actions required for the ListApplicationAssignmentsForPrincipal API call. */
-	static readonly LIST_APPLICATION_ASSIGNMENTS_FOR_PRINCIPAL: string[] = [
+	static readonly ListApplicationAssignmentsForPrincipal: string[] = [
 		"sso:ListApplicationAssignmentsForPrincipal",
 	];
 	/** IAM actions required for the ListApplicationAuthenticationMethods API call. */
-	static readonly LIST_APPLICATION_AUTHENTICATION_METHODS: string[] = [
+	static readonly ListApplicationAuthenticationMethods: string[] = [
 		"sso:ListApplicationAuthenticationMethods",
 	];
 	/** IAM actions required for the ListApplicationGrants API call. */
-	static readonly LIST_APPLICATION_GRANTS: string[] = [
+	static readonly ListApplicationGrants: string[] = [
 		"sso:ListApplicationGrants",
 	];
 	/** IAM actions required for the ListApplicationProviders API call. */
-	static readonly LIST_APPLICATION_PROVIDERS: string[] = [
+	static readonly ListApplicationProviders: string[] = [
 		"sso:GetApplicationTemplate",
 		"sso:ListApplicationProviders",
 		"sso:ListApplicationTemplates",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"sso:GetApplicationInstance",
 		"sso:ListApplicationInstances",
 		"sso:ListApplicationProviders",
 		"sso:ListApplications",
 	];
 	/** IAM actions required for the ListCustomerManagedPolicyReferencesInPermissionSet API call. */
-	static readonly LIST_CUSTOMER_MANAGED_POLICY_REFERENCES_IN_PERMISSION_SET: string[] =
+	static readonly ListCustomerManagedPolicyReferencesInPermissionSet: string[] =
 		["sso:ListCustomerManagedPolicyReferencesInPermissionSet"];
 	/** IAM actions required for the ListInstances API call. */
-	static readonly LIST_INSTANCES: string[] = ["sso:ListInstances"];
+	static readonly ListInstances: string[] = ["sso:ListInstances"];
 	/** IAM actions required for the ListManagedPoliciesInPermissionSet API call. */
-	static readonly LIST_MANAGED_POLICIES_IN_PERMISSION_SET: string[] = [
+	static readonly ListManagedPoliciesInPermissionSet: string[] = [
 		"sso:ListManagedPoliciesInPermissionSet",
 	];
 	/** IAM actions required for the ListPermissionSetProvisioningStatus API call. */
-	static readonly LIST_PERMISSION_SET_PROVISIONING_STATUS: string[] = [
+	static readonly ListPermissionSetProvisioningStatus: string[] = [
 		"sso:ListPermissionSetProvisioningStatus",
 	];
 	/** IAM actions required for the ListPermissionSets API call. */
-	static readonly LIST_PERMISSION_SETS: string[] = ["sso:ListPermissionSets"];
+	static readonly ListPermissionSets: string[] = ["sso:ListPermissionSets"];
 	/** IAM actions required for the ListPermissionSetsProvisionedToAccount API call. */
-	static readonly LIST_PERMISSION_SETS_PROVISIONED_TO_ACCOUNT: string[] = [
+	static readonly ListPermissionSetsProvisionedToAccount: string[] = [
 		"sso:GetProfile",
 		"sso:ListPermissionSetsProvisionedToAccount",
 		"sso:ListProfiles",
 	];
 	/** IAM actions required for the ListRegions API call. */
-	static readonly LIST_REGIONS: string[] = ["sso:ListRegions"];
+	static readonly ListRegions: string[] = ["sso:ListRegions"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"sso:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["sso:ListTagsForResource"];
 	/** IAM actions required for the ListTrustedTokenIssuers API call. */
-	static readonly LIST_TRUSTED_TOKEN_ISSUERS: string[] = [
+	static readonly ListTrustedTokenIssuers: string[] = [
 		"sso:ListTrustedTokenIssuers",
 	];
 	/** IAM actions required for the Logout API call. */
-	static readonly LOGOUT: string[] = [];
+	static readonly Logout: string[] = [];
 	/** IAM actions required for the ProvisionPermissionSet API call. */
-	static readonly PROVISION_PERMISSION_SET: string[] = [
+	static readonly ProvisionPermissionSet: string[] = [
 		"sso:ProvisionPermissionSet",
 	];
 	/** IAM actions required for the PutApplicationAccessScope API call. */
-	static readonly PUT_APPLICATION_ACCESS_SCOPE: string[] = [
+	static readonly PutApplicationAccessScope: string[] = [
 		"sso:PutApplicationAccessScope",
 	];
 	/** IAM actions required for the PutApplicationAssignmentConfiguration API call. */
-	static readonly PUT_APPLICATION_ASSIGNMENT_CONFIGURATION: string[] = [
+	static readonly PutApplicationAssignmentConfiguration: string[] = [
 		"sso:PutApplicationAssignmentConfiguration",
 	];
 	/** IAM actions required for the PutApplicationAuthenticationMethod API call. */
-	static readonly PUT_APPLICATION_AUTHENTICATION_METHOD: string[] = [
+	static readonly PutApplicationAuthenticationMethod: string[] = [
 		"sso:CreateManagedApplicationInstance",
 		"sso:PutApplicationAuthenticationMethod",
 	];
 	/** IAM actions required for the PutApplicationGrant API call. */
-	static readonly PUT_APPLICATION_GRANT: string[] = [
+	static readonly PutApplicationGrant: string[] = [
 		"sso:CreateManagedApplicationInstance",
 		"sso:PutApplicationGrant",
 	];
 	/** IAM actions required for the PutApplicationSessionConfiguration API call. */
-	static readonly PUT_APPLICATION_SESSION_CONFIGURATION: string[] = [
+	static readonly PutApplicationSessionConfiguration: string[] = [
 		"sso:PutApplicationSessionConfiguration",
 	];
 	/** IAM actions required for the PutInlinePolicyToPermissionSet API call. */
-	static readonly PUT_INLINE_POLICY_TO_PERMISSION_SET: string[] = [
+	static readonly PutInlinePolicyToPermissionSet: string[] = [
 		"sso:PutInlinePolicyToPermissionSet",
 		"sso:PutPermissionsPolicy",
 	];
 	/** IAM actions required for the PutPermissionsBoundaryToPermissionSet API call. */
-	static readonly PUT_PERMISSIONS_BOUNDARY_TO_PERMISSION_SET: string[] = [
+	static readonly PutPermissionsBoundaryToPermissionSet: string[] = [
 		"sso:PutPermissionsBoundaryToPermissionSet",
 	];
 	/** IAM actions required for the RemoveRegion API call. */
-	static readonly REMOVE_REGION: string[] = ["sso:RemoveRegion"];
+	static readonly RemoveRegion: string[] = ["sso:RemoveRegion"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["sso:TagResource"];
+	static readonly TagResource: string[] = ["sso:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["sso:UntagResource"];
+	static readonly UntagResource: string[] = ["sso:UntagResource"];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"sso:PutApplicationAssignmentConfiguration",
 		"sso:UpdateApplication",
 		"sso:UpdateApplicationInstanceDisplayData",
@@ -1118,14 +1200,14 @@ export class SSOOperations {
 		"sso:UpdateManagedApplicationInstanceStatus",
 	];
 	/** IAM actions required for the UpdateInstance API call. */
-	static readonly UPDATE_INSTANCE: string[] = ["sso:UpdateInstance"];
+	static readonly UpdateInstance: string[] = ["sso:UpdateInstance"];
 	/** IAM actions required for the UpdateInstanceAccessControlAttributeConfiguration API call. */
-	static readonly UPDATE_INSTANCE_ACCESS_CONTROL_ATTRIBUTE_CONFIGURATION: string[] =
+	static readonly UpdateInstanceAccessControlAttributeConfiguration: string[] =
 		["sso:UpdateInstanceAccessControlAttributeConfiguration"];
 	/** IAM actions required for the UpdatePermissionSet API call. */
-	static readonly UPDATE_PERMISSION_SET: string[] = ["sso:UpdatePermissionSet"];
+	static readonly UpdatePermissionSet: string[] = ["sso:UpdatePermissionSet"];
 	/** IAM actions required for the UpdateTrustedTokenIssuer API call. */
-	static readonly UPDATE_TRUSTED_TOKEN_ISSUER: string[] = [
+	static readonly UpdateTrustedTokenIssuer: string[] = [
 		"sso:UpdateTrustedTokenIssuer",
 	];
 }
@@ -1135,126 +1217,128 @@ export class SSOOperations {
  */
 export class SSOConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApplicationAssignment action. */
-	static readonly CREATE_APPLICATION_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationAssignmentConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the CreateInstance action. */
-	static readonly CREATE_INSTANCE_CONDITION_KEYS: string[] = [
+	static readonly CreateInstanceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePermissionSet action. */
-	static readonly CREATE_PERMISSION_SET_CONDITION_KEYS: string[] = [
+	static readonly CreatePermissionSetConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateTrustedTokenIssuer action. */
-	static readonly CREATE_TRUSTED_TOKEN_ISSUER_CONDITION_KEYS: string[] = [
+	static readonly CreateTrustedTokenIssuerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteApplication action. */
-	static readonly DELETE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly DeleteApplicationConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the DeleteApplicationAccessScope action. */
-	static readonly DELETE_APPLICATION_ACCESS_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly DeleteApplicationAccessScopeConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the DeleteApplicationAssignment action. */
-	static readonly DELETE_APPLICATION_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteApplicationAssignmentConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the DeleteApplicationAuthenticationMethod action. */
-	static readonly DELETE_APPLICATION_AUTHENTICATION_METHOD_CONDITION_KEYS: string[] =
+	static readonly DeleteApplicationAuthenticationMethodConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the DeleteApplicationGrant action. */
-	static readonly DELETE_APPLICATION_GRANT_CONDITION_KEYS: string[] = [
+	static readonly DeleteApplicationGrantConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the DescribeApplication action. */
-	static readonly DESCRIBE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly DescribeApplicationConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the DescribeApplicationAssignment action. */
-	static readonly DESCRIBE_APPLICATION_ASSIGNMENT_CONDITION_KEYS: string[] = [
+	static readonly DescribeApplicationAssignmentConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the GetApplicationAccessScope action. */
-	static readonly GET_APPLICATION_ACCESS_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly actionGetApplicationAccessScopeConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the GetApplicationAssignmentConfiguration action. */
-	static readonly GET_APPLICATION_ASSIGNMENT_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly actionGetApplicationAssignmentConfigurationConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the GetApplicationAuthenticationMethod action. */
-	static readonly GET_APPLICATION_AUTHENTICATION_METHOD_CONDITION_KEYS: string[] =
+	static readonly actionGetApplicationAuthenticationMethodConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the GetApplicationGrant action. */
-	static readonly GET_APPLICATION_GRANT_CONDITION_KEYS: string[] = [
+	static readonly actionGetApplicationGrantConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the GetApplicationSessionConfiguration action. */
-	static readonly GET_APPLICATION_SESSION_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly actionGetApplicationSessionConfigurationConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the ListApplicationAccessScopes action. */
-	static readonly LIST_APPLICATION_ACCESS_SCOPES_CONDITION_KEYS: string[] = [
+	static readonly ListApplicationAccessScopesConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the ListApplicationAssignments action. */
-	static readonly LIST_APPLICATION_ASSIGNMENTS_CONDITION_KEYS: string[] = [
+	static readonly ListApplicationAssignmentsConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the ListApplicationAssignmentsForPrincipal action. */
-	static readonly LIST_APPLICATION_ASSIGNMENTS_FOR_PRINCIPAL_CONDITION_KEYS: string[] =
+	static readonly ListApplicationAssignmentsForPrincipalConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the ListApplicationAuthenticationMethods action. */
-	static readonly LIST_APPLICATION_AUTHENTICATION_METHODS_CONDITION_KEYS: string[] =
+	static readonly ListApplicationAuthenticationMethodsConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the ListApplicationGrants action. */
-	static readonly LIST_APPLICATION_GRANTS_CONDITION_KEYS: string[] = [
+	static readonly ListApplicationGrantsConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the PutApplicationAccessScope action. */
-	static readonly PUT_APPLICATION_ACCESS_SCOPE_CONDITION_KEYS: string[] = [
+	static readonly PutApplicationAccessScopeConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the PutApplicationAssignmentConfiguration action. */
-	static readonly PUT_APPLICATION_ASSIGNMENT_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly PutApplicationAssignmentConfigurationConditionKeys: string[] =
 		["sso:ApplicationAccount"];
 	/** Condition keys applicable to the PutApplicationAuthenticationMethod action. */
-	static readonly PUT_APPLICATION_AUTHENTICATION_METHOD_CONDITION_KEYS: string[] =
-		["sso:ApplicationAccount"];
+	static readonly PutApplicationAuthenticationMethodConditionKeys: string[] = [
+		"sso:ApplicationAccount",
+	];
 	/** Condition keys applicable to the PutApplicationGrant action. */
-	static readonly PUT_APPLICATION_GRANT_CONDITION_KEYS: string[] = [
+	static readonly PutApplicationGrantConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 	/** Condition keys applicable to the PutApplicationSessionConfiguration action. */
-	static readonly PUT_APPLICATION_SESSION_CONFIGURATION_CONDITION_KEYS: string[] =
-		["sso:ApplicationAccount"];
+	static readonly PutApplicationSessionConfigurationConditionKeys: string[] = [
+		"sso:ApplicationAccount",
+	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the UpdateApplication action. */
-	static readonly UPDATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly UpdateApplicationConditionKeys: string[] = [
 		"sso:ApplicationAccount",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: identitycenter:ApplicationArn (ARN) */
 	static readonly APPLICATION_ARN = "identitycenter:ApplicationArn";
 	/** Condition key: identitycenter:InstanceArn (ARN) */

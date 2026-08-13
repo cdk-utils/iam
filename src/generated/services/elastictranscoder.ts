@@ -13,84 +13,164 @@ export class ElastictranscoderActions {
 	static readonly SERVICE_PREFIX = "elastictranscoder";
 
 	/** [Write] elastictranscoder:CancelJob */
-	static readonly CANCEL_JOB = "elastictranscoder:CancelJob";
+	static readonly CancelJob = "elastictranscoder:CancelJob";
 	/** [Write] elastictranscoder:CreateJob */
-	static readonly CREATE_JOB = "elastictranscoder:CreateJob";
+	static readonly CreateJob = "elastictranscoder:CreateJob";
 	/** [Write] elastictranscoder:CreatePipeline */
-	static readonly CREATE_PIPELINE = "elastictranscoder:CreatePipeline";
+	static readonly CreatePipeline = "elastictranscoder:CreatePipeline";
 	/** [Write] elastictranscoder:CreatePreset */
-	static readonly CREATE_PRESET = "elastictranscoder:CreatePreset";
+	static readonly CreatePreset = "elastictranscoder:CreatePreset";
 	/** [Write] elastictranscoder:DeletePipeline */
-	static readonly DELETE_PIPELINE = "elastictranscoder:DeletePipeline";
+	static readonly DeletePipeline = "elastictranscoder:DeletePipeline";
 	/** [Write] elastictranscoder:DeletePreset */
-	static readonly DELETE_PRESET = "elastictranscoder:DeletePreset";
+	static readonly DeletePreset = "elastictranscoder:DeletePreset";
 	/** [List] elastictranscoder:ListJobsByPipeline */
-	static readonly LIST_JOBS_BY_PIPELINE =
-		"elastictranscoder:ListJobsByPipeline";
+	static readonly ListJobsByPipeline = "elastictranscoder:ListJobsByPipeline";
 	/** [List] elastictranscoder:ListJobsByStatus */
-	static readonly LIST_JOBS_BY_STATUS = "elastictranscoder:ListJobsByStatus";
+	static readonly ListJobsByStatus = "elastictranscoder:ListJobsByStatus";
 	/** [List] elastictranscoder:ListPipelines */
-	static readonly LIST_PIPELINES = "elastictranscoder:ListPipelines";
+	static readonly ListPipelines = "elastictranscoder:ListPipelines";
 	/** [List] elastictranscoder:ListPresets */
-	static readonly LIST_PRESETS = "elastictranscoder:ListPresets";
+	static readonly ListPresets = "elastictranscoder:ListPresets";
 	/** [Read] elastictranscoder:ReadJob */
-	static readonly READ_JOB = "elastictranscoder:ReadJob";
+	static readonly ReadJob = "elastictranscoder:ReadJob";
 	/** [Read] elastictranscoder:ReadPipeline */
-	static readonly READ_PIPELINE = "elastictranscoder:ReadPipeline";
+	static readonly ReadPipeline = "elastictranscoder:ReadPipeline";
 	/** [Read] elastictranscoder:ReadPreset */
-	static readonly READ_PRESET = "elastictranscoder:ReadPreset";
+	static readonly ReadPreset = "elastictranscoder:ReadPreset";
 	/** [Write] elastictranscoder:TestRole */
-	static readonly TEST_ROLE = "elastictranscoder:TestRole";
+	static readonly TestRole = "elastictranscoder:TestRole";
 	/** [Write] elastictranscoder:UpdatePipeline */
-	static readonly UPDATE_PIPELINE = "elastictranscoder:UpdatePipeline";
+	static readonly UpdatePipeline = "elastictranscoder:UpdatePipeline";
 	/** [Write] elastictranscoder:UpdatePipelineNotifications */
-	static readonly UPDATE_PIPELINE_NOTIFICATIONS =
+	static readonly UpdatePipelineNotifications =
 		"elastictranscoder:UpdatePipelineNotifications";
 	/** [Write] elastictranscoder:UpdatePipelineStatus */
-	static readonly UPDATE_PIPELINE_STATUS =
+	static readonly UpdatePipelineStatus =
 		"elastictranscoder:UpdatePipelineStatus";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElastictranscoderActions.READ_JOB,
-		ElastictranscoderActions.READ_PIPELINE,
-		ElastictranscoderActions.READ_PRESET,
+	static readonly AllReadActions: string[] = [
+		ElastictranscoderActions.ReadJob,
+		ElastictranscoderActions.ReadPipeline,
+		ElastictranscoderActions.ReadPreset,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElastictranscoderActions.CANCEL_JOB,
-		ElastictranscoderActions.CREATE_JOB,
-		ElastictranscoderActions.CREATE_PIPELINE,
-		ElastictranscoderActions.CREATE_PRESET,
-		ElastictranscoderActions.DELETE_PIPELINE,
-		ElastictranscoderActions.DELETE_PRESET,
-		ElastictranscoderActions.TEST_ROLE,
-		ElastictranscoderActions.UPDATE_PIPELINE,
-		ElastictranscoderActions.UPDATE_PIPELINE_NOTIFICATIONS,
-		ElastictranscoderActions.UPDATE_PIPELINE_STATUS,
+	static readonly AllWriteActions: string[] = [
+		ElastictranscoderActions.CancelJob,
+		ElastictranscoderActions.CreateJob,
+		ElastictranscoderActions.CreatePipeline,
+		ElastictranscoderActions.CreatePreset,
+		ElastictranscoderActions.DeletePipeline,
+		ElastictranscoderActions.DeletePreset,
+		ElastictranscoderActions.TestRole,
+		ElastictranscoderActions.UpdatePipeline,
+		ElastictranscoderActions.UpdatePipelineNotifications,
+		ElastictranscoderActions.UpdatePipelineStatus,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElastictranscoderActions.LIST_JOBS_BY_PIPELINE,
-		ElastictranscoderActions.LIST_JOBS_BY_STATUS,
-		ElastictranscoderActions.LIST_PIPELINES,
-		ElastictranscoderActions.LIST_PRESETS,
+	static readonly AllListActions: string[] = [
+		ElastictranscoderActions.ListJobsByPipeline,
+		ElastictranscoderActions.ListJobsByStatus,
+		ElastictranscoderActions.ListPipelines,
+		ElastictranscoderActions.ListPresets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const JobArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobId>[^:/?]+)$",
-);
-const PipelineArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):pipeline/(?<pipelineId>[^:/?]+)$",
-);
-const PresetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):preset/(?<presetId>[^:/?]+)$",
-);
+/**
+ * Properties for building a job ARN.
+ */
+export interface ElastictranscoderJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface ElastictranscoderJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a pipeline ARN.
+ */
+export interface ElastictranscoderPipelineArnProps {
+	/** The PipelineId component of the ARN. */
+	readonly pipelineId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a pipeline ARN.
+ */
+export interface ElastictranscoderPipelineArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PipelineId component. */
+	readonly pipelineId: string;
+}
+
+/**
+ * Properties for building a preset ARN.
+ */
+export interface ElastictranscoderPresetArnProps {
+	/** The PresetId component of the ARN. */
+	readonly presetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a preset ARN.
+ */
+export interface ElastictranscoderPresetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PresetId component. */
+	readonly presetId: string;
+}
+
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobId>[^:/?]+)$/;
+const PipelineArnRegex =
+	/^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):pipeline\/(?<pipelineId>[^:/?]+)$/;
+const PresetArnRegex =
+	/^arn:(?<partition>[^:]+):elastictranscoder:(?<region>[^:]*):(?<account>[^:]*):preset\/(?<presetId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elastictranscoder resources.
@@ -99,16 +179,7 @@ export class ElastictranscoderResources {
 	/**
 	 * Builds an ARN for the job resource.
 	 */
-	static job(props: {
-		/** The JobId component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static job(props: ElastictranscoderJobArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elastictranscoder:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobId}`;
 	}
 
@@ -123,12 +194,7 @@ export class ElastictranscoderResources {
 	 * Parses a job ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseJobArn(arn: string): ElastictranscoderJobArnComponents {
 		const match = JobArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid job ARN: ${arn}`);
@@ -144,16 +210,7 @@ export class ElastictranscoderResources {
 	/**
 	 * Builds an ARN for the pipeline resource.
 	 */
-	static pipeline(props: {
-		/** The PipelineId component of the ARN. */
-		readonly pipelineId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static pipeline(props: ElastictranscoderPipelineArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elastictranscoder:${props.region ?? "*"}:${props.account ?? "*"}:pipeline/${props.pipelineId}`;
 	}
 
@@ -168,12 +225,7 @@ export class ElastictranscoderResources {
 	 * Parses a pipeline ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePipelineArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		pipelineId: string;
-	} {
+	static parsePipelineArn(arn: string): ElastictranscoderPipelineArnComponents {
 		const match = PipelineArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid pipeline ARN: ${arn}`);
@@ -189,16 +241,7 @@ export class ElastictranscoderResources {
 	/**
 	 * Builds an ARN for the preset resource.
 	 */
-	static preset(props: {
-		/** The PresetId component of the ARN. */
-		readonly presetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static preset(props: ElastictranscoderPresetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elastictranscoder:${props.region ?? "*"}:${props.account ?? "*"}:preset/${props.presetId}`;
 	}
 
@@ -213,12 +256,7 @@ export class ElastictranscoderResources {
 	 * Parses a preset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePresetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		presetId: string;
-	} {
+	static parsePresetArn(arn: string): ElastictranscoderPresetArnComponents {
 		const match = PresetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid preset ARN: ${arn}`);

@@ -13,35 +13,89 @@ export class EC2InstanceConnectActions {
 	static readonly SERVICE_PREFIX = "ec2-instance-connect";
 
 	/** [Write] ec2-instance-connect:OpenTunnel */
-	static readonly OPEN_TUNNEL = "ec2-instance-connect:OpenTunnel";
+	static readonly OpenTunnel = "ec2-instance-connect:OpenTunnel";
 	/** [Write] ec2-instance-connect:SendSSHPublicKey */
-	static readonly SEND_SSH_PUBLIC_KEY = "ec2-instance-connect:SendSSHPublicKey";
+	static readonly SendSSHPublicKey = "ec2-instance-connect:SendSSHPublicKey";
 	/** [Write] ec2-instance-connect:SendSerialConsoleSSHPublicKey */
-	static readonly SEND_SERIAL_CONSOLE_SSH_PUBLIC_KEY =
+	static readonly SendSerialConsoleSSHPublicKey =
 		"ec2-instance-connect:SendSerialConsoleSSHPublicKey";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		EC2InstanceConnectActions.OPEN_TUNNEL,
-		EC2InstanceConnectActions.SEND_SSH_PUBLIC_KEY,
-		EC2InstanceConnectActions.SEND_SERIAL_CONSOLE_SSH_PUBLIC_KEY,
+	static readonly AllWriteActions: string[] = [
+		EC2InstanceConnectActions.OpenTunnel,
+		EC2InstanceConnectActions.SendSSHPublicKey,
+		EC2InstanceConnectActions.SendSerialConsoleSSHPublicKey,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const InstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance/(?<instanceId>[^:/?]+)$",
-);
-const InstanceConnectEndpointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-connect-endpoint/(?<instanceConnectEndpointId>[^:/?]+)$",
-);
+/**
+ * Properties for building a instance ARN.
+ */
+export interface EC2InstanceConnectInstanceArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance ARN.
+ */
+export interface EC2InstanceConnectInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+}
+
+/**
+ * Properties for building a instance-connect-endpoint ARN.
+ */
+export interface EC2InstanceConnectInstanceConnectEndpointArnProps {
+	/** The InstanceConnectEndpointId component of the ARN. */
+	readonly instanceConnectEndpointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance-connect-endpoint ARN.
+ */
+export interface EC2InstanceConnectInstanceConnectEndpointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceConnectEndpointId component. */
+	readonly instanceConnectEndpointId: string;
+}
+
+const InstanceArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)$/;
+const InstanceConnectEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):ec2:(?<region>[^:]*):(?<account>[^:]*):instance-connect-endpoint\/(?<instanceConnectEndpointId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for ec2-instance-connect resources.
@@ -50,16 +104,7 @@ export class EC2InstanceConnectResources {
 	/**
 	 * Builds an ARN for the instance resource.
 	 */
-	static instance(props: {
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instance(props: EC2InstanceConnectInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:instance/${props.instanceId}`;
 	}
 
@@ -74,12 +119,9 @@ export class EC2InstanceConnectResources {
 	 * Parses a instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceId: string;
-	} {
+	static parseInstanceArn(
+		arn: string,
+	): EC2InstanceConnectInstanceArnComponents {
 		const match = InstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance ARN: ${arn}`);
@@ -95,16 +137,9 @@ export class EC2InstanceConnectResources {
 	/**
 	 * Builds an ARN for the instance-connect-endpoint resource.
 	 */
-	static instanceConnectEndpoint(props: {
-		/** The InstanceConnectEndpointId component of the ARN. */
-		readonly instanceConnectEndpointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instanceConnectEndpoint(
+		props: EC2InstanceConnectInstanceConnectEndpointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:ec2:${props.region ?? "*"}:${props.account ?? "*"}:instance-connect-endpoint/${props.instanceConnectEndpointId}`;
 	}
 
@@ -119,12 +154,9 @@ export class EC2InstanceConnectResources {
 	 * Parses a instance-connect-endpoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceConnectEndpointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceConnectEndpointId: string;
-	} {
+	static parseInstanceConnectEndpointArn(
+		arn: string,
+	): EC2InstanceConnectInstanceConnectEndpointArnComponents {
 		const match = InstanceConnectEndpointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance-connect-endpoint ARN: ${arn}`);
@@ -143,11 +175,11 @@ export class EC2InstanceConnectResources {
  */
 export class EC2InstanceConnectOperations {
 	/** IAM actions required for the SendSSHPublicKey API call. */
-	static readonly SEND_SSH_PUBLIC_KEY: string[] = [
+	static readonly SendSSHPublicKey: string[] = [
 		"ec2-instance-connect:SendSSHPublicKey",
 	];
 	/** IAM actions required for the SendSerialConsoleSSHPublicKey API call. */
-	static readonly SEND_SERIAL_CONSOLE_SSH_PUBLIC_KEY: string[] = [
+	static readonly SendSerialConsoleSSHPublicKey: string[] = [
 		"ec2-instance-connect:SendSerialConsoleSSHPublicKey",
 	];
 }
@@ -157,10 +189,10 @@ export class EC2InstanceConnectOperations {
  */
 export class EC2InstanceConnectConditions {
 	/** Condition keys applicable to the SendSSHPublicKey action. */
-	static readonly SEND_SSH_PUBLIC_KEY_CONDITION_KEYS: string[] = ["ec2:osuser"];
+	static readonly SendSSHPublicKeyConditionKeys: string[] = ["ec2:osuser"];
 
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: ec2-instance-connect:maxTunnelDuration (Numeric) */
 	static readonly MAX_TUNNEL_DURATION =
 		"ec2-instance-connect:maxTunnelDuration";

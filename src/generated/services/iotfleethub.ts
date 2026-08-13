@@ -13,49 +13,76 @@ export class IotfleethubActions {
 	static readonly SERVICE_PREFIX = "iotfleethub";
 
 	/** [Write] iotfleethub:CreateApplication */
-	static readonly CREATE_APPLICATION = "iotfleethub:CreateApplication";
+	static readonly CreateApplication = "iotfleethub:CreateApplication";
 	/** [Write] iotfleethub:DeleteApplication */
-	static readonly DELETE_APPLICATION = "iotfleethub:DeleteApplication";
+	static readonly DeleteApplication = "iotfleethub:DeleteApplication";
 	/** [Read] iotfleethub:DescribeApplication */
-	static readonly DESCRIBE_APPLICATION = "iotfleethub:DescribeApplication";
+	static readonly DescribeApplication = "iotfleethub:DescribeApplication";
 	/** [List] iotfleethub:ListApplications */
-	static readonly LIST_APPLICATIONS = "iotfleethub:ListApplications";
+	static readonly ListApplications = "iotfleethub:ListApplications";
 	/** [Read] iotfleethub:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "iotfleethub:ListTagsForResource";
+	static readonly ListTagsForResource = "iotfleethub:ListTagsForResource";
 	/** [Tagging] iotfleethub:TagResource */
-	static readonly TAG_RESOURCE = "iotfleethub:TagResource";
+	static readonly TagResource = "iotfleethub:TagResource";
 	/** [Tagging] iotfleethub:UntagResource */
-	static readonly UNTAG_RESOURCE = "iotfleethub:UntagResource";
+	static readonly UntagResource = "iotfleethub:UntagResource";
 	/** [Write] iotfleethub:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "iotfleethub:UpdateApplication";
+	static readonly UpdateApplication = "iotfleethub:UpdateApplication";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		IotfleethubActions.DESCRIBE_APPLICATION,
-		IotfleethubActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		IotfleethubActions.DescribeApplication,
+		IotfleethubActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		IotfleethubActions.CREATE_APPLICATION,
-		IotfleethubActions.DELETE_APPLICATION,
-		IotfleethubActions.UPDATE_APPLICATION,
+	static readonly AllWriteActions: string[] = [
+		IotfleethubActions.CreateApplication,
+		IotfleethubActions.DeleteApplication,
+		IotfleethubActions.UpdateApplication,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		IotfleethubActions.LIST_APPLICATIONS,
+	static readonly AllListActions: string[] = [
+		IotfleethubActions.ListApplications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		IotfleethubActions.TAG_RESOURCE,
-		IotfleethubActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		IotfleethubActions.TagResource,
+		IotfleethubActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):iotfleethub:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface IotfleethubApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface IotfleethubApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):iotfleethub:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for iotfleethub resources.
@@ -64,16 +91,7 @@ export class IotfleethubResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: IotfleethubApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:iotfleethub:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -88,12 +106,7 @@ export class IotfleethubResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): IotfleethubApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -112,24 +125,24 @@ export class IotfleethubResources {
  */
 export class IotfleethubConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

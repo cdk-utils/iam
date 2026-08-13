@@ -13,335 +13,645 @@ export class ElastiCacheActions {
 	static readonly SERVICE_PREFIX = "elasticache";
 
 	/** [Tagging] elasticache:AddTagsToResource */
-	static readonly ADD_TAGS_TO_RESOURCE = "elasticache:AddTagsToResource";
+	static readonly AddTagsToResource = "elasticache:AddTagsToResource";
 	/** [Write] elasticache:AuthorizeCacheSecurityGroupIngress */
-	static readonly AUTHORIZE_CACHE_SECURITY_GROUP_INGRESS =
+	static readonly AuthorizeCacheSecurityGroupIngress =
 		"elasticache:AuthorizeCacheSecurityGroupIngress";
 	/** [Write] elasticache:BatchApplyUpdateAction */
-	static readonly BATCH_APPLY_UPDATE_ACTION =
-		"elasticache:BatchApplyUpdateAction";
+	static readonly BatchApplyUpdateAction = "elasticache:BatchApplyUpdateAction";
 	/** [Write] elasticache:BatchStopUpdateAction */
-	static readonly BATCH_STOP_UPDATE_ACTION =
-		"elasticache:BatchStopUpdateAction";
+	static readonly BatchStopUpdateAction = "elasticache:BatchStopUpdateAction";
 	/** [Write] elasticache:CompleteMigration */
-	static readonly COMPLETE_MIGRATION = "elasticache:CompleteMigration";
+	static readonly CompleteMigration = "elasticache:CompleteMigration";
 	/** [Write] elasticache:Connect */
-	static readonly CONNECT = "elasticache:Connect";
+	static readonly Connect = "elasticache:Connect";
 	/** [Write] elasticache:CopyServerlessCacheSnapshot */
-	static readonly COPY_SERVERLESS_CACHE_SNAPSHOT =
+	static readonly CopyServerlessCacheSnapshot =
 		"elasticache:CopyServerlessCacheSnapshot";
 	/** [Write] elasticache:CopySnapshot */
-	static readonly COPY_SNAPSHOT = "elasticache:CopySnapshot";
+	static readonly CopySnapshot = "elasticache:CopySnapshot";
 	/** [Write] elasticache:CreateCacheCluster */
-	static readonly CREATE_CACHE_CLUSTER = "elasticache:CreateCacheCluster";
+	static readonly CreateCacheCluster = "elasticache:CreateCacheCluster";
 	/** [Write] elasticache:CreateCacheParameterGroup */
-	static readonly CREATE_CACHE_PARAMETER_GROUP =
+	static readonly CreateCacheParameterGroup =
 		"elasticache:CreateCacheParameterGroup";
 	/** [Write] elasticache:CreateCacheSecurityGroup */
-	static readonly CREATE_CACHE_SECURITY_GROUP =
+	static readonly CreateCacheSecurityGroup =
 		"elasticache:CreateCacheSecurityGroup";
 	/** [Write] elasticache:CreateCacheSubnetGroup */
-	static readonly CREATE_CACHE_SUBNET_GROUP =
-		"elasticache:CreateCacheSubnetGroup";
+	static readonly CreateCacheSubnetGroup = "elasticache:CreateCacheSubnetGroup";
 	/** [Write] elasticache:CreateGlobalReplicationGroup */
-	static readonly CREATE_GLOBAL_REPLICATION_GROUP =
+	static readonly CreateGlobalReplicationGroup =
 		"elasticache:CreateGlobalReplicationGroup";
 	/** [Write] elasticache:CreateReplicationGroup */
-	static readonly CREATE_REPLICATION_GROUP =
-		"elasticache:CreateReplicationGroup";
+	static readonly CreateReplicationGroup = "elasticache:CreateReplicationGroup";
 	/** [Write] elasticache:CreateServerlessCache */
-	static readonly CREATE_SERVERLESS_CACHE = "elasticache:CreateServerlessCache";
+	static readonly CreateServerlessCache = "elasticache:CreateServerlessCache";
 	/** [Write] elasticache:CreateServerlessCacheSnapshot */
-	static readonly CREATE_SERVERLESS_CACHE_SNAPSHOT =
+	static readonly CreateServerlessCacheSnapshot =
 		"elasticache:CreateServerlessCacheSnapshot";
 	/** [Write] elasticache:CreateSnapshot */
-	static readonly CREATE_SNAPSHOT = "elasticache:CreateSnapshot";
+	static readonly CreateSnapshot = "elasticache:CreateSnapshot";
 	/** [Write] elasticache:CreateUser */
-	static readonly CREATE_USER = "elasticache:CreateUser";
+	static readonly CreateUser = "elasticache:CreateUser";
 	/** [Write] elasticache:CreateUserGroup */
-	static readonly CREATE_USER_GROUP = "elasticache:CreateUserGroup";
+	static readonly CreateUserGroup = "elasticache:CreateUserGroup";
 	/** [Write] elasticache:DecreaseNodeGroupsInGlobalReplicationGroup */
-	static readonly DECREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP =
+	static readonly DecreaseNodeGroupsInGlobalReplicationGroup =
 		"elasticache:DecreaseNodeGroupsInGlobalReplicationGroup";
 	/** [Write] elasticache:DecreaseReplicaCount */
-	static readonly DECREASE_REPLICA_COUNT = "elasticache:DecreaseReplicaCount";
+	static readonly DecreaseReplicaCount = "elasticache:DecreaseReplicaCount";
 	/** [Write] elasticache:DeleteCacheCluster */
-	static readonly DELETE_CACHE_CLUSTER = "elasticache:DeleteCacheCluster";
+	static readonly DeleteCacheCluster = "elasticache:DeleteCacheCluster";
 	/** [Write] elasticache:DeleteCacheParameterGroup */
-	static readonly DELETE_CACHE_PARAMETER_GROUP =
+	static readonly DeleteCacheParameterGroup =
 		"elasticache:DeleteCacheParameterGroup";
 	/** [Write] elasticache:DeleteCacheSecurityGroup */
-	static readonly DELETE_CACHE_SECURITY_GROUP =
+	static readonly DeleteCacheSecurityGroup =
 		"elasticache:DeleteCacheSecurityGroup";
 	/** [Write] elasticache:DeleteCacheSubnetGroup */
-	static readonly DELETE_CACHE_SUBNET_GROUP =
-		"elasticache:DeleteCacheSubnetGroup";
+	static readonly DeleteCacheSubnetGroup = "elasticache:DeleteCacheSubnetGroup";
 	/** [Write] elasticache:DeleteGlobalReplicationGroup */
-	static readonly DELETE_GLOBAL_REPLICATION_GROUP =
+	static readonly DeleteGlobalReplicationGroup =
 		"elasticache:DeleteGlobalReplicationGroup";
 	/** [Write] elasticache:DeleteReplicationGroup */
-	static readonly DELETE_REPLICATION_GROUP =
-		"elasticache:DeleteReplicationGroup";
+	static readonly DeleteReplicationGroup = "elasticache:DeleteReplicationGroup";
 	/** [Write] elasticache:DeleteServerlessCache */
-	static readonly DELETE_SERVERLESS_CACHE = "elasticache:DeleteServerlessCache";
+	static readonly DeleteServerlessCache = "elasticache:DeleteServerlessCache";
 	/** [Write] elasticache:DeleteServerlessCacheSnapshot */
-	static readonly DELETE_SERVERLESS_CACHE_SNAPSHOT =
+	static readonly DeleteServerlessCacheSnapshot =
 		"elasticache:DeleteServerlessCacheSnapshot";
 	/** [Write] elasticache:DeleteSnapshot */
-	static readonly DELETE_SNAPSHOT = "elasticache:DeleteSnapshot";
+	static readonly DeleteSnapshot = "elasticache:DeleteSnapshot";
 	/** [Write] elasticache:DeleteUser */
-	static readonly DELETE_USER = "elasticache:DeleteUser";
+	static readonly DeleteUser = "elasticache:DeleteUser";
 	/** [Write] elasticache:DeleteUserGroup */
-	static readonly DELETE_USER_GROUP = "elasticache:DeleteUserGroup";
+	static readonly DeleteUserGroup = "elasticache:DeleteUserGroup";
 	/** [List] elasticache:DescribeCacheClusters */
-	static readonly DESCRIBE_CACHE_CLUSTERS = "elasticache:DescribeCacheClusters";
+	static readonly DescribeCacheClusters = "elasticache:DescribeCacheClusters";
 	/** [List] elasticache:DescribeCacheEngineVersions */
-	static readonly DESCRIBE_CACHE_ENGINE_VERSIONS =
+	static readonly DescribeCacheEngineVersions =
 		"elasticache:DescribeCacheEngineVersions";
 	/** [List] elasticache:DescribeCacheParameterGroups */
-	static readonly DESCRIBE_CACHE_PARAMETER_GROUPS =
+	static readonly DescribeCacheParameterGroups =
 		"elasticache:DescribeCacheParameterGroups";
 	/** [List] elasticache:DescribeCacheParameters */
-	static readonly DESCRIBE_CACHE_PARAMETERS =
+	static readonly DescribeCacheParameters =
 		"elasticache:DescribeCacheParameters";
 	/** [List] elasticache:DescribeCacheSecurityGroups */
-	static readonly DESCRIBE_CACHE_SECURITY_GROUPS =
+	static readonly DescribeCacheSecurityGroups =
 		"elasticache:DescribeCacheSecurityGroups";
 	/** [List] elasticache:DescribeCacheSubnetGroups */
-	static readonly DESCRIBE_CACHE_SUBNET_GROUPS =
+	static readonly DescribeCacheSubnetGroups =
 		"elasticache:DescribeCacheSubnetGroups";
 	/** [List] elasticache:DescribeEngineDefaultParameters */
-	static readonly DESCRIBE_ENGINE_DEFAULT_PARAMETERS =
+	static readonly DescribeEngineDefaultParameters =
 		"elasticache:DescribeEngineDefaultParameters";
 	/** [List] elasticache:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "elasticache:DescribeEvents";
+	static readonly DescribeEvents = "elasticache:DescribeEvents";
 	/** [List] elasticache:DescribeGlobalReplicationGroups */
-	static readonly DESCRIBE_GLOBAL_REPLICATION_GROUPS =
+	static readonly DescribeGlobalReplicationGroups =
 		"elasticache:DescribeGlobalReplicationGroups";
 	/** [List] elasticache:DescribeReplicationGroups */
-	static readonly DESCRIBE_REPLICATION_GROUPS =
+	static readonly DescribeReplicationGroups =
 		"elasticache:DescribeReplicationGroups";
 	/** [List] elasticache:DescribeReservedCacheNodes */
-	static readonly DESCRIBE_RESERVED_CACHE_NODES =
+	static readonly DescribeReservedCacheNodes =
 		"elasticache:DescribeReservedCacheNodes";
 	/** [List] elasticache:DescribeReservedCacheNodesOfferings */
-	static readonly DESCRIBE_RESERVED_CACHE_NODES_OFFERINGS =
+	static readonly DescribeReservedCacheNodesOfferings =
 		"elasticache:DescribeReservedCacheNodesOfferings";
 	/** [List] elasticache:DescribeServerlessCacheSnapshots */
-	static readonly DESCRIBE_SERVERLESS_CACHE_SNAPSHOTS =
+	static readonly DescribeServerlessCacheSnapshots =
 		"elasticache:DescribeServerlessCacheSnapshots";
 	/** [List] elasticache:DescribeServerlessCaches */
-	static readonly DESCRIBE_SERVERLESS_CACHES =
+	static readonly DescribeServerlessCaches =
 		"elasticache:DescribeServerlessCaches";
 	/** [List] elasticache:DescribeServiceUpdates */
-	static readonly DESCRIBE_SERVICE_UPDATES =
-		"elasticache:DescribeServiceUpdates";
+	static readonly DescribeServiceUpdates = "elasticache:DescribeServiceUpdates";
 	/** [List] elasticache:DescribeSnapshots */
-	static readonly DESCRIBE_SNAPSHOTS = "elasticache:DescribeSnapshots";
+	static readonly DescribeSnapshots = "elasticache:DescribeSnapshots";
 	/** [List] elasticache:DescribeUpdateActions */
-	static readonly DESCRIBE_UPDATE_ACTIONS = "elasticache:DescribeUpdateActions";
+	static readonly DescribeUpdateActions = "elasticache:DescribeUpdateActions";
 	/** [List] elasticache:DescribeUserGroups */
-	static readonly DESCRIBE_USER_GROUPS = "elasticache:DescribeUserGroups";
+	static readonly DescribeUserGroups = "elasticache:DescribeUserGroups";
 	/** [List] elasticache:DescribeUsers */
-	static readonly DESCRIBE_USERS = "elasticache:DescribeUsers";
+	static readonly DescribeUsers = "elasticache:DescribeUsers";
 	/** [Write] elasticache:DisassociateGlobalReplicationGroup */
-	static readonly DISASSOCIATE_GLOBAL_REPLICATION_GROUP =
+	static readonly DisassociateGlobalReplicationGroup =
 		"elasticache:DisassociateGlobalReplicationGroup";
 	/** [Write] elasticache:ExportServerlessCacheSnapshot */
-	static readonly EXPORT_SERVERLESS_CACHE_SNAPSHOT =
+	static readonly ExportServerlessCacheSnapshot =
 		"elasticache:ExportServerlessCacheSnapshot";
 	/** [Write] elasticache:FailoverGlobalReplicationGroup */
-	static readonly FAILOVER_GLOBAL_REPLICATION_GROUP =
+	static readonly FailoverGlobalReplicationGroup =
 		"elasticache:FailoverGlobalReplicationGroup";
 	/** [Write] elasticache:IncreaseNodeGroupsInGlobalReplicationGroup */
-	static readonly INCREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP =
+	static readonly IncreaseNodeGroupsInGlobalReplicationGroup =
 		"elasticache:IncreaseNodeGroupsInGlobalReplicationGroup";
 	/** [Write] elasticache:IncreaseReplicaCount */
-	static readonly INCREASE_REPLICA_COUNT = "elasticache:IncreaseReplicaCount";
+	static readonly IncreaseReplicaCount = "elasticache:IncreaseReplicaCount";
 	/** [Write] elasticache:InterruptClusterAzPower */
-	static readonly INTERRUPT_CLUSTER_AZ_POWER =
+	static readonly InterruptClusterAzPower =
 		"elasticache:InterruptClusterAzPower";
 	/** [List] elasticache:ListAllowedNodeTypeModifications */
-	static readonly LIST_ALLOWED_NODE_TYPE_MODIFICATIONS =
+	static readonly ListAllowedNodeTypeModifications =
 		"elasticache:ListAllowedNodeTypeModifications";
 	/** [Read] elasticache:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "elasticache:ListTagsForResource";
+	static readonly ListTagsForResource = "elasticache:ListTagsForResource";
 	/** [Write] elasticache:ModifyCacheCluster */
-	static readonly MODIFY_CACHE_CLUSTER = "elasticache:ModifyCacheCluster";
+	static readonly ModifyCacheCluster = "elasticache:ModifyCacheCluster";
 	/** [Write] elasticache:ModifyCacheParameterGroup */
-	static readonly MODIFY_CACHE_PARAMETER_GROUP =
+	static readonly ModifyCacheParameterGroup =
 		"elasticache:ModifyCacheParameterGroup";
 	/** [Write] elasticache:ModifyCacheSubnetGroup */
-	static readonly MODIFY_CACHE_SUBNET_GROUP =
-		"elasticache:ModifyCacheSubnetGroup";
+	static readonly ModifyCacheSubnetGroup = "elasticache:ModifyCacheSubnetGroup";
 	/** [Write] elasticache:ModifyGlobalReplicationGroup */
-	static readonly MODIFY_GLOBAL_REPLICATION_GROUP =
+	static readonly ModifyGlobalReplicationGroup =
 		"elasticache:ModifyGlobalReplicationGroup";
 	/** [Write] elasticache:ModifyReplicationGroup */
-	static readonly MODIFY_REPLICATION_GROUP =
-		"elasticache:ModifyReplicationGroup";
+	static readonly ModifyReplicationGroup = "elasticache:ModifyReplicationGroup";
 	/** [Write] elasticache:ModifyReplicationGroupShardConfiguration */
-	static readonly MODIFY_REPLICATION_GROUP_SHARD_CONFIGURATION =
+	static readonly ModifyReplicationGroupShardConfiguration =
 		"elasticache:ModifyReplicationGroupShardConfiguration";
 	/** [Write] elasticache:ModifyServerlessCache */
-	static readonly MODIFY_SERVERLESS_CACHE = "elasticache:ModifyServerlessCache";
+	static readonly ModifyServerlessCache = "elasticache:ModifyServerlessCache";
 	/** [Write] elasticache:ModifyUser */
-	static readonly MODIFY_USER = "elasticache:ModifyUser";
+	static readonly ModifyUser = "elasticache:ModifyUser";
 	/** [Write] elasticache:ModifyUserGroup */
-	static readonly MODIFY_USER_GROUP = "elasticache:ModifyUserGroup";
+	static readonly ModifyUserGroup = "elasticache:ModifyUserGroup";
 	/** [Write] elasticache:PurchaseReservedCacheNodesOffering */
-	static readonly PURCHASE_RESERVED_CACHE_NODES_OFFERING =
+	static readonly PurchaseReservedCacheNodesOffering =
 		"elasticache:PurchaseReservedCacheNodesOffering";
 	/** [Write] elasticache:RebalanceSlotsInGlobalReplicationGroup */
-	static readonly REBALANCE_SLOTS_IN_GLOBAL_REPLICATION_GROUP =
+	static readonly RebalanceSlotsInGlobalReplicationGroup =
 		"elasticache:RebalanceSlotsInGlobalReplicationGroup";
 	/** [Write] elasticache:RebootCacheCluster */
-	static readonly REBOOT_CACHE_CLUSTER = "elasticache:RebootCacheCluster";
+	static readonly RebootCacheCluster = "elasticache:RebootCacheCluster";
 	/** [Tagging] elasticache:RemoveTagsFromResource */
-	static readonly REMOVE_TAGS_FROM_RESOURCE =
-		"elasticache:RemoveTagsFromResource";
+	static readonly RemoveTagsFromResource = "elasticache:RemoveTagsFromResource";
 	/** [Write] elasticache:ResetCacheParameterGroup */
-	static readonly RESET_CACHE_PARAMETER_GROUP =
+	static readonly ResetCacheParameterGroup =
 		"elasticache:ResetCacheParameterGroup";
 	/** [Write] elasticache:RevokeCacheSecurityGroupIngress */
-	static readonly REVOKE_CACHE_SECURITY_GROUP_INGRESS =
+	static readonly RevokeCacheSecurityGroupIngress =
 		"elasticache:RevokeCacheSecurityGroupIngress";
 	/** [Write] elasticache:StartMigration */
-	static readonly START_MIGRATION = "elasticache:StartMigration";
+	static readonly StartMigration = "elasticache:StartMigration";
 	/** [Write] elasticache:TestFailover */
-	static readonly TEST_FAILOVER = "elasticache:TestFailover";
+	static readonly TestFailover = "elasticache:TestFailover";
 	/** [Write] elasticache:TestMigration */
-	static readonly TEST_MIGRATION = "elasticache:TestMigration";
+	static readonly TestMigration = "elasticache:TestMigration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElastiCacheActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ElastiCacheActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElastiCacheActions.AUTHORIZE_CACHE_SECURITY_GROUP_INGRESS,
-		ElastiCacheActions.BATCH_APPLY_UPDATE_ACTION,
-		ElastiCacheActions.BATCH_STOP_UPDATE_ACTION,
-		ElastiCacheActions.COMPLETE_MIGRATION,
-		ElastiCacheActions.CONNECT,
-		ElastiCacheActions.COPY_SERVERLESS_CACHE_SNAPSHOT,
-		ElastiCacheActions.COPY_SNAPSHOT,
-		ElastiCacheActions.CREATE_CACHE_CLUSTER,
-		ElastiCacheActions.CREATE_CACHE_PARAMETER_GROUP,
-		ElastiCacheActions.CREATE_CACHE_SECURITY_GROUP,
-		ElastiCacheActions.CREATE_CACHE_SUBNET_GROUP,
-		ElastiCacheActions.CREATE_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.CREATE_REPLICATION_GROUP,
-		ElastiCacheActions.CREATE_SERVERLESS_CACHE,
-		ElastiCacheActions.CREATE_SERVERLESS_CACHE_SNAPSHOT,
-		ElastiCacheActions.CREATE_SNAPSHOT,
-		ElastiCacheActions.CREATE_USER,
-		ElastiCacheActions.CREATE_USER_GROUP,
-		ElastiCacheActions.DECREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.DECREASE_REPLICA_COUNT,
-		ElastiCacheActions.DELETE_CACHE_CLUSTER,
-		ElastiCacheActions.DELETE_CACHE_PARAMETER_GROUP,
-		ElastiCacheActions.DELETE_CACHE_SECURITY_GROUP,
-		ElastiCacheActions.DELETE_CACHE_SUBNET_GROUP,
-		ElastiCacheActions.DELETE_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.DELETE_REPLICATION_GROUP,
-		ElastiCacheActions.DELETE_SERVERLESS_CACHE,
-		ElastiCacheActions.DELETE_SERVERLESS_CACHE_SNAPSHOT,
-		ElastiCacheActions.DELETE_SNAPSHOT,
-		ElastiCacheActions.DELETE_USER,
-		ElastiCacheActions.DELETE_USER_GROUP,
-		ElastiCacheActions.DISASSOCIATE_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.EXPORT_SERVERLESS_CACHE_SNAPSHOT,
-		ElastiCacheActions.FAILOVER_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.INCREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.INCREASE_REPLICA_COUNT,
-		ElastiCacheActions.INTERRUPT_CLUSTER_AZ_POWER,
-		ElastiCacheActions.MODIFY_CACHE_CLUSTER,
-		ElastiCacheActions.MODIFY_CACHE_PARAMETER_GROUP,
-		ElastiCacheActions.MODIFY_CACHE_SUBNET_GROUP,
-		ElastiCacheActions.MODIFY_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.MODIFY_REPLICATION_GROUP,
-		ElastiCacheActions.MODIFY_REPLICATION_GROUP_SHARD_CONFIGURATION,
-		ElastiCacheActions.MODIFY_SERVERLESS_CACHE,
-		ElastiCacheActions.MODIFY_USER,
-		ElastiCacheActions.MODIFY_USER_GROUP,
-		ElastiCacheActions.PURCHASE_RESERVED_CACHE_NODES_OFFERING,
-		ElastiCacheActions.REBALANCE_SLOTS_IN_GLOBAL_REPLICATION_GROUP,
-		ElastiCacheActions.REBOOT_CACHE_CLUSTER,
-		ElastiCacheActions.RESET_CACHE_PARAMETER_GROUP,
-		ElastiCacheActions.REVOKE_CACHE_SECURITY_GROUP_INGRESS,
-		ElastiCacheActions.START_MIGRATION,
-		ElastiCacheActions.TEST_FAILOVER,
-		ElastiCacheActions.TEST_MIGRATION,
+	static readonly AllWriteActions: string[] = [
+		ElastiCacheActions.AuthorizeCacheSecurityGroupIngress,
+		ElastiCacheActions.BatchApplyUpdateAction,
+		ElastiCacheActions.BatchStopUpdateAction,
+		ElastiCacheActions.CompleteMigration,
+		ElastiCacheActions.Connect,
+		ElastiCacheActions.CopyServerlessCacheSnapshot,
+		ElastiCacheActions.CopySnapshot,
+		ElastiCacheActions.CreateCacheCluster,
+		ElastiCacheActions.CreateCacheParameterGroup,
+		ElastiCacheActions.CreateCacheSecurityGroup,
+		ElastiCacheActions.CreateCacheSubnetGroup,
+		ElastiCacheActions.CreateGlobalReplicationGroup,
+		ElastiCacheActions.CreateReplicationGroup,
+		ElastiCacheActions.CreateServerlessCache,
+		ElastiCacheActions.CreateServerlessCacheSnapshot,
+		ElastiCacheActions.CreateSnapshot,
+		ElastiCacheActions.CreateUser,
+		ElastiCacheActions.CreateUserGroup,
+		ElastiCacheActions.DecreaseNodeGroupsInGlobalReplicationGroup,
+		ElastiCacheActions.DecreaseReplicaCount,
+		ElastiCacheActions.DeleteCacheCluster,
+		ElastiCacheActions.DeleteCacheParameterGroup,
+		ElastiCacheActions.DeleteCacheSecurityGroup,
+		ElastiCacheActions.DeleteCacheSubnetGroup,
+		ElastiCacheActions.DeleteGlobalReplicationGroup,
+		ElastiCacheActions.DeleteReplicationGroup,
+		ElastiCacheActions.DeleteServerlessCache,
+		ElastiCacheActions.DeleteServerlessCacheSnapshot,
+		ElastiCacheActions.DeleteSnapshot,
+		ElastiCacheActions.DeleteUser,
+		ElastiCacheActions.DeleteUserGroup,
+		ElastiCacheActions.DisassociateGlobalReplicationGroup,
+		ElastiCacheActions.ExportServerlessCacheSnapshot,
+		ElastiCacheActions.FailoverGlobalReplicationGroup,
+		ElastiCacheActions.IncreaseNodeGroupsInGlobalReplicationGroup,
+		ElastiCacheActions.IncreaseReplicaCount,
+		ElastiCacheActions.InterruptClusterAzPower,
+		ElastiCacheActions.ModifyCacheCluster,
+		ElastiCacheActions.ModifyCacheParameterGroup,
+		ElastiCacheActions.ModifyCacheSubnetGroup,
+		ElastiCacheActions.ModifyGlobalReplicationGroup,
+		ElastiCacheActions.ModifyReplicationGroup,
+		ElastiCacheActions.ModifyReplicationGroupShardConfiguration,
+		ElastiCacheActions.ModifyServerlessCache,
+		ElastiCacheActions.ModifyUser,
+		ElastiCacheActions.ModifyUserGroup,
+		ElastiCacheActions.PurchaseReservedCacheNodesOffering,
+		ElastiCacheActions.RebalanceSlotsInGlobalReplicationGroup,
+		ElastiCacheActions.RebootCacheCluster,
+		ElastiCacheActions.ResetCacheParameterGroup,
+		ElastiCacheActions.RevokeCacheSecurityGroupIngress,
+		ElastiCacheActions.StartMigration,
+		ElastiCacheActions.TestFailover,
+		ElastiCacheActions.TestMigration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElastiCacheActions.DESCRIBE_CACHE_CLUSTERS,
-		ElastiCacheActions.DESCRIBE_CACHE_ENGINE_VERSIONS,
-		ElastiCacheActions.DESCRIBE_CACHE_PARAMETER_GROUPS,
-		ElastiCacheActions.DESCRIBE_CACHE_PARAMETERS,
-		ElastiCacheActions.DESCRIBE_CACHE_SECURITY_GROUPS,
-		ElastiCacheActions.DESCRIBE_CACHE_SUBNET_GROUPS,
-		ElastiCacheActions.DESCRIBE_ENGINE_DEFAULT_PARAMETERS,
-		ElastiCacheActions.DESCRIBE_EVENTS,
-		ElastiCacheActions.DESCRIBE_GLOBAL_REPLICATION_GROUPS,
-		ElastiCacheActions.DESCRIBE_REPLICATION_GROUPS,
-		ElastiCacheActions.DESCRIBE_RESERVED_CACHE_NODES,
-		ElastiCacheActions.DESCRIBE_RESERVED_CACHE_NODES_OFFERINGS,
-		ElastiCacheActions.DESCRIBE_SERVERLESS_CACHE_SNAPSHOTS,
-		ElastiCacheActions.DESCRIBE_SERVERLESS_CACHES,
-		ElastiCacheActions.DESCRIBE_SERVICE_UPDATES,
-		ElastiCacheActions.DESCRIBE_SNAPSHOTS,
-		ElastiCacheActions.DESCRIBE_UPDATE_ACTIONS,
-		ElastiCacheActions.DESCRIBE_USER_GROUPS,
-		ElastiCacheActions.DESCRIBE_USERS,
-		ElastiCacheActions.LIST_ALLOWED_NODE_TYPE_MODIFICATIONS,
+	static readonly AllListActions: string[] = [
+		ElastiCacheActions.DescribeCacheClusters,
+		ElastiCacheActions.DescribeCacheEngineVersions,
+		ElastiCacheActions.DescribeCacheParameterGroups,
+		ElastiCacheActions.DescribeCacheParameters,
+		ElastiCacheActions.DescribeCacheSecurityGroups,
+		ElastiCacheActions.DescribeCacheSubnetGroups,
+		ElastiCacheActions.DescribeEngineDefaultParameters,
+		ElastiCacheActions.DescribeEvents,
+		ElastiCacheActions.DescribeGlobalReplicationGroups,
+		ElastiCacheActions.DescribeReplicationGroups,
+		ElastiCacheActions.DescribeReservedCacheNodes,
+		ElastiCacheActions.DescribeReservedCacheNodesOfferings,
+		ElastiCacheActions.DescribeServerlessCacheSnapshots,
+		ElastiCacheActions.DescribeServerlessCaches,
+		ElastiCacheActions.DescribeServiceUpdates,
+		ElastiCacheActions.DescribeSnapshots,
+		ElastiCacheActions.DescribeUpdateActions,
+		ElastiCacheActions.DescribeUserGroups,
+		ElastiCacheActions.DescribeUsers,
+		ElastiCacheActions.ListAllowedNodeTypeModifications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ElastiCacheActions.ADD_TAGS_TO_RESOURCE,
-		ElastiCacheActions.REMOVE_TAGS_FROM_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ElastiCacheActions.AddTagsToResource,
+		ElastiCacheActions.RemoveTagsFromResource,
 	];
 }
 
-const ClusterArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<cacheClusterId>[^:/?]+)$",
-);
-const GlobalreplicationgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache::(?<account>[^:]*):globalreplicationgroup:(?<globalReplicationGroupId>[^:/?]+)$",
-);
-const ParametergroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):parametergroup:(?<cacheParameterGroupName>[^:/?]+)$",
-);
-const ReplicationgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):replicationgroup:(?<replicationGroupId>[^:/?]+)$",
-);
-const ReservedInstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):reserved-instance:(?<reservedCacheNodeId>[^:/?]+)$",
-);
-const SecuritygroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):securitygroup:(?<cacheSecurityGroupName>[^:/?]+)$",
-);
-const ServerlesscacheArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):serverlesscache:(?<serverlessCacheName>[^:/?]+)$",
-);
-const ServerlesscachesnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):serverlesscachesnapshot:(?<serverlessCacheSnapshotName>[^:/?]+)$",
-);
-const SnapshotArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):snapshot:(?<snapshotName>[^:/?]+)$",
-);
-const SubnetgroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):subnetgroup:(?<cacheSubnetGroupName>[^:/?]+)$",
-);
-const UserArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):user:(?<userId>[^:/?]+)$",
-);
-const UsergroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):usergroup:(?<userGroupId>[^:/?]+)$",
-);
+/**
+ * Properties for building a cluster ARN.
+ */
+export interface ElastiCacheClusterArnProps {
+	/** The CacheClusterId component of the ARN. */
+	readonly cacheClusterId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster ARN.
+ */
+export interface ElastiCacheClusterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CacheClusterId component. */
+	readonly cacheClusterId: string;
+}
+
+/**
+ * Properties for building a globalreplicationgroup ARN.
+ */
+export interface ElastiCacheGlobalreplicationgroupArnProps {
+	/** The GlobalReplicationGroupId component of the ARN. */
+	readonly globalReplicationGroupId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a globalreplicationgroup ARN.
+ */
+export interface ElastiCacheGlobalreplicationgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GlobalReplicationGroupId component. */
+	readonly globalReplicationGroupId: string;
+}
+
+/**
+ * Properties for building a parametergroup ARN.
+ */
+export interface ElastiCacheParametergroupArnProps {
+	/** The CacheParameterGroupName component of the ARN. */
+	readonly cacheParameterGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a parametergroup ARN.
+ */
+export interface ElastiCacheParametergroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CacheParameterGroupName component. */
+	readonly cacheParameterGroupName: string;
+}
+
+/**
+ * Properties for building a replicationgroup ARN.
+ */
+export interface ElastiCacheReplicationgroupArnProps {
+	/** The ReplicationGroupId component of the ARN. */
+	readonly replicationGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a replicationgroup ARN.
+ */
+export interface ElastiCacheReplicationgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReplicationGroupId component. */
+	readonly replicationGroupId: string;
+}
+
+/**
+ * Properties for building a reserved-instance ARN.
+ */
+export interface ElastiCacheReservedInstanceArnProps {
+	/** The ReservedCacheNodeId component of the ARN. */
+	readonly reservedCacheNodeId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a reserved-instance ARN.
+ */
+export interface ElastiCacheReservedInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReservedCacheNodeId component. */
+	readonly reservedCacheNodeId: string;
+}
+
+/**
+ * Properties for building a securitygroup ARN.
+ */
+export interface ElastiCacheSecuritygroupArnProps {
+	/** The CacheSecurityGroupName component of the ARN. */
+	readonly cacheSecurityGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a securitygroup ARN.
+ */
+export interface ElastiCacheSecuritygroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CacheSecurityGroupName component. */
+	readonly cacheSecurityGroupName: string;
+}
+
+/**
+ * Properties for building a serverlesscache ARN.
+ */
+export interface ElastiCacheServerlesscacheArnProps {
+	/** The ServerlessCacheName component of the ARN. */
+	readonly serverlessCacheName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a serverlesscache ARN.
+ */
+export interface ElastiCacheServerlesscacheArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServerlessCacheName component. */
+	readonly serverlessCacheName: string;
+}
+
+/**
+ * Properties for building a serverlesscachesnapshot ARN.
+ */
+export interface ElastiCacheServerlesscachesnapshotArnProps {
+	/** The ServerlessCacheSnapshotName component of the ARN. */
+	readonly serverlessCacheSnapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a serverlesscachesnapshot ARN.
+ */
+export interface ElastiCacheServerlesscachesnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServerlessCacheSnapshotName component. */
+	readonly serverlessCacheSnapshotName: string;
+}
+
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface ElastiCacheSnapshotArnProps {
+	/** The SnapshotName component of the ARN. */
+	readonly snapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface ElastiCacheSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotName component. */
+	readonly snapshotName: string;
+}
+
+/**
+ * Properties for building a subnetgroup ARN.
+ */
+export interface ElastiCacheSubnetgroupArnProps {
+	/** The CacheSubnetGroupName component of the ARN. */
+	readonly cacheSubnetGroupName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a subnetgroup ARN.
+ */
+export interface ElastiCacheSubnetgroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CacheSubnetGroupName component. */
+	readonly cacheSubnetGroupName: string;
+}
+
+/**
+ * Properties for building a user ARN.
+ */
+export interface ElastiCacheUserArnProps {
+	/** The UserId component of the ARN. */
+	readonly userId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a user ARN.
+ */
+export interface ElastiCacheUserArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserId component. */
+	readonly userId: string;
+}
+
+/**
+ * Properties for building a usergroup ARN.
+ */
+export interface ElastiCacheUsergroupArnProps {
+	/** The UserGroupId component of the ARN. */
+	readonly userGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a usergroup ARN.
+ */
+export interface ElastiCacheUsergroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The UserGroupId component. */
+	readonly userGroupId: string;
+}
+
+const ClusterArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):cluster:(?<cacheClusterId>[^:/?]+)$/;
+const GlobalreplicationgroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache::(?<account>[^:]*):globalreplicationgroup:(?<globalReplicationGroupId>[^:/?]+)$/;
+const ParametergroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):parametergroup:(?<cacheParameterGroupName>[^:/?]+)$/;
+const ReplicationgroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):replicationgroup:(?<replicationGroupId>[^:/?]+)$/;
+const ReservedInstanceArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):reserved-instance:(?<reservedCacheNodeId>[^:/?]+)$/;
+const SecuritygroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):securitygroup:(?<cacheSecurityGroupName>[^:/?]+)$/;
+const ServerlesscacheArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):serverlesscache:(?<serverlessCacheName>[^:/?]+)$/;
+const ServerlesscachesnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):serverlesscachesnapshot:(?<serverlessCacheSnapshotName>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):snapshot:(?<snapshotName>[^:/?]+)$/;
+const SubnetgroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):subnetgroup:(?<cacheSubnetGroupName>[^:/?]+)$/;
+const UserArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):user:(?<userId>[^:/?]+)$/;
+const UsergroupArnRegex =
+	/^arn:(?<partition>[^:]+):elasticache:(?<region>[^:]*):(?<account>[^:]*):usergroup:(?<userGroupId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elasticache resources.
@@ -350,16 +660,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the cluster resource.
 	 */
-	static cluster(props: {
-		/** The CacheClusterId component of the ARN. */
-		readonly cacheClusterId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static cluster(props: ElastiCacheClusterArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:cluster:${props.cacheClusterId}`;
 	}
 
@@ -374,12 +675,7 @@ export class ElastiCacheResources {
 	 * Parses a cluster ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseClusterArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cacheClusterId: string;
-	} {
+	static parseClusterArn(arn: string): ElastiCacheClusterArnComponents {
 		const match = ClusterArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid cluster ARN: ${arn}`);
@@ -395,14 +691,9 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the globalreplicationgroup resource.
 	 */
-	static globalreplicationgroup(props: {
-		/** The GlobalReplicationGroupId component of the ARN. */
-		readonly globalReplicationGroupId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static globalreplicationgroup(
+		props: ElastiCacheGlobalreplicationgroupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:elasticache::${props.account ?? "*"}:globalreplicationgroup:${props.globalReplicationGroupId}`;
 	}
 
@@ -417,11 +708,9 @@ export class ElastiCacheResources {
 	 * Parses a globalreplicationgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGlobalreplicationgroupArn(arn: string): {
-		partition: string;
-		account: string;
-		globalReplicationGroupId: string;
-	} {
+	static parseGlobalreplicationgroupArn(
+		arn: string,
+	): ElastiCacheGlobalreplicationgroupArnComponents {
 		const match = GlobalreplicationgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid globalreplicationgroup ARN: ${arn}`);
@@ -436,16 +725,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the parametergroup resource.
 	 */
-	static parametergroup(props: {
-		/** The CacheParameterGroupName component of the ARN. */
-		readonly cacheParameterGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static parametergroup(props: ElastiCacheParametergroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:parametergroup:${props.cacheParameterGroupName}`;
 	}
 
@@ -460,12 +740,9 @@ export class ElastiCacheResources {
 	 * Parses a parametergroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseParametergroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cacheParameterGroupName: string;
-	} {
+	static parseParametergroupArn(
+		arn: string,
+	): ElastiCacheParametergroupArnComponents {
 		const match = ParametergroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid parametergroup ARN: ${arn}`);
@@ -481,16 +758,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the replicationgroup resource.
 	 */
-	static replicationgroup(props: {
-		/** The ReplicationGroupId component of the ARN. */
-		readonly replicationGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static replicationgroup(props: ElastiCacheReplicationgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:replicationgroup:${props.replicationGroupId}`;
 	}
 
@@ -505,12 +773,9 @@ export class ElastiCacheResources {
 	 * Parses a replicationgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReplicationgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		replicationGroupId: string;
-	} {
+	static parseReplicationgroupArn(
+		arn: string,
+	): ElastiCacheReplicationgroupArnComponents {
 		const match = ReplicationgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid replicationgroup ARN: ${arn}`);
@@ -526,16 +791,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the reserved-instance resource.
 	 */
-	static reservedInstance(props: {
-		/** The ReservedCacheNodeId component of the ARN. */
-		readonly reservedCacheNodeId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static reservedInstance(props: ElastiCacheReservedInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:reserved-instance:${props.reservedCacheNodeId}`;
 	}
 
@@ -550,12 +806,9 @@ export class ElastiCacheResources {
 	 * Parses a reserved-instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReservedInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		reservedCacheNodeId: string;
-	} {
+	static parseReservedInstanceArn(
+		arn: string,
+	): ElastiCacheReservedInstanceArnComponents {
 		const match = ReservedInstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid reserved-instance ARN: ${arn}`);
@@ -571,16 +824,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the securitygroup resource.
 	 */
-	static securitygroup(props: {
-		/** The CacheSecurityGroupName component of the ARN. */
-		readonly cacheSecurityGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static securitygroup(props: ElastiCacheSecuritygroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:securitygroup:${props.cacheSecurityGroupName}`;
 	}
 
@@ -595,12 +839,9 @@ export class ElastiCacheResources {
 	 * Parses a securitygroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSecuritygroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cacheSecurityGroupName: string;
-	} {
+	static parseSecuritygroupArn(
+		arn: string,
+	): ElastiCacheSecuritygroupArnComponents {
 		const match = SecuritygroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid securitygroup ARN: ${arn}`);
@@ -616,16 +857,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the serverlesscache resource.
 	 */
-	static serverlesscache(props: {
-		/** The ServerlessCacheName component of the ARN. */
-		readonly serverlessCacheName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serverlesscache(props: ElastiCacheServerlesscacheArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:serverlesscache:${props.serverlessCacheName}`;
 	}
 
@@ -640,12 +872,9 @@ export class ElastiCacheResources {
 	 * Parses a serverlesscache ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServerlesscacheArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serverlessCacheName: string;
-	} {
+	static parseServerlesscacheArn(
+		arn: string,
+	): ElastiCacheServerlesscacheArnComponents {
 		const match = ServerlesscacheArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid serverlesscache ARN: ${arn}`);
@@ -661,16 +890,9 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the serverlesscachesnapshot resource.
 	 */
-	static serverlesscachesnapshot(props: {
-		/** The ServerlessCacheSnapshotName component of the ARN. */
-		readonly serverlessCacheSnapshotName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static serverlesscachesnapshot(
+		props: ElastiCacheServerlesscachesnapshotArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:serverlesscachesnapshot:${props.serverlessCacheSnapshotName}`;
 	}
 
@@ -685,12 +907,9 @@ export class ElastiCacheResources {
 	 * Parses a serverlesscachesnapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServerlesscachesnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serverlessCacheSnapshotName: string;
-	} {
+	static parseServerlesscachesnapshotArn(
+		arn: string,
+	): ElastiCacheServerlesscachesnapshotArnComponents {
 		const match = ServerlesscachesnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid serverlesscachesnapshot ARN: ${arn}`);
@@ -706,16 +925,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
-	static snapshot(props: {
-		/** The SnapshotName component of the ARN. */
-		readonly snapshotName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static snapshot(props: ElastiCacheSnapshotArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:snapshot:${props.snapshotName}`;
 	}
 
@@ -730,12 +940,7 @@ export class ElastiCacheResources {
 	 * Parses a snapshot ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSnapshotArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		snapshotName: string;
-	} {
+	static parseSnapshotArn(arn: string): ElastiCacheSnapshotArnComponents {
 		const match = SnapshotArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid snapshot ARN: ${arn}`);
@@ -751,16 +956,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the subnetgroup resource.
 	 */
-	static subnetgroup(props: {
-		/** The CacheSubnetGroupName component of the ARN. */
-		readonly cacheSubnetGroupName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static subnetgroup(props: ElastiCacheSubnetgroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:subnetgroup:${props.cacheSubnetGroupName}`;
 	}
 
@@ -775,12 +971,7 @@ export class ElastiCacheResources {
 	 * Parses a subnetgroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSubnetgroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		cacheSubnetGroupName: string;
-	} {
+	static parseSubnetgroupArn(arn: string): ElastiCacheSubnetgroupArnComponents {
 		const match = SubnetgroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid subnetgroup ARN: ${arn}`);
@@ -796,16 +987,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the user resource.
 	 */
-	static user(props: {
-		/** The UserId component of the ARN. */
-		readonly userId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static user(props: ElastiCacheUserArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:user:${props.userId}`;
 	}
 
@@ -820,12 +1002,7 @@ export class ElastiCacheResources {
 	 * Parses a user ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUserArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userId: string;
-	} {
+	static parseUserArn(arn: string): ElastiCacheUserArnComponents {
 		const match = UserArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid user ARN: ${arn}`);
@@ -841,16 +1018,7 @@ export class ElastiCacheResources {
 	/**
 	 * Builds an ARN for the usergroup resource.
 	 */
-	static usergroup(props: {
-		/** The UserGroupId component of the ARN. */
-		readonly userGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static usergroup(props: ElastiCacheUsergroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticache:${props.region ?? "*"}:${props.account ?? "*"}:usergroup:${props.userGroupId}`;
 	}
 
@@ -865,12 +1033,7 @@ export class ElastiCacheResources {
 	 * Parses a usergroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseUsergroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		userGroupId: string;
-	} {
+	static parseUsergroupArn(arn: string): ElastiCacheUsergroupArnComponents {
 		const match = UsergroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid usergroup ARN: ${arn}`);
@@ -889,301 +1052,301 @@ export class ElastiCacheResources {
  */
 export class ElastiCacheOperations {
 	/** IAM actions required for the AddTagsToResource API call. */
-	static readonly ADD_TAGS_TO_RESOURCE: string[] = [
+	static readonly AddTagsToResource: string[] = [
 		"elasticache:AddTagsToResource",
 	];
 	/** IAM actions required for the AuthorizeCacheSecurityGroupIngress API call. */
-	static readonly AUTHORIZE_CACHE_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly AuthorizeCacheSecurityGroupIngress: string[] = [
 		"elasticache:AuthorizeCacheSecurityGroupIngress",
 	];
 	/** IAM actions required for the BatchApplyUpdateAction API call. */
-	static readonly BATCH_APPLY_UPDATE_ACTION: string[] = [
+	static readonly BatchApplyUpdateAction: string[] = [
 		"elasticache:BatchApplyUpdateAction",
 	];
 	/** IAM actions required for the BatchStopUpdateAction API call. */
-	static readonly BATCH_STOP_UPDATE_ACTION: string[] = [
+	static readonly BatchStopUpdateAction: string[] = [
 		"elasticache:BatchStopUpdateAction",
 	];
 	/** IAM actions required for the CompleteMigration API call. */
-	static readonly COMPLETE_MIGRATION: string[] = [
+	static readonly CompleteMigration: string[] = [
 		"elasticache:CompleteMigration",
 	];
 	/** IAM actions required for the CopyServerlessCacheSnapshot API call. */
-	static readonly COPY_SERVERLESS_CACHE_SNAPSHOT: string[] = [
+	static readonly CopyServerlessCacheSnapshot: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CopyServerlessCacheSnapshot",
 	];
 	/** IAM actions required for the CopySnapshot API call. */
-	static readonly COPY_SNAPSHOT: string[] = [
+	static readonly CopySnapshot: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CopySnapshot",
 	];
 	/** IAM actions required for the CreateCacheCluster API call. */
-	static readonly CREATE_CACHE_CLUSTER: string[] = [
+	static readonly CreateCacheCluster: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateCacheCluster",
 	];
 	/** IAM actions required for the CreateCacheParameterGroup API call. */
-	static readonly CREATE_CACHE_PARAMETER_GROUP: string[] = [
+	static readonly CreateCacheParameterGroup: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateCacheParameterGroup",
 	];
 	/** IAM actions required for the CreateCacheSecurityGroup API call. */
-	static readonly CREATE_CACHE_SECURITY_GROUP: string[] = [
+	static readonly CreateCacheSecurityGroup: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateCacheSecurityGroup",
 	];
 	/** IAM actions required for the CreateCacheSubnetGroup API call. */
-	static readonly CREATE_CACHE_SUBNET_GROUP: string[] = [
+	static readonly CreateCacheSubnetGroup: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateCacheSubnetGroup",
 	];
 	/** IAM actions required for the CreateGlobalReplicationGroup API call. */
-	static readonly CREATE_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly CreateGlobalReplicationGroup: string[] = [
 		"elasticache:CreateGlobalReplicationGroup",
 	];
 	/** IAM actions required for the CreateReplicationGroup API call. */
-	static readonly CREATE_REPLICATION_GROUP: string[] = [
+	static readonly CreateReplicationGroup: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateReplicationGroup",
 	];
 	/** IAM actions required for the CreateServerlessCache API call. */
-	static readonly CREATE_SERVERLESS_CACHE: string[] = [
+	static readonly CreateServerlessCache: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateServerlessCache",
 	];
 	/** IAM actions required for the CreateServerlessCacheSnapshot API call. */
-	static readonly CREATE_SERVERLESS_CACHE_SNAPSHOT: string[] = [
+	static readonly CreateServerlessCacheSnapshot: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateServerlessCacheSnapshot",
 	];
 	/** IAM actions required for the CreateSnapshot API call. */
-	static readonly CREATE_SNAPSHOT: string[] = [
+	static readonly CreateSnapshot: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateSnapshot",
 	];
 	/** IAM actions required for the CreateUser API call. */
-	static readonly CREATE_USER: string[] = [
+	static readonly CreateUser: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateUser",
 	];
 	/** IAM actions required for the CreateUserGroup API call. */
-	static readonly CREATE_USER_GROUP: string[] = [
+	static readonly CreateUserGroup: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:CreateUserGroup",
 	];
 	/** IAM actions required for the DecreaseNodeGroupsInGlobalReplicationGroup API call. */
-	static readonly DECREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly DecreaseNodeGroupsInGlobalReplicationGroup: string[] = [
 		"elasticache:DecreaseNodeGroupsInGlobalReplicationGroup",
 	];
 	/** IAM actions required for the DecreaseReplicaCount API call. */
-	static readonly DECREASE_REPLICA_COUNT: string[] = [
+	static readonly DecreaseReplicaCount: string[] = [
 		"elasticache:DecreaseReplicaCount",
 	];
 	/** IAM actions required for the DeleteCacheCluster API call. */
-	static readonly DELETE_CACHE_CLUSTER: string[] = [
+	static readonly DeleteCacheCluster: string[] = [
 		"elasticache:CreateSnapshot",
 		"elasticache:DeleteCacheCluster",
 	];
 	/** IAM actions required for the DeleteCacheParameterGroup API call. */
-	static readonly DELETE_CACHE_PARAMETER_GROUP: string[] = [
+	static readonly DeleteCacheParameterGroup: string[] = [
 		"elasticache:DeleteCacheParameterGroup",
 	];
 	/** IAM actions required for the DeleteCacheSecurityGroup API call. */
-	static readonly DELETE_CACHE_SECURITY_GROUP: string[] = [
+	static readonly DeleteCacheSecurityGroup: string[] = [
 		"elasticache:DeleteCacheSecurityGroup",
 	];
 	/** IAM actions required for the DeleteCacheSubnetGroup API call. */
-	static readonly DELETE_CACHE_SUBNET_GROUP: string[] = [
+	static readonly DeleteCacheSubnetGroup: string[] = [
 		"elasticache:DeleteCacheSubnetGroup",
 	];
 	/** IAM actions required for the DeleteGlobalReplicationGroup API call. */
-	static readonly DELETE_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly DeleteGlobalReplicationGroup: string[] = [
 		"elasticache:DeleteGlobalReplicationGroup",
 	];
 	/** IAM actions required for the DeleteReplicationGroup API call. */
-	static readonly DELETE_REPLICATION_GROUP: string[] = [
+	static readonly DeleteReplicationGroup: string[] = [
 		"elasticache:CreateSnapshot",
 		"elasticache:DeleteReplicationGroup",
 	];
 	/** IAM actions required for the DeleteServerlessCache API call. */
-	static readonly DELETE_SERVERLESS_CACHE: string[] = [
+	static readonly DeleteServerlessCache: string[] = [
 		"elasticache:CreateServerlessCacheSnapshot",
 		"elasticache:DeleteServerlessCache",
 	];
 	/** IAM actions required for the DeleteServerlessCacheSnapshot API call. */
-	static readonly DELETE_SERVERLESS_CACHE_SNAPSHOT: string[] = [
+	static readonly DeleteServerlessCacheSnapshot: string[] = [
 		"elasticache:DeleteServerlessCacheSnapshot",
 	];
 	/** IAM actions required for the DeleteSnapshot API call. */
-	static readonly DELETE_SNAPSHOT: string[] = ["elasticache:DeleteSnapshot"];
+	static readonly DeleteSnapshot: string[] = ["elasticache:DeleteSnapshot"];
 	/** IAM actions required for the DeleteUser API call. */
-	static readonly DELETE_USER: string[] = ["elasticache:DeleteUser"];
+	static readonly DeleteUser: string[] = ["elasticache:DeleteUser"];
 	/** IAM actions required for the DeleteUserGroup API call. */
-	static readonly DELETE_USER_GROUP: string[] = ["elasticache:DeleteUserGroup"];
+	static readonly DeleteUserGroup: string[] = ["elasticache:DeleteUserGroup"];
 	/** IAM actions required for the DescribeCacheClusters API call. */
-	static readonly DESCRIBE_CACHE_CLUSTERS: string[] = [
+	static readonly DescribeCacheClusters: string[] = [
 		"elasticache:DescribeCacheClusters",
 	];
 	/** IAM actions required for the DescribeCacheEngineVersions API call. */
-	static readonly DESCRIBE_CACHE_ENGINE_VERSIONS: string[] = [
+	static readonly DescribeCacheEngineVersions: string[] = [
 		"elasticache:DescribeCacheEngineVersions",
 	];
 	/** IAM actions required for the DescribeCacheParameterGroups API call. */
-	static readonly DESCRIBE_CACHE_PARAMETER_GROUPS: string[] = [
+	static readonly DescribeCacheParameterGroups: string[] = [
 		"elasticache:DescribeCacheParameterGroups",
 	];
 	/** IAM actions required for the DescribeCacheParameters API call. */
-	static readonly DESCRIBE_CACHE_PARAMETERS: string[] = [
+	static readonly DescribeCacheParameters: string[] = [
 		"elasticache:DescribeCacheParameters",
 	];
 	/** IAM actions required for the DescribeCacheSecurityGroups API call. */
-	static readonly DESCRIBE_CACHE_SECURITY_GROUPS: string[] = [
+	static readonly DescribeCacheSecurityGroups: string[] = [
 		"elasticache:DescribeCacheSecurityGroups",
 	];
 	/** IAM actions required for the DescribeCacheSubnetGroups API call. */
-	static readonly DESCRIBE_CACHE_SUBNET_GROUPS: string[] = [
+	static readonly DescribeCacheSubnetGroups: string[] = [
 		"elasticache:DescribeCacheSubnetGroups",
 	];
 	/** IAM actions required for the DescribeEngineDefaultParameters API call. */
-	static readonly DESCRIBE_ENGINE_DEFAULT_PARAMETERS: string[] = [
+	static readonly DescribeEngineDefaultParameters: string[] = [
 		"elasticache:DescribeEngineDefaultParameters",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = ["elasticache:DescribeEvents"];
+	static readonly DescribeEvents: string[] = ["elasticache:DescribeEvents"];
 	/** IAM actions required for the DescribeGlobalReplicationGroups API call. */
-	static readonly DESCRIBE_GLOBAL_REPLICATION_GROUPS: string[] = [
+	static readonly DescribeGlobalReplicationGroups: string[] = [
 		"elasticache:DescribeGlobalReplicationGroups",
 	];
 	/** IAM actions required for the DescribeReplicationGroups API call. */
-	static readonly DESCRIBE_REPLICATION_GROUPS: string[] = [
+	static readonly DescribeReplicationGroups: string[] = [
 		"elasticache:DescribeReplicationGroups",
 	];
 	/** IAM actions required for the DescribeReservedCacheNodes API call. */
-	static readonly DESCRIBE_RESERVED_CACHE_NODES: string[] = [
+	static readonly DescribeReservedCacheNodes: string[] = [
 		"elasticache:DescribeReservedCacheNodes",
 	];
 	/** IAM actions required for the DescribeReservedCacheNodesOfferings API call. */
-	static readonly DESCRIBE_RESERVED_CACHE_NODES_OFFERINGS: string[] = [
+	static readonly DescribeReservedCacheNodesOfferings: string[] = [
 		"elasticache:DescribeReservedCacheNodesOfferings",
 	];
 	/** IAM actions required for the DescribeServerlessCacheSnapshots API call. */
-	static readonly DESCRIBE_SERVERLESS_CACHE_SNAPSHOTS: string[] = [
+	static readonly DescribeServerlessCacheSnapshots: string[] = [
 		"elasticache:DescribeServerlessCacheSnapshots",
 	];
 	/** IAM actions required for the DescribeServerlessCaches API call. */
-	static readonly DESCRIBE_SERVERLESS_CACHES: string[] = [
+	static readonly DescribeServerlessCaches: string[] = [
 		"elasticache:DescribeServerlessCaches",
 	];
 	/** IAM actions required for the DescribeServiceUpdates API call. */
-	static readonly DESCRIBE_SERVICE_UPDATES: string[] = [
+	static readonly DescribeServiceUpdates: string[] = [
 		"elasticache:DescribeServiceUpdates",
 	];
 	/** IAM actions required for the DescribeSnapshots API call. */
-	static readonly DESCRIBE_SNAPSHOTS: string[] = [
+	static readonly DescribeSnapshots: string[] = [
 		"elasticache:DescribeSnapshots",
 	];
 	/** IAM actions required for the DescribeUpdateActions API call. */
-	static readonly DESCRIBE_UPDATE_ACTIONS: string[] = [
+	static readonly DescribeUpdateActions: string[] = [
 		"elasticache:DescribeUpdateActions",
 	];
 	/** IAM actions required for the DescribeUserGroups API call. */
-	static readonly DESCRIBE_USER_GROUPS: string[] = [
+	static readonly DescribeUserGroups: string[] = [
 		"elasticache:DescribeUserGroups",
 	];
 	/** IAM actions required for the DescribeUsers API call. */
-	static readonly DESCRIBE_USERS: string[] = ["elasticache:DescribeUsers"];
+	static readonly DescribeUsers: string[] = ["elasticache:DescribeUsers"];
 	/** IAM actions required for the DisassociateGlobalReplicationGroup API call. */
-	static readonly DISASSOCIATE_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly DisassociateGlobalReplicationGroup: string[] = [
 		"elasticache:DisassociateGlobalReplicationGroup",
 	];
 	/** IAM actions required for the ExportServerlessCacheSnapshot API call. */
-	static readonly EXPORT_SERVERLESS_CACHE_SNAPSHOT: string[] = [
+	static readonly ExportServerlessCacheSnapshot: string[] = [
 		"elasticache:ExportServerlessCacheSnapshot",
 	];
 	/** IAM actions required for the FailoverGlobalReplicationGroup API call. */
-	static readonly FAILOVER_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly FailoverGlobalReplicationGroup: string[] = [
 		"elasticache:FailoverGlobalReplicationGroup",
 	];
 	/** IAM actions required for the IncreaseNodeGroupsInGlobalReplicationGroup API call. */
-	static readonly INCREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly IncreaseNodeGroupsInGlobalReplicationGroup: string[] = [
 		"elasticache:IncreaseNodeGroupsInGlobalReplicationGroup",
 	];
 	/** IAM actions required for the IncreaseReplicaCount API call. */
-	static readonly INCREASE_REPLICA_COUNT: string[] = [
+	static readonly IncreaseReplicaCount: string[] = [
 		"elasticache:IncreaseReplicaCount",
 	];
 	/** IAM actions required for the ListAllowedNodeTypeModifications API call. */
-	static readonly LIST_ALLOWED_NODE_TYPE_MODIFICATIONS: string[] = [
+	static readonly ListAllowedNodeTypeModifications: string[] = [
 		"elasticache:ListAllowedNodeTypeModifications",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"elasticache:ListTagsForResource",
 	];
 	/** IAM actions required for the ModifyCacheCluster API call. */
-	static readonly MODIFY_CACHE_CLUSTER: string[] = [
+	static readonly ModifyCacheCluster: string[] = [
 		"elasticache:ModifyCacheCluster",
 	];
 	/** IAM actions required for the ModifyCacheParameterGroup API call. */
-	static readonly MODIFY_CACHE_PARAMETER_GROUP: string[] = [
+	static readonly ModifyCacheParameterGroup: string[] = [
 		"elasticache:ModifyCacheParameterGroup",
 	];
 	/** IAM actions required for the ModifyCacheSubnetGroup API call. */
-	static readonly MODIFY_CACHE_SUBNET_GROUP: string[] = [
+	static readonly ModifyCacheSubnetGroup: string[] = [
 		"elasticache:ModifyCacheSubnetGroup",
 	];
 	/** IAM actions required for the ModifyGlobalReplicationGroup API call. */
-	static readonly MODIFY_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly ModifyGlobalReplicationGroup: string[] = [
 		"elasticache:ModifyGlobalReplicationGroup",
 	];
 	/** IAM actions required for the ModifyReplicationGroup API call. */
-	static readonly MODIFY_REPLICATION_GROUP: string[] = [
+	static readonly ModifyReplicationGroup: string[] = [
 		"elasticache:ModifyReplicationGroup",
 	];
 	/** IAM actions required for the ModifyReplicationGroupShardConfiguration API call. */
-	static readonly MODIFY_REPLICATION_GROUP_SHARD_CONFIGURATION: string[] = [
+	static readonly ModifyReplicationGroupShardConfiguration: string[] = [
 		"elasticache:ModifyReplicationGroupShardConfiguration",
 	];
 	/** IAM actions required for the ModifyServerlessCache API call. */
-	static readonly MODIFY_SERVERLESS_CACHE: string[] = [
+	static readonly ModifyServerlessCache: string[] = [
 		"elasticache:ModifyServerlessCache",
 	];
 	/** IAM actions required for the ModifyUser API call. */
-	static readonly MODIFY_USER: string[] = ["elasticache:ModifyUser"];
+	static readonly ModifyUser: string[] = ["elasticache:ModifyUser"];
 	/** IAM actions required for the ModifyUserGroup API call. */
-	static readonly MODIFY_USER_GROUP: string[] = ["elasticache:ModifyUserGroup"];
+	static readonly ModifyUserGroup: string[] = ["elasticache:ModifyUserGroup"];
 	/** IAM actions required for the PurchaseReservedCacheNodesOffering API call. */
-	static readonly PURCHASE_RESERVED_CACHE_NODES_OFFERING: string[] = [
+	static readonly PurchaseReservedCacheNodesOffering: string[] = [
 		"elasticache:AddTagsToResource",
 		"elasticache:PurchaseReservedCacheNodesOffering",
 	];
 	/** IAM actions required for the RebalanceSlotsInGlobalReplicationGroup API call. */
-	static readonly REBALANCE_SLOTS_IN_GLOBAL_REPLICATION_GROUP: string[] = [
+	static readonly RebalanceSlotsInGlobalReplicationGroup: string[] = [
 		"elasticache:RebalanceSlotsInGlobalReplicationGroup",
 	];
 	/** IAM actions required for the RebootCacheCluster API call. */
-	static readonly REBOOT_CACHE_CLUSTER: string[] = [
+	static readonly RebootCacheCluster: string[] = [
 		"elasticache:RebootCacheCluster",
 	];
 	/** IAM actions required for the RemoveTagsFromResource API call. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE: string[] = [
+	static readonly RemoveTagsFromResource: string[] = [
 		"elasticache:RemoveTagsFromResource",
 	];
 	/** IAM actions required for the ResetCacheParameterGroup API call. */
-	static readonly RESET_CACHE_PARAMETER_GROUP: string[] = [
+	static readonly ResetCacheParameterGroup: string[] = [
 		"elasticache:ResetCacheParameterGroup",
 	];
 	/** IAM actions required for the RevokeCacheSecurityGroupIngress API call. */
-	static readonly REVOKE_CACHE_SECURITY_GROUP_INGRESS: string[] = [
+	static readonly RevokeCacheSecurityGroupIngress: string[] = [
 		"elasticache:RevokeCacheSecurityGroupIngress",
 	];
 	/** IAM actions required for the StartMigration API call. */
-	static readonly START_MIGRATION: string[] = ["elasticache:StartMigration"];
+	static readonly StartMigration: string[] = ["elasticache:StartMigration"];
 	/** IAM actions required for the TestFailover API call. */
-	static readonly TEST_FAILOVER: string[] = ["elasticache:TestFailover"];
+	static readonly TestFailover: string[] = ["elasticache:TestFailover"];
 	/** IAM actions required for the TestMigration API call. */
-	static readonly TEST_MIGRATION: string[] = ["elasticache:TestMigration"];
+	static readonly TestMigration: string[] = ["elasticache:TestMigration"];
 }
 
 /**
@@ -1191,268 +1354,274 @@ export class ElastiCacheOperations {
  */
 export class ElastiCacheConditions {
 	/** Condition keys applicable to the AddTagsToResource action. */
-	static readonly ADD_TAGS_TO_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly AddTagsToResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the AuthorizeCacheSecurityGroupIngress action. */
-	static readonly AUTHORIZE_CACHE_SECURITY_GROUP_INGRESS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly AuthorizeCacheSecurityGroupIngressConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the BatchApplyUpdateAction action. */
-	static readonly BATCH_APPLY_UPDATE_ACTION_CONDITION_KEYS: string[] = [
+	static readonly BatchApplyUpdateActionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the BatchStopUpdateAction action. */
-	static readonly BATCH_STOP_UPDATE_ACTION_CONDITION_KEYS: string[] = [
+	static readonly BatchStopUpdateActionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CompleteMigration action. */
-	static readonly COMPLETE_MIGRATION_CONDITION_KEYS: string[] = [
+	static readonly CompleteMigrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the Connect action. */
-	static readonly CONNECT_CONDITION_KEYS: string[] = [
+	static readonly ConnectConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CopyServerlessCacheSnapshot action. */
-	static readonly COPY_SERVERLESS_CACHE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CopyServerlessCacheSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CopySnapshot action. */
-	static readonly COPY_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CopySnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticache:KmsKeyId",
 	];
 	/** Condition keys applicable to the CreateCacheCluster action. */
-	static readonly CREATE_CACHE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly CreateCacheClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateCacheParameterGroup action. */
-	static readonly CREATE_CACHE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateCacheParameterGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticache:CacheParameterGroupName",
 	];
 	/** Condition keys applicable to the CreateCacheSecurityGroup action. */
-	static readonly CREATE_CACHE_SECURITY_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateCacheSecurityGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateCacheSubnetGroup action. */
-	static readonly CREATE_CACHE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateCacheSubnetGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGlobalReplicationGroup action. */
-	static readonly CREATE_GLOBAL_REPLICATION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateGlobalReplicationGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateReplicationGroup action. */
-	static readonly CREATE_REPLICATION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateReplicationGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateServerlessCache action. */
-	static readonly CREATE_SERVERLESS_CACHE_CONDITION_KEYS: string[] = [
+	static readonly CreateServerlessCacheConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateServerlessCacheSnapshot action. */
-	static readonly CREATE_SERVERLESS_CACHE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateServerlessCacheSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshot action. */
-	static readonly CREATE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly CreateSnapshotConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateUser action. */
-	static readonly CREATE_USER_CONDITION_KEYS: string[] = [
+	static readonly CreateUserConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticache:UserAuthenticationMode",
 	];
 	/** Condition keys applicable to the CreateUserGroup action. */
-	static readonly CREATE_USER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateUserGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DecreaseNodeGroupsInGlobalReplicationGroup action. */
-	static readonly DECREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP_CONDITION_KEYS: string[] =
+	static readonly DecreaseNodeGroupsInGlobalReplicationGroupConditionKeys: string[] =
 		["elasticache:NumNodeGroups"];
 	/** Condition keys applicable to the DecreaseReplicaCount action. */
-	static readonly DECREASE_REPLICA_COUNT_CONDITION_KEYS: string[] = [
+	static readonly DecreaseReplicaCountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:ReplicasPerNodeGroup",
 	];
 	/** Condition keys applicable to the DeleteCacheParameterGroup action. */
-	static readonly DELETE_CACHE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteCacheParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:CacheParameterGroupName",
 	];
 	/** Condition keys applicable to the DeleteCacheSecurityGroup action. */
-	static readonly DELETE_CACHE_SECURITY_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteCacheSecurityGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteCacheSubnetGroup action. */
-	static readonly DELETE_CACHE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteCacheSubnetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSnapshot action. */
-	static readonly DELETE_SNAPSHOT_CONDITION_KEYS: string[] = [
+	static readonly DeleteSnapshotConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteUser action. */
-	static readonly DELETE_USER_CONDITION_KEYS: string[] = [
+	static readonly DeleteUserConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteUserGroup action. */
-	static readonly DELETE_USER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly DeleteUserGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCacheClusters action. */
-	static readonly DESCRIBE_CACHE_CLUSTERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCacheClustersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCacheParameterGroups action. */
-	static readonly DESCRIBE_CACHE_PARAMETER_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCacheParameterGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCacheParameters action. */
-	static readonly DESCRIBE_CACHE_PARAMETERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCacheParametersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCacheSecurityGroups action. */
-	static readonly DESCRIBE_CACHE_SECURITY_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCacheSecurityGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeCacheSubnetGroups action. */
-	static readonly DESCRIBE_CACHE_SUBNET_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeCacheSubnetGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeReplicationGroups action. */
-	static readonly DESCRIBE_REPLICATION_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeReplicationGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeReservedCacheNodes action. */
-	static readonly DESCRIBE_RESERVED_CACHE_NODES_CONDITION_KEYS: string[] = [
+	static readonly DescribeReservedCacheNodesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeSnapshots action. */
-	static readonly DESCRIBE_SNAPSHOTS_CONDITION_KEYS: string[] = [
+	static readonly DescribeSnapshotsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeUpdateActions action. */
-	static readonly DESCRIBE_UPDATE_ACTIONS_CONDITION_KEYS: string[] = [
+	static readonly DescribeUpdateActionsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeUserGroups action. */
-	static readonly DESCRIBE_USER_GROUPS_CONDITION_KEYS: string[] = [
+	static readonly DescribeUserGroupsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DescribeUsers action. */
-	static readonly DESCRIBE_USERS_CONDITION_KEYS: string[] = [
+	static readonly DescribeUsersConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the IncreaseNodeGroupsInGlobalReplicationGroup action. */
-	static readonly INCREASE_NODE_GROUPS_IN_GLOBAL_REPLICATION_GROUP_CONDITION_KEYS: string[] =
+	static readonly IncreaseNodeGroupsInGlobalReplicationGroupConditionKeys: string[] =
 		["elasticache:NumNodeGroups"];
 	/** Condition keys applicable to the IncreaseReplicaCount action. */
-	static readonly INCREASE_REPLICA_COUNT_CONDITION_KEYS: string[] = [
+	static readonly IncreaseReplicaCountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:ReplicasPerNodeGroup",
 	];
 	/** Condition keys applicable to the InterruptClusterAzPower action. */
-	static readonly INTERRUPT_CLUSTER_AZ_POWER_CONDITION_KEYS: string[] = [
+	static readonly InterruptClusterAzPowerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListAllowedNodeTypeModifications action. */
-	static readonly LIST_ALLOWED_NODE_TYPE_MODIFICATIONS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly ListAllowedNodeTypeModificationsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyCacheCluster action. */
-	static readonly MODIFY_CACHE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly ModifyCacheClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyCacheParameterGroup action. */
-	static readonly MODIFY_CACHE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyCacheParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:CacheParameterGroupName",
 	];
 	/** Condition keys applicable to the ModifyCacheSubnetGroup action. */
-	static readonly MODIFY_CACHE_SUBNET_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyCacheSubnetGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyGlobalReplicationGroup action. */
-	static readonly MODIFY_GLOBAL_REPLICATION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyGlobalReplicationGroupConditionKeys: string[] = [
 		"elasticache:AutomaticFailoverEnabled",
 		"elasticache:CacheNodeType",
 		"elasticache:EngineVersion",
 	];
 	/** Condition keys applicable to the ModifyReplicationGroup action. */
-	static readonly MODIFY_REPLICATION_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyReplicationGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ModifyReplicationGroupShardConfiguration action. */
-	static readonly MODIFY_REPLICATION_GROUP_SHARD_CONFIGURATION_CONDITION_KEYS: string[] =
+	static readonly ModifyReplicationGroupShardConfigurationConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "elasticache:NumNodeGroups"];
 	/** Condition keys applicable to the ModifyUser action. */
-	static readonly MODIFY_USER_CONDITION_KEYS: string[] = [
+	static readonly ModifyUserConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:UserAuthenticationMode",
 	];
 	/** Condition keys applicable to the ModifyUserGroup action. */
-	static readonly MODIFY_USER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ModifyUserGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PurchaseReservedCacheNodesOffering action. */
-	static readonly PURCHASE_RESERVED_CACHE_NODES_OFFERING_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:ResourceTag/${TagKey}", "aws:TagKeys"];
+	static readonly PurchaseReservedCacheNodesOfferingConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the RebootCacheCluster action. */
-	static readonly REBOOT_CACHE_CLUSTER_CONDITION_KEYS: string[] = [
+	static readonly RebootCacheClusterConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the RemoveTagsFromResource action. */
-	static readonly REMOVE_TAGS_FROM_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly RemoveTagsFromResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ResetCacheParameterGroup action. */
-	static readonly RESET_CACHE_PARAMETER_GROUP_CONDITION_KEYS: string[] = [
+	static readonly ResetCacheParameterGroupConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticache:CacheParameterGroupName",
 	];
 	/** Condition keys applicable to the RevokeCacheSecurityGroupIngress action. */
-	static readonly REVOKE_CACHE_SECURITY_GROUP_INGRESS_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly RevokeCacheSecurityGroupIngressConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the StartMigration action. */
-	static readonly START_MIGRATION_CONDITION_KEYS: string[] = [
+	static readonly StartMigrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TestFailover action. */
-	static readonly TEST_FAILOVER_CONDITION_KEYS: string[] = [
+	static readonly TestFailoverConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TestMigration action. */
-	static readonly TEST_MIGRATION_CONDITION_KEYS: string[] = [
+	static readonly TestMigrationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: elasticache:AtRestEncryptionEnabled (Bool) */
 	static readonly AT_REST_ENCRYPTION_ENABLED =
 		"elasticache:AtRestEncryptionEnabled";

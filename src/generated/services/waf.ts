@@ -13,298 +13,568 @@ export class WAFActions {
 	static readonly SERVICE_PREFIX = "waf";
 
 	/** [Write] waf:CreateByteMatchSet */
-	static readonly CREATE_BYTE_MATCH_SET = "waf:CreateByteMatchSet";
+	static readonly CreateByteMatchSet = "waf:CreateByteMatchSet";
 	/** [Write] waf:CreateGeoMatchSet */
-	static readonly CREATE_GEO_MATCH_SET = "waf:CreateGeoMatchSet";
+	static readonly CreateGeoMatchSet = "waf:CreateGeoMatchSet";
 	/** [Write] waf:CreateIPSet */
-	static readonly CREATE_IP_SET = "waf:CreateIPSet";
+	static readonly CreateIPSet = "waf:CreateIPSet";
 	/** [Write] waf:CreateRateBasedRule */
-	static readonly CREATE_RATE_BASED_RULE = "waf:CreateRateBasedRule";
+	static readonly CreateRateBasedRule = "waf:CreateRateBasedRule";
 	/** [Write] waf:CreateRegexMatchSet */
-	static readonly CREATE_REGEX_MATCH_SET = "waf:CreateRegexMatchSet";
+	static readonly CreateRegexMatchSet = "waf:CreateRegexMatchSet";
 	/** [Write] waf:CreateRegexPatternSet */
-	static readonly CREATE_REGEX_PATTERN_SET = "waf:CreateRegexPatternSet";
+	static readonly CreateRegexPatternSet = "waf:CreateRegexPatternSet";
 	/** [Write] waf:CreateRule */
-	static readonly CREATE_RULE = "waf:CreateRule";
+	static readonly CreateRule = "waf:CreateRule";
 	/** [Write] waf:CreateRuleGroup */
-	static readonly CREATE_RULE_GROUP = "waf:CreateRuleGroup";
+	static readonly CreateRuleGroup = "waf:CreateRuleGroup";
 	/** [Write] waf:CreateSizeConstraintSet */
-	static readonly CREATE_SIZE_CONSTRAINT_SET = "waf:CreateSizeConstraintSet";
+	static readonly CreateSizeConstraintSet = "waf:CreateSizeConstraintSet";
 	/** [Write] waf:CreateSqlInjectionMatchSet */
-	static readonly CREATE_SQL_INJECTION_MATCH_SET =
-		"waf:CreateSqlInjectionMatchSet";
+	static readonly CreateSqlInjectionMatchSet = "waf:CreateSqlInjectionMatchSet";
 	/** [PermissionManagement] waf:CreateWebACL */
-	static readonly CREATE_WEB_ACL = "waf:CreateWebACL";
+	static readonly CreateWebACL = "waf:CreateWebACL";
 	/** [Write] waf:CreateWebACLMigrationStack */
-	static readonly CREATE_WEB_ACL_MIGRATION_STACK =
-		"waf:CreateWebACLMigrationStack";
+	static readonly CreateWebACLMigrationStack = "waf:CreateWebACLMigrationStack";
 	/** [Write] waf:CreateXssMatchSet */
-	static readonly CREATE_XSS_MATCH_SET = "waf:CreateXssMatchSet";
+	static readonly CreateXssMatchSet = "waf:CreateXssMatchSet";
 	/** [Write] waf:DeleteByteMatchSet */
-	static readonly DELETE_BYTE_MATCH_SET = "waf:DeleteByteMatchSet";
+	static readonly DeleteByteMatchSet = "waf:DeleteByteMatchSet";
 	/** [Write] waf:DeleteGeoMatchSet */
-	static readonly DELETE_GEO_MATCH_SET = "waf:DeleteGeoMatchSet";
+	static readonly DeleteGeoMatchSet = "waf:DeleteGeoMatchSet";
 	/** [Write] waf:DeleteIPSet */
-	static readonly DELETE_IP_SET = "waf:DeleteIPSet";
+	static readonly DeleteIPSet = "waf:DeleteIPSet";
 	/** [Write] waf:DeleteLoggingConfiguration */
-	static readonly DELETE_LOGGING_CONFIGURATION =
-		"waf:DeleteLoggingConfiguration";
+	static readonly DeleteLoggingConfiguration = "waf:DeleteLoggingConfiguration";
 	/** [PermissionManagement] waf:DeletePermissionPolicy */
-	static readonly DELETE_PERMISSION_POLICY = "waf:DeletePermissionPolicy";
+	static readonly DeletePermissionPolicy = "waf:DeletePermissionPolicy";
 	/** [Write] waf:DeleteRateBasedRule */
-	static readonly DELETE_RATE_BASED_RULE = "waf:DeleteRateBasedRule";
+	static readonly DeleteRateBasedRule = "waf:DeleteRateBasedRule";
 	/** [Write] waf:DeleteRegexMatchSet */
-	static readonly DELETE_REGEX_MATCH_SET = "waf:DeleteRegexMatchSet";
+	static readonly DeleteRegexMatchSet = "waf:DeleteRegexMatchSet";
 	/** [Write] waf:DeleteRegexPatternSet */
-	static readonly DELETE_REGEX_PATTERN_SET = "waf:DeleteRegexPatternSet";
+	static readonly DeleteRegexPatternSet = "waf:DeleteRegexPatternSet";
 	/** [Write] waf:DeleteRule */
-	static readonly DELETE_RULE = "waf:DeleteRule";
+	static readonly DeleteRule = "waf:DeleteRule";
 	/** [Write] waf:DeleteRuleGroup */
-	static readonly DELETE_RULE_GROUP = "waf:DeleteRuleGroup";
+	static readonly DeleteRuleGroup = "waf:DeleteRuleGroup";
 	/** [Write] waf:DeleteSizeConstraintSet */
-	static readonly DELETE_SIZE_CONSTRAINT_SET = "waf:DeleteSizeConstraintSet";
+	static readonly DeleteSizeConstraintSet = "waf:DeleteSizeConstraintSet";
 	/** [Write] waf:DeleteSqlInjectionMatchSet */
-	static readonly DELETE_SQL_INJECTION_MATCH_SET =
-		"waf:DeleteSqlInjectionMatchSet";
+	static readonly DeleteSqlInjectionMatchSet = "waf:DeleteSqlInjectionMatchSet";
 	/** [PermissionManagement] waf:DeleteWebACL */
-	static readonly DELETE_WEB_ACL = "waf:DeleteWebACL";
+	static readonly DeleteWebACL = "waf:DeleteWebACL";
 	/** [Write] waf:DeleteXssMatchSet */
-	static readonly DELETE_XSS_MATCH_SET = "waf:DeleteXssMatchSet";
+	static readonly DeleteXssMatchSet = "waf:DeleteXssMatchSet";
 	/** [Read] waf:GetByteMatchSet */
-	static readonly GET_BYTE_MATCH_SET = "waf:GetByteMatchSet";
+	static readonly actionGetByteMatchSet = "waf:GetByteMatchSet";
 	/** [Read] waf:GetChangeToken */
-	static readonly GET_CHANGE_TOKEN = "waf:GetChangeToken";
+	static readonly actionGetChangeToken = "waf:GetChangeToken";
 	/** [Read] waf:GetChangeTokenStatus */
-	static readonly GET_CHANGE_TOKEN_STATUS = "waf:GetChangeTokenStatus";
+	static readonly actionGetChangeTokenStatus = "waf:GetChangeTokenStatus";
 	/** [Read] waf:GetGeoMatchSet */
-	static readonly GET_GEO_MATCH_SET = "waf:GetGeoMatchSet";
+	static readonly actionGetGeoMatchSet = "waf:GetGeoMatchSet";
 	/** [Read] waf:GetIPSet */
-	static readonly GET_IP_SET = "waf:GetIPSet";
+	static readonly actionGetIPSet = "waf:GetIPSet";
 	/** [Read] waf:GetLoggingConfiguration */
-	static readonly GET_LOGGING_CONFIGURATION = "waf:GetLoggingConfiguration";
+	static readonly actionGetLoggingConfiguration = "waf:GetLoggingConfiguration";
 	/** [Read] waf:GetPermissionPolicy */
-	static readonly GET_PERMISSION_POLICY = "waf:GetPermissionPolicy";
+	static readonly actionGetPermissionPolicy = "waf:GetPermissionPolicy";
 	/** [Read] waf:GetRateBasedRule */
-	static readonly GET_RATE_BASED_RULE = "waf:GetRateBasedRule";
+	static readonly actionGetRateBasedRule = "waf:GetRateBasedRule";
 	/** [Read] waf:GetRateBasedRuleManagedKeys */
-	static readonly GET_RATE_BASED_RULE_MANAGED_KEYS =
+	static readonly actionGetRateBasedRuleManagedKeys =
 		"waf:GetRateBasedRuleManagedKeys";
 	/** [Read] waf:GetRegexMatchSet */
-	static readonly GET_REGEX_MATCH_SET = "waf:GetRegexMatchSet";
+	static readonly actionGetRegexMatchSet = "waf:GetRegexMatchSet";
 	/** [Read] waf:GetRegexPatternSet */
-	static readonly GET_REGEX_PATTERN_SET = "waf:GetRegexPatternSet";
+	static readonly actionGetRegexPatternSet = "waf:GetRegexPatternSet";
 	/** [Read] waf:GetRule */
-	static readonly GET_RULE = "waf:GetRule";
+	static readonly actionGetRule = "waf:GetRule";
 	/** [Read] waf:GetRuleGroup */
-	static readonly GET_RULE_GROUP = "waf:GetRuleGroup";
+	static readonly actionGetRuleGroup = "waf:GetRuleGroup";
 	/** [Read] waf:GetSampledRequests */
-	static readonly GET_SAMPLED_REQUESTS = "waf:GetSampledRequests";
+	static readonly actionGetSampledRequests = "waf:GetSampledRequests";
 	/** [Read] waf:GetSizeConstraintSet */
-	static readonly GET_SIZE_CONSTRAINT_SET = "waf:GetSizeConstraintSet";
+	static readonly actionGetSizeConstraintSet = "waf:GetSizeConstraintSet";
 	/** [Read] waf:GetSqlInjectionMatchSet */
-	static readonly GET_SQL_INJECTION_MATCH_SET = "waf:GetSqlInjectionMatchSet";
+	static readonly actionGetSqlInjectionMatchSet = "waf:GetSqlInjectionMatchSet";
 	/** [Read] waf:GetWebACL */
-	static readonly GET_WEB_ACL = "waf:GetWebACL";
+	static readonly actionGetWebACL = "waf:GetWebACL";
 	/** [Read] waf:GetXssMatchSet */
-	static readonly GET_XSS_MATCH_SET = "waf:GetXssMatchSet";
+	static readonly actionGetXssMatchSet = "waf:GetXssMatchSet";
 	/** [List] waf:ListActivatedRulesInRuleGroup */
-	static readonly LIST_ACTIVATED_RULES_IN_RULE_GROUP =
+	static readonly ListActivatedRulesInRuleGroup =
 		"waf:ListActivatedRulesInRuleGroup";
 	/** [List] waf:ListByteMatchSets */
-	static readonly LIST_BYTE_MATCH_SETS = "waf:ListByteMatchSets";
+	static readonly ListByteMatchSets = "waf:ListByteMatchSets";
 	/** [List] waf:ListGeoMatchSets */
-	static readonly LIST_GEO_MATCH_SETS = "waf:ListGeoMatchSets";
+	static readonly ListGeoMatchSets = "waf:ListGeoMatchSets";
 	/** [List] waf:ListIPSets */
-	static readonly LIST_IP_SETS = "waf:ListIPSets";
+	static readonly ListIPSets = "waf:ListIPSets";
 	/** [List] waf:ListLoggingConfigurations */
-	static readonly LIST_LOGGING_CONFIGURATIONS = "waf:ListLoggingConfigurations";
+	static readonly ListLoggingConfigurations = "waf:ListLoggingConfigurations";
 	/** [List] waf:ListRateBasedRules */
-	static readonly LIST_RATE_BASED_RULES = "waf:ListRateBasedRules";
+	static readonly ListRateBasedRules = "waf:ListRateBasedRules";
 	/** [List] waf:ListRegexMatchSets */
-	static readonly LIST_REGEX_MATCH_SETS = "waf:ListRegexMatchSets";
+	static readonly ListRegexMatchSets = "waf:ListRegexMatchSets";
 	/** [List] waf:ListRegexPatternSets */
-	static readonly LIST_REGEX_PATTERN_SETS = "waf:ListRegexPatternSets";
+	static readonly ListRegexPatternSets = "waf:ListRegexPatternSets";
 	/** [List] waf:ListRuleGroups */
-	static readonly LIST_RULE_GROUPS = "waf:ListRuleGroups";
+	static readonly ListRuleGroups = "waf:ListRuleGroups";
 	/** [List] waf:ListRules */
-	static readonly LIST_RULES = "waf:ListRules";
+	static readonly ListRules = "waf:ListRules";
 	/** [List] waf:ListSizeConstraintSets */
-	static readonly LIST_SIZE_CONSTRAINT_SETS = "waf:ListSizeConstraintSets";
+	static readonly ListSizeConstraintSets = "waf:ListSizeConstraintSets";
 	/** [List] waf:ListSqlInjectionMatchSets */
-	static readonly LIST_SQL_INJECTION_MATCH_SETS =
-		"waf:ListSqlInjectionMatchSets";
+	static readonly ListSqlInjectionMatchSets = "waf:ListSqlInjectionMatchSets";
 	/** [List] waf:ListSubscribedRuleGroups */
-	static readonly LIST_SUBSCRIBED_RULE_GROUPS = "waf:ListSubscribedRuleGroups";
+	static readonly ListSubscribedRuleGroups = "waf:ListSubscribedRuleGroups";
 	/** [Read] waf:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "waf:ListTagsForResource";
+	static readonly ListTagsForResource = "waf:ListTagsForResource";
 	/** [List] waf:ListWebACLs */
-	static readonly LIST_WEB_AC_LS = "waf:ListWebACLs";
+	static readonly ListWebACLs = "waf:ListWebACLs";
 	/** [List] waf:ListXssMatchSets */
-	static readonly LIST_XSS_MATCH_SETS = "waf:ListXssMatchSets";
+	static readonly ListXssMatchSets = "waf:ListXssMatchSets";
 	/** [Write] waf:PutLoggingConfiguration */
-	static readonly PUT_LOGGING_CONFIGURATION = "waf:PutLoggingConfiguration";
+	static readonly PutLoggingConfiguration = "waf:PutLoggingConfiguration";
 	/** [PermissionManagement] waf:PutPermissionPolicy */
-	static readonly PUT_PERMISSION_POLICY = "waf:PutPermissionPolicy";
+	static readonly PutPermissionPolicy = "waf:PutPermissionPolicy";
 	/** [Tagging] waf:TagResource */
-	static readonly TAG_RESOURCE = "waf:TagResource";
+	static readonly TagResource = "waf:TagResource";
 	/** [Tagging] waf:UntagResource */
-	static readonly UNTAG_RESOURCE = "waf:UntagResource";
+	static readonly UntagResource = "waf:UntagResource";
 	/** [Write] waf:UpdateByteMatchSet */
-	static readonly UPDATE_BYTE_MATCH_SET = "waf:UpdateByteMatchSet";
+	static readonly UpdateByteMatchSet = "waf:UpdateByteMatchSet";
 	/** [Write] waf:UpdateGeoMatchSet */
-	static readonly UPDATE_GEO_MATCH_SET = "waf:UpdateGeoMatchSet";
+	static readonly UpdateGeoMatchSet = "waf:UpdateGeoMatchSet";
 	/** [Write] waf:UpdateIPSet */
-	static readonly UPDATE_IP_SET = "waf:UpdateIPSet";
+	static readonly UpdateIPSet = "waf:UpdateIPSet";
 	/** [Write] waf:UpdateRateBasedRule */
-	static readonly UPDATE_RATE_BASED_RULE = "waf:UpdateRateBasedRule";
+	static readonly UpdateRateBasedRule = "waf:UpdateRateBasedRule";
 	/** [Write] waf:UpdateRegexMatchSet */
-	static readonly UPDATE_REGEX_MATCH_SET = "waf:UpdateRegexMatchSet";
+	static readonly UpdateRegexMatchSet = "waf:UpdateRegexMatchSet";
 	/** [Write] waf:UpdateRegexPatternSet */
-	static readonly UPDATE_REGEX_PATTERN_SET = "waf:UpdateRegexPatternSet";
+	static readonly UpdateRegexPatternSet = "waf:UpdateRegexPatternSet";
 	/** [Write] waf:UpdateRule */
-	static readonly UPDATE_RULE = "waf:UpdateRule";
+	static readonly UpdateRule = "waf:UpdateRule";
 	/** [Write] waf:UpdateRuleGroup */
-	static readonly UPDATE_RULE_GROUP = "waf:UpdateRuleGroup";
+	static readonly UpdateRuleGroup = "waf:UpdateRuleGroup";
 	/** [Write] waf:UpdateSizeConstraintSet */
-	static readonly UPDATE_SIZE_CONSTRAINT_SET = "waf:UpdateSizeConstraintSet";
+	static readonly UpdateSizeConstraintSet = "waf:UpdateSizeConstraintSet";
 	/** [Write] waf:UpdateSqlInjectionMatchSet */
-	static readonly UPDATE_SQL_INJECTION_MATCH_SET =
-		"waf:UpdateSqlInjectionMatchSet";
+	static readonly UpdateSqlInjectionMatchSet = "waf:UpdateSqlInjectionMatchSet";
 	/** [PermissionManagement] waf:UpdateWebACL */
-	static readonly UPDATE_WEB_ACL = "waf:UpdateWebACL";
+	static readonly UpdateWebACL = "waf:UpdateWebACL";
 	/** [Write] waf:UpdateXssMatchSet */
-	static readonly UPDATE_XSS_MATCH_SET = "waf:UpdateXssMatchSet";
+	static readonly UpdateXssMatchSet = "waf:UpdateXssMatchSet";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		WAFActions.GET_BYTE_MATCH_SET,
-		WAFActions.GET_CHANGE_TOKEN,
-		WAFActions.GET_CHANGE_TOKEN_STATUS,
-		WAFActions.GET_GEO_MATCH_SET,
-		WAFActions.GET_IP_SET,
-		WAFActions.GET_LOGGING_CONFIGURATION,
-		WAFActions.GET_PERMISSION_POLICY,
-		WAFActions.GET_RATE_BASED_RULE,
-		WAFActions.GET_RATE_BASED_RULE_MANAGED_KEYS,
-		WAFActions.GET_REGEX_MATCH_SET,
-		WAFActions.GET_REGEX_PATTERN_SET,
-		WAFActions.GET_RULE,
-		WAFActions.GET_RULE_GROUP,
-		WAFActions.GET_SAMPLED_REQUESTS,
-		WAFActions.GET_SIZE_CONSTRAINT_SET,
-		WAFActions.GET_SQL_INJECTION_MATCH_SET,
-		WAFActions.GET_WEB_ACL,
-		WAFActions.GET_XSS_MATCH_SET,
-		WAFActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		WAFActions.actionGetByteMatchSet,
+		WAFActions.actionGetChangeToken,
+		WAFActions.actionGetChangeTokenStatus,
+		WAFActions.actionGetGeoMatchSet,
+		WAFActions.actionGetIPSet,
+		WAFActions.actionGetLoggingConfiguration,
+		WAFActions.actionGetPermissionPolicy,
+		WAFActions.actionGetRateBasedRule,
+		WAFActions.actionGetRateBasedRuleManagedKeys,
+		WAFActions.actionGetRegexMatchSet,
+		WAFActions.actionGetRegexPatternSet,
+		WAFActions.actionGetRule,
+		WAFActions.actionGetRuleGroup,
+		WAFActions.actionGetSampledRequests,
+		WAFActions.actionGetSizeConstraintSet,
+		WAFActions.actionGetSqlInjectionMatchSet,
+		WAFActions.actionGetWebACL,
+		WAFActions.actionGetXssMatchSet,
+		WAFActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		WAFActions.CREATE_BYTE_MATCH_SET,
-		WAFActions.CREATE_GEO_MATCH_SET,
-		WAFActions.CREATE_IP_SET,
-		WAFActions.CREATE_RATE_BASED_RULE,
-		WAFActions.CREATE_REGEX_MATCH_SET,
-		WAFActions.CREATE_REGEX_PATTERN_SET,
-		WAFActions.CREATE_RULE,
-		WAFActions.CREATE_RULE_GROUP,
-		WAFActions.CREATE_SIZE_CONSTRAINT_SET,
-		WAFActions.CREATE_SQL_INJECTION_MATCH_SET,
-		WAFActions.CREATE_WEB_ACL_MIGRATION_STACK,
-		WAFActions.CREATE_XSS_MATCH_SET,
-		WAFActions.DELETE_BYTE_MATCH_SET,
-		WAFActions.DELETE_GEO_MATCH_SET,
-		WAFActions.DELETE_IP_SET,
-		WAFActions.DELETE_LOGGING_CONFIGURATION,
-		WAFActions.DELETE_RATE_BASED_RULE,
-		WAFActions.DELETE_REGEX_MATCH_SET,
-		WAFActions.DELETE_REGEX_PATTERN_SET,
-		WAFActions.DELETE_RULE,
-		WAFActions.DELETE_RULE_GROUP,
-		WAFActions.DELETE_SIZE_CONSTRAINT_SET,
-		WAFActions.DELETE_SQL_INJECTION_MATCH_SET,
-		WAFActions.DELETE_XSS_MATCH_SET,
-		WAFActions.PUT_LOGGING_CONFIGURATION,
-		WAFActions.UPDATE_BYTE_MATCH_SET,
-		WAFActions.UPDATE_GEO_MATCH_SET,
-		WAFActions.UPDATE_IP_SET,
-		WAFActions.UPDATE_RATE_BASED_RULE,
-		WAFActions.UPDATE_REGEX_MATCH_SET,
-		WAFActions.UPDATE_REGEX_PATTERN_SET,
-		WAFActions.UPDATE_RULE,
-		WAFActions.UPDATE_RULE_GROUP,
-		WAFActions.UPDATE_SIZE_CONSTRAINT_SET,
-		WAFActions.UPDATE_SQL_INJECTION_MATCH_SET,
-		WAFActions.UPDATE_XSS_MATCH_SET,
+	static readonly AllWriteActions: string[] = [
+		WAFActions.CreateByteMatchSet,
+		WAFActions.CreateGeoMatchSet,
+		WAFActions.CreateIPSet,
+		WAFActions.CreateRateBasedRule,
+		WAFActions.CreateRegexMatchSet,
+		WAFActions.CreateRegexPatternSet,
+		WAFActions.CreateRule,
+		WAFActions.CreateRuleGroup,
+		WAFActions.CreateSizeConstraintSet,
+		WAFActions.CreateSqlInjectionMatchSet,
+		WAFActions.CreateWebACLMigrationStack,
+		WAFActions.CreateXssMatchSet,
+		WAFActions.DeleteByteMatchSet,
+		WAFActions.DeleteGeoMatchSet,
+		WAFActions.DeleteIPSet,
+		WAFActions.DeleteLoggingConfiguration,
+		WAFActions.DeleteRateBasedRule,
+		WAFActions.DeleteRegexMatchSet,
+		WAFActions.DeleteRegexPatternSet,
+		WAFActions.DeleteRule,
+		WAFActions.DeleteRuleGroup,
+		WAFActions.DeleteSizeConstraintSet,
+		WAFActions.DeleteSqlInjectionMatchSet,
+		WAFActions.DeleteXssMatchSet,
+		WAFActions.PutLoggingConfiguration,
+		WAFActions.UpdateByteMatchSet,
+		WAFActions.UpdateGeoMatchSet,
+		WAFActions.UpdateIPSet,
+		WAFActions.UpdateRateBasedRule,
+		WAFActions.UpdateRegexMatchSet,
+		WAFActions.UpdateRegexPatternSet,
+		WAFActions.UpdateRule,
+		WAFActions.UpdateRuleGroup,
+		WAFActions.UpdateSizeConstraintSet,
+		WAFActions.UpdateSqlInjectionMatchSet,
+		WAFActions.UpdateXssMatchSet,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		WAFActions.LIST_ACTIVATED_RULES_IN_RULE_GROUP,
-		WAFActions.LIST_BYTE_MATCH_SETS,
-		WAFActions.LIST_GEO_MATCH_SETS,
-		WAFActions.LIST_IP_SETS,
-		WAFActions.LIST_LOGGING_CONFIGURATIONS,
-		WAFActions.LIST_RATE_BASED_RULES,
-		WAFActions.LIST_REGEX_MATCH_SETS,
-		WAFActions.LIST_REGEX_PATTERN_SETS,
-		WAFActions.LIST_RULE_GROUPS,
-		WAFActions.LIST_RULES,
-		WAFActions.LIST_SIZE_CONSTRAINT_SETS,
-		WAFActions.LIST_SQL_INJECTION_MATCH_SETS,
-		WAFActions.LIST_SUBSCRIBED_RULE_GROUPS,
-		WAFActions.LIST_WEB_AC_LS,
-		WAFActions.LIST_XSS_MATCH_SETS,
+	static readonly AllListActions: string[] = [
+		WAFActions.ListActivatedRulesInRuleGroup,
+		WAFActions.ListByteMatchSets,
+		WAFActions.ListGeoMatchSets,
+		WAFActions.ListIPSets,
+		WAFActions.ListLoggingConfigurations,
+		WAFActions.ListRateBasedRules,
+		WAFActions.ListRegexMatchSets,
+		WAFActions.ListRegexPatternSets,
+		WAFActions.ListRuleGroups,
+		WAFActions.ListRules,
+		WAFActions.ListSizeConstraintSets,
+		WAFActions.ListSqlInjectionMatchSets,
+		WAFActions.ListSubscribedRuleGroups,
+		WAFActions.ListWebACLs,
+		WAFActions.ListXssMatchSets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		WAFActions.CREATE_WEB_ACL,
-		WAFActions.DELETE_PERMISSION_POLICY,
-		WAFActions.DELETE_WEB_ACL,
-		WAFActions.PUT_PERMISSION_POLICY,
-		WAFActions.UPDATE_WEB_ACL,
+	static readonly AllPermissionManagementActions: string[] = [
+		WAFActions.CreateWebACL,
+		WAFActions.DeletePermissionPolicy,
+		WAFActions.DeleteWebACL,
+		WAFActions.PutPermissionPolicy,
+		WAFActions.UpdateWebACL,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		WAFActions.TAG_RESOURCE,
-		WAFActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		WAFActions.TagResource,
+		WAFActions.UntagResource,
 	];
 }
 
-const BytematchsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):bytematchset/(?<id>[^:/?]+)$",
-);
-const GeomatchsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):geomatchset/(?<id>[^:/?]+)$",
-);
-const IpsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):ipset/(?<id>[^:/?]+)$",
-);
-const RatebasedruleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):ratebasedrule/(?<id>[^:/?]+)$",
-);
-const RegexmatchsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):regexmatch/(?<id>[^:/?]+)$",
-);
-const RegexpatternsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):regexpatternset/(?<id>[^:/?]+)$",
-);
-const RuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):rule/(?<id>[^:/?]+)$",
-);
-const RulegroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):rulegroup/(?<id>[^:/?]+)$",
-);
-const SizeconstraintsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):sizeconstraintset/(?<id>[^:/?]+)$",
-);
-const SqlinjectionmatchsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):sqlinjectionset/(?<id>[^:/?]+)$",
-);
-const WebaclArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):webacl/(?<id>[^:/?]+)$",
-);
-const XssmatchsetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):xssmatchset/(?<id>[^:/?]+)$",
-);
+/**
+ * Properties for building a bytematchset ARN.
+ */
+export interface WAFBytematchsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a bytematchset ARN.
+ */
+export interface WAFBytematchsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a geomatchset ARN.
+ */
+export interface WAFGeomatchsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a geomatchset ARN.
+ */
+export interface WAFGeomatchsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a ipset ARN.
+ */
+export interface WAFIpsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ipset ARN.
+ */
+export interface WAFIpsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a ratebasedrule ARN.
+ */
+export interface WAFRatebasedruleArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ratebasedrule ARN.
+ */
+export interface WAFRatebasedruleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a regexmatchset ARN.
+ */
+export interface WAFRegexmatchsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a regexmatchset ARN.
+ */
+export interface WAFRegexmatchsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a regexpatternset ARN.
+ */
+export interface WAFRegexpatternsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a regexpatternset ARN.
+ */
+export interface WAFRegexpatternsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a rule ARN.
+ */
+export interface WAFRuleArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rule ARN.
+ */
+export interface WAFRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a rulegroup ARN.
+ */
+export interface WAFRulegroupArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rulegroup ARN.
+ */
+export interface WAFRulegroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a sizeconstraintset ARN.
+ */
+export interface WAFSizeconstraintsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sizeconstraintset ARN.
+ */
+export interface WAFSizeconstraintsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a sqlinjectionmatchset ARN.
+ */
+export interface WAFSqlinjectionmatchsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sqlinjectionmatchset ARN.
+ */
+export interface WAFSqlinjectionmatchsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a webacl ARN.
+ */
+export interface WAFWebaclArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a webacl ARN.
+ */
+export interface WAFWebaclArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a xssmatchset ARN.
+ */
+export interface WAFXssmatchsetArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a xssmatchset ARN.
+ */
+export interface WAFXssmatchsetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+const BytematchsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):bytematchset\/(?<id>[^:/?]+)$/;
+const GeomatchsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):geomatchset\/(?<id>[^:/?]+)$/;
+const IpsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):ipset\/(?<id>[^:/?]+)$/;
+const RatebasedruleArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):ratebasedrule\/(?<id>[^:/?]+)$/;
+const RegexmatchsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):regexmatch\/(?<id>[^:/?]+)$/;
+const RegexpatternsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):regexpatternset\/(?<id>[^:/?]+)$/;
+const RuleArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):rule\/(?<id>[^:/?]+)$/;
+const RulegroupArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):rulegroup\/(?<id>[^:/?]+)$/;
+const SizeconstraintsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):sizeconstraintset\/(?<id>[^:/?]+)$/;
+const SqlinjectionmatchsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):sqlinjectionset\/(?<id>[^:/?]+)$/;
+const WebaclArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):webacl\/(?<id>[^:/?]+)$/;
+const XssmatchsetArnRegex =
+	/^arn:(?<partition>[^:]+):waf::(?<account>[^:]*):xssmatchset\/(?<id>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for waf resources.
@@ -313,14 +583,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the bytematchset resource.
 	 */
-	static bytematchset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static bytematchset(props: WAFBytematchsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:bytematchset/${props.id}`;
 	}
 
@@ -335,11 +598,7 @@ export class WAFResources {
 	 * Parses a bytematchset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBytematchsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseBytematchsetArn(arn: string): WAFBytematchsetArnComponents {
 		const match = BytematchsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid bytematchset ARN: ${arn}`);
@@ -354,14 +613,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the geomatchset resource.
 	 */
-	static geomatchset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static geomatchset(props: WAFGeomatchsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:geomatchset/${props.id}`;
 	}
 
@@ -376,11 +628,7 @@ export class WAFResources {
 	 * Parses a geomatchset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGeomatchsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseGeomatchsetArn(arn: string): WAFGeomatchsetArnComponents {
 		const match = GeomatchsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid geomatchset ARN: ${arn}`);
@@ -395,14 +643,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the ipset resource.
 	 */
-	static ipset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ipset(props: WAFIpsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:ipset/${props.id}`;
 	}
 
@@ -417,11 +658,7 @@ export class WAFResources {
 	 * Parses a ipset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIpsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseIpsetArn(arn: string): WAFIpsetArnComponents {
 		const match = IpsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ipset ARN: ${arn}`);
@@ -436,14 +673,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the ratebasedrule resource.
 	 */
-	static ratebasedrule(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ratebasedrule(props: WAFRatebasedruleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:ratebasedrule/${props.id}`;
 	}
 
@@ -458,11 +688,7 @@ export class WAFResources {
 	 * Parses a ratebasedrule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRatebasedruleArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseRatebasedruleArn(arn: string): WAFRatebasedruleArnComponents {
 		const match = RatebasedruleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ratebasedrule ARN: ${arn}`);
@@ -477,14 +703,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the regexmatchset resource.
 	 */
-	static regexmatchset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static regexmatchset(props: WAFRegexmatchsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:regexmatch/${props.id}`;
 	}
 
@@ -499,11 +718,7 @@ export class WAFResources {
 	 * Parses a regexmatchset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRegexmatchsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseRegexmatchsetArn(arn: string): WAFRegexmatchsetArnComponents {
 		const match = RegexmatchsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid regexmatchset ARN: ${arn}`);
@@ -518,14 +733,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the regexpatternset resource.
 	 */
-	static regexpatternset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static regexpatternset(props: WAFRegexpatternsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:regexpatternset/${props.id}`;
 	}
 
@@ -540,11 +748,7 @@ export class WAFResources {
 	 * Parses a regexpatternset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRegexpatternsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseRegexpatternsetArn(arn: string): WAFRegexpatternsetArnComponents {
 		const match = RegexpatternsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid regexpatternset ARN: ${arn}`);
@@ -559,14 +763,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the rule resource.
 	 */
-	static rule(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rule(props: WAFRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:rule/${props.id}`;
 	}
 
@@ -581,11 +778,7 @@ export class WAFResources {
 	 * Parses a rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRuleArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseRuleArn(arn: string): WAFRuleArnComponents {
 		const match = RuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rule ARN: ${arn}`);
@@ -600,14 +793,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the rulegroup resource.
 	 */
-	static rulegroup(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rulegroup(props: WAFRulegroupArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:rulegroup/${props.id}`;
 	}
 
@@ -622,11 +808,7 @@ export class WAFResources {
 	 * Parses a rulegroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRulegroupArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseRulegroupArn(arn: string): WAFRulegroupArnComponents {
 		const match = RulegroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rulegroup ARN: ${arn}`);
@@ -641,14 +823,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the sizeconstraintset resource.
 	 */
-	static sizeconstraintset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sizeconstraintset(props: WAFSizeconstraintsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:sizeconstraintset/${props.id}`;
 	}
 
@@ -663,11 +838,9 @@ export class WAFResources {
 	 * Parses a sizeconstraintset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSizeconstraintsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseSizeconstraintsetArn(
+		arn: string,
+	): WAFSizeconstraintsetArnComponents {
 		const match = SizeconstraintsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sizeconstraintset ARN: ${arn}`);
@@ -682,14 +855,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the sqlinjectionmatchset resource.
 	 */
-	static sqlinjectionmatchset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sqlinjectionmatchset(props: WAFSqlinjectionmatchsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:sqlinjectionset/${props.id}`;
 	}
 
@@ -704,11 +870,9 @@ export class WAFResources {
 	 * Parses a sqlinjectionmatchset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSqlinjectionmatchsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseSqlinjectionmatchsetArn(
+		arn: string,
+	): WAFSqlinjectionmatchsetArnComponents {
 		const match = SqlinjectionmatchsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sqlinjectionmatchset ARN: ${arn}`);
@@ -723,14 +887,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the webacl resource.
 	 */
-	static webacl(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static webacl(props: WAFWebaclArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:webacl/${props.id}`;
 	}
 
@@ -745,11 +902,7 @@ export class WAFResources {
 	 * Parses a webacl ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWebaclArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseWebaclArn(arn: string): WAFWebaclArnComponents {
 		const match = WebaclArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid webacl ARN: ${arn}`);
@@ -764,14 +917,7 @@ export class WAFResources {
 	/**
 	 * Builds an ARN for the xssmatchset resource.
 	 */
-	static xssmatchset(props: {
-		/** The Id component of the ARN. */
-		readonly id: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static xssmatchset(props: WAFXssmatchsetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:waf::${props.account ?? "*"}:xssmatchset/${props.id}`;
 	}
 
@@ -786,11 +932,7 @@ export class WAFResources {
 	 * Parses a xssmatchset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseXssmatchsetArn(arn: string): {
-		partition: string;
-		account: string;
-		id: string;
-	} {
+	static parseXssmatchsetArn(arn: string): WAFXssmatchsetArnComponents {
 		const match = XssmatchsetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid xssmatchset ARN: ${arn}`);
@@ -808,228 +950,214 @@ export class WAFResources {
  */
 export class WAFOperations {
 	/** IAM actions required for the CreateByteMatchSet API call. */
-	static readonly CREATE_BYTE_MATCH_SET: string[] = ["waf:CreateByteMatchSet"];
+	static readonly CreateByteMatchSet: string[] = ["waf:CreateByteMatchSet"];
 	/** IAM actions required for the CreateGeoMatchSet API call. */
-	static readonly CREATE_GEO_MATCH_SET: string[] = ["waf:CreateGeoMatchSet"];
+	static readonly CreateGeoMatchSet: string[] = ["waf:CreateGeoMatchSet"];
 	/** IAM actions required for the CreateIPSet API call. */
-	static readonly CREATE_IP_SET: string[] = ["waf:CreateIPSet"];
+	static readonly CreateIPSet: string[] = ["waf:CreateIPSet"];
 	/** IAM actions required for the CreateRateBasedRule API call. */
-	static readonly CREATE_RATE_BASED_RULE: string[] = [
+	static readonly CreateRateBasedRule: string[] = [
 		"waf:CreateRateBasedRule",
 		"waf:TagResource",
 	];
 	/** IAM actions required for the CreateRegexMatchSet API call. */
-	static readonly CREATE_REGEX_MATCH_SET: string[] = [
-		"waf:CreateRegexMatchSet",
-	];
+	static readonly CreateRegexMatchSet: string[] = ["waf:CreateRegexMatchSet"];
 	/** IAM actions required for the CreateRegexPatternSet API call. */
-	static readonly CREATE_REGEX_PATTERN_SET: string[] = [
+	static readonly CreateRegexPatternSet: string[] = [
 		"waf:CreateRegexPatternSet",
 	];
 	/** IAM actions required for the CreateRule API call. */
-	static readonly CREATE_RULE: string[] = ["waf:CreateRule", "waf:TagResource"];
+	static readonly CreateRule: string[] = ["waf:CreateRule", "waf:TagResource"];
 	/** IAM actions required for the CreateRuleGroup API call. */
-	static readonly CREATE_RULE_GROUP: string[] = [
+	static readonly CreateRuleGroup: string[] = [
 		"waf:CreateRuleGroup",
 		"waf:TagResource",
 	];
 	/** IAM actions required for the CreateSizeConstraintSet API call. */
-	static readonly CREATE_SIZE_CONSTRAINT_SET: string[] = [
+	static readonly CreateSizeConstraintSet: string[] = [
 		"waf:CreateSizeConstraintSet",
 	];
 	/** IAM actions required for the CreateSqlInjectionMatchSet API call. */
-	static readonly CREATE_SQL_INJECTION_MATCH_SET: string[] = [
+	static readonly CreateSqlInjectionMatchSet: string[] = [
 		"waf:CreateSqlInjectionMatchSet",
 	];
 	/** IAM actions required for the CreateWebACL API call. */
-	static readonly CREATE_WEB_ACL: string[] = [
+	static readonly CreateWebACL: string[] = [
 		"waf:CreateWebACL",
 		"waf:TagResource",
 	];
 	/** IAM actions required for the CreateWebACLMigrationStack API call. */
-	static readonly CREATE_WEB_ACL_MIGRATION_STACK: string[] = [
+	static readonly CreateWebACLMigrationStack: string[] = [
 		"waf:CreateWebACLMigrationStack",
 	];
 	/** IAM actions required for the CreateXssMatchSet API call. */
-	static readonly CREATE_XSS_MATCH_SET: string[] = ["waf:CreateXssMatchSet"];
+	static readonly CreateXssMatchSet: string[] = ["waf:CreateXssMatchSet"];
 	/** IAM actions required for the DeleteByteMatchSet API call. */
-	static readonly DELETE_BYTE_MATCH_SET: string[] = ["waf:DeleteByteMatchSet"];
+	static readonly DeleteByteMatchSet: string[] = ["waf:DeleteByteMatchSet"];
 	/** IAM actions required for the DeleteGeoMatchSet API call. */
-	static readonly DELETE_GEO_MATCH_SET: string[] = ["waf:DeleteGeoMatchSet"];
+	static readonly DeleteGeoMatchSet: string[] = ["waf:DeleteGeoMatchSet"];
 	/** IAM actions required for the DeleteIPSet API call. */
-	static readonly DELETE_IP_SET: string[] = ["waf:DeleteIPSet"];
+	static readonly DeleteIPSet: string[] = ["waf:DeleteIPSet"];
 	/** IAM actions required for the DeleteLoggingConfiguration API call. */
-	static readonly DELETE_LOGGING_CONFIGURATION: string[] = [
+	static readonly DeleteLoggingConfiguration: string[] = [
 		"waf:DeleteLoggingConfiguration",
 	];
 	/** IAM actions required for the DeletePermissionPolicy API call. */
-	static readonly DELETE_PERMISSION_POLICY: string[] = [
+	static readonly DeletePermissionPolicy: string[] = [
 		"waf:DeletePermissionPolicy",
 	];
 	/** IAM actions required for the DeleteRateBasedRule API call. */
-	static readonly DELETE_RATE_BASED_RULE: string[] = [
-		"waf:DeleteRateBasedRule",
-	];
+	static readonly DeleteRateBasedRule: string[] = ["waf:DeleteRateBasedRule"];
 	/** IAM actions required for the DeleteRegexMatchSet API call. */
-	static readonly DELETE_REGEX_MATCH_SET: string[] = [
-		"waf:DeleteRegexMatchSet",
-	];
+	static readonly DeleteRegexMatchSet: string[] = ["waf:DeleteRegexMatchSet"];
 	/** IAM actions required for the DeleteRegexPatternSet API call. */
-	static readonly DELETE_REGEX_PATTERN_SET: string[] = [
+	static readonly DeleteRegexPatternSet: string[] = [
 		"waf:DeleteRegexPatternSet",
 	];
 	/** IAM actions required for the DeleteRule API call. */
-	static readonly DELETE_RULE: string[] = ["waf:DeleteRule"];
+	static readonly DeleteRule: string[] = ["waf:DeleteRule"];
 	/** IAM actions required for the DeleteRuleGroup API call. */
-	static readonly DELETE_RULE_GROUP: string[] = ["waf:DeleteRuleGroup"];
+	static readonly DeleteRuleGroup: string[] = ["waf:DeleteRuleGroup"];
 	/** IAM actions required for the DeleteSizeConstraintSet API call. */
-	static readonly DELETE_SIZE_CONSTRAINT_SET: string[] = [
+	static readonly DeleteSizeConstraintSet: string[] = [
 		"waf:DeleteSizeConstraintSet",
 	];
 	/** IAM actions required for the DeleteSqlInjectionMatchSet API call. */
-	static readonly DELETE_SQL_INJECTION_MATCH_SET: string[] = [
+	static readonly DeleteSqlInjectionMatchSet: string[] = [
 		"waf:DeleteSqlInjectionMatchSet",
 	];
 	/** IAM actions required for the DeleteWebACL API call. */
-	static readonly DELETE_WEB_ACL: string[] = ["waf:DeleteWebACL"];
+	static readonly DeleteWebACL: string[] = ["waf:DeleteWebACL"];
 	/** IAM actions required for the DeleteXssMatchSet API call. */
-	static readonly DELETE_XSS_MATCH_SET: string[] = ["waf:DeleteXssMatchSet"];
+	static readonly DeleteXssMatchSet: string[] = ["waf:DeleteXssMatchSet"];
 	/** IAM actions required for the GetByteMatchSet API call. */
-	static readonly GET_BYTE_MATCH_SET: string[] = ["waf:GetByteMatchSet"];
+	static readonly opGetByteMatchSet: string[] = ["waf:GetByteMatchSet"];
 	/** IAM actions required for the GetChangeToken API call. */
-	static readonly GET_CHANGE_TOKEN: string[] = ["waf:GetChangeToken"];
+	static readonly opGetChangeToken: string[] = ["waf:GetChangeToken"];
 	/** IAM actions required for the GetChangeTokenStatus API call. */
-	static readonly GET_CHANGE_TOKEN_STATUS: string[] = [
+	static readonly opGetChangeTokenStatus: string[] = [
 		"waf:GetChangeTokenStatus",
 	];
 	/** IAM actions required for the GetGeoMatchSet API call. */
-	static readonly GET_GEO_MATCH_SET: string[] = ["waf:GetGeoMatchSet"];
+	static readonly opGetGeoMatchSet: string[] = ["waf:GetGeoMatchSet"];
 	/** IAM actions required for the GetIPSet API call. */
-	static readonly GET_IP_SET: string[] = ["waf:GetIPSet"];
+	static readonly opGetIPSet: string[] = ["waf:GetIPSet"];
 	/** IAM actions required for the GetLoggingConfiguration API call. */
-	static readonly GET_LOGGING_CONFIGURATION: string[] = [
+	static readonly opGetLoggingConfiguration: string[] = [
 		"waf:GetLoggingConfiguration",
 	];
 	/** IAM actions required for the GetPermissionPolicy API call. */
-	static readonly GET_PERMISSION_POLICY: string[] = ["waf:GetPermissionPolicy"];
+	static readonly opGetPermissionPolicy: string[] = ["waf:GetPermissionPolicy"];
 	/** IAM actions required for the GetRateBasedRule API call. */
-	static readonly GET_RATE_BASED_RULE: string[] = ["waf:GetRateBasedRule"];
+	static readonly opGetRateBasedRule: string[] = ["waf:GetRateBasedRule"];
 	/** IAM actions required for the GetRateBasedRuleManagedKeys API call. */
-	static readonly GET_RATE_BASED_RULE_MANAGED_KEYS: string[] = [
+	static readonly opGetRateBasedRuleManagedKeys: string[] = [
 		"waf:GetRateBasedRuleManagedKeys",
 	];
 	/** IAM actions required for the GetRegexMatchSet API call. */
-	static readonly GET_REGEX_MATCH_SET: string[] = ["waf:GetRegexMatchSet"];
+	static readonly opGetRegexMatchSet: string[] = ["waf:GetRegexMatchSet"];
 	/** IAM actions required for the GetRegexPatternSet API call. */
-	static readonly GET_REGEX_PATTERN_SET: string[] = ["waf:GetRegexPatternSet"];
+	static readonly opGetRegexPatternSet: string[] = ["waf:GetRegexPatternSet"];
 	/** IAM actions required for the GetRule API call. */
-	static readonly GET_RULE: string[] = ["waf:GetRule"];
+	static readonly opGetRule: string[] = ["waf:GetRule"];
 	/** IAM actions required for the GetRuleGroup API call. */
-	static readonly GET_RULE_GROUP: string[] = ["waf:GetRuleGroup"];
+	static readonly opGetRuleGroup: string[] = ["waf:GetRuleGroup"];
 	/** IAM actions required for the GetSampledRequests API call. */
-	static readonly GET_SAMPLED_REQUESTS: string[] = ["waf:GetSampledRequests"];
+	static readonly opGetSampledRequests: string[] = ["waf:GetSampledRequests"];
 	/** IAM actions required for the GetSizeConstraintSet API call. */
-	static readonly GET_SIZE_CONSTRAINT_SET: string[] = [
+	static readonly opGetSizeConstraintSet: string[] = [
 		"waf:GetSizeConstraintSet",
 	];
 	/** IAM actions required for the GetSqlInjectionMatchSet API call. */
-	static readonly GET_SQL_INJECTION_MATCH_SET: string[] = [
+	static readonly opGetSqlInjectionMatchSet: string[] = [
 		"waf:GetSqlInjectionMatchSet",
 	];
 	/** IAM actions required for the GetWebACL API call. */
-	static readonly GET_WEB_ACL: string[] = ["waf:GetWebACL"];
+	static readonly opGetWebACL: string[] = ["waf:GetWebACL"];
 	/** IAM actions required for the GetXssMatchSet API call. */
-	static readonly GET_XSS_MATCH_SET: string[] = ["waf:GetXssMatchSet"];
+	static readonly opGetXssMatchSet: string[] = ["waf:GetXssMatchSet"];
 	/** IAM actions required for the ListActivatedRulesInRuleGroup API call. */
-	static readonly LIST_ACTIVATED_RULES_IN_RULE_GROUP: string[] = [
+	static readonly ListActivatedRulesInRuleGroup: string[] = [
 		"waf:ListActivatedRulesInRuleGroup",
 	];
 	/** IAM actions required for the ListByteMatchSets API call. */
-	static readonly LIST_BYTE_MATCH_SETS: string[] = ["waf:ListByteMatchSets"];
+	static readonly ListByteMatchSets: string[] = ["waf:ListByteMatchSets"];
 	/** IAM actions required for the ListGeoMatchSets API call. */
-	static readonly LIST_GEO_MATCH_SETS: string[] = ["waf:ListGeoMatchSets"];
+	static readonly ListGeoMatchSets: string[] = ["waf:ListGeoMatchSets"];
 	/** IAM actions required for the ListIPSets API call. */
-	static readonly LIST_IP_SETS: string[] = ["waf:ListIPSets"];
+	static readonly ListIPSets: string[] = ["waf:ListIPSets"];
 	/** IAM actions required for the ListLoggingConfigurations API call. */
-	static readonly LIST_LOGGING_CONFIGURATIONS: string[] = [
+	static readonly ListLoggingConfigurations: string[] = [
 		"waf:ListLoggingConfigurations",
 	];
 	/** IAM actions required for the ListRateBasedRules API call. */
-	static readonly LIST_RATE_BASED_RULES: string[] = ["waf:ListRateBasedRules"];
+	static readonly ListRateBasedRules: string[] = ["waf:ListRateBasedRules"];
 	/** IAM actions required for the ListRegexMatchSets API call. */
-	static readonly LIST_REGEX_MATCH_SETS: string[] = ["waf:ListRegexMatchSets"];
+	static readonly ListRegexMatchSets: string[] = ["waf:ListRegexMatchSets"];
 	/** IAM actions required for the ListRegexPatternSets API call. */
-	static readonly LIST_REGEX_PATTERN_SETS: string[] = [
-		"waf:ListRegexPatternSets",
-	];
+	static readonly ListRegexPatternSets: string[] = ["waf:ListRegexPatternSets"];
 	/** IAM actions required for the ListRuleGroups API call. */
-	static readonly LIST_RULE_GROUPS: string[] = ["waf:ListRuleGroups"];
+	static readonly ListRuleGroups: string[] = ["waf:ListRuleGroups"];
 	/** IAM actions required for the ListRules API call. */
-	static readonly LIST_RULES: string[] = ["waf:ListRules"];
+	static readonly ListRules: string[] = ["waf:ListRules"];
 	/** IAM actions required for the ListSizeConstraintSets API call. */
-	static readonly LIST_SIZE_CONSTRAINT_SETS: string[] = [
+	static readonly ListSizeConstraintSets: string[] = [
 		"waf:ListSizeConstraintSets",
 	];
 	/** IAM actions required for the ListSqlInjectionMatchSets API call. */
-	static readonly LIST_SQL_INJECTION_MATCH_SETS: string[] = [
+	static readonly ListSqlInjectionMatchSets: string[] = [
 		"waf:ListSqlInjectionMatchSets",
 	];
 	/** IAM actions required for the ListSubscribedRuleGroups API call. */
-	static readonly LIST_SUBSCRIBED_RULE_GROUPS: string[] = [
+	static readonly ListSubscribedRuleGroups: string[] = [
 		"waf:ListSubscribedRuleGroups",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"waf:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["waf:ListTagsForResource"];
 	/** IAM actions required for the ListWebACLs API call. */
-	static readonly LIST_WEB_AC_LS: string[] = ["waf:ListWebACLs"];
+	static readonly ListWebACLs: string[] = ["waf:ListWebACLs"];
 	/** IAM actions required for the ListXssMatchSets API call. */
-	static readonly LIST_XSS_MATCH_SETS: string[] = ["waf:ListXssMatchSets"];
+	static readonly ListXssMatchSets: string[] = ["waf:ListXssMatchSets"];
 	/** IAM actions required for the PutLoggingConfiguration API call. */
-	static readonly PUT_LOGGING_CONFIGURATION: string[] = [
+	static readonly PutLoggingConfiguration: string[] = [
 		"waf:PutLoggingConfiguration",
 	];
 	/** IAM actions required for the PutPermissionPolicy API call. */
-	static readonly PUT_PERMISSION_POLICY: string[] = ["waf:PutPermissionPolicy"];
+	static readonly PutPermissionPolicy: string[] = ["waf:PutPermissionPolicy"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["waf:TagResource"];
+	static readonly TagResource: string[] = ["waf:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["waf:UntagResource"];
+	static readonly UntagResource: string[] = ["waf:UntagResource"];
 	/** IAM actions required for the UpdateByteMatchSet API call. */
-	static readonly UPDATE_BYTE_MATCH_SET: string[] = ["waf:UpdateByteMatchSet"];
+	static readonly UpdateByteMatchSet: string[] = ["waf:UpdateByteMatchSet"];
 	/** IAM actions required for the UpdateGeoMatchSet API call. */
-	static readonly UPDATE_GEO_MATCH_SET: string[] = ["waf:UpdateGeoMatchSet"];
+	static readonly UpdateGeoMatchSet: string[] = ["waf:UpdateGeoMatchSet"];
 	/** IAM actions required for the UpdateIPSet API call. */
-	static readonly UPDATE_IP_SET: string[] = ["waf:UpdateIPSet"];
+	static readonly UpdateIPSet: string[] = ["waf:UpdateIPSet"];
 	/** IAM actions required for the UpdateRateBasedRule API call. */
-	static readonly UPDATE_RATE_BASED_RULE: string[] = [
-		"waf:UpdateRateBasedRule",
-	];
+	static readonly UpdateRateBasedRule: string[] = ["waf:UpdateRateBasedRule"];
 	/** IAM actions required for the UpdateRegexMatchSet API call. */
-	static readonly UPDATE_REGEX_MATCH_SET: string[] = [
-		"waf:UpdateRegexMatchSet",
-	];
+	static readonly UpdateRegexMatchSet: string[] = ["waf:UpdateRegexMatchSet"];
 	/** IAM actions required for the UpdateRegexPatternSet API call. */
-	static readonly UPDATE_REGEX_PATTERN_SET: string[] = [
+	static readonly UpdateRegexPatternSet: string[] = [
 		"waf:UpdateRegexPatternSet",
 	];
 	/** IAM actions required for the UpdateRule API call. */
-	static readonly UPDATE_RULE: string[] = ["waf:UpdateRule"];
+	static readonly UpdateRule: string[] = ["waf:UpdateRule"];
 	/** IAM actions required for the UpdateRuleGroup API call. */
-	static readonly UPDATE_RULE_GROUP: string[] = ["waf:UpdateRuleGroup"];
+	static readonly UpdateRuleGroup: string[] = ["waf:UpdateRuleGroup"];
 	/** IAM actions required for the UpdateSizeConstraintSet API call. */
-	static readonly UPDATE_SIZE_CONSTRAINT_SET: string[] = [
+	static readonly UpdateSizeConstraintSet: string[] = [
 		"waf:UpdateSizeConstraintSet",
 	];
 	/** IAM actions required for the UpdateSqlInjectionMatchSet API call. */
-	static readonly UPDATE_SQL_INJECTION_MATCH_SET: string[] = [
+	static readonly UpdateSqlInjectionMatchSet: string[] = [
 		"waf:UpdateSqlInjectionMatchSet",
 	];
 	/** IAM actions required for the UpdateWebACL API call. */
-	static readonly UPDATE_WEB_ACL: string[] = ["waf:UpdateWebACL"];
+	static readonly UpdateWebACL: string[] = ["waf:UpdateWebACL"];
 	/** IAM actions required for the UpdateXssMatchSet API call. */
-	static readonly UPDATE_XSS_MATCH_SET: string[] = ["waf:UpdateXssMatchSet"];
+	static readonly UpdateXssMatchSet: string[] = ["waf:UpdateXssMatchSet"];
 }
 
 /**
@@ -1037,39 +1165,39 @@ export class WAFOperations {
  */
 export class WAFConditions {
 	/** Condition keys applicable to the CreateRateBasedRule action. */
-	static readonly CREATE_RATE_BASED_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateRateBasedRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRule action. */
-	static readonly CREATE_RULE_CONDITION_KEYS: string[] = [
+	static readonly CreateRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateRuleGroup action. */
-	static readonly CREATE_RULE_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateRuleGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWebACL action. */
-	static readonly CREATE_WEB_ACL_CONDITION_KEYS: string[] = [
+	static readonly CreateWebACLConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

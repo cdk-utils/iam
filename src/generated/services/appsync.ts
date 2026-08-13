@@ -13,327 +13,629 @@ export class AppsyncActions {
 	static readonly SERVICE_PREFIX = "appsync";
 
 	/** [Write] appsync:AssociateApi */
-	static readonly ASSOCIATE_API = "appsync:AssociateApi";
+	static readonly AssociateApi = "appsync:AssociateApi";
 	/** [Write] appsync:AssociateMergedGraphqlApi */
-	static readonly ASSOCIATE_MERGED_GRAPHQL_API =
+	static readonly AssociateMergedGraphqlApi =
 		"appsync:AssociateMergedGraphqlApi";
 	/** [Write] appsync:AssociateSourceGraphqlApi */
-	static readonly ASSOCIATE_SOURCE_GRAPHQL_API =
+	static readonly AssociateSourceGraphqlApi =
 		"appsync:AssociateSourceGraphqlApi";
 	/** [Write] appsync:AssociateWebACL */
-	static readonly ASSOCIATE_WEB_ACL = "appsync:AssociateWebACL";
+	static readonly AssociateWebACL = "appsync:AssociateWebACL";
 	/** [Write] appsync:CreateApi */
-	static readonly CREATE_API = "appsync:CreateApi";
+	static readonly CreateApi = "appsync:CreateApi";
 	/** [Write] appsync:CreateApiCache */
-	static readonly CREATE_API_CACHE = "appsync:CreateApiCache";
+	static readonly CreateApiCache = "appsync:CreateApiCache";
 	/** [Write] appsync:CreateApiKey */
-	static readonly CREATE_API_KEY = "appsync:CreateApiKey";
+	static readonly CreateApiKey = "appsync:CreateApiKey";
 	/** [Write] appsync:CreateChannelNamespace */
-	static readonly CREATE_CHANNEL_NAMESPACE = "appsync:CreateChannelNamespace";
+	static readonly CreateChannelNamespace = "appsync:CreateChannelNamespace";
 	/** [Write] appsync:CreateDataSource */
-	static readonly CREATE_DATA_SOURCE = "appsync:CreateDataSource";
+	static readonly CreateDataSource = "appsync:CreateDataSource";
 	/** [Write] appsync:CreateDomainName */
-	static readonly CREATE_DOMAIN_NAME = "appsync:CreateDomainName";
+	static readonly CreateDomainName = "appsync:CreateDomainName";
 	/** [Write] appsync:CreateFunction */
-	static readonly CREATE_FUNCTION = "appsync:CreateFunction";
+	static readonly CreateFunction = "appsync:CreateFunction";
 	/** [Write] appsync:CreateGraphqlApi */
-	static readonly CREATE_GRAPHQL_API = "appsync:CreateGraphqlApi";
+	static readonly CreateGraphqlApi = "appsync:CreateGraphqlApi";
 	/** [Write] appsync:CreateResolver */
-	static readonly CREATE_RESOLVER = "appsync:CreateResolver";
+	static readonly CreateResolver = "appsync:CreateResolver";
 	/** [Write] appsync:CreateType */
-	static readonly CREATE_TYPE = "appsync:CreateType";
+	static readonly CreateType = "appsync:CreateType";
 	/** [Write] appsync:DeleteApi */
-	static readonly DELETE_API = "appsync:DeleteApi";
+	static readonly DeleteApi = "appsync:DeleteApi";
 	/** [Write] appsync:DeleteApiCache */
-	static readonly DELETE_API_CACHE = "appsync:DeleteApiCache";
+	static readonly DeleteApiCache = "appsync:DeleteApiCache";
 	/** [Write] appsync:DeleteApiKey */
-	static readonly DELETE_API_KEY = "appsync:DeleteApiKey";
+	static readonly DeleteApiKey = "appsync:DeleteApiKey";
 	/** [Write] appsync:DeleteChannelNamespace */
-	static readonly DELETE_CHANNEL_NAMESPACE = "appsync:DeleteChannelNamespace";
+	static readonly DeleteChannelNamespace = "appsync:DeleteChannelNamespace";
 	/** [Write] appsync:DeleteDataSource */
-	static readonly DELETE_DATA_SOURCE = "appsync:DeleteDataSource";
+	static readonly DeleteDataSource = "appsync:DeleteDataSource";
 	/** [Write] appsync:DeleteDomainName */
-	static readonly DELETE_DOMAIN_NAME = "appsync:DeleteDomainName";
+	static readonly DeleteDomainName = "appsync:DeleteDomainName";
 	/** [Write] appsync:DeleteFunction */
-	static readonly DELETE_FUNCTION = "appsync:DeleteFunction";
+	static readonly DeleteFunction = "appsync:DeleteFunction";
 	/** [Write] appsync:DeleteGraphqlApi */
-	static readonly DELETE_GRAPHQL_API = "appsync:DeleteGraphqlApi";
+	static readonly DeleteGraphqlApi = "appsync:DeleteGraphqlApi";
 	/** [Write] appsync:DeleteResolver */
-	static readonly DELETE_RESOLVER = "appsync:DeleteResolver";
+	static readonly DeleteResolver = "appsync:DeleteResolver";
 	/** [Write] appsync:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "appsync:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "appsync:DeleteResourcePolicy";
 	/** [Write] appsync:DeleteType */
-	static readonly DELETE_TYPE = "appsync:DeleteType";
+	static readonly DeleteType = "appsync:DeleteType";
 	/** [Write] appsync:DisassociateApi */
-	static readonly DISASSOCIATE_API = "appsync:DisassociateApi";
+	static readonly DisassociateApi = "appsync:DisassociateApi";
 	/** [Write] appsync:DisassociateMergedGraphqlApi */
-	static readonly DISASSOCIATE_MERGED_GRAPHQL_API =
+	static readonly DisassociateMergedGraphqlApi =
 		"appsync:DisassociateMergedGraphqlApi";
 	/** [Write] appsync:DisassociateSourceGraphqlApi */
-	static readonly DISASSOCIATE_SOURCE_GRAPHQL_API =
+	static readonly DisassociateSourceGraphqlApi =
 		"appsync:DisassociateSourceGraphqlApi";
 	/** [Write] appsync:DisassociateWebACL */
-	static readonly DISASSOCIATE_WEB_ACL = "appsync:DisassociateWebACL";
+	static readonly DisassociateWebACL = "appsync:DisassociateWebACL";
 	/** [Read] appsync:EvaluateCode */
-	static readonly EVALUATE_CODE = "appsync:EvaluateCode";
+	static readonly EvaluateCode = "appsync:EvaluateCode";
 	/** [Read] appsync:EvaluateMappingTemplate */
-	static readonly EVALUATE_MAPPING_TEMPLATE = "appsync:EvaluateMappingTemplate";
+	static readonly EvaluateMappingTemplate = "appsync:EvaluateMappingTemplate";
 	/** [Write] appsync:EventConnect */
-	static readonly EVENT_CONNECT = "appsync:EventConnect";
+	static readonly EventConnect = "appsync:EventConnect";
 	/** [Write] appsync:EventPublish */
-	static readonly EVENT_PUBLISH = "appsync:EventPublish";
+	static readonly EventPublish = "appsync:EventPublish";
 	/** [Write] appsync:EventSubscribe */
-	static readonly EVENT_SUBSCRIBE = "appsync:EventSubscribe";
+	static readonly EventSubscribe = "appsync:EventSubscribe";
 	/** [Write] appsync:FlushApiCache */
-	static readonly FLUSH_API_CACHE = "appsync:FlushApiCache";
+	static readonly FlushApiCache = "appsync:FlushApiCache";
 	/** [Read] appsync:GetApi */
-	static readonly GET_API = "appsync:GetApi";
+	static readonly actionGetApi = "appsync:GetApi";
 	/** [Read] appsync:GetApiAssociation */
-	static readonly GET_API_ASSOCIATION = "appsync:GetApiAssociation";
+	static readonly actionGetApiAssociation = "appsync:GetApiAssociation";
 	/** [Read] appsync:GetApiCache */
-	static readonly GET_API_CACHE = "appsync:GetApiCache";
+	static readonly actionGetApiCache = "appsync:GetApiCache";
 	/** [Read] appsync:GetChannelNamespace */
-	static readonly GET_CHANNEL_NAMESPACE = "appsync:GetChannelNamespace";
+	static readonly actionGetChannelNamespace = "appsync:GetChannelNamespace";
 	/** [Read] appsync:GetDataSource */
-	static readonly GET_DATA_SOURCE = "appsync:GetDataSource";
+	static readonly actionGetDataSource = "appsync:GetDataSource";
 	/** [Read] appsync:GetDataSourceIntrospection */
-	static readonly GET_DATA_SOURCE_INTROSPECTION =
+	static readonly actionGetDataSourceIntrospection =
 		"appsync:GetDataSourceIntrospection";
 	/** [Read] appsync:GetDomainName */
-	static readonly GET_DOMAIN_NAME = "appsync:GetDomainName";
+	static readonly actionGetDomainName = "appsync:GetDomainName";
 	/** [Read] appsync:GetFunction */
-	static readonly GET_FUNCTION = "appsync:GetFunction";
+	static readonly actionGetFunction = "appsync:GetFunction";
 	/** [Read] appsync:GetGraphqlApi */
-	static readonly GET_GRAPHQL_API = "appsync:GetGraphqlApi";
+	static readonly actionGetGraphqlApi = "appsync:GetGraphqlApi";
 	/** [Read] appsync:GetGraphqlApiEnvironmentVariables */
-	static readonly GET_GRAPHQL_API_ENVIRONMENT_VARIABLES =
+	static readonly actionGetGraphqlApiEnvironmentVariables =
 		"appsync:GetGraphqlApiEnvironmentVariables";
 	/** [Read] appsync:GetIntrospectionSchema */
-	static readonly GET_INTROSPECTION_SCHEMA = "appsync:GetIntrospectionSchema";
+	static readonly actionGetIntrospectionSchema =
+		"appsync:GetIntrospectionSchema";
 	/** [Read] appsync:GetResolver */
-	static readonly GET_RESOLVER = "appsync:GetResolver";
+	static readonly actionGetResolver = "appsync:GetResolver";
 	/** [Read] appsync:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "appsync:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "appsync:GetResourcePolicy";
 	/** [Read] appsync:GetSchemaCreationStatus */
-	static readonly GET_SCHEMA_CREATION_STATUS =
+	static readonly actionGetSchemaCreationStatus =
 		"appsync:GetSchemaCreationStatus";
 	/** [Read] appsync:GetSourceApiAssociation */
-	static readonly GET_SOURCE_API_ASSOCIATION =
+	static readonly actionGetSourceApiAssociation =
 		"appsync:GetSourceApiAssociation";
 	/** [Read] appsync:GetType */
-	static readonly GET_TYPE = "appsync:GetType";
+	static readonly actionGetType = "appsync:GetType";
 	/** [Read] appsync:GetWebACLForResource */
-	static readonly GET_WEB_ACL_FOR_RESOURCE = "appsync:GetWebACLForResource";
+	static readonly actionGetWebACLForResource = "appsync:GetWebACLForResource";
 	/** [Write] appsync:GraphQL */
-	static readonly GRAPH_QL = "appsync:GraphQL";
+	static readonly GraphQL = "appsync:GraphQL";
 	/** [List] appsync:ListApiKeys */
-	static readonly LIST_API_KEYS = "appsync:ListApiKeys";
+	static readonly ListApiKeys = "appsync:ListApiKeys";
 	/** [List] appsync:ListApis */
-	static readonly LIST_APIS = "appsync:ListApis";
+	static readonly ListApis = "appsync:ListApis";
 	/** [List] appsync:ListChannelNamespaces */
-	static readonly LIST_CHANNEL_NAMESPACES = "appsync:ListChannelNamespaces";
+	static readonly ListChannelNamespaces = "appsync:ListChannelNamespaces";
 	/** [List] appsync:ListDataSources */
-	static readonly LIST_DATA_SOURCES = "appsync:ListDataSources";
+	static readonly ListDataSources = "appsync:ListDataSources";
 	/** [List] appsync:ListDomainNames */
-	static readonly LIST_DOMAIN_NAMES = "appsync:ListDomainNames";
+	static readonly ListDomainNames = "appsync:ListDomainNames";
 	/** [List] appsync:ListFunctions */
-	static readonly LIST_FUNCTIONS = "appsync:ListFunctions";
+	static readonly ListFunctions = "appsync:ListFunctions";
 	/** [List] appsync:ListGraphqlApis */
-	static readonly LIST_GRAPHQL_APIS = "appsync:ListGraphqlApis";
+	static readonly ListGraphqlApis = "appsync:ListGraphqlApis";
 	/** [List] appsync:ListResolvers */
-	static readonly LIST_RESOLVERS = "appsync:ListResolvers";
+	static readonly ListResolvers = "appsync:ListResolvers";
 	/** [List] appsync:ListResolversByFunction */
-	static readonly LIST_RESOLVERS_BY_FUNCTION =
-		"appsync:ListResolversByFunction";
+	static readonly ListResolversByFunction = "appsync:ListResolversByFunction";
 	/** [List] appsync:ListResourcesForWebACL */
-	static readonly LIST_RESOURCES_FOR_WEB_ACL = "appsync:ListResourcesForWebACL";
+	static readonly ListResourcesForWebACL = "appsync:ListResourcesForWebACL";
 	/** [List] appsync:ListSourceApiAssociations */
-	static readonly LIST_SOURCE_API_ASSOCIATIONS =
+	static readonly ListSourceApiAssociations =
 		"appsync:ListSourceApiAssociations";
 	/** [Read] appsync:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "appsync:ListTagsForResource";
+	static readonly ListTagsForResource = "appsync:ListTagsForResource";
 	/** [List] appsync:ListTypes */
-	static readonly LIST_TYPES = "appsync:ListTypes";
+	static readonly ListTypes = "appsync:ListTypes";
 	/** [List] appsync:ListTypesByAssociation */
-	static readonly LIST_TYPES_BY_ASSOCIATION = "appsync:ListTypesByAssociation";
+	static readonly ListTypesByAssociation = "appsync:ListTypesByAssociation";
 	/** [Write] appsync:PutGraphqlApiEnvironmentVariables */
-	static readonly PUT_GRAPHQL_API_ENVIRONMENT_VARIABLES =
+	static readonly PutGraphqlApiEnvironmentVariables =
 		"appsync:PutGraphqlApiEnvironmentVariables";
 	/** [Write] appsync:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "appsync:PutResourcePolicy";
+	static readonly PutResourcePolicy = "appsync:PutResourcePolicy";
 	/** [PermissionManagement] appsync:SetWebACL */
-	static readonly SET_WEB_ACL = "appsync:SetWebACL";
+	static readonly actionSetWebACL = "appsync:SetWebACL";
 	/** [Write] appsync:SourceGraphQL */
-	static readonly SOURCE_GRAPH_QL = "appsync:SourceGraphQL";
+	static readonly SourceGraphQL = "appsync:SourceGraphQL";
 	/** [Write] appsync:StartDataSourceIntrospection */
-	static readonly START_DATA_SOURCE_INTROSPECTION =
+	static readonly StartDataSourceIntrospection =
 		"appsync:StartDataSourceIntrospection";
 	/** [Write] appsync:StartSchemaCreation */
-	static readonly START_SCHEMA_CREATION = "appsync:StartSchemaCreation";
+	static readonly StartSchemaCreation = "appsync:StartSchemaCreation";
 	/** [Write] appsync:StartSchemaMerge */
-	static readonly START_SCHEMA_MERGE = "appsync:StartSchemaMerge";
+	static readonly StartSchemaMerge = "appsync:StartSchemaMerge";
 	/** [Tagging] appsync:TagResource */
-	static readonly TAG_RESOURCE = "appsync:TagResource";
+	static readonly TagResource = "appsync:TagResource";
 	/** [Tagging] appsync:UntagResource */
-	static readonly UNTAG_RESOURCE = "appsync:UntagResource";
+	static readonly UntagResource = "appsync:UntagResource";
 	/** [Write] appsync:UpdateApi */
-	static readonly UPDATE_API = "appsync:UpdateApi";
+	static readonly UpdateApi = "appsync:UpdateApi";
 	/** [Write] appsync:UpdateApiCache */
-	static readonly UPDATE_API_CACHE = "appsync:UpdateApiCache";
+	static readonly UpdateApiCache = "appsync:UpdateApiCache";
 	/** [Write] appsync:UpdateApiKey */
-	static readonly UPDATE_API_KEY = "appsync:UpdateApiKey";
+	static readonly UpdateApiKey = "appsync:UpdateApiKey";
 	/** [Write] appsync:UpdateChannelNamespace */
-	static readonly UPDATE_CHANNEL_NAMESPACE = "appsync:UpdateChannelNamespace";
+	static readonly UpdateChannelNamespace = "appsync:UpdateChannelNamespace";
 	/** [Write] appsync:UpdateDataSource */
-	static readonly UPDATE_DATA_SOURCE = "appsync:UpdateDataSource";
+	static readonly UpdateDataSource = "appsync:UpdateDataSource";
 	/** [Write] appsync:UpdateDomainName */
-	static readonly UPDATE_DOMAIN_NAME = "appsync:UpdateDomainName";
+	static readonly UpdateDomainName = "appsync:UpdateDomainName";
 	/** [Write] appsync:UpdateFunction */
-	static readonly UPDATE_FUNCTION = "appsync:UpdateFunction";
+	static readonly UpdateFunction = "appsync:UpdateFunction";
 	/** [Write] appsync:UpdateGraphqlApi */
-	static readonly UPDATE_GRAPHQL_API = "appsync:UpdateGraphqlApi";
+	static readonly UpdateGraphqlApi = "appsync:UpdateGraphqlApi";
 	/** [Write] appsync:UpdateResolver */
-	static readonly UPDATE_RESOLVER = "appsync:UpdateResolver";
+	static readonly UpdateResolver = "appsync:UpdateResolver";
 	/** [Write] appsync:UpdateSourceApiAssociation */
-	static readonly UPDATE_SOURCE_API_ASSOCIATION =
+	static readonly UpdateSourceApiAssociation =
 		"appsync:UpdateSourceApiAssociation";
 	/** [Write] appsync:UpdateType */
-	static readonly UPDATE_TYPE = "appsync:UpdateType";
+	static readonly UpdateType = "appsync:UpdateType";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppsyncActions.EVALUATE_CODE,
-		AppsyncActions.EVALUATE_MAPPING_TEMPLATE,
-		AppsyncActions.GET_API,
-		AppsyncActions.GET_API_ASSOCIATION,
-		AppsyncActions.GET_API_CACHE,
-		AppsyncActions.GET_CHANNEL_NAMESPACE,
-		AppsyncActions.GET_DATA_SOURCE,
-		AppsyncActions.GET_DATA_SOURCE_INTROSPECTION,
-		AppsyncActions.GET_DOMAIN_NAME,
-		AppsyncActions.GET_FUNCTION,
-		AppsyncActions.GET_GRAPHQL_API,
-		AppsyncActions.GET_GRAPHQL_API_ENVIRONMENT_VARIABLES,
-		AppsyncActions.GET_INTROSPECTION_SCHEMA,
-		AppsyncActions.GET_RESOLVER,
-		AppsyncActions.GET_RESOURCE_POLICY,
-		AppsyncActions.GET_SCHEMA_CREATION_STATUS,
-		AppsyncActions.GET_SOURCE_API_ASSOCIATION,
-		AppsyncActions.GET_TYPE,
-		AppsyncActions.GET_WEB_ACL_FOR_RESOURCE,
-		AppsyncActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AppsyncActions.EvaluateCode,
+		AppsyncActions.EvaluateMappingTemplate,
+		AppsyncActions.actionGetApi,
+		AppsyncActions.actionGetApiAssociation,
+		AppsyncActions.actionGetApiCache,
+		AppsyncActions.actionGetChannelNamespace,
+		AppsyncActions.actionGetDataSource,
+		AppsyncActions.actionGetDataSourceIntrospection,
+		AppsyncActions.actionGetDomainName,
+		AppsyncActions.actionGetFunction,
+		AppsyncActions.actionGetGraphqlApi,
+		AppsyncActions.actionGetGraphqlApiEnvironmentVariables,
+		AppsyncActions.actionGetIntrospectionSchema,
+		AppsyncActions.actionGetResolver,
+		AppsyncActions.actionGetResourcePolicy,
+		AppsyncActions.actionGetSchemaCreationStatus,
+		AppsyncActions.actionGetSourceApiAssociation,
+		AppsyncActions.actionGetType,
+		AppsyncActions.actionGetWebACLForResource,
+		AppsyncActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppsyncActions.ASSOCIATE_API,
-		AppsyncActions.ASSOCIATE_MERGED_GRAPHQL_API,
-		AppsyncActions.ASSOCIATE_SOURCE_GRAPHQL_API,
-		AppsyncActions.ASSOCIATE_WEB_ACL,
-		AppsyncActions.CREATE_API,
-		AppsyncActions.CREATE_API_CACHE,
-		AppsyncActions.CREATE_API_KEY,
-		AppsyncActions.CREATE_CHANNEL_NAMESPACE,
-		AppsyncActions.CREATE_DATA_SOURCE,
-		AppsyncActions.CREATE_DOMAIN_NAME,
-		AppsyncActions.CREATE_FUNCTION,
-		AppsyncActions.CREATE_GRAPHQL_API,
-		AppsyncActions.CREATE_RESOLVER,
-		AppsyncActions.CREATE_TYPE,
-		AppsyncActions.DELETE_API,
-		AppsyncActions.DELETE_API_CACHE,
-		AppsyncActions.DELETE_API_KEY,
-		AppsyncActions.DELETE_CHANNEL_NAMESPACE,
-		AppsyncActions.DELETE_DATA_SOURCE,
-		AppsyncActions.DELETE_DOMAIN_NAME,
-		AppsyncActions.DELETE_FUNCTION,
-		AppsyncActions.DELETE_GRAPHQL_API,
-		AppsyncActions.DELETE_RESOLVER,
-		AppsyncActions.DELETE_RESOURCE_POLICY,
-		AppsyncActions.DELETE_TYPE,
-		AppsyncActions.DISASSOCIATE_API,
-		AppsyncActions.DISASSOCIATE_MERGED_GRAPHQL_API,
-		AppsyncActions.DISASSOCIATE_SOURCE_GRAPHQL_API,
-		AppsyncActions.DISASSOCIATE_WEB_ACL,
-		AppsyncActions.EVENT_CONNECT,
-		AppsyncActions.EVENT_PUBLISH,
-		AppsyncActions.EVENT_SUBSCRIBE,
-		AppsyncActions.FLUSH_API_CACHE,
-		AppsyncActions.GRAPH_QL,
-		AppsyncActions.PUT_GRAPHQL_API_ENVIRONMENT_VARIABLES,
-		AppsyncActions.PUT_RESOURCE_POLICY,
-		AppsyncActions.SOURCE_GRAPH_QL,
-		AppsyncActions.START_DATA_SOURCE_INTROSPECTION,
-		AppsyncActions.START_SCHEMA_CREATION,
-		AppsyncActions.START_SCHEMA_MERGE,
-		AppsyncActions.UPDATE_API,
-		AppsyncActions.UPDATE_API_CACHE,
-		AppsyncActions.UPDATE_API_KEY,
-		AppsyncActions.UPDATE_CHANNEL_NAMESPACE,
-		AppsyncActions.UPDATE_DATA_SOURCE,
-		AppsyncActions.UPDATE_DOMAIN_NAME,
-		AppsyncActions.UPDATE_FUNCTION,
-		AppsyncActions.UPDATE_GRAPHQL_API,
-		AppsyncActions.UPDATE_RESOLVER,
-		AppsyncActions.UPDATE_SOURCE_API_ASSOCIATION,
-		AppsyncActions.UPDATE_TYPE,
+	static readonly AllWriteActions: string[] = [
+		AppsyncActions.AssociateApi,
+		AppsyncActions.AssociateMergedGraphqlApi,
+		AppsyncActions.AssociateSourceGraphqlApi,
+		AppsyncActions.AssociateWebACL,
+		AppsyncActions.CreateApi,
+		AppsyncActions.CreateApiCache,
+		AppsyncActions.CreateApiKey,
+		AppsyncActions.CreateChannelNamespace,
+		AppsyncActions.CreateDataSource,
+		AppsyncActions.CreateDomainName,
+		AppsyncActions.CreateFunction,
+		AppsyncActions.CreateGraphqlApi,
+		AppsyncActions.CreateResolver,
+		AppsyncActions.CreateType,
+		AppsyncActions.DeleteApi,
+		AppsyncActions.DeleteApiCache,
+		AppsyncActions.DeleteApiKey,
+		AppsyncActions.DeleteChannelNamespace,
+		AppsyncActions.DeleteDataSource,
+		AppsyncActions.DeleteDomainName,
+		AppsyncActions.DeleteFunction,
+		AppsyncActions.DeleteGraphqlApi,
+		AppsyncActions.DeleteResolver,
+		AppsyncActions.DeleteResourcePolicy,
+		AppsyncActions.DeleteType,
+		AppsyncActions.DisassociateApi,
+		AppsyncActions.DisassociateMergedGraphqlApi,
+		AppsyncActions.DisassociateSourceGraphqlApi,
+		AppsyncActions.DisassociateWebACL,
+		AppsyncActions.EventConnect,
+		AppsyncActions.EventPublish,
+		AppsyncActions.EventSubscribe,
+		AppsyncActions.FlushApiCache,
+		AppsyncActions.GraphQL,
+		AppsyncActions.PutGraphqlApiEnvironmentVariables,
+		AppsyncActions.PutResourcePolicy,
+		AppsyncActions.SourceGraphQL,
+		AppsyncActions.StartDataSourceIntrospection,
+		AppsyncActions.StartSchemaCreation,
+		AppsyncActions.StartSchemaMerge,
+		AppsyncActions.UpdateApi,
+		AppsyncActions.UpdateApiCache,
+		AppsyncActions.UpdateApiKey,
+		AppsyncActions.UpdateChannelNamespace,
+		AppsyncActions.UpdateDataSource,
+		AppsyncActions.UpdateDomainName,
+		AppsyncActions.UpdateFunction,
+		AppsyncActions.UpdateGraphqlApi,
+		AppsyncActions.UpdateResolver,
+		AppsyncActions.UpdateSourceApiAssociation,
+		AppsyncActions.UpdateType,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AppsyncActions.LIST_API_KEYS,
-		AppsyncActions.LIST_APIS,
-		AppsyncActions.LIST_CHANNEL_NAMESPACES,
-		AppsyncActions.LIST_DATA_SOURCES,
-		AppsyncActions.LIST_DOMAIN_NAMES,
-		AppsyncActions.LIST_FUNCTIONS,
-		AppsyncActions.LIST_GRAPHQL_APIS,
-		AppsyncActions.LIST_RESOLVERS,
-		AppsyncActions.LIST_RESOLVERS_BY_FUNCTION,
-		AppsyncActions.LIST_RESOURCES_FOR_WEB_ACL,
-		AppsyncActions.LIST_SOURCE_API_ASSOCIATIONS,
-		AppsyncActions.LIST_TYPES,
-		AppsyncActions.LIST_TYPES_BY_ASSOCIATION,
+	static readonly AllListActions: string[] = [
+		AppsyncActions.ListApiKeys,
+		AppsyncActions.ListApis,
+		AppsyncActions.ListChannelNamespaces,
+		AppsyncActions.ListDataSources,
+		AppsyncActions.ListDomainNames,
+		AppsyncActions.ListFunctions,
+		AppsyncActions.ListGraphqlApis,
+		AppsyncActions.ListResolvers,
+		AppsyncActions.ListResolversByFunction,
+		AppsyncActions.ListResourcesForWebACL,
+		AppsyncActions.ListSourceApiAssociations,
+		AppsyncActions.ListTypes,
+		AppsyncActions.ListTypesByAssociation,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		AppsyncActions.SET_WEB_ACL,
+	static readonly AllPermissionManagementActions: string[] = [
+		AppsyncActions.actionSetWebACL,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AppsyncActions.TAG_RESOURCE,
-		AppsyncActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AppsyncActions.TagResource,
+		AppsyncActions.UntagResource,
 	];
 }
 
-const APIArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<apiId>[^:/?]+)$",
-);
-const ChannelNamespaceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<apiId>[^:/?]+)/channelNamespace/(?<channelNamespaceName>[^:/?]+)$",
-);
-const DatasourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<graphQlapiId>[^:/?]+)/datasources/(?<datasourceName>[^:/?]+)$",
-);
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):domainnames/(?<domainName>[^:/?]+)$",
-);
-const FieldArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<graphQlapiId>[^:/?]+)/types/(?<typeName>[^:/?]+)/fields/(?<fieldName>[^:/?]+)$",
-);
-const FunctionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<graphQlapiId>[^:/?]+)/functions/(?<functionId>[^:/?]+)$",
-);
-const GraphqlapiArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<graphQlapiId>[^:/?]+)$",
-);
-const MergedAPIAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<sourceGraphQlapiId>[^:/?]+)/mergedApiAssociations/(?<associationid>[^:/?]+)$",
-);
-const SourceAPIAssociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<mergedGraphQlapiId>[^:/?]+)/sourceApiAssociations/(?<associationid>[^:/?]+)$",
-);
-const TypeArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis/(?<graphQlapiId>[^:/?]+)/types/(?<typeName>[^:/?]+)$",
-);
+/**
+ * Properties for building a api ARN.
+ */
+export interface AppsyncAPIArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a api ARN.
+ */
+export interface AppsyncAPIArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+}
+
+/**
+ * Properties for building a channelNamespace ARN.
+ */
+export interface AppsyncChannelNamespaceArnProps {
+	/** The ApiId component of the ARN. */
+	readonly apiId: string;
+	/** The ChannelNamespaceName component of the ARN. */
+	readonly channelNamespaceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a channelNamespace ARN.
+ */
+export interface AppsyncChannelNamespaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApiId component. */
+	readonly apiId: string;
+	/** The ChannelNamespaceName component. */
+	readonly channelNamespaceName: string;
+}
+
+/**
+ * Properties for building a datasource ARN.
+ */
+export interface AppsyncDatasourceArnProps {
+	/** The GraphQLAPIId component of the ARN. */
+	readonly graphQlapiId: string;
+	/** The DatasourceName component of the ARN. */
+	readonly datasourceName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a datasource ARN.
+ */
+export interface AppsyncDatasourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GraphQLAPIId component. */
+	readonly graphQlapiId: string;
+	/** The DatasourceName component. */
+	readonly datasourceName: string;
+}
+
+/**
+ * Properties for building a domain ARN.
+ */
+export interface AppsyncDomainArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain ARN.
+ */
+export interface AppsyncDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a field ARN.
+ */
+export interface AppsyncFieldArnProps {
+	/** The GraphQLAPIId component of the ARN. */
+	readonly graphQlapiId: string;
+	/** The TypeName component of the ARN. */
+	readonly typeName: string;
+	/** The FieldName component of the ARN. */
+	readonly fieldName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a field ARN.
+ */
+export interface AppsyncFieldArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GraphQLAPIId component. */
+	readonly graphQlapiId: string;
+	/** The TypeName component. */
+	readonly typeName: string;
+	/** The FieldName component. */
+	readonly fieldName: string;
+}
+
+/**
+ * Properties for building a function ARN.
+ */
+export interface AppsyncFunctionArnProps {
+	/** The GraphQLAPIId component of the ARN. */
+	readonly graphQlapiId: string;
+	/** The FunctionId component of the ARN. */
+	readonly functionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a function ARN.
+ */
+export interface AppsyncFunctionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GraphQLAPIId component. */
+	readonly graphQlapiId: string;
+	/** The FunctionId component. */
+	readonly functionId: string;
+}
+
+/**
+ * Properties for building a graphqlapi ARN.
+ */
+export interface AppsyncGraphqlapiArnProps {
+	/** The GraphQLAPIId component of the ARN. */
+	readonly graphQlapiId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a graphqlapi ARN.
+ */
+export interface AppsyncGraphqlapiArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GraphQLAPIId component. */
+	readonly graphQlapiId: string;
+}
+
+/**
+ * Properties for building a mergedApiAssociation ARN.
+ */
+export interface AppsyncMergedAPIAssociationArnProps {
+	/** The SourceGraphQLAPIId component of the ARN. */
+	readonly sourceGraphQlapiId: string;
+	/** The Associationid component of the ARN. */
+	readonly associationid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a mergedApiAssociation ARN.
+ */
+export interface AppsyncMergedAPIAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceGraphQLAPIId component. */
+	readonly sourceGraphQlapiId: string;
+	/** The Associationid component. */
+	readonly associationid: string;
+}
+
+/**
+ * Properties for building a sourceApiAssociation ARN.
+ */
+export interface AppsyncSourceAPIAssociationArnProps {
+	/** The MergedGraphQLAPIId component of the ARN. */
+	readonly mergedGraphQlapiId: string;
+	/** The Associationid component of the ARN. */
+	readonly associationid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sourceApiAssociation ARN.
+ */
+export interface AppsyncSourceAPIAssociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MergedGraphQLAPIId component. */
+	readonly mergedGraphQlapiId: string;
+	/** The Associationid component. */
+	readonly associationid: string;
+}
+
+/**
+ * Properties for building a type ARN.
+ */
+export interface AppsyncTypeArnProps {
+	/** The GraphQLAPIId component of the ARN. */
+	readonly graphQlapiId: string;
+	/** The TypeName component of the ARN. */
+	readonly typeName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a type ARN.
+ */
+export interface AppsyncTypeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GraphQLAPIId component. */
+	readonly graphQlapiId: string;
+	/** The TypeName component. */
+	readonly typeName: string;
+}
+
+const APIArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<apiId>[^:/?]+)$/;
+const ChannelNamespaceArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<apiId>[^:/?]+)\/channelNamespace\/(?<channelNamespaceName>[^:/?]+)$/;
+const DatasourceArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)\/datasources\/(?<datasourceName>[^:/?]+)$/;
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):domainnames\/(?<domainName>[^:/?]+)$/;
+const FieldArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)\/types\/(?<typeName>[^:/?]+)\/fields\/(?<fieldName>[^:/?]+)$/;
+const FunctionArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)\/functions\/(?<functionId>[^:/?]+)$/;
+const GraphqlapiArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)$/;
+const MergedAPIAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<sourceGraphQlapiId>[^:/?]+)\/mergedApiAssociations\/(?<associationid>[^:/?]+)$/;
+const SourceAPIAssociationArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<mergedGraphQlapiId>[^:/?]+)\/sourceApiAssociations\/(?<associationid>[^:/?]+)$/;
+const TypeArnRegex =
+	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)\/types\/(?<typeName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appsync resources.
@@ -342,16 +644,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the api resource.
 	 */
-	static api(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static api(props: AppsyncAPIArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.apiId}`;
 	}
 
@@ -366,12 +659,7 @@ export class AppsyncResources {
 	 * Parses a api ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAPIArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-	} {
+	static parseAPIArn(arn: string): AppsyncAPIArnComponents {
 		const match = APIArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid api ARN: ${arn}`);
@@ -387,18 +675,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the channelNamespace resource.
 	 */
-	static channelNamespace(props: {
-		/** The ApiId component of the ARN. */
-		readonly apiId: string;
-		/** The ChannelNamespaceName component of the ARN. */
-		readonly channelNamespaceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static channelNamespace(props: AppsyncChannelNamespaceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.apiId}/channelNamespace/${props.channelNamespaceName}`;
 	}
 
@@ -413,13 +690,9 @@ export class AppsyncResources {
 	 * Parses a channelNamespace ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseChannelNamespaceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		apiId: string;
-		channelNamespaceName: string;
-	} {
+	static parseChannelNamespaceArn(
+		arn: string,
+	): AppsyncChannelNamespaceArnComponents {
 		const match = ChannelNamespaceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid channelNamespace ARN: ${arn}`);
@@ -436,18 +709,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the datasource resource.
 	 */
-	static datasource(props: {
-		/** The GraphQLAPIId component of the ARN. */
-		readonly graphQlapiId: string;
-		/** The DatasourceName component of the ARN. */
-		readonly datasourceName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static datasource(props: AppsyncDatasourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.graphQlapiId}/datasources/${props.datasourceName}`;
 	}
 
@@ -462,13 +724,7 @@ export class AppsyncResources {
 	 * Parses a datasource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		graphQlapiId: string;
-		datasourceName: string;
-	} {
+	static parseDatasourceArn(arn: string): AppsyncDatasourceArnComponents {
 		const match = DatasourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid datasource ARN: ${arn}`);
@@ -485,16 +741,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the domain resource.
 	 */
-	static domain(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: AppsyncDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:domainnames/${props.domainName}`;
 	}
 
@@ -509,12 +756,7 @@ export class AppsyncResources {
 	 * Parses a domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainArn(arn: string): AppsyncDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain ARN: ${arn}`);
@@ -530,20 +772,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the field resource.
 	 */
-	static field(props: {
-		/** The GraphQLAPIId component of the ARN. */
-		readonly graphQlapiId: string;
-		/** The TypeName component of the ARN. */
-		readonly typeName: string;
-		/** The FieldName component of the ARN. */
-		readonly fieldName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static field(props: AppsyncFieldArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.graphQlapiId}/types/${props.typeName}/fields/${props.fieldName}`;
 	}
 
@@ -558,14 +787,7 @@ export class AppsyncResources {
 	 * Parses a field ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFieldArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		graphQlapiId: string;
-		typeName: string;
-		fieldName: string;
-	} {
+	static parseFieldArn(arn: string): AppsyncFieldArnComponents {
 		const match = FieldArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid field ARN: ${arn}`);
@@ -583,18 +805,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the function resource.
 	 */
-	static function(props: {
-		/** The GraphQLAPIId component of the ARN. */
-		readonly graphQlapiId: string;
-		/** The FunctionId component of the ARN. */
-		readonly functionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static function(props: AppsyncFunctionArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.graphQlapiId}/functions/${props.functionId}`;
 	}
 
@@ -609,13 +820,7 @@ export class AppsyncResources {
 	 * Parses a function ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFunctionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		graphQlapiId: string;
-		functionId: string;
-	} {
+	static parseFunctionArn(arn: string): AppsyncFunctionArnComponents {
 		const match = FunctionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid function ARN: ${arn}`);
@@ -632,16 +837,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the graphqlapi resource.
 	 */
-	static graphqlapi(props: {
-		/** The GraphQLAPIId component of the ARN. */
-		readonly graphQlapiId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static graphqlapi(props: AppsyncGraphqlapiArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.graphQlapiId}`;
 	}
 
@@ -656,12 +852,7 @@ export class AppsyncResources {
 	 * Parses a graphqlapi ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGraphqlapiArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		graphQlapiId: string;
-	} {
+	static parseGraphqlapiArn(arn: string): AppsyncGraphqlapiArnComponents {
 		const match = GraphqlapiArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid graphqlapi ARN: ${arn}`);
@@ -677,18 +868,9 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the mergedApiAssociation resource.
 	 */
-	static mergedAPIAssociation(props: {
-		/** The SourceGraphQLAPIId component of the ARN. */
-		readonly sourceGraphQlapiId: string;
-		/** The Associationid component of the ARN. */
-		readonly associationid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static mergedAPIAssociation(
+		props: AppsyncMergedAPIAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.sourceGraphQlapiId}/mergedApiAssociations/${props.associationid}`;
 	}
 
@@ -703,13 +885,9 @@ export class AppsyncResources {
 	 * Parses a mergedApiAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMergedAPIAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sourceGraphQlapiId: string;
-		associationid: string;
-	} {
+	static parseMergedAPIAssociationArn(
+		arn: string,
+	): AppsyncMergedAPIAssociationArnComponents {
 		const match = MergedAPIAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid mergedApiAssociation ARN: ${arn}`);
@@ -726,18 +904,9 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the sourceApiAssociation resource.
 	 */
-	static sourceAPIAssociation(props: {
-		/** The MergedGraphQLAPIId component of the ARN. */
-		readonly mergedGraphQlapiId: string;
-		/** The Associationid component of the ARN. */
-		readonly associationid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sourceAPIAssociation(
+		props: AppsyncSourceAPIAssociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.mergedGraphQlapiId}/sourceApiAssociations/${props.associationid}`;
 	}
 
@@ -752,13 +921,9 @@ export class AppsyncResources {
 	 * Parses a sourceApiAssociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSourceAPIAssociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		mergedGraphQlapiId: string;
-		associationid: string;
-	} {
+	static parseSourceAPIAssociationArn(
+		arn: string,
+	): AppsyncSourceAPIAssociationArnComponents {
 		const match = SourceAPIAssociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid sourceApiAssociation ARN: ${arn}`);
@@ -775,18 +940,7 @@ export class AppsyncResources {
 	/**
 	 * Builds an ARN for the type resource.
 	 */
-	static type(props: {
-		/** The GraphQLAPIId component of the ARN. */
-		readonly graphQlapiId: string;
-		/** The TypeName component of the ARN. */
-		readonly typeName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static type(props: AppsyncTypeArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appsync:${props.region ?? "*"}:${props.account ?? "*"}:apis/${props.graphQlapiId}/types/${props.typeName}`;
 	}
 
@@ -801,13 +955,7 @@ export class AppsyncResources {
 	 * Parses a type ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseTypeArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		graphQlapiId: string;
-		typeName: string;
-	} {
+	static parseTypeArn(arn: string): AppsyncTypeArnComponents {
 		const match = TypeArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid type ARN: ${arn}`);
@@ -827,222 +975,222 @@ export class AppsyncResources {
  */
 export class AppsyncOperations {
 	/** IAM actions required for the AssociateApi API call. */
-	static readonly ASSOCIATE_API: string[] = ["appsync:AssociateApi"];
+	static readonly AssociateApi: string[] = ["appsync:AssociateApi"];
 	/** IAM actions required for the AssociateMergedGraphqlApi API call. */
-	static readonly ASSOCIATE_MERGED_GRAPHQL_API: string[] = [
+	static readonly AssociateMergedGraphqlApi: string[] = [
 		"appsync:AssociateMergedGraphqlApi",
 		"appsync:AssociateSourceGraphqlApi",
 	];
 	/** IAM actions required for the AssociateSourceGraphqlApi API call. */
-	static readonly ASSOCIATE_SOURCE_GRAPHQL_API: string[] = [
+	static readonly AssociateSourceGraphqlApi: string[] = [
 		"appsync:AssociateMergedGraphqlApi",
 		"appsync:AssociateSourceGraphqlApi",
 	];
 	/** IAM actions required for the CreateApi API call. */
-	static readonly CREATE_API: string[] = [
+	static readonly CreateApi: string[] = [
 		"appsync:CreateApi",
 		"iam:PassRole",
 		"appsync:TagResource",
 	];
 	/** IAM actions required for the CreateApiCache API call. */
-	static readonly CREATE_API_CACHE: string[] = ["appsync:CreateApiCache"];
+	static readonly CreateApiCache: string[] = ["appsync:CreateApiCache"];
 	/** IAM actions required for the CreateApiKey API call. */
-	static readonly CREATE_API_KEY: string[] = ["appsync:CreateApiKey"];
+	static readonly CreateApiKey: string[] = ["appsync:CreateApiKey"];
 	/** IAM actions required for the CreateChannelNamespace API call. */
-	static readonly CREATE_CHANNEL_NAMESPACE: string[] = [
+	static readonly CreateChannelNamespace: string[] = [
 		"appsync:CreateChannelNamespace",
 		"appsync:TagResource",
 	];
 	/** IAM actions required for the CreateDataSource API call. */
-	static readonly CREATE_DATA_SOURCE: string[] = [
+	static readonly CreateDataSource: string[] = [
 		"appsync:CreateDataSource",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDomainName API call. */
-	static readonly CREATE_DOMAIN_NAME: string[] = [
+	static readonly CreateDomainName: string[] = [
 		"appsync:CreateDomainName",
 		"appsync:TagResource",
 	];
 	/** IAM actions required for the CreateFunction API call. */
-	static readonly CREATE_FUNCTION: string[] = ["appsync:CreateFunction"];
+	static readonly CreateFunction: string[] = ["appsync:CreateFunction"];
 	/** IAM actions required for the CreateGraphqlApi API call. */
-	static readonly CREATE_GRAPHQL_API: string[] = [
+	static readonly CreateGraphqlApi: string[] = [
 		"appsync:CreateGraphqlApi",
 		"iam:PassRole",
 		"appsync:TagResource",
 	];
 	/** IAM actions required for the CreateResolver API call. */
-	static readonly CREATE_RESOLVER: string[] = ["appsync:CreateResolver"];
+	static readonly CreateResolver: string[] = ["appsync:CreateResolver"];
 	/** IAM actions required for the CreateType API call. */
-	static readonly CREATE_TYPE: string[] = ["appsync:CreateType"];
+	static readonly CreateType: string[] = ["appsync:CreateType"];
 	/** IAM actions required for the DeleteApi API call. */
-	static readonly DELETE_API: string[] = ["appsync:DeleteApi"];
+	static readonly DeleteApi: string[] = ["appsync:DeleteApi"];
 	/** IAM actions required for the DeleteApiCache API call. */
-	static readonly DELETE_API_CACHE: string[] = ["appsync:DeleteApiCache"];
+	static readonly DeleteApiCache: string[] = ["appsync:DeleteApiCache"];
 	/** IAM actions required for the DeleteApiKey API call. */
-	static readonly DELETE_API_KEY: string[] = ["appsync:DeleteApiKey"];
+	static readonly DeleteApiKey: string[] = ["appsync:DeleteApiKey"];
 	/** IAM actions required for the DeleteChannelNamespace API call. */
-	static readonly DELETE_CHANNEL_NAMESPACE: string[] = [
+	static readonly DeleteChannelNamespace: string[] = [
 		"appsync:DeleteChannelNamespace",
 	];
 	/** IAM actions required for the DeleteDataSource API call. */
-	static readonly DELETE_DATA_SOURCE: string[] = ["appsync:DeleteDataSource"];
+	static readonly DeleteDataSource: string[] = ["appsync:DeleteDataSource"];
 	/** IAM actions required for the DeleteDomainName API call. */
-	static readonly DELETE_DOMAIN_NAME: string[] = ["appsync:DeleteDomainName"];
+	static readonly DeleteDomainName: string[] = ["appsync:DeleteDomainName"];
 	/** IAM actions required for the DeleteFunction API call. */
-	static readonly DELETE_FUNCTION: string[] = ["appsync:DeleteFunction"];
+	static readonly DeleteFunction: string[] = ["appsync:DeleteFunction"];
 	/** IAM actions required for the DeleteGraphqlApi API call. */
-	static readonly DELETE_GRAPHQL_API: string[] = ["appsync:DeleteGraphqlApi"];
+	static readonly DeleteGraphqlApi: string[] = ["appsync:DeleteGraphqlApi"];
 	/** IAM actions required for the DeleteResolver API call. */
-	static readonly DELETE_RESOLVER: string[] = ["appsync:DeleteResolver"];
+	static readonly DeleteResolver: string[] = ["appsync:DeleteResolver"];
 	/** IAM actions required for the DeleteType API call. */
-	static readonly DELETE_TYPE: string[] = ["appsync:DeleteType"];
+	static readonly DeleteType: string[] = ["appsync:DeleteType"];
 	/** IAM actions required for the DisassociateApi API call. */
-	static readonly DISASSOCIATE_API: string[] = ["appsync:DisassociateApi"];
+	static readonly DisassociateApi: string[] = ["appsync:DisassociateApi"];
 	/** IAM actions required for the DisassociateMergedGraphqlApi API call. */
-	static readonly DISASSOCIATE_MERGED_GRAPHQL_API: string[] = [
+	static readonly DisassociateMergedGraphqlApi: string[] = [
 		"appsync:DisassociateMergedGraphqlApi",
 	];
 	/** IAM actions required for the DisassociateSourceGraphqlApi API call. */
-	static readonly DISASSOCIATE_SOURCE_GRAPHQL_API: string[] = [
+	static readonly DisassociateSourceGraphqlApi: string[] = [
 		"appsync:DisassociateSourceGraphqlApi",
 	];
 	/** IAM actions required for the EvaluateCode API call. */
-	static readonly EVALUATE_CODE: string[] = ["appsync:EvaluateCode"];
+	static readonly EvaluateCode: string[] = ["appsync:EvaluateCode"];
 	/** IAM actions required for the EvaluateMappingTemplate API call. */
-	static readonly EVALUATE_MAPPING_TEMPLATE: string[] = [
+	static readonly EvaluateMappingTemplate: string[] = [
 		"appsync:EvaluateMappingTemplate",
 	];
 	/** IAM actions required for the FlushApiCache API call. */
-	static readonly FLUSH_API_CACHE: string[] = ["appsync:FlushApiCache"];
+	static readonly FlushApiCache: string[] = ["appsync:FlushApiCache"];
 	/** IAM actions required for the GetApi API call. */
-	static readonly GET_API: string[] = ["appsync:GetApi"];
+	static readonly opGetApi: string[] = ["appsync:GetApi"];
 	/** IAM actions required for the GetApiAssociation API call. */
-	static readonly GET_API_ASSOCIATION: string[] = ["appsync:GetApiAssociation"];
+	static readonly opGetApiAssociation: string[] = ["appsync:GetApiAssociation"];
 	/** IAM actions required for the GetApiCache API call. */
-	static readonly GET_API_CACHE: string[] = ["appsync:GetApiCache"];
+	static readonly opGetApiCache: string[] = ["appsync:GetApiCache"];
 	/** IAM actions required for the GetChannelNamespace API call. */
-	static readonly GET_CHANNEL_NAMESPACE: string[] = [
+	static readonly opGetChannelNamespace: string[] = [
 		"appsync:GetChannelNamespace",
 	];
 	/** IAM actions required for the GetDataSource API call. */
-	static readonly GET_DATA_SOURCE: string[] = ["appsync:GetDataSource"];
+	static readonly opGetDataSource: string[] = ["appsync:GetDataSource"];
 	/** IAM actions required for the GetDataSourceIntrospection API call. */
-	static readonly GET_DATA_SOURCE_INTROSPECTION: string[] = [
+	static readonly opGetDataSourceIntrospection: string[] = [
 		"appsync:GetDataSourceIntrospection",
 	];
 	/** IAM actions required for the GetDomainName API call. */
-	static readonly GET_DOMAIN_NAME: string[] = ["appsync:GetDomainName"];
+	static readonly opGetDomainName: string[] = ["appsync:GetDomainName"];
 	/** IAM actions required for the GetFunction API call. */
-	static readonly GET_FUNCTION: string[] = ["appsync:GetFunction"];
+	static readonly opGetFunction: string[] = ["appsync:GetFunction"];
 	/** IAM actions required for the GetGraphqlApi API call. */
-	static readonly GET_GRAPHQL_API: string[] = ["appsync:GetGraphqlApi"];
+	static readonly opGetGraphqlApi: string[] = ["appsync:GetGraphqlApi"];
 	/** IAM actions required for the GetGraphqlApiEnvironmentVariables API call. */
-	static readonly GET_GRAPHQL_API_ENVIRONMENT_VARIABLES: string[] = [
+	static readonly opGetGraphqlApiEnvironmentVariables: string[] = [
 		"appsync:GetGraphqlApiEnvironmentVariables",
 	];
 	/** IAM actions required for the GetIntrospectionSchema API call. */
-	static readonly GET_INTROSPECTION_SCHEMA: string[] = [
+	static readonly opGetIntrospectionSchema: string[] = [
 		"appsync:GetIntrospectionSchema",
 	];
 	/** IAM actions required for the GetResolver API call. */
-	static readonly GET_RESOLVER: string[] = ["appsync:GetResolver"];
+	static readonly opGetResolver: string[] = ["appsync:GetResolver"];
 	/** IAM actions required for the GetSchemaCreationStatus API call. */
-	static readonly GET_SCHEMA_CREATION_STATUS: string[] = [
+	static readonly opGetSchemaCreationStatus: string[] = [
 		"appsync:GetSchemaCreationStatus",
 	];
 	/** IAM actions required for the GetSourceApiAssociation API call. */
-	static readonly GET_SOURCE_API_ASSOCIATION: string[] = [
+	static readonly opGetSourceApiAssociation: string[] = [
 		"appsync:GetSourceApiAssociation",
 	];
 	/** IAM actions required for the GetType API call. */
-	static readonly GET_TYPE: string[] = ["appsync:GetType"];
+	static readonly opGetType: string[] = ["appsync:GetType"];
 	/** IAM actions required for the ListApiKeys API call. */
-	static readonly LIST_API_KEYS: string[] = ["appsync:ListApiKeys"];
+	static readonly ListApiKeys: string[] = ["appsync:ListApiKeys"];
 	/** IAM actions required for the ListApis API call. */
-	static readonly LIST_APIS: string[] = ["appsync:ListApis"];
+	static readonly ListApis: string[] = ["appsync:ListApis"];
 	/** IAM actions required for the ListChannelNamespaces API call. */
-	static readonly LIST_CHANNEL_NAMESPACES: string[] = [
+	static readonly ListChannelNamespaces: string[] = [
 		"appsync:ListChannelNamespaces",
 	];
 	/** IAM actions required for the ListDataSources API call. */
-	static readonly LIST_DATA_SOURCES: string[] = ["appsync:ListDataSources"];
+	static readonly ListDataSources: string[] = ["appsync:ListDataSources"];
 	/** IAM actions required for the ListDomainNames API call. */
-	static readonly LIST_DOMAIN_NAMES: string[] = ["appsync:ListDomainNames"];
+	static readonly ListDomainNames: string[] = ["appsync:ListDomainNames"];
 	/** IAM actions required for the ListFunctions API call. */
-	static readonly LIST_FUNCTIONS: string[] = ["appsync:ListFunctions"];
+	static readonly ListFunctions: string[] = ["appsync:ListFunctions"];
 	/** IAM actions required for the ListGraphqlApis API call. */
-	static readonly LIST_GRAPHQL_APIS: string[] = ["appsync:ListGraphqlApis"];
+	static readonly ListGraphqlApis: string[] = ["appsync:ListGraphqlApis"];
 	/** IAM actions required for the ListResolvers API call. */
-	static readonly LIST_RESOLVERS: string[] = ["appsync:ListResolvers"];
+	static readonly ListResolvers: string[] = ["appsync:ListResolvers"];
 	/** IAM actions required for the ListResolversByFunction API call. */
-	static readonly LIST_RESOLVERS_BY_FUNCTION: string[] = [
+	static readonly ListResolversByFunction: string[] = [
 		"appsync:ListResolversByFunction",
 	];
 	/** IAM actions required for the ListSourceApiAssociations API call. */
-	static readonly LIST_SOURCE_API_ASSOCIATIONS: string[] = [
+	static readonly ListSourceApiAssociations: string[] = [
 		"appsync:ListSourceApiAssociations",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"appsync:ListTagsForResource",
 	];
 	/** IAM actions required for the ListTypes API call. */
-	static readonly LIST_TYPES: string[] = ["appsync:ListTypes"];
+	static readonly ListTypes: string[] = ["appsync:ListTypes"];
 	/** IAM actions required for the ListTypesByAssociation API call. */
-	static readonly LIST_TYPES_BY_ASSOCIATION: string[] = [
+	static readonly ListTypesByAssociation: string[] = [
 		"appsync:ListTypesByAssociation",
 	];
 	/** IAM actions required for the PutGraphqlApiEnvironmentVariables API call. */
-	static readonly PUT_GRAPHQL_API_ENVIRONMENT_VARIABLES: string[] = [
+	static readonly PutGraphqlApiEnvironmentVariables: string[] = [
 		"appsync:PutGraphqlApiEnvironmentVariables",
 	];
 	/** IAM actions required for the StartDataSourceIntrospection API call. */
-	static readonly START_DATA_SOURCE_INTROSPECTION: string[] = [
+	static readonly StartDataSourceIntrospection: string[] = [
 		"appsync:StartDataSourceIntrospection",
 	];
 	/** IAM actions required for the StartSchemaCreation API call. */
-	static readonly START_SCHEMA_CREATION: string[] = [
+	static readonly StartSchemaCreation: string[] = [
 		"appsync:StartSchemaCreation",
 	];
 	/** IAM actions required for the StartSchemaMerge API call. */
-	static readonly START_SCHEMA_MERGE: string[] = ["appsync:StartSchemaMerge"];
+	static readonly StartSchemaMerge: string[] = ["appsync:StartSchemaMerge"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["appsync:TagResource"];
+	static readonly TagResource: string[] = ["appsync:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["appsync:UntagResource"];
+	static readonly UntagResource: string[] = ["appsync:UntagResource"];
 	/** IAM actions required for the UpdateApi API call. */
-	static readonly UPDATE_API: string[] = ["iam:PassRole", "appsync:UpdateApi"];
+	static readonly UpdateApi: string[] = ["iam:PassRole", "appsync:UpdateApi"];
 	/** IAM actions required for the UpdateApiCache API call. */
-	static readonly UPDATE_API_CACHE: string[] = ["appsync:UpdateApiCache"];
+	static readonly UpdateApiCache: string[] = ["appsync:UpdateApiCache"];
 	/** IAM actions required for the UpdateApiKey API call. */
-	static readonly UPDATE_API_KEY: string[] = ["appsync:UpdateApiKey"];
+	static readonly UpdateApiKey: string[] = ["appsync:UpdateApiKey"];
 	/** IAM actions required for the UpdateChannelNamespace API call. */
-	static readonly UPDATE_CHANNEL_NAMESPACE: string[] = [
+	static readonly UpdateChannelNamespace: string[] = [
 		"appsync:UpdateChannelNamespace",
 	];
 	/** IAM actions required for the UpdateDataSource API call. */
-	static readonly UPDATE_DATA_SOURCE: string[] = [
+	static readonly UpdateDataSource: string[] = [
 		"iam:PassRole",
 		"appsync:UpdateDataSource",
 	];
 	/** IAM actions required for the UpdateDomainName API call. */
-	static readonly UPDATE_DOMAIN_NAME: string[] = ["appsync:UpdateDomainName"];
+	static readonly UpdateDomainName: string[] = ["appsync:UpdateDomainName"];
 	/** IAM actions required for the UpdateFunction API call. */
-	static readonly UPDATE_FUNCTION: string[] = ["appsync:UpdateFunction"];
+	static readonly UpdateFunction: string[] = ["appsync:UpdateFunction"];
 	/** IAM actions required for the UpdateGraphqlApi API call. */
-	static readonly UPDATE_GRAPHQL_API: string[] = [
+	static readonly UpdateGraphqlApi: string[] = [
 		"iam:PassRole",
 		"appsync:UpdateGraphqlApi",
 	];
 	/** IAM actions required for the UpdateResolver API call. */
-	static readonly UPDATE_RESOLVER: string[] = ["appsync:UpdateResolver"];
+	static readonly UpdateResolver: string[] = ["appsync:UpdateResolver"];
 	/** IAM actions required for the UpdateSourceApiAssociation API call. */
-	static readonly UPDATE_SOURCE_API_ASSOCIATION: string[] = [
+	static readonly UpdateSourceApiAssociation: string[] = [
 		"appsync:UpdateSourceApiAssociation",
 	];
 	/** IAM actions required for the UpdateType API call. */
-	static readonly UPDATE_TYPE: string[] = ["appsync:UpdateType"];
+	static readonly UpdateType: string[] = ["appsync:UpdateType"];
 }
 
 /**
@@ -1050,113 +1198,113 @@ export class AppsyncOperations {
  */
 export class AppsyncConditions {
 	/** Condition keys applicable to the CreateApi action. */
-	static readonly CREATE_API_CONDITION_KEYS: string[] = [
+	static readonly CreateApiConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateChannelNamespace action. */
-	static readonly CREATE_CHANNEL_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly CreateChannelNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDomainName action. */
-	static readonly CREATE_DOMAIN_NAME_CONDITION_KEYS: string[] = [
+	static readonly CreateDomainNameConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateGraphqlApi action. */
-	static readonly CREATE_GRAPHQL_API_CONDITION_KEYS: string[] = [
+	static readonly CreateGraphqlApiConditionKeys: string[] = [
 		"appsync:Visibility",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteApi action. */
-	static readonly DELETE_API_CONDITION_KEYS: string[] = [
+	static readonly DeleteApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteChannelNamespace action. */
-	static readonly DELETE_CHANNEL_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly DeleteChannelNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteDomainName action. */
-	static readonly DELETE_DOMAIN_NAME_CONDITION_KEYS: string[] = [
+	static readonly DeleteDomainNameConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteGraphqlApi action. */
-	static readonly DELETE_GRAPHQL_API_CONDITION_KEYS: string[] = [
+	static readonly DeleteGraphqlApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetApi action. */
-	static readonly GET_API_CONDITION_KEYS: string[] = [
+	static readonly actionGetApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetChannelNamespace action. */
-	static readonly GET_CHANNEL_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly actionGetChannelNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetDomainName action. */
-	static readonly GET_DOMAIN_NAME_CONDITION_KEYS: string[] = [
+	static readonly actionGetDomainNameConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetGraphqlApi action. */
-	static readonly GET_GRAPHQL_API_CONDITION_KEYS: string[] = [
+	static readonly actionGetGraphqlApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListApis action. */
-	static readonly LIST_APIS_CONDITION_KEYS: string[] = [
+	static readonly ListApisConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListChannelNamespaces action. */
-	static readonly LIST_CHANNEL_NAMESPACES_CONDITION_KEYS: string[] = [
+	static readonly ListChannelNamespacesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListDomainNames action. */
-	static readonly LIST_DOMAIN_NAMES_CONDITION_KEYS: string[] = [
+	static readonly ListDomainNamesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateApi action. */
-	static readonly UPDATE_API_CONDITION_KEYS: string[] = [
+	static readonly UpdateApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateChannelNamespace action. */
-	static readonly UPDATE_CHANNEL_NAMESPACE_CONDITION_KEYS: string[] = [
+	static readonly UpdateChannelNamespaceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateDomainName action. */
-	static readonly UPDATE_DOMAIN_NAME_CONDITION_KEYS: string[] = [
+	static readonly UpdateDomainNameConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the UpdateGraphqlApi action. */
-	static readonly UPDATE_GRAPHQL_API_CONDITION_KEYS: string[] = [
+	static readonly UpdateGraphqlApiConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: appsync:Visibility (String) */
 	static readonly VISIBILITY = "appsync:Visibility";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `appsync:Visibility`.

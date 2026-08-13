@@ -13,25 +13,25 @@ export class MarketplacecommerceanalyticsActions {
 	static readonly SERVICE_PREFIX = "marketplacecommerceanalytics";
 
 	/** [Write] marketplacecommerceanalytics:GenerateDataSet */
-	static readonly GENERATE_DATA_SET =
+	static readonly GenerateDataSet =
 		"marketplacecommerceanalytics:GenerateDataSet";
 	/** [Write] marketplacecommerceanalytics:StartSupportDataExport */
-	static readonly START_SUPPORT_DATA_EXPORT =
+	static readonly StartSupportDataExport =
 		"marketplacecommerceanalytics:StartSupportDataExport";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MarketplacecommerceanalyticsActions.GENERATE_DATA_SET,
-		MarketplacecommerceanalyticsActions.START_SUPPORT_DATA_EXPORT,
+	static readonly AllWriteActions: string[] = [
+		MarketplacecommerceanalyticsActions.GenerateDataSet,
+		MarketplacecommerceanalyticsActions.StartSupportDataExport,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
 /**
@@ -39,7 +39,7 @@ export class MarketplacecommerceanalyticsActions {
  */
 export class MarketplacecommerceanalyticsOperations {
 	/** IAM actions required for the GenerateDataSet API call. */
-	static readonly GENERATE_DATA_SET: string[] = [];
+	static readonly GenerateDataSet: string[] = [];
 	/** IAM actions required for the StartSupportDataExport API call. */
-	static readonly START_SUPPORT_DATA_EXPORT: string[] = [];
+	static readonly StartSupportDataExport: string[] = [];
 }

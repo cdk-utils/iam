@@ -13,261 +13,478 @@ export class CloudWatchActions {
 	static readonly SERVICE_PREFIX = "cloudwatch";
 
 	/** [Read] cloudwatch:BatchGetServiceLevelIndicatorReport */
-	static readonly BATCH_GET_SERVICE_LEVEL_INDICATOR_REPORT =
+	static readonly BatchGetServiceLevelIndicatorReport =
 		"cloudwatch:BatchGetServiceLevelIndicatorReport";
 	/** [Read] cloudwatch:BatchGetServiceLevelObjectiveBudgetReport */
-	static readonly BATCH_GET_SERVICE_LEVEL_OBJECTIVE_BUDGET_REPORT =
+	static readonly BatchGetServiceLevelObjectiveBudgetReport =
 		"cloudwatch:BatchGetServiceLevelObjectiveBudgetReport";
 	/** [Write] cloudwatch:CallWithBearerToken */
-	static readonly CALL_WITH_BEARER_TOKEN = "cloudwatch:CallWithBearerToken";
+	static readonly CallWithBearerToken = "cloudwatch:CallWithBearerToken";
 	/** [Write] cloudwatch:CreateServiceLevelObjective */
-	static readonly CREATE_SERVICE_LEVEL_OBJECTIVE =
+	static readonly CreateServiceLevelObjective =
 		"cloudwatch:CreateServiceLevelObjective";
 	/** [Write] cloudwatch:DeleteAlarmMuteRule */
-	static readonly DELETE_ALARM_MUTE_RULE = "cloudwatch:DeleteAlarmMuteRule";
+	static readonly DeleteAlarmMuteRule = "cloudwatch:DeleteAlarmMuteRule";
 	/** [Write] cloudwatch:DeleteAlarms */
-	static readonly DELETE_ALARMS = "cloudwatch:DeleteAlarms";
+	static readonly DeleteAlarms = "cloudwatch:DeleteAlarms";
 	/** [Write] cloudwatch:DeleteAnomalyDetector */
-	static readonly DELETE_ANOMALY_DETECTOR = "cloudwatch:DeleteAnomalyDetector";
+	static readonly DeleteAnomalyDetector = "cloudwatch:DeleteAnomalyDetector";
 	/** [Write] cloudwatch:DeleteDashboards */
-	static readonly DELETE_DASHBOARDS = "cloudwatch:DeleteDashboards";
+	static readonly DeleteDashboards = "cloudwatch:DeleteDashboards";
 	/** [Write] cloudwatch:DeleteInsightRules */
-	static readonly DELETE_INSIGHT_RULES = "cloudwatch:DeleteInsightRules";
+	static readonly DeleteInsightRules = "cloudwatch:DeleteInsightRules";
 	/** [Write] cloudwatch:DeleteMetricStream */
-	static readonly DELETE_METRIC_STREAM = "cloudwatch:DeleteMetricStream";
+	static readonly DeleteMetricStream = "cloudwatch:DeleteMetricStream";
 	/** [Write] cloudwatch:DeletePipelineRule */
-	static readonly DELETE_PIPELINE_RULE = "cloudwatch:DeletePipelineRule";
+	static readonly DeletePipelineRule = "cloudwatch:DeletePipelineRule";
 	/** [Write] cloudwatch:DeleteServiceLevelObjective */
-	static readonly DELETE_SERVICE_LEVEL_OBJECTIVE =
+	static readonly DeleteServiceLevelObjective =
 		"cloudwatch:DeleteServiceLevelObjective";
 	/** [Read] cloudwatch:DescribeAlarmHistory */
-	static readonly DESCRIBE_ALARM_HISTORY = "cloudwatch:DescribeAlarmHistory";
+	static readonly DescribeAlarmHistory = "cloudwatch:DescribeAlarmHistory";
 	/** [Read] cloudwatch:DescribeAlarms */
-	static readonly DESCRIBE_ALARMS = "cloudwatch:DescribeAlarms";
+	static readonly DescribeAlarms = "cloudwatch:DescribeAlarms";
 	/** [Read] cloudwatch:DescribeAlarmsForMetric */
-	static readonly DESCRIBE_ALARMS_FOR_METRIC =
+	static readonly DescribeAlarmsForMetric =
 		"cloudwatch:DescribeAlarmsForMetric";
 	/** [Read] cloudwatch:DescribeAnomalyDetectors */
-	static readonly DESCRIBE_ANOMALY_DETECTORS =
+	static readonly DescribeAnomalyDetectors =
 		"cloudwatch:DescribeAnomalyDetectors";
 	/** [Read] cloudwatch:DescribeInsightRules */
-	static readonly DESCRIBE_INSIGHT_RULES = "cloudwatch:DescribeInsightRules";
+	static readonly DescribeInsightRules = "cloudwatch:DescribeInsightRules";
 	/** [Write] cloudwatch:DisableAlarmActions */
-	static readonly DISABLE_ALARM_ACTIONS = "cloudwatch:DisableAlarmActions";
+	static readonly DisableAlarmActions = "cloudwatch:DisableAlarmActions";
 	/** [Write] cloudwatch:DisableInsightRules */
-	static readonly DISABLE_INSIGHT_RULES = "cloudwatch:DisableInsightRules";
+	static readonly DisableInsightRules = "cloudwatch:DisableInsightRules";
 	/** [Write] cloudwatch:EnableAlarmActions */
-	static readonly ENABLE_ALARM_ACTIONS = "cloudwatch:EnableAlarmActions";
+	static readonly EnableAlarmActions = "cloudwatch:EnableAlarmActions";
 	/** [Write] cloudwatch:EnableInsightRules */
-	static readonly ENABLE_INSIGHT_RULES = "cloudwatch:EnableInsightRules";
+	static readonly EnableInsightRules = "cloudwatch:EnableInsightRules";
 	/** [Write] cloudwatch:EnableTopologyDiscovery */
-	static readonly ENABLE_TOPOLOGY_DISCOVERY =
+	static readonly EnableTopologyDiscovery =
 		"cloudwatch:EnableTopologyDiscovery";
 	/** [Read] cloudwatch:GenerateQuery */
-	static readonly GENERATE_QUERY = "cloudwatch:GenerateQuery";
+	static readonly GenerateQuery = "cloudwatch:GenerateQuery";
 	/** [Read] cloudwatch:GenerateQueryResultsSummary */
-	static readonly GENERATE_QUERY_RESULTS_SUMMARY =
+	static readonly GenerateQueryResultsSummary =
 		"cloudwatch:GenerateQueryResultsSummary";
 	/** [Read] cloudwatch:GetAlarmMuteRule */
-	static readonly GET_ALARM_MUTE_RULE = "cloudwatch:GetAlarmMuteRule";
+	static readonly actionGetAlarmMuteRule = "cloudwatch:GetAlarmMuteRule";
 	/** [Read] cloudwatch:GetDashboard */
-	static readonly GET_DASHBOARD = "cloudwatch:GetDashboard";
+	static readonly actionGetDashboard = "cloudwatch:GetDashboard";
 	/** [Read] cloudwatch:GetDataset */
-	static readonly GET_DATASET = "cloudwatch:GetDataset";
+	static readonly actionGetDataset = "cloudwatch:GetDataset";
 	/** [Read] cloudwatch:GetInsightRuleReport */
-	static readonly GET_INSIGHT_RULE_REPORT = "cloudwatch:GetInsightRuleReport";
+	static readonly actionGetInsightRuleReport =
+		"cloudwatch:GetInsightRuleReport";
 	/** [Read] cloudwatch:GetMetricData */
-	static readonly GET_METRIC_DATA = "cloudwatch:GetMetricData";
+	static readonly actionGetMetricData = "cloudwatch:GetMetricData";
 	/** [Read] cloudwatch:GetMetricStatistics */
-	static readonly GET_METRIC_STATISTICS = "cloudwatch:GetMetricStatistics";
+	static readonly actionGetMetricStatistics = "cloudwatch:GetMetricStatistics";
 	/** [Read] cloudwatch:GetMetricStream */
-	static readonly GET_METRIC_STREAM = "cloudwatch:GetMetricStream";
+	static readonly actionGetMetricStream = "cloudwatch:GetMetricStream";
 	/** [Read] cloudwatch:GetMetricWidgetImage */
-	static readonly GET_METRIC_WIDGET_IMAGE = "cloudwatch:GetMetricWidgetImage";
+	static readonly actionGetMetricWidgetImage =
+		"cloudwatch:GetMetricWidgetImage";
 	/** [Read] cloudwatch:GetOTelEnrichment */
-	static readonly GET_O_TEL_ENRICHMENT = "cloudwatch:GetOTelEnrichment";
+	static readonly actionGetOTelEnrichment = "cloudwatch:GetOTelEnrichment";
 	/** [Read] cloudwatch:GetService */
-	static readonly GET_SERVICE = "cloudwatch:GetService";
+	static readonly actionGetService = "cloudwatch:GetService";
 	/** [Read] cloudwatch:GetServiceData */
-	static readonly GET_SERVICE_DATA = "cloudwatch:GetServiceData";
+	static readonly actionGetServiceData = "cloudwatch:GetServiceData";
 	/** [Read] cloudwatch:GetServiceLevelObjective */
-	static readonly GET_SERVICE_LEVEL_OBJECTIVE =
+	static readonly actionGetServiceLevelObjective =
 		"cloudwatch:GetServiceLevelObjective";
 	/** [Read] cloudwatch:GetTopologyDiscoveryStatus */
-	static readonly GET_TOPOLOGY_DISCOVERY_STATUS =
+	static readonly actionGetTopologyDiscoveryStatus =
 		"cloudwatch:GetTopologyDiscoveryStatus";
 	/** [Read] cloudwatch:GetTopologyMap */
-	static readonly GET_TOPOLOGY_MAP = "cloudwatch:GetTopologyMap";
+	static readonly actionGetTopologyMap = "cloudwatch:GetTopologyMap";
 	/** [Write] cloudwatch:Link */
-	static readonly LINK = "cloudwatch:Link";
+	static readonly Link = "cloudwatch:Link";
 	/** [List] cloudwatch:ListAlarmMuteRules */
-	static readonly LIST_ALARM_MUTE_RULES = "cloudwatch:ListAlarmMuteRules";
+	static readonly ListAlarmMuteRules = "cloudwatch:ListAlarmMuteRules";
 	/** [List] cloudwatch:ListDashboards */
-	static readonly LIST_DASHBOARDS = "cloudwatch:ListDashboards";
+	static readonly ListDashboards = "cloudwatch:ListDashboards";
 	/** [List] cloudwatch:ListEntitiesForMetric */
-	static readonly LIST_ENTITIES_FOR_METRIC = "cloudwatch:ListEntitiesForMetric";
+	static readonly ListEntitiesForMetric = "cloudwatch:ListEntitiesForMetric";
 	/** [Read] cloudwatch:ListManagedInsightRules */
-	static readonly LIST_MANAGED_INSIGHT_RULES =
+	static readonly ListManagedInsightRules =
 		"cloudwatch:ListManagedInsightRules";
 	/** [List] cloudwatch:ListMetricStreams */
-	static readonly LIST_METRIC_STREAMS = "cloudwatch:ListMetricStreams";
+	static readonly ListMetricStreams = "cloudwatch:ListMetricStreams";
 	/** [List] cloudwatch:ListMetrics */
-	static readonly LIST_METRICS = "cloudwatch:ListMetrics";
+	static readonly ListMetrics = "cloudwatch:ListMetrics";
 	/** [List] cloudwatch:ListServiceLevelObjectives */
-	static readonly LIST_SERVICE_LEVEL_OBJECTIVES =
+	static readonly ListServiceLevelObjectives =
 		"cloudwatch:ListServiceLevelObjectives";
 	/** [List] cloudwatch:ListServices */
-	static readonly LIST_SERVICES = "cloudwatch:ListServices";
+	static readonly ListServices = "cloudwatch:ListServices";
 	/** [List] cloudwatch:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cloudwatch:ListTagsForResource";
+	static readonly ListTagsForResource = "cloudwatch:ListTagsForResource";
 	/** [Write] cloudwatch:PutAlarmMuteRule */
-	static readonly PUT_ALARM_MUTE_RULE = "cloudwatch:PutAlarmMuteRule";
+	static readonly PutAlarmMuteRule = "cloudwatch:PutAlarmMuteRule";
 	/** [Write] cloudwatch:PutAnomalyDetector */
-	static readonly PUT_ANOMALY_DETECTOR = "cloudwatch:PutAnomalyDetector";
+	static readonly PutAnomalyDetector = "cloudwatch:PutAnomalyDetector";
 	/** [Write] cloudwatch:PutCompositeAlarm */
-	static readonly PUT_COMPOSITE_ALARM = "cloudwatch:PutCompositeAlarm";
+	static readonly PutCompositeAlarm = "cloudwatch:PutCompositeAlarm";
 	/** [Write] cloudwatch:PutDashboard */
-	static readonly PUT_DASHBOARD = "cloudwatch:PutDashboard";
+	static readonly PutDashboard = "cloudwatch:PutDashboard";
 	/** [Write] cloudwatch:PutInsightRule */
-	static readonly PUT_INSIGHT_RULE = "cloudwatch:PutInsightRule";
+	static readonly PutInsightRule = "cloudwatch:PutInsightRule";
 	/** [Write] cloudwatch:PutLogAlarm */
-	static readonly PUT_LOG_ALARM = "cloudwatch:PutLogAlarm";
+	static readonly PutLogAlarm = "cloudwatch:PutLogAlarm";
 	/** [Write] cloudwatch:PutManagedInsightRules */
-	static readonly PUT_MANAGED_INSIGHT_RULES =
-		"cloudwatch:PutManagedInsightRules";
+	static readonly PutManagedInsightRules = "cloudwatch:PutManagedInsightRules";
 	/** [Write] cloudwatch:PutMetricAlarm */
-	static readonly PUT_METRIC_ALARM = "cloudwatch:PutMetricAlarm";
+	static readonly PutMetricAlarm = "cloudwatch:PutMetricAlarm";
 	/** [Write] cloudwatch:PutMetricData */
-	static readonly PUT_METRIC_DATA = "cloudwatch:PutMetricData";
+	static readonly PutMetricData = "cloudwatch:PutMetricData";
 	/** [Write] cloudwatch:PutMetricStream */
-	static readonly PUT_METRIC_STREAM = "cloudwatch:PutMetricStream";
+	static readonly PutMetricStream = "cloudwatch:PutMetricStream";
 	/** [Write] cloudwatch:PutPipelineRule */
-	static readonly PUT_PIPELINE_RULE = "cloudwatch:PutPipelineRule";
+	static readonly PutPipelineRule = "cloudwatch:PutPipelineRule";
 	/** [Write] cloudwatch:SetAlarmState */
-	static readonly SET_ALARM_STATE = "cloudwatch:SetAlarmState";
+	static readonly actionSetAlarmState = "cloudwatch:SetAlarmState";
 	/** [Write] cloudwatch:StartMetricStreams */
-	static readonly START_METRIC_STREAMS = "cloudwatch:StartMetricStreams";
+	static readonly StartMetricStreams = "cloudwatch:StartMetricStreams";
 	/** [Write] cloudwatch:StartOTelEnrichment */
-	static readonly START_O_TEL_ENRICHMENT = "cloudwatch:StartOTelEnrichment";
+	static readonly StartOTelEnrichment = "cloudwatch:StartOTelEnrichment";
 	/** [Write] cloudwatch:StopMetricStreams */
-	static readonly STOP_METRIC_STREAMS = "cloudwatch:StopMetricStreams";
+	static readonly StopMetricStreams = "cloudwatch:StopMetricStreams";
 	/** [Write] cloudwatch:StopOTelEnrichment */
-	static readonly STOP_O_TEL_ENRICHMENT = "cloudwatch:StopOTelEnrichment";
+	static readonly StopOTelEnrichment = "cloudwatch:StopOTelEnrichment";
 	/** [Tagging] cloudwatch:TagResource */
-	static readonly TAG_RESOURCE = "cloudwatch:TagResource";
+	static readonly TagResource = "cloudwatch:TagResource";
 	/** [Tagging] cloudwatch:UntagResource */
-	static readonly UNTAG_RESOURCE = "cloudwatch:UntagResource";
+	static readonly UntagResource = "cloudwatch:UntagResource";
 	/** [Write] cloudwatch:UpdateServiceLevelObjective */
-	static readonly UPDATE_SERVICE_LEVEL_OBJECTIVE =
+	static readonly UpdateServiceLevelObjective =
 		"cloudwatch:UpdateServiceLevelObjective";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CloudWatchActions.BATCH_GET_SERVICE_LEVEL_INDICATOR_REPORT,
-		CloudWatchActions.BATCH_GET_SERVICE_LEVEL_OBJECTIVE_BUDGET_REPORT,
-		CloudWatchActions.DESCRIBE_ALARM_HISTORY,
-		CloudWatchActions.DESCRIBE_ALARMS,
-		CloudWatchActions.DESCRIBE_ALARMS_FOR_METRIC,
-		CloudWatchActions.DESCRIBE_ANOMALY_DETECTORS,
-		CloudWatchActions.DESCRIBE_INSIGHT_RULES,
-		CloudWatchActions.GENERATE_QUERY,
-		CloudWatchActions.GENERATE_QUERY_RESULTS_SUMMARY,
-		CloudWatchActions.GET_ALARM_MUTE_RULE,
-		CloudWatchActions.GET_DASHBOARD,
-		CloudWatchActions.GET_DATASET,
-		CloudWatchActions.GET_INSIGHT_RULE_REPORT,
-		CloudWatchActions.GET_METRIC_DATA,
-		CloudWatchActions.GET_METRIC_STATISTICS,
-		CloudWatchActions.GET_METRIC_STREAM,
-		CloudWatchActions.GET_METRIC_WIDGET_IMAGE,
-		CloudWatchActions.GET_O_TEL_ENRICHMENT,
-		CloudWatchActions.GET_SERVICE,
-		CloudWatchActions.GET_SERVICE_DATA,
-		CloudWatchActions.GET_SERVICE_LEVEL_OBJECTIVE,
-		CloudWatchActions.GET_TOPOLOGY_DISCOVERY_STATUS,
-		CloudWatchActions.GET_TOPOLOGY_MAP,
-		CloudWatchActions.LIST_MANAGED_INSIGHT_RULES,
+	static readonly AllReadActions: string[] = [
+		CloudWatchActions.BatchGetServiceLevelIndicatorReport,
+		CloudWatchActions.BatchGetServiceLevelObjectiveBudgetReport,
+		CloudWatchActions.DescribeAlarmHistory,
+		CloudWatchActions.DescribeAlarms,
+		CloudWatchActions.DescribeAlarmsForMetric,
+		CloudWatchActions.DescribeAnomalyDetectors,
+		CloudWatchActions.DescribeInsightRules,
+		CloudWatchActions.GenerateQuery,
+		CloudWatchActions.GenerateQueryResultsSummary,
+		CloudWatchActions.actionGetAlarmMuteRule,
+		CloudWatchActions.actionGetDashboard,
+		CloudWatchActions.actionGetDataset,
+		CloudWatchActions.actionGetInsightRuleReport,
+		CloudWatchActions.actionGetMetricData,
+		CloudWatchActions.actionGetMetricStatistics,
+		CloudWatchActions.actionGetMetricStream,
+		CloudWatchActions.actionGetMetricWidgetImage,
+		CloudWatchActions.actionGetOTelEnrichment,
+		CloudWatchActions.actionGetService,
+		CloudWatchActions.actionGetServiceData,
+		CloudWatchActions.actionGetServiceLevelObjective,
+		CloudWatchActions.actionGetTopologyDiscoveryStatus,
+		CloudWatchActions.actionGetTopologyMap,
+		CloudWatchActions.ListManagedInsightRules,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CloudWatchActions.CALL_WITH_BEARER_TOKEN,
-		CloudWatchActions.CREATE_SERVICE_LEVEL_OBJECTIVE,
-		CloudWatchActions.DELETE_ALARM_MUTE_RULE,
-		CloudWatchActions.DELETE_ALARMS,
-		CloudWatchActions.DELETE_ANOMALY_DETECTOR,
-		CloudWatchActions.DELETE_DASHBOARDS,
-		CloudWatchActions.DELETE_INSIGHT_RULES,
-		CloudWatchActions.DELETE_METRIC_STREAM,
-		CloudWatchActions.DELETE_PIPELINE_RULE,
-		CloudWatchActions.DELETE_SERVICE_LEVEL_OBJECTIVE,
-		CloudWatchActions.DISABLE_ALARM_ACTIONS,
-		CloudWatchActions.DISABLE_INSIGHT_RULES,
-		CloudWatchActions.ENABLE_ALARM_ACTIONS,
-		CloudWatchActions.ENABLE_INSIGHT_RULES,
-		CloudWatchActions.ENABLE_TOPOLOGY_DISCOVERY,
-		CloudWatchActions.LINK,
-		CloudWatchActions.PUT_ALARM_MUTE_RULE,
-		CloudWatchActions.PUT_ANOMALY_DETECTOR,
-		CloudWatchActions.PUT_COMPOSITE_ALARM,
-		CloudWatchActions.PUT_DASHBOARD,
-		CloudWatchActions.PUT_INSIGHT_RULE,
-		CloudWatchActions.PUT_LOG_ALARM,
-		CloudWatchActions.PUT_MANAGED_INSIGHT_RULES,
-		CloudWatchActions.PUT_METRIC_ALARM,
-		CloudWatchActions.PUT_METRIC_DATA,
-		CloudWatchActions.PUT_METRIC_STREAM,
-		CloudWatchActions.PUT_PIPELINE_RULE,
-		CloudWatchActions.SET_ALARM_STATE,
-		CloudWatchActions.START_METRIC_STREAMS,
-		CloudWatchActions.START_O_TEL_ENRICHMENT,
-		CloudWatchActions.STOP_METRIC_STREAMS,
-		CloudWatchActions.STOP_O_TEL_ENRICHMENT,
-		CloudWatchActions.UPDATE_SERVICE_LEVEL_OBJECTIVE,
+	static readonly AllWriteActions: string[] = [
+		CloudWatchActions.CallWithBearerToken,
+		CloudWatchActions.CreateServiceLevelObjective,
+		CloudWatchActions.DeleteAlarmMuteRule,
+		CloudWatchActions.DeleteAlarms,
+		CloudWatchActions.DeleteAnomalyDetector,
+		CloudWatchActions.DeleteDashboards,
+		CloudWatchActions.DeleteInsightRules,
+		CloudWatchActions.DeleteMetricStream,
+		CloudWatchActions.DeletePipelineRule,
+		CloudWatchActions.DeleteServiceLevelObjective,
+		CloudWatchActions.DisableAlarmActions,
+		CloudWatchActions.DisableInsightRules,
+		CloudWatchActions.EnableAlarmActions,
+		CloudWatchActions.EnableInsightRules,
+		CloudWatchActions.EnableTopologyDiscovery,
+		CloudWatchActions.Link,
+		CloudWatchActions.PutAlarmMuteRule,
+		CloudWatchActions.PutAnomalyDetector,
+		CloudWatchActions.PutCompositeAlarm,
+		CloudWatchActions.PutDashboard,
+		CloudWatchActions.PutInsightRule,
+		CloudWatchActions.PutLogAlarm,
+		CloudWatchActions.PutManagedInsightRules,
+		CloudWatchActions.PutMetricAlarm,
+		CloudWatchActions.PutMetricData,
+		CloudWatchActions.PutMetricStream,
+		CloudWatchActions.PutPipelineRule,
+		CloudWatchActions.actionSetAlarmState,
+		CloudWatchActions.StartMetricStreams,
+		CloudWatchActions.StartOTelEnrichment,
+		CloudWatchActions.StopMetricStreams,
+		CloudWatchActions.StopOTelEnrichment,
+		CloudWatchActions.UpdateServiceLevelObjective,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CloudWatchActions.LIST_ALARM_MUTE_RULES,
-		CloudWatchActions.LIST_DASHBOARDS,
-		CloudWatchActions.LIST_ENTITIES_FOR_METRIC,
-		CloudWatchActions.LIST_METRIC_STREAMS,
-		CloudWatchActions.LIST_METRICS,
-		CloudWatchActions.LIST_SERVICE_LEVEL_OBJECTIVES,
-		CloudWatchActions.LIST_SERVICES,
-		CloudWatchActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CloudWatchActions.ListAlarmMuteRules,
+		CloudWatchActions.ListDashboards,
+		CloudWatchActions.ListEntitiesForMetric,
+		CloudWatchActions.ListMetricStreams,
+		CloudWatchActions.ListMetrics,
+		CloudWatchActions.ListServiceLevelObjectives,
+		CloudWatchActions.ListServices,
+		CloudWatchActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CloudWatchActions.TAG_RESOURCE,
-		CloudWatchActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CloudWatchActions.TagResource,
+		CloudWatchActions.UntagResource,
 	];
 }
 
-const AlarmArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):alarm:(?<alarmName>[^:/?]+)$",
-);
-const AlarmMuteRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):alarm-mute-rule:(?<alarmMuteRuleName>[^:/?]+)$",
-);
-const DashboardArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch::(?<account>[^:]*):dashboard/(?<dashboardName>[^:/?]+)$",
-);
-const DatasetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):dataset/(?<datasetId>[^:/?]+)$",
-);
-const InsightRuleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):insight-rule/(?<insightRuleName>[^:/?]+)$",
-);
-const MetricStreamArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):metric-stream/(?<metricStreamName>[^:/?]+)$",
-);
-const ServiceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):service/(?<serviceName>[^:/?]+)-(?<uniqueAttributesHex>[^:/?]+)$",
-);
-const SloArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):slo/(?<sloName>[^:/?]+)$",
-);
+/**
+ * Properties for building a alarm ARN.
+ */
+export interface CloudWatchAlarmArnProps {
+	/** The AlarmName component of the ARN. */
+	readonly alarmName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a alarm ARN.
+ */
+export interface CloudWatchAlarmArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AlarmName component. */
+	readonly alarmName: string;
+}
+
+/**
+ * Properties for building a alarm-mute-rule ARN.
+ */
+export interface CloudWatchAlarmMuteRuleArnProps {
+	/** The AlarmMuteRuleName component of the ARN. */
+	readonly alarmMuteRuleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a alarm-mute-rule ARN.
+ */
+export interface CloudWatchAlarmMuteRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AlarmMuteRuleName component. */
+	readonly alarmMuteRuleName: string;
+}
+
+/**
+ * Properties for building a dashboard ARN.
+ */
+export interface CloudWatchDashboardArnProps {
+	/** The DashboardName component of the ARN. */
+	readonly dashboardName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dashboard ARN.
+ */
+export interface CloudWatchDashboardArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DashboardName component. */
+	readonly dashboardName: string;
+}
+
+/**
+ * Properties for building a dataset ARN.
+ */
+export interface CloudWatchDatasetArnProps {
+	/** The DatasetId component of the ARN. */
+	readonly datasetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataset ARN.
+ */
+export interface CloudWatchDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DatasetId component. */
+	readonly datasetId: string;
+}
+
+/**
+ * Properties for building a insight-rule ARN.
+ */
+export interface CloudWatchInsightRuleArnProps {
+	/** The InsightRuleName component of the ARN. */
+	readonly insightRuleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a insight-rule ARN.
+ */
+export interface CloudWatchInsightRuleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InsightRuleName component. */
+	readonly insightRuleName: string;
+}
+
+/**
+ * Properties for building a metric-stream ARN.
+ */
+export interface CloudWatchMetricStreamArnProps {
+	/** The MetricStreamName component of the ARN. */
+	readonly metricStreamName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a metric-stream ARN.
+ */
+export interface CloudWatchMetricStreamArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MetricStreamName component. */
+	readonly metricStreamName: string;
+}
+
+/**
+ * Properties for building a service ARN.
+ */
+export interface CloudWatchServiceArnProps {
+	/** The ServiceName component of the ARN. */
+	readonly serviceName: string;
+	/** The UniqueAttributesHex component of the ARN. */
+	readonly uniqueAttributesHex: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a service ARN.
+ */
+export interface CloudWatchServiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ServiceName component. */
+	readonly serviceName: string;
+	/** The UniqueAttributesHex component. */
+	readonly uniqueAttributesHex: string;
+}
+
+/**
+ * Properties for building a slo ARN.
+ */
+export interface CloudWatchSloArnProps {
+	/** The SloName component of the ARN. */
+	readonly sloName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a slo ARN.
+ */
+export interface CloudWatchSloArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SloName component. */
+	readonly sloName: string;
+}
+
+const AlarmArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):alarm:(?<alarmName>[^:/?]+)$/;
+const AlarmMuteRuleArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):alarm-mute-rule:(?<alarmMuteRuleName>[^:/?]+)$/;
+const DashboardArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch::(?<account>[^:]*):dashboard\/(?<dashboardName>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetId>[^:/?]+)$/;
+const InsightRuleArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):insight-rule\/(?<insightRuleName>[^:/?]+)$/;
+const MetricStreamArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):metric-stream\/(?<metricStreamName>[^:/?]+)$/;
+const ServiceArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceName>[^:/?]+)-(?<uniqueAttributesHex>[^:/?]+)$/;
+const SloArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):slo\/(?<sloName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudwatch resources.
@@ -276,16 +493,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the alarm resource.
 	 */
-	static alarm(props: {
-		/** The AlarmName component of the ARN. */
-		readonly alarmName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static alarm(props: CloudWatchAlarmArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:alarm:${props.alarmName}`;
 	}
 
@@ -300,12 +508,7 @@ export class CloudWatchResources {
 	 * Parses a alarm ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAlarmArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		alarmName: string;
-	} {
+	static parseAlarmArn(arn: string): CloudWatchAlarmArnComponents {
 		const match = AlarmArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid alarm ARN: ${arn}`);
@@ -321,16 +524,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the alarm-mute-rule resource.
 	 */
-	static alarmMuteRule(props: {
-		/** The AlarmMuteRuleName component of the ARN. */
-		readonly alarmMuteRuleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static alarmMuteRule(props: CloudWatchAlarmMuteRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:alarm-mute-rule:${props.alarmMuteRuleName}`;
 	}
 
@@ -345,12 +539,9 @@ export class CloudWatchResources {
 	 * Parses a alarm-mute-rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAlarmMuteRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		alarmMuteRuleName: string;
-	} {
+	static parseAlarmMuteRuleArn(
+		arn: string,
+	): CloudWatchAlarmMuteRuleArnComponents {
 		const match = AlarmMuteRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid alarm-mute-rule ARN: ${arn}`);
@@ -366,14 +557,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the dashboard resource.
 	 */
-	static dashboard(props: {
-		/** The DashboardName component of the ARN. */
-		readonly dashboardName: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dashboard(props: CloudWatchDashboardArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch::${props.account ?? "*"}:dashboard/${props.dashboardName}`;
 	}
 
@@ -388,11 +572,7 @@ export class CloudWatchResources {
 	 * Parses a dashboard ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDashboardArn(arn: string): {
-		partition: string;
-		account: string;
-		dashboardName: string;
-	} {
+	static parseDashboardArn(arn: string): CloudWatchDashboardArnComponents {
 		const match = DashboardArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dashboard ARN: ${arn}`);
@@ -407,16 +587,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the dataset resource.
 	 */
-	static dataset(props: {
-		/** The DatasetId component of the ARN. */
-		readonly datasetId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataset(props: CloudWatchDatasetArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:dataset/${props.datasetId}`;
 	}
 
@@ -431,12 +602,7 @@ export class CloudWatchResources {
 	 * Parses a dataset ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDatasetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		datasetId: string;
-	} {
+	static parseDatasetArn(arn: string): CloudWatchDatasetArnComponents {
 		const match = DatasetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid dataset ARN: ${arn}`);
@@ -452,16 +618,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the insight-rule resource.
 	 */
-	static insightRule(props: {
-		/** The InsightRuleName component of the ARN. */
-		readonly insightRuleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static insightRule(props: CloudWatchInsightRuleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:insight-rule/${props.insightRuleName}`;
 	}
 
@@ -476,12 +633,7 @@ export class CloudWatchResources {
 	 * Parses a insight-rule ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInsightRuleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		insightRuleName: string;
-	} {
+	static parseInsightRuleArn(arn: string): CloudWatchInsightRuleArnComponents {
 		const match = InsightRuleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid insight-rule ARN: ${arn}`);
@@ -497,16 +649,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the metric-stream resource.
 	 */
-	static metricStream(props: {
-		/** The MetricStreamName component of the ARN. */
-		readonly metricStreamName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static metricStream(props: CloudWatchMetricStreamArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:metric-stream/${props.metricStreamName}`;
 	}
 
@@ -521,12 +664,9 @@ export class CloudWatchResources {
 	 * Parses a metric-stream ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMetricStreamArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		metricStreamName: string;
-	} {
+	static parseMetricStreamArn(
+		arn: string,
+	): CloudWatchMetricStreamArnComponents {
 		const match = MetricStreamArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid metric-stream ARN: ${arn}`);
@@ -542,18 +682,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the service resource.
 	 */
-	static service(props: {
-		/** The ServiceName component of the ARN. */
-		readonly serviceName: string;
-		/** The UniqueAttributesHex component of the ARN. */
-		readonly uniqueAttributesHex: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static service(props: CloudWatchServiceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:service/${props.serviceName}-${props.uniqueAttributesHex}`;
 	}
 
@@ -568,13 +697,7 @@ export class CloudWatchResources {
 	 * Parses a service ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseServiceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		serviceName: string;
-		uniqueAttributesHex: string;
-	} {
+	static parseServiceArn(arn: string): CloudWatchServiceArnComponents {
 		const match = ServiceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid service ARN: ${arn}`);
@@ -591,16 +714,7 @@ export class CloudWatchResources {
 	/**
 	 * Builds an ARN for the slo resource.
 	 */
-	static slo(props: {
-		/** The SloName component of the ARN. */
-		readonly sloName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static slo(props: CloudWatchSloArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:slo/${props.sloName}`;
 	}
 
@@ -615,12 +729,7 @@ export class CloudWatchResources {
 	 * Parses a slo ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSloArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sloName: string;
-	} {
+	static parseSloArn(arn: string): CloudWatchSloArnComponents {
 		const match = SloArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid slo ARN: ${arn}`);
@@ -639,186 +748,186 @@ export class CloudWatchResources {
  */
 export class CloudWatchOperations {
 	/** IAM actions required for the AssociateDatasetKmsKey API call. */
-	static readonly ASSOCIATE_DATASET_KMS_KEY: string[] = [];
+	static readonly AssociateDatasetKmsKey: string[] = [];
 	/** IAM actions required for the DeleteAlarmMuteRule API call. */
-	static readonly DELETE_ALARM_MUTE_RULE: string[] = [
+	static readonly DeleteAlarmMuteRule: string[] = [
 		"cloudwatch:DeleteAlarmMuteRule",
 	];
 	/** IAM actions required for the DeleteAlarms API call. */
-	static readonly DELETE_ALARMS: string[] = ["cloudwatch:DeleteAlarms"];
+	static readonly DeleteAlarms: string[] = ["cloudwatch:DeleteAlarms"];
 	/** IAM actions required for the DeleteAnomalyDetector API call. */
-	static readonly DELETE_ANOMALY_DETECTOR: string[] = [
+	static readonly DeleteAnomalyDetector: string[] = [
 		"cloudwatch:DeleteAnomalyDetector",
 	];
 	/** IAM actions required for the DeleteDashboards API call. */
-	static readonly DELETE_DASHBOARDS: string[] = ["cloudwatch:DeleteDashboards"];
+	static readonly DeleteDashboards: string[] = ["cloudwatch:DeleteDashboards"];
 	/** IAM actions required for the DeleteInsightRules API call. */
-	static readonly DELETE_INSIGHT_RULES: string[] = [
+	static readonly DeleteInsightRules: string[] = [
 		"cloudwatch:DeleteInsightRules",
 	];
 	/** IAM actions required for the DeleteMetricStream API call. */
-	static readonly DELETE_METRIC_STREAM: string[] = [
+	static readonly DeleteMetricStream: string[] = [
 		"cloudwatch:DeleteMetricStream",
 	];
 	/** IAM actions required for the DescribeAlarmContributors API call. */
-	static readonly DESCRIBE_ALARM_CONTRIBUTORS: string[] = [];
+	static readonly DescribeAlarmContributors: string[] = [];
 	/** IAM actions required for the DescribeAlarmHistory API call. */
-	static readonly DESCRIBE_ALARM_HISTORY: string[] = [
+	static readonly DescribeAlarmHistory: string[] = [
 		"cloudwatch:DescribeAlarmHistory",
 	];
 	/** IAM actions required for the DescribeAlarms API call. */
-	static readonly DESCRIBE_ALARMS: string[] = ["cloudwatch:DescribeAlarms"];
+	static readonly DescribeAlarms: string[] = ["cloudwatch:DescribeAlarms"];
 	/** IAM actions required for the DescribeAlarmsForMetric API call. */
-	static readonly DESCRIBE_ALARMS_FOR_METRIC: string[] = [
+	static readonly DescribeAlarmsForMetric: string[] = [
 		"cloudwatch:DescribeAlarmsForMetric",
 	];
 	/** IAM actions required for the DescribeAnomalyDetectors API call. */
-	static readonly DESCRIBE_ANOMALY_DETECTORS: string[] = [
+	static readonly DescribeAnomalyDetectors: string[] = [
 		"cloudwatch:DescribeAnomalyDetectors",
 	];
 	/** IAM actions required for the DescribeInsightRules API call. */
-	static readonly DESCRIBE_INSIGHT_RULES: string[] = [
+	static readonly DescribeInsightRules: string[] = [
 		"cloudwatch:DescribeInsightRules",
 	];
 	/** IAM actions required for the DisableAlarmActions API call. */
-	static readonly DISABLE_ALARM_ACTIONS: string[] = [
+	static readonly DisableAlarmActions: string[] = [
 		"cloudwatch:DisableAlarmActions",
 	];
 	/** IAM actions required for the DisableInsightRules API call. */
-	static readonly DISABLE_INSIGHT_RULES: string[] = [
+	static readonly DisableInsightRules: string[] = [
 		"cloudwatch:DisableInsightRules",
 	];
 	/** IAM actions required for the DisassociateDatasetKmsKey API call. */
-	static readonly DISASSOCIATE_DATASET_KMS_KEY: string[] = [];
+	static readonly DisassociateDatasetKmsKey: string[] = [];
 	/** IAM actions required for the EnableAlarmActions API call. */
-	static readonly ENABLE_ALARM_ACTIONS: string[] = [
+	static readonly EnableAlarmActions: string[] = [
 		"cloudwatch:EnableAlarmActions",
 	];
 	/** IAM actions required for the EnableInsightRules API call. */
-	static readonly ENABLE_INSIGHT_RULES: string[] = [
+	static readonly EnableInsightRules: string[] = [
 		"cloudwatch:EnableInsightRules",
 	];
 	/** IAM actions required for the GetAlarmMuteRule API call. */
-	static readonly GET_ALARM_MUTE_RULE: string[] = [
+	static readonly opGetAlarmMuteRule: string[] = [
 		"cloudwatch:GetAlarmMuteRule",
 	];
 	/** IAM actions required for the GetDashboard API call. */
-	static readonly GET_DASHBOARD: string[] = ["cloudwatch:GetDashboard"];
+	static readonly opGetDashboard: string[] = ["cloudwatch:GetDashboard"];
 	/** IAM actions required for the GetDataset API call. */
-	static readonly GET_DATASET: string[] = ["cloudwatch:GetDataset"];
+	static readonly opGetDataset: string[] = ["cloudwatch:GetDataset"];
 	/** IAM actions required for the GetInsightRuleReport API call. */
-	static readonly GET_INSIGHT_RULE_REPORT: string[] = [
+	static readonly opGetInsightRuleReport: string[] = [
 		"cloudwatch:GetInsightRuleReport",
 	];
 	/** IAM actions required for the GetMetricData API call. */
-	static readonly GET_METRIC_DATA: string[] = ["cloudwatch:GetMetricData"];
+	static readonly opGetMetricData: string[] = ["cloudwatch:GetMetricData"];
 	/** IAM actions required for the GetMetricStatistics API call. */
-	static readonly GET_METRIC_STATISTICS: string[] = [
+	static readonly opGetMetricStatistics: string[] = [
 		"cloudwatch:GetMetricStatistics",
 	];
 	/** IAM actions required for the GetMetricStream API call. */
-	static readonly GET_METRIC_STREAM: string[] = ["cloudwatch:GetMetricStream"];
+	static readonly opGetMetricStream: string[] = ["cloudwatch:GetMetricStream"];
 	/** IAM actions required for the GetMetricWidgetImage API call. */
-	static readonly GET_METRIC_WIDGET_IMAGE: string[] = [
+	static readonly opGetMetricWidgetImage: string[] = [
 		"cloudwatch:GetMetricWidgetImage",
 	];
 	/** IAM actions required for the GetOTelEnrichment API call. */
-	static readonly GET_O_TEL_ENRICHMENT: string[] = [
+	static readonly opGetOTelEnrichment: string[] = [
 		"cloudwatch:GetOTelEnrichment",
 	];
 	/** IAM actions required for the ListAlarmMuteRules API call. */
-	static readonly LIST_ALARM_MUTE_RULES: string[] = [
+	static readonly ListAlarmMuteRules: string[] = [
 		"cloudwatch:ListAlarmMuteRules",
 	];
 	/** IAM actions required for the ListDashboards API call. */
-	static readonly LIST_DASHBOARDS: string[] = ["cloudwatch:ListDashboards"];
+	static readonly ListDashboards: string[] = ["cloudwatch:ListDashboards"];
 	/** IAM actions required for the ListManagedInsightRules API call. */
-	static readonly LIST_MANAGED_INSIGHT_RULES: string[] = [
+	static readonly ListManagedInsightRules: string[] = [
 		"cloudwatch:ListManagedInsightRules",
 	];
 	/** IAM actions required for the ListMetricStreams API call. */
-	static readonly LIST_METRIC_STREAMS: string[] = [
+	static readonly ListMetricStreams: string[] = [
 		"cloudwatch:ListMetricStreams",
 	];
 	/** IAM actions required for the ListMetrics API call. */
-	static readonly LIST_METRICS: string[] = ["cloudwatch:ListMetrics"];
+	static readonly ListMetrics: string[] = ["cloudwatch:ListMetrics"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"cloudwatch:ListTagsForResource",
 		"oam:ListTagsForResource",
 	];
 	/** IAM actions required for the PutAlarmMuteRule API call. */
-	static readonly PUT_ALARM_MUTE_RULE: string[] = [
+	static readonly PutAlarmMuteRule: string[] = [
 		"cloudwatch:PutAlarmMuteRule",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutAnomalyDetector API call. */
-	static readonly PUT_ANOMALY_DETECTOR: string[] = [
+	static readonly PutAnomalyDetector: string[] = [
 		"cloudwatch:PutAnomalyDetector",
 	];
 	/** IAM actions required for the PutCompositeAlarm API call. */
-	static readonly PUT_COMPOSITE_ALARM: string[] = [
+	static readonly PutCompositeAlarm: string[] = [
 		"cloudwatch:PutCompositeAlarm",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutDashboard API call. */
-	static readonly PUT_DASHBOARD: string[] = [
+	static readonly PutDashboard: string[] = [
 		"cloudwatch:PutDashboard",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutInsightRule API call. */
-	static readonly PUT_INSIGHT_RULE: string[] = [
+	static readonly PutInsightRule: string[] = [
 		"cloudwatch:PutInsightRule",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutLogAlarm API call. */
-	static readonly PUT_LOG_ALARM: string[] = [
+	static readonly PutLogAlarm: string[] = [
 		"iam:PassRole",
 		"cloudwatch:PutLogAlarm",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutManagedInsightRules API call. */
-	static readonly PUT_MANAGED_INSIGHT_RULES: string[] = [
+	static readonly PutManagedInsightRules: string[] = [
 		"cloudwatch:PutManagedInsightRules",
 	];
 	/** IAM actions required for the PutMetricAlarm API call. */
-	static readonly PUT_METRIC_ALARM: string[] = [
+	static readonly PutMetricAlarm: string[] = [
 		"cloudwatch:PutMetricAlarm",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutMetricData API call. */
-	static readonly PUT_METRIC_DATA: string[] = ["cloudwatch:PutMetricData"];
+	static readonly PutMetricData: string[] = ["cloudwatch:PutMetricData"];
 	/** IAM actions required for the PutMetricStream API call. */
-	static readonly PUT_METRIC_STREAM: string[] = [
+	static readonly PutMetricStream: string[] = [
 		"iam:PassRole",
 		"cloudwatch:PutMetricStream",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the SetAlarmState API call. */
-	static readonly SET_ALARM_STATE: string[] = ["cloudwatch:SetAlarmState"];
+	static readonly opSetAlarmState: string[] = ["cloudwatch:SetAlarmState"];
 	/** IAM actions required for the StartMetricStreams API call. */
-	static readonly START_METRIC_STREAMS: string[] = [
+	static readonly StartMetricStreams: string[] = [
 		"cloudwatch:StartMetricStreams",
 	];
 	/** IAM actions required for the StartOTelEnrichment API call. */
-	static readonly START_O_TEL_ENRICHMENT: string[] = [
+	static readonly StartOTelEnrichment: string[] = [
 		"cloudwatch:StartOTelEnrichment",
 	];
 	/** IAM actions required for the StopMetricStreams API call. */
-	static readonly STOP_METRIC_STREAMS: string[] = [
+	static readonly StopMetricStreams: string[] = [
 		"cloudwatch:StopMetricStreams",
 	];
 	/** IAM actions required for the StopOTelEnrichment API call. */
-	static readonly STOP_O_TEL_ENRICHMENT: string[] = [
+	static readonly StopOTelEnrichment: string[] = [
 		"cloudwatch:StopOTelEnrichment",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"cloudwatch:TagResource",
 		"oam:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"cloudwatch:UntagResource",
 		"oam:UntagResource",
 	];
@@ -829,83 +938,83 @@ export class CloudWatchOperations {
  */
 export class CloudWatchConditions {
 	/** Condition keys applicable to the CreateServiceLevelObjective action. */
-	static readonly CREATE_SERVICE_LEVEL_OBJECTIVE_CONDITION_KEYS: string[] = [
+	static readonly CreateServiceLevelObjectiveConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetDataset action. */
-	static readonly GET_DATASET_CONDITION_KEYS: string[] = [
+	static readonly actionGetDatasetConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListManagedInsightRules action. */
-	static readonly LIST_MANAGED_INSIGHT_RULES_CONDITION_KEYS: string[] = [
+	static readonly ListManagedInsightRulesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:requestManagedResourceARNs",
 	];
 	/** Condition keys applicable to the PutAlarmMuteRule action. */
-	static readonly PUT_ALARM_MUTE_RULE_CONDITION_KEYS: string[] = [
+	static readonly PutAlarmMuteRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutCompositeAlarm action. */
-	static readonly PUT_COMPOSITE_ALARM_CONDITION_KEYS: string[] = [
+	static readonly PutCompositeAlarmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
 	];
 	/** Condition keys applicable to the PutDashboard action. */
-	static readonly PUT_DASHBOARD_CONDITION_KEYS: string[] = [
+	static readonly PutDashboardConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the PutInsightRule action. */
-	static readonly PUT_INSIGHT_RULE_CONDITION_KEYS: string[] = [
+	static readonly PutInsightRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:requestInsightRuleLogGroups",
 	];
 	/** Condition keys applicable to the PutLogAlarm action. */
-	static readonly PUT_LOG_ALARM_CONDITION_KEYS: string[] = [
+	static readonly PutLogAlarmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
 	];
 	/** Condition keys applicable to the PutManagedInsightRules action. */
-	static readonly PUT_MANAGED_INSIGHT_RULES_CONDITION_KEYS: string[] = [
+	static readonly PutManagedInsightRulesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:requestManagedResourceARNs",
 	];
 	/** Condition keys applicable to the PutMetricAlarm action. */
-	static readonly PUT_METRIC_ALARM_CONDITION_KEYS: string[] = [
+	static readonly PutMetricAlarmConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudwatch:AlarmActions",
 	];
 	/** Condition keys applicable to the PutMetricData action. */
-	static readonly PUT_METRIC_DATA_CONDITION_KEYS: string[] = [
+	static readonly PutMetricDataConditionKeys: string[] = [
 		"cloudwatch:namespace",
 	];
 	/** Condition keys applicable to the PutMetricStream action. */
-	static readonly PUT_METRIC_STREAM_CONDITION_KEYS: string[] = [
+	static readonly PutMetricStreamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: cloudwatch:AlarmActions (ArrayOfString) */
 	static readonly ALARM_ACTIONS = "cloudwatch:AlarmActions";
 	/** Condition key: cloudwatch:namespace (String) */

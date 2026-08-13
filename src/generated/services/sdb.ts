@@ -13,66 +13,124 @@ export class SdbActions {
 	static readonly SERVICE_PREFIX = "sdb";
 
 	/** [Write] sdb:BatchDeleteAttributes */
-	static readonly BATCH_DELETE_ATTRIBUTES = "sdb:BatchDeleteAttributes";
+	static readonly BatchDeleteAttributes = "sdb:BatchDeleteAttributes";
 	/** [Write] sdb:BatchPutAttributes */
-	static readonly BATCH_PUT_ATTRIBUTES = "sdb:BatchPutAttributes";
+	static readonly BatchPutAttributes = "sdb:BatchPutAttributes";
 	/** [Write] sdb:CreateDomain */
-	static readonly CREATE_DOMAIN = "sdb:CreateDomain";
+	static readonly CreateDomain = "sdb:CreateDomain";
 	/** [Write] sdb:DeleteAttributes */
-	static readonly DELETE_ATTRIBUTES = "sdb:DeleteAttributes";
+	static readonly DeleteAttributes = "sdb:DeleteAttributes";
 	/** [Write] sdb:DeleteDomain */
-	static readonly DELETE_DOMAIN = "sdb:DeleteDomain";
+	static readonly DeleteDomain = "sdb:DeleteDomain";
 	/** [Read] sdb:DomainMetadata */
-	static readonly DOMAIN_METADATA = "sdb:DomainMetadata";
+	static readonly DomainMetadata = "sdb:DomainMetadata";
 	/** [Read] sdb:GetAttributes */
-	static readonly GET_ATTRIBUTES = "sdb:GetAttributes";
+	static readonly actionGetAttributes = "sdb:GetAttributes";
 	/** [Read] sdb:GetExport */
-	static readonly GET_EXPORT = "sdb:GetExport";
+	static readonly actionGetExport = "sdb:GetExport";
 	/** [List] sdb:ListDomains */
-	static readonly LIST_DOMAINS = "sdb:ListDomains";
+	static readonly ListDomains = "sdb:ListDomains";
 	/** [List] sdb:ListExports */
-	static readonly LIST_EXPORTS = "sdb:ListExports";
+	static readonly ListExports = "sdb:ListExports";
 	/** [Write] sdb:PutAttributes */
-	static readonly PUT_ATTRIBUTES = "sdb:PutAttributes";
+	static readonly PutAttributes = "sdb:PutAttributes";
 	/** [Read] sdb:Select */
-	static readonly SELECT = "sdb:Select";
+	static readonly Select = "sdb:Select";
 	/** [Write] sdb:StartDomainExport */
-	static readonly START_DOMAIN_EXPORT = "sdb:StartDomainExport";
+	static readonly StartDomainExport = "sdb:StartDomainExport";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SdbActions.DOMAIN_METADATA,
-		SdbActions.GET_ATTRIBUTES,
-		SdbActions.GET_EXPORT,
-		SdbActions.SELECT,
+	static readonly AllReadActions: string[] = [
+		SdbActions.DomainMetadata,
+		SdbActions.actionGetAttributes,
+		SdbActions.actionGetExport,
+		SdbActions.Select,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		SdbActions.BATCH_DELETE_ATTRIBUTES,
-		SdbActions.BATCH_PUT_ATTRIBUTES,
-		SdbActions.CREATE_DOMAIN,
-		SdbActions.DELETE_ATTRIBUTES,
-		SdbActions.DELETE_DOMAIN,
-		SdbActions.PUT_ATTRIBUTES,
-		SdbActions.START_DOMAIN_EXPORT,
+	static readonly AllWriteActions: string[] = [
+		SdbActions.BatchDeleteAttributes,
+		SdbActions.BatchPutAttributes,
+		SdbActions.CreateDomain,
+		SdbActions.DeleteAttributes,
+		SdbActions.DeleteDomain,
+		SdbActions.PutAttributes,
+		SdbActions.StartDomainExport,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		SdbActions.LIST_DOMAINS,
-		SdbActions.LIST_EXPORTS,
+	static readonly AllListActions: string[] = [
+		SdbActions.ListDomains,
+		SdbActions.ListExports,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const DomainArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sdb:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainName>[^:/?]+)$",
-);
-const ExportArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):sdb:(?<region>[^:]*):(?<account>[^:]*):domain/(?<domainName>[^:/?]+)/export/(?<exportUuid>[^:/?]+)$",
-);
+/**
+ * Properties for building a domain ARN.
+ */
+export interface SdbDomainArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a domain ARN.
+ */
+export interface SdbDomainArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+}
+
+/**
+ * Properties for building a export ARN.
+ */
+export interface SdbExportArnProps {
+	/** The DomainName component of the ARN. */
+	readonly domainName: string;
+	/** The ExportUUID component of the ARN. */
+	readonly exportUuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a export ARN.
+ */
+export interface SdbExportArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainName component. */
+	readonly domainName: string;
+	/** The ExportUUID component. */
+	readonly exportUuid: string;
+}
+
+const DomainArnRegex =
+	/^arn:(?<partition>[^:]+):sdb:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainName>[^:/?]+)$/;
+const ExportArnRegex =
+	/^arn:(?<partition>[^:]+):sdb:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainName>[^:/?]+)\/export\/(?<exportUuid>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for sdb resources.
@@ -81,16 +139,7 @@ export class SdbResources {
 	/**
 	 * Builds an ARN for the domain resource.
 	 */
-	static domain(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static domain(props: SdbDomainArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sdb:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainName}`;
 	}
 
@@ -105,12 +154,7 @@ export class SdbResources {
 	 * Parses a domain ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDomainArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-	} {
+	static parseDomainArn(arn: string): SdbDomainArnComponents {
 		const match = DomainArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid domain ARN: ${arn}`);
@@ -126,18 +170,7 @@ export class SdbResources {
 	/**
 	 * Builds an ARN for the export resource.
 	 */
-	static export(props: {
-		/** The DomainName component of the ARN. */
-		readonly domainName: string;
-		/** The ExportUUID component of the ARN. */
-		readonly exportUuid: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static export(props: SdbExportArnProps): string {
 		return `arn:${props.partition ?? "aws"}:sdb:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainName}/export/${props.exportUuid}`;
 	}
 
@@ -152,13 +185,7 @@ export class SdbResources {
 	 * Parses a export ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		domainName: string;
-		exportUuid: string;
-	} {
+	static parseExportArn(arn: string): SdbExportArnComponents {
 		const match = ExportArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid export ARN: ${arn}`);
@@ -178,29 +205,29 @@ export class SdbResources {
  */
 export class SdbOperations {
 	/** IAM actions required for the BatchDeleteAttributes API call. */
-	static readonly BATCH_DELETE_ATTRIBUTES: string[] = [];
+	static readonly BatchDeleteAttributes: string[] = [];
 	/** IAM actions required for the BatchPutAttributes API call. */
-	static readonly BATCH_PUT_ATTRIBUTES: string[] = [];
+	static readonly BatchPutAttributes: string[] = [];
 	/** IAM actions required for the CreateDomain API call. */
-	static readonly CREATE_DOMAIN: string[] = [];
+	static readonly CreateDomain: string[] = [];
 	/** IAM actions required for the DeleteAttributes API call. */
-	static readonly DELETE_ATTRIBUTES: string[] = [];
+	static readonly DeleteAttributes: string[] = [];
 	/** IAM actions required for the DeleteDomain API call. */
-	static readonly DELETE_DOMAIN: string[] = [];
+	static readonly DeleteDomain: string[] = [];
 	/** IAM actions required for the DomainMetadata API call. */
-	static readonly DOMAIN_METADATA: string[] = [];
+	static readonly DomainMetadata: string[] = [];
 	/** IAM actions required for the GetAttributes API call. */
-	static readonly GET_ATTRIBUTES: string[] = [];
+	static readonly opGetAttributes: string[] = [];
 	/** IAM actions required for the GetExport API call. */
-	static readonly GET_EXPORT: string[] = ["sdb:GetExport"];
+	static readonly opGetExport: string[] = ["sdb:GetExport"];
 	/** IAM actions required for the ListDomains API call. */
-	static readonly LIST_DOMAINS: string[] = [];
+	static readonly ListDomains: string[] = [];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["sdb:ListExports"];
+	static readonly ListExports: string[] = ["sdb:ListExports"];
 	/** IAM actions required for the PutAttributes API call. */
-	static readonly PUT_ATTRIBUTES: string[] = [];
+	static readonly PutAttributes: string[] = [];
 	/** IAM actions required for the Select API call. */
-	static readonly SELECT: string[] = [];
+	static readonly Select: string[] = [];
 	/** IAM actions required for the StartDomainExport API call. */
-	static readonly START_DOMAIN_EXPORT: string[] = ["sdb:StartDomainExport"];
+	static readonly StartDomainExport: string[] = ["sdb:StartDomainExport"];
 }

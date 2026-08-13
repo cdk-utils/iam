@@ -13,151 +13,175 @@ export class KinesisanalyticsActions {
 	static readonly SERVICE_PREFIX = "kinesisanalytics";
 
 	/** [Write] kinesisanalytics:AddApplicationCloudWatchLoggingOption */
-	static readonly ADD_APPLICATION_CLOUD_WATCH_LOGGING_OPTION =
+	static readonly AddApplicationCloudWatchLoggingOption =
 		"kinesisanalytics:AddApplicationCloudWatchLoggingOption";
 	/** [Write] kinesisanalytics:AddApplicationInput */
-	static readonly ADD_APPLICATION_INPUT =
-		"kinesisanalytics:AddApplicationInput";
+	static readonly AddApplicationInput = "kinesisanalytics:AddApplicationInput";
 	/** [Write] kinesisanalytics:AddApplicationInputProcessingConfiguration */
-	static readonly ADD_APPLICATION_INPUT_PROCESSING_CONFIGURATION =
+	static readonly AddApplicationInputProcessingConfiguration =
 		"kinesisanalytics:AddApplicationInputProcessingConfiguration";
 	/** [Write] kinesisanalytics:AddApplicationOutput */
-	static readonly ADD_APPLICATION_OUTPUT =
+	static readonly AddApplicationOutput =
 		"kinesisanalytics:AddApplicationOutput";
 	/** [Write] kinesisanalytics:AddApplicationReferenceDataSource */
-	static readonly ADD_APPLICATION_REFERENCE_DATA_SOURCE =
+	static readonly AddApplicationReferenceDataSource =
 		"kinesisanalytics:AddApplicationReferenceDataSource";
 	/** [Write] kinesisanalytics:AddApplicationVpcConfiguration */
-	static readonly ADD_APPLICATION_VPC_CONFIGURATION =
+	static readonly AddApplicationVpcConfiguration =
 		"kinesisanalytics:AddApplicationVpcConfiguration";
 	/** [Write] kinesisanalytics:CreateApplication */
-	static readonly CREATE_APPLICATION = "kinesisanalytics:CreateApplication";
+	static readonly CreateApplication = "kinesisanalytics:CreateApplication";
 	/** [Read] kinesisanalytics:CreateApplicationPresignedUrl */
-	static readonly CREATE_APPLICATION_PRESIGNED_URL =
+	static readonly CreateApplicationPresignedUrl =
 		"kinesisanalytics:CreateApplicationPresignedUrl";
 	/** [Write] kinesisanalytics:CreateApplicationSnapshot */
-	static readonly CREATE_APPLICATION_SNAPSHOT =
+	static readonly CreateApplicationSnapshot =
 		"kinesisanalytics:CreateApplicationSnapshot";
 	/** [Write] kinesisanalytics:DeleteApplication */
-	static readonly DELETE_APPLICATION = "kinesisanalytics:DeleteApplication";
+	static readonly DeleteApplication = "kinesisanalytics:DeleteApplication";
 	/** [Write] kinesisanalytics:DeleteApplicationCloudWatchLoggingOption */
-	static readonly DELETE_APPLICATION_CLOUD_WATCH_LOGGING_OPTION =
+	static readonly DeleteApplicationCloudWatchLoggingOption =
 		"kinesisanalytics:DeleteApplicationCloudWatchLoggingOption";
 	/** [Write] kinesisanalytics:DeleteApplicationInputProcessingConfiguration */
-	static readonly DELETE_APPLICATION_INPUT_PROCESSING_CONFIGURATION =
+	static readonly DeleteApplicationInputProcessingConfiguration =
 		"kinesisanalytics:DeleteApplicationInputProcessingConfiguration";
 	/** [Write] kinesisanalytics:DeleteApplicationOutput */
-	static readonly DELETE_APPLICATION_OUTPUT =
+	static readonly DeleteApplicationOutput =
 		"kinesisanalytics:DeleteApplicationOutput";
 	/** [Write] kinesisanalytics:DeleteApplicationReferenceDataSource */
-	static readonly DELETE_APPLICATION_REFERENCE_DATA_SOURCE =
+	static readonly DeleteApplicationReferenceDataSource =
 		"kinesisanalytics:DeleteApplicationReferenceDataSource";
 	/** [Write] kinesisanalytics:DeleteApplicationSnapshot */
-	static readonly DELETE_APPLICATION_SNAPSHOT =
+	static readonly DeleteApplicationSnapshot =
 		"kinesisanalytics:DeleteApplicationSnapshot";
 	/** [Write] kinesisanalytics:DeleteApplicationVpcConfiguration */
-	static readonly DELETE_APPLICATION_VPC_CONFIGURATION =
+	static readonly DeleteApplicationVpcConfiguration =
 		"kinesisanalytics:DeleteApplicationVpcConfiguration";
 	/** [Read] kinesisanalytics:DescribeApplication */
-	static readonly DESCRIBE_APPLICATION = "kinesisanalytics:DescribeApplication";
+	static readonly DescribeApplication = "kinesisanalytics:DescribeApplication";
 	/** [Read] kinesisanalytics:DescribeApplicationOperation */
-	static readonly DESCRIBE_APPLICATION_OPERATION =
+	static readonly DescribeApplicationOperation =
 		"kinesisanalytics:DescribeApplicationOperation";
 	/** [Read] kinesisanalytics:DescribeApplicationSnapshot */
-	static readonly DESCRIBE_APPLICATION_SNAPSHOT =
+	static readonly DescribeApplicationSnapshot =
 		"kinesisanalytics:DescribeApplicationSnapshot";
 	/** [Read] kinesisanalytics:DescribeApplicationVersion */
-	static readonly DESCRIBE_APPLICATION_VERSION =
+	static readonly DescribeApplicationVersion =
 		"kinesisanalytics:DescribeApplicationVersion";
 	/** [Read] kinesisanalytics:DiscoverInputSchema */
-	static readonly DISCOVER_INPUT_SCHEMA =
-		"kinesisanalytics:DiscoverInputSchema";
+	static readonly DiscoverInputSchema = "kinesisanalytics:DiscoverInputSchema";
 	/** [Read] kinesisanalytics:GetApplicationState */
-	static readonly GET_APPLICATION_STATE =
+	static readonly actionGetApplicationState =
 		"kinesisanalytics:GetApplicationState";
 	/** [Read] kinesisanalytics:ListApplicationOperations */
-	static readonly LIST_APPLICATION_OPERATIONS =
+	static readonly ListApplicationOperations =
 		"kinesisanalytics:ListApplicationOperations";
 	/** [Read] kinesisanalytics:ListApplicationSnapshots */
-	static readonly LIST_APPLICATION_SNAPSHOTS =
+	static readonly ListApplicationSnapshots =
 		"kinesisanalytics:ListApplicationSnapshots";
 	/** [Read] kinesisanalytics:ListApplicationVersions */
-	static readonly LIST_APPLICATION_VERSIONS =
+	static readonly ListApplicationVersions =
 		"kinesisanalytics:ListApplicationVersions";
 	/** [List] kinesisanalytics:ListApplications */
-	static readonly LIST_APPLICATIONS = "kinesisanalytics:ListApplications";
+	static readonly ListApplications = "kinesisanalytics:ListApplications";
 	/** [Read] kinesisanalytics:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"kinesisanalytics:ListTagsForResource";
+	static readonly ListTagsForResource = "kinesisanalytics:ListTagsForResource";
 	/** [Write] kinesisanalytics:RollbackApplication */
-	static readonly ROLLBACK_APPLICATION = "kinesisanalytics:RollbackApplication";
+	static readonly RollbackApplication = "kinesisanalytics:RollbackApplication";
 	/** [Write] kinesisanalytics:StartApplication */
-	static readonly START_APPLICATION = "kinesisanalytics:StartApplication";
+	static readonly StartApplication = "kinesisanalytics:StartApplication";
 	/** [Write] kinesisanalytics:StopApplication */
-	static readonly STOP_APPLICATION = "kinesisanalytics:StopApplication";
+	static readonly StopApplication = "kinesisanalytics:StopApplication";
 	/** [Tagging] kinesisanalytics:TagResource */
-	static readonly TAG_RESOURCE = "kinesisanalytics:TagResource";
+	static readonly TagResource = "kinesisanalytics:TagResource";
 	/** [Tagging] kinesisanalytics:UntagResource */
-	static readonly UNTAG_RESOURCE = "kinesisanalytics:UntagResource";
+	static readonly UntagResource = "kinesisanalytics:UntagResource";
 	/** [Write] kinesisanalytics:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "kinesisanalytics:UpdateApplication";
+	static readonly UpdateApplication = "kinesisanalytics:UpdateApplication";
 	/** [Write] kinesisanalytics:UpdateApplicationMaintenanceConfiguration */
-	static readonly UPDATE_APPLICATION_MAINTENANCE_CONFIGURATION =
+	static readonly UpdateApplicationMaintenanceConfiguration =
 		"kinesisanalytics:UpdateApplicationMaintenanceConfiguration";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KinesisanalyticsActions.CREATE_APPLICATION_PRESIGNED_URL,
-		KinesisanalyticsActions.DESCRIBE_APPLICATION,
-		KinesisanalyticsActions.DESCRIBE_APPLICATION_OPERATION,
-		KinesisanalyticsActions.DESCRIBE_APPLICATION_SNAPSHOT,
-		KinesisanalyticsActions.DESCRIBE_APPLICATION_VERSION,
-		KinesisanalyticsActions.DISCOVER_INPUT_SCHEMA,
-		KinesisanalyticsActions.GET_APPLICATION_STATE,
-		KinesisanalyticsActions.LIST_APPLICATION_OPERATIONS,
-		KinesisanalyticsActions.LIST_APPLICATION_SNAPSHOTS,
-		KinesisanalyticsActions.LIST_APPLICATION_VERSIONS,
-		KinesisanalyticsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		KinesisanalyticsActions.CreateApplicationPresignedUrl,
+		KinesisanalyticsActions.DescribeApplication,
+		KinesisanalyticsActions.DescribeApplicationOperation,
+		KinesisanalyticsActions.DescribeApplicationSnapshot,
+		KinesisanalyticsActions.DescribeApplicationVersion,
+		KinesisanalyticsActions.DiscoverInputSchema,
+		KinesisanalyticsActions.actionGetApplicationState,
+		KinesisanalyticsActions.ListApplicationOperations,
+		KinesisanalyticsActions.ListApplicationSnapshots,
+		KinesisanalyticsActions.ListApplicationVersions,
+		KinesisanalyticsActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KinesisanalyticsActions.ADD_APPLICATION_CLOUD_WATCH_LOGGING_OPTION,
-		KinesisanalyticsActions.ADD_APPLICATION_INPUT,
-		KinesisanalyticsActions.ADD_APPLICATION_INPUT_PROCESSING_CONFIGURATION,
-		KinesisanalyticsActions.ADD_APPLICATION_OUTPUT,
-		KinesisanalyticsActions.ADD_APPLICATION_REFERENCE_DATA_SOURCE,
-		KinesisanalyticsActions.ADD_APPLICATION_VPC_CONFIGURATION,
-		KinesisanalyticsActions.CREATE_APPLICATION,
-		KinesisanalyticsActions.CREATE_APPLICATION_SNAPSHOT,
-		KinesisanalyticsActions.DELETE_APPLICATION,
-		KinesisanalyticsActions.DELETE_APPLICATION_CLOUD_WATCH_LOGGING_OPTION,
-		KinesisanalyticsActions.DELETE_APPLICATION_INPUT_PROCESSING_CONFIGURATION,
-		KinesisanalyticsActions.DELETE_APPLICATION_OUTPUT,
-		KinesisanalyticsActions.DELETE_APPLICATION_REFERENCE_DATA_SOURCE,
-		KinesisanalyticsActions.DELETE_APPLICATION_SNAPSHOT,
-		KinesisanalyticsActions.DELETE_APPLICATION_VPC_CONFIGURATION,
-		KinesisanalyticsActions.ROLLBACK_APPLICATION,
-		KinesisanalyticsActions.START_APPLICATION,
-		KinesisanalyticsActions.STOP_APPLICATION,
-		KinesisanalyticsActions.UPDATE_APPLICATION,
-		KinesisanalyticsActions.UPDATE_APPLICATION_MAINTENANCE_CONFIGURATION,
+	static readonly AllWriteActions: string[] = [
+		KinesisanalyticsActions.AddApplicationCloudWatchLoggingOption,
+		KinesisanalyticsActions.AddApplicationInput,
+		KinesisanalyticsActions.AddApplicationInputProcessingConfiguration,
+		KinesisanalyticsActions.AddApplicationOutput,
+		KinesisanalyticsActions.AddApplicationReferenceDataSource,
+		KinesisanalyticsActions.AddApplicationVpcConfiguration,
+		KinesisanalyticsActions.CreateApplication,
+		KinesisanalyticsActions.CreateApplicationSnapshot,
+		KinesisanalyticsActions.DeleteApplication,
+		KinesisanalyticsActions.DeleteApplicationCloudWatchLoggingOption,
+		KinesisanalyticsActions.DeleteApplicationInputProcessingConfiguration,
+		KinesisanalyticsActions.DeleteApplicationOutput,
+		KinesisanalyticsActions.DeleteApplicationReferenceDataSource,
+		KinesisanalyticsActions.DeleteApplicationSnapshot,
+		KinesisanalyticsActions.DeleteApplicationVpcConfiguration,
+		KinesisanalyticsActions.RollbackApplication,
+		KinesisanalyticsActions.StartApplication,
+		KinesisanalyticsActions.StopApplication,
+		KinesisanalyticsActions.UpdateApplication,
+		KinesisanalyticsActions.UpdateApplicationMaintenanceConfiguration,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KinesisanalyticsActions.LIST_APPLICATIONS,
+	static readonly AllListActions: string[] = [
+		KinesisanalyticsActions.ListApplications,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KinesisanalyticsActions.TAG_RESOURCE,
-		KinesisanalyticsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KinesisanalyticsActions.TagResource,
+		KinesisanalyticsActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kinesisanalytics:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationName>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface KinesisanalyticsApplicationArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface KinesisanalyticsApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):kinesisanalytics:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kinesisanalytics resources.
@@ -166,16 +190,7 @@ export class KinesisanalyticsResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: KinesisanalyticsApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:kinesisanalytics:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationName}`;
 	}
 
@@ -190,12 +205,9 @@ export class KinesisanalyticsResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): KinesisanalyticsApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -214,136 +226,137 @@ export class KinesisanalyticsResources {
  */
 export class KinesisanalyticsOperations {
 	/** IAM actions required for the AddApplicationCloudWatchLoggingOption API call. */
-	static readonly ADD_APPLICATION_CLOUD_WATCH_LOGGING_OPTION: string[] = [
+	static readonly AddApplicationCloudWatchLoggingOption: string[] = [
 		"kinesisanalytics:AddApplicationCloudWatchLoggingOption",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddApplicationInput API call. */
-	static readonly ADD_APPLICATION_INPUT: string[] = [
+	static readonly AddApplicationInput: string[] = [
 		"kinesisanalytics:AddApplicationInput",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddApplicationInputProcessingConfiguration API call. */
-	static readonly ADD_APPLICATION_INPUT_PROCESSING_CONFIGURATION: string[] = [];
+	static readonly AddApplicationInputProcessingConfiguration: string[] = [];
 	/** IAM actions required for the AddApplicationOutput API call. */
-	static readonly ADD_APPLICATION_OUTPUT: string[] = [
+	static readonly AddApplicationOutput: string[] = [
 		"kinesisanalytics:AddApplicationOutput",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddApplicationReferenceDataSource API call. */
-	static readonly ADD_APPLICATION_REFERENCE_DATA_SOURCE: string[] = [
+	static readonly AddApplicationReferenceDataSource: string[] = [
 		"kinesisanalytics:AddApplicationReferenceDataSource",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the AddApplicationVpcConfiguration API call. */
-	static readonly ADD_APPLICATION_VPC_CONFIGURATION: string[] = [
+	static readonly AddApplicationVpcConfiguration: string[] = [
 		"kinesisanalytics:AddApplicationVpcConfiguration",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"kinesisanalytics:CreateApplication",
 		"iam:PassRole",
 		"kinesisanalytics:TagResource",
 	];
 	/** IAM actions required for the CreateApplicationPresignedUrl API call. */
-	static readonly CREATE_APPLICATION_PRESIGNED_URL: string[] = [
+	static readonly CreateApplicationPresignedUrl: string[] = [
 		"kinesisanalytics:CreateApplicationPresignedUrl",
 	];
 	/** IAM actions required for the CreateApplicationSnapshot API call. */
-	static readonly CREATE_APPLICATION_SNAPSHOT: string[] = [
+	static readonly CreateApplicationSnapshot: string[] = [
 		"kinesisanalytics:CreateApplicationSnapshot",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"kinesisanalytics:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteApplicationCloudWatchLoggingOption API call. */
-	static readonly DELETE_APPLICATION_CLOUD_WATCH_LOGGING_OPTION: string[] = [
+	static readonly DeleteApplicationCloudWatchLoggingOption: string[] = [
 		"kinesisanalytics:DeleteApplicationCloudWatchLoggingOption",
 	];
 	/** IAM actions required for the DeleteApplicationInputProcessingConfiguration API call. */
-	static readonly DELETE_APPLICATION_INPUT_PROCESSING_CONFIGURATION: string[] =
-		["kinesisanalytics:DeleteApplicationInputProcessingConfiguration"];
+	static readonly DeleteApplicationInputProcessingConfiguration: string[] = [
+		"kinesisanalytics:DeleteApplicationInputProcessingConfiguration",
+	];
 	/** IAM actions required for the DeleteApplicationOutput API call. */
-	static readonly DELETE_APPLICATION_OUTPUT: string[] = [
+	static readonly DeleteApplicationOutput: string[] = [
 		"kinesisanalytics:DeleteApplicationOutput",
 	];
 	/** IAM actions required for the DeleteApplicationReferenceDataSource API call. */
-	static readonly DELETE_APPLICATION_REFERENCE_DATA_SOURCE: string[] = [
+	static readonly DeleteApplicationReferenceDataSource: string[] = [
 		"kinesisanalytics:DeleteApplicationReferenceDataSource",
 	];
 	/** IAM actions required for the DeleteApplicationSnapshot API call. */
-	static readonly DELETE_APPLICATION_SNAPSHOT: string[] = [
+	static readonly DeleteApplicationSnapshot: string[] = [
 		"kinesisanalytics:DeleteApplicationSnapshot",
 	];
 	/** IAM actions required for the DeleteApplicationVpcConfiguration API call. */
-	static readonly DELETE_APPLICATION_VPC_CONFIGURATION: string[] = [
+	static readonly DeleteApplicationVpcConfiguration: string[] = [
 		"kinesisanalytics:DeleteApplicationVpcConfiguration",
 	];
 	/** IAM actions required for the DescribeApplication API call. */
-	static readonly DESCRIBE_APPLICATION: string[] = [
+	static readonly DescribeApplication: string[] = [
 		"kinesisanalytics:DescribeApplication",
 	];
 	/** IAM actions required for the DescribeApplicationOperation API call. */
-	static readonly DESCRIBE_APPLICATION_OPERATION: string[] = [
+	static readonly DescribeApplicationOperation: string[] = [
 		"kinesisanalytics:DescribeApplicationOperation",
 	];
 	/** IAM actions required for the DescribeApplicationSnapshot API call. */
-	static readonly DESCRIBE_APPLICATION_SNAPSHOT: string[] = [
+	static readonly DescribeApplicationSnapshot: string[] = [
 		"kinesisanalytics:DescribeApplicationSnapshot",
 	];
 	/** IAM actions required for the DescribeApplicationVersion API call. */
-	static readonly DESCRIBE_APPLICATION_VERSION: string[] = [
+	static readonly DescribeApplicationVersion: string[] = [
 		"kinesisanalytics:DescribeApplicationVersion",
 	];
 	/** IAM actions required for the DiscoverInputSchema API call. */
-	static readonly DISCOVER_INPUT_SCHEMA: string[] = [
+	static readonly DiscoverInputSchema: string[] = [
 		"kinesisanalytics:DiscoverInputSchema",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ListApplicationOperations API call. */
-	static readonly LIST_APPLICATION_OPERATIONS: string[] = [
+	static readonly ListApplicationOperations: string[] = [
 		"kinesisanalytics:ListApplicationOperations",
 	];
 	/** IAM actions required for the ListApplicationSnapshots API call. */
-	static readonly LIST_APPLICATION_SNAPSHOTS: string[] = [
+	static readonly ListApplicationSnapshots: string[] = [
 		"kinesisanalytics:ListApplicationSnapshots",
 	];
 	/** IAM actions required for the ListApplicationVersions API call. */
-	static readonly LIST_APPLICATION_VERSIONS: string[] = [
+	static readonly ListApplicationVersions: string[] = [
 		"kinesisanalytics:ListApplicationVersions",
 	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"kinesisanalytics:ListApplications",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"kinesisanalytics:ListTagsForResource",
 	];
 	/** IAM actions required for the RollbackApplication API call. */
-	static readonly ROLLBACK_APPLICATION: string[] = [
+	static readonly RollbackApplication: string[] = [
 		"kinesisanalytics:RollbackApplication",
 	];
 	/** IAM actions required for the StartApplication API call. */
-	static readonly START_APPLICATION: string[] = [
+	static readonly StartApplication: string[] = [
 		"kinesisanalytics:StartApplication",
 	];
 	/** IAM actions required for the StopApplication API call. */
-	static readonly STOP_APPLICATION: string[] = [
+	static readonly StopApplication: string[] = [
 		"kinesisanalytics:StopApplication",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kinesisanalytics:TagResource"];
+	static readonly TagResource: string[] = ["kinesisanalytics:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kinesisanalytics:UntagResource"];
+	static readonly UntagResource: string[] = ["kinesisanalytics:UntagResource"];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [
+	static readonly UpdateApplication: string[] = [
 		"iam:PassRole",
 		"kinesisanalytics:UpdateApplication",
 	];
 	/** IAM actions required for the UpdateApplicationMaintenanceConfiguration API call. */
-	static readonly UPDATE_APPLICATION_MAINTENANCE_CONFIGURATION: string[] = [
+	static readonly UpdateApplicationMaintenanceConfiguration: string[] = [
 		"kinesisanalytics:UpdateApplicationMaintenanceConfiguration",
 	];
 }
@@ -353,24 +366,24 @@ export class KinesisanalyticsOperations {
  */
 export class KinesisanalyticsConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

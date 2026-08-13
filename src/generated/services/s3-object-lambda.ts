@@ -13,115 +13,141 @@ export class S3ObjectLambdaActions {
 	static readonly SERVICE_PREFIX = "s3-object-lambda";
 
 	/** [Write] s3-object-lambda:AbortMultipartUpload */
-	static readonly ABORT_MULTIPART_UPLOAD =
+	static readonly AbortMultipartUpload =
 		"s3-object-lambda:AbortMultipartUpload";
 	/** [Write] s3-object-lambda:DeleteObject */
-	static readonly DELETE_OBJECT = "s3-object-lambda:DeleteObject";
+	static readonly DeleteObject = "s3-object-lambda:DeleteObject";
 	/** [Tagging] s3-object-lambda:DeleteObjectTagging */
-	static readonly DELETE_OBJECT_TAGGING =
-		"s3-object-lambda:DeleteObjectTagging";
+	static readonly DeleteObjectTagging = "s3-object-lambda:DeleteObjectTagging";
 	/** [Write] s3-object-lambda:DeleteObjectVersion */
-	static readonly DELETE_OBJECT_VERSION =
-		"s3-object-lambda:DeleteObjectVersion";
+	static readonly DeleteObjectVersion = "s3-object-lambda:DeleteObjectVersion";
 	/** [Tagging] s3-object-lambda:DeleteObjectVersionTagging */
-	static readonly DELETE_OBJECT_VERSION_TAGGING =
+	static readonly DeleteObjectVersionTagging =
 		"s3-object-lambda:DeleteObjectVersionTagging";
 	/** [Read] s3-object-lambda:GetObject */
-	static readonly GET_OBJECT = "s3-object-lambda:GetObject";
+	static readonly actionGetObject = "s3-object-lambda:GetObject";
 	/** [Read] s3-object-lambda:GetObjectAcl */
-	static readonly GET_OBJECT_ACL = "s3-object-lambda:GetObjectAcl";
+	static readonly actionGetObjectAcl = "s3-object-lambda:GetObjectAcl";
 	/** [Read] s3-object-lambda:GetObjectLegalHold */
-	static readonly GET_OBJECT_LEGAL_HOLD = "s3-object-lambda:GetObjectLegalHold";
+	static readonly actionGetObjectLegalHold =
+		"s3-object-lambda:GetObjectLegalHold";
 	/** [Read] s3-object-lambda:GetObjectRetention */
-	static readonly GET_OBJECT_RETENTION = "s3-object-lambda:GetObjectRetention";
+	static readonly actionGetObjectRetention =
+		"s3-object-lambda:GetObjectRetention";
 	/** [Read] s3-object-lambda:GetObjectTagging */
-	static readonly GET_OBJECT_TAGGING = "s3-object-lambda:GetObjectTagging";
+	static readonly actionGetObjectTagging = "s3-object-lambda:GetObjectTagging";
 	/** [Read] s3-object-lambda:GetObjectVersion */
-	static readonly GET_OBJECT_VERSION = "s3-object-lambda:GetObjectVersion";
+	static readonly actionGetObjectVersion = "s3-object-lambda:GetObjectVersion";
 	/** [Read] s3-object-lambda:GetObjectVersionAcl */
-	static readonly GET_OBJECT_VERSION_ACL =
+	static readonly actionGetObjectVersionAcl =
 		"s3-object-lambda:GetObjectVersionAcl";
 	/** [Read] s3-object-lambda:GetObjectVersionTagging */
-	static readonly GET_OBJECT_VERSION_TAGGING =
+	static readonly actionGetObjectVersionTagging =
 		"s3-object-lambda:GetObjectVersionTagging";
 	/** [List] s3-object-lambda:ListBucket */
-	static readonly LIST_BUCKET = "s3-object-lambda:ListBucket";
+	static readonly ListBucket = "s3-object-lambda:ListBucket";
 	/** [List] s3-object-lambda:ListBucketMultipartUploads */
-	static readonly LIST_BUCKET_MULTIPART_UPLOADS =
+	static readonly ListBucketMultipartUploads =
 		"s3-object-lambda:ListBucketMultipartUploads";
 	/** [List] s3-object-lambda:ListBucketVersions */
-	static readonly LIST_BUCKET_VERSIONS = "s3-object-lambda:ListBucketVersions";
+	static readonly ListBucketVersions = "s3-object-lambda:ListBucketVersions";
 	/** [List] s3-object-lambda:ListMultipartUploadParts */
-	static readonly LIST_MULTIPART_UPLOAD_PARTS =
+	static readonly ListMultipartUploadParts =
 		"s3-object-lambda:ListMultipartUploadParts";
 	/** [Write] s3-object-lambda:PutObject */
-	static readonly PUT_OBJECT = "s3-object-lambda:PutObject";
+	static readonly PutObject = "s3-object-lambda:PutObject";
 	/** [PermissionManagement] s3-object-lambda:PutObjectAcl */
-	static readonly PUT_OBJECT_ACL = "s3-object-lambda:PutObjectAcl";
+	static readonly PutObjectAcl = "s3-object-lambda:PutObjectAcl";
 	/** [Write] s3-object-lambda:PutObjectLegalHold */
-	static readonly PUT_OBJECT_LEGAL_HOLD = "s3-object-lambda:PutObjectLegalHold";
+	static readonly PutObjectLegalHold = "s3-object-lambda:PutObjectLegalHold";
 	/** [Write] s3-object-lambda:PutObjectRetention */
-	static readonly PUT_OBJECT_RETENTION = "s3-object-lambda:PutObjectRetention";
+	static readonly PutObjectRetention = "s3-object-lambda:PutObjectRetention";
 	/** [Tagging] s3-object-lambda:PutObjectTagging */
-	static readonly PUT_OBJECT_TAGGING = "s3-object-lambda:PutObjectTagging";
+	static readonly PutObjectTagging = "s3-object-lambda:PutObjectTagging";
 	/** [PermissionManagement] s3-object-lambda:PutObjectVersionAcl */
-	static readonly PUT_OBJECT_VERSION_ACL =
-		"s3-object-lambda:PutObjectVersionAcl";
+	static readonly PutObjectVersionAcl = "s3-object-lambda:PutObjectVersionAcl";
 	/** [Tagging] s3-object-lambda:PutObjectVersionTagging */
-	static readonly PUT_OBJECT_VERSION_TAGGING =
+	static readonly PutObjectVersionTagging =
 		"s3-object-lambda:PutObjectVersionTagging";
 	/** [Write] s3-object-lambda:RestoreObject */
-	static readonly RESTORE_OBJECT = "s3-object-lambda:RestoreObject";
+	static readonly RestoreObject = "s3-object-lambda:RestoreObject";
 	/** [Write] s3-object-lambda:WriteGetObjectResponse */
-	static readonly WRITE_GET_OBJECT_RESPONSE =
+	static readonly WriteGetObjectResponse =
 		"s3-object-lambda:WriteGetObjectResponse";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		S3ObjectLambdaActions.GET_OBJECT,
-		S3ObjectLambdaActions.GET_OBJECT_ACL,
-		S3ObjectLambdaActions.GET_OBJECT_LEGAL_HOLD,
-		S3ObjectLambdaActions.GET_OBJECT_RETENTION,
-		S3ObjectLambdaActions.GET_OBJECT_TAGGING,
-		S3ObjectLambdaActions.GET_OBJECT_VERSION,
-		S3ObjectLambdaActions.GET_OBJECT_VERSION_ACL,
-		S3ObjectLambdaActions.GET_OBJECT_VERSION_TAGGING,
+	static readonly AllReadActions: string[] = [
+		S3ObjectLambdaActions.actionGetObject,
+		S3ObjectLambdaActions.actionGetObjectAcl,
+		S3ObjectLambdaActions.actionGetObjectLegalHold,
+		S3ObjectLambdaActions.actionGetObjectRetention,
+		S3ObjectLambdaActions.actionGetObjectTagging,
+		S3ObjectLambdaActions.actionGetObjectVersion,
+		S3ObjectLambdaActions.actionGetObjectVersionAcl,
+		S3ObjectLambdaActions.actionGetObjectVersionTagging,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		S3ObjectLambdaActions.ABORT_MULTIPART_UPLOAD,
-		S3ObjectLambdaActions.DELETE_OBJECT,
-		S3ObjectLambdaActions.DELETE_OBJECT_VERSION,
-		S3ObjectLambdaActions.PUT_OBJECT,
-		S3ObjectLambdaActions.PUT_OBJECT_LEGAL_HOLD,
-		S3ObjectLambdaActions.PUT_OBJECT_RETENTION,
-		S3ObjectLambdaActions.RESTORE_OBJECT,
-		S3ObjectLambdaActions.WRITE_GET_OBJECT_RESPONSE,
+	static readonly AllWriteActions: string[] = [
+		S3ObjectLambdaActions.AbortMultipartUpload,
+		S3ObjectLambdaActions.DeleteObject,
+		S3ObjectLambdaActions.DeleteObjectVersion,
+		S3ObjectLambdaActions.PutObject,
+		S3ObjectLambdaActions.PutObjectLegalHold,
+		S3ObjectLambdaActions.PutObjectRetention,
+		S3ObjectLambdaActions.RestoreObject,
+		S3ObjectLambdaActions.WriteGetObjectResponse,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		S3ObjectLambdaActions.LIST_BUCKET,
-		S3ObjectLambdaActions.LIST_BUCKET_MULTIPART_UPLOADS,
-		S3ObjectLambdaActions.LIST_BUCKET_VERSIONS,
-		S3ObjectLambdaActions.LIST_MULTIPART_UPLOAD_PARTS,
+	static readonly AllListActions: string[] = [
+		S3ObjectLambdaActions.ListBucket,
+		S3ObjectLambdaActions.ListBucketMultipartUploads,
+		S3ObjectLambdaActions.ListBucketVersions,
+		S3ObjectLambdaActions.ListMultipartUploadParts,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		S3ObjectLambdaActions.PUT_OBJECT_ACL,
-		S3ObjectLambdaActions.PUT_OBJECT_VERSION_ACL,
+	static readonly AllPermissionManagementActions: string[] = [
+		S3ObjectLambdaActions.PutObjectAcl,
+		S3ObjectLambdaActions.PutObjectVersionAcl,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		S3ObjectLambdaActions.DELETE_OBJECT_TAGGING,
-		S3ObjectLambdaActions.DELETE_OBJECT_VERSION_TAGGING,
-		S3ObjectLambdaActions.PUT_OBJECT_TAGGING,
-		S3ObjectLambdaActions.PUT_OBJECT_VERSION_TAGGING,
+	static readonly AllTaggingActions: string[] = [
+		S3ObjectLambdaActions.DeleteObjectTagging,
+		S3ObjectLambdaActions.DeleteObjectVersionTagging,
+		S3ObjectLambdaActions.PutObjectTagging,
+		S3ObjectLambdaActions.PutObjectVersionTagging,
 	];
 }
 
-const ObjectlambdaaccesspointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3-object-lambda:(?<region>[^:]*):(?<account>[^:]*):accesspoint/(?<accessPointName>[^:/?]+)$",
-);
+/**
+ * Properties for building a objectlambdaaccesspoint ARN.
+ */
+export interface S3ObjectLambdaObjectlambdaaccesspointArnProps {
+	/** The AccessPointName component of the ARN. */
+	readonly accessPointName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a objectlambdaaccesspoint ARN.
+ */
+export interface S3ObjectLambdaObjectlambdaaccesspointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AccessPointName component. */
+	readonly accessPointName: string;
+}
+
+const ObjectlambdaaccesspointArnRegex =
+	/^arn:(?<partition>[^:]+):s3-object-lambda:(?<region>[^:]*):(?<account>[^:]*):accesspoint\/(?<accessPointName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for s3-object-lambda resources.
@@ -130,16 +156,9 @@ export class S3ObjectLambdaResources {
 	/**
 	 * Builds an ARN for the objectlambdaaccesspoint resource.
 	 */
-	static objectlambdaaccesspoint(props: {
-		/** The AccessPointName component of the ARN. */
-		readonly accessPointName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static objectlambdaaccesspoint(
+		props: S3ObjectLambdaObjectlambdaaccesspointArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:s3-object-lambda:${props.region ?? "*"}:${props.account ?? "*"}:accesspoint/${props.accessPointName}`;
 	}
 
@@ -154,12 +173,9 @@ export class S3ObjectLambdaResources {
 	 * Parses a objectlambdaaccesspoint ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseObjectlambdaaccesspointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		accessPointName: string;
-	} {
+	static parseObjectlambdaaccesspointArn(
+		arn: string,
+	): S3ObjectLambdaObjectlambdaaccesspointArnComponents {
 		const match = ObjectlambdaaccesspointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid objectlambdaaccesspoint ARN: ${arn}`);
@@ -178,164 +194,164 @@ export class S3ObjectLambdaResources {
  */
 export class S3ObjectLambdaConditions {
 	/** Condition keys applicable to the AbortMultipartUpload action. */
-	static readonly ABORT_MULTIPART_UPLOAD_CONDITION_KEYS: string[] = [
+	static readonly AbortMultipartUploadConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the DeleteObject action. */
-	static readonly DELETE_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the DeleteObjectTagging action. */
-	static readonly DELETE_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the DeleteObjectVersion action. */
-	static readonly DELETE_OBJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectVersionConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the DeleteObjectVersionTagging action. */
-	static readonly DELETE_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly DeleteObjectVersionTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the GetObject action. */
-	static readonly GET_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the GetObjectAcl action. */
-	static readonly GET_OBJECT_ACL_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectAclConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the GetObjectLegalHold action. */
-	static readonly GET_OBJECT_LEGAL_HOLD_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectLegalHoldConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the GetObjectRetention action. */
-	static readonly GET_OBJECT_RETENTION_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectRetentionConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the GetObjectTagging action. */
-	static readonly GET_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the GetObjectVersion action. */
-	static readonly GET_OBJECT_VERSION_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectVersionConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the GetObjectVersionAcl action. */
-	static readonly GET_OBJECT_VERSION_ACL_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectVersionAclConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the GetObjectVersionTagging action. */
-	static readonly GET_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly actionGetObjectVersionTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the ListBucket action. */
-	static readonly LIST_BUCKET_CONDITION_KEYS: string[] = [
+	static readonly ListBucketConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the ListBucketMultipartUploads action. */
-	static readonly LIST_BUCKET_MULTIPART_UPLOADS_CONDITION_KEYS: string[] = [
+	static readonly ListBucketMultipartUploadsConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the ListBucketVersions action. */
-	static readonly LIST_BUCKET_VERSIONS_CONDITION_KEYS: string[] = [
+	static readonly ListBucketVersionsConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the ListMultipartUploadParts action. */
-	static readonly LIST_MULTIPART_UPLOAD_PARTS_CONDITION_KEYS: string[] = [
+	static readonly ListMultipartUploadPartsConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObject action. */
-	static readonly PUT_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly PutObjectConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObjectAcl action. */
-	static readonly PUT_OBJECT_ACL_CONDITION_KEYS: string[] = [
+	static readonly PutObjectAclConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObjectLegalHold action. */
-	static readonly PUT_OBJECT_LEGAL_HOLD_CONDITION_KEYS: string[] = [
+	static readonly PutObjectLegalHoldConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObjectRetention action. */
-	static readonly PUT_OBJECT_RETENTION_CONDITION_KEYS: string[] = [
+	static readonly PutObjectRetentionConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObjectTagging action. */
-	static readonly PUT_OBJECT_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly PutObjectTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the PutObjectVersionAcl action. */
-	static readonly PUT_OBJECT_VERSION_ACL_CONDITION_KEYS: string[] = [
+	static readonly PutObjectVersionAclConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the PutObjectVersionTagging action. */
-	static readonly PUT_OBJECT_VERSION_TAGGING_CONDITION_KEYS: string[] = [
+	static readonly PutObjectVersionTaggingConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 		"s3-object-lambda:versionid",
 	];
 	/** Condition keys applicable to the RestoreObject action. */
-	static readonly RESTORE_OBJECT_CONDITION_KEYS: string[] = [
+	static readonly RestoreObjectConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",
 	];
 	/** Condition keys applicable to the WriteGetObjectResponse action. */
-	static readonly WRITE_GET_OBJECT_RESPONSE_CONDITION_KEYS: string[] = [
+	static readonly WriteGetObjectResponseConditionKeys: string[] = [
 		"s3-object-lambda:TlsVersion",
 		"s3-object-lambda:authType",
 		"s3-object-lambda:signatureAge",

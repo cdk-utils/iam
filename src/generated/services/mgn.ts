@@ -13,525 +13,818 @@ export class MgnActions {
 	static readonly SERVICE_PREFIX = "mgn";
 
 	/** [Write] mgn:ArchiveApplication */
-	static readonly ARCHIVE_APPLICATION = "mgn:ArchiveApplication";
+	static readonly ArchiveApplication = "mgn:ArchiveApplication";
 	/** [Write] mgn:ArchiveWave */
-	static readonly ARCHIVE_WAVE = "mgn:ArchiveWave";
+	static readonly ArchiveWave = "mgn:ArchiveWave";
 	/** [Write] mgn:AssociateApplications */
-	static readonly ASSOCIATE_APPLICATIONS = "mgn:AssociateApplications";
+	static readonly AssociateApplications = "mgn:AssociateApplications";
 	/** [Write] mgn:AssociateSourceServers */
-	static readonly ASSOCIATE_SOURCE_SERVERS = "mgn:AssociateSourceServers";
+	static readonly AssociateSourceServers = "mgn:AssociateSourceServers";
 	/** [Write] mgn:BatchCreateVolumeSnapshotGroupForMgn */
-	static readonly BATCH_CREATE_VOLUME_SNAPSHOT_GROUP_FOR_MGN =
+	static readonly BatchCreateVolumeSnapshotGroupForMgn =
 		"mgn:BatchCreateVolumeSnapshotGroupForMgn";
 	/** [Write] mgn:BatchDeleteSnapshotRequestForMgn */
-	static readonly BATCH_DELETE_SNAPSHOT_REQUEST_FOR_MGN =
+	static readonly BatchDeleteSnapshotRequestForMgn =
 		"mgn:BatchDeleteSnapshotRequestForMgn";
 	/** [Write] mgn:ChangeServerLifeCycleState */
-	static readonly CHANGE_SERVER_LIFE_CYCLE_STATE =
-		"mgn:ChangeServerLifeCycleState";
+	static readonly ChangeServerLifeCycleState = "mgn:ChangeServerLifeCycleState";
 	/** [Write] mgn:CreateApplication */
-	static readonly CREATE_APPLICATION = "mgn:CreateApplication";
+	static readonly CreateApplication = "mgn:CreateApplication";
 	/** [Write] mgn:CreateConnector */
-	static readonly CREATE_CONNECTOR = "mgn:CreateConnector";
+	static readonly CreateConnector = "mgn:CreateConnector";
 	/** [Write] mgn:CreateLaunchConfigurationTemplate */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly CreateLaunchConfigurationTemplate =
 		"mgn:CreateLaunchConfigurationTemplate";
 	/** [Write] mgn:CreateNetworkMigrationDefinition */
-	static readonly CREATE_NETWORK_MIGRATION_DEFINITION =
+	static readonly CreateNetworkMigrationDefinition =
 		"mgn:CreateNetworkMigrationDefinition";
 	/** [Write] mgn:CreateReplicationConfigurationTemplate */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly CreateReplicationConfigurationTemplate =
 		"mgn:CreateReplicationConfigurationTemplate";
 	/** [Write] mgn:CreateVcenterClientForMgn */
-	static readonly CREATE_VCENTER_CLIENT_FOR_MGN =
-		"mgn:CreateVcenterClientForMgn";
+	static readonly CreateVcenterClientForMgn = "mgn:CreateVcenterClientForMgn";
 	/** [Write] mgn:CreateWave */
-	static readonly CREATE_WAVE = "mgn:CreateWave";
+	static readonly CreateWave = "mgn:CreateWave";
 	/** [Write] mgn:DeleteApplication */
-	static readonly DELETE_APPLICATION = "mgn:DeleteApplication";
+	static readonly DeleteApplication = "mgn:DeleteApplication";
 	/** [Write] mgn:DeleteConnector */
-	static readonly DELETE_CONNECTOR = "mgn:DeleteConnector";
+	static readonly DeleteConnector = "mgn:DeleteConnector";
 	/** [Write] mgn:DeleteJob */
-	static readonly DELETE_JOB = "mgn:DeleteJob";
+	static readonly DeleteJob = "mgn:DeleteJob";
 	/** [Write] mgn:DeleteLaunchConfigurationTemplate */
-	static readonly DELETE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly DeleteLaunchConfigurationTemplate =
 		"mgn:DeleteLaunchConfigurationTemplate";
 	/** [Write] mgn:DeleteNetworkMigrationDefinition */
-	static readonly DELETE_NETWORK_MIGRATION_DEFINITION =
+	static readonly DeleteNetworkMigrationDefinition =
 		"mgn:DeleteNetworkMigrationDefinition";
 	/** [Write] mgn:DeleteReplicationConfigurationTemplate */
-	static readonly DELETE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly DeleteReplicationConfigurationTemplate =
 		"mgn:DeleteReplicationConfigurationTemplate";
 	/** [Write] mgn:DeleteSourceServer */
-	static readonly DELETE_SOURCE_SERVER = "mgn:DeleteSourceServer";
+	static readonly DeleteSourceServer = "mgn:DeleteSourceServer";
 	/** [Write] mgn:DeleteVcenterClient */
-	static readonly DELETE_VCENTER_CLIENT = "mgn:DeleteVcenterClient";
+	static readonly DeleteVcenterClient = "mgn:DeleteVcenterClient";
 	/** [Write] mgn:DeleteWave */
-	static readonly DELETE_WAVE = "mgn:DeleteWave";
+	static readonly DeleteWave = "mgn:DeleteWave";
 	/** [Read] mgn:DescribeJobLogItems */
-	static readonly DESCRIBE_JOB_LOG_ITEMS = "mgn:DescribeJobLogItems";
+	static readonly DescribeJobLogItems = "mgn:DescribeJobLogItems";
 	/** [List] mgn:DescribeJobs */
-	static readonly DESCRIBE_JOBS = "mgn:DescribeJobs";
+	static readonly DescribeJobs = "mgn:DescribeJobs";
 	/** [List] mgn:DescribeLaunchConfigurationTemplates */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES =
+	static readonly DescribeLaunchConfigurationTemplates =
 		"mgn:DescribeLaunchConfigurationTemplates";
 	/** [List] mgn:DescribeReplicationConfigurationTemplates */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES =
+	static readonly DescribeReplicationConfigurationTemplates =
 		"mgn:DescribeReplicationConfigurationTemplates";
 	/** [Read] mgn:DescribeReplicationServerAssociationsForMgn */
-	static readonly DESCRIBE_REPLICATION_SERVER_ASSOCIATIONS_FOR_MGN =
+	static readonly DescribeReplicationServerAssociationsForMgn =
 		"mgn:DescribeReplicationServerAssociationsForMgn";
 	/** [Read] mgn:DescribeSnapshotRequestsForMgn */
-	static readonly DESCRIBE_SNAPSHOT_REQUESTS_FOR_MGN =
+	static readonly DescribeSnapshotRequestsForMgn =
 		"mgn:DescribeSnapshotRequestsForMgn";
 	/** [List] mgn:DescribeSourceServers */
-	static readonly DESCRIBE_SOURCE_SERVERS = "mgn:DescribeSourceServers";
+	static readonly DescribeSourceServers = "mgn:DescribeSourceServers";
 	/** [List] mgn:DescribeVcenterClients */
-	static readonly DESCRIBE_VCENTER_CLIENTS = "mgn:DescribeVcenterClients";
+	static readonly DescribeVcenterClients = "mgn:DescribeVcenterClients";
 	/** [Write] mgn:DisassociateApplications */
-	static readonly DISASSOCIATE_APPLICATIONS = "mgn:DisassociateApplications";
+	static readonly DisassociateApplications = "mgn:DisassociateApplications";
 	/** [Write] mgn:DisassociateSourceServers */
-	static readonly DISASSOCIATE_SOURCE_SERVERS = "mgn:DisassociateSourceServers";
+	static readonly DisassociateSourceServers = "mgn:DisassociateSourceServers";
 	/** [Write] mgn:DisconnectFromService */
-	static readonly DISCONNECT_FROM_SERVICE = "mgn:DisconnectFromService";
+	static readonly DisconnectFromService = "mgn:DisconnectFromService";
 	/** [Write] mgn:FinalizeCutover */
-	static readonly FINALIZE_CUTOVER = "mgn:FinalizeCutover";
+	static readonly FinalizeCutover = "mgn:FinalizeCutover";
 	/** [Read] mgn:GetAccountSettings */
-	static readonly GET_ACCOUNT_SETTINGS = "mgn:GetAccountSettings";
+	static readonly actionGetAccountSettings = "mgn:GetAccountSettings";
 	/** [Read] mgn:GetAgentCommandForMgn */
-	static readonly GET_AGENT_COMMAND_FOR_MGN = "mgn:GetAgentCommandForMgn";
+	static readonly actionGetAgentCommandForMgn = "mgn:GetAgentCommandForMgn";
 	/** [Read] mgn:GetAgentConfirmedResumeInfoForMgn */
-	static readonly GET_AGENT_CONFIRMED_RESUME_INFO_FOR_MGN =
+	static readonly actionGetAgentConfirmedResumeInfoForMgn =
 		"mgn:GetAgentConfirmedResumeInfoForMgn";
 	/** [Read] mgn:GetAgentInstallationAssetsForMgn */
-	static readonly GET_AGENT_INSTALLATION_ASSETS_FOR_MGN =
+	static readonly actionGetAgentInstallationAssetsForMgn =
 		"mgn:GetAgentInstallationAssetsForMgn";
 	/** [Read] mgn:GetAgentReplicationInfoForMgn */
-	static readonly GET_AGENT_REPLICATION_INFO_FOR_MGN =
+	static readonly actionGetAgentReplicationInfoForMgn =
 		"mgn:GetAgentReplicationInfoForMgn";
 	/** [Read] mgn:GetAgentRuntimeConfigurationForMgn */
-	static readonly GET_AGENT_RUNTIME_CONFIGURATION_FOR_MGN =
+	static readonly actionGetAgentRuntimeConfigurationForMgn =
 		"mgn:GetAgentRuntimeConfigurationForMgn";
 	/** [Read] mgn:GetAgentSnapshotCreditsForMgn */
-	static readonly GET_AGENT_SNAPSHOT_CREDITS_FOR_MGN =
+	static readonly actionGetAgentSnapshotCreditsForMgn =
 		"mgn:GetAgentSnapshotCreditsForMgn";
 	/** [Read] mgn:GetChannelCommandsForMgn */
-	static readonly GET_CHANNEL_COMMANDS_FOR_MGN = "mgn:GetChannelCommandsForMgn";
+	static readonly actionGetChannelCommandsForMgn =
+		"mgn:GetChannelCommandsForMgn";
 	/** [Read] mgn:GetLaunchConfiguration */
-	static readonly GET_LAUNCH_CONFIGURATION = "mgn:GetLaunchConfiguration";
+	static readonly actionGetLaunchConfiguration = "mgn:GetLaunchConfiguration";
 	/** [Read] mgn:GetNetworkMigrationDefinition */
-	static readonly GET_NETWORK_MIGRATION_DEFINITION =
+	static readonly actionGetNetworkMigrationDefinition =
 		"mgn:GetNetworkMigrationDefinition";
 	/** [Read] mgn:GetNetworkMigrationMapperSegmentConstruct */
-	static readonly GET_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCT =
+	static readonly actionGetNetworkMigrationMapperSegmentConstruct =
 		"mgn:GetNetworkMigrationMapperSegmentConstruct";
 	/** [Read] mgn:GetReplicationConfiguration */
-	static readonly GET_REPLICATION_CONFIGURATION =
+	static readonly actionGetReplicationConfiguration =
 		"mgn:GetReplicationConfiguration";
 	/** [Read] mgn:GetVcenterClientCommandsForMgn */
-	static readonly GET_VCENTER_CLIENT_COMMANDS_FOR_MGN =
+	static readonly actionGetVcenterClientCommandsForMgn =
 		"mgn:GetVcenterClientCommandsForMgn";
 	/** [Write] mgn:InitializeService */
-	static readonly INITIALIZE_SERVICE = "mgn:InitializeService";
+	static readonly InitializeService = "mgn:InitializeService";
 	/** [Write] mgn:IssueClientCertificateForMgn */
-	static readonly ISSUE_CLIENT_CERTIFICATE_FOR_MGN =
+	static readonly IssueClientCertificateForMgn =
 		"mgn:IssueClientCertificateForMgn";
 	/** [List] mgn:ListApplications */
-	static readonly LIST_APPLICATIONS = "mgn:ListApplications";
+	static readonly ListApplications = "mgn:ListApplications";
 	/** [Read] mgn:ListConnectors */
-	static readonly LIST_CONNECTORS = "mgn:ListConnectors";
+	static readonly ListConnectors = "mgn:ListConnectors";
 	/** [List] mgn:ListExportErrors */
-	static readonly LIST_EXPORT_ERRORS = "mgn:ListExportErrors";
+	static readonly ListExportErrors = "mgn:ListExportErrors";
 	/** [List] mgn:ListExports */
-	static readonly LIST_EXPORTS = "mgn:ListExports";
+	static readonly ListExports = "mgn:ListExports";
 	/** [List] mgn:ListImportErrors */
-	static readonly LIST_IMPORT_ERRORS = "mgn:ListImportErrors";
+	static readonly ListImportErrors = "mgn:ListImportErrors";
 	/** [List] mgn:ListImportFileEnrichments */
-	static readonly LIST_IMPORT_FILE_ENRICHMENTS =
-		"mgn:ListImportFileEnrichments";
+	static readonly ListImportFileEnrichments = "mgn:ListImportFileEnrichments";
 	/** [List] mgn:ListImports */
-	static readonly LIST_IMPORTS = "mgn:ListImports";
+	static readonly ListImports = "mgn:ListImports";
 	/** [List] mgn:ListManagedAccounts */
-	static readonly LIST_MANAGED_ACCOUNTS = "mgn:ListManagedAccounts";
+	static readonly ListManagedAccounts = "mgn:ListManagedAccounts";
 	/** [List] mgn:ListNetworkMigrationAnalyses */
-	static readonly LIST_NETWORK_MIGRATION_ANALYSES =
+	static readonly ListNetworkMigrationAnalyses =
 		"mgn:ListNetworkMigrationAnalyses";
 	/** [List] mgn:ListNetworkMigrationAnalysisResults */
-	static readonly LIST_NETWORK_MIGRATION_ANALYSIS_RESULTS =
+	static readonly ListNetworkMigrationAnalysisResults =
 		"mgn:ListNetworkMigrationAnalysisResults";
 	/** [List] mgn:ListNetworkMigrationCodeGenerationSegments */
-	static readonly LIST_NETWORK_MIGRATION_CODE_GENERATION_SEGMENTS =
+	static readonly ListNetworkMigrationCodeGenerationSegments =
 		"mgn:ListNetworkMigrationCodeGenerationSegments";
 	/** [List] mgn:ListNetworkMigrationCodeGenerations */
-	static readonly LIST_NETWORK_MIGRATION_CODE_GENERATIONS =
+	static readonly ListNetworkMigrationCodeGenerations =
 		"mgn:ListNetworkMigrationCodeGenerations";
 	/** [List] mgn:ListNetworkMigrationDefinitions */
-	static readonly LIST_NETWORK_MIGRATION_DEFINITIONS =
+	static readonly ListNetworkMigrationDefinitions =
 		"mgn:ListNetworkMigrationDefinitions";
 	/** [List] mgn:ListNetworkMigrationDeployedStacks */
-	static readonly LIST_NETWORK_MIGRATION_DEPLOYED_STACKS =
+	static readonly ListNetworkMigrationDeployedStacks =
 		"mgn:ListNetworkMigrationDeployedStacks";
 	/** [List] mgn:ListNetworkMigrationDeployedStacksDeletions */
-	static readonly LIST_NETWORK_MIGRATION_DEPLOYED_STACKS_DELETIONS =
+	static readonly ListNetworkMigrationDeployedStacksDeletions =
 		"mgn:ListNetworkMigrationDeployedStacksDeletions";
 	/** [List] mgn:ListNetworkMigrationDeployments */
-	static readonly LIST_NETWORK_MIGRATION_DEPLOYMENTS =
+	static readonly ListNetworkMigrationDeployments =
 		"mgn:ListNetworkMigrationDeployments";
 	/** [List] mgn:ListNetworkMigrationExecutions */
-	static readonly LIST_NETWORK_MIGRATION_EXECUTIONS =
+	static readonly ListNetworkMigrationExecutions =
 		"mgn:ListNetworkMigrationExecutions";
 	/** [List] mgn:ListNetworkMigrationMapperSegmentConstructs */
-	static readonly LIST_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCTS =
+	static readonly ListNetworkMigrationMapperSegmentConstructs =
 		"mgn:ListNetworkMigrationMapperSegmentConstructs";
 	/** [List] mgn:ListNetworkMigrationMapperSegments */
-	static readonly LIST_NETWORK_MIGRATION_MAPPER_SEGMENTS =
+	static readonly ListNetworkMigrationMapperSegments =
 		"mgn:ListNetworkMigrationMapperSegments";
 	/** [List] mgn:ListNetworkMigrationMappingUpdates */
-	static readonly LIST_NETWORK_MIGRATION_MAPPING_UPDATES =
+	static readonly ListNetworkMigrationMappingUpdates =
 		"mgn:ListNetworkMigrationMappingUpdates";
 	/** [List] mgn:ListNetworkMigrationMappings */
-	static readonly LIST_NETWORK_MIGRATION_MAPPINGS =
+	static readonly ListNetworkMigrationMappings =
 		"mgn:ListNetworkMigrationMappings";
 	/** [List] mgn:ListSourceServerActions */
-	static readonly LIST_SOURCE_SERVER_ACTIONS = "mgn:ListSourceServerActions";
+	static readonly ListSourceServerActions = "mgn:ListSourceServerActions";
 	/** [Read] mgn:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "mgn:ListTagsForResource";
+	static readonly ListTagsForResource = "mgn:ListTagsForResource";
 	/** [List] mgn:ListTemplateActions */
-	static readonly LIST_TEMPLATE_ACTIONS = "mgn:ListTemplateActions";
+	static readonly ListTemplateActions = "mgn:ListTemplateActions";
 	/** [List] mgn:ListWaves */
-	static readonly LIST_WAVES = "mgn:ListWaves";
+	static readonly ListWaves = "mgn:ListWaves";
 	/** [Write] mgn:MarkAsArchived */
-	static readonly MARK_AS_ARCHIVED = "mgn:MarkAsArchived";
+	static readonly MarkAsArchived = "mgn:MarkAsArchived";
 	/** [Write] mgn:NotifyAgentAuthenticationForMgn */
-	static readonly NOTIFY_AGENT_AUTHENTICATION_FOR_MGN =
+	static readonly NotifyAgentAuthenticationForMgn =
 		"mgn:NotifyAgentAuthenticationForMgn";
 	/** [Write] mgn:NotifyAgentConnectedForMgn */
-	static readonly NOTIFY_AGENT_CONNECTED_FOR_MGN =
-		"mgn:NotifyAgentConnectedForMgn";
+	static readonly NotifyAgentConnectedForMgn = "mgn:NotifyAgentConnectedForMgn";
 	/** [Write] mgn:NotifyAgentDisconnectedForMgn */
-	static readonly NOTIFY_AGENT_DISCONNECTED_FOR_MGN =
+	static readonly NotifyAgentDisconnectedForMgn =
 		"mgn:NotifyAgentDisconnectedForMgn";
 	/** [Write] mgn:NotifyAgentReplicationProgressForMgn */
-	static readonly NOTIFY_AGENT_REPLICATION_PROGRESS_FOR_MGN =
+	static readonly NotifyAgentReplicationProgressForMgn =
 		"mgn:NotifyAgentReplicationProgressForMgn";
 	/** [Write] mgn:NotifyVcenterClientStartedForMgn */
-	static readonly NOTIFY_VCENTER_CLIENT_STARTED_FOR_MGN =
+	static readonly NotifyVcenterClientStartedForMgn =
 		"mgn:NotifyVcenterClientStartedForMgn";
 	/** [Write] mgn:PauseReplication */
-	static readonly PAUSE_REPLICATION = "mgn:PauseReplication";
+	static readonly PauseReplication = "mgn:PauseReplication";
 	/** [Write] mgn:PutSourceServerAction */
-	static readonly PUT_SOURCE_SERVER_ACTION = "mgn:PutSourceServerAction";
+	static readonly PutSourceServerAction = "mgn:PutSourceServerAction";
 	/** [Write] mgn:PutTemplateAction */
-	static readonly PUT_TEMPLATE_ACTION = "mgn:PutTemplateAction";
+	static readonly PutTemplateAction = "mgn:PutTemplateAction";
 	/** [Write] mgn:RegisterAgentForMgn */
-	static readonly REGISTER_AGENT_FOR_MGN = "mgn:RegisterAgentForMgn";
+	static readonly RegisterAgentForMgn = "mgn:RegisterAgentForMgn";
 	/** [Write] mgn:RemoveSourceServerAction */
-	static readonly REMOVE_SOURCE_SERVER_ACTION = "mgn:RemoveSourceServerAction";
+	static readonly RemoveSourceServerAction = "mgn:RemoveSourceServerAction";
 	/** [Write] mgn:RemoveTemplateAction */
-	static readonly REMOVE_TEMPLATE_ACTION = "mgn:RemoveTemplateAction";
+	static readonly RemoveTemplateAction = "mgn:RemoveTemplateAction";
 	/** [Write] mgn:ResumeReplication */
-	static readonly RESUME_REPLICATION = "mgn:ResumeReplication";
+	static readonly ResumeReplication = "mgn:ResumeReplication";
 	/** [Write] mgn:RetryDataReplication */
-	static readonly RETRY_DATA_REPLICATION = "mgn:RetryDataReplication";
+	static readonly RetryDataReplication = "mgn:RetryDataReplication";
 	/** [Write] mgn:SendAgentLogsForMgn */
-	static readonly SEND_AGENT_LOGS_FOR_MGN = "mgn:SendAgentLogsForMgn";
+	static readonly SendAgentLogsForMgn = "mgn:SendAgentLogsForMgn";
 	/** [Write] mgn:SendAgentMetricsForMgn */
-	static readonly SEND_AGENT_METRICS_FOR_MGN = "mgn:SendAgentMetricsForMgn";
+	static readonly SendAgentMetricsForMgn = "mgn:SendAgentMetricsForMgn";
 	/** [Write] mgn:SendChannelCommandResultForMgn */
-	static readonly SEND_CHANNEL_COMMAND_RESULT_FOR_MGN =
+	static readonly SendChannelCommandResultForMgn =
 		"mgn:SendChannelCommandResultForMgn";
 	/** [Write] mgn:SendClientLogsForMgn */
-	static readonly SEND_CLIENT_LOGS_FOR_MGN = "mgn:SendClientLogsForMgn";
+	static readonly SendClientLogsForMgn = "mgn:SendClientLogsForMgn";
 	/** [Write] mgn:SendClientMetricsForMgn */
-	static readonly SEND_CLIENT_METRICS_FOR_MGN = "mgn:SendClientMetricsForMgn";
+	static readonly SendClientMetricsForMgn = "mgn:SendClientMetricsForMgn";
 	/** [Write] mgn:SendVcenterClientCommandResultForMgn */
-	static readonly SEND_VCENTER_CLIENT_COMMAND_RESULT_FOR_MGN =
+	static readonly SendVcenterClientCommandResultForMgn =
 		"mgn:SendVcenterClientCommandResultForMgn";
 	/** [Write] mgn:SendVcenterClientLogsForMgn */
-	static readonly SEND_VCENTER_CLIENT_LOGS_FOR_MGN =
+	static readonly SendVcenterClientLogsForMgn =
 		"mgn:SendVcenterClientLogsForMgn";
 	/** [Write] mgn:SendVcenterClientMetricsForMgn */
-	static readonly SEND_VCENTER_CLIENT_METRICS_FOR_MGN =
+	static readonly SendVcenterClientMetricsForMgn =
 		"mgn:SendVcenterClientMetricsForMgn";
 	/** [Write] mgn:StartCutover */
-	static readonly START_CUTOVER = "mgn:StartCutover";
+	static readonly StartCutover = "mgn:StartCutover";
 	/** [Write] mgn:StartExport */
-	static readonly START_EXPORT = "mgn:StartExport";
+	static readonly StartExport = "mgn:StartExport";
 	/** [Write] mgn:StartImport */
-	static readonly START_IMPORT = "mgn:StartImport";
+	static readonly StartImport = "mgn:StartImport";
 	/** [Write] mgn:StartImportFileEnrichment */
-	static readonly START_IMPORT_FILE_ENRICHMENT =
-		"mgn:StartImportFileEnrichment";
+	static readonly StartImportFileEnrichment = "mgn:StartImportFileEnrichment";
 	/** [Write] mgn:StartNetworkMigrationAnalysis */
-	static readonly START_NETWORK_MIGRATION_ANALYSIS =
+	static readonly StartNetworkMigrationAnalysis =
 		"mgn:StartNetworkMigrationAnalysis";
 	/** [Write] mgn:StartNetworkMigrationCodeGeneration */
-	static readonly START_NETWORK_MIGRATION_CODE_GENERATION =
+	static readonly StartNetworkMigrationCodeGeneration =
 		"mgn:StartNetworkMigrationCodeGeneration";
 	/** [Write] mgn:StartNetworkMigrationDeployedStacksDeletion */
-	static readonly START_NETWORK_MIGRATION_DEPLOYED_STACKS_DELETION =
+	static readonly StartNetworkMigrationDeployedStacksDeletion =
 		"mgn:StartNetworkMigrationDeployedStacksDeletion";
 	/** [Write] mgn:StartNetworkMigrationDeployment */
-	static readonly START_NETWORK_MIGRATION_DEPLOYMENT =
+	static readonly StartNetworkMigrationDeployment =
 		"mgn:StartNetworkMigrationDeployment";
 	/** [Write] mgn:StartNetworkMigrationMapping */
-	static readonly START_NETWORK_MIGRATION_MAPPING =
+	static readonly StartNetworkMigrationMapping =
 		"mgn:StartNetworkMigrationMapping";
 	/** [Write] mgn:StartNetworkMigrationMappingUpdate */
-	static readonly START_NETWORK_MIGRATION_MAPPING_UPDATE =
+	static readonly StartNetworkMigrationMappingUpdate =
 		"mgn:StartNetworkMigrationMappingUpdate";
 	/** [Write] mgn:StartReplication */
-	static readonly START_REPLICATION = "mgn:StartReplication";
+	static readonly StartReplication = "mgn:StartReplication";
 	/** [Write] mgn:StartSnapshotGroupForMgn */
-	static readonly START_SNAPSHOT_GROUP_FOR_MGN = "mgn:StartSnapshotGroupForMgn";
+	static readonly StartSnapshotGroupForMgn = "mgn:StartSnapshotGroupForMgn";
 	/** [Write] mgn:StartTest */
-	static readonly START_TEST = "mgn:StartTest";
+	static readonly StartTest = "mgn:StartTest";
 	/** [Write] mgn:StopReplication */
-	static readonly STOP_REPLICATION = "mgn:StopReplication";
+	static readonly StopReplication = "mgn:StopReplication";
 	/** [Tagging] mgn:TagResource */
-	static readonly TAG_RESOURCE = "mgn:TagResource";
+	static readonly TagResource = "mgn:TagResource";
 	/** [Write] mgn:TerminateTargetInstances */
-	static readonly TERMINATE_TARGET_INSTANCES = "mgn:TerminateTargetInstances";
+	static readonly TerminateTargetInstances = "mgn:TerminateTargetInstances";
 	/** [Write] mgn:UnarchiveApplication */
-	static readonly UNARCHIVE_APPLICATION = "mgn:UnarchiveApplication";
+	static readonly UnarchiveApplication = "mgn:UnarchiveApplication";
 	/** [Write] mgn:UnarchiveWave */
-	static readonly UNARCHIVE_WAVE = "mgn:UnarchiveWave";
+	static readonly UnarchiveWave = "mgn:UnarchiveWave";
 	/** [Tagging] mgn:UntagResource */
-	static readonly UNTAG_RESOURCE = "mgn:UntagResource";
+	static readonly UntagResource = "mgn:UntagResource";
 	/** [Write] mgn:UpdateAccountSettings */
-	static readonly UPDATE_ACCOUNT_SETTINGS = "mgn:UpdateAccountSettings";
+	static readonly UpdateAccountSettings = "mgn:UpdateAccountSettings";
 	/** [Write] mgn:UpdateAgentBacklogForMgn */
-	static readonly UPDATE_AGENT_BACKLOG_FOR_MGN = "mgn:UpdateAgentBacklogForMgn";
+	static readonly UpdateAgentBacklogForMgn = "mgn:UpdateAgentBacklogForMgn";
 	/** [Write] mgn:UpdateAgentConversionInfoForMgn */
-	static readonly UPDATE_AGENT_CONVERSION_INFO_FOR_MGN =
+	static readonly UpdateAgentConversionInfoForMgn =
 		"mgn:UpdateAgentConversionInfoForMgn";
 	/** [Write] mgn:UpdateAgentReplicationInfoForMgn */
-	static readonly UPDATE_AGENT_REPLICATION_INFO_FOR_MGN =
+	static readonly UpdateAgentReplicationInfoForMgn =
 		"mgn:UpdateAgentReplicationInfoForMgn";
 	/** [Write] mgn:UpdateAgentReplicationProcessStateForMgn */
-	static readonly UPDATE_AGENT_REPLICATION_PROCESS_STATE_FOR_MGN =
+	static readonly UpdateAgentReplicationProcessStateForMgn =
 		"mgn:UpdateAgentReplicationProcessStateForMgn";
 	/** [Write] mgn:UpdateAgentSourcePropertiesForMgn */
-	static readonly UPDATE_AGENT_SOURCE_PROPERTIES_FOR_MGN =
+	static readonly UpdateAgentSourcePropertiesForMgn =
 		"mgn:UpdateAgentSourcePropertiesForMgn";
 	/** [Write] mgn:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "mgn:UpdateApplication";
+	static readonly UpdateApplication = "mgn:UpdateApplication";
 	/** [Write] mgn:UpdateConnector */
-	static readonly UPDATE_CONNECTOR = "mgn:UpdateConnector";
+	static readonly UpdateConnector = "mgn:UpdateConnector";
 	/** [Write] mgn:UpdateLaunchConfiguration */
-	static readonly UPDATE_LAUNCH_CONFIGURATION = "mgn:UpdateLaunchConfiguration";
+	static readonly UpdateLaunchConfiguration = "mgn:UpdateLaunchConfiguration";
 	/** [Write] mgn:UpdateLaunchConfigurationTemplate */
-	static readonly UPDATE_LAUNCH_CONFIGURATION_TEMPLATE =
+	static readonly UpdateLaunchConfigurationTemplate =
 		"mgn:UpdateLaunchConfigurationTemplate";
 	/** [Write] mgn:UpdateNetworkMigrationDefinition */
-	static readonly UPDATE_NETWORK_MIGRATION_DEFINITION =
+	static readonly UpdateNetworkMigrationDefinition =
 		"mgn:UpdateNetworkMigrationDefinition";
 	/** [Write] mgn:UpdateNetworkMigrationMapperSegment */
-	static readonly UPDATE_NETWORK_MIGRATION_MAPPER_SEGMENT =
+	static readonly UpdateNetworkMigrationMapperSegment =
 		"mgn:UpdateNetworkMigrationMapperSegment";
 	/** [Write] mgn:UpdateNetworkMigrationMapperSegmentConstruct */
-	static readonly UPDATE_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCT =
+	static readonly UpdateNetworkMigrationMapperSegmentConstruct =
 		"mgn:UpdateNetworkMigrationMapperSegmentConstruct";
 	/** [Write] mgn:UpdateReplicationConfiguration */
-	static readonly UPDATE_REPLICATION_CONFIGURATION =
+	static readonly UpdateReplicationConfiguration =
 		"mgn:UpdateReplicationConfiguration";
 	/** [Write] mgn:UpdateReplicationConfigurationTemplate */
-	static readonly UPDATE_REPLICATION_CONFIGURATION_TEMPLATE =
+	static readonly UpdateReplicationConfigurationTemplate =
 		"mgn:UpdateReplicationConfigurationTemplate";
 	/** [Write] mgn:UpdateSourceServer */
-	static readonly UPDATE_SOURCE_SERVER = "mgn:UpdateSourceServer";
+	static readonly UpdateSourceServer = "mgn:UpdateSourceServer";
 	/** [Write] mgn:UpdateSourceServerReplicationType */
-	static readonly UPDATE_SOURCE_SERVER_REPLICATION_TYPE =
+	static readonly UpdateSourceServerReplicationType =
 		"mgn:UpdateSourceServerReplicationType";
 	/** [Write] mgn:UpdateWave */
-	static readonly UPDATE_WAVE = "mgn:UpdateWave";
+	static readonly UpdateWave = "mgn:UpdateWave";
 	/** [Read] mgn:VerifyClientRoleForMgn */
-	static readonly VERIFY_CLIENT_ROLE_FOR_MGN = "mgn:VerifyClientRoleForMgn";
+	static readonly VerifyClientRoleForMgn = "mgn:VerifyClientRoleForMgn";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		MgnActions.DESCRIBE_JOB_LOG_ITEMS,
-		MgnActions.DESCRIBE_REPLICATION_SERVER_ASSOCIATIONS_FOR_MGN,
-		MgnActions.DESCRIBE_SNAPSHOT_REQUESTS_FOR_MGN,
-		MgnActions.GET_ACCOUNT_SETTINGS,
-		MgnActions.GET_AGENT_COMMAND_FOR_MGN,
-		MgnActions.GET_AGENT_CONFIRMED_RESUME_INFO_FOR_MGN,
-		MgnActions.GET_AGENT_INSTALLATION_ASSETS_FOR_MGN,
-		MgnActions.GET_AGENT_REPLICATION_INFO_FOR_MGN,
-		MgnActions.GET_AGENT_RUNTIME_CONFIGURATION_FOR_MGN,
-		MgnActions.GET_AGENT_SNAPSHOT_CREDITS_FOR_MGN,
-		MgnActions.GET_CHANNEL_COMMANDS_FOR_MGN,
-		MgnActions.GET_LAUNCH_CONFIGURATION,
-		MgnActions.GET_NETWORK_MIGRATION_DEFINITION,
-		MgnActions.GET_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCT,
-		MgnActions.GET_REPLICATION_CONFIGURATION,
-		MgnActions.GET_VCENTER_CLIENT_COMMANDS_FOR_MGN,
-		MgnActions.LIST_CONNECTORS,
-		MgnActions.LIST_TAGS_FOR_RESOURCE,
-		MgnActions.VERIFY_CLIENT_ROLE_FOR_MGN,
+	static readonly AllReadActions: string[] = [
+		MgnActions.DescribeJobLogItems,
+		MgnActions.DescribeReplicationServerAssociationsForMgn,
+		MgnActions.DescribeSnapshotRequestsForMgn,
+		MgnActions.actionGetAccountSettings,
+		MgnActions.actionGetAgentCommandForMgn,
+		MgnActions.actionGetAgentConfirmedResumeInfoForMgn,
+		MgnActions.actionGetAgentInstallationAssetsForMgn,
+		MgnActions.actionGetAgentReplicationInfoForMgn,
+		MgnActions.actionGetAgentRuntimeConfigurationForMgn,
+		MgnActions.actionGetAgentSnapshotCreditsForMgn,
+		MgnActions.actionGetChannelCommandsForMgn,
+		MgnActions.actionGetLaunchConfiguration,
+		MgnActions.actionGetNetworkMigrationDefinition,
+		MgnActions.actionGetNetworkMigrationMapperSegmentConstruct,
+		MgnActions.actionGetReplicationConfiguration,
+		MgnActions.actionGetVcenterClientCommandsForMgn,
+		MgnActions.ListConnectors,
+		MgnActions.ListTagsForResource,
+		MgnActions.VerifyClientRoleForMgn,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		MgnActions.ARCHIVE_APPLICATION,
-		MgnActions.ARCHIVE_WAVE,
-		MgnActions.ASSOCIATE_APPLICATIONS,
-		MgnActions.ASSOCIATE_SOURCE_SERVERS,
-		MgnActions.BATCH_CREATE_VOLUME_SNAPSHOT_GROUP_FOR_MGN,
-		MgnActions.BATCH_DELETE_SNAPSHOT_REQUEST_FOR_MGN,
-		MgnActions.CHANGE_SERVER_LIFE_CYCLE_STATE,
-		MgnActions.CREATE_APPLICATION,
-		MgnActions.CREATE_CONNECTOR,
-		MgnActions.CREATE_LAUNCH_CONFIGURATION_TEMPLATE,
-		MgnActions.CREATE_NETWORK_MIGRATION_DEFINITION,
-		MgnActions.CREATE_REPLICATION_CONFIGURATION_TEMPLATE,
-		MgnActions.CREATE_VCENTER_CLIENT_FOR_MGN,
-		MgnActions.CREATE_WAVE,
-		MgnActions.DELETE_APPLICATION,
-		MgnActions.DELETE_CONNECTOR,
-		MgnActions.DELETE_JOB,
-		MgnActions.DELETE_LAUNCH_CONFIGURATION_TEMPLATE,
-		MgnActions.DELETE_NETWORK_MIGRATION_DEFINITION,
-		MgnActions.DELETE_REPLICATION_CONFIGURATION_TEMPLATE,
-		MgnActions.DELETE_SOURCE_SERVER,
-		MgnActions.DELETE_VCENTER_CLIENT,
-		MgnActions.DELETE_WAVE,
-		MgnActions.DISASSOCIATE_APPLICATIONS,
-		MgnActions.DISASSOCIATE_SOURCE_SERVERS,
-		MgnActions.DISCONNECT_FROM_SERVICE,
-		MgnActions.FINALIZE_CUTOVER,
-		MgnActions.INITIALIZE_SERVICE,
-		MgnActions.ISSUE_CLIENT_CERTIFICATE_FOR_MGN,
-		MgnActions.MARK_AS_ARCHIVED,
-		MgnActions.NOTIFY_AGENT_AUTHENTICATION_FOR_MGN,
-		MgnActions.NOTIFY_AGENT_CONNECTED_FOR_MGN,
-		MgnActions.NOTIFY_AGENT_DISCONNECTED_FOR_MGN,
-		MgnActions.NOTIFY_AGENT_REPLICATION_PROGRESS_FOR_MGN,
-		MgnActions.NOTIFY_VCENTER_CLIENT_STARTED_FOR_MGN,
-		MgnActions.PAUSE_REPLICATION,
-		MgnActions.PUT_SOURCE_SERVER_ACTION,
-		MgnActions.PUT_TEMPLATE_ACTION,
-		MgnActions.REGISTER_AGENT_FOR_MGN,
-		MgnActions.REMOVE_SOURCE_SERVER_ACTION,
-		MgnActions.REMOVE_TEMPLATE_ACTION,
-		MgnActions.RESUME_REPLICATION,
-		MgnActions.RETRY_DATA_REPLICATION,
-		MgnActions.SEND_AGENT_LOGS_FOR_MGN,
-		MgnActions.SEND_AGENT_METRICS_FOR_MGN,
-		MgnActions.SEND_CHANNEL_COMMAND_RESULT_FOR_MGN,
-		MgnActions.SEND_CLIENT_LOGS_FOR_MGN,
-		MgnActions.SEND_CLIENT_METRICS_FOR_MGN,
-		MgnActions.SEND_VCENTER_CLIENT_COMMAND_RESULT_FOR_MGN,
-		MgnActions.SEND_VCENTER_CLIENT_LOGS_FOR_MGN,
-		MgnActions.SEND_VCENTER_CLIENT_METRICS_FOR_MGN,
-		MgnActions.START_CUTOVER,
-		MgnActions.START_EXPORT,
-		MgnActions.START_IMPORT,
-		MgnActions.START_IMPORT_FILE_ENRICHMENT,
-		MgnActions.START_NETWORK_MIGRATION_ANALYSIS,
-		MgnActions.START_NETWORK_MIGRATION_CODE_GENERATION,
-		MgnActions.START_NETWORK_MIGRATION_DEPLOYED_STACKS_DELETION,
-		MgnActions.START_NETWORK_MIGRATION_DEPLOYMENT,
-		MgnActions.START_NETWORK_MIGRATION_MAPPING,
-		MgnActions.START_NETWORK_MIGRATION_MAPPING_UPDATE,
-		MgnActions.START_REPLICATION,
-		MgnActions.START_SNAPSHOT_GROUP_FOR_MGN,
-		MgnActions.START_TEST,
-		MgnActions.STOP_REPLICATION,
-		MgnActions.TERMINATE_TARGET_INSTANCES,
-		MgnActions.UNARCHIVE_APPLICATION,
-		MgnActions.UNARCHIVE_WAVE,
-		MgnActions.UPDATE_ACCOUNT_SETTINGS,
-		MgnActions.UPDATE_AGENT_BACKLOG_FOR_MGN,
-		MgnActions.UPDATE_AGENT_CONVERSION_INFO_FOR_MGN,
-		MgnActions.UPDATE_AGENT_REPLICATION_INFO_FOR_MGN,
-		MgnActions.UPDATE_AGENT_REPLICATION_PROCESS_STATE_FOR_MGN,
-		MgnActions.UPDATE_AGENT_SOURCE_PROPERTIES_FOR_MGN,
-		MgnActions.UPDATE_APPLICATION,
-		MgnActions.UPDATE_CONNECTOR,
-		MgnActions.UPDATE_LAUNCH_CONFIGURATION,
-		MgnActions.UPDATE_LAUNCH_CONFIGURATION_TEMPLATE,
-		MgnActions.UPDATE_NETWORK_MIGRATION_DEFINITION,
-		MgnActions.UPDATE_NETWORK_MIGRATION_MAPPER_SEGMENT,
-		MgnActions.UPDATE_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCT,
-		MgnActions.UPDATE_REPLICATION_CONFIGURATION,
-		MgnActions.UPDATE_REPLICATION_CONFIGURATION_TEMPLATE,
-		MgnActions.UPDATE_SOURCE_SERVER,
-		MgnActions.UPDATE_SOURCE_SERVER_REPLICATION_TYPE,
-		MgnActions.UPDATE_WAVE,
+	static readonly AllWriteActions: string[] = [
+		MgnActions.ArchiveApplication,
+		MgnActions.ArchiveWave,
+		MgnActions.AssociateApplications,
+		MgnActions.AssociateSourceServers,
+		MgnActions.BatchCreateVolumeSnapshotGroupForMgn,
+		MgnActions.BatchDeleteSnapshotRequestForMgn,
+		MgnActions.ChangeServerLifeCycleState,
+		MgnActions.CreateApplication,
+		MgnActions.CreateConnector,
+		MgnActions.CreateLaunchConfigurationTemplate,
+		MgnActions.CreateNetworkMigrationDefinition,
+		MgnActions.CreateReplicationConfigurationTemplate,
+		MgnActions.CreateVcenterClientForMgn,
+		MgnActions.CreateWave,
+		MgnActions.DeleteApplication,
+		MgnActions.DeleteConnector,
+		MgnActions.DeleteJob,
+		MgnActions.DeleteLaunchConfigurationTemplate,
+		MgnActions.DeleteNetworkMigrationDefinition,
+		MgnActions.DeleteReplicationConfigurationTemplate,
+		MgnActions.DeleteSourceServer,
+		MgnActions.DeleteVcenterClient,
+		MgnActions.DeleteWave,
+		MgnActions.DisassociateApplications,
+		MgnActions.DisassociateSourceServers,
+		MgnActions.DisconnectFromService,
+		MgnActions.FinalizeCutover,
+		MgnActions.InitializeService,
+		MgnActions.IssueClientCertificateForMgn,
+		MgnActions.MarkAsArchived,
+		MgnActions.NotifyAgentAuthenticationForMgn,
+		MgnActions.NotifyAgentConnectedForMgn,
+		MgnActions.NotifyAgentDisconnectedForMgn,
+		MgnActions.NotifyAgentReplicationProgressForMgn,
+		MgnActions.NotifyVcenterClientStartedForMgn,
+		MgnActions.PauseReplication,
+		MgnActions.PutSourceServerAction,
+		MgnActions.PutTemplateAction,
+		MgnActions.RegisterAgentForMgn,
+		MgnActions.RemoveSourceServerAction,
+		MgnActions.RemoveTemplateAction,
+		MgnActions.ResumeReplication,
+		MgnActions.RetryDataReplication,
+		MgnActions.SendAgentLogsForMgn,
+		MgnActions.SendAgentMetricsForMgn,
+		MgnActions.SendChannelCommandResultForMgn,
+		MgnActions.SendClientLogsForMgn,
+		MgnActions.SendClientMetricsForMgn,
+		MgnActions.SendVcenterClientCommandResultForMgn,
+		MgnActions.SendVcenterClientLogsForMgn,
+		MgnActions.SendVcenterClientMetricsForMgn,
+		MgnActions.StartCutover,
+		MgnActions.StartExport,
+		MgnActions.StartImport,
+		MgnActions.StartImportFileEnrichment,
+		MgnActions.StartNetworkMigrationAnalysis,
+		MgnActions.StartNetworkMigrationCodeGeneration,
+		MgnActions.StartNetworkMigrationDeployedStacksDeletion,
+		MgnActions.StartNetworkMigrationDeployment,
+		MgnActions.StartNetworkMigrationMapping,
+		MgnActions.StartNetworkMigrationMappingUpdate,
+		MgnActions.StartReplication,
+		MgnActions.StartSnapshotGroupForMgn,
+		MgnActions.StartTest,
+		MgnActions.StopReplication,
+		MgnActions.TerminateTargetInstances,
+		MgnActions.UnarchiveApplication,
+		MgnActions.UnarchiveWave,
+		MgnActions.UpdateAccountSettings,
+		MgnActions.UpdateAgentBacklogForMgn,
+		MgnActions.UpdateAgentConversionInfoForMgn,
+		MgnActions.UpdateAgentReplicationInfoForMgn,
+		MgnActions.UpdateAgentReplicationProcessStateForMgn,
+		MgnActions.UpdateAgentSourcePropertiesForMgn,
+		MgnActions.UpdateApplication,
+		MgnActions.UpdateConnector,
+		MgnActions.UpdateLaunchConfiguration,
+		MgnActions.UpdateLaunchConfigurationTemplate,
+		MgnActions.UpdateNetworkMigrationDefinition,
+		MgnActions.UpdateNetworkMigrationMapperSegment,
+		MgnActions.UpdateNetworkMigrationMapperSegmentConstruct,
+		MgnActions.UpdateReplicationConfiguration,
+		MgnActions.UpdateReplicationConfigurationTemplate,
+		MgnActions.UpdateSourceServer,
+		MgnActions.UpdateSourceServerReplicationType,
+		MgnActions.UpdateWave,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MgnActions.DESCRIBE_JOBS,
-		MgnActions.DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES,
-		MgnActions.DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES,
-		MgnActions.DESCRIBE_SOURCE_SERVERS,
-		MgnActions.DESCRIBE_VCENTER_CLIENTS,
-		MgnActions.LIST_APPLICATIONS,
-		MgnActions.LIST_EXPORT_ERRORS,
-		MgnActions.LIST_EXPORTS,
-		MgnActions.LIST_IMPORT_ERRORS,
-		MgnActions.LIST_IMPORT_FILE_ENRICHMENTS,
-		MgnActions.LIST_IMPORTS,
-		MgnActions.LIST_MANAGED_ACCOUNTS,
-		MgnActions.LIST_NETWORK_MIGRATION_ANALYSES,
-		MgnActions.LIST_NETWORK_MIGRATION_ANALYSIS_RESULTS,
-		MgnActions.LIST_NETWORK_MIGRATION_CODE_GENERATION_SEGMENTS,
-		MgnActions.LIST_NETWORK_MIGRATION_CODE_GENERATIONS,
-		MgnActions.LIST_NETWORK_MIGRATION_DEFINITIONS,
-		MgnActions.LIST_NETWORK_MIGRATION_DEPLOYED_STACKS,
-		MgnActions.LIST_NETWORK_MIGRATION_DEPLOYED_STACKS_DELETIONS,
-		MgnActions.LIST_NETWORK_MIGRATION_DEPLOYMENTS,
-		MgnActions.LIST_NETWORK_MIGRATION_EXECUTIONS,
-		MgnActions.LIST_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCTS,
-		MgnActions.LIST_NETWORK_MIGRATION_MAPPER_SEGMENTS,
-		MgnActions.LIST_NETWORK_MIGRATION_MAPPING_UPDATES,
-		MgnActions.LIST_NETWORK_MIGRATION_MAPPINGS,
-		MgnActions.LIST_SOURCE_SERVER_ACTIONS,
-		MgnActions.LIST_TEMPLATE_ACTIONS,
-		MgnActions.LIST_WAVES,
+	static readonly AllListActions: string[] = [
+		MgnActions.DescribeJobs,
+		MgnActions.DescribeLaunchConfigurationTemplates,
+		MgnActions.DescribeReplicationConfigurationTemplates,
+		MgnActions.DescribeSourceServers,
+		MgnActions.DescribeVcenterClients,
+		MgnActions.ListApplications,
+		MgnActions.ListExportErrors,
+		MgnActions.ListExports,
+		MgnActions.ListImportErrors,
+		MgnActions.ListImportFileEnrichments,
+		MgnActions.ListImports,
+		MgnActions.ListManagedAccounts,
+		MgnActions.ListNetworkMigrationAnalyses,
+		MgnActions.ListNetworkMigrationAnalysisResults,
+		MgnActions.ListNetworkMigrationCodeGenerationSegments,
+		MgnActions.ListNetworkMigrationCodeGenerations,
+		MgnActions.ListNetworkMigrationDefinitions,
+		MgnActions.ListNetworkMigrationDeployedStacks,
+		MgnActions.ListNetworkMigrationDeployedStacksDeletions,
+		MgnActions.ListNetworkMigrationDeployments,
+		MgnActions.ListNetworkMigrationExecutions,
+		MgnActions.ListNetworkMigrationMapperSegmentConstructs,
+		MgnActions.ListNetworkMigrationMapperSegments,
+		MgnActions.ListNetworkMigrationMappingUpdates,
+		MgnActions.ListNetworkMigrationMappings,
+		MgnActions.ListSourceServerActions,
+		MgnActions.ListTemplateActions,
+		MgnActions.ListWaves,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		MgnActions.TAG_RESOURCE,
-		MgnActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		MgnActions.TagResource,
+		MgnActions.UntagResource,
 	];
 }
 
-const ApplicationResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const ConnectorResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):connector/(?<connectorId>[^:/?]+)$",
-);
-const ExportResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):export/(?<exportId>[^:/?]+)$",
-);
-const ImportResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):import/(?<importId>[^:/?]+)$",
-);
-const JobResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):job/(?<jobId>[^:/?]+)$",
-);
-const LaunchConfigurationTemplateResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template/(?<launchConfigurationTemplateId>[^:/?]+)$",
-);
-const NetworkMigrationDefinitionResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):network-migration-definition/(?<networkMigrationDefinitionId>[^:/?]+)$",
-);
-const ReplicationConfigurationTemplateResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template/(?<replicationConfigurationTemplateId>[^:/?]+)$",
-);
-const SourceServerResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):source-server/(?<sourceServerId>[^:/?]+)$",
-);
-const VcenterClientResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):vcenter-client/(?<vcenterClientId>[^:/?]+)$",
-);
-const WaveResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):wave/(?<waveId>[^:/?]+)$",
-);
+/**
+ * Properties for building a ApplicationResource ARN.
+ */
+export interface MgnApplicationResourceArnProps {
+	/** The ApplicationID component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ApplicationResource ARN.
+ */
+export interface MgnApplicationResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationID component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a ConnectorResource ARN.
+ */
+export interface MgnConnectorResourceArnProps {
+	/** The ConnectorID component of the ARN. */
+	readonly connectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ConnectorResource ARN.
+ */
+export interface MgnConnectorResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectorID component. */
+	readonly connectorId: string;
+}
+
+/**
+ * Properties for building a ExportResource ARN.
+ */
+export interface MgnExportResourceArnProps {
+	/** The ExportID component of the ARN. */
+	readonly exportId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ExportResource ARN.
+ */
+export interface MgnExportResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExportID component. */
+	readonly exportId: string;
+}
+
+/**
+ * Properties for building a ImportResource ARN.
+ */
+export interface MgnImportResourceArnProps {
+	/** The ImportID component of the ARN. */
+	readonly importId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ImportResource ARN.
+ */
+export interface MgnImportResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ImportID component. */
+	readonly importId: string;
+}
+
+/**
+ * Properties for building a JobResource ARN.
+ */
+export interface MgnJobResourceArnProps {
+	/** The JobID component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a JobResource ARN.
+ */
+export interface MgnJobResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobID component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a LaunchConfigurationTemplateResource ARN.
+ */
+export interface MgnLaunchConfigurationTemplateResourceArnProps {
+	/** The LaunchConfigurationTemplateID component of the ARN. */
+	readonly launchConfigurationTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a LaunchConfigurationTemplateResource ARN.
+ */
+export interface MgnLaunchConfigurationTemplateResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LaunchConfigurationTemplateID component. */
+	readonly launchConfigurationTemplateId: string;
+}
+
+/**
+ * Properties for building a NetworkMigrationDefinitionResource ARN.
+ */
+export interface MgnNetworkMigrationDefinitionResourceArnProps {
+	/** The NetworkMigrationDefinitionID component of the ARN. */
+	readonly networkMigrationDefinitionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a NetworkMigrationDefinitionResource ARN.
+ */
+export interface MgnNetworkMigrationDefinitionResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkMigrationDefinitionID component. */
+	readonly networkMigrationDefinitionId: string;
+}
+
+/**
+ * Properties for building a ReplicationConfigurationTemplateResource ARN.
+ */
+export interface MgnReplicationConfigurationTemplateResourceArnProps {
+	/** The ReplicationConfigurationTemplateID component of the ARN. */
+	readonly replicationConfigurationTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ReplicationConfigurationTemplateResource ARN.
+ */
+export interface MgnReplicationConfigurationTemplateResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ReplicationConfigurationTemplateID component. */
+	readonly replicationConfigurationTemplateId: string;
+}
+
+/**
+ * Properties for building a SourceServerResource ARN.
+ */
+export interface MgnSourceServerResourceArnProps {
+	/** The SourceServerID component of the ARN. */
+	readonly sourceServerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SourceServerResource ARN.
+ */
+export interface MgnSourceServerResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SourceServerID component. */
+	readonly sourceServerId: string;
+}
+
+/**
+ * Properties for building a VcenterClientResource ARN.
+ */
+export interface MgnVcenterClientResourceArnProps {
+	/** The VcenterClientID component of the ARN. */
+	readonly vcenterClientId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a VcenterClientResource ARN.
+ */
+export interface MgnVcenterClientResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VcenterClientID component. */
+	readonly vcenterClientId: string;
+}
+
+/**
+ * Properties for building a WaveResource ARN.
+ */
+export interface MgnWaveResourceArnProps {
+	/** The WaveID component of the ARN. */
+	readonly waveId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a WaveResource ARN.
+ */
+export interface MgnWaveResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The WaveID component. */
+	readonly waveId: string;
+}
+
+const ApplicationResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const ConnectorResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<connectorId>[^:/?]+)$/;
+const ExportResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):export\/(?<exportId>[^:/?]+)$/;
+const ImportResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):import\/(?<importId>[^:/?]+)$/;
+const JobResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobId>[^:/?]+)$/;
+const LaunchConfigurationTemplateResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template\/(?<launchConfigurationTemplateId>[^:/?]+)$/;
+const NetworkMigrationDefinitionResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):network-migration-definition\/(?<networkMigrationDefinitionId>[^:/?]+)$/;
+const ReplicationConfigurationTemplateResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template\/(?<replicationConfigurationTemplateId>[^:/?]+)$/;
+const SourceServerResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):source-server\/(?<sourceServerId>[^:/?]+)$/;
+const VcenterClientResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):vcenter-client\/(?<vcenterClientId>[^:/?]+)$/;
+const WaveResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):wave\/(?<waveId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for mgn resources.
@@ -540,16 +833,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the ApplicationResource resource.
 	 */
-	static applicationResource(props: {
-		/** The ApplicationID component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationResource(props: MgnApplicationResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -564,12 +848,9 @@ export class MgnResources {
 	 * Parses a ApplicationResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationResourceArn(
+		arn: string,
+	): MgnApplicationResourceArnComponents {
 		const match = ApplicationResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ApplicationResource ARN: ${arn}`);
@@ -585,16 +866,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the ConnectorResource resource.
 	 */
-	static connectorResource(props: {
-		/** The ConnectorID component of the ARN. */
-		readonly connectorId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connectorResource(props: MgnConnectorResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.connectorId}`;
 	}
 
@@ -609,12 +881,9 @@ export class MgnResources {
 	 * Parses a ConnectorResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectorId: string;
-	} {
+	static parseConnectorResourceArn(
+		arn: string,
+	): MgnConnectorResourceArnComponents {
 		const match = ConnectorResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ConnectorResource ARN: ${arn}`);
@@ -630,16 +899,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the ExportResource resource.
 	 */
-	static exportResource(props: {
-		/** The ExportID component of the ARN. */
-		readonly exportId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static exportResource(props: MgnExportResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:export/${props.exportId}`;
 	}
 
@@ -654,12 +914,7 @@ export class MgnResources {
 	 * Parses a ExportResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseExportResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		exportId: string;
-	} {
+	static parseExportResourceArn(arn: string): MgnExportResourceArnComponents {
 		const match = ExportResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ExportResource ARN: ${arn}`);
@@ -675,16 +930,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the ImportResource resource.
 	 */
-	static importResource(props: {
-		/** The ImportID component of the ARN. */
-		readonly importId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static importResource(props: MgnImportResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:import/${props.importId}`;
 	}
 
@@ -699,12 +945,7 @@ export class MgnResources {
 	 * Parses a ImportResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseImportResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		importId: string;
-	} {
+	static parseImportResourceArn(arn: string): MgnImportResourceArnComponents {
 		const match = ImportResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ImportResource ARN: ${arn}`);
@@ -720,16 +961,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the JobResource resource.
 	 */
-	static jobResource(props: {
-		/** The JobID component of the ARN. */
-		readonly jobId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static jobResource(props: MgnJobResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobId}`;
 	}
 
@@ -744,12 +976,7 @@ export class MgnResources {
 	 * Parses a JobResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseJobResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		jobId: string;
-	} {
+	static parseJobResourceArn(arn: string): MgnJobResourceArnComponents {
 		const match = JobResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid JobResource ARN: ${arn}`);
@@ -765,16 +992,9 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the LaunchConfigurationTemplateResource resource.
 	 */
-	static launchConfigurationTemplateResource(props: {
-		/** The LaunchConfigurationTemplateID component of the ARN. */
-		readonly launchConfigurationTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static launchConfigurationTemplateResource(
+		props: MgnLaunchConfigurationTemplateResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:launch-configuration-template/${props.launchConfigurationTemplateId}`;
 	}
 
@@ -789,12 +1009,9 @@ export class MgnResources {
 	 * Parses a LaunchConfigurationTemplateResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseLaunchConfigurationTemplateResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		launchConfigurationTemplateId: string;
-	} {
+	static parseLaunchConfigurationTemplateResourceArn(
+		arn: string,
+	): MgnLaunchConfigurationTemplateResourceArnComponents {
 		const match = LaunchConfigurationTemplateResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -813,16 +1030,9 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the NetworkMigrationDefinitionResource resource.
 	 */
-	static networkMigrationDefinitionResource(props: {
-		/** The NetworkMigrationDefinitionID component of the ARN. */
-		readonly networkMigrationDefinitionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkMigrationDefinitionResource(
+		props: MgnNetworkMigrationDefinitionResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:network-migration-definition/${props.networkMigrationDefinitionId}`;
 	}
 
@@ -837,12 +1047,9 @@ export class MgnResources {
 	 * Parses a NetworkMigrationDefinitionResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkMigrationDefinitionResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkMigrationDefinitionId: string;
-	} {
+	static parseNetworkMigrationDefinitionResourceArn(
+		arn: string,
+	): MgnNetworkMigrationDefinitionResourceArnComponents {
 		const match = NetworkMigrationDefinitionResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid NetworkMigrationDefinitionResource ARN: ${arn}`);
@@ -858,16 +1065,9 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the ReplicationConfigurationTemplateResource resource.
 	 */
-	static replicationConfigurationTemplateResource(props: {
-		/** The ReplicationConfigurationTemplateID component of the ARN. */
-		readonly replicationConfigurationTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static replicationConfigurationTemplateResource(
+		props: MgnReplicationConfigurationTemplateResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:replication-configuration-template/${props.replicationConfigurationTemplateId}`;
 	}
 
@@ -884,12 +1084,9 @@ export class MgnResources {
 	 * Parses a ReplicationConfigurationTemplateResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseReplicationConfigurationTemplateResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		replicationConfigurationTemplateId: string;
-	} {
+	static parseReplicationConfigurationTemplateResourceArn(
+		arn: string,
+	): MgnReplicationConfigurationTemplateResourceArnComponents {
 		const match = ReplicationConfigurationTemplateResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(
@@ -908,16 +1105,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the SourceServerResource resource.
 	 */
-	static sourceServerResource(props: {
-		/** The SourceServerID component of the ARN. */
-		readonly sourceServerId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static sourceServerResource(props: MgnSourceServerResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:source-server/${props.sourceServerId}`;
 	}
 
@@ -932,12 +1120,9 @@ export class MgnResources {
 	 * Parses a SourceServerResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSourceServerResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		sourceServerId: string;
-	} {
+	static parseSourceServerResourceArn(
+		arn: string,
+	): MgnSourceServerResourceArnComponents {
 		const match = SourceServerResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid SourceServerResource ARN: ${arn}`);
@@ -953,16 +1138,9 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the VcenterClientResource resource.
 	 */
-	static vcenterClientResource(props: {
-		/** The VcenterClientID component of the ARN. */
-		readonly vcenterClientId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static vcenterClientResource(
+		props: MgnVcenterClientResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:vcenter-client/${props.vcenterClientId}`;
 	}
 
@@ -977,12 +1155,9 @@ export class MgnResources {
 	 * Parses a VcenterClientResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseVcenterClientResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		vcenterClientId: string;
-	} {
+	static parseVcenterClientResourceArn(
+		arn: string,
+	): MgnVcenterClientResourceArnComponents {
 		const match = VcenterClientResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid VcenterClientResource ARN: ${arn}`);
@@ -998,16 +1173,7 @@ export class MgnResources {
 	/**
 	 * Builds an ARN for the WaveResource resource.
 	 */
-	static waveResource(props: {
-		/** The WaveID component of the ARN. */
-		readonly waveId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static waveResource(props: MgnWaveResourceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:wave/${props.waveId}`;
 	}
 
@@ -1022,12 +1188,7 @@ export class MgnResources {
 	 * Parses a WaveResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseWaveResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		waveId: string;
-	} {
+	static parseWaveResourceArn(arn: string): MgnWaveResourceArnComponents {
 		const match = WaveResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid WaveResource ARN: ${arn}`);
@@ -1046,324 +1207,314 @@ export class MgnResources {
  */
 export class MgnOperations {
 	/** IAM actions required for the ArchiveApplication API call. */
-	static readonly ARCHIVE_APPLICATION: string[] = ["mgn:ArchiveApplication"];
+	static readonly ArchiveApplication: string[] = ["mgn:ArchiveApplication"];
 	/** IAM actions required for the ArchiveWave API call. */
-	static readonly ARCHIVE_WAVE: string[] = ["mgn:ArchiveWave"];
+	static readonly ArchiveWave: string[] = ["mgn:ArchiveWave"];
 	/** IAM actions required for the AssociateApplications API call. */
-	static readonly ASSOCIATE_APPLICATIONS: string[] = [
+	static readonly AssociateApplications: string[] = [
 		"mgn:AssociateApplications",
 	];
 	/** IAM actions required for the AssociateSourceServers API call. */
-	static readonly ASSOCIATE_SOURCE_SERVERS: string[] = [
+	static readonly AssociateSourceServers: string[] = [
 		"mgn:AssociateSourceServers",
 	];
 	/** IAM actions required for the ChangeServerLifeCycleState API call. */
-	static readonly CHANGE_SERVER_LIFE_CYCLE_STATE: string[] = [
+	static readonly ChangeServerLifeCycleState: string[] = [
 		"mgn:ChangeServerLifeCycleState",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"mgn:CreateApplication",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the CreateConnector API call. */
-	static readonly CREATE_CONNECTOR: string[] = [
+	static readonly CreateConnector: string[] = [
 		"mgn:CreateConnector",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the CreateLaunchConfigurationTemplate API call. */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly CreateLaunchConfigurationTemplate: string[] = [
 		"mgn:CreateLaunchConfigurationTemplate",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the CreateNetworkMigrationDefinition API call. */
-	static readonly CREATE_NETWORK_MIGRATION_DEFINITION: string[] = [
+	static readonly CreateNetworkMigrationDefinition: string[] = [
 		"mgn:CreateNetworkMigrationDefinition",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the CreateReplicationConfigurationTemplate API call. */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly CreateReplicationConfigurationTemplate: string[] = [
 		"mgn:CreateReplicationConfigurationTemplate",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the CreateWave API call. */
-	static readonly CREATE_WAVE: string[] = ["mgn:CreateWave", "mgn:TagResource"];
+	static readonly CreateWave: string[] = ["mgn:CreateWave", "mgn:TagResource"];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = ["mgn:DeleteApplication"];
+	static readonly DeleteApplication: string[] = ["mgn:DeleteApplication"];
 	/** IAM actions required for the DeleteConnector API call. */
-	static readonly DELETE_CONNECTOR: string[] = ["mgn:DeleteConnector"];
+	static readonly DeleteConnector: string[] = ["mgn:DeleteConnector"];
 	/** IAM actions required for the DeleteJob API call. */
-	static readonly DELETE_JOB: string[] = ["mgn:DeleteJob"];
+	static readonly DeleteJob: string[] = ["mgn:DeleteJob"];
 	/** IAM actions required for the DeleteLaunchConfigurationTemplate API call. */
-	static readonly DELETE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly DeleteLaunchConfigurationTemplate: string[] = [
 		"mgn:DeleteLaunchConfigurationTemplate",
 	];
 	/** IAM actions required for the DeleteNetworkMigrationDefinition API call. */
-	static readonly DELETE_NETWORK_MIGRATION_DEFINITION: string[] = [
+	static readonly DeleteNetworkMigrationDefinition: string[] = [
 		"mgn:DeleteNetworkMigrationDefinition",
 	];
 	/** IAM actions required for the DeleteReplicationConfigurationTemplate API call. */
-	static readonly DELETE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly DeleteReplicationConfigurationTemplate: string[] = [
 		"mgn:DeleteReplicationConfigurationTemplate",
 	];
 	/** IAM actions required for the DeleteSourceServer API call. */
-	static readonly DELETE_SOURCE_SERVER: string[] = ["mgn:DeleteSourceServer"];
+	static readonly DeleteSourceServer: string[] = ["mgn:DeleteSourceServer"];
 	/** IAM actions required for the DeleteVcenterClient API call. */
-	static readonly DELETE_VCENTER_CLIENT: string[] = ["mgn:DeleteVcenterClient"];
+	static readonly DeleteVcenterClient: string[] = ["mgn:DeleteVcenterClient"];
 	/** IAM actions required for the DeleteWave API call. */
-	static readonly DELETE_WAVE: string[] = ["mgn:DeleteWave"];
+	static readonly DeleteWave: string[] = ["mgn:DeleteWave"];
 	/** IAM actions required for the DescribeJobLogItems API call. */
-	static readonly DESCRIBE_JOB_LOG_ITEMS: string[] = [
-		"mgn:DescribeJobLogItems",
-	];
+	static readonly DescribeJobLogItems: string[] = ["mgn:DescribeJobLogItems"];
 	/** IAM actions required for the DescribeJobs API call. */
-	static readonly DESCRIBE_JOBS: string[] = ["mgn:DescribeJobs"];
+	static readonly DescribeJobs: string[] = ["mgn:DescribeJobs"];
 	/** IAM actions required for the DescribeLaunchConfigurationTemplates API call. */
-	static readonly DESCRIBE_LAUNCH_CONFIGURATION_TEMPLATES: string[] = [
+	static readonly DescribeLaunchConfigurationTemplates: string[] = [
 		"mgn:DescribeLaunchConfigurationTemplates",
 	];
 	/** IAM actions required for the DescribeReplicationConfigurationTemplates API call. */
-	static readonly DESCRIBE_REPLICATION_CONFIGURATION_TEMPLATES: string[] = [
+	static readonly DescribeReplicationConfigurationTemplates: string[] = [
 		"mgn:DescribeReplicationConfigurationTemplates",
 	];
 	/** IAM actions required for the DescribeSourceServers API call. */
-	static readonly DESCRIBE_SOURCE_SERVERS: string[] = [
+	static readonly DescribeSourceServers: string[] = [
 		"mgn:DescribeSourceServers",
 	];
 	/** IAM actions required for the DescribeVcenterClients API call. */
-	static readonly DESCRIBE_VCENTER_CLIENTS: string[] = [
+	static readonly DescribeVcenterClients: string[] = [
 		"mgn:DescribeVcenterClients",
 	];
 	/** IAM actions required for the DisassociateApplications API call. */
-	static readonly DISASSOCIATE_APPLICATIONS: string[] = [
+	static readonly DisassociateApplications: string[] = [
 		"mgn:DisassociateApplications",
 	];
 	/** IAM actions required for the DisassociateSourceServers API call. */
-	static readonly DISASSOCIATE_SOURCE_SERVERS: string[] = [
+	static readonly DisassociateSourceServers: string[] = [
 		"mgn:DisassociateSourceServers",
 	];
 	/** IAM actions required for the DisconnectFromService API call. */
-	static readonly DISCONNECT_FROM_SERVICE: string[] = [
+	static readonly DisconnectFromService: string[] = [
 		"mgn:DisconnectFromService",
 	];
 	/** IAM actions required for the FinalizeCutover API call. */
-	static readonly FINALIZE_CUTOVER: string[] = ["mgn:FinalizeCutover"];
+	static readonly FinalizeCutover: string[] = ["mgn:FinalizeCutover"];
 	/** IAM actions required for the GetLaunchConfiguration API call. */
-	static readonly GET_LAUNCH_CONFIGURATION: string[] = [
+	static readonly opGetLaunchConfiguration: string[] = [
 		"mgn:GetLaunchConfiguration",
 	];
 	/** IAM actions required for the GetNetworkMigrationDefinition API call. */
-	static readonly GET_NETWORK_MIGRATION_DEFINITION: string[] = [
+	static readonly opGetNetworkMigrationDefinition: string[] = [
 		"mgn:GetNetworkMigrationDefinition",
 	];
 	/** IAM actions required for the GetNetworkMigrationMapperSegmentConstruct API call. */
-	static readonly GET_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCT: string[] = [
+	static readonly opGetNetworkMigrationMapperSegmentConstruct: string[] = [
 		"mgn:GetNetworkMigrationMapperSegmentConstruct",
 	];
 	/** IAM actions required for the GetReplicationConfiguration API call. */
-	static readonly GET_REPLICATION_CONFIGURATION: string[] = [
+	static readonly opGetReplicationConfiguration: string[] = [
 		"mgn:GetReplicationConfiguration",
 	];
 	/** IAM actions required for the InitializeService API call. */
-	static readonly INITIALIZE_SERVICE: string[] = ["mgn:InitializeService"];
+	static readonly InitializeService: string[] = ["mgn:InitializeService"];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = ["mgn:ListApplications"];
+	static readonly ListApplications: string[] = ["mgn:ListApplications"];
 	/** IAM actions required for the ListConnectors API call. */
-	static readonly LIST_CONNECTORS: string[] = ["mgn:ListConnectors"];
+	static readonly ListConnectors: string[] = ["mgn:ListConnectors"];
 	/** IAM actions required for the ListExportErrors API call. */
-	static readonly LIST_EXPORT_ERRORS: string[] = ["mgn:ListExportErrors"];
+	static readonly ListExportErrors: string[] = ["mgn:ListExportErrors"];
 	/** IAM actions required for the ListExports API call. */
-	static readonly LIST_EXPORTS: string[] = ["mgn:ListExports"];
+	static readonly ListExports: string[] = ["mgn:ListExports"];
 	/** IAM actions required for the ListImportErrors API call. */
-	static readonly LIST_IMPORT_ERRORS: string[] = ["mgn:ListImportErrors"];
+	static readonly ListImportErrors: string[] = ["mgn:ListImportErrors"];
 	/** IAM actions required for the ListImportFileEnrichments API call. */
-	static readonly LIST_IMPORT_FILE_ENRICHMENTS: string[] = [
+	static readonly ListImportFileEnrichments: string[] = [
 		"mgn:ListImportFileEnrichments",
 	];
 	/** IAM actions required for the ListImports API call. */
-	static readonly LIST_IMPORTS: string[] = ["mgn:ListImports"];
+	static readonly ListImports: string[] = ["mgn:ListImports"];
 	/** IAM actions required for the ListManagedAccounts API call. */
-	static readonly LIST_MANAGED_ACCOUNTS: string[] = ["mgn:ListManagedAccounts"];
+	static readonly ListManagedAccounts: string[] = ["mgn:ListManagedAccounts"];
 	/** IAM actions required for the ListNetworkMigrationAnalyses API call. */
-	static readonly LIST_NETWORK_MIGRATION_ANALYSES: string[] = [
+	static readonly ListNetworkMigrationAnalyses: string[] = [
 		"mgn:ListNetworkMigrationAnalyses",
 	];
 	/** IAM actions required for the ListNetworkMigrationAnalysisResults API call. */
-	static readonly LIST_NETWORK_MIGRATION_ANALYSIS_RESULTS: string[] = [
+	static readonly ListNetworkMigrationAnalysisResults: string[] = [
 		"mgn:ListNetworkMigrationAnalysisResults",
 	];
 	/** IAM actions required for the ListNetworkMigrationCodeGenerationSegments API call. */
-	static readonly LIST_NETWORK_MIGRATION_CODE_GENERATION_SEGMENTS: string[] = [
+	static readonly ListNetworkMigrationCodeGenerationSegments: string[] = [
 		"mgn:ListNetworkMigrationCodeGenerationSegments",
 	];
 	/** IAM actions required for the ListNetworkMigrationCodeGenerations API call. */
-	static readonly LIST_NETWORK_MIGRATION_CODE_GENERATIONS: string[] = [
+	static readonly ListNetworkMigrationCodeGenerations: string[] = [
 		"mgn:ListNetworkMigrationCodeGenerations",
 	];
 	/** IAM actions required for the ListNetworkMigrationDefinitions API call. */
-	static readonly LIST_NETWORK_MIGRATION_DEFINITIONS: string[] = [
+	static readonly ListNetworkMigrationDefinitions: string[] = [
 		"mgn:ListNetworkMigrationDefinitions",
 	];
 	/** IAM actions required for the ListNetworkMigrationDeployedStacks API call. */
-	static readonly LIST_NETWORK_MIGRATION_DEPLOYED_STACKS: string[] = [
+	static readonly ListNetworkMigrationDeployedStacks: string[] = [
 		"mgn:ListNetworkMigrationDeployedStacks",
 	];
 	/** IAM actions required for the ListNetworkMigrationDeployments API call. */
-	static readonly LIST_NETWORK_MIGRATION_DEPLOYMENTS: string[] = [
+	static readonly ListNetworkMigrationDeployments: string[] = [
 		"mgn:ListNetworkMigrationDeployments",
 	];
 	/** IAM actions required for the ListNetworkMigrationExecutions API call. */
-	static readonly LIST_NETWORK_MIGRATION_EXECUTIONS: string[] = [
+	static readonly ListNetworkMigrationExecutions: string[] = [
 		"mgn:ListNetworkMigrationExecutions",
 	];
 	/** IAM actions required for the ListNetworkMigrationMapperSegmentConstructs API call. */
-	static readonly LIST_NETWORK_MIGRATION_MAPPER_SEGMENT_CONSTRUCTS: string[] = [
+	static readonly ListNetworkMigrationMapperSegmentConstructs: string[] = [
 		"mgn:ListNetworkMigrationMapperSegmentConstructs",
 	];
 	/** IAM actions required for the ListNetworkMigrationMapperSegments API call. */
-	static readonly LIST_NETWORK_MIGRATION_MAPPER_SEGMENTS: string[] = [
+	static readonly ListNetworkMigrationMapperSegments: string[] = [
 		"mgn:ListNetworkMigrationMapperSegments",
 	];
 	/** IAM actions required for the ListNetworkMigrationMappingUpdates API call. */
-	static readonly LIST_NETWORK_MIGRATION_MAPPING_UPDATES: string[] = [
+	static readonly ListNetworkMigrationMappingUpdates: string[] = [
 		"mgn:ListNetworkMigrationMappingUpdates",
 	];
 	/** IAM actions required for the ListNetworkMigrationMappings API call. */
-	static readonly LIST_NETWORK_MIGRATION_MAPPINGS: string[] = [
+	static readonly ListNetworkMigrationMappings: string[] = [
 		"mgn:ListNetworkMigrationMappings",
 	];
 	/** IAM actions required for the ListSourceServerActions API call. */
-	static readonly LIST_SOURCE_SERVER_ACTIONS: string[] = [
+	static readonly ListSourceServerActions: string[] = [
 		"mgn:ListSourceServerActions",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
-		"mgn:ListTagsForResource",
-	];
+	static readonly ListTagsForResource: string[] = ["mgn:ListTagsForResource"];
 	/** IAM actions required for the ListTemplateActions API call. */
-	static readonly LIST_TEMPLATE_ACTIONS: string[] = ["mgn:ListTemplateActions"];
+	static readonly ListTemplateActions: string[] = ["mgn:ListTemplateActions"];
 	/** IAM actions required for the ListWaves API call. */
-	static readonly LIST_WAVES: string[] = ["mgn:ListWaves"];
+	static readonly ListWaves: string[] = ["mgn:ListWaves"];
 	/** IAM actions required for the MarkAsArchived API call. */
-	static readonly MARK_AS_ARCHIVED: string[] = ["mgn:MarkAsArchived"];
+	static readonly MarkAsArchived: string[] = ["mgn:MarkAsArchived"];
 	/** IAM actions required for the PauseReplication API call. */
-	static readonly PAUSE_REPLICATION: string[] = ["mgn:PauseReplication"];
+	static readonly PauseReplication: string[] = ["mgn:PauseReplication"];
 	/** IAM actions required for the PutSourceServerAction API call. */
-	static readonly PUT_SOURCE_SERVER_ACTION: string[] = [
+	static readonly PutSourceServerAction: string[] = [
 		"mgn:PutSourceServerAction",
 	];
 	/** IAM actions required for the PutTemplateAction API call. */
-	static readonly PUT_TEMPLATE_ACTION: string[] = ["mgn:PutTemplateAction"];
+	static readonly PutTemplateAction: string[] = ["mgn:PutTemplateAction"];
 	/** IAM actions required for the RemoveSourceServerAction API call. */
-	static readonly REMOVE_SOURCE_SERVER_ACTION: string[] = [
+	static readonly RemoveSourceServerAction: string[] = [
 		"mgn:RemoveSourceServerAction",
 	];
 	/** IAM actions required for the RemoveTemplateAction API call. */
-	static readonly REMOVE_TEMPLATE_ACTION: string[] = [
-		"mgn:RemoveTemplateAction",
-	];
+	static readonly RemoveTemplateAction: string[] = ["mgn:RemoveTemplateAction"];
 	/** IAM actions required for the ResumeReplication API call. */
-	static readonly RESUME_REPLICATION: string[] = ["mgn:ResumeReplication"];
+	static readonly ResumeReplication: string[] = ["mgn:ResumeReplication"];
 	/** IAM actions required for the RetryDataReplication API call. */
-	static readonly RETRY_DATA_REPLICATION: string[] = [
-		"mgn:RetryDataReplication",
-	];
+	static readonly RetryDataReplication: string[] = ["mgn:RetryDataReplication"];
 	/** IAM actions required for the StartCutover API call. */
-	static readonly START_CUTOVER: string[] = [
+	static readonly StartCutover: string[] = [
 		"mgn:StartCutover",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the StartExport API call. */
-	static readonly START_EXPORT: string[] = [
+	static readonly StartExport: string[] = [
 		"mgn:StartExport",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the StartImport API call. */
-	static readonly START_IMPORT: string[] = [
+	static readonly StartImport: string[] = [
 		"mgn:StartImport",
 		"mgn:TagResource",
 	];
 	/** IAM actions required for the StartImportFileEnrichment API call. */
-	static readonly START_IMPORT_FILE_ENRICHMENT: string[] = [
+	static readonly StartImportFileEnrichment: string[] = [
 		"mgn:StartImportFileEnrichment",
 	];
 	/** IAM actions required for the StartNetworkMigrationAnalysis API call. */
-	static readonly START_NETWORK_MIGRATION_ANALYSIS: string[] = [
+	static readonly StartNetworkMigrationAnalysis: string[] = [
 		"mgn:StartNetworkMigrationAnalysis",
 	];
 	/** IAM actions required for the StartNetworkMigrationCodeGeneration API call. */
-	static readonly START_NETWORK_MIGRATION_CODE_GENERATION: string[] = [
+	static readonly StartNetworkMigrationCodeGeneration: string[] = [
 		"mgn:StartNetworkMigrationCodeGeneration",
 	];
 	/** IAM actions required for the StartNetworkMigrationDeployment API call. */
-	static readonly START_NETWORK_MIGRATION_DEPLOYMENT: string[] = [
+	static readonly StartNetworkMigrationDeployment: string[] = [
 		"mgn:StartNetworkMigrationDeployment",
 	];
 	/** IAM actions required for the StartNetworkMigrationMapping API call. */
-	static readonly START_NETWORK_MIGRATION_MAPPING: string[] = [
+	static readonly StartNetworkMigrationMapping: string[] = [
 		"mgn:StartNetworkMigrationMapping",
 	];
 	/** IAM actions required for the StartNetworkMigrationMappingUpdate API call. */
-	static readonly START_NETWORK_MIGRATION_MAPPING_UPDATE: string[] = [
+	static readonly StartNetworkMigrationMappingUpdate: string[] = [
 		"mgn:StartNetworkMigrationMappingUpdate",
 	];
 	/** IAM actions required for the StartReplication API call. */
-	static readonly START_REPLICATION: string[] = ["mgn:StartReplication"];
+	static readonly StartReplication: string[] = ["mgn:StartReplication"];
 	/** IAM actions required for the StartTest API call. */
-	static readonly START_TEST: string[] = ["mgn:StartTest", "mgn:TagResource"];
+	static readonly StartTest: string[] = ["mgn:StartTest", "mgn:TagResource"];
 	/** IAM actions required for the StopReplication API call. */
-	static readonly STOP_REPLICATION: string[] = ["mgn:StopReplication"];
+	static readonly StopReplication: string[] = ["mgn:StopReplication"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["mgn:TagResource"];
+	static readonly TagResource: string[] = ["mgn:TagResource"];
 	/** IAM actions required for the TerminateTargetInstances API call. */
-	static readonly TERMINATE_TARGET_INSTANCES: string[] = [
+	static readonly TerminateTargetInstances: string[] = [
 		"mgn:TagResource",
 		"mgn:TerminateTargetInstances",
 	];
 	/** IAM actions required for the UnarchiveApplication API call. */
-	static readonly UNARCHIVE_APPLICATION: string[] = [
-		"mgn:UnarchiveApplication",
-	];
+	static readonly UnarchiveApplication: string[] = ["mgn:UnarchiveApplication"];
 	/** IAM actions required for the UnarchiveWave API call. */
-	static readonly UNARCHIVE_WAVE: string[] = ["mgn:UnarchiveWave"];
+	static readonly UnarchiveWave: string[] = ["mgn:UnarchiveWave"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["mgn:UntagResource"];
+	static readonly UntagResource: string[] = ["mgn:UntagResource"];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = ["mgn:UpdateApplication"];
+	static readonly UpdateApplication: string[] = ["mgn:UpdateApplication"];
 	/** IAM actions required for the UpdateConnector API call. */
-	static readonly UPDATE_CONNECTOR: string[] = ["mgn:UpdateConnector"];
+	static readonly UpdateConnector: string[] = ["mgn:UpdateConnector"];
 	/** IAM actions required for the UpdateLaunchConfiguration API call. */
-	static readonly UPDATE_LAUNCH_CONFIGURATION: string[] = [
+	static readonly UpdateLaunchConfiguration: string[] = [
 		"mgn:UpdateLaunchConfiguration",
 	];
 	/** IAM actions required for the UpdateLaunchConfigurationTemplate API call. */
-	static readonly UPDATE_LAUNCH_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly UpdateLaunchConfigurationTemplate: string[] = [
 		"mgn:UpdateLaunchConfigurationTemplate",
 	];
 	/** IAM actions required for the UpdateNetworkMigrationDefinition API call. */
-	static readonly UPDATE_NETWORK_MIGRATION_DEFINITION: string[] = [
+	static readonly UpdateNetworkMigrationDefinition: string[] = [
 		"mgn:UpdateNetworkMigrationDefinition",
 	];
 	/** IAM actions required for the UpdateNetworkMigrationMapperSegment API call. */
-	static readonly UPDATE_NETWORK_MIGRATION_MAPPER_SEGMENT: string[] = [
+	static readonly UpdateNetworkMigrationMapperSegment: string[] = [
 		"mgn:UpdateNetworkMigrationMapperSegment",
 	];
 	/** IAM actions required for the UpdateReplicationConfiguration API call. */
-	static readonly UPDATE_REPLICATION_CONFIGURATION: string[] = [
+	static readonly UpdateReplicationConfiguration: string[] = [
 		"mgn:UpdateReplicationConfiguration",
 	];
 	/** IAM actions required for the UpdateReplicationConfigurationTemplate API call. */
-	static readonly UPDATE_REPLICATION_CONFIGURATION_TEMPLATE: string[] = [
+	static readonly UpdateReplicationConfigurationTemplate: string[] = [
 		"mgn:UpdateReplicationConfigurationTemplate",
 	];
 	/** IAM actions required for the UpdateSourceServer API call. */
-	static readonly UPDATE_SOURCE_SERVER: string[] = ["mgn:UpdateSourceServer"];
+	static readonly UpdateSourceServer: string[] = ["mgn:UpdateSourceServer"];
 	/** IAM actions required for the UpdateSourceServerReplicationType API call. */
-	static readonly UPDATE_SOURCE_SERVER_REPLICATION_TYPE: string[] = [
+	static readonly UpdateSourceServerReplicationType: string[] = [
 		"mgn:UpdateSourceServerReplicationType",
 	];
 	/** IAM actions required for the UpdateWave API call. */
-	static readonly UPDATE_WAVE: string[] = ["mgn:UpdateWave"];
+	static readonly UpdateWave: string[] = ["mgn:UpdateWave"];
 }
 
 /**
@@ -1371,79 +1522,83 @@ export class MgnOperations {
  */
 export class MgnConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConnector action. */
-	static readonly CREATE_CONNECTOR_CONDITION_KEYS: string[] = [
+	static readonly CreateConnectorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateLaunchConfigurationTemplate action. */
-	static readonly CREATE_LAUNCH_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateLaunchConfigurationTemplateConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateNetworkMigrationDefinition action. */
-	static readonly CREATE_NETWORK_MIGRATION_DEFINITION_CONDITION_KEYS: string[] =
-		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	static readonly CreateNetworkMigrationDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateReplicationConfigurationTemplate action. */
-	static readonly CREATE_REPLICATION_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] =
+	static readonly CreateReplicationConfigurationTemplateConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the CreateVcenterClientForMgn action. */
-	static readonly CREATE_VCENTER_CLIENT_FOR_MGN_CONDITION_KEYS: string[] = [
+	static readonly CreateVcenterClientForMgnConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateWave action. */
-	static readonly CREATE_WAVE_CONDITION_KEYS: string[] = [
+	static readonly CreateWaveConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RegisterAgentForMgn action. */
-	static readonly REGISTER_AGENT_FOR_MGN_CONDITION_KEYS: string[] = [
+	static readonly RegisterAgentForMgnConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartCutover action. */
-	static readonly START_CUTOVER_CONDITION_KEYS: string[] = [
+	static readonly StartCutoverConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartExport action. */
-	static readonly START_EXPORT_CONDITION_KEYS: string[] = [
+	static readonly StartExportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartImport action. */
-	static readonly START_IMPORT_CONDITION_KEYS: string[] = [
+	static readonly StartImportConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the StartTest action. */
-	static readonly START_TEST_CONDITION_KEYS: string[] = [
+	static readonly StartTestConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"mgn:CreateAction",
 	];
 	/** Condition keys applicable to the TerminateTargetInstances action. */
-	static readonly TERMINATE_TARGET_INSTANCES_CONDITION_KEYS: string[] = [
+	static readonly TerminateTargetInstancesConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: mgn:CreateAction (String) */
 	static readonly CREATE_ACTION = "mgn:CreateAction";
 

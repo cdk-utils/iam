@@ -13,129 +13,154 @@ export class BillingActions {
 	static readonly SERVICE_PREFIX = "billing";
 
 	/** [Write] billing:AssociateSourceViews */
-	static readonly ASSOCIATE_SOURCE_VIEWS = "billing:AssociateSourceViews";
+	static readonly AssociateSourceViews = "billing:AssociateSourceViews";
 	/** [Write] billing:CreateBillingView */
-	static readonly CREATE_BILLING_VIEW = "billing:CreateBillingView";
+	static readonly CreateBillingView = "billing:CreateBillingView";
 	/** [Write] billing:DeleteBillingView */
-	static readonly DELETE_BILLING_VIEW = "billing:DeleteBillingView";
+	static readonly DeleteBillingView = "billing:DeleteBillingView";
 	/** [PermissionManagement] billing:DeleteResourcePolicy */
-	static readonly DELETE_RESOURCE_POLICY = "billing:DeleteResourcePolicy";
+	static readonly DeleteResourcePolicy = "billing:DeleteResourcePolicy";
 	/** [Write] billing:DisassociateSourceViews */
-	static readonly DISASSOCIATE_SOURCE_VIEWS = "billing:DisassociateSourceViews";
+	static readonly DisassociateSourceViews = "billing:DisassociateSourceViews";
 	/** [Read] billing:GetBillingData */
-	static readonly GET_BILLING_DATA = "billing:GetBillingData";
+	static readonly actionGetBillingData = "billing:GetBillingData";
 	/** [Read] billing:GetBillingDetails */
-	static readonly GET_BILLING_DETAILS = "billing:GetBillingDetails";
+	static readonly actionGetBillingDetails = "billing:GetBillingDetails";
 	/** [Read] billing:GetBillingNotifications */
-	static readonly GET_BILLING_NOTIFICATIONS = "billing:GetBillingNotifications";
+	static readonly actionGetBillingNotifications =
+		"billing:GetBillingNotifications";
 	/** [Read] billing:GetBillingPreferences */
-	static readonly GET_BILLING_PREFERENCES = "billing:GetBillingPreferences";
+	static readonly actionGetBillingPreferences = "billing:GetBillingPreferences";
 	/** [Read] billing:GetBillingView */
-	static readonly GET_BILLING_VIEW = "billing:GetBillingView";
+	static readonly actionGetBillingView = "billing:GetBillingView";
 	/** [Read] billing:GetBillingViewData */
-	static readonly GET_BILLING_VIEW_DATA = "billing:GetBillingViewData";
+	static readonly actionGetBillingViewData = "billing:GetBillingViewData";
 	/** [Read] billing:GetContractInformation */
-	static readonly GET_CONTRACT_INFORMATION = "billing:GetContractInformation";
+	static readonly actionGetContractInformation =
+		"billing:GetContractInformation";
 	/** [Read] billing:GetCreditAllocationHistory */
-	static readonly GET_CREDIT_ALLOCATION_HISTORY =
+	static readonly actionGetCreditAllocationHistory =
 		"billing:GetCreditAllocationHistory";
 	/** [Read] billing:GetCredits */
-	static readonly GET_CREDITS = "billing:GetCredits";
+	static readonly actionGetCredits = "billing:GetCredits";
 	/** [Read] billing:GetEnterpriseSupportChargeSummary */
-	static readonly GET_ENTERPRISE_SUPPORT_CHARGE_SUMMARY =
+	static readonly actionGetEnterpriseSupportChargeSummary =
 		"billing:GetEnterpriseSupportChargeSummary";
 	/** [Read] billing:GetEnterpriseSupportContractDetails */
-	static readonly GET_ENTERPRISE_SUPPORT_CONTRACT_DETAILS =
+	static readonly actionGetEnterpriseSupportContractDetails =
 		"billing:GetEnterpriseSupportContractDetails";
 	/** [Read] billing:GetIAMAccessPreference */
-	static readonly GET_IAM_ACCESS_PREFERENCE = "billing:GetIAMAccessPreference";
+	static readonly actionGetIAMAccessPreference =
+		"billing:GetIAMAccessPreference";
 	/** [PermissionManagement] billing:GetResourcePolicy */
-	static readonly GET_RESOURCE_POLICY = "billing:GetResourcePolicy";
+	static readonly actionGetResourcePolicy = "billing:GetResourcePolicy";
 	/** [Read] billing:GetSellerOfRecord */
-	static readonly GET_SELLER_OF_RECORD = "billing:GetSellerOfRecord";
+	static readonly actionGetSellerOfRecord = "billing:GetSellerOfRecord";
 	/** [Read] billing:ListBillingViews */
-	static readonly LIST_BILLING_VIEWS = "billing:ListBillingViews";
+	static readonly ListBillingViews = "billing:ListBillingViews";
 	/** [List] billing:ListEnterpriseSupportLinkedAccountCharges */
-	static readonly LIST_ENTERPRISE_SUPPORT_LINKED_ACCOUNT_CHARGES =
+	static readonly ListEnterpriseSupportLinkedAccountCharges =
 		"billing:ListEnterpriseSupportLinkedAccountCharges";
 	/** [List] billing:ListSourceViewsForBillingView */
-	static readonly LIST_SOURCE_VIEWS_FOR_BILLING_VIEW =
+	static readonly ListSourceViewsForBillingView =
 		"billing:ListSourceViewsForBillingView";
 	/** [Read] billing:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "billing:ListTagsForResource";
+	static readonly ListTagsForResource = "billing:ListTagsForResource";
 	/** [Write] billing:PutContractInformation */
-	static readonly PUT_CONTRACT_INFORMATION = "billing:PutContractInformation";
+	static readonly PutContractInformation = "billing:PutContractInformation";
 	/** [PermissionManagement] billing:PutResourcePolicy */
-	static readonly PUT_RESOURCE_POLICY = "billing:PutResourcePolicy";
+	static readonly PutResourcePolicy = "billing:PutResourcePolicy";
 	/** [Write] billing:RedeemCredits */
-	static readonly REDEEM_CREDITS = "billing:RedeemCredits";
+	static readonly RedeemCredits = "billing:RedeemCredits";
 	/** [Tagging] billing:TagResource */
-	static readonly TAG_RESOURCE = "billing:TagResource";
+	static readonly TagResource = "billing:TagResource";
 	/** [Tagging] billing:UntagResource */
-	static readonly UNTAG_RESOURCE = "billing:UntagResource";
+	static readonly UntagResource = "billing:UntagResource";
 	/** [Write] billing:UpdateBillingPreferences */
-	static readonly UPDATE_BILLING_PREFERENCES =
-		"billing:UpdateBillingPreferences";
+	static readonly UpdateBillingPreferences = "billing:UpdateBillingPreferences";
 	/** [Write] billing:UpdateBillingView */
-	static readonly UPDATE_BILLING_VIEW = "billing:UpdateBillingView";
+	static readonly UpdateBillingView = "billing:UpdateBillingView";
 	/** [Write] billing:UpdateIAMAccessPreference */
-	static readonly UPDATE_IAM_ACCESS_PREFERENCE =
+	static readonly UpdateIAMAccessPreference =
 		"billing:UpdateIAMAccessPreference";
 	/** [Read] billing:UseSourceView */
-	static readonly USE_SOURCE_VIEW = "billing:UseSourceView";
+	static readonly UseSourceView = "billing:UseSourceView";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		BillingActions.GET_BILLING_DATA,
-		BillingActions.GET_BILLING_DETAILS,
-		BillingActions.GET_BILLING_NOTIFICATIONS,
-		BillingActions.GET_BILLING_PREFERENCES,
-		BillingActions.GET_BILLING_VIEW,
-		BillingActions.GET_BILLING_VIEW_DATA,
-		BillingActions.GET_CONTRACT_INFORMATION,
-		BillingActions.GET_CREDIT_ALLOCATION_HISTORY,
-		BillingActions.GET_CREDITS,
-		BillingActions.GET_ENTERPRISE_SUPPORT_CHARGE_SUMMARY,
-		BillingActions.GET_ENTERPRISE_SUPPORT_CONTRACT_DETAILS,
-		BillingActions.GET_IAM_ACCESS_PREFERENCE,
-		BillingActions.GET_SELLER_OF_RECORD,
-		BillingActions.LIST_BILLING_VIEWS,
-		BillingActions.LIST_TAGS_FOR_RESOURCE,
-		BillingActions.USE_SOURCE_VIEW,
+	static readonly AllReadActions: string[] = [
+		BillingActions.actionGetBillingData,
+		BillingActions.actionGetBillingDetails,
+		BillingActions.actionGetBillingNotifications,
+		BillingActions.actionGetBillingPreferences,
+		BillingActions.actionGetBillingView,
+		BillingActions.actionGetBillingViewData,
+		BillingActions.actionGetContractInformation,
+		BillingActions.actionGetCreditAllocationHistory,
+		BillingActions.actionGetCredits,
+		BillingActions.actionGetEnterpriseSupportChargeSummary,
+		BillingActions.actionGetEnterpriseSupportContractDetails,
+		BillingActions.actionGetIAMAccessPreference,
+		BillingActions.actionGetSellerOfRecord,
+		BillingActions.ListBillingViews,
+		BillingActions.ListTagsForResource,
+		BillingActions.UseSourceView,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		BillingActions.ASSOCIATE_SOURCE_VIEWS,
-		BillingActions.CREATE_BILLING_VIEW,
-		BillingActions.DELETE_BILLING_VIEW,
-		BillingActions.DISASSOCIATE_SOURCE_VIEWS,
-		BillingActions.PUT_CONTRACT_INFORMATION,
-		BillingActions.REDEEM_CREDITS,
-		BillingActions.UPDATE_BILLING_PREFERENCES,
-		BillingActions.UPDATE_BILLING_VIEW,
-		BillingActions.UPDATE_IAM_ACCESS_PREFERENCE,
+	static readonly AllWriteActions: string[] = [
+		BillingActions.AssociateSourceViews,
+		BillingActions.CreateBillingView,
+		BillingActions.DeleteBillingView,
+		BillingActions.DisassociateSourceViews,
+		BillingActions.PutContractInformation,
+		BillingActions.RedeemCredits,
+		BillingActions.UpdateBillingPreferences,
+		BillingActions.UpdateBillingView,
+		BillingActions.UpdateIAMAccessPreference,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		BillingActions.LIST_ENTERPRISE_SUPPORT_LINKED_ACCOUNT_CHARGES,
-		BillingActions.LIST_SOURCE_VIEWS_FOR_BILLING_VIEW,
+	static readonly AllListActions: string[] = [
+		BillingActions.ListEnterpriseSupportLinkedAccountCharges,
+		BillingActions.ListSourceViewsForBillingView,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		BillingActions.DELETE_RESOURCE_POLICY,
-		BillingActions.GET_RESOURCE_POLICY,
-		BillingActions.PUT_RESOURCE_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		BillingActions.DeleteResourcePolicy,
+		BillingActions.actionGetResourcePolicy,
+		BillingActions.PutResourcePolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		BillingActions.TAG_RESOURCE,
-		BillingActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		BillingActions.TagResource,
+		BillingActions.UntagResource,
 	];
 }
 
-const BillingviewArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a billingview ARN.
+ */
+export interface BillingBillingviewArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a billingview ARN.
+ */
+export interface BillingBillingviewArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const BillingviewArnRegex =
+	/^arn:(?<partition>[^:]+):billing::(?<account>[^:]*):billingview\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for billing resources.
@@ -144,14 +169,7 @@ export class BillingResources {
 	/**
 	 * Builds an ARN for the billingview resource.
 	 */
-	static billingview(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static billingview(props: BillingBillingviewArnProps): string {
 		return `arn:${props.partition ?? "aws"}:billing::${props.account ?? "*"}:billingview/${props.resourceId}`;
 	}
 
@@ -166,11 +184,7 @@ export class BillingResources {
 	 * Parses a billingview ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseBillingviewArn(arn: string): {
-		partition: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseBillingviewArn(arn: string): BillingBillingviewArnComponents {
 		const match = BillingviewArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid billingview ARN: ${arn}`);
@@ -188,78 +202,78 @@ export class BillingResources {
  */
 export class BillingOperations {
 	/** IAM actions required for the AssociateSourceViews API call. */
-	static readonly ASSOCIATE_SOURCE_VIEWS: string[] = [
+	static readonly AssociateSourceViews: string[] = [
 		"billing:AssociateSourceViews",
 		"billing:UseSourceView",
 	];
 	/** IAM actions required for the CreateBillingView API call. */
-	static readonly CREATE_BILLING_VIEW: string[] = [
+	static readonly CreateBillingView: string[] = [
 		"billing:CreateBillingView",
 		"billing:TagResource",
 		"billing:UseSourceView",
 	];
 	/** IAM actions required for the DeleteBillingView API call. */
-	static readonly DELETE_BILLING_VIEW: string[] = ["billing:DeleteBillingView"];
+	static readonly DeleteBillingView: string[] = ["billing:DeleteBillingView"];
 	/** IAM actions required for the DisassociateSourceViews API call. */
-	static readonly DISASSOCIATE_SOURCE_VIEWS: string[] = [
+	static readonly DisassociateSourceViews: string[] = [
 		"billing:DisassociateSourceViews",
 	];
 	/** IAM actions required for the GetBillingPreferences API call. */
-	static readonly GET_BILLING_PREFERENCES: string[] = [
+	static readonly opGetBillingPreferences: string[] = [
 		"billing:GetBillingPreferences",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetBillingView API call. */
-	static readonly GET_BILLING_VIEW: string[] = ["billing:GetBillingView"];
+	static readonly opGetBillingView: string[] = ["billing:GetBillingView"];
 	/** IAM actions required for the GetCreditAllocationHistory API call. */
-	static readonly GET_CREDIT_ALLOCATION_HISTORY: string[] = [
+	static readonly opGetCreditAllocationHistory: string[] = [
 		"billing:GetCreditAllocationHistory",
 	];
 	/** IAM actions required for the GetCredits API call. */
-	static readonly GET_CREDITS: string[] = [
+	static readonly opGetCredits: string[] = [
 		"billing:GetCredits",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetEnterpriseSupportChargeSummary API call. */
-	static readonly GET_ENTERPRISE_SUPPORT_CHARGE_SUMMARY: string[] = [
+	static readonly opGetEnterpriseSupportChargeSummary: string[] = [
 		"billing:GetEnterpriseSupportChargeSummary",
 	];
 	/** IAM actions required for the GetEnterpriseSupportContractDetails API call. */
-	static readonly GET_ENTERPRISE_SUPPORT_CONTRACT_DETAILS: string[] = [
+	static readonly opGetEnterpriseSupportContractDetails: string[] = [
 		"billing:GetEnterpriseSupportContractDetails",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly GET_RESOURCE_POLICY: string[] = ["billing:GetResourcePolicy"];
+	static readonly opGetResourcePolicy: string[] = ["billing:GetResourcePolicy"];
 	/** IAM actions required for the ListBillingViews API call. */
-	static readonly LIST_BILLING_VIEWS: string[] = ["billing:ListBillingViews"];
+	static readonly ListBillingViews: string[] = ["billing:ListBillingViews"];
 	/** IAM actions required for the ListEnterpriseSupportLinkedAccountCharges API call. */
-	static readonly LIST_ENTERPRISE_SUPPORT_LINKED_ACCOUNT_CHARGES: string[] = [
+	static readonly ListEnterpriseSupportLinkedAccountCharges: string[] = [
 		"billing:ListEnterpriseSupportLinkedAccountCharges",
 	];
 	/** IAM actions required for the ListSourceViewsForBillingView API call. */
-	static readonly LIST_SOURCE_VIEWS_FOR_BILLING_VIEW: string[] = [
+	static readonly ListSourceViewsForBillingView: string[] = [
 		"billing:ListSourceViewsForBillingView",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"billing:ListTagsForResource",
 	];
 	/** IAM actions required for the RedeemCredits API call. */
-	static readonly REDEEM_CREDITS: string[] = [
+	static readonly RedeemCredits: string[] = [
 		"aws-portal:ModifyBilling",
 		"billing:RedeemCredits",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["billing:TagResource"];
+	static readonly TagResource: string[] = ["billing:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["billing:UntagResource"];
+	static readonly UntagResource: string[] = ["billing:UntagResource"];
 	/** IAM actions required for the UpdateBillingPreferences API call. */
-	static readonly UPDATE_BILLING_PREFERENCES: string[] = [
+	static readonly UpdateBillingPreferences: string[] = [
 		"aws-portal:ModifyBilling",
 		"billing:UpdateBillingPreferences",
 	];
 	/** IAM actions required for the UpdateBillingView API call. */
-	static readonly UPDATE_BILLING_VIEW: string[] = ["billing:UpdateBillingView"];
+	static readonly UpdateBillingView: string[] = ["billing:UpdateBillingView"];
 }
 
 /**
@@ -267,75 +281,76 @@ export class BillingOperations {
  */
 export class BillingConditions {
 	/** Condition keys applicable to the AssociateSourceViews action. */
-	static readonly ASSOCIATE_SOURCE_VIEWS_CONDITION_KEYS: string[] = [
+	static readonly AssociateSourceViewsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateBillingView action. */
-	static readonly CREATE_BILLING_VIEW_CONDITION_KEYS: string[] = [
+	static readonly CreateBillingViewConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteBillingView action. */
-	static readonly DELETE_BILLING_VIEW_CONDITION_KEYS: string[] = [
+	static readonly DeleteBillingViewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteResourcePolicy action. */
-	static readonly DELETE_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DisassociateSourceViews action. */
-	static readonly DISASSOCIATE_SOURCE_VIEWS_CONDITION_KEYS: string[] = [
+	static readonly DisassociateSourceViewsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetBillingData action. */
-	static readonly GET_BILLING_DATA_CONDITION_KEYS: string[] = [
+	static readonly actionGetBillingDataConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetBillingDetails action. */
-	static readonly GET_BILLING_DETAILS_CONDITION_KEYS: string[] = [
+	static readonly actionGetBillingDetailsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetBillingView action. */
-	static readonly GET_BILLING_VIEW_CONDITION_KEYS: string[] = [
+	static readonly actionGetBillingViewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetResourcePolicy action. */
-	static readonly GET_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListSourceViewsForBillingView action. */
-	static readonly LIST_SOURCE_VIEWS_FOR_BILLING_VIEW_CONDITION_KEYS: string[] =
-		["aws:ResourceTag/${TagKey}"];
+	static readonly ListSourceViewsForBillingViewConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the PutResourcePolicy action. */
-	static readonly PUT_RESOURCE_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateBillingView action. */
-	static readonly UPDATE_BILLING_VIEW_CONDITION_KEYS: string[] = [
+	static readonly UpdateBillingViewConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

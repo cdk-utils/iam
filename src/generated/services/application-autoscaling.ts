@@ -13,79 +13,105 @@ export class ApplicationAutoscalingActions {
 	static readonly SERVICE_PREFIX = "application-autoscaling";
 
 	/** [Write] application-autoscaling:DeleteScalingPolicy */
-	static readonly DELETE_SCALING_POLICY =
+	static readonly DeleteScalingPolicy =
 		"application-autoscaling:DeleteScalingPolicy";
 	/** [Write] application-autoscaling:DeleteScheduledAction */
-	static readonly DELETE_SCHEDULED_ACTION =
+	static readonly DeleteScheduledAction =
 		"application-autoscaling:DeleteScheduledAction";
 	/** [Write] application-autoscaling:DeregisterScalableTarget */
-	static readonly DEREGISTER_SCALABLE_TARGET =
+	static readonly DeregisterScalableTarget =
 		"application-autoscaling:DeregisterScalableTarget";
 	/** [Read] application-autoscaling:DescribeScalableTargets */
-	static readonly DESCRIBE_SCALABLE_TARGETS =
+	static readonly DescribeScalableTargets =
 		"application-autoscaling:DescribeScalableTargets";
 	/** [Read] application-autoscaling:DescribeScalingActivities */
-	static readonly DESCRIBE_SCALING_ACTIVITIES =
+	static readonly DescribeScalingActivities =
 		"application-autoscaling:DescribeScalingActivities";
 	/** [Read] application-autoscaling:DescribeScalingPolicies */
-	static readonly DESCRIBE_SCALING_POLICIES =
+	static readonly DescribeScalingPolicies =
 		"application-autoscaling:DescribeScalingPolicies";
 	/** [Read] application-autoscaling:DescribeScheduledActions */
-	static readonly DESCRIBE_SCHEDULED_ACTIONS =
+	static readonly DescribeScheduledActions =
 		"application-autoscaling:DescribeScheduledActions";
 	/** [List] application-autoscaling:GetPredictiveScalingForecast */
-	static readonly GET_PREDICTIVE_SCALING_FORECAST =
+	static readonly actionGetPredictiveScalingForecast =
 		"application-autoscaling:GetPredictiveScalingForecast";
 	/** [Read] application-autoscaling:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
+	static readonly ListTagsForResource =
 		"application-autoscaling:ListTagsForResource";
 	/** [Write] application-autoscaling:PutScalingPolicy */
-	static readonly PUT_SCALING_POLICY =
-		"application-autoscaling:PutScalingPolicy";
+	static readonly PutScalingPolicy = "application-autoscaling:PutScalingPolicy";
 	/** [Write] application-autoscaling:PutScheduledAction */
-	static readonly PUT_SCHEDULED_ACTION =
+	static readonly PutScheduledAction =
 		"application-autoscaling:PutScheduledAction";
 	/** [Write] application-autoscaling:RegisterScalableTarget */
-	static readonly REGISTER_SCALABLE_TARGET =
+	static readonly RegisterScalableTarget =
 		"application-autoscaling:RegisterScalableTarget";
 	/** [Tagging] application-autoscaling:TagResource */
-	static readonly TAG_RESOURCE = "application-autoscaling:TagResource";
+	static readonly TagResource = "application-autoscaling:TagResource";
 	/** [Tagging] application-autoscaling:UntagResource */
-	static readonly UNTAG_RESOURCE = "application-autoscaling:UntagResource";
+	static readonly UntagResource = "application-autoscaling:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ApplicationAutoscalingActions.DESCRIBE_SCALABLE_TARGETS,
-		ApplicationAutoscalingActions.DESCRIBE_SCALING_ACTIVITIES,
-		ApplicationAutoscalingActions.DESCRIBE_SCALING_POLICIES,
-		ApplicationAutoscalingActions.DESCRIBE_SCHEDULED_ACTIONS,
-		ApplicationAutoscalingActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		ApplicationAutoscalingActions.DescribeScalableTargets,
+		ApplicationAutoscalingActions.DescribeScalingActivities,
+		ApplicationAutoscalingActions.DescribeScalingPolicies,
+		ApplicationAutoscalingActions.DescribeScheduledActions,
+		ApplicationAutoscalingActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ApplicationAutoscalingActions.DELETE_SCALING_POLICY,
-		ApplicationAutoscalingActions.DELETE_SCHEDULED_ACTION,
-		ApplicationAutoscalingActions.DEREGISTER_SCALABLE_TARGET,
-		ApplicationAutoscalingActions.PUT_SCALING_POLICY,
-		ApplicationAutoscalingActions.PUT_SCHEDULED_ACTION,
-		ApplicationAutoscalingActions.REGISTER_SCALABLE_TARGET,
+	static readonly AllWriteActions: string[] = [
+		ApplicationAutoscalingActions.DeleteScalingPolicy,
+		ApplicationAutoscalingActions.DeleteScheduledAction,
+		ApplicationAutoscalingActions.DeregisterScalableTarget,
+		ApplicationAutoscalingActions.PutScalingPolicy,
+		ApplicationAutoscalingActions.PutScheduledAction,
+		ApplicationAutoscalingActions.RegisterScalableTarget,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ApplicationAutoscalingActions.GET_PREDICTIVE_SCALING_FORECAST,
+	static readonly AllListActions: string[] = [
+		ApplicationAutoscalingActions.actionGetPredictiveScalingForecast,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ApplicationAutoscalingActions.TAG_RESOURCE,
-		ApplicationAutoscalingActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ApplicationAutoscalingActions.TagResource,
+		ApplicationAutoscalingActions.UntagResource,
 	];
 }
 
-const ScalableTargetArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):application-autoscaling:(?<region>[^:]*):(?<account>[^:]*):scalable-target/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a ScalableTarget ARN.
+ */
+export interface ApplicationAutoscalingScalableTargetArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ScalableTarget ARN.
+ */
+export interface ApplicationAutoscalingScalableTargetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ScalableTargetArnRegex =
+	/^arn:(?<partition>[^:]+):application-autoscaling:(?<region>[^:]*):(?<account>[^:]*):scalable-target\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for application-autoscaling resources.
@@ -94,16 +120,9 @@ export class ApplicationAutoscalingResources {
 	/**
 	 * Builds an ARN for the ScalableTarget resource.
 	 */
-	static scalableTarget(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static scalableTarget(
+		props: ApplicationAutoscalingScalableTargetArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:application-autoscaling:${props.region ?? "*"}:${props.account ?? "*"}:scalable-target/${props.resourceId}`;
 	}
 
@@ -118,12 +137,9 @@ export class ApplicationAutoscalingResources {
 	 * Parses a ScalableTarget ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseScalableTargetArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseScalableTargetArn(
+		arn: string,
+	): ApplicationAutoscalingScalableTargetArnComponents {
 		const match = ScalableTargetArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid ScalableTarget ARN: ${arn}`);
@@ -142,61 +158,61 @@ export class ApplicationAutoscalingResources {
  */
 export class ApplicationAutoscalingOperations {
 	/** IAM actions required for the DeleteScalingPolicy API call. */
-	static readonly DELETE_SCALING_POLICY: string[] = [
+	static readonly DeleteScalingPolicy: string[] = [
 		"application-autoscaling:DeleteScalingPolicy",
 	];
 	/** IAM actions required for the DeleteScheduledAction API call. */
-	static readonly DELETE_SCHEDULED_ACTION: string[] = [
+	static readonly DeleteScheduledAction: string[] = [
 		"application-autoscaling:DeleteScheduledAction",
 	];
 	/** IAM actions required for the DeregisterScalableTarget API call. */
-	static readonly DEREGISTER_SCALABLE_TARGET: string[] = [
+	static readonly DeregisterScalableTarget: string[] = [
 		"application-autoscaling:DeregisterScalableTarget",
 	];
 	/** IAM actions required for the DescribeScalableTargets API call. */
-	static readonly DESCRIBE_SCALABLE_TARGETS: string[] = [
+	static readonly DescribeScalableTargets: string[] = [
 		"application-autoscaling:DescribeScalableTargets",
 	];
 	/** IAM actions required for the DescribeScalingActivities API call. */
-	static readonly DESCRIBE_SCALING_ACTIVITIES: string[] = [
+	static readonly DescribeScalingActivities: string[] = [
 		"application-autoscaling:DescribeScalingActivities",
 	];
 	/** IAM actions required for the DescribeScalingPolicies API call. */
-	static readonly DESCRIBE_SCALING_POLICIES: string[] = [
+	static readonly DescribeScalingPolicies: string[] = [
 		"application-autoscaling:DescribeScalingPolicies",
 	];
 	/** IAM actions required for the DescribeScheduledActions API call. */
-	static readonly DESCRIBE_SCHEDULED_ACTIONS: string[] = [
+	static readonly DescribeScheduledActions: string[] = [
 		"application-autoscaling:DescribeScheduledActions",
 	];
 	/** IAM actions required for the GetPredictiveScalingForecast API call. */
-	static readonly GET_PREDICTIVE_SCALING_FORECAST: string[] = [
+	static readonly opGetPredictiveScalingForecast: string[] = [
 		"application-autoscaling:GetPredictiveScalingForecast",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"application-autoscaling:ListTagsForResource",
 	];
 	/** IAM actions required for the PutScalingPolicy API call. */
-	static readonly PUT_SCALING_POLICY: string[] = [
+	static readonly PutScalingPolicy: string[] = [
 		"application-autoscaling:PutScalingPolicy",
 	];
 	/** IAM actions required for the PutScheduledAction API call. */
-	static readonly PUT_SCHEDULED_ACTION: string[] = [
+	static readonly PutScheduledAction: string[] = [
 		"application-autoscaling:PutScheduledAction",
 	];
 	/** IAM actions required for the RegisterScalableTarget API call. */
-	static readonly REGISTER_SCALABLE_TARGET: string[] = [
+	static readonly RegisterScalableTarget: string[] = [
 		"iam:PassRole",
 		"application-autoscaling:RegisterScalableTarget",
 		"application-autoscaling:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = [
+	static readonly TagResource: string[] = [
 		"application-autoscaling:TagResource",
 	];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = [
+	static readonly UntagResource: string[] = [
 		"application-autoscaling:UntagResource",
 	];
 }
@@ -206,44 +222,44 @@ export class ApplicationAutoscalingOperations {
  */
 export class ApplicationAutoscalingConditions {
 	/** Condition keys applicable to the DeleteScalingPolicy action. */
-	static readonly DELETE_SCALING_POLICY_CONDITION_KEYS: string[] = [
+	static readonly DeleteScalingPolicyConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 	];
 	/** Condition keys applicable to the DeleteScheduledAction action. */
-	static readonly DELETE_SCHEDULED_ACTION_CONDITION_KEYS: string[] = [
+	static readonly DeleteScheduledActionConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 	];
 	/** Condition keys applicable to the DeregisterScalableTarget action. */
-	static readonly DEREGISTER_SCALABLE_TARGET_CONDITION_KEYS: string[] = [
+	static readonly DeregisterScalableTargetConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 	];
 	/** Condition keys applicable to the PutScalingPolicy action. */
-	static readonly PUT_SCALING_POLICY_CONDITION_KEYS: string[] = [
+	static readonly PutScalingPolicyConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 	];
 	/** Condition keys applicable to the PutScheduledAction action. */
-	static readonly PUT_SCHEDULED_ACTION_CONDITION_KEYS: string[] = [
+	static readonly PutScheduledActionConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 	];
 	/** Condition keys applicable to the RegisterScalableTarget action. */
-	static readonly REGISTER_SCALABLE_TARGET_CONDITION_KEYS: string[] = [
+	static readonly RegisterScalableTargetConditionKeys: string[] = [
 		"application-autoscaling:scalable-dimension",
 		"application-autoscaling:service-namespace",
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: application-autoscaling:scalable-dimension (String) */
 	static readonly SCALABLE_DIMENSION =
@@ -252,11 +268,11 @@ export class ApplicationAutoscalingConditions {
 	static readonly SERVICE_NAMESPACE =
 		"application-autoscaling:service-namespace";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `application-autoscaling:scalable-dimension`.

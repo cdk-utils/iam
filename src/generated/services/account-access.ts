@@ -13,58 +13,85 @@ export class AccountAccessActions {
 	static readonly SERVICE_PREFIX = "account-access";
 
 	/** [Write] account-access:CreateApplication */
-	static readonly CREATE_APPLICATION = "account-access:CreateApplication";
+	static readonly CreateApplication = "account-access:CreateApplication";
 	/** [Write] account-access:CreateEntitlement */
-	static readonly CREATE_ENTITLEMENT = "account-access:CreateEntitlement";
+	static readonly CreateEntitlement = "account-access:CreateEntitlement";
 	/** [Write] account-access:DeleteApplication */
-	static readonly DELETE_APPLICATION = "account-access:DeleteApplication";
+	static readonly DeleteApplication = "account-access:DeleteApplication";
 	/** [Write] account-access:DeleteEntitlement */
-	static readonly DELETE_ENTITLEMENT = "account-access:DeleteEntitlement";
+	static readonly DeleteEntitlement = "account-access:DeleteEntitlement";
 	/** [Read] account-access:GetApplication */
-	static readonly GET_APPLICATION = "account-access:GetApplication";
+	static readonly actionGetApplication = "account-access:GetApplication";
 	/** [Read] account-access:GetEntitlement */
-	static readonly GET_ENTITLEMENT = "account-access:GetEntitlement";
+	static readonly actionGetEntitlement = "account-access:GetEntitlement";
 	/** [List] account-access:ListApplications */
-	static readonly LIST_APPLICATIONS = "account-access:ListApplications";
+	static readonly ListApplications = "account-access:ListApplications";
 	/** [List] account-access:ListEntitlements */
-	static readonly LIST_ENTITLEMENTS = "account-access:ListEntitlements";
+	static readonly ListEntitlements = "account-access:ListEntitlements";
 	/** [Read] account-access:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "account-access:ListTagsForResource";
+	static readonly ListTagsForResource = "account-access:ListTagsForResource";
 	/** [Tagging] account-access:TagResource */
-	static readonly TAG_RESOURCE = "account-access:TagResource";
+	static readonly TagResource = "account-access:TagResource";
 	/** [Tagging] account-access:UntagResource */
-	static readonly UNTAG_RESOURCE = "account-access:UntagResource";
+	static readonly UntagResource = "account-access:UntagResource";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AccountAccessActions.GET_APPLICATION,
-		AccountAccessActions.GET_ENTITLEMENT,
-		AccountAccessActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AccountAccessActions.actionGetApplication,
+		AccountAccessActions.actionGetEntitlement,
+		AccountAccessActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AccountAccessActions.CREATE_APPLICATION,
-		AccountAccessActions.CREATE_ENTITLEMENT,
-		AccountAccessActions.DELETE_APPLICATION,
-		AccountAccessActions.DELETE_ENTITLEMENT,
+	static readonly AllWriteActions: string[] = [
+		AccountAccessActions.CreateApplication,
+		AccountAccessActions.CreateEntitlement,
+		AccountAccessActions.DeleteApplication,
+		AccountAccessActions.DeleteEntitlement,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		AccountAccessActions.LIST_APPLICATIONS,
-		AccountAccessActions.LIST_ENTITLEMENTS,
+	static readonly AllListActions: string[] = [
+		AccountAccessActions.ListApplications,
+		AccountAccessActions.ListEntitlements,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AccountAccessActions.TAG_RESOURCE,
-		AccountAccessActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AccountAccessActions.TagResource,
+		AccountAccessActions.UntagResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):account-access:(?<region>[^:]*):(?<account>[^:]*):application/(?<resourceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface AccountAccessApplicationArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface AccountAccessApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):account-access:(?<region>[^:]*):(?<account>[^:]*):application\/(?<resourceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for account-access resources.
@@ -73,16 +100,7 @@ export class AccountAccessResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: AccountAccessApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:account-access:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.resourceId}`;
 	}
 
@@ -97,12 +115,9 @@ export class AccountAccessResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		resourceId: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): AccountAccessApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -121,42 +136,46 @@ export class AccountAccessResources {
  */
 export class AccountAccessOperations {
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [
+	static readonly CreateApplication: string[] = [
 		"account-access:CreateApplication",
 		"account-access:TagResource",
 	];
 	/** IAM actions required for the CreateEntitlement API call. */
-	static readonly CREATE_ENTITLEMENT: string[] = [
+	static readonly CreateEntitlement: string[] = [
 		"account-access:CreateEntitlement",
 	];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [
+	static readonly DeleteApplication: string[] = [
 		"account-access:DeleteApplication",
 	];
 	/** IAM actions required for the DeleteEntitlement API call. */
-	static readonly DELETE_ENTITLEMENT: string[] = [
+	static readonly DeleteEntitlement: string[] = [
 		"account-access:DeleteEntitlement",
 	];
 	/** IAM actions required for the GetApplication API call. */
-	static readonly GET_APPLICATION: string[] = ["account-access:GetApplication"];
+	static readonly opGetApplication: string[] = [
+		"account-access:GetApplication",
+	];
 	/** IAM actions required for the GetEntitlement API call. */
-	static readonly GET_ENTITLEMENT: string[] = ["account-access:GetEntitlement"];
+	static readonly opGetEntitlement: string[] = [
+		"account-access:GetEntitlement",
+	];
 	/** IAM actions required for the ListApplications API call. */
-	static readonly LIST_APPLICATIONS: string[] = [
+	static readonly ListApplications: string[] = [
 		"account-access:ListApplications",
 	];
 	/** IAM actions required for the ListEntitlements API call. */
-	static readonly LIST_ENTITLEMENTS: string[] = [
+	static readonly ListEntitlements: string[] = [
 		"account-access:ListEntitlements",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"account-access:ListTagsForResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["account-access:TagResource"];
+	static readonly TagResource: string[] = ["account-access:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["account-access:UntagResource"];
+	static readonly UntagResource: string[] = ["account-access:UntagResource"];
 }
 
 /**
@@ -164,29 +183,29 @@ export class AccountAccessOperations {
  */
 export class AccountAccessConditions {
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

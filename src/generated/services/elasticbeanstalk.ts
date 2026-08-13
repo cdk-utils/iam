@@ -13,229 +13,402 @@ export class ElasticBeanstalkActions {
 	static readonly SERVICE_PREFIX = "elasticbeanstalk";
 
 	/** [Write] elasticbeanstalk:AbortEnvironmentUpdate */
-	static readonly ABORT_ENVIRONMENT_UPDATE =
+	static readonly AbortEnvironmentUpdate =
 		"elasticbeanstalk:AbortEnvironmentUpdate";
 	/** [Tagging] elasticbeanstalk:AddTags */
-	static readonly ADD_TAGS = "elasticbeanstalk:AddTags";
+	static readonly AddTags = "elasticbeanstalk:AddTags";
 	/** [Write] elasticbeanstalk:ApplyEnvironmentManagedAction */
-	static readonly APPLY_ENVIRONMENT_MANAGED_ACTION =
+	static readonly ApplyEnvironmentManagedAction =
 		"elasticbeanstalk:ApplyEnvironmentManagedAction";
 	/** [Write] elasticbeanstalk:AssociateEnvironmentOperationsRole */
-	static readonly ASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE =
+	static readonly AssociateEnvironmentOperationsRole =
 		"elasticbeanstalk:AssociateEnvironmentOperationsRole";
 	/** [Read] elasticbeanstalk:CheckDNSAvailability */
-	static readonly CHECK_DNS_AVAILABILITY =
+	static readonly CheckDNSAvailability =
 		"elasticbeanstalk:CheckDNSAvailability";
 	/** [Write] elasticbeanstalk:ComposeEnvironments */
-	static readonly COMPOSE_ENVIRONMENTS = "elasticbeanstalk:ComposeEnvironments";
+	static readonly ComposeEnvironments = "elasticbeanstalk:ComposeEnvironments";
 	/** [Write] elasticbeanstalk:CreateApplication */
-	static readonly CREATE_APPLICATION = "elasticbeanstalk:CreateApplication";
+	static readonly CreateApplication = "elasticbeanstalk:CreateApplication";
 	/** [Write] elasticbeanstalk:CreateApplicationVersion */
-	static readonly CREATE_APPLICATION_VERSION =
+	static readonly CreateApplicationVersion =
 		"elasticbeanstalk:CreateApplicationVersion";
 	/** [Write] elasticbeanstalk:CreateConfigurationTemplate */
-	static readonly CREATE_CONFIGURATION_TEMPLATE =
+	static readonly CreateConfigurationTemplate =
 		"elasticbeanstalk:CreateConfigurationTemplate";
 	/** [Write] elasticbeanstalk:CreateEnvironment */
-	static readonly CREATE_ENVIRONMENT = "elasticbeanstalk:CreateEnvironment";
+	static readonly CreateEnvironment = "elasticbeanstalk:CreateEnvironment";
 	/** [Write] elasticbeanstalk:CreatePlatformVersion */
-	static readonly CREATE_PLATFORM_VERSION =
+	static readonly CreatePlatformVersion =
 		"elasticbeanstalk:CreatePlatformVersion";
 	/** [Write] elasticbeanstalk:CreateStorageLocation */
-	static readonly CREATE_STORAGE_LOCATION =
+	static readonly CreateStorageLocation =
 		"elasticbeanstalk:CreateStorageLocation";
 	/** [Write] elasticbeanstalk:DeleteApplication */
-	static readonly DELETE_APPLICATION = "elasticbeanstalk:DeleteApplication";
+	static readonly DeleteApplication = "elasticbeanstalk:DeleteApplication";
 	/** [Write] elasticbeanstalk:DeleteApplicationVersion */
-	static readonly DELETE_APPLICATION_VERSION =
+	static readonly DeleteApplicationVersion =
 		"elasticbeanstalk:DeleteApplicationVersion";
 	/** [Write] elasticbeanstalk:DeleteConfigurationTemplate */
-	static readonly DELETE_CONFIGURATION_TEMPLATE =
+	static readonly DeleteConfigurationTemplate =
 		"elasticbeanstalk:DeleteConfigurationTemplate";
 	/** [Write] elasticbeanstalk:DeleteEnvironmentConfiguration */
-	static readonly DELETE_ENVIRONMENT_CONFIGURATION =
+	static readonly DeleteEnvironmentConfiguration =
 		"elasticbeanstalk:DeleteEnvironmentConfiguration";
 	/** [Write] elasticbeanstalk:DeletePlatformVersion */
-	static readonly DELETE_PLATFORM_VERSION =
+	static readonly DeletePlatformVersion =
 		"elasticbeanstalk:DeletePlatformVersion";
 	/** [Read] elasticbeanstalk:DescribeAccountAttributes */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES =
+	static readonly DescribeAccountAttributes =
 		"elasticbeanstalk:DescribeAccountAttributes";
 	/** [List] elasticbeanstalk:DescribeApplicationVersions */
-	static readonly DESCRIBE_APPLICATION_VERSIONS =
+	static readonly DescribeApplicationVersions =
 		"elasticbeanstalk:DescribeApplicationVersions";
 	/** [List] elasticbeanstalk:DescribeApplications */
-	static readonly DESCRIBE_APPLICATIONS =
+	static readonly DescribeApplications =
 		"elasticbeanstalk:DescribeApplications";
 	/** [Read] elasticbeanstalk:DescribeConfigurationOptions */
-	static readonly DESCRIBE_CONFIGURATION_OPTIONS =
+	static readonly DescribeConfigurationOptions =
 		"elasticbeanstalk:DescribeConfigurationOptions";
 	/** [Read] elasticbeanstalk:DescribeConfigurationSettings */
-	static readonly DESCRIBE_CONFIGURATION_SETTINGS =
+	static readonly DescribeConfigurationSettings =
 		"elasticbeanstalk:DescribeConfigurationSettings";
 	/** [Read] elasticbeanstalk:DescribeEnvironmentHealth */
-	static readonly DESCRIBE_ENVIRONMENT_HEALTH =
+	static readonly DescribeEnvironmentHealth =
 		"elasticbeanstalk:DescribeEnvironmentHealth";
 	/** [Read] elasticbeanstalk:DescribeEnvironmentManagedActionHistory */
-	static readonly DESCRIBE_ENVIRONMENT_MANAGED_ACTION_HISTORY =
+	static readonly DescribeEnvironmentManagedActionHistory =
 		"elasticbeanstalk:DescribeEnvironmentManagedActionHistory";
 	/** [Read] elasticbeanstalk:DescribeEnvironmentManagedActions */
-	static readonly DESCRIBE_ENVIRONMENT_MANAGED_ACTIONS =
+	static readonly DescribeEnvironmentManagedActions =
 		"elasticbeanstalk:DescribeEnvironmentManagedActions";
 	/** [Read] elasticbeanstalk:DescribeEnvironmentResources */
-	static readonly DESCRIBE_ENVIRONMENT_RESOURCES =
+	static readonly DescribeEnvironmentResources =
 		"elasticbeanstalk:DescribeEnvironmentResources";
 	/** [List] elasticbeanstalk:DescribeEnvironments */
-	static readonly DESCRIBE_ENVIRONMENTS =
+	static readonly DescribeEnvironments =
 		"elasticbeanstalk:DescribeEnvironments";
 	/** [Read] elasticbeanstalk:DescribeEvents */
-	static readonly DESCRIBE_EVENTS = "elasticbeanstalk:DescribeEvents";
+	static readonly DescribeEvents = "elasticbeanstalk:DescribeEvents";
 	/** [Read] elasticbeanstalk:DescribeInstancesHealth */
-	static readonly DESCRIBE_INSTANCES_HEALTH =
+	static readonly DescribeInstancesHealth =
 		"elasticbeanstalk:DescribeInstancesHealth";
 	/** [Read] elasticbeanstalk:DescribePlatformVersion */
-	static readonly DESCRIBE_PLATFORM_VERSION =
+	static readonly DescribePlatformVersion =
 		"elasticbeanstalk:DescribePlatformVersion";
 	/** [Write] elasticbeanstalk:DisassociateEnvironmentOperationsRole */
-	static readonly DISASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE =
+	static readonly DisassociateEnvironmentOperationsRole =
 		"elasticbeanstalk:DisassociateEnvironmentOperationsRole";
 	/** [List] elasticbeanstalk:ListAvailableSolutionStacks */
-	static readonly LIST_AVAILABLE_SOLUTION_STACKS =
+	static readonly ListAvailableSolutionStacks =
 		"elasticbeanstalk:ListAvailableSolutionStacks";
 	/** [List] elasticbeanstalk:ListPlatformBranches */
-	static readonly LIST_PLATFORM_BRANCHES =
+	static readonly ListPlatformBranches =
 		"elasticbeanstalk:ListPlatformBranches";
 	/** [List] elasticbeanstalk:ListPlatformVersions */
-	static readonly LIST_PLATFORM_VERSIONS =
+	static readonly ListPlatformVersions =
 		"elasticbeanstalk:ListPlatformVersions";
 	/** [Read] elasticbeanstalk:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"elasticbeanstalk:ListTagsForResource";
+	static readonly ListTagsForResource = "elasticbeanstalk:ListTagsForResource";
 	/** [Write] elasticbeanstalk:PutInstanceStatistics */
-	static readonly PUT_INSTANCE_STATISTICS =
+	static readonly PutInstanceStatistics =
 		"elasticbeanstalk:PutInstanceStatistics";
 	/** [Write] elasticbeanstalk:RebuildEnvironment */
-	static readonly REBUILD_ENVIRONMENT = "elasticbeanstalk:RebuildEnvironment";
+	static readonly RebuildEnvironment = "elasticbeanstalk:RebuildEnvironment";
 	/** [Tagging] elasticbeanstalk:RemoveTags */
-	static readonly REMOVE_TAGS = "elasticbeanstalk:RemoveTags";
+	static readonly RemoveTags = "elasticbeanstalk:RemoveTags";
 	/** [Read] elasticbeanstalk:RequestEnvironmentInfo */
-	static readonly REQUEST_ENVIRONMENT_INFO =
+	static readonly RequestEnvironmentInfo =
 		"elasticbeanstalk:RequestEnvironmentInfo";
 	/** [Write] elasticbeanstalk:RestartAppServer */
-	static readonly RESTART_APP_SERVER = "elasticbeanstalk:RestartAppServer";
+	static readonly RestartAppServer = "elasticbeanstalk:RestartAppServer";
 	/** [Read] elasticbeanstalk:RetrieveEnvironmentInfo */
-	static readonly RETRIEVE_ENVIRONMENT_INFO =
+	static readonly RetrieveEnvironmentInfo =
 		"elasticbeanstalk:RetrieveEnvironmentInfo";
 	/** [Write] elasticbeanstalk:SwapEnvironmentCNAMEs */
-	static readonly SWAP_ENVIRONMENT_CNAM_ES =
+	static readonly SwapEnvironmentCNAMEs =
 		"elasticbeanstalk:SwapEnvironmentCNAMEs";
 	/** [Write] elasticbeanstalk:TerminateEnvironment */
-	static readonly TERMINATE_ENVIRONMENT =
+	static readonly TerminateEnvironment =
 		"elasticbeanstalk:TerminateEnvironment";
 	/** [Write] elasticbeanstalk:UpdateApplication */
-	static readonly UPDATE_APPLICATION = "elasticbeanstalk:UpdateApplication";
+	static readonly UpdateApplication = "elasticbeanstalk:UpdateApplication";
 	/** [Write] elasticbeanstalk:UpdateApplicationResourceLifecycle */
-	static readonly UPDATE_APPLICATION_RESOURCE_LIFECYCLE =
+	static readonly UpdateApplicationResourceLifecycle =
 		"elasticbeanstalk:UpdateApplicationResourceLifecycle";
 	/** [Write] elasticbeanstalk:UpdateApplicationVersion */
-	static readonly UPDATE_APPLICATION_VERSION =
+	static readonly UpdateApplicationVersion =
 		"elasticbeanstalk:UpdateApplicationVersion";
 	/** [Write] elasticbeanstalk:UpdateConfigurationTemplate */
-	static readonly UPDATE_CONFIGURATION_TEMPLATE =
+	static readonly UpdateConfigurationTemplate =
 		"elasticbeanstalk:UpdateConfigurationTemplate";
 	/** [Write] elasticbeanstalk:UpdateEnvironment */
-	static readonly UPDATE_ENVIRONMENT = "elasticbeanstalk:UpdateEnvironment";
+	static readonly UpdateEnvironment = "elasticbeanstalk:UpdateEnvironment";
 	/** [Tagging] elasticbeanstalk:UpdateTagsForResource */
-	static readonly UPDATE_TAGS_FOR_RESOURCE =
+	static readonly UpdateTagsForResource =
 		"elasticbeanstalk:UpdateTagsForResource";
 	/** [Read] elasticbeanstalk:ValidateConfigurationSettings */
-	static readonly VALIDATE_CONFIGURATION_SETTINGS =
+	static readonly ValidateConfigurationSettings =
 		"elasticbeanstalk:ValidateConfigurationSettings";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		ElasticBeanstalkActions.CHECK_DNS_AVAILABILITY,
-		ElasticBeanstalkActions.DESCRIBE_ACCOUNT_ATTRIBUTES,
-		ElasticBeanstalkActions.DESCRIBE_CONFIGURATION_OPTIONS,
-		ElasticBeanstalkActions.DESCRIBE_CONFIGURATION_SETTINGS,
-		ElasticBeanstalkActions.DESCRIBE_ENVIRONMENT_HEALTH,
-		ElasticBeanstalkActions.DESCRIBE_ENVIRONMENT_MANAGED_ACTION_HISTORY,
-		ElasticBeanstalkActions.DESCRIBE_ENVIRONMENT_MANAGED_ACTIONS,
-		ElasticBeanstalkActions.DESCRIBE_ENVIRONMENT_RESOURCES,
-		ElasticBeanstalkActions.DESCRIBE_EVENTS,
-		ElasticBeanstalkActions.DESCRIBE_INSTANCES_HEALTH,
-		ElasticBeanstalkActions.DESCRIBE_PLATFORM_VERSION,
-		ElasticBeanstalkActions.LIST_TAGS_FOR_RESOURCE,
-		ElasticBeanstalkActions.REQUEST_ENVIRONMENT_INFO,
-		ElasticBeanstalkActions.RETRIEVE_ENVIRONMENT_INFO,
-		ElasticBeanstalkActions.VALIDATE_CONFIGURATION_SETTINGS,
+	static readonly AllReadActions: string[] = [
+		ElasticBeanstalkActions.CheckDNSAvailability,
+		ElasticBeanstalkActions.DescribeAccountAttributes,
+		ElasticBeanstalkActions.DescribeConfigurationOptions,
+		ElasticBeanstalkActions.DescribeConfigurationSettings,
+		ElasticBeanstalkActions.DescribeEnvironmentHealth,
+		ElasticBeanstalkActions.DescribeEnvironmentManagedActionHistory,
+		ElasticBeanstalkActions.DescribeEnvironmentManagedActions,
+		ElasticBeanstalkActions.DescribeEnvironmentResources,
+		ElasticBeanstalkActions.DescribeEvents,
+		ElasticBeanstalkActions.DescribeInstancesHealth,
+		ElasticBeanstalkActions.DescribePlatformVersion,
+		ElasticBeanstalkActions.ListTagsForResource,
+		ElasticBeanstalkActions.RequestEnvironmentInfo,
+		ElasticBeanstalkActions.RetrieveEnvironmentInfo,
+		ElasticBeanstalkActions.ValidateConfigurationSettings,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		ElasticBeanstalkActions.ABORT_ENVIRONMENT_UPDATE,
-		ElasticBeanstalkActions.APPLY_ENVIRONMENT_MANAGED_ACTION,
-		ElasticBeanstalkActions.ASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE,
-		ElasticBeanstalkActions.COMPOSE_ENVIRONMENTS,
-		ElasticBeanstalkActions.CREATE_APPLICATION,
-		ElasticBeanstalkActions.CREATE_APPLICATION_VERSION,
-		ElasticBeanstalkActions.CREATE_CONFIGURATION_TEMPLATE,
-		ElasticBeanstalkActions.CREATE_ENVIRONMENT,
-		ElasticBeanstalkActions.CREATE_PLATFORM_VERSION,
-		ElasticBeanstalkActions.CREATE_STORAGE_LOCATION,
-		ElasticBeanstalkActions.DELETE_APPLICATION,
-		ElasticBeanstalkActions.DELETE_APPLICATION_VERSION,
-		ElasticBeanstalkActions.DELETE_CONFIGURATION_TEMPLATE,
-		ElasticBeanstalkActions.DELETE_ENVIRONMENT_CONFIGURATION,
-		ElasticBeanstalkActions.DELETE_PLATFORM_VERSION,
-		ElasticBeanstalkActions.DISASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE,
-		ElasticBeanstalkActions.PUT_INSTANCE_STATISTICS,
-		ElasticBeanstalkActions.REBUILD_ENVIRONMENT,
-		ElasticBeanstalkActions.RESTART_APP_SERVER,
-		ElasticBeanstalkActions.SWAP_ENVIRONMENT_CNAM_ES,
-		ElasticBeanstalkActions.TERMINATE_ENVIRONMENT,
-		ElasticBeanstalkActions.UPDATE_APPLICATION,
-		ElasticBeanstalkActions.UPDATE_APPLICATION_RESOURCE_LIFECYCLE,
-		ElasticBeanstalkActions.UPDATE_APPLICATION_VERSION,
-		ElasticBeanstalkActions.UPDATE_CONFIGURATION_TEMPLATE,
-		ElasticBeanstalkActions.UPDATE_ENVIRONMENT,
+	static readonly AllWriteActions: string[] = [
+		ElasticBeanstalkActions.AbortEnvironmentUpdate,
+		ElasticBeanstalkActions.ApplyEnvironmentManagedAction,
+		ElasticBeanstalkActions.AssociateEnvironmentOperationsRole,
+		ElasticBeanstalkActions.ComposeEnvironments,
+		ElasticBeanstalkActions.CreateApplication,
+		ElasticBeanstalkActions.CreateApplicationVersion,
+		ElasticBeanstalkActions.CreateConfigurationTemplate,
+		ElasticBeanstalkActions.CreateEnvironment,
+		ElasticBeanstalkActions.CreatePlatformVersion,
+		ElasticBeanstalkActions.CreateStorageLocation,
+		ElasticBeanstalkActions.DeleteApplication,
+		ElasticBeanstalkActions.DeleteApplicationVersion,
+		ElasticBeanstalkActions.DeleteConfigurationTemplate,
+		ElasticBeanstalkActions.DeleteEnvironmentConfiguration,
+		ElasticBeanstalkActions.DeletePlatformVersion,
+		ElasticBeanstalkActions.DisassociateEnvironmentOperationsRole,
+		ElasticBeanstalkActions.PutInstanceStatistics,
+		ElasticBeanstalkActions.RebuildEnvironment,
+		ElasticBeanstalkActions.RestartAppServer,
+		ElasticBeanstalkActions.SwapEnvironmentCNAMEs,
+		ElasticBeanstalkActions.TerminateEnvironment,
+		ElasticBeanstalkActions.UpdateApplication,
+		ElasticBeanstalkActions.UpdateApplicationResourceLifecycle,
+		ElasticBeanstalkActions.UpdateApplicationVersion,
+		ElasticBeanstalkActions.UpdateConfigurationTemplate,
+		ElasticBeanstalkActions.UpdateEnvironment,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		ElasticBeanstalkActions.DESCRIBE_APPLICATION_VERSIONS,
-		ElasticBeanstalkActions.DESCRIBE_APPLICATIONS,
-		ElasticBeanstalkActions.DESCRIBE_ENVIRONMENTS,
-		ElasticBeanstalkActions.LIST_AVAILABLE_SOLUTION_STACKS,
-		ElasticBeanstalkActions.LIST_PLATFORM_BRANCHES,
-		ElasticBeanstalkActions.LIST_PLATFORM_VERSIONS,
+	static readonly AllListActions: string[] = [
+		ElasticBeanstalkActions.DescribeApplicationVersions,
+		ElasticBeanstalkActions.DescribeApplications,
+		ElasticBeanstalkActions.DescribeEnvironments,
+		ElasticBeanstalkActions.ListAvailableSolutionStacks,
+		ElasticBeanstalkActions.ListPlatformBranches,
+		ElasticBeanstalkActions.ListPlatformVersions,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		ElasticBeanstalkActions.ADD_TAGS,
-		ElasticBeanstalkActions.REMOVE_TAGS,
-		ElasticBeanstalkActions.UPDATE_TAGS_FOR_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		ElasticBeanstalkActions.AddTags,
+		ElasticBeanstalkActions.RemoveTags,
+		ElasticBeanstalkActions.UpdateTagsForResource,
 	];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationName>[^:/?]+)$",
-);
-const ApplicationversionArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):applicationversion/(?<applicationName>[^:/?]+)/(?<versionLabel>[^:/?]+)$",
-);
-const ConfigurationtemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):configurationtemplate/(?<applicationName>[^:/?]+)/(?<templateName>[^:/?]+)$",
-);
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):environment/(?<applicationName>[^:/?]+)/(?<environmentName>[^:/?]+)$",
-);
-const PlatformArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*)::platform/(?<platformNameWithVersion>[^:/?]+)$",
-);
-const SolutionstackArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*)::solutionstack/(?<solutionStackName>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface ElasticBeanstalkApplicationArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface ElasticBeanstalkApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+}
+
+/**
+ * Properties for building a applicationversion ARN.
+ */
+export interface ElasticBeanstalkApplicationversionArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** The VersionLabel component of the ARN. */
+	readonly versionLabel: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a applicationversion ARN.
+ */
+export interface ElasticBeanstalkApplicationversionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+	/** The VersionLabel component. */
+	readonly versionLabel: string;
+}
+
+/**
+ * Properties for building a configurationtemplate ARN.
+ */
+export interface ElasticBeanstalkConfigurationtemplateArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** The TemplateName component of the ARN. */
+	readonly templateName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configurationtemplate ARN.
+ */
+export interface ElasticBeanstalkConfigurationtemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+	/** The TemplateName component. */
+	readonly templateName: string;
+}
+
+/**
+ * Properties for building a environment ARN.
+ */
+export interface ElasticBeanstalkEnvironmentArnProps {
+	/** The ApplicationName component of the ARN. */
+	readonly applicationName: string;
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface ElasticBeanstalkEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationName component. */
+	readonly applicationName: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+}
+
+/**
+ * Properties for building a platform ARN.
+ */
+export interface ElasticBeanstalkPlatformArnProps {
+	/** The PlatformNameWithVersion component of the ARN. */
+	readonly platformNameWithVersion: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a platform ARN.
+ */
+export interface ElasticBeanstalkPlatformArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PlatformNameWithVersion component. */
+	readonly platformNameWithVersion: string;
+}
+
+/**
+ * Properties for building a solutionstack ARN.
+ */
+export interface ElasticBeanstalkSolutionstackArnProps {
+	/** The SolutionStackName component of the ARN. */
+	readonly solutionStackName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a solutionstack ARN.
+ */
+export interface ElasticBeanstalkSolutionstackArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SolutionStackName component. */
+	readonly solutionStackName: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationName>[^:/?]+)$/;
+const ApplicationversionArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):applicationversion\/(?<applicationName>[^:/?]+)\/(?<versionLabel>[^:/?]+)$/;
+const ConfigurationtemplateArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):configurationtemplate\/(?<applicationName>[^:/?]+)\/(?<templateName>[^:/?]+)$/;
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*):(?<account>[^:]*):environment\/(?<applicationName>[^:/?]+)\/(?<environmentName>[^:/?]+)$/;
+const PlatformArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*)::platform\/(?<platformNameWithVersion>[^:/?]+)$/;
+const SolutionstackArnRegex =
+	/^arn:(?<partition>[^:]+):elasticbeanstalk:(?<region>[^:]*)::solutionstack\/(?<solutionStackName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for elasticbeanstalk resources.
@@ -244,16 +417,7 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: ElasticBeanstalkApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationName}`;
 	}
 
@@ -268,12 +432,9 @@ export class ElasticBeanstalkResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-	} {
+	static parseApplicationArn(
+		arn: string,
+	): ElasticBeanstalkApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -289,18 +450,9 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the applicationversion resource.
 	 */
-	static applicationversion(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** The VersionLabel component of the ARN. */
-		readonly versionLabel: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static applicationversion(
+		props: ElasticBeanstalkApplicationversionArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}:${props.account ?? "*"}:applicationversion/${props.applicationName}/${props.versionLabel}`;
 	}
 
@@ -315,13 +467,9 @@ export class ElasticBeanstalkResources {
 	 * Parses a applicationversion ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationversionArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-		versionLabel: string;
-	} {
+	static parseApplicationversionArn(
+		arn: string,
+	): ElasticBeanstalkApplicationversionArnComponents {
 		const match = ApplicationversionArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid applicationversion ARN: ${arn}`);
@@ -338,18 +486,9 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the configurationtemplate resource.
 	 */
-	static configurationtemplate(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** The TemplateName component of the ARN. */
-		readonly templateName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configurationtemplate(
+		props: ElasticBeanstalkConfigurationtemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}:${props.account ?? "*"}:configurationtemplate/${props.applicationName}/${props.templateName}`;
 	}
 
@@ -364,13 +503,9 @@ export class ElasticBeanstalkResources {
 	 * Parses a configurationtemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigurationtemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-		templateName: string;
-	} {
+	static parseConfigurationtemplateArn(
+		arn: string,
+	): ElasticBeanstalkConfigurationtemplateArnComponents {
 		const match = ConfigurationtemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configurationtemplate ARN: ${arn}`);
@@ -387,18 +522,7 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The ApplicationName component of the ARN. */
-		readonly applicationName: string;
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: ElasticBeanstalkEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}:${props.account ?? "*"}:environment/${props.applicationName}/${props.environmentName}`;
 	}
 
@@ -413,13 +537,9 @@ export class ElasticBeanstalkResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationName: string;
-		environmentName: string;
-	} {
+	static parseEnvironmentArn(
+		arn: string,
+	): ElasticBeanstalkEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -436,16 +556,7 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the platform resource.
 	 */
-	static platform(props: {
-		/** The PlatformNameWithVersion component of the ARN. */
-		readonly platformNameWithVersion: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static platform(props: ElasticBeanstalkPlatformArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}::platform/${props.platformNameWithVersion}`;
 	}
 
@@ -460,12 +571,7 @@ export class ElasticBeanstalkResources {
 	 * Parses a platform ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePlatformArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		platformNameWithVersion: string;
-	} {
+	static parsePlatformArn(arn: string): ElasticBeanstalkPlatformArnComponents {
 		const match = PlatformArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid platform ARN: ${arn}`);
@@ -481,16 +587,7 @@ export class ElasticBeanstalkResources {
 	/**
 	 * Builds an ARN for the solutionstack resource.
 	 */
-	static solutionstack(props: {
-		/** The SolutionStackName component of the ARN. */
-		readonly solutionStackName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static solutionstack(props: ElasticBeanstalkSolutionstackArnProps): string {
 		return `arn:${props.partition ?? "aws"}:elasticbeanstalk:${props.region ?? "*"}::solutionstack/${props.solutionStackName}`;
 	}
 
@@ -505,12 +602,9 @@ export class ElasticBeanstalkResources {
 	 * Parses a solutionstack ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSolutionstackArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		solutionStackName: string;
-	} {
+	static parseSolutionstackArn(
+		arn: string,
+	): ElasticBeanstalkSolutionstackArnComponents {
 		const match = SolutionstackArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid solutionstack ARN: ${arn}`);
@@ -529,101 +623,101 @@ export class ElasticBeanstalkResources {
  */
 export class ElasticBeanstalkOperations {
 	/** IAM actions required for the AbortEnvironmentUpdate API call. */
-	static readonly ABORT_ENVIRONMENT_UPDATE: string[] = [];
+	static readonly AbortEnvironmentUpdate: string[] = [];
 	/** IAM actions required for the ApplyEnvironmentManagedAction API call. */
-	static readonly APPLY_ENVIRONMENT_MANAGED_ACTION: string[] = [];
+	static readonly ApplyEnvironmentManagedAction: string[] = [];
 	/** IAM actions required for the AssociateEnvironmentOperationsRole API call. */
-	static readonly ASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE: string[] = [];
+	static readonly AssociateEnvironmentOperationsRole: string[] = [];
 	/** IAM actions required for the CheckDNSAvailability API call. */
-	static readonly CHECK_DNS_AVAILABILITY: string[] = [];
+	static readonly CheckDNSAvailability: string[] = [];
 	/** IAM actions required for the ComposeEnvironments API call. */
-	static readonly COMPOSE_ENVIRONMENTS: string[] = [];
+	static readonly ComposeEnvironments: string[] = [];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CREATE_APPLICATION: string[] = [];
+	static readonly CreateApplication: string[] = [];
 	/** IAM actions required for the CreateApplicationVersion API call. */
-	static readonly CREATE_APPLICATION_VERSION: string[] = [];
+	static readonly CreateApplicationVersion: string[] = [];
 	/** IAM actions required for the CreateConfigurationTemplate API call. */
-	static readonly CREATE_CONFIGURATION_TEMPLATE: string[] = [];
+	static readonly CreateConfigurationTemplate: string[] = [];
 	/** IAM actions required for the CreateEnvironment API call. */
-	static readonly CREATE_ENVIRONMENT: string[] = [];
+	static readonly CreateEnvironment: string[] = [];
 	/** IAM actions required for the CreatePlatformVersion API call. */
-	static readonly CREATE_PLATFORM_VERSION: string[] = [];
+	static readonly CreatePlatformVersion: string[] = [];
 	/** IAM actions required for the CreateStorageLocation API call. */
-	static readonly CREATE_STORAGE_LOCATION: string[] = [];
+	static readonly CreateStorageLocation: string[] = [];
 	/** IAM actions required for the DeleteApplication API call. */
-	static readonly DELETE_APPLICATION: string[] = [];
+	static readonly DeleteApplication: string[] = [];
 	/** IAM actions required for the DeleteApplicationVersion API call. */
-	static readonly DELETE_APPLICATION_VERSION: string[] = [];
+	static readonly DeleteApplicationVersion: string[] = [];
 	/** IAM actions required for the DeleteConfigurationTemplate API call. */
-	static readonly DELETE_CONFIGURATION_TEMPLATE: string[] = [];
+	static readonly DeleteConfigurationTemplate: string[] = [];
 	/** IAM actions required for the DeleteEnvironmentConfiguration API call. */
-	static readonly DELETE_ENVIRONMENT_CONFIGURATION: string[] = [];
+	static readonly DeleteEnvironmentConfiguration: string[] = [];
 	/** IAM actions required for the DeletePlatformVersion API call. */
-	static readonly DELETE_PLATFORM_VERSION: string[] = [];
+	static readonly DeletePlatformVersion: string[] = [];
 	/** IAM actions required for the DescribeAccountAttributes API call. */
-	static readonly DESCRIBE_ACCOUNT_ATTRIBUTES: string[] = [];
+	static readonly DescribeAccountAttributes: string[] = [];
 	/** IAM actions required for the DescribeApplicationVersions API call. */
-	static readonly DESCRIBE_APPLICATION_VERSIONS: string[] = [];
+	static readonly DescribeApplicationVersions: string[] = [];
 	/** IAM actions required for the DescribeApplications API call. */
-	static readonly DESCRIBE_APPLICATIONS: string[] = [];
+	static readonly DescribeApplications: string[] = [];
 	/** IAM actions required for the DescribeConfigurationOptions API call. */
-	static readonly DESCRIBE_CONFIGURATION_OPTIONS: string[] = [];
+	static readonly DescribeConfigurationOptions: string[] = [];
 	/** IAM actions required for the DescribeConfigurationSettings API call. */
-	static readonly DESCRIBE_CONFIGURATION_SETTINGS: string[] = [];
+	static readonly DescribeConfigurationSettings: string[] = [];
 	/** IAM actions required for the DescribeEnvironmentHealth API call. */
-	static readonly DESCRIBE_ENVIRONMENT_HEALTH: string[] = [];
+	static readonly DescribeEnvironmentHealth: string[] = [];
 	/** IAM actions required for the DescribeEnvironmentManagedActionHistory API call. */
-	static readonly DESCRIBE_ENVIRONMENT_MANAGED_ACTION_HISTORY: string[] = [];
+	static readonly DescribeEnvironmentManagedActionHistory: string[] = [];
 	/** IAM actions required for the DescribeEnvironmentManagedActions API call. */
-	static readonly DESCRIBE_ENVIRONMENT_MANAGED_ACTIONS: string[] = [];
+	static readonly DescribeEnvironmentManagedActions: string[] = [];
 	/** IAM actions required for the DescribeEnvironmentResources API call. */
-	static readonly DESCRIBE_ENVIRONMENT_RESOURCES: string[] = [];
+	static readonly DescribeEnvironmentResources: string[] = [];
 	/** IAM actions required for the DescribeEnvironments API call. */
-	static readonly DESCRIBE_ENVIRONMENTS: string[] = [
+	static readonly DescribeEnvironments: string[] = [
 		"elasticbeanstalk:DescribeEnvironments",
 	];
 	/** IAM actions required for the DescribeEvents API call. */
-	static readonly DESCRIBE_EVENTS: string[] = [];
+	static readonly DescribeEvents: string[] = [];
 	/** IAM actions required for the DescribeInstancesHealth API call. */
-	static readonly DESCRIBE_INSTANCES_HEALTH: string[] = [];
+	static readonly DescribeInstancesHealth: string[] = [];
 	/** IAM actions required for the DescribePlatformVersion API call. */
-	static readonly DESCRIBE_PLATFORM_VERSION: string[] = [];
+	static readonly DescribePlatformVersion: string[] = [];
 	/** IAM actions required for the DisassociateEnvironmentOperationsRole API call. */
-	static readonly DISASSOCIATE_ENVIRONMENT_OPERATIONS_ROLE: string[] = [];
+	static readonly DisassociateEnvironmentOperationsRole: string[] = [];
 	/** IAM actions required for the ListAvailableSolutionStacks API call. */
-	static readonly LIST_AVAILABLE_SOLUTION_STACKS: string[] = [];
+	static readonly ListAvailableSolutionStacks: string[] = [];
 	/** IAM actions required for the ListPlatformBranches API call. */
-	static readonly LIST_PLATFORM_BRANCHES: string[] = [];
+	static readonly ListPlatformBranches: string[] = [];
 	/** IAM actions required for the ListPlatformVersions API call. */
-	static readonly LIST_PLATFORM_VERSIONS: string[] = [];
+	static readonly ListPlatformVersions: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly ListTagsForResource: string[] = [];
 	/** IAM actions required for the RebuildEnvironment API call. */
-	static readonly REBUILD_ENVIRONMENT: string[] = [];
+	static readonly RebuildEnvironment: string[] = [];
 	/** IAM actions required for the RequestEnvironmentInfo API call. */
-	static readonly REQUEST_ENVIRONMENT_INFO: string[] = [];
+	static readonly RequestEnvironmentInfo: string[] = [];
 	/** IAM actions required for the RestartAppServer API call. */
-	static readonly RESTART_APP_SERVER: string[] = [];
+	static readonly RestartAppServer: string[] = [];
 	/** IAM actions required for the RetrieveEnvironmentInfo API call. */
-	static readonly RETRIEVE_ENVIRONMENT_INFO: string[] = [];
+	static readonly RetrieveEnvironmentInfo: string[] = [];
 	/** IAM actions required for the SwapEnvironmentCNAMEs API call. */
-	static readonly SWAP_ENVIRONMENT_CNAM_ES: string[] = [];
+	static readonly SwapEnvironmentCNAMEs: string[] = [];
 	/** IAM actions required for the TerminateEnvironment API call. */
-	static readonly TERMINATE_ENVIRONMENT: string[] = [];
+	static readonly TerminateEnvironment: string[] = [];
 	/** IAM actions required for the UpdateApplication API call. */
-	static readonly UPDATE_APPLICATION: string[] = [];
+	static readonly UpdateApplication: string[] = [];
 	/** IAM actions required for the UpdateApplicationResourceLifecycle API call. */
-	static readonly UPDATE_APPLICATION_RESOURCE_LIFECYCLE: string[] = [];
+	static readonly UpdateApplicationResourceLifecycle: string[] = [];
 	/** IAM actions required for the UpdateApplicationVersion API call. */
-	static readonly UPDATE_APPLICATION_VERSION: string[] = [];
+	static readonly UpdateApplicationVersion: string[] = [];
 	/** IAM actions required for the UpdateConfigurationTemplate API call. */
-	static readonly UPDATE_CONFIGURATION_TEMPLATE: string[] = [];
+	static readonly UpdateConfigurationTemplate: string[] = [];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UPDATE_ENVIRONMENT: string[] = [];
+	static readonly UpdateEnvironment: string[] = [];
 	/** IAM actions required for the UpdateTagsForResource API call. */
-	static readonly UPDATE_TAGS_FOR_RESOURCE: string[] = [];
+	static readonly UpdateTagsForResource: string[] = [];
 	/** IAM actions required for the ValidateConfigurationSettings API call. */
-	static readonly VALIDATE_CONFIGURATION_SETTINGS: string[] = [];
+	static readonly ValidateConfigurationSettings: string[] = [];
 }
 
 /**
@@ -631,17 +725,17 @@ export class ElasticBeanstalkOperations {
  */
 export class ElasticBeanstalkConditions {
 	/** Condition keys applicable to the AddTags action. */
-	static readonly ADD_TAGS_CONDITION_KEYS: string[] = [
+	static readonly AddTagsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateApplication action. */
-	static readonly CREATE_APPLICATION_CONDITION_KEYS: string[] = [
+	static readonly CreateApplicationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateConfigurationTemplate action. */
-	static readonly CREATE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigurationTemplateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticbeanstalk:FromApplication",
@@ -652,7 +746,7 @@ export class ElasticBeanstalkConditions {
 		"elasticbeanstalk:FromSolutionStack",
 	];
 	/** Condition keys applicable to the CreateEnvironment action. */
-	static readonly CREATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"elasticbeanstalk:FromApplicationVersion",
@@ -661,18 +755,18 @@ export class ElasticBeanstalkConditions {
 		"elasticbeanstalk:FromSolutionStack",
 	];
 	/** Condition keys applicable to the CreatePlatformVersion action. */
-	static readonly CREATE_PLATFORM_VERSION_CONDITION_KEYS: string[] = [
+	static readonly CreatePlatformVersionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the RemoveTags action. */
-	static readonly REMOVE_TAGS_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly RemoveTagsConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the SwapEnvironmentCNAMEs action. */
-	static readonly SWAP_ENVIRONMENT_CNAM_ES_CONDITION_KEYS: string[] = [
+	static readonly SwapEnvironmentCNAMEsConditionKeys: string[] = [
 		"elasticbeanstalk:FromEnvironment",
 	];
 	/** Condition keys applicable to the UpdateConfigurationTemplate action. */
-	static readonly UPDATE_CONFIGURATION_TEMPLATE_CONDITION_KEYS: string[] = [
+	static readonly UpdateConfigurationTemplateConditionKeys: string[] = [
 		"elasticbeanstalk:FromApplication",
 		"elasticbeanstalk:FromApplicationVersion",
 		"elasticbeanstalk:FromConfigurationTemplate",
@@ -681,24 +775,24 @@ export class ElasticBeanstalkConditions {
 		"elasticbeanstalk:FromSolutionStack",
 	];
 	/** Condition keys applicable to the UpdateEnvironment action. */
-	static readonly UPDATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateEnvironmentConditionKeys: string[] = [
 		"elasticbeanstalk:FromApplicationVersion",
 		"elasticbeanstalk:FromConfigurationTemplate",
 		"elasticbeanstalk:FromPlatform",
 		"elasticbeanstalk:FromSolutionStack",
 	];
 	/** Condition keys applicable to the UpdateTagsForResource action. */
-	static readonly UPDATE_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UpdateTagsForResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: elasticbeanstalk:FromApplication (ARN) */
 	static readonly FROM_APPLICATION = "elasticbeanstalk:FromApplication";
 	/** Condition key: elasticbeanstalk:FromApplicationVersion (ARN) */

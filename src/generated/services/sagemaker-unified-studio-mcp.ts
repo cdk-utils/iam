@@ -13,18 +13,18 @@ export class SagemakerUnifiedStudioMcpActions {
 	static readonly SERVICE_PREFIX = "sagemaker-unified-studio-mcp";
 
 	/** [Read] sagemaker-unified-studio-mcp:AuthorizeVpce */
-	static readonly AUTHORIZE_VPCE = "sagemaker-unified-studio-mcp:AuthorizeVpce";
+	static readonly AuthorizeVpce = "sagemaker-unified-studio-mcp:AuthorizeVpce";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		SagemakerUnifiedStudioMcpActions.AUTHORIZE_VPCE,
+	static readonly AllReadActions: string[] = [
+		SagemakerUnifiedStudioMcpActions.AuthorizeVpce,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }

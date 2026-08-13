@@ -13,175 +13,395 @@ export class GroundStationActions {
 	static readonly SERVICE_PREFIX = "groundstation";
 
 	/** [Write] groundstation:CancelContact */
-	static readonly CANCEL_CONTACT = "groundstation:CancelContact";
+	static readonly CancelContact = "groundstation:CancelContact";
 	/** [Write] groundstation:CreateConfig */
-	static readonly CREATE_CONFIG = "groundstation:CreateConfig";
+	static readonly CreateConfig = "groundstation:CreateConfig";
 	/** [Write] groundstation:CreateDataflowEndpointGroup */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP =
+	static readonly CreateDataflowEndpointGroup =
 		"groundstation:CreateDataflowEndpointGroup";
 	/** [Write] groundstation:CreateDataflowEndpointGroupV2 */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP_V2 =
+	static readonly CreateDataflowEndpointGroupV2 =
 		"groundstation:CreateDataflowEndpointGroupV2";
 	/** [Write] groundstation:CreateEphemeris */
-	static readonly CREATE_EPHEMERIS = "groundstation:CreateEphemeris";
+	static readonly CreateEphemeris = "groundstation:CreateEphemeris";
 	/** [Write] groundstation:CreateMissionProfile */
-	static readonly CREATE_MISSION_PROFILE = "groundstation:CreateMissionProfile";
+	static readonly CreateMissionProfile = "groundstation:CreateMissionProfile";
 	/** [Write] groundstation:DeleteConfig */
-	static readonly DELETE_CONFIG = "groundstation:DeleteConfig";
+	static readonly DeleteConfig = "groundstation:DeleteConfig";
 	/** [Write] groundstation:DeleteDataflowEndpointGroup */
-	static readonly DELETE_DATAFLOW_ENDPOINT_GROUP =
+	static readonly DeleteDataflowEndpointGroup =
 		"groundstation:DeleteDataflowEndpointGroup";
 	/** [Write] groundstation:DeleteEphemeris */
-	static readonly DELETE_EPHEMERIS = "groundstation:DeleteEphemeris";
+	static readonly DeleteEphemeris = "groundstation:DeleteEphemeris";
 	/** [Write] groundstation:DeleteMissionProfile */
-	static readonly DELETE_MISSION_PROFILE = "groundstation:DeleteMissionProfile";
+	static readonly DeleteMissionProfile = "groundstation:DeleteMissionProfile";
 	/** [Read] groundstation:DescribeContact */
-	static readonly DESCRIBE_CONTACT = "groundstation:DescribeContact";
+	static readonly DescribeContact = "groundstation:DescribeContact";
 	/** [Read] groundstation:DescribeContactVersion */
-	static readonly DESCRIBE_CONTACT_VERSION =
+	static readonly DescribeContactVersion =
 		"groundstation:DescribeContactVersion";
 	/** [Read] groundstation:DescribeEphemeris */
-	static readonly DESCRIBE_EPHEMERIS = "groundstation:DescribeEphemeris";
+	static readonly DescribeEphemeris = "groundstation:DescribeEphemeris";
 	/** [Read] groundstation:GetAgentConfiguration */
-	static readonly GET_AGENT_CONFIGURATION =
+	static readonly actionGetAgentConfiguration =
 		"groundstation:GetAgentConfiguration";
 	/** [Read] groundstation:GetAgentTaskResponseUrl */
-	static readonly GET_AGENT_TASK_RESPONSE_URL =
+	static readonly actionGetAgentTaskResponseUrl =
 		"groundstation:GetAgentTaskResponseUrl";
 	/** [Read] groundstation:GetConfig */
-	static readonly GET_CONFIG = "groundstation:GetConfig";
+	static readonly actionGetConfig = "groundstation:GetConfig";
 	/** [Read] groundstation:GetDataflowEndpointGroup */
-	static readonly GET_DATAFLOW_ENDPOINT_GROUP =
+	static readonly actionGetDataflowEndpointGroup =
 		"groundstation:GetDataflowEndpointGroup";
 	/** [Read] groundstation:GetMinuteUsage */
-	static readonly GET_MINUTE_USAGE = "groundstation:GetMinuteUsage";
+	static readonly actionGetMinuteUsage = "groundstation:GetMinuteUsage";
 	/** [Read] groundstation:GetMissionProfile */
-	static readonly GET_MISSION_PROFILE = "groundstation:GetMissionProfile";
+	static readonly actionGetMissionProfile = "groundstation:GetMissionProfile";
 	/** [Read] groundstation:GetSatellite */
-	static readonly GET_SATELLITE = "groundstation:GetSatellite";
+	static readonly actionGetSatellite = "groundstation:GetSatellite";
 	/** [List] groundstation:ListAntennas */
-	static readonly LIST_ANTENNAS = "groundstation:ListAntennas";
+	static readonly ListAntennas = "groundstation:ListAntennas";
 	/** [List] groundstation:ListConfigs */
-	static readonly LIST_CONFIGS = "groundstation:ListConfigs";
+	static readonly ListConfigs = "groundstation:ListConfigs";
 	/** [List] groundstation:ListContactVersions */
-	static readonly LIST_CONTACT_VERSIONS = "groundstation:ListContactVersions";
+	static readonly ListContactVersions = "groundstation:ListContactVersions";
 	/** [List] groundstation:ListContacts */
-	static readonly LIST_CONTACTS = "groundstation:ListContacts";
+	static readonly ListContacts = "groundstation:ListContacts";
 	/** [List] groundstation:ListDataflowEndpointGroups */
-	static readonly LIST_DATAFLOW_ENDPOINT_GROUPS =
+	static readonly ListDataflowEndpointGroups =
 		"groundstation:ListDataflowEndpointGroups";
 	/** [List] groundstation:ListEphemerides */
-	static readonly LIST_EPHEMERIDES = "groundstation:ListEphemerides";
+	static readonly ListEphemerides = "groundstation:ListEphemerides";
 	/** [List] groundstation:ListGroundStationReservations */
-	static readonly LIST_GROUND_STATION_RESERVATIONS =
+	static readonly ListGroundStationReservations =
 		"groundstation:ListGroundStationReservations";
 	/** [List] groundstation:ListGroundStations */
-	static readonly LIST_GROUND_STATIONS = "groundstation:ListGroundStations";
+	static readonly ListGroundStations = "groundstation:ListGroundStations";
 	/** [List] groundstation:ListMissionProfiles */
-	static readonly LIST_MISSION_PROFILES = "groundstation:ListMissionProfiles";
+	static readonly ListMissionProfiles = "groundstation:ListMissionProfiles";
 	/** [List] groundstation:ListSatellites */
-	static readonly LIST_SATELLITES = "groundstation:ListSatellites";
+	static readonly ListSatellites = "groundstation:ListSatellites";
 	/** [Read] groundstation:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "groundstation:ListTagsForResource";
+	static readonly ListTagsForResource = "groundstation:ListTagsForResource";
 	/** [Write] groundstation:RegisterAgent */
-	static readonly REGISTER_AGENT = "groundstation:RegisterAgent";
+	static readonly RegisterAgent = "groundstation:RegisterAgent";
 	/** [Write] groundstation:ReserveContact */
-	static readonly RESERVE_CONTACT = "groundstation:ReserveContact";
+	static readonly ReserveContact = "groundstation:ReserveContact";
 	/** [Tagging] groundstation:TagResource */
-	static readonly TAG_RESOURCE = "groundstation:TagResource";
+	static readonly TagResource = "groundstation:TagResource";
 	/** [Tagging] groundstation:UntagResource */
-	static readonly UNTAG_RESOURCE = "groundstation:UntagResource";
+	static readonly UntagResource = "groundstation:UntagResource";
 	/** [Write] groundstation:UpdateAgentStatus */
-	static readonly UPDATE_AGENT_STATUS = "groundstation:UpdateAgentStatus";
+	static readonly UpdateAgentStatus = "groundstation:UpdateAgentStatus";
 	/** [Write] groundstation:UpdateConfig */
-	static readonly UPDATE_CONFIG = "groundstation:UpdateConfig";
+	static readonly UpdateConfig = "groundstation:UpdateConfig";
 	/** [Write] groundstation:UpdateContact */
-	static readonly UPDATE_CONTACT = "groundstation:UpdateContact";
+	static readonly UpdateContact = "groundstation:UpdateContact";
 	/** [Write] groundstation:UpdateEphemeris */
-	static readonly UPDATE_EPHEMERIS = "groundstation:UpdateEphemeris";
+	static readonly UpdateEphemeris = "groundstation:UpdateEphemeris";
 	/** [Write] groundstation:UpdateMissionProfile */
-	static readonly UPDATE_MISSION_PROFILE = "groundstation:UpdateMissionProfile";
+	static readonly UpdateMissionProfile = "groundstation:UpdateMissionProfile";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		GroundStationActions.DESCRIBE_CONTACT,
-		GroundStationActions.DESCRIBE_CONTACT_VERSION,
-		GroundStationActions.DESCRIBE_EPHEMERIS,
-		GroundStationActions.GET_AGENT_CONFIGURATION,
-		GroundStationActions.GET_AGENT_TASK_RESPONSE_URL,
-		GroundStationActions.GET_CONFIG,
-		GroundStationActions.GET_DATAFLOW_ENDPOINT_GROUP,
-		GroundStationActions.GET_MINUTE_USAGE,
-		GroundStationActions.GET_MISSION_PROFILE,
-		GroundStationActions.GET_SATELLITE,
-		GroundStationActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		GroundStationActions.DescribeContact,
+		GroundStationActions.DescribeContactVersion,
+		GroundStationActions.DescribeEphemeris,
+		GroundStationActions.actionGetAgentConfiguration,
+		GroundStationActions.actionGetAgentTaskResponseUrl,
+		GroundStationActions.actionGetConfig,
+		GroundStationActions.actionGetDataflowEndpointGroup,
+		GroundStationActions.actionGetMinuteUsage,
+		GroundStationActions.actionGetMissionProfile,
+		GroundStationActions.actionGetSatellite,
+		GroundStationActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		GroundStationActions.CANCEL_CONTACT,
-		GroundStationActions.CREATE_CONFIG,
-		GroundStationActions.CREATE_DATAFLOW_ENDPOINT_GROUP,
-		GroundStationActions.CREATE_DATAFLOW_ENDPOINT_GROUP_V2,
-		GroundStationActions.CREATE_EPHEMERIS,
-		GroundStationActions.CREATE_MISSION_PROFILE,
-		GroundStationActions.DELETE_CONFIG,
-		GroundStationActions.DELETE_DATAFLOW_ENDPOINT_GROUP,
-		GroundStationActions.DELETE_EPHEMERIS,
-		GroundStationActions.DELETE_MISSION_PROFILE,
-		GroundStationActions.REGISTER_AGENT,
-		GroundStationActions.RESERVE_CONTACT,
-		GroundStationActions.UPDATE_AGENT_STATUS,
-		GroundStationActions.UPDATE_CONFIG,
-		GroundStationActions.UPDATE_CONTACT,
-		GroundStationActions.UPDATE_EPHEMERIS,
-		GroundStationActions.UPDATE_MISSION_PROFILE,
+	static readonly AllWriteActions: string[] = [
+		GroundStationActions.CancelContact,
+		GroundStationActions.CreateConfig,
+		GroundStationActions.CreateDataflowEndpointGroup,
+		GroundStationActions.CreateDataflowEndpointGroupV2,
+		GroundStationActions.CreateEphemeris,
+		GroundStationActions.CreateMissionProfile,
+		GroundStationActions.DeleteConfig,
+		GroundStationActions.DeleteDataflowEndpointGroup,
+		GroundStationActions.DeleteEphemeris,
+		GroundStationActions.DeleteMissionProfile,
+		GroundStationActions.RegisterAgent,
+		GroundStationActions.ReserveContact,
+		GroundStationActions.UpdateAgentStatus,
+		GroundStationActions.UpdateConfig,
+		GroundStationActions.UpdateContact,
+		GroundStationActions.UpdateEphemeris,
+		GroundStationActions.UpdateMissionProfile,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		GroundStationActions.LIST_ANTENNAS,
-		GroundStationActions.LIST_CONFIGS,
-		GroundStationActions.LIST_CONTACT_VERSIONS,
-		GroundStationActions.LIST_CONTACTS,
-		GroundStationActions.LIST_DATAFLOW_ENDPOINT_GROUPS,
-		GroundStationActions.LIST_EPHEMERIDES,
-		GroundStationActions.LIST_GROUND_STATION_RESERVATIONS,
-		GroundStationActions.LIST_GROUND_STATIONS,
-		GroundStationActions.LIST_MISSION_PROFILES,
-		GroundStationActions.LIST_SATELLITES,
+	static readonly AllListActions: string[] = [
+		GroundStationActions.ListAntennas,
+		GroundStationActions.ListConfigs,
+		GroundStationActions.ListContactVersions,
+		GroundStationActions.ListContacts,
+		GroundStationActions.ListDataflowEndpointGroups,
+		GroundStationActions.ListEphemerides,
+		GroundStationActions.ListGroundStationReservations,
+		GroundStationActions.ListGroundStations,
+		GroundStationActions.ListMissionProfiles,
+		GroundStationActions.ListSatellites,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		GroundStationActions.TAG_RESOURCE,
-		GroundStationActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		GroundStationActions.TagResource,
+		GroundStationActions.UntagResource,
 	];
 }
 
-const AgentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):agent/(?<agentId>[^:/?]+)$",
-);
-const ConfigArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):config/(?<configType>[^:/?]+)/(?<configId>[^:/?]+)$",
-);
-const ContactArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):contact/(?<contactId>[^:/?]+)$",
-);
-const DataflowEndpointGroupArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):dataflow-endpoint-group/(?<dataflowEndpointGroupId>[^:/?]+)$",
-);
-const EphemerisItemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):ephemeris/(?<ephemerisId>[^:/?]+)$",
-);
-const GroundStationResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):groundstation:(?<groundStationId>[^:/?]+)$",
-);
-const MissionProfileArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):mission-profile/(?<missionProfileId>[^:/?]+)$",
-);
-const SatelliteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):satellite/(?<satelliteId>[^:/?]+)$",
-);
+/**
+ * Properties for building a Agent ARN.
+ */
+export interface GroundStationAgentArnProps {
+	/** The AgentId component of the ARN. */
+	readonly agentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Agent ARN.
+ */
+export interface GroundStationAgentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentId component. */
+	readonly agentId: string;
+}
+
+/**
+ * Properties for building a Config ARN.
+ */
+export interface GroundStationConfigArnProps {
+	/** The ConfigType component of the ARN. */
+	readonly configType: string;
+	/** The ConfigId component of the ARN. */
+	readonly configId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Config ARN.
+ */
+export interface GroundStationConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfigType component. */
+	readonly configType: string;
+	/** The ConfigId component. */
+	readonly configId: string;
+}
+
+/**
+ * Properties for building a Contact ARN.
+ */
+export interface GroundStationContactArnProps {
+	/** The ContactId component of the ARN. */
+	readonly contactId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Contact ARN.
+ */
+export interface GroundStationContactArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ContactId component. */
+	readonly contactId: string;
+}
+
+/**
+ * Properties for building a DataflowEndpointGroup ARN.
+ */
+export interface GroundStationDataflowEndpointGroupArnProps {
+	/** The DataflowEndpointGroupId component of the ARN. */
+	readonly dataflowEndpointGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DataflowEndpointGroup ARN.
+ */
+export interface GroundStationDataflowEndpointGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DataflowEndpointGroupId component. */
+	readonly dataflowEndpointGroupId: string;
+}
+
+/**
+ * Properties for building a EphemerisItem ARN.
+ */
+export interface GroundStationEphemerisItemArnProps {
+	/** The EphemerisId component of the ARN. */
+	readonly ephemerisId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a EphemerisItem ARN.
+ */
+export interface GroundStationEphemerisItemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EphemerisId component. */
+	readonly ephemerisId: string;
+}
+
+/**
+ * Properties for building a GroundStationResource ARN.
+ */
+export interface GroundStationGroundStationResourceArnProps {
+	/** The GroundStationId component of the ARN. */
+	readonly groundStationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a GroundStationResource ARN.
+ */
+export interface GroundStationGroundStationResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GroundStationId component. */
+	readonly groundStationId: string;
+}
+
+/**
+ * Properties for building a MissionProfile ARN.
+ */
+export interface GroundStationMissionProfileArnProps {
+	/** The MissionProfileId component of the ARN. */
+	readonly missionProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MissionProfile ARN.
+ */
+export interface GroundStationMissionProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MissionProfileId component. */
+	readonly missionProfileId: string;
+}
+
+/**
+ * Properties for building a Satellite ARN.
+ */
+export interface GroundStationSatelliteArnProps {
+	/** The SatelliteId component of the ARN. */
+	readonly satelliteId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Satellite ARN.
+ */
+export interface GroundStationSatelliteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SatelliteId component. */
+	readonly satelliteId: string;
+}
+
+const AgentArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):agent\/(?<agentId>[^:/?]+)$/;
+const ConfigArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):config\/(?<configType>[^:/?]+)\/(?<configId>[^:/?]+)$/;
+const ContactArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):contact\/(?<contactId>[^:/?]+)$/;
+const DataflowEndpointGroupArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):dataflow-endpoint-group\/(?<dataflowEndpointGroupId>[^:/?]+)$/;
+const EphemerisItemArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):ephemeris\/(?<ephemerisId>[^:/?]+)$/;
+const GroundStationResourceArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):groundstation:(?<groundStationId>[^:/?]+)$/;
+const MissionProfileArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):mission-profile\/(?<missionProfileId>[^:/?]+)$/;
+const SatelliteArnRegex =
+	/^arn:(?<partition>[^:]+):groundstation:(?<region>[^:]*):(?<account>[^:]*):satellite\/(?<satelliteId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for groundstation resources.
@@ -190,16 +410,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the Agent resource.
 	 */
-	static agent(props: {
-		/** The AgentId component of the ARN. */
-		readonly agentId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agent(props: GroundStationAgentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:agent/${props.agentId}`;
 	}
 
@@ -214,12 +425,7 @@ export class GroundStationResources {
 	 * Parses a Agent ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agentId: string;
-	} {
+	static parseAgentArn(arn: string): GroundStationAgentArnComponents {
 		const match = AgentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Agent ARN: ${arn}`);
@@ -235,18 +441,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the Config resource.
 	 */
-	static config(props: {
-		/** The ConfigType component of the ARN. */
-		readonly configType: string;
-		/** The ConfigId component of the ARN. */
-		readonly configId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static config(props: GroundStationConfigArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:config/${props.configType}/${props.configId}`;
 	}
 
@@ -261,13 +456,7 @@ export class GroundStationResources {
 	 * Parses a Config ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfigArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configType: string;
-		configId: string;
-	} {
+	static parseConfigArn(arn: string): GroundStationConfigArnComponents {
 		const match = ConfigArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Config ARN: ${arn}`);
@@ -284,16 +473,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the Contact resource.
 	 */
-	static contact(props: {
-		/** The ContactId component of the ARN. */
-		readonly contactId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static contact(props: GroundStationContactArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:contact/${props.contactId}`;
 	}
 
@@ -308,12 +488,7 @@ export class GroundStationResources {
 	 * Parses a Contact ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseContactArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		contactId: string;
-	} {
+	static parseContactArn(arn: string): GroundStationContactArnComponents {
 		const match = ContactArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Contact ARN: ${arn}`);
@@ -329,16 +504,9 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the DataflowEndpointGroup resource.
 	 */
-	static dataflowEndpointGroup(props: {
-		/** The DataflowEndpointGroupId component of the ARN. */
-		readonly dataflowEndpointGroupId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static dataflowEndpointGroup(
+		props: GroundStationDataflowEndpointGroupArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:dataflow-endpoint-group/${props.dataflowEndpointGroupId}`;
 	}
 
@@ -353,12 +521,9 @@ export class GroundStationResources {
 	 * Parses a DataflowEndpointGroup ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDataflowEndpointGroupArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		dataflowEndpointGroupId: string;
-	} {
+	static parseDataflowEndpointGroupArn(
+		arn: string,
+	): GroundStationDataflowEndpointGroupArnComponents {
 		const match = DataflowEndpointGroupArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid DataflowEndpointGroup ARN: ${arn}`);
@@ -374,16 +539,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the EphemerisItem resource.
 	 */
-	static ephemerisItem(props: {
-		/** The EphemerisId component of the ARN. */
-		readonly ephemerisId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static ephemerisItem(props: GroundStationEphemerisItemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:ephemeris/${props.ephemerisId}`;
 	}
 
@@ -398,12 +554,9 @@ export class GroundStationResources {
 	 * Parses a EphemerisItem ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEphemerisItemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		ephemerisId: string;
-	} {
+	static parseEphemerisItemArn(
+		arn: string,
+	): GroundStationEphemerisItemArnComponents {
 		const match = EphemerisItemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid EphemerisItem ARN: ${arn}`);
@@ -419,16 +572,9 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the GroundStationResource resource.
 	 */
-	static groundStationResource(props: {
-		/** The GroundStationId component of the ARN. */
-		readonly groundStationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static groundStationResource(
+		props: GroundStationGroundStationResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:groundstation:${props.groundStationId}`;
 	}
 
@@ -443,12 +589,9 @@ export class GroundStationResources {
 	 * Parses a GroundStationResource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseGroundStationResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		groundStationId: string;
-	} {
+	static parseGroundStationResourceArn(
+		arn: string,
+	): GroundStationGroundStationResourceArnComponents {
 		const match = GroundStationResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid GroundStationResource ARN: ${arn}`);
@@ -464,16 +607,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the MissionProfile resource.
 	 */
-	static missionProfile(props: {
-		/** The MissionProfileId component of the ARN. */
-		readonly missionProfileId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static missionProfile(props: GroundStationMissionProfileArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:mission-profile/${props.missionProfileId}`;
 	}
 
@@ -488,12 +622,9 @@ export class GroundStationResources {
 	 * Parses a MissionProfile ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMissionProfileArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		missionProfileId: string;
-	} {
+	static parseMissionProfileArn(
+		arn: string,
+	): GroundStationMissionProfileArnComponents {
 		const match = MissionProfileArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid MissionProfile ARN: ${arn}`);
@@ -509,16 +640,7 @@ export class GroundStationResources {
 	/**
 	 * Builds an ARN for the Satellite resource.
 	 */
-	static satellite(props: {
-		/** The SatelliteId component of the ARN. */
-		readonly satelliteId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static satellite(props: GroundStationSatelliteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:groundstation:${props.region ?? "*"}:${props.account ?? "*"}:satellite/${props.satelliteId}`;
 	}
 
@@ -533,12 +655,7 @@ export class GroundStationResources {
 	 * Parses a Satellite ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseSatelliteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		satelliteId: string;
-	} {
+	static parseSatelliteArn(arn: string): GroundStationSatelliteArnComponents {
 		const match = SatelliteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Satellite ARN: ${arn}`);
@@ -557,147 +674,139 @@ export class GroundStationResources {
  */
 export class GroundStationOperations {
 	/** IAM actions required for the CancelContact API call. */
-	static readonly CANCEL_CONTACT: string[] = ["groundstation:CancelContact"];
+	static readonly CancelContact: string[] = ["groundstation:CancelContact"];
 	/** IAM actions required for the CreateConfig API call. */
-	static readonly CREATE_CONFIG: string[] = [
+	static readonly CreateConfig: string[] = [
 		"groundstation:CreateConfig",
 		"iam:PassRole",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the CreateDataflowEndpointGroup API call. */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP: string[] = [
+	static readonly CreateDataflowEndpointGroup: string[] = [
 		"groundstation:CreateDataflowEndpointGroup",
 		"iam:PassRole",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the CreateDataflowEndpointGroupV2 API call. */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP_V2: string[] = [
+	static readonly CreateDataflowEndpointGroupV2: string[] = [
 		"groundstation:CreateDataflowEndpointGroupV2",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the CreateEphemeris API call. */
-	static readonly CREATE_EPHEMERIS: string[] = [
+	static readonly CreateEphemeris: string[] = [
 		"groundstation:CreateEphemeris",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the CreateMissionProfile API call. */
-	static readonly CREATE_MISSION_PROFILE: string[] = [
+	static readonly CreateMissionProfile: string[] = [
 		"groundstation:CreateMissionProfile",
 		"iam:PassRole",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the DeleteConfig API call. */
-	static readonly DELETE_CONFIG: string[] = ["groundstation:DeleteConfig"];
+	static readonly DeleteConfig: string[] = ["groundstation:DeleteConfig"];
 	/** IAM actions required for the DeleteDataflowEndpointGroup API call. */
-	static readonly DELETE_DATAFLOW_ENDPOINT_GROUP: string[] = [
+	static readonly DeleteDataflowEndpointGroup: string[] = [
 		"groundstation:DeleteDataflowEndpointGroup",
 	];
 	/** IAM actions required for the DeleteEphemeris API call. */
-	static readonly DELETE_EPHEMERIS: string[] = [
-		"groundstation:DeleteEphemeris",
-	];
+	static readonly DeleteEphemeris: string[] = ["groundstation:DeleteEphemeris"];
 	/** IAM actions required for the DeleteMissionProfile API call. */
-	static readonly DELETE_MISSION_PROFILE: string[] = [
+	static readonly DeleteMissionProfile: string[] = [
 		"groundstation:DeleteMissionProfile",
 	];
 	/** IAM actions required for the DescribeContact API call. */
-	static readonly DESCRIBE_CONTACT: string[] = [
-		"groundstation:DescribeContact",
-	];
+	static readonly DescribeContact: string[] = ["groundstation:DescribeContact"];
 	/** IAM actions required for the DescribeContactVersion API call. */
-	static readonly DESCRIBE_CONTACT_VERSION: string[] = [
+	static readonly DescribeContactVersion: string[] = [
 		"groundstation:DescribeContactVersion",
 	];
 	/** IAM actions required for the DescribeEphemeris API call. */
-	static readonly DESCRIBE_EPHEMERIS: string[] = [
+	static readonly DescribeEphemeris: string[] = [
 		"groundstation:DescribeEphemeris",
 	];
 	/** IAM actions required for the GetAgentConfiguration API call. */
-	static readonly GET_AGENT_CONFIGURATION: string[] = [
+	static readonly opGetAgentConfiguration: string[] = [
 		"groundstation:GetAgentConfiguration",
 	];
 	/** IAM actions required for the GetAgentTaskResponseUrl API call. */
-	static readonly GET_AGENT_TASK_RESPONSE_URL: string[] = [
+	static readonly opGetAgentTaskResponseUrl: string[] = [
 		"groundstation:GetAgentTaskResponseUrl",
 	];
 	/** IAM actions required for the GetConfig API call. */
-	static readonly GET_CONFIG: string[] = ["groundstation:GetConfig"];
+	static readonly opGetConfig: string[] = ["groundstation:GetConfig"];
 	/** IAM actions required for the GetDataflowEndpointGroup API call. */
-	static readonly GET_DATAFLOW_ENDPOINT_GROUP: string[] = [
+	static readonly opGetDataflowEndpointGroup: string[] = [
 		"groundstation:GetDataflowEndpointGroup",
 	];
 	/** IAM actions required for the GetMinuteUsage API call. */
-	static readonly GET_MINUTE_USAGE: string[] = ["groundstation:GetMinuteUsage"];
+	static readonly opGetMinuteUsage: string[] = ["groundstation:GetMinuteUsage"];
 	/** IAM actions required for the GetMissionProfile API call. */
-	static readonly GET_MISSION_PROFILE: string[] = [
+	static readonly opGetMissionProfile: string[] = [
 		"groundstation:GetMissionProfile",
 	];
 	/** IAM actions required for the GetSatellite API call. */
-	static readonly GET_SATELLITE: string[] = ["groundstation:GetSatellite"];
+	static readonly opGetSatellite: string[] = ["groundstation:GetSatellite"];
 	/** IAM actions required for the ListAntennas API call. */
-	static readonly LIST_ANTENNAS: string[] = ["groundstation:ListAntennas"];
+	static readonly ListAntennas: string[] = ["groundstation:ListAntennas"];
 	/** IAM actions required for the ListConfigs API call. */
-	static readonly LIST_CONFIGS: string[] = ["groundstation:ListConfigs"];
+	static readonly ListConfigs: string[] = ["groundstation:ListConfigs"];
 	/** IAM actions required for the ListContactVersions API call. */
-	static readonly LIST_CONTACT_VERSIONS: string[] = [
+	static readonly ListContactVersions: string[] = [
 		"groundstation:ListContactVersions",
 	];
 	/** IAM actions required for the ListContacts API call. */
-	static readonly LIST_CONTACTS: string[] = ["groundstation:ListContacts"];
+	static readonly ListContacts: string[] = ["groundstation:ListContacts"];
 	/** IAM actions required for the ListDataflowEndpointGroups API call. */
-	static readonly LIST_DATAFLOW_ENDPOINT_GROUPS: string[] = [
+	static readonly ListDataflowEndpointGroups: string[] = [
 		"groundstation:ListDataflowEndpointGroups",
 	];
 	/** IAM actions required for the ListEphemerides API call. */
-	static readonly LIST_EPHEMERIDES: string[] = [
-		"groundstation:ListEphemerides",
-	];
+	static readonly ListEphemerides: string[] = ["groundstation:ListEphemerides"];
 	/** IAM actions required for the ListGroundStationReservations API call. */
-	static readonly LIST_GROUND_STATION_RESERVATIONS: string[] = [
+	static readonly ListGroundStationReservations: string[] = [
 		"groundstation:ListGroundStationReservations",
 	];
 	/** IAM actions required for the ListGroundStations API call. */
-	static readonly LIST_GROUND_STATIONS: string[] = [
+	static readonly ListGroundStations: string[] = [
 		"groundstation:ListGroundStations",
 	];
 	/** IAM actions required for the ListMissionProfiles API call. */
-	static readonly LIST_MISSION_PROFILES: string[] = [
+	static readonly ListMissionProfiles: string[] = [
 		"groundstation:ListMissionProfiles",
 	];
 	/** IAM actions required for the ListSatellites API call. */
-	static readonly LIST_SATELLITES: string[] = ["groundstation:ListSatellites"];
+	static readonly ListSatellites: string[] = ["groundstation:ListSatellites"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"groundstation:ListTagsForResource",
 	];
 	/** IAM actions required for the RegisterAgent API call. */
-	static readonly REGISTER_AGENT: string[] = ["groundstation:RegisterAgent"];
+	static readonly RegisterAgent: string[] = ["groundstation:RegisterAgent"];
 	/** IAM actions required for the ReserveContact API call. */
-	static readonly RESERVE_CONTACT: string[] = [
+	static readonly ReserveContact: string[] = [
 		"groundstation:ReserveContact",
 		"groundstation:TagResource",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["groundstation:TagResource"];
+	static readonly TagResource: string[] = ["groundstation:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["groundstation:UntagResource"];
+	static readonly UntagResource: string[] = ["groundstation:UntagResource"];
 	/** IAM actions required for the UpdateAgentStatus API call. */
-	static readonly UPDATE_AGENT_STATUS: string[] = [
+	static readonly UpdateAgentStatus: string[] = [
 		"groundstation:UpdateAgentStatus",
 	];
 	/** IAM actions required for the UpdateConfig API call. */
-	static readonly UPDATE_CONFIG: string[] = [
+	static readonly UpdateConfig: string[] = [
 		"iam:PassRole",
 		"groundstation:UpdateConfig",
 	];
 	/** IAM actions required for the UpdateContact API call. */
-	static readonly UPDATE_CONTACT: string[] = ["groundstation:UpdateContact"];
+	static readonly UpdateContact: string[] = ["groundstation:UpdateContact"];
 	/** IAM actions required for the UpdateEphemeris API call. */
-	static readonly UPDATE_EPHEMERIS: string[] = [
-		"groundstation:UpdateEphemeris",
-	];
+	static readonly UpdateEphemeris: string[] = ["groundstation:UpdateEphemeris"];
 	/** IAM actions required for the UpdateMissionProfile API call. */
-	static readonly UPDATE_MISSION_PROFILE: string[] = [
+	static readonly UpdateMissionProfile: string[] = [
 		"iam:PassRole",
 		"groundstation:UpdateMissionProfile",
 	];
@@ -708,49 +817,49 @@ export class GroundStationOperations {
  */
 export class GroundStationConditions {
 	/** Condition keys applicable to the CreateConfig action. */
-	static readonly CREATE_CONFIG_CONDITION_KEYS: string[] = [
+	static readonly CreateConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataflowEndpointGroup action. */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP_CONDITION_KEYS: string[] = [
+	static readonly CreateDataflowEndpointGroupConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateDataflowEndpointGroupV2 action. */
-	static readonly CREATE_DATAFLOW_ENDPOINT_GROUP_V2_CONDITION_KEYS: string[] = [
+	static readonly CreateDataflowEndpointGroupV2ConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateEphemeris action. */
-	static readonly CREATE_EPHEMERIS_CONDITION_KEYS: string[] = [
+	static readonly CreateEphemerisConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateMissionProfile action. */
-	static readonly CREATE_MISSION_PROFILE_CONDITION_KEYS: string[] = [
+	static readonly CreateMissionProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the ReserveContact action. */
-	static readonly RESERVE_CONTACT_CONDITION_KEYS: string[] = [
+	static readonly ReserveContactConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: groundstation:AgentId (String) */
 	static readonly AGENT_ID = "groundstation:AgentId";
 	/** Condition key: groundstation:ConfigId (String) */

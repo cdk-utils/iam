@@ -13,62 +13,120 @@ export class AirflowActions {
 	static readonly SERVICE_PREFIX = "airflow";
 
 	/** [Write] airflow:CreateCliToken */
-	static readonly CREATE_CLI_TOKEN = "airflow:CreateCliToken";
+	static readonly CreateCliToken = "airflow:CreateCliToken";
 	/** [Write] airflow:CreateEnvironment */
-	static readonly CREATE_ENVIRONMENT = "airflow:CreateEnvironment";
+	static readonly CreateEnvironment = "airflow:CreateEnvironment";
 	/** [Write] airflow:CreateWebLoginToken */
-	static readonly CREATE_WEB_LOGIN_TOKEN = "airflow:CreateWebLoginToken";
+	static readonly CreateWebLoginToken = "airflow:CreateWebLoginToken";
 	/** [Write] airflow:DeleteEnvironment */
-	static readonly DELETE_ENVIRONMENT = "airflow:DeleteEnvironment";
+	static readonly DeleteEnvironment = "airflow:DeleteEnvironment";
 	/** [Read] airflow:GetEnvironment */
-	static readonly GET_ENVIRONMENT = "airflow:GetEnvironment";
+	static readonly actionGetEnvironment = "airflow:GetEnvironment";
 	/** [Write] airflow:InvokeRestApi */
-	static readonly INVOKE_REST_API = "airflow:InvokeRestApi";
+	static readonly InvokeRestApi = "airflow:InvokeRestApi";
 	/** [List] airflow:ListEnvironments */
-	static readonly LIST_ENVIRONMENTS = "airflow:ListEnvironments";
+	static readonly ListEnvironments = "airflow:ListEnvironments";
 	/** [Read] airflow:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "airflow:ListTagsForResource";
+	static readonly ListTagsForResource = "airflow:ListTagsForResource";
 	/** [Write] airflow:PublishMetrics */
-	static readonly PUBLISH_METRICS = "airflow:PublishMetrics";
+	static readonly PublishMetrics = "airflow:PublishMetrics";
 	/** [Tagging] airflow:TagResource */
-	static readonly TAG_RESOURCE = "airflow:TagResource";
+	static readonly TagResource = "airflow:TagResource";
 	/** [Tagging] airflow:UntagResource */
-	static readonly UNTAG_RESOURCE = "airflow:UntagResource";
+	static readonly UntagResource = "airflow:UntagResource";
 	/** [Write] airflow:UpdateEnvironment */
-	static readonly UPDATE_ENVIRONMENT = "airflow:UpdateEnvironment";
+	static readonly UpdateEnvironment = "airflow:UpdateEnvironment";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AirflowActions.GET_ENVIRONMENT,
-		AirflowActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		AirflowActions.actionGetEnvironment,
+		AirflowActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AirflowActions.CREATE_CLI_TOKEN,
-		AirflowActions.CREATE_ENVIRONMENT,
-		AirflowActions.CREATE_WEB_LOGIN_TOKEN,
-		AirflowActions.DELETE_ENVIRONMENT,
-		AirflowActions.INVOKE_REST_API,
-		AirflowActions.PUBLISH_METRICS,
-		AirflowActions.UPDATE_ENVIRONMENT,
+	static readonly AllWriteActions: string[] = [
+		AirflowActions.CreateCliToken,
+		AirflowActions.CreateEnvironment,
+		AirflowActions.CreateWebLoginToken,
+		AirflowActions.DeleteEnvironment,
+		AirflowActions.InvokeRestApi,
+		AirflowActions.PublishMetrics,
+		AirflowActions.UpdateEnvironment,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [AirflowActions.LIST_ENVIRONMENTS];
+	static readonly AllListActions: string[] = [AirflowActions.ListEnvironments];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		AirflowActions.TAG_RESOURCE,
-		AirflowActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		AirflowActions.TagResource,
+		AirflowActions.UntagResource,
 	];
 }
 
-const EnvironmentArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):airflow:(?<region>[^:]*):(?<account>[^:]*):environment/(?<environmentName>[^:/?]+)$",
-);
-const RbacRoleArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):airflow:(?<region>[^:]*):(?<account>[^:]*):role/(?<environmentName>[^:/?]+)/(?<roleName>[^:/?]+)$",
-);
+/**
+ * Properties for building a environment ARN.
+ */
+export interface AirflowEnvironmentArnProps {
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a environment ARN.
+ */
+export interface AirflowEnvironmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+}
+
+/**
+ * Properties for building a rbac-role ARN.
+ */
+export interface AirflowRbacRoleArnProps {
+	/** The EnvironmentName component of the ARN. */
+	readonly environmentName: string;
+	/** The RoleName component of the ARN. */
+	readonly roleName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rbac-role ARN.
+ */
+export interface AirflowRbacRoleArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EnvironmentName component. */
+	readonly environmentName: string;
+	/** The RoleName component. */
+	readonly roleName: string;
+}
+
+const EnvironmentArnRegex =
+	/^arn:(?<partition>[^:]+):airflow:(?<region>[^:]*):(?<account>[^:]*):environment\/(?<environmentName>[^:/?]+)$/;
+const RbacRoleArnRegex =
+	/^arn:(?<partition>[^:]+):airflow:(?<region>[^:]*):(?<account>[^:]*):role\/(?<environmentName>[^:/?]+)\/(?<roleName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for airflow resources.
@@ -77,16 +135,7 @@ export class AirflowResources {
 	/**
 	 * Builds an ARN for the environment resource.
 	 */
-	static environment(props: {
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static environment(props: AirflowEnvironmentArnProps): string {
 		return `arn:${props.partition ?? "aws"}:airflow:${props.region ?? "*"}:${props.account ?? "*"}:environment/${props.environmentName}`;
 	}
 
@@ -101,12 +150,7 @@ export class AirflowResources {
 	 * Parses a environment ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseEnvironmentArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		environmentName: string;
-	} {
+	static parseEnvironmentArn(arn: string): AirflowEnvironmentArnComponents {
 		const match = EnvironmentArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid environment ARN: ${arn}`);
@@ -122,18 +166,7 @@ export class AirflowResources {
 	/**
 	 * Builds an ARN for the rbac-role resource.
 	 */
-	static rbacRole(props: {
-		/** The EnvironmentName component of the ARN. */
-		readonly environmentName: string;
-		/** The RoleName component of the ARN. */
-		readonly roleName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rbacRole(props: AirflowRbacRoleArnProps): string {
 		return `arn:${props.partition ?? "aws"}:airflow:${props.region ?? "*"}:${props.account ?? "*"}:role/${props.environmentName}/${props.roleName}`;
 	}
 
@@ -148,13 +181,7 @@ export class AirflowResources {
 	 * Parses a rbac-role ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRbacRoleArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		environmentName: string;
-		roleName: string;
-	} {
+	static parseRbacRoleArn(arn: string): AirflowRbacRoleArnComponents {
 		const match = RbacRoleArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rbac-role ARN: ${arn}`);
@@ -174,37 +201,37 @@ export class AirflowResources {
  */
 export class AirflowOperations {
 	/** IAM actions required for the CreateCliToken API call. */
-	static readonly CREATE_CLI_TOKEN: string[] = ["airflow:CreateCliToken"];
+	static readonly CreateCliToken: string[] = ["airflow:CreateCliToken"];
 	/** IAM actions required for the CreateEnvironment API call. */
-	static readonly CREATE_ENVIRONMENT: string[] = [
+	static readonly CreateEnvironment: string[] = [
 		"airflow:CreateEnvironment",
 		"iam:PassRole",
 		"airflow:TagResource",
 	];
 	/** IAM actions required for the CreateWebLoginToken API call. */
-	static readonly CREATE_WEB_LOGIN_TOKEN: string[] = [
+	static readonly CreateWebLoginToken: string[] = [
 		"airflow:CreateWebLoginToken",
 	];
 	/** IAM actions required for the DeleteEnvironment API call. */
-	static readonly DELETE_ENVIRONMENT: string[] = ["airflow:DeleteEnvironment"];
+	static readonly DeleteEnvironment: string[] = ["airflow:DeleteEnvironment"];
 	/** IAM actions required for the GetEnvironment API call. */
-	static readonly GET_ENVIRONMENT: string[] = ["airflow:GetEnvironment"];
+	static readonly opGetEnvironment: string[] = ["airflow:GetEnvironment"];
 	/** IAM actions required for the InvokeRestApi API call. */
-	static readonly INVOKE_REST_API: string[] = ["airflow:InvokeRestApi"];
+	static readonly InvokeRestApi: string[] = ["airflow:InvokeRestApi"];
 	/** IAM actions required for the ListEnvironments API call. */
-	static readonly LIST_ENVIRONMENTS: string[] = ["airflow:ListEnvironments"];
+	static readonly ListEnvironments: string[] = ["airflow:ListEnvironments"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"airflow:ListTagsForResource",
 	];
 	/** IAM actions required for the PublishMetrics API call. */
-	static readonly PUBLISH_METRICS: string[] = ["airflow:PublishMetrics"];
+	static readonly PublishMetrics: string[] = ["airflow:PublishMetrics"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["airflow:TagResource"];
+	static readonly TagResource: string[] = ["airflow:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["airflow:UntagResource"];
+	static readonly UntagResource: string[] = ["airflow:UntagResource"];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UPDATE_ENVIRONMENT: string[] = [
+	static readonly UpdateEnvironment: string[] = [
 		"iam:PassRole",
 		"airflow:UpdateEnvironment",
 	];
@@ -215,36 +242,36 @@ export class AirflowOperations {
  */
 export class AirflowConditions {
 	/** Condition keys applicable to the CreateEnvironment action. */
-	static readonly CREATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly CreateEnvironmentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DeleteEnvironment action. */
-	static readonly DELETE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly DeleteEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetEnvironment action. */
-	static readonly GET_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly actionGetEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ListTagsForResource action. */
-	static readonly LIST_TAGS_FOR_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly UntagResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UpdateEnvironment action. */
-	static readonly UPDATE_ENVIRONMENT_CONDITION_KEYS: string[] = [
+	static readonly UpdateEnvironmentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 
@@ -259,11 +286,11 @@ export class AirflowConditions {
 	/** Condition key: airflow:TeamNames (ArrayOfString) */
 	static readonly TEAM_NAMES = "airflow:TeamNames";
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `airflow:DagAccessEntity`.

@@ -13,57 +13,84 @@ export class KendraRankingActions {
 	static readonly SERVICE_PREFIX = "kendra-ranking";
 
 	/** [Write] kendra-ranking:CreateRescoreExecutionPlan */
-	static readonly CREATE_RESCORE_EXECUTION_PLAN =
+	static readonly CreateRescoreExecutionPlan =
 		"kendra-ranking:CreateRescoreExecutionPlan";
 	/** [Write] kendra-ranking:DeleteRescoreExecutionPlan */
-	static readonly DELETE_RESCORE_EXECUTION_PLAN =
+	static readonly DeleteRescoreExecutionPlan =
 		"kendra-ranking:DeleteRescoreExecutionPlan";
 	/** [Read] kendra-ranking:DescribeRescoreExecutionPlan */
-	static readonly DESCRIBE_RESCORE_EXECUTION_PLAN =
+	static readonly DescribeRescoreExecutionPlan =
 		"kendra-ranking:DescribeRescoreExecutionPlan";
 	/** [List] kendra-ranking:ListRescoreExecutionPlans */
-	static readonly LIST_RESCORE_EXECUTION_PLANS =
+	static readonly ListRescoreExecutionPlans =
 		"kendra-ranking:ListRescoreExecutionPlans";
 	/** [Read] kendra-ranking:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "kendra-ranking:ListTagsForResource";
+	static readonly ListTagsForResource = "kendra-ranking:ListTagsForResource";
 	/** [Read] kendra-ranking:Rescore */
-	static readonly RESCORE = "kendra-ranking:Rescore";
+	static readonly Rescore = "kendra-ranking:Rescore";
 	/** [Tagging] kendra-ranking:TagResource */
-	static readonly TAG_RESOURCE = "kendra-ranking:TagResource";
+	static readonly TagResource = "kendra-ranking:TagResource";
 	/** [Tagging] kendra-ranking:UntagResource */
-	static readonly UNTAG_RESOURCE = "kendra-ranking:UntagResource";
+	static readonly UntagResource = "kendra-ranking:UntagResource";
 	/** [Write] kendra-ranking:UpdateRescoreExecutionPlan */
-	static readonly UPDATE_RESCORE_EXECUTION_PLAN =
+	static readonly UpdateRescoreExecutionPlan =
 		"kendra-ranking:UpdateRescoreExecutionPlan";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		KendraRankingActions.DESCRIBE_RESCORE_EXECUTION_PLAN,
-		KendraRankingActions.LIST_TAGS_FOR_RESOURCE,
-		KendraRankingActions.RESCORE,
+	static readonly AllReadActions: string[] = [
+		KendraRankingActions.DescribeRescoreExecutionPlan,
+		KendraRankingActions.ListTagsForResource,
+		KendraRankingActions.Rescore,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		KendraRankingActions.CREATE_RESCORE_EXECUTION_PLAN,
-		KendraRankingActions.DELETE_RESCORE_EXECUTION_PLAN,
-		KendraRankingActions.UPDATE_RESCORE_EXECUTION_PLAN,
+	static readonly AllWriteActions: string[] = [
+		KendraRankingActions.CreateRescoreExecutionPlan,
+		KendraRankingActions.DeleteRescoreExecutionPlan,
+		KendraRankingActions.UpdateRescoreExecutionPlan,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		KendraRankingActions.LIST_RESCORE_EXECUTION_PLANS,
+	static readonly AllListActions: string[] = [
+		KendraRankingActions.ListRescoreExecutionPlans,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		KendraRankingActions.TAG_RESOURCE,
-		KendraRankingActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		KendraRankingActions.TagResource,
+		KendraRankingActions.UntagResource,
 	];
 }
 
-const RescoreExecutionPlanArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):kendra-ranking:(?<region>[^:]*):(?<account>[^:]*):rescore-execution-plan/(?<rescoreExecutionPlanId>[^:/?]+)$",
-);
+/**
+ * Properties for building a rescore-execution-plan ARN.
+ */
+export interface KendraRankingRescoreExecutionPlanArnProps {
+	/** The RescoreExecutionPlanId component of the ARN. */
+	readonly rescoreExecutionPlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a rescore-execution-plan ARN.
+ */
+export interface KendraRankingRescoreExecutionPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RescoreExecutionPlanId component. */
+	readonly rescoreExecutionPlanId: string;
+}
+
+const RescoreExecutionPlanArnRegex =
+	/^arn:(?<partition>[^:]+):kendra-ranking:(?<region>[^:]*):(?<account>[^:]*):rescore-execution-plan\/(?<rescoreExecutionPlanId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kendra-ranking resources.
@@ -72,16 +99,9 @@ export class KendraRankingResources {
 	/**
 	 * Builds an ARN for the rescore-execution-plan resource.
 	 */
-	static rescoreExecutionPlan(props: {
-		/** The RescoreExecutionPlanId component of the ARN. */
-		readonly rescoreExecutionPlanId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static rescoreExecutionPlan(
+		props: KendraRankingRescoreExecutionPlanArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:kendra-ranking:${props.region ?? "*"}:${props.account ?? "*"}:rescore-execution-plan/${props.rescoreExecutionPlanId}`;
 	}
 
@@ -96,12 +116,9 @@ export class KendraRankingResources {
 	 * Parses a rescore-execution-plan ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseRescoreExecutionPlanArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		rescoreExecutionPlanId: string;
-	} {
+	static parseRescoreExecutionPlanArn(
+		arn: string,
+	): KendraRankingRescoreExecutionPlanArnComponents {
 		const match = RescoreExecutionPlanArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid rescore-execution-plan ARN: ${arn}`);
@@ -120,34 +137,34 @@ export class KendraRankingResources {
  */
 export class KendraRankingOperations {
 	/** IAM actions required for the CreateRescoreExecutionPlan API call. */
-	static readonly CREATE_RESCORE_EXECUTION_PLAN: string[] = [
+	static readonly CreateRescoreExecutionPlan: string[] = [
 		"kendra-ranking:CreateRescoreExecutionPlan",
 		"kendra-ranking:TagResource",
 	];
 	/** IAM actions required for the DeleteRescoreExecutionPlan API call. */
-	static readonly DELETE_RESCORE_EXECUTION_PLAN: string[] = [
+	static readonly DeleteRescoreExecutionPlan: string[] = [
 		"kendra-ranking:DeleteRescoreExecutionPlan",
 	];
 	/** IAM actions required for the DescribeRescoreExecutionPlan API call. */
-	static readonly DESCRIBE_RESCORE_EXECUTION_PLAN: string[] = [
+	static readonly DescribeRescoreExecutionPlan: string[] = [
 		"kendra-ranking:DescribeRescoreExecutionPlan",
 	];
 	/** IAM actions required for the ListRescoreExecutionPlans API call. */
-	static readonly LIST_RESCORE_EXECUTION_PLANS: string[] = [
+	static readonly ListRescoreExecutionPlans: string[] = [
 		"kendra-ranking:ListRescoreExecutionPlans",
 	];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"kendra-ranking:ListTagsForResource",
 	];
 	/** IAM actions required for the Rescore API call. */
-	static readonly RESCORE: string[] = ["kendra-ranking:Rescore"];
+	static readonly Rescore: string[] = ["kendra-ranking:Rescore"];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["kendra-ranking:TagResource"];
+	static readonly TagResource: string[] = ["kendra-ranking:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["kendra-ranking:UntagResource"];
+	static readonly UntagResource: string[] = ["kendra-ranking:UntagResource"];
 	/** IAM actions required for the UpdateRescoreExecutionPlan API call. */
-	static readonly UPDATE_RESCORE_EXECUTION_PLAN: string[] = [
+	static readonly UpdateRescoreExecutionPlan: string[] = [
 		"kendra-ranking:UpdateRescoreExecutionPlan",
 	];
 }
@@ -157,24 +174,24 @@ export class KendraRankingOperations {
  */
 export class KendraRankingConditions {
 	/** Condition keys applicable to the CreateRescoreExecutionPlan action. */
-	static readonly CREATE_RESCORE_EXECUTION_PLAN_CONDITION_KEYS: string[] = [
+	static readonly CreateRescoreExecutionPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

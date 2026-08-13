@@ -13,32 +13,62 @@ export class MapcreditsActions {
 	static readonly SERVICE_PREFIX = "mapcredits";
 
 	/** [List] mapcredits:ListAssociatedPrograms */
-	static readonly LIST_ASSOCIATED_PROGRAMS =
-		"mapcredits:ListAssociatedPrograms";
+	static readonly ListAssociatedPrograms = "mapcredits:ListAssociatedPrograms";
 	/** [List] mapcredits:ListQuarterCredits */
-	static readonly LIST_QUARTER_CREDITS = "mapcredits:ListQuarterCredits";
+	static readonly ListQuarterCredits = "mapcredits:ListQuarterCredits";
 	/** [List] mapcredits:ListQuarterSpend */
-	static readonly LIST_QUARTER_SPEND = "mapcredits:ListQuarterSpend";
+	static readonly ListQuarterSpend = "mapcredits:ListQuarterSpend";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [];
+	static readonly AllReadActions: string[] = [];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [];
+	static readonly AllWriteActions: string[] = [];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		MapcreditsActions.LIST_ASSOCIATED_PROGRAMS,
-		MapcreditsActions.LIST_QUARTER_CREDITS,
-		MapcreditsActions.LIST_QUARTER_SPEND,
+	static readonly AllListActions: string[] = [
+		MapcreditsActions.ListAssociatedPrograms,
+		MapcreditsActions.ListQuarterCredits,
+		MapcreditsActions.ListQuarterSpend,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const AgreementArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):mapcredits:::(?<agreement>[^:/?]+)/(?<agreementId>[^:/?]+)$",
-);
+/**
+ * Properties for building a agreement ARN.
+ */
+export interface MapcreditsAgreementArnProps {
+	/** The Agreement component of the ARN. */
+	readonly agreement: string;
+	/** The AgreementId component of the ARN. */
+	readonly agreementId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agreement ARN.
+ */
+export interface MapcreditsAgreementArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Agreement component. */
+	readonly agreement: string;
+	/** The AgreementId component. */
+	readonly agreementId: string;
+}
+
+const AgreementArnRegex =
+	/^arn:(?<partition>[^:]+):mapcredits:::(?<agreement>[^:/?]+)\/(?<agreementId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for mapcredits resources.
@@ -47,18 +77,7 @@ export class MapcreditsResources {
 	/**
 	 * Builds an ARN for the agreement resource.
 	 */
-	static agreement(props: {
-		/** The Agreement component of the ARN. */
-		readonly agreement: string;
-		/** The AgreementId component of the ARN. */
-		readonly agreementId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static agreement(props: MapcreditsAgreementArnProps): string {
 		return `arn:${props.partition ?? "aws"}:mapcredits:::${props.agreement}/${props.agreementId}`;
 	}
 
@@ -73,13 +92,7 @@ export class MapcreditsResources {
 	 * Parses a agreement ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAgreementArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		agreement: string;
-		agreementId: string;
-	} {
+	static parseAgreementArn(arn: string): MapcreditsAgreementArnComponents {
 		const match = AgreementArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid agreement ARN: ${arn}`);

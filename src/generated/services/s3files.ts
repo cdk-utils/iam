@@ -13,103 +13,161 @@ export class S3filesActions {
 	static readonly SERVICE_PREFIX = "s3files";
 
 	/** [Read] s3files:ClientMount */
-	static readonly CLIENT_MOUNT = "s3files:ClientMount";
+	static readonly ClientMount = "s3files:ClientMount";
 	/** [Write] s3files:ClientRootAccess */
-	static readonly CLIENT_ROOT_ACCESS = "s3files:ClientRootAccess";
+	static readonly ClientRootAccess = "s3files:ClientRootAccess";
 	/** [Write] s3files:ClientWrite */
-	static readonly CLIENT_WRITE = "s3files:ClientWrite";
+	static readonly ClientWrite = "s3files:ClientWrite";
 	/** [Write] s3files:CreateAccessPoint */
-	static readonly CREATE_ACCESS_POINT = "s3files:CreateAccessPoint";
+	static readonly CreateAccessPoint = "s3files:CreateAccessPoint";
 	/** [Write] s3files:CreateFileSystem */
-	static readonly CREATE_FILE_SYSTEM = "s3files:CreateFileSystem";
+	static readonly CreateFileSystem = "s3files:CreateFileSystem";
 	/** [Write] s3files:CreateMountTarget */
-	static readonly CREATE_MOUNT_TARGET = "s3files:CreateMountTarget";
+	static readonly CreateMountTarget = "s3files:CreateMountTarget";
 	/** [Write] s3files:DeleteAccessPoint */
-	static readonly DELETE_ACCESS_POINT = "s3files:DeleteAccessPoint";
+	static readonly DeleteAccessPoint = "s3files:DeleteAccessPoint";
 	/** [Write] s3files:DeleteFileSystem */
-	static readonly DELETE_FILE_SYSTEM = "s3files:DeleteFileSystem";
+	static readonly DeleteFileSystem = "s3files:DeleteFileSystem";
 	/** [PermissionManagement] s3files:DeleteFileSystemPolicy */
-	static readonly DELETE_FILE_SYSTEM_POLICY = "s3files:DeleteFileSystemPolicy";
+	static readonly DeleteFileSystemPolicy = "s3files:DeleteFileSystemPolicy";
 	/** [Write] s3files:DeleteMountTarget */
-	static readonly DELETE_MOUNT_TARGET = "s3files:DeleteMountTarget";
+	static readonly DeleteMountTarget = "s3files:DeleteMountTarget";
 	/** [Read] s3files:GetAccessPoint */
-	static readonly GET_ACCESS_POINT = "s3files:GetAccessPoint";
+	static readonly actionGetAccessPoint = "s3files:GetAccessPoint";
 	/** [Read] s3files:GetFileSystem */
-	static readonly GET_FILE_SYSTEM = "s3files:GetFileSystem";
+	static readonly actionGetFileSystem = "s3files:GetFileSystem";
 	/** [Read] s3files:GetFileSystemPolicy */
-	static readonly GET_FILE_SYSTEM_POLICY = "s3files:GetFileSystemPolicy";
+	static readonly actionGetFileSystemPolicy = "s3files:GetFileSystemPolicy";
 	/** [Read] s3files:GetMountTarget */
-	static readonly GET_MOUNT_TARGET = "s3files:GetMountTarget";
+	static readonly actionGetMountTarget = "s3files:GetMountTarget";
 	/** [Read] s3files:GetSynchronizationConfiguration */
-	static readonly GET_SYNCHRONIZATION_CONFIGURATION =
+	static readonly actionGetSynchronizationConfiguration =
 		"s3files:GetSynchronizationConfiguration";
 	/** [List] s3files:ListAccessPoints */
-	static readonly LIST_ACCESS_POINTS = "s3files:ListAccessPoints";
+	static readonly ListAccessPoints = "s3files:ListAccessPoints";
 	/** [List] s3files:ListFileSystems */
-	static readonly LIST_FILE_SYSTEMS = "s3files:ListFileSystems";
+	static readonly ListFileSystems = "s3files:ListFileSystems";
 	/** [List] s3files:ListMountTargets */
-	static readonly LIST_MOUNT_TARGETS = "s3files:ListMountTargets";
+	static readonly ListMountTargets = "s3files:ListMountTargets";
 	/** [Read] s3files:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "s3files:ListTagsForResource";
+	static readonly ListTagsForResource = "s3files:ListTagsForResource";
 	/** [PermissionManagement] s3files:PutFileSystemPolicy */
-	static readonly PUT_FILE_SYSTEM_POLICY = "s3files:PutFileSystemPolicy";
+	static readonly PutFileSystemPolicy = "s3files:PutFileSystemPolicy";
 	/** [Write] s3files:PutSynchronizationConfiguration */
-	static readonly PUT_SYNCHRONIZATION_CONFIGURATION =
+	static readonly PutSynchronizationConfiguration =
 		"s3files:PutSynchronizationConfiguration";
 	/** [Tagging] s3files:TagResource */
-	static readonly TAG_RESOURCE = "s3files:TagResource";
+	static readonly TagResource = "s3files:TagResource";
 	/** [Tagging] s3files:UntagResource */
-	static readonly UNTAG_RESOURCE = "s3files:UntagResource";
+	static readonly UntagResource = "s3files:UntagResource";
 	/** [Write] s3files:UpdateMountTarget */
-	static readonly UPDATE_MOUNT_TARGET = "s3files:UpdateMountTarget";
+	static readonly UpdateMountTarget = "s3files:UpdateMountTarget";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		S3filesActions.CLIENT_MOUNT,
-		S3filesActions.GET_ACCESS_POINT,
-		S3filesActions.GET_FILE_SYSTEM,
-		S3filesActions.GET_FILE_SYSTEM_POLICY,
-		S3filesActions.GET_MOUNT_TARGET,
-		S3filesActions.GET_SYNCHRONIZATION_CONFIGURATION,
-		S3filesActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllReadActions: string[] = [
+		S3filesActions.ClientMount,
+		S3filesActions.actionGetAccessPoint,
+		S3filesActions.actionGetFileSystem,
+		S3filesActions.actionGetFileSystemPolicy,
+		S3filesActions.actionGetMountTarget,
+		S3filesActions.actionGetSynchronizationConfiguration,
+		S3filesActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		S3filesActions.CLIENT_ROOT_ACCESS,
-		S3filesActions.CLIENT_WRITE,
-		S3filesActions.CREATE_ACCESS_POINT,
-		S3filesActions.CREATE_FILE_SYSTEM,
-		S3filesActions.CREATE_MOUNT_TARGET,
-		S3filesActions.DELETE_ACCESS_POINT,
-		S3filesActions.DELETE_FILE_SYSTEM,
-		S3filesActions.DELETE_MOUNT_TARGET,
-		S3filesActions.PUT_SYNCHRONIZATION_CONFIGURATION,
-		S3filesActions.UPDATE_MOUNT_TARGET,
+	static readonly AllWriteActions: string[] = [
+		S3filesActions.ClientRootAccess,
+		S3filesActions.ClientWrite,
+		S3filesActions.CreateAccessPoint,
+		S3filesActions.CreateFileSystem,
+		S3filesActions.CreateMountTarget,
+		S3filesActions.DeleteAccessPoint,
+		S3filesActions.DeleteFileSystem,
+		S3filesActions.DeleteMountTarget,
+		S3filesActions.PutSynchronizationConfiguration,
+		S3filesActions.UpdateMountTarget,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		S3filesActions.LIST_ACCESS_POINTS,
-		S3filesActions.LIST_FILE_SYSTEMS,
-		S3filesActions.LIST_MOUNT_TARGETS,
+	static readonly AllListActions: string[] = [
+		S3filesActions.ListAccessPoints,
+		S3filesActions.ListFileSystems,
+		S3filesActions.ListMountTargets,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [
-		S3filesActions.DELETE_FILE_SYSTEM_POLICY,
-		S3filesActions.PUT_FILE_SYSTEM_POLICY,
+	static readonly AllPermissionManagementActions: string[] = [
+		S3filesActions.DeleteFileSystemPolicy,
+		S3filesActions.PutFileSystemPolicy,
 	];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		S3filesActions.TAG_RESOURCE,
-		S3filesActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		S3filesActions.TagResource,
+		S3filesActions.UntagResource,
 	];
 }
 
-const AccessPointArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3files:(?<region>[^:]*):(?<account>[^:]*):file-system/(?<fileSystemId>[^:/?]+)/access-point/(?<accessPointId>[^:/?]+)$",
-);
-const FileSystemArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):s3files:(?<region>[^:]*):(?<account>[^:]*):file-system/(?<fileSystemId>[^:/?]+)$",
-);
+/**
+ * Properties for building a access-point ARN.
+ */
+export interface S3filesAccessPointArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The AccessPointId component of the ARN. */
+	readonly accessPointId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-point ARN.
+ */
+export interface S3filesAccessPointArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The AccessPointId component. */
+	readonly accessPointId: string;
+}
+
+/**
+ * Properties for building a file-system ARN.
+ */
+export interface S3filesFileSystemArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a file-system ARN.
+ */
+export interface S3filesFileSystemArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+}
+
+const AccessPointArnRegex =
+	/^arn:(?<partition>[^:]+):s3files:(?<region>[^:]*):(?<account>[^:]*):file-system\/(?<fileSystemId>[^:/?]+)\/access-point\/(?<accessPointId>[^:/?]+)$/;
+const FileSystemArnRegex =
+	/^arn:(?<partition>[^:]+):s3files:(?<region>[^:]*):(?<account>[^:]*):file-system\/(?<fileSystemId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for s3files resources.
@@ -118,18 +176,7 @@ export class S3filesResources {
 	/**
 	 * Builds an ARN for the access-point resource.
 	 */
-	static accessPoint(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** The AccessPointId component of the ARN. */
-		readonly accessPointId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static accessPoint(props: S3filesAccessPointArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3files:${props.region ?? "*"}:${props.account ?? "*"}:file-system/${props.fileSystemId}/access-point/${props.accessPointId}`;
 	}
 
@@ -144,13 +191,7 @@ export class S3filesResources {
 	 * Parses a access-point ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAccessPointArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-		accessPointId: string;
-	} {
+	static parseAccessPointArn(arn: string): S3filesAccessPointArnComponents {
 		const match = AccessPointArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-point ARN: ${arn}`);
@@ -167,16 +208,7 @@ export class S3filesResources {
 	/**
 	 * Builds an ARN for the file-system resource.
 	 */
-	static fileSystem(props: {
-		/** The FileSystemId component of the ARN. */
-		readonly fileSystemId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static fileSystem(props: S3filesFileSystemArnProps): string {
 		return `arn:${props.partition ?? "aws"}:s3files:${props.region ?? "*"}:${props.account ?? "*"}:file-system/${props.fileSystemId}`;
 	}
 
@@ -191,12 +223,7 @@ export class S3filesResources {
 	 * Parses a file-system ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseFileSystemArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		fileSystemId: string;
-	} {
+	static parseFileSystemArn(arn: string): S3filesFileSystemArnComponents {
 		const match = FileSystemArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid file-system ARN: ${arn}`);
@@ -215,66 +242,66 @@ export class S3filesResources {
  */
 export class S3filesOperations {
 	/** IAM actions required for the CreateAccessPoint API call. */
-	static readonly CREATE_ACCESS_POINT: string[] = [
+	static readonly CreateAccessPoint: string[] = [
 		"s3files:CreateAccessPoint",
 		"s3files:TagResource",
 	];
 	/** IAM actions required for the CreateFileSystem API call. */
-	static readonly CREATE_FILE_SYSTEM: string[] = [
+	static readonly CreateFileSystem: string[] = [
 		"s3files:CreateFileSystem",
 		"iam:PassRole",
 		"s3files:TagResource",
 	];
 	/** IAM actions required for the CreateMountTarget API call. */
-	static readonly CREATE_MOUNT_TARGET: string[] = ["s3files:CreateMountTarget"];
+	static readonly CreateMountTarget: string[] = ["s3files:CreateMountTarget"];
 	/** IAM actions required for the DeleteAccessPoint API call. */
-	static readonly DELETE_ACCESS_POINT: string[] = ["s3files:DeleteAccessPoint"];
+	static readonly DeleteAccessPoint: string[] = ["s3files:DeleteAccessPoint"];
 	/** IAM actions required for the DeleteFileSystem API call. */
-	static readonly DELETE_FILE_SYSTEM: string[] = ["s3files:DeleteFileSystem"];
+	static readonly DeleteFileSystem: string[] = ["s3files:DeleteFileSystem"];
 	/** IAM actions required for the DeleteFileSystemPolicy API call. */
-	static readonly DELETE_FILE_SYSTEM_POLICY: string[] = [
+	static readonly DeleteFileSystemPolicy: string[] = [
 		"s3files:DeleteFileSystemPolicy",
 	];
 	/** IAM actions required for the DeleteMountTarget API call. */
-	static readonly DELETE_MOUNT_TARGET: string[] = ["s3files:DeleteMountTarget"];
+	static readonly DeleteMountTarget: string[] = ["s3files:DeleteMountTarget"];
 	/** IAM actions required for the GetAccessPoint API call. */
-	static readonly GET_ACCESS_POINT: string[] = ["s3files:GetAccessPoint"];
+	static readonly opGetAccessPoint: string[] = ["s3files:GetAccessPoint"];
 	/** IAM actions required for the GetFileSystem API call. */
-	static readonly GET_FILE_SYSTEM: string[] = ["s3files:GetFileSystem"];
+	static readonly opGetFileSystem: string[] = ["s3files:GetFileSystem"];
 	/** IAM actions required for the GetFileSystemPolicy API call. */
-	static readonly GET_FILE_SYSTEM_POLICY: string[] = [
+	static readonly opGetFileSystemPolicy: string[] = [
 		"s3files:GetFileSystemPolicy",
 	];
 	/** IAM actions required for the GetMountTarget API call. */
-	static readonly GET_MOUNT_TARGET: string[] = ["s3files:GetMountTarget"];
+	static readonly opGetMountTarget: string[] = ["s3files:GetMountTarget"];
 	/** IAM actions required for the GetSynchronizationConfiguration API call. */
-	static readonly GET_SYNCHRONIZATION_CONFIGURATION: string[] = [
+	static readonly opGetSynchronizationConfiguration: string[] = [
 		"s3files:GetSynchronizationConfiguration",
 	];
 	/** IAM actions required for the ListAccessPoints API call. */
-	static readonly LIST_ACCESS_POINTS: string[] = ["s3files:ListAccessPoints"];
+	static readonly ListAccessPoints: string[] = ["s3files:ListAccessPoints"];
 	/** IAM actions required for the ListFileSystems API call. */
-	static readonly LIST_FILE_SYSTEMS: string[] = ["s3files:ListFileSystems"];
+	static readonly ListFileSystems: string[] = ["s3files:ListFileSystems"];
 	/** IAM actions required for the ListMountTargets API call. */
-	static readonly LIST_MOUNT_TARGETS: string[] = ["s3files:ListMountTargets"];
+	static readonly ListMountTargets: string[] = ["s3files:ListMountTargets"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"s3files:ListTagsForResource",
 	];
 	/** IAM actions required for the PutFileSystemPolicy API call. */
-	static readonly PUT_FILE_SYSTEM_POLICY: string[] = [
+	static readonly PutFileSystemPolicy: string[] = [
 		"s3files:PutFileSystemPolicy",
 	];
 	/** IAM actions required for the PutSynchronizationConfiguration API call. */
-	static readonly PUT_SYNCHRONIZATION_CONFIGURATION: string[] = [
+	static readonly PutSynchronizationConfiguration: string[] = [
 		"s3files:PutSynchronizationConfiguration",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["s3files:TagResource"];
+	static readonly TagResource: string[] = ["s3files:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["s3files:UntagResource"];
+	static readonly UntagResource: string[] = ["s3files:UntagResource"];
 	/** IAM actions required for the UpdateMountTarget API call. */
-	static readonly UPDATE_MOUNT_TARGET: string[] = ["s3files:UpdateMountTarget"];
+	static readonly UpdateMountTarget: string[] = ["s3files:UpdateMountTarget"];
 }
 
 /**
@@ -282,42 +309,42 @@ export class S3filesOperations {
  */
 export class S3filesConditions {
 	/** Condition keys applicable to the ClientMount action. */
-	static readonly CLIENT_MOUNT_CONDITION_KEYS: string[] = [
+	static readonly ClientMountConditionKeys: string[] = [
 		"s3files:AccessPointArn",
 	];
 	/** Condition keys applicable to the ClientRootAccess action. */
-	static readonly CLIENT_ROOT_ACCESS_CONDITION_KEYS: string[] = [
+	static readonly ClientRootAccessConditionKeys: string[] = [
 		"s3files:AccessPointArn",
 	];
 	/** Condition keys applicable to the ClientWrite action. */
-	static readonly CLIENT_WRITE_CONDITION_KEYS: string[] = [
+	static readonly ClientWriteConditionKeys: string[] = [
 		"s3files:AccessPointArn",
 	];
 	/** Condition keys applicable to the CreateAccessPoint action. */
-	static readonly CREATE_ACCESS_POINT_CONDITION_KEYS: string[] = [
+	static readonly CreateAccessPointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateFileSystem action. */
-	static readonly CREATE_FILE_SYSTEM_CONDITION_KEYS: string[] = [
+	static readonly CreateFileSystemConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"s3files:CreateAction",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: s3files:AccessPointArn (ARN) */
 	static readonly ACCESS_POINT_ARN = "s3files:AccessPointArn";
 	/** Condition key: s3files:CreateAction (String) */

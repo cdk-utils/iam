@@ -13,126 +13,276 @@ export class PrivateNetworksActions {
 	static readonly SERVICE_PREFIX = "private-networks";
 
 	/** [Write] private-networks:AcknowledgeOrderReceipt */
-	static readonly ACKNOWLEDGE_ORDER_RECEIPT =
+	static readonly AcknowledgeOrderReceipt =
 		"private-networks:AcknowledgeOrderReceipt";
 	/** [Write] private-networks:ActivateDeviceIdentifier */
-	static readonly ACTIVATE_DEVICE_IDENTIFIER =
+	static readonly ActivateDeviceIdentifier =
 		"private-networks:ActivateDeviceIdentifier";
 	/** [Write] private-networks:ActivateNetworkSite */
-	static readonly ACTIVATE_NETWORK_SITE =
-		"private-networks:ActivateNetworkSite";
+	static readonly ActivateNetworkSite = "private-networks:ActivateNetworkSite";
 	/** [Write] private-networks:ConfigureAccessPoint */
-	static readonly CONFIGURE_ACCESS_POINT =
+	static readonly ConfigureAccessPoint =
 		"private-networks:ConfigureAccessPoint";
 	/** [Write] private-networks:CreateNetwork */
-	static readonly CREATE_NETWORK = "private-networks:CreateNetwork";
+	static readonly CreateNetwork = "private-networks:CreateNetwork";
 	/** [Write] private-networks:CreateNetworkSite */
-	static readonly CREATE_NETWORK_SITE = "private-networks:CreateNetworkSite";
+	static readonly CreateNetworkSite = "private-networks:CreateNetworkSite";
 	/** [Write] private-networks:DeactivateDeviceIdentifier */
-	static readonly DEACTIVATE_DEVICE_IDENTIFIER =
+	static readonly DeactivateDeviceIdentifier =
 		"private-networks:DeactivateDeviceIdentifier";
 	/** [Write] private-networks:DeleteNetwork */
-	static readonly DELETE_NETWORK = "private-networks:DeleteNetwork";
+	static readonly DeleteNetwork = "private-networks:DeleteNetwork";
 	/** [Write] private-networks:DeleteNetworkSite */
-	static readonly DELETE_NETWORK_SITE = "private-networks:DeleteNetworkSite";
+	static readonly DeleteNetworkSite = "private-networks:DeleteNetworkSite";
 	/** [Read] private-networks:GetDeviceIdentifier */
-	static readonly GET_DEVICE_IDENTIFIER =
+	static readonly actionGetDeviceIdentifier =
 		"private-networks:GetDeviceIdentifier";
 	/** [Read] private-networks:GetNetwork */
-	static readonly GET_NETWORK = "private-networks:GetNetwork";
+	static readonly actionGetNetwork = "private-networks:GetNetwork";
 	/** [Read] private-networks:GetNetworkResource */
-	static readonly GET_NETWORK_RESOURCE = "private-networks:GetNetworkResource";
+	static readonly actionGetNetworkResource =
+		"private-networks:GetNetworkResource";
 	/** [Read] private-networks:GetNetworkSite */
-	static readonly GET_NETWORK_SITE = "private-networks:GetNetworkSite";
+	static readonly actionGetNetworkSite = "private-networks:GetNetworkSite";
 	/** [Read] private-networks:GetOrder */
-	static readonly GET_ORDER = "private-networks:GetOrder";
+	static readonly actionGetOrder = "private-networks:GetOrder";
 	/** [List] private-networks:ListDeviceIdentifiers */
-	static readonly LIST_DEVICE_IDENTIFIERS =
+	static readonly ListDeviceIdentifiers =
 		"private-networks:ListDeviceIdentifiers";
 	/** [List] private-networks:ListNetworkResources */
-	static readonly LIST_NETWORK_RESOURCES =
+	static readonly ListNetworkResources =
 		"private-networks:ListNetworkResources";
 	/** [List] private-networks:ListNetworkSites */
-	static readonly LIST_NETWORK_SITES = "private-networks:ListNetworkSites";
+	static readonly ListNetworkSites = "private-networks:ListNetworkSites";
 	/** [List] private-networks:ListNetworks */
-	static readonly LIST_NETWORKS = "private-networks:ListNetworks";
+	static readonly ListNetworks = "private-networks:ListNetworks";
 	/** [List] private-networks:ListOrders */
-	static readonly LIST_ORDERS = "private-networks:ListOrders";
+	static readonly ListOrders = "private-networks:ListOrders";
 	/** [List] private-networks:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE =
-		"private-networks:ListTagsForResource";
+	static readonly ListTagsForResource = "private-networks:ListTagsForResource";
 	/** [Read] private-networks:Ping */
-	static readonly PING = "private-networks:Ping";
+	static readonly Ping = "private-networks:Ping";
 	/** [Write] private-networks:StartNetworkResourceUpdate */
-	static readonly START_NETWORK_RESOURCE_UPDATE =
+	static readonly StartNetworkResourceUpdate =
 		"private-networks:StartNetworkResourceUpdate";
 	/** [Tagging] private-networks:TagResource */
-	static readonly TAG_RESOURCE = "private-networks:TagResource";
+	static readonly TagResource = "private-networks:TagResource";
 	/** [Tagging] private-networks:UntagResource */
-	static readonly UNTAG_RESOURCE = "private-networks:UntagResource";
+	static readonly UntagResource = "private-networks:UntagResource";
 	/** [Write] private-networks:UpdateNetworkSite */
-	static readonly UPDATE_NETWORK_SITE = "private-networks:UpdateNetworkSite";
+	static readonly UpdateNetworkSite = "private-networks:UpdateNetworkSite";
 	/** [Write] private-networks:UpdateNetworkSitePlan */
-	static readonly UPDATE_NETWORK_SITE_PLAN =
+	static readonly UpdateNetworkSitePlan =
 		"private-networks:UpdateNetworkSitePlan";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		PrivateNetworksActions.GET_DEVICE_IDENTIFIER,
-		PrivateNetworksActions.GET_NETWORK,
-		PrivateNetworksActions.GET_NETWORK_RESOURCE,
-		PrivateNetworksActions.GET_NETWORK_SITE,
-		PrivateNetworksActions.GET_ORDER,
-		PrivateNetworksActions.PING,
+	static readonly AllReadActions: string[] = [
+		PrivateNetworksActions.actionGetDeviceIdentifier,
+		PrivateNetworksActions.actionGetNetwork,
+		PrivateNetworksActions.actionGetNetworkResource,
+		PrivateNetworksActions.actionGetNetworkSite,
+		PrivateNetworksActions.actionGetOrder,
+		PrivateNetworksActions.Ping,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		PrivateNetworksActions.ACKNOWLEDGE_ORDER_RECEIPT,
-		PrivateNetworksActions.ACTIVATE_DEVICE_IDENTIFIER,
-		PrivateNetworksActions.ACTIVATE_NETWORK_SITE,
-		PrivateNetworksActions.CONFIGURE_ACCESS_POINT,
-		PrivateNetworksActions.CREATE_NETWORK,
-		PrivateNetworksActions.CREATE_NETWORK_SITE,
-		PrivateNetworksActions.DEACTIVATE_DEVICE_IDENTIFIER,
-		PrivateNetworksActions.DELETE_NETWORK,
-		PrivateNetworksActions.DELETE_NETWORK_SITE,
-		PrivateNetworksActions.START_NETWORK_RESOURCE_UPDATE,
-		PrivateNetworksActions.UPDATE_NETWORK_SITE,
-		PrivateNetworksActions.UPDATE_NETWORK_SITE_PLAN,
+	static readonly AllWriteActions: string[] = [
+		PrivateNetworksActions.AcknowledgeOrderReceipt,
+		PrivateNetworksActions.ActivateDeviceIdentifier,
+		PrivateNetworksActions.ActivateNetworkSite,
+		PrivateNetworksActions.ConfigureAccessPoint,
+		PrivateNetworksActions.CreateNetwork,
+		PrivateNetworksActions.CreateNetworkSite,
+		PrivateNetworksActions.DeactivateDeviceIdentifier,
+		PrivateNetworksActions.DeleteNetwork,
+		PrivateNetworksActions.DeleteNetworkSite,
+		PrivateNetworksActions.StartNetworkResourceUpdate,
+		PrivateNetworksActions.UpdateNetworkSite,
+		PrivateNetworksActions.UpdateNetworkSitePlan,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		PrivateNetworksActions.LIST_DEVICE_IDENTIFIERS,
-		PrivateNetworksActions.LIST_NETWORK_RESOURCES,
-		PrivateNetworksActions.LIST_NETWORK_SITES,
-		PrivateNetworksActions.LIST_NETWORKS,
-		PrivateNetworksActions.LIST_ORDERS,
-		PrivateNetworksActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		PrivateNetworksActions.ListDeviceIdentifiers,
+		PrivateNetworksActions.ListNetworkResources,
+		PrivateNetworksActions.ListNetworkSites,
+		PrivateNetworksActions.ListNetworks,
+		PrivateNetworksActions.ListOrders,
+		PrivateNetworksActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		PrivateNetworksActions.TAG_RESOURCE,
-		PrivateNetworksActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		PrivateNetworksActions.TagResource,
+		PrivateNetworksActions.UntagResource,
 	];
 }
 
-const DeviceIdentifierArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):device-identifier/(?<networkName>[^:/?]+)/(?<deviceId>[^:/?]+)$",
-);
-const NetworkArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network/(?<networkName>[^:/?]+)$",
-);
-const NetworkResourceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network-resource/(?<networkName>[^:/?]+)/(?<resourceId>[^:/?]+)$",
-);
-const NetworkSiteArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network-site/(?<networkName>[^:/?]+)/(?<networkSiteName>[^:/?]+)$",
-);
-const OrderArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):order/(?<networkName>[^:/?]+)/(?<orderId>[^:/?]+)$",
-);
+/**
+ * Properties for building a device-identifier ARN.
+ */
+export interface PrivateNetworksDeviceIdentifierArnProps {
+	/** The NetworkName component of the ARN. */
+	readonly networkName: string;
+	/** The DeviceId component of the ARN. */
+	readonly deviceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a device-identifier ARN.
+ */
+export interface PrivateNetworksDeviceIdentifierArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkName component. */
+	readonly networkName: string;
+	/** The DeviceId component. */
+	readonly deviceId: string;
+}
+
+/**
+ * Properties for building a network ARN.
+ */
+export interface PrivateNetworksNetworkArnProps {
+	/** The NetworkName component of the ARN. */
+	readonly networkName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network ARN.
+ */
+export interface PrivateNetworksNetworkArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkName component. */
+	readonly networkName: string;
+}
+
+/**
+ * Properties for building a network-resource ARN.
+ */
+export interface PrivateNetworksNetworkResourceArnProps {
+	/** The NetworkName component of the ARN. */
+	readonly networkName: string;
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-resource ARN.
+ */
+export interface PrivateNetworksNetworkResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkName component. */
+	readonly networkName: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a network-site ARN.
+ */
+export interface PrivateNetworksNetworkSiteArnProps {
+	/** The NetworkName component of the ARN. */
+	readonly networkName: string;
+	/** The NetworkSiteName component of the ARN. */
+	readonly networkSiteName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-site ARN.
+ */
+export interface PrivateNetworksNetworkSiteArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkName component. */
+	readonly networkName: string;
+	/** The NetworkSiteName component. */
+	readonly networkSiteName: string;
+}
+
+/**
+ * Properties for building a order ARN.
+ */
+export interface PrivateNetworksOrderArnProps {
+	/** The NetworkName component of the ARN. */
+	readonly networkName: string;
+	/** The OrderId component of the ARN. */
+	readonly orderId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a order ARN.
+ */
+export interface PrivateNetworksOrderArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The NetworkName component. */
+	readonly networkName: string;
+	/** The OrderId component. */
+	readonly orderId: string;
+}
+
+const DeviceIdentifierArnRegex =
+	/^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):device-identifier\/(?<networkName>[^:/?]+)\/(?<deviceId>[^:/?]+)$/;
+const NetworkArnRegex =
+	/^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network\/(?<networkName>[^:/?]+)$/;
+const NetworkResourceArnRegex =
+	/^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network-resource\/(?<networkName>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const NetworkSiteArnRegex =
+	/^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):network-site\/(?<networkName>[^:/?]+)\/(?<networkSiteName>[^:/?]+)$/;
+const OrderArnRegex =
+	/^arn:(?<partition>[^:]+):private-networks:(?<region>[^:]*):(?<account>[^:]*):order\/(?<networkName>[^:/?]+)\/(?<orderId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for private-networks resources.
@@ -141,18 +291,9 @@ export class PrivateNetworksResources {
 	/**
 	 * Builds an ARN for the device-identifier resource.
 	 */
-	static deviceIdentifier(props: {
-		/** The NetworkName component of the ARN. */
-		readonly networkName: string;
-		/** The DeviceId component of the ARN. */
-		readonly deviceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static deviceIdentifier(
+		props: PrivateNetworksDeviceIdentifierArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:private-networks:${props.region ?? "*"}:${props.account ?? "*"}:device-identifier/${props.networkName}/${props.deviceId}`;
 	}
 
@@ -167,13 +308,9 @@ export class PrivateNetworksResources {
 	 * Parses a device-identifier ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseDeviceIdentifierArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkName: string;
-		deviceId: string;
-	} {
+	static parseDeviceIdentifierArn(
+		arn: string,
+	): PrivateNetworksDeviceIdentifierArnComponents {
 		const match = DeviceIdentifierArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid device-identifier ARN: ${arn}`);
@@ -190,16 +327,7 @@ export class PrivateNetworksResources {
 	/**
 	 * Builds an ARN for the network resource.
 	 */
-	static network(props: {
-		/** The NetworkName component of the ARN. */
-		readonly networkName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static network(props: PrivateNetworksNetworkArnProps): string {
 		return `arn:${props.partition ?? "aws"}:private-networks:${props.region ?? "*"}:${props.account ?? "*"}:network/${props.networkName}`;
 	}
 
@@ -214,12 +342,7 @@ export class PrivateNetworksResources {
 	 * Parses a network ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkName: string;
-	} {
+	static parseNetworkArn(arn: string): PrivateNetworksNetworkArnComponents {
 		const match = NetworkArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network ARN: ${arn}`);
@@ -235,18 +358,9 @@ export class PrivateNetworksResources {
 	/**
 	 * Builds an ARN for the network-resource resource.
 	 */
-	static networkResource(props: {
-		/** The NetworkName component of the ARN. */
-		readonly networkName: string;
-		/** The ResourceId component of the ARN. */
-		readonly resourceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkResource(
+		props: PrivateNetworksNetworkResourceArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:private-networks:${props.region ?? "*"}:${props.account ?? "*"}:network-resource/${props.networkName}/${props.resourceId}`;
 	}
 
@@ -261,13 +375,9 @@ export class PrivateNetworksResources {
 	 * Parses a network-resource ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkResourceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkName: string;
-		resourceId: string;
-	} {
+	static parseNetworkResourceArn(
+		arn: string,
+	): PrivateNetworksNetworkResourceArnComponents {
 		const match = NetworkResourceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-resource ARN: ${arn}`);
@@ -284,18 +394,7 @@ export class PrivateNetworksResources {
 	/**
 	 * Builds an ARN for the network-site resource.
 	 */
-	static networkSite(props: {
-		/** The NetworkName component of the ARN. */
-		readonly networkName: string;
-		/** The NetworkSiteName component of the ARN. */
-		readonly networkSiteName: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static networkSite(props: PrivateNetworksNetworkSiteArnProps): string {
 		return `arn:${props.partition ?? "aws"}:private-networks:${props.region ?? "*"}:${props.account ?? "*"}:network-site/${props.networkName}/${props.networkSiteName}`;
 	}
 
@@ -310,13 +409,9 @@ export class PrivateNetworksResources {
 	 * Parses a network-site ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseNetworkSiteArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkName: string;
-		networkSiteName: string;
-	} {
+	static parseNetworkSiteArn(
+		arn: string,
+	): PrivateNetworksNetworkSiteArnComponents {
 		const match = NetworkSiteArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid network-site ARN: ${arn}`);
@@ -333,18 +428,7 @@ export class PrivateNetworksResources {
 	/**
 	 * Builds an ARN for the order resource.
 	 */
-	static order(props: {
-		/** The NetworkName component of the ARN. */
-		readonly networkName: string;
-		/** The OrderId component of the ARN. */
-		readonly orderId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static order(props: PrivateNetworksOrderArnProps): string {
 		return `arn:${props.partition ?? "aws"}:private-networks:${props.region ?? "*"}:${props.account ?? "*"}:order/${props.networkName}/${props.orderId}`;
 	}
 
@@ -359,13 +443,7 @@ export class PrivateNetworksResources {
 	 * Parses a order ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseOrderArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		networkName: string;
-		orderId: string;
-	} {
+	static parseOrderArn(arn: string): PrivateNetworksOrderArnComponents {
 		const match = OrderArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid order ARN: ${arn}`);
@@ -385,63 +463,63 @@ export class PrivateNetworksResources {
  */
 export class PrivateNetworksConditions {
 	/** Condition keys applicable to the ActivateDeviceIdentifier action. */
-	static readonly ACTIVATE_DEVICE_IDENTIFIER_CONDITION_KEYS: string[] = [
+	static readonly ActivateDeviceIdentifierConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ActivateNetworkSite action. */
-	static readonly ACTIVATE_NETWORK_SITE_CONDITION_KEYS: string[] = [
+	static readonly ActivateNetworkSiteConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetwork action. */
-	static readonly CREATE_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateNetworkSite action. */
-	static readonly CREATE_NETWORK_SITE_CONDITION_KEYS: string[] = [
+	static readonly CreateNetworkSiteConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the GetDeviceIdentifier action. */
-	static readonly GET_DEVICE_IDENTIFIER_CONDITION_KEYS: string[] = [
+	static readonly actionGetDeviceIdentifierConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetNetwork action. */
-	static readonly GET_NETWORK_CONDITION_KEYS: string[] = [
+	static readonly actionGetNetworkConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetNetworkResource action. */
-	static readonly GET_NETWORK_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly actionGetNetworkResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetNetworkSite action. */
-	static readonly GET_NETWORK_SITE_CONDITION_KEYS: string[] = [
+	static readonly actionGetNetworkSiteConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetOrder action. */
-	static readonly GET_ORDER_CONDITION_KEYS: string[] = [
+	static readonly actionGetOrderConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the StartNetworkResourceUpdate action. */
-	static readonly START_NETWORK_RESOURCE_UPDATE_CONDITION_KEYS: string[] = [
+	static readonly StartNetworkResourceUpdateConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.

@@ -13,46 +13,127 @@ export class AppstudioActions {
 	static readonly SERVICE_PREFIX = "appstudio";
 
 	/** [Read] appstudio:GetAccountStatus */
-	static readonly GET_ACCOUNT_STATUS = "appstudio:GetAccountStatus";
+	static readonly actionGetAccountStatus = "appstudio:GetAccountStatus";
 	/** [Read] appstudio:GetEnablementJobStatus */
-	static readonly GET_ENABLEMENT_JOB_STATUS =
+	static readonly actionGetEnablementJobStatus =
 		"appstudio:GetEnablementJobStatus";
 	/** [Write] appstudio:StartEnablementJob */
-	static readonly START_ENABLEMENT_JOB = "appstudio:StartEnablementJob";
+	static readonly StartEnablementJob = "appstudio:StartEnablementJob";
 	/** [Write] appstudio:StartRollbackEnablementJob */
-	static readonly START_ROLLBACK_ENABLEMENT_JOB =
+	static readonly StartRollbackEnablementJob =
 		"appstudio:StartRollbackEnablementJob";
 	/** [Write] appstudio:StartTeamDeployment */
-	static readonly START_TEAM_DEPLOYMENT = "appstudio:StartTeamDeployment";
+	static readonly StartTeamDeployment = "appstudio:StartTeamDeployment";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		AppstudioActions.GET_ACCOUNT_STATUS,
-		AppstudioActions.GET_ENABLEMENT_JOB_STATUS,
+	static readonly AllReadActions: string[] = [
+		AppstudioActions.actionGetAccountStatus,
+		AppstudioActions.actionGetEnablementJobStatus,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		AppstudioActions.START_ENABLEMENT_JOB,
-		AppstudioActions.START_ROLLBACK_ENABLEMENT_JOB,
-		AppstudioActions.START_TEAM_DEPLOYMENT,
+	static readonly AllWriteActions: string[] = [
+		AppstudioActions.StartEnablementJob,
+		AppstudioActions.StartRollbackEnablementJob,
+		AppstudioActions.StartTeamDeployment,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [];
+	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [];
+	static readonly AllTaggingActions: string[] = [];
 }
 
-const ApplicationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):application/(?<applicationId>[^:/?]+)$",
-);
-const ConnectorArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):connector/(?<connectionId>[^:/?]+)$",
-);
-const InstanceArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):instance/(?<instanceId>[^:/?]+)$",
-);
+/**
+ * Properties for building a application ARN.
+ */
+export interface AppstudioApplicationArnProps {
+	/** The ApplicationId component of the ARN. */
+	readonly applicationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a application ARN.
+ */
+export interface AppstudioApplicationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ApplicationId component. */
+	readonly applicationId: string;
+}
+
+/**
+ * Properties for building a connector ARN.
+ */
+export interface AppstudioConnectorArnProps {
+	/** The ConnectionId component of the ARN. */
+	readonly connectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector ARN.
+ */
+export interface AppstudioConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectionId component. */
+	readonly connectionId: string;
+}
+
+/**
+ * Properties for building a instance ARN.
+ */
+export interface AppstudioInstanceArnProps {
+	/** The InstanceId component of the ARN. */
+	readonly instanceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a instance ARN.
+ */
+export interface AppstudioInstanceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InstanceId component. */
+	readonly instanceId: string;
+}
+
+const ApplicationArnRegex =
+	/^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationId>[^:/?]+)$/;
+const ConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<connectionId>[^:/?]+)$/;
+const InstanceArnRegex =
+	/^arn:(?<partition>[^:]+):appstudio:(?<region>[^:]*):(?<account>[^:]*):instance\/(?<instanceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for appstudio resources.
@@ -61,16 +142,7 @@ export class AppstudioResources {
 	/**
 	 * Builds an ARN for the application resource.
 	 */
-	static application(props: {
-		/** The ApplicationId component of the ARN. */
-		readonly applicationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static application(props: AppstudioApplicationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appstudio:${props.region ?? "*"}:${props.account ?? "*"}:application/${props.applicationId}`;
 	}
 
@@ -85,12 +157,7 @@ export class AppstudioResources {
 	 * Parses a application ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseApplicationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		applicationId: string;
-	} {
+	static parseApplicationArn(arn: string): AppstudioApplicationArnComponents {
 		const match = ApplicationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid application ARN: ${arn}`);
@@ -106,16 +173,7 @@ export class AppstudioResources {
 	/**
 	 * Builds an ARN for the connector resource.
 	 */
-	static connector(props: {
-		/** The ConnectionId component of the ARN. */
-		readonly connectionId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static connector(props: AppstudioConnectorArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appstudio:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.connectionId}`;
 	}
 
@@ -130,12 +188,7 @@ export class AppstudioResources {
 	 * Parses a connector ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConnectorArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		connectionId: string;
-	} {
+	static parseConnectorArn(arn: string): AppstudioConnectorArnComponents {
 		const match = ConnectorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid connector ARN: ${arn}`);
@@ -151,16 +204,7 @@ export class AppstudioResources {
 	/**
 	 * Builds an ARN for the instance resource.
 	 */
-	static instance(props: {
-		/** The InstanceId component of the ARN. */
-		readonly instanceId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static instance(props: AppstudioInstanceArnProps): string {
 		return `arn:${props.partition ?? "aws"}:appstudio:${props.region ?? "*"}:${props.account ?? "*"}:instance/${props.instanceId}`;
 	}
 
@@ -175,12 +219,7 @@ export class AppstudioResources {
 	 * Parses a instance ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseInstanceArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		instanceId: string;
-	} {
+	static parseInstanceArn(arn: string): AppstudioInstanceArnComponents {
 		const match = InstanceArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid instance ARN: ${arn}`);

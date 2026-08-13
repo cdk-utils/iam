@@ -13,435 +13,729 @@ export class CleanroomsActions {
 	static readonly SERVICE_PREFIX = "cleanrooms";
 
 	/** [Read] cleanrooms:BatchGetCollaborationAnalysisTemplate */
-	static readonly BATCH_GET_COLLABORATION_ANALYSIS_TEMPLATE =
+	static readonly BatchGetCollaborationAnalysisTemplate =
 		"cleanrooms:BatchGetCollaborationAnalysisTemplate";
 	/** [Read] cleanrooms:BatchGetSchema */
-	static readonly BATCH_GET_SCHEMA = "cleanrooms:BatchGetSchema";
+	static readonly BatchGetSchema = "cleanrooms:BatchGetSchema";
 	/** [Read] cleanrooms:BatchGetSchemaAnalysisRule */
-	static readonly BATCH_GET_SCHEMA_ANALYSIS_RULE =
+	static readonly BatchGetSchemaAnalysisRule =
 		"cleanrooms:BatchGetSchemaAnalysisRule";
 	/** [Write] cleanrooms:CreateAnalysisTemplate */
-	static readonly CREATE_ANALYSIS_TEMPLATE =
-		"cleanrooms:CreateAnalysisTemplate";
+	static readonly CreateAnalysisTemplate = "cleanrooms:CreateAnalysisTemplate";
 	/** [Write] cleanrooms:CreateCollaboration */
-	static readonly CREATE_COLLABORATION = "cleanrooms:CreateCollaboration";
+	static readonly CreateCollaboration = "cleanrooms:CreateCollaboration";
 	/** [Write] cleanrooms:CreateCollaborationChangeRequest */
-	static readonly CREATE_COLLABORATION_CHANGE_REQUEST =
+	static readonly CreateCollaborationChangeRequest =
 		"cleanrooms:CreateCollaborationChangeRequest";
 	/** [Write] cleanrooms:CreateConfiguredAudienceModelAssociation */
-	static readonly CREATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION =
+	static readonly CreateConfiguredAudienceModelAssociation =
 		"cleanrooms:CreateConfiguredAudienceModelAssociation";
 	/** [Write] cleanrooms:CreateConfiguredTable */
-	static readonly CREATE_CONFIGURED_TABLE = "cleanrooms:CreateConfiguredTable";
+	static readonly CreateConfiguredTable = "cleanrooms:CreateConfiguredTable";
 	/** [Write] cleanrooms:CreateConfiguredTableAnalysisRule */
-	static readonly CREATE_CONFIGURED_TABLE_ANALYSIS_RULE =
+	static readonly CreateConfiguredTableAnalysisRule =
 		"cleanrooms:CreateConfiguredTableAnalysisRule";
 	/** [Write] cleanrooms:CreateConfiguredTableAssociation */
-	static readonly CREATE_CONFIGURED_TABLE_ASSOCIATION =
+	static readonly CreateConfiguredTableAssociation =
 		"cleanrooms:CreateConfiguredTableAssociation";
 	/** [Write] cleanrooms:CreateConfiguredTableAssociationAnalysisRule */
-	static readonly CREATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE =
+	static readonly CreateConfiguredTableAssociationAnalysisRule =
 		"cleanrooms:CreateConfiguredTableAssociationAnalysisRule";
 	/** [Write] cleanrooms:CreateIdMappingTable */
-	static readonly CREATE_ID_MAPPING_TABLE = "cleanrooms:CreateIdMappingTable";
+	static readonly CreateIdMappingTable = "cleanrooms:CreateIdMappingTable";
 	/** [Write] cleanrooms:CreateIdNamespaceAssociation */
-	static readonly CREATE_ID_NAMESPACE_ASSOCIATION =
+	static readonly CreateIdNamespaceAssociation =
 		"cleanrooms:CreateIdNamespaceAssociation";
 	/** [Write] cleanrooms:CreateIntermediateTable */
-	static readonly CREATE_INTERMEDIATE_TABLE =
+	static readonly CreateIntermediateTable =
 		"cleanrooms:CreateIntermediateTable";
 	/** [Write] cleanrooms:CreateIntermediateTableAnalysisRule */
-	static readonly CREATE_INTERMEDIATE_TABLE_ANALYSIS_RULE =
+	static readonly CreateIntermediateTableAnalysisRule =
 		"cleanrooms:CreateIntermediateTableAnalysisRule";
 	/** [Write] cleanrooms:CreateMembership */
-	static readonly CREATE_MEMBERSHIP = "cleanrooms:CreateMembership";
+	static readonly CreateMembership = "cleanrooms:CreateMembership";
 	/** [Write] cleanrooms:CreatePrivacyBudgetTemplate */
-	static readonly CREATE_PRIVACY_BUDGET_TEMPLATE =
+	static readonly CreatePrivacyBudgetTemplate =
 		"cleanrooms:CreatePrivacyBudgetTemplate";
 	/** [Write] cleanrooms:DeleteAnalysisTemplate */
-	static readonly DELETE_ANALYSIS_TEMPLATE =
-		"cleanrooms:DeleteAnalysisTemplate";
+	static readonly DeleteAnalysisTemplate = "cleanrooms:DeleteAnalysisTemplate";
 	/** [Write] cleanrooms:DeleteCollaboration */
-	static readonly DELETE_COLLABORATION = "cleanrooms:DeleteCollaboration";
+	static readonly DeleteCollaboration = "cleanrooms:DeleteCollaboration";
 	/** [Write] cleanrooms:DeleteConfiguredAudienceModelAssociation */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION =
+	static readonly DeleteConfiguredAudienceModelAssociation =
 		"cleanrooms:DeleteConfiguredAudienceModelAssociation";
 	/** [Write] cleanrooms:DeleteConfiguredTable */
-	static readonly DELETE_CONFIGURED_TABLE = "cleanrooms:DeleteConfiguredTable";
+	static readonly DeleteConfiguredTable = "cleanrooms:DeleteConfiguredTable";
 	/** [Write] cleanrooms:DeleteConfiguredTableAnalysisRule */
-	static readonly DELETE_CONFIGURED_TABLE_ANALYSIS_RULE =
+	static readonly DeleteConfiguredTableAnalysisRule =
 		"cleanrooms:DeleteConfiguredTableAnalysisRule";
 	/** [Write] cleanrooms:DeleteConfiguredTableAssociation */
-	static readonly DELETE_CONFIGURED_TABLE_ASSOCIATION =
+	static readonly DeleteConfiguredTableAssociation =
 		"cleanrooms:DeleteConfiguredTableAssociation";
 	/** [Write] cleanrooms:DeleteConfiguredTableAssociationAnalysisRule */
-	static readonly DELETE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE =
+	static readonly DeleteConfiguredTableAssociationAnalysisRule =
 		"cleanrooms:DeleteConfiguredTableAssociationAnalysisRule";
 	/** [Write] cleanrooms:DeleteIdMappingTable */
-	static readonly DELETE_ID_MAPPING_TABLE = "cleanrooms:DeleteIdMappingTable";
+	static readonly DeleteIdMappingTable = "cleanrooms:DeleteIdMappingTable";
 	/** [Write] cleanrooms:DeleteIdNamespaceAssociation */
-	static readonly DELETE_ID_NAMESPACE_ASSOCIATION =
+	static readonly DeleteIdNamespaceAssociation =
 		"cleanrooms:DeleteIdNamespaceAssociation";
 	/** [Write] cleanrooms:DeleteIntermediateTable */
-	static readonly DELETE_INTERMEDIATE_TABLE =
+	static readonly DeleteIntermediateTable =
 		"cleanrooms:DeleteIntermediateTable";
 	/** [Write] cleanrooms:DeleteIntermediateTableAnalysisRule */
-	static readonly DELETE_INTERMEDIATE_TABLE_ANALYSIS_RULE =
+	static readonly DeleteIntermediateTableAnalysisRule =
 		"cleanrooms:DeleteIntermediateTableAnalysisRule";
 	/** [Write] cleanrooms:DeleteMember */
-	static readonly DELETE_MEMBER = "cleanrooms:DeleteMember";
+	static readonly DeleteMember = "cleanrooms:DeleteMember";
 	/** [Write] cleanrooms:DeleteMembership */
-	static readonly DELETE_MEMBERSHIP = "cleanrooms:DeleteMembership";
+	static readonly DeleteMembership = "cleanrooms:DeleteMembership";
 	/** [Write] cleanrooms:DeletePrivacyBudgetTemplate */
-	static readonly DELETE_PRIVACY_BUDGET_TEMPLATE =
+	static readonly DeletePrivacyBudgetTemplate =
 		"cleanrooms:DeletePrivacyBudgetTemplate";
 	/** [Write] cleanrooms:DisallowIntermediateTable */
-	static readonly DISALLOW_INTERMEDIATE_TABLE =
+	static readonly DisallowIntermediateTable =
 		"cleanrooms:DisallowIntermediateTable";
 	/** [Read] cleanrooms:GetAnalysisLogExport */
-	static readonly GET_ANALYSIS_LOG_EXPORT = "cleanrooms:GetAnalysisLogExport";
+	static readonly actionGetAnalysisLogExport =
+		"cleanrooms:GetAnalysisLogExport";
 	/** [Read] cleanrooms:GetAnalysisTemplate */
-	static readonly GET_ANALYSIS_TEMPLATE = "cleanrooms:GetAnalysisTemplate";
+	static readonly actionGetAnalysisTemplate = "cleanrooms:GetAnalysisTemplate";
 	/** [Read] cleanrooms:GetCollaboration */
-	static readonly GET_COLLABORATION = "cleanrooms:GetCollaboration";
+	static readonly actionGetCollaboration = "cleanrooms:GetCollaboration";
 	/** [Read] cleanrooms:GetCollaborationAnalysisTemplate */
-	static readonly GET_COLLABORATION_ANALYSIS_TEMPLATE =
+	static readonly actionGetCollaborationAnalysisTemplate =
 		"cleanrooms:GetCollaborationAnalysisTemplate";
 	/** [Read] cleanrooms:GetCollaborationChangeRequest */
-	static readonly GET_COLLABORATION_CHANGE_REQUEST =
+	static readonly actionGetCollaborationChangeRequest =
 		"cleanrooms:GetCollaborationChangeRequest";
 	/** [Read] cleanrooms:GetCollaborationConfiguredAudienceModelAssociation */
-	static readonly GET_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION =
+	static readonly actionGetCollaborationConfiguredAudienceModelAssociation =
 		"cleanrooms:GetCollaborationConfiguredAudienceModelAssociation";
 	/** [Read] cleanrooms:GetCollaborationIdNamespaceAssociation */
-	static readonly GET_COLLABORATION_ID_NAMESPACE_ASSOCIATION =
+	static readonly actionGetCollaborationIdNamespaceAssociation =
 		"cleanrooms:GetCollaborationIdNamespaceAssociation";
 	/** [Read] cleanrooms:GetCollaborationPrivacyBudgetTemplate */
-	static readonly GET_COLLABORATION_PRIVACY_BUDGET_TEMPLATE =
+	static readonly actionGetCollaborationPrivacyBudgetTemplate =
 		"cleanrooms:GetCollaborationPrivacyBudgetTemplate";
 	/** [Read] cleanrooms:GetConfiguredAudienceModelAssociation */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION =
+	static readonly actionGetConfiguredAudienceModelAssociation =
 		"cleanrooms:GetConfiguredAudienceModelAssociation";
 	/** [Read] cleanrooms:GetConfiguredTable */
-	static readonly GET_CONFIGURED_TABLE = "cleanrooms:GetConfiguredTable";
+	static readonly actionGetConfiguredTable = "cleanrooms:GetConfiguredTable";
 	/** [Read] cleanrooms:GetConfiguredTableAnalysisRule */
-	static readonly GET_CONFIGURED_TABLE_ANALYSIS_RULE =
+	static readonly actionGetConfiguredTableAnalysisRule =
 		"cleanrooms:GetConfiguredTableAnalysisRule";
 	/** [Read] cleanrooms:GetConfiguredTableAssociation */
-	static readonly GET_CONFIGURED_TABLE_ASSOCIATION =
+	static readonly actionGetConfiguredTableAssociation =
 		"cleanrooms:GetConfiguredTableAssociation";
 	/** [Read] cleanrooms:GetConfiguredTableAssociationAnalysisRule */
-	static readonly GET_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE =
+	static readonly actionGetConfiguredTableAssociationAnalysisRule =
 		"cleanrooms:GetConfiguredTableAssociationAnalysisRule";
 	/** [Read] cleanrooms:GetIdMappingTable */
-	static readonly GET_ID_MAPPING_TABLE = "cleanrooms:GetIdMappingTable";
+	static readonly actionGetIdMappingTable = "cleanrooms:GetIdMappingTable";
 	/** [Read] cleanrooms:GetIdNamespaceAssociation */
-	static readonly GET_ID_NAMESPACE_ASSOCIATION =
+	static readonly actionGetIdNamespaceAssociation =
 		"cleanrooms:GetIdNamespaceAssociation";
 	/** [Read] cleanrooms:GetIntermediateTable */
-	static readonly GET_INTERMEDIATE_TABLE = "cleanrooms:GetIntermediateTable";
+	static readonly actionGetIntermediateTable =
+		"cleanrooms:GetIntermediateTable";
 	/** [Read] cleanrooms:GetIntermediateTableAnalysisRule */
-	static readonly GET_INTERMEDIATE_TABLE_ANALYSIS_RULE =
+	static readonly actionGetIntermediateTableAnalysisRule =
 		"cleanrooms:GetIntermediateTableAnalysisRule";
 	/** [Read] cleanrooms:GetMembership */
-	static readonly GET_MEMBERSHIP = "cleanrooms:GetMembership";
+	static readonly actionGetMembership = "cleanrooms:GetMembership";
 	/** [Read] cleanrooms:GetPrivacyBudgetTemplate */
-	static readonly GET_PRIVACY_BUDGET_TEMPLATE =
+	static readonly actionGetPrivacyBudgetTemplate =
 		"cleanrooms:GetPrivacyBudgetTemplate";
 	/** [Read] cleanrooms:GetProtectedJob */
-	static readonly GET_PROTECTED_JOB = "cleanrooms:GetProtectedJob";
+	static readonly actionGetProtectedJob = "cleanrooms:GetProtectedJob";
 	/** [Read] cleanrooms:GetProtectedQuery */
-	static readonly GET_PROTECTED_QUERY = "cleanrooms:GetProtectedQuery";
+	static readonly actionGetProtectedQuery = "cleanrooms:GetProtectedQuery";
 	/** [Read] cleanrooms:GetSchema */
-	static readonly GET_SCHEMA = "cleanrooms:GetSchema";
+	static readonly actionGetSchema = "cleanrooms:GetSchema";
 	/** [Read] cleanrooms:GetSchemaAnalysisRule */
-	static readonly GET_SCHEMA_ANALYSIS_RULE = "cleanrooms:GetSchemaAnalysisRule";
+	static readonly actionGetSchemaAnalysisRule =
+		"cleanrooms:GetSchemaAnalysisRule";
 	/** [List] cleanrooms:ListAnalysisLogExports */
-	static readonly LIST_ANALYSIS_LOG_EXPORTS =
-		"cleanrooms:ListAnalysisLogExports";
+	static readonly ListAnalysisLogExports = "cleanrooms:ListAnalysisLogExports";
 	/** [List] cleanrooms:ListAnalysisTemplates */
-	static readonly LIST_ANALYSIS_TEMPLATES = "cleanrooms:ListAnalysisTemplates";
+	static readonly ListAnalysisTemplates = "cleanrooms:ListAnalysisTemplates";
 	/** [List] cleanrooms:ListCollaborationAnalysisTemplates */
-	static readonly LIST_COLLABORATION_ANALYSIS_TEMPLATES =
+	static readonly ListCollaborationAnalysisTemplates =
 		"cleanrooms:ListCollaborationAnalysisTemplates";
 	/** [List] cleanrooms:ListCollaborationChangeRequests */
-	static readonly LIST_COLLABORATION_CHANGE_REQUESTS =
+	static readonly ListCollaborationChangeRequests =
 		"cleanrooms:ListCollaborationChangeRequests";
 	/** [List] cleanrooms:ListCollaborationConfiguredAudienceModelAssociations */
-	static readonly LIST_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS =
+	static readonly ListCollaborationConfiguredAudienceModelAssociations =
 		"cleanrooms:ListCollaborationConfiguredAudienceModelAssociations";
 	/** [List] cleanrooms:ListCollaborationIdNamespaceAssociations */
-	static readonly LIST_COLLABORATION_ID_NAMESPACE_ASSOCIATIONS =
+	static readonly ListCollaborationIdNamespaceAssociations =
 		"cleanrooms:ListCollaborationIdNamespaceAssociations";
 	/** [List] cleanrooms:ListCollaborationPrivacyBudgetTemplates */
-	static readonly LIST_COLLABORATION_PRIVACY_BUDGET_TEMPLATES =
+	static readonly ListCollaborationPrivacyBudgetTemplates =
 		"cleanrooms:ListCollaborationPrivacyBudgetTemplates";
 	/** [List] cleanrooms:ListCollaborationPrivacyBudgets */
-	static readonly LIST_COLLABORATION_PRIVACY_BUDGETS =
+	static readonly ListCollaborationPrivacyBudgets =
 		"cleanrooms:ListCollaborationPrivacyBudgets";
 	/** [List] cleanrooms:ListCollaborations */
-	static readonly LIST_COLLABORATIONS = "cleanrooms:ListCollaborations";
+	static readonly ListCollaborations = "cleanrooms:ListCollaborations";
 	/** [List] cleanrooms:ListConfiguredAudienceModelAssociations */
-	static readonly LIST_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS =
+	static readonly ListConfiguredAudienceModelAssociations =
 		"cleanrooms:ListConfiguredAudienceModelAssociations";
 	/** [List] cleanrooms:ListConfiguredTableAssociations */
-	static readonly LIST_CONFIGURED_TABLE_ASSOCIATIONS =
+	static readonly ListConfiguredTableAssociations =
 		"cleanrooms:ListConfiguredTableAssociations";
 	/** [List] cleanrooms:ListConfiguredTables */
-	static readonly LIST_CONFIGURED_TABLES = "cleanrooms:ListConfiguredTables";
+	static readonly ListConfiguredTables = "cleanrooms:ListConfiguredTables";
 	/** [List] cleanrooms:ListIdMappingTables */
-	static readonly LIST_ID_MAPPING_TABLES = "cleanrooms:ListIdMappingTables";
+	static readonly ListIdMappingTables = "cleanrooms:ListIdMappingTables";
 	/** [List] cleanrooms:ListIdNamespaceAssociations */
-	static readonly LIST_ID_NAMESPACE_ASSOCIATIONS =
+	static readonly ListIdNamespaceAssociations =
 		"cleanrooms:ListIdNamespaceAssociations";
 	/** [List] cleanrooms:ListIntermediateTableVersions */
-	static readonly LIST_INTERMEDIATE_TABLE_VERSIONS =
+	static readonly ListIntermediateTableVersions =
 		"cleanrooms:ListIntermediateTableVersions";
 	/** [List] cleanrooms:ListIntermediateTables */
-	static readonly LIST_INTERMEDIATE_TABLES =
-		"cleanrooms:ListIntermediateTables";
+	static readonly ListIntermediateTables = "cleanrooms:ListIntermediateTables";
 	/** [List] cleanrooms:ListMembers */
-	static readonly LIST_MEMBERS = "cleanrooms:ListMembers";
+	static readonly ListMembers = "cleanrooms:ListMembers";
 	/** [List] cleanrooms:ListMemberships */
-	static readonly LIST_MEMBERSHIPS = "cleanrooms:ListMemberships";
+	static readonly ListMemberships = "cleanrooms:ListMemberships";
 	/** [List] cleanrooms:ListPrivacyBudgetTemplates */
-	static readonly LIST_PRIVACY_BUDGET_TEMPLATES =
+	static readonly ListPrivacyBudgetTemplates =
 		"cleanrooms:ListPrivacyBudgetTemplates";
 	/** [List] cleanrooms:ListPrivacyBudgets */
-	static readonly LIST_PRIVACY_BUDGETS = "cleanrooms:ListPrivacyBudgets";
+	static readonly ListPrivacyBudgets = "cleanrooms:ListPrivacyBudgets";
 	/** [List] cleanrooms:ListProtectedJobs */
-	static readonly LIST_PROTECTED_JOBS = "cleanrooms:ListProtectedJobs";
+	static readonly ListProtectedJobs = "cleanrooms:ListProtectedJobs";
 	/** [List] cleanrooms:ListProtectedQueries */
-	static readonly LIST_PROTECTED_QUERIES = "cleanrooms:ListProtectedQueries";
+	static readonly ListProtectedQueries = "cleanrooms:ListProtectedQueries";
 	/** [List] cleanrooms:ListSchemas */
-	static readonly LIST_SCHEMAS = "cleanrooms:ListSchemas";
+	static readonly ListSchemas = "cleanrooms:ListSchemas";
 	/** [List] cleanrooms:ListTagsForResource */
-	static readonly LIST_TAGS_FOR_RESOURCE = "cleanrooms:ListTagsForResource";
+	static readonly ListTagsForResource = "cleanrooms:ListTagsForResource";
 	/** [Read] cleanrooms:PassCollaboration */
-	static readonly PASS_COLLABORATION = "cleanrooms:PassCollaboration";
+	static readonly PassCollaboration = "cleanrooms:PassCollaboration";
 	/** [Read] cleanrooms:PassMembership */
-	static readonly PASS_MEMBERSHIP = "cleanrooms:PassMembership";
+	static readonly PassMembership = "cleanrooms:PassMembership";
 	/** [Write] cleanrooms:PopulateIdMappingTable */
-	static readonly POPULATE_ID_MAPPING_TABLE =
-		"cleanrooms:PopulateIdMappingTable";
+	static readonly PopulateIdMappingTable = "cleanrooms:PopulateIdMappingTable";
 	/** [Write] cleanrooms:PopulateIntermediateTable */
-	static readonly POPULATE_INTERMEDIATE_TABLE =
+	static readonly PopulateIntermediateTable =
 		"cleanrooms:PopulateIntermediateTable";
 	/** [Read] cleanrooms:PreviewPrivacyImpact */
-	static readonly PREVIEW_PRIVACY_IMPACT = "cleanrooms:PreviewPrivacyImpact";
+	static readonly PreviewPrivacyImpact = "cleanrooms:PreviewPrivacyImpact";
 	/** [Write] cleanrooms:StartAnalysisLogExport */
-	static readonly START_ANALYSIS_LOG_EXPORT =
-		"cleanrooms:StartAnalysisLogExport";
+	static readonly StartAnalysisLogExport = "cleanrooms:StartAnalysisLogExport";
 	/** [Write] cleanrooms:StartProtectedJob */
-	static readonly START_PROTECTED_JOB = "cleanrooms:StartProtectedJob";
+	static readonly StartProtectedJob = "cleanrooms:StartProtectedJob";
 	/** [Write] cleanrooms:StartProtectedQuery */
-	static readonly START_PROTECTED_QUERY = "cleanrooms:StartProtectedQuery";
+	static readonly StartProtectedQuery = "cleanrooms:StartProtectedQuery";
 	/** [Tagging] cleanrooms:TagResource */
-	static readonly TAG_RESOURCE = "cleanrooms:TagResource";
+	static readonly TagResource = "cleanrooms:TagResource";
 	/** [Tagging] cleanrooms:UntagResource */
-	static readonly UNTAG_RESOURCE = "cleanrooms:UntagResource";
+	static readonly UntagResource = "cleanrooms:UntagResource";
 	/** [Write] cleanrooms:UpdateAnalysisTemplate */
-	static readonly UPDATE_ANALYSIS_TEMPLATE =
-		"cleanrooms:UpdateAnalysisTemplate";
+	static readonly UpdateAnalysisTemplate = "cleanrooms:UpdateAnalysisTemplate";
 	/** [Write] cleanrooms:UpdateCollaboration */
-	static readonly UPDATE_COLLABORATION = "cleanrooms:UpdateCollaboration";
+	static readonly UpdateCollaboration = "cleanrooms:UpdateCollaboration";
 	/** [Write] cleanrooms:UpdateCollaborationChangeRequest */
-	static readonly UPDATE_COLLABORATION_CHANGE_REQUEST =
+	static readonly UpdateCollaborationChangeRequest =
 		"cleanrooms:UpdateCollaborationChangeRequest";
 	/** [Write] cleanrooms:UpdateConfiguredAudienceModelAssociation */
-	static readonly UPDATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION =
+	static readonly UpdateConfiguredAudienceModelAssociation =
 		"cleanrooms:UpdateConfiguredAudienceModelAssociation";
 	/** [Write] cleanrooms:UpdateConfiguredTable */
-	static readonly UPDATE_CONFIGURED_TABLE = "cleanrooms:UpdateConfiguredTable";
+	static readonly UpdateConfiguredTable = "cleanrooms:UpdateConfiguredTable";
 	/** [Write] cleanrooms:UpdateConfiguredTableAllowedColumns */
-	static readonly UPDATE_CONFIGURED_TABLE_ALLOWED_COLUMNS =
+	static readonly UpdateConfiguredTableAllowedColumns =
 		"cleanrooms:UpdateConfiguredTableAllowedColumns";
 	/** [Write] cleanrooms:UpdateConfiguredTableAnalysisRule */
-	static readonly UPDATE_CONFIGURED_TABLE_ANALYSIS_RULE =
+	static readonly UpdateConfiguredTableAnalysisRule =
 		"cleanrooms:UpdateConfiguredTableAnalysisRule";
 	/** [Write] cleanrooms:UpdateConfiguredTableAssociation */
-	static readonly UPDATE_CONFIGURED_TABLE_ASSOCIATION =
+	static readonly UpdateConfiguredTableAssociation =
 		"cleanrooms:UpdateConfiguredTableAssociation";
 	/** [Write] cleanrooms:UpdateConfiguredTableAssociationAnalysisRule */
-	static readonly UPDATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE =
+	static readonly UpdateConfiguredTableAssociationAnalysisRule =
 		"cleanrooms:UpdateConfiguredTableAssociationAnalysisRule";
 	/** [Write] cleanrooms:UpdateConfiguredTableReference */
-	static readonly UPDATE_CONFIGURED_TABLE_REFERENCE =
+	static readonly UpdateConfiguredTableReference =
 		"cleanrooms:UpdateConfiguredTableReference";
 	/** [Write] cleanrooms:UpdateIdMappingTable */
-	static readonly UPDATE_ID_MAPPING_TABLE = "cleanrooms:UpdateIdMappingTable";
+	static readonly UpdateIdMappingTable = "cleanrooms:UpdateIdMappingTable";
 	/** [Write] cleanrooms:UpdateIdNamespaceAssociation */
-	static readonly UPDATE_ID_NAMESPACE_ASSOCIATION =
+	static readonly UpdateIdNamespaceAssociation =
 		"cleanrooms:UpdateIdNamespaceAssociation";
 	/** [Write] cleanrooms:UpdateIntermediateTable */
-	static readonly UPDATE_INTERMEDIATE_TABLE =
+	static readonly UpdateIntermediateTable =
 		"cleanrooms:UpdateIntermediateTable";
 	/** [Write] cleanrooms:UpdateIntermediateTableAnalysisRule */
-	static readonly UPDATE_INTERMEDIATE_TABLE_ANALYSIS_RULE =
+	static readonly UpdateIntermediateTableAnalysisRule =
 		"cleanrooms:UpdateIntermediateTableAnalysisRule";
 	/** [Write] cleanrooms:UpdateMembership */
-	static readonly UPDATE_MEMBERSHIP = "cleanrooms:UpdateMembership";
+	static readonly UpdateMembership = "cleanrooms:UpdateMembership";
 	/** [Write] cleanrooms:UpdatePrivacyBudgetTemplate */
-	static readonly UPDATE_PRIVACY_BUDGET_TEMPLATE =
+	static readonly UpdatePrivacyBudgetTemplate =
 		"cleanrooms:UpdatePrivacyBudgetTemplate";
 	/** [Write] cleanrooms:UpdateProtectedJob */
-	static readonly UPDATE_PROTECTED_JOB = "cleanrooms:UpdateProtectedJob";
+	static readonly UpdateProtectedJob = "cleanrooms:UpdateProtectedJob";
 	/** [Write] cleanrooms:UpdateProtectedQuery */
-	static readonly UPDATE_PROTECTED_QUERY = "cleanrooms:UpdateProtectedQuery";
+	static readonly UpdateProtectedQuery = "cleanrooms:UpdateProtectedQuery";
 
 	/** All read-level actions. */
-	static readonly READ_ACTIONS: string[] = [
-		CleanroomsActions.BATCH_GET_COLLABORATION_ANALYSIS_TEMPLATE,
-		CleanroomsActions.BATCH_GET_SCHEMA,
-		CleanroomsActions.BATCH_GET_SCHEMA_ANALYSIS_RULE,
-		CleanroomsActions.GET_ANALYSIS_LOG_EXPORT,
-		CleanroomsActions.GET_ANALYSIS_TEMPLATE,
-		CleanroomsActions.GET_COLLABORATION,
-		CleanroomsActions.GET_COLLABORATION_ANALYSIS_TEMPLATE,
-		CleanroomsActions.GET_COLLABORATION_CHANGE_REQUEST,
-		CleanroomsActions.GET_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION,
-		CleanroomsActions.GET_COLLABORATION_ID_NAMESPACE_ASSOCIATION,
-		CleanroomsActions.GET_COLLABORATION_PRIVACY_BUDGET_TEMPLATE,
-		CleanroomsActions.GET_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION,
-		CleanroomsActions.GET_CONFIGURED_TABLE,
-		CleanroomsActions.GET_CONFIGURED_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.GET_CONFIGURED_TABLE_ASSOCIATION,
-		CleanroomsActions.GET_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE,
-		CleanroomsActions.GET_ID_MAPPING_TABLE,
-		CleanroomsActions.GET_ID_NAMESPACE_ASSOCIATION,
-		CleanroomsActions.GET_INTERMEDIATE_TABLE,
-		CleanroomsActions.GET_INTERMEDIATE_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.GET_MEMBERSHIP,
-		CleanroomsActions.GET_PRIVACY_BUDGET_TEMPLATE,
-		CleanroomsActions.GET_PROTECTED_JOB,
-		CleanroomsActions.GET_PROTECTED_QUERY,
-		CleanroomsActions.GET_SCHEMA,
-		CleanroomsActions.GET_SCHEMA_ANALYSIS_RULE,
-		CleanroomsActions.PASS_COLLABORATION,
-		CleanroomsActions.PASS_MEMBERSHIP,
-		CleanroomsActions.PREVIEW_PRIVACY_IMPACT,
+	static readonly AllReadActions: string[] = [
+		CleanroomsActions.BatchGetCollaborationAnalysisTemplate,
+		CleanroomsActions.BatchGetSchema,
+		CleanroomsActions.BatchGetSchemaAnalysisRule,
+		CleanroomsActions.actionGetAnalysisLogExport,
+		CleanroomsActions.actionGetAnalysisTemplate,
+		CleanroomsActions.actionGetCollaboration,
+		CleanroomsActions.actionGetCollaborationAnalysisTemplate,
+		CleanroomsActions.actionGetCollaborationChangeRequest,
+		CleanroomsActions.actionGetCollaborationConfiguredAudienceModelAssociation,
+		CleanroomsActions.actionGetCollaborationIdNamespaceAssociation,
+		CleanroomsActions.actionGetCollaborationPrivacyBudgetTemplate,
+		CleanroomsActions.actionGetConfiguredAudienceModelAssociation,
+		CleanroomsActions.actionGetConfiguredTable,
+		CleanroomsActions.actionGetConfiguredTableAnalysisRule,
+		CleanroomsActions.actionGetConfiguredTableAssociation,
+		CleanroomsActions.actionGetConfiguredTableAssociationAnalysisRule,
+		CleanroomsActions.actionGetIdMappingTable,
+		CleanroomsActions.actionGetIdNamespaceAssociation,
+		CleanroomsActions.actionGetIntermediateTable,
+		CleanroomsActions.actionGetIntermediateTableAnalysisRule,
+		CleanroomsActions.actionGetMembership,
+		CleanroomsActions.actionGetPrivacyBudgetTemplate,
+		CleanroomsActions.actionGetProtectedJob,
+		CleanroomsActions.actionGetProtectedQuery,
+		CleanroomsActions.actionGetSchema,
+		CleanroomsActions.actionGetSchemaAnalysisRule,
+		CleanroomsActions.PassCollaboration,
+		CleanroomsActions.PassMembership,
+		CleanroomsActions.PreviewPrivacyImpact,
 	];
 	/** All write-level actions. */
-	static readonly WRITE_ACTIONS: string[] = [
-		CleanroomsActions.CREATE_ANALYSIS_TEMPLATE,
-		CleanroomsActions.CREATE_COLLABORATION,
-		CleanroomsActions.CREATE_COLLABORATION_CHANGE_REQUEST,
-		CleanroomsActions.CREATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION,
-		CleanroomsActions.CREATE_CONFIGURED_TABLE,
-		CleanroomsActions.CREATE_CONFIGURED_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.CREATE_CONFIGURED_TABLE_ASSOCIATION,
-		CleanroomsActions.CREATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE,
-		CleanroomsActions.CREATE_ID_MAPPING_TABLE,
-		CleanroomsActions.CREATE_ID_NAMESPACE_ASSOCIATION,
-		CleanroomsActions.CREATE_INTERMEDIATE_TABLE,
-		CleanroomsActions.CREATE_INTERMEDIATE_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.CREATE_MEMBERSHIP,
-		CleanroomsActions.CREATE_PRIVACY_BUDGET_TEMPLATE,
-		CleanroomsActions.DELETE_ANALYSIS_TEMPLATE,
-		CleanroomsActions.DELETE_COLLABORATION,
-		CleanroomsActions.DELETE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION,
-		CleanroomsActions.DELETE_CONFIGURED_TABLE,
-		CleanroomsActions.DELETE_CONFIGURED_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.DELETE_CONFIGURED_TABLE_ASSOCIATION,
-		CleanroomsActions.DELETE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE,
-		CleanroomsActions.DELETE_ID_MAPPING_TABLE,
-		CleanroomsActions.DELETE_ID_NAMESPACE_ASSOCIATION,
-		CleanroomsActions.DELETE_INTERMEDIATE_TABLE,
-		CleanroomsActions.DELETE_INTERMEDIATE_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.DELETE_MEMBER,
-		CleanroomsActions.DELETE_MEMBERSHIP,
-		CleanroomsActions.DELETE_PRIVACY_BUDGET_TEMPLATE,
-		CleanroomsActions.DISALLOW_INTERMEDIATE_TABLE,
-		CleanroomsActions.POPULATE_ID_MAPPING_TABLE,
-		CleanroomsActions.POPULATE_INTERMEDIATE_TABLE,
-		CleanroomsActions.START_ANALYSIS_LOG_EXPORT,
-		CleanroomsActions.START_PROTECTED_JOB,
-		CleanroomsActions.START_PROTECTED_QUERY,
-		CleanroomsActions.UPDATE_ANALYSIS_TEMPLATE,
-		CleanroomsActions.UPDATE_COLLABORATION,
-		CleanroomsActions.UPDATE_COLLABORATION_CHANGE_REQUEST,
-		CleanroomsActions.UPDATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE_ALLOWED_COLUMNS,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE_ASSOCIATION,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE,
-		CleanroomsActions.UPDATE_CONFIGURED_TABLE_REFERENCE,
-		CleanroomsActions.UPDATE_ID_MAPPING_TABLE,
-		CleanroomsActions.UPDATE_ID_NAMESPACE_ASSOCIATION,
-		CleanroomsActions.UPDATE_INTERMEDIATE_TABLE,
-		CleanroomsActions.UPDATE_INTERMEDIATE_TABLE_ANALYSIS_RULE,
-		CleanroomsActions.UPDATE_MEMBERSHIP,
-		CleanroomsActions.UPDATE_PRIVACY_BUDGET_TEMPLATE,
-		CleanroomsActions.UPDATE_PROTECTED_JOB,
-		CleanroomsActions.UPDATE_PROTECTED_QUERY,
+	static readonly AllWriteActions: string[] = [
+		CleanroomsActions.CreateAnalysisTemplate,
+		CleanroomsActions.CreateCollaboration,
+		CleanroomsActions.CreateCollaborationChangeRequest,
+		CleanroomsActions.CreateConfiguredAudienceModelAssociation,
+		CleanroomsActions.CreateConfiguredTable,
+		CleanroomsActions.CreateConfiguredTableAnalysisRule,
+		CleanroomsActions.CreateConfiguredTableAssociation,
+		CleanroomsActions.CreateConfiguredTableAssociationAnalysisRule,
+		CleanroomsActions.CreateIdMappingTable,
+		CleanroomsActions.CreateIdNamespaceAssociation,
+		CleanroomsActions.CreateIntermediateTable,
+		CleanroomsActions.CreateIntermediateTableAnalysisRule,
+		CleanroomsActions.CreateMembership,
+		CleanroomsActions.CreatePrivacyBudgetTemplate,
+		CleanroomsActions.DeleteAnalysisTemplate,
+		CleanroomsActions.DeleteCollaboration,
+		CleanroomsActions.DeleteConfiguredAudienceModelAssociation,
+		CleanroomsActions.DeleteConfiguredTable,
+		CleanroomsActions.DeleteConfiguredTableAnalysisRule,
+		CleanroomsActions.DeleteConfiguredTableAssociation,
+		CleanroomsActions.DeleteConfiguredTableAssociationAnalysisRule,
+		CleanroomsActions.DeleteIdMappingTable,
+		CleanroomsActions.DeleteIdNamespaceAssociation,
+		CleanroomsActions.DeleteIntermediateTable,
+		CleanroomsActions.DeleteIntermediateTableAnalysisRule,
+		CleanroomsActions.DeleteMember,
+		CleanroomsActions.DeleteMembership,
+		CleanroomsActions.DeletePrivacyBudgetTemplate,
+		CleanroomsActions.DisallowIntermediateTable,
+		CleanroomsActions.PopulateIdMappingTable,
+		CleanroomsActions.PopulateIntermediateTable,
+		CleanroomsActions.StartAnalysisLogExport,
+		CleanroomsActions.StartProtectedJob,
+		CleanroomsActions.StartProtectedQuery,
+		CleanroomsActions.UpdateAnalysisTemplate,
+		CleanroomsActions.UpdateCollaboration,
+		CleanroomsActions.UpdateCollaborationChangeRequest,
+		CleanroomsActions.UpdateConfiguredAudienceModelAssociation,
+		CleanroomsActions.UpdateConfiguredTable,
+		CleanroomsActions.UpdateConfiguredTableAllowedColumns,
+		CleanroomsActions.UpdateConfiguredTableAnalysisRule,
+		CleanroomsActions.UpdateConfiguredTableAssociation,
+		CleanroomsActions.UpdateConfiguredTableAssociationAnalysisRule,
+		CleanroomsActions.UpdateConfiguredTableReference,
+		CleanroomsActions.UpdateIdMappingTable,
+		CleanroomsActions.UpdateIdNamespaceAssociation,
+		CleanroomsActions.UpdateIntermediateTable,
+		CleanroomsActions.UpdateIntermediateTableAnalysisRule,
+		CleanroomsActions.UpdateMembership,
+		CleanroomsActions.UpdatePrivacyBudgetTemplate,
+		CleanroomsActions.UpdateProtectedJob,
+		CleanroomsActions.UpdateProtectedQuery,
 	];
 	/** All list-level actions. */
-	static readonly LIST_ACTIONS: string[] = [
-		CleanroomsActions.LIST_ANALYSIS_LOG_EXPORTS,
-		CleanroomsActions.LIST_ANALYSIS_TEMPLATES,
-		CleanroomsActions.LIST_COLLABORATION_ANALYSIS_TEMPLATES,
-		CleanroomsActions.LIST_COLLABORATION_CHANGE_REQUESTS,
-		CleanroomsActions.LIST_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS,
-		CleanroomsActions.LIST_COLLABORATION_ID_NAMESPACE_ASSOCIATIONS,
-		CleanroomsActions.LIST_COLLABORATION_PRIVACY_BUDGET_TEMPLATES,
-		CleanroomsActions.LIST_COLLABORATION_PRIVACY_BUDGETS,
-		CleanroomsActions.LIST_COLLABORATIONS,
-		CleanroomsActions.LIST_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS,
-		CleanroomsActions.LIST_CONFIGURED_TABLE_ASSOCIATIONS,
-		CleanroomsActions.LIST_CONFIGURED_TABLES,
-		CleanroomsActions.LIST_ID_MAPPING_TABLES,
-		CleanroomsActions.LIST_ID_NAMESPACE_ASSOCIATIONS,
-		CleanroomsActions.LIST_INTERMEDIATE_TABLE_VERSIONS,
-		CleanroomsActions.LIST_INTERMEDIATE_TABLES,
-		CleanroomsActions.LIST_MEMBERS,
-		CleanroomsActions.LIST_MEMBERSHIPS,
-		CleanroomsActions.LIST_PRIVACY_BUDGET_TEMPLATES,
-		CleanroomsActions.LIST_PRIVACY_BUDGETS,
-		CleanroomsActions.LIST_PROTECTED_JOBS,
-		CleanroomsActions.LIST_PROTECTED_QUERIES,
-		CleanroomsActions.LIST_SCHEMAS,
-		CleanroomsActions.LIST_TAGS_FOR_RESOURCE,
+	static readonly AllListActions: string[] = [
+		CleanroomsActions.ListAnalysisLogExports,
+		CleanroomsActions.ListAnalysisTemplates,
+		CleanroomsActions.ListCollaborationAnalysisTemplates,
+		CleanroomsActions.ListCollaborationChangeRequests,
+		CleanroomsActions.ListCollaborationConfiguredAudienceModelAssociations,
+		CleanroomsActions.ListCollaborationIdNamespaceAssociations,
+		CleanroomsActions.ListCollaborationPrivacyBudgetTemplates,
+		CleanroomsActions.ListCollaborationPrivacyBudgets,
+		CleanroomsActions.ListCollaborations,
+		CleanroomsActions.ListConfiguredAudienceModelAssociations,
+		CleanroomsActions.ListConfiguredTableAssociations,
+		CleanroomsActions.ListConfiguredTables,
+		CleanroomsActions.ListIdMappingTables,
+		CleanroomsActions.ListIdNamespaceAssociations,
+		CleanroomsActions.ListIntermediateTableVersions,
+		CleanroomsActions.ListIntermediateTables,
+		CleanroomsActions.ListMembers,
+		CleanroomsActions.ListMemberships,
+		CleanroomsActions.ListPrivacyBudgetTemplates,
+		CleanroomsActions.ListPrivacyBudgets,
+		CleanroomsActions.ListProtectedJobs,
+		CleanroomsActions.ListProtectedQueries,
+		CleanroomsActions.ListSchemas,
+		CleanroomsActions.ListTagsForResource,
 	];
 	/** All permission-management-level actions. */
-	static readonly PERMISSION_MANAGEMENT_ACTIONS: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
-	static readonly TAGGING_ACTIONS: string[] = [
-		CleanroomsActions.TAG_RESOURCE,
-		CleanroomsActions.UNTAG_RESOURCE,
+	static readonly AllTaggingActions: string[] = [
+		CleanroomsActions.TagResource,
+		CleanroomsActions.UntagResource,
 	];
 }
 
-const AnalysistemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/analysistemplate/(?<analysisTemplateId>[^:/?]+)$",
-);
-const CollaborationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):collaboration/(?<collaborationId>[^:/?]+)$",
-);
-const ConfiguredaudiencemodelassociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/configuredaudiencemodelassociation/(?<configuredAudienceModelAssociationId>[^:/?]+)$",
-);
-const ConfiguredtableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):configuredtable/(?<configuredTableId>[^:/?]+)$",
-);
-const ConfiguredtableassociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/configuredtableassociation/(?<configuredTableAssociationId>[^:/?]+)$",
-);
-const IdmappingtableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/idmappingtable/(?<idMappingTableId>[^:/?]+)$",
-);
-const IdnamespaceassociationArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/idnamespaceassociation/(?<idNamespaceAssociationId>[^:/?]+)$",
-);
-const IntermediatetableArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/intermediatetable/(?<intermediateTableId>[^:/?]+)$",
-);
-const MembershipArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)$",
-);
-const PrivacybudgettemplateArnRegex = new RegExp(
-	"^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership/(?<membershipId>[^:/?]+)/privacybudgettemplate/(?<privacyBudgetTemplateId>[^:/?]+)$",
-);
+/**
+ * Properties for building a analysistemplate ARN.
+ */
+export interface CleanroomsAnalysistemplateArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The AnalysisTemplateId component of the ARN. */
+	readonly analysisTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a analysistemplate ARN.
+ */
+export interface CleanroomsAnalysistemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The AnalysisTemplateId component. */
+	readonly analysisTemplateId: string;
+}
+
+/**
+ * Properties for building a collaboration ARN.
+ */
+export interface CleanroomsCollaborationArnProps {
+	/** The CollaborationId component of the ARN. */
+	readonly collaborationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a collaboration ARN.
+ */
+export interface CleanroomsCollaborationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CollaborationId component. */
+	readonly collaborationId: string;
+}
+
+/**
+ * Properties for building a configuredaudiencemodelassociation ARN.
+ */
+export interface CleanroomsConfiguredaudiencemodelassociationArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ConfiguredAudienceModelAssociationId component of the ARN. */
+	readonly configuredAudienceModelAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuredaudiencemodelassociation ARN.
+ */
+export interface CleanroomsConfiguredaudiencemodelassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ConfiguredAudienceModelAssociationId component. */
+	readonly configuredAudienceModelAssociationId: string;
+}
+
+/**
+ * Properties for building a configuredtable ARN.
+ */
+export interface CleanroomsConfiguredtableArnProps {
+	/** The ConfiguredTableId component of the ARN. */
+	readonly configuredTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuredtable ARN.
+ */
+export interface CleanroomsConfiguredtableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConfiguredTableId component. */
+	readonly configuredTableId: string;
+}
+
+/**
+ * Properties for building a configuredtableassociation ARN.
+ */
+export interface CleanroomsConfiguredtableassociationArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The ConfiguredTableAssociationId component of the ARN. */
+	readonly configuredTableAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a configuredtableassociation ARN.
+ */
+export interface CleanroomsConfiguredtableassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The ConfiguredTableAssociationId component. */
+	readonly configuredTableAssociationId: string;
+}
+
+/**
+ * Properties for building a idmappingtable ARN.
+ */
+export interface CleanroomsIdmappingtableArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The IdMappingTableId component of the ARN. */
+	readonly idMappingTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a idmappingtable ARN.
+ */
+export interface CleanroomsIdmappingtableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The IdMappingTableId component. */
+	readonly idMappingTableId: string;
+}
+
+/**
+ * Properties for building a idnamespaceassociation ARN.
+ */
+export interface CleanroomsIdnamespaceassociationArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The IdNamespaceAssociationId component of the ARN. */
+	readonly idNamespaceAssociationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a idnamespaceassociation ARN.
+ */
+export interface CleanroomsIdnamespaceassociationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The IdNamespaceAssociationId component. */
+	readonly idNamespaceAssociationId: string;
+}
+
+/**
+ * Properties for building a intermediatetable ARN.
+ */
+export interface CleanroomsIntermediatetableArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The IntermediateTableId component of the ARN. */
+	readonly intermediateTableId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a intermediatetable ARN.
+ */
+export interface CleanroomsIntermediatetableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The IntermediateTableId component. */
+	readonly intermediateTableId: string;
+}
+
+/**
+ * Properties for building a membership ARN.
+ */
+export interface CleanroomsMembershipArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a membership ARN.
+ */
+export interface CleanroomsMembershipArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+}
+
+/**
+ * Properties for building a privacybudgettemplate ARN.
+ */
+export interface CleanroomsPrivacybudgettemplateArnProps {
+	/** The MembershipId component of the ARN. */
+	readonly membershipId: string;
+	/** The PrivacyBudgetTemplateId component of the ARN. */
+	readonly privacyBudgetTemplateId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a privacybudgettemplate ARN.
+ */
+export interface CleanroomsPrivacybudgettemplateArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MembershipId component. */
+	readonly membershipId: string;
+	/** The PrivacyBudgetTemplateId component. */
+	readonly privacyBudgetTemplateId: string;
+}
+
+const AnalysistemplateArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/analysistemplate\/(?<analysisTemplateId>[^:/?]+)$/;
+const CollaborationArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):collaboration\/(?<collaborationId>[^:/?]+)$/;
+const ConfiguredaudiencemodelassociationArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/configuredaudiencemodelassociation\/(?<configuredAudienceModelAssociationId>[^:/?]+)$/;
+const ConfiguredtableArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):configuredtable\/(?<configuredTableId>[^:/?]+)$/;
+const ConfiguredtableassociationArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/configuredtableassociation\/(?<configuredTableAssociationId>[^:/?]+)$/;
+const IdmappingtableArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/idmappingtable\/(?<idMappingTableId>[^:/?]+)$/;
+const IdnamespaceassociationArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/idnamespaceassociation\/(?<idNamespaceAssociationId>[^:/?]+)$/;
+const IntermediatetableArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/intermediatetable\/(?<intermediateTableId>[^:/?]+)$/;
+const MembershipArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)$/;
+const PrivacybudgettemplateArnRegex =
+	/^arn:(?<partition>[^:]+):cleanrooms:(?<region>[^:]*):(?<account>[^:]*):membership\/(?<membershipId>[^:/?]+)\/privacybudgettemplate\/(?<privacyBudgetTemplateId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cleanrooms resources.
@@ -450,18 +744,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the analysistemplate resource.
 	 */
-	static analysistemplate(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The AnalysisTemplateId component of the ARN. */
-		readonly analysisTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static analysistemplate(props: CleanroomsAnalysistemplateArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/analysistemplate/${props.analysisTemplateId}`;
 	}
 
@@ -476,13 +759,9 @@ export class CleanroomsResources {
 	 * Parses a analysistemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseAnalysistemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		analysisTemplateId: string;
-	} {
+	static parseAnalysistemplateArn(
+		arn: string,
+	): CleanroomsAnalysistemplateArnComponents {
 		const match = AnalysistemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid analysistemplate ARN: ${arn}`);
@@ -499,16 +778,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the collaboration resource.
 	 */
-	static collaboration(props: {
-		/** The CollaborationId component of the ARN. */
-		readonly collaborationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static collaboration(props: CleanroomsCollaborationArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:collaboration/${props.collaborationId}`;
 	}
 
@@ -523,12 +793,9 @@ export class CleanroomsResources {
 	 * Parses a collaboration ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseCollaborationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		collaborationId: string;
-	} {
+	static parseCollaborationArn(
+		arn: string,
+	): CleanroomsCollaborationArnComponents {
 		const match = CollaborationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid collaboration ARN: ${arn}`);
@@ -544,18 +811,9 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the configuredaudiencemodelassociation resource.
 	 */
-	static configuredaudiencemodelassociation(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ConfiguredAudienceModelAssociationId component of the ARN. */
-		readonly configuredAudienceModelAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredaudiencemodelassociation(
+		props: CleanroomsConfiguredaudiencemodelassociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/configuredaudiencemodelassociation/${props.configuredAudienceModelAssociationId}`;
 	}
 
@@ -570,13 +828,9 @@ export class CleanroomsResources {
 	 * Parses a configuredaudiencemodelassociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredaudiencemodelassociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		configuredAudienceModelAssociationId: string;
-	} {
+	static parseConfiguredaudiencemodelassociationArn(
+		arn: string,
+	): CleanroomsConfiguredaudiencemodelassociationArnComponents {
 		const match = ConfiguredaudiencemodelassociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuredaudiencemodelassociation ARN: ${arn}`);
@@ -594,16 +848,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the configuredtable resource.
 	 */
-	static configuredtable(props: {
-		/** The ConfiguredTableId component of the ARN. */
-		readonly configuredTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredtable(props: CleanroomsConfiguredtableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:configuredtable/${props.configuredTableId}`;
 	}
 
@@ -618,12 +863,9 @@ export class CleanroomsResources {
 	 * Parses a configuredtable ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredtableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		configuredTableId: string;
-	} {
+	static parseConfiguredtableArn(
+		arn: string,
+	): CleanroomsConfiguredtableArnComponents {
 		const match = ConfiguredtableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuredtable ARN: ${arn}`);
@@ -639,18 +881,9 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the configuredtableassociation resource.
 	 */
-	static configuredtableassociation(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The ConfiguredTableAssociationId component of the ARN. */
-		readonly configuredTableAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static configuredtableassociation(
+		props: CleanroomsConfiguredtableassociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/configuredtableassociation/${props.configuredTableAssociationId}`;
 	}
 
@@ -665,13 +898,9 @@ export class CleanroomsResources {
 	 * Parses a configuredtableassociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseConfiguredtableassociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		configuredTableAssociationId: string;
-	} {
+	static parseConfiguredtableassociationArn(
+		arn: string,
+	): CleanroomsConfiguredtableassociationArnComponents {
 		const match = ConfiguredtableassociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid configuredtableassociation ARN: ${arn}`);
@@ -688,18 +917,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the idmappingtable resource.
 	 */
-	static idmappingtable(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The IdMappingTableId component of the ARN. */
-		readonly idMappingTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static idmappingtable(props: CleanroomsIdmappingtableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/idmappingtable/${props.idMappingTableId}`;
 	}
 
@@ -714,13 +932,9 @@ export class CleanroomsResources {
 	 * Parses a idmappingtable ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdmappingtableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		idMappingTableId: string;
-	} {
+	static parseIdmappingtableArn(
+		arn: string,
+	): CleanroomsIdmappingtableArnComponents {
 		const match = IdmappingtableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid idmappingtable ARN: ${arn}`);
@@ -737,18 +951,9 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the idnamespaceassociation resource.
 	 */
-	static idnamespaceassociation(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The IdNamespaceAssociationId component of the ARN. */
-		readonly idNamespaceAssociationId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static idnamespaceassociation(
+		props: CleanroomsIdnamespaceassociationArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/idnamespaceassociation/${props.idNamespaceAssociationId}`;
 	}
 
@@ -763,13 +968,9 @@ export class CleanroomsResources {
 	 * Parses a idnamespaceassociation ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIdnamespaceassociationArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		idNamespaceAssociationId: string;
-	} {
+	static parseIdnamespaceassociationArn(
+		arn: string,
+	): CleanroomsIdnamespaceassociationArnComponents {
 		const match = IdnamespaceassociationArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid idnamespaceassociation ARN: ${arn}`);
@@ -786,18 +987,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the intermediatetable resource.
 	 */
-	static intermediatetable(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The IntermediateTableId component of the ARN. */
-		readonly intermediateTableId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static intermediatetable(props: CleanroomsIntermediatetableArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/intermediatetable/${props.intermediateTableId}`;
 	}
 
@@ -812,13 +1002,9 @@ export class CleanroomsResources {
 	 * Parses a intermediatetable ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseIntermediatetableArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		intermediateTableId: string;
-	} {
+	static parseIntermediatetableArn(
+		arn: string,
+	): CleanroomsIntermediatetableArnComponents {
 		const match = IntermediatetableArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid intermediatetable ARN: ${arn}`);
@@ -835,16 +1021,7 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the membership resource.
 	 */
-	static membership(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static membership(props: CleanroomsMembershipArnProps): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}`;
 	}
 
@@ -859,12 +1036,7 @@ export class CleanroomsResources {
 	 * Parses a membership ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parseMembershipArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-	} {
+	static parseMembershipArn(arn: string): CleanroomsMembershipArnComponents {
 		const match = MembershipArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid membership ARN: ${arn}`);
@@ -880,18 +1052,9 @@ export class CleanroomsResources {
 	/**
 	 * Builds an ARN for the privacybudgettemplate resource.
 	 */
-	static privacybudgettemplate(props: {
-		/** The MembershipId component of the ARN. */
-		readonly membershipId: string;
-		/** The PrivacyBudgetTemplateId component of the ARN. */
-		readonly privacyBudgetTemplateId: string;
-		/** AWS region. Defaults to "*". */
-		readonly region?: string;
-		/** AWS account ID. Defaults to "*". */
-		readonly account?: string;
-		/** AWS partition. Defaults to "aws". */
-		readonly partition?: string;
-	}): string {
+	static privacybudgettemplate(
+		props: CleanroomsPrivacybudgettemplateArnProps,
+	): string {
 		return `arn:${props.partition ?? "aws"}:cleanrooms:${props.region ?? "*"}:${props.account ?? "*"}:membership/${props.membershipId}/privacybudgettemplate/${props.privacyBudgetTemplateId}`;
 	}
 
@@ -906,13 +1069,9 @@ export class CleanroomsResources {
 	 * Parses a privacybudgettemplate ARN into its components.
 	 * @throws Error if the ARN does not match the expected format.
 	 */
-	static parsePrivacybudgettemplateArn(arn: string): {
-		partition: string;
-		region: string;
-		account: string;
-		membershipId: string;
-		privacyBudgetTemplateId: string;
-	} {
+	static parsePrivacybudgettemplateArn(
+		arn: string,
+	): CleanroomsPrivacybudgettemplateArnComponents {
 		const match = PrivacybudgettemplateArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid privacybudgettemplate ARN: ${arn}`);
@@ -932,399 +1091,404 @@ export class CleanroomsResources {
  */
 export class CleanroomsOperations {
 	/** IAM actions required for the BatchGetCollaborationAnalysisTemplate API call. */
-	static readonly BATCH_GET_COLLABORATION_ANALYSIS_TEMPLATE: string[] = [
+	static readonly BatchGetCollaborationAnalysisTemplate: string[] = [
 		"cleanrooms:BatchGetCollaborationAnalysisTemplate",
 	];
 	/** IAM actions required for the BatchGetSchema API call. */
-	static readonly BATCH_GET_SCHEMA: string[] = ["cleanrooms:BatchGetSchema"];
+	static readonly BatchGetSchema: string[] = ["cleanrooms:BatchGetSchema"];
 	/** IAM actions required for the BatchGetSchemaAnalysisRule API call. */
-	static readonly BATCH_GET_SCHEMA_ANALYSIS_RULE: string[] = [
+	static readonly BatchGetSchemaAnalysisRule: string[] = [
 		"cleanrooms:BatchGetSchemaAnalysisRule",
 	];
 	/** IAM actions required for the CreateAnalysisTemplate API call. */
-	static readonly CREATE_ANALYSIS_TEMPLATE: string[] = [
+	static readonly CreateAnalysisTemplate: string[] = [
 		"cleanrooms:CreateAnalysisTemplate",
 		"iam:PassRole",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateCollaboration API call. */
-	static readonly CREATE_COLLABORATION: string[] = [
+	static readonly CreateCollaboration: string[] = [
 		"cleanrooms:CreateCollaboration",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateCollaborationChangeRequest API call. */
-	static readonly CREATE_COLLABORATION_CHANGE_REQUEST: string[] = [
+	static readonly CreateCollaborationChangeRequest: string[] = [
 		"cleanrooms:CreateCollaborationChangeRequest",
 	];
 	/** IAM actions required for the CreateConfiguredAudienceModelAssociation API call. */
-	static readonly CREATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION: string[] = [
+	static readonly CreateConfiguredAudienceModelAssociation: string[] = [
 		"cleanrooms:CreateConfiguredAudienceModelAssociation",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredTable API call. */
-	static readonly CREATE_CONFIGURED_TABLE: string[] = [
+	static readonly CreateConfiguredTable: string[] = [
 		"cleanrooms:CreateConfiguredTable",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredTableAnalysisRule API call. */
-	static readonly CREATE_CONFIGURED_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly CreateConfiguredTableAnalysisRule: string[] = [
 		"cleanrooms:CreateConfiguredTableAnalysisRule",
 	];
 	/** IAM actions required for the CreateConfiguredTableAssociation API call. */
-	static readonly CREATE_CONFIGURED_TABLE_ASSOCIATION: string[] = [
+	static readonly CreateConfiguredTableAssociation: string[] = [
 		"cleanrooms:CreateConfiguredTableAssociation",
 		"iam:PassRole",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredTableAssociationAnalysisRule API call. */
-	static readonly CREATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE: string[] =
-		["cleanrooms:CreateConfiguredTableAssociationAnalysisRule"];
+	static readonly CreateConfiguredTableAssociationAnalysisRule: string[] = [
+		"cleanrooms:CreateConfiguredTableAssociationAnalysisRule",
+	];
 	/** IAM actions required for the CreateIdMappingTable API call. */
-	static readonly CREATE_ID_MAPPING_TABLE: string[] = [
+	static readonly CreateIdMappingTable: string[] = [
 		"cleanrooms:CreateIdMappingTable",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateIdNamespaceAssociation API call. */
-	static readonly CREATE_ID_NAMESPACE_ASSOCIATION: string[] = [
+	static readonly CreateIdNamespaceAssociation: string[] = [
 		"cleanrooms:CreateIdNamespaceAssociation",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateIntermediateTable API call. */
-	static readonly CREATE_INTERMEDIATE_TABLE: string[] = [
+	static readonly CreateIntermediateTable: string[] = [
 		"cleanrooms:CreateIntermediateTable",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateIntermediateTableAnalysisRule API call. */
-	static readonly CREATE_INTERMEDIATE_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly CreateIntermediateTableAnalysisRule: string[] = [
 		"cleanrooms:CreateIntermediateTableAnalysisRule",
 	];
 	/** IAM actions required for the CreateMembership API call. */
-	static readonly CREATE_MEMBERSHIP: string[] = [
+	static readonly CreateMembership: string[] = [
 		"cleanrooms:CreateMembership",
 		"iam:PassRole",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreatePrivacyBudgetTemplate API call. */
-	static readonly CREATE_PRIVACY_BUDGET_TEMPLATE: string[] = [
+	static readonly CreatePrivacyBudgetTemplate: string[] = [
 		"cleanrooms:CreatePrivacyBudgetTemplate",
 		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the DeleteAnalysisTemplate API call. */
-	static readonly DELETE_ANALYSIS_TEMPLATE: string[] = [
+	static readonly DeleteAnalysisTemplate: string[] = [
 		"cleanrooms:DeleteAnalysisTemplate",
 	];
 	/** IAM actions required for the DeleteCollaboration API call. */
-	static readonly DELETE_COLLABORATION: string[] = [
+	static readonly DeleteCollaboration: string[] = [
 		"cleanrooms:DeleteCollaboration",
 	];
 	/** IAM actions required for the DeleteConfiguredAudienceModelAssociation API call. */
-	static readonly DELETE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION: string[] = [
+	static readonly DeleteConfiguredAudienceModelAssociation: string[] = [
 		"cleanrooms:DeleteConfiguredAudienceModelAssociation",
 	];
 	/** IAM actions required for the DeleteConfiguredTable API call. */
-	static readonly DELETE_CONFIGURED_TABLE: string[] = [
+	static readonly DeleteConfiguredTable: string[] = [
 		"cleanrooms:DeleteConfiguredTable",
 	];
 	/** IAM actions required for the DeleteConfiguredTableAnalysisRule API call. */
-	static readonly DELETE_CONFIGURED_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly DeleteConfiguredTableAnalysisRule: string[] = [
 		"cleanrooms:DeleteConfiguredTableAnalysisRule",
 	];
 	/** IAM actions required for the DeleteConfiguredTableAssociation API call. */
-	static readonly DELETE_CONFIGURED_TABLE_ASSOCIATION: string[] = [
+	static readonly DeleteConfiguredTableAssociation: string[] = [
 		"cleanrooms:DeleteConfiguredTableAssociation",
 	];
 	/** IAM actions required for the DeleteConfiguredTableAssociationAnalysisRule API call. */
-	static readonly DELETE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE: string[] =
-		["cleanrooms:DeleteConfiguredTableAssociationAnalysisRule"];
+	static readonly DeleteConfiguredTableAssociationAnalysisRule: string[] = [
+		"cleanrooms:DeleteConfiguredTableAssociationAnalysisRule",
+	];
 	/** IAM actions required for the DeleteIdMappingTable API call. */
-	static readonly DELETE_ID_MAPPING_TABLE: string[] = [
+	static readonly DeleteIdMappingTable: string[] = [
 		"cleanrooms:DeleteIdMappingTable",
 	];
 	/** IAM actions required for the DeleteIdNamespaceAssociation API call. */
-	static readonly DELETE_ID_NAMESPACE_ASSOCIATION: string[] = [
+	static readonly DeleteIdNamespaceAssociation: string[] = [
 		"cleanrooms:DeleteIdNamespaceAssociation",
 	];
 	/** IAM actions required for the DeleteIntermediateTable API call. */
-	static readonly DELETE_INTERMEDIATE_TABLE: string[] = [
+	static readonly DeleteIntermediateTable: string[] = [
 		"cleanrooms:DeleteIntermediateTable",
 	];
 	/** IAM actions required for the DeleteIntermediateTableAnalysisRule API call. */
-	static readonly DELETE_INTERMEDIATE_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly DeleteIntermediateTableAnalysisRule: string[] = [
 		"cleanrooms:DeleteIntermediateTableAnalysisRule",
 	];
 	/** IAM actions required for the DeleteMember API call. */
-	static readonly DELETE_MEMBER: string[] = ["cleanrooms:DeleteMember"];
+	static readonly DeleteMember: string[] = ["cleanrooms:DeleteMember"];
 	/** IAM actions required for the DeleteMembership API call. */
-	static readonly DELETE_MEMBERSHIP: string[] = ["cleanrooms:DeleteMembership"];
+	static readonly DeleteMembership: string[] = ["cleanrooms:DeleteMembership"];
 	/** IAM actions required for the DeletePrivacyBudgetTemplate API call. */
-	static readonly DELETE_PRIVACY_BUDGET_TEMPLATE: string[] = [
+	static readonly DeletePrivacyBudgetTemplate: string[] = [
 		"cleanrooms:DeletePrivacyBudgetTemplate",
 	];
 	/** IAM actions required for the DisallowIntermediateTable API call. */
-	static readonly DISALLOW_INTERMEDIATE_TABLE: string[] = [
+	static readonly DisallowIntermediateTable: string[] = [
 		"cleanrooms:DisallowIntermediateTable",
 	];
 	/** IAM actions required for the GetAnalysisLogExport API call. */
-	static readonly GET_ANALYSIS_LOG_EXPORT: string[] = [];
+	static readonly opGetAnalysisLogExport: string[] = [];
 	/** IAM actions required for the GetAnalysisTemplate API call. */
-	static readonly GET_ANALYSIS_TEMPLATE: string[] = [
+	static readonly opGetAnalysisTemplate: string[] = [
 		"cleanrooms:GetAnalysisTemplate",
 	];
 	/** IAM actions required for the GetCollaboration API call. */
-	static readonly GET_COLLABORATION: string[] = ["cleanrooms:GetCollaboration"];
+	static readonly opGetCollaboration: string[] = [
+		"cleanrooms:GetCollaboration",
+	];
 	/** IAM actions required for the GetCollaborationAnalysisTemplate API call. */
-	static readonly GET_COLLABORATION_ANALYSIS_TEMPLATE: string[] = [
+	static readonly opGetCollaborationAnalysisTemplate: string[] = [
 		"cleanrooms:GetCollaborationAnalysisTemplate",
 	];
 	/** IAM actions required for the GetCollaborationChangeRequest API call. */
-	static readonly GET_COLLABORATION_CHANGE_REQUEST: string[] = [
+	static readonly opGetCollaborationChangeRequest: string[] = [
 		"cleanrooms:GetCollaborationChangeRequest",
 	];
 	/** IAM actions required for the GetCollaborationConfiguredAudienceModelAssociation API call. */
-	static readonly GET_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION: string[] =
+	static readonly opGetCollaborationConfiguredAudienceModelAssociation: string[] =
 		["cleanrooms:GetCollaborationConfiguredAudienceModelAssociation"];
 	/** IAM actions required for the GetCollaborationIdNamespaceAssociation API call. */
-	static readonly GET_COLLABORATION_ID_NAMESPACE_ASSOCIATION: string[] = [
+	static readonly opGetCollaborationIdNamespaceAssociation: string[] = [
 		"cleanrooms:GetCollaborationIdNamespaceAssociation",
 	];
 	/** IAM actions required for the GetCollaborationPrivacyBudgetTemplate API call. */
-	static readonly GET_COLLABORATION_PRIVACY_BUDGET_TEMPLATE: string[] = [
+	static readonly opGetCollaborationPrivacyBudgetTemplate: string[] = [
 		"cleanrooms:GetCollaborationPrivacyBudgetTemplate",
 	];
 	/** IAM actions required for the GetConfiguredAudienceModelAssociation API call. */
-	static readonly GET_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION: string[] = [
+	static readonly opGetConfiguredAudienceModelAssociation: string[] = [
 		"cleanrooms:GetConfiguredAudienceModelAssociation",
 	];
 	/** IAM actions required for the GetConfiguredTable API call. */
-	static readonly GET_CONFIGURED_TABLE: string[] = [
+	static readonly opGetConfiguredTable: string[] = [
 		"cleanrooms:GetConfiguredTable",
 	];
 	/** IAM actions required for the GetConfiguredTableAnalysisRule API call. */
-	static readonly GET_CONFIGURED_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly opGetConfiguredTableAnalysisRule: string[] = [
 		"cleanrooms:GetConfiguredTableAnalysisRule",
 	];
 	/** IAM actions required for the GetConfiguredTableAssociation API call. */
-	static readonly GET_CONFIGURED_TABLE_ASSOCIATION: string[] = [
+	static readonly opGetConfiguredTableAssociation: string[] = [
 		"cleanrooms:GetConfiguredTableAssociation",
 	];
 	/** IAM actions required for the GetConfiguredTableAssociationAnalysisRule API call. */
-	static readonly GET_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE: string[] = [
+	static readonly opGetConfiguredTableAssociationAnalysisRule: string[] = [
 		"cleanrooms:GetConfiguredTableAssociationAnalysisRule",
 	];
 	/** IAM actions required for the GetIdMappingTable API call. */
-	static readonly GET_ID_MAPPING_TABLE: string[] = [
+	static readonly opGetIdMappingTable: string[] = [
 		"cleanrooms:GetIdMappingTable",
 	];
 	/** IAM actions required for the GetIdNamespaceAssociation API call. */
-	static readonly GET_ID_NAMESPACE_ASSOCIATION: string[] = [
+	static readonly opGetIdNamespaceAssociation: string[] = [
 		"cleanrooms:GetIdNamespaceAssociation",
 	];
 	/** IAM actions required for the GetIntermediateTable API call. */
-	static readonly GET_INTERMEDIATE_TABLE: string[] = [
+	static readonly opGetIntermediateTable: string[] = [
 		"cleanrooms:GetIntermediateTable",
 	];
 	/** IAM actions required for the GetIntermediateTableAnalysisRule API call. */
-	static readonly GET_INTERMEDIATE_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly opGetIntermediateTableAnalysisRule: string[] = [
 		"cleanrooms:GetIntermediateTableAnalysisRule",
 	];
 	/** IAM actions required for the GetMembership API call. */
-	static readonly GET_MEMBERSHIP: string[] = ["cleanrooms:GetMembership"];
+	static readonly opGetMembership: string[] = ["cleanrooms:GetMembership"];
 	/** IAM actions required for the GetPrivacyBudgetTemplate API call. */
-	static readonly GET_PRIVACY_BUDGET_TEMPLATE: string[] = [
+	static readonly opGetPrivacyBudgetTemplate: string[] = [
 		"cleanrooms:GetPrivacyBudgetTemplate",
 	];
 	/** IAM actions required for the GetProtectedJob API call. */
-	static readonly GET_PROTECTED_JOB: string[] = ["cleanrooms:GetProtectedJob"];
+	static readonly opGetProtectedJob: string[] = ["cleanrooms:GetProtectedJob"];
 	/** IAM actions required for the GetProtectedQuery API call. */
-	static readonly GET_PROTECTED_QUERY: string[] = [
+	static readonly opGetProtectedQuery: string[] = [
 		"cleanrooms:GetProtectedQuery",
 	];
 	/** IAM actions required for the GetSchema API call. */
-	static readonly GET_SCHEMA: string[] = ["cleanrooms:GetSchema"];
+	static readonly opGetSchema: string[] = ["cleanrooms:GetSchema"];
 	/** IAM actions required for the GetSchemaAnalysisRule API call. */
-	static readonly GET_SCHEMA_ANALYSIS_RULE: string[] = [
+	static readonly opGetSchemaAnalysisRule: string[] = [
 		"cleanrooms:GetSchemaAnalysisRule",
 	];
 	/** IAM actions required for the ListAnalysisLogExports API call. */
-	static readonly LIST_ANALYSIS_LOG_EXPORTS: string[] = [
+	static readonly ListAnalysisLogExports: string[] = [
 		"cleanrooms:ListAnalysisLogExports",
 	];
 	/** IAM actions required for the ListAnalysisTemplates API call. */
-	static readonly LIST_ANALYSIS_TEMPLATES: string[] = [
+	static readonly ListAnalysisTemplates: string[] = [
 		"cleanrooms:ListAnalysisTemplates",
 	];
 	/** IAM actions required for the ListCollaborationAnalysisTemplates API call. */
-	static readonly LIST_COLLABORATION_ANALYSIS_TEMPLATES: string[] = [
+	static readonly ListCollaborationAnalysisTemplates: string[] = [
 		"cleanrooms:ListCollaborationAnalysisTemplates",
 	];
 	/** IAM actions required for the ListCollaborationChangeRequests API call. */
-	static readonly LIST_COLLABORATION_CHANGE_REQUESTS: string[] = [
+	static readonly ListCollaborationChangeRequests: string[] = [
 		"cleanrooms:ListCollaborationChangeRequests",
 	];
 	/** IAM actions required for the ListCollaborationConfiguredAudienceModelAssociations API call. */
-	static readonly LIST_COLLABORATION_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS: string[] =
+	static readonly ListCollaborationConfiguredAudienceModelAssociations: string[] =
 		["cleanrooms:ListCollaborationConfiguredAudienceModelAssociations"];
 	/** IAM actions required for the ListCollaborationIdNamespaceAssociations API call. */
-	static readonly LIST_COLLABORATION_ID_NAMESPACE_ASSOCIATIONS: string[] = [
+	static readonly ListCollaborationIdNamespaceAssociations: string[] = [
 		"cleanrooms:ListCollaborationIdNamespaceAssociations",
 	];
 	/** IAM actions required for the ListCollaborationPrivacyBudgetTemplates API call. */
-	static readonly LIST_COLLABORATION_PRIVACY_BUDGET_TEMPLATES: string[] = [
+	static readonly ListCollaborationPrivacyBudgetTemplates: string[] = [
 		"cleanrooms:ListCollaborationPrivacyBudgetTemplates",
 	];
 	/** IAM actions required for the ListCollaborationPrivacyBudgets API call. */
-	static readonly LIST_COLLABORATION_PRIVACY_BUDGETS: string[] = [
+	static readonly ListCollaborationPrivacyBudgets: string[] = [
 		"cleanrooms:ListCollaborationPrivacyBudgets",
 	];
 	/** IAM actions required for the ListCollaborations API call. */
-	static readonly LIST_COLLABORATIONS: string[] = [
+	static readonly ListCollaborations: string[] = [
 		"cleanrooms:ListCollaborations",
 	];
 	/** IAM actions required for the ListConfiguredAudienceModelAssociations API call. */
-	static readonly LIST_CONFIGURED_AUDIENCE_MODEL_ASSOCIATIONS: string[] = [
+	static readonly ListConfiguredAudienceModelAssociations: string[] = [
 		"cleanrooms:ListConfiguredAudienceModelAssociations",
 	];
 	/** IAM actions required for the ListConfiguredTableAssociations API call. */
-	static readonly LIST_CONFIGURED_TABLE_ASSOCIATIONS: string[] = [
+	static readonly ListConfiguredTableAssociations: string[] = [
 		"cleanrooms:ListConfiguredTableAssociations",
 	];
 	/** IAM actions required for the ListConfiguredTables API call. */
-	static readonly LIST_CONFIGURED_TABLES: string[] = [
+	static readonly ListConfiguredTables: string[] = [
 		"cleanrooms:ListConfiguredTables",
 	];
 	/** IAM actions required for the ListIdMappingTables API call. */
-	static readonly LIST_ID_MAPPING_TABLES: string[] = [
+	static readonly ListIdMappingTables: string[] = [
 		"cleanrooms:ListIdMappingTables",
 	];
 	/** IAM actions required for the ListIdNamespaceAssociations API call. */
-	static readonly LIST_ID_NAMESPACE_ASSOCIATIONS: string[] = [
+	static readonly ListIdNamespaceAssociations: string[] = [
 		"cleanrooms:ListIdNamespaceAssociations",
 	];
 	/** IAM actions required for the ListIntermediateTableVersions API call. */
-	static readonly LIST_INTERMEDIATE_TABLE_VERSIONS: string[] = [
+	static readonly ListIntermediateTableVersions: string[] = [
 		"cleanrooms:ListIntermediateTableVersions",
 	];
 	/** IAM actions required for the ListIntermediateTables API call. */
-	static readonly LIST_INTERMEDIATE_TABLES: string[] = [
+	static readonly ListIntermediateTables: string[] = [
 		"cleanrooms:ListIntermediateTables",
 	];
 	/** IAM actions required for the ListMembers API call. */
-	static readonly LIST_MEMBERS: string[] = ["cleanrooms:ListMembers"];
+	static readonly ListMembers: string[] = ["cleanrooms:ListMembers"];
 	/** IAM actions required for the ListMemberships API call. */
-	static readonly LIST_MEMBERSHIPS: string[] = ["cleanrooms:ListMemberships"];
+	static readonly ListMemberships: string[] = ["cleanrooms:ListMemberships"];
 	/** IAM actions required for the ListPrivacyBudgetTemplates API call. */
-	static readonly LIST_PRIVACY_BUDGET_TEMPLATES: string[] = [
+	static readonly ListPrivacyBudgetTemplates: string[] = [
 		"cleanrooms:ListPrivacyBudgetTemplates",
 	];
 	/** IAM actions required for the ListPrivacyBudgets API call. */
-	static readonly LIST_PRIVACY_BUDGETS: string[] = [
+	static readonly ListPrivacyBudgets: string[] = [
 		"cleanrooms:ListPrivacyBudgets",
 	];
 	/** IAM actions required for the ListProtectedJobs API call. */
-	static readonly LIST_PROTECTED_JOBS: string[] = [
+	static readonly ListProtectedJobs: string[] = [
 		"cleanrooms:ListProtectedJobs",
 	];
 	/** IAM actions required for the ListProtectedQueries API call. */
-	static readonly LIST_PROTECTED_QUERIES: string[] = [
+	static readonly ListProtectedQueries: string[] = [
 		"cleanrooms:ListProtectedQueries",
 	];
 	/** IAM actions required for the ListSchemas API call. */
-	static readonly LIST_SCHEMAS: string[] = ["cleanrooms:ListSchemas"];
+	static readonly ListSchemas: string[] = ["cleanrooms:ListSchemas"];
 	/** IAM actions required for the ListTagsForResource API call. */
-	static readonly LIST_TAGS_FOR_RESOURCE: string[] = [
+	static readonly ListTagsForResource: string[] = [
 		"cleanrooms:ListTagsForResource",
 	];
 	/** IAM actions required for the PopulateIdMappingTable API call. */
-	static readonly POPULATE_ID_MAPPING_TABLE: string[] = [
+	static readonly PopulateIdMappingTable: string[] = [
 		"cleanrooms:PopulateIdMappingTable",
 	];
 	/** IAM actions required for the PopulateIntermediateTable API call. */
-	static readonly POPULATE_INTERMEDIATE_TABLE: string[] = [
+	static readonly PopulateIntermediateTable: string[] = [
 		"cleanrooms:PopulateIntermediateTable",
 	];
 	/** IAM actions required for the PreviewPrivacyImpact API call. */
-	static readonly PREVIEW_PRIVACY_IMPACT: string[] = [
+	static readonly PreviewPrivacyImpact: string[] = [
 		"cleanrooms:PreviewPrivacyImpact",
 	];
 	/** IAM actions required for the StartAnalysisLogExport API call. */
-	static readonly START_ANALYSIS_LOG_EXPORT: string[] = [];
+	static readonly StartAnalysisLogExport: string[] = [];
 	/** IAM actions required for the StartProtectedJob API call. */
-	static readonly START_PROTECTED_JOB: string[] = [
+	static readonly StartProtectedJob: string[] = [
 		"cleanrooms:StartProtectedJob",
 	];
 	/** IAM actions required for the StartProtectedQuery API call. */
-	static readonly START_PROTECTED_QUERY: string[] = [
+	static readonly StartProtectedQuery: string[] = [
 		"cleanrooms:StartProtectedQuery",
 	];
 	/** IAM actions required for the TagResource API call. */
-	static readonly TAG_RESOURCE: string[] = ["cleanrooms:TagResource"];
+	static readonly TagResource: string[] = ["cleanrooms:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
-	static readonly UNTAG_RESOURCE: string[] = ["cleanrooms:UntagResource"];
+	static readonly UntagResource: string[] = ["cleanrooms:UntagResource"];
 	/** IAM actions required for the UpdateAnalysisTemplate API call. */
-	static readonly UPDATE_ANALYSIS_TEMPLATE: string[] = [
+	static readonly UpdateAnalysisTemplate: string[] = [
 		"cleanrooms:UpdateAnalysisTemplate",
 	];
 	/** IAM actions required for the UpdateCollaboration API call. */
-	static readonly UPDATE_COLLABORATION: string[] = [
+	static readonly UpdateCollaboration: string[] = [
 		"cleanrooms:UpdateCollaboration",
 	];
 	/** IAM actions required for the UpdateCollaborationChangeRequest API call. */
-	static readonly UPDATE_COLLABORATION_CHANGE_REQUEST: string[] = [
+	static readonly UpdateCollaborationChangeRequest: string[] = [
 		"cleanrooms:UpdateCollaborationChangeRequest",
 	];
 	/** IAM actions required for the UpdateConfiguredAudienceModelAssociation API call. */
-	static readonly UPDATE_CONFIGURED_AUDIENCE_MODEL_ASSOCIATION: string[] = [
+	static readonly UpdateConfiguredAudienceModelAssociation: string[] = [
 		"cleanrooms:UpdateConfiguredAudienceModelAssociation",
 	];
 	/** IAM actions required for the UpdateConfiguredTable API call. */
-	static readonly UPDATE_CONFIGURED_TABLE: string[] = [
+	static readonly UpdateConfiguredTable: string[] = [
 		"cleanrooms:UpdateConfiguredTable",
 		"cleanrooms:UpdateConfiguredTableAllowedColumns",
 		"cleanrooms:UpdateConfiguredTableReference",
 	];
 	/** IAM actions required for the UpdateConfiguredTableAnalysisRule API call. */
-	static readonly UPDATE_CONFIGURED_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly UpdateConfiguredTableAnalysisRule: string[] = [
 		"cleanrooms:UpdateConfiguredTableAnalysisRule",
 	];
 	/** IAM actions required for the UpdateConfiguredTableAssociation API call. */
-	static readonly UPDATE_CONFIGURED_TABLE_ASSOCIATION: string[] = [
+	static readonly UpdateConfiguredTableAssociation: string[] = [
 		"iam:PassRole",
 		"cleanrooms:UpdateConfiguredTableAssociation",
 	];
 	/** IAM actions required for the UpdateConfiguredTableAssociationAnalysisRule API call. */
-	static readonly UPDATE_CONFIGURED_TABLE_ASSOCIATION_ANALYSIS_RULE: string[] =
-		["cleanrooms:UpdateConfiguredTableAssociationAnalysisRule"];
+	static readonly UpdateConfiguredTableAssociationAnalysisRule: string[] = [
+		"cleanrooms:UpdateConfiguredTableAssociationAnalysisRule",
+	];
 	/** IAM actions required for the UpdateIdMappingTable API call. */
-	static readonly UPDATE_ID_MAPPING_TABLE: string[] = [
+	static readonly UpdateIdMappingTable: string[] = [
 		"cleanrooms:UpdateIdMappingTable",
 	];
 	/** IAM actions required for the UpdateIdNamespaceAssociation API call. */
-	static readonly UPDATE_ID_NAMESPACE_ASSOCIATION: string[] = [
+	static readonly UpdateIdNamespaceAssociation: string[] = [
 		"cleanrooms:UpdateIdNamespaceAssociation",
 	];
 	/** IAM actions required for the UpdateIntermediateTable API call. */
-	static readonly UPDATE_INTERMEDIATE_TABLE: string[] = [
+	static readonly UpdateIntermediateTable: string[] = [
 		"cleanrooms:UpdateIntermediateTable",
 	];
 	/** IAM actions required for the UpdateIntermediateTableAnalysisRule API call. */
-	static readonly UPDATE_INTERMEDIATE_TABLE_ANALYSIS_RULE: string[] = [
+	static readonly UpdateIntermediateTableAnalysisRule: string[] = [
 		"cleanrooms:UpdateIntermediateTableAnalysisRule",
 	];
 	/** IAM actions required for the UpdateMembership API call. */
-	static readonly UPDATE_MEMBERSHIP: string[] = [
+	static readonly UpdateMembership: string[] = [
 		"iam:PassRole",
 		"cleanrooms:UpdateMembership",
 	];
 	/** IAM actions required for the UpdatePrivacyBudgetTemplate API call. */
-	static readonly UPDATE_PRIVACY_BUDGET_TEMPLATE: string[] = [
+	static readonly UpdatePrivacyBudgetTemplate: string[] = [
 		"cleanrooms:UpdatePrivacyBudgetTemplate",
 	];
 	/** IAM actions required for the UpdateProtectedJob API call. */
-	static readonly UPDATE_PROTECTED_JOB: string[] = [
+	static readonly UpdateProtectedJob: string[] = [
 		"cleanrooms:UpdateProtectedJob",
 	];
 	/** IAM actions required for the UpdateProtectedQuery API call. */
-	static readonly UPDATE_PROTECTED_QUERY: string[] = [
+	static readonly UpdateProtectedQuery: string[] = [
 		"cleanrooms:UpdateProtectedQuery",
 	];
 }
@@ -1334,19 +1498,19 @@ export class CleanroomsOperations {
  */
 export class CleanroomsConditions {
 	/** Condition keys applicable to the TagResource action. */
-	static readonly TAG_RESOURCE_CONDITION_KEYS: string[] = [
+	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the UntagResource action. */
-	static readonly UNTAG_RESOURCE_CONDITION_KEYS: string[] = ["aws:TagKeys"];
+	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
-	static readonly REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
 	/** Condition key: aws:ResourceTag/${TagKey} (String) */
-	static readonly RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
-	static readonly TAG_KEYS = "aws:TagKeys";
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
